@@ -103,8 +103,8 @@ You'll notice that both Microsoft Defender for Endpoint on macOS extensions are 
 You'll get the following output:
 
 ```OutputCopy
-network_extension_enabled                  : false
-network_extension_installed		           : true
+network_extension_enabled                 : false
+network_extension_installed		         : true
 endpoint_security_extension_ready		   : false
 endpoint_security_extension_installed 	   : true
 ```
@@ -126,7 +126,22 @@ The following files might be missing if you're managing it via Intune, JamF, or 
 
 ## Solution
 
-**Step 1: Are the profiles coming down to your macOS?**
+This section describes the solution of approving the functions such system extension, background services, notifications, full disk access, and so on using the management tools, namely Intune, JamF, Other MDM, and using the method of manual deployment. To perform these functions using these management tools, see:
+
+- [Intune](#intune)
+- [JamF](#jamf)
+- [Other MDM](#other-mdm)
+- [Manual deployment](#manual-deployment)
+
+### Prerequisites
+
+Prior to approving the system extension (using any of the specified management tools), ensure that the following prerequisites are fulfilled:
+
+- [Step 1: Are the profiles coming down to your macOS?](#step-1-are-the-profiles-coming-down-to-your-macos)
+- [Step 2: Ensure that the profiles needed for Microsoft Defender for Endpoint are enabled](#step-2-ensure-that-the-profiles-needed-for-microsoft-defender-for-endpoint-are-enabled)
+- [Step 3: Test the installed profiles using macOS built-in ‘profile’ tool.  It compares your profiles with what we have published in GitHub, reporting inconsistent profiles or profiles missing altogether](#step-3-test-the-installed-profiles-using-macos-built-in-profile-tool-it-compares-your-profiles-with-what-we-have-published-in-github-reporting-inconsistent-profiles-or-profiles-missing-altogether)
+
+#### Step 1: Are the profiles coming down to your macOS?
 
 If you're using Intune, see [Manage macOS software update policies in Intune](/mem/intune/protect/software-updates-macos).
 
@@ -145,7 +160,7 @@ If you're using Intune, see [Manage macOS software update policies in Intune](/m
 
 If you're using JamF, use sudo jamf policy. For more information, see [Policy Management](https://docs.jamf.com/10.26.0/jamf-pro/administrator-guide/Policy_Management.html#:~:text=To%20manually%20trigger%20the%20policy%20using%20the%20jamf,pre-defined%20trigger%2C%20replace%20%3CtriggerName%3E%20with%20the%20appropriate%20value.).
 
-**Step 2: Ensure that the profiles needed for Microsoft Defender for Endpoint are enabled.**
+#### Step 2: Ensure that the profiles needed for Microsoft Defender for Endpoint are enabled
 
 The section [Sections that provide guidance on enabling profiles needed for Microsoft Defender for Endpoint](#sections-that-provide-guidance-on-enabling-profiles-needed-for-microsoft-defender-for-endpoint) provides guidance on how to address this issue, depending on the method that you used to deploy Microsoft Defender for Endpoint on macOS.
 
@@ -169,7 +184,7 @@ For example,
    curl -O https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/sysext.mobileconfig
 ```
 
-### Sections that provide guidance on enabling profiles needed for Microsoft Defender for Endpoint
+##### Sections that provide guidance on enabling profiles needed for Microsoft Defender for Endpoint
 
 |Management Tool  |Column2  |MobileConfig (Plist)  |
 |---------|---------|---------|
@@ -178,7 +193,7 @@ For example,
 |Other MDM    | 1. [Approve the System Extensions](mac-jamfpro-policies.md)<br><br> 2. [Approve the Network Filter Extension](mac-jamfpro-policies.md)<br><br> 3. [Approve the Privacy Preference Policy Controls (PPPC, aka TCC (Transparency, Consent & Control), Full Disk Access (FDA))](mac-jamfpro-policies.md)<br><br> 4. Running in background<br><br> 5. Sending notifications.<br><br> 6.	Accessibility    | 1. System Extensions (https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/sysext.mobileconfig)<br><br> 2. Network Filter Extension (https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig)<br><br> 3. Full Disk Access (https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)<br><br> 4. Background Services (https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/background_services.mobileconfig)<br><br> 5. End-user notifications (https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/notif.mobileconfig)<br><br> 6. Accessibility (https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig)         |
 |Manual deployment     |     -    |      Must approve the extension by going to **Security Preferences or System Preferences > Security & Privacy** and then selecting **Allow**.   |
 
-**Step 3: Test the installed profiles using macOS built-in ‘profile’ tool.  It compares your profiles with what we have published in GitHub, reporting inconsistent profiles or profiles missing altogether.**
+#### Step 3: Test the installed profiles using macOS built-in ‘profile’ tool.  It compares your profiles with what we have published in GitHub, reporting inconsistent profiles or profiles missing altogether
 
 1. Download the script from https://github.com/microsoft/mdatp-xplat/tree/master/macos/mdm.
 1. Click **Raw**. The new URL will be https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mdm/analyze_profiles.py.
@@ -196,7 +211,7 @@ For example,
 ```
 
    > [!NOTE]
-   > It will ask to sudo.
+   > Sudo permissions are required to execute this command.
 
 OR
 
@@ -208,18 +223,18 @@ OR
 ```
 
    > [!NOTE]
-   > It will ask to sudo.
+   > Sudo permissions are required to execute this command.
 
 The output will show all potential issues with profiles.
 
-#### Intune
+### Intune
 
-##### Intune System Extensions Policy
+#### Intune System Extensions Policy
 
 To approve the system extensions:
 
 1. In Intune, select **Manage > Device configuration**, and then select **Manage > Profiles > Create Profile**.
-1. Choose a name for the profile. Change **Platform=macOS** to **Profile type=Extensions**x, and then select **Create**.
+1. Choose a name for the profile. Change **Platform=macOS** to **Profile type=Extensions**, and then select **Create**.
 1. In the **Basics** tab, give a name to this new profile.
 1. In the **Configuration settings** tab, add the following entries in the **Allowed system extensions** section:
 
@@ -233,7 +248,7 @@ To approve the system extensions:
 1. In the **Assignments** tab, assign this profile to **All Users & All devices**.
 1. Review and create this configuration profile.
 
-##### Create the custom configuration profile
+#### Create the custom configuration profile
 
 The custom configuration profile enables the network extension and grants Full Disk Access to the Endpoint Security system extension.
 
@@ -344,7 +359,7 @@ $ plutil -lint sysext.xml
 sysext.xml: OK
 ```
 
-##### Deploy this custom configuration profile
+#### Deploy this custom configuration profile
 
 1. In Intune, select **Manage > Device configuration**, and then select **Manage > Profiles > Create profile**.
 1. Choose a name for the profile. For the **Platform** attribute, set the value as **macOS** and for the **Profile type** attribute, set the value as **Custom**, and then select **Configure**. The file *sysext.xml* is created.
@@ -356,9 +371,9 @@ sysext.xml: OK
 5. In the **Assignments** tab, assign this profile to **All Users & All devices**.
 6. Review and create this configuration profile.
 
-#### JamF
+### JamF
 
-##### JAMF System Extensions Policy
+#### JAMF System Extensions Policy
 
 To approve the system extensions, perform the following steps:
 
@@ -371,7 +386,7 @@ To approve the system extensions, perform the following steps:
     
     :::image type="content" source="images/jamf-system-extensions-approval.png" alt-text="Approving system extensions in JamF." lightbox="images/jamf-system-extensions-approval.png":::
 
-##### Privacy Preferences Policy Control (aka Full Disk Access)
+#### Privacy Preferences Policy Control (aka Full Disk Access)
 
 Add the following JAMF payload to grant Full Disk Access to the Microsoft Defender for Endpoint Security Extension. This policy is a prerequisite for running the extension on your device.
 
@@ -382,7 +397,7 @@ Add the following JAMF payload to grant Full Disk Access to the Microsoft Defend
 
    :::image type="content" source="images/privacy-preferences-policy-control.png" alt-text="Privacy preferences policy control." lightbox="images/privacy-preferences-policy-control.png":::
 
-##### Network Extension Policy
+#### Network Extension Policy
 
 As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on macOS inspects socket traffic and reports this information to the Microsoft 365 Defender portal. The following policy allows the network extension to perform this functionality:
 
@@ -484,13 +499,13 @@ $ security cms -S -N "SigningCertificate" -i ~/Documents/com.microsoft.network-e
 
 6. From the JAMF portal, navigate to **Configuration Profiles** and select the **Upload** button. Select **com.microsoft.network-extension.signed.mobileconfig** when prompted for the file.
 
-#### Other MDM
+### Other MDM
 
 See [System configuration profiles](mac-install-with-other-mdm.md).
 
-#### Manual deployment
+### Manual deployment
 
-##### System Extensions
+#### System Extensions
 
 You might see the prompt that's shown in the following screenshot:
 
@@ -556,7 +571,7 @@ If you run systemextensionsctl list, the following screen appears:
 
 :::image type="content" source="images/result-of-running-systemextenstionsctl-list.png" alt-text="The resultant screen of running the systemextensionsdcl list." lightbox="images/result-of-running-systemextenstionsctl-list.png":::
 
-##### Accessibility
+#### Accessibility
 
 1. On the **Security & Privacy** screen, select the **Privacy** tab.
 
@@ -574,7 +589,7 @@ If you run systemextensionsctl list, the following screen appears:
 
    :::image type="content" source="images/checking-md-checkbox.png" alt-text="Checking the Microsoft Defender checkbox." lightbox="images/checking-md-checkbox.png":::
 
-##### Full Disk Access
+#### Full Disk Access
 
 1. On the **Security & Privacy** screen, select the **Privacy** tab.
 1. Select **Full Disk Access** from the left navigation pane, and then click the **Lock** icon.
@@ -585,7 +600,7 @@ If you run systemextensionsctl list, the following screen appears:
  
    :::image type="content" source="images/check-md-checkbox.png" alt-text="Checking the MD checkbox." lightbox="images/check-md-checkbox.png":::
 
-##### Notifications
+#### Notifications
 
 1. From the **System Preferences** home screen, select **Notifications**.
 
@@ -599,13 +614,13 @@ If you run systemextensionsctl list, the following screen appears:
 
    :::image type="content" source="images/notifications-md.png" alt-text="Selecting Microsoft Defender option from the Notifications screen." lightbox="images/notifications-md.png":::
 
-##### What a healthy system looks like
+#### What a healthy system looks like
 
-###### mdatp health output
+##### mdatp health output
 
 :::image type="content" source="images/mdatp-health-output.png" alt-text="The mdatp health output screen." lightbox="images/mdatp-health-output.png":::
 
-###### Check the system extensions
+##### Check the system extensions
 
 In terminal, run the following command to check the system extensions:
 
