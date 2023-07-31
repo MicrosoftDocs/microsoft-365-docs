@@ -52,7 +52,7 @@ The correct, expected behavior is a green check mark to indicate that the cowork
 
 ## A user can’t perform some actions in Shifts after another user has signed in to Shifts using the same device
 
-This issue can occur if multiple users, using the same device, try to connect to Teams Shifts app and require to single sign-on (SSO) in UKG Dimensions. 
+This issue can occur if multiple users use the same device to connect to the Teams Shifts app and require a single sign-on (SSO) in UKG Dimensions. 
 
 For example, user A signs in to Teams, requests a time off request, and signs out. To perform the request, user A was required to introduce their Azure AD credentials to verify (SSO). Using the same device, user B signs in to Teams and tries to perform another action in Shifts that requires SSO.
 
