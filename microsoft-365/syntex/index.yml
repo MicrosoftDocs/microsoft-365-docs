@@ -79,10 +79,10 @@ landingContent:
             url: ocr-overview.md
           - text: Annotations
             url: annotations.md
-          - text: Content processing
-            url: content-processing-overview.md
           - text: Content query
             url: metadata-search.md
+          - text: Content processing
+            url: content-processing-overview.md
 
 # Card 4
   - title: Extensibility
