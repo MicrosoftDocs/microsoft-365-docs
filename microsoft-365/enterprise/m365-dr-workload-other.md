@@ -56,6 +56,9 @@ Please refer to [Dynamics 365 availability and data locations | Microsoft Learn]
 ### Stream
 You can find this information from the "?" option in the Stream UI, if you have it running and then click on "About Microsoft Stream" and see where your data is stored. If needed, create a trial tenant.
 
+### Viva Glint
+The data region for Viva Glint is determined by the default geography of the tenant, not individual users, and is stored in US or EU data centers based on central tenant location.
+
 ### Viva Goals
 
 #### Summary
