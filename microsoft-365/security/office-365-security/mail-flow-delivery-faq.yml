@@ -6,7 +6,7 @@ metadata:
   ms.author: chrisda
   author: chrisda
   manager: dansimp
-  ms.date: 1/31/2023
+  ms.date: 6/22/2023
   audience: ITPro
   ms.topic: faq
   ms.collection: tier3
@@ -26,7 +26,7 @@ summary: |
   - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
   - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-  This topic provides answers to frequently asked questions about messages that have been queued, deferred, or bounced during the Exchange Online Protection (EOP) filtering process.
+  This article provides answers to frequently asked questions about messages that have been queued, deferred, or bounced during the Exchange Online Protection (EOP) filtering process.
 
 sections:
   - name: Ignored
@@ -34,19 +34,19 @@ sections:
       - question: |
           Why is mail queuing?
         answer: |
-          Messages are queued or deferred if the service is unable to make a connection to the recipient server for delivery. It will not defer messages if a 500-series error is returned from the recipient network.
+          Messages are queued or deferred if the service is unable to make a connection to the destination server for delivery. Messages aren't deferred if a 500-series (permanent) error is returned from the destination server.
 
       - question: |
           How does a message become deferred?
         answer: |
-          Messages are held when a connection to the recipient server can't be made and the recipient's server is returning a "temporary failure" such as a connection time-out, connection refused, or a 400-series error. If there's a permanent failure, such as a 500-series error, then the message is returned to the sender.
+          Messages are held when a connection to the destination server can't be made, and the destination server returns temporary) errors. For example, connection time-out, connection refused, or other 400-series errors. 500-series (permanent) errors result in return of the message in a non-delivery report (also known as an NDR or bounce message).
 
       - question: |
           How long does a message remain in deferral and what is the retry interval?
         answer: |
-          Messages in deferral remain in our queues for 1 day. Message retry attempts are based on the error we get back from the recipient's mail system. The first few deferrals are 15 minutes or less, with subsequent retries (over the next half dozen or so) increasing the interval over multiple retries to a max of 60 minutes. The interval duration expansion is dynamic, taking into consideration multiple variables like queue sizes and internal message priority. In basic, it's 15 minutes (or less) to start, then expanding from there over the next few hours to 60 mins max.
+          Deferred messages remain in our queues for one day. Retry attempts are based on the errors that we receive from the destination email server. The first few deferrals are 15 minutes or less. The interval for subsequent retries increases to a maximum of 60 minutes. The interval duration expansion is dynamic, and considers multiple variables (queue size, internal message priority, etc.).
 
       - question: |
-          After your email server is restored, how are queued messages distributed?
+          After communication to the email server is restored, how are queued messages distributed?
         answer: |
-          After your email server is restored, all queued messages are automatically processed in the order in which they were received and queued when the server became unavailable.
+          Queued messages are automatically processed in the order in which they were received, and are queued for delivery when the server became unavailable.

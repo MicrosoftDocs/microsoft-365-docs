@@ -27,18 +27,24 @@ This article walks you through how to review, create, or edit your security poli
 
 :::image type="content" source="media/mdb-setup-step6.png" alt-text="Visual depicting step 6 - Review and edit security policies in Defender for Business.":::
 
+## Default policies
+
 When you're setting up (or maintaining) Defender for Business, an important part of the process includes reviewing your default policies, such as:
 
 - [Next-generation protection](mdb-next-generation-protection.md)
 - [Firewall protection](mdb-firewall.md)
 
+## Additional policies
+
 In addition to your default security policies, you can add other policies, such as:
 
 - [Web content filtering](mdb-web-content-filtering.md)
-- [Controlled folder access](mdb-controlled-folder-access.md)
-- [Attack surface reduction rules](mdb-asr.md)
+- [Controlled folder access](mdb-controlled-folder-access.md) (*requires Microsoft Intune*)
+- [Attack surface reduction rules](mdb-asr.md) (*ASR rules are configured in Intune*)
 
-And, you can view and edit settings for advanced features, such as:
+## Advanced features and settings
+
+You can view and edit settings for advanced features, such as:
 
 - [Turning on (or off) advanced features](mdb-portal-advanced-feature-settings.md#view-settings-for-advanced-features);
 - [Specifying which time zone to use in the Microsoft 365 Defender portal](mdb-portal-advanced-feature-settings.md#view-and-edit-other-settings-in-the-microsoft-365-defender-portal); and 
@@ -57,15 +63,12 @@ If you're using Intune, and you attempt to view or edit security policies in the
 
 :::image type="content" source="media/mdb-usingintune-switchquestion.png" alt-text="Screenshot showing a screen that prompts the user to keep using Intune or switch to the Microsoft 365 Defender portal.":::
 
-Note that in the preceding image, **Use Defender for Business configuration instead** refers to using the Microsoft 365 Defender portal, with a simplified configuration experience designed for small and medium-sized businesses. If you opt to use the Microsoft 365 Defender portal, you must delete any existing security policies in Intune to avoid policy conflicts. For more details, see [I need to resolve a policy conflict](/microsoft-365/security/defender-business/mdb-troubleshooting#i-need-to-resolve-a-policy-conflict).
-
-
+In the preceding image, **Use Defender for Business configuration instead** refers to using the Microsoft 365 Defender portal, which provides a simplified configuration experience designed for small and medium-sized businesses. If you opt to use the Microsoft 365 Defender portal, you must delete any existing security policies in Intune to avoid policy conflicts. For more details, see [I need to resolve a policy conflict](/microsoft-365/security/defender-business/mdb-troubleshooting#i-need-to-resolve-a-policy-conflict).
 
 > [!NOTE]
 > If you're managing your security policies in the Microsoft 365 Defender portal, you can view those policies in the Intune admin center, where they're listed as **Antivirus** or **Firewall** policies. When you view your firewall policies in the Intune admin center, you'll see two policies listed: one policy for firewall protection and another for custom rules.
-
-
-
+>
+> You can export your list of policies through the [Microsoft Intune admin center](https://intune.microsoft.com/). 
 
 ## Next steps
 

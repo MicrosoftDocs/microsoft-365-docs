@@ -18,7 +18,8 @@ audience: ITPro
 ms.collection: 
  - m365-security
  - tier3
-ms.topic: conceptual
+ - must-keep
+ms.topic: reference
 search.appverid: 
   - MOE150
   - MET150
@@ -179,3 +180,4 @@ You're all done! You've successfully:
 - [Create an app with multi-tenant partner access to Microsoft 365 Defender APIs](api-partner-access.md)
 - [Manage secrets in your server apps with Azure Key Vault](/training/modules/manage-secrets-with-azure-key-vault/)
 - [OAuth 2.0 Authorization for user sign in and API access](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

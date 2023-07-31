@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: shcallaw, kywirpel
-ms.date: 07/08/2021
+ms.date: 07/03/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -26,7 +26,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 Microsoft 365 Lighthouse baselines provide a repeatable and scalable way for you to manage Microsoft 365 security settings across multiple customer tenants. Baselines provide standard tenant configurations that deploy core security policies and compliance standards that keep your tenants' users, devices, and data secure and healthy.
 
-To view the Microsoft 365 Lighthouse default baseline that applies to all tenants, select **Deployment > Baselines** in the left navigation pane in Lighthouse.
+To view the Microsoft 365 Lighthouse default baseline that applies to all tenants, select **Deployment** > **Baselines** in the left navigation pane in Lighthouse.
 
 ## Watch: Deploy baselines
 

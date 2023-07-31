@@ -66,6 +66,10 @@ Most MDM solutions use the same model for managing macOS devices, with similar t
 Configure deployment of a [required application package](mac-install-with-jamf.md), 
 with the installation package (wdav.pkg) downloaded from [Microsoft 365 Defender portal](mac-install-with-jamf.md).
 
+
+[!INCLUDE [Defender for Endpoint repackaging warning](../../includes/repackaging-warning.md)]
+
+
 In order to deploy the package to your enterprise, use the instructions associated with your MDM solution.
 
 ### License settings
@@ -104,3 +108,4 @@ We post notifications to our [What's New page](mac-whatsnew.md) once we make cha
 ## Check installation status
 
 Run [Microsoft Defender for Endpoint](mac-install-with-jamf.md) on a client device to check the onboarding status.
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

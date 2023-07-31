@@ -18,7 +18,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 03/22/2021
+ms.date: 04/26/2023
 ---
 
 # Microsoft Defender for Endpoint on Linux
@@ -253,3 +253,4 @@ High I/O workloads from certain applications can experience performance issues w
 - [Protect your endpoints with Defender for Cloud's integrated EDR solution: Microsoft Defender for Endpoint](/azure/defender-for-cloud/integration-defender-for-endpoint)
 - [Connect your non-Azure machines to Microsoft Defender for Cloud](/azure/defender-for-cloud/quickstart-onboard-machines)
 - [Turn on network protection for Linux](network-protection-linux.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

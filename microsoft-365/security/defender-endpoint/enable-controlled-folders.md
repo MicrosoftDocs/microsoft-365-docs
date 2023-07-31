@@ -74,7 +74,7 @@ For more information about disabling local list merging, see [Prevent or allow u
 
 2. Go to **Attack Surface Reduction** \> **Policy**.
 
-3. Select **Platform**, choose **Windows 10 and later**, and select the profile **Attack Surface Reduction rules** \> **Create**.
+3. Select **Platform**, choose **Windows 10, Windows 11, and Windows Server**, and select the profile **Attack Surface Reduction rules** \> **Create**.
 
 4. Name the policy and add a description. Select **Next**.
 
@@ -153,3 +153,4 @@ Use `Disabled` to turn off the feature.
 - [Protect important folders with controlled folder access](controlled-folders.md)
 - [Customize controlled folder access](customize-controlled-folders.md)
 - [Evaluate Microsoft Defender for Endpoint](evaluate-mde.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

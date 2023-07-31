@@ -187,3 +187,4 @@ Cleanup c:\demo encryption run the [encrypt/decrypt file](https://demo.wd.micros
 [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md)
 
 [Microsoft Defender for Endpoint - demonstration scenarios](defender-endpoint-demonstrations.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
-ms.date: 01/27/2023
+ms.date: 06/19/2023
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection: 
@@ -52,7 +52,7 @@ The following table lists the basic requirements for Defender for Endpoint Plan 
 |:---|:---|
 | Licensing requirements | Defender for Endpoint Plan 1 (standalone, or as part of Microsoft 365 E3 or A3) |
 | Browser requirements | Microsoft Edge <br/> Internet Explorer version 11 <br/> Google Chrome |
-| Operating systems | Windows 11, or Windows 10, version 1709, or later <br/>macOS (the three most recent releases are supported) <br/>iOS <br/>Android OS <br/><br/>Note that the standalone version of Defender for Endpoint Plan 1 does not include server licenses. To onboard servers, you'll need either Microsoft Defender for Endpoint for Servers, or Defender for Servers Plan 1 or Plan 2 (as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction)) offering. To learn more. see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md). |
+| Operating systems | Windows 11, or Windows 10, version 1709, or later <br/>macOS (the three most recent releases are supported) <br/>iOS <br/>Android OS <br/><br/>Note that the standalone version of Defender for Endpoint Plan 1 does not include server licenses. To onboard servers, you'll require an additional license, such as Microsoft Defender for Servers Plan 1 or Plan 2 (as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction)) offering. To learn more. see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md). |
 | Datacenter | One of the following datacenter locations: <br/>- European Union <br/>- United Kingdom <br/>- United States |
 
 
@@ -402,3 +402,4 @@ To help with planning your WDAC deployment, see the following resources:
 Now that you have gone through the setup and configuration process, your next step is to get started using Defender for Endpoint. 
 
 - [Get started with Defender for Endpoint Plan 1](mde-plan1-getting-started.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

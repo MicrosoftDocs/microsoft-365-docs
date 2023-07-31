@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 3/28/2023
+ms.date: 7/31/2023
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-security
@@ -16,24 +16,17 @@ ms.collection:
 - tier1
 - highpri
 ms.custom:
-description: Microsoft Defender for Office 365 E5 and P1 and P2 customers can see email details in all Microsoft Defender for Office 365 experiences including the email headers for copy, Detection details, Threats detected, Latest and Original delivery locations, Delivery actions, and IDs like Alert Id, Network Message ID and more.
+description: Microsoft 365 E5 and Microsoft Defender for Office 365 Plan 1 and Plan 2 customers can see email details in all Microsoft Defender for Office 365 experiences including the email headers for copy, Detection details, Threats detected, Latest and Original delivery locations, Delivery actions, and IDs like Alert Id, Network Message ID and more.
 search.appverid: met150
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
 ---
 
 # The Email entity page
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-**Applies to:**
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-
-**In this article:**
-- [Reach the email entity page](#how-to-get-to-the-email-entity-page)
-- [Read the email entity page](#how-to-read-the-email-entity-page)
-- [Use email entity page tabs](#how-to-use-the-email-entity-page-tabs)
-- [New to the email entity page](#available-on-the-email-entity-page)
-
-Admins of Microsoft Defender for Office 365 E5, and Defender for Office P1 and P2 have a 360-degree view of email using the **Email entity page**. This go-to email page was created to enhance information delivered throughout Microsoft Defender for Office 365 and Microsoft 365 Defender.
+Admins of Microsoft 365 E5, and Microsoft Defender for Office 365 Plan 1 and and Plan 2 have a 360-degree view of email using the **Email entity page**. This go-to email page was created to enhance information delivered throughout Microsoft Defender for Office 365 and Microsoft 365 Defender.
 
 See email details in the experiences below, including [previewing and downloading the email](#email-preview-and-download-for-cloud-mailboxes), the email headers *with the option to copy*, Detection details, Threats detected, Latest and Original delivery locations, Delivery actions, and IDs like Alert ID, Network Message ID and more.
 

@@ -48,6 +48,8 @@ mkdir mdatp/files
 
 Transfer the Linux Server Onboarding zip file that can be downloaded from the Microsoft 365 Defender portal to this new files folder.
 
+[!INCLUDE [Defender for Endpoint repackaging warning](../../includes/repackaging-warning.md)]
+
 On the Chef Workstation, navigate to the mdatp/recipes folder. This folder is created when the cookbook was generated. Use your preferred text editor (like vi or nano) to add the following instructions to the end of the default.rb file:
 
 - include_recipe '::onboard_mdatp'
@@ -158,3 +160,4 @@ then
  end
 end
 ```
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

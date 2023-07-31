@@ -130,7 +130,7 @@ Use this section to investigate the attack and plan your response.
 
 ### Identify the ransomware process
 
-* Using [advanced hunting](/microsoft-365/security/defender/advanced-hunting-overview.md), search for the identified process in the process creation events on other devices.
+* Using [advanced hunting](advanced-hunting-overview.md), search for the identified process in the process creation events on other devices.
 
 ### Look for exposed credentials in the infected devices
 
@@ -257,3 +257,4 @@ Recover deleted email.
 ### Step 9: Re-enable Exchange ActiveSync and OneDrive sync
 
 * After you've cleaned your computers and devices and recovered the data, you can re-enable Exchange ActiveSync and OneDrive sync that you previously disabled in step 3 of containment.
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

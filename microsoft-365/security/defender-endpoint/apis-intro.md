@@ -17,7 +17,8 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
-ms.topic: conceptual
+- must-keep
+ms.topic: reference
 ms.custom: api
 search.appverid: met150
 ---
@@ -88,3 +89,4 @@ You can access Defender for Endpoint API with **Application Context** or **User 
 - [Microsoft Defender for Endpoint APIs](exposed-apis-list.md)
 - [Access Microsoft Defender for Endpoint with application context](exposed-apis-create-app-webapp.md)
 - [Access Microsoft Defender for Endpoint with user context](exposed-apis-create-app-nativeapp.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

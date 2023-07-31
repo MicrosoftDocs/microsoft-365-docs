@@ -14,7 +14,8 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
-ms.topic: conceptual
+- must-keep
+ms.topic: reference
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
@@ -98,3 +99,4 @@ vendorId|String|Related vendor name
 - [Microsoft Defender Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
 
 - [Vulnerabilities in your organization](tvm-weaknesses.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

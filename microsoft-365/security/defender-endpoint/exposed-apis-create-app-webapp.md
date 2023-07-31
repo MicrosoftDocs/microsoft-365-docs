@@ -16,7 +16,8 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
-ms.topic: conceptual
+- must-keep
+ms.topic: reference
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
@@ -238,3 +239,4 @@ var response = httpClient.SendAsync(request).GetAwaiter().GetResult();
 ## See also
 - [Supported Microsoft Defender for Endpoint APIs](exposed-apis-list.md)
 - [Access Microsoft Defender for Endpoint on behalf of a user](exposed-apis-create-app-nativeapp.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

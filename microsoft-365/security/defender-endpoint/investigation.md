@@ -14,7 +14,8 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
-ms.topic: conceptual
+- must-keep
+ms.topic: reference
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
@@ -77,3 +78,4 @@ triggeringAlertId|String|The ID of the alert that triggered the investigation.
     "triggeringAlertId": "da637139127150012465_1011995739"
 }
 ```
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

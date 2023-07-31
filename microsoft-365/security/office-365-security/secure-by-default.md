@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.date: 1/31/2023
+ms.date: 6/20/2023
 audience: ITPro
 ms.topic: conceptual
 ms.localizationpriority: medium
@@ -18,16 +18,15 @@ ms.collection:
 description: Learn more about the secure by default setting in Exchange Online Protection (EOP)
 ms.subservice: mdo
 ms.service: microsoft-365-security
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
 # Secure by default in Office 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
-
-**Applies to**
-- [Exchange Online Protection](eop-about.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 "Secure by default" is a term used to define the default settings that are most secure as possible.
 
@@ -77,4 +76,4 @@ You should only consider using overrides in the following scenarios:
 - Phishing simulations: Simulated attacks can help you identify vulnerable users before a real attack impacts your organization. To prevent phishing simulation messages from being filtered, see [Configure third-party phishing simulations in the advanced delivery policy](/microsoft-365/security/office-365-security/skip-filtering-phishing-simulations-sec-ops-mailboxes#use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy).
 - Security/SecOps mailboxes: Dedicated mailboxes used by security teams to get unfiltered messages (both good and bad). Teams can then review to see if they contain malicious content. For more information, see [Configure SecOps mailboxes in the advanced delivery policy](/microsoft-365/security/office-365-security/skip-filtering-phishing-simulations-sec-ops-mailboxes#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
 - Third-party filters: Secure by default only applies when the MX record for your domain is set to Exchange Online Protection (contoso.mail.protection.outlook.com). If it's set to another service or device, it's possible to override Secure by default with a [Transport Rule](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl) to bypass all spam filtering. When Microsoft detects messages as High Confidence Phish with this rule in place, they still deliver to the Inbox.
-- False positives: To temporarily allow certain messages that are still being blocked by Microsoft, use [admin submissions](submissions-admin.md#report-good-email-to-microsoft). By default, allow entries for domains and email addresses, files, and URLs exist for 30 days. During those 30 days, Microsoft learns from the allow entries and [remove them or automatically extend them](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447). By default, allow entries for spoofed senders never expire.
+- False positives: To temporarily allow certain messages that are still being blocked by Microsoft, use [admin submissions](submissions-admin.md#report-good-email-to-microsoft). By default, allow entries for domains and email addresses, files, and URLs exist for 30 days. During those 30 days, Microsoft learns from the allow entries and [removes them or automatically extends them](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447). By default, allow entries for spoofed senders never expire.

@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
+- must-keep
 ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api
@@ -35,10 +36,6 @@ ms.date: 12/18/2020
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
-
-> [!NOTE]
->**Before you begin**:
-You first need to [create an app](/microsoft-365/security/defender-endpoint/apis-intro).
 
 In this section you will learn to create a Power BI report on top of Defender for Endpoint APIs.
 
@@ -146,3 +143,4 @@ View the Microsoft Defender for Endpoint Power BI report samples. For more infor
 - [Defender for Endpoint APIs](apis-intro.md)
 - [Advanced Hunting API](run-advanced-query-api.md)
 - [Using OData Queries](exposed-apis-odata-samples.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 audience: ITPro
 author: Dansimp
 ms.author: dansimp
-ms.date: 03/27/2019
+ms.date: 07/28/2023
 ms.reviewer:
 manager: dansimp
 ms.custom: asr
@@ -50,7 +50,7 @@ There are four steps to troubleshooting these problems:
 
 Attack surface reduction rules only work on devices with the following conditions:
 
-- Endpoints are running Windows 10 Enterprise, version 1709 (also known as the Fall Creators Update).
+- Endpoints are running Windows 10 Enterprise or later.
 
 - Endpoints are using Microsoft Defender Antivirus as the sole antivirus protection app. [Using any other antivirus app will cause Microsoft Defender Antivirus to disable itself](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility).
 
@@ -74,7 +74,7 @@ If a rule isn't blocking a file or process that you're expecting it should block
 
 Audit mode may have been enabled for testing another feature, or by an automated PowerShell script, and may not have been disabled after the tests were completed.
 
-If you've tested the rule with the demo tool and with audit mode, and attack surface reduction rules are working on pre-configured scenarios, but the rule isn't working as expected, proceed to either of the following sections based on your situation:
+If you've tested the rule with the demo tool and with audit mode, and attack surface reduction rules are working on preconfigured scenarios, but the rule isn't working as expected, proceed to either of the following sections based on your situation:
 
 1. If the attack surface reduction rule is blocking something that it shouldn't block (also known as a false positive), you can [first add an attack surface reduction rule exclusion](#add-exclusions-for-a-false-positive).
 
@@ -92,7 +92,7 @@ To add an exclusion, see [Customize Attack surface reduction](attack-surface-red
 
 ## Report a false positive or false negative
 
-Use the [Windows Defender Security Intelligence web-based submission form](https://www.microsoft.com/wdsi/support/report-exploit-guard) to report a false negative or false positive for network protection. With a Windows E5 subscription, you can also [provide a link to any associated alert](alerts-queue.md).
+Use the [Microsoft Security Intelligence web-based submission form](https://www.microsoft.com/wdsi/support/report-exploit-guard) to report a false negative or false positive for network protection. With a Windows E5 subscription, you can also [provide a link to any associated alert](alerts-queue.md).
 
 ## Collect diagnostic data for file submissions
 
@@ -101,7 +101,7 @@ When you report a problem with attack surface reduction rules, you're asked to c
 1. Open an elevated command prompt and change to the Windows Defender directory:
 
    ```console
-   cd "c:\program files\windows defender"
+   cd "c:\program files\Windows Defender"
    ```
 
 2. Run this command to generate the diagnostic logs:
@@ -117,3 +117,4 @@ When you report a problem with attack surface reduction rules, you're asked to c
 - [Attack surface reduction rules](attack-surface-reduction.md)
 - [Enable attack surface reduction rules](enable-attack-surface-reduction.md)
 - [Evaluate attack surface reduction rules](evaluate-attack-surface-reduction.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

@@ -10,7 +10,7 @@ ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
 audience: ITPro
-author: jweston-1
+author: dansimp
 ms.author: dansimp
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
@@ -192,7 +192,6 @@ ASR rules now provide the capability to configure rule-specific exclusions, know
 
 > [!NOTE]
 > Per-rule exclusions cannot currently be configured by using PowerShell or Group Policy.
-> In Microsoft Intune, per-rule exclusions cannot be added to the existing policy. As it is currently implemented, in order to configure per-rule exclusions, you must create a new policy in Intune to replace the existing policy.
 
 To configure per-rule exclusions:
 
@@ -251,3 +250,4 @@ Event ID | Description
 [Operationalize attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-operationalize.md)
 
 [Attack surface reduction (ASR) rules reference](attack-surface-reduction-rules-reference.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
