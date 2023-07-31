@@ -1,0 +1,19 @@
+{
+   "redirections":[
+      {
+         "source_path":"microsoft-365/lighthouse/m365-lighthouse-tenant-list-overview.md",
+         "redirect_url":"/microsoft-365/lighthouse/m365-lighthouse-tenants-page-overview",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"microsoft-365/lighthouse/m365-lighthouse-set-up-roles.md",
+         "redirect_url":"/microsoft-365/lighthouse/m365-lighthouse-overview-of-permissions",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"microsoft-365/lighthouse/m365-lighthouse-deploy-baselines.md",
+         "redirect_url":"/microsoft-365/lighthouse/m365-lighthouse-deploy-standard-tenant-configurations-overview",
+         "redirect_document_id":false
+      }
+   ]
+}

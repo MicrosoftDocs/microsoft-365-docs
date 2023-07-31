@@ -83,6 +83,14 @@ In this example, we assign a policy named ScheduleOwnerPolicy to a user named re
 Grant-CsTeamsShiftsPolicy -Identity remy@contoso.com -PolicyName ScheduleOwnerPolicy
 ```
 
+### Example 3
+
+In this example, we assign a policy named ScheduleOwnerPolicy to a group specified by its object id.
+
+```powershell
+Grant-CsTeamsShiftsPolicy -Group 83d3ca56-50e9-46fb-abd4-4f66939188f8 -PolicyName ScheduleOwnerPolicy
+```
+
 ## Related articles
 
 - [Manage the Shifts app for your organization in Teams](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)

@@ -80,7 +80,7 @@ The following tags are available:
 
 For more information about filter options in Cost Management, see [Group and filter options in Cost analysis](/azure/cost-management-billing/costs/group-filter).
 
-## Related topics
+## Related articles
 
 [Overview of Microsoft Syntex](syntex-overview.md)
 
