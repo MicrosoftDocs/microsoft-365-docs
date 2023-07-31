@@ -197,7 +197,7 @@
         - name: Move or copy a file 
           href: content-processing-create-rules.md
 
-    - name: Term store premiums
+    - name: Term store features
       items:
         - name: Import using SKOS
           href: import-term-set-skos.md
