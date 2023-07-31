@@ -1,5 +1,5 @@
 ---
-title: Collaborate with guests from other Microsoft 365 cloud environments
+title: Collaborate with guests from other Microsoft 365 cloud environments (Preview)
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -22,7 +22,7 @@ recommendations: false
 description: Learn how to enable guest invitations between Microsoft 365 cloud environments (such as commercial and DoD).
 ---
 
-# Collaborate with guests from other Microsoft 365 cloud environments
+# Collaborate with guests from other Microsoft 365 cloud environments (Preview)
 
 Microsoft 365 organizations have one of several tenant types and are located in one of three Microsoft clouds:
 
