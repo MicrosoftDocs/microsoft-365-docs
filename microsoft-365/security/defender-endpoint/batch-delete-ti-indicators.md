@@ -6,7 +6,6 @@ ms.service: microsoft-365-security
 ms.subservice: mde
 author: itsela-ms
 ms.author: itsela
-ms.topic: reference
 ms.localizationpriority: medium
 manager: dansimp
 ms.collection: 
