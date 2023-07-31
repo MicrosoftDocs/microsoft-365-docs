@@ -61,7 +61,7 @@ In this scenario, an issue occurs in which user B is signed in to Teams and Shif
 To mitigate this issue, do one of the following actions:
 
 - Close all the opened browser windows after each user signs out of the Teams web app. This needs to happen independently of whether the user has accessed the Teams web app through the InPrivate window in Microsoft Edge or in Incognito mode in Google Chrome.
-- Clear cookies and site data for the mykronos.com site in the browser after each user signs out of Teams web app. To learn more, see [Delete cookies in Microsoft Edge](https://support.microsoft.com/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09) or [Clear, enable, and manage cookies in Chrome](https://support.google.com/chrome/answer/95647).
+- Clear cookies and site data for the mykronos.com site in the browser after each user signs out of the Teams web app. To learn more, see [Delete cookies in Microsoft Edge](https://support.microsoft.com/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09) or [Clear, enable, and manage cookies in Chrome](https://support.google.com/chrome/answer/95647).
 
 
 ## Availability can only be set for one Microsoft team
