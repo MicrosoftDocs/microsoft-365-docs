@@ -137,10 +137,6 @@ This section describes the solution of approving the functions such system exten
 
 Prior to approving the system extension (using any of the specified management tools), ensure that the following prerequisites are fulfilled:
 
-- [Step 1: Are the profiles coming down to your macOS?](#step-1-are-the-profiles-coming-down-to-your-macos)
-- [Step 2: Ensure that the profiles needed for Microsoft Defender for Endpoint are enabled](#step-2-ensure-that-the-profiles-needed-for-microsoft-defender-for-endpoint-are-enabled)
-- [Step 3: Test the installed profiles using macOS built-in ‘profile’ tool.  It compares your profiles with what we have published in GitHub, reporting inconsistent profiles or profiles missing altogether](#step-3-test-the-installed-profiles-using-macos-built-in-profile-tool-it-compares-your-profiles-with-what-we-have-published-in-github-reporting-inconsistent-profiles-or-profiles-missing-altogether)
-
 #### Step 1: Are the profiles coming down to your macOS?
 
 If you're using Intune, see [Manage macOS software update policies in Intune](/mem/intune/protect/software-updates-macos).
