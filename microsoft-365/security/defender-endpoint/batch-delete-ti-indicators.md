@@ -1,28 +1,24 @@
 ---
-title: Delete Indicator API.
-description: Learn how to use the Delete Indicator API to delete an Indicator entity by ID in Microsoft Defender for Endpoint.
+title: Batch Delete Indicators API
+description: Learn how to use the Batch Delete Indicators API to delete indicator entities by ID in Microsoft Defender for Endpoint.
 keywords: apis, public api, supported apis, delete, ti indicator, entity, id
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.subservice: mde
+author: itsela-ms
+ms.author: itsela
 ms.localizationpriority: medium
 manager: dansimp
-audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
 - must-keep
 ms.topic: reference
-ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 07/31/2023
 ---
 
-# Delete Indicator API
+# Batch Delete Indicators
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -40,11 +36,13 @@ ms.date: 12/18/2020
 
 ## API description
 
-Deletes an [Indicator](ti-indicator.md) entity by ID.
+Deletes [Indicator](ti-indicator.md) entities by ID.
 
 ## Limitations
 
-Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
+Rate limitations for this API are 30 calls per minute and 1500 calls per hour.
+
+Batch size limit of up to 500 [Indicator](ti-indicator.md) IDs.
 
 ## Permissions
 
@@ -58,10 +56,10 @@ Application | Ti.ReadWrite.All | 'Read and write Indicators'
 ## HTTP request
 
 ```http
-Delete https://api.securitycenter.microsoft.com/api/indicators/{id}
+POST https://api.securitycenter.microsoft.com/api/indicators/BatchDelete
 ```
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
+[!include [Improve request performance](../../includes/improve-request-performance.md)]
 
 ## Request headers
 
@@ -71,13 +69,23 @@ Authorization | String | Bearer {token}. **Required**.
 
 ## Request body
 
-Empty
+In the request body, supply a JSON object with the following parameters:
+
+|Parameter|Type|Description|
+|:---|:---|:---|
+|IndicatorIds|List *String* |A list of the IDs of the indicators to be removed. **Required**|
 
 ## Response
 
-If Indicator exists and deleted successfully - 204 OK without content
+If Indicators all existed and were deleted successfully - 204 OK without content
 
-If Indicator with the specified id wasn't found - 404 Not Found
+if indicator IDs list is empty or exceeds size limit - 400 Bad Request
+
+if any indicator ID is invalid - 400 Bad Request
+
+if requestor is not exposed to any indicator's device groups - 403 Forbidden
+
+If any Indicator ID was not found - 404 Not Found
 
 ## Example
 
@@ -86,6 +94,13 @@ If Indicator with the specified id wasn't found - 404 Not Found
 Here's an example of the request.
 
 ```http
-DELETE https://api.securitycenter.microsoft.com/api/indicators/995
+POST https://api.securitycenter.microsoft.com/api/indicators/BatchDelete
 ```
-[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+
+
+```json
+{
+	"IndicatorIds": [ "1", "2", "5" ]
+}
+```
+
