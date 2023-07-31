@@ -26,7 +26,7 @@ ms.date: 07/12/2023
 ## Overview
 
 >[!IMPORTANT]
->This feature will begin rolling out for public preview in July 2023. If you would like to provide feedback and improve this feature while in preview, please fill out this <a href="https://forms.microsoft.com/r/DWaJXA6Dax">form</a>.
+>This feature will begin rolling out for public preview in July 2023. If you would like to provide feedback and improve this feature while in preview, please fill out [this form](https://forms.microsoft.com/r/DWaJXA6Dax)
 
 Frontline teams are a collection of people, content, and tools within an organization for different frontline worker locations. Membership of frontline dynamic teams is determined and managed by a set of Azure Active Directory (Azure AD) attributes. [Learn more about Azure AD attributes](/azure/active-directory/external-identities/customers/how-to-define-custom-attributes).
 
