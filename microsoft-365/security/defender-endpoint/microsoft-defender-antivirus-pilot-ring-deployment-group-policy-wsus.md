@@ -55,7 +55,7 @@ The following resources provide information for using and managing Windows Serve
 
 This section provides information about setting up the pilot (UAT/Test/QA) environment using Group Policy and Windows Server Update Services (WSUS).
 
-:::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus.png" alt-text="Shows an example ring deployment schedule for Group Policy with WSUS environments." lightbox="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus.png":::
+:::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus.png" alt-text="Screenshot that shows an example ring deployment schedule for Group Policy with WSUS environments." lightbox="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus.png":::
 
 > [!NOTE]
 > Security intelligence update (SIU) is equivelant to signature updates, which is the same as definition updates.
@@ -79,7 +79,7 @@ On about 10-500* Windows and/or Windows Server systems, depending on how many to
 
 1. On the **Choose Products** page, scroll down to **Forefront**, select **Forefront Client Security** and **System Center Endpoint Protection** This is shown in the following figure.
    
-   :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-choose-products-av.png" alt-text="Shows a screen capture of the WSUS configuration wizard Choose Products page." lightbox="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-choose-products-av.png":::
+   :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-choose-products-av.png" alt-text="Screenshot that shows a screen capture of the WSUS configuration wizard Choose Products page." lightbox="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-choose-products-av.png":::
 
    While still on the **Choose Products** page, scroll down to **Windows** and select **Microsoft Defender Antivirus**.
 
@@ -101,7 +101,7 @@ The Windows Server Update Services Configuration Wizard is complete.
 
 1. Open the **Update Services** snap-in console, and navigate to **YR2K19**. The console is shown in the following figure.
 
-   :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-update-service-synch.png" alt-text="Shows a screen capture of the Update Services snap-in console with YR2K19 shown." lightbox="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-update-service-synch.png":::
+   :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-update-service-synch.png" alt-text="Screenshot that shows a screen capture of the Update Services snap-in console with YR2K19 shown." lightbox="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-update-service-synch.png":::
 
 1. When synchronization is complete, you can see how many products and classifications have been added in the last 30 days. Check to ensure the status for **Last synchronization result** indicates _Succeeded_. You may see a warning indicating **"Your WSUS server currently shows that no computers are registered to receive updates"**. This warning is normal at this point of the deployment configuration process. 
 
@@ -110,23 +110,23 @@ The Windows Server Update Services Configuration Wizard is complete.
 1. In the **Update Services** console, in the navigation tree, go to > **Update Services** > **YR2K19** > **Updates** > **All Updates**.
 1. In the **Actions** column, select **Search**. **Search** opens. In **Text**, type _defender_, and press _ENTER_. The results field under **Update Title** lists updates that include the word **Defender** in the title. For example _Windows Defender_ and _Microsoft Defender Antivirus_ updates for _Platform_, _Engine_, and _Intelligence_. Example results are shown in the next image.
 
-   See [ Viewing and Managing Updates](/windows-server/administration/windows-server-update-services/manage/viewing-and-managing-updates.md).
+   See [ Viewing and Managing Updates](/windows-server/administration/windows-server-update-services/manage/viewing-and-managing-updates).
 
-   :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-update-service-search-defender.png" alt-text="Shows a screen capture of the Update Services for Microsoft Defender Antivirus." lightbox="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-update-service-search-defender.png":::
+   :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-update-service-search-defender.png" alt-text="Screenshot that shows a screen capture of the Update Services for Microsoft Defender Antivirus." lightbox="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-update-service-search-defender.png":::
 
 1. In the **Search** dialog, under **Update Title**, double-click one of the listed KB items. One of two things happens:
 
    - If you don't have **Microsoft Report Viewer 2012 Redistributable** installed, the following error message appears:
      
-     :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-report-viewer-error.png" alt-text="Shows a screen capture of an error message indicating the Microsoft Report Viewer 2012 Redistributable isn't installed." lightbox="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-report-viewer-error.png":::
+     :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-report-viewer-error.png" alt-text="Screenshot that shows a screen capture of an error message indicating the Microsoft Report Viewer 2012 Redistributable isn't installed." lightbox="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-report-viewer-error.png":::
 
      Follow the link in the error message to install the Microsoft Report Viewer 2012 Redistributable before proceeding to the next numbered step of this procedure.
 
     - If **Microsoft Report Viewer 2012 Redistributable** installed, **Update Report for YR2k19** opens, presenting a report with information related to the KB you previously selected.  An example report is shown in the following image. 
 
-     :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-report-viewer-kb-update-info.png" alt-text="Shows a screen capture with details about a KB update reported in **Update Report for Yr2k19**." lightbox="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-report-viewer-kb-update-info.png":::
+     :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-report-viewer-kb-update-info.png" alt-text="Screenshot that shows a screen capture with details about a KB update reported in **Update Report for Yr2k19**." lightbox="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-report-viewer-kb-update-info.png":::
 
-    To learn more about the different Microsoft Defender Antivirus Update channels, see [Manage the gradual rollout process for Microsoft Defender updates](/manage-gradual-rollout.md)
+    To learn more about the different Microsoft Defender Antivirus Update channels, see [Manage the gradual rollout process for Microsoft Defender updates](/manage-gradual-rollout)
 
 #### To find out which Platform Update version is the Current Channel (Broad)
 
@@ -135,7 +135,7 @@ The Windows Server Update Services Configuration Wizard is complete.
 
    For example, on April 11, 2023, the latest production version is **4.18.2302.7**, where **23** == _2023_, **02** == _February_, and **.7** is the _minor revision_.
 
-   :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-report-viewer-kb-search.png" alt-text="Shows a screen capture of the results from a Microsoft Update Catalog search for KB4052623." lightbox="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-report-viewer-kb-search.png":::
+   :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-report-viewer-kb-search.png" alt-text="Screenshot that shows a screen capture of the results from a Microsoft Update Catalog search for KB4052623." lightbox="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-report-viewer-kb-search.png":::
 
 #### To determine if updates are synchronized
 
@@ -144,7 +144,7 @@ The Windows Server Update Services Configuration Wizard is complete.
 
    The **All Updates** view lists “Platform Updates” and “Security Intelligence Updates” (also known as signatures/definitions). For example, KB4052623 platform updates. KB4052623 platform update is shown in the following figure:
 
-   :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-report-view-signature-platform-updates.png" alt-text="Shows a screen capture of the results from a Microsoft Update Catalog search for KB4052623 platform updates." lightbox="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-report-view-signature-platform-updates.png"::: 
+   :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-report-view-signature-platform-updates.png" alt-text="Screenshot that shows a screen capture of the results from a Microsoft Update Catalog search for KB4052623 platform updates." lightbox="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-report-view-signature-platform-updates.png"::: 
 
 1. Select **KB4052623** version **4.18.2302.7** to see the synchronization status. 
    
@@ -171,7 +171,7 @@ The Windows Server Update Services Configuration Wizard is complete.
    
    In **Step 3: Specify a name**, type a name for your rule. For example, type _Microsoft Defender Antivirus updates_. These settings are shown in the following figure:
 
-   :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-updates-add-rule.png" alt-text="Shows a screen capture of the an example name for a rule." lightbox="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-updates-add-rule.png"::: 
+   :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-updates-add-rule.png" alt-text="Screenshot that shows a screen capture of the an example name for a rule." lightbox="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-updates-add-rule.png"::: 
 
 1. Select **OK**. The work flow returns to the **Update Rules** page. Select your new rule, For example, select **Microsoft Defender Antivirus updates**.
 1. In **Rule Properties**, verify the information is correct, and then select **OK**.
@@ -188,7 +188,7 @@ The Windows Server Update Services Configuration Wizard is complete.
 
    - In **Options**, type _InternalDefinitionUpdateServer_, and then select **OK**. The configured **Define the order of sources for downloading security intelligence updates** page is shown in the following figure.
 
-   :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-gp-download-order.png" alt-text="Shows a screen capture of how to define the order of sources for downloading security intelligence updates." lightbox="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-gp-download-order.png"::: 
+   :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-gp-download-order.png" alt-text="Screenshot that shows a screen capture of how to define the order of sources for downloading security intelligence updates." lightbox="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-gp-download-order.png"::: 
 
 For more information, see [Manage how and where Microsoft Defender Antivirus receives updates](manage-protection-updates-microsoft-defender-antivirus.md).
 

@@ -71,6 +71,6 @@ Platform Updates, are the .exe’s, dll’s, and .sys’s for the Microsoft Defe
 > [!NOTE]
 > Where **23** == _2023_, **02** == _February_, and **.7** is the _minor revision_.
 
-## See 
+## See also
 
 [Microsoft Defender Antivirus pilot ring deployment using Group Policy and Windows Server Update Services](microsoft-defender-antivirus-pilot-ring-deployment-group-policy-wsus.md)

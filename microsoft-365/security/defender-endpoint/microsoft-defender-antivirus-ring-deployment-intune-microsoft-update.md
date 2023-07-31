@@ -73,7 +73,7 @@ Recommended settings are as follows:
 
 - [Antivirus profiles - Devices managed by Microsoft Intune](/mem/intune/protect/endpoint-security-antivirus-policy#antivirus-profiles)
 - [Use Endpoint security Antivirus policy to manage Microsoft Defender update behavior](/mem/intune/fundamentals/whats-new#use-endpoint-security-antivirus-policy-to-manage-microsoft-defender-update-behavior-preview)
-- [Manage the gradual rollout process for Microsoft Defender updates](/manage-gradual-rollout)
+- - [Manage the gradual rollout process for Microsoft Defender updates](manage-gradual-rollout.md#manage-the-gradual-rollout-process-for-microsoft-defender-updates)
 
 ## Setting up the Production environment 
 
