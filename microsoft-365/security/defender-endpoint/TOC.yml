@@ -1060,7 +1060,6 @@
 
             - name: Batch Delete Indicators
               href: batch-delete-ti-indicators.md
-              displayName: Indicators,Delete
           - name: Information gathering
             items:
             - name: Export information gathering assessment
