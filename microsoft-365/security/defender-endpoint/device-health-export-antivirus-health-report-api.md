@@ -22,8 +22,6 @@ ms.custom: api
 search.appverid: met150
 ---
 
-<!-- v-jweston/jweston-1 is scheduled to resume authorship Apr/May 2023.-->
-
 # Export device antivirus health report
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
