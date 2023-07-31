@@ -14,7 +14,8 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
-ms.topic: conceptual
+- must-keep
+ms.topic: reference
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
@@ -58,3 +59,4 @@ Score|Double|The current score.
 Time|DateTime|The date and time in which the call for this API was made.
 RbacGroupName|String|The device group name.
 RbacGroupId|String|The device group ID.
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

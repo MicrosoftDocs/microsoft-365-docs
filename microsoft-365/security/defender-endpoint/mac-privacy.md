@@ -320,3 +320,4 @@ The following fields are collected:
 ## Resources
 
 - [Privacy at Microsoft](https://privacy.microsoft.com/)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

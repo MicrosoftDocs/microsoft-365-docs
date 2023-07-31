@@ -67,3 +67,4 @@ If you're looking for antivirus-related information for other platforms, see one
 > See [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).
 
 
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

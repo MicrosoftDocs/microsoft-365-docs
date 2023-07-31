@@ -14,7 +14,8 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
-ms.topic: conceptual
+- must-keep
+ms.topic: reference
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
@@ -87,3 +88,4 @@ AuthProtocol|String (Optional)|Auth protocol to use with "SnmpAuthParams" and "A
 AuthPassword|String (Optional)|Auth password to use with "SnmpAuthParams" and "AuthNoPriv" or "AuthPriv".
 PrivProtocol|String (Optional)|Priv protocol to use with "SnmpAuthParams" and "AuthPriv". Possible values are "DES", "3DES", "AES".
 PrivPassword|String (Optional)|Priv password to use with "SnmpAuthParams" and "AuthPriv".
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

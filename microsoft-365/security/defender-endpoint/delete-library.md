@@ -17,7 +17,8 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security
-- tier2
+- tier3
+- must-keep
 ms.topic: reference
 ms.subservice: mde
 ms.custom: api
@@ -91,3 +92,4 @@ DELETE https://api.securitycenter.microsoft.com/api/libraryfiles/script1.ps1
 ## Related topic
 
 - [Run live response](run-live-response.md) 
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

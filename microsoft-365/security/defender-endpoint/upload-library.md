@@ -18,6 +18,7 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
+- must-keep
 ms.topic: reference
 ms.subservice: mde
 ms.custom: api
@@ -111,3 +112,4 @@ description"
 ## Related topic
 
 - [Run live response](run-live-response.md) 
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

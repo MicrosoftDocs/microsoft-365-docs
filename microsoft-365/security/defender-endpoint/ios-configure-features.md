@@ -297,7 +297,7 @@ Defender for Endpoint on iOS enables admins to configure custom indicators on iO
 
 Reducing cyber risk requires comprehensive risk-based vulnerability management to identify, assess, remediate, and track all your biggest vulnerabilities across your most critical assets, all in a single solution. Visit this [page](next-gen-threat-and-vuln-mgt.md) to learn more about Microsoft Defender Vulnerability Management in Microsoft Defender for Endpoint.
 
-Defender for Endpoint on iOS supports vulnerability assessments of apps only for enrolled (MDM) devices. Admins can use the following steps to configure the vulnerability assessment of apps.
+Defender for Endpoint on iOS supports vulnerability assessments of OS and apps. Vulnerability assessment of iOS versions is available for both enrolled (MDM) and unenrolled (MAM) devices. Vulnerability assessment of apps is only for enrolled (MDM) devices. Admins can use the following steps to configure the vulnerability assessment of apps.
 
 ### On a Supervised Device
 
@@ -386,7 +386,7 @@ Use the following steps to configure the option to send feedback data to Microso
 
 1. Select **Microsoft Defender for Endpoint** as the target app.
 
-1. On the Settings page, select **Use configuration designer** and add **DefenderSendFeedback** as the key and value type as **Boolean**.
+1. On the Settings page, select **Use configuration designer** and add **DefenderFeedbackData** as the key and value type as **Boolean**.
 
    - To remove the ability of end-users to provide feedback, set the value as `false` and assign this policy to users. By default, this value is set to `true`. For US Government customers, the default value is set to 'false'.
 
@@ -397,3 +397,4 @@ Use the following steps to configure the option to send feedback data to Microso
 ## Report unsafe site
 
 Phishing websites impersonate trustworthy websites for the purpose of obtaining your personal or financial information. Visit the [Provide feedback about network protection](https://www.microsoft.com/wdsi/filesubmission/exploitguard/networkprotection) page to report a website that could be a phishing site.
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

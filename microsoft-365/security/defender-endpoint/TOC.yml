@@ -245,6 +245,8 @@
         href: schedule-antivirus-scan-in-mde.md
       - name: Schedule an update of the Microsoft Defender for Endpoint (Linux)
         href: linux-update-MDE-Linux.md
+      - name: Configure eBPF-based sensor
+        href: linux-support-ebpf.md 
 
     - name: Configure Mobile Threat Defense
       items:
@@ -1056,6 +1058,8 @@
             - name: Delete Indicator
               href: delete-ti-indicator-by-id.md
 
+            - name: Batch Delete Indicators
+              href: batch-delete-ti-indicators.md
           - name: Information gathering
             items:
             - name: Export information gathering assessment

@@ -73,13 +73,13 @@ Users and groups are included in the same file. Depending on whether it's a user
 > [!IMPORTANT]
 > **Do NOT include column headings in your CSV file.**  In the examples below we include them for illustrative purposes only.
 
-**Users**. Enter your values as shown in this example for guests:
+**Users**. Enter your values as shown in this example for Users:
 
 :::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-csv-mapping-users-columns.png" alt-text="format to use for mapping users":::
 
 :::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-csv-mapping-users-example.png" alt-text="example of csv for users":::
 
-**Groups**. Enter your values as shown in this example for guests:
+**Groups**. Enter your values as shown in this example for Groups:
 </br>
 :::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-csv-mapping-groups-columns.png" alt-text="format for csv file for groups":::
 </br>

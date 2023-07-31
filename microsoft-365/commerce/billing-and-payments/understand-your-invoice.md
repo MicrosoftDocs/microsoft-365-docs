@@ -3,7 +3,7 @@ title: Understand your bill or invoice
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: amberb, vikdesai
+ms.reviewer: jkinma, ramagane
 audience: Admin
 ms.topic: conceptual
 f1.keywords:

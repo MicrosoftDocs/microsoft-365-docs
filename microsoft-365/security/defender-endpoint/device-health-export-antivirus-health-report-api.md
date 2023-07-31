@@ -15,13 +15,12 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
-ms.topic: conceptual
+- must-keep
+ms.topic: reference
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
 ---
-
-<!-- v-jweston/jweston-1 is scheduled to resume authorship Apr/May 2023.-->
 
 # Export device antivirus health report
 
@@ -318,3 +317,4 @@ Here's an example response:
 [Export device health methods and properties](device-health-api-methods-properties.md)
 
 [Device health and compliance reporting](device-health-reports.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

@@ -301,3 +301,4 @@ However, if the connectivity check results indicate a failure, an HTTP error is 
 - [Onboard Windows devices](configure-endpoints.md)
 - [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md)
 - [Onboard devices without Internet access to Microsoft Defender for Endpoint](onboard-offline-machines.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
