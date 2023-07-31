@@ -56,7 +56,7 @@ This issue can occur if multiple users use the same device to connect to the Tea
 
 For example, user A signs in to Teams, requests a time off request, and signs out. To perform the request, user A was required to introduce their Azure AD credentials to verify (SSO). Using the same device, user B signs in to Teams and tries to perform another action in Shifts that requires SSO.
 
-In this scenario, an issue occurs in which the user B is signed in to Teams and Shifts but user A is still signed in to UKG Dimensions.
+In this scenario, an issue occurs in which user B is signed in to Teams and Shifts but user A is still signed in to UKG Dimensions.
 
 To mitigate this issue, do one of the following actions:
 
