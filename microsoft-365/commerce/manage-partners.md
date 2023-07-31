@@ -21,7 +21,7 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 description: "Learn how to work with Microsoft-certified solution providers (partners) to buy and manage products and services for your organization or school."
-ms.date: 02/04/2022
+ms.date: 07/31/2023
 ---
 
 # Manage Microsoft-certified solution provider partner relationships
@@ -40,16 +40,16 @@ You must be either a Global or Billing admin to do these steps. For more informa
 
 There are several ways that a partner can work with you. Based on your stated business needs, they choose one of these types when they send their request to work with you.
 
-| Partner type | Description |
-| ------ | ------------------- |
-| Granular delegated administrator | Partners who manage products and services for your organization or school, but who have limited access to what they can do in the Microsoft 365 admin center. Granular delegated administrator privileges (GDAP) let partners complete tasks in the admin center without having global admin permission. By giving GDAP to partners, you ensure they have the least-permissive roles and limit the risk to your organization. |
-| Reseller | Partners who sell Microsoft products to your organization or school. |
-| Delegated administrator | Partners who manage products and services for your organization or school. In Azure Active Directory (AD), the partner is a Global Administrator for your tenant. This role lets them manage services like creating user accounts, assigning and managing licenses, and password resets. |
-| Reseller & delegated administrator | Partners who sell and manage Microsoft products and services to your organization or school. |
-| Partner | You give your partner a user account in your tenant, and they work with other Microsoft services on your behalf. |
-| Advisor | Partners can reset passwords and handle support incidents for you. |
-| Microsoft Products & Services Agreement (MPSA) partner | If you've worked with multiple partners through the MPSA program, you can allow them to see purchases made by each other. |
-| Line-of-business (LOB) partner | Partners can develop, submit, and manage LOB apps specific for your organization or school. |
+| Partner type | Description | Roles |
+| ------ | ------------------- | --------- |
+| Granular delegated administrator | Partners who manage products and services for your organization or school, but who have limited access to what they can do in the Microsoft 365 admin center. Granular delegated administrator privileges (GDAP) let partners complete tasks in the admin center without having global admin permission. By giving GDAP to partners, you ensure they have the least-permissive roles and limit the risk to your organization. | Any Azure Active Directory (AD) role. For more information, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference). |
+| Reseller | Partners who sell Microsoft products to your organization or school. | No roles assigned. |
+| Delegated administrator | Partners who manage products and services for your organization or school. In AD, the partner is a Global Administrator for your tenant. This role lets them manage services like creating user accounts, assigning and managing licenses, and password resets. | Global admin, Helpdesk admin. For more information, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference). |
+| Reseller & delegated administrator | Partners who sell and manage Microsoft products and services to your organization or school. | Global admin, Helpdesk admin. For more information, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference). |
+| Partner | You give your partner a user account in your tenant, and they work with other Microsoft services on your behalf. | Assign a role to the partner. For more information, see [Assign Azure AD roles to users](/azure/active-directory/roles/manage-roles-portal). |
+| Advisor | Partners can reset passwords and handle support incidents for you. | No roles assigned. |
+| Microsoft Products & Services Agreement (MPSA) partner | If you've worked with multiple partners through the MPSA program, you can allow them to see purchases made by each other. | No roles assigned. |
+| Line-of-business (LOB) partner | Partners can develop, submit, and manage LOB apps specific for your organization or school. | Not available to assign. |
 
 ## Find a partner
 
