@@ -43,7 +43,7 @@ You can also get product updates and important notifications through the [messag
 ## July 2023
 - (GA) The [Attack story](investigate-incidents.md#attack-story) in incidents is now generally available. The attack story provides the full story of the attack and allows incident response teams to view the details and apply remediation.
 - A new URL and domain page is now available in Microsoft 365 Defender. The updated URL and domain page provides a single place to view all the information about a URL or a domain, including its reputation, the users who clicked it, the devices that accessed it, and emails where the URL or domain was seen. For details, see [Investigate URLs in Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/investigate-domain).
-- (Preview) [DeviceInfo](advanced-hunting-deviceinfo-table.md) table in advanced hunting now has two new columns for public preview, `DeviceManualTags` and `DeviceDynamicTags`. These new columns surface both manually and dynamically assigned tags related to the device you are investigating.
+
 
 ## June 2023
 
