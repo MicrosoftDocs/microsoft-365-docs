@@ -177,12 +177,6 @@
         - name: Use taxonomy tagging 
           href: taxonomy-tagging.md
 
-    - name: Content query
-      href: metadata-search.md
-
-    - name: Annotations
-      href: annotations.md
-
     - name: Optical character recognition 
       items: 
         - name: Overview 
@@ -203,7 +197,7 @@
         - name: Move or copy a file 
           href: content-processing-create-rules.md
 
-    - name: Taxonomy
+    - name: Term store premiums
       items:
         - name: Import using SKOS
           href: import-term-set-skos.md
