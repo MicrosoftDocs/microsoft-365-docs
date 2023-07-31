@@ -22,8 +22,6 @@ ms.date: 03/27/2023
 search.appverid: met150
 ---
 
-<!-- v-jweston/jweston-1 is scheduled to resume authorship Apr/May 2023.-->
-
 # Attack surface reduction (ASR) rules report
 
 **Applies to:**
