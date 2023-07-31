@@ -304,14 +304,8 @@
         href: groups-sharepoint-governance.md
       - name: Groups, SharePoint, and Teams
         href: groups-sharepoint-teams-governance.md
-      - name: Groups with other services
-        href: groups-services-interactions.md
     - name: Access
       href: groups-teams-access-governance.md
-    - name: Compliance
-      href: groups-teams-compliance-governance.md
-    - name: Communications
-      href: groups-teams-communication-governance.md
     - name: Organization and lifecycle
       items:
       - name: Organization and lifecycle governance

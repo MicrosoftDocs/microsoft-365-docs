@@ -14,9 +14,9 @@ manager: dansimp
 audience: ITPro 
 ms.collection:
  - m365-security
- - ContentEngagementFY23
+ - must-keep
  - tier3
-ms.topic: conceptual 
+ms.topic: reference 
 ms.subservice: mde 
 ms.custom: api 
 search.appverid: met150

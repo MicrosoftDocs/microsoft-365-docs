@@ -52,9 +52,7 @@ You can dive deeper into your content to truly understand it, and you can turn t
 
 :::row:::
    :::column span="3":::
-      With Syntex, you can automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, and correspondence.
-
-      You can do all these tasks quicker, more consistently, and with fewer errors in Syntex.
+      With Syntex, you can automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, and correspondence. You can do all these tasks quicker, more consistently, and with fewer errors in Syntex.
    :::column-end:::
    :::column span="":::
       ![Image of generic document icon.](../media/content-understanding/document-assembly-image.png)
@@ -124,26 +122,26 @@ Both structured and freeform models use Microsoft Power Apps AI Builder to creat
 ### Optical character recognition
 
 :::row:::
-   :::column span="3":::
-      The optical character recognition (OCR) service in Syntex lets you extract printed or handwritten text from images. Syntex automatically scans the image files, extracts the relevant text, and makes the text from the images available for search and indexing. This lets you quickly and accurately find the keywords and phrases you're looking for. 
-   :::column-end:::
    :::column span="":::
       ![Image of generic OCR icon.](../media/content-understanding/ocr-image.png)
    :::column-end:::
+   :::column span="3":::
+      The optical character recognition (OCR) service in Syntex lets you extract printed or handwritten text from images. Syntex automatically scans the image files, extracts the relevant text, and makes the text from the images available for search and indexing. This lets you quickly and accurately find the keywords and phrases you're looking for.
+   :::column-end:::
 :::row-end:::
 
-[Learn more about using the OCR service in Microsoft Syntex.](ocr.md)
+[Learn more about using the OCR service in Microsoft Syntex.](ocr-overview.md)
 
 ## Other features
 
 ### Annotations
 
 :::row:::
-   :::column span="":::
-      ![Image of generic annotations icon.](../media/content-understanding/annotation-image.png)
-   :::column-end:::
    :::column span="3":::
       Use the annotations feature in Syntex to add notes, comment, and collaborate with others on your content in document libraries. You can use annotations without modifying the original files, so the original records are preserved.
+   :::column-end:::
+   :::column span="":::
+      ![Image of generic annotations icon.](../media/content-understanding/annotation-image.png)
    :::column-end:::
 :::row-end:::
 
@@ -152,32 +150,19 @@ Both structured and freeform models use Microsoft Power Apps AI Builder to creat
 ### Content query
 
 :::row:::
+   :::column span="":::
+      ![Image of generic search icon.](../media/content-understanding/search-generic-image.png)
+   :::column-end:::
    :::column span="3":::
       The content query feature in Syntex lets you perform specific metadata-based queries on SharePoint document libraries.
 
       You can make faster, more precise queries based on specific metadata column values, rather than just searching for keywords.    
-   :::column-end:::
-   :::column span="":::
-      ![Image of generic search icon.](../media/content-understanding/search-generic-image.png)
    :::column-end:::
 :::row-end:::
 
 This feature is useful when you have a specific piece of information you want to search for, such as when a document was last modified, a specific person associated with a file, or a specific file type.
 
 [Learn more about how to search for metadata in document libraries in Microsoft Syntex.](metadata-search.md)
-
-### Content compliance
-
-:::row:::
-   :::column span="":::
-      ![Image of generic compliance icon.](../media/content-understanding/compliance-image.png)
-   :::column-end:::
-   :::column span="3":::
-      Understanding your content allows for better compliance control and increases management and governance options for all your data. When content is properly tagged and labeled, you have better control over your data and can follow regulations more easily. Syntex helps you ensure compliance by using retention labels and sensitivity labels to manage your documents.
-   :::column-end:::
-:::row-end:::
-
-Learn more about how to apply [retention labels](apply-a-retention-label-to-a-model.md) and [sensitivity labels](apply-a-sensitivity-label-to-a-model.md) to models in Microsoft Syntex.
 
 ### Content processing
 
@@ -192,15 +177,27 @@ Learn more about how to apply [retention labels](apply-a-retention-label-to-a-mo
 
 [Learn more about content processing rules in Microsoft Syntex.](content-processing-overview.md)
 
-### Premium taxonomy services
+### Content compliance
 
 :::row:::
    :::column span="":::
-      ![Image of generic taxonomy icon.](../media/content-understanding/taxonomy-image.png)
+      ![Image of generic compliance icon.](../media/content-understanding/compliance-image.png)
    :::column-end:::
    :::column span="3":::
+      Understanding your content allows for better compliance control and increases management and governance options for all your data. When content is properly tagged and labeled, you have better control over your data and can follow regulations more easily. Syntex helps you ensure compliance by using retention labels and sensitivity labels to manage your documents.
+   :::column-end:::
+:::row-end:::
+
+Learn more about how to apply [retention labels](apply-a-retention-label-to-a-model.md) and [sensitivity labels](apply-a-sensitivity-label-to-a-model.md) to models in Microsoft Syntex.
+
+### Premium taxonomy services
+
+:::row:::
+   :::column span="3":::
       Having one or more Syntex licenses in your organization enables the following additional term store features for admins:<br><br>
-             
+   :::column-end:::
+   :::column span="":::
+      ![Image of generic taxonomy icon.](../media/content-understanding/taxonomy-image.png)
    :::column-end:::
 :::row-end:::
 

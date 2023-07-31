@@ -55,4 +55,5 @@ The following table provides links to the specific setup instructions for each s
 |:-------|:----------------------|
 |Prebuilt document processing     | [Set up prebuilt document processing](prebuilt-setup.md) |
 |Unstructured document processing | [Set up unstructured document processing](unstructured-setup.md) |
-|Optical character recognition    | [Set up optical character recognition](ocr.md#set-up-optical-character-recognition)  |
+|Image tagging                    | [Set up image tagging](image-tagging-setup.md)  |
+|Optical character recognition    | [Set up optical character recognition](ocr.md)  |
