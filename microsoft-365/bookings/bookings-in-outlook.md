@@ -43,7 +43,7 @@ Bookings with me is an ideal solution for enterprise, small business, and users 
 
 For more information on how your users can work with Bookings with me, see the following topics:
 
-- [Set up Bookings with me](https://support.microsoft.comoffice/bookings-with-me-setup-and-sharing-ad2e28c4-4abd-45c7-9439-27a789d254a2)
+- [Set up Bookings with me](https://support.microsoft.com/office/bookings-with-me-setup-and-sharing-ad2e28c4-4abd-45c7-9439-27a789d254a2)
 - [Bookings with me articles](https://support.microsoft.com/office/bookings-with-me-articles-c69c4703-e812-435c-9fc2-d194e10fd205)
 
 ## Before you begin
