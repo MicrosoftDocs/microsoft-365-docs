@@ -2646,6 +2646,11 @@
          "redirect_document_id":false
       },
       {
+         "source_path":"microsoft-365/security/intelligence/developer-resources.md",
+         "redirect_url":"/microsoft-365/security/intelligence/developer-faq",
+         "redirect_document_id":true
+      },
+      {
          "source_path":"microsoft-365/security/defender-business/get-defender-business-servers.md",
          "redirect_url":"/microsoft-365/security/defender-business/get-defender-business",
          "redirect_document_id":true
