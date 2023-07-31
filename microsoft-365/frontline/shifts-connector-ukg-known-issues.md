@@ -50,7 +50,7 @@ Currently, if a user creates a swap request with a coworker and the coworker acc
 
 The correct, expected behavior is a green check mark to indicate that the coworker accepted the request and a red "X" to indicate that the manager denied the request.
 
-## A user B can’t perform some actions in Shifts after another user has signed in to Shifts through the same device
+## A user can’t perform some actions in Shifts after another user has signed in to Shifts using the same device
 
 This issue can occur if multiple users, using the same device, try to connect to Teams Shifts app and require to single sign-on (SSO) in UKG Dimensions. 
 
