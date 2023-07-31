@@ -3,10 +3,17 @@ title: Batch Delete Indicators API
 description: Learn how to use the Batch Delete Indicators API to delete indicator entities by ID in Microsoft Defender for Endpoints.
 keywords: apis, public api, supported apis, delete, ti indicator, entity, id
 ms.service: microsoft-365-security
+ms.subservice: mde
 author: itsela-ms
 ms.author: itsela
-# ms.prod:   # To use ms.prod, uncomment it and delete ms.service
-ms.topic:    # Add the ms.topic value
+ms.topic: reference
+ms.localizationpriority: medium
+manager: dansimp
+ms.collection: 
+- m365-security
+- tier3
+ms.custom: api
+search.appverid: met150
 ms.date:     07/30/2023
 ---
 
@@ -47,12 +54,11 @@ Application | Ti.ReadWrite.All | 'Read and write Indicators'
 
 ## HTTP request
 
-
 ```http
 POST https://api.securitycenter.microsoft.com/api/indicators/BatchDelete
 ```
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
+[!include [Improve request performance](../../includes/improve-request-performance.md)]
 
 ## Request headers
 
@@ -66,7 +72,7 @@ In the request body, supply a JSON object with the following parameters:
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|IndicatorIds|List<String>|A list of the IDs of the indicators to be removed. **Required**|
+|IndicatorIds|List *String* |A list of the IDs of the indicators to be removed. **Required**|
 
 ## Response
 
