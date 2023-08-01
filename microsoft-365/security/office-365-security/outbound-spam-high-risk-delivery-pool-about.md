@@ -73,7 +73,7 @@ The forwarded or relayed message should meet one of the following criteria to av
 - SPF passes when the message comes to Microsoft 365.
 - DKIM on the sender domain passes when the message comes to Microsoft 365.
 
-You can tell that a message was sent via the relay pool by looking at the outbound server IP (the relay pool is in the 40.95.0.0/16 range), or by looking at the outbound server name (the name contains the value `rly`).
+You can tell that a message was sent via the relay pool by looking at the outbound server IP (the relay pool is in the 40.95.0.0/16 range).
 
 In cases where we can authenticate the sender, we use Sender Rewriting Scheme (SRS) to help the recipient email system know that the forwarded message is from a trusted source. You can read more about how that works and what you can do to help make sure the sending domain passes authentication in [Sender Rewriting Scheme (SRS) in Office 365](/office365/troubleshoot/antispam/sender-rewriting-scheme).
 
