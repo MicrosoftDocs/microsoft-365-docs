@@ -70,9 +70,14 @@ For information on other tables in the advanced hunting schema, [see the advance
 |`SensorHealthState` | `string` | Indicates health of the device's EDR sensor, if onboarded to Microsoft Defender For Endpoint |
 |`IsExcluded`| `bool` | Determines if the device is currently excluded from Microsoft Defender for Vulnerability Management experiences |
 |`ExclusionReason` | `string` | Indicates the reason for device exclusion |
-|`AssetValue`| `string` | Indicates the value of a device as assigned by the user |
-|`ExposureLevel` | `string` | Indicates the exposure level of a device |
-|`IsInternetFacing` | `boolean` | Indicates whether the device is internet-facing |
+|	`AssetValue`| `string` | Indicates the value of a device as assigned by the user |
+|	`ExposureLevel` | `string` | Indicates the exposure level of a device |
+|	`IsInternetFacing` | `boolean` | Indicates whether the device is internet-facing |
+|	`DeviceManualTags` | `string` | Device tags created manually using the portal UI or public API |
+|	`DeviceDynamicTags` | `string` | Device tags assigned automatically using dynamic tagging rules |
+
+
+
 
 
 The `DeviceInfo` table provides device information based on periodic reports or signals (heartbeats) from a device. Complete reports are sent every hour and every time a change happens to a previous heartbeat. 
