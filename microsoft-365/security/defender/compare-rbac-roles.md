@@ -44,7 +44,7 @@ Use the tables in the following sections to learn more about how your existing i
 3. [Map Microsoft Defender for Identity permissions](#map-microsoft-defender-for-identity-permissions-to-the-microsoft-365-defender-rbac-permissions)
 4. [Azure Active Directory Global roles access](#azure-active-directory-global-roles-access)
 
-### Map Defender for Endpoint permissions to the Microsoft 365 Defender RBAC permissions
+### Map Defender for Endpoint and Defender Vulnerability Management permissions to the Microsoft 365 Defender RBAC permissions
 
 |Defender for Endpoint permission|Microsoft 365 Defender RBAC permission|
 |---|---|---|

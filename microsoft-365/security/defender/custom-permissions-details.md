@@ -66,14 +66,14 @@ Permissions for managing day-to-day operations and responding to incidents and a
 
 ### Security posture – Posture management
 
-Permissions for managing the organization's security posture and performing threat and vulnerability management.
+Permissions for managing the organization's security posture and performing vulnerability management.
 
 |Permission name|Level|Description|
 |---|---|---|
-|Vulnerability management|Read|View threat and vulnerability management data for the following: software and software inventory, weaknesses, missing KBs, advanced hunting, security baselines assessment, and devices.|
-|Exception handling|Manage|Create security recommendation exceptions and manage active exceptions in threat and vulnerability management.|
-|Remediation handling|Manage|Create remediation tickets, submit new requests, and manage remediation activities in threat and vulnerability management.|
-|Application handling|Manage|Manage vulnerable applications and software, including blocking and unblocking them in threat and vulnerability management.|
+|Vulnerability management|Read|View Defender Vulnerability Management data for the following: software and software inventory, weaknesses, missing KBs, advanced hunting, security baselines assessment, and devices.|
+|Exception handling|Manage|Create security recommendation exceptions and manage active exceptions in Defender Vulnerability Management.|
+|Remediation handling|Manage|Create remediation tickets, submit new requests, and manage remediation activities in Defender Vulnerability Management.|
+|Application handling|Manage|Manage vulnerable applications and software, including blocking and unblocking them in Defender Vulnerability Management.|
 |Security baseline assessment|Manage|Create and manage profiles so you can assess if your devices comply to security industry baselines.|
 
 ### Authorization and settings
