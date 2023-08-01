@@ -22,7 +22,8 @@ ms.date: 07/11/2023
 
 # Asset rule management - Dynamic rules for devices
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+> [!IMPORTANT]
+> Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here.
 
 **Applies to:**
 
