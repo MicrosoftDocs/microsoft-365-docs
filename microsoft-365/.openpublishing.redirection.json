@@ -99,6 +99,62 @@
             "source_path": "security/defender-endpoint/enable-microsoft-defender-for-iot-integration.md",
             "redirect_url": "/azure/defender-for-iot/organizations/concept-enterprise",
             "redirect_document_id": false
-    }
+        },    
+        {
+            "source_path": "admin/activity-reports/yammer-activity-report-ww.md",
+            "redirect_url": "/microsoft-365/admin/activity-reports/viva-engage-activity-report-ww",
+            "redirect_document_id": false
+        },    
+        {
+            "source_path": "admin/activity-reports/yammer-device-usage-report-ww.md",
+            "redirect_url": "/microsoft-365/admin/activity-reports/viva-engage-device-usage-report-ww",
+            "redirect_document_id": false
+        },    
+        {
+            "source_path": "admin/activity-reports/yammer-groups-activity-report-ww.md",
+            "redirect_url": "/microsoft-365/admin/activity-reports/viva-engage-groups-activity-report-ww",
+            "redirect_document_id": false
+        },    
+        {
+            "source_path": "compliance/retention-policies-yammer.md",
+            "redirect_url": "/purview/retention-policies-viva-engage",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "scheduler/scheduler-overview.md",
+            "redirect_url": "https://news.microsoft.com/reinventing-productivity",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "scheduler/scheduler-faqs.md",
+            "redirect_url": "https://news.microsoft.com/reinventing-productivity",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "scheduler/scheduler-preferences.md",
+            "redirect_url": "https://news.microsoft.com/reinventing-productivity",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "scheduler/scheduler-recurring-meetings.md",
+            "redirect_url": "https://news.microsoft.com/reinventing-productivity",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "scheduler/scheduler-setup.md",
+            "redirect_url": "https://news.microsoft.com/reinventing-productivity",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "scheduler/scheduler-trust-privacy.md",
+            "redirect_url": "https://news.microsoft.com/reinventing-productivity",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "scheduler/scheduler-using.md",
+            "redirect_url": "https://news.microsoft.com/reinventing-productivity",
+            "redirect_document_id": false
+        }
+
     ]
 }

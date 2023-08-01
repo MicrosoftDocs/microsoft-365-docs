@@ -51,3 +51,4 @@ Follow the instructions in [Block at first sight demo](https://demo.wd.microsoft
 [Block at First Sight](configure-block-at-first-sight-microsoft-defender-antivirus.md)
 
 [Microsoft Defender for Endpoint - demonstration scenarios](defender-endpoint-demonstrations.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

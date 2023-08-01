@@ -15,7 +15,8 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
-ms.topic: conceptual
+- must-keep
+ms.topic: reference
 ms.custom: api
 search.appverid: met150
 ms.date: 03/15/2021
@@ -123,3 +124,4 @@ POST https://api.securitycenter.microsoft.com/api/alerts/batchUpdate
     "comment": "Resolve my alert and assign to secop2"
 }
 ```
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

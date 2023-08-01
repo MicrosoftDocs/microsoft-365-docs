@@ -101,7 +101,7 @@ Defender TI’s Threat Intelligence search is both simple and powerful, designed
 
     ![Search Whois Postal Code](media/searchWhoisPostalCode.png)
 
-17. **WHOIS Country:** Select ‘WHOIS’ > ‘Country’ from the Threat Intelligence Search drop-down and type in ‘US’ in the Threat Intelligence Search bar. Press Enter or select the right-hand arrow to perform the search. This action results in a WHOIS Country search.
+17. **WHOIS Country:** Select ‘WHOIS’ > ‘Country’ from the Threat Intelligence Search drop-down and type in ‘US’ in the Threat Intelligence Search bar. Press Enter or select the right-hand arrow to perform the search. This action results in a WHOIS Country/region search.
 
     ![Search Whois Country](media/searchWhoisCountry.png)
 
@@ -151,7 +151,7 @@ Defender TI’s Threat Intelligence search is both simple and powerful, designed
 
 At the top of the page, the platform provides some basic information about the artifact. This information can include the following, depending on the artifact type:  
 
-- **Country:** the flag next to the IP Address indicates the country of origin for the artifact, which can help determine its reputability or security posture. This IP Address is hosted on infrastructure within the United States.
+- **Country:** the flag next to the IP Address indicates the country/region of origin for the artifact, which can help determine its reputability or security posture. This IP Address is hosted on infrastructure within the United States.
 - **Reputation:** in this example, the IP Address is tagged with “Malicious” which indicates that the platform has detected connections between this artifact and known advisory infrastructure. Artifacts can also be tagged “Suspicious”, “Neutral” or “Unknown”.
 - **First Seen:** this timestamp indicates when the artifact was first observed by the platform’s detection system. Understanding the lifespan of an artifact can help determine its reputability.
 - **Last Seen:** this timestamp indicates when the artifact was last observed by the platform’s detection system. This helps determine whether the artifact is still actively used.
@@ -294,7 +294,7 @@ Our WHOIS data includes the following:
 - **City:** any city listed in an address associated to the record, and the type of contact it is associated with.
 - **State:** any states listed in an address associated to the record, and the type of contact it is associated with.
 - **Postal Code:** any postal codes listed in an address associated with the record, and the type of contact it is associated with.
-- **Country:** any countries listed in an address associated to the record, and the type of contact it is associated with.
+- **Country:** any countries/regions listed in an address associated to the record, and the type of contact it is associated with.
 - **Phone:** any phone numbers listed in the record, and the type of contact it is associated with.
 - **Name Servers:** any name servers associated with the registered entity.
 
@@ -337,8 +337,8 @@ When a user clicks on a Sha1 hash, the user will be able to see details about th
 - **Issuer Locality:** The city where the issuer organization is located.
 - **Subject State/Province:** The state or province where the organization is located.
 - **Issuer State/Province:** The state or province where the issuer organization is located.
-- **Subject Country:** The country where the organization is located.
-- **Issuer Country:** The country where the issuer organization is located.
+- **Subject Country:** The country/region where the organization is located.
+- **Issuer Country:** The country/region where the issuer organization is located.
 - **Related Infrastructure:** any related infrastructure associated with the certificate.
 
 ![Data Tab Certificate Details](media/dataTabCertificateDetails.png)

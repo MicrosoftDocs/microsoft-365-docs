@@ -77,7 +77,8 @@ Microsoft Defender for Endpoint shares data, including customer data, among the 
 
 - Microsoft Sentinel
 - Microsoft Tunnel for Mobile Application Management - Android
-- Microsoft Defender for Cloud 
+- Microsoft Defender for Cloud
+- Microsoft Defender for Identity
 
 ## Is my data isolated from other customer data?
 
@@ -122,3 +123,4 @@ By providing customers with compliant, independently verified services, Microsof
 For more information on the Defender for Endpoint certification reports, see [Microsoft Trust Center](https://servicetrust.microsoft.com/). 
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-datastorage-belowfoldlink)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

@@ -1,15 +1,11 @@
 ---
 title: Review remediation actions following automated investigations
 description: Review and approve (or reject) remediation actions following an automated investigation.
-keywords: autoir, automated, investigation, detection, remediation, action, pending, approved
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 author: dansimp
 ms.author: dansimp
 ms.localizationpriority: medium
-ms.date: 07/20/2022
+ms.date: 07/13/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -50,7 +46,7 @@ Here are a few examples:
 
 - **Example 3**: Tailspin Toys has their device groups set to **No automated response** (not recommended). In this case, automated investigations do not occur. No remediation actions are taken or pending, and no actions are logged in the [Action center](/microsoft-365/security/defender-endpoint/auto-investigation-action-center#the-action-center) for their devices (see [Manage device groups](/microsoft-365/security/defender-endpoint/machine-groups#manage-device-groups)).
 
-Whether taken automatically or upon approval, an automated investigation can result in one or more of the remediation actions:
+Whether taken automatically or upon approval, an automated investigation and remediation can result in one or more of the remediation actions:
 
 - Quarantine a file
 - Remove a registry key
@@ -164,3 +160,4 @@ All verdicts are tracked in the [Action center](auto-investigation-action-center
 ## See also
 
 - [Overview of automated investigations](automated-investigations.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

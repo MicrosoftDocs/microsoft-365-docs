@@ -14,7 +14,8 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
-ms.topic: conceptual
+- must-keep
+ms.topic: reference
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
@@ -77,7 +78,7 @@ If successful, this method returns 200 OK with the list of baseline configuratio
 |`cce`|Int|The CCE for this configuration as it appears in the benchmark.
 |rationale |String|The rationale for this configuration as it appears in the benchmark. For STIG benchmark this isn't supplied for this configuration.
 |source|Array [String]| Array of the registry paths or other locations used to determine the current device setting.
-|recommendedValue|Array [String]|Array of the recommended value for each source returned in the ‘source’ property array (values returned in the same order as the source property array).
+|recommendedValue|Array [String]|Array of the recommended value for each source returned in the 'source' property array (values returned in the same order as the source property array).
 |remediation|String| The recommended steps to remediate.
 |isCustom|Boolean| True if the configuration is customized, false if not.
 
@@ -128,3 +129,4 @@ GET https://api.securitycenter.microsoft.com/api/baselineConfigurations
 
 - [Export security baselines assessment](export-security-baseline-assessment.md)
 - [Get security baselines assessment profiles](get-security-baselines-assessment-profiles.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
