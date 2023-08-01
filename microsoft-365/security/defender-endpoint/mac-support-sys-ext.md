@@ -182,12 +182,55 @@ For example,
 
 ##### Sections that provide guidance on enabling profiles needed for Microsoft Defender for Endpoint
 
-|Management Tool  |Column2  |MobileConfig (Plist)  |
-|---------|---------|---------|
-|Intune    |  1. [Approve System Extensions](mac-install-with-intune.md) <br> <br> 2. [Network Filter](mac-install-with-intune.md) <br> <br> 3. [Privacy Preference Policy Controls (PPPC, aka TCC (Transparency, Consent & Control), Full Disk Access (FDA))](mac-install-with-intune.md)<br><br> 4. Running in background<br><br> 5. Sending notifications<br><br> 6. Accessibility     | 1. System Extensions (https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/sysext.mobileconfig) <br> <br> 2. Network Filter Extension (https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig) <br><br> 3. Full Disk Access (https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) <br><br> 4. Background Services (https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/background_services.mobileconfig)<br><br> 5. End-user notifications (https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/notif.mobileconfig)<br><br> 6. Accessibility (https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig) |
-|   JamF  | 1. [Approve the System Extensions](mac-jamfpro-policies.md)<br><br> 2. [Approve the Network Filter Extension](mac-jamfpro-policies.md)<br><br> 3. [Approve the Privacy Preference Policy Controls (PPPC, aka TCC (Transparency, Consent & Control), Full Disk Access (FDA))](mac-jamfpro-policies.md)<br><br> 4. Running in background<br><br> 5. Sending notifications.<br><br> 6.	Accessibility  |  1. System Extensions (https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/sysext.mobileconfig)<br><br> 2. Network Filter Extension (https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig)<br><br> 3. Full Disk Access (https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)<br><br> 4. Background Services (https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/background_services.mobileconfig)<br><br> 5. End-user notifications (https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/notif.mobileconfig)<br><br> 6. Accessibility (https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig) |
-|Other MDM    | 1. [Approve the System Extensions](mac-jamfpro-policies.md)<br><br> 2. [Approve the Network Filter Extension](mac-jamfpro-policies.md)<br><br> 3. [Approve the Privacy Preference Policy Controls (PPPC, aka TCC (Transparency, Consent & Control), Full Disk Access (FDA))](mac-jamfpro-policies.md)<br><br> 4. Running in background<br><br> 5. Sending notifications.<br><br> 6.	Accessibility    | 1. System Extensions (https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/sysext.mobileconfig)<br><br> 2. Network Filter Extension (https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig)<br><br> 3. Full Disk Access (https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig)<br><br> 4. Background Services (https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/background_services.mobileconfig)<br><br> 5. End-user notifications (https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/notif.mobileconfig)<br><br> 6. Accessibility (https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig)         |
-|Manual deployment     |     -    |      Must approve the extension by going to **Security Preferences or System Preferences > Security & Privacy** and then selecting **Allow**.   |
+1. **Function**: [Approve System Extensions](mac-install-with-intune.md)
+   **Mobile config (plist)**: https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/sysext.mobileconfig
+   **Applicable to**:
+   - **Intune**: Yes
+   - **JamF**: Yes
+   - **Other MDM**: Yes
+   - **Manual**: Must approve the extension by going to **Security Preferences or System Preferences > Security & Privacy** and then selecting **Allow**.
+
+2. **Function**: [Network Filter](mac-install-with-intune.md)
+   **Mobile config (plist)**: https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig
+   **Applicable to**:
+   - **Intune**: Yes
+   - **JamF**: Yes
+   - **Other MDM**: Yes
+   - **Manual**: Must approve the extension by going to **Security Preferences or System Preferences > Security & Privacy** and then selecting **Allow**.
+
+3. **Function**: [Privacy Preference Policy Controls (PPPC, aka TCC (Transparency, Consent & Control), Full Disk Access (FDA))](mac-install-with-intune.md)
+   **Mobile config (plist)**: https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig
+   **Applicable to**:
+   - **Intune**: Yes
+   - **JamF**: Yes
+   - **Other MDM**: Yes
+   - **Manual**: Must approve the extension by going to **Security Preferences or System Preferences > Security & Privacy > Privacy > Full Disk Access** and then selecting **Allow**, and checking the box next to the following:
+       - **Microsoft Defender**
+       - **Microsoft Defender Security Extension**
+
+4. **Function**: Running in background
+   **Mobile config (plist)**: https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/background_services.mobileconfig
+   **Applicable to**:
+   - **Intune**: Yes
+   - **JamF**: Yes
+   - **Other MDM**: Yes
+   - **Manual**: Not applicable
+
+5. **Function**: Sending notifications
+   **Mobile config (plist)**: https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/notif.mobileconfig
+   **Applicable to**:
+   - **Intune**: Yes
+   - **JamF**: Yes
+   - **Other MDM**: Yes
+   - **Manual**: Not applicable
+
+6. **Function**: Accessibility
+   **Mobile config (plist)**: https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/accessibility.mobileconfig
+   **Applicable to**:
+   - **Intune**: Yes
+   - **JamF**: Yes
+   - **Other MDM**: Yes
+   - **Manual**: Not applicable
 
 #### Step 3: Test the installed profiles using macOS built-in ‘profile’ tool.  It compares your profiles with what we have published in GitHub, reporting inconsistent profiles or profiles missing altogether
 
