@@ -476,6 +476,8 @@
               href: troubleshoot.md
             - name: Configure alert notifications
               href: configure-email-notifications.md
+            - name: Assessment Rule Management
+              href: configure-asset-rules.md
             - name: Provide feedback
               href: feedback.md
             - name: Provide managed service provider (MSSP) access
