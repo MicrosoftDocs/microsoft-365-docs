@@ -17,7 +17,8 @@ audience: ITPro
 ms.collection: 
 - m65-security-compliance
 - tier3
-ms.topic: conceptual
+- must-keep
+ms.topic: reference
 ms.custom: api
 ms.date: 10/25/2021
 ---
