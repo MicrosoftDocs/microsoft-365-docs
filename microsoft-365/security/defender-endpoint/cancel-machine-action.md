@@ -18,7 +18,8 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
-ms.topic: conceptual
+- must-keep
+ms.topic: reference
 ms.custom: api
 ms.date: 06/03/2021
 ---
@@ -29,7 +30,7 @@ ms.date: 06/03/2021
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/defender-endpoint)
+- [ Microsoft Defender for Endpoint](../defender/microsoft-365-security-center-mde.md)
 - [Microsoft Defender for Endpoint Plan 1](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1)
 - [Microsoft Defender for Endpoint Plan 2](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1)
 
@@ -102,3 +103,4 @@ https://api.securitycenter.microsoft.com/api/machineactions/988cc94e-7a8f-4b28-a
 ## Related article
 
 - [Get machine action API](get-machineaction-object.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

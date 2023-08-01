@@ -1,10 +1,10 @@
 ---
 title: Configure Microsoft Syntex for pay-as-you-go billing
-ms.author: mikeplum
-author: MikePlumleyMSFT
+ms.author: chucked
+author: chuckedmonson
 ms.reviewer: kkamath
 ms.date: 05/15/2023
-manager: serdars
+manager: pamgreen
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -80,7 +80,7 @@ The following tags are available:
 
 For more information about filter options in Cost Management, see [Group and filter options in Cost analysis](/azure/cost-management-billing/costs/group-filter).
 
-## Related topics
+## Related articles
 
 [Overview of Microsoft Syntex](syntex-overview.md)
 

@@ -14,7 +14,8 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
-ms.topic: conceptual
+- must-keep
+ms.topic: reference
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
@@ -84,3 +85,4 @@ Want to experience Defender for Endpoint? [Sign up for a free trial.](https://si
 |nonProductivityImpactedAssets|Long|Number of devices that are not affected|
 |relatedComponent|String|Related software component|
 |
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

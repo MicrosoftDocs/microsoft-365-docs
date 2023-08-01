@@ -11,10 +11,11 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.topic: conceptual
+ms.topic: reference
 ms.collection: 
 - m365-security
 - tier3
+- must-keep
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
@@ -137,3 +138,4 @@ Content-type: application/json
 ## Related articles
 
 - [OData queries with Microsoft Defender for Endpoint](exposed-apis-odata-samples.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

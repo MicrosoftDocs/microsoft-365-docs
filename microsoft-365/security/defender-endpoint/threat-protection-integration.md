@@ -84,3 +84,4 @@ With Microsoft 365 Defender, Microsoft Defender for Endpoint, and various Micros
 - [Microsoft 365 Defender overview](/microsoft-365/security/defender/microsoft-365-defender)
 - [Turn on Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable)
 - [Protect users, data, and devices with Conditional Access](conditional-access.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

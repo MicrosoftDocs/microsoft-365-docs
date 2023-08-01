@@ -1,9 +1,6 @@
 ---
 title: Configure Microsoft Defender Antivirus on a remote desktop or virtual desktop infrastructure environment
 description: Get an overview of how to configure Microsoft Defender Antivirus in a remote desktop or non-persistent virtual desktop environment.
-keywords: vdi, hyper-v, vm, virtual machine, windows defender, antivirus, av, virtual desktop, rds, remote desktop
-ms.mktglfcycl: manage
-ms.sitesec: library
 ms.localizationpriority: medium
 ms.date: 03/06/2023
 ms.topic: conceptual
@@ -57,8 +54,8 @@ In Windows 10, version 1903, Microsoft introduced the shared security intelligen
 
 |Method  | Procedure  |
 |---------|---------|
-| Group Policy | <ol><li>On your Group Policy management computer, open the Group Policy Management Console, right-click the Group Policy Object you want to configure, and then select **Edit**.</li><li>In the Group Policy Management Editor, go to **Computer configuration**.</li><li>Select **Administrative templates**.</li><li>Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Security Intelligence Updates**.</li><li>Double-click **Define security intelligence location for VDI clients**, and then set the option to **Enabled**. A field automatically appears.</li><li>Enter `\\<sharedlocation\>\wdav-update` (for help with this value, see [Download and unpackage](#download-and-unpackage-the-latest-updates)).</li><li>Select **OK**.</li><li>Deploy the GPO to the VMs you want to test.</li></ol> |
-| PowerShell | <ol><li>On each RDS or VDI device, use the following cmdlet to enable the feature: `Set-MpPreference -SharedSignaturesPath \\<shared location>\wdav-update`. </li><li>Push the update as you normally would push PowerShell-based configuration policies onto your VMs. (See the [Download and unpackage](#download-and-unpackage-the-latest-updates) section for what the \<shared location\> will be.) </li></ol> |
+| Group Policy | 1. On your Group Policy management computer, open the Group Policy Management Console, right-click the Group Policy Object you want to configure, and then select **Edit**.<br/><br/>2. In the Group Policy Management Editor, go to **Computer configuration**.<br/><br/>Select **Administrative templates**.<br/><br/>Expand the tree to **Windows components** \> **Microsoft Defender Antivirus** \> **Security Intelligence Updates**.<br/><br/>3. Double-click **Define security intelligence location for VDI clients**, and then set the option to **Enabled**. A field automatically appears.<br/><br/>4. Enter `\\<sharedlocation\>\wdav-update` (for help with this value, see [Download and unpackage](#download-and-unpackage-the-latest-updates)).<br/><br/>5. Select **OK**.<br/><br/>Deploy the GPO to the VMs you want to test. |
+| PowerShell | 1. On each RDS or VDI device, use the following cmdlet to enable the feature: `Set-MpPreference -SharedSignaturesPath \\<shared location>\wdav-update`. <br/><br/>2. Push the update as you normally would push PowerShell-based configuration policies onto your VMs. (See the [Download and unpackage](#download-and-unpackage-the-latest-updates) section the \<shared location\> entry.) |
 
 ## Download and unpackage the latest updates
 
@@ -249,3 +246,4 @@ If you're looking for information about Defender for Endpoint on non-Windows pla
 - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 - [Configure Defender for Endpoint on Android features](android-configure.md)
 - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

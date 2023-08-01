@@ -15,7 +15,8 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
-ms.topic: conceptual
+- must-keep
+ms.topic: reference
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
@@ -94,3 +95,4 @@ When you enable security information and event management (SIEM) integration, it
 - [Access the Microsoft Defender for Endpoint APIs](apis-intro.md)
 - [Supported APIs](exposed-apis-list.md)
 - [Technical partner opportunities](partner-integration.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
