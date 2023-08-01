@@ -454,6 +454,8 @@
               items: 
               - name: Overview
                 href: manage-rbac.md
+              - name: What's new in Microsoft 365 Defender RBAC
+                href: whats-new-in-microsoft-defender-urbac.md
               - name: Create custom roles 
                 href: create-custom-rbac-roles.md
               - name: Import roles
