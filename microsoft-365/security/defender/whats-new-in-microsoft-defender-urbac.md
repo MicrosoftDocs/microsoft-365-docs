@@ -26,7 +26,7 @@ Centralized permissions management for Microsoft Defender Vulnerability Manageme
 
 For more information on what's new with other Microsoft Defender security products, see:
 
-- [What's new in Microsoft Defender for Endpoint](../defender-vulnerability-management/whats-new-in-microsoft-defender-vulnerability-management.md)
+- [What's new in Microsoft Defender Vulnerability Management](../defender-vulnerability-management/whats-new-in-microsoft-defender-vulnerability-management.md)
 - [What's new in Microsoft Defender for Endpoint](../defender-endpoint/whats-new-in-microsoft-defender-endpoint.md)
 - [What's new in Microsoft 365 Defender](../defender/whats-new.md)
 - [What's new in Microsoft Defender for Office 365](../office-365-security/defender-for-office-365-whats-new.md)
