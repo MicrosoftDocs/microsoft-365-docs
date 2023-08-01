@@ -23,7 +23,7 @@ ms.topic: conceptual
 
 # What's new in Microsoft 365 Defender
 
-Lists the new features and functionality in Microsoft 365 Defender. 
+Lists the new features and functionality in Microsoft 365 Defender.
 
 RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader:
 
@@ -39,6 +39,11 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Cloud Apps](/cloud-app-security/release-notes)
 
 You can also get product updates and important notifications through the [message center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter).
+
+## August 2023
+
+- (Preview) [Asset rule management - Dynamic rules for devices](./configure-asset-rules.md) is now in public preview. Dynamic rules can help manage device context by assigning tags and device values automatically based on certain criteria.
+- (Preview) The [DeviceInfo](advanced-hunting-deviceinfo-table.md) table in advanced hunting now also includes the columns `DeviceManualTags` and `DeviceDynamicTags` in public preview to surface both manually and dynamically assigned tags related to the device you are investigating.
 
 ## July 2023
 
