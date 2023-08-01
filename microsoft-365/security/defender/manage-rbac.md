@@ -2,9 +2,6 @@
 title: Microsoft 365 Defender role-based access control (RBAC)
 description: Manage permissions and access to Microsoft 365 Defender Security portal experiences using role-based access control (RBAC)
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
@@ -15,7 +12,7 @@ ms.collection:
 - tier3
 ms.custom: 
 ms.topic: overview
-ms.subservice: mde
+ms.subservice: m365d
 ms.date: 05/31/2023
 ms.reviewer: 
 search.appverid: met150
@@ -31,6 +28,7 @@ search.appverid: met150
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Microsoft Defender for Identity](https://go.microsoft.com/fwlink/?LinkID=2198108)
 - [Microsoft Defender for Office 365 P2](https://go.microsoft.com/fwlink/?LinkID=2158212)
+- [Microsoft Defender Vulnerability Management](https://go.microsoft.com/fwlink/?linkid=2229011)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 

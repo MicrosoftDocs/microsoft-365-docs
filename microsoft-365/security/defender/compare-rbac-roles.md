@@ -2,9 +2,6 @@
 title: Map Microsoft 365 Defender role-based access control (RBAC) permissions
 description: Compare permissions and access to Microsoft 365 Defender Security portal experiences using role-based access control (RBAC)
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
@@ -15,7 +12,7 @@ ms.collection:
 - tier3
 ms.custom: 
 ms.topic: reference
-ms.subservice: mde
+ms.subservice: m365d
 ms.date: 11/10/2022
 ms.reviewer: 
 search.appverid: met150
