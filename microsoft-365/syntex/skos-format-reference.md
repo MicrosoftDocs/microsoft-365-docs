@@ -53,7 +53,7 @@ A taxonomy is a formal classification system. A taxonomy groups the words, label
 
 Represents a Term or a Keyword in a managed metadata hierarchy.
 
-A [Term](/dotnet/api/microsoft.sharepoint.client.taxonomy.term) is the atomic unit of a SharePoint [TermStore](/dotnet/api/microsoft.sharepoint.client.taxonomy.termstore). Each [Term](/dotnet/api/microsoft.sharepoint.client.taxonomy.term) belongs to a [TermSet](/dotnet/api/microsoft.sharepoint.client.taxonomy.termset) that belongs to a [TermGroup](/dotnet/api/microsoft.sharepoint.client.taxonomy.group).
+A [Term](/dotnet/api/microsoft.sharepoint.client.taxonomy.term) is the atomic unit of a SharePoint [TermStore](/dotnet/api/microsoft.sharepoint.client.taxonomy.termstore). Each [Term](/dotnet/api/microsoft.sharepoint.client.taxonomy.term) belongs to a [TermSet](/dotnet/api/microsoft.sharepoint.client.taxonomy.termset) that belongs to a [TermGroup](/dotnet/api/microsoft.sharepoint.client.taxonomy.termgroup).
 
 The syntax to define a [Term](/dotnet/api/microsoft.sharepoint.client.taxonomy.term) is as follows:
 
