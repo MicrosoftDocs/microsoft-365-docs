@@ -35,16 +35,12 @@ Microsoft permits the use of these icons in architectural diagrams, training mat
  > [!div class="button"]
  > [Download Visio templates and stencils](https://go.microsoft.com/fwlink/?linkid=2056186)
 
-### Install the templates and stencils
+### Use the Visio templates and stencils
 
-1. Download the template and Stencils library and save them to your computer.
-1. Open Visio, and go to **File** > **Options**, then in the Options dialog box, choose **Advanced**.
-1. Scroll down and choose **File locations**.
-1. Next to **Templates**, choose **...** and set the path to the location where you saved the templates.
-1. Next to **Stencils**, choose **...** and set the path to the location where you saved the templates.
-1. Choose **OK** and choose **OK** again to close the Options box and save your changes.
+Download the template and stencils and save them to your computer in the **My Shapes** folder. When you do that, you can choose  **File** > **New** in Visio and the templates will be on the Templates tab, available for use. The stencils should open with the template. If they do not open automatically, you can open the Shapes window and choose **More Shapes** > **My Shapes** > **Organize My Shapes** to open them.
 
-Now you can choose **File** > **New** in Visio and the templates will be on the Templates tab, available for use.
+For more information, see [Import downloaded stencils](https://support.microsoft.com/en-us/office/import-downloaded-stencils-74bbdce1-4872-4d5b-af4c-e93fa23f7008).
+
 
 ## Example architecture diagrams
 
