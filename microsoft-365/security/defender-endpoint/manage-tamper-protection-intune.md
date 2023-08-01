@@ -35,7 +35,7 @@ search.appverid: met150
 
 [Tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) helps protect certain [security settings](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on), such as virus and threat protection, from being disabled or changed. If you're part of your organization's security team, and you're using [Microsoft Intune](/mem/intune/fundamentals/what-is-intune), you can manage tamper protection for your organization in the [Intune admin center](https://endpoint.microsoft.com). You can also use [co-management with Intune and Configuration Manager](/mem/configmgr/comanage/overview) to mange tamper protection.
 
-Using Intune or co-management (Intune and Configuration Manager), you can:
+Using Intune or co-management (with Intune and Configuration Manager), you can:
 
 - [Turn tamper protection on (or off) for some or all devices](#turn-tamper-protection-on-or-off-in-microsoft-intune). 
 - [Tamper protect antivirus exclusions](#tamper-protection-for-antivirus-exclusions) that are defined for Microsoft Defender Antivirus.
@@ -53,7 +53,7 @@ Using Intune or co-management (Intune and Configuration Manager), you can:
 | Requirement | Details |
 |---|---|
 | Roles and permissions | You must have appropriate permissions assigned through roles, such as Global Administrator or Security Administrator. See [Azure Active Directory roles with Intune access](/mem/intune/fundamentals/role-based-access-control#azure-active-directory-roles-with-intune-access). |
-| Device management | Your organization uses [Intune to manage devices](/mem/intune/fundamentals/manage-devices). |
+| Device management | Your organization uses [Intune to manage devices](/mem/intune/fundamentals/manage-devices) or [co-management with Intune and Configuration Manager](/mem/configmgr/comanage/overview). |
 | Intune licenses | Intune licenses are required; Intune is included in Microsoft 365 E3/E5, Enterprise Mobility + Security E3/E5, Microsoft 365 Business Premium, Microsoft 365 F1/F3, Microsoft 365 Government G3/G5, and corresponding education licenses. |
 | Operating System | Windows devices must be running Windows 10 [version 1709 or later](/lifecycle/announcements/revised-end-of-service-windows-10-1709) or Windows 11. (For more information about releases, see [Windows release information](/windows/release-health/release-information).) <br/><br/>For Mac, see [Protect macOS security settings with tamper protection](tamperprotection-macos.md). |
 | Security intelligence | You must be using Windows security with [security intelligence](https://www.microsoft.com/wdsi/definitions) updated to version 1.287.60.0 (or later). |
@@ -90,7 +90,7 @@ If your organization has [exclusions defined for Microsoft Defender Antivirus](c
 |---|---|
 | Microsoft Defender platform | Devices are running Microsoft Defender platform `4.18.2211.5` or later. For more information, see [Monthly platform and engine versions](microsoft-defender-antivirus-updates.md#monthly-platform-and-engine-versions). |
 | `DisableLocalAdminMerge` setting | Also known as preventing local list merging, `DisableLocalAdminMerge` is enabled so that settings configured on a device are not merged with organization policies, such as settings in Intune. For more information, see [DisableLocalAdminMerge](/windows/client-management/mdm/defender-csp). |
-| Device management | Devices are managed in Intune only (not co-managed). |
+| Device management | Devices are managed in Intune or co-managed in Intune with Configuration Manager. |
 | Antivirus exclusions | Microsoft Defender Antivirus exclusions are managed in Microsoft Intune. For more information, see [Settings for Microsoft Defender Antivirus policy in Microsoft Intune for Windows devices](/mem/intune/protect/antivirus-microsoft-defender-settings-windows). <br/><br/>Functionality to protect Microsoft Defender Antivirus exclusions is enabled on devices. For more information, see [How to determine whether antivirus exclusions are tamper protected on a Windows device](#how-to-determine-whether-antivirus-exclusions-are-tamper-protected-on-a-windows-device). |
 
 > [!TIP]
@@ -104,8 +104,9 @@ You can use a registry key to determine whether the functionality to protect Mic
 
 2. To confirm that the device is managed by Intune only, go to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender` (or `HKLM\SOFTWARE\Microsoft\Windows Defender`), and look for a `REG_DWORD` entry called **ManagedDefenderProductType**. 
 
-   - If **ManagedDefenderProductType** has a value of `6`, then the device is managed by Intune only (*this value is required for exclusions to be tamper protected*).
-   - If **ManagedDefenderProductType** has a value of `7`, then the device is co-managed, such as by Intune and Configuration Manager (*this value indicates that exclusions are not currently tamper protected*).
+   - If **ManagedDefenderProductType** has a value of `6`, then the device is managed by Intune only (*this value indicates that exclusions are tamper protected*).
+   - If **ManagedDefenderProductType** has a value of `7`, then the device is co-managed, such as by Intune and Configuration Manager (*this value indicates that exclusions are tamper protected*).
+   - If **ManagedDefenderProductType** does not have a value of `6` or `7`, then the device is not managed by Intune or co-managed with Intune and Configuration Manager. (*In this case, exclusions are not tamper protected*.)
 
 3. To confirm that tamper protection is deployed and that exclusions are tamper protected, go to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Features` (or `HKLM\SOFTWARE\Microsoft\Windows Defender\Features`), and look for a `REG_DWORD` entry called **TPExclusions**.
 
