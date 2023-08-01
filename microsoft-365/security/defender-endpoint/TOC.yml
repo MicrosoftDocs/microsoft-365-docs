@@ -1079,6 +1079,8 @@
             - name: Delete Indicator
               href: delete-ti-indicator-by-id.md
 
+            - name: Batch Delete Indicators
+              href: batch-delete-ti-indicators.md
           - name: Information gathering
             items:
             - name: Export information gathering assessment
