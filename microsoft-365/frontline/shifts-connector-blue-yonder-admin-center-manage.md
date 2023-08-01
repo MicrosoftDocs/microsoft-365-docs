@@ -83,7 +83,7 @@ To **edit your connection instance settings**, you'll need to choose the data th
 >
 > After you edit your settings, make sure you follow the steps to [Disable open shifts, open shifts requests, swap requests, and time off requests.](/microsoft-365/frontline/shifts-connector-wizard#disable-open-shifts-open-shifts-requests-swap-requests-and-time-off-requests)
 
-To **edit your connection instance mappings**, you'll have the choice of:
+To **Edit your connection instance mappings**, you'll have the choice of:
 
 - Adding new mappings, by following the same process as when you first create your connection instance. See [Map Blue Yonder Workforce Management instances to teams](/microsoft-365/frontline/shifts-connector-wizard#map-blue-yonder-workforce-management-instances-to-teams)
 - Edit existent mappings, to update the Microsoft Teams to which a WFM instance is connected to.
