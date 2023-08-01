@@ -39,7 +39,7 @@ This article describes how existing roles and permissions in Microsoft Defender 
 
 Use the tables in the following sections to learn more about how your existing individual RBAC role definitions map to your new Microsoft 365 Defender RBAC roles:
 
-1. [Map Defender for Endpoint permissions](#map-defender-for-endpoint-permissions-to-the-microsoft-365-defender-rbac-permissions)
+1. [Map Defender for Endpoint permissions](#map-defender-for-endpoint-and-defender-vulnerability-management-permissions-to-the-microsoft-365-defender-rbac-permissions)
 2. [Map Defender for Office 365 (Exchange Online Protection) roles](#map-defender-for-office-365-exchange-online-protection-roles-to-the-microsoft-365-defender-rbac-permissions)
 3. [Map Microsoft Defender for Identity permissions](#map-microsoft-defender-for-identity-permissions-to-the-microsoft-365-defender-rbac-permissions)
 4. [Azure Active Directory Global roles access](#azure-active-directory-global-roles-access)
