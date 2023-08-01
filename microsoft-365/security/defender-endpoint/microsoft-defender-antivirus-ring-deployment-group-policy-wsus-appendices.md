@@ -49,7 +49,7 @@ Microsoft continually updates security intelligence in antimalware products to c
 
 ### References: 
 
-- [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/wdsi/defenderupdates)
+- [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates)
 
 - [Description of Forefront endpoint security definition updates](https://support.microsoft.com/topic/description-of-forefront-endpoint-security-definition-updates-b0833c24-fab3-390b-820b-3835beeb03b3)
 
