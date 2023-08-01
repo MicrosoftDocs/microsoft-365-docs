@@ -18,7 +18,7 @@ ms.date: 8/01/2023
 
 # What's new in Microsoft 365 Defender Unified role-based access control (RBAC)
 
-This article provides information about new features and important product updates for the latest release of Microsoft 365 Defender Unified role-based access control (RBAC)
+This article provides information about new features and important product updates for the latest release of Microsoft 365 Defender Unified role-based access control (RBAC).
 
 ## August 2023
 
