@@ -476,7 +476,7 @@
               href: troubleshoot.md
             - name: Configure alert notifications
               href: configure-email-notifications.md
-            - name: Assessment Rule Management
+            - name: Asset Rule Management
               href: configure-asset-rules.md
             - name: Provide feedback
               href: feedback.md
