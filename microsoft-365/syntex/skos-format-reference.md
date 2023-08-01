@@ -17,9 +17,9 @@ description: Learn about the SKOS format reference for SharePoint taxonomy.
 
 # SKOS format reference for SharePoint taxonomy
 
-This article includes RDF vocabulary used to represent [SharePoint taxonomy](/dotnet/api/microsoft.sharepoint.taxonomy) and is based on [SKOS](https://www.w3.org/TR/skos-primer/). For serialization of this RDF syntax, use RDF [TURTLE](https://www.w3.org/TR/turtle/).
+This article includes RDF vocabulary used to represent [SharePoint taxonomy](/dotnet/api/microsoft.sharepoint.client.taxonomy) and is based on [SKOS](https://www.w3.org/TR/skos-primer/). For serialization of this RDF syntax, use RDF [TURTLE](https://www.w3.org/TR/turtle/).
 
-The following table shows the [SKOS](https://www.w3.org/TR/skos-primer/) equivalents for the [SharePoint taxonomy](/dotnet/api/microsoft.sharepoint.taxonomy) vocabulary. SharePoint doesn't support [SKOS](https://www.w3.org/TR/skos-primer/) values that have no SharePoint taxonomy equivalent.
+The following table shows the [SKOS](https://www.w3.org/TR/skos-primer/) equivalents for the [SharePoint taxonomy](/dotnet/api/microsoft.sharepoint.client.taxonomy) vocabulary. SharePoint doesn't support [SKOS](https://www.w3.org/TR/skos-primer/) values that have no SharePoint taxonomy equivalent.
 
 |SharePoint taxonomy|SKOS equivalent|
 |:-----------------|:--------------|
