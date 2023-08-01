@@ -119,6 +119,19 @@ Both structured and freeform models use Microsoft Power Apps AI Builder to creat
 
 [Learn more about image tagging in Microsoft Syntex.](image-tagging-overview.md)
 
+### Taxonomy tagging
+
+:::row:::
+   :::column span="3":::
+      Use taxonomy tagging in Syntex to find and manage images in SharePoint document libraries. Syntex automatically tags images with descriptive keywords using AI. These keywords are stored in a managed metadata column, making it easier to search, sort, filter, and manage the images.
+   :::column-end:::
+   :::column span="":::
+      ![Image of generic taxonomy tagging icon.](../media/content-understanding/image-tagging-image.png)
+   :::column-end:::
+:::row-end:::
+
+[Learn more about taxonomy tagging in Microsoft Syntex.](taxonomy-tagging-overview.md)
+
 ### Optical character recognition
 
 :::row:::
