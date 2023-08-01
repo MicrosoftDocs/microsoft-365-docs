@@ -85,9 +85,9 @@ To **edit your connection instance settings**, you'll need to choose the data th
 
 To **edit your connection instance mappings**, you'll have the choice of:
 
-- Adding new mappings, by following the same process as when you first create your connection instance. See [Map Blue Yonder Workforce Management instances to teams](/microsoft-365/frontline/shifts-connector-wizard?view=o365-worldwide#map-blue-yonder-workforce-management-instances-to-teams)
+- Adding new mappings, by following the same process as when you first create your connection instance. See [Map Blue Yonder Workforce Management instances to teams](/microsoft-365/frontline/shifts-connector-wizard#map-blue-yonder-workforce-management-instances-to-teams)
 - Edit existent mappings, to update the Microsoft Teams to which a WFM instance is connected to.
-  If you are mapping to team in Microsoft Teams that has previously used Shifts, make sure you [Remove schedule entities from teams you want to map](/microsoft-365/frontline/shifts-connector-wizard?view=o365-worldwide#remove-schedule-entities-from-teams-you-want-to-map)
+  If you are mapping to team in Microsoft Teams that has previously used Shifts, make sure you [Remove schedule entities from teams you want to map](/microsoft-365/frontline/shifts-connector-wizard?#remove-schedule-entities-from-teams-you-want-to-map)
 - Deleting active mappings, either by selecting to un-tick the checkbox of the WFM instance mapped, or by uploading the CSV file with the removed un-desired mapping row.
 
   
