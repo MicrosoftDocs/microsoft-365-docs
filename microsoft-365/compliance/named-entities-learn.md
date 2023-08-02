@@ -49,7 +49,7 @@ Named entity SITs come in two flavors, *bundled* and *unbundled*
 
 Bundled named entity SITs detect all possible matches. Use them as broad criteria in your DLP policies for detecting sensitive items.
 
-Unbundled named entity SITs have a narrower focus, like a single country/region. Use them when you need a DLP policy with a narrower detection scope.
+Unbundled named entity SITs have a narrower focus, like a single country. Use them when you need a DLP policy with a narrower detection scope.
 
 >[!Note]
 > To use bundled SITs, you must activate [Advanced classification scanning and protection](dlp-configure-endpoint-settings.md#advanced-classification-scanning-and-protection) for the relevant [data loss prevention settings](dlp-configure-endpoint-settings.md) before they will be discoverable.
@@ -73,7 +73,7 @@ Here are some examples of enhanced DLP policies that use named entity SITs. You 
 |---------|---------|---------|
 |Financial|U.S. Gramm-Leach-Bliley Act (GLBA) Enhanced         |Helps detect the presence of information subject to Gramm-Leach-Bliley Act (GLBA), including information like social security numbers or credit card numbers. This enhanced template extends the original by also detecting people's full names, U.S./U.K. passport number, U.S. driver's license number and U.S. physical addresses.         |
 | Medical and health   |Australia Health Records Act (HRIP Act) Enhanced         |Helps detect the presence of information commonly considered to be subject to the Health Records and Information Privacy (HRIP) act in Australia, like medical account number and tax file number. This enhanced template extends the original by also detecting people's full names, medical terms and conditions, and Australia physical addresses.         |
-|Privacy   |General Data Protection Regulation (GDPR) Enhanced         | Helps detect the presence of personal information for individuals inside the European Union (EU) to help meet GDPR privacy obligations. This enhanced template detects people's full names and physical addresses for countries/regions in the EU.        |
+|Privacy   |General Data Protection Regulation (GDPR) Enhanced         | Helps detect the presence of personal information for individuals inside the European Union (EU) to help meet GDPR privacy obligations. This enhanced template detects people's full names and physical addresses for countries in the EU.        |
 
 
 ## Next steps
