@@ -41,7 +41,7 @@ To set a content type when a file is added to a document library, follow these s
 
        ![Screenshot of the rule statement page showing the choose action option highlighted.](../media/content-understanding/content-rule-set-content-site-to.png)
 
-    2. Select **Choose a content type**, and then select the appropriate [content type](https://learn.microsoft.com/sharepoint/governance/content-type-and-workflow-planning#content-type-overview) for the file. The content types shown in this list are the ones available in the library.
+    2. Select **Choose a content type**, and then select the appropriate [content type](/sharepoint/governance/content-type-and-workflow-planning#content-type-overview) for the file. The content types shown in this list are the ones available in the library.
 
        ![Screenshot of the rule statement page showing the statement options.](../media/content-understanding/content-rule-statement-options.png)
 
@@ -54,4 +54,4 @@ To set a content type when a file is added to a document library, follow these s
 
        ![Screenshot of the rule statement page showing the completed statement.](../media/content-understanding/content-rule-completed-statement.png)
 
-4. When your rule statement is complete, select **Create**. You can [see and manage the new rule](content-processing-overview#manage-a-rule) on the **Manage rules** page.
+4. When your rule statement is complete, select **Create**. You can [see and manage the new rule](content-processing-overview.md#manage-a-rule) on the **Manage rules** page.
