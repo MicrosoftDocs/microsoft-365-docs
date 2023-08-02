@@ -22,9 +22,9 @@ This article provides information about new features and important product updat
 
 ## August 2023
 
-**Assigning File collection permissions with Microsoft 365 Defender Unified role-based access control (RBAC) is now in Public Preview** </br>
+**A new file collection permission in Microsoft 365 Defender Unified role-based access control (RBAC) is now in Public Preview** </br>
 
-Using Microsoft 365 Defender Unified (RBAC), you can now assign permissions to allow users collect or download files for analysis, either as a direct response action on the file page or during a live response investigation in the live response console.
+You can now assign a new granular permission in Microsoft 365 Defender Unified (RBAC) that allows users to collect or download files for analysis. This permission enables users to download files directly from the file page and during a live response investigation in the live response console. You can add the new permission to a custom role by selecting it from the **Security operations** permissions group when creating the role. For more information, see [Create custom roles with Microsoft 365 Defender RBAC](./create-custom-rbac-roles.md).
 
 For more information on what's new with other Microsoft Defender security products, see:
 
