@@ -1,0 +1,164 @@
+{
+   "redirections":[
+      {
+         "source_path":"microsoft-365/knowledge/adoption-resources.md",
+         "redirect_url":"/viva/topics/adoption-resources",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"microsoft-365/knowledge/create-a-topic.md",
+         "redirect_url":"/viva/topics/create-a-topic",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"microsoft-365/knowledge/edit-a-topic.md",
+         "redirect_url":"/viva/topics/edit-a-topic",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"microsoft-365/knowledge/faq-topics.md",
+         "redirect_url":"/viva/topics/faq-topics",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"microsoft-365/knowledge/get-started-with-viva-topics.md",
+         "redirect_url":"/viva/topics/get-started-with-viva-topics",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"microsoft-365/knowledge/index.md",
+         "redirect_url":"/viva/topics/",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"microsoft-365/knowledge/manage-topics.md",
+         "redirect_url":"/viva/topics/manage-topics",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"microsoft-365/knowledge/plan-topic-experiences.md",
+         "redirect_url":"/viva/topics/plan-topic-experiences",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"microsoft-365/knowledge/restrict-access-to-topics.md",
+         "redirect_url":"/viva/topics/restrict-access-to-topics",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"microsoft-365/knowledge/save-topic-as-draft.md",
+         "redirect_url":"/viva/topics/save-topic-as-draft",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"microsoft-365/knowledge/scale-topics.md",
+         "redirect_url":"/viva/topics/scale-topics",
+         "redirect_document_id":false
+      },
+      {
+      "source_path": "microsoft-365/knowledge/give-user-permissions-to-the-topic-center.md",
+      "redirect_url": "/microsoft-365/knowledge/topic-experiences-user-permissions",
+      "redirect_document_id": true
+      },
+      {
+         "source_path":"microsoft-365/knowledge/search.md",
+         "redirect_url":"/viva/topics/search",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"microsoft-365/knowledge/set-up-topic-experiences.md",
+         "redirect_url":"/viva/topics/set-up-topic-experiences",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"microsoft-365/knowledge/sharepoint-taxonomy.md",
+         "redirect_url":"/viva/topics/sharepoint-taxonomy",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"microsoft-365/knowledge/topic-center-overview.md",
+         "redirect_url":"/viva/topics/topic-center-overview",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"microsoft-365/knowledge/topic-experiences-administration.md",
+         "redirect_url":"/viva/topics/topic-experiences-administration",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"microsoft-365/knowledge/topic-experiences-discovery-curation.md",
+         "redirect_url":"/viva/topics/topic-experiences-discovery-curation",
+         "redirect_document_id":false
+      },
+      {
+      "source_path": "microsoft-365/knowledge/knowledge-management-overview.md",
+      "redirect_url": "/microsoft-365/knowledge/topic-experiences-overview",
+      "redirect_document_id": true
+      },
+      {
+         "source_path":"microsoft-365/knowledge/topic-experiences-discovery.md",
+         "redirect_url":"/viva/topics/topic-experiences-discovery",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"microsoft-365/knowledge/topic-experiences-get-ready.md",
+         "redirect_url":"/viva/topics/topic-experiences-get-ready",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"microsoft-365/knowledge/topic-experiences-knowledge-rules.md",
+         "redirect_url":"/viva/topics/topic-experiences-knowledge-rules",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"microsoft-365/knowledge/topic-experiences-overview.md",
+         "redirect_url":"/viva/topics/topic-experiences-overview",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"microsoft-365/knowledge/topic-experiences-roles.md",
+         "redirect_url":"/viva/topics/topic-experiences-roles",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"microsoft-365/knowledge/topic-experiences-security-privacy.md",
+         "redirect_url":"/viva/topics/topic-experiences-security-privacy",
+         "redirect_document_id":false
+      },
+      {
+      "source_path": "microsoft-365/knowledge/manage-knowledge-network.md",
+      "redirect_url": "/microsoft-365/knowledge/topic-experiences-discovery",
+      "redirect_document_id": false
+      },
+      {
+      "source_path": "microsoft-365/knowledge/set-up-knowledge-network.md",
+      "redirect_url": "/microsoft-365/knowledge/set-up-topic-experiences",
+      "redirect_document_id": false
+      },
+      {
+      "source_path": "microsoft-365/knowledge/work-with-topics.md",
+      "redirect_url": "/microsoft-365/knowledge/manage-topics",
+      "redirect_document_id": true
+      },
+      {
+         "source_path":"microsoft-365/knowledge/topic-experiences-security-trimming.md",
+         "redirect_url":"/viva/topics/topic-experiences-security-trimming",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"microsoft-365/knowledge/topic-experiences-user-permissions.md",
+         "redirect_url":"/viva/topics/topic-experiences-user-permissions",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"microsoft-365/knowledge/topics-adoption-getstarted.md",
+         "redirect_url":"/viva/topics/topics-adoption-getstarted",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"microsoft-365/knowledge/trial-topics.md",
+         "redirect_url":"/viva/topics/trial-topics",
+         "redirect_document_id":false
+      }
+   ]
+}
