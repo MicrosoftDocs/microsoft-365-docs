@@ -75,7 +75,7 @@ Follow these steps to generalize a VM VHD. After these steps, turn off the VM an
 
 1. In **Shutdown Options**, select **Shutdown**.
 1. Select **OK**.
-1. When Sysprep finishes, shut down the VM. If the generalization succeeds, the VM will be shut down automatically. Don not use **Restart** to shut down the VM.
+1. When Sysprep finishes, shut down the VM. If the generalization succeeds, the VM will be shut down automatically. Do not use **Restart** to shut down the VM.
 
 You can also use the following PowerShell script to generalize the VM VHD. Run the script as an administrator in PowerShell.
 
