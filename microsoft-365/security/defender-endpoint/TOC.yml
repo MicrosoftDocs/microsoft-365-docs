@@ -362,7 +362,7 @@
     - name: Device management
       items:
         - name: Onboarding devices
-          href: onboard-configure.md
+          href: onboarding.md
         - name: Offboarding devices
           href: offboard-machines.md
         - name: Ensure your devices are configured properly
