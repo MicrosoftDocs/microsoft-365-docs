@@ -58,7 +58,7 @@ Named entity SITs also show up in the compliance console by default. They detect
 
 **un-bundled**
 
-These named entity SITs have a narrower focus, such as a single country/region, or a single class of terms. Use them when you need a DLP policy with a narrower detection scope. See, [Examples of named entity SITs](named-entities-learn.md#examples-of-named-entity-sits).
+These named entity SITs have a narrower focus, such as a single country, or a single class of terms. Use them when you need a DLP policy with a narrower detection scope. See, [Examples of named entity SITs](named-entities-learn.md#examples-of-named-entity-sits).
 
 **bundled**
 
