@@ -22,8 +22,9 @@ This article provides information about new features and important product updat
 
 ## August 2023
 
-**(Preview) File collection permissions can now be managed with Microsoft 365 Defender Unified role-based access control (RBAC)** </br></br>
-Assigning file collection permissions (both direct and from the Live response console) with Microsoft 365 Defender Unified role-based access control (RBAC) is now in public preview. Previously, users were assigned the Advanced Live response permission to access file collection capabilities, even though they did not need all of the associated permissions. This change ensures that users are only given the permission they need.
+**Assigning File collection permissions with Microsoft 365 Defender Unified role-based access control (RBAC) is now in Public Preview** </br></br>
+
+Using Microsoft 365 Defender's Unified role-based access control (RBAC), users can now assign permissions to allow file collection as a response actions for a file and during live response investigations in the live response console. This eliminates the need to assign Advanced Live response permission to access file collection capabilities, which is now available in public preview.
 
 For more information on what's new with other Microsoft Defender security products, see:
 
