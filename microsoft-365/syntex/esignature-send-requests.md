@@ -44,7 +44,7 @@ You must be signed in to SharePoint Online by using your work email address.
 
     ![Screenshot of a document showing the Get signatures option.](../media/content-understanding/esignature-get-signatures-option.png)
 
-3. On the **Add recipients** panel, add up to 10 internal or external recipients you want to sign the document, and then select **Next**.
+3. On the **Syntex eSignature** panel, add up to 10 internal or external recipients you want to sign the document, and then select **Next**.
 
     ![Screenshot of the Add recipients panel.](../media/content-understanding/esignature-add-recipients-panel.png)
 
