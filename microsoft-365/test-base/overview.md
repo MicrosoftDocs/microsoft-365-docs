@@ -45,7 +45,7 @@ However, if the package fails any test, customers can use insights from memory o
 > [!NOTE]
 > **For customers to take advantage of prerelease update testing, they must specifically request access to it. Once your request for access to prerelease updates is approved, your uploaded packages will automatically get scheduled to be tested against prerelease Windows updates for the OS versions selected during package uploading.**.
 
-As new Windows prerelease updates become available, existing application packages are automatically tested with the new prerelease content. Following each test, another round of insights are provided. If customers don’t specifically request access to prerelease testing, their application packages are tested against only the current released version of Windows. 
+As new Windows prerelease updates become available, existing application packages are automatically tested with the new prerelease content. Following each test, another round of insights is provided. If customers don’t specifically request access to prerelease testing, their application packages are tested against only the current released version of Windows. 
 
 After packages are successfully tested, customers can resolve any issues found during testing and deliver their applications to their end users with the assurance that Test Base did its job.
 
