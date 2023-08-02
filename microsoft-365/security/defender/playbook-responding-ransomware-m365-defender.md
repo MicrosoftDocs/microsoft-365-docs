@@ -130,7 +130,7 @@ Use this section to investigate the attack and plan your response.
 
 ### Identify the ransomware process
 
-* Using [advanced hunting](/microsoft-365/security/defender/advanced-hunting-overview.md), search for the identified process in the process creation events on other devices.
+* Using [advanced hunting](advanced-hunting-overview.md), search for the identified process in the process creation events on other devices.
 
 ### Look for exposed credentials in the infected devices
 

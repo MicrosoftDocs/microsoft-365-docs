@@ -373,7 +373,7 @@
     - name: Device management
       items:
         - name: Onboarding devices
-          href: onboard-configure.md
+          href: onboarding.md
         - name: Offboarding devices
           href: offboard-machines.md
         - name: Ensure your devices are configured properly
@@ -1069,6 +1069,8 @@
             - name: Delete Indicator
               href: delete-ti-indicator-by-id.md
 
+            - name: Batch Delete Indicators
+              href: batch-delete-ti-indicators.md
           - name: Information gathering
             items:
             - name: Export information gathering assessment
