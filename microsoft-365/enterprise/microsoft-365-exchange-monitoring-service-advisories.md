@@ -18,7 +18,6 @@ ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
 description: "Service advisory explains surge in eDiscovery cmdlet exceptions affecting Compliance Search PowerShell cmdlets."
-ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # Service advisories for eDiscovery cmdlet exception spike in Exchange Online monitoring
