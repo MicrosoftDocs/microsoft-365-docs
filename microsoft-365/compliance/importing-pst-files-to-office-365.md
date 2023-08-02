@@ -310,6 +310,6 @@ Return shipping costs vary, depending on your proximity to the Microsoft data ce
 
 Yes.
 
-#### If I have to ship my hard drive to another country/region, is there anything I need to do?
+#### If I have to ship my hard drive to another country, is there anything I need to do?
 
 The hard drive that you ship to Microsoft might have to cross international borders. If so, you're responsible for ensuring that the hard drive and the data it contains are imported and/or exported in accordance with the applicable laws. Before shipping a hard drive, check with your advisors to verify that your drive and data can legally be shipped to the specified Microsoft data center. This verification will help to ensure that it reaches Microsoft in a timely manner.
