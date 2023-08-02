@@ -35,7 +35,6 @@ You must be signed in to SharePoint Online by using your work email address.
 > [!NOTE]
 > For this preview, Syntex eSignature is available for PDF documents only at this time.
 
-
 ## Create a signature request
 
 1. From a SharePoint document library, open the document for which you want to start the Syntex eSignature process.
@@ -60,7 +59,9 @@ You must be signed in to SharePoint Online by using your work email address.
 
     Once sent, the status of the request is set to **In progress** and recipients are able to add their signatures.
 
-### Troubleshoot creating requests
+### Unable to create a request
+
+If you aren't able to create a signature request, check the PDF viewer settings or the collaboration settings.
 
 #### PDF settings from the PDF viewer
 
