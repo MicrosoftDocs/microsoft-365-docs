@@ -21,7 +21,7 @@ description: Users can learn how to view and manage quarantined messages in Exch
 ms.subservice: mdo
 ms.service: microsoft-365-security
 adobe-target: true
-ms.date: 6/30/2023
+ms.date: 8/2/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
@@ -256,7 +256,7 @@ If you don't release or remove a message, it's automatically deleted from quaran
 After you select the message, use either of the following methods to request its release:
 
 - **On the Email tab**: Select :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Request release**.
-- **In the details flyout of the selected message**: Select :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More options** \> :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Request release**..
+- **In the details flyout of the selected message**: Select :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More options** \> :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Request release**.
 
 In the **Request release** flyout that opens, review the information, select **Request release**. In the **Release requested** flyout that opens, select **Done**.
 
@@ -279,6 +279,9 @@ In the **Delete (n) messages from quarantine** flyout that opens, use one of the
 - Select **Delete** only: The message is deleted, but is potentially recoverable.
 
 After you select **Delete** on the **Delete (n) messages from quarantine** flyout, you return to the **Email** tab where the message is no longer listed.
+
+> [!TIP]
+> Admins can find out who deleted a quarantined message by searching the admin audit log. For instructions, see [Find who deleted a quarantined message](quarantine-admin-manage-messages-files.md#find-who-deleted-a-quarantined-message).
 
 #### Preview email from quarantine
 
@@ -306,7 +309,7 @@ Select the **Microsoft Message Header Analyzer** link to analyze the header fiel
 
 #### Block email senders from quarantine
 
-The Block senders action adds the message sender to the Blocked Senders list in the your mailbox. For more information about blocking senders, see [Block a mail sender](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
+The Block senders action adds the message sender to the Blocked Senders list in your mailbox. For more information about blocking senders, see [Block a mail sender](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
 
 After you select the message, use either of the following methods to add the message sender to the Blocked Senders list in your mailbox:
 
@@ -328,7 +331,7 @@ When you select multiple quarantined messages on the **Email** tab by selecting 
 
 ## Manage quarantined messages in Microsoft Teams
 
-When a potentially malicious chat message is detected in Microsoft Teams, zero-hour auto purge (ZAP) removes the message and quarantines it. Users can now view and manage these quarantined Teams messages in the Microsoft 365 Defender portal. Note that end user quarantine notifications are not supported for Teams workload. 
+When a potentially malicious chat message is detected in Microsoft Teams, zero-hour auto purge (ZAP) removes the message and quarantines it. Users can now view and manage these quarantined Teams messages in the Microsoft 365 Defender portal. Quarantine notifications aren't supported for quarantined Teams messages. 
 
 ### View your quarantined messages in Microsoft Teams
 
@@ -340,7 +343,7 @@ You can sort the entries by clicking on an available column header. Select :::im
 - **Date quarantined**: Showed when the message was quarantined.
 - **Status**: Shows whether the message is already reviewed and released or needs review. 
 - **Sender**: The person who sent the message that was quarantined.
-- **Quarantine reason**: Available options are "High confidence phish" and "Malware".
+- **Quarantine reason**: Available options are **High confidence phish** and **Malware**.
 - **Expires**: Indicates the time after which the message is removed from quarantine. By default, this value is 30 days.
 
 To filter the entries, select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter**. The following filters are available in the **Filters** flyout that opens:
@@ -394,5 +397,5 @@ On the **Teams messages** tab, select the quarantined message by selecting the c
 - **Delete**: You can request to delete the message from the list of quarantined messages.
 - **Preview message**: You can view the details of the message you selected.
 
-Note that if you don't release or remove a message, it's automatically deleted from quarantine after the date shown in the **Expires** column.
+If you don't release or remove a message, it's automatically deleted from quarantine after the date shown in the **Expires** column.
  

@@ -154,7 +154,7 @@ This insight displays if your organization has users in China connecting to your
 
 If your organization has private WAN connectivity, we recommend configuring a network WAN circuit from your office locations in China that have network egress to the Internet in any of the following locations:
 
-- Hong Kong
+- Hong Kong Special Administrative Region
 - Japan
 - Taiwan
 - South Korea

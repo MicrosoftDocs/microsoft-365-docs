@@ -6,7 +6,7 @@ metadata:
   ms.author: chrisda
   author: chrisda
   manager: dansimp
-  ms.date: 6/22/2023
+  ms.date: 8/2/2023
   audience: ITPro
   ms.topic: faq
 
@@ -138,3 +138,8 @@ sections:
           ```
 
           After you release a message, you can't release it again.
+
+      - question: |
+          How can I find out who deleted a message from quarantine?
+        answer: |
+          See [Find who deleted a quarantined message](quarantine-admin-manage-messages-files.md#find-who-deleted-a-quarantined-message).
