@@ -73,6 +73,8 @@
         href: monitor-test-status.md
   - name: Request to change access level
     href: accesslevel.md
+  - name: How to prepare a Windows VHD for Test Base
+    href: prepare-testbase-vhd-file.md
   - name: SDK & API
     href: sdkapi.md
 - name: Reference
