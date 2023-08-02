@@ -49,7 +49,7 @@ The matching of street addresses is designed to match strings that a human would
 - Patterns of postal codes.
 - Patterns of address formats.
 
-The resources are different for each country/region. The primary resources are the patterns of address formats that are used in a given country/region. Different formats are chosen to make sure that as many addresses as possible are matched. These formats allow flexibility, for example, an address may omit the postal code or omit a town name or have a street with no street suffix. In all cases, such matches are used to increase the confidence of the match.
+The resources are different for each country. The primary resources are the patterns of address formats that are used in a given country. Different formats are chosen to make sure that as many addresses as possible are matched. These formats allow flexibility, for example, an address may omit the postal code or omit a town name or have a street with no street suffix. In all cases, such matches are used to increase the confidence of the match.
 
 The patterns are designed to match individual single addresses, not generic locations. So strings such as *Redmond, WA 98052* or *Main Street, Albuquerque* won't be matched.
 
