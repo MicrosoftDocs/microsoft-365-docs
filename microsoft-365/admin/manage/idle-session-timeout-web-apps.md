@@ -59,6 +59,8 @@ When a user has been inactive in Microsoft 365 web apps for the time period you 
     - OneDrive for Business
 
     - SharePoint Online (SPO)
+ 
+    - Microsoft Fabric
 
     - Microsoft365.com and other start pages
 
@@ -125,6 +127,8 @@ The following Microsoft 365 apps are supported.
 - OneDrive for Business
 
 - SharePoint Online (SPO)
+
+- Microsoft Fabric
 
 - Microsoft365.com and other start pages
 
