@@ -441,7 +441,7 @@ When you select multiple quarantined messages on the **Email** tab by selecting 
 
 By default, many security policy verdicts allow users to delete their quarantined messages (messages where they're a recipient). For more information, see the table at [Manage quarantined messages and files as a user](quarantine-end-user.md).
 
-Deleting a quarantined message might cause confusion if the message was sent to multiple recipients, and those other recipients are looking for the message in quarantine. Admins can search the audit log to find events for messages that were deleted from quarantine by using the following procedures:
+Admins can search the audit log to find events for messages that were deleted from quarantine by using the following procedures:
 
 1. In the Defender portal at <https://security.microsoft.com>, go to **Audit**. Or, to go directly to the **Audit** page, use <https://security.microsoft.com/auditlogsearch>.
 

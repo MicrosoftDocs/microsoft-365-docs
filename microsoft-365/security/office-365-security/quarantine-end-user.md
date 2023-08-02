@@ -281,7 +281,7 @@ In the **Delete (n) messages from quarantine** flyout that opens, use one of the
 After you select **Delete** on the **Delete (n) messages from quarantine** flyout, you return to the **Email** tab where the message is no longer listed.
 
 > [!TIP]
-> If a message contains multiple recipients, the message is removed from quarantine for *all* recipients when *one* recipient deletes the message from quarantine. Admins can find out who deleted a quarantined message by searching the admin audit log. For instructions, see [Find who deleted a quarantined message](quarantine-admin-manage-messages-files.md#find-who-deleted-a-quarantined-message).
+> Admins can find out who deleted a quarantined message by searching the admin audit log. For instructions, see [Find who deleted a quarantined message](quarantine-admin-manage-messages-files.md#find-who-deleted-a-quarantined-message).
 
 #### Preview email from quarantine
 
