@@ -26,7 +26,7 @@ search.appverid:
 - MET150
 - MOE150
 description: "Learn how to get online or phone support for your Microsoft 365 for business subscription. You must be an admin for a business subscription to get support."
-ms.date: 11/08/2022
+ms.date: 07/25/2023
 ---
 
 # Get support for Microsoft 365 for business
@@ -46,13 +46,13 @@ Check out this video and others on our [YouTube channel](https://go.microsoft.co
 Need to speak to someone right away? Admins, have your account details ready when you call Support.
 
 > [!IMPORTANT]
-> You must be an admin for a business subscription to use these support methods. If you're not a business admin, please use [this support page](https://support.microsoft.com/contactus).
+> You must be an admin for a business subscription to use these support methods. [Find out more about admin roles for the Microsoft 365 admin center](add-users/about-admin-roles.md). If you're not a business admin, please use [this support page](https://support.microsoft.com/contactus).
 
 Start by [checking the current health of your services](../enterprise/view-service-health.md). You can view detailed information about current and past issues on the <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Service health dashboard</a>. If you're experiencing an issue that isn't listed, you can get support in one of the following ways:
 
 ## Online support
 
-Save time by starting your service request online. We'll help you find a solution or connect you to technical support.
+Save time by starting your service request online. We can help you find a solution or connect you to technical support.
 
 > [!IMPORTANT]
 > You must have bought at least one subscription through Microsoft to access Microsoft support. If you bought all your subscriptions through a partner, contact your partner for support.
@@ -65,7 +65,7 @@ Save time by starting your service request online. We'll help you find a solutio
 
 ## Phone support
 
-In most countries or regions, billing support for Microsoft 365 for business products and services is provided in English from 9 AM-5 PM, Monday through Friday. Local language support varies by country or region.
+In most countries/regions, billing support for Microsoft 365 for business products and services is provided in English from 9 AM-5 PM, Monday through Friday. Local language support varies by country/region.
 
 Technical support is provided in English 24 hours a day, 7 days a week, and in some cases, in local languages as noted.
 
