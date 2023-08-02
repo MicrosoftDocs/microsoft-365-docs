@@ -35,6 +35,9 @@ The more improvement actions you take, the higher your Secure Score will be. For
 
 Microsoft Secure Score can be found at <https://security.microsoft.com/securescore> in the [Microsoft 365 Defender portal](microsoft-365-defender-portal.md).
 
+## August 2023
+
+
 ## July 2023
 
 The following Microsoft Defender for Identity recommendations will be added as Microsoft Secure Score improvement actions:
