@@ -126,6 +126,8 @@ The following Microsoft 365 apps are supported.
 
 - SharePoint Online (SPO)
 
+- Power BI Online
+
 - Microsoft365.com and other start pages
 
 - Microsoft 365 apps (Word, Excel, PowerPoint) on the web
