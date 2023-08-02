@@ -22,13 +22,13 @@ description: Learn how to set up Microsoft Syntex eSignature to send electronic 
 > [!NOTE]
 > This feature is currently in limited preview and subject to change.
 
-Before you can use Microsoft Syntex eSignature, it must be configured in the Microsoft 365 admin center.
+The Microsoft Syntex eSignature service is set up in the Microsoft 365 admin center.
 
 ## Prerequisites
 
 ### Licensing
 
-Before you can use Syntex eSignature, you must first link your Azure subscription in [Syntex pay-as-you-go](syntex-azure-billing.md). Syntex eSignature is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md). (Billing isn't activated during this preview.)
+Before you can use Syntex eSignature, you must first link your Azure subscription in [Syntex pay-as-you-go](syntex-azure-billing.md). Syntex eSignature is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md). (Billing and pricing isn't activated during this preview.)
 
 ### Permissions
 
