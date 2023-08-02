@@ -90,9 +90,8 @@ If a proxy or firewall is blocking anonymous traffic from the Defender for Endpo
 
 The information in the list of proxy and firewall configuration information is required to communicate with Log Analytics agent (often referred to as Microsoft Monitoring Agent) for previous versions of Windows, such as Windows 7 SP1, Windows 8.1, and Windows Server 2008 R2*.
 
-<br>
 
-****
+
 
 |Agent Resource|Ports|Direction|Bypass HTTPS inspection|
 |---|---|---|---|

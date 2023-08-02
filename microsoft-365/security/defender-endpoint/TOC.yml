@@ -113,11 +113,14 @@
           href: configure-proxy-internet.md
         - name: Step 3 - Verify client connectivity
           href: verify-connectivity.md
+        
+    - name: Device connectivity
+      items:
         - name: Streamlined device connectivity
           href: configure-device-connectivity.md
         - name: Migrating devices to streamlined method
           href: migrate-devices-streamlined.md
- 
+
     - name: Onboarding Windows Client
       items:
       - name: Onboarding Windows Client overview

@@ -48,13 +48,14 @@ For more information on the Defender for Endpoint Client Analyzer, see [Troubles
  
 
 >[!NOTE]
->(Applies to public preview) For the simplified onboarding public preview, when testing connectivity on devices not yet onboarded to Defender for Endpoint, run mdeclientanalyzer.cmd with `-o <path to MDE onboarding package >` . The command will use parameters from onboarding script to test connectivity. Otherwise, the default pre-onboarding test will test against the standard URL set. See the following section for more details.
+>(Applies to public preview)<br>
+>For the simplified onboarding public preview, when testing connectivity on devices not yet onboarded to Defender for Endpoint, run mdeclientanalyzer.cmd with `-o <path to MDE onboarding package >`. The command will use parameters from onboarding script to test connectivity. Otherwise, the default pre-onboarding test will test against the standard URL set. See the following section for more details.
 
 
 
 Verify, the proxy configuration is completed successfully. The WinHTTP can then discover and communicate through the proxy server in your environment, and then the proxy server will allow  traffic to the Defender for Endpoint service URLs.
 
-1. Download the [Microsoft Defender for Endpoint Client Analyzer tool](https://aka.ms/mdeanalyzer) to the PC, where Defender for Endpoint sensor is running on. 
+1. Download the [Microsoft Defender for Endpoint Client Analyzer tool](https://aka.ms/mdeanalyzer) where Defender for Endpoint sensor is running on. 
 
 2. Extract the contents of MDEClientAnalyzer.zip on the device.
 
@@ -98,7 +99,8 @@ However, if the connectivity check results indicate a failure, an HTTP error is 
 >
 > When the TelemetryProxyServer is set in Registry or via Group Policy, Defender for Endpoint will fall back, it fails to access the defined proxy.
 
-## Testing connectivity to the streamlined onboarding method (Public preview)
+
+## (Public preview) Testing connectivity to the streamlined onboarding method 
 
 If you are testing connectivity on a device that has not yet been onboarded to Defender for Endpoint using the streamlined approach (relevant for both new & migrating devices): 
 
