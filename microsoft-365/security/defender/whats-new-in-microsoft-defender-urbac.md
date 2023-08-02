@@ -24,7 +24,7 @@ This article provides information about new features and important product updat
 
 **A new file collection permission in Microsoft 365 Defender Unified (RBAC) is now in Public Preview** </br>
 
-You can now assign a new granular permission in Microsoft 365 Defender Unified (RBAC) that allows users to collect or download files for analysis. This permission enables Microsoft Defender for Endpoint users download files directly from the file page and during a live response investigation in the live response console. 
+You can now assign a new granular permission in Microsoft 365 Defender Unified (RBAC) that allows users to collect or download files for analysis. This permission enables Microsoft Defender for Endpoint users download files directly from the file page and during a live response investigation in the live response console.
 
 You can add the new permission to a custom role by selecting it from the **Security operations** permissions group when creating the role. For more information, see [Create custom roles with Microsoft 365 Defender RBAC](./create-custom-rbac-roles.md).
 
