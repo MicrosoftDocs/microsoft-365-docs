@@ -28,7 +28,7 @@ Before you can use Microsoft Syntex eSignature, it must be configured in the Mic
 
 ### Licensing
 
-Before you can use Syntex eSignature, you must first enter your Azure subscription in [Syntex pay-as-you-go](syntex-azure-billing.md). Syntex eSignature is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md). (Billing isn't activated during this preview.)
+Before you can use Syntex eSignature, you must first link your Azure subscription in [Syntex pay-as-you-go](syntex-azure-billing.md). Syntex eSignature is billed based on the [type and number of transactions](syntex-pay-as-you-go-services.md). (Billing isn't activated during this preview.)
 
 ### Permissions
 
@@ -42,11 +42,13 @@ You must have Global admin or SharePoint admin permissions to be able to access 
 
 3. On the **Manage Microsoft Syntex** page, select **Syntex eSignature**.
 
-4. On the **Syntex eSignature** page, select **Select libraries** to choose which library or libraries for which this service should be enabled.
+4. On the **Syntex eSignature** page:
 
-    To restrict user access to this service, select **No SharePoint libraries** or **Libraries in selected sites** and follow the instructions to either select the sites or upload a CSV listing a maximum of 100 sites.
+    a. Choose which site or sites this service should be enabled for.
 
-5. Select **Turn on**.
+    b. To restrict user access to this service, select **No sites** or **Selected sites** and follow the instructions to either select the sites or upload a CSV listing a maximum of 100 sites. You can then manage site access permissions for the sites you selected.
+
+    c. Select **Save**.
 
 ### Turn off Syntex eSignature
 
