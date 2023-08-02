@@ -146,6 +146,8 @@
       items: 
         - name: Overview 
           href: content-assembly.md
+        - name: Admin setup 
+          href: content-assembly-setup.md
         - name: Create a modern template
           href: content-assembly-modern-template.md
         - name: Map template fields to library columns
