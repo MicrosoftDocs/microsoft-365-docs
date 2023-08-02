@@ -480,6 +480,9 @@ To create customized quarantine notifications for up to three languages, do the 
 
       Although this box is in the middle of the page, you need to select it first. If you enter values in the **Sender display name**, **Subject**, or **Disclaimer** boxes before you select the language value, the other values are removed and you start over when you select the language value.
 
+      > [!NOTE]
+      > The language value **English** maps to every English language code except en-US. If you have users with en-US mailboxes only, use the value **Default**. If you have a mix of mailboxes with en-US and other English languages codes (en-GB, en-CA, en-AU, etc.), use the language value **Default** in one customized quarantine notification, and the language value **English** in another customized quarantine notification.
+
    2. Enter values for **Sender display name**, **Subject**, and **Disclaimer**. The values must be unique for each language. If you try to reuse a value in a different language, you'll get an error when you select **Save**.
    3. Select the **Add** button.
    4. Repeat the previous steps to create a maximum of three customized quarantine notifications based on the recipient's language. An unlabeled box shows the languages that you've configured:
