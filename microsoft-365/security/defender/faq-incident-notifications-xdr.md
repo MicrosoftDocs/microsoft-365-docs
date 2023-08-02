@@ -81,7 +81,9 @@ However, once Defender Experts publish guided response actions for an incident i
 ## In other communication services
 
 | Questions | Answers |
+
 |---------|---------|
+
 | **Can I get Defender Experts updates from Microsoft 365 Defender in email?** | Once a Defender Experts analyst publishes recommended response actions to an incident, your designated incident contacts will receive a corresponding email notification to the email addresses specified in **Settings** > **Defender Experts** > **Notification contacts** in your Microsoft 365 Defender portal.
 If you have a Microsoft 365 Defender account connected to your Microsoft Sentinel account, you can also configure a Sentinel playbook to automatically send all incident updates to your designated email address(es).|
 | **Can I get Defender Experts updates from Microsoft 365 Defender in Microsoft Teams?** | While direct availability to Teams is not provided within Microsoft 365 Defender, a two-way chat functionality is accessible through an incident's **Guided response** flyout panel in your Microsoft 365 Defender portal.
