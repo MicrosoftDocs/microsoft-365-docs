@@ -22,7 +22,7 @@ search.appverid: met150
 ms.date: 05/29/2023
 ---
 
-# Frequently asked questions
+# General information on Defender Experts for XDR service
 
 **Applies to:**
 
