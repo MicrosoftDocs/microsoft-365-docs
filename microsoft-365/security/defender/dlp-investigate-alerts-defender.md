@@ -56,7 +56,7 @@ To investigate Microsoft Purview Data Loss Prevention incidents in the Microsoft
 
 ## Before you start
 
-[Turn on alerts for all your DLP policies](/microsoft-365/compliance/dlp-configure-view-alerts-policies#alert-configuration-experience) in the <a href="https://purview.microsoft.com" target="_blank">Microsoft Purview compliance portal</a>.
+[Turn on alerts for all your DLP policies](/purview/dlp-create-deploy-policy.md) in the <a href="https://purview.microsoft.com" target="_blank">Microsoft Purview compliance portal</a>.
 
 ## Investigate DLP alerts in the Microsoft 365 Defender portal
 
