@@ -1,0 +1,9 @@
+{
+    "redirections":[
+       {
+          "source_path":"microsoft-365/syntex/syntex-copilot.md",
+          "redirect_url":"/microsoft-365/syntex/",
+          "redirect_document_id":false
+       }
+    ]
+ }
