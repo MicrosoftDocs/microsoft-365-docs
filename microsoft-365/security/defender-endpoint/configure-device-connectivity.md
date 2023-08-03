@@ -392,7 +392,7 @@ Open the Defender for Endpoint service event log using the following steps:
  :::image type="content" source="images/log-summary-event-viewer.png" alt-text="Screenshot of Event Viewer with log summary section":::
 
 
-You can also access the log by expanding **Applications and Services Logs > Microsoft > Windows > SENSE**  and select ** Operational**. 
+You can also access the log by expanding **Applications and Services Logs > Microsoft > Windows > SENSE**  and select **Operational**. 
 
 Event ID 4 tracks successful connections with MDE Command & Control channel. Verify successful connections with updated URL. 
 
