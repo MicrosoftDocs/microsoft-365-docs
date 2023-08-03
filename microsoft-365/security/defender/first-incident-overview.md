@@ -24,29 +24,23 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.date: 04/20/2021
+ms.date: 08/03/2023
 ---
 
-# Responding to your first incident
+# Responding to your first incident in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 - Microsoft 365 Defender
 
-An organization's incident response strategy determines its ability to deal with increasingly disruptive security incidents and cybercrime. While taking preventative measures is important, the ability to act quickly to contain, eradicate, and recover from detected incidents can minimize damage and business losses.
+If you’re new to using Microsoft 365 Defender, this guide outlines what you need to do and points you to other Microsoft resources to help you confidently perform your [day-to-day incident response tasks](integrate-microsoft-365-defender-secops-services.md). The intended results of using this guide are:
 
-This incident response walkthrough shows how you, as part of a security operations (SecOps) team, can perform most of the key incident response steps within Microsoft 365 Defender. Here are the steps:
+- You’ll quickly learn to use Microsoft 365 Defender to respond to incidents and alerts.
+- You’ll discover the portal’s features to aid incident investigation and remediation through the videos and tutorials.
 
-- Preparation of your security posture
-- For each incident:
-  - Step 1: Triage and analysis
-  - Step 2: Remediation (containment, eradication, and recovery)
-  - Step 3: Post-incident review
+Today’s threats on data security - business email compromise (BEC), malware like backdoors and ransomware, organizational breaches, and nation-state attacks – require quick, intelligent, and decisive action from incident responders. Tools like the Microsoft 365 Defender allow response teams to detect, triage, and investigate incidents through its single-pane-of-glass experience and find the information needed to make these timely decisions. This command center enables you to see relevant threat events across all assets (devices, identities, mailboxes, cloud apps, and more). Microsoft 365 Defender consolidated signals from the Microsoft 365 Defender protection stack, Microsoft Sentinel, and other integrated security information and event management (SIEM) solutions. Critical attack information pieced together in one portal allows you to defend your network with full context.
 
-A security incident is defined by National Institute of Standards and Technology (NIST) as "an occurrence that actually or potentially jeopardizes the confidentiality, integrity, or availability of an information system; or the information the system processes, stores, or transmits; or that constitutes a violation or imminent threat of violation of security policies, security procedures, or acceptable use policies."
-
-Incidents in Microsoft 365 Defender are the logical starting points for analysis and incident response. Analyzing and remediating incidents typically makes up most of a  (SecOps) team's tasks and time.
 
 ## Next step
 
