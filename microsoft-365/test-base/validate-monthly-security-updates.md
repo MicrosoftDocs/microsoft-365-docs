@@ -31,7 +31,8 @@ This section shows you how to set up your own scheduled tests against Windows mo
 2.  **Configure test:** Both *Out-of-Box* test and *Functional* test are supported. Selecting *Out-of-Box* leverages the officially suggested test flow and automatically generate install / uninstall / launch / close test scripts for you; *Functional* tests allow you more flexibility to set up your own test flow. You may also select both.
 3.  **Edit package:** Edit test scripts and test flow as you need.
 
-    > [!NOTE] To better mimic the update process, Test Base allows you to update from previous month’s OS (or your own image, see in [Custom Image documentation](https://aka.ms/tbcustomimage)). If you have selected Functional tests in the Configure test step, you may further decide when you would like the Windows update to happen in your test flow.
+    > [!NOTE] 
+    > To better mimic the update process, Test Base allows you to update from previous month’s OS (or your own image, see in [Custom Image documentation](https://aka.ms/tbcustomimage)). If you have selected Functional tests in the Configure test step, you may further decide when you would like the Windows update to happen in your test flow.
 
 ## Sign-up for Windows monthly security updates
 
