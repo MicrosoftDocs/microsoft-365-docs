@@ -70,7 +70,7 @@ As a tenant admin, if you want to disable the Feed, you can do so by following t
 In Microsoft 365 (previously Office.com), as a tenant admin, if you want to disable the experience there, you can contact Microsoft via a service request to turn off Microsoft Feed. This will remove the Feed icon from the left navigation of Microsoft 365.
 
 1.    [Sign in to Microsoft 365](https://admin.microsoft.com) with your Microsoft 365 admin account.
-2.    **Select Support** > **New service request.**
+2.    Select **Support** > **New service request.**
 3.    If you're in the admin center, select **Support** > **New service request.**
 4.    To re-enable the feature, you can create a **New service request.**
 
