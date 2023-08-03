@@ -25,9 +25,9 @@ This section shows you how to set up your own scheduled tests against Windows mo
 ## Prepare your package
 
 1.  **Define content:** Depending on your package type, you may select below instructions:
-   -   [Creating and Testing Binary Files on Test Base](testapplication?view=o365-worldwide)
-   -   [Test your Intune application on Test Base](testintuneapplication?view=o365-worldwide)
-   -   [Uploading a pre-built zip package](uploadapplication?view=o365-worldwide)
+   -   [Creating and Testing Binary Files on Test Base](testapplication.md)
+   -   [Test your Intune application on Test Base](testintuneapplication?view=o365-worldwide.md)
+   -   [Uploading a pre-built zip package](uploadapplication?view=o365-worldwide.md)
 2.  **Configure test:** Both *Out-of-Box* test and *Functional* test are supported. Selecting *Out-of-Box* leverages the officially suggested test flow and automatically generate install / uninstall / launch / close test scripts for you; *Functional* tests allow you more flexibility to set up your own test flow. You may also select both.
 3.  **Edit package:** Edit test scripts and test flow as you need.
 
@@ -44,8 +44,8 @@ Then, you may specify the Windows product(s) you want to test against from the d
 Your selection registers your application for automatic test runs against the B release of Windows monthly security updates of selected product(s).
 
 -   For customers who have Default Access customers on Test Base, their applications are validated against the final release version of the B release security updates, starting from Patch Tuesday.
--   For early validation before the official release, you may request to become a Full Access customer on Test Base. Your applications would be validated against the pre-release versions of the B release security updates, starting up to 3-weeks before prior to Patch Tuesday. This allows more lead time to take proactive steps in resolving any issues found during testing before in advance of the final release on Patch Tuesday. (How to become a Full Access customer? Please refer to [Request to change access level \| Microsoft Docs](accesslevel?view=o365-worldwide))
--   To protect your devices from unpatched vulnerabilities, Microsoft also offers more types of update releases other than B release security updates (See in [Update release cycle for Windows clients](../../windows/deployment/update/release-cycle)). If you would like to test against optional non-security preview releases, please contact us via [testbasepreview@microsoft.com](mailto:testbasepreview@microsoft.com).
+-   For early validation before the official release, you may request to become a Full Access customer on Test Base. Your applications would be validated against the pre-release versions of the B release security updates, starting up to 3-weeks before prior to Patch Tuesday. This allows more lead time to take proactive steps in resolving any issues found during testing before in advance of the final release on Patch Tuesday. (How to become a Full Access customer? Please refer to [Request to change access level \| Microsoft Docs](accesslevel.md))
+-   To protect your devices from unpatched vulnerabilities, Microsoft also offers more types of update releases other than B release security updates (See in [Update release cycle for Windows clients](../../windows/deployment/update/release-cycle.md)). If you would like to test against optional non-security preview releases, please contact us via [testbasepreview@microsoft.com](mailto:testbasepreview@microsoft.com).
 -   If the OS you’re looking for didn’t show up in our current supported product list, feel free to [Let us know your request](https://forms.office.com/r/ZeGihXBXHk)).
 
 ## Check test results for monthly security updates
