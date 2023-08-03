@@ -38,7 +38,7 @@ Microsoft Defender for Identity contributes identity focused information into th
 
 ## Converged experiences in Microsoft 365 Defender
 
-[Microsoft 365 Defender](https://security.microsoft.com) combines security capabilities that protect, detect, investigate, and respond to email, collaboration, identity, and device threats, and now includes all functionality provided in the legacy, classic Defender for Identity portal.
+[Microsoft 365 Defender](https://security.microsoft.com) combines security capabilities that protect, detect, investigate, and respond to email, collaboration, identity, and device threats, and now includes all functionality provided in the [legacy, classic Defender for Identity portal](/previous-versions/defender-for-identity).
 
 While data placement might differ from the classic Defender for Identity portal, your data is now integrated into Microsoft 365 Defender pages so that you can view your data across all of your monitored entities.
 
@@ -111,3 +111,4 @@ For more information, see:
 - [Microsoft 365 Defender](microsoft-365-defender.md)
 - [Microsoft Defender for Identity](/defender-for-identity/)
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+
