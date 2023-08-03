@@ -41,7 +41,7 @@ Microsoft Secure Score can be found at <https://security.microsoft.com/securesco
 
 Previously, only Azure Active Directory global roles (such as Global Administrators) could access Microsoft Secure Score. Now, you'll be able to control access and grant granular permissions for the Microsoft Secure Score experience as part of the Microsoft 365 Defender Unified RBAC model.  
 
-You can add the new permission and choose the data sources the user has access to by selecting the **Security posture** permissions group when creating the role. For more information, see [Create custom roles with Microsoft 365 Defender RBAC](./create-custom-rbac-roles.md). Users will see Secure Score data for the data sources they have permissions for.
+You can add the new permission and choose the data sources the user has access to by selecting the **Security posture** permissions group when creating the role. For more information, see [Create custom roles with Microsoft 365 Defender Unified RBAC](./create-custom-rbac-roles.md). Users will see Secure Score data for the data sources they have permissions to.
 
 A new data source **Secure Score – Additional data source** is also available.  Users with permissions to this data source, will have access to additional data within the Secure score dashboard.
 
