@@ -450,7 +450,7 @@
               href: m365d-permissions.md
             - name: Custom roles in role-based access 
               href: custom-roles.md
-            - name: Manage permissions with Microsoft 365 Defender RBAC
+            - name: Manage permissions with Microsoft 365 Defender Unified RBAC
               items: 
               - name: Overview
                 href: manage-rbac.md
@@ -458,7 +458,7 @@
                 href: create-custom-rbac-roles.md
               - name: Import roles
                 href: Import-rbac-roles.md
-              - name: Activate Microsoft 365 Defender unified RBAC 
+              - name: Activate Microsoft 365 Defender Unified RBAC 
                 href: activate-defender-rbac.md
               - name: Edit and delete roles
                 href: edit-delete-rbac-roles.md
