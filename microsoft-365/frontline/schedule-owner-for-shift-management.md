@@ -1,9 +1,8 @@
 ---
 title: Manage schedule owners for shift management
-author: lanachin
-ms.author: v-lanachin
-ms.reviewer: aaku
-manager: samanro
+author: lana-chin
+ms.author: v-chinlana
+manager: serdars
 ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
