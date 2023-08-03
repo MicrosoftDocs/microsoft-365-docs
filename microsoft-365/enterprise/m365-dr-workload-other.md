@@ -209,7 +209,7 @@ Please refer to [Data Residency - Viva Engage | Microsoft Learn](/viva/engage/ma
 | HM | Heard and Mcdonald Islands | AMER<sup>3</sup>| AMER<sup>3</sup>| AMER<sup>3</sup>|
 | VA | Holy See (Vatican City State) | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | HN | Honduras | AMER<sup>3</sup>| AMER<sup>3</sup>| AMER<sup>3</sup>|
-| HK | Hong Kong, SAR China | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
+| HK | Hong Kong SAR | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
 | HU | Hungary | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | IS | Iceland | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | IN | India | APC<sup>2</sup>| APC<sup>2</sup>| IND<sup>7</sup>|
@@ -240,7 +240,7 @@ Please refer to [Data Residency - Viva Engage | Microsoft Learn](/viva/engage/ma
 | LI | Liechtenstein | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | LT | Lithuania | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | LU | Luxembourg | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
-| MO | Macao, SAR China | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
+| MO | Macao, SAR | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
 | MG | Madagascar | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | MW | Malawi | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | MY | Malaysia | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
