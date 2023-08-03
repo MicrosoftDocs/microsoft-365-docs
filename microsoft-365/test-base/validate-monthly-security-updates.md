@@ -26,8 +26,8 @@ This section shows you how to set up your own scheduled tests against Windows mo
 
 1.  **Define content:** Depending on your package type, you may select below instructions:
    -   [Creating and Testing Binary Files on Test Base](testapplication.md)
-   -   [Test your Intune application on Test Base](testintuneapplication?view=o365-worldwide.md)
-   -   [Uploading a pre-built zip package](uploadapplication?view=o365-worldwide.md)
+   -   [Test your Intune application on Test Base](testintuneapplication.md)
+   -   [Uploading a pre-built zip package](uploadapplication.md)
 2.  **Configure test:** Both *Out-of-Box* test and *Functional* test are supported. Selecting *Out-of-Box* leverages the officially suggested test flow and automatically generate install / uninstall / launch / close test scripts for you; *Functional* tests allow you more flexibility to set up your own test flow. You may also select both.
 3.  **Edit package:** Edit test scripts and test flow as you need.
 
