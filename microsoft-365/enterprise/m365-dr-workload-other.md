@@ -29,7 +29,7 @@ Use the following guidance to determine where your data is located. Please refer
 Please refer to [Azure Active Directory Data Locations](https://aka.ms/aaddatamap).
 
 ### Forms
-Tenants in EU member Countries maintain data in Macro Region Geography 1 – EMEA. All other tenants have customer data stored in the United States, except Australia. For customers in Australia, Microsoft Forms customer data will be stored at rest in Australia for all new tenants using Forms and existing tenants that have not previously used Forms. 
+Tenants in EU member Countries/regions maintain data in Macro Region Geography 1 – EMEA. All other tenants have customer data stored in the United States, except Australia. For customers in Australia, Microsoft Forms customer data will be stored at rest in Australia for all new tenants using Forms and existing tenants that have not previously used Forms. 
 
 ### Intune
 Refer to endpoint.microsoft.com, Tenant Administration | Tenant Status for existing tenants. If you do not have an existing tenant, create a trial tenant and provision Intune. Microsoft will not store Intune customer data at rest outside the stated geo, except if:
@@ -209,7 +209,7 @@ Please refer to [Data Residency - Viva Engage | Microsoft Learn](/viva/engage/ma
 | HM | Heard and Mcdonald Islands | AMER<sup>3</sup>| AMER<sup>3</sup>| AMER<sup>3</sup>|
 | VA | Holy See (Vatican City State) | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | HN | Honduras | AMER<sup>3</sup>| AMER<sup>3</sup>| AMER<sup>3</sup>|
-| HK | Hong Kong, SAR China | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
+| HK | Hong Kong SAR | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
 | HU | Hungary | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | IS | Iceland | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | IN | India | APC<sup>2</sup>| APC<sup>2</sup>| IND<sup>7</sup>|
@@ -240,7 +240,7 @@ Please refer to [Data Residency - Viva Engage | Microsoft Learn](/viva/engage/ma
 | LI | Liechtenstein | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | LT | Lithuania | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | LU | Luxembourg | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
-| MO | Macao, SAR China | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
+| MO | Macao, SAR | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
 | MG | Madagascar | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | MW | Malawi | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | MY | Malaysia | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
