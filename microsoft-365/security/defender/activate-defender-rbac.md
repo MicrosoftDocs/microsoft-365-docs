@@ -1,10 +1,7 @@
 ---
-title: Activate Microsoft 365 Defender Unified role-based access control (URBAC)
+title: Activate Microsoft 365 Defender Unified role-based access control (RBAC)
 description: Activate Microsoft 365 Defender Security unified role-based access control(URBAC)
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
@@ -21,7 +18,7 @@ ms.reviewer:
 search.appverid: met150
 ---
 
-# Activate Microsoft 365 Defender Unified role-based access control (URBAC)
+# Activate Microsoft 365 Defender Unified role-based access control (RBAC)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,11 +31,11 @@ search.appverid: met150
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-For the Microsoft 365 Defender security portal to start enforcing the permissions and assignments configured in your new [custom roles](create-custom-rbac-roles.md) or [imported roles](import-rbac-roles.md) you must activate the Microsoft 365 Defender URBAC model for some or all of your workloads.
+For the Microsoft 365 Defender security portal to start enforcing the permissions and assignments configured in your new [custom roles](create-custom-rbac-roles.md) or [imported roles](import-rbac-roles.md) you must activate the Microsoft 365 Defender Unified RBAC model for some or all of your workloads.
 
-## Activate Microsoft 365 Defender URBAC
+## Activate Microsoft 365 Defender Unified RBAC
 
-The following steps guide you on how to activate the Microsoft 365 Defender URBAC model. You can activate your workloads in the following ways:
+The following steps guide you on how to activate the Microsoft 365 Defender Unified RBAC model. You can activate your workloads in the following ways:
 
 1. [Activate in the permissions and roles page](#activate-from-the-permissions-and-roles-page)
 2. [Activate in Microsoft 365 Defender settings](#activate-in-microsoft-365-defender-settings)
@@ -86,15 +83,15 @@ Follow these steps to activate your workloads directly in Microsoft 365 Defender
 You have now successfully activated (or deactivated) that workload.
 
 > [!NOTE]
-> The Microsoft 365 Defender URBAC model only impacts the Microsoft 365 Defender security portal. It does not impact the [Microsoft Purview Compliance center](https://compliance.microsoft.com) or the [Exchange Admin Center](https://admin.exchange.microsoft.com).
+> The Microsoft 365 Defender Unified RBAC model only impacts the Microsoft 365 Defender security portal. It does not impact the [Microsoft Purview Compliance center](https://compliance.microsoft.com) or the [Exchange Admin Center](https://admin.exchange.microsoft.com).
 
-## Deactivate Microsoft 365 Defender URBAC
+## Deactivate Microsoft 365 Defender Unified RBAC
 
-You can deactivate Microsoft 365 Defender URBAC and revert to the individual RBAC models from Microsoft Defender for Endpoint, Microsoft Defender for Identity, and Microsoft Defender for Office 365 (Exchange Online Protection).
+You can deactivate Microsoft 365 Defender Unified RBAC and revert to the individual RBAC models from Microsoft Defender for Endpoint, Microsoft Defender for Identity, and Microsoft Defender for Office 365 (Exchange Online Protection).
 
 To Deactivate the workloads, repeat the steps above and select the workloads you want to deactivate. The status will be set to **Not Active**.
 
-If you deactivate a workload, the roles created and edited within Microsoft 365 Defender URBAC won't be effective and you'll return to using the previous permissions model. This will remove any access that users assigned these roles have.
+If you deactivate a workload, the roles created and edited within Microsoft 365 Defender Unified RBAC won't be effective and you'll return to using the previous permissions model. This will remove any access that users assigned these roles have.
 
 ## Next steps
 

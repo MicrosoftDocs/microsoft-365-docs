@@ -126,14 +126,14 @@ With [Microsoft 365 Defender Unified role-based access control(URBAC)](manage-rb
 
 You can also manage user permissions to access Secure Score data from additional data sources, such as the other products supported by Secure Score, for more information, see [Products included in Secure Score](#products-included-in-secure-score). You can view the Secure Score data from the additional data sources either alone or alongside the other data sources.
 
-To start using Microsoft 365 Defender URBAC to manage your Secure Score permissions, see [Microsoft 365 Defender Unified role-based access control(URBAC)](manage-rbac.md).
+To start using Microsoft 365 Defender Unified RBAC to manage your Secure Score permissions, see [Microsoft 365 Defender Unified role-based access control(URBAC)](manage-rbac.md).
 
 > [!NOTE]
 > Currently, the model is only supported in the Microsoft 365 Defender portal. If you want to use GraphAPI (for example, for internal dashboards or Defender for Identity Secure Score) you should continue to use Azure Active Directory roles. Support GraphAPI is planned at a later date.
 
 ### Azure Active Directory global roles permissions
 
-Azure Active Directory global roles (for example, Global Administrator) can still be used to access Secure Score. Users who have the supported Azure Active Directory global roles, but are not assigned to a custom role in Microsoft 365 Defender URBAC, will continue to have access to view (and manage where permitted) Secure Score data as outlined below:
+Azure Active Directory global roles (for example, Global Administrator) can still be used to access Secure Score. Users who have the supported Azure Active Directory global roles, but are not assigned to a custom role in Microsoft 365 Defender Unified RBAC, will continue to have access to view (and manage where permitted) Secure Score data as outlined below:
 
 The following roles have read and write access and can make changes, directly interact with Secure Score, and can assign read-only access to other users:
 
