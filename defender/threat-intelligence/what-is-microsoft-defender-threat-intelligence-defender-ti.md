@@ -77,7 +77,7 @@ Vulnerability Articles also include a Defender TI Priority Score and severity in
 
 ## Reputation scoring
 
-Defender TI provides proprietary reputation scores for any Host, Domain, or IP Address. Whether validating the reputation of a known or unknown entity, this score helps users quickly understand any detected ties to malicious or suspicious infrastructure. The platform provides quick information about the activity of these entities, such as First and Last Seen timestamps, ASN, country, associated infrastructure, and a list of rules that impact the reputation score when applicable.
+Defender TI provides proprietary reputation scores for any Host, Domain, or IP Address. Whether validating the reputation of a known or unknown entity, this score helps users quickly understand any detected ties to malicious or suspicious infrastructure. The platform provides quick information about the activity of these entities, such as First and Last Seen timestamps, ASN, country/region, associated infrastructure, and a list of rules that impact the reputation score when applicable.
 
 ![Reputation Summary Card](media/reputationSummaryCard.png)
 
