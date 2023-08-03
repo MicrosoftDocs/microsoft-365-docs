@@ -1,6 +1,6 @@
 ---
 title: Activate Microsoft 365 Defender Unified role-based access control (RBAC)
-description: Activate Microsoft 365 Defender Security unified role-based access control(URBAC)
+description: Activate Microsoft 365 Defender Security unified role-based access control(RBAC)
 ms.service: microsoft-365-security
 ms.author: siosulli
 author: siosulli
@@ -13,7 +13,7 @@ ms.collection:
 ms.custom: 
 ms.topic: how-to
 ms.subservice: mde
-ms.date: 11/10/2022
+ms.date: 08/03/2023
 ms.reviewer: 
 search.appverid: met150
 ---
@@ -59,7 +59,7 @@ You can activate your workloads in two ways from the Permissions and roles page:
     :::image type="content" source="../../media/defender/m365-defender-rbac-activate-workload-selection.png" alt-text="Screenshot of the choose workloads to activate screen" lightbox="../../media/defender/m365-defender-rbac-activate-workload-selection.png":::
 
     > [!NOTE]
-    > The **Activate workloads** button is only available when there is it at least one workload that's not active for URBAC.
+    > The **Activate workloads** button is only available when there is it at least one workload that's not active for Microsoft 365 Defender Unified RBAC.
 
 2. **Workload settings**
     - Select **Workload settings**.

@@ -1,10 +1,7 @@
 ---
 title: Microsoft 365 Defender Unified role-based access control (RBAC)
-description: Manage permissions and access to Microsoft 365 Defender Security portal experiences using unified role-based access control (URBAC)
+description: Manage permissions and access to Microsoft 365 Defender Security portal experiences using unified role-based access control (RBAC)
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
@@ -81,7 +78,7 @@ All permissions listed within the Microsoft 365 Defender Unified RBAC model alig
 
 You must activate the workloads in Microsoft 365 Defender to use the Microsoft 365 Defender Unified RBAC model. Until activated, Microsoft 365 Defender will continue to respect the existing RBAC models. For more information, see [Activate Microsoft 365 Defender Unified RBAC](activate-defender-rbac.md).
 
-When you activate some or all of your workloads to use the new permission model, the roles and permissions for these workloads will be fully controlled by the Microsoft 365 Defender  URBAC model in the Microsoft 365 Defender portal.
+When you activate some or all of your workloads to use the new permission model, the roles and permissions for these workloads will be fully controlled by the Microsoft 365 Defender Unified RBAC model in the Microsoft 365 Defender portal.
 
 ## Start using Microsoft 365 Defender Unified RBAC model
 

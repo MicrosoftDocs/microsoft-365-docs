@@ -2,9 +2,6 @@
 title: Import roles to Microsoft 365 Defender Unified role-based access control (RBAC)
 description: Create custom Microsoft 365 Defender Security portal role-based access control (RBAC)
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
@@ -16,7 +13,7 @@ ms.collection:
 ms.custom: 
 ms.topic: how-to
 ms.subservice: mde
-ms.date: 11/10/2022
+ms.date: 08/03/2023
 ms.reviewer: 
 search.appverid: met150
 ---

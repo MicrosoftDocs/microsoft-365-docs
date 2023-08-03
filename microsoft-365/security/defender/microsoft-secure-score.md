@@ -1,10 +1,8 @@
 ---
 title: Microsoft Secure Score
 description: Describes Microsoft Secure Score in the Microsoft 365 Defender portal, how to improve your security posture, and what security admins can expect.
-keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, Microsoft 365 Defender portal, recommended actions
 ms.service: microsoft-365-security
 ms.subservice: m365d
-ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
   - NOCSH
@@ -20,10 +18,7 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
-ms.custom:
-  - seo-marvel-apr2020
-  - seo-marvel-jun2020
-ms.date: 02/16/2021
+ms.date: 08/03/2023
 ---
 
 # Microsoft Secure Score
@@ -120,13 +115,13 @@ If you turn on security defaults, you'll be awarded full points for the followin
 
 ## Secure Score permissions
 
-### Manage permissions with Microsoft 365 Defender Unified role-based access control(URBAC)
+### Manage permissions with Microsoft 365 Defender Unified role-based access control(RBAC)
 
-With [Microsoft 365 Defender Unified role-based access control(URBAC)](manage-rbac.md), you can create custom roles with specific permissions for Secure Score. This allows you to control which users have access to Secure Score data, the products for which they will see Secure Score data (for example, Microsoft Defender for Endpoint) and their permission level to the data.
+With [Microsoft 365 Defender Unified role-based access control(RBAC)](manage-rbac.md), you can create custom roles with specific permissions for Secure Score. This allows you to control which users have access to Secure Score data, the products for which they will see Secure Score data (for example, Microsoft Defender for Endpoint) and their permission level to the data.
 
 You can also manage user permissions to access Secure Score data from additional data sources, such as the other products supported by Secure Score, for more information, see [Products included in Secure Score](#products-included-in-secure-score). You can view the Secure Score data from the additional data sources either alone or alongside the other data sources.
 
-To start using Microsoft 365 Defender Unified RBAC to manage your Secure Score permissions, see [Microsoft 365 Defender Unified role-based access control(URBAC)](manage-rbac.md).
+To start using Microsoft 365 Defender Unified RBAC to manage your Secure Score permissions, see [Microsoft 365 Defender Unified role-based access control(RBAC)](manage-rbac.md).
 
 > [!NOTE]
 > Currently, the model is only supported in the Microsoft 365 Defender portal. If you want to use GraphAPI (for example, for internal dashboards or Defender for Identity Secure Score) you should continue to use Azure Active Directory roles. Support GraphAPI is planned at a later date.
@@ -152,7 +147,7 @@ The following roles have read-only access and aren't able to edit status or note
 - Global reader
 
 > [!NOTE]
-> If you want to follow the principle of least privilege access (where you only give users and groups the permissions, they need to do their job), Microsoft recommends that you remove any existing elevated Azure Active Directory global roles for users and/or security groups assigned a custom role with Secure Score permissions. This will ensure that the custom unified RBAC roles will take effect.
+> If you want to follow the principle of least privilege access (where you only give users and groups the permissions, they need to do their job), Microsoft recommends that you remove any existing elevated Azure Active Directory global roles for users and/or security groups assigned a custom role with Secure Score permissions. This will ensure that the custom Microsoft 365 Defender Unified RBAC roles will take effect.
 
 ## Risk awareness
 
