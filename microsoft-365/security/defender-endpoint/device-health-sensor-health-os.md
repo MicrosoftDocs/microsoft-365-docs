@@ -22,8 +22,6 @@ ms.subservice: mde
 ms.reviewer: mkaminska
 ---
 
-<!-- v-jweston/jweston-1 is scheduled to resume authorship Apr/May 2023.-->
-
 # Device health, Sensor health & OS report
 
 **Applies to:**
