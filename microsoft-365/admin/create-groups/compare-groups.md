@@ -1,4 +1,4 @@
-f---
+---
 title: Compare types of groups in Microsoft 365
 ms.reviewer: rahulnayak
 ms.date: 07/18/2023
