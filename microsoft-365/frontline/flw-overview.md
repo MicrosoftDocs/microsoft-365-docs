@@ -2,9 +2,9 @@
 title: Get started with Microsoft 365 for frontline workers
 description: Learn how you can use Microsoft 365 and Teams to empower the frontline workers in your organization.
 search.appverid: MET150
-author: samanro
-ms.author: samanro
-manager: pamgreen
+author: lana-chin
+ms.author: v-chinlana
+manager: serdars
 audience: admin
 ms.topic: overview
 ms.service: microsoft-365-frontline
