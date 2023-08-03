@@ -98,7 +98,7 @@ You don't need to cancel your trial. If you don't buy the trial subscription, it
 
 - **The address and contact information for your subscription:**
 
-  - **Country** where the services will be used. You **won't** be able to change the country later, even during the sign-up process; you'll have to restart the sign-up wizard.
+  - **Country** where the services will be used. You **won't** be able to change the country/region later, even during the sign-up process; you'll have to restart the sign-up wizard.
 
   - **Email** and **phone number** so we can contact you if needed about your subscription. For example, if you forget your password, we would use this information to send you a temporary one. We also send your billing information to the email address you specify.
 
