@@ -26,7 +26,7 @@ ms.date: 07/12/2023
 ## Overview
 
 >[!IMPORTANT]
->This feature will begin rolling out for public preview in July 2023.
+>This feature will begin rolling out for public preview in July 2023. If you would like to provide feedback and improve this feature while in preview, please fill out [this form](https://forms.microsoft.com/r/DWaJXA6Dax)
 
 Frontline teams are a collection of people, content, and tools within an organization for different frontline worker locations. Membership of frontline dynamic teams is determined and managed by a set of Azure Active Directory (Azure AD) attributes. [Learn more about Azure AD attributes](/azure/active-directory/external-identities/customers/how-to-define-custom-attributes).
 
@@ -46,9 +46,14 @@ Team membership will be automatically managed over time through the power of dyn
 - Users must have a Microsoft 365 F3, F1, E1, E3, or E5 license. If a user doesn't have one of these licenses, they'll need an Azure AD P1 add-on license to leverage dynamic teams. [Learn more about frontline licensing](flw-licensing-options.md).
 - The admin running the deployment process needs Teams admin center permissions.
 - Ensure you can define your frontline workers and their work locations through data available in Azure AD. If you don't have this data in Azure AD, you can sync it through a [human capital management (HCM) connector](/azure/active-directory/app-provisioning/plan-cloud-hr-provision) or [use the PowerShell solution](deploy-teams-at-scale.md) to create teams at scale.
+- When evaluating the right solution, we recommend you do the following:
+  1. Plan your frontline deployment
+  1. Test the deploy tools (dynamic or static team creation)
+  1. Deploy to a pilot location
+  1. Deploy to a broader set of locations using a phased approach
 
-  >[!NOTE]
-  >The PowerShell solution creates static teams, which aren't managed automatically.
+     >[!NOTE]
+     >The PowerShell solution creates static teams, which aren't managed automatically.
 
 ## Set up your frontline dynamic teams
 

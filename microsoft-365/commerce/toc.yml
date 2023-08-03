@@ -46,6 +46,18 @@
       href: licenses/manage-auto-claim-policies.md
     - name: Understand subscriptions and licenses
       href: licenses/subscriptions-and-licenses.md
+- name: Manage volume licensing
+  items:
+    - name: Contracts FAQs
+      href: licenses/contracts-faq.yml
+    - name: Downloads FAQs
+      href: licenses/downloads-faq.yml
+    - name: Product keys FAQ
+      href: licenses/product-keys-faq.yml
+    - name: License Reservations FAQ
+      href: licenses/manage-license-requests-faq.yml
+    - name: Online service activation FAQ
+      href: licenses/online-service-activation-faq.yml
 - name: Bills and payments
   items: 
     - name: View your bill or invoice

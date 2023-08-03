@@ -6,7 +6,7 @@ metadata:
   ms.author: chrisda
   author: chrisda
   manager: dansimp
-  ms.date: 6/22/2023
+  ms.date: 8/2/2023
   audience: ITPro
   ms.topic: faq
 
@@ -32,6 +32,9 @@ summary: |
   - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
   This article provides frequently asked questions and answers about quarantined email messages for Microsoft 365 organizations with mailboxes in Exchange Online, or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes.
+
+  > [!NOTE]
+  > Quarantine isn't available in Microsoft 365 operated by 21Vianet.
 
   For questions and answers about anti-spam protection, see [Anti-spam protection FAQ](anti-spam-protection-faq.yml).
 
@@ -138,3 +141,13 @@ sections:
           ```
 
           After you release a message, you can't release it again.
+
+      - question: |
+          How do I notify end users about their quarantined messages?
+        answer: |
+          If [quarantine notifications](quarantine-quarantine-notifications.md) are enabled in the associated [quarantine policy](quarantine-policies.md), you can configure quarantine notifications to be sent every four hours, daily, or weekly. For more information, see [Customize all quarantine notifications](quarantine-policies.md#customize-all-quarantine-notifications).
+
+      - question: |
+          How can I find out who deleted a message from quarantine?
+        answer: |
+          See [Find who deleted a quarantined message](quarantine-admin-manage-messages-files.md#find-who-deleted-a-quarantined-message).

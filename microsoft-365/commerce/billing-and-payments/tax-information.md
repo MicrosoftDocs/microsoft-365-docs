@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: amberb, vikdesai
+ms.reviewer: jkinma, ramagane
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-business
@@ -115,7 +115,7 @@ You might qualify for VAT zero-rating if:
 
 - **You're in Armenia, Belarus, Norway, Turkey, or United Arab Emirates:** You can provide your local VAT ID. This entitles Microsoft Ireland Operations Ltd. to VAT zero-rate the transaction. However, you may have a local VAT accounting obligation, so please check with your tax advisors if you have any concerns. For instructions, see [Add your VAT ID](#add-your-vat-id).
 
-## Asia Pacific countries (APAC)
+## Asia Pacific countries/regions (APAC)
 
 If you're billed by the Microsoft Regional Sales office, "Microsoft Regional Sales Pte. Ltd." appears on your invoice, and you might be charged for any applicable value-added, sales, or similar taxes.
   
