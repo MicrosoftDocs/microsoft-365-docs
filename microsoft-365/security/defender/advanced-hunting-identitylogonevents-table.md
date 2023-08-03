@@ -64,7 +64,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `DestinationPort` | `string` | Destination port of related network communications |
 | `TargetDeviceName` | `string` | Fully qualified domain name (FQDN) of the device that the recorded action was applied to |
 | `TargetAccountDisplayName` | `string` | Display name of the account that the recorded action was applied to |
-| `Location` | `string` | City, country, or other geographic location associated with the event |
+| `Location` | `string` | City, country/region, or other geographic location associated with the event |
 | `Isp` | `string` | Internet service provider (ISP) associated with the endpoint IP address |
 | `ReportId` | `long` | Unique identifier for the event |
 | `AdditionalFields` | `string` | Additional information about the entity or event |
