@@ -92,7 +92,7 @@ This article explains what these functions look for, so you can better understan
 |Func_germany_value_added_tax_number|detects Germany value added tax number|no|
 |Func_greece_eu_ssn|detects Greece sin (AMKA)|no|
 |Func_hawaii_drivers_license_number|detects Hawaii driver's license number|no|
-|Func_hong_kong_id_card|detects Hong Kong Special Administrative Region ID card|no|
+|Func_hong_kong_id_card|detects Hong Kong ID card|no|
 |Func_hungarian_value_added_tax_number|detects Hungary value added tax number|no|
 |Func_hungary_eu_national_id_card|detects Hungary personal identification number|no|
 |Func_hungary_eu_ssn_or_equivalent|detects Hungary social security number|no|
