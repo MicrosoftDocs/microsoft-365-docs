@@ -267,8 +267,8 @@ The regulatory templates listed below may be purchased by your organization. Cer
 - Information Management Standard for Australian Government - National Archives of Australia (NAA)  
 - China - Personal Information Security Specification  
 - Cybersecurity Law of the People's Republic of China
-- Hong Kong Special Administrative Region - Code of Banking Practice and Payment Card
-- Hong Kong Special Administrative Region- Personal Data (Privacy) Ordinance  
+- Hong Kong - Code of Banking Practice and Payment Card
+- Hong Kong - Personal Data (Privacy) Ordinance  
 - India Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules
 - India - Information Technology Act  
 - [Reserve Bank of India Cyber Security Framework](/compliance/regulatory/offering-rbi-irdai-india)  
