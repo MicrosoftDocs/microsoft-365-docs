@@ -1,9 +1,9 @@
 ---
 title: Use PowerShell to manage your Shifts connection to UKG Dimensions
-author: samanro
-ms.author: samanro
+author: lana-chin
+ms.author: v-chinlana
+manager: serdars
 ms.reviewer: imarquesgil
-manager: pamgreen
 ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline

@@ -1,9 +1,9 @@
 ---
 title: Manage devices for frontline workers
-author: samanro
-ms.author: samanro
+author: lana-chin
+ms.author: v-chinlana
+manager: serdars
 ms.reviewer: mabolan
-manager: samanro
 ms.topic: conceptual
 audience: admin
 ms.service: microsoft-365-frontline
