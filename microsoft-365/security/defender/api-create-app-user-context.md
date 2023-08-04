@@ -119,7 +119,7 @@ $AppClientId="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" # Paste your application (cl
 $MsalParams = @{
    ClientId = $AppClientId
    TenantId = $TenantId
-   Scopes   = 'https://graph.microsoft.com/User.Read.All','https://graph.microsoft.com/Files.ReadWrite'
+   Scopes   = 'https://graph.microsoft.com/User.Read.All','https://graph.microsoft.com/Files.ReadWrite','https://api.securitycenter.windows.com/AdvancedQuery.Read'
 }
 
 $MsalResponse = Get-MsalToken @MsalParams
