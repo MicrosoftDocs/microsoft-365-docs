@@ -1,15 +1,11 @@
 ---
 title: Attack surface reduction rules reference
 description: Lists details about Microsoft Defender for Endpoint (MDE) attack surface reduction (ASR) rules on a per-rule basis.
-keywords: Microsoft Attack surface reduction rules, Microsoft Defender for Endpoint ASR rules, ASR rules list, ASR, asr rules, hips, host intrusion prevention system, protection rules, anti-exploit rules, antiexploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules, ASR rule description
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
 audience: ITPro
-author: jweston-1
+author: dansimp
 ms.author: dansimp
 ms.reviewer: oogunrinde, sugamar,
 manager: dansimp
@@ -18,7 +14,7 @@ ms.topic: reference
 ms.collection: 
 - m365-security
 - tier2
-ms.date: 04/11/2023
+ms.date: 08/04/2023
 search.appverid: met150
 ---
 
@@ -76,7 +72,7 @@ For the easiest method to enable the standard protection rules, see: [Simplified
 
 Microsoft Defender Antivirus exclusions apply to some Microsoft Defender for Endpoint capabilities, such as some of the attack surface reduction (ASR) rules.
 
-Following is a list of ASR rules that honor Microsoft Defender Antivirus exclusions:
+The following ASR rules DO NOT honor Microsoft Defender Antivirus exclusions:
 
 | ASR rules name: |
 |:---|
@@ -242,10 +238,6 @@ The **Block abuse of exploited vulnerable signed drivers** rule doesn't block a 
 -->
 
 Intune Name: `Block abuse of exploited vulnerable signed drivers`
-
-Configuration Manager name: Not yet available
-  
-GUID:  `56a863a9-875e-4185-98a7-b882c64b5ce5`
 
 Advanced hunting action type:
 
@@ -545,6 +537,8 @@ Office VBA enables Win32 API calls. Malware can abuse this capability, such as [
 Supported operating systems:
 
 - [Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
+- [Windows 11](/windows/whats-new/whats-new-windows-11-version-22h2)
+- [Windows Server 2022](/windows-server/get-started/whats-new-in-windows-server-2022)
 - [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)
@@ -599,3 +593,4 @@ Dependencies: Microsoft Defender Antivirus, Cloud Protection
 - [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md)
 - [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+

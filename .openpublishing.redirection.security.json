@@ -117,7 +117,7 @@
       },
       {
          "source_path":"microsoft-365/security/mtp/index.md",
-         "redirect_url":"microsoft-threat-protection",
+         "redirect_url":"/microsoft-365/security/defender/microsoft-365-defender",
          "redirect_document_id":false
       },
       {
@@ -134,11 +134,6 @@
          "source_path":"microsoft-365/security/mtp/advanced-hunting-tvm-secureconfigkb-table.md",
          "redirect_url":"/microsoft-365/security/mtp/advanced-hunting-devicetvmsecureconfigurationassessmentkb-table",
          "redirect_document_id":false
-      },
-      {
-         "source_path": "microsoft-365/security/defender-endpoint/deployment-strategy.md",
-         "redirect_url": "/microsoft-365/security/defender-endpoint/mde-planning-guide",
-         "redirect_document_id": false
       },
       {
          "source_path":"microsoft-365/security/mtp/advanced-hunting-tvm-softwareinventory-table.md",
@@ -1157,7 +1152,7 @@
       },
       {
          "source_path":"microsoft-365/security/office-365-security/office-365-atp.md",
-         "redirect_url":"/microsoft-365/security/office-365-security/defender-for-office-365",
+         "redirect_url":"https://support.microsoft.com/topic/what-to-do-when-you-are-blocked-from-a-site-and-believe-the-result-is-mistaken-6f41d3fd-55d3-467e-a5a4-49da4132bb9c",
          "redirect_document_id":false
       },
       {
@@ -1557,7 +1552,7 @@
       },
       {
          "source_path":"microsoft-365/security/defender-endpoint/evaluate-attack-surface-reduction.md",
-         "redirect_url":"/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment-phase-2",
+         "redirect_url":"/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment-test",
          "redirect_document_id":false
       },
       {
@@ -1832,7 +1827,7 @@
       },
       {
          "source_path":"microsoft-365/security/defender-endpoint/get-user-information.md",
-         "redirect_url":"microsoft-365/security/defender-endpoint/management-apis",
+         "redirect_url":"/microsoft-365/security/defender-endpoint/management-apis",
          "redirect_document_id":false
       },
       {
@@ -2552,7 +2547,7 @@
       },
       {
          "source_path":"microsoft-365/security/defender-endpoint/configure-email-notifications.md",
-         "redirect_url":"microsoft-365/security/defender/configure-email-notifications",
+         "redirect_url":"/microsoft-365/security/defender/configure-email-notifications",
          "redirect_document_id":false
       },
       {
@@ -2649,6 +2644,11 @@
          "source_path":"microsoft-365/security/defender-endpoint/deployment-phases.md",
          "redirect_url":"/microsoft-365/security/defender-endpoint/mde-planning-guide",
          "redirect_document_id":false
+      },
+      {
+         "source_path":"microsoft-365/security/intelligence/developer-resources.md",
+         "redirect_url":"/microsoft-365/security/intelligence/developer-faq",
+         "redirect_document_id":true
       },
       {
          "source_path":"microsoft-365/security/defender-business/get-defender-business-servers.md",
