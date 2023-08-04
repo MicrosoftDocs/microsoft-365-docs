@@ -1,9 +1,9 @@
 ---
 title: Use the Microsoft 365 admin center to manage your Shifts connection to Blue Yonder Workforce Management (Preview)
-author: daisyfell
-ms.author: daisyfeller
+author: lana-chin
+ms.author: v-chinlana
+manager: serdars
 ms.reviewer: imarquesgil
-manager: pamgreen
 ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
@@ -59,9 +59,9 @@ You can use the [Shifts connector wizard](shifts-connector-wizard.md) (Preview) 
 
 For a complete list of error messages and how to resolve them, see [List of error messages](#list-of-error-messages) later in this article.
 
-#### Edit connection instance settings
+#### Edit connection instance
 
-You'll need to choose the data that your Shifts users can see and change. You'll be given the following options for these settings:
+To **edit your connection instance settings**, you'll need to choose the data that your Shifts users can see and change. You'll be given the following options for these settings:
 
 - **Shifts users will not see provider data**: Data won't sync between Blue Yonder WFM and Shifts. <br>
 - **Shifts users can see provider data**: Data syncing is unidirectional from Blue Yonder WFM to Shifts. <br>
@@ -83,6 +83,14 @@ You'll need to choose the data that your Shifts users can see and change. You'll
 >
 > After you edit your settings, make sure you follow the steps to [Disable open shifts, open shifts requests, swap requests, and time off requests.](/microsoft-365/frontline/shifts-connector-wizard#disable-open-shifts-open-shifts-requests-swap-requests-and-time-off-requests)
 
+To **Edit your connection instance mappings**, you'll have the choice of:
+
+- Adding new mappings, by following the same process as when you first create your connection instance. See [Map Blue Yonder Workforce Management instances to teams](/microsoft-365/frontline/shifts-connector-wizard#map-blue-yonder-workforce-management-instances-to-teams)
+- Edit existent mappings, to update the Microsoft Teams to which a WFM instance is connected to.
+  If you are mapping to team in Microsoft Teams that has previously used Shifts, make sure you [Remove schedule entities from teams you want to map](/microsoft-365/frontline/shifts-connector-wizard?#remove-schedule-entities-from-teams-you-want-to-map)
+- Deleting active mappings, either by selecting to un-tick the checkbox of the WFM instance mapped, or by uploading the CSV file with the removed un-desired mapping row.
+
+  
 ## List of error messages
 
 Here's the list of error messages that you may encounter and information to help you resolve them.

@@ -1,9 +1,9 @@
 ---
 title: Use PowerShell to connect Shifts to Blue Yonder Workforce Management
-author: daisyfell
-ms.author: daisyfeller
+author: lana-chin
+ms.author: v-chinlana
+manager: serdars
 ms.reviewer: imarquesgil
-manager: pamgreen
 ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
@@ -118,16 +118,16 @@ You can use PowerShell to view an error report, change connection settings, disa
 ### Set up a connection and create a new team
 
 ```powershell
-#Map WFM instances to teams script
+#Map WFM sites to teams script
 Write-Output "Map WFM sites to teams"
 Start-Sleep 1
 
 #Ensure Teams module is at least version x
 Write-Output "Checking Teams module version"
 try {
-    Get-InstalledModule -Name "MicrosoftTeams" -MinimumVersion 5.2.0
+	Get-InstalledModule -Name "MicrosoftTeams" -MinimumVersion 5.2.0
 } catch {
-    throw
+	throw
 }
 
 #Connect to MS Graph
@@ -155,8 +155,8 @@ $retailWebApiUrl = Read-Host -Prompt 'Input retail web api url'
 $siteManagerUrl = Read-Host -Prompt 'Input site manager url'
 
 $testResult = Test-CsTeamsShiftsConnectionValidate `
-    -Name $ConnectionName `
-    -ConnectorId $BlueYonderId `
+	-Name $ConnectionName `
+	-ConnectorId $BlueYonderId `
     -ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificBlueYonderSettingsRequest `
         -Property @{
             AdminApiUrl = $adminApiUrl
@@ -169,8 +169,8 @@ $testResult = Test-CsTeamsShiftsConnectionValidate `
             LoginPwd = $plainPwd
         })
 if ($NULL -ne $testResult.Code) {
-    Write-Output $testResult
-    throw "Validation failed, conflict found"
+	Write-Output $testResult
+	throw "Validation failed, conflict found"
 }
 Write-Output "Test complete, no conflicts found"
 
@@ -180,22 +180,22 @@ $ConnectionResponse = New-CsTeamsShiftsConnection `
     -Name $ConnectionName `
     -ConnectorId $BlueYonderId `
     -ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificBlueYonderSettingsRequest `
-        -Property @{
-            AdminApiUrl = $adminApiUrl
-            SiteManagerUrl = $siteManagerUrl
-            EssApiUrl = $essApiUrl
-            RetailWebApiUrl = $retailWebApiUrl
-            CookieAuthUrl = $cookieAuthUrl
-            FederatedAuthUrl = $federatedAuthUrl
-            LoginUserName = $WfmUserName
-            LoginPwd = $plainPwd
-        })
+		-Property @{
+			AdminApiUrl = $adminApiUrl
+			SiteManagerUrl = $siteManagerUrl
+			EssApiUrl = $essApiUrl
+			RetailWebApiUrl = $retailWebApiUrl
+			CookieAuthUrl = $cookieAuthUrl
+			FederatedAuthUrl = $federatedAuthUrl
+			LoginUserName = $WfmUserName
+			LoginPwd = $plainPwd
+		})
 
 $ConnectionId = $ConnectionResponse.Id
 if ($null -ne $ConnectionId){
-    Write-Output "Successfully created connection"
+	Write-Output "Successfully created connection"
 } else {
-    throw "Connection creation failed"
+	throw "Connection creation failed"
 }
 
 #Create a connection instance
@@ -208,23 +208,22 @@ $InstanceName = Read-Host -Prompt "Input connection instance name"
 
 #Read sync scenarios for connection instance
 function GetSyncScenarioSetting {
-    param (
-        $SettingName
-    )
-    $TwoWay = New-Object System.Management.Automation.Host.ChoiceDescription '&TwoWay', 'TwoWay'
-    $Disabled = New-Object System.Management.Automation.Host.ChoiceDescription '&Disabled', 'Disabled'
-    $FromWfmToShifts = New-Object System.Management.Automation.Host.ChoiceDescription '&FromWfmToShifts', 'FromWfmToShifts'
-    $options = [System.Management.Automation.Host.ChoiceDescription[]]($TwoWay, $Disabled, $FromWfmToShifts)
-    $result = $host.ui.PromptForChoice("Set sync scenario for $SettingName", "", $options, 0)
+	param (
+		$SettingName
+	)
+	$TwoWay = New-Object System.Management.Automation.Host.ChoiceDescription '&TwoWay', 'TwoWay'
+	$Disabled = New-Object System.Management.Automation.Host.ChoiceDescription '&Disabled', 'Disabled'
+	$FromWfmToShifts = New-Object System.Management.Automation.Host.ChoiceDescription '&FromWfmToShifts', 'FromWfmToShifts'
+	$options = [System.Management.Automation.Host.ChoiceDescription[]]($TwoWay, $Disabled, $FromWfmToShifts)
+	$result = $host.ui.PromptForChoice("Set sync scenario for $SettingName", "", $options, 0)
 
-    switch ($result)
-    {
-        0 { return "TwoWay" }
-        1 { return "Disabled" }
-        2 { return "FromWfmToShifts" }
-    }
+	switch ($result)
+	{
+		0 { return "TwoWay" }
+		1 { return "Disabled" }
+		2 { return "FromWfmToShifts" }
+	}
 }
-$SyncScenarioOfferShiftRequest = GetSyncScenarioSetting "Offer Shift Request"
 $SyncScenarioOpenShift = GetSyncScenarioSetting "Open Shift"
 $SyncScenarioOpenShiftRequest = GetSyncScenarioSetting "Open Shift Request"
 $SyncScenarioShift = GetSyncScenarioSetting "Shift"
@@ -237,31 +236,30 @@ $SyncScenarioUserShiftPreference = GetSyncScenarioSetting "User Shift Preference
 #Read admin email list
 [psobject[]]$AdminEmailList = @()
 while ($true){
-    $AdminEmail = Read-Host -Prompt "Enter admin's email to receive error report"
-    $AdminEmailList += $AdminEmail
-    $title    = 'Adding another email'
-    $question = 'Would you like to add another admin email?'
-    $choices  = '&Yes', '&No'
-    $decision = $Host.UI.PromptForChoice($title, $question, $choices, 1)
-    if ($decision -eq 1) {
-        break
-    }
+	$AdminEmail = Read-Host -Prompt "Enter admin's email to receive error report"
+	$AdminEmailList += $AdminEmail
+	$title    = 'Adding another email'
+	$question = 'Would you like to add another admin email?'
+	$choices  = '&Yes', '&No'
+	$decision = $Host.UI.PromptForChoice($title, $question, $choices, 1)
+	if ($decision -eq 1) {
+		break
+	}
 }
 $InstanceResponse = New-CsTeamsShiftsConnectionInstance `
-    -ConnectionId $ConnectionId `
+	-ConnectionId $ConnectionId `
     -ConnectorAdminEmail $AdminEmailList `
     -DesignatedActorId $teamsUserId `
     -Name $InstanceName `
     -SyncFrequencyInMin $syncFreq `
-    -SyncScenarioOfferShiftRequest $SyncScenarioOfferShiftRequest `
-    -SyncScenarioOpenShift $SyncScenarioOpenShift `
-    -SyncScenarioOpenShiftRequest $SyncScenarioOpenShiftRequest `
-    -SyncScenarioShift $SyncScenarioShift `
-    -SyncScenarioSwapRequest $SyncScenarioSwapRequest `
-    -SyncScenarioTimeCard $SyncScenarioTimeCard `
-    -SyncScenarioTimeOff $SyncScenarioTimeOff `
-    -SyncScenarioTimeOffRequest $SyncScenarioTimeOffRequest `
-    -SyncScenarioUserShiftPreference $SyncScenarioUserShiftPreference
+	-SyncScenarioOpenShift $SyncScenarioOpenShift `
+	-SyncScenarioOpenShiftRequest $SyncScenarioOpenShiftRequest `
+	-SyncScenarioShift $SyncScenarioShift `
+	-SyncScenarioSwapRequest $SyncScenarioSwapRequest `
+	-SyncScenarioTimeCard $SyncScenarioTimeCard `
+	-SyncScenarioTimeOff $SyncScenarioTimeOff `
+	-SyncScenarioTimeOffRequest $SyncScenarioTimeOffRequest `
+	-SyncScenarioUserShiftPreference $SyncScenarioUserShiftPreference
 
 $InstanceId = $InstanceResponse.id
 if ($null -ne $InstanceId){
@@ -274,80 +272,80 @@ if ($null -ne $InstanceId){
 $mappings=@()
 while ($true)
 {
-    #Create a new Teams team with owner set to system account and name set to the site name
-    Write-Output "Creating a Teams team"
-    $teamsTeamName = Read-Host -Prompt "Input the Teams team name"
-    $Team = New-Team -DisplayName $teamsTeamName -Visibility "Public" -Owner $teamsUserId
-    Write-Output "Successfully created a team"
-    $TeamsTeamId=$Team.GroupId
+	#Create a new Teams team with owner set to system account and name set to the site name
+	Write-Output "Creating a Teams team"
+	$teamsTeamName = Read-Host -Prompt "Input the Teams team name"
+	$Team = New-Team -DisplayName $teamsTeamName -Visibility "Public" -Owner $teamsUserId
+	Write-Output "Successfully created a team"
+	$TeamsTeamId=$Team.GroupId
 
-    #Retrieve the list of wfm locations
-    Write-Output "Listing the WFM team sites"
-    $WfmTeamIds = Get-CsTeamsShiftsConnectionWfmTeam -ConnectorInstanceId $InstanceId
-    Write-Output $WfmTeamIds
-    if (($NULL -ne $WfmTeamIds) -and ($WfmTeamIds.Count -gt 0)){
-        [System.String]$WfmTeamId = Read-Host -Prompt "Input the ID of WFM team you want to map"
-    }
-    else {
-        throw "The WfmTeamId list is null or empty"
-    }
+	#Retrieve the list of wfm locations
+	Write-Output "Listing the WFM team sites"
+	$WfmTeamIds = Get-CsTeamsShiftsConnectionWfmTeam -ConnectorInstanceId $InstanceId
+	Write-Output $WfmTeamIds
+	if (($NULL -ne $WfmTeamIds) -and ($WfmTeamIds.Count -gt 0)){
+		[System.String]$WfmTeamId = Read-Host -Prompt "Input the ID of WFM team you want to map"
+	}
+	else {
+		throw "The WfmTeamId list is null or empty"
+	}
 
-    #Retrieve the list of WFM users and their roles
-    Write-Output "Listing WFM users and roles"
-    $WFMUsers = Get-CsTeamsShiftsConnectionWfmUser -ConnectorInstanceId $InstanceId -WfmTeamId $WfmTeamId
-    Write-Output $WFMUsers
+	#Retrieve the list of WFM users and their roles
+	Write-Output "Listing WFM users and roles"
+	$WFMUsers = Get-CsTeamsShiftsConnectionWfmUser -ConnectorInstanceId $InstanceId -WfmTeamId $WfmTeamId
+	Write-Output $WFMUsers
 
-    #Add users to the Team for Shifts
-    Write-Output "Adding users to Teams team"
-    $currentUser = Read-Host -Prompt "Input the current user's user name or AAD ID"
-    Add-TeamUser -GroupId $TeamsTeamId -User $currentUser -Role Owner
-    $failedWfmUsers=@()
-    foreach ($user in $WFMUsers) {
-        try {
-        $userEmail = $user.Name + "@" +$domain
-        Add-TeamUser -GroupId $TeamsTeamId -User $userEmail
-        } catch {
-            $failedWfmUsers+=$user
-        }
-    }
-    if($failedWfmUsers.Count -gt 0){
-        Write-Output "There are WFM users not existed in Teams tenant:"
-        Write-Output $failedWfmUsers
-    }
+	#Add users to the Team for Shifts
+	Write-Output "Adding users to Teams team"
+	$currentUser = Read-Host -Prompt "Input the current user's user name or AAD ID"
+	Add-TeamUser -GroupId $TeamsTeamId -User $currentUser -Role Owner
+	$failedWfmUsers=@()
+	foreach ($user in $WFMUsers) {
+		try {
+		$userEmail = $user.Name + "@" +$domain
+		Add-TeamUser -GroupId $TeamsTeamId -User $userEmail
+		} catch {
+			$failedWfmUsers+=$user
+		}
+	}
+	if($failedWfmUsers.Count -gt 0){
+		Write-Output "There are WFM users not existed in Teams tenant:"
+		Write-Output $failedWfmUsers
+	}
 
-    #Enable scheduling in the group
-    $RequestBody = @{
-        Enabled = $true
-        TimeZone = "America/Los_Angeles"
-    }
-    $teamUpdateUrl="https://graph.microsoft.com/v1.0/teams/"+$TeamsTeamId+"/schedule"
-    Invoke-MgGraphRequest -Uri $teamUpdateUrl -Method PUT -Body $RequestBody
+	#Enable scheduling in the group
+	$RequestBody = @{
+		Enabled = $true
+		TimeZone = "America/Los_Angeles"
+	}
+	$teamUpdateUrl="https://graph.microsoft.com/v1.0/teams/"+$TeamsTeamId+"/schedule"
+	Invoke-MgGraphRequest -Uri $teamUpdateUrl -Method PUT -Body $RequestBody
 
-    #Create a mapping of the new team to the instance
-    Write-Output "Create a mapping of the new team to the site"
-    $TimeZone = Read-Host -Prompt "Input the time zone of team mapping"
-    $mapping = @{
-        teamId = $TeamsTeamId
-        wfmTeamId = $WfmTeamId
-        timeZone = $TimeZone
-        }
-    $mappings += , $mapping
+	#Create a mapping of the new team to the instance
+	Write-Output "Create a mapping of the new team to the site"
+	$TimeZone = Read-Host -Prompt "Input the time zone of team mapping"
+	$mapping = @{
+		teamId = $TeamsTeamId
+		wfmTeamId = $WfmTeamId
+		timeZone = $TimeZone
+		}
+	$mappings += , $mapping
 
-    $title    = 'Connecting another team'
-    $question = 'Would you like to connect another team?'
-    $choices  = '&Yes', '&No'
+	$title    = 'Connecting another team'
+	$question = 'Would you like to connect another team?'
+	$choices  = '&Yes', '&No'
 
-    $decision = $Host.UI.PromptForChoice($title, $question, $choices, 1)
-    if ($decision -eq 1) {
-        break
-    }
+	$decision = $Host.UI.PromptForChoice($title, $question, $choices, 1)
+	if ($decision -eq 1) {
+		break
+	}
 }
 $batchMappingResponse = New-CsTeamsShiftsConnectionBatchTeamMap -ConnectorInstanceId $InstanceId -TeamMapping @($mappings)
 if ($null -ne $batchMappingResponse.OperationId){
-    "The mapping has begun asynchronously. To query mapping results run Get-CsTeamsShiftsConnectionOperation with the operation Id."
+	"The mapping has begun asynchronously. To query mapping results run Get-CsTeamsShiftsConnectionOperation with the operation Id."
 }
 else {
-    throw "The mapping has failed due to validation errors."
+	throw "The mapping has failed due to validation errors."
 }
 Write-Output $batchMappingResponse
 
@@ -365,9 +363,9 @@ Start-Sleep 1
 #Ensure Teams module is at least version x
 Write-Output "Checking Teams module version"
 try {
-    Get-InstalledModule -Name "MicrosoftTeams" -MinimumVersion 5.2.0
+	Get-InstalledModule -Name "MicrosoftTeams" -MinimumVersion 5.2.0
 } catch {
-    throw
+	throw
 }
 
 #Connect to MS Graph
@@ -395,23 +393,23 @@ $retailWebApiUrl = Read-Host -Prompt 'Input retail web api url'
 $siteManagerUrl = Read-Host -Prompt 'Input site manager url'
 
 $testResult = Test-CsTeamsShiftsConnectionValidate `
-    -Name $ConnectionName `
-    -ConnectorId $BlueYonderId `
-    -ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificBlueYonderSettingsRequest `
-        -Property @{
-            AdminApiUrl = $adminApiUrl
-            SiteManagerUrl = $siteManagerUrl
-            EssApiUrl = $essApiUrl
-            RetailWebApiUrl = $retailWebApiUrl
-            CookieAuthUrl = $cookieAuthUrl
-            FederatedAuthUrl = $federatedAuthUrl
-            LoginUserName = $WfmUserName
-            LoginPwd = $plainPwd
-        })
-        
+	-Name $ConnectionName `
+	-ConnectorId $BlueYonderId `
+	-ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificBlueYonderSettingsRequest `
+		-Property @{
+			AdminApiUrl = $adminApiUrl
+			SiteManagerUrl = $siteManagerUrl
+			EssApiUrl = $essApiUrl
+			RetailWebApiUrl = $retailWebApiUrl
+			CookieAuthUrl = $cookieAuthUrl
+			FederatedAuthUrl = $federatedAuthUrl
+			LoginUserName = $WfmUserName
+			LoginPwd = $plainPwd
+		})
+		
 if ($NULL -ne $testResult.Code) {
-    Write-Output $testResult
-    throw "Validation failed, conflict found"
+	Write-Output $testResult
+	throw "Validation failed, conflict found"
 }
 Write-Host "Test complete, no conflicts found"
 
@@ -421,22 +419,22 @@ $ConnectionResponse = New-CsTeamsShiftsConnection `
     -Name $ConnectionName `
     -ConnectorId $BlueYonderId `
     -ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificBlueYonderSettingsRequest `
-        -Property @{
-            AdminApiUrl = $adminApiUrl
-            SiteManagerUrl = $siteManagerUrl
-            EssApiUrl = $essApiUrl
-            RetailWebApiUrl = $retailWebApiUrl
-            CookieAuthUrl = $cookieAuthUrl
-            FederatedAuthUrl = $federatedAuthUrl
-            LoginUserName = $WfmUserName
-            LoginPwd = $plainPwd
-        })
+		-Property @{
+			AdminApiUrl = $adminApiUrl
+			SiteManagerUrl = $siteManagerUrl
+			EssApiUrl = $essApiUrl
+			RetailWebApiUrl = $retailWebApiUrl
+			CookieAuthUrl = $cookieAuthUrl
+			FederatedAuthUrl = $federatedAuthUrl
+			LoginUserName = $WfmUserName
+			LoginPwd = $plainPwd
+		})
 
 $ConnectionId = $ConnectionResponse.Id
 if ($null -ne $ConnectionId){
-    Write-Output "Successfully created connection"
+	Write-Output "Successfully created connection"
 } else {
-    throw "Connection creation failed"
+	throw "Connection creation failed"
 }
 
 #Create a connection instance
@@ -449,23 +447,22 @@ $InstanceName = Read-Host -Prompt "Input connection instance name"
 
 #Read sync scenarios for connection instance
 function GetSyncScenarioSetting {
-    param (
-        $SettingName
-    )
-    $TwoWay = New-Object System.Management.Automation.Host.ChoiceDescription '&TwoWay', 'TwoWay'
-    $Disabled = New-Object System.Management.Automation.Host.ChoiceDescription '&Disabled', 'Disabled'
-    $FromWfmToShifts = New-Object System.Management.Automation.Host.ChoiceDescription '&FromWfmToShifts', 'FromWfmToShifts'
-    $options = [System.Management.Automation.Host.ChoiceDescription[]]($TwoWay, $Disabled, $FromWfmToShifts)
-    $result = $host.ui.PromptForChoice("Set sync scenario for $SettingName", "", $options, 0)
+	param (
+		$SettingName
+	)
+	$TwoWay = New-Object System.Management.Automation.Host.ChoiceDescription '&TwoWay', 'TwoWay'
+	$Disabled = New-Object System.Management.Automation.Host.ChoiceDescription '&Disabled', 'Disabled'
+	$FromWfmToShifts = New-Object System.Management.Automation.Host.ChoiceDescription '&FromWfmToShifts', 'FromWfmToShifts'
+	$options = [System.Management.Automation.Host.ChoiceDescription[]]($TwoWay, $Disabled, $FromWfmToShifts)
+	$result = $host.ui.PromptForChoice("Set sync scenario for $SettingName", "", $options, 0)
 
-    switch ($result)
-    {
-        0 { return "TwoWay" }
-        1 { return "Disabled" }
-        2 { return "FromWfmToShifts" }
-    }
+	switch ($result)
+	{
+		0 { return "TwoWay" }
+		1 { return "Disabled" }
+		2 { return "FromWfmToShifts" }
+	}
 }
-$SyncScenarioOfferShiftRequest = GetSyncScenarioSetting "Offer Shift Request"
 $SyncScenarioOpenShift = GetSyncScenarioSetting "Open Shift"
 $SyncScenarioOpenShiftRequest = GetSyncScenarioSetting "Open Shift Request"
 $SyncScenarioShift = GetSyncScenarioSetting "Shift"
@@ -478,31 +475,30 @@ $SyncScenarioUserShiftPreference = GetSyncScenarioSetting "User Shift Preference
 #Read admin email list
 [psobject[]]$AdminEmailList = @()
 while ($true){
-    $AdminEmail = Read-Host -Prompt "Enter admin's email to receive error report"
-    $AdminEmailList += $AdminEmail
-    $title    = 'Adding another email'
-    $question = 'Would you like to add another admin email?'
-    $choices  = '&Yes', '&No'
-    $decision = $Host.UI.PromptForChoice($title, $question, $choices, 1)
-    if ($decision -eq 1) {
-        break
-    }
+	$AdminEmail = Read-Host -Prompt "Enter admin's email to receive error report"
+	$AdminEmailList += $AdminEmail
+	$title    = 'Adding another email'
+	$question = 'Would you like to add another admin email?'
+	$choices  = '&Yes', '&No'
+	$decision = $Host.UI.PromptForChoice($title, $question, $choices, 1)
+	if ($decision -eq 1) {
+		break
+	}
 }
 $InstanceResponse = New-CsTeamsShiftsConnectionInstance `
-    -ConnectionId $ConnectionId `
+	-ConnectionId $ConnectionId `
     -ConnectorAdminEmail $AdminEmailList `
     -DesignatedActorId $teamsUserId `
     -Name $InstanceName `
     -SyncFrequencyInMin $syncFreq `
-    -SyncScenarioOfferShiftRequest $SyncScenarioOfferShiftRequest `
-    -SyncScenarioOpenShift $SyncScenarioOpenShift `
-    -SyncScenarioOpenShiftRequest $SyncScenarioOpenShiftRequest `
-    -SyncScenarioShift $SyncScenarioShift `
-    -SyncScenarioSwapRequest $SyncScenarioSwapRequest `
-    -SyncScenarioTimeCard $SyncScenarioTimeCard `
-    -SyncScenarioTimeOff $SyncScenarioTimeOff `
-    -SyncScenarioTimeOffRequest $SyncScenarioTimeOffRequest `
-    -SyncScenarioUserShiftPreference $SyncScenarioUserShiftPreference
+	-SyncScenarioOpenShift $SyncScenarioOpenShift `
+	-SyncScenarioOpenShiftRequest $SyncScenarioOpenShiftRequest `
+	-SyncScenarioShift $SyncScenarioShift `
+	-SyncScenarioSwapRequest $SyncScenarioSwapRequest `
+	-SyncScenarioTimeCard $SyncScenarioTimeCard `
+	-SyncScenarioTimeOff $SyncScenarioTimeOff `
+	-SyncScenarioTimeOffRequest $SyncScenarioTimeOffRequest `
+	-SyncScenarioUserShiftPreference $SyncScenarioUserShiftPreference
 
 $InstanceId = $InstanceResponse.id
 if ($null -ne $InstanceId){
@@ -515,58 +511,58 @@ if ($null -ne $InstanceId){
 $mappings=@()
 while ($true)
 {
-    $TeamsTeamId = Read-Host -Prompt "Input the ID of the Teams team to be mapped"
-    #Clear schedule of the Teams team
-    Write-Host "Clear schedule of the existing team"
+	$TeamsTeamId = Read-Host -Prompt "Input the ID of the Teams team to be mapped"
+	#Clear schedule of the Teams team
+	Write-Host "Clear schedule of the existing team"
 
-    $entityTypeString = Read-Host -Prompt 'Input the entity types of clear schedule'
-    $Delimiters = ",", ".", ":", ";", " ", "`t"
-    $entityType = $entityTypeString -Split {$Delimiters -contains $_}
-    $entityType = $entityType.Trim()
-    $entityType = $entityType.Split('',[System.StringSplitOptions]::RemoveEmptyEntries)
-    Remove-CsTeamsShiftsScheduleRecord -TeamId $TeamsTeamId -ClearSchedulingGroup:$True -EntityType $entityType
+	$entityTypeString = Read-Host -Prompt 'Input the entity types of clear schedule'
+	$Delimiters = ",", ".", ":", ";", " ", "`t"
+	$entityType = $entityTypeString -Split {$Delimiters -contains $_}
+	$entityType = $entityType.Trim()
+	$entityType = $entityType.Split('',[System.StringSplitOptions]::RemoveEmptyEntries)
+	Remove-CsTeamsShiftsScheduleRecord -TeamId $TeamsTeamId -ClearSchedulingGroup:$True -EntityType $entityType
 
-    #Retrieve the list of wfm locations
-    Write-Output "Listing the WFM team sites"
-    $WfmTeamIds = Get-CsTeamsShiftsConnectionWfmTeam -ConnectorInstanceId $InstanceId
-    Write-Output $WfmTeamIds
-    if (($NULL -ne $WfmTeamIds) -and ($WfmTeamIds.Count -gt 0)){
-        [System.String]$WfmTeamId = Read-Host -Prompt "Input the ID of WFM team you want to map"
-    }
-    else {
-        throw "The WfmTeamId list is null or empty"
-    }
+	#Retrieve the list of wfm locations
+	Write-Output "Listing the WFM team sites"
+	$WfmTeamIds = Get-CsTeamsShiftsConnectionWfmTeam -ConnectorInstanceId $InstanceId
+	Write-Output $WfmTeamIds
+	if (($NULL -ne $WfmTeamIds) -and ($WfmTeamIds.Count -gt 0)){
+		[System.String]$WfmTeamId = Read-Host -Prompt "Input the ID of WFM team you want to map"
+	}
+	else {
+		throw "The WfmTeamId list is null or empty"
+	}
 
-    #Retrieve the list of WFM users and their roles
-    Write-Output "Listing WFM users and roles"
-    $WFMUsers = Get-CsTeamsShiftsConnectionWfmUser -ConnectorInstanceId $InstanceId -WfmTeamId $WfmTeamId
-    Write-Output $WFMUsers
+	#Retrieve the list of WFM users and their roles
+	Write-Output "Listing WFM users and roles"
+	$WFMUsers = Get-CsTeamsShiftsConnectionWfmUser -ConnectorInstanceId $InstanceId -WfmTeamId $WfmTeamId
+	Write-Output $WFMUsers
 
-    #Create a mapping of the existing team to the instance
-    Write-Host "Create a mapping of the existing team to the site"
-    $TimeZone = Read-Host -Prompt "Input the time zone of team mapping"
-    $mapping = @{
-        teamId = $TeamsTeamId
-        wfmTeamId = $WfmTeamId
-        timeZone = $TimeZone
-        }
-    $mappings += , $mapping
+	#Create a mapping of the existing team to the instance
+	Write-Host "Create a mapping of the existing team to the site"
+	$TimeZone = Read-Host -Prompt "Input the time zone of team mapping"
+	$mapping = @{
+		teamId = $TeamsTeamId
+		wfmTeamId = $WfmTeamId
+		timeZone = $TimeZone
+		}
+	$mappings += , $mapping
 
-    $title    = 'Connecting another team'
-    $question = 'Would you like to connect another team?'
-    $choices  = '&Yes', '&No'
+	$title    = 'Connecting another team'
+	$question = 'Would you like to connect another team?'
+	$choices  = '&Yes', '&No'
 
-    $decision = $Host.UI.PromptForChoice($title, $question, $choices, 1)
-    if ($decision -eq 1) {
-        break
-    }
+	$decision = $Host.UI.PromptForChoice($title, $question, $choices, 1)
+	if ($decision -eq 1) {
+		break
+	}
 }
 $batchMappingResponse = New-CsTeamsShiftsConnectionBatchTeamMap -ConnectorInstanceId $InstanceId -TeamMapping @($mappings)
 if ($null -ne $batchMappingResponse.OperationId){
-    "The mapping has begun asynchronously. To query mapping results run Get-CsTeamsShiftsConnectionOperation with the operation Id."
+	"The mapping has begun asynchronously. To query mapping results run Get-CsTeamsShiftsConnectionOperation with the operation Id."
 }
 else {
-    throw "The mapping has failed due to validation errors."
+	throw "The mapping has failed due to validation errors."
 }
 Write-Output $batchMappingResponse
 

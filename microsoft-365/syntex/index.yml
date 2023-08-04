@@ -61,7 +61,7 @@ landingContent:
             url: create-local-model.md
 
 # Card 3
-  - title: Services and features
+  - title: Syntex services
     linkLists:
       - linkListType: overview
         links:
@@ -77,12 +77,6 @@ landingContent:
             url: image-tagging-overview.md
           - text: Optical character recognition
             url: ocr-overview.md
-          - text: Annotations
-            url: annotations.md
-          - text: Content processing
-            url: content-processing-overview.md
-          - text: Content query
-            url: metadata-search.md
 
 # Card 4
   - title: Extensibility
@@ -109,8 +103,23 @@ landingContent:
         links:
           - text: Assessment tool
             url: adoption-assessment-tool.md
+          - text: Solution accelerators
+            url: site-templates.md
 
-    # Card 6
+# Card 6
+  - title: Other features
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Annotations
+            url: annotations.md
+          - text: Content query
+            url: metadata-search.md
+          - text: Content processing
+            url: content-processing-overview.md
+
+
+    # Card 7
   - title: Get support
     linkLists:
       - linkListType: overview

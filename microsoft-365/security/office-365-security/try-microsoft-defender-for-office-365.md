@@ -20,7 +20,7 @@ ms.custom:
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ROBOTS:
-ms.date: 7/12/2023
+ms.date: 7/31/2023
 ---
 
 # Try Microsoft Defender for Office 365
@@ -36,6 +36,9 @@ Before you try Defender for Office 365 Plan 2, there are some key questions that
 This article helps you answer those questions so you can try Defender for Office 365 Plan 2 in a way that best meets the needs of your organization.
 
 For a companion guide for how to use your trial, see [Trial User Guide: Microsoft Defender for Office 365](trial-user-guide-defender-for-office-365.md).
+
+> [!NOTE]
+> Trials and evaluations of Defender for Office 365 aren't available in U.S. Government organizations (Microsoft 365 GCC, GCC High, and DoD) or Microsoft 365 Education organizations.
 
 ## Overview of Defender for Office 365
 

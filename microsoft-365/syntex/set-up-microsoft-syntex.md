@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 ms.reviewer: ssquires, kkameth
 manager: pamgreen
-ms.date: 03/06/2023
+ms.date: 08/01/2023
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -55,5 +55,6 @@ The following table provides links to the specific setup instructions for each s
 |:-------|:----------------------|
 |Prebuilt document processing     | [Set up prebuilt document processing](prebuilt-setup.md) |
 |Unstructured document processing | [Set up unstructured document processing](unstructured-setup.md) |
+|Content assembly                 | [Set up content assembly](content-assembly-setup.md)  |
 |Image tagging                    | [Set up image tagging](image-tagging-setup.md)  |
 |Optical character recognition    | [Set up optical character recognition](ocr.md)  |
