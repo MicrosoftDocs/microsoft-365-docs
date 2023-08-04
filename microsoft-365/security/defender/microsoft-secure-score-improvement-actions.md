@@ -102,7 +102,7 @@ You won't be able to choose a status for Secure Score recommended actions in the
 
 #### Completed recommended actions
 
-recommended actions have a "completed" status once all possible points for the recommended action have been achieved. Completed recommended actions are confirmed though Microsoft data, and you can't change the status.
+Recommended actions have a "completed" status once all possible points for the recommended action have been achieved. Completed recommended actions are confirmed through Microsoft data, and you can't change the status.
 
 ### Assess information and review user impact
 
