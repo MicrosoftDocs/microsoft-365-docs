@@ -23,7 +23,7 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.date: 02/17/2021
+ms.date: 07/14/2023
 ---
 
 # Address false positives or false negatives in Microsoft 365 Defender
