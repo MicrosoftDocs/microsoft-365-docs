@@ -392,12 +392,11 @@ sections:
           
           1. Select **Edit service** for the affected service.
           
-        
           1. Navigate to the **Notifications** tab. 
         
           1. Uncheck the setting "Send a meeting invite to the customer, in addition to the confirmation email."
 
-             ![Screenshot of dialog box for Bookings email confirmation setting.](../media/email-confirmation-bookings.png)
+          ![Screenshot of dialog box for Bookings email confirmation setting.](../media/email-confirmation-bookings.png)
          
           1. Save the changes.
           
