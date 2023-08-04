@@ -25,7 +25,15 @@ description: Learn how to onboard trusted vendors to collaborate in Microsoft 36
 # Onboard trusted vendors to collaborate in Microsoft 365
 
 
+## Allow the vendor's domain in Azure AD B2B collaboration
 
+## Allow the vendor's domain in Azure AD B2B direct connect
+
+## Allow the vendor's domain in Teams external access
+
+
+
+## Limit who can invite guests
 
 
 
