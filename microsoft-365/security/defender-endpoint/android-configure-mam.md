@@ -274,7 +274,30 @@ Use the following steps to configure the Disable sign out:
 4. In the **Settings** page, under the **General Configuration Settings**, add **DisableSignOut** as the key and set the value as 1.
    - By default, Disable Sign Out = 0. 
    - Admin needs to make Disable Sign Out = 1 to disable the sign-out button in the app. Users will not see the sign out button once the policy is pushed to the device.
-5. Select **Next** and assign this profile to targeted devices/users.
+5. Select **Next** and assign this profile to targeted devices and users.
+
+> [!IMPORTANT]
+> This feature is in Public Preview. The following information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
+## Device Tagging
+
+Defender for Endpoint on Android enables bulk tagging the mobile devices during onboarding by allowing the admins to set up tags via Intune. Admin can configure the device tags through Intune via configuration policies and push them to user’s devices. Once the User installs and activates Defender, the client app passes the device tags to the Security Portal. The Device tags appear against the devices in the Device Inventory. 
+
+Use the following steps to configure the Device tags:
+
+1. In the Microsoft Intune admin center, go to **Apps > App configuration policies > Add > Managed apps**.
+2. Provide the policy a **name**.
+3. Under **Select Public Apps**, choose **Microsoft Defender for Endpoint** as the target app.
+4. In Settings page, select Use configuration designer and add **DefenderDeviceTag** as the key and value type as **String**.
+   - Admin can assign a new tag by adding the key **DefenderDeviceTag** and setting a value for device tag.
+   - Admin can edit an existing tag by modifying the value of the key **DefenderDeviceTag**.
+   - Admin can delete an existing tag by removing the key **DefenderDeviceTag**.
+
+5. Click Next and assign this policy to targeted devices and users.
+
+
+> [!NOTE] 
+> The Defender app needs to be opened for tags to be synced with Intune and passed to Security Portal. It may take upto 18 hours for tags to reflect in the portal.
 
 ## Related topics
 
@@ -283,3 +306,4 @@ Use the following steps to configure the Disable sign out:
 
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+
