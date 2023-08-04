@@ -117,13 +117,13 @@ You can manage your teams when changes happen in your organization.
 
 1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), choose **Teams** > **Manage frontline teams**.
 
-1. In the table, choose **Deploy**.
+2. In the table, choose **Deploy**.
 
-1. Select the **Refresh location** button, and proceed when prompted by the dialog box. This process can take several hours depending on your number of new locations.
+3. Select the **Refresh location** button, and proceed when prompted by the dialog box. This process can take several hours depending on your number of new locations.
 
     :::image type="content" source="media/dtas-refresh-locations.png" alt-text="Screenshot of the Refresh location button." lightbox="media/dtas-refresh-locations.png":::
 
-1. After your refresh completes, your setup status shows as **Complete**. You can proceed to [deploy your new teams](#deploy-your-frontline-dynamic-teams). Deployment can take several hours depending on how many new teams you're deploying.
+4. After your refresh completes, your setup status shows as **Complete**. You can proceed to [deploy your new teams](#deploy-your-frontline-dynamic-teams). Deployment can take several hours depending on how many new teams you're deploying.
 
 ### Edit your frontline team settings
 
@@ -131,8 +131,8 @@ You can manage your teams when changes happen in your organization.
 >The ability to edit your frontline team settings is coming soon.
 
 1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), choose **Teams** > **Manage frontline teams**.
-1. In the **Deploy settings** column, choose **Deploy frontline teams** .
-1. Edit your settings on this page, and then select **Save**. Your settings may take several hours to update. See the following table for the effects of updating your settings.
+2. In the **Deploy settings** column, choose **Deploy frontline teams** .
+3. Edit your settings on this page, and then select **Save**. Your settings may take several hours to update. See the following table for the effects of updating your settings.
 
 |Setting |Effect on existing frontline teams |Effect on new frontline teams |
 |--------|-----------------------------------|------------------------------|
