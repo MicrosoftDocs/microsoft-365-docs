@@ -1,4 +1,4 @@
-- name: Microsoft 365 Defender
+f- name: Microsoft 365 Defender
   href: index.yml
   expanded: true
   items: 
@@ -455,7 +455,7 @@
               - name: Overview
                 href: manage-rbac.md
               - name: What's new in Microsoft 365 Defender Unified RBAC
-                href: manage-rbac.md
+                href: whats-new-in-microsoft-defender-urbac.md
               - name: Create custom roles 
                 href: create-custom-rbac-roles.md
               - name: Import roles
