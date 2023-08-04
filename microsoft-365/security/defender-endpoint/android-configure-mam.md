@@ -276,6 +276,9 @@ Use the following steps to configure the Disable sign out:
    - Admin needs to make Disable Sign Out = 1 to disable the sign-out button in the app. Users will not see the sign out button once the policy is pushed to the device.
 5. Select **Next** and assign this profile to targeted devices and users.
 
+> [!IMPORTANT]
+> This feature is in Public Preview. The following information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
 ## Device Tagging
 
 Defender for Endpoint on Android enables bulk tagging the mobile devices during onboarding by allowing the admins to setup tags via Intune. Admin can configure the device tags through Intune via configuration policies and push them to user’s devices. Once the User installs and activates Defender, the client app passes the device tags to the Security Portal. The Device tags appear against the devices in the Device Inventory. 
