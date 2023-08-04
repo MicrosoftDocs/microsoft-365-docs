@@ -1,8 +1,8 @@
 ---
 title: Microsoft Teams Advanced Virtual Appointments activity report
-author: john-swenson
-ms.author: v-joswenson
-manager: samanro
+author: lana-chin
+ms.author: v-chinlana
+manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-frontline

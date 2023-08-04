@@ -2,10 +2,10 @@
 title: Provide initial and ongoing training to help onboard your frontline workers
 description: Learn how you can plan, build, and launch your frontline worker onboarding experience.
 ms.topic: conceptual
-author: daisyfell
-ms.author: daisyfeller
+author: lana-chin
+ms.author: v-chinlana
+manager: serdars
 audience: admin
-manager: pamgreen
 f1.keywords:
 - NOCSH
 ms.service: microsoft-365-frontline

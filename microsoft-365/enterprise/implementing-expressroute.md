@@ -163,7 +163,7 @@ For outbound traffic, the people access Microsoft 365 in one of three ways:
   
 1. Through a meet-me location in North America for the people in California.
 
-2. Through a meet-me location in Hong Kong for the people in Hong Kong.
+2. Through a meet-me location in Hong Kong Special Administrative Region for the people in Hong Kong SAR.
 
 3. Through the internet in Bangladesh where there are fewer people and no ExpressRoute circuit provisioned.
 
@@ -173,7 +173,7 @@ Similarly, the inbound network traffic from Microsoft 365 returns in one of thre
   
 1. Through a meet-me location in North America for the people in California.
 
-2. Through a meet-me location in Hong Kong for the people in Hong Kong.
+2. Through a meet-me location in Hong Kong Special Administrative Region for the people in Hong Kong SAR.
 
 3. Through the internet in Bangladesh where there are fewer people and no ExpressRoute circuit provisioned.
 
