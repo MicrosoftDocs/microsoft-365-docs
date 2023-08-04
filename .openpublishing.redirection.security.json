@@ -117,7 +117,7 @@
       },
       {
          "source_path":"microsoft-365/security/mtp/index.md",
-         "redirect_url":"microsoft-threat-protection",
+         "redirect_url":"/microsoft-365/security/defender/microsoft-365-defender",
          "redirect_document_id":false
       },
       {
@@ -1827,7 +1827,7 @@
       },
       {
          "source_path":"microsoft-365/security/defender-endpoint/get-user-information.md",
-         "redirect_url":"microsoft-365/security/defender-endpoint/management-apis",
+         "redirect_url":"/microsoft-365/security/defender-endpoint/management-apis",
          "redirect_document_id":false
       },
       {

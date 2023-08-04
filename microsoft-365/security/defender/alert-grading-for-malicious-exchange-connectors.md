@@ -22,7 +22,7 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
-ms.date: 04/05/2022
+ms.date: 02/07/2023
 ---
 
 # Alert classification for malicious exchange connectors

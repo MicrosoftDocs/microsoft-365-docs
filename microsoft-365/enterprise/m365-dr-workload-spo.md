@@ -25,7 +25,7 @@ ms.collection:
 
 Required Conditions:
 
-- _Tenant_ has a sign up country included in _Local Region Geography_, the European Union or the United States.
+- _Tenant_ has a sign up country/region included in _Local Region Geography_, the European Union or the United States.
 
 **Commitment:**
 
@@ -35,7 +35,7 @@ _For current language please refer to the [Privacy and Security Product Terms](h
 
 Required Conditions:
 
-1. _Tenant_ has a sign up country included in _Local Region Geography_ or _Expanded Local Region Geography_.
+1. _Tenant_ has a sign up country/region included in _Local Region Geography_ or _Expanded Local Region Geography_.
 1. _Tenant_ has a valid Advanced Data Residency subscription for all users in the _Tenant_.
 1. The SharePoint Online subscription customer data is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_.
 
