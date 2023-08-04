@@ -17,7 +17,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 07/12/2023
+ms.date: 08/04/2023
 
 ---
 
@@ -72,11 +72,11 @@ Team membership will be automatically managed over time through the power of dyn
 
     :::image type="content" source="media/dtas-location-attribute.png" alt-text="Screenshot of where to enter your Azure AD attribute for frontline locations." lightbox="media/dtas-location-attribute.png":::
 
-6. Define your team structure by choosing a prefix. The prefix will be applied in the "prefix-location" format for all your teams.
+6. Define your team structure by choosing a prefix. The prefix is applied using the "prefix-location" format for all your teams.
 
     :::image type="content" source="media/dtas-prefix.png" alt-text="Screenshot of the prefix, team template, and team owner account fields." lightbox="media/dtas-prefix.png":::
 
-7. Optionally, choose a team template. The team template you choose will define the channel structure for all your frontline teams. [Learn more about Teams templates](/microsoftteams/get-started-with-teams-templates-in-the-admin-console).
+7. Optionally, choose a team template. The team template you choose defines the channel structure for all your frontline teams. [Learn more about Teams templates](/microsoftteams/get-started-with-teams-templates-in-the-admin-console).
 
 8. Enter a user account object ID to be the team owner. This account will be the owner for all frontline teams. It's recommended to choose a shared account rather than an individual person.
     1. To get a user's object ID, go to the [Azure portal](https://portal.azure.com).
@@ -87,7 +87,7 @@ Team membership will be automatically managed over time through the power of dyn
 9. Review the settings, and then choose **Finish setup.**
 
     >[!NOTE]
-    >The setup can take several hours to run. You can refresh the **Manage frontline teams** page to get the latest status of your setup.
+    >Setup can take several hours to run. You can refresh the **Manage frontline teams** page to get the latest status of your setup.
 
     :::image type="content" source="media/dtas-setup-submitted.png" alt-text="Screenshot of the Manage frontline teams page with a banner showing that setup was submitted." lightbox="media/dtas-setup-submitted.png":::
 
@@ -103,7 +103,7 @@ Team membership will be automatically managed over time through the power of dyn
 
     :::image type="content" source="media/dtas-deploy-locations.png" alt-text="Screenshot of the table of locations." lightbox="media/dtas-deploy-locations.png":::
 
-4. Select **Deploy**. This process can take several hours depending on how many teams you're creating. After the deployment is completed, you'll see the number updated in the **Frontline teams** tile. On this tile, you can download a CSV file with a list of your frontline teams. If any errors occurred, you can download the error CSV file on the **Last deployment health** tile.
+4. Select **Deploy**. This process can take several hours depending on how many teams you're creating. After deployment is completed, you'll see the number updated in the **Frontline teams** tile. On this tile, you can download a CSV file with a list of your frontline teams. If any errors occurred, you can download the error CSV file on the **Last deployment health** tile.
 
     :::image type="content" source="media/dtas-view-errors.png" alt-text="Screenshot of where you can get the CSV file on the Manage frontline teams page." lightbox="media/dtas-view-errors.png":::
 
@@ -119,9 +119,9 @@ You can manage your teams when changes happen in your organization.
 
 1. In the table, choose **Deploy**.
 
-1. Select the **Refresh locations** button, and proceed when prompted by the dialog box. This process can take several hours depending on your number of new locations.
+1. Select the **Refresh location** button, and proceed when prompted by the dialog box. This process can take several hours depending on your number of new locations.
 
-    :::image type="content" source="media/dtas-refresh-locations.png" alt-text="Screenshot of the Refresh locations button." lightbox="media/dtas-refresh-locations.png":::
+    :::image type="content" source="media/dtas-refresh-locations.png" alt-text="Screenshot of the Refresh location button." lightbox="media/dtas-refresh-locations.png":::
 
 1. After your refresh completes, your setup status shows as **Complete**. You can proceed to [deploy your new teams](#deploy-your-frontline-dynamic-teams). Deployment can take several hours depending on how many new teams you're deploying.
 
@@ -132,13 +132,13 @@ You can manage your teams when changes happen in your organization.
 
 1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), choose **Teams** > **Manage frontline teams**.
 1. In the **Deploy settings** column, choose **Deploy frontline teams** .
-1. Edit your settings on this page, and then select **Save**. Your settings may take several hours to update. See the following table for the effects of updating your settings:
+1. Edit your settings on this page, and then select **Save**. Your settings may take several hours to update. See the following table for the effects of updating your settings.
 
 |Setting |Effect on existing frontline teams |Effect on new frontline teams |
 |--------|-----------------------------------|------------------------------|
 |Define your frontline Azure AD attribute. |All existing frontline teams will be members that have the new Azure AD attribute defined. |All new frontline teams members will have the new Azure AD attribute defined. |
 |Choose the values applicable to your frontline Azure AD attribute. |All existing frontline team membership will reflect your updated values. |All new teams will be populated with members who have the updated Azure AD attributes that you defined. |
-|Define your frontline locations. | Existing teams continue to persist. If a team is no longer tied a location, there will be no users in that team, and users will be put in their respective location teams. |You can create new frontline teams based on the locations defined by your new Azure AD attribute. |
+|Define your frontline locations. | Existing teams will continue to persist. If a team is no longer tied to a location, there will be no users in that team, and users will be put in their respective location teams. |You can create new frontline teams based on the locations defined by your new Azure AD attribute. |
 |Set your team name prefix. |All existing team names will be updated to reflect the prefix and location name if that was changed. |All new teams will have the updated naming convention. |
 |Select your team template. |No updates to the team structure will occur. |All new teams will use the updated team template. |
 |Select your team owner. |The team owner will be updated for all existing teams. |All new teams will have the updated team owner. |
