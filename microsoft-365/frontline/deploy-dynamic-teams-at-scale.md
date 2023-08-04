@@ -68,7 +68,7 @@ Team membership will be automatically managed over time through the power of dyn
 
     :::image type="content" source="media/dtas-frontline-attribute.png" alt-text="Screenshot of where to enter your Azure AD attribute and values for frontline workers." lightbox="media/dtas-frontline-attribute.png":::
 
-5. Select the Azure AD attribute that defines the location that your frontline employees work in. You can only choose one location attribute.
+5. Select the Azure AD attribute that defines the location your frontline employees work in. You can only choose one location attribute.
 
     :::image type="content" source="media/dtas-location-attribute.png" alt-text="Screenshot of where to enter your Azure AD attribute for frontline locations." lightbox="media/dtas-location-attribute.png":::
 
