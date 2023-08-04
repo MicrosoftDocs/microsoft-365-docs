@@ -98,7 +98,7 @@ To configure inbound settings for an organization
 
 ##### Configure outbound settings for the organization
 
-Use the outbound settings to specify which users or groups from the external organization can access resources in your organization.
+Use the outbound settings to specify which users or groups from your organization can access resources in the external organization.
 
 To configure outbound settings for an organization
 
