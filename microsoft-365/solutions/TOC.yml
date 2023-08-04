@@ -82,6 +82,8 @@
             href: allow-direct-connect-with-all-organizations.md
           - name: Collaborate across clouds
             href: collaborate-guests-cross-cloud.md
+          - name: Onboard trusted vendors
+            href: trusted-vendor-onboarding.md
           - name: Create a B2B extranet
             href: b2b-extranet.md
           - name: Trust conditional access from other organizations
