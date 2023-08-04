@@ -21,7 +21,7 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 description: "Learn how to work with Microsoft-certified solution providers (partners) to buy and manage products and services for your organization or school."
-ms.date: 08/01/2023
+ms.date: 08/03/2023
 ---
 
 # Manage Microsoft-certified solution provider partner relationships
@@ -42,13 +42,16 @@ There are several ways that a partner can work with you. Based on your stated bu
 
 | Partner type | Description | Roles |
 | ------ | ------------------- | --------- |
-| Granular delegated administrator | Partners who manage products and services for your organization or school, but who have limited access to what they can do in the Microsoft 365 admin center. Granular delegated administrator privileges (GDAP) let partners complete tasks in the admin center without having global admin permission. By giving GDAP to partners, you ensure they have the least-permissive roles and limit the risk to your organization. | Any Azure Active Directory (AD) role.<br>For more information, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference). |
+| Granular delegated administrator | Partners who manage products and services for your organization or school, but who have limited access to what they can do in the Microsoft 365 admin center. Granular delegated administrator privileges (GDAP) let partners complete tasks in the admin center without having global admin permission. By giving GDAP to partners, you ensure they have the least-permissive roles and limit the risk to your organization. | Any Azure Active Directory (AD) role.<br><br>For more information, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference). |
 | Reseller | Partners who sell Microsoft products to your organization or school. | No roles assigned. |
-| Delegated administrator | Partners who manage products and services for your organization or school. In AD, the partner is a Global Administrator for your tenant. This role lets them manage services like creating user accounts, assigning and managing licenses, and password resets. | Global admin, Helpdesk admin.<br>For more information, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference). |
-| Reseller & delegated administrator | Partners who sell and manage Microsoft products and services to your organization or school. | Global admin, Helpdesk admin.<br>For more information, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference). |
-| Partner | You give your partner a user account in your tenant, and they work with other Microsoft services on your behalf. | Assign a role to the partner on the <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.<br>For more information, see [About admin roles in the Microsoft 365 admin center](/admin/add-users/about-admin-roles). |
+| Delegated administrator, Indirect resller | Partners who manage products and services for your organization or school. In AD, the partner is a Global Administrator for your tenant. This role lets them manage services like creating user accounts, assigning and managing licenses, and password resets. | Global admin, Helpdesk admin.<br><br>For more information, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference). |
+| Independent Software Vendors |  |  |
+| Reseller & delegated administrator | Partners who sell and manage Microsoft products and services to your organization or school. | Global admin, Helpdesk admin.<br><br>For more information, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference). |
+| Partner | You give your partner a user account in your tenant, and they work with other Microsoft services on your behalf. | Assign a role to the partner on the <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.<br><br>For more information, see [About admin roles in the Microsoft 365 admin center](/admin/add-users/about-admin-roles). |
 | Advisor | Partners can reset passwords and handle support incidents for you. | No roles assigned. |
+| Microsoft OEM PC Partner |  | No roles assigned. |
 | Microsoft Products & Services Agreement (MPSA) partner | If you've worked with multiple partners through the MPSA program, you can allow them to see purchases made by each other. | No roles assigned. |
+| Original Equipment Manufacturer (OEM) | Windows Autopilot is managed and maintained by Microsoft. This service provides the backend database that associates hardware hashes with customer tenants. When an OEM registers devices for a customer, they write that data to this database and not directly to the customer's tenant. No permissions to the customer's tenant are granted or required for OEMs to register devices on the customer's behalf. | No roles assigned. |
 | Line-of-business (LOB) partner | Partners can develop, submit, and manage LOB apps specific for your organization or school. | Not available to assign. |
 
 ## Find a partner
