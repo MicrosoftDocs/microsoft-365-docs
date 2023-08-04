@@ -29,6 +29,7 @@ This section shows you how to set up your own scheduled tests against preview fe
 -   [Test your Intune application on Test Base](testintuneapplication.md)
 -   [Uploading a pre-built zip package](uploadapplication.md)
 2.  **Configure test:** Both *Out-of-Box* test and *Functional* test are supported. Selecting *Out-of-Box* will leverage the officially suggested test flow and automatically generate install / uninstall / launch / close test scripts for you; *Functional* tests will allow you more flexibility to set up your own test flow. You may also select both.
+
 3.  **Edit package:** Edit test scripts and test flow as you need.
     > [!Note] 
     > All your tests would be directly launched against the latest Windows OS with new features. No need to add any additional test script for system feature enablement. Thus, feature update testing would be more economical for you if you only want to validate potential compatibility issues against Windows new features since you won’t spend time in update/upgrade validation.
