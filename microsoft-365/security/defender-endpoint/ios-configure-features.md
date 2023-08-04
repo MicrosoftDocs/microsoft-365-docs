@@ -363,13 +363,21 @@ This configuration is available for both the enrolled (MDM) devices as well as u
 
 **For unenrolled devices(MAM)**
 
-1. In the Microsoft Intune admin center, navigate to Apps \> App configuration policies \> Add \> Managed apps.
+1. In the Microsoft Intune admin center, navigate to Apps > App configuration policies > Add > Managed apps.
+
 1. Give the policy a name.
+
 1. Under the Select Public Apps, choose Microsoft Defender for Endpoint as the target app.
+
 1. In Settings page, add **DisableSignOut** as the key and value as **true**, under the General Configuration Settings.
+
 1. By default, DisableSignOut = false.
+
 1. Admin needs to make **DisableSignOut = true** to disable the sign-out button in the app. Users will not see the sign out button once the policy is pushed.
+
 1. Click Next and assign this policy to targeted devices/users.
+
+## Device Tagging
 
 ## Configure option to send in-app feedback
 
@@ -398,3 +406,4 @@ Use the following steps to configure the option to send feedback data to Microso
 
 Phishing websites impersonate trustworthy websites for the purpose of obtaining your personal or financial information. Visit the [Provide feedback about network protection](https://www.microsoft.com/wdsi/filesubmission/exploitguard/networkprotection) page to report a website that could be a phishing site.
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+
