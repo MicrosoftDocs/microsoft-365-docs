@@ -25,7 +25,7 @@ The structured and freeform document processing service for Microsoft Syntex is 
 
 ### Permissions
 
-You must have Global admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up structured document processing in Syntex.
+You must have Global admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up structured and freeform document processing in Syntex.
 
 ### Licensing
 
@@ -88,6 +88,6 @@ Your tenant will come with a default Power Platform environment. If you plan to 
 
 You also need to [allocate AI Builder credits](/power-platform/admin/capacity-add-on) to the custom environment before you can create document processing models.
 
-When using a custom environment, model creators must be assigned the Environment Maker security role and model users must be assigned the Basic User security role. See [Assign a security role to a user](/power-platform/admin/assign-security-roles) for more information. You don't need to assign users this role if you are using the default Power Platform environment.
+When using a custom environment, model creators must be assigned the Environment Maker security role and model users must be assigned the Basic User security role. For more information, see [Assign a security role to a user](/power-platform/admin/assign-security-roles). You don't need to assign users this role if you're using the default Power Platform environment.
 
 Users creating models in a [content center site](create-a-content-center.md) must be site members. Users creating models locally outside the content center must be site owners of those sites.
