@@ -31,7 +31,7 @@ appliesto:
 In Exchange Online Protection (EOP) and Microsoft Defender for Office 365, _quarantine policies_ allow admins to define the user experience for quarantined messages:
 
 - What users are allowed to do to their own quarantined messages (messages where they're a recipient) based on why the message was quarantined.
-- Whether users receive periodic notifications about their quarantined messages via [quarantine notifications](quarantine-quarantine-notifications.md).
+- Whether users receive periodic (every four hours, daily, or weekly) notifications about their quarantined messages via [quarantine notifications](quarantine-quarantine-notifications.md).
 
 Traditionally, users have been allowed or denied levels of interactivity with quarantine messages based on why the message was quarantined. For example, users can view and release messages that were quarantined as spam or bulk, but they can't view or release messages that were quarantined as high confidence phishing or malware.
 
@@ -44,6 +44,8 @@ If you don't like the default user capabilities for quarantined messages for a s
 You create and assign quarantine policies in the Microsoft 365 Defender portal or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with Exchange Online mailboxes; standalone EOP PowerShell in EOP organizations without Exchange Online mailboxes).
 
 ## What do you need to know before you begin?
+
+- Quarantine isn't available in Microsoft 365 operated by 21Vianet.
 
 - You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Quarantine policies** page, use <https://security.microsoft.com/quarantinePolicies>.
 
@@ -477,6 +479,9 @@ To create customized quarantine notifications for up to three languages, do the 
    1. Select the language from the **Choose language** box. The default value is **Default**, which means the default language for the Microsoft 365 organization. For more information, see [How to set language and region settings for Microsoft 365](/office365/troubleshoot/access-management/set-language-and-region).
 
       Although this box is in the middle of the page, you need to select it first. If you enter values in the **Sender display name**, **Subject**, or **Disclaimer** boxes before you select the language value, the other values are removed and you start over when you select the language value.
+
+      > [!NOTE]
+      > The language value **English** maps to every English language code except en-US. If you have users with en-US mailboxes only, use the value **Default**. If you have a mix of mailboxes with en-US and other English languages codes (en-GB, en-CA, en-AU, etc.), use the language value **Default** in one customized quarantine notification, and the language value **English** in another customized quarantine notification.
 
    2. Enter values for **Sender display name**, **Subject**, and **Disclaimer**. The values must be unique for each language. If you try to reuse a value in a different language, you'll get an error when you select **Save**.
    3. Select the **Add** button.

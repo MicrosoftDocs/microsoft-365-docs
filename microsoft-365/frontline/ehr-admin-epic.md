@@ -1,8 +1,8 @@
 ---
 title: Virtual Appointments with Teams - Integration into Epic EHR
-author: samanro
-ms.author: samanro
-manager: pamgreen
+author: lana-chin
+ms.author: v-chinlana
+manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-frontline

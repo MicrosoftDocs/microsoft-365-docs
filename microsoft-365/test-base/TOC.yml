@@ -34,6 +34,10 @@
       href: test-with-m365-app.md
     - name: Test your application with in-place upgrade
       href: test-application-with-in-place-upgrade.md
+    - name: Test against Windows new features
+      href: against-windows-new-features.md
+    - name: Test against Windows monthly security updates
+      href: validate-monthly-security-updates.md
 - name: How-to guides
   items:
   - name: Server application testing

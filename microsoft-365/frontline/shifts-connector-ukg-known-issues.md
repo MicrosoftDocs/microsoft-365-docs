@@ -1,9 +1,9 @@
 ---
 title: Team Shifts connector for UKG Dimensions known issues
-author: daisyfell
-ms.author: daisyfeller
+author: lana-chin
+ms.author: v-chinlana
+manager: serdars
 ms.reviewer: imarquesgil
-manager: pamgreen
 ms.topic: troubleshooting
 audience: admin
 ms.service: microsoft-365-frontline
