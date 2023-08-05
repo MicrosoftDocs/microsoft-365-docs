@@ -71,7 +71,7 @@ In Microsoft 365 E5 and Defender for Office 365 Plan 2, we've extended Teams pro
      > [!NOTE]
      > Quarantine notifications are disabled in the policy named AdminOnlyAccessPolicy. To notify recipients that have messages quarantined as malware or high confidence phishing, create or use an existing quarantine policy where quarantine notifications are turned on. For instructions, see [Create quarantine policies in the Microsoft 365 Defender portal](quarantine-policies.md#step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal).
 
-   - **Exclude these participants** section: Specify the **Users**, **Groups**, or **Domains** to exclude from ZAP for Teams protection. ZAP doesn't take action on a Teams chat or channel when _all_ participants are excluded from ZAP for Teams protection. If the Teams chat or channel includes _any_ participants who aren't excluded from ZAP for Teams protection, then ZAP is still able to take action on the messages.
+   - **Exclude these participants** section: Specify the **Users**, **Groups**, or **Domains** to exclude from ZAP for Teams protection. Exclusions matter for message _recipients_, not message _senders_. For more information, see [Zero-hour auto purge (ZAP) in Microsoft Teams](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-in-microsoft-teams).
 
    > [!IMPORTANT]
    > Multiple different types of exceptions are not additive; they're inclusive. The message is excluded from ZAP for Teams protection  _only_ for those users that match _all_ of the specified filters. For example, you configure exclusions with the following values:

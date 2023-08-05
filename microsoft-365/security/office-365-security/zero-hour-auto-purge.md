@@ -133,7 +133,17 @@ ZAP doesn't quarantine messages that are in the process of [Dynamic Delivery](sa
 >
 > Currently, ZAP for Teams is supported only for Teams chats, shared channels, and standard channels.
 
-When ZAP for Teams protection quarantines a message, the message is blocked for both the recipient and the sender.
+Teams is different than email, because everyone in a Teams chat receives the same copy of the message at the same time (there's no message bifurcation). When ZAP for Teams protection blocks a message, the message is blocked for everyone in the chat. The initial block happens right after delivery, but ZAP occurs up to 48 hours after delivery.
+
+Exclusions for ZAP for Teams protection matter for message _recipients_, not message _senders_.
+
+ZAP for Teams protection is able to take action on messages for _all_ recipients in a chat if _any_ recipients in the chat aren't excluded from ZAP for Teams. Only when _all_ recipients in a chat are excluded from ZAP for Teams protection will ZAP not take action on a message. These scenarios are illustrated in the following table:
+
+|Scenario|Result|
+|Group chat with Recipients A, B, C, and D. <br/><br/> Recipients A, B, C, and D are excluded from ZAP for Teams protection.|ZAP won't block messages sent to the group chat.|
+|Group chat with Recipients A, B, C, and D. <br/><br/> Only recipients A, B, and C are excluded from ZAP for Teams protection.|ZAP is able to block messages sent to the group chat for all recipients.|
+|Group chat with Recipients A, B, C, and D. <br/><br/> Recipients A, B, C, and D aren't excluded from ZAP for Teams protection. <br/><br/> Sender X is excluded from ZAP for Teams protection and sends a message to the group chat.|ZAP is able to block messages sent to the group chat for all recipients.|
+
 
 **Sender view**:
 
