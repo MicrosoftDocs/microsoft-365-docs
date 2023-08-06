@@ -73,7 +73,7 @@ Permissions for managing the organization's security posture and performing thre
 |Remediation handling|Manage|Create remediation tickets, submit new requests, and manage remediation activities in threat and vulnerability management.|
 |Application handling|Manage|Manage vulnerable applications and software, including blocking and unblocking them in threat and vulnerability management.|
 |Security baseline assessment|Manage|Create and manage profiles so you can assess if your devices comply to security industry baselines.|
-|Secure Score|Read / Manage|Create and manage permissions to Secure Score data including which users have access to the data and the products for which they will see Secure Score data.|
+|Secure Score|Read / Manage|Manage permissions to Secure Score data including which users have access to the data and the products for which they will see Secure Score data.|
 
 ### Authorization and settings
 
