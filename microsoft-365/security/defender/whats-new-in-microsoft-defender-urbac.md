@@ -24,7 +24,7 @@ This article provides information about new features and important product updat
 
 **Microsoft Secure Score permissions integration with Microsoft 365 Defender Unified role-based access control (RBAC) is now in Public Preview** </br>
 
-You can control access and grant granular permissions for the Microsoft Secure Score experience as part of the Microsoft 365 Defender Unified RBAC model. For more information, see [Manage permissions with Microsoft 365 Defender Unified role-based access control(RBAC)](microsoft-secure-score#manage-permissions-with-microsoft-365-defender-unified-role-based-access-controlrbac)
+You can control access and grant granular permissions for the Microsoft Secure Score experience as part of the Microsoft 365 Defender Unified RBAC model. For more information, see [Manage permissions with Microsoft 365 Defender Unified role-based access control(RBAC)](./microsoft-secure-score.md#manage-permissions-with-microsoft-365-defender-unified-role-based-access-controlrbac)
 
 **A new file collection permission in Microsoft 365 Defender Unified RBAC is now in Public Preview** </br>
 
