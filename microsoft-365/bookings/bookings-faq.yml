@@ -384,6 +384,23 @@ sections:
           This is a transient error and typically occurs because of an unstable internet connection. These problems usually resolve themselves after a few minutes.
           
           If you still see this error after an extended period of time or you're seeing it often, [contact support](https://support.microsoft.com/topic/contact-microsoft-office-support-fd6bb40e-75b7-6f43-d6f9-c13d10850e77).
+      
+      - question: |
+           When one attendee cancels a group booking, cancellation emails are sent to all the other attendees
+        answer: |
+          This is a known problem, and our product team is currently investigating the root cause. If you encounter this problem, you can follow these steps to mitigate it.
+          
+          1. Select **Edit service** for the affected service.
+          
+          1. Navigate to the **Notifications** tab. 
+        
+          1. Uncheck the setting "Send a meeting invite to the customer, in addition to the confirmation email."
+
+             ![Screenshot of dialog box for Bookings email confirmation setting.](../media/email-confirmation-bookings.png)
+         
+          1. Save the changes.
+          
+          If the issue continues after applying these steps, reach out to the Microsoft Support team for further assistance. 
           
 additionalContent: |
 
