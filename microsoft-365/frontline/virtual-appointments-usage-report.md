@@ -1,8 +1,8 @@
 ---
 title: Microsoft Teams Virtual Appointments usage report
-author: daisyfell
-ms.author: daisyfeller
-manager: samanro
+author: lana-chin
+ms.author: v-chinlana
+manager: serdars
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-frontline

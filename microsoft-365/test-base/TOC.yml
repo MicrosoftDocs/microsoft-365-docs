@@ -34,6 +34,10 @@
       href: test-with-m365-app.md
     - name: Test your application with in-place upgrade
       href: test-application-with-in-place-upgrade.md
+    - name: Test against Windows new features
+      href: against-windows-new-features.md
+    - name: Test against Windows monthly security updates
+      href: validate-monthly-security-updates.md
 - name: How-to guides
   items:
   - name: Server application testing
@@ -73,6 +77,8 @@
         href: monitor-test-status.md
   - name: Request to change access level
     href: accesslevel.md
+  - name: How to prepare a Windows VHD for Test Base
+    href: prepare-testbase-vhd-file.md
   - name: SDK & API
     href: sdkapi.md
 - name: Reference

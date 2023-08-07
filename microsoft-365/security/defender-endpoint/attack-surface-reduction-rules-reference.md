@@ -14,7 +14,7 @@ ms.topic: reference
 ms.collection: 
 - m365-security
 - tier2
-ms.date: 07/27/2023
+ms.date: 08/04/2023
 search.appverid: met150
 ---
 
@@ -537,6 +537,8 @@ Office VBA enables Win32 API calls. Malware can abuse this capability, such as [
 Supported operating systems:
 
 - [Windows 10, version 1709](/windows/whats-new/whats-new-windows-10-version-1709)
+- [Windows 11](/windows/whats-new/whats-new-windows-11-version-22h2)
+- [Windows Server 2022](/windows-server/get-started/whats-new-in-windows-server-2022)
 - [Windows Server, version 1809](/windows-server/get-started/whats-new-in-windows-server-1809)
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 - [Configuration Manager CB 1710](/configmgr/core/servers/manage/updates)

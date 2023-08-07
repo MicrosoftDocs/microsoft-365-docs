@@ -28,7 +28,7 @@ The Multi-Tenant Organization (MTO) People Search is a collaboration feature tha
 
 ![AAD sync](../media/mt-people-search/aad-sync.png)
 
-> _Fig 1: Azure AD cross tenant synchronization illustration
+> _Fig 1: Azure AD cross tenant synchronization illustration_
 
 ## Example scenario
 

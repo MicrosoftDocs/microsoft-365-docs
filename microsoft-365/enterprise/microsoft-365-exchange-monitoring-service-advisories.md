@@ -17,8 +17,7 @@ ms.collection:
 ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
-description: "Service advisory explains surge in eDiscovery cmdlet exceptions affecting Compliance Search PowerShell cmdlets.."
-ROBOTS: NOINDEX, NOFOLLOW
+description: "Service advisory explains surge in eDiscovery cmdlet exceptions affecting Compliance Search PowerShell cmdlets."
 ---
 
 # Service advisories for eDiscovery cmdlet exception spike in Exchange Online monitoring
@@ -33,9 +32,9 @@ These service advisories are displayed in the Microsoft 365 admin center. To vie
 
 The advisory informs administrators about the issue and its potential impact on eDiscovery operations. It highlights that users encounter errors when executing Compliance Search cmdlets due to invalid search queries which can hinder their ability to perform necessary eDiscovery tasks effectively.
 
-For guidance on how to create a compliance search query, please reference: [New-ComplianceSearch (ExchangePowerShell) | Microsoft Learn](/powershell/module/exchange/new-compliancesearch?view=exchange-ps)
+For guidance on how to create a compliance search query, please reference: [New-ComplianceSearch (ExchangePowerShell) | Microsoft Learn](/powershell/module/exchange/new-compliancesearch?view=exchange-ps&preserve-view=true)
 
-For guidance on keyword queries and search conditions, please reference: [Keyword queries and search conditions for eDiscovery - Microsoft Purview (compliance) | Microsoft Learn](/purview/ediscovery-keyword-queries-and-search-conditions?view=o365-worldwide)
+For guidance on keyword queries and search conditions, please reference: [Keyword queries and search conditions for eDiscovery - Microsoft Purview (compliance) | Microsoft Learn](/purview/ediscovery-keyword-queries-and-search-conditions)
 
 ## How often will I see these service advisories?
 
