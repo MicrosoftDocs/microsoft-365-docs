@@ -318,3 +318,4 @@ When the ratelimit is enabled a rule will be added in AuditD to handle 2500 even
 ## See also
 
 - [Investigate agent health issues](health-status.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

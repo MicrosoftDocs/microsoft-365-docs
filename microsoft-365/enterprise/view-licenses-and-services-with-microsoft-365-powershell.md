@@ -204,7 +204,7 @@ The following table shows the Microsoft 365 service plans and their friendly nam
 |:-----|:-----|
 | `SWAY` <br/> |Sway  <br/> |
 | `TEAMS1` <br/> |Microsoft Teams  <br/> |
-| `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
+| `YAMMER_ENTERPRISE` <br/> |Viva Engage  <br/> |
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Microsoft 365 Apps for enterprise *(previously named Office 365 ProPlus)*  <br/> |
 | `MCOSTANDARD` <br/> |Skype for Business Online  <br/> |

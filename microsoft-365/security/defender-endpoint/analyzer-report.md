@@ -56,3 +56,4 @@ To include analyzer result files [when opening a support ticket](contact-support
 
 > [!NOTE]
 > If the file size is larger than 25 MB, the support engineer assigned to your case will provide a dedicated secure workspace to upload large files for analysis.
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

@@ -2,13 +2,10 @@
 title: Microsoft Defender for Endpoint Device Control Printer Protection
 description: Microsoft Defender for Endpoint Device Control Printer Protection blocks people from printing via non-corporate printers or non-approved USB printer.
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
-ms.date: 01/10/2023
+ms.date: 07/11/2023
 ms.author: dansimp
-author: lovina-saldanha
+author: dansimp
 ms.reviewer: dansimp
 manager: dansimp
 audience: ITPro
@@ -68,15 +65,10 @@ Make sure that the Windows 10 or Windows 11 devices that you plan on deploying P
 
 You can deploy the policy via Group Policy or Intune.
 
-<br>
-
-****
-
 |Title|Description|CSP Support | GPO Support | User-based Support | Machine-based Support |
 |---|---|:---:|:---:|:---:|:---:|
 |**Enable Device control Printing Restrictions**|Block people from printing via non-corporate printer|Yes|Yes|Yes|Yes|
 |**List of Approved USB-connected print devices**\*|Allow specific USB printer|Yes|Yes|Yes|Yes|
-|
 
 \* This policy must be used together with **Enable Device control Printing Restrictions**.
 
@@ -108,7 +100,7 @@ The CSP support string with `<enabled/>`:
 
   `./Vendor/MSFT/Policy/Config/Printers/ApprovedUsbPrintDevicesUser`
 
-The CSP support string with approved USB printers via 'ApprovedUsbPrintDevices' property, example `<enabled><data id="ApprovedUsbPrintDevices_List" value="03F0/0853,0351/0872"/>`:
+The CSP support string with approved USB printers via 'ApprovedUsbPrintDevices' property. Example: `<enabled/><data id="ApprovedUsbPrintDevices_List" value="03F0/0853,0351/0872"/>`:
 
 :::image type="content" source="../../media/editrow.png" alt-text="The Edit Row pane" lightbox="../../media/editrow.png":::
 
@@ -178,3 +170,4 @@ DeviceEvents
 ```
 
  :::image type="content" source="https://user-images.githubusercontent.com/81826151/128954383-71df3009-77ef-40db-b575-79c73fda332b.png" alt-text="The Advanced Hunting page" lightbox="https://user-images.githubusercontent.com/81826151/128954383-71df3009-77ef-40db-b575-79c73fda332b.png":::
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

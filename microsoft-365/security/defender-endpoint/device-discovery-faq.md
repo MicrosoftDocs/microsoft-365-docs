@@ -141,3 +141,4 @@ The device discovery capabilities have been built to only discover and identify 
 ### You can exclude network lures from active probing
 
 Standard discovery supports exclusion of devices or ranges (subnets) from active probing. If you have network lures deployed in place, you can use the Device Discovery settings to define exclusions based on IP addresses or subnets (a range of IP addresses). Defining those exclusions ensure that those devices won't be actively probed and won't be alerted. Those devices are discovered using passive methods only (similar to Basic discovery mode).
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

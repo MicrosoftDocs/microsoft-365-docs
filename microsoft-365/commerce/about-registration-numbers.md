@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: drjones, jmueller
+ms.reviewer: drjones, jobailey
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-business
@@ -32,13 +32,13 @@ This article only applies to commercial customers who buy or activate products o
 
 We use the registration number (also referred to as a Tax Identification Number (TIN)) to review the details of your account. This lets us determine if Microsoft can provide you products and services. For information about what registration numbers are needed for a country or region, see [Tax Identification Numbers](https://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/).
 
-For countries where the registration number is mandatory, the label above the text box indicates what type of number is required.
+For countries/regions where the registration number is mandatory, the label above the text box indicates what type of number is required.
 
 For example, in the following screenshot, the label indicates that a CNPJ (Brazilian) registration number is needed.
 
 :::image type="content" source="../media/macregnum-cnpj-screenshot-400.png" alt-text="Screenshot of the registration number field for C N P J number.":::
 
-For countries where the registration number is optional, you can choose to provide a company legal registration number. Don't enter a personal ID in this field.
+For countries/regions where the registration number is optional, you can choose to provide a company legal registration number. Don't enter a personal ID in this field.
 
 The following screenshot shows an example of when the registration number is optional.
 

@@ -80,6 +80,8 @@
             href: collaborate-teams-direct-connect.md
           - name: Enable shared channels with all organizations
             href: allow-direct-connect-with-all-organizations.md
+          - name: Collaborate across clouds
+            href: collaborate-guests-cross-cloud.md
           - name: Create a B2B extranet
             href: b2b-extranet.md
           - name: Trust conditional access from other organizations
@@ -302,14 +304,8 @@
         href: groups-sharepoint-governance.md
       - name: Groups, SharePoint, and Teams
         href: groups-sharepoint-teams-governance.md
-      - name: Groups with other services
-        href: groups-services-interactions.md
     - name: Access
       href: groups-teams-access-governance.md
-    - name: Compliance
-      href: groups-teams-compliance-governance.md
-    - name: Communications
-      href: groups-teams-communication-governance.md
     - name: Organization and lifecycle
       items:
       - name: Organization and lifecycle governance
@@ -327,7 +323,7 @@
       - name: Groups creation domain
         href: choose-domain-to-create-groups.md
       - name: End of lifecycle options
-        href: end-life-cycle-groups-teams-sites-yammer.md
+        href: end-life-cycle-groups-teams-sites-viva-engage.md
   - name: File collaboration in SharePoint with Microsoft 365
     href: /sharepoint/deploy-file-collaboration
 

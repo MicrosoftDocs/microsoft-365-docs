@@ -1,0 +1,34 @@
+{
+  "redirections":[
+     {
+        "source_path":"microsoft-365/frontline/bookings-virtual-appointments.md",
+        "redirect_url":"/microsoft-365/frontline/virtual-appointments-app",
+        "redirect_document_id":true
+     },
+     {
+        "source_path":"microsoft-365/frontline/bookings-virtual-visits.md",
+        "redirect_url":"/microsoft-365/frontline/virtual-appointments-app",
+        "redirect_document_id":false
+     },
+     {
+        "source_path":"microsoft-365/frontline/virtual-visits-usage-report.md",
+        "redirect_url":"/microsoft-365/frontline/virtual-appointments-usage-report",
+        "redirect_document_id":true
+     },
+     {
+        "source_path":"microsoft-365/frontline/ehr-admin-cerner.md",
+        "redirect_url":"/microsoft-365/frontline/ehr-admin-oracle-health",
+        "redirect_document_id":false
+     },
+     {
+        "source_path":"microsoft-365/frontline/flw-technical-planning-guide-deployment.md",
+        "redirect_url":"/microsoft-365/frontline/flw-setup-microsoft-365",
+        "redirect_document_id":true
+     },
+     {
+        "source_path":"microsoft-365/frontline/flw-onboarding-wizard.md",
+        "redirect_url":"/microsoft-365/frontline/flw-setup-microsoft-365",
+        "redirect_document_id":false
+     }
+  ]
+}

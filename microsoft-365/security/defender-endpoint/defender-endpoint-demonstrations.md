@@ -67,3 +67,4 @@ The following table lists the available demonstrations alphabetically, with thei
 [Endpoint detection and response \(EDR\) overview](overview-endpoint-detection-response.md)
 [Microsoft Defender for Endpoint security blog](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/bg-p/MicrosoftDefenderATPBlog)
 
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

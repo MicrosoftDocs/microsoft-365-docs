@@ -1,9 +1,9 @@
 ---
 title: How to find the best frontline team solution for your organization
-author: daisyfell
-ms.author: daisyfeller
+author: lana-chin
+ms.author: v-chinlana
+manager: serdars
 ms.reviewer: aaglick
-manager: pamgreen
 ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
@@ -17,8 +17,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 06/16/2023
-ROBOTS: NOINDEX, NOFOLLOW
+ms.date: 07/12/2023
 ---
 
 # How to find the best frontline team solution for your organization

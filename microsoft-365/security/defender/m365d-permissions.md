@@ -80,3 +80,4 @@ During the preview, Microsoft 365 Defender does not enforce access controls base
 - [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference)
 - [Microsoft Defender for Endpoint RBAC](/windows/security/threat-protection/microsoft-defender-atp/rbac)
 - [Defender for Cloud Apps roles](/cloud-app-security/manage-admins)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

@@ -164,3 +164,4 @@ Licensing requirements for Microsoft Defender for Endpoint can be found at: [Lic
 [FSLogix anti-malware exclusions](/fslogix/overview-prerequisites#configure-antivirus-file-and-folder-exclusions)
 
 [Configure Microsoft Defender Antivirus on a remote desktop or virtual desktop infrastructure environment](/microsoft-365/security/defender-endpoint/deployment-vdi-microsoft-defender-antivirus)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

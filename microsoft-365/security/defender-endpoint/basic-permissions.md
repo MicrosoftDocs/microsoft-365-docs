@@ -87,3 +87,4 @@ For more information, see [Assign administrator and non-administrator roles to u
 ## Related topic
 
 - [Manage portal access using RBAC](rbac.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

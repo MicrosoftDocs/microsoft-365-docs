@@ -211,7 +211,7 @@ CloudAppEvents
 | where ActionType in (action_types)
 ```
 
-Run this query to find out if there were any anomalous login events from this user. For example: unknown IPs, new applications, uncommon countries, multiple LogonFailed events.
+Run this query to find out if there were any anomalous login events from this user. For example: unknown IPs, new applications, uncommon countries/regions, multiple LogonFailed events.
 
 ```kusto
 let sender = "{SENDER}"; //Replace {SENDER} with email of the Forwarder
@@ -259,3 +259,4 @@ Once you determine that the activities associated make this alert a True Positiv
 - [Suspicious inbox forwarding rules](alert-grading-playbook-inbox-forwarding-rules.md)
 - [Suspicious inbox manipulation rules](alert-grading-playbook-inbox-manipulation-rules.md)
 - [Investigate alerts](investigate-alerts.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

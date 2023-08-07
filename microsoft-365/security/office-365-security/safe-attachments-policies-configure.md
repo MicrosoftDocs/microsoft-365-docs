@@ -19,7 +19,7 @@ description: Learn about how to define Safe Attachments policies to protect your
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 6/19/2023
+ms.date: 7/12/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
@@ -126,8 +126,6 @@ You configure Safe Attachments policies in the Microsoft 365 Defender portal or 
 
      > [!NOTE]
      > Redirection is available only for the **Monitor** action. For more information, see [MC424899](https://admin.microsoft.com/AdminPortal/Home?#/MessageCenter/:/messages/MC424899).
-
-   - **Apply the Safe Attachments detection response if scanning can't complete (timeout or errors)**: The action specified by **Safe Attachments unknown malware response** is taken on messages even when Safe Attachments scanning can't complete.
 
    When you're finished on the **Settings** page, select **Next**.
 
@@ -287,18 +285,16 @@ Creating a Safe Attachments policy in PowerShell is a two-step process:
 To create a safe attachment policy, use this syntax:
 
 ```PowerShell
-New-SafeAttachmentPolicy -Name "<PolicyName>" -Enable $true [-AdminDisplayName "<Comments>"] [-Action <Allow | Block | Replace | DynamicDelivery>] [-Redirect <$true | $false>] [-RedirectAddress <SMTPEmailAddress>] [-ActionOnError <$true | $false>] [-QuarantineTag <QuarantinePolicyName>]
+New-SafeAttachmentPolicy -Name "<PolicyName>" -Enable $true [-AdminDisplayName "<Comments>"] [-Action <Allow | Block | DynamicDelivery>] [-Redirect <$true | $false>] [-RedirectAddress <SMTPEmailAddress>] [-QuarantineTag <QuarantinePolicyName>]
 ```
 
 This example creates a safe attachment policy named Contoso All with the following values:
 
 - Block messages that are found to contain malware by Safe Documents scanning (we aren't using the _Action_ parameter, and the default value is `Block`).
 - The default quarantine policy is used (AdminOnlyAccessPolicy), because we aren't using the _QuarantineTag_ parameter.
-- Redirection is enabled, and messages that are found to contain malware are sent to sec-ops@contoso.com for analysis and investigation.
-- If Safe Attachments scanning isn't available or encounters errors, don't deliver the message (we aren't using the _ActionOnError_ parameter, and the default value is `$true`).
 
 ```PowerShell
-New-SafeAttachmentPolicy -Name "Contoso All" -Enable $true -Redirect $true -RedirectAddress sec-ops@contoso.com
+New-SafeAttachmentPolicy -Name "Contoso All" -Enable $true
 ```
 
 For detailed syntax and parameter information, see [New-SafeAttachmentPolicy](/powershell/module/exchange/new-safeattachmentpolicy).
@@ -508,4 +504,6 @@ To verify that you've successfully created, modified, or removed Safe Attachment
   Get-SafeAttachmentRule -Identity "<Name>" | Format-List
   ```
 
-To verify that Safe Attachments is scanning messages, check the available Defender for Office 365 reports. For more information, see [View reports for Defender for Office 365](reports-defender-for-office-365.md) and [Use Explorer in the Microsoft 365 Defender portal](threat-explorer-about.md).
+- Add the URL `http://spamlink.contoso.com` to a file (for example, a Word document), and attach that file in an email message to test Safe Attachments protection. This URL is similar to the GTUBE text string for testing anti-spam solutions. This URL isn't harmful, but when it's included in an email attachment, it triggers a Safe Attachments protection response.
+
+- To verify that Safe Attachments is scanning messages, check the available Defender for Office 365 reports. For more information, see [View reports for Defender for Office 365](reports-defender-for-office-365.md) and [Use Explorer in the Microsoft 365 Defender portal](threat-explorer-about.md).

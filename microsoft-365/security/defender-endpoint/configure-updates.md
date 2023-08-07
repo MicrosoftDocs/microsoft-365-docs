@@ -38,7 +38,7 @@ ms.date: 05/12/2021
 > [!NOTE]
 > This functionality requires Microsoft Defender Antivirus version 4.18.2106.X or newer.
 
-To create your own custom gradual rollout process for Defender updates, you can use Group Policy, Microsoft Configuration Manager, and PowerShell.
+To create your own custom gradual rollout process for Defender updates, you can use Group Policy, Intune, and PowerShell.
 
 The following table lists the available group policy settings for configuring update channels:
 
@@ -108,3 +108,4 @@ For more information on the parameters and how to configure them, see [Set-MpPre
 > - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 > - [Configure Defender for Endpoint on Android features](android-configure.md)
 > - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

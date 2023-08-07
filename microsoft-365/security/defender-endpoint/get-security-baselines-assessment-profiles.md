@@ -14,7 +14,8 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
-ms.topic: conceptual
+- must-keep
+ms.topic: reference
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
@@ -120,3 +121,4 @@ GET https://api.securitycenter.microsoft.com/api/baselineProfiles
 
 - [Export security baselines assessment](export-security-baseline-assessment.md)
 - [Get security baselines assessment configurations](get-security-baselines-assessment-configurations.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

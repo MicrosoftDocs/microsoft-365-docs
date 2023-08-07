@@ -23,6 +23,9 @@ f1.keywords: NOCSH
 ### Expanded Testing Matrix with in-place upgrade
 Evaluate your app readiness for Windows 11 by testing via in-place upgrade to simulate the real enterprise update experience. You can get a comprehensive Windows 11 update readiness assessment with side-by-side comparison against Windows 10 baseline.
 
+Check below to learn how to set up your apps for the Windows 11 upgrade readiness test with a customizable flow for testing activities before and after the upgrade.
+ > [!div class="mx-imgBorder"]
+ > ![Demo version two of the inplace upgrade.](Media/inplace-upgrade-demo-v2.gif)
 ### Onboard package for in-place upgrade
 You can now onboard a package with baseline OS and target OS defined via the new Flow Driven test type to validate if the application works before and after the upgrade on the same VM.
 

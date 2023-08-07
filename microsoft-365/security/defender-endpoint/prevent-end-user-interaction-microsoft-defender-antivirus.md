@@ -1,17 +1,13 @@
 ---
 title: Hide the Microsoft Defender Antivirus interface
 description: You can hide virus and threat protection tile in the Windows Security app.
-keywords: ui lockdown, headless mode, hide app, hide settings, hide interface
 ms.service: microsoft-365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 10/18/2021
-ms.reviewer:
+ms.date: 07/26/2023
+ms.reviewer: pahuijbr
 manager: dansimp
 ms.subservice: mde
 ms.topic: conceptual
@@ -88,6 +84,22 @@ You can prevent users from pausing scans, which can be helpful to ensure schedul
 
 5. Double-click the **Allow users to pause scan** setting and set the option to **Disabled**. Click **OK**.
 
+## UI Lockdown mode
+
+Indicates whether to disable UI Lockdown mode. If you specify a value of `$True`, Microsoft Defender Antivirus disables UI Lockdown mode. If you specify a value of `$False` or do not specify a value, UI Lockdown mode is enabled.
+
+```
+PS C:\>Set-MpPreference -UILockdown $true
+```
+
+## Related articles
+
+- [Configure the notifications that appear on endpoints](configure-notifications-microsoft-defender-antivirus.md)
+- [Configure end-user interaction with Microsoft Defender Antivirus](configure-end-user-interaction-microsoft-defender-antivirus.md)
+- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+
 > [!TIP]
 > If you're looking for Antivirus related information for other platforms, see:
 > - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
@@ -98,8 +110,3 @@ You can prevent users from pausing scans, which can be helpful to ensure schedul
 > - [Configure Defender for Endpoint on Android features](android-configure.md)
 > - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
 
-## Related articles
-
-- [Configure the notifications that appear on endpoints](configure-notifications-microsoft-defender-antivirus.md)
-- [Configure end-user interaction with Microsoft Defender Antivirus](configure-end-user-interaction-microsoft-defender-antivirus.md)
-- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)

@@ -1,4 +1,4 @@
-- name: Microsoft 365 Defender
+  name: Microsoft 365 Defender
   href: index.yml
   expanded: true
   items: 
@@ -26,8 +26,6 @@
           href: microsoft-365-security-center-defender-cloud-apps.md
         - name: Redirecting Defender for Endpoint to Microsoft 365 Defender
           href: microsoft-365-security-mde-redirection.md
-        - name: Redirecting Defender for Identity to Microsoft 365 Defender
-          href: microsoft-365-security-mdi-redirection.md
         - name: Redirecting Defender for Cloud Apps to Microsoft 365 Defender
           href: microsoft-365-security-mda-redirection.md
       - name: Microsoft 365 Defender integration with Microsoft Sentinel
@@ -184,8 +182,10 @@
                 items: 
                  - name: Incidents
                    href: investigate-incidents.md
-                 - name: Data loss incidents
-                   href: investigate-dlp.md
+                 - name: Investigate data loss prevention alerts with Microsoft 365 Defender
+                   href: dlp-investigate-alerts-defender.md
+                 - name: Investigate data loss prevention alerts with Microsoft Sentinel
+                   href: dlp-investigate-alerts-sentinel.md
                  - name: Alerts
                    href: investigate-alerts.md    
                  - name: Alert classification playbooks
@@ -450,10 +450,12 @@
               href: m365d-permissions.md
             - name: Custom roles in role-based access 
               href: custom-roles.md
-            - name: Manage permissions with Microsoft 365 Defender RBAC
+            - name: Manage permissions with Microsoft 365 Defender Unified RBAC
               items: 
               - name: Overview
                 href: manage-rbac.md
+              - name: What's new in Microsoft 365 Defender Unified RBAC
+                href: whats-new-in-microsoft-defender-urbac.md
               - name: Create custom roles 
                 href: create-custom-rbac-roles.md
               - name: Import roles
@@ -476,6 +478,8 @@
               href: troubleshoot.md
             - name: Configure alert notifications
               href: configure-email-notifications.md
+            - name: Asset Rule Management
+              href: configure-asset-rules.md
             - name: Provide feedback
               href: feedback.md
             - name: Provide managed service provider (MSSP) access

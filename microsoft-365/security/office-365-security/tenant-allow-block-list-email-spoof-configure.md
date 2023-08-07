@@ -92,7 +92,7 @@ By default, allow entries for domains and email addresses exist for 30 days. Dur
 Email from these blocked senders is marked as *high confidence spam* (SCL = 9). What happens to the messages is determined by the [anti-spam policy](anti-spam-policies-configure.md) that detected the message for the recipient. For more information, see the **Spam** detection action in [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
 
 > [!NOTE]
-> Users in the organization also can't *send* email to these blocked domains and addresses. The message is returned in the following non-delivery report (also known as an NDR or bounce message): `550 5.7.703 Your message can't be delivered because one or more recipients are blocked by your organization's tenant recipient block policy.` The entire message is blocked for all *external* recipients of the message, even if only one recipient email address or domain is defined in the block entry.
+> Users in the organization also can't *send* email to these blocked domains and addresses. The message is returned in the following non-delivery report (also known as an NDR or bounce message): `550 5.7.703 Your message can't be delivered because messages to XXX, YYY are blocked by your organization using Tenant Allow Block List.` The entire message is blocked for all internal and external recipients of the message, even if only one recipient email address or domain is defined in a block entry.
 
 #### Use the Microsoft 365 Defender portal to create block entries for domains and email addresses in the Tenant Allow/Block List
 

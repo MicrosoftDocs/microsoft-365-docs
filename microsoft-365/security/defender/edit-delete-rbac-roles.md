@@ -67,3 +67,4 @@ If the workload is active, by removing the role all assigned user permission wil
 
 - [Learn about RBAC permissions](custom-permissions-details.md)
 - [Map existing RBAC roles to Microsoft 365 Defender RBAC roles](compare-rbac-roles.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

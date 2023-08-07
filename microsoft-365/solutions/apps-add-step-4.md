@@ -55,7 +55,7 @@ Use the following steps to add Microsoft licensed apps to Intune:
 > In addition, consider adding the following Microsoft apps based on your existing license:
 > - Microsoft Exchange
 > - Microsoft SharePoint
-> - Microsoft Yammer
+> - Microsoft Viva Engage
 > - Microsoft Viva
 > - Project Online Desktop Client
 > - Visio Online Plan 2

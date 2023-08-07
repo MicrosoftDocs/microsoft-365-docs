@@ -346,3 +346,4 @@ For this scenario, you need to create two groups: one group for any removable st
       Choose **+ Edit Entry** for **Entry**, as shown in the following screenshot:
 
       :::image type="content" source="media/208775366-f2cafb54-eb63-4bcd-b0fe-880f3cba2c1b.png" alt-text="Screenshot showing edit mode for an entry." lightbox="media/208775366-f2cafb54-eb63-4bcd-b0fe-880f3cba2c1b.png":::
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

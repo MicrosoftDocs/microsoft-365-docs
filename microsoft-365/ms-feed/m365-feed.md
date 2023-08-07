@@ -28,7 +28,7 @@ In **Microsoft 365** (previously Office.com), while signed in with a work or sch
 
 In **Microsoft Edge**, select the **Microsoft 365** page when opening a new tab.
 
-![Select Feed in Microsoft 365.](../media/MS-contoso-feed.png)
+![Image of the select Feed in Microsoft 365.](../media/MS-contoso-feed.png)
 
 See the section *Find your way around* in [Discover and learn with Microsoft Feed](https://support.microsoft.com/en-us/office/discover-and-learn-with-microsoft-feed-9c190800-e348-46b7-9d46-41c628b80ebb)
 
@@ -80,7 +80,7 @@ When a user creates and stores a document in a folder in OneDrive, and this fold
 
 2. **How does following work?**
 
-Following is synchronized between Microsoft Feed and Yammer. Following features in Microsoft Feed are only available to users who have a Yammer license. If users don’t have a Yammer license, the My network page is not available, and the users can’t follow others from Microsoft Feed.
+Following is synchronized between Microsoft Feed and Viva Engage. Following features in Microsoft Feed are only available to users who have a Viva Engage license. If users don’t have a Viva Engage license, the My network page is not available, and the users can’t follow others from Microsoft Feed.
 
 3. **What's the connection between** [Office Delve](https://delve.office.com) **and Microsoft Feed?**
 

@@ -87,3 +87,4 @@ Also see [Configure remediation-required scheduled full Microsoft Defender Antiv
 - [Configure end-user Microsoft Defender Antivirus interaction](configure-end-user-interaction-microsoft-defender-antivirus.md)
 - [Customize, initiate, and review the results of Microsoft Defender Antivirus scans and remediation](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 - [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

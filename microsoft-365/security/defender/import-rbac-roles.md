@@ -73,3 +73,4 @@ Imported roles appear in the **Permissions and roles** list together with any cu
 
 - [Activate Microsoft 365 Defender RBAC](activate-defender-rbac.md)
 - [Edit or delete roles](edit-delete-rbac-roles.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
