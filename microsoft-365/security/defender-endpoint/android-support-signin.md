@@ -58,11 +58,11 @@ from Google Play Store and try again.
 
 ## Sign in failed - invalid license
 
-**Sign in failed:** *Invalid license, please contact administrator*
+**Sign in failed:** *Invalid license, contact administrator*
 
 :::image type="content" source="images/920e433f440fa1d3d298e6a2a43d4811.png" alt-text="The directive contact details in the sign-in page of the Microsoft Defender 365 portal" lightbox="images/920e433f440fa1d3d298e6a2a43d4811.png":::
 
-**Message:** *Invalid license, please contact administrator*
+**Message:** *Invalid license, contact administrator*
 
 **Cause:**
 
@@ -82,14 +82,14 @@ Phishing websites impersonate trustworthy websites for obtaining your personal o
 
 - **Xiaomi**
 
-Phishing and harmful web threats that are detected by Defender for Endpoint
+Phishing and harmful web threats detected by Defender for Endpoint
 for Android aren't blocked on some Xiaomi devices. The following functionality doesn't work on these devices.
 
 :::image type="content" source="images/0c04975c74746a5cdb085e1d9386e713.png" alt-text="A site-unsafe notification message" lightbox="images/0c04975c74746a5cdb085e1d9386e713.png":::
 
 **Cause:**
 
-Xiaomi devices include a new permission model. This prevents Defender for Endpoint for Android from displaying pop-up windows while it runs in the background.
+Xiaomi devices include a new permission model. This permission model prevents Defender for Endpoint for Android from displaying pop-up windows while it runs in the background.
 
 Xiaomi devices permission: "Display pop-up windows while running in the
 background."
@@ -115,9 +115,36 @@ Defender App asks for Battery Optimization/Permanent Protection permission on de
 Xiaomi changed the battery optimization permissions in Android 11. Defender for Endpoint isn't allowed to configure this setting to ignore battery optimizations.
 
 **Solution:**
+1. Install MDE app in personal profile. (Sign-in is not required.) 
+2. Open the Company Portal and tap on Settings. 
+3. Go to the Battery Optimization section, tap on the "Turn Off" button, and then click on "Allow" to turn Battery Optimization off for the Company Portal. 
+4. Again, go to the Battery Optimization section and tap on the "Turn On" button. The battery saver section opens. 
+5. Find the Defender app and tap on it. 
+6. Select "No Restriction". Go back to the Defender app in work profile and tap on "Allow" button.  
+7. The application should not be uninstalled from personal profile for this to work. 
 
-> [!IMPORTANT]
-> This issue has been resolved. Please update to the latest app version to complete the onboarding process. If the issue persists, please send an **[in-app feedback](/microsoft-365/security/defender-endpoint/android-support-signin#send-in-app-feedback)**.
+
+>[!NOTE]
+>This is a temporary workaround. This can be used to unblock onboarding on Xiaomi devices. The Defender team is working on a permanent fix. As the MDE app is not onboarded in the personal profile, it will not have any visibility there.
+
+## Unable to use banking applications with MDE app
+
+**Applies to:** Banking apps like iMobile Pay (ICICI), PNB ONE.
+
+**Cause:** Android allows apps in the personal profile to check if there is a VPN active on the device, even outside of the personal profile. The banking app checks that and blocks it in VPN work profiles only. The banking app does not work with any other VPN product.
+
+**Solution:**
+Users will need to disable MDE VPN from the Settings page. The following steps can be used:
+1. Go to Settings on the mobile device.
+2. Search for VPN or open 'Network and Internet' and click on VPN.
+3. Click on Microsoft Defender and select Disconnect.
+
+Users should enable VPN when they are no longer using the banking app to ensure that their devices are protected. 
+
+>[!NOTE]
+> This is a temporary workaround. We are working on other alternatives to provide users more control over the VPN settings from wihtin the app. 
+
+
 
 ## Send in-app feedback
 
@@ -144,3 +171,4 @@ If a user faces an issue, which isn't already addressed in the above sections or
     :::image type="content" source="images/finalsubmit5.png" alt-text="The pane on which you can add details and attach diagnostic data" lightbox="images/finalsubmit5.png":::
 
 6. Click on "Submit" to successfully send the feedback.
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

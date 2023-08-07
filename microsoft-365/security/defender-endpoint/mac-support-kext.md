@@ -110,3 +110,4 @@ In this case, you need to perform the following steps to trigger the approval fl
     real_time_protection_available              : true
     ...
     ```
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

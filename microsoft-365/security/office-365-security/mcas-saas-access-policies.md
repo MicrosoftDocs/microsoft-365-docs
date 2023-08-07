@@ -75,7 +75,7 @@ You might want to apply additional monitoring and controls to specific SaaS apps
 For example, you can protect your Box environment with these types of built-in anomaly detection policy templates:
 
 - Activity from anonymous IP addresses
-- Activity from infrequent country
+- Activity from infrequent country/region
 - Activity from suspicious IP addresses
 - Impossible travel
 - Activity performed by terminated user (requires AAD as IdP)

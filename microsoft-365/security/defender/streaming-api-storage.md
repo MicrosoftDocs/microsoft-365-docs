@@ -123,3 +123,4 @@ For more information, see [Monitor destinations - Azure Monitor | Microsoft Docs
 - [Microsoft 365 Defender Streaming API](streaming-api.md)
 - [Stream Microsoft 365 Defender events to your Azure storage account](streaming-api-storage.md)
 - [Azure Storage Account documentation](/azure/storage/common/storage-account-overview)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

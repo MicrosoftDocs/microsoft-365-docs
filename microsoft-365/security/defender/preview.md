@@ -76,3 +76,4 @@ You'll know you have preview features turned on when you see that the **Turn on 
 
 
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

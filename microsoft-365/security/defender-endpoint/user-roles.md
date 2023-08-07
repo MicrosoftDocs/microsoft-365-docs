@@ -129,3 +129,4 @@ For more information on the available commands, see [Investigate devices using L
 
 - [User basic permissions to access the portal](basic-permissions.md)
 - [Create and manage device groups](machine-groups.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

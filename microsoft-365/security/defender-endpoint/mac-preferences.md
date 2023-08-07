@@ -3,9 +3,6 @@ title: Set preferences for Microsoft Defender for Endpoint on Mac
 description: Configure Microsoft Defender for Endpoint on Mac in enterprise organizations.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, management, preferences, enterprise, intune, jamf, macos,  big sur, monterey, ventura, mde for mac
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
@@ -17,7 +14,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 06/22/2023
 ---
 
 # Set preferences for Microsoft Defender for Endpoint on macOS
@@ -669,6 +666,112 @@ Specifies the value of tag
 > - Only one value per tag type can be set.
 > - Type of tags are unique, and should not be repeated in the same configuration profile.
 
+### Tamper Protection
+
+Manage the preferences of the Tamper Protection component of Microsoft Defender for Endpoint on macOS.
+
+****
+
+|Section|Value|
+|---|---|
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|tamperProtection|
+|**Data type**|Dictionary (nested preference)|
+|**Comments**|See the following sections for a description of the dictionary contents.|
+|||
+
+#### Enforcement level
+
+If Tamper Protection is enabled and if it is in the strict mode
+
+****
+
+|Section|Value|
+|---|---|
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|enforcementLevel|
+|**Data type**|String|
+|**Comments**|One of 'disabled', 'audit', or 'block'|
+|||
+
+Possible values:
+
+- disabled - Tamper Protection is turned off, no prevention of attacks or reporting to the Cloud
+- audit - Tamper Protection reports tampering attempts to the Cloud only, but does not block them
+- block - Tamper Protection both blocks and reports attacks to the Cloud
+
+#### Exclusions
+
+Defines processes that are allowed altering Microsoft Defender's asset, without being considering tampering.
+Either path, or teamId, or signingId, or their combination must be provided.
+Args can be provided additionally, to specify allowed process more precisely.
+
+****
+
+|Section|Value|
+|---|---|
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|exclusions|
+|**Data type**|Dictionary (nested preference)|
+|**Comments**|See the following sections for a description of the dictionary contents.|
+|||
+
+##### Path
+
+Exact path of the process executable.
+
+****
+
+|Section|Value|
+|---|---|
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|path|
+|**Data type**|String|
+|**Comments**| In case of a shell script it will be the exact path to the interpreter binary, e.g. `/bin/zsh`. No wildcards allowed. |
+|||
+
+##### Team Id
+
+Apple's "Team Id" of the vendor.
+
+****
+
+|Section|Value|
+|---|---|
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|teamId|
+|**Data type**|String|
+|**Comments**| For example, `UBF8T346G9` for Microsoft |
+|||
+
+##### Signing Id
+
+Apple's "Signing Id" of the package.
+
+****
+
+|Section|Value|
+|---|---|
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|signingId|
+|**Data type**|String|
+|**Comments**| For example, `com.apple.ruby` for Ruby interpreter |
+|||
+
+##### Process arguments
+
+Used in combination with other parameters to identify the process.
+
+****
+
+|Section|Value|
+|---|---|
+|**Domain**|`com.microsoft.wdav`|
+|**Key**|signingId|
+|**Data type**|Array of strings|
+|**Comments**| If specified, process argument must match those arguments exactly, case-sensitive |
+|||
+
 ## Recommended configuration profile
 
 To get started, we recommend the following configuration for your enterprise to take advantage of all protection features that Microsoft Defender for Endpoint provides.
@@ -718,6 +821,11 @@ The following configuration profile (or, in case of JAMF, a property list that c
         <true/>
         <key>automaticDefinitionUpdateEnabled</key>
         <true/>
+    </dict>
+    <key>tamperProtection</key>
+    <dict>
+        <key>enforcementLevel</key>
+        <string>block</key>
     </dict>
 </dict>
 </plist>
@@ -797,6 +905,11 @@ The following configuration profile (or, in case of JAMF, a property list that c
                     <true/>
                     <key>automaticDefinitionUpdateEnabled</key>
                     <true/>
+                </dict>
+                <key>tamperProtection</key>
+                <dict>
+                    <key>enforcementLevel</key>
+                    <string>block</string>
                 </dict>
             </dict>
         </array>
@@ -903,6 +1016,8 @@ The following templates contain entries for all settings described in this docum
         <true/>
         <key>automaticDefinitionUpdateEnabled</key>
         <true/>
+        <key>cloudBlockLevel</key>
+        <string>normal</string>
     </dict>
     <key>edr</key>
     <dict>
@@ -915,6 +1030,34 @@ The following templates contain entries for all settings described in this docum
                 <string>ExampleTag</string>
             </dict>
         </array>
+    </dict>
+    <key>tamperProtection</key>
+    <dict>
+        <key>enforcementLevel</key>
+        <string>block</key>
+        <key>exclusions</key>
+        <array>
+        <dict>
+            <key>path</key>
+            <string>/bin/zsh</string>
+            <key>teamId</key>
+            <string/>
+            <key>signingId</key>
+            <string>com.apple.zsh</string>
+            <key>args</key>
+            <array>
+            <string>/usr/local/bin/test.sh</string>
+            </array>
+        </dict>
+        <dict>
+            <key>path</key>
+            <string>/usr/local/jamf/bin/jamf</string>
+            <key>teamId</key>
+            <string>483DWKW443</string>
+            <key>signingId</key>
+            <string>com.jamfsoftware.jamf</string>
+        </dict>
+        </array>            
     </dict>
     <key>userInterface</key>
     <dict>
@@ -1061,6 +1204,8 @@ The following templates contain entries for all settings described in this docum
                     <true/>
                     <key>automaticDefinitionUpdateEnabled</key>
                     <true/>
+                    <key>cloudBlockLevel</key>
+                    <string>normal</string>
                 </dict>
                 <key>edr</key>
                 <dict>
@@ -1073,6 +1218,34 @@ The following templates contain entries for all settings described in this docum
                             <string>ExampleTag</string>
                         </dict>
                     </array>
+                </dict>
+                <key>tamperProtection</key>
+                <dict>
+                    <key>enforcementLevel</key>
+                    <string>block</key>
+                    <key>exclusions</key>
+                    <array>
+                    <dict>
+                        <key>path</key>
+                        <string>/bin/zsh</string>
+                        <key>teamId</key>
+                        <string/>
+                        <key>signingId</key>
+                        <string>com.apple.zsh</string>
+                        <key>args</key>
+                        <array>
+                        <string>/usr/local/bin/test.sh</string>
+                        </array>
+                    </dict>
+                    <dict>
+                        <key>path</key>
+                        <string>/Library/Intune/Microsoft Intune Agent.app/Contents/MacOS/IntuneMdmDaemon</string>
+                        <key>teamId</key>
+                        <string>UBF8T346G9</string>
+                        <key>signingId</key>
+                        <string>IntuneMdmDaemon</string>
+                    </dict>
+                    </array>            
                 </dict>
                 <key>userInterface</key>
                 <dict>
@@ -1134,3 +1307,4 @@ From the JAMF console, open **Computers** \> **Configuration Profiles**, navigat
 ## Resources
 
 - [Configuration Profile Reference (Apple developer documentation)](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

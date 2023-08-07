@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: jkinma, nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
@@ -36,22 +36,10 @@ This article only applies to canceling **Dynamics 365**, **Intune**, **Power Pla
 > [!WARNING]
 > Before you cancel a subscription, make sure your users [save their data](#save-your-data).
 
-**In this article:**
-
-[Before you begin](#before-you-begin)\
-[What's the easiest way to cancel?](#whats-the-easiest-way-to-cancel)\
-[How do I cancel my free trial?](#how-do-i-cancel-my-free-trial)\
-[What if I bought my subscription through a partner?](#what-if-i-bought-my-subscription-through-a-partner)\
-[Determine your cancellation options](#determine-your-cancellation-options)\
-[Steps to cancel your subscription](#steps-to-cancel-your-subscription)\
-[Save your data](#save-your-data)\
-[Next steps](#next-steps)\
-[Related content](#related-content)
-
 ## Before you begin
 
 - You must be a Global or Billing admin to do the tasks in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
-- If you have a billing profile, you must also be a billing account owner or billing account contributor to do the tasks in this article. [Find out if you have a billing profile](../billing-and-payments/manage-billing-profiles.md#view-my-billing-profiles). For more information about billing account roles, see [Understand access to billing accounts](../manage-billing-accounts.md).
+- If you have a billing profile, you must also be a billing account owner or billing account contributor to do the tasks in this article. [Find out if you have a billing profile](../billing-and-payments/manage-billing-profiles.md#view-your-billing-profiles). For more information about billing account roles, see [Understand access to billing accounts](../manage-billing-accounts.md).
 - If you added your own domain name to use with your subscription, you must [remove the domain](../../admin/get-help-with-domains/remove-a-domain.md) before you cancel your subscription.
 - If you have a domain subscription, to prevent any other charges for that subscription, [turn off recurring billing](renew-your-subscription.md).
 
@@ -72,7 +60,7 @@ If your organization is in Chile, and you bought your subscription through a par
 ## Determine your cancellation options
 
 > [!IMPORTANT]
-> Before you continue, [determine if you have a billing profile](../billing-and-payments/manage-billing-profiles.md#view-my-billing-profiles).
+> Before you continue, [determine if you have a billing profile](../billing-and-payments/manage-billing-profiles.md#view-your-billing-profiles).
 
 ### If you have a billing profile
 

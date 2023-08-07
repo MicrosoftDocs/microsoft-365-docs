@@ -1,11 +1,7 @@
 ---
 title: Troubleshoot onboarding issues related to Security Management for Microsoft Defender for Endpoint
 description: Troubleshoot issues that might arise during the onboarding of devices using Security Management for Microsoft Defender for Endpoint.
-keywords: troubleshoot onboarding, onboarding issues, event viewer, data collection and preview builds, sensor data and diagnostics
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
@@ -17,7 +13,7 @@ ms.collection:
 ms.topic: troubleshooting
 ms.subservice: mde
 search.appverid: met150
-ms.date: 10/19/2021
+ms.date: 08/04/2023
 ---
 
 # Troubleshoot onboarding issues related to Security Management for Microsoft Defender for Endpoint
@@ -31,6 +27,11 @@ ms.date: 10/19/2021
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+
+
+>[!NOTE]
+>Customers who have turned on [preview features](preview.md#turn-on-preview-features) will have early access to the endpoint security policies management that does not require Azure Active Directory registration for device management scenarios. The sections below that refer to Azure AD registration do not apply for customers enrolled in the public preview.
 
 Security Management for Microsoft Defender for Endpoint is a capability for devices that aren't managed by Microsoft Intune or Microsoft Configuration Manager to receive security configurations for Microsoft Defender for Endpoint directly from Intune.
 For more information on Security Management for Microsoft Defender for Endpoint, see [Manage Microsoft Defender for Endpoint on devices with Microsoft Intune](/mem/intune/protect/mde-security-integration).
@@ -197,8 +198,9 @@ For Security Management for Microsoft Defender for Endpoint on Windows Server 20
 7. Select **Save** to save the new rule.
 
 > [!NOTE]
-> After this rule change is performed, a full synchronization of your Active Directory will be required. For large environments, it is recommended to schedule this rule change and full sync during on-premise Active Directory quiet periods.
+> After this rule change is performed, a full synchronization of your Active Directory is required. For large environments, it is recommended to schedule this rule change and full sync during on-premises Active Directory quiet periods.
 
 ## Related topic
 
 - [Manage Microsoft Defender for Endpoint on devices with Microsoft Intune](/mem/intune/protect/mde-security-integration)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

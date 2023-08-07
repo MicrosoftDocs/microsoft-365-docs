@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
-ms.date: 04/21/2022
+ms.date: 10/21/2022
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -73,6 +73,4 @@ On your model's view page in your document library, a new **Sensitivity label** 
 
 For example, all financial documents that your model identifies also will have the *Encryption* sensitivity label applied to them, preventing them from being accessed by unauthorized people. If an attempt is made to access the file from the document library by an unauthorized person, an error will display saying it isn't allowed because of the applied sensitivity label.
 
-## See also
 
-[Apply a retention label](apply-a-retention-label-to-a-model.md)

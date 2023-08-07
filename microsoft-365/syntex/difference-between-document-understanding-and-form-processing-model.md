@@ -35,6 +35,4 @@ Use the following table to see differences in custom models to help identify the
 | Capacity | No capacity restrictions. | Uses the default Power Platform environment (custom environments with Dataverse database supported). | Uses the default Power Platform environment (custom environments with Dataverse database supported). |
 | Supported languages| Models work on all Latin alphabet languages. In addition to English: German, Swedish, French, Spanish, Italian, and Portuguese. | Current language support is for English. | Language support for [more than 100 languages](/ai-builder/form-processing-model-requirements#languages-supported). |
 
-## See also
 
-[Training: Improve business performance with AI Builder](/training/paths/improve-business-performance-ai-builder/?source=learn)

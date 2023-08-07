@@ -102,7 +102,7 @@ You won't be able to choose a status for Secure Score recommended actions in the
 
 #### Completed recommended actions
 
-recommended actions have a "completed" status once all possible points for the recommended action have been achieved. Completed recommended actions are confirmed though Microsoft data, and you can't change the status.
+Recommended actions have a "completed" status once all possible points for the recommended action have been achieved. Completed recommended actions are confirmed through Microsoft data, and you can't change the status.
 
 ### Assess information and review user impact
 
@@ -126,3 +126,4 @@ If you have any issues, let us know by posting in the [Security, Privacy & Compl
 - [Track your Microsoft Secure Score history and meet goals](microsoft-secure-score-history-metrics-trends.md)
 - [What's coming](microsoft-secure-score-whats-coming.md)
 - [What's new](microsoft-secure-score-whats-new.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

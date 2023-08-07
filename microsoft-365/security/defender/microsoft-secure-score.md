@@ -66,7 +66,7 @@ If you have a license for one of the supported Microsoft products, then you'll s
 Your score is updated in real time to reflect the information presented in the visualizations and recommended action pages. Secure Score also syncs daily to receive system data about your achieved points for each action.
 
 > [!NOTE]
-> For Microsoft Teams related recommendations, the recommendation state will get updated when changes occur in the configuration state. In addition, the recommendation state is refreshed once a month.
+> For Microsoft Teams and AAD related recommendations, the recommendation state will get updated when changes occur in the configuration state. In addition, the recommendation state is refreshed once a month or once a week, respectively.
 
 ### Key scenarios
 
@@ -85,12 +85,23 @@ For example, a recommended action states you get 10 points by protecting all you
 
 Currently there are recommendations for the following products:
 
-- Microsoft 365 (including Exchange Online)
+- App governance
 - Azure Active Directory
+- Citrix ShareFile
 - Microsoft Defender for Endpoint
 - Microsoft Defender for Identity
+- Microsoft Defender for Office
+- Docusign
+- Exchange Online
+- Github
 - Microsoft Defender for Cloud Apps
+- Microsoft Information Protection
 - Microsoft Teams
+- Okta
+- Salesforce
+- ServiceNow
+- SharePoint Online
+- Zoom
 
 Recommendations for other security products are coming soon. The recommendations won't cover all the attack surfaces associated with each product, but they're a good baseline. You can also mark the recommended actions as covered by a third party or alternate mitigation.
 
@@ -145,3 +156,4 @@ If you have any issues, let us know by posting in the [Security, Privacy & Compl
 - [Track your Microsoft Secure Score history and meet goals](microsoft-secure-score-history-metrics-trends.md)
 - [What's coming](microsoft-secure-score-whats-coming.md)
 - [What's new](microsoft-secure-score-whats-new.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

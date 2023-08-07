@@ -76,3 +76,4 @@ To review apps that would have been blocked, open Event Viewer and filter for Ev
 - [Enable network protection](enable-network-protection.md)
 
 - [Troubleshoot network protection](troubleshoot-np.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

@@ -75,7 +75,7 @@ Users and groups are included in the same file. Depending on whether it's a user
 > [!IMPORTANT]
 > **Do NOT include column headings in your CSV file.**  In the examples below we include them for illustrative purposes only.
 
-**Users**. Enter your values as shown in this example for guests:
+**Users**. Enter your values as shown in this example for Users:
 
 :::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-csv-mapping-users-columns.png" alt-text="format to use for mapping users":::
 
@@ -188,7 +188,7 @@ Get-SPOCrossTenantCompatibilityStatus -PartnerCrossTenantHostURL https://m365x12
 |Incompatible|No|
 
 > [!NOTE]
-> We recommend waiting a period of 24 hours. If your tenants are still reporting as *incompatible*, contact support.
+> We recommend waiting a period of **48 hours**. If your tenants are still reporting as *incompatible*, contact support.
 >
 > We recommend performing the compatibility status check on a frequent basis and prior to starting ANY instances of cross tenant migrations. If the tenants are not compatible, this can result in cross-tenant migrations failing.
 

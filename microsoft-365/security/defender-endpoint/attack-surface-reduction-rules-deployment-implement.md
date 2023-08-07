@@ -34,7 +34,6 @@ search.appverid: met150
 
 Implementing attack surface reduction (ASR) rules move the first test ring into an enabled, functional state.
 
-> [!div class="mx-imgBorder"]
 > :::image type="content" source="images/asr-rules-implementation-steps.png" alt-text="The procedure to implement ASR rules" lightbox="images/asr-rules-implementation-steps.png":::
   
 
@@ -87,7 +86,7 @@ In cases in which blocks aren't self resolved in a timely manner, customers can 
 > [!WARNING]
 > Excluding or unblocking files or folders could potentially allow unsafe files to run and infect your devices. Excluding files or folders can severely reduce the protection provided by attack surface reduction rules. Files that would have been blocked by a rule will be allowed to run, and there will be no report or event recorded.
 
-An exclusion applies to all rules that allow exclusions. You can specify an individual file, folder path, or the fully qualified domain name for a resource. However, you can't limit an exclusion to a specific rule.
+An exclusion can apply to all rules that allow exclusions or apply to specific rules using [per-rule exclusions](attack-surface-reduction-rules-deployment-test.md#configure-asr-rules-per-rule-exclusions). You can specify an individual file, folder path, or the fully qualified domain name for a resource.
 
 An exclusion is applied only when the excluded application or service starts. For example, if you add an exclusion for an update service that is already running, the update service continues to trigger events until the service is stopped and restarted.
 
@@ -147,3 +146,4 @@ You can customize the notification for when a rule is triggered and blocks an ap
 ## See also
 
 - [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

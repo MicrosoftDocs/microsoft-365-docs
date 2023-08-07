@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: ragovind
-ms.date: 06/02/2022
+ms.date: 07/03/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -46,5 +46,6 @@ The Devices tab also includes the following options:
 :::image type="content" source="../media/m365-lighthouse-device-security-overview/device-security-devices-tab.png" alt-text="Screenshot of the Devices tab on the Device security page." lightbox="../media/m365-lighthouse-device-security-overview/device-security-devices-tab.png":::
 
 ## Related content
+
 [Manage Microsoft Defender for Endpoint incidents](../security/defender-endpoint/manage-incidents.md) (article)\
 [Investigate incidents in Microsoft Defender for Endpoint](../security/defender-endpoint/investigate-incidents.md) (article)

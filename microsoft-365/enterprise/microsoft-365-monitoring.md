@@ -22,7 +22,11 @@ description: "Use Microsoft 365 monitoring for information about incidents or ad
 
 # Learn about Microsoft 365 monitoring
 
-You can use dashboards in the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339) to monitor the health of various Microsoft services for your organization's Microsoft 365 subscription. This capability was initially started with Exchange Online and now getting expanded to other Microsoft services like Microsoft Teams, Microsoft 365 Apps and more service in future. Monitoring provides you with information about incidents and advisories that are collected in these categories:
+You can use dashboards in the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339) to monitor the health of various Microsoft services for your organization's Microsoft 365 subscription. This capability began with Exchange Online and has been expanded to other Microsoft services such as Microsoft Teams and Microsoft 365 Apps, with more services being added in the future.
+
+Microsoft 365 Monitoring increases observability and minimizes downtime through providing near real-time user telemetry data with enriched alerts in the Microsoft 365 admin center's Service Health dashboard.
+
+Monitoring provides you with information about incidents and advisories that are collected in these categories:
 
 - **Infrastructure**. Issue is detected in the Microsoft 365 infrastructure that Microsoft owns for providing regular updates and resolving the issue. For example, users can't access Exchange Online because of issues with Exchange or other Microsoft 365 cloud infrastructure.
 
@@ -32,17 +36,15 @@ You can use dashboards in the [Microsoft 365 admin center](https://go.microsoft.
 
 Here's an example of the **Service health** page in the Microsoft 365 admin center, which is available at **Health** > **Service health** for organization scenarios and [priority account](../admin/setup/priority-accounts.md) scenarios.
 
-![The Service health page in the Microsoft 365 admin center.](../media/microsoft-365-exchange-monitoring/service-health-dashboard-example.png)
+[![Screenshot of the Service health page in the Microsoft 365 admin center.](../media/m365-monitoring-final.png)](../media/m365-monitoring-final.png#lightbox)
 
-**Issues in your organization** will be identified and used by organizational-level monitoring and priority account monitoring.
+If Microsoft 365 monitoring discovers issues that need your attention, these will be show under the **Issues in your environment that require action** in the Active Issues section of the page.
 
-The value of the **Health** column under **Issues in your organization** indicates whether your organization's infrastructure or third-party software affects the service health experience of your organization's users and/or priority accounts in Exchange Online. Advisories or incidents require your actions to resolve.
-
-The value of the **Health** column under **Microsoft service health** indicates that the service is healthy or has advisories or incidents based on the cloud services that Microsoft maintains.
+To access detailed monitoring pages for specific services, select **View** under **Organizational-level monitoring** on the service health page.
 
 Here's an example of the Exchange Online monitoring page in the Microsoft 365 admin center that shows the health of organization-level and priority account scenarios available from **Health** > **Service health** > **Exchange Online**.
 
-![Organization-level scenarios for Exchange Online Monitoring.](../media/microsoft-365-exchange-monitoring/exchange-monitoring-org-scenarios.png)
+![Screenshot of organization-level scenarios for Exchange Online Monitoring.](../media/microsoft-365-exchange-monitoring/exchange-monitoring-org-scenarios.png)
 
 With the scenario list page, you can see whether the Microsoft service is healthy or not and whether there are any associated incidents or advisories. For example, with Exchange Online monitoring, you can look at the service health for specific email scenarios and view near real-time signals to determine the impact by organization-level scenario. You can also see health of priority account scenarios, if available.
 
@@ -76,7 +78,7 @@ There are two ways you can provide feedback:
 
 - Submit feedback using the **Is this post helpful? link for a specific incident or advisory.
 
-  ![The "Is this post helpful?" link for a specific incident or advisory.](../media/microsoft-365-exchange-monitoring/exchange-monitoring-example-incident-feedback.png)
+  ![Screenshot of the "Is this post helpful?" link for a specific incident or advisory.](../media/microsoft-365-exchange-monitoring/exchange-monitoring-example-incident-feedback.png)
 
 ## Frequently asked questions
 

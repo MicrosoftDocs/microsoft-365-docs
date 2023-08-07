@@ -19,6 +19,8 @@
       href: mdb-partners.md
     - name: Integration with Microsoft 365 Lighthouse
       href: mdb-lighthouse-integration.md
+    - name: Streaming API
+      href: mdb-streaming-api.md
   - name: Get started
     items:
     - name: Trial user guide - Defender for Business
@@ -85,6 +87,8 @@
       href: mdb-view-edit-create-policies.md
     - name: Understand policy order
       href: mdb-policy-order.md
+  - name: Maintain your environment
+    href: ../../business-premium/m365bp-mdb-maintain-environment.md?bc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-business%2Fbreadcrumb%2Ftoc.json&toc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-business%2Ftoc.json
   - name: Reference information
     items: 
     - name: Top 10 ways to secure your business data

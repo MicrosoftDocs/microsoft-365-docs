@@ -6,8 +6,8 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: diannegali
+author: diannegali
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -17,7 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 07/10/2023
 ---
 
 # Take response actions on a file
@@ -40,14 +40,16 @@ Response actions are available on a file's detailed profile page. Once on this p
 
 Response actions run along the top of the file page, and include:
 
-- Stop and Quarantine File
-- Add Indicator
+- Stop and quarantine file
+- Manage indicator
 - Download file 
 - Collect file
 - Ask Defender Experts
-- Action center
+- Manual actions
+- Go hunt
+- Deep analysis
 
-You can also submit files for deep analysis, to run the file in a secure cloud sandbox. When the analysis is complete, you'll get a detailed report that provides information about the behavior of the file. You can submit files for deep analysis and read past reports by selecting the **Deep analysis** tab. It's located below the file information cards.
+You can also submit files for deep analysis, to run the file in a secure cloud sandbox. When the analysis is complete, you'll get a detailed report that provides information about the behavior of the file. You can submit files for deep analysis and read past reports by selecting the **Deep analysis** action.
 
 Some actions require certain permissions. The following table describes what action certain permissions can take on portable executable (PE) and non-PE files:
 
@@ -160,6 +162,7 @@ The **Download file** button can have the following states:
 
     Non-Portable Executable file (.txt, .docx, and others) 
     - Global admin or Advanced live response
+    - Tenants with [role-based access (RBAC) permissions](../defender/manage-rbac.md) enabled
 
 
 :::image type="content" source="images/atp-download-file-action.png" alt-text="The download file action" lightbox="images/atp-download-file-action.png":::
@@ -279,8 +282,11 @@ The deep analysis summary includes a list of observed *behaviors*, some of which
 
 Results of deep analysis are matched against threat intelligence and any matches will generate appropriate alerts.
 
-Use the deep analysis feature to investigate the details of any file, usually during an investigation of an alert or for any other reason where you suspect malicious behavior. This feature is available within the **Deep analysis** tab, on the file's profile page.
+Use the deep analysis feature to investigate the details of any file, usually during an investigation of an alert or for any other reason where you suspect malicious behavior. This feature is available at the top of the file's page. Select the three dots to access the **Deep analysis** action.
 
+:::image type="content" source="../../media/defender-endpoint/deep-analysis.png" alt-text="Screenshot of the Deep analysis action" lightbox="../../media/defender-endpoint/deep-analysis.png":::
+
+Learn about deep analysis in the following video:
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4aAYy?rel=0]
 
 **Submit for deep analysis** is enabled when the file is available in the Defender for Endpoint backend sample collection, or if it was observed on a Windows 10 device that supports submitting to deep analysis.
@@ -359,3 +365,4 @@ If you come across a problem when trying to submit a file, try each of the follo
 - [Take response actions on a device](respond-machine-alerts.md)
 - [Investigate files](investigate-files.md)
 - [Manual response actions in Microsoft Defender for Endpoint Plan 1](defender-endpoint-plan-1.md#manual-response-actions)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

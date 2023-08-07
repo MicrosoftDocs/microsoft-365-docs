@@ -58,3 +58,4 @@ Here's how it works.
 
 - [Overview of incidents in Microsoft 365 Defender](incidents-overview.md)
 - [Investigate incidents with Microsoft Sentinel](/azure/sentinel/tutorial-investigate-cases)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

@@ -22,8 +22,6 @@ search.appverid: met150
 ms.date: 02/17/2023
 ---
 
-<!--v-jweston/jweston-1 is to resume authorship appx. April/May 2023.-->
-
 # Network protection for Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -223,3 +221,4 @@ Within 10-15 minutes, these domains will be listed in Microsoft 365 Defender und
 - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 
 
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

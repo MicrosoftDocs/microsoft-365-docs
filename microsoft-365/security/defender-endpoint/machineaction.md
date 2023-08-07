@@ -98,3 +98,4 @@ ms.date: 12/18/2020
         "relatedFileInfo": null
 }
 ```
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

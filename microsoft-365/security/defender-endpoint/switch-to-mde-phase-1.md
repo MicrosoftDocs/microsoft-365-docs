@@ -1,12 +1,8 @@
 ---
 title: Migrate to Microsoft Defender for Endpoint - Prepare
 description: Get ready to move to Microsoft Defender for Endpoint. Update your devices and configure your network connections.
-keywords: migration, Microsoft Defender for Endpoint, best practice
 ms.service: microsoft-365-security
 ms.subservice: mde
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
@@ -21,7 +17,7 @@ ms.topic: conceptual
 ms.custom: 
 - migrationguides
 - admindeeplinkDEFENDER
-ms.date: 01/12/2023
+ms.date: 06/19/2023
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 search.appverid: met150
 ---
@@ -117,10 +113,11 @@ To enable communication between your devices and Defender for Endpoint, you migh
 \* Windows Server 2016 and Windows Server 2012 R2 require installation of the modern, unified solution for Windows Server 2012 R2 and 2016. For more information, see [Onboard Windows servers to Defender for Endpoint: Windows Server 2012 R2 and Windows Server 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-2012-r2-and-windows-server-2016).
 
 > [!IMPORTANT]
-> The standalone versions of Defender for Endpoint Plan 1 and Plan 2 do not include server licenses. To onboard servers, you'll need an additional license, such as either Defender for Endpoint for Servers, or [Defender for Servers Plan 1 or Plan 2](/azure/defender-for-cloud/plan-defender-for-servers-select-plan). To learn more, see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md).
+> The standalone versions of Defender for Endpoint Plan 1 and Plan 2 do not include server licenses. To onboard servers, you'll need an additional license, such as either [Microsoft Defender for Servers Plan 1 or Plan 2](/azure/defender-for-cloud/plan-defender-for-servers-select-plan). To learn more, see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md).
 
 ## Next step
 
 **Congratulations**! You've completed the **Prepare** phase of [switching to Defender for Endpoint](switch-to-mde-overview.md#the-migration-process)!
 
 - [Proceed to set up Defender for Endpoint](switch-to-mde-phase-2.md).
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

@@ -77,3 +77,4 @@ Learn how to use data sensitivity labels to prioritize incident investigation.
 - [Learn about sensitivity labels in Office 365](../../compliance/sensitivity-labels.md)
 - [Learn to apply sensitivity label inside of email or Office](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
 - [Learn how to use sensitivity labels as a condition when applying Data Loss Prevention](../../compliance/dlp-sensitivity-label-as-condition.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

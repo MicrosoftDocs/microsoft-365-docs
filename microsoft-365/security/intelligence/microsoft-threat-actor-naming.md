@@ -22,6 +22,9 @@ ms.date: 04/18/2023
 
 # How Microsoft names threat actors
 
+> [!IMPORTANT]
+> Learn about how [Volt Typhoon targets US critical infrastructure with living-off-the-land techniques](https://www.microsoft.com/en-us/security/blog/2023/05/24/volt-typhoon-targets-us-critical-infrastructure-with-living-off-the-land-techniques/#:~:text=Volt%20Typhoon%20has%20been%20active%20since%20mid-2021%20and,construction%2C%20maritime%2C%20government%2C%20information%20technology%2C%20and%20education%20sectors)
+
 Microsoft has shifted to a new naming taxonomy for threat actors aligned with the theme of weather. With the new taxonomy, we intend to bring better clarity to customers and other security researchers already confronted with an overwhelming amount of threat intelligence data and offer a more organized, articulate, and easy way to reference threat actors so that organizations can better prioritize and protect themselves.
 
 :::image type="content" source="../../media/threat-actor-naming/threat-actor-naming-categories.png" alt-text="Nation-state actors based on Microsoft naming" lightbox="../../media/threat-actor-naming/threat-actor-naming-categories2.png":::
@@ -34,11 +37,11 @@ Microsoft categorizes threat actors into five key groups:
 
 **Private sector offensive actors (PSOAs):** cyber activity led by commercial actors that are known/legitimate legal entities, that create and sell cyberweapons to customers who then select targets and operate the cyberweapons. These tools threaten many global human rights efforts, as they have been observed targeting and surveilling dissidents, human rights defenders, journalists, civil society advocates, and other private citizens.
 
-**Influence operations:** information campaigns communicated online or offline in a manipulative fashion to shift perceptions, behaviors, or decisions by target audiences to further a group or a nation’s interests and objectives.
+**Influence operations:** information campaigns communicated online or offline in a manipulative fashion to shift perceptions, behaviors, or decisions by target audiences to further a group or a nation's interests and objectives.
 
 **Groups in development:** a temporary designation given to an unknown, emerging, or developing threat activity that allows Microsoft to track it as a discrete set of information until we can reach high confidence about the origin or identity of the actor behind the operation. Once criteria are met, a group in development is converted to a named actor or merged into existing names.
 
-In our new taxonomy, a weather event or *family name* represents one of the above categories. In the case of nation-state actors, we have assigned a family name to a country of origin tied to attribution, like Typhoon indicates origin or attribution to China. For other actors, the family name represents a motivation. For example, Tempest indicates financially motivated actors. Threat actors within the same weather family are given an adjective to distinguish actor groups with distinct tactics, techniques, and procedures (TTPs), infrastructure, objectives, or other identified patterns. For groups in development, where there is a newly discovered, unknown, emerging, or developing cluster of threat activity, we use a temporary designation of Storm and a four-digit number, allowing us to track it as a unique set of information until we can reach high confidence about the origin or identity of the actor behind the operation.
+In our new taxonomy, a weather event or *family name* represents one of the above categories. In the case of nation-state actors, we have assigned a family name to a country/region of origin tied to attribution, like Typhoon indicates origin or attribution to China. For other actors, the family name represents a motivation. For example, Tempest indicates financially motivated actors. Threat actors within the same weather family are given an adjective to distinguish actor groups with distinct tactics, techniques, and procedures (TTPs), infrastructure, objectives, or other identified patterns. For groups in development, where there is a newly discovered, unknown, emerging, or developing cluster of threat activity, we use a temporary designation of Storm and a four-digit number, allowing us to track it as a unique set of information until we can reach high confidence about the origin or identity of the actor behind the operation.
 
 The table below shows how the new family names map to a sampling of the threat actors that we track.
 
@@ -126,6 +129,7 @@ Use the following reference table below to understand how our previously publicl
 |DEV-0796|Phlox Tempest|Financially motivated|ClickPirate, Chrome Loader, Choziosi loader|
 |DEV-0832|Vanilla Tempest|Financially motivated||
 |DEV-0950|Lace Tempest|Financially motivated|FIN11, TA505|
+|DEV-XXXX|[Volt Typhoon](https://www.microsoft.com/security/blog/2023/05/24/volt-typhoon-targets-us-critical-infrastructure-with-living-off-the-land-techniques) |China|BRONZE SILHOUETTE|
 
 Read our announcement about the new taxonomy for more information: [https://aka.ms/threatactorsblog](https://aka.ms/threatactorsblog)
 

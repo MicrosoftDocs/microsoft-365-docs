@@ -21,16 +21,15 @@ ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 4/20/2023
+ms.date: 6/19/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
 # Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
-
-**Applies to**
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 In organizations with Microsoft Defender for Office 365, Safe Attachments for Office 365 for SharePoint, OneDrive, and Microsoft Teams protects your organization from inadvertently sharing malicious files. For more information, see [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md).
 
@@ -104,13 +103,13 @@ You can create an alert policy that notifies admins when Safe Attachments for Sh
 3. On the **Name your alert, categorize it, and choose a severity** page, configure the following settings:
    - **Name**: Type a unique and descriptive name. For example, **Malicious Files in Libraries**.
    - **Description**: Type an optional description. For example, **Notifies admins when malicious files are detected in SharePoint Online, OneDrive, or Microsoft Teams**.
-   - **Severity**: Select **Low**, **Medium**, or **High** from the drop down list.
-   - **Category**: Select **Threat management** from the drop down list.
+   - **Severity**: Select **Low**, **Medium**, or **High** from the dropdown list.
+   - **Category**: Select **Threat management** from the dropdown list.
 
    When you're finished on the **Name your alert, categorize it, and choose a severity** page, select **Next**.
 
 4. On the **Choose an activity, conditions and when to trigger the alert** page, configure the following settings:
-   - **What do you want to alert on?** section \> **Activity is** \> **Common user activities** section \> Select **Detected malware in file** from the drop down list.
+   - **What do you want to alert on?** section \> **Activity is** \> **Common user activities** section \> Select **Detected malware in file** from the dropdown list.
    - **How do you want the alert to be triggered?** section: Select **Every time an activity matches the rule**.
 
    When you're finished on the **Choose an activity, conditions and when to trigger the alert** page, select **Next**.

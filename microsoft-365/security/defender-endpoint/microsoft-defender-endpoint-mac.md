@@ -18,7 +18,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 03/22/2021
+ms.date: 04/26/2023
 ---
 
 # Microsoft Defender for Endpoint on Mac
@@ -164,3 +164,4 @@ Starting with macOS 11 (Big Sur), Microsoft Defender for Endpoint has been fully
 - For more information about logging, uninstalling, or other topics, see [Resources for Microsoft Defender for Endpoint on Mac](mac-resources.md).
 - [Privacy for Microsoft Defender for Endpoint on Mac](mac-privacy.md).
 - [Turn on Network protection for macOS](network-protection-macos.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

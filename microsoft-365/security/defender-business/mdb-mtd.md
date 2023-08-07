@@ -4,7 +4,7 @@ description: Get an overview of mobile threat defense in Defender for Business. 
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-ms.date: 05/04/2023
+ms.date: 07/19/2023
 ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: mdb
@@ -14,7 +14,7 @@ ms.collection:
 - m365-security
 - m365-initiative-defender-business
 - tier1
-ms.reviewer: jomaun
+ms.reviewer: nehabha
 search.appverid: MET150
 f1.keywords: NOCSH 
 audience: Admin
@@ -22,13 +22,13 @@ audience: Admin
 
 # Mobile threat defense capabilities in Microsoft Defender for Business
 
-Microsoft Defender for Business provides advanced threat protection capabilities for devices, such as Windows and Mac clients. **Defender for Business capabilities now include mobile threat defense (preview)**! Mobile threat defense capabilities help protect Android and iOS devices, without requiring you to use Microsoft Intune to onboard mobile devices.
+Microsoft Defender for Business provides advanced threat protection capabilities for devices, such as Windows and Mac clients. **Defender for Business capabilities now include mobile threat defense**! Mobile threat defense capabilities help protect Android and iOS devices, without requiring you to use Microsoft Intune to onboard mobile devices.
 
 In addition, mobile threat defense capabilities integrate with [Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md), where Cloud Solution Providers (CSPs) can view information about vulnerable devices and help mitigate detected threats. 
 
 ## What's included in mobile threat defense?
 
-The following table summarizes the capabilities that are included in mobile threat defense (preview) in Defender for Business:
+The following table summarizes the capabilities that are included in mobile threat defense in Defender for Business:
 
 | Capability | Android | iOS |
 |:---|:---|:---|
@@ -54,22 +54,20 @@ The following table summarizes the capabilities that are included in mobile thre
 
 ## How to get mobile threat defense capabilities
 
-Mobile threat defense capabilities are currently in preview for [Defender for Business](get-defender-business.md) customers. Here's how to get these capabilities for your organization:
+Mobile threat defense capabilities are now generally available to [Defender for Business](get-defender-business.md) customers. Here's how to get these capabilities for your organization:
 
-1. Make sure your organization has signed up to receive preview features for your tenant. See [Microsoft Defender for Business preview features](mdb-preview.md).
-
-2. Make sure that Defender for Business has finished provisioning. In the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Assets** > **Devices**.
+1. Make sure that Defender for Business has finished provisioning. In the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Assets** > **Devices**.
 
    - If you see a message that says, "Hang on! We're preparing new spaces for your data and connecting them," it means that Defender for Business hasn't finished provisioning. This process is happening now, and can take up to 24 hours to complete. 
    - If you see a list of devices, or you're prompted to onboard devices, it means Defender for Business provisioning has completed. 
 
-3. Review, and if necessary, edit your [next-generation protection policies](mdb-next-generation-protection.md).
+2. Review, and if necessary, edit your [next-generation protection policies](mdb-next-generation-protection.md).
 
-4. Review, and if necessary, edit your [firewall policies and custom rules](mdb-firewall.md).
+3. Review, and if necessary, edit your [firewall policies and custom rules](mdb-firewall.md).
 
-5. Review, and if necessary, edit your [web content filtering](mdb-web-content-filtering.md) policy.
+4. Review, and if necessary, edit your [web content filtering](mdb-web-content-filtering.md) policy.
 
-6. To onboard mobile devices, see the "Use the Microsoft Defender app" procedures in [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md).
+5. To onboard mobile devices, see the "Use the Microsoft Defender app" procedures in [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md).
 
 ## See also
 

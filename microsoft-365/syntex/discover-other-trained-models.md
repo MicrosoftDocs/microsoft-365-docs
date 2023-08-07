@@ -83,14 +83,3 @@ To remove an applied model from your document library:
 
 2. On the model you want to remove, select **View model details**, and then select **Remove from library**.
 
-<!---
-## Change the view in a document library
-
-[!INCLUDE [Change the view in a document library](../includes/change-library-view.md)]
---->
-
-## See also
-
-[Share an enterprise model](model-discovery.md)
-
-[Choose the view in a document library](choose-library-view.md)

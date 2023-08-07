@@ -20,16 +20,15 @@ ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 5/10/2023
+ms.date: 6/21/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
 # View Defender for Office 365 reports in the Microsoft 365 Defender portal
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
-
-**Applies to**
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 In organizations with Microsoft Defender for Office 365 Plan 1 or Plan 2 (for example, Microsoft 365 E5 or Microsoft Business Premium) a variety of security-related reports are available. If you have the [necessary permissions](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports), you can view and download these reports in the Microsoft 365 Defender portal.
 
@@ -150,6 +149,7 @@ The details table below the chart provides the following near-real-time view of 
 - **URL**
 - **Action**
 - **App**
+- **Tags**: For more information about user tags, see [User tags](user-tags-about.md).
 
 Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** to modify the report and the details table by selecting one or more of the following values in the flyout that opens:
 
@@ -158,10 +158,11 @@ Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" bord
 - **Evaluation**: Select **Yes** or **No**. For more information, see [Try Microsoft Defender for Office 365](try-microsoft-defender-for-office-365.md).
 - **Domains (separated by commas)**: The URL domains listed in the report results.
 - **Recipients (separated by commas)**
+- **Tag**: **All** or the specified user tag (including priority accounts).
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-On the **URL threat protection** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](reports-email-security.md#schedule-recurring-reports)**, :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](reports-email-security.md#request-on-demand-reports-for-download)**, and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](reports-email-security.md#export-report-data)** buttons are available.
+On the **URL threat protection** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](reports-email-security.md#schedule-recurring-reports)**, :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](reports-email-security.md#request-on-demand-reports-for-download)**, and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](reports-email-security.md#export-report-data)** actions are available.
 
 ### View data by URL click by application in the URL protection report
 
@@ -180,6 +181,7 @@ The details table below the chart provides the following near-real-time view of 
 - **URL**
 - **Action**: The same URL click protection actions as previously described for the [View data by URL click protection action](#view-data-by-url-click-protection-action-in-the-url-protection-report) view.
 - **App**
+- **Tags**: For more information about user tags, see [User tags](user-tags-about.md).
 
 Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** to modify the report and the details table by selecting one or more of the following values in the flyout that opens:
 
@@ -189,10 +191,11 @@ Select :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" bord
 - **Evaluation**: Select **Yes** or **No**. For more information, see [Try Microsoft Defender for Office 365](try-microsoft-defender-for-office-365.md).
 - **Domains (separated by commas)**: The URL domains listed in the report results.
 - **Recipients (separated by commas)**
+- **Tag**: **All** or the specified user tag (including priority accounts).
 
 When you're finished configuring the filters, select **Apply**, **Cancel**, or :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
-On the **URL threat protection** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](reports-email-security.md#schedule-recurring-reports)**, :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](reports-email-security.md#request-on-demand-reports-for-download)**, and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](reports-email-security.md#export-report-data)** buttons are available.
+On the **URL threat protection** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](reports-email-security.md#schedule-recurring-reports)**, :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](reports-email-security.md#request-on-demand-reports-for-download)**, and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](reports-email-security.md#export-report-data)** actions are available.
 
 ## Additional reports to view
 
@@ -215,6 +218,8 @@ PowerShell reporting cmdlets:
 |Compromised users|[Get-CompromisedUserAggregateReport](/powershell/module/exchange/get-compromiseduseraggregatereport) <p> [Get-CompromisedUserDetailReport](/powershell/module/exchange/get-compromiseduserdetailreport)|
 |Mail flow status|[Get-MailflowStatusReport](/powershell/module/exchange/get-mailflowstatusreport)|
 |Spoofed users|[Get-SpoofMailReport](/powershell/module/exchange/get-spoofmailreport)|
+|Post delivery activity summary|[Get-AggregateZapReport](/powershell/module/exchange/get-aggregatezapreport)|
+|Post delivery activity details|[Get-DetailZapReport](/powershell/module/exchange/get-detailzapreport)|
 
 ## What permissions are needed to view the Defender for Office 365 reports?
 

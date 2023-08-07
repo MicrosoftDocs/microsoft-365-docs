@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: ragovind
-ms.date: 08/29/2022
+ms.date: 07/03/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -30,7 +30,7 @@ Lighthouse uses sign-in activity to detect inactive users accounts. The **Inacti
 
 ## Review inactive users
 
-1. In the left navigation pane in Lighthouse, select **Users** > **Account management > Inactive users**.
+1. In the left navigation pane in Lighthouse, select **Users** > **Account management** > **Inactive users**.
 
 2. On the **Inactive Users** tab, set filters to the desired result.
 
@@ -38,11 +38,11 @@ Lighthouse uses sign-in activity to detect inactive users accounts. The **Inacti
 
 4. Select any user to open the user details pane and see more information about the account.
 
-5. Once you’ve determined that a user account is no longer needed, you can delete or block the account. At the minimum, you should block the user account to reduce security risks. From the user details pane, select **Block sign-in** or **Delete user**.
+5. Once you've determined that a user account is no longer needed, you can delete or block the account. At the minimum, you should block the user account to reduce security risks. From the user details pane, select **Block sign-in** or **Delete user**.
 
 ## Block sign-in for multiple user accounts
 
-1. In the left navigation pane in Lighthouse, select **Users** > **Account management >** **Inactive users**.
+1. In the left navigation pane in Lighthouse, select **Users** > **Account management** > **Inactive users**.
 
 2. On the **Inactive users** tab, expand any tenant in the list to see a list of inactive users within the tenant, select the users you want to block, and then select **Block sign-in**.
 

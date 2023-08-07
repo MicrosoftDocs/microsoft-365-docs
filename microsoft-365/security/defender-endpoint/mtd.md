@@ -126,3 +126,4 @@ Need help in deploying or configuring Defender for Endpoint on Android & iOS? If
 - [Microsoft Defender for Endpoint on iOS](microsoft-defender-endpoint-ios.md)
 - Stay informed about upcoming releases by reading our [announcements](https://aka.ms/mdeblog).
 
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

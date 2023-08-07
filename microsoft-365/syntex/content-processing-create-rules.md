@@ -56,20 +56,10 @@ To move or copy a file from one document library to another, follow these steps.
           When you select **Choose a library**, you can either select from the list of suggested libraries or enter the name of another library.
 
        > [!NOTE]
-       > If you try to set up a rule to move or copy a file to a library that already has a move or copy rule applied, you'll receive a message saying that you need to disable all move or copy rules on the destination library. To disable a rule, see [Manage a rule](#manage-a-rule).<br>      
+       > If you try to set up a rule to move or copy a file to a library that already has a move or copy rule applied, you'll receive a message saying that you need to disable all move or copy rules on the destination library. To disable a rule, see [Manage a rule](content-processing-overview.md#manage-a-rule).<br>      
        >![Screenshot of the rule statement page with the message stating that the library already has a rule applied.](../media/content-understanding/content-rule-disable-rules.png)
 
-4. When your rule statement is complete, select **Create**. You'll see the new rule on the **Manage rules** page.
-
-## Manage a rule
-
-1. In the document library, select **Automate** > **Rules** > **Manage rules**.
-
-   ![Screenshot of the document library showing the Automate > Rules > Manage rules option.](../media/content-understanding/content-processing-manage-rule.png)
-
-2. On the **Manage rules** page, you can see the rules that have been applied. You can turn on or off a rule or [create a new rule](#create-a-rule-to-move-or-copy-a-file-from-one-document-library-to-another-in-microsoft-syntex) to automate actions on a specific document library.
-
-   ![Screenshot of the Manage rules page showing the rule and actions.](../media/content-understanding/content-processing-manage-rules-page.png)
+    4. When your rule statement is complete, select **Create**. You can [see and manage the new rule](content-processing-overview.md#manage-a-rule) on the **Manage rules** page.
 
 ## View the activity feed of a document library
 
@@ -82,6 +72,3 @@ In the document library, in the upper-right corner of the page, select the detai
 > [!NOTE]
 > Currently, the activity feed shows only move activity. Copy activity will be available in a future release.
 
-## See also
-
-[Overview of content processing](content-processing-overview.md)

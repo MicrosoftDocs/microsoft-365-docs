@@ -18,7 +18,7 @@ metadata:
   - m365-security
   - tier1
   search.appverid: met150
-  ms.date: 04/06/2023
+  ms.date: 05/24/2023
 title: Troubleshoot problems with tamper protection
 summary: |
 
@@ -29,35 +29,46 @@ sections:
       - question: |
           Tamper protection is preventing my security team from managing a device. What should we do?
         answer: |
-         If tamper protection prevents your IT or security team from performing a necessary task on a device, consider using [troubleshooting mode](enable-troubleshooting-mode.md). We recommend keeping tamper protection turned on for your organization.
+         If tamper protection prevents your IT or security team from performing a necessary task on a device, consider using [troubleshooting mode](enable-troubleshooting-mode.md). After troubleshooting mode ends, any changes made to tamper-protected settings are reverted to their configured state.
 
       - question: |
           Changes to Microsoft Defender Antivirus settings using Group Policy are ignored. Why is this happening, and what can we do about it?
         answer: |
-          If you're using Group Policy to manage Microsoft Defender Antivirus settings, keep in mind that tamper protection can block changes to certain settings in Microsoft Defender Antivirus. When you use Group Policy to make changes to Microsoft Defender Antivirus settings and the tamper protection is on, the settings with tamper protection is ignored. For more information, see [What happens when tamper protection is turned on](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on)?
+          If you're using Group Policy to manage Microsoft Defender Antivirus settings, keep in mind that tamper protection can block changes to certain settings in Microsoft Defender Antivirus. When you use Group Policy to make changes to Microsoft Defender Antivirus settings and the tamper protection is on, changes to tamper-protected settings are ignored. For more information, see [What happens when tamper protection is turned on](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on)?
+
+          Depending on your particular scenario, you have several options available: 
+          
+          - If you must make changes to a device and tamper protection is blocking those changes, you can use [troubleshooting mode](/microsoft-365/security/defender-endpoint/enable-troubleshooting-mode) to temporarily disable tamper protection on the device. After troubleshooting mode ends, any changes made to tamper-protected settings are reverted to their configured state.
+
+          - You can use Intune or Configuration Manager to exclude devices from tamper protection. 
 
       - question: |
-          Exclusions for Microsoft Defender Antivirus don't seem to be tamper protected. What should we do?
+          How do we protect exclusions for Microsoft Defender Antivirus?
         answer: |
           1. Ensure that all of the following requirements are met:
 
-            - Devices are running Windows Defender platform `4.18.2211.5` or later. (See [Monthly platform and engine versions](microsoft-defender-antivirus-updates.md#monthly-platform-and-engine-versions).)
-            - `DisableLocalAdminMerge` is enabled. (See [DisableLocalAdminMerge](/windows/client-management/mdm/defender-csp).)
-            - Tamper protection is deployed through Intune, and only Intune manages all devices.
-            - Microsoft Defender Antivirus exclusions are managed in Microsoft Intune. (See [Settings for Microsoft Defender Antivirus policy in Microsoft Intune for Windows devices](/mem/intune/protect/antivirus-microsoft-defender-settings-windows).)
+             - Devices are running Windows Defender platform `4.18.2211.5` or later. (See [Monthly platform and engine versions](microsoft-defender-antivirus-updates.md#monthly-platform-and-engine-versions).)
+
+             - `DisableLocalAdminMerge` is enabled. (See [DisableLocalAdminMerge](/windows/client-management/mdm/defender-csp).)
+
+             - Tamper protection is deployed through Intune, and only Intune is used to manage devices.
+
+             - Microsoft Defender Antivirus exclusions are managed in Microsoft Intune. (See [Settings for Microsoft Defender Antivirus policy in Microsoft Intune for Windows devices](/mem/intune/protect/antivirus-microsoft-defender-settings-windows).)
 
           2. Confirm that only Intune manages the device. Go to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender` (or `HKLM\SOFTWARE\Microsoft\Windows Defender`), and look for a `REG_DWORD` entry called **ManagedDefenderProductType**.
 
-            - If **ManagedDefenderProductType** has a value of `6`, then the device is managed by Intune only (*this value is required for exclusions to be tamper protected*).
-            - If **ManagedDefenderProductType** has a value of `7`, then the device is co-managed, such as by Intune and Configuration Manager (*this value indicates that exclusions aren't currently tamper protected*).
+             - If **ManagedDefenderProductType** has a value of `6`, then the device is managed by Intune only (*this value is required to protect Microsoft Defender Antivirus exclusions*).
 
-          3. Confirm that tamper protection is deployed and that exclusions are tamper protected. Go to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Features` (or `HKLM\SOFTWARE\Microsoft\Windows Defender\Features`), and look for a `REG_DWORD` entry called **TPExclusions**.
+             - If **ManagedDefenderProductType** has a value of `7`, then the device is comanaged, such as by Intune and Configuration Manager (*this value indicates that exclusions aren't currently tamper protected*).
 
-            - If **TPExclusions** has a value of `1`, then all required conditions are met, and the new functionality to protect exclusions is enabled on the device. In this case, exclusions are tamper protected.
-            - If **TPExclusions** has a value of `0`, then tamper protection isn't currently protecting exclusions on the device. (*If you meet all the requirements and this state seems incorrect, contact support*.)
-          
-          > [!CAUTION]
-          > **Don't change the value of the registry keys**. Use the preceding procedure for information only. Changing keys have no effect on whether tamper protection applies to exclusions.
+          3. Confirm that tamper protection is deployed and that Microsoft Defender Antivirus exclusions are protected. Go to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Features` (or `HKLM\SOFTWARE\Microsoft\Windows Defender\Features`), and look for a `REG_DWORD` entry called **TPExclusions**.
+
+             - If **TPExclusions** has a value of `1`, then all required conditions are met, and the new functionality to protect exclusions is enabled on the device. In this case, exclusions are tamper protected.
+
+             - If **TPExclusions** has a value of `0`, then tamper protection isn't currently protecting exclusions on the device. (*If you meet all the requirements and this state seems incorrect, contact support*.)
+
+             > [!CAUTION]
+             > **Don't change the value of the registry keys**. Use the preceding procedure for information only. Changing keys have no effect on whether tamper protection applies to exclusions.
 
 
       

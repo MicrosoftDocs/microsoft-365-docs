@@ -99,3 +99,4 @@ If you deactivate a workload, the roles created and edited within Microsoft 365 
 ## Next steps
 
 - [Edit or delete roles](edit-delete-rbac-roles.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

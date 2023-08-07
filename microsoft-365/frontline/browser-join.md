@@ -1,8 +1,8 @@
 ---
 title: Manage the join experience for Teams Virtual Appointments on browsers
-author: daisyfell
-ms.author: daisyfeller
-manager: samanro
+author: lana-chin
+ms.author: v-chinlana
+manager: serdars
 audience: ITPro
 ms.topic: how-to
 ms.service: microsoft-365-frontline 
@@ -98,7 +98,7 @@ Here are the browsers that are currently supported. We support the latest versio
 |Platform  |Google Chrome |Apple Safari |Microsoft Edge (Chromium)|
 |---------|:---|:---|:---:|
 |Android   | &#x2714; &sup1;      |         |         |
-|iOS    |         | &#x2714; &sup1; &sup2; |         |
+|iOS    | &#x2714; | &#x2714; &sup1; &sup2; |         |
 |macOS     | &#x2714; | &#x2714;|         |
 |Windows    | &#x2714; |   | &#x2714; |
 |Ubuntu/Linux     | &#x2714;         |     |         |

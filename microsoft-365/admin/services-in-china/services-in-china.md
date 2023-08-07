@@ -73,17 +73,17 @@ If you would like to learn how to get started with general Office 365 services, 
 
 |Function|Availability|
 |---|---|
-|Sharing a document, library, or site by email with someone outside of your organization|This feature is available, but off by default as using it could make files shared accessible outside of your country. Administrators do have the ability to turn it on, but will get a warning message indicating that it could make files shared accessible outside of your country. Users who attempt to share with someone outside of the organization will also receive a warning. For more information, see [Share SharePoint files or folders in Office 365](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c).|
+|Sharing a document, library, or site by email with someone outside of your organization|This feature is available, but off by default as using it could make files shared accessible outside of your country/region. Administrators do have the ability to turn it on, but will get a warning message indicating that it could make files shared accessible outside of your country/region. Users who attempt to share with someone outside of the organization will also receive a warning. For more information, see [Share SharePoint files or folders in Office 365](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c).|
 |Access Services|Access 2013 is supported, but adding new Access apps may not be available as this feature will be retired from Office 365 and SharePoint Online. Creation of new Access-based web apps and Access web databases in Office 365 and SharePoint Online will stop starting in June 2017 and any remaining web apps and web databases by April 2018. Additionally, Access 2010 functionality is not supported, and attempting to use an Access 2010 database will result in errors and possible data loss.|
 |Microsoft Power Apps|Microsoft Power Apps and Microsoft Power Automate are now available to customers in regulated industries and commercial organizations that do business with tables in China and require local data residency.|
 |Information Rights Management (IRM)|The ability to set IRM capabilities to SharePoint for your organization is coming soon.|
-|Ability to translate text or pages|Available, but off by default. Tenant admins can turn this ability on, but the translation cloud service may be located outside your country. If you do not want users to send content to a translation cloud service, you may keep these features disabled.|
+|Ability to translate text or pages|Available, but off by default. Tenant admins can turn this ability on, but the translation cloud service may be located outside your country/region. If you do not want users to send content to a translation cloud service, you may keep these features disabled.|
 |Public website ICP registration|China Internet compliance policy requires that you get an Internet Content Provider (ICP) number for your public website.|
-|Public website features|Public websites are available only if you purchased Office 365 before March 9, 2015. However, Bing maps, external sharing, and comments are not available in a public web site as these features may send data outside of your country.|
-|Newsfeed and Yammer (enterprise social networks)|Newsfeed (the social hub where you'll see updates from the people, documents, sites, and tags you're following) is available. Yammer is unavailable.|
+|Public website features|Public websites are available only if you purchased Office 365 before March 9, 2015. However, Bing maps, external sharing, and comments are not available in a public web site as these features may send data outside of your country/region.|
+|Newsfeed and Viva Engage (enterprise social networks)|Newsfeed (the social hub where you'll see updates from the people, documents, sites, and tags you're following) is available. Viva Engage is unavailable.|
 |Autohosted apps|You can deploy a provider-hosted app that uses SharePoint and SQL Azure. For more information, see [Create a basic provider hosted app for SharePoint](/sharepoint/dev/sp-add-ins/get-started-creating-provider-hosted-sharepoint-add-ins). Coming soon is the ability for developers to deploy an app that uses an autohosted web site.|
 |InfoPath|Not available.|
-|SharePoint Store|The Office and SharePoint App Stores are optional services operated by Microsoft Corporation or its affiliate from any of Microsoft's worldwide facilities. The apps available in the Store are provided by various app publishers, and are subject to the app publisher's terms and conditions and privacy statement. Your use of any of these apps may result in your data being transferred to, stored, or processed in any country where the app publisher, its affiliates or service providers maintain facilities. Please carefully review the app publisher's terms and conditions and privacy statements before downloading and using such apps.|
+|SharePoint Store|The Office and SharePoint App Stores are optional services operated by Microsoft Corporation or its affiliate from any of Microsoft's worldwide facilities. The apps available in the Store are provided by various app publishers, and are subject to the app publisher's terms and conditions and privacy statement. Your use of any of these apps may result in your data being transferred to, stored, or processed in any country/region where the app publisher, its affiliates or service providers maintain facilities. Please carefully review the app publisher's terms and conditions and privacy statements before downloading and using such apps.|
 |Office 365 Developer Site: Publish to SharePoint Store using the Seller Dashboard\*|Learn about the [requirements for submitting apps for SharePoint](/office/dev/store/submit-sharepoint-add-ins-for-office-365-operated-by-21vianet-in-china) for distribution to users of Office 365 operated by 21Vianet.|
 
 \*Optional services provided directly by Microsoft, and subject to Microsoft's Terms of Service and privacy statements.
@@ -99,7 +99,7 @@ If you would like to learn how to get started with general Office 365 services, 
 |Sharing contacts|Coming soon.|
 |Message tracking|Coming soon.|
 |Apps|Coming soon.|
-|Places feature|This feature shows maps of addresses in email; because it may allow data outside of your country, it is not available.|
+|Places feature|This feature shows maps of addresses in email; because it may allow data outside of your country/region, it is not available.|
 |Connected Accounts|Connecting to other accounts such as Hotmail (Outlook.com) is coming soon.|
 
 ## Exchange
@@ -179,8 +179,8 @@ Sharing Exchange contact data on Apple mobile devices to the Apple iCloud.|This 
 |Function|Availability|
 |---|---|
 |Open an Office application from the **File** \> **Open in**... button|Available. The ability to do so while roaming is coming soon.|
-|Save to OneDrive for Business while signed in with a Microsoft account|To keep your data within your country, you cannot save a document to your organization site (OneDrive for Business) when you are signed in to Office with a Microsoft account.|
-|Ability to translate text or pages|This feature is available, but off by default. Administrators do have the ability to turn it on, but will get a warning message indicating that it could make data accessible outside of your country.|
+|Save to OneDrive for Business while signed in with a Microsoft account|To keep your data within your country/region, you cannot save a document to your organization site (OneDrive for Business) when you are signed in to Office with a Microsoft account.|
+|Ability to translate text or pages|This feature is available, but off by default. Administrators do have the ability to turn it on, but will get a warning message indicating that it could make data accessible outside of your country/region.|
 
 ## Office client
 

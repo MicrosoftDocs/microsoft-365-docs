@@ -1,9 +1,8 @@
 ---
 title: Manage schedule owners for shift management
-author: lanachin
-ms.author: v-lanachin
-ms.reviewer: aaku
-manager: samanro
+author: lana-chin
+ms.author: v-chinlana
+manager: serdars
 ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
@@ -81,6 +80,14 @@ In this example, we assign a policy named ScheduleOwnerPolicy to a user named re
 
 ```powershell
 Grant-CsTeamsShiftsPolicy -Identity remy@contoso.com -PolicyName ScheduleOwnerPolicy
+```
+
+### Example 3
+
+In this example, we assign a policy named ScheduleOwnerPolicy to a group specified by its object id.
+
+```powershell
+Grant-CsTeamsShiftsPolicy -Group 83d3ca56-50e9-46fb-abd4-4f66939188f8 -PolicyName ScheduleOwnerPolicy
 ```
 
 ## Related articles
