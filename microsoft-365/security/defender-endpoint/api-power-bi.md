@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
+- must-keep
 ms.topic: conceptual
 ms.subservice: mde
 ms.custom: api

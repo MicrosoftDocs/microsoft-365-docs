@@ -146,6 +146,8 @@
       items: 
         - name: Overview 
           href: content-assembly.md
+        - name: Admin setup 
+          href: content-assembly-setup.md
         - name: Create a modern template
           href: content-assembly-modern-template.md
         - name: Map template fields to library columns
@@ -158,19 +160,15 @@
           href: content-assembly-create-document.md
         - name: Generate documents using Power Automate 
           href: automate-document-generation.md
-     
-    - name: Content processing
+
+    - name: Image tagging
       items: 
         - name: Overview 
-          href: content-processing-overview.md
-        - name: Move or copy a file 
-          href: content-processing-create-rules.md
-
-    - name: Content query
-      href: metadata-search.md
-
-    - name: Annotations
-      href: annotations.md
+          href: image-tagging-overview.md
+        - name: Admin setup 
+          href: image-tagging-setup.md
+        - name: Find and manage images
+          href: image-tagging.md
 
     - name: Optical character recognition 
       items: 
@@ -178,6 +176,19 @@
           href: ocr-overview.md
         - name: Admin setup 
           href: ocr.md
+
+    - name: Annotations
+      href: annotations.md
+
+    - name: Content query
+      href: metadata-search.md
+
+    - name: Content processing
+      items: 
+        - name: Overview 
+          href: content-processing-overview.md
+        - name: Move or copy a file 
+          href: content-processing-create-rules.md
 
     - name: Taxonomy
       items:
