@@ -41,10 +41,10 @@ The invoice for your Microsoft business subscription provides a summary of the c
 ## Before you begin
 
 - [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
-- You must have an MCA billing account type and the billing account or contributor or billing profile owner or contributor role to do the tasks in this article.
+- You must have an MCA billing account type and have the billing account owner or contributor role, or the billing profile owner or contributor role to do the tasks in this article.
 
 > [!NOTE]
-> If you signed up for the subscription, you’re automatically a billing account owner.
+> If you're the person who signed up for the subscription, you’re automatically a billing account owner.
 
 ## How often and when am I billed?
 
