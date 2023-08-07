@@ -116,10 +116,10 @@ All our updates contain
 - Fixed an issue where `AntivirusSignatureLastUpdated` was incorrect when executing [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus)
 - Addressed a deadlock caused by Microsoft Defender Antivirus in rare cases
 - Added `ProcessId` to ASR Warn exclusion events (see [ASR rules configuration summary card](attack-surface-reduction-rules-report.md#asr-rules-configuration-summary-card)).
-- Fixed an issue where values specified in ThreatSeverityDefaultAction were not honored intermittently
-- Improved error reporting in unified agent installer
-- Fixed the overriding logic in the "Block all Office applications from creating child processes" ASR rule configured in warn mode
-- Added support for scanning ZSTD containers/archives
+- Fixed an issue where values specified in [ThreatSeverityDefaultAction](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-threatseveritydefaultaction) were not honored intermittently
+- Improved error reporting in the [modern, unified agent installer](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution)
+- Fixed the overriding logic in the ASR rule [Block all Office applications from creating child processes](attack-surface-reduction-rules-reference.md#block-all-office-applications-from-creating-child-processes) configured in warn mode
+- Added support for scanning Zstandard (Zstd) containers/archives
  
 ### Known issues
  
