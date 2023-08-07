@@ -113,7 +113,7 @@ All our updates contain
 - Fixed an issue with [ASR rules deployed via Intune](enable-attack-surface-reduction.md#intune) to display accurately in the Microsoft 365 Defender portal
 - Fixed [tamper protection management](prevent-changes-to-security-settings-with-tamper-protection.md) for customers who have Microsoft 365 E3 or [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md)
 - Improved installation and uninstallation logic on Server SKUs using the modern, unified agent. (See [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md).)
-- Fixed an issue where AntivirusSignatureLastUpdated was incorrect when executing Get-MpComputerStatus
+- Fixed an issue where `AntivirusSignatureLastUpdated` was incorrect when executing [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus)
 - Addressed a deadlock caused by Defender in rare cases
 - Add ProcessId to the ASR Warn Exclusion event
 - Fixed an issue where values specified in ThreatSeverityDefaultAction were not honored intermittently
