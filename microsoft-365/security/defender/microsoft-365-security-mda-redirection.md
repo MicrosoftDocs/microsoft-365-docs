@@ -33,6 +33,8 @@ ms.topic: conceptual
 
 This guide explains how to route accounts to Microsoft 365 Defender by enabling automatic redirection from the former Microsoft Defender for Cloud Apps portal (`portal.cloudappsecurity.com`), to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>.
 
+Customers using preview features are now automatically redirected to Microsoft 365 Defender from the classic Microsoft Defender for Cloud Apps portal. Admins can still update the redirect setting to continue using the classic Defender for Cloud Apps portal.
+
 ## What to expect
 
 Once the redirection setting is enabled, any requests to the standalone Defender for Cloud Apps portal (`portal.cloudappsecurity.com`) will be redirected to Microsoft 365 Defender (<https://security.microsoft.com>) along with any direct links to its functionality. Accounts accessing the former Microsoft Defender for Cloud Apps portal will be automatically routed to the Microsoft 365 Defender portal.

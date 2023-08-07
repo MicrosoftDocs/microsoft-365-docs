@@ -452,7 +452,7 @@ Executable Segment limit=16384
 Executable Segment flags=0x1
 Page size=4096
 Launch Constraints:
-	None
+  None
 CDHash=335c10d40db9417d80db87f658f6565018a4c3d6
 Signature size=4442
 Authority=Software Signing

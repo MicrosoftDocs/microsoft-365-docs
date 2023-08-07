@@ -156,6 +156,19 @@ By default, the unpacked MDEClientAnalyzerResult.zip file will contain the follo
 
     Description: Export of the Microsoft Monitoring Agent event log
 
+- MdeConfigMgrLogs [Folder]
+
+  - SecurityManagementConfiguration.json
+
+    Description: Configurations sent from MEM (Microsoft Endpoint Manager) for enforcement.
+
+  - policies.json
+
+    Description: Policies settings to be enforced on the device.
+
+  - report_xxx.json
+
+    Description: Corresponding enforcement results.
 
 
 

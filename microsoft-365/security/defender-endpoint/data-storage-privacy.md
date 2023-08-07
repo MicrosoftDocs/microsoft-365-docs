@@ -77,7 +77,8 @@ Microsoft Defender for Endpoint shares data, including customer data, among the 
 
 - Microsoft Sentinel
 - Microsoft Tunnel for Mobile Application Management - Android
-- Microsoft Defender for Cloud 
+- Microsoft Defender for Cloud
+- Microsoft Defender for Identity
 
 ## Is my data isolated from other customer data?
 

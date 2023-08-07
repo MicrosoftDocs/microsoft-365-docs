@@ -113,15 +113,15 @@ Alternate steps:
 
     ![Image of collect investigation package](images/collect-investigation-package.png)
    
-2.	Add comments and select **Confirm**.
+2. Add comments and select **Confirm**.
 
     ![Image of confirm comment](images/comments-confirm.png)
 
-3.	Select **Action center** from the response actions section of the device page.
+3. Select **Action center** from the response actions section of the device page.
 
     ![Image of action center](images/action-center-selected.png)
 
-4.	Click the **Package collection package available** to download the collection package.
+4. Click the **Package collection package available** to download the collection package.
 
     ![Image of download package](images/download-package.png)
 

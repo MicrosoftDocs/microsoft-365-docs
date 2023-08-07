@@ -118,7 +118,7 @@ For instance, for multiple failed logins, examine:
 
 - Alerts
 
-   Check whether the user received alerts prior to creating the rules. This could indicate that the user account might be compromised. For example, impossible travel alert, infrequent country, multiple failed logins, among others.)
+   Check whether the user received alerts prior to creating the rules. This could indicate that the user account might be compromised. For example, impossible travel alert, infrequent country/region, multiple failed logins, among others.)
 
 - Incident
 
@@ -156,7 +156,7 @@ CloudAppEvents
 | make-series ActivityCount = count() default = 0 on Timestamp  from (alert_date-timeback) to (alert_date-1h) step 12h by ISP
 ```
 
-Use this query to check whether the country is common for the user by looking at the history of the user.
+Use this query to check whether the country/region is common for the user by looking at the history of the user.
 
 ```kusto
 let alert_date = now(); //enter alert date

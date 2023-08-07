@@ -3,7 +3,7 @@ title: Microsoft Defender Antivirus security intelligence and product updates
 description: Manage how Microsoft Defender Antivirus receives protection and product updates.
 ms.service: microsoft-365-security
 ms.localizationpriority: high
-ms.date: 07/14/2023
+ms.date: 07/24/2023
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -93,28 +93,41 @@ All our updates contain
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 
-### June-2023 (Platform: 4.18.x.x | Engine: 1.1.23060.1005)
+### May-2023 *UPDATE* (Platform: 4.18.23050.9)
+
+*Microsoft has released an additional platform update (**4.18.23050.9**) for the May 2023 release.*
+
+- Security intelligence update version: **1.393.1315.0**
+- Released: **July 24, 2023 (Platform only)**
+- Platform: **4.18.23050.9**
+- Engine: **1.1.23060.1005**
+- Support phase: **Security and Critical Updates**
+
+#### What's new
+
+- Fixed a regression where HTTP requests were being handled sequentially, causing high latency for [network protection](network-protection.md) scenarios
+- Fixed a bug where DNS requests with empty authority records were being improperly parsed
+
+### June-2023 (Engine: 1.1.23060.1005)
 
 - Security intelligence update version: **1.393.71.0**
-- Release date:  **July 10, 2023 (Engine)** / (*Platform release date is pending*)
-- Platform: **4.18.x.x** (*platform version number is pending*)
+- Released:  **July 10, 2023 (Engine only)** 
 - Engine: **1.1.23060.1005**
 - Support phase: **Security and Critical Updates**
    
-### What's new  
-
+#### What's new  
 
 - Fixed an issue with [ASR rules deployed via Intune](/mem/intune/protect/endpoint-security-asr-policy) to display accurately in the Microsoft 365 Defender portal
 - Fixed a performance issue when building and validating Defender cache
 - Improved performance by removing redundant exclusion checks
  
-### Known Issues  
+#### Known Issues  
 
-- None
+- See [May-2023 *UPDATE* (Platform: 4.18.23050.9 | Engine: 1.1.23060.1005)](#may-2023-update-platform-418230509) for platform updates.
 
 ### May-2023 *UPDATE* (Platform: 4.18.23050.5 | Engine:  1.1.23050.2)
 
-*Microsoft has released a platform update (**4.18.23050.5**) for the May 2023 release.*
+*Microsoft has released a platform update (**4.18.23050.5**) for the May 2023 release. Note that an [additional update](#may-2023-update-platform-418230509) has been released.*
 
 - Security intelligence update version: **1.391.860.0**
 - Released: **June 12, 2023**
@@ -122,11 +135,11 @@ All our updates contain
 - Engine: **1.1.23050.2**
 - Support phase: **Security and Critical Updates**
    
-### What's new  
+#### What's new  
 
 - Fixed issue that could lead to resolution of incorrect service endpoint
   
-### Known Issues  
+#### Known Issues  
 
 - Users encounter slow loading webpages in non-Microsoft web browsers with [web content filtering](/microsoft-365/security/defender-endpoint/web-content-filtering) enabled
 
@@ -138,7 +151,7 @@ All our updates contain
 - Engine: **1.1.23050.2**    
 - Support phase: **Security and Critical Updates**  
    
-### What's new  
+#### What's new  
 
 - New version format for Platform and Engine (see the [April-2023 update](#whats-new))
 - Improved processing of SmartLockerMode  
@@ -155,7 +168,7 @@ All our updates contain
 - Fixed memory leaked in ASR logic  
 - Improved validation guard-rail for Malicious Software Removal Tool (MSRT) releases
   
-### Known Issues  
+#### Known Issues  
 
 - Potential issue that could lead to resolution of incorrect service endpoint
 
@@ -184,7 +197,6 @@ All our updates contain
 - Updated missing setting (ValidateMapsConnection) in [MpCmdRun.exe](command-line-arguments-microsoft-defender-antivirus.md)
 - Fixed abandoned threats in the Windows Security app
 - Fixed a service-hang issue that caused invalid outputs to display in [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus)
-
 
 #### Known issues
 

@@ -3,7 +3,7 @@ title: Understand your bill or invoice
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: amberb, vikdesai
+ms.reviewer: jkinma, ramagane
 audience: Admin
 ms.topic: conceptual
 f1.keywords:
@@ -76,7 +76,7 @@ The **Billing Summary** shows the summary of charges since the previous billing 
 | Credits |Credits you received from returns |
 | Azure credits applied |Your Azure credits that are automatically applied to Azure charges each billing period. If you don't have any Azure credits, this field is hidden. For more information about Azure credits, see [Track Microsoft Customer Agreement Azure credit balance](/azure/billing/billing-mca-check-azure-credits-balance). |
 | Subtotal |The pre-tax amount due |
-| Tax |The type and amount of tax that you pay, depending on the country of your billing profile. If you don't have to pay tax, no tax is shown on your invoice. |
+| Tax |The type and amount of tax that you pay, depending on the country/region of your billing profile. If you don't have to pay tax, no tax is shown on your invoice. |
 
 ### Understand your charges
 
@@ -89,7 +89,7 @@ The charges pages show the cost broken down by product. For Azure customers, the
 | Qty | Quantity purchased or consumed during the billing period |
 | Charges/Credits | Net amount of charges after credits/refunds are applied |
 | Azure Credit | The amount of Azure credits applied to the Charges/Credits |
-| Tax rate | Tax rate, depending on the country |
+| Tax rate | Tax rate, depending on the country/region |
 | Tax amount | Amount of tax applied to the purchase based on tax rate |
 | Total | The total amount due for the purchase |
 

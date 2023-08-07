@@ -54,6 +54,7 @@ Permissions for managing day-to-day operations and responding to incidents and a
 |Response|Manage|Take response actions on a device, approve or dismiss pending remediation actions, and manage blocked and allowed lists for automation.|
 |Basic live response|Manage|Initiate a live response session, download files, and perform read-only actions on devices remotely.|
 |Advanced live response|Manage|Create live response sessions and perform advanced actions, including uploading files and running scripts on devices remotely.|
+|File collection|Manage|Collect or download relevant files for analysis, including executable files.|
 |Email quarantine|Manage|View and release email from quarantine.|
 |Email advanced actions|Manage|Move or Delete email to the junk email folder, deleted items or inbox, including soft and hard delete of email.|
 
