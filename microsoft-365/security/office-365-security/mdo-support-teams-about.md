@@ -74,12 +74,12 @@ In Microsoft 365 E5 and Defender for Office 365 Plan 2, we've extended Teams pro
    - **Exclude these participants** section: Specify the **Users**, **Groups**, or **Domains** to exclude from ZAP for Teams protection. Exclusions matter for message _recipients_, not message _senders_. For more information, see [Zero-hour auto purge (ZAP) in Microsoft Teams](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-in-microsoft-teams).
 
    > [!IMPORTANT]
-   > Multiple different types of exceptions are not additive; they're inclusive. The message is excluded from ZAP for Teams protection  _only_ for those users that match _all_ of the specified filters. For example, you configure exclusions with the following values:
+   > Unlike all other security policies in Exchange Online Protection and Defender for Office 365, multiple different types of exceptions for ZAP for Teams protection use OR logic instead of AND. The message is excluded from ZAP for Teams protection for recipients that match _any_ of the specified filters. For example, you configure exclusions with the following values:
    >
    > - Users: romain@contoso.com
    > - Groups: Executives
    >
-   > The user romain@contoso.com is excluded from ZAP for Teams protection _only_ if he's also a member of the Executives group. If he's not a member of the group, ZAP for Teams protection still applies to him.
+   > The user romain@contoso.com and members of the Executives group are excluded from ZAP for Teams protection.
 
 4. When you're finished on the **Microsoft Teams protection** page, select **Save**.
 
@@ -138,7 +138,7 @@ New-TeamsProtectionPolicyRule -Name "Teams Protection Policy Rule" -TeamsProtect
 ```
 
 > [!IMPORTANT]
-> As explained previously in this article, don't use multiple exception types (users, groups, and domains), because a user must must be present in _all_ specified types to be excluded from ZAP for Teams.
+> As explained previously in this article, multiple exception types (users, groups, and domains) use OR logic, not AND.
 
 This example creates the Teams protection policy rule with members of the group named Research excluded from ZAP for Teams protection.
 
