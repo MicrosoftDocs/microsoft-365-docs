@@ -99,8 +99,6 @@
           href: multi-tenant/manage.md
     - name: Office 365 operated by 21Vianet
       items: 
-        - name: About Office 365 operated by 21Vianet
-          href: services-in-china/services-in-china.md
         - name: Download the Office app for Android for Office 365 operated by 21Vianet
           href: services-in-china/download-office-app-for-Android.md
         - name: Download the Office app for iOS for Office 365 operated by 21Vianet
