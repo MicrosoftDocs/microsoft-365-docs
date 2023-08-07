@@ -110,7 +110,7 @@ All our updates contain
 - Fixed an issue pertaining to showing the exclusions list with PowerShell [Get-MpPreference](/powershell/module/defender/get-mppreference) on systems managed by Intune
 - Fixed warn notifications for two attack surface reduction (ASR) rules ([Block Office applications from injecting code into other processes](attack-surface-reduction-rules-reference.md#block-office-applications-from-injecting-code-into-other-processes) and [Block credential stealing from the Windows local security authority subsystem](attack-surface-reduction-rules-reference.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem))
 - Fixed an issue with running `Update-MpSignature -UpdateSource:MMPC` when using a nonelevated PowerShell console. (See [Update-MpSignature](/powershell/module/defender/update-mpsignature).)
-- Fixed an issue with ASR rules deployed via Intune to display accurately in the Microsoft 365 Defender portal
+- Fixed an issue with [ASR rules deployed via Intune](enable-attack-surface-reduction.md#intune) to display accurately in the Microsoft 365 Defender portal
 - Fixed tamper protection management for customers who have Microsoft 365 E3 or Defender for Endpoint Plan 1
 - Improved installation and uninstallation logic on Server SKUs using the unified agent
 - Fixed an issue where AntivirusSignatureLastUpdated was incorrect when executing Get-MpComputerStatus
