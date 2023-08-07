@@ -25,7 +25,7 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: "Learn how to interpret the charges on your invoice for your Microsoft business subscription with an MOSA billing account."
-ms.date: 08/07/2023
+ms.date: 08/08/2023
 ---
 
 # Understand your invoice for your Microsoft MOSA billing account

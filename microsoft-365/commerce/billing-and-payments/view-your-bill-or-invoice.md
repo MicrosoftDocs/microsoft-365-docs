@@ -28,7 +28,7 @@ ms.custom:
 - adminvideo
 search.appverid: MET150, GEA150
 description: "Learn how to find your invoice or billing statement for a Microsoft business subscription in the Microsoft 365 admin center."
-ms.date: 08/07/2023
+ms.date: 08/08/2023
 ---
 
 # View your invoice in the Microsoft 365 admin center
