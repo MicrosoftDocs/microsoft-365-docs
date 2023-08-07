@@ -1,15 +1,13 @@
 ---
 title: "Understand your invoice for your Microsoft MCA billing account"
 f1.keywords:
-- CSH
+- 'MACBillingAccountsAddBillingProfileInvoices'
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
 ms.reviewer: jkinma, ramagane
 audience: Admin
 ms.topic: conceptual
-f1.keywords:
-- 'MACBillingBillsPaymentsInvoices'
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:

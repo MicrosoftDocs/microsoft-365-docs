@@ -85,12 +85,12 @@ You can submit your Fapiao request to our [Fapiao management system](https://go.
 
 ## Run the Unknown Charge Diagnostic
 
-If you're a Microsoft 365 global admin and you have a Microsoft Online Services Agreement (MOSA) billing account type, you can use a diagnostic tool that runs within the Microsoft 365 admin center to research unexpected charges from Microsoft that appear on your credit or debit card statement. [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
+If you're a Microsoft 365 global admin and you have a Microsoft Online Services Agreement (MOSA) billing account type, you can use a diagnostic tool to research unexpected charges in your invoice. The tool runs within the Microsoft 365 admin center, and lets you investigate charges from Microsoft that appear on your credit or debit card statement. [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
 
 > [!NOTE]
 > The Unknown Charge Diagnostic is only available for customers who bought their products and services from Microsoft.com, including Microsoft 365 Enterprise, Education, and Non-profit.
 
-Select the **Run Tests: Unknown Charge** link below to open the diagnostic tool in the Microsoft 365 admin center.
+Select the following **Run Tests: Unknown Charge** link to open the diagnostic tool in the Microsoft 365 admin center.
 
 >[!div class="nextstepaction"]
 >[Run Tests: Unknown Charge](https://aka.ms/PillarUnknownCharge)
