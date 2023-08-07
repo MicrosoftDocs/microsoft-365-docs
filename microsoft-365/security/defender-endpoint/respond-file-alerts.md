@@ -159,7 +159,7 @@ The **Download file** button can have the following states:
 
   For Microsoft 365 Defender Unified role-based access control (RBAC):
 
-     - Add 'File collection' permission in Microsoft 365 Defender Unified (RBAC)
+     - Add file collection permission in Microsoft 365 Defender Unified (RBAC)
  
   For Microsoft Defender for Endpoint role-based access control (RBAC):
 
