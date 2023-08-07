@@ -1,11 +1,11 @@
 ---
-title: "Understand your bill or invoice for Microsoft 365 for business"
+title: "Understand your invoice for your Microsoft MOSA billing account"
 f1.keywords:
-- NOCSH
+- CSH
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, nicholak
+ms.reviewer: jkinma, ramagane
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-business
@@ -24,21 +24,24 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid: MET150
-description: "Learn how to interpret charges, billing, and payment info on your Microsoft 365 for business bill or invoice."
-ms.date: 03/31/2023
+description: "Learn how to interpret the charges on your invoice for your Microsoft business subscription with an MOSA billing account."
+ms.date: 08/07/2023
 ---
 
-# Understand your bill or invoice for Microsoft 365 for business
+# Understand your invoice for your Microsoft MOSA billing account
 
 Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
-Your bill or invoice provides a summary of charges for your subscription and includes instructions for how to make a payment.
+This article only applies to customers with a Microsoft Online Services Agreement (MOSA) billing account type. If you have a Microsoft Customer Agreement (MCA) billing account type, see [Understand your bill or invoice for your MCA account](understand-your-invoice.md). Not sure what type of billing account you have? [Follow these steps to find out](../manage-billing-accounts.md#view-my-billing-accounts).
+
+The invoice for your Microsoft business subscription provides a summary of the charges and instructions for how to pay your bill. You can [view your online invoice](view-your-bill-or-invoice.md) in the Microsoft 365 admin center. You can also download it in the Portable Document Format (.PDF) to send via email. If you want to receive the invoice .PDF as an attachment in the email notification, see [Receive your organization's invoices as email attachments](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments).
 
 > [!IMPORTANT]
 > As of April 1, 2023, we no longer accept checks as a payment method for subscriptions paid by invoice. Pay by check is no longer available as a payment option, and check payment instructions have been removed from invoices. You can still pay for your invoice by wire transfer. See your invoice for wire transfer payment information. If you're an existing customer who currently pays by check, you have until September 30, 2023 to change to paying by wire transfer, and avoid possible service disruption.
 
-> [!NOTE]
-> If you have other subscriptions instead of or in addition to Microsoft 365, see [Understand your bill or invoice](understand-your-invoice.md).
+## Before you begin
+
+You must be a Global or Billing admin to do the steps described in this article. For more information, see [About admin roles in the Microsoft 365 admin center](../../admin/add-users/about-admin-roles.md).
 
 ## Watch: Understand your bill or invoice
 
@@ -48,7 +51,10 @@ Check out this video and others on our [YouTube channel](https://go.microsoft.co
 
 ## How often and when am I billed?
 
-Depending on the billing frequency you chose when you bought your subscription, you receive an invoice either monthly or annually. The amount of time since the last invoice date is called the *Billing Period* and is on page one of the invoice. This time represents the date range during which charges accrue for the current invoice. If you made a change to your subscription outside of this date range, like adding or removing licenses, the associated charges appear on the invoice for the next billing period.
+Depending on the billing frequency that you chose when you bought your subscription, you receive an invoice either monthly or annually. The amount of time since the last invoice date is called the *Billing Period* and is on page one of the invoice. This time period represents the date range during which charges accrue for the current invoice. If you made a change to your subscription outside of this date range, like adding or removing licenses, the associated charges appear on the invoice for the next billing period.
+
+> [!NOTE]
+> You can change the billing frequency for a subscription by following the steps in [Change your Microsoft business subscription billing frequency](change-payment-frequency.md).
 
 Starting on page two of the invoice, you see the charges grouped by their *Service Period*. The service period is the date range during which you're charged to use the service.
 
@@ -74,19 +80,19 @@ Your invoice is a .PDF that contains at least two pages. [Page one](#page-one) i
 
 :::image type="content" source="../../media/understand-your-invoice2/invoice-page-2.png" alt-text="Page two of the invoice .PDF that shows billing activity for each subscription.":::
 
-## Header
+## Understand the invoice header
 
 The header appears at the top of every invoice page, and includes the month of service, and the **Invoice Date**, which is the date Microsoft created the invoice. The invoice is created the day after the end of your billing period. For example, if your billing period is January 15—February 14, your invoice date is February 15.
 
 The header also includes an **Invoice Number**, the unique number assigned to your invoice. If you pay by wire transfer, include the invoice number with your payment.
 
-Finally, the header includes the **Due Date** for payment of the invoice, and shows the total amount due. If you pay for your subscription with a credit card or bank account, we charge your card or account the day after the invoice date.
+Finally, the header includes the **Due Date** for payment of the invoice, and shows the total amount due. If you pay for your subscription with a credit or debit card, we charge your card the day after the invoice date.
 
-## Footer
+## Understand the invoice footer
 
-The footer appears at the bottom of every invoice page and includes Microsoft business center address. Based on your country or region, it might include other information like the phone number to call for billing or technical support, a link to online self-help articles, and the address and tax ID for Microsoft in your country or region.
+The footer appears at the bottom of every invoice page and includes Microsoft business center address. Based on your country/region, the footer might include other information like the phone number to call for billing or technical support, a link to online self-help articles, and the address and tax ID for Microsoft in your country/region.
 
-## Page one
+## Understand page one of your invoice
 
 Page one of your invoice contains address information for your organization, high-level details about your order, a summary of invoice totals, and instructions about how to pay your invoice.
 
@@ -110,7 +116,7 @@ On page one of your invoice, the **Product** is "Online Services," the generic t
 
 **Payment Terms** is the number of days from the invoice date when payment is due.
 
-**Due Date** is the date when the invoice payment is due. If your subscription is paid with a credit card or bank account, we charge your card or account the day after the Invoice Date.
+**Due Date** is the date when the invoice payment is due. If your subscription is paid with a credit or debit card, we charge your card the day after the Invoice Date.
 
 ### Billing Summary
 
@@ -128,13 +134,13 @@ If you pay by credit card, you see "Please DO NOT PAY. You will be charged the a
 
 ### Wire transfer
 
-If you chose "invoice" as your subscription payment method, page one contains the **Electronic Funds Transfer** section that shows the Microsoft bank account information for electronic payments (wire transfer, ACH, SEPA, and so on). Usually, your bank has a reference field you complete when you send a payment. Make sure you reference the invoice number in that field.
+If you chose "invoice" as your subscription payment method, page one contains the **Electronic Funds Transfer** section that shows the Microsoft bank account information for electronic payments (wire transfer, ACH, SEPA, and so on). Usually, your bank has a reference field that you complete when you send a payment. Make sure that you reference the invoice number in that field.
 
 ### Support
 
-In some countries or regions, the invoice has a **Support** section that includes instructions on how to view past invoices in the Microsoft 365 admin center. It also includes a link to self-help articles, and for some countries and regions, the support phone number.
+In some countries/regions, the invoice has a **Support** section that includes instructions on how to view past invoices in the Microsoft 365 admin center. It also includes a link to self-help articles, and for some countries/regions, the support phone number.
 
-## Page two
+## Understand page two of your invoice
 
 The product name for your subscription is at the top of page two. Below it is the formula that explains how the charges are calculated. If you have more than one product in your order, you see a separate section for each product and the associated charges.
 
@@ -163,27 +169,31 @@ If you pay by invoice, you can add or change the purchase order (PO) number for 
 > [!NOTE]
 > You can't add a PO number to an existing invoice. The PO number will appear on all future invoices.
 
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-2. On the **Products** tab, select the subscription that you want to change.
-3. On the subscription details page, in the **Subscription and payment settings** section, select **Edit invoice**.
-4. At the bottom of the **Edit details for paying by invoice** pane, enter your PO number, and then select **Save**.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank>Microsoft 365 admin center</a>.
+    - If you’re using the **Simplified view**, select **Subscriptions**.
+    - If you’re using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+2. Select the subscription that you want to change.
+3. On the subscription details page, in the **Subscription and payment settings** section, under **Payment method**, select **Edit invoice**.
+4. At the bottom of the **Edit details for paying by invoice** pane, enter your PO number, then select **Save**.
 
 ## Run the Unknown Charge Diagnostic
 
-As a Microsoft 365 Global admin, you can use a diagnostic tool that runs within the Microsoft 365 admin center to research unexpected charges from Microsoft that appear on your bank or credit card statement.
+If you're a Microsoft 365 global admin, you can use a diagnostic tool that runs within the Microsoft 365 admin center to research unexpected charges from Microsoft that appear on your credit or debit card statement.
 
 > [!NOTE]
 > The Unknown Charge Diagnostic is only available for customers who bought their products and services from Microsoft.com, including Microsoft 365 Enterprise, Education, and Non-profit.
 
-Select the **Run Tests** link below to open the diagnostic tool in the Microsoft 365 admin center.
+Select the **Run Tests: Unknown Charge** link below to open the diagnostic tool in the Microsoft 365 admin center.
 
 >[!div class="nextstepaction"]
 >[Run Tests: Unknown Charge](https://aka.ms/PillarUnknownCharge)
 
 ## Related content
 
-[View your bill or invoice](view-your-bill-or-invoice.md) (article)\
-[Pay for your Microsoft 365 for business subscription](pay-for-your-subscription.md) (article)\
-[Manage payment methods](manage-payment-methods.md) (article)\
+[View your invoice in the Microsoft 365 admin center](view-your-bill-or-invoice.md) (article)\
+[Understand your invoice for your Microsoft MCA billing account](understand-your-invoice.md) (article) \
+[Payment options for your Microsoft business subscription](pay-for-your-subscription.md) (article) \
+[How to pay for your Microsoft business subscription with a billing profile](pay-for-subscription-billing-profile.md) \
+[Manage payment methods](manage-payment-methods.md) (article) \
 [Billing information for Microsoft 365 for business in Mexico](mexico-billing-info.md) (article) \
 [Minecraft: Education Edition payment options](/education/windows/school-get-minecraft) (article)
