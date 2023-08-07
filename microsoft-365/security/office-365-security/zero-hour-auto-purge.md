@@ -137,13 +137,12 @@ Teams is different than email, because everyone in a Teams chat receives the sam
 
 Exclusions for ZAP for Teams protection matter for message _recipients_, not message _senders_.
 
-ZAP for Teams protection is able to take action on messages for _all_ recipients in a chat if _any_ recipients in the chat aren't excluded from ZAP for Teams. Only when _all_ recipients in a chat are excluded from ZAP for Teams protection will ZAP not take action on a message. These scenarios are illustrated in the following table:
+ZAP for Teams protection is able to take action on messages for _all_ recipients in a chat if _any_ recipients in the chat aren't excluded from ZAP for Teams protection. Only when _all_ recipients in a chat are excluded from ZAP for Teams protection will ZAP not take action on a message. These scenarios are illustrated in the following table:
 
 |Scenario|Result|
 |Group chat with Recipients A, B, C, and D. <br/><br/> Recipients A, B, C, and D are excluded from ZAP for Teams protection.|ZAP won't block messages sent to the group chat.|
 |Group chat with Recipients A, B, C, and D. <br/><br/> Only recipients A, B, and C are excluded from ZAP for Teams protection.|ZAP is able to block messages sent to the group chat for all recipients.|
 |Group chat with Recipients A, B, C, and D. <br/><br/> Recipients A, B, C, and D aren't excluded from ZAP for Teams protection. <br/><br/> Sender X is excluded from ZAP for Teams protection and sends a message to the group chat.|ZAP is able to block messages sent to the group chat for all recipients.|
-
 
 **Sender view**:
 
