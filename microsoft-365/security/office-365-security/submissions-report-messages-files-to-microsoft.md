@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.date:8/7/2023
+ms.date: 8/7/2023
 audience: ITPro
 ms.topic: overview
 ms.localizationpriority: medium
