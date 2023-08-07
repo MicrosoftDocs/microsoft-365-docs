@@ -37,9 +37,9 @@ For an overview of licensing options for Microsoft Syntex, see [Licensing for Mi
 
 ## Set up structured and freeform document processing
 
-### Assign licenses
-
-Each user must have a license assigned. Licenses include the following apps, which must all be assigned:
+Each user for structured and freeform document processing must have a license assigned. To assign licenses, see [Set up Microsoft Syntex per-user licensing](set-up-content-understanding#assign-licenses).
+<!---
+Licenses include the following apps, which must all be assigned:
 
 - Syntex
 - Syntex - SPO type
@@ -56,6 +56,7 @@ To assign licenses:
 4. Select **Show apps for  Syntex**. Under **Apps**, make sure **Common Data Service for Syntex**, **Syntex**, and **Syntex - SPO type** are all selected.
 
 5. Select **Save changes**.
+--->
 
 ### Get AI Builder credits
 
