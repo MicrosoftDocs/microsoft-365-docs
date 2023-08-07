@@ -1,9 +1,9 @@
 ---
 title: Use the Shifts connector wizard to connect Shifts to UKG Dimensions (Preview)
-author: daisyfell
-ms.author: daisyfeller
+author: lana-chin
+ms.author: v-chinlana
+manager: serdars
 ms.reviewer: imarquesgil
-manager: pamgreen
 ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
