@@ -67,7 +67,7 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 
     -   Extended file attributes and registry monitoring capabilities to enhance investigation and detection experience. 
     
-    -   Conditional Access: expanding integration between MDE and Intune to support additional Azure Active Directory (AAD) joined scenarios to deploy conditional access policies in your environment and enable Zero Trust policies to better protect your network against adversaries. 
+    -   Conditional Access - Expanding integration between Microsoft Defender for Endpoint and Intune to support additional Azure Active Directory (AAD) joined scenarios to deploy conditional access policies in your environment and enable Zero Trust policies to better protect your network against adversaries. 
 
     -   Engine bugfixes and improvements. 
 
@@ -75,9 +75,9 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 
 -   **Platform**
 
-    -   Enabled Safer deployment of features through rings and containment mechanism enhancements. 
+    -   Enabled safer deployment of features through rings and containment mechanism enhancements. 
 
-    -   Consolidate the billing and alert experiences of customers that are onboarded to both MDE and Microsoft Defender for Cloud in cloud environments by collecting machine identifiers that allow de-duplication on cloud side. 
+    -   Consolidate the billing and alert experiences of customers that are onboarded to both Microsoft Defender for Endpoint and Microsoft Defender for Cloud in cloud environments by collecting machine identifiers that allow de-duplication on cloud side. 
 
 
 
@@ -96,11 +96,11 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 
     -   Improved performance for [Live Response](live-response.md) commands when executed concurrently with automatic investigation.  
 
-    -   Send command status events for isolate and IR commands via Cnc channel to improve performance, support future design changes and easier monitoring. 
+    -   Send command status events for isolate and IR commands through Command and Control channel to improve performance, support future design changes, and easier monitoring. 
 
-    -   Custom Exclusion for Isolation - exclusion of apps, whitelist of IP addresses and ports, and users.
+    -   Custom Exclusion for Isolation - exclusion of apps, allow list of IP addresses and ports, and users.
 
-    -   Isolation hardening is a measure taken against a technique known as process hollowing. implementing this hardening approach, a system can establish stronger isolation rules that significantly enhance security when dealing with code injection tactics.  
+    -   Isolation hardening is a measure taken against a technique known as process hollowing. Implementing this hardening approach, a system can establish stronger isolation rules that significantly enhance security when dealing with code injection tactics.  
     
 
     -   Reduce device disconnections for isolated device caused by third-party inspection drivers. For more information, see [Take response actions on a device](respond-machine-alerts.md).
@@ -110,7 +110,6 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 -   **Vulnerability management** 
     
     -   Replaces some of the current threat vulnerability collections and adds new much requested user installed packages collector. 
-
 
     -   New and higher-performing (both CPU and memory) vulnerabilities collector. 
 
@@ -128,7 +127,6 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 
 
     -   Device Contain - Introducing new Windows Filtering Platform (WFP) network filter to allow telemetry & audit-mode capabilities to network connections enforcements. For more information, see - [Take response actions on a device in Microsoft Defender for Endpoint](respond-machine-alerts.md#contain-devices-from-the-network).
-
 
 
     -   Anti-tampering - Addressing tampering gaps in Defender for Endpoint authentication flow by hardening protection of the cryptographic key used to register clients with Defender for Endpoint's authentication service. This is done by storing the key in an AV-protected registry key. 
