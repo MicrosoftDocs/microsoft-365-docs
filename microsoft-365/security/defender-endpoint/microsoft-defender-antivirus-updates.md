@@ -114,8 +114,8 @@ All our updates contain
 - Fixed [tamper protection management](prevent-changes-to-security-settings-with-tamper-protection.md) for customers who have Microsoft 365 E3 or [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md)
 - Improved installation and uninstallation logic on Server SKUs using the modern, unified agent. (See [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md).)
 - Fixed an issue where `AntivirusSignatureLastUpdated` was incorrect when executing [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus)
-- Addressed a deadlock caused by Defender in rare cases
-- Add ProcessId to the ASR Warn Exclusion event
+- Addressed a deadlock caused by Microsoft Defender Antivirus in rare cases
+- Added `ProcessId` to ASR Warn exclusion events (see [ASR rules configuration summary card](attack-surface-reduction-rules-report.md#asr-rules-configuration-summary-card)).
 - Fixed an issue where values specified in ThreatSeverityDefaultAction were not honored intermittently
 - Improved error reporting in unified agent installer
 - Fixed the overriding logic in the "Block all Office applications from creating child processes" ASR rule configured in warn mode
