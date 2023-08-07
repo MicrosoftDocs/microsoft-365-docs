@@ -56,6 +56,20 @@ Depending on the billing frequency that you chose when you bought your subscript
 Starting on page two of the invoice, you see the charges grouped by product order. For Azure customers, the charges might be organized by invoice section.
 
 At the end of each billing period, you receive an email that says your new invoice is ready to view or download in the Microsoft 365 admin center. If you have more than one billing profile, you receive an invoice for each billing profile. For more information, see [View your invoice in the Microsoft 365 admin center](view-your-bill-or-invoice.md).
+
+## Overview of the invoice .PDF
+
+Your invoice is a .PDF that contains at least three pages. Page one contains general information about the invoice. An invoice summary section indicates the billing profile   that is used to pay for the products and services contained in the invoice, the invoice number, and the invoice date. A billing summary section contains the totals for all charges on the invoice, any credits or sales tax, the invoice total, and payment instructions, if applicable.
+
+:::image type="content" source="../../media/understand-your-mca-invoice/mca-invoice-p1.png" alt-text="Page one of the invoice .PDF that shows the high-level information about your order":::
+
+Page two of the invoice contains a section summary, and details by section. If you have multiple products or services that are paid for with the same billing profile, the section details might continue for several pages.
+
+:::image type="content" source="../../media/understand-your-mca-invoice/mca-invoice-p2.png" alt-text="Page two of the invoice .PDF that shows billing activity for each section.":::
+
+The last page of the invoice contains payment instructions.
+
+:::image type="content" source="../../media/understand-your-mca-invoice/mca-invoice-p3.png" alt-text="The last page of the invoice .PDF that shows payment instructions.":::
 ## Understand the invoice header
 
 The top of the first page of your invoice identifies who's accountable for payment, where the bill is sent to, and a summary of charges. The following table explains the fields shown in the header of your invoice.
