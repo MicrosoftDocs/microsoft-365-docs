@@ -3,7 +3,7 @@ title: Microsoft Defender Antivirus security intelligence and product updates
 description: Manage how Microsoft Defender Antivirus receives protection and product updates.
 ms.service: microsoft-365-security
 ms.localizationpriority: high
-ms.date: 07/24/2023
+ms.date: 08/07/2023
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -93,6 +93,38 @@ All our updates contain
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 
+### July-2023 (Platform: 4.18.23070.xxxx | Engine: 1.1.23070.xxxx)
+ 
+- Security intelligence update version: **x.x.x.x**
+- Release date:  **August 8, 2023 (Engine) / August 8, 2023 (Platform)**
+- Platform: **4.18.23070.xxxx**
+- Engine: **1.1.23070.xxxx**
+- Support phase: **Security and Critical Updates**
+
+### What's new
+ 
+- Improved output for [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) if scan results fail to retrieve
+- Extended management options for configuring security intelligence updates with Intune, Group policy, and Powershell
+- Extended management options for disabling IOAV scans over the network with Intune, Group policy, and Powershell. The new setting is ApplyDisableNetworkScanningToIOAV.
+- Improved the Unified agent installation process to handle MsMpEng.exe debugger extensions, if present
+- Fixed an issue pertaining to showing the exclusions list with PowerShell Get-MpPreference on systems managed by Intune
+- Fixed warn notifications for two attack surface reduction (ASR) rules (Block Office applications from injecting code into other processes and Block credential stealing from the Windows local security authority subsystem
+- Fixed an issue with running Update-MpSignature -UpdateSource:MMPC when using a nonelevated PowerShell console. (See Update-MpSignature.)
+- Fixed an issue with ASR rules deployed via Intune to display accurately in the Microsoft 365 Defender portal
+- Fixed tamper protection management for customers who have Microsoft 365 E3 or Defender for Endpoint Plan 1
+- Improved installation and uninstallation logic on Server SKUs using the unified agent
+- Fixed an issue where AntivirusSignatureLastUpdated was incorrect when executing Get-MpComputerStatus
+- Addressed a deadlock caused by Defender in rare cases
+- Add ProcessId to the ASR Warn Exclusion event
+- Fixed an issue where values specified in ThreatSeverityDefaultAction were not honored intermittently
+- Improved error reporting in unified agent installer
+- Fixed the overriding logic in the "Block all Office applications from creating child processes" ASR rule configured in warn mode
+- Added support for scanning ZSTD containers/archives
+ 
+### Known issues
+ 
+- None
+
 ### May-2023 *UPDATE* (Platform: 4.18.23050.9)
 
 *Microsoft has released an additional platform update (**4.18.23050.9**) for the May 2023 release.*
@@ -171,36 +203,6 @@ All our updates contain
 #### Known Issues  
 
 - Potential issue that could lead to resolution of incorrect service endpoint
-
-### April-2023 (Platform: 4.18.2304.8 | Engine: 1.1.20300.3)
-
-- Security intelligence update version: **1.387.2997.0**
-- Release date:  **May 2, 2023 (Engine) / May 2, 2023 (Platform)**
-- Platform: **4.18.2304.8** 
-- Engine: **1.1.20300.3**
-- Support phase: **Security and Critical Updates**
-
-#### What's new
-
-- **Beginning in May 2023, the Platform and Engine version schema have a new format**. Here's what the new version format looks like: 
-   - Platform: `4.18.23050.1` 
-   - Engine: `1.1.23050.63000` 
-- Fixed memory leak in behavior monitoring
-- Improved resiliency of signature loading and platform updates
-- Quarantine and restore support for [WMI](use-wmi-microsoft-defender-antivirus.md)
-- Fixed attack surface reduction (ASR) rule output with [Get-MpPreference](/powershell/module/defender/get-mppreference)
-- Fixed MSERT to only use release engine version
-- Improved the enforcement of exclusions
-- Added support for enabling real-time protection and signature updates during OOBE
-- Fixed localization for Defender events
-- Deprecated real-time signature delivery setting
-- Updated missing setting (ValidateMapsConnection) in [MpCmdRun.exe](command-line-arguments-microsoft-defender-antivirus.md)
-- Fixed abandoned threats in the Windows Security app
-- Fixed a service-hang issue that caused invalid outputs to display in [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus)
-
-#### Known issues
-
-- None
 
 ### Previous version updates: Technical upgrade support only
 
