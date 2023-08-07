@@ -1,7 +1,7 @@
 ---
 title: "Understand your invoice for your Microsoft MOSA billing account"
 f1.keywords:
-- CSH
+- 'UnderstandBillInvoiceM365'
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
@@ -32,9 +32,9 @@ ms.date: 08/07/2023
 
 Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
-This article only applies to customers with a Microsoft Online Services Agreement (MOSA) billing account type. If you have a Microsoft Customer Agreement (MCA) billing account type, see [Understand your bill or invoice for your MCA account](understand-your-invoice.md). Not sure what type of billing account you have? [Follow these steps to find out](../manage-billing-accounts.md#view-my-billing-accounts).
+This article only applies to customers with a Microsoft Online Services Agreement (MOSA) billing account type. If you have a Microsoft Customer Agreement (MCA) billing account type, see [Understand your invoice for your MCA account](understand-your-invoice.md). [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
 
-The invoice for your Microsoft business subscription provides a summary of the charges and instructions for how to pay your bill. You can [view your online invoice](view-your-bill-or-invoice.md) in the Microsoft 365 admin center. You can also download it in the Portable Document Format (.PDF) to send via email. If you want to receive the invoice .PDF as an attachment in the email notification, see [Receive your organization's invoices as email attachments](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments).
+The invoice for your Microsoft business subscription provides a summary of the charges and instructions for how to pay your bill. You can [view your online invoice](view-your-bill-or-invoice.md) in the Microsoft 365 admin center. You can also download a copy of your invoice in the Portable Document Format (.PDF) to send via email. If you want to receive the invoice .PDF as an attachment in the email notification, see [Receive your organization's invoices as email attachments](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments).
 
 > [!IMPORTANT]
 > As of April 1, 2023, we no longer accept checks as a payment method for subscriptions paid by invoice. Pay by check is no longer available as a payment option, and check payment instructions have been removed from invoices. You can still pay for your invoice by wire transfer. See your invoice for wire transfer payment information. If you're an existing customer who currently pays by check, you have until September 30, 2023 to change to paying by wire transfer, and avoid possible service disruption.
@@ -43,7 +43,7 @@ The invoice for your Microsoft business subscription provides a summary of the c
 
 You must be a Global or Billing admin to do the steps described in this article. For more information, see [About admin roles in the Microsoft 365 admin center](../../admin/add-users/about-admin-roles.md).
 
-## Watch: Understand your bill or invoice
+## Watch: Understand your invoice
 
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2209539).
 
@@ -51,14 +51,14 @@ Check out this video and others on our [YouTube channel](https://go.microsoft.co
 
 ## How often and when am I billed?
 
-Depending on the billing frequency that you chose when you bought your subscription, you receive an invoice either monthly or annually. The amount of time since the last invoice date is called the *Billing Period* and is on page one of the invoice. This time period represents the date range during which charges accrue for the current invoice. If you made a change to your subscription outside of this date range, like adding or removing licenses, the associated charges appear on the invoice for the next billing period.
+Depending on the billing frequency that you chose when you bought your subscription, you receive an invoice either monthly or annually. The amount of time since the last invoice date is called the *Billing Period* and shown on page one of the invoice. This time period represents the date range during which charges accrue for the current invoice. If you made a change to your subscription outside of this date range, like adding or removing licenses, the associated charges appear on the invoice for the next billing period.
 
 > [!NOTE]
-> You can change the billing frequency for a subscription by following the steps in [Change your Microsoft business subscription billing frequency](change-payment-frequency.md).
+> You can change the billing frequency for a subscription by following the steps in [Change the billing frequency for your Microsoft business subscription](change-payment-frequency.md).
 
 Starting on page two of the invoice, you see the charges grouped by their *Service Period*. The service period is the date range during which you're charged to use the service.
 
-At the end of each billing period, you receive an email that says your new invoice is ready to view or download in the Microsoft 365 admin center. If you have more than one order, you receive an invoice for each order. Learn how to [find and view your bill or invoice](view-your-bill-or-invoice.md).
+At the end of each billing period, you receive an email that says your new invoice is ready to view or download in the Microsoft 365 admin center. If you have more than one order, you receive an invoice for each order. For more information, see [View your invoice in the Microsoft 365 admin center](view-your-bill-or-invoice.md).
 
 ## Why is my total due different from last month?
 
@@ -66,17 +66,17 @@ The amount billed for your subscription reflects the license price multiplied by
 
 If the amount billed is different than expected, that can happen for few reasons:
 
-- You added or removed licenses from your subscription. Licenses changed mid-term are reflected on the next invoice. You might see a credit and rebill for the previous service period to account for this change. For details about what this looks like in your invoice, see [Page two](#page-two) below.
+- You added or removed licenses from your subscription. Licenses changed mid-term are reflected on the next invoice. You might see a credit and rebill for the previous service period to account for this change. For details about what the information looks like in your invoice, see [Understand page two of your invoice](#understand-page-two-of-your-invoice).
 - The subscription was canceled. You receive an invoice after cancellation with any outstanding balance minus any credits.
 - Your subscription renewed for a new term and the license price changed.
 
 ## Overview of the invoice .PDF
 
-Your invoice is a .PDF that contains at least two pages. [Page one](#page-one) is the billing summary, and contains general information about the invoice, order, amount due, and payment instructions, if applicable.
+Your invoice is a .PDF that contains at least two pages. Page one of your invoice contains the billing summary, which includes general information about the invoice, order, amount due, and payment instructions, if applicable. For details about what this information looks like in your invoice, see [Understand page one of your invoice](#understand-page-one-of-your-invoice).
 
 :::image type="content" source="../../media/understand-your-invoice2/invoice-page-1.png" alt-text="Page one of the invoice .PDF that shows the high-level information about your order.":::
 
-[Page two](#page-two) contains details about the billing activity for each subscription during the service period.
+Page two of your invoice contains details about the billing activity for each subscription during the service period. For details about what this information looks like in your invoice, see [Understand page two of your invoice](#understand-page-two-of-your-invoice).
 
 :::image type="content" source="../../media/understand-your-invoice2/invoice-page-2.png" alt-text="Page two of the invoice .PDF that shows billing activity for each subscription.":::
 
@@ -100,7 +100,7 @@ Page one of your invoice contains address information for your organization, hig
 
 ### Addresses
 
-Three addresses appear at the top of the first page. The **Sold-To** address is the name and address of the organization that bought the subscription. The **Bill-To** address is the address of your billing department. **Service Usage Address** is the address where the service is used. Usually, these addresses are the same. Depending on the size and configuration of your organization, these addresses might be different.
+Three addresses appear at the top of the first page of your invoice. The **Sold-To** address is the name and address of the organization that bought the subscription. The **Bill-To** address is the address of your billing department. **Service Usage Address** is the address where the service is used. Usually, these addresses are the same. However, depending on the size and configuration of your organization, these addresses might be different.
 
 To update the **Sold-To** address, see [Change your organization's address, technical contact, and more](../../admin/manage/change-address-contact-and-more.md)**. To update your Bill-To** or **Service Usage Address**, see [Change your billing addresses](change-your-billing-addresses.md).
 
@@ -142,7 +142,7 @@ In some countries/regions, the invoice has a **Support** section that includes i
 
 ## Understand page two of your invoice
 
-The product name for your subscription is at the top of page two. Below it is the formula that explains how the charges are calculated. If you have more than one product in your order, you see a separate section for each product and the associated charges.
+The product name for your subscription is at the top of page two of your invoice. Below the product name is the formula that explains how the charges are calculated. If you have more than one product in your order, you see a separate section for each product and the associated charges.
 
 ### New charges
 
@@ -183,7 +183,7 @@ If you're a Microsoft 365 global admin, you can use a diagnostic tool that runs 
 > [!NOTE]
 > The Unknown Charge Diagnostic is only available for customers who bought their products and services from Microsoft.com, including Microsoft 365 Enterprise, Education, and Non-profit.
 
-Select the **Run Tests: Unknown Charge** link below to open the diagnostic tool in the Microsoft 365 admin center.
+Select the following **Run Tests: Unknown Charge** link to open the diagnostic tool in the Microsoft 365 admin center.
 
 >[!div class="nextstepaction"]
 >[Run Tests: Unknown Charge](https://aka.ms/PillarUnknownCharge)
@@ -194,6 +194,6 @@ Select the **Run Tests: Unknown Charge** link below to open the diagnostic tool 
 [Understand your invoice for your Microsoft MCA billing account](understand-your-invoice.md) (article) \
 [Payment options for your Microsoft business subscription](pay-for-your-subscription.md) (article) \
 [How to pay for your Microsoft business subscription with a billing profile](pay-for-subscription-billing-profile.md) \
-[Manage payment methods](manage-payment-methods.md) (article) \
+[Manage payment methods for Microsoft business accounts](manage-payment-methods.md) (article) \
 [Billing information for Microsoft 365 for business in Mexico](mexico-billing-info.md) (article) \
 [Minecraft: Education Edition payment options](/education/windows/school-get-minecraft) (article)

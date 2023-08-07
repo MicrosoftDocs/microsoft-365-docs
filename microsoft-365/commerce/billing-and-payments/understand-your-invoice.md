@@ -31,9 +31,9 @@ ms.date: 08/07/2023
 
 Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
-This article only applies to customers with a Microsoft Customer Agreement (MCA) billing account type. If you have a Microsoft Online Services Agreement (MOSA) billing account type, see [Understand your invoice for your Microsoft MOSA billing account](understand-your-invoice2.md). Not sure what type of billing account you have? [Follow these steps to find out](../manage-billing-accounts.md#view-my-billing-accounts).
+This article only applies to customers with a Microsoft Customer Agreement (MCA) billing account type. If you have a Microsoft Online Services Agreement (MOSA) billing account type, see [Understand your invoice for your Microsoft MOSA billing account](understand-your-invoice2.md). [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
 
-The invoice for your Microsoft business subscription provides a summary of the charges and instructions for how to pay your bill. You can [view your online invoice](view-your-bill-or-invoice.md) in the Microsoft 365 admin center. You can also download it in the Portable Document Format (.PDF) to send via email. If you want to receive the invoice .PDF as an attachment in the email notification, see [Receive your organization's invoices as email attachments](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments).
+The invoice for your Microsoft business subscription provides a summary of the charges and instructions for how to pay your bill. You can [view your online invoice](view-your-bill-or-invoice.md) in the Microsoft 365 admin center. You can also download a copy of your invoice in the Portable Document Format (.PDF) to send via email. If you want to receive the invoice .PDF as an attachment in the email notification, see [Receive your organization's invoices as email attachments](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments).
 
 > [!IMPORTANT]
 > As of April 1, 2023, we no longer accept checks as a payment method for subscriptions paid by invoice. Pay by check is no longer available as a payment option, and check payment instructions have been removed from invoices. You can still pay for your invoice by wire transfer. See your invoice for wire transfer payment information. If you're an existing customer who currently pays by check, you have until September 30, 2023 to change to paying by wire transfer, and avoid possible service disruption.
@@ -48,24 +48,23 @@ The invoice for your Microsoft business subscription provides a summary of the c
 
 ## How often and when am I billed?
 
-Depending on the billing frequency that you chose when you bought your subscription, you receive an invoice monthly, every three months, every six months, or annually. The amount of time since the last invoice date is called the Billing Period and is shown on page one of the invoice, above the Billing Summary section. This time represents the date range during which charges accrue for the current invoice. If you made a change to your subscription outside of this date range, like adding or removing licenses, the associated charges appear on the invoice for the next billing period.
+Depending on the billing frequency that you chose when you bought your subscription, you receive an invoice monthly, every three months, every six months, or annually. The amount of time since the last invoice date is called the *Billing Period* and is shown on page one of the invoice, above the Billing Summary section. This time   period represents the date range during which charges accrue for the current invoice. If you made a change to your subscription outside of this date range, like adding or removing licenses, the associated charges appear on the invoice for the next billing period.
 
 > [!NOTE]
-> You can only change the billing frequency for a subscription
+> You can only change the billing frequency for a subscription when you buy, upgrade, or renew a subscription.
 
 Starting on page two of the invoice, you see the charges grouped by product order. For Azure customers, the charges might be organized by invoice section.
 
-At the end of each billing period, you receive an email that says your new invoice is ready to view or download in the Microsoft 365 admin center. If you have more than one billing profile, you receive an invoice for each billing profile. Learn how to [find and view your bill or invoice](view-your-bill-or-invoice.md).
-
+At the end of each billing period, you receive an email that says your new invoice is ready to view or download in the Microsoft 365 admin center. If you have more than one billing profile, you receive an invoice for each billing profile. For more information, see [View your invoice in the Microsoft 365 admin center](view-your-bill-or-invoice.md).
 ## Understand the invoice header
 
-The top of the first page identifies who is accountable for payment, where the bill is sent to, and a summary of charges. The following table explains the fields shown in the header of your invoice.
+The top of the first page of your invoice identifies who's accountable for payment, where the bill is sent to, and a summary of charges. The following table explains the fields shown in the header of your invoice.
 
 | Term | Description |
 | --- | --- |
 | Sold to |The billing account that identifies the name and address of the legal entity responsible for payment. This information is managed on the <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Billing accounts</a> page, where you can find the account agreement and manage roles and permissions. |
-| Bill to |Identifies who receives the invoice. This information is managed on the <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Billing profiles</a> page. The billing profile is also shown on the online invoice page, in the **Invoice summary** section. To learn more about billing profiles and how you can use them to build more flexible billing options for your organization, see [Understand your Microsoft business billing profile](manage-billing-profiles.md). |
-| Billing Profile |The name of the billing profile used to define invoice properties like **Bill to**, **PO number**, and payment terms. This information is managed on the <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Billing profiles</a> page. For more information about billing profiles and how you can use them to build more flexible billing options for your organization, see [Understand your Microsoft business billing profile](manage-billing-profiles.md). |
+| Bill to |Identifies who receives the invoice. This information is managed on the <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Billing profiles</a> page. The billing profile is also shown on the online invoice page, in the **Invoice summary** section. To learn more about billing profiles, see [Understand your Microsoft business billing profile](manage-billing-profiles.md). |
+| Billing Profile |The name of the billing profile used to define invoice properties like **Bill to**, **PO number**, and payment terms. This information is managed on the <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Billing profiles</a> page. For more information about billing profiles, see [Understand your Microsoft business billing profile](manage-billing-profiles.md). |
 | Invoice number |A unique, Microsoft-generated invoice number used for tracking purposes. |
 | Invoice date |Date that the invoice is generated, typically five to 12 days after the end of the billing cycle. You can check your invoice date on the billing profile details page. Charges that occur between the end of the billing period and the invoice date are included in the invoice for the next month, since they are in the next billing period. The billing period start and end dates for each invoice are listed in the invoice PDF above **Billing Summary**.|
 | Payment terms |How you pay for your Microsoft bill. *Net 30 days* means that you pay by following instructions on your invoice, within 30 days of the invoice date. |
@@ -117,7 +116,7 @@ If there are Azure charges on your invoice that you would like more details on, 
 
 Invoices are available online in the Microsoft 365 admin center. A link to your online invoice is available from your PDF invoice, and from the email notification you receive. [Learn how to view or download your invoice from the Microsoft 365 admin center](view-your-bill-or-invoice.md).
 
-The online invoice is expandable so you can view the charges on your invoice and see more details about each item. The online invoice includes:
+The online invoice is expandable so that you can view the charges on your invoice and see more details about each item. The online invoice includes:
 
 - **Pricing details**&mdash;Additional information including details about discounts and product pricing.
 - **Online payment**&mdash;You can choose to make a payment online from the invoice.
@@ -159,10 +158,11 @@ If you have questions or need help with your Azure credits, <a href="https://por
 If you have questions or need help with your invoice in Microsoft 365 admin center, [contact support for business products](../../admin/get-help-support.md).
 
 ## Related content
+
 [View your invoice in the Microsoft 365 admin center](view-your-bill-or-invoice.md) (article)\
 [Understand your invoice for your Microsoft MOSA billing account](understand-your-invoice2.md) (article)\
 [Payment options for your Microsoft business subscription](pay-for-your-subscription.md) (article)\
 [How to pay for your Microsoft business subscription with a billing profile](pay-for-subscription-billing-profile.md)\
-[Manage payment methods](manage-payment-methods.md) (article)\
+[Manage payment methods for Microsoft business accounts](manage-payment-methods.md) (article)\
 [Billing information for Microsoft 365 for business in Mexico](mexico-billing-info.md) (article)\
 [Minecraft: Education Edition payment options](/education/windows/school-get-minecraft) (article)

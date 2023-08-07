@@ -37,7 +37,7 @@ Check out all of our small business content on [Small business help & learning](
 
 Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
-You can view your bill or invoice for your Microsoft business subscription in the Microsoft 365 admin center. If you need help with interpreting the charges you see on your bill, [find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts), then see either [Understand your bill or invoice for your Microsoft MCA billing account](understand-your-invoice.md) or [Understand your bill or invoice for your Microsoft MOSA billing account](understand-your-invoice2.md) for a detailed walkthrough of the invoice.
+You can view your invoice for your Microsoft business subscription in the Microsoft 365 admin center. If you need help with interpreting the charges that you see on your invoice, [find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts), then see either [Understand your invoice for your Microsoft MCA billing account](understand-your-invoice.md) or [Understand your invoice for your Microsoft MOSA billing account](understand-your-invoice2.md) for a detailed walkthrough of the billing statement.
 
 > [!IMPORTANT]
 > Microsoft 365 services doesn’t provide payment receipts. For credit or debit card payments, use the invoice and your credit or debit card billing statement to match your payment.
@@ -59,7 +59,7 @@ You must be a Global or Billing admin to do the steps described in this article.
 > [!NOTE]
 > The online version of your invoice looks different from the .PDF version that you download.
 
-If you want to receive a copy of your billing statement in email, see [Manage billing notifications and invoice attachments](manage-billing-notifications.md).
+If you want to receive a copy of your invoice in email, see [Manage billing notifications and invoice attachments](manage-billing-notifications.md).
 
 ::: moniker range="o365-21vianet"
 
