@@ -104,8 +104,8 @@ All our updates contain
 ### What's new
  
 - Improved output for [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) if scan results fail to retrieve
-- Extended management options for configuring security intelligence updates with Intune, Group policy, and Powershell
-- Extended management options for disabling IOAV scans over the network with Intune, Group policy, and Powershell. The new setting is ApplyDisableNetworkScanningToIOAV.
+- Extended management options for configuring security intelligence updates with Intune, Group Policy, and PowerShell
+- Extended management options for disabling IOAV scans over the network using Intune, Group Policy, and PowerShell. The new setting is `ApplyDisableNetworkScanningToIOAV` for [Set-MpPreference](/powershell/module/defender/set-mppreference).
 - Improved the Unified agent installation process to handle MsMpEng.exe debugger extensions, if present
 - Fixed an issue pertaining to showing the exclusions list with PowerShell Get-MpPreference on systems managed by Intune
 - Fixed warn notifications for two attack surface reduction (ASR) rules (Block Office applications from injecting code into other processes and Block credential stealing from the Windows local security authority subsystem
