@@ -28,7 +28,7 @@ With Syntex eSignature, you can quickly and securely send documents for signatur
 
 ## Before you begin
 
-Before you can use Syntex eSignature, an admin must [set up the Syntex eSignature service](esignature-set-up.md) in the Microsoft 365 admin center.
+Before you can use Syntex eSignature, an admin must [set up the Syntex eSignature service](esignature-setup.md) in the Microsoft 365 admin center.
 
 You must be signed in to SharePoint Online by using your work email address.
 
