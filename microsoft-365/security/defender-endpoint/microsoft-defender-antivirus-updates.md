@@ -3,13 +3,13 @@ title: Microsoft Defender Antivirus security intelligence and product updates
 description: Manage how Microsoft Defender Antivirus receives protection and product updates.
 ms.service: microsoft-365-security
 ms.localizationpriority: high
-ms.date: 06/12/2023
+ms.date: 07/24/2023
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.reviewer: pahuijbr, mkaminska, v-vutrieu
+ms.reviewer: pahuijbr, mkaminska, tudobril
 manager: dansimp
 ms.subservice: mde
 ms.collection: 
@@ -27,10 +27,17 @@ search.appverid: met150
 **Platforms**
 - Windows
 
-Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques. Make sure to update your antivirus protection, even if Microsoft Defender Antivirus is running in [passive mode](microsoft-defender-antivirus-compatibility.md). There are two types of updates related to keeping Microsoft Defender Antivirus up to date:
+Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques. Make sure to update your antivirus protection, even if Microsoft Defender Antivirus is running in [passive mode](microsoft-defender-antivirus-compatibility.md). This article includes information about the two types of updates for keeping Microsoft Defender Antivirus current:
 
 - [Security intelligence updates](#security-intelligence-updates)
 - [Product updates](#product-updates)
+
+This article also includes:
+
+- [Microsoft Defender Antivirus platform support](#microsoft-defender-antivirus-platform-support)
+- [How to roll back an update](#how-to-roll-back-an-update) (if necessary)
+- [Platform version included with Windows 10 releases](#platform-version-included-with-windows-10-releases)
+- [Updates for Deployment Image Servicing and Management (DISM)](#updates-for-deployment-image-servicing-and-management-dism)
 
 > [!TIP]
 > To see the most current engine, platform, and signature date, visit the [Security intelligence updates for Microsoft Defender Antivirus and other Microsoft antimalware](https://www.microsoft.com/en-us/wdsi/defenderupdates)
@@ -86,23 +93,55 @@ All our updates contain
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 
+### May-2023 *UPDATE* (Platform: 4.18.23050.9)
+
+*Microsoft has released an additional platform update (**4.18.23050.9**) for the May 2023 release.*
+
+- Security intelligence update version: **1.393.1315.0**
+- Released: **July 24, 2023 (Platform only)**
+- Platform: **4.18.23050.9**
+- Engine: **1.1.23060.1005**
+- Support phase: **Security and Critical Updates**
+
+#### What's new
+
+- Fixed a regression where HTTP requests were being handled sequentially, causing high latency for [network protection](network-protection.md) scenarios
+- Fixed a bug where DNS requests with empty authority records were being improperly parsed
+
+### June-2023 (Engine: 1.1.23060.1005)
+
+- Security intelligence update version: **1.393.71.0**
+- Released:  **July 10, 2023 (Engine only)** 
+- Engine: **1.1.23060.1005**
+- Support phase: **Security and Critical Updates**
+   
+#### What's new  
+
+- Fixed an issue with [ASR rules deployed via Intune](/mem/intune/protect/endpoint-security-asr-policy) to display accurately in the Microsoft 365 Defender portal
+- Fixed a performance issue when building and validating Defender cache
+- Improved performance by removing redundant exclusion checks
+ 
+#### Known Issues  
+
+- See [May-2023 *UPDATE* (Platform: 4.18.23050.9 | Engine: 1.1.23060.1005)](#may-2023-update-platform-418230509) for platform updates.
+
 ### May-2023 *UPDATE* (Platform: 4.18.23050.5 | Engine:  1.1.23050.2)
 
-*Microsoft has released a platform update (**4.18.23050.5**) for the May 2023 release.*
+*Microsoft has released a platform update (**4.18.23050.5**) for the May 2023 release. Note that an [additional update](#may-2023-update-platform-418230509) has been released.*
 
 - Security intelligence update version: **1.391.860.0**
 - Released: **June 12, 2023**
 - Platform: **4.18.23050.5**
 - Engine: **1.1.23050.2**
 - Support phase: **Security and Critical Updates**
-   
-### What's new  
+   
+#### What's new  
 
 - Fixed issue that could lead to resolution of incorrect service endpoint
   
-### Known Issues  
+#### Known Issues  
 
-- None
+- Users encounter slow loading webpages in non-Microsoft web browsers with [web content filtering](/microsoft-365/security/defender-endpoint/web-content-filtering) enabled
 
 ### May-2023 (Platform: 4.18.23050.3 | Engine:  1.1.23050.2)
 
@@ -111,8 +150,8 @@ All our updates contain
 - Platform: **4.18.23050.3**    
 - Engine: **1.1.23050.2**    
 - Support phase: **Security and Critical Updates**  
-   
-### What's new  
+   
+#### What's new  
 
 - New version format for Platform and Engine (see the [April-2023 update](#whats-new))
 - Improved processing of SmartLockerMode  
@@ -129,7 +168,7 @@ All our updates contain
 - Fixed memory leaked in ASR logic  
 - Improved validation guard-rail for Malicious Software Removal Tool (MSRT) releases
   
-### Known Issues  
+#### Known Issues  
 
 - Potential issue that could lead to resolution of incorrect service endpoint
 
@@ -158,28 +197,6 @@ All our updates contain
 - Updated missing setting (ValidateMapsConnection) in [MpCmdRun.exe](command-line-arguments-microsoft-defender-antivirus.md)
 - Fixed abandoned threats in the Windows Security app
 - Fixed a service-hang issue that caused invalid outputs to display in [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus)
-
-
-#### Known issues
-
-- None
-
-### March-2023 (Platform: 4.18.2303.8 | Engine: 1.1.20200.4)
-
-- Security intelligence update version: **1.387.695.0**
-- Release date:  **April 4, 2023 (Engine) / April 11, 2023 (Platform)**
-- Platform: **4.18.2303.8** 
-- Engine: **1.1.20200.4**
-- Support phase: **Security and Critical Updates**
-
-#### What's new
-
-- Beginning in April 2023, monthly platform and engine version release information (in this article) now includes two dates: Engine and Platform
-- Increased file hash support 
-- Added support to protect registry keys against parent keys abuse 
-- Improved tamper protection of registry keys against parent keys abuse  
-- Improved log handling for DLP and Device Control 
-- Improved performance on developer drives 
 
 #### Known issues
 
@@ -806,3 +823,6 @@ For more information, see [Microsoft Defender update for Windows operating syste
 > - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 > - [Configure Defender for Endpoint on Android features](android-configure.md)
 > - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
+
+
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

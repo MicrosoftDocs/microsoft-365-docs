@@ -1,9 +1,9 @@
 ---
 title: Managers - Get your team started with Microsoft 365 for frontline workers
-author: daisyfell
-ms.author: daisyfeller
+author: lana-chin
+ms.author: v-chinlana
+manager: serdars
 ms.reviewer: samanro
-manager: pamgreen
 ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline

@@ -103,7 +103,7 @@ In each score category, we quantify the key indicators for how your organization
 
 ### Products included in Adoption Score
 
-Adoption Score includes data from Exchange, SharePoint, OneDrive, Teams, Word, Excel, PowerPoint, OneNote, Outlook, Yammer, and Skype.
+Adoption Score includes data from Exchange, SharePoint, OneDrive, Teams, Word, Excel, PowerPoint, OneNote, Outlook, Viva Engage, and Skype.
 
 Your organization's score is updated daily and reflects user actions completed in the last 28 (including the current day).
 

@@ -116,3 +116,4 @@ It's crucial to respond in quickly to keep the investigation moving.
 - To proactively hunt threats across endpoints, refer to [Endpoint Attack Notification](../defender-endpoint/endpoint-attack-notifications.md).
 - To proactively hunt threats across endpoints, Office 365, cloud applications, and identity, refer to [Microsoft Defender Experts for Hunting](../defender/defender-experts-for-hunting.md).
 
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

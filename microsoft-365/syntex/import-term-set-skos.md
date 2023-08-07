@@ -32,8 +32,7 @@ We recommend keeping your import files to less than 20,000 terms. Larger files c
 
 4. If you want to download a sample file to use as a template, click **sample-metadata.ttl** to get a sample file that uses the SKOS-based format.
 
-5. Create the import file that contains the term sets & terms you wish to import.
-
+1. Create the import file that contains the term sets and terms you want to import.
 6. Under **File format**, select **SKOS (*.ttl)**.
 
 7. Click **Browse** and navigate to and add your import file.
@@ -47,3 +46,4 @@ On successful import of the file, a success message will be displayed, and the t
 [Introduction to managed metadata](/sharepoint/managed-metadata)
 
 [Import term sets (site level)](https://support.microsoft.com/office/168fbc86-7fce-4288-9a1f-b83fc3921c18)
+
