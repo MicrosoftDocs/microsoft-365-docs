@@ -70,9 +70,10 @@ Page two of the invoice contains a section summary, and details by section. If y
 The last page of the invoice contains payment instructions.
 
 :::image type="content" source="../../media/understand-your-mca-invoice/mca-invoice-p3.png" alt-text="The last page of the invoice .PDF that shows payment instructions.":::
-## Understand the invoice header
 
-The top of the first page of your invoice identifies who's accountable for payment, where the bill is sent to, and a summary of charges. The following table explains the fields shown in the header of your invoice.
+## Understand page one of your invoice
+
+The top of the first page of your invoice identifies who's accountable for payment, where the bill is sent to, and a summary of charges. The following table explains the fields shown at the top of page one.
 
 | Term | Description |
 | --- | --- |
@@ -83,7 +84,7 @@ The top of the first page of your invoice identifies who's accountable for payme
 | Invoice date |Date that the invoice is generated, typically five to 12 days after the end of the billing cycle. You can check your invoice date on the billing profile details page. Charges that occur between the end of the billing period and the invoice date are included in the invoice for the next month, since they are in the next billing period. The billing period start and end dates for each invoice are listed in the invoice PDF above **Billing Summary**.|
 | Payment terms |How you pay for your Microsoft bill. *Net 30 days* means that you pay by following instructions on your invoice, within 30 days of the invoice date. |
 
-## Understand the billing summary
+### Billing Summary
 
 The **Billing Summary** shows the summary of charges since the previous billing period, any credits that were applied, tax, and the total amount due. The following table explains the fields shown in the Billing Summary of your invoice.
 
@@ -95,9 +96,9 @@ The **Billing Summary** shows the summary of charges since the previous billing 
 | Subtotal |The pre-tax amount due |
 | Tax |The type and amount of tax that you pay, depending on the country/region of your billing profile. If you don't have to pay tax, no tax is shown on your invoice. |
 
-### Understand your charges
+### Understand page two of your invoice
 
-The charges pages show the cost broken down by product. For Azure customers, the charges might be organized by invoice section. For more information about how invoice sections are used with Azure products, see
+The charges for your invoice start on page two and show the cost broken down by product or service. If you have multiple products or services that are paid for with the same billing profile, the section details might continue for several pages. For Azure customers, the charges might be organized by invoice section. For more information about how invoice sections are used with Azure products, see
 [Invoice sections](/azure/billing/billing-mca-overview#invoice-sections) in [Get started with your Microsoft Customer Agreement billing account](/azure/billing/billing-mca-overview). Within each product order, cost is itemized by service family. The following table explains the fields shown on the charges pages in your invoice.
 
 | Term |Description |
