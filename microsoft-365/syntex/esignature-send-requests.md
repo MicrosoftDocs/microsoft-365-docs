@@ -109,7 +109,7 @@ To continue the electronic signing process, you must consent to the terms and co
 
 - Select **Agree** to use your electronic signature and continue with the signing process.  
 - Or select **Decline** if you'd prefer [not to use your digital signature](#decline-to-sign-the-document), and contact the person who requested your signature to complete the signature by using a different method.
-- If you close the **Electronic Record and Signature Disclosure** without selecting the **Agree** button, you can reopen the dialog by selecting the **view disclosure** button on the top-left area of the document.
+- If you close the **Electronic Record and Signature Disclosure** without selecting the **Agree** button, you can reopen the dialog by selecting the **View disclosure** button on the top-left area of the document.
 
     ![Screenshot of the Electronic Record and Signature Disclosure screen.](../media/content-understanding/esignature-signature-disclosure-screen.png)
 
