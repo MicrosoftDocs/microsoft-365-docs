@@ -22,6 +22,12 @@ This article provides information about new features and important product updat
 
 ## August 2023
 
+### Microsoft Defender Vulnerability Management permissions are now integrated with Microsoft 365 Defender Unified role-based access control (RBAC)
+
+You can now control access and grant granular permissions for Microsoft Defender Vulnerability Management as part of the Microsoft 365 Defender Unified RBAC model. For more information, see [Microsoft Defender 365 Unified role-based access control (RBAC)](../defender/manage-rbac.md).
+
+You can add the new permissions to a custom role by selecting them from the **Security posture** permissions group when creating the role. For more information, see [Create custom roles with Microsoft 365 Defender Unified RBAC](./create-custom-rbac-roles.md).
+
 ### Microsoft Secure Score permissions integration with Microsoft 365 Defender Unified role-based access control (RBAC) is now in Public Preview </br>
 
 You can control access and grant granular permissions for the Microsoft Secure Score experience as part of the Microsoft 365 Defender Unified RBAC model. For more information, see [Manage permissions with Microsoft 365 Defender Unified role-based access control(RBAC)](./microsoft-secure-score.md#manage-permissions-with-microsoft-365-defender-unified-role-based-access-controlrbac). </br>

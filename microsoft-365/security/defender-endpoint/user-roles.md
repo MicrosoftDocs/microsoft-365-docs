@@ -65,16 +65,16 @@ The following steps guide you on how to create roles in Microsoft 365 Defender. 
 
 - **View data**
   - **Security operations** - View all security operations data in the portal
-  - **Threat and vulnerability management** - View Defender Vulnerability Management data in the portal
+  - **Defender Vulnerability Management** - View Defender Vulnerability Management data in the portal
 
 - **Active remediation actions**
   - **Security operations** - Take response actions, approve or dismiss pending remediation actions, manage allowed/blocked lists for automation and indicators
-  - **Threat and vulnerability management - Exception handling** - Create new exceptions and manage active exceptions
-  - **Threat and vulnerability management - Remediation handling** - Submit new remediation requests, create tickets, and manage existing remediation activities
-  - **Threat and vulnerability management - Application handling** - Apply immediate mitigation actions by blocking vulnerable applications, as part of the remediation activity and manage the blocked apps and perform unblock actions
+  - **Defender Vulnerability Management - Exception handling** - Create new exceptions and manage active exceptions
+  - **Defender Vulnerability Management - Remediation handling** - Submit new remediation requests, create tickets, and manage existing remediation activities
+  - **Defender Vulnerability Management - Application handling** - Apply immediate mitigation actions by blocking vulnerable applications, as part of the remediation activity and manage the blocked apps and perform unblock actions
 
 - **Security baselines**
-  - **Threat and vulnerability management – Manage security baselines assessment profiles** - Create and manage profiles so you can assess if your devices comply to security industry baselines.
+  - **Defender Vulnerability Management – Manage security baselines assessment profiles** - Create and manage profiles so you can assess if your devices comply to security industry baselines.
 
     > [!NOTE]
     > For the Defender Vulnerability Management public preview trial this permission is not required. Users with "Threat and vulnerability management - View data" permissions can manage security baselines. However, when the trial ends and a license is purchased, this permission is required.
