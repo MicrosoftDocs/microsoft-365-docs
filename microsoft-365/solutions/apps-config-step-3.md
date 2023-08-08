@@ -1,11 +1,11 @@
 ---
-title: "Step 3. Configure Microsoft Office"
+title: "Step 3. Configure Microsoft 365"
 ms.author: erikre
 author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: article
-description: Step 3. Configure Microsoft Office.
+description: Step 3. Configure Microsoft 365.
 ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
@@ -14,7 +14,8 @@ ms.custom:
 keywords:
 ---
 
-# Step 3. Configure Microsoft Office
+# Step 3. Configure Microsoft 365
+
 
 
 
