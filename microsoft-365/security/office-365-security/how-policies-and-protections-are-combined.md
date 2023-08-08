@@ -137,18 +137,6 @@ Tenant allows and blocks are able to override some filtering stack verdicts as d
   |Bulk|**Tenant wins**: Email delivered to mailbox|
   |Not spam|**Tenant wins**: Email delivered to mailbox|
 
-- [Safe Attachments](safe-attachments-about.md) blocks:
-
-  |Filtering stack verdict|Safe Attachments block|
-  |---|---|
-  |Malware|**Tenant wins**: Email quarantined|
-  |High confidence phishing|**Tenant wins**: Email quarantined|
-  |Phishing|**Tenant wins**: Email quarantined|
-  |High confidence spam|**Tenant wins**: Email quarantined|
-  |Spam|**Tenant wins**: Email quarantined|
-  |Bulk|**Tenant wins**: Email quarantined|
-  |Not spam|**Tenant wins**: Email quarantined|
-
 - [Enhanced Filtering for Connectors](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) (skip listing):
 
   |Filtering stack verdict|Enhanced Filtering|
