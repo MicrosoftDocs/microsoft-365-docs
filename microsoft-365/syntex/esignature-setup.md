@@ -82,7 +82,7 @@ Before a signature request is sent and at the completion of the request, certain
 
 When a signature request is created for a document in SharePoint, the Syntex eSignature service creates a working copy of the document. It's this working copy that is sent out to all recipients for signing, and it's how the sender can track the status of their requests. The working copy of the request is stored in a hidden document library in SharePoint. The signature will only be added to the working copy of the request document after all parties have signed; otherwise, it will appear as unsigned even if one of the parties has added their signature.
 
-The working copy of the request is stored and retained for five years or in accordance with the document retention policy set up by the SharePoint or tenant admin. Learn more about [retention policies](https://learn.microsoft.com/microsoft-365/compliance/retention-policies-sharepoint).
+The working copy of the request is stored and retained for five years or in accordance with the document retention policy set up by the SharePoint or tenant admin. Learn more about [retention policies](../compliance/retention-policies-sharepoint).
 
 ### Expiration of URL links in email
 

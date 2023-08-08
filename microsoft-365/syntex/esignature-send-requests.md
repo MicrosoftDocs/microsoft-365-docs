@@ -236,5 +236,5 @@ To avoid potential issues, you should check the status and settings of their doc
 
 After all recipients have signed the document, the signatures are added and an audit trail is appended to the signed PDF. Details of the request, including activities and timestamps of when they occurred throughout the signing process, are included. The details include the date and time the request created, date and time when the recipients signed, and so on. These details provide evidence of the integrity of the signing process. The signed document is then digitally signed by a Microsoft certificate to ensure that it can't be tampered with.  
 
-For setup and technical information for admins, see [Set up Microsoft Syntex eSignature (Preview)](esignature-set-up.md).
+For setup and technical information for admins, see [Set up Microsoft Syntex eSignature (Preview)](esignature-setup.md).
 
