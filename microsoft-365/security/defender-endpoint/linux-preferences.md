@@ -328,10 +328,14 @@ Specify the maximum number of entries to keep in the scan history. Entries inclu
 
 #### Advanced scan options
 
-The following settings can be configured to enable certain advanced scanning features. Note that enabling these features might impact device performance.
+The following settings can be configured to enable certain advanced scanning features. 
+> [!NOTE]
+> Enabling these features might impact device performance.
 
 ##### Configure scanning of file modify permissions events
-When this feature is enabled, Defender for Endpoint will scan files when their permissions have been changed to set the execute bit(s). Note that this feature is only applicable when the `enableFilePermissionEvents` feature (please refer to the [Advanced optional features](linux-preferences.md#configure-monitoring-of-file-modify-permissions-events) section below) is enabled.
+When this feature is enabled, Defender for Endpoint will scan files when their permissions have been changed to set the execute bit(s). 
+> [!NOTE]
+> This feature is only applicable when the `enableFilePermissionEvents` feature is enabled. Please refer to the [Advanced optional features](linux-preferences.md#configure-monitoring-of-file-modify-permissions-events) section below for details.
 
 |Description|Value|
 |---|---|
@@ -341,7 +345,9 @@ When this feature is enabled, Defender for Endpoint will scan files when their p
 |**Comments**|Available in Defender for Endpoint version ? or higher.|
 
 ##### Configure scanning of file modify ownership events
-When this feature is enabled, Defender for Endpoint will scan files for which ownership have changed. Note that this feature is only applicable when the `enableFileOwnershipEvents` feature (please refer to the [Advanced optional features](linux-preferences.md#configure-monitoring-of-file-modify-ownership-events) section below) is enabled.
+When this feature is enabled, Defender for Endpoint will scan files for which ownership have changed. 
+> [!NOTE]
+> This feature is only applicable when the `enableFileOwnershipEvents` feature is enabled. Please refer to the [Advanced optional features](linux-preferences.md#configure-monitoring-of-file-modify-ownership-events) section below for details.
 
 |Description|Value|
 |---|---|
@@ -351,7 +357,9 @@ When this feature is enabled, Defender for Endpoint will scan files for which ow
 |**Comments**|Available in Defender for Endpoint version ? or higher.|
 
 ##### Configure scanning of raw socket events
-When this feature is enabled, Defender for Endpoint will scan network socket events such as creation of raw sockets / packet sockets, or setting socket option. Note that this feature is only applicable when Behavior Monitoring is enabled, as well as the `enableRawSocketEvent` feature (please refer to the [Advanced optional features](linux-preferences.md#configure-monitoring-of-raw-socket-events) section below) is enabled.
+When this feature is enabled, Defender for Endpoint will scan network socket events such as creation of raw sockets / packet sockets, or setting socket option. 
+> [!NOTE]
+> This feature is only applicable when the `enableRawSocketEvent` feature is enabled. Please refer to the [Advanced optional features](linux-preferences.md#configure-monitoring-of-raw-socket-events) section below for details.
 
 |Description|Value|
 |---|---|
@@ -435,7 +443,9 @@ Determines whether security intelligence updates are installed automatically:
 
 ### Advanced optional features
 
-The following settings can be configured to enable certain advanced features. Note that enabling these features might impact device performance.
+The following settings can be configured to enable certain advanced features. 
+> [!NOTE]
+> Enabling these features might impact device performance.
 
 |Description|Value|
 |---|---|
@@ -443,10 +453,11 @@ The following settings can be configured to enable certain advanced features. No
 |**Data type**|Dictionary (nested preference)|
 |**Comments**|See the following sections for a description of the dictionary contents.|
 
-
 #### Module load feature
 
-Determines whether module load events (file open events on shared libraries) are monitored (applicable only when Behavior Monitoring is enabled). Note that enabling this feature might impact device performance.
+Determines whether module load events (file open events on shared libraries) are monitored.
+> [!NOTE]
+> This feature is applicable only when Behavior Monitoring is enabled.
 
 |Description|Value|
 |---|---|
@@ -457,7 +468,7 @@ Determines whether module load events (file open events on shared libraries) are
 
 #### Supplementary sensor configurations
 
-The following settings can be used to configure certain advanced supplementary sensor features. Note that enabling these features might impact device performance.
+The following settings can be used to configure certain advanced supplementary sensor features.
 
 |Description|Value|
 |---|---|
@@ -466,7 +477,9 @@ The following settings can be used to configure certain advanced supplementary s
 |**Comments**|See the following sections for a description of the dictionary contents.|
 
 ##### Configure monitoring of file modify permissions events
-Determines whether file modify permissions events (`chmod`) are monitored. When this feature is enabled, Defender for Endpoint will monitor changes to the execute bits of files, but not scan these events (please refer to the [Advanced scanning features](linux-preferences.md#configure-scanning-of-file-modify-permissions-events) section above). Note that enabling this feature might impact device performance.
+Determines whether file modify permissions events (`chmod`) are monitored. 
+> [!NOTE]
+> When this feature is enabled, Defender for Endpoint will monitor changes to the execute bits of files, but not scan these events. Please refer to the [Advanced scanning features](linux-preferences.md#configure-scanning-of-file-modify-permissions-events) section above for more details.
 
 |Description|Value|
 |---|---|
@@ -476,7 +489,9 @@ Determines whether file modify permissions events (`chmod`) are monitored. When 
 |**Comments**|Available in Defender for Endpoint version ? or higher.|
 
 ##### Configure monitoring of file modify ownership events
-Determines whether file modify ownership events (chown) are monitored. When this feature is enabled, Defender for Endpoint will monitor changes to the ownership of files, but not scan these events (please refer to the [Advanced scanning features](linux-preferences.md#configure-scanning-of-file-modify-ownership-events) section above). Note that enabling this feature might impact device performance.
+Determines whether file modify ownership events (chown) are monitored. 
+> [!NOTE]
+> When this feature is enabled, Defender for Endpoint will monitor changes to the ownership of files, but not scan these events. Please refer to the [Advanced scanning features](linux-preferences.md#configure-scanning-of-file-modify-ownership-events) section above for more details.
 
 |Description|Value|
 |---|---|
@@ -486,7 +501,10 @@ Determines whether file modify ownership events (chown) are monitored. When this
 |**Comments**|Available in Defender for Endpoint version ? or higher.|
 
 ##### Configure monitoring of raw socket events
-Determines whether network socket events involving creation of raw sockets / packet sockets, or setting socket option, are monitored (applicable only when Behavior Monitoring is enabled). When this feature is enabled, Defender for Endpoint will monitor these network socket events, but not scan these events (please refer to the [Advanced scanning features](linux-preferences.md#configure-scanning-of-raw-socket-events) section above). Note that enabling this feature might impact device performance.
+Determines whether network socket events involving creation of raw sockets / packet sockets, or setting socket option, are monitored.
+> [!NOTE]
+> This feature is applicable only when Behavior Monitoring is enabled.
+> When this feature is enabled, Defender for Endpoint will monitor these network socket events, but not scan these events. Please refer to the [Advanced scanning features](linux-preferences.md#configure-scanning-of-raw-socket-events) section above for more details.
 
 |Description|Value|
 |---|---|
@@ -496,7 +514,9 @@ Determines whether network socket events involving creation of raw sockets / pac
 |**Comments**|Available in Defender for Endpoint version ? or higher.|
 
 ##### Configure monitoring of boot loader events
-Determines whether boot loader events are monitored and scanned (applicable only when Behavior Monitoring is enabled). Note that enabling this feature might impact device performance.
+Determines whether boot loader events are monitored and scanned.
+> [!NOTE]
+> This feature is applicable only when Behavior Monitoring is enabled.
 
 |Description|Value|
 |---|---|
@@ -506,7 +526,9 @@ Determines whether boot loader events are monitored and scanned (applicable only
 |**Comments**|Available in Defender for Endpoint version ? or higher.|
 
 ##### Configure monitoring of ptrace events
-Determines whether ptrace events are monitored and scanned (applicable only when Behavior Monitoring is enabled). Note that enabling this feature might impact device performance.
+Determines whether ptrace events are monitored and scanned.
+> [!NOTE]
+> This feature is applicable only when Behavior Monitoring is enabled.
 
 |Description|Value|
 |---|---|
@@ -516,7 +538,9 @@ Determines whether ptrace events are monitored and scanned (applicable only when
 |**Comments**|Available in Defender for Endpoint version ? or higher.|
 
 ##### Configure monitoring of pseudofs events
-Determines whether pseudofs events are monitored and scanned (applicable only when Behavior Monitoring is enabled). Note that enabling this feature might impact device performance.
+Determines whether pseudofs events are monitored and scanned.
+> [!NOTE]
+> This feature is applicable only when Behavior Monitoring is enabled.
 
 |Description|Value|
 |---|---|
@@ -526,7 +550,9 @@ Determines whether pseudofs events are monitored and scanned (applicable only wh
 |**Comments**|Available in Defender for Endpoint version ? or higher.|
 
 ##### Configure monitoring of module load events using eBPF
-Determines whether pseudofs events are monitored using eBPF and scanned (applicable only when Behavior Monitoring is enabled). Note that enabling this feature might impact device performance.
+Determines whether pseudofs events are monitored using eBPF and scanned.
+> [!NOTE]
+> This feature is applicable only when Behavior Monitoring is enabled.
 
 |Description|Value|
 |---|---|
@@ -537,7 +563,7 @@ Determines whether pseudofs events are monitored using eBPF and scanned (applica
 
 #### Network protection configurations
 
-The following settings can be used to configure certain advanced supplementary sensor features. Note that enabling these features might impact device performance.
+The following settings can be used to configure certain advanced supplementary sensor features.
 
 |Description|Value|
 |---|---|
@@ -546,7 +572,9 @@ The following settings can be used to configure certain advanced supplementary s
 |**Comments**|See the following sections for a description of the dictionary contents.|
 
 ##### Configure ICMP inspection
-Determines whether ICMP events are monitored and scanned (applicable only when Behavior Monitoring is enabled). Note that enabling this feature might impact device performance.
+Determines whether ICMP events are monitored and scanned.
+> [!NOTE]
+> This feature is applicable only when Behavior Monitoring is enabled.
 
 |Description|Value|
 |---|---|
