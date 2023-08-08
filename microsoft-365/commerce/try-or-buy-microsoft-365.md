@@ -27,14 +27,14 @@ ms.custom:
 - adminvideo
 search.appverid: GEA150 
 description: "Learn how to sign up for a free 30-day trial or buy a subscription for Microsoft 365 for business products and services."
-ms.date: 07/11/2023
+ms.date: 08/07/2023
 ---
 
 # Try or buy a Microsoft 365 for business subscription
 
 Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/p/?linkid=2224585) and our [Microsoft 365 small business help](https://go.microsoft.com/fwlink/p/?linkid=2197659) on YouTube.
 
-Microsoft 365 for business is a subscription service that lets you run your organization in the cloud while Microsoft takes care of the IT for you. We manage your devices, protect against real-world threats, and provide your organization with the latest in business software. You can sign up for a free trial subscription for Microsoft 365 Business Basic, Microsoft 365 Business Standard, Microsoft 365 Business Premium, or Microsoft 365 Apps for business and try it out for 30 days.
+Microsoft 365 for business is a subscription service that lets you run your organization in the cloud while Microsoft takes care of the IT for you. We manage your devices, protect against real-world threats, and provide your organization with the latest in business software. You can sign up for a free trial subscription for Microsoft 365 Business Basic, Microsoft 365 Business Standard, Microsoft 365 Business Premium, Microsoft Defender for Business, or Microsoft 365 Apps for business and try it out for 30 days.
 
 > [!NOTE]
 > You must use a credit or debit card when you sign up for a free trial. At the end of your free trial period, your trial subscription is automatically converted to a paid subscription. Your card isn't billed until the trial period ends.
@@ -68,7 +68,7 @@ Proof of payment is provided in the form of Fapiaos. You can submit your Fapiao 
 
 ## Try a free trial subscription
 
-To create an account and sign up for a free trial subscription of Microsoft 365 Business Basic, Microsoft 365 Business Standard, Microsoft 365 Business Premium, or Microsoft 365 Apps for business, use the following steps.
+To create an account and sign up for a free trial subscription of Microsoft 365 Business Basic, Microsoft 365 Business Standard, Microsoft 365 Business Premium, Microsoft Defender for Business, or Microsoft 365 Apps for business, use the following steps.
 
 1. Go to the <a href="https://www.aka.ms/office365signup" target="_blank">Microsoft 365 Products</a> site.
 2. Select the plan that you want, such as **Microsoft 365 Business Standard**, scroll down the page, and select **Try free for 1 month**.
@@ -212,7 +212,8 @@ If you have a new account and are setting up your first subscription, you can us
 
 - [Set up Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md)
 - [Set up Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)
-- [Set up Microsoft 365 Business Premium](../business/set-up.md)
+- [Set up Microsoft 365 Business Premium](../business-premium/index.md)
+- [Set up Microsoft Defender for Business](../security/defender-business/mdb-setup-configuration.md)
 - [Set up Microsoft 365 Apps for business](../admin/setup/setup-apps-for-business.md)
 
 If you already have a subscription and are adding a new subscription, you can move users to it. To learn how, see [Move users to a different subscription](subscriptions/move-users-different-subscription.md).

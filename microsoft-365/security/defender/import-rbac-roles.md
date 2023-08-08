@@ -1,5 +1,5 @@
 ---
-title: Import roles to Microsoft 365 Defender RBAC
+title: Import roles to Microsoft 365 Defender Unified role-based access control (RBAC)
 description: Create custom Microsoft 365 Defender Security portal role-based access control (RBAC)
 ms.service: microsoft-365-security
 ms.author: siosulli
@@ -12,13 +12,13 @@ ms.collection:
 - tier3
 ms.custom: 
 ms.topic: how-to
-ms.subservice: m365d
-ms.date: 11/10/2022
+ms.subservice: mde
+ms.date: 08/03/2023
 ms.reviewer: 
 search.appverid: met150
 ---
 
-# Import roles to Microsoft 365 Defender RBAC
+# Import roles to Microsoft 365 Defender Unified role-based access control (RBAC)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,19 +32,19 @@ search.appverid: met150
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## Import roles to Microsoft 365 Defender RBAC from individual RBAC models
+## Import roles to Microsoft 365 Defender Unified RBAC from individual RBAC models
 
-You can import existing roles that are maintained as part of individual supported products in Microsoft 365 Defender (for example, Microsoft Defender for Endpoint) to the Microsoft 365 Defender RBAC model.
+You can import existing roles that are maintained as part of individual supported products in Microsoft 365 Defender (for example, Microsoft Defender for Endpoint) to the Microsoft 365 Defender Unified RBAC model.
 
-Importing roles will migrate and maintain the roles with full parity in relation to their permissions and user assignments in the Microsoft 365 Defender RBAC model.
+Importing roles will migrate and maintain the roles with full parity in relation to their permissions and user assignments in the Microsoft 365 Defender Unified RBAC model.
 
 > [!NOTE]
 > Once roles are migrated, you can modify the imported roles and change the level of permissions as needed.
 
-The following steps guide you on how to import roles into Microsoft 365 Defender RBAC:
+The following steps guide you on how to import roles into Microsoft 365 Defender Unified RBAC:
 
 > [!IMPORTANT]
-> You must be a Global Administrator or Security Administrator in Azure Active Directory, or have all the **Authorization** permissions assigned in Microsoft 365 Defender RBAC to perform this task. For more information on permissions, see [Permission pre-requisites](../defender/manage-rbac.md#permissions-pre-requisites).
+> You must be a Global Administrator or Security Administrator in Azure Active Directory, or have all the **Authorization** permissions assigned in Microsoft 365 Defender Unified RBAC to perform this task. For more information on permissions, see [Permission pre-requisites](../defender/manage-rbac.md#permissions-pre-requisites).
 
 1. Sign in to the [Microsoft 365 Defender portal](https://security.microsoft.com).
 2. In the navigation pane, select **Permissions**.
@@ -60,7 +60,7 @@ The following steps guide you on how to import roles into Microsoft 365 Defender
 
 Now that you have imported your roles you will be able to [View and edit roles](edit-delete-rbac-roles.md) and activate the workloads.
 
-For the Microsoft 365 Defender security portal to start enforcing the permissions and assignments configured in your new or imported roles, you'll need to activate the new Microsoft 365 Defender RBAC model. For more information, see [Activate the workloads](activate-defender-rbac.md).
+For the Microsoft 365 Defender security portal to start enforcing the permissions and assignments configured in your new or imported roles, you'll need to activate the new Microsoft 365 Defender Unified RBAC model. For more information, see [Activate the workloads](activate-defender-rbac.md).
 
 Imported roles appear in the **Permissions and roles** list together with any custom roles you might have created. All imported roles will be marked as **Imported** in the description. Once you edit an imported role it will no longer be marked as **Imported**.
 
@@ -69,6 +69,6 @@ Imported roles appear in the **Permissions and roles** list together with any cu
 
 ## Next steps
 
-- [Activate Microsoft 365 Defender RBAC](activate-defender-rbac.md)
+- [Activate Microsoft 365 Defender Unified RBAC](activate-defender-rbac.md)
 - [Edit or delete roles](edit-delete-rbac-roles.md)
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
