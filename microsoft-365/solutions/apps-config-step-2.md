@@ -71,6 +71,7 @@ Choose a profile type:
 
 
 
+
 ## Next step
 <!--
 [![Step 3 - Configure Microsoft Office](../media/configure-managed-apps/configure-managed-apps-05.png)](apps-config-step-3.md)

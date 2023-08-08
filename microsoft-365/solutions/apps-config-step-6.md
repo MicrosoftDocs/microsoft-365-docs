@@ -16,6 +16,11 @@ keywords:
 
 # Step 5. Configure other apps
 
+Google
+- Managed Home Screen
+- Microsoft Launcher
+- Google Chrome for Android
+- 
 
 ## Next step
 <!--

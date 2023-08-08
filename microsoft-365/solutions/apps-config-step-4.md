@@ -16,7 +16,13 @@ keywords:
 
 # Step 4. Configure Microsoft Edge
 
-
+- Edge iOS devices
+    - nothing predefined, however several key settings
+- Edge Android MAM
+    - General configuration settings
+    - Microsoft Tunnel for Mobile Application Management settings
+    - Edge configuration settings (get screenshot)
+- 
 
 ## Next step
 <!--

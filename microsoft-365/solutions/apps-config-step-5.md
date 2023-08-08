@@ -16,7 +16,12 @@ keywords:
 
 # Step 5. Configure Microsoft Teams
 
-
+- Teams iOS devices
+    - nothing predefined, however several key settings
+- Teams Android MAM
+    - General configuration settings
+    - Microsoft Tunnel for Mobile Application Management settings
+    - Edge configuration settings (get screenshot)
 
 ## Next step
 <!--

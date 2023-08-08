@@ -16,8 +16,44 @@ keywords:
 
 # Step 3. Configure Microsoft 365
 
+## App configuration policy
+
+- iOS/iPadOS there's nothing unique
+- Android:
+    - Permissions - Permissions granted here will override the “Default app permissions” policy for the selected apps. Learn more about [Android runtime permissions](/mem/intune/apps/app-configuration-policies-use-android). There's a large set of permissions that can be added for Android devices. You specify permissions you want to override. If they are not chosen/specified explicitly, then the default behavior will apply.
+    - Configuration Settings - Available keys: `Allowed Accounts`, `Notes creation enabled`, `Teams app enabled`. 
+    - Connected apps - Enable users to connect this app across the work and personal profiles. This setting only works for personally-owned and corporate-owned work profile devices. Learn more about [connected apps](/mem/intune/apps/app-configuration-policies-use-android).
 
 
+## Policies for Office apps
+
+Intune provides policies specifically for Microsoft Office apps. You can select specific options to create mobile app management policies for Office mobile apps that connect to Microsoft 365 services. There are many policies for Office apps that you can add to Microsoft Intune and apply to groups of end users.
+
+`intune\apps\app-office-policies.md`
+
+**Policies for Office apps**: Select this option to create mobile app management policies for Office mobile apps that connect to Microsoft 365 services. You can also protect access to Exchange on-premises mailboxes by creating Intune app protection policies for Outlook for iOS/iPadOS and Android enabled with hybrid Modern Authentication. You must meet the requirements to use policies for Office apps. For more information about requirements, see [Requirements for using the Office cloud policy service](/deployoffice/overview-office-cloud-policy-service#requirements-for-using-the-office-cloud-policy-service). App protection policies are not supported for other apps that connect to on-premises Exchange or SharePoint services. For related information, see [Overview of the Office cloud policy service for Microsoft 365 Apps for enterprise](/deployoffice/overview-office-cloud-policy-service).
+
+## Configuration policies for individual M365 apps
+
+- Word iOS devices: nothing special
+- Word Android devices:
+    - Permissions
+    - Configuration Settings
+    - Connected apps
+- Word iOS/Android MAM: 
+    - General configuration settings
+    - Microsoft Tunnel for MAM settings
+
+
+## Specific configuration scenarios
+
+
+### Controlling account access for apps on managed devices
+
+You can control which work or school accounts are added to Microsoft apps on managed devices. You can limit access to only allowed organization user accounts and block personal accounts within the apps (if supported) on enrolled devices. For more information, see [Allow only configured organization accounts in apps](/mem/intune//apps/app-configuration-policies-use-ios#allow-only-configured-organization-accounts-in-apps).
+
+> [!NOTE]
+> Configuration keys used in this scenario include `IntuneMAMAllowedAccountsOnly` and `IntuneMAMUPN`. 
 
 ## Next step
 <!--
