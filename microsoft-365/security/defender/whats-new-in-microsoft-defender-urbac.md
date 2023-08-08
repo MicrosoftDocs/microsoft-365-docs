@@ -22,11 +22,15 @@ This article provides information about new features and important product updat
 
 ## August 2023
 
-**A new file collection permission in Microsoft 365 Defender Unified (RBAC) is now in Public Preview** </br>
+### Microsoft Secure Score permissions integration with Microsoft 365 Defender Unified role-based access control (RBAC) is now in Public Preview </br>
 
-You can now assign a new granular permission in Microsoft 365 Defender Unified (RBAC) that allows users to collect or download files for analysis. This permission enables Microsoft Defender for Endpoint users download files directly from the file page and during a live response investigation in the live response console.
+You can control access and grant granular permissions for the Microsoft Secure Score experience as part of the Microsoft 365 Defender Unified RBAC model. For more information, see [Manage permissions with Microsoft 365 Defender Unified role-based access control(RBAC)](./microsoft-secure-score.md#manage-permissions-with-microsoft-365-defender-unified-role-based-access-controlrbac). </br>
 
-You can add the new permission to a custom role by selecting it from the **Security operations** permissions group when creating the role. For more information, see [Create custom roles with Microsoft 365 Defender RBAC](./create-custom-rbac-roles.md).
+### A new file collection permission in Microsoft 365 Defender Unified RBAC is now in Public Preview </br>
+
+You can now assign a new granular permission in Microsoft 365 Defender Unified RBAC that allows users to collect or download files for analysis. This permission enables Microsoft Defender for Endpoint users download files directly from the file page and during a live response investigation in the live response console.
+
+You can add the new permission to a custom role by selecting it from the **Security operations** permissions group when creating the role. For more information, see [Create custom roles with Microsoft 365 Defender Unified RBAC](./create-custom-rbac-roles.md).
 
 For more information on what's new with other Microsoft Defender security products, see:
 
