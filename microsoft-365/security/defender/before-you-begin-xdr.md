@@ -19,7 +19,7 @@ ms.collection:
   - tier1
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 11/17/2022
+ms.date: 08/08/2023
 ---
 
 # Before you begin
@@ -43,6 +43,13 @@ Aside from the requirements stated previously, to get Defender Experts for XDR c
 - Microsoft Defender for Cloud Apps
 
 Defender Experts for XDR is a managed extended detection and response (XDR) service. To get native XDR coverage, we recommend deploying the full Microsoft 365 Defender suite.
+
+### Server coverage
+
+Defender Experts for XDR also covers servers—whether on premises or on a hyperscale cloud service provider—that have Defender for Endpoint deployed on them with a Microsoft Defender for Server license. For Defender Experts coverage, a server is considered as a user account for billing. The service doesn’t cover Microsoft Defender for Cloud.
+[Learn more about specific hardware and software requirements](microsoft-365/security/defender-endpoint/minimum-requirements).
+
+### Ask Defender Experts
 
 As part of the service's built-in [Microsoft Defender Experts for Hunting](defender-experts-for-hunting.md), you're also assigned two **Ask Defender Experts** credits on the first of each month, which you may use to submit questions. You can still submit inquiries beyond the initial number of allocated credits. Unused credits expire 90 days from date of assignment or at the end of the subscription term, whichever is shortest.
 
