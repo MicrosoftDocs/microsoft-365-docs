@@ -251,7 +251,7 @@ You can use the following methods to onboard mobile devices, such as Android and
 
 | Device | Procedure |
 |:---|:---|
-| Android | 1. On the device, go to the Google Play store.<br/><br/>2. If you haven't already done so, download and install the Microsoft Authenticator app. Sign in, and register your device in the Microsoft Authenticator app. <br/><br/>3. In the Google Play store, search for the Microsoft Defender app, and install it. <br/><br/>4. Open Microsoft Defender app, sign in, and complete the onboarding process. |
+| Android | 1. On the device, go to the Google Play store.<br/><br/>2. If you haven't already done so, download and install the Microsoft Authenticator app. Sign in, and register your device in the Microsoft Authenticator app. <br/><br/>3. In the Google Play store, search for the Microsoft Defender app, and install it. <br/><br/>4. Open the Microsoft Defender app, sign in, and complete the onboarding process. |
 | iOS | 1. On the device, go to the Apple App Store. <br/><br/>2. If you haven't already done so, download and install the Microsoft Authenticator app. Sign in, and register your device in the Microsoft Authenticator app.<br/><br/>3. In the Apple App Store, search for the Microsoft Defender app.<br/><br/>4. Sign in and install the app. <br/><br/>5. Agree to the terms of use to continue. <br/><br/>6. Allow the Microsoft Defender app to set up a VPN connection and add VPN configurations. <br/><br/>7. Choose whether to allow notifications (such as alerts).  |
 
 > [!TIP]
