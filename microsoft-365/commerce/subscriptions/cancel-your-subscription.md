@@ -31,7 +31,7 @@ ms.date: 08/07/2023
 
 Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
-This article only applies to canceling **Dynamics 365**, **Intune**, **Power Platform**, **Windows 365**, and **Microsoft 365 for business** subscriptions. If you have an Azure subscription, see [Cancel your Azure subscription](/azure/cost-management-billing/manage/cancel-azure-subscription). If you have Microsoft 365 Family or Personal, see [Cancel a Microsoft 365 subscription](https://support.microsoft.com/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link).
+This article only applies to canceling **Dynamics 365**, **Intune**, **Power Platform**, **Windows 365**, **Microsoft Defender for Business**, and **Microsoft 365 for business** subscriptions. If you have an Azure subscription, see [Cancel your Azure subscription](/azure/cost-management-billing/manage/cancel-azure-subscription). If you have Microsoft 365 Family or Personal, see [Cancel a Microsoft 365 subscription](https://support.microsoft.com/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link).
 
 > [!WARNING]
 > Before you cancel a subscription, make sure your users [save their data](#save-your-data).
