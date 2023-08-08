@@ -178,7 +178,7 @@ When you run the local script on Mac, it creates a trust with Azure Active Direc
 
 8. Select **Continue**, agree with the license terms, and then enter your password when prompted.
 
-9. You're prompted to allow installation of a driver from Microsoft (either "System Extension Blocked" or "Installation is on hold", or both). You must allow the driver installation: Select **Open Security Preferences** or **Open System Preferences** > **Security & Privacy**, and then select **Allow**.
+9. You're prompted to allow installation of a driver from Microsoft (either *System Extension Blocked* or *Installation is on hold*, or both). You must allow the driver installation: Select **Open Security Preferences** or **Open System Preferences** > **Security & Privacy**, and then select **Allow**.
 
 10. Use the following Bash command to run the onboarding package:
 
