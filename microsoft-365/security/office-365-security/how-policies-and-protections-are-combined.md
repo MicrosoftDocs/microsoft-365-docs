@@ -191,15 +191,15 @@ Tenant allows and blocks are able to override some filtering stack verdicts as d
 
 - [Allow entries in the Tenant Allow/Block List](tenant-allow-block-list-about.md#allow-entries-in-the-tenant-allowblock-list):
 
-  |Filtering stack verdict|Email address/domain|Spoof|File|URL|
-  |---|---|---|---|---|
-  |Malware|**Filter wins**: Email quarantined||||
-  |High confidence phishing|**Filter wins**: Email quarantined except for high confidence phishing verdict caused by the ML model||||
-  |Phishing|**Tenant wins**: Email delivered to mailbox||||
-  |High confidence spam|**Tenant wins**: Email delivered to mailbox||||
-  |Spam|**Tenant wins**: Email delivered to mailbox||||
-  |Bulk|**Tenant wins**: Email delivered to mailbox|||
-  |Not spam|**Tenant wins**: Email delivered to mailbox||||
+  |Filtering stack verdict|Email address/domain|
+  |---|---|
+  |Malware|**Filter wins**: Email quarantined|
+  |High confidence phishing|**Filter wins**: Email quarantined|
+  |Phishing|**Tenant wins**: Email delivered to mailbox|
+  |High confidence spam|**Tenant wins**: Email delivered to mailbox|
+  |Spam|**Tenant wins**: Email delivered to mailbox|
+  |Bulk|**Tenant wins**: Email delivered to mailbox|
+  |Not spam|**Tenant wins**: Email delivered to mailbox|
 
 - [Block entries in the Tenant Allow/Block List](tenant-allow-block-list-about.md#block-entries-in-the-tenant-allowblock-list):
 
