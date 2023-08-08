@@ -456,13 +456,13 @@
                 href: create-custom-rbac-roles.md
               - name: Import roles
                 href: Import-rbac-roles.md
-              - name: Activate Microsoft 365 Defender RBAC 
+              - name: Activate Microsoft 365 Defender Unified RBAC 
                 href: activate-defender-rbac.md
               - name: Edit and delete roles
                 href: edit-delete-rbac-roles.md
-              - name: Map RBAC permission
+              - name: Map Unified RBAC permission
                 href: compare-rbac-roles.md
-              - name: About RBAC custom permission
+              - name: About Unified RBAC custom permission
                 href: custom-permissions-details.md
       - name: Portal settings
         items: 
