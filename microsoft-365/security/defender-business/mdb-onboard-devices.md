@@ -10,8 +10,8 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 07/19/2023
-ms.reviewer: efratka, nehabha
+ms.date: 08/08/2023
+ms.reviewer: efratka, nehabha, muktaagarwal
 f1.keywords: NOCSH 
 ms.collection: 
  - SMB
@@ -53,6 +53,7 @@ Onboard your business devices to protect them right away. You can choose from se
 > 
 > For more information, see [Microsoft Defender for Business requirements](mdb-requirements.md).
 > 
+
 Choose one of the following options to onboard Windows client devices to Defender for Business:
 
 - [Local script](#local-script-for-windows-10-and-11) (for onboarding devices manually in the Microsoft 365 Defender portal)
@@ -250,7 +251,7 @@ You can use the following methods to onboard mobile devices, such as Android and
 
 | Device | Procedure |
 |:---|:---|
-| Android | 1. On the device, go to the Google Play store.<br/><br/>2. If you haven't already done so, download and install the Microsoft Authenticator app. Sign in, and register your device in the Microsoft Authenticator app. <br/><br/>3. In the Google Play store, search for the Microsoft Defender app. <br/><br/>4. On the app page, scroll down and select **Join the beta** > **Join**.<br/><br/>5. Wait for the process to complete. It might take a few hours for the process of joining the beta program to complete.  You'll see text that says, "Joining the beta..."<br/><br/>6. After you've enrolled into the beta, verify that the beta version of the app looks like `1.0.xxxx.0201`, and then install the app.<br/><br/>7. Open the app, sign in, and complete the onboarding process. |
+| Android | 1. On the device, go to the Google Play store.<br/><br/>2. If you haven't already done so, download and install the Microsoft Authenticator app. Sign in, and register your device in the Microsoft Authenticator app. <br/><br/>3. In the Google Play store, search for the Microsoft Defender app, and install it. <br/><br/>4. Open Microsoft Defender app, sign in, and complete the onboarding process. |
 | iOS | 1. On the device, go to the Apple App Store. <br/><br/>2. If you haven't already done so, download and install the Microsoft Authenticator app. Sign in, and register your device in the Microsoft Authenticator app.<br/><br/>3. In the Apple App Store, search for the Microsoft Defender app.<br/><br/>4. Sign in and install the app. <br/><br/>5. Agree to the terms of use to continue. <br/><br/>6. Allow the Microsoft Defender app to set up a VPN connection and add VPN configurations. <br/><br/>7. Choose whether to allow notifications (such as alerts).  |
 
 > [!TIP]
@@ -264,6 +265,7 @@ If your subscription includes Microsoft Intune, you can use it to onboard mobile
 - [Enroll iOS or iPadOS devices](/mem/intune/enrollment/ios-enroll)
 
 After a device is enrolled in Intune, you can add it to a device group. [Learn more about device groups in Defender for Business](mdb-create-edit-device-groups.md).
+
 
 
 ## [**Servers**](#tab/Servers)
@@ -352,6 +354,7 @@ You can use the following methods to onboard an instance of Linux Server to Defe
 > [!NOTE]
 > Onboarding an instance of Linux Server to Defender for Business is the same as onboarding to [Microsoft Defender for Endpoint on Linux](../defender-endpoint/microsoft-defender-endpoint-linux.md).
 
+
 ---
 
 ## View a list of onboarded devices
@@ -377,3 +380,4 @@ After you've onboarded a device, you can run a quick phishing test to make sure 
 
 - If you have other devices to onboard, select the tab for those devices ([Windows 10 and 11, Mac, Servers, or Mobile devices](#what-to-do)), and follow the guidance on that tab.
 - If you're done onboarding devices, proceed to [Step 6: Configure your security settings and policies in Defender for Business](mdb-configure-security-settings.md).
+
