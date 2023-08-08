@@ -35,7 +35,7 @@ You must have Global admin or SharePoint admin permissions to be able to access 
 
 For an overview of licensing options for Microsoft Syntex, see [Licensing for Microsoft Syntex](syntex-licensing.md).
 
-Each user for structured and freeform document processing must have a license assigned. To assign licenses, see [Set up Microsoft Syntex per-user licensing](set-up-content-understanding#assign-licenses).
+Each user for structured and freeform document processing must have a license assigned. To assign licenses, see [Set up Microsoft Syntex per-user licensing](set-up-content-understanding.md#assign-licenses).
 
 ## Set up structured and freeform document processing
 
