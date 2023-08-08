@@ -57,7 +57,7 @@ Manage which SharePoint sites have OCR enabled for Syntex in the Microsoft 365 a
 
     a. Choose which site or sites this service should be enabled for.
 
-    b. To restrict user access to this service, select **No sites** or **Selected sites** and follow the instructions to either select the sites or upload a CSV listing a maximum of 100 sites. You can then manage site access permissions for the sites you selected.
+    b. To restrict user access to this service, select **No sites** or **Selected sites** and follow the instructions to either select the sites or upload a CSV listing a maximum of 100 sites. Be sure to add your content center site if you want it to be included. You can then manage site access permissions for the sites you selected.
 
     c. Select **Save**.
 
