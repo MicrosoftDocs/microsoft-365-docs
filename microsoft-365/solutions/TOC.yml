@@ -94,8 +94,6 @@
             href: limit-who-can-invite-guests.md
           - name: Limit who can be invited by an organization
             href: limit-invitations-from-specific-organization.md
-          - name: Limit guest sharing to specific organizations
-            href: limit-guest-sharing-to-specific-organization.md
           - name: Limit organizations where users can be guests
             href: limit-organizations-where-users-have-guest-accounts.md
           - name: Limit accidental exposure

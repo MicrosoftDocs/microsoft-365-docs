@@ -24,6 +24,10 @@ description: Learn how to onboard trusted vendors to collaborate in Microsoft 36
 
 # Onboard trusted vendors to collaborate in Microsoft 365
 
+If your organization has an approval process for access to Microsoft 365 by external organizations, you can use features in Azure Active Directory and Teams to block access from unapproved organizations and add new organizations as they're approved.
+
+
+
 
 [Collaborate with guests in a team (IT Admins)](collaborate-as-team.md)
 
