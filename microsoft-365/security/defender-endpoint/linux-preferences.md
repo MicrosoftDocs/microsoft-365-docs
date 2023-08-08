@@ -504,6 +504,8 @@ Determines whether file modify ownership events (chown) are monitored.
 Determines whether network socket events involving creation of raw sockets / packet sockets, or setting socket option, are monitored.
 > [!NOTE]
 > This feature is applicable only when Behavior Monitoring is enabled.
+
+> [!NOTE]
 > When this feature is enabled, Defender for Endpoint will monitor these network socket events, but not scan these events. Please refer to the [Advanced scanning features](linux-preferences.md#configure-scanning-of-raw-socket-events) section above for more details.
 
 |Description|Value|
