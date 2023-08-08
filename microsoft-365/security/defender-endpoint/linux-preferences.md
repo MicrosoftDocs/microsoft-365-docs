@@ -326,6 +326,41 @@ Specify the maximum number of entries to keep in the scan history. Entries inclu
 |**Possible values**|10000 (default). Allowed values are from 5000 items to 15000 items.|
 |**Comments**|Available in Defender for Endpoint version 101.04.76 or higher.|
 
+#### Advanced scan options
+
+The following settings can be configured to enable certain advanced scanning features. Note that enabling these features might impact device performance.
+
+##### Enable / disable scanning of file modify permissions events
+When this feature is enabled, Defender for Endpoint will scan files when their permissions have been changed to set the execute bit(s). Note that this feature is only applicable when either the `enableFilePermissionEvents` feature (refer to section below) is enabled, or the `FilePermissionEvents` capability is enabled.
+
+|Description|Value|
+|---|---|
+|**Key**|scanFileModifyPermissions|
+|**Data type**|Boolean|
+|**Possible values**|false (default) <p> true|
+|**Comments**|Available in Defender for Endpoint version ? or higher.|
+
+##### Enable / disable scanning of file modify ownership events
+When this feature is enabled, Defender for Endpoint will scan files for which ownership have changed. Note that this feature is only applicable when either the `enableFileOwnershipEvents` feature (refer to section below) is enabled, or the `FileOwnershipEvents` capability is enabled.
+
+|Description|Value|
+|---|---|
+|**Key**|scanFileModifyOwnership|
+|**Data type**|Boolean|
+|**Possible values**|false (default) <p> true|
+|**Comments**|Available in Defender for Endpoint version ? or higher.|
+
+##### Enable / disable scanning of raw socket events
+When this feature is enabled, Defender for Endpoint will scan network socket events such as creation of raw sockets / packet sockets, or setting socket option. Note that this feature is only applicable when Behavior Monitoring is enabled, as well as either the `enableRawSocketEvent` feature (refer to section below) is enabled, or the `RawSocketEvent` capability is enabled.
+
+|Description|Value|
+|---|---|
+|**Key**|scanNetworkSocketEvent|
+|**Data type**|Boolean|
+|**Possible values**|false (default) <p> true|
+|**Comments**|Available in Defender for Endpoint version ? or higher.|
+
+
 ### Cloud-delivered protection preferences
 
 The *cloudService* entry in the configuration profile is used to configure the cloud-driven protection feature of the product.
@@ -396,6 +431,104 @@ Determines whether security intelligence updates are installed automatically:
 |**Key**|automaticDefinitionUpdateEnabled|
 |**Data type**|Boolean|
 |**Possible values**|true (default) <p> false|
+
+
+### Advanced optional features
+
+The following settings can be configured to enable certain advanced features. Note that enabling these features might impact device performance.
+
+|Description|Value|
+|---|---|
+|**Key**|features|
+|**Data type**|Dictionary (nested preference)|
+|**Comments**|See the following sections for a description of the dictionary contents.|
+
+
+#### Module load feature
+
+Determines whether module load events (file open events on shared libraries) are monitored (applicable only when Behavior Monitoring is enabled). Note that enabling this feature might impact device performance.
+
+|Description|Value|
+|---|---|
+|**Key**|moduleLoad|
+|**Data type**|String|
+|**Possible values**|disabled (default) <p> enabled|
+|**Comments**|Available in Defender for Endpoint version ? or higher.|
+
+#### Supplementary sensor configurations
+
+The following settings can be used to configure certain advanced supplementary sensor features. Note that enabling these features might impact device performance.
+
+|Description|Value|
+|---|---|
+|**Key**|supplementarySensorConfigurations|
+|**Data type**|Dictionary (nested preference)|
+|**Comments**|See the following sections for a description of the dictionary contents.|
+
+      "enableBootLoaderCalls": null, // boot load
+      "enableEbpfModuleLoadEvents": null, // ebpf module load
+      "enableProcessCalls": null, // ptrace
+      "enablePseudofsCalls": null, // pseudofs
+      "enableTracePipedPayload": null // ?
+
+##### Enable / disable monitoring of file modify permissions events
+Determines whether file modify permissions events (`chmod`) are monitored. When this feature is enabled, Defender for Endpoint will monitor changes to the execute bits of files, but not scan these events (please refer to section above on scanning modify permission events). Note that enabling this feature might impact device performance.
+
+|Description|Value|
+|---|---|
+|**Key**|enableFilePermissionEvents|
+|**Data type**|String|
+|**Possible values**|disabled (default) <p> enabled|
+|**Comments**|Available in Defender for Endpoint version ? or higher.|
+
+##### Enable / disable monitoring of file modify ownership events
+Determines whether file modify ownership events (chown) are monitored. When this feature is enabled, Defender for Endpoint will monitor changes to the ownership of files, but not scan these events (please refer to section above on scanning modify ownership events). Note that enabling this feature might impact device performance.
+
+|Description|Value|
+|---|---|
+|**Key**|scanFileModifyOwenableFileOwnershipEventsnership|
+|**Data type**|String|
+|**Possible values**|disabled (default) <p> enabled|
+|**Comments**|Available in Defender for Endpoint version ? or higher.|
+
+##### Enable / disable monitoring of raw socket events
+Determines whether network socket events involving creation of raw sockets / packet sockets, or setting socket option, are monitored (applicable only when Behavior Monitoring is enabled). When this feature is enabled, Defender for Endpoint will monitor these network socket events, but not scan these events (please refer to section above on scanning network socket events). Note that enabling this feature might impact device performance.
+
+|Description|Value|
+|---|---|
+|**Key**|enableRawSocketEvent|
+|**Data type**|String|
+|**Possible values**|disabled (default) <p> enabled|
+|**Comments**|Available in Defender for Endpoint version ? or higher.|
+
+
+#### Network protection configurations
+
+The following settings can be used to configure certain advanced supplementary sensor features. Note that enabling these features might impact device performance.
+
+|Description|Value|
+|---|---|
+|**Key**|networkProtection|
+|**Data type**|Dictionary (nested preference)|
+|**Comments**|See the following sections for a description of the dictionary contents.|
+
+  "networkProtection": {
+    "disableDnsInspection": false,
+    "disableFtpInspection": false,
+    "disableHttpInspection": false,
+    "disableIcmpInspection": true,
+    "disableInboundFiltering": false,
+    "disableRdpInspection": false,
+    "disableSmtpInspection": false,
+    "disableSshInspection": false,
+    "disableTcpDnsInspection": false,
+    "disableTlsInspection": false,
+    "enableConvertWarnToBlock": false,
+    "enforcementLevel": null,
+    "exclusions": []
+  },
+
+
 
 ## Recommended configuration profile
 
