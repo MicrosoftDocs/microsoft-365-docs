@@ -135,9 +135,9 @@ Electronic signatures let you digitally sign a document by enabling you to add a
 
 2. Select **Done** to add your signature to the document.
 
-    ![Screenshot showing an electronic signature added to a document.](../media/content-understanding/esignature-signature-added.png)
-
 3. Select **Next** to go to the next location in the document that requires your input.
+
+    ![Screenshot showing an electronic signature added to a document.](../media/content-understanding/esignature-signature-added.png)
 
 #### Initials
 
