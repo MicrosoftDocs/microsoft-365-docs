@@ -59,7 +59,7 @@ The task status will be updated to **Compliant**, and the Task Details pane will
 
 If the task status changes and is no longer compliant, you can reset the status to **Not compliant**. To do this:
 
-1. In the left navigation pane in Lighthouse, select **Tenant**.
+1. In the left navigation pane in Lighthouse, select **Tenants**.
 
 2. From the tenant list, select the tenant you want to view.
 
