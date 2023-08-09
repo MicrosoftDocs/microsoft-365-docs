@@ -12,7 +12,7 @@ ms.collection:
 - tier3
 ms.custom: 
 ms.topic: overview
-ms.subservice: mde
+ms.subservice: m365d
 ms.date: 05/31/2023
 ms.reviewer: 
 search.appverid: met150
@@ -28,6 +28,7 @@ search.appverid: met150
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Microsoft Defender for Identity](https://go.microsoft.com/fwlink/?LinkID=2198108)
 - [Microsoft Defender for Office 365 P2](https://go.microsoft.com/fwlink/?LinkID=2158212)
+- [Microsoft Defender Vulnerability Management](https://go.microsoft.com/fwlink/?linkid=2229011)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -43,9 +44,11 @@ Centralized permissions management is supported for the following solutions:
 |---|---|---|
 |Microsoft 365 Defender|Centralized permissions management for Microsoft 365 Defender experiences.|
 |Microsoft Defender for Endpoint|Full support for all endpoint data and actions. All roles are compatible with the device group's scope as defined on the device groups page.|
-|Microsoft Defender for Office 365|Support for all scenarios that were controlled by **Exchange Online Protection roles** (EOP), configured in the Microsoft 365 Defender portal under **Permissions** \> **Email & collaboration roles**. </br></br> **Note:** Scenarios that adhere to Exchange Online roles are not impacted by this new model and will still be managed by Exchange Online. The Microsoft 365 Defender Unified RBAC model will initially be available for organizations with Microsoft Defender for Office Plan 2 licenses only. This capability is not available to users on trial licenses.|
+|Microsoft Defender Vulnerability Management Standalone and Microsoft Defender Vulnerability Management Add-on for Defender for Endpoint P2 | Centralized permissions management for all  Defender Vulnerability Management capabilities.|
+|Microsoft Defender for Office 365|Support for all scenarios that were controlled by **Exchange Online Protection roles** (EOP), configured in the Microsoft 365 Defender portal under **Permissions** \> **Email & collaboration roles**. </br></br> **Note:** Scenarios that adhere to Exchange Online roles are not impacted by this new model and will still be managed by Exchange Online. The Microsoft 365 Defender RBAC model will initially be available for organizations with Microsoft Defender for Office Plan 2 licenses only. This capability is not available to users on trial licenses.|
 |Microsoft for Identity|Full support for all identity data and actions. </br></br> **Note:** Defender for Identity experiences will also adhere to permissions granted from [Microsoft Defender for Cloud Apps](https://security.microsoft.com/cloudapps/permissions/roles). For more information, see [Microsoft Defender for Identity role groups](https://go.microsoft.com/fwlink/?linkid=2202729).|
 |Microsoft Secure Score|Full support for all Secure Score data from the [Products included in Secure Score](../defender/microsoft-secure-score.md#products-included-in-secure-score).|
+
 
 > [!NOTE]
 > Scenarios and experiences controlled by Compliance permissions are still managed in the Microsoft Purview compliance portal.
