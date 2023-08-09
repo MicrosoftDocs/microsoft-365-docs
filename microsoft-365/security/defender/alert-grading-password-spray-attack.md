@@ -54,7 +54,7 @@ This section contains step-by-step guidance to respond to the alert and take the
 
 ### 2. Investigate suspicious user activity
 
-  - **Are there unusual events with uncommon properties?** Unique properties for an impacted user, like unusual ISP, country, or city, might indicate suspicious sign-in patterns. 
+  - **Are there unusual events with uncommon properties?** Unique properties for an impacted user, like unusual ISP, country/region, or city, might indicate suspicious sign-in patterns. 
 
   - **Is there a marked increase in email or file-related activities?** Suspicious events like increased attempts in mail access or send activity or an increase in uploading of files to SharePoint or OneDrive for an impacted user are some signs to look for.
 
@@ -85,7 +85,7 @@ This section contains step-by-step guidance to respond to the alert and take the
       - [Classifying alerts for suspicious email forwarding activity](alert-grading-playbook-email-forwarding.md)
       - [Classifying alerts for suspicious inbox forwarding rules](alert-grading-playbook-inbox-forwarding-rules.md)
       - [Classifying alerts for suspicious inbox manipulation rules](alert-grading-playbook-inbox-manipulation-rules.md)
-  - **Check whether the user received other alerts before the password spray activity.** Having these alerts indicate that the user account might be compromised. Examples include impossible travel alert, activity from infrequent country, and suspicious email deletion activity, among others.
+  - **Check whether the user received other alerts before the password spray activity.** Having these alerts indicate that the user account might be compromised. Examples include impossible travel alert, activity from infrequent country/region, and suspicious email deletion activity, among others.
 
 ## Advanced hunting queries
 

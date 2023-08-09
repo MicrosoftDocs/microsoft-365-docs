@@ -2,10 +2,10 @@
 title: Microsoft 365 for retail organizations
 description: Learn about the admin resources available to manage and get the most out of Teams for your retail stores and workforce.
 ms.topic: conceptual
-author: samanro
-ms.author: samanro
-audience: admin
+author: lana-chin
+ms.author: v-chinlana
 manager: serdars
+audience: admin
 f1.keywords:
 - NOCSH
 ms.service: microsoft-365-frontline
