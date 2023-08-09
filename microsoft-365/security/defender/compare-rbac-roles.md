@@ -50,12 +50,12 @@ Use the tables in the following sections to learn more about how your existing i
 |Defender for Endpoint and Defender Vulnerability Management permissions|Microsoft 365 Defender Unified RBAC permission|
 |---|---|---|
 |View data - Security operations|Security operations \ Security data \ Security data basics (read)|
-|View data - Threat and vulnerability management|Security posture \ Posture management \ Vulnerability management (read)|
+|View data - Defender Vulnerability Management|Security posture \ Posture management \ Vulnerability management (read)|
 |Alerts investigation|Security operations \ Security data \ Alerts (manage)|
 |Active remediation actions - Security operations|Security operations \ Security data \ Response (manage)|
-|Active remediation actions - Threat and vulnerability management - Exception handling|Security posture \ Posture management \ Exception handling (manage)|
-|Active remediation actions - Threat and vulnerability management - Remediation handling|Security posture \ posture management \ Remediation handling (manage)|
-|Active remediation actions - Threat and vulnerability management - Application handling|Security posture \ Posture management \ Application handling (manage)|
+|Active remediation actions - Defender Vulnerability Management - Exception handling|Security posture \ Posture management \ Exception handling (manage)|
+|Active remediation actions - Defender Vulnerability Management - Remediation handling|Security posture \ posture management \ Remediation handling (manage)|
+|Active remediation actions - Defender Vulnerability Management - Application handling|Security posture \ Posture management \ Application handling (manage)|
 |Vulnerability management – Manage security baselines assessment profiles|Security posture \ posture management \ Security baselines assessment (manage)|
 |Live response capabilities|Security operations \ Basic live response (manage)|
 |Live response capabilities - advanced|Security operations \ Advanced live response (manage) </br> Security operations \ Security data \ File collection (manage)|
