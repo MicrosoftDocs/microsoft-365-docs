@@ -79,14 +79,14 @@ The following resources provide details on how to use the portal’s capabilitie
 
 - **Tutorial**: [Investigate files](/microsoft-365/security/defender-endpoint/investigate-files)
 - **Video**: Investigating malware in Microsoft 365 Defender
-- > [!VIDEO https://youtu.be/TTqFlnlwch0]
+> [!VIDEO https://youtu.be/TTqFlnlwch0]
 
 Ransomware continues to be a significant threat to organizations. Microsoft has the following resources to help you investigate and respond to ransomware attacks:
 
 - **Guides**: [From detection to protection: Microsoft's guide to combating ransomware attacks](/security/ransowmare)
 - **Tutorial**: [Ransomware investigation playbook](/security/operations/incident-response-playbook-dart-ransomware-approach)
 - **Video**: Investigating ransomware attacks in Microsoft 365 Defender
-- > [!VIDEO https://www.youtube.com/watch?v=eLCrGe4-Zzc]
+> [!VIDEO https://www.youtube.com/watch?v=eLCrGe4-Zzc]
 
 ### Risky apps analysis and cloud-based threats prevention
 
@@ -96,8 +96,10 @@ Malicious actors can exploit cloud-based apps. Apps can inadvertently leak sensi
 - **Tutorial**: [Investigate risky OAuth apps](/defender-cloud-apps/investigate-risky-oauth)
 - **Tutorial**: [Protect cloud apps](/defender-cloud-apps/tutorial-ueba#phase-1-connect-to-the-apps-you-want-to-protect)
 - **Tutorial**: Protect apps in real time
+
+To protect your cloud apps in real time, you can use the following resource:
 - **Video**: Protecting cloud apps and related files through Defender for Cloud Apps
-- > [!VIDEO https://www.microsoft.com/videoplayer/embed/<RE5d0tz>]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/<RE5d0tz>]
 
 ### Breach analysis
 
@@ -116,47 +118,51 @@ Attackers often use vulnerabilities to gain access to an organization. Some rans
 - **Tutorial**: [Hunt for exposed devices](/microsoft-365/security/defender-vulnerability-management/tvm-hunt-exposed-devices)
 - **Tutorial**: [Assess your organization’s risk through the Exposure score](/microsoft-365/security/defender-vulnerability-management/tvm-exposure-score)
 - **Video**: Threat and vulnerability management via Defender Vulnerability Management
-- > [!VIDEO https://www.microsoft.com/videoplayer/embed/<RE4XTiJ>]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/<RE4XTiJ>]
 
 Breaches also happen through various devices like phones and tablets that connect to your organization’s network. Incident responders can further investigate these devices within the portal. The following video talks about the top threats from mobile devices and how you can investigate these:
 
 - Mobile threat defense in Microsoft 365 Defender
-- > [!VIDEO https://www.microsoft.com/videoplayer/embed/<RW10icV>]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/<RW10icV>]
 
 ### Email-based attacks analysis
 
 Identifying and tracking modified, created, or stolen identities are essential to investigating phishing and BEC attacks. Use the following resources when investigating these attacks:
 
-- **Video**: Investigating BEC and AiTM phishing in Microsoft 365 Defender
-- > [!VIDEO https://youtu.be/h9YEr9XwALU]
-- **Video**: Defending against spearphishing and phishing using Defender for Office 365
-- > [!VIDEO https://www.microsoft.com/videoplayer/embed/<RE5bzVE>]
 - **Tutorial**: [Investigate malicious email](//microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered)
 - **Tutorial**: [Investigate users](investigate-users.md)
 - **Tutorial**: [Investigate a user account](//microsoft-365/security/defender-endpoint/investigate-user)
 - **Blog**: [Total Identity Compromise: Microsoft Incident Response lessons on securing Active Directory
 Identity compromise can also be investigated using Defender for Identity signals.](https://techcommunity.microsoft.com/t5/microsoft-security-experts-blog/total-identity-compromise-microsoft-incident-response-lessons-on/ba-p/3753391)
 
+The following videos discuss how to investigate phishing and BEC attacks in Microsoft 365 Defender:
+- **Video**: Investigating BEC and AiTM phishing in Microsoft 365 Defender
+> [!VIDEO https://youtu.be/h9YEr9XwALU]
+
+- **Video**: Defending against spearphishing and phishing using Defender for Office 365
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/<RE5bzVE>]
+
 The following video discusses an identity compromise and what incident responders can do to contain an attack:
 - Investigating identity threats using Defender for Identity
-- > [!VIDEO https://youtu.be/RSVmgcQLv38?t=533]
+> [!VIDEO https://youtu.be/RSVmgcQLv38?t=533]
 
 ## Resources for threat intelligence and hunting
 
-Most incident response teams are tasked to track the threat landscape to keep attacks that can potentially incur damage to the organization at bay. Microsoft 365 Defender delivers critical information about emerging threats through Threat analytics.
+Most incident response teams are tasked to track the threat landscape to keep attacks that can potentially incur damage to the organization at bay. Microsoft 365 Defender delivers critical information about emerging threats through [Threat analytics](threat-analytics.md).
 
 The latest security research and changes from Microsoft security research teams can be accessed from:
 
-- Latest threat intelligence stories from Microsoft
-- Threat actors Microsoft tracks
+- [Microsoft Security blog](https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/?sort-by=newest-oldest&date=any)
+- [Microsoft threat actor information](/microsoft-365/security/intelligence/microsoft-threat-actor-naming)
 
-Moreover, organizations can extend security operations teams’ capabilities when the need arises through the following Microsoft offerings:
-- Extended incident response with Defender Experts for XDR
-- Threat hunting with Defender Experts for Hunting
+Moreover, organizations can extend security operations teams’ capabilities through the following Microsoft offerings:
+- [Defender Experts for XDR](dex-xdr-overview.md)
+- [Threat hunting with Defender Experts for Hunting](defender-experts-for-hunting.md)
 
 ## Next step
 
-[Remediate your first incident](first-incident-remediate.md).
+- [Remediate your first incident](respond-first-incident-remediate.md)
+- [Learn Microsoft 365 Defender's features and functions through the Ninja training](https://techcommunity.microsoft.com/t5/microsoft-365-defender/become-a-microsoft-365-defender-ninja/ba-p/1789376)
 
 ## See also
 

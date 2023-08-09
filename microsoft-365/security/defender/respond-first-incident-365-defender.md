@@ -72,7 +72,10 @@ An example of determining incident priority is combining the following factors u
 - New *incident status*
 - Incident assignment is *unassigned* to any security team member
 
-Filters like severity, investigation states, impacted assets, and incident statuses are automatically determined by Microsoft 365 Defender based on information within your organization’s network, with the additional context of important threat intelligence feeds and the automated remediation actions applied.
+Using the information above, an incident responder might assign a high priority to the incident. The incident responder can then begin the investigation and remediation process.
+
+> [!NOTE]
+> Incident filters like severity, investigation states, impacted assets, and incident statuses are automatically determined by Microsoft 365 Defender. The information is based on your organization’s network activities contextualized with threat intelligence feeds and the automated remediation actions applied.
 
 ### Managing incidents
 
