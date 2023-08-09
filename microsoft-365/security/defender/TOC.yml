@@ -163,7 +163,7 @@
               - name: Respond to your first incident
                 items: 
                  - name: Overview
-                   href: respond-first-incident-in-365-defender.md
+                   href: respond-first-incident-365-defender.md
                  - name: Analyze your first incident
                    href: respond-first-incident-analyze.md
                  - name: Remediate your first incident

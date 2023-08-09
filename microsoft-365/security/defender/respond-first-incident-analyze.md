@@ -52,7 +52,7 @@ Investigations usually involve responders viewing several apps while simultaneou
 
 ## Attack overview
 
-Incident responders try to answer what happened through an investigation. The [attack story](investigate-incidents#attack-story) on an incident page provides full context of what happened in an attack, identifies all related alerts and events to the attack, and provides an overview of the automated remediation actions taken by Microsoft 365 Defender to mitigate the attack.
+Incident responders try to answer what happened through an investigation. The [attack story](investigate-incidents.md#attack-story) on an incident page provides full context of what happened in an attack, identifies all related alerts and events to the attack, and provides an overview of the automated remediation actions taken by Microsoft 365 Defender to mitigate the attack.
 
 From the attack story, you can dive deeper into the details of an attack by exploring the tabs available on the [incident page](investigate-incidents.md). You can quickly remediate common attacks like phishing, password spray, and malicious app compromise through [incident response playbooks](/security/operations/incident-response-playbooks) accessible within the portal. These playbooks contain detection, response, and mitigation guidance that support incident investigations.
 

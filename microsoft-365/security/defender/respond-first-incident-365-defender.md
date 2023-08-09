@@ -39,7 +39,7 @@ If you're new to using Microsoft 365 Defender, this guide outlines what you need
 - You'll quickly learn to use Microsoft 365 Defender to respond to incidents and alerts.
 - You’ll discover the portal's features to aid incident investigation and remediation through the videos and tutorials.
 
-Microsoft 365 Defender enables you to see relevant threat events across all assets (devices, identities, mailboxes, cloud apps, and more). Consolidated signals from the [Microsoft Defender protection stack](microsoft-365-defender#microsoft-365-defender-protection), [Microsoft Sentinel](microsoft-365-defender-integration-with-azure-sentinel.md), and other [integrated security information and event management (SIEM) solutions](configure-siem-defender.md) allows you to view correlated attack information with full context in one portal, which is critical for successful defense and protection defend your network.
+Microsoft 365 Defender enables you to see relevant threat events across all assets (devices, identities, mailboxes, cloud apps, and more). Consolidated signals from the [Microsoft Defender protection stack](microsoft-365-defender.md#microsoft-365-defender-protection), [Microsoft Sentinel](microsoft-365-defender-integration-with-azure-sentinel.md), and other [integrated security information and event management (SIEM) solutions](configure-siem-defender.md) allows you to view correlated attack information with full context in one portal, which is critical for successful defense and protection defend your network.
 
 This guide has three main sections:
 
@@ -57,7 +57,7 @@ Microsoft 365 Defender has many features that you can use to respond to an incid
 :::image type="content" source="../../media/first-incident/m365d-incidents.png" alt-text="Incident queue in Microsoft 365 Defender" lightbox="../../media/first-incident/m365d-incidents.png":::
 *Figure 2. Microsoft 365 Defender incident queue*
 
-Each [incident](incidents-overview.md) contains automatically correlated alerts from [different detection sources](microsoft-365-defender#microsoft-365-defender-protection) and might involve various endpoints, identities, or cloud apps. An incident provides a holistic picture and context of suspicious or malicious activity. A single incident gives you an attack’s complete context instead of triaging hundreds of alerts from multiple services.
+Each [incident](incidents-overview.md) contains automatically correlated alerts from [different detection sources](microsoft-365-defender.md#microsoft-365-defender-protection) and might involve various endpoints, identities, or cloud apps. An incident provides a holistic picture and context of suspicious or malicious activity. A single incident gives you an attack’s complete context instead of triaging hundreds of alerts from multiple services.
 
 ### Triaging incidents
 
@@ -81,7 +81,7 @@ Using the information above, an incident responder might assign a high priority 
 
 Individual incident responders contribute to [incident management](manage-incidents.md) efficiency by providing essential information in incidents and alerts. The following input from when you triage and analyze each incident helps to add further context that other responders can take advantage of:
 
-- [Classifying incidents and alerts](manage-incidents#specify-the-classification)
+- [Classifying incidents and alerts](manage-incidents.md#specify-the-classification)
 - Naming incidents
 - Adding tags
 - Providing comments
