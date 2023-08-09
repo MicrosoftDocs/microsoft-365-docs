@@ -314,7 +314,7 @@ Impersonation safety tips appear to users when messages are identified as impers
 
     > This sender might be impersonating a domain that's associated with your organization.
 
-- **Show user impersonation unusual characters safety tip**: The From address contains unusual character sets (for example, mathematical symbols and text or a mix of uppercase and lowercase letters) in an sender specified in [user impersonation protection](#user-impersonation-protection). Available only if **Enable users to protect** is turned on and configured.
+- **Show user impersonation unusual characters safety tip**: The From address contains unusual character sets (for example, mathematical symbols and text or a mix of uppercase and lowercase letters) in a sender specified in [user impersonation protection](#user-impersonation-protection). Available only if **Enable users to protect** is turned on and configured.
 
 > [!NOTE]
 > Safety tips are not stamped in the following messages:

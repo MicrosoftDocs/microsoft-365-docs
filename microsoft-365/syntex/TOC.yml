@@ -68,6 +68,8 @@
       items:
             - name: Overview 
               href: form-processing-overview.md
+            - name: Admin setup
+              href: structured-freeform-setup.md
             - name: Train your model
               href: create-a-form-processing-model.md
             - name: Manage your model
@@ -146,6 +148,8 @@
       items: 
         - name: Overview 
           href: content-assembly.md
+        - name: Admin setup 
+          href: content-assembly-setup.md
         - name: Create a modern template
           href: content-assembly-modern-template.md
         - name: Map template fields to library columns
@@ -158,19 +162,6 @@
           href: content-assembly-create-document.md
         - name: Generate documents using Power Automate 
           href: automate-document-generation.md
-     
-    - name: Content processing
-      items: 
-        - name: Overview 
-          href: content-processing-overview.md
-        - name: Move or copy a file 
-          href: content-processing-create-rules.md
-
-    - name: Content query
-      href: metadata-search.md
-
-    - name: Annotations
-      href: annotations.md
 
     - name: Image tagging
       items: 
@@ -187,6 +178,19 @@
           href: ocr-overview.md
         - name: Admin setup 
           href: ocr.md
+
+    - name: Annotations
+      href: annotations.md
+
+    - name: Content query
+      href: metadata-search.md
+
+    - name: Content processing
+      items: 
+        - name: Overview 
+          href: content-processing-overview.md
+        - name: Move or copy a file 
+          href: content-processing-create-rules.md
 
     - name: Taxonomy
       items:

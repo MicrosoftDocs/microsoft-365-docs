@@ -17,7 +17,8 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security
-- tier2
+- tier3
+- must-keep
 ms.topic: reference
 ms.subservice: mde
 ms.custom: api
