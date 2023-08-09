@@ -149,7 +149,7 @@ Examples include:
 - Windows Security files 
 - ... and more.
 
-Built-in exclusions are updated through security intelligence updates and product updates. To learn more about these exclusions, see [Microsoft Defender Antivirus exclusions on Windows Server: Built-in exclusions](configure-server-exclusions-microsoft-defender-antivirus.md#built-in-exclusions).
+Built-in exclusions can change with security intelligence updates and product updates. To learn more about these exclusions, see [Microsoft Defender Antivirus exclusions on Windows Server: Built-in exclusions](configure-server-exclusions-microsoft-defender-antivirus.md#built-in-exclusions).
 
 ### Custom exclusions
 
