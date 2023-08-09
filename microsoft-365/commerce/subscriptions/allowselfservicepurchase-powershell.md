@@ -101,6 +101,7 @@ The following table lists the available products and their **ProductId**. It als
 | Project Plan 1* | CFQ7TTC0HDB1 | Yes |
 | Project Plan 3* | CFQ7TTC0HDB0 | No |
 | Teams Exploratory | CFQ7TTC0J1FV | Yes |
+| Teams Premium Introductory Pricing | CFQ7TTC0RM8K | Yes |
 | Visio Plan 1* | CFQ7TTC0HD33 | No |
 | Visio Plan 2* | CFQ7TTC0HD32 | No |
 | Viva Goals (self-service trials only) | CFQ7TTC0PW0V | Yes |

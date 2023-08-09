@@ -68,6 +68,8 @@
       items:
             - name: Overview 
               href: form-processing-overview.md
+            - name: Admin setup
+              href: structured-freeform-setup.md
             - name: Train your model
               href: create-a-form-processing-model.md
             - name: Manage your model
