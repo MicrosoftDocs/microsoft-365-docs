@@ -14,7 +14,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to set and configure image tagging in Microsoft Syntex.
+description: Learn how to set up and configure image tagging in Microsoft Syntex.
 ---
 
 # Set up and manage image tagging in Microsoft Syntex
