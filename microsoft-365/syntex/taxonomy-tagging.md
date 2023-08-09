@@ -49,4 +49,4 @@ If you don't have a taxonomy column in your library, use these steps to create o
 
    ![Screenshot showing the library view with a taxonomy column.](../media/content-understanding/taxonomy-tagging-taxonomy-column.png)  
 
-4. Once the taxonomy column is created, any new documents uploaded or existing documents edited in the library are processed to tag the configured term set.
+4. Once the taxonomy column is created, any new documents uploaded or existing documents edited in the library are processed to tag the configured term set or term.
