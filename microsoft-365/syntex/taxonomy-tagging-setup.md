@@ -14,7 +14,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to set and configure taxonomy tagging in Microsoft Syntex.
+description: Learn how to set up and configure taxonomy tagging in Microsoft Syntex.
 ---
 
 # Set up and manage taxonomy tagging in Microsoft Syntex
@@ -49,6 +49,6 @@ Manage which SharePoint sites users can use for taxonomy tagging.
 
     a. Choose which site or sites this service should be enabled for.
 
-    b. To restrict user access to this service, select **No sites** or **Selected sites** and follow the instructions to either select the sites or upload a CSV listing a maximum of 100 sites. You can then manage site access permissions for the sites you selected.
+    b. To restrict user access to this service, select **No SharePoint libraries** or **Libraries in selected SharePoint sites** and follow the instructions to either select the sites or upload a CSV listing a maximum of 100 sites. Be sure to add your content center site if you want it to be included. You can then manage site access permissions for the sites you selected.
 
     c. Select **Save**.
