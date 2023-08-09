@@ -114,6 +114,9 @@ Data for following metrics are available for individual teams.
 |Channel messages|The number of unique messages that the user posted in a team chat during the specified time period.|
 |Last activity date|The latest date that any member of the team has committed an action.|
 
+> [!NOTE]
+> Metric counts include Teams client built-in features, but don't include changes to chat and channel through service integration, such as Teams app posts or replies and emails in the channel.
+
 ## Make the user-specific data anonymous
 
 To make the data in Teams user activity report anonymous, you have to be a global administrator. This will hide identifiable information (using MD5 hashes) such as display name, email, and Azure Active Directory Object ID in report and their export.
