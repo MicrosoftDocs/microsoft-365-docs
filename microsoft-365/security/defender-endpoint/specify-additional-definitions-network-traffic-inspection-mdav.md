@@ -58,3 +58,4 @@ You can specify additional definition sets for network traffic inspection using 
 - [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
 - [Enable cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md)
 - [How to create and deploy anti-malware policies: Cloud-protection service](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

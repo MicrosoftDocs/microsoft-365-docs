@@ -23,7 +23,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 54ae2002-b38e-43a1-82fa-3e49d78fda56
-description: "Learn to verify your domain and set up DNS records for email, Skype for Business Online, and other services at Namecheap for Microsoft."
+description: "Learn to verify your domain and set up DNS records for email, Teams, and other services at Namecheap for Microsoft."
 ---
 
 # Connect your DNS records at Namecheap to Microsoft 365
@@ -294,7 +294,7 @@ Only select this option if your organization uses Microsoft Teams. Teams needs 4
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
 
-### Add the two required CNAME records for Skype for Business
+### Add the two required CNAME records for Teams
 
 1. In the **HOST RECORDS** section, select **ADD NEW RECORD**.
 

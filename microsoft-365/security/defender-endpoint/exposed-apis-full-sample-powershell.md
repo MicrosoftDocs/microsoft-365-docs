@@ -16,7 +16,8 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
-ms.topic: conceptual
+- must-keep
+ms.topic: reference
 ms.date: 01/25/2023
 ms.subservice: mde
 ms.custom: api
@@ -139,3 +140,4 @@ $response
 - [Microsoft Defender for Endpoint APIs](apis-intro.md)
 - [Advanced Hunting API](run-advanced-query-api.md)
 - [Advanced Hunting using Python](run-advanced-query-sample-python.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

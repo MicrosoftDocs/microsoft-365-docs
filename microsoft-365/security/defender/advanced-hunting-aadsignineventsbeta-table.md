@@ -77,7 +77,7 @@ Use this reference to construct queries that return information from the table. 
 |`ConditionalAccessPolicies`|`string`|Details of the conditional access policies applied to the sign-in event|
 |`ConditionalAccessStatus`|`int`|Status of the conditional access policies applied to the sign-in. Possible values are 0 (policies applied), 1 (attempt to apply policies failed), or 2 (policies not applied).|
 |`IPAddress`|`string`|IP address assigned to the endpoint and used during related network communications|
-|`Country`|`string`|Two-letter code indicating the country where the client IP address is geolocated|
+|`Country`|`string`|Two-letter code indicating the country/region where the client IP address is geolocated|
 |`State`|`string`|State where the sign-in occurred, if available|
 |`City`|`string`|City where the account user is located|
 |`Latitude`|`string`|The north to south coordinates of the sign-in location|
@@ -92,3 +92,4 @@ Use this reference to construct queries that return information from the table. 
 - [Advanced hunting overview](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
 - [Learn the query language](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-query-language)
 - [Understand the schema](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-schema-reference)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

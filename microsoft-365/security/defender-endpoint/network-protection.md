@@ -400,3 +400,4 @@ Network protection now has a performance optimization that allows Block mode to 
 - [Configuring attack surface reduction capabilities in Microsoft Intune](/mem/intune/protect/endpoint-security-asr-policy)
 - [Network protection for Linux](network-protection-linux.md) | To learn about using Microsoft Network protection for Linux devices.
 - [Network protection for macOS](network-protection-macos.md) | To learn more about Microsoft Network protection for macOS
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

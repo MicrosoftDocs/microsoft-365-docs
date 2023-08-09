@@ -43,9 +43,6 @@ Use the following advanced features to get better protected from potentially mal
 
 ## Live response
 
-> [!NOTE]
-> Live response requires **Automated investigation** to be turned on before you can enable it in the advanced settings section in the Microsoft Defender for Endpoint portal.
-
 Turn on this feature so that users with the appropriate permissions can start a live response session on devices.
 
 For more information about role assignments, see [Create and manage roles](user-roles.md).
@@ -246,3 +243,4 @@ Backup quarantined files in a secure and compliant location so they can be downl
 
 - [Update data retention settings](data-retention-settings.md)
 - [Configure alert notifications](configure-email-notifications.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

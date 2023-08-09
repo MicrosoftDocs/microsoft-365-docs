@@ -18,7 +18,7 @@
             - name: Set up a content center 
               href: create-a-content-center.md
 
-    - name: Work with models
+    - name: Learn about models
       items:
             - name: Model types
               href: model-types-overview.md 
@@ -30,8 +30,48 @@
               href: create-syntex-model.md
             - name: Create a local model 
               href: create-local-model.md 
-            - name: Train your model 
-              href: train-model.md 
+
+    - name: Prebuilt document processing
+      items:
+            - name: Overview 
+              href: prebuilt-overview.md
+            - name: Admin setup
+              href: prebuilt-setup.md
+            - name: Use a contracts model 
+              href: prebuilt-model-contract.md
+            - name: Use an invoices model 
+              href: prebuilt-model-invoice.md
+            - name: Use a receipts model 
+              href: prebuilt-model-receipt.md
+            - name: Manage your model
+              items:
+                - name: Apply a model
+                  href: apply-a-model.md
+                - name: Share an enterprise model 
+                  href: model-discovery.md
+                - name: Discover other trained models 
+                  href: discover-other-trained-models.md
+                - name: Apply a retention label 
+                  href: apply-a-retention-label-to-a-model.md
+                - name: Rename a model
+                  href: rename-a-model.md
+                - name: Delete a model
+                  href: delete-a-model.md
+                - name: Manage library settings 
+                  href: manage-library-settings.md
+                - name: Choose a library view 
+                  href: choose-library-view.md
+                - name: Analyze model usage
+                  href: model-usage-analytics.md
+
+    - name: Structured & freeform document processing
+      items:
+            - name: Overview 
+              href: form-processing-overview.md
+            - name: Admin setup
+              href: structured-freeform-setup.md
+            - name: Train your model
+              href: create-a-form-processing-model.md
             - name: Manage your model
               items:
                 - name: Apply a model
@@ -54,79 +94,62 @@
                   href: choose-library-view.md
                 - name: Analyze model usage
                   href: model-usage-analytics.md
-                - name: Manage models with PowerShell
-                  items:
-                    - name: Overview
-                      href: powershell-syntex-intro.md
-                    - name: Export and import models
-                      href: powershell-syntex-import-export.md
-                    - name: Publish models
-                      href: powershell-syntex-publishing.md
-                    - name: Request model processing
-                      href: powershell-syntex-processing.md
-                    - name: Work with explanations
-                      href: powershell-syntex-explanations.md
 
-    - name: Custom models
+    - name: Unstructured document processing
       items:
-            - name: Unstructured document processing
+            - name: Overview
+              href: document-understanding-overview.md
+            - name: Admin setup
+              href: unstructured-setup.md
+            - name: Import a sample model 
+              href: learn-about-document-understanding-models-through-the-sample-model.md
+            - name: Train your model
               items:
-                - name: Overview
-                  href: document-understanding-overview.md
-                - name: Set up and manage
-                  href: unstructured-setup.md
-                - name: Import a sample model 
-                  href: learn-about-document-understanding-models-through-the-sample-model.md
-                - name: Train your model
-                  items:
-                    - name: Create a classifier
-                      href: create-a-classifier.md
-                    - name: Create an extractor
-                      href: create-an-extractor.md
-                    - name: Leverage term store taxonomy to create an extractor
-                      href: leverage-term-store-taxonomy.md
-                    - name: Explanation types 
-                      href: explanation-types-overview.md
-                    - name: Use explanation templates 
-                      href: explanation-templates.md
-                    - name: Use accessibility mode
-                      href: accessibility-mode.md
-                    - name: Rename an extractor
-                      href: rename-an-extractor.md
-                - name: Duplicate a model
-                  href: duplicate-a-model.md
-
-            - name: Freeform document processing
+                - name: Create a classifier
+                  href: create-a-classifier.md
+                - name: Create an extractor
+                  href: create-an-extractor.md
+                - name: Leverage term store taxonomy to create an extractor
+                  href: leverage-term-store-taxonomy.md
+                - name: Explanation types 
+                  href: explanation-types-overview.md
+                - name: Use explanation templates 
+                  href: explanation-templates.md
+                - name: Use accessibility mode
+                  href: accessibility-mode.md
+                - name: Rename an extractor
+                  href: rename-an-extractor.md
+            - name: Duplicate a model
+              href: duplicate-a-model.md
+            - name: Manage your model
               items:
-                - name: Overview 
-                  href: freeform-document-processing-overview.md
-                - name: Train your model
-                  href: train-freeform-document-processing-model.md
-
-            - name: Structured document processing
-              items:
-                - name: Overview 
-                  href: form-processing-overview.md
-                - name: Train your model
-                  href: create-a-form-processing-model.md
-
-    - name: Prebuilt models
-      items:
-            - name: Overview 
-              href: prebuilt-overview.md
-            - name: Set up and manage
-              href: prebuilt-setup.md
-            - name: Use a contracts model 
-              href: prebuilt-model-contract.md
-            - name: Use an invoices model 
-              href: prebuilt-model-invoice.md
-            - name: Use a receipts model 
-              href: prebuilt-model-receipt.md
+                - name: Apply a model
+                  href: apply-a-model.md
+                - name: Share an enterprise model 
+                  href: model-discovery.md
+                - name: Discover other trained models 
+                  href: discover-other-trained-models.md
+                - name: Apply a retention label 
+                  href: apply-a-retention-label-to-a-model.md
+                - name: Apply a sensitivity label 
+                  href: apply-a-sensitivity-label-to-a-model.md
+                - name: Rename a model
+                  href: rename-a-model.md
+                - name: Delete a model
+                  href: delete-a-model.md
+                - name: Manage library settings 
+                  href: manage-library-settings.md
+                - name: Choose a library view 
+                  href: choose-library-view.md
+                - name: Analyze model usage
+                  href: model-usage-analytics.md
 
     - name: Content assembly
       items: 
         - name: Overview 
           href: content-assembly.md
+        - name: Admin setup 
+          href: content-assembly-setup.md
         - name: Create a modern template
           href: content-assembly-modern-template.md
         - name: Map template fields to library columns
@@ -139,26 +162,35 @@
           href: content-assembly-create-document.md
         - name: Generate documents using Power Automate 
           href: automate-document-generation.md
-     
+
+    - name: Image tagging
+      items: 
+        - name: Overview 
+          href: image-tagging-overview.md
+        - name: Admin setup 
+          href: image-tagging-setup.md
+        - name: Find and manage images
+          href: image-tagging.md
+
+    - name: Optical character recognition 
+      items: 
+        - name: Overview 
+          href: ocr-overview.md
+        - name: Admin setup 
+          href: ocr.md
+
+    - name: Annotations
+      href: annotations.md
+
+    - name: Content query
+      href: metadata-search.md
+
     - name: Content processing
       items: 
         - name: Overview 
           href: content-processing-overview.md
         - name: Move or copy a file 
           href: content-processing-create-rules.md
-
-    - name: Content query
-      href: metadata-search.md
-
-    - name: Annotations
-      href: annotations.md
-
-    - name: Optical character recognition 
-      items: 
-        - name: Overview 
-          href: ocr-overview.md
-        - name: Set up and manage 
-          href: ocr.md
 
     - name: Taxonomy
       items:
@@ -193,11 +225,8 @@
               href: scenario-find-content-details.md
             - name: Document compliance
               href: scenario-document-compliance.md
-
         - name: Assess your environment
           href: adoption-assessment-tool.md 
-        - name: Run a trial
-          href: trial-syntex.md
         - name: Solution accelerators
           href: site-templates.md 
         - name: Solutions
@@ -215,6 +244,19 @@
 
     - name: Video library 
       href: video-library.md
+
+    - name: Syntex PowerShell
+      items: 
+        - name: Overview
+          href: powershell-syntex-intro.md
+        - name: Export and import models
+          href: powershell-syntex-import-export.md
+        - name: Publish models
+          href: powershell-syntex-publishing.md
+        - name: Request model processing
+          href: powershell-syntex-processing.md
+        - name: Work with explanations
+          href: powershell-syntex-explanations.md
 
     - name: Extensibility
       items: 

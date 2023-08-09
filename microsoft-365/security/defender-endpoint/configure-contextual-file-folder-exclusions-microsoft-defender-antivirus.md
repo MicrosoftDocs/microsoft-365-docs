@@ -161,3 +161,4 @@ To exclude a file or folder only when accessed by a specific process, create a n
 After constructing your desired contextual exclusions, you can use your existing management tool to configure file and folder exclusions using the string you created.
 
 See: [Configure and validate exclusions for Microsoft Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

@@ -16,7 +16,8 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
-ms.topic: conceptual
+- must-keep
+ms.topic: reference
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
@@ -212,3 +213,4 @@ Verify to make sure you got a correct token:
 
 - [Microsoft Defender for Endpoint APIs](exposed-apis-list.md)
 - [Access Microsoft Defender for Endpoint with application context](exposed-apis-create-app-webapp.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

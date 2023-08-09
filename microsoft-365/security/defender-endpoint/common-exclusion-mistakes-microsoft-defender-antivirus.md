@@ -1,11 +1,7 @@
 ---
 title: Common mistakes to avoid when defining exclusions
 description: Avoid common mistakes when defining exclusions for Microsoft Defender Antivirus scans.
-keywords: exclusions, files, extension, file type, folder name, file name, scans
 ms.service: microsoft-365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
@@ -14,7 +10,7 @@ ms.reviewer:
 manager: dansimp
 ms.subservice: mde
 ms.topic: conceptual
-ms.date: 03/06/2023
+ms.date: 07/18/2023
 ms.collection: 
 - m365-security
 - tier2
@@ -42,13 +38,11 @@ search.appverid: met150
 You can define an exclusion list for items that you don't want Microsoft Defender Antivirus to scan. However, excluded items could contain threats that make your device vulnerable. This article describes some common mistakes that you should avoid when defining exclusions.
 
 > [!TIP]
-> Before defining your exclusion lists, see [Recommendations for defining exclusions](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) and review the detailed information in [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md).
+> Before defining your exclusion lists, see [Important points about exclusions](configure-exclusions-microsoft-defender-antivirus.md#important-points-about-exclusions) and review the detailed information in [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md).
 
 ## Excluding certain trusted items
 
-Certain files, file types, folders, or processes shouldn't be excluded from scanning even though you trust them to be not malicious.
-
-Don't define exclusions for the folder locations, file extensions, and processes that are listed in the following sections:
+Certain files, file types, folders, or processes shouldn't be excluded from scanning even though you trust that they're not malicious. Don't define exclusions for the folder locations, file extensions, and processes that are listed in the following sections:
 
 - [Folder locations](#folder-locations)
 - [File extensions](#file-extensions)
@@ -57,9 +51,9 @@ Don't define exclusions for the folder locations, file extensions, and processes
 ### Folder locations
 
 > [!IMPORTANT]
-> Certain folders shouldn't be excluded from scans because they end up being folders where malicious files can get dropped.
+> Certain folders shouldn't be excluded from scans because they can end up being folders where malicious files can get dropped.
 
-In general, don't define exclusions for the following folder locations:
+In general, don't define exclusions for any of the following folder locations:
 
 - `%systemdrive%`
 - `C:`, `C:\`, or `C:\*`
@@ -200,16 +194,12 @@ Microsoft Defender Antivirus Service runs in system context using the LocalSyste
 
 See [Use wildcards in the file name and folder path or extension exclusion lists](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) for information on how to use wildcards in exclusion lists.
 
-> [!TIP]
-> If you're looking for Antivirus related information for other platforms, see:
-> - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
-> - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
-> - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-> - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
-> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
-> - [Configure Defender for Endpoint on Android features](android-configure.md)
-> - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
-
 ## See also
 
 - [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
+- [Configure custom exclusions for Microsoft Defender Antivirus](configure-exclusions-microsoft-defender-antivirus.md)
+- [Configure and validate exclusions for Microsoft Defender for Endpoint on Linux](linux-exclusions.md)
+- [Configure and validate exclusions for Microsoft Defender for Endpoint on macOS](mac-exclusions.md)
+
+
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

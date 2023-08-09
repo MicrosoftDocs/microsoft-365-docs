@@ -75,7 +75,7 @@ This table provides user level details for all users that have a license assigne
 |Company  <br/> |Company data represented in Azure Active Directory for this user.  <br/> |
 |Department  <br/> |Department data represented in Azure Active Directory for this user.  <br/> |
 |LocationCity  <br/> |City data represented in Azure Active Directory for this user.  <br/> |
-|LocationCountry  <br/> |Country data represented in Azure Active Directory for this user.  <br/> |
+|LocationCountry  <br/> |Country/region data represented in Azure Active Directory for this user.  <br/> |
 |LocationState  <br/> |State data represented in Azure Active Directory for this user.  <br/> |
 |LocationOffice  <br/> |User's office.  <br/> |
 |Title  <br/> |Title data represented in Azure Active Directory for this user.  <br/> |

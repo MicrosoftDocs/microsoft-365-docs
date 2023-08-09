@@ -217,3 +217,4 @@ The option to **Ask Defender Experts** is available in the incidents and alerts 
 - [Search audit logs for actions performed by Defender Experts](auditing.md)
 - [Additional information](additional-information-xdr.md)
 - [Frequently asked questions](frequently-asked-questions.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

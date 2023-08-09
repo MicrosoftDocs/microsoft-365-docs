@@ -128,3 +128,4 @@ The file capabilities view lists a file's activities as mapped to the MITRE ATT&
 - [Investigate a domain associated with a Microsoft Defender for Endpoint alert](investigate-domain.md)
 - [Investigate a user account in Microsoft Defender for Endpoint](investigate-user.md)
 - [Take response actions on a file](respond-file-alerts.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
