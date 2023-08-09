@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: sharik
 author: skjerland
 manager: scotv
+ms.reviewer: xiaowan
 ms.date: 02/18/2020
 audience: Admin
 ms.topic: overview
@@ -24,7 +25,7 @@ search.appverid:
 - MET150
 - GEU150
 - GEA150
-ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
+ROBOTS: NOINDEX
 description: "Learn more about Office 365 operated by 21Vianet that is designed to meet the needs for secure, reliable and scalable cloud services in China."
 monikerRange: 'o365-21vianet'
 ---
