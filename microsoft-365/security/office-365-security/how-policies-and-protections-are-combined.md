@@ -219,7 +219,7 @@ The following table describes how conflicts are resolved if an email is affected
 
 |Type of tenant allow/block|User's Safe Senders/Recipients list|User's Blocked Senders list|
 |---|---|---|
-|Block entries in the Tenant Allow/Block List for: <url><li>Email addresses and domains</li><li>Files</li><li>URLs</li></ul>|**Tenant wins**: Email quarantined|**Tenant wins**: Email quarantined|
+|Block entries in the Tenant Allow/Block List for: <ul><li>Email addresses and domains</li><li>Files</li><li>URLs</li></ul>|**Tenant wins**: Email quarantined|**Tenant wins**: Email quarantined|
 |Block entries for spoofed senders in the Tenant Allow/Block List|**Tenant wins**: Spoof intelligence action in the applicable anti-phishing policy|**Tenant wins**: Spoof intelligence action in the applicable anti-phishing policy|
 |Advanced delivery policy|**User wins**: Email delivered to mailbox|**Tenant wins**: Email delivered to mailbox|
 |Block settings in anti-spam policies|**User wins**: Email delivered to mailbox|**User wins**: Email delivered to user's Junk Email folder|
