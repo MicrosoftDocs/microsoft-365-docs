@@ -86,6 +86,21 @@
         "redirect_document_id":false
      },
      {
+        "source_path":"microsoft-365/solutions/groups-services-interactions.md",
+        "redirect_url":"/microsoft-365/solutions/groups-sharepoint-teams-governance",
+        "redirect_document_id":false
+     },
+     {
+        "source_path":"microsoft-365/solutions/groups-teams-compliance-governance.md",
+        "redirect_url":"/microsoft-365/solutions/groups-teams-access-governance",
+        "redirect_document_id":false
+     },
+     {
+        "source_path":"microsoft-365/solutions/groups-teams-communication-governance.md",
+        "redirect_url":"/microsoft-365/solutions/groups-teams-access-governance",
+        "redirect_document_id":false
+     },
+     {
         "source_path":"microsoft-365/solutions/information-protection-deploy-monitor-respond.md",
         "redirect_url":"/microsoft-365/solutions/data-privacy-protection",
         "redirect_document_id":false

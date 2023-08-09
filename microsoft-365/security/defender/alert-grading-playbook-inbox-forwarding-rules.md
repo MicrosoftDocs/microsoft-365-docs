@@ -144,7 +144,7 @@ CloudAppEvents
 | make-series ActivityCount = count() default = 0 on Timestamp  from (alert_date-timeback) to (alert_date-1h) step 12h by ISP
 ```
 
-Run this query to check whether the country is common for the user by looking at the history of the user.
+Run this query to check whether the country/region is common for the user by looking at the history of the user.
 
 ```kusto
 let alert_date = now(); //enter alert date

@@ -1,9 +1,8 @@
 ---
 title: Changing from a Microsoft 365 E plan to a Microsoft 365 F plan
-author: samanro
-ms.author: samanro
-ms.reviewer: 
-manager: samanro
+author: lana-chin
+ms.author: v-chinlana
+manager: serdars
 ms.topic: conceptual
 audience: admin
 ms.service: microsoft-365-frontline

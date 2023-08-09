@@ -8,7 +8,7 @@ ms.topic: how-to
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 07/18/2023
+ms.date: 08/07/2023
 ms.reviewer: pahuijbr, yongrhee, tudobril
 manager: dansimp
 ms.collection: 
@@ -149,7 +149,7 @@ Examples include:
 - Windows Security files 
 - ... and more.
 
-For more information, see [Built-in exclusions](configure-server-exclusions-microsoft-defender-antivirus.md#built-in-exclusions).
+Built-in exclusions can change with security intelligence updates and product updates. To learn more about these exclusions, see [Microsoft Defender Antivirus exclusions on Windows Server: Built-in exclusions](configure-server-exclusions-microsoft-defender-antivirus.md#built-in-exclusions).
 
 ### Custom exclusions
 
