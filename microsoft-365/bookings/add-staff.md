@@ -53,9 +53,9 @@ Although Bookings is a feature of Microsoft 365, not all of your staff members a
 
 7. Select **Events on Microsoft 365 calendar affect availability** if you want the free/busy information from staff members’ calendars to impact availability for bookings services through Bookings.
 
-    For example, if a staff member has a team meeting or a personal appointment scheduled for 3pm on a Wednesday, Bookings will show that staff member as unavailable to be booked in that time slot. That time will appear as busy or tentative in the Bookings calendar view, as shown in the below example.
+    For example, if a staff member has a team meeting or a personal appointment scheduled for 3pm on a Wednesday, Bookings will show that staff member as unavailable to be booked in that time slot. That time will appear as busy or tentative in the Bookings Page view, as shown in the below example.
 
-    :::image type="content" source="media/bookings-busy-tentative-view-2.png" alt-text="A view of a Bookings calendar.":::
+    :::image type="content" source="media/bookings-busy-tentative-view-2.png" alt-text="A view of a Bookings Page.":::
 
 > [!IMPORTANT]
 > We highly recommend leaving this setting on (it is turned on by default) to avoid double-bookings and to optimize the availability of your staff members.
@@ -65,7 +65,7 @@ Although Bookings is a feature of Microsoft 365, not all of your staff members a
     By deselecting this box, staff can be given custom hours that further limit when they can be booked. This is helpful for scenarios where a staff member may only be on site Tuesdays and Wednesdays, or they dedicate their mornings for one type of appointments, and their afternoons for other types.
 
     > [!NOTE]
-    > Bookings supports up to 100 staff members in a Bookings Calendar.
+    > Bookings supports up to 100 staff members in a Bookings Page.
 
 ## Make a Bookings user a super user without adding them as Staff in Bookings
 
