@@ -35,22 +35,22 @@ To resolve false positives like the ones listed in the table below, you should a
 |Bulk|Detection for advertising / marketing and similar message types with their relative complaint levels|[Step-by-Step guide on how to tune bulk thresholds](tune-bulk-mail-filtering-walkthrough.md)|
 |Campaign|Messages identified and grouped as part of a malware or phish campaign|[Learn more about campaigns](track-and-respond-to-emerging-threats-with-campaigns.md)|
 |Domain reputation|The message was sent from a domain that was identified as spam or phish domain, based on internal or external signals||
-|File detonation|Safe Attachments detected a malicious attachment during detonation within a sandbox||
-|File detonation reputation|File attachments previously detected by Safe Attachments during detonation||
+|File detonation|Safe Attachments detected a malicious attachment during detonation within a sandbox||
+|File detonation reputation|File attachments previously detected by Safe Attachments during detonation||
 |File reputation|The message contains a file that was previously identified as malicious by other sources||
 |Fingerprint matching|The message resembles a previously detected malicious or spam message||
 |General filter|Phishing or spam signals based on analyst heuristics||
 |Impersonation brand|Sender impersonation of well-known brands||
-|Impersonation domain|Impersonation of sender domains that you own or specified for protection in anti-phishing policies|[Impersonation insight overview](../anti-phishing-mdo-impersonation-insight.md)|
-|Impersonation user|Impersonation of protected senders that you specified in anti-phishing policies|[Impersonation insight overview](../anti-phishing-mdo-impersonation-insight.md)|
+|Impersonation domain|Impersonation of sender domains that you own or specified for protection in anti-phishing policies|[Impersonation insight overview](../anti-phishing-mdo-impersonation-insight.md)|
+|Impersonation user|Impersonation of protected senders that you specified in anti-phishing policies|[Impersonation insight overview](../anti-phishing-mdo-impersonation-insight.md)|
 |IP reputation|The message was sent from an IP that was identified as potentially malicious||
 |Mailbox intelligence impersonation|Sender detected as impersonating an address in the user's personal sender map|[Mailbox intelligence impersonation protection](../anti-phishing-policies-about.md)|
 |Mixed analysis detection|Multiple filters contributed to the verdict for this message||
-|Spoof DMARC|The message failed DMARC authentication|[How Microsoft 365 handles inbound email that fails DMARC](../email-authentication-dmarc-configure.md)|
+|Spoof DMARC|The message failed DMARC authentication|[How Microsoft 365 handles inbound email that fails DMARC](../email-authentication-dmarc-configure.md)|
 |Spoof external domain|Spoof intelligence detected email spoofing of a domain that is external to your organization||
 |Spoof intra-org|Spoof intelligence detected email spoofing of a user or domain that is internal to your organization||
-|URL detonation|Safe Links detected a malicious URL in the message during detonation within a sandbox||
-|URL detonation reputation|URLs previously detected by Safe Links during detonation||
+|URL detonation|Safe Links detected a malicious URL in the message during detonation within a sandbox||
+|URL detonation reputation|URLs previously detected by Safe Links during detonation||
 |URL malicious reputation|The message contains a URL that was previously identified as malicious or spam by other sources||
 
 ## Watch a video on submitting messages to Microsoft to learn more

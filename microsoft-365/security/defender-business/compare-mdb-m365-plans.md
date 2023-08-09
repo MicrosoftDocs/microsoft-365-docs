@@ -10,7 +10,7 @@ ms.topic: reference
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 06/28/2023
+ms.date: 07/19/2023
 ms.reviewer: efratka
 ms.collection: 
 - SMB
@@ -79,7 +79,7 @@ The following table summarizes what's included in each plan:
 > [!NOTE]
 > 1. [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) is required to modify or customize attack surface reduction rules. Intune is included in Microsoft 365 Business Premium, and can be added on to the standalone version of Defender for Business.
 > 
-> 2. You can use *either* [mobile threat defense (preview)](mdb-mtd.md) *or* Microsoft Intune to onboard iOS and Android devices. See [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md).
+> 2. You can use *either* [mobile threat defense](mdb-mtd.md) *or* Microsoft Intune to onboard iOS and Android devices. See [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md).
 
 ## Compare Defender for Business to Defender for Endpoint Plan 1 and Plan 2
 

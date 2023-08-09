@@ -47,7 +47,7 @@ When a group is restored, the following content is restored:
     
 - Teams
 
-- Yammer group and group content (If the Microsoft 365 group was created from Yammer)
+- Viva Engage group and group content (If the Microsoft 365 group was created from Viva Engage)
 
 - Power BI [Classic workspace](/power-bi/collaborate-share/service-create-workspaces)
 

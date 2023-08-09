@@ -1,15 +1,11 @@
 ---
 title: Minimum requirements for Microsoft Defender for Endpoint
 description: Understand the licensing requirements and requirements for onboarding devices to the service
-keywords: minimum requirements, licensing, comparison table
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 06/19/2023
+ms.date: 07/12/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -49,6 +45,7 @@ For information licensing requirements for Microsoft Defender for Endpoint, see 
 For detailed licensing information, see the [Product Terms site](https://www.microsoft.com/licensing/terms/) and work with your account team to learn more about the terms and conditions.
 
 For more information on the array of features in Windows editions, see [Compare Windows editions](https://www.microsoft.com/windowsforbusiness/compare).
+
 ## Browser requirements
 
 Access to Defender for Endpoint is done through a browser, supporting the following browsers:
@@ -122,6 +119,12 @@ When you run the onboarding wizard for the first time, you must choose where you
 > - You cannot change your data storage location after the first-time setup.
 > - Review the [Microsoft Defender for Endpoint data storage and privacy](data-storage-privacy.md) for more information on where and how Microsoft stores your data.
 
+#### IP stack
+
+IPv4 (Internet Protocol Version 4) stack must be enabled on devices for communication to the Defender for Endpoint cloud service to work as expected.
+
+Alternatively, if you must use an IPv6-only configuration, consider adding dynamic IPv6/IPv4 transitional mechanisms, such as DNS64/NAT64 to ensure end-to-end IPv6 connectivity to Microsoft 365 without any other network reconfiguration.
+
 #### Internet connectivity
 
 Internet connectivity on devices is required either directly or through proxy.
@@ -153,3 +156,4 @@ If you're running a third-party antimalware client and use Mobile Device Managem
 
 - [Set up Microsoft Defender for Endpoint deployment](production-deployment.md)
 - [Onboard devices](onboard-configure.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

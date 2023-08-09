@@ -39,11 +39,9 @@ The following table gives information about the supported Microsoft Defender for
 |Operating System|Windows 10 & 11|Windows Server 2012 R2 <sup>[1]</sup>, <br> 2016 <sup>[1]</sup>, <br> 2019 & 2022, <br> 1803+|macOS|Linux|
 |---|:---:|:---:|:---:|:---:|
 |**Prevention**|||||
-|[Attack Surface Reduction rules](attack-surface-reduction.md)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|
-|[Controlled folder access](controlled-folders.md)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|
+|[Attack Surface Reduction](attack-surface-reduction.md)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|
 |Device Control|![Yes.](images/svg/check-yes.svg)|![No](images/svg/check-no.svg)|![Yes.](images/svg/check-yes.svg)|![No](images/svg/check-no.svg)|
 |[Firewall](host-firewall-reporting.md)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|
-|[Exploit Protection](exploit-protection.md)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|![No](images/svg/check-no.svg)|![No](images/svg/check-no.svg)|
 |[Network Protection](network-protection.md)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg) <sup>[2]</sup>|![Yes.](images/svg/check-yes.svg) <sup>[2]</sup>|
 |[Next-generation protection](next-generation-protection.md)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|
 |[Tamper Protection](prevent-changes-to-security-settings-with-tamper-protection.md)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|![Yes.](images/svg/check-yes.svg)|![No](images/svg/check-no.svg)|
@@ -77,3 +75,4 @@ The following table gives information about the supported Microsoft Defender for
 
 > [!NOTE]
 > Windows 7, 8.1, Windows Server 2008 R2 include support for the EDR sensor, and AV using System Center Endpoint Protection (SCEP).
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

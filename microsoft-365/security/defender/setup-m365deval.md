@@ -140,3 +140,4 @@ This topic guides you to set up a dedicated lab environment. For information on 
 
 |[Phase 3: Configure & Onboard](config-m365d-eval.md) | Configure each Microsoft 365 Defender pillar for your Microsoft 365 Defender trial lab or pilot environment and onboard your endpoints.
 |:-------|:-----|
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

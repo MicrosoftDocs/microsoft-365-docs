@@ -119,3 +119,4 @@ Once disabled, accounts will no longer be routed to security.microsoft.com, and 
 - [`The New Defender`](https://afrait.com/blog/the-new-defender/)
 - [About Microsoft 365 Defender](https://www.microsoft.com/microsoft-365/security/microsoft-365-defender)
 - [Microsoft security portals and admin centers](portals.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

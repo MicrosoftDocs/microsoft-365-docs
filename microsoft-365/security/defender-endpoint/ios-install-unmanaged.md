@@ -100,3 +100,4 @@ Microsoft Defender for Endpoint on iOS enables the app protection policy scenari
 When app protection policies are configured for apps to include device risk signals from Microsoft Defender for Endpoint, users will be redirected to install Microsoft Defender for Endpoint when using such apps. Alternately, users can also install the latest version of the app directly from the Apple app store.
 
 Ensure the device is registered to Authenticator with the same account being used to onboard in Defender for successful MAM registration.
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

@@ -59,7 +59,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `DeviceName` | `string` | Fully qualified domain name (FQDN) of the device |
 | `IPAddress` | `string` | IP address assigned to the device during communication |
 | `Port` | `string` | TCP port used during communication |
-| `Location` | `string` | City, country, or other geographic location associated with the event |
+| `Location` | `string` | City, country/region, or other geographic location associated with the event |
 | `ISP` | `string` | Internet service provider associated with the IP address |
 | `ReportId` | `long` | Unique identifier for the event |
 | `AdditionalFields` | `string` | Additional information about the entity or event |
@@ -71,3 +71,4 @@ For information on other tables in the advanced hunting schema, [see the advance
 - [Hunt across devices, emails, apps, and identities](advanced-hunting-query-emails-devices.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

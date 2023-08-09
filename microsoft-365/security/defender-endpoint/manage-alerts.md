@@ -146,3 +146,4 @@ Added comments instantly appear on the pane.
 - [Investigate a user account in Microsoft Defender for Endpoint](investigate-user.md)
 
 
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

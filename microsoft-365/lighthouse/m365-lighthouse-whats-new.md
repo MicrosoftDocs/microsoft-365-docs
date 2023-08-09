@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: crimora
-ms.date: 06/09/2023
+ms.date: 07/11/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -27,7 +27,61 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 We're continuously adding new features to [Microsoft 365 Lighthouse](m365-lighthouse-overview.md), fixing issues we learn about, and making changes based on your feedback. Review this article to discover what we've been working on.
 
 > [!NOTE]
-> Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, you should see it soon.
+> Features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, you should see it soon.
+>
+> To see which new features are currently available in your partner tenant, go to the **Home** page of Microsoft 365 Lighthouse, and then either select the **What's new** link in the upper-right corner of the page or select **What's new** on the **What's new & learning resources** card.
+
+## July 2023
+
+### Sales Advisor is now part of Microsoft 365 Lighthouse
+
+Sales Advisor, formerly known as Project Orland in Partner Center Insights, is now integrated into Microsoft 365 Lighthouse.
+
+Sales Advisor helps you harness the power of AI-driven insights to fuel business growth and deliver scalable managed services to your customers. With Sales Advisor, you can discover proactive, actionable, and personalized recommendations for acquiring new customers, boosting customer retention, and expanding your business with premium offers.
+
+To view Sales Advisor in Lighthouse, in the left navigation pane, select **Sales Advisor** > **Opportunities**. To learn more, see [Overview of Sales Advisor in Microsoft 365 Lighthouse](m365-lighthouse-sales-advisor-overview.md).
+
+## June 2023
+
+### Deployment task for managing Windows updates
+
+You can now deploy Windows update deployment policies to ensure customer tenant devices have the latest security patches, bug fixes, and performance improvements. You'll also gain insight into which tenants are missing the Windows update deployment policies, which tenants are in the process of implementing the policies, and which ones have successfully implemented the policies.
+
+To learn more, see [Overview of using Microsoft 365 Lighthouse baselines to deploy standard tenant configurations](m365-lighthouse-deploy-standard-tenant-configurations-overview.md).
+
+### Access to admin centers from Lighthouse
+
+We've added admin center links to Microsoft 365 Lighthouse so you can more efficiently manage your customers. The admin center links let you to go directly from Lighthouse to the applicable admin center for the selected customer tenant.
+
+You can access the admin center links from the **Tenants** page or by using the **Tenants** filter that's available throughout Lighthouse. On the **Tenants** page, select the three dots (more actions) next to the customer tenant whose services you want to manage, and then select **Manage services** to open the list of admin center links. To use the **Tenants** filter, open the filter, search for the customer tenant whose services you want to manage, and then select the **>** symbol next to the tenant name to open the list of admin center links. 
+
+To learn more, see [Overview of the Tenants page in Microsoft 365 Lighthouse](m365-lighthouse-tenants-page-overview.md).
+
+### "What's new" is now customized for your tenant
+
+Since new features are rolled out gradually across Microsoft 365 Lighthouse partners, we've changed our "What's new" notifications to let you know when new features are available in your partner tenant.
+
+To see which new features are available in your partner tenant, go to the **Home** page of Lighthouse, and then either select the **What's new** link in the upper-right corner of the page or select **What's new** on the **What's new & learning resources** card.
+
+For a complete list of the latest features in Lighthouse, which may or may not yet be available in your partner tenant, refer to the list in this article.
+
+### Risky users for all tenants
+
+The **Risky users** page has been updated to show risky user information for all your onboarded customer tenants, even if the customer tenants don't have Azure Active Directory Premium P1 or above. For example, if a tenant only has a license for Microsoft Defender for Business or Windows 365 Business, you'll still be able to view the user accounts that have been flagged for risky behavior in that tenant.
+
+To see this updated functionality, in the left navigation pane in Microsoft 365 Lighthouse, select **Users** > **Risky users**. 
+
+[Go to the Risky users page now](https://lighthouse.microsoft.com/#view/Microsoft_Intune_MTM/RiskyUsers.ReactView) 
+
+To learn more, see [View and manage risky users in Microsoft 365 Lighthouse](m365-lighthouse-view-manage-risky-users.md).
+
+### Detailed user metrics
+
+You can now view detailed metrics of all your managed user accounts by going to **Users** > **Account management** > **User metrics**. You can see how many users, licensed users, guest users, Global Administrators, inactive users, and unblocked shared mailboxes you have across your customer tenants. This data can help you more efficiently and more effectively manage user accounts to maintain the health of your customer tenants.
+
+From the **User metrics** page, you can also quickly access the Microsoft 365 admin center, where you can view comprehensive user information and take additional actions.
+
+To learn more, see [Overview of the Users page in Microsoft 365 Lighthouse](m365-lighthouse-users-page-overview.md).
 
 ## May 2023
 

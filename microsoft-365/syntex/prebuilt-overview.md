@@ -1,5 +1,5 @@
 ---
-title: Overview of prebuilt models in Microsoft Syntex
+title: Overview of prebuilt document processing in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -17,13 +17,13 @@ ms.localizationpriority:  medium
 description: Learn about prebuilt models in Microsoft Syntex.
 ---
 
-# Overview of prebuilt models in Microsoft Syntex
+# Overview of prebuilt document processing in Microsoft Syntex
 
 In addition to [custom models](model-types-overview.md#custom-models), Microsoft Syntex provides *prebuilt models* to automate the extraction of information.
 
 ## Introduction to prebuilt models
 
-Prebuilt models are preconfigured to recognize documents and the structured information in the documents. Instead of having to create a new custom model from scratch, you can iterate on an existing pretrained model to add specific fields that fit the needs of your organization. 
+Prebuilt document processing uses [prebuilt models](#available-prebuilt-models) that are preconfigured to recognize documents and the structured information in the documents. Instead of having to create a new custom model from scratch, you can iterate on an existing pretrained model to add specific fields that fit the needs of your organization. 
 
 Prebuilt models use optical character recognition (OCR) combined with deep learning models to identify and extract predefined text and data fields common to specific document types. You start by analyzing one of your files against the prebuilt model. You then select the detected fields that make sense for your purpose. If the model doesn't detect the fields that you need, you can analyze again by using a different file.
 

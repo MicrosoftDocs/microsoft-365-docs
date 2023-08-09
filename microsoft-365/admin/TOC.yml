@@ -99,8 +99,6 @@
           href: multi-tenant/manage.md
     - name: Office 365 operated by 21Vianet
       items: 
-        - name: About Office 365 operated by 21Vianet
-          href: services-in-china/services-in-china.md
         - name: Download the Office app for Android for Office 365 operated by 21Vianet
           href: services-in-china/download-office-app-for-Android.md
         - name: Download the Office app for iOS for Office 365 operated by 21Vianet
@@ -187,8 +185,6 @@
              href: add-users/set-password-to-never-expire.md
            - name: Password policy recommendations
              href: misc/password-policy-recommendations.md
-           - name: Resend user passwords
-             href: add-users/resend-user-password.md
            - name: Turn off strong passwords
              href: add-users/strong-password.md
            - name: Set the password expiration policy
@@ -307,6 +303,8 @@
               href: activity-reports/microsoft-teams-user-activity-preview.md
             - name: Microsoft 365 Apps usage
               href: activity-reports/microsoft365-apps-usage-ww.md
+            - name: Microsoft 365 Copilot usage
+              href: activity-reports/microsoft-365-copilot-usage.md
             - name: Microsoft 365 groups
               href: activity-reports/office-365-groups-ww.md
             - name: OneDrive for Business activity
@@ -327,12 +325,12 @@
               href: activity-reports/viva-insights-activity.md
             - name: Viva Learning activity
               href: activity-reports/viva-learning-activity.md
-            - name: Yammer activity
-              href: activity-reports/yammer-activity-report-ww.md
-            - name: Yammer device usage
-              href: activity-reports/yammer-device-usage-report-ww.md
-            - name: Yammer groups activity
-              href: activity-reports/yammer-groups-activity-report-ww.md
+            - name: Viva Engage activity
+              href: activity-reports/viva-engage-activity-report-ww.md
+            - name: Viva Engage device usage
+              href: activity-reports/viva-engage-device-usage-report-ww.md
+            - name: Viva Engage groups activity
+              href: activity-reports/viva-engage-groups-activity-report-ww.md
          - name: Microsoft Adoption Score
            items:
             - name: Microsoft Adoption Score - overview

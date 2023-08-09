@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: jkinma, nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
@@ -24,14 +24,14 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 description: "Learn how to cancel your Dynamics 365, Intune, Power Platform, and Microsoft 365 for business trial or paid subscriptions in the Microsoft 365 admin center."
-ms.date: 04/04/2023
+ms.date: 08/07/2023
 ---
 
 # Cancel your Microsoft business subscription
 
 Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
-This article only applies to canceling **Dynamics 365**, **Intune**, **Power Platform**, **Windows 365**, and **Microsoft 365 for business** subscriptions. If you have an Azure subscription, see [Cancel your Azure subscription](/azure/cost-management-billing/manage/cancel-azure-subscription). If you have Microsoft 365 Family or Personal, see [Cancel a Microsoft 365 subscription](https://support.microsoft.com/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link).
+This article only applies to canceling **Dynamics 365**, **Intune**, **Power Platform**, **Windows 365**, **Microsoft Defender for Business**, and **Microsoft 365 for business** subscriptions. If you have an Azure subscription, see [Cancel your Azure subscription](/azure/cost-management-billing/manage/cancel-azure-subscription). If you have Microsoft 365 Family or Personal, see [Cancel a Microsoft 365 subscription](https://support.microsoft.com/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link).
 
 > [!WARNING]
 > Before you cancel a subscription, make sure your users [save their data](#save-your-data).
@@ -39,7 +39,7 @@ This article only applies to canceling **Dynamics 365**, **Intune**, **Power Pla
 ## Before you begin
 
 - You must be a Global or Billing admin to do the tasks in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
-- If you have a billing profile, you must also be a billing account owner or billing account contributor to do the tasks in this article. [Find out if you have a billing profile](../billing-and-payments/manage-billing-profiles.md#view-my-billing-profiles). For more information about billing account roles, see [Understand access to billing accounts](../manage-billing-accounts.md).
+- If you have a billing profile, you must also be a billing account owner or billing account contributor to do the tasks in this article. [Find out if you have a billing profile](../billing-and-payments/manage-billing-profiles.md#view-your-billing-profiles). For more information about billing account roles, see [Understand access to billing accounts](../manage-billing-accounts.md).
 - If you added your own domain name to use with your subscription, you must [remove the domain](../../admin/get-help-with-domains/remove-a-domain.md) before you cancel your subscription.
 - If you have a domain subscription, to prevent any other charges for that subscription, [turn off recurring billing](renew-your-subscription.md).
 
@@ -60,7 +60,7 @@ If your organization is in Chile, and you bought your subscription through a par
 ## Determine your cancellation options
 
 > [!IMPORTANT]
-> Before you continue, [determine if you have a billing profile](../billing-and-payments/manage-billing-profiles.md#view-my-billing-profiles).
+> Before you continue, [determine if you have a billing profile](../billing-and-payments/manage-billing-profiles.md#view-your-billing-profiles).
 
 ### If you have a billing profile
 
@@ -128,6 +128,10 @@ When the cancellation becomes effective, your users lose access to their data. B
 ### Uninstall Microsoft 365 (optional)
 
 If you canceled your subscription and didn't [move users to a different subscription](move-users-different-subscription.md) that includes Microsoft 365, Microsoft 365 runs in reduced functionality mode. When this happens, users can only read and print documents, and Microsoft 365 apps display [Unlicensed Product notifications](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380). To avoid any confusion, have your users [uninstall Microsoft 365](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8) from their computers.
+
+### Offboard devices from Microsoft Defender for Business (optional)
+
+If you canceled your subscription, you can offboard devices, such as computers, phones, and tablets, that were onboarded to Defender for Business or Microsoft 365 Business Premium. See [Offboard a device from Microsoft Defender for Business](../../security/defender-business/mdb-offboard-devices.md).
 
 ### Close your account (optional)
 

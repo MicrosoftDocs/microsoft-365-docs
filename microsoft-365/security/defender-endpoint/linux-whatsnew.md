@@ -34,6 +34,60 @@ This article is updated frequently to let you know what's new in the latest rele
 
 
 <details>
+	<summary> July-2023 (Build: 101.23062.0010 | Release version: 30.123062.0010.0)</summary>
+
+## July-2023 Build: 101.23062.0010 | Release version: 30.123062.0010.0
+
+&ensp;Released: **July 26,2023**<br/>
+&ensp;Published: **July 26,2023**<br/>
+&ensp;Build: **101.23062.0010**<br/>
+&ensp;Release version: **30.123062.0010.0**<br/>
+&ensp;Engine version: **1.1.20100.7**<br/>
+&ensp;Signature version: **1.385.1648.0**<br/>
+
+**What's new**
+
+- There are multiple fixes and new changes in this release
+	- If a proxy is set for Defender for Endpoint then it will be visible in the `mdatp health` command output
+	- With this release we provided two options in mdatp diagnostic hot-event-sources:
+        1. Files
+        2. Executables
+	- Network Protection: Connections that are blocked by Network Protection and have the block overridden by users will now correctly be reported to  Microsoft 365 Defender
+	- Improved logging in Network Protection block and audit events for debugging
+- Other fixes and improvements
+    - From this version, enforcementLevel will be in passive mode by default giving admins more control over where they want 'RTP on' within their estate
+    - This change only applies to fresh MDE deployments, for example, servers where Defender for Endpoint is being deployed for the first time. In update scenarios, servers that have Defender for Endpoint deployed with RTP ON, will continue operating with RTP ON even post update to version 101.23062.0010
+
+- Bug Fixes
+    - RPM database corruption issue in Defender Vulnerability Management baseline has been fixed
+- Other performance improvements
+
+**Known issues**
+
+- While upgrading from mdatp version 101.75.43 or 101.78.13, you may encounter a kernel hang. Run the following commands before attempting to upgrade to version 101.98.05. More information about the underlying issue can be found at [System hang due to blocked tasks in fanotify code](https://access.redhat.com/solutions/2838901).
+
+There are two ways to mitigate this upgrade issue:
+
+1. Use your package manager to uninstall the 101.75.43 or 101.78.13 mdatp version.
+
+Example:
+```bash
+sudo apt purge mdatp
+sudo apt-get install mdatp
+```
+
+2. As an alternative you can follow the instructions to [uninstall](/microsoft-365/security/defender-endpoint/linux-resources#uninstall), then [install](/microsoft-365/security/defender-endpoint/linux-install-manually#application-installation) the latest version of the package.
+
+If you don't want to uninstall mdatp you can disable rtp and mdatp in sequence before upgrading.
+Some customers (<1%) experience issues with this method.
+
+ ```bash
+sudo mdatp config real-time-protection --value=disabled
+sudo systemctl disable mdatp
+```
+</details>
+
+<details>
 	<summary> July-2023 (Build: 101.23052.0009 | Release version: 30.123052.0009.0)</summary>
 
 ## July-2023 Build: 101.23052.0009 | Release version: 30.123052.0009.0
@@ -42,8 +96,8 @@ This article is updated frequently to let you know what's new in the latest rele
 &ensp;Published: **July 10,2023**<br/>
 &ensp;Build: **101.23052.0009**<br/>
 &ensp;Release version: **30.123052.0009.0**<br/>
-&ensp;Engine version: **1.1.20300.5**<br/>
-&ensp;Signature version: **1.391.2837.0**<br/>
+&ensp;Engine version: **1.1.20100.7**<br/>
+&ensp;Signature version: **1.385.1648.0**<br/>
 
 **What's new**
 
@@ -854,3 +908,4 @@ As an alternative to the above, you can follow the instructions to [uninstall](/
    </details>
 
 </blockquote></details>
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
