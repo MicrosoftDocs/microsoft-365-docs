@@ -49,7 +49,6 @@ The **Microsoft Teams user activity** report can be viewed for trends over the l
 
 To ensure data quality, we perform daily data validation checks for the past three days and will be filling any gaps detected. You may notice differences in historical data during the process.
 
-=======
 |Metric|Mapped metric in Export|Definition|
 |:-----|:-----|:-----|
 |User name  <br/> |User Principal Name|The email address of the user. You can display the actual email address or make this field anonymous.   <br/> |
