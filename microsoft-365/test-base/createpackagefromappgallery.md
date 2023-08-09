@@ -75,4 +75,4 @@ package**. Then click the card '**Create package from App Gallery**'.
 2.  Once all required info is filled out, you can proceed to step 3 by
     clicking the Next button at the bottom.
 
-For next steps, please refer to the [Creating and Testing Binary Files on Test Base \| Microsoft Learn](https://learn.microsoft.com/en-us/microsoft-365/test-base/testapplication?view=o365-worldwide).
+For next steps, please refer to the [Creating and Testing Binary Files on Test Base \| Microsoft Learn](testapplication.md).
