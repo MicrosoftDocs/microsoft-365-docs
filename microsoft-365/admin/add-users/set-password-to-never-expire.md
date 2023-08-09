@@ -44,7 +44,7 @@ This guide applies to other providers, such as Intune and Microsoft 365, which a
 Use the `Connect-MgGraph` command to sign in with the required scopes. You need to sign in with an admin account to consent to the required scopes.
 
 ```powershell
-Connect-MgGraph -Scopes "User.Read.All","Group.ReadWrite.All"
+Connect-MgGraph -Scopes "User.ReadWrite.All","Group.ReadWrite.All"
  ```
 The command prompts you to go to a web page to sign in using a device code. Once you've done that, the command indicates success with a `Welcome To Microsoft Graph!` message. You only need to sign in once per session.
 
