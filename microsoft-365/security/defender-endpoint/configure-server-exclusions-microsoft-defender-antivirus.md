@@ -6,7 +6,7 @@ description: Windows Server includes automatic exclusions, based on server role.
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
-ms.date: 07/18/2023
+ms.date: 08/07/2023
 author: denisebmsft
 ms.author: deniseb
 ms.topic: conceptual
@@ -47,6 +47,7 @@ For a more detailed overview of exclusions, see [Manage exclusions for Microsoft
 - Appropriate exclusions must be set for software that isn't included with the operating system.
 - Windows Server 2012 R2 doesn't have Microsoft Defender Antivirus as an installable feature. When you onboard those servers to Defender for Endpoint, you'll install Microsoft Defender Antivirus, and default exclusions for operating system files are applied. However, exclusions for server roles (as specified below) don't apply automatically, and you should configure these exclusions as appropriate. To learn more, see [Onboard Windows servers to the Microsoft Defender for Endpoint service](configure-server-endpoints.md).
 - Built-in exclusions and automatic server role exclusions don't appear in the standard exclusion lists that are shown in the [Windows Security app](microsoft-defender-security-center-antivirus.md).
+- The list of built-in exclusions can change with [security intelligence updates](microsoft-defender-antivirus-updates.md#security-intelligence-updates) and product updates. This article lists some, but not all, of the built-in and automatic exclusions.
 
 ## Automatic server role exclusions
 

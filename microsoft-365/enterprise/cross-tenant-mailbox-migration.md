@@ -87,7 +87,7 @@ All users in both the source and target organizations must be licensed with the 
 
    ![New Application](../media/tenant-to-tenant-mailbox-move/b36698df128e705eacff4bff7231056a.png)
 
-1. On the **Register an application page**, under **Supported account types**, select **Accounts in any organizational directory (Any Azure AD directory - Multi-tenant)**. Then, under **Redirect URI (optional)**, select **Web**, and then typer `https://office.com`. Then, select **Register**.
+1. On the **Register an application page**, under **Supported account types**, select **Accounts in any organizational directory (Any Azure AD directory - Multi-tenant)**. Then, under **Redirect URI (optional)**, select **Web**, and then type `https://office.com`. Then, select **Register**.
 
    ![Application Registration](../media/tenant-to-tenant-mailbox-move/edcdf18b9f504c47284fe4afb982c433.png)
 
@@ -278,14 +278,6 @@ Example **source** Mailbox object:
    1. msExchBlockedSendersHash – Writes back online safe and blocked sender data from clients to on-premises Active Directory.
    1. msExchSafeRecipientsHash – Writes back online safe and blocked sender data from clients to on-premises Active Directory.
    1. msExchSafeSendersHash – Writes back online safe and blocked sender data from clients to on-premises Active Directory.
-1. If the source mailbox Recoverable Items size is greater than our database default (30 GB), moves won't proceed since the target quota is less than the source mailbox size. You can update the target MailUser object to transition the ELC mailbox flags from the source environment to the target, which triggers the target system to expand the quota of the MailUser to 100 GB, thus allowing the move to the target. In a Hybrid environment, you'll need set the appropriate msExchELCMailboxFlags on the target ADUser.
-1. Non-hybrid target tenants can modify the quota on the **Recoverable Items** folder for the MailUsers prior to migration by running the following command to enable Litigation Hold on the target MailUser object and increasing the quota to 100 GB:
-
-```PowerShell
-Set-MailUser -Identity <MailUserIdentity> -EnableLitigationHoldForMigration
-```
-
-This won't work for tenants in a hybrid configuration.
 
 Users in the target organization must be licensed with appropriate Exchange Online subscriptions applicable for the organization. You may apply a license in advance of a mailbox move but ONLY once the target MailUser is properly set up with ExchangeGUID and proxy addresses. Applying a license before the ExchangeGUID is applied will result in a new mailbox provisioned in target organization. You must also apply a Cross Tenant User Data Migration license, or you may see a transient error reading "needs approval", which will report a warning in the move report that a license hasn't been applied to the target user.
 
@@ -406,7 +398,11 @@ While Teams meetings are moved, the meeting URL isn't updated when items migrate
 
 ### What content is migrated cross-tenant?
 
-When a mailbox is migrated cross-tenant with this feature, only user-visible content in the mailbox, also known as Top of Information Store (email, contacts, calendar, tasks, and notes), and the Recoverable Items folders Deletions, Versions, and Purges are migrated.  
+When a mailbox is migrated cross-tenant with this feature, only user-visible content in the mailbox, also known as Top of Information Store (email, contacts, calendar, tasks, and notes), and the Recoverable Items folders Deletions, Versions, and Purges are migrated.
+
+### Do items in the Outbox get migrated cross-tenant?
+
+Items in the Outbox are not migrated cross-tenant as this folder is a client-based folder specific to the Outlook client. Items in the Outbox are stored locally, and not synced to the cloud.
 
 ### Does the Teams chat folder content migrate cross-tenant?
 

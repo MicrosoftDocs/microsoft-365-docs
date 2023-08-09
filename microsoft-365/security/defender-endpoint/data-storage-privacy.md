@@ -17,7 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 08/07/2023
 ---
 
 # Microsoft Defender for Endpoint data storage and privacy
@@ -29,13 +29,14 @@ ms.date: 12/18/2020
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Business](../defender-business/mdb-overview.md)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 This section covers some of the most frequently asked questions regarding privacy and data handling for Defender for Endpoint.
 
 > [!NOTE]
-> This document explains the data storage and privacy details related to Defender for Endpoint. For more information related to Defender for Endpoint and other products and services like Microsoft Defender Antivirus and Windows, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=827576). See also [Windows privacy FAQ](https://go.microsoft.com/fwlink/?linkid=827577) for more information.
+> This document explains the data storage and privacy details related to Defender for Endpoint and Defender for Business. For more information related to Defender for Endpoint and other products and services like Microsoft Defender Antivirus and Windows, see [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=827576). See also [Windows privacy FAQ](https://go.microsoft.com/fwlink/?linkid=827577) for more information.
 
 ## What data does Microsoft Defender for Endpoint collect?
 
@@ -69,15 +70,14 @@ Customer data in pseudonymized form may also be stored in the central storage an
 
 Once configured, you cannot change the location where your data is stored. This provides a convenient way to minimize compliance risk by actively selecting the geographic locations where your data will reside.
 
-
-
 ## Data sharing for Microsoft Defender for Endpoint
 
 Microsoft Defender for Endpoint shares data, including customer data, among the following Microsoft products also licensed by the customer.
 
 - Microsoft Sentinel
 - Microsoft Tunnel for Mobile Application Management - Android
-- Microsoft Defender for Cloud 
+- Microsoft Defender for Cloud
+- Microsoft Defender for Identity
 
 ## Is my data isolated from other customer data?
 

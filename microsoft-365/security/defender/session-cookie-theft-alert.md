@@ -117,7 +117,7 @@ AADSignInEventsBeta
 | where OtherTimestamp > Timestamp and OtherCountry != Country
 ```
 
-Use the below query for identifying uncommon countries: 
+Use the below query for identifying uncommon countries/regions: 
 
 ```kusto
 AADSignInEventsBeta 
