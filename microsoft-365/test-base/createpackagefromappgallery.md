@@ -51,8 +51,8 @@ package**. Then click the card '**Create package from App Gallery**'.
     > [!div class="mx-imgBorder"]
     > ![Screenshot of basic information](Media/create_package_from_gallery_4.png)
 
-    > [Note]{.mark}: The combination of package name and version must be
-    > unique within your Test Base account.
+    > [!Note]
+    > The combination of package name and version must be unique within your Test Base account.
 
 5.  After all the requested information is specified, you can proceed to the next phase by clicking the **Next: Configuration test** button.
 
