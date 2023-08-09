@@ -152,3 +152,4 @@ There might be a delay of up to six hours from the time a media connection occur
 > 
 ---
 
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

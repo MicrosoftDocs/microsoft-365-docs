@@ -34,7 +34,7 @@ description: "Learn to create and delete Microsoft 365 groups, add and remove gr
 While users can create a Microsoft 365 group from Outlook or other apps, as an admin, you may need to create or delete groups, add or remove members, and customize how they work. The <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Microsoft 365 admin center</a> is the place to do this. 
 
 > [!TIP]
-> Microsoft 365 connected Yammer groups must be created in Yammer, but can be managed in the Microsoft 365 admin center like other Microsoft 365 groups. To learn more, see [Yammer and Microsoft 365 groups](/yammer/manage-yammer-groups/yammer-and-office-365-groups). 
+> Microsoft 365 connected Viva Engage groups must be created in Viva Engage, but can be managed in the Microsoft 365 admin center like other Microsoft 365 groups. To learn more, see [Viva Engage and Microsoft 365 groups](/viva/engage/manage-viva-engage-groups/viva-engage-and-office-365-groups). 
 
 ## Create a Microsoft 365 group
 

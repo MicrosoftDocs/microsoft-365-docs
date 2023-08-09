@@ -18,7 +18,8 @@ audience: ITPro
 ms.collection: 
  - m365-security
  - tier3
-ms.topic: conceptual
+ - must-keep
+ms.topic: reference
 search.appverid: 
   - MOE150
   - MET150
@@ -732,3 +733,4 @@ GET https://api.security.microsoft.com/api/incidents
 - [Incidents overview](incidents-overview.md)
 - [Incident APIs](api-incident.md)
 - [Update incident API](api-update-incidents.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

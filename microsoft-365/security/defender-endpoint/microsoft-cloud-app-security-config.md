@@ -59,3 +59,4 @@ If you're interested in trying Microsoft Defender for Cloud Apps, see [Microsoft
 ## Related topic
 
 - [Microsoft Defender for Cloud Apps integration](microsoft-cloud-app-security-integration.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

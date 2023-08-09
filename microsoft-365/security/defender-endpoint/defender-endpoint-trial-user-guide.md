@@ -136,3 +136,4 @@ The Microsoft Defender for Endpoint evaluation lab is designed to eliminate the 
 - [Microsoft Security technical content library](https://www.microsoft.com/security/content-library/Home/Index)
 - [Defender for Endpoint demonstration](https://cdx.transform.microsoft.com/experience-detail/d5eca65d-13a3-464d-9171-c24cf9dd6050)
 
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

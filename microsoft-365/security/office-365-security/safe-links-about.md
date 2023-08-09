@@ -40,7 +40,7 @@ appliesto:
 > [!IMPORTANT]
 > This article is intended for business customers who have [Microsoft Defender for Office 365](defender-for-office-365.md). If you're using Outlook.com, Microsoft 365 Family, or Microsoft 365 Personal, and you're looking for information about Safelinks in Outlook, see [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-In organizations with Microsoft Defender for Office 365, Safe Links scanning protects your organization from malicious links that are used in phishing and other attacks. Specifically, Safe Links provides URL scanning and rewriting of inbound email messages during mail flow, and time-of-click verification of URLs and links in email messages, Teams, and supported Office 365 apps. Safe Links scanning occurs in addition to regular [anti-spam](anti-spam-protection-about.md) and [anti-malware](anti-malware-protection-about.md) protection.
+In organizations with Microsoft Defender for Office 365, Safe Links scanning protects your organization from malicious links, including QR codes, that are used in phishing and other attacks. Specifically, Safe Links provides URL scanning and rewriting of inbound email messages during mail flow, and time-of-click verification of URLs and links in email messages, Teams, and supported Office 365 apps. Safe Links scanning occurs in addition to regular [anti-spam](anti-spam-protection-about.md) and [anti-malware](anti-malware-protection-about.md) protection.
 
 Watch this short video on how to protect against malicious links with Safe Links in Microsoft Defender for Office 365.
 

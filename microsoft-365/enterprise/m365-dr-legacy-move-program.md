@@ -26,7 +26,7 @@ ms.collection:
 
 ## When Can I Request a Move (final opt-in opportunity)
 
-|**Customers with signup country in**|**Request period begins**|**Request deadline**|**Migration Commitment**|
+|**Customers with signup country/region in**|**Request period begins**|**Request deadline**|**Migration Commitment**|
 |:-----|:-----|:-----|:-----|
 | Japan <br/> | Nov. 1, 2022  <br/> | Apr. 30, 2023  <br/> | May 1, 2025  <br/> |
 | Australia, New Zealand, Fiji <br/> | Nov. 1, 2022  <br/> | Apr. 30, 2023  <br/> | May 1, 2025  <br/> |
@@ -43,12 +43,12 @@ ms.collection:
 | Brazil <br/> | Nov. 1, 2022  <br/> | Apr. 30, 2023  <br/> | May 1, 2025  <br/> |
 | Sweden <br/> | Nov. 1, 2022  <br/> | Apr. 30, 2023  <br/> | May 1, 2025  <br/> |
 
-## Remaining Countries in the Move Program
+## Remaining Countries/regions in the Move Program
 
 > [!NOTE]
-> Even though the Move Program is officially ending, we still have some in-flight geographies that we will see through to completion, based on the original 24-month migration commitment. Please refer to the table below for the remaining countries and their migration deadlines.
+> Even though the Move Program is officially ending, we still have some in-flight geographies that we will see through to completion, based on the original 24-month migration commitment. Please refer to the table below for the remaining countries/regions and their migration deadlines.
 
-|**Customers with signup country in**|**Original Opt-in: migration commitment date**|**Final Opt-in (above): migration commitment date**|
+|**Customers with signup country/region in**|**Original Opt-in: migration commitment date**|**Final Opt-in (above): migration commitment date**|
 |:-----|:-----|:-----|
 | Germany <br/> | May 1, 2023  <br/> | May 1, 2025  <br/> |
 | Brazil <br/> | June 1, 2023  <br/> | May 1, 2025  <br/> |
@@ -94,7 +94,7 @@ In addition to Exchange Online, SharePoint Online, and OneDrive for Business; Mi
 - Teams chat messages, including private messages and channel messages.
 - Teams images used in chats.
 
-Teams files are stored in SharePoint Online and Teams chat files are stored in OneDrive for Business. Voicemail, calendar, and contacts are stored in Exchange Online. In many cases, Exchange Online, SharePoint Online, and OneDrive for Business are already used by the customer in the local datacenter geo and are also part of the Microsoft 365 migration program for eligible customer countries.
+Teams files are stored in SharePoint Online and Teams chat files are stored in OneDrive for Business. Voicemail, calendar, and contacts are stored in Exchange Online. In many cases, Exchange Online, SharePoint Online, and OneDrive for Business are already used by the customer in the local datacenter geo and are also part of the Microsoft 365 migration program for eligible customer countries/regions.
 
 </details>
 
@@ -189,10 +189,10 @@ No, this is not possible. Customers who have been moved to new geo datacenters c
 
 </details>
 
-### Will Microsoft 365 _Tenants_ hosted in the new datacenters be available to users outside of the country?
+### Will Microsoft 365 _Tenants_ hosted in the new datacenters be available to users outside of the country/region?
 <details><summary>Click to expand</summary>
 
-Yes. Microsoft maintains a large global network with public Internet connections in more than 130 locations in 35 countries around the world with peering agreements with more than 2,700 Internet Service Providers (ISPs). Users will be able to access the datacenters from wherever they are on the Internet.
+Yes. Microsoft maintains a large global network with public Internet connections in more than 130 locations in 35 countries/regions around the world with peering agreements with more than 2,700 Internet Service Providers (ISPs). Users will be able to access the datacenters from wherever they are on the Internet.
 
 </details>
 

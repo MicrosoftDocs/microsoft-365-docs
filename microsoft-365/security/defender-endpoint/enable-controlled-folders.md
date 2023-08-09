@@ -153,3 +153,4 @@ Use `Disabled` to turn off the feature.
 - [Protect important folders with controlled folder access](controlled-folders.md)
 - [Customize controlled folder access](customize-controlled-folders.md)
 - [Evaluate Microsoft Defender for Endpoint](evaluate-mde.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

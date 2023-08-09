@@ -314,3 +314,4 @@ To deploy this custom configuration profile:
 
 5. In the `Assignments` tab, assign this profile to **All Users & All devices**.
 6. Review and create this configuration profile.
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

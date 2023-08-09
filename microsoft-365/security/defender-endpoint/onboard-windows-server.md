@@ -47,15 +47,6 @@ This topic describes how to onboard specific Windows servers to Microsoft Defend
 
 For guidance on how to download and use Windows Security Baselines for Windows servers, see [Windows Security Baselines.](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-baselines)
 
-## License requirement
-
-To be eligible to acquire Microsoft Defender for Endpoint Server licenses (one per covered server instance), you must have already purchased a combined minimum of 50 licenses for one or more of the following:
-
-- Microsoft Defender for Endpoint (per user)
-- Windows E5/A5
-- Microsoft 365 E5/A5
-- Microsoft 365 E5 Security User subscription licenses
-
 ## Windows Server onboarding overview
 
 You'll need to complete the following general steps to successfully onboard servers 2008 R2, 2012 R2, 2016, 2019, 2022.
@@ -94,3 +85,4 @@ For other Windows server versions, you have two options to offboard Windows serv
 - [Onboard Windows devices using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [Onboard Windows devices using Group Policy](configure-endpoints-gp.md)
 - [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
