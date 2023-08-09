@@ -82,3 +82,4 @@ The following broad categories of features can be configured:
 > See: [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).
 >
 
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

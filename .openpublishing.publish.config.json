@@ -78,5 +78,26 @@
   "docs_build_engine": {},
   "need_generate_pdf_url_template": true,
   "contribution_branch_mappings": {},
-  "need_generate_intellisense": false
+  "need_generate_intellisense": false,
+  "redirection_files": [
+    ".openpublishing.redirection.json",
+    ".openpublishing.redirection.admin.json",
+    ".openpublishing.redirection.bookings.json",
+    ".openpublishing.redirection.business.json",
+    ".openpublishing.redirection.commerce.json",
+    ".openpublishing.redirection.compliance.json",
+    ".openpublishing.redirection.contentunderstanding.json",
+    ".openpublishing.redirection.enterprise.json",
+    ".openpublishing.redirection.frontline.json",
+    ".openpublishing.redirection.lighthouse.json",
+    ".openpublishing.redirection.managed-desktop.json",
+    ".openpublishing.redirection.security.json",
+    ".openpublishing.redirection.solutions.json",
+    ".openpublishing.redirection.campaigns.json",
+    ".openpublishing.redirection.knowledge.json",
+    ".openpublishing.redirection.learning.json",
+    ".openpublishing.redirection.syntex.json",
+    ".openpublishing.redirection.loop.json"
+  ]
 }
+

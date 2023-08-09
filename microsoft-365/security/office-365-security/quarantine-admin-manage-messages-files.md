@@ -19,7 +19,7 @@ ms.custom:
 description: Admins can learn how to view and manage quarantined messages for all users in Exchange Online Protection (EOP). Admins in organizations with Microsoft Defender for Office 365 can also manage quarantined files in SharePoint Online, OneDrive for Business, and Microsoft Teams.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 6/19/2023
+ms.date: 8/2/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
@@ -33,7 +33,7 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or Microsoft Te
 
 Admins can view, release, and delete all types of quarantined messages and files for all users.
 
-Admins in organizations with Microsoft Defender for Office 365 can also manage files that were quarantined by [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md) and Microsoft Teams messages that were [quarantined by zero-hour auto purge (ZAP)](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-in-microsoft-teams) (currently in Preview).
+Admins in organizations with Microsoft Defender for Office 365 can also manage files that were quarantined by [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md) and Microsoft Teams messages that were [quarantined by zero-hour auto purge (ZAP)](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-in-microsoft-teams).
 
 Users can manage most quarantined email messages based on the _quarantine policy_ for [supported email protection features](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features). For more information about quarantine policies, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
 
@@ -76,9 +76,9 @@ You can sort the entries by clicking on an available column header. Select :::im
 - **Time received**<sup>\*</sup>
 - **Subject**<sup>\*</sup>
 - **Sender**<sup>\*</sup>
-- **Quarantine reason**<sup>\*</sup>
-- **Release status**<sup>\*</sup>
-- **Policy type**<sup>\*</sup>
+- **Quarantine reason**<sup>\*</sup> (see the possible values in the :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** description.)
+- **Release status**<sup>\*</sup> (see the possible values in the :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** description.)
+- **Policy type**<sup>\*</sup> (see the possible values in the :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** description.)
 - **Expires**<sup>\*</sup>
 - **Recipient**
 - **Message ID**
@@ -115,6 +115,7 @@ To filter the entries, select :::image type="icon" source="../../media/m365-cc-s
   - **Malware**: Anti-malware policies in EOP or Safe Attachments policies in Defender for Office 365. The **Policy Type** value indicates which feature was used.
   - **Phishing**: The spam filter verdict was **Phishing** or anti-phishing protection quarantined the message ([spoof settings](anti-phishing-policies-about.md#spoof-settings) or [impersonation protection](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)).
   - **High confidence phishing**
+  - **Admin action - File type block**: Messages blocked as malware by the common attachments filter in anti-malware policies. For more information, see [Anti-malware policies](anti-malware-protection-about.md#anti-malware-policies).
 - **Recipient**: **All users** or **Only me**. End users can only manage quarantined messages sent to them.
 - **Release status**: Any of the following values:
   - **Needs review**
@@ -124,14 +125,16 @@ To filter the entries, select :::image type="icon" source="../../media/m365-cc-s
   - **Released**
   - **Preparing to release**
   - **Error**
-- **Policy Type**: Filter messages by policy type:
+- **Policy type**: Filter messages by policy type:
   - **Anti-malware policy**
   - **Safe Attachments policy**
   - **Anti-phishing policy**
   - **Anti-spam policy**
   - **Transport rule** (mail flow rule)
 
-When you're finished in the **Filters** flyout, select **Apply**. To clear the filters, select :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
+  The **Policy type** and **Quarantine reason** values are interrelated. For example, **Bulk** is always associated with an **Anti-spam policy**, never with an **Anti-malware policy**.
+
+When you're finished on the **Filters** flyout, select **Apply**. To clear the filters, select :::image type="icon" source="../../media/m365-cc-sc-clear-filters-icon.png" border="false"::: **Clear filters**.
 
 Use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box and a corresponding value to find specific messages. Wildcards aren't supported. You can search by the following values:
 
@@ -311,8 +314,9 @@ After you select the message, use either of the following methods to preview it:
 - **In the details flyout of the selected message**: Select :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More options** \> :::image type="icon" source="../../media/m365-cc-sc-preview-message-icon.png" border="false"::: **Preview message**.
 
 In the flyout that opens, choose one of the following tabs:
-  - **Source**: Shows the HTML version of the message body with all links disabled.
-  - **Plain text**: Shows the message body in plain text.
+
+- **Source**: Shows the HTML version of the message body with all links disabled.
+- **Plain text**: Shows the message body in plain text.
 
 #### View email message headers
 
@@ -432,6 +436,27 @@ When you select multiple quarantined messages on the **Email** tab by selecting 
 - [Download email from quarantine](#download-email-from-quarantine)
 
 :::image type="content" source="../../media/quarantine-message-bulk-actions.png" alt-text="The available actions when selecting multiple messages on the Email tab in quarantine." lightbox="../../media/quarantine-message-bulk-actions.png":::
+
+### Find who deleted a quarantined message
+
+By default, many security policy verdicts allow users to delete their quarantined messages (messages where they're a recipient). For more information, see the table at [Manage quarantined messages and files as a user](quarantine-end-user.md).
+
+Admins can search the audit log to find events for messages that were deleted from quarantine by using the following procedures:
+
+1. In the Defender portal at <https://security.microsoft.com>, go to **Audit**. Or, to go directly to the **Audit** page, use <https://security.microsoft.com/auditlogsearch>.
+
+   > [!TIP]
+   > You can also get to the **Audit** page in the Microsoft Purview compliance portal at <https://compliance.microsoft.com/auditlogsearch>
+
+2. On the **Audit** page, verify that the **New Search** tab is selected, and then configure the following settings:
+
+   - **Date and time range (UTC)**
+   - **Activities - friendly names**: Click in the box, start typing "quarantine" in the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box that appears, and then select **Deleted Quarantine message** from the results.
+   - **Users**: If know who deleted the message from quarantine, you can further filter the results by user.
+
+3. When you're finished entering the search criteria, select **Search** to generate the search.
+
+For complete instructions for audit log searches, see [Audit New Search](/purview/audit-new-search).
 
 ## Use the Microsoft 365 Defender portal to manage quarantined files in Defender for Office 365
 
@@ -569,24 +594,21 @@ Back on the **Files** tab, the file is no longer listed.
 
 #### Take action on multiple quarantined files
 
-When you select multiple quarantined files on the **Files** tab by selecting the check boxes next to the first column (up to 100 files), a **Bulk actions** drop down list appears where you can take the following actions:
+When you select multiple quarantined files on the **Files** tab by selecting the check boxes next to the first column (up to 100 files), a **Bulk actions** dropdown list appears where you can take the following actions:
 
 - [Release quarantined files from quarantine](#release-quarantined-files-from-quarantine)
 - [Delete quarantined files from quarantine](#delete-quarantined-files-from-quarantine)
 - [Download quarantined files from quarantine](#download-quarantined-files-from-quarantine)
 
-:::image type="content" source="../../media/quarantine-file-bulk-actions.png" alt-text="The Bulk actions drop down list for files in quarantine" lightbox="../../media/quarantine-file-bulk-actions.png":::
+:::image type="content" source="../../media/quarantine-file-bulk-actions.png" alt-text="The Bulk actions dropdown list for files in quarantine" lightbox="../../media/quarantine-file-bulk-actions.png":::
 
-## Use the Microsoft 365 Defender portal to manage quarantined messages in Microsoft Teams
+## Use the Microsoft 365 Defender portal to manage Microsoft Teams quarantined messages
 
-> [!NOTE]
-> This section lists new features which are currently in preview.
->
-> Quarantine in Microsoft Teams is available only in organizations with Microsoft Defender for Office 365 Plan 2 (add-on licenses or included in subscriptions like Microsoft 365 E5)
+Quarantine in Microsoft Teams is available only in organizations with Microsoft Defender for Office 365 Plan 2 (add-on licenses or included in subscriptions like Microsoft 365 E5)
 
 When a potentially malicious chat message is detected in Microsoft Teams, zero-hour auto purge (ZAP) removes the message and quarantines it. Admins can view and manage these quarantined Teams messages. The message is quarantined for 30 days. After that the Teams message is permanently removed.
 
-For the preview release, this feature is enabled by default.
+This feature is enabled by default.
 
 ### View quarantined messages in Microsoft Teams
 
@@ -598,7 +620,7 @@ On the **Teams messages** tab, you can decrease the vertical spacing in the list
 
 You can sort the entries by clicking on an available column header. Select :::image type="icon" source="../../media/m365-cc-sc-customize-icon.png" border="false"::: **Customize columns** to change the columns that are shown. The default values are marked with an asterisk (<sup>\*</sup>):
 
-- **Teams message text**: Contains the subject for the teams message.<sup>\*</sup>
+- **Teams message text**: Contains the subject for the Teams message.<sup>\*</sup>
 - **Time received**: The time the message was received by the recipient.<sup>\*</sup>
 - **Release status**: Shows whether the message is already reviewed and released or needs review. <sup>\*</sup>
 - **Participants**: The total number of users who received the message.<sup>\*</sup>
@@ -749,6 +771,12 @@ When you select multiple quarantined messages on the **Teams messages** tab by s
 - [Download Teams messages from quarantine](#download-teams-messages-from-quarantine)
 
 :::image type="content" source="../../media/admin-quarantine-teams-bulk-action.png" alt-text="Screenshot of the Bulk action options for files in quarantine." lightbox="../../media/admin-quarantine-teams-bulk-action.png":::
+
+#### Approve or deny release requests from users for quarantined Teams messages
+
+When a user requests the release of a quarantined Teams message, the **Release status** value changes to **Release requested**, and an admin can approve or deny the request.
+
+For more information, see [Approve or deny release requests from users](#approve-or-deny-release-requests-from-users-for-quarantined-email).
 
 ## Use Exchange Online PowerShell or standalone EOP PowerShell to manage quarantined messages
 

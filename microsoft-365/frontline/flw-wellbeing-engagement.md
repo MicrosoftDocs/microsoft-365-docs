@@ -2,10 +2,10 @@
 title: Engage your frontline employees and focus on wellbeing
 description: Learn how to use Viva Connections, SharePoint, Microsoft Teams, and the Praise app to increase frontline worker wellbeing and engagement.
 ms.topic: conceptual
-author: daisyfell
-ms.author: daisyfeller
+author: lana-chin
+ms.author: v-chinlana
+manager: serdars
 audience: admin
-manager: pamgreen
 f1.keywords:
 - NOCSH
 ms.service: microsoft-365-frontline
@@ -37,7 +37,7 @@ Survey's like Microsoft’s [Work Trend Index Pulse Report](https://www.microsof
 - Say leadership does not prioritize building culture
 - Believe that work stress will either stay the same or worsen in the coming year
 
-You can help your frontline team overcome these challenges and feel supported in your organization by using [Viva Connections](#connect-frontline-workers-to-your-broader-organization-with-viva-connections), [Yammer](#create-communities-with-yammer), [Praise](#boost-morale-with-praise), [SharePoint, and Microsoft Stream](#support-engagement-with-sharepoint-and-microsoft-stream).
+You can help your frontline team overcome these challenges and feel supported in your organization by using [Viva Connections](#connect-frontline-workers-to-your-broader-organization-with-viva-connections), [Viva Engage](#create-communities-with-viva-engage), [Praise](#boost-morale-with-praise), [SharePoint, and Microsoft Stream](#support-engagement-with-sharepoint-and-microsoft-stream).
 
 ## Connect frontline workers to your broader organization with Viva Connections
 
@@ -61,10 +61,10 @@ Viva Connections is comprised of three main components that can be set up and cu
 |Component |Description |Capabilities |
 |:---------|:-----------|:------------|
 |Dashboard |The Dashboard is your employee’s digital toolset and enables quick access to popular tasks. |Prioritize cards that help frontline workers accomplish popular tasks like clocking in and out, or viewing assigned tasks. Cards can be targeted to distinct roles and regions. |
-|Feed |The Feed aggregates content from Yammer, SharePoint news, and Stream to display a personalized news stream. |Content in the Feed gets automatically aggregated based on sites and Yammer communities that the user follows. Content can be prioritized to display more prominently in the Feed. Use audience targeting to display content to specific audiences. |
+|Feed |The Feed aggregates content from Viva Engage, SharePoint news, and Stream to display a personalized news stream. |Content in the Feed gets automatically aggregated based on sites and Viva Engage communities that the user follows. Content can be prioritized to display more prominently in the Feed. Use audience targeting to display content to specific audiences. |
 |Resources |The Resources surface links to popular SharePoint portals and other content. |Resources are inherited from global navigation in SharePoint. Link to popular SharePoint portals like HR benefits and training resources. Modern SharePoint portals will display in Teams to provide the best possible viewing experience. |
 
-There are several ways to use Viva Connections to communicate with your workforce. Viva Connections features a [Feed where news, content from Yammer, and videos are aggregated and displayed](/viva/connections/viva-connections-overview#viva-connections-feed) in a personalized view based on the sites and communities that the viewer follows. The [Dashboard](/viva/connections/create-dashboard) can also be used to highlight certain cards that link to important news sources.
+There are several ways to use Viva Connections to communicate with your workforce. Viva Connections features a [Feed where news, content from Viva Engage, and videos are aggregated and displayed](/viva/connections/viva-connections-overview#viva-connections-feed) in a personalized view based on the sites and communities that the viewer follows. The [Dashboard](/viva/connections/create-dashboard) can also be used to highlight certain cards that link to important news sources.
 
 As you prioritize and align the scenarios to support, consider how and where certain tools and resources should be located. [Learn more about the differences between desktop and mobile apps](/viva/connections/viva-connections-overview#viva-connections-mobile-and-desktop-experiences).
 
@@ -72,7 +72,7 @@ As you prioritize and align the scenarios to support, consider how and where cer
 
 Creating channels for your frontline workers to share feedback helps these teams feel engaged and like their voices matter. In addition, getting feedback from these teams can provide insights into how your organization can improve processes.
 
-- **On the Dashboard**: Use a [web link card](/viva/connections/create-dashboard#add-a-web-link-card) to make it easy to link to feedback channels such as [Microsoft Forms](https://support.microsoft.com/office/create-a-form-with-microsoft-forms-4ffb64cc-7d5d-402f-b82e-b1d49418fd9d) and [Yammer communities](https://support.microsoft.com/office/join-and-create-a-community-in-yammer-56aaf591-1fbc-4160-ba26-0c4723c23fd6). You can also [integrate third-party solutions into the Dashboard](https://cloudpartners.transform.microsoft.com/resources/viva-app-integration).
+- **On the Dashboard**: Use a [web link card](/viva/connections/create-dashboard#add-a-web-link-card) to make it easy to link to feedback channels such as [Microsoft Forms](https://support.microsoft.com/office/create-a-form-with-microsoft-forms-4ffb64cc-7d5d-402f-b82e-b1d49418fd9d) and [Viva Engage communities](https://support.microsoft.com/office/join-and-create-a-community-in-yammer-56aaf591-1fbc-4160-ba26-0c4723c23fd6). You can also [integrate third-party solutions into the Dashboard](https://cloudpartners.transform.microsoft.com/resources/viva-app-integration).
 
     > [!NOTE]
     > Form creation requires an F3 or Enterprise license. Workers with F1 licenses can fill out forms, but they'll need to be created by someone with an F3 or Enterprise license. [Learn more about license types](flw-licensing-options.md) or [View the detailed license comparison table](https://go.microsoft.com/fwlink/?linkid=2139145).
@@ -103,9 +103,9 @@ Empowering frontline workers with the right technology makes their jobs easier a
 
 Review Viva Connections capabilities, technical requirements, and customization options. Then, work with stakeholders (such as representatives from HR and operations and process owners) who can accurately represent the needs of your frontline workforce. Take inventory of the highest priority needs and align them to Viva Connections capabilities to build a custom experience in Teams. [Get started planning, building, and launching Viva Connections for your organization](/viva/connections/plan-viva-connections).
 
-## Create communities with Yammer
+## Create communities with Viva Engage
 
-Yammer is an internal social network that gives members of your organization opportunities to connect with each other. You can create communities where members of your organization can post messages and communicate. Having a variety of communities that span both frontline and non-frontline teams helps your on-the-ground workforce connect to each other and the broader organization. Communities can be based on:
+Viva Engage is an internal social network that gives members of your organization opportunities to connect with each other. You can create communities where members of your organization can post messages and communicate. Having a variety of communities that span both frontline and non-frontline teams helps your on-the-ground workforce connect to each other and the broader organization. Communities can be based on:
 
 - Location
 - Roles, such as cashiers or nurses
@@ -115,12 +115,12 @@ Yammer is an internal social network that gives members of your organization opp
 
 ### Host live events
 
-Members of your leadership or management team can host live events on Yammer where employees can engage and ask questions in real time over chat. Your communications and management teams can use live events to share announcements, host morale events, and more.
+Members of your leadership or management team can host live events on Viva Engage where employees can engage and ask questions in real time over chat. Your communications and management teams can use live events to share announcements, host morale events, and more.
 
 > [!NOTE]
-> Only users with an E3 or E5 license can host live events, but users with F licenses can join them. [Learn more about who can host and join live events in Yammer](/yammer/manage-yammer-groups/yammer-live-events).
+> Only users with an E3 or E5 license can host live events, but users with F licenses can join them. [Learn more about who can host and join live events in Viva Engage](/viva/engage/manage-viva-engage-groups/viva-engage-live-events).
 
-[Learn more about Yammer](https://support.microsoft.com/office/what-is-yammer-1b0f3b3e-89ee-4b66-aac5-30def12f287c).
+[Learn more about Viva Engage](https://support.microsoft.com/office/what-is-yammer-1b0f3b3e-89ee-4b66-aac5-30def12f287c).
 
 ## Boost morale with Praise
 

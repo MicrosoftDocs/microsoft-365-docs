@@ -120,3 +120,4 @@ To enable communication between your devices and Defender for Endpoint, you migh
 **Congratulations**! You've completed the **Prepare** phase of [switching to Defender for Endpoint](switch-to-mde-overview.md#the-migration-process)!
 
 - [Proceed to set up Defender for Endpoint](switch-to-mde-phase-2.md).
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

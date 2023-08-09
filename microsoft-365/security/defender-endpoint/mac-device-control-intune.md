@@ -38,13 +38,13 @@ Microsoft Defender for Endpoint Device Control feature enables you to audit, all
 
 ## Licensing requirements
 
-Before you get started with Removable Storage Access Control, you must confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=3). To access and use Removable Storage Access Control, you must have Microsoft 365 E3.
+Before you get started with Removable Storage Access Control, you must confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=3). To access and use Removable Storage Access Control, you must have Microsoft 365 E3.
 
 ## Deploy policy by using Intune
 
 ### Step 1: Build mobileconfig file
 
-Now, you have ‘groups’ and ‘rules’ and ‘settings’, replace the mobileconfig file with those values and put it under the Device Control node, here is the demo file: [mdatp-devicecontrol/demo.mobileconfig at main · microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/macOS/mobileconfig/demo.mobileconfig). Make sure validate your policy with the JSON schema to make sure your policy format is correct: [mdatp-devicecontrol/device_control_policy_schema.json at main · microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/macOS/policy/device_control_policy_schema.json).
+Now, you have 'groups' and 'rules' and 'settings', replace the mobileconfig file with those values and put it under the Device Control node, here is the demo file: [mdatp-devicecontrol/demo.mobileconfig at main - microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/macOS/mobileconfig/demo.mobileconfig). Make sure validate your policy with the JSON schema to make sure your policy format is correct: [mdatp-devicecontrol/device_control_policy_schema.json at main - microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/macOS/policy/device_control_policy_schema.json).
 
 > [!NOTE]
 > See [Device Control for macOS](mac-device-control-overview.md) for information about settings, rules and groups.
@@ -53,8 +53,8 @@ Now, you have ‘groups’ and ‘rules’ and ‘settings’, replace the mobil
 
 You can deploy the mobileconfig file through [**https://endpoint.microsoft.com/**](https://endpoint.microsoft.com/) > **Devices** > **macOS**:
 
-- select ‘Create profile’
-- select ‘Templates’ and ‘Custom’
+- select 'Create profile'
+- select 'Templates' and 'Custom'
 
 :::image type="content" source="images/macos-device-control-intune-mobileconfig.png" alt-text="Shows the Microsoft Endpoint Manager macOS Device Control / Configuration settings page." lightbox="images/macos-device-control-intune-mobileconfig.png":::
 
@@ -63,3 +63,4 @@ You can deploy the mobileconfig file through [**https://endpoint.microsoft.com/*
 - [Device Control for macOS](mac-device-control-overview.md)
 - [Deploy and manage Device Control using jamf](mac-device-control-jamf.md)
 - [macOS Device Control frequently asked questions (FAQ)](mac-device-control-faq.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

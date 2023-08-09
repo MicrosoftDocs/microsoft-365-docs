@@ -36,6 +36,8 @@ Admin can enable the feature with the help of cmdlet `Set-OrganizationConfig -Is
 
    Default Value: false
 
+   Regardless of whether the `IsGroupFoldersAndRulesEnabled` parameter is turned off, the **Inbox** and **Deleted items** folders will still be shown, if there are any deleted items in the group.
+
 > [!NOTE]
 > Once the `IsGroupFoldersAndRulesEnabled` parameter is turned off after creating some folder and rules,
   > 

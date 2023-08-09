@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: kywirpel
-ms.date: 10/24/2022
+ms.date: 07/03/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -49,6 +49,10 @@ Additionally, each partner tenant user must meet the following requirements:
 6. From the **Reinstate task** dialog box, select **Reinstate**.
 
 You can also select **More actions** (ellipsis icon) option directly from the task list to reinstate the task. Once a task is reinstated, status detection and reporting will update accordingly.
+
+## Next steps
+
+If you want to investigate why a task was dismissed, you can audit the exception using Lighthouse insights. For more information, see [Manage tenants using insights](m365-lighthouse-manage-tenants-using-deployment-insights.md).
 
 ## Related content
 

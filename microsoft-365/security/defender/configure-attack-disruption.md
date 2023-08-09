@@ -72,3 +72,4 @@ Excluding user accounts is not recommended, and accounts added to this list won'
 
 - [Automatic attack disruption in Microsoft 365 Defender](automatic-attack-disruption.md)
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

@@ -89,7 +89,7 @@ Filter all successful attempts to sign in from the IP address around and shortly
 
 - Alerts
 
-  **Check whether the user received other alerts preceding the password spray activity.** Having these alerts indicate that the user account might be compromised. Examples include impossible travel alert, activity from infrequent country, and suspicious email deletion activity, among others.
+  **Check whether the user received other alerts preceding the password spray activity.** Having these alerts indicate that the user account might be compromised. Examples include impossible travel alert, activity from infrequent country/region, and suspicious email deletion activity, among others.
 
 - Incident
 
@@ -201,3 +201,4 @@ AlertInfo
 - [Overview of alert classification](alert-grading-playbooks.md)
 - [Classifying password spray attacks](alert-grading-password-spray-attack.md)
 - [Investigate alerts](investigate-alerts.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

@@ -22,7 +22,7 @@ ms.custom:
 description: Admins can learn how to elevate the security settings and use reports, alerts, and investigations for priority accounts in their Microsoft 365 organizations.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 6/19/2023
+ms.date: 7/31/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
@@ -99,7 +99,7 @@ After you secure and tag your priority users, you can use the available reports,
 |Incidents|The user tags for all correlated alerts are visible on the **Incidents** page in the Microsoft 365 Defender portal. For more information, see [Manage incidents and alerts](mdo-sec-ops-manage-incidents-and-alerts.md).|
 |Custom alert policies|You can create alert policies based on user tags in the Microsoft 365 Defender portal. For more information, see [Alert policies in Microsoft 365](../../compliance/alert-policies.md).|
 |Explorer <p> Real-time detections|In **Explorer** (Defender for Office 365 Plan 2) or **Real-time detections** (Defender for Office 365 Plan 1), user tags are visible in the Email grid view and the Email details flyout. User tags are also available as a filterable property. For more information, see  [Tags in Explorer](threat-explorer-about.md#tags-in-threat-explorer).|
-|Email entity page|You can filter emails based on applied user tags in Microsoft Defender for Office 365 E5, and Defender for Office P1 and P2. For more information, see [Email entity page](mdo-email-entity-page.md).|
+|Email entity page|You can filter email based on applied user tags in Microsoft 365 E5 and in Defender for Office 365 Plan 1 and Plan 2. For more information, see [Email entity page](mdo-email-entity-page.md).|
 |Campaign Views|User tags are one of many filterable properties in Campaign Views in Microsoft Defender for Office 365 Plan 2. For more information, see [Campaign Views](campaigns.md).|
 |Threat protection status report|In virtually all of the views and detail tables in the **Threat protection status report**, you can filter the results by **priority accounts**. For more information, see [Threat protection status report](reports-email-security.md#threat-protection-status-report).|
 |Top senders and recipients report|You can add this user tag to the top 20 message senders in your organization. For more information, see [Top senders and recipients report](reports-email-security.md#top-senders-and-recipients-report).|
@@ -111,7 +111,7 @@ After you secure and tag your priority users, you can use the available reports,
 
 ## Train users
 
-Training users with priority accounts can help save those users and your security operations team much time and frustration. Savvy users are less likely to open attachments or click links in questionable email messages, and they are more likely to avoid suspicious websites.
+Training users with priority accounts can help save those users and your security operations team much time and frustration. Savvy users are less likely to open attachments or click links in questionable email messages, and they're more likely to avoid suspicious websites.
 
 The Harvard Kennedy School [Cybersecurity Campaign Handbook](https://www.belfercenter.org/CyberPlaybook) provides excellent guidance for establishing a strong culture of security awareness within your organization, including training users to identify phishing attacks.
 

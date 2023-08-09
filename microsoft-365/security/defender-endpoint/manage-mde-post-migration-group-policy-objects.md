@@ -62,3 +62,4 @@ If you haven't already done so, configure your Microsoft 365 Defender portal to 
 ## Next steps
 
 - [Get an overview of Defender Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

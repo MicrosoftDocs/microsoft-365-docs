@@ -89,7 +89,7 @@ The default alert policy named **Suspicious connector activity** automatically n
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Policies & rules** \> **Alert policy**. Or, to go directly to the **Alert policy** page, use <https://security.microsoft.com/alertpoliciesv2>.
 
-2. On the **Alert policy** page, find the alert named **Suspicious connector activity**. You can sort the alerts by name, or use the ::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box to find the alert.
+2. On the **Alert policy** page, find the alert named **Suspicious connector activity**. You can sort the alerts by name, or use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box to find the alert.
 
    Select the **Suspicious connector activity** alert by clicking anywhere in the row other than the check box next to the name.
 

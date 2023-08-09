@@ -76,7 +76,7 @@ A network providers column is included in the table where network providers are 
 
 ## Network Provider Index Chart for the location
 
-The Network Provider Index Chart (NPI Chart) shows in an office location summary and lists large network providers that are being used by Office 365 customers in the same country and state as your office. We include availability and performance information attributed to these providers. This chart also shows a target baseline that shows what good performance observed in the same country and state looks like.
+The Network Provider Index Chart (NPI Chart) shows in an office location summary and lists large network providers that are being used by Office 365 customers in the same country/region and state as your office. We include availability and performance information attributed to these providers. This chart also shows a target baseline that shows what good performance observed in the same country/region and state looks like.
 
 :::image type="content" source="../media/m365-mac-perf/m365-mac-perf-nppux-NPIChart.png" alt-text="Example of a network provider index chart that shows availability and performance for each network provider.":::
 

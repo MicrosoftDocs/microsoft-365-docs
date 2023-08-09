@@ -103,13 +103,13 @@ You can create an alert policy that notifies admins when Safe Attachments for Sh
 3. On the **Name your alert, categorize it, and choose a severity** page, configure the following settings:
    - **Name**: Type a unique and descriptive name. For example, **Malicious Files in Libraries**.
    - **Description**: Type an optional description. For example, **Notifies admins when malicious files are detected in SharePoint Online, OneDrive, or Microsoft Teams**.
-   - **Severity**: Select **Low**, **Medium**, or **High** from the drop down list.
-   - **Category**: Select **Threat management** from the drop down list.
+   - **Severity**: Select **Low**, **Medium**, or **High** from the dropdown list.
+   - **Category**: Select **Threat management** from the dropdown list.
 
    When you're finished on the **Name your alert, categorize it, and choose a severity** page, select **Next**.
 
 4. On the **Choose an activity, conditions and when to trigger the alert** page, configure the following settings:
-   - **What do you want to alert on?** section \> **Activity is** \> **Common user activities** section \> Select **Detected malware in file** from the drop down list.
+   - **What do you want to alert on?** section \> **Activity is** \> **Common user activities** section \> Select **Detected malware in file** from the dropdown list.
    - **How do you want the alert to be triggered?** section: Select **Every time an activity matches the rule**.
 
    When you're finished on the **Choose an activity, conditions and when to trigger the alert** page, select **Next**.

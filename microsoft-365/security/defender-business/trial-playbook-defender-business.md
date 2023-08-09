@@ -70,7 +70,7 @@ Defender for Business was designed to save small and medium-sized businesses tim
 > [!TIP]
 > **Using the setup wizard is optional.** If you choose not to use the wizard, or if the wizard is closed before your setup process is complete, you can complete the setup and configuration process on your own. See [Step 4: Set up and configure Defender for Business](#step-4-set-up-and-configure-defender-for-business).
 
-1. **[Assign user permissions](mdb-roles-permissions.md#view-or-edit-role-assignments)**. Grant your security team access to the Microsoft 365 Defender portal.
+1. **[Assign user permissions](mdb-roles-permissions.md#view-and-edit-role-assignments)**. Grant your security team access to the Microsoft 365 Defender portal.
 
 2. **[Set up email notifications](mdb-email-notifications.md#view-and-edit-email-notifications)** for your security team.
 
@@ -96,7 +96,7 @@ If you used the setup wizard but you need to onboard more devices, such as non-W
 2. **[Assign roles and permissions](mdb-roles-permissions.md)** in the Microsoft 365 Defender portal.
 
    - [Learn about roles in Defender for Business](mdb-roles-permissions.md#roles-in-defender-for-business). 
-   - [View or edit role assignments for your security team](mdb-roles-permissions.md#view-or-edit-role-assignments).
+   - [View or edit role assignments for your security team](mdb-roles-permissions.md#view-and-edit-role-assignments).
 
 3. **[Set up email notifications](mdb-email-notifications.md)** for your security team.
 

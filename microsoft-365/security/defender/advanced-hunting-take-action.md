@@ -107,3 +107,4 @@ Each action is individually recorded in the [action center](m365d-action-center.
 - [Work with query results](advanced-hunting-query-results.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Action center overview](m365d-action-center.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

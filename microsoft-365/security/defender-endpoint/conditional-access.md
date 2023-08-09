@@ -81,3 +81,4 @@ The following example sequence of events explains Conditional Access in action:
 ## Related topic
 
 - [Configure Conditional Access in Microsoft Defender for Endpoint](configure-conditional-access.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

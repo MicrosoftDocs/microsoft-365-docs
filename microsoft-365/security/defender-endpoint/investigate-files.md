@@ -6,8 +6,8 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: diannegali
+author: diannegali
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -15,12 +15,12 @@ ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
-ms.date: 11/10/2022
+ms.date: 07/10/2023
 ms.subservice: mde
 search.appverid: met150
 ---
 
-# Investigate a file associated with a Microsoft Defender for Endpoint alert
+# Investigate a file
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -40,66 +40,64 @@ Once on the detailed profile page, you can switch between the new and old page l
 
 You can get information from the following sections in the file view:
 
-- File details, Malware detection, File prevalence
-- File PE metadata (if it exists)
-- Alerts
+- File details and PE metadata (if it exists)
+- Incidents and alerts
 - Observed in organization
-- Deep analysis
 - File names
-- Action center
+- File content and capabilities (if a file has been analyzed by Microsoft)
 
 You can also take action on a file from this page.
 
 ## File actions
 
-Along the top of the profile page, above the file information cards. Actions you can perform here include:
+The file actions are above the file information cards at the top of the profile page. Actions you can perform here include:
 
 - Stop and quarantine
-- Add/edit indicator
+- Manage indicator
 - Download file
-- Consult a threat expert
+- Ask Defender Experts
 - Manual actions
+- Go hunt
+- Deep analysis
 
-For more information on these actions, see [Take response action on a file](respond-file-alerts.md).
+See [take response action on a file](respond-file-alerts.md) for more information on these actions.
 
-## File details, Malware detection, and File prevalence
+## File page overview
 
-The file details, incident, malware detection, and file prevalence cards display various attributes about the file.
-
-You'll see details such as the file's MD5, the Virus Total detection ratio, and Microsoft Defender Antivirus detection if available, and the file's prevalence.
-
-The file prevalence card shows where the file was seen in devices in the organization and worldwide. You can easily pivot to the first and last devices where the file was seen on, and continue the investigation in the device timeline. 
+The file page offers an overview of the file's details and attributes, the incidents and alerts where the file is seen, file names used, the number of devices where the file was seen in the last 30 days, including the dates when the file was first and last seen in the organization, Virus Total detection ratio, Microsoft Defender Antivirus detection, the number of cloud apps connected to the file, and the file's prevalence in devices outside of the organization.
 
 > [!NOTE]
-> Different users may see dissimilar values in the *devices in organization* section of the file prevalence card. This is because the card displays information based on the RBAC scope that a user has. Meaning, if a user has been granted visibility on a specific set of devices, they will only see the file organizational prevalence on those devices.
+> Different users may see dissimilar values in the *devices in organization* section of the file prevalence card. This is because the card displays information based on the role-based access control (RBAC) scope that a user has. This means if a user has been granted visibility on a specific set of devices, they will only see the file organizational prevalence on those devices.
 
-
-![Screenshot showing file prevalence.](https://user-images.githubusercontent.com/96785904/200525998-e11576f7-e495-4d16-98fb-940d8bd9a0d6.png)
-
+:::image type="content" source="../../media/investigate-files/investigatefiles-fileoverview.png" alt-text="Screenshot of the File page overview" lightbox="../../media/investigate-files/investigatefiles-fileoverview.png":::
 
 ## Incidents and alerts
 
-The **Incidents and alerts** tab provides a list of incidents that are associated with the file, as well as the alerts the file is linked to. This list covers much of the same information as the incidents queue. You can choose what kind of information is shown by selecting **Customize columns** from the toolbar above the column headers.
+The **Incidents and alerts** tab provides a list of incidents that are associated with the file and the alerts the file is linked to. This list covers much of the same information as the incidents queue. You can choose what kind of information is shown by selecting **Customize columns**. You can also filter the list by selecting **Filter**.
 
 ![Screenshot showing incidents and alerts.](https://user-images.githubusercontent.com/96785904/200527005-1fd139dc-7483-4e4c-83ad-855cd198f153.png)
 
 
 ## Observed in organization
 
-The **Observed in organization** tab allows you to specify a date range to see which devices have been observed with the file.
+The **Observed in organization** tab shows you the devices and cloud apps observed with the file. File history related to devices can be shown up to the last six months, whereas cloud apps-related history is up to the last 30 days
+
+### Devices
+
+This section shows all the devices where the file is detected. The section includes a trending report identifying the number of devices where the file has been observed in the past 30 days. Below the trendline, you can find detailed information on the file on each device where it is seen, including file execution status, first and last seen events on each device, initiating process and time, and file names associated with a device.
+
+You can click on a device on the list to explore the full six months file history on each device and pivot to the first seen event in the device timeline.
+
+:::image type="content" source="../../media/investigate-files/investigatefiles-devices.png" alt-text="Screenshot of the devices page within a file" lightbox="../../media/investigate-files/investigatefiles-devices.png":::
+
+### Cloud apps
 
 > [!NOTE]
-> This tab will show a maximum number of 100 devices. To see _all_ devices with the file, export the tab to a CSV file, by selecting **Export** from the action menu above the tab's column headers.
+> The Defender for Cloud Apps workload must be enabled to see file information related to cloud apps.
 
-:::image type="content" source="images/atp-observed-machines.png" alt-text="The most recent observed devices with the file" lightbox="images/atp-observed-machines.png":::
+This section shows all the cloud applications where the file is observed. It also includes information like the file's names, the users associated with the app, the number of matches to a specific cloud app policy, associated apps' names, when the file was last modified, and the file's path.
 
-Use the slider or the range selector to quickly specify a time period that you want to check for events involving the file. You can get assisted by the alerts indication over the range. You can specify a time window as small as a single day. This will allow you to see only files that communicated with that IP Address at that time, drastically reducing unnecessary scrolling and searching.
-
-## Deep analysis
-
-The **Deep analysis** tab allows you to [submit the file for deep analysis](respond-file-alerts.md#deep-analysis), to uncover more details about the file's behavior, as well as the effect it is having within your organizations. After you submit the file, the deep analysis report will appear in this tab once results are available. If deep analysis did not find anything, the report will be empty and the results space will remain blank.
-
-:::image type="content" source="images/submit-file.png" alt-text="The Deep analysis tab" lightbox="images/submit-file.png":::
+:::image type="content" source="../../media/investigate-files/investigatefiles-cloudapps.png" alt-text="Screenshot of the cloud apps page within a file" lightbox="../../media/investigate-files/investigatefiles-cloudapps.png":::
 
 ## File names
 
@@ -107,11 +105,18 @@ The **File names** tab lists all names the file has been observed to use, within
 
 :::image type="content" source="images/atp-file-names.png" alt-text="The File names tab" lightbox="images/atp-file-names.png":::
 
-## Action center
+## File content and capabilities
 
-The **Action center** displays the action center filtered on a specific file, so you can see pending actions and the history of actions taken on the file.
+> [!NOTE]
+> The file content and capabilities views depend on whether Microsoft analyzed the file.
 
-![Screenshot showing the action center](https://user-images.githubusercontent.com/96785904/200527287-0c09dd24-6192-4a7d-990a-824d35b97460.png)
+The File content tab lists information about portable executable (PE) files, including process writes, process creation, network activities, file writes, file deletes, registry reads, registry writes, strings, imports, and exports. This tab also lists all the file's capabilities.
+
+:::image type="content" source="../../media/investigate-files/investigatefiles-filecontent.png" alt-text="Screenshot of a file's content" lightbox="../../media/investigate-files/investigatefiles-filecontent.png":::
+
+The file capabilities view lists a file's activities as mapped to the MITRE ATT&CK™ techniques.
+
+:::image type="content" source="../../media/investigate-files/investigatefiles-filecapabilities.png" alt-text="Screenshot of a file's capabilities" lightbox="../../media/investigate-files/investigatefiles-filecapabilities.png":::
 
 ## Related topics
 
@@ -123,3 +128,4 @@ The **Action center** displays the action center filtered on a specific file, so
 - [Investigate a domain associated with a Microsoft Defender for Endpoint alert](investigate-domain.md)
 - [Investigate a user account in Microsoft Defender for Endpoint](investigate-user.md)
 - [Take response actions on a file](respond-file-alerts.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

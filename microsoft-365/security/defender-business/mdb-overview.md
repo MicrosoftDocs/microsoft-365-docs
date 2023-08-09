@@ -10,8 +10,8 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 03/23/2023
-ms.reviewer: yaelbenari, efratka, jomaun
+ms.date: 07/19/2023
+ms.reviewer: yaelbenari, efratka, nehabha
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
@@ -69,7 +69,7 @@ With Defender for Business, you can help protect the devices and data your busin
    - [Try scenarios, tutorials, and simulations](mdb-tutorials.md).
 
 - **Provide guidance on managing devices and security policies**.
-   - [Learn about new mobile threat defense capabilities (preview)](mdb-mtd.md).
+   - [Learn about new mobile threat defense capabilities](mdb-mtd.md).
    - [Monitor or manage devices](mdb-manage-devices.md).
    - [View or edit security policies](mdb-view-edit-policies.md).
 

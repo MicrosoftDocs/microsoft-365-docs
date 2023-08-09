@@ -57,7 +57,7 @@ When you purchase a plan that includes Microsoft Intune, there are [Microsoft ap
 | **Microsoft 365 apps** | Includes online apps, such as Microsoft Word, Excel, PowerPoint, OneNote, Outlook, and more |
 | **Email, calendar, and scheduling** | Includes Microsoft Exchange and Outlook desktop client |
 | **Meetings, calling, and chat** | Includes Microsoft Teams |
-| **Social, intranet, and storage** | Includes SharePoint, Yammer Enterprise, and Viva Connections |
+| **Social, intranet, and storage** | Includes SharePoint, Viva Engage, and Viva Connections |
 | **Content services** | Includes Microsoft Graph API, Microsoft Search, Microsoft Stream, and more |
 | **Project and task management** | Includes Microsoft Planning and Microsoft To-Do |
 | **Analytics** | Includes Productivity Score, Secure Score, Compliance Management, and Power BI Pro |

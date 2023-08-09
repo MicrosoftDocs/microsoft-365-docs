@@ -281,3 +281,4 @@ To learn about all supported parsing functions, [read about Kusto string functio
 - [Handle advanced hunting errors](advanced-hunting-errors.md)
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the query language](advanced-hunting-query-language.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

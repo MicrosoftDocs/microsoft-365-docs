@@ -1,8 +1,8 @@
 ---
 title: Use the Virtual Appointments app in Microsoft Teams
-author: daisyfell
-ms.author: daisyfeller
-manager: samanro
+author: lana-chin
+ms.author: v-chinlana
+manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-frontline 

@@ -33,7 +33,7 @@ To see the available end-user notifications, open the Microsoft 365 Defender por
 
 **End user notifications** in the **Content library** tab has two tabs:
 
-- **Global notifications**: Contains the built-in, non-modifiable notifications.
+- **Global notifications**: Contains the built-in, nonmodifiable notifications.
 - **Tenant notifications**: Contains the custom notifications that you've created.
 
 The following information is shown for each notification<sup>\*</sup>:
@@ -70,7 +70,7 @@ On the **Tenant notifications** tab only, select :::image type="icon" source="..
 
 When you select a notification from the list, a details flyout appears with the following information:
 
-- **Preview** tab: View the notification message as users will see it. To view the message in different languages, use the **Select notification language** drop down list.
+- **Preview** tab: View the notification message as users will see it. To view the message in different languages, use the **Select notification language** dropdown list.
 - **Details** tab: View details about the notification:
   - **Notification description**
   - **Source**: For built-in notifications, the value is **Global**. For custom notifications, the value is **Tenant**.
@@ -110,7 +110,7 @@ On the details flyout from the **Tenant notifications** tab only, select **Edit 
    - **From display name**: Enter the display name of the sender.
    - **From email address**: Enter the email address of the sender.
    - **Select the language of the email**: Select a language from the list.
-   - **Mark this as the default language**: Because this is the first and only language for the notification, this language value is selected as the default and you can't change it.
+   - **Mark this as the default language**: Because this is the first and only language for the notification, this language value is selected as the default, and you can't change it.
    - **Subject**: The default that's used depends on the notification type that you selected in the previous step, but you can change it:
      - Positive reinforcement: **Thank you for reporting a phish!**
      - Simulation: **Thank you for participating in a phishing campaign!**
@@ -151,11 +151,11 @@ On the details flyout from the **Tenant notifications** tab only, select **Edit 
 
    When you're finished in new end-user notification wizard, select **Save**.
 
-   Back on the **Define content** page, the notification you created is listed on the page. In the **Action** colum, you can select :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Edit** or :::image type="icon" source="../../media/m365-cc-sc-eye-icon.png" border="false"::: **Preview** to edit or view the notification.
+   Back on the **Define content** page, the notification is listed on the page. In the **Action** column, you can select :::image type="icon" source="../../media/m365-cc-sc-edit-icon.png" border="false"::: **Edit** or :::image type="icon" source="../../media/m365-cc-sc-eye-icon.png" border="false"::: **Preview** to edit or view the notification.
 
    Select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Add translation** to create up to 11 more translations of the notification in other languages (12 translations total).
 
-   Other than the flyout title changing to **Add translation**, the same options are available as the the **Add content in default language** flyout in the first notification you created. Now the **Mark this as default language** check box is available to select. Only one translation of the notification can be the default language.
+   Other than the flyout title changing to **Add translation**, the same options are available as the **Add content in default language** flyout in the first notification you created. Now the **Mark this as default language** check box is available to select. Only one translation of the notification can be the default language.
 
    When two or more translations of the notification are listed on the **Define content** page, the :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png" border="false"::: **Delete** icon is available in the **Actions** column to delete any notification translations that aren't designated as the default language.
 
@@ -210,7 +210,7 @@ To remove an existing custom notification from the **Tenant notifications** tab,
 - Select the notification from the list by clicking the check box next to the name, and then select the :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png" border="false"::: **Delete** action that appears.
 - Select **⋮** (**Actions**) next to the **Notifications** value, and then select :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png" border="false"::: **Delete**.
 
-In the confirmation dialog tht opens, select **Delete**.
+In the confirmation dialog that opens, select **Delete**.
 
 ## Related links
 

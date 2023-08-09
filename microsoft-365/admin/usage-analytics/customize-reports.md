@@ -57,9 +57,9 @@ This example shows how to modify the **Activation** tab within the **Activation/
 
 ### Create a new visual
 
-The following example shows how to create a new visual to track new Yammer users on monthly basis.
+The following example shows how to create a new visual to track new Viva Engage users on monthly basis.
 
-1. Go to the **Product Usage** report using the left nav and select the **Yammer** tab.
+1. Go to the **Product Usage** report using the left nav and select the **Viva Engage** tab.
 
 2. Switch to edit mode by choosing ![The more page button in Power BI.](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) and **Edit**.
 
@@ -83,13 +83,13 @@ The following example shows how to create a new visual to track new Yammer users
 
 10. Drag **Product** to the **Filters** area, directly below the **Visual level filters** heading.
 
-11. In the **Filter Type** area that appears, select the **Yammer** check box.
+11. In the **Filter Type** area that appears, select the **Viva Engage** check box.
 
-    ![Select Yammer checkbox.](../../media/82e99730-0de9-42da-928a-76aab0c3e609.png)
+    ![Select Viva Engage checkbox.](../../media/82e99730-0de9-42da-928a-76aab0c3e609.png)
 
 12. Just below the list of visualizations, choose the **Format** icon ![Format icon in Power BI Visualizaions.](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png).
 
-13. Expand Title and change the **Title Text** value to **First-Time Yammer Users by Month**.
+13. Expand Title and change the **Title Text** value to **First-Time Viva Engage Users by Month**.
 
 14. Change the **Text Size** value to **12**.
 

@@ -77,7 +77,7 @@ Threat Explorer is a powerful report that can serve multiple purposes, such as f
 
    On the **Explorer** page, the **Additional actions** column shows admins the outcome of processing an email. The **Additional actions** column can be accessed in the same place as **Delivery action** and **Delivery location**. Special actions might be updated at the end of Threat Explorer's email timeline, which is a new feature aimed at making the hunting experience better for admins.
 
-2. In the **View** menu, choose **Email** \> **All email** from the drop down list.
+2. In the **View** menu, choose **Email** \> **All email** from the dropdown list.
 
     :::image type="content" source="../../media/tp-InvestigateMalEmail-viewmenu.png" alt-text="The Malware drop-down list" lightbox="../../media/tp-InvestigateMalEmail-viewmenu.png":::
 

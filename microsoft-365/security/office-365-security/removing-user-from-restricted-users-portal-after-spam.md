@@ -101,7 +101,7 @@ The default alert policy named **User restricted from sending email** automatica
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Policies & rules** \> **Alert policy**. Or, to go directly to the **Alert policy** page, use <https://security.microsoft.com/alertpoliciesv2>.
 
-2. On the **Alert policy** page, find the alert named **User restricted from sending email**. You can sort the alerts by name, or use the ::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box to find the alert.
+2. On the **Alert policy** page, find the alert named **User restricted from sending email**. You can sort the alerts by name, or use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box to find the alert.
 
    Select the **User restricted from sending email** alert by clicking anywhere in the row other than the check box next to the name.
 
