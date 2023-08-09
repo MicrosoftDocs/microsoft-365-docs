@@ -73,7 +73,7 @@ package**. Then click the card '**Create package from App Gallery**'.
     > compare across Windows builds.
     >
     > [!div class="mx-imgBorder"]
-    > ![Screenshot of configure test for new package](Media/create_package_from_gallery_6.png)
+    > [![Screenshot of the button ](Media/create_package_from_gallery_6.png)](Media/create_package_from_gallery_6.png#lightbox)
 
 2.  Once all required info is filled out, you can proceed to step 3 by
     clicking the Next button at the bottom.
