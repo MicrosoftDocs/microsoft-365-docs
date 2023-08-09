@@ -33,7 +33,7 @@ If a taxonomy column already exists in your library, use these steps to enable t
 
 2. On the **Edit column** panel, in the **Automatically tag documents with terms** section, toggle the switch to **Yes**.
 
-   ![Screenshot showing the Column settings panel for the taxonomy column.](../media/content-understanding/taxonomy-tagging-edit-column-toggle-highlighted.png)  
+   ![Screenshot showing the Column settings panel for the taxonomy column.](../media/content-understanding/taxonomy-tagging-edit-column-toggle.png)  
  
 3. Once enabled, any new documents uploaded to the library or existing documents edited in the library are processed to tag the configured term set.
 
