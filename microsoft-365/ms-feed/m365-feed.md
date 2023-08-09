@@ -58,7 +58,7 @@ In addition, Microsoft Feed respects the settings in the "Visibility section" in
 
 ## Disabling the Feed
 
-As a tenant admin, if you want to disable the Feed, you can do so by following the steps in the sections below which disable the Feed in the respective endpoints: 
+As a tenant admin, if you want to disable the Feed, you can do so by following the steps in the sections below which disable the Feed in the respective endpoints:
 
 * Disabling the Feed in Microsoft 365 (previously Office.com)
 * Disabling the Feed in Microsoft Edge
@@ -71,8 +71,8 @@ In Microsoft 365 (previously Office.com), as a tenant admin, if you want to disa
 
 1.    [Sign in to Microsoft 365](https://admin.microsoft.com) with your Microsoft 365 admin account.
 2.    Select **Support** > **New service request.**
-3.    If you're in the admin center, select **Support** > **New service request.**
-4.    To re-enable the feature, you can create a **New service request.**
+
+To re-enable the feature, you can create **New service request**.
 
 ## Disabling the Feed in Microsoft Edge
 
@@ -116,7 +116,7 @@ When a user creates and stores a document in a folder in OneDrive, and this fold
 
 2. **How does following work?**
 
-Following is synchronized between Microsoft Feed and Viva Engage. Following features in Microsoft Feed are only available to users who have a Viva Engage license. If users don’t have a Viva Engage license, the **Manage network** page is not available, and the users can’t follow others from Microsoft Feed.
+Following is synchronized between Microsoft Feed and Viva Engage. Following features in Microsoft Feed are only available to users who have a Viva Engage license. If users don’t have a Viva Engage license, the **Manage network** page is not available, and the users can’t follow others from Microsoft Feed. To learn more, see the section *Influence what and who you see by following people* in [Discover and learn with Microsoft Feed](https://support.microsoft.com/en-us/office/discover-and-learn-with-microsoft-feed-9c190800-e348-46b7-9d46-41c628b80ebb)
 
 3. **What's the connection between** [Office Delve](https://delve.office.com) **and Microsoft Feed?**
 
@@ -124,4 +124,4 @@ Office Delve and Microsoft Feed are both based on Microsoft Graph. However, turn
 
 4. **Why can I not see the Feed Tab in Outlook Mobile?**
 
-If your organization’s administrator has turned off the Feed for your organization, you will not see the Feed tab, but you will see the Sections View instead.
+If your organization’s administrator has turned off the Feed for your organization, you should still see the Feed tab, but with the Sections View and not the Feed View.
