@@ -57,8 +57,8 @@ Although Bookings is a feature of Microsoft 365, not all of your staff members a
 
     :::image type="content" source="media/bookings-busy-tentative-view-2.png" alt-text="A view of a Bookings Page.":::
 
-> [!IMPORTANT]
-> We highly recommend leaving this setting on (it is turned on by default) to avoid double-bookings and to optimize the availability of your staff members.
+    > [!IMPORTANT]
+    > We highly recommend leaving this setting on (it is turned on by default) to avoid double-bookings and to optimize the availability of your staff members.
 
 8. Select **Use business hours** to set all bookable times for your staff members to be only within the business hours that you set in the **Business hours** section on the Business Information page.
 
