@@ -94,15 +94,26 @@ The Tenant overview section provides information about the customer tenant from 
 
 | Tenant information    | Description|
 |-----------------------|------------------|
-| Roles    | The roles assigned to you in the tenant. Roles determine which tasks you can complete for customers, and what data you can view.|
+| Tenant domain    |The organization's default domain.|
+| Tenant ID |The organization's tenant ID.|
+| Lighthouse management | The management status of Lighthouse management. |
+| Delegated access | The type of delegated access to customer tenant. |
+| Permissions |	The roles assigned to you in the tenant. Roles determine which tasks you can complete for customers, and what data you can view. |
+| Total users |The number of users assigned in the tenant. You may select this number to open the Users page for that tenant.|
+| Total devices |The number of devices enrolled in the tenant. You may select this number to open the Devices page for that tenant.|
+
+#### Customer overview section
+
+The Tenant overview section provides information about the customer tenant from its Microsoft 365 account.<br><br>
+
+| Customer information    | Description|
+|-----------------------|------------------|
 | Headquarters    | Where the tenant is located.|
 | Industry    |The organization's industry.|
-| Customer domain    |The organization's domain.|
+| Customer domain    |The organization's default domain.|
 | Website    |The organization's website. You may edit this field if no data is provided.|
-| Total users    |The number of users assigned in the tenant. You may select this number to open the Users page for that tenant.|
-| Total devices|The number of devices enrolled in the tenant. You may select this number to open the Devices page for that tenant.|
 
-#### Contacts section
+#### Customer contacts section
 
 The Contacts section provides information for key contacts within the tenants you manage, such as:
 
