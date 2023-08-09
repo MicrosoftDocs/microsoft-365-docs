@@ -491,3 +491,4 @@ See [Uninstall](linux-resources.md#uninstall-defender-for-endpoint-on-linux) for
 ## See also
 
 - [Investigate agent health issues](health-status.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

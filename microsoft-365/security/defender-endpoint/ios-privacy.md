@@ -84,3 +84,4 @@ Feedback Data is collected through in-app feedback provided by the user.
 - Feedback type (smile, frown, idea) and any feedback comments submitted by the user.
 
 For more information, see [More on Privacy](https://aka.ms/mdatpiosprivacystatement).
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

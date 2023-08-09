@@ -243,3 +243,4 @@ Change command-line settings on your device to allow copying and change text siz
 
 - [Device inventory](machines-view-overview.md)
 - [Windows authenticated scan](../defender-vulnerability-management/windows-authenticated-scan.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

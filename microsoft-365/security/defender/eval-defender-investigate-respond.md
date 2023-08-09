@@ -47,3 +47,4 @@ The following table describes the steps in the illustration.
 ## Navigation you may need
 
 [Create the Microsoft 365 Defender Evaluation Environment](eval-create-eval-environment.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

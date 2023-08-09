@@ -1,7 +1,7 @@
 ---
-title: "Settings interactions between Microsoft 365 Groups, Teams and SharePoint"
-ms.reviewer: 
-ms.date: 08/12/2020
+title: Microsoft Teams, SharePoint, and Microsoft 365 Groups integration (IT Admins)
+ms.reviewer: rahulnayak
+ms.date: 07/28/2023
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -20,7 +20,7 @@ recommendations: false
 description: "Learn about settings interactions between Microsoft 365 Groups, Teams and SharePoint"
 ---
 
-# Settings interactions between Microsoft 365 Groups, Teams and SharePoint
+# Microsoft Teams, SharePoint, and Microsoft 365 Groups integration (IT Admins)
 
 Some settings for Microsoft 365 Groups, Microsoft Teams, and SharePoint in Microsoft 365, particularly related to sharing and group/team and SharePoint site creation, overlap with each other. This article provides descriptions of these interactions and best practices for how to work with these settings.
 
@@ -30,20 +30,20 @@ Some settings for Microsoft 365 Groups, Microsoft Teams, and SharePoint in Micro
 
 |SharePoint setting|Description|Effect on Microsoft 365 groups and Teams|Recommendation|
 |:-----------------|:----------|:---------------------------------------|:-------------|
-|External sharing for organization and site|Determines if sites, files, and folders can be shared with people outside the organization.|If SharePoint, groups, and Teams settings don't match, guests in the team may be blocked from accessing the site, or unexpected external access may occur.|When changing sharing settings, check Groups settings, Teams settings, and SharePoint site settings for group-connected team sites.<br><br> See [Collaborate with guests in a team](./collaborate-as-team.md)|
-|Domain allow/block|Allows or prevents content being shared with specified domains.|Groups and Teams do not recognize SharePoint allowlists or blocklists. Users from domains disallowed in SharePoint could gain access to SharePoint sites or content through a team.|Manage domain allowlists or blocklists for Azure AD and SharePoint together. Create an org-wide governance process for allowing and blocking domains.<br><br>See [SharePoint domain settings](/sharepoint/restricted-domains-sharing) and [Azure AD domain settings](/azure/active-directory/b2b/allow-deny-list)|
-|Allow only users in specific security groups to share externally|Specifies security groups who can share SharePoint sites, folders, and files externally.|This setting does not prevent team owners from sharing teams externally. Team guests have access to the associated SharePoint site.||
-|SharePoint site sharing settings|Determines who can share the site directly outside of team membership. This is configured by the team or site owner.|This setting does not affect the team directly, but it can allow users to be added to a site and not have access to the team itself or other Teams resources|Consider using this setting to limit sharing of the site directly and manage site access through the team.|
+|External sharing for organization and site|Determines if sites, files, and folders can be shared with people outside the organization.|If SharePoint, Microsoft 365 Groups, and Teams settings don't match, guests in the team may be blocked from accessing the site, or unexpected external access may occur.|When changing sharing settings, check Microsoft 365 Groups settings, Teams settings, and SharePoint site settings for group-connected team sites.<br><br> See [Collaborate with guests in a team](/microsoft-365/solutions/collaborate-as-team)|
+|Domain allow/block|Allows or prevents content being shared with specified domains.|Microsoft 365 Groups and Teams don't recognize SharePoint allowlists or blocklists. Users from domains disallowed in SharePoint could gain access to SharePoint sites or content through a team.|Manage domain allowlists or blocklists for Azure AD and SharePoint together, along with external access for meetings. Create an org-wide governance process for allowing and blocking domains.<br><br>See [SharePoint domain settings](/sharepoint/restricted-domains-sharing), [Azure AD domain settings](/azure/active-directory/b2b/allow-deny-list), and [External access](/microsoftteams/trusted-organizations-external-meetings-chat).|
+|Allow only users in specific security groups to share externally|Specifies security groups who can share SharePoint sites, folders, and files externally.|This setting doesn't prevent team owners from sharing teams externally. Team guests have access to the associated SharePoint site.||
+|SharePoint site sharing settings|Determines who can share the site directly, outside of team membership. The team or site owner configures this setting.|This setting doesn't affect the team directly, but it can allow users to be added to a site and not have access to the team itself or other Teams resources|Consider using this setting to limit sharing of the site directly and manage site access through the team.|
 |Let users create sites from the SharePoint start page and OneDrive|Specifies if users can create new SharePoint sites.|If this setting is turned off, users can still create group-connected team sites by creating a team.||
 
 ## The effects of groups settings on teams
 
 |Microsoft 365 groups setting|Description|Effect on Teams|Recommendation|
 |:---------------------------|:----------|:--------------|:-------------|
-|Naming policies|Specifies group name prefixes and suffixes, and blocked words for group creation|Policies are enforced for users creating teams.||
-|Group guest access|Specifies if people outside the organization can be added to groups.|If either the groups or Teams guest sharing settings are off, the team cannot be shared with guests.|When changing guest sharing settings, check the settings for Teams, Groups, and the SharePoint site associated with the team.<br><br> See [Collaborate with guests in a team](./collaborate-as-team.md)|
-|Group creation by security group|Groups can only be created by members of a specific security group.|Users who are not members of the security group will not be able to create a team.|Be sure your process for requesting a group includes instructions for requesting a team or a SharePoint site.|
-|Group expiration policy|Specifies a time period after which groups that are not actively used will be automatically deleted.|When the group is deleted, the team and associated SharePoint site are also deleted. Content protected by retention policies is retained.|Use expiration policies to avoid sprawl of unused teams, groups and sites.|
+|Naming policies|Specifies Microsoft 365 group name prefixes and suffixes, and blocked words for group creation|Policies are enforced for users creating teams.||
+|Microsoft 365 Groups guest access|Specifies if people outside the organization can be added to Microsoft 365 groups.|If either the Microsoft 365 Groups or Teams guest sharing settings are off, the team can't be shared with guests.|When changing guest sharing settings, check the settings for Teams, Microsoft 365 Groups, and the SharePoint site associated with the team.<br><br> See [Collaborate with guests in a team](/microsoft-365/solutions/collaborate-as-team)|
+|Microsoft 365 group creation by security group|Only members of a specific security group can create Microsoft 365 groups.|Users who aren't members of the security group can't create a team.|Be sure your process for requesting a Microsoft 365 group includes instructions for requesting a team or a SharePoint site.|
+|Microsoft 365 group expiration policy|Specifies a time period after which Microsoft 365 groups that aren't actively used are automatically deleted.|When the group is deleted, the team and associated SharePoint site are also deleted. Content protected by retention policies is retained.|Use expiration policies to avoid sprawl of unused teams, Microsoft 365 groups, and sites.|
 
 ## Related topics
 

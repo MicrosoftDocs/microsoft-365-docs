@@ -53,3 +53,4 @@ Defender for Endpoint adds partnership opportunities for this scenario and allow
 
 
 
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

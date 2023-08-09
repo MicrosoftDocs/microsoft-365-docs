@@ -114,7 +114,7 @@ Use the **Freeform selection method** to create a [freeform document processing 
 
 5. When you're ready to create the model, select **Create**.
 
-6. You're now ready to [train the model](train-freeform-document-processing-model.md).
+6. You're now ready to [train the model](create-a-form-processing-model.md).
 
     > [!NOTE]
     > When published, this model type is available for reuse by others who do not own the model. Currently, this model can be edited and shared for editing only by the model owner.

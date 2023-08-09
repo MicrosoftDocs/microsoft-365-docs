@@ -104,3 +104,4 @@ For more information, see [view attack disruption details and results](autoad-re
 - [View details and results](autoad-results.md)
 
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

@@ -58,3 +58,4 @@ Next gen protections help detect and block the latest threats.
 ## See Also
 
 [Microsoft Defender for Endpoint overview](microsoft-defender-endpoint.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

@@ -34,7 +34,7 @@ Devices must be enrolled in Microsoft Intune. For more information on enrollment
 
 
 > [!NOTE]
-> If data doesn’t show up for a specific tenant, verify that the policy is enabled. From the tenant’s deployment plan, under **Set up device enrollment**, verify that **Device health monitoring policy** is compliant. If not compliant, deploy the policy.
+> If data doesn't show up for a specific tenant, verify that the policy is enabled. From the tenant's deployment plan, under **Set up device enrollment**, verify that **Device health monitoring policy** is compliant. If not compliant, deploy the policy.
 
 ## Overview tab
 
@@ -42,7 +42,7 @@ The Overview tab provides a multi-tenant view of device health, including the to
 
 The Overview tab also includes the following options:
 
-- **Tenant filter:** Filter by tenant or tag.
+- **Tenants filter:** Filter by tenant or tag.
 
 - **Date filter:** Filter by date range.
 
@@ -70,7 +70,7 @@ Select a device from the list for more detailed device information, including a 
 
 The Devices tab also includes the following options:
 
-- **Tenant filter:** Filter by tenant or tag.
+- **Tenants filter:** Filter by tenant or tag.
 
 - **Date filter:** Filter by date range.
 

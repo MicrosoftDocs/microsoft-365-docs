@@ -28,7 +28,7 @@ ms.date: 05/29/2023
 
 - [Microsoft 365 Defender](microsoft-365-defender.md)
 
-Once the Defender Experts for XDR team is ready to onboard your organization, you’ll receive a welcome email to continue the setup and get you started.
+Once the Defender Experts for XDR team is ready to onboard your organization, you'll receive a welcome email to continue the setup and get you started.
 
 Select the link in the welcome email to directly launch the Defender Experts settings step-by-step guide in the Microsoft 365 Defender portal. You can also open this guide by going to **Settings** > **Defender Experts** and selecting **Get started**.
 
@@ -38,10 +38,10 @@ Select the link in the welcome email to directly launch the Defender Experts set
 
 By default, Defender Experts for XDR requires **Service provider access** that lets our experts sign into your tenant and deliver services based on assigned security roles. [Learn more about cross-tenant access](/azure/active-directory/external-identities/cross-tenant-access-overview)
 
-You also need to grant our experts temporary, scoped access only as needed, depending on the type of work you’d like them to handle on your behalf:
+You also need to grant our experts temporary, scoped access only as needed, depending on the type of work you'd like them to handle on your behalf:
 
 - **Investigate incidents and guide my responses** (default) – This option lets our experts proactively monitor and investigate incidents and guide you through any necessary response actions. (Access level: Security Reader)
-- **Respond directly to active threats** (recommended) – This option lets our experts contain and remediate active threats immediately while investigating, thus reducing the threat’s impact, and improving your overall response efficiency. (Access level: Security Operator)
+- **Respond directly to active threats** (recommended) – This option lets our experts contain and remediate active threats immediately while investigating, thus reducing the threat's impact, and improving your overall response efficiency. (Access level: Security Operator)
 
 [Learn more about access levels](/azure/active-directory/roles/permissions-reference)
 
@@ -58,7 +58,7 @@ You also need to grant our experts temporary, scoped access only as needed, depe
 To edit or update permissions after the initial setup, go to **Settings** > **Defender Experts** > **Permissions**. In this page, you could also turn **Access security data from all devices** on or off under the access levels.
 
 > [!IMPORTANT]
-> If you turn off **Access security data from all devices**, our experts won’t be able to investigate incidents involving devices that belong to Microsoft Defender for Endpoint device groups. [Learn more about device groups](../defender-endpoint/machine-groups.md).
+> If you turn off **Access security data from all devices**, our experts won't be able to investigate incidents involving devices that belong to Microsoft Defender for Endpoint device groups. [Learn more about device groups](../defender-endpoint/machine-groups.md).
 
 ## Tell us who to contact for important matters
 
@@ -89,9 +89,9 @@ To edit or update your notification contacts after the initial setup, go to **Se
 
 Apart from onboarding service delivery, our expertise on the Microsoft 365 Defender product suite enables Defender Experts for XDR to run an initial readiness assessment to help you get the most out of your Microsoft security products.
 
-The initial readiness engagement is based on your [Microsoft Secure Score](../defender/microsoft-secure-score.md) and Defender Experts' policy recommendations. Our experts help prioritize and customize our recommendations to fit your environment. They request your engagement to get those configurations implemented.
+The initial readiness engagement is based on your [Microsoft Secure Score](../defender/microsoft-secure-score.md) and Defender Experts' policy recommendations. Our experts collaborate with you to prioritize and tailor recommendations that align with your environment. They seek your immediate involvement to implement these configurations and comprehend the necessary actions for initiating operations.
 
-Once you’ve completed the readiness checks, our experts will start monitoring your environment closely to identify latent threats, sources of risk, and normal activity. As we get better understanding of your critical assets, we can streamline the service and fine-tune our responses.
+Once the readiness checks are completed, our experts will start monitoring your environment closely to identify latent threats, sources of risk, and normal activity. As we get better understanding of your critical assets, we can streamline the service and fine-tune our responses.
 
 ### Next step
 
@@ -100,3 +100,4 @@ Once you’ve completed the readiness checks, our experts will start monitoring 
 ### See also
 - [Frequently asked questions](frequently-asked-questions.md)
 - [How Microsoft Defender Experts for XDR permissions work](dex-xdr-permissions.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

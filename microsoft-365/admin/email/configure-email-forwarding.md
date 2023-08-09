@@ -22,11 +22,6 @@ ms.custom:
 - okr_smb
 - AdminTemplateSet
 - business_assist
-search.appverid:
-- BCS160
-- MET150
-- MOE150
-ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: "Email forwarding lets you forward email messages sent to a Microsoft 365 user mailbox to another mailbox inside or outside of your organization."
 ---
 

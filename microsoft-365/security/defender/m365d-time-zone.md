@@ -45,3 +45,4 @@ To set the time zone for these features, go to **Settings** > **Microsoft 365 De
 
 > [!NOTE]
 > The custom time range filter in advanced hunting remains in UTC regardless of the time zone setting. 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

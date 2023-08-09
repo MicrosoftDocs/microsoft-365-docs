@@ -4,7 +4,7 @@ metadata:
   author: cmcatee-MSFT
   ms.author: cmcatee
   manager: scotv
-  ms.reviewer: racheg, armanv
+  ms.reviewer: racheg, vician
   ms.date: 07/22/2021
   audience: Admin
   ms.topic: faq
@@ -161,7 +161,7 @@ sections:
       - question: |
           How do I request an increase to MAK activation limits?
         answer: |
-          Increases to MAK activation quantity can be requested via web form and are granted by exception. For Canada and the United States, submit [Volume Licensing Support Requests](https://support.microsoft.com/supportrequestform/2afa6f15-b710-db46-909a-8346017c802f). For all other countries, submit a [Support Web Form](/licensing/contact-us). 
+          Increases to MAK activation quantity can be requested via web form and are granted by exception. For Canada and the United States, submit [Volume Licensing Support Requests](https://support.microsoft.com/supportrequestform/2afa6f15-b710-db46-909a-8346017c802f). For all other countries/regions, submit a [Support Web Form](/licensing/contact-us). 
 
           To request a MAK activation limit, you must have VLSC Administrator, Key Administrator, or Key Viewer permissions and provide the following information:
 

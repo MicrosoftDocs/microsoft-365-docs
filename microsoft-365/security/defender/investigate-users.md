@@ -18,7 +18,7 @@ ms.collection:
 ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
-ms.date: 02/16/2021
+ms.date: 08/04/2023
 ---
 
 # Investigate users in Microsoft 365 Defender
@@ -140,7 +140,7 @@ The timeline represents activities and alerts observed from a user's identity in
 
   ![Screenshot that shows hwo to choose time frame.](media/investigate-users/image.png)
   
-- **Timeline filters:** In order to improve your investigation experience, you can use the timeline filters: Type (Alerts and/or user's related activities), Alert severity, Activity type, App, Location, Protocol. Each filter depends on the others, and the options in each filter (drop-down) only contains the data that is relevant for the specific user. 
+- **Timeline filters:** In order to improve your investigation experience, you can use the timeline filters: Type (Alerts and/or user's related activities), Alert severity, Activity type, App, Location, Protocol. Each filter depends on the others, and the options in each filter (drop-down) only contains the data that is relevant for the specific user.
 
 - **Export button:** You can export the timeline to a CSV file. Export is limited to the first 5000 records and contains the data as it displays in the UI (same filters and columns). 
 
@@ -166,7 +166,7 @@ The following information is displayed in the timeline:
 - Source device/IP address
 - [MITRE ATT&CK](https://attack.mitre.org/) techniques 
 - Alert status and severity
-- Country where the client IP address is geolocated
+- Country/region where the client IP address is geolocated
 - Protocol used during the communication
 - Target device (customized column)
 - Number of times the activity happened (customized column)
@@ -205,3 +205,4 @@ As needed for in-process incidents, continue your [investigation](investigate-in
 
 
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

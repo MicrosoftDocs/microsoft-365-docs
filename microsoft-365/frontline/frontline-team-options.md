@@ -1,9 +1,9 @@
 ---
 title: How to find the best frontline team solution for your organization
-author: daisyfell
-ms.author: daisyfeller
+author: lana-chin
+ms.author: v-chinlana
+manager: serdars
 ms.reviewer: aaglick
-manager: pamgreen
 ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
@@ -17,8 +17,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 06/16/2023
-ROBOTS: NOINDEX, NOFOLLOW
+ms.date: 07/12/2023
 ---
 
 # How to find the best frontline team solution for your organization
@@ -26,6 +25,9 @@ ROBOTS: NOINDEX, NOFOLLOW
 ## Overview
 
 Frontline teams are a collection of people, content, and tools within an organization for different frontline worker locations. When deploying your frontline teams you have different options for how you can manage team membership. You can choose between dynamic team membership, static team membership, or a combination of both.
+
+>[!IMPORTANT]
+>The ability to deploy frontline dynamic teams at scale will begin rolling out for public preview in July 2023.
 
 ### Licensing
 
@@ -46,7 +48,7 @@ You should use dynamic frontline teams if:
 - You have AAD attributes that can define who is a frontline worker and what locations they work in.
 - You want to simplify the process of creating a team for each frontline location, including support for creating new teams when a new location opens.
 
-[Learn more about deploying dynamic frontline teams from your Microsoft 365 admin center](deploy-dynamic-teams-at-scale.md).
+[Learn more about deploying dynamic frontline teams from your Teams admin center](deploy-dynamic-teams-at-scale.md).
 
 > [!NOTE]
 > You can't manually add members to dynamic teams. If you need to manually add or remove members, it's recommended that you use a [static team](#when-should-i-choose-static-teams).

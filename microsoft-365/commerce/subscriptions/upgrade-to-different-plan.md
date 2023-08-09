@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: nalinkla, jmueller
+ms.reviewer: mijeffer, nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
@@ -32,7 +32,7 @@ When your business needs change, or you want more features, you can change to a 
 ## Before you begin
 
 - You must be a Global or Billing admin to do the steps in this article. For more information, see [About admin roles in the Microsoft 365 admin center](../../admin/add-users/about-admin-roles.md)
-- If you have a billing profile, you must be a billing account owner or billing account contributor. [Find out if you have a billing profile](../billing-and-payments/manage-billing-profiles.md#view-my-billing-profiles). For more information about billing account roles, see [Understand access to billing accounts](../manage-billing-accounts.md#understand-access-to-billing-accounts).
+- If you have a billing profile, you must be a billing account owner or billing account contributor. [Find out if you have a billing profile](../billing-and-payments/manage-billing-profiles.md#view-your-billing-profiles). For more information about billing account roles, see [What are billing account roles?](../manage-billing-accounts.md#what-are-billing-account-roles).
 
 ## When should I change plans?
 
@@ -41,7 +41,7 @@ Changing plans is the right choice when you want to move all users assigned to a
 ## Automatically change your subscription to a new plan
 
 > [!IMPORTANT]
-> Before you continue, [determine if you have a billing profile](../billing-and-payments/manage-billing-profiles.md#view-my-billing-profiles).
+> Before you continue, [determine if you have a billing profile](../billing-and-payments/manage-billing-profiles.md#view-your-billing-profiles).
 
 ### If you don't have a billing profile
 

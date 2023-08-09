@@ -30,6 +30,8 @@ description: "Learn how Microsoft Adoption Score reflects people and technology 
 
 Adoption Score supports the journey to digital transformation with insights about how your organization uses Microsoft 365 and the technology experiences that support it. Your organization's score reflects people and technology experience measurements and can be compared to benchmarks from organizations similar in size to yours.
 
+## Watch: Adoption Score overview
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE53oqt?autoplay=false]
 
 It provides:
@@ -44,22 +46,12 @@ We provide metrics, insights, and recommendations in two areas:
 
     For each of the mentioned categories, we look at public research to identify some best practices and associated benefits in the form of organizational effectiveness. For example, Forrester research has shown that when people collaborate and share content in the cloud (instead of emailing attachments), they can save up to 100 minutes a week. Furthermore, we quantify the use of these best practices in your organization to help you see where you are on your digital transformation journey. 
 
+    Visit [privacy controls for Adoption Score](privacy.md) to understand more about options to configure people experiences for your organization.
+
 - **Technology experiences:** Your organization depends on reliable and well-performing technology, and the efficient use of Microsoft 365. [Endpoint analytics](https://aka.ms/endpointanalytics) helps you understand how your organization can be impacted by performance and health issues with your hardware and software. [Network connectivity](../../enterprise/microsoft-365-networking-overview.md) helps you understand Exchange, SharePoint, and Microsoft Teams performance on your network architecture. You can review and update network settings to improve connectivity. Microsoft  365 apps health helps you understand whether the devices in your organization are running Microsoft 365 apps on recommended channels.
 
 > [!NOTE]
 > All insights are calculated using data at the organizational level, not the individual level.
-
-## How to enable Adoption Score
-
-To enable Adoption Score:
-
-1. Sign in to the Microsoft 365 admin center as a Global Administrator and go to **Reports** > **Adoption Score**
-2. Select **enable Adoption Score**. It can take up to 24 hours for insights to become available.
-
-> [!NOTE]
-> Only an IT professional with the Global Administrator role can opt-in for Adoption Score.
-
-Visit [privacy controls for Adoption Score](privacy.md) to understand more about options to configure people experiences for your organization.
 
 ## Adoption Score Prerequisites
 
@@ -111,7 +103,7 @@ In each score category, we quantify the key indicators for how your organization
 
 ### Products included in Adoption Score
 
-Adoption Score includes data from Exchange, SharePoint, OneDrive, Teams, Word, Excel, PowerPoint, OneNote, Outlook, Yammer, and Skype.
+Adoption Score includes data from Exchange, SharePoint, OneDrive, Teams, Word, Excel, PowerPoint, OneNote, Outlook, Viva Engage, and Skype.
 
 Your organization's score is updated daily and reflects user actions completed in the last 28 (including the current day).
 

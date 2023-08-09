@@ -158,7 +158,7 @@ The following headers are exported as a result of downloading Resolutions, DNS, 
 | &nbsp;                     | &nbsp;                     |
 |----------------------------|----------------------------|
 | **Resolve**                | A record associated with the domain searched (resolving IP Address) or domain that has resolved to an IP address when an IP address is searched |
-| **Location**               | Country the IP address is hosted in |
+| **Location**               | Country/region the IP address is hosted in |
 | **Network**                | Netblock or subnet |
 | **autonomousSystemNumber** | Autonomous System Number |
 | **firstSeen**              | Date / Time when Microsoft first observed the resolution (format: mm/dd/yyyy hh:mm) |

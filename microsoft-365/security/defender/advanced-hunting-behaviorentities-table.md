@@ -27,10 +27,8 @@ ms.date: 02/16/2021
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 **Applies to:**
 - Microsoft 365 Defender
-
 
 The `BehaviorEntities` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about behaviors in Microsoft Defender for Cloud Apps. Use this reference to construct queries that return information from this table.
 
@@ -73,18 +71,20 @@ For information on other tables in the advanced hunting schema, [see the advance
 |`EmailSubject`|`string`| Subject of the email |
 |`EmailClusterId`|`string`| Identifier for the group of similar emails clustered based on heuristic analysis of their contents |
 |`Application`|`string`| Application that performed the recorded action |
-|`ApplicationId	`|`int`| Unique identifier for the application |
+|`ApplicationId`|`int`| Unique identifier for the application |
 |`OAuthApplicationId`|`string`| Unique identifier of the third-party OAuth application |
 |`ProcessCommandLine`|`string`| Command line used to create the new process |
 |`RegistryKey`|`string`| Registry key that the recorded action was applied to |
 |`RegistryValueName`|`string`| Name of the registry value that the recorded action was applied to |
-|`RegistryValueData	`|`string`| Data of the registry value that the recorded action was applied to |
+|`RegistryValueData`|`string`| Data of the registry value that the recorded action was applied to |
 | `AdditionalFields` | `string` | Additional information about the behavior|
 
 ## Related topics
+
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the query language](advanced-hunting-query-language.md)
 - [Use shared queries](advanced-hunting-shared-queries.md)
 - [Hunt across devices, emails, apps, and identities](advanced-hunting-query-emails-devices.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

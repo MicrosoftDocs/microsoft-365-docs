@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 05/31/2023
+ms.date: 07/06/2023
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
@@ -83,6 +83,7 @@ You'll probably only need to assign the following roles in your organization. By
 |---------|---------|
 |Billing admin     |   Assign the Billing admin role to users who make purchases, manage subscriptions and service requests, and monitor service health. <br><br> Billing admins also can:<br> - Manage all aspects of billing <br> - Create and manage support tickets in the Azure portal <br>  |
 |Exchange admin     |   Assign the Exchange admin role to users who need to view and manage your user's email mailboxes, Microsoft 365 groups, and Exchange Online. <br><br> Exchange admins can also:<br> - Recover deleted items in a user's mailbox <br> - Set up "Send As" and "Send on behalf" delegates <br>  |
+|Fabric admin |   Assign the Fabric admin role to users who need to do the following: <br> - Manage all admin features for Microsoft Fabric and Power BI <br> - Report on usage and performance <br> - Review and manage auditing  |
 |Global admin     |   Assign the Global admin role to users who need global access to most management features and data across Microsoft online services. <br><br> Giving too many users global access is a security risk and we recommend that you have between two and four Global admins. <br><br> Only global admins can:<br> - Reset passwords for all users <br> - Add and manage domains <br> - Unblock another global admin <br> <br> **Note:**   The person who signed up for Microsoft online services automatically becomes a Global admin. |
 |Global reader    |   Assign the global reader role to users who need to view admin features and settings in admin centers that the global admin can view. The global reader admin can't edit any settings.   |
 |Groups admin     |   Assign the groups admin role to users who need to manage all groups settings across admin centers, including the Microsoft 365 admin center and Azure Active Directory portal. <br><br> Groups admins can:<br> - Create, edit, delete, and restore Microsoft 365 groups <br> - Create and update group creation, expiration, and naming policies <br> - Create, edit, delete, and restore Azure Active Directory security groups| 
@@ -93,7 +94,7 @@ You'll probably only need to assign the following roles in your organization. By
 |Office Apps admin    |   Assign the Office Apps admin role to users who need to do the following: <br> - Use the Cloud Policy service for Microsoft 365 to create and manage cloud-based policies. <br> - Create and manage service requests <br> - Manage the What's New content that users see in their Microsoft 365 apps   <br> - Monitor service health  |
 |Organizational Message Writer    |    Assign the Organizational Message Writer role to users who need to write, publish, manage, and review the organizational messages for end-users through Microsoft product surfaces.   |
 |Password admin  |   Assign the Password admin role to a user who needs to reset passwords for non-administrators and Password Administrators.   |
-|Power Platform admin |   Assign the Power Platform admin role to users who need to do the following: <br> - Manage all admin features for Power Apps, Power Automate, and Microsoft Purview Data Loss Prevention <br> - Create and manage service requests <br> - Monitor service health  |
+|Power Platform admin |   Assign the Power Platform admin role to users who need to do the following: <br> - Manage all admin features for Power Apps, Power Automate, Power BI, Microsoft Fabric, and Microsoft Purview Data Loss Prevention <br> - Create and manage service requests <br> - Monitor service health  |
 |Reports reader |   Assign the Reports reader role to users who need to do the following: <br> - View usage data and the activity reports in the Microsoft 365 admin center <br> - Get access to the Power BI adoption content pack <br> - Get access to sign-in reports and activity in Azure AD <br> - View data returned by Microsoft Graph reporting API|
 |Service Support admin   |   Assign the Service Support admin role as an additional role to admins or users who need to do the following in addition to their usual admin role: <br> - Open and manage service requests <br> - View and share message center posts <br> - Monitor service health   |
 |SharePoint admin    |   Assign the SharePoint admin role to users who need to access and manage the SharePoint Online admin center. <br><br>SharePoint admins can also: <br> - Create and delete sites <br> - Manage site collections and global SharePoint settings   |

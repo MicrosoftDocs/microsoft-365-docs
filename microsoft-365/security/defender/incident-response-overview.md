@@ -22,7 +22,7 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.date: 10/13/2021
+ms.date: 07/14/2023
 ---
 
 # Investigate and respond with Microsoft 365 Defender
@@ -85,3 +85,4 @@ For more information, see [Threat analytics in Microsoft 365 Defender](threat-an
 Endpoint Attack Notifications (previously referred to as Microsoft Threat Experts - Targeted Attack Notifications) is a managed threat hunting service. Once you apply and are accepted, you'll receive Endpoint Attack Notifications from Microsoft Defender experts, so you won't miss critical threats to your environment. These notifications will help you protect your organization's endpoints, email, and identities. Microsoft Defender Experts – Experts on Demand lets you get expert advice about threats your organization is facing and you can reach out for help on threats your organization is facing. It's available as an additional subscription service.
 
 For more information, see [Microsoft Defender Experts in Microsoft 365 overview](../defender-endpoint/experts-on-demand.md).
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
