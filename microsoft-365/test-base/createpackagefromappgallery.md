@@ -29,27 +29,29 @@ In the left-hand menu under **Package catalog**, select the **New
 package**. Then click the card '**Create package from App Gallery**'.
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot of create package from app gallery](Media/create_package_from_gallery_1.png)
+> [![Screenshot of create package from app gallery](Media/create_package_from_gallery_1.png)](Media/create_package_from_gallery_1.png#lightbox)
 
 **Step 1. Define content**
 
 1.  In the **Package source** section, click on 'Select app from App Gallery - Winget' then there will be a slide bar pop-up on the right hand side.
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot of search from winget app gallery](Media/create_package_from_gallery_2.png)
+    > [![Screenshot of search from winget app gallery](Media/create_package_from_gallery_2.png)](Media/create_package_from_gallery_2.png#lightbox)
+
 
 2.  Then you can either scroll down or search for the applications which you'd like to test. You can also select the version of specific app in the Version drop down.
 
 3.  Once you select the app by checking the box and clicking on the select button, there's a pop-up notification displaying the app license and disclaimer.
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot of accept the license](Media/create_package_from_gallery_3.png)
+    > [![Screenshot of accept the license](Media/create_package_from_gallery_3.png)](Media/create_package_from_gallery_3.png#lightbox)
+
 
 4.  By clicking on the 'Accept' button, the app will be auto uploaded while the package name and package version will be auto-populated.
     You can also modify the package name and version as needed.
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot of basic information](Media/create_package_from_gallery_4.png)
+    > [![Screenshot of basic information](Media/create_package_from_gallery_4.png)](Media/create_package_from_gallery_4.png#lightbox)
 
     > [!Note]
     > The combination of package name and version must be unique within your Test Base account.
@@ -57,7 +59,8 @@ package**. Then click the card '**Create package from App Gallery**'.
 5.  After all the requested information is specified, you can proceed to the next phase by clicking the **Next: Configuration test** button.
 
     > [!div class="mx-imgBorder"]
-    > ![Screenshot of the button ](Media/create_package_from_gallery_5.png)
+    > [![Screenshot of the button ](Media/create_package_from_gallery_5.png)](Media/create_package_from_gallery_5.png#lightbox)
+
 
 **Step 2. Configure test**
 
