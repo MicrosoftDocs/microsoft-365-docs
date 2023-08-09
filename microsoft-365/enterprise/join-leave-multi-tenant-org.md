@@ -49,6 +49,11 @@ To join an existing multi-tenant organization in Microsoft 365
 1. Select **Next**.
 1. Select **Done**.
 
+It can take up to four hours for your tenant to be joined to the multi-tenant organization.
+
+> [!NOTE]
+> If you encounter an error when joining the multi-tenant organization, try again after two hours. If the error reoccurs, contact Microsoft support.
+
 The next step after you join the multi-tenant organization is to synchronize your users with the other tenants. For details, see [Synchronize users in multi-tenant orgs in Microsoft 365](sync-users-multi-tenant-orgs.md).
 
 ## Leave a multi-tenant organization
@@ -64,7 +69,7 @@ To remove a tenant from a multi-tenant organization in Microsoft 365
 1. Select **Remove tenant**.
 1. Read the details regarding tenant removal in the side panel, and then select **Remove tenant**.
 
-After you remove a tenant from the multi-tenant organization, we recommend you review the active users and sync jobs and make any updates needed.
+Removing a tenant doesn't change any user sync configurations or cross-tenant access settings in Azure AD. We recommend you review these settings and make any updates needed after the tenant is removed.
 
 ## Related topics
 

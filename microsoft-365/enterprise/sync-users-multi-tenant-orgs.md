@@ -37,6 +37,9 @@ If you want to synchronize different users to different tenants, then you must c
 
 While you can create multiple cross-tenant synchronization configurations for a single external tenant, we recommend that you only use one for ease of administration.
 
+> [!NOTE]
+> It may take up to 24 hours for synced users to be available in Microsoft 365 services such as Teams and SharePoint.
+
 ## Set up initial user synchronization for a multi-tenant organization
 
 To synchronize identities to other tenants in a multi-tenant organization
