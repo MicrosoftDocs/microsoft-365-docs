@@ -47,6 +47,8 @@ To access shared mailbox information, change the drop-down selection at the top 
 
 The **Mailbox usage** report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days. However, if you select a particular day in the report, the table will show data for up to 28 days from the current date (not the date the report was generated). The data in each report usually covers up to the last 24 to 48 hours.
 
+The **Mailbox usage** report does not include **Recoverable Items** as they are included in the **Recoverable Items mailbox quota**.
+
 ### The Mailbox chart
 
 The **Mailbox** chart shows you the total number of user or shared mailboxes in your organization, and the total number of user mailboxes that are active on any given day of the reporting period. A user mailbox is considered active if it had an email send, read, create appointment, send meeting, accept meeting, decline meeting and cancel meeting activity.

@@ -17,15 +17,14 @@ description: Admins can learn how to create, modify, and delete the anti-phishin
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.date: 4/18/2023
+ms.date: 7/5/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
 ---
 
 # Configure anti-phishing policies in EOP
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
-
-**Applies to**
-- [Exchange Online Protection](eop-about.md)
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, anti-phishing policies provide anti-spoofing protection. For more information, see [Spoof settings in anti-phishing policies](anti-phishing-policies-about.md#spoof-settings).
 
@@ -42,7 +41,6 @@ For anti-phishing policy procedures in organizations with Microsoft Defender for
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-  - [Microsoft 365 Defender role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac): **configuration/security (manage)** or **configuration/security (read)**. Currently, this option requires membership in the Microsoft 365 Defender Preview program.
   - [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo):
     - _Add, modify, and delete policies_: Membership in the **Organization Management** or **Security Administrator** role groups.
     - _Read-only access to policies_: Membership in the **Global Reader**, **Security Reader**, or **View-Only Organization Management** role groups.
@@ -104,7 +102,18 @@ For anti-phishing policy procedures in organizations with Microsoft Defender for
 
 6. On the **Actions** page, configure the following settings:
 
-   - **If the message is detected as spoof by spoof intelligence**: This setting is available only if you selected **Enable spoof intelligence** on the previous page. Select one of the following actions in the drop down list for messages from blocked spoofed senders:
+   - **Honor DMARC record policy when the message is detected as spoof**: This setting is selected by default, and allows you to control what happens to messages where the sender fails explicit [DMARC](email-authentication-dmarc-configure.md) checks and the DMARC policy is set to `p=quarantine` or `p=reject`:
+     - **If the message is detected as spoof and DMARC Policy is set as p=quarantine**: Select one of the following actions:
+       - **Quarantine the message**: This is the default value.
+       - **Move message to the recipients' Junk Email folders**
+
+     - **If the message is detected as spoof and DMARC Policy is set as p=reject**: Select one of the following actions:
+       - **Quarantine the message**
+       - **Reject the message**: This is the default value.
+
+     For more information, see [Spoof protection and sender DMARC policies](anti-phishing-policies-about.md#spoof-protection-and-sender-dmarc-policies).
+
+   - **If the message is detected as spoof by spoof intelligence**: This setting is available only if you selected **Enable spoof intelligence** on the previous page. Select one of the following actions in the dropdown list for messages from blocked spoofed senders:
      - **Move the message to the recipients' Junk Email folders** (default)
      - **Quarantine the message**: If you select this action, an **Apply quarantine policy** box appears where you select the quarantine policy that applies to messages that are quarantined by spoof intelligence protection.
 
@@ -141,7 +150,7 @@ On the **Anti-phishing** page, the following properties are displayed in the lis
   - **On** or **Off** for other anti-spam policies.
 - **Priority**: For more information, see the [Set the priority of custom anti-spam policies](#use-the-microsoft-365-defender-portal-to-set-the-priority-of-custom-anti-phishing-policies) section.
 
-To change the list of policies from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false":::.
+To change the list of policies from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false"::: **Compact list**.
 
 Use :::image type="icon" source="../../media/m365-cc-sc-filter-icon.png" border="false"::: **Filter** to filter the policies by **Time range** (creation date) or **Status**.
 
@@ -152,7 +161,7 @@ Use :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" borde
 Select a policy by clicking anywhere in the row other than the check box next to the name to open the details flyout for the policy. 
 
 > [!TIP]
-> To see details about other anti-phishing policies without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** buttons at the top of the policy details flyout.
+> To see details about other anti-phishing policies without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
 
 ## Use the Microsoft 365 Defender portal to take action on anti-phishing policies
 
@@ -160,7 +169,7 @@ Select a policy by clicking anywhere in the row other than the check box next to
 
 2. On the **Anti-phishing** page, select the anti-phishing policy by using either of the following methods:
 
-   - Select the policy from the list by selecting the check box next to the name. The following actions are available in the :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More actions** drop down list that appears:
+   - Select the policy from the list by selecting the check box next to the name. The following actions are available in the :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More actions** dropdown list that appears:
      - **Enable selected policies**.
      - **Disable selected policies**.
      - **Delete selected policies**.
@@ -282,13 +291,16 @@ Creating an anti-phishing policy in PowerShell is a two-step process:
 To create an anti-phish policy, use this syntax:
 
 ```PowerShell
-New-AntiPhishPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-EnableSpoofIntelligence <$true | $false>] [-AuthenticationFailAction <MoveToJmf | Quarantine>] [-EnableUnauthenticatedSender <$true | $false>] [-EnableViaTag <$true | $false>] [-SpoofQuarantineTag <QuarantineTagName>]
+New-AntiPhishPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-EnableSpoofIntelligence <$true | $false>] [-AuthenticationFailAction <MoveToJmf | Quarantine>] [-HonorDmarcPolicy <$true | $false>] [-DmarcQuarantineAction <MoveToJmf | Quarantine>] [-DmarcRejectAction <Quarantine | Reject>] [-EnableUnauthenticatedSender <$true | $false>] [-EnableViaTag <$true | $false>] [-SpoofQuarantineTag <QuarantineTagName>]
 ```
 
 This example creates an anti-phish policy named Research Quarantine with the following settings:
 
 - The description is: Research department policy.
 - Changes the default action for spoofing detections to Quarantine and uses the default quarantine policy for the quarantined messages (we aren't using the _SpoofQuarantineTag_ parameter).
+- Honoring `p=quarantine` and `p=reject` in sender DMARC policies is on by default (we aren't using the _HonorDmarcPolicy_ parameter, and the default value is `$true`).
+  - Messages that fail DMARC where the sender's DMARC policy is `p=quarantine` are quarantined (we aren't using the _DmarcQuarantineAction_ parameter, and the default value is Quarantine).
+  - Messages that fail DMARC where the sender's DMARC policy is `p=reject` are rejected (we aren't using the _DmarcRejectAction_ parameter, and the default value is Reject).
 
 ```powershell
 New-AntiPhishPolicy -Name "Monitor Policy" -AdminDisplayName "Research department policy" -AuthenticationFailAction Quarantine
@@ -377,7 +389,7 @@ For detailed syntax and parameter information, see [Get-AntiPhishRule](/powershe
 
 Other than the following items, the same settings are available when you modify an anti-phish policy in PowerShell as when you create a policy as described in [Step 1: Use PowerShell to create an anti-phish policy](#step-1-use-powershell-to-create-an-anti-phish-policy) earlier in this article.
 
-- The _MakeDefault_ switch that turns the specified policy into the default policy (applied to everyone, always **Lowest** priority, and you can't delete it) is only available when you modify an anti-phish policy in PowerShell.
+- The _MakeDefault_ switch that turns the specified policy into the default policy (applied to everyone, always **Lowest** priority, and you can't delete it) is available only when you modify an anti-phish policy in PowerShell.
 - You can't rename an anti-phish policy (the **Set-AntiPhishPolicy** cmdlet has no _Name_ parameter). When you rename an anti-phishing policy in the Microsoft 365 Defender portal, you're only renaming the anti-phish _rule_.
 
 To modify an anti-phish policy, use this syntax:

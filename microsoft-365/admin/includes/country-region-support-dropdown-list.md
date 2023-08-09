@@ -131,7 +131,7 @@ ms.date: 02/18/2020
 > - [Liechtenstein](../support/liechtenstein.md)
 > - [Lithuania](../support/lithuania.md)
 > - [Luxembourg](../support/luxembourg.md)
-> - [Macau SAR](../support/macau-sar.md)
+> - [Macao SAR](../support/macau-sar.md)
 > - [Macedonia](../support/macedonia.md)
 > - [Madagascar](../support/madagascar.md)
 > - [Malawi](../support/malawi.md)

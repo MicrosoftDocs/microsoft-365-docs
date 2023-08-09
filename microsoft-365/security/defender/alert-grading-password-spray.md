@@ -89,7 +89,7 @@ Filter all successful attempts to sign in from the IP address around and shortly
 
 - Alerts
 
-  **Check whether the user received other alerts preceding the password spray activity.** Having these alerts indicate that the user account might be compromised. Examples include impossible travel alert, activity from infrequent country, and suspicious email deletion activity, among others.
+  **Check whether the user received other alerts preceding the password spray activity.** Having these alerts indicate that the user account might be compromised. Examples include impossible travel alert, activity from infrequent country/region, and suspicious email deletion activity, among others.
 
 - Incident
 
@@ -193,7 +193,7 @@ AlertInfo
 2. Reset user accounts' credentials.
 3. Revoke access tokens of compromised accounts.
 4. [Block legacy authentication.](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
-5. [Require MFA for users](/microsoft-365/business-premium/m365bp-conditional-access) if possible to [enhance account security](/azure/active-directory/authentication/tutorial-enable-azure-mfa) and make account compromise by a password spray attack difficult for the attacker.
+5. [Require MFA for users](/microsoft-365/business-premium/m365bp-turn-on-mfa) if possible to [enhance account security](/azure/active-directory/authentication/tutorial-enable-azure-mfa) and make account compromise by a password spray attack difficult for the attacker.
 6. Block the compromised user account from signing in if needed.
 
 ## See also
@@ -201,3 +201,4 @@ AlertInfo
 - [Overview of alert classification](alert-grading-playbooks.md)
 - [Classifying password spray attacks](alert-grading-password-spray-attack.md)
 - [Investigate alerts](investigate-alerts.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

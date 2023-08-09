@@ -19,16 +19,15 @@ ms.custom:
 description: Learn about Threat Trackers, including new Noteworthy Trackers, to help your organization stay on top of security concerns.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 1/31/2023
+ms.date: 6/20/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
 # Threat Trackers - New and Noteworthy
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
-
-**Applies to**
-- [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 [Office 365 Threat Investigation and Response](office-365-ti.md) capabilities enable your organization's security team to discover and take action against cybersecurity threats. Office 365 Threat Investigation and Response capabilities include Threat Tracker features, including Noteworthy trackers. Read this article to get an overview of these new features and next steps.
 

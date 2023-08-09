@@ -17,22 +17,21 @@ ms.custom:
 description: Admins can learn how to use quarantine policies to control what users are able to do to quarantined messages.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 4/26/2023
+ms.date: 8/2/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
 # Quarantine policies
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-**Applies to:**
-- [Exchange Online Protection](eop-about.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-
 In Exchange Online Protection (EOP) and Microsoft Defender for Office 365, _quarantine policies_ allow admins to define the user experience for quarantined messages:
 
 - What users are allowed to do to their own quarantined messages (messages where they're a recipient) based on why the message was quarantined.
-- Whether users receive periodic notifications about their quarantined messages via [quarantine notifications](quarantine-quarantine-notifications.md).
+- Whether users receive periodic (every four hours, daily, or weekly) notifications about their quarantined messages via [quarantine notifications](quarantine-quarantine-notifications.md).
 
 Traditionally, users have been allowed or denied levels of interactivity with quarantine messages based on why the message was quarantined. For example, users can view and release messages that were quarantined as spam or bulk, but they can't view or release messages that were quarantined as high confidence phishing or malware.
 
@@ -45,6 +44,8 @@ If you don't like the default user capabilities for quarantined messages for a s
 You create and assign quarantine policies in the Microsoft 365 Defender portal or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with Exchange Online mailboxes; standalone EOP PowerShell in EOP organizations without Exchange Online mailboxes).
 
 ## What do you need to know before you begin?
+
+- Quarantine isn't available in Microsoft 365 operated by 21Vianet.
 
 - You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Quarantine policies** page, use <https://security.microsoft.com/quarantinePolicies>.
 
@@ -69,15 +70,15 @@ You create and assign quarantine policies in the Microsoft 365 Defender portal o
 
 2. On the **Quarantine policies** page, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Add custom policy** to start the new quarantine policy wizard.
 
-3. On the **Policy name** page, enter a brief but unique name in the **Policy name** box. The policy name is selectable in drop-down lists in upcoming steps.
+3. On the **Policy name** page, enter a brief but unique name in the **Policy name** box. The policy name is selectable in dropdown lists in upcoming steps.
 
    When you're finished on the **Policy name** page, select **Next**.
 
 4. On the **Recipient message access** page, select one of the following values:
-   - **Limited access**: The individual permissions that are included in this permission group are described in the [Appendix](#appendix) section. Basically, users can do anything to their quarantined messages except release them from quarantine without admin approval. 
+   - **Limited access**: The individual permissions that are included in this permission group are described in the [Appendix](#appendix) section. Basically, users can do anything to their quarantined messages except release them from quarantine without admin approval.
 
    - **Set specific access (Advanced)**: Use this value to specify custom permissions. Configure the following settings that appear:
-     - **Select release action preference**: Select one of the following values from the drop down:
+     - **Select release action preference**: Select one of the following values from the dropdown list:
        - Blank: Users can't release or request the release of their messages from quarantine. This is the default value.
        - **Allow recipients to request a message to be released from quarantine**
        - **Allow recipients to release a message from quarantine**
@@ -207,7 +208,7 @@ The rest of this step explains how to assign quarantine policies for supported f
 
 2. On the **Anti-spam policies** page, use either of the following methods:
    - Select an existing **inbound** anti-spam policy by clicking anywhere in the row other than the check box next to the name. In the policy details flyout that opens, go to the **Actions** section and then select **Edit actions**.
-   - Select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Create policy**, select **Inbound** from the drop down list to start the new anti-spam policy wizard, and then get to the **Actions** page.
+   - Select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Create policy**, select **Inbound** from the dropdown list to start the new anti-spam policy wizard, and then get to the **Actions** page.
 
 3. On the **Actions** page or flyout, every verdict that has the **Quarantine message** action selected also has the **Select quarantine policy** box for you to select a quarantine policy.
 
@@ -414,12 +415,12 @@ Full instructions for creating and modifying Safe Attachments policies are descr
 If you'd rather use PowerShell to assign quarantine policies in Safe Attachments policies, connect to Exchange Online PowerShell or Exchange Online Protection PowerShell and use the following syntax:
 
 ```powershell
-<New-SafeAttachmentPolicy -Name "<Unique name>" | Set-SafeAttachmentPolicy -Identity "<Policy name>"> -Enable $true -Action <Block | Replace | DynamicDelivery> [-QuarantineTag <QuarantineTagName>]
+<New-SafeAttachmentPolicy -Name "<Unique name>" | Set-SafeAttachmentPolicy -Identity "<Policy name>"> -Enable $true -Action <Block | DynamicDelivery> [-QuarantineTag <QuarantineTagName>]
 ```
 
 **Notes**:
 
-- The _Action_ parameter values Block, Replace, or DynamicDelivery can result in quarantined messages (the value Allow doesn't quarantine messages). The value of the _Action_ parameter in meaningful only when the value of the _Enable_ parameter is `$true`.
+- The _Action_ parameter values Block or DynamicDelivery can result in quarantined messages (the value Allow doesn't quarantine messages). The value of the _Action_ parameter in meaningful only when the value of the _Enable_ parameter is `$true`.
 
 - When you create new Safe Attachments policies without using the _QuarantineTag_ parameter, the default quarantine policy named AdminOnlyAccessPolicy is used for malware detections by Safe Attachments.
 
@@ -478,6 +479,9 @@ To create customized quarantine notifications for up to three languages, do the 
    1. Select the language from the **Choose language** box. The default value is **Default**, which means the default language for the Microsoft 365 organization. For more information, see [How to set language and region settings for Microsoft 365](/office365/troubleshoot/access-management/set-language-and-region).
 
       Although this box is in the middle of the page, you need to select it first. If you enter values in the **Sender display name**, **Subject**, or **Disclaimer** boxes before you select the language value, the other values are removed and you start over when you select the language value.
+
+      > [!NOTE]
+      > The language value **English** maps to every English language code except en-US. If you have users with en-US mailboxes only, use the value **Default**. If you have a mix of mailboxes with en-US and other English languages codes (en-GB, en-CA, en-AU, etc.), use the language value **Default** in one customized quarantine notification, and the language value **English** in another customized quarantine notification.
 
    2. Enter values for **Sender display name**, **Subject**, and **Disclaimer**. The values must be unique for each language. If you try to reuse a value in a different language, you'll get an error when you select **Save**.
    3. Select the **Add** button.
@@ -657,7 +661,7 @@ The relationship between permissions, permissions groups, and the default quaran
 
 |Permission|No access|Limited access|Full access|
 |---|:---:|:---:|:---:|
-|_PermissionToViewHeader_¹|✔|✔|✔|
+|(_PermissionToViewHeader_)¹|✔|✔|✔|
 |**Block sender** (_PermissionToBlockSender_)||✔|✔|
 |**Delete** (_PermissionToDelete_)||✔|✔|
 |**Preview** (_PermissionToPreview_)²||✔|✔|
@@ -677,7 +681,7 @@ The relationship between permissions, permissions groups, and the default quaran
 
 ³ **Allow recipients to release a message from quarantine** isn't honored for messages that were quarantined as **malware** by anti-malware policies or Safe Attachments policies, or as **high confidence phishing** by anti-spam policies.
 
-⁴ This policy is used in [preset security policies](preset-security-policies.md) instead of the policy named DefaultFullAccessPolicy to enable quarantine notifications.
+⁴ This policy is used in [preset security policies](preset-security-policies.md) to enable quarantine notifications instead of the policy named DefaultFullAccessPolicy where notifications are turned off.
 
 ⁵ Your organization might not have the policy named NotificationEnabledPolicy as described in the next section.
 
@@ -785,6 +789,9 @@ If the **Delete** permission is enabled:
 - No effect in quarantine notifications. Deleting a quarantined message from the quarantine notification is not possible.
 
 If the **Delete** permission is disabled, users can't delete their own messages from quarantine (the action isn't available).
+
+> [!TIP]
+> Admins can find out who deleted a quarantined message by searching the admin audit log. For instructions, see [Find who deleted a quarantined message](quarantine-admin-manage-messages-files.md#find-who-deleted-a-quarantined-message).
 
 ##### Preview permission
 

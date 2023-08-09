@@ -40,6 +40,8 @@ This topic describes deploying Defender for Endpoint on iOS on Microsoft Intune 
 
 - Ensure iOS enrollment is done for your users. Users need to have a Defender for Endpoint license assigned in order to use Defender for Endpoint on iOS. Refer to [Assign licenses to users](/azure/active-directory/users-groups-roles/licensing-groups-assign) for instructions on how to assign licenses.
 
+- Ensure the end users have company portal app installed, signed in and enrollment completed.
+
 > [!NOTE]
 > Microsoft Defender for Endpoint on iOS is available in the [Apple App Store](https://aka.ms/mdatpiosappstore).
 
@@ -111,7 +113,7 @@ Configure the supervised mode for Defender for Endpoint app through an App confi
 1. In the next screen, select **Use configuration designer** as the format. Specify the following properties:
     - Configuration Key: `issupervised`
     - Value type: String
-    - Configuration Value: `{{issupervised}}`
+    - Configuration Value: `true`
 
     :::image type="content" source="images/ios-deploy-6.png" alt-text="Image of Microsoft Intune admin center6." lightbox="images/ios-deploy-6.png":::
 
@@ -129,6 +131,8 @@ Configure the supervised mode for Defender for Endpoint app through an App confi
 
 > [!NOTE]
 > For devices that run iOS/iPadOS (in Supervised Mode), there is  custom **.mobileconfig** profile, called the **ControlFilter** profile available. This profile enables Web Protection **without setting up the local loopback VPN on the device**. This gives end-users a seamless experience while still being protected from phishing and other web-based attacks.
+>
+>  However, the **ControlFilter** profile does not work with Always-On VPN (AOVPN) due to platform restrictions.
 
 Admins deploy any one of the given profiles.
 
@@ -231,6 +235,9 @@ Admins can configure auto-setup of VPN profile. This will automatically set up t
 
 2. Tap the Defender for Endpoint app icon (MSDefender) and follow the on-screen instructions to complete the onboarding steps. The details include end-user acceptance of iOS permissions required by Defender for Endpoint on iOS.
 
+> [!NOTE] 
+> Skip this step if you configure zero touch (silent) onboarding. Manually launching application is not necessary if zero touch (silent) onboarding is configured.
+
 3. Upon successful onboarding, the device will start showing up on the Devices list in the Microsoft 365 Defender portal.
 
    :::image type="content" source="images/device-inventory-screen.png" alt-text="The Device inventory page." lightbox="images/device-inventory-screen.png":::
@@ -239,3 +246,4 @@ Admins can configure auto-setup of VPN profile. This will automatically set up t
 
 - [Configure app protection policy to include Defender for Endpoint risk signals (MAM)](ios-install-unmanaged.md)
 - [Configure Defender for Endpoint on iOS features](ios-configure-features.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

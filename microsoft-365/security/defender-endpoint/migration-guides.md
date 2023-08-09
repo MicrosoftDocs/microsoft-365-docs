@@ -52,3 +52,4 @@ Let us know what you think! Submit your feedback at the bottom of the page. We'l
 - [Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
 - [Microsoft 365 Business Premium](../../business-premium/index.md)
 - [Microsoft Defender for Business](../defender-business/mdb-overview.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

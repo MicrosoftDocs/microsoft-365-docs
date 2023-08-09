@@ -44,7 +44,7 @@ search.appverid: met150
 > [!NOTE]
 > If you're using the new, unified Microsoft Defender for Endpoint solution for Windows Server 2012 R2 and 2016, please ensure you are using the latest ADMX files in your central store to get access to the correct Microsoft Defender for Endpoint policy options. Please reference [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) and download the latest files **for use with Windows 10**.
 
-Check out the [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  or  [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) to see the various paths in deploying Defender for Endpoint.
+Check out [Identify Defender for Endpoint architecture and deployment method](deployment-strategy.md) to see the various paths in deploying Defender for Endpoint.
 
 1. Open the GP configuration package file (`WindowsDefenderATPOnboardingPackage.zip`) that you downloaded from the service onboarding wizard. You can also get the package from the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>:
 
@@ -331,3 +331,4 @@ When you configure cloud protection level policy to **Default Microsoft Defender
 - [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
 - [Run a detection test on a newly onboarded Microsoft Defender for Endpoint devices](run-detection-test.md)
 - [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

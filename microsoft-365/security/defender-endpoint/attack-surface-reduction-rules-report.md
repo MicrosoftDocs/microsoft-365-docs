@@ -22,8 +22,6 @@ ms.date: 03/27/2023
 search.appverid: met150
 ---
 
-<!-- v-jweston/jweston-1 is scheduled to resume authorship Apr/May 2023.-->
-
 # Attack surface reduction (ASR) rules report
 
 **Applies to:**
@@ -288,7 +286,7 @@ When you select a file, a **Summary & expected impact** fly out opens, presentin
 
 The Add exclusion page has two buttons for actions that can be used on any detected files (after selection). You can:
 
-- **Add exclusion** which will open Microsoft Intune ASR policy page. For more information, see: [Intune](https://enable-attack-surface-reduction.md#mem) in "Enable ASR rules alternate configuration methods."
+- **Add exclusion** which will open Microsoft Intune ASR policy page. For more information, see: [Intune](enable-attack-surface-reduction.md) in "Enable ASR rules alternate configuration methods."
 - **Get exclusion paths** which will download file paths in a csv format
 
 >:::image type="content" source="images/attack-surface-reduction-rules-report-main-add-exclusions-flyout.png" alt-text="Shows the ASR rules report add exclusions tab flyout impact summary" lightbox="images/attack-surface-reduction-rules-report-main-add-exclusions-flyout.png":::
@@ -302,3 +300,4 @@ The Add exclusion page has two buttons for actions that can be used on any detec
 - [Operationalize attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-operationalize.md)
 - [Attack surface reduction \(ASR\) rules report](attack-surface-reduction-rules-report.md)
 - [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid: 
 ms.collection: 
@@ -18,7 +18,7 @@ description: Learn how to use a prebuilt contracts model in Microsoft Syntex.
 
 # Use a prebuilt model to extract information from contracts in Microsoft Syntex
 
-The prebuilt *contracts model* analyzes and extracts key information from contract documents. The API recognizes contracts in various formats and extracts key contract information, such as client name and address, contract duration, and renewal date.
+The prebuilt *contracts model* analyzes and extracts key information from contract documents. The model recognizes contracts in various formats and extracts key contract information, such as client name and address, contract duration, and renewal date.
 
 > [!NOTE]
 > Currently, this model is available only for .pdf and image file types. More file types will be added in future releases.
@@ -108,8 +108,4 @@ To rename an extractor from the **Extractors** panel:
 - To save changes and return to the model home page, on the **Extractors** panel, select **Save and exit**.
 
 - If you're ready to apply the model to a library, in the document area, select **Next**. On the **Add to library** panel, choose the library to which you want to add the model, and then select **Add**.
-
-## Change the view in a document library
-
-For information about how to set the default view and how to change the view of a document library, see [Choose the view in a document library](choose-library-view.md).
 

@@ -53,3 +53,7 @@ After you generate the document, the values against the mapped fields will autom
    > - If you change the data type of a mapped field and republish the template with the new settings, the new changes are reflected in the corresponding library column. If you choose to proceed with [incompatible data type change such as **Single line of text** to **Number**, or **Number** to **Date and time**](https://support.microsoft.com/office/0d8ddb7b-7dc7-414d-a283-ee9dca891df7), the mapped field will be deslected by default to prevent potential loss of data from the column. If you still choose to reselect the field to be mapped to column, you might lose data from the column values of previously created documents. The content of the documents that are already been generated won't be affected.<br>
    > - Mapping image and table fields to library columns is not supported. 
  
+## See also
+
+[Create conditional sections for templates](content-assembly-conditional-sections.md)
+[Create a document from a modern template](content-assembly-create-document.md)

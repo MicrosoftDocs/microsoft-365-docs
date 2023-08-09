@@ -25,7 +25,7 @@ ms.collection:
 
 Required Conditions:
 
-- _Tenant_ has a sign up country included in _Local Region Geography_, the European Union or the United States.
+- _Tenant_ has a sign up country/region included in _Local Region Geography_, the European Union or the United States.
 
 **Commitment:**
 
@@ -35,7 +35,7 @@ _For current language please refer to the [Privacy and Security Product Terms](h
 
 Required Conditions:
 
-1. _Tenant_ has a sign up country included in _Local Region Geography_ or _Expanded Local Region Geography_.
+1. _Tenant_ has a sign up country/region included in _Local Region Geography_ or _Expanded Local Region Geography_.
 1. _Tenant_ has a valid Advanced Data Residency subscription for all users in the _Tenant_.
 1. The SharePoint Online subscription customer data is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_.
 
@@ -91,7 +91,7 @@ As part of the migration, the _Primary Provisioned Geography_ will change and al
 
 ## **Multi-Geo Capabilities in SharePoint Online / OneDrive for Business**
 
-Multi-Geo capabilities in OneDrive and SharePoint Online enable control of shared resources like SharePoint team sites and Microsoft 365 Group mailboxes stored at rest in a specified _Macro Region Geography_ or _Local Region Geography_.
+Multi-Geo capabilities in OneDrive and SharePoint Online enable control of shared resources like SharePoint team sites and Microsoft 365 group mailboxes stored at rest in a specified _Macro Region Geography_ or _Local Region Geography_.
 
 Each user, Group mailbox, and SharePoint site have a Preferred Data Location (PDL) which denotes the _Macro Region Geography_ or _Local Region Geography_ (location where related data is to be stored. Users' personal data (Exchange mailbox and OneDrive) along with any Microsoft 365 Groups or SharePoint sites that they create can be stored in the specified _Macro Region Geography_ or _Local Region Geographies_ location to meet data residency requirements. You can specify different administrators for each _Macro Region Geography_ or _Local Region Geographies_ location.
 
@@ -517,7 +517,6 @@ Power Apps need to be recreated in the destination location.
 
 SharePoint uses Azure Blob Storage for its content, while the metadata associated with sites and its files is stored within SharePoint. After the site is moved from its source _Geography_ location to its destination _Geography_ location, the service will also move its associated Blob Storage. Blob Storage moves complete in approximately 40 days. This will not have any impact to users interaction with the data.
 
-You can check the Blob Storage move status using the [Get-SPOCrossGeoMoveReport](/powershell/module/sharepoint-online/get-spocrossgeomovereport) cmdlet.
 ****
 
 ### **Enabling SharePoint Multi-Geo in your _Satellite Geography_ location**
@@ -527,7 +526,7 @@ This article is for Global or SharePoint administrators who have created a Multi
 >[!NOTE]
 >If you have added a new _Geography_ location **after March 27th, 2019**, you do not need to perform these instructions, as your new _Geography_ location will already be enabled for OneDrive and SharePoint Multi-Geo.
 
-These instructions will allow you to enable SharePoint in your _Satellite Geography_ location, so your Multi-Geo satellite users can take advantage of both OneDrive and SharePoint Multi-Geo capabilities in O365.
+These instructions will allow you to enable SharePoint in your _Satellite Geography_ location, so your Multi-Geo satellite users can take advantage of both OneDrive and SharePoint Multi-Geo capabilities in Microsoft 365.
 
 >[!IMPORTANT]
 >Please note that this is a one way enablement. Once you set SPO mode, you will not be able to revert your _Tenant_ to OneDrive only Multi-Geo mode without an escalation with support.
@@ -548,4 +547,4 @@ To set a _Geography_ location into SPO mode, connect to the _Geography_ location
 
 ## How can I determine customer data location?
 
-You can find the actual data location in _Tenant_ Admin Center.  As a _Tenant_ administrator you can find the actual data location, for committed data,  by navigating to Admin->Settings->Org Settings->Organization Profile->Data Location. If you do not have a _Tenant_ created, you can have a _Tenant_ created when signing up for a M365 trial.
+You can find the actual data location in _Tenant_ Admin Center.  As a _Tenant_ administrator you can find the actual data location, for committed data,  by navigating to Admin->Settings->Org Settings->Organization Profile->Data Location. If you do not have a _Tenant_ created, you can have a _Tenant_ created when signing up for a Microsoft 365 trial.

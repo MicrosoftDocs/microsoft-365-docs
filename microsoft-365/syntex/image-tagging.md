@@ -1,10 +1,11 @@
 ---
-title: Image tagging in Microsoft Syntex
-ms.author: mikeplum
-author: MikePlumleyMSFT
-manager: serdars
-ms.date: 09/24/2020
+title: Find and manage images using image tagging in Microsoft Syntex
+ms.author: chucked
+author: chuckedmonson
+manager: pamgreen
 audience: admin
+ms.reviewer: shrganguly
+ms.date: 07/27/2023
 ms.topic: conceptual
 ms.service: microsoft-syntex
 ms.custom: admindeeplinkMAC
@@ -14,10 +15,44 @@ ms.collection:
     - m365initiative-syntex
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
-description: Learn about image tagging in Microsoft Syntex.
+description: Learn how to use image tagging to search, sort, filter, and manage images in  Microsoft Syntex.
 ---
 
-# Image tagging in Microsoft Syntex
+# Find and manage images using image tagging in Microsoft Syntex
+
+Before you can use image tagging, you need to enable it in a document library. There are two methods you can use to do this:
+
+- [Use an existing **Image Tags** column](#use-an-existing-image-tags-column)
+- [Enable the **Image Tags** column](#enable-the-image-tags-column)
+
+## Use an existing Image Tags column
+
+If you already have an [**Image Tags** column in your library](https://support.microsoft.com/office/work-with-image-tags-in-a-sharepoint-library), use these steps to enable enhanced image tagging:
+
+1. On the **Image Tags** column, select **Column settings** > **Edit**. 
+
+2. On the **Edit column** panel, in the **Automatically tag images with detected objects** section, toggle the switch to **Yes**.
+
+   ![Screenshot showing the Column settings panel for the Image Tags column.](../media/content-understanding/image-tagger-edit-column-toggle-highlighted.png)  
+ 
+3. Once enabled, any new images uploaded to the library are tagged with the descriptive keywords.
+
+## Enable the Image Tags column
+
+If you don't have an **Image Tags** column in your library, use these steps to enable enhanced image tagging:
+
+1. From the document library, select **Automate** > **Enable image tagger**.
+
+   ![Screenshot showing the Automate menu in a document library.](../media/content-understanding/image-tagger-automate-menu.png) 
+
+2. Enhanced image tagging is then activated. Images uploaded are tagged with a set of descriptive keywords. The keywords are available in the **Image Tags** column that is added to the library view.
+
+   ![Screenshot showing the library view with the Image Tags column.](../media/content-understanding/image-tagger-image-tags-column.png)  
+
+3. Once the **Image Tags** column is configured, you can upload images. The relevant tags are displayed in the library for each image.
+
+<!---
+# Set up image tagging in Microsoft Syntex
 
 (Coming soon)
 
@@ -51,3 +86,4 @@ To turn image tagging on or off
 6. Click **Save**.
 
     ![Screenshot of image tagging control.](../media/content-understanding/sharepoint-syntex-image-tagging-control.png)
+--->

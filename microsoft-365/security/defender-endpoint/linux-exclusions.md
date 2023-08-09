@@ -35,7 +35,7 @@ ms.date: 12/18/2020
 This article provides information on how to define exclusions that apply to on-demand scans, and real-time protection and monitoring.
 
 > [!IMPORTANT]
-> The exclusions described in this article don't apply to other Defender for Endpoint on Linux capabilities, including endpoint detection and response (EDR). Files that you exclude using the methods described in this article can still trigger EDR alerts and other detections.
+> The exclusions described in this article don't apply to other Defender for Endpoint on Linux capabilities, including endpoint detection and response (EDR). Files that you exclude using the methods described in this article can still trigger EDR alerts and other detections. For EDR exclusions, [contact support](/microsoft-365/admin/get-help-support).
 
 You can exclude certain files, folders, processes, and process-opened files from Defender for Endpoint on Linux scans.
 
@@ -60,10 +60,12 @@ Process|A specific process (specified either by the full path or file name) and 
 
 File, folder, and process exclusions support the following wildcards:
 
-Wildcard|Description|Example|Matches|Does not match
----|---|---|---|---
-\*|Matches any number of any characters including none (note that when this wildcard is used inside a path it will substitute only one folder)|`/var/*/*.log`|`/var/log/system.log`|`/var/log/nested/system.log`
-?|Matches any single character|`file?.log`|`file1.log`<br/>`file2.log`|`file123.log`
+Wildcard|Description|Examples|
+---|---|---
+\*|Matches any number of any characters including none (note if this wildcard is not used at the end of the path then it will substitute only one folder)| `/var/*/tmp` includes any file in `/var/abc/tmp` and its subdirectories, and `/var/def/tmp` and its subdirectories. It does not include `/var/abc/log` or `/var/def/log` <p> <p> `/var/*/` includes any file in `/var` and its subdirectories. 
+?|Matches any single character|`file?.log` includes `file1.log` and `file2.log`, but not`file123.log`
+> [!NOTE]
+> When using the * wildcard at the end of the path, it will match all files and subdirectories under the parent of the wildcard.
 
 ## How to configure the list of exclusions
 
@@ -128,15 +130,20 @@ Examples:
 - Add an exclusion for a folder with a wildcard in it:
 
     ```bash
-    mdatp exclusion folder add --path "/var/*/"
+    mdatp exclusion folder add --path "/var/*/tmp"
     ```
 
     > [!NOTE]
-    > This will only exclude paths one level below */var/*, but not folders which are more deeply nested; for example, */var/this-subfolder/but-not-this-subfolder*.
+    > This will only exclude paths below */var/\*/tmp/*, but not folders which are siblings of *tmp*; for example, */var/this-subfolder/tmp*, but not */var/this-subfolder/log*.
 
     ```bash
     mdatp exclusion folder add --path "/var/"
     ```
+    OR
+    ```bash
+    mdatp exclusion folder add --path "/var/*/"
+    ```
+    
 
     > [!NOTE]
     > This will exclude all paths whose parent is */var/*; for example, */var/this-subfolder/and-this-subfolder-as-well*.
@@ -207,3 +214,4 @@ For example, to add `EICAR-Test-File (not a virus)` (the threat name associated 
 ```bash
 mdatp threat allowed add --name "EICAR-Test-File (not a virus)"
 ```
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

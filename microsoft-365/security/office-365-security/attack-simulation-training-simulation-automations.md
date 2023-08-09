@@ -13,15 +13,14 @@ ms.collection:
 description: Admins can learn how to create automated simulations that contain specific techniques and payloads that launch when the specified conditions are met in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 3/29/2023
+ms.date: 6/14/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview" target="_blank">Microsoft Defender for Office 365 plan 2</a>
 ---
 
 # Simulation automations for Attack simulation training
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
-
-**Applies to**
- [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
 In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, simulation automations allow you to run multiple benign cyberattack simulations in your organization. Simulation automations can contain multiple social engineering techniques and payloads, and can start on an automated schedule. Creating a simulation automation is very similar to [creating an individual simulation](attack-simulation-training-simulations.md), except for the ability to select multiple techniques, payloads, and the automation schedule.
 
@@ -294,7 +293,7 @@ On the **Assign training** page, you can assign trainings for the simulation. We
 
 Use the following options on the page to assign trainings as part of the simulation:
 
-- **Select training content preference**: Choose one of the following options in the drop down list:
+- **Select training content preference**: Choose one of the following options in the dropdown list:
 
   - **Microsoft training experience (Recommended)**: This is the default value that has the following associated options to configure on the page:
     - Select one of the following options:

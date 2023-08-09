@@ -25,7 +25,7 @@ ms.collection:
 
 Required Conditions:
 
-Tenant has a sign up country included in Local Region Geography, the European Union or the United States.
+Tenant has a sign up country/region included in Local Region Geography, the European Union or the United States.
 
 _For current language please refer to the Privacy and Security Product Terms <a href="https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all" target="_blank">**webpage**</a> and view the section titled "Location of Customer Data at Rest for Core Online Services"._
 
@@ -38,7 +38,7 @@ _For current language please refer to the Privacy and Security Product Terms <a 
 
 Required Conditions:
 
-1. Tenant has a sign-up country included in _Local Region Geography_ or _Expanded Local Region Geography_.
+1. Tenant has a sign-up country/region included in _Local Region Geography_ or _Expanded Local Region Geography_.
 1. Tenant has a valid Advanced Data Residency subscription for all users in the tenant
 1. The Exchange Online subscription customer data is provisioned in Local Geography or Expanded Local Geography
 

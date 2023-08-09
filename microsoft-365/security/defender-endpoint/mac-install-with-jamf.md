@@ -44,5 +44,6 @@ This is a multi-step process. You'll need to complete all of the following steps
 - [Enroll the Microsoft Defender for Endpoint on macOS devices into Jamf Pro](mac-jamfpro-enroll-devices.md)
 
 
+[!INCLUDE [Defender for Endpoint repackaging warning](../../includes/repackaging-warning.md)]
 
-
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

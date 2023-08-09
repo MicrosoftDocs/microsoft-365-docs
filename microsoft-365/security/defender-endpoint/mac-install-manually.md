@@ -35,7 +35,6 @@ ms.date: 12/18/2020
 This topic describes how to deploy Microsoft Defender for Endpoint on macOS manually. A successful deployment requires the completion of all of the following steps:
 
 - [Download installation and onboarding packages](#download-installation-and-onboarding-packages)
-- [Application installation (macOS 10.15)](#application-installation-macos-1015)
 - [Application installation (macOS 11 and newer versions)](#application-installation-macos-11-and-newer-versions)
 - [Client configuration](#client-configuration)
 
@@ -45,7 +44,9 @@ Before you get started, see [the main Microsoft Defender for Endpoint on macOS p
 
 ## Download installation and onboarding packages
 
-Download the installation and onboarding packages from Microsoft 365 Defender portal:
+Download the installation and onboarding packages from Microsoft 365 Defender portal.
+
+[!INCLUDE [Defender for Endpoint repackaging warning](../../includes/repackaging-warning.md)]
 
 1. In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Settings > Endpoints > Device management > Onboarding**.
 2. In Section 1 of the page, set operating system to **macOS** and Deployment method to **Local script**.
@@ -55,35 +56,6 @@ Download the installation and onboarding packages from Microsoft 365 Defender po
    :::image type="content" source="images/portal-onboarding-macos.png" alt-text="The options to download the installation and onboarding packages" lightbox="images/portal-onboarding-macos.png":::
 
 5. From a command prompt, verify that you have the two files.
-
-## Application installation (macOS 10.15)
-
-To complete this process, you must have admin privileges on the device.
-
-1. Navigate to the downloaded wdav.pkg in Finder and open it.
-
-   :::image type="content" source="images/mdatp-28-appinstall.png" alt-text="The installation of the application" lightbox="images/mdatp-28-appinstall.png":::
-
-2. Select **Continue**, agree with the License terms, and enter the password when prompted.
-
-   :::image type="content" source="images/mdatp-29-appinstalllogin.png" alt-text="The application installation" lightbox="images/mdatp-29-appinstalllogin.png":::
-
-   > [!IMPORTANT]
-   > You will be prompted to allow a driver from Microsoft to be installed (either "System Extension Blocked" or "Installation is on hold" or both. The driver must be allowed to be installed.
-
-     :::image type="content" source="images/mdatp-30-systemextension.png" alt-text="The application's installation" lightbox="images/mdatp-30-systemextension.png":::
-
-3. Select **Open Security Preferences** or **Open System Preferences > Security & Privacy**. Select **Allow**:
-
-   :::image type="content" source="images/mdatp-31-securityprivacysettings.png" alt-text="The Security and privacy window" lightbox="images/mdatp-31-securityprivacysettings.png":::
-
-   The installation proceeds.
-
-   > [!CAUTION]
-   > If you don't select **Allow**, the installation will proceed after 5 minutes. Microsoft Defender for Endpoint will be loaded, but some features, such as real-time protection, will be disabled. See [Troubleshoot kernel extension issues](mac-support-kext.md) for information on how to resolve this.
-
-> [!NOTE]
-> macOS may request to reboot the device upon the first installation of Microsoft Defender for Endpoint. Real-time protection will not be available until the device is rebooted.
 
 ## Application installation (macOS 11 and newer versions)
 
@@ -223,3 +195,4 @@ See [Logging installation issues](mac-resources.md#logging-installation-issues) 
 ## Uninstallation
 
 See [Uninstalling](mac-resources.md#uninstalling) for details on how to remove Microsoft Defender for Endpoint on macOS from client devices.
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

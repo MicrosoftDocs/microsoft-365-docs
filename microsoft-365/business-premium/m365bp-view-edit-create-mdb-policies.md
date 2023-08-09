@@ -9,9 +9,9 @@ audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.date: 03/27/2022
+ms.date: 07/19/2023
 ms.localizationpriority: medium
-ms.reviewer: jomaun
+ms.reviewer: nehabha
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
@@ -38,7 +38,7 @@ Microsoft 365 Business Premium includes two main types of policies to protect yo
 
 These policies are part of Microsoft Defender for Business, included in your Microsoft 365 Business Premium subscription. Information is provided for working with policies in the Microsoft 365 Defender portal or in the Microsoft Intune admin center.
 
-## Working with device polices in the Microsoft 365 Defender portal
+## Working with device policies in the Microsoft 365 Defender portal
 
 The following details apply to working with your policies in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
 
@@ -77,7 +77,7 @@ The following details apply to working with your policies in the Microsoft 365 D
 
 6. On the **Configuration settings** tab, review the settings. If necessary, you can edit the settings for your policy. To get help with this task, see the following articles: 
 
-   - [Understand next-generation configuration settings](../security/defender-business/mdb-next-gen-configuration-settings.md)   
+   - [Understand next-generation configuration settings](../security/defender-business/mdb-next-generation-protection.md)   
    - [Firewall settings](../security/defender-business/mdb-firewall.md)
 
    After you have specified your next-generation protection settings, choose **Next**.
@@ -110,7 +110,7 @@ The following details apply to working with your policies in the Microsoft 365 D
 
    To learn more about device groups, see [Device groups in Microsoft Defender for Business](../security/defender-business/mdb-create-edit-device-groups.md).
 
-6. On the **Configuration settings** tab, specify the settings for your policy, and then choose **Next**. For more information about the individual settings, see [Understand next-generation configuration settings in Microsoft Defender for Business](../security/defender-business/mdb-next-gen-configuration-settings.md).
+6. On the **Configuration settings** tab, specify the settings for your policy, and then choose **Next**. For more information about the individual settings, see [Understand next-generation configuration settings in Microsoft Defender for Business](../security/defender-business/mdb-next-generation-protection.md).
 
 7. On the **Review your policy** tab, review the general information, targeted devices, and configuration settings.
 

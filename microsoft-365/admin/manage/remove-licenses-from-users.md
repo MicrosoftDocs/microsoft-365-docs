@@ -24,7 +24,7 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: "The method you use to unassign product licenses depends on whether you unassign licenses from specific users or from a specific product."
-ms.date: 01/10/2023
+ms.date: 06/13/2023
 ---
 
 # Unassign Microsoft 365 licenses from users

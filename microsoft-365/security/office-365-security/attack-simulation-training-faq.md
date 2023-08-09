@@ -21,21 +21,20 @@ ms.custom:
 description: Admins can learn about deployment considerations and frequently asked questions regarding Attack simulation and training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2 organizations.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 1/31/2023
+ms.date: 6/22/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview" target="_blank">Microsoft Defender for Office 365 plan 2</a>
 ---
 
 # Attack simulation training deployment considerations and FAQ
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-**Applies to**
-- [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
-
-Attack simulation training enables Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2 organizations to measure and manage social engineering risk by allowing the creation and management of phishing simulations that are powered by real-world, de-weaponized phishing payloads. Hyper-targeted training, delivered in partnership with Terranova security, helps improve knowledge and change employee behavior.
+Attack simulation training enables Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2 organizations to measure and manage social engineering risk by allowing the creation and management of phishing simulations that are powered by real-world, harmless phishing payloads. Hyper-targeted training, delivered in partnership with Terranova security, helps improve knowledge and change employee behavior.
 
 For more information about getting started with Attack simulation training, see [Get started using Attack simulation training](attack-simulation-training-get-started.md).
 
-While the whole simulation creation and scheduling experience has been designed to be free-flowing and frictionless, running simulations at an enterprise scale often requires planning. This article helps address specific challenges that we see as our customers run simulations in their own environments.
+While the simulation creation and scheduling experience is designed to be free-flowing and frictionless, simulations at an enterprise scale require planning. This article helps address specific challenges that we see as our customers run simulations in their own environments.
 
 ## Issues with end user experiences
 
@@ -45,7 +44,7 @@ A URL reputation service might identify one or more of the URLs that are used by
 
 :::image type="content" source="../../media/attack-sim-training-faq-chrome-deceptive-site-message.png" alt-text="The Deceptive site ahead warning in Google Chrome" lightbox="../../media/attack-sim-training-faq-chrome-deceptive-site-message.png":::
 
-Note that this issue doesn't affect Microsoft Edge.
+This issue doesn't affect Microsoft Edge.
 
 As part of the planning phase, be sure to check the availability of the URL in your supported web browsers before you use the URL in a phishing campaign. If the URLs are blocked by Google Safe Browsing, [follow this guidance](https://support.google.com/chrome/a/answer/7532419) from Google to allow access to the URLs.
 
@@ -68,31 +67,38 @@ While we have seen few customers being blocked at this layer, it does happen. If
 
 ### Simulation messages not delivered to all targeted users
 
-It's possible that the number of users who actually receive the simulation email messages is less than the number of users who were targeted by the simulation. The following types of users will be excluded as part of target validation:
+It's possible that the number of users who actually receive the simulation email messages is less than the number of users who were targeted by the simulation. The following types of users are excluded as part of target validation:
 
 - Invalid recipient email addresses.
 - Guest users.
 - Users that are no longer active in Azure Active Directory (Azure AD).
 
-Only valid, non-guest users with valid Exchange Online mailboxes will be included in simulations. If you use distribution groups or mail-enabled security groups to target users, you can use the [Get-DistributionGroupMember](/powershell/module/exchange/get-distributiongroupmember) cmdlet in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) to view and validate distribution group members.
+If you use distribution groups or mail-enabled security groups to target users, you can use the [Get-DistributionGroupMember](/powershell/module/exchange/get-distributiongroupmember) cmdlet in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) to view and validate distribution group members.
 
 ## Issues with Attack simulation training reporting
 
-### Attack simulation training reports do not contain any activity details
+### Attack simulation training reports don't contain any activity details
 
-Attack simulation training comes with rich, actionable insights that keep you informed of the threat readiness progress of your employees. If Attack simulation training reports aren't populated with data, verify that audit log search is turned on in your organization (it's on by default).
+Attack simulation training comes with rich, actionable insights that keep you informed of the threat readiness progress of your employees. If Attack simulation training reports aren't populated with data, verify that audit logging is turned on in your organization (it's on by default).
 
-Audit log search is required by Attack simulation training so events can be captured, recorded, and read back. Turning off audit log search has the following consequences for Attack simulation training:
+Audit logging is required by Attack simulation training so events can be captured, recorded, and read back. Turning off audit logging has the following consequences for Attack simulation training:
 
-- Reporting data isn't available across all reports. The reports will appear empty.
+- Reporting data isn't available across all reports. The reports appear empty.
 - Training assignments are blocked, because data isn't available.
 
-To turn on audit log search, see [Turn audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
+To verify that audit logging is on or to turn it on, see [Turn auditing on or off](../../compliance/audit-log-enable-disable.md).
 
 > [!NOTE]
 > Empty activity details can also be caused by no E5 licenses being assigned to users. Verify at least one E5 license is assigned to an active user to ensure that reporting events are captured and recorded.
 
-### Simulation reports are not updated immediately
+### Reporting issues with on-premises mailboxes
+
+Attack simulation training supports on-premises mailboxes, but with reduced reporting functionality:
+
+- Data on whether users read, forwarded, or deleted the simulation email isn't available for on-premises mailboxes.
+- The number of users who reported the simulation email isn't available for on-premises mailboxes.
+
+### Simulation reports aren't updated immediately
 
 Detailed simulation reports aren't updated immediately after you launch a campaign. Don't worry; this behavior is expected.
 
@@ -102,16 +108,16 @@ While a simulation is in the **Scheduled** state, the simulation reports are mos
 
 :::image type="content" source="../../media/attack-sim-training-faq-scheduled-state.png" alt-text="Simulation details showing the simulation in the Scheduled state" lightbox="../../media/attack-sim-training-faq-scheduled-state.png":::
 
-Once the simulation enters the **In progress** stage, you'll notice information starting to trickle into the reporting:
+Once the simulation enters the **In progress** stage, information starts trickling into the reporting:
 
 :::image type="content" source="../../media/attack-sim-training-faq-in-progress-state.png" alt-text="Simulation details showing the simulation in the In progress state" lightbox="../../media/attack-sim-training-faq-in-progress-state.png":::
 
 It can take up to 30 minutes for the individual simulation reports to update after the transition to the **In progress** state. The report data continues to build until the simulation reaches the **Completed** state. Reporting updates occur at the following intervals:
 
 - Every 10 minutes for the first 60 minutes.
-- Every 15 minutes after 60 minutes until 2 days.
-- Every 30 minutes after 2 days until 7 days.
-- Every 60 minutes after 7 days.
+- Every 15 minutes after 60 minutes until two days.
+- Every 30 minutes after two days until seven days.
+- Every 60 minutes after seven days.
 
 Widgets on the **Overview** page provide a quick snapshot of your organization's simulation-based security posture over time. Because these widgets reflect your overall security posture and journey over time, they're updated after each simulation campaign is completed.
 
@@ -137,7 +143,7 @@ If messages that users reported as phishing aren't captured in Attack simulation
 
 If users are assigned training after they report a phishing simulation message, check to see if your organization uses a reporting mailbox to receive user reported messages at <https://security.microsoft.com/securitysettings/userSubmission>. The reporting mailbox needs to be configured to skip many security checks as described in the [reporting mailbox prerequisites](submissions-user-reported-messages-custom-mailbox.md#configuration-requirements-for-the-reporting-mailbox).
 
-If you don't configure the required exclusions for the custom reporting mailbox, these messages might be detonated by Safe Links or Safe Attachments protection, which will cause training assignments.
+If you don't configure the required exclusions for the custom reporting mailbox, the messages might be detonated by Safe Links or Safe Attachments protection, which causes training assignments.
 
 ## Other frequently asked questions
 
@@ -150,7 +156,7 @@ A: Several options are available to target users:
 - Select users from a CSV file (one email address per line).
 - Azure AD group-based targeting.
 
-We've found that campaigns where the targeted users are identified by Azure AD groups are generally easier to manage.
+We've found that campaigns where the targeted users are identified by Azure AD groups are easier to manage.
 
 ### Q: Are there any limits in targeting users while importing from a CSV or adding users?
 
@@ -162,19 +168,23 @@ Managing a large CSV file or adding many individual recipients can be cumbersome
 
 ### Q: Does Microsoft provide payloads in other languages?
 
-A: Currently, there are 40+ localized payloads available in 29+ languages: English, Spanish, German, Japanese, French, Portuguese, Dutch, Italian, Swedish, Chinese (Simplified), Norwegian Bokmål, Polish, Russian, Finnish, Korean, Turkish, Hungarian, Hebrew, Thai, Arabic, Vietnamese, Slovak, Greek, Indonesian, Romanian, Slovenian, Croatian, Catalan, and Other. We've noticed that any direct or machine translations of existing payloads to other languages will lead to inaccuracies and decreased relevance.
+A: Currently, there are 40+ localized payloads available in 29+ languages: English, Spanish, German, Japanese, French, Portuguese, Dutch, Italian, Swedish, Chinese (Simplified), Norwegian Bokmål, Polish, Russian, Finnish, Korean, Turkish, Hungarian, Hebrew, Thai, Arabic, Vietnamese, Slovak, Greek, Indonesian, Romanian, Slovenian, Croatian, Catalan, and Other. We've determined that direct or machine translation of existing payloads to other languages leads to inaccuracies and decreased relevance.
 
 That being said, you can create your own payload in the language of your choice using the custom payload authoring experience. We also strongly recommend that you harvest existing payloads that were used to target users in a specific geography. In other words, let the attackers localize the content for you.
+
+### Q: How many training videos are available?
+
+A: Currently, there are more than 85 training modules available in the content library.
 
 ### Q: How can I switch to other languages for my admin portal and training experience?
 
 A: In Microsoft 365 or Office 365, language configuration is specific and centralized for each user account. For instructions on how to change your language setting, see [Change your display language and time zone in Microsoft 365 for Business](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b).
 
-Note that the configuration change might take up to 30 minutes to synchronize across all services.
+The configuration change might take up to 30 minutes to synchronize across all services.
 
 ### Q: Can I trigger a test simulation to understand what it looks like prior to launching a full-fledged campaign?
 
-A: Yes you can! On the very last **Review Simulation** page in the wizard to create a new simulation, there's an option to **Send a test**. This option sends a sample phishing simulation message to the currently logged in user. After you validate the phishing message in your Inbox, you can submit the simulation.
+A: Yes you can! On the last **Review Simulation** page in the new simulation wizard, select **Send a test**. This option sends a sample phishing simulation message to the currently logged in user. After you validate the phishing message in your Inbox, you can submit the simulation.
 
 :::image type="content" source="../../media/attack-sim-training-simulations-review-simulation.png" alt-text="The Send a test button on the Review simulation page" lightbox="../../media/attack-sim-training-simulations-review-simulation.png":::
 
@@ -196,4 +206,4 @@ So, on the initial run of a campaign with region aware delivery enabled, it migh
 
 ### Q: Does Microsoft collect or store any information that users enter at the Credential Harvest sign-in page, used in the Credential Harvest simulation technique?
 
-A: No. Any information entered at the credential harvest login page is discarded silently. Only the 'click' is recorded to capture the compromise event. Microsoft doesn't collect, log or store any details that users enter at this step.
+A: No. Any information entered at the credential harvest sign-in page is discarded silently. Only the 'click' is recorded to capture the compromise event. Microsoft doesn't collect, log or store any details that users enter at this step.

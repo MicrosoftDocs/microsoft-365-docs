@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
-ms.date: 07/01/2022
+ms.date: 10/01/2022
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -132,10 +132,4 @@ To run the flow:
 
     ![Screenshot showing the Create a flow panel and flow option highlighted.](../media/content-understanding/integrate-create-flow.png) 
 
-## See also
 
-[Share an enterprise model](model-discovery.md)
-
-[Discover other trained models](discover-other-trained-models.md)
-
-[Choose the view in a document library](choose-library-view.md)

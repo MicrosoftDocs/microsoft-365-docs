@@ -1,8 +1,8 @@
 ---
 title: Manage the join experience for Teams Virtual Appointments on browsers
-author: daisyfell
-ms.author: daisyfeller
-manager: samanro
+author: lana-chin
+ms.author: v-chinlana
+manager: serdars
 audience: ITPro
 ms.topic: how-to
 ms.service: microsoft-365-frontline 
@@ -98,7 +98,7 @@ Here are the browsers that are currently supported. We support the latest versio
 |Platform  |Google Chrome |Apple Safari |Microsoft Edge (Chromium)|
 |---------|:---|:---|:---:|
 |Android   | &#x2714; &sup1;      |         |         |
-|iOS    |         | &#x2714; &sup1; &sup2; |         |
+|iOS    | &#x2714; | &#x2714; &sup1; &sup2; |         |
 |macOS     | &#x2714; | &#x2714;|         |
 |Windows    | &#x2714; |   | &#x2714; |
 |Ubuntu/Linux     | &#x2714;         |     |         |
@@ -113,7 +113,7 @@ Here are some things about the user experience to know about with browser join.
 
 ### Screen sharing
 
-The staff member who conducts the appointment can share their screen from their Teams desktop, mobile, or web client with an attendee who joins from a desktop or mobile browser. However, attendees can't share their screen from a desktop or mobile browser.
+The staff member who conducts the appointment can share their screen from their Teams desktop, mobile, or web client with an attendee who joins from a desktop or mobile browser. Attendees can share their screen when joining on desktop, but can't share on a mobile browser.
 
 ### Live captions
 

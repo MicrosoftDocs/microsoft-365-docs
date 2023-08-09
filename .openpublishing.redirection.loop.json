@@ -1,0 +1,9 @@
+{
+    "redirections":[
+       {  
+        "source_path": "microsoft-365/loop/loop-components-sharepoint.md",
+        "redirect_url": "/microsoft-365/loop/loop-workspaces-configuration",
+        "redirect_document_id": true
+       }
+    ]
+ }

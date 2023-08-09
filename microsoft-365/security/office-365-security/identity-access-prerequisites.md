@@ -22,7 +22,7 @@ ms.collection:
   - tier2
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 1/31/2023
+ms.date: 07/24/2023
 ---
 
 # Prerequisite work for implementing Zero Trust identity and device access policies
@@ -117,7 +117,7 @@ Here are some additional recommendations:
 - Use [Azure AD Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-getting-started) to reduce the number of persistent administrative accounts.
 - [Use privileged access management](../../compliance/privileged-access-management-overview.md) to protect your organization from breaches that may use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings.
 - Create and use separate accounts that are assigned [Microsoft 365 administrator roles](../../admin/add-users/about-admin-roles.md) *only for administration*. Admins should have their own user account for regular non-administrative use and only use an administrative account when necessary to complete a task associated with their role or job function.
-- Follow [best practices](/azure/active-directory/admin-roles-best-practices) for securing privileged accounts in Azure AD.
+- Follow [best practices](/azure/active-directory/roles/best-practices) for securing privileged accounts in Azure AD.
 
 ## Next step
 

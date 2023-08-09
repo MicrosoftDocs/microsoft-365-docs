@@ -38,7 +38,7 @@ When you sign up for Microsoft 365 and enter your information, you automatically
 
 ## Create other admin accounts
 
-Use admin accounts only for Microsoft 365 administration. Admins should have a separate user account for their regular use of Microsoft 365 apps, and only use their administrative account when necessary to manage accounts and devices, and while working on other admin functions. It's also a good idea to remove the Microsoft 365 license from your admin accounts so you don't have to pay for extra licenses.
+Use admin accounts only for Microsoft 365 administration. Admins should have a separate user account for their regular use of Microsoft 365 Apps, and only use their administrative account when necessary to manage accounts and devices, and while working on other admin functions. It's also a good idea to remove the Microsoft 365 license from your admin accounts so you don't have to pay for extra licenses.
 
 You'll want to set up at least one other Global admin account to give admin access to another trusted employee. You can also create separate admin accounts for user management (this role is called **User management administrator**). For more information, see [about admin roles](/office365/admin/add-users/about-admin-roles).
 
@@ -101,4 +101,4 @@ To protect all your admin accounts, make sure to follow these recommendations:
 
 ## Next objective
 
-[Increase threat protection for Microsoft 365 Business Premium](m365bp-increase-protection.md)
+[Increase threat protection for Microsoft 365 Business Premium](m365bp-protect-against-malware-cyberthreats.md)

@@ -1,9 +1,9 @@
 ---
 title: Use PowerShell to connect Shifts to UKG Dimensions
-author: samanro
-ms.author: samanro
+author: lana-chin
+ms.author: v-chinlana
+manager: serdars
 ms.reviewer: imarquesgil
-manager: pamgreen
 ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
@@ -28,7 +28,7 @@ Use the [Microsoft Teams Shifts connector for UKG Dimensions](shifts-connectors.
 
 In this article, we walk you through how to use PowerShell to set up and configure the connector to integrate Shifts with UKG Dimensions.
 
-To set up the connection, you run a PowerShell script. The script configures the connector, applies sync settings, creates the connection, and maps UKG Dimensions instances to teams. Sync settings determine the features enabled in Shifts and the schedule information that's synced between UKG Dimensions and Shifts. Mappings define the sync relationship between your UKG Dimensions instances and teams in Teams. You can map to existing teams and new teams.
+To set up the connection, you run a PowerShell script. The script configures the connector, applies sync settings, creates the connection, and maps UKG Dimensions instances to teams. Sync settings determine the features enabled in Shifts and the schedule information that's synced between UKG Dimensions and Shifts. Mappings define the sync relationship between your UKG Dimensions instances and teams in Microsoft Teams. You can map to existing teams and new teams.
 
 We provide two scripts. You can use either script, depending on whether you want to map to existing teams or create new teams to map to.
 
@@ -59,7 +59,7 @@ With UKG Dimensions as the system of record, your frontline workers can efficien
 
 ## Connect to Teams
 
-Run the following to connect to Teams.
+Run the following to connect to Microsoft Teams.
 
 ```powershell
 Connect-MicrosoftTeams
@@ -81,29 +81,26 @@ Take note of the TeamIds of the teams you want to map. The script will prompt yo
 
 ## Run the script
 
-Run the script:
+Run one of these two scripts, depending on whether you're creating a new team or mapping to an existing team:
 
-- To set up a connection and create new teams to map, [run this script](#set-up-a-connection-and-create-new-teams-to-map).
-- To set up a connection and map to existing teams, [run this script](#set-up-a-connection-and-map-to-existing-teams).
+- To set up a connection while creating a new team within Microsoft Teams and mapping a UKG team to the new team, run the [new teams script](#set-up-a-connection-and-create-a-new-team).
+- To set up a connection and map to an existing team within Microsoft Teams, run the [existing teams script](#set-up-a-connection-and-map-an-existing-team).
 
-The script does the following actions. You'll be prompted to enter setup and configuration details.
+Follow the on-screen instructions when you run the script. The script will complete these actions:
 
-1. Tests and verifies the connection to UKG Dimensions using the UKG Dimensions service account credentials and service URLs that you enter.
-1. Configures the Shifts connector.
-1. Applies sync settings. These settings include the sync frequency (in minutes) and the schedule data that's synced between UKG Dimensions and Shifts. Schedule data is defined in the following parameters:
-
-    - The **enabledConnectorScenarios** parameter defines data that's synced from UKG Dimensions to Shifts. Options are `Shift`, `SwapRequest`, `OfferShiftRequest`, `UserShiftPreferences`, `OpenShift`, `OpenShiftRequest`, `TimeOff`, `TimeOffRequest`.
-    - The **enabledWfiScenarios** parameter defines data that's synced from Shifts to UKG Dimensions. Options are `SwapRequest`, `OfferShiftRequest`, `OpenShiftRequest`, `TimeOffRequest`, `UserShiftPreferences`.
+1. Test and verify the connection to UKG Dimensions using the UKG Dimensions service account credentials and service URLs that you enter.
+1. Apply sync settings. These settings include the sync frequency (in minutes) and the schedule data synced between UKG Dimensions and Shifts. You can enable schedule data defined by these scenarios:  `Shift`, `SwapRequest`, `OfferShiftRequest`, `UserShiftPreferences`, `OpenShift`, `OpenShiftRequest`, `TimeOff`, `TimeOffRequest`.
 
     To learn more, see [New-CsTeamsShiftsConnectionInstance](/powershell/module/teams/new-csteamsshiftsconnectioninstance). To see the list of supported sync options for each parameter, run [Get-CsTeamsShiftsConnectionConnector](/powershell/module/teams/get-csteamsshiftsconnectionconnector).
 
-    > [!IMPORTANT]
-    > The script enables sync for all these options. If you want to change sync settings, you can do so after the connection is set up. To learn more, see [Use PowerShell to manage your Shifts connection to UKG Dimensions](shifts-connector-ukg-powershell-manage.md).
+> [!NOTE]
+> The script you select will enable sync for each supported sync option. If you want to change sync settings, you can do so after the connection is set up. To learn more, see [Use PowerShell to manage your Shifts connection to UKG Dimensions](shifts-connector-ukg-powershell-manage.md).
 
-1. Creates the connection.
-1. Maps UKG Dimensions instances to teams. Mappings are based on the UKG Dimensions instance IDs and TeamIds that you enter or new teams you create, depending on the script that you run. If a team has an existing schedule, the script removes schedule data for the date and time range that you specify.
+1. Map UKG Dimensions instances to your teams within Microsoft Teams.
+    - If you select the new teams script to create new teams, mappings are based on the new teams you create.
+    - If you select the existing teams script above to map existing teams, mappings are based on UKG Dimensions instance IDs and TeamIds that you enter. If a team has an existing schedule, the script removes all schedule data.
 
-A Success message on the screen indicates that your connection is successfully set up.
+After you run the script, a **Success** message confirms if your connection is successfully set up.
 
 ## Manage your connection
 
@@ -121,17 +118,17 @@ You can use PowerShell to view an error report, change connection settings, disa
 
 ## Scripts
 
-### Set up a connection and create new teams to map
+### Set up a connection and create a new team
 
 ```powershell
 #Map WFM instances to teams script
-Write-Host "Map WFM sites to teams"
+Write-Output "Map WFM sites to teams"
 Start-Sleep 1
 
 #Ensure Teams module is at least version x
-Write-Host "Checking Teams module version"
+Write-Output "Checking Teams module version"
 try {
-    Get-InstalledModule -Name "MicrosoftTeams" -MinimumVersion 4.7.0
+    Get-InstalledModule -Name "MicrosoftTeams" -MinimumVersion 5.2.0
 } catch {
     throw
 }
@@ -139,23 +136,24 @@ try {
 #Connect to MS Graph
 Connect-MgGraph -Scopes "User.Read.All","Group.ReadWrite.All"
 
-#List connector types available (comment out if not implemented for preview)
-Write-Host "Listing connector types available"
+#List connector types available
+Write-Output "Listing connector types available"
 $UkgId = "95BF2848-2DDA-4425-B0EE-D62AEED4C0A0"
 $connectors = Get-CsTeamsShiftsConnectionConnector
-write $connectors
-$Ukg = $connectors | where {$_.Id -match $UkgId}
-$enabledConnectorScenario = $Ukg.SupportedScenario
-$wfiSupportedScenario = $Ukg.wfiSupportedScenario
+Write-Output $connectors
+$Ukg = $connectors | Where-Object {$_.Id -match $UkgId}
+if ($NULL -eq $Ukg) {
+    throw "UKG Dimensions not currently supported"
+}
 
 #Prompt for entering of WFM username and password
-$WfmUserName = Read-Host -Prompt 'Input your WFM user name'
-$WfmPwd = Read-Host -Prompt 'Input your WFM password' -AsSecureString
+$WfmUserName = Read-Host -Prompt 'Input your UKG account username'
+$WfmPwd = Read-Host -Prompt 'Input your UKG account password' -AsSecureString
 $plainPwd =[Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($WfmPwd))
 
 #Test connection settings
-Write-Host "Testing connection settings"
-$InstanceName = Read-Host -Prompt 'Input connection instance name'
+Write-Output "Testing connection settings"
+$ConnectionName = Read-Host -Prompt 'Input connection name'
 $apiUrl = Read-Host -Prompt 'Input connector api url'
 $ssoUrl = Read-Host -Prompt 'Input connector sso url'
 $clientId = Read-Host -Prompt 'Input connector client id'
@@ -165,7 +163,7 @@ $ClientSecret = Read-Host -Prompt 'Input your client secret' -AsSecureString
 $plainSecret =[Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($ClientSecret))
 
 $testResult = Test-CsTeamsShiftsConnectionValidate `
-    -Name $InstanceName `
+    -Name $ConnectionName `
     -ConnectorId $UkgId `
     -ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificUkgDimensionsSettingsRequest `
         -Property @{
@@ -177,132 +175,193 @@ $testResult = Test-CsTeamsShiftsConnectionValidate `
             LoginUserName = $WfmUserName
             LoginPwd = $plainPwd
         })
-if ($testResult.Code -ne $NULL) {
-    write $testResult
+if ($NULL -ne $testResult.Code) {
+    Write-Output $testResult
     throw "Validation failed, conflict found"
 }
-Write-Host "Test complete, no conflicts found"
+Write-Output "Test complete, no conflicts found"
 
-#Create a connection instance (includes WFM site team ids)
-Write-Host "Creating a connection instance"
-$designatorName = Read-Host -Prompt "Input designated actor's user name"
-$domain = $designatorName.Split("@")[1]
-$designator = Get-MgUser -UserId $designatorName
+#Create a connection
+Write-Output "Creating a connection"
+$ConnectionResponse = New-CsTeamsShiftsConnection `
+    -Name $ConnectionName `
+    -ConnectorId $UkgId `
+    -ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificUkgDimensionsSettingsRequest `
+        -Property @{
+            apiUrl = $apiUrl
+            ssoUrl = $ssoUrl
+            appKey = $plainKey
+            clientId = $clientId
+            clientSecret = $plainSecret
+            LoginUserName = $WfmUserName
+            LoginPwd = $plainPwd
+        })
+
+$ConnectionId = $ConnectionResponse.Id
+if ($null -ne $ConnectionId){
+    Write-Output "Successfully created connection"
+} else {
+    throw "Connection creation failed"
+}
+
+#Create a connection instance
+Write-Output "Creating a connection instance"
+$designatedActorName = Read-Host -Prompt "Input Microsoft 365 System Account (person@contoso.com)"
+$designator = Get-MgUser -UserId $designatedActorName
 $teamsUserId = $designator.Id
-$syncFreq = Read-Host -Prompt "Input sync frequency"
+$syncFreq = Read-Host -Prompt "Input sync frequency in minutes"
+$InstanceName = Read-Host -Prompt "Input connection instance name"
+
+#Read sync scenarios for connection instance
+function GetSyncScenarioSetting {
+    param (
+        $SettingName
+    )
+    $TwoWay = New-Object System.Management.Automation.Host.ChoiceDescription '&TwoWay', 'TwoWay'
+    $Disabled = New-Object System.Management.Automation.Host.ChoiceDescription '&Disabled', 'Disabled'
+    $FromWfmToShifts = New-Object System.Management.Automation.Host.ChoiceDescription '&FromWfmToShifts', 'FromWfmToShifts'
+    $options = [System.Management.Automation.Host.ChoiceDescription[]]($TwoWay, $Disabled, $FromWfmToShifts)
+    $result = $host.ui.PromptForChoice("Set sync scenario for $SettingName", "", $options, 0)
+
+    switch ($result)
+    {
+        0 { return "TwoWay" }
+        1 { return "Disabled" }
+        2 { return "FromWfmToShifts" }
+    }
+}
+$SyncScenarioOfferShiftRequest = GetSyncScenarioSetting "Offer Shift Request"
+$SyncScenarioOpenShift = GetSyncScenarioSetting "Open Shift"
+$SyncScenarioOpenShiftRequest = GetSyncScenarioSetting "Open Shift Request"
+$SyncScenarioShift = GetSyncScenarioSetting "Shift"
+$SyncScenarioSwapRequest = GetSyncScenarioSetting "Swap Request"
+$SyncScenarioTimeCard = GetSyncScenarioSetting "Time Card"
+$SyncScenarioTimeOff = GetSyncScenarioSetting "Time Off"
+$SyncScenarioTimeOffRequest = GetSyncScenarioSetting "Time Off Request"
+$SyncScenarioUserShiftPreference = GetSyncScenarioSetting "User Shift Preferences"
 
 #Read admin email list
 [psobject[]]$AdminEmailList = @()
 while ($true){
-$AdminEmail = Read-Host -Prompt "Enter admin's email to receive error report"
-$AdminEmailList += $AdminEmail
-$title    = 'Adding another email'
-$question = 'Would you like to add another admin email?'
-$choices  = '&Yes', '&No'
-$decision = $Host.UI.PromptForChoice($title, $question, $choices, 1)
-if ($decision -eq 1) {
-    break
-}
+    $AdminEmail = Read-Host -Prompt "Enter admin's email to receive error report"
+    $AdminEmailList += $AdminEmail
+    $title    = 'Adding another email'
+    $question = 'Would you like to add another admin email?'
+    $choices  = '&Yes', '&No'
+    $decision = $Host.UI.PromptForChoice($title, $question, $choices, 1)
+    if ($decision -eq 1) {
+        break
+    }
 }
 $InstanceResponse = New-CsTeamsShiftsConnectionInstance `
-    -ConnectorId $UkgId `
+    -ConnectionId $ConnectionId `
     -ConnectorAdminEmail $AdminEmailList `
     -DesignatedActorId $teamsUserId `
-    -EnabledConnectorScenario $enabledConnectorScenario `
-    -EnabledWfiScenario $wfiSupportedScenario `
     -Name $InstanceName `
     -SyncFrequencyInMin $syncFreq `
-    -ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificUkgDimensionsSettingsRequest `
-        -Property @{
-            apiUrl = $apiUrl
-            ssoUrl = $ssoUrl
-            appKey = $plainKey
-            clientId = $clientId
-            clientSecret = $plainSecret
-            LoginUserName = $WfmUserName
-            LoginPwd = $plainPwd
-        })
+    -SyncScenarioOfferShiftRequest $SyncScenarioOfferShiftRequest `
+    -SyncScenarioOpenShift $SyncScenarioOpenShift `
+    -SyncScenarioOpenShiftRequest $SyncScenarioOpenShiftRequest `
+    -SyncScenarioShift $SyncScenarioShift `
+    -SyncScenarioSwapRequest $SyncScenarioSwapRequest `
+    -SyncScenarioTimeCard $SyncScenarioTimeCard `
+    -SyncScenarioTimeOff $SyncScenarioTimeOff `
+    -SyncScenarioTimeOffRequest $SyncScenarioTimeOffRequest `
+    -SyncScenarioUserShiftPreference $SyncScenarioUserShiftPreference
+
 $InstanceId = $InstanceResponse.id
-$Etag = $InstanceResponse.etag
-if ($InstanceId -ne $null){
-    Write-Host "Success"
+if ($null -ne $InstanceId){
+    Write-Output "Success"
 } else {
     throw "Connector instance creation failed"
 }
 
-#Retrieve the list of instances
-Write-Host "Listing the WFM team sites"
-$WfmTeamIds = Get-CsTeamsShiftsConnectionWfmTeam -ConnectorInstanceId $InstanceId
-write $WfmTeamIds
-if (($WfmTeamIds -ne $NULL) -and ($WfmTeamIds.Count -gt 0)){
-    [System.String]$WfmTeamId = Read-Host -Prompt "Input the ID of WFM team you want to map"
-}
-else {
-    throw "The WfmTeamId list is null or empty"
-}
-
-#Retrieve the list of WFM users and their roles
-Write-Host "Listing WFM users and roles"
-$WFMUsers = Get-CsTeamsShiftsConnectionWfmUser -ConnectorInstanceId $InstanceId -WfmTeamId $WfmTeamId
-write $WFMUsers
-
 #Keep mapping teams until user stops it
+$mappings=@()
 while ($true)
 {
+    #Create a new Teams team with owner set to system account and name set to the site name
+    Write-Output "Creating a Teams team"
+    $teamsTeamName = Read-Host -Prompt "Input the Teams team name"
+    $Team = New-Team -DisplayName $teamsTeamName -Visibility "Public" -Owner $teamsUserId
+    Write-Output "Successfully created a team"
+    $TeamsTeamId=$Team.GroupId
 
-#Create a new Teams team with owner set to system account and name set to the site name
-Write-Host "Creating a Teams team"
-$teamsTeamName = Read-Host -Prompt "Input the Teams team name"
-$Team = New-Team -DisplayName $teamsTeamName -Visibility "Public" -Owner $teamsUserId
-Write-Host "Success"
-$TeamsTeamId=$Team.GroupId
+    #Retrieve the list of wfm locations
+    Write-Output "Listing the WFM team sites"
+    $WfmTeamIds = Get-CsTeamsShiftsConnectionWfmTeam -ConnectorInstanceId $InstanceId
+    Write-Output $WfmTeamIds
+    if (($NULL -ne $WfmTeamIds) -and ($WfmTeamIds.Count -gt 0)){
+        [System.String]$WfmTeamId = Read-Host -Prompt "Input the ID of WFM team you want to map"
+    }
+    else {
+        throw "The WfmTeamId list is null or empty"
+    }
 
-#Add users to the Team for Shifts
-Write-Host "Adding users to Teams team"
-$currentUser = Read-Host -Prompt "Input the current user's user name or ID"
-Add-TeamUser -GroupId $TeamsTeamId -User $currentUser -Role Owner
-$failedWfmUsers=@()
-foreach ($user in $WFMUsers) {
-    try {
-    $userEmail = $user.Name + "@" +$domain
-    Add-TeamUser -GroupId $TeamsTeamId -User $userEmail
-    } catch {
-        $failedWfmUsers+=$user
+    #Retrieve the list of WFM users and their roles
+    Write-Output "Listing WFM users and roles"
+    $WFMUsers = Get-CsTeamsShiftsConnectionWfmUser -ConnectorInstanceId $InstanceId -WfmTeamId $WfmTeamId
+    Write-Output $WFMUsers
+
+    #Add users to the Team for Shifts
+    Write-Output "Adding users to Teams team"
+    $currentUser = Read-Host -Prompt "Input the current user's user name or AAD ID"
+    Add-TeamUser -GroupId $TeamsTeamId -User $currentUser -Role Owner
+    $failedWfmUsers=@()
+    foreach ($user in $WFMUsers) {
+        try {
+        $userEmail = $user.Name + "@" +$domain
+        Add-TeamUser -GroupId $TeamsTeamId -User $userEmail
+        } catch {
+            $failedWfmUsers+=$user
+        }
+    }
+    if($failedWfmUsers.Count -gt 0){
+        Write-Output "There are WFM users not existed in Teams tenant:"
+        Write-Output $failedWfmUsers
+    }
+
+    #Enable scheduling in the group
+    $RequestBody = @{
+        Enabled = $true
+        TimeZone = "America/Los_Angeles"
+    }
+    $teamUpdateUrl="https://graph.microsoft.com/v1.0/teams/"+$TeamsTeamId+"/schedule"
+    Invoke-MgGraphRequest -Uri $teamUpdateUrl -Method PUT -Body $RequestBody
+
+    #Create a mapping of the new team to the instance
+    Write-Output "Create a mapping of the new team to the site"
+    $TimeZone = Read-Host -Prompt "Input the time zone of team mapping"
+    $mapping = @{
+        teamId = $TeamsTeamId
+        wfmTeamId = $WfmTeamId
+        timeZone = $TimeZone
+        }
+    $mappings += , $mapping
+
+    $title    = 'Connecting another team'
+    $question = 'Would you like to connect another team?'
+    $choices  = '&Yes', '&No'
+
+    $decision = $Host.UI.PromptForChoice($title, $question, $choices, 1)
+    if ($decision -eq 1) {
+        break
     }
 }
-if($failedWfmUsers.Count -gt 0){
-    Write-Host "There are WFM users not existed in Teams tenant:"
-    write $failedWfmUsers
+$batchMappingResponse = New-CsTeamsShiftsConnectionBatchTeamMap -ConnectorInstanceId $InstanceId -TeamMapping @($mappings)
+if ($null -ne $batchMappingResponse.OperationId){
+    "The mapping has begun asynchronously. To query mapping results run Get-CsTeamsShiftsConnectionOperation with the operation Id."
 }
-
-#Enable scheduling in the group
-$RequestBody = @{
-    Enabled = $true
-    TimeZone = "America/Los_Angeles"
+else {
+    throw "The mapping has failed due to validation errors."
 }
-$teamUpdateUrl="https://graph.microsoft.com/v1.0/teams/"+$TeamsTeamId+"/schedule"
-$Schedule = Invoke-MgGraphRequest -Uri $teamUpdateUrl -Method PUT -Body $RequestBody
+Write-Output $batchMappingResponse
 
-#Create a mapping of the new team to the instance
-Write-Host "Create a mapping of the new team to the site"
-$TimeZone = Read-Host -Prompt "Input the time zone of team mapping"
-$teamMappingResult = New-CsTeamsShiftsConnectionTeamMap -ConnectorInstanceId $InstanceId -TeamId $TeamsTeamId -TimeZone $TimeZone -WfmTeamId $WfmTeamId
-Write-Host "Success"
-
-$title    = 'Connecting another team'
-$question = 'Would you like to connect another team?'
-$choices  = '&Yes', '&No'
-
-$decision = $Host.UI.PromptForChoice($title, $question, $choices, 1)
-if ($decision -eq 1) {
-    break
-}
-}
 Remove-TeamUser -GroupId $TeamsTeamId -User $currentUser -Role Owner
 Disconnect-MgGraph
 ```
 
-### Set up a connection and map to existing teams
+### Set up a connection and map an existing team
 
 ```powershell
 #Map WFM instances to existing teams script
@@ -312,7 +371,7 @@ Start-Sleep 1
 #Ensure Teams module is at least version x
 Write-Host "Checking Teams module version"
 try {
-    Get-InstalledModule -Name "MicrosoftTeams" -MinimumVersion 4.7.0
+    Get-InstalledModule -Name "MicrosoftTeams" -MinimumVersion 5.2.0
 } catch {
     throw
 }
@@ -320,23 +379,24 @@ try {
 #Connect to MS Graph
 Connect-MgGraph -Scopes "User.Read.All","Group.ReadWrite.All"
 
-#List connector types available (comment out if not implemented for preview)
-Write-Host "Listing connector types available"
+#List connector types available
+Write-Output "Listing connector types available"
 $UkgId = "95BF2848-2DDA-4425-B0EE-D62AEED4C0A0"
 $connectors = Get-CsTeamsShiftsConnectionConnector
-write $connectors
-$ukg = $connectors | where {$_.Id -match $UkgId}
-$enabledConnectorScenario = $ukg.SupportedScenario
-$wfiSupportedScenario = $ukg.wfiSupportedScenario
+Write-Output $connectors
+$Ukg = $connectors | Where-Object {$_.Id -match $UkgId}
+if ($NULL -eq $Ukg) {
+    throw "UKG Dimensions not currently supported"
+}
 
 #Prompt for entering of WFM username and password
-$WfmUserName = Read-Host -Prompt 'Input your WFM user name'
-$WfmPwd = Read-Host -Prompt 'Input your WFM password' -AsSecureString
+$WfmUserName = Read-Host -Prompt 'Input your UKG account username'
+$WfmPwd = Read-Host -Prompt 'Input your UKG account password' -AsSecureString
 $plainPwd =[Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($WfmPwd))
 
 #Test connection settings
-Write-Host "Testing connection settings"
-$InstanceName = Read-Host -Prompt 'Input connection instance name'
+Write-Output "Testing connection settings"
+$ConnectionName = Read-Host -Prompt 'Input connection name'
 $apiUrl = Read-Host -Prompt 'Input connector api url'
 $ssoUrl = Read-Host -Prompt 'Input connector sso url'
 $clientId = Read-Host -Prompt 'Input connector client id'
@@ -346,7 +406,7 @@ $ClientSecret = Read-Host -Prompt 'Input your client secret' -AsSecureString
 $plainSecret =[Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($ClientSecret))
 
 $testResult = Test-CsTeamsShiftsConnectionValidate `
-    -Name $InstanceName `
+    -Name $ConnectionName `
     -ConnectorId $UkgId `
     -ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificUkgDimensionsSettingsRequest `
         -Property @{
@@ -358,131 +418,216 @@ $testResult = Test-CsTeamsShiftsConnectionValidate `
             LoginUserName = $WfmUserName
             LoginPwd = $plainPwd
         })
-if ($testResult.Code -ne $NULL) {
-    write $testResult
+if ($NULL -ne $testResult.Code) {
+    Write-Output $testResult
     throw "Validation failed, conflict found"
 }
-Write-Host "Test complete, no conflicts found"
+Write-Output "Test complete, no conflicts found"
 
-#Create a connection instance (includes WFM site team ids)
-Write-Host "Creating a connection instance"
-$designatorName = Read-Host -Prompt "Input designated actor's user name"
-$domain = $designatorName.Split("@")[1]
-$designator = Get-MgUser -UserId $designatorName
+#Create a connection
+Write-Output "Creating a connection"
+$ConnectionResponse = New-CsTeamsShiftsConnection `
+    -Name $ConnectionName `
+    -ConnectorId $UkgId `
+    -ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificUkgDimensionsSettingsRequest `
+        -Property @{
+            apiUrl = $apiUrl
+            ssoUrl = $ssoUrl
+            appKey = $plainKey
+            clientId = $clientId
+            clientSecret = $plainSecret
+            LoginUserName = $WfmUserName
+            LoginPwd = $plainPwd
+        })
+
+$ConnectionId = $ConnectionResponse.Id
+if ($null -ne $ConnectionId){
+    Write-Output "Successfully created connection"
+} else {
+    throw "Connection creation failed"
+}
+
+#Create a connection instance
+Write-Output "Creating a connection instance"
+$designatedActorName = Read-Host -Prompt "Input Microsoft 365 System Account (person@contoso.com)"
+$designator = Get-MgUser -UserId $designatedActorName
 $teamsUserId = $designator.Id
-$syncFreq = Read-Host -Prompt "Input sync frequency. Value should be equal to or more than 10."
+$syncFreq = Read-Host -Prompt "Input sync frequency in minutes"
+$InstanceName = Read-Host -Prompt "Input connection instance name"
+
+#Read sync scenarios for connection instance
+function GetSyncScenarioSetting {
+    param (
+        $SettingName
+    )
+    $TwoWay = New-Object System.Management.Automation.Host.ChoiceDescription '&TwoWay', 'TwoWay'
+    $Disabled = New-Object System.Management.Automation.Host.ChoiceDescription '&Disabled', 'Disabled'
+    $FromWfmToShifts = New-Object System.Management.Automation.Host.ChoiceDescription '&FromWfmToShifts', 'FromWfmToShifts'
+    $options = [System.Management.Automation.Host.ChoiceDescription[]]($TwoWay, $Disabled, $FromWfmToShifts)
+    $result = $host.ui.PromptForChoice("Set sync scenario for $SettingName", "", $options, 0)
+
+    switch ($result)
+    {
+        0 { return "TwoWay" }
+        1 { return "Disabled" }
+        2 { return "FromWfmToShifts" }
+    }
+}
+$SyncScenarioOfferShiftRequest = GetSyncScenarioSetting "Offer Shift Request"
+$SyncScenarioOpenShift = GetSyncScenarioSetting "Open Shift"
+$SyncScenarioOpenShiftRequest = GetSyncScenarioSetting "Open Shift Request"
+$SyncScenarioShift = GetSyncScenarioSetting "Shift"
+$SyncScenarioSwapRequest = GetSyncScenarioSetting "Swap Request"
+$SyncScenarioTimeCard = GetSyncScenarioSetting "Time Card"
+$SyncScenarioTimeOff = GetSyncScenarioSetting "Time Off"
+$SyncScenarioTimeOffRequest = GetSyncScenarioSetting "Time Off Request"
+$SyncScenarioUserShiftPreference = GetSyncScenarioSetting "User Shift Preferences"
 
 #Read admin email list
 [psobject[]]$AdminEmailList = @()
 while ($true){
-$AdminEmail = Read-Host -Prompt "Enter admin's email to receive error report"
-$AdminEmailList += $AdminEmail
-$title    = 'Adding another email'
-$question = 'Would you like to add another admin email?'
-$choices  = '&Yes', '&No'
-$decision = $Host.UI.PromptForChoice($title, $question, $choices, 1)
-if ($decision -eq 1) {
-    break
+    $AdminEmail = Read-Host -Prompt "Enter admin's email to receive error report"
+    $AdminEmailList += $AdminEmail
+    $title    = 'Adding another email'
+    $question = 'Would you like to add another admin email?'
+    $choices  = '&Yes', '&No'
+    $decision = $Host.UI.PromptForChoice($title, $question, $choices, 1)
+    if ($decision -eq 1) {
+        break
+    }
 }
-}
-
 $InstanceResponse = New-CsTeamsShiftsConnectionInstance `
-    -ConnectorId $UkgId `
+    -ConnectionId $ConnectionId `
     -ConnectorAdminEmail $AdminEmailList `
     -DesignatedActorId $teamsUserId `
-    -EnabledConnectorScenario $enabledConnectorScenario `
-    -EnabledWfiScenario $wfiSupportedScenario `
     -Name $InstanceName `
     -SyncFrequencyInMin $syncFreq `
-    -ConnectorSpecificSettings (New-Object Microsoft.Teams.ConfigAPI.Cmdlets.Generated.Models.ConnectorSpecificUkgDimensionsSettingsRequest `
-        -Property @{
-            apiUrl = $apiUrl
-            ssoUrl = $ssoUrl
-            appKey = $plainKey
-            clientId = $clientId
-            clientSecret = $plainSecret
-            LoginUserName = $WfmUserName
-            LoginPwd = $plainPwd
-        })
+    -SyncScenarioOfferShiftRequest $SyncScenarioOfferShiftRequest `
+    -SyncScenarioOpenShift $SyncScenarioOpenShift `
+    -SyncScenarioOpenShiftRequest $SyncScenarioOpenShiftRequest `
+    -SyncScenarioShift $SyncScenarioShift `
+    -SyncScenarioSwapRequest $SyncScenarioSwapRequest `
+    -SyncScenarioTimeCard $SyncScenarioTimeCard `
+    -SyncScenarioTimeOff $SyncScenarioTimeOff `
+    -SyncScenarioTimeOffRequest $SyncScenarioTimeOffRequest `
+    -SyncScenarioUserShiftPreference $SyncScenarioUserShiftPreference
+
 $InstanceId = $InstanceResponse.id
-$Etag = $InstanceResponse.etag
-if ($InstanceId -ne $null){
-    Write-Host "Success"
+if ($null -ne $InstanceId){
+    Write-Output "Success"
 } else {
     throw "Connector instance creation failed"
 }
 
-#Retrieve the list of sites
-Write-Host "Listing the WFM team sites"
-$WfmTeamIds = Get-CsTeamsShiftsConnectionWfmTeam -ConnectorInstanceId $InstanceId
-write $WfmTeamIds
-if (($WfmTeamIds -ne $NULL) -and ($WfmTeamIds.Count -gt 0)){
-    [System.String]$WfmTeamId = Read-Host -Prompt "Input the ID of WFM team you want to map"
-}
-else {
-    throw "The WfmTeamId list is null or empty"
-}
-
-#Retrieve the list of WFM users and their roles
-Write-Host "Listing WFM users and roles"
-$WFMUsers = Get-CsTeamsShiftsConnectionWfmUser -ConnectorInstanceId $InstanceId -WfmTeamId $WfmTeamId
-write $WFMUsers
-
 #Keep mapping teams until user stops it
+$mappings=@()
 while ($true)
 {
+    $TeamsTeamId = Read-Host -Prompt "Input the ID of the Teams team to be mapped"
+    #Clear schedule of the Teams team
+    Write-Host "Clear schedule of the existing team"
 
-$TeamsTeamId = Read-Host -Prompt "Input the ID of the Teams team to be mapped"
-#Clear schedule of the Teams team
-Write-Host "Clear schedule of the existing team"
-$startTime = Read-Host -Prompt "Input the start time of clear schedule"
-$endTime = Read-Host -Prompt "Input the end time of clear schedule"
+    $entityTypeString = Read-Host -Prompt 'Input the entity types of clear schedule'
+    $Delimiters = ",", ".", ":", ";", " ", "`t"
+    $entityType = $entityTypeString -Split {$Delimiters -contains $_}
+    $entityType = $entityType.Trim()
+    $entityType = $entityType.Split('',[System.StringSplitOptions]::RemoveEmptyEntries)
+    Remove-CsTeamsShiftsScheduleRecord -TeamId $TeamsTeamId -ClearSchedulingGroup:$True -EntityType $entityType
 
-$entityTypeString = Read-Host -Prompt 'Input the entity types of clear schedule'
-$Delimiters = ",", ".", ":", ";", " ", "`t"
-$entityType = $entityTypeString -Split {$Delimiters -contains $_}
-$entityType = $entityType.Trim()
-$entityType = $entityType.Split('',[System.StringSplitOptions]::RemoveEmptyEntries)
-Remove-CsTeamsShiftsScheduleRecord -TeamId $TeamsTeamId -DateRangeStartDate $startTime -DateRangeEndDate $endTime -ClearSchedulingGroup:$True -EntityType $entityType -DesignatedActorId $teamsUserId
+    #Retrieve the list of wfm locations
+    Write-Output "Listing the WFM team sites"
+    $WfmTeamIds = Get-CsTeamsShiftsConnectionWfmTeam -ConnectorInstanceId $InstanceId
+    Write-Output $WfmTeamIds
+    if (($NULL -ne $WfmTeamIds) -and ($WfmTeamIds.Count -gt 0)){
+        [System.String]$WfmTeamId = Read-Host -Prompt "Input the ID of WFM team you want to map"
+    }
+    else {
+        throw "The WfmTeamId list is null or empty"
+    }
 
-#Create a mapping of the existing team to the instance
-Write-Host "Create a mapping of the existing team to the site"
-$teamMappingResult = New-CsTeamsShiftsConnectionTeamMap -ConnectorInstanceId $InstanceId -TeamId $TeamsTeamId -TimeZone "America/Los_Angeles" -WfmTeamId $WfmTeamId
-Write-Host "Success"
+    #Retrieve the list of WFM users and their roles
+    Write-Output "Listing WFM users and roles"
+    $WFMUsers = Get-CsTeamsShiftsConnectionWfmUser -ConnectorInstanceId $InstanceId -WfmTeamId $WfmTeamId
+    Write-Output $WFMUsers
 
+    #Create a mapping of the existing team to the instance
+    Write-Host "Create a mapping of the existing team to the site"
+    $TimeZone = Read-Host -Prompt "Input the time zone of team mapping"
+    $mapping = @{
+        teamId = $TeamsTeamId
+        wfmTeamId = $WfmTeamId
+        timeZone = $TimeZone
+        }
+    $mappings += , $mapping
 
-$title    = 'Connecting another team'
-$question = 'Would you like to connect another team?'
-$choices  = '&Yes', '&No'
+    $title    = 'Connecting another team'
+    $question = 'Would you like to connect another team?'
+    $choices  = '&Yes', '&No'
 
-$decision = $Host.UI.PromptForChoice($title, $question, $choices, 1)
-if ($decision -eq 1) {
-    break
+    $decision = $Host.UI.PromptForChoice($title, $question, $choices, 1)
+    if ($decision -eq 1) {
+        break
+    }
 }
+$batchMappingResponse = New-CsTeamsShiftsConnectionBatchTeamMap -ConnectorInstanceId $InstanceId -TeamMapping @($mappings)
+if ($null -ne $batchMappingResponse.OperationId){
+    "The mapping has begun asynchronously. To query mapping results run Get-CsTeamsShiftsConnectionOperation with the operation Id."
 }
+else {
+    throw "The mapping has failed due to validation errors."
+}
+Write-Output $batchMappingResponse
+
 Disconnect-MgGraph
 ```
 
 ## Shifts connector cmdlets
 
-For help with Shifts connector cmdlets, including the cmdlets used in the scripts, search for **CsTeamsShiftsConnection** in the [Teams PowerShell cmdlet reference](/powershell/teams/intro). Here are links to some commonly used cmdlets.
+For help with Shifts connector cmdlets, including the cmdlets used in the scripts, search for **CsTeamsShiftsConnection** in the [Teams PowerShell cmdlet reference](/powershell/teams/intro). Here are links to some commonly used cmdlets, grouped by category:
 
-- [Get-CsTeamsShiftsConnectionOperation](/powershell/module/teams/get-csteamsshiftsconnectionoperation)
+Connections
+
+- [New-CsTeamsShiftsConnection](/powershell/module/teams/new-csteamsshiftsconnection)
+- [Get-CsTeamsShiftsConnection](/powershell/module/teams/get-csteamsshiftsconnection)
+- [Update-CsTeamsShiftsConnection](/powershell/module/teams/update-csteamsshiftsconnection)
+
+WFM systems credentials
+
+- [Test-CsTeamsShiftsConnectionValidate](/powershell/module/teams/test-csteamsshiftsconnectionvalidate)
+
+Sync options for supported scenarios
+
+- [Get-CsTeamsShiftsConnectionConnector](/powershell/module/teams/get-csteamsshiftsconnectionconnector)
+
+Remove schedule data
+
+- [Remove-CsTeamsShiftsScheduleRecord](/powershell/module/teams/remove-csteamsshiftsschedulerecord)
+
+Connection instances
+
 - [New-CsTeamsShiftsConnectionInstance](/powershell/module/teams/new-csteamsshiftsconnectioninstance)
 - [Get-CsTeamsShiftsConnectionInstance](/powershell/module/teams/get-csteamsshiftsconnectioninstance)
 - [Set-CsTeamsShiftsConnectionInstance](/powershell/module/teams/set-csteamsshiftsconnectioninstance)
 - [Update-CsTeamsShiftsConnectionInstance](/powershell/module/teams/update-csteamsshiftsconnectioninstance)
 - [Remove-CsTeamsShiftsConnectionInstance](/powershell/module/teams/remove-csteamsshiftsconnectioninstance)
-- [Test-CsTeamsShiftsConnectionValidate](/powershell/module/teams/test-csteamsshiftsconnectionvalidate)
-- [New-CsTeamsShiftsConnectionTeamMap](/powershell/module/teams/new-csteamsshiftsconnectionteammap)
-- [Get-CsTeamsShiftsConnectionTeamMap](/powershell/module/teams/get-csteamsshiftsconnectionteammap)
-- [Remove-CsTeamsShiftsConnectionTeamMap](/powershell/module/teams/remove-csteamsshiftsconnectionteammap)
-- [Get-CsTeamsShiftsConnectionConnector](/powershell/module/teams/get-csteamsshiftsconnectionconnector)
+
+User mapping and successful syncing
+
 - [Get-CsTeamsShiftsConnectionSyncResult](/powershell/module/teams/get-csteamsshiftsconnectionsyncresult)
 - [Get-CsTeamsShiftsConnectionWfmUser](/powershell/module/teams/get-csteamsshiftsconnectionwfmuser)
-- [Get-CsTeamsShiftsConnectionWfmTeam](/powershell/module/teams/get-csteamsshiftsconnectionwfmteam)
+
+Team mapping
+
+- [Get-CsTeamsShiftsConnectionTeamMap](/powershell/module/teams/get-csteamsshiftsconnectionteammap)
+- [Remove-CsTeamsShiftsConnectionTeamMap](/powershell/module/teams/remove-csteamsshiftsconnectionteammap)
+
+Operation ID
+
+- [Get-CsTeamsShiftsConnectionOperation](/powershell/module/teams/get-csteamsshiftsconnectionoperation)
+
+Error reports
+
 - [Get-CsTeamsShiftsConnectionErrorReport](/powershell/module/teams/get-csteamsshiftsconnectionerrorreport)
-- [Remove-CsTeamsShiftsScheduleRecord](/powershell/module/teams/remove-csteamsshiftsschedulerecord)
 
 ## Related articles
 

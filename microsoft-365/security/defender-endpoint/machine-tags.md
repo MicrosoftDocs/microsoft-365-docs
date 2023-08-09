@@ -113,6 +113,7 @@ You can use Microsoft Intune to define and apply device tags. You can perform th
 
 - In the [Create the profile](/mem/intune/configuration/custom-settings-configure) procedure, for step 3, choose either [macOS](/mem/intune/configuration/custom-settings-macos) or [Windows 10 and later](/mem/intune/configuration/custom-settings-windows-10), depending on the devices you want to tag.
 
-- **For Windows 10 or later**, in the [OMA-IRU settings](/mem/intune/configuration/custom-settings-windows-10) section, for **Data type**, choose **String**. For **Value**, type (or paste) `./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/DeviceTagging/Group`.
+- **For Windows 10 or later**, in the [OMA-IRU settings](/mem/intune/configuration/custom-settings-windows-10) section, for **Data type**, choose **String**. For **OMA-URI**, type (or paste) `./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/DeviceTagging/Group`.
 
 - **For macOS**, follow the guidance in [Use custom settings for macOS devices in Microsoft Intune](/mem/intune/configuration/custom-settings-macos).
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

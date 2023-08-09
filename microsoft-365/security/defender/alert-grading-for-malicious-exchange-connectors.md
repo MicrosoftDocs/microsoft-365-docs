@@ -22,7 +22,7 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
-ms.date: 04/05/2022
+ms.date: 02/07/2023
 ---
 
 # Alert classification for malicious exchange connectors
@@ -243,3 +243,4 @@ Once it's determined that the observed alert activities are part of TP, classify
 
 - [Overview of alert classification](alert-grading-playbooks.md)
 - [Investigate alerts](investigate-alerts.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

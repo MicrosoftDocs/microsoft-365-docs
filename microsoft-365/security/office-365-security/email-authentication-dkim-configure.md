@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 1/31/2023
+ms.date: 6/15/2023
 audience: ITPro
 ms.topic: conceptual
 
@@ -21,18 +21,16 @@ ms.custom:
 description: Learn how to use DomainKeys Identified Mail (DKIM) with Microsoft 365 to ensure messages sent from your custom domain are trusted by the destination email systems.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
 # Use DKIM to validate outbound email sent from your custom domain
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-**Applies to**
-- [Exchange Online Protection](eop-about.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-
- This article lists the steps to use DomainKeys Identified Mail (DKIM) with Microsoft 365 to ensure that destination email systems trust messages sent outbound from your custom domain.
+This article lists the steps to use DomainKeys Identified Mail (DKIM) with Microsoft 365 to ensure that destination email systems trust messages sent outbound from your custom domain.
 
 In this article:
 
@@ -83,7 +81,7 @@ In this example, if you had only published an SPF TXT record for your domain, th
 All the accepted domains of your tenant will be shown in the Microsoft 365 Defender portal under the DKIM page. If you do not see it, add your accepted domain from [domains page](/microsoft-365/admin/setup/add-domain#add-a-domain).
 Once your domain is added, follow the steps as shown below to configure DKIM.
 
-Step 1: Click on the domain you wish to configure DKIM on DKIM page (https://security.microsoft.com/dkimv2 or https://protection.office.com/dkimv2).
+Step 1: On the [DKIM page](https://security.microsoft.com/dkimv2), select the domain you wish to configure.
 
 :::image type="content" source="../../media/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png" alt-text="The DKIM page in the Microsoft 365 Defender portal with a domain selected" lightbox="../../media/126996261-2d331ec1-fc83-4a9d-a014-bd7e1854eb07.png":::
 

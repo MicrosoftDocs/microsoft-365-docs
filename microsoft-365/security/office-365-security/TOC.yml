@@ -4,8 +4,8 @@
   items:
    - name: Overview
      items:
-       - name: Overview of Office 365 security
-         href: microsoft-defender-for-office-365-product-overview.md
+       - name: Why do I need Microsoft Defender for Office 365?
+         href: why-do-i-need-microsoft-defender-for-office-365.md
        - name: What's new in Defender for Office 365
          href: defender-for-office-365-whats-new.md
        - name: Zero Trust for Defender for Office 365
@@ -38,6 +38,8 @@
          href: email-authentication-dkim-configure.md
        - name: Step 3 - Use DMARC to validate email
          href: email-authentication-dmarc-configure.md
+       - name: Use DMARC Reports to validate email
+         href: email-authentication-dmarc-reports.md
        - name: Use Trusted ARC senders for legitimate devices and services between the sender and receiver
          href: use-arc-exceptions-to-mark-trusted-arc-senders.md
      - name: Phase 2 - Choose your installation path
@@ -84,6 +86,8 @@
          href: mdo-support-teams-about.md
        - name: Security recommendations for priority accounts
          href: priority-accounts-security-recommendations.md
+       - name: Usage card in Defender for Office 365
+         href: mdo-usage-card-about.md
        - name: Anti-malware protection
          items:
          - name: Anti-malware protection
@@ -194,8 +198,6 @@
            href: safe-links-about.md
          - name: Set up Safe Links policies in Defender for Office 365
            href: safe-links-policies-configure.md
-         - name: Configure the "Block the following URLs" list for Safe Links in Defender for Office 365
-           href: safe-links-policies-global-settings-configure.md
        - name: Zero-hour Auto Purge (ZAP)
          items:
          - name: Zero-hour auto purge - protection against spam and malware
@@ -254,7 +256,7 @@
          items:
          - name: User tags in Defender for Office 365
            href: user-tags-about.md
-         - name: Configure and review priority accounts
+         - name: Configure and review priority account protection
            href: priority-accounts-turn-on-priority-account-protection.md
        - name: Email entity page
          href: mdo-email-entity-page.md
@@ -290,7 +292,7 @@
              href: submissions-admin.md
            - name: Enable the Report Message and Report Phishing add-ins
              href: submissions-users-report-message-add-in-configure.md
-           - name: Report false positives and false negatives in Outlook
+           - name: Report phishing and suspicious emails in Outlook for admins
              href: submissions-outlook-report-messages.md
            - name: User reported settings
              href: submissions-user-reported-messages-custom-mailbox.md
@@ -306,14 +308,14 @@
            href: campaigns.md
          - name: Threat Explorer
            items:
-           - name: Threat Explorer and real-time detections
-             href: threat-explorer-about.md
-           - name: Threat hunting in Threat Explorer
-             href: threat-explorer-threat-hunting.md
+           - name: What is Threat Explorer and Real-time detections?
+             href: real-time-detections.md
            - name: Email security with Threat Explorer
              href: email-security-in-microsoft-defender.md
-           - name: Threat Explorer and Real-time detections basics
-             href: real-time-detections.md
+           - name: Threat hunting in Threat Explorer
+             href: threat-explorer-threat-hunting.md
+           - name: Improvements to Threat Hunting in Threat Explorer
+             href: threat-explorer-about.md
            - name: Threat Explorer views
              href: threat-explorer-views.md
          - name: Impersonation insight
@@ -362,8 +364,6 @@
              href: air-custom-reporting.md
            - name: Email analysis in investigations
              href: email-analysis-investigations.md
-         - name: Recover from a ransomware attack
-           href: recover-from-ransomware.md
          - name: Detect and Remediate Illicit Consent Grants in Office 365
            href: detect-and-remediate-illicit-consent-grants.md
          - name: Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365
@@ -448,6 +448,8 @@
           href: step-by-step-guides/how-to-handle-false-negatives-in-microsoft-defender-for-office-365.md
         - name: (False Positives) How to handle legitimate emails getting blocked from delivery using Microsoft Defender for Office 365
           href: step-by-step-guides/how-to-handle-false-positives-in-microsoft-defender-for-office-365.md
+        - name: Understanding detection technology in the email entity page of Microsoft Defender for Office 365
+          href: step-by-step-guides/understand-detection-technology-in-email-entity.md
         - name: Assess the impact of security configuration changes with Explorer
           href: step-by-step-guides/assess-the-impact-of-security-configuration-changes-with-explorer.md
         - name: Review and remove unnecessary allow list entries with Advanced Hunting in Microsoft Defender for Office 365
@@ -471,7 +473,7 @@
        href: sending-mail-to-office-365.md
      - name: How Office 365 uses SPF to prevent spoofing
        href: email-authentication-anti-spoofing.md
-     - name: Services for non-customers
+     - name: Microsoft 365 services for external email senders
        href: services-for-non-customers.md
      - name: Configure EOP to deliver spam to Junk Email folders in hybrid (Exchange)
        href: /exchange/standalone-eop/configure-eop-spam-protection-hybrid

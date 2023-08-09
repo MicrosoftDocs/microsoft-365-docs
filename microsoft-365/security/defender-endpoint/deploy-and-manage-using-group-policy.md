@@ -150,3 +150,4 @@ You can download the files here, [Printer Protection Samples](https://github.com
       :::image type="content" source="images/create-default.png" alt-text="This is create default screenshot." lightbox="images/create-default.png":::
 
    Combine these two policy rules into [one XML file](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Printer%20Protection%20Samples/Group%20Policy/Printer_Policies.xml). See step 4 from the [Deploy using group policy](deploy-and-manage-using-group-policy.md) section to deploy this configuration.
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

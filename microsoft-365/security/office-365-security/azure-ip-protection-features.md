@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 1/31/2023
+ms.date: 6/14/2023
 audience: ITPro
 ms.topic: conceptual
 
@@ -21,13 +21,12 @@ ms.custom:
 description: This article explains the changes being rolled out to the protection features in Azure Information Protection
 ms.subservice: mdo
 ms.service: microsoft-365-security
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview" target="_blank">Microsoft Defender for Office 365 plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
 # Protection features in Azure Information Protection rolling out to existing tenants
-
-**Applies to**
-- [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 To help with the initial step in protecting your information, starting July 2018 all Azure Information Protection eligible tenants will have the protection features in Azure Information Protection turned on by default. The protection features in Azure Information Protection were formerly known in Office 365 as Rights Management or Azure RMS. If your organization has an Office E3 service plan or a higher service plan, you'll now get a head start protecting information through Azure Information Protection when we roll out these features.
 

@@ -1,9 +1,9 @@
 ---
 title: Set up Microsoft 365 for frontline workers
-author: samanro
-ms.author: samanro
+author: lana-chin
+ms.author: v-chinlana
+manager: serdars
 ms.reviewer: samanro
-manager: pamgreen
 ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
@@ -167,9 +167,7 @@ Using dynamic group backed shared mailboxes based on attributes such as Location
 
 ### Set up Microsoft Teams
 
-For a pilot project, you can use the Frontline worker onboarding wizard to set up a single team, configured for your frontline workers. For step-by-step guidance, see [Use the Frontline Worker onboarding wizard to get your frontline workforce up and running](flw-onboarding-wizard.md).
-
-For full deployments, follow the guidance in [Deploy Teams at scale for frontline workers](deploy-teams-at-scale.md).
+Follow the guidance in [Deploy Teams at scale for frontline workers](deploy-teams-at-scale.md).
 
 ### Set up employee experiences with Microsoft Viva
 

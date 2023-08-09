@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
-ms.date: 01/21/2021
+ms.date: 01/21/2023
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -63,23 +63,3 @@ As you navigate through the sample documents and label string values, Narrator w
 
 After a string is labeled or a label has been removed in the viewer, Narrator audio will warn you to save your changes before you exit.
 
-## See also
-
-[Create an extractor](create-an-extractor.md)
-
-[Create a classifier](create-a-classifier.md)
-
-
-
-
-
-
-
-
-
-
- 
-
-
-  
-  

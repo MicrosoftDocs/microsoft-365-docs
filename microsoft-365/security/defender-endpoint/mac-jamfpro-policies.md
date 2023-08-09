@@ -40,12 +40,11 @@ You'll need to take the following steps:
 4. [Configure Microsoft Defender for Endpoint notification settings](#step-4-configure-notifications-settings)
 5. [Configure Microsoft AutoUpdate (MAU)](#step-5-configure-microsoft-autoupdate-mau)
 6. [Grant full disk access to Microsoft Defender for Endpoint](#step-6-grant-full-disk-access-to-microsoft-defender-for-endpoint)
-7. [Approve Kernel extension for Microsoft Defender for Endpoint](#step-7-approve-kernel-extension-for-microsoft-defender-for-endpoint)
-8. [Approve System extensions for Microsoft Defender for Endpoint](#step-8-approve-system-extensions-for-microsoft-defender-for-endpoint)
-9. [Configure Network Extension](#step-9-configure-network-extension)
-10. [Configure Background Services](#step-10-configure-background-services)
-11. [Schedule scans with Microsoft Defender for Endpoint on macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)
-12. [Deploy Microsoft Defender for Endpoint on macOS](#step-12-deploy-microsoft-defender-for-endpoint-on-macos)
+7. [Approve System extensions for Microsoft Defender for Endpoint](#step-7-approve-system-extensions-for-microsoft-defender-for-endpoint)
+8. [Configure Network Extension](#step-8-configure-network-extension)
+9. [Configure Background Services](#step-9-configure-background-services)
+10. [Schedule scans with Microsoft Defender for Endpoint on macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)
+11. [Deploy Microsoft Defender for Endpoint on macOS](#step-11-deploy-microsoft-defender-for-endpoint-on-macos)
 
 ## Step 1: Get the Microsoft Defender for Endpoint onboarding package
 
@@ -606,59 +605,7 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
 Alternatively, you can download [fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) and upload it to JAMF Configuration Profiles as described in [Deploying Custom Configuration Profiles using Jamf Pro|Method 2: Upload a Configuration Profile to Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
-## Step 7: Approve Kernel extension for Microsoft Defender for Endpoint
-
-> [!CAUTION]
-> Apple Silicon (M1) devices do not support KEXT. Installation of a configuration profile consisting KEXT policies will fail on these devices.
-
-1. In the **Configuration Profiles**, select **+ New**.
-
-   :::image type="content" source="images/6c8b406ee224335a8c65d06953dc756e.png" alt-text="The social media post Description automatically generated." lightbox="images/6c8b406ee224335a8c65d06953dc756e.png":::
-
-2. Enter the following details on the **General** tab:
-
-    - Name: MDATP MDAV Kernel Extension
-    - Description: MDATP kernel extension (kext)
-    - Category: None
-    - Distribution Method: Install Automatically
-    - Level: Computer Level
-
-    :::image type="content" source="images/24e290f5fc309932cf41f3a280d22c14.png" alt-text="The configuration settings mdatpmdav kernel." lightbox="images/24e290f5fc309932cf41f3a280d22c14.png":::
-
-3. In **Configure Approved Kernel Extensions** select **Configure**.
-
-   :::image type="content" source="images/30be88b63abc5e8dde11b73f1b1ade6a.png" alt-text="The page displaying the configuration settings approved kernel extensions." lightbox="images/30be88b63abc5e8dde11b73f1b1ade6a.png":::
-
-4. In **Approved Kernel Extensions**, enter the following details:
-
-    - Display Name: Microsoft Corp.
-    - Team ID: UBF8T346G9
-
-    :::image type="content" source="images/39cf120d3ac3652292d8d1b6d057bd60.png" alt-text="The Approved Kernel Extensions pane." lightbox="images/39cf120d3ac3652292d8d1b6d057bd60.png":::
-
-5. Select the **Scope** tab.
-
-   :::image type="content" source="images/0df36fc308ba569db204ee32db3fb40a.png" alt-text="The Scope tab for the configuration." lightbox="images/0df36fc308ba569db204ee32db3fb40a.png":::
-
-6. Select **+ Add**.
-
-7. Select **Computer Groups** > under **Group Name** > select **Contoso's Machine Group**.
-
-8. Select **+ Add**.
-
-   :::image type="content" source="images/0dde8a4c41110dbc398c485433a81359.png" alt-text="The page on which you define additional values for the configuration settings." lightbox="images/0dde8a4c41110dbc398c485433a81359.png":::
-
-9. Select **Save**.
-
-   :::image type="content" source="images/0add8019b85a453b47fa5c402c72761b.png" alt-text="The MDATP MDAV Kernel extension." lightbox="images/0add8019b85a453b47fa5c402c72761b.png":::
-
-10. Select **Done**.
-
-    :::image type="content" source="images/1c9bd3f68db20b80193dac18f33c22d0.png" alt-text="The Configuration Profiles details page." lightbox="images/1c9bd3f68db20b80193dac18f33c22d0.png":::
-
-Alternatively, you can download [kext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/kext.mobileconfig) and upload it to JAMF Configuration Profiles as described in [Deploying Custom Configuration Profiles using Jamf Pro|Method 2: Upload a Configuration Profile to Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
-
-## Step 8: Approve System extensions for Microsoft Defender for Endpoint
+## Step 7: Approve System extensions for Microsoft Defender for Endpoint
 
 1. In the **Configuration Profiles**, select **+ New**.
 
@@ -709,7 +656,7 @@ Alternatively, you can download [kext.mobileconfig](https://github.com/microsoft
 
     :::image type="content" source="images/sysext-final.png" alt-text="The configuration settings sysext - final." lightbox="images/sysext-final.png":::
 
-## Step 9: Configure Network Extension
+## Step 8: Configure Network Extension
 
 As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on macOS inspects socket traffic and reports this information to the Microsoft 365 Defender portal. The following policy allows the network extension to perform this functionality.
 
@@ -761,7 +708,7 @@ These steps are applicable on macOS 11 (Big Sur) or later.
 
 Alternatively, you can download [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig) and upload it to JAMF Configuration Profiles as described in [Deploying Custom Configuration Profiles using Jamf Pro|Method 2: Upload a Configuration Profile to Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
-## Step 10: Configure Background Services
+## Step 9: Configure Background Services
 
    > [!CAUTION]
    > macOS 13 (Ventura) contains new privacy enhancements. Beginning with this version, by default, applications cannot run in background without explicit consent. Microsoft Defender for Endpoint must run its daemon process in background.
@@ -772,11 +719,11 @@ Download [**background_services.mobileconfig**](https://raw.githubusercontent.co
 
 Upload downloaded mobileconfig to JAMF Configuration Profiles as described in [Deploying Custom Configuration Profiles using Jamf Pro|Method 2: Upload a Configuration Profile to Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).
 
-## Step 11: Schedule scans with Microsoft Defender for Endpoint on macOS
+## Step 10: Schedule scans with Microsoft Defender for Endpoint on macOS
 
 Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint on macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp).
 
-## Step 12: Deploy Microsoft Defender for Endpoint on macOS
+## Step 11: Deploy Microsoft Defender for Endpoint on macOS
 
 > [!NOTE]
 > In the steps that follow, the name of the `.pkg` file and the **Display Name** values are examples. In these examples, `200329` represents the date on which the
@@ -913,7 +860,7 @@ JAMF requires you to define a set of machines for a configuration profile.
 You need to make sure that all machines receiving Defender's package, also receive *all* configuration profiles listed above.
 
 > [!WARNING]
-> JAMF supports Smart Computer Groups, that allow deployoing e.g. configuration profiles or policies to all machines matching certain criteria evaluated dynamically.
+> JAMF supports Smart Computer Groups that allow deploying, such as configuration profiles or policies to all machines matching certain criteria evaluated dynamically.
 > It is a powerful concept that is widely used for configuration profiles distribution.
 >
 > However, keep in mind that these criteria should not include presence of Defender on a machine.
@@ -923,3 +870,4 @@ You need to make sure that all machines receiving Defender's package, also recei
 > Making configuration profiles depending on Defender's presence effectively delays deployment of configuration profiles, and results in an initially unhealthy product and/or prompts for manual approval of certian application permissions, that are otherwise auto approved by profiles.
 
 Deploying a policy with Microsoft Defender's package *after* deploying configuration profiles ensures the end user's best experience, because all required configurations will be applied before the package installs.
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

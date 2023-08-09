@@ -18,7 +18,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 03/22/2021
+ms.date: 04/26/2023
 ---
 
 # Microsoft Defender for Endpoint on Mac
@@ -71,16 +71,13 @@ There are several methods and deployment tools that you can use to install and c
 ### System requirements
 
 The three most recent major releases of macOS are supported.
-
+- 13 (Ventura), 12 (Monterey), 11 (Big Sur)
 > [!IMPORTANT]
 > On macOS 11 (Big Sur) and above, Microsoft Defender for Endpoint requires additional configuration profiles. If you are an existing customer upgrading from earlier versions of macOS, make sure to deploy the additional configuration profiles listed on [New configuration profiles for macOS Big Sur and newer versions of macOS](mac-sysext-policies.md). 
-
-- 13 (Ventura), 12 (Monterey), 11 (Big Sur)
+- Supported processors: x64 and ARM64 (M1 and M2).
 - Disk space: 1GB
 
 Beta versions of macOS aren't supported.
-
-Support for macOS devices with M1 chip-based processors has been officially supported since version 101.40.84 of the agent.
 
 After you've enabled the service, you may need to configure your network or firewall to allow outbound connections between it and your endpoints.
 
@@ -167,3 +164,4 @@ Starting with macOS 11 (Big Sur), Microsoft Defender for Endpoint has been fully
 - For more information about logging, uninstalling, or other topics, see [Resources for Microsoft Defender for Endpoint on Mac](mac-resources.md).
 - [Privacy for Microsoft Defender for Endpoint on Mac](mac-privacy.md).
 - [Turn on Network protection for macOS](network-protection-macos.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

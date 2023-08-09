@@ -1,7 +1,7 @@
 ---
 title: Protect your c-suite with Priority account protection in Microsoft Defender for Office 365 Plan 2
 description: The steps to protect your c-suite with priority account protection. Tagging an account as a Priority account will enable the additional protection tuned for the mail flow patterns targeting company executives, along with extra visibility in reports, alerts, and investigations.
-search.product: 
+search.product:
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -48,7 +48,9 @@ To learn what priority account tags are see [Manage and monitor priority account
 
 ## Next Steps
 
-[Review the differentiated protection for users tagged as priority accounts](../../office-365-security/priority-accounts-turn-on-priority-account-protection.md).
+[Review differentiated protection from priority account protection]
+
+[Review the differentiated protection for users tagged as Priority accounts](../priority-accounts-turn-on-priority-account-protection.md#review-differentiated-protection-from-priority-account-protection).
 
 ## PowerShell configuration
 

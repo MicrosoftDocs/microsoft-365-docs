@@ -1,6 +1,6 @@
 ### YamlMime:FAQ
 metadata:
-  ms.date: 04/07/2021
+  ms.date: 06/06/2023
   title: "Microsoft Bookings Frequently Asked Questions"
   ms.author: kwekua
   author: kwekuako
@@ -22,22 +22,22 @@ sections:
       - question: |
           What is Microsoft Bookings?
         answer: |
-          Microsoft Bookings is a Microsoft 365 app that makes scheduling and managing appointments easy. Bookings includes a Web-based booking calendar and integrates with Outlook to optimize your staff's calendar, giving your customers' flexibility to book a time that works best for them. Automated notification emails reduce no-shows, and organizations save time with a reduction in repetitive scheduling tasks. Bookings helps you easily conduct virtual appointments via Skype or Microsoft Teams, and helps you manage day-to-day scheduling via the Bookings app in Teams. With built-in ability to customize, Bookings is designed to meet the needs of multiple parts of any organization.
+          Microsoft Bookings is a Microsoft 365 app that makes scheduling and managing appointments easy. Bookings includes a Web-based booking calendar and integrates with Outlook to optimize your staff's calendar, giving your customers flexibility to book a time that works best for them. Automated notification emails reduce no-shows, and organizations save time with a reduction in repetitive scheduling tasks. Bookings helps you easily conduct virtual appointments via Skype or Microsoft Teams. Bookings also helps you manage day-to-day scheduling via the Bookings web app or in Teams. Bookings is designed to meet the needs of multiple parts of any organization.
 
       - question: |
           Is Bookings available for my subscription?
         answer: |
           Bookings is available with the following subscriptions: 
           - Office 365: A3, A5, E1, E3, E5, F1, F3, Office 365 operated by 21Vianet.
-          - Microsoft 365: A3, A5, E3, E5, F1, F3, Business Standard, Business Premium. 
-          You can use Bookings with an iOS and Android companion app. Bookings isn't available as a standalone app. Outlook Web App or Outlook on the web must be enabled to use Bookings, as it stores data within Outlook.
+          - Microsoft 365: A3, A5, E3, E5, F1, F3, Business Basic, Business Standard, Business Premium. 
+          Bookings isn't available as a standalone app. Outlook Web App or Outlook on the web must be enabled to use Bookings, as it stores data within Outlook.
           
           A Bookings license provides full functionality, including creating and managing calendars. Users can view and edit existing calendars, when those users are added as staff in an Administrator or Viewer role.
 
       - question: |
           How do I use Microsoft Bookings?
         answer: |
-          Bookings is an online service, so you don't need to download anything. Just go to the app chooser within the Microsoft 365 Web experience. Administrators can also use the Bookings companion app to stay current with the latest information about customers and their appointments.
+          Bookings is an online service, so you don't need to download anything. Just go to the app chooser within the Microsoft 365 Web experience.
 
       - question: |
           Will my customers see my personal or business calendar?
@@ -52,8 +52,8 @@ sections:
       - question: |
           How do end users access the Bookings app?
         answer: |
-          Anyone who is licensed for a supported subscription, or is added as a staff member in either the Administrator or Viewer roles can access Bookings in the app chooser within the Microsoft 365 Web experience. There’s also a companion app available for iOS and Android.
-
+          Anyone who is licensed for a supported subscription, or is added as a staff member in either the Administrator or Viewer roles can access Bookings in the app chooser within the Microsoft 365 Web experience. 
+          
       - question: |
           Can I use Bookings in my own Web site?
         answer: |
@@ -67,7 +67,7 @@ sections:
       - question: |
           Can our IT department control whether end users can access Bookings?
         answer: |
-          Administrators can turn Bookings off in the Microsoft 365 admin center if they choose. To do so, [follow these instructions](turn-bookings-on-or-off.md).
+          Administrators can turn off Bookings in the Microsoft 365 admin center if they choose. To do so, [follow these instructions](turn-bookings-on-or-off.md).
           
           If a customer wants to disable access to Bookings for certain eligible licenses in their tenant, they can either use a group policy to restrict licenses or implement an OWA Mailbox policy that will restrict who is able to create new Bookings calendars.
           
@@ -76,7 +76,7 @@ sections:
       - question: |
            Can I link a payment option to my Bookings?
         answer: |
-           No. The Microsoft-owned payment system is retired.
+           No, there's no payment support in Bookings.
            
       - question: |
           Is Bookings customizable?
@@ -87,7 +87,7 @@ sections:
           Is all the functionality of the original Bookings Web app available in Microsoft Teams?
         answer: |
           A lightweight version of Bookings is now available as an app in Teams. More information on it can be found in [Overview of the Bookings app in Teams](https://support.microsoft.com/office/overview-of-the-bookings-app-in-teams-7b8569e1-0c8a-444e-b712-d9968b05110b). There is deep link functionality to pop out in the Web app, and after setup, day-to-day use of Bookings can be done without ever leaving Teams. Information flows across platforms.
-          
+
       - question: |
           Is Bookings a small business offering or an Enterprise offering or both?
         answer: |
@@ -152,28 +152,33 @@ sections:
           Can I create more than one Bookings calendar under the same Microsoft 365 account and switch between them?
         answer: |
           Yes. You can create and manage more than one Bookings calendar with one account. You can switch between them using the caret next to the business name in the Bookings Web app.
-          
+
+      - question: |
+          Is Bookings supported in a federated or hybrid environment?
+        answer: |
+          No. Bookings is a cloud-only application. It's not supported in a federated or hybrid environment.
+
   - name: Product features
     questions:
       - question: |
           Where do Bookings calendars show up in my Microsoft 365 tenant?
         answer: |
-          Each new Bookings calendar creates a corresponding mailbox in Exchange, and a related entry in Azure Active Directory (AAD), where the entry is listed as an unlicensed user.
+          Each new Bookings calendar creates a corresponding mailbox in Exchange, and a related entry in Azure Active Directory (Azure AD), where the entry is listed as an unlicensed user.
 
       - question: |
           Can I delete a previously created Bookings calendar?
         answer: |
-          To delete a Bookings calendar, you must delete the associated mailbox in Exchange.
+          To delete a Bookings calendar, you must delete the associated mailbox in Exchange. See [Delete an Exchange mailbox](https://learn.microsoft.com/exchange/recipients/disconnected-mailboxes/disable-or-delete-mailboxes?view=exchserver-2019).
 
       - question: |
           If I create a calendar and someone else has access to Bookings, would they be able to see my calendar?
         answer: |
-          The only people who have access to Bookings calendars that you create (through the Web app) is anyone who has been added as staff, in either an Administrator or Viewer role. Tenant admins will be able to see a list of all Bookings mailboxes in Exchange and AAD.
+          The only people who have access to Bookings calendars that you create (through the Web app) is anyone who has been added as staff, in either an Administrator or Viewer role. Tenant admins will be able to see a list of all Bookings mailboxes in Exchange and Azure AD.
 
       - question: |
           Are video conferencing meetings integrated into the Bookings app?
         answer: |
-          Online meetings are available within Bookings when using the Skype or Microsoft Teams clients. Online meetings can be enabled at the service-level, and the meeting client you choose (Skype or Teams) will be the one set by default for a booked staff member. To join the online meetings, each new appointment will have a unique meeting link attached to the appointment, and in addition, easy join options are included in the event and in confirmation emails.
+          Online meetings are available within Bookings when using the Skype or Microsoft Teams clients. Online meetings can be enabled at the service-level, and the meeting client you choose (Skype or Teams) will be the one set by default for a booked staff member. To join the online meetings, each new appointment will have a unique meeting link attached to the appointment. How to join options are included in the event and in confirmation emails to your customer.
 
       - question: |
           How does scheduling policy work?
@@ -214,7 +219,7 @@ sections:
       - question: |
           Can I book classroom-style appointments that are 1: many instead of 1:1?
         answer: |
-          Yes, we have a group bookings functionality that allows multiple people to book the same appointment at the same time (such as for a fitness class). This functionality is described in detail [here](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-now-supports-online-meetings-and-group/ba-p/1214120).
+          Yes, we have a group bookings functionality that allows multiple people to book the same appointment at the same time (such as for a fitness class). This functionality is described in detail [here](https://learn.microsoft.com/microsoft-365/bookings/manage-attendees-bookings?view=o365-worldwide).
           
       - question: |
           Can calendars remain unpublished (not public-facing) but still accessible to designated users?
@@ -241,7 +246,7 @@ sections:
       - question: |
           What reporting is available in Bookings?
         answer: |
-          All Bookings staff assigned to the Administrator role can download a tab-separated values (.TSV) file with all bookings made in the past 120 days. Bookings reports can be downloaded in .TSV form from the Home tab of the Bookings page. The Bookings API can also be used to collect this data for more customized and specific purposes.
+          All Bookings staff assigned to the Administrator role can download a tab-separated values (.TSV) file with all bookings made in the past 120 days. Bookings reports can be downloaded in .TSV form from the Home tab of the Bookings page. The Bookings API can also be used to collect this data for more customized and specific purposes. For more information, see, [Reporting info for Bookings](https://learn.microsoft.com/microsoft-365/bookings/reporting-info?view=o365-worldwide).
 
       - question: |
           Is it possible to share only one service on the Self-service page at a time?
@@ -278,7 +283,7 @@ sections:
       - question: |
           How are users authenticated?
         answer: |
-          Access to the Bookings Web app involves authentication through the regular Azure Active Directory (AAD) authentication. The Self-service booking page can be made available to everyone with the Web page link. However, when the **Require a Microsoft 365 or Office 365 account from my organization** to book setting is selected, the page is restricted for use only within the Microsoft 365 tenant (using AAD authentication).
+          Access to the Bookings Web app involves authentication through the regular Azure Active Directory (Azure AD) authentication. The Self-service booking page can be made available to everyone with the Web page link. However, when the **Require a Microsoft 365 or Office 365 account from my organization** to book setting is selected, the page is restricted for use only within the Microsoft 365 tenant (using Azure AD authentication).
           
           :::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Booking page access control in Bookings":::
           
@@ -339,9 +344,6 @@ sections:
           
           1. Sign in to Microsoft 365, and then select **Outlook** from the app launcher.
           
-             > [!div class="mx-imgBorder"]
-             > ![Image of Outlook in App launcher](../media/bookings-applauncher-outlook.png)
-          
           1. At the top of the page, select **Share** \> **Calendar**.
           
              ![Image of Calendar sharing menu](../media/bookings-share-calendar.png)
@@ -381,7 +383,24 @@ sections:
         answer: |
           This is a transient error and typically occurs because of an unstable internet connection. These problems usually resolve themselves after a few minutes.
           
-          If you still see this error after an extended period of time or you're seeing it often, please contact support.
+          If you still see this error after an extended period of time or you're seeing it often, [contact support](https://support.microsoft.com/topic/contact-microsoft-office-support-fd6bb40e-75b7-6f43-d6f9-c13d10850e77).
+      
+      - question: |
+           When one attendee cancels a group booking, cancellation emails are sent to all the other attendees
+        answer: |
+          This is a known problem, and our product team is currently investigating the root cause. If you encounter this problem, you can follow these steps to mitigate it.
+          
+          1. Select **Edit service** for the affected service.
+          
+          1. Navigate to the **Notifications** tab. 
+        
+          1. Uncheck the setting "Send a meeting invite to the customer, in addition to the confirmation email."
+
+             ![Screenshot of dialog box for Bookings email confirmation setting.](../media/email-confirmation-bookings.png)
+         
+          1. Save the changes.
+          
+          If the issue continues after applying these steps, reach out to the Microsoft Support team for further assistance. 
           
 additionalContent: |
 

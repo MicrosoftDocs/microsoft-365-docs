@@ -2,15 +2,11 @@
 title: Set preferences for Microsoft Defender for Endpoint on Linux
 ms.reviewer:
 description: Describes how to configure Microsoft Defender for Endpoint on Linux in enterprises.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 02/09/2023
+ms.date: 07/07/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -63,21 +59,21 @@ The *antivirusEngine* section of the configuration profile is used to manage the
 
 Specifies the enforcement preference of antivirus engine. There are three values for setting enforcement level:
 
-- Real-time (`real_time`): Real-time protection (scan files as they're accessed) is enabled.
+- Real-time (`real_time`): Real-time protection (scan files as they're modified) is enabled.
 - On-demand (`on_demand`): Files are scanned only on demand. In this:
   - Real-time protection is turned off.
-- Passive (`passive`): Runs the antivirus engine in passive mode. In this:
-  - Real-time protection is turned off.
-  - On-demand scanning is turned on.
-  - Automatic threat remediation is turned off.
-  - Security intelligence updates are turned on.
+- [Passive (`passive`)](microsoft-defender-antivirus-compatibility.md#passive-mode-or-edr-block-mode): Runs the antivirus engine in passive mode. In this:
+  - Real-time protection is turned off: Threats are not remediated by Microsoft Defender Antivirus.
+  - On-demand scanning is turned on: Still use the scan capabilites on the endpoint.
+  - Automatic threat remediation is turned off: No files will be moved and security admin is expected to take required action.
+  - Security intelligence updates are turned on: Alerts will be available on security admins tenant.
 
 |Description|Value|
 |---|---|
 |**Key**|enforcementLevel|
 |**Data type**|String|
-|**Possible values**|real_time (default) <p> on_demand <p> passive|
-|**Comments**|Available in Defender for Endpoint version 101.10.72 or higher.|
+|**Possible values**|real_time <p> on_demand <p> passive (default)|
+|**Comments**|Available in Defender for Endpoint version 101.10.72 or higher. Default is changed from real_time to passive for Endpoint version 101.23062.0001 or higher.|
 
 #### Enable/disable behavior-monitoring 
 
@@ -223,12 +219,16 @@ Specifies the behavior of RTP on mount point marked as noexec. There are two val
 
 #### Unmonitor Filesystems
 
-Configure filesystems to be unmonitored/excluded from Real Time Protection. The filesystems configured are validated against Microsoft Defender's list of permitted filesystems that can be unmonitored. By default NFS and Fuse are unmonitored from RTP and Quick and Full scans.
+Configure filesystems to be unmonitored/excluded from Real Time Protection(RTP). The filesystems configured are validated against Microsoft Defender's list of permitted filesystems. Only post successful validation, will the filesystem be allowed to be unmonitored. These configured unmonitored filesystems will still be scanned by Quick, Full, and custom scans.
+
+By default, NFS and Fuse are unmonitored from RTP, Quick, and Full scans. However, they can still be scanned by a custom scan.
 
 |Description|Value|
 |---|---|
 |**Key**|unmonitoredFilesystems|
 |**Data type**|Array of strings|
+|**Comments**|Configured filesystem will be unmonitored only if it is present in Microsoft's list of permitted unmonitored filesystems.|
+
 #### Configure file hash computation feature
 
 Enables or disables file hash computation feature. When this feature is enabled, Defender for Endpoint computes hashes for files it scans. Note that enabling this feature might impact device performance. For more details, please refer to: [Create indicators for files](indicator-file.md).
@@ -359,7 +359,7 @@ Diagnostic data is used to keep Defender for Endpoint secure and up-to-date, det
 
 #### Configure cloud block level
 
-This setting determines how aggressive Defender for Endpoint is in blocking and scanning suspicious files. If this setting is on, Defender for Endpoint is more aggressive when identifying suspicious files to block and scan; otherwise, it is less aggressive and therefore block and scan with less frequency. There are five values for setting cloud block level:
+This setting determines how aggressive Defender for Endpoint is in blocking and scanning suspicious files. If this setting is on, Defender for Endpoint is more aggressive when identifying suspicious files to block and scan; otherwise, it is less aggressive and therefore blocks and scans with less frequency. There are five values for setting cloud block level:
 
 - Normal (`normal`): The default blocking level.
 - Moderate (`moderate`): Delivers verdict only for high confidence detections.
@@ -449,7 +449,7 @@ The following configuration profile contains entries for all settings described 
 ```JSON
 {
    "antivirusEngine":{
-      "enforcementLevel":"real_time",
+      "enforcementLevel":"passive",
       "scanAfterDefinitionUpdate":true,
       "scanArchives":true,
       "maximumOnDemandScanThreads":2,
@@ -487,7 +487,7 @@ The following configuration profile contains entries for all settings described 
          "restore"
       ],
       "nonExecMountPolicy":"unmute",
-      "unmonitoredFilesystems": ["nfs"],
+      "unmonitoredFilesystems": ["nfs,fuse"],
       "threatTypeSettingsMergePolicy":"merge",
       "threatTypeSettings":[
          {
@@ -572,3 +572,4 @@ To verify that your /etc/opt/microsoft/mdatp/managed/mdatp_managed.json is worki
 Once you've built the configuration profile for your enterprise, you can deploy it through the management tool that your enterprise is using. Defender for Endpoint on Linux reads the managed configuration from the */etc/opt/microsoft/mdatp/managed/mdatp_managed.json* file.
 
 
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

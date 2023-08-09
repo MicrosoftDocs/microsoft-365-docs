@@ -19,18 +19,18 @@ ms.custom:
 description: Learn as a guest sender, how can you increase the ability to deliver email to users in Microsoft 365. Also learn how to report junk email & phishing attempts as a guest.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 1/31/2023
+ms.date: 6/23/2023
 ---
 
 # Sending mail to Microsoft 365
 
-These articles help external senders improve their reputation and increase their ability to deliver email to users at Microsoft 365. They also provide some information about how you can report junk email and phishing attempts even if you aren't a Microsoft 365 user yourself.
+The links in this article can help external senders improve their reputation and increase their ability to deliver email to users in Microsoft 365. They also provide information about how you can report junk email and phishing attempts, even if you aren't a Microsoft 365 customer.
 
-If you're not a customer, but are trying to send mail to someone in who is, you're in the right place. If you're an admin and you need help with fighting spam, this isn't the right section for you. Instead, go to [anti-spam](anti-spam-protection-about.md) and [anti-malware](anti-malware-protection-about.md).
+If you're not a Microsoft 365 customer, and you're trying to send email to Microsoft 365, this article is for you. If you're an admin in Microsoft 365 and you need help with fighting spam, this article isn't for you. Instead, see [anti-spam](anti-spam-protection-about.md) and [anti-malware](anti-malware-protection-about.md).
 
 |For information about...|See...|
 |---|---|
-|Services provided to email system admins that are sending individual and bulk email to customers.|[Services for non-customers sending mail to Office 365](services-for-non-customers.md)|
+|Services provided to email admins sending mail (including bulk mail) to Microsoft 365.|[Services for non-customers sending mail to Office 365](services-for-non-customers.md)|
 |How to fix problems reaching customers at Microsoft 365 through email. Best practices for sending bulk mail to Microsoft 365 recipients.|[Troubleshooting mail sent to Office 365](mail-flow-troubleshooting.md)|
-|How Microsoft 365 prevents junk email, including phishing and spoofing email, from being sent to our customers.|[Anti-spam protection in Microsoft 365](anti-spam-protection-about.md)|
-|How you, an admin sending email to Microsoft 365 customers, can avoid having email blocked by adhering to our anti-spam policies. This is the legal stuff you need to know.|[Reference: Policies, practices, and guidelines](reference-policies-practices-and-guidelines.md)|
+|How Microsoft 365 prevents junk email (including phishing and spoofing) from being sent to our customers.|[Anti-spam protection in Microsoft 365](anti-spam-protection-about.md)|
+|How external organizations can avoid having email blocked by adhering to our anti-spam policies. This article contains legal stuff that you need to know.|[Reference: Policies, practices, and guidelines](reference-policies-practices-and-guidelines.md)|

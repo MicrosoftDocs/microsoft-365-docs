@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: shcallaw, kywirpel
-ms.date: 10/24/2022
+ms.date: 06/21/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -65,9 +65,9 @@ Additionally, each partner tenant user must meet the following requirements:
 
 You can also select **More actions** (ellipsis icon) option directly from the task list to dismiss the task.
 
-## Next Steps
+## Next steps
 
-If the status of a dismissed tasks changes, you can reinstate the task. For more information, see [Reinstate a task in Microsoft 365 Lighthouse](m365-lighthouse-reinstate-task.md).
+If the status of a dismissed task changes, you can reinstate the task. For more information, see [Reinstate a task in Microsoft 365 Lighthouse](m365-lighthouse-reinstate-task.md).
 
 ## Related content
 

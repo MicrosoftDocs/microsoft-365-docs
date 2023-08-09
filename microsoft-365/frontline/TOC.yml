@@ -23,10 +23,12 @@
       items: 
       - name: Set up Microsoft 365 and related services
         href: flw-setup-microsoft-365.md
-      - name: Deploy Teams at scale
+      - name: Choosing between dynamic and static frontline teams
+        href: frontline-team-options.md
+      - name: Deploy frontline dynamic teams at scale
+        href: deploy-dynamic-teams-at-scale.md
+      - name: Deploy frontline static teams at scale with PowerShell
         href: deploy-teams-at-scale.md
-      - name: Onboard your users with the onboarding wizard
-        href: flw-onboarding-wizard.md
     - name: Manage devices
       items:
       - name: Manage shared and personal devices

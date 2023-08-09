@@ -1,0 +1,14 @@
+{
+    "redirections":[
+       {
+          "source_path":"microsoft-365/bookings/get-bookings-app.md",
+          "redirect_url":"microsoft-365/bookings/bookings-overview",
+          "redirect_document_id":false
+       },
+       {
+          "source_path":"microsoft-365/bookings/metrics-and-activity-tracking.md",
+          "redirect_url":"/microsoft-365/bookings/bookings-overview",
+          "redirect_document_id":false
+       }
+    ]
+ }

@@ -14,15 +14,14 @@ ms.custom:
 description: Admins can learn how to create and manage payloads for Attack simulation training in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 4/4/2023
+ms.date: 6/14/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview" target="_blank">Microsoft Defender for Office 365 plan 2</a>
 ---
 
 # Payloads in Attack simulation training
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
-
-**Applies to**
- [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
 In Attack simulation training in Microsoft 365 E5 or Microsoft Defender for Office 365 Plan 2, a _payload_ is the link or attachment in the simulated phishing email message that's presented to users. Attack simulation training offers a robust built-in payload catalog for the available social engineering techniques. However, you might want to create custom payloads that work better for your organization.
 

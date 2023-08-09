@@ -37,6 +37,12 @@ ms.reviewer: mkaminska
 The Device Health report provides information about the devices in your organization. The report includes trending information showing the antivirus status and Microsoft Defender Antivirus engine, intelligence, and platform versions.
 
 > [!IMPORTANT]
+> For devices to appear in Microsoft Defender Antivirus device health reports they must meet the following pre-requisites:  
+>
+> - Device is onboarded to Microsoft Defender for Endpoint
+> - OS: Windows 10, Windows 11, Windows Server 2012 R2/, 2016 R2/ 2019/2022 (non MMA), MacOS, Linux 
+> - Sense (MsSense.exe): **10.8210.** \*+. See [Prerequisites](#prerequisites) section for related details.
+>
 > For Windows&nbsp;Server&nbsp;2012&nbsp;R2 and Windows&nbsp;Server&nbsp;2016 to appear in device health reports, these devices must be onboarded using the modern unified solution package. For more information, see [New functionality in the modern unified solution for Windows Server 2012 R2 and 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution).
 
 In the Microsoft 365 Security dashboard navigation panel, select **Reports**, and then open **Device health and compliance**. The [**Microsoft Defender Antivirus health** tab](#microsoft-defender-antivirus-health-tab) has eight cards that report on the following aspects of Microsoft Defender Antivirus:
@@ -99,11 +105,11 @@ Up-to-date reporting generates information for devices that meet the following c
 - Engine version: 1.1.19300.2+
 - Platform version: 4.18.2202.1+
 - Cloud protection enabled
-- MsSense.exe version 10.8210.x or later
+- Sense (MsSense.exe): **10.8210.** \*+
 - Windows OS - Windows 10 1809 or later
 
   > [!NOTE]
-  > Currently up to date reporting is only available for Windows devices. Cross platform devices such as Mac and Linux are listed under "No data available"/Unknown.
+  > \* Currently up to date reporting is only available for Windows devices. Cross platform devices such as Mac and Linux are listed under "No data available"/Unknown.
 
 :::image type="content" source="images/device-health-defender-antivirus-health-tab.png" alt-text="Shows the Microsoft Defender Antivirus Health tab." lightbox="images/device-health-defender-antivirus-health-tab.png":::
 
@@ -364,3 +370,4 @@ The following table lays out the possible up to date report values for **Securit
 > - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 > - [Configure Defender for Endpoint on Android features](android-configure.md)
 > - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

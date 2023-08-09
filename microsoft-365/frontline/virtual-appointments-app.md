@@ -1,8 +1,8 @@
 ---
 title: Use the Virtual Appointments app in Microsoft Teams
-author: daisyfell
-ms.author: daisyfeller
-manager: samanro
+author: lana-chin
+ms.author: v-chinlana
+manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-frontline 
@@ -32,7 +32,7 @@ appliesto:
 ms.date: 03/27/2023
 ---
 
-# Use the Virtual Appointments app in Microsoft Teams
+# Set up the Virtual Appointments app in Microsoft Teams
 
 ![Information icon](media/info.png) **Some features described in this article require [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams)**.
 
@@ -104,9 +104,6 @@ You can configure options such as whether attendees can [join from a a desktop o
 ##### Set up SMS text notifications
 
 ![Information icon](media/info.png) **This feature is now part of [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams).**
-
-> [!NOTE]
-> We'll be providing unlimited SMS notifications through April 3, 2023 (previously March 1, 2023) for customers with Bookings licenses. As we get closer to the end of the promotion period, we'll provide more details on licensing requirements. Contact your account team or support to receive pricing details after the promotion period.
 
 Attendees need a valid United States, Canada, or United Kingdom phone number before they can receive SMS notifications.
 

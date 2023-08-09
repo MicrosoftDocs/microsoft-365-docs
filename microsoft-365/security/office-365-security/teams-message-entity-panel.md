@@ -14,19 +14,18 @@ ms.collection:
   - m365-security
   - tier1
   - highpri
-description: Describes the Teams Message Entity Panel for Microsoft Teams in Microsoft Defender for Office 365, how it does post-breach work like ZAP and Safelinks and gives admins a single pane of glass on Teams chat and channel threats like suspicious URLs. 
+description: Describes the Teams Message Entity Panel for Microsoft Teams in Microsoft Defender for Office 365, how it does post-breach work like ZAP and Safelinks and gives admins a single pane of glass on Teams chat and channel threats like suspicious URLs.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 03/28/2023
+ms.date: 6/20/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
 # The Teams Message Entity Panel for Microsoft Teams in Microsoft Defender for Office 365
 
 [!include[Prerelease information](../../includes/prerelease.md)]
-
-**Applies to:**
-- [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 The Teams Message Entity Panel in Microsoft Defender for Office 365 puts all Microsoft Teams data about suspicious or malicious chats and channels on a *single, actionable panel*.
 
@@ -72,7 +71,7 @@ The **header section** contains the subject of the message (if there is one) or 
 
 :::image type="content" source="../../media/teams-message-entity-panel-shown-in-quarantine.png" alt-text="Screenshot of the Teams Message Entity panel as it is seen in Quarantine." lightbox="../../media/teams-message-entity-panel-shown-in-quarantine.png":::
 
-The **message details** section contains the threats suspected, confidence level, and the message location. This is also the location where admins can view the sender address, the time the message was recieved and the detection technology. It also includes the Teams Message ID, which can be used as an indentifer of a Teams message in Microsoft Defender for Office 365. 
+The **message details** section contains the threats suspected, confidence level, and the message location. This is also the location where admins can view the sender address, the time the message was received and the detection technology. It also includes the Teams Message ID, which can be used as an identifier of a Teams message in Microsoft Defender for Office 365.
 
 The **sender section** displays the sender's domain and reports whether the sender is in the tenant or cross-org. An external section marked as *Yes* indicates that the message happened between a user inside, and a user outside, of your organization.
 

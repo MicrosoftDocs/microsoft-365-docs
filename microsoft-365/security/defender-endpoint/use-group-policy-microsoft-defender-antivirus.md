@@ -3,13 +3,11 @@ title: Configure Microsoft Defender Antivirus with Group Policy
 description: Learn how to use a Group Policy to configure and manage Microsoft Defender Antivirus on your endpoints in Microsoft Defender for Endpoint.
 keywords: group policy, GPO, configuration, settings
 ms.service: microsoft-365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 01/04/2022
+ms.date: 05/24/2023
 ms.reviewer: ksarens, jtoole, pahuijbr
 manager: dansimp
 ms.subservice: mde
@@ -35,11 +33,17 @@ search.appverid: met150
 **Platforms**
 - Windows
 
-You can use [Group Policy](/windows/win32/srvnodes/group-policy) to configure and manage Microsoft Defender Antivirus on your endpoints.
+We recommend using [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) to manage Microsoft Defender Antivirus settings for your organization. However, you can use [Group Policy](/windows/win32/srvnodes/group-policy) to configure and manage some settings for Microsoft Defender Antivirus.
+
+> [!IMPORTANT]
+> If [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) is enabled in your organization, any changes made to [tamper-protected settings](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection#what-happens-when-tamper-protection-is-turned-on) are ignored. In addition, you cannot turn off tamper protection by using Group Policy. 
+> 
+> If you must make changes to a device and those changes are blocked by tamper protection, we recommend using [troubleshooting mode](/microsoft-365/security/defender-endpoint/enable-troubleshooting-mode) to temporarily disable tamper protection on the device. Note that after troubleshooting mode ends, any changes made to tamper-protected settings are reverted to their configured state.
+> 
 
 ## Configure Microsoft Defender Antivirus using Group Policy
 
-In general, you can use the following procedure to configure or change Microsoft Defender Antivirus group policy settings:
+In general, you can use the following procedure to configure or change some settings for Microsoft Defender Antivirus.
 
 1. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object (GPO) you want to configure and click **Edit**.
 
@@ -58,11 +62,8 @@ In general, you can use the following procedure to configure or change Microsoft
 The following table lists commonly used Group Policy settings that are available in Windows 10.
 
 > [!TIP]
-> Download the Group Policy Reference Spreadsheet, which lists the policy settings for computer and user configurations that are included in the Administrative template files delivered with for Windows. You can configure refer to the spreadsheet when you edit Group Policy Objects. <br/><br/> Here are the most recent versions:
-> - [Group Policy Settings Reference Spreadsheet for Windows 10 May 2020 Update (2004)](https://www.microsoft.com/download/details.aspx?id=101451)
-> - [Group Policy Settings Reference Spreadsheet for Windows 11 October 2021 Update (21H2)](https://www.microsoft.com/download/details.aspx?id=103506)
+> For the most current settings, see get the latest ADMX files in your central store to access the correct policy options. See [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) and download the latest files. 
 
-<br/><br/>
 
 |Location|Setting|Article|
 |---|---|---|
@@ -74,7 +75,7 @@ The following table lists commonly used Group Policy settings that are available
 |Exclusions|Path Exclusions|[Configure and validate exclusions in Microsoft Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md)|
 |Exclusions|Process Exclusions|[Configure and validate exclusions in Microsoft Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md)|
 |Exclusions|Turn off Auto Exclusions|[Configure and validate exclusions in Microsoft Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md)|
-|MAPS|Configure the 'Block at First Sight' feature|[Enable block at first sight](configure-block-at-first-sight-microsoft-defender-antivirus.md)|
+|MAPS|Configure the "Block at First Sight" feature|[Enable block at first sight](configure-block-at-first-sight-microsoft-defender-antivirus.md)|
 |MAPS|Join Microsoft MAPS|[Enable cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md)|
 |MAPS|Send file samples when further analysis is required|[Enable cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md)|
 |MAPS|Configure local setting override for reporting to Microsoft MAPS|[Prevent or allow users to locally modify policy settings](configure-local-policy-overrides-microsoft-defender-antivirus.md)|
@@ -191,3 +192,4 @@ The following table lists commonly used Group Policy settings that are available
 - [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md)
 - [Reference topics for management and configuration tools](configuration-management-reference-microsoft-defender-antivirus.md)
 - [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

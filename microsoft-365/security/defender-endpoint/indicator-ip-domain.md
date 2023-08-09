@@ -1,12 +1,8 @@
 ---
 title: Create indicators for IPs and URLs/domains
-ms.reviewer:
+ms.reviewer: thdoucet
 description: Create indicators for IPs and URLs/domains that define the detection, prevention, and exclusion of entities.
-keywords: ip, url, domain, manage, allowed, blocked, block, clean, malicious, file hash, ip address, urls, domain, IoC precedence, IoC conflict,
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
@@ -18,7 +14,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 07/20/2023
 ---
 
 # Create indicators for IPs and URLs/domains
@@ -97,6 +93,18 @@ For processes other than Microsoft Edge and Internet Explorer, web protection sc
 - Encrypted URLs (FQDN only) can be blocked in third party browsers (that is, other than Internet Explorer, Edge)
 - Full URL path blocks can be applied for unencrypted URLs
 - If there are conflicting URL indicator policies, the longer path is applied. For example, the URL indicator policy `https://support.microsoft.com/office` takes precedence over the URL indicator policy `https://support.microsoft.com`.
+
+## Network protection and the TCP three-way handshake
+
+With network protection, the determination of whether to allow or block access to a site is made after the completion of the [three-way handshake via TCP/IP](/troubleshoot/windows-server/networking/three-way-handshake-via-tcpip). Thus, when a site is blocked by network protection, you might see an action type of `ConnectionSuccess` under `NetworkConnectionEvents` in the Microsoft 365 Defender portal, even though the site was blocked. `NetworkConnectionEvents` are reported from the TCP layer, and not from network protection. After the three-way handshake has completed, access to the site is allowed or blocked by network protection.
+
+Here's an example of how that works:
+
+1. Suppose that a user attempts to access a website on their device. The site happens to be hosted on a dangerous domain, and it should be blocked by network protection.  
+
+2. The three-way handshake via TCP/IP commences. Before it completes, a `NetworkConnectionEvents` action is logged, and its `ActionType` is listed as `ConnectionSuccess`. However, as soon as the three-way handshake process completes, network protection blocks access to the site. All of this happens quickly. A similar process occurs with [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview); it's when the three-way handshake completes that a determination is made, and access to a site is either blocked or allowed.
+
+3. In the Microsoft 365 Defender portal, an alert is listed in the [alerts queue](alerts-queue.md). Details of that alert include both `NetworkConnectionEvents` and `AlertEvents`. You can see that the site was blocked, even though you also have a `NetworkConnectionEvents` item with the ActionType of `ConnectionSuccess`.
 
 ### Warn mode controls
 
@@ -180,3 +188,4 @@ The result is that categories 1-4 are all blocked. This is illustrated in the fo
 - [Create indicators based on certificates](indicator-certificates.md)
 - [Manage indicators](indicator-manage.md)
 - [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

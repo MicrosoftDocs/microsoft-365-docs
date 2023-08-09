@@ -16,17 +16,16 @@ ms.collection:
 - m365-security
 - tier2
 description: During and after an automated investigation in Microsoft 365, you can view the results and key findings.
-ms.date: 01/31/2023
+ms.date: 06/09/2023
 ms.subservice: mdo
 ms.service: microsoft-365-security
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
 ---
 
 # Details and results of an automated investigation in Microsoft 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
-
-**Applies to**
-- [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
 When an [automated investigation](air-about.md) occurs in [Microsoft Defender for Office 365](defender-for-office-365.md), details about that investigation are available during and after the automated investigation process. If you have the necessary permissions, you can view those details in the Microsoft 365 Defender portal. Investigation details provide you with up-to-date status, and the ability to approve any pending actions.
 

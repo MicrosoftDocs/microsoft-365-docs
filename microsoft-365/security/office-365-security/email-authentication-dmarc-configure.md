@@ -7,7 +7,7 @@ author: MSFTTracyP
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.date: 1/31/2023
+ms.date: 6/15/2023
 ms.localizationpriority: high
 search.appverid:
   - MET150
@@ -15,19 +15,18 @@ ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
   - m365-security
   - tier1
-description: Learn how to configure Domain-based Message Authentication, Reporting, and Conformance (DMARC) to validate messages sent from your organization.
+description: Learn how to configure Domain-based Message Authentication, Reporting, and Conformance (DMARC) to validate messages sent from your organization, contains information on DMARC reject or OReject.
 ms.subservice: mdo
 ms.service: microsoft-365-security
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
 # Use DMARC to validate email
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
-
-**Applies to**
-- [Exchange Online Protection](eop-about.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Domain-based Message Authentication, Reporting, and Conformance ([DMARC](https://dmarc.org)) works with Sender Policy Framework (SPF) and DomainKeys Identified Mail (DKIM) to authenticate mail senders.
 
@@ -218,6 +217,18 @@ You can implement DMARC gradually without impacting the rest of your mail flow. 
    _dmarc.contoso.com. TXT "v=DMARC1; p=reject; sp=reject; ruf=mailto:authfail@contoso.com; rua=mailto:aggrep@contoso.com"
    ```
 
+## DMARC Reject
+
+DMARC `p=reject` is a policy that's set in the DMARC TXT record by domain owners to notify service providers to *reject* email that fails DMARC.
+
+It came about because when OReject is set as the default, rejected email was sent to quarantine in Enterprise, and to the Junk Email folder in Consumer (due to lack of quarantine in Consumer). However, with DMARC `p=reject`, the email is rejected.
+
+Configuration can be done in the Microsoft 365 Defender portal, or by the [New-AntiPhishPolicy](/powershell/module/exchange/new-antiphishpolicy) or [Set-AntiPhishPolicy](/powershell/module/exchange/set-antiphishpolicy) cmdlets in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). For more information, see the following articles:
+
+- [Spoof protection and sender DMARC policies](anti-phishing-policies-about.md#spoof-protection-and-sender-dmarc-policies)
+- [Configure anti-phishing policies in EOP](anti-phishing-policies-eop-configure.md)
+- [Configure anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-mdo-configure.md)
+
 ## How Microsoft 365 handles outbound email that fails DMARC
 
 If a message is outbound from Microsoft 365 and fails DMARC, and you have set the policy to p=quarantine or p=reject, the message is routed through the [High-risk delivery pool for outbound messages](outbound-spam-high-risk-delivery-pool-about.md). There's no override for outbound email.
@@ -226,14 +237,12 @@ If you publish a DMARC reject policy (p=reject), no other customer in Microsoft 
 
 ## How Microsoft 365 handles inbound email that fails DMARC
 
-If the DMARC policy of the sending server is `p=reject`, [Exchange Online Protection](eop-about.md) (EOP) marks the message as spoof instead of rejecting it. In other words, for inbound email, Microsoft 365 treats `p=reject` and `p=quarantine` the same way. Admins can define the action to take on messages classified as spoof within the [anti-phishing policy](anti-phishing-policies-about.md).
+If the DMARC policy of the sending domain is `p=reject`, [Exchange Online Protection](eop-about.md) (EOP) rejects the message by default. You can configure anti-phishing policies to honor or not honor `p=quarantine` and `p=reject` in sender DMARC policies, and specify separate actions for `p=quarantine` and `p=reject`. For more information, see [Spoof protection and sender DMARC policies](anti-phishing-policies-about.md#spoof-protection-and-sender-dmarc-policies).
 
-Microsoft 365 is configured like this because some legitimate email may fail DMARC. For example, a message might fail DMARC if it's sent to a mailing list that then relays the message to all list participants. If Microsoft 365 rejected these messages, people could lose legitimate email and have no way to retrieve it. Instead, these messages will still fail DMARC but they'll be marked as spam and not rejected. If desired, users can still get these messages in their inbox through these methods:
+When anti-phishing policies are configured to not honor `p=quarantine` or `p=reject` in DMARC policies, messages that fail DMARC are marked as spam and aren't rejected. Users can still get these messages in their inbox through these methods:
 
 - Users add safe senders individually by using their email client.
-
-- Admins can use the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md) or the [Tenant Allow/Block List](tenant-allow-block-list-about.md) to allow messages from the spoofed sender.
-
+- Admins can use the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md#override-the-spoof-intelligence-verdict) or the [Tenant Allow/Block List](tenant-allow-block-list-email-spoof-configure.md#create-allow-entries-for-spoofed-senders) to allow messages from the spoofed sender.
 - Admins create an Exchange mail flow rule (also known as a transport rule) for all users that allows messages for those particular senders.
 
 For more information, see [Create safe sender lists](create-safe-sender-lists-in-office-365.md).

@@ -1,8 +1,8 @@
 ---
 title: Virtual Appointments with Teams - Integration into Oracle Health EHR
-author: samanro
-ms.author: samanro
-manager: pamgreen
+author: lana-chin
+ms.author: v-chinlana
+manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-frontline
@@ -64,6 +64,7 @@ Before you integrate the Teams EHR connector in your healthcare organization, yo
 - Identified a person in your organization who is a Microsoft 365 global admin with access to the [Teams admin center](https://admin.teams.microsoft.com).
 - Your systems meet all [software and browser requirements](/microsoftteams/hardware-requirements-for-the-teams-app) for Teams.
 - Oracle Health version November 2018 or later
+- Contact Microsoft at teamsforhealthcare@service.microsoft.com to get enrolled in the Oracle Cerner Code program.
 
 > [!IMPORTANT]
 > PowerChart is only available in Microsoft Edge. Internet Explorer is no longer supported.

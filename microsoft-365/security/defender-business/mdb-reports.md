@@ -11,7 +11,7 @@ ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
 ms.date: 03/23/2023
-ms.reviewer: efratka, oogunrinde, jomaun
+ms.reviewer: efratka, nehabha
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB

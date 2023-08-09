@@ -17,7 +17,8 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
-ms.topic: conceptual
+- must-keep
+ms.topic: reference
 ms.subservice: mde
 ms.custom: api
 ms.date: 06/03/2021
@@ -79,8 +80,8 @@ including how to choose permissions, see [Get started](apis-intro.md).
 
 |Permission type|Permission|Permission display name|
 |---|---|---|
-Application|Machine.Read.All|''Read all machine profiles''
-Application|"Machine.ReadWrite.All|'Read and write all machine information'
+Application|Machine.Read.All|Read all machine profiles
+Application|Machine.ReadWrite.All|Read and write all machine information
 |Delegated (work or school account)|Machine.LiveResponse|Run live response on a specific machine|
 
 ## HTTP request
@@ -155,3 +156,4 @@ C:\\windows\\TEMP\\OfficeClickToRun.dmp.zip\n51 MB\n\u0000\u0000\u0000",
 - [Get machine action API](get-machineaction-object.md)
 - [Cancel machine action](cancel-machine-action.md)
 - [Run live response](run-live-response.md) 
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

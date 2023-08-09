@@ -51,10 +51,10 @@ Bulk mail is typically advertising emails or marketing messages. These emails ca
    1. Custom policies are set to 7 by default unless another value is provided.
 1. **Edit** (or create a custom policy) to set the BCL threshold that meets your needs. For example, if most of the messages you collected (which were all unwanted) have a BCL value of 4 or higher, setting the BCL value to 4 in the policy would filter out these messages for your end users.
 1. Within that policy, under the **"Edit actions"** section, select the **"bulk message action"** and select what to do when the threshold is exceeded. For example, you could select Quarantine if you would like to keep all bulk out of the mailbox or use the Junk email folder for a less aggressive stance.
-1. If you receive complaints from users about too many bulk emails being blocked, you can adjust this threshold, or alternatively, submit the message to us, which will also add the sender to the Tenant Allow Block List.
+1. If you receive complaints from users about too many bulk emails being blocked, you can adjust this threshold, or alternatively, submit the message to us, which will also add the sender to the Tenant Allow/Block List.
 
 > [!TIP]
-> Review this step-by-step guide for more details on allowing senders using the Tenant Allow Block List: [How to handle legitimate emails getting blocked from delivery using Microsoft Defender for Office 365](how-to-handle-false-positives-in-microsoft-defender-for-office-365.md).
+> Review this step-by-step guide for more details on allowing senders using the Tenant Allow/Block List: [How to handle legitimate emails getting blocked from delivery using Microsoft Defender for Office 365](how-to-handle-false-positives-in-microsoft-defender-for-office-365.md).
 
 ## More aggressive strategies for managing bulk senders
 

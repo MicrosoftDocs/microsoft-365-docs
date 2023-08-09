@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.collection:
 - tier2
 - m365-security
-ms.date: 1/31/2023
+ms.date: 6/14/2023
 ms.localizationpriority: medium
 search.appverid:
   - MET150
@@ -19,14 +19,14 @@ ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
+
 # Detect and Remediate Illicit Consent Grants
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
-
-**Applies to**
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 **Summary**  Learn how to recognize and remediate the illicit consent grants attack in Microsoft 365.
 
@@ -135,7 +135,7 @@ The script produces one file named Permissions.csv. Follow these steps to look f
 After you have finished inventorying application access, review the **audit log** to determine the full scope of the breach. Search on the affected users, the time frames that the illicit application had access to your organization, and the permissions the app had. You can search the **audit log** in the [Microsoft 365 Defender portal](../../compliance/search-the-audit-log-in-security-and-compliance.md).
 
 > [!IMPORTANT]
-> [Mailbox auditing](../../compliance/enable-mailbox-auditing.md) and [Activity auditing for admins and users](../../compliance/turn-audit-log-search-on-or-off.md) must have been enabled prior to the attack for you to get this information.
+> [Mailbox auditing](../../compliance/audit-mailboxes.md) and [Activity auditing for admins and users](../../compliance/audit-log-enable-disable.md) must have been enabled prior to the attack for you to get this information.
 
 ## How to stop and remediate an illicit consent grant attack
 

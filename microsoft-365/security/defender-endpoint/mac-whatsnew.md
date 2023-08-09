@@ -1,15 +1,11 @@
 ---
 title: What's new in Microsoft Defender for Endpoint on Mac
 description: Learn about the major changes for previous versions of Microsoft Defender for Endpoint on Mac.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, macos, whatsnew, big sur, monterey, ventura, mde for mac
 ms.service: microsoft-365-security
-ms.mktglfcycl: security
-ms.sitesec: library
-ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 01/17/2023
+ms.date: 06/29/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -43,6 +39,10 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 
 Tamper protection will extend to macOS devices and will be turned on in block mode by default to help secure your Mac against threats. To learn more, see [Protect macOS security settings with tamper protection](built-in-protection.md).
 
+**Network protection available for macOS**
+
+Network protection for macOS is now available for all Mac devices onboarded to Defender for Endpoint. Devices must meet the minimum requirements. To learn more, see [Use network protection to help prevent macOS connections to bad sites](/microsoft-365/security/defender-endpoint/network-protection-macos).
+
 **Known issues**
 
 Apple has fixed an issue on macOS [Ventura upgrade](<https://developer.apple.com/documentation/macos-release-notes/macos-13_1-release-notes>), which is fixed with the latest OS update. The issue impacts Microsoft Defender for Endpoint security extensions, and might result in losing Full Disk Access Authorization, impacting its ability to function properly.<br>
@@ -50,6 +50,60 @@ Apple has fixed an issue on macOS [Ventura upgrade](<https://developer.apple.com
 **Catalina Deprecation**<br>
 Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as Apple ended support for Catalina (10.15) in December 2022.
 </br>
+
+### Jul-2023 (Build: 101.23052.0004  | Release version: 20.123052.4.0)
+
+| Build:             | **101.23052.0004**         |
+|--------------------|-----------------------|
+| Release version:   | **20.123052.4.0** |
+| Engine version:    | **1.1.20100.7**       |
+| Signature version: | **1.391.2163.0**      |
+
+##### What's new
+
+- Client version schema change
+- Fix: Defender does not start on a machine with certain versions of Edge due to directory permission issue
+- Bug and performance fixes
+
+### Jun-2023 (Build: 101.98.84  | Release version: 20.123042.19884.0)
+
+| Build:             | **101.98.84**         |
+|--------------------|-----------------------|
+| Release version:   | **20.123042.19884.0** |
+| Engine version:    | **1.1.20300.4**       |
+| Signature version: | **1.391.221.0**      |
+
+##### What's new
+
+- System Extensions health command `mdatp health --details system_extensions`
+- Bug and performance fixes
+
+### May-2023 (Build: 101.98.71  | Release version: 20.123032.19871.0)
+
+| Build:             | **101.98.71**         |
+|--------------------|-----------------------|
+| Release version:   | **20.123032.19871.0** |
+| Engine version:    | **1.1.20300.4**       |
+| Signature version: | **1.389.1872.0**      |
+
+##### What's new
+
+- Tamper Protection health command `mdatp health --details tamper_protection`
+- Tamper Protection - [MDM processes exclusions](tamperprotection-macos.md#exclusions)
+- Fix: Remove Codesigned Artifact from App Bundle
+- Bug and performance fixes
+
+### May-2023 (Build: 101.98.70  | Release version: 20.123022.19870.0)
+
+| Build:             | **101.98.70**         |
+|--------------------|-----------------------|
+| Release version:   | **20.123022.19870.0** |
+| Engine version:    | **1.1.20300.4**       |
+| Signature version: | **1.389.1396.0**       |
+
+##### What's new
+
+- Bug and performance fixes
 
 ### Mar-2023 (Build: 101.98.30  | Release version: 20.123012.19830.0)
 
@@ -861,3 +915,4 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 </details>
 
 
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

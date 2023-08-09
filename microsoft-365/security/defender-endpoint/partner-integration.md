@@ -63,3 +63,4 @@ Follow the steps in [Become a Microsoft Defender for Endpoint partner](get-start
 
 ## Related topic
 - [Overview of management and APIs](management-apis.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

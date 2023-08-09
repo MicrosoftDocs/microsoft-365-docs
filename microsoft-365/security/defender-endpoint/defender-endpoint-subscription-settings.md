@@ -31,7 +31,7 @@ A [mixed-licensing scenario](defender-endpoint-plan-1-2.md#mixed-licensing-scena
 ## Set your tenant to mixed mode and tag devices
 
 > [!IMPORTANT]
-> - **Mixed-mode settings apply to client endpoints only**. Tagging server devices won’t change their subscription state. All server devices running Windows Server or Linux should have appropriate licenses, such as [Defender for Servers](/azure/defender-for-cloud/plan-defender-for-servers-select-plan). See [Options for onboarding servers](defender-endpoint-plan-1-2.md#options-for-onboarding-servers).
+> - **Mixed-mode settings apply to client endpoints only**. Tagging server devices won't change their subscription state. All server devices running Windows Server or Linux should have appropriate licenses, such as [Defender for Servers](/azure/defender-for-cloud/plan-defender-for-servers-select-plan). See [Options for onboarding servers](defender-endpoint-plan-1-2.md#options-for-onboarding-servers).
 > - **Make sure to follow the procedures in this article to try mixed-license scenarios in your environment**. Assigning user licenses in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) doesn't set your tenant to mixed mode. 
 > - Make sure that you have opted in to receive [preview features](preview.md).
 > - **You should have active trial or paid licenses for both Defender for Endpoint Plan 1 and Plan 2**. 
@@ -42,7 +42,7 @@ A [mixed-licensing scenario](defender-endpoint-plan-1-2.md#mixed-licensing-scena
 
 1. As an admin, go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
-2. Go to **Settings** > **Endpoints** > **Licenses**. Your usage report opens and displays information about your organization’s Defender for Endpoint licenses.
+2. Go to **Settings** > **Endpoints** > **Licenses**. Your usage report opens and displays information about your organization's Defender for Endpoint licenses.
 
 3. Under **Subscription state**, select **Manage subscription settings**. 
 
@@ -150,3 +150,4 @@ The license usage report is estimated based on sign-in activities on the device.
 - [Get started with Microsoft Security (trial offers)](https://www.microsoft.com/security/business/get-started/start-free-trial)
 - [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)
 - [Microsoft Defender for Business](../defender-business/mdb-overview.md) (endpoint protection for small and medium-sized businesses)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

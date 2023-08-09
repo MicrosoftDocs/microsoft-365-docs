@@ -96,3 +96,4 @@ List the filesystems on the machine with:
 ```bash
 df -Th
 ```
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
