@@ -19,7 +19,7 @@ ms.collection:
   - tier1
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 05/05/2022
+ms.date: 08/08/2023
 ---
 
 # Microsoft Defender Experts for Hunting
@@ -32,6 +32,9 @@ ms.date: 05/05/2022
 
 > [!IMPORTANT]
 > Microsoft Defender Experts for Hunting is sold separately from other Microsoft 365 Defender products. If you're a Microsoft 365 Defender customer and are interested in purchasing Defender Experts for Hunting, complete a [customer interest form](https://aka.ms/DEX4HuntingCustomerInterestForm).
+
+> [!NOTE]
+> Any incident response services offered by Defender Experts will be offered under the Defender Experts Service Terms.
 
 Microsoft Defender Experts for Hunting was created for customers who have a robust security operations center but want Microsoft to help them proactively hunt threats using Microsoft Defender data. Defender Experts for Hunting is a proactive threat hunting service that goes beyond the endpoint to hunt across endpoints, Office 365, cloud applications, and identity. Our experts will investigate anything they find, then hand off the contextual alert information along with remediation instructions, so you can quickly respond.
 
