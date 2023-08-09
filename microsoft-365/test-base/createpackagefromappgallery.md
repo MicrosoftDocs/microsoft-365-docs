@@ -56,7 +56,7 @@ package**. Then click the card '**Create package from App Gallery**'.
     > [!Note]
     > The combination of package name and version must be unique within your Test Base account.
 
-5.  After all the requested information is specified, you can proceed to the next phase by clicking the **Next: Configuration test** button.
+5.  After all the requested information is specified, you can proceed to the next phase by clicking the **Next: Configure test** button.
 
     > [!div class="mx-imgBorder"]
     > [![Screenshot of the button of configure test](Media/create_package_from_gallery_5.png)](Media/create_package_from_gallery_5.png#lightbox)
@@ -75,7 +75,7 @@ package**. Then click the card '**Create package from App Gallery**'.
     > [!div class="mx-imgBorder"]
     > [![Screenshot of configure test for new package](Media/create_package_from_gallery_6.png)](Media/create_package_from_gallery_6.png#lightbox)
 
-2.  Once all required info is filled out, you can proceed to step 3 by
+2.  Once all required information is filled out, you can proceed to step 3 by
     clicking the Next button at the bottom.
 
 For next steps, please refer to the [Creating and Testing Binary Files on Test Base \| Microsoft Learn](testapplication.md).
