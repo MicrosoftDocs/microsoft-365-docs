@@ -50,11 +50,11 @@ Team members can find the app in the Teams app store, or you can share the [inst
 
 The [Virtual Appointments app](https://support.microsoft.com/topic/22df0079-e6d9-4225-bc65-22747fb2cb5f) provides a central hub for all your virtual appointments needs in Teams. The app enables a seamless end-to-end experience for business-to-customer engagements, integrating Bookings schedules, analytics, and management options, all in one place.
 
-You can schedule, view, and manage virtual appointments, get real-time status updates in a queue view, send appointment reminders, view analytics and reports to gain insight into virtual appointments activity, and configure calendar, staff, and booking page settings
+You can schedule, view, and manage virtual appointments, get real-time status updates in a queue view, send appointment reminders, view analytics and reports to gain insight into virtual appointments activity, and configure calendar, staff, and booking page settings.
 
 Use it to schedule and manage appointments such as financial consultations, healthcare visits, virtual fittings and consultations, interviews, customer support, education office hours, and more. You can also publish an online booking page for your clients, customers, and patients to book appointments with your staff.
 
-The Virtual Appointments app makes it easy to manage the complex scheduling demands of any organization. Schedulers can manage multiple department and staff calendars, as well as communications with internal and external attendees, from a single experience.
+The app makes it easy to manage the complex scheduling demands of any organization. Schedulers can manage multiple department and staff calendars, as well as communications with internal and external attendees, from a single experience.
 
 The virtual appointments are held through Teams meetings, which offer robust video conferencing capabilities. For example, a doctor can share their screen and review test results with a patient. Or, a banking advisor can request electronic signatures on documents, allowing them to close transactions remotely.
 
@@ -103,17 +103,14 @@ You can add up to 100 staff members to an appointment calendar. Each person you 
 
 <!--Now you must specify which appointment type you want the calendar to use an understand the two different types of appointments.-->
 
-Next, add services to the calendar using the appropriate appointment type. Before you do that, it's important to understand the two different appointment types:
+Next, add services to the calendar using the appropriate appointment type. Before you do that, it's important to understand the two different appointment types so that you can choose the appointment type that best represents the services offered by your organization:
 
 - **Scheduled appointment type**: Used by schedulers to book scheduled appointments for staff and attendees. These appointments are scheduled for a specific date, time, and duration.
 - **On-demand appointment type**: Used by your customers, clients, and patients for on-demand appointments. These appointments are for services that are provided upon request, similar to a walk-in waiting room. This feature requires [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams).
 
-Choose the appointment type that best represents the services offered by your organization and the appointment experience you want.
-
   <!--- Schedulers use **scheduled appointments** to book appointments for staff and attendees for a specific date, time, and duration.
 
   - Customers, staff and others can create their own appointments with **on-demand appointments** for services that are provided upon request, similar to a walk-in waiting room.-->
-
 
 1. To add a service, on the **Manage** tab, select **Services**, and then under **Scheduled** or **On-demand**, select **Add service**.
     :::image type="content" source="media/virtual-appointments-app-services.png" alt-text="Screenshot of the Services tab." lightbox="media/virtual-appointments-app-services.png":::
