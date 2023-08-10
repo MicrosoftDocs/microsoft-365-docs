@@ -21,7 +21,7 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid: MET150
-description: "Learn how to update your billing addresses or the email address used to receive billing notifications for Microsoft 365 for business."
+description: "Learn how to change your billing address for Microsoft 365 for business."
 ms.date: 08/10/2023
 ---
 

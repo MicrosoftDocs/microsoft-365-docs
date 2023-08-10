@@ -21,7 +21,7 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - AdminTemplateSet
-description: "Find out how much tax you will be charged for your Microsoft 365 for business subscription in different regions."
+description: "Learn about tax information for Microsoft 365 billing and payments, including how to update your address and tax status."
 ms.date: 08/10/2023
 ---
 
