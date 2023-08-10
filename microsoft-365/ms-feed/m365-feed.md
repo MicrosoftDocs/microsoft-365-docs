@@ -32,11 +32,11 @@ In **Microsoft Edge**, while signed in with a work or school account, select the
 
 In **Outlook Mobile**, while signed in with a work or school account, select the Feed Tab from the bottom navigation bar.
 
-![Select Feed in Mobile Outlook.](../media/MS-outlook-feed-mobile.png)
+![Select Feed in Mobile Outlook.](../media/MS-m365-feed-outlook-resize-one.png)
 
 In **Microsoft 365 Mobile**, while signed in with a work or school account, select the Feed Tab from the bottom navigation bar.
 
-![Select Feed in Mobile Microsoft 365.](../media/MS-microsoft365-feed-mobile.png)
+![Select Feed in Mobile Microsoft 365.](../media/MS-m365-feed-mobile-resize-one.png)
 
 See the section *Find your way around* in [Discover and learn with Microsoft Feed](https://support.microsoft.com/en-us/office/discover-and-learn-with-microsoft-feed-9c190800-e348-46b7-9d46-41c628b80ebb) for more information.
 
