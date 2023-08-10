@@ -58,7 +58,7 @@ The next step after you join the multi-tenant organization is to synchronize you
 
 ## Leave a multi-tenant organization
 
-You can leave a multi-tenant organization as long as your tenant isn't the owner tenant. You can also remove other member tenants.
+You can leave a multi-tenant organization as long as your tenant isn't the last owner tenant in the multi-tenant organization. You can also remove other member tenants.
 
 To remove a tenant from a multi-tenant organization in Microsoft 365
 
