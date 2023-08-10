@@ -150,11 +150,11 @@ Both structured and freeform models use Microsoft Power Apps AI Builder to creat
 ### Annotations
 
 :::row:::
-   :::column span="3":::
-      Use the annotations feature in Syntex to add notes, comment, and collaborate with others on your content in document libraries. You can use annotations without modifying the original files, so the original records are preserved.
-   :::column-end:::
    :::column span="":::
       ![Image of generic annotations icon.](../media/content-understanding/annotation-image.png)
+   :::column-end:::
+   :::column span="3":::
+      Use the annotations feature in Syntex to add notes, comment, and collaborate with others on your content in document libraries. You can use annotations without modifying the original files, so the original records are preserved.
    :::column-end:::
 :::row-end:::
 
@@ -163,13 +163,13 @@ Both structured and freeform models use Microsoft Power Apps AI Builder to creat
 ### Content query
 
 :::row:::
-   :::column span="":::
-      ![Image of generic search icon.](../media/content-understanding/search-generic-image.png)
-   :::column-end:::
    :::column span="3":::
       The content query feature in Syntex lets you perform specific metadata-based queries on SharePoint document libraries.
 
-      You can make faster, more precise queries based on specific metadata column values, rather than just searching for keywords.    
+      You can make faster, more precise queries based on specific metadata column values, rather than just searching for keywords.
+   :::column-end:::
+   :::column span="":::
+      ![Image of generic search icon.](../media/content-understanding/search-generic-image.png)
    :::column-end:::
 :::row-end:::
 
@@ -180,11 +180,11 @@ This feature is useful when you have a specific piece of information you want to
 ### Content processing
 
 :::row:::
-   :::column span="3":::
-      Syntex lets you build simple rules-driven actions in document libraries based on metadata. From a document library, you can create rules to automate tasks such as sending a notification when metadata changes in a file, when a new file is created in the library, or when files are moved or copied based on metadata extracted by Syntex models. 
-   :::column-end:::
    :::column span="":::
       ![Image of generic content processing icon.](../media/content-understanding/content-processing-image.png)
+   :::column-end:::
+   :::column span="3":::
+      Syntex lets you build simple rules-driven actions in document libraries based on metadata. From a document library, you can create rules to automate tasks such as sending a notification when metadata changes in a file, when a new file is created in the library, or when files are moved or copied based on metadata extracted by Syntex models.
    :::column-end:::
 :::row-end:::
 
@@ -193,11 +193,11 @@ This feature is useful when you have a specific piece of information you want to
 ### Content compliance
 
 :::row:::
-   :::column span="":::
-      ![Image of generic compliance icon.](../media/content-understanding/compliance-image.png)
-   :::column-end:::
    :::column span="3":::
       Understanding your content allows for better compliance control and increases management and governance options for all your data. When content is properly tagged and labeled, you have better control over your data and can follow regulations more easily. Syntex helps you ensure compliance by using retention labels and sensitivity labels to manage your documents.
+   :::column-end:::
+   :::column span="":::
+      ![Image of generic compliance icon.](../media/content-understanding/compliance-image.png)
    :::column-end:::
 :::row-end:::
 
@@ -206,11 +206,11 @@ Learn more about how to apply [retention labels](apply-a-retention-label-to-a-mo
 ### Premium taxonomy services
 
 :::row:::
-   :::column span="3":::
-      Having one or more Syntex licenses in your organization enables the following additional term store features for admins:<br><br>
-   :::column-end:::
    :::column span="":::
       ![Image of generic taxonomy icon.](../media/content-understanding/taxonomy-image.png)
+   :::column-end:::
+   :::column span="3":::
+      Having one or more Syntex licenses in your organization enables the following additional term store features for admins:<br><br>
    :::column-end:::
 :::row-end:::
 
