@@ -176,7 +176,7 @@ After you’ve set up the Virtual Appointments app for your users, they can use 
 
 Here are some additional tasks that admins and schedulers can do in the app.-->
 
-#### Publish a booking page
+## Publish a booking page
 
 ???Booking admins can publish an online booking page where people can book scheduled and on-demand appointments with your staff.
 
