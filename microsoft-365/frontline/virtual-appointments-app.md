@@ -106,7 +106,7 @@ You can add up to 100 staff members to a calendar. Each person you add will have
 Next, add services to the calendar using the appropriate appointment type. Before you do that, it's important to understand the two different appointment types:
 
 - **Scheduled appointment type**: Used by schedulers to book scheduled appointments for staff and attendees. These appointments are scheduled for a specific date, time, and duration.
-- **On-demand appointment type**: Used by your customers, clients, staff, and others for on-demand appointments. These appointments are for services that are provided upon request, like a walk-in waiting room.
+- **On-demand appointment type**: Used by your customers, clients, and others for on-demand appointments. These appointments are for services that are provided upon request, like a walk-in waiting room.
 
 Choose the appointment type that best represents the services offered by your organization and type of appointment experience you want for your users.
 
@@ -120,7 +120,7 @@ To add a service, on the **Manage** tab, select **Services**, and then under **S
 
 #### Scheduled appointments
 
-1. If you choose **scheduled appointments**, enter a name for the service. For example, Account opening, Prescription renewal, Loan consultation, or Tax preparation.
+1. If you chose the **Scheduled** appointment type, enter a name for the service. For example, Account opening, Prescription renewal, Loan consultation, or Tax preparation.
 1. Specify any other information and settings you want. Schedulers can then use the appointment type to schedule an appointment. The information that you add is included in the email confirmation that's sent to attendees every time this type of appointment is booked.
 
     You can configure options such as whether attendees can [join from a desktop or mobile browser](browser-join.md) without having to download Teams, add an email reminder, set up SMS text notifications, and [link forms](#link-forms).
@@ -129,21 +129,21 @@ To add a service, on the **Manage** tab, select **Services**, and then under **S
 
 ![Information icon](media/info.png) **This feature requires [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams).**
 
-If you choose on-demand appointments, enter a name for the service. For example, Drop-in appointment, Account opening, Prescription renewal, Loan consultation, or Tax preparation.
+If you chose the **On-demand** appointment type*, enter a name for the service. For example, Drop-in appointment, Account opening, Prescription renewal, Loan consultation, or Tax preparation.
 
 Your customers, clients, and patients can then choose the appointment type on your booking page to request an on-demand appointment with your staff.
 
-### Tasks for admins and schedulers
+<!--### Tasks for admins and schedulers
 
 After you’ve set up the Virtual Appointments app for your users, they can use the app to schedule appointments, allow customers to schedule their own appointments, and join appointments. For complete instructions on using the app, users should visit the [Microsoft Teams support site for Virtual Appointments](https://support.microsoft.com/office/what-is-virtual-appointments-22df0079-e6d9-4225-bc65-22747fb2cb5f).
 
-Here are some additional tasks that admins and schedulers can do in the app.
+Here are some additional tasks that admins and schedulers can do in the app.-->
 
 #### Publish a Booking page
 
-Booking admins can publish an online booking page where people can book scheduled and on-demand appointments with your staff.
+![Information icon](media/info.png) **The on-demand scheduling feature requires [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams).**
 
-![Information icon](media/info.png) **This on-demand scheduling feature requires [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams).**
+Booking admins can publish an online booking page where people can book scheduled and on-demand appointments with your staff.
 
 1. On the **Manage** tab, select **Publish Booking page**.
 1. Turn on **Publish booking**.
