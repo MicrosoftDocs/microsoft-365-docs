@@ -58,6 +58,8 @@ Users with active per-user licenses can perform the following tasks:
 - Use of annotations to add notes and comments.
 - Use of premium taxonomy services. (Premium taxonomy services comprise SKOS-based term set import, pushing enterprise content types to hub-associated sites, and term store reports.)
 - Use the document library rules to move or copy content.
+- Merge and extract PDFs in OneDrive for Android and iOS
+
 
 ## AI Builder credits
 
@@ -128,11 +130,8 @@ The following tasks require a [Syntex per-user license](https://www.microsoft.co
 - Use of annotations to add notes and comments
 - Use of premium taxonomy services. (Premium taxonomy services comprise SKOS-based term set import, pushing enterprise content types to hub-associated sites, and term store reports.)
 - Use the document library rules to move or copy content
-<!--
-> [!NOTE]
-> Some features currently available in the per-user licensing (such as annotations and content query) might not be billed as pay-as-you-go, but will still be available to you as part of your Microsoft 365 E3 or E5 and Office 365 A3 or A5 subscription.
--->
-<!--
+- Merge and extract PDFs in OneDrive for Android and iOS
+
 Unlicensed users can be granted access to a content center and can create models there, but can't apply them to a document library.
  
 #### Cost of training and running models

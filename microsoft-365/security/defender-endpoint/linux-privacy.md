@@ -42,13 +42,13 @@ This section describes the privacy controls for the different types of data that
 
 ### Diagnostic data
 
-Diagnostic data is used to keep Defender for Endpoint secure and up-to-date, detect, diagnose and fix problems, and also make product improvements.
+Diagnostic data is used to keep Defender for Endpoint secure and up to date, detect, diagnose and fix problems, and also make product improvements.
 
 Some diagnostic data is required, while some diagnostic data is optional. We give you the ability to choose whether to send us required or optional diagnostic data by using privacy controls, such as policy settings for organizations.
 
 There are two levels of diagnostic data for Defender for Endpoint client software that you can choose from:
 
-- **Required**: The minimum data necessary to help keep Defender for Endpoint secure, up-to-date, and performing as expected on the device it's installed on.
+- **Required**: The minimum data necessary to help keep Defender for Endpoint secure, up to date, and performing as expected on the device it's installed on.
 - **Optional**: Other data that helps Microsoft make product improvements and provides enhanced information to help detect, diagnose, and remediate issues.
 
 By default, only required diagnostic data is sent to Microsoft.
@@ -102,7 +102,7 @@ The following fields are considered common for all events:
 
 ### Required diagnostic data
 
-**Required diagnostic data** is the minimum data necessary to help keep Defender for Endpoint secure, up-to-date, and perform as expected on the device it's installed on.
+**Required diagnostic data** is the minimum data necessary to help keep Defender for Endpoint secure, up to date, and perform as expected on the device it's installed on.
 
 Required diagnostic data helps to identify problems with Microsoft Defender for Endpoint that may be related to a device or software configuration. For example, it can help determine if a Defender for Endpoint feature crashes more frequently on a particular operating system version, with newly introduced features, or when certain Defender for Endpoint features are disabled. Required diagnostic data helps Microsoft detect, diagnose, and fix these problems more quickly so the impact to users or organizations is reduced.
 

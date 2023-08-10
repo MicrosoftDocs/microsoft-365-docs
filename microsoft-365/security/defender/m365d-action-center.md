@@ -13,7 +13,7 @@ f1.keywords:
 ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
-ms.date: 07/27/2022
+ms.date: 08/04/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -70,7 +70,7 @@ You can navigate to the list of actions pending approval in two different ways:
 
 1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in. 
 
-2. In the navigation pane, choose **Action center**. Or, in the Automated investigation & response card, select **Approve in Action Center**.
+2. In the navigation pane under **Actions and submissions**, choose **Action center**. Or, in the Automated investigation & response card, select **Approve in Action Center**.
 
 3. Use the **Pending actions** and **History** tabs. The following table summarizes what you'll see on each tab:
 
