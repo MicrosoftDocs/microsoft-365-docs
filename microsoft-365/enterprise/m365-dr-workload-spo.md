@@ -177,9 +177,9 @@ Be sure to send your users an email when the move has successfully completed inf
 #### Scheduling OneDrive site moves
 
 You can schedule OneDrive site moves in advance (described later in this article). We recommend that you start with a small number of users to validate your workflows and communication strategies. Once you are comfortable with the process, you can schedule moves as follows:
--You can schedule up to 4,000 moves at a time.
--As the moves begin, you can schedule more, with a maximum of 4,000 pending moves in the queue and any given time.
--The maximum size of a OneDrive that can be moved is 1 terabyte (1 TB).
+- You can schedule up to 4,000 moves at a time.
+- As the moves begin, you can schedule more, with a maximum of 4,000 pending moves in the queue and any given time.
+- The maximum size of a OneDrive that can be moved is 2 terabytes (2 TB).
 
 #### **Moving a OneDrive site**
 To perform a OneDrive _Geography_ move, the _Tenant_ administrator must first set the user's Preferred Data Location (PDL) to the appropriate _Geography_ location. Once the PDL is set, wait for at least 24 hours for the PDL update to sync across the _Geography_ locations before starting the OneDrive _Geography_ move.
@@ -361,7 +361,7 @@ You can schedule SharePoint site moves in advance (described later in this artic
 
 - You can schedule up to 4,000 moves at a time.
 - As the moves begin, you can schedule more, with a maximum of 4,000 pending moves in the queue and any given time.
-- The maximum size of a SharePoint site that can be moved is 1 terabyte (1 TB).
+- The maximum size of a SharePoint site that can be moved is 2 terabytes (2 TB).
 
 To schedule a SharePoint site _Geography_ move for a later time, include one of the following parameters when you start the move:
 
