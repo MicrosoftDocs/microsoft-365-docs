@@ -44,7 +44,7 @@ If you’re an IT admin, see [Manage the Virtual Appointments app](/microsofttea
 
 <!--- Users who want to learn how to use the Virtual Appointments app should visit the [Microsoft Teams support site for Virtual Appointments](https://support.microsoft.com/office/what-is-virtual-appointments-22df0079-e6d9-4225-bc65-22747fb2cb5f), where they can watch a video and read about how to use the app. Topics include how to create a calendar, create and edit appointment types, add and manage staff, customize and publish a booking page, and manage your appointment queue.--->
 
-Team members can find the app in the Teams app store, or you can share the [installation link](https://teams.microsoft.com/l/app/6e106207-4565-4312-b3ea-bbe9b3ed0a02?source=app-details-dialog) to help them find it. Admins can use an [app setup policy](/microsoftteams/teams-app-setup-policies) to pin the app for your organization, or team members can [pin the app themselves](https://support.microsoft.com/office/pin-an-app-for-easy-access-3045fd44-6604-4ba7-8ecc-1c0d525e89ec).
+Team members can find the app in the Teams app store, or you can share the [installation link](https://teams.microsoft.com/l/app/6e106207-4565-4312-b3ea-bbe9b3ed0a02?source=app-details-dialog) to help them find it. IT admins can use an [app setup policy](/microsoftteams/teams-app-setup-policies) to pin the app for your organization, or team members can [pin the app themselves](https://support.microsoft.com/office/pin-an-app-for-easy-access-3045fd44-6604-4ba7-8ecc-1c0d525e89ec).
 
 ## Overview of the app
 
@@ -56,7 +56,7 @@ Use it to schedule and manage appointments such as financial consultations, heal
 
 The Virtual Appointments app makes it easy to manage the complex scheduling demands of any organization. Schedulers can manage multiple department and staff calendars, as well as communications with internal and external attendees, from a single experience.
 
-The virtual appointments are held through Microsoft Teams meetings, which offer robust video conferencing capabilities. For example, a doctor can share their screen and review test results with a patient. Or, a banking advisor can request electronic signatures on documents, allowing them to close transactions remotely.
+The virtual appointments are held through Teams meetings, which offer robust video conferencing capabilities. For example, a doctor can share their screen and review test results with a patient. Or, a banking advisor can request electronic signatures on documents, allowing them to close transactions remotely.
 
 You get an experience that's tailored to your industry. Here's a few examples of how you can use it in your organization:
 
@@ -66,7 +66,7 @@ You get an experience that's tailored to your industry. Here's a few examples of
 |Retail|Virtual fittings and consultations <br/>Schedule and manage appointments for your sales associates, product experts, and design consultants to conduct virtual shopping experiences with customers.|
 |Healthcare|Virtual appointments for patient care <br/>Schedule and manage appointments for your care team members to meet with patients or other healthcare providers to discuss medical care.|
 
-With any Microsoft 365 license, you can use basic Virtual Appointments capabilities that make it easy to schedule and join business-to-customer meetings. For example, you can schedule appointments in the Bookings calendar and external attendees can [join through a browser](browser-join.md) without having to download Teams. [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) unlocks advanced Virtual Appointments capabilities to manage and personalize the experience. These include a queue view of scheduled and on-demand appointments, SMS notifications, custom waiting rooms, and analytics.
+With any Microsoft 365 license, you can use basic Virtual Appointments capabilities that make it easy to schedule and join business-to-customer meetings. For example, you can schedule appointments in the calendar and external attendees can [join through a browser](browser-join.md) without having to download Teams. [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) unlocks advanced Virtual Appointments capabilities to manage and personalize the experience. These include a queue view of scheduled and on-demand appointments, SMS notifications, custom waiting rooms, and analytics.
 
 ## Set up an appointment calendar
 
@@ -90,9 +90,9 @@ To get started, [create a new appointment calendar](#to-create-a-new-appointment
 1. On the **Home** tab or **Schedule** tab of the app, choose **Connect existing calendar**.
 1. Search for the calendar that you want, select it, and then choose **Done**.
 
-### Step 2: Add staff to your appointment calendar
+### Step 2: Add staff
 
-You can add up to 100 staff members to a calendar. Each person you add will have their calendar displayed on the **Schedule** tab. Schedulers can then view their availability in the app and schedule appointments for them.
+You can add up to 100 staff members to an appointment calendar. Each person you add will have their calendar displayed on the **Schedule** tab. Schedulers can then view their availability in the app and schedule appointments for them.
 
 1. On the **Manage** tab, select **Staff**.
 1. Add staff members and assign a role to each person you add.
@@ -106,21 +106,25 @@ You can add up to 100 staff members to a calendar. Each person you add will have
 Next, add services to the calendar using the appropriate appointment type. Before you do that, it's important to understand the two different appointment types:
 
 - **Scheduled appointment type**: Used by schedulers to book scheduled appointments for staff and attendees. These appointments are scheduled for a specific date, time, and duration.
-- **On-demand appointment type**: Used by your customers, clients, and others for on-demand appointments. These appointments are for services that are provided upon request, like a walk-in waiting room.
+- **On-demand appointment type**: Used by your customers, clients, and patients for on-demand appointments. These appointments are for services that are provided upon request, similar to a walk-in waiting room. This feature requires [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams).
 
-Choose the appointment type that best represents the services offered by your organization and type of appointment experience you want for your users.
+Choose the appointment type that best represents the services offered by your organization and the appointment experience you want.
 
-To add a service, on the **Manage** tab, select **Services**, and then under **Scheduled** or **On-demand**, select **Add service**.
+1. To add a service, on the **Manage** tab, select **Services**, and then under **Scheduled** or **On-demand**, select **Add service**.
 
   <!--- Schedulers use **scheduled appointments** to book appointments for staff and attendees for a specific date, time, and duration.
 
   - Customers, staff and others can create their own appointments with **on-demand appointments** for services that are provided upon request, similar to a walk-in waiting room.-->
 
-:::image type="content" source="media/virtual-appointments-app-services.png" alt-text="Screenshot of the Services tab." lightbox="media/virtual-appointments-app-services.png":::
+  :::image type="content" source="media/virtual-appointments-app-services.png" alt-text="Screenshot of the Services tab." lightbox="media/virtual-appointments-app-services.png":::
+
+1. Do one of the following:
+    1. If you chose **Scheduled**, follow the steps in [Scheduled appointments](#scheduled-appointments).
+    1. If you chose **On-demand**, follow the steps in [On-demand appointments](#on-demand-appointments).
 
 #### Scheduled appointments
 
-1. If you chose the **Scheduled** appointment type, enter a name for the service. For example, Account opening, Prescription renewal, Loan consultation, or Tax preparation.
+1. Enter a name for the service. For example, Account opening, Prescription renewal, Loan consultation, or Tax preparation.
 1. Specify any other information and settings you want. Schedulers can then use the appointment type to schedule an appointment. The information that you add is included in the email confirmation that's sent to attendees every time this type of appointment is booked.
 
     You can configure options such as whether attendees can [join from a desktop or mobile browser](browser-join.md) without having to download Teams, add an email reminder, [set up SMS text notifications](#set-up-sms-text-notifications), and [link forms](#link-forms).
@@ -131,7 +135,7 @@ To add a service, on the **Manage** tab, select **Services**, and then under **S
 
 Attendees need a valid United States, Canada, or United Kingdom phone number before they can receive SMS notifications.
 
-To send SMS notifications to attendees by default, turn on **Send them text messages**. Attendees will receive confirmation and reminder text messages that include the Teams meeting link and scheduled appointment details. They can opt out of receiving the messages by replying STOP, or resume receiving them by replying START.
+To send SMS notifications to attendees by default, turn on **Send them text messages**. Attendees receive confirmation and reminder text messages that include the Teams meeting link and scheduled appointment details. They can opt out of receiving the messages by replying STOP, or resume receiving them by replying START.
 
 Keep in mind that schedulers can later choose to turn off the setting on an as-needed basis when they use the appointment type to schedule an appointment.
 
@@ -146,7 +150,7 @@ You can link up to four forms for attendees to fill out each time a scheduled ap
 1. To link a form, choose **Link a form**.
 1. Enter the URL of the form, and then choose **Link**.
 
-   If this is the first time you're linking a form, you'll be prompted to create a Microsoft 365 group to store forms. Choose **Create group** to create the group. You only have to do this one time for the booking calendar.
+   If this is the first time you're linking a form, you're prompted to create a Microsoft 365 group to store forms. Choose **Create group** to create the group. You only have to do this one time for the booking calendar.
 
 When working with forms, keep in mind that:
 
@@ -162,9 +166,9 @@ When a scheduler uses the appointment type to schedule an appointment, they can 
 
 ![Information icon](media/info.png) **This feature requires [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams).**
 
-If you chose the **On-demand** appointment type, enter a name for the service. For example, Drop-in appointment, Account opening, Prescription renewal, Loan consultation, or Tax preparation.
+Enter a name for the service. For example, Drop-in appointment, Account opening, Prescription renewal, Loan consultation, or Tax preparation.
 
-Your customers, clients, and patients can then choose the appointment type on your booking page to request an on-demand appointment with your staff.
+Your customers, clients, and patients can then choose the appointment type on your [booking page](#publish-a-booking-page) to request an on-demand appointment with your staff.
 
 <!--### Tasks for admins and schedulers
 
@@ -172,21 +176,19 @@ After you’ve set up the Virtual Appointments app for your users, they can use 
 
 Here are some additional tasks that admins and schedulers can do in the app.-->
 
-#### Publish a Booking page
+#### Publish a booking page
 
-![Information icon](media/info.png) **The on-demand scheduling feature requires [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams).**
+???Booking admins can publish an online booking page where people can book scheduled and on-demand appointments with your staff.
 
-Booking admins can publish an online booking page where people can book scheduled and on-demand appointments with your staff.
+1. On the **Manage** tab, select **Publish your booking page**.
+1. Turn on **Publish booking page**.
+1. To enable people to request on-demand appointments on your booking page, turn on **Allow requests for On-demand services**.
 
-1. On the **Manage** tab, select **Publish Booking page**.
-1. Turn on **Publish booking**.
-1. To enable people to request on-demand appointments on your booking page, turn on **Show option for On-demand scheduling**.
+    ![Information icon](media/info.png) **This feature requires [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams).**
 
     :::image type="content" source="media/virtual-appointments-app-booking-page-settings.png" alt-text="Screenshot of booking page settings." lightbox="media/virtual-appointments-app-booking-page-settings.png":::
 
 You can customize and manage your booking page settings in the Bookings web app. To learn more, see [Customize and publish your booking page for customers to schedule appointments](https://support.microsoft.com/topic/72fc8c8c-325b-4a16-b7ab-87bc1f324e4f) and [Customize and publish your booking page](/microsoft-365/bookings/customize-booking-page).
-
-
 
 ## Monitor appointments and get real-time status updates in the queue view
 
@@ -208,7 +210,7 @@ The Virtual Appointments usage report in the **Analytics** tab gives you an over
 
 The analytics experience depends on user role:
 
-- Admins get organizational analytics. If you're an admin, you'll see an org-level report showing aggregated analytics across all departments in your organization. To learn more, see [Virtual Appointments usage report](virtual-appointments-usage-report.md).
+- ???IT admins get organizational analytics. If you're an IT admin, you'll see an org-level report showing aggregated analytics across all departments in your organization. To learn more, see [Virtual Appointments usage report](virtual-appointments-usage-report.md).
 - Non-admins get either departmental or individual analytics. Staff members who are associated with a department see a report that shows data for the given department. If a person isn’t associated with a department, the report shows data for the appointments that they conducted. To learn more, see [Analyze your Virtual Appointment usage](https://support.microsoft.com/topic/3214fd14-a860-4870-b30c-e8f87e182ce0).
 
 ## Related articles
