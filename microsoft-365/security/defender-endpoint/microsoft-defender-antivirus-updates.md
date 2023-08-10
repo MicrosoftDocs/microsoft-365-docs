@@ -3,7 +3,7 @@ title: Microsoft Defender Antivirus security intelligence and product updates
 description: Manage how Microsoft Defender Antivirus receives protection and product updates.
 ms.service: microsoft-365-security
 ms.localizationpriority: high
-ms.date: 07/24/2023
+ms.date: 08/07/2023
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -93,9 +93,41 @@ All our updates contain
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 
+### July-2023 (Platform: 4.18.23070.1004 | Engine: 1.1.23070.1005)
+ 
+- Security intelligence update version: **1.395.30.0**
+- Released:  **August 9, 2023 (Engine and Platform)**
+- Platform: **4.18.23070.1004**
+- Engine: **1.1.23070.1005**
+- Support phase: **Security and Critical Updates**
+
+### What's new
+ 
+- Improved output for [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) if scan results fail to retrieve
+- Extended management options for configuring security intelligence updates with Intune, Group Policy, and PowerShell
+- Extended management options for disabling IOAV scans over the network using Intune, Group Policy, and PowerShell. The new setting is `ApplyDisableNetworkScanningToIOAV` for [Set-MpPreference](/powershell/module/defender/set-mppreference).
+- Improved the Unified agent installation process to handle [MsMpEng.exe](troubleshooting-mode-scenarios.md#scenario-2-high-cpu-usage-due-to-windows-defender-msmpengexe) debugger extensions, if present
+- Fixed an issue pertaining to showing the exclusions list with PowerShell [Get-MpPreference](/powershell/module/defender/get-mppreference) on systems managed by Intune
+- Fixed warn notifications for two attack surface reduction (ASR) rules ([Block Office applications from injecting code into other processes](attack-surface-reduction-rules-reference.md#block-office-applications-from-injecting-code-into-other-processes) and [Block credential stealing from the Windows local security authority subsystem](attack-surface-reduction-rules-reference.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem))
+- Fixed an issue with running `Update-MpSignature -UpdateSource:MMPC` when using a nonelevated PowerShell console (see [Update-MpSignature](/powershell/module/defender/update-mpsignature))
+- Fixed an issue with [ASR rules deployed via Intune](enable-attack-surface-reduction.md#intune) to display accurately in the Microsoft 365 Defender portal
+- Fixed [tamper protection management](prevent-changes-to-security-settings-with-tamper-protection.md) for customers who have Microsoft 365 E3 or [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md)
+- Improved installation and uninstallation logic on Server SKUs using the modern, unified agent (see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md))
+- Fixed an issue where `AntivirusSignatureLastUpdated` was incorrect when executing [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus)
+- Addressed a deadlock caused by Microsoft Defender Antivirus in rare cases
+- Added `ProcessId` to ASR Warn exclusion events (see [ASR rules configuration summary card](attack-surface-reduction-rules-report.md#asr-rules-configuration-summary-card))
+- Fixed an issue where values specified in [ThreatSeverityDefaultAction](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-threatseveritydefaultaction) weren't honored intermittently
+- Improved error reporting in the [modern, unified agent installer](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution)
+- Fixed the overriding logic in the ASR rule [Block all Office applications from creating child processes](attack-surface-reduction-rules-reference.md#block-all-office-applications-from-creating-child-processes) configured in warn mode
+- Added support for scanning Zstandard (Zstd) containers/archives
+ 
+### Known issues
+ 
+- None
+
 ### May-2023 *UPDATE* (Platform: 4.18.23050.9)
 
-*Microsoft has released an additional platform update (**4.18.23050.9**) for the May 2023 release.*
+*Microsoft has released a platform update (**4.18.23050.9**) for the May 2023 release.*
 
 - Security intelligence update version: **1.393.1315.0**
 - Released: **July 24, 2023 (Platform only)**
@@ -118,7 +150,7 @@ All our updates contain
 #### What's new  
 
 - Fixed an issue with [ASR rules deployed via Intune](/mem/intune/protect/endpoint-security-asr-policy) to display accurately in the Microsoft 365 Defender portal
-- Fixed a performance issue when building and validating Defender cache
+- Fixed a performance issue when building and validating the Microsoft Defender Antivirus cache
 - Improved performance by removing redundant exclusion checks
  
 #### Known Issues  
@@ -127,7 +159,7 @@ All our updates contain
 
 ### May-2023 *UPDATE* (Platform: 4.18.23050.5 | Engine:  1.1.23050.2)
 
-*Microsoft has released a platform update (**4.18.23050.5**) for the May 2023 release. Note that an [additional update](#may-2023-update-platform-418230509) has been released.*
+*Microsoft released a platform update (**4.18.23050.5**) for the May 2023 release, followed by [an additional update](#may-2023-update-platform-418230509).*
 
 - Security intelligence update version: **1.391.860.0**
 - Released: **June 12, 2023**
@@ -164,43 +196,13 @@ All our updates contain
 - Fixed sense offboarding on Windows Server 2016 when [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) is enabled  
 - Fixed inconsistent results of caching files with the internal Defender file cache  
 - Augmented attack surface reduction (ASR) telemetry with more data related to an ASR detection  
-- Removed Image File Execution Options (IFEO) debugger value during installation which can be used to prevent service starts
+- Removed Image File Execution Options (IFEO) debugger value during installation, which can be used to prevent service starts
 - Fixed memory leaked in ASR logic  
 - Improved validation guard-rail for Malicious Software Removal Tool (MSRT) releases
   
 #### Known Issues  
 
 - Potential issue that could lead to resolution of incorrect service endpoint
-
-### April-2023 (Platform: 4.18.2304.8 | Engine: 1.1.20300.3)
-
-- Security intelligence update version: **1.387.2997.0**
-- Release date:  **May 2, 2023 (Engine) / May 2, 2023 (Platform)**
-- Platform: **4.18.2304.8** 
-- Engine: **1.1.20300.3**
-- Support phase: **Security and Critical Updates**
-
-#### What's new
-
-- **Beginning in May 2023, the Platform and Engine version schema have a new format**. Here's what the new version format looks like: 
-   - Platform: `4.18.23050.1` 
-   - Engine: `1.1.23050.63000` 
-- Fixed memory leak in behavior monitoring
-- Improved resiliency of signature loading and platform updates
-- Quarantine and restore support for [WMI](use-wmi-microsoft-defender-antivirus.md)
-- Fixed attack surface reduction (ASR) rule output with [Get-MpPreference](/powershell/module/defender/get-mppreference)
-- Fixed MSERT to only use release engine version
-- Improved the enforcement of exclusions
-- Added support for enabling real-time protection and signature updates during OOBE
-- Fixed localization for Defender events
-- Deprecated real-time signature delivery setting
-- Updated missing setting (ValidateMapsConnection) in [MpCmdRun.exe](command-line-arguments-microsoft-defender-antivirus.md)
-- Fixed abandoned threats in the Windows Security app
-- Fixed a service-hang issue that caused invalid outputs to display in [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus)
-
-#### Known issues
-
-- None
 
 ### Previous version updates: Technical upgrade support only
 
