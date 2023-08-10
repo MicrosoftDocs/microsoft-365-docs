@@ -40,6 +40,12 @@ While you can create multiple cross-tenant synchronization configurations for a 
 > [!NOTE]
 > It may take up to 24 hours for synced users to be available in Microsoft 365 services such as Teams and SharePoint.
 
+## Users synchronized to your tenant from other tenants
+
+Users synchronized to your tenant from other tenants in your multi-tenant organization are synchronized as [Azure AD members rather than guests](/azure/active-directory/external-identities/user-properties).
+
+If some people from the other tenant already have guest accounts in your directory, the synchronization process doesn't change their user type to member. You can change these users' user type to member by [updating the user properties in Azure AD](/azure/active-directory/fundamentals/how-to-manage-user-profile-info).
+
 ## Set up initial user synchronization for a multi-tenant organization
 
 To synchronize identities to other tenants in a multi-tenant organization
