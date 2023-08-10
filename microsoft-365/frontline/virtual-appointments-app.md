@@ -110,17 +110,16 @@ Next, add services to the calendar using the appropriate appointment type. Befor
 
 Choose the appointment type that best represents the services offered by your organization and the appointment experience you want.
 
-1. To add a service, on the **Manage** tab, select **Services**, and then under **Scheduled** or **On-demand**, select **Add service**.
-
   <!--- Schedulers use **scheduled appointments** to book appointments for staff and attendees for a specific date, time, and duration.
 
   - Customers, staff and others can create their own appointments with **on-demand appointments** for services that are provided upon request, similar to a walk-in waiting room.-->
 
-  :::image type="content" source="media/virtual-appointments-app-services.png" alt-text="Screenshot of the Services tab." lightbox="media/virtual-appointments-app-services.png":::
 
+1. To add a service, on the **Manage** tab, select **Services**, and then under **Scheduled** or **On-demand**, select **Add service**.
+    :::image type="content" source="media/virtual-appointments-app-services.png" alt-text="Screenshot of the Services tab." lightbox="media/virtual-appointments-app-services.png":::
 1. Do one of the following:
-    1. If you chose **Scheduled**, follow the steps in [Scheduled appointments](#scheduled-appointments).
-    1. If you chose **On-demand**, follow the steps in [On-demand appointments](#on-demand-appointments).
+    - If you chose **Scheduled**, follow the steps in [Scheduled appointments](#scheduled-appointments).
+    - If you chose **On-demand**, follow the steps in [On-demand appointments](#on-demand-appointments).
 
 #### Scheduled appointments
 
