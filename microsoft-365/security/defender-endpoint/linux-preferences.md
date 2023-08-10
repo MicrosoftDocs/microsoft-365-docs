@@ -330,7 +330,7 @@ Specify the maximum number of entries to keep in the scan history. Entries inclu
 
 The following settings can be configured to enable certain advanced scanning features. 
 > [!NOTE]
-> Enabling these features might impact device performance.
+> Enabling these features might impact device performance. As such, it is recommended to keep the defaults.
 
 ##### Configure scanning of file modify permissions events
 When this feature is enabled, Defender for Endpoint will scan files when their permissions have been changed to set the execute bit(s). 
@@ -345,7 +345,7 @@ When this feature is enabled, Defender for Endpoint will scan files when their p
 |**Comments**|Available in Defender for Endpoint version ? or higher.|
 
 ##### Configure scanning of file modify ownership events
-When this feature is enabled, Defender for Endpoint will scan files for which ownership have changed. 
+When this feature is enabled, Defender for Endpoint will scan files for which ownership has changed. 
 > [!NOTE]
 > This feature is only applicable when the `enableFileOwnershipEvents` feature is enabled. Please refer to the [Advanced optional features](linux-preferences.md#configure-monitoring-of-file-modify-ownership-events) section below for details.
 
@@ -445,7 +445,7 @@ Determines whether security intelligence updates are installed automatically:
 
 The following settings can be configured to enable certain advanced features. 
 > [!NOTE]
-> Enabling these features might impact device performance.
+> Enabling these features might impact device performance. As such, it is recommended to keep the defaults.
 
 |Description|Value|
 |---|---|
@@ -565,7 +565,9 @@ Determines whether pseudofs events are monitored using eBPF and scanned.
 
 #### Network protection configurations
 
-The following settings can be used to configure certain advanced supplementary sensor features.
+The following settings can be used to configure advanced Network Protection inspection features to control what traffic gets inspected by Network Protection. 
+> [!NOTE]
+> For these to be effective, Network Protection has to be turned on. Please refer to [Turn on network protection for Linux](network-protection-linux.md) for more details.
 
 |Description|Value|
 |---|---|
@@ -581,8 +583,8 @@ Determines whether ICMP events are monitored and scanned.
 |Description|Value|
 |---|---|
 |**Key**|disableIcmpInspection|
-|**Data type**|String|
-|**Possible values**|disabled (default) <p> enabled|
+|**Data type**|Boolean|
+|**Possible values**|true (default) <p> false|
 |**Comments**|Available in Defender for Endpoint version ? or higher.|
 
 ## Recommended configuration profile
