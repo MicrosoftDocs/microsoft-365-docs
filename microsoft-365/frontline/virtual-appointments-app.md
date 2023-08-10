@@ -79,8 +79,8 @@ To get started, [create a new appointment calendar](#to-create-a-new-appointment
 #### To create a new appointment calendar
 
 1. On the **Home** tab or **Schedule** tab of the app, choose **Create appointment calendar**.
-1. Complete the form and choose the relevant service category for your organization.
-    If you’re part of a larger organization, consider creating separate calendars for specific departments within your organization.
+1. Complete the form and choose the relevant service category for your organization. If you’re part of a larger organization, consider creating separate calendars for specific departments within your organization.
+
     :::image type="content" source="media/virtual-appointments-app-new-appointment-calendar.png" alt-text="Screenshot of the new appointment calendar page." lightbox="media/virtual-appointments-app-new-appointment-calendar.png":::
 
     To learn more, see [Create a Bookings calendar in Virtual Appointments](https://support.microsoft.com/topic/0efc10f6-6152-42db-9cbd-0f939c57d8be).
