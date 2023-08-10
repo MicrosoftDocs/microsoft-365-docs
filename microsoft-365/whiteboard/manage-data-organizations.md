@@ -26,7 +26,7 @@ In order to manage data, you must first ensure that Whiteboard is enabled for yo
 > [!NOTE]
 > The following information applies to whiteboards that are stored in Azure.
 
-Whiteboard currently stores content securely in Azure. Data might be stored in different locations, depending on the country and when Whiteboard switched to storing new content in those locations. To check where new data is created, see [Where your Microsoft 365 customer data is stored](/microsoft-365/enterprise/o365-data-locations).
+Whiteboard currently stores content securely in Azure. Data might be stored in different locations, depending on the country/region and when Whiteboard switched to storing new content in those locations. To check where new data is created, see [Where your Microsoft 365 customer data is stored](/microsoft-365/enterprise/o365-data-locations).
 
 Content in Azure doesn't support Data Loss Prevention (DLP), eDiscovery, retention policies, and similar features. This content can be managed using [Whiteboard PowerShell cmdlets](/powershell/module/whiteboard/). Eventually, whiteboards stored in Azure will need to be migrated to OneDrive for Business or deleted.
 

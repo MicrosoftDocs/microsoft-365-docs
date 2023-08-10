@@ -18,7 +18,7 @@ ms.collection:
 ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
-ms.date: 02/16/2021
+ms.date: 08/04/2023
 ---
 
 # Investigate users in Microsoft 365 Defender
