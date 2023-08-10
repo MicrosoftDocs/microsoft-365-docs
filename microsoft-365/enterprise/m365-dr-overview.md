@@ -29,7 +29,7 @@ In order to promote clarity in the capability descriptions on data residency fun
 |:-----|:-----|
 |Macro Region Geography  <br/> |Macro Region Geography 1 – EMEA, Macro Region Geography – Asia Pacific, Macro Region Geography - Americas  <br/> |
 |Macro Region Geography 1 - EMEA  <br/> |Data centers in Austria, Finland, France, Ireland, Netherlands, Poland, Sweden  <br/> |
-|Macro Region Geography 2 - Asia Pacific  <br/> |Data centers in Hong Kong, Japan, Malaysia, Singapore, South Korea  <br/> |
+|Macro Region Geography 2 - Asia Pacific  <br/> |Data centers in Hong Kong Special Administrative Region, Japan, Malaysia, Singapore, South Korea  <br/> |
 |Macro Region Geography 3 - Americas  <br/> |Data centers in Brazil, Chile, United States  <br/> |
 |Local Region Geography  <br/> |Australia, Brazil, Canada, France, Germany, India, Japan, Poland, Qatar, South Korea, Norway, South Africa, Sweden, Switzerland, United Arab Emirates, United Kingdom  <br/> |
 |Expanded Local Region Geography  <br/> | Future planned data center regions: Italy, Indonesia, Israel, Spain, Mexico, Malaysia, Austria, Chile, New Zealand, Denmark, Greece, Taiwan  <br/> |
@@ -37,7 +37,7 @@ In order to promote clarity in the capability descriptions on data residency fun
 |Satellite Geography  <br/> |If a customer subscribes to the Multi Geo service, then they can cause defined user customer data to be stored in other Geographies outside of the _Tenant_ _Primary Provisioned Geography_  <br/> |
 |AAD  <br/> |Azure Active Directory  <br/> |
 |Tenant  <br/> |A _Tenant_ represents an organization in Azure Active Directory. It's a reserved Azure AD service instance that an organization receives and owns when it signs up for a Microsoft cloud service such as Azure or Microsoft 365. Each Azure AD _Tenant_ is distinct and separate from other Azure AD _Tenant's_  <br/> |
-|Default Geography  <br/> |When an _AAD Tenant_ is created, a country is provided by the customer during the sign-up process.  This country determines the default Geography for all Microsoft 365 services.  In some cases, not all services are able to provision in this single _Default Geography_. See _Microsoft 365 Service provisioning mapping_ below for a description.  <br/> |
+|Default Geography  <br/> |When an _AAD Tenant_ is created, a country/region is provided by the customer during the sign-up process.  This country/region determines the default Geography for all Microsoft 365 services.  In some cases, not all services are able to provision in this single _Default Geography_. See _Microsoft 365 Service provisioning mapping_ below for a description.  <br/> |
 |Microsoft 365 Service provisioning mapping  <br/> |All Microsoft 365 Services  use the _Default Geography_ to determine where a given _Tenant's_ specified data will be provisioned and stored.  <br/> |
 |Microsoft 365 Service provisioning country mapping  <br/> |Refer to [data maps](https://aka.ms/datamaps) to learn where a given service provisions specified customer data, based on the _Tenant Default Geography._  <br/> |
 |Primary Provisioned Geography  <br/> |A given Microsoft 365 service  use the _Tenant Default Geography_ combined with the _Microsoft 365 Service provisioning country mapping_ to determine which _Geography_ to provision customer data into.   <br/> |
@@ -50,7 +50,7 @@ In order to promote clarity in the capability descriptions on data residency fun
 
 ## Overview of Data Residency
 
-Microsoft 365 Cloud services run on our data centers around the world and provide services to customers around the world.  Customer data may be stored in multiple data centers.  Data residency refers to the geographic location where customer data is stored at rest. Data residency is important for government, public sector, education and regulated commercial entities to help ensure protection of personal and/or sensitive information.  In many countries, customers are expected to comply with laws, regulations or industry standards that explicitly govern the location of data storage.
+Microsoft 365 Cloud services run on our data centers around the world and provide services to customers around the world.  Customer data may be stored in multiple data centers.  Data residency refers to the geographic location where customer data is stored at rest. Data residency is important for government, public sector, education and regulated commercial entities to help ensure protection of personal and/or sensitive information.  In many countries/regions, customers are expected to comply with laws, regulations or industry standards that explicitly govern the location of data storage.
 
 Microsoft makes decisions on where to persistently store customer data based on two factors:
 
@@ -59,7 +59,7 @@ Microsoft makes decisions on where to persistently store customer data based on 
 
 ### _Default Geography_ of the AAD _Tenant_
 
-When a customer creates a new AAD _Tenant_, the customer enters a country during the creation process.  This country is what defines the _Default Geography_ for the _Tenant_.  There are multiple paths to creating _Tenants_.  They can be created through AAD forms, they can be created when trying out new Microsoft 365 services (trials), etc.  Once a _Tenant_ is created, the _Default Geography_ cannot be changed.
+When a customer creates a new AAD _Tenant_, the customer enters a country/region during the creation process.  This country/region is what defines the _Default Geography_ for the _Tenant_.  There are multiple paths to creating _Tenants_.  They can be created through AAD forms, they can be created when trying out new Microsoft 365 services (trials), etc.  Once a _Tenant_ is created, the _Default Geography_ cannot be changed.
 
 ### Available Geographies for a given service
 
@@ -71,15 +71,15 @@ In order to understand where your data, for a given service is stored, your prim
 
 Some examples:
 
-**Example 1:** For a _Tenant_ with the sign-up country as "France" that has a new subscription that includes Exchange Online, SharePoint Online and Microsoft Teams, then the customer data for those services will be provisioned into the French _Local Region Geography_. Why?  Because those services are deployed into the French data centers and the _Tenant_ has a France sign up country.
+**Example 1:** For a _Tenant_ with the sign-up country/region as "France" that has a new subscription that includes Exchange Online, SharePoint Online and Microsoft Teams, then the customer data for those services will be provisioned into the French _Local Region Geography_. Why?  Because those services are deployed into the French data centers and the _Tenant_ has a France sign up country/region.
 
-**Example 2:**  For a _Tenant_ with the sign-up country as "Belgium" that has a new subscription that includes Exchange Online, SharePoint Online and Microsoft Teams, then the customer data for those services will be provisioned into the _Macro Region Geography 1 – EMEA_.  Why?  Because there are no Microsoft 365 data centers in Belgium and the closest Geography is _Macro Region Geography 1 - EMEA_.
+**Example 2:**  For a _Tenant_ with the sign-up country/region as "Belgium" that has a new subscription that includes Exchange Online, SharePoint Online and Microsoft Teams, then the customer data for those services will be provisioned into the _Macro Region Geography 1 – EMEA_.  Why?  Because there are no Microsoft 365 data centers in Belgium and the closest Geography is _Macro Region Geography 1 - EMEA_.
 
-**Example 3:** For a _Tenant_ with the sign-up country as "Japan" that has a new subscription that includes Microsoft Forms, then the customer data for Forms will be provisioned  into the _Macro Region Geography 3 - Americas_.  Why?  Because Forms is only deployed in _Macro Region Geography 3 - Americas_ and _Macro Region Geography 1 – EMEA_ (EU _Tenants_ only).
+**Example 3:** For a _Tenant_ with the sign-up country/region as "Japan" that has a new subscription that includes Microsoft Forms, then the customer data for Forms will be provisioned  into the _Macro Region Geography 3 - Americas_.  Why?  Because Forms is only deployed in _Macro Region Geography 3 - Americas_ and _Macro Region Geography 1 – EMEA_ (EU _Tenants_ only).
 
-**Example 4a:** For a _Tenant_ with the sign-up country as "Sweden" that has a new subscription that includes Microsoft Viva Engage, then the customer data for Viva Engage will be provisioned  into the _Macro Region Geography 1 - EMEA_.  Why?  Because Viva Engage is deployed in _Macro Region Geography 1 - EMEA_ and Swedish _Tenants_ are best served out of that _Geography_.
+**Example 4a:** For a _Tenant_ with the sign-up country/region as "Sweden" that has a new subscription that includes Microsoft Viva Engage, then the customer data for Viva Engage will be provisioned  into the _Macro Region Geography 1 - EMEA_.  Why?  Because Viva Engage is deployed in _Macro Region Geography 1 - EMEA_ and Swedish _Tenants_ are best served out of that _Geography_.
 
-**Example 4b:** For a _Tenant_ with the sign-up country as "Sweden" that has a subscription that includes Microsoft Viva Engage from before Viva Engage was deployed to _Macro Regional Geography 1 - EMEA_, then the customer data for Viva Engage will be located in _Macro Region Geography 3 - Americas_.  Why?  Because, at that time, Viva Engage only had a single deployment for all customers in _Macro Region Geography 3 - Americas_.
+**Example 4b:** For a _Tenant_ with the sign-up country/region as "Sweden" that has a subscription that includes Microsoft Viva Engage from before Viva Engage was deployed to _Macro Regional Geography 1 - EMEA_, then the customer data for Viva Engage will be located in _Macro Region Geography 3 - Americas_.  Why?  Because, at that time, Viva Engage only had a single deployment for all customers in _Macro Region Geography 3 - Americas_.
 
 ### Migrations/Moves
 
@@ -87,7 +87,7 @@ Once a Microsoft 365 service provisions a _Tenant_ into a particular _Geography_
 
 1. The Microsoft 365 service decides to move the data to a new _Geography_ for service operations reasons, if there are no other policies in place to prevent the move.
 1. If a _Tenant_ subscribes to the _Multi-Geo_ service, then _Tenants_ user's data for Exchange Online, SharePoint Online and Microsoft Teams can be assigned to _Satellite Geographies_.
-1. If a _Tenant_ has sign up country as a _Local Region Geography_  and has a subscription to the _Advanced Data Residency_ service add-on, then the _Tenant_ data for the included services will be migrated from the _Regional Geography_ to the relevant _Local Region Geography_.
+1. If a _Tenant_ has sign up country/region as a _Local Region Geography_  and has a subscription to the _Advanced Data Residency_ service add-on, then the _Tenant_ data for the included services will be migrated from the _Regional Geography_ to the relevant _Local Region Geography_.
 
 ### Durable commitments on data location
 
@@ -110,16 +110,16 @@ There are three methods for ensuring that the _Tenant_ data location for a parti
 | Viva Topics <br/> |-  <br/> |-  <br/> |X<sup>3</sup>  <br/> |
 | Microsoft Purview <br/> |-  <br/> |-  <br/> |X<sup>3</sup>  <br/> |
 
-1. Only available in the following countries/region: Australia, Brazil, Canada, France, Germany, India, Japan, Poland, Qatar, South Korea, Norway, South Africa, Sweden, Switzerland, United Arab Emirates, United Kingdom, European Union and the United States.
+1. Only available in the following countries/regions: Australia, Brazil, Canada, France, Germany, India, Japan, Poland, Qatar, South Korea, Norway, South Africa, Sweden, Switzerland, United Arab Emirates, United Kingdom, European Union and the United States.
 1. Available in _Local Region Geography_, _Expanded Local Region Geography_ (when the future data center is launched) and _Regional Geography countries/regions_
-1. Only available for _Local Region Geography_ and _Expanded Local Region Geography_ (when the future data center is launced) countries.
+1. Only available for _Local Region Geography_ and _Expanded Local Region Geography_ (when the future data center is launced) countries/regions.
 
 >[!NOTE]
 >See the [Workload Data Residency Capabilities section](m365-dr-workload-exo.md) for more details on these topics.
 
-**Table 3: Available Data Residency by Country**
+**Table 3: Available Data Residency by Country/Region**
 
-| Country    | Exchange Online  | SharePoint Online  | Teams  | MDO P1  | Office for the web  | Viva Connections  | Viva Topics  |  Purview  |
+| Country/Region    | Exchange Online  | SharePoint Online  | Teams  | MDO P1  | Office for the web  | Viva Connections  | Viva Topics  |  Purview  |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Australia  | P-M-A  | P-M-A  | P-M-A  | A  | A  | A  | A  | A  |
 | Brazil  | P-M-A  | P-M-A  | P-M-A  | A  | A  | A  | A  | A  |
@@ -153,12 +153,12 @@ The following Regional Geographies can store data at rest.
 |**Regional Geographies** |**Locations where customer data may be stored**  |
 |---------|---------|
 |Macro Region Geography 1 - EMEA (Europe, Middle East and Africa) |  Austria, Finland, France, Ireland, Netherlands, Poland, Sweden  |
-|Macro Region Geography 2 - Asia Pacific |  Hong Kong, Japan, Malaysia, Singapore, South Korea  |
+|Macro Region Geography 2 - Asia Pacific |  Hong Kong SAR, Japan, Malaysia, Singapore, South Korea  |
 |Macro Region Geography 3 - Americas | Brazil, Chile, United States  |
 
 **Table 5: Current Local Geographies and Region specific Datacenter locations**
 
-|Country |Datacenter Location  |
+|Country/Region |Datacenter Location  |
 |---------|---------|
 |Australia   |Sydney, Melbourne   |
 |Brazil   |Rio, Campinas   |
