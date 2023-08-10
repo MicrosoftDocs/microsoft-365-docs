@@ -44,7 +44,7 @@ If you’re an IT admin, see [Manage the Virtual Appointments app](/microsofttea
 
 <!--- Users who want to learn how to use the Virtual Appointments app should visit the [Microsoft Teams support site for Virtual Appointments](https://support.microsoft.com/office/what-is-virtual-appointments-22df0079-e6d9-4225-bc65-22747fb2cb5f), where they can watch a video and read about how to use the app. Topics include how to create a calendar, create and edit appointment types, add and manage staff, customize and publish a booking page, and manage your appointment queue.--->
 
-Users can find the app in the Teams app store, or you can share the [installation link](https://teams.microsoft.com/l/app/6e106207-4565-4312-b3ea-bbe9b3ed0a02?source=app-details-dialog) to help them find it. Admins can use an [app setup policy](/microsoftteams/teams-app-setup-policies) to pin the app for your organization, or users can [pin the app themselves](https://support.microsoft.com/office/pin-an-app-for-easy-access-3045fd44-6604-4ba7-8ecc-1c0d525e89ec).
+Team members can find the app in the Teams app store, or you can share the [installation link](https://teams.microsoft.com/l/app/6e106207-4565-4312-b3ea-bbe9b3ed0a02?source=app-details-dialog) to help them find it. Admins can use an [app setup policy](/microsoftteams/teams-app-setup-policies) to pin the app for your organization, or team members can [pin the app themselves](https://support.microsoft.com/office/pin-an-app-for-easy-access-3045fd44-6604-4ba7-8ecc-1c0d525e89ec).
 
 ## Overview of the app
 
@@ -70,7 +70,7 @@ With any Microsoft 365 license, you can use basic Virtual Appointments capabilit
 
 ## Set up an appointment calendar
 
-Before people on your team can schedule appointments in the app, you must first set up an appointment calendar. ???You must be a Bookings admin to set up and manage appointment calendar settings.
+To schedule and manage appointments in the app, you must first set up an appointment calendar. ???You must be a Bookings admin to set up and manage appointment calendar settings.
 
 ### Step 1: Create a new appointment calendar or connect an existing calendar
 
@@ -92,7 +92,7 @@ To get started, [create a new appointment calendar](#to-create-a-new-appointment
 
 ### Step 2: Add staff to your appointment calendar
 
-You can add up to 100 staff members to a calendar. Each person you add will have their calendar displayed on the **Schedule** tab. You can then view their availability in the app and schedule appointments for them.
+You can add up to 100 staff members to a calendar. Each person you add will have their calendar displayed on the **Schedule** tab. Schedulers can then view their availability in the app and schedule appointments for them.
 
 1. On the **Manage** tab, select **Staff**.
 1. Add staff members and assign a role to each person you add.
@@ -123,13 +123,46 @@ To add a service, on the **Manage** tab, select **Services**, and then under **S
 1. If you chose the **Scheduled** appointment type, enter a name for the service. For example, Account opening, Prescription renewal, Loan consultation, or Tax preparation.
 1. Specify any other information and settings you want. Schedulers can then use the appointment type to schedule an appointment. The information that you add is included in the email confirmation that's sent to attendees every time this type of appointment is booked.
 
-    You can configure options such as whether attendees can [join from a desktop or mobile browser](browser-join.md) without having to download Teams, add an email reminder, set up SMS text notifications, and [link forms](#link-forms).
+    You can configure options such as whether attendees can [join from a desktop or mobile browser](browser-join.md) without having to download Teams, add an email reminder, [set up SMS text notifications](#set-up-sms-text-notifications), and [link forms](#link-forms).
+
+##### Set up SMS text notifications
+
+![Information icon](media/info.png) **This feature is now part of [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams).**
+
+Attendees need a valid United States, Canada, or United Kingdom phone number before they can receive SMS notifications.
+
+To send SMS notifications to attendees by default, turn on **Send them text messages**. Attendees will receive confirmation and reminder text messages that include the Teams meeting link and scheduled appointment details. They can opt out of receiving the messages by replying STOP, or resume receiving them by replying START.
+
+Keep in mind that schedulers can later choose to turn off the setting on an as-needed basis when they use the appointment type to schedule an appointment.
+
+You can use the [SMS notifications usage report](sms-notifications-usage-report.md) to gain insight into how your workforce is using SMS notifications with virtual appointments.
+
+To learn more, see [Use text messages to remind customers of their appointment](https://support.microsoft.com/topic/adda1e2a-03b8-4db2-864d-0a5a3f3a874a).
+
+##### Link forms
+
+You can link up to four forms for attendees to fill out each time a scheduled appointment type is booked. For example, you may require attendees to complete a registration form before they join an appointment.
+
+1. To link a form, choose **Link a form**.
+1. Enter the URL of the form, and then choose **Link**.
+
+   If this is the first time you're linking a form, you'll be prompted to create a Microsoft 365 group to store forms. Choose **Create group** to create the group. You only have to do this one time for the booking calendar.
+
+When working with forms, keep in mind that:
+
+- To make changes to a form that's already linked to an appointment type, select the form in the appointment type or from within the Microsoft 365 group at [https://forms.office.com](https://forms.office.com).
+- Uploading files to forms that contain a [file upload question](https://support.microsoft.com/office/add-questions-that-allow-for-file-uploads-6a75a658-c02b-450e-b119-d068f3cba4cf) is supported when all attendees are from the same organization.
+
+When a scheduler uses the appointment type to schedule an appointment, they can then choose to include the form, remove it, or add any other forms that you linked to the appointment type. Attendees must fill out the form before they join the appointment.
+
+> [!NOTE]
+> If you're a healthcare provider, any information provided by you or patients in Teams (including the Forms app, Virtual Appointments app, meeting recordings if enabled by you, or any other Teams virtual appointments services) that's necessary for medical records continuity or retention purposes should be downloaded, copied, and/or notated directly in such records by you. This service does not maintain legal medical records or a designated record set.
 
 #### On-demand appointments
 
 ![Information icon](media/info.png) **This feature requires [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams).**
 
-If you chose the **On-demand** appointment type*, enter a name for the service. For example, Drop-in appointment, Account opening, Prescription renewal, Loan consultation, or Tax preparation.
+If you chose the **On-demand** appointment type, enter a name for the service. For example, Drop-in appointment, Account opening, Prescription renewal, Loan consultation, or Tax preparation.
 
 Your customers, clients, and patients can then choose the appointment type on your booking page to request an on-demand appointment with your staff.
 
@@ -153,24 +186,7 @@ Booking admins can publish an online booking page where people can book schedule
 
 You can customize and manage your booking page settings in the Bookings web app. To learn more, see [Customize and publish your booking page for customers to schedule appointments](https://support.microsoft.com/topic/72fc8c8c-325b-4a16-b7ab-87bc1f324e4f) and [Customize and publish your booking page](/microsoft-365/bookings/customize-booking-page).
 
-#### Link forms
 
-You can link up to four forms for attendees to fill out each time a scheduled appointment type is booked. For example, you may require attendees to complete a registration form before they join an appointment.
-
-1. To link a form, choose **Link a form**.
-1. Enter the URL of the form, and then choose **Link**.
-
-   If this is the first time you're linking a form, you'll be prompted to create a Microsoft 365 group to store forms. Choose **Create group** to create the group. You only have to do this one time for the booking calendar.
-
-When working with forms, keep in mind that:
-
-- To make changes to a form that's already linked to an appointment type, select the form in the appointment type or from within the Microsoft 365 group at [https://forms.office.com](https://forms.office.com).
-- Uploading files to forms that contain a [file upload question](https://support.microsoft.com/office/add-questions-that-allow-for-file-uploads-6a75a658-c02b-450e-b119-d068f3cba4cf) is supported when all attendees are from the same organization.
-
-When a scheduler uses the appointment type to schedule an appointment, they can then choose to include the form, remove it, or add any other forms that you linked to the appointment type. Attendees must fill out the form before they join the appointment.
-
-> [!NOTE]
-> If you're a healthcare provider, any information provided by you or patients in Teams (including the Forms app, Virtual Appointments app, meeting recordings if enabled by you, or any other Teams virtual appointments services) that's necessary for medical records continuity or retention purposes should be downloaded, copied, and/or notated directly in such records by you. This service does not maintain legal medical records or a designated record set.
 
 ## Monitor appointments and get real-time status updates in the queue view
 
