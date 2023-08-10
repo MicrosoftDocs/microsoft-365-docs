@@ -106,7 +106,7 @@ You can add up to 100 staff members to an appointment calendar. Each person you 
 Next, add services to the calendar using the appropriate appointment type. Before you do that, it's important to understand the two different appointment types so that you can choose the appointment type that best represents the services offered by your organization:
 
 - **Scheduled appointment type**: Used by schedulers to book scheduled appointments for staff and attendees. These appointments are scheduled for a specific date, time, and duration.
-- **On-demand appointment type**: Used by your customers, clients, and patients for on-demand appointments. These appointments are for services that are provided upon request, similar to a walk-in waiting room. This feature requires [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams).
+- **On-demand appointment type**: Used by your customers, clients, and patients for on-demand appointments. On-demand appointments are for services that are provided upon request, similar to a walk-in waiting room. This feature requires [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams).
 
   <!--- Schedulers use **scheduled appointments** to book appointments for staff and attendees for a specific date, time, and duration.
 
