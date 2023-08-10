@@ -329,13 +329,15 @@ Specify the maximum number of entries to keep in the scan history. Entries inclu
 #### Advanced scan options
 
 The following settings can be configured to enable certain advanced scanning features. 
-> [!NOTE]
-> Enabling these features might impact device performance. As such, it is recommended to keep the defaults.
+
+>[!NOTE]
+>Enabling these features might impact device performance. As such, it is recommended to keep the defaults.
 
 ##### Configure scanning of file modify permissions events
-When this feature is enabled, Defender for Endpoint will scan files when their permissions have been changed to set the execute bit(s). 
-> [!NOTE]
-> This feature is applicable only when the `enableFilePermissionEvents` feature is enabled. Please refer to the [Advanced optional features](linux-preferences.md#configure-monitoring-of-file-modify-permissions-events) section below for details.
+When this feature is enabled, Defender for Endpoint will scan files when their permissions have been changed to set the execute bit(s).
+
+>[!NOTE]
+>This feature is applicable only when the `enableFilePermissionEvents` feature is enabled. For more information, see [Advanced optional features](linux-preferences.md#configure-monitoring-of-file-modify-permissions-events) section below for details.
 
 |Description|Value|
 |---|---|
@@ -346,8 +348,9 @@ When this feature is enabled, Defender for Endpoint will scan files when their p
 
 ##### Configure scanning of file modify ownership events
 When this feature is enabled, Defender for Endpoint will scan files for which ownership has changed. 
-> [!NOTE]
-> This feature is applicable only when the `enableFileOwnershipEvents` feature is enabled. Please refer to the [Advanced optional features](linux-preferences.md#configure-monitoring-of-file-modify-ownership-events) section below for details.
+
+>[!NOTE]
+>This feature is applicable only when the `enableFileOwnershipEvents` feature is enabled. For more information, see [Advanced optional features](linux-preferences.md#configure-monitoring-of-file-modify-ownership-events) section below for details.
 
 |Description|Value|
 |---|---|
@@ -358,10 +361,12 @@ When this feature is enabled, Defender for Endpoint will scan files for which ow
 
 ##### Configure scanning of raw socket events
 When this feature is enabled, Defender for Endpoint will scan network socket events such as creation of raw sockets / packet sockets, or setting socket option. 
-> [!NOTE]
-> This feature is applicable only when Behavior Monitoring is enabled.
-> [!NOTE]
-> This feature is applicable only when the `enableRawSocketEvent` feature is enabled. Please refer to the [Advanced optional features](linux-preferences.md#configure-monitoring-of-raw-socket-events) section below for details.
+
+>[!NOTE]
+>This feature is applicable only when Behavior Monitoring is enabled.
+
+>[!NOTE]
+>This feature is applicable only when the `enableRawSocketEvent` feature is enabled. For more information, see [Advanced optional features](linux-preferences.md#configure-monitoring-of-raw-socket-events) section below for details.
 
 |Description|Value|
 |---|---|
@@ -403,7 +408,9 @@ Diagnostic data is used to keep Defender for Endpoint secure and up-to-date, det
 
 #### Configure cloud block level
 
-This setting determines how aggressive Defender for Endpoint is in blocking and scanning suspicious files. If this setting is on, Defender for Endpoint is more aggressive when identifying suspicious files to block and scan; otherwise, it is less aggressive and therefore blocks and scans with less frequency. There are five values for setting cloud block level:
+This setting determines how aggressive Defender for Endpoint is in blocking and scanning suspicious files. If this setting is on, Defender for Endpoint is more aggressive when identifying suspicious files to block and scan; otherwise, it is less aggressive and therefore blocks and scans with less frequency. 
+
+There are five values for setting cloud block level:
 
 - Normal (`normal`): The default blocking level.
 - Moderate (`moderate`): Delivers verdict only for high confidence detections.
@@ -444,9 +451,10 @@ Determines whether security intelligence updates are installed automatically:
 
 ### Advanced optional features
 
-The following settings can be configured to enable certain advanced features. 
-> [!NOTE]
-> Enabling these features might impact device performance. As such, it is recommended to keep the defaults.
+The following settings can be configured to enable certain advanced features.
+
+>[!NOTE]
+>Enabling these features might impact device performance. It is recommended to keep the defaults.
 
 |Description|Value|
 |---|---|
@@ -457,8 +465,9 @@ The following settings can be configured to enable certain advanced features.
 #### Module load feature
 
 Determines whether module load events (file open events on shared libraries) are monitored.
-> [!NOTE]
-> This feature is applicable only when Behavior Monitoring is enabled.
+
+>[!NOTE]
+>This feature is applicable only when Behavior Monitoring is enabled.
 
 |Description|Value|
 |---|---|
@@ -479,8 +488,9 @@ The following settings can be used to configure certain advanced supplementary s
 
 ##### Configure monitoring of file modify permissions events
 Determines whether file modify permissions events (`chmod`) are monitored. 
-> [!NOTE]
-> When this feature is enabled, Defender for Endpoint will monitor changes to the execute bits of files, but not scan these events. Please refer to the [Advanced scanning features](linux-preferences.md#configure-scanning-of-file-modify-permissions-events) section above for more details.
+
+>[!NOTE]
+>When this feature is enabled, Defender for Endpoint will monitor changes to the execute bits of files, but not scan these events. For more information, see [Advanced scanning features](linux-preferences.md#configure-scanning-of-file-modify-permissions-events) section for more details.
 
 |Description|Value|
 |---|---|
@@ -490,9 +500,10 @@ Determines whether file modify permissions events (`chmod`) are monitored.
 |**Comments**|Available in Defender for Endpoint version 101.23062.0010 or higher.|
 
 ##### Configure monitoring of file modify ownership events
-Determines whether file modify ownership events (chown) are monitored. 
-> [!NOTE]
-> When this feature is enabled, Defender for Endpoint will monitor changes to the ownership of files, but not scan these events. Please refer to the [Advanced scanning features](linux-preferences.md#configure-scanning-of-file-modify-ownership-events) section above for more details.
+Determines whether file modify ownership events (chown) are monitored.
+
+>[!NOTE]
+>When this feature is enabled, Defender for Endpoint will monitor changes to the ownership of files, but not scan these events. For more information, see [Advanced scanning features](linux-preferences.md#configure-scanning-of-file-modify-ownership-events) section for more details.
 
 |Description|Value|
 |---|---|
@@ -503,11 +514,12 @@ Determines whether file modify ownership events (chown) are monitored.
 
 ##### Configure monitoring of raw socket events
 Determines whether network socket events involving creation of raw sockets / packet sockets, or setting socket option, are monitored.
-> [!NOTE]
-> This feature is applicable only when Behavior Monitoring is enabled.
 
-> [!NOTE]
-> When this feature is enabled, Defender for Endpoint will monitor these network socket events, but not scan these events. Please refer to the [Advanced scanning features](linux-preferences.md#configure-scanning-of-raw-socket-events) section above for more details.
+>[!NOTE]
+>This feature is applicable only when Behavior Monitoring is enabled.
+
+>[!NOTE]
+>When this feature is enabled, Defender for Endpoint will monitor these network socket events, but not scan these events. For more information, see [Advanced scanning features](linux-preferences.md#configure-scanning-of-raw-socket-events) section above for more details.
 
 |Description|Value|
 |---|---|
@@ -518,8 +530,9 @@ Determines whether network socket events involving creation of raw sockets / pac
 
 ##### Configure monitoring of boot loader events
 Determines whether boot loader events are monitored and scanned.
-> [!NOTE]
-> This feature is applicable only when Behavior Monitoring is enabled.
+
+>[!NOTE]
+>This feature is applicable only when Behavior Monitoring is enabled.
 
 |Description|Value|
 |---|---|
@@ -530,8 +543,9 @@ Determines whether boot loader events are monitored and scanned.
 
 ##### Configure monitoring of ptrace events
 Determines whether ptrace events are monitored and scanned.
-> [!NOTE]
-> This feature is applicable only when Behavior Monitoring is enabled.
+
+>[!NOTE]
+>This feature is applicable only when Behavior Monitoring is enabled.
 
 |Description|Value|
 |---|---|
@@ -554,8 +568,9 @@ Determines whether pseudofs events are monitored and scanned.
 
 ##### Configure monitoring of module load events using eBPF
 Determines whether module load events are monitored using eBPF and scanned.
-> [!NOTE]
-> This feature is applicable only when Behavior Monitoring is enabled.
+
+>[!NOTE]
+>This feature is applicable only when Behavior Monitoring is enabled.
 
 |Description|Value|
 |---|---|
@@ -566,9 +581,10 @@ Determines whether module load events are monitored using eBPF and scanned.
 
 #### Network protection configurations
 
-The following settings can be used to configure advanced Network Protection inspection features to control what traffic gets inspected by Network Protection. 
-> [!NOTE]
-> For these to be effective, Network Protection has to be turned on. Please refer to [Turn on network protection for Linux](network-protection-linux.md) for more details.
+The following settings can be used to configure advanced Network Protection inspection features to control what traffic gets inspected by Network Protection.
+
+>[!NOTE]
+>For these to be effective, Network Protection has to be turned on. For more information, see [Turn on network protection for Linux](network-protection-linux.md).
 
 |Description|Value|
 |---|---|
@@ -578,8 +594,9 @@ The following settings can be used to configure advanced Network Protection insp
 
 ##### Configure ICMP inspection
 Determines whether ICMP events are monitored and scanned.
-> [!NOTE]
-> This feature is applicable only when Behavior Monitoring is enabled.
+
+>[!NOTE]
+>This feature is applicable only when Behavior Monitoring is enabled.
 
 |Description|Value|
 |---|---|
@@ -632,8 +649,8 @@ The following configuration profile will:
 
 The following configuration profile contains entries for all settings described in this document and can be used for more advanced scenarios where you want more control over the product.
   
-> [!NOTE]
-> It is not possible to control all Microsoft Defender for Endpoint communication with only a proxy setting in this JSON.
+>[!NOTE]
+>It is not possible to control all Microsoft Defender for Endpoint communication with only a proxy setting in this JSON.
 
 ### Full profile
 
@@ -730,8 +747,9 @@ When you run the `mdatp health` command for the first time, the value for the ta
 }
 ```
 
-  > [!NOTE]
-  > Don't forget to add the comma after the closing curly bracket at the end of the `cloudService` block. Also, make sure that there are two closing curly brackets after adding Tag or Group ID block (please see the above example). At the moment, the only supported key name for tags is `GROUP`. 
+  >[!NOTE]
+  >Add the comma after the closing curly bracket at the end of the `cloudService` block. Also, make sure that there are two closing curly brackets after adding Tag or Group ID block (please see the above example). At the moment, the only supported key name for tags is `GROUP`.
+ 
 ## Configuration profile validation
 
 The configuration profile must be a valid JSON-formatted file. There are many tools that can be used to verify this. For example, if you have `python` installed on your device:
@@ -752,8 +770,8 @@ To verify that your /etc/opt/microsoft/mdatp/managed/mdatp_managed.json is worki
 - real_time_protection_enabled
 - automatic_definition_update_enabled
 
-> [!NOTE]
-> No restart of mdatp daemon is required for changes to _most_ configurations in mdatp_managed.json to take effect.
+>[!NOTE]
+>No restart of mdatp daemon is required for changes to _most_ configurations in mdatp_managed.json to take effect.
   **Exception:** The following configurations require a daemon restart to take effect:
 > - cloud-diagnostic
 > - log-rotation-parameters
