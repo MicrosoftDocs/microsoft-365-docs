@@ -65,6 +65,7 @@ The following tasks require a [Syntex per-user license](https://www.microsoft.co
 - Use of annotations to add notes and comments
 - Use of premium taxonomy services. (Premium taxonomy services comprise SKOS-based term set import, pushing enterprise content types to hub-associated sites, and term store reports.)
 - Use the document library rules to move or copy content
+- Merge and extract PDFs in OneDrive for Android and iOS
 
 Unlicensed users can be granted access to a content center and can create models there, but can't apply them to a document library.
  

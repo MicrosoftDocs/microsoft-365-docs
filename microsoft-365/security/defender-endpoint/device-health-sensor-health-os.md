@@ -68,7 +68,7 @@ For more information about user role management, see [Create and manage roles fo
 
 ## Sensor health & OS tab
 
-Sensor health and OS cards report on general operating system health, which includes detection sensor health, up-to-date versus out-of-date operating systems, and Windows 10 versions.
+Sensor health and OS cards report on general operating system health, which includes detection sensor health, up to date versus out-of-date operating systems, and Windows 10 versions.
 
 >:::image type="content" source="images/device-health-sensor-health-os-tab.png" alt-text="Shows Sensor health and Operating system information." lightbox="images/device-health-sensor-health-os-tab.png":::
 

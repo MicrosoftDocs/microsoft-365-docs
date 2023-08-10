@@ -109,19 +109,21 @@ To enable Azure PIM for your Azure AD tenant and administrator accounts, see the
 
 To develop a comprehensive roadmap to secure privileged access against cyber attackers, see [Securing privileged access for hybrid and cloud deployments in Azure AD](/azure/active-directory/admin-roles-best-practices).
 
-### Azure AD Privileged Identity Management
+### Privileged Identity Management
 
-Rather than having your privileged accounts be permanently assigned an administrator role, you can use Azure AD PIM to enable on-demand, just-in-time assignment of the administrator role when it's needed.
+Rather than having your privileged accounts be permanently assigned an administrator role, you can use PIM to enable on-demand, just-in-time assignment of the administrator role when it's needed.
   
 Your administrator accounts go from being permanent admins to eligible admins. The administrator role is inactive until someone needs it. You then complete an activation process to add the administrator role to the privileged account for a predetermined amount of time. When the time expires, PIM removes the administrator role from the privileged account.
   
 Using PIM and this process significantly reduces the amount of time that your privileged accounts are vulnerable to attack and use by malicious users.
 
-PIM is available with Azure Active Directory Premium P2, which is included with Microsoft 365 E5. Alternately, you can purchase individual Azure Active Directory Premium P2 licenses for your administrator accounts.
+Using this feature requires either Microsoft Entra ID Governance or Microsoft Azure AD Premium P2 subscriptions. To find the right license for your requirements, see [Compare generally available features of Microsoft Azure AD](https://www.microsoft.com/security/business/identity-access-management/azure-ad-pricing).
+
+For information about licenses for users, see [License requirements to use Privileged Identity Management](/azure/active-directory/privileged-identity-management/subscription-requirements).
   
 For more information, see:
 
-- [Azure AD Privileged Identity Management](/azure/active-directory/active-directory-privileged-identity-management-configure).
+- [Privileged Identity Management](/azure/active-directory/active-directory-privileged-identity-management-configure).
 - [Securing privileged access for hybrid and cloud deployments in Azure AD](/azure/active-directory/roles/security-planning)
   
 
