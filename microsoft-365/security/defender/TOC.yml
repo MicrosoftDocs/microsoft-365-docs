@@ -442,6 +442,10 @@
          href: integrate-microsoft-365-defender-secops-use-cases.md
        - name: Step 6. SOC maintenance tasks
          href: integrate-microsoft-365-defender-secops-tasks.md
+    - name: Microsoft 365 Defender Multi-Tenant Organization Unified View 
+      items:
+        - name: Overview
+          href: get-started-mto.md
     - name: Reference
       items: 
       - name: Manage roles and permissions
