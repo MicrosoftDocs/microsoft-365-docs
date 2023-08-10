@@ -14,7 +14,6 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
 description: Learn how to use image tagging to search, sort, filter, and manage images in  Microsoft Syntex.
 ---
 
