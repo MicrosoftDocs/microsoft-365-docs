@@ -72,9 +72,9 @@ With any Microsoft 365 license, you can use basic Virtual Appointments capabilit
 
 Before people on your team can schedule appointments in the app, you must first set up an appointment calendar. ???You must be a Bookings admin to set up and manage appointment calendar settings.
 
-### Create a new appointment calendar or connect an existing calendar
+### Step 1: Create a new appointment calendar or connect an existing calendar
 
-To get started, create a new appointment calendar or connect an existing one that you previously created.
+To get started, [create a new appointment calendar](#to-create-a-new-appointment-calendar) or [connect an existing one](#to-work-with-an-existing-appointment-calendar) that you previously created.
 
 #### To create a new appointment calendar
 
@@ -90,7 +90,7 @@ To get started, create a new appointment calendar or connect an existing one tha
 1. On the **Home** tab or **Schedule** tab of the app, choose **Connect existing calendar**.
 1. Search for the calendar that you want, select it, and then choose **Done**.
 
-### Add staff to your appointment calendar
+### Step 2: Add staff to your appointment calendar
 
 You can add up to 100 staff members to a calendar. Each person you add will have their calendar displayed on the **Schedule** tab. You can then view their availability in the app and schedule appointments for them.
 
@@ -99,14 +99,14 @@ You can add up to 100 staff members to a calendar. Each person you add will have
 
  To learn more, see [Add and manage staff to make scheduling a breeze](https://support.microsoft.com/topic/9953defc-509d-4427-a2b9-8a2837495db7).  
 
-### Add services using appointment types
+### Step 3: Add services using appointment types
 
 <!--Now you must specify which appointment type you want the calendar to use an understand the two different types of appointments.-->
 
 Next, add services to the calendar using the appropriate appointment type. Before you do that, it's important to understand the two different appointment types:
 
-- **Scheduled** appointment type: Used by schedulers to book scheduled appointments for staff and attendees. These appointments are scheduled for a specific date, time, and duration.
-- **On-demand** appointment type: Used by your customers, clients, staff, and others for on-demand appointments. These appointments are for services that are provided upon request, similar a walk-in waiting room.
+- **Scheduled appointment type**: Used by schedulers to book scheduled appointments for staff and attendees. These appointments are scheduled for a specific date, time, and duration.
+- **On-demand appointment type**: Used by your customers, clients, staff, and others for on-demand appointments. These appointments are for services that are provided upon request, like a walk-in waiting room.
 
 Choose the appointment type that best represents the services offered by your organization and type of appointment experience you want for your users.
 
@@ -116,7 +116,7 @@ To add a service, on the **Manage** tab, select **Services**, and then under **S
 
   - Customers, staff and others can create their own appointments with **on-demand appointments** for services that are provided upon request, similar to a walk-in waiting room.-->
 
-  [![Screenshot of the Services tab.](media/virtual-appts-services.png)](media/virtual-appts-services.png#lightbox)
+:::image type="content" source="media/virtual-appointments-app-services.png" alt-text="Screenshot of the Services tab." lightbox="media/virtual-appointments-app-services.png":::
 
 #### Scheduled appointments
 
@@ -145,7 +145,7 @@ Booking admins can publish an online booking page where people can book schedule
 
 ![Information icon](media/info.png) **This on-demand scheduling feature requires [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams).**
 
-1. On the the **Manage** tab, select **Publish Booking page**.
+1. On the **Manage** tab, select **Publish Booking page**.
 1. Turn on **Publish booking**.
 1. To enable people to request on-demand appointments on your booking page, turn on **Show option for On-demand scheduling**.
 
