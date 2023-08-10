@@ -24,7 +24,7 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.date: 08/08/2023
+ms.date: 08/18/2023
 ---
 
 # Responding to your first incident in Microsoft 365 Defender
@@ -49,37 +49,40 @@ This guide has three main sections:
 
 ## Understanding incidents
 
+An [incident](incidents-overview.md) is a chain of processes created, commands, and actions that might not have coincided. An incident provides a holistic picture and context of suspicious or malicious activity. A single incident gives you an attack’s complete context instead of triaging hundreds of alerts from multiple services. 
+
 Microsoft 365 Defender has many features that you can use to respond to an incident. You can navigate the incidents by selecting **View all incidents** in the Active incidents card on the Home page or through **Incidents & alerts** on the left navigation pane.
 
 :::image type="content" source="../../media/first-incident/m365d-homepage.png" alt-text="View all incidents shown in Microsoft 365 Defender home page" lightbox="../../media/first-incident/m365d-homepage.png":::
 *Figure 1. Active incidents card on the Microsoft 365 Defender home page*
 
 :::image type="content" source="../../media/first-incident/m365d-incidents.png" alt-text="Incident queue in Microsoft 365 Defender" lightbox="../../media/first-incident/m365d-incidents.png":::
-*Figure 2. Microsoft 365 Defender incident queue*
+*Figure 2. Incident queue*
 
-Each [incident](incidents-overview.md) contains automatically correlated alerts from [different detection sources](microsoft-365-defender.md#microsoft-365-defender-protection) and might involve various endpoints, identities, or cloud apps. An incident provides a holistic picture and context of suspicious or malicious activity. A single incident gives you an attack’s complete context instead of triaging hundreds of alerts from multiple services.
+Each incident contains automatically correlated [alerts](investigate-alerts.md) from [different detection sources](microsoft-365-defender.md#microsoft-365-defender-protection) and might involve various endpoints, identities, or cloud apps.
 
 ### Triaging incidents
 
-Incident prioritization varies per responder, security team, and organization. [Incident response plans](/security/operations/incident-response-planning) and security teams' direction can mandate incident priority. Microsoft 365 Defender has various indicators like incident severity, types of users, or threat types to triage and prioritize incidents. You can use any combination of these indicators readily available through the [incident queue](incident-queue.md) filters.
+Incident prioritization varies per responder, security team, and organization. [Incident response plans](/security/operations/incident-response-planning) and security teams' direction can mandate incident priority. 
 
-An example of determining incident priority is combining the following factors using information from the filters:
+Microsoft 365 Defender has various indicators like incident severity, types of users, or threat types to triage and prioritize incidents. You can use any combination of these indicators readily available through the [incident queue](incident-queue.md) filters.
 
-- High *severity*
-- Failed *automation investigation state*
-- High *number of impacted assets* 
-- *Data sensitivity* is highly confidential
-- New *incident status*
-- Incident assignment is *unassigned* to any security team member
+An example of determining incident priority is combining the following factors for an incident:
 
-Using the information above, an incident responder might assign a high priority to the incident. The incident responder can then begin the investigation and remediation process.
+- The incident has a high severity.
+- The automation investigation state failed.
+- There are 5 impacted assets where two of the assets are tagged with highly confidential data sensitivity.
+- The incident status is new.
+- The incident is unassigned to any team member for investigation.
+
+You might assign a high priority to the incident using the information above. You can begin your incident investigation once a priority is determined.
 
 > [!NOTE]
-> Incident filters like severity, investigation states, impacted assets, and incident statuses are automatically determined by Microsoft 365 Defender. The information is based on your organization’s network activities contextualized with threat intelligence feeds and the automated remediation actions applied.
+> Microsoft 365 Defender automatically determines filters like severity, investigation states, impacted assets, and incident statuses. The information is based on your organization’s network activities contextualized with threat intelligence feeds and the automated remediation actions applied.
 
 ### Managing incidents
 
-Individual incident responders contribute to [incident management](manage-incidents.md) efficiency by providing essential information in incidents and alerts. The following input from when you triage and analyze each incident helps to add further context that other responders can take advantage of:
+You can contribute to [incident management](manage-incidents.md) efficiency by providing essential information in incidents and alerts. The following input from when you triage and analyze each incident helps to add further context that other responders can take advantage of:
 
 - [Classifying incidents and alerts](manage-incidents.md#specify-the-classification)
 - Naming incidents
@@ -90,7 +93,6 @@ Learn how to classify incidents and alerts through this video:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/<RE4LHJq>]
 
-You can begin your incident investigation once a priority is determined.
 
 ## Next steps
 -	[Analyze your first incident](respond-first-incident-analyze.md)

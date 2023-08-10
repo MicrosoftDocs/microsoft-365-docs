@@ -24,7 +24,7 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.date: 08/08/2023
+ms.date: 08/18/2023
 ---
 
 # Remediate your first incident in Microsoft 365 Defender
@@ -64,7 +64,7 @@ Playbooks use Power Automate to create custom robotic process automation flows t
 
 ## Manual remediation
 
-While responding to an attack, security teams can leverage the portal’s various remediation actions to stop attacks from further incurring damage. Some actions can immediately stop a threat, while others assist in further forensic analysis. Incident responders can apply these actions to any entity depending on the Defender stack deployed within an organization.
+While responding to an attack, security teams can leverage the portal's manual remediation actions to stop attacks from further incurring damage. Some actions can immediately stop a threat, while others assist in further forensic analysis. You can apply these actions to any entity depending on the Defender workloads deployed within your organization.
 
 ### Actions on devices
 
@@ -77,7 +77,7 @@ While responding to an attack, security teams can leverage the portal’s variou
  
 - [**Ask Defender Experts**](/microsoft-365/security/defender-endpoint/respond-machine-alerts#consult-a-threat-expert) - you can consult a Microsoft Defender expert for more insights regarding potentially compromised devices or devices that are already compromised. Microsoft Defender experts can be engaged directly from within Microsoft 365 Defender for a timely and accurate response. This action is available for both devices and files.
 
-Other actions on devices are available through the following tutorials:
+Other actions on devices are available through the following tutorial:
 
 - [Response actions on a device enabled through Defender for Endpoint](/microsoft-365/security/defender-endpoint/respond-machine-alerts)
 
@@ -96,7 +96,7 @@ Other actions on devices are available through the following tutorials:
 > [!NOTE]
 > These tutorials apply when other Defender workloads are enabled in your environment.
 
-The following tutorials enumerate specific steps and actions that can be applied to various entities when responding to and investigating attacks:
+The following tutorials enumerate steps and actions that you can apply when investigating entities or responding to specific threats:
 
 -	[Responding to a compromised email account via Defender for Office 365](/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account.md)
 -	[Remediating vulnerabilities with Defender for Vulnerability Management](/microsoft-365/security/defender-vulnerability-management/tvm-remediation.md)

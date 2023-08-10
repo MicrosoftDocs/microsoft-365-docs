@@ -24,19 +24,19 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
-ms.date: 08/08/2023
+ms.date: 08/18/2023
 ---
 
-# Analyzing your first incident in Microsoft 365 Defender
+# Analyze your first incident in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 - Microsoft 365 Defender
 
-Today’s threats on data security - [business email compromise (BEC)](https://www.microsoft.com/en-us/security/business/security-101/what-is-business-email-compromise-bec), malware like backdoors and [ransomware](/security/ransomware), organizational breaches, and [nation-state attacks](https://www.microsoft.com/en-us/security/business/security-insider/) – require quick, intelligent, and decisive action from incident responders. Tools like [Microsoft 365 Defender](microsoft-365-defender.md) allow response teams to detect, triage, and investigate incidents through its single-pane-of-glass experience and find the information needed to make these timely decisions. 
+Understanding the context that surrounds [incidents](incidents-overview.md) is essential in analyzing attacks.  Combining your expertise and experience with Microsoft 365 Defender's features and capabilities ensure faster resolution of incidents and your organization’s safety from further attacks.
 
-Understanding the context that surrounds incidents is essential in analyzing attacks. Often an incident is a chain of processes created, commands, and actions that might not have coincided. Combining your expertise and experience with Microsoft 365 Defender’s features and capabilities ensures faster resolution of incidents and your organization’s safety from further attacks.
+Today's threats on data security - [business email compromise (BEC)](https://www.microsoft.com/en-us/security/business/security-101/what-is-business-email-compromise-bec), malware like backdoors and [ransomware](/security/ransomware), organizational breaches, and [nation-state attacks](https://www.microsoft.com/en-us/security/business/security-insider/) – require quick, intelligent, and decisive action from incident responders. Tools like [Microsoft 365 Defender](microsoft-365-defender.md) allow response teams to detect, triage, and investigate incidents through its single-pane-of-glass experience and find the information needed to make these timely decisions.
 
 ## Investigation tasks
 
@@ -166,7 +166,8 @@ Moreover, organizations can extend security operations teams’ capabilities thr
 
 ## See also
 
-- [Incidents overview](incidents-overview.md)
+- [Understand incidents](respond-first-incident-365-defender.md)
 - [Investigate incidents](investigate-incidents.md)
+- [Investigate alerts](investigate-alerts.md)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
