@@ -126,6 +126,7 @@ If you qualify for tax-exempt status in your market, [start a service request](.
 | Puerto Rico | Certificado de Compras Exentas |
   
 ## Related content
-  
-[View your bill or invoice](view-your-bill-or-invoice.md) (article)\
-[Understand your bill or invoice](understand-your-invoice.md) (article)
+
+[View your invoice in the Microsoft 365 admin center](view-your-bill-or-invoice.md)\
+[Understand your invoice for your Microsoft MCA billing account](understand-your-invoice.md)\
+[Understand your invoice for your Microsoft MOSA billing account](understand-your-invoice2.md)

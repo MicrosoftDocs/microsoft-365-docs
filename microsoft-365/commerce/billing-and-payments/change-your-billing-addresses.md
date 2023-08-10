@@ -30,9 +30,7 @@ ms.date: 08/10/2023
 Your invoice for Microsoft business products and services that you own contains the following addresses:
   
 - **Sold to Address** Your company name and address, as shown in your organization profile.
-
 - **Bill to address** The address of your billing department, usually the same as the **Sold to** address.
-
 - **Service usage address** The address where the service is being used, usually the same as the **Sold to** address. If your organization has remote users or multiple offices, use the address where most your users are located. This address is only used by customers with a Microsoft Online Services Agreement (MOSA) billing account type.
 
 In most cases, these addresses are the same. If you need to change one or more of the addresses, you can do that in the Microsoft 365 admin center.
