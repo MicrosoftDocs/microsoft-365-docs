@@ -60,7 +60,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `IsAccountEnabled` | `boolean` | Indicates whether the account is enabled or not |
 | `Manager` [*](#mdi-only)  | `string` | The listed manager of the account user |
 | `Phone` [*](#mdi-only)  | `string` | The listed phone number of the account user|
-| `CreatedDateTime` [*](#mdi-only)  | `datetime` | The date and time that the user was created|
+| `AccountCreationTime` [*](#mdi-only)  | `datetime` | The date and time that the user was created|
 | `SourceProvider` [*](#mdi-only)  | `string` |The identity's source, such as Azure Active Directory, Active Directory, or a [hybrid identity](/azure/active-directory/hybrid/what-is-provisioning) synchronized from Active Directory to Azure Active Directory |
 | `ChangeSource` [*](#mdi-only)  | `string` |Identifies which identity provider or process triggered the addition of the new row. For example, the `System-UserPersistence` value is used for any rows added by an automated process.|
 | `Tags` [*](#mdi-only)  | `dynamic` | Tags assigned to the account user by Defender for Identity |
