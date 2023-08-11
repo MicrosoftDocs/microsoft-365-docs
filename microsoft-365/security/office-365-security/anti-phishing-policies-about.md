@@ -135,6 +135,8 @@ In anti-phishing policies, you can control whether `p=quarantine` or `p=reject` 
     - **Quarantine the message**
     - **Reject the message**
 
+If you select quarantine the message, Honor DMARC will apply quaratine policy set for spoof intelligence protection.
+
 :::image type="content" source="../../media/anti-phishing-policies-honor-dmarc-settings.png" alt-text="DMARC settings in an anti-phishing policy." lightbox="../../media/anti-phishing-policies-honor-dmarc-settings.png":::
 
 The relationship between spoof intelligence and whether sender DMARC policies are honored is described in the following table:
