@@ -47,8 +47,6 @@ To access the report, you must be a Global admin, Teams admin, Global reader, or
 
 The chart on the **Distribution** tab provides an overview of SMS notifications usage for the date range that you selected, by month. The table shows distribution details for each SMS notification that was sent.
 
-### Distribution
-
 |Callout |Description  |
 |--------|-------------|
 |**1**   |Each report has a date for when the report was generated. The reports usually reflect a 24 to 48-hour latency from time of activity. |
@@ -56,9 +54,9 @@ The chart on the **Distribution** tab provides an overview of SMS notifications 
 |**3**   |You can filter what you see on the chart by selecting an item. For example, select **SMS sent in EHR** or **SMS sent in Virtual Appointments** to see only the info related to each one. Changing this selection doesn’t change the information in the table.|
 |**4**   |The table gives you detailed information about each SMS notification that was sent during the selected date range. <ul><li>**Sent time (UTC)** is the date and time when the notification was sent.</li> <li>**Sent from** indicates the source of the notification (toll-free number or sender service).</li> <li>**SMS notification type** shows whether the notification is an appointment reminder or confirmation.</li> <li>**Product type** indicates the product used to schedule the appointment.</li> <li>**Status** shows the delivery status. To learn more, see [Delivery status descriptions](#delivery-status-descriptions).</li></ul> |
 
-#### Delivery status descriptions
+### Delivery status descriptions
 
-Here are the delivery status values that you may see in the report and what they mean. 
+Here are the delivery status values that you may see in the report and what they mean.
 
 |Status  |Description |
 |---------|---------|
@@ -67,7 +65,7 @@ Here are the delivery status values that you may see in the report and what they
 |Not Delivered – Invalid phone number|The number has an invalid format for the destination|
 |Not Delivered - Phone number doesn't exist|The number has a valid prefix and format but doesn't exist or isn't allocated.|
 |Not Delivered - Blocked phone number|The number is reported as a spam number and is in the vendor's blocklist.|
-|Not Delivered - Unreachable phone number|Recipient's phone is switched off or they are out of their coverage area.|
+|Not Delivered - Unreachable phone number|Recipient's phone is switched off or they're out of their coverage area.|
 |Not Delivered - Spam Detected|Keyword-based filter detected spam.|
 |Not Delivered - Message limit reached|User sent more SMS text notifications than their profile allows within a given time period.|
 
