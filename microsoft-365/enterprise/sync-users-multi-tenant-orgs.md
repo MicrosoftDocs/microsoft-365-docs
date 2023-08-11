@@ -40,6 +40,8 @@ While you can create multiple cross-tenant synchronization configurations for a 
 > [!NOTE]
 > It may take up to 24 hours for synced users to be available in Microsoft 365 services such as Teams and SharePoint.
 
+For more information about cross-tenant synchronization, see [What is cross-tenant synchronization?](/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-overview).
+
 ## Users synchronized to your tenant from other tenants
 
 Users synchronized to your tenant from other tenants in your multi-tenant organization are synchronized as [Azure AD members rather than guests](/azure/active-directory/external-identities/user-properties).
@@ -92,6 +94,10 @@ To change which users are synchronized to other tenants
 This procedure updates the *MTO_Sync_\<TenantID\>* synchronization configurations in Azure AD for each tenant in your multi-tenant organization.
 
 ## Related topics
+
+[Troubleshooting tips for multi-tenant organizations](/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-configure#troubleshooting-tips)
+
+[Known issues for provisioning in Azure Active Directory](/azure/active-directory/app-provisioning/known-issues?pivots=cross-tenant-synchronization)
 
 [Plan for multi-tenant organizations in Microsoft 365](plan-multi-tenant-org-overview.md)
 
