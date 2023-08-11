@@ -72,7 +72,7 @@ When a user has been inactive in Microsoft 365 web apps for the time period you 
 
     - Microsoft Purview Compliance Portal
     
-    - Azure Portal
+    - Azure portal
 
 
 - Activity refers to any client-side user interaction happening in the context of the web app. For example, mouse clicks and keyboard presses.  
@@ -140,7 +140,7 @@ The following Microsoft 365 apps are supported.
 
 - Microsoft Purview Compliance Portal
 
-- Azure Portal
+- Azure portal
 
 If you're working on a different web app with the same account, the activity in that web app won't be applied to the idle session timeout.
 
