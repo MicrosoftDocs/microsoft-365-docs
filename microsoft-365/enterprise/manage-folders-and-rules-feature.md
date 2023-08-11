@@ -67,7 +67,7 @@ Admin can enable the member permission to the tenant using the cmdlet `IsGroupMe
 
    Default value: false
 
-Once this is enabled, Group owners can provide group members with the ability to create folders, rename folders, copy, move and delete messages. Group level member permission is handled by Group owners.
+Once this is enabled, Group owners can provide group members with the ability to create folders, rename folders, copy, move, and delete messages by navigating to the group from Outlook > **Settings** > **Edit Group** > and select the option **All members will be able to create, edit, move, Copy and delete mail folders and rules within the group**. Group level member permission is handled by Group owners.
 
 > [!NOTE]
 > Admins can see the current value of the settings using `Get-OrganizationConfig` cmdlet.
