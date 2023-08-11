@@ -30,7 +30,7 @@ While you configure Microsoft 365 multi-tenant organizations in the Microsoft 36
 
 Multi-tenant organizations synchronize users between tenants using Azure AD B2B collaboration users. Users from your tenant are provisioned in the other tenants in the multi-tenant organization as B2B collaboration users, but with a user type of member rather than guest. (See [What are the default user permissions in Azure Active Directory?](/azure/active-directory/fundamentals/users-default-permissions) for the differences between these roles.)
 
-We highly recommend synchronizing all users across all tenants in your multi-tenant organization for the best user experience. However you can synchronize a subset of users if you need to, including different users to different tenants.
+We recommend starting with a small set of users before rolling out to the entire organization. When you do the complete rollout, we highly recommend synchronizing all users across all tenants in your multi-tenant organization for the best user experience. However you can synchronize a subset of users if you need to, including different users to different tenants.
 
 When you configure user synchronization in the Microsoft 365 admin center, the same users and groups are synchronized to all tenants in the multi-tenant organization. Synchronizing different users to different tenants must be configured in Azure AD.
 

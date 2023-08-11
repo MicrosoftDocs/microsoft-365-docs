@@ -42,6 +42,8 @@ While you can create multiple cross-tenant synchronization configurations for a 
 
 For more information about cross-tenant synchronization, see [What is cross-tenant synchronization?](/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-overview).
 
+If you have issues with user synchronization check the [provisioning logs in Azure Active Directory](/azure/active-directory/reports-monitoring/concept-provisioning-logs).
+
 ## Users synchronized to your tenant from other tenants
 
 Users synchronized to your tenant from other tenants in your multi-tenant organization are synchronized as [Azure AD members rather than guests](/azure/active-directory/external-identities/user-properties).
