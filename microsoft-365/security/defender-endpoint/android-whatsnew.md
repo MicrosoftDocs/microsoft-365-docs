@@ -38,7 +38,7 @@ Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](
 
 ## Device Tagging
 
-Mobile Device Tagging is now available in Public Preview. This feature enables bulk tagging the mobile devices during onboarding by allowing the admins to set up tags via Intune. Admin can configure the device tags through Intune via configuration policies and push them to user’s devices. Once the User installs and activates Defender, the client app passes the device tags to the Security Portal. The Device tags appear against the devices in the Device Inventory. 
+Mobile Device Tagging is now available in Public Preview. This feature enables bulk tagging the mobile devices during onboarding by allowing the admins to set up tags via Intune. Admin can configure the device tags through Intune via configuration policies and push them to user’s devices. Once the user installs and activates Defender, the client app passes the device tags to the Security Portal. The Device tags appear against the devices in the Device Inventory. 
 
 This configuration is available for both the enrolled (MDM) devices as well as unenrolled (MAM) devices. For more information, see [Device Tagging (MDM)](/microsoft-365/security/defender-endpoint/android-configure#device-tagging) and [Device Tagging (MAM)](/microsoft-365/security/defender-endpoint/android-configure-mam#device-tagging).
 
