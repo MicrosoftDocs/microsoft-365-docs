@@ -36,7 +36,6 @@ The report shows usage information for the following features.
 |Feature |Description  |
 |---------|---------|
 |SMS text notifications|Send appointment reminders and confirmations to external attendees on their mobile devices.|
-|Lobby chat (coming soon)|Communicate with external attendees in the waiting room before an appointment.|
 |On-demand appointments|Service and manage on-demand virtual appointments.|
 |Queue|Monitor scheduled and on-demand appointments, with status updates in real time.|
 
