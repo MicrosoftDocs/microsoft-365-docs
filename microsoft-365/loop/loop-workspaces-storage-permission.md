@@ -27,7 +27,7 @@ appliesto:
 Microsoft [Syntex repository services](https://devblogs.microsoft.com/microsoft365dev/introducing-syntex-repository-services-microsoft-365-superpowers-for-your-app/) powered by SharePoint platform stores all Loop app content. All Loop workspaces, pages, and components created in the Loop app are stored in a container in the Syntex repository service, which is designated for that specific workspace.
 
 > [!NOTE]
-> There are limited security and compliance capabilities available specifically for the Loop app.
+> There are limited [security and compliance capabilities](/microsoft-365/loop/loop-compliance-summary) available specifically for the Loop app.
 
 Separately, Loop components created outside of the Loop app in other Microsoft 365 apps (such as [Teams](https://support.microsoft.com/office/first-things-to-know-about-loop-components-in-microsoft-teams-ee2a584b-5785-4dd6-8a2d-956131a29c81), [Outlook](https://support.microsoft.com/office/use-loop-components-in-outlook-9b47c279-011d-4042-bd7f-8bbfca0cb136), [Whiteboard](https://support.microsoft.com/office/loop-components-in-whiteboard-c5f08f54-995e-473e-be6e-7f92555da347), [Word for the web](https://support.microsoft.com/office/use-loop-components-in-word-for-the-web-645cc20d-5c98-4bdb-b559-380c5a27c5e5)) are stored in the creator's OneDrive. For example, if User A creates a Loop component within a Teams chat with User B, that Loop component is stored in User A's OneDrive and is shared with User B.
 
