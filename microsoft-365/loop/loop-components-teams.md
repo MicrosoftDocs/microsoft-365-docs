@@ -45,7 +45,7 @@ For information on admin settings for Loop components in Teams, see [Settings ma
 
 ## Loop components and .loop files
 
-Loop components created in Teams, Outlook are backed by a .loop (earlier versions of Loop-created .fluid) file stored in the creator's OneDrive. A file being in OneDrive means that users can create, discover, and manage Loop components (.loop files) as easily as any Office document.
+Loop components created in Teams and Outlook are backed by a .loop (earlier versions of Loop-created .fluid) file stored in the creator's OneDrive. A file being in OneDrive means that users can create, discover, and manage Loop components (.loop files) as easily as any Office document.
 
 ## How are .loop files stored?
 
@@ -75,7 +75,7 @@ The .loop files can only be opened as links in your browser, such as Office.com,
 
 Loop components created in Teams, Outlook, and Word for the web, are discoverable and have eDiscovery workflow support using the Microsoft Purview tool. Currently, these files are stored in the creator’s OneDrive and are available for search and collection, and render in review for both eDiscovery (Standard) and eDiscovery (Premium). The HTML offline export format is supported on eDiscovery (Premium). You can also download and re-upload the files to any OneDrive to view them in their native format.
 
-Microsoft is currently working on a third-party graph export API solution for Loop components.
+A third-party graph export API solution is also available for Loop components that supports both raw export and an HTML offline format.
 
 ## If Loop is disabled from the admin switch, what will the user experience be?
 
