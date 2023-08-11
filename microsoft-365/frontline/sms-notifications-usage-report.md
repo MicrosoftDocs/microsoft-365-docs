@@ -45,7 +45,7 @@ To access the report, you must be a Global admin, Teams admin, Global reader, or
 
 ## Interpret the report
 
-The chart on the **Distribution** tab provides an overview of SMS notifications usage for the date range that you selected, by month. The table shows distribution details for each SMS notification that was sent.
+On the **Distribution** tab, you'll see a chart that provides an overview of SMS notifications usage, by month, for the date range that you selected. The table shows distribution details for each SMS notification that was sent.
 
 |Callout |Description  |
 |--------|-------------|
