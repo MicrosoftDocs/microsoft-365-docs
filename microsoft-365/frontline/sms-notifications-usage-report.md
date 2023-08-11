@@ -26,7 +26,7 @@ ms.date: 3/23/2023
 
 ![Information icon](media/info.png) **This feature requires [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams).**
 
-The SMS notifications usage report in the Microsoft Teams admin center gives you an overview of SMS notifications usage for virtual appointments in your organization.
+The SMS notifications usage report in the Microsoft Teams admin center gives you an overview of SMS notifications usage for virtual appointments in your organization. It provides usage data for SMS notifications sent in the Virtual Appointments app and in Teams Electronic Health Record (EHR)-integrated appointments.
 
 You can track key data for confirmation and reminder text messages sent to external attendees in virtual appointments scheduled by your staff. The report provides information such as date and time sent, notification type, distribution details, and delivery status.
 
@@ -65,7 +65,7 @@ Here are the delivery status values that you may see in the report and what they
 |Not Delivered – Invalid phone number|The number has an invalid format for the destination|
 |Not Delivered - Phone number doesn't exist|The number has a valid prefix and format but doesn't exist or isn't allocated.|
 |Not Delivered - Blocked phone number|The number is reported as a spam number and is in the vendor's blocklist.|
-|Not Delivered - Unreachable phone number|Recipient's phone is switched off or they're out of their coverage area.|
+|Not Delivered - Unreachable phone number|Recipient's phone is switched off or out of the coverage area.|
 |Not Delivered - Spam Detected|Keyword-based filter detected spam.|
 |Not Delivered - Message limit reached|User sent more SMS text notifications than their profile allows within a given time period.|
 
