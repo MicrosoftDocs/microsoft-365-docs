@@ -1,0 +1,51 @@
+    - name: Microsoft Whiteboard
+      href: index.md   
+
+    - name: Set up Whiteboard
+      items:
+        - name: Set up and use
+          href: /surface-hub/whiteboard-collaboration
+        - name: Deploy on Windows devices
+          href: deploy-on-windows-organizations.md
+
+    - name: Manage Whiteboard
+      items:
+        - name: Manage access
+          href: manage-whiteboard-access-organizations.md 
+        - name: Manage data
+          href: manage-data-organizations.md
+        - name: Manage sharing
+          href: manage-sharing-organizations.md
+
+    - name: Privacy and compliance
+      items:
+        - name: Configure privacy settings
+          href: configure-privacy-settings.md
+        - name: Manage GDPR requests
+          href: gdpr-requests.md
+
+    - name: Whiteboard for government
+      items:
+        - name: GCC
+          items:
+            - name: Manage access - GCC
+              href: manage-whiteboard-access-gcc.md
+            - name: Manage data - GCC
+              href: manage-data-gcc.md
+            - name: Manage sharing - GCC
+              href: manage-sharing-gcc.md
+            - name: Manage clients - GCC
+              href: manage-clients-gcc.md
+        - name: GCC High
+          items:
+            - name: Manage access - GCC High
+              href: manage-whiteboard-access-gcc-high.md
+            - name: Manage data - GCC High
+              href: manage-data-gcc-high.md
+            - name: Manage sharing - GCC High
+              href: manage-sharing-gcc-high.md
+            - name: Manage clients - GCC High
+              href: manage-clients-gcc-high.md
+
+    - name: Whiteboard PowerShell
+      href: /powershell/module/whiteboard/

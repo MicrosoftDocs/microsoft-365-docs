@@ -1,0 +1,7 @@
+- name: Microsoft Defender
+  tocHref: /defender/
+  topicHref: /defender/index
+  items:
+  - name: Microsoft Defender Threat Intelligence 
+    tocHref: /defender/threat-intelligence/
+    topicHref: /defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti

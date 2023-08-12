@@ -1,0 +1,96 @@
+### YamlMime:Hub
+
+title: Microsoft 365 for enterprise documentation and resources # < 60 chars
+summary: Best-in-class productivity apps with intelligent cloud services that transform the way you work. # < 160 chars
+# brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
+brand: m365
+
+metadata:
+  title: Microsoft 365 for enterprise documentation and resources # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn about the product documentation and resources available for Microsoft 365 for enterprise for IT pros, information workers, and partners. # Required; article description that is displayed in search results. < 160 chars.
+  services: service
+  ms.service: microsoft-365-enterprise
+  ms.topic: hub-page # Required
+  ms.localizationpriority: high
+  ms.collection: 
+  - M365-subscription-management
+  - Adm_TOC
+  author: kelleyvice-msft #Required; your GitHub user alias, with correct capitalization.
+  ms.author: kvice #Required; microsoft alias of author; optional team alias.
+  ms.date: 07/28/2020 #Required; mm/dd/yyyy format.
+
+# highlightedContent section (optional)
+# Maximum of 8 items
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+  items:
+    # Card
+    - title: Learn about Microsoft 365 for enterprise
+      itemType: get-started
+      url: microsoft-365-overview.md
+    # Card
+    - title: Accelerate your deployment with FastTrack
+      itemType: quickstart
+      url: https://www.microsoft.com/fasttrack/microsoft-365
+    # Card
+    - title: Train your IT pros and admins
+      itemType: learn
+      url: /training/m365/
+
+# conceptualContent section (optional)
+conceptualContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+  title: Get help with Microsoft 365 for enterprise and other resources # < 60 chars (optional)
+  summary: Explore Microsoft 365 for enterprise deployment guidance, features, and services. # < 160 chars (optional)
+  items:
+    # Card
+    - title: Deploy key elements
+      links:
+        - url: deploy-identity-solution-overview.md
+          itemType: how-to-guide
+          text: Identity infrastructure
+        - url: /windows/deployment/
+          itemType: get-started
+          text: Windows 10 Enterprise
+        - url: /deployoffice/plan-microsoft-365-apps
+          itemType: deploy
+          text: Microsoft 365 Apps for enterprise
+        - url: /intune/fundamentals/planning-guide
+          itemType: deploy
+          text: Microsoft Intune
+    # Card
+    - title: Manage Microsoft 365 for enterprise
+      links:
+        - url: /windows/deployment/update/
+          itemType: how-to-guide
+          text: Windows 10 Enterprise
+        - url: /deployoffice/overview-update-channels
+          itemType: concept
+          text: Microsoft 365 Apps for enterprise
+        - url: /intune/apps/app-management
+          itemType: get-started
+          text: Apps with Intune
+        - url: /office365/
+          itemType: get-started
+          text: Microsoft 365 services
+
+# additionalContent section (optional)
+# Card with summary style
+additionalContent:
+  # Supports up to 3 sections
+  sections:
+    - title: Additional resources # < 60 chars (optional)
+      summary: Learn more about other Microsoft 365 features and resources. # < 160 chars (optional)
+      items:
+        # Card
+        - title: Microsoft Purview
+          summary: Help your organization govern information, protect against risks, and comply with legal or regulatory standards.
+          url: ../compliance/index.yml
+        # Card
+        - title: Microsoft 365 security
+          summary: Protect your organization across attack surfaces with robust security services and solutions.
+          url: ../security/index.yml
+        # Card
+        - title: Microsoft 365 technical community
+          summary: Connect and collaborate with peers and experts in the Microsoft Tech Community and share Microsoft 365 best practices.
+          url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365

@@ -1,0 +1,227 @@
+### YamlMime:Hub
+
+title: Microsoft 365 documentation # < 60 chars
+summary: Find the solutions, scenarios, and resources you need to get started with Microsoft 365 for your business or organization. Microsoft 365 includes services such as Teams and SharePoint, and Microsoft 365 Apps such as Outlook, Word, Excel, and PowerPoint.
+# brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
+brand: m365
+
+metadata:
+  title: Microsoft 365 documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Find the solutions, scenarios, and resources you need to get started with Microsoft 365, including Office, for your business or organization. # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: microsoft-365-enterprise #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: hub-page # Required
+  ms.collection: 
+    - m365-security-compliance
+    - EngageScoreNov2022
+    - contentengagementFY23
+  ms.custom: intro-hub-or-landing
+  author: samanro #Required; your GitHub user alias, with correct capitalization.
+  ms.author: samanro #Required; microsoft alias of author; optional team alias.
+  ms.date: 07/25/2023 #Required; mm/dd/yyyy format.
+  ms.localizationpriority: high
+
+# highlightedContent section (optional)
+# Maximum of 8 items
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+  items:
+    # Card
+    - title: Set up your infrastructure for hybrid work
+      itemType: how-to-guide
+      url: solutions/empower-people-to-work-remotely.md
+    - title: Remote learning with Microsoft Teams
+      itemType: get-started
+      url: /MicrosoftTeams/remote-learning-edu
+    # Card
+    - title: Build your skills with Microsoft Learn training
+      itemType: learn
+      url: /training/m365/
+    - title: Get your small business started with Microsoft 365
+      itemType: quickstart
+      url: business-video/index.yml
+
+# conceptualContent section (optional)
+conceptualContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+  # Supports up to 3 subsections
+  sections:
+    - items:
+        # Card
+        - title: Admin documentation
+          links:
+            - url: admin/index.yml
+              itemType: get-started
+              text: Microsoft 365 admin center
+            - url: enterprise/index.yml
+              itemType: get-started
+              text: Microsoft 365 for enterprise
+            - url: frontline/index.yml
+              itemType: get-started
+              text: Microsoft 365 for frontline workers
+            - url: business/index.yml
+              itemType: get-started
+              text: Microsoft 365 Business Premium
+            - url: security/index.yml
+              itemType: overview
+              text: Microsoft 365 security
+            - url: /office/troubleshoot
+              itemType: reference
+              text: Troubleshooting and support
+        # Card
+        - title: Products
+          links:
+            - url: /MicrosoftTeams
+              itemType: overview
+              text: Microsoft Teams
+            - url: /sharepoint/introduction
+              itemType: overview
+              text: SharePoint and OneDrive
+            - url: /purview/
+              itemType: overview
+              text: Microsoft Purview
+            - url: /microsoft-365/contentunderstanding/
+              itemType: overview
+              text: Microsoft Syntex
+            - url: /viva
+              itemType: overview
+              text: Microsoft Viva
+            - url: /Exchange/exchange-online
+              itemType: overview
+              text: Exchange Online
+            - url: https://adoption.microsoft.com/outlook-mobile/
+              itemType: overview
+              text: Outlook for iOS and Android
+            - url: /office365/planner
+              itemType: overview
+              text: Planner
+            - url: /yammer/yammer-landing-page
+              itemType: overview
+              text: Yammer
+        # Card
+        - title: Microsoft 365 Apps and Office
+          links:
+            - url: /DeployOffice/plan-microsoft-365-apps
+              itemType: get-started
+              text: Microsoft 365 Apps
+            - url: /DeployOffice/mac
+              itemType: how-to-guide
+              text: Office for Mac
+            - url: /DeployOffice/ltsc2021/overview
+              itemType: overview
+              text: Office LTSC 2021
+          # footerLink (optional)
+          footerLink:
+            url: /DeployOffice
+            text: See more
+        # Card
+        - title: Solutions for your business
+          links:
+            - url: solutions/empower-people-to-work-remotely.md
+              itemType: how-to-guide
+              text: Set up your infrastructure for hybrid work
+            - url: solutions/setup-secure-collaboration-with-teams.md
+              itemType: how-to-guide
+              text: Set up secure collaboration
+            - url: solutions/deploy-threat-protection.md
+              itemType: how-to-guide
+              text: Deploy threat protection
+            - url: solutions/data-privacy-protection.md
+              itemType: how-to-guide
+              text: Manage data privacy and data protection
+            - url: business-premium/index.md
+              itemType: how-to-guide
+              text: Microsoft 365 for smaller businesses and campaigns
+            - url: solutions/productivity-illustrations.md
+              itemType: download
+              text: Microsoft 365 productivity illustrations
+          # footerLink (optional)
+          footerLink:
+            url: solutions/index.yml
+            text: See more
+        # Card
+        - title: Manage devices
+          links:
+            - url: /windows/deployment/
+              itemType: deploy
+              text: Deploy Windows
+            - url: ./managed-desktop/index.yml
+              itemType: deploy
+              text: Microsoft Managed Desktop
+            - url: /mem/intune/fundamentals/what-is-intune
+              itemType: overview
+              text: Device management with Microsoft Intune
+        # Card
+        - title: Hybrid and migration
+          links:
+            - url: /sharepointmigration/migrate-to-sharepoint-online
+              itemType: how-to-guide
+              text: Migrate your content to SharePoint, OneDrive, and Teams
+            - url: /sharepoint/hybrid/hybrid
+              itemType: how-to-guide
+              text: Hybrid SharePoint
+            - url: /Exchange/mailbox-migration/mailbox-migration
+              itemType: how-to-guide
+              text: Migrate multiple email accounts to Microsoft 365
+        # Card
+        - title: More apps and services
+          links: 
+            - url:  bookings/index.yml
+              itemType: overview
+              text: Microsoft Bookings
+            - url: /microsoft-forms/
+              itemType: overview
+              text: Microsoft Forms
+            - url: /stream/
+              itemType: overview
+              text: Microsoft Stream
+        # Card
+        - title: Power Platform in Microsoft 365
+          links: 
+            - url: /power-apps/teams/overview
+              itemType: overview
+              text: Power Apps in Teams
+            - url: /power-automate/
+              itemType: overview
+              text: Power Automate
+            - url: /power-virtual-agents/teams/fundamentals-what-is-power-virtual-agents-teams
+              itemType: overview
+              text: Power Virtual Agents in Teams
+            - url: /power-bi/collaborate-share/service-collaborate-microsoft-teams
+              itemType: overview
+              text: Power BI in Teams
+
+# tools section (optional)
+tools:
+  title: Guidance and resources for all audiences # < 60 chars (optional)
+  summary: Find documentation and resources for end users, educators, and developers, and find community resources for technical audiences.
+  items:
+    # Card
+    - title: End users
+      imageSrc: /office/media/icons/help.svg
+      url: https://support.microsoft.com/microsoft-365
+    # Card
+    - title: Educators
+      imageSrc: /office/media/icons/education-tutorial-blue.svg
+      url: https://support.microsoft.com/education
+    # Card
+    - title: Education IT
+      imageSrc: /office/media/icons/administrator.svg
+      url: /education
+    # Card
+    - title: Developers
+      # imageSrc should be square in ratio with no white space
+      imageSrc: /office/media/icons/developer-blue.svg
+      url: /microsoft-365/developer/?view=o365-worldwide
+    # Card
+    - title: FastTrack
+      # imageSrc should be square in ratio with no white space
+      imageSrc: /office/media/icons/deploy-blue.svg
+      url: /microsoft-365/fasttrack/
+    # Card
+    - title: Microsoft 365 Community Content
+      imageSrc: /office/media/icons/blog-site-blue.svg
+      url: /microsoft-365/community/
+    # Card
+    - title: Tech community
+      imageSrc: /office/media/icons/users-group.svg
+      url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365

@@ -1,0 +1,182 @@
+### YamlMime:FAQ
+metadata:
+  ms.date: 6/20/2023
+  title: Anti-spam protection FAQ
+  f1.keywords:
+    - NOCSH
+  ms.author: chrisda
+  author: chrisda
+  manager: dansimp
+  audience: ITPro
+  ms.article: faq
+
+  ms.localizationpriority: medium
+  search.appverid:
+    - MET150
+  ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
+  ms.collection:
+    - m365-security
+    - tier2
+  ms.custom:
+    - seo-marvel-apr2020
+  description: Admins can view frequently asked questions and answers about anti-spam protection in Exchange Online Protection (EOP).
+  ms.subservice: mdo
+  ms.service: microsoft-365-security
+title: Anti-spam protection FAQ
+summary: |
+  [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+  **Applies to**
+  - [Exchange Online Protection](eop-about.md)
+  - [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
+  - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+
+  This article provides frequently asked questions and answers about anti-spam protection for Microsoft 365 organizations with mailboxes in Exchange Online, or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes.
+
+  For questions and answers about the quarantine, see [Quarantine FAQ](quarantine-faq.yml).
+
+  For questions and answers about anti-malware protection, see [Anti-malware protection FAQ](anti-malware-protection-faq.yml).
+
+  For questions and answers about anti-spoofing protection, see [Anti-spoofing protection FAQ](anti-phishing-protection-spoofing-faq.yml).
+
+sections:
+  - name: Ignored
+    questions:
+      - question: |
+          By default, what happens to a message that's detected as spam?
+        answer: |
+          - **Inbound messages:** Most spam is deleted via connection filtering at the edge of the service, which is based on the IP address of the source email server. Anti-spam policies (also known as spam filter policies or content filter policies) inspect and classify messages as bulk, spam, high confidence spam, phishing, or high confidence phishing.
+          
+            Anti-spam policies are used in the Standard and Strict preset security policies. You can create custom anti-spam policies that apply to specific groups of users. There's also a default anti-spam policy that applies to all recipients who aren't specified in the Standard and Strict preset security policies or in custom policies.
+          
+            By default, messages that are identified as spam are moved to the Junk Email folder by the Standard preset security policy, custom anti-spam policies (configurable), and the default anti-spam policy (configurable). In the Strict preset security policy, spam messages are quarantined.
+          
+            For more information, see [Configure anti-spam policies](anti-spam-policies-configure.md) and [Recommended anti-spam policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
+
+            > [!IMPORTANT]
+            > In hybrid deployments where EOP protects on-premises Exchange mailboxes, you need to configure two Exchange mail flow rules (also known as transport rules) in your on-premises Exchange organization to detect the EOP spam filtering headers that are added to messages. For details, see [Configure EOP to deliver spam to the Junk Email folder in hybrid environments](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
+
+          - **Outbound messages:** The message is either routed through the [high-risk delivery pool](outbound-spam-high-risk-delivery-pool-about.md) or is returned to the sender in a non-delivery report (also known as an NDR or bounce message). For more information about outbound spam protection, see [Outbound spam controls](outbound-spam-protection-about.md).
+
+      - question: |
+          What's a zero-day spam variant and how is it handled by the service?
+        answer: |
+          A zero-day spam variant is a first generation, previously unknown variant of spam that's never been captured or analyzed, so our anti-spam filters don't yet have any information available for detecting it. After a zero-day spam sample is captured and analyzed by our spam analysts, if it meets the spam classification criteria, our anti-spam filters are updated to detect it, and it's no longer considered "zero-day."
+
+          > [!NOTE]
+          > If you receive a message that might be a zero-day spam variant, in order to help us improve the service, submit the message to Microsoft using one of the methods described in [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).
+
+      - question: |
+          Do I need to configure the service to provide anti-spam protection?
+        answer: |
+          No. The default anti-spam policy protects all current and future recipients in your Microsoft 365 organization after you sign up for the service and add your domain. The only exception is the previously described requirement for standalone EOP standalone customers in hybrid environments
+          
+          As an admin, you can use the following methods to further refine anti-spam protection:
+
+          - Add users to the Standard and Strict preset security policies.
+          - Edit the default spam filtering settings in the default anti-spam policy.<
+          - Create anti-spam policies that are applied to specified users, groups, or domains in your organization.
+
+          For more information, see the following articles:
+
+          - [Recommended anti-spam policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings)
+          - [Configure anti-spam policies in EOP](anti-spam-policies-configure.md)
+          - [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md)
+
+      - question: |
+          If I change an anti-spam policy, how long does it take for the changes to take effect?
+        answer: |
+          It might take up to 1 hour after you save the changes for those changes to take effect.
+
+      - question: |
+          Is bulk email filtering automatically enabled?
+        answer: |
+          Yes. For more information about bulk email, see [What's the difference between junk email and bulk email?](anti-spam-spam-vs-bulk-about.md) and [Bulk complaint level (BCL) in EOP](anti-spam-bulk-complaint-level-bcl-about.md).
+
+      - question: |
+          Does the service provide URL filtering?
+        answer: |
+          Yes, the service has a URL filter that checks for URLs within messages. If URLs associated with known spam or malicious content are detected, the message is marked as spam.
+
+          Customers with Microsoft 365 Defender for Office licenses also get Safe Links protection. For more information, see [Safe Links in Microsoft Defender for Office 365](safe-links-about.md).
+
+      - question: |
+          How can Microsoft 365 customers send false positive (bad) and false negative (good) messages to Microsoft?
+        answer: |
+          See [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).
+
+      - question: |
+          Can I get spam reports?
+        answer: |
+          Yes. The following reports are available:
+          
+          - [Spam detections report](reports-email-security.md#spam-detections-report)
+          - [Threat protection status report](reports-email-security.md#threat-protection-status-report)
+          - [Submissions report (admins)](reports-email-security.md#submissions-report)
+          - [User reported messages report](reports-email-security.md#user-reported-messages-report)
+          
+      - question: |
+          Someone sent me a message and I can't find it. I suspect that it may have been detected as spam. Is there a tool that I can use to find out?
+        answer: |
+          Yes, the message trace tool enables you to follow email messages as they pass through the service, in order to find out what happened to them. For more information about how to use the message trace tool to find out why a message was marked as spam, see [Was a message marked as spam?](/exchange/monitoring/trace-an-email-message/message-trace-faq#was-a-message-marked-as-spam)
+
+      - question: |
+          Does the service throttle (rate limit) my mail if users send outbound spam?
+        answer: |
+          If more than half of the mail that is sent from a user through the service within a certain time frame (for example, per hour), is determined to be spam by EOP, the user is blocked from sending messages. In most cases, if an outbound message is determined to be spam, it's routed through the high-risk delivery pool, which reduces the probability of the normal outbound-IP pool being added to a block list.
+
+          Notifications are automatically sent when users are blocked due to sending outbound spam or exceeding sending limits. For more information, see [Outbound spam protection in EOP](outbound-spam-protection-about.md).
+
+      - question: |
+          Can I use a third-party anti-spam and anti-malware provider with Microsoft 365?
+        answer: |
+          Yes. Although we recommend that you point your MX record directly to Microsoft, we realize that there are legitimate business reasons to route your email to somewhere other than Microsoft first.
+
+          - **Inbound**: Change your MX records to point to the third-party provider, and then redirect the messages to EOP for additional processing. For more information, see [Enhanced Filtering for connectors in Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+          - **Outbound**: Configure smart host routing from Microsoft 365 to the destination third-party provider.
+
+      - question: |
+          Does Microsoft have any documentation about how I can protect myself from phishing scams?
+        answer: |
+          Yes. For more information, see [Protect your privacy on the internet](https://support.microsoft.com/windows/ffe36513-e208-7532-6f95-a3b1c8760dfa)
+
+      - question: |
+          Are spam and malware messages being investigated as to who sent them, or being transferred to law enforcement entities?
+        answer: |
+          The service focuses on spam and malware detection and removal, though we might occasionally investigate especially dangerous or damaging campaigns and pursue the perpetrators. This pursuit might involve working with our legal and digital crime units to take down a botnet, blocking the spammer from using the service (if they're using it for sending outbound email), and passing the information on to law enforcement for criminal prosecution.
+
+      - question: |
+          What are the best practices for outbound mail that help to ensure my mail is delivered?
+        answer: |
+          The guidelines at [Best practices for bulk emailing to Microsoft 365 users](mail-flow-troubleshooting.md#best-practices-for-bulk-emailing-to-microsoft-365-users) and following guidelines are best practices for sending outbound email messages:
+
+          - **The source email domain should resolve in DNS**: For example, if the sender is user@fabrikam, the domain fabrikam resolves to the IP address 192.168.43.10.
+
+            If a sending domain has no A-record and no MX record in DNS, the service routes the message through its higher risk delivery pool, regardless of the message content. For more information about the high risk delivery pool, see [High-risk delivery pool for outbound messages](outbound-spam-high-risk-delivery-pool-about.md).
+
+          - **The source email server should have a reverse DNS (PTR) entry**: For example, if the email source IP address is 192.168.43.10, the reverse DNS entry would be `43-10.any.icann.org`.`
+
+          - **The HELO/EHLO and MAIL FROM commands should be consistent, present, and use a domain name rather than an IP address**: The HELO/EHLO command should be configured to match the reverse DNS of the sending IP address. This setting helps ensure that the domain remains the same across the various parts of the message headers.
+
+          - **Ensure that proper SPF records are set up in DNS**: SPF records are a mechanism for validating that mail sent from a domain really is coming from that domain and isn't spoofed. For more information about SPF records, see the following links:
+            - [Set up SPF to help prevent spoofing](email-authentication-spf-configure.md)
+            - [Domains FAQ](../../admin/setup/domains-faq.yml#how-can-i-validate-spf-records-for-my-domain)
+
+          - **Signing email with DKIM, sign with relaxed canonicalization**: If a sender wants to sign their messages using Domain Keys Identified Mail (DKIM) and they want to send outbound mail through the service, they should sign using the relaxed header canonicalization algorithm. Signing with strict header canonicalization may invalidate the signature when it passes through the service.
+
+          - **Domain owners should have accurate information in the WHOIS database**: This configuration identifies the owners of the domain and how to contact them by entering the stable parent company, point of contact, and name servers.
+
+          - **Format outbound bounce messages**: When messages generate non-delivery reports (also known NDRs or bounce messages), senders should follow the format of a bounce as specified in [RFC 3464](https://www.ietf.org/rfc/rfc3464.txt).
+
+          - **Remove bounced email addresses for non-existent users**: If you receive an NDR indicating that an email address is no longer in use, remove the non-existent email alias from your list. Email addresses change over time, and people sometimes discard them.
+
+          - **Use Outlook.com's Smart Network Data Services (SNDS) program**: For more information, see [Smart Network Data Service](https://sendersupport.olc.protection.outlook.com/snds/).
+
+      - question: |
+          How do I turn off spam filtering?
+        answer: |
+          If you use a third-party protection service or device to scan email before it's delivered to Microsoft 365, you can use a mail flow rule (also known as a transport rule) to bypass most spam filtering for incoming messages. For instructions, see [Use mail flow rules to set the spam confidence level (SCL) in messages](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl). Scanning for malware and high confidence phishing messages can't be skipped.
+
+          If you use a third-party protection service or device to scan email before it's delivered to Microsoft 365, you should also enable Enhanced Filtering for Connectors (also known as *skip listing*) so detection, reporting, and investigation features in Microsoft 365 are able to correctly identify messages sources. For more information, see [Enhanced Filtering for Connectors](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+
+          If you need to bypass spam filtering for SecOps mailboxes or phishing simulations, don't use mail flow rules. For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](skip-filtering-phishing-simulations-sec-ops-mailboxes.md).

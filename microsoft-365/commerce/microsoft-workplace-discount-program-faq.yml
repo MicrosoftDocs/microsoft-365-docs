@@ -1,0 +1,146 @@
+### YamlMime:FAQ
+metadata:
+  title: "Microsoft Workplace Discount Program FAQ"
+  author: cmcatee-MSFT
+  ms.author: cmcatee
+  manager: scotv
+  ms.reviewer: jamitche, jobailey
+  audience: Admin
+  ms.topic: faq
+  ms.service: microsoft-365-business
+  ms.localizationpriority: medium
+  ms.collection: 
+  - Tier2
+  - scotvorg
+  - M365-subscription-management
+  - Adm_O365
+  ms.custom: 
+  - commerce_subscriptions
+  - okr_SMB
+  - AdminSurgePortfolio
+  search.appverid: MET150 
+  description: "Frequently-asked questions (FAQ) about the Microsoft Workplace Discount Program."
+  ms.date: 07/19/2022
+title: Microsoft Workplace Discount Program frequently-asked questions (FAQ)
+summary: |
+  Volume Licensing customers use the Microsoft Workplace Discount Program (formerly known as the Home Use Program, or HUP) in the [Microsoft Store for Business website](https://go.microsoft.com/fwlink/?linkid=2139192) or in the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339).
+  
+  All other customers access the Workplace Discount Program by using this step:
+  
+  - In the Microsoft admin center, go to the **Billing** > [**Your products** page](https://go.microsoft.com/fwlink/p/?linkid=842054), select the **Benefits** tab, and then select the **Benefit name** for Microsoft Workplace Discount Program.
+  
+
+sections:
+  - name: Ignored
+    questions:
+      - question: |
+          What is the Microsoft Workplace Discount Program?
+        answer: |
+          The Microsoft Workplace Discount Program lets employees at eligible companies buy Microsoft consumer products at a discount. You can check the current discounts for each product offering by visiting the [Workplace Discount Program product page](https://www.microsoft.com/workplace-discount-program).
+          
+      - question: |
+          In which markets is the Workplace Discount Program offered?
+        answer: |
+          Discounts on Microsoft 365 Family and Personal subscriptions are offered to eligible companies worldwide with these exceptions:
+          
+          - Lebanon, Macao SAR, Russia and Venezuela: This offer is not available in these markets.
+          - China and Hong Kong SAR: a one-year subscription is available in these markets. For China, visit [Microsoft 365 in China](https://www.microsoftstore.com.cn/home-use-program/invite). For Hong Kong SAR, visit [Buy Microsoft 365 at a discounted price](https://www.microsoftestore.com.hk/partner/hup?locale=en_HK).
+          - Discounts on select Surface devices and accessories are offered to eligible companies in select markets. 
+          
+      - question: |
+          How does an organization qualify for Microsoft Workplace Discount Program benefits?
+        answer: |
+          For employees to take advantage of the Microsoft Workplace Discount Program benefit, they must have a valid corporate email address and an active Microsoft Account, and your organization must meet one of the following criteria:
+          
+          - Customers who have active Software Assurance for qualifying Microsoft 365 apps
+          - Customers who have Microsoft 365/Microsoft 365 E3/E5 From Software Assurance
+          - Commercial and government customers who have purchased 2,000 or more licenses of one or a mix of Microsoft 365 E3/E5
+          - Education and non-profit customers
+          - Commercial and government customers who have spent $250,000 USD or more in the previous 12 months on eligible Power BI, Microsoft 365, Surface devices & accessories, Windows and Enterprise Mobility 
+          
+      - question: |
+          What happened to the Home Use Program?
+        answer: |
+          The Microsoft Home Use Program is still available. The name of the program has changed to the Microsoft Workplace Discount Program. Any previously purchased discounted products are not affected by the change in the program name.  You'll continue to receive discounted rates on qualified subscriptions, provided you keep auto-renewal turned on.
+
+      - question: |
+          Why do I have to create an Azure Active Directory (AAD) account to use the Workplace Discount Program?
+        answer: |
+          To update and modernize the Workplace Discount Program to a broader range of license and product benefits, we changed the way we fulfill the program. Microsoft Store for Business is used for eligibility validation and to assign the benefits, and relies on AAD to connect information from VLSC and to validate the email domains your organization's employees are on. For more information, see [Sign up for Microsoft Store for Business or Microsoft Store for Education](/microsoft-store/sign-up-microsoft-store-for-business#o365-welcome). Alternatively, you can use the **Benefits** tab on the **Your products** page of the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339) to manage the program benefits.
+          
+      - question: |
+          How do I become the assigned IT Admin of a managed tenant?
+        answer: |
+          You must create a special record in DNS to prove you own your company domain, for example, contoso.com.
+          
+          For a step-by-step process for becoming a managed tenant, see [Take over an unmanaged directory as administrator in Azure Active](/azure/active-directory/users-groups-roles/domains-admin-takeover).
+          
+      - question: |
+          What resources are available to help promote the Workplace Discount Program benefit to employees?
+        answer: |
+          Use the resources located on the [Workplace Discount Program](http://www.microsoft.com/workplace-discount-program/employer-resources) home page to help you promote the program to your employees. You'll find digital and printable flyers, verbiage for use in emails and newsletters, and guidance on how to best promote the Workplace Discount Program.
+         
+      - question: |
+          What are the steps for an eligible employee to make a Microsoft Workplace Discount Program purchase?
+        answer: |
+          1. **Sign Up** Go to the [Microsoft Workplace Discount Program page](http://www.microsoft.com/workplace-discount-program), and select the **Get Started** button. Employees enter their corporate email address.
+          2. **Confirm**  An email is sent to their corporate email address inbox with a link that authenticates their eligibility for the program.
+          3. **Sign In** After they have been authenticated, they begin the purchase process by providing the Microsoft account that's associated with their personal email address, which allows them to view the discounts on products available to them based on the organization's Workplace Discount Program benefit. For more info, see [How to sign in to your Microsoft account](https://support.microsoft.com/help/4028195/microsoft-account-sign-in).
+          4. **Shop** The purchase is processed and completed in the Microsoft Store.
+          
+      - question: |
+          If an employee subscribes to Microsoft 365 through the Microsoft Workplace Discount Program, how does this impact our organization's Microsoft 365 business subscription and device limit?
+        answer: |
+          Installs made through the Workplace Discount Program have no impact on your organization's Microsoft 365 business subscription. When employees activate Microsoft 365 on their personal devices, they use their personal Microsoft account, not their work account. Your organization's IT administrators don't manage or support any purchases made through the Workplace Discount Program.
+
+      - question: |
+          I'm having trouble managing my organization's Microsoft Workplace Discount Program benefit. Where can I get support?
+        answer: |
+          For support for issues migrating from the Volume Licensing Service Center or to access Microsoft Store for Business, see [VLSC Support](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0).
+          
+          For issues viewing the benefit after you have already accessed Microsoft Store for Business, see [Store for Business Admin support](/microsoft-store/)
+          
+      - question: |
+          What if my employees have questions about this program or need support with purchasing and installation?
+        answer: |
+          If employees have questions, refer them to the following resources:
+          
+          - [Post purchase and installation FAQ](https://www.microsoft.com/microsoft-365/microsoft-365-for-home-and-school-faq?rtc=1)
+          - [Workplace Discount Program Employee FAQ](http://www.microsoft.com/workplace-discount-program/faq)
+          
+           For help with technical issues, see [Microsoft Support](https://support.microsoft.com/). You'll find help for:
+          
+          - Order status
+          - Billing
+          - Installing Microsoft 365
+          - Signing in to Microsoft 365
+
+      - question: |
+          Why should my company participate in the Workplace Discount Program?
+        answer: |
+          The Workplace Discount Program helps your company maximize the return on their Microsoft investment. Benefits of participating in the program include: 
+
+          - Reducing the need for IT training 
+          - Lowering help desk and training costs 
+          - Allowing employees to get familiar with Microsoft 365 at home 
+          - Increasing software proficiency, which can increase productivity 
+      
+      - question: |
+          How does the Microsoft Workplace Discount Program benefit employees?
+        answer: |
+          When employees purchase Microsoft 365 products at a significant discount, they're able to use the same software at home that they use at the office. This helps boost their productivity, improve their skills, and enhance job satisfaction.
+      
+      - question: |
+          What happens when an employee leaves the company?
+        answer: |
+          For employees who qualify for the Microsoft 365 subscription offer and have purchased through the program, the discounted price applies for as long as the employee's subscription remains active, regardless of their employment status with your organization. 
+
+additionalContent: |
+
+  ## Related content
+    [Microsoft Workplace Discount Program FAQs](http://www.microsoft.com/workplace-discount-program/faq). (article)\
+    [Microsoft Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx?wa=wsignin1.0) (link page)\
+    [Microsoft Store for Business Admin support](/microsoft-store/) (link page)\
+    [Microsoft Store for Business](https://go.microsoft.com/fwlink/?linkid=2139192) (link page)\
+    [Workplace Discount Program employee store](http://www.microsoft.com/workplace-discount-program/faq) (link page)\
+    [Microsoft Licensing: Workplace Discount Program overview](https://www.microsoft.com/licensing/licensing-programs/software-assurance-by-benefits?activetab=software-assurance-by-benefits-tab:primaryr4) (link page)

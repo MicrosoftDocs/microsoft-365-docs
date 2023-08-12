@@ -1,0 +1,50 @@
+    - name: Microsoft 365 LTI 
+      href: index.md
+    - name: Microsoft LMS Gateway management
+      href: manage-microsoft-one-lti.md
+    - name: Allow browser cookies for LMS URLs
+      href: browser-cookies.md
+    - name: Canvas integrations
+      items:
+      - name: Use Microsoft OneDrive LTI with Canvas 
+        href: onedrive-lti.md
+      - name: Use Microsoft Teams classes with Canvas 
+        href: teams-classes-with-canvas.md
+      - name: Use Microsoft Teams meetings with Canvas 
+        href: teams-meetings-with-canvas.md
+    - name: Blackboard integrations
+      items:
+      - name: Use Microsoft OneDrive LTI with Blackboard
+        href: onedrive-lti-blackboard.md
+      - name: Use Microsoft Teams meetings with Blackboard Learn
+        href: teams-meetings-with-blackboard-learn.md
+      - name: Use Microsoft Teams classes with Blackboard Learn Ultra 
+        href: teams-classes-with-blackboard.md
+    - name: Moodle integrations
+      items:
+      - name: Set up and configure the Moodle plugin
+        href: moodle-plugin-configuration.md
+      - name: Use Microsoft Teams classes and meetings with Moodle
+        href: teams-classes-meetings-with-moodle.md
+    - name: Open LMS integrations
+      items:
+      - name: Set up and configure the Moodle plugin for Open LMS
+        href: open-lms-plugin-configuration.md
+      - name: Use Microsoft Teams classes and meetings with Open LMS
+        href: open-lms-teams-classes-and-meetings.md
+    - name: Desire2Learn Brightspace integrations
+      items:
+      - name: Use Microsoft Teams classes and meetings with Brightspace
+        href: teams-classes-meetings-with-brightspace.md
+      - name: Use Microsoft OneDrive LTI with Brightspace
+        href: onedrive-lti-brightspace.md
+    - name: Schoology Learning integrations
+      items:
+      - name: Use Microsoft OneDrive LTI with Schoology Learning
+        href: onedrive-lti-schoology.md
+      - name: Use Microsoft Teams meetings with Schoology Learning
+        href: teams-classes-and-meetings-with-schoology.md
+    - name: Other LMS integrations
+      items:
+      - name: Use Microsoft Teams Meetings LTI with any LTI 1.3 compliant LMS
+        href: integrate-with-other-lms.md

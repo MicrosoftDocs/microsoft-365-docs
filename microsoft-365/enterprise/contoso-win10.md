@@ -1,31 +1,32 @@
 ---
 title: "Windows 10 Enterprise deployment for Contoso"
-author: JoeDavies-MSFT
-ms.author: josephd
-manager: laurawi
+author: kelleyvice-msft
+f1.keywords:
+- NOCSH
+ms.author: kvice
+manager: scotv
 ms.date: 09/13/2018
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
-localization_priority: Priority
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
 ms.collection: 
+- scotvorg
 - M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom:
 
-description: Understand how Contoso used System Center Configuration Manager to deploy in-place upgrades for Windows 10 Enterprise.
+description: Understand how Contoso used Microsoft Endpoint Configuration Manager to deploy in-place upgrades for Windows 10 Enterprise.
 ---
 
 # Windows 10 Enterprise deployment for Contoso
 
-**Summary:** Understand how Contoso used System Center Configuration Manager to deploy in-place upgrades for Windows 10 Enterprise.
-
-Prior to the wide rollout of Microsoft 365 Enterprise, Contoso had Windows-compatible PCs and devices running a mixture of Windows 7 (10%), Windows 8.1 (65%), and Windows 10 (25%). Contoso wanted to upgrade their PCs for Windows 10 Enterprise take advantage of improved security and lowered IT overhead from automated deployments of updates. 
+Prior to the wide rollout of Microsoft 365 for enterprise, Contoso had Windows-compatible PCs and devices running a mixture of Windows 7 (10%), Windows 8.1 (65%), and Windows 10 (25%). Contoso wanted to upgrade their PCs for Windows 10 Enterprise take advantage of advanced security and lowered IT overhead from automated deployments of updates. 
 
 After assessing their infrastructure and business needs, Contoso identified these key requirements for the deployment:
 
 - As many PCs and devices as possible should run Windows 10 Enterprise
-- Rollout of the in-place upgrades leverages existing System Center Configuration Manager infrastructure
+- Rollout of the in-place upgrades leverages existing Configuration Manager infrastructure
 - Control over which versions of Windows 10 Enterprise to deploy and updates are done through rings
 - PCs and devices should stay up to date with minimal IT administrative costs and with minimal impact to end-users
 
@@ -41,25 +42,17 @@ Prior to and during in-place upgrades of Windows 10 Enterprise, Contoso used the
 
 - Update Compliance  
 
-  Collects system and diagnostics data including update installation progress, Windows Update for Business (WUfB) configuration data, Windows Defender Antivirus data, and other update-specific information, and then stores this data in the cloud analysis and usage.
+  Shows you the state of your devices with respect to the Windows updates so that you can ensure that they are on the most current updates as appropriate.
 
 - Device Health  
 
-  Collects Windows 10 system and diagnostic data including update installation progress, Windows Update for Business (WUfB) configuration data, Windows Defender Antivirus data, and other update-specific information, and then stores this data in the cloud analysis and usage.
+  Identifies devices that crash frequently, and therefore might need to be rebuilt or replaced and device drivers that are causing device crashes, with suggestions of alternative versions of those drivers that might reduce the number of crashes. Provides notification of Windows Information Protection misconfigurations that send prompts to end users.
  
-Contoso has an existing System Center Configuration Manager (Current Branch) infrastructure. Configuration Manager scales for large environments and provides extensive control over installation, updates, and settings. It also has built-in features to make it easier and more efficient to deploy and manage Windows 10 Enterprise.
+Contoso has an existing Configuration Manager (Current Branch) infrastructure. Configuration Manager scales for large environments and provides extensive control over installation, updates, and settings. It also has built-in features to make it easier and more efficient to deploy and manage Windows 10 Enterprise.
 
 ## Planning process
 
-Prior to deployment, Contoso defined the following rings:
-
-- Three rings for validation and deployment staging 
-  - One for preview builds 
-  - One for new release builds
-  - One for a previous build 
-- One ring for broad deployment of Windows 10 Enterprise based on data from the validation rings
-
-Contoso also used the Upgrade Readiness solution of Windows Analytics to determine the set of installed apps and their compatibility with Windows 10 Enterprise.
+Contoso used the Upgrade Readiness in Windows Analytics to determine the set of installed apps and their compatibility with Windows 10 Enterprise.
 
 ## Deployment process
 
@@ -67,34 +60,32 @@ To complete the in-place upgrade deployment of Windows 10 Enterprise, Contoso im
 
 1. Enabled peer cache for Configuration Manager.
 2. Created customized Windows packages based on images from the Volume Licensing Service Center.
-3. Used Configuration Manager to deploy the Windows packages to distribution points across their network and deployed builds to the three validation and deployment staging rings.
+3. Used Configuration Manager to deploy the Windows packages to distribution points across their network and deployed builds to the three validation and deployment staging groups.
 4. Performed assessment of success for PCs and devices in the three validation and deployment staging rings using the Device Health and Update Compliance solutions of Windows Analytics.
-5. Based on the Windows Analytics information, Contoso determined the version of Windows 10 Enterprise to deploy to the broad deployment ring.
-6. Ran the Configuration Manager deployment task sequences to deploy the selected Windows package to the broad deployment ring.
-7. Monitored PCs and devices in the broad deployment ring using the Device Health and Update Compliance solutions provided by Windows Analytics to address issues.
+5. Based on the Windows Analytics information, Contoso determined the version of Windows 10 Enterprise to deploy to the broad deployment group.
+6. Ran the Configuration Manager deployment task sequences to deploy the selected Windows package to the broad deployment group.
+7. Monitored PCs and devices in the broad deployment group using the Device Health and Update Compliance solutions to address issues.
 
-Figure 1 shows the in-place upgrade and ongoing updates deployment architecture.
+Here is Contoso’s in-place upgrade and ongoing updates deployment architecture.
 
-![](./media/contoso-win10/contoso-win10-fig1.png)
- 
-**Figure 1: Contoso’s Windows 10 Enterprise deployment infrastructure**
+![Contoso’s Windows 10 Enterprise deployment infrastructure.](../media/contoso-win10/contoso-win10-fig1.png)
 
 This infrastructure consists of:
 
-- System Center Configuration Manager, which:
+- Configuration Manager, which:
   - Obtains images for Windows 10 Enterprise packages from the Microsoft Volume Licensing Center in the Microsoft Network.
   - Is the central administration point for deployment packages.
-- Regional distribution points that are typically located in Contoso’s satellite offices.
-- Windows PCs and devices in various locations that receive and install the deployment packages for the in-place upgrade or ongoing updates based on ring membership.
+- Regional distribution points that are typically located in Contoso’s regional hub offices.
+- Windows PCs and devices in various locations that receive and install the deployment packages for the in-place upgrade or ongoing updates based on group membership.
 
 ## Next step
 
-[Learn](contoso-o365pp.md) how Contoso is leveraging its System Center Configuration Manager infrastructure to deploy and keep current Office 365 ProPlus across its organization. 
+Learn how Contoso is leveraging its Configuration Manager infrastructure to [deploy and keep current Microsoft 365 Apps for enterprise](contoso-o365pp.md) across its organization. 
 
 ## See also
 
-[Windows 10 Enterprise for Microsoft 365 Enterprise](windows10-infrastructure.md)
+[Windows 10 Enterprise](/windows/deployment/)
 
-[Deployment guide](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
 [Test lab guides](m365-enterprise-test-lab-guides.md)

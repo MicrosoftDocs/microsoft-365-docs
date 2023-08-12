@@ -1,0 +1,148 @@
+### YamlMime:FAQ
+metadata:
+  ms.date: 06/18/2021
+  title: "Basic Mobility and Security frequently-asked questions (FAQs)"
+  f1.keywords:
+  - NOCSH
+  ms.author: kwekua
+  author: kwekua
+  manager: scotv
+  audience: Admin
+  ms.topic: faq
+  ms.service: microsoft-365-business
+  ms.localizationpriority: medium
+  ms.collection: 
+  - Tier3
+  - scotvorg
+  - M365-subscription-management
+  - Adm_O365
+  - Adm_TOC
+  ms.custom:
+  - AdminSurgePortfolio
+  - admindeeplinkEXCHANGE
+  search.appverid:
+  - MET150
+  description: "Frequently-asked questions about Basic Mobility and Security."
+title: Basic Mobility and Security frequently-asked questions (FAQs)
+summary: This article contains frequently asked questions about Basic Mobility and Security, a feature that helps you manage and secure mobile devices in Microsoft 365. If you can't find an answer to your question, let us know by leaving a comment on the page so we can consider adding your question to this article.
+
+
+sections:
+  - name: Ignored
+    questions:
+      - question: |
+          How can I get Basic Mobility and Security? I don't see it in the Microsoft 365 admin center
+        answer: |
+          1.  Activate Basic Mobility and Security by going to the [home page](https://compliance.microsoft.com/basicmobilityandsecurity/).
+          
+      - question: |
+          How can I get started with device management in Basic Mobility and Security?
+        answer: |
+          There are four steps to getting started with Basic Mobility and Security: 
+          
+          1. Activate Basic Mobility and Security by going to the [home page](https://compliance.microsoft.com/basicmobilityandsecurity/).
+          
+          2. Select Policies and then select Create. Create device management policies, and apply them to groups of users that are set up in security groups. We recommend that you start by deploying the policies to a small test group. For more info, see [Create device security policies in Basic Mobility and Security](create-device-security-policies.md).
+          
+          3. Users who have had a policy applied to them are prompted to enroll their devices when they try to access Microsoft 365 data. For more info, see [Enroll your mobile device using Basic Mobility and Security](enroll-your-mobile-device.md).
+          
+          For more details, see [Set up Basic Mobility and Security](set-up.md).
+          
+      - question: |
+          I’m trying to set up Basic Mobility and Security but it seems stuck. The Microsoft 365 Service Health has been showing “provisioning” for a while. What can I do?
+        answer: |
+          It may take some time to get the service ready for you. When provisioning is complete, you'll see the Basic Mobility and Security page. If you've waited 24 hours and the status is still provisioning, please contact Support and we'll help figure out what the issue is.
+
+      - question: |
+          I’m running into issues when I try to enroll a device in Basic Mobility and Security. What can I do?
+        answer: |
+          To start, check the following:
+
+          - Make sure that the device isn't already enrolled with another mobile device management provider, such as Intune.
+
+          - Make sure that the device is set to the correct date and time.
+
+          - Switch to a different WIFI or cellular network on the device.
+
+          - For Android or iOS devices, uninstall and reinstall the Intune Company Portal app on the device.
+
+      - question: |
+          I’m having issues setting up Basic Mobility and Security on my iOS phone or tablet. What can I do?
+        answer: |
+          - Make sure that you've set up an APNs certificate. For more info, see [Create an APNs Certificate for iOS devices](create-an-apns-certificate-for-ios-devices.md).
+
+          - In **Settings** > **General** > **Profile (or Device Management)**, make sure that a Management Profile is not already installed. If it is, remove it.
+
+          - If you see the error message, "Device failed to enroll," sign in to Microsoft 365 and make sure that a license that includes Exchange Online has been assigned to the user who is signed in to the device.
+
+          - If you see the error message, "Profile failed to install," try one of the following:
+
+            - Make sure that Safari is the default browser on the device, and that cookies aren't disabled.
+
+            - Reboot the device, and then navigate to portal.manage.microsoft.com. Sign in with your Microsoft 365 user ID and password, and attempt to install the profile manually.
+
+      - question: |
+          I’m having issues setting up Basic Mobility and Security on Windows RT. What can I do?
+        answer: |
+          - Make sure that your domain is set up in Microsoft 365 to work with Basic Mobility and Security. For more info, see [Set up Basic Mobility and Security](set-up.md).
+    
+          - Make sure that the user is choosing **Turn On** rather than choosing **Join**.
+
+      - question: |
+          I’m having issues setting up Basic Mobility and Security on Windows 10 PC. What can I do?
+        answer: |
+          - Make sure that your domain is set up in Microsoft 365 to work with Basic Mobility and Security. For more info, see [Set up Basic Mobility and Security](set-up.md).
+    
+          - Unless you have Azure Active Directory Premium, make sure that the user is choosing **Enroll in Device Management only** rather than choosing **Connect**.
+
+      - question: |
+          I’m having issues setting up Basic Mobility and Security on Android phone or tablet. What can I do?
+        answer: |
+          - Make sure the device is running Android.
+
+          - Make sure that Chrome is up to date and is set as the default browser.
+
+          - If you see the error message, "We couldn't enroll this device," sign in to Microsoft 365 and make sure that a license that includes Exchange Online has been assigned to the user who is signed in to the device.
+
+          - Check the Notification Area on the device to see if any required end-user actions are pending, and if they are, complete the actions.
+
+      - question: |
+          What can I do if device enrollment fails?
+        answer: |
+          If you're having trouble getting a device enrolled, first check the following:
+          
+          - Make sure that the device isn't already enrolled with another mobile device management provider, such as Intune.
+          
+          - Make sure that the device is set to the correct date and time.
+          
+          - Switch to a different WIFI or cellular network on the device.
+          
+          - For Android or iOS devices, uninstall and reinstall the Intune Company Portal app on the device.
+          
+      - question: |
+          What's the difference between Intune and Basic Mobility and Security?
+        answer: |
+          Basic Mobility and Security is hosted by the Intune service. It is a subset of Intune services provided as an added benefit to Microsoft 365 and is a built-in cloud-based solution for managing devices in your organization. For a side-by-side comparison of the two services to help you decide if using Intune or Basic Mobility and Security for Microsoft 365 is the best fit for you, see [Choose between Basic Mobility Security and Intune](choose-between-basic-mobility-and-security-and-intune.md).
+          
+      - question: |
+          How do policies work for Basic Mobility and Security? How do I set them up? Disable them?
+        answer: |
+          After you complete initial setup for Basic Mobility and Security, you create policies and apply them to groups of users in the Security & Compliance Center. Policies require users of the policies to enroll their devices in Basic Mobility and Security before the device can be used to access Microsoft 365 data. The policies that you set up determine settings for mobile devices, for example, how often passwords must be reset or whether data encryption is required. For more information, see [Create device security policies in Basic Mobility and Security](create-device-security-policies.md) and [Microsoft Purview compliance portal](../../compliance/microsoft-365-compliance-center.md).
+          
+          For step-by-step instructions for creating and deploying device policies, see [Create device security policies in Basic Mobility and Security](create-device-security-policies.md).
+          
+          If you want to exclude a specific group of users from being affected by policies, you can add a group to the exclusion group.
+          
+      - question: |
+          Can I switch from Exchange ActiveSync device management to Basic Mobility and Security for Microsoft 365?
+        answer: |
+          If you’re already using Exchange ActiveSync policies to manage mobile devices, you can start using Basic Mobility and Security by following the steps to set up Basic Mobility and Security. For more information, see [Protect user and device access](../../compliance/protect-access-to-data-and-services.md) and [Set up Basic Mobility and Security](set-up.md).
+          
+          When you apply the policies that you create in Basic Mobility and Security to groups of users, these policies override Exchange ActiveSync mobile device mailbox policies and device access rules that you've previously created in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a> for those users.
+          
+          After a device is enrolled in Basic Mobility and Security, any Exchange ActiveSync mobile device mailbox policy or device access rule applied to the device is ignored.
+          
+      - question: |
+          I set up Basic Mobility and Security but now I want to remove it. What are the steps?
+        answer: |
+          Unfortunately, you can't simply "unprovision" Basic Mobility and Security after you've set it up. But you can remove it for groups of users by removing user security groups from the device policies you've created. Or, you can disable it for everyone by removing the device policies so they aren't in place and aren't enforced. For more info, see [Turn off Basic Mobility and Security](turn-off.md).

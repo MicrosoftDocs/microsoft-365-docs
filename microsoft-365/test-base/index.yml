@@ -1,0 +1,69 @@
+### YamlMime:Landing
+
+title: Test Base for Microsoft 365 documentation # < 60 chars
+summary: Test Base for Microsoft 365 is an Azure service that facilitates data-driven testing of applications. Backed by the power of data and the cloud, it enables IT professionals to take advantage of intelligent testing from anywhere in the world. It will help you test your applications without the hassle, time commitment, and expenditure of setting up and maintaining complex test environments. Most importantly, it will give you access to pre-release Windows Updates on secure virtual machines (VMs) and world-class intelligence for your applications. # < 160 chars
+
+metadata:
+  title: Test Base for M365 documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Test Base for Microsoft 365 is an Azure service that facilitates data-driven testing of applications. Backed by the power of data and the cloud, it enables IT professionals to take advantage of intelligent testing from anywhere in the world. # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: service #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.subservice: subservice # Optional; Remove if no subservice is used.
+  ms.topic: landing-page # Required
+  ms.collection: collection # Optional; Remove if no collection is used.
+  author: v-zhifufeng #Required; your GitHub user alias, with correct capitalization.
+  ms.author: v-zhifufeng #Required; microsoft alias of author; optional team alias.
+  ms.date: 03/29/2021 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: About Test Base 
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Test Base?
+            url: overview.md
+      - linkListType: get-started
+        links:
+          - text: Create Test Base Account
+            url: createAccount.md
+      - linkListType: tutorial
+        links:
+          - text: additional-resources
+            url: faq.md
+  # Card (optional)
+  - title: Get started
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Create Test Base Account
+            url: createaccount.md
+          - text: Test your application on Test Base
+            url: testoverview.md
+          - text: Build a Package
+            url: buildpackage.md
+          - text: Clone an existing package
+            url: clonepackage.md
+          - text: Test Package Guidelines
+            url: contentguideline.md
+          - text: Understand your usage cost
+            url: usagecost.md
+          - text: Memory Regression Analysis
+            url: memory.md
+          - text: CPU Regression Analysis
+            url: cpu.md
+ # Card (optional)
+  - title: Get references
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Test Base for Microsoft 365 Product Terms
+            url: /legal/test-base/testbase-for-m365-product-terms
+          - text: Test Base for Microsoft 365 Product Terms Change History
+            url: /legal/test-base/testbase-for-m365-product-terms-changehistory
+          - text: Frequently Asked Questions
+            url: faq.md 
+   

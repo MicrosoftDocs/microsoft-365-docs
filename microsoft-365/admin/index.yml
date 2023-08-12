@@ -1,0 +1,116 @@
+### YamlMime:Hub
+
+title: Microsoft 365 admin center help # < 60 chars
+summary: Explore resources for working in the Microsoft 365 admin center.
+# brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
+brand: m365
+
+metadata:
+  title: Microsoft 365 admin center help # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Set up and manage Microsoft 365 in the Microsoft 365 admin center. # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: microsoft-365-business #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: hub-page # Required
+  author: kwekua #Required; your GitHub user alias, with correct capitalization.
+  ms.author: kwekua #Required; microsoft alias of author; optional team alias.
+  ms.date: 08/26/2022
+  ms.localizationpriority: high
+  ms.custom: 
+  - VSBFY23
+  - AdminSurgePortfolio
+  - intro-hub-or-landing
+  ms.collection: 
+  - ContentEngagementFY23
+  - scotvorg
+  - highpri
+  - Adm_TOC
+
+# highlightedContent section (optional)
+# Maximum of 8 items
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+  items:
+    # Card
+    - title: Office 365 is now Microsoft 365!
+      itemType: whats-new
+      url: new-subscription-names.md
+    # Card
+    - title: What's new in the Microsoft 365 admin center!
+      itemType: whats-new
+      url: whats-new-in-preview.md
+    # Card
+    - title: Stay on top of Microsoft 365 changes
+      itemType: how-to-guide
+      url: manage/stay-on-top-of-updates.md
+
+# productDirectory section (optional)
+productDirectory:
+  title: Get started # < 60 chars (optional)
+  summary: Set up your subscription and email, add users, and install apps. # < 160 chars (optional)
+  items:
+    # Card
+    - title: Small business help & learning
+      imageSrc: /office/media/icons/education-tutorial-blue.svg
+      summary: Explore all the Microsoft 365 help resources a small business needs. 
+      url: https://go.microsoft.com/fwlink/?linkid=2224585
+    # Card
+    - title: YouTube - Microsoft 365 help for small businesses
+      # need to pick new image for this
+      imageSrc: /office/media/icons/video-play.svg
+      summary: Learn how to set up and manage Microsoft 365 for your business with short videos.
+      url: https://go.microsoft.com/fwlink/?linkid=2197659
+    # Card
+    - title: Get started
+      imageSrc: /office/media/icons/sign-up-blue.svg
+      summary: Sign up and set up Microsoft 365.
+      url: admin-overview/sign-up-for-office-365.md
+    # Card
+    - title: Install apps
+      imageSrc: /office/media/icons/deploy-blue.svg
+      summary:  Install Microsoft 365 apps.
+      url: setup/install-applications.md
+    # Card
+    - title: Migrate data
+      imageSrc: /office/media/icons/migration-blue.svg
+      summary: Move your data from another service to Microsoft 365.
+      url: setup/migrate-email-and-contacts-admin.md
+
+# additionalContent section (optional)
+# Card with summary style
+additionalContent:
+  # Supports up to 3 sections
+  sections:
+    - title: Manage # < 60 chars (optional)
+      summary: Manage your subscription, services, and users, secure your business, and get help troubleshooting. # < 160 chars (optional)
+      items:
+        # Card
+        - title: Overview of the Microsoft 365 admin center
+          summary: Learn about admin roles, how to stay on top of changes, and how to customize your subscription. 
+          url: admin-overview/admin-center-overview.md
+        # Card
+        - title: Users and groups
+          summary: Manage passwords, add and remove users, set up and manage groups, manage guest access, and assign user licenses. 
+          url: add-users/add-users.md
+        # Card
+        - title: Email and calendars
+          summary: Manage email settings, distribution groups, and security settings, and set up shared mailboxes.
+          url: email/office-365-user-email-settings.md
+        # Card
+        - title: Domains
+          summary: Learn about domains, set up and manage domains, and update DNS records.
+          url: setup/add-domain.md    
+        # Card
+        - title: Your data and service
+          summary: Monitor the status of your service, back up data, install add-ins, and upgrade to the latest apps.
+          url: activity-reports/activity-reports.md
+        # Card
+        - title: Subscriptions and billing
+          summary: Manage bills, subscriptions, and product licenses, update payment methods, and purchase additional services and storage.
+          url: ../commerce/index.yml
+        # Card
+        - title: Work with customers
+          summary: Share documents and use Teams to collaborate and meet.
+          url:  manage/share-calendars-with-external-users.md
+        # Card
+        - title: Troubleshoot
+          summary: Access resources to help you troubleshoot and fix problems with your Microsoft 365 products or services.
+          url: /office/troubleshoot/

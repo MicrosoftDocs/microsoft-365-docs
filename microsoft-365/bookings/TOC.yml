@@ -1,0 +1,53 @@
+- name: Microsoft Bookings
+  href: bookings-overview.md
+  items:
+  - name: Setup
+    items:
+    - name: Get access to Bookings
+      href: get-access.md
+    - name: Enter your business information
+      href: enter-business-information.md
+    - name: Define your service offerings
+      href: define-service-offerings.md
+    - name: Configure SMS text notifications
+      href: bookings-sms.md
+    - name: Add staff to Bookings
+      href: add-staff.md
+    - name: Schedule business closures and time off
+      href: schedule-closures-time-off-vacation.md
+    - name: Set your scheduling policies
+      href: set-scheduling-policies.md
+    - name: Customize and publish your booking page
+      href: customize-booking-page.md
+    - name: Create a manual booking
+      href: create-a-manual-booking.md
+    - name: Employee hours
+      href: employee-hours.md
+    - name: Add custom and required questions to the booking page
+      href: add-questions.md
+    - name: Set buffer time
+      href: set-buffer-time.md
+    - name: Manage group attendees in Bookings
+      href: manage-attendees-bookings.md
+    - name: Set language and time zone
+      href: set-language-time-zones.md
+  - name: Manage the Bookings app in Microsoft Teams
+    href: /microsoftteams/bookings-app-admin?bc=%2fmicrosoft-365%2fbookings%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fbookings%2ftoc.json
+  - name: Virtual visits with Microsoft Teams
+    href: /microsoftteams/expand-teams-across-your-org/bookings-virtual-visits
+  - name: Comparison chart - web app versus Teams app
+    href: comparison-chart.md
+  - name: Delete a booking calendar
+    href: delete-calendar.md
+  - name: Turn Microsoft Bookings on or off
+    href: turn-bookings-on-or-off.md
+  - name: Custom domain support in Bookings
+    href: custom-domain-support.md
+  - name: Reporting information for Microsoft Bookings
+    href: reporting-info.md
+  - name: Use Power Automate connectors
+    href: power-automate-integration.md
+  - name: Microsoft Bookings frequently asked questions (FAQ)
+    href: bookings-faq.yml
+  - name: Bookings with me
+    href: bookings-in-outlook.md

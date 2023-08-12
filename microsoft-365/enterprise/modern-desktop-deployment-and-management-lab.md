@@ -1,142 +1,122 @@
-﻿---
-title: Windows and Office Deployment Lab Kit
-ms.author: jogruszc
-author: JGruszczyk
-manager: jemed
-ms.date: 06/10/2019
+---
+title: Windows and Office 365 deployment lab kit
+f1.keywords:
+- NOCSH
+ms.author: aaroncz
+author: cdmm12
+manager: dougeby
+ms.reviewer: alainme
+ms.date: 05/11/2022
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
-localization_priority: Priority
-ms.collection: 
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
+ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-ms.custom: 
-description: Learn about and where to access the Windows and Office Deployment Lab Kit.
+ms.custom:
+description: Learn about where to access the Windows and Office Deployment Lab Kit.
 ---
 
-# Windows and Office Deployment Lab Kit
+# Windows and Office 365 deployment lab kit
 
-These downloadable hands-on labs focus on Windows 10 deployment and Office 365 deployment along with related configuration and management considerations post-deployment. This training is highly recommended for organizations preparing for Windows 7 end of life, but also applies if you’re currently using Windows 10 and Office 365 Plus or Office 2019. Included are guides for Windows 10, Office 365 ProPlus, Enterprise Mobility + Security and related products and services.
+The Windows and Office 365 deployment lab kits are designed to help you plan, test, and validate your deployment and management of desktops running Windows 10 Enterprise or Windows 11 Enterprise and Microsoft 365 Apps. The labs in the kit cover using Microsoft Intune and Microsoft Configuration Manager. This kit is highly recommended for organizations preparing for desktop upgrades. As an isolated environment, the lab is also ideal for exploring deployment tool updates and testing your deployment-related automation. The following lab kits are available for free download:  
 
-These labs are designed to help you plan, test and validate your deployment and management of desktops running Windows 10 Enterprise and Office 365 ProPlus. The labs cover the steps and tools outlined in the Desktop Deployment wheel, spanning System Center Configuration Manager, Desktop Analytics, Office Customization Tool, OneDrive, Windows Autopilot and more.
+[**Windows 10 lab**](https://info.microsoft.com/ww-landing-lab-kit.html)  
 
-As part of the [Desktop Deployment](http://www.aka.ms/howtoshift) process for Windows 10 and Office 365 ProPlus, building a sandboxed or isolated lab environment is the recommended starting point when you begin to explore deployment tool updates and test your deployment-related automation.
+[**Windows 11 lab**](https://info.microsoft.com/ww-landing-windows-11-office-365-lab-kit.html)  
 
-The lab kit is free to download and uses trial software.
+## A complete lab environment
 
-### [**Download the Windows and Office Deployment Lab Kit**](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
+The lab provides you with an automatically provisioned virtual lab environment, including domain-joined desktop clients, a domain controller, an internet gateway, and a fully configured Configuration Manager instance. The labs include evaluation versions of the following products:
 
-## **A complete lab environment**
+|Windows 10 Lab|Windows 11 Lab|
+|---|---|
+|Windows 10 Enterprise, Version 21H2|Windows 11 Enterprise, Version 22H2|
+|Microsoft Configuration Manager, Version 2103|Microsoft Configuration Manager, Version 2303|
+|Windows Assessment and Deployment Kit for Windows 10|Windows Assessment and Deployment Kit for Windows 11|
+|Windows Server 2019|Windows Server 2022|
 
-The lab provides you with an automatically provisioned virtual lab environment, including domain-joined desktop clients, domain controller, Internet gateway and a fully configured ConfigMgr instance. The lab contains Evaluation Versions of the following products:
+The labs are also designed to be connected to trials for:
 
-  - Windows 10 Enterprise, Version 1903
-  - Windows 7 Enterprise
-  - System Center Configuration Manager, Version 1902
-  - Windows Assessment and Deployment Kit for Windows 10, Version 1903
-  - Microsoft Deployment Toolkit
-  - Microsoft Application Virtualization (App-V) 5.1
-  - Microsoft BitLocker Administration and Monitoring 2.5 SP1
-  - Windows Server 2019
-  - Microsoft SQL Server 2017
+- Microsoft 365 E5
+- Microsoft 365 Apps for enterprise
+- Office 365 E5 with Enterprise Mobility + Security (EMS)
 
-PLUS, the lab is designed to be connected to trials for: 
+## Step-by-step labs
 
-  - Microsoft 365 Enterprise E5
+Detailed lab guides take you through multiple deployment and management scenarios. The labs have been updated for the latest versions of Intune and Configuration Manager. Note: A new Windows 11 version of the lab is now available. The lab guides include the following scenarios:
 
-Or
-  - Office 365 Enterprise E5
-  - Enterprise Mobility + Security
+### Plan and prepare infrastructure
 
-## **Step-by-step labs**
+- Cloud Management Gateway
+- Tenant attach and co-management
+- Endpoint analytics
+- Optimize update delivery
 
-Detailed lab guides take you through multiple deployment and management scenarios, including:
+### Deploy Windows
 
-### **Device and App Readiness**
+- OS deployment task sequences in Configuration Manager
+- Windows Autopilot
 
-  - Desktop Analytics
-  - Enterprise Mode and the Enterprise Mode Site List for Internet Explorer
+### Service Windows
 
-### **Directory and Network Readiness**
+- Servicing Windows using Group Policy
+- Servicing Windows using Microsoft Intune
+- Servicing Windows with Configuration Manager
 
-  - Basic setup for Azure Active Directory and Microsoft 365
-  - Network optimization using Delivery Optimization, Peer Cache in ConfigMgr and LEDBAT
-  - ConfigMgr and Microsoft Intune Co-Management
-  - Remote Access (VPN)
+### Manage Windows 
 
-### **Office and LOB App Delivery**
+- Device Management for Windows 11 using Microsoft Intune 
+- Dynamic Management with Windows 11 
+- Deploying Windows apps (Win32) with Intune
+- Remote Help
 
-  - Office 365 ProPlus deployment using System Center Configuration Manager
-  - Office 365 ProPlus deployment using Microsoft Intune
-  - App deployment and management using Microsoft Intune
-  - App deployment and self-service installation using Microsoft Store for Business
-  - Desktop Bridge application conversion to UWP
-  - Windows App Certification Kit
-  - Browser compatibility remediation using Enterprise Mode for IE
+### Deploy Microsoft 365 Apps for enterprise
 
-### **User File and Settings Migration**
+- Cloud managed deployment
+- Locally managed deployment
+- Microsoft 365 Apps deployment on Non-AD Joined Devices
+- Enterprise managed deployment using Configuration Manager
+- Enterprise managed deployment using Microsoft Intune
+- Servicing Microsoft 365 Apps for enterprise using Configuration Manager
+- Servicing Microsoft 365 Apps for enterprise using Intune
+- LOB Deployment and Management with Microsoft Intune
+- Deploy Microsoft Teams
+- Assignment filters
 
-  - User State Migration Tool as part of PC Refresh and Replacement Task Sequences in ConfigMgr and MDT
-  - OneDrive Known Folder Move
-  - Enterprise State Roaming
+### Managing Microsoft Edge
 
-### **Security and Compliance**
+- Deploy and Update Edge
+- IE Mode
+- Setup Enterprise New Tab Page
 
-  - BitLocker device encryption
-  - Windows Defender Antivirus
-  - Windows Hello for Business
-  - BIOS to UEFI conversion as an enabler for virtualization-based security
-  - Windows Defender Credential Guard
-  - Windows Defender Application Guard
-  - Windows Defender Exploit Guard
-  - Windows Defender Application Control
-  - Windows Defender Advanced Threat Protection
+### Security and Compliance
 
-### **OS Deployment and Feature Updates**
+- BitLocker
+- Microsoft Defender Antivirus
+- Windows Hello for Business
+- Windows Defender Credential Guard       
+- Microsoft Defender Application Guard     
+- Windows Defender Exploit Guard             
+- Windows Defender Application Control   
+- Microsoft Defender for Endpoint 
 
-  - OS image creation
-  - OS Deployment Task Sequences in ConfigMgr
-      - Bare Metal
-      - Refresh
-      - Replacement
-      - Upgrade
-  - OS Deployment Task Sequences in MDT
-  - Feature Updates using Upgrade Task Sequences in ConfigMgr
-  - Windows Autopilot
 
-### **Windows and Office Servicing**
+> [!NOTE]
+> Please use a broadband internet connection to download this content and allow approximately 30 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory and 300 GB of free space is recommended. The Windows client virtual machines expire 90 days after activation of the lab. New versions of the labs will be published on or before August 25, 2023. 
 
-  - Software update management using Configuration Manager
-  - Office 365 ProPlus update management in Configuration Manager
-  - Mobile Device Management applied to Windows 10 using Microsoft Intune
+## Additional guidance
 
-### [**Download the Windows and Office Deployment Lab Kit**](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
+- [Windows client deployment resources and documentation](/windows/deployment)
+- [Desktop Deployment series videos from Microsoft Mechanics](https://www.aka.ms/watchhowtoshift)
+- [Microsoft Configuration Manager OS Deployment](/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
+- [Deployment guide for Microsoft 365 Apps](/deployoffice/deployment-guide-microsoft-365-apps)
+- [Getting Started with Intune](/intune/get-started-evaluation)
 
-*Please use a broad bandwidth to download this content to enhance your downloading experience and allow 30-45 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory is recommended. The lab expires November 16, 2019. A new version will be published prior to expiration.*
+## Related resources
 
-## **Additional guidance**
-
-  - [Desktop Deployment Center](http://www.aka.ms/howtoshift)
-
-  - [Desktop Deployment series videos from Microsoft Mechanics](http://www.aka.ms/watchhowtoshift)
-
-  - [System Center Configuration Manager OS Deployment](https://docs.microsoft.com/en-us/sccm/osd/understand/introduction-to-operating-system-deployment)
-
-  - [<span class="underline">Plan for Windows 10 deployment</span>](https://docs.microsoft.com/windows/deployment/planning/index)
-
-  - [<span class="underline">Deployment guide for Office 365 ProPlus</span>](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
-
-  - [<span class="underline">Getting Started with Intune</span>](https://docs.microsoft.com/intune/get-started-evaluation)
-
-## **Related resources**
-
-  - [<span class="underline">Introducing Microsoft 365</span>](https://www.microsoft.com/microsoft-365/default.aspx)
-
-  - [<span class="underline">Office 365 for business</span>](https://products.office.com/business/office)
-
-  - [<span class="underline">Introducing Enterprise Mobility + Security</span>](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
-
-  - [<span class="underline">Windows 10 for enterprise</span>](https://www.microsoft.com/WindowsForBusiness/windows-for-enterprise)
-
-  - [<span class="underline">Windows 10 for small and medium business</span>](https://www.microsoft.com/WindowsForBusiness/windows-for-small-business)
+- [Introducing Microsoft 365](https://www.microsoft.com/microsoft-365/default.aspx)
+- [Microsoft 365 for business](https://products.office.com/business/office)
+- [Introducing Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
+- [Windows for business](https://www.microsoft.com/windows/business)

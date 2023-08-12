@@ -1,0 +1,182 @@
+### YamlMime:Landing
+
+title: Microsoft 365 solution and architecture center # < 60 chars
+summary: This solution and architecture center brings together the technical guidance you need to understand, plan, and implement integrated Microsoft 365 solutions for enterprise resource planning and secure and compliant modern collaboration.
+
+metadata:
+  title: Microsoft 365 solution and architecture center # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: This help center will enable you to learn about IT training and how to design the solution and architecture that is right for your organization. # Required; article description that is displayed in search results. < 160 chars.
+  ms.date: 07/25/2023
+  ms.service: o365-solutions
+ #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: landing-page # Required
+  ms.collection: 
+  - highpri
+  - m365-security-compliance
+  author: samanro #Required; your GitHub user alias, with correct capitalization.
+  ms.author: samanro #Required; microsoft alias of author; optional team alias.
+  manager: bcarter
+  audience: ITPro
+  ms.localizationpriority: high
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+
+  # Card 
+  - title: Foundational solution guides
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Set up your infrastructure for hybrid work
+            url: empower-people-to-work-remotely.md
+          - text: Set up secure collaboration with Microsoft 365
+            url: setup-secure-collaboration-with-teams.md
+          - text: Deploy ransomware protection 
+            url: ransomware-protection-microsoft-365.md
+          - text: Manage data privacy and data protection
+            url: data-privacy-protection.md
+          - text: Microsoft 365 for smaller businesses and campaigns
+            url: ../business-premium/index.md
+
+  # Card
+  - title: Architecture illustrations and design principles
+    linkLists:
+      - linkListType: architecture
+        links:
+          - text: Microsoft cloud architecture models
+            url: cloud-architecture-models.md
+          - text: Microsoft 365 productivity illustrations
+            url: productivity-illustrations.md
+          - text: Design principles
+            url: design-principles.md
+          - text: Infographics for your users
+            url: infographics-for-users.md
+          - text: Architecture icons and templates
+            url: architecture-icons-templates.md
+
+  # Card
+  - title: Administration and migration solution guides
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Tenant management
+            url: tenant-management-overview.md
+          - text: Remove a former employee
+            url: ../admin/add-users/remove-former-employee.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+          - text: Migrate your file shares to Microsoft 365
+            url: /sharepointmigration/mm-get-started?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+
+  # Card
+  - title: Meetings and communications solution guides
+    linkLists:
+      - linkListType: deploy
+        links:
+          - text: Plan and deploy a Teams Voice solution
+            url: deploy-voice.md
+      - linkListType: overview
+        links:
+          - text: Organizational communication
+            url: /sharepoint/corporate-communications-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+
+  # Card
+  - title: Teamwork and collaboration solution guides
+    linkLists:
+      - linkListType: deploy
+        links:
+          - text: Manage contracts for your business
+            url: ../contentunderstanding/solution-manage-contracts-in-microsoft-365.md
+      - linkListType: overview
+        links:
+          - text: Intelligent intranet
+            url: /sharepoint/intelligent-internet-overview
+          - text: Collaboration governance
+            url: collaboration-governance-overview.md
+          - text: File collaboration
+            url: /sharepoint/deploy-file-collaboration?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+          - text: OneDrive guide for enterprises
+            url: /onedrive/plan-onedrive-enterprise?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+
+  # Card
+  - title: Compliance solution guides
+    linkLists:
+      - linkListType: deploy
+        links:
+          - text: Insider risk solutions
+            url: /purview/insider-risk-solution-overview
+          - text: Auditing solutions
+            url: /purview/audit-solutions-overview
+          - text: eDiscovery (Premium)
+            url: /purview/ediscovery
+      - linkListType: reference
+        links:
+          - text: ISO - Recommended action plan
+            url: /compliance/regulatory/iso-action-plan?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+          - text: NIST - Recommended action plan
+            url: /compliance/regulatory/nist-action-plan?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+          - text: CCPA - Recommended action plan
+            url: /compliance/regulatory/ccpa-faq?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+          - text: GDPR - Recommended action plan
+            url: /compliance/regulatory/gdpr?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+
+  # Card
+  - title: Security solution guides
+    linkLists:
+      - linkListType: deploy
+        links:
+          - text: Top tasks for security teams to support working from home
+            url: ../security/top-security-tasks-for-remote-work.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+          - text: Microsoft 365 security for Business Decision Makers (BDMs)
+            url: ../security/microsoft-365-security-for-bdm.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+          - text: Identity and device access configurations
+            url: ../security/office-365-security/microsoft-365-policies-configurations.md
+          - text: Deploy Microsoft Defender for Endpoint
+            url: /windows/security/threat-protection/microsoft-defender-atp/deployment-phases
+          - text: Evaluate Microsoft 365 Defender
+            url: ../security/defender-endpoint/deployment-phases.md
+          - text: Security recommendations for priority accounts
+            url: ../security/office-365-security/priority-accounts-security-recommendations.md
+          - text: Evaluate Microsoft 365 Defender
+            url: ../security/defender-endpoint/deployment-phases.md
+      - linkListType: how-to-guide
+        links:
+          - text: Switch from a non-Microsoft endpoint protection solution to Microsoft Defender for Endpoint
+            url: ../security/defender-endpoint/switch-to-mde-overview.md
+          - text: Address false positives/negatives in Microsoft Defender for Endpoint
+            url: ../security/defender-endpoint/defender-endpoint-false-positives-negatives.md
+
+  # Card
+  - title: Workload resources
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: Contoso case studies
+            url: contoso-case-study-solutions.md
+      - linkListType: tutorial
+        links:
+          - text: Test lab guides
+            url: test-lab-guides-overview-solutions.md
+
+  # Card
+  - title: Industry-specific guidance
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Security and compliance for financial services
+            url: financial-services-secure-collaboration.md
+          - text: Security and compliance for energy and utility services
+            url: energy-secure-collaboration.md
+          - text: Microsoft 365 for frontline workers
+            url: ../frontline/flw-overview.md??bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+          - text: Microsoft 365 for Healthcare
+            url: ../frontline/teams-in-hc.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+          - text: Microsoft 365 for Retail
+            url: ../frontline/teams-for-retail-landing-page.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+          - text: Teams for Education
+            url: /MicrosoftTeams/expand-teams-across-your-org/teams-for-education-landing-page?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+          - text: Teams for Government
+            url: /MicrosoftTeams/expand-teams-across-your-org/teams-for-government-landing-page?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+          - text: Support remote government workers using Teams
+            url: /MicrosoftTeams/expand-teams-across-your-org/gov-support-remote-work-with-teams?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide

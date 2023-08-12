@@ -1,0 +1,8 @@
+- name: Microsoft 365 for business
+  tocHref: /business/
+  topicHref: /business/index
+  items:
+  - name: Microsoft 365 Business Premium
+    tocHref: /microsoft-365/business-premium/index
+    topicHref: /microsoft-365/business-premium/index
+    

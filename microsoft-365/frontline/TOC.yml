@@ -1,0 +1,190 @@
+- name: Microsoft 365 for frontline workers
+  href: index.yml
+  items:
+  - name: Get started with Microsoft 365 for frontline workers
+    href: flw-overview.md
+  - name: Choose your scenarios
+    href: flw-choose-scenarios.md
+  - name: Scenario posters
+    href: flw-scenario-posters.md
+  - name: Try Microsoft 365 for frontline workers
+    href: flw-trial.md
+  - name: Set up and configure
+    items:
+    - name: Overview
+      href: flw-deploy-overview.md
+    - name: Managers - get your team started
+      href: get-up-and-running.md
+    - name: Start with a pilot deployment
+      href: flw-pilot.md
+#    - name: Extend your pilot to a full deployment
+#      href: deploy-teams-at-scale.md 
+    - name: Set up Microsoft 365 and Teams
+      items: 
+      - name: Set up Microsoft 365 and related services
+        href: flw-setup-microsoft-365.md
+      - name: Choosing between dynamic and static frontline teams
+        href: frontline-team-options.md
+      - name: Deploy frontline dynamic teams at scale
+        href: deploy-dynamic-teams-at-scale.md
+      - name: Deploy frontline static teams at scale with PowerShell
+        href: deploy-teams-at-scale.md
+    - name: Manage devices
+      items:
+      - name: Manage shared and personal devices
+        href: flw-devices.md
+      - name: Sign in to Teams
+        href: /microsoftteams/sign-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+      - name: Sign out of Teams
+        href: /microsoftteams/sign-out-of-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+    - name: Configure Teams settings for frontline workers
+      items: 
+      - name: Tailor Teams apps for your frontline workers
+        href: pin-teams-apps-based-on-license.md
+      - name: Teams policy packages for frontline managers and workers
+        href: /microsoftteams/policy-packages-flw?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+      - name: Secure messaging
+        href: messaging-policies-hc.md
+      - name: Message delegation
+        href: hc-delegates.md
+    - name: Switch from enterprise to frontline worker
+      items:
+      - name: Licensing options for frontline workers
+        href: flw-licensing-options.md
+      - name: Considerations for switching from E to F
+        href: switch-from-enterprise-to-frontline.md
+  - name: Communications
+    items: 
+    - name: Frontline team collaboration
+      href: flw-team-collaboration.md
+    - name: Corporate communications with frontline workers
+      href: flw-corp-comms.md
+    - name: Help your employees use collaboration apps and features
+      href: collab-features-apps-toolkit.md
+  - name: Wellbeing & engagement
+    items: 
+    - name: Engage your employees and focus on wellbeing
+      href: flw-wellbeing-engagement.md
+  - name: Training & onboarding
+    items: 
+    - name: Onboard and train employees
+      href: flw-onboarding-training.md
+  - name: Schedule management
+    items: 
+    - name: Get started with Shifts for Teams
+      href: shifts-for-teams-landing-page.md
+    - name: Manage schedule owners for shift management
+      href: schedule-owner-for-shift-management.md
+    - name: Manage shift-based access in Teams
+      href: manage-shift-based-access-flw.md
+    - name: Help your employees track time and attendance
+      href: shifts-toolkit.md
+    - name: Shifts connectors
+      items: 
+      - name: Overview
+        href: shifts-connectors.md
+      - name: Connect Shifts to Blue Yonder WFM
+        items:
+        - name: Use the Shifts connector wizard to set up a connection to Blue Yonder WFM
+          href: shifts-connector-wizard.md
+        - name: Use PowerShell to set up a connection to Blue Yonder WFM
+          href: shifts-connector-blue-yonder-powershell-setup.md
+        - name: Use the Microsoft 365 admin center to manage your connection to Blue Yonder WFM
+          href: shifts-connector-blue-yonder-admin-center-manage.md
+        - name: Use PowerShell to manage your connection to Blue Yonder WFM
+          href: shifts-connector-powershell-manage.md
+        - name: Known issues
+          href: shifts-connector-blue-yonder-known-issues.md
+      - name: Connect Shifts to UKG Dimensions
+        items:
+        - name: Use the Shifts connector wizard to set up a connection to UKG Dimensions
+          href: shifts-connector-wizard-ukg.md
+        - name: Use PowerShell to set up a connection to UKG Dimensions
+          href: shifts-connector-ukg-powershell-setup.md
+        - name: Use the Microsoft 365 admin center to manage your connection to UKG Dimensions
+          href: shifts-connector-ukg-admin-center-manage.md
+        - name: Use PowerShell to manage your connection to UKG Dimensions
+          href: shifts-connector-ukg-powershell-manage.md
+        - name: Known issues
+          href: shifts-connector-ukg-known-issues.md
+  - name: Digitized processes
+    items: 
+    - name: Simplify business processes
+      href: simplify-business-processes.md
+  - name: Virtual Appointments
+    items: 
+    - name: Overview
+      href: virtual-appointments.md
+    - name: Use the Virtual Appointments app in Teams
+      href: virtual-appointments-app.md
+    - name: Virtual Appointments with Teams and Oracle Health EHR 
+      href: ehr-admin-oracle-health.md
+    - name: Virtual Appointments with Teams and Epic EHR 
+      href: ehr-admin-epic.md
+    - name: Troubleshoot Teams EHR connector setup and configuration
+      href: ehr-connector-troubleshoot-setup-configuration.md
+    - name: Manage the join experience on browsers
+      href: browser-join.md
+    - name: Reports
+      items: 
+      - name: Virtual Appointments usage report
+        href: virtual-appointments-usage-report.md
+      - name: Advanced Virtual Appointments activity report
+        href: advanced-virtual-appointments-activity-report.md
+      - name: SMS notifications usage report
+        href: sms-notifications-usage-report.md
+      - name: EHR connector Virtual Appointments report
+        href: ehr-connector-report.md  
+      - name: Virtual appointments Call Quality Dashboard
+        href: virtual-appointments-call-quality.md
+    - name: Help your clients and customers use virtual appointments
+      href: virtual-appointments-toolkit.md
+  - name: Industry-specific solutions
+    items: 
+    - name: Financial services
+      href: teams-for-financial-services.md
+    - name: Healthcare
+      items:
+      - name: Overview
+        href: teams-in-hc.md
+      - name: Healthcare team templates
+        href: /microsoftteams/expand-teams-across-your-org/healthcare/healthcare-templates-admin-console?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+      - name: Teams policy packages for healthcare
+        href: /microsoftteams/policy-packages-healthcare?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+    - name: Retail
+      items:
+      - name: Overview
+        href: teams-for-retail-landing-page.md
+      - name: Use retail team templates
+        href: /microsoftteams/get-started-with-retail-teams-templates?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+    - name: Manufacturing
+      href: teams-for-manufacturing.md
+  - name: Apps for frontline workers
+    items:
+    - name: About apps in Microsoft Teams
+      href: /microsoftteams/deploy-apps-microsoft-teams-landing-page?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+    - name: Overview of app management in Microsoft Teams
+      href: /microsoftteams/manage-apps?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json 
+    - name: Manage the Approvals app
+      href: /microsoftteams/approval-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+    - name: Manage the Bookings app
+      href: /microsoftteams/bookings-app-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+    - name: Manage the Lists app
+      href: /microsoftteams/manage-lists-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+    - name: Manage the Praise app
+      href: /microsoftteams/manage-praise-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+    - name: Manage the Shifts app
+      href: /microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+    - name: Shifts data FAQ
+      href: /microsoftteams/expand-teams-across-your-org/shifts/shifts-data-faq?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+    - name: Manage the Tasks app
+      href: /microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+    - name: Manage the Updates app
+      href: /microsoftteams/manage-updates-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+    - name: Manage the Virtual Appointments app
+      href: /microsoftteams/manage-virtual-appointments-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+    - name: Manage the Walkie Talkie app
+      href: /microsoftteams/walkie-talkie?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+    - name: Teams for RealWear
+      href: /microsoftteams/flw-realwear?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+
