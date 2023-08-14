@@ -53,3 +53,4 @@ The following table lists all overrides, a description of what that override mea
 |Trusted senders only (User override)|This override has same behaviour as the Exclusive mode (User override), primarily used in outlook.com.|See "Exclusive mode (User override)"|
 
 
+
