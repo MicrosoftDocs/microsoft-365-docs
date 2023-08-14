@@ -44,8 +44,11 @@ Before you can access Copilot, you must meet the following requirements:
 
 - **Microsoft Loop** To use Copilot in Microsoft Loop, you must have Loop enabled for your tenant. For more information on enabling Loop, see [Get started with Microsoft Loop](https://support.microsoft.com/office/get-started-with-microsoft-loop-9f4d8d4f-dfc6-4518-9ef6-069408c21f0c).
 
+>[!IMPORTANT]
+> Your users must be on the Current Channel to access Copilot. To learn more, see [update channels for Microsoft 365 Apps](/deployoffice/updates/overview-update-channels#current-channel-overview).
+
 >[!NOTE]
-> Your users must be on the Current Channel or Monthly Enterprise Channel to use Copilot. To learn more, see [update channels for Microsoft 365 Apps](/deployoffice/updates/overview-update-channels#current-channel-overview).
+> We previously stated that support for the Monthly Enterprise Channel was available for Microsoft 365 Copilot. As we continue to make frequent product updates and enhancements during the early access program, the time between updates in the Monthly Enterprise Channel limits Microsoft's ability to provide an optimum Copilot experience on desktop clients. Going forward, users in the early access program must be on the Current Channel to receive Copilot updates when they become available. We expect support in the Monthly Enterprise Channel in the future.
 
 ## Manage licenses for Copilot
 
