@@ -26,7 +26,7 @@ description: Learn how to onboard trusted vendors to collaborate in Microsoft 36
 
 If your organization has an approval process for external vendors or other organizations, you can use features in Azure Active Directory and Teams to block access from people in unapproved organizations and add new organizations as they're approved.
 
-By using domain allow lists, you can block the domains of organizations that haven't been approved through your internal processes. This can help ensure that users in your organization to only collaborate with approved vendors.
+By using domain allowlists, you can block the domains of organizations that haven't been approved through your internal processes. This can help ensure that users in your organization to only collaborate with approved vendors.
 
 This article describes the features you can use as part of your approval process for onboarding new vendors.
 
@@ -34,11 +34,11 @@ If you haven't configured guest sharing for your organization, see [Collaborate 
 
 #### SharePoint and OneDrive integration with Azure AD B2B
 
-The procedures in this article assume that you've enabled [SharePoint and OneDrive integration with Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration). If you haven't enabled Azure AD B2B integration for SharePoint and OneDrive, Azure AD B2B domain allow and block lists don't affect file and folder sharing. In this case, use [Restrict sharing of SharePoint and OneDrive content by domain](/sharepoint/restricted-domains-sharing).
+The procedures in this article assume that you've enabled [SharePoint and OneDrive integration with Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration). If you haven't enabled Azure AD B2B integration for SharePoint and OneDrive, Azure AD B2B domain allowlists and blocklists don't affect file and folder sharing. In this case, use [Restrict sharing of SharePoint and OneDrive content by domain](/sharepoint/restricted-domains-sharing).
 
 ## Allow the vendor's domain in Azure AD external collaboration settings
 
-With Azure AD external collaboration settings, you can allow or block invites to certain domains. By creating an allow list, you allow guest invitations only to those domains and all others are blocked. You can use this to allow guest invitations to vendors that you've approved while blocking those to vendors you haven't.
+With Azure AD external collaboration settings, you can allow or block invites to certain domains. By creating an allowlist, you allow guest invitations only to those domains and all others are blocked. You can use this to allow guest invitations to vendors that you've approved while blocking those to vendors you haven't.
 
 To allow sharing invitations only from specified domains
 1. In Azure Active Directory, under **Identity**, expand **External identities**, and then choose **External collaboration settings**.
@@ -47,7 +47,7 @@ To allow sharing invitations only from specified domains
 
     ![Screenshot of collaboration restrictions settings in Azure Active Directory.](../media/azure-ad-allow-only-specified-domains.png)
 
-For more information about using allow or block lists in Azure AD, see [Allow or block invitations to B2B users from specific organizations](/azure/active-dir.ectory/external-identities/allow-deny-list)
+For more information about using allowlists or blocklists in Azure AD, see [Allow or block invitations to B2B users from specific organizations](/azure/active-dir.ectory/external-identities/allow-deny-list)
 
 ## Allow domains for other Microsoft 365 organizations
 
@@ -58,9 +58,9 @@ By adding the vendor organization to Azure AD cross-tenant access settings, you 
 - Which users in the vendor organization can be invited to your organization
 - Which users in the vendor organization can participate in shared channels in Microsoft Teams
 - Which applications those users have access to in your organization
-- Whether your Conditional Access policies will accept claims from other Azure AD organizations when external users access your resources.
+- Whether your conditional access policies will accept claims from other Azure AD organizations when users from the other organization access your resources.
 
-By adding the vendor organization to the allow list for Teams external access:
+By adding the vendor organization to the allowlist for Teams external access:
 
 - Users in your organization and the vendor organization can chat and meet without the vendor having to log in as a guest.
 
