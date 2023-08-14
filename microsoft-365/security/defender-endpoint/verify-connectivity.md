@@ -1,5 +1,5 @@
 ---
-title: Verify client connectivity to Microsoft Defender for Endpoint service
+title: Verify client connectivity to Microsoft Defender for Endpoint service URLs
 description: Learn how to use Client analyzer to verify client connectivity to Defender for Endpoint
 keywords: connectivity, client analyzer, service connection
 search.product: eADQiWindows 10XVcnh
@@ -18,11 +18,11 @@ ms.collection:
 - tier1
 ms.topic: how-to
 ms.subservice: mde
-ms.date: 08/01/2023
+ms.date: 08/14/2023
 ---
 
 
-# STEP 3: Verify client connectivity to Microsoft Defender for Endpoint service
+# STEP 3: Verify client connectivity to Microsoft Defender for Endpoint service URLs
 
 
 **Applies to:**
@@ -41,14 +41,14 @@ Check that clients are able to connect to the Defender for Endpoint service URLs
 For more information on the Defender for Endpoint Client Analyzer, see [Troubleshoot sensor health using Microsoft Defender for Endpoint Client Analyzer](overview-client-analyzer.md). 
 
 >[!NOTE]
-> You can run the Defender for Endpoint Client Analyzer on devices prior to onboarding and after onboarding. 
+>You can run the Defender for Endpoint Client Analyzer on devices prior to onboarding and after onboarding. 
 >- When testing on a device onboarded to Defender for Endpoint, the tool will use the onboarding parameters. <br>
 >-When testing on a device not yet onboarded to Defender for Endpoint, the tool will use the defaults of US, UK, and EU.  
 
  
 
 >[!NOTE]
->(Applies to public preview)<br>
+>(APPLIES TO PUBLIC PREVIEW)<br>
 >For the simplified onboarding public preview, when testing connectivity on devices not yet onboarded to Defender for Endpoint, run mdeclientanalyzer.cmd with `-o <path to MDE onboarding package >`. The command will use parameters from onboarding script to test connectivity. Otherwise, the default pre-onboarding test will test against the standard URL set. See the following section for more details.
 
 
@@ -114,4 +114,4 @@ If you are testing connectivity on a device that has not yet been onboarded to D
 
 If you are testing connectivity on a device onboarded to  Defender for Endpoint using the streamlined approach, run the  Defender for Endpoint Client Analyzer as normal. The tool will use the configured onboarding parameters to test connectivity.  
 
-Fore more info on how to access simplified onboarding script, see [Onboarding devices using streamlined device connectivity](configure-device-connectivity.md).  
+For more info on how to access simplified onboarding script, see [Onboarding devices using streamlined device connectivity](configure-device-connectivity.md).  

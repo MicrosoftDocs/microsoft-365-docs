@@ -18,7 +18,7 @@ ms.collection:
 - tier1
 ms.topic: conceptual
 ms.subservice: mde
-ms.date: 06/28/2023
+ms.date: 08/14/2023
 ---
 
 # STEP 2:  Configure your devices to connect to the Defender for Endpoint service using a proxy

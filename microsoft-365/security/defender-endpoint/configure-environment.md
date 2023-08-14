@@ -18,7 +18,7 @@ ms.collection:
 - tier1
 ms.topic: how-to
 ms.subservice: mde
-ms.date: 06/19/2023
+ms.date: 08/14/2023
 ---
 
 
@@ -47,6 +47,7 @@ The following downloadable spreadsheet lists the services and their associated U
 
 
 >[!NOTE]
+>(APPLIES TO PUBLIC PREVIEW)<br>
 >- As part of the preview, certain Defender for Endpoint services have been consolidated behind the URL: **\*.endpoint.security.microsoft.com**. You will be provided the option in Microsoft 365 Defender to use the [consolidated Defender for Endpoint URL](). For more information, see the updated list in the preceding table. You also have the new option of configuring allow lists using static Defender for Endpoint dedicated IP ranges.<br> 
 >- The use of the new consolidated URL or static IPs will require you to use a new onboarding package. You must verify that your devices meet the [prerequisites]() before using the new solution. <br>
 >For more details, see the updated list in the preceeding table. You also have the option of configuring allow lists using static Defender for Endpoint dedicated IP ranges. <br>
@@ -58,7 +59,7 @@ The following downloadable spreadsheet lists the services and their associated U
 |Spreadsheet of domains list| Description|
 |---|---|
 | Microsoft Defender for Endpoint consolidated URL list  (NEW - Streamlined connectivity) <br> | **IMPORTANT:** Currently in public preview. <br> Spreadsheet of consolidated URLs for streamlining device connectivity to Defender for Endpoint. <br><br> [Download the spreadsheet here - MARYSIA TO MAKE NEW EXCEL SHEET -  WILL ADD URL OF SPREADSHEET ONCE IT'S AVAILABLE] <br><br> **Prerequisites:** <br> -   Windows 10, version 1809 and above with at least KB5011487 (March 8, 2022) excluding version 1607, 1703, 1709, 1803<br><br> NOTE: Devices running on Windows 10 version 1607, 1703, 1709, and 1803 can leverage the new onboarding package but will need to use a longer URL list.  <br><br> -   Windows 11, with at least KB5011493 (March 8, 2022)  <br><br> -   Windows Server 2019, with at least KB5011503 (March 8, 2022) <br> <br> -   Windows Server 2022, with at least KB5011497 (March 8, 2022) <br> <br> -   Fully updated versions of Server 2012 R2, Server 2016 R2 running Defender for Endpoint modern unified solution (requires installation through MSI).  <br><br> -   macOS and Linux with Defender for Endpoint product version 101.23052.0003 or later.<br><br>NOTE:  Devices running on Windows 7, Windows 8.1, Windows Server 2008 R2 MMA, Servers not upgraded to Unified Agent (MMA) will not be able to leverage the streamlined connectivity method and will need to use the standard list of URLs below.<br><br>- Minimum Microsoft Defender Antivirus component versions: <br> - **Antimalware client**: 4.18.2211.5 <br> - **Engine**: 1.1.19900.2 <br> - **Antivirus (Security Intelligence)**: 1.381.1853.0 <br><br> If you are moving previously onboarded devices to the streamlined approach, see [Migrating device connectivity](configure-device-connectivity.md). <br> Note that Microsoft Defender for Endpoint Plan 1 and Plan 2 share the same proxy service URLs.
-|Microsoft Defender for Endpoint URL list for commercial customers (regular)| Spreadsheet of specific DNS records for service locations, geographic locations, and OS for commercial customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx) <p>  Note that Microsoft Defender for Endpoint Plan 1 and Plan 2 share the same proxy service URLs.
+|Microsoft Defender for Endpoint URL list for commercial customers (Regular)| Spreadsheet of specific DNS records for service locations, geographic locations, and OS for commercial customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx) <p>  Note that Microsoft Defender for Endpoint Plan 1 and Plan 2 share the same proxy service URLs.
 | Microsoft Defender for Endpoint URL list for Gov/GCC/DoD | Spreadsheet of specific DNS records for service locations, geographic locations, and OS for Gov/GCC/DoD customers. <br> [Download the spreadsheet here.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
 
 If a proxy or firewall has HTTPS scanning (SSL inspection) enabled, exclude the domains listed in the above table from HTTPS scanning.

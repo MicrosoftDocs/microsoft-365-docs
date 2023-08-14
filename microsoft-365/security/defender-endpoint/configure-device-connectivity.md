@@ -17,7 +17,7 @@ search.appverid: MET150
 audience: ITPro
 ---
 
-# Onboarding devices using streamlined device connectivity for Microsoft Defender for Endpoint 
+# Onboarding devices using streamlined connectivity for Microsoft Defender for Endpoint 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,35 +36,38 @@ The Microsoft Defender for Endpoint service requires the use of proxy configurat
 In this article, you will learn about the streamlined device connectivity method and how to onboard new devices so that you can  leverage the straightforward deployment and management of Defender for Endpoint cloud connectivity services. For more information on migrating previously onboarded devices, see [Migrating devices to streamlined connectivity](migrate-devices-streamlined.md). 
 
 
-To simplify the configuration of network requirements and ease management, you now have the option of onboarding devices to Defender for Endpoint using a reduced URL set or static IP ranges. 
+To simplify network configuration and management, you now have the option of onboarding devices to Defender for Endpoint using a reduced URL set or static IP ranges. 
 
 The Defender for Endpoint-recognized simplified domain: **\*.endpoint.security.microsoft.com** replaces the following core Defender for Endpoint services: Cloud Protection/MAPS, Malware Sample Submission Storage, AutoIR Sample Storage,  Defender for Endpoint Command & Control, and EDR Cyberdata. 
 
 Alternatively, to support network devices without hostname resolution or wildcard support, you can configure connectivity using dedicated Defender for Endpoint static IP ranges. For more information, see [Configure connectivity using static IP ranges](#option-2-configure-connectivity-using-static-ip-ranges).
 
+
+Prior to the availability of the simplified method of device connectivity, specific URLs had to be added to the allowed domains list. Defender for Endpoint static IP ranges were not supported. For more information, see [Configure your environment to connect to the Defender for Endpoint service](configure-environment.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server). 
+
 >[!NOTE] 
 >The simplified connectivity method will **not change how Microsoft Defender for Endpoint functions on a device nor will it change the end-user experience**. Only the URLs or IPs that a device uses to connect to the service will change. 
 
-Prior to the availability of the simplified method of device connectivity, specific URLs had to be added to the allowed domains list. Defender for Endpoint static IP ranges were not supported. For more information, see [Configure your environment to connect to the Defender for Endpoint service](configure-environment.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server). 
+>[!IMPORTANT]
+>Preview limitiations and known issues: <br>
+>- Streamlined connectivity does not support onboarding through Microsoft Defender for Cloud or Intune's API method.
+>- This onboarding method has specific prerequisites that do not apply to the standard onboarding method.
 
 ## Consolidated services 
 
 
-As part of this preview, this section lists the Defender for Endpoint services that have been consolidated under the new simplified domain. Previously, you may have been using these endpoints. 
+As part of this preview, this section lists the Defender for Endpoint services that have been consolidated under the new simplified domain. Previously, you may have been using these individual endpoints. 
 
-The table below lists the Defender for Endpoint service URLs that are consolidated under the new simplified domain: **\*.endpoint.security.microsoft.com**.
+The following table lists the Defender for Endpoint service URLs that are consolidated under the new simplified domain: **\*.endpoint.security.microsoft.com**.
 
-For the full list of required URLs, see [LINK TO UPDATED URL LIST]().
+For the full list of required URLs, see [Enable access to the Defender for Endpoint service URLs in the proxy server](configure-environment.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server).
 
 >[!NOTE] 
->You will need to onboard devices using the modified onboarding script to leverage this reduced URL set. 
+>You will need to onboard devices using the strealined onboarding package to leverage the reduced URL set. 
 
-
-
-JOEY!! LINK TO THE MODIFIED SPREADSHEET HERE!!!
 
 >[!IMPORTANT]
->The following Defender for Endpoint URLs consolidated under the simplified domain should no longer be required for connectivity if **\*.endpoint.security.microsoft.com** is allowed and devices are onboarded using the updated onboarding script. <br>
+>The following Defender for Endpoint URLs consolidated under the simplified domain should no longer be required for connectivity if **\*.endpoint.security.microsoft.com** is allowed and devices are onboarded using the streamlined onboarding package. For more information, see the preceeding section. <br>
 >You will need to maintain connectivity with other required services not consolidated that are relevant to your organization (for example, CRL, SmartScreen/Network Protection, and WNS). For more information on the detailed list of URLs, [Download the spreadsheet here](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx).
 
 >[!NOTE]
@@ -76,6 +79,11 @@ JOEY!! LINK TO THE MODIFIED SPREADSHEET HERE!!!
 
 >[!NOTE]
 >This list may evolve and new URLs may be added as more services get consolidated under the new domain.
+
+
+
+>[!IMPORTANT]
+>If you are configuring using IP ranges, you will need to separately configure the EDR cyberdata service. This service is not consolidated on an IP level. See section below for more details.
 
 | Category                                       | Service URLs                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -89,103 +97,135 @@ JOEY!! LINK TO THE MODIFIED SPREADSHEET HERE!!!
 
 ## Before you begin 
 
-Verify that you meet the prerequisites to use the streamlined device connectivity solution for Defender for Endpoint. 
+Devices must meet specific prerequisites to use the streamlined connectivity method for Defender for Endpoint. Ensure the prerequisites are met before proceeding with onboarding.
  
 ### Prerequisites
 
-**Operating Systems**
+**License:**
+  - Microsoft Defender for Endpoint Plan 1
+  - Microsoft Defender for Endpoint Plan 2
+  - Microsoft Defender for Business
+  - Microsoft Defender Vulnerability Management
 
--   Windows 10 version 1809 or later, with at least KB5011487 (March 8, 2022) - excluding versions 1607 and 1703
--   Windows 11, with at least KB5011493 (March 8, 2022) 
--   Windows Server 2019, with at least KB5011503 (March 8, 2022) 
--   Windows Server 2022, with at least KB5011497 (March 8, 2022) 
--   Fully updated versions of Windows Server 2012 R2, Server 2016 R2 running Defender for Endpoint modern unified solution (requires installation through MSI).
-- macOS and Linux with Defender for Endpoint product version 101.23052.0003 or later. 
- 
+**Minimum KB update (Windows)**
+  - SENSE version: 10.8040.*/ March 8th 2022 or higher (see table)
 
-**Defender Antivirus component versions**
+**Defender Antivirus versions (Windows)**
+   - **Antimalware Client:** 4.18.2211.5 
+   - **Engine:** 1.1.19900.2 
+   - **Antivirus (Security Intelligence):** 1.381.1853.0 
 
--   Minimum versions: 
-    - **Antimalware Client:** 4.18.2211.5 
-    - **Engine:** 1.1.19900.2 
-    - **Antivirus (Security Intelligence):** 1.381.1853.0 
+**Supported Operating Systems**
 
->[!NOTE]
->Devices running on MMA agent are not supported on the streamlined onboarding method and will need to continue using legacy URL set (Windows 7, Windows 8.1, Windows Server 2008 R2 MMA, Servers not upgraded to Unified Agent (MMA)). Windows Server 2012 R2 and Server 2016 R2 will need to upgrade to unified agent to leverage the new method. <br>
->Windows 10 1607, 1703, 1709, 1803 can leverage the new onboarding option but will need to use a longer list. For more information, see [ADD LINK TO SHEET]().
+-   Windows 10 version 1809 or later
+    -    Windows 10 version 1607, 1703, 1709, 1803 are supported on the streamlined onboarding package but require a different URL list (see updated URL sheet)
+-   Windows 11
+-   Windows Server 2019
+-   Windows Server 2022
+-   Windows Server 2012 R2, Server 2016 R2, fully updated running Defender for Endpoint modern unified solution (installation through MSI).
+- macOS supported versions with MDE product version 101.23052.0003 +.*
+- Linux supported versions with MDE product version 101.23052.0003 +.*
 
-Compatibility matrix:
+>[!IMPORTANT]
+>- **Devices running on MMA agent are not supported** on the streamlined onboarding method and will need to continue using legacy URL set (Windows 7, Windows 8.1, Windows Server 2008 R2 MMA, Servers not upgraded to Unified Agent (MMA)). 
+>- Windows Server 2012 R2 and Server 2016 R2 will need to upgrade to unified agent to leverage the new method. <br>
+>- Windows 10 1607, 1703, 1709, 1803 can leverage the new onboarding option but will need to use a longer list. For more information, see [Updated URL sheet - ADD LINK TO SHEET]().
+
+| Windows   OS    |     Minimum   KB Required (March 8, 2022)    |
+:---|:---
+|     Windows 11    |     KB5011493   (March 8, 2022)    |
+|     Windows 10 1809,   Windows Server 2019    |     KB5011503  (March 8, 2022)    |
+|     Windows 10 19H2   (1909)    |     KB5011485   (March 8, 2022)    |
+|     Windows 10 20H2,   21H2    |     KB5011487   (March 8, 2022)    |
+|     Windows 10 22H2    |     KB5020953 (October   28, 2022)    |
+|     Windows 10 1803*    |     < end of   service >     |
+|     Windows 10 1709*    |     < end of   service >     |
+|     Windows Server   2022    |     KB5011497   (March 8, 2022)    |
+|     Windows Server   2012 R2, 2016*    |     Unified Agent    |
+|     Windows Server   2016 R2    |     Unified Agent    |
 
 
-| Operating System:                                      | Streamlined onboarding support                                          | Comments                                                                           |
-|--------------------------------------------------------|-------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| Windows 10 version 1809 or later                               | Supported                                                               |                                                                                    |
-| Windows 10 RS1, RS2, RS3, RS4 (1607, 1703, 1709, 1803) | Streamlined onboarded package supported; must configure longer URL list | Can use new onboarding package but it will require longer URL list (see excel doc) |
-| Windows 11                                             | Supported                                                               |                                                                                    |
-| Windows Server 2019                                    | Supported                                                               |                                                                                    |
-| Windows Server 2022                                    | Supported                                                               |                                                                                    |
-| Windows Server 2016 R2                                 | Supported with unified agent                                            | Must upgrade to unified agent                                                      |
-| Windows Server 2012 R2                                 | Supported with unified agent                                            | Must upgrade to unified agent                                                      |
-| Windows Server 2008 R2                                 | Not supported                                                           |                                                                                    |
-| Windows 8.1                                            | Not supported                                                           |                                                                                    |
-| Windows 7                                              | Not supported                                                           |                                                                                    |
 
-## Stage 1. Configure your environment for cloud connectivity 
+## Stage 1. Configure your network environment for cloud connectivity 
 
-Because some URLs and IPs have been consolidated into the new domain, you'll need to configure your existing network device settings to connect using the new method instead.  For more information, see [Configure your network environment to ensure connectivity with Defender for Endpoint service](configure-environment.md). 
+Once you confirm prerequisites are met, ensure your network environment is properly configured to support the streamlined connectivity method. Follow the steps outlined in using streamlined (preview method),  [Configure your network environment to ensure connectivity with Defender for Endpoint service](configure-environment.md). 
 
-Defender for Endpoint services consolidated under the simplified method should no longer be required for connectivity. However, some URLs are not included in the consolidation. For more information on the list of services not included in the consolidation, see [Services not included in the consolidated domain](#services-not-included-in-the-consolidated-domain).
+Defender for Endpoint services consolidated under the simplified method should no longer be required for connectivity. However, some URLs are not included in the consolidation. 
 
-The following list provides options you can use to configure your environment for cloud connectivity:
+Streamlined connectivity allows you to use the following option to configure cloud connectivity:
 
 - [Option 1: Use the simplified domain](#option-1-configure-connectivity-using-the-simplified-domain)
 - [Option 2: Use static IP ranges](#option-2-configure-connectivity-using-static-ip-ranges)
  
 
-
-
-
 ### Option 1: Configure connectivity using the simplified domain
 
 Configure your environment to allow connections with the simplified Defender for Endpoint domain: **\*.endpoint.security.microsoft.com**. For more information, see [Configure your network environment to ensure connectivity with Defender for Endpoint service](configure-environment.md).
 
-Ensure you have connectivity with other required Defender for Endpoint [services not consolidated](#services-not-included-in-the-consolidated-domain) under simplified method. 
+You must maintain connectivity with remaining required services listed under the updated list: [LINK](). For example, Certification Revocation List, Windows update, SmartScreen.
 
 ### Option 2: Configure connectivity using static IP ranges 
 
-Alternatively, if you're using the IP range method, allow firewall or proxy connections to **all of the following Defender for Endpoint** **IP** **addresses**. These ranges cover the following Defender for Endpoint services: MAPS, Malware Sample Submission Storage, AutoIR Sample Storage, Defender for Endpoint Command and Control.
+With streamlined connectivity, IP-based solutions can be used as an alternative to URLs. These IPs cover the following services:
+
+- MAPS
+- Malware Sample Submission Storage
+- AutoIR Sample Storage
+- Defender for Endpoint Command and Control
+
+>[!IMPORTANT]
+>The EDR Cyber data service must be configured separately if you are using the IP method (this service is only consolidated on a URL level). Similarly to Option 1, you must maintain connectivity with other required services including SmartScreen, CRL, Windows Update, and other services.
+>It is recommended to refer to the following Azure service tags for Microsoft Defender for Endpoint services. The latest IP ranges will always be found in the service tag.  
+>For more information, see [Download Azure IP Ranges and Service Tags – Public Cloud from Official Microsoft Download Center](https://www.microsoft.com/download/details.aspx?WT.mc_id=DP-MVP-5004154&id=56519), [Azure IP ranges](https://azureipranges.azurewebsites.net/).
 
 
 
-| <u>**Location** </u>  | <u>**IP Range Prefix** </u>  |
+
+| Service tag name    |    Defender for Endpoint services included   |
+:---|:---
+MicrosoftDefenderForEndpoint | MAPS, Malware Sample Submission Storage, AutoIR Sample Storage,  Command and Control.
+OneDsCollector | EDR Cyberdata <br><br> Note: The traffic under this service tag is not limited to MDE and includes diagnostic data traffic for other Microsoft services. 
+
+
+The following table lists the current static IP ranges. For latest list, refer to the Azure service tags.
+
+
+| **Geo**  | **IP Ranges**   |
 |-----------------------|------------------------------|
-| <u>Central US </u>    | <u>20.15.141.0/24 </u>       |
-| <u>East US </u>       | <u>20.242.181.0/24 </u>      |
-| <u>East US 2 </u>     | <u>20.10.127.0/24 </u>       |
-| <u>West US </u>       | <u>13.83.125.0/24 </u>       |
-| <u>North Europe </u>  | <u>4.208.13.0/24 </u>        |
-| <u>West Europe </u>   | <u>20.8.195.0/24 </u>        |
-| <u>UK South </u>      | <u>20.26.63.224/28 </u>      |
-| <u>UK West </u>       | <u>20.254.173.48/28 </u>     |
-
->[!WARNING]
->**The Defender for Endpoint static IP ranges do not include EDR Cyberdata.** This service has static IPs available under the 'OneDSCollector' Azure service tag. For more information, see [Home Page - Azure IP Ranges](https://azureipranges.azurewebsites.net/). Traffic for these IPs is not limited to EDR cyber data - its shared across Microsoft applications such as Office, Intune, Teams, and others.
-
-
-As with the URL method, ensure you maintain connectivity with other required [services not consolidated](#services-not-included-in-the-consolidated-domain).  The following static IPs only cover the following services: MAPS, Malware Sample Submission Storage, AutoIR Sample Storage, Defender for Endpoint Command and Control.
+| US    |20.15.141.0/24  <br> 20.242.181.0/24 <br>20.10.127.0/24<br>13.83.125.0/24        |
+| EU       |4.208.13.0/24  <br>20.8.195.0/24       |
+|UK      | 20.26.63.224/28  <br>20.254.173.48/28     |
 
 
 >[!IMPORTANT]
 > In compliance with Defender for Endpoint security and compliance standards, your data will be processed and stored in accordance with your tenant's physical location. Based on client location, traffic may flow through any of these IP regions (which correspond to Azure datacenter regions). For more information, see [Data storage and privacy](/microsoft-365/security/defender-endpoint/data-storage-privacy).  
 
-## Stage 2. Onboard devices using the simplified method
+## Stage 2. Configure your devices to connect to Defender for Endpoint service
+
+Configure devices to communicate through your connectivity infrastructure. Ensure devices meet pre-requisites and have updated sensor and Microsoft Defender Antivirus versions.  For more information, see [Configure device proxy and Internet connection settings ](/microsoft-365/security/defender-endpoint/configure-proxy-internet).
+
+## Stage 3. Verify client connectivity pre-onboarding
+
+
+For more information, see [Verify client connectivity](verify-connectivity.md).
+
+To test streamlined connectivity for devices not yet onboarded to Defender for Endpoint, you can use the Client Analyzer for Windows using the following commands: 
+
+- Run `mdeclientanalyzer.cmd -o <path to cmd file>`  from within MDEClientAnalyzer folder. The command will use parameters from onboarding package to test connectivity.  
+
+- Run `mdeclientanalyzer.cmd -g <GW_US, GW_UK, GW_EU>` , where parameter  is of GW_US, GW_EU, GW_UK. GW refers to the streamlined option. Run with applicable tenant geo. 
+ 
 
 >[!NOTE]
->For tenants created before *this date*, this will show as the default method. Once you have configured your network environment to communicate with the full list of required URLs you can begin onboarding or migrating devices.  
+>For devices not yet onboarded to MDE, client analyzer will test against standard set of URLs. To test the streamlined approach, you will need to run with the switches listed above. 
 
-Confirm devices meet [prerequisites](#operating-systems-prerequisites) and have fully updated Microsoft Defender Antivirus versions.
+For Client Analyzer on macOS/Linux: **ADD INFO HERE**
 
-Configure devices to communicate through connectivity infrastructure. For more information, see [Configure device proxy and Internet connection settings ](/microsoft-365/security/defender-endpoint/configure-proxy-internet).
+## Stage 4. Apply the new onboarding package required for streamlined connectivity
+
+Once you configure your network to communicate with the full list of services, you can begin onboarding devices using the streamlined method.  
+
+Before proceeding, confirm devices meet the [prerequisites](#prerequisites) and have updated the sensor and Microsoft Defender Antivirus versions. 
 
 
 ### Use Defender for Endpoint Client Analyzer to validate connectivity with new URLs pre-onboarding 
