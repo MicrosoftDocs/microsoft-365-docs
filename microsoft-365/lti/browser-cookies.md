@@ -7,7 +7,7 @@ ms.reviewer: amitman
 ms.date: 08/14/2023
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-edu
+ms.service: microsoft-365-enterprise
 f1.keywords:
 - CSH
 ms.collection: 
