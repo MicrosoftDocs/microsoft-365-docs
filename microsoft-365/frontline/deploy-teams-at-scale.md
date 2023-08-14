@@ -1,9 +1,9 @@
 ---
 title: Deploy frontline static teams at scale with PowerShell for frontline workers
-author: daisyfell
-ms.author: daisyfeller
+author: lana-chin
+ms.author: v-chinlana
+manager: serdars
 ms.reviewer: rahuldey
-manager: samanro
 ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline

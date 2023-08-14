@@ -99,8 +99,6 @@
           href: multi-tenant/manage.md
     - name: Office 365 operated by 21Vianet
       items: 
-        - name: About Office 365 operated by 21Vianet
-          href: services-in-china/services-in-china.md
         - name: Download the Office app for Android for Office 365 operated by 21Vianet
           href: services-in-china/download-office-app-for-Android.md
         - name: Download the Office app for iOS for Office 365 operated by 21Vianet
@@ -229,6 +227,8 @@
           href: email/add-user-or-contact-to-distribution-list.md
         - name: Manage clutter for your organization
           href: email/configure-clutter.md
+        - name: Mailbox not found error
+          href: misc/mailbox-not-found-error.md
     - name: Manage domains
       items:
         - name: Add a domain
