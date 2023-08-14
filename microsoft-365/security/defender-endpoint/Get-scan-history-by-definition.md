@@ -47,6 +47,14 @@ ms.date: 12/15/2022
 
 Retrieves a list of the scan history by definitions.
 
+- Supports OData operations.
+
+- OData supported operators:
+
+   - $top with max value of 4096.
+
+      - $skip.
+
 ## Limitations
 
 1. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
@@ -55,15 +63,15 @@ Retrieves a list of the scan history by definitions.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md).
 
-Permission type|Permission|Permission display name
-:---|:---|:---
-Application|Machine.Read.All| Read all scan information.
-Delegated (work or school account)|Machine.Read.All|Read all scan information.
+|Permission type|Permission|Permission display name|
+|:---|:---|:---|
+|Application|Machine.Read.All| Read all scan information.|
+|Delegated (work or school account)|Machine.Read.All|Read all scan information.|
 
 > [!NOTE]
 > When obtaining a token using user credentials:
->
 > - To view data the user needs to have at least the following role permission: 'ViewData' or 'TvmViewData' (See [Create and manage roles](user-roles.md) for more information)
+> 
 
 ## HTTP request
 
@@ -132,4 +140,4 @@ POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinit
 }
 
 ```
-[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+
