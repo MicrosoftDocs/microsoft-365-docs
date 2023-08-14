@@ -196,7 +196,7 @@ ASR rules now provide the capability to configure rule-specific exclusions, know
 To configure per-rule exclusions:
 
 1. Open the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), and navigate to **Home** > **Endpoint security** > **Attack surface reduction**.
-1. If it is not already configured, set the rule for which you want to configure exclusions to Audit or block.
+1. If it is not already configured, set the rule for which you want to configure exclusions to **Audit** or **Block**.
 1. In **ASR Only Per Rule Exclusion**, click the toggle to change from **Not configured** to **Configured.**
 1. Enter the names of the files or application that you want to exclude.
 1. At the bottom of the **Create profile** wizard, click **Next** and follow the wizard instructions.
