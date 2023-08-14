@@ -42,7 +42,7 @@ If you must keep third-party cookies blocked:
 
 ## Allow cookies for LMS URLs in Google Chrome
 
-1. In the Chrome **Settings** window, select the **Privacy and security** tab and then **Third-party cookies*.
+1. In the Chrome **Settings** window, select the **Privacy and security** tab and then **Third-party cookies**.
 1. Select the option for **Allow third-party cookies**.
 
 If you must keep third-party cookies blocked:
