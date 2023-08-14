@@ -60,7 +60,7 @@ To ensure data quality, we perform daily data validation checks for the past thr
 |Replies   <br/> |Reply Messages|The number of replied messages in all channels during the specified time period. <br/> |
 |Urgent messages    <br/> |Urgent Messages|The number of urgent messages during the specified time period. <br/> |
 |Chat messages   <br/> |Private Chat Message Count|The number of unique messages that the user posted in a private chat during the specified time period.  <br/> |
-|Total meetings   <br/> |Meeting Count|The number of online meetings that the user participated in during the specified time period.  <br/> |
+|Total meetings   <br/> |Meeting Count|Refer to the 'Total participated meetings' metric as defined below, as the current metric and ‘Total participated meetings’ share the same definition. We intend to gradually phase out the current metric with 'Total participated meetings.' <br/> |
 |1:1 calls   <br/> |Call Count|The number of 1:1 calls that the user participated in during the specified time period.  <br/> |
 |Last activity date (UTC)  <br/> |Last Activity Date|The last date that the user participated in a Microsoft Teams activity.<br/> |
 |Meetings participated ad hoc   <br/> |Ad Hoc Meetings Attended Count|The number of ad hoc meetings a user participated in during the specified time period.  <br/> |
