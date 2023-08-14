@@ -1,11 +1,6 @@
 ---
 title: Test attack surface reduction (ASR) rules
 description: Provides guidance to test your attack surface reduction (ASR) rules deployment. Microsoft Defender for Endpoint (MDE) ASR test includes, audit defender ASR rules, configure ASR rules using Intune, Microsoft ASR rules reporting, ASR rules exclusions, ASR rules event viewer.
-keywords: Microsoft Defender for Endpoint (MDE) Attack surface reduction (ASR) rules deployment, Attack surface reduction guide, ASR deployment, test asr rules, ASR rules exclusions, Microsoft ASR, configure ASR rules, attack surface reduction rules best practice, attack surface reduction intune, ASR rules event viewer, attack surface reduction defender, asr rules powershell, attack surface reduction best practice, disable ASR rules, host intrusion prevention system, protection rules, anti-exploit rules, anti-exploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules
-search.product: eADQiWindows 10XVcnh
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
@@ -21,7 +16,7 @@ ms.collection:
  - m365solution-asr-rules
  - highpri
  - tier1
-ms.date: 12/18/2022
+ms.date: 08/14/2023
 search.appverid: met150
 ---
 
