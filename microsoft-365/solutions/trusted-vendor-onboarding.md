@@ -24,7 +24,7 @@ description: Learn how to onboard trusted vendors to collaborate in Microsoft 36
 
 # Onboard trusted vendors to collaborate in Microsoft 365
 
-If your organization has an approval process for external vendors or other organizations, you can use features in Azure Active Directory and Teams to block access from people in unapproved organizations and allow new organizations as they're approved. You can also limit who in your organization can invite guests.
+If your organization has an approval process for external vendors or other organizations, you can use features in Azure Active Directory and Teams to block access from people in unapproved organizations and add new organizations as they're approved.
 
 By using domain allow lists, you can block the domains of organizations that haven't been approved through your internal processes. This can help ensure that users in your organization to only collaborate with approved vendors.
 
@@ -51,7 +51,7 @@ For more information about using allow or block lists in Azure AD, see [Allow or
 
 ## Allow domains for other Microsoft 365 organizations
 
-If you approved vendor also uses Microsoft 365, there are additional settings you can configure to manage these domains and create a more integrated experience for your users.
+If your approved vendor also uses Microsoft 365, there are additional settings in Azure AD and Teams that you can configure to manage these domains and create a more integrated experience for your users.
 
 By adding the vendor organization to Azure AD cross-tenant access settings, you can specify:
 
@@ -66,7 +66,7 @@ By adding the vendor organization to the allow list for Teams external access:
 
 #### Allow the vendor's domain in Azure AD cross-tenant access settings
 
-To specify settings such as who can be invited from the vendor organization and what applications they can use, first add the application in Azure AD cross-tenant access settings.
+To specify settings such as who can be invited from the vendor organization and what applications they can use, first add the organization in Azure AD cross-tenant access settings.
 
 To add an organization
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as a Global administrator.
@@ -97,13 +97,13 @@ To specify which applications guests from the vendor organization can use:
 
     ![Screenshot of an allowed application in the inbound cross-tenant access settings for an external organization.](../media/cross-tenant-inbound-allow-application.png)
 
-For more information about the options available in cross-tenant access settings, see [Configure cross-tenant access settings for B2B collaboration](/azure/active-directory/external-identities/cross-tenant-access-settings-b2b-collaboration).
+For more information about the options available in cross-tenant access settings, including accepting conditional access claims from other organizations, see [Configure cross-tenant access settings for B2B collaboration](/azure/active-directory/external-identities/cross-tenant-access-settings-b2b-collaboration).
 
 If you plan to use Teams shared channels with the vendor organization, both organizations must set up cross-tenant access settings for Azure AD B2B direct connect. For details, see [Collaborate with external participants in a shared channel](/microsoft-365/solutions/collaborate-teams-direct-connect).
 
 #### Allow the vendor's domain in Teams external access
 
-To allow users in your organization and the vendor organization can chat and meet without the vendor having to log in as a guest, allow the domain in Teams external access.
+To allow users in your organization and the vendor organization to chat and meet without the vendor having to log in as a guest, allow the domain in Teams external access.
 
 To allow an organization in Teams external access
 1. In the Teams admin center, expand **Users**, and then select **External access**.
@@ -115,9 +115,13 @@ To allow an organization in Teams external access
 
     ![Screenshot of Teams external access settings for Teams and Skype for Business users in external organizations with one allowed domain.](../media/teams-external-access-allowed-domain.png)
 
-The external access settings page in the Teams admin center includes Teams accounts not managed by an organization and Skype users. You can turn these off if these accounts don't meet your organization's requirements for approved vendors.
+The external access settings page in the Teams admin center includes settings for Teams accounts not managed by an organization and Skype users. You can turn these off if these accounts don't meet your organization's requirements for approved vendors.
 
 For more information about Teams external access options, see [Manage external meetings and chat with people and organizations using Microsoft identities](/microsoftteams/trusted-organizations-external-meetings-chat).
+
+## Limit who can invite guests
+
+You can restrict which users in your organization can invite guests from your trusted vendors. This can be useful if guest invites require approval or if you want your users to do a training course before being allowed to invite guests. For information on how to do this, see [Limit who can invite guests](limit-who-can-invite-guests.md).
 
 ## Prevent unauthenticated access
 
@@ -131,10 +135,6 @@ If your requirements for trusted vendors require everyone to sign in before acce
 To prevent people from joining meetings as anonymous participants, you can turn off **Anonymous users can join a meeting** in Teams meeting policies. For more information, see [Manage anonymous participant access to Teams meetings (IT admins)](/microsoftteams/anonymous-users-in-meetings).
 
 To prevent unauthenticated file and folder sharing, you must prevent the use of *Anyone* sharing links. You can do this for your entire organization or for specific SharePoint sites. For more information, see [Manage sharing settings for SharePoint and OneDrive in Microsoft 365](/sharepoint/turn-external-sharing-on-or-off) and [Change the sharing settings for a site](/sharepoint/change-external-sharing-site).
-
-## Limit who can invite guests
-
-You can restrict which users in your organization can invite guests from your trusted vendors. This can be useful if guest invites require approval or if you want your users to do a training course before being allowed to invite guests. For information on how to do this, see [Limit who can invite guests](limit-who-can-invite-guests.md).
 
 ## Related topics
 
