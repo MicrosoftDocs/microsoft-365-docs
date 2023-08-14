@@ -49,8 +49,8 @@ Retrieves a list of the scan history by definitions.
 
 - Supports OData operations.
 - OData supported operators:
-   - $top with max value of 4096.
-   - $skip.
+   - $top with max value of 4096. This will return the number of sessions specified in the request. 
+   - $skip with a default value of 0. This will skip the number of sessions specified in the request. 
  
 For an example of OData operation usage, see [example $top request](#example-top-request).
 
