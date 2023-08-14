@@ -52,7 +52,7 @@ Retrieves a list of the scan history by definitions.
    - $top with max value of 4096.
    - $skip.
  
-For an example of OData operation usage, see[](#-example-$skip-request).
+For an example of OData operation usage, see[](#-example-top-request).
 
 ## Limitations
 
