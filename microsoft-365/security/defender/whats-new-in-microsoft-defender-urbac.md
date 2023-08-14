@@ -24,9 +24,9 @@ This article provides information about new features and important product updat
 
 ### Detection tuning and Security settings permissions
 
-- You can now assign a new granular permission in Microsoft Defender 365 Unified RBAC that allows users to manage detection rules. The new permission is called **Detection tuning (manage)** and is located under **Authorization and settings \ Security settings** when you're creating or updating a custom role. Granting the “Detection tuning (manage)” permission will provide security operations analysts permissions for the creation and management of Custom Detection, Alerts Tuning and Threat Indicators of compromise rules without having to grant the full security setting (manage) permission.
+- You can now assign a new granular permission in Microsoft Defender 365 Unified RBAC that allows users to manage detection rules. The new permission is called **Detection tuning (manage)**. You can add the new permissions to a custom role by selecting **Authorization and settings \ Security settings** when creating or updating the role. For more information, see [Create custom roles with Microsoft 365 Defender Unified RBAC](./create-custom-rbac-roles.md). Granting the **Detection Tuning (manage)** permission will give security operations analysts the ability to create and manage Custom Detection, Alerts Tuning, and Threat Indicators of Compromise rules without granting the full **Security Settings (manage)** permission.
 
-- The **Security settings** permission name has been updated to **Core security settings”. This change has no impact. 
+- The **Security settings** permission name has been updated to **Core security settings**. This change has no impact on existing roles and permissions. 
 
 ### Microsoft Defender Vulnerability Management permissions are now integrated with Microsoft 365 Defender Unified role-based access control (RBAC)
 
