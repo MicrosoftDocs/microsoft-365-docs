@@ -1,5 +1,5 @@
 
-# Microsoft 365 the web Monitoring 
+# Microsoft 365 for the web 
 
 You can use Office for the web monitoring in the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339) to monitor the health of the Office for the web service for your organization's Microsoft 365 subscription. Office for the web monitoring provides you with information about incidents and advisories related to any issue detected in the Microsoft 365 infrastructure that Microsoft owns for providing regular updates and resolving the issue. For example, users cannot open or save Excel for the web application because of issues with Excel or the Microsoft 365 cloud infrastructure. 
 
