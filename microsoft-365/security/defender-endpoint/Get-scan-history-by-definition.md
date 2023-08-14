@@ -1,11 +1,7 @@
 ---
 title: Get scan history by definition
 description: Learn how to use the get scan history by definition api
-keywords: apis, graph api, supported apis, scan history, definition
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
@@ -49,8 +45,8 @@ Retrieves a list of the scan history by definitions.
 
 - Supports OData operations.
 - OData supported operators:
-   - $top with max value of 4096. This will return the number of sessions specified in the request. 
-   - $skip with a default value of 0. This will skip the number of sessions specified in the request. 
+   - $top with max value of 4096. Returns the number of sessions specified in the request.
+   - $skip with a default value of 0. Skips the number of sessions specified in the request.
  
 For an example of OData operation usage, see [example $top request](#example-top-request).
 
@@ -99,7 +95,7 @@ If successful, this method returns 200 - OK response code with a list of the sca
 
 ## Example request
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```http
 POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/GetScanHistoryByScanDefinitionId
@@ -141,7 +137,7 @@ POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinit
 ```
 ## Example $top request
 
-Here is an example of the request. This returns only 1 session.
+Here's an example of a request that returns only 1 session.
 
 ```http
 POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/GetScanHistoryByScanDefinitionId?$top=1
