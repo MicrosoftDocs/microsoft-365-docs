@@ -48,12 +48,9 @@ ms.date: 12/15/2022
 Retrieves a list of the scan history by definitions.
 
 - Supports OData operations.
-
 - OData supported operators:
-
    - $top with max value of 4096.
-
-      - $skip.
+   - $skip.
 
 ## Limitations
 
