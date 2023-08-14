@@ -444,6 +444,9 @@
           href: step-by-step-guides/how-to-prioritize-and-manage-automated-investigations-and-response-air.md
       - name: Diagnose
         items:
+        - name: Understanding overrides within the email entity page in Microsoft Defender
+            for Office 365
+          href: ./step-by-step-guides/understand-overrides-in-email-entity.md
         - name: (False Negatives) How to handle malicious emails that are delivered to recipients using Microsoft Defender for Office 365
           href: step-by-step-guides/how-to-handle-false-negatives-in-microsoft-defender-for-office-365.md
         - name: (False Positives) How to handle legitimate emails getting blocked from delivery using Microsoft Defender for Office 365
