@@ -4,14 +4,13 @@ ms.author: danismith
 author: DaniEASmith
 manager: serdars
 ms.reviewer: amitman 
-ms.date: 05/04/2022
+ms.date: 08/14/2023
 audience: admin
 ms.topic: article
-ms.service: microsoft-365-business
+ms.service: microsoft-365-edu
 f1.keywords:
 - CSH
 ms.collection: 
-- M365-modern-desktop
 - tier2
 ms.localizationpriority: medium
 description: Learn how to allow cookies for LMS URLs in Edge, Chrome, and Firefox, and Safari browsers.
@@ -78,4 +77,3 @@ If you must keep third-party cookies blocked:
 
 > [!NOTE]
 > In you can't change the settings yourself because your browser is managed by your organization, reach out to your IT department.
-
