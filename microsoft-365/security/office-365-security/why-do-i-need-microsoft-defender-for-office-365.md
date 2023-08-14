@@ -18,10 +18,10 @@ ms.custom:
   - seo-marvel-apr2020
   - intro-overview
   - curated-apr-2023
-description: Is Microsoft Defender for Office 365 worth it? Let's find out. This article had info on the fastest and most recommended setup of Microsoft Defender for Office 365 including Safe Attachments, Safe Links, advanced anti-phishing tools, reporting tools, and threat intelligence capabilities.
+description: Is Microsoft Defender for Office 365 worth it? Let's find out.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 6/20/2023
+ms.date: 8/14/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
@@ -32,7 +32,7 @@ appliesto:
 > [!IMPORTANT]
 > **If you are being blocked by Safe Links pages**, go here for info: [Advanced Outlook.com security for Microsoft 365 subscribers](https://support.microsoft.com/office/advanced-outlook-com-security-for-microsoft-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2?storagetype=live).
 
-**Microsoft Defender for Office 365 is a seamless integration into your Office 365 subscription** that provides protection against threats that arrive in email, links (URLS), attachments, or collaboration tools like SharePoint, Teams, and Outlook. With real-time views of threats and tools like Threat Explorer, you can threat hunt and stay ahead of potential threats.
+**Microsoft Defender for Office 365 is a seamless integration into your Office 365 subscription** that protects against threats in email, links (URLS), attachments, or collaboration tools.
 
 For email threats that you may discover after the fact, Zero-hour autopurge (ZAP) can remove those mails. Automated Investigation and Response (AIR) allows you to automate monitoring and remediation, making it more efficient for security operations (sec ops) teams. The deep integration with Office 365 and robust reporting ensures that you are always on top of security operations.
 
