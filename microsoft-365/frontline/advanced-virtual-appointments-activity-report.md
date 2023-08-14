@@ -21,7 +21,7 @@ appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
 ms.custom: seo-marvel-apr2020
-ms.date: 02/22/2023
+ms.date: 08/23/2023
 ---
 # Microsoft Teams Advanced Virtual Appointments activity report
 
