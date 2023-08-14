@@ -18,7 +18,7 @@ description: Admins can learn about the anti-phishing policies that are availabl
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.date: 8/9/2023
+ms.date: 8/14/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
@@ -135,7 +135,7 @@ In anti-phishing policies, you can control whether `p=quarantine` or `p=reject` 
     - **Quarantine the message**
     - **Reject the message**
 
-If you select quarantine the message, Honor DMARC will apply quaratine policy set for spoof intelligence protection.
+  If you select **Quarantine the message** as an action, the quarantine policy that's selected for spoof intelligence protection is used.
 
 :::image type="content" source="../../media/anti-phishing-policies-honor-dmarc-settings.png" alt-text="DMARC settings in an anti-phishing policy." lightbox="../../media/anti-phishing-policies-honor-dmarc-settings.png":::
 
