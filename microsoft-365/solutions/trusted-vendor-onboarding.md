@@ -3,7 +3,7 @@ title: Onboard trusted vendors to collaborate in Microsoft 365
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
-ms.date: 07/24/2023
+ms.date: 08/14/2023
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -24,12 +24,13 @@ description: Learn how to onboard trusted vendors to collaborate in Microsoft 36
 
 # Onboard trusted vendors to collaborate in Microsoft 365
 
-If your organization has an approval process for access to Microsoft 365 by external organizations, you can use features in Azure Active Directory and Teams to block access from unapproved organizations and add new organizations as they're approved.
+If your organization has an approval process for external vendors or other organizations, you can use features in Azure Active Directory and Teams to block access from people in unapproved organizations and allow new organizations as they're approved. You can also limit who in your organization can invite guests.
 
+By using domain allow lists, you can block the domains of organizations that haven't been approved through your internal processes. This can help ensure that users in your organization to only collaborate with approved vendors.
 
+This article describes the features you can use as part of your approval process for onboarding new vendors.
 
-
-[Collaborate with guests in a team (IT Admins)](collaborate-as-team.md)
+If you haven't configured guest sharing for your organization, see [Collaborate with guests in a site](collaborate-in-site.md) or [Collaborate with guests in a team (IT Admins)](collaborate-as-team.md).
 
 #### SharePoint and OneDrive integration with Azure AD B2B
 
@@ -76,7 +77,7 @@ To add an organization
 1. On the **Add organization** pane, type the full domain name (or tenant ID) for the organization.
 1. Select the organization in the search results, and then select **Add**.
 
-![Screenshot of cross-tenant access settings in Azure AD with two external organizations configured.](../media/cross-tenant-access-settings.png)
+    ![Screenshot of cross-tenant access settings in Azure AD with two external organizations configured.](../media/cross-tenant-access-settings.png)
 
 To specify who your users can invite as guests from the vendor organization:
 1. On the **Organizational settings** tab, select the **Inbound access** link for the organization you want to configure.
@@ -133,41 +134,14 @@ To prevent unauthenticated file and folder sharing, you must prevent the use of 
 
 ## Limit who can invite guests
 
-Create a security group for people allowed to invite guests
-
-The first step is to create a security group for the users who will be allowed to invite guests. Be sure to configure this group to allow an Azure AD role, and then assign it the Guest inviter role.
-
-To create a security group for guest inviters
-1. Sign in to [Azure Active Directory](https://aad.portal.azure.com) using a Global administrator or Security administrator account.
-1. On the **Active Directory** page, select **Groups** and then select **New group**.
-1. Choose **Security** for the **Group type**.
-1. Type a **Group name.** 
-1. Optionally, add a description for the group.
-1. For **Azure AD roles can be assigned to the group**, choose **Yes**.
-1. Add group owners and members.
-1. Under **Roles**, select **No roles selected**.
-1. Search for and select the **Guest inviter** role, and then choose **Select**.
-1. Select **Create**, and confirm that you want a group to which roles can be assigned. Your group is created and ready for you to add members.
-
-
-
-![Screenshot of Azure AD guest invite settings restricted to specific admin roles.](../media/entra-guest-invite-settings-limited.png)
-
-[Limit who can invite guests](limit-who-can-invite-guests.md)
-
-
-
-[Azure Active Directory terms of use](/azure/active-directory/conditional-access/terms-of-use)
-
-
-## Allow only members in specific security groups to share SharePoint and OneDrive files and folders externally
-
-
-
-[Allow only members in specific security groups to share SharePoint and OneDrive files and folders externally](/sharepoint/manage-security-groups)
+You can restrict which users in your organization can invite guests from your trusted vendors. This can be useful if guest invites require approval or if you want your users to do a training course before being allowed to invite guests. For information on how to do this, see [Limit who can invite guests](limit-who-can-invite-guests.md).
 
 ## Related topics
 
 [Microsoft Entra External ID documentation](/azure/active-directory/external-identities/)
 
 [Use guest access and external access to collaborate with people outside your organization](/microsoftteams/communicate-with-users-from-other-organizations)
+
+[Azure Active Directory terms of use](/azure/active-directory/conditional-access/terms-of-use)
+
+[Allow only members in specific security groups to share SharePoint and OneDrive files and folders externally](/sharepoint/manage-security-groups)
