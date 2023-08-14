@@ -51,6 +51,8 @@ Retrieves a list of the scan history by definitions.
 - OData supported operators:
    - $top with max value of 4096.
    - $skip.
+ 
+For an example of OData operation usage, see[](#-example-$skip-request).
 
 ## Limitations
 
@@ -137,4 +139,27 @@ POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinit
 }
 
 ```
+## Example $top request
 
+Here is an example of the request. This returns only 1 session.
+
+```http
+POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/GetScanHistoryByScanDefinitionId?$top=1
+```
+
+##  $top Response example
+
+```json
+{
+"@odata.context": "https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/GetScanHistoryByScanDefinitionId",
+    "value": [
+    {
+    "ScanDefinitionIds": "4ad8d463-6b3a-4894-b42a-a2de9ea0a8ae",
+    "LastScanned": "2022-12-20T11:14:24.5561791Z",
+    "ScanStatus": "Partial Success",
+    "ScannerId": "625431694b7d2ca9d07e77ca1b029ef216bebb6d"
+    },
+ ]
+}
+
+```
