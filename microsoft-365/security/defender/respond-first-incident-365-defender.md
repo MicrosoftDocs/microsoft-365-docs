@@ -34,18 +34,18 @@ ms.date: 08/18/2023
 **Applies to:**
 - Microsoft 365 Defender
 
-If you're new to using Microsoft 365 Defender, this guide outlines what you need to do and points you to other Microsoft resources to help you confidently perform your [day-to-day incident response tasks](integrate-microsoft-365-defender-secops-services.md). The intended results of using this guide are:
+This guide lists Microsoft resources for new Microsoft 365 Defender users to confidently perform [day-to-day incident response tasks](integrate-microsoft-365-defender-secops-services.md) while using the portal. The intended results of using this guide are:
 
 - You'll quickly learn to use Microsoft 365 Defender to respond to incidents and alerts.
 - You’ll discover the portal's features to aid incident investigation and remediation through the videos and tutorials.
 
-Microsoft 365 Defender enables you to see relevant threat events across all assets (devices, identities, mailboxes, cloud apps, and more). Consolidated signals from the [Microsoft Defender protection stack](microsoft-365-defender.md#microsoft-365-defender-protection), [Microsoft Sentinel](microsoft-365-defender-integration-with-azure-sentinel.md), and other [integrated security information and event management (SIEM) solutions](configure-siem-defender.md) allows you to view correlated attack information with full context in one portal, which is critical for successful defense and protection defend your network.
+Microsoft 365 Defender enables you to see relevant threat events across all assets (devices, identities, mailboxes, cloud apps, and more). The portal consolidates signals from the [Defender protection suite](microsoft-365-defender.md#microsoft-365-defender-protection), [Microsoft Sentinel](microsoft-365-defender-integration-with-azure-sentinel.md), and other [integrated security information and event management (SIEM) solutions](configure-siem-defender.md). Correlated attack information with full context in a single pane of glass enables you to successfully defend and protect your organization.
 
 This guide has three main sections:
 
-- Understanding incidents - accessing, triaging, and managing incidents within the portal
-- [Analyzing attacks](respond-first-incident-analyze.md) - a collection of videos and tutorials on how to investigate specific attacks using the portal's features.
-- [Remediating attacks](respond-first-incident-remediate.md) - lists the automated and manual actions that are available within the portal to remediate threats. This section includes links to videos and tutorials.
+- Understanding incidents: accessing, triaging, and managing incidents within the portal
+- [Analyzing attacks](respond-first-incident-analyze.md): a collection of videos and tutorials on how to investigate specific attacks using the portal's features.
+- [Remediating attacks](respond-first-incident-remediate.md): lists the automated and manual actions that are available within the portal to remediate threats. This section includes links to videos and tutorials.
 
 ## Understanding incidents
 
@@ -82,7 +82,7 @@ You might assign a high priority to the incident using the information above. Yo
 
 ### Managing incidents
 
-You can contribute to [incident management](manage-incidents.md) efficiency by providing essential information in incidents and alerts. The following input from when you triage and analyze each incident helps to add further context that other responders can take advantage of:
+You can contribute to [incident management](manage-incidents.md) efficiency by providing essential information in incidents and alerts. When you add information to the following filters from when you triage and analyze each incident, you provide further context to that incident that other responders can take advantage of:
 
 - [Classifying incidents and alerts](manage-incidents.md#specify-the-classification)
 - Naming incidents

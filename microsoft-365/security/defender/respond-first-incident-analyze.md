@@ -34,7 +34,7 @@ ms.date: 08/18/2023
 **Applies to:**
 - Microsoft 365 Defender
 
-Understanding the context that surrounds [incidents](incidents-overview.md) is essential in analyzing attacks.  Combining your expertise and experience with Microsoft 365 Defender's features and capabilities ensure faster resolution of incidents and your organization’s safety from further attacks.
+Understanding the context that surrounds [incidents](incidents-overview.md) is essential in analyzing attacks.  Combining your expertise and experience with Microsoft 365 Defender's features and capabilities ensure faster resolution of incidents and your organization’s safety from cyber attacks.
 
 Today's threats on data security - [business email compromise (BEC)](https://www.microsoft.com/en-us/security/business/security-101/what-is-business-email-compromise-bec), malware like backdoors and [ransomware](/security/ransomware), organizational breaches, and [nation-state attacks](https://www.microsoft.com/en-us/security/business/security-insider/) – require quick, intelligent, and decisive action from incident responders. Tools like [Microsoft 365 Defender](microsoft-365-defender.md) allow response teams to detect, triage, and investigate incidents through its single-pane-of-glass experience and find the information needed to make these timely decisions.
 
@@ -42,17 +42,17 @@ Today's threats on data security - [business email compromise (BEC)](https://www
 
 Investigations usually involve responders viewing several apps while simultaneously checking various threat intelligence sources. Sometimes investigations are extended to hunting down other threats. Documenting facts and solutions in an attack investigation is an additional important task that provides history and context for other investigators’ use or for later investigations. These investigation tasks are simplified when using Microsoft 365 Defender through the following:
 
-- **Pivoting** – gathering information from several information-rich pages of an attack’s components (file, URL, mailbox, a user account, or device) is made easy through several views showing relationships and timeline of activities. Incident responders can drill down using timeline views of related alerts and events or across related attack components. Moreover, Microsoft 365 Defender aggregates all important attack data from various security services to aid in pivoting.
+- **Pivoting** – the portal aggregates important attack information contextualized across the Defender workloads enabled in your organization. The portal consolidates all information across a single attack’s components (file, URL, mailbox, a user account, or device), showing relationships and timeline of activities. With all the information available in a page, the portal allows incident responders to pivot across related entities and events to find the information they need to make decisions.
 
-- [**Hunting**](advanced-hunting-overview.md) – finding known and possible threats through the portal using Kusto queries. Incident responders can [hunt for threats with or without guidance](advanced-hunting-modes.md) within the portal.
+- [**Hunting**](advanced-hunting-overview.md) – threat hunters can find known and possible threats through the portal using Kusto queries. If you're new to Kusto, you can [hunt for threats with or without guidance](advanced-hunting-modes.md).
 
-- **Insight** – where applicable, previously detected events along with the actions done to these events are available to incident responders, adding context to present investigations. Moreover, incidents and alerts are enriched by Microsoft’s threat intelligence information and from sources like the [MITRE ATT&CK®](https://attack.mitre.org/) framework and [VirusTotal](https://www.virustotal.com/gui/home/upload).
+- **Insight** – where applicable, incident responders can view actions to previously detected event and alerts to aid present investigations. Additional insights are also automatically added to events and alerts through Microsoft’s own threat intelligence efforts and from sources like the [MITRE ATT&CK®](https://attack.mitre.org/) framework and [VirusTotal](https://www.virustotal.com/gui/home/upload).
 
-- **Collaboration** – security operations teams can view each team members’ decisions and actions on past and present incidents and alerts through portal features like comments, tagging, flagging, and assignment. Further collaboration with Microsoft’s managed detection and response service through [Microsoft Defender Experts for XDR](dex-xdr-overview.md) is also available when an organization requires an augmented response.
+- **Collaboration** – security operations teams can view each team members’ decisions and actions on past and present incidents and alerts through portal features like comments, tagging, flagging, and assignment. Further collaboration with Microsoft’s managed detection and response service through [Defender Experts for XDR](dex-xdr-overview.md) and [Defender Experts for Hunting](defender-experts-for-hunting.md) are also available when an organization requires an augmented response.
 
 ## Attack overview
 
-Incident responders try to answer what happened through an investigation. The [attack story](investigate-incidents.md#attack-story) on an incident page provides full context of what happened in an attack, identifies all related alerts and events to the attack, and provides an overview of the automated remediation actions taken by Microsoft 365 Defender to mitigate the attack.
+The [attack story](investigate-incidents.md#attack-story) provides incident responders a full, contextualized overview what happened in an attack. Responders can view all related alerts and events, including the automated remediation actions taken by Microsoft 365 Defender to mitigate an attack.
 
 From the attack story, you can dive deeper into the details of an attack by exploring the tabs available on the [incident page](investigate-incidents.md). You can quickly remediate common attacks like phishing, password spray, and malicious app compromise through [incident response playbooks](/security/operations/incident-response-playbooks) accessible within the portal. These playbooks contain detection, response, and mitigation guidance that support incident investigations.
 
@@ -69,24 +69,49 @@ Complex threats like [adversary-in-the-middle attacks](https://www.microsoft.com
 - Clues pointing to possible identity compromise
 - Identifying what the impact is on the organization’s data and security posture
 
-The following Microsoft 365 Defender features aid incident response teams in investigating these complex attacks:
+The following sections contain tutorials and videos of Microsoft 365 Defender features that aid incident response teams in investigating various complex attacks.
 
-### Malware analysis
-
-Responders can further investigate a malicious file related to an incident or alert by accessing the incident graph, an alert process tree, an artifact timeline, or through a device timeline. Microsoft 365 Defender can show file information, including hash, other file details, metadata, and what the file can do based on MITRE ATT&CK techniques. This removes the need to run files in a black box test or static analyses. Additional context about files and tools is also present in the portal through prevalence data.
-
-The following resources provide details on how to use the portal’s capabilities in investigating files and tools:
-
-- **Tutorial**: [Investigate files](/microsoft-365/security/defender-endpoint/investigate-files)
-- **Video**: Investigating malware in Microsoft 365 Defender
-> [!VIDEO https://youtu.be/TTqFlnlwch0]
+### Ransomware investigations
 
 Ransomware continues to be a significant threat to organizations. Microsoft has the following resources to help you investigate and respond to ransomware attacks:
 
 - **Guides**: [From detection to protection: Microsoft's guide to combating ransomware attacks](/security/ransowmare)
 - **Tutorial**: [Ransomware investigation playbook](/security/operations/incident-response-playbook-dart-ransomware-approach)
 - **Video**: Investigating ransomware attacks in Microsoft 365 Defender
+
 > [!VIDEO https://www.youtube.com/watch?v=eLCrGe4-Zzc]
+
+### Email-based attacks analysis
+
+Identifying and tracking modified, created, or stolen identities are essential to investigating phishing and BEC attacks. Use the following resources when investigating these attacks:
+
+- **Tutorial**: [Investigate malicious email](//microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered)
+- **Tutorial**: [Investigate users](investigate-users.md)
+- **Tutorial**: [Investigate a user account](//microsoft-365/security/defender-endpoint/investigate-user)
+- **Blog**: [Total Identity Compromise: Microsoft Incident Response lessons on securing Active Directory
+Identity compromise can also be investigated using Defender for Identity signals.](https://techcommunity.microsoft.com/t5/microsoft-security-experts-blog/total-identity-compromise-microsoft-incident-response-lessons-on/ba-p/3753391)
+
+The following videos discuss how to investigate phishing and BEC attacks in Microsoft 365 Defender:
+- **Video**: Investigating BEC and AiTM phishing in Microsoft 365 Defender
+> [!VIDEO https://youtu.be/h9YEr9XwALU]
+
+- **Video**: Defending against spearphishing and phishing using Defender for Office 365
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/<RE5bzVE>]
+
+The following video discusses an identity compromise and what incident responders can do to contain an attack:
+- Investigating identity threats using Defender for Identity
+> [!VIDEO https://youtu.be/RSVmgcQLv38?t=533]
+
+### Malware analysis
+
+A malicious file's information and capabilities are key to investigating malware. Microsoft 365 Defender, in most cases, can detonate the file to show critical data including hash, metadata, prevalence within the organization, and file capabilities based on MITRE ATT&CK® techniques. This removes the need to do black box testing or static analysis of files. You can view file information from the incident graph, or by viewing an alert process tree, an artifact timeline, or a device timeline.
+
+The following resources provide details on how to use the portal’s capabilities in investigating files:
+
+- **Tutorial**: [Investigate files](/microsoft-365/security/defender-endpoint/investigate-files)
+- **Video**: Investigating malware in Microsoft 365 Defender
+
+> [!VIDEO https://youtu.be/TTqFlnlwch0]
 
 ### Risky apps analysis and cloud-based threats prevention
 
@@ -124,27 +149,6 @@ Breaches also happen through various devices like phones and tablets that connec
 
 - Mobile threat defense in Microsoft 365 Defender
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/<RW10icV>]
-
-### Email-based attacks analysis
-
-Identifying and tracking modified, created, or stolen identities are essential to investigating phishing and BEC attacks. Use the following resources when investigating these attacks:
-
-- **Tutorial**: [Investigate malicious email](//microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered)
-- **Tutorial**: [Investigate users](investigate-users.md)
-- **Tutorial**: [Investigate a user account](//microsoft-365/security/defender-endpoint/investigate-user)
-- **Blog**: [Total Identity Compromise: Microsoft Incident Response lessons on securing Active Directory
-Identity compromise can also be investigated using Defender for Identity signals.](https://techcommunity.microsoft.com/t5/microsoft-security-experts-blog/total-identity-compromise-microsoft-incident-response-lessons-on/ba-p/3753391)
-
-The following videos discuss how to investigate phishing and BEC attacks in Microsoft 365 Defender:
-- **Video**: Investigating BEC and AiTM phishing in Microsoft 365 Defender
-> [!VIDEO https://youtu.be/h9YEr9XwALU]
-
-- **Video**: Defending against spearphishing and phishing using Defender for Office 365
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/<RE5bzVE>]
-
-The following video discusses an identity compromise and what incident responders can do to contain an attack:
-- Investigating identity threats using Defender for Identity
-> [!VIDEO https://youtu.be/RSVmgcQLv38?t=533]
 
 ## Resources for threat intelligence and hunting
 
