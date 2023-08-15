@@ -50,7 +50,7 @@ Microsoft Feed is built on Microsoft 365 and implicitly respects all settings an
 
 In addition, Microsoft Feed respects LinkedIn visibility settings (when a user prefers to limit the visibility of their profile information outside of LinkedIn). To learn more, see [Off-LinkedIn Visibility | LinkedIn Help](https://www.linkedin.com/help/linkedin/answer/a1340507), and [Disconnecting Your LinkedIn and Microsoft Accounts and Managing Your Data | LinkedIn Help](https://www.linkedin.com/help/linkedin/answer/a552108).
 
-In Microsoft 365, as a Global Tenant Admin, you can disable Microsoft Feed for your tenant through the Microsoft Graph API. See the [Graph API docs](https://learn.microsoft.com/en-us/graph/api/resources/microsoftapplicationdataaccesssettings?view=graph-rest-beta) for instructions on how to disable Microsoft Feed. 
+In Microsoft 365, as a global admin, you can disable Microsoft Feed for your organization using Microsoft Graph API. See [microsoftApplicationDataAccessSettings resource type](/graph/api/resources/microsoftapplicationdataaccesssettings) for instructions on how to disable Microsoft Feed. 
  
 ## Provide feedback
 
