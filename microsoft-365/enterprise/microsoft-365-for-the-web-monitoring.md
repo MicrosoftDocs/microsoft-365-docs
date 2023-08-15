@@ -1,3 +1,24 @@
+---
+title: "Microsoft 365 for the web monitoring"
+ms.author: kvice
+author: kelleyvice-msft
+manager: scotv
+ms.date: 08/15/2023
+audience: Admin
+ms.topic: article
+ms.service: microsoft-365-enterprise
+ms.localizationpriority: medium
+search.appverid:
+- MET150
+ms.collection:
+- scotvorg
+- Ent_O365
+- Strat_O365_Enterprise
+ms.custom: 
+f1.keywords:
+- NOCSH
+description: "Use Microsoft 365 monitoring for information about incidents or advisories in Microsoft 365."
+---
 
 # Microsoft 365 for the web monitoring
 
