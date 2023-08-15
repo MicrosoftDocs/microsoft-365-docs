@@ -49,8 +49,8 @@ In most cases, a full device offboarding isn't necessary when reonboarding. For 
 
 >[!IMPORTANT]
 >Preview limitiations and known issues: <br>
->-For device migrations (reonboarding): Offboarding is not required to switch over to streamlined connectivity method. Once the updated onboarding package is run, a full device reboot is required for  Windows devices and a service restart for macOS and Linux. For more information, see the details below. 
->-Windows 10 versions 1607, 1703, 1709, and 1803 do not support reonboarding. You will need to offboard first and onboard using the updated package. These versions also require a longer URL list. 
+>- For device migrations (reonboarding): Offboarding is not required to switch over to streamlined connectivity method. Once the updated onboarding package is run, a full device reboot is required for  Windows devices and a service restart for macOS and Linux. For more information, see the details below. <br>
+>- Windows 10 versions 1607, 1703, 1709, and 1803 do not support reonboarding. You will need to offboard first and onboard using the updated package. These versions also require a longer URL list. 
 
 ## Migrating devices using the streamlined method
 
@@ -72,7 +72,7 @@ To reonboard devices using the streamlined connectivity method, you'll need to u
 Depending on the OS, migrations require a device reboot or service restart once the onboarding package is applied:
 
 - Windows: reboot the device
-- macOS: Reboot the device or restart the MDE service by running:
+- macOS: Reboot the device or restart the Defender for Endpoint service by running:
   1.	`sudo launchctl unload /Library/LaunchDaemons/com.microsoft.fresno.plist`
   2.	`sudo launchctl load /Library/LaunchDaemons/com.microsoft.fresno.plist` 
 	
@@ -172,17 +172,89 @@ Device connectivity to streamlined approach won't start if you don't reboot the 
 
 1.	Exclude device from any existing 'onboarding' policies in JAMF Pro.
 
-2.	Create a new onboarding policy for the �streamlined� connectivity approach. 
+2.	Create a new onboarding policy for the streamlined connectivity approach. 
 
 3.	Include device in the new streamlined onboarding policy.
 
-4.	Reboot device if previously onboarded to MDE. Alternatively, you can restart the service using:
+4.	Reboot device if previously onboarded to Defender for Endpoint. Alternatively, you can restart the service using the following commands:
 
-    1.	sudo launchctl unload /Library/LaunchDaemons/com.microsoft.fresno.plist 
-    2.	sudo launchctl load /Library/LaunchDaemons/com.microsoft.fresno.plist 
+    1.	`sudo launchctl unload /Library/LaunchDaemons/com.microsoft.fresno.plist` 
+    2.	`sudo launchctl load /Library/LaunchDaemons/com.microsoft.fresno.plist` 
 	
 For more JAMF guidelines, see [Deploying Microsoft Defender for Endpoint on macOS with JAMF Pro](mac-install-with-jamf.md).
 
 
+### [**Linux**](#tab/linux)
+
+### Linux
+
+For specific OS and device pre-requisites, see [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md). 
+
+Requires Defender for Endpoint version 101.23052.0009+ 
+
+For general instructions on onboarding to Defender for Endpoint on Linux, see Microsoft Defender for Endpoint on Linux | Microsoft Learn
 
 
+### Local script
+Use the guidance in [Deploy Microsoft Defender for Endpoint on Linux manually](linux-install-manually.md).
+
+After completing the steps, you must either reboot the device or restart the service using `sudo systemctl restart mdatp`.
+
+ 
+Device connectivity to streamlined approach will not start if you do not reboot the device.
+
+### Third-party Linux deployment tools (Puppet, Ansible, Chef)
+
+Replace the onboarding package file in the current deployment method.
+
+---
+
+## Verifying device connectivity with streamlined method for migrated devices
+
+
+You can use the following methods to check that you have successfully connected Windows devices:
+
+- [Client analyzer](#u)
+- [Tracking with advanced hunting in Microsoft 365 Defender](#t)
+- [Track locally using Event Viewer (for Windows)](#t)
+- [Run tests to confirm connectivity with Defender for Endpoint services](#)
+- Checking the registry editor
+- [PowerShell detection test](#powershell-detection-test)
+
+
+For macOS and Linux, you can use the following methods:
+
+- MDATP connectivity tests
+- Tracking with advanced hunting in Microsoft 365 Defender
+- Run tests to confirm connectivity with Defender for Endpoint services
+
+
+### Use Defender for Endpoint Client Analyzer (Windows) to validate connectivity after onboarding for migrated endpoints
+
+Once onboarded, run the MDE Client Analyzer to confirm your device is connecting with the to the appropriate updated URLs.
+
+Download the Microsoft Defender for Endpoint Client Analyzer tool where Defender for Endpoint sensor is running.
+
+You can follow the same instructions as in [Verify client connectivity to Microsoft Defender for Endpoint service](verify-connectivity.md).  The script will automatically use the onboarding package configured on the device (should be streamlined version) to test connectivity. 
+
+Ensure connectivity is established with the appropriate URLs. 
+
+
+### Tracking with advanced hunting in Microsoft 365 Defender
+
+You can use advanced hunting in Microsoft 365 Defender portal to view the connectivity type status. 
+
+This information is found in the DeviceInfo table under the "ConnectivityType" column:
+
+   **Column Name:** ConnectivityType 
+   **Possible Values:** Streamlined, Standard, *blank* 
+   **Data type:** string
+   **Description:** Type of connectivity from the device to the cloud
+
+Once a device is migrated to use the streamlined method and the device establishes successful communication with the EDR command & control channel, the value will be represented as "streamlined".
+
+If you move the device back to the regular method, the value will be "standard".
+
+For devices that have not yet attempted to reonboard, the value will remain blank. 
+
+For more information on using advanced hunting in Microsoft 365 Defender, see [Overview - Advanced hunting](/microsoft-365/security/defender/advanced-hunting-overview).
