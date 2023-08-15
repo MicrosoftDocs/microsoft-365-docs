@@ -75,17 +75,17 @@ During and after each automated investigation, your security operations team can
 
 AIR capabilities are included in [Microsoft Defender for Office 365](defender-for-office-365.md#whats-the-difference-between-microsoft-defender-for-office-365-plan-1-and-plan-2), provided your policies and alerts are configured. Need some help? Follow the guidance in [Protect against threats](protect-against-threats.md) to set up or configure the following protection settings:
 
-- [Verify audit logging is turned on](../../compliance/audit-log-enable-disable.md)
+- [Verify audit logging is turned on](/purview/audit-log-enable-disable)
 - [Anti-malware protection](protect-against-threats.md#part-1---anti-malware-protection-in-eop)
 - [Anti-phishing protection](../office-365-security/protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365)
 - [Anti-spam protection](protect-against-threats.md#part-3---anti-spam-protection-in-eop)
 - [Safe Links and Safe Attachments](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
 
-In addition, make sure to [review your organization's alert policies](../../compliance/alert-policies.md), especially the [default policies in the Threat management category](../../compliance/alert-policies.md#default-alert-policies).
+In addition, make sure to [review your organization's alert policies](/purview/alert-policies), especially the [default policies in the Threat management category](/purview/alert-policies#default-alert-policies).
 
 ## Which alert policies trigger automated investigations?
 
-Microsoft 365 provides many built-in alert policies that help identify Exchange admin permissions abuse, malware activity, potential external and internal threats, and information governance risks. Several of the [default alert policies](../../compliance/alert-policies.md#default-alert-policies) can trigger automated investigations. The following table describes the alerts that trigger automated investigations, their severity in the Microsoft 365 Defender portal, and how they're generated:
+Microsoft 365 provides many built-in alert policies that help identify Exchange admin permissions abuse, malware activity, potential external and internal threats, and information governance risks. Several of the [default alert policies](/purview/alert-policies#default-alert-policies) can trigger automated investigations. The following table describes the alerts that trigger automated investigations, their severity in the Microsoft 365 Defender portal, and how they're generated:
 
 |Alert|Severity|How the alert is generated|
 |---|---|---|
@@ -101,7 +101,7 @@ Microsoft 365 provides many built-in alert policies that help identify Exchange 
 |Admin triggered user compromise investigation|**Medium**|This alert is generated when an admin triggers the manual user compromise investigation of either an email sender or recipient from Threat Explorer.  This alert notifies your organization that the user compromise investigation was started.|
 
 > [!TIP]
-> To learn more about alert policies or edit the default settings, see [Alert policies in the Microsoft Purview compliance portal](../../compliance/alert-policies.md).
+> To learn more about alert policies or edit the default settings, see [Alert policies in the Microsoft Purview compliance portal](/purview/alert-policies).
 
 ## Required permissions to use AIR capabilities
 
