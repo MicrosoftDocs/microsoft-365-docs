@@ -77,9 +77,13 @@ Ransomware continues to be a significant threat to organizations. Microsoft has 
 
 - **Guides**: [From detection to protection: Microsoft's guide to combating ransomware attacks](/security/ransowmare)
 - **Tutorial**: [Ransomware investigation playbook](/security/operations/incident-response-playbook-dart-ransomware-approach)
-- **Video**: Investigating ransomware attacks in Microsoft 365 Defender
+- **Video**: Investigating ransomware attacks in Microsoft 365 Defender (part 1)
 
-> [!VIDEO https://www.youtube.com/watch?v=eLCrGe4-Zzc]
+> [!VIDEO https://youtu.be/eLCrGe4-Zzc]
+
+- **Video**: Investigating ransomware attacks in Microsoft 365 Defender (part 2)
+
+> [!VIDEO https://youtu.be/q1s7lm3O9Sc]
 
 ### Email-based attacks analysis
 
@@ -90,16 +94,23 @@ Identifying and tracking modified, created, or stolen identities are essential t
 - **Tutorial**: [Investigate a user account](//microsoft-365/security/defender-endpoint/investigate-user)
 - **Blog**: [Total Identity Compromise: Microsoft Incident Response lessons on securing Active Directory
 Identity compromise can also be investigated using Defender for Identity signals.](https://techcommunity.microsoft.com/t5/microsoft-security-experts-blog/total-identity-compromise-microsoft-incident-response-lessons-on/ba-p/3753391)
+- **Tutorial**: [Example of a phishing email attack](first-incident-path-phishing.md)
+- **Tutorial**: [Example of an identity-based attack](first-incident-path-identity.md)
 
 The following videos discuss how to investigate phishing and BEC attacks in Microsoft 365 Defender:
+
 - **Video**: Investigating BEC and AiTM phishing in Microsoft 365 Defender
+
 > [!VIDEO https://youtu.be/h9YEr9XwALU]
 
 - **Video**: Defending against spearphishing and phishing using Defender for Office 365
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/<RE5bzVE>]
 
 The following video discusses an identity compromise and what incident responders can do to contain an attack:
+
 - Investigating identity threats using Defender for Identity
+
 > [!VIDEO https://youtu.be/RSVmgcQLv38?t=533]
 
 ### Malware analysis
@@ -123,7 +134,9 @@ Malicious actors can exploit cloud-based apps. Apps can inadvertently leak sensi
 - **Tutorial**: Protect apps in real time
 
 To protect your cloud apps in real time, you can use the following resource:
+
 - **Video**: Protecting cloud apps and related files through Defender for Cloud Apps
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/<RE5d0tz>]
 
 ### Breach analysis
@@ -143,11 +156,13 @@ Attackers often use vulnerabilities to gain access to an organization. Some rans
 - **Tutorial**: [Hunt for exposed devices](/microsoft-365/security/defender-vulnerability-management/tvm-hunt-exposed-devices)
 - **Tutorial**: [Assess your organization’s risk through the Exposure score](/microsoft-365/security/defender-vulnerability-management/tvm-exposure-score)
 - **Video**: Threat and vulnerability management via Defender Vulnerability Management
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/<RE4XTiJ>]
 
 Breaches also happen through various devices like phones and tablets that connect to your organization’s network. Incident responders can further investigate these devices within the portal. The following video talks about the top threats from mobile devices and how you can investigate these:
 
 - Mobile threat defense in Microsoft 365 Defender
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/<RW10icV>]
 
 ## Resources for threat intelligence and hunting

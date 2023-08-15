@@ -53,7 +53,7 @@ An [incident](incidents-overview.md) is a chain of processes created, commands, 
 
 Microsoft 365 Defender has many features that you can use to respond to an incident. You can navigate the incidents by selecting **View all incidents** in the Active incidents card on the Home page or through **Incidents & alerts** on the left navigation pane.
 
-:::image type="content" source="../../media/first-incident/m365d-homepage.png" alt-text="View all incidents shown in Microsoft 365 Defender home page" lightbox="../../media/first-incident/m365d-homepage.png":::
+:::image type="content" source="../../media/first-incident/m365d-viewincidents-home.png" alt-text="View all incidents shown in Microsoft 365 Defender home page" lightbox="../../media/first-incident/m365d-viewincidents-home.png":::
 *Figure 1. Active incidents card on the Microsoft 365 Defender home page*
 
 :::image type="content" source="../../media/first-incident/m365d-incidents.png" alt-text="Incident queue in Microsoft 365 Defender" lightbox="../../media/first-incident/m365d-incidents.png":::
