@@ -50,7 +50,7 @@ The WinHTTP configuration setting is independent of the Windows Internet (WinINe
   - Web Proxy Auto-discovery Protocol (WPAD)
 
     > [!NOTE]
-    > If you're using Transparent proxy or WPAD in your network topology, you don't need special configuration settings. For more information on Defender for Endpoint URL exclusions in the proxy, see [Enable access to Defender for Endpoint service URLs in the proxy server](#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)
+    > If you're using Transparent proxy or WPAD in your network topology, you don't need special configuration settings. 
 
 - Manual static proxy configuration:
 
