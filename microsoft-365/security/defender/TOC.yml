@@ -446,6 +446,8 @@
       items:
         - name: Overview
           href: get-started-mto.md
+        - name: Capabilities
+          href: mto-capabilities.md
     - name: Reference
       items: 
       - name: Manage roles and permissions

@@ -31,7 +31,7 @@ Before you start, make sure that you have the appropriate permissions for access
 
 To access data from other tenants within the Microsoft 365 Defender Multi-Tenant Organization portal, you must have one of the following for each of the tenants that you intend to view and manage:
 
-- [Granular delegated admin privileges (GDAP)](partner-center/gdap-introduction)
+- [Granular delegated admin privileges (GDAP)](/partner-center/gdap-introduction)
 - [Azure Active Directory B2B authentication](/azure/active-directory/external-identities/what-is-b2b)
 
 >[!Note]
@@ -42,7 +42,7 @@ To access data from other tenants within the Microsoft 365 Defender Multi-Tenant
 1. Go to [My account](https://myaccount.microsoft.com/organizations)
 2. Under **Organizations > Other organizations you collaborate with** you’ll see the list of organizations you have guest access to.
 
-   :::image type="content" source="../../media/defender/mto-myaccount.png" alt-text="Screenshot of organizations in the myaccount portal" lightbox="../../media/defender/mto-myaccoun.png":::
+   :::image type="content" source="../../media/defender/mto-myaccount.png" alt-text="Screenshot of organizations in the myaccount portal" lightbox="../../media/defender/mto-myaccount.png":::
 
 3. Verify all the tenants you plan to manage in the Microsoft 365 Defender Multi-Tenant Organization portal appear in the list.
 4. For each tenant, go to the [Microsoft 365 Defender portal)](https://security.microsoft.com/?tid=tenant_id) to validate you can successfully access the tenant.
