@@ -41,7 +41,9 @@ The procedures in this article assume that you've enabled [SharePoint and OneDri
 With Azure AD external collaboration settings, you can allow or block invites to certain domains. By creating an allowlist, you allow guest invitations only to those domains and all others are blocked. You can use this to allow guest invitations to vendors that you've approved while blocking those to vendors you haven't.
 
 To allow sharing invitations only from specified domains
-1. In Azure Active Directory, under **Identity**, expand **External identities**, and then choose **External collaboration settings**.
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as a Global administrator.
+1. Expand **Identity**, and then expand **External Identities**.
+1. Select **External collaboration settings**.
 1. Under **Collaboration restrictions**, select **Allow invitations only to the specified domains**, and then type the domains that you want to allow.
 1. Select **Save**.
 
