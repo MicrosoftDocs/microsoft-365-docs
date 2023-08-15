@@ -59,7 +59,7 @@ Use the tables in the following sections to learn more about how your existing i
 |Defender Vulnerability management – Manage security baselines assessment profiles|Security posture \ posture management \ Security baselines assessment (manage)|
 |Live response capabilities|Security operations \ Basic live response (manage)|
 |Live response capabilities - advanced|Security operations \ Advanced live response (manage) </br> Security operations \ Security data \ File collection (manage)|
-|Manage security settings in the Security Center|Authorization and settings \ Core security setting (All permissions) </br> Authorization and settings \ Core security settings \ Detection tuning (manage)|
+|Manage security settings in the Security Center|Authorization and settings \ Core security setting (manage) </br> Authorization and settings \ Core security settings \ Detection tuning (manage)|
 |Manage portal system settings|Authorization and settings \ System setting (Read and manage)|
 |Manage endpoint security settings in Microsoft Intune|Not supported - this permission is managed in the Microsoft Intune admin center|
 
@@ -70,7 +70,7 @@ Use the tables in the following sections to learn more about how your existing i
 |Security reader|Security operations \ Security data \Security data basics (read)</br>Security operations \ Raw data (Email & collaboration) \ Email message headers (read)</br>Security operations \ Security data \ Response (manage) </br>Authorization and settings \ Security settings \ Core security settings (read) </br>Authorization and settings \ System setting (read)|
 |Global reader|Security operations \ Security data \ Security data basics (read)</br>Security operations \ Raw data (Email & collaboration) \ Email message headers (read)</br>Security operations \ Security data \ Response (manage) </br>Authorization and settings \ Security settings \ Core security settings (read) </br>Authorization and settings \ System setting (read)|
 |Security administrator|Security operations \ Security data \ Security data basics (read) </br>Security operations \ Security data \ Alerts (manage)</br>Security operations \ Raw data (Email & collaboration) \ Email message headers (read)</br>Security operations \ Security data \ Response (manage) </br>Security operations \ Security data \ Email quarantine (manage)</br>Authorization and settings \ Authorization (read) </br> Authorization and settings \ Security setting (All permissions) </br>Authorization and settings \ System settings (Read and manage)|
-|Organization Management|Security operations \ Security data \ Security data basics (read) </br>Security operations \ Security data \ Alerts (manage)</br>Security operations \ Raw data (Email & collaboration) \ Email message headers (read) </br>Security operations \ Security data \ Response (manage) </br>Security operations \ Security data \ Email advanced actions (manage)</br>Security operations \ Security data \ Email quarantine (manage)</br>Authorization and settings \ Authorization (All permissions) </br> Authorization and settings \ Security setting (All permissions) </br>Authorization and settings \ System settings (Read and manage)|
+|Organization Management|Security operations \ Security data \ Security data basics (read) </br>Security operations \ Security data \ Alerts (manage)</br>Security operations \ Raw data (Email & collaboration) \ Email message headers (read) </br>Security operations \ Security data \ Response (manage) </br>Security operations \ Security data \ Email advanced actions (manage)</br>Security operations \ Security data \ Email quarantine (manage)</br>Authorization and settings \ Authorization (Read and manage) </br> Authorization and settings \ Security setting (All permissions) </br>Authorization and settings \ System settings (Read and manage)|
 |View-Only Recipients|Security operations \ Security data \ Security data basics (read) </br>Security operations \ Raw data (Email & collaboration) \ Email message headers (read)|
 |Preview|Security operations\ Security operations \ Raw data (Email & collaboration) \ Email content (read)|
 |Search and Purge|Security operations \ Security data \ Email advanced actions (manage)|
@@ -79,13 +79,13 @@ Use the tables in the following sections to learn more about how your existing i
 |View-only Audit Logs|Security operations \ Security data \ Security data basics (read)|
 |Audit Logs|Security operations \ Security data \ Security data basics (read)|
 |Quarantine|Security operations \ Security data \ Email quarantine (manage)|
-|Role Management|Authorization and settings \ Authorization (All permissions)|
+|Role Management|Authorization and settings \ Authorization (Read and manage)|
 
 ### Map Microsoft Defender for Identity permissions to the Microsoft 365 Defender Unified RBAC permissions
 
 |Defender for Identity permission|Unified RBAC permission|
 |---|---|---|
-|MDI admin|Security operations \ Security data \ Security data basics (read)</br>Security operations \ Security data \ Alerts (manage)</br>Authorization and settings \ Authorization (All permissions) </br>Authorization and settings \ Security setting (All permissions) </br>Authorization and settings \ System settings (Read and manage)|
+|MDI admin|Security operations \ Security data \ Security data basics (read)</br>Security operations \ Security data \ Alerts (manage)</br>Authorization and settings \ Authorization (Read and manage) </br>Authorization and settings \ Security setting (All permissions) </br>Authorization and settings \ System settings (Read and manage)|
 |MDI user|Security operations \ Security data \ Security data basics (read) </br>Security operations \ Security data \ Alerts (manage)</br>Authorization and settings \ Security setting (All permissions) </br>Authorization and settings \ System setting (read)|
 |MDI viewer|Security operations \ Security data \ Security data basics (read)</br>Authorization and settings \ Security settings \ Core security settings (read) </br>Authorization and settings \ System setting (read)|
 
