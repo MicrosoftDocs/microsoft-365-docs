@@ -44,6 +44,26 @@ For more information about cross-tenant synchronization, see [What is cross-tena
 
 If you have issues with user synchronization check the [provisioning logs in Azure Active Directory](/azure/active-directory/reports-monitoring/concept-provisioning-logs).
 
+## User property synchronization
+
+When you set up user synchronization with another tenant in a multi-tenant organization, the following user properties are synchronized:
+
+|Property|Property|
+|:-------|:-------|
+|accountEnabled|physicalDeliveryOfficeName|
+|alternativeSecurityIds|postalCode|
+|city|preferredLanguage|
+|country|showInAddressList|
+|department|state|
+|displayName|streetAddress|
+|employeeId|surname|
+|givenName|telephoneNumber|
+|IsSoftDeleted|userPrincipalName|
+|jobTitle|UserType (member)|
+|mailNickname||
+
+You can change the properties that are synchronized after the synchronization has been configured. For more information, see [Configure cross-tenant synchronization](/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-configure#step-9-review-attribute-mappings).
+
 ## Users synchronized to your tenant from other tenants
 
 Users synchronized to your tenant from other tenants in your multi-tenant organization are synchronized as [Azure AD members rather than guests](/azure/active-directory/external-identities/user-properties).
