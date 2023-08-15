@@ -4,7 +4,6 @@ description: Learn how to use a simplified domain or static IP ranges during onb
 author: mjcaparas
 ms.author: macapara 
 manager: dansimp 
-ms.date: 08/01/2023
 ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: mde
@@ -15,6 +14,7 @@ ms.collection:
 ms.reviewer: 
 search.appverid: MET150
 audience: ITPro
+ms.date: 08/15/2023
 ---
 
 # Onboarding devices using streamlined connectivity for Microsoft Defender for Endpoint 

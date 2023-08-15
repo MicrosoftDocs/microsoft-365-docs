@@ -329,7 +329,7 @@ For AutoIR testing labs, navigate to  **Microsoft 365 Defender > Evaluations &
 
   >[!NOTE]
   > This command will only work on Windows 10, version 1703 or higher, or Windows 11. 
-  >For more information, see [Manage Microsoft Defender Antivirus with the mpcmdrun.exe commandline tool](command-line-arguments-microsoft-defender-antivirus). 
+  >For more information, see [Manage Microsoft Defender Antivirus with the mpcmdrun.exe commandline tool](command-line-arguments-microsoft-defender-antivirus.md). 
 
 #### Test Block at First Sight 
 
