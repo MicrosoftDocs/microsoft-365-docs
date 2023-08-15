@@ -228,298 +228,36 @@ Once you configure your network to communicate with the full list of services, y
 Before proceeding, confirm devices meet the [prerequisites](#prerequisites) and have updated the sensor and Microsoft Defender Antivirus versions. 
 
 
-### Use Defender for Endpoint Client Analyzer to validate connectivity with new URLs pre-onboarding 
+To get the new package, in Microsoft 365 Defender, select **Settings > Endpoints > Device management> Onboarding**.
 
-Run Defender for Endpoint Client Analyzer on devices to confirm pre-onboarding connectivity with new endpoints: 
 
-1.  Download and extract [Client analyzer](https://aka.ms/BetaMDEAnalyzer).
+Select the applicable operating system and choose "Streamlined (preview)" from the Connectivity type dropdown menu.
 
-2.  Download the 'simplified' onboarding package for relevant OS by navigating to ***Settings \> Endpoints \> Device management\> Onboarding*** in Microsoft 365 Defender portal.  
+ For new devices (not onboarded to Defender for Endpoint) supported under this method, follow onboarding steps from previous sections using the updated onboarded package with your preferred deployment method:
 
-    1.  Extract the .cmd from onboarding package. 
+- [Onboard Windows Client](onboard-windows-client.md)
+- [Onboard Windows Server](configure-server-endpoints.md)
+- [Onboard non-Windows devices](configure-endpoints-non-windows.md)
+- [Run a detection test on a device to verify it has been properly onboarded to Microsoft Defender for Endpoint](run-detection-test.md)
 
-3.  Open a command prompt as an administrator. 
 
-4.  Run **mdeclientanalyzer.cmd -o \<path to cmd file\>** from within MDEClientAnalyzer folder. The command will use parameters from onboarding script to test connectivity.
+You will need to exclude devices from any existing onboarding policies that use the standard onboarding package.
 
-5.  View connectivity results within HTML output file or command prompt.
+For migrating devices already onboarded to Defender for Endpoint, see [Migrating devices to the streamlined connectivity](migrate-devices-streamlined.md). You will need to reboot your device and follow specific guidance here.  
 
+:::image type="content" source="images/migrate-devices-streamlined.png" alt-text="Screenshot of onboarding page with streamlined connectivity":::
 
 
-### Onboard devices using the streamlined method
-
-To leverage the new simplified onboarding method, you will need to onboard devices using the updated onboarding script. The onboarding script is required to establish communication with the updated URL/static IP ranges. 
-
-1. Navigate to the Microsoft 365 Defender portal settings page.
-
-2. Select **Settings > Endpoints > Device management> Onboarding**.
-
-    :::image type="content" source="images/simplified-connectivity-options.png" alt-text="Screenshot of onboarding page with simplified connectivity options":::
-
-3. Navigate to the 'Simplified Connectivity options' toggle at the top of the page. Toggle to display the streamlined onboarding approach. 
-
-
-    >[!NOTE]
-    >If your tenant was created after *INSERT DATE HERE* , you will see the simplified option as the default setting.
-
-
-4. Select the relevant OS from the operating system dropdown. 
- 
-5. Onboard using the deployment method of choice. See the preceeding section for guidelines on each deployment method.
-
-    :::image type="content" source="images/connectivity-options.png" alt-text="Screenshot of onboarding page with operating system options":::
-
-
-Restarting devices is mandatory for devices that are currently onboarded to Defender for Endpoint. The switch will not be made until this occurs.   
-
->[!IMPORTANT]
->Restarting scenario: Restarting devices is required if devices have been previously onboarded to Defender for Endpoint. If you are migrating devices, you are not required to offboard. You can simply rerun the script and restart. 
-
-For more information on what tools are supported and how to use them see the next section. 
-
-### Migrating devices using the streamlined method
-
-The following table lists the available tools based on the endpoint that you need to onboard.
-
-Migration recommendation:
-
-- **Start small** - It is recommended to start with a small set of devices first, apply to onboarding blob using any of the supported deployment tools, then monitor for connectivity. 
-
-- **Validate and monitor** - After onboarding the small set of devices, validate that devices have successfully onboarded and are communicating with the service. 
-
-- **Complete migration** - At this stage, you can gradually roll out the migration to a larger set of devices and remove the old URLs from your network device to complete the migration.
-
-|Endpoint|Supported deployment tool|
-|---|---|
-|**Windows 10 & 11 (excluding version 1607 & 1703)**|[Local script (up to 10 devices)](configure-endpoints-script.md) <br>  [Group Policy](configure-endpoints-gp.md) <br>  [Microsoft Intune/ Mobile Device Manager](configure-endpoints-mdm.md) <br>   [Microsoft Configuration Manager](configure-endpoints-sccm.md) <br> [VDI scripts](configure-endpoints-vdi.md)|
-|**Windows servers 2012 R2 (unified solution), 2016 (unified solution) MMA is not supported -   ADD LINK!! , 2019, 2022**  | [Local script (up to 10 devices)](configure-endpoints-script.md) <br>  [Group Policy](configure-endpoints-gp.md) <br>  [Microsoft Configuration Manager](configure-endpoints-sccm.md)<br>[Integration with Microsoft Defender for Cloud](azure-server-integration.md)
-|**macOS**|[Local script](mac-install-manually.md) <br> [Microsoft Intune](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Mobile Device Management](mac-install-with-other-mdm.md)|
-|**Linux servers**|[Local script](linux-install-manually.md) <br> [Puppet](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md) <br> [Chef](linux-deploy-defender-for-endpoint-with-chef.md)<br> [Saltstack](linux-install-with-saltack.md)|
-
-### [Windows 10 and 11](#tab/windows10and11)
-
-### Windows 10 and 11
-
->[!IMPORTANT]
->Windows 10 1607 & 1703 versions are not supported and will need to leverage the legacy URL set. For more information, see [Enable access to the Defender for Endpoint service URLs in the proxy server](configure-environment.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server).
-
-### New device onboarding
-Follow any of the onboarding steps and tools from the previous section, but use the updated script as described in [Onboard devices using the streamlined method](#onboard-devices-using-the-streamlined-method).
-
-### Devices previously onboarded
-For devices migrating to the new URL set, after completing [Step 1](configure-environment.md), select your preferred onboarding method of choice below.
-
-### Local script
-
-Use the guidance in [Local script (up to 10 devices)](configure-endpoints-script.md). After completing the steps, you must then restart the device. Device connectivity will not start if you do not restart the device.
-
-### Group policy
-
-Use the guidance in [Group policy](configure-endpoints-gp.md). After completing the steps, you must then restart the device. Device connectivity will not start if you do not restart the device.
-
-
-### Microsoft Intune / MDM
-GET MORE DETAILS FROM MATT CALL
-
-### Microsoft Configuration Manager 
-
-GET MORE DETAILS FROM MATT CALL
-
-### VDI
-
-FOLLOW UP WITH ERAN
-
-
-
-
-### [**Windows Server**](#tab/Windowsserver)
-
-### Windows Server
-
->[!IMPORTANT]
-> Supported OS: Windows servers 2012 R2 (unified solution), 2016 (unified solution) MMA is not supported -   ADD LINK!! , 2019, 2022. 
-
-### New device onboarding
-Follow any of the onboarding steps and tools from the previous section, but use the updated script as described in [Onboard devices using the streamlined method](#onboard-devices-using-the-streamlined-method).
-
-### Devices previously onboarded
-For devices migrating to the new URL set, after completing [Step 1](configure-environment.md), select your preferred onboarding method of choice below.
-
-
-### Integration with Microsoft Defender for Cloud
-
-Not supported at this time.
-
-### Group policy 
-Use the guidance in [Group policy](configure-endpoints-gp.md) but use the updated script as described in [Onboard devices using the streamlined method](#onboard-devices-using-the-streamlined-method). After completing the steps, you must then restart the device. Device connectivity will not start if you do not restart the device.
-
-### Microsoft Configuration Manager 
-
-GET MORE DETAILS FROM MATT CALL
-
-### VDI
-
-FOLLOW UP WITH ERAN
-
-### [**mac OS**](#tab/macos)
-
-### macOS
-
-MARYSIA TO UPDATE  LATER
-
-### Linux
-
-MARYSIA TO UPDATE  LATER
-
-
----
-
-
-## Verifying device connectivity for migrated devices
-
-
-You can use the following methods to check that you have successfully connected Windows devices:
-
-- [Client analyzer](#use-defender-for-endpoint-client-analyzer-beta-to-validate-connectivity-after-onboarding-for-new-endpoints)
-- [Tracking through the Microsoft 365 Defender portal](#track-connectivity-through-microsoft-365-defender-portal)
-- [Track locally using Event Viewer (for Windows)](#track-locally-on-a-device-using-event-viewer-for-windows)
-- [Run your own tests to confirm connectivity with Defender for Endpoint services -connectivity checks](#run-your-own-checks-to-confirm-connectivity-with-defender-for-endpoint-services-connectivity)
-- Checking the registry editor
-- [PowerShell detection test](#powershell-detection-test)
-
-
-For macOS and Linux, you can use the following methods:
-
-- MDATP tests
-- Tracking through the Microsoft 365 Defender portal
-- Run your own tests to confirm connectivity with Defender for Endpoint services connectivity checks
-
-
-### Use Defender for Endpoint Client Analyzer (BETA) to validate connectivity after onboarding for new endpoints
-
-#### Run the Defender for Endpoint Client analyzer (Beta) version to confirm your device is connecting to the appropriate URLs (updated) 
-
-1. Download and extract Client analyzer from https://aka.ms/BetaMDEAnalyzer.
-
-2. Use the Defender for Endpoint Client Analyzer (Beta) to validate connectivity post-onboarding for new endpoints:
-
-   1. Open a command prompt as administrator.
-
-   2. From within folder, run MDEClientAnalyzer.cmd. The script will use what is configured on device to test connectivity.  
-
-   3. View connectivity results within HTML output file or command prompt 
-
-
-### Track connectivity through Microsoft 365 Defender portal
-
-INSERT INFO FROM ERAN
-
-For more information see, [Create and manage device tags](machine-tags.md).
-
-
-
-
-### Track locally on a device using Event Viewer (for Windows)
-
-Open the Defender for Endpoint service event log using the following steps:
-
-1. On the Windows menu, select **Start**, then type **Event Viewer**. Then select **Event Viewer**.
-
-2. In the log list, under **Log Summary**, scroll down until you see  **Microsoft-Windows-SENSE/Operational**. Double-click the item to open the log. 
-
-
-
- :::image type="content" source="images/log-summary-event-viewer.png" alt-text="Screenshot of Event Viewer with log summary section":::
-
-
-You can also access the log by expanding **Applications and Services Logs > Microsoft > Windows > SENSE**  and select **Operational**. 
-
-Event ID 4 tracks successful connections with MDE Command & Control channel. Verify successful connections with updated URL. 
-
-For example: Contacted server 6 times, all succeeded, URI: https://winatp-gw-cane.microsoft.com/. Message1 in Dataname contains the URL that was contacted. You can verify it is using the updated URL.  
-
-Event ID 5 tracks errors if applicable. 
+Once you are ready to set the default onboarding package to “streamlined”, you can turn on the following Advanced Feature setting in the Microsoft 365 Defender portal (**Settings > Endpoints > Advanced Features**).
 
 >[!NOTE]
->SENSE is the internal name used to refer to the behavioral sensor that powers Microsoft Defender for Endpoint. <br>
-> Events recorded by the service will appear in the log. <br>
-> For more information, see: [Review events and error using Event Viewer](event-error-codes.md).
+>Validate that your environment is ready before moving forward with this option.
 
 
-### Run your own checks to confirm connectivity with Defender for Endpoint services connectivity  
+:::image type="content" source="images/advanced-setting-streamlined-connectivity.png" alt-text="Screenshot of advanced settings page with streamlined connectivity option":::
 
-Once the device is onboarded to Defender for Endpoint, validate that it is available in Device Inventory. 
-
-Check the Device Page Timeline tab to confirm events are flowing from the device. 
-
-#### Live Response 
-
-Ensure Live Response is working on your test device. You can follow instructions here: [Investigate entities on devices using live response](live-response.md).
-
-Make sure to run a couple of basic commands post-connection to confirm connectivity (such as cd, jobs, connect).
-
-#### Automated investigation and response 
-
-Ensure that Automated investigation and response is working on your test device: [Configure automated investigation and response capabilities](/microsoft-365/security/defender/m365d-configure-auto-investigation-response).
-
-For AutoIR testing labs, navigate to  **Microsoft 365 Defender > Evaluations & Tutorials> Tutorials & Simulations > Tutorials>  Automated Investigation tutorials**.
-
-#### Cloud-delivered protection 
-
-Use the following argument with the Microsoft Defender Antivirus command-line utility (mpcmdrun.exe) to verify that your network can communicate with the Microsoft Defender Antivirus cloud service: 
-
-```
-"%ProgramFiles%\Windows Defender\MpCmdRun.exe" -ValidateMapsConnection
-```
- 
-
->[!NOTE]
->Open a Command Prompt as an administrator. Right-click the item in the Start menu, select **Run as administrator** then select **Yes** at the permissions prompt. This command will only work on Windows 10, version 1703 or higher, or Windows 11. 
-
-For more information, see [Manage Microsoft Defender Antivirus with the mpcmdrun.exe commandline tool](command-line-arguments-microsoft-defender-antivirus). 
-
-#### Test Block at First Sight 
-
-Follow instructions for [Microsoft Defender for Endpoint Block at First Sight (BAFS) demonstration](defender-endpoint-demonstration-block-at-first-sight-bafs.md).
-
-#### Test SmartScreen 
-
-Follow instructions for [Microsoft Defender SmartScreen Demo (msft.net)](https://demo.smartscreen.msft.net/). 
-
-#### Check Connections with Advanced Hunting 
-
-INFO FROM ERAN
+This setting will set the default onboarding package to 'streamlined' for applicable operating systems.  You will still have the option to use the standard onboarding package within the onboarding page but you will need to specifically select it in the drop-down.  
 
 
 
-### Registry editor - MARYSIA TO CHECK WITH PAUL/ERAN IF KEEP SECTION
-Check "OnboardedInfo" field in the Registry Editor (Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Advanced Threat Protection). 
 
-
->[!NOTE]
->The field may show as updated in Registry Editor even if the device is not connecting (reboot is still necessary for previously onboarded devices for full connectivity switch).
-
-
-### PowerShell detection test 
-
-1. On the Windows device, create a folder: `C:\test-MDATP-test`.
-
-2. Open Command Prompt as an administrator.
-
-3. In the Command Prompt window, run the following PowerShell command:
-
-   ```powershell
-   powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference = 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-MDATP-test\\invoice.exe');Start-Process 'C:\\test-MDATP-test\\invoice.exe'
-   ```
-
-After the command runs, the Command Prompt window closes automatically. If successful, the detection test is marked as completed, and a new alert appears in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) for the newly onboarded device within about 10 minutes.
-
-
-
-## Offboarding steps 
-
-Use the following steps to offboard a device: 
-
-1.  Run the 'simplified' offboarding script for the applicable OS found under the Endpoint settings offboarding page.  
-
-2.  Restart the device.
