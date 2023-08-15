@@ -67,7 +67,8 @@ Here are the delivery status values that you may see in the report and what they
 |Not Delivered - Blocked phone number|The number is reported as a spam number and is in the vendor's blocklist.|
 |Not Delivered - Unreachable phone number|Recipient's phone is switched off or out of the coverage area.|
 |Not Delivered - Spam Detected|Keyword-based filter detected spam.|
-|Not Delivered - Message limit reached|User sent more SMS text notifications than their profile allows within a given time period.|
+|Not Delivered - Recipient blocked|Recipient's number is blocked from receiving SMS messages from any sender.|
+|Not Delivered - Other error|Other internal server errors.|
 
 ## Related articles
 
