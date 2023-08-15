@@ -1,7 +1,6 @@
 ---
 title: Microsoft 365 Defender Multi-Tenant Organization Unified View 
-description: Learn what steps you need to take to get started with Microsoft 365 Defender
-search.appverid: met150
+description: Learn what steps you need to take to get started with Microsoft 365 Defender Multi-Tenant Organization Unified View 
 ms.service: microsoft-365-security
 ms.subservice: m365d
 ms.author: siosulli
@@ -13,7 +12,6 @@ ms.collection:
   - m365-security
   - highpri
   - tier1
-ms.custom: intro-get-started
 ms.topic: conceptual
 ms.date: 09/01/2023
 ---
@@ -22,30 +20,55 @@ ms.date: 09/01/2023
 
 **Applies to:**
 
-- Microsoft 365 Defender
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- Microsoft 365 Defender Multi-Tenant Organization
 
 Microsoft 365 Defender Multi-Tenant Organization Unified View is a unified experience where you can monitor and manage security across your enterprise. With the integrated alerts across identities, endpoints, data, apps, email, and collaboration tools - investigating and responding to threats now happen in a central location.
 
-In general, you'll need to take the following steps to get started:
+## Verify your tenant access
 
-- **[Step 1: Turn on Microsoft 365 Defender](m365d-enable.md)** <br>
-    You'll first need to turn on the service by making sure you have the right license in place and roles are assigned so that you can access the portal. 
+Before you start, make sure that you have the appropriate permissions for accessing multiple tenants using a single identity.
 
-    You'll then go through some simple settings and then you can confirm that the service is on.
+To access data from other tenants within the Microsoft 365 Defender Multi-Tenant Organization portal, you must have one of the following for each of the tenants that you intend to view and manage:
 
-- **[Step 2: Deploy supported services](deploy-supported-services.md)** <br>
-    After completing the initial steps, you'll need to deploy the supported services that come with Microsoft 365 Defender. Deploying services effectively increases your visibility in the signals from assets across your network.
+- [Granular delegated admin privileges (GDAP)](partner-center/gdap-introduction)
+- [Azure Active Directory B2B authentication](/azure/active-directory/external-identities/what-is-b2b)
 
+>[!Note]
+> Setting up multi-factor authentication trust is highly recommended for each tenant to avoid missing data in the Microsoft 365 Defender Multi-Tenant Organization portal.
+
+### Verify your tenant access with Azure Active Directory B2B
+
+1. Go to [My account](https://myaccount.microsoft.com/organizations)
+2. Under **Organizations > Other organizations you collaborate with** you’ll see the list of organizations you have guest access to.
+
+   :::image type="content" source="../../media/defender/mto-myaccount.png" alt-text="Screenshot of organizations in the myaccount portal" lightbox="../../media/defender/mto-myaccoun.png":::
+
+3. Verify all the tenants you plan to manage in the Microsoft 365 Defender Multi-Tenant Organization portal appear in the list.
+4. For each tenant, go to the [Microsoft 365 Defender portal)](https://security.microsoft.com/?tid=tenant_id) to validate you can successfully access the tenant.
+
+### Verify your tenant access with GDAP
+
+1. Go to the [Microsoft Partner Center](https://partner.microsoft.com/commerce/granularadminaccess/list).
+2. Under **Customers** you can find the list of organizations you have guest access to.
+3. Verify all the tenants you plan to manage in theMicrosoft 365 Defender Multi-Tenant Organization portal appear in the list.
+4. For each tenant, go to the [Microsoft 365 Defender portal)](https://security.microsoft.com/?tid=tenant_id) to validate you can successfully access the tenant.
 
 ## Key capabilities
 
-Turning on Microsoft 365 Defender and deploying services will give you access to the following key capabilities:
-
+For each tenant you have access to in the Microsoft 365 Defender Multi-Tenant Organization portal You'll have the following key capabilities that focus on incident investigation flow and posture management:
 
 | Capability | Description |
 | ------ | ------ |
-| Microsoft Defender for Endpoint | Endpoint protection suite built around powerful behavioral sensors, cloud analytics, and threat intelligence |
-|Microsoft Defender for Office 365 | Advanced protection for your apps and data in Office 365, including email and other collaboration tools |
-| Microsoft Defender for Identity | Defend against advanced threats, compromised identities, and malicious insiders using correlated Active Directory signals |
-| Microsoft Defender for Cloud Apps | Identify and combat cyberthreats across your Microsoft and third-party cloud services |
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+| Aggregated Incidents and alerts queues | Endpoint protection suite built around powerful behavioral sensors, cloud analytics, and threat intelligence |
+| Cross-Tenant advanced hunting| Advanced protection for your apps and data in Office 365, including email and other collaboration tools |
+| Defender Vulnerability Management dashboard | Defend against advanced threats, compromised identities, and malicious insiders using correlated Active Directory signals |
+
+It offers the same experience as the Microsoft 365 Defender portal, as well as aggregating all the tenants you manage into unified views. The multi-tenant portal will only display data you are allowed to see and is compiled on-the-fly.
+
+>[!Note]
+> Data boundaries, Role-based access control (RBAC), and licensing are respected by Unified Views.
+
+## Next steps
+
+- To start using the portal, go to the [Microsoft 365 Defender Multi-Tenant Organization portal](https://mto.security.microsoft.com)
