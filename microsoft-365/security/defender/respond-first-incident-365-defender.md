@@ -32,6 +32,7 @@ ms.date: 08/18/2023
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
+
 - Microsoft 365 Defender
 
 This guide lists Microsoft resources for new Microsoft 365 Defender users to confidently perform [day-to-day incident response tasks](integrate-microsoft-365-defender-secops-services.md) while using the portal. The intended results of using this guide are:
@@ -61,7 +62,7 @@ Microsoft 365 Defender has many features that you can use to respond to an incid
 
 Each incident contains automatically correlated [alerts](investigate-alerts.md) from [different detection sources](microsoft-365-defender.md#microsoft-365-defender-protection) and might involve various endpoints, identities, or cloud apps.
 
-### Triaging incidents
+### Incident triage
 
 Incident prioritization varies per responder, security team, and organization. [Incident response plans](/security/operations/incident-response-planning) and security teams' direction can mandate incident priority. 
 
@@ -80,7 +81,7 @@ You might assign a high priority to the incident using the information above. Yo
 > [!NOTE]
 > Microsoft 365 Defender automatically determines filters like severity, investigation states, impacted assets, and incident statuses. The information is based on your organization’s network activities contextualized with threat intelligence feeds and the automated remediation actions applied.
 
-### Managing incidents
+### Manage incidents
 
 You can contribute to [incident management](manage-incidents.md) efficiency by providing essential information in incidents and alerts. When you add information to the following filters from when you triage and analyze each incident, you provide further context to that incident that other responders can take advantage of:
 
@@ -95,11 +96,14 @@ Learn how to classify incidents and alerts through this video:
 
 
 ## Next steps
+
 -	[Analyze your first incident](respond-first-incident-analyze.md)
 - [Remediate your first incident](respond-first-incident-remediate.md)
 - [Learn Microsoft 365 Defender's features and functions through the Ninja training](https://techcommunity.microsoft.com/t5/microsoft-365-defender/become-a-microsoft-365-defender-ninja/ba-p/1789376)
 
 ## See also
+
 - [Integrate Microsoft 365 Defender into your security operations](integrate-microsoft-365-defender-secops-plan.md)
+- [Respond to common attacks using incident response playbooks](/security/operations/incident-response-playbooks)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

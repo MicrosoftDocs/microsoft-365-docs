@@ -32,11 +32,12 @@ ms.date: 08/18/2023
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
+
 - Microsoft 365 Defender
 
 Understanding the context that surrounds [incidents](incidents-overview.md) is essential in analyzing attacks.  Combining your expertise and experience with Microsoft 365 Defender's features and capabilities ensure faster resolution of incidents and your organization’s safety from cyber attacks.
 
-Today's threats on data security - [business email compromise (BEC)](https://www.microsoft.com/en-us/security/business/security-101/what-is-business-email-compromise-bec), malware like backdoors and [ransomware](/security/ransomware), organizational breaches, and [nation-state attacks](https://www.microsoft.com/en-us/security/business/security-insider/) – require quick, intelligent, and decisive action from incident responders. Tools like [Microsoft 365 Defender](microsoft-365-defender.md) allow response teams to detect, triage, and investigate incidents through its single-pane-of-glass experience and find the information needed to make these timely decisions.
+Today's threats on data security - [business email compromise (BEC)](https://www.microsoft.com/security/business/security-101/what-is-business-email-compromise-bec), malware like backdoors and [ransomware](/security/ransomware), organizational breaches, and [nation-state attacks](https://www.microsoft.com/security/business/security-insider/) – require quick, intelligent, and decisive action from incident responders. Tools like [Microsoft 365 Defender](microsoft-365-defender.md) allow response teams to detect, triage, and investigate incidents through its single-pane-of-glass experience and find the information needed to make these timely decisions.
 
 ## Investigation tasks
 
@@ -62,7 +63,7 @@ More investigation capabilities to further analyze an attack are available in th
 
 ## Investigating threats
 
-Complex threats like [adversary-in-the-middle attacks](https://www.microsoft.com/en-us/security/blog/2023/03/13/dev-1101-enables-high-volume-aitm-campaigns-with-open-source-phishing-kit/) and ransomware often require manual investigation. An incident responder tackling these complicated attacks looks for the following crucial information:
+Complex threats like [adversary-in-the-middle attacks](https://www.microsoft.com/security/blog/2023/03/13/dev-1101-enables-high-volume-aitm-campaigns-with-open-source-phishing-kit/) and ransomware often require manual investigation. An incident responder tackling these complicated attacks looks for the following crucial information:
 
 - Presence of malware or suspicious use of tools and apps
 - Clues about any communication channels or entry points used by any malicious or suspicious entity
@@ -167,14 +168,17 @@ Breaches also happen through various devices like phones and tablets that connec
 
 ## Resources for threat intelligence and hunting
 
-Most incident response teams are tasked to track the threat landscape to keep attacks that can potentially incur damage to the organization at bay. Microsoft 365 Defender delivers critical information about emerging threats through [Threat analytics](threat-analytics.md).
+Most incident response teams are tasked to track the threat landscape to keep attacks that can potentially incur damage to the organization at bay. You have direct access to the latest information on emerging threats and attacks through the portal's [Threat analytics](threat-analytics.md).
+
+:::image type="content" source="../../media/first-incident/m365d-threat-analytics.png" alt-text="Threat analytics home page" lightbox="../../media/first-incident/m365d-threat-analytics.png":::
 
 The latest security research and changes from Microsoft security research teams can be accessed from:
 
-- [Microsoft Security blog](https://www.microsoft.com/en-us/security/blog/topic/threat-intelligence/?sort-by=newest-oldest&date=any)
+- [Microsoft Security blog](https://www.microsoft.com/security/blog/topic/threat-intelligence/?sort-by=newest-oldest&date=any)
 - [Microsoft threat actor information](/microsoft-365/security/intelligence/microsoft-threat-actor-naming)
 
 Moreover, organizations can extend security operations teams’ capabilities through the following Microsoft offerings:
+
 - [Defender Experts for XDR](dex-xdr-overview.md)
 - [Threat hunting with Defender Experts for Hunting](defender-experts-for-hunting.md)
 

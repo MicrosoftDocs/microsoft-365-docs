@@ -32,6 +32,7 @@ ms.date: 08/18/2023
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
+
 - Microsoft 365 Defender
 
 Microsoft 365 Defender provides detection and analysis capabilities to ensure containment and eradication of threats. Containment includes steps to reduce the impact of the attack while eradication ensures all traces of attacker activity are removed from the network.
@@ -103,7 +104,7 @@ The following tutorials enumerate steps and actions that you can apply when inve
 -	[Remediation actions for user accounts via Defender for Identity](/defender-for-identity/remediation-actions)
 -	[Applying policies to control apps with Defender for Cloud Apps](/defender-cloud-apps/control-cloud-apps-with-policies)
 
-## Next step
+## Next steps
 
 -	[Simulate attacks through the attack simulation training](eval-defender-investigate-respond-simulate-attack.md)
 
