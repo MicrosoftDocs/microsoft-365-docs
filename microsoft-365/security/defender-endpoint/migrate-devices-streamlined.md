@@ -214,9 +214,9 @@ Replace the onboarding package file in the current deployment method.
 
 You can use the following methods to check that you have successfully connected Windows devices:
 
-- [Client analyzer](#u)
-- [Tracking with advanced hunting in Microsoft 365 Defender](#t)
-- [Track locally using Event Viewer (for Windows)](#t)
+- [Client analyzer](#use-defender-for-endpoint-client-analyzer-windows-to-validate-connectivity-after-onboarding-for-migrated-endpoints)
+- [Tracking with advanced hunting in Microsoft 365 Defender](#tracking-with-advanced-hunting-in-microsoft-365-defender)
+- [Track locally using Event Viewer (for Windows)](#tracking-locally-on-a-device-through-windows-event-viewer)
 - [Run tests to confirm connectivity with Defender for Endpoint services](#)
 - Checking the registry editor
 - [PowerShell detection test](#powershell-detection-test)
@@ -272,10 +272,10 @@ pen the Defender for Endpoint service event log using the following steps:
 2. In the log list, under **Log Summary**, scroll down until you see **Microsoft-Windows-SENSE/Operational**. Double-click the item to open the log. 
 
 
- :::image type="content" source="images/log-summary-event-viewer.png" alt-text="Screenshot of Event Viewer with log summary section":::
+	:::image type="content" source="images/log-summary-event-viewer.png" alt-text="Screenshot of Event Viewer with log summary section":::
 
 
-   You can also access the log by expanding**Applications and Services Logs>Microsoft>Windows>SENSE** and select **Operational**. 
+	You can also access the log by expanding**Applications and Services Logs>Microsoft>Windows>SENSE** and select **Operational**. 
 
 3. Event ID 4 tracks successful connections with Defender for Endpoint Command & Control channel. Verify successful connections with updated URL. For example:
 
@@ -294,10 +294,10 @@ pen the Defender for Endpoint service event log using the following steps:
 >[!NOTE]
 >SENSE is the internal name used to refer to the behavioral sensor that powers Microsoft Defender for Endpoint. <br>
 > Events recorded by the service will appear in the log. <br>
-> For more information, see: [Review events and error using Event Viewer](event-error-codes.md).
+> For more information, see [Review events and error using Event Viewer](event-error-codes.md).
 
 
-### Run your own checks to confirm connectivity with Defender for Endpoint services connectivity  
+### Run tests to confirm connectivity with Defender for Endpoint services  
 
 Once the device is onboarded to Defender for Endpoint, validate that it is continuing to appear in Device Inventory. The DeviceID should remain the same.
 
@@ -305,7 +305,7 @@ Check the Device Page Timeline tab to confirm events are flowing from the device
 
 #### Live Response 
 
-Ensure [Live Response](respond-machine-alerts.md#initiate-live-response-session) is working on your test device. You can follow instructions here: [Investigate entities on devices using live response](live-response.md).
+Ensure [Live Response](respond-machine-alerts.md#initiate-live-response-session) is working on your test device. Follow instructions in [Investigate entities on devices using live response](live-response.md).
 
 Make sure to run a couple of basic commands post-connection to confirm connectivity (such as cd, jobs, connect).
 
@@ -317,16 +317,19 @@ For AutoIR testing labs, navigate to  **Microsoft 365 Defender > Evaluations &
 
 #### Cloud-delivered protection 
 
-Use the following argument with the Microsoft Defender Antivirus command-line utility (mpcmdrun.exe) to verify that your network can communicate with the Microsoft Defender Antivirus cloud service: 
+1. Open a Command Prompt as an administrator.
 
-```
-"%ProgramFiles%\Windows Defender\MpCmdRun.exe" -ValidateMapsConnection
-```
- 
+2. Right-click the item in the Start menu, select **Run as administrator** then select **Yes** at the permissions prompt. 
 
->[!NOTE]
->Open a Command Prompt as an administrator. Right-click the item in the Start menu, select **Run as administrator** then select **Yes** at the permissions prompt. This command will only work on Windows 10, version 1703 or higher, or Windows 11. 
->For more information, see [Manage Microsoft Defender Antivirus with the mpcmdrun.exe commandline tool](command-line-arguments-microsoft-defender-antivirus). 
+3. Use the following argument with the Microsoft Defender Antivirus command-line utility (mpcmdrun.exe) to verify that your network can communicate with the Microsoft Defender Antivirus cloud service: 
+
+	```
+	"%ProgramFiles%\Windows Defender\MpCmdRun.exe" -ValidateMapsConnection
+	```
+
+  >[!NOTE]
+  > This command will only work on Windows 10, version 1703 or higher, or Windows 11. 
+  >For more information, see [Manage Microsoft Defender Antivirus with the mpcmdrun.exe commandline tool](command-line-arguments-microsoft-defender-antivirus). 
 
 #### Test Block at First Sight 
 
@@ -337,7 +340,7 @@ Follow instructions in [Microsoft Defender for Endpoint Block at First Sight (BA
 Follow instructions in [Microsoft Defender SmartScreen Demo (msft.net)](https://demo.smartscreen.msft.net/). 
 
 
-#### PowerShell detection test
+### PowerShell detection test
 1. On the Windows device, create a folder: `C:\test-MDATP-test`.
 
 2. Open Command Prompt as an administrator.
