@@ -91,4 +91,4 @@ Once this is enabled, provided you haven't opted out, you can start using the ne
 
 :::image type="content" source="../../media/599ca9e7-c05a-429e-ae8d-359f1291a3d8.png" alt-text="An OME protected message in Outlook on the web" lightbox="../../media/599ca9e7-c05a-429e-ae8d-359f1291a3d8.png":::
 
-For more information about the new enhancements, see [Office 365 Message Encryption](../../compliance/ome.md).
+For more information about the new enhancements, see [Office 365 Message Encryption](/purview/ome).
