@@ -59,7 +59,7 @@ Use the tables in the following sections to learn more about how your existing i
 |Defender Vulnerability management – Manage security baselines assessment profiles|Security posture \ posture management \ Security baselines assessment (manage)|
 |Live response capabilities|Security operations \ Basic live response (manage)|
 |Live response capabilities - advanced|Security operations \ Advanced live response (manage) </br> Security operations \ Security data \ File collection (manage)|
-|Manage security settings in the Security Center | Authorization and settings \ Security settings \ Core security setting (manage) </br> Authorization and settings\Security settings \ Detection tuning (manage)|
+|Manage security settings in the Security Center | Authorization and settings \ Security settings \ Core security settings (manage) </br> Authorization and settings\Security settings \ Detection tuning (manage)|
 |Manage portal system settings|Authorization and settings \ System setting (Read and manage)|
 |Manage endpoint security settings in Microsoft Intune|Not supported - this permission is managed in the Microsoft Intune admin center|
 
