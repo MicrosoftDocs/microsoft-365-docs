@@ -123,8 +123,8 @@ Devices must meet specific prerequisites to use the streamlined connectivity met
 -   Windows Server 2019
 -   Windows Server 2022
 -   Windows Server 2012 R2, Server 2016 R2, fully updated running Defender for Endpoint modern unified solution (installation through MSI).
-- macOS supported versions with MDE product version 101.23052.0003 +.*
-- Linux supported versions with MDE product version 101.23052.0003 +.*
+- macOS supported versions with Defender for Endpoint product version 101.23052.0003 +.*
+- Linux supported versions with Defender for Endpoint product version 101.23052.0003 +.*
 
 >[!IMPORTANT]
 >- **Devices running on MMA agent are not supported** on the streamlined onboarding method and will need to continue using legacy URL set (Windows 7, Windows 8.1, Windows Server 2008 R2 MMA, Servers not upgraded to Unified Agent (MMA)). 
@@ -179,7 +179,7 @@ With streamlined connectivity, IP-based solutions can be used as an alternative 
 - Defender for Endpoint Command and Control
 
 >[!IMPORTANT]
->The EDR Cyber data service must be configured separately if you are using the IP method (this service is only consolidated on a URL level). Similarly to Option 1, you must maintain connectivity with other required services including SmartScreen, CRL, Windows Update, and other services.
+>The EDR Cyber data service must be configured separately if you are using the IP method (this service is only consolidated on a URL level). Similarly to Option 1, you must maintain connectivity with other required services including SmartScreen, CRL, Windows Update, and other services.<br>
 >It is recommended to refer to the following Azure service tags for Microsoft Defender for Endpoint services. The latest IP ranges will always be found in the service tag.  
 >For more information, see [Download Azure IP Ranges and Service Tags – Public Cloud from Official Microsoft Download Center](https://www.microsoft.com/download/details.aspx?WT.mc_id=DP-MVP-5004154&id=56519), [Azure IP ranges](https://azureipranges.azurewebsites.net/).
 
@@ -189,7 +189,7 @@ With streamlined connectivity, IP-based solutions can be used as an alternative 
 | Service tag name    |    Defender for Endpoint services included   |
 :---|:---
 MicrosoftDefenderForEndpoint | MAPS, Malware Sample Submission Storage, AutoIR Sample Storage,  Command and Control.
-OneDsCollector | EDR Cyberdata <br><br> Note: The traffic under this service tag is not limited to MDE and includes diagnostic data traffic for other Microsoft services. 
+OneDsCollector | EDR Cyberdata <br><br> Note: The traffic under this service tag is not limited to Defender for Endpoint and includes diagnostic data traffic for other Microsoft services. 
 
 
 The following table lists the current static IP ranges. For latest list, refer to the Azure service tags.
@@ -222,7 +222,7 @@ To test streamlined connectivity for devices not yet onboarded to Defender for E
  
 
 >[!NOTE]
->For devices not yet onboarded to MDE, client analyzer will test against standard set of URLs. To test the streamlined approach, you will need to run with the switches listed above. 
+>For devices not yet onboarded to Defender for Endpoint, client analyzer will test against standard set of URLs. To test the streamlined approach, you will need to run with the switches listed above. 
 
 For Client Analyzer on macOS/Linux: **ADD INFO HERE**
 

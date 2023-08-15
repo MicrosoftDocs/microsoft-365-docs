@@ -246,9 +246,12 @@ You can use advanced hunting in Microsoft 365 Defender portal to view the connec
 
 This information is found in the DeviceInfo table under the "ConnectivityType" column:
 
-   **Column Name:** ConnectivityType 
+   **Column Name:** ConnectivityType
+
    **Possible Values:** Streamlined, Standard, *blank* 
+
    **Data type:** string
+
    **Description:** Type of connectivity from the device to the cloud
 
 Once a device is migrated to use the streamlined method and the device establishes successful communication with the EDR command & control channel, the value will be represented as "streamlined".
@@ -378,9 +381,12 @@ You can use advanced hunting in Microsoft 365 Defender portal to view the connec
 
 This information is found in the DeviceInfo table under the "ConnectivityType" column:
 
-   **Column Name:** ConnectivityType 
+   **Column Name:** ConnectivityType
+
    **Possible Values:** Streamlined, Standard, *blank* 
+
    **Data type:** string
+
    **Description:** Type of connectivity from the device to the cloud
 
 Once a device is migrated to use the streamlined method and the device establishes successful communication with the EDR command & control channel, the value will be represented as "streamlined".
@@ -391,7 +397,7 @@ For devices that have not yet attempted to reonboard, the value will remain blan
 
 For more information on using advanced hunting in Microsoft 365 Defender, see [Overview - Advanced hunting](/microsoft-365/security/defender/advanced-hunting-overview).
 
-### Use Defender for Endpoint Client Analyzer (Xplat) to validate connectivity post-onboarding for newly migrated endpoints
+### Use Defender for Endpoint Client Analyzer (cross-platform) to validate connectivity post-onboarding for newly migrated endpoints
 
 Download and run the client analyzer for macOS or Linux. For rore information, see [Download and run the client analyzer](download-client-analyzer.md).
 
