@@ -89,9 +89,9 @@ Currently, the Teams EHR connector supports integration with the Cerner EHR syst
 
 ## Virtual appointment meeting template
 
-The Virtual appointment template is a default meeting template in Teams that your users can use to schedule virtual appointments with customers, clients and other people outside your organization. The template allows you to specify values for meeting settings that meeting organizers typically control. Use it to apply default settings and enforce settings.
+The Virtual appointment template is a default meeting template in Teams that your users can use to schedule virtual appointments with external guests, such as customers, clients and other people outside your organization.
 
-With this template, you can enable a consistent experience across your organization for virtual appointments scheduled directly within Teams and help enforce compliance requirements. 
+With this template, you can enable a consistent experience across your organization for virtual appointments scheduled directly within Teams.
 
 To learn more, see [Virtual appointment meeting template in Teams](/microsoftteams/virtual-appointment-meeting-template).
 
