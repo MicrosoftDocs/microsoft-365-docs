@@ -2,11 +2,7 @@
 title: Technological partners of Microsoft 365 Defender
 ms.reviewer:
 description: View technological partners of M365 Defender to enhance detection, investigation, and threat intelligence capabilities of the platform.
-keywords: partners, technological partner, applications, third-party, SIEM, threat intelligence, sentinel, SOAR, cross platform, m365 integrations, dns security, network protection
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: v-aljupudi
 author: alekyaj
 ms.localizationpriority: medium
@@ -186,3 +182,4 @@ The following are the solution's categories:
 - [Connect apps to get visibility and control|Microsoft Docs](/defender-cloud-apps/enable-instant-visibility-protection-and-governance-actions-for-your-apps)
 - [Partner applications in Microsoft Defender for Endpoint|Microsoft Docs](partner-applications.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+
