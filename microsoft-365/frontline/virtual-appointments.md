@@ -93,7 +93,7 @@ The Virtual appointment template is a default meeting template in Teams that you
 
 With this template, you can enable a consistent experience across your organization for virtual appointments scheduled directly within Teams.
 
-To learn more, see [Virtual appointment meeting template in Teams](/microsoftteams/virtual-appointment-meeting-template).
+To learn more, see [Manage the Virtual appointment meeting template in Teams](/microsoftteams/virtual-appointment-meeting-template).
 
 ## Virtual Appointment Graph API
 
