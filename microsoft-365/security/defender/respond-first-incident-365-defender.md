@@ -62,7 +62,7 @@ Microsoft 365 Defender has many features that you can use to respond to an incid
 
 Each incident contains automatically correlated [alerts](investigate-alerts.md) from [different detection sources](microsoft-365-defender.md#microsoft-365-defender-protection) and might involve various endpoints, identities, or cloud apps.
 
-### Incident triage
+## Incident triage
 
 Incident prioritization varies per responder, security team, and organization. [Incident response plans](/security/operations/incident-response-planning) and security teams' direction can mandate incident priority. 
 
@@ -81,7 +81,7 @@ You might assign a high priority to the incident using the information above. Yo
 > [!NOTE]
 > Microsoft 365 Defender automatically determines filters like severity, investigation states, impacted assets, and incident statuses. The information is based on your organization’s network activities contextualized with threat intelligence feeds and the automated remediation actions applied.
 
-### Manage incidents
+## Manage incidents
 
 You can contribute to [incident management](manage-incidents.md) efficiency by providing essential information in incidents and alerts. When you add information to the following filters from when you triage and analyze each incident, you provide further context to that incident that other responders can take advantage of:
 

@@ -45,7 +45,7 @@ Investigations usually involve responders viewing several apps while simultaneou
 
 - **Pivoting** – the portal aggregates important attack information contextualized across the Defender workloads enabled in your organization. The portal consolidates all information across a single attack’s components (file, URL, mailbox, a user account, or device), showing relationships and timeline of activities. With all the information available in a page, the portal allows incident responders to pivot across related entities and events to find the information they need to make decisions.
 
-- [**Hunting**](advanced-hunting-overview.md) – threat hunters can find known and possible threats through the portal using Kusto queries. If you're new to Kusto, you can [hunt for threats with or without guidance](advanced-hunting-modes.md).
+- **Hunting** – threat hunters can find known and possible threats within an organization through the portal's [advanced hunting](advanced-hunting-overview.md) capability using Kusto queries. If you're new to Kusto, use the [guided mode](advanced-hunting-modes.md) to hunt for threats.
 
 - **Insight** – where applicable, incident responders can view actions to previously detected event and alerts to aid present investigations. Additional insights are also automatically added to events and alerts through Microsoft’s own threat intelligence efforts and from sources like the [MITRE ATT&CK®](https://attack.mitre.org/) framework and [VirusTotal](https://www.virustotal.com/gui/home/upload).
 
@@ -172,12 +172,22 @@ Most incident response teams are tasked to track the threat landscape to keep at
 
 :::image type="content" source="../../media/first-incident/m365d-threat-analytics.png" alt-text="Threat analytics home page" lightbox="../../media/first-incident/m365d-threat-analytics.png":::
 
-The latest security research and changes from Microsoft security research teams can be accessed from:
+To proactively hunt for threats, use the portal's [advanced hunting](advanced-hunting-overview.md) capability.
+
+:::image type="content" source="../../media/first-incident/m365d-advancedhunting.png" alt-text="Advanced hunting page in Microsoft 365 Defender" lightbox="../../media/first-incident/m365d-advancedhunting.png":::
+
+The following resources provide more information on how to use advanced hunting:
+
+- [Learn the Kusto query language](advanced-hunting-query-language.md)
+- [Build hunting queries using the guided mode](advanced-hunting-query-builder.md)
+- [Hunt for threats across entities](advanced-hunting-query-emails-devices.md)
+
+Extend your threat intelligence with the latest security research and changes from Microsoft security research teams:
 
 - [Microsoft Security blog](https://www.microsoft.com/security/blog/topic/threat-intelligence/?sort-by=newest-oldest&date=any)
 - [Microsoft threat actor information](/microsoft-365/security/intelligence/microsoft-threat-actor-naming)
 
-Moreover, organizations can extend security operations teams’ capabilities through the following Microsoft offerings:
+Microsoft's experts for incident response and threat hunting enhance your security operations teams’ capabilities. Know more about the experts and how to engage them in the following resources:
 
 - [Defender Experts for XDR](dex-xdr-overview.md)
 - [Threat hunting with Defender Experts for Hunting](defender-experts-for-hunting.md)
@@ -185,7 +195,7 @@ Moreover, organizations can extend security operations teams’ capabilities thr
 ## Next step
 
 - [Remediate your first incident](respond-first-incident-remediate.md)
-- [Learn Microsoft 365 Defender's features and functions through the Ninja training](https://techcommunity.microsoft.com/t5/microsoft-365-defender/become-a-microsoft-365-defender-ninja/ba-p/1789376)
+- [Explore Microsoft 365 Defender through the virtual Ninja training](https://adoption.microsoft.com/ninja-show/)
 
 ## See also
 
