@@ -1,14 +1,13 @@
 ---
 title: Manage your Microsoft Defender for Endpoint subscription settings across client devices (preview!)
 description: Learn about your options for managing your Defender for Endpoint subscription settings. Choose Plan 1, Plan 2, or mixed mode.
-keywords: Defender for Endpoint, choose plan 1, choose plan 2, mixed mode, device tag, endpoint protection, endpoint security, device security, cybersecurity
 search.appverid: MET150  
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 03/06/2023
+ms.date: 08/05/2023
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
@@ -113,6 +112,7 @@ For example, suppose that you want to use a tag called `VIP` for all the devices
 
    If you chose to apply Defender for Endpoint Plan 1 to all devices, proceed to [Validate that devices are receiving only Defender for Endpoint Plan 1 capabilities](#validate-that-a-device-is-receiving-only-defender-for-endpoint-plan-1-capabilities).
 
+
 ---
 
 ## Validate that a device is receiving only Defender for Endpoint Plan 1 capabilities
@@ -124,11 +124,13 @@ After you have assigned Defender for Endpoint Plan 1 capabilities to some or all
 2. Select a device that is tagged with `License MDE P1`. You should see that Defender for Endpoint Plan 1 is assigned to the device.
 
 > [!NOTE]
-> Devices that are assigned Defender for Endpoint Plan 1 capabilities will not have vulnerabilities or security recommendations listed.
+> Devices that are assigned Defender for Endpoint Plan 1 capabilities don't have any vulnerabilities or security recommendations listed.
 
 ## Review license usage
 
-The license usage report is estimated based on sign-in activities on the device. To reduce management overhead, there will not be a requirement for device-to-user mapping and assignment. Instead, the license report will provide a utilization estimation that is calculated based on the utilization seen across your organization. It might take up to one day for your usage report to reflect the active usage of your devices.
+The license usage report is estimated based on sign-in activities on the device. Defender for Endpoint Plan 2 licenses are per user, and each user can have up to five concurrent, onboarded devices. To laern more about license terms, see [Microsoft Licensing](https://www.microsoft.com/en-us/licensing/default).  
+
+To reduce management overhead, there's no requirement for device-to-user mapping and assignment. Instead, the license report provides a utilization estimation that is calculated based on device usage seen across your organization. It might take up to one day for your usage report to reflect the active usage of your devices.
 
 > [!IMPORTANT]
 > To access license information, you must have one of the following roles assigned in Azure Active Directory (Azure AD):
@@ -150,4 +152,6 @@ The license usage report is estimated based on sign-in activities on the device.
 - [Get started with Microsoft Security (trial offers)](https://www.microsoft.com/security/business/get-started/start-free-trial)
 - [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)
 - [Microsoft Defender for Business](../defender-business/mdb-overview.md) (endpoint protection for small and medium-sized businesses)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+
