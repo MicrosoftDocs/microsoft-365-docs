@@ -69,7 +69,56 @@ To remove a tenant from a multi-tenant organization in Microsoft 365
 1. Select **Remove tenant**.
 1. Read the details regarding tenant removal in the side panel, and then select **Remove tenant**.
 
-Removing a tenant doesn't change any user sync configurations or cross-tenant access settings in Azure AD. We recommend you review these settings and make any updates needed after the tenant is removed.
+Removing a tenant doesn't change any user synchronization configurations or cross-tenant access settings in Azure AD. We recommend you review these settings and make any updates needed after the tenant is removed.
+
+#### Remove synchronized users from other tenants
+
+When you remove a tenant from a multi-tenant organization, you may want to stop synchronizing users between that tenant and the tenants that remain in the multi-tenant organization. This can be done by updating the cross-tenant synchronization configuration in Azure AD and removing the security groups being synchronized, then restarting the synchronization with zero users.
+
+Cross-tenant synchronization configurations for multi-tenant organizations that were created in the Microsoft 365 admin center are named *MTO_Sync_\<TenantID\>* in Azure AD cross-tenant synchronization.
+
+To remove the cross-synchronized users:
+
+- For the tenant that is leaving the multi-tenant organization, update the synchronization configurations for each remaining tenant in the multi-tenant organization where you're synchronizing users.
+
+- For each tenant that's remaining in the multi-tenant organization, update the synchronization configuration for the tenant that's leaving.
+
+To remove your users from other tenants in a multi-tenant organization
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as a Global administrator.
+1. Expand **Identity**, and then expand **External Identities**.
+1. Select **Cross-tenant synchronization**.
+1. Select **Configurations**.
+1. Select the link for the configuration you want to update.
+1. Select **Users and groups**
+1. Select the check boxes for the security groups that you want to remove, and then select **Remove**.
+1. Select **Overview**.
+1. Select **Restart provisioning**.
+
+Once the users have been removed from the other tenants' directories, you can stop provisioning for the synchronization configurations or delete them.
+
+#### Stop user sync and automatic invitation redemption
+
+Once you remove a tenant from a multi-tenant organization, you may want to stop user sync and automatic invitation redemption with the tenants that remain in the multi-tenant organization.
+
+To prevent user sync and automatic invitation redemption:
+
+- For the tenant that is leaving the multi-tenant organization, update the cross-tenant access settings for each tenant that's remaining in the multi-tenant organization.
+
+- For each tenant that's remaining in the multi-tenant organization, update the cross-tenant access settings for the tenant that's leaving.
+
+To prevent user sync and automatic invitation redemption
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as a Global administrator.
+1. Expand **Identity**, and then expand **External Identities**.
+1. Select **Cross-tenant access settings**.
+1. On the **Organizational settings** tab, select the link for the **Inbound access** settings for the tenant you want to update.
+    1. On the **Trust settings** tab, clear the **Automatically redeem invitations with the tenant \<organization\>** check box.
+    1. On the **Cross-tenant sync** tab, clear the **Allow users sync into this tenant** check box.
+    1. Select **Save**.
+1. Select the link for the **Outbound access** settings for the tenant you want to update.
+    1. On the **Trust settings** tab, clear the **Automatically redeem invitations with the tenant \<organization\>** check box.
+    1. Select **Save**.
+
+For more information about cross-tenant access settings, see [Configure cross-tenant access settings for B2B collaboration](/azure/active-directory/external-identities/cross-tenant-access-settings-b2b-collaboration).
 
 ## Related topics
 
