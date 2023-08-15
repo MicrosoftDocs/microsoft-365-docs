@@ -144,9 +144,14 @@ Devices must meet specific prerequisites to use the streamlined connectivity met
 |     Windows Server   2012 R2, 2016*    |     Unified Agent    |
 |     Windows Server   2016 R2    |     Unified Agent    |
 
+## Streamlined connectivity process
+
+The following illustration shows the streamlined connectivity process and the corresponding stages:
+
+:::image type="content" source="images/streamlined-connectivity-process.png" alt-text="Illustration of  streamlined connectivity process":::
 
 
-## Stage 1. Configure your network environment for cloud connectivity 
+### Stage 1. Configure your network environment for cloud connectivity 
 
 Once you confirm prerequisites are met, ensure your network environment is properly configured to support the streamlined connectivity method. Follow the steps outlined in using streamlined (preview method),  [Configure your network environment to ensure connectivity with Defender for Endpoint service](configure-environment.md). 
 
@@ -158,13 +163,13 @@ Streamlined connectivity allows you to use the following option to configure clo
 - [Option 2: Use static IP ranges](#option-2-configure-connectivity-using-static-ip-ranges)
  
 
-### Option 1: Configure connectivity using the simplified domain
+#### Option 1: Configure connectivity using the simplified domain
 
 Configure your environment to allow connections with the simplified Defender for Endpoint domain: **\*.endpoint.security.microsoft.com**. For more information, see [Configure your network environment to ensure connectivity with Defender for Endpoint service](configure-environment.md).
 
 You must maintain connectivity with remaining required services listed under the updated list: [LINK](). For example, Certification Revocation List, Windows update, SmartScreen.
 
-### Option 2: Configure connectivity using static IP ranges 
+#### Option 2: Configure connectivity using static IP ranges 
 
 With streamlined connectivity, IP-based solutions can be used as an alternative to URLs. These IPs cover the following services:
 
@@ -200,11 +205,11 @@ The following table lists the current static IP ranges. For latest list, refer t
 >[!IMPORTANT]
 > In compliance with Defender for Endpoint security and compliance standards, your data will be processed and stored in accordance with your tenant's physical location. Based on client location, traffic may flow through any of these IP regions (which correspond to Azure datacenter regions). For more information, see [Data storage and privacy](/microsoft-365/security/defender-endpoint/data-storage-privacy).  
 
-## Stage 2. Configure your devices to connect to Defender for Endpoint service
+### Stage 2. Configure your devices to connect to Defender for Endpoint service
 
 Configure devices to communicate through your connectivity infrastructure. Ensure devices meet pre-requisites and have updated sensor and Microsoft Defender Antivirus versions.  For more information, see [Configure device proxy and Internet connection settings ](/microsoft-365/security/defender-endpoint/configure-proxy-internet).
 
-## Stage 3. Verify client connectivity pre-onboarding
+### Stage 3. Verify client connectivity pre-onboarding
 
 
 For more information, see [Verify client connectivity](verify-connectivity.md).
@@ -221,7 +226,7 @@ To test streamlined connectivity for devices not yet onboarded to Defender for E
 
 For Client Analyzer on macOS/Linux: **ADD INFO HERE**
 
-## Stage 4. Apply the new onboarding package required for streamlined connectivity
+### Stage 4. Apply the new onboarding package required for streamlined connectivity
 
 Once you configure your network to communicate with the full list of services, you can begin onboarding devices using the streamlined method.  
 

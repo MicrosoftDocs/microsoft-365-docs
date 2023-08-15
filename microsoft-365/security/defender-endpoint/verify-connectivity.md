@@ -43,12 +43,12 @@ For more information on the Defender for Endpoint Client Analyzer, see [Troubles
 >[!NOTE]
 >You can run the Defender for Endpoint Client Analyzer on devices prior to onboarding and after onboarding. 
 >- When testing on a device onboarded to Defender for Endpoint, the tool will use the onboarding parameters. <br>
->-When testing on a device not yet onboarded to Defender for Endpoint, the tool will use the defaults of US, UK, and EU.  
+>- When testing on a device not yet onboarded to Defender for Endpoint, the tool will use the defaults of US, UK, and EU.  
 
  
 
 >[!NOTE]
->(APPLIES TO PUBLIC PREVIEW)<br>
+>(Applies to public preview)<br>
 >For the simplified onboarding public preview, when testing connectivity on devices not yet onboarded to Defender for Endpoint, run mdeclientanalyzer.cmd with `-o <path to MDE onboarding package >`. The command will use parameters from onboarding script to test connectivity. Otherwise, the default pre-onboarding test will test against the standard URL set. See the following section for more details.
 
 
@@ -102,7 +102,7 @@ However, if the connectivity check results indicate a failure, an HTTP error is 
 
 ## (Public preview) Testing connectivity to the streamlined onboarding method 
 
-If you are testing connectivity on a device that has not yet been onboarded to Defender for Endpoint using the streamlined approach (relevant for both new & migrating devices): 
+If you are testing connectivity on a device that has not yet been onboarded to Defender for Endpoint using the streamlined approach (relevant for both new and migrating devices): 
 
 1. Download the 'simplified' onboarding package for relevant OS.
 
