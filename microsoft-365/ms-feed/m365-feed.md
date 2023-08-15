@@ -32,11 +32,11 @@ In **Microsoft Edge**, while signed in with a work or school account, select the
 
 In **Outlook Mobile**, while signed in with a work or school account, select the Feed Tab from the bottom navigation bar.
 
-![Select Feed in Mobile Outlook.](../media/MS-m365-feed-outlook-resize-one.png)
+![Select Feed in Mobile Outlook.](../media/MS-m365-feed-outlook-resize-two.png)
 
 In **Microsoft 365 Mobile**, while signed in with a work or school account, select the Feed Tab from the bottom navigation bar.
 
-![Select Feed in Mobile Microsoft 365.](../media/MS-m365-feed-mobile-resize-one.png)
+![Select Feed in Mobile Microsoft 365.](../media/MS-m365-feed-mobile-resize-two.png)
 
 See the section *Find your way around* in [Discover and learn with Microsoft Feed](https://support.microsoft.com/en-us/office/discover-and-learn-with-microsoft-feed-9c190800-e348-46b7-9d46-41c628b80ebb) for more information.
 
@@ -82,11 +82,12 @@ In Microsoft Edge, while signed in with a work or school account, as a tenant ad
 2.    Go to **Org settings** > **News.**
 3.    Under **News**, select **Microsoft Edge new tab page**.
 4.    *Clear* the box that says **Show Microsoft 365 content on the Microsoft Edge new tab page.**
-5.    To re-enable the feature, check the box that says **Show Microsoft 365 content on the Microsoft Edge new tab page.**
+
+To re-enable the feature, check the box that says **Show Microsoft 365 content on the Microsoft Edge new tab page.**
 
 ## Disabling the Feed in Outlook Mobile
 
-In **Outlook Mobile**, if you want to disable the experience there, you can find the instructions here: [https://learn.microsoft.com/en-gb/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune#general-app-configuration-settings](/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)
+In **Outlook Mobile**, if you want to disable the experience there, you can find the instructions here: [Outlook mobile configuration settings](/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)
 
 ## Disabling the Feed in Microsoft 365 Mobile
 
