@@ -35,16 +35,16 @@ ms.date: 08/01/2023
 [!Include[Prerelease information](../../includes/prerelease.md)]
 
 
-In this article, you will learn how to migrate (reonboard) devices that are currently onboarded to Defender for Endpoint to use the streamlined device connectivity method. For more information on streamlined connectivity, see [Onboarding devices using streamlined connectivity](configure-device-connectivity.md). 
+In this article, you'll learn how to migrate (reonboard) devices that are currently onboarded to Defender for Endpoint to use the streamlined device connectivity method. For more information on streamlined connectivity, see [Onboarding devices using streamlined connectivity](configure-device-connectivity.md). 
 
 Streamlined connectivity supports migrating devices onboarded to Defender for Endpoint to use the simplified method. Devices must meet the same prerequisites listed in [Streamlined connectivity](configure-device-connectivity.md#prerequisites). 
 
 
-When reonboarding, full device offboarding is not necessary in most cases (see details for each OS below). You will be able to run the updated onboarding package and reboot your device to switch connectivity over. 
+In most cases, a full device offboarding isn't necessary when reonboarding. For details on each OS, see the preceding section. You'll be able to run the updated onboarding package and reboot your device to switch connectivity over. 
 
 >[!IMPORTANT]
 >For migrating devices already onboarded to Defender for Endpoint: 
->-	Offboarding is not required. You can simply run the updated onboarding package using instructions below and reboot the device (Windows) or restart the service (macOS and Linux).
+>-	Offboarding is not required. You can simply run the updated onboarding package using instructions in the preceeding section and reboot the device (Windows) or restart the service (macOS and Linux).
 >-	A device reboot is required for connectivity to switch from using standard to streamlined connectivity (for Windows and macOS). Otherwise, reonboarding will be incomplete.
 
 >[!IMPORTANT]
@@ -67,7 +67,7 @@ Migration recommendation:
 
 Validate device prerequisites before proceeding with device migrations (link to other doc). Learn more about streamlined connectivity <link to the other doc>. This is a continuation of those articles with a focus on migrating devices. 
 
-To reonboard devices using the strealimed connectivity method, you'll need to use the streamlined onboarding package. For more information on how to access the package, see [Streamlined connectivity](configure-device-connectivity.md).
+To reonboard devices using the streamlined connectivity method, you'll need to use the streamlined onboarding package. For more information on how to access the package, see [Streamlined connectivity](configure-device-connectivity.md).
 
 Depending on the OS, migrations require a device reboot or service restart once the onboarding package is applied:
 
@@ -89,11 +89,11 @@ For more information on prerequisites, see [Onboarding Windows Client](onboard-w
 
 ### Local script
 
-Use the guidance in [Local script (up to 10 devices)](configure-endpoints-script.md). After completing the steps, you must then restart the device. Device connectivity will not start if you do not restart the device.
+Use the guidance in [Local script (up to 10 devices)](configure-endpoints-script.md). After completing the steps, you must then restart the device. Device connectivity won't start if you don't restart the device.
 
 ### Group policy
 
-Use the guidance in [Group policy](configure-endpoints-gp.md). After completing the steps, you must then restart the device. Device connectivity will not start if you do not restart the device.
+Use the guidance in [Group policy](configure-endpoints-gp.md). After completing the steps, you must then restart the device. Device connectivity won't start if you don't restart the device.
 
 ### Microsoft Intune
 Follow the guidance in [Intune](/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection).
@@ -104,7 +104,7 @@ Follow the guidance in [Intune](/mem/configmgr/protect/deploy-use/defender-advan
 
 ### VDI
 
-Use the guidance in [Onboard non-persistent virtual desktop infrastructure (VDI) devices](/microsoft-365/security/defender-endpoint/configure-endpoints-vdi). After completing the steps, you must then restart the device. Device connectivity to streamlined approach will not start if you do not reboot the device.
+Use the guidance in [Onboard non-persistent virtual desktop infrastructure (VDI) devices](/microsoft-365/security/defender-endpoint/configure-endpoints-vdi). After completing the steps, you must then restart the device. Device connectivity to streamlined approach won't start if you don't reboot the device.
 
 
 
@@ -112,18 +112,18 @@ Use the guidance in [Onboard non-persistent virtual desktop infrastructure (VDI)
 
 ### Windows Server
 
-For specific OS and device pre-requisites, see [Onboard Windows Server overview](onboard-windows-server.md). Streamlined connectivity is only supported for Windows Server running unified agent (non-MMA). 
+For specific OS and device prerequisites, see [Onboard Windows Server overview](onboard-windows-server.md). Streamlined connectivity is only supported for Windows Server running unified agent (non-MMA). 
 
 For general Windows server onboarding instructions, see [Onboard Windows servers to the Microsoft Defender for Endpoint service](/microsoft-365/security/defender-endpoint/configure-server-endpoints).
 
 
 ### Microsoft Defender for Cloud
-Streamlined connectivity does not support onboarding through Microsoft Defender for Cloud at this time. 
+Streamlined connectivity doesn't support onboarding through Microsoft Defender for Cloud at this time. 
 
 
 ### Group policy
 
-Use the guidance in [Group policy](configure-endpoints-gp.md). After completing the steps, you must then restart the device. Device connectivity will not start if you do not restart the device.
+Use the guidance in [Group policy](configure-endpoints-gp.md). After completing the steps, you must then restart the device. Device connectivity won't start if you don't restart the device.
 
 ### Microsoft Configuration Manager 
 
@@ -131,14 +131,14 @@ Follow the guidance in
 
 ### VDI
 
-Use the guidance in [Onboard non-persistent virtual desktop infrastructure (VDI) devices](/microsoft-365/security/defender-endpoint/configure-endpoints-vdi). After completing the steps, you must then restart the device. Device connectivity to streamlined approach will not start if you do not reboot the device.
+Use the guidance in [Onboard non-persistent virtual desktop infrastructure (VDI) devices](/microsoft-365/security/defender-endpoint/configure-endpoints-vdi). After completing the steps, you must then restart the device. Device connectivity to streamlined approach won't start if you don't reboot the device.
 
 
 ### [**macOS**](#tab/macOS)
 
 ### macOS
 
-For specific OS and device pre-requisites, see [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md).
+For specific OS and device prerequisites, see [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md).
 
 Requires Defender for Endpoint version 101.23052.0004 or later.
 
@@ -153,15 +153,15 @@ After completing the steps, you must either reboot the device or restart the ser
 1.	`sudo launchctl unload /Library/LaunchDaemons/com.microsoft.fresno.plist` 
 2.	`sudo launchctl load /Library/LaunchDaemons/com.microsoft.fresno.plist` 
 
-Device connectivity to streamlined approach will not start if you do not reboot the device.
+Device connectivity to streamlined approach won't start if you don't reboot the device.
 
 
 
 ### Microsoft Intune
 
-1. In Microsoft Intune, navigate to **Devices > macOS** and create a new custom policy for the new onboarding method. Do not assign it yet.
+1. In Microsoft Intune, navigate to **Devices > macOS** and create a new custom policy for the new onboarding method. Don't assign it yet.
 
-2. Remove the assignment of any standard policies  onboarding package to devices you will reonboard. 
+2. Remove the assignment of any standard policies  onboarding package to devices you'll reonboard. 
 
 3. Add the assignment of the new onboarding policy. 
 
@@ -172,7 +172,7 @@ Device connectivity to streamlined approach will not start if you do not reboot 
 
 1.	Exclude device from any existing 'onboarding' policies in JAMF Pro.
 
-2.	Create a new onboarding policy for the ‘streamlined’ connectivity approach. 
+2.	Create a new onboarding policy for the ï¿½streamlinedï¿½ connectivity approach. 
 
 3.	Include device in the new streamlined onboarding policy.
 
