@@ -40,6 +40,14 @@ The OCR service is available for the following file types:
 
 The OCR service supports more than [150 languages](/azure/cognitive-services/language-support).
 
+### Supported locations and solutions
+
+|Location    |Supported solution  |
+|---------|---------|
+|Exchange           |Text is available in end-user search and search-driven scenarios. |
+|SharePoint sites   |Text is available in end-user search and search-driven scenarios. |
+|OneDrive accounts  |Text is available in end-user search and search-driven scenarios. |
+
 ### File limitations
 
 - Image file sizes must be less than 50 MB.
