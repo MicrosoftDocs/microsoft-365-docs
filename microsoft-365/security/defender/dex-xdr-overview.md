@@ -19,7 +19,7 @@ ms.collection:
   - tier1
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 05/29/2023
+ms.date: 08/08/2023
 ---
 
 # Microsoft Defender Experts for XDR

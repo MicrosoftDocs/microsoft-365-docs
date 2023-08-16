@@ -631,7 +631,7 @@ By default, the default alert policy named **User requested to release a quarant
 
 Admins can customize the email notification recipients or create a custom alert policy for more options.
 
-For more information about alert policies, see [Alert policies in Microsoft 365](../../compliance/alert-policies.md).
+For more information about alert policies, see [Alert policies in Microsoft 365](/purview/alert-policies).
 
 ## Appendix
 

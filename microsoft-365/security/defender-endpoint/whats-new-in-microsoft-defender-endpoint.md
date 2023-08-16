@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 07/19/2023
+ms.date: 08/08/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -60,84 +60,6 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 - [What's new in Defender for Endpoint on macOS](mac-whatsnew.md)
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 - [What's new in Defender for Endpoint on Linux](linux-whatsnew.md)
-
-## August 2023
-
--   **Data completeness**
-
-    -   Extended file attributes and registry monitoring capabilities to enhance investigation and detection experience. 
-    
-    -   Conditional Access - Expanding integration between Microsoft Defender for Endpoint and Intune to support additional Azure Active Directory (AAD) joined scenarios to deploy conditional access policies in your environment and enable Zero Trust policies to better protect your network against adversaries. 
-
-    -   Engine bugfixes and improvements. 
-
-
-
--   **Platform**
-
-    -   Enabled safer deployment of features through rings and containment mechanism enhancements. 
-
-    -   Consolidate the billing and alert experiences of customers that are onboarded to both Microsoft Defender for Endpoint and Microsoft Defender for Cloud in cloud environments by collecting machine identifiers that allow de-duplication on cloud side. 
-
-
-
--   **Hardening**
-
-    -   General hardening improvements. 
-
-
--   **Response** 
-
-    -   Device Isolation improvements. For more information, see [Take response actions on a device](respond-machine-alerts.md) 
-
-        -   Strengthen the resilience of device isolation permit and block rules.  
-
-        -   Allow a device that is disconnected from a Command and Control channel using offline signed command to be removed from isolation.  
-
-    -   Improved performance for [Live Response](live-response.md) commands when executed concurrently with automatic investigation.  
-
-    -   Send command status events for isolate and IR commands through Command and Control channel to improve performance, support future design changes, and easier monitoring. 
-
-    -   Custom Exclusion for Isolation - exclusion of apps, allow list of IP addresses and ports, and users.
-
-    -   Isolation hardening is a measure taken against a technique known as process hollowing. Implementing this hardening approach, a system can establish stronger isolation rules that significantly enhance security when dealing with code injection tactics.  
-    
-
-    -   Reduce device disconnections for isolated device caused by third-party inspection drivers. For more information, see [Take response actions on a device](respond-machine-alerts.md).
-
-
-
--   **Vulnerability management** 
-    
-    -   Replaces some of the current threat vulnerability collections and adds new much requested user installed packages collector. 
-
-    -   New and higher-performing (both CPU and memory) vulnerabilities collector. 
-
-    -   Changes on devices will be reflected in a timelier manner to the portal, enabling them to take action against threats faster. 
-
-    -   Bugfix in Vulnerability Management client management component - race condition. 
-
-
-
--   **Threat Prevention/Protection** 
-
-    -   Lateral Movement Firewall - Addressing advanced attacks inflicting customers (Human Operated Ransomware) by expanding identity-oriented response capabilities known to be gaps in our current protection story.
-
-    -   Supporting force close active SMB sessions for incriminated users as part of Lateral Movement Firewall to disrupt and terminate active malicious sessions. 
-
-
-    -   Device Contain - Introducing new Windows Filtering Platform (WFP) network filter to allow telemetry & audit-mode capabilities to network connections enforcements. For more information, see - [Take response actions on a device in Microsoft Defender for Endpoint](respond-machine-alerts.md#contain-devices-from-the-network).
-
-
-    -   Anti-tampering - Addressing tampering gaps in Defender for Endpoint authentication flow by hardening protection of the cryptographic key used to register clients with Defender for Endpoint's authentication service. This is done by storing the key in an AV-protected registry key. 
-
-
-
--   **MITRE**
-
-    -   Introducing a new sensor for MITRE. 
-    -   Alternative data streams support. 
-    -   Extended Registry monitoring capabilities. 
 
 
 
