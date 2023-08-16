@@ -217,8 +217,6 @@
             href: ios-install-unmanaged.md
     - name: Run a detection test on a newly onboarded Microsoft Defender for Endpoint
       href: run-detection-test.md
-    - name: Onboard devices without Internet access
-      href: onboard-offline-machines.md
     - name: Configure Microsoft Defender for Endpoint on macOS
       items:
       - name: Configure and validate exclusions
