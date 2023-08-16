@@ -442,12 +442,24 @@
          href: integrate-microsoft-365-defender-secops-use-cases.md
        - name: Step 6. SOC maintenance tasks
          href: integrate-microsoft-365-defender-secops-tasks.md
-    - name: Microsoft 365 Defender Multi-Tenant Organization Unified View 
+    - name: Microsoft 365 Defender multi-tenant Unified View 
       items:
-        - name: Overview
+        - name: What is Microsoft 365 Defender multi-tenant Unified View
           href: get-started-mto.md
-        - name: Capabilities
-          href: mto-features.md
+        - name: Requirements
+          href: get-started-mto.md
+        - name: Get Started
+          items: 
+            - name: Visit the Microsoft 365 Defender multi-tenant portal
+              href: mto-features.md
+            - name: View and manage incidents and alerts
+              href: mto-features.md
+            - name: Use advanced hunting
+              href: mto-features.md
+            - name: Monitor the Vulnerability Management Dashboard
+              href: mto-features.md
+            - name: Manage tenants
+              href: mto-features.md
     - name: Reference
       items: 
       - name: Manage roles and permissions
