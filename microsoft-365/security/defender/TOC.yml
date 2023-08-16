@@ -448,18 +448,16 @@
           href: mto-overview.md
         - name: Permission requirements
           href: mto-requirements.md
-        - name: Get Started
-          items: 
-            - name: Visit the Microsoft 365 Defender multi-tenant portal
-              href: mto-portal.md
-            - name: View and manage incidents and alerts
-              href: mto-incidents-alerts.md
-            - name: Use advanced hunting
-              href: mto-advanced-hunting.md
-            - name: Monitor the Vulnerability Management Dashboard
-              href: mto-dashboard.md
-            - name: Manage tenants
-              href: mto-tenants.md
+        - name: Visit the Microsoft 365 Defender multi-tenant portal
+          href: mto-portal.md
+        - name: View and manage incidents and alerts
+          href: mto-incidents-alerts.md
+        - name: Use advanced hunting
+          href: mto-advanced-hunting.md
+        - name: Monitor the Vulnerability Management Dashboard
+          href: mto-dashboard.md
+        - name: Manage tenants
+          href: mto-tenants.md
     - name: Reference
       items: 
       - name: Manage roles and permissions
