@@ -56,15 +56,15 @@ To access data from other tenants within the Microsoft 365 Defender Multi-Tenant
 
 ## Key capabilities
 
+Microsoft 365 Defender Multi-Tenant Organization Unified View offers the same experience as the Microsoft 365 Defender portal, as well as aggregating all the tenants you manage into unified views. The multi-tenant portal will only display data you are allowed to see and is compiled on-the-fly.
+
 For each tenant you have access to in the Microsoft 365 Defender Multi-Tenant Organization portal You'll have the following key capabilities that focus on incident investigation flow and posture management:
 
 | Capability | Description |
 | ------ | ------ |
-| Aggregated Incidents and alerts queues | Endpoint protection suite built around powerful behavioral sensors, cloud analytics, and threat intelligence |
-| Cross-Tenant advanced hunting| Advanced protection for your apps and data in Office 365, including email and other collaboration tools |
-| Defender Vulnerability Management dashboard | Defend against advanced threats, compromised identities, and malicious insiders using correlated Active Directory signals |
-
-It offers the same experience as the Microsoft 365 Defender portal, as well as aggregating all the tenants you manage into unified views. The multi-tenant portal will only display data you are allowed to see and is compiled on-the-fly.
+| Aggregated Incidents and alerts queues | Manage alerts & incidents originating from multiple tenants under Incidents & alerts. |
+| Cross-Tenant advanced hunting| Proactively hunt for intrusion attempts and breach activity affecting your email, data, devices, and accounts over multiple tenants at the same time. |
+| Defender Vulnerability Management dashboard |MTO Vulnerability Management provides both security administrators and security operations teams with aggregated vulnerability management information across multiple tenants. |
 
 >[!Note]
 > Data boundaries, Role-based access control (RBAC), and licensing are respected by Unified Views.
