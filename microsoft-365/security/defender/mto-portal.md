@@ -26,56 +26,25 @@ ms.date: 09/01/2023
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Below you can find a brief explanation about the MTO experiences, focusing on the new capabilities:
+The Microsoft 365 Defender multi-tenant portal ([https://security.microsoft.com](https://security.microsoft.com)) is your one-stop shop for using and managing Microsoft Defender for Business. It includes callouts to help you get started, cards that surface relevant information, and a navigation bar to give you easy access to various features and capabilities.
 
-## Incidents & Alerts
+:::image type="content" source="../../media/defender-business/mdb-portal-home.png" alt-text="Microsoft 365 Defender portal":::
 
-You can manage alerts & incidents originating from multiple tenants under **Incidents & alerts**
+## The navigation bar
 
-1. To view Incidents, go to the [Incidents page](https://mto.security.microsoft.com/incidents) in the Microsoft 365 Defender multi-tenant Unified View
-2. A new **Tenant Name** column exists:  
-3. Select **Filter** to filter the incidents by tenant name:  
-4. Select an incident to see the incident management options available you
-5. Selecting a link will open the page, in a new tab, for the respective tenant in the [Microsoft 365 Defender portal](https://security.microsoft.com).
+Use the navigation bar on the left side of the screen to access your incidents and alerts, view the vulnerability management dashboard, use advanced hunting and manage your tenants. The following table describes items you'll see in your navigation bar.
 
-To view Alerts, go to the [Alerts page](https://mto.security.microsoft.com/alerts) in the Microsoft 365 Defender multi-tenant Unified View. The alerts page appears and has the same capabilities as the Incidents page.
+| Item | Description |
+|:---|:---|
+| **Home** | Takes you to your home page in the Microsoft 365 Defender portal. The home page highlights any active threats that are detected, along with recommendations to help secure your company's data and devices. Recommendations are included in Defender for Business to save your security team time and effort. The recommendations are based on industry best practices. To learn more, see [Security recommendations - Microsoft Defender Vulnerability Management](../defender-endpoint/tvm-security-recommendation.md). |
+| **Incidents** | Takes you to your list of recent incidents. As alerts are triggered, incidents are created. An incident can include multiple alerts. Make sure to review your incidents regularly. To learn more, see [View and manage incidents in Defender for Business](mdb-view-manage-incidents.md).| |
+| **Assets** > **Devices** | Enables you to view devices, such as computers and mobile devices that are enrolled in [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). |
+| **Endpoints** > **Vulnerability management** | Enables you to access your [Microsoft Defender Vulnerability Management](../defender-vulnerability-management/defender-vulnerability-management.md) capabilities. Provides a dashboard, recommendations, remediation activities, a software inventory, and a list of potential weaknesses within your company. |
+| **Settings** | Enables you to edit settings for the Microsoft 365 Defender portal and Defender for Business. For example, you can onboard (or offboard) your company's devices (also referred to as endpoints). You can also define rules, such as alert-suppression rules, and set up indicators to block or allow certain files or processes.  |
 
-### Advanced Hunting
+## Next steps
 
-The unified advanced hunting experience allows you to proactively hunt for intrusion attempts and breach activity affecting your email, data, devices, and accounts over multiple tenants at the same time.
-
-1. Go to [Advance Hunting](https://mto.security.microsoft.com/v2/advanced-hunting)
-
-2. **Run** your cross-tenant query. It will run on the combined data set of all the tenants you are authorized to access.
-3. A new **TenantID** column exists in the query results
-4. You can restrict the query to a specific set of tenants by selecting **Tenant scope** at the top right corner of the page
-5. On the left, you can see the **unified schema**, which displays all tables available across all tenants.  
-
-### Defender Vulnerability Management
-
-Microsoft 365 Defender multi-tenant Unified View Vulnerability Management provides both security administrators and security operations teams with aggregated vulnerability management information across multiple tenants. It includes two main pages:
-
-#### Dashboard
-
-The dashboard provides aggregated and summarized information across all tenants.  
-
-In the Microsoft 365 Defender multi-tenant Unified View dashboard page, you can find the following information across all the tenants you have access to:
-
-| Area                                          | Description                                                                                             |
-|-----------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Exposure score                                | Reflects the current exposure associated with devices in your organization, across all managed tenants. |
-| Most exposed tenants                          | Provides real time visibility into the tenants with the highest current exposure level.                 |
-| Exposure distribution                         | Shows how many devices are exposed, across all tenants, based on their exposure level.                  |
-| Tenants with the largest increase in exposure | Identify tenants with the largest increase in exposure over the last 30 days.                           |
-| Tenants exposure distribution                 | View a summary of exposed tenants aggregated by exposure level.                                         |
-
-#### Tenant List
-
-The Tenants page contains a list of all tenants, with the following information:
-
-Tenant name, Exposure score, Exposure trend, Exposure change (last 30 days), Exposed devices, Recommendations, Weaknesses, and Critical CVEs.
-
-Select a tenant name to navigate to the Defender Vulnerability Management dashboard for that tenant.
+- [See the overall setup and configuration process](mdb-setup-configuration.md)
 
 ### Device inventory
 

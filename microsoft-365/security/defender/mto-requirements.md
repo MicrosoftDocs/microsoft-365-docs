@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Defender multi-tenant Unified View
+title: Microsoft 365 Defender multi-tenant Unified View permission requirements
 description: Learn what steps you need to take to get started with Microsoft 365 Defender multi-tenant Unified View
 ms.service: microsoft-365-security
 ms.subservice: m365d
@@ -16,7 +16,7 @@ ms.topic: conceptual
 ms.date: 09/01/2023
 ---
 
-# Microsoft 365 Defender multi-tenant Unified View
+# Microsoft 365 Defender multi-tenant Unified View requirements
 
 **Applies to:**
 
@@ -25,7 +25,6 @@ ms.date: 09/01/2023
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Microsoft 365 Defender multi-tenant Unified View is a unified experience where you can monitor and manage security across your enterprise. With the integrated alerts across identities, endpoints, data, apps, email, and collaboration tools - investigating and responding to threats now happen in a central location.
 
 ## Verify your tenant access
 
@@ -55,3 +54,7 @@ To access data from other tenants within the Microsoft 365 Defender multi-tenant
 2. Under **Customers** you can find the list of organizations you have guest access to.
 3. Verify all the tenants you plan to manage in the Microsoft 365 Defender multi-tenant Unified View appear in the list.
 4. For each tenant, go to the [Microsoft 365 Defender portal)](https://security.microsoft.com/?tid=tenant_id) to validate you can successfully access the tenant.
+
+## Next step
+
+- [Visit the Microsoft 365 Defender multi-tenant portal](mto-portal.md)
