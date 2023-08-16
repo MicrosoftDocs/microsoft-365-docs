@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: shcallaw, kywirpel
-ms.date: 07/17/2023
+ms.date: 08/16/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -25,6 +25,11 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 # Create baselines in Microsoft 365 Lighthouse
 
 Microsoft 365 Lighthouse empowers you to create your own baselines to deploy to customer tenants. Create your own baselines to accommodate customers with varying degrees of tenant maturity, customers from different industries, customers that have subscribed to different managed services from your company, or customers with varying licensing models.
+
+> [!NOTE]
+> Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, you should see it soon.
+>
+> To see which new features are currently available in your partner tenant, go to the **Home** page of Microsoft 365 Lighthouse, and then either select the **What's new** link in the upper-right corner of the page or select **What's new** on the **What's new & learning resources** card.
 
 ## Before you begin
 
