@@ -32,7 +32,7 @@ Here’s an example of the Microsoft 365 for the web monitoring page in the Micr
 
  
 
-![Screenshot of Microsoft 365 for the web monitoring.](../media/Microsoft-365-for-the-web.png)
+![Screenshot of Microsoft 365 for the web monitoring.](../media/microsoft-365-for-the-web.png)
 
 
 
@@ -58,13 +58,13 @@ Microsoft 365 for the web monitoring supports the following scenarios:
 
 - **Visio for the web**: View the health for “Diagram Open” and “Diagram Save” scenarios. 
 
-![Screenshot of Excel for the web monitoring.](../media/Excel-for-the-web.png)
+![Screenshot of Excel for the web monitoring.](../media/excel-for-the-web.png)
 
 
 Detailed views for each of these scenarios show the near real-time trend for the past seven days with the 60-minute aggregate compared with the previous week. 
 
  
-![Second Screenshot of Excel for the web monitoring.](../media/Excel-for-the-web-2.png)
+![Second Screenshot of Excel for the web monitoring.](../media/excel-for-the-web-2.png)
  
 
 ## Send us feedback 
