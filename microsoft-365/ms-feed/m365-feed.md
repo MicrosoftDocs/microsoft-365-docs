@@ -50,21 +50,8 @@ Microsoft Feed is built on Microsoft 365 and implicitly respects all settings an
 
 In addition, Microsoft Feed respects LinkedIn visibility settings (when a user prefers to limit the visibility of their profile information outside of LinkedIn). To learn more, see [Off-LinkedIn Visibility | LinkedIn Help](https://www.linkedin.com/help/linkedin/answer/a1340507), and [Disconnecting Your LinkedIn and Microsoft Accounts and Managing Your Data | LinkedIn Help](https://www.linkedin.com/help/linkedin/answer/a552108).
 
-In Microsoft 365, as a tenant admin, if you want to disable the new experience, you can contact Microsoft via a service request to turn off Microsoft Feed. This is a temporary solution which removes the Feed icon from the left navigation of Microsoft 365.
-
-1.    [Sign in to Microsoft 365](https://admin.microsoft.com) with your Microsoft 365 admin account.
-2.    **Select Support** > **New service request.**
-3.    If you're in the admin center, select **Support** > **New service request.**
-4.    To re-enable the feature, you can create a **New service request.**
-
-In Microsoft Edge, while signed in with a work or school account, as a tenant admin, if you want to disable the new experience, you can choose to *not show* Microsoft 365 content on the Microsoft Edge new tab page:
-
-1.    Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com)
-2.    Go to **Org settings** > **News.**
-3.    Under **News**, select **Microsoft Edge new tab page**.
-4.    *Clear* the box that says **Show Microsoft 365 content on the Microsoft Edge new tab page.**
-5.    To re-enable the feature, check the box that says **Show Microsoft 365 content on the Microsoft Edge new tab page.**
-
+In Microsoft 365, as a global admin, you can disable Microsoft Feed for your organization using Microsoft Graph API. See [microsoftApplicationDataAccessSettings resource type](/graph/api/resources/microsoftapplicationdataaccesssettings) for instructions on how to disable Microsoft Feed. 
+ 
 ## Provide feedback
 
 We would love to hear from you! To let us know what you think of this feature, you can reach us by:
