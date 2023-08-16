@@ -70,9 +70,9 @@ Determine who in your organization will build and manage the models. The followi
 
 | SharePoint/Knowledge admin | Power Platform admin | Knowledge manager | Model owner |
 |:-------|:-------|:-------|:-------|
-| AAD role| AAD role | AAD role | Champions |
+| Microsoft Entra role| Microsoft Entra role | Microsoft Entra role | Champions |
 | Configure structured document processing and freeform document processing models | Configure Dataverse environment | Gather use cases | Gather business use cases |
-| Manage content centers and permissions| Purchase and allocate AIB credits | Establish best practices and review model analytics | Create and apply models |
+| Manage content centers and permissions| Purchase and allocate AI Builder credits | Establish best practices and review model analytics | Create and apply models |
 
 Knowledge manager, business process owner, and content model owner create sample models and champion adoption in the organization. Others who might be involved the compliance admin and taxonomy managers.
 
