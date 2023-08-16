@@ -1,6 +1,6 @@
 ---
 title: "Overview of Microsoft 365 Groups for administrators"
-ms.reviewer: arvaradh
+ms.reviewer: rahulnayak
 ms.date: 02/18/2020
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -104,14 +104,14 @@ For information about creating, managing, and using sensitivity labels, see [Use
 
 ## Which Microsoft 365 plans include groups?
 
-Any Microsoft 365 subscription that has Exchange Online and SharePoint Online will support groups. That includes the Business Essentials and Business Premium plans, and the Enterprise E1, E3, and E5 plans. The group takes on the licensing of the person who creates the group (also known as the "organizer" of the group). As long as the organizer has the proper license for whatever features you want the group to have, that license will convey to the group.
+Any Microsoft 365 subscription that has Exchange Online and SharePoint Online will support groups. That includes the Business Essentials and Business Premium plans, and the Enterprise E1, E3, and E5 plans. The group takes on the licensing of the person who creates the group. As long as they have the proper license for whatever features you want the group to have, that license will convey to the group.
 
 > [!NOTE]
 > For more details about Microsoft 365 service families and plans, see [Microsoft 365 plan options](/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options).
 
 If you have an Exchange-only plan you can still get the shared inbox and shared calendar features of groups in Outlook but you won't get the document library, Planner or any of the other capabilities.
 
-Microsoft 365 groups work with Azure Active Directory. The groups features you get depends on which Azure Active Directory subscription you have, and what licenses are assigned to the organizer of the group.
+Microsoft 365 groups work with Azure Active Directory. The groups features you get depends on which Azure Active Directory subscription you have, and what licenses are assigned to the person who created the group.
 
 > [!IMPORTANT]
 > For all the groups features, if you have an Azure AD Premium subscription, users can join the group whether or not they have an AAD P1 license assigned to them. Licensing isn't enforced.
