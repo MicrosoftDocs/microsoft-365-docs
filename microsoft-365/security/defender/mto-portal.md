@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 Defender multi-tenant Unified View capabilities
-description: Learn about the capabilities of the Microsoft 365 Defender multi-tenant Unified View
+title: Visit the Microsoft 365 Defender multi-tenant portal
+description: Learn about the Microsoft 365 Defender multi-tenant Unified View portal
 search.appverid: met150
 ms.service: microsoft-365-security
 ms.subservice: m365d
@@ -17,7 +17,7 @@ ms.topic: conceptual
 ms.date: 09/01/2023
 ---
 
-# Microsoft 365 Defender multi-tenant Unified View capabilities
+# Visit the Microsoft 365 Defender multi-tenant portal
 
 **Applies to:**
 

@@ -445,21 +445,21 @@
     - name: Microsoft 365 Defender multi-tenant Unified View 
       items:
         - name: What is Microsoft 365 Defender multi-tenant Unified View
-          href: get-started-mto.md
+          href: mto-overview.md
         - name: Permission requirements
-          href: get-started-mto.md
+          href: mto-requirements.md
         - name: Get Started
           items: 
             - name: Visit the Microsoft 365 Defender multi-tenant portal
-              href: mto-features.md
+              href: mto-portal.md
             - name: View and manage incidents and alerts
-              href: mto-features.md
+              href: mto-incidents-alerts.md
             - name: Use advanced hunting
-              href: mto-features.md
+              href: mto-advanced-hunting.md
             - name: Monitor the Vulnerability Management Dashboard
-              href: mto-features.md
+              href: mto-dashboard.md
             - name: Manage tenants
-              href: mto-features.md
+              href: mto-tenants.md
     - name: Reference
       items: 
       - name: Manage roles and permissions

@@ -55,22 +55,3 @@ To access data from other tenants within the Microsoft 365 Defender multi-tenant
 2. Under **Customers** you can find the list of organizations you have guest access to.
 3. Verify all the tenants you plan to manage in the Microsoft 365 Defender multi-tenant Unified View appear in the list.
 4. For each tenant, go to the [Microsoft 365 Defender portal)](https://security.microsoft.com/?tid=tenant_id) to validate you can successfully access the tenant.
-
-## Key capabilities
-
-Microsoft 365 Defender multi-tenant Unified View offers the same experience as the Microsoft 365 Defender portal, as well as aggregating all the tenants you manage into unified views. The multi-tenant portal will only display data you are allowed to see and is compiled on-the-fly.
-
-For each tenant you have access to in the Microsoft 365 Defender multi-tenant Unified View You'll have the following key capabilities that focus on incident investigation flow and posture management:
-
-| Capability | Description |
-| ------ | ------ |
-| Aggregated Incidents and alerts queues | Manage alerts & incidents originating from multiple tenants under Incidents & alerts. |
-| Cross-Tenant advanced hunting| Proactively hunt for intrusion attempts and breach activity affecting your email, data, devices, and accounts over multiple tenants at the same time. |
-| Defender Vulnerability Management dashboard |MTO Vulnerability Management provides both security administrators and security operations teams with aggregated vulnerability management information across multiple tenants. |
-
->[!Note]
-> Data boundaries, Role-based access control (RBAC), and licensing are respected by Unified Views.
-
-## Next steps
-
-- To start using the portal, go to the [Microsoft 365 Defender multi-tenant Unified View](https://mto.security.microsoft.com)
