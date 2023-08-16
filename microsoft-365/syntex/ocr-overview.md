@@ -42,7 +42,7 @@ The OCR service supports more than [150 languages](/azure/cognitive-services/lan
 
 ### Supported locations and solutions
 
-|Field    |Use this field to  |
+|Location    |Supported solution  |
 |---------|---------|
 |Exchange           |Text is available in end user search and search driven scenarios. |
 |SharePoint sites   |Text is available in end user search and search driven scenarios. |
