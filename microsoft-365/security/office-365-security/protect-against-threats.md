@@ -72,7 +72,7 @@ To learn more, see [Permissions in the Microsoft 365 Defender portal](mdo-portal
 
 ### Turn on audit logging for reporting and investigation
 
-- Audit logging is turned on by default for Microsoft 365 and Office 365 enterprise organizations. To view data in threat protection reports, [email security reports](reports-email-security.md), and [Explorer](threat-explorer-about.md), audit logging must be *On*. To verify that audit logging is turned on or to turn it on, see [Turn auditing on or off](../../compliance/audit-log-enable-disable.md).
+- Audit logging is turned on by default for Microsoft 365 and Office 365 enterprise organizations. To view data in threat protection reports, [email security reports](reports-email-security.md), and [Explorer](threat-explorer-about.md), audit logging must be *On*. To verify that audit logging is turned on or to turn it on, see [Turn auditing on or off](/purview/audit-log-enable-disable).
 
 ## Part 1 - Anti-malware protection in EOP
 
@@ -199,7 +199,7 @@ For more information about the recommended settings for Safe Attachments, see [S
    - **Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams**: Turn on this setting (![Toggle on.](../../media/scc-toggle-on.png)).
 
      > [!IMPORTANT]
-     > **Before you turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams, verify that audit logging is turned in your organization** (it's on by default). To verify that audit logging is turned on or to turn it on, see [Turn auditing on or off](../../compliance/audit-log-enable-disable.md).
+     > **Before you turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams, verify that audit logging is turned in your organization** (it's on by default). To verify that audit logging is turned on or to turn it on, see [Turn auditing on or off](/purview/audit-log-enable-disable).
 
    - **Turn on Safe Documents for Office clients**: Turn on this setting (![Toggle on.](../../media/scc-toggle-on.png)). Note that this feature is available and meaningful only with the required types of licenses. For more information, see [Safe Documents in Microsoft 365 E5](safe-documents-in-e5-plus-security-about.md).
    - **Allow people to click through Protected View even if Safe Documents identified the file as malicious**: Verify this setting is turned off (![Toggle off.](../../media/scc-toggle-off.png)).
@@ -295,7 +295,7 @@ To receive notification when a file in SharePoint Online or OneDrive for Busines
 
 6. On the **Review your settings** page, review your settings, verify **Yes, turn it on right away** is selected, and then select **Finish**
 
-To learn more about alert policies, see [Alert policies in the Microsoft Purview compliance portal](../../compliance/alert-policies.md).
+To learn more about alert policies, see [Alert policies in the Microsoft Purview compliance portal](/purview/alert-policies).
 
 > [!NOTE]
 > When you're finished configuring, use these links to start workload investigations:
