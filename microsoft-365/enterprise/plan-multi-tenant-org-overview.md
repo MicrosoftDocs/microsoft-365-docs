@@ -82,7 +82,6 @@ The following are limitations of the multi-tenant organizations in Microsoft 365
 - A maximum of 100,000 users per tenant is supported.
 - Teams on the web, MacOS, Microsoft Teams Rooms (MTR), and VDI/AVD are not supported.
 - The ability to grant or revoke permission to receive notifications from other tenants and to switch between tenants is not supported on mobile.
-- External members are not supported in Power BI. For more information, see [Distribute Power BI content to external guest users using Azure Active Directory B2B](/power-bi/guidance/whitepaper-azure-b2b-power-bi).
 - *People in your organization* links may not work for users from another tenant if their account had originally been a guest and they had previously accessed SharePoint resources.
 
 If you want to add more than five tenants or 100,000 users per tenant, contact Microsoft support.
