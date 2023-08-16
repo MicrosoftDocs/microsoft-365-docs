@@ -44,9 +44,9 @@ The OCR service supports more than [150 languages](/azure/cognitive-services/lan
 
 |Location    |Supported solution  |
 |---------|---------|
-|Exchange           |Text is available in end user search and search driven scenarios. |
-|SharePoint sites   |Text is available in end user search and search driven scenarios. |
-|OneDrive accounts  |Text is available in end user search and search driven scenarios. |
+|Exchange           |Text is available in end-user search and search-driven scenarios. |
+|SharePoint sites   |Text is available in end-user search and search-driven scenarios. |
+|OneDrive accounts  |Text is available in end-user search and search-driven scenarios. |
 
 ### File limitations
 
