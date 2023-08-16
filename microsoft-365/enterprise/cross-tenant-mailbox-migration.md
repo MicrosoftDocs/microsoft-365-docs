@@ -330,6 +330,9 @@ You can verify Cross-tenant mailbox migration configuration by running the [Test
 Test-MigrationServerAvailability -EndPoint "[the name of your migration endpoint]" -TestMailbox "[Primary SMTP of MailUser object in target tenant]"
 ```
 
+> [!NOTE]
+> Additionally, you may want to take advantage of the [Cross-tenant mailbox migration validation script](https://aka.ms/crosstenantmailboxmigrationvalidationscript), which will allow you to validate the organizations being correctly setup between them, and the objects you are planning to migrate from one tenant to another. The script will help identify any discrepancies that may be present on all objects at once, and as a result, it will reduce the time spent on the initial phase.
+
 ### Move mailboxes back to the original source
 
 If a mailbox is required to move back to the original source tenant, the same set of steps and scripts will need to be run in both new source and new target tenants. The existing Organization Relationship object will be updated or appended, not recreated. Migration can't happen both ways simultaneously.
