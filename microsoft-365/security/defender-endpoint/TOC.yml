@@ -116,7 +116,7 @@
         
     - name: Device connectivity
       items:
-        - name: Streamlined device connectivity
+        - name: Onboarding devices using streamlined connectivity
           href: configure-device-connectivity.md
         - name: Migrating devices to streamlined method
           href: migrate-devices-streamlined.md
