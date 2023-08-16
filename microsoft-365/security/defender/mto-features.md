@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 Defender Multi-Tenant Organization Unified View capabilities
-description: Learn about the capabilities of the Microsoft 365 Defender Multi-Tenant Organization Unified View 
+title: Microsoft 365 Defender multi-tenant Unified View capabilities
+description: Learn about the capabilities of the Microsoft 365 Defender multi-tenant Unified View
 search.appverid: met150
 ms.service: microsoft-365-security
 ms.subservice: m365d
@@ -17,14 +17,14 @@ ms.topic: conceptual
 ms.date: 09/01/2023
 ---
 
-
-
-# Microsoft 365 Defender Multi-Tenant Organization Unified View capabilities
+# Microsoft 365 Defender multi-tenant Unified View capabilities
 
 **Applies to:**
 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-- Microsoft 365 Defender Multi-Tenant Organization
+- Microsoft 365 Defender multi-tenant Unified View
+
+[!include[Prerelease information](../../includes/prerelease.md)]
 
 Below you can find a brief explanation about the MTO experiences, focusing on the new capabilities:
 
@@ -32,13 +32,13 @@ Below you can find a brief explanation about the MTO experiences, focusing on th
 
 You can manage alerts & incidents originating from multiple tenants under **Incidents & alerts**
 
-1. To view Incidents, go to the [MTO Incidents page](https://mto.security.microsoft.com/incidents)
+1. To view Incidents, go to the [Incidents page](https://mto.security.microsoft.com/incidents) in the Microsoft 365 Defender multi-tenant Unified View
 2. A new **Tenant Name** column exists:  
 3. Select **Filter** to filter the incidents by tenant name:  
 4. Select an incident to see the incident management options available you
 5. Selecting a link will open the page, in a new tab, for the respective tenant in the [Microsoft 365 Defender portal](https://security.microsoft.com).
 
-To view Alerts, go to the [MTO Alerts page](https://mto.security.microsoft.com/alerts). The alerts page appears and has the same capabilities as the Incidents page.
+To view Alerts, go to the [Alerts page](https://mto.security.microsoft.com/alerts) in the Microsoft 365 Defender multi-tenant Unified View. The alerts page appears and has the same capabilities as the Incidents page.
 
 ### Advanced Hunting
 
@@ -53,13 +53,13 @@ The unified advanced hunting experience allows you to proactively hunt for intru
 
 ### Defender Vulnerability Management
 
-Microsoft 365 Defender Multi-Tenant Organization Unified View Vulnerability Management provides both security administrators and security operations teams with aggregated vulnerability management information across multiple tenants. It includes two main pages:
+Microsoft 365 Defender multi-tenant Unified View Vulnerability Management provides both security administrators and security operations teams with aggregated vulnerability management information across multiple tenants. It includes two main pages:
 
 #### Dashboard
 
 The dashboard provides aggregated and summarized information across all tenants.  
 
-In the Multi-Tenant dashboard page, you can find the following information across all the tenants you have access to:
+In the Microsoft 365 Defender multi-tenant Unified View dashboard page, you can find the following information across all the tenants you have access to:
 
 | Area                                          | Description                                                                                             |
 |-----------------------------------------------|---------------------------------------------------------------------------------------------------------|
@@ -98,6 +98,6 @@ At the top of the device inventory, you can find counters for multiple device in
 
 ### Unified View Status Indicator
 
-The Unified View Status Indicator is always available in the bottom right corner of the MTO Portal. This indicator provides information when data issues occur with the page you are viewing, such as data loading issues or permissions issues.
+The Unified View Status Indicator is always available in the bottom right corner of the Microsoft 365 Defender multi-tenant Unified View. This indicator provides information when data issues occur with the page you are viewing, such as data loading issues or permissions issues.
 
 When an issue exists the status indicator will show a red warning sign hovering over it will display the issues that have occurred and the tenant information. By expanding each section, you’ll see all the tenants with this issue.

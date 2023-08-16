@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 Defender Multi-Tenant Organization Unified View 
-description: Learn what steps you need to take to get started with Microsoft 365 Defender Multi-Tenant Organization Unified View 
+title: Microsoft 365 Defender multi-tenant Unified View
+description: Learn what steps you need to take to get started with Microsoft 365 Defender multi-tenant Unified View
 ms.service: microsoft-365-security
 ms.subservice: m365d
 ms.author: siosulli
@@ -16,22 +16,22 @@ ms.topic: conceptual
 ms.date: 09/01/2023
 ---
 
-# Microsoft 365 Defender Multi-Tenant Organization Unified View
+# Microsoft 365 Defender multi-tenant Unified View
 
 **Applies to:**
 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-- Microsoft 365 Defender Multi-Tenant Organization
+- Microsoft 365 Defender multi-tenant Unified View
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Microsoft 365 Defender Multi-Tenant Organization Unified View is a unified experience where you can monitor and manage security across your enterprise. With the integrated alerts across identities, endpoints, data, apps, email, and collaboration tools - investigating and responding to threats now happen in a central location.
+Microsoft 365 Defender multi-tenant Unified View is a unified experience where you can monitor and manage security across your enterprise. With the integrated alerts across identities, endpoints, data, apps, email, and collaboration tools - investigating and responding to threats now happen in a central location.
 
 ## Verify your tenant access
 
 Before you start, make sure that you have the appropriate permissions for accessing multiple tenants using a single identity.
 
-To access data from other tenants within the Microsoft 365 Defender Multi-Tenant Organization portal, you must have one of the following for each of the tenants that you intend to view and manage:
+To access data from other tenants within the Microsoft 365 Defender multi-tenant Unified View, you must have one of the following for each of the tenants that you intend to view and manage:
 
 - [Granular delegated admin privileges (GDAP)](/partner-center/gdap-introduction)
 - [Azure Active Directory B2B authentication](/azure/active-directory/external-identities/what-is-b2b)
@@ -53,14 +53,14 @@ To access data from other tenants within the Microsoft 365 Defender Multi-Tenant
 
 1. Go to the [Microsoft Partner Center](https://partner.microsoft.com/commerce/granularadminaccess/list).
 2. Under **Customers** you can find the list of organizations you have guest access to.
-3. Verify all the tenants you plan to manage in theMicrosoft 365 Defender Multi-Tenant Organization portal appear in the list.
+3. Verify all the tenants you plan to manage in the Microsoft 365 Defender multi-tenant Unified View appear in the list.
 4. For each tenant, go to the [Microsoft 365 Defender portal)](https://security.microsoft.com/?tid=tenant_id) to validate you can successfully access the tenant.
 
 ## Key capabilities
 
-Microsoft 365 Defender Multi-Tenant Organization Unified View offers the same experience as the Microsoft 365 Defender portal, as well as aggregating all the tenants you manage into unified views. The multi-tenant portal will only display data you are allowed to see and is compiled on-the-fly.
+Microsoft 365 Defender multi-tenant Unified View offers the same experience as the Microsoft 365 Defender portal, as well as aggregating all the tenants you manage into unified views. The multi-tenant portal will only display data you are allowed to see and is compiled on-the-fly.
 
-For each tenant you have access to in the Microsoft 365 Defender Multi-Tenant Organization portal You'll have the following key capabilities that focus on incident investigation flow and posture management:
+For each tenant you have access to in the Microsoft 365 Defender multi-tenant Unified View You'll have the following key capabilities that focus on incident investigation flow and posture management:
 
 | Capability | Description |
 | ------ | ------ |
@@ -73,4 +73,4 @@ For each tenant you have access to in the Microsoft 365 Defender Multi-Tenant Or
 
 ## Next steps
 
-- To start using the portal, go to the [Microsoft 365 Defender Multi-Tenant Organization portal](https://mto.security.microsoft.com)
+- To start using the portal, go to the [Microsoft 365 Defender multi-tenant Unified View](https://mto.security.microsoft.com)
