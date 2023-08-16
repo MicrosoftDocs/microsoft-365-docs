@@ -86,7 +86,7 @@ Audit logging is required by Attack simulation training so events can be capture
 - Reporting data isn't available across all reports. The reports appear empty.
 - Training assignments are blocked, because data isn't available.
 
-To verify that audit logging is on or to turn it on, see [Turn auditing on or off](../../compliance/audit-log-enable-disable.md).
+To verify that audit logging is on or to turn it on, see [Turn auditing on or off](/purview/audit-log-enable-disable).
 
 > [!NOTE]
 > Empty activity details can also be caused by no E5 licenses being assigned to users. Verify at least one E5 license is assigned to an active user to ensure that reporting events are captured and recorded.
