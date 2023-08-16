@@ -23,6 +23,8 @@ ms.date: 09/01/2023
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Microsoft 365 Defender Multi-Tenant Organization
 
+[!include[Prerelease information](../../includes/prerelease.md)]
+
 Microsoft 365 Defender Multi-Tenant Organization Unified View is a unified experience where you can monitor and manage security across your enterprise. With the integrated alerts across identities, endpoints, data, apps, email, and collaboration tools - investigating and responding to threats now happen in a central location.
 
 ## Verify your tenant access
