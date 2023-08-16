@@ -35,8 +35,6 @@ The OCR service is available for the following file types:
 - JPG
 - PNG
 - BMP
-- TIFF
-- PDF (image only)
 
 ### Supported languages
 
