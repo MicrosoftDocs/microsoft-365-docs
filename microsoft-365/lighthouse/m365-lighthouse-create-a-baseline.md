@@ -49,7 +49,8 @@ To clone an existing baseline:
 
 3. Select **Clone**
 
-**NOTE**: The new baseline will be the name of the baseline from which it was cloned with “(1)” added to the end.
+> [!NOTE]
+> The new baseline will be the name of the baseline from which it was cloned with “(1)” added to the end.
 
 To import a baseline:
 
