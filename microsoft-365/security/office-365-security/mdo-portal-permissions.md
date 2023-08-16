@@ -42,7 +42,7 @@ You need to be member of the **Global Administrator** role in Azure AD or a memb
 >
 > In the Microsoft 365 Defender preview program, a different Microsoft Defender 365 RBAC model is also available. The permissions in this RBAC model are different from the Defender for Office 365 permissions as described in this article. For more information, see [Microsoft 365 Defender role-based access control (RBAC)](../defender/manage-rbac.md).
 >
-> For information about permissions in the Microsoft Purview compliance portal, see [Permissions in the Microsoft Purview compliance portal](../../compliance/microsoft-365-compliance-center-permissions.md).
+> For information about permissions in the Microsoft Purview compliance portal, see [Permissions in the Microsoft Purview compliance portal](/purview/microsoft-365-compliance-center-permissions).
 
 ## Relationship of members, roles, and role groups
 
