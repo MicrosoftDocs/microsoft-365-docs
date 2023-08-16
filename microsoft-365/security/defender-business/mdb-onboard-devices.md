@@ -10,8 +10,8 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 05/01/2023
-ms.reviewer: efratka, jomaun
+ms.date: 08/08/2023
+ms.reviewer: efratka, nehabha, muktaagarwal
 f1.keywords: NOCSH 
 ms.collection: 
  - SMB
@@ -34,7 +34,7 @@ Onboard your business devices to protect them right away. You can choose from se
 1. Select a tab: 
    - **Windows 10 and 11**
    - **Mac**
-   - **Mobile** (new capabilities are in preview for iOS and Android devices!)
+   - **Mobile** (new capabilities are available for iOS and Android devices!)
    - **Servers** (Windows Server or Linux Server)
 2. View your onboarding options, and follow the guidance on the selected tab.
 3. [View a list of onboarded devices](#view-a-list-of-onboarded-devices).
@@ -53,6 +53,7 @@ Onboard your business devices to protect them right away. You can choose from se
 > 
 > For more information, see [Microsoft Defender for Business requirements](mdb-requirements.md).
 > 
+
 Choose one of the following options to onboard Windows client devices to Defender for Business:
 
 - [Local script](#local-script-for-windows-10-and-11) (for onboarding devices manually in the Microsoft 365 Defender portal)
@@ -61,7 +62,7 @@ Choose one of the following options to onboard Windows client devices to Defende
 
 ### Local script for Windows 10 and 11
 
-You can use a local script to onboard Windows client devices. When you run the onboarding script on a device, it creates a trust with Azure Active Directory, if that trust doesn't already exist; enrolls the device in Microsoft Intune, if it isn't already enrolled; and then onboards the device to Defender for Business. If you're not currently using Intune, the local script method is the recommended onboarding method for Defender for Business customers.
+You can use a local script to onboard Windows client devices. When you run the onboarding script on a device, it creates a trust with Azure Active Directory (if that trust doesn't already exist), enrolls the device in Microsoft Intune (if it isn't already enrolled), and then onboards the device to Defender for Business. If you're not currently using Intune, the local script method is the recommended onboarding method for Defender for Business customers.
 
 > [!TIP]
 > We recommend that you onboard up to 10 devices at a time when you use the local script method.
@@ -159,7 +160,7 @@ Choose one of the following options to onboard Mac:
 
 ### Local script for Mac
 
-When you run the local script on Mac, it creates a trust with Azure Active Directory if that trust doesn't already exist. It enrolls the Mac in Microsoft Intune if it isn't already enrolled, and then onboards the Mac to Defender for Business. We recommend that you onboard up to 10 devices at a time using this method.
+When you run the local script on Mac, it creates a trust with Azure Active Directory (if that trust doesn't already exist), enrolls the Mac in Microsoft Intune (if it isn't already enrolled), and then onboards the Mac to Defender for Business. We recommend that you onboard up to 10 devices at a time using this method.
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
 
@@ -177,7 +178,7 @@ When you run the local script on Mac, it creates a trust with Azure Active Direc
 
 8. Select **Continue**, agree with the license terms, and then enter your password when prompted.
 
-9. You're prompted to allow installation of a driver from Microsoft (either "System Extension Blocked" or "Installation is on hold", or both). You must allow the driver installation: Select **Open Security Preferences** or **Open System Preferences** > **Security & Privacy**, and then select **Allow**.
+9. You're prompted to allow installation of a driver from Microsoft (either *System Extension Blocked* or *Installation is on hold*, or both). You must allow the driver installation. Select **Open Security Preferences** or **Open System Preferences** > **Security & Privacy**, and then select **Allow**.
 
 10. Use the following Bash command to run the onboarding package:
 
@@ -236,22 +237,21 @@ After a device is enrolled in Intune, you can add it to a device group. [Learn m
 
 You can use the following methods to onboard mobile devices, such as Android and iOS devices:
 
-- [Use the Microsoft Defender app (preview)](#use-the-microsoft-defender-app-preview)
+- [Use the Microsoft Defender app](#use-the-microsoft-defender-app)
 - [Use Microsoft Intune](#use-microsoft-intune)
 
-### Use the Microsoft Defender app (preview)
+### Use the Microsoft Defender app
 
-[Mobile threat defense capabilities](mdb-mtd.md) are now available to Defender for Business customers who have opted in to receive [preview](mdb-preview.md) features. With these capabilities, you can now onboard mobile devices (such as Android and iOS) by using the Microsoft Defender app. With this method, users download the app from Google Play or the Apple App Store, sign in, and complete onboarding steps.
+[Mobile threat defense capabilities](mdb-mtd.md) are now generally available to Defender for Business customers. With these capabilities, you can now onboard mobile devices (such as Android and iOS) by using the Microsoft Defender app. With this method, users download the app from Google Play or the Apple App Store, sign in, and complete onboarding steps.
 
 > [!IMPORTANT]
 > Make sure that all of the following requirements are met before onboarding mobile devices:
-> 1. Your organization has signed up to receive preview features for your tenant. See [Microsoft Defender for Business preview features](mdb-preview.md).
-> 2. Defender for Business has finished provisioning. In the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Assets** > **Devices**.<br/>- If you see a message that says, "Hang on! We're preparing new spaces for your data and connecting them," it means that Defender for Business hasn't finished provisioning. This process is happening now, and can take up to 24 hours to complete. <br/>- If you see a list of devices, or you're prompted to onboard devices, it means Defender for Business provisioning has completed. 
-> 3. Users have downloaded the Microsoft Authenticator app on their device, and have registered their device using their work or school account for Microsoft 365.
+> 1. Defender for Business has finished provisioning. In the [Microsoft 365 Defender portal](https://security.microsoft.com), go to **Assets** > **Devices**.<br/>- If you see a message that says, "Hang on! We're preparing new spaces for your data and connecting them," then Defender for Business hasn't finished provisioning. This process is happening now, and it can take up to 24 hours to complete. <br/>- If you see a list of devices, or you're prompted to onboard devices, it means Defender for Business provisioning has completed. 
+> 2. Users have downloaded the Microsoft Authenticator app on their device, and have registered their device using their work or school account for Microsoft 365.
 
 | Device | Procedure |
 |:---|:---|
-| Android | 1. On the device, go to the Google Play store.<br/><br/>2. If you haven't already done so, download and install the Microsoft Authenticator app. Sign in, and register your device in the Microsoft Authenticator app. <br/><br/>3. In the Google Play store, search for the Microsoft Defender app. <br/><br/>4. On the app page, scroll down and select **Join the beta** > **Join**.<br/><br/>5. Wait for the process to complete. It might take a few hours for the process of joining the beta program to complete.  You'll see text that says, "Joining the beta..."<br/><br/>6. After you've enrolled into the beta, verify that the beta version of the app looks like `1.0.xxxx.0201`, and then install the app.<br/><br/>7. Open the app, sign in, and complete the onboarding process. |
+| Android | 1. On the device, go to the Google Play store.<br/><br/>2. If you haven't already done so, download and install the Microsoft Authenticator app. Sign in, and register your device in the Microsoft Authenticator app. <br/><br/>3. In the Google Play store, search for the Microsoft Defender app, and install it. <br/><br/>4. Open the Microsoft Defender app, sign in, and complete the onboarding process. |
 | iOS | 1. On the device, go to the Apple App Store. <br/><br/>2. If you haven't already done so, download and install the Microsoft Authenticator app. Sign in, and register your device in the Microsoft Authenticator app.<br/><br/>3. In the Apple App Store, search for the Microsoft Defender app.<br/><br/>4. Sign in and install the app. <br/><br/>5. Agree to the terms of use to continue. <br/><br/>6. Allow the Microsoft Defender app to set up a VPN connection and add VPN configurations. <br/><br/>7. Choose whether to allow notifications (such as alerts).  |
 
 > [!TIP]
@@ -266,8 +266,7 @@ If your subscription includes Microsoft Intune, you can use it to onboard mobile
 
 After a device is enrolled in Intune, you can add it to a device group. [Learn more about device groups in Defender for Business](mdb-create-edit-device-groups.md).
 
-> [!NOTE]
-> The standalone version of Defender for Business does not include the Intune license that is required to onboard iOS and Android devices in the Intune admin center. However, if your tenant is receiving [preview features](mdb-preview.md), you can now use the [Microsoft Defender app method](#use-the-microsoft-defender-app-preview). Or, you can add Intune to your Defender for Business subscription. Intune is included in Microsoft 365 Business Premium.
+
 
 ## [**Servers**](#tab/Servers)
 
@@ -355,6 +354,7 @@ You can use the following methods to onboard an instance of Linux Server to Defe
 > [!NOTE]
 > Onboarding an instance of Linux Server to Defender for Business is the same as onboarding to [Microsoft Defender for Endpoint on Linux](../defender-endpoint/microsoft-defender-endpoint-linux.md).
 
+
 ---
 
 ## View a list of onboarded devices
@@ -380,3 +380,4 @@ After you've onboarded a device, you can run a quick phishing test to make sure 
 
 - If you have other devices to onboard, select the tab for those devices ([Windows 10 and 11, Mac, Servers, or Mobile devices](#what-to-do)), and follow the guidance on that tab.
 - If you're done onboarding devices, proceed to [Step 6: Configure your security settings and policies in Defender for Business](mdb-configure-security-settings.md).
+

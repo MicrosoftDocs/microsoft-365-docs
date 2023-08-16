@@ -6,7 +6,7 @@ ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
 ms.reviewer: pahuijbr, mkaminska, v-vutrieu
-ms.date: 07/06/2023
+ms.date: 08/07/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -25,6 +25,37 @@ search.appverid: met150
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Microsoft regularly releases [security intelligence updates and product updates for Microsoft Defender Antivirus](microsoft-defender-antivirus-updates.md). It's important to keep Microsoft Defender Antivirus up to date. When a new package version is released, support for the previous two versions is reduced to technical support only. Versions that are older than the previous two versions are listed in this article and are provided for technical upgrade support only.
+
+## April-2023 (Platform: 4.18.2304.8 | Engine: 1.1.20300.3)
+
+- Security intelligence update version: **1.387.2997.0**
+- Release date:  **May 2, 2023 (Engine) / May 2, 2023 (Platform)**
+- Platform: **4.18.2304.8** 
+- Engine: **1.1.20300.3**
+- Support phase: **Technical upgrade support (only)**
+
+### What's new
+
+- **Beginning in May 2023, the Platform and Engine version schema have a new format**. Here's what the new version format looks like: 
+   - Platform: `4.18.23050.1` 
+   - Engine: `1.1.23050.63000` 
+- Fixed memory leak in behavior monitoring
+- Improved resiliency of signature loading and platform updates
+- Quarantine and restore support for [WMI](use-wmi-microsoft-defender-antivirus.md)
+- Fixed attack surface reduction (ASR) rule output with [Get-MpPreference](/powershell/module/defender/get-mppreference)
+- Fixed MSERT to only use release engine version
+- Improved the enforcement of exclusions
+- Added support for enabling real-time protection and signature updates during OOBE
+- Fixed localization for Defender events
+- Deprecated real-time signature delivery setting
+- Updated missing setting (ValidateMapsConnection) in [MpCmdRun.exe](command-line-arguments-microsoft-defender-antivirus.md)
+- Fixed abandoned threats in the Windows Security app
+- Fixed a service-hang issue that caused invalid outputs to display in [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus)
+
+### Known issues
+
+- None
+
 
 ## March-2023 (Platform: 4.18.2303.8 | Engine: 1.1.20200.4)
 
@@ -786,3 +817,4 @@ Microsoft regularly releases [security intelligence updates and product updates 
 ### Known issues
 
 - When this update is installed, the device needs the jump package 4.18.2001.10 to be able to update to the latest platform version.
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

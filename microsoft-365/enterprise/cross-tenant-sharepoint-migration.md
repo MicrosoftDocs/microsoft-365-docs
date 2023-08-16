@@ -27,6 +27,8 @@ Using *SharePoint Online PowerShell*, SharePoint Admins can to transition sites 
 
 Up to 4,000 SharePoint accounts can be scheduled for migration in advance at a given time. Once scheduled, migrations occur without content ever leaving the Microsoft 365 cloud and with minimal disruption. When migrations are complete, a redirect is placed in the location of the user's original SharePoint site, so any links to files and folders can continue working in the new location.
 
+>[!Important]
+>Cross-Tenant moves are a one and done migration activity. The content will be **moved** from the Source to Target, leaving behind a redirect link on Source. **Incremental and delta migration passes cannot be performed.**
 
 ## How to participate
 
@@ -49,7 +51,7 @@ For more information on licensing:
 
 - **Microsoft SharePoint Online Powershell**. Confirm you have the most recent version installed. [Download SharePoint Online Management Shell from Official Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=35588)
 
-- **Turn off service encryption with Customer Key enabled.** Confirm that the source OneDrive tenant **doesn't** have Service encryption with Microsoft Purview Customer Key enabled. If enabled on Source tenant, the migration will fail. [Learn more on Service encryption with Microsoft Purview Customer Key](/microsoft-365/compliance/customer-key-overview)
+- **Confirm that the source SharePoint tenant does not have Service encryption with Microsoft Purview Customer Key enabled.** If enabled on Source tenant, the migration will fail.  [Learn more on Service encryption with Microsoft Purview Customer Key](/microsoft-365/compliance/customer-key-overview)
 
 - Source SharePoint sites must be set to Read/Write. If set to Read only, the migration will fail.
 
@@ -63,9 +65,10 @@ For more information on licensing:
 >Before starting any migrations, make certain that your source SharePoint sites are set to Read/write mode.  If they are set to read-only the migration will fail. 
 >
 >- Each individual SharePoint site being migrated must have no more than 2 TB of storage, or 1 million items. If during a migration of multiple sites a site with more than 2 TB is encountered, that site will eventually timeout and fail. Sites less 2 TB will continue until completion.
+> - The 1 million item limit can be any "item", including files (including versions), folders, and list line entries if it is a list or library.
 >
 >- Ensure all users and groups identified for migration have been pre-created on the target tenant.
->- Assign the appropriate licenses to each user on the target tenant.
+>- Assign the appropriate licenses to each user on either the Source **or** the Target tenant. **The license does not need to be applied in both locations.**
 
 
 ## Path size limits

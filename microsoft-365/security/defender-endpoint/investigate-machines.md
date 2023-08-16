@@ -248,3 +248,4 @@ To gain an in-depth view of the device health report, you can go to **Reports > 
 - [Investigate a user account in Defender for Endpoint](investigate-user.md)
 - [Security recommendation](tvm-security-recommendation.md)
 - [Software inventory](tvm-software-inventory.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

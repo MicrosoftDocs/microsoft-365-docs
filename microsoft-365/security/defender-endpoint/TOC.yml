@@ -245,6 +245,8 @@
         href: schedule-antivirus-scan-in-mde.md
       - name: Schedule an update of the Microsoft Defender for Endpoint (Linux)
         href: linux-update-MDE-Linux.md
+      - name: Configure eBPF-based sensor
+        href: linux-support-ebpf.md 
 
     - name: Configure Mobile Threat Defense
       items:
@@ -360,7 +362,7 @@
     - name: Device management
       items:
         - name: Onboarding devices
-          href: onboard-configure.md
+          href: onboarding.md
         - name: Offboarding devices
           href: offboard-machines.md
         - name: Ensure your devices are configured properly
@@ -625,6 +627,27 @@
           href: manage-gradual-rollout.md
         - name: Configure gradual rollout process for Microsoft Defender updates
           href: configure-updates.md
+        - name: Ring deployment
+          items:
+          - name: Overview
+            href: microsoft-defender-antivirus-ring-deployment.md
+          - name: Intune and Microsoft Update
+            href: microsoft-defender-antivirus-ring-deployment-intune-microsoft-update.md
+          - name: Configuration Manager and WSUS
+            href: microsoft-defender-antivirus-ring-deployment-sscm-wsus.md
+          - name: Group Policy and Microsoft Update
+            href: microsoft-defender-antivirus-ring-deployment-group-policy-microsoft-update.md
+          - name: Group Policy and network share
+            href: microsoft-defender-antivirus-ring-deployment-group-policy-network-share.md
+          - name: Group Policy and WSUS
+            items:
+            - name: Pilot ring
+              href: microsoft-defender-antivirus-pilot-ring-deployment-group-policy-wsus.md
+            - name: Production ring
+              href: microsoft-defender-antivirus-production-ring-deployment-group-policy-wsus.md
+            - name: Appendices for ring deployment using Group Policy and Windows Server Update Services (WSUS)
+              href: microsoft-defender-antivirus-ring-deployment-group-policy-wsus-appendices.md
+
         - name: Manage Microsoft Defender Antivirus updates and scans for endpoints that are out of date
           href: manage-outdated-endpoints-microsoft-defender-antivirus.md
         - name: Manage event-based forced updates
@@ -1056,6 +1079,8 @@
             - name: Delete Indicator
               href: delete-ti-indicator-by-id.md
 
+            - name: Batch Delete Indicators
+              href: batch-delete-ti-indicators.md
           - name: Information gathering
             items:
             - name: Export information gathering assessment

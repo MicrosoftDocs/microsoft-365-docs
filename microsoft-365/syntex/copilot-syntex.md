@@ -1,11 +1,11 @@
 ---
-title: Overview of Syntex File Q&A for Microsoft 365 Copilot (Preview)
+title: Overview of Syntex File Q&A for Copilot (Preview)
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.reviewer: ssquires
-ms.date: 07/11/2023
+ms.date: 07/24/2023
 ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid: 
@@ -14,15 +14,15 @@ ms.collection:
     - m365initiative-syntex
 ms.localizationpriority:  medium
 ROBOTS: NOINDEX, NOFOLLOW
-description: Learn how to use Microsoft 365 Copilot to easily find information in Microsoft Syntex.
+description: Learn how to use File Q&A for Copilot to easily find information in Microsoft Syntex.
 ---
 
-# Overview of Syntex File Q&A for Microsoft 365 Copilot (Preview)
+# Overview of Syntex File Q&A for Copilot (Preview)
 
 > [!NOTE]
 > This feature is currently in limited preview and subject to change.
 
-Microsoft Syntex is now integrated with Microsoft 365 Copilot to bring the power of assistive AI into your organization's intelligent document processing.
+Microsoft Syntex now brings the power of assistive AI into your organization's intelligent document processing.
 
 Syntex File Q&A for Copilot analyzes the text of a selected file in a SharePoint document library, in OneDrive for Business, or in Teams. It then generates a set of questions you can ask about the information in the file. The questions can be used to quickly identify the type of document, generate a summary of information in the document, and identify key points or other important information. You can also ask your own questions, such as "When does this contract expire?" or "What is the fee schedule for this project?"
 

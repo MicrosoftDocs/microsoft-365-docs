@@ -45,7 +45,7 @@ During the GDAP setup process, you create GDAP templates by configuring what sup
 - The customers you manage in Lighthouse need to be set up in Partner Center with either a reseller relationship or an existing delegated relationship (DAP or GDAP).
 
 > [!NOTE]
-> Lighthouse GDAP templates use role-assignable security groups. An Azure AD P1 license is required to add users to these groups. To enable Just-in-Time (JIT) roles, an Azure AD P2 license is required.
+> Lighthouse GDAP templates use role-assignable security groups. An Azure AD P1 license is required to add users to these groups. To enable Just-in-Time (JIT) roles, Microsoft Entra IDE Governance or an Azure AD P2 license is required.
 
 ## Set up GDAP for the first time
 

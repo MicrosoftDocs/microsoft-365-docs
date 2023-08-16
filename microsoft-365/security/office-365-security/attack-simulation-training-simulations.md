@@ -230,9 +230,9 @@ On the **Target users** page, select who receives the simulation. Use the follow
         - Select existing City values. If the link is available, select **See all Cities** to see the complete list of available City values.
 
       - **Country**: Use the following options:
-        - **Search**: In :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search by Country**, you can type part of the Country value and then press Enter. You can select some or all of the results.
+        - **Search**: In :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search by Country**, you can type part of the Country/region value and then press Enter. You can select some or all of the results.
         - Select **All Country**
-        - Select existing City values. If the link is available, select **See all Countries** to see the complete list of available Country values.
+        - Select existing City values. If the link is available, select **See all Countries** to see the complete list of available Country/region values.
 
       - **Department**: Use the following options:
         - **Search**: In :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search by Department**, you can type part the Department value and then press Enter. You can select some or all of the results.

@@ -22,8 +22,6 @@ ms.subservice: mde
 ms.reviewer: mkaminska
 ---
 
-<!-- v-jweston/jweston-1 is scheduled to resume authorship Apr/May 2023.-->
-
 # Device health, Sensor health & OS report
 
 **Applies to:**
@@ -70,7 +68,7 @@ For more information about user role management, see [Create and manage roles fo
 
 ## Sensor health & OS tab
 
-Sensor health and OS cards report on general operating system health, which includes detection sensor health, up-to-date versus out-of-date operating systems, and Windows 10 versions.
+Sensor health and OS cards report on general operating system health, which includes detection sensor health, up to date versus out-of-date operating systems, and Windows 10 versions.
 
 >:::image type="content" source="images/device-health-sensor-health-os-tab.png" alt-text="Shows Sensor health and Operating system information." lightbox="images/device-health-sensor-health-os-tab.png":::
 
@@ -151,3 +149,4 @@ The Windows version trend graph can help you quickly determine whether your orga
 >
 
 [Microsoft Defender Antivirus health](device-health-microsoft-defender-antivirus-health.md#microsoft-defender-antivirus-health-tab)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

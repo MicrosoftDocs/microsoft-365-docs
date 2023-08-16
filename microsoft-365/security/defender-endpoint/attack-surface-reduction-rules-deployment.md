@@ -207,3 +207,4 @@ Some rules don't work well if un-signed, internally developed application and sc
 [ASR rules Configurations](https://security.microsoft.com/asr?viewid=configuration)
 
 [ASR rules Exclusions](https://security.microsoft.com/asr?viewid=exclusions)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

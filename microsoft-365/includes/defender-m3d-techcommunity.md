@@ -11,4 +11,4 @@ ms.topic: include
 ---
 
 > [!TIP]
-> Do you want to learn more? Engage with the Microsoft Security community in our Tech Community:  [Microsoft 365 Defender Tech Community](https://techcommunity.microsoft.com/t5/microsoft-365-defender-blog/bg-p/MicrosoftThreatProtectionBlog).
+> Do you want to learn more? Engage with the Microsoft Security community in our Tech Community:  [Microsoft 365 Defender Tech Community](https://techcommunity.microsoft.com/t5/microsoft-365-defender/bd-p/MicrosoftThreatProtection).

@@ -84,3 +84,4 @@ Performance mode can only run on a *trusted* Dev Drive and is enabled by default
 ## See also
 
 [Set up a Dev Drive on Windows 11](/windows/dev-drive)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

@@ -56,7 +56,7 @@ If you have an MOSA billing account type, you can replace the payment method for
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
    - If you're using the **Simplified view**, select **Subscriptions**, then select **View payment methods**.
-   - If you're using the Dashboard view, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Bills & payments</a> page, and select the **Payment methods** tab.
+   - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Bills & payments</a> page, and select the **Payment methods** tab.
 2. Select **Add a payment method**.
 3. On the **Add a payment method** page, enter the information for the new payment method, then select **Save**.
 4. To use the new payment method to pay for all subscriptions currently paid for with another payment method, select **Replace an existing payment method**.
@@ -86,7 +86,7 @@ When you replace an existing payment method, you can add a new payment method, o
 
 > [!IMPORTANT]
 >
-> Replacing a payment method doesn't delete the existing payment method. It's still available for you to select and use for other subscriptions and billing profiles. Learn how to delete a payment method .
+> Replacing a payment method doesn't delete the existing payment method. It's still available for you to select and use for other subscriptions and billing profiles. Learn how to delete a payment method.
 
 ### Replace the payment method for a billing profile
 
@@ -167,6 +167,7 @@ If a payment method is attached to any subscriptions or billing profiles, first 
 |**I want to update a credit or debit card number.** |You can't change the card on an existing payment method. If you want to replace a credit or debit card number, [replace it with a different payment method](#replace-a-payment-method), which moves all active subscriptions from the payment method to the new one. |
 |**I only have one credit or debit card on my account and I want to remove it.** |If you only have one payment method, follow the steps in [Delete a payment method](#delete-a-payment-method). |
 |**I can't add my credit or debit card.**  |You must use a payment method issued from the same country/region as your tenant. If you have trouble entering your credit or debit card information, you can  [contact support](../../admin/get-help-support.md). |
+
 
 ## Related content
 

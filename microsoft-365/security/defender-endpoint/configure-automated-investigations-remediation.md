@@ -56,3 +56,4 @@ If you're using Defender for Endpoint, you can specify an automation level so th
 
 - [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md)
 - [Automation levels in automated investigation and remediation](automation-levels.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

@@ -67,3 +67,4 @@ Once you have determined the architecture of your environment and have created a
 ## Next step
 
 After choosing your Defender for Endpoint architecture and deployment method continue to [Step 4 - Onboard devices](onboarding.md).
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

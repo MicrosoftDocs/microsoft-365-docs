@@ -118,7 +118,7 @@ The following Advanced Hunting query can help provide a rough estimate of data v
  
 ```kusto 
 let bytes_ = 500;
-union withsource=MDTables*
+union withsource=MDTables *
 | where Timestamp > startofday(ago(6h))
 | summarize count() by bin(Timestamp, 1m), MDTables
 | extend EPS = count_ /60
