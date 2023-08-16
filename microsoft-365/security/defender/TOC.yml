@@ -446,7 +446,7 @@
       items:
         - name: What is Microsoft 365 Defender multi-tenant Unified View
           href: get-started-mto.md
-        - name: Requirements
+        - name: Permission requirements
           href: get-started-mto.md
         - name: Get Started
           items: 
