@@ -28,19 +28,19 @@ Administrators can use the **New-MigrationBatch** cmdlet, available through the 
 
 Users migrating must be present in the target tenant Exchange Online system as a _MailUser_, marked with specific attributes to enable the cross-tenant moves. The system will fail to move users that aren't properly set up in the target tenant.
 
-After the moves are complete, the source user mailbox is converted to a MailUser and the targetAddress (shown as _ExternalEmailAddress_ in Exchange) is stamped with the routing address to the destination tenant. This process leaves the legacy MailUser in the source tenant and allows for coexistence and mail routing. When business processes allow, the source tenant may remove the source MailUser or convert them to a mail contact.
+After the moves are complete, the source user mailbox is converted to a MailUser, and the targetAddress (shown as _ExternalEmailAddress_ in Exchange) is stamped with the routing address to the destination tenant. This process leaves the legacy MailUser in the source tenant and allows for coexistence and mail routing. When business processes allow, the source tenant may remove the source MailUser or convert them to a mail contact.
 
 Cross-tenant Exchange mailbox migrations are supported for tenants in hybrid or cloud only, or any combination of the two.
 
 This article describes the process for cross-tenant mailbox moves and provides guidance on how to prepare source and target tenants for the Exchange Online mailbox content moves.
 
 > [!IMPORTANT]
-> Mailboxes that are on any type of hold will not be migrated and the move for that mailbox will be blocked.
+> Mailboxes that are on any type of hold won't be migrated, and the move for that mailbox will be blocked.
 
-When a mailbox is migrated cross-tenant with this feature, only user visible content in the mailbox (email, contacts, calendar, tasks, and notes) is migrated to the target (destination tenant). After successful migration, the source mailbox is deleted. This means that after migration, under no circumstances is the source mailbox available, discoverable, or accessible in the source tenant.
+When a mailbox is migrated cross-tenant with this feature, only user-visible content in the mailbox (email, contacts, calendar, tasks, and notes) is migrated to the target (destination tenant). After a successful migration, the source mailbox is deleted. This deletion means that after migration, under no circumstances is the source mailbox available, discoverable, or accessible in the source tenant.
 
 > [!NOTE]
-> If you are interested in previewing our new feature Domain Sharing for email alongside your cross-tenant mailbox migrations, please complete the form at [aka.ms/domainsharingpreview](https://aka.ms/domainsharingpreview). Domain sharing for email enables users in separate Microsoft 365 tenants to send and receive email using addresses from the same custom domain. The feature is intended to solve scenarios where users in separate tenants need to represent a common corporate brand in their email addresses. The current preview supports sharing domains indefinitely and shared domains during cross-tenant mailbox migration coexistence.
+> If you are interested in previewing our new feature **Domain Sharing for email** alongside your cross-tenant mailbox migrations, complete the form at [aka.ms/domainsharingpreview](https://aka.ms/domainsharingpreview). The **Domain sharing for email** feature enables users in separate Microsoft 365 tenants to send and receive email using addresses from the same custom domain. The feature is intended to solve scenarios where users in separate tenants need to represent a common corporate brand in their email addresses. The current preview supports sharing domains indefinitely and shared domains during cross-tenant mailbox migration coexistence.
 
 ## Licensing
 
@@ -50,30 +50,30 @@ When a mailbox is migrated cross-tenant with this feature, only user visible con
 > The Cross Tenant User Data Migration add-on is available as a separate purchase for Microsoft 365 Business Basic, Standard, and Premium; Microsoft 365 F1/F3/E3/E5/; Office 365 F3/E1/E3/E5; Exchange Online; SharePoint Online; and OneDrive for Business.
 
 > [!WARNING]
-> You must have purchased, or verified that you can purchase, cross tenant user data migration licenses prior to the next steps. Migrations fail if this step has not been completed. Microsoft does not offer exceptions for this licensing requirement.
+> You must have purchased, or verified that you can purchase, cross-tenant user data migration licenses prior to the next steps. Migrations fail if this step hasn't been completed. Microsoft doesn't offer exceptions for this licensing requirement.
 
 ## Preparing source and target tenants
 
 ### Prerequisites for source and target tenants
 
-Before starting, be sure you have the necessary permissions to configure the Move Mailbox application in Azure, EXO Migration Endpoint, and the EXO Organization Relationship.
+Before starting, ensure that you have the necessary permissions to configure the Move Mailbox application in Azure, EXO Migration Endpoint, and the EXO Organization Relationship.
 
-Additionally, at least one mail-enabled security group in the source tenant is required. These groups are used to scope the list of mailboxes that can move from source tenant (or sometimes referred to as resource) to the target tenant. This allows the source tenant admin to restrict or scope the specific set of mailboxes that need to be moved, preventing unintended users from being migrated. Nested groups aren't supported.
+Additionally, at least one mail-enabled security group in the source tenant is required. These groups are used to scope the list of mailboxes that can move from source tenant (or sometimes referred to as resource) to the target tenant. This scoping allows the source tenant administrator to restrict or scope the specific set of mailboxes that need to be moved, preventing unintended users from being migrated. Nested groups aren't supported.
 
-You'll also need to communicate with your trusted partner company (with whom you will be moving mailboxes) to obtain their Microsoft 365 tenant ID. This tenant ID is used in the Organization Relationship DomainName field.
+You'll also need to communicate with your trusted partner company (with whom you'll be moving mailboxes) to obtain their Microsoft 365 tenant ID. This tenant ID is used in the **Organization Relationship DomainName** field.
 
-To obtain the tenant ID of a subscription, sign in to the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339) and go to [https://aad.portal.azure.com/\#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties). Select the copy icon for the Tenant ID property to copy it to the clipboard.
+To obtain the tenant ID of a subscription, sign in to the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339) and go to [https://aad.portal.azure.com/\#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties). Select the **copy** icon for the **Tenant ID** property to copy it to the clipboard.
 
-All users in both the source and target organizations must be licensed with the appropriate Exchange Online subscriptions. Also, make sure to apply Cross Tenant User Data Migration licenses to all users that will be migrated to the target side.
+All users in both the source and target organizations must be licensed with the appropriate Exchange Online subscriptions. Also, ensure that you apply Cross Tenant User Data Migration licenses to all users who will be migrated to the target side.
 
 ### Configuration steps to enable your tenants for cross-tenant mailbox migrations
 
 > [!NOTE]
-> You must configure the target (destination) first. To complete these steps, you are not required to have or know the tenant admin credentials for both source and target tenant. Steps can be performed individually for each tenant by different administrators.
+> You must configure the target (destination) first. To complete these steps, you aren't required to have or know the tenant administrator credentials for both the source and target tenant. Steps can be performed individually for each tenant by different administrators.
 
 ### Prepare the target (destination) tenant by creating the migration application and secret
 
-1. Sign in to your Azure AD portal (<https://portal.azure.com>) with your target tenant admin credentials.
+1. Sign in to your Azure AD portal (<https://portal.azure.com>) with your target tenant administrator credentials.
 
    ![Azure Logon](../media/tenant-to-tenant-mailbox-move/74f26681e12df3308c7823ee7d527587.png)
 
@@ -87,11 +87,11 @@ All users in both the source and target organizations must be licensed with the 
 
    ![New Application](../media/tenant-to-tenant-mailbox-move/b36698df128e705eacff4bff7231056a.png)
 
-1. On the **Register an application page**, under **Supported account types**, select **Accounts in any organizational directory (Any Azure AD directory - Multi-tenant)**. Then, under **Redirect URI (optional)**, select **Web**, and then type `https://office.com`. Then, select **Register**.
+1. On the **Register an application** page, under **Supported account types**, select **Accounts in any organizational directory (Any Azure AD directory - Multi-tenant)**. Then, under **Redirect URI (optional)**, select **Web**, and then type `https://office.com`. Then, select **Register**.
 
    ![Application Registration](../media/tenant-to-tenant-mailbox-move/edcdf18b9f504c47284fe4afb982c433.png)
 
-   On the top-right corner of the page, you'll see a notification pop-up that states the app was successfully created.
+   On the top-right corner of the page, you'll see a notification dialog box that states the app was successfully created.
 
 1. Go back to the Home page, go to **Azure Active Directory**, and then select **App registrations**.
 
@@ -101,7 +101,7 @@ All users in both the source and target organizations must be licensed with the 
 
 1. In the navigation pane, select **API permissions** to view permissions assigned to your app.
 
-1. By default, **User.Read** permissions are assigned to the app you created, but aren't required for mailbox migrations. You can remove that permission.
+1. By default, **User.Read** permissions are assigned to the app you created, but these permissions aren't required for mailbox migrations. You can remove those permissions.
 
     ![Application Permissions](../media/tenant-to-tenant-mailbox-move/6a8c13a36cb3e10964a6920b8138e12b.png)
 
@@ -113,7 +113,7 @@ All users in both the source and target organizations must be licensed with the 
 
 1. Select **Application permissions**.
 
-1. Under **Select permissions**, expand **Mailbox**, and check **Mailbox.Migration**, and then select **Add permissions** at the bottom on the screen.
+1. Under **Select permissions**, expand **Mailbox**, and check the **Mailbox.Migration** checkbox, and then select **Add permissions** at the bottom on the screen.
 
     ![Set API](../media/tenant-to-tenant-mailbox-move/0038a4cf74bb13de0feb51800e078803.png)
 
@@ -126,7 +126,7 @@ All users in both the source and target organizations must be licensed with the 
 1. In the **Add a client secret** window, type a description, and then configure your expiration settings.
 
    > [!NOTE]
-   > The password is used when creating your migration endpoint. It is extremely important that you copy this password to your clipboard and or copy this password to a secure/secret password safe location. This is the only time you will be able to see this password! If you do somehow lose it or need to reset it, you can sign back into the Azure portal, go to **App registrations**, find your migration app, select **Secrets & certificates**, and then create a new secret for your app.
+   > The password is used when creating your migration endpoint. It's extremely important that you copy this password to your clipboard and/or to a secure/secret password safe location. The secret creation stage is the only time during which you'll be able to see this password! If you do somehow lose it or need to reset it, you can sign back into the Azure portal, go to **App registrations**, find your migration app, select **Secrets & certificates**, and then create a new secret for your app.
 
 Now that you've successfully created the migration application and secret, the next steps is to consent to the application. To consent to the application:
 
