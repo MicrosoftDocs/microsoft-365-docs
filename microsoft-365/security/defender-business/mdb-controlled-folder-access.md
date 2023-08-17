@@ -20,14 +20,11 @@ audience: Admin
 
 # Set up or edit your controlled folder access policy in Microsoft Defender for Business
 
-Controlled folder access allows only trusted apps to access protected folders on Windows devices. Think of this capability as ransomware mitigation. You can set up or edit your controlled folder access policy in Microsoft Intune. 
-
-> [!NOTE]
-> Intune is not included in the standalone version of Defender for Business, but it can be added on.
+Controlled folder access allows only trusted apps to access protected folders on Windows devices. Think of this capability as ransomware mitigation. You can set up or edit your controlled folder access policy in Microsoft Endpoint Manager. 
 
 ## Set up controlled folder access
 
-1. As a global administrator, in the Microsoft Intune admin center ([https://intune.microsoft.com/](https://intune.microsoft.com/)), go to **Endpoint security** > **Attack surface reduction**.
+1. As a global administrator, in the Microsoft Intune admin center ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)), go to **Endpoint security** > **Attack surface reduction**.
 
 2. Select an existing policy, or choose **Create policy** to create a new policy.
 
