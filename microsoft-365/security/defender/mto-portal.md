@@ -26,9 +26,9 @@ ms.date: 09/01/2023
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-The Microsoft 365 Defender multi-tenant portal ([https://security.microsoft.com](https://security.microsoft.com)) is your one-stop shop for using and managing Microsoft Defender for Business. It includes callouts to help you get started, cards that surface relevant information, and a navigation bar to give you easy access to various features and capabilities.
+## Get started in the Microsoft 365 Defender multi-tenant Unified View
 
-:::image type="content" source="../../media/defender-business/mdb-portal-home.png" alt-text="Microsoft 365 Defender portal":::
+- welcome flow
 
 ## The navigation bar
 
@@ -36,10 +36,10 @@ Use the navigation bar on the left side of the screen to access your incidents a
 
 | Item | Description |
 |:---|:---|
-| **Home** | Takes you to your home page in the Microsoft 365 Defender portal. The home page highlights any active threats that are detected, along with recommendations to help secure your company's data and devices. Recommendations are included in Defender for Business to save your security team time and effort. The recommendations are based on industry best practices. To learn more, see [Security recommendations - Microsoft Defender Vulnerability Management](../defender-endpoint/tvm-security-recommendation.md). |
-| **Incidents** | Takes you to your list of recent incidents. As alerts are triggered, incidents are created. An incident can include multiple alerts. Make sure to review your incidents regularly. To learn more, see [View and manage incidents in Defender for Business](mdb-view-manage-incidents.md).| |
-| **Assets** > **Devices** | Enables you to view devices, such as computers and mobile devices that are enrolled in [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). |
-| **Endpoints** > **Vulnerability management** | Enables you to access your [Microsoft Defender Vulnerability Management](../defender-vulnerability-management/defender-vulnerability-management.md) capabilities. Provides a dashboard, recommendations, remediation activities, a software inventory, and a list of potential weaknesses within your company. |
+| **Home** | Takes you to your home page in the Microsoft 365 Defender portal. The home page highlights any active threats that are detected, along with recommendations to help secure your company's data and devices.|
+| **Incidents** | Takes you to your list of recent incidents. As alerts are triggered, incidents are created. An incident can include multiple alerts. Make sure to review your incidents regularly. |
+| **Assets** > **Devices** | |
+| **Endpoints** > **Vulnerability management** | Provides a dashboard, recommendations, remediation activities, a software inventory, and a list of potential weaknesses within your company. |
 | **Settings** | Enables you to edit settings for the Microsoft 365 Defender portal and Defender for Business. For example, you can onboard (or offboard) your company's devices (also referred to as endpoints). You can also define rules, such as alert-suppression rules, and set up indicators to block or allow certain files or processes.  |
 
 ## Next steps
