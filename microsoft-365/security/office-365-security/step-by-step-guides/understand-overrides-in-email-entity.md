@@ -28,7 +28,7 @@ The following table lists all overrides, a description of what that override mea
 | -------- | -------- | -------- |
 | 3rd Party Filter  |We detected you are using a third party for your MX record and have an SCL-1 transport rule, overriding filtering and Secure by Default.||
 |Admin initiated time travel|Admin triggered investigation which lead to zero-hour auto-purge (ZAP) modifying the delivery location of messages.||
-|Antimalware policy block by file type|The file extension for an attachment within the message matched a banned file type listed in the anti-malware policy for the recipient|You may wish to tweak the file extensions listed in the Common attachments filter section of the anti-malware policy.|
+|Antimalware policy block by file type|The file extension for an attachment within the message matched a banned file type listed in the anti-malware policy for the recipient|You may wish to tweak the file extensions listed in the Common attachments filter section of the anti-malware policy. change|
 |Antispam policy settings|The message matched a custom option in the anti-spam policy for the recipient. For example: "SPF record: hard fail" or "Empty messages".|Check the "Mark as spam" options in the anti-spam policy for the affected recipient.|
 |Connection policy|The message originated from an allowed / blocked IP within your connection filter policy.|Check the "Connection filter policy" within the anti-spam policies section of the security portal.|
 |Exchange transport rule|The message matched a custom transport rule which affected the final delivery location.|You can use the email entity page, or Exchange message trace to highlight which transport rule was triggered.|
@@ -51,6 +51,5 @@ The following table lists all overrides, a description of what that override mea
 |Trusted domain (User override)|The recipient has added this domain to their safe recipients list within Outlook, emails sent to this domain will never be treated as junk email.|The recipient has likely configured "Safe Recipients" within Outlook's Junk email options.|
 |Trusted recipient (User override)|The recipient has added this sender to their safe recipients list within Outlook, emails sent to this sender will never be treated as junk email.|The recipient has likely configured "Safe Recipients" within Outlook's Junk email options.|
 |Trusted senders only (User override)|This override has same behaviour as the Exclusive mode (User override), primarily used in outlook.com.|See "Exclusive mode (User override)"|
-
 
 
