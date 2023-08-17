@@ -114,7 +114,7 @@
         - name: Step 3 - Verify client connectivity to service URLs
           href: verify-connectivity.md
         
-    - name: Device connectivity
+    - name: Streamlined connectivity
       items:
         - name: Onboarding devices using streamlined method
           href: configure-device-connectivity.md
