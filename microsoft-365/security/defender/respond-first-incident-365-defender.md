@@ -92,7 +92,7 @@ You can contribute to [incident management](manage-incidents.md) efficiency by p
 
 Learn how to classify incidents and alerts through this video:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/<RE4LHJq>]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LHJq]
 
 
 ## Next steps
