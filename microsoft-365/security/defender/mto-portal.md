@@ -28,7 +28,17 @@ ms.date: 09/01/2023
 
 ## Get started in the Microsoft 365 Defender multi-tenant Unified View
 
-- welcome flow
+If this is the first time you're using the Microsoft 365 Defender multi-tenant portal you'll start by signing in and running through the Welcome flow. To get started:
+
+1. Login to the [Microsoft 365 Defender multi-tenant portal](https://mto.security.microsoft.com/)
+2. Select **Add tenants**
+
+:::image type="content" source="../../media/defender/mto-add-tenants.png" alt-text="Microsoft 365 Defender multi-tenant portal welcome flow":::
+3. Choose the tenants you want to manage in the Microsoft 365 Defender multi-tenant portal and select **Add**
+
+The features available in multi-tenant portal will not appear on the navigation bar and you are ready to view and manage security data across all of your added tenants.
+
+:::image type="content" source="../../media/defender/mto-add-tenants.png" alt-text="Microsoft 365 Defender multi-tenant portal welcome flow":::
 
 ## The navigation bar
 
@@ -37,14 +47,15 @@ Use the navigation bar on the left side of the screen to access your incidents a
 | Item | Description |
 |:---|:---|
 | **Home** | Takes you to your home page in the Microsoft 365 Defender portal. The home page highlights any active threats that are detected, along with recommendations to help secure your company's data and devices.|
-| **Incidents** | Takes you to your list of recent incidents. As alerts are triggered, incidents are created. An incident can include multiple alerts. Make sure to review your incidents regularly. |
-| **Assets** > **Devices** | |
+| **Incidents and alerts** | Takes you to your lists of recent incidents and alerts. As alerts are triggered, incidents are created. An incident can include multiple alerts. Make sure to review your incidents regularly. |
+| **Hunting** > **Advanced Hunting** | |
+| **Hunting** > **Custom detection rules** | |
+| **Assets** > **Devices** > **Tenants** | |
 | **Endpoints** > **Vulnerability management** | Provides a dashboard, recommendations, remediation activities, a software inventory, and a list of potential weaknesses within your company. |
-| **Settings** | Enables you to edit settings for the Microsoft 365 Defender portal and Defender for Business. For example, you can onboard (or offboard) your company's devices (also referred to as endpoints). You can also define rules, such as alert-suppression rules, and set up indicators to block or allow certain files or processes.  |
+| **Configuration** > **Settings** | Enables you to edit settings for the Microsoft 365 Defender portal and Defender for Business. For example, you can onboard (or offboard) your company's devices (also referred to as endpoints). You can also define rules, such as alert-suppression rules, and set up indicators to block or allow certain files or processes.  |
 
 ## Next steps
 
-- [See the overall setup and configuration process](mdb-setup-configuration.md)
 
 ### Device inventory
 
