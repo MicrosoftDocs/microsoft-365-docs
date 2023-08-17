@@ -17,7 +17,7 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 search.appverid: MET150
-ROBOTS: NOINDEX
+ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: 
 - commerce_purchase
 - VSBFY23
@@ -34,9 +34,9 @@ Check out all of our small business content on [Small business help & learning](
 
 If you bought Microsoft 365 Business Standard from a retail store, this article helps you activate your subscription.
   
- **Need something else?**
- **For help with Microsoft 365 Family or Microsoft 365 Personal**, see [Using product keys with Microsoft 365](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759).  
- **Volume licensing customer?** If you bought Microsoft 365 for business through a [Microsoft Open License Program](https://go.microsoft.com/fwlink/p/?LinkID=613298), see the article, [Enter your product key purchased from Microsoft Open](purchases-from-microsoft-open.md).
+**Need something else?**
+    - **For help with Microsoft 365 Family or Microsoft 365 Personal**, see [Using product keys with Microsoft 365](https://support.microsoft.com/office12a5763a-d45c-4685-8c95-a44500213759).  
+    - **Volume licensing customer?** If you bought Microsoft 365 for business through a [Microsoft Open License Program](https://go.microsoft.com/fwlink/p/?LinkID=613298), see the article, [Enter your product key purchased from Microsoft Open](purchases-from-microsoft-open.md).
   
 ## Activate a new subscription
 
@@ -51,7 +51,7 @@ If you bought Microsoft 365 Business Standard from a retail store, this article 
 5. You can get a new domain, use a domain name you already own, or add a domain later. The steps can vary, so follow the prompts, depending on which option you choose.
 
     > [!NOTE]
-    > If you want to make sure that your subscription is automatically extended at the end of its term, you can add a credit card or bank account, and then [turn on Recurring billing](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on) for that subscription.
+    > If you want to make sure that your subscription is automatically extended at the end of its term, you can add a credit card or bank account, and then [change the recurring billing setting](subscriptions/renew-your-subscription.md#change-the-recurring-billing-setting) for that subscription.
 
 6. When you're finished, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Admin center</a> to manage your subscription.
 
