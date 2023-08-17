@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Defender multi-tenant Unified View permission requirements
+title: Microsoft 365 Defender multi-tenant Unified View pre-requisites
 description: Learn what steps you need to take to get started with Microsoft 365 Defender multi-tenant Unified View
 ms.service: microsoft-365-security
 ms.subservice: m365d
