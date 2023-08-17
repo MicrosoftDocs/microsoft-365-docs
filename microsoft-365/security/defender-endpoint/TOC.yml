@@ -385,8 +385,6 @@
         href: device-discovery.md
       - name: Configure device discovery
         href: configure-device-discovery.md
-      - name: Enable Corelight as a data source
-        href: corelight-integration.md
       - name: Enterprise IoT security
         items:
         - name: Securing IoT devices in the enterprise
