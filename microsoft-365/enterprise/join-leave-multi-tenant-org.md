@@ -3,7 +3,7 @@ title: Join or leave a multi-tenant organization in Microsoft 365 (Preview)
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
-ms.date: 07/30/2023
+ms.date: 08/17/2023
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -12,7 +12,7 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: Learn how join or leave a multi-tenant organization in Microsoft 365.
+description: Learn how to join or leave a multi-tenant organization in Microsoft 365.
 ---
 
 # Join or leave a multi-tenant organization in Microsoft 365 (Preview)
@@ -33,7 +33,7 @@ When you join an existing multi-tenant organization, the following settings are 
 - The multi-tenant organization template for identity synchronization is set to allow users to sync into this tenant.
 - The multi-tenant org template for cross-tenant access will be set to automatically redeem user invitations, inbound as well as outbound.
 
-When you leave a multi-tenant organization, the cross-tenant access settings and cross-tenant synchronization configurations in Azure AD are not affected.
+When you leave a multi-tenant organization, the cross-tenant access settings and cross-tenant synchronization configurations in Azure AD aren't affected.
 
 ## Join an existing multi-tenant organization
 
@@ -130,4 +130,4 @@ For more information about cross-tenant access settings, see [Configure cross-te
 
 [Set up a multi-tenant org in Microsoft 365](set-up-multi-tenant-org.md)
 
-[Synchronize users in multi-tenant organizations in Microsoft 365](sync-users-multi-tenant-orgs)
+[Synchronize users in multi-tenant organizations in Microsoft 365](sync-users-multi-tenant-orgs.md)

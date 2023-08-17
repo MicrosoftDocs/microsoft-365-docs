@@ -3,7 +3,7 @@ title: Plan for multi-tenant organizations in Microsoft 365 (Preview)
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
-ms.date: 07/30/2023
+ms.date: 08/17/2023
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -72,7 +72,7 @@ External access is required for chats and calls between tenants. External access
 
 ## Shared channels in multi-tenant organizations
 
-Using [shared channels in Teams](/microsoftteams/shared-channels) with other tenants in a multi-tenant organizations works the same as using shared channels with any other external organization. While the organizational relationship in Azure AD is configured as part of multi-tenant organization configuration, you must still enable shared channels in Teams and configure the B2B direct connect settings in Azure AD. For details, see [Collaborate with external participants in a shared channel](/microsoft-365/solutions/collaborate-teams-direct-connect).
+Using [shared channels in Teams](/microsoftteams/shared-channels) with other tenants in a multi-tenant organization works the same as using shared channels with any other external organization. While the organizational relationship in Azure AD is configured as part of multi-tenant organization configuration, you must still enable shared channels in Teams and configure the B2B direct connect settings in Azure AD. For details, see [Collaborate with external participants in a shared channel](/microsoft-365/solutions/collaborate-teams-direct-connect).
 
 ## Limitations for multi-tenant organizations in Microsoft 365 preview
 
@@ -80,8 +80,8 @@ The following are limitations of the multi-tenant organizations in Microsoft 365
 
 - A maximum of five tenants in the multi-tenant organization is supported.
 - A maximum of 100,000 users per tenant is supported.
-- Teams on the web, MacOS, Microsoft Teams Rooms (MTR), and VDI/AVD are not supported.
-- The ability to grant or revoke permission to receive notifications from other tenants and to switch between tenants is not supported on mobile.
+- Teams on the web, macOS, Microsoft Teams Rooms (MTR), and VDI/AVD aren't supported.
+- The ability to grant or revoke permission to receive notifications from other tenants and to switch between tenants isn't supported on mobile.
 - *People in your organization* links may not work for users from another tenant if their account had originally been a guest and they had previously accessed SharePoint resources.
 
 If you want to add more than five tenants or 100,000 users per tenant, contact Microsoft support.
@@ -96,5 +96,5 @@ To join an existing multi-tenant organization as a member tenant, see [Join or l
 
 [Configure a multi-tenant organization using Microsoft Graph API](/azure/active-directory/multi-tenant-organizations/configure-graph)
 
-[Synchronize users in multi-tenant organizations in Microsoft 365](sync-users-multi-tenant-orgs)
+[Synchronize users in multi-tenant organizations in Microsoft 365](sync-users-multi-tenant-orgs.md)
 

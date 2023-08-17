@@ -3,7 +3,7 @@ title: Set up a multi-tenant org in Microsoft 365 (Preview)
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
-ms.date: 07/30/2023
+ms.date: 08/17/2023
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -68,7 +68,7 @@ The next step after each external tenant accepts the invitation to join the mult
 
 [Plan for multi-tenant organizations in Microsoft 365](plan-multi-tenant-org-overview.md)
 
-[Join or leave a multi-tenant organization in Microsoft 365](join-leave-multi-tenant-org)
+[Join or leave a multi-tenant organization in Microsoft 365](join-leave-multi-tenant-org.md)
 
-[Synchronize users in multi-tenant organizations in Microsoft 365](sync-users-multi-tenant-orgs)
+[Synchronize users in multi-tenant organizations in Microsoft 365](sync-users-multi-tenant-orgs.md)
 

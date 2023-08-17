@@ -3,7 +3,7 @@ title: Synchronize users in multi-tenant organizations in Microsoft 365 (Preview
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
-ms.date: 07/30/2023
+ms.date: 08/17/2023
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -12,7 +12,7 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: Learn how manage user sync in multi-tenant organizations in Microsoft 365.
+description: Learn how to manage user sync in multi-tenant organizations in Microsoft 365.
 ---
 
 # Synchronize users in multi-tenant organizations in Microsoft 365 (Preview)
@@ -125,6 +125,6 @@ This procedure updates the *MTO_Sync_\<TenantID\>* synchronization configuration
 
 [Set up a multi-tenant org in Microsoft 365](set-up-multi-tenant-org.md)
 
-[Join or leave a multi-tenant organization in Microsoft 365](join-leave-multi-tenant-org)
+[Join or leave a multi-tenant organization in Microsoft 365](join-leave-multi-tenant-org.md)
 
 [Scoping users or groups to be provisioned with scoping filters](/azure/active-directory/app-provisioning/define-conditional-rules-for-provisioning-user-accounts?pivots=cross-tenant-synchronization)
