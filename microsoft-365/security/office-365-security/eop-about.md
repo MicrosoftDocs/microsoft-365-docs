@@ -110,7 +110,7 @@ For information about requirements, important limits, and feature availability a
 |Mail flow reports|[Mail flow reports in the Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
 |Mail flow insights|[Mail flow insights in the Exchange admin center](/exchange/monitoring/mail-flow-insights/mail-flow-insights)|
 |Auditing reports|[Auditing reports in the Exchange admin center](/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports)|
-|Alert policies|[Alert policies](../../compliance/alert-policies.md)|
+|Alert policies|[Alert policies](/purview/alert-policies)|
 |**Service Level Agreements (SLAs) and support**||
 |Spam effectiveness SLA|\> 99%|
 |False positive ratio SLA|\< 1:250,000|
@@ -120,5 +120,5 @@ For information about requirements, important limits, and feature availability a
 |**Other features**||
 |A geo-redundant global network of servers|EOP runs on a worldwide network of datacenters that are designed to help provide the best availability. For more information, see the [EOP datacenters](#eop-datacenters) section earlier in this article.|
 |Message queuing when the on-premises server can't accept mail|Messages in deferral remain in our queues for one day. Message retry attempts are based on the error we get back from the recipient's mail system. On average, messages are retried every 5 minutes. For more information, see [EOP queued, deferred, and bounced messages FAQ](mail-flow-delivery-faq.yml).|
-|Office 365 Message Encryption available as an add-on|For more information, see [Encryption in Office 365](../../compliance/encryption.md).|
+|Office 365 Message Encryption available as an add-on|For more information, see [Encryption in Office 365](/purview/encryption).|
 |||

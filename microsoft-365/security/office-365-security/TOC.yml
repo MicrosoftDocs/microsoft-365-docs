@@ -269,7 +269,7 @@
        - name: Alert policies
          items:
          - name: Alert policies
-           href: ../../compliance/alert-policies.md
+           href: /purview/alert-policies
        - name: Auditing
          items:
          - name: Run an administrator role group report
