@@ -40,7 +40,7 @@ We recommend that these insights be used together where networking quality statu
 
 ### Office location identification
 
-When you click the *Run test* button, we show the running test page and identify the office location. You can type in your location by city, state, and country or choose to have it detected for you. If you detect the office location, the tool requests the latitude and longitude from the web browser and limits the accuracy to 300 meters by 300 meters before use. It's not necessary to identify the location more accurately than the building to measure network performance.
+When you click the *Run test* button, we show the running test page and identify the office location. You can type in your location by city, state, and country/region or choose to have it detected for you. If you detect the office location, the tool requests the latitude and longitude from the web browser and limits the accuracy to 300 meters by 300 meters before use. It's not necessary to identify the location more accurately than the building to measure network performance.
 
 ### JavaScript tests
 
@@ -261,7 +261,7 @@ The executable accepts the following  command line parameters:
 - -h to show a link to this help documentation
 - -testlist &lt;test&gt; Specifies tests to run. By default only basic tests are run. Valid test names include: all, dnsConnectivityPerf, dnsResolverIdentification, bufferBloat, traceroute, proxy, vpn, skype, connectivity, networkInterface
 - -filepath &lt;filedir&gt; Directory path of test result files. Allowed value is absolute or relative path of an accessible directory
-- -city &lt;city&gt; For the city, state, and country fields the specified value will be used if provided. If not provided then Windows Location Services (WLS) will be queried. If WLS fails the location will be detected fromthe machines network egress 
+- -city &lt;city&gt; For the city, state, and country/region fields the specified value will be used if provided. If not provided then Windows Location Services (WLS) will be queried. If WLS fails the location will be detected fromthe machines network egress 
 - -state &lt;state&gt;
 - -country &lt;country&gt; 
 - -proxy &lt;account&gt; &lt;password&gt; Proxy account name and password can be provided if you require a proxy to access the Internet
@@ -279,7 +279,7 @@ On a CMD.EXE command prompt window you can type the path and name of the executa
 In Windows Task Scheduler you can add a task to launch the standalone test executable. You should specify the current working directory of the task to be where you have created the EULA accepted file since the executable will block until the EULA is accepted. You cannot interactively accept the EULA if the process is started in the background with no console.
 
 ### More details on the standalone executable
-The commandline tool uses Windows Location Services to find the users City State Country information for determining some distances. If Windows Location Services is disabled in the control panel then user location based assessments will be blank. In Windows Settings "Location services" must be on and "Let desktop apps access your location" must also be on.
+The commandline tool uses Windows Location Services to find the users City State Country/region information for determining some distances. If Windows Location Services is disabled in the control panel then user location based assessments will be blank. In Windows Settings "Location services" must be on and "Let desktop apps access your location" must also be on.
 
 The commandline tool will attempt to install the .NET Framework if it is not already installed. It will also download the main testing executable from the Microsoft 365 network connectivity test tool and launch that.
 

@@ -14,7 +14,7 @@ ms.collection:
     - m365initiative-syntex
 ms.localizationpriority:  medium
 ROBOTS: NOINDEX, NOFOLLOW
-description: Learn how to File Q&A for Copilot to easily find information in Microsoft Syntex.
+description: Learn how to use File Q&A for Copilot to easily find information in Microsoft Syntex.
 ---
 
 # Overview of Syntex File Q&A for Copilot (Preview)

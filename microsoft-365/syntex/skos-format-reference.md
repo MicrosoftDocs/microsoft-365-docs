@@ -3,7 +3,7 @@ title: SKOS format reference for SharePoint taxonomy
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
-ms.date: 05/14/2022
+ms.date: 10/14/2022
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -95,11 +95,11 @@ ex:TermSetA    a    sharepoint-taxonomy:TermSet;
     sharepoint-taxonomy:hasTopLevelTerm    Ex:Term A.
 ```
 
-[TermSets](/dotnet/api/microsoft.sharepoint.client.taxonomy.termset) are logically grouped together in [TermGroups](/dotnet/api/microsoft.sharepoint.client.taxonomy.group). The required field for defining a [TermSet](/dotnet/api/microsoft.sharepoint.client.taxonomy.termset) is:
+[TermSets](/dotnet/api/microsoft.sharepoint.client.taxonomy.termset) are logically grouped together in [TermGroups](/dotnet/api/microsoft.sharepoint.client.taxonomy.termgroup). The required field for defining a [TermSet](/dotnet/api/microsoft.sharepoint.client.taxonomy.termset) is:
 
 - sharepoint-taxonomy: termSetName
 
-If the termSetName provided isn't unique within the [TermGroup](/dotnet/api/microsoft.sharepoint.client.taxonomy.group), SharePoint appends a number at the end of the name to maintain the uniqueness of termSetName(s).
+If the termSetName provided isn't unique within the [TermGroup](/dotnet/api/microsoft.sharepoint.client.taxonomy.termgroup), SharePoint appends a number at the end of the name to maintain the uniqueness of termSetName(s).
 
 **sharepoint-taxonomy:hasTopLevelTerm**
 

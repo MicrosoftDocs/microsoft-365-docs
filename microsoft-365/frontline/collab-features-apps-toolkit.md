@@ -1,8 +1,8 @@
 ---
 title: Help your frontline workers use collaboration apps and features
-author: daisyfell
-ms.author: daisyfeller
-manager: pamgreen
+author: lana-chin
+ms.author: v-chinlana
+manager: serdars
 audience: ITPro
 ms.topic: end-user-help 
 ms.service: microsoft-365-frontline 
