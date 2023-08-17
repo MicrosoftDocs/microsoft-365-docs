@@ -2675,5 +2675,10 @@
          "redirect_url":"/microsoft-365/security/defender/alert-classification-playbooks",
          "redirect_document_id":true
       }
+      {
+         "source_path":"microsoft-365/security/defender-endpoint/corelight-integration.md",
+         "redirect_url":"/microsoft-365/security/defender-endpoint/device-discovery",
+         "redirect_document_id":true
+      }
    ]
 }
