@@ -140,7 +140,6 @@
       - name: Onboard non-persistent virtual desktop infrastructure (VDI) devices
         href: configure-endpoints-vdi.md
 
-
     - name: Microsoft Defender for Endpoint on other platforms
       items:
       - name: Onboard non-Windows devices
@@ -211,6 +210,8 @@
             href: linux-install-manually.md
           - name: Saltstack-based deployment
             href: linux-install-with-saltack.md
+          - name: Advanced deployment for Defender for Endpoint on Linux
+            href: comprehensive-guidance-on-linux-deployment.md
         - name: Configure Defender for Endpoint on Linux
           items:
           - name: Configure and validate exclusions
@@ -247,25 +248,25 @@
             href: ios-install.md
           - name: Deployment on iOS with Mobile Application Manager
             href: ios-install-unmanaged.md
+
+    - name: Configure Mobile Threat Defense
+      items:
+      - name: Configure Defender for Endpoint on Android features
+        href: android-configure.md
+      - name: Configure Defender for Endpoint on Android risk signals using app protection policy
+        href: android-configure-mam.md
+      - name: Privacy for Defender for Endpoint on Android
+        href: android-privacy.md
+      - name: Configure Defender for Endpoint on iOS features
+        href: ios-configure-features.md
+      - name: Privacy for Defender for Endpoint on iOS
+        href: ios-privacy.md
     - name: Run a detection test on a newly onboarded Microsoft Defender for Endpoint
       href: run-detection-test.md
     - name: Onboard devices without Internet access
       href: onboard-offline-machines.md
     - name: Configure proxy and Internet connectivity settings
       href: configure-proxy-internet.md
-
-    - name: Configure Mobile Threat Defense
-    - name: Privacy for Microsoft Defender for Endpoint on Android
-      href: android-privacy.md
-    - name: Privacy for Microsoft Defender for Endpoint on iOS
-      href: ios-privacy.md
-      items:
-      - name: Configure Microsoft Defender for Endpoint on Android features
-        href: android-configure.md
-      - name: Configure Microsoft Defender for Endpoint on Android risk signals using app protection policy
-        href: android-configure-mam.md
-      - name: Configure Microsoft Defender for Endpoint on iOS features
-        href: ios-configure-features.md
   - name: How to guides
     items:
     - name: Integration with Microsoft Defender for Cloud
@@ -928,9 +929,6 @@
     items:
     - name: Understand threat intelligence concepts
       href: threat-indicator-concepts.md
-    - name: Advanced deployment guidance - Microsoft Defender for Endpoint on Linux
-      href: comprehensive-guidance-on-linux-deployment.md
-
     - name: Configure integration with other Microsoft solutions
       items:
       - name: Configure conditional access
