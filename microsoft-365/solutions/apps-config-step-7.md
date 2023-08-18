@@ -1,5 +1,5 @@
 ---
-title: "Step 5. Verify app configuration"
+title: "Step 7. Verify app configuration"
 ms.author: erikre
 author: erikre
 manager: dougeby
@@ -14,7 +14,7 @@ ms.custom:
 keywords:
 ---
 
-# Step 5. Verify app configuration
+# Step 7. Verify app configuration
 
 
 You can use the **App Configuration Status** report to view configuration based on the following columns:
@@ -47,7 +47,7 @@ The following list provides details about app protection status:
 >[!NOTE]
 > The **Last Sync** column represents the same value in both the in-console User status report and the App Protection Policy [exportable .csv report](/mdm/intune/app-protection-policies-monitor#export-app-protection-activities). The difference is a small delay in synchronization between the value in the two reports.
 >
-> The time referenced in Last Sync is when Intune last saw the app instance. When a user launches an app, it might notify the Intune App Protection service at that launch time, depending on when it last checked in. See [the retry interval times for App Protection Policy check-in](app-protection-policy-delivery.md). If a user hasn't used that particular app in the last check-in interval (which is usually 30 minutes for active usage), and they launch the app, then:
+> The time referenced in Last Sync is when Intune last saw the app instance. When a user launches an app, it might notify the Intune App Protection service at that launch time, depending on when it last checked in. See [the retry interval times for App Protection Policy check-in](/mem/intune/apps/app-protection-policy-delivery). If a user hasn't used that particular app in the last check-in interval (which is usually 30 minutes for active usage), and they launch the app, then:
 >
 > - The App Protection Policy exportable .csv report has the newest time, within 1 minute (minimum) to 30 minutes (maximum).
 > - The User status report has the newest time instantly.
@@ -57,8 +57,13 @@ The following list provides details about app protection status:
 > - If this is a sign in for the first time, that means the user was signed out before, and doesn't have an app instance registration with Intune. After the user signs in, the user gets a new app instance registration, and can be checked-in immediately (with the same time delays listed previously for future check-ins). Thus, the Last Sync time is 12:00 PM in the User status report, and 12:01 PM (or 12:30 PM at latest) in the App Protection Policy report.
 > - If the user is just launching the app, the Last Sync time reported depends on when the user last checked in.
 
+## Diagnostic logs
+[Diagnostic Logs](/mem/intune/apps/app-configuration-policies-overview#diagnostic-logs)
+[Using logs to show a configuration parameter](/mem/intune/apps/app-configuration-policies-overview#using-logs-to-show-a-configuration-parameter)
 
 
+## Monitor app configuration status
+[Monitor iOS/iPadOS app configuration status per device](/mem/intune/apps/app-configuration-policies-use-ios#monitor-iosipados--app-configuration-status-per-device)
 
 
 

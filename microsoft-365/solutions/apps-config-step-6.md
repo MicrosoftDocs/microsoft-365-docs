@@ -1,11 +1,11 @@
 ---
-title: "Step 5. Configure other apps"
+title: "Step 6. Configure other apps"
 ms.author: erikre
 author: erikre
 manager: dougeby
 audience: ITPro
 ms.topic: article
-description: Step 5. Configure other apps in Intune.
+description: Step 6. Configure other apps in Intune.
 ms.service: o365-solutions
 ms.localizationpriority: high
 ms.collection:
@@ -14,13 +14,19 @@ ms.custom:
 keywords:
 ---
 
-# Step 5. Configure other apps
+# Step 6. Configure other apps
 
-Google
+## Configure Google apps
 - Managed Home Screen
 - Microsoft Launcher
 - Google Chrome for Android
-- 
+- [Email apps](/mem/intune/apps/app-configuration-policies-use-android#email-apps)
+
+
+## Obtain settings for other apps
+Check with app developer
+
+
 
 ## Next step
 <!--
