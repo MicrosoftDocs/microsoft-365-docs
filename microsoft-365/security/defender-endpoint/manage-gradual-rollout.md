@@ -36,7 +36,7 @@ ms.date: 06/23/2021
 **Platforms**
 - Windows
 
-It is important to ensure that client components are up-to-date to deliver critical protection capabilities and prevent attacks.
+It is important to ensure that client components are up to date to deliver critical protection capabilities and prevent attacks.
 
 Capabilities are provided through several components:
 

@@ -45,7 +45,7 @@ For a video about this information, see <https://youtu.be/eQanpq9N1Ps>.
 
 The **Incidents** page in the Microsoft 365 Defender portal at <https://security.microsoft.com/incidents-queue> (also known as the _Incidents queue_) allows you to manage and monitor events from the following sources in Defender for Office 365:
 
-- [Alerts](../../compliance/alert-policies.md#default-alert-policies).
+- [Alerts](/purview/alert-policies#default-alert-policies).
 - [Automated investigation and response (AIR)](air-about-office.md).
 
 For more information about the Incidents queue, see [Prioritize incidents in Microsoft 365 Defender](../defender/incident-queue.md).

@@ -18,6 +18,8 @@
         href: testintuneapplication.md
       - name: Uploading a pre-built zip package
         href: uploadapplication.md
+      - name: Create Package from App Gallery
+        href: createpackagefromappgallery.md
     - name: Build a Package
       href: buildpackage.md
     - name: Clone an existing package
