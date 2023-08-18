@@ -17,7 +17,7 @@ ms.collection:
 - tier2
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 03/18/2022
+ms.date: 08/18/2023
 ---
 
 # Submit files for analysis
@@ -39,7 +39,7 @@ After you sign in, you will be able to track your submissions.
 
 > [!NOTE]
 >
-> You can use the WDSI submission feature even if you don't have Microsoft Defender for Endpoint Plan 2 or Microsoft Defender for Office Plan 2.
+> You can use the Microsoft Security Intelligence submission feature even if you don't have Microsoft Defender for Endpoint Plan 2 or Microsoft Defender for Office Plan 2.
 
 ### Submit a suspected email attachment
 
