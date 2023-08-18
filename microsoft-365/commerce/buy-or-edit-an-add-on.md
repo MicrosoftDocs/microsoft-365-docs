@@ -73,5 +73,5 @@ You can't remove a traditional add-on. If you want to remove a traditional add-o
 
 [Add storage space for your subscription](add-storage-space.md) (article)\
 [Buy or remove subscription licenses](licenses/buy-licenses.md) (article)\
-[Turn Recurring billing off or on](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on) (article)\
+[Manage recurring billing in the Microsoft 365 admin center](../../commerce/subscriptions/renew-your-subscription.md) (article)\
 [Manage payment methods](billing-and-payments/manage-payment-methods.md) (article)
