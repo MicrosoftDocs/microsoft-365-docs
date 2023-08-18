@@ -31,7 +31,7 @@ ms.date: 08/18/2023
 
 If you pay for your Microsoft business subscription by using a credit or debit card, or a billing profile, recurring billing is turned on by default. When recurring billing is on, we continue to bill your subscription at the end of the subscription term period. If your subscription is active, you can turn recurring billing off or back on again in the Microsoft 365 admin center.
   
-To renew a subscription by using a product key that you bought from a retail store or Microsoft partner, see [Find and enter your product key](../enter-your-product-key.md).
+To renew a subscription by using a product key that you bought from a retail store or Microsoft partner, see [Enter your product key for Microsoft 365 Business Standard](../enter-your-product-key.md).
 
 ## Before you begin
 
