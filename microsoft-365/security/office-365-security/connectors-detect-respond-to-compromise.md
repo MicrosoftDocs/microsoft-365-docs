@@ -103,7 +103,7 @@ In [Microsoft Defender for Office 365 Plan 1](defender-for-office-365.md) or [Ex
 
 #### Investigate and validate connector-related activity
 
-In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), replace \<StartDate\> and \<EndDate\> with your values, and then run the following command to find and validate admin-related connector activity in the audit log. For more information, see [Use a PowerShell script to search the audit log](/compliance/audit-log-search-script).
+In [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell), replace \<StartDate\> and \<EndDate\> with your values, and then run the following command to find and validate admin-related connector activity in the audit log. For more information, see [Use a PowerShell script to search the audit log](/purview/audit-log-search-script).
 
 ```powershell
 Search-UnifiedAuditLog -StartDate "<ExDateTime>" -EndDate "<ExDateTime>" -Operations "New-InboundConnector","Set-InboundConnector","Remove-InboundConnector
