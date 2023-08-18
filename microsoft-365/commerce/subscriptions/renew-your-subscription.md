@@ -1,5 +1,5 @@
 ---
-title: "Manage recurring billing for your subscription in the Microsoft 365 admin center"
+title: "Manage recurring billing in the Microsoft 365 admin center"
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -27,7 +27,7 @@ description: "Learn how to manage your subscription renewal for a Microsoft busi
 ms.date: 08/18/2023
 ---
 
-# Manage recurring billing for your subscription in the Microsoft 365 admin center
+# Manage recurring billing in the Microsoft 365 admin center
 
 If you pay for your Microsoft business subscription by using a credit or debit card, or a billing profile, recurring billing is turned on by default. When recurring billing is on, we continue to bill your subscription at the end of the subscription term period. If your subscription is active, you can turn recurring billing off or back on again in the Microsoft 365 admin center.
   
