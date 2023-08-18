@@ -149,7 +149,7 @@ Configure the static proxy using the Group Policy available in Administrative Te
 >  - AV (Antivirus)
 >  - Endpoint Detection and Response (EDR)
 >
->  - Network protection and Microsoft Defender SmartScreen features will not work in this configuration. They require a system-wide proxy configuration.
+>  - Network protection and Microsoft Defender SmartScreen features will not work in this configuration. These features require a system-wide proxy configuration.
 
 ## Configure the proxy server manually using netsh command
 
