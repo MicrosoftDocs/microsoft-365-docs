@@ -190,7 +190,7 @@ After you've enabled the service, you may need to configure your network or fire
   > [!NOTE]
   > System events captured by rules added to `/etc/audit/rules.d/` will add to `audit.log`(s) and might affect host auditing and upstream collection. Events added by Microsoft Defender for Endpoint on Linux will be tagged with `mdatp` key.
 
-### External package dependancy
+### External package dependency
 The following external package dependencies exist for the mdatp package:
 - The mdatp RPM package requires "glibc >= 2.17", "audit", "policycoreutils", "semanage" "selinux-policy-targeted", "mde-netfilter"
 - For RHEL6 the mdatp RPM package requires "audit", "policycoreutils", "libselinux", "mde-netfilter"
