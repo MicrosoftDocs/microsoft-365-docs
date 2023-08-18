@@ -54,7 +54,7 @@ To configure EOP and Defender for Office 365 features, you need permissions. The
 
 Email authentication (also known as *email validation*) is a group of standards to verify that email messages from an sender are legitimate and come from expected sources for the email domain.
 
-Configure the following email authentication records in DNS for all [custom domains]((/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) that you configured in Microsoft 365:
+Configure the following email authentication records in DNS for all [custom domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) that you configured in Microsoft 365:
 
 - **Sender Policy Framework (SPF)**: This one is the most important. How you configure it depends on whether you're absolutely sure of any/all sources for messages in the domain. For instructions, see [Set up SPF to help prevent spoofing](email-authentication-spf-configure.md).
 - **DomainKeys Identified Mail (DKIM)**: The built-in DKIM configuration in Microsoft 365 is probably OK for most customers. Complex environments likely need to manually create DKIM records for their domains. For details and instructions, see [Use DKIM to validate outbound email sent from your custom domain](email-authentication-dkim-configure.md).
