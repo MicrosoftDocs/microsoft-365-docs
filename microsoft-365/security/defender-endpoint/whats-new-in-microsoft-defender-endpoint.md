@@ -111,20 +111,6 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 
 - [Built-in protection](built-in-protection.md) is now generally available. Built-in protection helps protect your organization from ransomware and other threats with default settings that help ensure your devices are protected. 
 
-- Zeek is now generally available as a component of Microsoft Defender for Endpoint.
-
-   Microsoft has partnered with [Corelight](https://corelight.com/company/zeek-now-component-of-microsoft-windows), a leader in open source Network Detection and Response (NDR), to provide a new open-source integration with [Zeek](https://corelight.com/about-zeek/how-zeek-works) for Defender for Endpoint. With this integration, organizations can super-charge their investigation efforts with rich network signals and reduce the time it takes to detect network-based threats by having unprecedented visibility into network traffic from the endpoints' perspective.
-
-   The new Zeek integration is available in the latest version of the Defender for Endpoint agent via the following knowledge base articles:
-   - [KB5016691](https://support.microsoft.com/topic/august-25-2022-kb5016691-os-build-22000-918-preview-59097044-915a-49a0-8870-49823236adbd)
-   - [KB5016693](https://support.microsoft.com/topic/august-16-2022-kb5016693-os-build-20348-946-preview-ee90d0bc-c162-4124-b7c6-f963ee7b17ed)
-   - [KB5016688](https://support.microsoft.com/topic/august-26-2022-kb5016688-os-builds-19042-1949-19043-1949-and-19044-1949-preview-ec31ebdc-067d-44dd-beb0-eabcc984d843)
-   - [KB5016690](https://support.microsoft.com/topic/august-23-2022-kb5016690-os-build-17763-3346-preview-b81d1ac5-75c7-42c1-b638-f13aa4242f42)
-
-   > [!NOTE]
-   > This integration doesn't currently support the use of custom scripts to gain visibility into extra signals.
-
-
 ## October 2022
 
 - [Network protection C2 detection and remediation is now generally available](network-protection.md#block-command-and-control-attacks). <br/>Attackers often compromise existing internet-connected servers to become their command and control servers. Attackers can use the compromised servers to hide malicious traffic and deploy malicious bots that are used to infect endpoints. Network protection detection and remediation will help improve the time it takes security operations (SecOps) teams to pinpoint and respond to malicious network threats that are looking to compromise endpoints.
