@@ -18,7 +18,7 @@ ms.collection:
 - tier1
 ms.topic: conceptual
 ms.subservice: mde
-ms.date: 04/04/2023
+ms.date: 08/18/2023
 ---
 
 # Configure device proxy and Internet connectivity settings
