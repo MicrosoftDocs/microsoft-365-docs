@@ -166,6 +166,8 @@
               href: microsoft-365-apps-monitoring.md
             - name: Microsoft 365 Teams monitoring
               href: microsoft-365-teams-monitoring.md
+            - name: Microsoft 365 for the web monitoring
+              href: microsoft-365-for-the-web-monitoring.md
         - name: Setup guides
           href: setup-guides-for-microsoft-365.md
     - name: Multiple tenants
