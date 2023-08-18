@@ -91,7 +91,7 @@ You'll sign in to Microsoft 365 with this email address. For example, alliebelle
 
 2. Select how many Microsoft 365 Business Standard licenses you want for your organization and select **Add payment method** and continue with checkout to **Place order**.
 
-3. On the **Confirmation details** page, we'll give you some more info about your subscription. You can now go to the Microsoft 365 admin center to add users, install Microsoft 365 apps, invite your team to use Microsoft 365 and more. We'll also send you an email with set up steps for Microsoft 365 Business Standard.
+3. On the **Confirmation details** page, we'll give you some more info about your subscription. You can now go to the Microsoft 365 admin center to add users, install Microsoft 365 apps, invite your team to use Microsoft 365 and more. We'll also send you an email with set-up steps for Microsoft 365 Business Standard.
 
 Remember this option doesn't provide branded email, admin control for use of the services by other users, or industry specific compliance support. Subscribers don't have any access or control over other users' (employees) usage or documents under this option Users may choose not to transfer data created in storage such as OneDrive/Teams to your upgraded, enterprise-level domain account should you not choose option 2 immediately.
 
@@ -136,7 +136,7 @@ There are three options for getting a business email.
 
 ### Why might I need to verify my domain to create a business email?
 
-If you choose to use a domain you already own, you can use it for your email address with Microsoft 365. As part of sign up process, we ask you to verify the domain so you can send emails via Microsoft 365. This confirms that you are the owner of the domain that is sending emails with that identity, which enhances security and prevents fraudulent activity.
+If you choose to use a domain you already own, you can use it for your email address with Microsoft 365. As part of sign-up process, we ask you to verify the domain so you can send emails via Microsoft 365. This confirms that you are the owner of the domain that is sending emails with that identity, which enhances security and prevents fraudulent activity.
 
 ### Is there a benefit to paying monthly vs annually?
 
