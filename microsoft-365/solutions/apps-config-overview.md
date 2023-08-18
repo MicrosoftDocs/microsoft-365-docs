@@ -65,7 +65,7 @@ As mentioned, you can apply configuration for your managed apps using app config
 - **Basics** - You must add the policy name, the targeted platform, and the targeted app.
 - **Settings** - You have two methods for add settings to the policy. You can choose to use the more visual configuration designer, or you can enter the XML data. Both methods can attain the same results, however once the policy is created, the format cannot be changed. Each setting includes a configuration key, a value type, and a configuration value. 
 - **Scope tags** - You can optionally set tags that narrow the access scope of policies used based on the role of each Intune admin.
-- **Assignments** - You can set which users are assigned the app configuration policy. Once you've selected an assignment group, you can select a [filter](../fundamentals/filters.md) to refine the assignment scope when deploying app configuration policies for managed devices.
+- **Assignments** - You can set which users are assigned the app configuration policy. Once you've selected an assignment group, you can select a [filter](/mem/intune/fundamentals/filters) to refine the assignment scope when deploying app configuration policies for managed devices.
 - **Review + create** - You and confirm the policy settings and then create the new policy. When you select **Create**, your changes are saved, and the policy is deployed to your groups. The policy is also shown in the app configuration policies list.
 
 For more information, see [App configuration policies](/mem/intune/apps/app-configuration-policies-overview), [iOS managed devices](/mem/intune/apps/app-configuration-policies-use-ios), and [Android managed devices](/mem/intune/apps/app-configuration-policies-use-android).
