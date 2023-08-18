@@ -87,7 +87,7 @@ This applies to Microsoft 365 Business Standard and Microsoft 365 Apps for Busin
 
 2. Select how many Microsoft 365 Apps for business licenses you want for your organization and select **Add payment method** and continue with checkout to **Place order**.
 
-3. On the **Confirmation details** page, we'll give you some more info about your subscription. You can now go to the Microsoft 365 admin center to add users, install Office apps, invite your team to use Microsoft 365 and more. We'll also send you an email with set up steps for Microsoft 365 Business Standard.
+3. On the **Confirmation details** page, we'll give you some more info about your subscription. You can now go to the Microsoft 365 admin center to add users, install Office apps, invite your team to use Microsoft 365 and more. We'll also send you an email with set-up steps for Microsoft 365 Business Standard.
 
 Remember this option doesn't provide branded email, admin control for use of the services by other users, or industry specific compliance support. Subscribers don't have any access or control over other users' (employees) usage or documents under this option. Users may choose not to transfer data created in storage such as OneDrive to your upgraded, enterprise-level domain account should you not choose **Option 2**.
 
