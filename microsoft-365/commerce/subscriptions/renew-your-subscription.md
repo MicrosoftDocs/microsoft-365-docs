@@ -54,7 +54,7 @@ To learn how to cancel a subscription immediately, see [Cancel your Microsoft bu
 
 ## Change the recurring billing setting
 
-You can only change the recurring billing setting for an active subscription. If your subscription has already expired or is disabled, you must reactivate it before you can turn recurring billing on or off. For more information, see Reactivate your Microsoft business subscription.
+You can only change the recurring billing setting for an active subscription. If your subscription has already expired, you must reactivate it before you can turn recurring billing on or off. For more information, see [Reactivate your subscription in the Microsoft 365 admin center](reactivate-your-subscription.md).
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
    - If you’re using the **Simplified view**, select **Subscriptions**.
