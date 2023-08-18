@@ -45,14 +45,14 @@ Microsoft 365 Defender leverages its threat intelligence and the signals within 
 
 Learn how automatic attack disruption helps in incident response:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/<RW10OoF>]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW10OoF]
 
 Meanwhile, Microsoft 365 Defender’s [automated investigation and response](m365d-autoir.md) capabilities can automatically investigate and apply remediation actions to malicious and suspicious items. These capabilities scale investigation and resolution to threats, freeing incident responders to focus their efforts on high-impact attacks.
 
-You can [configure](m365d-configure-auto-investigation-response.md) and [manage](m365d-autoir-actions.md) automated investigation and response capabilities. You can also view all past and pending actions through the [Action center](m365d-action-center.md). 
+You can [configure](m365d-configure-auto-investigation-response.md) and [manage](m365d-autoir-actions.md) automated investigation and response capabilities. You can also view all past and pending actions through the [Action center](m365d-action-center.md).
 
 > [!NOTE]
-> Automatic actions can be rolled back once reviewed.
+> You can undo automatic actions after review.
 
 In addition, automated remediation can be created using playbooks. Microsoft has [playbook templates on GitHub](https://github.com/microsoft/Microsoft-Cloud-App-Security/tree/master/Playbooks) for the following scenarios:
 

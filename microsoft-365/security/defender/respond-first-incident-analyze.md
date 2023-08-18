@@ -57,7 +57,7 @@ The [attack story](investigate-incidents.md#attack-story) provides incident resp
 
 From the attack story, you can dive deeper into the details of an attack by exploring the tabs available on the [incident page](investigate-incidents.md). You can quickly remediate common attacks like phishing, password spray, and malicious app compromise through [incident response playbooks](/security/operations/incident-response-playbooks) accessible within the portal. These playbooks contain detection, response, and mitigation guidance that support incident investigations.
 
-More investigation capabilities to further analyze an attack are available in the following walkthrough:
+Explore Microsoft 365 Defender's investigation capabilities with the following investigation walkthrough:
 
 > [!VIDEO https://youtu.be/PW_4PWul5MY]
 
@@ -106,7 +106,7 @@ The following videos discuss how to investigate phishing and BEC attacks in Micr
 
 - **Video**: Defending against spearphishing and phishing using Defender for Office 365
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/<RE5bzVE>]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5bzVE]
 
 The following video discusses an identity compromise and what incident responders can do to contain an attack:
 
@@ -138,7 +138,7 @@ To protect your cloud apps in real time, you can use the following resource:
 
 - **Video**: Protecting cloud apps and related files through Defender for Cloud Apps
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/<RE5d0tz>]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5d0tz]
 
 ### Breach analysis
 
@@ -158,13 +158,13 @@ Attackers often use vulnerabilities to gain access to an organization. Some rans
 - **Tutorial**: [Assess your organization’s risk through the Exposure score](/microsoft-365/security/defender-vulnerability-management/tvm-exposure-score)
 - **Video**: Threat and vulnerability management via Defender Vulnerability Management
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/<RE4XTiJ>]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4XTiJ]
 
 Breaches also happen through various devices like phones and tablets that connect to your organization’s network. Incident responders can further investigate these devices within the portal. The following video talks about the top threats from mobile devices and how you can investigate these:
 
 - Mobile threat defense in Microsoft 365 Defender
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/<RW10icV>]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW10icV]
 
 ## Resources for threat intelligence and hunting
 
