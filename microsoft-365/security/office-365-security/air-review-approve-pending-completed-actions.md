@@ -46,7 +46,6 @@ There are four different ways to find and take auto investigation actions:
 - [Action center](https://security.microsoft.com/action-center/pending)
 - [Investigation and remediation investigations queue](https://security.microsoft.com/airinvestigation)
 
-
 ## Incident queue
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to the **Incidents** page at **Incidents & alerts** \> **Incidents**. To go directly to the **Incidents** page, use <https://security.microsoft.com/incidents>.
