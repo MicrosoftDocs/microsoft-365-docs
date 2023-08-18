@@ -2700,8 +2700,10 @@
          "redirect_url": "/microsoft-365/security/defender/respond-first-incident-remediate",
          "redirect_document_id": false
        },
+       {
          "source_path": "microsoft-365/security/defender/first-incident-post.md",
          "redirect_url": "/microsoft-365/security/defender/respond-first-incident-remediate",
          "redirect_document_id": false
+       }
    ]
 }
