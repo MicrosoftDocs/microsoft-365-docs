@@ -69,7 +69,6 @@ There are four different ways to find and take auto investigation actions:
 > [!NOTE]
 > Pending actions time out after awaiting approval for one week.
 
-
 ## Investigation and remediation investigations queue
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to the **Threat investigation** page at **Email & collaboration** \> **Investigations**. To go directly to the **Threat investigation** page, use <https://security.microsoft.com/airinvestigation>.
