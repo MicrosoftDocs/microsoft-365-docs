@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 Defender multi-tenant Unified View pre-requisites
-description: Learn what steps you need to take to get started with Microsoft 365 Defender multi-tenant Unified View
+title: Set up your Microsoft 365 Defender multi-tenant view
+description: Learn what steps you need to take to get started with Microsoft 365 Defender multi-tenant view
 ms.service: microsoft-365-security
 ms.subservice: m365d
 ms.author: siosulli
@@ -16,7 +16,7 @@ ms.topic: conceptual
 ms.date: 09/01/2023
 ---
 
-# Microsoft 365 Defender multi-tenant Unified View requirements
+# Set up your Microsoft 365 Defender multi-tenant view
 
 **Applies to:**
 
@@ -25,10 +25,16 @@ ms.date: 09/01/2023
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
+This article describes the steps need to take start using the Microsoft 365 Defender multi-tenant portal.
 
-## Verify your tenant access
+Here's what you need to do:
 
-Before you start, make sure that you have the appropriate permissions for accessing multiple tenants using a single identity.
+1. [Verify your tenant access](#step-1-verify-your-tenant-access).
+2. [Use the Microsoft 365 Defender multi-tenant setup wizard](#step-2-use-the-microsoft-365-defender-multi-tenant-setup-wizard).
+
+## Step 1: Verify your tenant access
+
+The first step is to make sure that you have the appropriate permissions for accessing multiple tenants using a single identity.
 
 To access data from other tenants within the Microsoft 365 Defender multi-tenant Unified View, you must have one of the following for each of the tenants that you intend to view and manage:
 
@@ -55,10 +61,28 @@ To access data from other tenants within the Microsoft 365 Defender multi-tenant
 3. Verify all the tenants you plan to manage in the Microsoft 365 Defender multi-tenant Unified View appear in the list.
 4. For each tenant, go to the [Microsoft 365 Defender portal)](https://security.microsoft.com/?tid=tenant_id) to validate you can successfully access the tenant.
 
+>[!Note]
+> Data boundaries, Role-based access control (RBAC), and licensing are respected by Microsoft 365 Defender multi-tenant.
+
+### Step 2: Use the Microsoft 365 Defender multi-tenant setup wizard
+
+You can do initial setup and tenant configuration through a setup wizard. The setup wizard helps you add the tenants you want to view and manage in the portal.
+
+If this is the first time you're using the Microsoft 365 Defender multi-tenant portal the setup wizard helps you add the tenants you want to view and manage in the portal. To get started:
+
+1. Login to the [Microsoft 365 Defender multi-tenant portal](https://mto.security.microsoft.com/)
+2. Select **Add tenants**
+
+:::image type="content" source="../../media/defender/mto-add-tenants.png" alt-text="Microsoft 365 Defender multi-tenant portal welcome flow":::
+3. Choose the tenants you want to manage in the Microsoft 365 Defender multi-tenant portal and select **Add**
+
+The features available in multi-tenant portal will not appear on the navigation bar and you are ready to view and manage security data across all of your added tenants.
+
+:::image type="content" source="../../media/defender/mto-add-tenants.png" alt-text="Microsoft 365 Defender multi-tenant portal welcome flow":::
+
+> [!NOTE]
+> You can only use the setup wizard once.
+
 ## Next step
 
-- [Visit the Microsoft 365 Defender multi-tenant portal](mto-portal.md)
-
-- **Provide guidance on managing incidents and alerts**:[Manage incidents and alerts](mto-incidents-alerts.md).
-- **Learn about advanced hunting**: [Advanced hunting](mto-advanced-hunting.md)
-- **Learn how to manage your tenants**:[Manage your tenants](mto-tenants.md)
+- Start using the Microsoft 365 Defender multi-tenant portal:[Visit the Microsoft 365 Defender multi-tenant portal](mto-portal.md)

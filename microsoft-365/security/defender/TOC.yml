@@ -442,11 +442,11 @@
          href: integrate-microsoft-365-defender-secops-use-cases.md
        - name: Step 6. SOC maintenance tasks
          href: integrate-microsoft-365-defender-secops-tasks.md
-    - name: Microsoft 365 Defender multi-tenant Unified View 
+    - name: Microsoft 365 Defender multi-tenant
       items:
-        - name: What is Microsoft 365 Defender multi-tenant
+        - name: Microsoft 365 Defender multi-tenant overview
           href: mto-overview.md
-        - name: Permission requirements
+        - name: Set up Microsoft 365 Defender multi-tenant
           href: mto-requirements.md
         - name: Visit the Microsoft 365 Defender multi-tenant portal
           href: mto-portal.md

@@ -1,5 +1,5 @@
 ---
-title: Visit the Microsoft 365 Defender multi-tenant portal
+title: Start using the Microsoft 365 Defender multi-tenant portal
 description: Learn about the Microsoft 365 Defender multi-tenant Unified View portal
 search.appverid: met150
 ms.service: microsoft-365-security
@@ -17,7 +17,7 @@ ms.topic: conceptual
 ms.date: 09/01/2023
 ---
 
-# Visit the Microsoft 365 Defender multi-tenant portal
+# Start using the Microsoft 365 Defender multi-tenant portal
 
 **Applies to:**
 
@@ -26,19 +26,9 @@ ms.date: 09/01/2023
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## Get started in the Microsoft 365 Defender multi-tenant Unified View
+The Microsoft 365 Defender multi-tenant portal [https://security.microsoft.com](https://security.microsoft.com) is the one-stop shop where you use and manage Defender for Business. It includes callouts to help you get started, cards that surface relevant information, and a navigation bar that provides easy access to the various features and capabilities.
 
-If this is the first time you're using the Microsoft 365 Defender multi-tenant portal you'll start by signing in and running through the Welcome flow. To get started:
-
-1. Login to the [Microsoft 365 Defender multi-tenant portal](https://mto.security.microsoft.com/)
-2. Select **Add tenants**
-
-:::image type="content" source="../../media/defender/mto-add-tenants.png" alt-text="Microsoft 365 Defender multi-tenant portal welcome flow":::
-3. Choose the tenants you want to manage in the Microsoft 365 Defender multi-tenant portal and select **Add**
-
-The features available in multi-tenant portal will not appear on the navigation bar and you are ready to view and manage security data across all of your added tenants.
-
-:::image type="content" source="../../media/defender/mto-add-tenants.png" alt-text="Microsoft 365 Defender multi-tenant portal welcome flow":::
+- **[Explore the navigation bar](mdb-get-started.md#the-navigation-bar)** on the left side of the screen to access your incidents, view reports, and manage your security policies and settings.
 
 ## The navigation bar
 
@@ -53,28 +43,6 @@ Use the navigation bar on the left side of the screen to access your incidents a
 | **Assets** > **Devices** > **Tenants** | |
 | **Endpoints** > **Vulnerability management** | Provides a dashboard, recommendations, remediation activities, a software inventory, and a list of potential weaknesses within your company. |
 | **Configuration** > **Settings** | Enables you to edit settings for the Microsoft 365 Defender portal and Defender for Business. For example, you can onboard (or offboard) your company's devices (also referred to as endpoints). You can also define rules, such as alert-suppression rules, and set up indicators to block or allow certain files or processes.  |
-
-## Next steps
-
-
-### Device inventory
-
-Device inventory provides both security administrators and security operations teams with aggregated information about devices of each tenant, along with aggregated data across all tenants.
-
-Select a tenant name to navigate to the device inventory screen for that tenant, where all data and inventory-related actions are available.
-
-At the top of the device inventory, you can find counters for multiple device inventory metrics:
-
-| Counter          | Description                                                                                                                   |
-|------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| All tenants      | Number of tenants presented in the tenant list                                                                                |
-| All devices      | Number of devices, onboarded or discovered, across all tenants.                                                               |
-| High risk        | Number of devices with risk score ‘high’                                                                                      |
-| High exposure    | Number of devices with exposure score ‘high’                                                                                  |
-| Internet facing  | Number of devices identified as being internet facing, i.e., exposed to external communication from outside the organization. |
-| Can be onboarded | Number of devices that can be onboarded to Microsoft Defender for Endpoint agent.                                             |
-| Newly discovered | Number of devices discovered in the selected time frame                                                                       |
-| High value       | Number of devices with device value attribute set to ‘high.’; device value affects exposure score calculation                 |
 
 ### Unified View Status Indicator
 

@@ -29,17 +29,17 @@ Managing Multi-tenant environments can add an additional layer of complexity whe
 
 Microsoft 365 Defender multi-tenant was designed to provide security operation teams with a unified view of the tenants they have access to from a single location. With this unified view,security operation teams will be able to boost their security operations with the ability to investigate incidents and perform advanced hunting across the data contained in multiple tenants.
 
-With Microsoft 365 Defender multi-tenant, you'll get:
+Some of the key benefits you'll get With Microsoft 365 Defender multi-tenant include:
 
-- **A centralized place to manage incidents across tenants**: 
+- **A centralized place to manage incidents across tenants**:
 
-- **Streamlined threat hunting**: 
+- **Streamlined threat hunting**:
 
 - **Multi-customer management for partners**:
 
 ## What's included in Microsoft 365 Defender multi-tenant
 
-For each tenant you have access to in the Microsoft 365 Defender multi-tenant Unified View You'll have the following key capabilities that focus on incident investigation flow and posture management:
+The following key capabilities are available for each tenant you have access to in the Microsoft 365 Defender multi-tenant portal:
 
 | Capability | Description |
 | ------ | ------ |
@@ -47,15 +47,6 @@ For each tenant you have access to in the Microsoft 365 Defender multi-tenant Un
 | Cross-tenant advanced hunting| Proactively hunt for intrusion attempts and breach activity affecting your email, data, devices, and accounts over multiple tenants at the same time. |
 | Defender Vulnerability Management dashboard |MTO Vulnerability Management provides both security administrators and security operations teams with aggregated vulnerability management information across multiple tenants. |
 
->[!Note]
-> Data boundaries, Role-based access control (RBAC), and licensing are respected by Microsoft 365 Defender multi-tenant.
-
 ## Next steps
 
-Use these article to:
-
-- **Verify your tenant access**: [Microsoft 365 Defender multi-tenant Unified View permission requirements](mto-requirements.md)
-- **Help you get started using Microsoft 365 Defender multi-tenant Unified View**:[Navigate the Microsoft 365 Defender multi-tenant portal](mto-portal.md).
-- **Provide guidance on managing incidents and alerts**:[Manage incidents and alerts](mto-incidents-alerts.md).
-- **Learn about advanced hunting**: [Advanced hunting](mto-advanced-hunting.md)
-- **Learn how to manage your tenants**:[Manage your tenants](mto-tenants.md)
+- **Verify your tenant access**: [Microsoft 365 Defender multi-tenant requirements](mto-requirements.md)
