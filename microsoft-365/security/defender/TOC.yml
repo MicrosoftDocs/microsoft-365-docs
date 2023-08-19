@@ -444,7 +444,7 @@
          href: integrate-microsoft-365-defender-secops-tasks.md
     - name: Microsoft 365 Defender multi-tenant Unified View 
       items:
-        - name: What is Microsoft 365 Defender multi-tenant Unified View
+        - name: What is Microsoft 365 Defender multi-tenant
           href: mto-overview.md
         - name: Permission requirements
           href: mto-requirements.md
