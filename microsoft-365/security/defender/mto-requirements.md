@@ -69,13 +69,13 @@ If this is the first time you're using the Microsoft 365 Defender multi-tenant p
 1. Login to the [Microsoft 365 Defender multi-tenant portal](https://mto.security.microsoft.com/).
 2. Select **Add tenants**.
 
-   :::image type="content" source="../../media/defender/mto-add-tenants.png" alt-text="Screenshot of the "Microsoft 365 Defender multi-tenant portal setup wizard" lightbox="../../media/defender/mto-add-tenants.png":::
+   :::image type="content" source="../../media/defender/mto-add-tenants.png" alt-text="Screenshot of the Microsoft 365 Defender multi-tenant portal setup wizard" lightbox="../../media/defender/mto-add-tenants.png":::
 
 3. Choose the tenants you want to manage in the Microsoft 365 Defender multi-tenant portal and select **Add**.
 
 The features available in multi-tenant portal will now appear on the navigation bar and you're ready to view and manage security data across all your tenants.
 
-:::image type="content" source="../../media/defender/mto-multi-tenant-view.png" alt-text="Screenshot of the "Microsoft 365 Defender multi-tenant settings page" lightbox="../../media/defender/mto-add-tenants.png":::
+:::image type="content" source="../../media/defender/mto-multi-tenant-view.png" alt-text="Screenshot of the Microsoft 365 Defender multi-tenant settings page" lightbox="../../media/defender/mto-add-tenants.png":::
 
 ## Next step
 
