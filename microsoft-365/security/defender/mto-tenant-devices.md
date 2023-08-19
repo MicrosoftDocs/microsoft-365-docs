@@ -1,5 +1,5 @@
 ---
-title: View tenants devies with Microsoft 365 Defender multi-tenant 
+title: View tenants devices with Microsoft 365 Defender multi-tenant 
 description: Learn about the device list for multi-tenants in the Microsoft 365 Defender multi-tenant portal
 search.appverid: met150
 ms.service: microsoft-365-security
@@ -17,7 +17,7 @@ ms.topic: conceptual
 ms.date: 09/01/2023
 ---
 
-# Manage tenants in the Microsoft 365 Defender multi-tenant Unified View
+# Microsoft 365 Defender multi-tenant device view
 
 **Applies to:**
 
@@ -54,7 +54,6 @@ At the top of the device inventory, you can find counters for multiple device in
 | Can be onboarded | Number of devices that can be onboarded to Microsoft Defender for Endpoint agent.                                             |
 | Newly discovered | Number of devices discovered in the selected time frame                                                                       |
 | High value       | Number of devices with device value attribute set to ‘high.’; device value affects exposure score calculation                 |
-
 
 
 ### Unified View Status Indicator
