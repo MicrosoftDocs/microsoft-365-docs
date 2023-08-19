@@ -452,6 +452,8 @@
           href: mto-incidents-alerts.md
         - name: Advanced hunting
           href: mto-advanced-hunting.md
+        - name: Multi-tenant devices
+          href: mto-tenant-devices.md
         - name: Vulnerability management
           href: mto-dashboard.md
         - name: Manage tenants

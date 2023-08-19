@@ -41,3 +41,4 @@ In the Microsoft 365 Defender multi-tenant Unified View dashboard page, you can 
 | Exposure distribution                         | Shows how many devices are exposed, across all tenants, based on their exposure level.                  |
 | Tenants with the largest increase in exposure | Identify tenants with the largest increase in exposure over the last 30 days.                           |
 | Tenants exposure distribution                 | View a summary of exposed tenants aggregated by exposure level.                                         |
+
