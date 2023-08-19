@@ -1459,20 +1459,20 @@
       - name: Migrate to Attack surface reduction rules
         href: migrating-asr-rules.md
 
-- name: Microsoft 365 Defender docs
-  items:
-  - name: Microsoft 365 Defender
-    href: ../defender/index.yml
-  - name: Defender for Office 365
-    href: ../office-365-security/index.yml
-  - name: Defender for Identity
-    href: /defender-for-identity/
-  - name: Defender for Cloud Apps
-    href: /cloud-app-security/
-  - name: Defender for Business
-    href: ../defender-business/index.yml
-  - name: Defender Vulnerability Management
-    href: ../defender-vulnerability-management/index.yml
+  - name: Microsoft 365 Defender docs
+    items:
+    - name: Microsoft 365 Defender
+      href: ../defender/index.yml
+    - name: Defender for Office 365
+      href: ../office-365-security/index.yml
+    - name: Defender for Identity
+      href: /defender-for-identity/
+    - name: Defender for Cloud Apps
+      href: /cloud-app-security/
+    - name: Defender for Business
+      href: ../defender-business/index.yml
+    - name: Defender Vulnerability Management
+      href: ../defender-vulnerability-management/index.yml
 
 
 
