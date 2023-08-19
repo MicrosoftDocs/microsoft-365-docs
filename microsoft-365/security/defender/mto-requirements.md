@@ -62,7 +62,7 @@ To access data from other tenants within the Microsoft 365 Defender multi-tenant
 >[!Note]
 > Data boundaries, Role-based access control (RBAC), and licensing are respected by Microsoft 365 Defender multi-tenant.
 
-### Step 2: Use the Microsoft 365 Defender multi-tenant setup wizard
+## Step 2: Use the Microsoft 365 Defender multi-tenant setup wizard
 
 If this is the first time you're using the Microsoft 365 Defender multi-tenant portal the setup wizard helps you add the tenants you want to view and manage in the portal. To get started:
 
