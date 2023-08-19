@@ -448,11 +448,9 @@
           href: mto-overview.md
         - name: Set up Microsoft 365 Defender multi-tenant
           href: mto-requirements.md
-        - name: Start using Microsoft 365 Defender multi-tenant
-          href: mto-portal.md
         - name: View and manage incidents and alerts
           href: mto-incidents-alerts.md
-        - name: Hunting
+        - name: Advanced hunting
           href: mto-advanced-hunting.md
         - name: Vulnerability management
           href: mto-dashboard.md

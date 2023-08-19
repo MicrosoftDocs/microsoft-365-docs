@@ -54,3 +54,10 @@ At the top of the device inventory, you can find counters for multiple device in
 | Can be onboarded | Number of devices that can be onboarded to Microsoft Defender for Endpoint agent.                                             |
 | Newly discovered | Number of devices discovered in the selected time frame                                                                       |
 | High value       | Number of devices with device value attribute set to ‘high.’; device value affects exposure score calculation                 |
+
+
+### Unified View Status Indicator
+
+The Unified View Status Indicator is always available in the bottom right corner of the Microsoft 365 Defender multi-tenant Unified View. This indicator provides information when data issues occur with the page you are viewing, such as data loading issues or permissions issues.
+
+When an issue exists the status indicator will show a red warning sign hovering over it will display the issues that have occurred and the tenant information. By expanding each section, you’ll see all the tenants with this issue.
