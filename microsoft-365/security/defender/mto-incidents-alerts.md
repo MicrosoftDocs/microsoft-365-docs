@@ -74,3 +74,4 @@ When you select a single alert you want to investigate, a flyout panel will open
    :::image type="content" source="../../media/defender/mto-alerts-details.png" alt-text="Screenshot of the Microsoft 365 Defender alerts page" lightbox="../../media/defender/mto-alert-details.png":::
 
 Select **Open alerts page** to view this alert in a new tab for the specific tenant in the [Microsoft 365 Defender portal](https://security.microsoft.com)
+
