@@ -25,17 +25,20 @@ ms.date: 09/01/2023
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Managing Multi-tenant environments can add an additional layer of complexity when it comes keeping up with the ever-evolving security threats facing your enterprise. Navigating across multiple tenants can be time consuming and reduce the overall efficiency of security operation teams.
+Managing multi-tenant environments can add an additional layer of complexity when it comes keeping up with the ever-evolving security threats facing your enterprise. Navigating across multiple tenants can be time consuming and reduce the overall efficiency of security operation teams.
 
-Microsoft 365 Defender multi-tenant was designed to provide security operation teams with a unified view of the tenants they have access to from a single location. With this unified view,security operation teams will be able to boost their security operations with the ability to investigate incidents and perform advanced hunting across the data contained in multiple tenants.
+Microsoft 365 Defender multi-tenant was designed to provide security operation teams with a single, unified view of all the tenants they manage. This view enables teams to quickly investigate incidents and perform advanced hunting across data from multiple tenants, improving their security operations.
+
+>[!Tip]
+>To learn more about multi-tenant organizations, see [Multi-tenant organizations documentation](/azure/active-directory/multi-tenant-organizations/)
 
 Some of the key benefits you'll get With Microsoft 365 Defender multi-tenant include:
 
-- **A centralized place to manage incidents across tenants**:
+- **A centralized place to manage incidents across tenants**: The unified view provides SOC analysts with all the information they need for incident investigation across multiple tenants, eliminating the need to log in/out of each one.
 
-- **Streamlined threat hunting**:
+- **Streamlined threat hunting**: Multi-tenancy support enables SOC teams use Microsoft 365 Defender advanced hunting capabilities to create KQL queries that will proactively hunt for threats across multiple tenants.
 
-- **Multi-customer management for partners**:
+- **Multi-customer management for partners**: Managed Security Service Provider (MSSP) partners can now gain visibility into security incidents, alerts, and threat hunting across multiple customers through a single pane of glass, and help them efficiently run their SOC.  
 
 ## What's included in Microsoft 365 Defender multi-tenant
 
@@ -43,10 +46,15 @@ The following key capabilities are available for each tenant you have access to 
 
 | Capability | Description |
 | ------ | ------ |
-| Aggregated Incidents and alerts queues | Manage alerts & incidents originating from multiple tenants under Incidents & alerts. |
-| Cross-tenant advanced hunting| Proactively hunt for intrusion attempts and breach activity affecting your email, data, devices, and accounts over multiple tenants at the same time. |
-| Defender Vulnerability Management dashboard |MTO Vulnerability Management provides both security administrators and security operations teams with aggregated vulnerability management information across multiple tenants. |
+|**Incidents & alerts** > **Incidents** | Manage incidents originating from multiple tenants. |
+|**Incidents & alerts** > **Alerts** | Manage alerts originating from multiple tenants. |
+|**Hunting** > **Advanced hunting**| Proactively hunt for intrusion attempts and breach activity across multiple tenants at the same time.|
+|**Hunting** > **Custom detection rules**|View and manage custom detection rules across multiple tenants.|
+|**Assets** > **Devices** > **Tenants**| View a list containing the tenants you've access to along with information on the devices in each tenant.|
+|**Endpoints** >**Vulnerability Management** > **Dashboard** |The vulnerability management dashboard provides both security administrators and security operations teams with aggregated vulnerability management information across multiple tenants. |
+|**Endpoints** > **Vulnerability management** > **Tenants** |The vulnerability management dashboard provides both security administrators and security operations teams with aggregated vulnerability management information across multiple tenants. |
+|**Configuration** > **Settings**||
 
 ## Next steps
 
-- **Verify your tenant access**: [Microsoft 365 Defender multi-tenant requirements](mto-requirements.md)
+- [Set up your Microsoft 365 Defender multi-tenant view](mto-requirements.md)
