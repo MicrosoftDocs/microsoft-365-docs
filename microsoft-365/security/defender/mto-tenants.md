@@ -1,5 +1,5 @@
 ---
-title: Manage tenants in the Microsoft 365 Defender multi-tenant Unified View 
+title: Manage tenants with the Microsoft 365 Defender multi-tenant 
 description: Learn about the tenant list in the Microsoft 365 Defender multi-tenant Unified View
 search.appverid: met150
 ms.service: microsoft-365-security

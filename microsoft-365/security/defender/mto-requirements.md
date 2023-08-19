@@ -58,3 +58,7 @@ To access data from other tenants within the Microsoft 365 Defender multi-tenant
 ## Next step
 
 - [Visit the Microsoft 365 Defender multi-tenant portal](mto-portal.md)
+
+- **Provide guidance on managing incidents and alerts**:[Manage incidents and alerts](mto-incidents-alerts.md).
+- **Learn about advanced hunting**: [Advanced hunting](mto-advanced-hunting.md)
+- **Learn how to manage your tenants**:[Manage your tenants](mto-tenants.md)
