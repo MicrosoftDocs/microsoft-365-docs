@@ -75,7 +75,7 @@ If this is the first time you're using the Microsoft 365 Defender multi-tenant p
 
 The features available in multi-tenant portal will now appear on the navigation bar and you're ready to view and manage security data across all your tenants.
 
-    :::image type="content" source="../../media/defender/mto-multi-tenant-view.png" alt-text="Screenshot of the Microsoft 365 Defender multi-tenant settings page" lightbox="../../media/defender/mto-multi-tenant-view.png":::
+   :::image type="content" source="../../media/defender/mto-multi-tenant-view.png" alt-text="Screenshot of the Microsoft 365 Defender multi-tenant settings page" lightbox="../../media/defender/mto-multi-tenant-view.png":::
 
 ## Next step
 
