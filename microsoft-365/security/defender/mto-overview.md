@@ -30,7 +30,7 @@ Managing multi-tenant environments can add an additional layer of complexity whe
 Microsoft 365 Defender multi-tenant was designed to provide security operation teams with a single, unified view of all the tenants they manage. This view enables teams to quickly investigate incidents and perform advanced hunting across data from multiple tenants, improving their security operations.
 
 >[!Tip]
->To learn more about multi-tenant organizations, see [Multi-tenant organizations documentation](/azure/active-directory/multi-tenant-organizations/)
+>To learn more about multi-tenant organizations, see [Multi-tenant organizations documentation](/azure/active-directory/multi-tenant-organizations/).
 
 Some of the key benefits you'll get With Microsoft 365 Defender multi-tenant include:
 
@@ -57,4 +57,4 @@ The following key capabilities are available for each tenant you have access to 
 
 ## Next steps
 
-- [Set up your Microsoft 365 Defender multi-tenant view](mto-requirements.md)
+- [Set up Microsoft 365 Defender multi-tenant](mto-requirements.md)
