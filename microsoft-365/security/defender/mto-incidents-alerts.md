@@ -52,7 +52,7 @@ From here you can assign incidents, assign incidents tags, set the incident stat
 
 When you select a single incident you want to investigate, a flyout panel will open with the incident details page:
 
-   :::image type="content" source="../../media/defender/mto-incident-details.png" alt-text="Screenshot of the Microsoft 365 Defender incidents page" lightbox="../../media/defender/mto-incident-details.png":::
+   :::image type="content" source="../../media/defender/mto-incident-details.png" alt-text="Screenshot of the Microsoft 365 Defender incidents details page" lightbox="../../media/defender/mto-incident-details.png":::
 
 Select **Open incident page** to view this incident in a new tab for the specific tenant in the [Microsoft 365 Defender portal](https://security.microsoft.com).
 
@@ -71,7 +71,6 @@ From here you can assign alerts, set the alert status, or classify multiple aler
 
 When you select a single alert you want to investigate, a flyout panel will open with the alert details page:
 
-   :::image type="content" source="../../media/defender/mto-alerts-details.png" alt-text="Screenshot of the Microsoft 365 Defender alerts page" lightbox="../../media/defender/mto-alert-details.png":::
+   :::image type="content" source="../../media/defender/mto-alerts-details.png" alt-text="Screenshot of the Microsoft 365 Defender alert details page" lightbox="../../media/defender/mto-alerts-details.png":::
 
 Select **Open alerts page** to view this alert in a new tab for the specific tenant in the [Microsoft 365 Defender portal](https://security.microsoft.com)
-
