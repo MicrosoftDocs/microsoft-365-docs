@@ -49,3 +49,11 @@ Use the navigation bar on the left side of the screen to access your incidents a
 The Unified View Status Indicator is always available in the bottom right corner of the Microsoft 365 Defender multi-tenant Unified View. This indicator provides information when data issues occur with the page you are viewing, such as data loading issues or permissions issues.
 
 When an issue exists the status indicator will show a red warning sign hovering over it will display the issues that have occurred and the tenant information. By expanding each section, you’ll see all the tenants with this issue.
+
+## Next steps
+
+Use these article to:
+
+Provide guidance on managing incidents and alerts:Manage incidents and alerts.
+Learn about advanced hunting: Advanced hunting
+Learn how to manage your tenants:Manage your tenants
