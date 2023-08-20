@@ -32,10 +32,9 @@ Advanced hunting in Microsoft 365 Defender multi-tenant allows you to proactivel
 
    :::image type="content" source="../../media/defender/mto-advanced-hunting.png" alt-text="Screenshot of the Microsoft 365 Defender multi-tenant advanced hunting page" lightbox="../../media/defender/mto-advanced-hunting.png":::
 
-From the Advanced hunting page you can:
+From the Advanced hunting page you can run your cross-tenant query by selecting **Tenant scope**. This query will run on the combined data set of all the tenants you've selected.
 
-- **Run** your cross-tenant query by selecting **Tenant scope**. This query will run on the combined data set of all the tenants you've selected.
-- On the left, you can see the **Unified schema**, which displays all tables available across all tenants.
+The query results contains the tenant id:
 
    :::image type="content" source="../../media/defender/mto-tenant-id.png" alt-text="Screenshot of the Defender 365 multi-tenant advanced hunting tenant id" lightbox="../../media/defender/mto-tenant-id.png":::
 
@@ -63,4 +62,4 @@ When you select a single detection rule, a flyout panel will open with the detec
 
    :::image type="content" source="../../media/defender/custom-detection-rule-details.png" alt-text="Screenshot of the Microsoft 365 Defender custom detection rule details page" lightbox="../../media/defender/custom-detection-rule-details.png":::
 
-Select **Open open detection rules** to view this rule in a new tab for the specific tenant in the [Microsoft 365 Defender portal](https://security.microsoft.com). To learn more, see [Custom detection rules](./custom-detection-rules.md).
+Select **Open detection rules** to view this rule in a new tab for the specific tenant in the [Microsoft 365 Defender portal](https://security.microsoft.com). To learn more, see [Custom detection rules](./custom-detection-rules.md).
