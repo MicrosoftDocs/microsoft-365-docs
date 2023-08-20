@@ -26,7 +26,7 @@ ms.date: 09/01/2023
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Microsoft 365 Defender multi-tenant allows SOC analysts to access and analyze data from multiple tenants in one place, allowing them to quickly identify and respond to threats.
+Microsoft 365 Defender multi-tenant enables SOC analysts to access and analyze data from multiple tenants in one place, allowing them to quickly identify and respond to threats.
 
 ## View incidents
 
