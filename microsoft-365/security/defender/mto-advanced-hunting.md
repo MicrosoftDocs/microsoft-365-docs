@@ -30,11 +30,11 @@ ms.date: 09/01/2023
 
 Advanced hunting in Microsoft 365 Defender multi-tenant allows you to proactively hunt for intrusion attempts and breach activity affecting your email, data, devices, and accounts over multiple tenants at the same time.
 
-   :::image type="content" source="../../media/defender/mto-advanced-hunting.png" alt-text="Screenshot of the Microsoft 365 Defender incidents page" lightbox="../../media/defender/mto-advanced-hunting.png":::
+   :::image type="content" source="../../media/defender/mto-advanced-hunting.png" alt-text="Screenshot of the Microsoft 365 Defender multi-tenant advanced hunting page" lightbox="../../media/defender/mto-advanced-hunting.png":::
 
 From the Advanced hunting page you can:
 
 - **Run** your cross-tenant query by selecting **Tenant scope**. This query will run on the combined data set of all the tenants you've selected.
 - On the left, you can see the **Unified schema**, which displays all tables available across all tenants.
 
-   :::image type="content" source="../../media/defender/mto-tenant-id.png" alt-text="Screenshot of the Microsoft 365 Defender incidents page" lightbox="../../media/defender/mto-tenant-id.png":::
+   :::image type="content" source="../../media/defender/mto-tenant-id.png" alt-text="Screenshot of the Defender 365 multi-tenant advanced hunting tenant id" lightbox="../../media/defender/mto-tenant-id.png":::
