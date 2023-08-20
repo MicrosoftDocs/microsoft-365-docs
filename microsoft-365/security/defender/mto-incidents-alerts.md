@@ -22,7 +22,7 @@ ms.date: 09/01/2023
 **Applies to:**
 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-- Microsoft 365 Defender multi-tenant Unified View
+- Microsoft 365 Defender multi-tenant
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 

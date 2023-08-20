@@ -22,7 +22,7 @@ ms.date: 09/01/2023
 **Applies to:**
 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-- Microsoft 365 Defender multi-tenant Unified View
+- Microsoft 365 Defender multi-tenant
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -32,21 +32,11 @@ To view the list of tenants that appear in the multi-tenant view, go to [Setting
 
    :::image type="content" source="../../media/defender/mto-multi-tenant-view.png" alt-text="Screenshot of the Microsoft 365 Defender multi-tenant settings page" lightbox="../../media/defender/mto-multi-tenant-view.png":::
 
-## Add a tenant
+From the **Settings page you can:
 
-1. Select **Add tenant**
+- **Add a tenant**: Select **Add tenant** > Choose the tenants to want to add > Select **Add tenant**. Selecting a tenant from the list will open the [Microsoft 365 Defender portal](https://security.microsoft.com) for that tenant.
 
-2. Choose the tenants to want to add.
-
-3. Select **Add tenant**.
-
-Selecting a tenant from the list will open the [Microsoft 365 Defender portal](https://security.microsoft.com) for that tenant.
-
-## Remove a tenant
-
-1. Select the tenant you'd like to remove.
-
-2. Click **Remove**.
+- **Remove a tenant**: Select the tenant you'd like to remove > select **Remove**.
 
 ## Unified View Status Indicator
 
