@@ -82,7 +82,8 @@ The features available in multi-tenant portal will now appear on the navigation 
 
 Use these articles to get started with the Microsoft 365 Defender multi-tenant portal:
 
-- [Manage incidents and alerts](./mto-incidents-alerts.md)
+- [View and manage incidents and alerts](./mto-incidents-alerts.md)
 - [Advanced hunting](./mto-advanced-hunting.md)
+- [Vulnerability management](./mto-dashboard.md)
+- [Multi-tenant device view](./mto-tenant-devices.md)
 - [Manage your tenants](./mto-tenants.md)
-- [Vulnerability Management](./mto-dashboard.md)
