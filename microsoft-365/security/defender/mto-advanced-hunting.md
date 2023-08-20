@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Defender multi-tenant Advanced Hunting
+title: Microsoft 365 Defender multi-tenant advanced hunting
 description: Learn about advanced hunting in the Microsoft 365 Defender multi-tenant Unified View
 search.appverid: met150
 ms.service: microsoft-365-security
@@ -17,7 +17,7 @@ ms.topic: conceptual
 ms.date: 09/01/2023
 ---
 
-# Microsoft 365 Defender multi-tenant Advanced Hunting
+# Microsoft 365 Defender multi-tenant advanced hunting
 
 **Applies to:**
 
@@ -26,13 +26,15 @@ ms.date: 09/01/2023
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## Advanced Hunting
+## Advanced hunting
 
-The unified advanced hunting experience allows you to proactively hunt for intrusion attempts and breach activity affecting your email, data, devices, and accounts over multiple tenants at the same time.
+Advanced hunting in Microsoft 365 Defender multi-tenant allows you to proactively hunt for intrusion attempts and breach activity affecting your email, data, devices, and accounts over multiple tenants at the same time.
 
-1. Go to [Advance Hunting](https://mto.security.microsoft.com/v2/advanced-hunting)
+   :::image type="content" source="../../media/defender/mto-advanced-hunting.png" alt-text="Screenshot of the Microsoft 365 Defender incidents page" lightbox="../../media/defender/mto-advanced-hunting.png":::
 
-2. **Run** your cross-tenant query. It will run on the combined data set of all the tenants you are authorized to access.
-3. A new **TenantID** column exists in the query results
-4. You can restrict the query to a specific set of tenants by selecting **Tenant scope** at the top right corner of the page
-5. On the left, you can see the **unified schema**, which displays all tables available across all tenants.  
+From the Advanced hunting page you can:
+
+- **Run** your cross-tenant query by selecting **Tenant scope**. This query will run on the combined data set of all the tenants you've selected.
+- On the left, you can see the **Unified schema**, which displays all tables available across all tenants.
+
+   :::image type="content" source="../../media/defender/mto-tenant-id.png" alt-text="Screenshot of the Microsoft 365 Defender incidents page" lightbox="../../media/defender/mto-tenant-id.png":::
