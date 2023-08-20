@@ -54,7 +54,7 @@ When you select a single incident you want to investigate, a flyout panel will o
 
    :::image type="content" source="../../media/defender/mto-incident-details.png" alt-text="Screenshot of the Microsoft 365 Defender incidents details page" lightbox="../../media/defender/mto-incident-details.png":::
 
-Select **Open incident page** to view this incident in a new tab for the specific tenant in the [Microsoft 365 Defender portal](https://security.microsoft.com).
+Select **Open incident page** to view this incident in a new tab for the specific tenant in the [Microsoft 365 Defender portal](https://security.microsoft.com). To learn more, see [Incidents overview](investigate-incidents.md).
 
 ## Manage Alerts
 
@@ -73,4 +73,4 @@ When you select a single alert you want to investigate, a flyout panel will open
 
    :::image type="content" source="../../media/defender/mto-alerts-details.png" alt-text="Screenshot of the Microsoft 365 Defender alert details page" lightbox="../../media/defender/mto-alerts-details.png":::
 
-Select **Open alerts page** to view this alert in a new tab for the specific tenant in the [Microsoft 365 Defender portal](https://security.microsoft.com)
+Select **Open alerts page** to view this alert in a new tab for the specific tenant in the [Microsoft 365 Defender portal](https://security.microsoft.com). To learn more, see [Investigate alerts](investigate-alerts.md).

@@ -27,10 +27,14 @@ ms.date: 09/01/2023
 
 This article describes the steps need to take start using the Microsoft 365 Defender multi-tenant portal.
 
-1. [Verify your tenant access](#step-1-verify-your-tenant-access).
-2. [Use the Microsoft 365 Defender multi-tenant setup wizard](#step-2-use-the-microsoft-365-defender-multi-tenant-setup-wizard).
+1. Verify you meet the [Microsoft 365 Defender pre-requisites](prerequisites.md).
+2. [Verify your tenant access](#verify-your-tenant-access).
+3. [Use the Microsoft 365 Defender multi-tenant setup wizard](use-the-microsoft-365-defender-multi-tenant-setup-wizard).
 
-## Step 1: Verify your tenant access
+>[!Note]
+> [Data privacy](data-privacy.md), [role-based access control (RBAC)](m365d-permissions.md) and [Licensing](prerequisites#licensing-requirements) are respected by Microsoft 365 Defender multi-tenant.
+
+## Verify your tenant access
 
 The first step is to make sure that you have the appropriate permissions for accessing multiple tenants using a single identity.
 
@@ -50,7 +54,7 @@ To access data from other tenants within the Microsoft 365 Defender multi-tenant
    :::image type="content" source="../../media/defender/mto-myaccount.png" alt-text="Screenshot of organizations in the myaccount portal" lightbox="../../media/defender/mto-myaccount.png":::
 
 3. Verify all the tenants you plan to manage in the Microsoft 365 Defender multi-tenant portal appear in the list.
-4. For each tenant, go to the [Microsoft 365 Defender portal)](https://security.microsoft.com/?tid=tenant_id) and log in to validate you can successfully access the tenant.
+4. For each tenant, go to the [Microsoft 365 Defender portal](https://security.microsoft.com/?tid=tenant_id) and log in to validate you can successfully access the tenant.
 
 ### Verify your tenant access with GDAP
 
@@ -59,10 +63,7 @@ To access data from other tenants within the Microsoft 365 Defender multi-tenant
 3. Verify all the tenants you plan to manage in the Microsoft 365 Defender multi-tenant portal appear in the list.
 4. For each tenant, go to the [Microsoft 365 Defender portal)](https://security.microsoft.com/?tid=tenant_id) and login to validate you can successfully access the tenant.
 
->[!Note]
-> Data boundaries, Role-based access control (RBAC), and licensing are respected by Microsoft 365 Defender multi-tenant.
-
-## Step 2: Use the Microsoft 365 Defender multi-tenant setup wizard
+## Use the Microsoft 365 Defender multi-tenant setup wizard
 
 If this is the first time you're using the Microsoft 365 Defender multi-tenant portal the setup wizard helps you add the tenants you want to view and manage in the portal. To get started:
 
