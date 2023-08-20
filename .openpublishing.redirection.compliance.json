@@ -5487,7 +5487,7 @@
      },
      {
         "source_path":"microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md",
-        "redirect_url":"/compliance/sit-learn-about-exact-data-match",
+        "redirect_url":"/purview/sit-learn-about-exact-data-match-based-sits",
         "redirect_document_id":false
      },
      {
