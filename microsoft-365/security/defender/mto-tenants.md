@@ -34,17 +34,19 @@ To view the list of tenants that appear in the multi-tenant view, go to [Setting
 
 ## Add a tenant
 
-1. Select the notification rule you'd like to edit.
+1. Select **Add tenant**
 
-2. Update the General and Recipient tab information.
+2. Choose the tenants to want to add.
 
-3. Click **Save notification rule**.
+3. Select **Add tenant**.
+
+Selecting a tenant from the list will open the [Microsoft 365 Defender portal](https://security.microsoft.com) for that tenant.
 
 ## Remove a tenant
 
-1. Select the notification rule you'd like to delete.
+1. Select the tenant you'd like to remove.
 
-2. Click **Delete**.
+2. Click **Remove**.
 
 ## Unified View Status Indicator
 
