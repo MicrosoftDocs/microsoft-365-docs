@@ -29,10 +29,10 @@ This article describes the steps need to take start using the Microsoft 365 Defe
 
 1. Verify you meet the [Microsoft 365 Defender pre-requisites](prerequisites.md).
 2. [Verify your tenant access](#verify-your-tenant-access).
-3. [Use the Microsoft 365 Defender multi-tenant setup wizard](use-the-microsoft-365-defender-multi-tenant-setup-wizard).
+3. [Use the Microsoft 365 Defender multi-tenant setup wizard](#use-the-microsoft-365-defender-multi-tenant-setup-wizard).
 
 >[!Note]
-> [Data privacy](data-privacy.md), [role-based access control (RBAC)](m365d-permissions.md) and [Licensing](prerequisites#licensing-requirements) are respected by Microsoft 365 Defender multi-tenant.
+> [Data privacy](data-privacy.md), [role-based access control (RBAC)](m365d-permissions.md) and [Licensing](prerequisites.md#licensing-requirements) are respected by Microsoft 365 Defender multi-tenant.
 
 ## Verify your tenant access
 
