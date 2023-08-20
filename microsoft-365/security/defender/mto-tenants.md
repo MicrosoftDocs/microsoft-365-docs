@@ -32,14 +32,14 @@ To view the list of tenants that appear in the multi-tenant view, go to [Setting
 
    :::image type="content" source="../../media/defender/mto-multi-tenant-view.png" alt-text="Screenshot of the Microsoft 365 Defender multi-tenant settings page" lightbox="../../media/defender/mto-multi-tenant-view.png":::
 
-From the **Settings page you can:
+From the **Settings** page you can:
 
 - **Add a tenant**: Select **Add tenant** > Choose the tenants to want to add > Select **Add tenant**. Selecting a tenant from the list will open the [Microsoft 365 Defender portal](https://security.microsoft.com) for that tenant.
 
 - **Remove a tenant**: Select the tenant you'd like to remove > select **Remove**.
 
-## Unified View Status Indicator
+## Multi-tenant view status indicator
 
-The Unified View Status Indicator is always available in the bottom right corner of the Microsoft 365 Defender multi-tenant portal. This indicator provides information when data issues occur with the page you are viewing, such as data loading issues or permissions issues.
+The Multi-tenant view status indicator is always available in the bottom right corner of the Microsoft 365 Defender multi-tenant portal. This indicator provides information when data issues occur with the page you are viewing, such as data loading issues or permissions issues.
 
 When an issue exists the status indicator will show a red warning sign hovering over it will display the issues that has occurred and the tenant information. By expanding each section, you’ll see all the tenants with this issue.
