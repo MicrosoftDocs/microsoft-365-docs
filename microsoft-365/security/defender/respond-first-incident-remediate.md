@@ -111,10 +111,11 @@ The following tutorials enumerate steps and actions that you can apply when inve
 ## Next steps
 
 -	[Simulate attacks through the attack simulation training](eval-defender-investigate-respond-simulate-attack.md)
-- [Explore Microsoft 365 Defender through the virtual Ninja training](https://adoption.microsoft.com/ninja-show/)
+- Explore Microsoft 365 Defender through the [Virtual Ninja training](https://adoption.microsoft.com/ninja-show/)
 
 ## See also
 
 - [Investigate incidents](investigate-incidents.md)
+- Learn the portal's features and functions through the [Microsoft 365 Defender Ninja training](https://techcommunity.microsoft.com/t5/microsoft-365-defender/become-a-microsoft-365-defender-ninja/ba-p/1789376)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

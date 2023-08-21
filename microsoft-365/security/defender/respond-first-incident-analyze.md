@@ -177,7 +177,7 @@ Extend your threat intelligence with the latest security research and changes fr
 - [Microsoft Security blog](https://www.microsoft.com/security/blog/topic/threat-intelligence/?sort-by=newest-oldest&date=any)
 - [Microsoft threat actor information](/microsoft-365/security/intelligence/microsoft-threat-actor-naming)
 
-Microsoft's experts for incident response and threat hunting enhance your security operations teams’ capabilities. Know more about the experts and how to engage them in the following resources:
+Collaborate with Microsoft's experts for incident response and threat hunting to enhance your security operations teams' capabilities. Know more about our experts and how to engage them in the following resources:
 
 - [Defender Experts for XDR](dex-xdr-overview.md)
 - [Threat hunting with Defender Experts for Hunting](defender-experts-for-hunting.md)
@@ -185,12 +185,13 @@ Microsoft's experts for incident response and threat hunting enhance your securi
 ## Next step
 
 - [Remediate your first incident](respond-first-incident-remediate.md)
-- [Explore Microsoft 365 Defender through the virtual Ninja training](https://adoption.microsoft.com/ninja-show/)
+- Explore the portal's features through video demos in the [Microsoft 365 Defender Virtual Ninja Training](https://adoption.microsoft.com/en-us/ninja-show/)
 
 ## See also
 
 - [Understand incidents](respond-first-incident-365-defender.md)
 - [Investigate incidents](investigate-incidents.md)
 - [Investigate alerts](investigate-alerts.md)
+- Learn the portal's features and functions through the [Microsoft 365 Defender Ninja training](https://techcommunity.microsoft.com/t5/microsoft-365-defender/become-a-microsoft-365-defender-ninja/ba-p/1789376)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

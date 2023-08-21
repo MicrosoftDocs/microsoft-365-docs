@@ -99,11 +99,12 @@ Learn how to classify incidents and alerts through this video:
 
 -	[Analyze your first incident](respond-first-incident-analyze.md)
 - [Remediate your first incident](respond-first-incident-remediate.md)
-- [Learn Microsoft 365 Defender's features and functions through the Ninja training](https://techcommunity.microsoft.com/t5/microsoft-365-defender/become-a-microsoft-365-defender-ninja/ba-p/1789376)
+- Watch demos and the portal's new developments in action in the [Microsoft 365 Defender Virtual Ninja Training](https://adoption.microsoft.com/en-us/ninja-show/)
 
 ## See also
 
 - [Integrate Microsoft 365 Defender into your security operations](integrate-microsoft-365-defender-secops-plan.md)
 - [Respond to common attacks using incident response playbooks](/security/operations/incident-response-playbooks)
+- Learn the portal's features and functions through the [Microsoft 365 Defender Ninja training](https://techcommunity.microsoft.com/t5/microsoft-365-defender/become-a-microsoft-365-defender-ninja/ba-p/1789376)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
