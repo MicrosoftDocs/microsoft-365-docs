@@ -2676,6 +2676,11 @@
          "redirect_document_id":true
       },
       {
+         "source_path":"microsoft-365/security/defender-endpoint/community.md",
+         "redirect_url":"https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/bd-p/MicrosoftDefenderATP",
+         "redirect_document_id":false
+      },
+      {
          "source_path":"microsoft-365/security/defender-endpoint/corelight-integration.md",
          "redirect_url":"/microsoft-365/security/defender-endpoint/device-discovery",
          "redirect_document_id":true

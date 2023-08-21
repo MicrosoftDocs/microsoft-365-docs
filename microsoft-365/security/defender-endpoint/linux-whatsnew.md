@@ -752,7 +752,7 @@ As an alternative to the above, you can follow the instructions to [uninstall](/
 
 </details>
 
-<details><summary> 2021 releases</summary><blockquote>
+<details><summary> 2021 releases</summary>
   <details><summary>(Build: 101.52.57 | Release version: 30.121092.15257.0)</summary>
 
   <p><b>
@@ -907,5 +907,5 @@ As an alternative to the above, you can follow the instructions to [uninstall](/
 
    </details>
 
-</blockquote></details>
+</details>
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
