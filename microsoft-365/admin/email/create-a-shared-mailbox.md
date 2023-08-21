@@ -17,12 +17,13 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
-- MSStore_Link
-- AdminSurgePortfolio
-- okr_smb
-- AdminTemplateSet
-- admindeeplinkEXCHANGE
-- business_assist
+  - MSStore_Link
+  - AdminSurgePortfolio
+  - okr_smb
+  - AdminTemplateSet
+  - admindeeplinkEXCHANGE
+  - business_assist
+  - has-azure-ad-ps-ref
 search.appverid:
 - BCS160
 - MET150

@@ -16,9 +16,10 @@ ms.collection:
 f1.keywords:
 - CSH
 ms.custom:
-- Ent_Office_Other
-- PowerShell
-- seo-marvel-apr2020
+  - Ent_Office_Other
+  - PowerShell
+  - seo-marvel-apr2020
+  - has-azure-ad-ps-ref
 ms.assetid: 04e58c2a-400b-496a-acd4-8ec5d37236dc
 description: How to use PowerShell to block and unblock access to Microsoft 365 accounts.
 ---
