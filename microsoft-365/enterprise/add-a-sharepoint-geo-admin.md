@@ -13,7 +13,9 @@ ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 description: Need to configure separate administrators for each geo location? Learn how to add or remove a geo administrator in Microsoft 365 Multi-Geo.
-ms.custom: seo-marvel-apr2020
+ms.custom:
+  - seo-marvel-apr2020
+  - has-azure-ad-ps-ref
 ---
 
 # Add or remove a _Geography_ administrator in Microsoft 365 Multi-Geo

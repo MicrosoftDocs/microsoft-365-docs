@@ -15,11 +15,12 @@ ms.collection:
 - Ent_O365
 f1.keywords:
 - CSH
-ms.custom: 
-- PowerShell
-- Ent_Office_Other
-- O365ITProTrain
-- seo-marvel-apr2020
+ms.custom:
+  - PowerShell
+  - Ent_Office_Other
+  - O365ITProTrain
+  - seo-marvel-apr2020
+  - has-azure-ad-ps-ref
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
 description: Learn how to use different modules in PowerShell to delete Microsoft 365 user accounts.
 ---

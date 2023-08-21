@@ -15,11 +15,12 @@ ms.collection:
 - Ent_O365
 f1.keywords:
 - CSH
-ms.custom: 
-- PowerShell
-- Ent_Office_Other
-- O365ITProTrain
-- seo-marvel-apr2020
+ms.custom:
+  - PowerShell
+  - Ent_Office_Other
+  - O365ITProTrain
+  - seo-marvel-apr2020
+  - has-azure-ad-ps-ref
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: How to use PowerShell to create individual or multiple Microsoft 365 user accounts.
 ---

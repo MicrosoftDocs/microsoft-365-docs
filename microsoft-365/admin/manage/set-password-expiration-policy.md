@@ -17,13 +17,14 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: 
-- VSBFY23
-- AdminSurgePortfolio
-- okr_smb
-- AdminTemplateSet
-- admindeeplinkMAC
-- business_assist
+ms.custom:
+  - VSBFY23
+  - AdminSurgePortfolio
+  - okr_smb
+  - AdminTemplateSet
+  - admindeeplinkMAC
+  - business_assist
+  - has-azure-ad-ps-ref
 description: "Learn how an admin can set a password expiration policy for your business, school, or nonprofit in Microsoft 365 admin center."
 ---
 

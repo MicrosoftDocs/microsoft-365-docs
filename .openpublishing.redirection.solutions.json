@@ -101,6 +101,11 @@
         "redirect_document_id":false
      },
      {
+      "source_path":"microsoft-365/solutions/limit-guest-sharing-to-specific-organization.md",
+      "redirect_url":"/microsoft-365/solutions/trusted-vendor-onboarding",
+      "redirect_document_id":false
+     },
+     {
         "source_path":"microsoft-365/solutions/information-protection-deploy-monitor-respond.md",
         "redirect_url":"/microsoft-365/solutions/data-privacy-protection",
         "redirect_document_id":false
