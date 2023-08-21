@@ -20,7 +20,7 @@ audience: Admin
 
 # Set up or edit your controlled folder access policy in Microsoft Defender for Business
 
-Controlled folder access allows only trusted apps to access protected folders on Windows devices. Think of this capability as ransomware mitigation. You can set up or edit your controlled folder access policy in Microsoft Endpoint Manager. 
+Controlled folder access allows only trusted apps to access protected folders on Windows devices. Think of this capability as ransomware mitigation. You can set up or edit your controlled folder access policy using Microsoft Intune. 
 
 ## Set up controlled folder access
 
