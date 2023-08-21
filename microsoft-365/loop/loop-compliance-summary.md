@@ -1,5 +1,5 @@
 ---
-ms.date: 06/19/2023
+ms.date: 08/21/2023
 title: "Summary of compliance capabilities for Loop experiences"
 ms.reviewer: dancost, tonchan
 ms.author: mikeplum
