@@ -2,8 +2,8 @@
 title: "Add users and assign licenses in Microsoft 365"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: how-to
