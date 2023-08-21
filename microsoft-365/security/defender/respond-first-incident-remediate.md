@@ -54,7 +54,7 @@ You can [configure](m365d-configure-auto-investigation-response.md) and [manage]
 > [!NOTE]
 > You can undo automatic actions after review.
 
-In addition, automated remediation can be created using playbooks. Microsoft has [playbook templates on GitHub](https://github.com/microsoft/Microsoft-Cloud-App-Security/tree/master/Playbooks) for the following scenarios:
+To speed up some of your investigation tasks, you can [triage alerts with Power Automate](investigate-alerts.md#use-power-automate-to-triage-alerts). In addition, automated remediation can be created using automation and playbooks. Microsoft has [playbook templates on GitHub](https://github.com/microsoft/Microsoft-Cloud-App-Security/tree/master/Playbooks) for the following scenarios:
 
 - Remove sensitive file sharing after requesting user validation
 - Auto-triage infrequent country alerts
@@ -62,6 +62,10 @@ In addition, automated remediation can be created using playbooks. Microsoft has
 - Disable malicious inbox rules
 
 Playbooks use Power Automate to create custom robotic process automation flows to automate certain activities once specific criteria have been triggered. Organizations can create playbooks either from existing templates or from scratch. Playbooks can also be created during post-incident review to create remediation actions from resolved incidents.
+
+Learn how Power Automate can help you automate your incident response through this video:
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWFIRn]
 
 ## Manual remediation
 

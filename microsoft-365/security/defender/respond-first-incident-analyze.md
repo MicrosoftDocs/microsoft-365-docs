@@ -57,9 +57,7 @@ The [attack story](investigate-incidents.md#attack-story) provides incident resp
 
 From the attack story, you can dive deeper into the details of an attack by exploring the tabs available on the [incident page](investigate-incidents.md). You can quickly remediate common attacks like phishing, password spray, and malicious app compromise through [incident response playbooks](/security/operations/incident-response-playbooks) accessible within the portal. These playbooks contain detection, response, and mitigation guidance that support incident investigations.
 
-Explore Microsoft 365 Defender's investigation capabilities with the following investigation walkthrough:
-
-> [!VIDEO https://youtu.be/PW_4PWul5MY]
+This video of [how to investigate an attack in Microsoft 365 Defender](https://youtu.be/PW_4PWul5MY) and how to use the portal's features in your investigation walks you through the attack story and the incident page.
 
 ## Investigating threats
 
@@ -78,13 +76,8 @@ Ransomware continues to be a significant threat to organizations. Microsoft has 
 
 - **Guides**: [From detection to protection: Microsoft's guide to combating ransomware attacks](/security/ransowmare)
 - **Tutorial**: [Ransomware investigation playbook](/security/operations/incident-response-playbook-dart-ransomware-approach)
-- **Video**: Investigating ransomware attacks in Microsoft 365 Defender (part 1)
-
-> [!VIDEO https://youtu.be/eLCrGe4-Zzc]
-
-- **Video**: Investigating ransomware attacks in Microsoft 365 Defender (part 2)
-
-> [!VIDEO https://youtu.be/q1s7lm3O9Sc]
+- **Video**: [Investigating ransomware attacks in Microsoft 365 Defender (part 1)](https://youtu.be/eLCrGe4-Zzc)
+- **Video**: [Investigating ransomware attacks in Microsoft 365 Defender (part 2)](https://youtu.be/q1s7lm3O9Sc)
 
 ### Email-based attacks analysis
 
@@ -100,19 +93,14 @@ Identity compromise can also be investigated using Defender for Identity signals
 
 The following videos discuss how to investigate phishing and BEC attacks in Microsoft 365 Defender:
 
-- **Video**: Investigating BEC and AiTM phishing in Microsoft 365 Defender
-
-> [!VIDEO https://youtu.be/h9YEr9XwALU]
-
+- **Video**: [Investigating BEC and AiTM phishing in Microsoft 365 Defender](https://youtu.be/h9YEr9XwALU)
 - **Video**: Defending against spearphishing and phishing using Defender for Office 365
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5bzVE]
 
-The following video discusses an identity compromise and what incident responders can do to contain an attack:
+Investigate an identity compromise and know what you can do to contain an attack through this video:
 
-- Investigating identity threats using Defender for Identity
-
-> [!VIDEO https://youtu.be/RSVmgcQLv38?t=533]
+- [Investigating identity threats using Defender for Identity](https://youtu.be/RSVmgcQLv38?t=533)
 
 ### Malware analysis
 
@@ -121,9 +109,7 @@ A malicious file's information and capabilities are key to investigating malware
 The following resources provide details on how to use the portal’s capabilities in investigating files:
 
 - **Tutorial**: [Investigate files](/microsoft-365/security/defender-endpoint/investigate-files)
-- **Video**: Investigating malware in Microsoft 365 Defender
-
-> [!VIDEO https://youtu.be/TTqFlnlwch0]
+- **Video**: [Investigating malware in Microsoft 365 Defender](https://youtu.be/TTqFlnlwch0)
 
 ### Risky apps analysis and cloud-based threats prevention
 
@@ -134,7 +120,7 @@ Malicious actors can exploit cloud-based apps. Apps can inadvertently leak sensi
 - **Tutorial**: [Protect cloud apps](/defender-cloud-apps/tutorial-ueba#phase-1-connect-to-the-apps-you-want-to-protect)
 - **Tutorial**: Protect apps in real time
 
-To protect your cloud apps in real time, you can use the following resource:
+Discover how you can protect your cloud apps in real time with this video of the Defender for Cloud Apps workload:
 
 - **Video**: Protecting cloud apps and related files through Defender for Cloud Apps
 
@@ -168,11 +154,15 @@ Breaches also happen through various devices like phones and tablets that connec
 
 ## Resources for threat intelligence and hunting
 
-Most incident response teams are tasked to track the threat landscape to keep attacks that can potentially incur damage to the organization at bay. You have direct access to the latest information on emerging threats and attacks through the portal's [Threat analytics](threat-analytics.md).
+Microsoft 365 Defender's built-in threat intelligence capabilities and hunting aid incident response teams in performing proactive protection against emerging threats and attacks. You have direct access to the latest information on emerging threats and attacks through the portal's [Threat analytics](threat-analytics.md).
 
 :::image type="content" source="../../media/first-incident/m365d-threat-analytics.png" alt-text="Threat analytics home page" lightbox="../../media/first-incident/m365d-threat-analytics.png":::
 
-To proactively hunt for threats, use the portal's [advanced hunting](advanced-hunting-overview.md) capability.
+Use the intelligence in Threat analytics to deep dive into new threats with the following video:
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWwJfU]
+
+Proactively hunt for threats within the organization using the portal's built-in [advanced hunting](advanced-hunting-overview.md) capability.
 
 :::image type="content" source="../../media/first-incident/m365d-advancedhunting.png" alt-text="Advanced hunting page in Microsoft 365 Defender" lightbox="../../media/first-incident/m365d-advancedhunting.png":::
 
