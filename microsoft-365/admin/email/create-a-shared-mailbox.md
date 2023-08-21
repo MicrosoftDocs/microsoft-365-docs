@@ -23,6 +23,11 @@ ms.custom:
 - AdminTemplateSet
 - admindeeplinkEXCHANGE
 - business_assist
+search.appverid:
+- BCS160
+- MET150
+- MOE150
+ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: "Create a shared mailbox to enable multiple users in your business to share the responsibility of reading and answering email sent to one address."
 ---
 
