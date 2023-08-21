@@ -111,7 +111,7 @@ The following table lists commands for some of the most common scenarios. Run `m
 |Configuration|Turn on/off behavior monitoring|`mdatp config behavior-monitoring --value [enabled\|disabled]`
 |Configuration|Turn on/off cloud protection|`mdatp config cloud --value [enabled\|disabled]`|
 |Configuration|Turn on/off product diagnostics|`mdatp config cloud-diagnostic --value [enabled\|disabled]`|
-|Configuration|Turn on/off automatic sample submission|`mdatp config cloud-automatic-sample-submission [enabled\|disabled]`|
+|Configuration|Turn on/off automatic sample submission|`mdatp config cloud-automatic-sample-submission --value [enabled\|disabled]`|
 |Configuration|Turn on/off AV passive mode|`mdatp config passive-mode --value [enabled\|disabled]`|
 |Configuration|Add/remove an antivirus exclusion for a file extension|`mdatp exclusion extension [add\|remove] --name [extension]`|
 |Configuration|Add/remove an antivirus exclusion for a file|`mdatp exclusion file [add\|remove] --path [path-to-file]`|
