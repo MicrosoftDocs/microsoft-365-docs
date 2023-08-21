@@ -15,8 +15,9 @@ ms.localizationpriority: medium
 search.appverid:
   - MET150
 description: Learn how to recognize and remediate the illicit consent grants attack in Microsoft 365.
-ms.custom: 
-- seo-marvel-apr2020
+ms.custom:
+  - seo-marvel-apr2020
+  - has-azure-ad-ps-ref
 ms.subservice: mdo
 ms.service: microsoft-365-security
 appliesto:
