@@ -45,11 +45,11 @@ This article only applies to canceling **Dynamics 365**, **Intune**, **Power Pla
 
 ## What's the easiest way to cancel?
 
-The easiest way to cancel your subscription is to [turn off recurring billing](renew-your-subscription.md#turn-recurring-billing-off-or-on). When you turn off recurring billing, you can continue to use your subscription until it expires at the end of the subscription term. If you want to cancel immediately, use the information and steps in this article to do that.
+The easiest way to cancel your subscription is to [turn off recurring billing](renew-your-subscription.md). When you turn off recurring billing, you can continue to use your subscription until it expires at the end of the subscription term. If you want to cancel immediately, use the information and steps in this article to do that.
 
 ## How do I cancel my free trial?
 
-You can cancel your free trial at any time to stop future charges. To cancel a free trial, [turn off recurring billing](renew-your-subscription.md#turn-recurring-billing-off-or-on). If you don't turn off recurring billing, after your one month free trial ends, you're charged the applicable subscription fee. If your trial subscription doesn't have a payment method associated with it, you can just let it expire at the end of the trial period, and you won't be charged.
+You can cancel your free trial at any time to stop future charges. To cancel a free trial, [turn off recurring billing](renew-your-subscription.md). If you don't turn off recurring billing, after your one month free trial ends, you're charged the applicable subscription fee. If your trial subscription doesn't have a payment method associated with it, you can just let it expire at the end of the trial period, and you won't be charged.
 
 ## What if I bought my subscription through a partner?
 
