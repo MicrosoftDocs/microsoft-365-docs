@@ -7,6 +7,8 @@ ms.reviewer:
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
+ms.custom:
+  - has-azure-ad-ps-ref
 search.appverid:
   - MET150
 ms.assetid:
