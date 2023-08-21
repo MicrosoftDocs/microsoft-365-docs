@@ -10,7 +10,9 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 f1.keywords:
 - NOCSH
-ms.custom: seo-marvel-apr2020 
+ms.custom:
+  - seo-marvel-apr2020
+  - has-azure-ad-ps-ref
 ms.collection: 
 - Strat_SP_gtc
 - SPO_Content

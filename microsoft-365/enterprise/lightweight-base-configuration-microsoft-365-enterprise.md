@@ -15,9 +15,10 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom:
-- Ent_TLGs
-- seo-marvel-apr2020
-- admindeeplinkMAC
+  - Ent_TLGs
+  - seo-marvel-apr2020
+  - admindeeplinkMAC
+  - has-azure-ad-ps-ref
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: Use this Test Lab Guide to create a lightweight test environment for testing Microsoft 365 for enterprise.
 ---

@@ -17,7 +17,8 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
-- AdminSurgePortfolio
+  - AdminSurgePortfolio
+  - has-azure-ad-ps-ref
 search.appverid:
 - MET150
 description: "For devices you can't manage with Basic Mobility and Security, block Exchange ActiveSync app access to email and use Azure AD PowerShell to get details about org devices."
