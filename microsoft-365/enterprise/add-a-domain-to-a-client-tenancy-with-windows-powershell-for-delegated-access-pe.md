@@ -16,9 +16,10 @@ ms.collection:
 - M365-subscription-management
 f1.keywords:
 - NOCSH
-ms.custom: 
-- seo-marvel-apr2020
-- admindeeplinkMAC
+ms.custom:
+  - seo-marvel-apr2020
+  - admindeeplinkMAC
+  - has-azure-ad-ps-ref
 ms.assetid: f49b4d24-9aa0-48a6-95dd-6bae9cf53d2c
 description: "Summary: Use PowerShell for Microsoft 365 to add an alternate domain name to an existing customer tenant."
 ---
