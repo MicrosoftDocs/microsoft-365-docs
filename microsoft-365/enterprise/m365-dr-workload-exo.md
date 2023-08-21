@@ -11,7 +11,8 @@ f1.keywords:
 ms.date: 09/20/2022
 ms.reviewer: dmwmsft
 ms.custom:
-- it-pro
+  - it-pro
+  - has-azure-ad-ps-ref
 ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
