@@ -18,7 +18,7 @@ ms.collection:
 - tier1
 ms.topic: conceptual
 ms.subservice: mde
-ms.date: 04/04/2023
+ms.date: 08/18/2023
 ---
 
 # Configure device proxy and Internet connectivity settings
@@ -148,6 +148,8 @@ Configure the static proxy using the Group Policy available in Administrative Te
 >  - Microsoft Defender for Endpoint (MDE)
 >  - AV (Antivirus)
 >  - Endpoint Detection and Response (EDR)
+>
+>  - Network protection and Microsoft Defender SmartScreen features will not work in this configuration. These features require a system-wide proxy configuration.
 
 ## Configure the proxy server manually using netsh command
 
