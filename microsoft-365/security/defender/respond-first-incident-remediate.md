@@ -24,7 +24,7 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.date: 08/18/2023
+ms.date: 08/21/2023
 ---
 
 # Remediate your first incident in Microsoft 365 Defender
