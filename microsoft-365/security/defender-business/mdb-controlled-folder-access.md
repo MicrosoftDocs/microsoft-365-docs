@@ -4,7 +4,7 @@ description: Get an overview of attack surface reduction capabilities in Microso
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-ms.date: 05/04/2023
+ms.date: 08/21/2023
 ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: mdb
@@ -24,7 +24,7 @@ Controlled folder access allows only trusted apps to access protected folders on
 
 ## Set up controlled folder access
 
-1. As a global administrator, in the Microsoft Intune admin center ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)), go to **Endpoint security** > **Attack surface reduction**.
+1. As a global administrator, in the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Endpoint security** > **Attack surface reduction**.
 
 2. Select an existing policy, or choose **Create policy** to create a new policy.
 
