@@ -29,8 +29,6 @@ You can ingest your Microsoft Defender for Office 365 data (*and* data from the 
 
 Take advantage of rich security information events management (SIEM) combined with data from other Microsoft 365 sources, synchronization of incidents and alerts, and advanced hunting.
 
-[!INCLUDE [reference-to-feature-availability](includes/reference-to-feature-availability.md)]
-
 ## What you will need
 
 - Microsoft Defender for Office 365 Plan 2 or higher. (Included in E5 plans)
