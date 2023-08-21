@@ -63,4 +63,4 @@ Consider using secure presets [Ensuring you always have the optimal security con
 
 You can also manage email authentication issues with spoof intelligence [Spoof intelligence insight](/microsoft-365/security/office-365-security/anti-spoofing-spoof-intelligence)
 
-Learn more about email authentication [Email Authentication in Exchange Online Protection](/microsoft-365/security/office-365-security/email-authentication-abou)
+Learn more about email authentication [Email Authentication in Exchange Online Protection](../../email-authentication-about.md)
