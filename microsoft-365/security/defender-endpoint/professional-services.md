@@ -6,8 +6,8 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-aljupudi
-author: alekyaj
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -17,7 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 09/28/2022
+ms.date: 08/18/2023
 ---
 
 # Professional services supported by Microsoft 365 Defender
@@ -36,7 +36,7 @@ ms.date: 09/28/2022
 > [!NOTE]
 > **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview).
 
-The following professional services can be integrated with Microsoft Defenders' products:
+The following professional services can be integrated with the Microsoft Defenders products:
 
 ## Manage
 
@@ -81,7 +81,7 @@ Respond to security incidents quickly, effectively and at scale with complete in
 
 |Service name|Vendor|Description|
 |---|---|---|
-|[Microsoft Detection and Response Team (DART)](https://go.microsoft.com/fwlink/?linkid=2203105)|Microsoft|The Cybersecurity Incident Response service is an effective way to respond to incidents due to the activities of today's adversaries and sophisticated criminal organizations. This service seeks to determine whether systems are under targeted exploitation via investigation for signs of advanced implants and anomalous behavior.|
+|[Microsoft Incident Response](https://go.microsoft.com/fwlink/?linkid=2203105)|Microsoft|The Cybersecurity Incident Response service is an effective way to respond to incidents due to the activities of today's adversaries and sophisticated criminal organizations. This service seeks to determine whether systems are under targeted exploitation via investigation for signs of advanced implants and anomalous behavior.|
 |[Managed Microsoft XDR](https://go.microsoft.com/fwlink/?linkid=2202846)|Quorum Cyber|Quorum Cyber's Managed Microsoft XDR, a solution designed to enable customers to unleash the power of Microsoft security to reduce cyber risk and maximize return of investment in security.|
 |[Trustwave MDR](https://go.microsoft.com/fwlink/?linkid=2202849)|Trustwave|Trustwave offers a security service (Gartner Leader) for endpoint using Microsoft Defender for Endpoint.|
 |[Active Remediation](https://go.microsoft.com/fwlink/?linkid=)|Red Canary|Red Canary security experts respond to remediate threats on your endpoints, 24x7. Requires Red Canary MDR for Microsoft.|
