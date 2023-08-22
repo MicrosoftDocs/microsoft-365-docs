@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 02/18/2020
+ms.date: 08/21/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -26,10 +26,6 @@ ms.custom:
 - AdminTemplateSet
 - m365solution-removeemployee
 - business_assist
-search.appverid:
-- BCS160
-- MET150
-- MOE150
 description: "Block access to Microsoft 365 so a former employee can't sign in, secure organization data, and allow other employees to access their email and OneDrive data."
 ---
 
@@ -52,7 +48,6 @@ To complete the steps in this series, you use these Microsoft 365 capabilities a
 |OneDrive and SharePoint |Give access to other users |
 |Outlook|Import pst files, add mailbox |
 |Active Directory|Remove users in hybrid environments |
-
 
 ## Solution: Remove a former employee
 
@@ -81,7 +76,7 @@ Check out this video and others on our [YouTube channel](https://go.microsoft.co
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR?autoplay=false]
 
-When an employee leaves the company, you'll need to remove them from Microsoft 365 for business. Before doing so, you should block them from accessing company files, preserve the documents they created, and perform several other admin tasks associated with removing a user.
+When an employee leaves the company, you'll need to remove them from your Microsoft 365 organization. Before doing so, you should block them from accessing company files, preserve the documents they created, and perform several other admin tasks associated with removing a user.
 
 1. From the admin center, select **Users**, and choose **Active users**.
 1. Select the user you want to remove, and then select **Delete user**.
@@ -93,7 +88,7 @@ When an employee leaves the company, you'll need to remove them from Microsoft 3
 1. Review your results, and select **Close**.
 
 After you remove a user, you have up to 30 days to restore their account.
- 
+
 ## Does your organization use Active Directory?
 
 If your organization synchronizes user accounts to Microsoft 365 from a local Active Directory environment, you must delete and restore those user accounts in your local Active Directory service. You can't delete or restore them in Microsoft 365.
