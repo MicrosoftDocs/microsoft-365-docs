@@ -49,6 +49,9 @@ The only exception is where the MX record for the recipient domain doesn't direc
 
 But if the contoso.com domain's MX record points to a *different email security solution* that sits in front of Office 365, then *no DMARC aggregate reports are sent to any sender domain's rua address* (configured in their DMARC record). This is because information about the sending infrastructure is likely affected by the complex mail flow routing.
 
+> [!NOTE]
+> Microsoft currently has no plans to send forensic reports (ruf).
+
 ## What DMARC Reports do for you
 
 It's recommended that admins set up and regularly review DMARC Reporting in their domain.
