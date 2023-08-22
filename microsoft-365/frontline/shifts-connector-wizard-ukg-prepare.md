@@ -24,14 +24,77 @@ ms.date: 3/23/2023
 
 ## Overview
 
-The Shifts connector wizard in the Microsoft 365 admin center enables you to integrate the Shifts app in Microsoft Teams with your workforce management (WFM) system. Your frontline workers can seamlessly view and manage their schedules in your WFM system from within Shifts.
+The [Microsoft Teams Shifts connector for UKG Dimensions](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-dimensions) (Preview) enables you to integrate the Shifts app in Microsoft Teams with UKG Dimensions. Your frontline workers can seamlessly view and manage their schedules in UKG Dimensions from within Shifts.
+
+You can use the [Shifts connector wizard](shifts-connector-wizard-ukg.md) (Preview) in the Microsoft 365 admin center or [PowerShell](shifts-connector-ukg-powershell-setup.md) to create a connection and connection instances. After they're set up, you can manage them in the Microsoft 365 admin center or by using PowerShell.
+
+## Before you begin
+
+## Prerequisites
+
+## Configure single sign-on (SSO)
+
+[!INCLUDE [shifts-connector-ukg-sso](includes/shifts-connector-ukg-sso.md)]
+
+<a name="remove_schedules"> </a>
+
+## Remove schedule entities from teams you want to map
+
+Complete this step if you're mapping UKG Dimensions instances to existing teams that have schedule entities. If you're mapping to teams that don't have any schedules or if you've already created new teams to map to, you can skip this step.
+
+Use PowerShell to remove schedule entities from teams.
+
+1. [Install the PowerShell modules and set up your PowerShell environment](shifts-connector-ukg-powershell-manage.md#set-up-your-environment) (if you haven't already).
+
+1. Run the following command:
+
+    ```powershell
+    Remove-CsTeamsShiftsScheduleRecord -TeamId <Teams team ID> -DateRangeStartDate <start time> -DateRangeEndDate <end time> -ClearSchedulingGroup:$false -EntityType <the scenario entities that you want to remove, the format is @(scenario1, scenario2, ...)> -DesignatedActorId <Teams team owner ID>
+    ```
+
+    To get a list of scenarios for the `EntityType` parameter, run [Get-CsTeamsShiftsConnectionConnector](/powershell/module/teams/get-csteamsshiftsconnectionconnector). Schedule data will be removed for the date and time range that you specify.
+
+To learn more, see [Remove-CsTeamsShiftsScheduleRecord](/powershell/module/teams/remove-csteamsshiftsschedulerecord).
+
+## Understand roles and permissions in Teams and their impact on Shifts
+
+## Example
+
+Contoso has hundres of retail stores spread across the United Kingdom. Each shop is located in an area in the United Kingdom. To simplify this example, we focus on three shops in the Central London area, to which they want to start rolling out Teams and Shifts for their frontline employees.
+
+Assumptions:
+
+- Each shop is managed by a different manager.
+- Frontline workers can't take on shifts from shops located outside their area. In other words, business rules set up in UKG Dimensions don't allow employees to work outside their primary job location.
+
+The UKG Dimensions structure for Contoso looks something like this. 
+
+|Level |UKG Dimensions location |Nodes |
+|---------|---------|---------|
+|0|         |         |
+| 1|         |         |
+|  2|         |         |
+|   3|         |         |
+|    4|         |         |
+|    4|         |         |
+|    4|         |         |
+|    4|         |         |
+|   3|         |         |
+|    4|         |         |
+|    4|         |         |
+|   3|         |         |
+|    4|         |         |
+|    4|         |         |
+|    4|         |         |
+
+
+<!--The Shifts connector wizard in the Microsoft 365 admin center enables you to integrate the Shifts app in Microsoft Teams with your workforce management (WFM) system. Your frontline workers can seamlessly view and manage their schedules in your WFM system from within Shifts.
 
 The wizard creates a connection to your UKG Dimensions system and a connection instance. This applies the sync settings and team mappings you choose. Sync settings determine the schedule information and what entities sync between UKG Dimensions and Shifts. Team mappings define the sync relationship between your UKG instances and teams in Microsoft Teams.
 
 You can create one or more connection instances, each with different sync settings. For example, if your organization has multiple locations with different schedule requirements, create a connection instance with unique sync settings for each location. A UKG instance should only be mapped once to a Microsoft team at any given time. However, it's possible in the wizard to have different connection instances with the same mappings. This means that you can create connection instances with duplicated mappings.
 
 With UKG Dimensions, your frontline workers can efficiently manage their schedules and availability in Shifts on their devices. Frontline managers can continue to use UKG to set up schedules.
-
 ### Terms used in this article
 
 |Term |Definition |
@@ -288,7 +351,7 @@ To learn more, see [Use the Microsoft 365 admin center to manage your Shifts con
 
 ### Use PowerShell
 
-You can use PowerShell to view an error report, change connection settings, disable sync, and more. For step-by-step guidance, see [Use PowerShell to manage your Shifts connection to UKG Dimensions](shifts-connector-ukg-powershell-manage.md).
+You can use PowerShell to view an error report, change connection settings, disable sync, and more. For step-by-step guidance, see [Use PowerShell to manage your Shifts connection to UKG Dimensions](shifts-connector-ukg-powershell-manage.md).-->
 
 ## Related articles
 

@@ -82,13 +82,13 @@ Before you try the Shifts connector wizard, check that you meet all these prereq
 <a name="remove_schedules"> </a>
 ## Remove schedule entities from teams you want to map
 
-Complete this step if you're mapping UKG Dimensions instances to existing teams with schedule entities. If you're mapping to teams that don't have any schedules or if you've already created new teams to map to, you can skip this step.
+Complete this step if you're mapping UKG Dimensions instances to existing teams that have schedule entities. If you're mapping to teams that don't have any schedules or if you've already created new teams to map to, you can skip this step.
 
 Use PowerShell to remove schedule entities from teams.
 
-1. If you don’t have PowerShell installed already, install the PowerShell modules and [set up your PowerShell environment](shifts-connector-ukg-powershell-manage.md#set-up-your-environment)
+1. [Install the PowerShell modules and set up your PowerShell environment](shifts-connector-ukg-powershell-manage.md#set-up-your-environment), if you haven't already.
 
-1. Run this command in PowerShell:
+1. Run the following command:
 
     ```powershell
     Remove-CsTeamsShiftsScheduleRecord -TeamId <Teams team ID> -DateRangeStartDate <start time> -DateRangeEndDate <end time> -ClearSchedulingGroup:$false -EntityType <the scenario entities that you want to remove, the format is @(scenario1, scenario2, ...)> -DesignatedActorId <Teams team owner ID>
