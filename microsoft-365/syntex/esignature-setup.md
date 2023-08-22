@@ -42,7 +42,8 @@ You must have Global admin or SharePoint admin permissions to be able to access 
 
 3. On the **Manage Microsoft Syntex** page, select **Syntex eSignature**.
 
-4. By default, the Syntex eSignature service is turned on.
+4. By default, the Syntex eSignature service is turned on. On the **Syntex eSignature** page:
+
    - To turn off the service, see [Turn off Syntex eSignature](#turn-off-syntex-esignature).
    - To manage which sites on which the service is available, see [Manage sites](#manage-sites).
 
