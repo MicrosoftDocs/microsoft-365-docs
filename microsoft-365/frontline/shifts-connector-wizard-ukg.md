@@ -100,7 +100,7 @@ To learn more, see [Remove-CsTeamsShiftsScheduleRecord](/powershell/module/teams
 
 ## Run the Shifts connector wizard
 
-After you’ve followed all the steps above and made sure you meet the prerequisites, now you’re ready to run the wizard and connect your UKG Dimensions system to Shifts in Microsoft Teams. 
+After you’ve followed all the previous steps and made sure you meet the prerequisites, now you’re ready to run the wizard and connect your UKG Dimensions system to Shifts in Teams.
 
 ### Create a connection
 
@@ -205,7 +205,7 @@ Choose the UKG Dimensions instances that you want to connect to Shifts, and then
 
     Keep in mind that teams that are already mapped to a WFM instance in this connection instance won't be available to map again.
 
-1. Choose the time zone. The closest city will be automatically filled in, but you can change it.
+1. Choose the time zone. The closest city is automatically filled in, but you can change it.
 
 1. When you've mapped all your teams, select **Next**.
 
@@ -213,27 +213,27 @@ Choose the UKG Dimensions instances that you want to connect to Shifts, and then
 
 1. On the **Mapping** page, choose **CSV upload tool**.
 
-2. Select **Download template** to get the CSV mapping file. The template will include a list of all your UKG Dimensions instances and their IDs. The top rows of your template will look like this:
+2. Select **Download template** to get the CSV mapping file. The template includes a list of all your UKG Dimensions instances and their IDs. The top rows of your template will look like this:
 
    |UKG Dimensions Instance ID |UKG Dimensions Instance Name |Team ID |Team Name |Time Zone |
    |------|------|------|------|------|
-   |Automatically pre-filled |Automatically pre-filled |Blank |Blank |Default*|
+   |Automatically prefilled |Automatically prefilled |Blank |Blank |Default*|
 
    And the bottom rows of your template will look like this:
 
    |UKG Dimensions Instance ID |UKG Dimensions Instance Name |Team ID |Team Name |Time Zone |
    |------|------|------|------|------|
-   |Blank |Blank |Automatically pre-filled |Automatically pre-filled |Default*|
+   |Blank |Blank |Automatically prefilled |Automatically prefilled |Default*|
 
-3. Choose a team that you want to map to a UKG Dimensions instance. Cut and paste the Team ID and Team Name from the bottom half of your template to be in line with the desired UKG Dimensions instance. A completed row of your template should look like this:
+3. Choose a team that you want to map to a UKG Dimensions instance. Cut and paste the Team ID and Team Name from the bottom half of your template to be in line with the UKG Dimensions instance that you want. A completed row of your template should look like this:
 
    |UKG Dimensions Instance ID |UKG Dimensions Instance Name |Team ID |Team Name |Time Zone |
    |------|------|------|------|------|
-   |Automatically pre-filled |Automatically pre-filled |Team ID that you moved |Team Name that you moved |Default*|
+   |Automatically prefilled |Automatically prefilled |Team ID that you moved |Team Name that you moved |Default*|
 
-Repeat this for all your desired mappings.
+Repeat this for all your mappings.
 
-4. Enter the correct location in the Time Zone column if needed. 
+4. Enter the correct location in the Time Zone column if needed.
 
 >[!NOTE]
 >The wizard supports approximately 460 locations. The Time Zone needs to be according to the tz format. If the specific location you chose isn't supported, you'll be shown an error in the wizard. Try using the closest city or major city within the same time zone.
@@ -242,9 +242,7 @@ Repeat this for all your desired mappings.
 
 6. Choose **Done** if your file has uploaded correctly. Otherwise, review the provided error report and upload a corrected file.
 
-7. Your new mappings will appear on the **Mappings** page.
-
-8. Choose **Next**.
+7. Your new mappings are listed on the **Mappings** page. Choose **Next**.
 
 ### Review and finish
 
