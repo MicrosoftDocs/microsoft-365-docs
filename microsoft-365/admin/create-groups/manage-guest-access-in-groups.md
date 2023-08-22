@@ -16,10 +16,11 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
-ms.custom: 
-- AdminSurgePortfolio
-- AdminTemplateSet
-- admindeeplinkMAC
+ms.custom:
+  - AdminSurgePortfolio
+  - AdminTemplateSet
+  - admindeeplinkMAC
+  - has-azure-ad-ps-ref
 search.appverid:
 - MET150
 - MOE150
