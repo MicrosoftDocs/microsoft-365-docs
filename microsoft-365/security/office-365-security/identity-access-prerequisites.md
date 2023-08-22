@@ -80,7 +80,7 @@ The following email clients support modern authentication and Conditional Access
 
 |Platform|Client|Version/Notes|
 |---|---|---|
-|**Windows**|Outlook|2019, 2016, 2013 <p> [Enable modern authentication](../../admin/security-and-compliance/enable-modern-authentication.md) <p> [Required updates](https://support.office.com/article/Outlook-Updates-472c2322-23a4-4014-8f02-bbc09ad62213)|
+|**Windows**|Outlook|2019, 2016<p>[Required updates](https://support.office.com/article/Outlook-Updates-472c2322-23a4-4014-8f02-bbc09ad62213)|
 |**iOS**|Outlook for iOS|[Latest](https://itunes.apple.com/us/app/microsoft-outlook-email-and-calendar/id951937596?mt=8)|
 |**Android**|Outlook for Android|[Latest](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en)|
 |**macOS**|Outlook|2019 and 2016|
