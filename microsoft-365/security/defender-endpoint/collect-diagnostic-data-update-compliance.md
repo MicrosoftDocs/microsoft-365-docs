@@ -25,7 +25,7 @@ search.appverid: met150
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-This article describes how to collect diagnostic data that's used by Microsoft support and engineering teams to help troubleshoot issues you might encounter when using the Microsoft Defender Antivirus Assessment section in the Update Compliance add-in.
+This article describes how to collect diagnostic data that's used by Microsoft support and engineering teams when they help with troubleshooting issues with Microsoft Defender Antivirus.
 
 > [!NOTE]
 > For performance-specific issues related to Microsoft Defender Antivirus, see: [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).
