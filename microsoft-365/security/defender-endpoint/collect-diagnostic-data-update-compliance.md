@@ -7,7 +7,7 @@ author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.date: 08/22/2023
-ms.reviewer:
+ms.reviewer: pahuijbr
 manager: dansimp
 ms.subservice: mde
 ms.topic: conceptual
