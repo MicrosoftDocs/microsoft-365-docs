@@ -1995,6 +1995,11 @@
          "source_path":"microsoft-365/admin/security-and-compliance/secure-your-business-data.md",
          "redirect_url":"/microsoft-365/business-premium/secure-your-business-data",
          "redirect_document_id":false
-      }
+      },
+      {
+         "source_path": "microsoft-365/admin/security-and-compliance/enable-modern-authentication.md",
+         "redirect_url": "/microsoft-365/admin",
+         "redirect_document_id":false
+       }
    ]
 }
