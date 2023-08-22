@@ -13,10 +13,11 @@ ms.collection:
 - Ent_O365
 f1.keywords:
 - CSH
-ms.custom: 
-- LIL_Placement
-- O365ITProTrain
-- Ent_Office_Other
+ms.custom:
+  - LIL_Placement
+  - O365ITProTrain
+  - Ent_Office_Other
+  - has-azure-ad-ps-ref
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: "Connect to your Microsoft 365 tenant by using PowerShell for Microsoft 365 to do admin center tasks from the command line."
 ---

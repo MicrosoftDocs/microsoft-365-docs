@@ -13,12 +13,13 @@ ms.collection:
 - Ent_O365
 f1.keywords:
 - CSH
-ms.custom: 
-- Ent_Office_Other
-- LIL_Placement
-- PowerShell
-- O365ITProTrain
-- seo-marvel-apr2020
+ms.custom:
+  - Ent_Office_Other
+  - LIL_Placement
+  - PowerShell
+  - O365ITProTrain
+  - seo-marvel-apr2020
+  - has-azure-ad-ps-ref
 ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
