@@ -35,11 +35,11 @@ The Microsoft 365 Defender portal ([https://security.microsoft.com](https://secu
 
 ## The Microsoft 365 Defender portal
 
-The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) is where you'll view alerts, manage devices, and view reports. When you sign into the Microsoft 365 Defender portal, you'll start with the Home page, as shown in the following image:
+The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) is where you view alerts, manage devices, and view reports. When you sign into the Microsoft 365 Defender portal, you start with the Home page, as shown in the following image:
 
 :::image type="content" source="../../media/mde-p1/m365-defender-portal.png" alt-text="The portal of Microsoft 365 Defender" lightbox="../../media/mde-p1/m365-defender-portal.png":::
 
-The Home page provides your security team with a snapshot aggregate view of alerts, device status, and threats detected. The Defender for Cloud is set up so that your security operations team can find the information they are looking for quickly and easily.
+The Home page provides your security team with a snapshot aggregate view of alerts, device status, and threats detected. The Defender for Cloud is set up so that your security operations team can find the information they're looking for quickly and easily.
 
 > [!NOTE]
 > Our examples shown in this article might differ from what you see in your Microsoft 365 Defender portal. What you see in your portal depends on your licenses and permissions. In addition, your security team can customize your organization's portal by adding, removing, and rearranging cards.
@@ -70,7 +70,7 @@ The navigation bar on the left side of the screen enables you to move easily bet
 | **Endpoints** > **Search** | Navigates to a page where you can search for specific devices by device name. In the list of results, you can see details, such as risk level and health state, at a glance. |
 |  **Endpoints** > **Device inventory** | Navigates to your list of devices that are onboarded to Defender for Endpoint. Provides information about devices, such as their exposure and risk levels. <br/><br/> To learn more, see [Device inventory](machines-view-overview.md). |
 |  **Endpoints** > **Configuration & baselines** | Expands to show **Security baselines** and **Configuration management**. |
-|  **Endpoints** > **Configuration & baselines** > **Security baselines** | Security baselines are pre-configured policies and groups of settings that can help you apply recommended security settings efficiently and effectively. Baselines include settings that are based on industry best practices. You can keep the default settings, or customize your baselines to suit your organization's needs. <br/><br/> To learn more, see [Use security baselines to configure Windows 10 devices in Intune](/mem/intune/protect/security-baselines). |
+|  **Endpoints** > **Configuration & baselines** > **Security baselines** | Security baselines are preconfigured policies and groups of settings that can help you apply recommended security settings efficiently and effectively. Baselines include settings that are based on industry best practices. You can keep the default settings, or customize your baselines to suit your organization's needs. <br/><br/> To learn more, see [Use security baselines to configure Windows 10 devices in Intune](/mem/intune/protect/security-baselines). |
 |  **Endpoints** > **Configuration & baselines** > **Configuration management** | Navigates to the **Device configuration management** page, where you can view information about onboarded devices, and take steps to onboard more devices. |
 | **Reports** | Navigates to your reports, such as your [Threat protection report](threat-protection-reports.md), [Device health and compliance report](device-health-reports.md) and your [Web protection report](web-protection-overview.md). |
 | **Health** | Includes links to the **Service health** and **Message center**.  |
@@ -100,7 +100,7 @@ Use the **Alerts**, **Devices**, and **Users** tabs to view more information, su
 
 ## Manage devices
 
-To view and manage your organization's devices, in the navigation bar, under **Endpoints**, select **Device inventory**. You'll see a list of devices as shown in the following image:
+To view and manage your organization's devices, in the navigation bar, under **Endpoints**, select **Device inventory**. You see a list of devices as shown in the following image:
 
 :::image type="content" source="../../media/mde-p1/device-inventory.png" alt-text="Device inventory" lightbox="../../media/mde-p1/device-inventory.png":::
 
@@ -123,7 +123,7 @@ In Defender for Endpoint Plan 1, several reports are available in the Microsoft 
 
 2. In the navigation bar, choose **Reports**.
 
-3. Select a report in the list. You'll see the following three reports:
+3. Select a report in the list. You see the following three reports:
 
    - Threat protection report
    - Device health report
