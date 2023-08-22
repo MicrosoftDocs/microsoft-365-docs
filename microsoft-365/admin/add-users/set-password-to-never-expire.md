@@ -18,10 +18,11 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
-- VSBFY23
-- MSStore_Link
-- AdminSurgePortfolio
-- AdminTemplateSet
+  - VSBFY23
+  - MSStore_Link
+  - AdminSurgePortfolio
+  - AdminTemplateSet
+  - has-azure-ad-ps-ref
 search.appverid:
 description: "Sign in to your Microsoft 365 admin account to set some individual user passwords to never expire by using Azure AD PowerShell."
 ---
