@@ -333,7 +333,13 @@ Test-MigrationServerAvailability -EndPoint "[the name of your migration endpoint
 
 ### Move mailboxes back to the original source
 
-If a mailbox is required to move back to the original source tenant, the same set of steps and scripts will need to be run in both new source and new target tenants. The existing Organization Relationship object will be updated or appended, not recreated. Migration can't happen both ways simultaneously.
+If a mailbox is required to move back to the original source tenant, the same set of steps and scripts will need to be run in both new source and new target tenants, with some variance.
+
+   1. Do not run the sample scripts provided to create the OrganizationRelationship.
+      a. Update the following values in the existing OrganizationRelationship created in each tenant.
+         1. MailboxMovesCapability should have Inbound, RemoteOutbound as the capabilities in both source and target tenants.
+         2. In the new source tenant, you will need to update the OAuthApplicationId value with the value from the newly created application in the new source tenant.
+         3. In the new new source tenant, you will need to update the MailboxMovePublishedScopes value with the newly created security group in the new source tenant.
 
 ### Perform mailbox migrations
 
@@ -546,6 +552,7 @@ x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn
 
 > [!NOTE]
 > In addition to this X500 proxy, you will need to copy all X500 proxies from the mailbox in the source to the mailbox in the target.
+> While rare you may also run across an X400 proxy address on a mailbox, while not a requirement for the move to complete, it is recommended that you also stamp this address on the target mail user object.
 
 ### Can the source and target tenants utilize the same domain name?
 
@@ -605,6 +612,19 @@ Yes. It's possible to have two instances of Azure AD Connect synchronize to diff
 ### Do auto-expanded archive mailboxes move?
 
 - **Issue: Auto Expanded archives cannot be migrated.** Yes, if the user in source has auto-expanding archives enabled and has additional auxiliary archives, cross-tenant mailbox migration will work. We support moving users that have no more than 12 auxiliary archive mailboxes. Additionally, users with large primary, large main archive, and large auxiliary archive mailboxes will require extra time to synchronize and should be submitted well in advance of the cutover date. Also note that if the source mailbox is expanded during the mailbox migration process, the migration will fail as a new auxiliary archive will be created in the source, but not in the target. In this case, you'll need to remove the user from the batch and resubmit them.
+
+### Can I perform a cross cloud tenant to tenant migration?
+
+Cross cloud tenant to tenant migration is not supported. An example scenario would be moving from Office 365 Worldwide to Office 365 Government Cloud.
+
+### Are voicemails migrated cross tenant?
+
+Yes, voicemails are migrated cross tenant.
+
+   1. Received voicemails in email as attachments are available in the target mailbox.
+   2. Received voicemails are available in Teams if you call voicemail and listen to saved messages. (VMs received in source are available as saved messages) 
+   3. Received voicemails are not available in Teams client UI in target post migration.
+   4. The voicemail greeting is also migrated to the target.
 
 ## Known issues
 
