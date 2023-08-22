@@ -44,7 +44,7 @@ On at least two devices that aren't reporting or showing up in Update Compliance
 
     c. Specify administrator credentials or approve the prompt.
 
-2. Navigate to the Windows Defender directory. By default, this is `C:\Program Files\Windows Defender`.
+2. Navigate to the Windows Defender directory. By default, it's `C:\Program Files\Windows Defender`.
 
 3. Type the following command, and then press **Enter**
 
