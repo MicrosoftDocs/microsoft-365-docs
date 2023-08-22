@@ -15,10 +15,11 @@ ms.collection:
 - Ent_O365
 f1.keywords:
 - CSH
-ms.custom: 
-- PowerShell
-- Ent_Office_Other
-- O365ITProTrain
+ms.custom:
+  - PowerShell
+  - Ent_Office_Other
+  - O365ITProTrain
+  - has-azure-ad-ps-ref
 description: "Learn how to use PowerShell to manage security groups."
 ---
 
