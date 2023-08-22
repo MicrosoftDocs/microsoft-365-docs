@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 08/23/2023
+ms.date: 08/22/2023
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.subservice: mde
@@ -27,7 +27,7 @@ search.appverid: met150
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-This article describes how to collect diagnostic data that can be used by Microsoft support and engineering teams to help troubleshoot issues you might encounter when using the Microsoft Defender Antivirus.
+This article describes how to collect diagnostic data that's used by Microsoft support and engineering teams when they help troubleshoot issues with Microsoft Defender Antivirus.
 
 > [!NOTE]
 > As part of the investigation or response process, you can collect an investigation package from a device. Here's how: [Collect investigation package from devices](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices).
@@ -46,7 +46,7 @@ On at least two devices that are experiencing the same issue, obtain the `.cab` 
 
     c. Specify administrator credentials or approve the prompt.
 
-2. Navigate to the directory for Microsoft Defender Antivirus. By it's `C:\Program Files\Windows Defender`.
+2. Navigate to the directory for Microsoft Defender Antivirus. By default, it's `C:\Program Files\Windows Defender`.
 
    > [!NOTE]
    > If you're running an [updated Microsoft Defender antimalware platform version](https://support.microsoft.com/help/4052623/update-for-microsoft-defender-antimalware-platform), run `MpCmdRun` from the following location: `C:\ProgramData\Microsoft\Windows Defender\Platform\<version>`.
