@@ -28,9 +28,7 @@ search.appverid: met150
 
 Device control removable storage protection in Microsoft Defender for Endpoint prevents users, endpoints, or both from using unauthorized removable storage media.
 
-## Protection policies
-
-### Removable storage access control
+## Removable storage access control
 
 **Capabilities**
 
@@ -58,7 +56,7 @@ To manage external storage, use removable storage access control instead of [dev
 
 - macOS 11 (Big Sur) or later
 
-### Device installation
+## Device installation
 
 **Capabilities** - Prevent installation with or without exclusion based on various device properties.
 
@@ -81,7 +79,7 @@ To manage external storage, use removable storage access control instead of [dev
 
 - macOS 11 (Big Sur) or later
 
-### Endpoint DLP Removable storage
+## Endpoint DLP Removable storage
 
 **Capabilities** 
 
@@ -95,7 +93,7 @@ To manage external storage, use removable storage access control instead of [dev
 
 - Windows 10, Windows 11
 
-### BitLocker
+## BitLocker
 
 **Capabilities**
 
