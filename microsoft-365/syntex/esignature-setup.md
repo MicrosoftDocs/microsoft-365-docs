@@ -42,7 +42,9 @@ You must have Global admin or SharePoint admin permissions to be able to access 
 
 3. On the **Manage Microsoft Syntex** page, select **Syntex eSignature**.
 
-4. On the **Syntex eSignature** page, select **Turn on**.
+4. By default, the Syntex eSignature service is turned on.
+   - To turn off the service, see [Turn off Syntex eSignature](#turn-off-syntex-esignature).
+   - To manage which sites on which the service is available, see [Manage sites](#manage-sites).
 
 ### Manage sites
 
@@ -54,7 +56,7 @@ By default, Syntex eSignature is turned on for libraries in all SharePoint sites
 
     a. Choose which site or sites this service should be enabled for.
 
-    b. To restrict user access to this service, select **No SharePoint libraries** or **Libraries in selected SharePoint sites** and follow the instructions to either select the sites or upload a CSV listing a maximum of 100 sites. Be sure to add your content center site if you want it to be included. You can then manage site access permissions for the sites you selected.
+    b. To restrict user access to this service, select **No SharePoint libraries** or **Libraries in selected sites** and follow the instructions to either select the sites or upload a CSV listing a maximum of 100 sites. Be sure to add your content center site if you want it to be included. You can then manage site access permissions for the sites you selected.
 
     c. Select **Save**.
 
