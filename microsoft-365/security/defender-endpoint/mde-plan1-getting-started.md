@@ -1,6 +1,6 @@
 ---
 title: Get started with Microsoft Defender for Endpoint Plan 1
-description: Get started using Defender for Endpoint Plan 1. Learn how to use the Defender for Cloud, manage alerts and devices, and view reports. 
+description: Get started using Defender for Endpoint Plan 1. Learn how to use the Microsoft 365 Defender portal, manage alerts and devices, and view reports. 
 search.appverid: MET150 
 author: denisebmsft
 ms.author: deniseb
@@ -35,11 +35,11 @@ The Microsoft 365 Defender portal ([https://security.microsoft.com](https://secu
 
 ## The Microsoft 365 Defender portal
 
-The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) is where you view alerts, manage devices, and view reports. When you sign into the Microsoft 365 Defender portal, you start with the Home page, as shown in the following image:
+The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) is where you view alerts, manage devices, and view reports. When you sign into the Microsoft 365 Defender portal, you start with the **Home** page, which resembles the following image:
 
 :::image type="content" source="../../media/mde-p1/m365-defender-portal.png" alt-text="The portal of Microsoft 365 Defender" lightbox="../../media/mde-p1/m365-defender-portal.png":::
 
-The Home page provides your security team with a snapshot aggregate view of alerts, device status, and threats detected. The Defender for Cloud is set up so that your security operations team can find the information they're looking for quickly and easily.
+The Home page provides your security team with a snapshot aggregate view of alerts, device status, and threats detected. Microsoft 365 Defender is set up so that your security operations team can find the information they're looking for quickly and easily.
 
 > [!NOTE]
 > Our examples shown in this article might differ from what you see in your Microsoft 365 Defender portal. What you see in your portal depends on your licenses and permissions. In addition, your security team can customize your organization's portal by adding, removing, and rearranging cards.
