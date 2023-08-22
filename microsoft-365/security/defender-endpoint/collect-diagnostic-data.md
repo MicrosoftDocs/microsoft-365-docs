@@ -36,7 +36,7 @@ This article describes how to collect diagnostic data that can be used by Micros
 
 ## Get the diagnostic files
 
-On at least two devices that are experiencing the same issue, obtain the .cab diagnostic file by taking the following steps:
+On at least two devices that are experiencing the same issue, obtain the `.cab` diagnostic file by taking the following steps:
 
 1. Open Command Prompt as an administrator by following these steps:
 
