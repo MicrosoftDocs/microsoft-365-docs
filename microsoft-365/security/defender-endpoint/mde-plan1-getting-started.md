@@ -172,4 +172,5 @@ Scroll down to see all the views in the Web protection report. Some views includ
 
 - [Manage Microsoft Defender for Endpoint Plan 1](manage-mde-post-migration.md)
 - [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
