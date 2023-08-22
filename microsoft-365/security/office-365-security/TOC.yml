@@ -215,9 +215,9 @@
            - name: Allow or block URLs using the Tenant Allow/Block List
              href: tenant-allow-block-list-urls-configure.md
          - name: Create block sender lists
-           href: Create-block-sender-lists-in-office-365.md
+           href: create-block-sender-lists-in-office-365.md
          - name: Create safe sender lists
-           href: Create-safe-sender-lists-in-office-365.md
+           href: create-safe-sender-lists-in-office-365.md
        - name: Attack simulation training in Defender for Office 365
          items:
          - name: Get started using Attack simulation training
