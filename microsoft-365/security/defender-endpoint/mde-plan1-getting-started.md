@@ -120,7 +120,7 @@ In Defender for Endpoint Plan 1, several reports are available in the Microsoft 
 
 2. In the navigation bar, choose **Reports**.
 
-3. Select a report in the list. You see the following three reports:
+3. Select a report in the list. Reports include:
 
    - Threat protection report
    - Device health report
