@@ -51,9 +51,10 @@ The [Microsoft Teams Shifts connector for UKG Dimensions](shifts-connectors.md#m
 
 Before you try the Shifts connector wizard, check that you meet all these prerequisites:
 
--	Make sure you’re a Microsoft 365 global admin.
+- Make sure you’re a Microsoft 365 global admin.
 
--	Know your UKG Dimensions account username, password and these other details:
+- Know your UKG Dimensions account username, password and these other details:
+
     - API URL
     - Application key
     - Client ID
@@ -62,13 +63,13 @@ Before you try the Shifts connector wizard, check that you meet all these prereq
 
     If you don't have all this information, contact UKG Dimensions support.
 
--	Make sure your organization is using Azure Active Directory (Azure AD). This is the supported identity provider for SSO. To enable SSO, set up integration between Azure AD and UKG Dimensions. For a step-by-step tutorial, see [Tutorial: Azure AD SSO integration with Kronos Workforce Dimensions.](/azure/active-directory/saas-apps/kronos-workforce-dimensions-tutorial) If you need help or more information about setting up SSO, contact UKG Dimensions support.
+- Make sure your organization is using Azure Active Directory (Azure AD). This is the supported identity provider for SSO. To enable SSO, set up integration between Azure AD and UKG Dimensions. For a step-by-step tutorial, see [Tutorial: Azure AD SSO integration with Kronos Workforce Dimensions.](/azure/active-directory/saas-apps/kronos-workforce-dimensions-tutorial) If you need help or more information about setting up SSO, contact UKG Dimensions support.
 
--	Make sure Federated SSO authentication is enabled in your UKG Dimensions environment. Follow the steps below to [configure UKG Dimensions single sign-on](#configure-single-sign-on).
+- Make sure Federated SSO authentication is enabled in your UKG Dimensions environment. Follow the steps below to [configure UKG Dimensions single sign-on](#configure-single-sign-on).
 
--	Make sure you have at least one team set up in Microsoft Teams.
+- Make sure you have at least one team set up in Microsoft Teams.
 
--	Make sure you’ve added a Microsoft 365 system account (not your personal user account) as team owner to all teams you want to map.
+- Make sure you’ve added a Microsoft 365 system account (not your personal user account) as team owner to all teams you want to map.
 
     You can [create this account in Microsoft 365](/microsoft-365/admin/add-users/add-users) and assign it a Microsoft 365 license. Then, add the account as a team owner to all teams that you want to map. The Shifts connector uses this account when syncing Shifts changes from UKG Dimensions. We recommend you create an account specifically for this purpose and not use your personal user account.
 
@@ -151,11 +152,12 @@ On the Settings page, you choose the information to sync from UKG Dimensions to 
 
 1. Enter a name for your connection instance. It can't be longer than 100 characters or have any special characters.
 
-  > [!TIP]
-  > You'll be given the following options for the next group of settings: <br>
-  > **Shifts users will not see provider data**: Data won't sync between UKG Dimensions and Shifts. <br>
-  > **Shifts users can see provider data**: Data syncing is unidirectional from UKG Dimensions to Shifts. <br>
-  > **Shifts users can see and change provider data**: Data syncing is bidirectional between UKG Dimensions and Shifts.
+      > [!TIP]
+      > You'll be given the following options for the next group of settings:
+      >
+      > - **Shifts users will not see provider data**: Data won't sync between UKG Dimensions and Shifts.
+      > - **Shifts users can see provider data**: Data syncing is unidirectional from UKG Dimensions to Shifts.
+      > - **Shifts users can see and change provider data**: Data syncing is bidirectional between UKG Dimensions and Shifts.
 
 2. Choose your basic, **Time card**, and **Request** settings from the options listed above.
 
