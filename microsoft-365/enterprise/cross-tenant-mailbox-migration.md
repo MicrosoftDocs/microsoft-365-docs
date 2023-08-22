@@ -14,6 +14,7 @@ ms.custom:
   - it-pro
   - admindeeplinkMAC
   - admindeeplinkEXCHANGE
+  - has-azure-ad-ps-ref
 ms.localizationpriority: high
 ms.collection:
   - scotvorg
