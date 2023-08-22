@@ -28,9 +28,9 @@ The Shifts connector wizard in the Microsoft 365 admin center enables you to int
 
 The wizard creates a connection to your UKG Dimensions system and a connection instance. This applies the sync settings and team mappings you choose. Sync settings determine the schedule information and what entities sync between UKG Dimensions and Shifts. Team mappings define the sync relationship between your UKG instances and teams in Microsoft Teams.
 
-You can create one or more connection instances, each with different sync settings. For example, if your organization has multiple locations with different schedule requirements, create a connection instance with unique sync settings for each location. A UKG instance should only be mapped once to a Microsoft team at any given time. However, it's possible in the wizard to have different connection instances with the same mappings. This means that you can create connection instances with duplicated mappings.
+You can create one or more connection instances, each with different sync settings. For example, if your organization has multiple locations with different schedule requirements, create a connection instance with unique sync settings for each location. A UKG instance should only be mapped once to a team in Teams at any given time. However, it's possible in the wizard to have different connection instances with the same mappings. This means that you can create connection instances with duplicated mappings.
 
-With UKG Dimensions, your frontline workers can efficiently manage their schedules and availability in Shifts on their devices. Frontline managers can continue to use UKG to set up schedules.
+With UKG Dimensions as the system of record, your frontline workers can efficiently manage their schedules and availability in Shifts on their devices. Frontline managers can continue to use UKG Dimensions to set up schedules.
 
 ### Terms used in this article
 
