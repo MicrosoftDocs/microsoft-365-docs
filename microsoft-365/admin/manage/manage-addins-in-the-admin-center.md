@@ -99,12 +99,12 @@ As an organization you may wish to prevent the download of new Office Add-ins fr
       - Mac
       - Office
         
-        
-    - Acquisitions starting within **AppSource**
-        
     - Add-ins within Microsoft 365
         
-    A user who tries to access the store will see the following message: **Sorry, Microsoft 365 has been configured to prevent individual acquisition of Office Store add-ins.**
+    A user who tries to access the store will see the following message: **Office store not available. Unfortunately, your organization has disabled access to the Office Store. Please contact your administrator to get access to the store.**
+
+> [!NOTE]
+> Acquisitions may still be possible from AppSource, but the user will not be able to launch or use the add-in in the client.
   
 Support for turning off the Office Store is available in the following versions:
   

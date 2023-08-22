@@ -1,5 +1,5 @@
 ---
-title: Alert grading for malicious exchange connectors
+title: Alert classification for malicious exchange connectors
 description: Alert grading recipients from malicious exchange connectors activity and protect their network from malicious attack.
 keywords: incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
 ms.service: microsoft-365-security
@@ -22,7 +22,7 @@ ms.topic: conceptual
 search.appverid:
   - MOE150
   - MET150
-ms.date: 04/05/2022
+ms.date: 08/11/2023
 ---
 
 # Alert classification for malicious exchange connectors
@@ -35,20 +35,20 @@ ms.date: 04/05/2022
 
 Threat actors use compromised exchange connectors for sending out spam and phishing emails in bulk to unsuspecting recipients by masquerading legitimate emails. Since the connector is compromised, the emails would usually be trusted by the recipients. These kinds of phishing emails are common vectors for phishing campaigns, and business email compromise (BEC) scenario. Hence, such emails need to be monitored heavily due to the likelihood of successful recipients' compromises being high.
 
-The playbook helps in investigating instances, where malicious connectors are setup/deployed by malicious actors. Accordingly, they take necessary steps to remediate the attack and mitigate the security risks arising from it. Playbook is available for security teams like security operations center (SOC) and IT administrators, who review, handle/manage, and grade the alerts. Playbook will help in classifying the alerts as either true positive (TP) or false positive (FP). If there is TP, playbook will take necessary recommended actions for remediating the attack.
+This playbook helps in investigating instances where malicious connectors are setup/deployed by malicious actors. Accordingly, they take necessary steps to remediate the attack and mitigate the security risks arising from it. The playbook helps in classifying the alerts as either true positive (TP) or false positive (FP). If alerts are TP, the playbook lists necessary recommended actions for remediating the attack. This playbook is available for security teams who review, handle/manage, and grade the alerts.
 
 Following are the results of using a playbook:
 
 - Determination of the alert as malicious (TP) or benign (FP).
 - If malicious, remediate/remove the malicious connector from the environment.
 
-## Exchange Connectors
+## Exchange connectors
 
 Exchange connectors are a collection of instructions that customize the way your email flows to and from your Microsoft 365 or Office 365 organization. Usually, most Microsoft 365 and Office 365 organizations don't need connectors for regular mail flow.
 
 Connectors are used to route mail traffic between remote email systems and Office 365 (O365) or O365, and on-premises email systems.
 
-## Malicious Exchange Connectors
+## Malicious Exchange connectors
 
 Attackers may compromise an existing exchange connector or compromise an admin, and set up a new connector by sending phish or spam/bulk emails.
 
@@ -88,7 +88,7 @@ This section describes the steps to investigate an alert and remediate the secur
   - The connector creation date, last modified date, and last modified by date.
   - The IP address of the connector from where the email traffic is observed.
 
-## Advanced Hunting Queries
+## Advanced hunting queries
 
 You can use [advanced hunting](/microsoft-365/security/defender/advanced-hunting-overview?) queries to gather information related to an alert and determine whether the activity is suspicious.
 

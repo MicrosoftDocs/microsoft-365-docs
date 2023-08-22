@@ -1,11 +1,7 @@
 ---
 title: Get scan history by definition
 description: Learn how to use the get scan history by definition api
-keywords: apis, graph api, supported apis, scan history, definition
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
@@ -47,6 +43,13 @@ ms.date: 12/15/2022
 
 Retrieves a list of the scan history by definitions.
 
+- Supports OData operations.
+- OData supported operators:
+   - $top with max value of 4096. Returns the number of sessions specified in the request.
+   - $skip with a default value of 0. Skips the number of sessions specified in the request.
+ 
+For an example of OData operation usage, see [example $top request](#example-top-request).
+
 ## Limitations
 
 1. Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
@@ -55,15 +58,15 @@ Retrieves a list of the scan history by definitions.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md).
 
-Permission type|Permission|Permission display name
-:---|:---|:---
-Application|Machine.Read.All| Read all scan information.
-Delegated (work or school account)|Machine.Read.All|Read all scan information.
+|Permission type|Permission|Permission display name|
+|:---|:---|:---|
+|Application|Machine.Read.All| Read all scan information.|
+|Delegated (work or school account)|Machine.Read.All|Read all scan information.|
 
 > [!NOTE]
 > When obtaining a token using user credentials:
->
 > - To view data the user needs to have at least the following role permission: 'ViewData' or 'TvmViewData' (See [Create and manage roles](user-roles.md) for more information)
+> 
 
 ## HTTP request
 
@@ -92,7 +95,7 @@ If successful, this method returns 200 - OK response code with a list of the sca
 
 ## Example request
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```http
 POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/GetScanHistoryByScanDefinitionId
@@ -132,4 +135,27 @@ POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinit
 }
 
 ```
-[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+## Example $top request
+
+Here's an example of a request that returns only 1 session.
+
+```http
+POST https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/GetScanHistoryByScanDefinitionId?$top=1
+```
+
+##  $top Response example
+
+```json
+{
+"@odata.context": "https://api.securitycenter.microsoft.com/api/DeviceAuthenticatedScanDefinitions/GetScanHistoryByScanDefinitionId",
+    "value": [
+    {
+    "ScanDefinitionIds": "4ad8d463-6b3a-4894-b42a-a2de9ea0a8ae",
+    "LastScanned": "2022-12-20T11:14:24.5561791Z",
+    "ScanStatus": "Partial Success",
+    "ScannerId": "625431694b7d2ca9d07e77ca1b029ef216bebb6d"
+    },
+ ]
+}
+
+```

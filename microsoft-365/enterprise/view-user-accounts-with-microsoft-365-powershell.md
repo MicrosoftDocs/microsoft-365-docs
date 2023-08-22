@@ -15,11 +15,12 @@ ms.collection:
 - Ent_O365
 f1.keywords:
 - CSH
-ms.custom: 
-- LIL_Placement
-- PowerShell
-- Ent_Office_Other
-- seo-marvel-apr2020
+ms.custom:
+  - LIL_Placement
+  - PowerShell
+  - Ent_Office_Other
+  - seo-marvel-apr2020
+  - has-azure-ad-ps-ref
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 
 description: Learn how to view, list, or display your Microsoft 365 user accounts in different ways with PowerShell.

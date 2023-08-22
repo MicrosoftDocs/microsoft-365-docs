@@ -10,6 +10,8 @@ audience: Admin
 ms.topic: article
 ms.service: o365-solutions
 ms.localizationpriority: medium
+ms.custom:
+  - has-azure-ad-ps-ref
 ms.collection: 
 - highpri
 - M365-subscription-management
