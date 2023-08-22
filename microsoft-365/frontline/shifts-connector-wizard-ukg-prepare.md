@@ -71,21 +71,28 @@ The UKG Dimensions structure for Contoso looks something like this.
 
 |Level |UKG Dimensions location |Nodes |
 |---------|---------|---------|
-|0|         |         |
-| 1|         |         |
-|  2|         |         |
-|   3|         |         |
-|    4|         |         |
-|    4|         |         |
-|    4|         |         |
-|    4|         |         |
-|   3|         |         |
-|    4|         |         |
-|    4|         |         |
-|   3|         |         |
-|    4|         |         |
-|    4|         |         |
-|    4|         |         |
+|0|Contoso |Company|
+| 1|Retail |Business|
+|  2|Central London |Area|
+|   3|Soho |Store|
+|    4|Beauty advisor |Job|
+|    4|Leather goods sales associate|Job|
+|    4|Sales associate|Job|
+|    4|Personal shopper|Job|
+|   3|Covent Garden|Store|
+|    4|Leather good sales associate|Job|
+|    4|Sales associate|Job|
+|   3|Chelsea|Store|
+|    4|Sales associate|Job|
+|    4|Personal shopper |Job|
+|    4|Beauty advisor |Job|
+
+
+|UKG Dimensions location |Workers |Primary job  |Report to  |
+|---------|---------|---------|---------|
+|Contoso/Retail/Central London/Soho|FLW1, FLW2<br>FLW3,FLW4<br>FLW5,FLW6,FLW7<br>FLW8,FLW9,FLW10        |Beauty advisor<br>Leather goods sales associate<br>Sales associate<br>Personal shopper|FLM1         |
+|Contoso/Retail/Central London/Covent Garden|FLW11,FLW12,FLW13,FLW14<br>FLW15,FLW16|Leather goods sales associate<br>Sales associate|FLM2|
+|Contoso/Retail/Central London/Chelsea|FLW17,FLW18,FLW19,FLW20<br>FLW21,FLW21,FLW23<br>FLW24     |Sales associate<br>Personal shopper<br>Beauty advisor|FLM3|
 
 
 <!--The Shifts connector wizard in the Microsoft 365 admin center enables you to integrate the Shifts app in Microsoft Teams with your workforce management (WFM) system. Your frontline workers can seamlessly view and manage their schedules in your WFM system from within Shifts.
