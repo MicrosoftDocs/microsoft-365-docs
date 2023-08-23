@@ -626,6 +626,10 @@ Yes, voicemails are migrated cross tenant.
    3. Received voicemails are not available in Teams client UI in target post migration.
    4. The voicemail greeting is also migrated to the target.
 
+### Are mailbox signatures migrated cross tenant?
+
+Mailbox signatures are not migrated cross tenant and must be recreated.
+
 ## Known issues
 
 - Post-migration Teams functionality in the source tenant will be limited. After the mailbox is migrated to the target tenant, Teams in the source tenant will no longer have access to the user's mailbox. If a user logs into Teams with the source tenant credential, there will be a loss of functionality such as the inability to update their profile picture, no calendar application, and an inability to search and join public teams.
