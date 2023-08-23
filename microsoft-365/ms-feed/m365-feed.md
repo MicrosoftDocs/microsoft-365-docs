@@ -22,7 +22,7 @@ Read more about how the feed works here:  [Discover and learn with Microsoft Fee
 
 ## Where can users see Microsoft Feed?
 
-In **Microsoft 365** (previously Office.com), while signed in with a work or school account, select **Feed** from the left navigation bar.
+In **Microsoft Edge**, select the **Work feed** page when opening a new tab.
 
 ![Select Feed in Microsoft 365.](../media/MS-select-feed.png)
 
@@ -36,7 +36,7 @@ In **Outlook Mobile**, while signed in with a work or school account, select the
 
 In **Microsoft 365 Mobile**, while signed in with a work or school account, select the Feed Tab from the bottom navigation bar.
 
-![Select Feed in Mobile Microsoft 365.](../media/MS-m365-feed-mobile-resize-two.png)
+:::image type="content" source="./media/MS-m365-feed-mobile-resize-two.png" alt-text="Select Feed in Mobile Microsoft 365.":::
 
 See the section *Find your way around* in [Discover and learn with Microsoft Feed](https://support.microsoft.com/en-us/office/discover-and-learn-with-microsoft-feed-9c190800-e348-46b7-9d46-41c628b80ebb) for more information.
 
@@ -60,28 +60,28 @@ In addition, Microsoft Feed respects the settings in the "Visibility section" in
 
 As a tenant admin, if you want to disable the Feed, you can do so by following the steps in the sections below which disable the Feed in the respective endpoints:
 
-* Disabling the Feed in Microsoft 365 (previously Office.com)
-* Disabling the Feed in Microsoft Edge
-* Disabling the Feed in Outlook Mobile
-* Disabling the Feed in Microsoft 365 Mobile
+- Disabling the Feed in Microsoft 365 (previously Office.com)
+- Disabling the Feed in Microsoft Edge
+- Disabling the Feed in Outlook Mobile
+- Disabling the Feed in Microsoft 365 Mobile
 
 ## Disabling the Feed in Microsoft 365 (previously Office.com)
 
 In Microsoft 365 (previously Office.com), as a tenant admin, if you want to disable the experience there, you can contact Microsoft via a service request to turn off Microsoft Feed. This will remove the Feed icon from the left navigation of Microsoft 365.
 
-1.    [Sign in to Microsoft 365](https://admin.microsoft.com) with your Microsoft 365 admin account.
-2.    Select **Support** > **New service request.**
+1. [Sign in to Microsoft 365](https://admin.microsoft.com) with your Microsoft 365 admin account.
+2. Select **Support** > **New service request.**
 
 To re-enable the feature, you can create **New service request**.
 
 ## Disabling the Feed in Microsoft Edge
 
-In Microsoft Edge, while signed in with a work or school account, as a tenant admin, if you want to disable the new experience, you can choose to *not show* Microsoft 365 content on the Microsoft Edge new tab page:
+In Microsoft Edge, while signed in with a work or school account, as a tenant admin, if you want to disable the new experience, you can choose to not show Work feed content on the Microsoft Edge new tab page:
 
-1.    Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com)
-2.    Go to **Org settings** > **News.**
-3.    Under **News**, select **Microsoft Edge new tab page**.
-4.    *Clear* the box that says **Show Microsoft 365 content on the Microsoft Edge new tab page.**
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com)
+2. Go to **Org settings** > **News.**
+3. Under **News**, select **Microsoft Edge new tab page**.
+4. Clear the box that says **Show Microsoft 365 content on the Microsoft Edge new tab page.**
 
 To re-enable the feature, check the box that says **Show Microsoft 365 content on the Microsoft Edge new tab page.**
 
@@ -93,10 +93,11 @@ In **Outlook Mobile**, if you want to disable the experience there, you can find
 
 In **Microsoft 365 Mobile** you can now enable/disable Microsoft 365 Feed by configuring the below setting in the Intune portal. These app settings can be deployed using an [app configuration policy](/mem/intune/apps/app-configuration-policies-use-ios) in Intune.  They key value pair for the configuration is as below:
 
-* ***Key***:  **com.microsoft.office.officemobile.Feed.IsAllowed**
-* ***Value***:
-    * **true** **(Default)** - Feed is enabled for the tenant
-    * **false** - disables Feed for the tenant
+- ***Key***:  **com.microsoft.office.officemobile.Feed.IsAllowed**
+- ***Value***:
+
+    - **true** **(Default)** - Feed is enabled for the tenant
+    - **false** - disables Feed for the tenant
 
 For more information about adding configuration keys, see [Add app configuration policies for managed iOS/iPadOS devices](/mem/intune/apps/app-configuration-policies-use-ios)
 
@@ -104,8 +105,8 @@ For more information about adding configuration keys, see [Add app configuration
 
 We would love to hear from you! To let us know what you think of this feature, you can reach us by:
 
-1.    Responding to our Message Center post with feedback. This option is only available for tenant admins with access to the Microsoft Admin Center in Microsoft 365.
-2.    In Microsoft 365 (previously Office.com), and on Microsoft Edge, you can provide general in-product feature feedback when viewing Microsoft Feed by clicking on ***Feedback*** in the lower right-hand corner.
+1. Responding to our Message Center post with feedback. This option is only available for tenant admins with access to the Microsoft Admin Center in Microsoft 365.
+2. In Microsoft 365 (previously Office.com), and on Microsoft Edge, you can provide general in-product feature feedback when viewing Microsoft Feed by clicking on **Feedback** in the lower right-hand corner.
 
 ## Frequently Asked Questions (FAQ)
 

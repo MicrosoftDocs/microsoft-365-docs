@@ -129,7 +129,7 @@ If you want to buy your subscription before your trial is over, use the followin
 
 ## Cancel your free trial subscription
 
-If you decide to cancel your trial subscription before the free trial period ends, go to the Microsoft 365 admin center and [turn off recurring billing](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on). The trial automatically expires when your month ends, and your credit card isn't charged.
+If you decide to cancel your trial subscription before the free trial period ends, go to the Microsoft 365 admin center and [turn off recurring billing](subscriptions/renew-your-subscription.md). The trial automatically expires when your month ends, and your credit card isn't charged.
 
 ## Try a different subscription
 
