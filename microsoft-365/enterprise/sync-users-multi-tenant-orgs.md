@@ -18,7 +18,7 @@ description: Learn how to manage user sync in multi-tenant organizations in Micr
 # Synchronize users in multi-tenant organizations in Microsoft 365 (Preview)
 
 > [!NOTE]
-> Multi-tenant organizations in Microsoft 365 is currently rolling out and may not yet be available for all organizations.
+> Multi-tenant organizations in Microsoft 365 is available in [targeted release](/microsoft-365/admin/manage/release-options-in-office-365).
 
 For users in your tenant to be able to collaborate with those in other tenants, you must synchronize your users to the other tenants.
 
