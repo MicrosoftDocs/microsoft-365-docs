@@ -48,7 +48,7 @@ Team members can find the app in the Teams app store, or you can share the [inst
 
 ## Overview of the app
 
-The [Virtual Appointments app](https://support.microsoft.com/topic/22df0079-e6d9-4225-bc65-22747fb2cb5f) provides a central hub for all your virtual appointments needs in Teams. The app enables a seamless end-to-end experience for business-to-customer engagements, integrating Bookings schedules, analytics, and management options, all in one place.
+The [Virtual Appointments app](https://support.microsoft.com/topic/22df0079-e6d9-4225-bc65-22747fb2cb5f) provides a central hub for all your virtual appointments needs in Teams. The app enables a seamless end-to-end experience for business-to-customer engagements, integrating ???Bookings schedules, analytics, and management options, all in one place.
 
 You can schedule, view, and manage virtual appointments, get real-time status updates in a queue view, send appointment reminders, view analytics and reports to gain insight into virtual appointments activity, and configure calendar, staff, and booking page settings.
 
