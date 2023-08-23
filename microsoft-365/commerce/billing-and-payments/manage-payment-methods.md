@@ -97,7 +97,7 @@ When you replace an existing payment method, you can add a new one, or use a pay
 If you have an MCA billing account type, you can replace the payment method that's linked with a billing profile.
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
-   - If you're using the **Simplified view**, select **Subscriptions** > **View payment methods**.
+   - If you're using the **Simplified view**, select **Billing** > **View payment methods**.
    - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Bills & payments</a> page.
 2. Select the **Billing profiles** tab, then select the billing profile to update.
 3. On the **Billing profile** page, under **Payment method**, select **Replace**.
@@ -109,7 +109,7 @@ If you have an MCA billing account type, you can replace the payment method that
 If you have an MOSA billing account type, you can change the payment method used to pay for a single subscription.
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
-   - If you're using the **Simplified view**, select **Subscriptions**.
+   - If you're using the **Simplified view**, select **Billing**.
    - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. Select the subscription that you want to pay for with the alternate payment method.
 3. On the product details page, in the **Subscription and payment settings** section, select **Replace payment method**.
@@ -121,7 +121,7 @@ If you have an MOSA billing account type, you can change the payment method used
 If you have an MOSA billing account type, you can change the payment method used to pay for all your subscriptions at once. If you only want to change the payment method for one subscription, see [Replace the payment method for a single subscription](#replace-the-payment-method-for-a-single-subscription).
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
-   - If you're using the **Simplified view**, select **Subscriptions**, then select **View payment methods**.
+   - If you're using the **Simplified view**, select **Billing**, then select **View payment methods**.
    - If you're using the Dashboard view, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Bills & payments</a> page, and select the **Payment methods** tab.
 2. Select the payment method to replace. The right pane lists all the individual subscriptions that use the selected payment method.
 3. In the right pane, select **Replace payment method for all items**.
@@ -142,7 +142,7 @@ You can only delete a payment method that isn't attached to a subscription or bi
 If a payment method isn't associated with any subscriptions or billing profiles, you can immediately delete it.
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
-   - If you're using the **Simplified view**, select **Subscriptions**, then select **View payment methods**.
+   - If you're using the **Simplified view**, select **Billing**, then select **View payment methods**.
    - If you're using the Dashboard view, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Bills & payments</a> page, and select the **Payment methods** tab.
 2. Select the payment method to delete.
 3. In the edit pane, select **Delete**.
@@ -154,7 +154,7 @@ If a payment method isn't associated with any subscriptions or billing profiles,
 If a payment method is attached to any subscriptions or billing profiles, first replace it with an existing payment method or add a new one, then delete the old payment method.
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
-   - If you're using the **Simplified view**, select **Subscriptions**, then select **View payment methods**.
+   - If you're using the **Simplified view**, select **Billing**, then select **View payment methods**.
    - If you're using the Dashboard view, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Bills & payments</a> page, and select the **Payment methods** tab.
 2. Select the payment method to delete.
 3. In the edit pane, select **Delete**. The **Delete a payment method** pane lists existing subscriptions and billing profiles that use that payment method.
