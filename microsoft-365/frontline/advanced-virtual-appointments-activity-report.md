@@ -21,7 +21,7 @@ appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
 ms.custom: seo-marvel-apr2020
-ms.date: 02/22/2023
+ms.date: 08/23/2023
 ---
 # Microsoft Teams Advanced Virtual Appointments activity report
 
@@ -36,10 +36,10 @@ The report shows usage information for the following features.
 |Feature |Description  |
 |---------|---------|
 |SMS text notifications|Send appointment reminders and confirmations to external attendees on their mobile devices.|
-|Lobby chat (coming soon)|Communicate with external attendees in the waiting room before an appointment.|
 |On-demand appointments|Service and manage on-demand virtual appointments.|
+|Queue|Monitor scheduled and on-demand appointments, with status updates in real time.|
 
-Use this report to gain insight into overall user activity and usage per feature in your organization. This information can help you analyze trends, identify which users are utilizing these advanced features the most, and measure business value.
+Use this report to gain insight into overall user activity and usage per feature in your organization. This information can help you analyze trends, identify which users are using these advanced features the most, and measure business value.
 
 ## View the report
 
@@ -63,7 +63,7 @@ Select **View details** to view the report.
 
 ## Interpret the report
 
-The graph provides an overview of feature utilization. It changes depending on the date range you select. The table shows usage of advanced features by individual users
+The graph provides an overview of feature usage. It changes depending on the date range you select. The table shows feature usage by individual users.
 
 :::image type="content" source="media/va-advanced-features-report.png" alt-text="Screenshot of the Advanced Virtual Appointments activity report." lightbox="media/va-advanced-features-report.png":::
 
@@ -71,8 +71,8 @@ The graph provides an overview of feature utilization. It changes depending on t
 |--------|-------------|
 |**1**   |Each report has a date for when the report was generated. The reports usually reflect a 24 to 48-hour latency from time of activity. |
 |**2**   |The X axis is the selected date range for the report. The Y axis is the number of active users per feature.<br>Hover over a dot on a given date to see the number of users using that feature on that date.|
-|**3**   |You can filter what you see on the chart by selecting an item. For example, select **Text message users** or **On-demand users** to see only the info related to each one. Changing this selection doesn’t change the information in the table.|
-|**4**   |This table shows detailed usage information for each user in your organization during the selected date range. <br> - **Display Name** shows the name assigned to each user. <br> - **Total Appointments** shows how many virtual appointments in which this user utilized an advanced feature. <br>  - **SMS** shows the total number of times this user utilized SMS in a virtual appointment. <br>  -  **On-demand** shows the total number of times this user has utilized on-demand appointments.|
+|**3**   |You can filter what you see on the chart by selecting an item. For example, select **Total Text Message Users**, **Total On-Demand Users**, or **Total Queue Users**, to see only the info related to each one. Changing this selection doesn’t change the information in the table.|
+|**4**   |This table shows detailed usage information for each user in your organization during the selected date range. <ul><li>**Primary** is the name of the user.</li><li>**Primary's email** is the email address of the user.</li><li>**Total Appointments** shows the total number of virtual appointments in which the user used an advanced feature.</li><li>**SMS** shows the total number of times the user used SMS in a virtual appointment.</li><li>**On-demand** shows the total number of times the user joined an on-demand appointment by selecting **Join** on the **Queue** tab in the Virtual Appointments app.</li><li>**Queue** shows the total number of times the user navigated to the **Queue** tab in the Virtual Appointments app.</li></ul>
 
 ## Related articles
 
