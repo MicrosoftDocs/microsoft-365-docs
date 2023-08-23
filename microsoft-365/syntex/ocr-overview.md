@@ -46,9 +46,9 @@ The OCR service can be used for multiple solutions. The following table shows so
 
 |Location    |Supported solution  |
 |---------|---------|
-|Exchange           |Text is available in end-user search and search-driven solutions. |
-|SharePoint sites   |Text is available in end-user search and search-driven solutions. |
-|OneDrive accounts  |Text is available in end-user search and search-driven solutions. |
+|Exchange           |Text is available in end-user search and search-driven solutions.<br>Text is available in [compliance solutions](https://learn.microsoft.com/en-us/purview/ocr-learn-about#supported-locations-and-solutions). |
+|SharePoint sites   |Text is available in end-user search and search-driven solutions.<br>Text is available in [compliance solutions](https://learn.microsoft.com/en-us/purview/ocr-learn-about#supported-locations-and-solutions). |
+|OneDrive accounts  |Text is available in end-user search and search-driven solutions.<br>Text is available in [compliance solutions](https://learn.microsoft.com/en-us/purview/ocr-learn-about#supported-locations-and-solutions). |
 |Teams chat and channel message  |Text is available in [compliance solutions](https://learn.microsoft.com/en-us/purview/ocr-learn-about#supported-locations-and-solutions). |
 |Devices            | Text is available in [compliance solutions](https://learn.microsoft.com/en-us/purview/ocr-learn-about#supported-locations-and-solutions).    |
 
