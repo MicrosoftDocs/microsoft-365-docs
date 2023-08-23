@@ -42,15 +42,15 @@ The OCR service supports more than [150 languages](/azure/cognitive-services/lan
 
 ### Supported locations and solutions
 
-The OCR service can be used for multiple solutions. The following table shows solutions for end users. For compliance scenarios, see [Supported locations and solutions in Microsoft Purview(https://learn.microsoft.com/en-us/purview/ocr-learn-about#supported-locations-and-solutions)].
+The OCR service can be used for multiple solutions. The following table shows solutions for end users. For compliance scenarios, see [Supported locations and solutions in Microsoft Purview](https://learn.microsoft.com/en-us/purview/ocr-learn-about#supported-locations-and-solutions).
 
 |Location    |Supported solution  |
 |---------|---------|
 |Exchange           |Text is available in end-user search and search-driven solutions. |
 |SharePoint sites   |Text is available in end-user search and search-driven solutions. |
 |OneDrive accounts  |Text is available in end-user search and search-driven solutions. |
-|Teams chat and channel message  |Text is available for [compliance solutions](https://learn.microsoft.com/en-us/purview/ocr-learn-about#supported-locations-and-solutions). |
-|Devices            | Text is available for [compliance solutions](https://learn.microsoft.com/en-us/purview/ocr-learn-about#supported-locations-and-solutions).    |
+|Teams chat and channel message  |Text is available in [compliance solutions](https://learn.microsoft.com/en-us/purview/ocr-learn-about#supported-locations-and-solutions). |
+|Devices            | Text is available in [compliance solutions](https://learn.microsoft.com/en-us/purview/ocr-learn-about#supported-locations-and-solutions).    |
 
 ### File limitations
 
