@@ -47,7 +47,7 @@ You turn on or turn off Safe Attachments for Office 365 for SharePoint, OneDrive
 
 - To use SharePoint Online PowerShell to prevent people from downloading malicious files, you need to be member of the [Global Administrator](/azure/active-directory/roles/permissions-reference#global-administrator) or [SharePoint Administrator](/azure/active-directory/roles/permissions-reference#sharepoint-administrator) roles in Azure AD.
 
-- Verify that audit logging is enabled for your organization (it's on by default). For instructions, see [Turn auditing on or off](../../compliance/audit-log-enable-disable.md).
+- Verify that audit logging is enabled for your organization (it's on by default). For instructions, see [Turn auditing on or off](/purview/audit-log-enable-disable).
 
 - Allow up to 30 minutes for the settings to take effect.
 
@@ -94,7 +94,7 @@ For detailed syntax and parameter information, see [Set-SPOTenant](/powershell/m
 
 ## Step 3 (Recommended) Use the Microsoft 365 Defender portal to create an alert policy for detected files
 
-You can create an alert policy that notifies admins when Safe Attachments for SharePoint, OneDrive, and Microsoft Teams detects a malicious file. To learn more about alert policies, see [Alert policies](../../compliance/alert-policies.md).
+You can create an alert policy that notifies admins when Safe Attachments for SharePoint, OneDrive, and Microsoft Teams detects a malicious file. To learn more about alert policies, see [Alert policies](/purview/alert-policies).
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Policies & rules** \> **Alert policy**. To go directly to the **Alert policy** page, use <https://security.microsoft.com/alertpolicies>.
 

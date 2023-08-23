@@ -15,9 +15,10 @@ ms.collection:
 - scotvorg
 - M365-subscription-management 
 - Adm_O365
-ms.custom: 
-- commerce_subscriptions 
-- AdminSurgePortfolio
+ms.custom:
+  - commerce_subscriptions
+  - AdminSurgePortfolio
+  - has-azure-ad-ps-ref
 search.appverid: MET150
 description: "Learn how to manage free self-service sign-up subscriptions for your organization."
 ms.date: 03/17/2021

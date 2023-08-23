@@ -75,7 +75,7 @@ Syntex eSignature is an extension of SharePoint document storage and management 
 
 - The document is stored in a library or folder that has unique permissions or sharing settings. This event might override the default settings of the SharePoint site or tenant and either allow or block certain users from initiating or accessing an eSignature request with that document.
 
-- Azure Active Directory collaboration settings restrict document sharing to specific individuals. This event limits who the requests can be sent to.
+- Microsoft Entra ID collaboration settings restrict document sharing to specific individuals. This event limits who the requests can be sent to.
 
 ### Cancel a signature request
 
@@ -228,7 +228,7 @@ Before a signature request is sent and at the completion of the request, certain
 To avoid potential issues, you should check the status and settings of their documents before starting a signature request. Ensure that there are sufficient permissions and roles to access and share the documents with their intended recipients.
 
 - Data loss prevention (DLP) policies
-- Azure Active Directory collaboration settings
+- Microsoft Entra ID collaboration settings
 - SharePoint sharing settings and policies
 - User permissions and document access
 
