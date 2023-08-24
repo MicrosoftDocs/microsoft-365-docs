@@ -605,6 +605,17 @@ Determines whether ICMP events are monitored and scanned.
 |**Possible values**|true (default) <p> false|
 |**Comments**|Available in Defender for Endpoint version 101.23062.0010 or higher.|
 
+#### Report AV Suspicious Events to EDR feature
+
+Determines whether suspicious events from AV are reported to EDR.
+
+|Description|Value|
+|---|---|
+|**Key**|sendLowfiEvents|
+|**Data type**|String|
+|**Possible values**|disabled (default) <p> enabled|
+|**Comments**|Available in Defender for Endpoint version 101.23062.0010 or higher.|
+
 ## Recommended configuration profile
 
 To get started, we recommend the following configuration profile for your enterprise to take advantage of all protection features that Defender for Endpoint provides.
