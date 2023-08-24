@@ -83,14 +83,13 @@ For Out-of-box (OOB) tests, you can specify whether a reboot is needed for the _
 
 **Q: How do I investigate time-out failure**
 
-**A:** 
-1. Check video recording:
-    a.  to confirm if any Windows pop-up blocked the script execution.  
-    b. if command is running in interactive mode and was waiting for input. 
+**A:** 1. Check video recording:
+> a. to confirm if any Windows pop-up blocked the script execution.  
+> b. if command is running in interactive mode and was waiting for input. 
 2. Use VM snapshot to create VM to repro timeout and find out root cause.  
 3. Fix code issue continue testing.  
 4. If test running indeed exceeds 60 mins, split into multiple scripts below 60 mins. 
-    a. Run all testing job in one central script which doesn’t have time limit, monitor the status from multiple Test Base artifact scripts. 
+> a. Run all testing job in one central script which doesn’t have time limit, monitor the status from multiple Test Base artifact scripts. 
 
 ![Reboot picture.](Media/reboot.png)
 
