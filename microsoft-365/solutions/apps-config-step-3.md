@@ -50,10 +50,7 @@ Intune provides policies specifically for Microsoft Office apps. You can select 
 
 ### Controlling account access for apps on managed devices
 
-You can control which work or school accounts are added to Microsoft apps on managed devices. You can limit access to only allowed organization user accounts and block personal accounts within the apps (if supported) on enrolled devices. For more information, see [Allow only configured organization accounts in apps](/mem/intune//apps/app-configuration-policies-use-ios#allow-only-configured-organization-accounts-in-apps).
 
-> [!NOTE]
-> Configuration keys used in this scenario include `IntuneMAMAllowedAccountsOnly` and `IntuneMAMUPN`. 
 
 ## Next step
 <!--
