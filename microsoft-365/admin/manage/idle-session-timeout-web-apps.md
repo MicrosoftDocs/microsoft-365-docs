@@ -59,6 +59,8 @@ When a user has been inactive in Microsoft 365 web apps for the time period you 
     - OneDrive for Business
 
     - SharePoint Online (SPO)
+ 
+    - Microsoft Fabric
 
     - Microsoft365.com and other start pages
 
@@ -70,9 +72,6 @@ When a user has been inactive in Microsoft 365 web apps for the time period you 
 
     - Microsoft Purview Compliance Portal
     
-    - Azure Portal
-
-
 - Activity refers to any client-side user interaction happening in the context of the web app. For example, mouse clicks and keyboard presses.  
 
 - Idle session timeout works on a per-browser session basis. A user’s activity on Microsoft Edge is treated differently than their activity in other browsers such as Google Chrome. Users will be signed out from all tabs corresponding to their account within that browser session.
@@ -126,6 +125,8 @@ The following Microsoft 365 apps are supported.
 
 - SharePoint Online (SPO)
 
+- Microsoft Fabric
+
 - Microsoft365.com and other start pages
 
 - Microsoft 365 apps (Word, Excel, PowerPoint) on the web
@@ -136,9 +137,11 @@ The following Microsoft 365 apps are supported.
 
 - Microsoft Purview Compliance Portal
 
-- Azure Portal
-
 If you're working on a different web app with the same account, the activity in that web app won't be applied to the idle session timeout.
+
+### I am active in Azure Portal, but I am logged out of other M365 Apps for inactivity.  Why am I logged out?
+
+Azure Portal supports a similar inactivity feature, but is supported by Azure Portal only. For more information, see [Azure Portal: Signing-Out + Notification](/azure/azure-portal/set-preferences#signing-out--notifications).
 
 ### I want to make changes to the idle session timeout policy or delete it. How can I do that?
 

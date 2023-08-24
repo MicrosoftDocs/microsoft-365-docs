@@ -266,6 +266,17 @@ Updates are released for x86, x64, and ARM64 Windows architecture.
 
 For more information, see [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
+### 20230809.1
+
+- Defender package version: **20230809.1**
+- Security intelligence version: **1.395.68.0**
+- Engine version: **1.1.23070.1005**
+- Platform version: **4.18.23070.1004**
+
+#### Fixes
+
+- None
+
 ### 20230604.1
 
 - Defender package version: **20230604.1**
@@ -828,3 +839,4 @@ For more information, see [Microsoft Defender update for Windows operating syste
 
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+

@@ -2,11 +2,7 @@
 title: Technological partners of Microsoft 365 Defender
 ms.reviewer:
 description: View technological partners of M365 Defender to enhance detection, investigation, and threat intelligence capabilities of the platform.
-keywords: partners, technological partner, applications, third-party, SIEM, threat intelligence, sentinel, SOAR, cross platform, m365 integrations, dns security, network protection
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: v-aljupudi
 author: alekyaj
 ms.localizationpriority: medium
@@ -108,7 +104,6 @@ The following are the solution's categories:
 |[HYAS Protect](https://www.hyas.com/hyas-protect)|HYAS|HYAS Protect utilizes authoritative knowledge of attacker infrastructure to proactively protect MDE endpoints from cyber attacks.|
 |[Better Mobile Security Platform](https://go.microsoft.com/fwlink/?linkid=2202043)|Better Mobile Security Inc.|Provides solution for Threat, Phishing and Privacy Protection and Simulation.|
 |[Vulnerability Control](https://go.microsoft.com/fwlink/?linkid=2201965)|Skybox security|Global security posture management leader with solutions for vulnerability management and network security policy management.|
-|[Open NDR](https://go.microsoft.com/fwlink/?linkid=2201964)|Corelight|Augment device inventory in Microsoft 365 Defender with network evidence for complete visibility.|
 
 ### Identity security
 
@@ -186,3 +181,4 @@ The following are the solution's categories:
 - [Connect apps to get visibility and control|Microsoft Docs](/defender-cloud-apps/enable-instant-visibility-protection-and-governance-actions-for-your-apps)
 - [Partner applications in Microsoft Defender for Endpoint|Microsoft Docs](partner-applications.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+
