@@ -34,7 +34,7 @@ There are two main categories of tasks to perform, as listed in the following ta
 | Task type | Sections |
 |---|---|
 | Security tasks | [Daily security tasks](#daily-security-tasks) <br/><br/>[Weekly security tasks](#weekly-security-tasks)<br/><br/>[Monthly security tasks](#monthly-security-tasks)<br/><br/>[Security tasks to perform as needed](#security-tasks-to-perform-as-needed) |
-| General administration tasks | [General admin tasks](#general-admin-tasks)<br/><br/>[Users, groups, and passwords](#users-groups-and-passwords)<br/><br/>[Email and calendars](#email-and-calendars)<br/><br/>[Devices](#devices)<br/><br/>[Domains](#domains)<br/><br/>| 
+| General administration tasks | | 
 
 Within each group, you can see suggested tasks to perform daily, weekly, monthly, and as needed.
 
@@ -132,13 +132,9 @@ Within each group, you can see suggested tasks to perform daily, weekly, monthly
 
 ## General admin tasks
 
-Maintaining your Microsoft 365 Business Premium environment includes managing user accounts, managing devices, and keeping things up to date and working correctly. Use this article as an admin guide for your organization.
+Maintaining your environment includes managing user accounts, managing devices, and keeping things up to date and working correctly. If you're new to Microsoft 365, take a moment to get an [Overview of the Microsoft 365 admin center](../admin/admin-overview/admin-center-overview.md).
 
-Many admin tasks can be performed in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)), although some tasks, such as adding/removing devices, can be performed in other portals (such as the Microsoft 365 Defender portal or the Microsoft Intune admin center). 
-
-If you're new to Microsoft 365, take a moment to get an [Overview of the Microsoft 365 admin center](../admin/admin-overview/admin-center-overview.md).
-
-### General tasks
+### Admin center tasks
 
 | Task | Resources to learn more |
 |:---|:---|
