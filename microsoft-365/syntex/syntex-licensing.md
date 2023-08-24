@@ -32,7 +32,7 @@ In the future, most new Microsoft Syntex features will be added to pay-as-you-go
 > Microsoft Syntex is an add-on and requires users also to have a license for Microsoft 365.
 
 > [!NOTE] 
-> For Government Community Cloud (GCC) organizations, pay-as-you-go licensing is not yet available. GCC organizations can continue to purchase and use per-user licenses until pay-as-you-go becomes available.
+> For Government Community Cloud (GCC) and Department of Defense (DoD) organizations, pay-as-you-go licensing is not yet available. Government organizations can continue to purchase and use per-user licenses until pay-as-you-go becomes available.
 
 ## Microsoft Syntex pay-as-you-go
 
