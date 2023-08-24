@@ -134,7 +134,7 @@ Security tasks are typically performed by security administrators and security o
 
 ### Remediation actions for devices
 
-The following table summarizes remediation actions that are available in Defender for Business:
+The following table summarizes remediation actions that are available for devices in Microsoft 365 Business Premium and Defender for Business:
 
 | Source  | Actions  |
 |---------|---------|
