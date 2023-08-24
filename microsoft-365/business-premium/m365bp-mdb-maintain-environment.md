@@ -36,8 +36,6 @@ There are two main categories of tasks to perform, as listed in the following ta
 | **[Security tasks](#security-tasks)** | [Daily security tasks](#daily-security-tasks) <br/>[Weekly security tasks](#weekly-security-tasks)<br/>[Monthly security tasks](#monthly-security-tasks)<br/>[Security tasks to perform as needed](#security-tasks-to-perform-as-needed) |
 | **[General admin tasks](#general-admin-tasks)** | [Admin center tasks](#admin-center-tasks)<br/>[Users, groups, and passwords](#users-groups-and-passwords)<br/>[Email and calendars](#email-and-calendars)<br/>[Devices](#devices)<br/>[Devices](#devices)<br/>[Subscriptions and billing](#subscriptions-and-billing) | 
 
-Within each group, you can see suggested tasks to perform daily, weekly, monthly, and as needed.
-
 ## Security tasks
 
 Security tasks are typically performed by security administrators and security operators. [Learn more about admin roles](../admin/add-users/about-admin-roles.md) and [assign security roles and permissions](../security/defender-business/mdb-roles-permissions.md).
