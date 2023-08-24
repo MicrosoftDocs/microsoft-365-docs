@@ -134,7 +134,7 @@ Security tasks are typically performed by security administrators and security o
 
 ---
 
-### Remediation actions in Defender for Business
+### Remediation actions for devices
 
 The following table summarizes remediation actions that are available in Defender for Business:
 
