@@ -134,6 +134,16 @@ Security tasks are typically performed by security administrators and security o
 
 ---
 
+### Remediation actions in Defender for Business
+
+The following table summarizes remediation actions that are available in Defender for Business:
+
+| Source  | Actions  |
+|---------|---------|
+| **Automated investigations**      | Quarantine a file<br/>Remove a registry key<br/>Kill a process<br/>Stop a service<br/>Disable a driver<br/>Remove a scheduled task |
+| **Manual response actions**   | Run antivirus scan<br/>Isolate device<br/>Add an indicator to block or allow a file |
+| **Live response**  | <br/>Collect forensic data<br/>Analyze a file<br/>Run a script<br/>Send a suspicious entity to Microsoft for analysis<br/>Remediate a file<br/>Proactively hunt for threats |
+
 ## General admin tasks
 
 Maintaining your environment includes managing user accounts, managing devices, and keeping things up to date and working correctly. Admin tasks are typically performed by global admins and tenant admins. [Learn more about admin roles](../admin/add-users/about-admin-roles.md).
