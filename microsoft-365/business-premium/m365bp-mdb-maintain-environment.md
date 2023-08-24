@@ -33,8 +33,8 @@ There are two main categories of tasks to perform, as listed in the following ta
 
 | Task type | Sections |
 |---|---|
-| Security tasks | [Daily security tasks](#daily-security-tasks) <br/><br/>[Weekly security tasks](#weekly-security-tasks)<br/><br/>[Monthly security tasks](#monthly-security-tasks)<br/><br/>[Security tasks to perform as needed](#security-tasks-to-perform-as-needed) |
-| General administration tasks | [Admin center tasks](#admin-center-tasks)<br/><br/>[Users, groups, and passwords](#users-groups-and-passwords)<br/><br/> | 
+| **[Security tasks](#security-tasks)** | [Daily security tasks](#daily-security-tasks) <br/><br/>[Weekly security tasks](#weekly-security-tasks)<br/><br/>[Monthly security tasks](#monthly-security-tasks)<br/><br/>[Security tasks to perform as needed](#security-tasks-to-perform-as-needed) |
+| **[General admin tasks](#general-admin-tasks)** | [Admin center tasks](#admin-center-tasks)<br/><br/>[Users, groups, and passwords](#users-groups-and-passwords)<br/><br/> | 
 
 Within each group, you can see suggested tasks to perform daily, weekly, monthly, and as needed.
 
