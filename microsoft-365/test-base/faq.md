@@ -30,7 +30,7 @@ See the onboarding user guide for more information or contact our team at <testb
 
 **A:** Out-of-box (OOB) tests are standardized, default test runs where application packages are installed, launched and closed thirty (30) times, and then uninstalled.
 
-The packages created for Test Base will have the following test scripts: install, launch, close, and optionally the uninstall script.
+The packages created for Test Base has the following test scripts: install, launch, close, and optionally the uninstall script.
 
 The Out-of-box (OOB) tests provide you with standardized telemetry on your application to compare across Windows builds.
 
@@ -65,11 +65,11 @@ See the onboarding user guide for more information or contact our team at <testb
 
 **A:** We support all languages and frameworks. We invoke all scripts through PowerShell.
 
-You will also need to provide (upload) the dependent binaries of the required framework.
+You also need to provide (upload) the dependent binaries of the required framework.
 
 **Q: How soon does Test Base provide test results?**
 
-**A:** For each test that we run against the pre-release builds, we will provide results within 48 hours on your [Azure Portal](https://www.aka.ms/testbaseportal "Test Base Homepage") dashboard.
+**A:** For each test that we run against the pre-release builds, we provide results within 48 hours on your [Azure Portal](https://www.aka.ms/testbaseportal "Test Base Homepage") dashboard.
 
 **Q: Can you reboot after installation?**
 
@@ -79,17 +79,18 @@ For Out-of-box (OOB) tests, you can specify whether a reboot is needed for the _
 
 **Q: How long would my script run?**
 
-**A:** All customer scripts within the package has a script execution limit of 60 mins. Script executions after 60 mins will fail with a timeout error.
+**A:** All customer scripts within the package has a script execution limit of 60 mins. Script executions after 60 mins fail with a timeout error.
 
 **Q: How do I investigate time-out failure**
 
-**A:** 1. Check video recording:
-> a. to confirm if any Windows pop-up blocked the script execution.  
-> b. if command is running in interactive mode and was waiting for input. 
+**A:** 
+1. Check video recording:
+    1. to confirm if any Windows pop-up blocked the script execution.  
+    2. if command is running in interactive mode and was waiting for input. 
 2. Use VM snapshot to create VM to repro timeout and find out root cause.  
 3. Fix code issue continue testing.  
 4. If test running indeed exceeds 60 mins, split into multiple scripts below 60 mins. 
-> a. Run all testing job in one central script which doesn’t have time limit, monitor the status from multiple Test Base artifact scripts. 
+    1. Run all testing job in one central script which doesn’t have time limit, monitor the status from multiple Test Base artifact scripts. 
 
 ![Reboot picture.](Media/reboot.png)
 
@@ -115,13 +116,13 @@ We can also provide memory dumps for crash debugging as needed.
 
 **Q: If there are issues found during the testing, what are the next steps to resolve these issues?**
 
-**A:** The Test Base team will perform an initial triage process to determine the root cause of the error, and then depending on our findings, we will route to the customer or internal teams within Microsoft for debugging.
+**A:** The Test Base team performs an initial triage process to determine the root cause of the error, and then depending on our findings, we route to the customer or internal teams within Microsoft for debugging.
 
 We always work closely with our customers in joint remediation to resolve any issues.
 
 **Q: Does Microsoft hold the release of the security patch until the issue is resolved? What alternate resolutions are available?**
 
-**A:** The goal of Test Base is to ensure our joint end customers do not face any issues. We will work hard with Software Vendors to address any issues before the release, but in case the fix is not feasible we have other resolutions such as shims and blocks.
+**A:** The goal of Test Base is to ensure our joint end customers do not face any issues. We work hard with Software Vendors to address any issues before the release, but in case the fix is not feasible we have other resolutions such as shims and blocks.
 
 ## Miscellaneous
 
