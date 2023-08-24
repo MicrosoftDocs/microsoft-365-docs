@@ -24,7 +24,7 @@ description: "Learn about registration numbers and under-review notifications wh
 ms.date: 08/24/2023
 ---
 
-# About registration numbers and under review notifications
+# About registration numbers and under-review notifications in the Microsoft 365 admin center
 
 This article only applies to commercial customers who buy or activate business products or services directly from Microsoft.
 
