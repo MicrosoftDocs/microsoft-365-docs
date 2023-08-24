@@ -1,5 +1,5 @@
 ---
-title: Prerequisites for using the Teams Shifts connector for UKG Dimensions
+title: Prerequisites and considerations for the Teams Shifts connector for UKG Dimensions
 author: lana-chin
 ms.author: v-chinlana
 manager: serdars
@@ -20,13 +20,15 @@ appliesto:
 ms.date: 3/23/2023
 ---
 
-# Prerequisites for using the Teams Shifts connector for UKG Dimensions
+# Prerequisites and considerations for the Teams Shifts connector for UKG Dimensions
 
 ## Overview
 
 The [Microsoft Teams Shifts connector for UKG Dimensions](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-dimensions) (Preview) enables you to integrate the Shifts app in Microsoft Teams with UKG Dimensions. Your frontline workers can seamlessly view and manage their schedules in UKG Dimensions from within Shifts.
 
 You can use the [Shifts connector wizard](shifts-connector-wizard-ukg.md) (Preview) in the Microsoft 365 admin center or [PowerShell](shifts-connector-ukg-powershell-setup.md) to create a connection and connection instances. After they're set up, you can manage them in the Microsoft 365 admin center or by using PowerShell.
+
+This article gives you an overview of prerequisites, tasks to complete, and important concepts to understand, before you use the wizard or PowerShell to integrate Shifts in Teams with UKG Dimensions.
 
 ## Before you begin
 
@@ -56,20 +58,23 @@ Use PowerShell to remove schedule entities from teams.
 
 To learn more, see [Remove-CsTeamsShiftsScheduleRecord](/powershell/module/teams/remove-csteamsshiftsschedulerecord).
 
-## Understand how to set up Teams and Shifts based on your UKG Dimensions organizational structure
+## Roles and permissions in Teams and their impact on Shifts
 
-The way you set up and organize your teams in Teams depends on your UKG Dimensions configuration.
 
-## Example
+## Example scenario
 
-Contoso has hundreds of retail stores spread across the United Kingdom. Each store is located within an Area in the United Kingdom. To simplify this example, we focus on three stores in the Central London Area, to which they want to start rolling out Teams and Shifts for their frontline employees.
+The way you organize your teams in Teams depends on your UKG Dimensions configuration. Here's an example to help you understand how your UKG Dimensions structure influences the way you set up your teams and how your schedule information syncs to Shifts.
+
+Contoso has hundreds of retail stores spread across the United Kingdom. Each store is located within an Area in the United Kingdom. To simplify this example, we focus on three stores in the Central London Area, to which Contoso wants to start rolling out Teams and Shifts for their frontline employees.
 
 Assumptions:
 
 - Each store is managed by a different manager.
 - Frontline workers can't take on shifts from stores located outside their area. In other words, business rules set up in UKG Dimensions don't allow employees to work at other stores.
 
-The UKG Dimensions location structure looks something like this.
+#### UKG Dimensions location structure
+
+In this scenario, the UKG Dimensions location structure looks something like this.
 
 |Level |UKG Dimensions location |Nodes |
 |---------|---------|---------|
@@ -91,16 +96,39 @@ The UKG Dimensions location structure looks something like this.
 
 Based on the location structure, UKG Dimensions would provide the following information.
 
-|UKG Dimensions location |Workers |Primary job  |Reports to  |
+|UKG Dimensions location|Workers|Primary job|Reports to|
 |---------|---------|---------|---------|
-|Contoso/Retail/Central London/Soho|FLW1, FLW2<br>FLW3,FLW4<br>FLW5,FLW6,FLW7<br>FLW8,FLW9,FLW10        |Beauty advisor<br>Leather goods sales associate<br>Sales associate<br>Personal shopper|FLM1         |
-|Contoso/Retail/Central London/Covent Garden|FLW11,FLW12,FLW13,FLW14<br>FLW15,FLW16|Leather goods sales associate<br>Sales associate|FLM2|
-|Contoso/Retail/Central London/Chelsea|FLW17,FLW18,FLW19,FLW20<br>FLW21,FLW21,FLW23<br>FLW24     |Sales associate<br>Personal shopper<br>Beauty advisor|FLM3|
+|Contoso/Retail/Central London/Soho|FLW1, FLW2<br>FLW3, FLW4<br>FLW5, FLW6, FLW7<br>FLW8, FLW9, FLW10|Beauty advisor<br>Leather goods sales associate<br>Sales associate<br>Personal shopper|FLM1|
+|Contoso/Retail/Central London/Covent Garden|FLW11, FLW12, FLW13, FLW14<br>FLW15, FLW16|Leather goods sales associate<br>Sales associate|FLM2|
+|Contoso/Retail/Central London/Chelsea|FLW17, FLW18, FLW19, FLW20<br>FLW21, FLW21, FLW23<br>FLW24|Sales associate<br>Personal shopper<br>Beauty advisor|FLM3|
 
-In this scenario, the IT admin does the following:
+#### What implications does this have when setting up teams in Teams?
 
-1. Creates three different teams in Teams for each store within the Central London area: Soho Store, Covent Garden Store, Chelsea Store.
-1. Adds employees that belong to the corresponding UKG Dimensions location to each team, including the managers that the employees report to. Frontline workers are added as team members and frontline managers are added as team owners.
+In this scenario, the IT admin organizes teams in Teams as follows.
+
+1. Create three different teams for each store within the Central London area: Soho Store, Covent Garden Store, Chelsea Store.
+1. Add employees that belong to the corresponding UKG Dimensions location to each team, including managers that the employees report to. Frontline workers are added as team members and frontline managers are added as team owners.
+
+Here's how the team structure looks like for each store in the Central London Area.
+
+In this scenario, keep in mind that a frontline worker can only be a member of one team. This is because frontline workers aren't allowed to work at other stores.
+
+#### What implications does this have when running the Shifts connector wizard?
+
+When the IT admin sets up a connection instance in the wizard, each store location is mapped to the relevant team.
+
+|Store location  |Team name |
+|---------|---------|
+|Contoso/Retail/Central London/Soho|Soho Store|
+|Contoso/Retail/Central London/Covent Garden|Covent Garden Store|
+|Contoso/Retail/Central London/Chelsea|Chelsea Store
+
+#### What does this look like in Shifts?
+
+In Shifts, the scheduling groups of each team represent the primary jobs defined for the store location.
+
+- Frontline managers see employees within their respective scheduling groups.
+- Frontline workers see their own schedule and their team's schedule.
 
 
 <!--The Shifts connector wizard in the Microsoft 365 admin center enables you to integrate the Shifts app in Microsoft Teams with your workforce management (WFM) system. Your frontline workers can seamlessly view and manage their schedules in your WFM system from within Shifts.
