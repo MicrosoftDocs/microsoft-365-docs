@@ -581,7 +581,7 @@ Determines whether module load events are monitored using eBPF and scanned.
 
 #### Report AV Suspicious Events to EDR
 
-Determines whether suspicious events from AV are reported to EDR.
+Determines whether suspicious events from Antivirus are reported to EDR.
 
 |Description|Value|
 |---|---|
