@@ -264,7 +264,7 @@ For any mailbox moving from a source organization, you must provision a MailUser
       |                      | SMTP:Lara.Newton@northwindtraders.com                                                                                                |
       |                      | X500:/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=f161af74128f460fba5c0c23984b3d6c-Lara       |
 
-   Example **source** Mailbox object:
+         Example **source** Mailbox object:
 
       | Attribute            | Value                                                                                                                          |
       | -------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
