@@ -24,7 +24,7 @@ If your organization manages multiple Microsoft 365 tenants, you can set up a mu
 
 The tenant that creates the multi-tenant organization is known as the *owner* while other tenants that join the multi-tenant organization are known as *members*. Once the global administrator in the owner tenant creates the multi-tenant organization, they can invite member tenants. A global administrator in each member tenant can then join the multi-tenant organization.
 
-While you configure Microsoft 365 multi-tenant organizations in the Microsoft 365 admin center, much of the supporting infrastructure is in Azure Active Directory (Azure AD). For details about how multi-tenant organizations work in Azure AD, see [What is a multi-tenant organization in Azure Active Directory?](/azure/active-directory/multi-tenant-organizations/overview) and [Topologies for cross-tenant synchronization](/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-topology).
+While you configure Microsoft 365 multi-tenant organizations in the Microsoft 365 admin center, much of the supporting infrastructure is in Azure Active Directory (Azure AD). For details about how multi-tenant organizations work in Azure AD, see [What is a multi-tenant organization in Azure Active Directory?](/azure/active-directory/multi-tenant-organizations/multi-tenant-organization-overview) and [Topologies for cross-tenant synchronization](/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-topology).
 
 ## User synchronization between tenants
 
@@ -84,6 +84,7 @@ The following are limitations of the multi-tenant organizations in Microsoft 365
 - The ability to grant or revoke permission to receive notifications from other tenants and to switch between tenants isn't supported on mobile.
 - *People in your organization* links may not work for users from another tenant if their account had originally been a guest and they had previously accessed SharePoint resources.
 - It might take up to seven days for a user to appear in search once they've been synchronized. Contact Microsoft support if users aren't searchable after seven days.
+- Support for a guest UserType of member in Power BI is currently in preview. For more information, see [Distribute Power BI content to external guest users with Azure AD B2B](/power-bi/enterprise/service-admin-azure-ad-b2b#who-can-you-invite).
 
 If you want to add more than five tenants or 100,000 users per tenant, contact Microsoft support.
 
