@@ -56,18 +56,20 @@ Use PowerShell to remove schedule entities from teams.
 
 To learn more, see [Remove-CsTeamsShiftsScheduleRecord](/powershell/module/teams/remove-csteamsshiftsschedulerecord).
 
-## Understand roles and permissions in Teams and their impact on Shifts
+## Understand how to set up Teams and Shifts based on your UKG Dimensions organizational structure
+
+The way you set up and organize your teams in Teams depends on your UKG Dimensions configuration.
 
 ## Example
 
-Contoso has hundres of retail stores spread across the United Kingdom. Each shop is located in an area in the United Kingdom. To simplify this example, we focus on three shops in the Central London area, to which they want to start rolling out Teams and Shifts for their frontline employees.
+Contoso has hundreds of retail stores spread across the United Kingdom. Each store is located within an Area in the United Kingdom. To simplify this example, we focus on three stores in the Central London Area, to which they want to start rolling out Teams and Shifts for their frontline employees.
 
 Assumptions:
 
-- Each shop is managed by a different manager.
-- Frontline workers can't take on shifts from shops located outside their area. In other words, business rules set up in UKG Dimensions don't allow employees to work outside their primary job location.
+- Each store is managed by a different manager.
+- Frontline workers can't take on shifts from stores located outside their area. In other words, business rules set up in UKG Dimensions don't allow employees to work at other stores.
 
-The UKG Dimensions structure for Contoso looks something like this. 
+The UKG Dimensions location structure looks something like this.
 
 |Level |UKG Dimensions location |Nodes |
 |---------|---------|---------|
@@ -87,12 +89,18 @@ The UKG Dimensions structure for Contoso looks something like this.
 |    4|Personal shopper |Job|
 |    4|Beauty advisor |Job|
 
+Based on the location structure, UKG Dimensions would provide the following information.
 
-|UKG Dimensions location |Workers |Primary job  |Report to  |
+|UKG Dimensions location |Workers |Primary job  |Reports to  |
 |---------|---------|---------|---------|
 |Contoso/Retail/Central London/Soho|FLW1, FLW2<br>FLW3,FLW4<br>FLW5,FLW6,FLW7<br>FLW8,FLW9,FLW10        |Beauty advisor<br>Leather goods sales associate<br>Sales associate<br>Personal shopper|FLM1         |
 |Contoso/Retail/Central London/Covent Garden|FLW11,FLW12,FLW13,FLW14<br>FLW15,FLW16|Leather goods sales associate<br>Sales associate|FLM2|
 |Contoso/Retail/Central London/Chelsea|FLW17,FLW18,FLW19,FLW20<br>FLW21,FLW21,FLW23<br>FLW24     |Sales associate<br>Personal shopper<br>Beauty advisor|FLM3|
+
+In this scenario, the IT admin does the following:
+
+1. Creates three different teams in Teams for each store within the Central London area: Soho Store, Covent Garden Store, Chelsea Store.
+1. Adds employees that belong to the corresponding UKG Dimensions location to each team, including the managers that the employees report to. Frontline workers are added as team members and frontline managers are added as team owners.
 
 
 <!--The Shifts connector wizard in the Microsoft 365 admin center enables you to integrate the Shifts app in Microsoft Teams with your workforce management (WFM) system. Your frontline workers can seamlessly view and manage their schedules in your WFM system from within Shifts.
