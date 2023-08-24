@@ -92,7 +92,7 @@ You can add your VAT ID in the Microsoft 365 admin center. However, the steps to
 ### Add your VAT ID for your MOSA billing account
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
-   - If you're using the **Simplified view**, select **Subscriptions**.
+   - If you're using the **Simplified view**, select **Billing**.
    - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. Select the subscription that you want to update.
 3. On the subscription details page, in the **Service usage address** section, select **Edit service usage address**.
