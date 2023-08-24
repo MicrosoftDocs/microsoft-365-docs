@@ -34,13 +34,15 @@ There are two main categories of tasks to perform, as listed in the following ta
 | Task type | Sections |
 |---|---|
 | Security tasks | [Daily security tasks](#daily-security-tasks) <br/><br/>[Weekly security tasks](#weekly-security-tasks)<br/><br/>[Monthly security tasks](#monthly-security-tasks)<br/><br/>[Security tasks to perform as needed](#security-tasks-to-perform-as-needed) |
-| General administration tasks | | 
+| General administration tasks | [Admin center tasks](#admin-center-tasks)<br/><br/>[Users, groups, and passwords](#users-groups-and-passwords)<br/><br/> | 
 
 Within each group, you can see suggested tasks to perform daily, weekly, monthly, and as needed.
 
-## Daily security tasks
+## Security tasks
 
-## [**Microsoft 365 Business Premium**](#tab/M365BP)
+### Daily security tasks
+
+### [**Microsoft 365 Business Premium**](#tab/M365BP)
 
 | Task | Description  |
 |---------|---------|
@@ -50,7 +52,7 @@ Within each group, you can see suggested tasks to perform daily, weekly, monthly
 | Learn about new incidents or alerts | As threats are detected and alerts are triggered, incidents are created. Your company's security team can view and manage incidents in the Microsoft 365 Defender portal.<br/><br/>1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation menu, select **Incidents**. Incidents are displayed on the page with associated alerts.<br/><br/>2. Select an alert to open its flyout pane, where you can learn more about the alert.<br/><br/>3. In the flyout, you can see the alert title, view a list of assets (such as endpoints or user accounts) that were affected, take available actions, and use links to view more information and even open the details page for the selected alert. |
 | Run a scan or automated investigation | Your security team can initiate a scan or an automated investigation on a device that has a high risk level or detected threats. Depending on the results of the scan or automated investigation, [remediation actions](#remediation-actions-in-microsoft-365-business-premium) can occur automatically or upon approval.<br/><br/>1. In the Microsoft 365 Defender portal (https://security.microsoft.com), in the navigation pane, choose **Assets** > **Devices**.<br/><br/>2. Select a device to open its flyout panel, and review the information that is displayed.<br/>- Select the ellipsis (...) to open the actions menu.<br/>- Select an action, such as **Run antivirus scan** or **Initiate Automated Investigation**. |
 
-## [**Defender for Business**](#tab/MDB)
+### [**Defender for Business**](#tab/MDB)
 
 | Task | Description  |
 |---------|---------|
@@ -62,16 +64,16 @@ Within each group, you can see suggested tasks to perform daily, weekly, monthly
 
 ---
 
-## Weekly security tasks
+### Weekly security tasks
 
-## [**Microsoft 365 Business Premium**](#tab/M365BP)
+### [**Microsoft 365 Business Premium**](#tab/M365BP)
 
 | Task | Description  |
 |---------|---------|
 | Monitor and improve your Microsoft Secure score | Microsoft Secure Score is a measurement of your organization's security posture. Higher numbers indicate that fewer improvement actions are needed. By using Secure Score, you can: <br/>- Report on the current state of your organization's security posture.<br/>- Improve your security posture by providing discoverability, visibility, guidance, and control.<br/>- Compare with benchmarks and establish key performance indicators (KPIs).<br/><br/>To check your score, follow these steps:<br/><br/>1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane choose **Secure score**. <br/><br/>2. Review and make decisions about the remediations and actions in order to improve your overall Microsoft secure score. |
 | Improve your secure score for devices | Improve your security configuration by remediating issues using the security recommendations list. As you do so, your Microsoft Secure Score for Devices improves and your organization becomes more resilient against cybersecurity threats and vulnerabilities going forward. It's always worth the time it takes to review and improve your score.<br/><br/>To check your secure score, follow these steps: <br/><br/>1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane select **Secure score**.<br/><br/>2. From the **Microsoft Secure Score for Devices** card in the Defender Vulnerability Management dashboard, select one of the categories. A list of recommendations related to that category displays, along with recommendations.<br/><br/>3.Select an item on the list to display details related to the recommendation.<br/><br/>4. Select **Remediation options**.<br/><br/>5. Read the description to understand the context of the issue and what to do next. Choose a due date, add notes, and select **Export all remediation activity data to CSV** so you can attach it to an email for follow-up. A confirmation message tells you the remediation task has been created.<br/><br/>6. Send a follow-up email to your IT Administrator and allow for the time that you've allotted for the remediation to propagate in the system.<br/><br/>7. Return to the Microsoft Secure Score for Devices card on the dashboard. The number of security controls recommendations has decreased as a result of your actions.<br/><br/>8. Select **Security controls** to go back to the Security recommendations page. The item that you addressed isn't listed there anymore, which results in your Microsoft secure score improving. |
 
-## [**Defender for Business**](#tab/MDB)
+### [**Defender for Business**](#tab/MDB)
 
 | Task | Description  |
 |---------|---------|
@@ -80,9 +82,9 @@ Within each group, you can see suggested tasks to perform daily, weekly, monthly
 
 ---
 
-## Monthly security tasks
+### Monthly security tasks
 
-## [**Microsoft 365 Business Premium**](#tab/M365BP)
+### [**Microsoft 365 Business Premium**](#tab/M365BP)
 
 | Task | Description  |
 |---------|---------|
@@ -90,7 +92,7 @@ Within each group, you can see suggested tasks to perform daily, weekly, monthly
 | Run a simulation tutorial | It's always a good idea to increase the security preparedness for you and your team through training. You can access simulation tutorials in the Microsoft 365 Defender portal. The tutorials cover several types of cyber threats. To get started, follow these steps:<br/><br/>1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Tutorials**.<<br/><br/>2. Read the walk-through for a tutorial you're interested in running, and then download the file, or copy the script needed to run the simulation according to the instructions. |
 | Explore the Learning hub | Use the Learning hub to increase your knowledge of cybersecurity threats and how to address them. We recommend exploring the resources that are offered, especially in the Microsoft 365 Defender and Endpoints sections.<br/><br/>1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Learning hub**.<br/><br/>2. Select an area, such as **Microsoft 365 Defender** or **Endpoints**.<br/><br/>3. Select an item to learn more about each concept. <br/><br/>Note that some resources in the Learning hub might cover functionality that isn't actually included in Microsoft 365 Business Premium. For example, advanced hunting capabilities are included in enterprise subscriptions, such as Defender for Endpoint Plan 2 or Microsoft 365 Defender, but not in Microsoft 365 Business Premium. [Compare security features in Microsoft 365 plans for small and medium-sized businesses](../security/defender-business/compare-mdb-m365-plans.md). |
 
-## [**Defender for Business**](#tab/MDB)
+### [**Defender for Business**](#tab/MDB)
 
 | Task | Description  |
 |---------|---------|
@@ -100,9 +102,9 @@ Within each group, you can see suggested tasks to perform daily, weekly, monthly
 
 ---
 
-## Security tasks to perform as needed
+### Security tasks to perform as needed
 
-## [**Microsoft 365 Business Premium**](#tab/M365BP)
+### [**Microsoft 365 Business Premium**](#tab/M365BP)
 
 | Task | Description  |
 |---------|---------|
@@ -115,7 +117,7 @@ Within each group, you can see suggested tasks to perform daily, weekly, monthly
 | **Onboard or offboard devices**  | As devices are replaced or retired, new devices are purchased, or your business needs change, you can onboard or offboard devices from Defender for Business. <br/><br/>See the following articles: <br/>- [Onboard devices to Microsoft Defender for Business](../security/defender-business/mdb-onboard-devices.md) <br/>- [Offboard a device from Microsoft Defender for Business](../security/defender-business/mdb-offboard-devices.md) |
 | Remediate an item | Microsoft 365 Business Premium includes several [remediation actions](#remediation-actions-in-microsoft-365-business-premium). Some actions are taken automatically, and others await approval by your security team.<br/><br/>1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, go to **Assets** > **Devices**.<br/><br/>2. Select a device, such as one with a high risk level or exposure level. A flyout pane opens and displays more information about alerts and incidents generated for that item.<br/><br/>3. On the flyout, view the information that is displayed. Select the ellipsis (...) to open a menu that lists available actions.<br/><br/>4. Select an available action. For example, you might choose **Run antivirus scan**, which will cause Microsoft Defender Antivirus to start a quick scan on the device. Or, you could select **Initiate Automated Investigation** to trigger an automated investigation on the device. |
 
-## [**Defender for Business**](#tab/MDB)
+### [**Defender for Business**](#tab/MDB)
 
 | Task | Description  |
 |---------|---------|
