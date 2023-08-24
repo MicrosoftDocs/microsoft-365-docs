@@ -20,7 +20,7 @@ ms.collection:
 ms.custom:
 - MiniMaven
 search.appverid:
-- BCS160
+- BCS160[Email and calendars](#email-and-calendars)
 - MET150
 description: "Keep your systems, devices, user accounts, and security policies up to date to help protect against cyberattacks."
 ---
@@ -34,7 +34,7 @@ There are two main categories of tasks to perform, as listed in the following ta
 | Task type | Sections |
 |---|---|
 | **[Security tasks](#security-tasks)** | [Daily security tasks](#daily-security-tasks) <br/><br/>[Weekly security tasks](#weekly-security-tasks)<br/><br/>[Monthly security tasks](#monthly-security-tasks)<br/><br/>[Security tasks to perform as needed](#security-tasks-to-perform-as-needed) |
-| **[General admin tasks](#general-admin-tasks)** | [Admin center tasks](#admin-center-tasks)<br/><br/>[Users, groups, and passwords](#users-groups-and-passwords)<br/><br/> | 
+| **[General admin tasks](#general-admin-tasks)** | [Admin center tasks](#admin-center-tasks)<br/><br/>[Users, groups, and passwords](#users-groups-and-passwords)<br/><br/>[Email and calendars](#email-and-calendars)<br/><br/>[Devices](#devices)<br/><br/>[Devices](#devices)<br/><br/>[Subscriptions and billing](#subscriptions-and-billing) | 
 
 Within each group, you can see suggested tasks to perform daily, weekly, monthly, and as needed.
 
