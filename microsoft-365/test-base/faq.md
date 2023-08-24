@@ -28,7 +28,7 @@ See the onboarding user guide for more information or contact our team at <testb
 
 **Q: What are Out-of-box (OOB) tests?**
 
-**A:** Out-of-box (OOB) tests are standardized, default test runs where application packages are installed, launched and closed thirty (30) times, and then uninstalled.
+**A:** Out-of-box (OOB) tests are standardized, default test runs where application packages are installed, launched and closed 30 times, and then uninstalled.
 
 The packages created for Test Base has the following test scripts: install, launch, close, and optionally the uninstall script.
 
@@ -77,21 +77,6 @@ You also need to provide (upload) the dependent binaries of the required framewo
 
 For Out-of-box (OOB) tests, you can specify whether a reboot is needed for the _Install script._
 
-**Q: How long would my script run?**
-
-**A:** All customer scripts within the package has a script execution limit of 60 mins. Script executions after 60 mins fail with a timeout error.
-
-**Q: How do I investigate time-out failure**
-
-**A:** 
-1. Check video recording:
-    1. to confirm if any Windows pop-up blocked the script execution.  
-    2. if command is running in interactive mode and was waiting for input. 
-2. Use VM snapshot to create VM to repro timeout and find out root cause.  
-3. Fix code issue continue testing.  
-4. If test running indeed exceeds 60 mins, split into multiple scripts below 60 mins. 
-    1. Run all testing job in one central script which doesn’t have time limit, monitor the status from multiple Test Base artifact scripts. 
-
 ![Reboot picture.](Media/reboot.png)
 
 While for functional tests, you can specify whether a reboot is required for each script that is added.
@@ -105,6 +90,21 @@ While for functional tests, you can specify whether a reboot is required for eac
 **Q: What is the difference between Security Update tests and Feature Update tests?**
 
 **A:** For Security update tests, we test against the **<ins>monthly pre-release security updates</ins>** on Windows, which is focused on keeping our users always secure and protected. For the Feature update tests, we test against the **<ins>bi-annual pre-release feature updates</ins>** which introduce new features and capabilities on Windows.
+
+**Q: How long would my script run?**
+
+**A:** All customer scripts within the package has a script execution limit of 60 mins. Script executions after 60-mins fail with a timeout error.
+
+**Q: How do I investigate time-out failure**
+
+**A:** 
+1. Check video recording:
+    1. to confirm if any Windows pop-up blocked the script execution.  
+    2. if command is running in interactive mode and was waiting for input. 
+2. Use VM snapshot to create VM to repro timeout and find out root cause.  
+3. Fix code issue continue testing.  
+4. If test running indeed exceeds 60 mins, split into multiple scripts below 60 mins. 
+    1. Run all testing job in one central script which doesn’t have time limit, monitor the status from multiple Test Base artifact scripts. 
 
 ## Debugging options
 
