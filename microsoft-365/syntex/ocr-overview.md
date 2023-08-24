@@ -46,11 +46,11 @@ The OCR service supports multiple solutions, as shown in the following table. Fo
 
 |Location    |Supported solution  |
 |---------|---------|
-|Exchange           |Text is available for end-user search and search-driven solutions.<br>Text is available for [compliance solutions](https://learn.microsoft.com/en-us/purview/ocr-learn-about#supported-locations-and-solutions). |
-|SharePoint sites   |Text is available for end-user search and search-driven solutions.<br>Text is available for [compliance solutions](https://learn.microsoft.com/en-us/purview/ocr-learn-about#supported-locations-and-solutions). |
-|OneDrive accounts  |Text is available for end-user search and search-driven solutions.<br>Text is available for [compliance solutions](https://learn.microsoft.com/en-us/purview/ocr-learn-about#supported-locations-and-solutions). |
-|Teams chat and channel message  |Text is available for [compliance solutions](https://learn.microsoft.com/en-us/purview/ocr-learn-about#supported-locations-and-solutions). |
-|Devices            | Text is available for [compliance solutions](https://learn.microsoft.com/en-us/purview/ocr-learn-about#supported-locations-and-solutions).    |
+|Exchange           |Text is available for end-user search and search-driven solutions.<br>Text is available for [compliance solutions](/purview/ocr-learn-about#supported-locations-and-solutions). |
+|SharePoint sites   |Text is available for end-user search and search-driven solutions.<br>Text is available for [compliance solutions](/en-us/purview/ocr-learn-about#supported-locations-and-solutions). |
+|OneDrive accounts  |Text is available for end-user search and search-driven solutions.<br>Text is available for [compliance solutions](/purview/ocr-learn-about#supported-locations-and-solutions). |
+|Teams chat and channel message  |Text is available for [compliance solutions](/purview/ocr-learn-about#supported-locations-and-solutions). |
+|Devices            | Text is available for [compliance solutions](/purview/ocr-learn-about#supported-locations-and-solutions).    |
 
 ### File limitations
 
