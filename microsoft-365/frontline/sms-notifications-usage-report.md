@@ -37,12 +37,6 @@ To access the report, you must be a Global admin, Teams admin, Global reader, or
 1. In the left navigation of the Teams admin center, choose **Analytics & reports** > **Usage reports**. On the **View reports** tab, under **Report**, select **SMS notifications usage**.
 2. Under **Date range**, select a date range of 7 days, 30 days, or 90 days. Then, choose **Run report**.
 
-    <!--The report contains the following information:
-    
-    |Tab |Description  |
-    |---------|---------|
-    |**[Distribution](#distribution)** |Shows a breakdown of the number of SMS notifications sent in Bookings appointments and in Teams Electronic Health Record (EHR)-integrated appointments.|-->
-
 ## Interpret the report
 
 On the **Distribution** tab, you'll see a chart that provides an overview of SMS notifications usage, by month, for the date range that you selected. The table shows distribution details for each SMS notification that was sent.
