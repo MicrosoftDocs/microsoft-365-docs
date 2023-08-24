@@ -1,5 +1,5 @@
 ---
-title: "Maintain Microsoft 365 Business Premium and Defender for Business"
+title: "Monitor and maintain Microsoft 365 Business Premium and Defender for Business"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -25,9 +25,9 @@ search.appverid:
 description: "Keep your systems, devices, user accounts, and security policies up to date to help protect against cyberattacks."
 ---
 
-# Maintain Microsoft 365 Business Premium and Defender for Business
+# Monitor and maintain Microsoft 365 Business Premium and Defender for Business
 
-After you have set up and configured [Microsoft 365 Business Premium](index.md) or [Microsoft Defender for Business](../security/defender-business/mdb-overview.md) (standalone), your next step is to prepare a plan for maintenance and operations. You can use this article as a guide to prepare your plan. 
+After you have set up and configured [Microsoft 365 Business Premium](index.md) or [Microsoft Defender for Business](../security/defender-business/mdb-overview.md) (standalone), your next step is to prepare a plan for maintenance and operations. It's important to keep your systems, devices, user accounts, and security policies up to date to help protect against cyberattacks. You can use this article as a guide to prepare your plan. 
 
 There are two main categories of tasks to perform, as listed in the following table:
 
