@@ -44,12 +44,11 @@ Content created in a Loop workspace is stored in Syntex repository services. You
 Syntex repository services has many of the same compliance capabilities as the rest of SharePoint and OneDrive. However, the capabilities below are **not available** yet for content created in Loop workspaces. While we continue to improve rapidly in this area, if you require any of these capabilities, Microsoft recommends proactively disabling Loop workspaces using the instructions here: [Manage Loop workspaces in Syntex repository services](/microsoft-365/loop/loop-workspaces-configuration):
 
 - [Intune Device Management Support](/mem/intune/remote-actions/device-management)
-- Third-party tools for discovery workflows and Graph API to convert Loop content into HTML for export
+- Graph API to convert Loop content into HTML for export
 - Tenant admin experience: Restoring a deleted workspace
 - End-user ability to see or set [Retention Labels](/microsoft-365/compliance/retention-policies-sharepoint)
 - [Sensitivity Labeling](/microsoft-365/compliance/information-protection) (Microsoft Information Protection) at the File-level and Container-level
 - End-user ability to see [Data Loss Prevention (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) policy tips
-- Audit logs with Loop tag to be able to filter on Loop activity related to item/entity creation, access, alteration, and deletion
 - Multiple owners on a workspace
 - [Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo) account move support
 - [Conditional Access](/azure/active-directory/conditional-access/overview) 
