@@ -136,7 +136,9 @@ Security tasks are typically performed by security administrators and security o
 
 ## General admin tasks
 
-Maintaining your environment includes managing user accounts, managing devices, and keeping things up to date and working correctly. If you're new to Microsoft 365, take a moment to get an [Overview of the Microsoft 365 admin center](../admin/admin-overview/admin-center-overview.md).
+Maintaining your environment includes managing user accounts, managing devices, and keeping things up to date and working correctly. Admin tasks are typically performed by global admins and tenant admins. [Learn more about admin roles](../admin/add-users/about-admin-roles.md).
+
+If you're new to Microsoft 365, take a moment to get an [Overview of the Microsoft 365 admin center](../admin/admin-overview/admin-center-overview.md).
 
 ### Admin center tasks
 
