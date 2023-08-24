@@ -57,7 +57,7 @@ Loop workspaces don't use Microsoft 365 groups for access management, instead th
 
 Loop content (pages and components) created in the Loop app are discoverable and have eDiscovery workflow support using the Microsoft Purview tool. As mentioned above, these files are stored in [Syntex repository services](https://devblogs.microsoft.com/microsoft365dev/introducing-syntex-repository-services-microsoft-365-superpowers-for-your-app/) and are available for search and collection, and render in review for both eDiscovery (Standard) and eDiscovery (Premium). The HTML offline export format is supported on eDiscovery (Premium). You can also download and re-upload the files to any OneDrive to view them in their native format.
 
-A third-party graph export API solution is also available for Loop pages and components that supports both raw export and an HTML offline format.
+A graph export API solution is also available for Loop pages and components that supports both raw export and an HTML offline format.
 
 ## Storage management after user departure
 
