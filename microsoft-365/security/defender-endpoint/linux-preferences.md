@@ -579,7 +579,18 @@ Determines whether module load events are monitored using eBPF and scanned.
 |**Possible values**|disabled (default) <p> enabled|
 |**Comments**|Available in Defender for Endpoint version 101.68.80 or higher.|
 
-#### Network protection configurations
+#### Report AV Suspicious Events to EDR feature
+
+Determines whether suspicious events from AV are reported to EDR.
+
+|Description|Value|
+|---|---|
+|**Key**|sendLowfiEvents|
+|**Data type**|String|
+|**Possible values**|disabled (default) <p> enabled|
+|**Comments**|Available in Defender for Endpoint version 101.23062.0010 or higher.|
+
+### Network protection configurations
 
 The following settings can be used to configure advanced Network Protection inspection features to control what traffic gets inspected by Network Protection.
 
@@ -592,7 +603,7 @@ The following settings can be used to configure advanced Network Protection insp
 |**Data type**|Dictionary (nested preference)|
 |**Comments**|See the following sections for a description of the dictionary contents.|
 
-##### Configure ICMP inspection
+#### Configure ICMP inspection
 Determines whether ICMP events are monitored and scanned.
 
 >[!NOTE]
@@ -603,17 +614,6 @@ Determines whether ICMP events are monitored and scanned.
 |**Key**|disableIcmpInspection|
 |**Data type**|Boolean|
 |**Possible values**|true (default) <p> false|
-|**Comments**|Available in Defender for Endpoint version 101.23062.0010 or higher.|
-
-#### Report AV Suspicious Events to EDR feature
-
-Determines whether suspicious events from AV are reported to EDR.
-
-|Description|Value|
-|---|---|
-|**Key**|sendLowfiEvents|
-|**Data type**|String|
-|**Possible values**|disabled (default) <p> enabled|
 |**Comments**|Available in Defender for Endpoint version 101.23062.0010 or higher.|
 
 ## Recommended configuration profile
