@@ -20,7 +20,8 @@ appliesto:
 
 # Microsoft Teams in Attack simulation training
 
-[!include[Prerelease information](../../includes/prerelease.md)]
+>[!Note]
+>Microsoft Teams in Attack Simulation Training is currently in a private preview stage of development. As an unfinished project, any information or availability is subject to change at any time. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
