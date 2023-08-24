@@ -42,7 +42,7 @@ The OCR service supports more than [150 languages](/azure/cognitive-services/lan
 
 ### Supported locations and solutions
 
-The OCR service supports multiple solutions, as shown in the following table. For details about compliance solutions, see [Supported locations and solutions in Microsoft Purview](https://learn.microsoft.com/en-us/purview/ocr-learn-about#supported-locations-and-solutions).
+The OCR service supports multiple solutions, as shown in the following table. For details about compliance solutions, see [Supported locations and solutions in Microsoft Purview](/purview/ocr-learn-about#supported-locations-and-solutions).
 
 |Location    |Supported solution  |
 |---------|---------|
