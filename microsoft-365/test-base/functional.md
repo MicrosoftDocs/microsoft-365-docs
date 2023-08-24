@@ -38,7 +38,8 @@ To get started, navigate to the Upload page, select Upload new application under
 
 Tab 1 - Enter basic information. Provide the name and version of your application. In the Type of test option, select ```Functional tests```. 
 
-*The Out-of-Box (OOB) option is required by default.*
+> [!NOTE]
+> Scripts within packages all have an execution time limit of 60 mins. Scripts execution after 60 minutes would time out.
 
 
 ![Select the functional testing tab.](Media/functional_testing_tab1.png)
