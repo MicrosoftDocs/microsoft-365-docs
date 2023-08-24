@@ -579,7 +579,7 @@ Determines whether module load events are monitored using eBPF and scanned.
 |**Possible values**|disabled (default) <p> enabled|
 |**Comments**|Available in Defender for Endpoint version 101.68.80 or higher.|
 
-#### Report AV Suspicious Events to EDR feature
+#### Report AV Suspicious Events to EDR
 
 Determines whether suspicious events from AV are reported to EDR.
 
