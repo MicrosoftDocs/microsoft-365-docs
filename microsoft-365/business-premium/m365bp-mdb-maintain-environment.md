@@ -40,6 +40,8 @@ Within each group, you can see suggested tasks to perform daily, weekly, monthly
 
 ## Security tasks
 
+Security tasks are typically performed by security administrators and security operators. [Learn more about admin roles](../admin/add-users/about-admin-roles.md) and [assign security roles and permissions](../security/defender-business/mdb-roles-permissions.md).
+
 ### Daily security tasks
 
 ### [**Microsoft 365 Business Premium**](#tab/M365BP)
