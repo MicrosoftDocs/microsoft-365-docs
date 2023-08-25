@@ -20,8 +20,8 @@ f1.keywords: NOCSH
 
 ## Package Validation
 
-When a [new package](buildpackage.md) is created or onboarded to Test Base, a validation run is triggered. The purpose of the validation run is to check the package and make sure it is ready for testing. 
-Packages that are undergoing verification is marked with "Verifying package" status.
+When a [new package](buildpackage.md) is created or onboarded to Test Base, a validation run is triggered. The purpose of the validation run is to check the package and make sure it's ready for testing. 
+Packages that are undergoing verification are marked with "Verifying package" status.
 
 To see the verification status of your package, you can click the "Manage Package" menu 
 
@@ -65,6 +65,6 @@ When you upload a package, Test Base makes some decision based on the test types
 1. If a customer selects only Security Update, Test Base triggers package validation against the most recent product selected. After successful package validation and if package is Accepted, Test Base will proceed to schedule the package for baseline runs if the customer had selected more than one product. 
 As an example, if a customer selects Windows 11 22H2, Windows 11 21H2 and Windows 10 22H2. Test Base triggers the validation run against "Windows 11 22H2". If the package gets accepted, a baseline run will be triggered against the next 2 products.
 
-2. If the customer select only Feature Update as test type, the validation scheduling process is a little different.
+2. If the customer selects only Feature Update as test type, the validation scheduling process is a little different.
 Test Base triggers a validation run against the selected Feature Update (The customer can see the results in "Feature Update test Results"). When the package is accepted, a baseline line run is triggered against n - 1 product  with latest security update. 
-For example, if a customer select Windows 11 22H2 Feature Update, the baseline runs will be Windows 11 21H2 with the latest security updates.
+For example, if a customer selects Windows 11 22H2 Feature Update, the baseline runs will be Windows 11 21H2 with the latest security updates.
