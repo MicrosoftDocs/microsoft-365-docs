@@ -26,7 +26,7 @@ ms.date: 08/25/2023
 
 ![Information icon](media/info.png) **This feature requires [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams).**
 
-The SMS notifications usage report in the Microsoft Teams admin center gives you an overview of SMS notifications usage for virtual appointments in your organization. It provides usage data for SMS notifications sent in the Virtual Appointments app and in Teams Electronic Health Record (EHR)-integrated appointments.
+The SMS notifications usage report in the Microsoft Teams admin center gives you an overview of SMS notifications usage for virtual appointments in your organization. It provides usage data for SMS notifications sent in the Virtual Appointments app, in meetings scheduled using the Virtual appointment meeting template, and in Teams Electronic Health Record (EHR)-integrated appointments.
 
 You can track key data for confirmation and reminder text messages sent to external attendees in virtual appointments scheduled by your staff. The report provides information such as date and time sent, notification type, distribution details, and delivery status.
 
@@ -46,7 +46,7 @@ On the **Distribution** tab, you'll see a chart that provides an overview of SMS
 |**1**   |Each report has a date for when the report was generated. The reports usually reflect a 24 to 48-hour latency from time of activity. |
 |**2**   |The X axis is the selected date range for the report, by month. The Y axis is the number of SMS notifications.<br>Hover over the dot on a given month to see the number of SMS notifications sent during that time period.|
 |**3**   |You can filter what you see on the chart by selecting an item. For example, select **SMS sent in EHR** or **SMS sent in Virtual Appointments** to see only the info related to each one. Changing this selection doesn’t change the information in the table.|
-|**4**   |The table gives you detailed information about each SMS notification that was sent during the selected date range. <ul><li>**Sent time (UTC)** is the date and time when the notification was sent.</li> <li>**Sent from** indicates the source of the notification (toll-free number or sender service).</li> <li>**SMS notification type** shows whether the notification is an appointment reminder or confirmation.</li> <li>**Product type** indicates the product used to schedule the appointment.</li> <li>**Status** shows the delivery status. To learn more, see [Delivery status descriptions](#delivery-status-descriptions).</li></ul> |
+|**4**   |The table gives you detailed information about each SMS notification that was sent during the selected date range. <ul><li>**Sent time (UTC)** is the date and time when the notification was sent.</li> <li>**Sent from** indicates the source of the notification (toll-free number or sender service).</li> <li>**SMS notification type** shows whether the notification is an appointment reminder or confirmation.</li> <li>**Product type** indicates the product used to schedule the appointment. For example, **VA template** indicates that the appointment was scheduled using the Virtual appointment meeting template.</li> <li>**Status** shows the delivery status. To learn more, see [Delivery status descriptions](#delivery-status-descriptions).</li></ul> |
 
 ### Delivery status descriptions
 
