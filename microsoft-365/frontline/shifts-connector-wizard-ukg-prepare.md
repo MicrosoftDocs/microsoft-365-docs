@@ -30,7 +30,7 @@ You can use the [Shifts connector wizard](shifts-connector-wizard-ukg.md) (Previ
 
 <!--This article gives you an overview of prerequisites, configuration tasks to complete, and important concepts to keep in mind, before you use the wizard or PowerShell to integrate Shifts in Teams with UKG Dimensions.-->
 
-This article lists requirements, prerequisites, and configuration tasks that you must complete before you use the wizard or PowerShell to integrate Shifts in Teams with UKG Dimensions. It also gives you an overview of important concepts around how your UKG Dimension structure influences the way you set up your teams in Teams.
+This article lists requirements, prerequisites, and configuration tasks that you must complete before you use the wizard or PowerShell to create a connection. It also gives you an overview of important concepts around how your UKG Dimension structure influences the way you set up your teams in Teams.
 
 ## Before you begin
 
@@ -72,7 +72,7 @@ Here's the list of information to gather and configuration tasks to complete bef
 
 - Configure federated SSO authentication in your UKG Dimensions environment.
 
-    For steps on how to do this, see the [Configure UKG Dimensions single sign-on](#configure-single-sign-on) section in this article.
+    See the [Configure UKG Dimensions single sign-on](#configure-single-sign-on) section in this article for steps on how to configure SSO.
 
 - Create at least one team in Teams, and add the following account and people to the team:
 
@@ -120,11 +120,11 @@ To learn more, see [Remove-CsTeamsShiftsScheduleRecord](/powershell/module/teams
 
 ## Understand how your UKG Dimensions organizational structure influences Teams and Shifts setup
 
-The way you organize your teams in Teams depends on your UKG Dimensions configuration.
+The way you organize your teams in Teams depends on your UKG Dimensions structure.
 
 As mentioned earlier, Shifts supports grouping users by location in UKG Dimensions. In UKG Dimensions, the nodes in each location represent the hierarchy in your organizational chart. A location path reaches its endpoint when a job type is configured.
 
-Users in UKG Dimensions are assigned and grouped by primary jobs that exist within a location. This means that from a Teams and Shifts standpoint, employees who have the same location path are part of the same team. Scheduling groups in Shifts represent the job types.
+Users in UKG Dimensions are assigned and grouped by primary jobs that exist within a location. This means that from a Teams and Shifts standpoint, employees who have the same location path up to the node before job type are part of the same team. The job type in a location path is represented as a scheduling group in Shifts.
 
 ## Example
 
