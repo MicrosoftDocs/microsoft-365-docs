@@ -35,13 +35,13 @@ No SLA applies to this Feature Preview.
 
 THE PREVIEW FEATURE IS PROVIDED “AS-IS,” “WITH ALL FAULTS,” AND “AS AVAILABLE.”  Microsoft provides no performance guarantee for the Feature Preview (including accompanying URLs provided for embedded or unauthenticated viewing) and Company bears the risk of using it.  The Feature Preview is not included in the SLA for Microsoft Syntex and may not be covered by customer support.
 
-**LICENSE**
+**<ins>LICENSE</ins>**
 
 If Company provides Input, including feedback, Company grants to Microsoft, without charge, the non-exclusive License to make, modify, distribute, or otherwise commercialize the Input as part of any Microsoft offering.
 
 Company retains all right, title and interest in and to the Input.  The above License does not extend to any technologies that may also be necessary to make or use any offering or portion thereof that incorporates the Input but are not themselves expressly part of the Input (e.g., enabling technologies).  
 
-**PAYMENT TERMS**
+**<ins>PAYMENT TERMS</ins>**
 
 Syntex OCR services use pay-as-you-go billing through an Azure subscription. Syntex OCR services billing is determined the number of pages processed for images (JPEG, JPG, PNG, or BMP); the number of pages processed for PDF, TIF, or TIFF; or the number of embedded images in Teams chats and email messages. Each of these counts as one transaction. Processing occurs every time the file is edited. Company will be able to view this usage as meter events through the Azure subscription it chooses.  
 
@@ -63,7 +63,7 @@ Prerequisites to enable Syntex OCR services pay-as-you-go are:
 
 (v) An AAD appID in the same tenancy.  
 
-**INFORMATION USE AND DISCLOSURE**
+**<ins>INFORMATION USE AND DISCLOSURE</ins>**
 
 With respect to the Syntex OCR services, Microsoft may access or disclose information about Company, its account, and the content of its communications in order to:  
 
@@ -73,7 +73,7 @@ b) comply with the law or respond to lawful requests or legal process; or
 
 c) protect the rights or property of Microsoft or our customers, including the enforcement of Microsoft’s agreements or policies governing the use of the Syntex repository services.
 
-**Data Processing and Transfers**
+**<ins>Data Processing and Transfers</ins>**
 
 To the extent Microsoft is a processor of Personal Data subject to the European Union’s General Data Protection Regulation (“GDPR”), the GDPR Terms set forth in Attachment 1 govern that processing and the parties also agree to the following terms. For the purpose of this section, the term “Personal Data” means any information relating to an identified or identifiable natural person. An identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural, or social identity of that natural person:  
 
@@ -97,17 +97,17 @@ b) Data Transfers.
 
    iii. In addition, Microsoft is certified to meet the EU-U.S. and Swiss-U.S. Privacy Shield Frameworks and the commitments they entail. Microsoft agrees to notify Company in the event that it determines that it can no longer meet its obligation to provide the same level of protection as is required by the Privacy Shield principles.
 
-**Acknowledgments and Consent by Company**
+**<ins>Acknowledgments and Consent by Company</ins>**
 
 If Company collects, stores, or processes Personal Data when using Syntex OCR services, Company agrees to comply with all privacy and data protection laws, taking into account the nature of the information to be processed, as well as the features and limitations of the Feature Preview Program as described in this Agreement or as otherwise provided to Company. 
 
-**Pre-Release Service Features and Privacy Choice**
+**<ins>Pre-Release Service Features and Privacy Choice</ins>**
 
 Company affirms that it has obtained or will obtain any required consents from data subjects who may participate in Company’s use of the Feature Preview Program. Company must not allow Personal Data to be collected through use of the Syntex OCR services in jurisdictions or industries where the Feature Preview attributes described herein would make such use contrary to applicable law. The Feature Preview may employ lesser or different security measures than those present in Microsoft’s existing commercial versions of Microsoft software or Online Services or expected to be present in future commercial versions of the software and Online Services. Without limiting the foregoing, security disclosures or independent security certifications applicable to existing commercial versions of the software and Online Services do not apply to the Feature Preview.
 
-**LENGTH OF OBLIGATIONS; DISCLOSURE**
+**<ins>LENGTH OF OBLIGATIONS; DISCLOSURE</ins>**
 
-**Termination.** This Agreement continues in effect until December 31, 2023, or until the Preview Feature is generally commercially available to the public.  Either of us may terminate this Agreement, or any input schedule, for any reason by 1) by Microsoft providing Company with 10 days’ advance notice, or 2) Company stops using the Preview Feature. Termination of this Agreement or any Input schedule will not change any of the rights, licenses granted, or duties made while this Agreement or input schedule is in effect. 
+**Termination.** This Agreement continues in effect until <ins>December 31, 2023, or until the Preview Feature is generally commercially available to the public</ins>.  Either of us may terminate this Agreement, or any input schedule, for any reason by 1) by Microsoft providing Company with 10 days’ advance notice, or 2) Company stops using the Preview Feature. Termination of this Agreement or any Input schedule will not change any of the rights, licenses granted, or duties made while this Agreement or input schedule is in effect.
 
 **Effects upon Termination.** Once terminated, Company will no longer use Syntex OCR services.  
 
@@ -117,7 +117,7 @@ This Agreement cannot be extended. Microsoft may also choose not to make the Pre
 
 **Disclosing if required by law; or other action.** Each of us may disclose the confidential information described above if required to comply with a court order or other government demand that has the force of law or if in the context of an actual or threatened infringement or other action related to this Agreement or the Input. Before doing so, each of us must seek the highest level of protection available and, when possible, give the other enough prior notice to provide a reasonable chance to seek a protective order.
 
-**REPRESENTATIONS AND LIMITATIONS**
+**<ins>REPRESENTATIONS AND LIMITATIONS</ins>**
 
 **Input.** Company represents that it will not give any Input that:
 
@@ -131,7 +131,7 @@ This Agreement cannot be extended. Microsoft may also choose not to make the Pre
 
 **Limitations.** All information, materials and input are provided “as-is” and Microsoft bears the risk of using them; Company gives no express warranties, guarantees or conditions as to its Input; and to the extent permitted under local law, Company excludes the implied warranties of merchantability, fitness for a particular purpose, title and non-infringement as to its Input.  
 
-**LIMITATIONS ON AND EXCLUSIONS OF REMEDIES AND DAMAGES**
+**<ins>LIMITATIONS ON AND EXCLUSIONS OF REMEDIES AND DAMAGES</ins>**
 
 Except as described herein, the only remedy either of us has for claims relating to this Agreement is to terminate it. Neither of us can recover any damages, including direct, consequential, lost profits, special, punitive, indirect or incidental damages from the other. This limitation applies:
 
@@ -141,82 +141,68 @@ Except as described herein, the only remedy either of us has for claims relating
 
 The limitations in this section does not apply to claims arising from or in connection with any infringement, misuse or misappropriation by one of us of the other’s intellectual property rights.
 
-**GENERAL RIGHTS AND OBLIGATIONS**
+**<ins>GENERAL RIGHTS AND OBLIGATIONS</ins>**
 
-Notices.  Notices may be provided either by electronic or physical mail. Each of us designates the persons specified on the last page of this Agreement to receive notices. Each of us may specify changes by giving notice to the other. 
+**Notices.** Notices may be provided either by electronic or physical mail. Each of us designates the persons specified on the last page of this Agreement to receive notices. Each of us may specify changes by giving notice to the other.
 
-Law that applies; jurisdiction and venue.  The laws of the State of Washington govern this Agreement.  If federal jurisdiction exists, each of us consents to exclusive jurisdiction and venue in the federal courts in King County, Washington.  If not, each of us consents to exclusive jurisdiction and venue in the Superior Court of King County, Washington. 
+**Law that applies; jurisdiction and venue.** The laws of the State of Washington govern this Agreement.  If federal jurisdiction exists, each of us consents to exclusive jurisdiction and venue in the federal courts in King County, Washington.  If not, each of us consents to exclusive jurisdiction and venue in the Superior Court of King County, Washington.
 
-Waiver.  Any delay or failure of either of us to exercise a right or remedy will not result in a waiver of that, or any other, right or remedy. 
+**Waiver.** Any delay or failure of either of us to exercise a right or remedy will not result in a waiver of that, or any other, right or remedy.
 
-Breach.  Each of us agrees that the other may seek court orders to stop any breach of this Agreement. 
+**Breach.** Each of us agrees that the other may seek court orders to stop any breach of this Agreement. 
 
-Attorneys’ fees.  In any dispute relating to this Agreement the prevailing party will be entitled to recover reasonable attorneys' fees and costs. 
+**Attorneys’ fees.** In any dispute relating to this Agreement the prevailing party will be entitled to recover reasonable attorneys' fees and costs.
 
-No Assignment.  Neither of us may assign this Agreement, by operation of law, or otherwise, without the prior, written approval of the other. 
+**No Assignment.** Neither of us may assign this Agreement, by operation of law, or otherwise, without the prior, written approval of the other.
 
-Enforceability.  If any provision of this Agreement is unenforceable, the parties (or, if we cannot agree, a court) will modify this Agreement to revise it so that it can be enforced.  Even if no revision is possible, the rest of this Agreement will remain in place. 
+**Enforceability.** If any provision of this Agreement is unenforceable, the parties (or, if we cannot agree, a court) will modify this Agreement to revise it so that it can be enforced.  Even if no revision is possible, the rest of this Agreement will remain in place.
 
-Entire Agreement.  This Agreement includes all exhibits and schedules. If Company has entered into a license agreement for use of any Microsoft offering, that license agreement will govern its use of the Microsoft offering, and any feedback given to Microsoft under that license agreement.  With these exceptions, this is the entire agreement between us regarding the Input. It replaces all other agreements and understandings regarding the subject matter of this Agreement.  
+**Entire Agreement.** This Agreement includes all exhibits and schedules. If Company has entered into a license agreement for use of any Microsoft offering, that license agreement will govern its use of the Microsoft offering, and any feedback given to Microsoft under that license agreement.  With these exceptions, this is the entire agreement between us regarding the Input. It replaces all other agreements and understandings regarding the subject matter of this Agreement.  
 
- 
+&emsp;&emsp;&emsp;&emsp;&emsp;**Attachment 1 – GDPR Terms**
 
- 
+For purposes of these GDPR Terms, Company and Microsoft agree that Company is the controller of Personal Data and Microsoft is the processor of such data, except when Company acts as a processor of Personal Data, in which case Microsoft is a sub-processor. These GDPR Terms apply to the processing of Personal Data, within the scope of the GDPR, by Microsoft on behalf of Company. These GDPR Terms do not limit or reduce any data protection commitments Microsoft makes to Company in other agreements between Microsoft and Company. These GDPR Terms do not apply where Microsoft is a controller of Personal Data.
 
- 
+**Relevant GDPR Obligations: Articles 28, 32, and 33**
 
- 
+1) Microsoft shall not engage another processor without prior specific or general written authorization of Company. In the case of general written authorization, Microsoft shall inform Company of any intended changes concerning the addition or replacement of other processors, thereby giving Company the opportunity to object to such changes. (Article 28(2)) 
 
- 
+2) Processing by Microsoft shall be governed by these GDPR Terms under European Union (hereafter “Union”) or Member State law and are binding on Microsoft with regard to Company. The subject-matter and duration of the processing, the nature and purpose of the processing, the type of Personal Data, the categories of data subjects and the obligations and rights of the Company are set forth in the Agreement, including these GDPR Terms. In particular, Microsoft shall:  
 
-Attachment 1 – GDPR Terms 
+&emsp;a. process the Personal Data only on documented instructions from Company, including with regard to transfers of Personal Data to a third country or an international organization, unless required to do so by Union or Member State law to which Microsoft is subject; in such a case, Microsoft shall inform Company of that legal requirement before processing, unless that law prohibits such information on important grounds of public interest;  
 
- 
+&emsp;b. ensure that persons authorized to process the Personal Data have committed themselves to confidentiality or are under an appropriate statutory obligation of confidentiality;  
 
-For purposes of these GDPR Terms, Company and Microsoft agree that Company is the controller of Personal Data and Microsoft is the processor of such data, except when Company acts as a processor of Personal Data, in which case Microsoft is a sub-processor. These GDPR Terms apply to the processing of Personal Data, within the scope of the GDPR, by Microsoft on behalf of Company. These GDPR Terms do not limit or reduce any data protection commitments Microsoft makes to Company in other agreements between Microsoft and Company. These GDPR Terms do not apply where Microsoft is a controller of Personal Data. 
+&emsp;c.&emsp;take all measures required pursuant to Article 32 of the GDPR;  
 
- 
+&emsp;d. respect the conditions referred to in paragraphs 1 and 3 for engaging another processor;  
 
-Relevant GDPR Obligations: Articles 28, 32, and 33 
+&emsp;e. taking into account the nature of the processing, assist Company by appropriate technical and organizational measures, insofar as this is possible, for the fulfilment of the Company’s obligation to respond to requests for exercising the data subject's rights laid down in Chapter III of the GDPR;
 
-1)	Microsoft shall not engage another processor without prior specific or general written authorization of Company. In the case of general written authorization, Microsoft shall inform Company of any intended changes concerning the addition or replacement of other processors, thereby giving Company the opportunity to object to such changes. (Article 28(2)) 
+&emsp;f. assist Company in ensuring compliance with the obligations pursuant to Articles 32 to 36 of the GDPR, taking into account the nature of processing and the information available to Microsoft;
 
-2)	Processing by Microsoft shall be governed by these GDPR Terms under European Union (hereafter “Union”) or Member State law and are binding on Microsoft with regard to Company. The subject-matter and duration of the processing, the nature and purpose of the processing, the type of Personal Data, the categories of data subjects and the obligations and rights of the Company are set forth in the Agreement, including these GDPR Terms. In particular, Microsoft shall:  
+&emsp;g. at the choice of Company, delete or return all the Personal Data to Company after the end of the provision of services relating to processing, and delete existing copies unless Union or Member State law requires storage of the Personal Data;  
 
-a.	process the Personal Data only on documented instructions from Company, including with regard to transfers of Personal Data to a third country or an international organization, unless required to do so by Union or Member State law to which Microsoft is subject; in such a case, Microsoft shall inform Company of that legal requirement before processing, unless that law prohibits such information on important grounds of public interest;  
+&emsp;h. make available to Company all information necessary to demonstrate compliance with the obligations laid down in Article 28 of the GDPR and allow for and contribute to audits, including inspections, conducted by Company or another auditor mandated by Company.  
 
-b.	ensure that persons authorized to process the Personal Data have committed themselves to confidentiality or are under an appropriate statutory obligation of confidentiality;  
+3) Microsoft shall immediately inform Company if, in its opinion, an instruction infringes the GDPR or other Union or Member State data protection provisions. (Article 28(3)) 
 
-c.	take all measures required pursuant to Article 32 of the GDPR;  
+4) Where Microsoft engages another processor for carrying out specific processing activities on behalf of Company, the same data protection obligations as set out in these GDPR Terms shall be imposed on that other processor by way of a contract or other legal act under Union or Member State law, in particular providing sufficient guarantees to implement appropriate technical and organizational measures in such a manner that the processing will meet the requirements of the GDPR. Where that other processor fails to fulfil its data protection obligations, Microsoft shall remain fully liable to the Company for the performance of that other processor's obligations. (Article 28(4)) 
 
-d.	respect the conditions referred to in paragraphs 1 and 3 for engaging another processor;  
+5) Taking into account the state of the art, the costs of implementation and the nature, scope, context, and purposes of processing as well as the risk of varying likelihood and severity for the rights and freedoms of natural persons, Company and Microsoft shall implement appropriate technical and organizational measures to ensure a level of security appropriate to the risk, including inter alia as appropriate:  
 
-e.	taking into account the nature of the processing, assist Company by appropriate technical and organizational measures, insofar as this is possible, for the fulfilment of the Company’s obligation to respond to requests for exercising the data subject's rights laid down in Chapter III of the GDPR;   
+&emsp;a. the pseudonymization and encryption of Personal Data;  
 
-f.	assist Company in ensuring compliance with the obligations pursuant to Articles 32 to 36 of the GDPR, taking into account the nature of processing and the information available to Microsoft; 
+&emsp;b. the ability to ensure the ongoing confidentiality, integrity, availability and resilience of processing systems and services;  
 
-g.	at the choice of Company, delete or return all the Personal Data to Company after the end of the provision of services relating to processing, and delete existing copies unless Union or Member State law requires storage of the Personal Data;  
+&emsp;c. the ability to restore the availability and access to Personal Data in a timely manner in the event of a physical or technical incident; and 
 
-h.	make available to Company all information necessary to demonstrate compliance with the obligations laid down in Article 28 of the GDPR and allow for and contribute to audits, including inspections, conducted by Company or another auditor mandated by Company.  
+&emsp;d. a process for regularly testing, assessing, and evaluating the effectiveness of technical and organizational measures for ensuring the security of the processing. (Article 32(1))
 
-3)	Microsoft shall immediately inform Company if, in its opinion, an instruction infringes the GDPR or other Union or Member State data protection provisions. (Article 28(3)) 
+6) In assessing the appropriate level of security, account shall be taken of the risks that are presented by processing, in particular from accidental or unlawful destruction, loss, alteration, unauthorized disclosure of, or access to Personal Data transmitted, stored, or otherwise processed. (Article 32(2))
 
-4)	Where Microsoft engages another processor for carrying out specific processing activities on behalf of Company, the same data protection obligations as set out in these GDPR Terms shall be imposed on that other processor by way of a contract or other legal act under Union or Member State law, in particular providing sufficient guarantees to implement appropriate technical and organizational measures in such a manner that the processing will meet the requirements of the GDPR. Where that other processor fails to fulfil its data protection obligations, Microsoft shall remain fully liable to the Company for the performance of that other processor's obligations. (Article 28(4)) 
+7) Company and Microsoft shall take steps to ensure that any natural person acting under the authority of Company or Microsoft who has access to Personal Data does not process them except on instructions from Company, unless he or she is required to do so by Union or Member State law. (Article 32(4))
 
-5)	Taking into account the state of the art, the costs of implementation and the nature, scope, context, and purposes of processing as well as the risk of varying likelihood and severity for the rights and freedoms of natural persons, Company and Microsoft shall implement appropriate technical and organizational measures to ensure a level of security appropriate to the risk, including inter alia as appropriate:  
-
-a.	the pseudonymization and encryption of Personal Data;  
-
-b.	the ability to ensure the ongoing confidentiality, integrity, availability and resilience of processing systems and services;  
-
-c.	the ability to restore the availability and access to Personal Data in a timely manner in the event of a physical or technical incident; and 
-
-d.	a process for regularly testing, assessing, and evaluating the effectiveness of technical and organizational measures for ensuring the security of the processing. (Article 32(1)) 
-
-6)	In assessing the appropriate level of security, account shall be taken of the risks that are presented by processing, in particular from accidental or unlawful destruction, loss, alteration, unauthorized disclosure of, or access to Personal Data transmitted, stored, or otherwise processed. (Article 32(2)) 
-
-7)	Company and Microsoft shall take steps to ensure that any natural person acting under the authority of Company or Microsoft who has access to Personal Data does not process them except on instructions from Company, unless he or she is required to do so by Union or Member State law. (Article 32(4)) 
-
-8)	Microsoft shall notify Company without undue delay after becoming aware of a Personal Data breach. (Article 33(2)). Such notification will include that information a processor must provide to a controller under Article 33(3) to the extent such information is reasonably available to Microsoft. 
+8) Microsoft shall notify Company without undue delay after becoming aware of a Personal Data breach. (Article 33(2)). Such notification will include that information a processor must provide to a controller under Article 33(3) to the extent such information is reasonably available to Microsoft.
 
  
