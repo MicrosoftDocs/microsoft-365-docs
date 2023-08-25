@@ -11,8 +11,6 @@ ms.service: microsoft-syntex
 ms.custom: 
 search.appverid: 
 ms.collection: 
-    - enabler-strategic
-    - m365initiative-syntex
 ms.localizationpriority: medium
 description: Read the Microsoft Syntex Optical Character Recognition (“OCR”) Feature Preview Agreement.
 ---
@@ -159,7 +157,7 @@ The limitations in this section does not apply to claims arising from or in conn
 
 **Entire Agreement.** This Agreement includes all exhibits and schedules. If Company has entered into a license agreement for use of any Microsoft offering, that license agreement will govern its use of the Microsoft offering, and any feedback given to Microsoft under that license agreement.  With these exceptions, this is the entire agreement between us regarding the Input. It replaces all other agreements and understandings regarding the subject matter of this Agreement.  
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**Attachment 1 – GDPR Terms**
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**Attachment 1 – GDPR Terms**
 
 For purposes of these GDPR Terms, Company and Microsoft agree that Company is the controller of Personal Data and Microsoft is the processor of such data, except when Company acts as a processor of Personal Data, in which case Microsoft is a sub-processor. These GDPR Terms apply to the processing of Personal Data, within the scope of the GDPR, by Microsoft on behalf of Company. These GDPR Terms do not limit or reduce any data protection commitments Microsoft makes to Company in other agreements between Microsoft and Company. These GDPR Terms do not apply where Microsoft is a controller of Personal Data.
 
@@ -171,19 +169,19 @@ For purposes of these GDPR Terms, Company and Microsoft agree that Company is th
 
 &emsp;&emsp;a. process the Personal Data only on documented instructions from Company, including with regard to transfers of Personal Data to a third country or an international organization, unless required to do so by Union or Member State law to which Microsoft is subject; in such a case, Microsoft shall inform Company of that legal requirement before processing, unless that law prohibits such information on important grounds of public interest;  
 
-&emsp;&emsp;b. ensure that persons authorized to process the Personal Data have committed themselves to confidentiality or are under an appropriate statutory obligation of confidentiality;  
+&emsp;&emsp;&emsp;b. ensure that persons authorized to process the Personal Data have committed themselves to confidentiality or are under an appropriate statutory obligation of confidentiality;  
 
-&emsp;c.&emsp;take all measures required pursuant to Article 32 of the GDPR;  
+&emsp;&emsp;&emsp;c. take all measures required pursuant to Article 32 of the GDPR;  
 
-&emsp;&emsp;d. respect the conditions referred to in paragraphs 1 and 3 for engaging another processor;  
+&emsp;&emsp;&emsp;d. respect the conditions referred to in paragraphs 1 and 3 for engaging another processor;  
 
-&emsp;&emsp;e. taking into account the nature of the processing, assist Company by appropriate technical and organizational measures, insofar as this is possible, for the fulfilment of the Company’s obligation to respond to requests for exercising the data subject's rights laid down in Chapter III of the GDPR;
+&emsp;&emsp;&emsp;e. taking into account the nature of the processing, assist Company by appropriate technical and organizational measures, insofar as this is possible, for the fulfilment of the Company’s obligation to respond to requests for exercising the data subject's rights laid down in Chapter III of the GDPR;
 
-&emsp;&emsp;f. assist Company in ensuring compliance with the obligations pursuant to Articles 32 to 36 of the GDPR, taking into account the nature of processing and the information available to Microsoft;
+&emsp;&emsp;&emsp;f. assist Company in ensuring compliance with the obligations pursuant to Articles 32 to 36 of the GDPR, taking into account the nature of processing and the information available to Microsoft;
 
-&emsp;&emsp;g. at the choice of Company, delete or return all the Personal Data to Company after the end of the provision of services relating to processing, and delete existing copies unless Union or Member State law requires storage of the Personal Data;  
+&emsp;&emsp;&emsp;g. at the choice of Company, delete or return all the Personal Data to Company after the end of the provision of services relating to processing, and delete existing copies unless Union or Member State law requires storage of the Personal Data;  
 
-&emsp;&emsp;h. make available to Company all information necessary to demonstrate compliance with the obligations laid down in Article 28 of the GDPR and allow for and contribute to audits, including inspections, conducted by Company or another auditor mandated by Company.  
+&emsp;&emsp;&emsp;h. make available to Company all information necessary to demonstrate compliance with the obligations laid down in Article 28 of the GDPR and allow for and contribute to audits, including inspections, conducted by Company or another auditor mandated by Company.  
 
 3) Microsoft shall immediately inform Company if, in its opinion, an instruction infringes the GDPR or other Union or Member State data protection provisions. (Article 28(3)) 
 
@@ -191,13 +189,13 @@ For purposes of these GDPR Terms, Company and Microsoft agree that Company is th
 
 5) Taking into account the state of the art, the costs of implementation and the nature, scope, context, and purposes of processing as well as the risk of varying likelihood and severity for the rights and freedoms of natural persons, Company and Microsoft shall implement appropriate technical and organizational measures to ensure a level of security appropriate to the risk, including inter alia as appropriate:  
 
-&emsp;&emsp;a. the pseudonymization and encryption of Personal Data;  
+&emsp;&emsp;&emsp;a. the pseudonymization and encryption of Personal Data;  
 
-&emsp;&emsp;b. the ability to ensure the ongoing confidentiality, integrity, availability and resilience of processing systems and services;  
+&emsp;&emsp;&emsp;b. the ability to ensure the ongoing confidentiality, integrity, availability and resilience of processing systems and services;  
 
-&emsp;&emsp;c. the ability to restore the availability and access to Personal Data in a timely manner in the event of a physical or technical incident; and
+&emsp;&emsp;&emsp;c. the ability to restore the availability and access to Personal Data in a timely manner in the event of a physical or technical incident; and
 
-&emsp;&emsp;d. a process for regularly testing, assessing, and evaluating the effectiveness of technical and organizational measures for ensuring the security of the processing. (Article 32(1))
+&emsp;&emsp;&emsp;d. a process for regularly testing, assessing, and evaluating the effectiveness of technical and organizational measures for ensuring the security of the processing. (Article 32(1))
 
 6) In assessing the appropriate level of security, account shall be taken of the risks that are presented by processing, in particular from accidental or unlawful destruction, loss, alteration, unauthorized disclosure of, or access to Personal Data transmitted, stored, or otherwise processed. (Article 32(2))
 
