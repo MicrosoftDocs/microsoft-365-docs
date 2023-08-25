@@ -39,14 +39,16 @@ To access the report, you must be a Global admin, Teams admin, Global reader, or
 
 ## Interpret the report
 
-On the **Distribution** tab, you'll see a chart that provides an overview of SMS notifications usage, by month, for the date range that you selected. The table shows distribution details for each SMS notification that was sent.
+On the **Distribution** tab, you'll see a chart that provides an overview of SMS notifications usage, by month, for the date range that you selected. The table shows details for each SMS notification that was sent.
+
+:::image type="content" source="media/sms-notification-usage-report.png" alt-text="Screenshot of the SMS notifications usage report in the Teams admin center.":::
 
 |Callout |Description  |
 |--------|-------------|
 |**1**   |Each report has a date for when the report was generated. The reports usually reflect a 24 to 48-hour latency from time of activity. |
-|**2**   |The X axis is the selected date range for the report, by month. The Y axis is the number of SMS notifications.<br>Hover over the dot on a given month to see the number of SMS notifications sent during that time period.|
-|**3**   |You can filter what you see on the chart by selecting an item. For example, select **SMS sent in EHR** or **SMS sent in Virtual Appointments** to see only the info related to each one. Changing this selection doesn’t change the information in the table.|
-|**4**   |The table gives you detailed information about each SMS notification that was sent during the selected date range. <ul><li>**Sent time (UTC)** is the date and time when the notification was sent.</li> <li>**Sent from** indicates the source of the notification (toll-free number or sender service).</li> <li>**SMS notification type** shows whether the notification is an appointment reminder or confirmation.</li> <li>**Product type** indicates the product used to schedule the appointment. For example, **VA template** indicates that the appointment was scheduled using the Virtual appointment meeting template.</li> <li>**Status** shows the delivery status. To learn more, see [Delivery status descriptions](#delivery-status-descriptions).</li></ul> |
+|**2**   |The X axis is the selected date range for the report, by month. The Y axis is the number of SMS notifications.<br>Hover over a given month to see the number of SMS notifications sent during that time period.|
+|**3**   |You can filter what you see on the chart by selecting an item. For example, select **SMS sent in EHR** or **SMS sent in Virtual Appointments** (which includes the Virtual Appointments app and the Virtual appointment meeting template) to see only the info related to each one. Changing this selection doesn’t change the information in the table.|
+|**4**   |The table gives you detailed information about each SMS notification that was sent during the selected date range. <ul><li>**Sent time (UTC)** is the date and time when the notification was sent.</li> <li>**Sent from** indicates the source of the notification (toll-free number or sender service).</li> <li>**SMS notification type** shows whether the notification is an appointment reminder or confirmation.</li> <li>**Product type** indicates the product used to schedule the appointment. For example, **VA Template** indicates that the appointment was scheduled using the Virtual appointment meeting template.</li> <li>**Status** shows the delivery status. To learn more, see [Delivery status descriptions](#delivery-status-descriptions).</li></ul> |
 
 ### Delivery status descriptions
 
