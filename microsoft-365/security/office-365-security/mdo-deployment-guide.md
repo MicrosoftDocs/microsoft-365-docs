@@ -64,7 +64,85 @@ Configure the following email authentication records in DNS for all [custom doma
 
 Email authentication records aren't required for the .onmicrosoft.com domain.
 
-## Step 2: Turn on and configure preset security policies
+## Step 2: Configure security policies
+
+As you can probably imagine, there are a lot of security policies that are available in EOP and Defender for Office 365. There are three basic types of security policies:
+
+- **Default policies**: These policies exist from the moment the organization is created. They apply to all recipients in the organization, you can't turn the policies off, and you can't modify who the policies apply to. But you can modify the settings just like a custom policy.
+- **Preset security policies**: Preset security are actually _profiles_ that contain _most_ of the available security polices in EOP and Defender for Office 365 with settings that are tailored to specific levels of protection. The preset security policies are:
+  - The Strict preset security policy.
+  - The Standard preset security policy.
+  - Built-in protection (effectively provides default Safe Attachments and Safe Links protection for all recipients by default)
+
+  The Standard and Strict preset security policies are turned off by default until you turn them on. In Defender for Office 365, Built-in protection is on by default (just like a default policy).
+
+  You can specify recipient conditions and exceptions (users, group members, or domains) for EOP protection and Defender for Office 365 protection within the Standard and Strict preset security policies. For Built-in protection in Defender for Office 365, you can specify recipient exceptions who don't get the protection (unlike a default policy).
+
+  In Standard and Strict preset security policies in Defender for Office 365 organizations, you need to configure entries for domain and user impersonation protection. These settings are very specific to your organization, so only you can configure them correctly. All other settings are locked into our recommended standard and strict values (many of which are the same; you can see the differences [here](preset-security-policies.md#policy-settings-in-preset-security-policies)).
+
+- **Custom policies**: For most available security policies, you can create custom policies. You can specify recipient conditions and exceptions (users, group members, or domains) and customize the settings.
+
+The previous information and the security policies that are involved are summarized in the following table:
+
+|&nbsp;|Default policies|Preset security policies|Custom policies|
+|---|:---:|:---:|:---:|
+|**EOP security policies**:||||
+|[Anti-malware](anti-malware-policies-configure.md)|✔|✔|✔|
+|[Anti-spam](anti-spam-policies-configure.md)|✔|✔|✔|
+|[Anti-phishing (spoofing protection)](anti-phishing-policies-about.md#spoof-settings)|✔|✔|✔|
+|[Outbound spam](outbound-spam-policies-configure.md)|✔||✔|
+|[Connection filtering](connection-filter-policies-configure.md)|✔¹|||
+|**Defender for Office 365 policies**:||||
+|[Anti-phishing (spoofing protection)](anti-phishing-policies-about.md#spoof-settings) plus: <ul><li>[Impersonation protection](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Advanced phishing thresholds](anti-phishing-policies-about.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li></ul>|✔²|✔²|✔|
+|[Safe Links](safe-links-policies-configure.md)|³|✔|✔|
+|[Safe Attachments](safe-attachments-policies-configure.md)|³|✔|✔|
+|**General behavior**||||
+|Protection on by default?|✔|⁴|✔|
+|Configure conditions/exceptions for protection?||✔⁵|✔|
+|Customize security settings?|✔|⁶|✔|
+
+¹ There are no default entries in the IP Allow List or the IP Block List, so the default connection filter policy effectively does nothing unless you customize the settings.
+
+² There are no entries for user impersonation or domain impersonation protection in Defender for Office 365 until you configure them.
+
+³ Although there are no default Safe Attachments or Safe Links policies in Defender for Office 365, the Built-in protection preset security policy provides Safe Attachments and Safe Links protection that's on by default and you can't turn off (just like a default policy).
+
+⁴ Only the Built-in protection preset security policy is on by default.
+
+⁵ For the Built-in protection preset security policy, you can only configure exceptions for protection.
+
+⁶ The only customizable security settings in preset security policies are the entries for user impersonation protection and domain impersonation protection in the Standard and Strict preset security policies in Defender for Office 365.
+
+There are two other important facts that you need to know:
+
+- There's an order of precedence for the different types of security policies. This order is explained in detail at [Order of precedence for preset security policies and other policies](preset-security-policies.md#order-of-precedence-for-preset-security-policies-and-other-policies), but is briefly summarized here:
+  1. The Strict preset security policy.
+  2. The Standard preset security policy.
+  3. The priority value of custom policies of a specific type (for example, anti-malware policies):
+     1. A custom policy with priority value 0
+     2. A custom policy with the priority value 1
+     3. A custom policy with the priority value 2
+     4. And so on.
+  4. The default policy of a specific type or the Built-in protection preset security policy in Defender for Office 365.
+- The first policy of a specific type (for example, anti-malware) is applied to a user, based on the previously described priority order. If a recipient is intentionally or unintentionally defined in multiple policies, they *only* get the settings of the highest priority policy (the policy that's applied first).
+
+
+
+Even if you do nothing, EOP and Defender for Office 365 include the following default policies that automatically protect all recipients in the organization using the default settings as described in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md):
+
+- **EOP** policies:
+  - [Anti-malware](anti-malware-policies-configure.md)
+  - [Anti-spam](anti-spam-policies-configure.md)
+  - [Anti-phishing (spoofing protection)](anti-phishing-policies-about.md#spoof-settings)
+  - [Outbound anti-spam](outbound-spam-policies-configure.md)
+  - [Connection filtering](connection-filter-policies-configure.md) (no IP addresses are configured in the IP Allow List or the IP Block list, so this policy effectively does nothing)
+- **Defender for Office 365** policies:
+  - The same [anti-phishing (spoofing protection)](anti-phishing-policies-about.md#spoof-settings) as EOP plus:
+    - [Impersonation settings](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) (no users or domains are specified for user impersonation protection or domain)
+    - [Advanced phishing thresholds](anti-phishing-policies-about.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
+  - [Safe Links](safe-links-policies-configure.md)
+  - [Safe Attachments](safe-attachments-policies-configure.md)
+
 
 The Standard and Strict preset security policies contain the following security polices:
 
