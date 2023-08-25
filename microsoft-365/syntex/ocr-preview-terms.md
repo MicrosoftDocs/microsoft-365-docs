@@ -79,23 +79,23 @@ To the extent Microsoft is a processor of Personal Data subject to the European 
 
 a) Processing Details. The parties acknowledge and agree that:
 
-   i. The subject-matter of the processing is limited to Personal Data within the scope of GDPR;
+&emsp;i. The subject-matter of the processing is limited to Personal Data within the scope of GDPR;
 
-   ii. The duration of the processing shall be for the duration of the Company’s right to participate in the Feature Preview Program and until all Personal Data is deleted or returned in accordance with Company instructions or this Agreement;
+&emsp;ii. The duration of the processing shall be for the duration of the Company’s right to participate in the Feature Preview Program and until all Personal Data is deleted or returned in accordance with Company instructions or this Agreement;
 
-   iii. The nature and purpose of the processing shall be to provide the Syntex repository services pursuant to the Agreement;
+&emsp;iii. The nature and purpose of the processing shall be to provide the Syntex repository services pursuant to the Agreement;
 
-   iv. The types of Personal Data processed by the Feature Preview Program include those expressly identified in Article 4 of the GDPR to the extent included by Company’s data; and
+&emsp;iv. The types of Personal Data processed by the Feature Preview Program include those expressly identified in Article 4 of the GDPR to the extent included by Company’s data; and
 
-   v. The categories of data subjects are Company’s representatives and end users, such as employees, contractors, collaborators, and customers.
+&emsp;v. The categories of data subjects are Company’s representatives and end users, such as employees, contractors, collaborators, and customers.
 
 b) Data Transfers.
 
-   i. Company’s data, and Personal Data that Microsoft processes on Customer’s behalf may be transferred to, and stored and processed in, the United States or any other country in which Microsoft or its Sub-processors operate. Company appoints Microsoft to perform any such transfer of Company data and Personal Data to any such country and to store and process data and Personal Data to provide the Syntex repository services.
+&emsp;i. Company’s data, and Personal Data that Microsoft processes on Customer’s behalf may be transferred to, and stored and processed in, the United States or any other country in which Microsoft or its Sub-processors operate. Company appoints Microsoft to perform any such transfer of Company data and Personal Data to any such country and to store and process data and Personal Data to provide the Syntex repository services.
 
-   ii. Microsoft will abide by the requirements of European Economic Area and Swiss data protection law regarding the collection, use, transfer, retention and other processing of Personal Data from the European Economic Area and Switzerland. All transfers of Personal Data to a third country or an international organization will be subject to appropriate safeguards as described in Article 46 of the GDPR and such transfers and safeguards will be documented according to Article 30(2) of the GDPR.
+&emsp;ii. Microsoft will abide by the requirements of European Economic Area and Swiss data protection law regarding the collection, use, transfer, retention and other processing of Personal Data from the European Economic Area and Switzerland. All transfers of Personal Data to a third country or an international organization will be subject to appropriate safeguards as described in Article 46 of the GDPR and such transfers and safeguards will be documented according to Article 30(2) of the GDPR.
 
-   iii. In addition, Microsoft is certified to meet the EU-U.S. and Swiss-U.S. Privacy Shield Frameworks and the commitments they entail. Microsoft agrees to notify Company in the event that it determines that it can no longer meet its obligation to provide the same level of protection as is required by the Privacy Shield principles.
+&emsp;iii. In addition, Microsoft is certified to meet the EU-U.S. and Swiss-U.S. Privacy Shield Frameworks and the commitments they entail. Microsoft agrees to notify Company in the event that it determines that it can no longer meet its obligation to provide the same level of protection as is required by the Privacy Shield principles.
 
 **<ins>Acknowledgments and Consent by Company</ins>**
 
