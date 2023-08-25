@@ -72,11 +72,11 @@ To manage a traditional add-on, you go to the subscription that contains it and 
 2. Select the subscription that  contains the add-on that you want to update.
 3. On the subscription details page, the **Add-ons** section lists the add-ons that you bought. Select **Manage add-ons**.
 4. In the **Manage add-ons** pane, from the **Add-on** drop-down list, select the add-on that you want to change.
-5. Make the changes that you want for the ad-on, then select **Save**.
+5. Make the changes that you want for the add-on, then select **Save**.
 
 ## Remove an add-on
 
-To remove a standalone add-on subscription, you [cancel the subscription](subscriptions/cancel-your-subscription.md), just like any other subscription, or you can [turn off Recurring billing](subscriptions/renew-your-subscription.md).
+To remove a standalone add-on, you [cancel the subscription](subscriptions/cancel-your-subscription.md), just like any other subscription, or you can [turn off Recurring billing](subscriptions/renew-your-subscription.md).
 
 You can't remove a traditional add-on. If you want to remove a traditional add-on, [contact support](../admin/get-help-support.md).
   
@@ -84,5 +84,5 @@ You can't remove a traditional add-on. If you want to remove a traditional add-o
 
 [Add more SharePoint storage to your subscription](add-storage-space.md) (article)\
 [Buy or remove subscription licenses](licenses/buy-licenses.md) (article)\
-[Manage recurring billing in the Microsoft 365 admin center](subscriptions/renew-your-subscription.md)(article)\
+[Manage recurring billing in the Microsoft 365 admin center](subscriptions/renew-your-subscription.md) (article)\
 [Manage payment methods for Microsoft business accounts](billing-and-payments/manage-payment-methods.md) (article)

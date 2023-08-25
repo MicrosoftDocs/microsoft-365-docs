@@ -91,7 +91,7 @@ You can buy the Office 365 Extra File Storage add-on in the Microsoft 365 admin 
 
 ## Increase or decrease your extra file storage
 
-If you've already bought extra file storage via the **Office 365 Extra File Storage** add-on, use the following steps to increase or decrease the extra storage space for your subscription. You can reduce the storage to as low as 1 gigabyte. To remove all of the extra storage space, [contact support](../admin/get-help-support.md). The steps to change the amount of storage you have depend on the type of billing account that you have. [Find out what type of billing account you have.](manage-billing-accounts.md#view-my-billing-accounts).
+If you've already bought extra file storage via the Office 365 Extra File Storage add-on, use the following steps to increase or decrease the extra storage space for your subscription. You can reduce the storage to as low as 1 GB. To remove all of the extra storage space, [contact support](../admin/get-help-support.md). The steps to change the amount of storage you have depend on the type of billing account that you have. [Find out what type of billing account you have.](manage-billing-accounts.md#view-my-billing-accounts).
 
 **If you have an MCA billing account type:**
 
@@ -109,7 +109,7 @@ If you've already bought extra file storage via the **Office 365 Extra File Stor
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center.</a>
     - If you’re using the **Simplified view**, select **Billing**.
     - If you’re using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-2. Select the subscription that contains the **Office 365 Extra File Storage** add-on.
+2. Select the subscription that contains the Office 365 Extra File Storage add-on.
 3. On the product details page, in the **Add-ons** section, select **Manage add-ons**.
 4. In the **Manage add-ons** pane, from the **Add-on** list, choose **Office 365 Extra File Storage**.
 5. In the **Quantity** text box, enter the number of GBs of storage space that you want for the subscription.
