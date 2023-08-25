@@ -167,7 +167,7 @@ For purposes of these GDPR Terms, Company and Microsoft agree that Company is th
 
 2) Processing by Microsoft shall be governed by these GDPR Terms under European Union (hereafter “Union”) or Member State law and are binding on Microsoft with regard to Company. The subject-matter and duration of the processing, the nature and purpose of the processing, the type of Personal Data, the categories of data subjects and the obligations and rights of the Company are set forth in the Agreement, including these GDPR Terms. In particular, Microsoft shall:  
 
-&emsp;&emsp;a. process the Personal Data only on documented instructions from Company, including with regard to transfers of Personal Data to a third country or an international organization, unless required to do so by Union or Member State law to which Microsoft is subject; in such a case, Microsoft shall inform Company of that legal requirement before processing, unless that law prohibits such information on important grounds of public interest;  
+&emsp;&emsp;&emsp;a. process the Personal Data only on documented instructions from Company, including with regard to transfers of Personal Data to a third country or an international organization, unless required to do so by Union or Member State law to which Microsoft is subject; in such a case, Microsoft shall inform Company of that legal requirement before processing, unless that law prohibits such information on important grounds of public interest;  
 
 &emsp;&emsp;&emsp;b. ensure that persons authorized to process the Personal Data have committed themselves to confidentiality or are under an appropriate statutory obligation of confidentiality;  
 
