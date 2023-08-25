@@ -28,7 +28,7 @@ The [Microsoft Teams Shifts connector for UKG Dimensions](shifts-connectors.md#m
 
 You can use the [Shifts connector wizard](shifts-connector-wizard-ukg.md) (Preview) in the Microsoft 365 admin center or [PowerShell](shifts-connector-ukg-powershell-setup.md) to create a connection and connection instances. After they're set up, you can manage them in the Microsoft 365 admin center or by using PowerShell.
 
-This article gives you an overview of prerequisites, configuration tasks to complete, and important concepts to keep in mind, before you use the wizard or PowerShell to integrate Shifts in Teams with UKG Dimensions.
+<!--This article gives you an overview of prerequisites, configuration tasks to complete, and important concepts to keep in mind, before you use the wizard or PowerShell to integrate Shifts in Teams with UKG Dimensions.-->
 
 This article lists requirements, prerequisites, and configuration tasks that you must complete before you use the wizard or PowerShell to integrate Shifts in Teams with UKG Dimensions. It also gives you an overview of important concepts around how your UKG Dimension structure influences the way you set up your teams in Teams.
 
@@ -52,7 +52,7 @@ Before you integrate Shifts with UKG Dimensions, your organization must have the
 
 ## Prerequisites
 
-Here's the list of information to gather and configuration tasks to complete before you run the wizard or use PowerShell to create a connection.
+Here's the list of information to gather and configuration tasks to complete before you run the [wizard](shifts-connector-wizard-ukg.md) or use [PowerShell](shifts-connector-ukg-powershell-setup.md) to create a connection.
 
 - You’re a Microsoft 365 global admin.
 
@@ -118,15 +118,17 @@ To learn more, see [Remove-CsTeamsShiftsScheduleRecord](/powershell/module/teams
 
 ## Roles and permissions in Teams and their impact on Shifts
 
-## Mapping UKG Dimensions locations to Shifts in Teams
+## Understand how your UKG Dimensions organizational structure influences Teams and Shifts setup
 
-As mentioned earlier, Shfits supports grouping users by location in UKG Dimensions. In UKG Dimensions, the nodes in each location represent the hierarchy in your organizational chart. A location path reaches its endpoint when a job type is configured.
+The way you organize your teams in Teams depends on your UKG Dimensions configuration.
 
-Users in UKG Dimensions are assigned and grouped by primary jobs that exist within a location. This means that from a Teams and Shifts standpoint, employees who have the same location path are part of the same team. 
+As mentioned earlier, Shifts supports grouping users by location in UKG Dimensions. In UKG Dimensions, the nodes in each location represent the hierarchy in your organizational chart. A location path reaches its endpoint when a job type is configured.
+
+Users in UKG Dimensions are assigned and grouped by primary jobs that exist within a location. This means that from a Teams and Shifts standpoint, employees who have the same location path are part of the same team. Scheduling groups in Shifts represent the job types.
 
 ## Example
 
-The way you organize your teams in Teams depends on your UKG Dimensions configuration. Here's an example to help you understand how your UKG Dimensions structure influences the way you set up your teams and how schedule information syncs to Shifts.
+Here's an example to help you understand how your UKG Dimensions structure influences the way you set up your teams and how schedule information syncs to Shifts.
 
 ### Scenario
 
@@ -147,17 +149,17 @@ In this scenario, the UKG Dimensions location structure looks something like thi
 | 1|Retail |Business|
 |  2|Central London |Area|
 |   3|Soho |Store|
-|    4|Beauty advisor |Job|
-|    4|Leather goods sales associate|Job|
-|    4|Sales associate|Job|
-|    4|Personal shopper|Job|
+|    4|Beauty advisor |Job type|
+|    4|Leather goods sales associate|Job type|
+|    4|Sales associate|Job type|
+|    4|Personal shopper|Job type|
 |   3|Covent Garden|Store|
-|    4|Leather good sales associate|Job|
-|    4|Sales associate|Job|
+|    4|Leather good sales associate|Job type|
+|    4|Sales associate|Job type|
 |   3|Chelsea|Store|
-|    4|Sales associate|Job|
-|    4|Personal shopper |Job|
-|    4|Beauty advisor |Job|
+|    4|Sales associate|Job type|
+|    4|Personal shopper |Job type|
+|    4|Beauty advisor |Job type|
 
 Based on the location structure, UKG Dimensions would provide the following information.
 
