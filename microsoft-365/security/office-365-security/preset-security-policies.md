@@ -581,6 +581,6 @@ Consider applying the Standard or Strict preset security policies to a subset of
   - Configure recipients who should get the settings of custom policies as exceptions in the **Standard** preset security policy.
   - Configure recipients who should get the settings of the Built-in protection preset security policy or default policies as exceptions to custom policies.
 
-The Built-in protection** doesn't affect recipients in existing Safe Links or Safe Attachments policies. If you already configured **Standard protection**, **Strict protection** or custom Safe Links or Safe Attachments policies, those policies are _always_ applied _before_ **Built-in protection**, so there's no effect on the recipients who are already defined in those existing preset or custom policies.
+The **Built-in protection** preset security policy doesn't affect recipients in existing Safe Links or Safe Attachments policies. If you already configured **Standard protection**, **Strict protection** or custom Safe Links or Safe Attachments policies, those policies are _always_ applied _before_ **Built-in protection**, so there's no effect on the recipients who are already defined in those existing preset or custom policies.
 
 For more information, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).

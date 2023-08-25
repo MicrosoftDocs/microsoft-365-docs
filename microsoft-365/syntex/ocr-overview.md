@@ -1,5 +1,5 @@
 ---
-title: Overview of optical character recognition in Microsoft Syntex
+title: Overview of optical character recognition in Microsoft Syntex (Preview)
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 description: Learn about optical character recognition in Microsoft Syntex.
 ---
 
-# Overview of optical character recognition in Microsoft Syntex
+# Overview of optical character recognition in Microsoft Syntex (Preview)
 
 The optical character recognition (OCR) service in Microsoft Syntex lets you extract printed or handwritten text from images, such as posters, drawings, and product labels, as well as from documents like articles, reports, forms, and invoices.
 
@@ -39,6 +39,18 @@ The OCR service is available for the following file types:
 ### Supported languages
 
 The OCR service supports more than [150 languages](/azure/cognitive-services/language-support).
+
+### Supported locations and solutions
+
+The OCR service supports multiple solutions, as shown in the following table. For details about compliance solutions, see [Supported locations and solutions in Microsoft Purview](/purview/ocr-learn-about#supported-locations-and-solutions).
+
+|Location    |Supported solution  |
+|---------|---------|
+|Exchange           |Text is available for end-user search and search-driven solutions.<br>Text is available for [compliance solutions](/purview/ocr-learn-about#supported-locations-and-solutions). |
+|SharePoint sites   |Text is available for end-user search and search-driven solutions.<br>Text is available for [compliance solutions](/en-us/purview/ocr-learn-about#supported-locations-and-solutions). |
+|OneDrive accounts  |Text is available for end-user search and search-driven solutions.<br>Text is available for [compliance solutions](/purview/ocr-learn-about#supported-locations-and-solutions). |
+|Teams chat and channel message  |Text is available for [compliance solutions](/purview/ocr-learn-about#supported-locations-and-solutions). |
+|Devices            | Text is available for [compliance solutions](/purview/ocr-learn-about#supported-locations-and-solutions).    |
 
 ### File limitations
 
