@@ -53,25 +53,25 @@ Syntex OCR services Feature Preview pricing is as follows:
 
 Prerequisites to enable Syntex OCR services pay-as-you-go are:  
 
-(i) An Azure subscription with admin access as owner or contributor on the subscription;  
+&emsp;(i) An Azure subscription with admin access as owner or contributor on the subscription;  
 
-(ii) A SharePoint tenant ID;
+&emsp;(ii) A SharePoint tenant ID;
 
-(iii) An Azure resource group;
+&emsp;(iii) An Azure resource group;
 
-(iv) The ability to run PowerShell cmdlets to configure billing; and
+&emsp;(iv) The ability to run PowerShell cmdlets to configure billing; and
 
-(v) An AAD appID in the same tenancy.  
+&emsp;(v) An AAD appID in the same tenancy.  
 
 **<ins>INFORMATION USE AND DISCLOSURE</ins>**
 
 With respect to the Syntex OCR services, Microsoft may access or disclose information about Company, its account, and the content of its communications in order to:  
 
-a) provide, operate, and improve Microsoft services;
+&emsp;a) provide, operate, and improve Microsoft services;
 
-b) comply with the law or respond to lawful requests or legal process; or
+&emsp;b) comply with the law or respond to lawful requests or legal process; or
 
-c) protect the rights or property of Microsoft or our customers, including the enforcement of Microsoft’s agreements or policies governing the use of the Syntex repository services.
+&emsp;c) protect the rights or property of Microsoft or our customers, including the enforcement of Microsoft’s agreements or policies governing the use of the Syntex repository services.
 
 **<ins>Data Processing and Transfers</ins>**
 
@@ -201,7 +201,7 @@ For purposes of these GDPR Terms, Company and Microsoft agree that Company is th
 
 6) In assessing the appropriate level of security, account shall be taken of the risks that are presented by processing, in particular from accidental or unlawful destruction, loss, alteration, unauthorized disclosure of, or access to Personal Data transmitted, stored, or otherwise processed. (Article 32(2))
 
-7) Company and Microsoft shall take steps to ensure that any natural person acting under the authority of Company or Microsoft who has access to Personal Data does not process them except on instructions from Company, unless he or she is required to do so by Union or Member State law. (Article 32(4))
+7) Company and Microsoft shall take steps to ensure that any natural person acting under the authority of Company or Microsoft who has access to Personal Data does not process them except on instructions from Company, unless he or sfhe is required to do so by Union or Member State law. (Article 32(4))
 
 8) Microsoft shall notify Company without undue delay after becoming aware of a Personal Data breach. (Article 33(2)). Such notification will include that information a processor must provide to a controller under Article 33(3) to the extent such information is reasonably available to Microsoft.
 
