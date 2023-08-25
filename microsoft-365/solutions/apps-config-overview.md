@@ -170,4 +170,4 @@ Win32 apps that your organization creates can be added to Intune. These apps are
 
 ## Monitor app configuration
 
-Intune provides an **App configuration status** report to help you monitor your the apps you've deployed to your end-users. Additionally, Intune provides diagnotics logs and configuration status per device. For more information, see [Monitor app configuration](apps-config-step-7.md).
+Intune provides an **App configuration status** report to help you monitor your the apps you've deployed to your end-users. Additionally, Intune provides diagnotics logs and configuration status per device. For more information, see [Monitor app configuration](apps-config-step-7.md). 
