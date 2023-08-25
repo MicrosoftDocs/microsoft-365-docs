@@ -28,11 +28,48 @@ The [Microsoft Teams Shifts connector for UKG Dimensions](shifts-connectors.md#m
 
 You can use the [Shifts connector wizard](shifts-connector-wizard-ukg.md) (Preview) in the Microsoft 365 admin center or [PowerShell](shifts-connector-ukg-powershell-setup.md) to create a connection and connection instances. After they're set up, you can manage them in the Microsoft 365 admin center or by using PowerShell.
 
-This article gives you an overview of prerequisites, tasks to complete, and important concepts to understand, before you use the wizard or PowerShell to integrate Shifts in Teams with UKG Dimensions.
+This article gives you an overview of prerequisites, configuration tasks to complete, and important concepts to keep in mind, before you use the wizard or PowerShell to integrate Shifts in Teams with UKG Dimensions.
+
+This article lists prerequisites and configuration tasks that you must complete before you use the wizard or PowerShell to integrate Shifts in Teams with UKG Dimensions. It also gives you an overview of important concepts around how your UKG Dimension structure influences the way you set up your teams in Teams.
 
 ## Before you begin
 
 ## Prerequisites
+
+Before you get started, make sure that you meet all the following prerequisites:
+
+- You’re a Microsoft 365 global admin.
+
+- You know your UKG Dimensions account username and password, along with the following service URLs:
+
+    - API URL
+    - Application key
+    - Client ID
+    - Client secret
+    - Single Sign On (SSO) URL
+
+    If you don't have all this information, contact UKG Dimensions support.
+
+- Your organization is using Azure Active Directory (Azure AD), which is the supported identity provider for SSO, and you've enabled SSO by setting up integration between Azure AD and UKG Dimensions.
+
+    For a step-by-step tutorial on how to enable SSO, see [Tutorial: Azure AD SSO integration with Kronos Workforce Dimensions.](/azure/active-directory/saas-apps/kronos-workforce-dimensions-tutorial) If you need help or more information about setting up SSO, contact UKG Dimensions support.
+
+- Federated SSO authentication is enabled in your UKG Dimensions environment. To configure SSO, see the [Configure UKG Dimensions single sign-on](#configure-single-sign-on) section in this article.
+
+- You have at least one team set up in Teams, to which you added the following:
+
+    - Frontline workers as teams members
+    - Frontline managers as team owners
+    - A Microsoft 365 system account (not your personal account) as team owner
+
+    > [!NOTE]
+    > The Microsoft 365 system account is a general account that must be added as team owner to all teams you want to map. You can [create this account in the Microsoft 365 admin center](/microsoft-365/admin/add-users/add-users) and assign it a Microsoft 365 license. Then, add the account as a team owner. The Shifts connector uses this account when syncing Shifts changes from UKG Dimensions. We recommend you create an account specifically for this purpose and not use your personal user account.
+
+<!--- You added a Microsoft 365 system account (not your personal user account) as team owner to all teams you want to map.
+
+    You can [create this account in Microsoft 365](/microsoft-365/admin/add-users/add-users) and assign it a Microsoft 365 license. Then, add the account as a team owner to all teams that you want to map. The Shifts connector uses this account when syncing Shifts changes from UKG Dimensions. We recommend you create an account specifically for this purpose and not use your personal user account.-->
+
+- The teams that you want to map don't have any schedules that were created in Shifts or UKG Dimensions. If a team has an existing schedule, you must remove schedule entities from the team before you map a UKG Dimensions instance to it. Follow the steps in the [Remove schedule entities from the team](#remove-schedule-entities-from-teams-you-want-to-map) section of this article. Otherwise, you'll see duplicate shifts.
 
 ## Configure single sign-on (SSO)
 
@@ -42,7 +79,8 @@ This article gives you an overview of prerequisites, tasks to complete, and impo
 
 ## Remove schedule entities from teams you want to map
 
-Complete this step if you're mapping UKG Dimensions instances to existing teams that have schedule entities. If you're mapping to teams that don't have any schedules or if you've already created new teams to map to, you can skip this step.
+> [!NOTE]
+> Complete this step if you're mapping UKG Dimensions instances to existing teams that have schedule entities. If you're mapping to teams that don't have any schedules or if you've already created new teams to map to, you can skip this step.
 
 Use PowerShell to remove schedule entities from teams.
 
@@ -61,16 +99,18 @@ To learn more, see [Remove-CsTeamsShiftsScheduleRecord](/powershell/module/teams
 ## Roles and permissions in Teams and their impact on Shifts
 
 
-## Example scenario
+## Example
 
-The way you organize your teams in Teams depends on your UKG Dimensions configuration. Here's an example to help you understand how your UKG Dimensions structure influences the way you set up your teams and how your schedule information syncs to Shifts.
+The way you organize your teams in Teams depends on your UKG Dimensions configuration. Here's an example to help you understand how your UKG Dimensions structure influences the way you set up your teams and how schedule information syncs to Shifts.
+
+### Scenario
 
 Contoso has hundreds of retail stores spread across the United Kingdom. Each store is located within an Area in the United Kingdom. To simplify this example, we focus on three stores in the Central London Area, to which Contoso wants to start rolling out Teams and Shifts for their frontline employees.
 
 Assumptions:
 
 - Each store is managed by a different manager.
-- Frontline workers can't take on shifts from stores located outside their area. In other words, business rules set up in UKG Dimensions don't allow employees to work at other stores.
+- Frontline workers can't take on shifts from other stores. In other words, business rules set up in UKG Dimensions don't allow employees to work at other stores.
 
 #### UKG Dimensions location structure
 
