@@ -71,7 +71,7 @@ Before you get started, make sure that you meet all the following prerequisites:
 
 - The teams that you want to map don't have any schedules that were created in Shifts or UKG Dimensions. If a team has an existing schedule, you must remove schedule entities from the team before you map a UKG Dimensions instance to it. Follow the steps in the [Remove schedule entities from the team](#remove-schedule-entities-from-teams-you-want-to-map) section of this article. Otherwise, you'll see duplicate shifts.
 
-## Configure single sign-on (SSO)
+## Configure single sign-on
 
 [!INCLUDE [shifts-connector-ukg-sso](includes/shifts-connector-ukg-sso.md)]
 
