@@ -159,7 +159,7 @@ The limitations in this section does not apply to claims arising from or in conn
 
 **Entire Agreement.** This Agreement includes all exhibits and schedules. If Company has entered into a license agreement for use of any Microsoft offering, that license agreement will govern its use of the Microsoft offering, and any feedback given to Microsoft under that license agreement.  With these exceptions, this is the entire agreement between us regarding the Input. It replaces all other agreements and understandings regarding the subject matter of this Agreement.  
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**Attachment 1 – GDPR Terms**
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**Attachment 1 – GDPR Terms**
 
 For purposes of these GDPR Terms, Company and Microsoft agree that Company is the controller of Personal Data and Microsoft is the processor of such data, except when Company acts as a processor of Personal Data, in which case Microsoft is a sub-processor. These GDPR Terms apply to the processing of Personal Data, within the scope of the GDPR, by Microsoft on behalf of Company. These GDPR Terms do not limit or reduce any data protection commitments Microsoft makes to Company in other agreements between Microsoft and Company. These GDPR Terms do not apply where Microsoft is a controller of Personal Data.
 
@@ -204,5 +204,3 @@ For purposes of these GDPR Terms, Company and Microsoft agree that Company is th
 7) Company and Microsoft shall take steps to ensure that any natural person acting under the authority of Company or Microsoft who has access to Personal Data does not process them except on instructions from Company, unless he or sfhe is required to do so by Union or Member State law. (Article 32(4))
 
 8) Microsoft shall notify Company without undue delay after becoming aware of a Personal Data breach. (Article 33(2)). Such notification will include that information a processor must provide to a controller under Article 33(3) to the extent such information is reasonably available to Microsoft.
-
- 
