@@ -34,7 +34,6 @@ Because Loop components are stored as files in OneDrive, there are many capabili
 
 - [Sensitivity Labeling](/microsoft-365/compliance/information-protection) (Microsoft Information Protection) at the File-level
 - End-user ability to see [Data Loss Prevention (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) policy tips
-- Graph API to convert Loop content into HTML for export
 - [Conditional Access](/azure/active-directory/conditional-access/overview) 
 
 ## Summary of compliance capabilities for content created in Loop workspaces
@@ -44,7 +43,6 @@ Content created in a Loop workspace is stored in Syntex repository services. You
 Syntex repository services has many of the same compliance capabilities as the rest of SharePoint and OneDrive. However, the capabilities below are **not available** yet for content created in Loop workspaces. While we continue to improve rapidly in this area, if you require any of these capabilities, Microsoft recommends proactively disabling Loop workspaces using the instructions here: [Manage Loop workspaces in Syntex repository services](/microsoft-365/loop/loop-workspaces-configuration):
 
 - [Intune Device Management Support](/mem/intune/remote-actions/device-management)
-- Graph API to convert Loop content into HTML for export
 - Tenant admin experience: Restoring a deleted workspace
 - End-user ability to see or set [Retention Labels](/microsoft-365/compliance/retention-policies-sharepoint)
 - [Sensitivity Labeling](/microsoft-365/compliance/information-protection) (Microsoft Information Protection) at the File-level and Container-level
