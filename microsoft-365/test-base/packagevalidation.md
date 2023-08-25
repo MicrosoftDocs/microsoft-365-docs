@@ -20,7 +20,7 @@ f1.keywords: NOCSH
 
 ## Package Validation
 
-When a [new package](buildpackage) is created or onboarded to Test Base, a validation run is triggered. The purpose of the validation run is to check the package and make sure it is ready for testing. 
+When a [new package](buildpackage.md) is created or onboarded to Test Base, a validation run is triggered. The purpose of the validation run is to check the package and make sure it is ready for testing. 
 Packages that are undergoing verification will be marked with "Verifying package" status.
 
 To see the verification status of your package, you can click the "Manage Package" menu 
@@ -51,8 +51,10 @@ As soon as the package validation is completed, you should receive a mail notifi
 To see validation results of your Security Update test, follow the step below.
 1.	Click on Manage packages, and select the package
 [![Screenshot to show the package link.](Media/packagevalidation_3.png)](Media/packagevalidation_3.png#lightbox)
+
 2.	On the package summary page, click "Test Summary"
 [![Screenshot of the test summary button.](Media/packagevalidation_4.png)](Media/packagevalidation_4.png#lightbox)
+
 3.	Click on the Security Update / Feature Update tab
 [![Screenshot of the test summary page and the tab.](Media/packagevalidation_5.png)](Media/packagevalidation_5.png#lightbox)
 
