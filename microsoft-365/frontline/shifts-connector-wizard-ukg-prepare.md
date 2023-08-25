@@ -169,7 +169,7 @@ Based on the location structure, UKG Dimensions would provide the following info
 |Contoso/Retail/Central London/Covent Garden|FLW11, FLW12, FLW13, FLW14<br>FLW15, FLW16|Leather goods sales associate<br>Sales associate|FLM2|
 |Contoso/Retail/Central London/Chelsea|FLW17, FLW18, FLW19, FLW20<br>FLW21, FLW21, FLW23<br>FLW24|Sales associate<br>Personal shopper<br>Beauty advisor|FLM3|
 
-#### What implications does this have when setting up teams in Teams?
+#### What does mean when I set up teams in Teams?
 
 In this scenario, the IT admin organizes teams in Teams as follows.
 
@@ -180,7 +180,7 @@ Here's how the team structure looks like for each store in the Central London Ar
 
 In this scenario, keep in mind that a frontline worker can only be a member of one team. This is because frontline workers aren't allowed to work at other stores.
 
-#### What implications does this have when running the Shifts connector wizard?
+#### What does this mean when I run the Shifts connector wizard?
 
 When the IT admin sets up a connection instance in the wizard, each store location is mapped to the relevant team.
 
