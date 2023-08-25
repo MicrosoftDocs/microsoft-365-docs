@@ -64,7 +64,7 @@ For the best experience in multi-tenant organizations, users need [the new Micro
 - Set their status for each account and organization individually.
 - User profile card shows organization name and email address
 
-To control which users can use the new Teams desktop client, use the Teams update policies. For more information, see [Deploy the new Teams using policies](/microsoftteams/new-teams-deploy-using.-policies)
+To control which users can use the new Teams desktop client, use the Teams update policies. For more information, see [Deploy the new Teams using policies](/microsoftteams/new-teams-deploy-using-policies)
 
 ## Trusted organizations in external access
 
@@ -88,6 +88,8 @@ The following are limitations of the multi-tenant organizations in Microsoft 365
 
 If you want to add more than five tenants or 100,000 users per tenant, contact Microsoft support.
 
+For additional limitations, see [Known issues for multi-tenant organizations](/azure/active-directory/multi-tenant-organizations/multi-tenant-organization-known-issues).
+
 ## Set up or join a multi-tenant organization
 
 To set up a new multi-tenant organization where your tenant is the owner, see [Set up a multi-tenant organization in Microsoft 365](set-up-multi-tenant-org.md).
@@ -96,7 +98,7 @@ To join an existing multi-tenant organization as a member tenant, see [Join or l
 
 ## Related topics
 
-[Configure a multi-tenant organization using Microsoft Graph API](/azure/active-directory/multi-tenant-organizations/configure-graph)
+[Configure cross-tenant synchronization using PowerShell or Microsoft Graph API](/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-configure-graph)
 
 [Synchronize users in multi-tenant organizations in Microsoft 365](sync-users-multi-tenant-orgs.md)
 
