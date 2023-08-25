@@ -41,7 +41,7 @@ To access the report, you must be a Global admin, Teams admin, Global reader, or
 
 On the **Distribution** tab, you'll see a chart that provides an overview of SMS notifications usage, by month, for the date range that you selected. The table shows details for each SMS notification that was sent.
 
-:::image type="content" source="media/sms-notification-usage-report.png" alt-text="Screenshot of the SMS notifications usage report in the Teams admin center.":::
+:::image type="content" source="media/sms-notification-usage-report.png" alt-text="Screenshot of the SMS notifications usage report in the Teams admin center." lightbox="media/sms-notification-usage-report.png" :::
 
 |Callout |Description  |
 |--------|-------------|
