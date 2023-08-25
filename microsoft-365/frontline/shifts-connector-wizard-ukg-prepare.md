@@ -30,13 +30,29 @@ You can use the [Shifts connector wizard](shifts-connector-wizard-ukg.md) (Previ
 
 This article gives you an overview of prerequisites, configuration tasks to complete, and important concepts to keep in mind, before you use the wizard or PowerShell to integrate Shifts in Teams with UKG Dimensions.
 
-This article lists prerequisites and configuration tasks that you must complete before you use the wizard or PowerShell to integrate Shifts in Teams with UKG Dimensions. It also gives you an overview of important concepts around how your UKG Dimension structure influences the way you set up your teams in Teams.
+This article lists requirements, prerequisites, and configuration tasks that you must complete before you use the wizard or PowerShell to integrate Shifts in Teams with UKG Dimensions. It also gives you an overview of important concepts around how your UKG Dimension structure influences the way you set up your teams in Teams.
 
 ## Before you begin
 
+Before you integrate Shifts with UKG Dimensions, your organization must have the following environment requirements already set up. How UKG Dimensions is set up in your organization may determine whether you can use out-of-the-box Teams Shifts connector for UKG Dimensions.
+
+- Your UKG Dimensions environment is configured. This means that your organization has completed the following:
+
+    - You've established how "teams" (grouping of users) are organized to match your organizational structure and business needs.
+
+        > [!IMPORTANT]
+        > Shifts currently supports grouping users by location in UKG Dimensions. Other user grouping types aren't supported.
+
+    - You've set up relevant requests, such as shift requests and time off requests, according to your business needs.
+
+        > [!IMPORTANT]
+        > Shifts currently supports the following UKG Dimensions request types:
+
+- You're using Azure Active Directory (Azure AD) as your identity provider.
+
 ## Prerequisites
 
-Before you get started, make sure that you meet all the following prerequisites:
+Here's the list of information to gather and configuration tasks to complete before you run the wizard or use PowerShell to create a connection.
 
 - You’re a Microsoft 365 global admin.
 
@@ -50,34 +66,38 @@ Before you get started, make sure that you meet all the following prerequisites:
 
     If you don't have all this information, contact UKG Dimensions support.
 
-- Your organization is using Azure Active Directory (Azure AD), which is the supported identity provider for SSO, and you've enabled SSO by setting up integration between Azure AD and UKG Dimensions.
+- Enable SSO by setting up integration between Azure AD and UKG Dimensions.
 
-    For a step-by-step tutorial on how to enable SSO, see [Tutorial: Azure AD SSO integration with Kronos Workforce Dimensions.](/azure/active-directory/saas-apps/kronos-workforce-dimensions-tutorial) If you need help or more information about setting up SSO, contact UKG Dimensions support.
+    For a step-by-step tutorial, see [Tutorial: Azure AD SSO integration with Kronos Workforce Dimensions.](/azure/active-directory/saas-apps/kronos-workforce-dimensions-tutorial) If you need help or more information about setting up SSO, contact UKG Dimensions support.
 
-- Federated SSO authentication is enabled in your UKG Dimensions environment. To configure SSO, see the [Configure UKG Dimensions single sign-on](#configure-single-sign-on) section in this article.
+- Configure federated SSO authentication in your UKG Dimensions environment.
 
-- You have at least one team set up in Teams, to which you added the following:
+    For steps on how to do this, see the [Configure UKG Dimensions single sign-on](#configure-single-sign-on) section in this article.
+
+- Create at least one team in Teams, and add the following account and people to the team:
 
     - Frontline workers as teams members
     - Frontline managers as team owners
-    - A Microsoft 365 system account (not your personal account) as team owner
+    - A general account, what we call the Microsoft 365 system account, as team owner.
 
     > [!NOTE]
-    > The Microsoft 365 system account is a general account that must be added as team owner to all teams you want to map. You can [create this account in the Microsoft 365 admin center](/microsoft-365/admin/add-users/add-users) and assign it a Microsoft 365 license. Then, add the account as a team owner. The Shifts connector uses this account when syncing Shifts changes from UKG Dimensions. We recommend you create an account specifically for this purpose and not use your personal user account.
+    > The Microsoft 365 system account is a general account must be added as team owner to all teams you want to map. You can [create this account in the Microsoft 365 admin center](/microsoft-365/admin/add-users/add-users) and assign it a Microsoft 365 license. Then, add the account as a team owner. The Shifts connector uses this account when syncing Shifts changes from UKG Dimensions. We recommend you create an account specifically for this purpose and not use your personal user account.
+
+    If you want to create more than one team, see [Deploy frontline static teams at scale](deploy-teams-at-scale.md).
 
 <!--- You added a Microsoft 365 system account (not your personal user account) as team owner to all teams you want to map.
 
     You can [create this account in Microsoft 365](/microsoft-365/admin/add-users/add-users) and assign it a Microsoft 365 license. Then, add the account as a team owner to all teams that you want to map. The Shifts connector uses this account when syncing Shifts changes from UKG Dimensions. We recommend you create an account specifically for this purpose and not use your personal user account.-->
 
-- The teams that you want to map don't have any schedules that were created in Shifts or UKG Dimensions. If a team has an existing schedule, you must remove schedule entities from the team before you map a UKG Dimensions instance to it. Follow the steps in the [Remove schedule entities from the team](#remove-schedule-entities-from-teams-you-want-to-map) section of this article. Otherwise, you'll see duplicate shifts.
+- Make sure the teams that you want to map don't have any schedules that were created in Shifts or UKG Dimensions. If a team has an existing schedule, you must remove schedule entities from the team before you map a UKG Dimensions instance to it. Follow the steps in the [Remove schedule entities from the team](#remove-schedule-entities-from-teams-you-want-to-map) section of this article. Otherwise, you'll see duplicate shifts.
 
-## Configure single sign-on
+### Configure single sign-on
 
 [!INCLUDE [shifts-connector-ukg-sso](includes/shifts-connector-ukg-sso.md)]
 
 <a name="remove_schedules"> </a>
 
-## Remove schedule entities from teams you want to map
+### Remove schedule entities from teams you want to map
 
 > [!NOTE]
 > Complete this step if you're mapping UKG Dimensions instances to existing teams that have schedule entities. If you're mapping to teams that don't have any schedules or if you've already created new teams to map to, you can skip this step.
@@ -98,6 +118,11 @@ To learn more, see [Remove-CsTeamsShiftsScheduleRecord](/powershell/module/teams
 
 ## Roles and permissions in Teams and their impact on Shifts
 
+## Mapping UKG Dimensions locations to Shifts in Teams
+
+As mentioned earlier, Shfits supports grouping users by location in UKG Dimensions. In UKG Dimensions, the nodes in each location represent the hierarchy in your organizational chart. A location path reaches its endpoint when a job type is configured.
+
+Users in UKG Dimensions are assigned and grouped by primary jobs that exist within a location. This means that from a Teams and Shifts standpoint, employees who have the same location path are part of the same team. 
 
 ## Example
 
@@ -112,7 +137,7 @@ Assumptions:
 - Each store is managed by a different manager.
 - Frontline workers can't take on shifts from other stores. In other words, business rules set up in UKG Dimensions don't allow employees to work at other stores.
 
-#### UKG Dimensions location structure
+### UKG Dimensions location structure
 
 In this scenario, the UKG Dimensions location structure looks something like this.
 
