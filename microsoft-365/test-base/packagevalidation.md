@@ -21,7 +21,7 @@ f1.keywords: NOCSH
 ## Package Validation
 
 When a [new package](buildpackage.md) is created or onboarded to Test Base, a validation run is triggered. The purpose of the validation run is to check the package and make sure it is ready for testing. 
-Packages that are undergoing verification will be marked with "Verifying package" status.
+Packages that are undergoing verification is marked with "Verifying package" status.
 
 To see the verification status of your package, you can click the "Manage Package" menu 
 
@@ -29,10 +29,10 @@ To see the verification status of your package, you can click the "Manage Packag
 
 ## Package Verification Stages
 
-1.	**Sanity Check**: Test Base will attempt to validate that the scripts path provided is correct and exists in your package.
+1.	**Sanity Check**: Test Base attempts to validate that the scripts path provided is correct and exists in your package.
 Follow the guideline here to understand how to build a package for Test Base
-2.	**Malware Scan**: Test Base will also scan the package to check for the presence of virus, malware, or any malicious content.
-3.	**Verification Run**: If the package passes the first and second stage of validation, Test base will trigger a verification run. During the verification run, Test Base will run the scripts provided on our VM (virtual machines).
+2.	**Malware Scan**: Test Base also scans the package to check for the presence of virus, malware, or any malicious content.
+3.	**Verification Run**: If the package passes the first and second stage of validation, Test base triggers a verification run. During the verification run, Test Base runs the scripts provided on our VM (virtual machines).
 
 ## Package Verification Status
 
@@ -62,9 +62,9 @@ To see validation results of your Security Update test, follow the step below.
 
 When you upload a package, Test Base makes some decision based on the test types and products selected during package onboarding to perform package validation.
 
-1. If a customer selects only Security Update, Test Base will trigger package validation against the most recent product selected. After successful package validation and if package is Accepted, Test Base will proceed to schedule the package for baseline runs if the customer had selected more than one product. 
-As an example, if a customer selects Windows 11 22H2, Windows 11 21H2 and Windows 10 22H2. Test Base will trigger the validation run against "Windows 11 22H2". If the package gets accepted, a baseline run will be triggered against the next 2 products.
+1. If a customer selects only Security Update, Test Base triggers package validation against the most recent product selected. After successful package validation and if package is Accepted, Test Base will proceed to schedule the package for baseline runs if the customer had selected more than one product. 
+As an example, if a customer selects Windows 11 22H2, Windows 11 21H2 and Windows 10 22H2. Test Base triggers the validation run against "Windows 11 22H2". If the package gets accepted, a baseline run will be triggered against the next 2 products.
 
 2. If the customer select only Feature Update as test type, the validation scheduling process is a little different.
-Test Base will trigger a validation run against the selected Feature Update (The customer will see the results in "Feature Update test Results"). When the package is accepted, a baseline line run is triggered against n - 1 product  with latest security update. 
+Test Base triggers a validation run against the selected Feature Update (The customer can see the results in "Feature Update test Results"). When the package is accepted, a baseline line run is triggered against n - 1 product  with latest security update. 
 For example, if a customer select Windows 11 22H2 Feature Update, the baseline runs will be Windows 11 21H2 with the latest security updates.
