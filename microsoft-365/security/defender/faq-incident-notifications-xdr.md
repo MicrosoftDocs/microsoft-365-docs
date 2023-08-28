@@ -2,7 +2,7 @@
 title: FAQs related to Microsoft Defender Experts for XDR incident notifications
 ms.reviewer:
 description: Frequently asked questions related to Defender Experts for XDR incident notifications
-keywords: XDR, XDR incidents, Xtended detection and response, FAQ's related to XDR, defender experts for xdr, XDR incident notifications, defender experts analyst, managed threat hunting, managed detection and response (MDR) service, service delivery manager, real-time visibility with XDR experts
+keywords: XDR, XDR incidents, Xtended detection and response, FAQ's related to XDR, defender experts for xdr, XDR incident notifications, defender experts analyst, managed threat hunting, managed detection and response (MDR) service, real-time visibility with XDR experts, DEX-XDR FAQ's
 search.product: Windows 10
 ms.service: microsoft-365-security
 ms.subservice: m365d
@@ -63,8 +63,7 @@ The following section lists down questions your SOC team might have regarding th
 |---------|---------|
 | **Can I get Defender Experts updates from Microsoft 365 Defender in email?** | Once a Defender Experts analyst publishes recommended response actions to an incident, your designated incident contacts will receive a corresponding email notification to the email addresses specified in **Settings** > **Defender Experts** > **Notification contacts** in your Microsoft 365 Defender portal.<br><br>Additionally, you can [configure a Logic App](/connectors/connector-reference/connector-reference-logicapps-connectors) to send all incident updates to your designated email address(es) automatically.|
 | **Can I get Defender Experts updates from Microsoft 365 Defender in Microsoft Teams?** | A two-way chat functionality is accessible through an incident's **Managed response** flyout panel in your Microsoft 365 Defender portal.<br><br>Additionally, you can [configure a Logic App](/connectors/connector-reference/connector-reference-logicapps-connectors) to send all incident updates to your designated email address(es) automatically.|
-| **Can I get Defender Experts updates from Microsoft 365 Defender as SMS or phone call notifications?** | Microsoft 365 Defender currently doesn't have this capability.<br><br>However, if you have a Microsoft 365 Defender account connected to your Sentinel account, you can configure a playbook to automatically send an SMS or phone call notification through Azure Communication Services or Twilio.|
-| **Can I get Defender Experts updates from Microsoft 365 Defender in third-party communications services such as Slack?** | Microsoft 365 Defender currently doesn't support this capability directly.<br><br>However, if you have a Microsoft 365 Defender account connected to your Microsoft Sentinel account, you can configure a playbook to automatically post incident updates to Slack.|
+| **Can I get Defender Experts updates from Microsoft 365 Defender as SMS or phone call updates, or in third-party communications services such as Slack?** | You can [configure a Logic App](/connectors/connector-reference/connector-reference-logicapps-connectors) to do this to send notifications from communication services such as Slack, Twilio, Azure Communication Services, etc. This happens when the incident **Assigned to** field is changed to _Customer_ or **Status** field changing to _Awaiting Customer Action_ in the Graph Security API |
 
 ### See also
 
