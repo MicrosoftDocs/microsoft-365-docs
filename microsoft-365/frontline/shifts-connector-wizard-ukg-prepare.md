@@ -30,7 +30,7 @@ You can use the [Shifts connector wizard](shifts-connector-wizard-ukg.md) (Previ
 
 <!--This article gives you an overview of prerequisites, configuration tasks to complete, and important concepts to keep in mind, before you use the wizard or PowerShell to integrate Shifts in Teams with UKG Dimensions.-->
 
-This article lists requirements, prerequisites, and configuration tasks that you must complete before you use the wizard or PowerShell to create a connection. It also gives you an overview of important concepts around how your UKG Dimensions structure influences the way you set up your teams in Teams.
+This article lists requirements, prerequisites, and configuration tasks that you must complete before you use the wizard or PowerShell to create a connection. It also gives you an overview of how to set up your teams in Teams based on your UKG Dimensions organizational structure.
 
 ## Before you begin
 
