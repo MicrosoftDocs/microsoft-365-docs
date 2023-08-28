@@ -78,7 +78,7 @@ The output report displayed on running **mdatp health** is shown in the followin
 
 :::image type="content" source="images/screen-on-clicking-fix.png" alt-text="The screen that is displayed on clicking the Fix button." lightbox="images/screen-on-clicking-fix.png":::
 
-## Cause 
+## Cause
 
 macOS requires that a user manually and explicitly approves certain functions that an application uses, for example, system extensions, running in background, sending notifications, full disk access, and so on. Microsoft Defender for Endpoint relies on these applications and can't properly function until all these consents are received from a user.
 
@@ -130,10 +130,10 @@ To troubleshoot the issue of missing files to make Microsoft Defender for Endpoi
 
 This section describes the solution of approving the functions such system extension, background services, notifications, full disk access, and so on using the management tools, namely Intune, JamF, Other MDM, and using the method of manual deployment. To perform these functions using these management tools, see:
 
-- [Intune](#intune)
-- [JamF](#jamf)
-- [Other MDM](#other-mdm)
-- [Manual deployment](#manual-deployment)
+- [Intune](manage-profiles-approve-sys-extensions-intune.md#manage-profiles-using-intune)
+- [JamF](manage-sys-extensions-using-jamf.md#manage-system-extensions-using-jamf)
+- [Other MDM](manage-sys-extensions-other-mdm.md#manage-system-extensions-using-other-mdm-solutions)
+- [Manual deployment](manage-sys-extensions-manual-deployment.md#manage-system-extensions-using-the-manual-methods-of-deployment)
 
 ### Prerequisites
 

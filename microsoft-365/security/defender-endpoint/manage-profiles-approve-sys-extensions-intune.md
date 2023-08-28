@@ -1,6 +1,6 @@
 ---
-title: Manage profiles using Intune
-description: Manage profiles using Intune for Microsoft Defender for Endpoint to work properly on macOS.
+title: Manage profiles and approve extensions using Intune
+description: Manage profiles and approve extensions using Intune for Microsoft Defender for Endpoint to work properly on macOS.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, performance, big sur, monterey, ventura, mde for mac
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
@@ -20,7 +20,7 @@ search.appverid: met150
 ms.date: 08/28/2023
 ---
 
-# Manage profiles using Intune
+# Manage profiles and approve extensions using Intune
 
 This article describes the procedures to follow to manage profiles properly using the Intune management tool.
 
