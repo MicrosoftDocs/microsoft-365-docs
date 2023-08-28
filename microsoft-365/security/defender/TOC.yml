@@ -1,4 +1,4 @@
-  name: Microsoft 365 Defender
+- name: Microsoft 365 Defender
   href: index.yml
   expanded: true
   items: 
@@ -163,15 +163,11 @@
               - name: Respond to your first incident
                 items: 
                  - name: Overview
-                   href: first-incident-overview.md
-                 - name: Prepare
-                   href: first-incident-prepare.md
-                 - name: Step 1. Triage and analyze
-                   href: first-incident-analyze.md
-                 - name: Step 2. Remediate
-                   href: first-incident-remediate.md
-                 - name: Step 3. Review
-                   href: first-incident-post.md
+                   href: respond-first-incident-365-defender.md
+                 - name: Analyze your first incident
+                   href: respond-first-incident-analyze.md
+                 - name: Remediate your first incident
+                   href: respond-first-incident-remediate.md
                  - name: Additional incident examples
                    items: 
                     - name: Phishing email

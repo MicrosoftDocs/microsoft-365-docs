@@ -59,7 +59,6 @@ Check out this video and others on our [YouTube channel](https://go.microsoft.co
 
 - You must be a Global admin to manage MFA. For more information, see [About admin roles](../add-users/about-admin-roles.md).
 - If you have legacy per-user MFA turned on, [Turn off legacy per-user MFA](#turn-off-legacy-per-user-mfa).
-- If you have Office 2013 clients on Windows devices, [turn on Modern Authentication for Office 2013 clients](./enable-modern-authentication.md).
 - Advanced: If you have third-party directory services with Active Directory Federation Services (AD FS), set up the Azure MFA Server. See [advanced scenarios with Azure AD Multifactor Authentication and third-party VPN solutions](/azure/active-directory/authentication/howto-mfaserver-nps-vpn) for more information.
 
 ### Turn off legacy per-user MFA
