@@ -97,7 +97,7 @@ Configure the connector's redirection URL. This allows UKG Dimensions to redirec
 1. In the **global.oAuthToken.redirection.domain.whiteList** field, enter the value: "aka.ms".
 1. Select **Save**.
 
-#### Create at least one team in Teams
+### Create at least one team in Teams
 
 Create at least one team in Teams, and add the following account and people to it:
 
