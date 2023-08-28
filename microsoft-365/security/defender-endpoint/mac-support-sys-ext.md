@@ -130,7 +130,7 @@ To troubleshoot the issue of missing files to make Microsoft Defender for Endpoi
 
 This section describes the solution of approving the functions such system extension, background services, notifications, full disk access, and so on using the management tools, namely Intune, JamF, Other MDM, and using the method of manual deployment. To perform these functions using these management tools, see:
 
-- [Intune](manage-profiles-approve-sys-extensions-intune.md#manage-profiles-using-intune)
+- [Intune](manage-profiles-approve-sys-extensions-intune.md#manage-profiles-and-approve-extensions-using-intune)
 - [JamF](manage-sys-extensions-using-jamf.md#manage-system-extensions-using-jamf)
 - [Other MDM](manage-sys-extensions-other-mdm.md#manage-system-extensions-using-other-mdm-solutions)
 - [Manual deployment](manage-sys-extensions-manual-deployment.md#manage-system-extensions-using-the-manual-methods-of-deployment)
