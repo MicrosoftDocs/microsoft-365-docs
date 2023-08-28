@@ -1,5 +1,5 @@
 ---
-title: Prerequisites and considerations for the Teams Shifts connector for UKG Dimensions
+title: Prerequisites and requirements for the Teams Shifts connector for UKG Dimensions
 author: lana-chin
 ms.author: v-chinlana
 manager: serdars
@@ -20,7 +20,7 @@ appliesto:
 ms.date: 3/23/2023
 ---
 
-# Prerequisites and considerations for the Teams Shifts connector for UKG Dimensions
+# Prerequisites and requirements for the Teams Shifts connector for UKG Dimensions
 
 ## Overview
 
@@ -34,11 +34,11 @@ This article lists requirements, prerequisites, and configuration tasks that you
 
 ## Before you begin
 
-Before you integrate Shifts with UKG Dimensions, your organization must have the following environment requirements already set up. How UKG Dimensions is set up in your organization may determine whether you can use out-of-the-box Teams Shifts connector for UKG Dimensions.
+Before you integrate Shifts with UKG Dimensions, your organization must have the following environment requirements already set up.
 
 - Your UKG Dimensions environment is configured. This means that your organization has completed the following:
 
-    - You've established how "teams" (grouping of users) are organized to match your organizational structure and business needs.
+    - You've established how "teams" (groupings of users) are organized to match your organizational structure and business needs, and your users are grouped by location.
 
         > [!IMPORTANT]
         > Shifts currently supports grouping users by location in UKG Dimensions. Other user grouping types aren't supported.
@@ -52,10 +52,11 @@ Before you integrate Shifts with UKG Dimensions, your organization must have the
 
 ## Prerequisites
 
-Here's the list of information to gather and configuration tasks to complete before you run the [wizard](shifts-connector-wizard-ukg.md) or use [PowerShell](shifts-connector-ukg-powershell-setup.md) to create a connection.
+Before you create a connection by using the [wizard](shifts-connector-wizard-ukg.md) or [PowerShell](shifts-connector-ukg-powershell-setup.md), make sure you gather the following information and complete the following configuration tasks.
 
-- You’re a Microsoft 365 global admin.
+### Accounts
 
+- You're a Microsoft 365 global admin.
 - You know your UKG Dimensions account username and password, along with the following service URLs:
 
     - API URL
@@ -66,34 +67,94 @@ Here's the list of information to gather and configuration tasks to complete bef
 
     If you don't have all this information, contact UKG Dimensions support.
 
-- Enable SSO by setting up integration between Azure AD and UKG Dimensions.
+### Enable SSO by setting up integration between Azure AD and UKG Dimensions
 
-    For a step-by-step tutorial, see [Tutorial: Azure AD SSO integration with Kronos Workforce Dimensions.](/azure/active-directory/saas-apps/kronos-workforce-dimensions-tutorial) If you need help or more information about setting up SSO, contact UKG Dimensions support.
+For a step-by-step tutorial, see [Tutorial: Azure AD SSO integration with Kronos Workforce Dimensions](/azure/active-directory/saas-apps/kronos-workforce-dimensions-tutorial). If you need help or more information about setting up SSO, contact UKG Dimensions support.
 
-- Configure federated SSO authentication in your UKG Dimensions environment.
+### Configure SSO in UKG Dimensions
 
-    See the [Configure UKG Dimensions single sign-on](#configure-single-sign-on) section in this article for steps on how to configure SSO.
+Follow these steps to configure federated SSO authentication in your UKG Dimensions environment.
 
-- Create at least one team in Teams, and add the following account and people to the team:
+#### Step 1: Change user accounts to federated accounts
 
-    - Frontline workers as teams members
-    - Frontline managers as team owners
-    - A general account, what we call the Microsoft 365 system account, as team owner.
+Each person who uses the Shifts connector needs a federated account in UKG Dimensions.
+
+1. On the left menu in UKG Dimensions, go to **Maintenance** > **People information**.
+1. Open the user's profile.
+1. Under the **Employee** section, expand **Information**.
+1. Change the **Authentication Type** to **Federated**.
+1. Save your changes and repeat the process for all users who will use the connector.
+
+#### Step 2: Allow Shifts SSO redirection URLs
+
+Configure the connector's redirection URL. This allows UKG Dimensions to redirect the user to the Shifts app in Teams as part of the SSO flow.
+
+1. Sign in to UKG Dimensions by using an account that has access to Application Setup.
+1. On the left menu, go to **Administration** > **Application Setup**.
+1. Then, go to **System Configuration** and choose **System Settings**.
+1. Select **Global Values**.
+1. In the **global.oAuth.authCode.redirection.uris** field, enter the value: "https://aka.ms/shifts/connector/ukgdimensions/auth".
+1. In the **global.oAuthToken.redirection.domain.whiteList** field, enter the value: "aka.ms".
+1. Select **Save**.
+
+#### Create at least one team in Teams
+
+Create at least one team in Teams, and add the following account and people to it:
+
+- Frontline workers as teams members
+- Frontline managers as team owners
+- A general account, what we call the Microsoft 365 system account, as team owner.
 
     > [!NOTE]
-    > The Microsoft 365 system account is a general account must be added as team owner to all teams you want to map. You can [create this account in the Microsoft 365 admin center](/microsoft-365/admin/add-users/add-users) and assign it a Microsoft 365 license. Then, add the account as a team owner. The Shifts connector uses this account when syncing Shifts changes from UKG Dimensions. We recommend you create an account specifically for this purpose and not use your personal user account.
+    > The Microsoft 365 system account is a general account must be added as team owner to all teams you want to map. [Create this account in the Microsoft 365 admin center](/microsoft-365/admin/add-users/add-users) and assign it a Microsoft 365 license. Then, add the account as a team owner. The Shifts connector uses this account when syncing Shifts changes from UKG Dimensions. We recommend you create an account specifically for this purpose and not use your personal user account.
 
-    If you want to create more than one team, see [Deploy frontline static teams at scale](deploy-teams-at-scale.md).
+If you want to create more than one team, see [Deploy frontline static teams at scale](deploy-teams-at-scale.md).
 
-<!--- You added a Microsoft 365 system account (not your personal user account) as team owner to all teams you want to map.
+<a name="remove_schedules"> </a>
 
-    You can [create this account in Microsoft 365](/microsoft-365/admin/add-users/add-users) and assign it a Microsoft 365 license. Then, add the account as a team owner to all teams that you want to map. The Shifts connector uses this account when syncing Shifts changes from UKG Dimensions. We recommend you create an account specifically for this purpose and not use your personal user account.-->
+### Make sure the teams that you want to map don't have any existing schedules
 
-- Make sure the teams that you want to map don't have any schedules that were created in Shifts or UKG Dimensions. If a team has an existing schedule, you must remove schedule entities from the team before you map a UKG Dimensions instance to it. Follow the steps in the [Remove schedule entities from the team](#remove-schedule-entities-from-teams-you-want-to-map) section of this article. Otherwise, you'll see duplicate shifts.
+If a team has an existing schedule that was created in Shifts, follow these steps to remove schedule entities from the team before you map a UKG Dimensions location (also called an instance) to it. Otherwise, you'll see duplicate shifts.
 
-### Configure single sign-on
+Use PowerShell to remove schedule entities from teams.
 
-[!INCLUDE [shifts-connector-ukg-sso](includes/shifts-connector-ukg-sso.md)]
+1. [Install the PowerShell modules and set up your PowerShell environment](shifts-connector-ukg-powershell-manage.md#set-up-your-environment) (if you haven't already).
+
+1. Run the following command:
+
+    ```powershell
+    Remove-CsTeamsShiftsScheduleRecord -TeamId <Teams team ID> -DateRangeStartDate <start time> -DateRangeEndDate <end time> -ClearSchedulingGroup:$false -EntityType <the scenario entities that you want to remove, the format is @(scenario1, scenario2, ...)> -DesignatedActorId <Teams team owner ID>
+    ```
+
+    To get a list of scenarios for the `EntityType` parameter, run [Get-CsTeamsShiftsConnectionConnector](/powershell/module/teams/get-csteamsshiftsconnectionconnector). Schedule data will be removed for the date and time range that you specify.
+
+To learn more, see [Remove-CsTeamsShiftsScheduleRecord](/powershell/module/teams/remove-csteamsshiftsschedulerecord).
+
+<!--### Configure single sign-on
+
+Follow these steps to have UKG Dimensions enable SSO for your organization.
+
+#### Change user accounts to federated accounts
+
+Each person who uses the Shifts connector will need a federated account in UKG Dimensions.
+
+1. On the left menu in UKG Dimensions, go to **Maintenance** > **People information**.
+1. Open the user's profile.
+1. Under the **Employee** section, expand **Information**.
+1. Change the **Authentication Type** to **Federated**.
+1. Save your changes and repeat the process for all users that will use the connector.
+
+#### Allow Shifts SSO redirection URLs
+
+Configure the connector's redirection URL. This allows UKG Dimensions to redirect the user to the Shifts app in Teams as part of the SSO flow.
+
+1. Sign in to UKG Dimensions by using an account that has access to Application Setup.
+1. On the left menu, go to **Administration** > **Application Setup**.
+1. Then, go to **System Configuration** and choose **System Settings**.
+1. Select **Global Values**.
+1. In the **global.oAuth.authCode.redirection.uris** field, enter the value: "https://aka.ms/shifts/connector/ukgdimensions/auth".
+1. In the **global.oAuthToken.redirection.domain.whiteList** field, enter the value: "aka.ms".
+1. Select **Save**.
 
 <a name="remove_schedules"> </a>
 
@@ -114,7 +175,7 @@ Use PowerShell to remove schedule entities from teams.
 
     To get a list of scenarios for the `EntityType` parameter, run [Get-CsTeamsShiftsConnectionConnector](/powershell/module/teams/get-csteamsshiftsconnectionconnector). Schedule data will be removed for the date and time range that you specify.
 
-To learn more, see [Remove-CsTeamsShiftsScheduleRecord](/powershell/module/teams/remove-csteamsshiftsschedulerecord).
+To learn more, see [Remove-CsTeamsShiftsScheduleRecord](/powershell/module/teams/remove-csteamsshiftsschedulerecord).-->
 
 ## Roles and permissions in Teams and their impact on Shifts
 
