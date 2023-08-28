@@ -52,7 +52,7 @@ Before you integrate Shifts with UKG Dimensions, your organization must have the
 
 ## Prerequisites
 
-Before you create a connection by using the [wizard](shifts-connector-wizard-ukg.md) or [PowerShell](shifts-connector-ukg-powershell-setup.md), make sure you gather the following information and complete the following configuration tasks.
+Make sure you gather the following information and complete the following configuration tasks before you use the [wizard](shifts-connector-wizard-ukg.md) or [PowerShell](shifts-connector-ukg-powershell-setup.md) to create a connection.
 
 ### Accounts
 
@@ -113,6 +113,9 @@ If you want to create more than one team, see [Deploy frontline static teams at 
 <a name="remove_schedules"> </a>
 
 ### Make sure the teams that you want to map don't have any existing schedules
+
+> [!NOTE]
+> This step applies only if you're running the wizard to create a connection. If you're using PowerShell to create a connection, the script removes existing schedules from teams.
 
 If a team has an existing schedule that was created in Shifts, follow these steps to remove schedule entities from the team before you map a UKG Dimensions location (also called an instance) to it. Otherwise, you'll see duplicate shifts.
 
