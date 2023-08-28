@@ -71,7 +71,7 @@ Before you create a connection by using the [wizard](shifts-connector-wizard-ukg
 
 For a step-by-step tutorial, see [Tutorial: Azure AD SSO integration with Kronos Workforce Dimensions](/azure/active-directory/saas-apps/kronos-workforce-dimensions-tutorial). If you need help or more information about setting up SSO, contact UKG Dimensions support.
 
-### Configure SSO in UKG Dimensions
+### Configure federated SSO authentication in UKG Dimensions
 
 Follow these steps to configure federated SSO authentication in your UKG Dimensions environment.
 
