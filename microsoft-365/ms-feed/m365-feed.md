@@ -28,7 +28,7 @@ In **Microsoft Edge**, select the **Work feed** page when opening a new tab.
 
 In **Microsoft Edge**, while signed in with a work or school account, select the **Work Feed** page when opening a new tab.
 
-:::image type="content" source="../media/msfeed/MS-contoso-feed-new.png" alt-text="Image of the select Feed in Microsoft 365." lightbox="../media/msfeed/MS-contoso-feed-new.png":::
+:::image type="content" source="../media/msfeed/MS-contoso-feed.png" alt-text="Image of the select Feed in Microsoft 365." lightbox="../media/msfeed/MS-contoso-feed.png":::
 
 In **Outlook Mobile**, while signed in with a work or school account, select the Feed Tab from the bottom navigation bar.
 
