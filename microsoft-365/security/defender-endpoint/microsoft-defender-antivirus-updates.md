@@ -107,7 +107,7 @@ All our updates contain
 - Fixed an issue where [exclusions](defender-endpoint-antivirus-exclusions.md) were not applied correctly using [gpupdate](/windows-server/administration/windows-commands/gpupdate) when registry policy processing was set to process even if the Group Policy Objects did not change
 - Excluded IP addresses can now be configured using [Intune](/windows/client-management/mdm/defender-csp#configurationexcludedipaddresses)
 - Improved [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) on Windows Server 2016
-- [DisableFtpParsing](/windows/client-management/mdm/defender-csp#configurationdisableftpparsing) can now be configured through [Set-MpPreference](/powershell/module/defender/set-mppreference?view=windowsserver2022-ps)
+- [DisableFtpParsing](/windows/client-management/mdm/defender-csp#configurationdisableftpparsing) can now be configured through [Set-MpPreference](/powershell/module/defender/set-mppreference)
 - Fixed an issue where [device control](device-control-removable-storage-protection.md) policies were not applied correctly without a reboot following product updates
 - Fixed an issue in the attack surface reduction rule, [Block Win32 API calls from Office macros](attack-surface-reduction-rules-reference.md#block-win32-api-calls-from-office-macros), configured in warn mode where excluded files were incorrectly blocked until the next device reboot
 
@@ -197,34 +197,6 @@ All our updates contain
 
 - Users encounter slow loading webpages in non-Microsoft web browsers with [web content filtering](/microsoft-365/security/defender-endpoint/web-content-filtering) enabled
 
-### May-2023 (Platform: 4.18.23050.3 | Engine:  1.1.23050.2)
-
-- Security intelligence update version:  **1.391.64.0**    
-- Released: **May 31, 2023**    
-- Platform: **4.18.23050.3**    
-- Engine: **1.1.23050.2**    
-- Support phase: **Security and Critical Updates**  
-   
-#### What's new  
-
-- New version format for Platform and Engine (see the [April-2023 update](#whats-new))
-- Improved processing of SmartLockerMode  
-- Fixed input parameters for DefinitionUpdateChannel cmdlet in [Set-MpPreference](/powershell/module/defender/set-mppreference)  
-- Improved installation experience for [Windows Server 2012 R2 and Windows Server 2016](microsoft-defender-antivirus-on-windows-server.md)  
-- Added ability to disable Defender task maintenance tasks programmatically  
-- Fixed WDFilter 0x50 bug check  
-- Fixed print enforcement issue for device control  
-- Fixed scan randomization issue when setting Intune policy  
-- Fixed sense offboarding on Windows Server 2016 when [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) is enabled  
-- Fixed inconsistent results of caching files with the internal Defender file cache  
-- Augmented attack surface reduction (ASR) telemetry with more data related to an ASR detection  
-- Removed Image File Execution Options (IFEO) debugger value during installation, which can be used to prevent service starts
-- Fixed memory leaked in ASR logic  
-- Improved validation guard-rail for Malicious Software Removal Tool (MSRT) releases
-  
-#### Known Issues  
-
-- Potential issue that could lead to resolution of incorrect service endpoint
 
 ### Previous version updates: Technical upgrade support only
 
