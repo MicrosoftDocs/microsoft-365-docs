@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: karlha
-ms.date: 08/01/2023
+ms.date: 08/29/2023
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -13,7 +13,6 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-ROBOTS: NOINDEX, NOFOLLOW
 description: Learn how to create a rule to set a content type when a file is added to a SharePoint document library in Microsoft Syntex.
 ---
 
