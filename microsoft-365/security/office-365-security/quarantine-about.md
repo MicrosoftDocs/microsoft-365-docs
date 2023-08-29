@@ -34,9 +34,6 @@ appliesto:
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, quarantine is available to hold potentially dangerous or unwanted messages.
 
-> [!NOTE]
-> Quarantine isn't available in Microsoft 365 operated by 21Vianet.
-
 Whether a detected message is quarantined by default depends on the following factors:
 
 - The protection feature that detected the message. For example, the following detections are always quarantined:
