@@ -75,8 +75,6 @@ In the Microsoft 365 Defender portal, an incident that requires your attention u
 
 Select **View managed response** on the task card or on the top of the portal page (**Managed response** tab) to open a flyout panel where you can read our experts' investigation summary, complete pending actions identified by our experts, or engage with them through chat.
 
-:::image type="content" source="../../media/xdr/view-guided-response-button.png" alt-text="Screenshot of the view managed response task card." lightbox="../../media/xdr/view-guided-response-button.png":::
-
 #### Investigation summary
 
 The **Investigation summary** section provides you with more context about the incident analyzed by our experts to provide you with visibility about its severity and potential impact if not addressed immediately. It could include the device timeline, indicators of attack and indicators of compromise (IOCs) observed, and other details.
@@ -86,8 +84,6 @@ The **Investigation summary** section provides you with more context about the i
 #### Actions
 
 The **Actions** tab displays task cards that contain response actions recommended by our experts. 
-
-:::image type="content" source="../../media/xdr/guided-response-actions.png" alt-text="Screenshot of the Actions tab showing one-click and manual managed response actions.":::
 
 Defender Experts for XDR currently supports the following one-click managed response actions:
 
@@ -118,8 +114,6 @@ Apart from these one-click actions, you can also receive managed responses from 
 #### Chat
 
 The **Chat** tab provides you with a space in the Microsoft 365 Defender portal to engage with our experts and further understand the incident, our investigation, and the recommended actions we provided. You could ask about a malicious executable, malicious attachment, information about activity groups, advanced hunting queries, or any other information that would assist you with the incident resolution.
-
-:::image type="content" source="../../media/xdr/chat.png" alt-text="Screenshot of the chat tab in the Managed response flyout panel." lightbox="../../media/xdr/chat.png":::
 
 > [!NOTE]
 > The chat option is only available for incidents where we issued managed response.
