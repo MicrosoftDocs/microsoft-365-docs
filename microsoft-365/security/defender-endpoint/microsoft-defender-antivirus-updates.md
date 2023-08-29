@@ -3,7 +3,7 @@ title: Microsoft Defender Antivirus security intelligence and product updates
 description: Manage how Microsoft Defender Antivirus receives protection and product updates.
 ms.service: microsoft-365-security
 ms.localizationpriority: high
-ms.date: 08/07/2023
+ms.date: 08/29/2023
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -92,6 +92,28 @@ All our updates contain
 - Performance improvements
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
+
+### August-2023 (Platform: 4.18.23080.2006)
+
+- Security intelligence update version: **1.x.x.x**
+- Released:  **August 29, 2023 (Platform)**
+- Platform: **4.18.23080.2006**
+- Engine: **1.1.x.x** (*Engine version coming soon*)
+- Support phase: **Security and Critical Updates**
+
+### What's new
+
+- Fixed an issue where Microsoft Defender Antivirus switched from [passive mode to active mode](microsoft-defender-antivirus-windows.md#comparing-active-mode-passive-mode-and-disabled-mode) following an update on Windows Server 2016 and Windows Server 2012 R2 onboarded using the modern, unified client
+- Fixed an issue where exclusions were not applied correctly using [gpupdate](/windows-server/administration/windows-commands/gpupdate) when registry policy processing was set to process even if the Group Policy Objects did not change
+- Excluded IP addresses can now be configured using [Intune](/windows/client-management/mdm/defender-csp#configurationexcludedipaddresses)
+- Improved tamper protection on Windows Server 2016
+- DisableFtpParsing can now be configured through Set-MpPreference
+- Fixed an issue where device control policies were not applied correctly without a reboot following product updates
+- Fixed an issue in the Attack Surface Reduction rule, Block Win32 API calls from Office macros, configured in warn mode where excluded files were incorrectly blocked until the next device reboot
+
+### Known issues
+
+- None
 
 ### July-2023 (Platform: 4.18.23070.1004 | Engine: 1.1.23070.1005)
  
