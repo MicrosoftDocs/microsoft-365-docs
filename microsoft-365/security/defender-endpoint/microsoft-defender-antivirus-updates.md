@@ -95,7 +95,7 @@ All our updates contain
 
 ### August-2023 (Platform: 4.18.23080.2006)
 
-- Security intelligence update version: **1.x.x.x**
+- Security intelligence update version: **1.395.1599.0**
 - Released:  **August 29, 2023 (Platform)**
 - Platform: **4.18.23080.2006**
 - Engine: **1.1.x.x** (*Engine version coming soon*)
