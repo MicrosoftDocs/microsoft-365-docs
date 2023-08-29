@@ -19,7 +19,7 @@ ms.collection:
   - tier1
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 08/28/2023
+ms.date: 08/29/2023
 ---
 
 # Understanding and managing Defender Experts for XDR incident updates

@@ -12,7 +12,7 @@ ms.pagetype: security
 ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
-ms.date: 07/24/2023
+ms.date: 08/29/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -44,6 +44,7 @@ You can also get product updates and important notifications through the [messag
 
 - (Preview) [Asset rule management - Dynamic rules for devices](./configure-asset-rules.md) is now in public preview. Dynamic rules can help manage device context by assigning tags and device values automatically based on certain criteria.
 - (Preview) The [DeviceInfo](advanced-hunting-deviceinfo-table.md) table in advanced hunting now also includes the columns `DeviceManualTags` and `DeviceDynamicTags` in public preview to surface both manually and dynamically assigned tags related to the device you are investigating.
+- The **Guided response** feature in Microsoft Defender Experts for XDR has been renamed to **[Managed response](start-using-mdex-xdr.md#how-to-use-managed-response-in-microsoft-365-defender)**. We have also added a [new FAQ section](faq-incident-notifications-xdr.md#understanding-and-managing-defender-experts-for-xdr-incident-updates) on incident updates.
 
 ## July 2023
 - (GA) The [Attack story](investigate-incidents.md#attack-story) in incidents is now generally available. The attack story provides the full story of the attack and allows incident response teams to view the details and apply remediation.
