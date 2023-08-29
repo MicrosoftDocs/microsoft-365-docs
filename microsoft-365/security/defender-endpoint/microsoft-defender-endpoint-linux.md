@@ -93,7 +93,7 @@ If you experience any installation failures, refer to [Troubleshooting installat
   - CentOS 6.7 or higher (Preview)
   - CentOS 7.2 or higher
   - Ubuntu 16.04 LTS or higher LTS
-  - Debian 9 or higher
+  - Debian 9 - 11
   - SUSE Linux Enterprise Server 12 or higher
   - Oracle Linux 7.2 or higher
   - Oracle Linux 8.x
