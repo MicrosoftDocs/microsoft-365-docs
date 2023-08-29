@@ -25,7 +25,7 @@ Input is all suggestions, comments, feedback, ideas, or know how, in any form, t
 
 The optical character recognition (OCR) service in Microsoft Syntex lets you extract printed or handwritten text from images, such as posters, drawings, and product labels, as well as from documents like articles, reports, forms, and invoices.   Syntex OCR uses AI to extract text from customers' images, whether in OneDrive and SharePoint, Exchange emails, or Teams messages. This text extraction is done on a pay-as-you-go basis (each page of an image costs $0.001) using the latest tech from Azure Cognitive Services.  Global and SharePoint admins can configure Syntex OCR in the Microsoft Admin Center, and Compliance admins can also configure OCR in Microsoft Purview as they may need the capability for different scenarios and/or not want to leave Purview admin. The Syntex OCR service will honor settings from either admin experience, keeping the extracted text and not charging the customer twice even if it's configured in multiple places within admin.
 
-The OCR service supports more than [150 languages](https://learn.microsoft.com/en-us/azure/ai-services/language-support).
+The OCR service supports more than [150 languages](/azure/ai-services/language-support).
 
 **FEATURE PREVIEW:**  Company agrees that by using this Preview Feature Company has accepted these terms. To terminate this Preview, don't use the Preview Feature.  Microsoft may change or discontinue the Preview Feature at any time with or without notice.  Microsoft may also choose not to make the Preview Feature generally commercially available.
 
