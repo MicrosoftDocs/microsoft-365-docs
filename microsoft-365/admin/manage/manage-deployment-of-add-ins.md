@@ -57,16 +57,11 @@ Depending on the size of the target audience, you can add or remove roll-out ste
 
 Before you begin, see [Determine if Centralized Deployment of add-ins works for your organization](centralized-deployment-of-add-ins.md).
   
-1. In the admin center,  go to the **Settings** \> **Integrated apps** \> **Add-ins** page.
+1. In the admin center,  go to the **Settings** \> **Integrated apps** page.
 
-2. Select **Deploy Add-in** at the top of the page, and then select **Next**.
+2. Select **Get Apps**, and then select **Next**.
 
-    > [!NOTE]
-    > You can also deploy add-ins in the admin center through [Integrated Apps](test-and-deploy-microsoft-365-apps.md). Integrated Apps is visible to Global and Exchange administrators. If you don't see the above steps, go to the Centralized Deployment section by going to **Settings** > **Integrated apps**. On the top of the **Integrated apps** page, choose **Add-ins**.
-
-3. Select an option and follow the instructions.
-  
-4. If you selected the option to add an add-in from the Office Store, make your add-in selection. </br>
+3. If you selected the option to add an add-in from the Office Store, make your add-in selection. </br>
 
     You can view available add-ins by categories: **Suggested for you**, **Rating**, or **Name**. Only free add-ins are available from the Office Store. Paid add-ins aren't supported currently. After you select an add-in, accept the terms and conditions to proceed. <br/> 
 
