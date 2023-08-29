@@ -292,8 +292,8 @@ sections:
           |**Seat cap**|Up to 2500 seats per managed tenant  |Unlimited |
           |**Tenant cap**|Unlimited  |Up to 50 tenants per customer or partner |
           |**Tenant provisioning**|Done via one-click provisioning in the default baseline in Lighthouse  |Not available |
-          |**Onboarding to Microsoft Defender for Business or Defender for Endpoint**|Done via the default baseline in Lighthouse for devices enrolled in Intune  |Visible in each customer's Microsoft 365 Defender portal or Microsoft 365 admin center |
-          |**Ability to view the licensing state**|Visible through the default baseline in Lighthouse  |Not available |
+          |**Onboarding to Microsoft Defender for Business or Defender for Endpoint**|Done via the default baseline in Lighthouse for devices enrolled in Intune  |Devices can be onboarded in each customer's Microsoft 365 Defender portal or by using Intune |
+          |**Ability to view the licensing state**|Visible through the default baseline in Lighthouse  |Visible in each customer's Microsoft 365 Defender portal or Microsoft 365 admin center |
           |**Device inventory**|View a list of devices (Windows only) onboarded to Lighthouse  |View a list of tenants and information about devices (Windows, iOS, Android, Mac, Linux) onboarded to Defender for Business or Defender for Endpoint |
      
   - name: Getting help and providing feedback
