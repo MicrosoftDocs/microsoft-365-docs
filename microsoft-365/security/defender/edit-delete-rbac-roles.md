@@ -52,7 +52,7 @@ The following steps guide you on how to edit roles in Microsoft 365 Defender Uni
 > [!NOTE]
 > After editing an imported role, the changes made in Microsoft 365 Defender Unified RBAC will not be reflected back in the individual product RBAC model.
 
-## Delete Roles
+## Delete roles
 
 To delete roles in Microsoft 365 Defender Unified RBAC, select the role or roles you want to delete and select **Delete roles**.
 
@@ -63,18 +63,29 @@ If the workload is active, by removing the role all assigned user permission wil
 
 ## Export roles
 
+The Export feature allows you to export the following roles data from **Permissions and Roles** page:
+
+- Role name
+- Included permissions
+- Assigned users or user groups, including data sources. Where multiple assignments exist for one role, each assignment will be represented as a separate row in the CSV file. T
+
+The CSV will also include a snapshot about all workloads that are available on the tenant and their Unified RBAC activation status.
+
 The following steps guide you on how to export roles in Microsoft 365 Defender Unified RBAC:
 
-> [!IMPORTANT]
-> To export roles, you must be a Global Administrator or Security Administrator in Azure Active Directory, or have the **Authorization(manage)** permissions assigned for all data sources in Microsoft 365 Defender Unified RBAC and have at least one workload activated for Unified RBAC. For more information on permissions, see [Permission pre-requisites](../defender/manage-rbac.md#permissions-pre-requisites).
+>[!Note]
+>To export roles, you must be a Global Administrator or Security Administrator in Azure Active Directory, or have the **Authorization(manage)** permissions assigned for all data sources in Microsoft 365 Defender Unified RBAC and have at least one workload activated for Unified RBAC.
+>
+>For more information on permissions, see [Permission pre-requisites](../defender/manage-rbac.md#permissions-pre-requisites).
 
-1. Sign in to the [Microsoft 365 Defender portal](https://security.microsoft.com) with the required permissions.
+1. Sign in to the [Microsoft 365 Defender portal](https://security.microsoft.com) with the required roles or permissions.
 2. In the navigation pane, select **Permissions**.
 3. Select **Roles** under Microsoft 365 Defender to get to the Permissions and roles page.
 4. Select the **Export** button.
 
     :::image type="content" source="../../media/defender/m365-defender-rbac-export-roles.png" alt-text="Screenshot of the export roles page" lightbox="../../media/defender/m365-defender-rbac-edit-roles.png":::
 
+A CSV file containing all the roles data will be generated and downloaded to the local machine.
 
 ## Next steps
 
