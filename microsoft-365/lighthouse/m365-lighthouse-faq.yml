@@ -294,7 +294,7 @@ sections:
           |**Tenant provisioning**|Done via one-click provisioning in the default baseline in Lighthouse  |Not available |
           |**Onboarding to Microsoft Defender for Business**|Done via the default baseline in Lighthouse for devices enrolled in Intune  |Not available |
           |**Ability to view the licensing state**|Visible through the default baseline in Lighthouse  |Not available |
-          |**Device inventory**|View a list of devices (Windows only) onboarded to Lighthouse  |View a list of tenants and info about the devices (Windows, iOS, Android, Mac, Linux) onboarded to Defender for Business |
+          |**Device inventory**|View a list of devices (Windows only) onboarded to Lighthouse  |View a list of tenants and info about the devices (Windows, iOS, Android, Mac, Linux) onboarded to Defender for Business or Defender for Endpoint |
      
   - name: Getting help and providing feedback
     questions:          
