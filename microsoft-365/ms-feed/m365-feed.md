@@ -24,7 +24,7 @@ Read more about how the feed works here:  [Discover and learn with Microsoft Fee
 
 In **Microsoft Edge**, select the **Work feed** page when opening a new tab.
 
-![Select Feed in Microsoft 365.](../media/MS-select-feed.png)
+:::image type="content" source="../media/MS-select-feed.png" alt-text="Select Feed in Microsoft 365." lightbox="../media/MS-select-feed.png":::
 
 In **Microsoft Edge**, while signed in with a work or school account, select the **Work Feed** page when opening a new tab.
 
