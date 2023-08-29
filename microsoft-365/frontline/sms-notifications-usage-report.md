@@ -20,7 +20,7 @@ appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
 ms.custom: seo-marvel-apr2020
-ms.date: 08/25/2023
+ms.date: 08/29/2023
 ---
 # Microsoft Teams SMS notifications usage report
 
@@ -54,7 +54,7 @@ Here are the delivery status values that you may see in the report and what they
 
 |Status  |Description |
 |---------|---------|
-|Sent|Notification delivered to the recipient’s phone.|
+|Delivered|Notification delivered to the recipient’s phone.|
 |Not Delivered – Blocked by recipient|Recipient doesn't want to receive messages and opted out.|
 |Not Delivered – Invalid phone number|The number has an invalid format for the destination|
 |Not Delivered - Phone number doesn't exist|The number has a valid prefix and format but doesn't exist or isn't allocated.|
