@@ -10,11 +10,12 @@ ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
-ms.custom: 
- - Adm_O365
- - seo-marvel-apr2020
- - admindeeplinkMAC
- - admindeeplinkEXCHANGE
+ms.custom:
+  - Adm_O365
+  - seo-marvel-apr2020
+  - admindeeplinkMAC
+  - admindeeplinkEXCHANGE
+  - has-azure-ad-ps-ref
 search.appverid:
 - MET150
 - MOE150
