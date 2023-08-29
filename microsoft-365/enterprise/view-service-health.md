@@ -143,6 +143,24 @@ Service health lets you look at your current health status and view the history 
 
 For more information about our commitment to uptime, see [Transparent operations from Microsoft 365](/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity).
 
+## Language translation for Service health dashboard
+
+Service health dashboard posts are written in English-only due to the timeliness of the information we are posting, but can be automatically displayed in the language specified by your personal language settings for Microsoft 365. If you set your preferred language to anything other than English, you'll see an option in the Service health dashboard to automatically translate posts. The messages are machine translated to your preferred language, meaning that a computer did the translation. This option controls the default view, but you can also use the drop-down menu to translate and display posts in any of the languages we support for translation. If you select English, we'll revert the message to the original English version.
+
+Before you can choose your language settings, you have to set your preferred language. No translation options are shown when your language is set to English. You can't specify a preferred language for others, each person has to change this setting for themselves.
+
+## Set your preferred language
+
+1. Go to the Microsoft 365 admin center [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2024339), or home page, select the settings icon in the upper-right corner of the page.
+
+1. Under **Language and time zone**, select **View all** to show the available options. Select your desired language from the drop-down menu, and then select **Save**. Microsoft 365 will try to refresh and display the new language. If that doesn't happen immediately or if it seems that it's taking too long, you can either refresh your browser or sign out and then sign back in.
+
+## Machine translation in Service health dashboard
+
+When your preferred language isn't set to English, the translation options are available.
+
+To set Service health dashboard posts to automatically machine-translate and display in your preferred language, go to Health > Service health dashboard. You'll see a switch at the top of the view to toggle automatic translation on or off. When this setting is off, posts are shown in English. When this setting is on, messages display in your preferred language. The setting you choose will persist for each visit.
+
 ## Related topics
 
 - [Activity Reports in the Microsoft 365 admin center](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
