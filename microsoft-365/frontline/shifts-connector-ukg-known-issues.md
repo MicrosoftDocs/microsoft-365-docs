@@ -1,9 +1,9 @@
 ---
 title: Team Shifts connector for UKG Dimensions known issues
-author: LanaChin
-ms.author: v-lanachin
-ms.reviewer:
-manager: samanro
+author: lana-chin
+ms.author: v-chinlana
+manager: serdars
+ms.reviewer: imarquesgil
 ms.topic: troubleshooting
 audience: admin
 ms.service: microsoft-365-frontline
@@ -22,15 +22,13 @@ ms.date: 10/28/2022
 
 # Known issues: Team Shifts connector for UKG Dimensions
 
-[!INCLUDE [preview-feature](includes/preview-feature.md)]
-
 This article lists known issues for the [Microsoft Teams Shifts connector for UKG Dimensions](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-dimensions).
 
-## You can map an instance to more than one team using PowerShell or Microsoft Graph
+## You can map an instance to more than one team using PowerShell or your Microsoft 365 admin center
 
-A UKG Dimensions instance should only be mapped to one team at any given time in a connection.
+A UKG Dimensions instance should only be mapped to one team at any given time in a connection instance.
 
-However, when you use PowerShell or Microsoft Graph to set up a connection, it’s possible to map an instance to more than one team. We recommend that you avoid mapping an instance to multiple teams as it can result in syncing issues and unexpected behavior.
+However, when you use PowerShell or Microsoft 365 admin center to set up a connection instance, it’s possible to map an instance to more than one team. We recommend that you avoid mapping an instance to multiple teams as it can result in syncing issues and unexpected behavior.
 
 ## Frontline managers can select a time zone for a schedule in Shifts that's different from the time zone that's set in UKG Dimensions
 
@@ -52,18 +50,23 @@ Currently, if a user creates a swap request with a coworker and the coworker acc
 
 The correct, expected behavior is a green check mark to indicate that the coworker accepted the request and a red "X" to indicate that the manager denied the request.
 
-## A user can’t perform some actions in Shifts in the Teams web app after signing in with a different account
+## A user can’t perform some actions in Shifts after another user has signed in to Shifts using the same device
 
-This issue can occur if a user who has multiple accounts in Teams performs actions in Shifts that require single sign-on (SSO) in UKG Dimensions and that user switches accounts in the Teams web app in the same browser.
+This issue can occur if multiple users use the same device to connect to the Teams Shifts app and require a single sign-on (SSO) in UKG Dimensions. 
 
-For example, a user signs in to Teams, approves a time off request, and then signs out. The user then signs in to Teams using a different account and tries to perform another action in Shifts that requires SSO in UKG Dimensions.
+For example, user A signs in to Teams, requests a time off request, and signs out. To perform the request, user A was required to introduce their Azure AD credentials to verify (SSO). Using the same device, user B signs in to Teams and tries to perform another action in Shifts that requires SSO.
 
-In this scenario, a caching issue occurs in which the user is signed in to Teams and Shifts on one account and signed in to UKG Dimensions on the other account.
+In this scenario, an issue occurs in which user B is signed in to Teams and Shifts but user A is still signed in to UKG Dimensions.
 
-To work around this issue, do one of the following actions:
+To mitigate this issue, do one of the following actions:
 
-- Clear cookies and site data for the mykronos.com site in the browser. To learn more, see [Delete cookies in Microsoft Edge](https://support.microsoft.com/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09) or [Clear, enable, and manage cookies in Chrome](https://support.google.com/chrome/answer/95647).
-- Use the Teams web app in an InPrivate window in Microsoft Edge or in Incognito mode in Google Chrome.
+- Close all the opened browser windows after each user signs out of the Teams web app. This needs to happen independently of whether the user has accessed the Teams web app through the InPrivate window in Microsoft Edge or in Incognito mode in Google Chrome.
+- Clear cookies and site data for the mykronos.com site in the browser after each user signs out of the Teams web app. To learn more, see [Delete cookies in Microsoft Edge](https://support.microsoft.com/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09) or [Clear, enable, and manage cookies in Chrome](https://support.google.com/chrome/answer/95647).
+
+
+## Availability can only be set for one Microsoft team
+
+When a user in Shifts belongs to multiple teams and one of those teams has availability syncing enabled, they won't be able to set their availability and will receive an error message. A user can therefore only set availability in one team even if they belong to multiple teams within Shifts.
 
 ## Related articles
 

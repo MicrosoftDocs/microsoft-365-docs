@@ -5,6 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: shcallaw, kywirpel
+ms.date: 08/11/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -26,21 +27,21 @@ Tasks that require configurations that can't be deployed automatically through M
 
 ## Before you begin
 
-Make sure you and your customer tenants meet the requirements listed in [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+Make sure you and your customer tenants meet the requirements listed in [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
 
 Additionally, each partner tenant user must meet the following requirements:
 
 - The partner tenant user must have DAP/GDAP access to the applicable tenant.
 
-  - For DAP, an admin agent group membership.
+  - For DAP, the partner tenant user must be a member of the admin agent group.
 
-  - For GDAP, a role that can create Conditional Access (CA) policies.
+  - For GDAP, the partner tenant user must be a member of a security group that has been granted GDAP permissions to the applicable workload associated with the task.
 
 - The partner tenant user must enable MFA for their user account in the partner tenant.
 
 ## Deploy a task manually
 
-1. In the left navigation pane in Lighthouse, select **Tenant.**
+1. In the left navigation pane in Lighthouse, select **Tenants**.
 
 2. From the tenant list, select the tenant you want to view.
 
@@ -48,7 +49,7 @@ Additionally, each partner tenant user must meet the following requirements:
 
 4. From the task list, select the task you want to deploy manually.
 
-5. From the task details pane, select **Mark as compliant.**
+5. From the task details pane, select **Mark as compliant**.
 
 6. In the confirmation dialog box, type your name as it appears within Lighthouse.
 
@@ -58,7 +59,7 @@ The task status will be updated to **Compliant**, and the Task Details pane will
 
 If the task status changes and is no longer compliant, you can reset the status to **Not compliant**. To do this:
 
-1. In the left navigation pane in Lighthouse, select **Tenant.**
+1. In the left navigation pane in Lighthouse, select **Tenants**.
 
 2. From the tenant list, select the tenant you want to view.
 
@@ -77,8 +78,8 @@ Tasks that must be deployed manually can also be dismissed regardless of their d
 [Deploy a task automatically](m365-lighthouse-deploy-task-automatically.md) (article)\
 [Dismiss a task](m365-lighthouse-dismiss-task.md) (article)\
 [Reinstate a task](m365-lighthouse-reinstate-task.md) (article)\
-[Overview of deployment tasks in Microsoft 365 Lighthouse](m365-lighthouse-overview-deployment-task.md) (article)\
+[Overview of deployment tasks in Microsoft 365 Lighthouse](m365-lighthouse-overview-deployment-task.md) (article)\
 [Overview of using Microsoft 365 Lighthouse baselines to deploy standard tenant configurations](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (article)\
 [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md) (article)\
-[Configure Microsoft 365 Lighthouse portal security](m365-lighthouse-configure-portal-security.md) (article)\
-[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)
+[Configure Microsoft 365 Lighthouse portal security](m365-lighthouse-configure-portal-security.md) (article)\
+[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)

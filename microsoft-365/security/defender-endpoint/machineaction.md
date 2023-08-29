@@ -17,6 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # MachineAction resource type
@@ -62,7 +63,7 @@ search.appverid: met150
 |Property|Type|Description|
 |---|---|---|
 |ID|Guid|Identity of the [Machine Action](machineaction.md) entity.|
-|type|Enum|Type of the action. Possible values are: "RunAntiVirusScan", "Offboard", "Live Response", "CollectInvestigationPackage", "Isolate", "Unisolate", "StopAndQuarantineFile", "RestrictCodeExecution", and "UnrestrictCodeExecution".|
+|type|Enum|Type of the action. Possible values are: "RunAntiVirusScan", "Offboard", "LiveResponse", "CollectInvestigationPackage", "Isolate", "Unisolate", "StopAndQuarantineFile", "RestrictCodeExecution", and "UnrestrictCodeExecution".|
 |scope|string|Scope of the action. "Full" or "Selective" for Isolation, "Quick" or "Full" for Anti-Virus scan.|
 |requestor|String|Identity of the person that executed the action.|
 |externalID|String|Id the customer can submit in the request for custom correlation.|
@@ -97,3 +98,4 @@ search.appverid: met150
         "relatedFileInfo": null
 }
 ```
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

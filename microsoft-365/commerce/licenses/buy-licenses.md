@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: argani, nicholak
+ms.reviewer: sinakassaw, nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
@@ -24,7 +24,7 @@ ms.custom:
 - adminvideo
 search.appverid: MET150
 description: "Use these steps to buy more licenses or reduce the number of licenses for your Microsoft 365 for business subscription."
-ms.date: 09/29/2022
+ms.date: 05/10/2023
 ---
 
 # Buy or remove Microsoft 365 licenses for a subscription
@@ -85,7 +85,7 @@ If you've removed licenses from a subscription, the next thing to do is [delete 
 
 ## Add licenses to a prepaid subscription by using a Microsoft 365 product key
 
-Prepaid product licenses are issued to you as a 25-character alphanumeric code, called a product key. After you buy the licenses you need, you can add them to your subscription by using the steps below. You can also use a product key to [extend the expiration date of your subscription](../subscriptions/renew-your-subscription.md#extend-the-expiration-date-of-your-prepaid-subscription-by-using-a-microsoft-365-product-key).
+Prepaid product licenses are issued to you as a 25-character alphanumeric code, called a product key. After you buy the licenses you need, you can add them to your subscription by using the steps below. You can also use a product key to [extend the expiration date of your subscription](../enter-your-product-key.md#extend-the-expiration-date-or-add-a-license-to-an-existing-subscription).
 
 > [!NOTE]
 > If you don't want to buy a new product key, you can always choose to add a credit card or bank account to your subscription to pay for more licenses. For more information, see [Renew your subscription](../subscriptions/renew-your-subscription.md).
@@ -121,7 +121,7 @@ This table describes the reasons why the **Buy licenses** or **Remove licenses**
 |Reason  |Description  |Solution  |
 |---------|---------|---------|
 |A credit check is pending. |If a credit check is pending, you can't buy or remove licenses until the credit check is complete.  | Check back later to see if the credit check has completed. Credit checks typically take up to two working days to complete.<br/>After the credit check is complete, you should see the **Buy licenses** and **Remove licenses** buttons. |
-|You activated the subscription by using a product key.| If the subscription was bought and activated by using a 25-character product key, you see the word "Prepaid" in the **Purchase channel** column of the **Your products** page.  |See [Add licenses to a subscription paid for using a product key](add-licenses-using-product-key.md). |
+|You activated the subscription by using a product key.| If the subscription was bought and activated by using a 25-character product key, you see the word "Prepaid" in the **Purchase channel** column of the **Your products** page.  |See [Add licenses to a prepaid subscription by using a Microsoft 365 product key](#add-licenses-to-a-prepaid-subscription-by-using-a-microsoft-365-product-key). |
 |You bought your subscription through a reseller.| You see the word "Reseller" in the **Purchase channel** column of the **Your products** page. | If the subscription was bought via a Cloud Solution Provider (CSP) partner, contact your CSP partner to buy more licenses.        |
 |You have a trial subscription. | To view your trial subscriptions, select the filter button, then choose **Trial**. | First buy your trial subscription, then you can buy more licenses.|
 

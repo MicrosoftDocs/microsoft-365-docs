@@ -1,6 +1,7 @@
 ---
 title: "Explaining Microsoft 365 Groups to your users"
 ms.reviewer: arvaradh
+ms.date: 07/20/2020
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT

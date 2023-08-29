@@ -17,6 +17,7 @@ ms.collection:
 - tier2
 ms.topic: conceptual
 ms.subservice: mde
+ms.date: 12/18/2020
 ---
 
 # Monitor web browsing security
@@ -69,3 +70,4 @@ Select a domain to view the list of devices that have attempted to access URLs i
 - [Web content filtering](web-content-filtering.md)
 - [Web threat protection](web-threat-protection.md)
 - [Respond to web threats](web-protection-response.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

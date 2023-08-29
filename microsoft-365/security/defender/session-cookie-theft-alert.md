@@ -17,12 +17,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - m365-security
-- tier2
+- tier3
 ms.topic: how-to
 ms.custom: 
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
+ms.date: 10/18/2022
 ---
 
 # Alert grading for session cookie theft alert
@@ -116,7 +117,7 @@ AADSignInEventsBeta
 | where OtherTimestamp > Timestamp and OtherCountry != Country
 ```
 
-Use the below query for identifying uncommon countries: 
+Use the below query for identifying uncommon countries/regions: 
 
 ```kusto
 AADSignInEventsBeta 
@@ -158,3 +159,4 @@ Once you determine that the alert activities are malicious, classify those alert
 ## See also
 
 [From cookie theft to BEC](https://www.microsoft.com/security/blog/2022/07/12/from-cookie-theft-to-bec-attackers-use-aitm-phishing-sites-as-entry-point-to-further-financial-fraud/)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

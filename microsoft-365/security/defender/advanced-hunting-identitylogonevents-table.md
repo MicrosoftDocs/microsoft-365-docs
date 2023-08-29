@@ -19,24 +19,24 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
-ms.topic: conceptual
+ms.topic: reference
+ms.date: 02/16/2021
 ---
 
 # IdentityLogonEvents
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 **Applies to:**
 - Microsoft 365 Defender
 
 The `IdentityLogonEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about authentication activities made through your on-premises Active Directory captured by Microsoft Defender for Identity and authentication activities related to Microsoft online services captured by Microsoft Defender for Cloud Apps. Use this reference to construct queries that return information from this table.
 
->[!TIP]
-> For detailed information about the events types (`ActionType` values) supported by a table, use the built-in schema reference  available in the Defender for Cloud.
+> [!TIP]
+> For detailed information about the events types (`ActionType` values) supported by a table, use the built-in schema reference available in Microsoft 365 Defender.
 
->[!NOTE]
->This table covers Azure Active Directory (Azure AD) logon activities tracked by Defender for Cloud Apps, specifically interactive sign-ins and authentication activities using ActiveSync and other legacy protocols. Non-interactive logons that are not available in this table can be viewed in the Azure AD audit log. [Learn more about connecting Defender for Cloud Apps to Microsoft 365](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)
+> [!NOTE]
+> This table covers Azure Active Directory (Azure AD) logon activities tracked by Defender for Cloud Apps, specifically interactive sign-ins and authentication activities using ActiveSync and other legacy protocols. Non-interactive logons that are not available in this table can be viewed in the Azure AD audit log. [Learn more about connecting Defender for Cloud Apps to Microsoft 365](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)
 
 For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
 
@@ -64,15 +64,17 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `DestinationPort` | `string` | Destination port of related network communications |
 | `TargetDeviceName` | `string` | Fully qualified domain name (FQDN) of the device that the recorded action was applied to |
 | `TargetAccountDisplayName` | `string` | Display name of the account that the recorded action was applied to |
-| `Location` | `string` | City, country, or other geographic location associated with the event |
+| `Location` | `string` | City, country/region, or other geographic location associated with the event |
 | `Isp` | `string` | Internet service provider (ISP) associated with the endpoint IP address |
 | `ReportId` | `long` | Unique identifier for the event |
 | `AdditionalFields` | `string` | Additional information about the entity or event |
 
 ## Related topics
+
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the query language](advanced-hunting-query-language.md)
 - [Use shared queries](advanced-hunting-shared-queries.md)
 - [Hunt across devices, emails, apps, and identities](advanced-hunting-query-emails-devices.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

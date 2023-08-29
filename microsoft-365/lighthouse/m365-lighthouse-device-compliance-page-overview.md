@@ -5,6 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: ragovind
+ms.date: 07/03/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -33,7 +34,7 @@ To get detailed device compliance information for a particular customer tenant, 
 
 To export device compliance data to an Excel comma-separated values (.csv) file, select **Export**.
 
-:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/device-overview-tab.png" alt-text="Screenshot of the Overview tab." lightbox="../media/m365-lighthouse-device-compliance-page-overview/device-overview-tab.png":::
+:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/device-overview-tab.png" alt-text="Screenshot of the Overview tab on the Device compliance page." lightbox="../media/m365-lighthouse-device-compliance-page-overview/device-overview-tab.png":::
 
 ## Devices tab
 
@@ -54,7 +55,7 @@ The Devices tab also includes the following options:
 - **Restart:** Select one or more devices from the list that have a status of Not compliant, In grace period, or Not evaluated, and then select this option to restart those devices.
 - **Search:** Enter keywords to quickly locate a specific device in the list.
  
-:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/devices-device-tab.png" alt-text="Screenshot of the Devices tab." lightbox="../media/m365-lighthouse-device-compliance-page-overview/devices-device-tab.png":::
+:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/devices-device-tab.png" alt-text="Screenshot of the Devices tab on the Device compliance page." lightbox="../media/m365-lighthouse-device-compliance-page-overview/devices-device-tab.png":::
 
 ## Policies tab
 
@@ -70,7 +71,7 @@ The Policies tab also includes the following options:
 - **Refresh:** Select to retrieve the most current device compliance policy data.
 - **Search:** Enter keywords to quickly locate a specific device compliance policy in the list.
 
-:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/devices-policies-tab.png" alt-text="Screenshot of the Policies tab." lightbox="../media/m365-lighthouse-device-compliance-page-overview/devices-policies-tab.png":::
+:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/devices-policies-tab.png" alt-text="Screenshot of the Policies tab on the Device compliance page." lightbox="../media/m365-lighthouse-device-compliance-page-overview/devices-policies-tab.png":::
 
 ## Settings tab
 
@@ -86,9 +87,11 @@ The Settings tab also includes the following options:
 - **Refresh:** Select to retrieve the most current non-compliant settings data.
 - **Search:** Enter keywords to quickly locate a specific non-compliant setting in the list.
 
-:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/device-settings-tab.png" alt-text="Screenshot of the Settings tab." lightbox="../media/m365-lighthouse-device-compliance-page-overview/device-settings-tab.png":::
+:::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/device-settings-tab.png" alt-text="Screenshot of the Settings tab on the Device compliance page." lightbox="../media/m365-lighthouse-device-compliance-page-overview/device-settings-tab.png":::
 
 ## Related content
 
+[Compare device compliance policy settings in Microsoft 365 Lighthouse](m365-lighthouse-compare-compliance-policies.md) (article)\
+[Overview of the Device health page in Microsoft 365 Lighthouse](m365-lighthouse-device-health-overview.md) (article)\
 [Overview of the Windows 365 (Cloud PCs) page in Microsoft 365 Lighthouse](m365-lighthouse-win365-page-overview.md) (article)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)

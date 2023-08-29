@@ -22,6 +22,7 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
+ms.date: 02/16/2021
 ---
 
 # Microsoft 365 Defender data security and privacy
@@ -32,12 +33,13 @@ search.appverid:
 **Applies to:**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender operates in Microsoft Azure data centers in the European Union, The United Kingdom, and the United States. Customer data collected by the service is stored at rest in (a) the geographic location of the tenant as identified during provisioning or, (b) if Microsoft 365 Defender uses another Microsoft online service to process such data, the geolocation as defined by the data storage rules of that other online service.
+Microsoft 365 Defender operates in Microsoft Azure data centers in the European Union, the United Kingdom, the United States, and in Australia. Customer data collected by the service is stored at rest in (a) the geo-location of the tenant as identified during provisioning or, (b) the geo-location as defined by the data storage rules of an online service if this online service is used by Microsoft 365 Defender to process such data.
 
 Customer data in pseudonymized form might also be stored in central storage and processing systems in the United States.
-
 
 For more information on the data storage and privacy information of the specific products, see:
 - [Microsoft Defender for Endpoint data storage and privacy](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
 - [Microsoft Defender for Cloud Apps data security and privacy](/cloud-app-security/cas-compliance-trust)
+- [Microsoft Defender for Identity data security and privacy](/defender-for-identity/privacy-compliance)
 - [Microsoft 365 privacy, security, and transparency](/office365/servicedescriptions/office-365-platform-service-description/privacy-security-and-transparency#advanced-threat-protection)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

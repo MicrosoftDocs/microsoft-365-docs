@@ -3,8 +3,8 @@ title: Configure Directory Services account in Microsoft Defender for Identity
 description: Learn how to configure the Microsoft Defender for Identity Directory Services account in Microsoft 365 Defender
 ms.date: 08/15/2021
 ms.topic: how-to
-author: dcurwin
-ms.author: dacurwin
+author: batamig
+ms.author: bagol
 ms.service: microsoft-defender-for-identity
 ms.custom: admindeeplinkDEFENDER
 manager: raynew
@@ -21,8 +21,8 @@ search.appverid: met150
 
 This article explains how to configure the [Microsoft Defender for Identity](/defender-for-identity) Directory Services account in [Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
 
->[!IMPORTANT]
->As part of the convergence with Microsoft 365 Defender, some options and details have changed from their location in the Defender for Identity portal. Please read the details below to discover where to find both the familiar and new features.
+> [!IMPORTANT]
+> As part of the convergence with Microsoft 365 Defender, some options and details have changed from their location in the Defender for Identity portal. Please read the details below to discover where to find both the familiar and new features.
 
 ## Configure Directory Services account
 
@@ -31,7 +31,6 @@ To connect the [sensor](sensor-health.md#add-a-sensor) with your Active Director
 1. In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, go to **Settings** and then **Identities**.
 
    :::image type="content" source="../../media/defender-identity/settings-identities.png" alt-text="The Identities option in the Settings page" lightbox="../../media/defender-identity/settings-identities.png":::
-
 
 1. Select **Directory Service accounts**. You'll see which accounts are associated with which domains.
 

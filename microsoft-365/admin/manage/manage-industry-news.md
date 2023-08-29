@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
+ms.date: 09/24/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -95,7 +96,7 @@ When your users sign in to Microsoft Edge (release 87 or higher) with a valid wo
 
 1. In the Microsoft 365 admin center, go to **Settings** > **Org settings** > **Services** > [News](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews).
 2. In the **News** panel, click **Microsoft Edge new tab page**.
-3. Select **Allow Office 365 content on the new tab page**. When enabled, users can customize their new tab to show  information from Office 365, including recommended and recent files, along with frequently used SharePoint sites and other information.
+3. Select **Allow Microsoft 365 content on the new tab page**. When enabled, users can customize their new tab to show information from Microsoft 365, including recommended and recent files, along with frequently used SharePoint sites and other information.
 4. Select **Show company information and industry news on the new tab page**. News articles about your organization and industry appear for users that choose to see articles on their new tab.
 
 ## Related content

@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender for Endpoint for non-Windows platforms
-description: Learn about Microsoft Defender for Endpoint capabilities  for non-Windows platforms
+title: Microsoft Defender for Endpoint on other platforms
+description: Learn about Microsoft Defender for Endpoint capabilities on other platforms
 keywords: non windows, mac, macos, linux, android
 search.product: eADQiWindows 10XVcnh
 ms.service: microsoft-365-security
@@ -20,9 +20,10 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
-# Microsoft Defender for Endpoint for non-Windows platforms
+# Microsoft Defender for Endpoint on other platforms
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,9 +39,12 @@ Organizations face threats across a variety of platforms and devices. Our teams 
 
 With Microsoft Defender for Endpoint, customers benefit from a unified view of all threats and alerts in the Microsoft 365 Defender portal, across Windows and non-Windows platforms, enabling them to get a full picture of what's happening in their environment, which empowers them to more quickly assess and respond to threats.
 
+> [!NOTE]
+> Microsoft Defender for Endpoint doesn't support native compute workloads in Amazon Web Services (AWS) and Google Cloud Platform (GCP).
+
 ## Microsoft Defender for Endpoint on macOS
 
-Microsoft Defender for Endpoint on macOS offers antivirus, endpoint detection and response (EDR), and vulnerability management capabilities for the three latest released versions of macOS. Customers can deploy and manage the solution through Microsoft Endpoint Manager and Jamf. Just like with Microsoft Office applications on macOS, Microsoft Auto Update is used to manage Microsoft Defender for Endpoint on Mac updates. For information about the key features and benefits, read our [announcements](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/macOS).
+Microsoft Defender for Endpoint on macOS offers antivirus, endpoint detection and response (EDR), and vulnerability management capabilities for the three latest released versions of macOS. Customers can deploy and manage the solution through Microsoft Intune and Jamf. Just like with Microsoft Office applications on macOS, Microsoft Auto Update is used to manage Microsoft Defender for Endpoint on Mac updates. For information about the key features and benefits, read our [announcements](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/macOS).
 
 For more details on how to get started, visit the Defender for Endpoint on macOS [documentation](microsoft-defender-endpoint-mac.md).
 
@@ -65,7 +69,7 @@ For more details on how to get started, visit the Microsoft Defender for Endpoin
 
 ## Microsoft Defender for Endpoint on Android
 
-Microsoft Defender for Endpoint on Android is our mobile threat defense solution for devices running Android 6.0 and higher. Both Android Enterprise (Work Profile) and Device Administrator modes are supported. On Android, we offer web protection, which includes anti-phishing, blocking of unsafe connections, and setting of custom indicators. The solution scans for malware and potentially unwanted applications (PUA) and offers additional breach prevention capabilities through integration with Microsoft Endpoint Manager and Conditional Access. For information about the key features and benefits, read our [announcements](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/Android).
+Microsoft Defender for Endpoint on Android is our mobile threat defense solution for devices running Android 6.0 and higher. Both Android Enterprise (Work Profile) and Device Administrator modes are supported. On Android, we offer web protection, which includes anti-phishing, blocking of unsafe connections, and setting of custom indicators. The solution scans for malware and potentially unwanted applications (PUA) and offers additional breach prevention capabilities through integration with Microsoft Intune and Conditional Access. For information about the key features and benefits, read our [announcements](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/Android).
 
 For more details on how to get started, visit the Microsoft Defender for Endpoint on Android [documentation](microsoft-defender-endpoint-android.md).
 
@@ -86,3 +90,4 @@ Recently announced capabilities of Microsoft Defender for Endpoint on Android an
 Defender for Endpoint on Linux is available through the Defender for Endpoint Server SKU that is available for both commercial and education customers.
 
 Please contact your account team or CSP for pricing and additional eligibility requirements.
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

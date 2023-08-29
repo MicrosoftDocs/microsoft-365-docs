@@ -17,6 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Privacy for Microsoft Defender for Endpoint on Linux
@@ -24,6 +25,8 @@ search.appverid: met150
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -39,13 +42,13 @@ This section describes the privacy controls for the different types of data that
 
 ### Diagnostic data
 
-Diagnostic data is used to keep Defender for Endpoint secure and up-to-date, detect, diagnose and fix problems, and also make product improvements.
+Diagnostic data is used to keep Defender for Endpoint secure and up to date, detect, diagnose and fix problems, and also make product improvements.
 
 Some diagnostic data is required, while some diagnostic data is optional. We give you the ability to choose whether to send us required or optional diagnostic data by using privacy controls, such as policy settings for organizations.
 
 There are two levels of diagnostic data for Defender for Endpoint client software that you can choose from:
 
-- **Required**: The minimum data necessary to help keep Defender for Endpoint secure, up-to-date, and performing as expected on the device it's installed on.
+- **Required**: The minimum data necessary to help keep Defender for Endpoint secure, up to date, and performing as expected on the device it's installed on.
 - **Optional**: Other data that helps Microsoft make product improvements and provides enhanced information to help detect, diagnose, and remediate issues.
 
 By default, only required diagnostic data is sent to Microsoft.
@@ -80,7 +83,7 @@ This section describes what is considered required diagnostic data and what is c
 
 ### Data fields that are common for all events
 
-There is some information about events that is common to all events, regardless of category or data subtype.
+There's some information about events that is common to all events, regardless of category or data subtype.
 
 The following fields are considered common for all events:
 
@@ -99,7 +102,7 @@ The following fields are considered common for all events:
 
 ### Required diagnostic data
 
-**Required diagnostic data** is the minimum data necessary to help keep Defender for Endpoint secure, up-to-date, and perform as expected on the device it's installed on.
+**Required diagnostic data** is the minimum data necessary to help keep Defender for Endpoint secure, up to date, and perform as expected on the device it's installed on.
 
 Required diagnostic data helps to identify problems with Microsoft Defender for Endpoint that may be related to a device or software configuration. For example, it can help determine if a Defender for Endpoint feature crashes more frequently on a particular operating system version, with newly introduced features, or when certain Defender for Endpoint features are disabled. Required diagnostic data helps Microsoft detect, diagnose, and fix these problems more quickly so the impact to users or organizations is reduced.
 
@@ -135,7 +138,7 @@ The following fields are collected:
 |edr.early_preview|Whether the device should run EDR early preview features.|
 |edr.group_id|Group identifier used by the detection and response component.|
 |edr.tags|User-defined tags.|
-|features.\[optional feature name\]|List of preview features, along with whether they are enabled or not.|
+|features.\[optional feature name\]|List of preview features, along with whether they're enabled or not.|
 
 #### Product and service usage data events
 
@@ -166,7 +169,7 @@ The following fields are collected:
 |subsystem|The underlying subsystem used for real-time protection.|
 |ipc.connects|Number of connection requests received by the kernel extension.|
 |ipc.rejects|Number of connection requests rejected by the kernel extension.|
-|ipc.connected|Whether there is any active connection to the kernel extension.|
+|ipc.connected|Whether there's any active connection to the kernel extension.|
 
 #### Support data
 
@@ -306,3 +309,4 @@ The following fields are collected:
 ## Resources
 
 - [Privacy at Microsoft](https://privacy.microsoft.com/)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

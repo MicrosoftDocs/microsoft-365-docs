@@ -1,6 +1,7 @@
 ---
 title: "Add or remove members from Microsoft 365 groups"
 ms.reviewer: arvaradh
+ms.date: 02/18/2020
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -110,8 +111,6 @@ By default, the person who created the group is the group owner. Often a group w
 
 ## Related content
 
-[Upgrade distribution lists to Microsoft 365 groups in Outlook](../manage/upgrade-distribution-lists.md) (article)\
-[Why you should upgrade your distribution lists to groups in Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188) (article)\
 [Manage guest access in Microsoft 365 groups](manage-guest-access-in-groups.md) (article)\
 [Manage Microsoft 365 groups with PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md): this article introduces you to key cmdlets and provides examples (article)\
 [Microsoft 365 groups naming policy](../../solutions/groups-naming-policy.md) (article)

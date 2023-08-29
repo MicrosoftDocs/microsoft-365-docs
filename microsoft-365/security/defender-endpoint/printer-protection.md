@@ -2,12 +2,10 @@
 title: Microsoft Defender for Endpoint Device Control Printer Protection
 description: Microsoft Defender for Endpoint Device Control Printer Protection blocks people from printing via non-corporate printers or non-approved USB printer.
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
+ms.date: 07/11/2023
 ms.author: dansimp
-author: lovina-saldanha
+author: dansimp
 ms.reviewer: dansimp
 manager: dansimp
 audience: ITPro
@@ -25,6 +23,9 @@ search.appverid: met150
 **Applies to**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+> [!NOTE]
+> If you want to manage printers, see [Microsoft Defender for Endpoint Device Control Printer Protection](printer-protection-overview.md).
 
 Microsoft Defender for Endpoint Device Control Printer Protection blocks people from printing via non-corporate printers or non-approved USB printer.
 
@@ -58,21 +59,16 @@ Make sure that the Windows 10 or Windows 11 devices that you plan on deploying P
     - For Windows 1909: install Windows Update [KB5003212](https://support.microsoft.com/topic/may-20-2021-kb5003212-os-build-18363-1593-preview-05381524-8380-4b30-b783-e330cad3d4a1)
     - For Windows 2004 or later
 
-2. If you're planning to deploy policy via Group Policy, the device must be onboarded to Microsoft Defender for Endpoint joined; if you're planning to deploy policy via Microsoft Endpoint Manager, the device must be joined by using Microsoft Intune.
+2. If you're planning to deploy policy via Group Policy, the device must be onboarded to Microsoft Defender for Endpoint joined; if you're planning to deploy policy via Microsoft Intune, the device must be joined by using Microsoft Intune.
 
 ## Deploy Device Control Printer Protection policy
 
 You can deploy the policy via Group Policy or Intune.
 
-<br>
-
-****
-
 |Title|Description|CSP Support | GPO Support | User-based Support | Machine-based Support |
 |---|---|:---:|:---:|:---:|:---:|
 |**Enable Device control Printing Restrictions**|Block people from printing via non-corporate printer|Yes|Yes|Yes|Yes|
 |**List of Approved USB-connected print devices**\*|Allow specific USB printer|Yes|Yes|Yes|Yes|
-|
 
 \* This policy must be used together with **Enable Device control Printing Restrictions**.
 
@@ -88,7 +84,7 @@ For Intune, currently Device Control Printer Protection supports OMA-URI only.
 
 - Apply policy over user:
 
-  `./Vendor/MSFT/Policy/Config/Printers/EnableDeviceControlUser`
+  `./User/Vendor/MSFT/Policy/Config/Printers/EnableDeviceControlUser`
 
 The CSP support string with `<enabled/>`:
 
@@ -102,9 +98,9 @@ The CSP support string with `<enabled/>`:
 
 - Apply policy over user:
 
-  `./Vendor/MSFT/Policy/Config/Printers/ApprovedUsbPrintDevicesUser`
+  `./User/Vendor/MSFT/Policy/Config/Printers/ApprovedUsbPrintDevicesUser`
 
-The CSP support string with approved USB printers via 'ApprovedUsbPrintDevices' property, example `<enabled><data id="ApprovedUsbPrintDevices_List" value="03F0/0853,0351/0872"/>`:
+The CSP support string with approved USB printers via 'ApprovedUsbPrintDevices' property. Example: `<enabled/><data id="ApprovedUsbPrintDevices_List" value="03F0/0853,0351/0872"/>`:
 
 :::image type="content" source="../../media/editrow.png" alt-text="The Edit Row pane" lightbox="../../media/editrow.png":::
 
@@ -174,3 +170,4 @@ DeviceEvents
 ```
 
  :::image type="content" source="https://user-images.githubusercontent.com/81826151/128954383-71df3009-77ef-40db-b575-79c73fda332b.png" alt-text="The Advanced Hunting page" lightbox="https://user-images.githubusercontent.com/81826151/128954383-71df3009-77ef-40db-b575-79c73fda332b.png":::
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

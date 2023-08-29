@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
+ms.date: 02/03/2022
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -29,7 +30,8 @@ description: "Learn how to migrate Google files to Microsoft 365 for business by
 
 # Migrate Google files to Microsoft 365 for business with Migration Manager
 
-Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
+> [!NOTE]
+> When you move to Microsoft 365 for business from Google Workspace, you'll want to migrate your files from Google Drive. You can use the SharePoint Migration Manager to move files from personal and shared Drives. This video and summary of the required steps gives you an overview of how to do this. For more information, see [**Migrate Google Workspace to Microsoft 365 with Migration Manager**](/sharepointmigration/mm-google-overview).
 
 ## Watch: Migrate Google files to Microsoft 365 for business
 
@@ -37,14 +39,15 @@ Check out this video and others on our [YouTube channel](https://go.microsoft.co
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWSx43?autoplay=false]
 
-When you move to Microsoft 365 for business from Google Workspace, you'll want to migrate your files from Google Drive. You can use the SharePoint Migration Manager to move files from personal and shared Drives. This video and summary of the required steps gives you an overview of how to do this. For more information, see [Migrate Google Workspace to Microsoft 365 with Migration Manager](/sharepointmigration/mm-google-overview).
-
 > [!NOTE]
 > Migration Manager will make a copy of the files and move the copies to Microsoft 365 for business. The original files will stay in Google Drives also.
 
 ## Before you start
 
 All the users should have signed in to Microsoft 365 for business and set up their OneDrive for Business. To do this, go to [office.com](https://office.com), sign in with your Microsoft 365 for business credentials, and then choose OneDrive.
+
+> [!NOTE]
+> Currently, Migration Manager isn't available for Google on any of the Government clouds.
 
 ## Install the Microsoft 365 Migration App
 

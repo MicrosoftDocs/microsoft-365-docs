@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
+ms.date: 02/19/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -43,7 +44,7 @@ You can access detailed reports for each area by selecting the data tables. You 
 
 The executive summary is a high-level, at-a-glance view of Microsoft 365 for Business adoption, usage, mobility, communication, collaboration, and storage reports, and is meant for business decision makers. It provides a view into how some individual services are being used, based on all the users who have been enabled and those who are active. All values of the month shown on the report refer to the latest complete month. 
 
-This summary lets you quickly understand usage patterns in Office and how and where your employees are collaborating.
+This summary lets you quickly understand usage patterns in Microsoft 365 and how and where your employees are collaborating.
 
 ![Image of the Microsoft 365 usage executive summary.](../../media/office365usage-exec-summary.png)
 
@@ -55,25 +56,25 @@ The Microsoft 365 overview report contains the following reports. You can view t
 
 - **Usage** &ndash; Offers a drill-down view into the volume of active users and the key activities for each product for the last 12 months. Use the reports in this section to learn how people in your organization are using Microsoft 365.
 
-- **Communication** &ndash; You can see at a glance whether people in your organization prefer to stay in touch by using Teams, Yammer, email, or Skype calls. You can observe if there are shifts in patterns in the use of communication tools among your employees. 
+- **Communication** &ndash; You can see at a glance whether people in your organization prefer to stay in touch by using Teams, Viva Engage, email, or Skype calls. You can observe if there are shifts in patterns in the use of communication tools among your employees. 
 
 - **Collaboration** &ndash; See how people in your organization use OneDrive and SharePoint to store documents and collaborate with each other, and how these trends evolve month over month. You can also see how many users shared documents internally or externally and how many users used SharePoint sites or OneDrive accounts, broken out by owners and other collaborators.
 
 - **Storage** &ndash; Use this report to track cloud storage for mailboxes, OneDrive, and SharePoint sites.
 
-- **Mobility** &ndash; Track which clients and devices people use to connect to email, Teams, Skype, or Yammer.
+- **Mobility** &ndash; Track which clients and devices people use to connect to email, Teams, Skype, or Viva Engage.
 
 ## Activation and licensing
 
-The activation and license page offers reports on Microsoft 365 activation; that is, how many users have downloaded and activated Office apps and how many licenses have been assigned by your organization. The month value towards the top refers to the current month, and the metrics reflect values aggregated from the beginning of the month to the current date.
+The activation and license page offers reports on Microsoft 365 activation; that is, how many users have downloaded and activated Microsoft 365 apps and how many licenses have been assigned by your organization. The month value towards the top refers to the current month, and the metrics reflect values aggregated from the beginning of the month to the current date.
 
-- **Activation** &ndash; Track service plan (for example, Microsoft 365 Apps for enterprise, Project, and Visio) activations in your organization. Each person with an Office license can install products on up to five devices. You can also use reports in this section to see the devices on which people have installed Office apps. Note that to activate a plan, a user must install the app and sign in with their account.
+- **Activation** &ndash; Track service plan (for example, Microsoft 365 Apps for enterprise, Project, and Visio) activations in your organization. Each person with a Microsoft 365 license can install products on up to five devices. You can also use reports in this section to see the devices on which people have installed Microsoft 365 apps. Note that to activate a plan, a user must install the app and sign in with their account.
 
 - **Licensing** &ndash; This report contains an overview of license types, the count of users who were assigned each license type, and the license assignment distribution for each month. The month value towards the top refers to the current month, and the metrics reflect values aggregated from the beginning of the month to the current date.
 
 ## Product usage
 
-This report contains a separate report for each Microsoft 365 service, including Exchange, Microsoft 365 groups, OneDrive, SharePoint, Skype, Teams, and Yammer. Each report contains total enabled vs. total active user reports, counts of entities such as mailboxes, sites, groups, and accounts, as well as activity type reports where appropriate. All values of the month shown on the top section of the report refer to the latest complete month.
+This report contains a separate report for each Microsoft 365 service, including Exchange, Microsoft 365 groups, OneDrive, SharePoint, Skype, Teams, and Viva Engage. Each report contains total enabled vs. total active user reports, counts of entities such as mailboxes, sites, groups, and accounts, as well as activity type reports where appropriate. All values of the month shown on the top section of the report refer to the latest complete month.
 
 ## User activity
 
@@ -154,7 +155,7 @@ The current version of the template app includes file activity from SharePoint t
 
 ### Which groups are included in the Microsoft 365 Groups usage report?
 
-The current version of the template app includes usage from Outlook groups, Yammer groups, and SharePoint groups. It does not include groups related to Microsoft Teams or Planner.
+The current version of the template app includes usage from Outlook groups, Viva Engage groups, and SharePoint groups. It does not include groups related to Microsoft Teams or Planner.
 
 ### When will an updated version of the template app become available?
 

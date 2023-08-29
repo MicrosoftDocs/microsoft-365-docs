@@ -4,6 +4,7 @@ ms.reviewer:
 description: Learn about how phishing work, deliver malware do your devices, and  what you can do to protect yourself
 keywords: security, malware, phishing, information, scam, social engineering, bait, lure, protection, trends, targeted attack
 ms.service: microsoft-365-security
+ms.subservice: intelligence
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -16,6 +17,7 @@ ms.collection:
 - tier2
 ms.topic: conceptual
 search.appverid: met150
+ms.date: 03/18/2022
 ---
 
 # How to protect against phishing attacks
@@ -34,39 +36,39 @@ Enterprises should educate and train their employees to be wary of any communica
 
 Here are several telltale signs of a phishing scam:
 
-* The links or URLs provided in emails are **not pointing to the correct location** or are pointing to a third-party site not affiliated with the sender of the email. For example, in the image below the URL provided doesn't match the URL that you'll be taken to.
+- The links or URLs provided in emails are **not pointing to the correct location** or are pointing to a third-party site not affiliated with the sender of the email. For example, in the image below the URL provided doesn't match the URL that you'll be taken to.
 
     ![example of hovering over a url.](../../media/security-intelligence-images/url-hover.png)
 
-* There's a **request for personal information** such as social security numbers or bank or financial information. Official communications won't generally request personal information from you in the form of an email.
+- There's a **request for personal information** such as social security numbers or bank or financial information. Official communications won't generally request personal information from you in the form of an email.
 
-* **Items in the email address will be changed** so that it is similar enough to a legitimate email address, but has added numbers or changed letters.
+- **Items in the email address will be changed** so that it is similar enough to a legitimate email address, but has added numbers or changed letters.
 
-* The message is **unexpected and unsolicited**. If you suddenly receive an email from an entity or a person you rarely deal with, consider this email suspect.
+- The message is **unexpected and unsolicited**. If you suddenly receive an email from an entity or a person you rarely deal with, consider this email suspect.
 
-* The message or the attachment asks you to **enable macros, adjust security settings, or install applications**. Normal emails won't ask you to do this.
+- The message or the attachment asks you to **enable macros, adjust security settings, or install applications**. Normal emails won't ask you to do this.
 
-* The message contains **errors**. Legitimate corporate messages are less likely to have typographic or grammatical errors or contain wrong information.
+- The message contains **errors**. Legitimate corporate messages are less likely to have typographic or grammatical errors or contain wrong information.
 
-* The **sender address doesn't match the signature** on the message itself. For example, an email is purported to be from Mary of Contoso Corp, but the sender address is john<span></span>@example.com.
+- The **sender address doesn't match the signature** on the message itself. For example, an email is purported to be from Mary of Contoso Corp, but the sender address is john<span></span>@example.com.
 
-* There are **multiple recipients** in the "To" field and they appear to be random addresses. Corporate messages are normally sent directly to individual recipients.
+- There are **multiple recipients** in the "To" field and they appear to be random addresses. Corporate messages are normally sent directly to individual recipients.
 
-* The greeting on the message itself **doesn't personally address you**. Apart from messages that mistakenly address a different person, greetings that misuse your name or pull your name directly from your email address tend to be malicious.
+- The greeting on the message itself **doesn't personally address you**. Apart from messages that mistakenly address a different person, greetings that misuse your name or pull your name directly from your email address tend to be malicious.
 
-* The website looks familiar but there are **inconsistencies or things that aren't quite right**. Warning signs include outdated logos, typos, or ask users to give additional information that is not asked by legitimate sign-in websites.
+- The website looks familiar but there are **inconsistencies or things that aren't quite right**. Warning signs include outdated logos, typos, or ask users to give additional information that is not asked by legitimate sign-in websites.
 
-* The page that opens is **not a live page**, but rather an image that is designed to look like the site you are familiar with. A pop-up may appear that requests credentials.
+- The page that opens is **not a live page**, but rather an image that is designed to look like the site you are familiar with. A pop-up may appear that requests credentials.
 
 If in doubt, contact the business by known channels to verify if any suspicious emails are in fact legitimate.
 
 ## Software solutions for organizations
 
-* [Microsoft Edge](/microsoft-edge/deploy/index) and [Windows Defender Application Guard](/windows/security/microsoft-defender-application-guard/md-app-guard-overview.md) offer protection from the increasing threat of targeted attacks using Microsoft's industry-leading Hyper-V virtualization technology. If a browsed website is deemed untrusted, the Hyper-V container will isolate that device from the rest of your network thereby preventing access to your enterprise data.
+- [Microsoft Edge](/microsoft-edge/deploy/index) and [Windows Defender Application Guard](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) offer protection from the increasing threat of targeted attacks using Microsoft's industry-leading Hyper-V virtualization technology. If a browsed website is deemed untrusted, the Hyper-V container will isolate that device from the rest of your network thereby preventing access to your enterprise data.
 
-* [Microsoft Exchange Online Protection (EOP)](https://products.office.com/exchange/exchange-email-security-spam-protection) offers enterprise-class reliability and protection against spam and malware, while maintaining access to email during and after emergencies.  Using various layers of filtering, EOP can provide different controls for spam filtering, such as bulk mail controls and international spam, that will further enhance your protection services.
+- [Microsoft Exchange Online Protection (EOP)](https://products.office.com/exchange/exchange-email-security-spam-protection) offers enterprise-class reliability and protection against spam and malware, while maintaining access to email during and after emergencies.  Using various layers of filtering, EOP can provide different controls for spam filtering, such as bulk mail controls and international spam, that will further enhance your protection services.
 
-* Use [Microsoft Defender for Office 365](https://products.office.com/exchange/online-email-threat-protection?ocid=cx-blog-mmpc) to help protect your email, files, and online storage against malware. It offers holistic protection in Microsoft Teams, Word, Excel, PowerPoint, Visio, SharePoint Online, and OneDrive for Business. By protecting against unsafe attachments and expanding protection against malicious links, it complements the security features of Exchange Online Protection to provide better zero-day protection.
+- Use [Microsoft Defender for Office 365](https://products.office.com/exchange/online-email-threat-protection?ocid=cx-blog-mmpc) to help protect your email, files, and online storage against malware. It offers holistic protection in Microsoft Teams, Word, Excel, PowerPoint, Visio, SharePoint Online, and OneDrive for Business. By protecting against unsafe attachments and expanding protection against malicious links, it complements the security features of Exchange Online Protection to provide better zero-day protection.
 
 ## What to do if you've been a victim of a phishing scam
 
@@ -82,7 +84,7 @@ If you feel you've been a victim of a phishing attack:
 
 - **Microsoft Office Outlook**: While in the suspicious message, select **Report message** from the ribbon, and then select **Phishing**.
 
-- **Microsoft 365**: Use the [Submissions portal in Microsoft 365 Defender](/microsoft-365/security/office-365-security/report-junk-email-messages-to-microsoft) to submit the junk or phishing sample to Microsoft for analysis. For more information, see [Report messages and files to Microsoft](/microsoft-365/security/office-365-security/report-junk-email-messages-to-microsoft).
+- **Microsoft 365**: Use the [Submissions portal in Microsoft 365 Defender](/microsoft-365/security/office-365-security//submissions-admin) to submit the junk or phishing sample to Microsoft for analysis. For more information, see [How do I report a suspicious email or file to Microsoft?](/microsoft-365/security/office-365-security/submissions-report-messages-files-to-microsoft).
 
 - **Anti-Phishing Working Group**: phishing-report@us-cert.gov. The group uses reports generated from emails sent to fight phishing scams and hackers. ISPs, security vendors, financial institutions, and law enforcement agencies are involved.
 

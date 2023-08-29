@@ -1,5 +1,5 @@
 ---
-title: Delete a file from the live response library 
+title: Delete a file from the live response library
 description: Learn how to delete a file from the live response library.
 keywords: apis, graph api, supported apis, delete from library
 search.product: eADQiWindows 10XVcnh
@@ -15,15 +15,17 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
 - m365-security
-- tier2
+- tier3
+- must-keep
 ms.topic: reference
 ms.subservice: mde
 ms.custom: api
+ms.date: 06/03/2021
 ---
 
-#  Delete a file from the live response library  
+#  Delete a file from the live response library
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,7 +34,7 @@ ms.custom: api
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
->Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -44,7 +46,7 @@ Delete a file from live response library.
 
 ## Limitations
 
-1.  Rate limitations for this API are 100 calls per minute and 1500 calls per
+1. Rate limitations for this API are 100 calls per minute and 1500 calls per
     hour.
 
 ## Permissions
@@ -73,9 +75,9 @@ Empty
 
 ## Response
 
--   If file exists in library and deleted successfully  204 No Content.
+- If file exists in library and deleted successfully  204 No Content.
 
--   If specified file name was not found  404 Not Found.
+- If specified file name was not found  404 Not Found.
 
 ## Example
 
@@ -88,4 +90,6 @@ DELETE https://api.securitycenter.microsoft.com/api/libraryfiles/script1.ps1
 ```
 
 ## Related topic
+
 - [Run live response](run-live-response.md) 
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

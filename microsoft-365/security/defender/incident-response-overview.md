@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: dansimp
-author: dansimp
+ms.author: diannegali
+author: diannegali
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -22,6 +22,7 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
+ms.date: 08/11/2023
 ---
 
 # Investigate and respond with Microsoft 365 Defender
@@ -67,7 +68,7 @@ See [Proactively hunt for threats with advanced hunting in Microsoft 365 Defende
 
 Threat analytics is a threat intelligence capability in Microsoft 365 Defender designed to assist your security team to be as efficient as possible while facing emerging threats. It includes detailed analysis and information on:
 
-- Active threat actors and their campaigns
+- Active [threat actors](/microsoft-365/security/intelligence/microsoft-threat-actor-naming) and their campaigns
 - Popular and new attack techniques
 - Critical vulnerabilities
 - Common attack surfaces
@@ -84,3 +85,4 @@ For more information, see [Threat analytics in Microsoft 365 Defender](threat-an
 Endpoint Attack Notifications (previously referred to as Microsoft Threat Experts - Targeted Attack Notifications) is a managed threat hunting service. Once you apply and are accepted, you'll receive Endpoint Attack Notifications from Microsoft Defender experts, so you won't miss critical threats to your environment. These notifications will help you protect your organization's endpoints, email, and identities. Microsoft Defender Experts – Experts on Demand lets you get expert advice about threats your organization is facing and you can reach out for help on threats your organization is facing. It's available as an additional subscription service.
 
 For more information, see [Microsoft Defender Experts in Microsoft 365 overview](../defender-endpoint/experts-on-demand.md).
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

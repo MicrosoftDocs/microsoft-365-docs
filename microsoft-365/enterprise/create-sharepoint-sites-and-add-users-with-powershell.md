@@ -3,8 +3,9 @@ title: "Create SharePoint Online sites and add users with PowerShell"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
+ms.date: 08/10/2020
 audience: Admin
-ms.topic: landing-page
+ms.topic: how-to
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:

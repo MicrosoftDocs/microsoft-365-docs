@@ -1,6 +1,7 @@
 ---
 title: "Allow members to send as or send on behalf of a group"
-ms.reviewer: arvaradh
+ms.reviewer: rahulnayak
+ms.date: 07/18/2023
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,6 +15,7 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - m365solution-collabgovernance
+- Tier1
 ms.custom: admindeeplinkEXCHANGE
 search.appverid:
 - MET150
@@ -40,7 +42,7 @@ The **Send on Behalf** permission lets a user send email on behalf of a Microsof
     
 ## Allow members to send email as a group
 
-This section explains how to allow users to send email as a group in the<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center (EAC)</a> in Exchange Online.
+This section explains how to allow users to send email as a group in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center (EAC)</a> in Exchange Online.
   
 1. In the Exchange admin center, go to **Recipients** \> <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">**Groups**</a>.
     

@@ -3,6 +3,7 @@ title: "Manage Microsoft 365 tenants with Windows PowerShell for DAP partners"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
+ms.date: 08/10/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -15,7 +16,9 @@ ms.collection:
 - M365-subscription-management
 f1.keywords:
 - NOCSH
-ms.custom: seo-marvel-apr2020
+ms.custom:
+  - seo-marvel-apr2020
+  - has-azure-ad-ps-ref
 ms.assetid: f92d5116-5b66-4150-ad20-1452fc3dd712
 description: In this article, learn how to use PowerShell for Microsoft 365 to manage your customer tenancies.
 ---

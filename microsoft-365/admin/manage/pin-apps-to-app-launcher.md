@@ -3,8 +3,9 @@ title: "Pin apps to your users' app launcher"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
+ms.date: 08/28/2020
 audience: Admin
 ms.topic: article
 ms.collection:
@@ -21,9 +22,9 @@ description: "As a global admin you can pin up to three apps to your users' app 
 
 # Pin apps to your users' app launcher
 
-You can use controls in the Azure Active Directory portal to pin up to three apps to Office.com and the app launcher for all the users in your organization. You can also organize groups of applications. Any app you add can later be unpinned by the user at any time. To pin an app for your users, you must be a Cloud application administrator, or Application administrator in Azure Active Directory, or a Global administrator in Microsoft 365. For more information about admin roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference) and [admin roles in Microsoft 365](../add-users/about-admin-roles.md). 
+You can use controls in the Azure Active Directory portal to pin up to three apps to Microsoft365.com and the app launcher for all the users in your organization. You can also organize groups of applications. Any app you add can later be unpinned by the user at any time. To pin an app for your users, you must be a Cloud application administrator, or Application administrator in Azure Active Directory, or a Global administrator in Microsoft 365. For more information about admin roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference) and [admin roles in Microsoft 365](../add-users/about-admin-roles.md). 
 
-For more information about the app launcher and Office.com, see [meet the app launcher](https://support.microsoft.com/office/79f12104-6fed-442f-96a0-eb089a3f476a) and [updates to office.com and the-Office 365 app launcher](https://techcommunity.microsoft.com/t5/office-365-blog/updates-to-office-com-and-the-office-365-app-launcher/ba-p/1150503) blog article.
+For more information about the app launcher and Microsoft365.com, see [meet the app launcher](https://support.microsoft.com/office/79f12104-6fed-442f-96a0-eb089a3f476a) and [updates to office.com and the-Office 365 app launcher](https://techcommunity.microsoft.com/t5/office-365-blog/updates-to-office-com-and-the-office-365-app-launcher/ba-p/1150503) blog article.
 
 ## Use the Azure Active Directory portal to pin apps
 
@@ -32,11 +33,9 @@ For more information about the app launcher and Office.com, see [meet the app la
 
 1. Go to the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
 2. In the left nav, choose **Show all**, and under **Admin centers**, choose **Azure Active Directory**.
-3. In **Azure Active Directory**, choose **Enterprise applications** > **User settings**.
-4. In the **Office 365 Settings** section, choose **Add application**.
+3. In **Azure Active Directory**, choose **Enterprise applications** > **App launchers** > **Settings**.
+4. In the **Microsoft 365 settings** section, choose **Add application**.
 5. Choose the applications you want to pin to the users' app launcher, and then choose **Add**.
-
-:::image type="content" source="../../media/add-apps.png" alt-text="Microsoft 365 settings to pin apps.":::
 
 ### Pin a custom app
 

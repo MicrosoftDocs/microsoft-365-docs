@@ -3,6 +3,7 @@ title: "Assess the Microsoft 365 Active Users report"
 ms.author: efrene
 author: efrene
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
@@ -30,7 +31,7 @@ description: "Learn how to get an Active Users report using the Microsoft 365 Re
 
 The Microsoft 365 Reports dashboard shows you the activity overview across the products in your organization. It enables you to drill in to individual product level reports to give you more granular insight about the activities within each product. Check out [the Reports overview topic](activity-reports.md).
   
-For example, you can use the **Active Users** report to find out how many product licenses are being used by individuals in your organization, and drill down for information about which users are using what products. This report can help administrators identify underutilized products or users that might need additional training or information. 
+For example, you can use the **Active Users** report to find out how many product licenses are being used by individuals in your organization, and drill down for information about which users are using what products. This report can help administrators identify underutilized products or users that might need additional training or information.
 
 ## How to get to the Active Users report
 
@@ -59,6 +60,6 @@ You can also export the report data into an Excel .csv file, by selecting the Ex
 
 You can change what information is displayed in the grid table with column controls.
 
-If your subscription is operated by 21Vianet, then you will not see Yammer.
+If your subscription is operated by 21Vianet, then you will not see Viva Engage.
 
 If your organization's policies prevents you from viewing reports where user information is identifiable, you can change the privacy setting for all these reports. Check out the **How do I hide user level details?** section in [Activity Reports in the Microsoft 365 admin center](activity-reports.md).  

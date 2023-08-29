@@ -19,7 +19,8 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
-ms.topic: conceptual
+ms.topic: reference
+ms.date: 02/16/2021
 ---
 
 # IdentityQueryEvents
@@ -32,8 +33,8 @@ ms.topic: conceptual
 
 The `IdentityQueryEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about queries performed against Active Directory objects, such as users, groups, devices, and domains. Use this reference to construct queries that return information from this table.
 
->[!TIP]
-> For detailed information about the events types (`ActionType` values) supported by a table, use the built-in schema reference available in the Defender for Cloud.
+> [!TIP]
+> For detailed information about the events types (`ActionType` values) supported by a table, use the built-in schema reference available in Microsoft 365 Defender.
 
 For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
 
@@ -61,7 +62,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `TargetDeviceName` | `string` | Fully qualified domain name (FQDN) of the device that the recorded action was applied to |
 | `TargetAccountUpn` | `string` | User principal name (UPN) of the account that the recorded action was applied to |
 | `TargetAccountDisplayName` | `string` | Display name of the account that the recorded action was applied to |
-| `Location` | `string` | City, country, or other geographic location associated with the event |
+| `Location` | `string` | City, country/region, or other geographic location associated with the event |
 | `ReportId` | `long` | Unique identifier for the event |
 | `AdditionalFields` | `string` | Additional information about the entity or event |
 
@@ -72,3 +73,4 @@ For information on other tables in the advanced hunting schema, [see the advance
 - [Hunt across devices, emails, apps, and identities](advanced-hunting-query-emails-devices.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

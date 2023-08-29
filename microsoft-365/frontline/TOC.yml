@@ -9,8 +9,6 @@
     href: flw-scenario-posters.md
   - name: Try Microsoft 365 for frontline workers
     href: flw-trial.md
-  - name: Frontline deployment white paper
-    href: flw-technical-planning-guide-deployment.md
   - name: Set up and configure
     items:
     - name: Overview
@@ -25,10 +23,12 @@
       items: 
       - name: Set up Microsoft 365 and related services
         href: flw-setup-microsoft-365.md
-      - name: Deploy Teams at scale
+      - name: Choosing between dynamic and static frontline teams
+        href: frontline-team-options.md
+      - name: Deploy frontline dynamic teams at scale
+        href: deploy-dynamic-teams-at-scale.md
+      - name: Deploy frontline static teams at scale with PowerShell
         href: deploy-teams-at-scale.md
-      - name: Onboard your users with the onboarding wizard
-        href: flw-onboarding-wizard.md
     - name: Manage devices
       items:
       - name: Manage shared and personal devices
@@ -115,12 +115,14 @@
     items: 
     - name: Overview
       href: virtual-appointments.md
-    - name: Virtual Appointments with Teams and Bookings
-      href: bookings-virtual-appointments.md
-    - name: Virtual Appointments with Teams and Cerner EHR 
-      href: ehr-admin-cerner.md
+    - name: Use the Virtual Appointments app in Teams
+      href: virtual-appointments-app.md
+    - name: Virtual Appointments with Teams and Oracle Health EHR 
+      href: ehr-admin-oracle-health.md
     - name: Virtual Appointments with Teams and Epic EHR 
       href: ehr-admin-epic.md
+    - name: Troubleshoot Teams EHR connector setup and configuration
+      href: ehr-connector-troubleshoot-setup-configuration.md
     - name: Manage the join experience on browsers
       href: browser-join.md
     - name: Reports
@@ -129,8 +131,12 @@
         href: virtual-appointments-usage-report.md
       - name: Advanced Virtual Appointments activity report
         href: advanced-virtual-appointments-activity-report.md
+      - name: SMS notifications usage report
+        href: sms-notifications-usage-report.md
       - name: EHR connector Virtual Appointments report
         href: ehr-connector-report.md  
+      - name: Virtual appointments Call Quality Dashboard
+        href: virtual-appointments-call-quality.md
     - name: Help your clients and customers use virtual appointments
       href: virtual-appointments-toolkit.md
   - name: Industry-specific solutions

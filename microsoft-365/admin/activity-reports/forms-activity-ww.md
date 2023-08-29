@@ -3,8 +3,9 @@ title: "Microsoft 365 admin center forms activity reports"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
+ms.date: 11/10/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -56,4 +57,3 @@ The **Forms activity** report can be viewed for trends over the last 7 days, 30 
 |Last activity date (UTC)   |The latest date a form activity was performed by the user for the selected date range. To see activity that occurred on a specific date, select the date directly in the chart.<br/><br/>This will filter the table to display file activity data only for users who performed the activity on that specific day.   |
 |Number of forms created   |The number of forms that the user created.    |
 |Number of forms responded  |The number of forms that the user has submitted responses to.|
-

@@ -64,7 +64,7 @@ See the [Manage Microsoft Defender Antivirus Security intelligence  updates](man
 
 In Windows 10, version 1607, you can manually force an offline scan. Alternatively, if Windows Defender determines that Microsoft Defender Offline needs to run, it will prompt the user on the endpoint.
 
-The need to perform an offline scan will also be revealed in Microsoft Endpoint Manager if you're using it to manage your endpoints.
+The need to perform an offline scan will also be revealed in Microsoft Intune if you're using it to manage your endpoints.
 
 The prompt can occur via a notification, similar to the following:
 
@@ -152,3 +152,4 @@ To see the Microsoft Defender Offline scan results:
 
 - [Customize, initiate, and review the results of scans and remediation](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 - [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

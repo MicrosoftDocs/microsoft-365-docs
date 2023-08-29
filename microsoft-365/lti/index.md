@@ -10,7 +10,8 @@ ms.topic: article
 ms.service: microsoft-365-enterprise
 search.appverid: 
 ms.collection: 
-    - M365-modern-desktop
+- M365-modern-desktop
+- tier2
 ms.localizationpriority: medium
 description: Learn about Learning Tools Interoperability (LTI) Microsoft apps, and how they will help educators when integrating Microsoft apps into their Learning Management System (LMS).
 ---

@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
+ms.date: 02/19/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -38,6 +39,8 @@ description: "Learn to import contacts, calendars, and emails from Gmail or anot
 ---
 
 # Migrate email and contacts to Microsoft 365
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
 Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
@@ -99,7 +102,7 @@ Just want to see your email from another provider (like Gmail, Yahoo, or Live.co
 Add an account, such as your private Gmail account, to Outlook.
   
 - Open Outlook, then go to **File** \> **Add account**.
-    
+
 Need more detailed steps? See [Add an account](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b).
   
 [![Screenshot showing Outlook account information page in the backstage view.](../../media/6a7fa106-1077-4351-9fe2-8eb00918b40a.png)](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b)
@@ -111,5 +114,5 @@ Depending on your source email system, you can choose from several bulk migratio
 ## Related content
 
 [Plan your setup of Microsoft 365 for business](plan-your-setup.md) (article)\
-[Install Office applications](install-applications.md) (link page)\
-[Overview of the Microsoft 365 admin center](Overview of the Microsoft 365 admin center](../admin-overview/admin-center-overview.md) (video)
+[Install Microsoft 365 apps](install-applications.md) (link page)\
+[Overview of the Microsoft 365 admin center](../admin-overview/admin-center-overview.md) (video)

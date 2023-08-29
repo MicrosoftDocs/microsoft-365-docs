@@ -18,7 +18,9 @@ ms.collection:
 - tier2
 ms.topic: conceptual
 ms.subservice: mde
+ms.date: 12/18/2020
 ---
+
 # Turn on the preview experience in Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -46,3 +48,4 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 - [Configure email notifications in Microsoft Defender for Endpoint](configure-email-notifications.md)
 
 
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

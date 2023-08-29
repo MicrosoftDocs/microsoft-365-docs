@@ -1,7 +1,7 @@
 ---
 title: "DNS records for Office 365 GCC High"
 ms.author: dzazzo
-author: dzazzo
+author: dzazzo-msft
 manager: dzazzo
 ms.date: 05/19/2020
 audience: ITPro
@@ -11,7 +11,9 @@ ms.localizationpriority: medium
 ms.collection: 
 - M365-subscription-management
 - Strat_O365_Enterprise
-ms.custom: Adm_O365
+ms.custom:
+  - Adm_O365
+  - has-azure-ad-ps-ref
 search.appverid:
 - OGA150
 - OGC150

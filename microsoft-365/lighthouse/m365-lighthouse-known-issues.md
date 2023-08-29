@@ -5,6 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: crimora
+ms.date: 07/17/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -49,15 +50,15 @@ This article lists the known issues for Microsoft 365 Lighthouse by feature area
 | ---------------- | ---------------- | ---------------- |
 | **Retry provisioning error** | MSP technicians get a "You don't have permissions to do this" error message when attempting to retry provisioning of a Cloud PC. | To work around this issue, sign in to the customer tenant and then reprovision Cloud PCs from the Microsoft Endpoint Manger admin center. For instructions, see [Reprovision a Cloud PC](/windows-365/enterprise/reprovision-cloud-pc). |
 
-## Delegated Admin Privileges (DAP)
+## Delegated admin privileges (DAP)
 
 | Issue | Description | Solution |
 | ---------------- | ---------------- | ---------------- |
 | **Permissions delay when changing DAP roles** | If an MSP technician is added to or removed from the Admin Agent or Helpdesk Agent group, there may be a delay in reflecting the appropriate permissions within Lighthouse. | The issue will resolve within 30 minutes. No additional steps are required. |
 
-## Granular Delegated Admin Privileges (GDAP)
+## Granular delegated admin privileges (GDAP)
 
-Either Granular Delegated Admin Privileges (GDAP) plus an indirect reseller relationship or a Delegated Admin Privileges (DAP) relationship is required to onboard customers to Lighthouse. If DAP and GDAP coexist in a customer tenant, GDAP permissions take precedence for MSP technicians in GDAP-enabled security groups. Customers with GDAP-only relationships (without indirect reseller relationships) currently can't onboard to Lighthouse, but will be able to onboard in a future release.<br><br>
+Either granular delegated admin privileges (GDAP) plus an indirect reseller relationship or a delegated admin privileges (DAP) relationship is required to onboard customers to Lighthouse. If DAP and GDAP coexist in a customer tenant, GDAP permissions take precedence for MSP technicians in GDAP-enabled security groups. Customers with GDAP-only relationships (without indirect reseller relationships) currently can't onboard to Lighthouse, but will be able to onboard in a future release.<br><br>
 
 | Issue | Description | Solution |
 | ---------------- | ---------------- | ---------------- |
@@ -68,6 +69,13 @@ Either Granular Delegated Admin Privileges (GDAP) plus an indirect reseller rela
 | Issue | Description | Solution |
 | ---------------- | ---------------- | ---------------- |
 | **Translation issues** | Users may experience language translation issues when the language of their browser, or their language selection in Lighthouse, is anything other than English. | To minimize translation issues in Lighthouse, make sure that the browser's language selection matches that of the language setting in the Lighthouse portal. To change the language selection in Lighthouse, sign in to Lighthouse and select the gear icon at the top of the page to open the Portal settings page, select **Language + region**, and then select the appropriate language and regional formats. |
+
+## Sales Advisor
+
+| Issue | Description | Solution |
+| ---------------- | ---------------- | ---------------- |
+| **Total tenants and total seats count mismatch with Partner Center** | Total seats and tenants displayed in the summary view of Customer acquisition, Customer retention, and Customer growth tabs are mismatched between the Lighthouse experience and Partner Center experience. | No workaround is required. This issue doesn't impact the number of opportunities visible in the recommendation table or the export. You still have access to the full list of opportunities available across your customer tenants. |
+| **Filtering and sorting experience in Lighthouse is different than in Partner Center**| Column sorting, Recommendation filter, Product filter, and MPN ID filter are unavailable in the Lighthouse experience. | No workaround is required. You still have access to the full list of opportunities available across your customer tenants.  |
 
 ## Related content
 

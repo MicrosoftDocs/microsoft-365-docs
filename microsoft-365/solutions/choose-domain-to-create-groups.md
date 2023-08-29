@@ -1,6 +1,7 @@
 ---
 title: "Choose the domain to use when creating Microsoft 365 groups"
 ms.reviewer: arvaradh
+ms.date: 02/18/2020
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -81,8 +82,7 @@ Let's say you want to control what sub-domains Microsoft 365 groups are created 
 To change the priority or email address templates for an existing EAP, use the Set-EmailAddressPolicy cmdlet.
   
 ```
-Set-EmailAddressPolicy -Name StudentsGroups -EnabledEmailAddressTemplates "SMTP:@students.groups.contoso.com","smtp:@groups.contoso.com", "smtp:@students.contoso.com" ManagedByFilter {Department -eq 'Students'} -Priority 2
-
+Set-EmailAddressPolicy -Name StudentsGroups -EnabledEmailAddressTemplates "SMTP:@students.groups.contoso.com","smtp:@groups.contoso.com", "smtp:@students.contoso.com"
 ```
 
 Changing an EAP has no impact on the groups that have already been provisioned.

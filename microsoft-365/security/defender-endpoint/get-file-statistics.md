@@ -14,10 +14,12 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
-ms.topic: conceptual
+- must-keep
+ms.topic: reference
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Get file statistics API
@@ -56,7 +58,7 @@ Delegated (work or school account)|File.Read.All|'Read file profiles'
 > [!NOTE]
 > When obtaining a token using user credentials:
 >
-> - The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
+> - The user needs to have at least the following role permission: 'View Data' (For more information, see [Create and manage roles](user-roles.md))
 
 ## HTTP request
 
@@ -82,13 +84,13 @@ Empty
 
 ## Response
 
-If successful and file exists - 200 OK with statistical data in the body. If file do not exist - 404 Not Found.
+If successful and file exists - 200 OK with statistical data in the body. If file does not exist - 404 Not Found.
 
 ## Example
 
 ### Request example
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/files/0991a395da64e1c5fbe8732ed11e6be064081d9f/stats?lookBackHours=48
@@ -96,7 +98,7 @@ GET https://api.securitycenter.microsoft.com/api/files/0991a395da64e1c5fbe8732ed
 
 ### Response example
 
-Here is an example of the response.
+Here's an example of the response.
 
 ```json
 {
@@ -113,3 +115,4 @@ Here is an example of the response.
     ]
 }
 ```
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

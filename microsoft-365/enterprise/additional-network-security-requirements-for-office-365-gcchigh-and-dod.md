@@ -1,7 +1,7 @@
 ---
 title: "Additional network security requirements for Office 365 GCC High and DoD"
 ms.author: dzazzo
-author: dzazzo
+author: dzazzo-msft
 manager: dzazzo
 ms.date: 05/19/2020
 audience: ITPro
@@ -63,3 +63,4 @@ For security and compliance reasons, keep in mind the following restrictions on 
 * We **cannot** accommodate requests to allow access to commercial cloud services (commercial Office 365, Google G-Suite, Amazon Web Services, etc.)
 
 Once your request has been received and approved by Microsoft, there's a three-week SLA for implementation and can’t be expedited.  You'll receive an initial acknowledgment when we’ve received your request and a final acknowledgment once it has been completed.
+

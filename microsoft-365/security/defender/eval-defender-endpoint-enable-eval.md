@@ -79,10 +79,10 @@ The following table lists the available tools based on the endpoint that you nee
 
 | Endpoint | Tool options |
 |:---|:---|
-| **Windows** |- [Local script (up to 10 devices)](../defender-endpoint/configure-endpoints-script.md)<br/>- [Group Policy](../defender-endpoint/configure-endpoints-gp.md)<br/>- [Microsoft Endpoint Manager/ Mobile Device Manager](../defender-endpoint/configure-endpoints-mdm.md)<br/>- [Microsoft Endpoint Configuration Manager](../defender-endpoint/configure-endpoints-sccm.md)<br/>- [VDI scripts](../defender-endpoint/configure-endpoints-vdi.md) |
-| **macOS** | - [Local scripts](../defender-endpoint/mac-install-manually.md)<br/>- [Microsoft Endpoint Manager](../defender-endpoint/mac-install-with-intune.md)<br/>- [JAMF Pro](../defender-endpoint/mac-install-with-jamf.md)<br/>- [Mobile Device Management](../defender-endpoint/mac-install-with-other-mdm.md) |
+| **Windows** |- [Local script (up to 10 devices)](../defender-endpoint/configure-endpoints-script.md)<br/>- [Group Policy](../defender-endpoint/configure-endpoints-gp.md)<br/>- [Microsoft Intune / Mobile Device Manager](../defender-endpoint/configure-endpoints-mdm.md)<br/>- [Microsoft Endpoint Configuration Manager](../defender-endpoint/configure-endpoints-sccm.md)<br/>- [VDI scripts](../defender-endpoint/configure-endpoints-vdi.md) |
+| **macOS** | - [Local scripts](../defender-endpoint/mac-install-manually.md)<br/>- [Microsoft Intune](../defender-endpoint/mac-install-with-intune.md)<br/>- [JAMF Pro](../defender-endpoint/mac-install-with-jamf.md)<br/>- [Mobile Device Management](../defender-endpoint/mac-install-with-other-mdm.md) |
 | **iOS** | [App-based](../defender-endpoint/ios-install.md) |
-| **Android** | [Microsoft Endpoint Manager](../defender-endpoint/android-intune.md) |
+| **Android** | [Microsoft Intune](../defender-endpoint/android-intune.md) |
 
 
 
@@ -92,3 +92,4 @@ The following table lists the available tools based on the endpoint that you nee
 Return to the overview for [Evaluate Microsoft Defender for Endpoint](eval-defender-endpoint-overview.md)
 
 Return to the overview for [Evaluate and pilot Microsoft 365 Defender](eval-overview.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

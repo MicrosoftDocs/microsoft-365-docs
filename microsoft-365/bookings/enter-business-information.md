@@ -3,6 +3,7 @@ title: "Enter your Bookings business information"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
+ms.date: 06/18/2020
 audience: Admin
 ms.topic: article
 ms.service: bookings
@@ -31,7 +32,7 @@ The information you provide here will be displayed on the page customers and cli
 
 1. In the navigation pane, select **Your calendar** > **Business information** in the left pane.
 
-1. On the **Basic details** section, enter your business name, address, and phone number you would like to use for your Bookings calendar.
+1. On the **Basic details** section, enter your business name, address, and phone number you would like to use for your booking page.
 
 :::image type="content" source="../media/bookings-business-basic-details.png" alt-text="Screenshot: Page to enter your basic business information":::
 

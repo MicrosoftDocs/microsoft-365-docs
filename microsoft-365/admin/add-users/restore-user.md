@@ -3,8 +3,9 @@ title: "Restore a user"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -36,8 +37,8 @@ Here are a couple of tips:
   
 - Make sure licenses are available to assign to the account.
     
-- If your business uses Active Directory, for instructions on restoring a user account, see [How to troubleshoot deleted user accounts in Office 365](/office365/troubleshoot/active-directory/restore-deleted-user-accounts). 
-    
+- If your business uses Active Directory, for instructions on restoring a user account, see [How to restore deleted user accounts in Microsoft 365, Azure, and Intune](/microsoft-365/troubleshoot/active-directory/restore-deleted-user-accounts).
+
 ## Restore one or more user accounts
 
 You must be a Microsoft 365 global admin or user management admin to do these steps. 

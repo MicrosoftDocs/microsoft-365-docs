@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: loreenl
 author: LoreenLa
 manager: pamgreen
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -28,4 +29,3 @@ Here's a list of Microsoft Cloud Solution Providers in Russia.
     
 - [Softline](https://softline.ru/)
     
-

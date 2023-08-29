@@ -3,7 +3,7 @@ title: "Content delivery networks"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 
+ms.date: 08/10/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
@@ -185,8 +185,6 @@ Although it isn't a part of the Microsoft 365 CDN, you can also use the **Azure 
 ## Can I use CDNs with SharePoint Server on-premises?
 
 Using CDNs only makes sense in a SharePoint Online context and should be avoided with SharePoint Server. This is because all of the advantages around geographic location don't hold true if the server is located on-premises or geographically close anyway. Additionally, if there's a network connection to the servers where it's hosted, then the site may be used without an Internet connection and therefore can't retrieve the CDN files. Otherwise, you should use a CDN if there's one available and stable for the library and files you need for your site.
-  
-Here's a short link you can use to come back: [https://aka.ms/o365cdns](https://aka.ms/o365cdns)
   
 ## See also
 

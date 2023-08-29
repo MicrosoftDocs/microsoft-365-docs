@@ -5,6 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: kvice
 manager: scotv
+ms.date: 09/13/2018
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -80,7 +81,7 @@ See these additional IT scenarios and configurations:
 
 - [Communication compliance offensive language policy](../compliance/communication-compliance-case-study.md)
 
-  Learn how Contoso quickly configured an offensive language policy for Microsoft Teams, Exchange, and Yammer communications.
+  Learn how Contoso quickly configured an offensive language policy for Microsoft Teams, Exchange, and Viva Engage communications.
 
 ## Next step
 

@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: sharik
 author: skjerland
 manager: scotv
+ms.date: 10/08/2018
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -30,20 +31,22 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
-description: "Install Office on an iPhone or an Android phone, and your work files in Office apps will be protected by Microsoft 365 for business."
+description: "Install Microsoft 365 on an iPhone or an Android phone, and your work files in Microsoft 365 apps will be protected by Microsoft 365 for business."
 ---
 
 # Set up mobile devices for Microsoft 365 for business users
 
-Follow the instructions in the tabs to install Office on an iPhone or an Android phone. After you follow these steps, your work files created in Office apps will be protected by Microsoft 365 for business.
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
-The example is for Outlook, but applies for any other Office apps you want to install also.
+Follow the instructions in the tabs to install Microsoft 365 on an iPhone or an Android phone. After you follow these steps, your work files created in Microsoft 365 apps will be protected by Microsoft 365 for business.
+
+The example is for Outlook, but applies for any other Microsoft 365 apps you want to install also.
   
 ## Set up mobile devices
 
 ## [iPhone](#tab/iPhone)
   
-Watch a short video on how to set up Office apps on iOS devices with Microsoft 365 for business.<br><br>
+Watch a short video on how to set up Microsoft 365 apps on iOS devices with Microsoft 365 for business.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWee2n] 
 
@@ -75,7 +78,7 @@ Locate Outlook on the iPhone, and restart it. When prompted, enter a PIN and ver
   
 ## [Android](#tab/Android)
   
-Watch a video about installing Outlook and Office on Android devices.<br><br>
+Watch a video about installing Outlook and Microsoft 365 on Android devices.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/ecc2e9c0-bc7e-4f26-8b14-91d84dbcfef0] 
 

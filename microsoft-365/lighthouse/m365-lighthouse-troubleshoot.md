@@ -5,6 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: crimora
+ms.date: 05/02/2023
 audience: Admin
 ms.topic: troubleshooting
 ms.service: microsoft-365-lighthouse
@@ -27,7 +28,7 @@ This article describes error messages and problems that you might encounter whil
 
 ## Partner onboarding
 
-### Message when trying to access Lighthouse: "Microsoft 365 Lighthouse doesn't support indirect providers at this time, you must be an indirect reseller or direct bill partner to use this service"
+### Message when trying to access Lighthouse: "Microsoft 365 Lighthouse doesn't support indirect providers at this time, you must be an indirect reseller or direct-bill partner to use this service"
 
 **Cause:** You attempted to access Lighthouse as an indirect-bill partner. At this time, Lighthouse supports only indirect resellers and direct-bill partners.
 
@@ -41,9 +42,9 @@ This article describes error messages and problems that you might encounter whil
 
 ### Message when signing in to Lighthouse: "Accept the Partner Amendment"
 
-**Cause:** You attempted to access Lighthouse before a Global admin in the partner tenant has signed the partner amendment.
+**Cause:** You attempted to access Lighthouse before a Global Administrator in the partner tenant has signed the partner amendment.
 
-**Resolution:** A Global admin must sign in to Lighthouse and accept the partner amendment before you can access and work in Lighthouse. If the error persists after a Global admin has signed the amendment, contact Support. For more information, see [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
+**Resolution:** A Global Administrator must sign in to Lighthouse and accept the partner amendment before you can access and work in Lighthouse. If the error persists after a Global Administrator has signed the amendment, contact Support. For more information, see [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
 
 ## Customer tenant onboarding  
 
@@ -53,20 +54,18 @@ This article describes error messages and problems that you might encounter whil
 
 - Must have delegated access set up for the Managed Service Provider (MSP) to be able to manage the customer tenant*
 - Must have at least one Microsoft 365 Business Premium, Microsoft 365 E3, Microsoft 365 E5, Windows 365 Business, or Microsoft Defender for Business license
-- Must have no more than 2500 licensed users 
+- Must have no more than 2500 licensed users
+- Must reside in the same geographic region (Americas, European Union, or Asia plus Australia) as the partner organization that manages them
 
 **Resolution:** The following table describes the different tenant statuses that require action and explains how to resolve them.
 
-Either Granular Delegated Admin Privileges (GDAP) plus an indirect reseller relationship or a Delegated Admin Privileges (DAP) relationship is required to onboard customers to Lighthouse. If DAP and GDAP coexist in a customer tenant, GDAP permissions take precedence for MSP technicians in GDAP-enabled security groups. Coming soon, customers with GDAP-only relationships (without indirect reseller relationships) will be able to onboard to Lighthouse.<br><br>
+Either granular delegated admin privileges (GDAP) plus an indirect reseller relationship or a delegated admin privileges (DAP) relationship is required to onboard customers to Lighthouse. If DAP and GDAP coexist in a customer tenant, GDAP permissions take precedence for MSP technicians in GDAP-enabled security groups. Coming soon, customers with GDAP-only relationships (without indirect reseller relationships) will be able to onboard to Lighthouse.<br><br>
 
 | Status | Description | Resolution |
 |--|--|--|
-| Inactive | The tenant was offboarded at the request of the MSP and is no longer being managed in Lighthouse. | You need to reactivate the tenant. On the **Tenants** page, select the three dots (more actions) next to the tenant that you want to reactivate, and then select **Activate tenant**. It can take 24–48 hours for initial customer data to appear in Lighthouse. |
-| Ineligible - DAP or GDAP is not set up | You don't have DAP or GDAP and indirect reseller admin privileges set up with the tenant, which is required by Lighthouse. | Set up DAP or GDAP and indirect reseller admin privileges in the Microsoft Partner Center. |
-| Ineligible - Required license is missing | The tenant is missing a required license. They need at least one Microsoft 365 Business Premium, Microsoft 365 E3, Microsoft 365 E5, or Microsoft Defender for Business license. | Make sure the tenant has at least one Microsoft 365 Business Premium,  Microsoft 365 E3, Microsoft 365 E5, Windows 365 Business, or Microsoft Defender for Business license assigned. |
-| Ineligible - User count exceeded | The tenant has more than the maximum of 2500 licensed users allowed by Lighthouse. | Verify that the tenant doesn't have more than 2500 licensed users. |
-| Ineligible - Geo check failed | You and your customer don't reside in the same geographic region, which is required by Lighthouse. | Verify that the customer resides in your geographic region. If not, then you can't manage the tenant in Lighthouse. |
-| In process | Lighthouse discovered the tenant but is still in the process of onboarding them. | Allow Lighthouse 48 hours to complete onboarding of the tenant. |
+| Inactive | Your organization has excluded this customer tenant from Lighthouse management. | You need to reactivate the tenant. On the **Tenants** page, select the three dots (more actions) next to the tenant that you want to reactivate, and then select **Activate tenant**. It can take 24–48 hours for initial customer data to appear in Lighthouse. |
+| Limited | This customer tenant has access to only a limited set of experiences in Lighthouse, including GDAP setup and management, user search, user details, tenant tagging, and service health. | Select the tenant name to see a detailed status of Lighthouse management requirements. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md). |
+| In process | An error occurred during the onboarding process for this customer tenant and we're working on a fix. | If this error persists for more than 48 hours, please contact Support. |
 
 If you confirmed that your customer tenant meets the onboarding criteria and they're still not showing as **Active** in Lighthouse, contact Support. For more information, see [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
 
@@ -76,7 +75,7 @@ If you confirmed that your customer tenant meets the onboarding criteria and the
 
 **Cause:** You don't belong to the correct security group in Azure AD, or you haven't been assigned the correct role in Partner Center to be able to access Lighthouse.
 
-**Resolution:** Make sure that an admin from your partner tenant with the appropriate permissions has assigned you to the correct GDAP security group in Azure AD and assigned you the correct role in Partner Center. Also, keep in mind that some actions in Lighthouse require you to be a Global admin. To learn more about the GDAP roles and what each role can do, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). For a detailed description of all Azure AD built-in roles and permissions for GDAP, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
+**Resolution:** Make sure that an admin from your partner tenant with the appropriate permissions has assigned you to the correct GDAP security group in Azure AD and assigned you the correct role in Partner Center. Also, keep in mind that some actions in Lighthouse require you to be a Global Administrator. To learn more about the GDAP roles and what each role can do, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). For a detailed description of all Azure AD built-in roles and permissions for GDAP, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
 
 For customers with DAP relationships, the partner admin will need to assign you to either the Admin agent or Helpdesk agent role in Partner Center. For a detailed description of all Partner Center roles and permissions, see [Assign roles and permissions to users](/partner-center/permissions-overview).
 
@@ -85,6 +84,22 @@ For customers with DAP relationships, the partner admin will need to assign you 
 **Cause:** You have limited GDAP access based on the roles assigned to the Azure AD security group that you're in.
 
 **Resolution:** Make sure that an admin from your partner tenant with the appropriate permissions has assigned you to the correct GDAP security group in Azure AD. Also, keep in mind that some actions in Lighthouse require you to be a Global admin. To learn more about the GDAP roles and what each role can do, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). For a detailed description of all Azure AD built-in roles and permissions for GDAP, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
+
+## GDAP setup and management
+
+### Message when running GDAP Setup: "Failed to Create Relationship"
+
+**Cause:** You don't have the required roles to set up GDAP in Lighthouse, or settings in the partner or customer tenants are preventing you from completing GDAP setup.
+
+**Resolution:** Make sure you have the required roles to run GDAP Setup, including Global Administrator (assigned in Azure AD) and Admin agent (assigned in Partner Center). Also, make sure your account meets security requirements to run GDAP Setup, including making sure you're not a Risky User and that you have multifactor authentication (MFA) set up. To check for and remediate risks in your account, see [Remediate risks and unblock users](/azure/active-directory/identity-protection/howto-identity-protection-remediate-unblock). For instructions on how to mandate MFA, see [Mandating MFA for your partner tenant](/partner-center/partner-security-requirements-mandating-mfa).
+
+You should also make sure Conditional Access policies configured in the customer tenants aren't blocking your ability to establish a GDAP relationship with them. For step-by-step guidance on how to confirm this, see [What is the recommended next step if the conditional access policy set by the customer blocks all external access?](/partner-center/gdap-bulk-migration-tool-faq#what-is-the-recommended-next-step-if-the-conditional-access-policy-set-by-the-customer-blocks-all-external-access-including-csps-access-aobo-to-the-customers-tenant).
+
+### Security groups aren't assigned to GDAP relationships after running GDAP Setup
+
+**Cause:** You didn't complete all steps of GDAP Setup, or the GDAP relationship created by GDAP Setup still requires customer approval.
+
+**Resolution:** You must complete each step of GDAP Setup in order for all settings to apply, and make sure you select **Finish** when done. On the last page of GDAP Setup, customers with an *Active* status will have security groups assigned. If you don't have consent to administer services for any of your customers, you'll need to send them an admin relationship request. Once they approve the request, re-run GDAP Setup to assign the security groups to the GDAP relationship created for those customers.
 
 ## Customer tenant management  
 
@@ -129,6 +144,44 @@ For customers with DAP relationships, the partner admin will need to assign you 
 **Resolution:** When a tenant device is added, allow 4 hours for the device data to appear in Lighthouse.
 
 If data is still not appearing on the Device compliance and Threat management pages after following the resolution instructions, contact Support. For more information, see [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
+
+## Sales Advisor
+
+### Message when viewing the Sales Advisor Opportunities page in Lighthouse: "You don't have permission to view the information on this page"
+
+**Cause:** You don't have the correct permissions in Partner Center to view the Sales Advisor pages in Lighthouse.
+
+**Resolution:** Verify that you have either the Report viewer or Executive report viewer role for one or more Microsoft Cloud Partner Program locations in Partner Center. Only someone with the Global admin role in Partner Center can assign these roles. For more information, see [Get access to Sales Advisor within Microsoft 365 Lighthouse](m365-lighthouse-get-access-to-sales-advisor.md).
+
+### Message when viewing the Sales Advisor Opportunities page in Lighthouse: "There are no opportunities"
+
+**Cause 1:** Sales Advisor's propensity model may not be generating new recommendations for your customers. This means that there are currently no opportunities for you to view or act on.
+
+**Resolution:** Check back in two weeks to see if any new recommendations have been generated.
+
+**Cause 2:** There's a technical problem on our backend that's preventing opportunities from being displayed.
+
+**Resolution:** Open a service request by following the instructions in [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md). To create a Lighthouse service request, make sure you have a partner tenant role and at least one Azure AD role assigned to you with the following property set: **microsoft.office365.supportTickets/allEntities/allTasks**. For a complete list of Azure AD roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
+
+### Message when trying to access Lighthouse from the Partner Insights tab of Sales advisor: "You must be an indirect reseller or direct-bill partner to use this service" or I'm redirected to the Lighthouse Home page but can't sign in
+
+**Cause 1:** Microsoft 365 Lighthouse hasn't been deployed in your partner tenant yet.
+
+**Resolution:** Work with a Global Administrator in your partner tenant to deploy Lighthouse. For more information, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
+
+**Cause 2:** Your organization has multiple partner tenants and you attempted to access Lighthouse using credentials for a partner tenant that hasn't yet deployed Lighthouse.
+
+**Resolution:** Use the same Azure AD credentials that you used to sign in to Partner Center to access Lighthouse. If you're unsure, reach out to a Global Administrator in your partner tenant to confirm which partner tenants have deployed Lighthouse. If needed, have them deploy Lighthouse to the partner tenant that you're trying to use. For more information, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md). 
+
+**Cause 3:** You attempted to access Lighthouse from a partner tenant that isn't qualified to use Lighthouse. At this time, Lighthouse supports only indirect resellers and direct-bill partners.
+
+**Resolution:** For a complete list of qualifications and requirements, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md). If you're not an indirect provider and believe you received this message in error, contact Support. For more information, see [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md).
+
+### Data or opportunities displayed on Sales Advisor pages seem inaccurate
+
+**Cause:** If you see an opportunity with a customer that you don't recognize, you may have incomplete or incorrect information regarding the partner relationship that your organization has with that customer.
+
+**Resolution:** Open a service request by following the instructions in [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md). To create a Lighthouse service request, make sure you have a partner tenant role and at least one Azure AD role assigned to you with the following property set: **microsoft.office365.supportTickets/allEntities/allTasks**. For a complete list of Azure AD roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
 
 ## Related content
 

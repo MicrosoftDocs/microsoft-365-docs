@@ -3,6 +3,7 @@ title: "Manage Folders and Rules feature in Microsoft 365 Groups"
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
+ms.date: 08/18/2022
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -35,6 +36,8 @@ Admin can enable the feature with the help of cmdlet `Set-OrganizationConfig -Is
 
    Default Value: false
 
+   Regardless of whether the `IsGroupFoldersAndRulesEnabled` parameter is turned off, the **Inbox** and **Deleted items** folders will still be shown, if there are any deleted items in the group.
+
 > [!NOTE]
 > Once the `IsGroupFoldersAndRulesEnabled` parameter is turned off after creating some folder and rules,
   > 
@@ -64,7 +67,7 @@ Admin can enable the member permission to the tenant using the cmdlet `IsGroupMe
 
    Default value: false
 
-Once this is enabled, Group owners can provide group members with the ability to create folders, rename folders, copy, move and delete messages. Group level member permission is handled by Group owners.
+Once this is enabled, group owners can provide group members with the ability to create folders, rename folders, copy, move, and delete messages by navigating to the group from Outlook > **Settings** > **Edit Group** > and selecting the option **All members will be able to create, edit, move, copy, and delete mail folders and rules within the group**. Group level member permission is handled by group owners.
 
 > [!NOTE]
 > Admins can see the current value of the settings using `Get-OrganizationConfig` cmdlet.

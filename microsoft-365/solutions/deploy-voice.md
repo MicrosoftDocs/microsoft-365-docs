@@ -3,6 +3,7 @@ title: Deploy voice in Microsoft 365
 ms.author: crowe
 author: CarolynRowe
 manager: serdars
+ms.date: 11/16/2020
 ms.audience: ITPro
 ms.topic: article
 ms.service: msteams

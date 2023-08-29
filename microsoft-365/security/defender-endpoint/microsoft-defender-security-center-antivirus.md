@@ -1,12 +1,7 @@
 ---
 title: Microsoft Defender Antivirus in the Windows Security app
 description: With Microsoft Defender Antivirus now included in the Windows Security app, you can review, compare, and perform common tasks.
-keywords: wdav, antivirus, firewall, security, windows, microsoft defender antivirus
-search.product: eADQiWindows 10XVcnh
 ms.service: microsoft-365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 ms.topic: conceptual
 author: denisebmsft
@@ -19,6 +14,7 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
+ms.date: 08/28/2023
 ---
 
 # Microsoft Defender Antivirus in the Windows Security app
@@ -27,29 +23,20 @@ search.appverid: met150
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-In Windows 10, version 1703 and later, the Windows Defender app is part of the Windows Security.
-
-Settings that were previously part of the Windows Defender client and main Windows Settings have been combined and moved to the new app, which is installed by default as part of Windows 10, version 1703.
+Beginning with Windows 10, version 1703 and later, Microsoft Defender Antivirus settings are viewable in the Windows Security app. See [Windows Security](/windows/security/operating-system-security/system-security/windows-defender-security-center/windows-defender-security-center) for more information about security features and settings that are built into Windows.
 
 > [!IMPORTANT]
-> Disabling the Windows Security app service does not disable Microsoft Defender Antivirus or [Windows Defender Firewall](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security). These are disabled automatically when a third-party antivirus or firewall product is installed and kept up to date.
-> If you do disable the Windows Security app service, or configure its associated Group Policy settings to prevent it from starting or running, the Windows Security app might display stale or inaccurate information about any antivirus or firewall products you have installed on the device.
-> It might also prevent Microsoft Defender Antivirus from enabling itself if you have an old or outdated third-party antivirus, or if you uninstall any third-party antivirus products you might have previously installed.
-> This will significantly lower the protection of your device and could lead to malware infection.
-
-See the [Windows Security article](/windows/threat-protection/windows-defender-security-center/windows-defender-security-center) for more information on other Windows security features that can be monitored in the app.
-
-The Windows Security app is a client interface on Windows 10, version 1703 and later. It is not the Microsoft 365 Defender web portal that is used to review and manage [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint).
+> Disabling the Windows Security app does not disable Microsoft Defender Antivirus or [Windows Defender Firewall](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security). These capabilities are disabled or set to passive mode when non-Microsoft antivirus/antimalware software is installed on the device and kept up to date.
+> If you do disable the Windows Security app, or configure its associated Group Policy settings to prevent it from starting or running, the Windows Security app might display stale or inaccurate information about any antivirus or firewall products that are installed on the device.It might also prevent Microsoft Defender Antivirus from re-enabling when you uninstall any non-Microsoft antivirus/antimalware software.
+> Disabling the Windows Security app can significantly lower the level protection of your device and could lead to malware infection.
 
 ## Review virus and threat protection settings in the Windows Security app
 
-:::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Virus and threat protection settings in Windows Security app" lightbox="../../media/wdav-protection-settings-wdsc.png":::
+1. Open the Windows Security app by searching the start menu for **Windows Security**.
 
-1. Open the Windows Security app by clicking the shield icon in the task bar or searching the start menu for **Windows Security**.
+2. Select **Virus & threat protection**.
 
-2. Select the **Virus & threat protection** tile (or the shield icon on the left menu bar).
-
-The following sections describe how to perform some of the most common tasks when reviewing or interacting with the threat protection provided by Microsoft Defender Antivirus in the Windows Security app.
+3. Use one or more of the subsequent sections to perform tasks using the Windows Security app.
 
 > [!NOTE]
 > If these settings are configured and deployed using Group Policy, the settings described in this section will be greyed-out and unavailable for use on individual endpoints. Changes made through a Group Policy Object must first be deployed to individual endpoints before the setting will be updated in Windows Settings. The [Configure end-user interaction with Microsoft Defender Antivirus](configure-end-user-interaction-microsoft-defender-antivirus.md) topic describes how local policy override settings can be configured.
@@ -137,3 +124,5 @@ To learn more, see the following resources:
 ## See also
 
 - [Microsoft Defender Antivirus](microsoft-defender-antivirus-in-windows-10.md)
+
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

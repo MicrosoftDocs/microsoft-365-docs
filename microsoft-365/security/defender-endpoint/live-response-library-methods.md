@@ -20,6 +20,7 @@ ms.collection:
 - tier3
 ms.topic: reference
 ms.subservice: mde
+ms.date: 06/03/2021
 ---
 
 #  Live response library methods and properties
@@ -51,3 +52,4 @@ ms.subservice: mde
 |--------------|----------------------------------|--------------------------------------------------------|
 | Commands     | Live Response command collection | Array of Command objects. See [live response commands](live-response.md#live-response-commands). |
 
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

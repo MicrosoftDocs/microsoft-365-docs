@@ -5,6 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: katmartin
+ms.date: 06/21/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -23,14 +24,14 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # Overview of the Windows 365 (Cloud PCs) page in Microsoft 365 Lighthouse  
   
-Windows 365 is a cloud-based service that lets Microsoft Endpoint Manager (MEM) admins provision and manage Cloud PCs for their users who have a Windows 365 license. Windows 365 is fully integrated with MEM for device management, and with Microsoft 365 Lighthouse for partner management of Cloud PCs across all their customer tenants.
+Windows 365 is a cloud-based service that lets Microsoft Intune admins provision and manage Cloud PCs for their users who have a Windows 365 license. Windows 365 is fully integrated with Intune for device management, and with Microsoft 365 Lighthouse for Managed Service Provider (MSP) management of Cloud PCs across all their customer tenants.
 
 For more information about Windows 365, see [What is Windows 365?](/windows-365/overview) For a list of Windows 365 requirements, see [Requirements for Windows 365](/windows-365/enterprise/requirements).
 
 > [!IMPORTANT]
-> You must go to [MEM](https://go.microsoft.com/fwlink/p/?linkid=2150463) to provision Cloud PCs for each customer tenant before you can manage them in Lighthouse. You can't provision from within Lighthouse.
+> You must go to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/p/?linkid=2150463) to provision Cloud PCs for each customer tenant before you can manage them in Lighthouse. You can't provision from within Lighthouse.
 
-Once you've provisioned Cloud PCs for your customer tenant, the Windows 365 card on the Microsoft 365 Home page provides a brief alert on the Cloud PCs in need of action, such as the number of Cloud PCs that failed to provision and Azure network connection failures. To get a detailed status, select the button on the Windows 365 card (or select **Devices** > **Windows 365** in the left navigation pane) to open the Windows 365 page. From this page, you can get a status overview of the Cloud PCs assigned to your customer tenants, view a list of all the Cloud PCs you manage and the tenants they're assigned to, and view the Azure network connections between your customer tenants and Azure Active Directory (Azure AD) and their status.
+Once you've provisioned Cloud PCs for your customer tenant, the Windows 365 card on the Microsoft 365 Lighthouse Home page provides a brief alert on the Cloud PCs in need of action, such as the number of Cloud PCs that failed to provision and Azure network connection failures. To get a detailed status, select the button on the Windows 365 card (or select **Devices** > **Windows 365** in the left navigation pane in Lighthouse) to open the Windows 365 page. From this page, you can get a status overview of the Cloud PCs assigned to your customer tenants, view a list of all the Cloud PCs you manage and the tenants they're assigned to, and view the Azure network connections between your customer tenants and Azure Active Directory (Azure AD) and their status.
 
 ## Overview tab
 
@@ -46,7 +47,7 @@ The Overview tab also includes the following options:
 - **Export:** Select to export Cloud PC data to an Excel comma-separated values (.csv) file.
 - **Search:** Enter keywords to quickly locate a specific Cloud PC in the list.
 
-:::image type="content" source="../media/m365-lighthouse-win365-page-overview/win365-overview-tab.png" alt-text="Screenshot of the Windows 365 Overview tab." lightbox="../media/m365-lighthouse-win365-page-overview/win365-overview-tab.png":::
+:::image type="content" source="../media/m365-lighthouse-win365-page-overview/win365-overview-tab.png" alt-text="Screenshot of the Overview tab on the Windows 365 page." lightbox="../media/m365-lighthouse-win365-page-overview/win365-overview-tab.png":::
 
 ## All Cloud PCs tab
 
@@ -66,7 +67,7 @@ To see which tenants have Cloud PCs with a specific provisioning status, select 
 
 Select any Cloud PC in the list to view more details and execute management actions such as:
 - **Restart:** Select to reboot the device. 
-- **Reprovision:** Select to reset the device. You can also view the provisioning policy in the Microsoft Endpoint Manager link.
+- **Reprovision:** Select to reset the device. You can also view the provisioning policy in the Microsoft Intune link.
 - **Rename:** Select to rename the device assigned to a user.
 - **Change account type:** Select the account type for the user: Standard user (recommended) or Local administrator.
 
@@ -78,7 +79,7 @@ The All Cloud PCs tab also includes the following options:
 
 To see a complete list of Cloud PC provisioning statuses and what they mean, see [Device management overview for Cloud PCs](/windows-365/enterprise/device-management-overview#column-details) in the Windows 365 documentation library.
 
-:::image type="content" source="../media/m365-lighthouse-win365-page-overview/all-cloud-pcs-tab.png" alt-text="Screenshot of the Windows 365 All Cloud PCs tab." lightbox="../media/m365-lighthouse-win365-page-overview/all-cloud-pcs-tab.png":::
+:::image type="content" source="../media/m365-lighthouse-win365-page-overview/all-cloud-pcs-tab.png" alt-text="Screenshot of the All Cloud PCs tab on the Windows 365 page." lightbox="../media/m365-lighthouse-win365-page-overview/all-cloud-pcs-tab.png":::
 
 ## Azure network connections tab
 
@@ -96,7 +97,7 @@ The Azure network connections tab also includes the following options:
 - **Refresh:** Select to retrieve the most current connection data.
 - **Search:** Enter keywords to quickly locate a specific connection.
 
-:::image type="content" source="../media/m365-lighthouse-win365-page-overview/azure-network-connections-tab.png" alt-text="Screenshot of the Azure network connections tab." lightbox="../media/m365-lighthouse-win365-page-overview/azure-network-connections-tab.png":::
+:::image type="content" source="../media/m365-lighthouse-win365-page-overview/azure-network-connections-tab.png" alt-text="Screenshot of the Azure network connections tab on the Windows 365 page." lightbox="../media/m365-lighthouse-win365-page-overview/azure-network-connections-tab.png":::
 
 ## Related content
 

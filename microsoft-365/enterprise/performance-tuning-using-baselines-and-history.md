@@ -2,8 +2,8 @@
 title: "Office 365 performance tuning using baselines and performance history"
 ms.author: tracyp
 author: MSFTTracyP
-manager: scotv
-ms.date: 07/08/2021
+manager: dansimp
+ms.date: 08/15/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise

@@ -1,7 +1,7 @@
 ---
 title: How to prioritize and manage Automated Investigations and Response (AIR).
 description: How to steps to analyze and approve AIR actions directly from the Action Center. When alerts are triggered, Automated Investigation and Response (AIR) determines the scope of impact of a threat in your organization and provided recommended remediation actions.
-search.product: 
+search.product:
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -20,6 +20,7 @@ ms.collection:
 ms.topic: how-to
 ms.subservice: mdo
 search.appverid: met150
+ms.date: 1/31/2023
 ---
 
 # Prioritize and manage Automated Investigations and Response (AIR)
@@ -40,7 +41,7 @@ As automated investigations on *Email & collaboration* content results in verdic
 ## What you'll need
 
 - Microsoft Defender for Office 365 Plan 2 or higher (Included with E5)
-- Sufficient permissions (Security reader, security operations, or security administrator, plus [Search and purge](../permissions-microsoft-365-security-center.md) role)
+- Sufficient permissions (Security reader, security operations, or security administrator, plus [Search and purge](../mdo-portal-permissions.md) role)
 
 ## Steps to analyze and approve AIR actions directly from the Action Center
 

@@ -20,6 +20,7 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: conceptual
+ms.date: 02/16/2021
 ---
 
 # Handle advanced hunting errors
@@ -50,3 +51,4 @@ Advanced hunting displays errors to notify for syntax mistakes and whenever quer
 - [Quotas and usage parameters](advanced-hunting-limits.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Kusto Query Language overview](/azure/data-explorer/kusto/query/)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

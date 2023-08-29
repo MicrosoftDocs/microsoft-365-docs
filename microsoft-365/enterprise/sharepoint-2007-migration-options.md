@@ -2,7 +2,7 @@
 title: "SharePoint 2007 migration options to consider"
 ms.author: tracyp
 author: MSFTTracyP
-manager: scotv
+manager: dansimp
 ms.date: 1/31/2018
 audience: ITPro
 ms.topic: conceptual

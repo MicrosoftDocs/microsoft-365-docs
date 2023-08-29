@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms.date: 02/19/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -107,12 +108,12 @@ Learn how to handle access requests with [Set up and manage access requests](htt
   
 ## Next steps
 
-You must set up Office apps on your devices so you can edit files that are stored on your team site from your tablet or phone. If you don't install the Office apps for your tablet or phone, you'll be able to view the files on your team site, but not edit them. 
+You must set up Microsoft 365 apps on your devices so you can edit files that are stored on your team site from your tablet or phone. If you don't install the Microsoft 365 apps for your tablet or phone, you'll be able to view the files on your team site, but not edit them. 
     
-  - [Install and set up Office on an Android with Microsoft 365](https://support.microsoft.com/office/cafe9d6f-8b0c-4b03-b20a-12438a82a22d)
+  - [Install and set up Microsoft 365 on an Android](https://support.microsoft.com/office/cafe9d6f-8b0c-4b03-b20a-12438a82a22d)
     
-  - [Install and set up Office on an iPhone or iPad with Microsoft 365](https://support.microsoft.com/office/9df6d10c-7281-4671-8666-6ca8e339b628)
+  - [Install and set up Microsoft 365 on an iPhone or iPad](https://support.microsoft.com/office/9df6d10c-7281-4671-8666-6ca8e339b628)
     
-  - [Set up Office on Windows Phone with Microsoft 365](https://support.microsoft.com/office/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7)
+  - [Set up Microsoft 365 apps and email on a mobile device](https://support.microsoft.com/office/set-up-office-apps-and-email-on-a-mobile-device-7dabb6cb-0046-40b6-81fe-767e0b1f014f)
     
-- [Learn more about using OneDrive](https://go.microsoft.com/fwlink/?LinkID=511458).
+  - [Learn more about using OneDrive](https://go.microsoft.com/fwlink/?LinkID=511458).

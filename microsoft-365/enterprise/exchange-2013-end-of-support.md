@@ -3,6 +3,7 @@ title: "Exchange 2013 end of support roadmap"
 ms.author: jhendr
 author: JoanneHendrickson
 manager: serdars
+ms.date: 08/10/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
@@ -195,5 +196,3 @@ If you run into problems during your migration to Microsoft 365 and you aren't u
 
 - [Technical community](https://social.technet.microsoft.com/Forums/office/home?category=exchangeserver)
 - [Customer support](https://support.microsoft.com/gp/support-options-for-business)
-
-

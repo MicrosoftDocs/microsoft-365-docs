@@ -1,6 +1,7 @@
 ---
 title: "Manage guest access in Microsoft 365 groups"
 ms.reviewer: arvaradh
+ms.date: 02/18/2020
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -15,10 +16,11 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
-ms.custom: 
-- AdminSurgePortfolio
-- AdminTemplateSet
-- admindeeplinkMAC
+ms.custom:
+  - AdminSurgePortfolio
+  - AdminTemplateSet
+  - admindeeplinkMAC
+  - has-azure-ad-ps-ref
 search.appverid:
 - MET150
 - MOE150
@@ -35,8 +37,8 @@ When it's turned on, group members can invite guests to a Microsoft 365 group th
 Once approved, the guest is added to the directory and the group.
 
 > [!Note]
-> Yammer Enterprise networks that are in Native Mode or the [EU Geo](/yammer/manage-security-and-compliance/manage-data-compliance) do not support network guests.
-> Microsoft 365 Connected Yammer groups do not currently support guest access, but you can create non-connected, external groups in your Yammer network. See [Create and manage external groups in Yammer](/yammer/work-with-external-users/create-and-manage-external-groups) for instructions.
+> Viva Engage Enterprise networks that are in Native Mode or the [EU Geo](/viva/engage/manage-security-and-compliance/manage-data-compliance) do not support network guests.
+> Microsoft 365 Connected Viva Engage groups do not currently support guest access, but you can create non-connected, external groups in your Viva Engage network. See [Create and manage external groups in Viva Engage](/viva/engage/work-with-external-users/create-and-manage-external-groups) for instructions.
 
 Guest access in groups is often used as part of a broader scenario that includes SharePoint or Teams. These services have their own guest sharing settings. For complete instructions for setting up guest sharing across groups, SharePoint, and Teams, see:
 

@@ -11,6 +11,7 @@ ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
+ms.date: 01/28/2021
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
@@ -22,3 +23,4 @@ ms.topic: article
 > - api-us.securitycenter.microsoft.com
 > - api-eu.securitycenter.microsoft.com
 > - api-uk.securitycenter.microsoft.com
+> - api-au.securitycenter.microsoft.com

@@ -14,10 +14,12 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
-ms.topic: conceptual
+- must-keep
+ms.topic: reference
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Get machine logon users API
@@ -78,13 +80,13 @@ Empty
 
 ## Response
 
-If successful and device exists - 200 OK with list of [user](user.md) entities in the body. If device was not found - 404 Not Found.
+If successful and device exists - 200 OK with list of [user](user.md) entities in the body. If device wasn't found - 404 Not Found.
 
 ## Example
 
 ### Request
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/logonusers
@@ -92,7 +94,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c29
 
 ### Response
 
-Here is an example of the response.
+Here's an example of the response.
 
 ```http
 HTTP/1.1 200 OK
@@ -114,3 +116,4 @@ Content-type: application/json
     ]
 }
 ```
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

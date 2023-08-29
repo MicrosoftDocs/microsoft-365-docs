@@ -3,8 +3,9 @@ title: "Step 4 - Forward a former employee's email to another employee or conver
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
+ms.date: 03/17/2021
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -54,6 +55,9 @@ Follow these steps to [convert the user's mailbox to a shared mailbox](../email/
 4. Turn on **Forward all email sent to this mailbox**. In the **Forwarding address** box, type the email address of the current employee who's going to get the email.
 5. Select **Save**.
 6. Remember, don't delete the former employee's account.
+
+> [!IMPORTANT]
+> In scenarios where the mailbox is inactive due to compliance reasons, mail forwarding or converting the mailbox to a shared mailbox would not work.
 
 ### Cancel Outlook meetings
 

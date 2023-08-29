@@ -3,6 +3,7 @@ title: "Connect to Microsoft 365 with PowerShell"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
+ms.date: 06/30/2023
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -12,10 +13,11 @@ ms.collection:
 - Ent_O365
 f1.keywords:
 - CSH
-ms.custom: 
-- LIL_Placement
-- O365ITProTrain
-- Ent_Office_Other
+ms.custom:
+  - LIL_Placement
+  - O365ITProTrain
+  - Ent_Office_Other
+  - has-azure-ad-ps-ref
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: "Connect to your Microsoft 365 tenant by using PowerShell for Microsoft 365 to do admin center tasks from the command line."
 ---
@@ -139,12 +141,13 @@ These steps are required only one time on your computer. But you'll likely need 
   
 1.  If you're not running Windows 10, install the 32-bit version of the Microsoft Online Services Sign-in Assistant: [Microsoft Online Services Sign-in Assistant for IT Professionals RTW](https://download.microsoft.com/download/7/1/E/71EF1D05-A42C-4A1F-8162-96494B5E615C/msoidcli_32bit.msi).
     
-2. Follow these steps to install the Microsoft Azure Active Directory Module for Windows PowerShell:
+2. Follow these steps to install and import the Microsoft Azure Active Directory Module for Windows PowerShell:
     
    1. Open an elevated Windows PowerShell command prompt (run Windows PowerShell as an administrator).
    1.  Run the **Install-Module MSOnline** command.
    1. If you're prompted to install the NuGet provider, type **Y** and press Enter.
    1. If you're prompted to install the module from PSGallery, type **Y** and press Enter.
+   1. Run the **Import-Module MSOnline** command to import the module.
     
 ### Step 2: Connect to Azure AD for your Microsoft 365 subscription
 

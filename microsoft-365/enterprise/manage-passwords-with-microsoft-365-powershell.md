@@ -3,6 +3,7 @@ title: "Manage passwords with PowerShell"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
+ms.date: 11/12/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -14,10 +15,11 @@ ms.collection:
 - Ent_O365
 f1.keywords:
 - CSH
-ms.custom: 
-- PowerShell
-- Ent_Office_Other
-- O365ITProTrain
+ms.custom:
+  - PowerShell
+  - Ent_Office_Other
+  - O365ITProTrain
+  - has-azure-ad-ps-ref
 description: "Learn how to use PowerShell to manage passwords."
 ---
 
@@ -97,4 +99,3 @@ Set-MsolUserPassword -UserPrincipalName $userUPN -ForceChangePassword $true
 [Manage Microsoft 365 with PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [Getting started with PowerShell for Microsoft 365](getting-started-with-microsoft-365-powershell.md)
-

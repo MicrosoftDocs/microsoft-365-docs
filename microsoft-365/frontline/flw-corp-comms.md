@@ -2,10 +2,10 @@
 title: Corporate communications with frontline workers
 description: Learn how you can use Viva Connections and Viva Engage to connect your frontline team to your broader organization.
 ms.topic: conceptual
-author: daisyfeller
-ms.author: daisyfeller
+author: lana-chin
+ms.author: v-chinlana
+manager: serdars
 audience: admin
-manager: pamgreen
 f1.keywords:
 - NOCSH
 ms.service: microsoft-365-frontline
@@ -50,7 +50,7 @@ With Microsoft Teams, Viva Connections, and SharePoint, you can enable these sce
 
 ## Connect across your organization with Viva Engage
 
-Engage with communities in Viva Engage, which brings the power of Yammer into Teams. Communities in Viva Engage serve the needs of knowledge-sharing, employee experience, company-wide communications, and leadership engagement by providing a central place for your conversations, files, events, and updates. Associates can raise issues, provide feedback, and ask and answer questions in Viva Engage Communities. Hold live events and town halls to keep everyone in your organization in the loop.
+Engage with communities in Viva Engage, which brings the power of Viva Engage into Teams. Communities in Viva Engage serve the needs of knowledge-sharing, employee experience, company-wide communications, and leadership engagement by providing a central place for your conversations, files, events, and updates. Associates can raise issues, provide feedback, and ask and answer questions in Viva Engage Communities. Hold live events and town halls to keep everyone in your organization in the loop.
 
 You can create communities for individual locations, identity or interest groups, or work groups such as nurses and financial advisors.
 
@@ -64,3 +64,4 @@ More information about Viva Engage:
 ## Connect over email with Exchange Online and Outlook
 
 Email is a core communication tool for most workplaces. [Set up email with Exchange Online](flw-setup-microsoft-365.md#set-up-email-with-exchange-online) and create mailboxes for your frontline workers and managers so you can send broadcast communications over email. Users must have an F3 license to have an email mailbox.
+

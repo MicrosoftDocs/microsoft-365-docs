@@ -9,6 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: high
+ms.date: 08/10/2023
 ms.collection:
 - Tier2
 - scotvorg
@@ -25,14 +26,14 @@ description: "A **Mailbox couldn't be found for** error means the account you us
 
 # Getting a mailbox not found error in Outlook on the web?
 
-If you're using Outlook on the web and you get a  **Mailbox couldn't be found for**  error, the account that you used to connect to Outlook on the web doesn't have an Exchange Online license and therefore, no mailbox is associated with the account. 
+If you're using Outlook on the web and you get a  **Mailbox couldn't be found for**  error, the account that you used to connect to Outlook on the web doesn't have an Exchange Online license and therefore, no mailbox is associated with the account.
 
 ## Assign a license to your account
 
 Your admin can assign a license to your account by following these steps:
 
-1. Open the  [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home#/homepage)  and go to  **Active users**  under the  **Users**  section, and select the user who is seeing the error.
-1. In the user page that opens, go to the  **Licenses and Apps**  section, select the appropriate  **Location**  value, and assign a license that contains Exchange Online (expand the license to see its details). 
+1. Open the  [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home#/homepage). In the left nav pane, in the **Users**  section, select **Active users**, and then select the user who is seeing the error.
+1. In the user page that opens, go to the  **Licenses and Apps**  section, select the appropriate  **Location**  value, and assign a license that contains Exchange Online (expand **Apps** to see its details).
 1. When you're finished, click  **Save changes**.
 
 ## Related content

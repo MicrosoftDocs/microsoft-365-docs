@@ -1,10 +1,11 @@
 ---
-title: "Install Office applications"
+title: "Install Microsoft 365 apps"
 f1.keywords:
 - NOCSH
 ms.author: efrene
 author: efrene
 manager: scotv
+ms.date: 06/21/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -28,32 +29,34 @@ ms.custom:
 - okr_smb
 - AdminTemplateSet
 - adminvideo
-description: "Now that you've set up Microsoft 365, learn how to install individual Office applications on your Mac, PC, or mobile devices."
+description: "Now that you've set up Microsoft 365, learn how to install individual Microsoft 365 apps on your Mac, PC, or mobile devices."
 ---
 
-# Install Office applications
+# Install Microsoft 365 apps
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
 Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
-Now that you've set up Microsoft 365, you can install individual Office applications on your Mac, PC, or mobile devices.
+Now that you've set up Microsoft 365, you can install individual Microsoft 365 apps on your Mac, PC, or mobile devices.
   
-## Watch: Install Office apps
+## Watch: Install Microsoft 365 apps
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/acce002c-0756-4b64-ac5d-2198ee96a9b1?autoplay=false]
 
-Microsoft Office apps can be found on your  **Start** menu. If you don't see them, you can install them yourself.
+Microsoft 365 apps can be found on your  **Start** menu. If you don't see them, you can install them yourself.
 
-1. Go to office.com. You might need to sign in with your work account.
-2. Select  **Install Office**  >  **Microsoft 365 apps**  >  **Run** , and then select  **Yes**.
-3. The Office apps are installed. The process may take several minutes. When it completes, select  **Close**.
-4. To install Microsoft Teams, go to the office.com page, and choose  **Teams**.
-5. Get the Windows app, and then select  **Run**. Teams displays a prompt when installation is complete.
+1. Go to microsoft365.com. You might need to sign in with your work account.
+2. Select  **Install apps**, then select **Microsoft 365 apps**. 
+1. Open the file that is downloaded to your **Downloads** folder. 
+1. On the **Do you want to allow this app to make changes to your device** page, select **Yes** to begin installation.
+1. The Microsoft 365 apps are installed. The process may take several minutes. When it completes, select  **Close**.
 
 ## Next steps
 
 Follow these links for information on how to:
   
-- Install Office applications:  [Install Office on your PC or Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
+- Install Microsoft 365:  [Download and install or reinstall Microsoft 365 or Office 2021 on a PC or Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
 
 - Install other apps: [Project](https://support.microsoft.com/office/install-project-7059249b-d9fe-4d61-ab96-5c5bf435f281), [Visio](https://support.microsoft.com/office/install-visio-f98f21e3-aa02-4827-9167-ddab5b025710), or [Skype for Business](https://support.microsoft.com/office/install-skype-for-business-8a0d4da8-9d58-44f9-9759-5c8f340cb3fb)
 

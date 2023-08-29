@@ -1,7 +1,7 @@
 ---
-title: Onboarding using Microsoft Endpoint Configuration Manager
-description: Learn how to onboard to Microsoft Defender for Endpoint using Microsoft Endpoint Configuration Manager
-keywords: onboarding, configuration, deploy, deployment, endpoint configuration manager, Microsoft Defender for Endpoint, collection creation, endpoint detection response, next generation protection, attack surface reduction, microsoft endpoint configuration manager
+title: Onboarding using Microsoft Configuration Manager
+description: Learn how to onboard to Microsoft Defender for Endpoint using Microsoft Configuration Manager
+keywords: onboarding, configuration, deploy, deployment, configuration manager, Microsoft Defender for Endpoint, collection creation, endpoint detection response, next generation protection, attack surface reduction, microsoft configuration manager
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -21,19 +21,22 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
-# Onboarding using Microsoft Endpoint Configuration Manager
+# Onboarding using Microsoft Configuration Manager
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-This article is part of the Deployment guide and acts as an example onboarding method.
+This article acts as an example onboarding method.
 
 In the [Planning](deployment-strategy.md) topic, there were several methods provided to onboard devices to the service. This topic covers the co-management architecture.
 
@@ -47,69 +50,69 @@ This topic guides users in:
 - Step 1: Onboarding Windows devices to the service
 - Step 2: Configuring Defender for Endpoint capabilities
 
-This onboarding guidance will walk you through the following basic steps that you need to take when using Microsoft Endpoint Configuration Manager:
+This onboarding guidance will walk you through the following basic steps that you need to take when using Microsoft Configuration Manager:
 
-- **Creating a collection in Microsoft Endpoint Configuration Manager**
-- **Configuring Microsoft Defender for Endpoint capabilities using Microsoft Endpoint Configuration Manager**
+- **Creating a collection in Microsoft Configuration Manager**
+- **Configuring Microsoft Defender for Endpoint capabilities using Microsoft Configuration Manager**
 
 > [!NOTE]
 > Only Windows devices are covered in this example deployment.
 
-## Step 1: Onboard Windows devices using Microsoft Endpoint Configuration Manager
+## Step 1: Onboard Windows devices using Microsoft Configuration Manager
 
 ### Collection creation
 
-To onboard Windows devices with Microsoft Endpoint Configuration Manager, the deployment can target an existing collection or a new collection can be created for testing.
+To onboard Windows devices with Microsoft Configuration Manager, the deployment can target an existing collection or a new collection can be created for testing.
 
 Onboarding using tools such as Group policy or manual method does not install any agent on the system.
 
-Within the Microsoft Endpoint Configuration Manager console the onboarding process will be configured as part of the compliance settings within the console.
+Within the Microsoft Configuration Manager console the onboarding process will be configured as part of the compliance settings within the console.
 
 Any system that receives this required configuration will maintain that configuration for as long as the Configuration Manager client continues to receive this policy from the management point.
 
-Follow the steps below to onboard endpoints using Microsoft Endpoint Configuration Manager.
+Follow the steps below to onboard endpoints using Microsoft Configuration Manager.
 
-1. In Microsoft Endpoint Configuration Manager console, navigate to **Assets and Compliance \> Overview \> Device Collections**.
+1. In Microsoft Configuration Manager console, navigate to **Assets and Compliance \> Overview \> Device Collections**.
 
-    :::image type="content" source="images/configmgr-device-collections.png" alt-text="The Microsoft Endpoint Configuration Manager wizard1" lightbox="images/configmgr-device-collections.png":::
+    :::image type="content" source="images/configmgr-device-collections.png" alt-text="The Microsoft Configuration Manager wizard1" lightbox="images/configmgr-device-collections.png":::
 
 2. Right select **Device Collection** and select **Create Device Collection**.
 
-    :::image type="content" source="images/configmgr-create-device-collection.png" alt-text="The Microsoft Endpoint Configuration Manager wizard2" lightbox="images/configmgr-create-device-collection.png":::
+    :::image type="content" source="images/configmgr-create-device-collection.png" alt-text="The Microsoft Configuration Manager wizard2" lightbox="images/configmgr-create-device-collection.png":::
 
 3. Provide a **Name** and **Limiting Collection**, then select **Next**.
 
-    :::image type="content" source="images/configmgr-limiting-collection.png" alt-text="The Microsoft Endpoint Configuration Manager wizard3" lightbox="images/configmgr-limiting-collection.png":::
+    :::image type="content" source="images/configmgr-limiting-collection.png" alt-text="The Microsoft Configuration Manager wizard3" lightbox="images/configmgr-limiting-collection.png":::
 
 4. Select **Add Rule** and choose **Query Rule**.
 
-    :::image type="content" source="images/configmgr-query-rule.png" alt-text="The Microsoft Endpoint Configuration Manager wizard4" lightbox="images/configmgr-query-rule.png":::
+    :::image type="content" source="images/configmgr-query-rule.png" alt-text="The Microsoft Configuration Manager wizard4" lightbox="images/configmgr-query-rule.png":::
 
 5. Select **Next** on the **Direct Membership Wizard** and select on **Edit Query Statement**.
 
-    :::image type="content" source="images/configmgr-direct-membership.png" alt-text="The Microsoft Endpoint Configuration Manager wizard5" lightbox="images/configmgr-direct-membership.png":::
+    :::image type="content" source="images/configmgr-direct-membership.png" alt-text="The Microsoft Configuration Manager wizard5" lightbox="images/configmgr-direct-membership.png":::
 
 6. Select **Criteria** and then choose the star icon.
 
-    :::image type="content" source="images/configmgr-criteria.png" alt-text="The Microsoft Endpoint Configuration Manager wizard6" lightbox="images/configmgr-criteria.png":::
+    :::image type="content" source="images/configmgr-criteria.png" alt-text="The Microsoft Configuration Manager wizard6" lightbox="images/configmgr-criteria.png":::
 
 7. Keep criterion type as **simple value**, choose where as **Operating System - build number**, operator as **is greater than or equal to** and value **14393** and select on **OK**.
 
-    :::image type="content" source="images/configmgr-simple-value.png" alt-text="The Microsoft Endpoint Configuration Manager wizard7" lightbox="images/configmgr-simple-value.png":::
+    :::image type="content" source="images/configmgr-simple-value.png" alt-text="The Microsoft Configuration Manager wizard7" lightbox="images/configmgr-simple-value.png":::
 
 8. Select **Next** and **Close**.
 
-    :::image type="content" source="images/configmgr-membership-rules.png" alt-text="The Microsoft Endpoint Configuration Manager wizard8" lightbox="images/configmgr-membership-rules.png":::
+    :::image type="content" source="images/configmgr-membership-rules.png" alt-text="The Microsoft Configuration Manager wizard8" lightbox="images/configmgr-membership-rules.png":::
 
 9. Select **Next**.
 
-    :::image type="content" source="images/configmgr-confirm.png" alt-text="The Microsoft Endpoint Configuration Manager wizard9" lightbox="images/configmgr-confirm.png":::
+    :::image type="content" source="images/configmgr-confirm.png" alt-text="The Microsoft Configuration Manager wizard9" lightbox="images/configmgr-confirm.png":::
 
 After completing this task, you now have a device collection with all the Windows endpoints in the environment.
 
 ## Step 2: Configure Microsoft Defender for Endpoint capabilities
 
-This section guides you in configuring the following capabilities using Microsoft Endpoint Configuration Manager on Windows devices:
+This section guides you in configuring the following capabilities using Microsoft Configuration Manager on Windows devices:
 
 - [**Endpoint detection and response**](#endpoint-detection-and-response)
 - [**Next-generation protection**](#next-generation-protection)
@@ -123,24 +126,24 @@ From within the Microsoft 365 Defender portal it is possible to download the `.o
 
 1. From a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, select [Settings and then Onboarding](https://security.microsoft.com/preferences2/onboarding).
 
-2. Under Deployment method, select the supported version of **Microsoft Endpoint Configuration Manager**.
+2. Under Deployment method, select the supported version of **Microsoft Configuration Manager**.
 
-    :::image type="content" source="images/mdatp-onboarding-wizard.png" alt-text="The Microsoft Endpoint Configuration Manager wizard10" lightbox="images/mdatp-onboarding-wizard.png":::
+    :::image type="content" source="images/mdatp-onboarding-wizard.png" alt-text="The Microsoft Configuration Manager wizard10" lightbox="images/mdatp-onboarding-wizard.png":::
 
 3. Select **Download package**.
 
-   :::image type="content" source="images/mdatp-download-package.png" alt-text="The Microsoft Endpoint Configuration Manager wizard11" lightbox="images/mdatp-download-package.png":::
+   :::image type="content" source="images/mdatp-download-package.png" alt-text="The Microsoft Configuration Manager wizard11" lightbox="images/mdatp-download-package.png":::
 
 4. Save the package to an accessible location.
-5. In  Microsoft Endpoint Configuration Manager, navigate to: **Assets and Compliance > Overview > Endpoint Protection > Microsoft Defender ATP Policies**.
+5. In  Microsoft Configuration Manager, navigate to: **Assets and Compliance > Overview > Endpoint Protection > Microsoft Defender ATP Policies**.
 
 6. Right-click **Microsoft Defender ATP Policies** and select **Create Microsoft Defender ATP Policy**.
 
-    :::image type="content" source="images/configmgr-create-policy.png" alt-text="The Microsoft Endpoint Configuration Manager wizard12" lightbox="images/configmgr-create-policy.png":::
+    :::image type="content" source="images/configmgr-create-policy.png" alt-text="The Microsoft Configuration Manager wizard12" lightbox="images/configmgr-create-policy.png":::
 
 7. Enter the name and description, verify **Onboarding** is selected, then select **Next**.
 
-    :::image type="content" source="images/configmgr-policy-name.png" alt-text="The Microsoft Endpoint Configuration Manager wizard13" lightbox="images/configmgr-policy-name.png":::
+    :::image type="content" source="images/configmgr-policy-name.png" alt-text="The Microsoft Configuration Manager wizard13" lightbox="images/configmgr-policy-name.png":::
 
 8. Select **Browse**.
 
@@ -161,7 +164,7 @@ From within the Microsoft 365 Defender portal it is possible to download the `.o
 
 14. Select **Close** when the Wizard completes.
 
-15. In the Microsoft Endpoint Configuration Manager console, right-click the Defender for Endpoint policy you just created and select **Deploy**.
+15. In the Microsoft Configuration Manager console, right-click the Defender for Endpoint policy you just created and select **Deploy**.
 
     :::image type="content" source="images/configmgr-deploy.png" alt-text="The configuration settings4" lightbox="images/configmgr-deploy.png":::
 
@@ -209,7 +212,7 @@ Once completed, you should see onboarded endpoints in the portal within an hour.
 
 Microsoft Defender Antivirus is a built-in anti-malware solution that provides next generation protection for desktops, portable computers, and servers.
 
-1. In the Microsoft Endpoint Configuration Manager console, navigate to **Assets and Compliance \> Overview \> Endpoint Protection \> Antimalware Polices** and choose **Create Antimalware Policy**.
+1. In the Microsoft Configuration Manager console, navigate to **Assets and Compliance \> Overview \> Endpoint Protection \> Antimalware Polices** and choose **Create Antimalware Policy**.
 
    :::image type="content" source="images/9736e0358e86bc778ce1bd4c516adb8b.png" alt-text="The antimalware policy" lightbox="images/9736e0358e86bc778ce1bd4c516adb8b.png":::
 
@@ -257,31 +260,31 @@ All these features provide a test mode and a block mode. In test mode, there's n
 
 To set ASR rules in test mode:
 
-1. In the Microsoft Endpoint Configuration Manager console, navigate to **Assets and Compliance \> Overview \> Endpoint Protection \> Windows Defender Exploit Guard** and choose **Create Exploit Guard Policy**.
+1. In the Microsoft Configuration Manager console, navigate to **Assets and Compliance \> Overview \> Endpoint Protection \> Windows Defender Exploit Guard** and choose **Create Exploit Guard Policy**.
 
-   :::image type="content" source="images/728c10ef26042bbdbcd270b6343f1a8a.png" alt-text="The Microsoft Endpoint Configuration Manager console0" lightbox="images/728c10ef26042bbdbcd270b6343f1a8a.png":::
+   :::image type="content" source="images/728c10ef26042bbdbcd270b6343f1a8a.png" alt-text="The Microsoft Configuration Manager console0" lightbox="images/728c10ef26042bbdbcd270b6343f1a8a.png":::
 
 2. Select **Attack Surface Reduction**.
 
 3. Set rules to **Audit** and select **Next**.
 
-   :::image type="content" source="images/d18e40c9e60aecf1f9a93065cb7567bd.png" alt-text="The Microsoft Endpoint Configuration Manager console1" lightbox="images/d18e40c9e60aecf1f9a93065cb7567bd.png":::
+   :::image type="content" source="images/d18e40c9e60aecf1f9a93065cb7567bd.png" alt-text="The Microsoft Configuration Manager console1" lightbox="images/d18e40c9e60aecf1f9a93065cb7567bd.png":::
 
 4. Confirm the new Exploit Guard policy by selecting **Next**.
 
-   :::image type="content" source="images/0a6536f2c4024c08709cac8fcf800060.png" alt-text="The Microsoft Endpoint Configuration Manager console2" lightbox="images/0a6536f2c4024c08709cac8fcf800060.png":::
+   :::image type="content" source="images/0a6536f2c4024c08709cac8fcf800060.png" alt-text="The Microsoft Configuration Manager console2" lightbox="images/0a6536f2c4024c08709cac8fcf800060.png":::
 
 5. Once the policy is created select **Close**.
 
-   :::image type="content" source="images/95d23a07c2c8bc79176788f28cef7557.png" alt-text="The Microsoft Endpoint Configuration Manager console3" lightbox="images/95d23a07c2c8bc79176788f28cef7557.png":::
+   :::image type="content" source="images/95d23a07c2c8bc79176788f28cef7557.png" alt-text="The Microsoft Configuration Manager console3" lightbox="images/95d23a07c2c8bc79176788f28cef7557.png":::
 
 6. Right-click on the newly created policy and choose **Deploy**.
 
-   :::image type="content" source="images/8999dd697e3b495c04eb911f8b68a1ef.png" alt-text="The Microsoft Endpoint Configuration Manager console4" lightbox="images/8999dd697e3b495c04eb911f8b68a1ef.png":::
+   :::image type="content" source="images/8999dd697e3b495c04eb911f8b68a1ef.png" alt-text="The Microsoft Configuration Manager console4" lightbox="images/8999dd697e3b495c04eb911f8b68a1ef.png":::
 
 7. Target the policy to the newly created Windows collection and select **OK**.
 
-   :::image type="content" source="images/0ccfe3e803be4b56c668b220b51da7f7.png" alt-text="The Microsoft Endpoint Configuration Manager console5" lightbox="images/0ccfe3e803be4b56c668b220b51da7f7.png":::
+   :::image type="content" source="images/0ccfe3e803be4b56c668b220b51da7f7.png" alt-text="The Microsoft Configuration Manager console5" lightbox="images/0ccfe3e803be4b56c668b220b51da7f7.png":::
 
 After completing this task, you now have successfully configured ASR rules in test mode.
 
@@ -307,7 +310,7 @@ See [Optimize ASR rule deployment and detections](/microsoft-365/security/defend
 
 #### Set Network Protection rules in test mode
 
-1. In the Microsoft Endpoint Configuration Manager console, navigate to **Assets and  Compliance \> Overview \> Endpoint Protection \> Windows Defender Exploit Guard** and choose **Create Exploit Guard Policy**.
+1. In the Microsoft Configuration Manager console, navigate to **Assets and  Compliance \> Overview \> Endpoint Protection \> Windows Defender Exploit Guard** and choose **Create Exploit Guard Policy**.
 
    :::image type="content" source="images/728c10ef26042bbdbcd270b6343f1a8a.png" alt-text="The System Center Configuration Manager1" lightbox="images/728c10ef26042bbdbcd270b6343f1a8a.png":::
 
@@ -327,44 +330,45 @@ See [Optimize ASR rule deployment and detections](/microsoft-365/security/defend
 
 6. Right-click on the newly created policy and choose **Deploy**.
 
-   :::image type="content" source="images/8999dd697e3b495c04eb911f8b68a1ef.png" alt-text="The Microsoft Endpoint Configuration Manager-1" lightbox="images/8999dd697e3b495c04eb911f8b68a1ef.png":::
+   :::image type="content" source="images/8999dd697e3b495c04eb911f8b68a1ef.png" alt-text="The Microsoft Configuration Manager-1" lightbox="images/8999dd697e3b495c04eb911f8b68a1ef.png":::
 
 7. Select the policy to the newly created Windows collection and choose **OK**.
 
-   :::image type="content" source="images/0ccfe3e803be4b56c668b220b51da7f7.png" alt-text="The Microsoft Endpoint Configuration Manager-2" lightbox="images/0ccfe3e803be4b56c668b220b51da7f7.png":::
+   :::image type="content" source="images/0ccfe3e803be4b56c668b220b51da7f7.png" alt-text="The Microsoft Configuration Manager-2" lightbox="images/0ccfe3e803be4b56c668b220b51da7f7.png":::
 
 After completing this task, you now have successfully configured Network Protection in test mode.
 
 #### To set Controlled Folder Access rules in test mode
 
-1. In the Microsoft Endpoint Configuration Manager console, navigate to **Assets and Compliance** > **Overview** > **Endpoint Protection** > **Windows Defender Exploit Guard** and then choose **Create Exploit Guard Policy**.
+1. In the Microsoft Configuration Manager console, navigate to **Assets and Compliance** > **Overview** > **Endpoint Protection** > **Windows Defender Exploit Guard** and then choose **Create Exploit Guard Policy**.
 
-   :::image type="content" source="images/728c10ef26042bbdbcd270b6343f1a8a.png" alt-text="The Microsoft Endpoint Configuration Manager-3" lightbox="images/728c10ef26042bbdbcd270b6343f1a8a.png":::
+   :::image type="content" source="images/728c10ef26042bbdbcd270b6343f1a8a.png" alt-text="The Microsoft Configuration Manager-3" lightbox="images/728c10ef26042bbdbcd270b6343f1a8a.png":::
 
 2. Select **Controlled folder access**.
 
 3. Set the configuration to **Audit** and select **Next**.
 
-   :::image type="content" source="images/a8b934dab2dbba289cf64fe30e0e8aa4.png" alt-text="The Microsoft Endpoint Configuration Manager-4" lightbox="images/a8b934dab2dbba289cf64fe30e0e8aa4.png":::
+   :::image type="content" source="images/a8b934dab2dbba289cf64fe30e0e8aa4.png" alt-text="The Microsoft Configuration Manager-4" lightbox="images/a8b934dab2dbba289cf64fe30e0e8aa4.png":::
 
 4. Confirm the new Exploit Guard Policy by selecting **Next**.
 
-   :::image type="content" source="images/0a6536f2c4024c08709cac8fcf800060.png" alt-text="The Microsoft Endpoint Configuration Manager-5" lightbox="images/0a6536f2c4024c08709cac8fcf800060.png":::
+   :::image type="content" source="images/0a6536f2c4024c08709cac8fcf800060.png" alt-text="The Microsoft Configuration Manager-5" lightbox="images/0a6536f2c4024c08709cac8fcf800060.png":::
 
 5. Once the policy is created select on **Close**.
 
-   :::image type="content" source="images/95d23a07c2c8bc79176788f28cef7557.png" alt-text="The Microsoft Endpoint Configuration Manager-6" lightbox="images/95d23a07c2c8bc79176788f28cef7557.png":::
+   :::image type="content" source="images/95d23a07c2c8bc79176788f28cef7557.png" alt-text="The Microsoft Configuration Manager-6" lightbox="images/95d23a07c2c8bc79176788f28cef7557.png":::
 
 6. Right-click on the newly created policy and choose **Deploy**.
 
-   :::image type="content" source="images/8999dd697e3b495c04eb911f8b68a1ef.png" alt-text="The Microsoft Endpoint Configuration Manager-7" lightbox="images/8999dd697e3b495c04eb911f8b68a1ef.png":::
+   :::image type="content" source="images/8999dd697e3b495c04eb911f8b68a1ef.png" alt-text="The Microsoft Configuration Manager-7" lightbox="images/8999dd697e3b495c04eb911f8b68a1ef.png":::
 
 7. Target the policy to the newly created Windows collection and select **OK**.
 
-:::image type="content" source="images/0ccfe3e803be4b56c668b220b51da7f7.png" alt-text="The Microsoft Endpoint Configuration Manager-8" lightbox="images/0ccfe3e803be4b56c668b220b51da7f7.png":::
+:::image type="content" source="images/0ccfe3e803be4b56c668b220b51da7f7.png" alt-text="The Microsoft Configuration Manager-8" lightbox="images/0ccfe3e803be4b56c668b220b51da7f7.png":::
 
 You have now successfully configured Controlled folder access in test mode.
 
 ## Related topic
 
-- [Onboarding using Microsoft Endpoint Manager](onboarding-endpoint-manager.md)
+- [Onboarding using Microsoft Configuration Manager](onboarding-endpoint-manager.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

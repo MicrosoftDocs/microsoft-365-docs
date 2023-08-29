@@ -3,6 +3,7 @@ title: "Comparison: Bookings web app vs. Bookings Teams app"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
+ms.date: 06/24/2020
 audience: Admin
 ms.topic: article
 ms.service: bookings

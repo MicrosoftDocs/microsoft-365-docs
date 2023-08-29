@@ -3,6 +3,7 @@ title: "Configure Microsoft 365 user account properties with PowerShell"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
+ms.date: 08/10/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -14,11 +15,12 @@ ms.collection:
 - Ent_O365
 f1.keywords:
 - CSH
-ms.custom: 
-- O365ITProTrain
-- Ent_Office_Other
-- PowerShell
-- admindeeplinkMAC
+ms.custom:
+  - O365ITProTrain
+  - Ent_Office_Other
+  - PowerShell
+  - admindeeplinkMAC
+  - has-azure-ad-ps-ref
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: "Use PowerShell for Microsoft 365 to configure properties of individual or multiple user accounts in your Microsoft 365 tenant."
 ---

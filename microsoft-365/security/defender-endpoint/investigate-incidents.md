@@ -18,6 +18,7 @@ ms.collection:
 - tier1
 ms.topic: conceptual
 ms.subservice: mde
+ms.date: 12/18/2020
 ---
 
 # Investigate incidents in Microsoft Defender for Endpoint
@@ -100,3 +101,4 @@ You can click the circles on the incident graph to view the details of the malic
 - [Incidents queue](/microsoft-365/security/defender-endpoint/view-incidents-queue)
 - [Investigate incidents in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/investigate-incidents)
 - [Manage Microsoft Defender for Endpoint incidents](/microsoft-365/security/defender-endpoint/manage-incidents)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

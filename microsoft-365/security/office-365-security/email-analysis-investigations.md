@@ -14,6 +14,7 @@ search.appverid:
 ms.collection:
 - m365-security
 - m365initiative-defender-office365
+- tier3
 keywords: automated incident response, investigation, remediation, threat protection
 description: See how email analysis in investigations work in Microsoft Defender for Office 365.
 ms.custom:
@@ -21,15 +22,15 @@ ms.custom:
 - seo-marvel-mar2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
+ms.date: 6/15/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview" target="_blank">Microsoft Defender for Office 365 plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
 # Email analysis in investigations for Microsoft Defender for Office 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
-
-**Applies to**
-- [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 During the automated investigation of alerts, Microsoft Defender for Office 365 analyzes the original email for threats and identifies other emails that are related to the original email and potentially part of an attack. This analysis is important because email attacks rarely consist of a single email.
 
@@ -51,9 +52,8 @@ Here are additional enhancements to email analysis in investigations.
 
 During the email clustering analysis, all clustering queries will ignore security mailboxes set up as Security Operations mailboxes in the Advanced Delivery policy. Similarly, the email clustering queries will ignore phish simulation (education) messages that are configured in the Advanced Delivery policy. Neither the SecOps nor the PhishEdu exclusion values are shown in the query to keep the clustering attributes simple and easy to read. This exclusion ensures that threat intelligence and operational mailboxes (SecOps mailboxes) and the phish simulations (PhishEdu) are ignored during threat analysis and do not get removed during any remediation.
 
->[!Note]
->When opening an email cluster to view it in Explorer from the email cluster details, the PhishEdu and SecOps mailbox filters will be applied in Explorer but will not be shown. If you change the Explorer filters, dates, or refresh the query within the page – then the PhishEdu/SecOps filter exclusions will get removed and emails that match these will be shown once again. If you refresh the Explorer page using the browser refresh function, the original query filters will get re-loaded, including the PhishEdu/SecOps filters – but removing any subsequent changes you had made.
->
+> [!NOTE]
+> When opening an email cluster to view it in Explorer from the email cluster details, the PhishEdu and SecOps mailbox filters will be applied in Explorer but will not be shown. If you change the Explorer filters, dates, or refresh the query within the page – then the PhishEdu/SecOps filter exclusions will get removed and emails that match these will be shown once again. If you refresh the Explorer page using the browser refresh function, the original query filters will get re-loaded, including the PhishEdu/SecOps filters – but removing any subsequent changes you had made.
 
 ## AIR updates pending email action status
 

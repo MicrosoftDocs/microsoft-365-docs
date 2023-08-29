@@ -23,6 +23,7 @@ ms.collection:
   - highpri
   - tier1
 ms.topic: conceptual
+ms.date: 05/13/2021
 ---
 
 # Step 7. Promote your Microsoft 365 Defender evaluation environment to production
@@ -32,11 +33,11 @@ ms.topic: conceptual
 
 To promote your Microsoft 365 Defender evaluation environment to production, first purchase the necessary license. Follow the steps in [Create the eval environment](eval-create-eval-environment.md) and purchase the Office 365 E5 license (instead of selecting Start free trial).
 
-Next, complete any additional configuration and expand your pilot groups until these have reached full production.
+Next, complete any other configuration and expand your pilot groups until these have reached full production.
 
 ## Microsoft Defender for Identity
 
-Defender for Identity doesn't require any additional configuration. Just make sure you've purchased the necessary licenses and installed the sensor on all of your Active Directory domain controllers and Active Directory Federation Services (AD FS) servers.
+Defender for Identity doesn't require any other configuration. Just make sure you've purchased the necessary licenses and installed the sensor on all of your Active Directory domain controllers and Active Directory Federation Services (AD FS) servers.
 
 ## Microsoft Defender for Office 365
 
@@ -50,7 +51,7 @@ After successfully evaluating or piloting MDO, it can be promoted to your entire
 
 ## Microsoft Defender for Endpoint
 
-To promote Microsoft Defender for Endpoint evaluation environment from a pilot to production, simply onboard more endpoints to the service using any of the [supported tools and methods](../defender-endpoint/onboard-configure.md).
+To promote Microsoft Defender for Endpoint evaluation environment from a pilot to production, onboard more endpoints to the service using any of the [supported tools and methods](../defender-endpoint/onboard-configure.md).
 
 Use the following general guidelines to onboard more devices to Microsoft Defender for Endpoint.
 
@@ -61,4 +62,5 @@ Use the following general guidelines to onboard more devices to Microsoft Defend
 
 ## Microsoft Defender for Cloud Apps
 
-Microsoft Defender for Cloud Apps doesn't require any additional configuration. Just make sure you've purchased the necessary licenses. If you've scoped the deployment to certain user groups, increase the scope of these groups until you reach production scale.
+Microsoft Defender for Cloud Apps doesn't require any other configuration. Just make sure you've purchased the necessary licenses. If you've scoped the deployment to certain user groups, increase the scope of these groups until you reach production scale.
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

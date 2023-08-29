@@ -1,9 +1,9 @@
 ---
 title: Manage devices for frontline workers
-author: lanachin
-ms.author: v-lanachin
+author: lana-chin
+ms.author: v-chinlana
+manager: serdars
 ms.reviewer: mabolan
-manager: samanro
 ms.topic: conceptual
 audience: admin
 ms.service: microsoft-365-frontline
@@ -125,7 +125,7 @@ Intune is recommended for BYOD scenarios because it provides the best support an
 
 ### Enroll Android and iOS personal devices
 
-In addition to your company-owned devices, you can [enroll](/mem/intune/enrollment/device-enrollment) users' personally owned devices into management in Intune. For BYOD enrollment, you add device users in the Microsoft Endpoint Manager admin center, configure their enrollment experience, and set up Intune policies. Users complete enrollment themselves in the Intune Company Portal app that's installed on their device.
+In addition to your company-owned devices, you can [enroll](/mem/intune/enrollment/device-enrollment) users' personally owned devices into management in Intune. For BYOD enrollment, you add device users in the Microsoft Intune admin center, configure their enrollment experience, and set up Intune policies. Users complete enrollment themselves in the Intune Company Portal app that's installed on their device.
 
 In some cases, users may be reluctant to enroll their personal devices into management. If device enrollment isn't an option, you can choose a mobile application management (MAM) approach and use [app protection policies](/mem/intune/apps/app-protection-policies) to manage apps that contain corporate data. For example, you can apply app protection policies to Teams and Office mobile apps to prevent company data from being copied to personal apps on the device.
 
@@ -150,7 +150,7 @@ Shared device mode is an improvement to the app data clear functionality for And
 
 Shared device mode also allows a device to be enrolled into Azure AD once for all users so that you can easily create profiles that secure app and data usage on the shared device. This allows you to support conditional access without having to re-enroll the device every time a new user authenticates into the device.
 
-You use a mobile device management (MDM) solution like Microsoft Intune in Microsoft Endpoint Manager to prepare a device to be shared by installing the [Microsoft Authenticator app](https://support.microsoft.com/account-billing/how-to-use-the-microsoft-authenticator-app-9783c865-0308-42fb-a519-8cf666fe0acc) and turning on shared mode. Teams and all other apps that support shared device mode use the shared mode setting to manage users on the device. The MDM solution you use should also perform a device cleanup when sign out occurs.
+You use a mobile device management (MDM) solution like Microsoft Intune or Microsoft Configuration Manager to prepare a device to be shared by installing the [Microsoft Authenticator app](https://support.microsoft.com/account-billing/how-to-use-the-microsoft-authenticator-app-9783c865-0308-42fb-a519-8cf666fe0acc) and turning on shared mode. Teams and all other apps that support shared device mode use the shared mode setting to manage users on the device. The MDM solution you use should also perform a device cleanup when sign out occurs.
 
 > [!NOTE]
 > Shared device mode isn’t a full data loss prevention solution. Shared device mode should be used in conjunction with Microsoft Application Manager (MAM) policies to ensure that data doesn’t leak to areas of the device that aren’t leveraging shared device mode (e.g., local file storage).

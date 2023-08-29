@@ -17,16 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - m365-security
-- tier2
+- tier3
 ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
+ms.date: 02/17/2021
 ---
 
 # Manage access to Microsoft 365 Defender with Azure Active Directory global roles
 
->[!Note]
+> [!NOTE]
 > If you are running the Microsoft 365 Defender preview program you can now experience the new Microsoft Defender 365 role-based access control (RBAC) model. For more information, see [Microsoft Defender 365 role-based access control (RBAC)](manage-rbac.md).
 
 **Applies to:**
@@ -79,3 +80,4 @@ During the preview, Microsoft 365 Defender does not enforce access controls base
 - [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference)
 - [Microsoft Defender for Endpoint RBAC](/windows/security/threat-protection/microsoft-defender-atp/rbac)
 - [Defender for Cloud Apps roles](/cloud-app-security/manage-admins)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

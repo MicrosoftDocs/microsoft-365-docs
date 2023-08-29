@@ -3,15 +3,17 @@ title: "Turn off directory synchronization for Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
+ms.date: 08/10/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
-ms.custom: 
- - Adm_O365
- - seo-marvel-apr2020
+ms.custom:
+  - Adm_O365
+  - seo-marvel-apr2020
+  - has-azure-ad-ps-ref
 ms.collection:
 - scotvorg
 - Ent_O365

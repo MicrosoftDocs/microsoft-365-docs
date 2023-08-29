@@ -2,10 +2,10 @@
 title: Microsoft 365 for retail organizations
 description: Learn about the admin resources available to manage and get the most out of Teams for your retail stores and workforce.
 ms.topic: conceptual
-author: samanro
-ms.author: samanro
-audience: admin
+author: lana-chin
+ms.author: v-chinlana
 manager: serdars
+audience: admin
 f1.keywords:
 - NOCSH
 ms.service: microsoft-365-frontline
@@ -25,7 +25,7 @@ searchScope:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 12/05/2022
+ms.date: 02/01/2023
 ---
 
 # Get started with Microsoft 365 for retail organizations
@@ -88,9 +88,9 @@ More information: [Frontline team collaboration](flw-team-collaboration.md)
 
 ### Virtual fittings and consultations
 
-Use the Virtual Appointments app (Preview) or the Bookings app in Microsoft Teams to schedule and manage virtual appointments such as virtual shopping experiences for associates and customers.
+Use the Virtual Appointments app or the Bookings app in Microsoft Teams to schedule and manage virtual appointments such as virtual shopping experiences for associates and customers.
 
-**Key features and apps:** meetings, Virtual Appointments (Preview), Bookings
+**Key features and apps:** meetings, Virtual Appointments, Bookings
 
 More information: [Virtual Appointments with Microsoft Teams](virtual-appointments.md)
 
@@ -150,8 +150,8 @@ For retail environments, the following apps and services can help you transform 
 | Tasks | Help employees know what they should focus on when not with customers by assigning tasks. Operations can use [task publishing](/microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json#task-publishing) to send out tasks to locations and track progress across those locations. | [Manage the Tasks app](/microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Use Tasks](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070) |
 | Updates | Check in on recurring or one-off priorities such as daily cleaning. Managers can create templates for employees to fill out and submit. | [Manage the Updates app](/microsoftteams/manage-updates-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Use Updates](https://support.microsoft.com/office/get-started-in-updates-c03a079e-e660-42dc-817b-ca4cfd602e5a) |
 | Walkie Talkie | Push to talk quick communication that's not constrained by geography like standard 2-way radios.| [Manage the Walkie Talkie app](/microsoftteams/walkie-talkie?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Use Walkie Talkie](https://support.microsoft.com/office/get-started-with-teams-walkie-talkie-25bdc3d5-bbb2-41b7-89bf-650fae0c8e0c) |
-| Virtual Appointments (Preview) | A central hub for all your virtual appointment needs. Schedule and manage virtual fittings and consultations, view analytics, and configure options, all in one place.| [Manage the Virtual Appointments app](/microsoftteams/manage-virtual-appointments-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | - |
-| Bookings |  Schedule and manage virtual fittings and consultations.| [Manage the Bookings app](/microsoftteams/bookings-app-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Virtual Appointments with Teams and the Bookings app](bookings-virtual-appointments.md) |
+| Virtual Appointments| A central hub for all your virtual appointment needs. Schedule and manage virtual fittings and consultations, view analytics, and configure options, all in one place.| [Manage the Virtual Appointments app](/microsoftteams/manage-virtual-appointments-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [What is the Virtual Appointments app?](https://support.microsoft.com/topic/22df0079-e6d9-4225-bc65-22747fb2cb5f) |
+| Bookings |  Schedule and manage virtual fittings and consultations.| [Manage the Bookings app](/microsoftteams/bookings-app-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) | [Use Bookings](https://support.microsoft.com/office/what-is-bookings-42d4e852-8e99-4d8f-9b70-d7fc93973cb5) |
 
 | More apps and services from Microsoft | Description | Manage | Help |
 | ----- | ----- | ----- | ----- |

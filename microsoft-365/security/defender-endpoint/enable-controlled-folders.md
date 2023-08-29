@@ -1,12 +1,8 @@
 ---
 title: Enable controlled folder access
-keywords: Controlled folder access, windows 10, windows 11, windows defender, ransomware, protect, files, folders, enable, turn on, use
 description: Learn how to protect your important files by enabling Controlled folder access
 ms.service: microsoft-365-security
 ms.topic: conceptual
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
 author: dansimp
@@ -17,8 +13,8 @@ ms.subservice: mde
 ms.collection: 
 - m365-security
 - tier3
-ms.date:
 search.appverid: met150
+ms.date: 08/15/2023
 ---
 
 # Enable controlled folder access
@@ -41,13 +37,14 @@ search.appverid: met150
 You can enable controlled folder access by using any of these methods:
 
 - [Windows Security app *](#windows-security-app)
-- [Microsoft Endpoint Manager](#endpoint-manager)
+- [Microsoft Intune](#microsoft-intune)
 - [Mobile Device Management (MDM)](#mobile-device-management-mdm)
-- [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
+- [Microsoft Configuration Manager](#microsoft-configuration-manager)
 - [Group Policy](#group-policy)
 - [PowerShell](#powershell)
 
-[Audit mode](evaluate-controlled-folder-access.md) allows you to test how the feature would work (and review events) without impacting the normal use of the device.
+> [!TIP]
+> Try using [audit mode](evaluate-controlled-folder-access.md) at first so you can see how the feature works and review events without impacting normal device usage in your organization.
 
 Group Policy settings that disable local administrator list merging will override controlled folder access settings. They also override protected folders and allowed apps set by the local administrator through controlled folder access. These policies include:
 
@@ -71,38 +68,38 @@ For more information about disabling local list merging, see [Prevent or allow u
 > If the feature is set to **Audit mode** with any of those tools, the Windows Security app will show the state as **Off**.
 > If you are protecting user profile data, we recommend that the user profile should be on the default Windows installation drive.
 
-## Endpoint Manager
+## Microsoft Intune
 
-1. Sign in to the [Endpoint Manager](https://endpoint.microsoft.com) and open **Endpoint Security**.
+1. Sign in to the [Microsoft Intune admin center](https://endpoint.microsoft.com) and open **Endpoint Security**.
 
 2. Go to **Attack Surface Reduction** \> **Policy**.
 
-3. Select **Platform**, choose **Windows 10 and later**, and select the profile **Attack Surface Reduction rules** \> **Create**.
+3. Select **Platform**, choose **Windows 10, Windows 11, and Windows Server**, and select the profile **Attack Surface Reduction rules** \> **Create**.
 
 4. Name the policy and add a description. Select **Next**.
 
-5. Scroll down to the bottom, select the **Enable Folder Protection** drop-down, and choose **Enable**.
+5. Scroll down, and in the **Enable Controlled Folder Access** drop-down, select an option, such as **Audit Mode**. 
 
-6. Select **List of additional folders that need to be protected** and add the folders that need to be protected.
+   We recommend enabling controlled folder access in audit mode first to see how it'll work in your organization. You can set it to another mode, such as **Enabled**, later.
 
-7. Select **List of apps that have access to protected folders** and add the apps that have access to protected folders.
+6. To optionally add folders that should be protected, select **Controlled Folder Access Protected Folders** and then add folders. Files in these folders can't be modified or deleted by untrusted applications. Keep in mind that your default system folders are automatically protected. You can view the list of default system folders in the Windows Security app on a Windows device. To learn more about this setting, see [Policy CSP - Defender: ControlledFolderAccessProtectedFolders](/windows/client-management/mdm/policy-csp-defender?#controlledfolderaccessprotectedfolders).
 
-8. Select **Exclude files and paths from attack surface reduction rules** and add the files and paths that need to be excluded from attack surface reduction rules.
+7. To optionally add applications that should be trusted, select **Controlled Folder Access Allowed Applications** and then add the apps can access protected folders. Microsoft Defender Antivirus automatically determines which applications should be trusted. Only use this setting to specify additional applications. To learn more about this setting, see [Policy CSP - Defender: ControlledFolderAccessAllowedApplications](/windows/client-management/mdm/policy-csp-defender#controlledfolderaccessallowedapplications).
 
-9. Select the profile **Assignments**, assign to **All Users & All Devices**, and select **Save**.
+8. Select the profile **Assignments**, assign to **All Users & All Devices**, and select **Save**.
 
-10. Select **Next** to save each open blade and then **Create**.
+9. Select **Next** to save each open blade and then **Create**.
 
-    > [!NOTE]
-    > Wildcards are supported for applications, but not for folders. Subfolders are not protected. Allowed apps will continue to trigger events until they are restarted.
+> [!NOTE]
+> Wildcards are supported for applications, but not for folders. Subfolders are not protected. Allowed apps will continue to trigger events until they are restarted.
 
 ## Mobile Device Management (MDM)
 
 Use the [./Vendor/MSFT/Policy/Config/ControlledFolderAccessProtectedFolders](/windows/client-management/mdm/policy-csp-defender) configuration service provider (CSP) to allow apps to make changes to protected folders.
 
-## Microsoft Endpoint Configuration Manager
+## Microsoft Configuration Manager
 
-1. In Microsoft Endpoint Configuration Manager, go to **Assets and Compliance** \> **Endpoint Protection** \> **Windows Defender Exploit Guard**.
+1. In Microsoft Configuration Manager, go to **Assets and Compliance** \> **Endpoint Protection** \> **Windows Defender Exploit Guard**.
 
 2. Select **Home** \> **Create Exploit Guard Policy**.
 
@@ -156,3 +153,5 @@ Use `Disabled` to turn off the feature.
 - [Protect important folders with controlled folder access](controlled-folders.md)
 - [Customize controlled folder access](customize-controlled-folders.md)
 - [Evaluate Microsoft Defender for Endpoint](evaluate-mde.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+

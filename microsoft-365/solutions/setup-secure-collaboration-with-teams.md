@@ -3,12 +3,14 @@ title: Set up secure file and document sharing and collaboration with Teams in M
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
+ms.date: 05/01/2020
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.collection:
 - highpri
+- Tier1
 - M365-collaboration
 - m365solution-securecollab
 - m365solution-overview
@@ -137,24 +139,6 @@ These training modules from Microsoft Learn can help you learn the collaboration
 
 > [!div class="nextstepaction"]
 > [Start >](/training/modules/m365-teams-collab-prepare-deployment/introduction/)
-
-### SharePoint
-
-|Training:|Collaborate with SharePoint in Microsoft 365|
-|---|---|
-|![SharePoint training icon.](../media/collaborate-with-sharepoint-in-microsoft-365.svg)|Manage shared content with Microsoft SharePoint introduces you to the features and capabilities of SharePoint, and how it works with Microsoft 365. You'll learn about the different types of SharePoint sites, including hub sites, as well as information protection, reporting, and monitoring. You'll also learn how to use SharePoint file and folder sharing to optimize collaboration, how to share files externally, and how to manage SharePoint sites in the SharePoint admin center. This learning path can help you prepare for the Microsoft 365 Certified: Teamwork Administrator Associate certification.<p>1 hr 14 min - Learning Path - 4 Modules|
-
-> [!div class="nextstepaction"]
-> [Start >](/training/modules/m365-teams-sharepoint-plan-sharepoint/introduction/)
-
-### Information protection
-
-|Training:|Protect enterprise information with Microsoft 365|
-|---|---|
-|![Teams info protection training icon.](../media/protect-enterprise-information-microsoft-365.svg)|Protecting and securing your organization's information is more challenging than ever. The Protect enterprise information with Microsoft 365 learning path discusses how to protect your sensitive information from accidental oversharing or misuse, how to discover and classify data, how to protect it with sensitivity labels, and how to both monitor and analyze your sensitive information to protect against its loss. This learning path can help you prepare for the Microsoft 365 Certified: Security Administrator Associate and Microsoft 365 Certified: Enterprise Administration Expert certifications.<p>1 hr - Learning Path - 5 Modules|
-
-> [!div class="nextstepaction"]
-> [Start >](/training/modules/m365-security-info-overview/introduction/)
 
 ### Identity and access
 

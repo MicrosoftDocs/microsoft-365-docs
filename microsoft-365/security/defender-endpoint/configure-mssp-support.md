@@ -18,6 +18,7 @@ ms.topic: conceptual
 ms.subservice: mde
 
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Configure managed security service provider integration
@@ -79,3 +80,4 @@ For information on how to implement a multi-tenant delegated access, see [Multi-
 - [Access the MSSP customer portal](access-mssp-portal.md)
 - [Configure alert notifications](configure-mssp-notifications.md)
 - [Fetch alerts from customer tenant](fetch-alerts-mssp.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

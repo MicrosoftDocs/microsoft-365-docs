@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
+ms.date: 08/10/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -89,7 +90,7 @@ You must be a global admin to perform these steps.
 
 ::: moniker-end
 
-2. Go to the **Setup** > **Domains** page.
+2. Go to the **Settings** > **Domains** page.
 
 3. On the **Domains** page, select **Add domain**.
 

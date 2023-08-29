@@ -17,6 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Microsoft Defender for Endpoint device timeline
@@ -42,7 +43,7 @@ The Defender for Endpoint device timeline helps you research and investigate ano
     :::image type="content" source="images/event-side-panel.png" alt-text="Screenshot of the event side panel." lightbox="images/event-side-panel.png":::
 
    
-- All MITRE techniques are shown when there’s more than 1 related technique:
+- All MITRE techniques are shown when there's more than 1 related technique:
 
     :::image type="content" source="images/new-timeline-mitre-techniques.png" alt-text="Screenshot of all MITRE techniques. " lightbox="images/new-timeline-mitre-techniques.png":::
 
@@ -153,3 +154,4 @@ While navigating the device timeline, you can search and filter for specific eve
 You can apply additional filters by clicking on the time bar. This will only show events prior to the flagged event.  
 
 :::image type="content" source="images/device-flag-filter.png" alt-text="Screenshot that shows the device timeline flag with the filter switched on." lightbox="images/device-flag-filter.png":::
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

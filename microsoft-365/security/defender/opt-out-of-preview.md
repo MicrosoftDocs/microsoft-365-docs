@@ -19,8 +19,10 @@ ms.collection:
   - tier1
 ms.topic: conceptual
 search.appverid: met150
+ms.date: 11/17/2022
 ---
 
 # Opt out of Microsoft Defender Experts for XDR preview
 
 Consult your service delivery manager (SDM) to opt out of the preview.
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

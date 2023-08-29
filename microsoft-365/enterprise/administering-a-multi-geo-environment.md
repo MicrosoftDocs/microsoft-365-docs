@@ -1,6 +1,7 @@
 ---
 title: "Service Behavior in a Multi-Geo Enabled Environment"
 ms.reviewer: adwood
+ms.date: 08/10/2020
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -30,9 +31,6 @@ The SharePoint admin center has a [**Geo locations** tab](https://go.microsoft.c
 ## Audit log search
 
 A unified [Audit log](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c) for all your _Satellite Geography_ locations is available from the Microsoft 365 audit log search page. You can see all the audit log entries from across geo locations, for example, NAM & EUR users' activities will show up in one org view and then you can apply existing filters to see specific user's activities.
-
-> [!NOTE]
-> Exchange admin audit events are only available for the default location.
 
 ## BCS, Secure Store, Apps
 
@@ -92,6 +90,6 @@ If you have custom profile properties, then we recommend that you use the same p
 
 See [Work with user profiles in a Multi-Geo tenant](/sharepoint/dev/solution-guidance/multigeo-userprofileexperience) for additional details and for developer guidance.
 
-## Yammer
+## Viva Engage
 
-Yammer is not a Multi-Geo workload. Yammer threads stored in Yammer will be placed in the _Tenant's_ central location. Yammer is rolling out a file storage change which will store Yammer files within SharePoint. Yammer files stored in SharePoint will be placed the SharePoint site associated with the Yammer group. SharePoint group sites are based on PDL logic as outlined in [SharePoint Sites and Groups](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md#sharepoint-sites-and-groups).
+Viva Engage is not a Multi-Geo workload. Viva Engage threads stored in Viva Engage will be placed in the _Tenant's_ central location. Viva Engage is rolling out a file storage change which will store Viva Engage files within SharePoint. Viva Engage files stored in SharePoint will be placed the SharePoint site associated with the Viva Engage group. SharePoint group sites are based on PDL logic as outlined in [SharePoint Sites and Groups](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md#sharepoint-sites-and-groups).

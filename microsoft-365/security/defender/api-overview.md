@@ -18,11 +18,13 @@ audience: ITPro
 ms.collection: 
  - m365-security
  - tier3
-ms.topic: conceptual
+ - must-keep
+ms.topic: reference
 search.appverid: 
   - MOE150
   - MET150
 ms.custom: api
+ms.date: 02/08/2023
 ---
 
 # Overview of Microsoft 365 Defender APIs
@@ -34,7 +36,7 @@ ms.custom: api
 - Microsoft 365 Defender
 
 > [!NOTE]
-> **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph beta | Microsoft Learn](/graph/api/resources/security-api-overview).
+> **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview).
 
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -61,7 +63,7 @@ Watch this short video to learn how you can use Microsoft 365 Defender to automa
 
 | **Understand how to access the APIs** |
 |-|
-| [Use the Microsoft Graph security API - Microsoft Graph beta | Microsoft Learn](/graph/api/resources/security-api-overview) |
+| [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview) |
 | [Learn about API quotas and licensing](api-terms.md) |
 | [Access the Microsoft 365 Defender APIs](api-access.md) |
 | **Build apps** |
@@ -73,3 +75,4 @@ Watch this short video to learn how you can use Microsoft 365 Defender to automa
 | [Understand API error codes](api-error-codes.md) |
 | [Manage secrets in your apps with Azure Key Vault](/training/modules/manage-secrets-with-azure-key-vault/) |
 | [Implement OAuth 2.0 authorization for user sign in](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code) |
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

@@ -1,10 +1,7 @@
 ---
 title: Block potentially unwanted applications with Microsoft Defender Antivirus
 description: Enable the potentially unwanted application (PUA) antivirus feature to block unwanted software such as adware.
-keywords: pua, enable, unwanted software, unwanted apps, adware, browser toolbar, detect, block, Microsoft Defender Antivirus
 ms.service: microsoft-365-security
-ms.mktglfcycl: detect
-ms.sitesec: library
 ms.localizationpriority: high
 author: denisebmsft
 ms.author: deniseb
@@ -18,12 +15,14 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
+ms.date: 08/28/2023
 ---
 
 # Detect and block potentially unwanted applications
 
 **Applies to:**
 
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Edge](/microsoft-edge/deploy/microsoft-edge)
 - Microsoft Defender Antivirus
@@ -31,12 +30,12 @@ search.appverid: met150
 **Platforms**
 - Windows
 
-Potentially unwanted applications (PUA) are a category of software that can cause your machine to run slowly, display unexpected ads, or at worst, install other software that might be unexpected or unwanted. PUA is not considered a virus, malware, or other type of threat, but it might perform actions on endpoints that adversely affect endpoint performance or use. The term *PUA* can also refer to an application that has a poor reputation, as assessed by Microsoft Defender for Endpoint, due to certain kinds of undesirable behavior.
+Potentially unwanted applications (PUA) are a category of software that can cause your machine to run slowly, display unexpected ads, or at worst, install other software that might be unexpected or unwanted. PUA isn't considered a virus, malware, or other type of threat, but it might perform actions on endpoints that adversely affect endpoint performance or use. The term *PUA* can also refer to an application that has a poor reputation, as assessed by Microsoft Defender for Endpoint, due to certain kinds of undesirable behavior.
 
 Here are some examples:
 
 - **Advertising software** that displays advertisements or promotions, including software that inserts advertisements to webpages.
-- **Bundling software** that offers to install other software that is not digitally signed by the same entity. Also, software that offers to install other software that qualifies as PUA.
+- **Bundling software** that offers to install other software that isn't digitally signed by the same entity. Also, software that offers to install other software that qualifies as PUA.
 - **Evasion software** that actively tries to evade detection by security products, including software that behaves differently in the presence of security products.
 
 > [!TIP]
@@ -54,7 +53,7 @@ The [new Microsoft Edge](https://support.microsoft.com/microsoft-edge/get-to-kno
 
 Although potentially unwanted application protection in Microsoft Edge (Chromium-based, version 80.0.361.50) is turned off by default, it can easily be turned on from within the browser.
 
-1. In your Edge browser, select the ellipses, and then choose **Settings**.
+1. In your Microsoft Edge browser, select the ellipses, and then choose **Settings**.
 
 2. Select **Privacy, search, and services**.
 
@@ -65,7 +64,7 @@ Although potentially unwanted application protection in Microsoft Edge (Chromium
 
 ### Block URLs with Microsoft Defender SmartScreen
 
-In Chromium-based Edge with PUA protection turned on, Microsoft Defender SmartScreen protects you from PUA-associated URLs.
+In Chromium-based Microsoft Edge with PUA protection turned on, Microsoft Defender SmartScreen protects you from PUA-associated URLs.
 
 Security admins can [configure](/DeployEdge/configure-microsoft-edge) how Microsoft Edge and Microsoft Defender SmartScreen work together to protect groups of users from PUA-associated URLs. There are several [group policy settings](/DeployEdge/microsoft-edge-policies#smartscreen-settings) explicitly for Microsoft Defender SmartScreen available, including [one for blocking PUA](/DeployEdge/microsoft-edge-policies#smartscreenpuaenabled). In addition, admins can [configure Microsoft Defender SmartScreen](/microsoft-edge/deploy/available-policies?source=docs#configure-windows-defender-smartscreen) as a whole, using group policy settings to turn Microsoft Defender SmartScreen on or off.
 
@@ -84,24 +83,27 @@ The notification appears in the usual [quarantine list within the Windows Securi
 
 ## Configure PUA protection in Microsoft Defender Antivirus
 
-You can enable PUA protection with [Microsoft Intune](/mem/intune/protect/device-protect), [Microsoft Endpoint Configuration Manager](/mem/configmgr/protect/deploy-use/endpoint-protection), [Group Policy](/azure/active-directory-domain-services/manage-group-policy), or via [PowerShell cmdlets](/powershell/module/defender/?preserve-view=true&view=win10-ps).
+You can enable PUA protection with [Microsoft Intune](/mem/intune/protect/device-protect), [Microsoft Configuration Manager](/mem/configmgr/protect/deploy-use/endpoint-protection), [Group Policy](/azure/active-directory-domain-services/manage-group-policy), or via [PowerShell cmdlets](/powershell/module/defender/?preserve-view=true&view=win10-ps).
 
-You can also use PUA protection in audit mode to detect potentially unwanted applications without blocking them. The detections are captured in the Windows event log. PUA protection in audit mode is useful if your company is conducting an internal software security compliance check and you'd like to avoid any false positives.
+At first, try using PUA protection in audit mode. It detects potentially unwanted applications without actually blocking them. Detections are captured in the Windows Event log. PUA protection in audit mode is useful if your company is conducting an internal software security compliance check and it's important to avoid false positives.
 
 ### Use Intune to configure PUA protection
 
-See [Configure device restriction settings in Microsoft Intune](/intune/device-restrictions-configure) and [Microsoft Defender Antivirus device restriction settings for Windows 10 in Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus) for more details.
+See the following articles:
+
+- [Configure device restriction settings in Microsoft Intune](/intune/device-restrictions-configure)
+- [Microsoft Defender Antivirus device restriction settings for Windows 10 in Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
 
 ### Use Configuration Manager to configure PUA protection
 
-PUA protection is enabled by default in the Microsoft Endpoint Manager (Current Branch).
+PUA protection is enabled by default in the Microsoft Configuration Manager (Current Branch).
 
-See [How to create and deploy antimalware policies: Scheduled scans settings](/configmgr/protect/deploy-use/endpoint-antimalware-policies#real-time-protection-settings) for details on configuring Microsoft Endpoint Manager (Current Branch).
+See [How to create and deploy antimalware policies: Scheduled scans settings](/configmgr/protect/deploy-use/endpoint-antimalware-policies#real-time-protection-settings) for details on configuring Microsoft Configuration Manager (Current Branch).
 
 For System Center 2012 Configuration Manager, see [How to Deploy Potentially Unwanted Application Protection Policy for Endpoint Protection in Configuration Manager](/previous-versions/system-center/system-center-2012-R2/hh508770(v=technet.10)#BKMK_PUA).
 
 > [!NOTE]
-> PUA events blocked by Microsoft Defender Antivirus are reported in the Windows Event Viewer and not in Microsoft Endpoint Configuration Manager.
+> PUA events blocked by Microsoft Defender Antivirus are reported in the Windows Event Viewer and not in Microsoft Configuration Manager.
 
 ### Use Group Policy to configure PUA protection
 
@@ -155,7 +157,7 @@ For more information, see [Use PowerShell cmdlets to configure and run Microsoft
 
 ## View PUA events using PowerShell
 
-PUA events are reported in the Windows Event Viewer, but not in Microsoft Endpoint Manager or in Intune. You can also use the `Get-MpThreat` cmdlet to view threats that Microsoft Defender Antivirus handled. Here's an example:
+PUA events are reported in the Windows Event Viewer, but not in Microsoft Configuration Manager or in Intune. You can also use the `Get-MpThreat` cmdlet to view threats that Microsoft Defender Antivirus handled. Here's an example:
 
 ```console
 CategoryID       : 27
@@ -176,7 +178,7 @@ PSComputerName   :
 
 You can turn on email notifications to receive mail about PUA detections.
 
-See [Troubleshoot event IDs](troubleshoot-microsoft-defender-antivirus.md) for details on viewing Microsoft Defender Antivirus events. PUA events are recorded under event ID **1160**.
+See [Troubleshoot event IDs](/microsoft-365/security/defender-endpoint/troubleshoot-microsoft-defender-antivirus/) for details on viewing Microsoft Defender Antivirus events. PUA events are recorded under event ID **1160**.
 
 ## View PUA events using advanced hunting
 
@@ -212,3 +214,4 @@ For more information, see [Configure and validate exclusions based on file exten
 
 - [Next-generation protection](microsoft-defender-antivirus-in-windows-10.md)
 - [Configure behavioral, heuristic, and real-time protection](configure-protection-features-microsoft-defender-antivirus.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

@@ -17,6 +17,7 @@ ms.collection:
 ms.topic: troubleshooting
 ms.subservice: mde
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Troubleshoot subscription and portal access issues
@@ -92,3 +93,4 @@ If you encounter issues with accessing the portal, missing data, or restricted a
 - `https://secure.aadcdn.microsoftonline-p.com`
 - `https://security.microsoft.com`
 - `https://static2.sharepointonline.com`
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

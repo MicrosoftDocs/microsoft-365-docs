@@ -17,6 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Investigate connection events that occur behind forward proxies
@@ -24,6 +25,8 @@ search.appverid: met150
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -31,7 +34,7 @@ search.appverid: met150
 
 Defender for Endpoint supports network connection monitoring from different levels of the network stack. A challenging case is when the network uses a forward proxy as a gateway to the Internet.
 
-The proxy acts as if it was the target endpoint. In these cases, simple network connection monitors will audit the connections with the proxy that is correct but has lower investigation value.
+The proxy acts as if it was the target endpoint. In these cases, simple network connection monitors audit the connections with the proxy that is correct but has lower investigation value.
 
 Defender for Endpoint supports advanced HTTP level monitoring through network protection. When turned on, a new type of event is surfaced which exposes the real target domain names.
 
@@ -41,19 +44,19 @@ Monitoring network connection behind a forward proxy is possible due to other ne
 
 Network protection can be controlled using the following modes:
 
-- **Block**: Users or apps will be blocked from connecting to dangerous domains. You will be able to see this activity in Microsoft 365 Defender.
-- **Audit**: Users or apps will not be blocked from connecting to dangerous domains. However, you will still see this activity in Microsoft 365 Defender.
+- **Block**: Users or apps are blocked from connecting to dangerous domains. You'll be able to see this activity in Microsoft 365 Defender.
+- **Audit**: Users or apps won't be blocked from connecting to dangerous domains. However, you'll still see this activity in Microsoft 365 Defender.
 
 
-If you turn off network protection, users or apps will not be blocked from connecting to dangerous domains. You will not see any network activity in Microsoft 365 Defender.
+If you turn off network protection, users or apps won't be blocked from connecting to dangerous domains. You won't see any network activity in Microsoft 365 Defender.
 
-If you do not configure it, network blocking will be turned off by default.
+If you don't configure it, network blocking is turned off by default.
 
 For more information, see [Enable network protection](enable-network-protection.md).
 
 ## Investigation impact
 
-When network protection is turned on, you'll see that on a device's timeline the IP address will keep representing the proxy, while the real target address shows up.
+When network protection is turned on, you'll see that on a device's timeline the IP address keeps representing the proxy, while the real target address shows up.
 
 :::image type="content" source="images/atp-proxy-investigation.png" alt-text="The network events on device's timeline" lightbox="images/atp-proxy-investigation.png":::
 
@@ -67,7 +70,7 @@ Event's information:
 
 All new connection events are available for you to hunt on through advanced hunting as well. Since these events are connection events, you can find them under the DeviceNetworkEvents table under the `ConnecionSuccess` action type.
 
-Using this simple query will show you all the relevant events:
+Using this simple query shows you all the relevant events:
 
 ```console
 DeviceNetworkEvents
@@ -87,6 +90,7 @@ DeviceNetworkEvents
 | take 10
 ```
 
-## Related topics
+## Related articles
 
 - [Applying network protection with GP - policy CSP](/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

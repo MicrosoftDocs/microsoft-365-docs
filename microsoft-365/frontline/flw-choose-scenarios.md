@@ -2,9 +2,9 @@
 title: Choose your scenarios for Microsoft 365 for frontline workers
 description: Learn about scenarios you can easily implement for the frontline workers in your organization.
 search.appverid: MET150
-author: samanro
-ms.author: samanro
-manager: pamgreen
+author: lana-chin
+ms.author: v-chinlana
+manager: serdars
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-365-frontline
@@ -19,7 +19,7 @@ ms.reviewer: aaglick
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 12/05/2022
+ms.date: 02/01/2023
 ---
 
 # Choose your scenarios for Microsoft 365 for frontline workers
@@ -101,9 +101,9 @@ Watch the following video to see an example of how you can simplify business pro
 
 :::image type="icon" source="media/virtual-appointment-teams.png":::
 
-Use the Virtual Appointments app (Preview) or the Bookings app and Microsoft Teams to schedule, manage, and host virtual appointments with clients and customers. You can integrate Forms with your virtual appointments to get the right information about your customers, or as part of your customer support experience to learn what your customers need.
+Use the Virtual Appointments app or the Bookings app and Microsoft Teams to schedule, manage, and host virtual appointments with clients and customers. You can integrate Forms with your virtual appointments to get the right information about your customers, or as part of your customer support experience to learn what your customers need.
 
-Watch the following video for an overview of the virtual appointments experience with the Bookings app and Teams:
+Watch the following video for an overview of the virtual appointments experience in Teams:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4TQop]
 

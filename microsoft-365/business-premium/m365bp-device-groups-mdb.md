@@ -8,10 +8,10 @@ manager: dansimp
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-security
-ms.subservice: other
-ms.date: 09/15/2022
-ms.localizationpriority: high
-ms.reviewer: shlomiakirav
+ms.subservice: m365bp
+ms.date: 07/19/2023
+ms.localizationpriority: medium
+ms.reviewer: nehabha
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
@@ -26,8 +26,12 @@ Microsoft 365 Business Premium includes endpoint protection through Microsoft De
 This article includes the following sections:  
 
 - [Working with device groups](#working-with-device-groups)
-- [How to create a new device group](#create-a-device-group-in-the-microsoft-365-defender-portal)
+- [How to create a new device group in the Microsoft 365 Defender portal](#create-a-device-group-in-the-microsoft-365-defender-portal)
 - [How to create a new device category in Intune](#create-a-device-category-in-intune)
+- [How to create dynamic device groups in Azure Active Directory](#create-dynamic-device-groups-in-azure-active-directory)
+- [How categories are used when enrolling devices](#how-categories-are-used-when-enrolling-devices)
+- [How to view the categories of devices that you manage](#view-the-categories-of-devices-that-you-manage)
+- [How to change the category of a device](#change-the-category-of-a-device)
 
 ## Working with device groups
 
@@ -72,7 +76,7 @@ You can create a new device group while you are in the process of creating or ed
 
 Create device categories in Intune from which users must choose when they enroll a device.
 
-1. Sign in to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com).
+1. Sign in to the [Microsoft Intune admin center](https://endpoint.microsoft.com).
 
 2. Choose **Devices** > **Device categories** > **Create device category** to add a new category.
 
@@ -90,9 +94,9 @@ In the Azure AD portal, you can create dynamic groups based on the device catego
 
 You can create a dynamic group for either devices or users, but not for both. You also can't create a device group based on the device owners' attributes. Device membership rules can only reference device attributions. 
 
-## After device groups are created
+## How categories are used when enrolling devices
 
-Now that categories and device groups are established, users of iOS and Android devices enroll their devices, and as they do so, they must choose a category from the list of categories that were configured. Windows users can use the Company Portal website or the Company Portal app to select a category.
+After categories and device groups are established, people who have iOS and Android devices can enroll their devices in Intune. When they enroll their devices, they'll choose a category from the list of categories that were configured. People who have Windows devices can use either the Company Portal website or the Company Portal app to select a category.
 
 1. After enrolling the device go to the [company portal](https://portal.microsoft.com) and choose **My Devices**.
 
@@ -106,7 +110,7 @@ After choosing a category, the device is automatically added to the correspondin
 
 ## View the categories of devices that you manage
 
-1. Sign in to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com), choose **Devices** > **All devices**.
+1. Sign in to the [Microsoft Intune admin center](https://endpoint.microsoft.com), choose **Devices** > **All devices**.
 
 2. In the list of devices, examine the **Device category** column.
 
@@ -114,10 +118,10 @@ After choosing a category, the device is automatically added to the correspondin
 
 ## Change the category of a device
 
-1. Sign in to the [Microsoft Endpoint Manager admin center](https://endpoint.microsoft.com), choose **Devices** > **All devices**. 
+1. Sign in to the [Microsoft Intune admin center](https://endpoint.microsoft.com), choose **Devices** > **All devices**. 
 
 2. Select the category you want from the list, to see its properties.
 
 ## Next steps
 
-Now that you've completed your primary missions, take time to set up your [response teams](m365bp-security-incident-management.md) and [maintain your environment](m365bp-maintain-environment.md).
+Now that you've completed your primary missions, take time to set up your [response teams](m365bp-security-incident-management.md) and [maintain your environment](m365bp-mdb-maintain-environment.md).

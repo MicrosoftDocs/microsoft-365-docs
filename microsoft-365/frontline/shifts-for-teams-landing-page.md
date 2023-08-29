@@ -2,10 +2,10 @@
 title: Shifts for frontline workers
 description: Get the admin guidance you need to set up and manage Shifts, the schedule management tool, in Microsoft Teams.
 ms.topic: conceptual
-author: LanaChin
-ms.author: v-lanachin
+author: lana-chin
+ms.author: v-chinlana
+manager: serdars
 audience: admin
-manager: samanro
 f1.keywords:
 - NOCSH
 ms.service: microsoft-365-frontline
@@ -57,7 +57,7 @@ If you're using a third-party workforce management (WFM) system for scheduling, 
 |---------|---------|
 |:::image type="icon" source="/office/media/icons/connector-teams.png":::| **[Overview](shifts-connectors.md)** Get an overview of Shifts connectors and how they work. Learn about the managed connectors that are available and the supported WFM systems.   |
 |:::image type="icon" source="/office/media/icons/connector-teams.png":::| **[Teams Shifts connector for Blue Yonder](shifts-connectors.md#microsoft-teams-shifts-connector-for-blue-yonder)** <ul><li>Learn how to set up a connection to Blue Yonder Workforce Management by using the [Shifts connector wizard](shifts-connector-wizard.md) or [PowerShell](shifts-connector-blue-yonder-powershell-setup.md).</li><li>Learn how to manage your connection to Blue Yonder Workforce Management by using the [Microsoft 365 admin center](shifts-connector-blue-yonder-admin-center-manage.md) or [PowerShell](shifts-connector-powershell-manage.md).</li></ul> |
-|:::image type="icon" source="/office/media/icons/connector-teams.png":::| **[Teams Shifts connector for UKG Dimensions](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-dimensions)** (preview) <ul><li>Learn how to set up a connection to UKG Dimensions by using the [Shifts connector wizard](shifts-connector-wizard-ukg.md) or [PowerShell](shifts-connector-ukg-powershell-setup.md).</li><li>Learn how to manage your connection to UKG Dimensions by using the [Microsoft 365 admin center](shifts-connector-ukg-admin-center-manage.md) or [PowerShell](shifts-connector-ukg-powershell-manage.md).</li></ul>|
+|:::image type="icon" source="/office/media/icons/connector-teams.png":::| **[Teams Shifts connector for UKG Dimensions](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-dimensions)** <ul><li>Learn how to set up a connection to UKG Dimensions by using the [Shifts connector wizard](shifts-connector-wizard-ukg.md) or [PowerShell](shifts-connector-ukg-powershell-setup.md).</li><li>Learn how to manage your connection to UKG Dimensions by using the [Microsoft 365 admin center](shifts-connector-ukg-admin-center-manage.md) or [PowerShell](shifts-connector-ukg-powershell-manage.md).</li></ul>|
 |:::image type="icon" source="/office/media/icons/connector-teams.png":::| **[Reflexis Shifts connector for Microsoft Teams](shifts-connectors.md#reflexis-shifts-connector-for-microsoft-teams)** Learn about integrating Shifts with the Reflexis WFM system through the connector.|
 
 ## Shifts extensions

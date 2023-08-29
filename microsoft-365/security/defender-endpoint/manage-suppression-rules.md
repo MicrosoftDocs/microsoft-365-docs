@@ -17,6 +17,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Manage suppression rules
@@ -55,3 +56,4 @@ You can view a list of all the suppression rules and manage them in one place. Y
 ## Related topics
 
 - [Manage alerts](manage-alerts.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

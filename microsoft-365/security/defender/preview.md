@@ -22,6 +22,7 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
+ms.date: 02/16/2021
 ---
 
 # Microsoft 365 Defender preview features
@@ -75,3 +76,4 @@ You'll know you have preview features turned on when you see that the **Turn on 
 
 
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

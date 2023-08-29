@@ -4,6 +4,7 @@ description: Learn about top design strategies for Microsoft Enterprise architec
 ms.author: bcarter
 author: brendacarter
 manager: bcarter
+ms.date: 05/01/2020
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -223,7 +224,7 @@ Sometimes scenarios call for adding an external user to a role (see the multi-te
 
 ### Microsoft 365 Defender and Microsoft 365 Purview compliance portals
 
-**Email & Collaboration roles** in the [Microsoft 365 Defender portal](../security/office-365-security/permissions-microsoft-365-security-center.md) and ***Role groups for Microsoft Purview solutions** in the [Microsoft 365 Purview compliance portal](../compliance/microsoft-365-compliance-center-permissions.md) are a collection of "role groups", which are separate and distinct from Azure AD roles. This can be confusing because some of these role groups have the same name as Azure AD roles (for example, Security Reader), yet they can have different membership. I prefer the use of Azure AD roles. Each role group consists of one or more "roles" (see what I mean about reusing the same word?) and have members from Azure AD, which are email enabled objects. Also, you can create a role group with the same name as a role, which may or may not contain that role (avoid this confusion).
+**Email & Collaboration roles** in the [Microsoft 365 Defender portal](../security/office-365-security/mdo-portal-permissions.md) and ***Role groups for Microsoft Purview solutions** in the [Microsoft 365 Purview compliance portal](../compliance/microsoft-365-compliance-center-permissions.md) are a collection of "role groups", which are separate and distinct from Azure AD roles. This can be confusing because some of these role groups have the same name as Azure AD roles (for example, Security Reader), yet they can have different membership. I prefer the use of Azure AD roles. Each role group consists of one or more "roles" (see what I mean about reusing the same word?) and have members from Azure AD, which are email enabled objects. Also, you can create a role group with the same name as a role, which may or may not contain that role (avoid this confusion).
 
 In a sense, these permissions are an evolution of the Exchange role groups model. However, Exchange Online has its own [role group management](/exchange/permissions-exo) interface. Some role groups in Exchange Online are locked and managed from Azure AD or the Microsoft 365 Defender and Microsoft 365 Purview compliance portals, but others might have the same or similar names and are managed in Exchange Online (adding to the confusion). I recommend you avoid using the Exchange Online user interface unless you need scopes for Exchange management.
 
@@ -244,7 +245,7 @@ As stated earlier, many customers are looking to achieve a more granular delegat
   - **Permission Filtering** - (../compliance/index.yml)
   - **Compliance Boundaries** - (../compliance/set-up-compliance-boundaries.md)
   - **eDiscovery (Premium)** - (../compliance/overview-ediscovery-20.md)
-- **Yammer** - (/yammer/manage-yammer-users/manage-yammer-admins)
+- **Viva Engage** - (/viva/engage/manage-viva-engage-users/manage-viva-engage-admins)
 - **Multi-geo** - (../enterprise/add-a-sharepoint-geo-admin.md)
 - **Dynamics 365** – (/dynamics365/)
 
@@ -260,7 +261,7 @@ As stated earlier, many customers are looking to achieve a more granular delegat
 
     Note: data platform security and delegation (which Power BI is a component) is a complex area.
 
-- **MEM/Intune** - (/mem/intune/fundamentals/role-based-access-control)
+- **Intune** - (/mem/intune/fundamentals/role-based-access-control)
 - **Microsoft Defender for Endpoint** - (/windows/security/threat-protection/microsoft-defender-atp/user-roles)
 - **Microsoft 365 Defender** - (../security/defender/m365d-permissions.md)
 - **Microsoft Defender for Cloud Apps** - (/cloud-app-security/manage-admins)

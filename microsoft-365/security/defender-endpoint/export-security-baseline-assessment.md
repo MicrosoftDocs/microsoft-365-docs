@@ -13,11 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - m365-security
-- tier2
-ms.topic: conceptual
+- tier3
+- must-keep
+ms.topic: reference
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
+ms.date: 05/02/2022
 ---
 
 # Export security baselines assessment per device
@@ -26,6 +28,7 @@ search.appverid: met150
 
 **Applies to:**
 
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender Vulnerability Management](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -168,11 +171,11 @@ GET /api/machines/BaselineComplianceAssessmentExport
 > [!NOTE]
 > The files are gzip compressed & in multiline Json format.
 >
->The download URLs are only valid for 3 hours; otherwise you can use the parameter.
+> The download URLs are only valid for 3 hours; otherwise you can use the parameter.
 >
->To maximize download speeds, make sure you are downloading the data from the same Azure region where your data resides.
+> To maximize download speeds, make sure you are downloading the data from the same Azure region where your data resides.
 >
->Some additional columns might be returned in the response. These columns are temporary and might be removed. Only use the documented columns.
+> Some additional columns might be returned in the response. These columns are temporary and might be removed. Only use the documented columns.
 
 Property (ID)|Data type|Description
 :---|:---|:---
@@ -192,7 +195,7 @@ GET https://api.securitycenter.microsoft.com/api/machines/BaselineComplianceAsse
 ```json
 {
     "@odata.context": "https://api.securitycenter. contoso.com/api/$metadata#microsoft.windowsDefenderATP.api.ExportFilesResponse",
-    "exportFiles": 
+    "exportFiles":
     [
     "https://tvmexportexternalstgeus.blob.core.windows.net/temp-1ebd3d09-d06a-4aad-ab80-ebc536cec61c/2021-12-22/0500/BaselineAssessmentExport/json/OrgId= OrgId=<Org Id>/_RbacGroupId=<Rbac Group Id>/part-00000-c09dfd00-2278-4735-b23a-71733751fcbc.c000.json.gz?sv=ABCD",
    "https://tvmexportexternalstgeus.blob.core.windows.net/temp-1ebd3d09-d06a-4aad-ab80-ebc536cec61c/2021-12-22/0500/BaselineAssessmentExport/json/OrgId=<Org Id>/_RbacGroupId=<Rbac Group Id>/part-00001-c09dfd00-2278-4735-b23a-71733751fcbc.c000.json.gz?sv= ABCD",
@@ -205,3 +208,4 @@ GET https://api.securitycenter.microsoft.com/api/machines/BaselineComplianceAsse
 
 - [Get security baselines assessment profiles](get-security-baselines-assessment-profiles.md)
 - [Get security baselines assessment configurations](get-security-baselines-assessment-configurations.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

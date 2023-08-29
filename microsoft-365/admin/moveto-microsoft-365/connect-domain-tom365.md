@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: twerner
 author: twernermsft
 manager: scotv
+ms.date: 01/07/2021
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -29,6 +30,8 @@ description: "Learn how to connect your domain to Microsoft 365."
 ---
 
 # Connect your domain to Microsoft 365 for business
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
 Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 

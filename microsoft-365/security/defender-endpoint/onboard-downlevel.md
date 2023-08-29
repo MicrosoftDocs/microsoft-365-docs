@@ -11,12 +11,13 @@ author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Onboard previous versions of Windows
@@ -24,6 +25,8 @@ search.appverid: met150
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -93,9 +96,8 @@ Review the following details to verify minimum system requirements:
 
 1. Download the agent setup file: [Windows 64-bit agent](https://go.microsoft.com/fwlink/?LinkId=828603) or [Windows 32-bit agent](https://go.microsoft.com/fwlink/?LinkId=828604).
 
-    >[!NOTE]
-    >Due to the [deprecation of SHA-1 support by the MMA agent](/azure/azure-monitor/agents/agent-windows#sha-2-code-signing-support-requirement), the MMA agent needs to be version 10.20.18029 or newer.
-    
+   > [!NOTE]
+   > Due to the [deprecation of SHA-1 support by the MMA agent](/azure/azure-monitor/agents/agent-windows#sha-2-code-signing-support-requirement), the MMA agent needs to be version 10.20.18029 or newer.
 
 2. Obtain the workspace ID:
    - In the Defender for Endpoint navigation pane, select **Settings > Device management > Onboarding**
@@ -118,6 +120,7 @@ Review the following details to verify minimum system requirements:
 Once completed, you should see onboarded endpoints in the portal within an hour.
 
 ## Configure proxy and Internet connectivity settings
+
 If your servers need to use a proxy to communicate with Defender for Endpoint, use one of the following methods to configure the MMA to use the proxy server:
 
 - [Configure the MMA to use a proxy server](/azure/azure-monitor/platform/agent-windows#install-agent-using-setup-wizard)
@@ -130,7 +133,7 @@ Once completed, you should see onboarded Windows servers in the portal within an
 
 ## Onboard Windows servers through Microsoft Defender for Cloud
 
-1. In the Microsoft 365 Defender navigation pane, select **Settings** > **Device management** > **Onboarding**.
+1. In the Microsoft 365 Defender navigation pane, select **Settings** > **Endpoints** > **Device management** > **Onboarding**.
 
 2. Select **Windows Server 2008 R2 SP1** as the operating system.
 
@@ -146,38 +149,39 @@ After completing the onboarding steps, you'll need to [Configure and update Syst
 > - Once configured, the appropriate cloud management pack is deployed on the machine and the sensor process (MsSenseS.exe) will be deployed and started.
 > - This is also required if the server is configured to use an OMS Gateway server as proxy.
 
-
-
 ## Verify onboarding
 
-Verify that Microsoft Defender Antivirus and Microsoft Defender for Endpoint are running. 
+Verify that Microsoft Defender Antivirus and Microsoft Defender for Endpoint are running.
 
 > [!NOTE]
-> Running Microsoft Defender Antivirus is not required but it is recommended. If another antivirus vendor product is the primary endpoint protection solution, you can run Defender Antivirus in Passive mode. You can only confirm that passive mode is on after verifying that Microsoft Defender for Endpoint sensor (SENSE) is running. 
+> Running Microsoft Defender Antivirus is not required but it is recommended. If another antivirus vendor product is the primary endpoint protection solution, you can run Defender Antivirus in Passive mode. You can only confirm that passive mode is on after verifying that Microsoft Defender for Endpoint sensor (SENSE) is running.
+
+> [!NOTE]
+> As Microsoft Defender Antivirus is only supported for Windows 10 and Windows 11, step 1 does not apply when running Windows Server 2008 R2 SP1.
 
 1. Run the following command to verify that Microsoft Defender Antivirus is installed:
 
-   ```sc.exe query Windefend```
+   ```dos
+   sc.exe query Windefend
+   ```
 
-    If the result is 'The specified service doesn't exist as an installed service', then you'll need to install Microsoft Defender Antivirus. For more information, see [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-windows.md).
+   If the result is 'The specified service doesn't exist as an installed service', then you'll need to install Microsoft Defender Antivirus. For more information, see [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-windows.md).
 
-    For information on how to use Group Policy to configure and manage Microsoft Defender Antivirus on your Windows servers, see [Use Group Policy settings to configure and manage Microsoft Defender Antivirus](use-group-policy-microsoft-defender-antivirus.md).
-
+   For information on how to use Group Policy to configure and manage Microsoft Defender Antivirus on your Windows servers, see [Use Group Policy settings to configure and manage Microsoft Defender Antivirus](use-group-policy-microsoft-defender-antivirus.md).
 
 2. Run the following command to verify that Microsoft Defender for Endpoint is running:
 
-    ```sc.exe query sense```
-    
-    The result should show it is running. If you encounter issues with onboarding, see [Troubleshoot onboarding](troubleshoot-onboarding.md).
+   ```dos
+   sc.exe query sense
+   ```
+
+The result should show it is running. If you encounter issues with onboarding, see [Troubleshoot onboarding](troubleshoot-onboarding.md).
 
 ## Run a detection test
+
 Follow the steps in [Run a detection test on a newly onboarded device](run-detection-test.md) to verify that the server is reporting to Defender for the Endpoint service.
 
-
-
-
-
-## Onboarding endpoints with no management solution 
+## Onboarding endpoints with no management solution
 
 ### Using Group Policy
 
@@ -186,52 +190,47 @@ Follow the steps in [Run a detection test on a newly onboarded device](run-detec
 1. Navigate to c:\windows\sysvol\domain\scripts (Change control could be needed on one of the domain controllers.)
 1. Create a folder named MMA.
 1. Download the following and place them in the MMA folder:
-   
+
     - Update for customer experience and diagnostic telemetry:
       - [For Windows Server 2008 R2 x64](https://www.microsoft.com/download/details.aspx?familyid=1bd1d18d-4631-4d8e-a897-327925765f71)
-     
+
     For Windows Server 2008 R2 SP1, following updates are also required:
 
     February 2018 Monthly Roll up - KB4074598 (Windows Server 2008 R2)
 
     [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4074598)<br>
     Download updates for Windows Server 2008 R2 x64
-    
+
     .NET Framework 3.5.1 (KB315418)<br>
     [For Windows Server 2008 R2 x64](/iis/install/installing-iis-7/install-windows-server-2008-and-windows-server-2008-r2)
-    
-    >[!NOTE]
-    > This article assumes you are using x64-based servers (MMA Agent .exe x64 New SHA-2 compliant version).
 
+    > [!NOTE]
+    > This article assumes you are using x64-based servers (MMA Agent .exe x64 New SHA-2 compliant version).
 
 **Step 2: Create a file name DeployMMA.cmd (using notepad)**
 Add the following lines to the cmd file. Note that you'll need your WORKSPACE ID and KEY.
 
 The following command is an example. Replace the following values:
+
 - KB - Use the applicable KB relevant to the endpoint you're onboarding
 - Workspace ID and KEY - Use your ID and key
 
-
 ```dos
-@echo off  
-cd "C:" 
-IF EXIST "C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe" (  
-exit 
-) ELSE ( 
- 
-wusa.exe C:\Windows\MMA\Windows6.1-KB3080149-x64.msu /quiet /norestart 
-wusa.exe C:\Windows\MMA\Windows6.1-KB4074598-x64.msu /quiet /norestart 
-wusa.exe C:\Windows\MMA\Windows6.1-KB3154518-x64.msu /quiet /norestart 
-wusa.exe C:\Windows\MMA\Windows8.1-KB3080149-x64.msu /quiet /norestart 
+@echo off
+cd "C:"
+IF EXIST "C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe" (
+exit
+) ELSE (
+
+wusa.exe C:\Windows\MMA\Windows6.1-KB3080149-x64.msu /quiet /norestart
+wusa.exe C:\Windows\MMA\Windows6.1-KB4074598-x64.msu /quiet /norestart
+wusa.exe C:\Windows\MMA\Windows6.1-KB3154518-x64.msu /quiet /norestart
+wusa.exe C:\Windows\MMA\Windows8.1-KB3080149-x64.msu /quiet /norestart
 "c:\windows\MMA\MMASetup-AMD64.exe" /c /t:"C:\Windows\MMA"
 c:\windows\MMA\setup.exe /qn NOAPM=1 ADD_OPINSIGHTS_WORKSPACE=1 OPINSIGHTS_WORKSPACE_ID="<your workspace ID>" OPINSIGHTS_WORKSPACE_KEY="<your workspace key>" AcceptEndUserLicenseAgreement=1
 
-) 
+)
 ```
-
-
-
-
 
 ### Group Policy Configuration
 
@@ -257,10 +256,10 @@ Repeat the process but create item level targeting on the COMMON tab, so the fil
 :::image type="content" source="images/targeteditor.png" alt-text="The target editor" lightbox="images/targeteditor.png":::
 
 For Windows Server 2008 R2 you'll need (and it will only copy down) the following:
+
 - Windows6.1-KB3080149-x64.msu
 - Windows6.1-KB3154518-x64.msu
 - Windows6.1-KB4075598-x64.msu
-
 
 Once this is done, you'll need to create a start-up script policy:
 
@@ -290,7 +289,6 @@ For Windows Server 2008 R2 SP1, ensure that you fulfill the following requiremen
 - Install either [.NET framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (or later) or [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework)
 
 Please check the KBs are present before onboarding Windows Server 2008 R2. This process allows you to onboard all the servers if you don't have Configuration Manager managing Servers.
-
 
 ## Offboard endpoints
 
@@ -327,17 +325,17 @@ You can use either of the following methods:
 1. Get your Workspace ID:
 
    1. In the navigation pane, select **Settings** > **Onboarding**.
-
    1. Select the relevant operating system and get your Workspace ID.
 
-    
 2. Open an elevated PowerShell and run the following command. Use the Workspace ID you obtained and replacing `WorkspaceID`:
 
-    ```   
+    ```powershell
     $AgentCfg = New-Object -ComObject AgentConfigManager.MgmtSvcCfg
+
     # Remove OMS Workspace
     $AgentCfg.RemoveCloudWorkspace("WorkspaceID")
+
     # Reload the configuration and apply changes
     $AgentCfg.ReloadConfiguration()
-
     ```
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

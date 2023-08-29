@@ -1,8 +1,8 @@
 ---
 title: Help your clients and customers use virtual appointments scheduled with the Bookings app in Teams
-author: daisyfell
-ms.author: daisyfeller
-manager: pamgreen
+author: lana-chin
+ms.author: v-chinlana
+manager: serdars
 audience: ITPro
 ms.topic: end-user-help 
 ms.service: microsoft-365-frontline 
@@ -88,17 +88,16 @@ You can link to your organization’s cancellation and rescheduling policy here,
 
 **What equipment do I need for a virtual appointment?**
 
-Customers can join a virtual appointment from any web browser or through the Microsoft Teams app. List here if your organization has additional specifications, such as a high-quality webcam or microphone. If your healthcare organization has integrated your Electronic Health Record (EHR) system with Teams, patients can join visits from your healthcare portal.
+Customers can join a virtual appointment from any [supported web browser](browser-join.md#supported-browsers) or through the Microsoft Teams app. List here if your organization has additional specifications, such as a high-quality webcam or microphone. If your healthcare organization has integrated your Electronic Health Record (EHR) system with Teams, patients can join visits from your healthcare portal.
 
 **How do I join a virtual appointment?**
 
-Share the [Join a Bookings appointment as an attendee](https://support.microsoft.com/office/join-a-bookings-appointment-attendees-3deb7bde-3ea3-4b41-8a06-741ad0db9fc0) link with your customers for a detailed video and step-by-step process of how to join an appointment.
+Share the [Join a Virtual Appointment as an attendee](https://support.microsoft.com/topic/235765b0-0d9f-4d74-a9f8-e883cb75c0da) link with your customers for a detailed video and step-by-step process of how to join an appointment.
 
 ## Resources for your team
 
 Make the most of Virtual Appointments in your organization by making sure your staff members know how to conduct them. You can share these articles and videos with your team members to help them better understand virtual appointments.
 
-- [Learn about Virtual Appointments with Teams and the Bookings app](bookings-virtual-appointments.md)
 - [Learn how to use the Bookings app in Teams](https://support.microsoft.com/office/what-is-bookings-42d4e852-8e99-4d8f-9b70-d7fc93973cb5).
 - [Learn how to join a Bookings appointment](https://support.microsoft.com/office/join-a-bookings-appointment-attendees-3deb7bde-3ea3-4b41-8a06-741ad0db9fc0).
 - [Conduct an appointment](bookings-virtual-visits.md#conduct-an-appointment).

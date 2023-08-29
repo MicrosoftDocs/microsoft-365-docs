@@ -18,6 +18,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Privacy information - Microsoft Defender for Endpoint on iOS
@@ -32,7 +33,7 @@ search.appverid: met150
 > [!NOTE]
 > Defender for Endpoint on iOS uses a VPN to provide the Web Protection feature. This is not a regular VPN and is a local or self-looping VPN that does not take traffic outside the device. **Microsoft or your organization, does not see your browsing activity.**
 
-Defender for Endpoint on iOS collects information from your configured iOS devices and stores it in the same tenant where you have Defender for Endpoint. The information is collected to help keep Defender for Endpoint on iOS secure, up-to-date, performing as expected, and to support the service.
+Defender for Endpoint on iOS collects information from your configured iOS devices and stores it in the same tenant where you have Defender for Endpoint. The information is collected to help keep Defender for Endpoint on iOS secure, up to date, performing as expected, and to support the service.
 
 For more information about data storage, see [Microsoft Defender for Endpoint data storage and privacy](data-storage-privacy.md).
 
@@ -83,3 +84,4 @@ Feedback Data is collected through in-app feedback provided by the user.
 - Feedback type (smile, frown, idea) and any feedback comments submitted by the user.
 
 For more information, see [More on Privacy](https://aka.ms/mdatpiosprivacystatement).
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

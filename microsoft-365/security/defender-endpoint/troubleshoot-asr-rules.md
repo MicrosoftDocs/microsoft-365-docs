@@ -1,15 +1,10 @@
 ---
 title: Report and troubleshoot Microsoft Defender for Endpoint ASR Rules
 description: This topic describes how to report and troubleshoot Microsoft Defender for Endpoint ASR Rules
-keywords: Attack surface reduction rules, asr, hips, host intrusion prevention system, protection rules, anti-exploit, antiexploit, exploit, infection prevention, microsoft defender for endpoint
-search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
 ms.service: microsoft-365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
 ms.localizationpriority: medium
 audience: ITPro
-author: lovina-saldanha
+author: dansimp
 ms.author: dansimp
 ms.reviewer:
 manager: dansimp
@@ -22,6 +17,7 @@ ms.collection:
 - m365-security
 - tier3
 search.appverid: met150
+ms.date: 07/18/2023
 ---
 
 # Report and troubleshoot Microsoft Defender for Endpoint ASR Rules
@@ -30,6 +26,7 @@ search.appverid: met150
 
 **Applies to:**
 
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -50,7 +47,12 @@ Through advanced hunting, it's possible to extract ASR rules information, create
 
 ASR rules events are available to be queried from the DeviceEvents table in the advanced hunting section of the Microsoft 365 Defender. For example, a simple query such as the one below can report all the events that have ASR rules as data source, for the last 30 days, and will summarize them by the ActionType count, that in this case it will be the actual codename of the ASR rule.
 
-:::image type="content" source="images/adv-hunt-querynew.png" alt-text="The Advanced hunting query" lightbox="images/adv-hunt-querynew.png":::
+```kusto
+DeviceEvents
+| where Timestamp > ago(30d)
+| where ActionType startswith "Asr"
+| summarize EventCount=count() by ActionType
+```
 
 :::image type="content" source="images/adv-hunt-sc-2new.png" alt-text="The Advanced hunting page" lightbox="images/adv-hunt-sc-2new.png":::
 
@@ -85,7 +87,7 @@ To expand the above information on ASR rules, you can use the properties **Attac
 Example:
 
 ```powershell
-Get-MPPreference | Select-Object -ExpandProperty**AttackSurfaceReductionRules_Ids
+Get-MPPreference | Select-Object -ExpandProperty AttackSurfaceReductionRules_Ids
 ```
 
 :::image type="content" source="images/getmpref-examplenew.png" alt-text="The get mpreference example" lightbox="images/getmpref-examplenew.png":::
@@ -125,3 +127,4 @@ The most relevant files are as follows:
 - **MPOperationalEvents.txt**: This file contains same level of information found in Event Viewer for Windows Defender's Operational log.
 - **MPRegistry.txt**: In this file you can analyze all the current Windows Defender configurations, from the moment the support logs were captured.
 - **MPLog.txt**: This log contains more verbose information about all the actions/operations of the Windows Defender.
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

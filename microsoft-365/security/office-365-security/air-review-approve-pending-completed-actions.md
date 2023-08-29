@@ -14,20 +14,19 @@ search.appverid:
 - MOE150
 ms.collection:
 - m365-security
-- m365initiative-defender-office365
+- tier2
 ms.custom:
 description: Learn about remediation actions in automated investigation and response capabilities in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 06/10/2021
+ms.date: 06/09/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
 ---
 
 # Review and manage remediation actions in Office 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
-
-**Applies to**
-- [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
 
 As automated investigations on email & collaboration content result in verdicts, such as *Malicious* or *Suspicious*, certain remediation actions are created. In Microsoft Defender for Office 365, remediation actions can include:
 
@@ -65,6 +64,9 @@ There are four different ways to find and take auto investigation actions:
    - Select **Open investigation page** to view more details about the investigation.
    - Select **Approve** to initiate a pending action.
    - Select **Reject** to prevent a pending action from being taken.
+  
+> [!NOTE]
+> Pending actions time out after awaiting approval for one week.
 
 ## Investigation and remediation investigations queue
 
@@ -96,7 +98,7 @@ There are two different ways to reconsider submitted actions:
 
 ## Next steps
 
-- [Use Threat Explorer](threat-explorer.md)
+- [Use Threat Explorer](threat-explorer-about.md)
 - [Admin /Manual Actions](remediate-malicious-email-delivered-office-365.md)
 - [How to report false positives/negatives in automated investigation and response capabilities](air-report-false-positives-negatives.md)
 

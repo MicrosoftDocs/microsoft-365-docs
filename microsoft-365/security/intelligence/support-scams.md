@@ -4,6 +4,7 @@ ms.reviewer:
 description: Microsoft security software can protect you from tech support scams that claims to scan for malware or viruses and then shows you fake detections and warnings.
 keywords: security, malware, tech support, scam, protection, trick, spoof, fake, error messages, report, rogue security software, fake, antivirus, fake software, rogue, threats, fee, removal fee, upgrade, pay for removal, install full version, trial, lots of threats, scanner, scan, clean, computer, security, program, XP home security, fake microsoft, activate, activate scan, activate antivirus, warnings, pop-ups, security warnings, security pop-ups tech support scams, fake Microsoft error notification, fake virus alert, fake product expiration, fake Windows activation, scam web pages, scam phone numbers, telephone numbers, MMPC, WDSI, Microsoft Malware Protection Center, tech support scam numbers
 ms.service: microsoft-365-security
+ms.subservice: intelligence
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -16,7 +17,9 @@ ms.collection:
 - tier2
 ms.topic: conceptual
 search.appverid: met150
+ms.date: 03/18/2022
 ---
+
 # Tech support scams
 
 Tech support scams are an industry-wide issue where scammers use scare tactics to trick users into paying for unnecessary technical support services that supposedly fix contrived device, platform, or software problems.
@@ -35,9 +38,9 @@ When you engage with the scammers, they can offer fake solutions for your "probl
 
 Share and implement the general tips on how to [prevent malware infection](prevent-malware-infection.md).
 
-It is also important to keep the following in mind:
+It's also important to keep the following in mind:
 
-* Microsoft does not send unsolicited email messages or make unsolicited phone calls to request personal or financial information, or to fix your computer.
+* Microsoft doesn't send unsolicited email messages or make unsolicited phone calls to request personal or financial information, or to fix your computer.
 
 * Any communication with Microsoft has to be initiated by you.
 
@@ -53,13 +56,13 @@ It is also important to keep the following in mind:
 
 * Uninstall applications that scammers asked to be install. If access has been granted, consider resetting the device
 
-* Run a full scan with Microsoft Defender Antivirus to remove any malware. Apply all security updates as soon as they are available.
+* Run a full scan with Microsoft Defender Antivirus to remove any malware. Apply all security updates as soon as they're available.
 
 * Change passwords.
 
-* Call your credit card provider to reverse the charges, if you have already paid.
+* Call your credit card provider to reverse the charges, if you've already paid.
 
-* Monitor anomalous logon activity. Use Windows Defender Firewall to block traffic to services that you would not normally access.
+* Monitor anomalous logon activity. Use Windows Defender Firewall to block traffic to services that you wouldn't normally access.
 
 ### Reporting tech support scams
 

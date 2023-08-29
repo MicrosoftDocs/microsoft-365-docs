@@ -2,9 +2,10 @@
 title: "Find and fix issues after adding your domain or DNS records"
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
+ms.author: nkagole
+author: nataliekagole
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -32,6 +33,8 @@ description: "Learn to track down any problems you run into while setting up a c
 ---
 
 # Find and fix issues after adding your domain or DNS records
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
  **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for. 
   
@@ -80,7 +83,7 @@ What if you don't want to move email for everyone on your domain to Microsoft 36
 
 There are a couple of scenarios when you just need to verify your organization's domain and not set up any services. For example, to prove to Microsoft 365 that your organization qualifies for a school subscription.
   
-Check out the guidance in [Verify your Microsoft 365 domain to prove ownership, nonprofit or education status, or to activate Yammer](../setup/domains-faq.yml) to make sure you've completed all the required steps. It's a little different for each situation. 
+Check out the guidance in [Verify your Microsoft 365 domain to prove ownership, nonprofit or education status, or to activate Viva Engage](../setup/domains-faq.yml) to make sure you've completed all the required steps. It's a little different for each situation. 
   
 ## Services not working with your domain?
 
@@ -101,4 +104,3 @@ If you've fixed any DNS issues and you're still having trouble, try one of the f
 
 [Troubleshoot: Audit data on verified domain change](/azure/active-directory/reports-monitoring/troubleshoot-audit-data-verified-domain) (article)\
 [Domains FAQ](../setup/domains-faq.yml) (article)
-

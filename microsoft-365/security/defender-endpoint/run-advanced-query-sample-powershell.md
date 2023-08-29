@@ -15,10 +15,12 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
-ms.topic: conceptual
+- must-keep
+ms.topic: reference
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Advanced Hunting using PowerShell
@@ -62,7 +64,7 @@ $tenantId = '00000000-0000-0000-0000-000000000000' # Paste your own tenant ID he
 $appId = '11111111-1111-1111-1111-111111111111' # Paste your own app ID here
 $appSecret = '22222222-2222-2222-2222-222222222222' # Paste your own app secret here
 
-$resourceAppIdUri = 'https://api.securitycenter.microsoft.com'
+$resourceAppIdUri = 'https://api.security.microsoft.com'
 $oAuthUri = "https://login.microsoftonline.com/$TenantId/oauth2/token"
 $body = [Ordered] @{
     resource = "$resourceAppIdUri"
@@ -84,9 +86,10 @@ where
 Run the following query:
 
 ```powershell
+$token = $aadToken
 $query = 'DeviceRegistryEvents | limit 10' # Paste your own query here
 
-$url = "https://api.securitycenter.microsoft.com/api/advancedqueries/run"
+$url = "https://api.security.microsoft.com/api/advancedhunting/run"
 $headers = @{ 
     'Content-Type' = 'application/json'
     Accept = 'application/json'
@@ -117,7 +120,7 @@ You can now use the query results.
 To output the results of the query in CSV format in file file1.csv, run the following command:
 
 ```powershell
-$results | ConvertTo-Csv -NoTypeInformation | Set-Content file1.csv
+$results | ConvertTo-Csv -NoTypeInformation | Set-Content C:\file1.csv
 ```
 
 To output the results of the query in JSON format in file file1.json, run the following command:
@@ -131,3 +134,4 @@ $results | ConvertTo-Json | Set-Content file1.json
 - [Microsoft Defender for Endpoint APIs](apis-intro.md)
 - [Advanced Hunting API](run-advanced-query-api.md)
 - [Advanced Hunting using Python](run-advanced-query-sample-python.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

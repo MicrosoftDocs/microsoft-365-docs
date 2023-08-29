@@ -19,6 +19,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Configure and manage Microsoft Defender Experts capabilities
@@ -173,3 +174,4 @@ It's crucial to respond in quickly to keep the investigation moving.
 #### To proactively hunt threats across endpoints, Office 365, cloud applications, and identity, refer to
 
 - [Microsoft Defender Experts in Microsoft 365 Overview](../defender/defender-experts-for-hunting.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

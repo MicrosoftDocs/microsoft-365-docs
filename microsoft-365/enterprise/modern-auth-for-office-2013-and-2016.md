@@ -3,6 +3,7 @@ title: "How modern authentication works for Office 2013 and Office 2016 client a
 ms.author: tracyp
 author: MSFTTracyP
 manager: scotv
+ms.date: 08/10/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
@@ -170,8 +171,6 @@ The following table describes the authentication behavior for Office 2013, Offic
 |Office 2013  <br/> |Yes, EnableADAL = 1  <br/> |Yes  <br/> |Modern authentication is attempted first. If the server refuses a modern authentication connection, then Microsoft Online Sign-in Assistant is used. Server refuses modern authentication when Skype for Business Online tenants are not enabled.  <br/> |Microsoft Online Sign-in Assistant only.  <br/> |
 
 ## See also
-
-[Enable Modern Authentication for Office 2013 on Windows devices](../admin/security-and-compliance/enable-modern-authentication.md)
 
 [Multi-factor authentication for Microsoft 365](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md)
 

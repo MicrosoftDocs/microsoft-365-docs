@@ -1,6 +1,7 @@
 ---
 title: "Move a OneDrive site to a different geo location"
 ms.reviewer: adwood
+ms.date: 08/10/2020
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -45,7 +46,8 @@ You can schedule OneDrive site moves in advance (described later in this article
 
 - You can schedule up to 4,000 moves at a time.
 - As the moves begin, you can schedule more, with a maximum of 4,000 pending moves in the queue and any given time.
-- The maximum size of a OneDrive that can be moved is 2 terabytes (2 TB).
+- The maximum size of a OneDrive that can be moved is 1 terabyte (1 TB).
+- The maximum number of list items that can be moved is 1,000,000. 
 
 ## Moving a OneDrive site
 

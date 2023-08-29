@@ -11,28 +11,27 @@ f1.keywords:
 author: dansimp
 ms.author: dansimp
 ms.service: microsoft-365-security
-ms.date: 01/29/2021
+ms.date: 06/09/2023
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
 - m365-security
-- m365initiative-defender-office365
+- tier2
 ms.topic: how-to
 ms.custom: 
 - autoir
 ms.subservice: mdo
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
 # How to report false positives/negatives in automated investigation and response capabilities
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-**Applies to**
-- [Microsoft Defender for Office 365 plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-
-If [automated investigation and response (AIR) capabilities in Office 365](automated-investigation-response-office.md) missed or wrongly detected something, there are steps your security operations team can take to fix it. Such actions include:
+If [automated investigation and response (AIR) capabilities in Office 365](air-about-office.md) missed or wrongly detected something, there are steps your security operations team can take to fix it. Such actions include:
 
 - [Reporting a false positive/negative to Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
 - [Adjusting alerts](#adjust-an-alert-to-prevent-false-positives-from-recurring) (if needed); and
@@ -80,4 +79,4 @@ In the Action center, you can see remediation actions that were taken and potent
 ## See also
 
 - [Microsoft Defender for Office 365](defender-for-office-365.md)
-- [Automated investigations in Microsoft Defender for Office 365](office-365-air.md)
+- [Automated investigations in Microsoft Defender for Office 365](air-about.md)

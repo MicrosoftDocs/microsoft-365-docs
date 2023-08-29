@@ -42,9 +42,9 @@ You can find user account information in the following views:
 - Alert queue
 - Device details page
 
-A clickable user account link is available in these views, that will take you to the user account details page where more details about the user account are shown.
+A clickable user account link is available in these views, which take you to the user account details page where more details about the user account are shown.
 
-When you investigate a user account entity, you'll see:
+When you investigate a user account entity, you can see:
 
 - User account details, Microsoft Defender for Identity alerts, and logged on devices, role, logon type, and other details
 - Overview of the incidents and user's devices
@@ -55,17 +55,15 @@ When you investigate a user account entity, you'll see:
 
 ### User details
 
-The **User details** pane on left provides information about the user, such as related open incidents, active alerts, SAM name, SID, Microsoft Defender for Identity alerts, number of devices the user is logged on to, when the user was first and last seen, role, and logon types. Depending on the integration features you've enabled, you'll see other details. For example, if you enable the Skype for business integration, you'll be able to contact the user from the portal. The **Azure ATP alerts** section contains a link that will take you to the Microsoft Defender for Identity page, if you have enabled the Microsoft Defender for Identity feature, and there are alerts related to the user. The Microsoft Defender for Identity page will provide more information about the alerts.
+The **User details** pane on left provides information about the user, such as related open incidents, active alerts, SAM name, SID, Microsoft Defender for Identity alerts, number of devices the user is logged on to, when the user was first and last seen, role, and logon types. Depending on the integration features you've enabled, you can see other details. For example, if you enable the Skype for business integration, you're able to contact the user from the portal. The **Azure ATP alerts** section contains a link that takes you to the Microsoft Defender for Identity page, if you've enabled the Microsoft Defender for Identity feature, and there are alerts related to the user. The Microsoft Defender for Identity page provides more information about the alerts.
 
 > [!NOTE]
 > You'll need to enable the integration on both Microsoft Defender for Identity and Defender for Endpoint to use this feature. In Defender for Endpoint, you can enable this feature in advanced features. For more information on how to enable advanced features, see [Turn on advanced features](advanced-features.md).
 
 The Overview, Alerts, and Observed in organization are different tabs that display various attributes about the user account.
 
-
->[!NOTE]
->For Linux devices, information about logged in users is not displayed.
-
+> [!NOTE]
+> For Linux devices, information about logged in users is not displayed.
 
 ### Overview
 
@@ -79,7 +77,7 @@ The **Alerts** tab provides a list of alerts that are associated with the user a
 
 The **Observed in organization** tab allows you to specify a date range to see a list of devices where this user was observed logged on to, the most frequent and least frequent logged on user account for each of these devices, and total observed users on each device.
 
-Selecting an item on the Observed in organization table will expand the item, revealing more details about the device. Directly selecting a link within an item will send you to the corresponding page.
+Selecting an item on the Observed in organization table expands the item, revealing more details about the device. Directly selecting a link within an item sends you to the corresponding page.
 
 ## Search for specific user accounts
 
@@ -87,7 +85,7 @@ Selecting an item on the Observed in organization table will expand the item, re
 2. Enter the user account in the **Search** field.
 3. Click the search icon or press **Enter**.
 
-A list of users matching the query text is displayed. You'll see the user account's domain and name, when the user account was last seen, and the total number of devices it was observed logged on to in the last 30 days.
+A list of users matching the query text is displayed. You can see the user account's domain and name, when the user account was last seen, and the total number of devices it was observed logged on to in the last 30 days.
 
 You can filter the results by the following time periods:
 
@@ -97,7 +95,7 @@ You can filter the results by the following time periods:
 - 30 days
 - 6 months
 
-## Related topics
+## Related articles
 
 - [View and organize the Microsoft Defender for Endpoint Alerts queue](alerts-queue.md)
 - [Manage Microsoft Defender for Endpoint alerts](manage-alerts.md)
@@ -106,3 +104,4 @@ You can filter the results by the following time periods:
 - [Investigate devices in the Defender for Endpoint Devices list](investigate-machines.md)
 - [Investigate an IP address associated with a Defender for Endpoint alert](investigate-ip.md)
 - [Investigate a domain associated with a Defender for Endpoint alert](investigate-domain.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

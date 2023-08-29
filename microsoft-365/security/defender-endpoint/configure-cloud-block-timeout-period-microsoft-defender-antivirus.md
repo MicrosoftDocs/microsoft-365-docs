@@ -39,11 +39,11 @@ The default period that the file is [blocked](configure-block-at-first-sight-mic
 
 [Block at first sight](configure-block-at-first-sight-microsoft-defender-antivirus.md) and its prerequisites must be enabled before you can specify an extended timeout period.
 
-## Specify the extended timeout period using Microsoft Endpoint Manager
+## Specify the extended timeout period using Microsoft Intune
 
-You can specify the cloud block timeout period with an [endpoint security policy in Microsoft Endpoint Manager](/mem/intune/protect/endpoint-security-policy).
+You can specify the cloud block timeout period with an [endpoint security policy in Microsoft Intune](/mem/intune/protect/endpoint-security-policy).
 
-1. Go to the Endpoint Manager admin center ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)) and sign in.
+1. Go to the Intune admin center ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)) and sign in.
 
 2. Select **Endpoint security**, and then under **Manage**, choose **Antivirus**.
 
@@ -82,3 +82,4 @@ You can use Group Policy to specify an extended timeout for cloud checks.
 > - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 > - [Configure Defender for Endpoint on Android features](android-configure.md)
 > - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md) 
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

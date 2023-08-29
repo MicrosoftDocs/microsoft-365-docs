@@ -3,8 +3,9 @@ title: "Step 1 - Prevent a former employee from logging in and block access to M
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
+ms.date: 03/17/2021
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -17,12 +18,13 @@ ms.collection:
 - Adm_TOC
 - SPO_Content
 ms.custom:
-- MSStore_Link
-- TRN_M365B
-- OKR_SMB_Videos
-- AdminSurgePortfolio
-- m365solution-removeemployee
-- admindeeplinkEXCHANGE
+  - MSStore_Link
+  - TRN_M365B
+  - OKR_SMB_Videos
+  - AdminSurgePortfolio
+  - m365solution-removeemployee
+  - admindeeplinkEXCHANGE
+  - has-azure-ad-ps-ref
 search.appverid:
 - BCS160
 - MET150

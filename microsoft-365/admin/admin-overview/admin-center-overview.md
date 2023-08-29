@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
+ms.date: 08/10/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -31,12 +32,46 @@ description: "Use either simplified view in the Microsoft 365 admin center to ma
 
 # Overview of the Microsoft 365 admin center
 
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
+
+The Microsoft 365 admin center gives users a central location to take care of common admin tasks, such as: 
+
+- Manage users: [Add users and assign licenses at the same time](../add-users/add-users.md), [Delete or restore users](../add-users/delete-a-user.md), or [Reset a user's password](../add-users/reset-passwords.md).
+
+- Get help with billing: [Billing](../../commerce/index.yml)
+
+- See activity reports: [Activity Reports](../activity-reports/activity-reports.md)
+
+- [Create a Microsoft 365 group](../create-groups/create-groups.md)
+
+- [Manage a Microsoft 365 group](../create-groups/manage-groups.md)
+
+## Admin center features and settings
+
+Here are the features and settings you'll find in the left-hand navigation of the admin center. Learn more about admin tasks in [admin help](/microsoft-365/admin/).
+
+|Menu|What it's for|
+|---|---|
+|**Home**|This is the landing page in the admin center. You'll see where to manage users, billing, service health, and reports.|
+|**Users**|Create and manage users in your organization, like employees or students. You can also set their permission level or reset their passwords.|
+|**Groups**|Create and manage groups in your organization, such as a Microsoft 365 group, distribution group, security group, or shared mailbox. Learn how to [create](../create-groups/create-groups.md) and [manage](../create-groups/manage-groups.md) groups.|
+|**Resources**|Create and manage resources, like a SharePoint site collection. Learn how to [create site collections](/sharepoint/create-site-collection).|
+|**Billing**|View, purchase, or cancel subscriptions for your organization. View past billing statements or view the number of assigned licenses to individual users. Learn how to [manage billing](../../commerce/index.yml).|
+|**Support**|View existing service requests or create new ones. Learn more in [Contact support for business products - Admin Help](../../business-video/get-help-support.md).|
+|**Settings**|Manage global settings for apps like email, sites, and Microsoft 365. Change your password policy and expiration date. Add and update domain names like contoso.com. Change your organization profile and release preferences. And choose whether partners can access your admin center.|
+|**Setup**|Manage existing domains, turn on and manage multi-factor authentication, manage admin access, migrate user mailboxes to Microsoft 365, manage feature updates, and help users install their Microsoft 365 apps.|
+|**Reports**|See at a glance how your organization is using Microsoft 365 with detailed reports on email use, Microsoft 365 activations, and more. Learn how to use the new [activity reports](../activity-reports/activity-reports.md).|
+|**Health**|View health at a glance. You can also check out more details and the health history. See [How to check service health](../../enterprise/view-service-health.md) and [How to check Windows release health](/windows/deployment/update/check-release-health) for more information. <p> Use Message center to keep track of upcoming changes to features and services. We post announcements there with information that helps you plan for change and understand how it may affect users. Get more details in [Message center](../manage/message-center.md).|
+|**Admin centers**|Open separate admin centers for Exchange, Skype for Business, SharePoint, Viva Engage, and Azure AD. Each admin center includes all available settings for that service. <p> For example, in the Exchange admin center, set up and manage email, calendars, distribution groups, and more. In the SharePoint admin center, create and manage site collections, site settings, and OneDrive for Business. In the Skype for Business admin center, set up instant messaging notifications, dial-in conferencing, and online presence. <p> Learn more about the [Exchange admin center](/exchange/exchange-admin-center) and [SharePoint Admin Center](/sharepoint/sharepoint-online). <p> **Note:** The admin centers available to you depend on your plan and region.|
+
+## Two dashboard views
+
+The <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> has two views: simplified view helps smaller organizations manage their most common tasks. Dashboard view includes more complex settings and tasks. You can switch between them from a button at the top of the admin center.
+
 Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
 - [The admin center in simplified view](#watch-the-admin-center-in-simplified-view)
 - [The admin center in dashboard view](#watch-the-admin-center-in-dashboard-view)
-
-The <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> has two views: simplified view helps smaller organizations manage their most common tasks. Dashboard view includes more complex settings and tasks. You can switch between them from a button at the top of the admin center.
 
 ## Watch: The admin center in simplified view
 
@@ -46,7 +81,7 @@ Check out this video and others on our [YouTube channel](https://go.microsoft.co
 
 With the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, you can reset passwords, view your invoice, add or remove users, and much more all in one place.
 
-Sign in to Office.com with your work account, and select the app launcher.
+Sign in to Microsoft365.com with your work account, and select the app launcher.
 
 If you have permission to access the admin center, you'll see **Admin** in the list. Select it.
 
@@ -109,37 +144,6 @@ If you have no idea who to contact at your work or school for help, try asking t
 > [!NOTE]
 > Targeted release admins have first access to new features. New features later roll out to all admins. This means that you might not see the admin center, or it might look different than what is described in help articles. To be among the first to see new features, see Participate in the admin center, below.
 
-## Admin center features and settings
-
-Here are the features and settings you'll find in the left-hand navigation of the admin center. Learn more about admin tasks in [admin help](/microsoft-365/admin/).
-
-|Menu|What it's for|
-|-----|-----|
-|**Home**|This is the landing page in the admin center. You'll see where to manage users, billing, service health, and reports.|
-|**Users**|Create and manage users in your organization, like employees or students. You can also set their permission level or reset their passwords.|
-|**Groups**|Create and manage groups in your organization, such as a Microsoft 365 group, distribution group, security group, or shared mailbox. Learn how to [create](../create-groups/create-groups.md) and [manage](../create-groups/manage-groups.md) groups.|
-|**Resources**|Create and manage resources, like a SharePoint site collection. Learn how to [create site collections](/sharepoint/create-site-collection).|
-|**Billing**|View, purchase, or cancel subscriptions for your organization. View past billing statements or view the number of assigned licenses to individual users. Learn how to [manage billing](../../commerce/index.yml).|
-|**Support**|View existing service requests or create new ones. Learn more in [Contact support for business products - Admin Help](../../business-video/get-help-support.md).|
-|**Settings**|Manage global settings for apps like email, sites, and the Office suite. Change your password policy and expiration date. Add and update domain names like contoso.com. Change your organization profile and release preferences. And choose whether partners can access your admin center.|
-|**Setup**|Manage existing domains, turn on and manage multi-factor authentication, manage admin access, migrate user mailboxes to Office 365, manage feature updates, and help users install their Office apps.|
-|**Reports**|See at a glance how your organization is using Microsoft 365 with detailed reports on email use, Office activations, and more. Learn how to use the new [activity reports](../activity-reports/activity-reports.md).|
-|**Health**|View health at a glance. You can also check out more details and the health history. See [How to check service health](../../enterprise/view-service-health.md) and [How to check Windows release health](/windows/deployment/update/check-release-health) for more information. <p>Use Message center to keep track of upcoming changes to features and services. We post announcements there with information that helps you plan for change and understand how it may affect users. Get more details in [Message center](../manage/message-center.md).|
-|**Admin centers**|Open separate admin centers for Exchange, Skype for Business, SharePoint, Yammer, and Azure AD. Each admin center includes all available settings for that service.  <p> For example, in the Exchange admin center, set up and manage email, calendars, distribution groups, and more. In the SharePoint admin center, create and manage site collections, site settings, and OneDrive for Business. In the Skype for Business admin center, set up instant messaging notifications, dial-in conferencing, and online presence.  <p> Learn more about the [Exchange admin center](/exchange/exchange-admin-center) and [SharePoint Admin Center](/sharepoint/sharepoint-online). <p> **Note:** The admin centers available to you depend on your plan and region.|
-|
-
-## Common tasks in the admin center
-
-- Manage users: [Add users and assign licenses at the same time](../add-users/add-users.md), [Delete or restore users](../add-users/delete-a-user.md), or [Reset a user's password](../add-users/reset-passwords.md).
-
-- Get help with billing: [Billing](../../commerce/index.yml)
-
-- See activity reports: [Activity Reports](../activity-reports/activity-reports.md)
-
-- [Create a Microsoft 365 group](../create-groups/create-groups.md)
-
-- [Manage a Microsoft 365 group](../create-groups/manage-groups.md)
-
 ## Turn on Targeted release
 
 1. Sign in at [admin.microsoft.com](https://admin.microsoft.com), go to the navigation pane and select **Settings** > **Org settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank">**Organization profile** tab</a>.
@@ -158,7 +162,7 @@ Don't see your questions answered here? Go to the **Feedback** section at the bo
 
 ### Which Microsoft 365 plans are available to trial or buy?
 
-Microsoft 365 is a complete, intelligent solution that includes Office 365, Windows 10, and Enterprise Mobility + Security that empowers everyone to be creative and work together, securely. The following Microsoft 365 subscriptions are available in the admin center for you to try or buy now:
+Microsoft 365 is a complete, intelligent solution that includes Microsoft 365, Windows 10, and Enterprise Mobility + Security that empowers everyone to be creative and work together, securely. The following Microsoft 365 subscriptions are available in the admin center for you to try or buy now:
 
 - Microsoft 365 for business
 - Microsoft 365 Enterprise E3
@@ -180,49 +184,49 @@ The <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">
 
 The Microsoft 365 admin center is fully localized in 40 languages.
 
-|Language |Locale |
-|---------|---------|
-|Arabic | ar |
-|Bulgarian | bg |
-|Catalan | ca |
-|Czech | cs |
-|Danish | da |
-|German | de |
-|Greek | el |
-|Spanish | es |
-|English | en |
-|Estonian | et |
-|Basque | eu |
-|Finnish | fi |
-|French | fr |
-|Galician | gl |
-|Hebrew | he |
-|Croatian | hr |
-|Hungarian | hu |
-|Indonesian  | id |
-|Italian | it |
-|Japanese | ja |
-|Korean | ko |
-|Lithuanian | lt |
-|Latvian | lv |
-|Dutch | nl |
-|Norwegian | no |
-|Polish | pl |
-|Portuguese (Brazil) | pt |
-|Portuguese (Portugal) | pt-pt |
-|Romanian | ro |
-|Russian | ru |
-|Slovak | sk |
-|Slovenian | sl |
-|Serbian (Cyrillic)  | sr-cyrl |
-|Serbian Latin | sr |
-|Swedish | sv |
-|Thai | th |
-|Turkish | tr |
-|Ukrainian | uk |
-|Vietnamese | vi |
-|Chinese Simplified | zh-hans |
-|Chinese Traditional | zh-hant |
+|Language|Locale|
+|---|---|
+|Arabic|ar|
+|Bulgarian|bg|
+|Catalan|ca|
+|Czech|cs|
+|Danish|da|
+|German|de|
+|Greek|el|
+|Spanish|es|
+|English|en|
+|Estonian|et|
+|Basque|eu|
+|Finnish|fi|
+|French|fr|
+|Galician|gl|
+|Hebrew|he|
+|Croatian|hr|
+|Hungarian|hu|
+|Indonesian|id|
+|Italian|it|
+|Japanese|ja|
+|Korean|ko|
+|Lithuanian|lt|
+|Latvian|lv|
+|Dutch|nl|
+|Norwegian|no|
+|Polish|pl|
+|Portuguese (Brazil)|pt|
+|Portuguese (Portugal)|pt-pt|
+|Romanian|ro|
+|Russian|ru|
+|Slovak|sk|
+|Slovenian|sl|
+|Serbian (Cyrillic)|sr-cyrl|
+|Serbian Latin|sr|
+|Swedish|sv|
+|Thai|th|
+|Turkish|tr|
+|Ukrainian|uk|
+|Vietnamese|vi|
+|Chinese Simplified|zh-hans|
+|Chinese Traditional|zh-hant|
 
 ## Related content
 

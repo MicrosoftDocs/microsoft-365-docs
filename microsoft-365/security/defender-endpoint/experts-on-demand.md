@@ -16,9 +16,11 @@ audience: ITPro
 ms.collection:
   - m365-security-compliance
   - m365-initiative-defender-endpoint
+  - tier1
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 09/26/2022
 ---
 
 # Ask Defender Experts
@@ -114,3 +116,4 @@ It's crucial to respond in quickly to keep the investigation moving.
 - To proactively hunt threats across endpoints, refer to [Endpoint Attack Notification](../defender-endpoint/endpoint-attack-notifications.md).
 - To proactively hunt threats across endpoints, Office 365, cloud applications, and identity, refer to [Microsoft Defender Experts for Hunting](../defender/defender-experts-for-hunting.md).
 
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

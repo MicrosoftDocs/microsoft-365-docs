@@ -1,7 +1,7 @@
 ---
-title: New configuration profiles for macOS Catalina and newer versions of macOS
-description: This topic describes the changes that are must be made in order to benefit from the system extensions, which are a replacement for kernel extensions on macOS Catalina and newer versions of macOS.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, kernel, system, extensions, catalina, big sur, monterey, ventura, mde for mac
+title: New configuration profiles for macOS Big Sur and newer versions of macOS
+description: This topic describes the changes that are must be made in order to benefit from the system extensions, which are a replacement for kernel extensions on macOS Big Sur and newer versions of macOS.
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, kernel, system, extensions, big sur, monterey, ventura, mde for mac
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: microsoft-365-security
@@ -19,9 +19,10 @@ ms.collection:
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.subservice: mde
+ms.date: 12/18/2020
 ---
 
-# New configuration profiles for macOS Catalina and newer versions of macOS
+# New configuration profiles for macOS Big Sur and newer versions of macOS 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -313,3 +314,4 @@ To deploy this custom configuration profile:
 
 5. In the `Assignments` tab, assign this profile to **All Users & All devices**.
 6. Review and create this configuration profile.
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

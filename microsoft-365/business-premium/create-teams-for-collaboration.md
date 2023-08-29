@@ -8,8 +8,8 @@ manager: dansimp
 ms.audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-security
-ms.subservice: other
-ms.localizationpriority: high
+ms.subservice: m365bp
+ms.localizationpriority: medium
 ms.date: 09/15/2022
 ms.collection: 
 - Adm_O365

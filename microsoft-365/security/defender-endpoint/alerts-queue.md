@@ -87,9 +87,7 @@ We've redefined the alert categories to align to the [enterprise attack tactics]
 
 ### Service sources
 
-Microsoft Threat Experts preview participants can now filter and see detections from the new threat experts-managed hunting service.
-
-Filter the alerts based on the following Service sources:
+You can filter the alerts based on the following Service sources:
 
 - Microsoft Defender for Identity
 - Microsoft Defender for Cloud Apps
@@ -98,6 +96,8 @@ Filter the alerts based on the following Service sources:
 - Microsoft Defender for Office 365
 - App Governance
 - AAD Identity Protection
+
+Microsoft Endpoint Notification customers can now filter and see detections from the service by filtering by _Microsoft Defender Experts_ nested under the _Microsoft Defender for Endpoint_ service source.
 
 > [!NOTE]
 > The Antivirus filter will only appear if devices are using Microsoft Defender Antivirus as the default real-time protection antimalware product.
@@ -120,7 +120,7 @@ You can filter the alerts based on the following policies:
 |EDR|WindowsDefenderAtp|
 |Microsoft 365 Defender|MTP|
 |Microsoft Defender for Office 365|OfficeATP|
-|Microsoft Threat Experts|ThreatExperts|
+|Microsoft Defender Experts|ThreatExperts|
 |SmartScreen|WindowsDefenderSmartScreen|
 
 ### Entities
@@ -142,3 +142,4 @@ You can choose to filter the alerts based on their Automated investigation state
 - [Investigate an IP address associated with a Microsoft Defender for Endpoint alert](investigate-ip.md)
 - [Investigate a domain associated with a Microsoft Defender for Endpoint alert](investigate-domain.md)
 - [Investigate a user account in Microsoft Defender for Endpoint](investigate-user.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

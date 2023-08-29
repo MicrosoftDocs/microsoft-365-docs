@@ -13,11 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - m365-security
-- tier2
-ms.topic: conceptual
+- tier3
+- must-keep
+ms.topic: reference
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
+ms.date: 05/02/2022
 ---
 
 # Export certificate inventory per device
@@ -26,6 +28,7 @@ search.appverid: met150
 
 **Applies to:**
 
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender Vulnerability Management](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -62,8 +65,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 Permission type|Permission|Permission display name
 :---|:---|:---
-Application|Software.Read.All|'Read Threat and Vulnerability Management software information'
-Delegated (work or school account)|Software.Read|'Read Threat and Vulnerability Management software information'
+Application|Vulnerability.Read.All|'Read Threat and Vulnerability Management software information'
+Delegated (work or school account)|Vulnerability.Read|'Read Threat and Vulnerability Management software information'
 
 ### 1.3 URL
 
@@ -110,7 +113,7 @@ Property (ID)|Data type|Description
 ### 1.6.1 Request example
 
 ```http
-GET https://api.securitycenter.microsoft.com/api/machines/BaselineComplianceAssessmentByMachine
+GET https://api.securitycenter.microsoft.com/api/machines/CertificateAssessmentByMachine
 ```
 
 ### 1.6.2 Response example
@@ -157,8 +160,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 Permission type|Permission|Permission display name
 :---|:---|:---
-Application|Software.Read.All|'Read Threat and Vulnerability Management software information'
-Delegated (work or school account)|Software.Read|'Read Threat and Vulnerability Management software information'
+Application|Vulnerability.Read.All|'Read Threat and Vulnerability Management software information'
+Delegated (work or school account)|Vulnerability.Read|'Read Threat and Vulnerability Management software information'
 
 ### 2.3 URL
 
@@ -206,3 +209,4 @@ GET https://api.securitycenter.contoso.com/api/machines/certificateAssessmentExp
         "generatedTime":"2022-03-20T13:18:00Z"
    }
 ```
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

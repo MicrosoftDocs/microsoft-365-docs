@@ -2,9 +2,10 @@
 title: "Connect your DNS records at Namecheap to Microsoft 365"
 f1.keywords:
 - CSH
-ms.author: efrene
-author: efrene
+ms.author: nkagole
+author: nataliekagole
 manager: scotv
+ms.date: 02/18/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -22,14 +23,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 54ae2002-b38e-43a1-82fa-3e49d78fda56
-description: "Learn to verify your domain and set up DNS records for email, Skype for Business Online, and other services at Namecheap for Microsoft."
+description: "Learn to verify your domain and set up DNS records for email, Teams, and other services at Namecheap for Microsoft."
 ---
 
 # Connect your DNS records at Namecheap to Microsoft 365
 
  **[Check the Domains FAQ](../setup/domains-faq.yml)** if you don't find what you're looking for.
 
-If Namecheap is your DNS hosting provider, follow the steps in this article to verify your domain and set up DNS records for email, Skype for Business Online, and so on.
+If Namecheap is your DNS hosting provider, follow the steps in this article to verify your domain and set up DNS records for email, Microsoft Teams, and so on.
 
 After you add these records at Namecheap, your domain will be set up to work with Microsoft services.
 
@@ -242,9 +243,9 @@ To verify the record in Microsoft 365:
 
      :::image type="content" source="../../media/f2846c36-ace3-43d8-be5d-a65e2c267619.png" alt-text="Select the Save Changes control.":::
 
-## Advanced option: Skype for Business
+## Advanced option: Microsoft Teams
 
-Only select this option if your organization uses Skype for Business for online communication services like chat, conference calls, and video calls, in addition to Microsoft Teams. Skype needs 4 records: 2 SRV records for user-to-user communication, and 2 CNAME records to sign-in and connect users to the service.
+Only select this option if your organization uses Microsoft Teams. Teams needs 4 records: 2 SRV records for user-to-user communication, and 2 CNAME records to sign-in and connect users to the service.
 
 ### Add the two required SRV records
 
@@ -293,7 +294,7 @@ Only select this option if your organization uses Skype for Business for online 
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md).
 
-### Add the two required CNAME records for Skype for Business
+### Add the two required CNAME records for Teams
 
 1. In the **HOST RECORDS** section, select **ADD NEW RECORD**.
 

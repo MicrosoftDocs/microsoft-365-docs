@@ -3,8 +3,9 @@ title: "Sign up for Microsoft 365 Apps for business"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
+ms.date: 11/18/2021
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -21,6 +22,8 @@ description: "Sign up for Microsoft 365 Apps for business."
 ---
 
 # Sign up for a Microsoft 365 Apps for business subscription
+
+Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
 Want to sign up for a Microsoft 365 Apps for business subscription?
 
@@ -76,7 +79,7 @@ Use these three factors to determine which of the two options is best for your b
 
 ### Option 1: Sign in with your Outlook, Hotmail, Yahoo, Gmail or other email account
 
-This applies to Microsoft 365 Business Standard and Microsoft 365 Apps for Business. You'll sign in to Microsoft 365 with this email address. For example, alliebellew@hotmail.com.
+This applies to Microsoft 365 Business Standard and Microsoft 365 Apps for Business. You'll sign in to Microsoft 365 with this email address. For example, somebody@example.com.
 
 :::image type="content" source="../../media/ssu-how-you-sign-in.png" alt-text="Screenshot: Sign in with your personal email.":::
 
@@ -84,7 +87,7 @@ This applies to Microsoft 365 Business Standard and Microsoft 365 Apps for Busin
 
 2. Select how many Microsoft 365 Apps for business licenses you want for your organization and select **Add payment method** and continue with checkout to **Place order**.
 
-3. On the **Confirmation details** page, we'll give you some more info about your subscription. You can now go to the Microsoft 365 admin center to add users, install Office apps, invite your team to use Microsoft 365 and more. We'll also send you an email with set up steps for Microsoft 365 Business Standard.
+3. On the **Confirmation details** page, we'll give you some more info about your subscription. You can now go to the Microsoft 365 admin center to add users, install Office apps, invite your team to use Microsoft 365 and more. We'll also send you an email with set-up steps for Microsoft 365 Business Standard.
 
 Remember this option doesn't provide branded email, admin control for use of the services by other users, or industry specific compliance support. Subscribers don't have any access or control over other users' (employees) usage or documents under this option. Users may choose not to transfer data created in storage such as OneDrive to your upgraded, enterprise-level domain account should you not choose **Option 2**.
 
@@ -125,7 +128,7 @@ To provide customers with the greatest amount of flexibility, different payment 
 
 ### How does recurring billing work?
 
-When Recurring billing is on, your subscription will continue to be billed each year on the day you subscribed. You can turn it off or back on again in the admin center if your subscription is active. Learn more at [Turn recurring billing off or on](../../commerce/subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on).
+When recurring billing is on, your subscription will continue to be billed each year on the day you subscribed. You can turn it off or back on again in the admin center if your subscription is active. Learn more at [Manage recurring billing in the Microsoft 365 admin center](../../commerce/subscriptions/renew-your-subscription.md).
 
 ### What do I do if I want to change my business name?
 

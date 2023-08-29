@@ -28,7 +28,6 @@ ms.topic: conceptual
 
 # Pilot Microsoft Defender for Identity
 
-
 **Applies to:**
 - Microsoft 365 Defender
 
@@ -41,7 +40,7 @@ Use the following steps to setup and configure the pilot for Microsoft Defender 
 The following table describes the steps in the illustration.
 
 - [Step 1: Configure benchmark recommendations for your identity environment](#step-1-configure-benchmark-recommendations-for-your-identity-environment)
-- [Step 2: Try out capabilities — Walk through tutorials for identifying and remediating different attack types ](#step-2-try-out-capabilities--walk-through-tutorials-for-identifying-and-remediating-different-attack-types)
+- [Step 2: Try out capabilities — Walk through tutorials for identifying and remediating different attack types](#step-2-try-out-capabilities--walk-through-tutorials-for-identifying-and-remediating-different-attack-types)
 
 ## Step 1. Configure benchmark recommendations for your identity environment
 
@@ -54,6 +53,7 @@ These benchmark recommendations include [Azure security baseline for Microsoft D
 The Microsoft Defender for Identity documentation includes a series of tutorials that walk through the process of identifying and remediating various attack types.
 
 Try out Defender for Identity tutorials:
+
 - [Reconnaissance alerts](/defender-for-identity/reconnaissance-alerts)
 - [Compromised credential alerts](/defender-for-identity/compromised-credentials-alerts)
 - [Lateral movement alerts](/defender-for-identity/lateral-movement-alerts)
@@ -71,3 +71,4 @@ Try out Defender for Identity tutorials:
 Return to the overview for [Evaluate Microsoft Defender for Office 365](eval-defender-office-365-overview.md)
 
 Return to the overview for [Evaluate and pilot Microsoft 365 Defender](eval-overview.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

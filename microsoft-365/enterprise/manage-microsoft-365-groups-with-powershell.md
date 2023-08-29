@@ -3,17 +3,19 @@ title: "Manage Microsoft 365 Groups with PowerShell"
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
+ms.date: 08/10/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
-ms.custom: 
- - Adm_O365
- - seo-marvel-apr2020
- - admindeeplinkMAC
- - admindeeplinkEXCHANGE
+ms.custom:
+  - Adm_O365
+  - seo-marvel-apr2020
+  - admindeeplinkMAC
+  - admindeeplinkEXCHANGE
+  - has-azure-ad-ps-ref
 search.appverid:
 - MET150
 - MOE150
@@ -188,8 +190,6 @@ The following cmdlets can be used with Microsoft 365 Groups.
 |[Remove-UserPhoto](/powershell/module/exchange/remove-userphoto) <br/> |Remove the photo for a Microsoft 365 Group  <br/> |
 
 ## Related topics
-
-[Upgrade distribution lists to Microsoft 365 Groups](/office365/admin/manage/upgrade-distribution-lists)
 
 [Manage who can create Microsoft 365 Groups](/office365/admin/create-groups/manage-creation-of-groups)
 

@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: amberb, vikdesai
+ms.reviewer: jkinma, ramagane
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
@@ -16,6 +16,7 @@ ms.collection:
 - Adm_O365
 ms.custom:
 - commerce_billing
+- empty
 search.appverid: MET150
 description: "Learn how to use multi-tenant billing relationships to share billing accounts across tenants in the Microsoft 365 admin center."
 ms.date: 08/15/2022
@@ -26,7 +27,7 @@ ms.date: 08/15/2022
 You can simplify billing management for your organization by creating multi-tenant billing relationships with other tenants. A multi-tenant billing relationship lets you securely share your organization's billing account with other tenants, while maintaining control over your billing data. You can create subscriptions in different tenants and provide users in those tenants with access to your organization's billing account. This relationship lets users on those tenants do billing activities like viewing and downloading invoices or managing licenses.
 
 > [!IMPORTANT]
-> This article only applies to organizational account customers with a Microsoft Customer Agreement.
+> This article only applies to enterprise customers with a Microsoft Customer Agreement.
 
 ## Before you begin
 

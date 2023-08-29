@@ -1,8 +1,8 @@
 ---
 title: "Exchange 2007 end of support roadmap"
-ms.author: dstrome
+ms.author: v-aiyengar
 author: dstrome
-manager: scotv
+manager: serdars
 ms.date: 1/31/2018
 audience: ITPro
 ms.topic: conceptual
@@ -202,7 +202,7 @@ If full hybrid migration sounds right for you, see the following resources to he
 
 ### Migrate to a newer version of Exchange Server
 
-We strongly believe that you can achieve the best value and user experience by migrating to Microsoft 365. But we also understand that some organizations need to keep their email on-premises. This could be because of regulatory requirements, to guarantee data isn't stored in a datacenter located in another country, or similar. If you choose to keep your email on-premises, you can migrate your Exchange 2007 environment to Exchange 2010, Exchange 2013, or Exchange 2016.
+We strongly believe that you can achieve the best value and user experience by migrating to Microsoft 365. But we also understand that some organizations need to keep their email on-premises. This could be because of regulatory requirements, to guarantee data isn't stored in a datacenter located in another country/region, or similar. If you choose to keep your email on-premises, you can migrate your Exchange 2007 environment to Exchange 2010, Exchange 2013, or Exchange 2016.
 
 If you can't migrate to Microsoft 365, we recommend that you migrate to Exchange 2016. Exchange 2016 includes all the features of previous releases of Exchange. It also most closely matches the experience available with Microsoft 365, although some features are available only in Microsoft 365. Check out just a few of the things you've been missing:
 

@@ -1,9 +1,9 @@
 ---
 title: Understand frontline worker user types and licensing
-author: samanro
-ms.author: samanro
+author: lana-chin
+ms.author: v-chinlana
+manager: serdars
 ms.reviewer: aaglick
-manager: pamgreen
 ms.topic: conceptual
 audience: admin
 ms.service: microsoft-365-frontline
@@ -46,3 +46,7 @@ With this example, you can mix license types for the two types of workers in you
 | Frontline workers can find organization-wide resources, communications, or training with SharePoint, OneDrive, Viva Engage, and Stream. | Information workers create or consume team or organization-wide resources and communications with included Microsoft 365 services (depending on the specific license). |
 
 For a detailed comparison of what's included in Microsoft 365 with various licenses, see this [Comparison table](https://go.microsoft.com/fwlink/?linkid=2139145).
+
+## Related topics
+
+[Limits and specifications for Microsoft Teams](/microsoftteams/limits-specifications-teams)

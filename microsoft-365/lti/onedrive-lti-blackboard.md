@@ -4,10 +4,13 @@ ms.author: danismith
 author: DaniEASmith
 manager: serdars
 ms.reviewer: amitman 
+ms.date: 03/02/2022
 audience: admin
 ms.topic: article
 ms.service: microsoft-365-business
-ms.collection: m365initiative-edu
+ms.collection: 
+- m365initiative-edu
+- tier2
 ms.localizationpriority: medium
 description: Create and grade assignments, build and curate course content, and collaborate on files in real time with the new Microsoft OneDrive Learning Tools Interoperability for Blackboard.
 ---

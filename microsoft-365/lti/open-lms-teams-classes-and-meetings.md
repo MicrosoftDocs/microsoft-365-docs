@@ -4,12 +4,15 @@ ms.author: danismith
 author: DaniEASmith
 manager: serdars
 ms.reviewer: amitman 
+ms.date: 04/04/2022
 audience: admin
 ms.topic: article
 ms.service: microsoft-365-business
 f1.keywords:
 - CSH
-ms.collection: M365-modern-desktop
+ms.collection: 
+- M365-modern-desktop
+- tier2
 ms.localizationpriority: medium
 description: Create and manage Teams classes and meetings with Microsoft Learning Tools Interoperability for Open LMS.
 ---

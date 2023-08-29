@@ -3,12 +3,13 @@ title: "Sign up for Microsoft 365 Business Basic"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
+ms.date: 03/17/2022
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection: 
 - Tier2
 - scotvorg
@@ -65,7 +66,7 @@ To buy, and sign up for Microsoft 365 Business Basic subscription, complete the 
 
 6. Select how many business licenses you want for your organization and select **Add payment method** and continue with checkout to **Place order**.
 
-7. On the **Confirmation details** page, we'll give you some more info about your subscription. You can now go to the Microsoft 365 admin center to add users, install Office apps, invite your team to use Microsoft 365 and more. We'll also send you an email with set up steps.
+7. On the **Confirmation details** page, we'll give you some more info about your subscription. You can now go to the Microsoft 365 admin center to add users, install Office apps, invite your team to use Microsoft 365 and more. We'll also send you an email with set-up steps.
 
 Follow these steps to [finish setting up](setup-apps-for-business.md) your Microsoft Business Basic subscription. You can also [add a domain](../setup/add-domain.md) when you're ready.
 
@@ -99,9 +100,9 @@ You'll sign in to Microsoft 365 with this email address. For example, alliebelle
 
 2. Select how many Microsoft 365 Business Basic licenses you want for your organization and select **Add payment method** and continue with checkout to **Place order**.
 
-3. On the **Confirmation details** page, we'll give you some more info about your subscription. You can now go to the Microsoft 365 admin center to add users, install Office apps, invite your team to use Microsoft 365 and more. We'll also send you an email with set up steps for Microsoft 365 Business Basic.
+3. On the **Confirmation details** page, we'll give you some more info about your subscription. You can now go to the Microsoft 365 admin center to add users, install Office apps, invite your team to use Microsoft 365 and more. We'll also send you an email with set-up steps for Microsoft 365 Business Basic.
 
-Remember this option doesn't provide branded email, admin control for use of the services by other users, or industry specific compliance support. Subscribers don't have any access or control over other users' (employees) usage or documents under this option Users may choose not to transfer data created in storage such as OneDrive/Teams to your upgraded, enterprise-level domain account should you not choose option 2 immediately.
+Remember this option doesn't provide branded email, admin control for use of the services by other users, or industry specific compliance support. Subscribers don't have any access or control over other users' (employees) usage or documents under this option users may choose not to transfer data created in storage such as OneDrive/Teams to your upgraded, enterprise-level domain account should you not choose option 2 immediately.
 
 <!--This option isn't recommended for larger businesses, including specialty industries such as healthcare or legal.-->
 
@@ -144,7 +145,7 @@ There are three options for getting a business email.
 
 ### Why might I need to verify my domain to create a business email?
 
-If you choose to use a domain you already own, you can use it for your email address with Microsoft 365. As part of sign up process, we ask you to verify the domain so you can send emails via Microsoft 365. This confirms that you are the owner of the domain that is sending emails with that identity, which enhances security and prevents fraudulent activity.
+If you choose to use a domain you already own, you can use it for your email address with Microsoft 365. As part of sign-up process, we ask you to verify the domain so you can send emails via Microsoft 365. This confirms that you are the owner of the domain that is sending emails with that identity, which enhances security and prevents fraudulent activity.
 
 ### Is there a benefit to paying monthly vs annually?
 
@@ -156,7 +157,7 @@ To provide customers with the greatest amount of flexibility, different payment 
 
 ### How does recurring billing work?
 
-When Recurring billing is on, your subscription will continue to be billed each year on the day you subscribed. You can turn it off or back on again in the admin center if your subscription is active. Learn more at [Turn recurring billing off or on](../../commerce/subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on).
+When recurring billing is on, your subscription will continue to be billed each year on the day you subscribed. You can turn it off or back on again in the admin center if your subscription is active. Learn more at [Manage recurring billing in the Microsoft 365 admin center](../../commerce/subscriptions/renew-your-subscription.md).
 
 ### What do I do if I want to change my business name?
 

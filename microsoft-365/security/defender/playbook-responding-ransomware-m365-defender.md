@@ -12,8 +12,9 @@ ms.service:                microsoft-365-security
 ms.subservice:             m365d
 ms.localizationpriority:   medium
 ms.collection: 
-- m365-security
-- tier1
+  - zerotrust-solution
+  - msftsolution-secops
+  - tier1
 f1.keywords:               NOCSH
 ---
 # Responding to ransomware attacks
@@ -53,9 +54,9 @@ Run through this list of questions and tasks to discover the extent of the attac
 
 Run through this list of tasks and questions to protect existing systems from attack:
 
-* If you have online backups, consider disconnecting the backup system from the network until you are confident that the attack is contained, see [Backup and restore plan to protect against ransomware | Microsoft Docs](/security/compass/backup-plan-to-protect-against-ransomware).
-* If you are experiencing or expect an imminent and active ransomware deployment:
-  * [Suspend privileged and local accounts](/investigate-users.md) that you suspect are part of the attack. You can do this from the **Users** tab in the properties of the incident in the Microsoft 365 Defender portal.
+* If you have online backups, consider disconnecting the backup system from the network until you're confident that the attack is contained, see [Backup and restore plan to protect against ransomware | Microsoft Docs](/security/compass/backup-plan-to-protect-against-ransomware).
+* If you're experiencing or expect an imminent and active ransomware deployment:
+  * [Suspend privileged and local accounts](./investigate-users.md) that you suspect are part of the attack. You can do this from the **Users** tab in the properties of the incident in the Microsoft 365 Defender portal.
   * Stop all [remote logon sessions](/defender-for-identity/playbook-domain-dominance).
   * Reset the compromised user account passwords and require the users of compromised user accounts to sign in again.
   * Do the same for user accounts that might be compromised.
@@ -65,8 +66,8 @@ Run through this list of tasks and questions to protect existing systems from at
 DeviceLogonEvents | where DeviceName  contains (AccountDomain) | take 10 
 ```
 
-* For the devices that are not yet isolated and are not part of the critical infrastructure:
-  * Isolate compromised devices from the network but do not shut them off.
+* For the devices that aren't yet isolated and aren't part of the critical infrastructure:
+  * Isolate compromised devices from the network but don't shut them off.
   * If you identify the originating or spreader devices, isolate those first.
 * Preserve compromised systems for analysis.
 
@@ -104,7 +105,7 @@ DeviceLogonEvents
   * To disable other types of access to a mailbox, see:
     * [Enable or disable MAPI for a mailbox](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-mapi).
     * [Enable or Disable POP3 or IMAP4 access for a user](/exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access).
-  * Pausing OneDrive sync will help protect your cloud data from being updated by potentially infected devices. For more information, see [How to Pause and Resume sync in OneDrive](https://support.microsoft.com/office/how-to-pause-and-resume-sync-in-onedrive-2152bfa4-a2a5-4d3a-ace8-92912fb4421e).
+  * Pausing OneDrive sync helps protect your cloud data from being updated by potentially infected devices. For more information, see [How to Pause and Resume sync in OneDrive](https://support.microsoft.com/office/how-to-pause-and-resume-sync-in-onedrive-2152bfa4-a2a5-4d3a-ace8-92912fb4421e).
 * Apply relevant patches and configuration changes on affected systems.
 * Block ransomware communications using internal and external controls.
 * Purge cached content
@@ -116,9 +117,9 @@ Use this section to investigate the attack and plan your response.
 ### Assess your current situation
 
 * What initially made you aware of the ransomware attack?
-  * If IT staff identified the initial threat—such as noticing backups being deleted, antivirus alerts, endpoint detection and response (EDR) alerts, or suspicious system changes—it is often possible to take quick decisive measures to thwart the attack, typically by the containment actions described in this article.
+  * If IT staff identified the initial threat—such as noticing backups being deleted, antivirus alerts, endpoint detection and response (EDR) alerts, or suspicious system changes—it's often possible to take quick decisive measures to thwart the attack, typically by the containment actions described in this article.
 * What date and time did you first learn of the incident?
-  * What system and security updates were not installed on devices on that date? This is important to understand what vulnerabilities might have been leveraged so they can be addressed on other devices.
+  * What system and security updates weren't installed on devices on that date? This is important to understand what vulnerabilities might have been leveraged so they can be addressed on other devices.
   * What user accounts were used on that date?
   * What new user accounts were created since that date?
   * What programs were added to automatically start around the time that the incident occurred?
@@ -129,7 +130,7 @@ Use this section to investigate the attack and plan your response.
 
 ### Identify the ransomware process
 
-* Using [advanced hunting](/microsoft-365/security/defender/advanced-hunting-overview.md), search for the identified process in the process creation events on other devices.
+* Using [advanced hunting](advanced-hunting-overview.md), search for the identified process in the process creation events on other devices.
 
 ### Look for exposed credentials in the infected devices
 
@@ -211,7 +212,7 @@ Use these steps to eradicate the threat and recover damaged resources.
 
 ### Step 1: Verify your backups
 
-If you have offline backups, you can probably restore the data that has been encrypted after you have removed the ransomware payload (malware) from your environment and after you have verified that there's no unauthorized access in your Microsoft 365 tenant.
+If you have offline backups, you can probably restore the data that has been encrypted after you've removed the ransomware payload (malware) from your environment and after you've verified that there's no unauthorized access in your Microsoft 365 tenant.
 
 ### Step 2: Add indicators
 
@@ -222,7 +223,7 @@ Add any known attacker communication channels as indicators, blocked in firewall
 Reset the passwords of any known compromised user accounts and require a new sign-in.
 
 * Consider resetting the passwords for any privileged account with broad administrative authority, such as the members of the Domain Admins group.
-* If a user account might have been created by an attacker, disable the account. Do not delete the account unless there are no plans to perform security forensics for the incident.
+* If a user account might have been created by an attacker, disable the account. Don't delete the account unless there are no plans to perform security forensics for the incident.
 
 ### Step 4: Isolate attacker control points
 
@@ -233,7 +234,7 @@ Isolate any known attacker control points inside the enterprise from the Interne
 Remove the malware from the affected devices.
 
 * Run a full, current antivirus scan on all suspected computers and devices to detect and remove the payload that is associated with the ransomware.
-* Do not forget to scan devices that synchronize data or the targets of mapped network drives.
+* Don't forget to scan devices that synchronize data or the targets of mapped network drives.
 
 ### Step 6: Recover files on a cleaned device
 
@@ -255,4 +256,5 @@ Recover deleted email.
 
 ### Step 9: Re-enable Exchange ActiveSync and OneDrive sync
 
-* After you have cleaned your computers and devices and recovered the data, you can re-enable Exchange ActiveSync and OneDrive sync that you previously disabled in step 3 of containment.
+* After you've cleaned your computers and devices and recovered the data, you can re-enable Exchange ActiveSync and OneDrive sync that you previously disabled in step 3 of containment.
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

@@ -14,10 +14,12 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
-ms.topic: conceptual
+- must-keep
+ms.topic: reference
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
+ms.date: 12/18/2020
 ---
 
 # Get domain statistics API
@@ -56,7 +58,7 @@ Delegated (work or school account)|URL.Read.All|'Read URLs'
 > [!NOTE]
 > When obtaining a token using user credentials:
 >
-> - The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
+> - The user needs to have at least the following role permission: 'View Data' (For more information, see [Create and manage roles](user-roles.md))
 
 ## HTTP request
 
@@ -82,13 +84,13 @@ Empty
 
 ## Response
 
-If successful and domain exists - 200 OK, with statistics object in the response body. If domain does not exist - 200 OK with an prevalence set to 0.
+If successful and domain exists - 200 OK, with statistics object in the response body. If domain doesn't exist - 200 OK with a prevalence set to 0.
 
 ## Example
 
 ### Request example
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/domains/example.com/stats?lookBackHours=48
@@ -96,7 +98,7 @@ GET https://api.securitycenter.microsoft.com/api/domains/example.com/stats?lookB
 
 ### Response example
 
-Here is an example of the response.
+Here's an example of the response.
 
 ```json
 {
@@ -107,3 +109,4 @@ Here is an example of the response.
     "orgLastSeen": "2017-08-29T13:09:05Z"
 }
 ```
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

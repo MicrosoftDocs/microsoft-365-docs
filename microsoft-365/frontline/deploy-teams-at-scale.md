@@ -1,14 +1,14 @@
 ---
-title: Deploy Teams at scale for frontline workers
-author: LanaChin
-ms.author: v-lanachin
+title: Deploy frontline static teams at scale with PowerShell for frontline workers
+author: lana-chin
+ms.author: v-chinlana
+manager: serdars
 ms.reviewer: rahuldey
-manager: samanro
 ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
-description: Learn how to deploy Teams at scale for the frontline workers in your organization. 
+description: Learn how to use PowerShell to deploy static teams at scale for the frontline workers in your organization. 
 ms.localizationpriority: high
 ms.collection: 
   - M365-collaboration
@@ -21,7 +21,7 @@ appliesto:
 ms.date: 10/28/2022
 ---
 
-# Deploy Teams at scale for frontline workers
+# Deploy frontline static teams at scale with PowerShell for frontline workers
 
 ## Overview
 
@@ -51,7 +51,7 @@ Follow these steps to deploy up to 500 teams at a time.
 
 You'll need to create two CSV files for each batch of teams that you deploy:
 
-- **A CSV file that defines the teams you're creating**. This file must contain these required columns, in the following order, starting with the first column:
+- **A CSV file that defines the teams you're creating**. This file must have a title line, and must contain these required columns, in the following order, starting with the first column:
 
     |Column name  |Description  |
     |---------|---------|
@@ -60,7 +60,7 @@ You'll need to create two CSV files for each batch of teams that you deploy:
     |**Visibility**|Whether the team is public (anyone in your organization can join) or private (users need approval from the team owners to join). Options are **Public** and **Private**.|
     |**Team Template ID**|If you're creating a team from a pre-built or custom template, specify the team template ID. See [Get started with team templates in the Teams admin center](/microsoftteams/get-started-with-teams-templates-in-the-admin-console) for a list pre-built team templates and IDs. If you want to use the standard default team template, leave this blank.|
 
-- **A CSV file that maps the users you're adding to each team**. This file must contain these required columns, in the following order, starting with the first column:
+- **A CSV file that maps the users you're adding to each team**. This file must have a title line, and must contain these required columns, in the following order, starting with the first column:
 
     |Column name  |Description  |
     |---------|---------|

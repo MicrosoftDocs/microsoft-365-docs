@@ -7,8 +7,8 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: jweston-1
-ms.author: v-jweston
+author: Dansimp
+ms.author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -18,7 +18,7 @@ ms.subservice: mde
 ms.collection: 
 - m365-security
 - tier2
-ms.date: 05/16/2022
+ms.date: 01/16/2023
 search.appverid: met150
 ---
 
@@ -76,7 +76,8 @@ To configure attack surface reduction in your environment, follow these steps:
 > [!TIP]
 > In most cases, when you configure attack surface reduction capabilities, you can choose from among several methods:
 >
-> - Microsoft Endpoint Manager (which now includes Microsoft Intune and Microsoft Endpoint Configuration Manager)
+> - Microsoft Intune
+> - Microsoft Configuration Manager
 > - Group Policy
 > - PowerShell cmdlets
 
@@ -278,7 +279,7 @@ You can access these events in Windows Event viewer:
 |Attack surface reduction|Windows Defender (Operational)|1122|Event when rule fires in Audit-mode|
 |Attack surface reduction|Windows Defender (Operational)|1121|Event when rule fires in Block-mode|
 
->[!NOTE]
+> [!NOTE]
 > From the user's perspective, ASR Warn mode notifications are made as a Windows Toast Notification for attack surface reduction rules.
 >
 > In ASR, Network Protection provides only Audit and Block modes.
@@ -299,3 +300,4 @@ As mentioned in the video, Defender for Endpoint includes several attack surface
 | [Network protection](network-protection.md) | Extend protection to your network traffic and connectivity on your organization's devices. (Requires Microsoft Defender Antivirus). |
 | [Test attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-test.md) | Provides steps to use audit mode to test attack surface reduction rules. |
 | [Web protection](web-protection-overview.md) | Web protection lets you secure your devices against web threats and helps you regulate unwanted content. |
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

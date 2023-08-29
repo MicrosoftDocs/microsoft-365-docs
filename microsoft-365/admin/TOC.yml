@@ -1,8 +1,8 @@
 - name: Microsoft 365 admin center help
   href: index.yml
   items: 
-    - name: Top 20 admin help articles
-      href: top-m365-admin-articles.yml
+    - name: Small business help & learning
+      href: https://go.microsoft.com/fwlink/?linkid=2224585
     - name: YouTube - Microsoft 365 help for small businesses
       href: https://go.microsoft.com/fwlink/?linkid=2197659
     - name: Get started
@@ -49,7 +49,7 @@
           href: ../business-premium/m365bp-secure-windows-devices.md?bc=%2foffice365%2fadmin%2fbreadcrumb%2ftoc.json&toc=%2foffice365%2fadmin%2ftoc.json
         - name: Download software and product keys
           href: setup/download-software-licenses-csp.md
-        - name: Install Office apps
+        - name: Install Microsoft 365 apps
           href: setup/install-applications.md
         - name: Set up windows devices
           href: /microsoft-365/business-premium/m365bp-set-up-windows-devices
@@ -99,8 +99,6 @@
           href: multi-tenant/manage.md
     - name: Office 365 operated by 21Vianet
       items: 
-        - name: About Office 365 operated by 21Vianet
-          href: services-in-china/services-in-china.md
         - name: Download the Office app for Android for Office 365 operated by 21Vianet
           href: services-in-china/download-office-app-for-Android.md
         - name: Download the Office app for iOS for Office 365 operated by 21Vianet
@@ -123,6 +121,8 @@
              href: add-users/assign-admin-roles.md
            - name: Unassign licenses from users
              href: manage/remove-licenses-from-users.md
+           - name: Turn pronouns on or off
+             href: add-users/turn-pronouns-on-or-off.md
            - name: Guest users
              href: add-users/about-guest-users.md
            - name: Manage guest access in Microsoft 365 group
@@ -185,8 +185,6 @@
              href: add-users/set-password-to-never-expire.md
            - name: Password policy recommendations
              href: misc/password-policy-recommendations.md
-           - name: Resend user passwords
-             href: add-users/resend-user-password.md
            - name: Turn off strong passwords
              href: add-users/strong-password.md
            - name: Set the password expiration policy
@@ -199,6 +197,8 @@
           href: email/add-another-email-alias-for-a-user.md
         - name: Use your custom domain
           href: email/change-email-address.md
+        - name: Select the domain to use for email from Microsoft 365 products
+          href: email/select-domain-to-use-for-email-from-microsoft-365-products.md          
         - name: Migrate email and contacts to Microsoft 365
           href: setup/migrate-email-and-contacts-admin.md
         - name: Create signatures and disclaimers
@@ -227,6 +227,8 @@
           href: email/add-user-or-contact-to-distribution-list.md
         - name: Manage clutter for your organization
           href: email/configure-clutter.md
+        - name: Mailbox not found error
+          href: misc/mailbox-not-found-error.md
     - name: Manage domains
       items:
         - name: Add a domain
@@ -276,12 +278,65 @@
     - name: Manage your data and services
       items:
          - name: Monitor Microsoft 365 activity by using reports
-           href: activity-reports/activity-reports.md
-         - name: Microsoft 365 Teams apps usage reports
-           href: activity-reports/microsoft-teams-apps-usage.md  
-         - name: Microsoft Adoption Score - overview
-           href: adoption/adoption-score.md
            items:
+            - name: Microsoft 365 Reports in the admin center - overview
+              href: activity-reports/activity-reports.md
+            - name: Active Users
+              href: activity-reports/active-users-ww.md
+            - name: Microsoft browser usage
+              href: activity-reports/browser-usage-report.md
+            - name: Dynamics 365 Customer Voice activity
+              href: activity-reports/forms-activity-ww.md
+            - name: Email activity
+              href: activity-reports/email-activity-ww.md
+            - name: Email apps usage
+              href: activity-reports/email-apps-usage-ww.md
+            - name: Mailbox usage
+              href: activity-reports/mailbox-usage.md
+            - name: Microsoft Office activations
+              href: activity-reports/microsoft-office-activations-ww.md
+            - name: Microsoft 365 Teams apps usage reports
+              href: activity-reports/microsoft-teams-apps-usage.md  
+            - name: Microsoft Teams device usage
+              href: activity-reports/microsoft-teams-device-usage-preview.md
+            - name: Microsoft Teams usage activity
+              href: activity-reports/microsoft-teams-usage-activity.md
+            - name: Microsoft Teams user activity
+              href: activity-reports/microsoft-teams-user-activity-preview.md
+            - name: Microsoft 365 Apps usage
+              href: activity-reports/microsoft365-apps-usage-ww.md
+            - name: Microsoft 365 Copilot usage
+              href: activity-reports/microsoft-365-copilot-usage.md
+            - name: Microsoft 365 groups
+              href: activity-reports/office-365-groups-ww.md
+            - name: OneDrive for Business activity
+              href: activity-reports/onedrive-for-business-activity-ww.md
+            - name: OneDrive for Business usage
+              href: activity-reports/onedrive-for-business-usage-ww.md
+            - name: Project activity
+              href: activity-reports/project-activity.md
+            - name: SharePoint activity
+              href: activity-reports/sharepoint-activity-ww.md
+            - name: SharePoint site usage
+              href: activity-reports/sharepoint-site-usage-ww.md
+            - name: Visio activity
+              href: activity-reports/visio-activity.md
+            - name: Viva Goals activity
+              href: activity-reports/viva-goals-activity.md
+            - name: Viva Insights activity
+              href: activity-reports/viva-insights-activity.md
+            - name: Viva Learning activity
+              href: activity-reports/viva-learning-activity.md
+            - name: Viva Engage activity
+              href: activity-reports/viva-engage-activity-report-ww.md
+            - name: Viva Engage device usage
+              href: activity-reports/viva-engage-device-usage-report-ww.md
+            - name: Viva Engage groups activity
+              href: activity-reports/viva-engage-groups-activity-report-ww.md
+         - name: Microsoft Adoption Score
+           items:
+            - name: Microsoft Adoption Score - overview
+              href: adoption/adoption-score.md
             - name: Content collaboration
               href: adoption/content-collaboration.md
             - name: Communication 
@@ -300,6 +355,8 @@
               href: adoption/apps-health.md
             - name: Endpoint Analytics
               href: /mem/analytics/productivity-score
+         - name: Usage and user sentiment
+           href: misc/experience-insights-dashboard.md
          - name: Change your organization contact info
            href: manage/change-address-contact-and-more.md
          - name: Update your admin contact info
@@ -311,7 +368,17 @@
          - name: Upgrade users to the latest apps
            href: setup/upgrade-users-to-latest-office-client.md
          - name: Integrated apps
-           href: manage/test-and-deploy-microsoft-365-apps.md
+           items:
+            - name: What is Integrated Apps
+              href: manage/test-and-deploy-microsoft-365-apps.md
+            - name: Manage Office add-ins
+              href: manage/office-addins.md 
+            - name: Teams apps that work on Outlook & Microsoft 365
+              href: manage/teams-apps-work-on-outlook-and-m365.md  
+            - name: Teams apps that only work on Teams
+              href: manage/teams-apps-work-only-on-teams.md  
+            - name: SaaS Linked Apps
+              href: manage/saas-linked-apps.md  
          - name: Centralized deployment of add-ins
            items:
             - name: Requirements for centralized deployment of add-ins
@@ -360,6 +427,8 @@
              href: manage/servicenow-authentication.md
            - name: Testing the configuration
              href: manage/servicenow-testing-the-configuration.md
+           - name: Automatic ServiceNow incident creation
+             href: manage/servicenow-incidents.md
            - name: Troubleshooting
              href: manage/servicenow-troubleshooting.md
            - name: Integrate Microsoft 365 with ServiceNow Virtual Agent
@@ -382,8 +451,6 @@
       href: ../commerce/index.yml
     - name: Secure your organization
       items: 
-        - name: Top 10 ways to secure your data
-          href: security-and-compliance/secure-your-business-data.md
         - name: Multi-factor authentication for Microsoft 365
           href: security-and-compliance/multi-factor-authentication-microsoft-365.md
         - name: Set up multi-factor authentication
@@ -394,8 +461,6 @@
           href: security-and-compliance/increase-threat-protection.md
         - name: Turn on Idle session timeout
           href: manage/idle-session-timeout-web-apps.md
-        - name: Enable Modern Authentication for Office 2013
-          href: security-and-compliance/enable-modern-authentication.md
         - name: A guide to GDPR compliance
           href: security-and-compliance/gdpr-compliance.md
     - name: Manage devices and app data

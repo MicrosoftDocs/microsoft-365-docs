@@ -22,6 +22,7 @@ ms.collection:
 - tier1
 ms.topic: conceptual
 ms.custom: seo-marvel-apr2020
+ms.date: 02/16/2021
 ---
 
 # Understand the analyst report in threat analytics in Microsoft 365 Defender
@@ -76,8 +77,8 @@ The analyst report also provides the detections from Microsoft Defender Antiviru
 
 These detections are available on devices with [Microsoft Defender Antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) turned on. When these detections occur on devices that have been onboarded to Microsoft Defender for Endpoint, they also trigger alerts that light up the charts in the report.
 
->[!NOTE]
->The analyst report also lists **generic detections** that can identify a wide-range of threats, in addition to components or behaviors specific to the tracked threat. These generic detections don't reflect in the charts.
+> [!NOTE]
+> The analyst report also lists **generic detections** that can identify a wide-range of threats, in addition to components or behaviors specific to the tracked threat. These generic detections don't reflect in the charts.
 
 ### Endpoint detection and response (EDR) alerts
 
@@ -99,7 +100,7 @@ While detections allow you to identify and stop the tracked threat automatically
 
 Advanced hunting queries in the analyst reports have been vetted by Microsoft analysts and are ready for you to run in the [advanced hunting query editor](https://security.microsoft.com/advanced-hunting). You can also use the queries to create [custom detection rules](custom-detection-rules.md) that trigger alerts for future matches.
 
->[!NOTE]
+> [!NOTE]
 > Threat analytics is also available in [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics). However, it does not have the data integration between Microsoft Defender for Office and Microsoft Defender for Endpoint.
 
 ## Related topics
@@ -107,3 +108,4 @@ Advanced hunting queries in the analyst reports have been vetted by Microsoft an
 - [Threat analytics overview](threat-analytics.md)
 - [Proactively find threats with advanced hunting](advanced-hunting-overview.md)
 - [Custom detection rules](custom-detection-rules.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

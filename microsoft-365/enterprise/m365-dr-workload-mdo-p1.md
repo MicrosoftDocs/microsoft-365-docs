@@ -8,10 +8,11 @@ ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 
+ms.date: 09/20/2022
 ms.reviewer: dmwmsft
 ms.custom:
 - it-pro
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 ---
@@ -46,7 +47,7 @@ In addition, processing of data that is required to analyze threats and inspect 
 
 ### Overview
 
-Service documentation: [Exchange Online Protection (EOP) overview](/microsoft-365/security/office-365-security/exchange-online-protection-overview)
+Service documentation: [Exchange Online Protection (EOP) overview](/microsoft-365/security/office-365-security/eop-about)
 
 Capability summary: Exchange Online Protection (EOP) is the cloud-based filtering service that protects your organization against spam, malware, and other email threats.
 
@@ -66,8 +67,8 @@ Please refer to the [Advanced Data Residency Commitment](m365-dr-commitments.md)
 
 ## Migration
 
-EOP customer data migrates during the Exchange Online migration. MDO P1 does not have customer data to migrate.
+EOP customer data migrates after ADR migration is initated. MDO P1 does not have customer data to migrate.
 
 ## How can I determine customer data location?
 
-We are in the process of updating the actual data location in the _Tenant_ Admin Center. When this change is complete you will be able to see the actual data location, for committed workloads, by navigating to Admin|Settings|Org Settings|Organization Profile|Data Location. Until that change is visible, you can view the Exchange Online data location information in order to understand where your in scope customer data is stored for this service.
+You can find the actual data location in Tenant Admin Center. As a tenant administrator you can find the actual data location, for committed data, by navigating to Admin->Settings->Org Settings->Organization Profile->Data Location.

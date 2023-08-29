@@ -1,6 +1,7 @@
 ---
 title: "Manage a group in the admin center"
 ms.reviewer: arvaradh
+ms.date: 02/18/2020
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -15,7 +16,9 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
-ms.custom: admindeeplinkMAC
+ms.custom:
+  - admindeeplinkMAC
+  - has-azure-ad-ps-ref
 search.appverid:
 - BCS160
 - MET150
@@ -111,7 +114,5 @@ To confirm that the group has been successfully purged, run the  *Get-AzureADMSD
 [Choose the domain to use when creating Microsoft 365 Groups](../../solutions/choose-domain-to-create-groups.md)
 
 [Allow members to send as or send on behalf of a Microsoft 365 group](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md)
-
-[Upgrade distribution lists to Microsoft 365 Groups](../manage/upgrade-distribution-lists.md)
 
 [Manage Microsoft 365 Groups with PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md)

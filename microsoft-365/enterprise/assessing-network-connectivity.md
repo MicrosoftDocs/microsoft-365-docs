@@ -3,7 +3,7 @@ title: "Assessing Microsoft 365 network connectivity"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 
+ms.date: 08/10/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise
@@ -78,8 +78,8 @@ The browser-based tool displays the following information:
   - The location on a map of other service front doors that would provide optimal connectivity
   - Relative performance compared to other Microsoft 365 customers near you
 - Details and solutions tab
-  - User location by city and country
-  - Network egress location by city, state and country
+  - User location by city and country/region
+  - Network egress location by city, state and country/region
   - User to network egress distance
   - Microsoft 365 Exchange Online service front door location
   - Optimal Microsoft 365 Exchange Online service front door(s) for user location

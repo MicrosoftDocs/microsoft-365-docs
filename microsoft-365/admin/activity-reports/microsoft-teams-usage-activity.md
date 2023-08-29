@@ -3,11 +3,11 @@ title: "Microsoft 365 admin center Teams usage activity reports"
 ms.author: camillepack
 author: camillepack
 manager: scotv
+ms.date: 03/25/2022
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - Tier2
 - scotvorg
@@ -113,6 +113,9 @@ Data for following metrics are available for individual teams.
 |Urgent messages|Count of urgent messages in the specified time period.|
 |Channel messages|The number of unique messages that the user posted in a team chat during the specified time period.|
 |Last activity date|The latest date that any member of the team has committed an action.|
+
+> [!NOTE]
+> Metric counts include Teams client built-in features, but don't include changes to chat and channel through service integration, such as Teams app posts or replies and emails in the channel.
 
 ## Make the user-specific data anonymous
 

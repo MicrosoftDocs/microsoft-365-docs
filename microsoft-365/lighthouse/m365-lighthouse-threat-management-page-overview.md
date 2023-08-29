@@ -4,7 +4,8 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.reviewer: algreer
+ms.reviewer: ragovind
+ms.date: 06/21/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -35,13 +36,13 @@ To access the Threat management page in Microsoft 365 Lighthouse, select **Devic
   
 On the Overview tab of the Threat management page, you can monitor the antivirus state across all your tenants to identify the areas that need attention.
 
-:::image type="content" source="../media/m365-lighthouse-threat-management-page-overview/threatmanagement-overview-tab.png" alt-text="Screenshot of the Overview tab.":::
+:::image type="content" source="../media/m365-lighthouse-threat-management-page-overview/threatmanagement-overview-tab.png" alt-text="Screenshot of the Overview tab on the Threat management page." lightbox="../media/m365-lighthouse-threat-management-page-overview/threatmanagement-overview-tab.png":::
 
 ## Threats tab
 
 On the Threats tab of the Threat management page, you can see the Active, Mitigated, Resolved, and Allowed threats across all your tenants. You can also remediate multiple threats at the same time across all your tenants by filtering and drilling down into each threat to learn which devices, users, or tenants are affected.
 
-:::image type="content" source="../media/m365-lighthouse-threat-management-page-overview/threatmanagement-threats-tab.png" alt-text="Screenshot of the Default baseline page.":::
+:::image type="content" source="../media/m365-lighthouse-threat-management-page-overview/threatmanagement-threats-tab.png" alt-text="Screenshot of the Threats tab on the Threat management page." lightbox="../media/m365-lighthouse-threat-management-page-overview/threatmanagement-threats-tab.png":::
   
 You can filter threats by:
 
@@ -70,9 +71,9 @@ The following table lists the different threat statuses and their definition:<br
 
 The Antivirus protection tab on the Threats management page shows the devices across all your tenants and their Microsoft Defender Antivirus protection state. You can assess the status and take action for one or more devices that may be vulnerable. You can also select a device to view more information, such as Device Overview, Current Threats, and Device Action statuses.
 
-:::image type="content" source="../media/m365-lighthouse-threat-management-page-overview/threatmanagement-antivirus-tab.png" alt-text="Screenshot of the Antivirus tab.":::
+:::image type="content" source="../media/m365-lighthouse-threat-management-page-overview/threatmanagement-antivirus-tab.png" alt-text="Screenshot of the Antivirus protection tab on the Threat management page." lightbox="../media/m365-lighthouse-threat-management-page-overview/threatmanagement-antivirus-tab.png":::
 
 ## Related content
 
-[Overview of using Microsoft 365 Lighthouse baselines to deploy standard tenant configurations](m365-lighthouse-deploy-standard-tenant-configurations-overview.md)
+[Overview of using Microsoft 365 Lighthouse baselines to deploy standard tenant configurations](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (article)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)

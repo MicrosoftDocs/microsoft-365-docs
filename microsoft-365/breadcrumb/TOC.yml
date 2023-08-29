@@ -12,18 +12,35 @@
     tocHref: /microsoft-365/bookings/
     topicHref: /microsoft-365/bookings/
   - name: Microsoft 365 Business Premium
-    tocHref: /microsoft-365/business-premium/index
-    topicHref: /business-premium/index
-  - name: Office 365 Enterprise
+    tocHref: /microsoft-365/business-premium/
+    topicHref: /microsoft-365/business-premium/index
+  - name: Microsoft Purview
+    tocHref: /microsoft-365/compliance/
+    topicHref: /microsoft-365/compliance/
+  - name: Microsoft 365 for enterprise
     tocHref: /microsoft-365/Enterprise/index
     topicHref: /microsoft-365/Enterprise/index
   - name: Microsoft 365 for frontline workers
     tocHref: /microsoft-365/frontline/
     topicHref: /microsoft-365/frontline/
-  - name: Microsoft 365 solutions
-    tocHref: /microsoft-365/solutions/
-    topicHref: /microsoft-365/solutions/
-  - name: Compliance
-    tocHref: /microsoft-365/compliance/
-    topicHref: /microsoft-365/compliance/
-
+  - name: Scheduler for Microsoft 365
+    tocHref: /microsoft-365/scheduler/
+    topicHref: /microsoft-365/scheduler/index/
+  - name: Defender for Business 
+    tocHref: /microsoft-365/security/defender-business/
+    topicHref: /microsoft-365/security/defender-business/
+  - name: Defender for Endpoint
+    tocHref: /microsoft-365/security/defender-endpoint/
+    topicHref: /microsoft-365/security/defender-endpoint/
+  - name: Microsoft 365 Defender
+    tocHref: /microsoft-365/security/defender/
+    topicHref: /microsoft-365/security/defender/
+  - name: Microsoft Defender for Office 365
+    tocHref: /microsoft-365/security/office-365-security/
+    topicHref: /microsoft-365/security/office-365-security/
+  - name: Test Base for Microsoft 365
+    tocHref: /microsoft-365/test-base/
+    topicHref: /microsoft-365/test-base/
+  - name: Microsoft Whiteboard
+    tocHref: /microsoft-365/whiteboard/
+    topicHref: /microsoft-365/whiteboard/

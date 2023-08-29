@@ -10,10 +10,10 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
 - NOCSH
-ms.author: dansimp
-author: dansimp
+ms.author: diannegali
+author: diannegali
 ms.localizationpriority: medium
-ms.date: 07/27/2022
+ms.date: 08/11/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -51,7 +51,7 @@ It's important to approve (or reject) pending actions as soon as possible so tha
 
 1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in. 
 
-2. In the navigation pane, choose **Action center**.
+2. In the navigation pane under Actions and submissions, choose **Action center**.
 
 3. In the Action center, on the **Pending** tab, select an item in the list. Its flyout pane opens. Here's an example.
 
@@ -102,3 +102,4 @@ If you've determined that a device or a file is not a threat, you can undo remed
 
 - [View the details and results of an automated investigation](m365d-autoir-results.md)
 - [Address false positives or false negatives](m365d-autoir-report-false-positives-negatives.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

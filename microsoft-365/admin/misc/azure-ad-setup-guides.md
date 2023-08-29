@@ -1,8 +1,9 @@
 ---
 title: "Azure Active Directory setup guides"
-ms.author: Kwekua
-author: Kwekua
+ms.author: kwekua
+author: kwekuako
 manager: scotv
+ms.date: 12/13/2021
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -40,26 +41,44 @@ This catalog contains some basic security features you can use to ensure your us
 
 ### Licensing
 
-An Azure Active Directory P2 license is required to utilize the security features in this catalog.
+Using features in this catalog requires either Microsoft Entra ID Governance or Microsoft Azure AD Premium P2 license. To find the right license for your requirements, see [Compare generally available features of Microsoft Azure AD](https://www.microsoft.com/security/business/identity-access-management/azure-ad-pricing).
 
 [Open the Identity security for Teams catalog](https://portal.office.com/AdminPortal/home?Q=azuredocs#/teamsidentity)
 
 ## Identity Governance
 
-This wizard catalog is designed to help customers with Azure Active Directory P2 functionality, including Access Reviews (AR), Privileged Identity Management (PIM) and Entitlement Management (ELM). For PIM and ELM we offer a curated list of docs and a pointer to the Azure Active Directory admin center, where the admin can configure this functionality. For AR, we offer a fully automated experience that allows admins to choose from two templates. These templates include one that allows group owners to approve guest usage in all Microsoft 365 groups. This is a top policy that customers use today.  
+This catalog is designed to help customers with Microsoft Entra ID Governance or Azure AD P2 functionality, including access reviews, PIM, entitlement management (ELM), Access Reviews, HR-driven user provisioning, and life cycle workflows.
 
-Next, we offer a test template, where the admin is the reviewer of guests for a specific group they choose. If the tenant already has a review in place that covers all Microsoft 365 groups guest users, the admin will be pointed to the Azure Active Directory admin center to manage the existing review and there will be no automated experience.
+### PIM
+
+Manage users’ time-bound admin access with our automated system that allows eligible users to complete privileged tasks through an approval workflow without risking exposure of sensitive data or critical configuration settings.
+
+### ELM
+
+We offer a curated list of docs and a pointer to the Azure AD admin center, where the admin can configure entitlement management.
+
+### Access reviews
+
+We offer a fully automated experience that allows you to first test and then enable the most common access review settings. This allows group owners to approve guest usage in all Microsoft 365 groups.
+
+### HR-driven user provisioning
+
+Respond faster to identity changes in your HR app and eliminate manual provisioning. Sync worker profile changes with your business apps. This includes the ability to writeback managed attributes directly from the app, whether it's a hire, name, title, manager change, or termination.
+
+### Lifecycle workflows
+
+Easily manage your users' lifecycle in Azure AD by creating custom workflows to automate repetitive onboarding and offboarding tasks, eliminating the need for manual processes. Lifecycle workflows automatically execute configured tasks when users join or leave your org and provide insights for easy troubleshooting.
 
 [Open the Identity Governance setup guide](https://admin.microsoft.com/adminportal/home?Q=azuredocs#/modernonboarding/identitygovernance)
 
 > [!NOTE]
-> Azure Active Directory P2 license is required to utilize the security features in this catalog.
+> A Microsoft Entra ID Governance or Azure Active Directory P2 license is required to utilize the security features in this catalog.
 
 ## Azure Active Directory deployment  
 
 The Azure Active Directory setup guide will help you set up the most common Azure AD features in a recommended order. The setup guide is split into three sections: **Initial**, **Core**, and **Advanced**. Each section recommends a set of features you should turn on.
 
-The setup guides contain a checklist of the tasks you need to complete and you can track your progress as you go through the guides. The guides will also link to the other setup guides when necessary.
+The setup guides contain a checklist of the tasks you need to complete, and you can track your progress as you go through the guides. The guides will also link to the other setup guides when necessary.
 
 [Open the Azure Active Directory setup guide](https://admin.microsoft.com/adminportal/home?Q=azuredocs#/modernonboarding/azureadsetup).
 
@@ -75,7 +94,7 @@ Using Azure Active Directory sync tools is free and included with all Microsoft 
 
 ## Secure your cloud apps with Single Sign On (SSO)
 
-This guide is designed to help you add cloud apps to Microsoft 365. In our guide, you can add an application to your tenant, add users to the app, assign roles, and more.  If the app supports Single Sign-On (SSO), we’ll walk you through that configuration as well.
+This guide is designed to help you add cloud apps to Microsoft 365. In our guide, you can add an application to your tenant, add users to the app, assign roles, and more. If the app supports single sign-on (SSO), we’ll walk you through that configuration.
 
 ### Licensing
 
@@ -91,6 +110,8 @@ This setup guide is designed to help you enable and configure self service passw
 
 SSPR requires one of the following licenses:
 
+- Microsoft Entra ID Governance
+
 - Azure Active Directory P1 or P2
 
 - Microsoft 365 Business Premium
@@ -101,22 +122,38 @@ SSPR requires one of the following licenses:
 
 [Open the self-service password reset setup guide](https://admin.microsoft.com/adminportal/home?Q=azuredocs#/modernonboarding/ssprsetup).
 
-## Multi-factor authentication (MFA)
+## Configure multi-factor authentication (MFA)
 
-This guide provides the current MFA status and helps IT admins select the best MFA option that meets their organization's requirements. Then we assist with configuring and enforcing the selected MFA method for the org.
+For customers with Entra ID Governance,Azure P1, or Azure P2, we provide customizable Conditional Access templates that include the most common and least intrusive security standards. When Azure licensing isn’t available, we provide a one-click solution to enable Security Defaults, a baseline protection policy for all users, or we provide steps to enable legacy (per-user) MFA.
 
 ### Licensing
 
-Conditional Access requires an Azure Active Directory P1 or P2 license, security defaults and per-user MFA are free and included with all Microsoft 365 subscriptions.
+Conditional Access requires Microsoft Entra ID Governance or an Azure Active Directory P1 or P2 license. Security defaults and per-user MFA are included with all Microsoft 365 subscriptions.
 
 [Open the multi-factor authentication (MFA) guide](https://admin.microsoft.com/adminportal/home?Q=azuredocs#/modernonboarding/mfasetupguide)
 
-## The passwordless setup guide
+## Plan your passwordless setup guide
 
-The passwordless setup guide is designed to help you determine the best passwordless method for your environment. The methods include security keys, Windows Hello for Business, and the Microsoft Authenticator app. If the recommendation is Windows Hello for Business, there's a section to guide you through the different options. The guide asks you questions to help you craft a step-by-step plan.
+Upgrade to an alternative sign-in approach that allows users to access their devices securely with one of the following passwordless authentication methods:
+
+- Windows Hello for Business
+
+- The Microsoft Authenticator app
+
+- Security keys
+
+- Temporary Access Pass (TAP)
+
+Use the passwordless deployment guide to discover the best authentication methods to use and receive guidance on how to deploy them.
 
 ### Licensing
 
 Every paid subscription to Microsoft 365 comes with a free subscription to Azure AD. You can use Azure AD to manage your apps and create and manage user and group accounts.
 
 [Open the passwordless setup guide](https://admin.microsoft.com/adminportal/home?Q=azuredocs#/modernonboarding/passwordlesssetup).
+
+## Migrate from ADFS to Azure AD
+
+We offer custom guidance for migrating from ADFS to Azure AD. Answer a few questions about your Active Directory Federation Services (AD FS) infrastructure and then implement either pass-through authentication (PTA) or password hash sync (PHS) to give users a streamlined experience while accessing your org's apps.
+
+[Open the Migrate from ADFS to Azure AD guide](https://admin.microsoft.com/adminportal/home?Q=azuredocs#/modernonboarding/MigrateADFSToMicrosoftAzureAD).

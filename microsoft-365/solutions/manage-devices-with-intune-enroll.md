@@ -7,6 +7,7 @@ f1.keywords:
 - enroll devices to Intune
 - Intune mobile device platforms
 manager: dougeby
+ms.date: 10/20/2021
 audience: ITPro
 description: Use Intune and Autopilot to enroll devices into management to ensure the apps running on them are compliant and to prevent corporate data leaks.
 ms.topic: article
@@ -83,4 +84,3 @@ To learn more about macOS enrollment, see [Enroll macOS devices in Microsoft Int
 ## Next steps
 
 Go to Step [3. Set up compliance policies for devices with Intune](manage-devices-with-intune-compliance-policies.md).
-

@@ -20,6 +20,7 @@ ms.collection:
   - tier1
 ms.topic: conceptual
 ms.subservice: mde
+ms.date: 12/18/2020
 ---
 
 # Track and respond to emerging threats through threat analytics
@@ -135,3 +136,4 @@ When using the reports, keep the following in mind:
 - [Proactively find threats with advanced hunting](advanced-hunting-overview.md)
 - [Understand the analyst report section](threat-analytics-analyst-reports.md)
 - [Assess and resolve security weaknesses and exposures](next-gen-threat-and-vuln-mgt.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

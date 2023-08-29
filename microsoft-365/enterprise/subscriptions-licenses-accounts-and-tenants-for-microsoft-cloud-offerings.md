@@ -3,6 +3,7 @@ title: "Subscriptions, licenses, accounts, and tenants for Microsoft's cloud off
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
+ms.date: 08/23/2023
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-enterprise

@@ -19,6 +19,7 @@ ms.collection:
 - tier3
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
+ms.date: 02/08/2023
 ---
 
 # Configure Microsoft 365 Defender to stream Advanced Hunting events to your Azure Event Hub
@@ -29,7 +30,7 @@ ms.topic: conceptual
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!NOTE]
-> **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph beta | Microsoft Learn](/graph/api/resources/security-api-overview).
+> **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview).
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -117,7 +118,7 @@ The following Advanced Hunting query can help provide a rough estimate of data v
  
 ```kusto 
 let bytes_ = 500;
-union withsource=MDTables*
+union withsource=MDTables *
 | where Timestamp > startofday(ago(6h))
 | summarize count() by bin(Timestamp, 1m), MDTables
 | extend EPS = count_ /60
@@ -132,7 +133,7 @@ For more information, see [Log Analytics workspace data export in Azure Monitor]
 
 ## Related topics
 
-- [Use the Microsoft Graph security API - Microsoft Graph beta | Microsoft Learn](/graph/api/resources/security-api-overview)
+- [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview)
 
 - [Overview of Advanced Hunting](advanced-hunting-overview.md)
 - [Microsoft 365 Defender streaming API](streaming-api.md)
@@ -140,3 +141,4 @@ For more information, see [Log Analytics workspace data export in Azure Monitor]
 - [Stream Microsoft 365 Defender events to your Azure storage account](streaming-api-storage.md)
 - [Azure Event Hubs documentation](/azure/event-hubs/)
 - [Troubleshoot connectivity issues - Azure Event Hubs](/azure/event-hubs/troubleshooting-guide)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
