@@ -1087,7 +1087,7 @@
       },
       {
          "source_path":"microsoft-365/security/office-365-security/move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md",
-         "redirect_url":"/exchange/standalone-eop/move-domains-and-settings-between-eop-orgs",
+         "redirect_url":"/exchange/standalone-eop/standalone-eop",
          "redirect_document_id":false
       },
       {
@@ -2676,9 +2676,39 @@
          "redirect_document_id":true
       },
       {
+         "source_path":"microsoft-365/security/defender-endpoint/community.md",
+         "redirect_url":"https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/bd-p/MicrosoftDefenderATP",
+         "redirect_document_id":false
+      },
+      {
          "source_path":"microsoft-365/security/defender-endpoint/corelight-integration.md",
          "redirect_url":"/microsoft-365/security/defender-endpoint/device-discovery",
          "redirect_document_id":true
-      }
+      },
+      {
+         "source_path": "microsoft-365/security/defender/first-incident-prepare.md",
+         "redirect_url": "/microsoft-365/security/defender/respond-first-incident-365-defender",
+         "redirect_document_id": false
+       },
+       {
+         "source_path": "microsoft-365/security/defender/first-incident-overview.md",
+         "redirect_url": "/microsoft-365/security/defender/respond-first-incident-365-defender",
+         "redirect_document_id": false
+       },
+       {
+         "source_path": "microsoft-365/security/defender/first-incident-analyze.md",
+         "redirect_url": "/microsoft-365/security/defender/respond-first-incident-analyze",
+         "redirect_document_id": false
+       },
+       {
+         "source_path": "microsoft-365/security/defender/first-incident-remediate.md",
+         "redirect_url": "/microsoft-365/security/defender/respond-first-incident-remediate",
+         "redirect_document_id": false
+       },
+       {
+         "source_path": "microsoft-365/security/defender/first-incident-post.md",
+         "redirect_url": "/microsoft-365/security/defender/respond-first-incident-remediate",
+         "redirect_document_id": false
+       }
    ]
 }
