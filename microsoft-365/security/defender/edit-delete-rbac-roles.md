@@ -66,10 +66,15 @@ If the workload is active, by removing the role all assigned user permission wil
 The Export feature enables you to export the following roles data:
 
 - Role name
-- Included permissions
-- Assigned users or user groups, including data sources. Where multiple assignments exist for one role, each assignment will be represented as a separate row in the CSV file. T
+- Role description
+- Permissions included in the role
+- The assignment name
+- The assigned data sources
+- The assigned users or user groups
 
-The CSV will also include a snapshot about all workloads that are available on the tenant and their Unified RBAC activation status.
+Where multiple assignments exist for one role, each assignment will be represented as a separate row in the CSV file.
+
+The CSV also includes a snapshot of the Unified RBAC activation status for each workload available on the tenant.
 
 The following steps guide you on how to export roles in Microsoft 365 Defender Unified RBAC:
 
