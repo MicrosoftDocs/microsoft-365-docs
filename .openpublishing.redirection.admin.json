@@ -2005,6 +2005,16 @@
          "source_path": "microsoft-365/admin/basic-mobility-security/privacy-and-security.md",
          "redirect_url": "/microsoft-365/admin/basic-mobility-security/overview",
          "redirect_document_id":false
+       },
+       {
+         "source_path": "microsoft-365/admin/misc/deleted-users-checklist.md",
+         "redirect_url": "/microsoft-365/admin/add-users/remove-former-employee",
+         "redirect_document_id":false
+       },
+       {
+         "source_path": "microsoft-365/admin/misc/message-center-conformance.md",
+         "redirect_url": "/microsoft-365/admin/manage/message-center",
+         "redirect_document_id":false
        }       
    ]
 }
