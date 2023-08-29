@@ -28,7 +28,7 @@ In **Microsoft Edge**, select the **Work feed** page when opening a new tab.
 
 In **Microsoft Edge**, while signed in with a work or school account, select the **Work Feed** page when opening a new tab.
 
-![Image of the select Feed in Microsoft 365.](../media/MS-contoso-feed-new.png)
+:::image type="content" source="../media/MS-contoso-feed-new.png" alt-text="Image of the select Feed in Microsoft 365." lightbox="../media/MS-contoso-feed-new.png":::
 
 In **Outlook Mobile**, while signed in with a work or school account, select the Feed Tab from the bottom navigation bar.
 
@@ -36,7 +36,7 @@ In **Outlook Mobile**, while signed in with a work or school account, select the
 
 In **Microsoft 365 Mobile**, while signed in with a work or school account, select the Feed Tab from the bottom navigation bar.
 
-:::image type="content" source="../media/MS-m365-feed-mobile-resize-one.png" alt-text="Select Feed in Mobile Microsoft 365.":::
+:::image type="content" source="../media/MS-m365-feed-mobile.png" alt-text="Select Feed in Mobile Microsoft 365.":::
 
 See the section *Find your way around* in [Discover and learn with Microsoft Feed](https://support.microsoft.com/en-us/office/discover-and-learn-with-microsoft-feed-9c190800-e348-46b7-9d46-41c628b80ebb) for more information.
 
@@ -48,7 +48,7 @@ Microsoft Feed doesn’t change any permissions, so each user has a unique feed 
 
 We have also added this feature where users can see who has access to a document by clicking on 'Who can see this' behind the three-dot menu (...) on the document card as shown below:
 
-![Microsoft Feed Privacy Access.](../media/MS-privacy-in-feed.png)
+:::image type="content" source="../media/MS-privacy-in-feed.png" alt-text="Microsoft Feed Privacy Access.":::
 
 ## What controls are available?
 
