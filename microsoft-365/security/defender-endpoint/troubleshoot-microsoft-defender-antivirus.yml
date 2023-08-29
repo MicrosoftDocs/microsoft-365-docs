@@ -555,7 +555,7 @@ sections:
  
           - Engine Version: Antimalware Engine version
  
-         User action:	No action is required. Microsoft Defender Antivirus can suspend and take routine action on this threat. If you want to remove the threat manually, in the Microsoft Defender Antivirus interface, click **Clean Computer**.
+         User action: No action is required. Microsoft Defender Antivirus can suspend and take routine action on this threat. If you want to remove the threat manually, in the Microsoft Defender Antivirus interface, click **Clean Computer**.
 
      - question: Event ID 1117
        answer: |
@@ -1091,7 +1091,7 @@ sections:
 
           - Error Description: Error description Description of the error.
 
-         User action:	The Microsoft Defender Antivirus client update failed. This event occurs when the client fails to update itself. This event is usually due to an interruption in network connectivity during an update. To troubleshoot this event:
+         User action: The Microsoft Defender Antivirus client update failed. This event occurs when the client fails to update itself. This event is usually due to an interruption in network connectivity during an update. To troubleshoot this event:
 
            - [Update definitions](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-updates) and force a rescan directly on the endpoint.
 
@@ -1263,7 +1263,7 @@ sections:
 
           - Persistence Limit: Persistence limit of the fastpath signature.
 
-         User action:	Check your Internet connectivity settings.
+         User action: Check your Internet connectivity settings.
 
      - question: Event ID 2013
        answer: |
@@ -1558,9 +1558,9 @@ sections:
      - question: Error code 0x80508007
        answer: |
 
-         Message:	`ERR_MP_NO_MEMORY`
+         Message: `ERR_MP_NO_MEMORY`
 
-         Possible reason:	This error indicates that you might have run out of memory.
+         Possible reason: This error indicates that you might have run out of memory.
 
          Resolution:
 
@@ -1599,7 +1599,7 @@ sections:
 
          Message: `ERR_MP_BAD_CONFIGURATION`
 
-         Possible reason: This error indicates that there might be an engine configuration error; commonly, this is related to input data that doesn't allow the engine to function properly.	
+         Possible reason: This error indicates that there might be an engine configuration error; commonly, this is related to input data that doesn't allow the engine to function properly.
 
      - question: Error code 0x805080211
        answer: |
@@ -1631,7 +1631,7 @@ sections:
 
          Possible reason: This error indicates that a full system scan might be required.
 
-         Resolution:	Run a full system scan.
+         Resolution: Run a full system scan.
 
      - question: Error code 0x80508025
        answer: |
@@ -1640,7 +1640,7 @@ sections:
 
          Possible reason: This error indicates that manual steps are required to complete threat removal.
 
-         Resolution:	Follow the manual remediation steps outlined in the [Microsoft Malware Protection Encyclopedia](https://www.microsoft.com/wdsi/threats). You can find a threat-specific link in the event history.
+         Resolution: Follow the manual remediation steps outlined in the [Microsoft Malware Protection Encyclopedia](https://www.microsoft.com/wdsi/threats). You can find a threat-specific link in the event history.
 
      - question: Error code 0x80508026
        answer: |
@@ -1649,7 +1649,7 @@ sections:
 
          Possible reason: This error indicates that removal inside the container type might not be not supported.
 
-         Resolution:	Microsoft Defender Antivirus isn't able to remediate threats detected inside the archive. Consider manually removing the detected resources.
+         Resolution: Microsoft Defender Antivirus isn't able to remediate threats detected inside the archive. Consider manually removing the detected resources.
 
      - question: Error code 0x80508027
        answer: |
@@ -1658,7 +1658,7 @@ sections:
 
          Possible reason: This error indicates that removal of low and medium threats might be disabled.
 
-         Resolution:	Check the detected threats and resolve them as required.
+         Resolution: Check the detected threats and resolve them as required.
 
      - question: Error code 0x80508029
        answer: |
@@ -1667,7 +1667,7 @@ sections:
 
          Possible reason: This error indicates a rescan of the threat is required.
 
-         Resolution:	Run a full system scan.
+         Resolution: Run a full system scan.
 
      - question: Error code 0x80508030
        answer: |
@@ -1676,7 +1676,7 @@ sections:
 
          Possible reason: This error indicates that an offline scan is required.
 
-         Resolution:	Run offline Microsoft Defender Antivirus. You can read about how to do this in the [offline Microsoft Defender Antivirus article](https://support.microsoft.com/windows/help-protect-my-pc-with-microsoft-defender-offline-9306d528-64bf-4668-5b80-ff533f183d6c).
+         Resolution: Run offline Microsoft Defender Antivirus. You can read about how to do this in the [offline Microsoft Defender Antivirus article](https://support.microsoft.com/windows/help-protect-my-pc-with-microsoft-defender-offline-9306d528-64bf-4668-5b80-ff533f183d6c).
 
      - question: Error code 0x80508031
        answer: |
@@ -1685,7 +1685,7 @@ sections:
 
          Possible reason: This error indicates that Microsoft Defender Antivirus doesn't support the current version of the platform and requires a new version of the platform.
 
-         Resolution:	You can only use Microsoft Defender Antivirus in Windows 10 and Windows 11. For Windows 8, Windows 7 and Windows Vista, you can use [System Center Endpoint Protection](https://www.microsoft.com/server-cloud/system-center/endpoint-protection-2012.aspx).
+         Resolution: You can only use Microsoft Defender Antivirus in Windows 10 and Windows 11. For Windows 8, Windows 7 and Windows Vista, you can use [System Center Endpoint Protection](https://www.microsoft.com/server-cloud/system-center/endpoint-protection-2012.aspx).
 
      - question: Internal error codes
        answer: |

@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 03/06/2023
+ms.date: 06/06/2023
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
@@ -64,7 +64,7 @@ Your notification tells you when built-in protection is coming and when tamper p
 
 You can opt out of built-in protection by specifying your own security settings. For example, if you prefer to not have tamper protection turned on automatically for your tenant, you can explicitly opt out.
 
-> [!NOTE]
+> [!CAUTION]
 > **We do not recommend turning tamper protection off**. Tamper protection provides you with better ransomware protection.
 > You must be a global administrator or security administrator to perform the following procedure.
 
@@ -98,3 +98,4 @@ Built-in protection is a set of default settings. You aren't required to keep th
 - [Configure Microsoft Defender for Endpoint in Intune](/mem/intune/protect/advanced-threat-protection-configure)
 - [Manage Microsoft Defender for Endpoint on devices with Microsoft Intune](/mem/intune/protect/mde-security-integration)
 - [Responding to ransomware attacks](../defender/playbook-responding-ransomware-m365-defender.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

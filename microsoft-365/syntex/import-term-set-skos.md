@@ -1,10 +1,9 @@
 ---
 title: Import a term set using a SKOS-based format
-description: Learn how to Import a term set using a SKOS-based format.
-ms.author: mikeplum
-author: MikePlumleyMSFT
-manager: serdars
-ms.date: 09/14/2020
+ms.author: chucked
+author: chuckedmonson
+manager: pamgreen
+ms.date: 05/14/2022
 audience: admin
 ms.service: microsoft-syntex
 ms.topic: conceptual
@@ -13,7 +12,8 @@ ms.collection:
 - m365initiative-syntex
 ms.custom: admindeeplinkSPO
 search.appverid: 
-ms.localizationpriority: high
+ms.localizationpriority: medium
+description: Learn how to import a term set using a SKOS-based format.
 ---
 
 # Import a term set using a SKOS-based format
@@ -21,6 +21,8 @@ ms.localizationpriority: high
 You can import a term set using a SKOS-based format. For details about the format, see [SharePoint taxonomy SKOS format reference](skos-format-reference.md). This feature requires a [Microsoft Syntex license](syntex-licensing.md).
 
 We recommend keeping your import files to less than 20,000 terms. Larger files can increase the time taken for validation and import.
+
+## Import a term set
 
 1. In the SharePoint admin center, expand **Content services**, and then select <a href="https://go.microsoft.com/fwlink/?linkid=2185073" target="_blank">**Term store**</a>.
 
@@ -30,8 +32,7 @@ We recommend keeping your import files to less than 20,000 terms. Larger files c
 
 4. If you want to download a sample file to use as a template, click **sample-metadata.ttl** to get a sample file that uses the SKOS-based format.
 
-5. Create the import file that contains the term sets & terms you wish to import.
-
+1. Create the import file that contains the term sets and terms you want to import.
 6. Under **File format**, select **SKOS (*.ttl)**.
 
 7. Click **Browse** and navigate to and add your import file.
@@ -40,10 +41,9 @@ We recommend keeping your import files to less than 20,000 terms. Larger files c
 
 On successful import of the file, a success message will be displayed, and the term store will refresh and you can navigate to the newly created term sets.
 
-## See also
+## Related topics
 
 [Introduction to managed metadata](/sharepoint/managed-metadata)
 
-[Unstructured document processing overview](document-understanding-overview.md)
-
 [Import term sets (site level)](https://support.microsoft.com/office/168fbc86-7fce-4288-9a1f-b83fc3921c18)
+

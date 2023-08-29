@@ -1,8 +1,8 @@
 ---
 title: Use the Virtual Appointments app in Microsoft Teams
-author: daisyfell
-ms.author: daisyfeller
-manager: samanro
+author: lana-chin
+ms.author: v-chinlana
+manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-frontline 
@@ -32,7 +32,7 @@ appliesto:
 ms.date: 03/27/2023
 ---
 
-# Use the Virtual Appointments app in Microsoft Teams
+# Set up the Virtual Appointments app in Microsoft Teams
 
 ![Information icon](media/info.png) **Some features described in this article require [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams)**.
 

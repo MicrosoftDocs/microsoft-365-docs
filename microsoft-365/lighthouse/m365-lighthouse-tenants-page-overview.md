@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: kywirpel
-ms.date: 11/19/2021
+ms.date: 08/21/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -37,19 +37,23 @@ The Tenants page also includes the following options:
 
 ## Tenant list
 
-The tenant list provides insights into the different customer tenants that you have a contract with, including their Lighthouse management status. The tenant list also lets you tag tenants to provide different filters throughout Lighthouse, and drill down to learn more about a given tenant and the status of its deployment plan.
+The tenant list provides insights into the different customer tenants that you have a contract with, including their Lighthouse management status. The tenant list also lets you tag tenants to provide different filters throughout Lighthouse, manage services for tenants in the applicable admin center, and drill down to learn more about a given tenant and the status of its deployment plan.
 
 After your customer tenants meet the [Lighthouse onboarding requirements](m365-lighthouse-requirements.md), their status will show as **Active** in the tenant list.
 
 The tenant list lets you:
 
+- Access applicable admin centers to manage services for your customer tenants.
 - Automatically sort tenants by active, inactive, and ineligible.
 - Export the tenant list.
 - Assign and manage tags.
 - Search for tenants by name.
 - Filter tenants by status, delegated admin privilege (DAP), and tags.
 
-To inactivate a tenant or view and manage tags, select the three dots (more actions) next to the tenant name. You can view individual tenants by either selecting the tenant name or by selecting one of the tags assigned to the tenant.
+To inactivate a tenant, manage tenant services, or view and manage tags, select the three dots (more actions) next to the tenant name. You can view individual tenants by either selecting the tenant name or by selecting one of the tags assigned to the tenant.
+
+> [!TIP]
+> You can also use the Tenants filter at the top of any page in Lighthouse to select a tenant and then access applicable admin centers to manage services for that tenant.
 
 For information on how to add customer tenants, see [Add and manage multiple tenants in your Partner Center account](/partner-center/multi-tenant-account).
 
@@ -90,17 +94,25 @@ The Tenant overview section provides information about the customer tenant from 
 
 | Tenant information    | Description|
 |-----------------------|------------------|
-| Roles    | The roles assigned to you in the tenant. Roles determine which tasks you can complete for customers, and what data you can view.|
-| Headquarters    | Where the tenant is located.|
-| Industry    |The organization's industry.|
-| Customer domain    |The organization's domain.|
-| Website    |The organization's website. You may edit this field if no data is provided.|
+| Tenant Domain    |The organization's domain.|
+| Tenant ID|The organizations's tenant ID.|
+| Lighthouse management | The management status of the customer tenant in Lighthouse (Active, Limited, or Inactive) |
+| Your permissions    | The roles assigned to you in the tenant. Roles determine which tasks you can complete for customers, and what data you can view.|
 | Total users    |The number of users assigned in the tenant. You may select this number to open the Users page for that tenant.|
 | Total devices|The number of devices enrolled in the tenant. You may select this number to open the Devices page for that tenant.|
 
-#### Contacts section
+#### Customer overview
 
-The Contacts section provides information for key contacts within the tenants you manage, such as:
+The Customer overview section provides the following information for key contacts within the tenants you manage:
+
+- Headquarter location
+- Industry
+- Customer domain
+- Company website
+
+#### Customer contacts
+
+The Customer contacts section provides the following information for key contacts within the tenants you manage:
 
 - Name
 - Title
@@ -112,6 +124,10 @@ The **Notes** column shows information for the tenant, such as engagement prefer
 
 To edit details, add notes, or delete an existing contact, select the contact name from the list. In the **Edit contact** pane, edit or delete the contact. To add another contact, select **+Add contact**.
 
+#### Deployment and User progress section
+
+These sections provide a graphical view of the progress for deployment and user progress.
+
 #### Microsoft 365 services usage section
 
 Lighthouse provides insights into Microsoft 365 services usage, including how many users within a customer tenant are licensed and actively using each service. The **Active users & devices** column indicates the number of users or devices that have signed in to the service at least once in the past 28 days. The **Change in activity** column indicates change in active users and devices since last month.
@@ -121,13 +137,22 @@ The **Microsoft 365 services usage** section contains two sub-sections:
 - **Microsoft 365 Lighthouse-enabled services:** Services that can be managed within the Lighthouse portal.
 - **Additional Microsoft 365 services:** Services that are included in the Microsoft 365 suite but can't be managed within the Microsoft 365 Lighthouse portal at this time.
 
-### Deployment Plan tab
+### Deployment plan tab
 
-The Deployment Plans tab provides status on a customer tenant's deployment plan. The deployment steps in the list are based on the baseline applied to the tenant. To see deployment step details, select a deployment step from the list.
+The Deployment plans tab provides status on a customer tenant's deployment plan. The deployment steps in the list are based on the baseline applied to the tenant. To see deployment step details, select a deployment step from the list.
 
-The Deployment Plan tab also includes the following options:
+The Deployment plan tab also includes the following options:
 
-- **Export:** Select to export deployment step data to an Excel comma-separated values (.csv) file.
+- **Refresh:** Select to retrieve the most current deployment step data.
+- **Search:** Enter keywords to quickly locate a specific deployment step in the list.
+
+### Deployment progress by user tab
+
+This tab provides deployment status of each user for tasks that support user progress reporting. You can select a user to see more details. Deployment progress is only available for licensed tasks. User progress is only reported for tasks that are **Compliant**, **Not compliant**, or **Dismissed**.
+
+The Deployment progress by user tab also includes the following options:
+
+- **Export:** Select to export tenant data to an Excel comma-separated values (.csv) file.
 - **Refresh:** Select to retrieve the most current deployment step data.
 - **Search:** Enter keywords to quickly locate a specific deployment step in the list.
 
@@ -136,4 +161,4 @@ The Deployment Plan tab also includes the following options:
 [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) (article)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)\
 [Manage your tenant list in Microsoft 365 Lighthouse](m365-lighthouse-manage-tenant-list.md) (article)\
-[Overview of using Microsoft 365 Lighthouse baselines to deploy standard tenant configurations](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (article)\
+[Overview of using Microsoft 365 Lighthouse baselines to deploy standard tenant configurations](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (article)

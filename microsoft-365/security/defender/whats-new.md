@@ -12,7 +12,7 @@ ms.pagetype: security
 ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
-ms.date: 05/25/2023
+ms.date: 07/24/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -23,7 +23,7 @@ ms.topic: conceptual
 
 # What's new in Microsoft 365 Defender
 
-Lists the new features and functionality in Microsoft 365 Defender. 
+Lists the new features and functionality in Microsoft 365 Defender.
 
 RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader:
 
@@ -40,10 +40,26 @@ For more information on what's new with other Microsoft Defender security produc
 
 You can also get product updates and important notifications through the [message center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter).
 
+## August 2023
+
+- Guides to responding to your first incident for new users are now live. [Understand incidents](respond-first-incident-365-defender.md) and learn to triage and prioritize, [analyze your first incident](respond-first-incident-analyze.md) using tutorials and videos, and [remediate attacks](respond-first-incident-remediate.md) by understanding actions available in the portal.
+- (Preview) [Asset rule management - Dynamic rules for devices](./configure-asset-rules.md) is now in public preview. Dynamic rules can help manage device context by assigning tags and device values automatically based on certain criteria.
+- (Preview) The [DeviceInfo](advanced-hunting-deviceinfo-table.md) table in advanced hunting now also includes the columns `DeviceManualTags` and `DeviceDynamicTags` in public preview to surface both manually and dynamically assigned tags related to the device you are investigating.
+
+## July 2023
+
+- (GA) The [Attack story](investigate-incidents.md#attack-story) in incidents is now generally available. The attack story provides the full story of the attack and allows incident response teams to view the details and apply remediation.
+- A new URL and domain page is now available in Microsoft 365 Defender. The updated URL and domain page provides a single place to view all the information about a URL or a domain, including its reputation, the users who clicked it, the devices that accessed it, and emails where the URL or domain was seen. For details, see [Investigate URLs in Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/investigate-domain).
+
+
+## June 2023
+
+- (GA) Microsoft Defender Experts for XDR is now generally available. Defender Experts for XDR augments your security operations center by combining automation and Microsoft's security analyst expertise, helping you detect and respond to threats with confidence and improve your security posture. Microsoft Defender Experts for XDR is sold separately from other Microsoft 365 Defender products. If you're a Microsoft 365 Defender customer and are interested in purchasing Defender Experts for XDR, see [Overview of Microsoft Defender Experts for XDR](dex-xdr-overview.md).
+
 ## May 2023
 
 - (GA) [Alert tuning](investigate-alerts.md#tune-an-alert) is now generally available. Alert tuning lets you fine-tune alerts to reduce investigation time and focus on resolving high priority alerts. Alert tuning replaces the Alert suppression feature.
-- (GA) [Automatic attack disruption](automatic-attack-disruption.md) is now generally available.
+- (GA) [Automatic attack disruption](automatic-attack-disruption.md) is now generally available. This capability automatically disrupts human-operated ransomware (HumOR), business email compromise (BEC), and adversary-in-the-middle (AiTM) attacks.
 - (Preview) [Custom functions](advanced-hunting-custom-functions.md) are now available in advanced hunting. You can now create your own custom functions so you can reuse any query logic when you hunt in your environment. 
 
 ## April 2023
@@ -62,6 +78,7 @@ This change introduces a new navigation menu within the Microsoft 365 Defender p
 ## February 2023
 
 - (GA) The [query resources report in advanced hunting](advanced-hunting-limits.md#view-query-resources-report-to-find-inefficient-queries) is now generally available.
+- (Preview) The [automatic attack disruption](automatic-attack-disruption.md) capability now disrupts business email compromise (BEC).
 
 ## January 2023
 
@@ -79,6 +96,10 @@ This change introduces a new navigation menu within the Microsoft 365 Defender p
 
 - (Preview) Microsoft Defender Experts for XDR (Defender Experts for XDR) is now available for preview. Defender Experts for XDR is a managed detection and response service that helps your security operations centers (SOCs) focus and accurately respond to incidents that matter. It provides extended detection and response for customers who use Microsoft 365 Defender workloads: Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Identity, Microsoft Defender for Cloud Apps, and Azure Active Directory (Azure AD). For details, refer to [Expanded Microsoft Defender Experts for XDR preview](dex-xdr-overview.md).
 - (Preview) The query resource report is now available in advanced hunting. The report shows your organization's consumption of CPU resources for hunting based on queries that ran in the last 30 days using any of the hunting interfaces. See [View query resources report](advanced-hunting-limits.md#view-query-resources-report-to-find-inefficient-queries) to find inefficient queries.
+
+## October 2022
+
+- (Preview) The new automatic attack disruption capability is now in preview. This capability combines security research insights and advances AI models to automatically contain attacks in progress. Automatic attack disruption also provides more time to security operations centers (SOCs) to fully remediate an attack and limits an attack's impact to organizations. This preview automatically disrupts ransomware attacks.
 
 ## August 2022
 
@@ -197,3 +218,4 @@ The security operations team can view all actions pending approval, and the stip
   Find information about events in various cloud apps and services covered by Microsoft Defender for Cloud Apps. This table also includes information previously available in the `AppFileEvents` table.
 
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

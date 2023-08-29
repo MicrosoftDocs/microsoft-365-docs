@@ -71,3 +71,4 @@ In your enterprise, you can configure PUA protection from a management console, 
 ## Related topics
 
 - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

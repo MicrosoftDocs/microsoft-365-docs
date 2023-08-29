@@ -17,7 +17,8 @@ audience: ITPro
 ms.collection: 
 - m65-security-compliance
 - tier3
-ms.topic: conceptual
+- must-keep
+ms.topic: reference
 ms.custom: api
 ms.date: 10/25/2021
 ---
@@ -185,3 +186,4 @@ For information on how to fetch alerts using REST API, see [Pull alerts using RE
 ## Related topics
 
 [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

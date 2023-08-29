@@ -19,13 +19,19 @@ description: Watch videos to learn about some of the different features in Micro
 
 # Microsoft Syntex video library
 
-|Overview of model types  |Create a content center  |
+|Overview of Microsoft Syntex  |Overview of model types  |
 |---------|---------|
-|[:::image type="content" source="../media/content-understanding/video-thumbnail-model-types.png" alt-text="Thumbnail image of model types video.":::](https://www.microsoft.com/videoplayer/embed/RE4GJXS)<br>[Learn more about Syntex models](model-types-overview.md)    |[:::image type="content" source="../media/content-understanding/video-thumbnail-create-content-center.png" alt-text="Thumbnail image of create a content center video.":::](https://www.microsoft.com/videoplayer/embed/RE4CPSF)<br>[Learn more about content centers](create-a-content-center.md)         |
+|[:::image type="content" source="../media/content-understanding/video-thumbnail-syntex-overview.png" alt-text="Thumbnail image of Syntex overview video.":::](https://www.microsoft.com/videoplayer/embed/RW15yuU)<br>[Learn more about Syntex](syntex-overview.md)    |[:::image type="content" source="../media/content-understanding/video-thumbnail-model-types.png" alt-text="Thumbnail image of model types video.":::](https://www.microsoft.com/videoplayer/embed/RE4GJXS)<br>[Learn more about Syntex models](model-types-overview.md)          |
 
-|Unstructured document processing  |Apply a model to a document library  |
+
+|Unstructured models  |Freeform and structured models  |
 |---------|---------|
-|[:::image type="content" source="../media/content-understanding/video-thumbnail-unstructured-document-processing.png" alt-text="Thumbnail image of overview of unstructured document processing video.":::](https://www.microsoft.com/videoplayer/embed/RE4CSu7)<br>[Learn more about unstructured models](document-understanding-overview.md)    |[:::image type="content" source="../media/content-understanding/video-thumbnail-apply-a-model.png" alt-text="Thumbnail image of apply a model video.":::](https://www.microsoft.com/videoplayer/embed/RE4CSoL)<br>[Learn more about applying a model](apply-a-model.md)         |
+|[:::image type="content" source="../media/content-understanding/video-thumbnail-unstructured-document-processing.png" alt-text="Thumbnail image of overview of unstructured document processing video.":::](https://www.microsoft.com/videoplayer/embed/RE4CSu7)<br>[Learn more about unstructured models](document-understanding-overview.md)    |[:::image type="content" source="../media/content-understanding/video-thumbnail-freeform-structured.png" alt-text="Thumbnail image of overview of freeform and structured document processing video.":::](https://www.microsoft.com/videoplayer/embed/RW15YNo)<br>[Learn about freeform and structured models](freeform-document-processing-overview.md)         |
+
+
+|Create a content center  |Apply a model to a document library  |
+|---------|---------|
+|[:::image type="content" source="../media/content-understanding/video-thumbnail-create-content-center.png" alt-text="Thumbnail image of create a content center video.":::](https://www.microsoft.com/videoplayer/embed/RE4CPSF)<br>[Learn more about content centers](create-a-content-center.md)     |[:::image type="content" source="../media/content-understanding/video-thumbnail-apply-a-model.png" alt-text="Thumbnail image of apply a model video.":::](https://www.microsoft.com/videoplayer/embed/RE4CSoL)<br>[Learn more about applying a model](apply-a-model.md)         |
 
 |Create and train a classifier  |Import a training set  |
 |---------|---------|

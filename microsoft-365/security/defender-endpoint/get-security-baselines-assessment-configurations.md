@@ -1,5 +1,5 @@
 ---
-title: Security baselines assessment configurations
+title: Get baseline profile configurations
 description: Provides information about the security baselines assessment configurations that pull "Microsoft Defender Vulnerability Management" data. There are different API calls to get different types of data. In general, each API call contains the requisite data for devices in your organization.
 keywords: api, apis, export assessment, per device assessment, per machine assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilities assessment, software vulnerability report, vulnerability report by machine,
 ms.service: microsoft-365-security
@@ -14,14 +14,15 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
-ms.topic: conceptual
+- must-keep
+ms.topic: reference
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
 ms.date: 05/02/2022
 ---
 
-# List security baselines assessment configurations
+# List configurations in active baseline profiles
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,9 +35,9 @@ ms.date: 05/02/2022
 
 > Want to experience Microsoft Defender Vulnerability Management? Learn more about how you can sign up to the [Microsoft Defender Vulnerability Management public preview trial](../defender-vulnerability-management/get-defender-vulnerability-management.md).
 
-## 1. Get all security baselines assessment configurations
+## 1.API description
 
-This API retrieves a list of all the possible security baselines assessment configurations and settings for all the available benchmarks.
+This API retrieves a list of the configurations being assessed in active baseline profiles.
 
 ### 1.1 Parameters
 
@@ -66,16 +67,20 @@ If successful, this method returns 200 OK with the list of baseline configuratio
 
 |Property | Type | Description |
 |:---|:---|:---|
-|Id | String | Unique identifier for the specific configuration in the baseline benchmark.
+|uniqueId | String | Identifier for the specific configuration across baseline benchmarks.
+|Id | String | Identifier of the specific configuration in the baseline benchmark.
 |benchmarkName| String | The name of the benchmark.
+|benchmarkVersion| String | The version of the benchmark. May contain operating system details.
 |name | String | The configuration name at it appears in the benchmark.
 |description | String | The configuration description as it appears in the benchmark.
 |category | String | The configuration  category as it appears in the benchmark.
 |complianceLevels|String|The compliance level of the benchmark where this configuration appears.
 |`cce`|Int|The CCE for this configuration as it appears in the benchmark.
 |rationale |String|The rationale for this configuration as it appears in the benchmark. For STIG benchmark this isn't supplied for this configuration.
-|source|String| The registry path or other location used to determine the current device setting.
+|source|Array [String]| Array of the registry paths or other locations used to determine the current device setting.
+|recommendedValue|Array [String]|Array of the recommended value for each source returned in the 'source' property array (values returned in the same order as the source property array).
 |remediation|String| The recommended steps to remediate.
+|isCustom|Boolean| True if the configuration is customized, false if not.
 
 ## 1.6 Example
 
@@ -92,25 +97,30 @@ GET https://api.securitycenter.microsoft.com/api/baselineConfigurations
     "@odata.context": " https://api-df.securitycenter.microsoft.com/api/$metadata#BaselineConfigurations ", 
     "value": [
         {
-            "id": "1.1.8", 
-            "name": "(L1) Ensure 'Allow importing of payment info' is set to 'Disabled'",
-            "description": "<p xmlns:xhtml=\"http://www.w3.org/1999/xhtml\">This policy setting controls whether users are able to import payment information from another browser into Microsoft Edge as well as whether payment information is imported on first use.</p>",
-            "category": "Microsoft Edge",
+            "id": "9.3.9",
+            "uniqueId": "CIS_1.4.0-windows_server_2016_9.3.9",
+            "benchmarkName": "CIS",
+            "benchmarkVersion": "1.4.0-windows_server_2016",
+            "name": "(L1) Ensure 'Windows Firewall: Public: Logging: Log dropped packets' is set to 'Yes'",
+            "description": "<p xmlns:xhtml=\"http://www.w3.org/1999/xhtml\">  Use this option to log when Windows Firewall with Advanced Security discards an inbound packet for any reason. The log records why and when the packet was dropped. Look for entries with the word             <span class=\"inline_block\">DROP</span>   in the action column of the log.          </p>",
+            "category": "Public Profile",
             "complianceLevels": [
-                "Level 1 (L1) - Corporate/Enterprise Environment (general use)",
-                "Level 2 (L2) - High Security/Sensitive Data Environment (limited functionality)"
+                "Level 1 - Domain Controller",
+                "Level 1 - Member Server",
+                "Level 2 - Domain Controller",
+                "Level 2 - Member Server"
             ],
-            "cce": "",
-            "rationale": "<p xmlns:xhtml=\"http://www.w3.org/1999/xhtml\">Having payment information automatically imported or allowing users to import payment data from another browser into Microsoft Edge could allow for sensitive data to be imported into Edge.</p>",
-            "remediation": "<div xmlns:xhtml=\"http://www.w3.org/1999/xhtml\">\r\n  <p>\r\n    <p>\r\nTo establish the recommended configuration via GP, set the following UI path to                 <span class=\"inline_block\">Disabled</span></p>\r\n    <code class=\"code_block\">Computer Configuration\\Policies\\Administrative Templates\\Microsoft Edge\\Allow importing of payment info\r\n</code>\r\n    <p>\r\n      <strong>Note:</strong>\r\n This Group Policy path may not exist by default. It is provided by the Group Policy template                 <span class=\"inline_block\">MSEdge.admx/adml</span>\r\n that can be downloaded from Microsoft                 <a href=\"https://www.microsoft.com/en-us/edge/business/download\">here</a>\r\n.              </p>\r\n    <p class=\"bold\">Impact:</p>\r\n    <p>\r\n      <p>Users will be unable to perform a payment information import from other browsers into Microsoft Edge.</p>\r\n    </p>\r\n  </p>\r\n</div>",
-            "benchmarkName": "CIS"
-"recommendedValue": [ 
-                "Equals '0'" 
-            ], 
-            "source": [ 
-                "hkey_local_machine\\software\\policies\\microsoft\\windows\\eventlog\\security\\retention" 
-            ]
-        }, 
+            "cce": "CCE-35116-3",
+            "rationale": "<p xmlns:xhtml=\"http://www.w3.org/1999/xhtml\">If events are not recorded it may be difficult or impossible to determine the root cause of system problems or the unauthorized activities of malicious users.</p>",
+            "remediation": "<div xmlns:xhtml=\"http://www.w3.org/1999/xhtml\">    <p>      <p>  To establish the recommended configuration via GP, set the following UI path to                 <span class=\"inline_block\">Yes</span>  :              </p>      <code class=\"code_block\">Computer Configuration\\Policies\\Windows Settings\\Security Settings\\Windows Firewall with Advanced Security\\Windows Firewall with Advanced Security\\Windows Firewall Properties\\Public Profile\\Logging Customize\\Log dropped packets  </code>      <p class=\"bold\">Impact:</p>      <p>        <p>Information about dropped packets will be recorded in the firewall log file.</p>      </p>    </p>  </div>",
+            "recommendedValue": [
+                "Equals '1'"
+            ],
+            "source": [
+                "hkey_local_machine\\software\\policies\\microsoft\\windowsfirewall\\publicprofile\\logging\\logdroppedpackets"
+            ],
+            "isCustom": false
+        },
     ] 
 } 
 ```
@@ -119,3 +129,4 @@ GET https://api.securitycenter.microsoft.com/api/baselineConfigurations
 
 - [Export security baselines assessment](export-security-baseline-assessment.md)
 - [Get security baselines assessment profiles](get-security-baselines-assessment-profiles.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

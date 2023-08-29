@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.reviewer: dmwmsft
-ms.date: 08/10/2020
+ms.date: 07/31/2023
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -24,9 +24,15 @@ description: "Determine where your Microsoft 365 customer data is stored worldwi
 
 # Where your Microsoft 365 customer data is stored
 
-See the following links to understand workload data location.
+> [!NOTE]
+> The **Poland** local data center region launched on April 26, 2023. If your organization requires the migration of your Microsoft 365 customer data to Poland, and a data residency commitments for Poland, please refer to [Advanced Data Residency](advanced-data-residency.md) for more information.
 
-- Exchange Online [Data Residency for Exchange Online](/microsoft-365/enterprise/m365-dr-workload-exo)
+> [!NOTE]
+> For tenants in Australia, Brazil, Canada, France, Germany, India, Japan, Qatar, South Korea, Norway, South Africa, Sweden, Switzerland, United Arab Emirates, and the United Kingdom, additional workloads are available for data residency commitments. Refer to [Advanced Data Residency](advanced-data-residency.md) for more information.
+
+See the following links to understand how you can determine current workload data location.
+
+- Exchange Online [Data Location](m365-dr-workload-exo.md#how-can-i-determine-customer-data-location)
 - SharePoint Online (ODSP) and OneDrive for Business [Data Location](m365-dr-workload-spo.md#how-can-i-determine-customer-data-location)
 - Microsoft Teams [Data Location](m365-dr-workload-teams.md#how-can-i-determine-customer-data-location)
 - Microsoft Defender for Office (MDO P1)  [Data Location](m365-dr-workload-mdo-p1.md#how-can-i-determine-customer-data-location)
@@ -51,8 +57,11 @@ See the following links to understand workload data location.
 - Viva Insights – Advanced, Mgr, Leader [Data Location](m365-dr-workload-other.md#viva-insights--advanced-mgr-leader)
 - Viva Insights – Personal [Data Location](m365-dr-workload-other.md#viva-insights--personal)
 - Viva Learning [Data Location](m365-dr-workload-other.md#viva-learning)
-- Yammer [Data Location](m365-dr-workload-other.md#yammer)
+- Viva Pulse [Data Location](/viva/pulse/get-started/data-residency-for-viva-pulse)
+- Yammer [Data Location](m365-dr-workload-other.md#viva-engage)
+- Viva Engage [Data Location](m365-dr-workload-other.md#viva-engage)
 - Office for mobile [Data Location](m365-dr-workload-other.md#office-for-mobile)
 - OneNote Services [Data Location](m365-dr-workload-other.md#onenote-services)
 - Power Apps for Microsoft 365 [Data Location](m365-dr-workload-other.md#power-apps-for-microsoft-365)
 - Stream [Data Location](m365-dr-workload-other.md#stream)
+- Shifts [Data Location](/microsoftteams/expand-teams-across-your-org/shifts/shifts-data-faq#where-is-shifts-data-stored)

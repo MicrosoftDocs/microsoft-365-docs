@@ -18,7 +18,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 03/22/2021
+ms.date: 04/26/2023
 ---
 
 # Microsoft Defender for Endpoint on Linux
@@ -110,7 +110,7 @@ If you experience any installation failures, refer to [Troubleshooting installat
 
   - The `fanotify` kernel option must be enabled
   - Red Hat Enterprise Linux 6 and CentOS 6:
-    - For 6.7: 2.6.32-573.*
+    - For 6.7: 2.6.32-573.* (except 2.6.32-573.el6.x86_64)
     - For 6.8: 2.6.32-642.*
     - For 6.9: 2.6.32-696.* (except 2.6.32-696.el6.x86_64)
     - For 6.10: 2.6.32.754.2.1.el6.x86_64 to 2.6.32-754.48.1:
@@ -190,7 +190,7 @@ After you've enabled the service, you may need to configure your network or fire
   > [!NOTE]
   > System events captured by rules added to `/etc/audit/rules.d/` will add to `audit.log`(s) and might affect host auditing and upstream collection. Events added by Microsoft Defender for Endpoint on Linux will be tagged with `mdatp` key.
 
-### External package dependancy
+### External package dependency
 The following external package dependencies exist for the mdatp package:
 - The mdatp RPM package requires "glibc >= 2.17", "audit", "policycoreutils", "semanage" "selinux-policy-targeted", "mde-netfilter"
 - For RHEL6 the mdatp RPM package requires "audit", "policycoreutils", "libselinux", "mde-netfilter"
@@ -253,3 +253,4 @@ High I/O workloads from certain applications can experience performance issues w
 - [Protect your endpoints with Defender for Cloud's integrated EDR solution: Microsoft Defender for Endpoint](/azure/defender-for-cloud/integration-defender-for-endpoint)
 - [Connect your non-Azure machines to Microsoft Defender for Cloud](/azure/defender-for-cloud/quickstart-onboard-machines)
 - [Turn on network protection for Linux](network-protection-linux.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

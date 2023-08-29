@@ -52,3 +52,4 @@ Adoption procedures and use case creation are described in Steps 3 and 4.
 ## Next step
 
 [Step 3. Plan for Microsoft 365 Defender integration with your SOC catalog of services](integrate-microsoft-365-defender-secops-services.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

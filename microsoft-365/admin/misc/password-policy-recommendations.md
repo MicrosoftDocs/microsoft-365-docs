@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 05/30/2023
+ms.date: 06/15/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -22,10 +22,6 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
-search.appverid:
-- BCS160
-- MET150
-- MOE150
 description: "Make your organization more secure against password attacks, and ban common passwords and enable risk-based multi-factor authentication."
 ---
 
@@ -47,7 +43,7 @@ For more information about Microsoft 365 passwords, see:
 
 [Let users reset their own passwords](../add-users/let-users-reset-passwords.md) (article)
 
-[Resend a user's password - Admin Help](../add-users/resend-user-password.md) (article)
+[Resend a user's password](../add-users/resend-user-password.md) (article)
 
 [Time to rethink mandatory password changes](https://go.microsoft.com/fwlink/p/?linkid=861018).
   
@@ -77,7 +73,7 @@ The primary goal of a more secure password system is password diversity. You wan
 
 - Enforce registration for [multi-factor authentication](../security-and-compliance/set-up-multi-factor-authentication.md)
 
-- Enable risk-based multi-factor authentication challenges
+- Enable risk based multi-factor authentication challenges
 
 ### Password guidance for your users
 
@@ -131,9 +127,9 @@ Make sure your users update contact and security information, like an alternate 
   
 To learn more, see [Set up multi-factor authentication](../security-and-compliance/set-up-multi-factor-authentication.md).
   
-### Enable risk-based multi-factor authentication
+### Enable risk based multi-factor authentication
 
-Risk-based multi-factor authentication ensures that when our system detects suspicious activity, it can challenge the user to ensure that they are the legitimate account owner. 
+Risk-based multi-factor authentication ensures that when our system detects suspicious activity, it can challenge the user to ensure that they are the legitimate account owner.
   
 ## Next steps
 

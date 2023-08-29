@@ -22,17 +22,16 @@ search.appverid:
 description: Learn how to recognize and respond to a compromised email account using tools available in Microsoft 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 5/22/2023
+ms.date: 6/19/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
 # Responding to a compromised email account
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
-
-**Applies to**
-- [Exchange Online Protection](eop-about.md)
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Access to Microsoft 365 mailboxes, data, and other services is controlled by credentials (for example a username and a password or PIN). When someone other than the intended user steals those credentials, the associated account is considered to be compromised.
 
@@ -57,7 +56,7 @@ Users might notice and report unusual activity in their Microsoft 365 mailboxes.
 
 If a user reports these symptoms or other unusual symptoms, you should investigate. The Microsoft 365 Defender portal and the Azure portal offer the following tools to help you investigate suspicious activity on a user account.
 
-- **Unified audit logs in the Microsoft 365 Defender portal**: Filter the logs for activity using a date range that starts immediately before the suspicious activity occurred to today. Don't filter on specific activities during the search. For more information, see [Search the audit log](../../compliance/search-the-audit-log-in-security-and-compliance.md).
+- **Unified audit logs in the Microsoft 365 Defender portal**: Filter the logs for activity using a date range that starts immediately before the suspicious activity occurred to today. Don't filter on specific activities during the search. For more information, see [Search the audit log](/purview/audit-log-search).
 
 - **Azure AD Sign-in logs and other risk reports in the Azure AD portal**: Examine the values in these columns:
   - Review IP address

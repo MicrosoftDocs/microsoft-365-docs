@@ -26,8 +26,6 @@
           href: microsoft-365-security-center-defender-cloud-apps.md
         - name: Redirecting Defender for Endpoint to Microsoft 365 Defender
           href: microsoft-365-security-mde-redirection.md
-        - name: Redirecting Defender for Identity to Microsoft 365 Defender
-          href: microsoft-365-security-mdi-redirection.md
         - name: Redirecting Defender for Cloud Apps to Microsoft 365 Defender
           href: microsoft-365-security-mda-redirection.md
       - name: Microsoft 365 Defender integration with Microsoft Sentinel
@@ -165,15 +163,11 @@
               - name: Respond to your first incident
                 items: 
                  - name: Overview
-                   href: first-incident-overview.md
-                 - name: Prepare
-                   href: first-incident-prepare.md
-                 - name: Step 1. Triage and analyze
-                   href: first-incident-analyze.md
-                 - name: Step 2. Remediate
-                   href: first-incident-remediate.md
-                 - name: Step 3. Review
-                   href: first-incident-post.md
+                   href: respond-first-incident-365-defender.md
+                 - name: Analyze your first incident
+                   href: respond-first-incident-analyze.md
+                 - name: Remediate your first incident
+                   href: respond-first-incident-remediate.md
                  - name: Additional incident examples
                    items: 
                     - name: Phishing email
@@ -184,8 +178,10 @@
                 items: 
                  - name: Incidents
                    href: investigate-incidents.md
-                 - name: Data loss incidents
-                   href: investigate-dlp.md
+                 - name: Investigate data loss prevention alerts with Microsoft 365 Defender
+                   href: dlp-investigate-alerts-defender.md
+                 - name: Investigate data loss prevention alerts with Microsoft Sentinel
+                   href: dlp-investigate-alerts-sentinel.md
                  - name: Alerts
                    href: investigate-alerts.md    
                  - name: Alert classification playbooks
@@ -402,16 +398,24 @@
                 href: onboarding-defender-experts-for-hunting.md
               - name: Understand Defender Experts for Hunting reports
                 href: defender-experts-report.md
-       - name: Expanded Microsoft Defender Experts for XDR preview
+       - name: Collaborate with Microsoft Defender Experts for XDR
          items:
               - name: Overview
                 href: dex-xdr-overview.md
-              - name: Get started with Microsoft Defender Experts for XDR preview service
+              - name: Before you begin
+                href: before-you-begin-xdr.md
+              - name: Get started with Microsoft Defender Experts for XDR service
                 href: get-started-xdr.md
-              - name: Start using Microsoft Defender Experts for XDR preview service
+              - name: Start using Microsoft Defender Experts for XDR service
                 href: start-using-mdex-xdr.md
+              - name: Auditing
+                href: auditing.md
+              - name: Additional information
+                href: additional-information-xdr.md
               - name: Frequently asked questions
                 href: frequently-asked-questions.md
+              - name: How Defender Experts for XDR permissions work
+                href: dex-xdr-permissions.md
        - name: Ransomware playbooks
          items: 
               - name: Detecting human-operated ransomware attacks with Microsoft 365 Defender
@@ -442,21 +446,23 @@
               href: m365d-permissions.md
             - name: Custom roles in role-based access 
               href: custom-roles.md
-            - name: Manage permissions with Microsoft 365 Defender RBAC
+            - name: Manage permissions with Microsoft 365 Defender Unified RBAC
               items: 
               - name: Overview
                 href: manage-rbac.md
+              - name: What's new in Microsoft 365 Defender Unified RBAC
+                href: whats-new-in-microsoft-defender-urbac.md
               - name: Create custom roles 
                 href: create-custom-rbac-roles.md
               - name: Import roles
                 href: Import-rbac-roles.md
-              - name: Activate Microsoft 365 Defender RBAC 
+              - name: Activate Microsoft 365 Defender Unified RBAC 
                 href: activate-defender-rbac.md
               - name: Edit and delete roles
                 href: edit-delete-rbac-roles.md
-              - name: Map RBAC permission
+              - name: Map Unified RBAC permission
                 href: compare-rbac-roles.md
-              - name: About RBAC custom permission
+              - name: About Unified RBAC custom permission
                 href: custom-permissions-details.md
       - name: Portal settings
         items: 
@@ -468,6 +474,8 @@
               href: troubleshoot.md
             - name: Configure alert notifications
               href: configure-email-notifications.md
+            - name: Asset Rule Management
+              href: configure-asset-rules.md
             - name: Provide feedback
               href: feedback.md
             - name: Provide managed service provider (MSSP) access

@@ -97,3 +97,4 @@ To Assign these permissions:
 
 - [Create and manage roles for role-based access control](user-roles.md).
 - [Export device antivirus health details API methods and properties](device-health-api-methods-properties.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

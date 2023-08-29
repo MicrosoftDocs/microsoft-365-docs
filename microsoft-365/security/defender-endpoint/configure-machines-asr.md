@@ -60,3 +60,4 @@ For more information about ASR rule deployment in <a href="https://go.microsoft.
 - [Ensure your devices are configured properly](configure-machines.md)
 - [Get devices onboarded to Microsoft Defender for Endpoint](configure-machines-onboarding.md)
 - [Monitor compliance to the Microsoft Defender for Endpoint security baseline](configure-machines-security-baseline.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

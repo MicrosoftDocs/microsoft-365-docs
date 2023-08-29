@@ -4,7 +4,6 @@ f1.keywords:
 - NOCSH
 ms.author: sharik
 author: SKjerland
-ms.reviewer: sinakassaw, nicholak
 manager: scotv
 audience: Admin
 ms.topic: how-to
@@ -17,14 +16,13 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
-- commerce_licensing
 - AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: "Remove a license from a shared mailbox to assign it to another user or return the license so you're not paying for it. "
-ms.date: 01/05/2023
+ms.date: 06/13/2023
 ---
 
 # Remove a license from a shared mailbox

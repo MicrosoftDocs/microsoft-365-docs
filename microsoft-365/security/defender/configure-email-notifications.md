@@ -104,3 +104,4 @@ This section lists various issues that you may encounter when using email notifi
 - [Update data retention settings](../defender-endpoint/data-retention-settings.md)
 - [Configure advanced features](../defender-endpoint/advanced-features.md)
 - [Configure vulnerability email notifications](../defender-endpoint/configure-vulnerability-email-notifications.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

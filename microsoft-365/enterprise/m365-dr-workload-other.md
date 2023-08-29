@@ -19,7 +19,8 @@ ms.collection:
 
 # Data Residency for Other Microsoft 365 Services
 
-## Data Residency commitments available
+>[!NOTE]
+>Unless otherwise stated in the [Microsoft Product Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all), the following Microsoft 365 services do not have specific commitments for data residency. You can use the following guidance to determine where your data may be provisioned at this time.  
 
 Use the following guidance to determine where your data is located. Please reference your _tenant_ _Default Geography_.
 
@@ -28,15 +29,15 @@ Use the following guidance to determine where your data is located. Please refer
 Please refer to [Azure Active Directory Data Locations](https://aka.ms/aaddatamap).
 
 ### Forms
-Tenants in EU member Countries maintain data in Macro Region Geography 1 – EMEA. All other tenants have customer data stored in the United States, except Australia. For customers in Australia, Microsoft Forms customer data will be stored at rest in Australia for all new tenants using Forms and existing tenants that have not previously used Forms. 
+Tenants in EU member Countries/regions maintain data in Macro Region Geography 1 – EMEA. All other tenants have customer data stored in the United States, except Australia. For customers in Australia, Microsoft Forms customer data will be stored at rest in Australia for all new tenants using Forms and existing tenants that have not previously used Forms. 
 
 ### Intune
-Refer to endpoint.microsoft.com, Tenant Administration | Tenant Status for existing tenants. If you do not have an existing tenant, create a trial tenant and provision Intune.
-
-- Microsoft will not store Intune customer data at rest outside the stated geo, except if:
+Refer to endpoint.microsoft.com, Tenant Administration | Tenant Status for existing tenants. If you do not have an existing tenant, create a trial tenant and provision Intune. Microsoft will not store Intune customer data at rest outside the stated geo, except if:
 - It is necessary for Microsoft to provide customer support, troubleshoot the service, or comply with legal requirements.
 - The customer configures an account to enable such storage of customer data, including through the use of the following:
 - Features that are designed to operate globally, such as Content Delivery Network (CDN), which provides a global caching service and stores customer data at edge locations around the world.
+
+- If you are using the Remote Help feature, the Helper and Sharer's information may be sent outside of the stated Geo for 48 hours.
 - For Azure Active Directory: Please refer to [Azure Active Directory Data Locations](https://aka.ms/aaddatamap).
 - Preview, beta, or other prerelease services, which typically store customer data in the United States but may store it globally. Regardless, Microsoft does not control or limit the Geo from which customers or their end users may access customer data. Similarly, where customer data in other services is subsequently integrated into Intune, the originating customer data will continue to be stored subject to the other service's own Geo commitments (if any); only the copy of the customer data integrated into Intune will be stored in the stated Geo for Intune.
 
@@ -54,6 +55,9 @@ Please refer to [Dynamics 365 availability and data locations | Microsoft Learn]
 
 ### Stream
 You can find this information from the "?" option in the Stream UI, if you have it running and then click on "About Microsoft Stream" and see where your data is stored. If needed, create a trial tenant.
+
+### Viva Glint
+The data region for Viva Glint is determined by the default geography of the tenant, not individual users, and is stored in US or EU data centers based on central tenant location.
 
 ### Viva Goals
 
@@ -88,8 +92,8 @@ Please see the [Static data location information for select workloads](#static-d
 ### Whiteboard
 Please refer to [Manage data for Microsoft Whiteboard | Microsoft Learn](/microsoft-365/whiteboard/manage-data-organizations).
 
-### Yammer
-Please refer to [Data Residency - Yammer | Microsoft Learn](/yammer/manage-security-and-compliance/data-residency).
+### Viva Engage
+Please refer to [Data Residency - Viva Engage | Microsoft Learn](/viva/engage/manage-security-and-compliance/data-residency).
 
 ## Static data location information for select workloads
 
@@ -205,7 +209,7 @@ Please refer to [Data Residency - Yammer | Microsoft Learn](/yammer/manage-secur
 | HM | Heard and Mcdonald Islands | AMER<sup>3</sup>| AMER<sup>3</sup>| AMER<sup>3</sup>|
 | VA | Holy See (Vatican City State) | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | HN | Honduras | AMER<sup>3</sup>| AMER<sup>3</sup>| AMER<sup>3</sup>|
-| HK | Hong Kong, SAR China | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
+| HK | Hong Kong SAR | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
 | HU | Hungary | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | IS | Iceland | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | IN | India | APC<sup>2</sup>| APC<sup>2</sup>| IND<sup>7</sup>|
@@ -236,7 +240,7 @@ Please refer to [Data Residency - Yammer | Microsoft Learn](/yammer/manage-secur
 | LI | Liechtenstein | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | LT | Lithuania | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | LU | Luxembourg | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
-| MO | Macao, SAR China | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
+| MO | Macao, SAR | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
 | MG | Madagascar | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | MW | Malawi | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | MY | Malaysia | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|

@@ -17,7 +17,6 @@ ms.collection:
 - tier3
 ms.topic: how-to
 ms.subservice: mde
-ms.custom: api
 search.appverid: met150
 ms.date: 12/18/2020
 ---
@@ -92,3 +91,4 @@ You can also create a **scheduled** flow that runs Advanced Hunting queries and 
 
 ## Related topic
 - [Microsoft Defender for Endpoint APIs](apis-intro.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

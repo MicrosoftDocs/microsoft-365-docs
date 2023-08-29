@@ -155,3 +155,4 @@ There are two more scenarios where Defender for Endpoint might request a file sa
 [Next-generation protection overview](next-generation-protection.md)
 
 [Configure remediation for Microsoft Defender Antivirus detections.](configure-remediation-microsoft-defender-antivirus.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

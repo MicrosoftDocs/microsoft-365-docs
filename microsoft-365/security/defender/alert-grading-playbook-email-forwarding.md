@@ -75,18 +75,6 @@ Select **Activity**  to view the details of that activity in the sidebar. Here's
 
 :::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-activity-details.png" alt-text="Details of the activity" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-activity-details.png":::
 
-The **Reason** field contains the following information related to this alert.
-
-- Forwarding Type (FT) is one of the following:
-  - Exchange Transport Rule (ETR): Forwarded using and Exchange Transport Rule
-  - SMTP: Forwarded using Mailbox Forwarding
-  - InboxRule: Forwarded using an Inbox Rule
-
-- Message Trace ID (MTI): This is the identifier (NetworkMessageId) of the forwarded email that triggered this alert. NetworkMessageId is the unique identifier of an email in your organization.
-- Forwarder (F): The user who forwarded this email.
-- Suspicious Recipient List (SRL): The list of recipients considered suspicious in this email.
-- Recipient List (RL): The  list of all the recipients in this email.
-
 ## Investigation workflow
 
 While investigating this alert, you must determine:
@@ -223,7 +211,7 @@ CloudAppEvents
 | where ActionType in (action_types)
 ```
 
-Run this query to find out if there were any anomalous login events from this user. For example: unknown IPs, new applications, uncommon countries, multiple LogonFailed events.
+Run this query to find out if there were any anomalous login events from this user. For example: unknown IPs, new applications, uncommon countries/regions, multiple LogonFailed events.
 
 ```kusto
 let sender = "{SENDER}"; //Replace {SENDER} with email of the Forwarder
@@ -271,3 +259,4 @@ Once you determine that the activities associated make this alert a True Positiv
 - [Suspicious inbox forwarding rules](alert-grading-playbook-inbox-forwarding-rules.md)
 - [Suspicious inbox manipulation rules](alert-grading-playbook-inbox-manipulation-rules.md)
 - [Investigate alerts](investigate-alerts.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

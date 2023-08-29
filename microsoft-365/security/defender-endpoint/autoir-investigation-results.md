@@ -149,3 +149,4 @@ To provide more context about how investigation states show up, the following ta
 
 - [Review remediation actions following an automated investigation](manage-auto-investigation.md)
 - [View and organize the Microsoft Defender for Endpoint Incidents queue](view-incidents-queue.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

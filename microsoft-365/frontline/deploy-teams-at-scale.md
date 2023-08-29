@@ -1,14 +1,14 @@
 ---
-title: Deploy Teams at scale for frontline workers
-author: LanaChin
-ms.author: v-lanachin
+title: Deploy frontline static teams at scale with PowerShell for frontline workers
+author: lana-chin
+ms.author: v-chinlana
+manager: serdars
 ms.reviewer: rahuldey
-manager: samanro
 ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
-description: Learn how to deploy Teams at scale for the frontline workers in your organization. 
+description: Learn how to use PowerShell to deploy static teams at scale for the frontline workers in your organization. 
 ms.localizationpriority: high
 ms.collection: 
   - M365-collaboration
@@ -21,7 +21,7 @@ appliesto:
 ms.date: 10/28/2022
 ---
 
-# Deploy Teams at scale for frontline workers
+# Deploy frontline static teams at scale with PowerShell for frontline workers
 
 ## Overview
 

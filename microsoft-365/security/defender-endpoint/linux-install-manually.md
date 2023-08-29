@@ -18,7 +18,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 04/04/2023
 ---
 
 # Deploy Microsoft Defender for Endpoint on Linux manually
@@ -40,10 +40,13 @@ This article describes how to deploy Microsoft Defender for Endpoint on Linux ma
 
 - [Prerequisites and system requirements](#prerequisites-and-system-requirements)
 - [Configure the Linux software repository](#configure-the-linux-software-repository)
+  - [RHEL and variants (CentOS, Fedora, Oracle Linux and Amazon Linux 2)](#rhel-and-variants-centos-fedora-oracle-linux-and-amazon-linux-2-1)
+  - [SLES and variants](#sles-and-variants-1)
+  - [Ubuntu and Debian systems](#ubuntu-and-debian-systems-1)
+- [Application installation](#application-installation)
   - [RHEL and variants (CentOS, Fedora, Oracle Linux and Amazon Linux 2)](#rhel-and-variants-centos-fedora-oracle-linux-and-amazon-linux-2)
   - [SLES and variants](#sles-and-variants)
   - [Ubuntu and Debian systems](#ubuntu-and-debian-systems)
-- [Application installation](#application-installation)
 - [Download the onboarding package](#download-the-onboarding-package)
 - [Client configuration](#client-configuration)
 
@@ -69,50 +72,50 @@ In order to preview new features and provide early feedback, it is recommended t
 
 - Install `yum-utils` if it isn't installed yet:
 
-    ```bash
-    sudo yum install yum-utils
-    ```
+  ```bash
+  sudo yum install yum-utils
+  ```
 
   > [!NOTE]
   > Your distribution and version, and identify the closest entry (by major, then minor) for it under `https://packages.microsoft.com/config/rhel/`.
 
-    Use the following table to help guide you in locating the package:
+  Use the following table to help guide you in locating the package:
 
-    |Distro & version|Package|
-    |---|---|
-    |For RHEL/Centos/Oracle 8.0-8.7|<https://packages.microsoft.com/config/rhel/8/prod.repo>|
-    |For RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2 |<https://packages.microsoft.com/config/rhel/7.2/prod.repo>|
-    |For Fedora 33|<https://packages.microsoft.com/config/fedora/33/prod.repo>|
-    |For Fedora 34|<https://packages.microsoft.com/config/fedora/34/prod.repo>|
+  |Distro & version|Package|
+  |---|---|
+  |For RHEL/Centos/Oracle 8.0-8.7|<https://packages.microsoft.com/config/rhel/8/prod.repo>|
+  |For RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2 |<https://packages.microsoft.com/config/rhel/7.2/prod.repo>|
+  |For Fedora 33|<https://packages.microsoft.com/config/fedora/33/prod.repo>|
+  |For Fedora 34|<https://packages.microsoft.com/config/fedora/34/prod.repo>|
 
-    <!--|For RHEL/Centos 6.7-6.10|<https://packages.microsoft.com/config/rhel/6/[channel].repo>|-->
+  <!--|For RHEL/Centos 6.7-6.10|<https://packages.microsoft.com/config/rhel/6/[channel].repo>|-->
 
-    In the following commands, replace *[version]* and *[channel]* with the information you've identified:
+  In the following commands, replace *[version]* and *[channel]* with the information you've identified:
 
-    ```bash
-    sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/rhel/[version]/[channel].repo
-    ```
+  ```bash
+  sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/rhel/[version]/[channel].repo
+  ```
 
-    > [!TIP]
-    > Use hostnamectl command to identify system related information including release *[version]*.
+  > [!TIP]
+  > Use hostnamectl command to identify system related information including release *[version]*.
 
-    For example, if you are running CentOS 7 and want to deploy Defender for Endpoint on Linux from the *prod* channel:
+  For example, if you are running CentOS 7 and want to deploy Defender for Endpoint on Linux from the *prod* channel:
 
-    ```bash
-    sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/rhel/7/prod.repo
-    ```
+  ```bash
+  sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/rhel/7/prod.repo
+  ```
 
-    Or if you wish to explore new features on selected devices, you might want to deploy Microsoft Defender for Endpoint on Linux to *insiders-fast* channel:
+  Or if you wish to explore new features on selected devices, you might want to deploy Microsoft Defender for Endpoint on Linux to *insiders-fast* channel:
 
-    ```bash
-    sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/rhel/7/insiders-fast.repo
-    ```
+  ```bash
+  sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/rhel/7/insiders-fast.repo
+  ```
 
 - Install the Microsoft GPG public key:
 
-    ```bash
-    sudo rpm --import http://packages.microsoft.com/keys/microsoft.asc
-    ```
+  ```bash
+  sudo rpm --import http://packages.microsoft.com/keys/microsoft.asc
+  ```
 
 ### SLES and variants
 
@@ -136,159 +139,158 @@ In order to preview new features and provide early feedback, it is recommended t
 
 - Install the Microsoft GPG public key:
 
-    ```bash
-    sudo rpm --import http://packages.microsoft.com/keys/microsoft.asc
-    ```
+  ```bash
+  sudo rpm --import http://packages.microsoft.com/keys/microsoft.asc
+  ```
 
 ### Ubuntu and Debian systems
 
 - Install `curl` if it isn't installed yet:
 
-    ```bash
-    sudo apt-get install curl
-    ```
+  ```bash
+  sudo apt-get install curl
+  ```
 
 - Install `libplist-utils` if it isn't installed yet:
 
-    ```bash
-    sudo apt-get install libplist-utils
-    ```
+  ```bash
+  sudo apt-get install libplist-utils
+  ```
 
-    > [!NOTE]
-    > Your distribution and version, and identify the closest entry (by major, then minor) for it under `https://packages.microsoft.com/config/[distro]/`.
+  > [!NOTE]
+  > Your distribution and version, and identify the closest entry (by major, then minor) for it under `https://packages.microsoft.com/config/[distro]/`.
 
-   In the following command, replace *[distro]* and *[version]* with the information you've identified:
+  In the following command, replace *[distro]* and *[version]* with the information you've identified:
 
-   ```bash
-    curl -o microsoft.list https://packages.microsoft.com/config/[distro]/[version]/[channel].list
-   ```
+  ```bash
+  curl -o microsoft.list https://packages.microsoft.com/config/[distro]/[version]/[channel].list
+  ```
 
-   > [!TIP]
-   > Use hostnamectl command to identify system related information including release *[version]*.
+  > [!TIP]
+  > Use hostnamectl command to identify system related information including release *[version]*.
 
-   For example, if you are running Ubuntu 18.04 and wish to deploy Microsoft Defender for Endpoint on Linux from the *prod* channel:
+  For example, if you are running Ubuntu 18.04 and wish to deploy Microsoft Defender for Endpoint on Linux from the *prod* channel:
 
-   ```bash
-   curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/18.04/prod.list
-   ```
+  ```bash
+  curl -o microsoft.list https://packages.microsoft.com/config/ubuntu/18.04/prod.list
+  ```
 
 - Install the repository configuration:
 
-    ```bash
-    sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-[channel].list
-    ```
+  ```bash
+  sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-[channel].list
+  ```
 
-    For example, if you chose *prod* channel:
+  For example, if you chose *prod* channel:
 
-    ```bash
-    sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-prod.list
-    ```
+  ```bash
+  sudo mv ./microsoft.list /etc/apt/sources.list.d/microsoft-prod.list
+  ```
 
 - Install the `gpg` package if not already installed:
 
-    ```bash
-    sudo apt-get install gpg
-    ```
+  ```bash
+  sudo apt-get install gpg
+  ```
 
   If `gpg` is not available, then install `gnupg`.
 
-    ```bash
-    sudo apt-get install gnupg
-    ```
+  ```bash
+  sudo apt-get install gnupg
+  ```
 
 - Install the Microsoft GPG public key:
 
-    ```bash
-    curl -sSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/microsoft.gpg > /dev/null
-    ```
+  ```bash
+  curl -sSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/microsoft.gpg > /dev/null
+  ```
 
 - Install the HTTPS driver if not already installed:
 
-    ```bash
-    sudo apt-get install apt-transport-https
-    ```
+  ```bash
+  sudo apt-get install apt-transport-https
+  ```
 
 - Update the repository metadata:
 
-    ```bash
-    sudo apt-get update
-    ```
+  ```bash
+  sudo apt-get update
+  ```
 
 ## Application installation
 
-- RHEL and variants (CentOS and Oracle Linux):
+### RHEL and variants (CentOS, Fedora, Oracle Linux and Amazon Linux 2)
 
-    ```bash
-    sudo yum install mdatp
-    ```
+```bash
+sudo yum install mdatp
+```
 
-    > [!NOTE]
-    > If you have multiple Microsoft repositories configured on your device, you can be specific about which repository to install the package from. The following example shows how to install the package from the `production` channel if you also have the `insiders-fast` repository channel configured on this device. This situation can happen if you are using multiple Microsoft products on your device. Depending on the distribution and the version of your server, the repository alias might be different than the one in the following example.
+> [!NOTE]
+> If you have multiple Microsoft repositories configured on your device, you can be specific about which repository to install the package from. The following example shows how to install the package from the `production` channel if you also have the `insiders-fast` repository channel configured on this device. This situation can happen if you are using multiple Microsoft products on your device. Depending on the distribution and the version of your server, the repository alias might be different than the one in the following example.
 
-    ```bash
-    # list all repositories
-    yum repolist
-    ```
+```bash
+# list all repositories
+yum repolist
+```
 
-    ```Output
-    ...
-    packages-microsoft-com-prod               packages-microsoft-com-prod        316
-    packages-microsoft-com-prod-insiders-fast packages-microsoft-com-prod-ins      2
-    ...
-    ```
+```Output
+...
+packages-microsoft-com-prod               packages-microsoft-com-prod        316
+packages-microsoft-com-prod-insiders-fast packages-microsoft-com-prod-ins      2
+...
+```
 
-    ```bash
-    # install the package from the production repository
-    sudo yum --enablerepo=packages-microsoft-com-prod install mdatp
-    ```
+```bash
+# install the package from the production repository
+sudo yum --enablerepo=packages-microsoft-com-prod install mdatp
+```
 
-- SLES and variants:
+### SLES and variants
 
-    ```bash
-    sudo zypper install mdatp
-    ```
+```bash
+sudo zypper install mdatp
+```
 
-    > [!NOTE]
-    > If you have multiple Microsoft repositories configured on your device, you can be specific about which repository to install the package from. The following example shows how to install the package from the `production` channel if you also have the `insiders-fast` repository channel configured on this device. This situation can happen if you are using multiple Microsoft products on your device.
+> [!NOTE]
+> If you have multiple Microsoft repositories configured on your device, you can be specific about which repository to install the package from. The following example shows how to install the package from the `production` channel if you also have the `insiders-fast` repository channel configured on this device. This situation can happen if you are using multiple Microsoft products on your device.
 
-    ```bash
-    zypper repos
-    ```
+```bash
+zypper repos
+```
 
-    ```Output
-    ...
-    #  | Alias | Name | ...
-    XX | packages-microsoft-com-insiders-fast | microsoft-insiders-fast | ...
-    XX | packages-microsoft-com-prod | microsoft-prod | ...
-    ...
+```Output
+...
+#  | Alias | Name | ...
+XX | packages-microsoft-com-insiders-fast | microsoft-insiders-fast | ...
+XX | packages-microsoft-com-prod | microsoft-prod | ...
+...
+```
 
-    ```
+```bash
+sudo zypper install packages-microsoft-com-prod:mdatp
+```
 
-    ```bash
-    sudo zypper install packages-microsoft-com-prod:mdatp
-    ```
+### Ubuntu and Debian systems
 
-- Ubuntu and Debian system:
+```bash
+sudo apt-get install mdatp
+```
 
-    ```bash
-    sudo apt-get install mdatp
-    ```
+> [!NOTE]
+> If you have multiple Microsoft repositories configured on your device, you can be specific about which repository to install the package from. The following example shows how to install the package from the `production` channel if you also have the `insiders-fast` repository channel configured on this device. This situation can happen if you are using multiple Microsoft products on your device.
 
-    > [!NOTE]
-    > If you have multiple Microsoft repositories configured on your device, you can be specific about which repository to install the package from. The following example shows how to install the package from the `production` channel if you also have the `insiders-fast` repository channel configured on this device. This situation can happen if you are using multiple Microsoft products on your device.
+```bash
+cat /etc/apt/sources.list.d/*
+```
 
-    ```bash
-    cat /etc/apt/sources.list.d/*
-    ```
+```Output
+deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/config/ubuntu/18.04/prod insiders-fast main
+deb [arch=amd64] https://packages.microsoft.com/config/ubuntu/18.04/prod bionic main
+```
 
-    ```Output
-    deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/config/ubuntu/18.04/prod insiders-fast main
-    deb [arch=amd64] https://packages.microsoft.com/config/ubuntu/18.04/prod bionic main
-    ```
-
-    ```bash
-    sudo apt -t bionic install mdatp
-    ```
+```bash
+sudo apt -t bionic install mdatp
+```
 
 > [!NOTE]
 > Reboots are NOT required after installing or updating Microsoft Defender for Endpoint on Linux except when you're running auditD in immutable mode.
@@ -296,6 +298,8 @@ In order to preview new features and provide early feedback, it is recommended t
 ## Download the onboarding package
 
 Download the onboarding package from Microsoft 365 Defender portal.
+
+[!INCLUDE [Defender for Endpoint repackaging warning](../../includes/repackaging-warning.md)]
 
 > [!IMPORTANT]
 > If you miss this step, any command executed will show a warning message indicating that the product is unlicensed. Also the `mdatp health` command returns a value of `false`.
@@ -308,111 +312,111 @@ Download the onboarding package from Microsoft 365 Defender portal.
 
 4. From a command prompt, verify that you have the file, and extract the contents of the archive:
 
-    ```bash
-    ls -l
-    ```
+   ```bash
+   ls -l
+   ```
 
-    ```Output
-    total 8
-    -rw-r--r-- 1 test  staff  5752 Feb 18 11:22 WindowsDefenderATPOnboardingPackage.zip
-    ```
+   ```Output
+   total 8
+   -rw-r--r-- 1 test  staff  5752 Feb 18 11:22 WindowsDefenderATPOnboardingPackage.zip
+   ```
 
-    ```bash
-    unzip WindowsDefenderATPOnboardingPackage.zip
-    ```
+   ```bash
+   unzip WindowsDefenderATPOnboardingPackage.zip
+   ```
 
-    ```Output
-    Archive:  WindowsDefenderATPOnboardingPackage.zip
-    inflating: MicrosoftDefenderATPOnboardingLinuxServer.py
-    ```
+   ```Output
+   Archive:  WindowsDefenderATPOnboardingPackage.zip
+   inflating: MicrosoftDefenderATPOnboardingLinuxServer.py
+   ```
 
 ## Client configuration
 
 1. Copy MicrosoftDefenderATPOnboardingLinuxServer.py to the target device.
 
-    > [!NOTE]
-    > Initially the client device is not associated with an organization and the *orgId* attribute is blank.
+   > [!NOTE]
+   > Initially the client device is not associated with an organization and the *orgId* attribute is blank.
 
-    ```bash
-    mdatp health --field org_id
-    ```
+   ```bash
+   mdatp health --field org_id
+   ```
 
 2. Run MicrosoftDefenderATPOnboardingLinuxServer.py.
 
-    > [!NOTE]
-    > To run this command, you must have `python`  or `python3` installed on the device depending on the distro and version. If needed, see [Step-by-step Instructions for Installing Python on Linux](https://opensource.com/article/20/4/install-python-linux).
+   > [!NOTE]
+   > To run this command, you must have `python` or `python3` installed on the device depending on the distro and version. If needed, see [Step-by-step Instructions for Installing Python on Linux](https://opensource.com/article/20/4/install-python-linux).
 
-    > [!NOTE]
-    > To onboard a device that was previously offboarded you must remove the mdatp_offboard.json file located at /etc/opt/microsoft/mdatp.
+   > [!NOTE]
+   > To onboard a device that was previously offboarded you must remove the mdatp_offboard.json file located at /etc/opt/microsoft/mdatp.
 
-    If you're running RHEL 8.x or Ubuntu 20.04 or higher, you will need to use `python3`.
+   If you're running RHEL 8.x or Ubuntu 20.04 or higher, you will need to use `python3`.
 
-    ```bash
-    sudo python3 MicrosoftDefenderATPOnboardingLinuxServer.py
-    ```
+   ```bash
+   sudo python3 MicrosoftDefenderATPOnboardingLinuxServer.py
+   ```
 
-    For the rest of distros and versions, you will need to use `python`.
+   For the rest of distros and versions, you will need to use `python`.
 
-    ```bash
-    sudo python MicrosoftDefenderATPOnboardingLinuxServer.py
-    ```
+   ```bash
+   sudo python MicrosoftDefenderATPOnboardingLinuxServer.py
+   ```
 
 3. Verify that the device is now associated with your organization and reports a valid organization identifier:
 
-    ```bash
-    mdatp health --field org_id
-    ```
+   ```bash
+   mdatp health --field org_id
+   ```
 
 4. Check the health status of the product by running the following command. A return value of `1` denotes that the product is functioning as expected:
 
-    ```bash
-    mdatp health --field healthy
-    ```
+   ```bash
+   mdatp health --field healthy
+   ```
 
-    > [!IMPORTANT]
-    > When the product starts for the first time, it downloads the latest antimalware definitions. This may take up to a few minutes depending on the network connectivity. During this time the above command returns a value of `false`. You can check the status of the definition update using the following command:
-    >
-    > ```bash
-    > mdatp health --field definitions_status
-    > ```
-    >
-    > Please note that you may also need to configure a proxy after completing the initial installation. See [Configure Defender for Endpoint on Linux for static proxy discovery: Post-installation configuration](linux-static-proxy-configuration.md#post-installation-configuration).
+   > [!IMPORTANT]
+   > When the product starts for the first time, it downloads the latest antimalware definitions. This may take up to a few minutes depending on the network connectivity. During this time the above command returns a value of `false`. You can check the status of the definition update using the following command:
+   >
+   > ```bash
+   > mdatp health --field definitions_status
+   > ```
+   >
+   > Please note that you may also need to configure a proxy after completing the initial installation. See [Configure Defender for Endpoint on Linux for static proxy discovery: Post-installation configuration](linux-static-proxy-configuration.md#post-installation-configuration).
 
 5. Run an AV detection test to verify that the device is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded device:
 
-    - Ensure that real-time protection is enabled (denoted by a result of `1` from running the following command):
+   - Ensure that real-time protection is enabled (denoted by a result of `1` from running the following command):
 
-        ```bash
-        mdatp health --field real_time_protection_enabled
-        ```
+     ```bash
+     mdatp health --field real_time_protection_enabled
+     ```
 
-      If it is not enabled, execute the following command:
+     If it is not enabled, execute the following command:
 
-       ```bash
-        mdatp config real-time-protection --value enabled
-        ```
+     ```bash
+     mdatp config real-time-protection --value enabled
+     ```
 
-    - Open a Terminal window and execute the following command:
+   - Open a Terminal window and execute the following command:
 
-        ``` bash
-        curl -o /tmp/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
-        ```
+     ``` bash
+     curl -o /tmp/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
+     ```
 
-    - The file should have been quarantined by Defender for Endpoint on Linux. Use the following command to list all the detected threats:
+   - The file should have been quarantined by Defender for Endpoint on Linux. Use the following command to list all the detected threats:
 
-        ```bash
-        mdatp threat list
-        ```
+     ```bash
+     mdatp threat list
+     ```
 
 6. Run an EDR detection test and simulate a detection to verify that the device is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded device:
 
-    - Verify that the onboarded Linux server appears in Microsoft 365 Defender. If this is the first onboarding of the machine, it can take up to 20 minutes until it appears.
+   - Verify that the onboarded Linux server appears in Microsoft 365 Defender. If this is the first onboarding of the machine, it can take up to 20 minutes until it appears.
 
-    - Download and extract the [script file](https://aka.ms/LinuxDIY) to an onboarded Linux server and run the following command: `./mde_linux_edr_diy.sh`
+   - Download and extract the [script file](https://aka.ms/LinuxDIY) to an onboarded Linux server and run the following command: `./mde_linux_edr_diy.sh`
 
-    - After a few minutes, a detection should be raised in Microsoft 365 Defender.
+   - After a few minutes, a detection should be raised in Microsoft 365 Defender.
 
-    - Look at the alert details, machine timeline, and perform your typical investigation steps.
+   - Look at the alert details, machine timeline, and perform your typical investigation steps.
 
 ## Microsoft Defender for Endpoint package external package dependencies
 
@@ -425,7 +429,7 @@ The following external package dependencies exist for the mdatp package:
 The mde-netfilter package also has the following package dependencies:
 
 - For DEBIAN the mde-netfilter package requires "libnetfilter-queue1", "libglib2.0-0"
-- for RPM  the mde-netfilter package requires "libmnl", "libnfnetlink", "libnetfilter_queue", "glib2"
+- for RPM the mde-netfilter package requires "libmnl", "libnfnetlink", "libnetfilter_queue", "glib2"
 
 If the Microsoft Defender for Endpoint installation fails due to missing dependencies errors, you can manually download the pre-requisite dependencies.
 
@@ -461,22 +465,22 @@ See [Log installation issues](linux-resources.md#log-installation-issues) for mo
 
 1. Uninstall the "Insiders-Fast channel" version of Defender for Endpoint on Linux.
 
-    ```bash
-    sudo yum remove mdatp
-    ```
+   ```bash
+   sudo yum remove mdatp
+   ```
 
 1. Disable the Defender for Endpoint on Linux Insiders-Fast repo
 
-    ```bash
-    sudo yum repolist
-    ```
+   ```bash
+   sudo yum repolist
+   ```
 
-    > [!NOTE]
-    > The output should show "packages-microsoft-com-fast-prod".
+   > [!NOTE]
+   > The output should show "packages-microsoft-com-fast-prod".
 
-    ```bash
-    sudo yum-config-manager --disable packages-microsoft-com-fast-prod
-    ```
+   ```bash
+   sudo yum-config-manager --disable packages-microsoft-com-fast-prod
+   ```
 
 1. Redeploy Microsoft Defender for Endpoint on Linux using the "Production channel".
 
@@ -487,3 +491,4 @@ See [Uninstall](linux-resources.md#uninstall-defender-for-endpoint-on-linux) for
 ## See also
 
 - [Investigate agent health issues](health-status.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

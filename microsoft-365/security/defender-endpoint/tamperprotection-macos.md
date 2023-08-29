@@ -80,6 +80,7 @@ You can configure the tamper protection mode by providing the mode name as enfor
 - Supported macOS versions: Big Sur (11), or later.
 - Minimum required version for Defender for Endpoint: 101.70.19.
 
+
 **Highly recommended settings:**
 
 - System Integrity Protection (SIP) enabled. For more information, see [Disabling and Enabling System Integrity Protection](https://developer.apple.com/documentation/security/disabling_and_enabling_system_integrity_protection).
@@ -451,7 +452,7 @@ Executable Segment limit=16384
 Executable Segment flags=0x1
 Page size=4096
 Launch Constraints:
-	None
+  None
 CDHash=335c10d40db9417d80db87f658f6565018a4c3d6
 Signature size=4442
 Authority=Software Signing
@@ -542,3 +543,4 @@ configuration_is_managed                    : false
 ```console
 $ sudo grep -F '[{tamperProtection}]: Feature state:' /Library/Logs/Microsoft/mdatp/microsoft_defender_core.log | tail -n 1
 ```
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
