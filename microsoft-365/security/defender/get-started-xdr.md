@@ -19,7 +19,7 @@ ms.collection:
   - tier1
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 05/29/2023
+ms.date: 08/29/2023
 ---
 
 # Get started with Microsoft Defender Experts for XDR
@@ -68,7 +68,7 @@ Defender Experts for XDR lets you determine the individuals or groups within you
 
 **To add notification contacts:**
 
-1. In the same Defender Experts settings step-by-step guide, under **Incident contact**, search for and add your contact persons or teams that we can notify for guided response actions or any communication that requires a prompt response.
+1. In the same Defender Experts settings step-by-step guide, under **Incident contact**, search for and add your contact persons or teams that we can notify for managed response actions or any communication that requires a prompt response.
 
 > [!NOTE]
 > Given the urgent nature of the communications, it is recommended to have someone available at all times.

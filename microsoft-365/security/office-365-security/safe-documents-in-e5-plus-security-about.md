@@ -9,6 +9,7 @@ ms.topic: how-to
 ms.localizationpriority: medium
 ms.custom:
   - has-azure-ad-ps-ref
+  - azure-ad-ref-level-one-done
 search.appverid:
   - MET150
 ms.assetid:
@@ -18,7 +19,7 @@ ms.collection:
 description: Learn about Safe Documents in Microsoft 365 A5 or E5 Security.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 6/19/2023
+ms.date: 8/25/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
@@ -99,7 +100,7 @@ For detailed syntax and parameter information, see [Set-AtpPolicyForO365](/power
 If you want to selectively allow or block access to the Safe Documents feature, follow these steps:
 
 1. Turn on Safe Documents in the Microsoft 365 Defender portal or Exchange Online PowerShell as previously described in this article.
-2. Use Azure AD PowerShell to disable Safe Documents for specific users as described in [Disable specific Microsoft 365 services for specific users for a specific licensing plan](/microsoft-365/enterprise/disable-access-to-services-with-microsoft-365-powershell#disable-specific-microsoft-365-services-for-specific-users-for-a-specific-licensing-plan).
+2. Use Microsoft Graph PowerShell to disable Safe Documents for specific users as described in [Disable specific Microsoft 365 services for specific users for a specific licensing plan](/microsoft-365/enterprise/disable-access-to-services-with-microsoft-365-powershell#disable-specific-microsoft-365-services-for-specific-users-for-a-specific-licensing-plan).
 
   The name of the service plan to disable in PowerShell is **SAFEDOCS**.
 
