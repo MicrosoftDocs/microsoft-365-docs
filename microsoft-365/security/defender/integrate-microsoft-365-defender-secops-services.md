@@ -70,3 +70,4 @@ To integrate the capabilities of Microsoft 365 Defender, you will need to refine
 ## Next step
 
 [Step 4. Define Microsoft 365 Defender roles, responsibilities, and oversight](integrate-microsoft-365-defender-secops-roles.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

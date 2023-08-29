@@ -1,9 +1,8 @@
 ---
 title: Changing from a Microsoft 365 E plan to a Microsoft 365 F plan
-author: samanro
-ms.author: samanro
-ms.reviewer: 
-manager: samanro
+author: lana-chin
+ms.author: v-chinlana
+manager: serdars
 ms.topic: conceptual
 audience: admin
 ms.service: microsoft-365-frontline
@@ -170,7 +169,7 @@ We'll be referring to this table in later sections of this article.
 
 |Service or feature |Before the switch|After the switch|
 |---------|---------|---------|
-|Office apps| <ul><li>Identify files that are stored on users' local computers and help users move them to their OneDrive.</li><li>Keep in mind that Office desktop apps will go into reduced functionality mode after changing to an F plan. Be prepared to uninstall Office desktop apps after the switch.</li></ul>| Users:</br> <ul><li>Sign in to [office.com](https://www.office.com) to access Office for the web.</li><li>[Install and use Office mobile apps](https://support.microsoft.com/office/set-up-office-apps-and-email-on-a-mobile-device-7dabb6cb-0046-40b6-81fe-767e0b1f014f) (if not already).</li><li>Users can also directly collaborate on documents from SharePoint document libraries, OneDrive, Teams, and Yammer.</li></ul>Admins:<ul><li>Uninstall Office desktop apps from users' computers.</li></ul>      |
+|Office apps| <ul><li>Identify files that are stored on users' local computers and help users move them to their OneDrive.</li><li>Keep in mind that Office desktop apps will go into reduced functionality mode after changing to an F plan. Be prepared to uninstall Office desktop apps after the switch.</li></ul>| Users:</br> <ul><li>Sign in to [office.com](https://www.office.com) to access Office for the web.</li><li>[Install and use Office mobile apps](https://support.microsoft.com/office/set-up-office-apps-and-email-on-a-mobile-device-7dabb6cb-0046-40b6-81fe-767e0b1f014f) (if not already).</li><li>Users can also directly collaborate on documents from SharePoint document libraries, OneDrive, Teams, and Viva Engage.</li></ul>Admins:<ul><li>Uninstall Office desktop apps from users' computers.</li></ul>      |
 |Email, Exchange, Outlook|<ul><li>Identify user mailboxes over 2 GB by using the [Get-MailboxStatistics](/powershell/module/exchange/get-mailboxstatistics?view=exchange-ps&preserve-view=true) Exchange PowerShell cmdlet, and then reduce mailbox size, as needed. To learn more, see [Mailbox storage limits in Outlook on the web](https://support.microsoft.com/office/mailbox-storage-limits-in-outlook-on-the-web-f170fe90-b859-4034-bcda-e186fc6a26f5).</li><li>If users have an archive mailbox:</li><ul><li>Move archive mailbox content back to the user's mailbox.</li><li>Check for any archive policies that may automatically move email based on the age of messages by using the [Get-EXOMailbox](/powershell/module/exchange/get-exomailbox?view=exchange-ps&preserve-view=true) Exchange Online PowerShell cmdlet.</li></ul> <li>Identify site mailbox access and usage.</li><li>Outlook desktop app, data, and configuration:</li><ul><li>Identify users and computers that are using Outlook data (.pst) files.</li><li>Identify and document existing Outlook client-only rules.</li><li>Export email signatures.</li></ul></ul>|Users:</br><ul><li>Sign in to [office.com](https://www.office.com) to access Outlook on the web.</li><li>[Set up email on mobile devices](https://support.microsoft.com/office/set-up-office-apps-and-email-on-a-mobile-device-7dabb6cb-0046-40b6-81fe-767e0b1f014f) (if not already).</li><li>Check and update mail signatures.</li><li>Check and update mailbox rules.</li></ul>Admins:<ul><li> [Disable Outlook on the web](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app) for F1 users and ask them not to access the mailbox through any other methods.</li></ul>|
 |Teams | <ul><li>Identify usage of live events and webinars.</li><li>Identify users who have Teams Phone enabled. If users are using this feature, they may not be the appropriate set of users to transition to an F plan.</li></ul>      ||
 |OneDrive | <ul><li>Identify users who are using more than or close to 2 GB of storage. (OneDrive will become read-only for users who are over the 2 GB limit after the switch to an F plan.)</li><li>Help users reduce the number of files stored in OneDrive and the overall amount of storage used.</li><li>Make sure all files are fully synchronized from users' computers to OneDrive.</li></ul>| |
@@ -191,7 +190,7 @@ Here's some ideas to help plan your strategy.
 
 |Communication|Training|Support|
 |---------|---------|---------|
-|<ul><li>Email</li><li>Department or store managers</li><li>Champions</li><li>Teams and channels</li><li>Yammer communities</li></ul> |<ul><li>Microsoft online help, training, and video resources</li><li>In-house training</li></ul>|<ul><li>In-house helpdesk</li><li>Self-serve intranet site</li><li>Microsoft online help, training, and video resources</li><li>Floor walkers and champions</li></ul>         |
+|<ul><li>Email</li><li>Department or store managers</li><li>Champions</li><li>Teams and channels</li><li>Viva Engage communities</li></ul> |<ul><li>Microsoft online help, training, and video resources</li><li>In-house training</li></ul>|<ul><li>In-house helpdesk</li><li>Self-serve intranet site</li><li>Microsoft online help, training, and video resources</li><li>Floor walkers and champions</li></ul>         |
 
 You may also want to check out these adoption resources to help you engage and train your users:
 
@@ -230,7 +229,7 @@ Communicate to your users that the change is completed and let them know how to 
 
 ## User setup, help, and learning resources
 
-Here are some links to setup, help, and learning resources that you can share with your frontline workers for training and support.
+Here are some links to set up, help, and learning resources that you can share with your frontline workers for training and support.
 
 |App|Links |
 |---------|---------|

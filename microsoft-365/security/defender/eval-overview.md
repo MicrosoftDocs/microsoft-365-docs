@@ -132,3 +132,4 @@ This order is commonly recommended and designed to leverage the value of the cap
 ## Go to the Next Step
 
 [Learn about and/or create the Microsoft 365 Defender Evaluation Environment](eval-create-eval-environment.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

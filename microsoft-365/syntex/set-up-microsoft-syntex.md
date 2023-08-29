@@ -1,9 +1,10 @@
 ---
 title: Set up Microsoft Syntex
-ms.author: mikeplum
-author: MikePlumleyMSFT
-ms.reviewer: ssquires
-manager: serdars
+ms.author: chucked
+author: chuckedmonson
+ms.reviewer: ssquires, kkameth
+manager: pamgreen
+ms.date: 08/01/2023
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -34,15 +35,27 @@ You must have Global admin or SharePoint admin permissions to be able to access 
 
 As an admin, you can also make changes to your selected settings anytime in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
-## To set up Microsoft Syntex
+## Set up Microsoft Syntex services
 
 1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>, and then view the **Files and content** section.
 
-1. In the **Files and content** section, select **Use content AI with Microsoft Syntex**.
+2. In the **Files and content** section, select **Use content AI with Microsoft Syntex**.
 
-1. On the **Use content AI with Microsoft Syntex** page, select **Manage Microsoft Syntex**.
+3. On the **Use content AI with Microsoft Syntex** page, select **Manage Microsoft Syntex**.
 
-1. Select the Microsoft Syntex service that you want to set up.
+4. Select the Microsoft Syntex service that you want to set up.
 
-1. Choose the options that you want to use, and then select **Save**.
+5. Choose the options that you want to use, and then select **Save**.
 
+### Setup instructions by service
+
+The following table provides links to the specific setup instructions for each service.
+
+|Service |Instructions to set up service |
+|:-------|:----------------------|
+|Prebuilt document processing     | [Set up prebuilt document processing](prebuilt-setup.md) |
+|Structured and freeform document processing | [Set up structured and freeform document processing](structured-freeform-setup.md) |
+|Unstructured document processing | [Set up unstructured document processing](unstructured-setup.md) |
+|Content assembly                 | [Set up content assembly](content-assembly-setup.md)  |
+|Image tagging                    | [Set up image tagging](image-tagging-setup.md)  |
+|Optical character recognition    | [Set up optical character recognition](ocr.md)  |

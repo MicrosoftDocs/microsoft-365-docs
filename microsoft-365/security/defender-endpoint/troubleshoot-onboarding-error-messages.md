@@ -93,3 +93,4 @@ If you encounter issues with accessing the portal, missing data, or restricted a
 - `https://secure.aadcdn.microsoftonline-p.com`
 - `https://security.microsoft.com`
 - `https://static2.sharepointonline.com`
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

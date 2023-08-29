@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.reviewer: efratka, jomaun, yaelbenari
+ms.reviewer: efratka, nehabha, yaelbenari
 ms.date: 01/26/2023
 f1.keywords: NOCSH 
 ms.collection: 

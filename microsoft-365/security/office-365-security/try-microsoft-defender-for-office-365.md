@@ -20,7 +20,7 @@ ms.custom:
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ROBOTS:
-ms.date: 5/26/2023
+ms.date: 7/31/2023
 ---
 
 # Try Microsoft Defender for Office 365
@@ -36,6 +36,9 @@ Before you try Defender for Office 365 Plan 2, there are some key questions that
 This article helps you answer those questions so you can try Defender for Office 365 Plan 2 in a way that best meets the needs of your organization.
 
 For a companion guide for how to use your trial, see [Trial User Guide: Microsoft Defender for Office 365](trial-user-guide-defender-for-office-365.md).
+
+> [!NOTE]
+> Trials and evaluations of Defender for Office 365 aren't available in U.S. Government organizations (Microsoft 365 GCC, GCC High, and DoD) or Microsoft 365 Education organizations.
 
 ## Overview of Defender for Office 365
 
@@ -446,7 +449,7 @@ A: See [Extend your trial](/microsoft-365/commerce/try-or-buy-microsoft-365#exte
 
 ### Q: What happens to my data after the trial expires?
 
-A: After your trial expires, yo have access to your trial data (data from features in Defender for Office 365 that you didn't have previously) for 30 days. After this 30 day period, all policies and data that were associated with the Defender for Office 365 trial are deleted.
+A: After your trial expires, you have access to your trial data (data from features in Defender for Office 365 that you didn't have previously) for 30 days. After this 30 day period, all policies and data that were associated with the Defender for Office 365 trial are deleted.
 
 ### Q: How many times can I use the Defender for Office 365 trial in my organization?
 
@@ -485,7 +488,7 @@ The settings are also described in the following tables.
 |AdminDisplayName|Evaluation Policy|
 |AuthenticationFailAction|MoveToJmf|
 |DmarcQuarantineAction|Quarantine|
-|DmarcRejectAction|Quarantine|
+|DmarcRejectAction|Reject|
 |Enabled|True|
 |EnableFirstContactSafetyTips|False|
 |EnableMailboxIntelligence|True|
@@ -502,7 +505,7 @@ The settings are also described in the following tables.
 |EnableViaTag|True|
 |ExcludedDomains|{}|
 |ExcludedSenders|{}|
-|HonorDmarcPolicy|False|
+|HonorDmarcPolicy|True|
 |ImpersonationProtectionState|Manual|
 |IsDefault|False|
 |MailboxIntelligenceProtectionAction|NoAction|
@@ -527,7 +530,7 @@ The settings are also described in the following tables.
 |---|---|
 |Name|Evaluation Policy|
 |Action|Allow|
-|ActionOnError|True|
+|ActionOnError|True<sup>\*</sup>|
 |AdminDisplayName|Evaluation Policy|
 |ConfidenceLevelThreshold|80|
 |Enable|True|
@@ -540,6 +543,8 @@ The settings are also described in the following tables.
 |Redirect|False|
 |RedirectAddress|blank|
 |ScanTimeout|30|
+
+<sup>\*</sup> This parameter has been deprecated and is no longer used.
 
 #### Safe Links evaluation policy settings
 

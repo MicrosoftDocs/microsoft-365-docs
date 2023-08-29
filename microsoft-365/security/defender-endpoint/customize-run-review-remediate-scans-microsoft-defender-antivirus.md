@@ -44,3 +44,4 @@ Topic | Description
 [Configure scheduled scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md) | Set up recurring (scheduled) scans, including when they should run and whether they run as full or quick scans
 [Configure and run scans](run-scan-microsoft-defender-antivirus.md) | Run and configure on-demand scans using PowerShell, Windows Management Instrumentation, or individually on endpoints with the Windows Security app
 [Review scan results](review-scan-results-microsoft-defender-antivirus.md) | Review the results of scans using  Microsoft Endpoint Configuration Manager, Microsoft Intune, or the Windows Security app
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

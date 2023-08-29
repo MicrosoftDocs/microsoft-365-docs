@@ -24,7 +24,7 @@ description: "Learn how to prepare your organization for Microsoft 365 Copilot."
 # Get started with Microsoft 365 Copilot
 
 >[!IMPORTANT]
-> The information in this article only applies to the [Microsoft 365 Copilot Early Access Program](https://www.microsoft.com/microsoft-365/blog/2023/05/09/introducing-the-microsoft-365-copilot-early-access-program-and-new-capabilities-in-copilot/), an invite-only paid preview program for commercial customers. Details are subject to change. For more information on the Early Access Program, see [Microsoft 365 Early Access Program](m365-early-access-program.md).
+> The information in this article only applies to the [Microsoft 365 Copilot Early Access Program](https://www.microsoft.com/microsoft-365/blog/2023/05/09/introducing-the-microsoft-365-copilot-early-access-program-and-new-capabilities-in-copilot/), an invite-only paid preview program for commercial customers. Details are subject to change. For more information on the Early Access Program, see [Microsoft 365 Early Access Program FAQ](m365-early-access-program.yml).
 
 [Microsoft 365 Copilot](https://www.microsoft.com/microsoft-365/blog/2023/03/16/introducing-microsoft-365-copilot-a-whole-new-way-to-work/) is an AI-powered productivity tool that uses large language models (LLMs) and integrates your data with the Microsoft Graph and Microsoft 365 Apps. It works alongside popular Microsoft 365 Apps such as Word, Excel, PowerPoint, Outlook, Teams, and more. Copilot provides real-time intelligent assistance, enabling users to enhance their creativity, productivity, and skills. This article covers the technical requirements to access and configure Microsoft 365 Copilot once you're invited to the Early Access Program.
 
@@ -34,7 +34,7 @@ Before you can access Copilot, you must meet the following requirements:
 
 - **Microsoft 365 Apps for enterprise** must be deployed for your users, which seamlessly integrates with Microsoft 365 Copilot and applications such as Word, Excel, PowerPoint, Outlook, and Teams. To get started with the implementation process, see [Deployment guide for Microsoft 365 Apps](/deployoffice/deployment-guide-microsoft-365-apps).
 
-- **Azure Active Directory-based account** To use Microsoft 365 Copilot, you must have an Azure Active Directory-based account. See [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) to learn more.
+- **Azure Active Directory-based account** To use Microsoft 365 Copilot, you must have an Azure Active Directory-based account. To learn more, see [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis).
 
 - **OneDrive Account** You need to have a OneDrive account for several features within Microsoft 365 Copilot, such as saving and sharing your files. For more information, see [Sign in or create an account for OneDrive](https://support.microsoft.com/office/video-sign-in-or-create-an-account-for-onedrive-3adf09fd-90e3-4420-8c4e-b55e2cde40d2?ui=en-us&rs=en-us&ad=us).
 
@@ -42,10 +42,13 @@ Before you can access Copilot, you must meet the following requirements:
 
 - **Microsoft Teams** To use Microsoft 365 Copilot with Microsoft Teams, you must use the Teams desktop client or web client. You can [download the desktop client here](https://www.microsoft.com/microsoft-teams/download-app) or sign into the web app at [https://teams.microsoft.com](https://teams.microsoft.com/). Both the current and the new version of Teams are supported. For more information, see [Microsoft Teams desktop client](/microsoftteams/get-clients?tabs=Windows).
 
-- **Microsoft Loop** To use Copilot in Microsoft Loop, you must have Loop enabled for your tenant. See [Get started with Microsoft Loop](https://support.microsoft.com/office/get-started-with-microsoft-loop-9f4d8d4f-dfc6-4518-9ef6-069408c21f0c) for more information on enabling Loop.
+- **Microsoft Loop** To use Copilot in Microsoft Loop, you must have Loop enabled for your tenant. For more information on enabling Loop, see [Get started with Microsoft Loop](https://support.microsoft.com/office/get-started-with-microsoft-loop-9f4d8d4f-dfc6-4518-9ef6-069408c21f0c).
+
+>[!IMPORTANT]
+> Your users must be on the Current Channel to access Copilot. To learn more, see [update channels for Microsoft 365 Apps](/deployoffice/updates/overview-update-channels#current-channel-overview).
 
 >[!NOTE]
-> Your users must be on the Current Channel or Monthly Enterprise Channel to use Copilot. See [update channels for Microsoft 365 Apps](/deployoffice/updates/overview-update-channels#current-channel-overview) to learn more.
+> We previously stated that support for the Monthly Enterprise Channel was available for Microsoft 365 Copilot. As we continue to make frequent product updates and enhancements during the early access program, the time between updates in the Monthly Enterprise Channel limits Microsoft's ability to provide an optimum Copilot experience on desktop clients. Going forward, users in the early access program must be on the Current Channel to receive Copilot updates when they become available. We expect support in the Monthly Enterprise Channel in the future.
 
 ## Manage licenses for Copilot
 

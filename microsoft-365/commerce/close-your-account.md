@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: amberb, vikdesai
+ms.reviewer: jkinma, ramagane
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
@@ -15,11 +15,12 @@ ms.collection:
 - scotvorg
 - M365-subscription-management
 - Adm_O365
-ms.custom: 
-- commerce_subscriptions
-- AdminSurgePortfolio
-- fwlink 2133922 to Delete subscription heading
-- AdminTemplateSet
+ms.custom:
+  - commerce_subscriptions
+  - AdminSurgePortfolio
+  - fwlink 2133922 to Delete subscription heading
+  - AdminTemplateSet
+  - has-azure-ad-ps-ref
 search.appverid: MET150
 description: "When you close your account with Microsoft all information related to your account is deleted including licenses, users, and user data."
 ms.date: 04/02/2021
@@ -91,4 +92,3 @@ After you complete this final step, your account with Microsoft is closed and de
 
 [Understand your bill or invoice for Microsoft 365 for business](./billing-and-payments/understand-your-invoice2.md) (article)\
 [Cancel your subscription](./subscriptions/cancel-your-subscription.md) (article)
-

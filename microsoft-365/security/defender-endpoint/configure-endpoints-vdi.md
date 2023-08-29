@@ -277,3 +277,4 @@ The following configuration settings are recommended:
 - [Onboard Windows devices using Mobile Device Management tools](configure-endpoints-mdm.md)
 - [Onboard Windows devices using a local script](configure-endpoints-script.md)
 - [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

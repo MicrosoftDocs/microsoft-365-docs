@@ -86,7 +86,7 @@ Audit logging is required by Attack simulation training so events can be capture
 - Reporting data isn't available across all reports. The reports appear empty.
 - Training assignments are blocked, because data isn't available.
 
-To verify that audit logging is on or to turn it on, see [Turn auditing on or off](../../compliance/audit-log-enable-disable.md).
+To verify that audit logging is on or to turn it on, see [Turn auditing on or off](/purview/audit-log-enable-disable).
 
 > [!NOTE]
 > Empty activity details can also be caused by no E5 licenses being assigned to users. Verify at least one E5 license is assigned to an active user to ensure that reporting events are captured and recorded.
@@ -171,6 +171,10 @@ Managing a large CSV file or adding many individual recipients can be cumbersome
 A: Currently, there are 40+ localized payloads available in 29+ languages: English, Spanish, German, Japanese, French, Portuguese, Dutch, Italian, Swedish, Chinese (Simplified), Norwegian Bokmål, Polish, Russian, Finnish, Korean, Turkish, Hungarian, Hebrew, Thai, Arabic, Vietnamese, Slovak, Greek, Indonesian, Romanian, Slovenian, Croatian, Catalan, and Other. We've determined that direct or machine translation of existing payloads to other languages leads to inaccuracies and decreased relevance.
 
 That being said, you can create your own payload in the language of your choice using the custom payload authoring experience. We also strongly recommend that you harvest existing payloads that were used to target users in a specific geography. In other words, let the attackers localize the content for you.
+
+### Q: How many training videos are available?
+
+A: Currently, there are more than 85 training modules available in the content library.
 
 ### Q: How can I switch to other languages for my admin portal and training experience?
 

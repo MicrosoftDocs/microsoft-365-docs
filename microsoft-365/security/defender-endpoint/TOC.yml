@@ -1,5 +1,6 @@
 - name: Microsoft Defender for Endpoint
   href: index.yml
+  expanded: true
   items:
   - name: Overview
     items:
@@ -87,28 +88,202 @@
         href: defender-endpoint-demonstration-potentially-unwanted-applications.md
       - name: URL reputation demonstrations
         href: defender-endpoint-demonstration-smartscreen-url-reputation.md
-  - name: Plan deployment
-    href: deployment-strategy.md
-
-  - name: Deployment guide
+ 
+  - name: Deploy Defender for Endpoint
     items:
-    - name: Deployment phases
-      href: deployment-phases.md
-    - name: Phase 1 - Prepare
-      href: prepare-deployment.md
-    - name: Phase 2 - Set up
+    - name: Overview
+      href: mde-planning-guide.md
+    - name: Step 1 - Set up Defender for Endpoint deployment
       href: production-deployment.md
-    - name: Phase 3 - Onboard
-      items:
-      - name: Onboarding overview
-        href: onboarding.md
-      - name: Deployment rings
-        href: deployment-rings.md
-      - name: Onboarding using Microsoft Configuration Manager
-        href: onboarding-endpoint-configuration-manager.md
-      - name: Onboarding using Microsoft Intune
-        href: onboarding-endpoint-manager.md
+    - name: Step 2 - Assign roles and permissions
+      href: prepare-deployment.md
+    - name: Step 3 - Identify your architecture and deployment method
+      href: deployment-strategy.md
+    - name: Step 4 - Onboard devices
+      href: onboarding.md
+    - name: Step 5 - Configure Microsoft Defender for Endpoint capabilities
+      href: onboard-configure.md
 
+  - name: Onboard and configure devices
+    items:
+    - name: Onboarding Windows Client
+      items:
+      - name: Onboarding Windows Client overview
+        href: onboard-windows-client.md
+      - name: Onboard Windows devices to Defender for Endpoint using Intune
+        href: configure-endpoints-mdm.md
+      - name: Onboard Windows devices to Defender for Endpoint using Microsoft Configuration Manager
+        href: configure-endpoints-sccm.md
+      - name: Onboard Windows devices to Defender for Endpoint using Group Policy
+        href: configure-endpoints-gp.md
+      - name: Onboard Windows devices to Defender for Endpoint using a local script
+        href: configure-endpoints-script.md
+      - name: Onboard non-persistent virtual desktop infrastructure (VDI) devices
+        href: configure-endpoints-vdi.md
+      - name: Onboard Windows 10 multi-session devices in Azure Virtual Desktop
+        href: onboard-windows-multi-session-device.md
+      - name: Onboard previous versions of Windows
+        href: onboard-downlevel.md
+
+    - name: Onboarding Windows Server
+      items:
+      - name: Onboarding Windows Server overview
+        href: onboard-windows-server.md
+      - name: Onboard Windows Server 2012 R2, 2016, Semi-Annual Channel, 2019, and 2022
+        href: configure-server-endpoints.md
+      - name: Onboard Windows devices using Configuration Manager
+        href: configure-endpoints-sccm.md
+      - name: Onboard Windows devices using Group Policy
+        href: configure-endpoints-gp.md
+      - name: Onboard Windows devices using a local script
+        href: configure-endpoints-script.md
+      - name: Onboard non-persistent virtual desktop infrastructure (VDI) devices
+        href: configure-endpoints-vdi.md
+
+    - name: Microsoft Defender for Endpoint on other platforms
+      items:
+      - name: Onboard non-Windows devices
+        href: configure-endpoints-non-windows.md
+      - name: Microsoft Defender for Endpoint on macOS
+        items:
+        - name: Deploy Defender for Endpoint on macOS
+          items:
+          - name: Deployment with Microsoft Intune
+            href: mac-install-with-intune.md
+          - name: JAMF Pro-based deployment
+            items:
+            - name: Deploying Microsoft Defender for Endpoint on macOS using Jamf Pro
+              href: mac-install-with-jamf.md
+            - name: Log in to Jamf Pro
+              href: mac-install-jamfpro-login.md
+            - name: Set up device groups
+              href: mac-jamfpro-device-groups.md
+            - name: Set up policies
+              href: mac-jamfpro-policies.md
+            - name: Enroll devices
+              href: mac-jamfpro-enroll-devices.md
+                
+          - name: Deployment with Mobile Device Management (MDM) systems
+            href: mac-install-with-other-mdm.md
+          - name: Manual deployment
+            href: mac-install-manually.md
+        - name: Configure Defender for Endpoint on macOS
+          items:
+          - name: Configure and validate exclusions
+            href: mac-exclusions.md
+          - name: Set preferences
+            href: mac-preferences.md 
+          - name: Detect and block Potentially Unwanted Applications
+            href: mac-pua.md
+          - name: Protect macOS security settings using tamper protection
+            href: tamperprotection-macos.md
+          - name: Device control
+            items:
+            - name: Device control overview
+              href: mac-device-control-overview.md
+            - name: JAMF examples
+              href: mac-device-control-jamf.md
+            - name: Intune examples
+              href: mac-device-control-intune.md
+            - name: macOS Device Control frequently asked questions (FAQ)
+              href: mac-device-control-faq.md
+          - name: Schedule scans
+            href: mac-schedule-scan.md
+        - name: Update Defender for Endpoint on macOS
+          href: mac-updates.md
+        - name: Privacy for Microsoft Defender for Endpoint on macOS
+          href: mac-privacy.md
+        - name: Resources for Microsoft Defender for Endpoint on macOS
+          href: mac-resources.md
+
+      - name: Microsoft Defender for Endpoint on Linux
+        items:
+        - name: Deploy Defender for Endpoint on Linux
+          items:
+          - name: Puppet based deployment
+            href: linux-install-with-puppet.md
+          - name: Ansible based deployment
+            href: linux-install-with-ansible.md
+          - name: Chef based deployment
+            href: linux-deploy-defender-for-endpoint-with-chef.md
+          - name: Manual deployment
+            href: linux-install-manually.md
+          - name: Saltstack-based deployment
+            href: linux-install-with-saltack.md
+          - name: Advanced deployment for Defender for Endpoint on Linux
+            href: comprehensive-guidance-on-linux-deployment.md
+        - name: Configure Defender for Endpoint on Linux
+          items:
+          - name: Configure and validate exclusions
+            href: linux-exclusions.md
+          - name: Static proxy configuration
+            href: linux-static-proxy-configuration.md
+          - name: Set preferences
+            href: linux-preferences.md
+          - name: Detect and block Potentially Unwanted Applications
+            href: linux-pua.md
+          - name: Schedule scans with Microsoft Defender for Endpoint on Linux
+            href: linux-schedule-scan-mde.md
+          - name: Schedule antivirus scan in Defender for Endpoint on Linux
+            href: schedule-antivirus-scan-in-mde.md
+          - name: Schedule an update of the Microsoft Defender for Endpoint (Linux)
+            href: linux-update-MDE-Linux.md
+          - name: Configure eBPF-based sensor
+            href: linux-support-ebpf.md 
+        - name: Update Defender for Endpoint on Linux
+          href: linux-updates.md
+        - name: Privacy for Defender for Endpoint on Linux
+          href: linux-privacy.md
+        - name: Resources for Microsoft Defender for Endpoint on Linux
+          href: linux-resources.md
+      - name: Mobile Threat Defense
+        items:
+        - name: Mobile Threat Defense Overview
+          href: mtd.md
+        - name: Deploy
+          items:
+          - name: Deployment on Android with Microsoft Intune
+            href: android-intune.md
+          - name: Deployment on iOS via Microsoft Intune
+            href: ios-install.md
+          - name: Deployment on iOS with Mobile Application Manager
+            href: ios-install-unmanaged.md
+
+    - name: Configure Mobile Threat Defense
+      items:
+      - name: Configure Defender for Endpoint on Android features
+        href: android-configure.md
+      - name: Configure Defender for Endpoint on Android risk signals using app protection policy
+        href: android-configure-mam.md
+      - name: Privacy for Defender for Endpoint on Android
+        href: android-privacy.md
+      - name: Configure Defender for Endpoint on iOS features
+        href: ios-configure-features.md
+      - name: Privacy for Defender for Endpoint on iOS
+        href: ios-privacy.md
+    - name: Run a detection test on a newly onboarded Microsoft Defender for Endpoint
+      href: run-detection-test.md
+    - name: Onboard devices without Internet access
+      href: onboard-offline-machines.md
+    - name: Configure proxy and Internet connectivity settings
+      href: configure-proxy-internet.md
+  - name: How to guides
+    items:
+    - name: Integration with Microsoft Defender for Cloud
+      href: azure-server-integration.md
+    - name: Run simulated attacks on devices
+      href: attack-simulations.md
+    - name: Create an onboarding or offboarding notification rule
+      href: onboarding-notification.md
+    - name: Manage Microsoft Defender for Endpoint configuration settings on devices with Microsoft Intune
+      href: security-config-management.md
+    - name: Manage Defender for Endpoint P1/P2 across devices
+      href: defender-endpoint-subscription-settings.md
+    - name: Onboarding using Microsoft Configuration Manager
+      href: onboarding-endpoint-configuration-manager.md
+    - name: Onboarding using Microsoft Intune
+      href: onboarding-endpoint-manager.md
+ 
   - name: Migration guides
     items:
     - name: Migration guides overview
@@ -145,230 +320,60 @@
           href: server-migration.md
         - name: Migrating servers from Microsoft Monitoring Agent to the unified solution
           href: application-deployment-via-mecm.md
-  - name: Onboard and configure devices
+
+  - name: Configure portal settings
     items:
-    - name: Onboard devices and configure Microsoft Defender for Endpoint capabilities
-      href: onboard-configure.md
-    - name: Onboarding Windows Client
+    - name: Configure general Defender for Endpoint settings
+      href: preferences-setup.md
+    - name: General
       items:
-      - name: Onboarding Windows Client overview
-        href: onboard-windows-client.md
-      - name: Onboard Windows devices to Defender for Endpoint using Intune
-        href: configure-endpoints-mdm.md
-      - name: Onboard Windows devices to Defender for Endpoint using Microsoft Configuration Manager
-        href: configure-endpoints-sccm.md
-      - name: Onboard Windows devices to Defender for Endpoint using Group Policy
-        href: configure-endpoints-gp.md
-      - name: Onboard Windows devices to Defender for Endpoint using a local script
-        href: configure-endpoints-script.md
-      - name: Onboard non-persistent virtual desktop infrastructure (VDI) devices
-        href: configure-endpoints-vdi.md
-      - name: Onboard Windows 10 multi-session devices in Azure Virtual Desktop
-        href: onboard-windows-multi-session-device.md
-      - name: Onboard previous versions of Windows
-        href: onboard-downlevel.md
+      - name: Configure alert notifications
+        href: ../defender/configure-email-notifications.md
+      - name: Configure vulnerability email notifications
+        href: configure-vulnerability-email-notifications.md
+      - name: Configure advanced features
+        href: advanced-features.md
 
-    - name: Onboarding Windows Server
+    - name: Permissions
       items:
-      - name: Onboarding Windows Server overview
-        href: onboard-windows-server.md
-      - name: Onboard Windows Server 2012 R2, 2016, Semi-Annual Channel, 2019, and 2022
-        href: configure-server-endpoints.md
-      - name: Onboard Windows devices using Configuration Manager
-        href: configure-endpoints-sccm.md
-      - name: Onboard Windows devices using Group Policy
-        href: configure-endpoints-gp.md
-      - name: Onboard Windows devices using a local script
-        href: configure-endpoints-script.md
-      - name: Onboard non-persistent virtual desktop infrastructure (VDI) devices
-        href: configure-endpoints-vdi.md
+      - name: Use basic permissions to access the portal
+        href: basic-permissions.md
+      - name: Assign user access to the portal
+        href: assign-portal-access.md
+      - name: Manage portal access using RBAC
+        href: rbac.md
+        items:
+        - name: Create and manage roles
+          href: user-roles.md
+        - name: Create and manage device groups
+          href: machine-groups.md
+        - name: Create and manage device tags
+          ref: machine-tags.md
 
-
-    - name: Microsoft Defender for Endpoint on other platforms
+    - name: Rules
       items:
-      - name: Onboard non-Windows devices
-        href: configure-endpoints-non-windows.md
-      - name: Microsoft Defender for Endpoint on macOS
+      - name: Manage suppression rules
+        href: manage-suppression-rules.md
+      - name: Create indicators
+        href: manage-indicators.md
         items:
-        - name: Deploy
-          items:
-          - name: Deployment with Microsoft Intune
-            href: mac-install-with-intune.md
-          - name: JAMF Pro-based deployment
-            items:
-            - name: Deploying Microsoft Defender for Endpoint on macOS using Jamf Pro
-              href: mac-install-with-jamf.md
-            - name: Log in to Jamf Pro
-              href: mac-install-jamfpro-login.md
-            - name: Set up device groups
-              href: mac-jamfpro-device-groups.md
-            - name: Set up policies
-              href: mac-jamfpro-policies.md
-            - name: Enroll devices
-              href: mac-jamfpro-enroll-devices.md
-                
-          - name: Deployment with Mobile Device Management (MDM) systems
-            href: mac-install-with-other-mdm.md
-          - name: Manual deployment
-            href: mac-install-manually.md
-        - name: Update
-          href: mac-updates.md
-
-      - name: Microsoft Defender for Endpoint on Linux
-        items:
-        - name: Deploy
-          items:
-          - name: Puppet based deployment
-            href: linux-install-with-puppet.md
-          - name: Ansible based deployment
-            href: linux-install-with-ansible.md
-          - name: Chef based deployment
-            href: linux-deploy-defender-for-endpoint-with-chef.md
-          - name: Manual deployment
-            href: linux-install-manually.md
-          - name: Saltstack-based deployment
-            href: linux-install-with-saltack.md
-            
-          
-        - name: Update
-          href: linux-updates.md
-
-      - name: Mobile Threat Defense
-        items:
-        - name: Mobile Threat Defense Overview
-          href: mtd.md
-        - name: Deploy
-          items:
-          - name: Deployment on Android with Microsoft Intune
-            href: android-intune.md
-          - name: Deployment on iOS via Microsoft Intune
-            href: ios-install.md
-          - name: Deployment on iOS with Mobile Application Manager
-            href: ios-install-unmanaged.md
-
-    - name: Integration with Microsoft Defender for Cloud
-      href: azure-server-integration.md
-    - name: Run a detection test on a newly onboarded Microsoft Defender for Endpoint
-      href: run-detection-test.md
-    - name: Run simulated attacks on devices
-      href: attack-simulations.md
-    - name: Onboard devices without Internet access
-      href: onboard-offline-machines.md
-    - name: Configure proxy and Internet connectivity settings
-      href: configure-proxy-internet.md
-
-    - name: Configure Microsoft Defender for Endpoint on macOS
-      items:
-      - name: Configure and validate exclusions
-        href: mac-exclusions.md
-      - name: Set preferences
-        href: mac-preferences.md
-      - name: Detect and block Potentially Unwanted Applications
-        href: mac-pua.md
-      - name: Protect macOS security settings using tamper protection
-        href: tamperprotection-macos.md
-      - name: Device control
-        items:
-        - name: Device control overview
-          href: mac-device-control-overview.md
-        - name: JAMF examples
-          href: mac-device-control-jamf.md
-        - name: Intune examples
-          href: mac-device-control-intune.md
-        - name: macOS Device Control frequently asked questions (FAQ)
-          href: mac-device-control-faq.md
-
-      - name: Schedule scans
-        href: mac-schedule-scan.md
-
-    - name: Configure Microsoft Defender for Endpoint on Linux
-      items:
-      - name: Configure and validate exclusions
-        href: linux-exclusions.md
-      - name: Static proxy configuration
-        href: linux-static-proxy-configuration.md
-      - name: Set preferences
-        href: linux-preferences.md
-      - name: Detect and block Potentially Unwanted Applications
-        href: linux-pua.md
-      - name: Schedule scans with Microsoft Defender for Endpoint on Linux
-        href: linux-schedule-scan-mde.md
-      - name: Schedule antivirus scan in Defender for Endpoint on Linux
-        href: schedule-antivirus-scan-in-mde.md
-      - name: Schedule an update of the Microsoft Defender for Endpoint (Linux)
-        href: linux-update-MDE-Linux.md
-
-    - name: Configure Mobile Threat Defense
-      items:
-      - name: Configure Microsoft Defender for Endpoint on Android features
-        href: android-configure.md
-      - name: Configure Microsoft Defender for Endpoint on Android risk signals using app protection policy
-        href: android-configure-mam.md
-      - name: Configure Microsoft Defender for Endpoint on iOS features
-        href: ios-configure-features.md
-
-    - name: Create an onboarding or offboarding notification rule
-      href: onboarding-notification.md
-
-    - name: Manage Microsoft Defender for Endpoint configuration settings on devices with Microsoft Intune
-      href: security-config-management.md
-
-    - name: Manage Defender for Endpoint P1/P2 across devices
-      href: defender-endpoint-subscription-settings.md
-
-    - name: Configure portal settings
-      items:
-      - name: Configure general Defender for Endpoint settings
-        href: preferences-setup.md
-      - name: General
-        items:
-        - name: Configure alert notifications
-          href: ../defender/configure-email-notifications.md
-        - name: Configure vulnerability email notifications
-          href: configure-vulnerability-email-notifications.md
-        - name: Configure advanced features
-          href: advanced-features.md
-
-      - name: Permissions
-        items:
-        - name: Use basic permissions to access the portal
-          href: basic-permissions.md
-        - name: Assign user access to the portal
-          href: assign-portal-access.md
-        - name: Manage portal access using RBAC
-          href: rbac.md
-          items:
-          - name: Create and manage roles
-            href: user-roles.md
-          - name: Create and manage device groups
-            href: machine-groups.md
-          - name: Create and manage device tags
-            href: machine-tags.md
-
-      - name: Rules
-        items:
-        - name: Manage suppression rules
-          href: manage-suppression-rules.md
-        - name: Create indicators
-          href: manage-indicators.md
-          items:
-          - name: Create indicators for files
-            href: indicator-file.md
-          - name: Create indicators for IPs and URLs/domains
-            href: indicator-ip-domain.md
-          - name: Create indicators for certificates
-            href: indicator-certificates.md
-          - name: Manage indicators
-            href: indicator-manage.md
+        - name: Create indicators for files
+          href: indicator-file.md
+        - name: Create indicators for IPs and URLs/domains
+          href: indicator-ip-domain.md
+        - name: Create indicators for certificates
+          href: indicator-certificates.md
+        - name: Manage indicators
+          href: indicator-manage.md
         - name: Manage automation file uploads
           href: manage-automation-file-uploads.md
         - name: Manage automation folder exclusions
           href: manage-automation-folder-exclusions.md
 
-      - name: Device management
-        items:
+    - name: Device management
+      items:
         - name: Onboarding devices
-          href: onboard-configure.md
+          href: onboarding.md
         - name: Offboarding devices
           href: offboard-machines.md
         - name: Ensure your devices are configured properly
@@ -376,9 +381,8 @@
         - name: Monitor and increase device onboarding
           href: configure-machines-onboarding.md
 
-
-      - name: Configure time zone settings
-        href: time-settings.md
+    - name: Configure time zone settings
+      href: time-settings.md
 
   - name: Detect threats and protect endpoints
     items:
@@ -392,8 +396,6 @@
         href: device-discovery.md
       - name: Configure device discovery
         href: configure-device-discovery.md
-      - name: Enable Corelight as a data source
-        href: corelight-integration.md
       - name: Enterprise IoT security
         items:
         - name: Securing IoT devices in the enterprise
@@ -634,6 +636,27 @@
           href: manage-gradual-rollout.md
         - name: Configure gradual rollout process for Microsoft Defender updates
           href: configure-updates.md
+        - name: Ring deployment
+          items:
+          - name: Overview
+            href: microsoft-defender-antivirus-ring-deployment.md
+          - name: Intune and Microsoft Update
+            href: microsoft-defender-antivirus-ring-deployment-intune-microsoft-update.md
+          - name: Configuration Manager and WSUS
+            href: microsoft-defender-antivirus-ring-deployment-sscm-wsus.md
+          - name: Group Policy and Microsoft Update
+            href: microsoft-defender-antivirus-ring-deployment-group-policy-microsoft-update.md
+          - name: Group Policy and network share
+            href: microsoft-defender-antivirus-ring-deployment-group-policy-network-share.md
+          - name: Group Policy and WSUS
+            items:
+            - name: Pilot ring
+              href: microsoft-defender-antivirus-pilot-ring-deployment-group-policy-wsus.md
+            - name: Production ring
+              href: microsoft-defender-antivirus-production-ring-deployment-group-policy-wsus.md
+            - name: Appendices for ring deployment using Group Policy and Windows Server Update Services (WSUS)
+              href: microsoft-defender-antivirus-ring-deployment-group-policy-wsus-appendices.md
+
         - name: Manage Microsoft Defender Antivirus updates and scans for endpoints that are out of date
           href: manage-outdated-endpoints-microsoft-defender-antivirus.md
         - name: Manage event-based forced updates
@@ -744,6 +767,8 @@
     - name: Manage device configuration
       items:
 
+      - name: Manage endpoint security policies
+        href: manage-security-policies.md
       - name: Increase compliance with the security baseline
         href: configure-machines-security-baseline.md
       - name: Optimize attack surface reduction rule deployment and detections
@@ -904,9 +929,6 @@
     items:
     - name: Understand threat intelligence concepts
       href: threat-indicator-concepts.md
-    - name: Advanced deployment guidance - Microsoft Defender for Endpoint on Linux
-      href: comprehensive-guidance-on-linux-deployment.md
-
     - name: Configure integration with other Microsoft solutions
       items:
       - name: Configure conditional access
@@ -1063,6 +1085,8 @@
             - name: Delete Indicator
               href: delete-ti-indicator-by-id.md
 
+            - name: Batch Delete Indicators
+              href: batch-delete-ti-indicators.md
           - name: Information gathering
             items:
             - name: Export information gathering assessment
@@ -1328,20 +1352,9 @@
     - name: Access the Microsoft Defender for Endpoint Community Center
       href: community.md
 
-    - name: Privacy for Microsoft Defender for Endpoint on macOS
-      href: mac-privacy.md
-    - name: Privacy for Microsoft Defender for Endpoint on Linux
-      href: linux-privacy.md
-    - name: Privacy for Microsoft Defender for Endpoint on Android
-      href: android-privacy.md
-    - name: Privacy for Microsoft Defender for Endpoint on iOS
-      href: ios-privacy.md
     - name: Helpful resources
       href: helpful-resources.md
-    - name: Resources for Microsoft Defender for Endpoint on macOS
-      href: mac-resources.md
-    - name: Resources for Microsoft Defender for Endpoint on Linux
-      href: linux-resources.md
+
 
   - name: Troubleshoot
     items:

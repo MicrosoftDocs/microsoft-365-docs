@@ -10,6 +10,8 @@ ms.subservice: mde
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
+ms.custom:
+  - has-azure-ad-ps-ref
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -87,3 +89,4 @@ For more information, see [Assign administrator and non-administrator roles to u
 ## Related topic
 
 - [Manage portal access using RBAC](rbac.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

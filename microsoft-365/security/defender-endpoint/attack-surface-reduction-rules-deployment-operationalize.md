@@ -1,11 +1,6 @@
 ---
 title: Operationalize attack surface reduction (ASR) rules
 description: Provides guidance to operationalize your attack surface reduction rules deployment.
-keywords: Attack surface reduction (ASR) rules deployment, Microsoft ASR, manage defender ASR rules, monitor asr rules, asr rules advanced hunting, ASR rules report, asr rules false positives, configure ASR, host intrusion prevention system, protection rules, anti-exploit rules, anti-exploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules
-search.product: eADQiWindows 10XVcnh
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
@@ -21,7 +16,7 @@ ms.collection:
  - m365solution-asr-rules
  - highpri
  - tier1
-ms.date: 02/10/2023
+ms.date: 08/29/2023
 search.appverid: met150
 ---
 
@@ -60,7 +55,7 @@ ASR events shown in the advancing hunting portal are throttled to unique process
 DeviceEvents
 | where Timestamp > ago(30d)
 | where ActionType startswith "Asr"
-| summarize EventCount=counst() by ActionType
+| summarize EventCount=count() by ActionType
 ```
 
 > [!div class="mx-imgBorder"]
@@ -100,3 +95,4 @@ For more information about hunting options, see: [Demystifying attack surface re
 [Enable attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-implement.md)
 
 [Attack surface reduction (ASR) rules reference](attack-surface-reduction-rules-reference.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

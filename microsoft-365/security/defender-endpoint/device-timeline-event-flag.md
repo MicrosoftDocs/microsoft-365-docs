@@ -154,3 +154,4 @@ While navigating the device timeline, you can search and filter for specific eve
 You can apply additional filters by clicking on the time bar. This will only show events prior to the flagged event.  
 
 :::image type="content" source="images/device-flag-filter.png" alt-text="Screenshot that shows the device timeline flag with the filter switched on." lightbox="images/device-flag-filter.png":::
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
