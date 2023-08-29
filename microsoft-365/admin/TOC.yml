@@ -461,8 +461,6 @@
           href: security-and-compliance/increase-threat-protection.md
         - name: Turn on Idle session timeout
           href: manage/idle-session-timeout-web-apps.md
-        - name: Enable Modern Authentication for Office 2013
-          href: security-and-compliance/enable-modern-authentication.md
         - name: A guide to GDPR compliance
           href: security-and-compliance/gdpr-compliance.md
     - name: Manage devices and app data

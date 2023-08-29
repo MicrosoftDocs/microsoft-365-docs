@@ -348,7 +348,7 @@
         - name: Create and manage device groups
           href: machine-groups.md
         - name: Create and manage device tags
-          ref: machine-tags.md
+          href: machine-tags.md
 
     - name: Rules
       items:

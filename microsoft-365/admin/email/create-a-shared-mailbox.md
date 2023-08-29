@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: sharik
 author: SKjerland
 manager: scotv
-ms.date: 02/18/2020
+ms.date: 08/21/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -31,16 +31,16 @@ ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: "Create a shared mailbox to enable multiple users in your business to share the responsibility of reading and answering email sent to one address."
 ---
 
-# Create a shared mailbox 
+# Create a shared mailbox
 
 > [!NOTE]
 > If your organization uses a hybrid Exchange environment, you should use the on-premises <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a> to create and manage shared mailboxes. See [Create shared mailboxes in the Exchange admin center](/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?preserve-view=true.&view=exchserver-2019)
 >
-> If you're not sure if you should create a shared mailbox or a Microsoft 365 group for Outlook, see [Compare groups](../create-groups/compare-groups.md) for some guidance. Note that currently, it's not possible to migrate a shared mailbox to a Microsoft 365 group. If this is something you want, let us know by [voting here](https://go.microsoft.com/fwlink/?linkid=871518).
+> If you're not sure if you should create a shared mailbox or a Microsoft 365 group for Outlook, see [Compare groups](../create-groups/compare-groups.md) for some guidance. It's not possible to migrate a shared mailbox to a Microsoft 365 group.
 
-It's easy to create shared mailboxes so a group of people can monitor and send email from a common email addresses, like info@contoso.com. When a person in the group replies to a message sent to the shared mailbox, the email appears to be from the shared mailbox, not from the individual user.
+Create shared mailboxes so a group of people can monitor and send email from a common email addresses, like info@contoso.com. When a person in the group replies to a message sent to the shared mailbox, the email appears to be from the shared mailbox, not from the individual user.
 
-Shared mailboxes include a shared calendar. A lot of small businesses like to use the shared calendar as a place for everyone to enter their appointments. For example, if you have 3 people who do customer visits, all can use the shared calendar to enter the appointments. This is an easy way to keep everyone informed where people are.
+Shared mailboxes include a shared calendar. Your team can use the shared calendar as a place for everyone to enter their appointments. For example, if you have 3 people who do customer visits, all can use the shared calendar to enter the customer visit information.
 
 Before creating a shared mailbox, be sure to read [About shared mailboxes](about-shared-mailboxes.md) for more information.
 
@@ -49,7 +49,7 @@ Before creating a shared mailbox, be sure to read [About shared mailboxes](about
 
 ## Create a shared mailbox and add members
   
-1. Sign in with a global admin account or Exchange admin account. If you get the message "**You don't have permission to access this page or perform this action**," then you aren't an admin. 
+1. Sign in with a global admin account or Exchange admin account. If you get the message "**You don't have permission to access this page or perform this action**," then you aren't an admin.
 
 ::: moniker range="o365-worldwide"
 
@@ -64,20 +64,12 @@ Before creating a shared mailbox, be sure to read [About shared mailboxes](about
 ::: moniker-end
     
 3. On the **Shared mailboxes** page, select **+ Add a shared mailbox**. Enter a name for the shared mailbox. This chooses the email address, but you can edit it if needed.
-    
-    ![Name your shared mailbox.](../../media/e3035132-8986-4ec7-b7c0-f2752080d2c0.png)
   
 4. Select **Save changes**. It may take a few minutes before you can add members.
 
 5. Under **Next steps**, select **Add members to this mailbox**. Members are the people who will be able to view the incoming mail to this shared mailbox, and the outgoing replies.
 
-   ![Select Add Members.](../../media/a2a72e3d-6170-40fe-a94f-0af8fbef8ab2.png)
-
-6. Select the **+Add members** button. Put a check mark next to the people who you want to use this shared mailbox, and then select **Save**.
-
-   ![Assign members to the shared mailbox.](../../media/e6c58953-f6d7-4f0b-97ba-308516bf2a94.png)
-
-7. Select **Close**.
+6. Select the **Add members** button. Select the people who you want to use this shared mailbox, and then select **Add**. and then **Close**.
 
 You have a shared mailbox and it includes a shared calendar. Go on to the next step: [Block sign-in for the shared mailbox account](#block-sign-in-for-the-shared-mailbox-account).
 
@@ -107,7 +99,6 @@ You can use the following permissions with a shared mailbox:
 
 4. Select **Save** to save your changes.
 
-
 ## Block sign-in for the shared mailbox account
 
 Every shared mailbox has a corresponding user account. Notice how you weren't asked to provide a password when you created the shared mailbox? The account has a password, but it's system-generated (unknown). You aren't supposed to use the account to log in to the shared mailbox.
@@ -127,18 +118,18 @@ But what if an admin simply resets the password of the shared mailbox user accou
 
 2. In the list of user accounts, find the account for the shared mailbox (for example, change the filter to **Unlicensed users**).
 
-3. Select the user to open their properties pane, and then select the **Block this user** icon ![Screen shot of the Block this user icon.](../../media/block-user-icon.png).
+3. Select the user to open their properties pane, and then select **Block sign-in**.
 
    > [!NOTE]
    > If the account is already blocked, **Sign in blocked** will appear at the top and the icon will read **Unblock this user**.
 
-4. In the **Block this user?** pane, select **Block the user from signing in**, and then select **Save changes**.
+4. On the **Block sign-in** page, select **Block the user from signing in**, and then select **Save changes**.
 
 For instructions on how to block sign-in for accounts using Azure AD PowerShell (including many accounts at the same time), see [Block Microsoft 365 user accounts with PowerShell](../../enterprise/block-user-accounts-with-microsoft-365-powershell.md).
 
 ## Add the shared mailbox to Outlook
 
-If you have automapping enabled in your business (by default, most people do), the shared mailbox will appear in your user's Outlook app automatically after they close and restart Outlook. 
+If you have automapping enabled in your business (by default, most people do), the shared mailbox will appear in your user's Outlook app automatically after they close and restart Outlook.
 
 Automapping is set on the user's mailbox, not the shared mailbox. This means if you try to use a security group to manage who has access to the shared mailbox, automapping won't work. So, if you want automapping, you have to assign permissions explicitly. Automapping is on by default. To learn how to turn it off, see [Remove automapping for a shared mailbox](/office365/troubleshoot/administration/remove-automapping-for-shared-mailbox).
 
@@ -157,14 +148,14 @@ To learn more about shared mailboxes in Outlook, see:
 ## Use a shared mailbox on a mobile device (phone or tablet)
 
 You can access a shared mailbox on a mobile device in two ways:
-- Add the shared mailbox in the <a href="https://apps.apple.com/us/app/microsoft-outlook/id951937596" target="_blank">Outlook for iOS app</a> or the <a href="https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en_US" target="_blank">Outlook for Android mobile app</a>. 
-    
+- Add the shared mailbox in the <a href="https://apps.apple.com/us/app/microsoft-outlook/id951937596" target="_blank">Outlook for iOS app</a> or the <a href="https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en_US" target="_blank">Outlook for Android mobile app</a>.
+
     For instructions, see <a href="https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">Add a shared mailbox to Outlook mobile</a>.
 
 - Open your browser, sign in, and then go to Outlook on the web. From Outlook on the web you'll be able to access the shared mailbox.
 
     For instructions, see <a href="https://support.microsoft.com/office/98b5a90d-4e38-415d-a030-f09a4cd28207" target="_blank">Add a shared mailbox to Outlook on the web</a>.
-    
+
 > [!NOTE]
 > Shared mailbox can only be added to Outlook for iOS app or the Outlook for Android mobile app
 
@@ -174,7 +165,7 @@ When you created the shared mailbox, you automatically created a shared calendar
 
 1. In the Outlook app, go to calendar view, and select the shared mailbox.
 
-2. When you enter appointments, everyone who is a member of the shared mailbox will be able to see them.
+2. When you enter meetings or appointments, everyone who is a member of the shared mailbox will be able to see them.
 
 3. Any member of the shared mailbox can create, view, and manage appointments on the calendar, just like they would their personal appointments. Everyone who is a member of shared mailbox can see their changes to the shared calendar.
 
