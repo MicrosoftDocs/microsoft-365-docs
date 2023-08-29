@@ -55,6 +55,6 @@ The following table lists all overrides, a description of what that override mea
 
 ## Next Steps
 
-You can find a similar detailed table covering all the different detection technologies at [aka.ms/emailtech](/microsoft-365/security/office-365-security/step-by-step-guides/understand-detection-technology-in-email-entity)
+You can find a similar detailed table covering all the different detection technologies at [aka.ms/emailtech](/microsoft-365/security/office-365-security/step-by-step-guides/understand-detection-technology-in-email-entity).
 
 
