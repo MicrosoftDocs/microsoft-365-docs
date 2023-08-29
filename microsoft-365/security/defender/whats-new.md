@@ -47,9 +47,9 @@ You can also get product updates and important notifications through the [messag
 - The **Guided response** feature in Microsoft Defender Experts for XDR has been renamed to **[Managed response](start-using-mdex-xdr.md#how-to-use-managed-response-in-microsoft-365-defender)**. We have also added a [new FAQ section](faq-incident-notifications-xdr.md#understanding-and-managing-defender-experts-for-xdr-incident-updates) on incident updates.
 
 ## July 2023
+
 - (GA) The [Attack story](investigate-incidents.md#attack-story) in incidents is now generally available. The attack story provides the full story of the attack and allows incident response teams to view the details and apply remediation.
 - A new URL and domain page is now available in Microsoft 365 Defender. The updated URL and domain page provides a single place to view all the information about a URL or a domain, including its reputation, the users who clicked it, the devices that accessed it, and emails where the URL or domain was seen. For details, see [Investigate URLs in Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/investigate-domain).
-
 
 ## June 2023
 
