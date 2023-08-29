@@ -63,7 +63,7 @@ If the workload is active, by removing the role all assigned user permission wil
 
 ## Export roles
 
-The Export feature allows you to export the following roles data from **Permissions and Roles** page:
+The Export feature enables you to export the following roles data:
 
 - Role name
 - Included permissions
