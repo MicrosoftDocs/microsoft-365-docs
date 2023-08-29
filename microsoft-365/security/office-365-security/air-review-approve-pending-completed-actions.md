@@ -64,6 +64,9 @@ There are four different ways to find and take auto investigation actions:
    - Select **Open investigation page** to view more details about the investigation.
    - Select **Approve** to initiate a pending action.
    - Select **Reject** to prevent a pending action from being taken.
+  
+> [!NOTE]
+> Pending actions time out after awaiting approval for one week.
 
 ## Investigation and remediation investigations queue
 
