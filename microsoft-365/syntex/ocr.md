@@ -21,7 +21,7 @@ description: Learn how to set up and manage optical character recognition in Mic
 
 The optical character recognition (OCR) service for Microsoft Syntex is set up in the Microsoft 365 admin center.
 
-Before you configure the OCR service, read the [Syntex OCR preview terms and conditions](ocr-preview-terms).
+Before you configure the OCR service, read the [Syntex OCR preview terms and conditions](ocr-preview-terms.md).
 
 ## Prerequisites
 
