@@ -60,7 +60,7 @@ ASR events shown in the advancing hunting portal are throttled to unique process
 DeviceEvents
 | where Timestamp > ago(30d)
 | where ActionType startswith "Asr"
-| summarize EventCount=counst() by ActionType
+| summarize EventCount=count() by ActionType
 ```
 
 > [!div class="mx-imgBorder"]
