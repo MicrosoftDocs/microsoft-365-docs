@@ -159,8 +159,6 @@ The limitations in this section doesn't apply to claims arising from or in conne
 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**Attachment 1 – GDPR Terms**
 
-<p style="text-align: center;">**Attachment 1 – GDPR Terms**</p>
-
 For purposes of these GDPR Terms, Company and Microsoft agree that Company is the controller of Personal Data and Microsoft is the processor of such data, except when Company acts as a processor of Personal Data, in which case Microsoft is a subprocessor. These GDPR Terms apply to the processing of Personal Data, within the scope of the GDPR, by Microsoft on behalf of Company. These GDPR Terms don't limit or reduce any data protection commitments Microsoft makes to Company in other agreements between Microsoft and Company. These GDPR Terms don't apply where Microsoft is a controller of Personal Data.
 
 **Relevant GDPR Obligations: Articles 28, 32, and 33**
