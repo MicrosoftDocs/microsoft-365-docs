@@ -283,7 +283,7 @@ sections:
 
           For MSPs who manage services for SMB customers and who need a full set of capabilities spanning security, identity, and management of Microsoft 365 applications in a single portal, we continue to recommend Microsoft 365 Lighthouse.  Lighthouse includes a broader set of capabilities optimized for MSPs, particularly those using Microsoft 365 Business Premium and Defender for Business.
 
-          The following table provides a detailed comparison between Microsoft 365 Lighthouse and the multitenant organization capabilities in Microsoft 365 Defender.
+          The following table provides a comparison between Microsoft 365 Lighthouse and the multitenant organization capabilities in Microsoft 365 Defender.
 
           |                  |Microsoft 365 Lighthouse |Multitenant organization capabilities in Microsoft 365 Defender |
           |------------------|---------|--------|
