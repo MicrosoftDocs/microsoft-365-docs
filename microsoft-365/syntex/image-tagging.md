@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 description: Learn how to use image tagging to search, sort, filter, and manage images in  Microsoft Syntex.
 ---
 
-# Find and manage images using image tagging in Microsoft Syntex
+# Find and manage images using enhanced image tagging in Microsoft Syntex
 
 Before you can use image tagging, you need to enable it in a document library. There are two methods you can use to do this:
 
