@@ -19,7 +19,7 @@ ms.collection:
 
 # Data Residency support for Microsoft Purview
 
-This article lists the Data Residency commitments (available with the Advanced Data Residency add-on) for the supported Microsoft Purview set of services and solutions.
+This article lists the Data Residency commitments (available with the Advanced Data Residency add-on) for supported Microsoft Purview services and solutions.
 
 The required conditions for the related commitments for the services described below are:
 
