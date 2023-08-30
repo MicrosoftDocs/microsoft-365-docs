@@ -100,6 +100,7 @@
         },
       "titleSuffix": {
         "compliance/**/*.md": "Microsoft Purview (compliance)",
+        "copilot/**/*.md": "Microsoft 365 Copilot",
         "security/mtp/**/*.md": "Microsoft 365 security",
         "managed-desktop/**/*.md": "Microsoft Managed Desktop",
         "enterprise/**/*.md": "Microsoft 365 Enterprise",
