@@ -37,11 +37,11 @@ To be productive, people need to communicate and collaborate with one another. T
 
 ## Keep people connected with Microsoft Teams
 
-Teams with Microsoft Teams allows your organization to chat, meet, call, and collaborate all in one place. Millions of people get their work done with teams every day because it brings together everything you need to work on-site or remotely into a hub for teamwork. 
+Teams with Microsoft Teams allows your organization to chat, meet, call, and collaborate all in one place. Millions of people get their work done with teams every day because it brings together everything you need to work on-site or remotely into a hub for teamwork.
 
-For detailed guidance, see [Support remote workers using Microsoft Teams](/microsoftteams/support-remote-work-with-teams). 
+For detailed guidance, see [Support remote workers using Microsoft Teams](/microsoftteams/support-remote-work-with-teams).
 
-Watch the [Enabling hybrid work with Microsoft Teams webcasts](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/) for guidance and demos on using Teams for hybrid work.
+Read [Enabling hybrid work with Microsoft 365 and collaborative apps](https://www.microsoft.com/en-us/microsoft-365/blog/2022/07/19/from-enabling-hybrid-work-to-creating-collaborative-experiences-heres-whats-new-in-microsoft-365/) for guidance and demos on using Teams for hybrid work.
 
 ### Chat and conversations
 
