@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.reviewer: shrganguly
-ms.date: 08/01/2023
+ms.date: 08/30/2023
 ms.topic: conceptual
 ms.service: microsoft-syntex
 ms.custom: admindeeplinkMAC, setup
