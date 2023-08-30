@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
-ms.date: 02/25/2020
+ms.date: 08/30/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -91,7 +91,7 @@ You can continue to manage access to Office add-ins and Teams apps via the follo
 - Exchange admin center for Outlook Add-ins
 - Teams admin center for Teams Apps
 
-You can continue to deploy [Office Add-ins via Integrated Apps](/microsoft-365/admin/manage/test-and-deploy-microsoft-365-apps.md#deploy-an-office-add-in-using-the-admin-center) and [Teams Apps via Teams admin center](/microsoftteams/manage-apps).
+You can continue to deploy [Deploy and manage Office Add-ins](/microsoft-365/admin/manage/office-addins) and [Teams Apps via Teams admin center](/microsoftteams/manage-apps).
 
 ## Frequently asked questions
 
@@ -101,7 +101,7 @@ Only Global Admins, Azure Application Admins and Exchange admins can access Inte
 
 - Global admins can edit all controls for all apps and add-ins in Integrated Apps
 - Azure Application admins can edit controls for Teams apps that work on Outlook and the Microsoft 365 app and Office/Outlook add-ins
-- Exchange Admins can edit any controls for Outlook add-ins.
+- Exchange Admins can edit any controls for Outlook add-ins deployed by them.
 
 Integrated apps won't show up in the left nav for other administrators.
 
