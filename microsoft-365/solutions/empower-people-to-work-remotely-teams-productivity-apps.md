@@ -89,7 +89,6 @@ For more information, see the [Deployment guide for Microsoft 365 Apps](/deployo
 ## Admin technical resources for productivity apps and services
 
 - [Support remote workers using Microsoft Teams](/microsoftteams/support-remote-work-with-teams)
-- [Enabling hybrid work with Microsoft Teams webcasts](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/)
 - [Teams Customer Success Kit download](https://www.microsoft.com/download/details.aspx?id=54244)
 - [Tools for driving Teams adoption](/microsoftteams/adopt-tools-and-downloads) 
 - [Create a change management strategy for Microsoft Teams](/MicrosoftTeams/change-management-strategy)
