@@ -46,7 +46,7 @@ Exclusions can be useful to avoid incorrect detections on files or software that
 
 ## Supported exclusion types
 
-The follow table shows the exclusion types supported by Defender for Endpoint on Linux.
+The following table shows the exclusion types supported by Defender for Endpoint on Linux.
 
 Exclusion|Definition|Examples
 ---|---|---

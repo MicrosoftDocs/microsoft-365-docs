@@ -91,7 +91,7 @@ Set up a network file share (UNC/mapped drive) to download security intelligence
     MD C:\Temp\TempSigs\x86
     ```
 
-3. Setup a PowerShell script, `CopySignatures.ps1`
+3. Set up a PowerShell script, `CopySignatures.ps1`
 
    Copy-Item -Path “\\SourceServer\Sourcefolder”  -Destination “\\TargetServer\Targetfolder”
 
