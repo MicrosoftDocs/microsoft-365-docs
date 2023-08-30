@@ -1,5 +1,5 @@
 ---
-title: Find and manage images using image tagging in Microsoft Syntex
+title: Find and manage images using enhanced image tagging in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -14,7 +14,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority: medium
-description: Learn how to use image tagging to search, sort, filter, and manage images in  Microsoft Syntex.
+description: Learn how to use enhacnced image tagging to search, sort, filter, and manage images in  Microsoft Syntex.
 ---
 
 # Find and manage images using enhanced image tagging in Microsoft Syntex
