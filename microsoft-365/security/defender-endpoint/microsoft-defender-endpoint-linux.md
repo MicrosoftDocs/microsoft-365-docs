@@ -148,7 +148,7 @@ If you experience any installation failures, refer to [Troubleshooting installat
    > After a new package version is released, support for the previous two versions is reduced to technical support only. Versions older than that which are listed in this section are provided for technical upgrade support only.
 
   > [!CAUTION]
-  > Running Defender for Endpoint on Linux side by side with other `fanotify`-based security solutions is not supported. It can lead to unpredictable results, including hanging the operating system.
+  > Running Defender for Endpoint on Linux side by side with other `fanotify`-based security solutions is not supported. It can lead to unpredictable results, including hanging the operating system. If there are any other applications on the system which use fanotify in blocking mode we will display the applications in the "conflicting_applications" field of the "mdatp health" command output. The Linux **FAPolicyD** feature uses fanotify in blocking mode and is therefore unsupported when running Defender for Endpoint in active mode.
 
 - Disk space: 2 GB
 
