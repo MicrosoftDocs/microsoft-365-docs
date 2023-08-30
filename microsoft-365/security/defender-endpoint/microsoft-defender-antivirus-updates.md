@@ -104,7 +104,7 @@ All our updates contain
 ### What's new
 
 - Fixed an issue where Microsoft Defender Antivirus switched from [passive mode to active mode](microsoft-defender-antivirus-windows.md#comparing-active-mode-passive-mode-and-disabled-mode) following an update on Windows Server 2016 and Windows Server 2012 R2 [onboarded using the modern, unified client](configure-server-endpoints.md)
-- Fixed an issue where [exclusions](defender-endpoint-antivirus-exclusions.md) were not applied correctly using [gpupdate](/windows-server/administration/windows-commands/gpupdate) when registry policy processing was set to process even if the Group Policy Objects did not change
+- Fixed an issue where [exclusions](defender-endpoint-antivirus-exclusions.md) were not applied correctly using [gpupdate](/windows-server/administration/windows-commands/gpupdate) when registry policy processing was set to process even if Group Policy Objects did not change
 - Excluded IP addresses can now be configured using [Intune](/windows/client-management/mdm/defender-csp#configurationexcludedipaddresses)
 - Improved [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) on Windows Server 2016
 - [DisableFtpParsing](/windows/client-management/mdm/defender-csp#configurationdisableftpparsing) can now be configured through [Set-MpPreference](/powershell/module/defender/set-mppreference)
