@@ -1395,6 +1395,19 @@
         href: mac-support-kext.md
       - name: Troubleshoot license issues
         href: mac-support-license.md
+      - name: Troubleshoot system extention issues
+        href: mac-support-sys-ext.md
+        items:
+        - name: Intune
+          href: manage-profiles-approve-sys-extensions-intune.md
+        - name: JamF
+          href: manage-sys-extensions-using-jamf.md
+        - name: Other MDM
+          href: manage-sys-extensions-other-mdm.md
+        - name: Manual deployment
+          href: manage-sys-extensions-manual-deployment.md
+
+
 
     - name: Troubleshoot Microsoft Defender for Endpoint on Linux
       items:
