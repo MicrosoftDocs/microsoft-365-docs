@@ -1,7 +1,7 @@
 ### YamlMime:Hub
 
 title: Microsoft 365 Copilot documentation # < 60 chars
-summary: summary # < 160 chars
+summary: Learn about Microsoft 365 Copilot and how your organization can use this copilot for work. # < 160 chars
 brand: m365 # brand: aspnet | azure | bash | bizapps | bot-framework | dotnet | dynamics | education | enterprise-mobility | gaming | graph | m365 | nuget | office | powershell | playfab | power-apps | power-automate | power-bi | power-platform | power-virtual-agents | project | sharepoint | sql | surface | system-center | teams | visual-studio | windows | workplace-analytics | xamarin
 
 metadata:
