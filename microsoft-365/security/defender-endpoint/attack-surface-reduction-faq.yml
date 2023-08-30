@@ -44,7 +44,7 @@ sections:
         answer: |
           The full set of ASR rules and features is only supported if you have an enterprise license for Windows 10 or Windows 11. A limited number of rules may work without an enterprise license. If you have Microsoft 365 Business, set Microsoft Defender Antivirus as your primary security solution, and enable the rules through PowerShell. Using ASR without an enterprise license isn't officially supported and you won't be able to use the full capabilities of ASR.
 
-          To learn more about Windows licensing, see [Windows 10 Licensing](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) and get the [Volume Licensing guide for Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf).
+          To learn more about Windows licensing, see [Windows 10 Licensing](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) and get the [Volume Licensing guide for Windows 10](https://www.microsoft.com/en-us/download/details.aspx?id=11091).
 
       - question: |
           Is ASR supported if I have an E3 license?
