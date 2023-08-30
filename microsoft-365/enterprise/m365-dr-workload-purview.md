@@ -17,7 +17,7 @@ ms.collection:
 - M365-subscription-management
 ---
 
-# Data Residency for Microsoft Purview
+# Data Residency support for Microsoft Purview
 
 Data residency commitments for the Purview set of services, as described below, are available with the Advanced Data Residency add-on.
 The required conditions for the related commitments for the services described below are:
