@@ -94,7 +94,7 @@ sudo python3 MicrosoftDefenderATPOnboardingLinuxServer.py
 ### Validation
 
 A. Check Network Protection has effect on always blocked sites:
-
+<!--These links are purposely blocked; will trigger as broken link--->
 - [http://www.smartscreentestratings2.net](http://www.smartscreentestratings2.net)
 - [https://www.smartscreentestratings2.net](https://www.smartscreentestratings2.net)
 

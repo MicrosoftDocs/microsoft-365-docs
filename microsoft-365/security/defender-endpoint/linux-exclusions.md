@@ -183,7 +183,7 @@ In the following Bash snippet, replace `test.txt` with a file that conforms to y
 curl -o test.txt https://www.eicar.org/download/eicar.com.txt
 ```
 
-If Defender for Endpoint on Linux reports malware, then the rule is not working. If there is no report of malware, and the downloaded file exists, then the exclusion is working. You can open the file to confirm that the contents are the same as what is described on the [EICAR test file website](http://2016.eicar.org/86-0-Intended-use.html).
+If Defender for Endpoint on Linux reports malware, then the rule is not working. If there is no report of malware, and the downloaded file exists, then the exclusion is working. You can open the file to confirm that the contents are the same as what is described on the [EICAR test file website](https://www.eicar.org/download-anti-malware-testfile/).
 
 If you do not have Internet access, you can create your own EICAR test file. Write the EICAR string to a new text file with the following Bash command:
 
