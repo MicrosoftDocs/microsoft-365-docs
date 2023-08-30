@@ -26,6 +26,9 @@ The required conditions for the related commitments for the services described b
 1. _Tenant_ has a valid Advanced Data Residency subscription for all users in the _Tenant_.
 1. The Purview service Customer Data is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_.
 
+> [!NOTE]
+> If a service or solution is not listed, there is currently no commitment for Advanced Data Residency. 
+
 ## Migration
 
 Customer Data supporting Purview services is closely aligned with the Exchange Online and SharePoint Online services, and the bulk of the data migrated, if required to fulfill the data residency commitments for the Purview services, will be handled by those services. In the cases where supporting Customer Data is maintained in an Azure Service, for example, the migration of that data is tied to the migration of the underlying Exchange Online/SharePoint Online data.
@@ -179,7 +182,7 @@ Commitment:
 
 Please refer to the [ADR Commitment page](m365-dr-commitments.md#information-protection---office-message-encryption) for the specific Customer Data at rest commitment for Information Protection - Office Message Encryption.
 
-### Insider Risk Management - Information Barriers
+### Risk and compliance - information barriers
 
 #### Summary
 
@@ -191,4 +194,4 @@ Capability summary: Microsoft Purview Information Barriers (IB) is a compliance 
 
 Commitment:
 
-Please refer to the [ADR Commitment page](m365-dr-commitments.md#insider-risk-management---information-barriers) for the specific Customer Data at rest commitment for Insider Risk Management - Information Barriers.
+Please refer to the [ADR Commitment page](m365-dr-commitments.md#insider-risk-management---information-barriers) for the specific Customer Data at rest commitment for IB.
