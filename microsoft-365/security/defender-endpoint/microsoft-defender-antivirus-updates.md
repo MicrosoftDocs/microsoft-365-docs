@@ -3,7 +3,7 @@ title: Microsoft Defender Antivirus security intelligence and product updates
 description: Manage how Microsoft Defender Antivirus receives protection and product updates.
 ms.service: microsoft-365-security
 ms.localizationpriority: high
-ms.date: 08/29/2023
+ms.date: 08/30/2023
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -93,11 +93,12 @@ All our updates contain
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 
-### August-2023 (Platform: 4.18.23080.2006)
+### August-2023 (Platform: 4.18.23080.2006 | Engine: 1.1.23080.2005)
 
-- Security intelligence update version: **1.395.1599.0**
+- Security intelligence update version: **1.397.x.x** (*version number coming soon*)
 - Released:  **August 29, 2023 (Platform)**
 - Platform: **4.18.23080.2006**
+- Engine: **1.1.23080.2005**
 - Support phase: **Security and Critical Updates**
 
 ### What's new
@@ -108,7 +109,6 @@ All our updates contain
 - Improved [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) on Windows Server 2016
 - [DisableFtpParsing](/windows/client-management/mdm/defender-csp#configurationdisableftpparsing) can now be configured through [Set-MpPreference](/powershell/module/defender/set-mppreference)
 - Fixed an issue where [device control](device-control-removable-storage-protection.md) policies were not applied correctly without a reboot following product updates
-- Fixed an issue in the attack surface reduction rule, [Block Win32 API calls from Office macros](attack-surface-reduction-rules-reference.md#block-win32-api-calls-from-office-macros), configured in warn mode where excluded files were incorrectly blocked until the next device reboot
 
 ### Known issues
 
