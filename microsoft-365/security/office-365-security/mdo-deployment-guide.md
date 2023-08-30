@@ -78,7 +78,9 @@ As you can probably imagine, a lot of security policies are available in EOP and
 
   Built-in protection in Defender for Office 365 is on by default to provides default Safe Attachments and Safe Links protection for all recipients. You can specify recipients exceptions to identify users who don't get the protection.
 
-  In Standard and Strict preset security policies in Defender for Office 365 organizations, you need to configure entries for user and domain impersonation protection. All other settings are locked into our recommended standard and strict values (many of which are the same). You can see the values in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md), and you can see the differences between Standard and Strict [here](preset-security-policies.md#policy-settings-in-preset-security-policies).
+  In Standard and Strict preset security policies in Defender for Office 365 organizations, you need to configure entries for user and domain impersonation protection. You can also configure exceptions for user and domain impersonation protection. All other settings are locked into our recommended standard and strict values (many of which are the same). You can see the values in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md), and you can see the differences between Standard and Strict [here](preset-security-policies.md#policy-settings-in-preset-security-policies).
+
+  As new protection capabilities are added to EOP and Defender for Office 365 or as the security landscape changes, the security policies in preset security policies are automatically updated to our recommended settings.
 
 - **Custom policies**: For most available security policies, you can create any number of custom policies. You can apply the policies to users using recipient conditions and exceptions (users, group members, or domains) and you can customize the settings.
 
@@ -100,6 +102,7 @@ The previous information and the security policies that are involved are summari
 |Protection on by default?|✔|⁴|✔|
 |Configure conditions/exceptions for protection?||✔⁵|✔|
 |Customize security settings?|✔|⁶|✔|
+|Protection settings automatically updated?||✔||
 
 ¹ There are no default entries in the IP Allow List or the IP Block List, so the default connection filter policy effectively does nothing unless you customize the settings.
 
@@ -111,34 +114,38 @@ The previous information and the security policies that are involved are summari
 
 ⁵ For the Built-in protection preset security policy, you can only configure exceptions for protection.
 
-⁶ The only customizable security settings in preset security policies are the entries for user impersonation protection and domain impersonation protection in the Standard and Strict preset security policies in Defender for Office 365.
+⁶ The only customizable security settings in preset security policies are the entries and exceptions for user impersonation protection and domain impersonation protection in the Standard and Strict preset security policies in Defender for Office 365.
 
 ### Order of precedence for security policies
 
-The important points to remember are:
+How security policies are applied is an important consideration as you decide how to configure security settings for users. The important points to remember are:
 
 - Security policies are applied in a specific order of precedence.
-- If a user is intentionally or unintentionally included in multiple policies of the same type (for example, anti-malware policies), the first policy based on the order of precedence is the only policy of that type that's applied to the user. Processing for that policy type stops for that user.
+- If a user is intentionally or unintentionally included in multiple policies of the same type (for example, anti-malware policies), the first policy based on the order of precedence defines the feature protection settings for the user's encounter with that specific item (message, file, URL, etc.).
+- Once that first policy of that type (for example, an anti-malware policy) is applied to a specific item for a user, policy processing for that type stops. No more security policies of that type are evaluated for that user and that specific item.
 
 The order of precedence is explained in detail at [Order of precedence for preset security policies and other policies](preset-security-policies.md#order-of-precedence-for-preset-security-policies-and-other-policies), but is briefly summarized here:
-  1. The Strict preset security policy.
-  2. The Standard preset security policy.
-  3. Custom policies of a specific type (for example, anti-malware policies). Custom policies of each type have a priority value that determines their order of precedence:
-     1. A custom policy with priority value 0
-     2. A custom policy with the priority value 1
-     3. A custom policy with the priority value 2
-     4. And so on.
-  4. The default policy of a specific type or the Built-in protection preset security policy in Defender for Office 365.
+  1. Preset security policies:
+     1. The Strict preset security policy.
+     2. The Standard preset security policy.
+  2. Custom policies of a specific type (for example, anti-malware policies). Each type of custom policy has a priority value that determines the order of precedence:
+     1. A custom policy of that type with the priority value 0.
+     2. A custom policy of that type with the priority value 1.
+     3. And so on.
+  3. The default policy of a specific type (for example, anti-malware) or the Built-in protection preset security policy in Defender for Office 365 (Safe Links and Safe Attachments only).
 
-Refer to the previous table to see how a specific security policy is represented in the precedence order. For example, anti-malware policies are present at each level. Outbound spam policies start at the custom policy level. The connection filter policy is available only at the default policy level.
+Refer to the previous table to see how a specific security policy is represented in the precedence order. For example, anti-malware policies are present at each level. Outbound spam policies are available at the custom policy and default policy levels. The connection filter policy is available only at the default policy level.
+
+
 
 The behavior is important as you decide how you want to implement security policies in your organization. Use unambiguous groups or lists of recipients for at each level, and remember that any unassigned users get the default policies.
 
-Anti-spam, anti-malware, anti-phishing, Safe Attachments, and Safe Links policies are affected throughout the entire stack, since those policies are included in the Standard and Strict preset security policies, custom policies are possible, and 
 
-### Decide your security policy strategy
+### Determine your security policy strategy
 
-As previously described, EOP and Defender for Office 365 includes default policies (or their equivalent) that automatically protect all recipients in the organization. So even if you do nothing, all recipients in the organization the the default protections as described in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
+Now that you know about the different types of security policies and how they're applied, you can decide how you want to use EOP and Defender for Office 365 to protect the users in your organization.
+
+As previously described, default policies (or their equivalent) automatically protect all recipients in the organization. So even if you do nothing, all recipients in the organization the the default protections as described in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
 
 The decision you need to make is whether to use the preset security policies (Standard, Strict, or both), custom policies, or both. Remember, the default policies are also in play for recipients who aren't defined in preset security policies or custom policies, so you can leverage them, too.
 
