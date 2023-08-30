@@ -2,8 +2,8 @@
 title: "Deploy add-ins in the admin center"
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekuako
+ms.author: efrene
+author: efrene
 manager: scotv
 ms.date: 08/30/2023
 audience: Admin
