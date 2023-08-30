@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 02/18/2020
+ms.date: 08/30/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -32,7 +32,10 @@ description: "Learn to deploy add-ins to users and groups in your organization b
 
 # Deploy add-ins in the Microsoft 365 admin center
 
-Office Add-ins help you personalize your documents and streamline the way you access information on the web (see [Start using your Office Add-in](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). As an admin, you can deploy Office Add-ins for the users in your organization by using the Centralized Deployment feature in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. Centralized Deployment is the recommended and most feature-rich way for most admins to deploy add-ins to users and groups within an organization.
+> [!NOTE]
+> [Integrated Apps](test-and-deploy-microsoft-365-apps.md) is the recommended and most feature-rich way for most customers to centrally deploy Office add-ins to users and groups within your organization.
+
+Office Add-ins help you personalize your documents and streamline the way you access information on the web (see [Start using your Office Add-in](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). As an admin, you can deploy Office Add-ins for the users in your organization by using the Centralized Deployment feature in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
 For more information on how to determine if your organization can support Centralized Deployment, see [Determine if Centralized Deployment of add-ins works for your organization](centralized-deployment-of-add-ins.md).
 
@@ -59,10 +62,12 @@ Before you begin, see [Determine if Centralized Deployment of add-ins works for 
   
 1. In the admin center,  go to the **Settings** \> **Integrated apps** \> **Add-ins** page.
 
-2. Select **Deploy Add-in** at the top of the page, and then select **Next**.
+   > [!NOTE]
+   > You can also deploy add-ins in the admin center through [Integrated Apps](test-and-deploy-microsoft-365-apps.md). Integrated Apps is the recommended place for admins to deploy add-ins, and is available to Global Administrator, Azure Application Administrator and Exchange Administrator.
+   >
+   > If you still want to continue using Centralized Deployment for admin deployment of add-ins, navigate to **Settings**, then select **Integrated Apps**. On top of the Integrated Apps page, choose the **Add-ins** link. If Integrated Apps is not available for you, you should be able to navigate to Centralized Deployment from **Settings**, and then select **Add-ins**.
 
-    > [!NOTE]
-    > You can also deploy add-ins in the admin center through [Integrated Apps](test-and-deploy-microsoft-365-apps.md). Integrated Apps is visible to Global and Exchange administrators. If you don't see the above steps, go to the Centralized Deployment section by going to **Settings** > **Integrated apps**. On the top of the **Integrated apps** page, choose **Add-ins**.
+2. Select **Deploy Add-in** at the top of the page, and then select **Next**.
 
 3. Select an option and follow the instructions.
   
