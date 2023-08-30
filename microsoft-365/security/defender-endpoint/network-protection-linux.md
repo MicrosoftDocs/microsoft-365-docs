@@ -137,7 +137,7 @@ The default values were tested for all distributions as described in [Microsoft 
 Also, make sure that in **Microsoft Defender** \> **Settings** \> **Endpoints** \> **Advanced features** that **'Custom network indicators'** toggle is set _enabled_.
 
 > [!IMPORTANT]
-> The above **'Custom network indicators'** toggle controls **Custom Indicators** enablement **for ALL platforms with Network Protection support, including Windows. Reminder that - on Windows - for indicators to be enforced you also must have Network Protection explicitly enabled.
+> The above **'Custom network indicators'** toggle controls **Custom Indicators** enablement **for ALL platforms** with Network Protection support, including Windows. Reminder that—on Windows—for indicators to be enforced you also must have Network Protection explicitly enabled.
 
 :::image type="content" source="images/network-protection-linux-defender-security-center-advanced-features-settings.png" alt-text="MEM Create Profile" lightbox="images/network-protection-linux-defender-security-center-advanced-features-settings.png":::
 
