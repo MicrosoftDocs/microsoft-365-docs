@@ -200,6 +200,8 @@
           href: content-processing-overview.md
         - name: Move or copy a file 
           href: content-processing-create-rules.md
+        - name: Set a content type 
+          href: content-processing-content-type.md
 
     - name: Term store features
       items:

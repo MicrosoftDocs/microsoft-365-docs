@@ -3,7 +3,7 @@ title: Get started driving adoption of Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
-ms.date: 09/30/2021
+ms.date: 09/30/2022
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -72,7 +72,7 @@ Determine who in your organization will build and manage the models. The followi
 |:-------|:-------|:-------|:-------|
 | Microsoft Entra role| Microsoft Entra role | Microsoft Entra role | Champions |
 | Configure structured document processing and freeform document processing models | Configure Dataverse environment | Gather use cases | Gather business use cases |
-| Manage content centers and permissions| Purchase and allocate AIB credits | Establish best practices and review model analytics | Create and apply models |
+| Manage content centers and permissions| Purchase and allocate AI Builder credits | Establish best practices and review model analytics | Create and apply models |
 
 Knowledge manager, business process owner, and content model owner create sample models and champion adoption in the organization. Others who might be involved the compliance admin and taxonomy managers.
 
