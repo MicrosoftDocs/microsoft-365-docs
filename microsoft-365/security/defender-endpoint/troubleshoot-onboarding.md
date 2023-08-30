@@ -95,6 +95,7 @@ If the script fails and the event is an error, you can check the event ID in the
 |`35`|The script failed to find needed onboarding status registry value|When the SENSE service starts for the first time, it writes onboarding status to the registry location <p> `HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status`. <p> The script failed to find it after several seconds. You can manually test it and check if it's there. For more information on events and errors related to SENSE, see [Review events and errors using Event viewer](event-error-codes.md).|
 |`40`|SENSE service onboarding status isn't set to **1**|The SENSE service has failed to onboard properly. For more information on events and errors related to SENSE, see [Review events and errors using Event viewer](event-error-codes.md).|
 |`65`|Insufficient privileges|Run the script again with administrator privileges.|
+|`70`|Offboarding script is for a different organization|Get an offboarding script for the correct organization SENSE service is onboarded to.|
 |
 
 ### Troubleshoot onboarding issues using Microsoft Intune
