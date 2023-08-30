@@ -69,7 +69,7 @@ Example 1: JAMF using [schema.json](https://github.com/microsoft/mdatp-xplat/tre
 
 Example 2: [demo.mobileconfig](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples/macos/mobileconfig)
 
-```json
+```xml
    <key>dlp</key>
     <dict> 
       <key>features</key>
