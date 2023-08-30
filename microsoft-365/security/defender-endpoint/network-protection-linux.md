@@ -139,7 +139,7 @@ Also, make sure that in **Microsoft Defender** \> **Settings** \> **Endpoints** 
 > [!IMPORTANT]
 > The above **'Custom network indicators'** toggle controls **Custom Indicators** enablement **for ALL platforms with Network Protection support, including Windows. Reminder that - on Windows - for indicators to be enforced you also must have Network Protection explicitly enabled.
 
->:::image type="content" source="images/network-protection-linux-defender-security-center-advanced-features-settings.png" alt-text="MEM Create Profile" lightbox="images/network-protection-linux-defender-security-center-advanced-features-settings.png":::
+:::image type="content" source="images/network-protection-linux-defender-security-center-advanced-features-settings.png" alt-text="MEM Create Profile" lightbox="images/network-protection-linux-defender-security-center-advanced-features-settings.png":::
 
 ## How to explore the features
 
@@ -185,7 +185,7 @@ Create indicators that define the detection, prevention, and exclusion of entiti
 
 Currently supported sources are the cloud detection engine of Defender for Endpoint, the automated investigation and remediation engine, and the endpoint prevention engine (Microsoft Defender Antivirus).
 
->:::image type="content" source ="images/network-protection-add-url-domain-indicator.png" alt-text="Shows network protection add URL or domain indicator." lightbox="images/network-protection-add-url-domain-indicator.png":::
+:::image type="content" source ="images/network-protection-add-url-domain-indicator.png" alt-text="Shows network protection add URL or domain indicator." lightbox="images/network-protection-add-url-domain-indicator.png":::
 
 For more information, see: [Create indicators for IPs and URLs/domains](indicator-ip-domain.md).
 
@@ -197,7 +197,7 @@ Configure policies across your device groups to block certain categories. Blocki
 
 Web content filtering is available on the major web browsers, with blocks performed by Windows Defender SmartScreen (Microsoft Edge) and Network Protection (Chrome, Firefox, Brave, and Opera). For more information about browser support, see [Prerequisites](#prerequisites).
 
-> :::image type="content" source="images/network-protection-wcf-add-policy.png" alt-text="Shows network protection web content filtering add policy." lightbox="images/network-protection-wcf-add-policy.png":::
+:::image type="content" source="images/network-protection-wcf-add-policy.png" alt-text="Shows network protection web content filtering add policy." lightbox="images/network-protection-wcf-add-policy.png":::
 
 For more information about reporting, see [Web content filtering](web-content-filtering.md).
 
@@ -205,11 +205,11 @@ For more information about reporting, see [Web content filtering](web-content-fi
 
 The Microsoft Defender for Cloud Apps / Cloud App Catalog identifies apps you would want end users to be warned upon accessing with Microsoft 365 Defender for Endpoint, and mark them as _Monitored_. The domains listed under monitored apps would be later synced to Microsoft 365 Defender for Endpoint:
 
-> :::image type="content" source="images/network-protection-macos-mcas-monitored-apps.png" alt-text="Shows network protection mcas monitored apps." lightbox="images/network-protection-macos-mcas-monitored-apps.png":::
+:::image type="content" source="images/network-protection-macos-mcas-monitored-apps.png" alt-text="Shows network protection mcas monitored apps." lightbox="images/network-protection-macos-mcas-monitored-apps.png":::
 
 Within 10-15 minutes, these domains will be listed in Microsoft 365 Defender under Indicators > URLs/Domains with Action=Warn. Within the enforcement SLA (see details at the end of this article).
 
-> :::image type="content" source="images/network-protection-macos-mcas-cloud-app-security.png" alt-text="Shows network protection mcas cloud app security." lightbox="images/network-protection-macos-mcas-cloud-app-security.png":::
+:::image type="content" source="images/network-protection-macos-mcas-cloud-app-security.png" alt-text="Shows network protection mcas cloud app security." lightbox="images/network-protection-macos-mcas-cloud-app-security.png":::
 
 ## See also
 
