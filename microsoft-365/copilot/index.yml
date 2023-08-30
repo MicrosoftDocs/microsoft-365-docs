@@ -1,0 +1,60 @@
+### YamlMime:Hub
+
+title: Microsoft 365 Copilot documentation # < 60 chars
+summary: summary # < 160 chars
+brand: m365 # brand: aspnet | azure | bash | bizapps | bot-framework | dotnet | dynamics | education | enterprise-mobility | gaming | graph | m365 | nuget | office | powershell | playfab | power-apps | power-automate | power-bi | power-platform | power-virtual-agents | project | sharepoint | sql | surface | system-center | teams | visual-studio | windows | workplace-analytics | xamarin
+
+metadata:
+  title: Microsoft 365 Copilot documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn about Microsoft 365 Copilot and how your organization can use this copilot for work. # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: microsoft-365-copilot 
+  ms.topic: hub-page # Required
+  ms.collection: # Optional; Remove if not applicable.
+  author: samanro #Required; your GitHub user alias, with correct capitalization.
+  ms.author: samanro #Required; microsoft alias of author; optional team alias.
+  ms.date: 09/22/2023 #Required; mm/dd/yyyy format.
+
+
+
+# additionalContent section (Optional; Remove if not applicable.)
+# Card with summary style
+additionalContent:
+  # Supports up to 4 subsections
+  sections:
+    - title: Learn about Microsoft 365 Copilot # < 60 chars (Optional; Remove if not applicable.)
+      items:
+        # Card
+        - title: Copilot overview video
+          summary: Watch an overview of Microsoft 365 Copilot
+          url: https://www.youtube.com/watch?v=E5g20qmeKpg
+        # Card
+        - title: Service description
+          summary: Read the service description for what's included in Microsoft 365 Copilot
+          url: /office365/servicedescriptions/office-365-platform-service-description/microsoft-365-copilot/
+        # Card
+        - title: Setup
+          summary: Get ready for Microsoft 365 Copilot in the Microsoft 365 Admin Center.
+          url: /microsoft-365/admin/copilot/m365-copilot-setup/
+        # Card
+        - title: FAQ
+          summary: Review the Copilot FAQ
+          url: https://support.microsoft.com/topic/frequently-asked-questions-ai-microsoft-365-copilot-and-microsoft-designer-987b275d-f6f2-4d5d-94c5-e927cffae705
+  sections:
+    - title: TBD # < 60 chars (Optional; Remove if not applicable.)
+      items:
+        # Card
+        - title: TBD
+          summary: TBD
+          url: index.yml
+        - title: TBD
+          summary: TBD
+          url: index.yml
+        - title: TBD
+          summary: TBD
+          url: index.yml
+        - title: TBD
+          summary: TBD
+          url: index.yml
+        - title: TBD
+          summary: TBD
+          url: index.yml
