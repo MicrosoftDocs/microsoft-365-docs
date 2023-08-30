@@ -177,7 +177,7 @@ If you encounter problems with your deployment, create or append your Microsoft 
 
 1. The change is active when Group Policy updates. There are two methods to refresh Group Policy:
 
-   - From the command line, run the Group Policy update command. For example, run `gpupdate / force`. For more information, see [gpupdate](/windows-server/administration/windows-commands/gpupdate.md)
+   - From the command line, run the Group Policy update command. For example, run `gpupdate / force`. For more information, see [gpupdate](/windows-server/administration/windows-commands/gpupdate)
    - Wait for Group Policy to automatically refresh. Group Policy refreshes every 90 minutes +/- 30 minutes.
 
    If you have multiple forests/domains, force replication or wait 10-15 minutes. Then force a Group Policy Update from the Group Policy Management Console. 
@@ -187,7 +187,6 @@ If you encounter problems with your deployment, create or append your Microsoft 
      :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-gp-management-console.png" alt-text="Screenshot that shows a screen capture of the Group Policy Management console, initiating a forced update." lightbox="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-gp-management-console.png"::: 
 
 1. After the issue is resolved, set the **Signature Update Fallback Order** back to the original setting. `InternalDefinitionUpdateServder|MicrosoftUpdateServer|MMPC|FileShare`.
-
 
 ## See also
 
