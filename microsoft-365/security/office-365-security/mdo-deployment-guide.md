@@ -78,9 +78,9 @@ As you can probably imagine, a lot of security policies are available in EOP and
 
   Built-in protection in Defender for Office 365 is on by default to provides default Safe Attachments and Safe Links protection for all recipients. You can specify recipients exceptions to identify users who don't get the protection.
 
-  In Standard and Strict preset security policies in Defender for Office 365 organizations, you need to configure entries for user and domain impersonation protection. You can also configure exceptions for user and domain impersonation protection. All other settings are locked into our recommended standard and strict values (many of which are the same). You can see the values in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md), and you can see the differences between Standard and Strict [here](preset-security-policies.md#policy-settings-in-preset-security-policies).
+  In Standard and Strict preset security policies in Defender for Office 365 organizations, you need to configure entries (and optionally, exceptions) for user and domain impersonation protection. All other settings are locked into our recommended standard and strict values (many of which are the same). You can see the values in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md), and you can see the differences between Standard and Strict [here](preset-security-policies.md#policy-settings-in-preset-security-policies).
 
-  As new protection capabilities are added to EOP and Defender for Office 365 or as the security landscape changes, the security policies in preset security policies are automatically updated to our recommended settings.
+  As new protection capabilities are added to EOP and Defender for Office 365 and as the security landscape changes, the settings in preset security policies are automatically updated to our recommended settings.
 
 - **Custom policies**: For most available security policies, you can create any number of custom policies. You can apply the policies to users using recipient conditions and exceptions (users, group members, or domains) and you can customize the settings.
 
@@ -106,13 +106,13 @@ The previous information and the security policies that are involved are summari
 
 ¹ There are no default entries in the IP Allow List or the IP Block List, so the default connection filter policy effectively does nothing unless you customize the settings.
 
-² There are no entries for user impersonation or domain impersonation protection in Defender for Office 365 until you configure them.
+² There are no entries or exceptions for user impersonation or domain impersonation protection in Defender for Office 365 until you configure them.
 
-³ Although there are no default Safe Attachments or Safe Links policies in Defender for Office 365, the Built-in protection preset security policy provides Safe Attachments and Safe Links protection that's on by default and you can't turn off (just like a default policy).
+³ Although there are no default Safe Attachments or Safe Links policies in Defender for Office 365, the Built-in protection preset security policy provides Safe Attachments and Safe Links protection that's always on.
 
 ⁴ Only the Built-in protection preset security policy is on by default.
 
-⁵ For the Built-in protection preset security policy, you can only configure exceptions for protection.
+⁵ For the Built-in protection preset security policy, you can't configure recipient conditions for protection. You can only configure recipient exceptions from protection.
 
 ⁶ The only customizable security settings in preset security policies are the entries and exceptions for user impersonation protection and domain impersonation protection in the Standard and Strict preset security policies in Defender for Office 365.
 
@@ -125,33 +125,44 @@ How security policies are applied is an important consideration as you decide ho
 - Once that first policy of that type (for example, an anti-malware policy) is applied to a specific item for a user, policy processing for that type stops. No more security policies of that type are evaluated for that user and that specific item.
 
 The order of precedence is explained in detail at [Order of precedence for preset security policies and other policies](preset-security-policies.md#order-of-precedence-for-preset-security-policies-and-other-policies), but is briefly summarized here:
-  1. Preset security policies:
-     1. The Strict preset security policy.
-     2. The Standard preset security policy.
-  2. Custom policies of a specific type (for example, anti-malware policies). Each type of custom policy has a priority value that determines the order of precedence:
-     1. A custom policy of that type with the priority value 0.
-     2. A custom policy of that type with the priority value 1.
-     3. And so on.
-  3. The default policy of a specific type (for example, anti-malware) or the Built-in protection preset security policy in Defender for Office 365 (Safe Links and Safe Attachments only).
+
+1. Preset security policies:
+   1. The Strict preset security policy.
+   2. The Standard preset security policy.
+2. Custom policies of a specific type (for example, anti-malware policies). Each type of custom policy has a priority value that determines the order of precedence:
+   1. A custom policy of that type with the priority value 0.
+   2. A custom policy of that type with the priority value 1.
+   3. And so on.
+3. The default policy of a specific type (for example, anti-malware) or the Built-in protection preset security policy in Defender for Office 365 (Safe Links and Safe Attachments only).
 
 Refer to the previous table to see how a specific security policy is represented in the precedence order. For example, anti-malware policies are present at each level. Outbound spam policies are available at the custom policy and default policy levels. The connection filter policy is available only at the default policy level.
 
+To avoid confusion and unintended application of policies, use the following guidelines:
+
+- Use unambiguous groups or lists of recipients at each level. For example, use different groups or lists of recipients for the Standard and Strict preset security policies.
+- Configure exceptions at each level as appropriate. For example, configure recipients who need custom policies as exceptions to the Standard and Strict preset security policy.
+- Remember, any remaining recipients that aren't identified at the higher levels get the default policies.
+
+Armed with this information, you can now decided the best way to implement security policies in the organization.
 
 
-The behavior is important as you decide how you want to implement security policies in your organization. Use unambiguous groups or lists of recipients for at each level, and remember that any unassigned users get the default policies.
 
 
 ### Determine your security policy strategy
 
 Now that you know about the different types of security policies and how they're applied, you can decide how you want to use EOP and Defender for Office 365 to protect the users in your organization.
 
-As previously described, default policies (or their equivalent) automatically protect all recipients in the organization. So even if you do nothing, all recipients in the organization the the default protections as described in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
+As previously described, default policies (and the Built-in protection preset security policy in Defender for Office 365) automatically protect all recipients in the organization by default. So even if you do nothing, all recipients in the organization the default protections as described in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
 
-The decision you need to make is whether to use the preset security policies (Standard, Strict, or both), custom policies, or both. Remember, the default policies are also in play for recipients who aren't defined in preset security policies or custom policies, so you can leverage them, too.
+The first decision is whether to start with preset security policies (Standard, Strict, or both) or custom policies. Remember, the default policies are also in play for recipients who aren't defined in preset security policies or custom policies, so you can leverage them, too.
 
-Preset security policies are configured with settings based years of observations in the Microsoft 365 datacenters, and should be the right choice for the majority of organizations.
+Preset security policies are configured with settings based years of observations in the Microsoft 365 datacenters, and should be the right choice for the majority of organizations. And, the policies are automatically updated to match the threats of the security landscape.
 
-We recommend starting with the Standard preset security policy
+In general, we recommend starting with the Standard preset security policy for all users in your organization. Use the [comparison table table between Standard and Strict](preset-security-policies.md#policy-settings-in-preset-security-policies) to see if some users would benefit from the Strict preset security policy.
+
+Based on the previously described [order of precedence](#order-of-precedence-for-security-policies), you need to
+
+**We recommend starting with the Standard preset security policy for all users in your organization**
 
 The following requirements likely indicate that custom policies might be a better way to go:
 
