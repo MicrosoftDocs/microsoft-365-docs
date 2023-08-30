@@ -59,7 +59,7 @@ Otherwise, if an incident is classified as _True Positive_, our experts then ide
 
 - If you have granted Defender Experts for XDR the recommended Security Operator access permissions, our experts could perform the recommended response actions on the incident on your behalf. These actions, along with an **Investigation summary**, show up in the incident's [Managed response](#how-to-use-managed-response-in-microsoft-365-defender) flyout panel in your Microsoft 365 Defender portal for you or your SOC team to review. Once our experts conclude their work on the incident, its **Status** field is then updated to _Resolved_ and the **Assigned to** field is updated to _Unassigned_.
 
-- If you have granted Defender Experts for XDR the default Security Reader access, then the recommended response actions, along with an **Investigation summary**, show up in the incident's **Managed response** flyout panel in your Microsoft 365 Defender portal for you or your SOC team to perform. To identify this handover, the incident's **Status** field is updated to _Awaiting Customer Action_ and **Assigned to** field is updated to _Customer_.
+- If you have granted Defender Experts for XDR the default Security Reader access, then the recommended response actions, along with an **Investigation summary**, show up in the incident's **Managed response** flyout panel in your Microsoft 365 Defender portal for you or your SOC team to perform. To identify this handover, the incident's **Status** field is updated to _Awaiting Customer Action_ and its **Assigned to** field is updated to _Customer_.
 
 You can check the number of incidents that are awaiting your action in the Defender Experts card in your Microsoft 365 Defender portal:
 
@@ -129,13 +129,13 @@ You can get incident visibility in Microsoft Sentinel by turning on its out-of-t
 Once you have turned on the connector, updates by Defender Experts to the **Status**, **Assigned to**, **Classification**, and **Determination** fields in Microsoft 365 Defender will show up in the corresponding **Status**, **Owner**, and **Reason for closing** fields in Sentinel.
 
 > [!NOTE]
-> The status of Defender Experts investigated incidents in Microsoft 365 Defender typically transitions from _Active_ to _In progress_ to _Awaiting Customer Action_, while in Sentinel, it follows the _New_ to _Active_ to _Resolved_ path. The Microsoft 365 Defender Status _Awaiting Customer Action_ does not have an equivalent field in Sentinel, instead a tag _Awaiting Customer Action_ is available in Sentinel.”
+> The status of incidents investigated by Defender Experts in Microsoft 365 Defender typically transitions from _Active_ to _In progress_ to _Awaiting Customer Action_ to _Resolved_, while in Sentinel, it follows the _New_ to _Active_ to _Resolved_ path. The Microsoft 365 Defender Status ***Awaiting Customer Action*** doesn't have an equivalent field in Sentinel; instead, it's displayed as a tag in an incident in Sentinel.
 
 The following section describes how an incident handled by our experts is updated in Sentinel as it progresses through the investigation journey:
 
 1. An incident being investigated by our experts has the **Status** listed as _Active_ and the **Owner** listed as _Defender Experts_.
 1. An incident that our experts have confirmed as a _True Positive_ has a managed response posted in Microsoft 365 Defender, and a **Tag** _Awaiting Customer Action_ and the **Owner** is listed as _Customer_. You need to act on the incident based on using the provided managed response.
-1. Once our experts have concluded their investigation and closed an incident as _False Positive_ or _Informational_, _Expected Activity_, the incident's **Status** is updated to _Resolved_, **Owner** is listed as _Customer_, and a **Reason for closing** is provided.
+1. Once our experts have concluded their investigation and closed an incident as _False Positive_ or _Informational_, _Expected Activity_, the incident's **Status** is updated to _Resolved_, the **Owner** is updated to _Unassigned_, and a **Reason for closing** is provided.
 
 :::image type="content" source="../../media/xdr/microsoft-sentinel-incidents.png" alt-text="Screenshot of Microsoft Sentinel incidents." lightbox="../../media/xdr/microsoft-sentinel-incidents.png":::
 
