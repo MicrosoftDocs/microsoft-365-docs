@@ -83,6 +83,10 @@ If the script fails and the event is an error, you can check the event ID in the
 
 <br>
 
+
+
+
+
 ****
 
 |Event ID|Error Type|Resolution steps|
@@ -95,6 +99,7 @@ If the script fails and the event is an error, you can check the event ID in the
 |`35`|The script failed to find needed onboarding status registry value|When the SENSE service starts for the first time, it writes onboarding status to the registry location <p> `HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status`. <p> The script failed to find it after several seconds. You can manually test it and check if it's there. For more information on events and errors related to SENSE, see [Review events and errors using Event viewer](event-error-codes.md).|
 |`40`|SENSE service onboarding status isn't set to **1**|The SENSE service has failed to onboard properly. For more information on events and errors related to SENSE, see [Review events and errors using Event viewer](event-error-codes.md).|
 |`65`|Insufficient privileges|Run the script again with administrator privileges.|
+|`70`|The script is for a different organization|Get an offboarding script that matches the organization SENSE service is onboarded too.|
 |
 
 ### Troubleshoot onboarding issues using Microsoft Intune
@@ -110,10 +115,10 @@ Use the following tables to understand the possible causes of issues while onboa
 - Mobile Device Management (MDM) event logs table
 
 If none of the event logs and troubleshooting steps work, download the Local script from the **Device management** section of the portal, and run it in an elevated command prompt.
-
 #### Microsoft Intune error codes and OMA-URIs
-
 <br>
+
+
 
 ****
 
@@ -129,8 +134,8 @@ If none of the event logs and troubleshooting steps work, download the Local scr
 #### Known issues with non-compliance
 
 The following table provides information on issues with non-compliance and how you can address the issues.
-
 <br>
+
 
 ****
 
@@ -148,8 +153,8 @@ View the MDM event logs to troubleshoot issues that might arise during onboardin
 Log name: Microsoft\Windows\DeviceManagement-EnterpriseDiagnostics-Provider
 
 Channel name: Admin
-
 <br>
+
 
 ****
 
@@ -332,6 +337,45 @@ If the verification fails and your environment is using a proxy to connect to th
 If you encounter issues while onboarding a server, go through the following verification steps to address possible issues.
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - [Ensure Microsoft Monitoring Agent (MMA) is installed and configured to report sensor data to the service](configure-server-endpoints.md)
 - [Ensure that the server proxy and Internet connectivity settings are configured properly](configure-server-endpoints.md)
 
@@ -369,6 +413,45 @@ The steps below provide guidance for the following scenario:
 > Windows 10, version 1809 or Windows Server 2019, or Windows Server 2022 with [April 22 2021 update rollup](https://support.microsoft.com/kb/5001384). 
 > Windows 10, version 1909 with [April 2021 update rollup](https://support.microsoft.com/kb/5001396). 
 > Windows 10, version 2004/20H2 with [April 28 2021 update rollup](https://support.microsoft.com/kb/5001391). 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 > [!NOTE]
@@ -485,17 +568,19 @@ The steps below provide guidance for the following scenario:
 
     :::image type="content" source="images/mecm-28.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-28" lightbox="images/mecm-28.png":::
       
-
-    The status is then displayed
-    :::image type="content" source="images/mecm-29.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-29" lightbox="images/mecm-29.png":::
-
+```ruby
+The status is then displayed
+:::image type="content" source="images/mecm-29.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-29" lightbox="images/mecm-29.png":::
+```
 28. In **Completion**, select **Close**.
 
-    :::image type="content" source="images/mecm-30.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-30" lightbox="images/mecm-30.png":::
-
+```json
+:::image type="content" source="images/mecm-30.png" alt-text="The Microsoft Endpoint Configuration Manager configuration-30" lightbox="images/mecm-30.png":::
+```
 ## Related topics
 
 - [Troubleshoot Microsoft Defender for Endpoint](troubleshoot-mdatp.md)
 - [Onboard devices](onboard-configure.md)
 - [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+
