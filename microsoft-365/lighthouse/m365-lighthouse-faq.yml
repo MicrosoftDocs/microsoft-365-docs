@@ -44,7 +44,7 @@ sections:
 
       - question: How much does Microsoft 365 Lighthouse cost?
         answer: |
-          No additional costs are associated with using Lighthouse to manage multiple Microsoft 365 customer tenants. Lighthouse is available to MSPs servicing small- to medium-sized businesses and who have a Cloud Solution Provider (CSP) relationship with their customers. Note that indirect providers aren't currently supported by Lighthouse. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+          No additional costs are associated with using Lighthouse to manage multiple Microsoft 365 customer tenants. Lighthouse is available to MSPs servicing small- to medium-sized businesses and who have a Cloud Solution Provider (CSP) relationship with their customers. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
 
       - question: What are the requirements to use Microsoft 365 Lighthouse?
         answer: |
