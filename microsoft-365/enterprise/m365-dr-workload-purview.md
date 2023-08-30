@@ -194,4 +194,4 @@ Capability summary: Microsoft Purview Information Barriers (IB) is a compliance 
 
 Commitment:
 
-Please refer to the [ADR Commitment page](m365-dr-commitments.md#insider-risk-management---information-barriers) for the specific Customer Data at rest commitment for IB.
+Please refer to the [ADR Commitment page](m365-dr-commitments.md#risk-and-compliance---information-barriers) for the specific Customer Data at rest commitment for IB.
