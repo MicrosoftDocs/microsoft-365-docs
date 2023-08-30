@@ -291,7 +291,7 @@ sections:
           |**Eligibility**|Partners who are enrolled in the CSP program<br><br>Requires a delegated access relationship with the customer<br><br>[See full list of requirements](m365-lighthouse-requirements.md)  |Partners who have MSSP access set up and configured |
           |**Seat cap**|Up to 2500 seats per managed tenant  |Unlimited |
           |**Tenant cap**|Unlimited  |Up to 50 tenants per customer or partner |
-          |**Tenant provisioning to Defender for Business or Defender for Endpoint**|Done via one-click provisioning in the default baseline in Lighthouse  |Initiated by selecting **Assets** > **Devices** in the customer's Microsoft 365 Defender portal. |
+          |**Tenant provisioning to Defender for Business or Defender for Endpoint**|Initiated via one-click provisioning in the default baseline in Lighthouse  |Initiated by selecting **Assets** > **Devices** in the customer's Microsoft 365 Defender portal |
           |**Onboarding to Defender for Business or Defender for Endpoint**|Done via the default baseline in Lighthouse for devices enrolled in Intune  |Devices can be onboarded in each customer's Microsoft 365 Defender portal or by using Intune |
           |**Ability to view the licensing state**|Visible through the default baseline in Lighthouse  |Visible in each customer's Microsoft 365 Defender portal or Microsoft 365 admin center |
           |**Device inventory**|View all devices (all platforms) enrolled in Intune, or Windows devices onboarded to Defender for Business or Defender for Endpoint  |View a list of tenants and information about devices (Windows, iOS, Android, Mac, Linux) onboarded to Defender for Business or Defender for Endpoint |
