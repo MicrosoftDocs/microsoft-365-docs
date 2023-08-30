@@ -1,5 +1,5 @@
 ---
-title: Prerequisites and requirements for the Teams Shifts connector for UKG Dimensions
+title: Prerequisites and requirements for the Teams Shifts connector for UKG Dimensions (Preview)
 author: lana-chin
 ms.author: v-chinlana
 manager: serdars
@@ -20,7 +20,7 @@ appliesto:
 ms.date: 3/23/2023
 ---
 
-# Prerequisites and requirements for the Teams Shifts connector for UKG Dimensions
+# Prerequisites and requirements for the Teams Shifts connector for UKG Dimensions (Preview)
 
 ## Overview
 
@@ -115,7 +115,7 @@ If you want to create more than one team, see [Deploy frontline static teams at 
 ### Make sure the teams that you want to map don't have any existing schedules
 
 > [!NOTE]
-> This step applies only if you're running the wizard to create a connection. If you're using PowerShell to create a connection, the script removes existing schedules from teams.
+> This step applies only if you're running the wizard to create a connection. If you're using PowerShell to create a connection, the PowerShell script removes existing schedules from teams for you.
 
 If a team has an existing schedule that was created in Shifts, follow these steps to remove schedule entities from the team before you map a UKG Dimensions location (also called an instance) to it. Otherwise, you'll see duplicate shifts.
 
