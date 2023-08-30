@@ -161,9 +161,10 @@ For more information, see [Microsoft Defender for Cloud Apps preview features](/
 
 Learn how to protect your cloud apps in Microsoft 365 Defender:
 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE59yVU]
+<br><br>
 > [!VIDEO https://learn.microsoft.com/_themes/docs.theme/master/en-us/_themes/global/video-embed.html?id=2105e5c9-23bf-41fb-a61d-0f0fae8ef05f]
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE59yVU]
 
 ## Related information
 
