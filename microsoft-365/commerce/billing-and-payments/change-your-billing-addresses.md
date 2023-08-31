@@ -61,7 +61,7 @@ You can change your **Bill to** address in the Microsoft 365 admin center. Howev
 **If you have an MCA billing account type:**
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
-   - If you’re using the **Simplified view**, select **Subscriptions**, then select **View payment methods**.
+   - If you’re using the **Simplified view**, select **Billing**, then select **View payment methods**.
    - If you’re using the **Dashboard view**, go to the Billing > <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Bills & payments</a> page.
 2. On the **Bills & payments** page, select the **Billing profile** tab.
 3. Select a billing profile.
@@ -71,7 +71,7 @@ You can change your **Bill to** address in the Microsoft 365 admin center. Howev
 **If you have an MOSA billing account type:**
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.admin center.
-   - If you’re using the **Simplified view**, select **Subscriptions**, then select **View payment methods**.
+   - If you’re using the **Simplified view**, select **Billing**, then select **View payment methods**.
    - If you’re using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Bills & payments</a> page.
 2. On the **Bills & payments** page, select the **Payment methods** tab.
 3. Select a payment method.
@@ -83,7 +83,7 @@ You can change your **Bill to** address in the Microsoft 365 admin center. Howev
 If you have an MOSA billing account type, you can change the service usage address for a subscription. What type of billing account do I have?
 
 1. Go to the admin center.
-   - If you’re using the **Simplified view**, select **Subscriptions**.
+   - If you’re using the **Simplified view**, select **Billing**.
    - If you’re using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. Select the subscription to change.
 3. On the subscription details page, in the **Service usage address** section, select **Edit service usage address**.

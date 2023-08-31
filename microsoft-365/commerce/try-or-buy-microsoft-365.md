@@ -87,7 +87,7 @@ Do you need more time to try out the features of Microsoft 365 for business befo
 **If you have an MCA billing account type:**
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
-    - If you're using the **Simplified view**, select **Subscriptions**, then select your trial subscription.
+    - If you're using the **Simplified view**, select **Billing**, then select your trial subscription.
     - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page and select the trial subscription that you want to extend.
 2. On the subscription details page, in the **Trial subscription** section, select **Extend trial end date**.
 3. In the **Extend your trial's end date** pane, review the extension information, and, if necessary, select a payment method.
@@ -96,7 +96,7 @@ Do you need more time to try out the features of Microsoft 365 for business befo
 **If you have a MOSA billing account type:**
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
-    - If you're using the **Simplified view**, select **Subscriptions**, then select your trial subscription.
+    - If you're using the **Simplified view**, select **Billing**, then select your trial subscription.
     - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page and select the trial subscription that you want to extend.
 2. On the subscription details page, in the **Subscription and payment settings** section, select **Extend end date**.
 3. In the **Extend end date** pane, select a payment method to use, or add a new one.
@@ -113,7 +113,7 @@ If you want to buy your subscription before your trial is over, use the followin
 **If you have an MCA billing account type:**
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
-    - If you're using the **Simplified view**, select **Subscriptions**, then select your trial subscription.
+    - If you're using the **Simplified view**, select **Billing**, then select your trial subscription.
     - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page and select the trial subscription that you want to buy.
 2. On the subscription details page, select **Start a paid subscription now**.
 3. In the **Start a paid subscription now** pane, enter the number of licenses that you want, select a subscription length and billing frequency, then select **Change plan**.
@@ -121,7 +121,7 @@ If you want to buy your subscription before your trial is over, use the followin
 **If you have a MOSA billing account type:**
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
-    - If you're using the **Simplified view**, select **Subscriptions**, then select your trial subscription.
+    - If you're using the **Simplified view**, select **Billing**, then select your trial subscription.
     - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page and select the trial subscription that you want to buy.
 2. On the subscription details page, in the **License** section, select **Buy paid subscription now**.
 3. In the **Buy subscription** pane, choose a monthly or annual commitment for your subscription, then select **Checkout**.
@@ -142,7 +142,7 @@ When you add a subscription through the <a href="https://go.microsoft.com/fwlink
 **If you have an MCA billing account type:**
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
-   - If you're using the **Simplified view**, select **Subscriptions**, then select **Add more products**.
+   - If you're using the **Simplified view**, select **Billing**, then select **Add more products**.
    - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
 2. On the **Purchase services** page, find the plan that you want to try, and select **Details**.
 3. In the **Select a plan** drop-down list, select the trial plan.
@@ -158,7 +158,7 @@ When you add a subscription through the <a href="https://go.microsoft.com/fwlink
 **If you have a MOSA billing account type:**
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
-   - If you're using the **Simplified view**, select **Subscriptions**, then select **Add more products**.
+   - If you're using the **Simplified view**, select **Billing**, then select **Add more products**.
    - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
 2. On the **Purchase services** page, find the plan that you want to try, and select **Details**.
 3. On the next page, enter the number of licenses that you want to buy when the trail ends, then select **Start free trial**.
@@ -185,7 +185,7 @@ If you want to move all of your users to a different subscription, see [Upgrade 
 **If you have an MCA billing account type:**
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
-   - If you're using the **Simplified view**, select **Subscriptions**, then select **Add more products**.
+   - If you're using the **Simplified view**, select **Billing**, then select **Add more products**.
    - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
 2. On the **Purchase services** page, select the plan that you want to buy, then select **Details**.
 3. On the product details page, in the **Select a plan** drop-down list, select the plan, and enter the number of licenses that you want to buy. Select a subscription length and billing frequency, then select **Buy**.
@@ -200,7 +200,7 @@ Check out this video and others on our [YouTube channel](https://go.microsoft.co
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SBE2?autoplay=false]
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
-   - If you're using the **Simplified view**, select **Subscriptions**, then select **Add more products**.
+   - If you're using the **Simplified view**, select **Billing**, then select **Add more products**.
    - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
 2. On the **Purchase services** page, select the plan that you want to buy, then select **Details**.
 3. On the product details page, enter the number of licenses that you need, select a billing frequency, then select **Buy**.

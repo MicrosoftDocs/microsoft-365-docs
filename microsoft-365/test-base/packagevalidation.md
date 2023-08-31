@@ -30,7 +30,7 @@ To see the verification status of your package, you can click the "Manage Packag
 ## Package Verification Stages
 
 1.	**Sanity Check**: Test Base attempts to validate that the scripts path provided is correct and exists in your package.
-Follow the guideline here to understand how to build a package for Test Base
+Follow the [guideline here](contentguideline.md) to understand how to build a package for Test Base
 2.	**Malware Scan**: Test Base also scans the package to check for the presence of virus, malware, or any malicious content.
 3.	**Verification Run**: If the package passes the first and second stage of validation, Test base triggers a verification run. During the verification run, Test Base runs the scripts provided on our VM (virtual machines).
 

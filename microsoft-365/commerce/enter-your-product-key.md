@@ -63,7 +63,7 @@ Prepaid licenses for Microsoft 365 Business Standard are issued as a 25-characte
 > You must use a new, unused product key for the same Microsoft 365 plan that you bought previously. Entering your original Microsoft 365 product key won't work because a key that has already been redeemed can't be used again.
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
-    - If you’re using the **Simplified view**, select **Subscriptions**.
+    - If you’re using the **Simplified view**, select **Billing**.
     - If you’re using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. Select the subscription that you want to extend.
 3. On the subscription details page, in the **Subscription and payment settings** section, select **Extend end date**.
