@@ -28,7 +28,7 @@ ms.date: 08/31/2023
 
 # Close your Microsoft business account
 
-When you close your business account with Microsoft, we delete all information related to your account. This information includes subscriptions, licenses, payment methods, users, and user data. Follow the steps in this article to learn how to close your account with us.S
+When you close your business account with Microsoft, we delete all information related to your account. This information includes subscriptions, licenses, payment methods, users, and user data. Follow the steps in this article to learn how to close your account with us.
 
 If you want to close a personal Microsoft account, see [How to close your Microsoft account - Microsoft Support](https://support.microsoft.com/account-billing/c1b2d13f-4de6-6e1b-4a31-d9d668849979).
 
