@@ -68,7 +68,7 @@ To start your Microsoft 365 E5 trial subscription, you first need a fictitious c
 
 ### Sign up for an Office 365 E5 trial subscription
 
-1. In your browser, go to [https://aka.ms/e5trial](https://aka.ms/e5trial).
+1. In your browser, go to the [Office 365 E5 purchase page](https://go.microsoft.com/fwlink/p/?linkid=2245837) and select **Free trial**.
 
 2. In step 1 of the **Thank you for choosing Office 365 E5** page, enter your new email account address.
 3. In step 2 of the trail subscription process, enter the requested information, and then perform the verification.
