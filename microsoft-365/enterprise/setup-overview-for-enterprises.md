@@ -48,12 +48,12 @@ To deploy Microsoft 365 Enterprise on your own after completing your planning, t
 1. [Set up your network](set-up-network-for-microsoft-365.md)
 
    Includes adding your Internet domains and optimizing the network performance for your on-premises users.
- 
+
 2. [Set up your identities](protect-your-global-administrator-accounts.md)
 
    Includes determining an identity model (cloud-only or hybrid), and for hybrid identity, setting up directory synchronization between your on-premises Active Directory Domain Services (AD DS) and your Microsoft 365 subscription.
 
-3. [Implement security](/microsoft-365/security/office-365-security/defender-for-office-36)
+3. [Implement security](/microsoft-365/security/office-365-security/defender-for-office-365-whats-new)
 
    Includes configuring and rolling out basic and enhanced security, threat, and information protections for your tenant and identities in the first 30 days, 90 days, and beyond.
 
