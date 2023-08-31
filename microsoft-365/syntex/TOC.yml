@@ -167,10 +167,19 @@
       items: 
         - name: Overview 
           href: image-tagging-overview.md
-        - name: Admin setup 
+        - name: Admin setup
           href: image-tagging-setup.md
         - name: Find and manage images
           href: image-tagging.md
+
+    - name: Taxonomy tagging 
+      items: 
+        - name: Overview 
+          href: taxonomy-tagging-overview.md
+        - name: Admin setup 
+          href: taxonomy-tagging-setup.md
+        - name: Find and manage terms 
+          href: taxonomy-tagging.md
 
     - name: Optical character recognition 
       items: 
@@ -194,7 +203,7 @@
         - name: Set a content type 
           href: content-processing-content-type.md
 
-    - name: Taxonomy
+    - name: Term store features
       items:
         - name: Import using SKOS
           href: import-term-set-skos.md
