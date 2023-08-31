@@ -45,7 +45,7 @@ Check out [Identify Defender for Endpoint architecture and deployment method](de
 
 ## Onboard devices
 
-1. Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>:
+1. Open the configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>:
     1. In the navigation pane, select **Settings** \> **Endpoints** \> **Device management** \> **Onboarding**.
     2. Select Windows 10 or Windows 11 as the operating system.
     3. In the **Deployment method** field, select **Local Script**.
@@ -62,6 +62,8 @@ Check out [Identify Defender for Endpoint architecture and deployment method](de
 4.  Type the location of the script file. If you copied the file to the desktop, type: *%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd*
 
 5.  Press the **Enter** key or click **OK**.
+6.  Type "Y" and enter when prompted.
+7.  After the script completes, it will display "Press any key to continue...". Press any key to complete the steps on the device.
 
 For information on how you can manually validate that the device is compliant and correctly reports sensor data see, [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md).
 
