@@ -25,10 +25,10 @@ description: "Determine where your Microsoft 365 customer data is stored worldwi
 # Where your Microsoft 365 customer data is stored
 
 > [!NOTE]
-> The **Poland** local data center region launched on April 26, 2023. If your organization requires the migration of your Microsoft 365 customer data to Poland, and data residency commitments for Poland, refer to [Advanced Data Residency](advanced-data-residency.md) for more information.
+> The **Poland** local data center region launched on April 26, 2023. If your organization requires the migration of your Microsoft 365 customer data to Poland, and data residency commitments for Poland, see [Advanced Data Residency](advanced-data-residency.md).
 
 > [!NOTE]
-> For tenants in Australia, Brazil, Canada, France, Germany, India, Japan, Qatar, South Korea, Norway, South Africa, Sweden, Switzerland, United Arab Emirates, and the United Kingdom, additional workloads are available for data residency commitments. Refer to [Advanced Data Residency](advanced-data-residency.md) for more information.
+> For tenants in Australia, Brazil, Canada, France, Germany, India, Japan, Qatar, South Korea, Norway, South Africa, Sweden, Switzerland, United Arab Emirates, and the United Kingdom, additional workloads are available for data residency commitments. For more information, see [Advanced Data Residency](advanced-data-residency.md).
 
 See the following links to understand how you can determine current data residency and data residency commitments.
 
