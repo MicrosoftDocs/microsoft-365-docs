@@ -15,6 +15,7 @@ ms.collection:
   - M365-collaboration
   - m365-frontline
   - m365initiative-meetings
+  - m365-virtual-appointments 
 description: Learn how to use the SMS notifications usage report in the Microsoft Teams admin center to get an overview of SMS notifications usage in your organization.
 appliesto: 
   - Microsoft Teams
