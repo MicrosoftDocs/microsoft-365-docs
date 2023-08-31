@@ -24,8 +24,8 @@ When a [new package](buildpackage.md) is created or onboarded to Test Base, a va
 Packages that are undergoing verification are marked with "Verifying package" status.
 
 To see the verification status of your package, you can click the "Manage Package" menu 
-
-[![Screenshot of Manage Package menu.](Media/packagevalidation_1.png)](Media/packagevalidation_1.png#lightbox)
+> [!div class="mx-imgBorder"]
+> [![Screenshot of Manage Package menu.](Media/packagevalidation_1.png)](Media/packagevalidation_1.png#lightbox)
 
 ## Package Verification Stages
 
@@ -41,7 +41,8 @@ Follow the guideline here to understand how to build a package for Test Base
 3.	**Verification taking too long**: The package verification process is inconclusive or taking longer than expected. You can upload a new package or open a support ticket for help.
 4.	**Accepted**: The package passed all verification checks and is now accepted for future tests.
 
-[![Screenshot of Manage Packages page with status of package.](Media/packagevalidation_2.png)](Media/packagevalidation_2.png#lightbox)
+> [!div class="mx-imgBorder"]
+> [![Screenshot of Manage Packages page with status of package.](Media/packagevalidation_2.png)](Media/packagevalidation_2.png#lightbox)
 
 ## Package Validation Result
 
@@ -50,13 +51,16 @@ As soon as the package validation is completed, you should receive a mail notifi
 
 To see validation results of your Security Update test, follow the step below.
 1.	Click on Manage packages, and select the package
-[![Screenshot to show the package link.](Media/packagevalidation_3.png)](Media/packagevalidation_3.png#lightbox)
+> [!div class="mx-imgBorder"]
+>[![Screenshot to show the package link.](Media/packagevalidation_3.png)](Media/packagevalidation_3.png#lightbox)
 
 2.	On the package summary page, click "Test Summary"
-[![Screenshot of the test summary button.](Media/packagevalidation_4.png)](Media/packagevalidation_4.png#lightbox)
+> [!div class="mx-imgBorder"]
+> [![Screenshot of the test summary button.](Media/packagevalidation_4.png)](Media/packagevalidation_4.png#lightbox)
 
 3.	Click on the Security Update / Feature Update tab
-[![Screenshot of the test summary page and the tab.](Media/packagevalidation_5.png)](Media/packagevalidation_5.png#lightbox)
+> [!div class="mx-imgBorder"]
+> [![Screenshot of the test summary page and the tab.](Media/packagevalidation_5.png)](Media/packagevalidation_5.png#lightbox)
 
 ## Package Validation Details
 
