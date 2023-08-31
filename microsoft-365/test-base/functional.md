@@ -44,7 +44,7 @@ Tab 1 - Enter basic information. Provide the name and version of your applicatio
 
 ![Select the functional testing tab.](Media/functional_testing_tab1.png)
 
-Tab 2 - Upload the components of your package by uploading a zip file with your entire test (binaries, dependencies, scripts etc). 
+Tab 2 - Upload the components of your package by uploading a zip file with your entire test (binaries, dependencies, scripts, etc.). 
 
 See aka.ms/usl-package-outline for details. (Note: Both the Out-of-Box test scripts and the Functional test contents should be placed into the same zip file). Currently, the file size is limited to 2 GB.
 
