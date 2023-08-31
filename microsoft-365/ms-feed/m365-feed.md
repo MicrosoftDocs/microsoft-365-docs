@@ -22,7 +22,7 @@ Read more about how the feed works here:  [Discover and learn with Microsoft Fee
 
 ## Where can users see Microsoft Feed?
 
-In **Microsoft Edge**, select the **Work feed** page when opening a new tab.
+In **Microsoft 365** (previously Office.com), while signed in with a work or school account select **Feed** from the left navigation bar.
 
 :::image type="content" source="../media/msfeed/MS-select-feed.png" alt-text="Select Feed in Microsoft 365." lightbox="../media/msfeed/MS-select-feed.png":::
 
