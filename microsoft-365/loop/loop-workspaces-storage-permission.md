@@ -76,6 +76,12 @@ Loop components created outside of the Loop are stored in the OneDrive of the pe
 
 Admin management capabilities are not yet available to enumerate, manage, delete and recover Loop content in Syntex repository storage. Therefore, an admin cannot yet query for ownerless workspaces, directly manage the rosters for workspaces, or restore workspaces deleted by end-users.
 
+Content created in Loop workspaces are stored in [Syntex repository services](https://devblogs.microsoft.com/microsoft365dev/introducing-syntex-repository-services-microsoft-365-superpowers-for-your-app/) in the same location as your SharePoint Online tenant.
+
 ## Pricing and licensing model for Loop app
 
 Loop app is free during public preview. Post-preview pricing and licensing requirements for the Loop app are yet to be determined.
+
+## Related topics
+
+[Summary of compliance capabilities for Loop](/microsoft-365/loop/loop-compliance-summary)
