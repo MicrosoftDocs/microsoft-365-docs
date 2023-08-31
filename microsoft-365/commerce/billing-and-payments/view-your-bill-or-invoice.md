@@ -51,7 +51,7 @@ You must be a Global or Billing admin to do the steps described in this article.
 ## View your bill or invoice
 
 1. Go to the Microsoft 365 admin center.
-    - If you're using the **Simplified view**, select **Subscriptions**, then select **View invoices**.
+    - If you're using the **Simplified view**, select **Billing**, then select **View invoices**.
     - If you're using the **Dashboard view**, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.
 2. Select an invoice from the list to view the details online. If you don’t see any invoices, change the date range.
 3. To download the .PDF version of your invoice, select **Download PDF**.

@@ -15,7 +15,7 @@ ms.collection:
   - highpri
   - m365solution-frontline
   - m365solution-scenario
-  - tier1
+  - m365-virtual-appointments 
   - m365initiative-meetings
 f1.keywords:
 - NOCSH
