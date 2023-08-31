@@ -21,7 +21,6 @@ ms.collection:
   - highpri
   - microsoftcloud-healthcare
   - microsoftcloud-retail
-  - tier2
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
