@@ -17,7 +17,6 @@ ms.collection:
   - microsoftcloud-retail
   - m365solution-frontline
   - m365solution-scenario
-  - tier1
 search.appverid: MET150
 ms.localizationpriority: high
 searchScope:
