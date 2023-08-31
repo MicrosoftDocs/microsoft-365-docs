@@ -14,7 +14,6 @@ ms.collection:
   - highpri
   - m365solution-frontline
   - m365solution-scenario
-  - tier1
 ms.reviewer: aaglick
 appliesto: 
   - Microsoft Teams

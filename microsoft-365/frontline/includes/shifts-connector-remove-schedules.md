@@ -1,10 +1,11 @@
 ---
-author: LanaChin
-ms.author: v-lanachin
+author: lana-chin
+ms.author: v-chinlana
 ms.date: 08/04/2022
 ms.topic: include
 audience: admin
 ms.service: microsoft-365-frontline
+ms.collection: m365-frontline
 ---
 > [!NOTE]
 > Complete this step if you're mapping instances to existing teams that have schedules. If you're mapping to teams that don't have any schedules or if you're creating new teams to map to, you can skip this step.

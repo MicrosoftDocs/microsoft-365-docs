@@ -13,7 +13,6 @@ description: Get an overview of managing mobile shared and BYOD devices for fron
 ms.collection: 
   - m365-frontline
   - highpri
-  - tier2
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
