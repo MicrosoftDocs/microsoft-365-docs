@@ -30,7 +30,7 @@ See the onboarding user guide for more information or contact our team at <testb
 
 **A:** Out-of-box (OOB) tests are standardized, default test runs where application packages are installed, launched and closed 30 times, and then uninstalled.
 
-The packages created for Test Base has the following test scripts: install, launch, close, and optionally the uninstall script.
+The packages created for Test Base have the following test scripts: install, launch, close, and optionally the uninstall script.
 
 The Out-of-box (OOB) tests provide you with standardized telemetry on your application to compare across Windows builds.
 
@@ -93,11 +93,11 @@ While for functional tests, you can specify whether a reboot is required for eac
 
 **Q: How long would my script run?**
 
-**A:** All customer scripts within the package has a script execution limit of 60 mins. Script executions after 60-mins fail with a timeout error.
+**A:** All customer scripts within the package have a script execution limit of 60 mins. Script executions after 60-mins fail with a timeout error.
 
-**Q: How do I investigate time-out failure**
+**Q: How do I investigate time-out failure?**
 
-**A:** 
+**A:** Follow the below mentioned steps:
 1. Check video recording:
     1. to confirm if any Windows pop-up blocked the script execution.  
     2. if command is running in interactive mode and was waiting for input. 
