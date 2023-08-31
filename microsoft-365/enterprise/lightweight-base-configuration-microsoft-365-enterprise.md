@@ -51,7 +51,7 @@ Use the resulting environment to test the features and functionality of [Microso
 
 ## Phase 1: Create your Microsoft 365 E5 subscription
 
-We start with an Microsoft 365 E5 trial subscription and then add the Microsoft 365 E5 subscription to it.
+We start with a Microsoft 365 E5 trial subscription and then add the Microsoft 365 E5 subscription to it.
 
 >[!NOTE]
 >We recommend that you create a trial subscription of Office 365 so that your test environment has a separate Azure AD tenant from any paid subscriptions you currently have. This separation means that you can add and remove users and groups in the test tenant without affecting your production subscriptions.
