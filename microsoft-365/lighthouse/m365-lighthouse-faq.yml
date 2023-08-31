@@ -281,7 +281,7 @@ sections:
         answer: |
           The multitenant capabilities in Microsoft 365 Defender provide large organizations with the ability to secure and manage multiple tenants from a single portal, with a focus on global security operations center (SOC) investigation flows, including a unified view of incidents across tenants and the ability to perform advanced search across the data contained in multiple tenants. The capabilities also help enterprise managed security service providers (MSSPs) efficiently run their SOC.
 
-          For MSPs who manage services for SMB customers and who need a full set of capabilities spanning security, identity, and management of Microsoft 365 applications in a single portal, we continue to recommend Microsoft 365 Lighthouse.  Lighthouse includes a broader set of capabilities optimized for MSPs, particularly those using Microsoft 365 Business Premium and Defender for Business.
+          For MSPs who manage services for SMB customers and who need a full set of capabilities spanning security, identity, and management of Microsoft 365 applications in a unified experience in a single portal, we continue to recommend Microsoft 365 Lighthouse.  Lighthouse includes a broader set of capabilities optimized for MSPs, particularly those using Microsoft 365 Business Premium and Defender for Business.
 
           The following table provides a comparison between Microsoft 365 Lighthouse and the multitenant organization capabilities in Microsoft 365 Defender.
 
