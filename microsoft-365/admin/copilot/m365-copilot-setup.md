@@ -24,15 +24,25 @@ description: "Learn how to prepare your organization for Microsoft 365 Copilot."
 # Get started with Microsoft 365 Copilot
 
 >[!IMPORTANT]
-> The information in this article only applies to the [Microsoft 365 Copilot Early Access Program](https://www.microsoft.com/microsoft-365/blog/2023/05/09/introducing-the-microsoft-365-copilot-early-access-program-and-new-capabilities-in-copilot/), an invite-only paid preview program for commercial customers. Details are subject to change. For more information on the Early Access Program, see [Microsoft 365 Early Access Program FAQ](m365-early-access-program.yml).
+> The information in this article only applies to the [Microsoft 365 Copilot Early Access Program](https://www.microsoft.com/microsoft-365/blog/2023/05/09/introducing-the-microsoft-365-copilot-early-access-program-and-new-capabilities-in-copilot/), an invite-only preview program for commercial customers. Details are subject to change. For more information on the Early Access Program, see [Microsoft 365 Early Access Program FAQ](m365-early-access-program.yml).
 
 [Microsoft 365 Copilot](https://www.microsoft.com/microsoft-365/blog/2023/03/16/introducing-microsoft-365-copilot-a-whole-new-way-to-work/) is an AI-powered productivity tool that uses large language models (LLMs) and integrates your data with the Microsoft Graph and Microsoft 365 Apps. It works alongside popular Microsoft 365 Apps such as Word, Excel, PowerPoint, Outlook, Teams, and more. Copilot provides real-time intelligent assistance, enabling users to enhance their creativity, productivity, and skills. This article covers the technical requirements to access and configure Microsoft 365 Copilot once you're invited to the Early Access Program.
 
 ## Prerequisites for Microsoft 365 Copilot
 
-Before you can access Copilot, you must meet the following requirements:
+Before you can access Copilot, you must meet these requirements:
 
-- **Microsoft 365 Apps for enterprise** must be deployed for your users, which seamlessly integrates with Microsoft 365 Copilot and applications such as Word, Excel, PowerPoint, Outlook, and Teams. To get started with the implementation process, see [Deployment guide for Microsoft 365 Apps](/deployoffice/deployment-guide-microsoft-365-apps).
+- The following applications must be deployed for your users, which seamlessly integrate with Microsoft 365 Copilot and other applications: 
+  - Word
+  - Excel
+  - PowerPoint
+  - Outlook
+  - Microsoft Teams
+  - OneDrive
+  - SharePoint
+  - Exchange
+  
+To get started with the implementation process, see [Deployment guide for Microsoft 365 Apps](/deployoffice/deployment-guide-microsoft-365-apps).
 
 - **Azure Active Directory-based account** To use Microsoft 365 Copilot, you must have an Azure Active Directory-based account. To learn more, see [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis).
 
@@ -45,7 +55,7 @@ Before you can access Copilot, you must meet the following requirements:
 - **Microsoft Loop** To use Copilot in Microsoft Loop, you must have Loop enabled for your tenant. For more information on enabling Loop, see [Get started with Microsoft Loop](https://support.microsoft.com/office/get-started-with-microsoft-loop-9f4d8d4f-dfc6-4518-9ef6-069408c21f0c).
 
 >[!IMPORTANT]
-> Your users must be on the Current Channel to access Copilot. To learn more, see [update channels for Microsoft 365 Apps](/deployoffice/updates/overview-update-channels#current-channel-overview).
+> This note only applies to Microsoft 365 Apps for enterprise subscribers. Your users must be on the Current Channel to access Copilot. To learn more, see [update channels for Microsoft 365 Apps](/deployoffice/updates/overview-update-channels#current-channel-overview).
 
 >[!NOTE]
 > We previously stated that support for the Monthly Enterprise Channel was available for Microsoft 365 Copilot. As we continue to make frequent product updates and enhancements during the early access program, the time between updates in the Monthly Enterprise Channel limits Microsoft's ability to provide an optimum Copilot experience on desktop clients. Going forward, users in the early access program must be on the Current Channel to receive Copilot updates when they become available. We expect support in the Monthly Enterprise Channel in the future.
