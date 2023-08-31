@@ -75,6 +75,7 @@ The following Microsoft Syntex products are currently available:
 - Unstructured document processing
 - Content assembly
 - Image tagging
+- Taxonomy tagging
 - Optical character recognition
 
 The following tags are available:
