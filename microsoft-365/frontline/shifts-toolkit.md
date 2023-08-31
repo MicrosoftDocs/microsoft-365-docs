@@ -19,7 +19,6 @@ ms.collection:
   - m365solution-scenario
   - m365-frontline
   - highpri
-  - tier1
 ms.reviewer: 
 description: Resources to help train your frontline team in using Shifts to access and manage their schedules.
 appliesto: 
