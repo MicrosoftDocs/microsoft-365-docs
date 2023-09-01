@@ -52,7 +52,7 @@ To configure EOP and Defender for Office 365 features, you need permissions. The
 
 ## Step 1: Configure email authentication for your Microsoft 365 domains
 
-Email authentication (also known as *email validation*) is a group of standards to verify that email messages from an sender are legitimate and come from expected sources for the email domain.
+Email authentication (also known as *email validation*) is a group of standards to verify that email messages from a sender are legitimate and come from expected sources for the email domain.
 
 Configure the following email authentication records in DNS for all [custom domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) that you configured in Microsoft 365:
 
@@ -99,7 +99,7 @@ The previous information and the security policies that are involved are summari
 |[Safe Links](safe-links-policies-configure.md)|³|✔|✔|
 |[Safe Attachments](safe-attachments-policies-configure.md)|³|✔|✔|
 |**General behavior**||||
-|Protection on by default?|✔|⁴|✔|
+|Protection on by default?|✔|⁴||
 |Configure conditions/exceptions for protection?||✔⁵|✔|
 |Customize security settings?|✔|⁶|✔|
 |Protection settings automatically updated?||✔||
@@ -120,33 +120,31 @@ The previous information and the security policies that are involved are summari
 
 How security policies are applied is an important consideration as you decide how to configure security settings for users. The important points to remember are:
 
-- Security policies are applied in a specific order of precedence.
-- If a user is intentionally or unintentionally included in multiple policies of the same type (for example, anti-malware policies), the first policy based on the order of precedence defines the feature protection settings for the user's encounter with that specific item (message, file, URL, etc.).
-- Once that first policy of that type (for example, an anti-malware policy) is applied to a specific item for a user, policy processing for that type stops. No more security policies of that type are evaluated for that user and that specific item.
+- Security features have an unconfigurable [order of processing](how-policies-and-protections-are-combined.md). For example, incoming messages are always evaluated for malware before spam.
+- The security policies of a specific feature (anti-spam, anti-malware, anti-phishing, etc.) are applied in a specific order of precedence (more on that later).
+- If a user is intentionally or unintentionally included in multiple policies of a specific feature, the first security policy of that feature where the user is defined (based on the order of precedence) determines what happens to the item (a message, file, URL, etc.).
+- Once that first security policy is applied to a specific item for a user, policy processing for that feature stops. No more security policies of that feature are evaluated for that user and that specific item.
 
 The order of precedence is explained in detail at [Order of precedence for preset security policies and other policies](preset-security-policies.md#order-of-precedence-for-preset-security-policies-and-other-policies), but is briefly summarized here:
 
 1. Preset security policies:
    1. The Strict preset security policy.
    2. The Standard preset security policy.
-2. Custom policies of a specific type (for example, anti-malware policies). Each type of custom policy has a priority value that determines the order of precedence:
-   1. A custom policy of that type with the priority value 0.
-   2. A custom policy of that type with the priority value 1.
+2. Custom policies of a specific feature (for example, anti-malware policies). Each custom policy of a specific feature has a priority value that determines the order that the policy are applied in:
+   1. A custom policy of that feature with the priority value 0.
+   2. A custom policy of that feature with the priority value 1.
    3. And so on.
-3. The default policy of a specific type (for example, anti-malware) or the Built-in protection preset security policy in Defender for Office 365 (Safe Links and Safe Attachments only).
+3. The default policy of a specific feature (for example, anti-malware) or the Built-in protection preset security policy in Defender for Office 365 (Safe Links and Safe Attachments).
 
 Refer to the previous table to see how a specific security policy is represented in the precedence order. For example, anti-malware policies are present at each level. Outbound spam policies are available at the custom policy and default policy levels. The connection filter policy is available only at the default policy level.
 
 To avoid confusion and unintended application of policies, use the following guidelines:
 
 - Use unambiguous groups or lists of recipients at each level. For example, use different groups or lists of recipients for the Standard and Strict preset security policies.
-- Configure exceptions at each level as appropriate. For example, configure recipients who need custom policies as exceptions to the Standard and Strict preset security policy.
-- Remember, any remaining recipients that aren't identified at the higher levels get the default policies.
+- Configure exceptions at each level as required. For example, configure recipients who need custom policies as exceptions to the Standard and Strict preset security policy.
+- Remember, any remaining recipients that aren't identified at the higher levels get the default policies or the Built-in protection preset security policy in Defender for Office 365 (Safe Links and Safe Attachments).
 
 Armed with this information, you can now decided the best way to implement security policies in the organization.
-
-
-
 
 ### Determine your security policy strategy
 
@@ -168,7 +166,7 @@ The following requirements likely indicate that custom policies might be a bette
 
 - Do the majority of users in your organization require security settings that are _different_ from the locked down settings in preset security policies (junk vs. quarantine, hide safety tips, etc.)?
 - Do the majority of users in your organization require settings that _aren't defined_ in preset security policies (for example, blocking email from specific countries or in specific languages in anti-spam policies)?
-- Do the majority of users in your organization need a quarantine experience that's different from the locked down settings in preset security policies? [Quarantine policies](quarantine-policies.md#appendix) define what users can do to their quarantined messages, and whether they're notified about quarantined their quarantined messages. The default end-user quarantine experience is summarized in the table [here](quarantine-end-user.md) and the quarantine policies that are used in the Standard and Strict preset security policies are described in the tables [here](recommended-settings-for-eop-and-office365.md).
+- Do the majority of users in your organization need a quarantine experience that's different from the locked down settings in preset security policies? [Quarantine policies](quarantine-policies.md#appendix) define what users can do to their quarantined messages, and whether they're notified about their quarantined messages. The default end-user quarantine experience is summarized in the table [here](quarantine-end-user.md) and the quarantine policies that are used in the Standard and Strict preset security policies are described in the tables [here](recommended-settings-for-eop-and-office365.md).
 
 
 
