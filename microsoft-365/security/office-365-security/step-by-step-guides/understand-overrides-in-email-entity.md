@@ -28,15 +28,15 @@ The following table lists all overrides, a description of what that override mea
 | Override |Description|Notes|
 | -------- | -------- | -------- |
 | Third Party Filter  |We detected you're using a third party for your MX record and have an SCL-1 transport rule, overriding filtering and Secure by Default.||
-|Admin initiated time travel|Admin triggered investigation, which lead to zero-hour autopurge (ZAP) modifying the delivery location of messages.||
-|Antimalware policy block by file type|The file extension for an attachment within the message matched a banned file type listed in the anti-malware policy for the recipient|You may wish to tweak the file extensions listed in the Common attachments filter section of the anti-malware policy. change|
-|Antispam policy settings|The message matched a custom option in the anti-spam policy for the recipient. For example: "SPF record: hard fail" or "Empty messages".|Check the "Mark as spam" options in the anti-spam policy for the affected recipient.|
-|Connection policy|The message originated from an allowed / blocked IP within your connection filter policy.|Check the "Connection filter policy" within the anti-spam policies section of the security portal.|
-|Exchange transport rule|The message matched a custom transport rule that affected the final delivery location.|You can use the email entity page, or Exchange message trace to highlight which transport rule was triggered.|
-|Exclusive mode (User override)|The recipient has chosen to mark all messages as spam unless they're received from a sender in their trusted contact list.|The recipient has likely configured: "Don't trust email unless it comes from someone in my Safe Senders and Recipients list" within the Junk email settings in Outlook or OWA.|
+|Admin initiated time travel|Admin triggered investigation, which lead to zero-hour autopurge (ZAP) modifying the delivery location of messages.|[Learn more about ZAP.](/microsoft-365/security/office-365-security/zero-hour-auto-purge)|
+|Antimalware policy block by file type|The file extension for an attachment within the message matched a banned file type listed in the anti-malware policy for the recipient|You may wish to tweak the file extensions listed in the Common attachments filter section of the anti-malware policy. [Learn more.](/microsoft-365/security/office-365-security/anti-malware-policies-configure)|
+|Antispam policy settings|The message matched a custom option in the anti-spam policy for the recipient. For example: "SPF record: hard fail" or "Empty messages".|Check the "Mark as spam" options in the anti-spam policy for the affected recipient. [Learn more.](/microsoft-365/security/office-365-security/anti-spam-policies-configure)|
+|Connection policy|The message originated from an allowed / blocked IP within your connection filter policy.|Check the "Connection filter policy" within the anti-spam policies section of the security portal. [Learn more.](/microsoft-365/security/office-365-security/connection-filter-policies-configure)|
+|Exchange transport rule|The message matched a custom transport rule that affected the final delivery location.|You can use the email entity page, or Exchange message trace to highlight which transport rule was triggered. [Learn more.](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)|
+|Exclusive mode (User override)|The recipient has chosen to mark all messages as spam unless they're received from a sender in their trusted contact list.|The recipient has likely configured: "Don't trust email unless it comes from someone in my Safe Senders and Recipients list" within the Junk email settings in Outlook or OWA. [Learn more.](/powershell/module/exchange/set-mailboxjunkemailconfiguration?view=exchange-ps)|
 |Filtering skipped due to on-premises organization|The message was marked as nonspam by your Exchange on-premises environment before being delivered to Exchange Online|You should review your on-premises environment to locate the source of the override.|
-|IP region filter from policy|The message was detected as coming from a country/region that an admin has selected to block in the anti-spam policy for the recipient.|Modify the "From these countries/regions" option within the anti-spam policy applied to the affected recipient.|
-|Language filter from policy|The message was detected as containing a language that an admin has selected to block in the anti-spam policy for the recipient.|Modify the "Contains specific languages" option within the anti-spam policy to the affected recipient.|
+|IP region filter from policy|The message was detected as coming from a country/region that an admin has selected to block in the anti-spam policy for the recipient.|Modify the "From these countries/regions" option within the anti-spam policy applied to the affected recipient. [Learn more.](/microsoft-365/security/office-365-security/anti-spam-policies-configure)|
+|Language filter from policy|The message was detected as containing a language that an admin has selected to block in the anti-spam policy for the recipient.|Modify the "Contains specific languages" option within the anti-spam policy to the affected recipient. [Learn more.](/microsoft-365/security/office-365-security/anti-spam-policies-configure)|
 |Phishing simulation|The message met the criteria defined by an administrator to be considered a phishing simulation message.|Criteria are within the "Phishing simulation" tab within Advanced delivery in the security portal.|
 |Quarantine release| The recipient or an administrator released this message from quarantine.||
 |SecOps Mailbox|The message was sent to the specific security operations mailbox defined by an administrator.|Mailboxes are defined within the "SecOps mailbox" tab within Advanced delivery in the security portal.|
@@ -53,9 +53,9 @@ The following table lists all overrides, a description of what that override mea
 |Trusted recipient (User override)|The recipient has added this sender to their safe recipients list within Outlook, emails sent to this sender aren't treated as junk email.|The recipient has likely configured "Safe Recipients" within Outlook's Junk email options.|
 |Trusted senders only (User override)|This override has same behavior as the Exclusive mode (User override), primarily used in outlook.com.|See "Exclusive mode (User override)"|
 
-
 ## Next steps
 
 You can find a similar detailed table covering all the different detection technologies at [aka.ms/emailtech](/microsoft-365/security/office-365-security/step-by-step-guides/understand-detection-technology-in-email-entity).
+
 
 
