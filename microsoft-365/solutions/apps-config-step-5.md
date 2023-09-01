@@ -16,6 +16,8 @@ keywords:
 
 # Step 5. Configure Microsoft Teams
 
+https://learn.microsoft.com/en-us/mem/intune/apps/manage-microsoft-teams
+
 - Teams iOS devices
     - nothing predefined, however several key settings
 - Teams Android MAM

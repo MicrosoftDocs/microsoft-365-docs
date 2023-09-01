@@ -16,6 +16,11 @@ keywords:
 
 # Step 4. Configure Microsoft Edge
 
+https://learn.microsoft.com/en-us/mem/intune/apps/manage-microsoft-edge
+
+https://learn.microsoft.com/en-us/mem/intune/apps/app-configuration-policies-use-ios#allow-only-configured-organization-accounts-in-apps
+https://learn.microsoft.com/en-us/mem/intune/apps/app-configuration-policies-use-android#allow-only-configured-organization-accounts-in-apps
+
 - Edge iOS devices
     - nothing predefined, however several key settings
 - Edge Android MAM
