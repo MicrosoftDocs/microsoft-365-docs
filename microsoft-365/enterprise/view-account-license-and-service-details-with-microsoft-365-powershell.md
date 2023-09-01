@@ -104,6 +104,7 @@ $allLicenses | ForEach-Object {
 }
 
 ```
+See also https://mikeoneill.blog/exchange_addin/get-eaio365licenseinfowithplans/
 
 ## Use the Azure Active Directory PowerShell for Graph module
 
