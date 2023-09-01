@@ -201,7 +201,7 @@
          "redirect_document_id":false
       },
       {
-         "source_path":"/scheduler/index.yml",
+         "source_path":"scheduler/index.yml",
          "redirect_url":"https://news.microsoft.com/reinventing-productivity",
          "redirect_document_id":false
       }
