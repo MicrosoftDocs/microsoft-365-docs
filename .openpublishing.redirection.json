@@ -199,6 +199,11 @@
          "source_path":"security/defender-endpoint/enable-microsoft-defender-for-iot-integration.md",
          "redirect_url":"/azure/defender-for-iot/organizations/concept-enterprise",
          "redirect_document_id":false
+      },
+      {
+         "source_path":"/scheduler/index.yml",
+         "redirect_url":"https://news.microsoft.com/reinventing-productivity",
+         "redirect_document_id":false
       }
   
     ]
