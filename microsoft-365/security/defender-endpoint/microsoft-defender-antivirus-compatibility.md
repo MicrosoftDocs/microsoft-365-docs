@@ -139,7 +139,6 @@ Defender for Endpoint affects whether Microsoft Defender Antivirus can run in pa
 | [Cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) | Yes | No  | No |
 | [Network protection](network-protection.md)  | Yes | No | No |
 | [Attack surface reduction rules](attack-surface-reduction.md)  | Yes | No | No  |
-| [Limited periodic scanning availability](limited-periodic-scanning-microsoft-defender-antivirus.md) | No | Yes | No |
 | [File scanning and detection information](review-scan-results-microsoft-defender-antivirus.md) | Yes | Yes <br/>[See note 2](#notes-about-protection-states) | No |
 | [Threat remediation](configure-remediation-microsoft-defender-antivirus.md) | Yes | [See note 3](#notes-about-protection-states) | No | 
 | [Security intelligence updates](microsoft-defender-antivirus-updates.md) | Yes | Yes <br/>[See note 4](#notes-about-protection-states) | No | 
@@ -274,3 +273,4 @@ You might also use [limited periodic scanning](limited-periodic-scanning-microso
 - [EDR in block mode](edr-in-block-mode.md)
 - [Learn about Endpoint data loss prevention](/microsoft-365/compliance/endpoint-dlp-learn-about)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+
