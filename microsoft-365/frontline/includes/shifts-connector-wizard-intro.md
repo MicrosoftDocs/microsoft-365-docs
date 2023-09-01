@@ -1,10 +1,11 @@
 ---
-author: daisyfell
-ms.author: daisyfeller
+author: lana-chin
+ms.author: v-chinlana
 ms.date: 03/01/2023
 ms.topic: include
 audience: admin
 ms.service: microsoft-365-frontline
+ms.collection: m365-frontline
 ---
 The Shifts connector wizard in the Microsoft 365 admin center enables you to integrate the Shifts app in Microsoft Teams with your workforce management (WFM) system. Your frontline workers can seamlessly view and manage their schedules in your WFM system from within Shifts.
 
