@@ -1034,6 +1034,11 @@
         "source_path":"microsoft-365/enterprise/move-sharepoint-between-geo-locations.md",
         "redirect_url":"/microsoft-365/enterprise/m365-dr-workload-spo",
         "redirect_document_id":true
+     },
+     {
+        "source_path":"microsoft-365/enterprise/lang-service-health.md",
+        "redirect_url":"/microsoft-365/enterprise/view-service-health",
+        "redirect_document_id":true
      }
   ]
 }

@@ -44,7 +44,7 @@ A billing profile contains payment method and invoice information associated wit
 > If you follow these steps and the billing profiles list is empty, it means that you don't have a billing profile, and can't use this feature.
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
-   - If you're using the **Simplified view**, select **Subscriptions**, then select **View payment methods**.
+   - If you're using the **Simplified view**, select **Billing**, then select **View payment methods**.
    - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.
 2. On the **Bills & payments** page, select the **Billing profile** tab.
 3. Select a billing profile name to view its details page.
@@ -93,7 +93,7 @@ Only a billing profile owner can grant access to billing profile roles. You can 
 > You can only assign billing profile roles to users in your organization.
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
-   - If you're using the **Simplified view**, select **Subscriptions**, then select **View payment methods**.
+   - If you're using the **Simplified view**, select **Billing**, then select **View payment methods**.
    - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.
 2. On the **Bills & payments** page, select the **Billing profile** tab.
 3. Select a billing profile name to view its details page.
@@ -105,7 +105,7 @@ Only a billing profile owner can grant access to billing profile roles. You can 
 You can view the roles assigned to users for a billing account and related billing profiles across associated tenants.
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
-   - If you're using the **Simplified view**, select **Subscriptions**, then select **View payment methods**.
+   - If you're using the **Simplified view**, select **Billing**, then select **View payment methods**.
    - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.
 2. On the **Bills & payments** page, select the **Billing profile** tab.
 3. Select a billing profile name to view its details page.

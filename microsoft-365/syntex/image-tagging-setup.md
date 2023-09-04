@@ -1,5 +1,5 @@
 ---
-title: Set up and manage image tagging in Microsoft Syntex
+title: Set up and manage enhanced image tagging in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -14,10 +14,10 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-description: Learn how to set and configure image tagging in Microsoft Syntex.
+description: Learn how to set and configure enhanced image tagging in Microsoft Syntex.
 ---
 
-# Set up and manage image tagging in Microsoft Syntex
+# Set up and manage enhanced image tagging in Microsoft Syntex
 
 The image tagging service for Microsoft Syntex is set up in the Microsoft 365 admin center.
 

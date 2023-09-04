@@ -6,7 +6,7 @@ ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
 ms.reviewer: pahuijbr, mkaminska, v-vutrieu
-ms.date: 08/07/2023
+ms.date: 08/29/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -25,6 +25,35 @@ search.appverid: met150
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Microsoft regularly releases [security intelligence updates and product updates for Microsoft Defender Antivirus](microsoft-defender-antivirus-updates.md). It's important to keep Microsoft Defender Antivirus up to date. When a new package version is released, support for the previous two versions is reduced to technical support only. Versions that are older than the previous two versions are listed in this article and are provided for technical upgrade support only.
+
+## May-2023 (Platform: 4.18.23050.3 | Engine:  1.1.23050.2)
+
+- Security intelligence update version:  **1.391.64.0**    
+- Released: **May 31, 2023**    
+- Platform: **4.18.23050.3**    
+- Engine: **1.1.23050.2**    
+- Support phase: **Technical upgrade support (only)**  
+   
+### What's new  
+
+- New version format for Platform and Engine (see the [April-2023 update](#whats-new))
+- Improved processing of SmartLockerMode  
+- Fixed input parameters for DefinitionUpdateChannel cmdlet in [Set-MpPreference](/powershell/module/defender/set-mppreference)  
+- Improved installation experience for [Windows Server 2012 R2 and Windows Server 2016](microsoft-defender-antivirus-on-windows-server.md)  
+- Added ability to disable Defender task maintenance tasks programmatically  
+- Fixed WDFilter 0x50 bug check  
+- Fixed print enforcement issue for device control  
+- Fixed scan randomization issue when setting Intune policy  
+- Fixed sense offboarding on Windows Server 2016 when [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) is enabled  
+- Fixed inconsistent results of caching files with the internal Defender file cache  
+- Augmented attack surface reduction (ASR) telemetry with more data related to an ASR detection  
+- Removed Image File Execution Options (IFEO) debugger value during installation, which can be used to prevent service starts
+- Fixed memory leaked in ASR logic  
+- Improved validation guard-rail for Malicious Software Removal Tool (MSRT) releases
+  
+### Known Issues  
+
+- Potential issue that could lead to resolution of incorrect service endpoint
 
 ## April-2023 (Platform: 4.18.2304.8 | Engine: 1.1.20300.3)
 
