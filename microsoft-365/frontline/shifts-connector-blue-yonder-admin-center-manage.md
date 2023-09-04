@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.collection:
   - M365-collaboration
   - m365-frontline
-  - tier2
+  - teams-1p-app-admin
 appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
@@ -50,9 +50,9 @@ You can use the [Shifts connector wizard](shifts-connector-wizard.md) (Preview) 
 > [!IMPORTANT]
 > Before mapping a Blue Yonder WFM instance to a Microsoft team, check if the team has schedule entities such as shifts or time off. If the team has an existing schedule with schedule entities, [remove the schedule entities from the team](shifts-connector-wizard.md#remove-schedule-entities-from-teams-you-want-to-map) before you map a Blue Yonder WFM instance to it. If you don't remove schedule entities before mapping, you'll see duplicate shifts.
 
-- To create a new connection instance, select **Create instance**. You'll be taken to the wizard, where you can [choose your settings and create mappings](shifts-connector-wizard.md#create-a-connection-instance).
-- To change an existing connection instance, go to **Actions** and select **Edit**. You'll be taken to the wizard, where you can [update the settings and mappings](shifts-connector-wizard.md#create-a-connection-instance).
-- To delete an existing connection instance, go to **Actions** and select **Delete**. You cannot undo this.
+- To create a new connection instance, select **Create instance**. You're taken to the wizard, where you can [choose your settings and create mappings](shifts-connector-wizard.md#create-a-connection-instance).
+- To change an existing connection instance, go to **Actions** and select **Edit**. You're taken to the wizard, where you can [update the settings and mappings](shifts-connector-wizard.md#create-a-connection-instance).
+- To delete an existing connection instance, go to **Actions** and select **Delete**. You can't undo this action.
 - To view more details about an existing connection instance, select its name. On the details page, you'll see health information, including ongoing errors (if any), and mappings. You can also choose **Edit** to update settings in the wizard or **Back** to return to the Connector Management Console.
 
   :::image type="content" source="media/shifts-connector-blue-yonder-manage-details.png" alt-text="Screenshot of the details page for a connection, showing connector health and mappings information." lightbox="media/shifts-connector-blue-yonder-manage-details.png":::
@@ -61,7 +61,7 @@ For a complete list of error messages and how to resolve them, see [List of erro
 
 #### Edit connection instance
 
-To **edit your connection instance settings**, you'll need to choose the data that your Shifts users can see and change. You'll be given the following options for these settings:
+To **edit your connection instance settings**, choose the data that your Shifts users can see and change. You have the following options for these settings:
 
 - **Shifts users will not see provider data**: Data won't sync between Blue Yonder WFM and Shifts. <br>
 - **Shifts users can see provider data**: Data syncing is unidirectional from Blue Yonder WFM to Shifts. <br>
@@ -83,13 +83,12 @@ To **edit your connection instance settings**, you'll need to choose the data th
 >
 > After you edit your settings, make sure you follow the steps to [Disable open shifts, open shifts requests, swap requests, and time off requests.](/microsoft-365/frontline/shifts-connector-wizard#disable-open-shifts-open-shifts-requests-swap-requests-and-time-off-requests)
 
-To **Edit your connection instance mappings**, you'll have the choice of:
+To **Edit your connection instance mappings**, you have the choice of:
 
 - Adding new mappings, by following the same process as when you first create your connection instance. See [Map Blue Yonder Workforce Management instances to teams](/microsoft-365/frontline/shifts-connector-wizard#map-blue-yonder-workforce-management-instances-to-teams)
-- Edit existent mappings, to update the Microsoft Teams to which a WFM instance is connected to.
-  If you are mapping to team in Microsoft Teams that has previously used Shifts, make sure you [Remove schedule entities from teams you want to map](/microsoft-365/frontline/shifts-connector-wizard?#remove-schedule-entities-from-teams-you-want-to-map)
-- Deleting active mappings, either by selecting to un-tick the checkbox of the WFM instance mapped, or by uploading the CSV file with the removed un-desired mapping row.
-
+- Edit existing mappings, to update the team in Microsoft Teams to which a WFM instance is connected.
+  If you're mapping to team in Microsoft Teams that has previously used Shifts, make sure you [remove schedule entities from teams you want to map](/microsoft-365/frontline/shifts-connector-wizard?#remove-schedule-entities-from-teams-you-want-to-map)
+- Deleting active mappings, either by clearing the checkbox of the mapped WFM instance, or by uploading the CSV file with the mapping rows removed.
   
 ## List of error messages
 
@@ -98,9 +97,9 @@ Here's the list of error messages that you may encounter and information to help
 |Error type |Error details |Resolution |
 |---------|---------|---------|
 |Unable to authenticate workforce management system.|The workforce management system account credentials you've provided are invalid or this account doesn't have the required permissions.|Update your WFM service account credentials in the connection settings page. To do this, go to your Microsoft 365 admin center and choose **Edit** next to the connection on the Connector Management Console page.|
-|Unable to authenticate Graph. |Authentication failed. Ensure that you've entered valid credentials for the designated actor and have the required permissions.|Make sure that your Microsoft 365 system account (also known as designated actor) is added as a team owner. Or, update your Microsoft 365 system account to the correct team owner. To do this, in the Microsoft 365 admin center, choose **Edit** next to the connection instance on the Connector Management Console page. You will be redirected to the wizard and, in the Sync Settings page, you can update the Microsoft 365 system account.|
+|Unable to authenticate Graph. |Authentication failed. Ensure that you've entered valid credentials for the designated actor and have the required permissions.|Make sure that your Microsoft 365 system account (also known as designated actor) is added as a team owner. Or, update your Microsoft 365 system account to the correct team owner. To do this, in the Microsoft 365 admin center, choose **Edit** next to the connection instance on the Connector Management Console page. You're redirected to the wizard and, on the Sync Settings page, you can update the Microsoft 365 system account.|
 |Some users have failed to map correctly|Mapping failed for some users: \<X\> succeeded, \<X\> failed Azure Active Directory users and \<X\> failed workforce management system users.|Use the [Get-CsTeamsShiftsConnectionSyncResult](/powershell/module/teams/get-csteamsshiftsconnectionsyncresult) cmdlet or [this PowerShell script](shifts-connector-powershell-manage.md#user-mapping-errors) to identify the users for whom the mapping failed. Make sure that the users in the mapped team match the users in the WFM instance.|
-|Unable to map a team or teams in this batch |This designated actor profile doesn't have team ownership privileges. |Make sure that your Microsoft 365 system account (also known as designated actor) is added as a team owner. Or, update your Microsoft 365 system account to the correct team owner. To do this, in the Microsoft 365 admin center, choose **Edit** next to the connection instance on the Connector Management Console page. You will be redirected to the wizard and, in the Sync Settings page, you can update the Microsoft 365 system account. |
+|Unable to map a team or teams in this batch |This designated actor profile doesn't have team ownership privileges. |Make sure that your Microsoft 365 system account (also known as designated actor) is added as a team owner. Or, update your Microsoft 365 system account to the correct team owner. To do this, in the Microsoft 365 admin center, choose **Edit** next to the connection instance on the Connector Management Console page. You're redirected to the wizard and, on the Sync Settings page, you can update the Microsoft 365 system account. |
 |&nbsp; |This team is already mapped to an existing connection instance. |Unmap the team from the existing connection instance by using the [Remove-CsTeamsShiftsConnectionTeamMap](/powershell/module/teams/remove-csteamsshiftsconnectionteammap) cmdlet. Or, create a new connection to remap the team.|
 |&nbsp; |This timezone is invalid. The timezone passed in isn't using tz database format.|Make sure that the time zone is correct, and then remap the team.|
 |&nbsp; |We can't find this connection instance.|Map the team to an existing connection instance.|
