@@ -24,7 +24,7 @@ description: "Learn what happens to your data when your Microsoft 365 for busine
 ms.date: 01/10/2023
 ---
 
-# What happens to my data and access when my Microsoft 365 for business subscription ends?
+# What happens to my data and access when my Microsoft 365 for business or enterprise subscription ends?
 
 If your subscription ends—either because it expires, or because you decide to upgrade or cancel it—your access to Microsoft 365 services, applications, and customer data go through multiple stages before the subscription is fully turned off, or *deleted*. If you're aware of this progression, you're better equipped to return your subscription to an active stage before it's too late, or, if you're leaving Microsoft 365, back up your data before it's ultimately deleted.
 
