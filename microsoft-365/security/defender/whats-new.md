@@ -41,7 +41,7 @@ For more information on what's new with other Microsoft Defender security produc
 You can also get product updates and important notifications through the [message center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter).
 
 ## September 2023
-- (Preview) Custom detections using data from Microsoft Defender for Identity and Microsoft Defender for Cloud Apps, specifically the `CloudAppEvents`, `IdentityDirectoryEvents`, `IdentityLogonEvents`, and `IdentityQueryEvents` [tables](custom-detection-rules?view=o365-worldwide#tables-that-support-continuous-nrt-frequency) can now be run in near real-time [Continuous (NRT)](custom-detection-rules.md) frequency.
+- (Preview) Custom detections using data from Microsoft Defender for Identity and Microsoft Defender for Cloud Apps, specifically the `CloudAppEvents`, `IdentityDirectoryEvents`, `IdentityLogonEvents`, and `IdentityQueryEvents` [tables](custom-detection-rules.md#tables-that-support-continuous-nrt-frequency) can now be run in near real-time [Continuous (NRT)](custom-detection-rules.md) frequency.
 
 
 ## August 2023
