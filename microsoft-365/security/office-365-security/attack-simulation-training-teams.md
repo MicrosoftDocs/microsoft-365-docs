@@ -36,7 +36,7 @@ The addition of Teams in Attack simulation training affects the following featur
 
 ## Teams simulation configuration
 
-For the tenants enrolled in the Attack simulation training for Teams Private preview, follow the below given configurations steps: 
+If your organization is enrolled in Attack simulation training for Teams Private Preview, carry out the following configuration steps: 
 
 In addition to having user reporting for Teams messages turned on as described in [User reported message settings in Microsoft Teams](submissions-teams.md), you also need to configure the Teams accounts that can be used as sources for simulation messages in Attack simulation training. To configure the accounts, do the following steps:
 
