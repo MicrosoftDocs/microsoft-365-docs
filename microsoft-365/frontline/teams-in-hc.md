@@ -1,7 +1,7 @@
 ---
 title: Get started with Microsoft 365 for healthcare organizations
 author: lana-chin
-ms.author: v-chinlana
+ms.author: heidip
 manager: serdars
 audience: ITPro
 ms.topic: conceptual

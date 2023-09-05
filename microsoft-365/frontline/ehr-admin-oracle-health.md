@@ -1,7 +1,7 @@
 ---
 title: Virtual Appointments with Teams - Integration into Oracle Health EHR
 author: lana-chin
-ms.author: v-chinlana
+ms.author: heidip
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
