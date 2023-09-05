@@ -73,11 +73,6 @@ As an admin, you can also take management actions on these apps such as removing
 2. Consent to the removal terms.
 3. Select **Remove**, then select **Done**.
 
-> [!NOTE]
-> Removing a custom app from the Deployed Apps list on Integrated Apps will delete the deployment and the app will no longer be available for install to end users in your organization on Outlook and/or the Microsoft 365 App. If the custom app is also supported on Teams, it will be removed from the Teams admin center.
->
-> Please verify if the app was successfully removed from both the Microsoft 365 admin center and Teams admin center.
-
 ### To edit the user assignment of an app
 
 1. Select **Edit users** in the overview tab of an app from the **Deployed Apps** list.
@@ -219,3 +214,14 @@ Once finished, the app will be deployed to Outlook and the Microsoft 365 App. To
 
 > [!NOTE]
 > Before uploading a custom app from Integrated Apps on Microsoft 365 admin center, please verify if this app is visible in the Available Apps list. If it is visible, please deploy the app using the steps outlined above.
+
+### Removal of a custom app
+
+1. Select **Remove app** in the overview tab of an app from the **Deployed Apps** list.
+2. Consent to the removal terms.
+3. Select **Remove**, then select **Done**.
+
+> [!NOTE]
+> Removing a custom app from the Deployed Apps list on Integrated Apps will delete the deployment and the app will no longer be available for install to end users in your organization on Outlook and/or the Microsoft 365 App. If the custom app is also supported on Teams, it will be removed from the Teams admin center.
+>
+> Please verify if the app was successfully removed from both the Microsoft 365 admin center and Teams admin center.
