@@ -50,7 +50,7 @@ sections:
       - question: |
           What happens if Microsoft Defender Antivirus isn't active on a device?
         answer: |
-          If non-Microsoft antivirus/antimalware software is installed on a device, when that device is onboarded to Microsoft Defender for Endpoint, Microsoft Defender Antivirus runs in passive mode by default. In this case, tamper protection continues to protect the service and its features.
+          If non-Microsoft antivirus/antimalware software is installed on a device, when that device is onboarded to Microsoft Defender for Endpoint, Microsoft Defender Antivirus runs in passive mode by default. Tamper protection protects the service and its features.
 
           If/when non-Microsoft antivirus/antimalware software is uninstalled, Microsoft Defender Antivirus switches to active mode automatically. Tamper protection continues to protect the service and its features.
 
