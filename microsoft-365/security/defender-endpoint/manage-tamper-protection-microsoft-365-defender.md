@@ -3,10 +3,9 @@ title: Manage tamper protection for your organization using Microsoft 365 Defend
 ms.reviewer: joshbregman, mattcall, pahuijbr, hayhov, oogunrinde
 manager: dansimp
 description: Turn tamper protection on or off for your tenant using the Microsoft 365 Defender portal.
-keywords: malware, defender, antivirus, tamper protection, Microsoft 365 Defender
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
-ms.date: 03/09/2023
+ms.date: 09/05/2023
 audience: ITPro
 ms.topic: conceptual
 author: denisebmsft
