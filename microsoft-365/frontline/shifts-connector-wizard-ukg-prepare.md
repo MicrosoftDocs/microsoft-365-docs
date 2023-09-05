@@ -241,11 +241,14 @@ Here's how frontline managers (FLM) and frontline workers (FLW) are set up in th
 |Contoso/Retail/Central London/Covent Garden|FLW11, FLW12, FLW13, FLW14<br>FLW15, FLW16|Leather goods sales associate<br>Sales associate|FLM2|
 |Contoso/Retail/Central London/Chelsea|FLW17, FLW18, FLW19, FLW20<br>FLW21, FLW21, FLW23<br>FLW24|Sales associate<br>Personal shopper<br>Beauty advisor|FLM3|-->
 
-|UKG Dimensions location|Users|Primary job|Job transfers|Reports to|
-|---------|---------|---------|---------|---------|
-|Contoso/Retail/Central London/Soho|FLW1, FLW2<br>FLW3, FLW4<br>FLW5, FLW6, FLW7<br>FLW8, FLW9, FLW10|Beauty advisor<br>Leather goods sales associate<br>Sales associate<br>Personal shopper|FLW1 can work as a beauty advisor in Central London/Chelsea<br>FLW5 can work as a sales associate in Central London/Covent Garden and Central London/Chelsea|FLM1|
-|Contoso/Retail/Central London/Covent Garden|FLW11, FLW12<br>FLW13, FLW14|Leather goods sales associate<br>Sales associate|Not applicable|FLM2|
-|Contoso/Retail/Central London/Chelsea|FLW15<br>FLW16<br>FLW17|Sales associate<br>Personal shopper<br>Beauty advisor|Not applicable|FLM3|
+|UKG Dimensions location|Users|Primary job|Reports to|
+|---------|---------|---------|---------|
+|Contoso/Retail/Central London/Soho|FLW1&sup1;, FLW2<br>FLW3, FLW4<br>FLW5&sup2;, FLW6, FLW7<br>FLW8, FLW9, FLW10|Beauty advisor<br>Leather goods sales associate<br>Sales associate<br>Personal shopper|FLM1|
+|Contoso/Retail/Central London/Covent Garden|FLW11, FLW12<br>FLW13, FLW14|Leather goods sales associate<br>Sales associate|FLM2|
+|Contoso/Retail/Central London/Chelsea|FLW15<br>FLW16<br>FLW17|Sales associate<br>Personal shopper<br>Beauty advisor|FLM3|
+
+&sup1;FLW1 can also work as a beauty advisor in Central London/Chelsea.<br>
+&sup2;FLW5 can also work as a sales associate in Central London/Covent Garden and Central London/Chelsea.
 
 #### What does mean when I set up teams in Teams?
 
@@ -262,7 +265,7 @@ In this scenario, the IT admin organizes teams in Teams as follows.
     |Covent Garden Store team|FLW5, FLW11, FLW12, FLW13, FLW14|FLM2|
     |Chelsea Store team |FLW1, FLW5, FLW15, FLW16, FLW17|FLM3|
 
-Keep in mind that FLW1 and FLW5 are added as members of all teams that they're allowed to work at. The other frontline works aren't allowed to work at other stores, and are added only to the team that represents their primary job location.
+    Keep in mind that FLW1 and FLW5 are added to all teams for the store locations that they're allowed to work at. The other frontline workers aren't allowed to work at other stores, and are added only to the team that represents their primary job location.
 
 <!--Here's how the team structure looks like for each store in the Central London Area.x
 
@@ -284,11 +287,19 @@ When the IT admin sets up a connection instance in the [wizard](shifts-connector
 
 #### What does this look like in Shifts?
 
-In Shifts, the scheduling groups of each team represent the primary jobs defined for the store location.
+In Shifts, the scheduling groups of each team represent the jobs defined for the store location.
+
+Within each store, in Shifts:
 
 - Frontline managers see employees within their respective scheduling groups.
 - Frontline workers see their own schedule and their team's schedule.
+- Frontline workers can communicate within their own Store shift via ‘Teams shifts chat’. Additionally, using Tags they can directly reach others who are on-shift in real time within their store.
+- Frontline workers and managers can request time off, swap shifts, offer shifts and open shifts if the requests are configured in the UKG Dimensions.  
 
+For employees who work at multiple stores, in Shifts:
+
+- Frontline workers and managers can only request within a particular store. We currently don't support requests between stores.
+- Frontline workers can view their schedule and their team’s schedule in any store they work at.
 
 <!--The Shifts connector wizard in the Microsoft 365 admin center enables you to integrate the Shifts app in Microsoft Teams with your workforce management (WFM) system. Your frontline workers can seamlessly view and manage their schedules in your WFM system from within Shifts.
 
