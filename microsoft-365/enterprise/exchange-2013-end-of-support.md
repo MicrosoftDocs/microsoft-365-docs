@@ -1,6 +1,6 @@
 ---
 title: "Exchange 2013 end of support roadmap"
-ms.author: jhendr
+ms.author: serdars
 author: JoanneHendrickson
 manager: serdars
 ms.date: 08/10/2020

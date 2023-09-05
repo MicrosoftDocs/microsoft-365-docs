@@ -6,7 +6,7 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-smandalika
+ms.author: dansimp
 author: v-smandalika
 ms.localizationpriority: high
 ms.date: 02/16/2023
