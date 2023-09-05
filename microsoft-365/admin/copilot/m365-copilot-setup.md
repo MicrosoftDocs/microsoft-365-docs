@@ -44,8 +44,6 @@ Before you can access Copilot, you must meet these requirements:
   
 To get started with the implementation process, see [Deployment guide for Microsoft 365 Apps](/deployoffice/deployment-guide-microsoft-365-apps).
 
-- **Azure Active Directory-based account** To use Microsoft 365 Copilot, you must have an Azure Active Directory-based account. To learn more, see [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis).
-
 - **OneDrive Account** You need to have a OneDrive account for several features within Microsoft 365 Copilot, such as saving and sharing your files. For more information, see [Sign in or create an account for OneDrive](https://support.microsoft.com/office/video-sign-in-or-create-an-account-for-onedrive-3adf09fd-90e3-4420-8c4e-b55e2cde40d2?ui=en-us&rs=en-us&ad=us).
 
 - **New Outlook for Windows** For seamless integration of Microsoft 365 Copilot with Outlook, you are required to use the new Outlook for Windows, currently in preview. You can switch to Outlook Mobile to access the new Outlook experience. For more information, see [Getting started with the new Outlook for Windows](https://support.microsoft.com/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627).
