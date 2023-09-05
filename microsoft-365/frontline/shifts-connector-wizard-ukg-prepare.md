@@ -99,16 +99,23 @@ Configure the connector's redirection URL. This allows UKG Dimensions to redirec
 
 ### Create at least one team in Teams
 
-Create at least one team in Teams, and add the following account and people to it:
+Create at least one team in Teams, and add the following people and account to it:
 
-- Frontline workers as teams members
-- Frontline managers as team owners
+- Frontline workers as team members
+- Frontline managers as team owners and/or schedule owners. To learn more about schedule owners, see [Schedule Owner for shift management](schedule-owner-for-shift-management.md).
+
+    > [!NOTE]
+    > When adding people to your teams, make sure you do the following:
+    >
+    > - Add frontline workers to every team that they're allowed to work at, based on their UKG Dimensions locations.
+    > - Add frontline managers to every team in which they have frontline workers as direct reports. Otherwise, managers will only receive workers' requests in UKG Dimensions and not in Shifts.  
+
 - A general account, what we call the Microsoft 365 system account, as team owner.
 
     > [!NOTE]
     > The Microsoft 365 system account is a general account must be added as team owner to all teams you want to map. [Create this account in the Microsoft 365 admin center](/microsoft-365/admin/add-users/add-users) and assign it a Microsoft 365 license. Then, add the account as a team owner. The Shifts connector uses this account when syncing Shifts changes from UKG Dimensions. We recommend you create an account specifically for this purpose and not use your personal user account.
 
-If you want to create more than one team, see [Deploy frontline static teams at scale](deploy-teams-at-scale.md).
+For guidance on creating frontline teams, see [How to find the best frontline team solution for your organization](frontline-team-options.md). If you want to create more than one team, see [Deploy frontline dynamic teams at scale](deploy-dynamic-teams-at-scale.md) and [Deploy frontline static teams at scale](deploy-teams-at-scale.md).
 
 <a name="remove_schedules"> </a>
 
@@ -201,7 +208,7 @@ Contoso has hundreds of retail stores spread across the United Kingdom. Each sto
 Assumptions:
 
 - Each store is managed by a different manager.
-- Frontline workers can't take on shifts from other stores. In other words, business rules set up in UKG Dimensions don't allow employees to work at other stores.
+- Some frontline workers are allowed to take shifts from other stores within the Central London Area. In other words, in UKG Dimensions, these frontline workers are part of a job transfer set.
 
 ### UKG Dimensions location structure
 
@@ -225,13 +232,20 @@ In this scenario, the UKG Dimensions location structure looks something like thi
 |    4|Personal shopper |Job type|
 |    4|Beauty advisor |Job type|
 
-Based on the location structure, UKG Dimensions would provide the following information.
+<!--Based on the location structure, UKG Dimensions would provide the following information.-->
+Here's how frontline managers (FLM) and frontline workers (FLW) are set up in the location structure in UKG Dimensions.
 
-|UKG Dimensions location|Workers|Primary job|Reports to|
+<!--|UKG Dimensions location|Users|Primary job|Reports to|
 |---------|---------|---------|---------|
 |Contoso/Retail/Central London/Soho|FLW1, FLW2<br>FLW3, FLW4<br>FLW5, FLW6, FLW7<br>FLW8, FLW9, FLW10|Beauty advisor<br>Leather goods sales associate<br>Sales associate<br>Personal shopper|FLM1|
 |Contoso/Retail/Central London/Covent Garden|FLW11, FLW12, FLW13, FLW14<br>FLW15, FLW16|Leather goods sales associate<br>Sales associate|FLM2|
-|Contoso/Retail/Central London/Chelsea|FLW17, FLW18, FLW19, FLW20<br>FLW21, FLW21, FLW23<br>FLW24|Sales associate<br>Personal shopper<br>Beauty advisor|FLM3|
+|Contoso/Retail/Central London/Chelsea|FLW17, FLW18, FLW19, FLW20<br>FLW21, FLW21, FLW23<br>FLW24|Sales associate<br>Personal shopper<br>Beauty advisor|FLM3|-->
+
+|UKG Dimensions location|Users|Primary job|Job transfers|Reports to|
+|---------|---------|---------|---------|
+|Contoso/Retail/Central London/Soho|FLW1, FLW2<br>FLW3, FLW4<br>FLW5, FLW6, FLW7<br>FLW8, FLW9, FLW10|Beauty advisor<br>Leather goods sales associate<br>Sales associate<br>Personal shopper||FLM1|
+|Contoso/Retail/Central London/Covent Garden|FLW11, FLW12<br>FLW13, FLW14|Leather goods sales associate<br>Sales associate||FLM2|
+|Contoso/Retail/Central London/Chelsea|FLW15<br>FLW16<br>FLW17|Sales associate<br>Personal shopper<br>Beauty advisor||FLM3|
 
 #### What does mean when I set up teams in Teams?
 
