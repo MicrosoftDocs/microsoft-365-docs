@@ -1,6 +1,6 @@
 ---
 title: "Exchange 2007 end of support roadmap"
-ms.author: v-aiyengar
+ms.author: serdars
 author: dstrome
 manager: serdars
 ms.date: 1/31/2018
