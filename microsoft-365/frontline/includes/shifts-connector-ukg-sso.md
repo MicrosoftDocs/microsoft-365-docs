@@ -1,10 +1,11 @@
 ---
-author: daisyfell
-ms.author: daisyfeller
+author: lana-chin
+ms.author: v-chinlana
 ms.date: 
 ms.topic: include
 audience: admin
 ms.service: microsoft-365-frontline
+ms.collection: m365-frontline
 ---
 After you make sure you meet all the prerequisites above, follow these steps to have UKG enable SSO for your organization.
 

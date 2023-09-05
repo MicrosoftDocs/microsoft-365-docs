@@ -95,8 +95,8 @@ All our updates contain
 
 ### August-2023 (Platform: 4.18.23080.2006 | Engine: 1.1.23080.2005)
 
-- Security intelligence update version: **1.397.x.x** (*version number coming soon*)
-- Released:  **August 29, 2023 (Platform)**
+- Security intelligence update version: **1.397.59.0**
+- Released:  **August 30, 2023 (Platform and Engine)**
 - Platform: **4.18.23080.2006**
 - Engine: **1.1.23080.2005**
 - Support phase: **Security and Critical Updates**
@@ -104,11 +104,13 @@ All our updates contain
 ### What's new
 
 - Fixed an issue where Microsoft Defender Antivirus switched from [passive mode to active mode](microsoft-defender-antivirus-windows.md#comparing-active-mode-passive-mode-and-disabled-mode) following an update on Windows Server 2016 and Windows Server 2012 R2 [onboarded using the modern, unified client](configure-server-endpoints.md)
-- Fixed an issue where [exclusions](defender-endpoint-antivirus-exclusions.md) were not applied correctly using [gpupdate](/windows-server/administration/windows-commands/gpupdate) when registry policy processing was set to process even if the Group Policy Objects did not change
+- Fixed an issue where [exclusions](defender-endpoint-antivirus-exclusions.md) were not applied correctly using [gpupdate](/windows-server/administration/windows-commands/gpupdate) when registry policy processing was set to process even if Group Policy Objects did not change
 - Excluded IP addresses can now be configured using [Intune](/windows/client-management/mdm/defender-csp#configurationexcludedipaddresses)
 - Improved [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) on Windows Server 2016
 - [DisableFtpParsing](/windows/client-management/mdm/defender-csp#configurationdisableftpparsing) can now be configured through [Set-MpPreference](/powershell/module/defender/set-mppreference)
 - Fixed an issue where [device control](device-control-removable-storage-protection.md) policies were not applied correctly without a reboot following product updates
+- Fixed an issue in the attack surface reduction rule, [Block Win32 API calls from Office macros](attack-surface-reduction-rules-reference.md#block-win32-api-calls-from-office-macros), configured in warn mode where excluded files were incorrectly blocked until the next device reboot
+
 
 ### Known issues
 

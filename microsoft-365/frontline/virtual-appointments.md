@@ -1,7 +1,7 @@
 ---
 title: Virtual Appointments with Microsoft Teams
 author: lana-chin
-ms.author: v-chinlana
+ms.author: heidip
 manager: serdars
 ms.reviewer: megano
 ms.topic: conceptual
@@ -15,7 +15,7 @@ ms.collection:
   - highpri
   - m365solution-frontline
   - m365solution-scenario
-  - tier1
+  - m365-virtual-appointments 
   - m365initiative-meetings
 f1.keywords:
 - NOCSH

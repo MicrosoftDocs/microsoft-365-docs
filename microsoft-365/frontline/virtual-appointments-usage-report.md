@@ -1,7 +1,7 @@
 ---
 title: Microsoft Teams Virtual Appointments usage report
 author: lana-chin
-ms.author: v-chinlana
+ms.author: heidip
 manager: serdars
 audience: Admin
 ms.topic: how-to
@@ -15,7 +15,7 @@ ms.collection:
   - M365-collaboration
   - m365-frontline
   - m365initiative-meetings
-  - tier1
+  - m365-virtual-appointments 
 description: Learn how to use the Virtual Appointments usage report in the Microsoft Teams admin center to get an overview of virtual appointment activity in your organization.
 appliesto: 
   - Microsoft Teams

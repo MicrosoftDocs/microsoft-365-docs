@@ -1,7 +1,7 @@
 ---
 title: Microsoft Teams EHR connector Virtual Appointments report
 author: lana-chin
-ms.author: v-chinlana
+ms.author: heidip
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
@@ -21,7 +21,7 @@ ms.collection:
   - m365solution-scenario
   - m365-frontline
   - highpri
-  - tier2
+  - m365-virtual-appointments
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
