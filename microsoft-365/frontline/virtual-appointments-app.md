@@ -38,7 +38,7 @@ ms.date: 06/08/2023
 
 ## Before you begin
 
-This article is intended primarily for managers, supervisors, schedulers, and other employees who will set up the Virtual Appointments app for staff members on their team. You must be a ???booking Virtual Appointments admin to perform most of the tasks in this article.
+This article is intended primarily for users in your organization who will set up the Virtual Appointments app for staff members on their team. This can include managers, supervisors, schedulers, or other employees. Users who initially create a shared appointment calendar are automatically assigned the Virtual Appointments admin role for that calendar and can perform most of the tasks in this article.
 
 If you’re an IT admin, see [Manage the Virtual Appointments app](/microsoftteams/manage-virtual-appointments-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) to learn how to control access to the app in your organization.
 
@@ -48,7 +48,7 @@ Team members can find the app in the Teams app store, or you can share the [inst
 
 ## Overview of the app
 
-The [Virtual Appointments app](https://support.microsoft.com/topic/22df0079-e6d9-4225-bc65-22747fb2cb5f) provides a central hub for all your virtual appointments needs in Teams. The app enables a seamless end-to-end experience for business-to-customer engagements, integrating ???Bookings schedules, analytics, and management options, all in one place.
+The [Virtual Appointments app](https://support.microsoft.com/topic/22df0079-e6d9-4225-bc65-22747fb2cb5f) provides a central hub for all your virtual appointments needs in Teams. The app enables a seamless end-to-end experience for business-to-customer engagements, integrating schedules, analytics, and management options, all in one place.
 
 You can schedule, view, and manage virtual appointments, get real-time status updates in a queue view, send appointment reminders, view analytics and reports to gain insight into virtual appointments activity, and configure calendar, staff, and booking page settings.
 
@@ -70,7 +70,7 @@ With any Microsoft 365 license, you can use basic Virtual Appointments capabilit
 
 ## Set up an appointment calendar
 
-To schedule and manage appointments in the app, you must first set up an appointment calendar. ???You must be a Bookings admin to set up and manage appointment calendar settings.
+To schedule and manage appointments in the app, you must first set up an appointment calendar. You must have the Virtual Appointments admin role to set up and manage most appointment calendar settings.
 
 ### Step 1: Create a new appointment calendar or connect an existing calendar
 
@@ -174,7 +174,7 @@ Here are some additional tasks that admins and schedulers can do in the app.-->
 
 ## Publish a booking page
 
-???Booking admins can publish an online booking page where people can book scheduled and on-demand appointments with your staff.
+If you're a Virtual Appointments admin, you can publish an online booking page where people can book scheduled and on-demand appointments with your staff.
 
 1. On the **Manage** tab, select **Publish your booking page**.
 1. Turn on **Publish booking page**.
@@ -206,7 +206,7 @@ The Virtual Appointments usage report in the **Analytics** tab gives you an over
 
 The analytics experience depends on user role:
 
-- ???IT admins get organizational analytics. If you're an IT admin, you'll see an org-level report showing aggregated analytics across all departments in your organization. To learn more, see [Virtual Appointments usage report](virtual-appointments-usage-report.md).
+- Virtual Appointments admins get organizational analytics. If you're an admin, you'll see an org-level report showing aggregated analytics across all departments in your organization. To learn more, see [Virtual Appointments usage report](virtual-appointments-usage-report.md).
 - Non-admins get either departmental or individual analytics. Staff members who are associated with a department see a report that shows data for the given department. If a person isn’t associated with a department, the report shows data for the appointments that they conducted. To learn more, see [Analyze your Virtual Appointment usage](https://support.microsoft.com/topic/3214fd14-a860-4870-b30c-e8f87e182ce0).
 
 ## Related articles
