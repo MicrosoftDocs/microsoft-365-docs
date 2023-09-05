@@ -1,7 +1,7 @@
 ---
 title: Microsoft Teams EHR connector Virtual Appointments report
 author: lana-chin
-ms.author: v-chinlana
+ms.author: heidip
 manager: serdars
 audience: ITPro
 ms.topic: conceptual

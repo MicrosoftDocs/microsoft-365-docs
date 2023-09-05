@@ -1,7 +1,7 @@
 ---
 title: Secure Messaging for healthcare organizations using Microsoft Teams
 author: lana-chin
-ms.author: v-chinlana
+ms.author: heidip
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
