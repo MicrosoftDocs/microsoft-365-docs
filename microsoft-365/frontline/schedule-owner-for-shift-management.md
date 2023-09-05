@@ -1,7 +1,7 @@
 ---
 title: Manage schedule owners for shift management
 author: lana-chin
-ms.author: v-chinlana
+ms.author: heidip
 manager: serdars
 ms.topic: how-to
 audience: admin

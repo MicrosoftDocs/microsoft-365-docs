@@ -3,7 +3,7 @@ title: Technological partners of Microsoft 365 Defender
 ms.reviewer:
 description: View technological partners of M365 Defender to enhance detection, investigation, and threat intelligence capabilities of the platform.
 ms.service: microsoft-365-security
-ms.author: v-aljupudi
+ms.author: dansimp
 author: alekyaj
 ms.localizationpriority: medium
 manager: dansimp
