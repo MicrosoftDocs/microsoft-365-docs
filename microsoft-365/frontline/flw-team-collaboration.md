@@ -3,7 +3,7 @@ title: Frontline team collaboration
 description: Learn how your frontline teams can communicate and collaborate effectively within or across locations.
 ms.topic: conceptual
 author: lana-chin
-ms.author: v-chinlana
+ms.author: heidip
 manager: serdars
 audience: admin
 f1.keywords:
