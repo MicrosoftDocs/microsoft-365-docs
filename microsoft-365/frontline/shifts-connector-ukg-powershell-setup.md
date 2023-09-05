@@ -1,7 +1,7 @@
 ---
 title: Use PowerShell to connect Shifts to UKG Dimensions
 author: lana-chin
-ms.author: v-chinlana
+ms.author: heidip
 manager: serdars
 ms.reviewer: imarquesgil
 ms.topic: how-to
