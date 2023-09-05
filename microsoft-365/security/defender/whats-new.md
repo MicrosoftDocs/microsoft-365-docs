@@ -40,6 +40,10 @@ For more information on what's new with other Microsoft Defender security produc
 
 You can also get product updates and important notifications through the [message center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter).
 
+## September 2023
+- (Preview) Custom detections using data from Microsoft Defender for Identity and Microsoft Defender for Cloud Apps, specifically the `CloudAppEvents`, `IdentityDirectoryEvents`, `IdentityLogonEvents`, and `IdentityQueryEvents` [tables](custom-detection-rules.md#tables-that-support-continuous-nrt-frequency) can now be run in near real-time [Continuous (NRT)](custom-detection-rules.md) frequency.
+
+
 ## August 2023
 
 - Guides to responding to your first incident for new users are now live. [Understand incidents](respond-first-incident-365-defender.md) and learn to triage and prioritize, [analyze your first incident](respond-first-incident-analyze.md) using tutorials and videos, and [remediate attacks](respond-first-incident-remediate.md) by understanding actions available in the portal.
