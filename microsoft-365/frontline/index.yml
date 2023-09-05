@@ -11,8 +11,9 @@ metadata:
   ms.service: microsoft-365-frontline #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: hub-page # Required
   author: lana-chin #Required; your GitHub user alias, with correct capitalization.
-  ms.author: v-chinlana #Required; microsoft alias of author; optional team alias.
+  ms.author: heidip #Required; microsoft alias of author; optional team alias.
   manager: serdars
+
   audience: Admin
   ms.date: 04/07/2022 #Required; mm/dd/yyyy format.
   ms.collection:

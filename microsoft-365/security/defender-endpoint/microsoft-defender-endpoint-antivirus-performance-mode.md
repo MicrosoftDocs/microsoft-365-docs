@@ -9,7 +9,7 @@ ms.pagetype: security
 ms.localizationpriority: high
 ms.topic: conceptual
 author: denisebmsft
-ms.author: deniseb
+ms.author: dansimp
 ms.reviewer: pricci
 manager: dansimp
 ms.custom: nextgen02
