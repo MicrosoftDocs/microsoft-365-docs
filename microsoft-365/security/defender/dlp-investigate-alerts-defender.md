@@ -18,7 +18,7 @@ ms.topic: how-to
 search.appverid:
   - MOE150
   - met150
-ms.date: 07/11/2023
+ms.date: 09/05/2023
 ---
 
 # Investigate data loss prevention alerts with Microsoft 365 Defender
@@ -84,7 +84,7 @@ If the alert is for a file in SharePoint Online or One Drive for Business, you c
 - Apply retention label
 - Unshare
 - Delete
-- Apply sensitivity labelUnshare file
+- Apply sensitivity label
 - Download
 - Withdraw feedback
 
