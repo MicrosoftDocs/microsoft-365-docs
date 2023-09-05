@@ -62,10 +62,10 @@ Before you begin, see [Determine if Centralized Deployment of add-ins works for 
   
 1. In the admin center,  go to the **Settings** \> **Integrated apps** \> **Add-ins** page.
 
-   > [!NOTE]
-   > You can also deploy add-ins in the admin center through [Integrated Apps](test-and-deploy-microsoft-365-apps.md). Integrated Apps is the recommended place for admins to deploy add-ins, and is available to Global Administrator, Azure Application Administrator and Exchange Administrator.
-   >
-   > If you still want to continue using Centralized Deployment for admin deployment of add-ins, navigate to **Settings**, then select **Integrated Apps**. On top of the Integrated Apps page, choose the **Add-ins** link. If Integrated Apps is not available for you, you should be able to navigate to Centralized Deployment from **Settings**, and then select **Add-ins**.
+> [!NOTE]
+> You can also deploy add-ins in the admin center through [Integrated Apps](test-and-deploy-microsoft-365-apps.md). Integrated Apps is the recommended place for admins to deploy add-ins, and is available to Global Administrator, Azure Application Administrator and Exchange Administrator. 
+>
+> If you still want to continue using Centralized Deployment for admin deployment of add-ins, navigate to **Settings**, then select **Integrated Apps**. On top of the Integrated Apps page, choose the **Add-ins** link. If Integrated Apps is not available for you, you should be able to navigate to Centralized Deployment from **Settings**, and then select **Add-ins**.
 
 2. Select **Deploy Add-in** at the top of the page, and then select **Next**.
 
@@ -75,20 +75,20 @@ Before you begin, see [Determine if Centralized Deployment of add-ins works for 
 
     You can view available add-ins by categories: **Suggested for you**, **Rating**, or **Name**. Only free add-ins are available from the Office Store. Paid add-ins aren't supported currently. After you select an add-in, accept the terms and conditions to proceed. <br/> 
 
-    > [!NOTE]
-    > With the Office Store option, updates and enhancements are automatically deployed to users.
+> [!NOTE]
+> With the Office Store option, updates and enhancements are automatically deployed to users.
 
 5. On the next page, select **Everyone**, **Specific users/groups**, or **Just me** to specify who the add-in is deployed to. Use the Search box to find specific users or groups. <br/>
 
-    > [!NOTE]
-    > To learn about other states that apply to an add-in, see [Add-in states](./manage-addins-in-the-admin-center.md).
+> [!NOTE]
+> To learn about other states that apply to an add-in, see [Add-in states](./manage-addins-in-the-admin-center.md).
   
 6. Select **Deploy**.
   
 7. A green tick appears when the add-in is deployed. Follow the on-page instructions to test the add-in.
 
-    > [!NOTE]
-    > Users might need to relaunch Microsoft 365 to view the add-in icon on the app ribbon. Outlook add-ins can take up to 24 hours to appear on app ribbons.
+> [!NOTE]
+> Users might need to relaunch Microsoft 365 to view the add-in icon on the app ribbon. Outlook add-ins can take up to 24 hours to appear on app ribbons.
 
 8. When finished, select **Next**. If you've deployed to just yourself, you can select **Change who has access to add-in** to deploy to more users.
 
