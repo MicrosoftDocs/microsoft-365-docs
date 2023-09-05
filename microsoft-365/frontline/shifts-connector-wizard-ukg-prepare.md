@@ -233,7 +233,7 @@ In this scenario, the UKG Dimensions location structure looks something like thi
 |    4|Beauty advisor |Job type|
 
 <!--Based on the location structure, UKG Dimensions would provide the following information.-->
-Here's how frontline managers (FLM) and frontline workers (FLW) are set up in the location structure in UKG Dimensions.
+Here's how frontline managers (FLM) and frontline workers (FLW) are set up in the location structure in UKG Dimensions. The table lists each workers' primary job and who they report to.
 
 <!--|UKG Dimensions location|Users|Primary job|Reports to|
 |---------|---------|---------|---------|
@@ -242,25 +242,39 @@ Here's how frontline managers (FLM) and frontline workers (FLW) are set up in th
 |Contoso/Retail/Central London/Chelsea|FLW17, FLW18, FLW19, FLW20<br>FLW21, FLW21, FLW23<br>FLW24|Sales associate<br>Personal shopper<br>Beauty advisor|FLM3|-->
 
 |UKG Dimensions location|Users|Primary job|Job transfers|Reports to|
-|---------|---------|---------|---------|
-|Contoso/Retail/Central London/Soho|FLW1, FLW2<br>FLW3, FLW4<br>FLW5, FLW6, FLW7<br>FLW8, FLW9, FLW10|Beauty advisor<br>Leather goods sales associate<br>Sales associate<br>Personal shopper||FLM1|
-|Contoso/Retail/Central London/Covent Garden|FLW11, FLW12<br>FLW13, FLW14|Leather goods sales associate<br>Sales associate||FLM2|
-|Contoso/Retail/Central London/Chelsea|FLW15<br>FLW16<br>FLW17|Sales associate<br>Personal shopper<br>Beauty advisor||FLM3|
+|---------|---------|---------|---------|---------|
+|Contoso/Retail/Central London/Soho|FLW1, FLW2<br>FLW3, FLW4<br>FLW5, FLW6, FLW7<br>FLW8, FLW9, FLW10|Beauty advisor<br>Leather goods sales associate<br>Sales associate<br>Personal shopper|FLW1 can work as a beauty advisor in Central London/Chelsea<br>FLW5 can work as a sales associate in Central London/Covent Garden and Central London/Chelsea|FLM1|
+|Contoso/Retail/Central London/Covent Garden|FLW11, FLW12<br>FLW13, FLW14|Leather goods sales associate<br>Sales associate|Not applicable|FLM2|
+|Contoso/Retail/Central London/Chelsea|FLW15<br>FLW16<br>FLW17|Sales associate<br>Personal shopper<br>Beauty advisor|Not applicable|FLM3|
 
 #### What does mean when I set up teams in Teams?
 
 In this scenario, the IT admin organizes teams in Teams as follows.
 
 1. Create three different teams for each store within the Central London area: Soho Store, Covent Garden Store, Chelsea Store.
-1. Add employees that belong to the corresponding UKG Dimensions location to each team, including managers that the employees report to. Frontline workers are added as team members and frontline managers are added as team owners.
+1. Add employees that belong to the corresponding UKG Dimensions location to each team, including managers that the employees report to. Frontline workers are added as team members and frontline managers are added as team owners and/or schedule owners.
 
-Here's how the team structure looks like for each store in the Central London Area.
+    Here's the list of teams and the people added to each team.
 
-In this scenario, keep in mind that a frontline worker can only be a member of one team. This is because frontline workers aren't allowed to work at other stores.
+    |Team name|Team members|Team owners and/or schedule owners|
+    |---------|---------|---------|
+    |Soho Store team|FLW1, FLW2, FLW3, FLW4, FLW5, FLW6, FLW7, FLW8, FLW9, FLW10|FLM1|
+    |Covent Garden Store team|FLW5, FLW11, FLW12, FLW13, FLW14|FLM2|
+    |Chelsea Store team |FLW1, FLW5, FLW15, FLW16, FLW17|FLM3|
+
+Keep in mind that FLW1 and FLW5 are added as members of all teams that they're allowed to work at. The other frontline works aren't allowed to work at other stores, and are added only to the team that represents their primary job location.
+
+<!--Here's how the team structure looks like for each store in the Central London Area.x
+
+In this scenario, the admin adds team members 
+
+- FLW1 is added as a member of the Soho Store team and Chelsea Store team.
+- FLW2 is added as a member of the Soho Store team, Covent Garden Store team, and Chelsea Store team.
+- The other frontline workers aren't allowed to work at other stores so they are added to one team based on the correponding UKG Dimensions location.-->
 
 #### What does this mean when I run the Shifts connector wizard?
 
-When the IT admin sets up a connection instance in the wizard, each store location is mapped to the relevant team.
+When the IT admin sets up a connection instance in the [wizard](shifts-connector-wizard-ukg.md), each store location is mapped to the relevant team.
 
 |Store location  |Team name |
 |---------|---------|
