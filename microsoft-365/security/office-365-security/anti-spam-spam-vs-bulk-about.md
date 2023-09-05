@@ -70,7 +70,7 @@ EmailEvents
 | summarize count() by SenderMailFromAddress, BulkComplaintLevel
 ```
 
-This query allows admins to identify wanted and unwanted senders. If a bulk sender has a BCL score that's less than the bulk threshold, admins can [report the sender's messages to Microsoft for analysis](submissions-admin.md#report-good-email-to-microsoft). This action also adds the sender as an allow entry in the Tenant Allow/Block List.
+This query allows admins to identify wanted and unwanted senders. If a bulk sender has a BCL score that's more than the bulk threshold, admins can [report the sender's messages to Microsoft for analysis](submissions-admin.md#report-good-email-to-microsoft). This action also adds the sender as an allow entry in the Tenant Allow/Block List.
 
 Organizations without Defender for Office 365 Plan 2 can try the features in Microsoft 365 Defender for Office 365 Plan 2 for free. Use the 90-day Defender for Office 365 evaluation at <https://security.microsoft.com/atpEvaluation>. Learn about who can sign up and trial terms [here](try-microsoft-defender-for-office-365.md) or you can use the [Threat protection status report](reports-email-security.md#threat-protection-status-report) to identify wanted and unwanted bulk senders:
 
