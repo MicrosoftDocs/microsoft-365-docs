@@ -14,7 +14,6 @@ ms.collection:
   - m365-frontline
   - highpri
   - m365solution-frontline
-  - tier1
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers

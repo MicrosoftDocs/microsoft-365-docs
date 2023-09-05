@@ -15,7 +15,7 @@ ms.collection:
   - M365-collaboration
   - m365-frontline
   - m365initiative-meetings
-  - tier1
+  - m365-virtual-appointments 
 description: Learn how to use the Advanced Virtual Appointments activity report, which provides usage information for advanced Virtual Appointments capabilities that are available with Teams Premium.
 appliesto: 
   - Microsoft Teams

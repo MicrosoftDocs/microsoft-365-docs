@@ -15,7 +15,6 @@ ms.collection:
   - highpri
   - m365solution-frontline
   - m365solution-scenario
-  - tier1
 ms.localizationpriority: high
 search.appverid: MET150
 searchScope:

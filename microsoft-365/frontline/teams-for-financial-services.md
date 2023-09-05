@@ -16,7 +16,6 @@ ms.collection:
   - highpri
   - m365solution-financialservices
   - m365solution-overview
-  - tier1
 ms.localizationpriority: high
 search.appverid: MET150
 searchScope:
