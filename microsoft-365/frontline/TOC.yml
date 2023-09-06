@@ -85,6 +85,8 @@
         href: shifts-connectors.md
       - name: Connect Shifts to Blue Yonder WFM
         items:
+        - name: Teams Shifts connector for UKG Dimensions prerequisites
+          href: shifts-connector-ukg-prerequisites.md
         - name: Use the Shifts connector wizard to set up a connection to Blue Yonder WFM
           href: shifts-connector-wizard.md
         - name: Use PowerShell to set up a connection to Blue Yonder WFM
