@@ -36,6 +36,13 @@ When Microsoft Defender Antivirus runs a scan, it attempts to remediate or remov
 - [Group Policy](#configure-remediation-options-using-group-policy)
 - [PowerShell or Windows Management Instrumentation (WMI)](#configure-remediation-options-using-powershell-or-wmi)
 
+> [!IMPORTANT]
+> Microsoft Defender Antivirus detects and remediates files based on many factors. Sometimes, completing a remediation requires a reboot. Even if the detection is later determined to be a false positive, the reboot must be completed to ensure all additional remediation steps have been completed.
+>
+> If you are certain Microsoft Defender Antivirus quarantined a file based on a false positive, you can restore the file from quarantine after the device reboots. See [Restore quarantined files in Microsoft Defender Antivirus](restore-quarantined-files-microsoft-defender-antivirus.md). To avoid this problem in the future, you can exclude files from the scans. See [Configure and validate exclusions for Microsoft Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md).
+
+Also see [Configure remediation-required scheduled full Microsoft Defender Antivirus scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md#remed) for more remediation-related settings.
+
 ## Configure remediation options using Intune
 
 1. As a global or security administrator, go to the [Intune admin center](https://intune.microsoft.com/) and sign in.
@@ -89,13 +96,6 @@ If you're using Configuration Manager, see the following articles:
    |Threats<br/>Specify threats upon which default action should not be taken when detected.|Specify how specific threats (using their threat ID) should be remediated. You can specify whether the specific threat should be quarantined, removed, or ignored.|Not applicable|
 
 5. Select **OK**.
-
-> [!IMPORTANT]
-> Microsoft Defender Antivirus detects and remediates files based on many factors. Sometimes, completing a remediation requires a reboot. Even if the detection is later determined to be a false positive, the reboot must be completed to ensure all additional remediation steps have been completed.
->
-> If you are certain Microsoft Defender Antivirus quarantined a file based on a false positive, you can restore the file from quarantine after the device reboots. See [Restore quarantined files in Microsoft Defender Antivirus](restore-quarantined-files-microsoft-defender-antivirus.md). To avoid this problem in the future, you can exclude files from the scans. See [Configure and validate exclusions for Microsoft Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md).
-
-Also see [Configure remediation-required scheduled full Microsoft Defender Antivirus scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md#remed) for more remediation-related settings.
 
 ## Configure remediation options using PowerShell or WMI
 
