@@ -261,9 +261,9 @@ In this scenario, the IT admin organizes teams in Teams as follows.
 
     |Team name|Team members|Team owners and/or schedule owners|
     |---------|---------|---------|
-    |Soho Store team|FLW1, FLW2, FLW3, FLW4, FLW5, FLW6, FLW7, FLW8, FLW9, FLW10|FLM1|
-    |Covent Garden Store team|FLW5, FLW11, FLW12, FLW13, FLW14|FLM2|
-    |Chelsea Store team |FLW1, FLW5, FLW15, FLW16, FLW17|FLM3|
+    |Soho Store|FLW1, FLW2, FLW3, FLW4, FLW5, FLW6, FLW7, FLW8, FLW9, FLW10|FLM1|
+    |Covent Garden Store|FLW5, FLW11, FLW12, FLW13, FLW14|FLM2|
+    |Chelsea Store|FLW1, FLW5, FLW15, FLW16, FLW17|FLM3|
 
     Keep in mind that FLW1 and FLW5 are added to all teams for the store locations that they're allowed to work at. The other frontline workers aren't allowed to work at other stores, and are added only to the team that represents their primary job location.
 
