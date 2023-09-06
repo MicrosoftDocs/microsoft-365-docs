@@ -31,15 +31,13 @@ Microsoft offers a wide variety of cloud solutions and services, including plans
 > - [Microsoft 365 Education](/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-education)
 
 
-
 **Use this article to**:
 
 - [Compare Defender for Business to Microsoft 365 Business Premium](#compare-defender-for-business-to-microsoft-365-business-premium).
 - [Compare Defender for Business (standalone) to Defender for Endpoint Plan 1 and Plan 2](#compare-defender-for-business-to-defender-for-endpoint-plan-1-and-plan-2).
 
 > [!TIP]
-> Defender for Business is available as a standalone security solution for small and medium-sized businesses. Defender for Business is also included in Microsoft 365 Business Premium, along with additional security capabilities. 
-> If you already have Microsoft 365 Business Basic or Standard, consider either upgrading to Microsoft 365 Business Premium or adding Defender for Business to your current subscription to get more threat protection capabilities for your organization.
+> Defender for Business is available as a standalone security solution for small and medium-sized businesses. Defender for Business is also included in Microsoft 365 Business Premium, along with additional security capabilities. If you already have Microsoft 365 Business Basic or Standard, consider either upgrading to Microsoft 365 Business Premium or adding Defender for Business to your current subscription to get more threat protection capabilities for your organization.
 
 ## Compare Defender for Business to Microsoft 365 Business Premium
 
