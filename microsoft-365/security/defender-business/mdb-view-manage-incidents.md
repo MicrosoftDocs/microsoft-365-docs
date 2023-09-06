@@ -42,11 +42,16 @@ As threats are detected and alerts are triggered, incidents are created. Your co
 3. In the flyout pane, you can see the alert title, view a list of assets (such as endpoints or user accounts) that were affected, take available actions, and use links to view more information and even open the details page for the selected alert. 
 
 > [!TIP]
-> Defender for Business is designed to help you address detected threats by offering up recommended actions. When you view an alert, look for the recommended actions to take. Also take note of the alert severity, which is determined not only on the basis of the threat severity, but also on the level of risk to your company. 
+> Defender for Business is designed to help you address detected threats by recommeding actions you can take. When you view an alert, look for these suggestions. Also notice the alert severity, which is determined not only on the basis of the detected threat severity, but also on the level of risk to your company. 
 
 ## Alert severity
 
-When Microsoft Defender Antivirus assigns an alert severity based on the absolute severity of a detected threat (malware) and the potential risk to an individual endpoint (if infected). Defender for Business assigns an alert severity based on the severity of the detected behavior, the actual risk to an endpoint (device), and more importantly, the potential risk to your company. The following table lists a few examples:
+When a threat is detected, a severity level is assigned to each alert that is generated. 
+
+- Microsoft Defender Antivirus assigns an alert severity based on the absolute severity of a detected threat (such as malware) and the potential risk to an individual endpoint (if infected). 
+- Defender for Business assigns an alert severity based on the severity of the detected behavior, the actual risk to an endpoint (device), and more importantly, the potential risk to your company. 
+
+The following table lists a few examples of alerts and their severity levels:
 
 | Scenario | Alert severity and reason |
 |:---|:---|
