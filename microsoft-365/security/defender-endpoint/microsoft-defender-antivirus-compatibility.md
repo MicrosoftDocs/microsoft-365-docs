@@ -89,7 +89,7 @@ The following table summarizes the state of Microsoft Defender Antivirus in seve
 | A non-Microsoft antivirus/antimalware solution | No | Disabled (automatically) | Evaluation or On | 
 
 > [!NOTE]
-> Smart App Control is a consumer-only product that's built into Windows for home users. It can run alongside your antivirus software. Smart App Control blocks apps that are considered to be malicious or untrusted. [Learn more about Smart App Control](https://support.microsoft.com/topic/what-is-smart-app-control-285ea03d-fa88-4d56-882e-6698afdb7003).
+> Smart App Control is a consumer-only product that's used on new Windows 11 installs. It can run alongside your antivirus software and block apps that are considered to be malicious or untrusted. [Learn more about Smart App Control](https://support.microsoft.com/topic/what-is-smart-app-control-285ea03d-fa88-4d56-882e-6698afdb7003).
 
 ## Windows Server and passive mode
 
