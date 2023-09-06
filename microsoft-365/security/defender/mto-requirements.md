@@ -21,24 +21,22 @@ ms.date: 09/01/2023
 **Applies to:**
 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-- Microsoft 365 Defender multi-tenant
+- Microsoft 365 Defender multi-tenant view
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-This article describes the steps need to take start using the Microsoft 365 Defender multi-tenant portal.
+This article describes the steps need to take start using the Microsoft 365 Defender multi-tenant view.
 
 1. Verify you meet the [Microsoft 365 Defender pre-requisites](prerequisites.md).
 2. [Verify your tenant access](#verify-your-tenant-access).
-3. [Use the Microsoft 365 Defender multi-tenant setup wizard](#use-the-microsoft-365-defender-multi-tenant-setup-wizard).
+3. [Use the Microsoft 365 Defender multi-tenant view setup wizard](#use-the-microsoft-365-defender-multi-tenant-view-setup-wizard).
 
 >[!Note]
-> [Data privacy](data-privacy.md), [role-based access control (RBAC)](m365d-permissions.md) and [Licensing](prerequisites.md#licensing-requirements) are respected by Microsoft 365 Defender multi-tenant.
+> [Data privacy](data-privacy.md), [role-based access control (RBAC)](m365d-permissions.md) and [Licensing](prerequisites.md#licensing-requirements) are respected by Microsoft 365 Defender multi-tenant view.
 
 ## Verify your tenant access
 
-The first step is to make sure that you have the appropriate permissions for accessing multiple tenants using a single identity.
-
-To access data from other tenants within the Microsoft 365 Defender multi-tenant portal, you must have one of the following for each of the tenants that you intend to view and manage:
+To view the data you have access to across multiple tenants in Microsoft 365 Defender multi-tenant view, you need to ensure you have the necessary permissions. You'll need one of the following for each tenant you want to view and manage:
 
 - [Azure Active Directory B2B authentication](/azure/active-directory/external-identities/what-is-b2b)
 - [Granular delegated admin privileges (GDAP)](/partner-center/gdap-introduction)
@@ -63,7 +61,7 @@ To access data from other tenants within the Microsoft 365 Defender multi-tenant
 3. Verify all the tenants you plan to manage in the Microsoft 365 Defender multi-tenant portal appear in the list.
 4. For each tenant, go to the [Microsoft 365 Defender portal)](https://security.microsoft.com/?tid=tenant_id) and login to validate you can successfully access the tenant.
 
-## Use the Microsoft 365 Defender multi-tenant setup wizard
+## Use the Microsoft 365 Defender multi-tenant view setup wizard
 
 If this is the first time you're using the Microsoft 365 Defender multi-tenant portal the setup wizard helps you add the tenants you want to view and manage in the portal. To get started:
 
