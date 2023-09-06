@@ -42,7 +42,7 @@ To view the data you have access to across multiple tenants in Microsoft 365 Def
 - [Granular delegated admin privileges (GDAP)](/partner-center/gdap-introduction)
 
 >[!Note]
-> Setting up multi-factor authentication trust is highly recommended for each tenant to avoid missing data in the Microsoft 365 Defender multi-tenant portal.
+> Setting up [multi-factor authentication trust](/azure/active-directory/external-identities/authentication-conditional-access) is highly recommended for each tenant to avoid missing data in the Microsoft 365 Defender multi-tenant view.
 
 ### Verify your tenant access with Azure Active Directory B2B
 
@@ -51,28 +51,28 @@ To view the data you have access to across multiple tenants in Microsoft 365 Def
 
    :::image type="content" source="../../media/defender/mto-myaccount.png" alt-text="Screenshot of organizations in the myaccount portal" lightbox="../../media/defender/mto-myaccount.png":::
 
-3. Verify all the tenants you plan to manage in the Microsoft 365 Defender multi-tenant portal appear in the list.
+3. Verify all the tenants you plan to manage in the Microsoft 365 Defender multi-tenant view appear in the list.
 4. For each tenant, go to the [Microsoft 365 Defender portal](https://security.microsoft.com/?tid=tenant_id) and log in to validate you can successfully access the tenant.
 
 ### Verify your tenant access with GDAP
 
 1. Go to the [Microsoft Partner Center](https://partner.microsoft.com/commerce/granularadminaccess/list).
 2. Under **Customers** you can find the list of organizations you have guest access to.
-3. Verify all the tenants you plan to manage in the Microsoft 365 Defender multi-tenant portal appear in the list.
+3. Verify all the tenants you plan to manage in the Microsoft 365 Defender multi-tenant view appear in the list.
 4. For each tenant, go to the [Microsoft 365 Defender portal)](https://security.microsoft.com/?tid=tenant_id) and login to validate you can successfully access the tenant.
 
 ## Use the Microsoft 365 Defender multi-tenant view setup wizard
 
-If this is the first time you're using the Microsoft 365 Defender multi-tenant portal the setup wizard helps you add the tenants you want to view and manage in the portal. To get started:
+If this is the first time you're using the Microsoft 365 Defender multi-tenant view the setup wizard helps you add the tenants you want to view and manage in the portal. To get started:
 
 1. Login to the [Microsoft 365 Defender multi-tenant portal](https://mto.security.microsoft.com/).
 2. Select **Add tenants**.
 
    :::image type="content" source="../../media/defender/mto-add-tenants.png" alt-text="Screenshot of the Microsoft 365 Defender multi-tenant portal setup wizard" lightbox="../../media/defender/mto-add-tenants.png":::
 
-3. Choose the tenants you want to manage in the Microsoft 365 Defender multi-tenant portal and select **Add**.
+3. Choose the tenants you want to manage in the Microsoft 365 Defender multi-tenant view and select **Add**.
 
-The features available in multi-tenant portal will now appear on the navigation bar and you're ready to view and manage security data across all your tenants.
+The features available in the multi-tenant view will now appear on the navigation bar and you're ready to view and manage security data across all your tenants.
 
    :::image type="content" source="../../media/defender/mto-multi-tenant-view.png" alt-text="Screenshot of the Microsoft 365 Defender multi-tenant settings page" lightbox="../../media/defender/mto-multi-tenant-view.png":::
 
