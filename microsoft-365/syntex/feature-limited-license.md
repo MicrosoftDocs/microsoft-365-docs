@@ -56,7 +56,7 @@ If you acquired the software in the United States or Canada, the laws of the sta
 
 **Except as described herein, the only remedy for claims relating to these Terms is for you to terminate your use of the Features. Neither Party can recover any damages, including direct, consequential, lost profits, special, punitive, indirect or incidental damages from the other. This limitation applies:**
 
-**1.	To claims for breach of contract, breach of warranty, guarantee or condition, strict liability, negligence, or other tort to the extent permitted by applicable law.**
-**2.	Even if one of us knew or should have known about the possibility of the damages.**
+   **1. To claims for breach of contract, breach of warranty, guarantee or condition, strict liability, negligence, or other tort to the extent permitted by applicable law.**
+   **2. Even if one of us knew or should have known about the possibility of the damages.**
 
 **The limitations in this section does not apply to claims arising from or in connection with any infringement, misuse, or misappropriation by one of us of the other’s intellectual property rights.**
