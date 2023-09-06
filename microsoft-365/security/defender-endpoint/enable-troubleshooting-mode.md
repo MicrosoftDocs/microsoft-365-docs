@@ -14,7 +14,7 @@ ms.collection:
 - tier2
 ms.topic: conceptual
 ms.subservice: mde
-ms.date: 04/18/2023
+ms.date: 09/06/2023
 ---
 
 # Get started with troubleshooting mode in Microsoft Defender for Endpoint 
