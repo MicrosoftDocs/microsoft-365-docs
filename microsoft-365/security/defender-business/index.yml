@@ -78,6 +78,8 @@ landingContent:
         links:
           - text: Maintain your environment
             url: mdb-maintain-environment.md
+          - text: View your reports
+            url: mdb-reports.md
 
   # Card
   - title: Help and more resources
