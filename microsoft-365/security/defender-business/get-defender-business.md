@@ -110,7 +110,7 @@ Microsoft Defender for Business servers is an add-on to Defender for Business th
 
 3. In the list of results, select the **Details** box for **Microsoft Defender for Business servers**.
 
-4. Review the information, and complete the purchase process. You'll need one Microsoft Defender for Business servers license for each instance of Windows Server or Linux, and you won't assign that license to users or devices. 
+4. Review the information, and complete the purchase process. You need one Microsoft Defender for Business servers license for each instance of Windows Server or Linux, and you don't assign that license to users or devices. 
 
 > [!IMPORTANT]
 > - In order to add on Microsoft Defender for Business servers, you'll need at least one paid license for [Defender for Business](mdb-overview.md) (standalone) or [Microsoft 365 Business Premium](../../business-premium/index.md). 
