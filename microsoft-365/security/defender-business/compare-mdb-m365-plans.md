@@ -122,3 +122,4 @@ Defender for Business brings the enterprise-grade capabilities of Defender for E
 - [See the requirements for Microsoft Defender for Business](mdb-requirements.md)
 - [Get Microsoft Defender for Business](get-defender-business.md)
 - [Learn how to set up and configure Microsoft Defender for Business](mdb-setup-configuration.md)
+- [Learn more about Microsoft 365 Business Premium](../../business-premium/index.md)
