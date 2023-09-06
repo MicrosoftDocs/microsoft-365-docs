@@ -1,6 +1,6 @@
 ---
 title: Compare security features in Microsoft 365 plans for small and medium-sized businesses
-description: How does Defender for Business compare to Defender for Endpoint and Microsoft 365 Business Premium? See what's included in each plan so you can make a more informed decision for your company.
+description: Learn about security plans available for small and medium-sized businesses.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -23,12 +23,13 @@ f1.keywords: NOCSH
 
 # Compare security features in Microsoft 365 plans for small and medium-sized businesses
 
+Microsoft offers a wide variety of cloud solutions and services, including plans for small and medium-sized businesses. For example, [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md) includes security and device-management capabilities, along with productivity features such as Office apps. This article describes the security features in Microsoft 365 Business Premium, Microsoft Defender for Business, and [Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md).
+
 > [!IMPORTANT]
 > This article provides a high-level overview of features and capabilities that are included in Microsoft Defender for Business (as a standalone plan) and Microsoft 365 Business Premium (which includes Defender for Business). It's not intended to be a service description or licensing contract document. For more detailed information, see the following resources:
 > - [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 > - [Microsoft 365 Education](/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-education)
 
-Microsoft offers a wide variety of cloud solutions and services, including plans for small and medium-sized businesses. For example, [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md) includes security and device-management capabilities, along with productivity features such as Office apps. This article describes the security features in Microsoft 365 Business Premium, Microsoft Defender for Business, and [Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md).
 
 
 **Use this article to**:
@@ -71,7 +72,7 @@ The following table summarizes what's included in each plan:
 | [Windows Autopilot](/mem/autopilot/windows-autopilot) (for setting up and configuring Windows devices for first use) | | :::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::  |
 | [Exchange Online Protection](../office-365-security/eop-about.md) (antiphishing, antispam, antimalware, and spoof intelligence for email) | | :::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::  |
 | [Microsoft Defender for Office 365 Plan 1](/microsoft-365/security/office-365-security/defender-for-office-365) (advanced antiphishing, real-time detections, Safe Attachments, and Safe Links) | | :::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::  |
-| [Auto-expanding archiving](../../compliance/autoexpanding-archiving.md) (for email) | | :::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::  |
+| [Autoexpanding archiving](../../compliance/autoexpanding-archiving.md) (for email) | | :::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::  |
 | [Azure Information Protection Premium Plan 1](/azure/information-protection/what-is-information-protection) (protection for sensitive information) | | :::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::  |
 | [Azure Virtual Desktop](/azure/virtual-desktop/overview) (centrally managed, secure virtual machines in the cloud) | | :::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::  |
 
