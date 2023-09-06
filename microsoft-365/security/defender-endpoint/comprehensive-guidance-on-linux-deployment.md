@@ -1,13 +1,9 @@
 ---
 title: Advanced deployment guidance for Microsoft Defender for Endpoint on Linux
 description: Learn how to deploy Defender for Endpoint on Linux and address issues such as high cpu utilization
-keywords: high cpu ulitization, microsoft, defender, Microsoft Defender for Endpoint, ios, app, installation, deploy, uninstallation, intune
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: dansimp
-author: nimishasatapathy
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -17,7 +13,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 10/11/2022
+ms.date: 09/05/2023
 ---
 
 # Advanced deployment guidance for Microsoft Defender for Endpoint on Linux
@@ -105,7 +101,7 @@ Use the following steps to check the network connectivity of Microsoft Defender 
 
 #### Step 1. Allow URLs for the Microsoft Defender for Endpoint traffic
 
-1. Download [Microsoft Defender for Endpoint URL list for commercial customers](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) or [Microsoft Defender for Endpoint URL list for Gov/GCC/DoD](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) that lists the services and their associated URLs that your network must be able to connect.
+1. Download the [Microsoft Defender for Endpoint URL list for commercial customers](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx) or the [Microsoft Defender for Endpoint URL list for Gov/GCC/DoD](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) for a list of services and their associated URLs that your network must be able to connect.
 
 2. Under **Geography** column, ensure the following checkboxes are selected:
     - EU, or UK, or US
