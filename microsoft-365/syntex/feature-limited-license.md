@@ -26,17 +26,17 @@ This License governs the limited time use of the following features, individuall
 
 &emsp;&emsp;i.&ensp;Content Query<br>
 &emsp;&emsp;ii.&ensp;Universal Annotation<br>
-&emsp;iii.	Contracts Accelerator<br>
-&emsp;iv.	Accounts Payable Accelerator<br>
-&emsp;v.	Taxonomy features including: import using SKOS, SKOS formatting reference, push content type to hub, and term store reports<br>
-&emsp;vi.	PDF Merge/Split<br>
-&emsp;vii.	PDF Password Protect<br>
-&emsp;viii.	Content Processing: Move or copy a file, set a content type from file name
+&emsp;&emsp;iii.&emsp;Contracts Accelerator<br>
+&emsp;&emsp;iv.&emsp;Accounts Payable Accelerator<br>
+&emsp;&emsp;v&emsp;Taxonomy features including: import using SKOS, SKOS formatting reference, push content type<br> &emsp;&emsp;&emsp;to hub, and term store reports<br>
+&emsp;&emsp;vi.&emsp;PDF Merge/Split<br>
+&emsp;&emsp;vii.&emsp;PDF Password Protect<br>
+&emsp;&emsp;viii.&emsp;Content Processing: Move or copy a file, set a content type from file name
 
 **REQUIREMENTS TO ENABLE THE FEATURES**
 
-&emsp;a)	Customer must have a healthy Azure subscription connected to Microsoft Syntex<br>
-&emsp;b)	A Microsoft 365 tenancy with either Microsoft 365 admin access or SharePoint Online admin access
+&emsp;&emsp;a)&emsp;Customer must have a healthy Azure subscription connected to Microsoft Syntex<br>
+&emsp;&emsp;b)A Micr&emsp;osoft 365 tenancy with either Microsoft 365 admin access or SharePoint Online admin access
 
 **EVALUATION PERIOD**
 
