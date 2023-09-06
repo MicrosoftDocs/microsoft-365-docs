@@ -24,13 +24,13 @@ These license terms are an agreement between you and Microsoft Corporation (or o
 
 This License governs the limited time use of the following features, individually and collectively, and is referred to as “Features”:
 
-&emsp;i.	Content Query
-&emsp;ii.	Universal Annotation
-&emsp;iii.	Contracts Accelerator
-&emsp;iv.	Accounts Payable Accelerator
-&emsp;v.	Taxonomy features including: import using SKOS, SKOS formatting reference, push &emsp;content type to hub, and term store reports
-&emsp;vi.	PDF Merge/Split
-&emsp;vii.	PDF Password Protect
+&emsp;i.	Content Query<br>
+&emsp;ii.	Universal Annotation<br>
+&emsp;iii.	Contracts Accelerator<br>
+&emsp;iv.	Accounts Payable Accelerator<br>
+&emsp;v.	Taxonomy features including: import using SKOS, SKOS formatting reference, push content type to hub, and term store reports<br>
+&emsp;vi.	PDF Merge/Split<br>
+&emsp;vii.	PDF Password Protect<br>
 &emsp;viii.	Content Processing: Move or copy a file, set a content type from file name
 
 **REQUIREMENTS TO ENABLE THE FEATURES**
