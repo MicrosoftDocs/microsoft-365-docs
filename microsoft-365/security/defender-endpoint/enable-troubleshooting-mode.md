@@ -1,7 +1,6 @@
 ---
 title: Get started with troubleshooting mode in Microsoft Defender for Endpoint 
 description: Turn on the Microsoft Defender for Endpoint troubleshooting mode to address various antivirus issues.
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: microsoft-365-security
 ms.author: dansimp
