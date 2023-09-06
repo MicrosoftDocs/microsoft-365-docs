@@ -1,13 +1,8 @@
 ---
 title: Device health Microsoft Defender Antivirus health report
 description: Use the Microsoft Defender Antivirus report to track antivirus status and Microsoft Defender Antivirus engine, intelligence, and platform versions.
-keywords: Microsoft Defender Antivirus report, engine version, intelligence version, and platform versions, antivirus
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 localization_priority: Normal
@@ -276,8 +271,8 @@ Following are up-to-date definitions for engine and platform:
 
 | The engine/platform on the device is considered: | Situation |
 |:---|:---|
-| **up to date** | If the device communicated with the Defender report event ('Signature refresh time') within last seven days, and the Engine or Platform build version >= most recent monthly release version. |
-| **out-of-date** | If the device communicated with the Defender report event ('Signature refresh time') within last seven days, but Engine or Platform build version is < than the most recent monthly release version. |
+| **up to date** | If the device communicated with the Defender report event ('Signature refresh time') within last seven days, and the Engine or Platform build version is greater than or equal to (`>=`) the most recent monthly release version. |
+| **out-of-date** | If the device communicated with the Defender report event ('Signature refresh time') within last seven days, but Engine or Platform build version is less than (`<`) the most recent monthly release version. |
 | **unknown (no data available)** | If the device hasn't communicated with the report event ('Signature refresh time') for more than seven days. |
 
 Following is the definitions for up-to-date security intelligence:
