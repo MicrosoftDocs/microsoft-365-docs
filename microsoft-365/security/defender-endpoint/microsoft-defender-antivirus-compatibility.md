@@ -4,7 +4,7 @@ description: Learn about Microsoft Defender Antivirus with other security produc
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
-ms.date: 09/01/2023
+ms.date: 09/06/2023
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
@@ -78,17 +78,18 @@ Whether Microsoft Defender Antivirus runs in active mode, passive mode, or is di
 - Which version of Windows is installed on an endpoint
 - Whether Microsoft Defender Antivirus is the primary antivirus/antimalware solution on the endpoint
 - Whether the endpoint is onboarded to Defender for Endpoint
-- Whether Smart App Control is turned on or is in evaluation mode. (See [What is Smart App Control](https://support.microsoft.com/topic/what-is-smart-app-control-285ea03d-fa88-4d56-882e-6698afdb7003)?)
 
 The following table summarizes the state of Microsoft Defender Antivirus in several scenarios. 
 
-|Antivirus/antimalware solution | Onboarded to Defender for Endpoint? | Smart App Control State | Microsoft Defender Antivirus state |
+|Antivirus/antimalware solution | Onboarded to Defender for Endpoint? | Microsoft Defender Antivirus state | Smart App Control State | 
 |---|---|---|---|
-| Microsoft Defender Antivirus | Yes | N/A <br/>Smart App Control is a consumer-only product | Active mode |
-| Microsoft Defender Antivirus | No | Off or Evaluation | Active mode |
-| Microsoft Defender Antivirus | No | On | Passive mode (automatically) |
-| A non-Microsoft antivirus/antimalware solution | Yes | N/A <br/>Smart App Control is a consumer-only product | Passive mode (automatically) |
-| A non-Microsoft antivirus/antimalware solution | No | Evaluation or On | Passive mode (automatically) |
+| Microsoft Defender Antivirus | Yes | Active mode | N/A  |
+| Microsoft Defender Antivirus | No | Active mode | On, Evaluation, or Off | 
+| A non-Microsoft antivirus/antimalware solution | Yes | Passive mode (automatically) | N/A | 
+| A non-Microsoft antivirus/antimalware solution | No | Disabled (automatically) | Evaluation or On | 
+
+> [!NOTE]
+> Smart App Control is a consumer-only product that's built into Windows for home users. It can run alongside your antivirus software. Smart App Control blocks apps that are considered to be malicious or untrusted. [Learn more about Smart App Control](https://support.microsoft.com/topic/what-is-smart-app-control-285ea03d-fa88-4d56-882e-6698afdb7003).
 
 ## Windows Server and passive mode
 
