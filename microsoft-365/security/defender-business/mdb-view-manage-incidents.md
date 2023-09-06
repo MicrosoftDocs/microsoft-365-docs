@@ -22,7 +22,7 @@ ms.collection:
 
 # View and manage incidents in Microsoft Defender for Business
 
-As threats are detected and alerts are triggered, incidents are created. Your company's security team can view and manage incidents in the Microsoft 365 Defender portal.
+As threats are detected and alerts are triggered, incidents are created. Your company's security team can view and manage incidents in the Microsoft 365 Defender portal. You must have appropriate permissions assigned to perform the tasks in this article. See [Security roles and permissions in Microsoft Defender for Business](mdb-roles-permissions.md).
 
 **This article includes**:
 
