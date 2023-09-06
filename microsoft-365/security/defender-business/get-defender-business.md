@@ -120,7 +120,12 @@ Microsoft Defender for Business servers is an add-on to Defender for Business th
 
 ## Portals you use for setup and management
 
-When you use Defender for Business, you work with two main portals: the Microsoft 365 admin center, and the Microsoft 365 Defender portal. If your subscription also includes Microsoft Intune, you use the Intune admin center as well. The following table summarizes these portals and how you use them.
+When you use Defender for Business, you work with two main portals: 
+
+- The Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com))
+- The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com))
+
+If your subscription also includes Microsoft Intune, you use the Intune admin center as well. The following table summarizes these portals and how you use them.
 
 |Portal  |Description  |
 |---------|---------|
