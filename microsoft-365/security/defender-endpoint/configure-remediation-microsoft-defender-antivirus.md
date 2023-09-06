@@ -1,18 +1,14 @@
 ---
 title: Configure remediation for Microsoft Defender Antivirus detections
 description: Configure what Microsoft Defender Antivirus should do when it detects a threat, and how long quarantined files should be retained in the quarantine folder
-keywords: remediation, fix, remove, threats, quarantine, scan, restore
 ms.service: microsoft-365-security
 ms.subservice: mde
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.topic: conceptual
 ms.custom: nextgen
-ms.date: 06/06/2023
+ms.date: 09/06/2023
 ms.reviewer:
 manager: dansimp
 ms.collection: 
@@ -35,11 +31,39 @@ search.appverid: met150
 
 When Microsoft Defender Antivirus runs a scan, it attempts to remediate or remove threats that are detected. You can configure how Microsoft Defender Antivirus should address certain threats, whether a restore point should be created before remediating, and when threats should be removed.
 
+## Configure remediation options using Intune
+
+1. As a global or security administrator, go to the [Intune admin center](https://intune.microsoft.com/) and sign in.
+
+2. Under **Manage**, choose **Antivirus**.
+
+3. Either create a new policy, or edit an existing policy using the following settings:
+
+   - Platform: **Windows 10, Windows 11, and Windows Server**
+   - Profile: **Microsoft Defender Antivirus**
+
+4. For configuration settings, expand **Defender**, scroll down to **Allow On Access Protection**. and set it to **Allowed**.
+
+5. Under **Allow On Access Protection**, select a remediation action for each level:
+
+   - High severity threats
+   - Severe threats
+   - Moderate severity threats
+   - Low severity threats
+
+6. Specify device groups that should receive this policy (such as All Devices).
+
+7. Review your settings, and then choose **Save**.
+
+For more information about antivirus policies in Intune, see [Antivirus policy for endpoint security in Intune](/mem/intune/protect/endpoint-security-antivirus-policy).
+
+## Configure remediation options using Configuration Manager
+
 This article describes how to configure these settings by using Group Policy, but you can also use [Microsoft Endpoint Configuration Manager](/configmgr/protect/deploy-use/endpoint-antimalware-policies#threat-overrides-settings) and [Microsoft Intune](/intune/device-restrictions-configure).
 
 You can also use the [`Set-MpPreference` PowerShell cmdlet](/powershell/module/defender/set-mppreference) or [`MSFT_MpPreference` WMI class](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal) to configure these settings.
 
-## Configure remediation options
+## Configure remediation options using Group Policy
 
 1. On your Group Policy management computer, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and click **Edit**.
 
