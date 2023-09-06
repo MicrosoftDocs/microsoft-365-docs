@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 09/14/2022
+ms.date: 09/06/2023
 ms.reviewer: nehabha
 f1.keywords: NOCSH 
 ms.collection: 
