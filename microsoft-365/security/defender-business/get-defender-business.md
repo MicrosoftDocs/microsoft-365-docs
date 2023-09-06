@@ -125,7 +125,7 @@ When you use Defender for Business, you work with two main portals:
 - The Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com))
 - The Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com))
 
-If your subscription also includes Microsoft Intune, you use the Intune admin center as well. The following table summarizes these portals and how you use them.
+If your subscription also includes Microsoft Intune, you use the Intune admin center ([https://intune.microsoft.com](https://intune.microsoft.com)) as well. The following table summarizes these portals and how you use them.
 
 |Portal  |Description  |
 |---------|---------|
