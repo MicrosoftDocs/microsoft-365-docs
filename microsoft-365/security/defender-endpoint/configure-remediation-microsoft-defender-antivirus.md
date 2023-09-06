@@ -29,7 +29,12 @@ search.appverid: met150
 **Platforms**
 - Windows
 
-When Microsoft Defender Antivirus runs a scan, it attempts to remediate or remove threats that are detected. Remediation actions can include removing a file, sending it to quarantine, or allowing it to remain. This article includes information and links to resources about specifying what actions should be taken when threats are detected on devices.
+When Microsoft Defender Antivirus runs a scan, it attempts to remediate or remove threats that are detected. Remediation actions can include removing a file, sending it to quarantine, or allowing it to remain. This article includes information and links to resources about specifying what actions should be taken when threats are detected on devices. You can choose from several methods, such as:
+
+- [Microsoft Intune](#configure-remediation-options-using-intune)
+- [Microsoft Configuration Manager](#configure-remediation-options-using-configuration-manager)
+- [Group Policy](#configure-remediation-options-using-group-policy)
+- [PowerShell or Windows Management Instrumentation (WMI)](#configure-remediation-options-using-powershell-or-wmi)
 
 ## Configure remediation options using Intune
 
