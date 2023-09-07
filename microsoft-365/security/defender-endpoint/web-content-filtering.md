@@ -90,88 +90,16 @@ Web content filtering policies specify which site categories are blocked on whic
 
 Policies can be deployed to block any of the following parent or child categories:
 
-<details>
-<summary>Adult content</summary>
+| Parent category | Child categories |
+|---|---|
+| **Adult content** | **Cults**: Sites related to groups or movements whose members demonstrate passion for a belief system that is different from those that are socially accepted.<br/>- **Gambling**: Online gambling and sites that promote gambling skills and practice.<br/>- **Nudity**: Sites that provide full-frontal and semi-nude images or videos, typically in artistic form, and might allow the download or sale of such materials.<br/>- **Pornography / Sexually explicit**: Sites containing sexually explicit content in an image-based or textual form. Any form of sexually oriented material is also listed here.<br/>- **Sex education**: Sites that discuss sex and sexuality in an informative and non-voyeuristic way, including sites that provide education about human reproduction and contraception, sites that offer advice on preventing infection from sexual diseases, and sites that offer advice on sexual health matters.<br/>- **Tasteless**: Sites oriented towards content unsuitable for school children to view or that an employer would be uncomfortable with their staff accessing, but not necessarily violent or pornographic.<br/>- **Violence**: Sites that display or promote content related to violence against humans or animals. |
+| **High bandwidth** | **Download sites**: Sites whose primary function is to allow users to download media content or programs, such as computer programs.<br/>- **Image sharing**: Sites that are used primarily for searching or sharing photos, including those that have social aspects.<br/>- **Peer-to-peer**: Sites that host peer-to-peer (P2P) software or facilitate the sharing of files using P2P software.<br/>- **Streaming media & downloads**: Sites whose primary function is the distribution of streaming media, or sites that allow users to search, watch, or listen to streaming media. |
+| **Legal liability** | **Child abuse images**: Sites that include child abuse images or pornography.<br/>- **Criminal activity**: Sites that give instruction on, advice about, or promotion of illegal activities.<br/>- **Hacking**: Sites that provide resources for illegal or questionable use of computer software or hardware, including sites that distribute copyrighted material that has been cracked.<br/>- **Hate & intolerance**: Sites promoting aggressive, degrading, or abusive opinions about any section of the population that could be identified by race, religion, gender, age, nationality, physical disability, economic situation, sexual preferences or any other lifestyle choice.<br/>- **Illegal drug**: Sites that sell illegal/controlled substances, promote substance abuse, or sell related paraphernalia.<br/>- **Illegal software**: Sites that contain or promote the use of malware, spyware, botnets, phishing scams, or piracy & copyright theft.<br/>- **School cheating**: Sites related to plagiarism or school cheating.<br/>- **Self-harm**: Sites that promote self-harm, including cyberbullying sites that contain abusive and/or threatening messages towards users.<br/>- **Weapons**: Any site that sells weapons or advocates the use of weapons, including but not limited to guns, knives, and ammunition. |
+| **Leisure** | **Chat**: Sites that are primarily web-based chat rooms.<br/>- **Games**: Sites relating to video or computer games, including sites that promote gaming through hosting online services or information related to gaming.<br/>- **Instant messaging**: Sites that can be used to download instant messaging software or client based instant messaging.<br/>- **Professional network**: Sites that provide professional networking services.<br/>- **Social networking**: Sites that provide social networking services.<br/>- **Web-based email**: Sites offering web-based mail services. |
+| Uncategorized | **Newly registered domains**: Sites that have been newly registered in the past 30 days and have not yet been moved to another category.<br/>- **Parked domains**: Sites that have no content or are parked for later use. |
 
-**Cults**: Sites related to groups or movements whose members demonstrate passion for a belief system that is different from those that are socially accepted.
-
-**Gambling**: Online gambling and sites that promote gambling skills and practice.
-
-**Nudity**: Sites that provide full-frontal and semi-nude images or videos, typically in artistic form, and might allow the download or sale of such materials.
-
-**Pornography / Sexually explicit**: Sites containing sexually explicit content in an image-based or textual form. Any form of sexually oriented material is also listed here.
-
-**Sex education**: Sites that discuss sex and sexuality in an informative and non-voyeuristic way, including sites that provide education about human reproduction and contraception, sites that offer advice on preventing infection from sexual diseases, and sites that offer advice on sexual health matters.
-
-**Tasteless**: Sites oriented towards content unsuitable for school children to view or that an employer would be uncomfortable with their staff accessing, but not necessarily violent or pornographic.
-
-**Violence**: Sites that display or promote content related to violence against humans or animals.
-
-</details>
-
-<details>
-<summary>High bandwidth</summary>
-
-**Download sites**: Sites whose primary function is to allow users to download media content or programs, such as computer programs.
-
-**Image sharing**: Sites that are used primarily for searching or sharing photos, including those that have social aspects.
-
-**Peer-to-peer**: Sites that host peer-to-peer (P2P) software or facilitate the sharing of files using P2P software.
-
-**Streaming media & downloads**: Sites whose primary function is the distribution of streaming media, or sites that allow users to search, watch, or listen to streaming media.
-
-</details>
-
-<details>
-<summary>Legal liability</summary>
-
-**Child abuse images**: Sites that include child abuse images or pornography.
-
-**Criminal activity**: Sites that give instruction on, advice about, or promotion of illegal activities.
-
-**Hacking**: Sites that provide resources for illegal or questionable use of computer software or hardware, including sites that distribute copyrighted material that has been cracked.
-
-**Hate & intolerance**: Sites promoting aggressive, degrading, or abusive opinions about any section of the population that could be identified by race, religion, gender, age, nationality, physical disability, economic situation, sexual preferences or any other lifestyle choice.
-
-**Illegal drug**: Sites that sell illegal/controlled substances, promote substance abuse, or sell related paraphernalia.
-
-**Illegal software**: Sites that contain or promote the use of malware, spyware, botnets, phishing scams, or piracy & copyright theft.
-
-**School cheating**: Sites related to plagiarism or school cheating.
-
-**Self-harm**: Sites that promote self-harm, including cyberbullying sites that contain abusive and/or threatening messages towards users.
-
-**Weapons**: Any site that sells weapons or advocates the use of weapons, including but not limited to guns, knives, and ammunition.
-
-</details>
-
-<details>
-<summary>Leisure</summary>
-
-**Chat**: Sites that are primarily web-based chat rooms.
-
-**Games**: Sites relating to video or computer games, including sites that promote gaming through hosting online services or information related to gaming.
-
-**Instant messaging**: Sites that can be used to download instant messaging software or client based instant messaging.
-
-**Professional network**: Sites that provide professional networking services.
-
-**Social networking**: Sites that provide social networking services.
-
-**Web-based email**: Sites offering web-based mail services.
-
-</details>
-
-<details>
-<summary>Uncategorized</summary>
-
-**Newly registered domains**: Sites that have been newly registered in the past 30 days and have not yet been moved to another category.
-
-**Parked domains**: Sites that have no content or are parked for later use.
-
-**NOTE**: Uncategorized contains only newly registered domains and parked domains, and does not include all other sites outside of these categories.
-
-</details>
+> [!NOTE]
+> Uncategorized contains only newly registered domains and parked domains, and does not include all other sites outside of these categories.
 
 ### Create a policy
 
