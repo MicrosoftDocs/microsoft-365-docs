@@ -6296,11 +6296,6 @@
         "redirect_document_id":false
      },
      {
-        "source_path":"microsoft-365/compliance/create-test-tune-dlp-policy.md",
-        "redirect_url":"/microsoft-365/compliance/create-deploy-policy",
-        "redirect_document_id":false
-     },
-     {
         "source_path":"microsoft-365/compliance/data-loss-prevention-policies.md",
         "redirect_url":"/microsoft-365/compliance/dlp-learn-about-dlp",
         "redirect_document_id":false
