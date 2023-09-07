@@ -22,13 +22,9 @@ Read more about how the feed works here:  [Discover and learn with Microsoft Fee
 
 ## Where can users see Microsoft Feed?
 
-In **Microsoft 365** (previously Office.com), while signed in with a work or school account, select **Feed** from the left navigation bar.
+In **Microsoft Edge**, select the **Work feed** page when opening a new tab.
 
-![Select Feed in Microsoft 365.](../media/MS-select-feed.png)
-
-In **Microsoft Edge**, select the **Microsoft 365** page when opening a new tab.
-
-![Image of the select Feed in Microsoft 365.](../media/MS-contoso-feed.png)
+![Image of the work feed page.](../media/workfeed2.png)
 
 See the section *Find your way around* in [Discover and learn with Microsoft Feed](https://support.microsoft.com/en-us/office/discover-and-learn-with-microsoft-feed-9c190800-e348-46b7-9d46-41c628b80ebb)
 
@@ -57,20 +53,21 @@ In Microsoft 365, as a tenant admin, if you want to disable the new experience, 
 3.    If you're in the admin center, select **Support** > **New service request.**
 4.    To re-enable the feature, you can create a **New service request.**
 
-In Microsoft Edge, while signed in with a work or school account, as a tenant admin, if you want to disable the new experience, you can choose to *not show* Microsoft 365 content on the Microsoft Edge new tab page:
+In Microsoft Edge, while signed in with a work or school account, as a tenant admin, if you want to disable the new experience, you can choose to *not show* Work feed content on the Microsoft Edge new tab page:
 
 1.    Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com)
 2.    Go to **Org settings** > **News.**
 3.    Under **News**, select **Microsoft Edge new tab page**.
 4.    *Clear* the box that says **Show Microsoft 365 content on the Microsoft Edge new tab page.**
 5.    To re-enable the feature, check the box that says **Show Microsoft 365 content on the Microsoft Edge new tab page.**
+6. To make it a default feed, **Set Users default to Work feed**.
 
 ## Provide feedback
 
 We would love to hear from you! To let us know what you think of this feature, you can reach us by:
 
-1.    Responding to our Message Center post with feedback. This option is only available for tenant admins with access to the Microsoft Admin Center in Microsoft 365.
-2.    Providing general feature feedback when viewing Microsoft Feed by clicking on "Feedback" in the lower right-hand corner.
+1. Responding to our Message Center post with feedback. This option is only available for tenant admins with access to the Microsoft Admin Center in Microsoft 365.
+2. Providing general feature feedback when viewing Microsoft Feed by clicking on "Feedback" in the lower right-hand corner.
 
 ## Frequently Asked Questions (FAQ)
 

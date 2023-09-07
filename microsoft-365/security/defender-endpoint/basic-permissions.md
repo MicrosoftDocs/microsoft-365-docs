@@ -10,6 +10,8 @@ ms.subservice: mde
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
+ms.custom:
+  - has-azure-ad-ps-ref
 manager: dansimp
 audience: ITPro
 ms.collection: 
