@@ -26,7 +26,7 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 description: "Learn how to redeem a product key to activate or extend your Microsoft business subscription." 
-ms.date: 08/18/2023
+ms.date: 09/07/2023
 ---
 
 # Enter your product key for Microsoft business products and services
