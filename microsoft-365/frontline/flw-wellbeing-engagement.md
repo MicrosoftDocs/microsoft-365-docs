@@ -3,7 +3,7 @@ title: Engage your frontline employees and focus on wellbeing
 description: Learn how to use Viva Connections, SharePoint, Microsoft Teams, and the Praise app to increase frontline worker wellbeing and engagement.
 ms.topic: conceptual
 author: lana-chin
-ms.author: v-chinlana
+ms.author: heidip
 manager: serdars
 audience: admin
 f1.keywords:
@@ -15,7 +15,6 @@ ms.collection:
   - highpri
   - m365solution-frontline
   - m365solution-scenario
-  - tier2
 ms.localizationpriority: high
 search.appverid: MET150
 searchScope:

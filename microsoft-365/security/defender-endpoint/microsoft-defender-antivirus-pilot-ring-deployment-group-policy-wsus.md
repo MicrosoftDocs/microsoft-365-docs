@@ -126,7 +126,7 @@ The Windows Server Update Services Configuration Wizard is complete.
 
      :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-report-viewer-kb-update-info.png" alt-text="Screenshot that shows a screen capture with details about a KB update reported in **Update Report for Yr2k19**." lightbox="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-report-viewer-kb-update-info.png":::
 
-    To learn more about the different Microsoft Defender Antivirus Update channels, see [Manage the gradual rollout process for Microsoft Defender updates](/manage-gradual-rollout)
+    To learn more about the different Microsoft Defender Antivirus Update channels, see [Manage the gradual rollout process for Microsoft Defender updates](manage-gradual-rollout.md)
 
 #### To find out which Platform Update version is the Current Channel (Broad)
 
@@ -171,7 +171,7 @@ The Windows Server Update Services Configuration Wizard is complete.
    
    In **Step 3: Specify a name**, type a name for your rule. For example, type _Microsoft Defender Antivirus updates_. These settings are shown in the following figure:
 
-   :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-updates-add-rule.png" alt-text="Screenshot that shows a screen capture of the an example name for a rule." lightbox="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-updates-add-rule.png"::: 
+   :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-updates-add-rule.png" alt-text="Screenshot that shows a screen capture of an example name for a rule." lightbox="images/microsoft-defender-antivirus-deploy-ring-group-policy-wsus-updates-add-rule.png"::: 
 
 1. Select **OK**. The work flow returns to the **Update Rules** page. Select your new rule, For example, select **Microsoft Defender Antivirus updates**.
 1. In **Rule Properties**, verify the information is correct, and then select **OK**.

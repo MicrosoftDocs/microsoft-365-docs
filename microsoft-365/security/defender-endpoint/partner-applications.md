@@ -18,7 +18,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 07/28/2023
+ms.date: 08/23/2023
 ---
 
 # Partner applications in Microsoft Defender for Endpoint
@@ -100,7 +100,7 @@ Logo|Partner name|Description
 :---|:---|:---
 ![Logo for Bitdefender.](images/bitdefender-logo.png)|[Bitdefender](https://go.microsoft.com/fwlink/?linkid=860032)|Bitdefender GravityZone is a layered next generation endpoint protection platform offering comprehensive protection against the full spectrum of sophisticated cyber threats
 ![Logo for Better Mobile.](images/bettermobile-logo.png)|[Better Mobile](https://go.microsoft.com/fwlink/?linkid=2086214)|AI-based MTD solution to stop mobile threats & phishing. Private internet browsing to protect user privacy
-![Logo for Corrata.](images/corrata-logo.png)|[Corrata](https://go.microsoft.com/fwlink/?linkid=2081148)|Mobile solution - Protect your mobile devices with granular visibility and control from Corrata
+![Logo for Corrata.](images/corrata-new.png)|[Corrata](https://go.microsoft.com/fwlink/?linkid=2081148)|Mobile solution - Protect your mobile devices with granular visibility and control from Corrata
 ![Logo for Lookout.](images/lookout-logo.png)|[Lookout](https://go.microsoft.com/fwlink/?linkid=866935)|Get Lookout Mobile Threat Protection telemetry for Android and iOS mobile devices
 ![Logo for Symantec Endpoint Protection Mobile.](images/symantec-logo.png)|[Symantec Endpoint Protection Mobile](https://go.microsoft.com/fwlink/?linkid=2090992)|SEP Mobile helps businesses predict, detect, and prevent security threats and vulnerabilities on mobile devices
 ![Logo for Zimperium.](images/zimperium-logo.png)|[Zimperium](https://go.microsoft.com/fwlink/?linkid=2118044)|Extend your Defender for Endpoint to iOS and Android with Machine Learning-based Mobile Threat Defense
