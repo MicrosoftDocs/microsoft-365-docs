@@ -28,7 +28,7 @@ This License governs the limited time use of the following features, individuall
 &emsp;&emsp;ii.&ensp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Universal Annotation<br>
 &emsp;&emsp;iii.&emsp;&nbsp;&nbsp;&nbsp;Contracts Accelerator<br>
 &emsp;&emsp;iv.&emsp;&nbsp;&nbsp;&nbsp;Accounts Payable Accelerator<br>
-&emsp;&emsp;v.&emsp;&nbsp;&nbsp;&nbsp;Taxonomy features including: import using SKOS, SKOS formatting reference,<br>&emsp;&emsp;&emsp;&emsp; push content type to hub, and term store reports<br>
+&emsp;&emsp;v.&emsp;&nbsp;&nbsp;&nbsp;Taxonomy features including: import using SKOS, SKOS formatting reference,<br>&emsp;&emsp;&emsp;&emsp;&emsp;push content type to hub, and term store reports<br>
 &emsp;&emsp;vi.&emsp;&nbsp;&nbsp;&nbsp;PDF Merge/Split<br>
 &emsp;&emsp;vii.&emsp;&nbsp;&nbsp;PDF Password Protect<br>
 &emsp;&emsp;viii.&emsp;&nbsp;Content Processing: Move or copy a file, set a content type from file name
