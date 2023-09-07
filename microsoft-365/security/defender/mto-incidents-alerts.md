@@ -28,7 +28,7 @@ ms.date: 09/01/2023
 
 Microsoft 365 Defender multi-tenant view enables security operation center (SOC) analysts to access and analyze data from multiple tenants in one place, allowing them to quickly identify and respond to threats.
 
-You can manage incidents & alerts originating from multiple tenants under **Incidents & alerts**
+You can manage incidents & alerts originating from multiple tenants under **Incidents & alerts**.
 
 ## View and investigate incidents
 
@@ -42,18 +42,17 @@ You can manage incidents & alerts originating from multiple tenants under **Inci
 
 3. From the incident details page you can:
 
-- Select **Open incident page** to view this incident in a new tab for the specific tenant in the [Microsoft 365 Defender portal](https://security.microsoft.com) 
+- Select **Open incident page** to view this incident in a new tab for the specific tenant in the [Microsoft 365 Defender portal](https://security.microsoft.com).
 - Select **Manage incident** to assign the incident, set incident tags, set the incident status, and classify the incident.
 
-To learn more, see [Investigate incidents](../defender-endpoint/investigate-incidents.md). 
-
+To learn more, see [Investigate incidents](../defender-endpoint/investigate-incidents.md).
 
 ## Manage multiple incidents
 
 To manage incidents across multiple tenants:
 
-1. Go to the [Incidents page](https://mto.security.microsoft.com/incidents) in the Microsoft 365 Defender multi-tenant view
-2. Choose the incidents you want to manage from the incidents list and select **Manage incidents**
+1. Go to the [Incidents page](https://mto.security.microsoft.com/incidents) in the Microsoft 365 Defender multi-tenant view.
+2. Choose the incidents you want to manage from the incidents list and select **Manage incidents**.
 
    :::image type="content" source="../../media/defender/mto-manage-incidents.png" alt-text="Screenshot of the Microsoft 365 Defender incidents page" lightbox="../../media/defender/mto-manage-incidents.png":::
 
