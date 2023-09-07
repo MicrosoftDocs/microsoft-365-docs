@@ -34,15 +34,15 @@ Advanced hunting in Microsoft 365 Defender multi-tenant allows you to proactivel
 
 In multi-tenant view, you can use any of the queries you currently have access to. They are filtered by tenant in the Queries tab. Select a tenant to view the queries under each:
 
-Add Macky Image.
+   :::image type="content" source="../../media/defender/mto-cross-tenants-query.png" alt-text="Screenshot of the Microsoft 365 Defender cross tenants advanced hunting query page" lightbox="../../media/defender/mto-cross-tenants-query.png":::
 
 Once you have loaded the query in the query editor, you can then specify the scope of the query by tenant by selecting Tenant scope.  
 
-Add Macky Image.
+   :::image type="content" source="../../media/defender/mto-cross-tenants-query-scope.png" alt-text="Screenshot of the Microsoft 365 Defender cross tenants advanced hunting query scope" lightbox="../../media/defender/mto-cross-tenants-query-scope.png":::
 
 This opens a side pane from which you can specify the tenants to include in the query.
 
-Add Macky Image.
+   :::image type="content" source="../../media/defender/mto-cross-tenants-sidepane.png" alt-text="Screenshot of the Microsoft 365 Defender cross tenants advanced hunting query side pane"scope column"" lightbox="../../media/defender/mto-cross-tenants-sidepane.png":::
 
 >[!NOTE]
 >Queries that use the `join` operator are currently not supported in multi-tenant advanced hunting.
@@ -51,7 +51,7 @@ From the Advanced hunting page you can run your cross-tenant query by selecting 
 
 The query results contains the tenant id:
 
-Add Macky Image.
+   :::image type="content" source="../../media/defender/mto-cross-tenants-query-tenant-id.png" alt-text="Screenshot of the Microsoft 365 Defender ross tenants advanced hunting query scope column" lightbox="../../media/defender/mto-cross-tenants-query-tenant-id.png":::
 
 To learn more about advanced hunting in Microsoft 365 Defender, read [Proactively hunt for threats with advanced hunting in Microsoft 365 Defender](advanced-hunting-overview.md).
 
@@ -64,11 +64,11 @@ Likewise, you can manage custom detection rules from multiple tenants in the Cus
 1. To view custom detection rules, go to the [Custom detection rules page](https://mto.security.microsoft.com/v2/custom_detection) in the Microsoft 365 Defender multi-tenant view.
 2. View the **Tenant Name** column to see which tenant the detection rule comes from:
 
-Add Macky Image
+   :::image type="content" source="../../media/defender/mto-custom-detection-tenant-name.png" alt-text="Screenshot of the Microsoft 365 Defender multi-tenant custom detection page" lightbox="../../media/defender/mto-custom-detection-tenant-name.png":::
 
-3. To view only a specific tenant’s custom detection rules, select **Filter**:
+3. To view only a specific tenant’s custom detection rules, select **Filter**
 
-Add Macky Image
+   :::image type="content" source="../../media/defender/mto-custom-detection-filter-scope.png" alt-text="Screenshot of the Microsoft 365 Defender custom detection rule filter" lightbox="../../media/defender/mto-custom-detection-filter-scope.png":::
 
 4. Select the tenant or tenants and select Apply.
 

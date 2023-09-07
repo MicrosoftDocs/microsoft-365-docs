@@ -1,6 +1,6 @@
 ---
-title: View tenants devices with Microsoft 365 Defender multi-tenant 
-description: Learn about the device list for multi-tenants in the Microsoft 365 Defender multi-tenant portal
+title: View tenants devices with Microsoft 365 Defender multi-tenant view
+description: Learn about the devices for multi-tenants in the Microsoft 365 Defender multi-tenant view
 search.appverid: met150
 ms.service: microsoft-365-security
 ms.subservice: m365d
@@ -22,7 +22,7 @@ ms.date: 09/01/2023
 **Applies to:**
 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-- Microsoft 365 Defender multi-tenant 
+- Microsoft 365 Defender multi-tenant view
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
