@@ -5,15 +5,15 @@ ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: Admin
-ms.topic: conceptual
+ms.topic: reference
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 08/11/2022
+ms.date: 09/07/2022
 ms.collection: 
 - SMB
 - m365-security                 
-- tier1
+- tier3
 search.appverid: MET150
 ms.reviewer: nehabha
 description: Get help or contact support if you have any issues with Defender for Business.
