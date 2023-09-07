@@ -184,6 +184,10 @@ If you're a Virtual Appointments admin, you can publish an online booking page w
 
     :::image type="content" source="media/virtual-appointments-app-booking-page-settings.png" alt-text="Screenshot of booking page settings." lightbox="media/virtual-appointments-app-booking-page-settings.png":::
 
+Here's an example of what a published booking page looks like.
+
+:::image type="content" source="media/virtual-appointments-app-booking-page.png" alt-text="Screenshot of booking page settings." lightbox="media/virtual-appointments-app-booking-page.png":::
+
 You can customize and manage your booking page settings in the Bookings web app. To learn more, see [Customize and publish your booking page for customers to schedule appointments](https://support.microsoft.com/topic/72fc8c8c-325b-4a16-b7ab-87bc1f324e4f) and [Customize and publish your booking page](/microsoft-365/bookings/customize-booking-page).
 
 ## Monitor appointments and get real-time status updates in the queue view
