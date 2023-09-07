@@ -46,12 +46,12 @@ You can add your own custom tiles to Apps that point to SharePoint sites, extern
 1. Enter a URL of website for the tile. This is the location where you want your users to go when they select the tile on the app launcher. Use HTTPS in the URL.
 
     > [!TIP] 
->If you're creating a tile for a SharePoint site, navigate to that site, copy the URL, and paste it here. The URL of your default team site looks like this: `https://<company_name>.sharepoint.com`.
+    > If you're creating a tile for a SharePoint site, navigate to that site, copy the URL, and paste it here. The URL of your default team site looks like this: `https://<company_name>.sharepoint.com`.
 
 1. Enter a URL of the image for the tile. The image appears on the My apps page and app launcher.
 
     > [!TIP]
->The image should be 60x60 pixels and be available to everyone in your organization without requiring authentication. 
+    > The image should be 60x60 pixels and be available to everyone in your organization without requiring authentication. 
 
 1. Enter a description for the tile. You see this when you select the tile on the My apps page and select **App details**.
 
