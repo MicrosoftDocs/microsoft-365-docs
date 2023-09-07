@@ -1,5 +1,5 @@
 ---
-title: "Enter your product key for Microsoft business products and services"
+title: "Enter your product key for a Microsoft business product or service"
 f1.keywords:
 - NOCSH
 - aka.ms/smbsetup
@@ -29,13 +29,14 @@ description: "Learn how to redeem a product key to activate or extend your Micro
 ms.date: 09/07/2023
 ---
 
-# Enter your product key for Microsoft business products and services
+# Enter your product key for a Microsoft business product or service
 
 Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
-A *product key* is a 25-character alphanumeric code that represents a prepaid license for a Microsoft product or service. If you bought a Microsoft product or service from a partner or a retail store, you use the product key to activate your new subscription. If you buy a prepaid license for a product that you already own, you can [use the product key to extend the expiration date](#extend-the-expiration-date-for-an-existing-subscription) of your subscription. You can also [use a product key to add more licenses to your subscription](licenses/buy-licenses.md#add-licenses-to-a-prepaid-subscription-by-using-a-microsoft-365-product-key).
+A *product key* is a 25-character alphanumeric code that represents a prepaid license for a Microsoft business product or service. If you bought a Microsoft business product or service from a partner or a retail store, you use the product key to activate your new subscription. If you buy a prepaid license for a product that you already own, you can [use the product key to extend the expiration date](#extend-the-expiration-date-for-an-existing-subscription) of your subscription. You can also [use a product key to add more licenses to your subscription](licenses/buy-licenses.md#add-licenses-to-a-prepaid-subscription-by-using-a-microsoft-365-product-key).
 
 **Need something else?**
+
     - **For help with Microsoft 365 Family or Microsoft 365 Personal**, see [Using product keys with Microsoft 365](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759).  
     - **Volume licensing customer?** If you bought a Microsoft business product or service through a [Microsoft Open License Program](https://go.microsoft.com/fwlink/p/?LinkID=613298), see the article, [Enter your product key purchased from Microsoft Open](purchases-from-microsoft-open.md).
   
