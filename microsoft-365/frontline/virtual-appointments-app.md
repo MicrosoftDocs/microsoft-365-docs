@@ -52,7 +52,7 @@ The [Virtual Appointments app](https://support.microsoft.com/topic/22df0079-e6d9
 
 You can schedule, view, and manage virtual appointments, get real-time status updates in a queue view, send appointment reminders, view analytics and reports to gain insight into virtual appointments activity, and configure calendar, staff, and booking page settings.
 
-Use it to schedule and manage appointments such as financial consultations, healthcare visits, virtual fittings and consultations, interviews, customer support, education office hours, and more. You can also publish an online booking page for your clients, customers, and patients to book appointments with your staff.
+Use it to schedule and manage appointments such as financial consultations, healthcare visits, virtual fittings, interviews, customer support, education office hours, and more. You can also publish an online booking page for your clients, customers, and patients to book appointments with your staff.
 
 The app makes it easy to manage the complex scheduling demands of any organization. Schedulers can manage multiple department and staff calendars, as well as communications with internal and external attendees, from a single experience.
 
