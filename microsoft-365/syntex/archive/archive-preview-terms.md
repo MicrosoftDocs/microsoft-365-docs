@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Archive Preview 
+title: Microsoft 365 Archive Preview Agreement
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -15,10 +15,10 @@ ms.collection:
     - m365initiative-syntex
 ms.localizationpriority:  medium
 ROBOTS: NOINDEX, NOFOLLOW
-description: Learn about Microsoft 365 Archive.
+description: Learn about the preview terms and conditions for Microsoft 365 Archive.
 ---
 
-# Microsoft 365 Archive Terms Agreement
+# Microsoft 365 Archive Terms Preview Agreement
 
 > [!NOTE]
 > This article is currently in development.
