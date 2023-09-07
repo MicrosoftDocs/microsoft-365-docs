@@ -24,19 +24,19 @@ Read more about how the feed works here:  [Discover and learn with Microsoft Fee
 
 In **Microsoft 365** (previously Office.com), while signed in with a work or school account select **Feed** from the left navigation bar.
 
-:::image type="content" source="../media/msfeed/MS-select-feed.png" alt-text="Select Feed in Microsoft 365." lightbox="../media/msfeed/MS-select-feed.png":::
+:::image type="content" source="../media/msfeed/MS-select-feed.png" alt-text="Screenshot of Microsoft Feed in Microsoft 365." lightbox="../media/msfeed/MS-select-feed.png":::
 
 In **Microsoft Edge**, while signed in with a work or school account, select the **Work Feed** page when opening a new tab.
 
-:::image type="content" source="../media/msfeed/MS-contoso-feed.png" alt-text="Image of the select Feed in Microsoft 365." lightbox="../media/msfeed/MS-contoso-feed.png":::
+:::image type="content" source="../media/msfeed/MS-contoso-feed.png" alt-text="Screenshot of Microsoft Feed in Microsoft Edge." lightbox="../media/msfeed/MS-contoso-feed.png":::
 
 In **Outlook Mobile**, while signed in with a work or school account, select the Feed Tab from the bottom navigation bar.
 
-:::image type="content" source="../media/msfeed/MS-m365-feed-outlook.png" alt-text="Select Feed in Mobile Outlook":::
+:::image type="content" source="../media/msfeed/MS-m365-feed-outlook.png" alt-text="Screenshot of Microsoft Feed in Outlook Mobile":::
 
 In **Microsoft 365 Mobile**, while signed in with a work or school account, select the Feed Tab from the bottom navigation bar.
 
-:::image type="content" source="../media/msfeed/MS-m365-feed-mobile.png" alt-text="Select Feed in Mobile Microsoft 365.":::
+:::image type="content" source="../media/msfeed/MS-m365-feed-mobile.png" alt-text="Screenshot of Microsoft Feed in Microsoft 365 Mobile.":::
 
 For more information, see the section "Find your way around" in [Discover and learn with Microsoft Feed](https://support.microsoft.com/en-us/office/discover-and-learn-with-microsoft-feed-9c190800-e348-46b7-9d46-41c628b80ebb).
 
@@ -44,11 +44,11 @@ For more information, see the section "Find your way around" in [Discover and le
 
 The information in Microsoft Feed is tailored to each user. Users only see documents or other content that they have access to. This content can include documents that are stored in a shared folder in OneDrive or on a SharePoint site that the user has access to. It can also include a link that someone shared in an email conversation or a Teams chat.
 
-Microsoft Feed doesn’t change any permissions, so each user has a unique feed based on what they already have access to. Documents and information aren't stored in Microsoft Feed, and changing permissions must be done from where the information is stored, such as in OneDrive or SharePoint.  To learn more, see [Share OneDrive files and folders - Microsoft Support](https://support.microsoft.com/en-us/office/share-onedrive-files-and-folders-9fcc2f7d-de0c-4cec-93b0-a82024800c07) and [Set up secure file and document sharing and collaboration with Teams in Microsoft 365 | Microsoft Learn](/solutions/setup-secure-collaboration-with-teams).
+Microsoft Feed doesn’t change any permissions, so each user has a unique feed based on what they already have access to. Documents and information aren't stored in Microsoft Feed, and changing permissions must be done from where the information is stored, such as in OneDrive or SharePoint.  To learn more, see [Share OneDrive files and folders - Microsoft Support](https://support.microsoft.com/en-us/office/share-onedrive-files-and-folders-9fcc2f7d-de0c-4cec-93b0-a82024800c07) and [Set up secure file sharing and collaboration with Microsoft Teams](../solutions/setup-secure-collaboration-with-teams.md).
 
 We have also added a feature where users can see who has access to a document by selecting **Who can see this** behind the three-dot menu (...) on the document card as shown in the following screenshot:
 
-:::image type="content" source="../media/msfeed/MS-privacy-in-feed.png" alt-text="Microsoft Feed Privacy Access." lightbox="../media/msfeed/MS-privacy-in-feed.png":::
+:::image type="content" source="../media/msfeed/MS-privacy-in-feed.png" alt-text="Screenshot of Microsoft Feed Privacy Access." lightbox="../media/msfeed/MS-privacy-in-feed.png":::
 
 ## What controls are available?
 
