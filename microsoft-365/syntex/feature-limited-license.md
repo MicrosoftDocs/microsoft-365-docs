@@ -18,10 +18,6 @@ description: Read the Microsoft Syntex Features Limited Time License for Syntex 
 
 # MICROSOFT SYNTEX FEATURES LIMITED TIME LICENSE
 
-
-
-# Microsoft Syntex Features Limited Time License
-
 These license terms are an agreement between you and Microsoft Corporation (or one of its affiliates). They apply to the Microsoft Syntex Features described below and do not alter your or Microsoft’s rights relating to the Product Terms ([Microsoft Product Terms](https://www.microsoft.com/licensing/terms/)). IF YOU COMPLY WITH THESE LICENSE TERMS, YOU HAVE THE RIGHTS BELOW. **BY USING THE MICROSOFT SYNTEX FEATURES, INDIVIDUALLY AND COLLECTIVELY YOU ACCEPT THESE TERMS.**
 
 **MICROSOFT OFFERING - MICROSOFT SYNTEX FEATURES**
