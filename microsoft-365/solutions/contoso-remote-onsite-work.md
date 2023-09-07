@@ -1,6 +1,6 @@
 ---
 title: "Contoso's COVID-19 response and support for hybrid work"
-author: bcarter
+author: brendacarter
 f1.keywords:
 - NOCSH
 ms.author: bcarter
