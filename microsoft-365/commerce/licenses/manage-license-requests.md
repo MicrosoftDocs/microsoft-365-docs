@@ -20,8 +20,8 @@ ms.custom:
 - MACBillingLicensesRequests
 - AdminSurgePortfolio
 search.appverid: MET150
-description: "Learn how to review and approve or deny license requests from users in theMicrosoft 365 admin center."
-ms.date: 06/13/2023
+description: "Learn how to review and approve or deny license requests for products and services from users in the Microsoft 365 admin center."
+ms.date: 09/07/2023
 ---
 
 # Manage self-service license requests in the Microsoft 365 admin center
@@ -80,7 +80,7 @@ When you return to the **Requests** list, you see the message **You're using you
 
 ## Share a license request by email
 
-If you don’t have the necessary roles to buy a subscription, you can share a license request via email with an admin in your organization who does. The other admin can then buy more licenses for the subscription and assign them to users. You can only share one request at a time.
+If you don’t have the authority within your organization to make decisions about who can receive a license for a particular product or service, you can share a license request via email with someone in your organization who does. You can only share one request at a time. The person who receives the license request email doesn’t need access to the Microsoft 365 admin center to review the request. They simply respond to the email and indicate whether the person should be given the license they requested, and then you [approve or deny the request](#approve-or-deny-a-license-request).
 
 1. In the admin center, select the **Navigation menu**, then select **Billing** > **Licenses**.
 2. On the **Licenses** page, select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2245727" target="_blank">Auto-claim policy</a> tab.
