@@ -58,13 +58,19 @@ The app makes it easy to manage the complex scheduling demands of any organizati
 
 The virtual appointments are held through Teams meetings, which offer robust video conferencing capabilities. For example, a doctor can share their screen and review test results with a patient. Or, a banking advisor can request electronic signatures on documents, allowing them to close transactions remotely.
 
-You get an experience that's tailored to your industry. Here's a few examples of how you can use it in your organization:
+You get an experience that's tailored to your industry. Here's a few examples of how you can use it in your organization.
 
-|Industry|Examples|
+|Healthcare  |Financial services |Retail|Sales|HR|
+|---------|---------|---------|---------|---------|
+|Diagnosis or post-op follow-up sessions|Financial consultations|Showcase products|High trust sales calls|Custom waiting rooms for applicants|
+|Consultations with clinicians, insurance providers|Insurance policy and claim support|Virtual fittings or tour showrooms|Issue resolution|Engage multiple interviewers         |
+|Therapy sessions|Loan advisory/management|Provide technical advice and resolve conflicts|Customer service|Post-interview action|
+
+<!--|Industry|Examples|
 |---------|---------|
 |Financial services|Virtual appointments for remote sales and service<br/>Schedule and manage appointments for bank relationship managers, financial advisors, and claims adjusters, just to name a few, to serve your customers with increased efficiency and convenience.|
 |Retail|Virtual fittings and consultations <br/>Schedule and manage appointments for your sales associates, product experts, and design consultants to conduct virtual shopping experiences with customers.|
-|Healthcare|Virtual appointments for patient care <br/>Schedule and manage appointments for your care team members to meet with patients or other healthcare providers to discuss medical care.|
+|Healthcare|Virtual appointments for patient care <br/>Schedule and manage appointments for your care team members to meet with patients or other healthcare providers to discuss medical care.|-->
 
 With any Microsoft 365 license, you can use basic Virtual Appointments capabilities that make it easy to schedule and join business-to-customer meetings. For example, you can schedule appointments in the calendar and external attendees can [join through a browser](browser-join.md) without having to download Teams. [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) unlocks advanced Virtual Appointments capabilities to manage and personalize the experience. These include a queue view of scheduled and on-demand appointments, SMS notifications, custom waiting rooms, and analytics.
 
