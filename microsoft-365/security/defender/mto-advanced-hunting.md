@@ -42,7 +42,7 @@ Once you have loaded the query in the query editor, you can then specify the sco
 
 This opens a side pane from which you can specify the tenants to include in the query.
 
-   :::image type="content" source="../../media/defender/mto-cross-tenants-sidepane.png" alt-text="Screenshot of the Microsoft 365 Defender cross tenants advanced hunting query side pane"scope column"" lightbox="../../media/defender/mto-cross-tenants-sidepane.png":::
+   :::image type="content" source="../../media/defender/mto-cross-tenants-sidepane.png" alt-text="Screenshot of the Microsoft 365 Defender cross tenants advanced hunting query side pane scope" lightbox="../../media/defender/mto-cross-tenants-sidepane.png":::
 
 >[!NOTE]
 >Queries that use the `join` operator are currently not supported in multi-tenant advanced hunting.
