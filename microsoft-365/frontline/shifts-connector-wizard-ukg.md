@@ -24,11 +24,23 @@ ms.date: 3/23/2023
 
 ## Overview
 
-The Shifts connector wizard in the Microsoft 365 admin center enables you to integrate the Shifts app in Microsoft Teams with your workforce management (WFM) system. Your frontline workers can seamlessly view and manage their schedules in your WFM system from within Shifts.
+<!--The [Microsoft Teams Shifts connector for UKG Dimensions](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-dimensions) enables you to integrate Shifts with UKG Dimensions to manage your schedules and keep them up to date. In this article, we explain how to run the wizard to set up a connection and a connection instance to UKG Dimensions.
 
-The wizard creates a connection to your UKG Dimensions system and a connection instance. This applies the sync settings and team mappings you choose. Sync settings determine the schedule information and what entities sync between UKG Dimensions and Shifts. Team mappings define the sync relationship between your UKG instances and teams in Microsoft Teams.
+> [!NOTE]
+> If you prefer, you can use PowerShell to integrate Shifts with UKG Dimensions. To learn more, see [Use PowerShell to connect Shifts to UKG Dimensions](shifts-connector-ukg-powershell-setup.md). -->
 
-You can create one or more connection instances, each with different sync settings. For example, if your organization has multiple locations with different schedule requirements, create a connection instance with unique sync settings for each location. A UKG instance should only be mapped once to a team in Teams at any given time. However, it's possible in the wizard to have different connection instances with the same mappings. This means that you can create connection instances with duplicated mappings.
+The [Microsoft Teams Shifts connector for UKG Dimensions](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-dimensions) enables you to integrate the Shifts app in Microsoft Teams with your UKG Dimensions workforce management (WFM) system. Your frontline workers can seamlessly view and manage their schedules in UKG Dimensions from within Shifts.
+
+In this article, we walk you through how to use the Shifts connector wizard in the Microsoft 365 admin center to connect Shifts to UKG Dimensions.
+
+> [!NOTE]
+> If you prefer, you can use PowerShell to integrate Shifts with UKG Dimensions. To learn more, see [Use PowerShell to connect Shifts to UKG Dimensions](shifts-connector-ukg-powershell-setup.md).
+
+<!--The Shifts connector wizard in the Microsoft 365 admin center enables you to integrate the Shifts app in Microsoft Teams with your workforce management (WFM) system. Your frontline workers can seamlessly view and manage their schedules in your WFM system from within Shifts.-->
+
+The wizard creates a connection to your UKG Dimensions system and a connection instance, which applies the sync settings and team mappings that you choose. Sync settings determine the schedule information and what entities sync between UKG Dimensions and Shifts. Team mappings define the sync relationship between your UKG instances and teams in Teams.
+
+You can create one or more connection instances, each with different sync settings. For example, if your organization has multiple locations with different schedule requirements, create a connection instance with unique sync settings for each location. A UKG Dimensions instance should only be mapped once to a team in Teams at any given time. However, it's possible in the wizard to have different connection instances with the same mappings. This means that you can create connection instances with duplicated mappings.
 
 With UKG Dimensions as the system of record, your frontline workers can efficiently manage their schedules and availability in Shifts on their devices. Frontline managers can continue to use UKG Dimensions to set up schedules.
 
@@ -36,20 +48,29 @@ With UKG Dimensions as the system of record, your frontline workers can efficien
 
 |Term |Definition |
 |-----|-----------|
-|Connection |This is where you configure your UKG Dimensions details by providing your account username, password, and service URLs. This enables access to all your WFM (workforce management) instances created in your UKG Dimensions WFM system. |
-|Connection instance |This is where you configure: <br> - The synchronization settings that determine how and which schedule information syncs between UKG Dimensions and Shifts <br> - Team mappings to define the relationship between your WFM instances and teams in Microsoft Teams |
-|WFM instance | This term refers to a team within your UKG Dimensions WFM system, which is different than a team in Microsoft Teams. |
+|Connection |A connection enables access to all WFM instances created in your UKG Dimensions system. To create a connection, you provide your UKG Dimensions details, which include your account username, password, and service URLs.|
+|Connection instance |To create a connection instance, you configure the following settings: <ul><li>Sync settings that determine how and which schedule information syncs between UKG Dimensions and Shifts</li><li> Team mappings to define the relationship between your WFM instances and teams in Teams</li></ul>|
+|WFM instance|This term refers to a team within your UKG Dimensions system, which is different than a team in Teams. |
 
-## Integrate Shifts with UKG Dimensions
+<!--## Integrate Shifts with UKG Dimensions
 
 The [Microsoft Teams Shifts connector for UKG Dimensions](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-dimensions) enables you to integrate Shifts with UKG Dimensions to manage your schedules and keep them up to date. In this article, we explain how to run the wizard to set up a connection and a connection instance to UKG Dimensions.
 
 > [!NOTE]
-> If you prefer, you can use PowerShell to integrate Shifts with UKG Dimensions. To learn more, see [Use PowerShell to connect Shifts to UKG Dimensions](shifts-connector-ukg-powershell-setup.md).
+> If you prefer, you can use PowerShell to integrate Shifts with UKG Dimensions. To learn more, see [Use PowerShell to connect Shifts to UKG Dimensions](shifts-connector-ukg-powershell-setup.md).-->
 
-### Prerequisites
+## Before you get started
 
-Before you try the Shifts connector wizard, check that you meet all these prerequisites:
+<!--Before you run the wizard, make sure that your environment is ready and you've completed all prerequisites and configuration tasks in [Prerequisites and requirements for the Teams Shifts connector for UKG Dimensions](shifts-connector-ukg-prerequisites.md).
+
+Take time to review the information and confirm you completed all the tasks before you follow the steps in this article.-->
+
+Before you run the wizard, take time to review the information and complete all prerequisites and configuration tasks in [Prerequisites and requirements for the Teams Shifts connector for UKG Dimensions](shifts-connector-ukg-prerequisites.md).
+
+Make sure you meet the prerequisites and you complete all the tasks before you follow the steps in this article.
+
+
+<!--Before you try the Shifts connector wizard, check that you meet all these prerequisites:
 
 - Make sure you’re a Microsoft 365 global admin.
 
@@ -96,11 +117,11 @@ Use PowerShell to remove schedule entities from teams.
 
     To get a list of scenarios for the `EntityType` parameter, run [Get-CsTeamsShiftsConnectionConnector](/powershell/module/teams/get-csteamsshiftsconnectionconnector). Schedule data will be removed for the date and time range that you specify.
 
-To learn more, see [Remove-CsTeamsShiftsScheduleRecord](/powershell/module/teams/remove-csteamsshiftsschedulerecord).
+To learn more, see [Remove-CsTeamsShiftsScheduleRecord](/powershell/module/teams/remove-csteamsshiftsschedulerecord).-->
 
 ## Run the Shifts connector wizard
 
-After you’ve followed all the previous steps and made sure you meet the prerequisites, now you’re ready to run the wizard and connect your UKG Dimensions system to Shifts in Teams.
+After you've completed all prerequisite and configuration tasks, you're ready to run the wizard and connect your UKG Dimensions system to Shifts in Teams.
 
 ### Create a connection
 
