@@ -3,8 +3,8 @@ title: "Set up your infrastructure for hybrid work with Microsoft 365"
 author: dansimp
 f1.keywords:
 - NOCSH
-ms.author: dansimp
-manager: dansimp
+author: brendacarter
+ms.author: bcarter
 ms.date: 05/01/2020
 audience: ITPro
 ms.topic: article
