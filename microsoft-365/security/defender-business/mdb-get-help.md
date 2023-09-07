@@ -9,7 +9,7 @@ ms.topic: reference
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 09/07/2022
+ms.date: 09/07/2023
 ms.collection: 
 - SMB
 - m365-security                 
