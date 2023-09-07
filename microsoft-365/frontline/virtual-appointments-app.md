@@ -58,7 +58,7 @@ The app makes it easy to manage the complex scheduling demands of any organizati
 
 The virtual appointments are held through Teams meetings, which offer robust video conferencing capabilities. For example, a doctor can share their screen and review test results with a patient. Or, a banking advisor can request electronic signatures on documents, allowing them to close transactions remotely.
 
-You get an experience that's tailored to your industry. Here's a few examples of how you can use it in your organization.
+You get an experience that's tailored to your industry. Here's some examples of how you can use it in your organization.
 
 |Healthcare  |Financial services |Retail|Sales|HR|
 |---------|---------|---------|---------|---------|
