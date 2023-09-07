@@ -119,9 +119,9 @@ To add a new policy, follow these steps:
 5. Review the summary and save the policy.
 
 > [!NOTE]
-> - There may be up to 2 hours of latency between the time a policy is created and the policy being enforced on the device.
-> - You can deploy a policy without selecting any category on a device group. This action will create an audit only policy to help you understand user behavior before creating a block policy.
-> - If you are removing a policy or changing device groups at the same time, this might cause a delay in policy deployment.
+> - There might be up to 2 hours of latency between the time a policy is created and when it's enforced on the device.
+> - You can deploy a policy without selecting any category on a device group. This action creates an audit-only policy to help you understand user behavior before creating a block policy.
+> - If you are removing a policy or changing device groups at the same time, there could be a delay in policy deployment.
 > - Blocking the "Uncategorized" category could lead to unexpected and undesired results.
 
 ## End-user experience
@@ -146,7 +146,7 @@ If you encounter a domain that has been incorrectly categorized, you can dispute
 
 To dispute the category of a domain, navigate to **Reports** \> **Web protection** \> **Web Content Filtering Details** \> **Domains**. On the domains tab of the Web Content Filtering reports, you will see an ellipsis beside each of the domains. Hover over this ellipsis and select **Dispute Category**.
 
-A panel will open where you can select the priority and add more details such as the suggested category for recategorization. Once you complete the form, select **Submit**. Our team will review the request within one business day. For immediate unblocking, create a [custom allow indicator](indicator-ip-domain.md).
+A panel opens where you can select the priority and add more details such as the suggested category for recategorization. Once you complete the form, select **Submit**. Our team will review the request within one business day. For immediate unblocking, create a [custom allow indicator](indicator-ip-domain.md).
 
 ## Web content filtering cards and details
 
