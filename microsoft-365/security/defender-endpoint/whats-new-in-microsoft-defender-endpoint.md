@@ -58,8 +58,10 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 
 - [What's new in Defender for Endpoint on Windows](windows-whatsnew.md)
 - [What's new in Defender for Endpoint on macOS](mac-whatsnew.md)
-- [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 - [What's new in Defender for Endpoint on Linux](linux-whatsnew.md)
+- [What's new in Defender for Endpoint on Android](android-whatsnew.md)
+- [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
+
 
 
 ## August 2023
