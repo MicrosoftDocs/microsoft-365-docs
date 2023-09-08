@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 Defender multi-tenant vulnerability management dashboard
-description: Learn about the capabilities of the Microsoft 365 Defender multi-tenant Unified View
+title: Defender Vulnerability Management dashboard in the multi-tenant view
+description: Learn about the capabilities of the vulnerability management dashboard in the multi-tenant view in Microsoft 365 Defender
 search.appverid: met150
 ms.service: microsoft-365-security
 ms.subservice: m365d
@@ -17,26 +17,33 @@ ms.topic: conceptual
 ms.date: 09/01/2023
 ---
 
-# Microsoft 365 Defender multi-tenant vulnerability management dashboard
+# Defender Vulnerability Management dashboard in the multi-tenant view
 
 **Applies to:**
 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-- Microsoft 365 Defender multi-tenant
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## Dashboard
+You can use the vulnerability management dashboard in the multi-tenant view in Microsoft 365 Defender to view aggregated and summarized information across all tenants, such as:
 
-The dashboard provides aggregated and summarized information across all tenants.  
+- Your exposure score for devices across all tenants and the exposure level.
+- Your most exposed tenants along with the details for each tenant of number of weaknesses, exposed devices, and available recommendations.
+- The risk level of your exposed devices.
 
-In the Microsoft 365 Defender multi-tenant Unified View dashboard page, you can find the following information across all the tenants you have access to:
+   :::image type="content" source="../../media/defender/mto-mdvm-dashboard.png" alt-text="Screenshot of the defender vulnerability management dashboard in the multi-tenant view in Microsoft 365 Defender" lightbox="../../media/defender/mto-mdvm-dashboard.png":::
 
-| Area                                          | Description                                                                                             |
-|-----------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Exposure score                                | Reflects the current exposure associated with devices in your organization, across all managed tenants. |
-| Most exposed tenants                          | Provides real time visibility into the tenants with the highest current exposure level.                 |
-| Exposure distribution                         | Shows how many devices are exposed, across all tenants, based on their exposure level.                  |
-| Tenants with the largest increase in exposure | Identify tenants with the largest increase in exposure over the last 30 days.                           |
-| Tenants exposure distribution                 | View a summary of exposed tenants aggregated by exposure level.                                         |
+The Defender Vulnerability Management dashboard in the multi-tenant view provides the following information across all the tenants you have access to:
 
+|Area|Description|
+|---|---|
+|**Organization Exposure score**|See the current state of your organization's device exposure to threats and vulnerabilities across all tenants. Several factors affect your organization's exposure score: weaknesses discovered in your devices, likelihood of your devices to be breached, value of the devices to your organization, and relevant alerts discovered with your devices. The goal is to lower the exposure score of your organization to be more secure. To reduce the score, you need to remediate the related security configuration issues listed in the security recommendations.|
+|**Most exposed tenants**|Real time visibility into the tenants with the highest current exposure level.|
+|**Tenants with the largest increase in exposure**|Identify tenants with the largest increase in exposure over the last 30 days.|
+|**Device exposure distribution**|See how many devices are exposed based on their exposure level, across all tenants. Select a section in the doughnut chart to see the number of exposed devices and their corresponding exposure risk.|
+|**Tenant exposure distribution**|View a summary of exposed tenants aggregated by exposure level.|
+
+## Related topics
+
+- [Exposure score](tvm-exposure-score.md)
+- [Security recommendations](tvm-security-recommendation.md)
