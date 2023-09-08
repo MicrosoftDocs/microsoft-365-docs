@@ -1,5 +1,5 @@
 ---
-title: Join or leave a multi-tenant organization in Microsoft 365 (Preview)
+title: Join or leave a multitenant organization in Microsoft 365 (Preview)
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -12,32 +12,32 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: Learn how to join or leave a multi-tenant organization in Microsoft 365.
+description: Learn how to join or leave a multitenant organization in Microsoft 365.
 ---
 
-# Join or leave a multi-tenant organization in Microsoft 365 (Preview)
+# Join or leave a multitenant organization in Microsoft 365 (Preview)
 
 > [!NOTE]
-> Multi-tenant organizations in Microsoft 365 is available in [targeted release](/microsoft-365/admin/manage/release-options-in-office-365).
+> Multitenant organizations in Microsoft 365 is available in [targeted release](/microsoft-365/admin/manage/release-options-in-office-365).
 
-To join a multi-tenant organization, a global administrator in the owner organization must first add your organization to the multi-tenant organization. Once they've done that, you can join the multi-tenant organization. You'll need the tenant ID of the owner organization in order to join.
+To join a multitenant organization, a global administrator in the owner organization must first add your organization to the multitenant organization. Once they've done that, you can join the multitenant organization. You'll need the tenant ID of the owner organization in order to join.
 
-Once you've joined, you can leave a multi-tenant organization at any time.
+Once you've joined, you can leave a multitenant organization at any time.
 
 #### Related settings in Azure AD
 
-When you join an existing multi-tenant organization, the following settings are configured in Azure Active Directory:
+When you join an existing multitenant organization, the following settings are configured in Azure Active Directory:
 
 - A cross-tenant synchronization configuration is added with the name *MTO_Sync_\<TenantID\>*, but no sync jobs are created yet. (If you already have a cross-tenant synchronization configuration, it remains unchanged.)
-- An organization relationship is added to the [cross-tenant access settings](/azure/active-directory/external-identities/cross-tenant-access-overview) based on the [multi-tenant organization templates](/azure/active-directory/multi-tenant-organizations/templates) for cross-tenant access and identity synchronization. (If an organizational relationship already exists, the existing one is used.)
-- The multi-tenant organization template for identity synchronization is set to allow users to sync into this tenant.
-- The multi-tenant org template for cross-tenant access will be set to automatically redeem user invitations, inbound as well as outbound.
+- An organization relationship is added to the [cross-tenant access settings](/azure/active-directory/external-identities/cross-tenant-access-overview) based on the [multitenant organization templates](/azure/active-directory/multi-tenant-organizations/templates) for cross-tenant access and identity synchronization. (If an organizational relationship already exists, the existing one is used.)
+- The multitenant organization template for identity synchronization is set to allow users to sync into this tenant.
+- The multitenant org template for cross-tenant access will be set to automatically redeem user invitations, inbound as well as outbound.
 
-When you leave a multi-tenant organization, the cross-tenant access settings and cross-tenant synchronization configurations in Azure AD aren't affected.
+When you leave a multitenant organization, the cross-tenant access settings and cross-tenant synchronization configurations in Azure AD aren't affected.
 
-## Join an existing multi-tenant organization
+## Join an existing multitenant organization
 
-To join an existing multi-tenant organization in Microsoft 365
+To join an existing multitenant organization in Microsoft 365
 
 1. In the Microsoft 365 admin center, expand **Settings**.
 1. Select **Org settings**.
@@ -49,18 +49,18 @@ To join an existing multi-tenant organization in Microsoft 365
 1. Select **Next**.
 1. Select **Done**.
 
-It can take up to four hours for your tenant to be joined to the multi-tenant organization.
+It can take up to four hours for your tenant to be joined to the multitenant organization.
 
 > [!NOTE]
-> If you encounter an error when joining the multi-tenant organization, try again after two hours. If the error reoccurs, contact Microsoft support.
+> If you encounter an error when joining the multitenant organization, try again after two hours. If the error reoccurs, contact Microsoft support.
 
-The next step after you join the multi-tenant organization is to synchronize your users with the other tenants. For details, see [Synchronize users in multi-tenant orgs in Microsoft 365](sync-users-multi-tenant-orgs.md).
+The next step after you join the multitenant organization is to synchronize your users with the other tenants. For details, see [Synchronize users in multitenant orgs in Microsoft 365](sync-users-multi-tenant-orgs.md).
 
-## Leave a multi-tenant organization
+## Leave a multitenant organization
 
-You can leave a multi-tenant organization as long as your tenant isn't the last owner tenant in the multi-tenant organization. You can also remove other member tenants.
+You can leave a multitenant organization as long as your tenant isn't the last owner tenant in the multitenant organization. You can also remove other member tenants.
 
-To remove a tenant from a multi-tenant organization in Microsoft 365
+To remove a tenant from a multitenant organization in Microsoft 365
 
 1. In the Microsoft 365 admin center, expand **Settings**.
 1. Select **Org settings**.
@@ -73,17 +73,17 @@ Removing a tenant doesn't change any user synchronization configurations or cros
 
 #### Remove synchronized users from other tenants
 
-When you remove a tenant from a multi-tenant organization, you may want to stop synchronizing users between that tenant and the tenants that remain in the multi-tenant organization. This can be done by updating the cross-tenant synchronization configuration in Azure AD and removing the security groups being synchronized, then restarting the synchronization with zero users.
+When you remove a tenant from a multitenant organization, you may want to stop synchronizing users between that tenant and the tenants that remain in the multitenant organization. This can be done by updating the cross-tenant synchronization configuration in Azure AD and removing the security groups being synchronized, then restarting the synchronization with zero users.
 
-Cross-tenant synchronization configurations for multi-tenant organizations that were created in the Microsoft 365 admin center are named *MTO_Sync_\<TenantID\>* in Azure AD cross-tenant synchronization.
+Cross-tenant synchronization configurations for multitenant organizations that were created in the Microsoft 365 admin center are named *MTO_Sync_\<TenantID\>* in Azure AD cross-tenant synchronization.
 
 To remove the cross-synchronized users:
 
-- For the tenant that is leaving the multi-tenant organization, update the synchronization configurations for each remaining tenant in the multi-tenant organization where you're synchronizing users.
+- For the tenant that is leaving the multitenant organization, update the synchronization configurations for each remaining tenant in the multitenant organization where you're synchronizing users.
 
-- For each tenant that's remaining in the multi-tenant organization, update the synchronization configuration for the tenant that's leaving.
+- For each tenant that's remaining in the multitenant organization, update the synchronization configuration for the tenant that's leaving.
 
-To remove your users from other tenants in a multi-tenant organization
+To remove your users from other tenants in a multitenant organization
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as a Global administrator.
 1. Expand **Identity**, and then expand **External Identities**.
 1. Select **Cross-tenant synchronization**.
@@ -98,13 +98,13 @@ Once the users have been removed from the other tenants' directories, you can st
 
 #### Stop user sync and automatic invitation redemption
 
-Once you remove a tenant from a multi-tenant organization, you may want to stop user sync and automatic invitation redemption with the tenants that remain in the multi-tenant organization.
+Once you remove a tenant from a multitenant organization, you may want to stop user sync and automatic invitation redemption with the tenants that remain in the multitenant organization.
 
 To prevent user sync and automatic invitation redemption:
 
-- For the tenant that is leaving the multi-tenant organization, update the cross-tenant access settings for each tenant that's remaining in the multi-tenant organization.
+- For the tenant that is leaving the multitenant organization, update the cross-tenant access settings for each tenant that's remaining in the multitenant organization.
 
-- For each tenant that's remaining in the multi-tenant organization, update the cross-tenant access settings for the tenant that's leaving.
+- For each tenant that's remaining in the multitenant organization, update the cross-tenant access settings for the tenant that's leaving.
 
 To prevent user sync and automatic invitation redemption
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as a Global administrator.
@@ -126,8 +126,8 @@ For more information about cross-tenant access settings, see [Configure cross-te
 
 [Overview: Cross-tenant access with Azure AD External Identities](/azure/active-directory/external-identities/cross-tenant-access-overview)
 
-[Plan for multi-tenant organizations in Microsoft 365](plan-multi-tenant-org-overview.md)
+[Plan for multitenant organizations in Microsoft 365](plan-multi-tenant-org-overview.md)
 
-[Set up a multi-tenant org in Microsoft 365](set-up-multi-tenant-org.md)
+[Set up a multitenant org in Microsoft 365](set-up-multi-tenant-org.md)
 
-[Synchronize users in multi-tenant organizations in Microsoft 365](sync-users-multi-tenant-orgs.md)
+[Synchronize users in multitenant organizations in Microsoft 365](sync-users-multi-tenant-orgs.md)
