@@ -45,5 +45,5 @@ The Defender Vulnerability Management dashboard in the multi-tenant view provide
 
 ## Related topics
 
-- [Exposure score](../../defender-vulnerability-management/tvm-exposure-score.md)
-- [Security recommendations](../../defender-vulnerability-management/tvm-security-recommendation.md)
+- [Exposure score](../defender-vulnerability-management/tvm-exposure-score.md)
+- [Security recommendations](../defender-vulnerability-management/tvm-security-recommendation.md)
