@@ -124,6 +124,16 @@ We always work closely with our customers in joint remediation to resolve any is
 
 **A:** The goal of Test Base is to ensure our joint end customers do not face any issues. We work hard with Software Vendors to address any issues before the release, but in case the fix is not feasible we have other resolutions such as shims and blocks.
 
+## Security
+
+**Q: Where are my packages and binaries stored and what security precautions do you take to keep my data safe?**
+
+**A:** Packages are uploaded and stored in Microsoft-managed Azure cloud storage. The data is encrypted in transit and at rest. When the system gets notified that one of your packages needs to be tested, a dedicated and isolated Microsoft-managed Azure Guest VM is provisioned with the OS image you selected. This VM lives within our Microsoft tenant and is provisioned within its own VNet/private subnet to prevent any lateral moves from any other Azure VM in our VM pool. The VM is configured to disallow any inbound traffic to protect the integrity of the Guest VM. In addition to these guardrails, your Test Base account and packages are uploaded as Azure resources and benefit from Azure RBAC. You can use Azure AD plus Azure RBAC to control access to your account and packages.
+
+**Q: Who has access to the VM?**
+
+**A:** Only our backend services can access the Microsoft-managed VMs that run your workloads. These VMs are configured to disallow any inbound traffic, including remote connections, to protect the integrity of the VM.
+
 ## Miscellaneous
 
 **Q: How will the service work with an on-prem server?**
