@@ -2746,6 +2746,11 @@
          "redirect_document_id":true
       },
       {
+         "source_path":"microsoft-365/security/intelligence/unwanted-software.md",
+         "redirect_url":"/microsoft-365/security/defender/",
+         "redirect_document_id":true
+      },
+      {
          "source_path":"microsoft-365/security/intelligence/support-scams.md",
          "redirect_url":"/microsoft-365/security/defender/",
          "redirect_document_id":true
