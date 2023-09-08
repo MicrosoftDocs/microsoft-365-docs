@@ -33,7 +33,7 @@ The tenant page in the multi-tenant view of the Microsoft 365 Defender list each
 
 Select a tenant name to navigate to the device inventory for that tenant in [Microsoft 365 Defender](https://security.microsoft.com/machines) portal where all data and inventory-related actions are available. For more information, see[Device inventory](../defender-endpoint/machines-view-overview.md)
 
-At the top of the page, you can view the number of tenants and the number of devices onboarded or discovered, across all tenants. This also includes the number of device identified as:
+At the top of the page, you can view the number of tenants and the number of devices onboarded or discovered, across all tenants. The counts at the top of the page also includes the number of devices identified as:
 
 - High risk
 - High exposure
