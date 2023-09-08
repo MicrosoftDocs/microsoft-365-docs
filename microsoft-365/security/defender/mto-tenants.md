@@ -29,7 +29,7 @@ ms.date: 09/01/2023
 
 To view the list of tenants that appear in the multi-tenant view, go to [Settings page](https://mto.security.microsoft.com/mtosettings) in the multi-tenant view in Microsoft 365 Defender:
 
-   :::image type="content" source="../../media/defender/mto-multi-tenant-view.png" alt-text="Screenshot of themulti-tenant view in Microsoft 365 Defendersettings page" lightbox="../../media/defender/mto-multi-tenant-view.png":::
+   :::image type="content" source="../../media/defender/mto-multi-tenant-view.png" alt-text="Screenshot of the multi-tenant view in Microsoft 365 Defender" lightbox="../../media/defender/mto-multi-tenant-view.png":::
 
 From the **Settings** page you can:
 
