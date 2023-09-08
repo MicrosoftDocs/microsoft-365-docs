@@ -31,9 +31,9 @@ The multi-tenant view in Microsoft 365 Defender was designed to provide security
 >[!Tip]
 >To learn more about multi-tenant organizations, see [Multi-tenant organizations documentation](/azure/active-directory/multi-tenant-organizations/).
 
-Some of the key benefits you'll get with the multi-tenant view in Microsoft 365 Defender include:
+Some of the key benefits you get with the multi-tenant view in Microsoft 365 Defender include:
 
-- **A centralized place to manage incidents across tenants**: A unified view provides SOC analysts with all the information they need for incident investigation across multiple tenants, eliminating the need to log in and out of each one.
+- **A centralized place to manage incidents across tenants**: A unified view provides SOC analysts with all the information they need for incident investigation across multiple tenants, eliminating the need to sign in and out of each one.
 
 - **Streamlined threat hunting**: Multi-tenancy support enables SOC teams use Microsoft 365 Defender advanced hunting capabilities to create KQL queries that will proactively hunt for threats across multiple tenants.
 
@@ -51,7 +51,7 @@ The following key capabilities are available for each tenant you have access to 
 |**Hunting** > **Custom detection rules**|View and manage custom detection rules across multiple tenants.|
 |**Assets** > **Devices** > **Tenants**| For all tenants and at a tenant-specific level, explore the device counts across different values such as device type, device value, onboarding status, and risk status.|
 |**Endpoints** >**Vulnerability Management** > **Dashboard** |The Microsoft Defender Vulnerability Management dashboard provides both security administrators and security operations teams with aggregated vulnerability management information across multiple tenants. |
-|**Endpoints** > **Vulnerability management** > **Tenants** |For all tenants and at a tenant-specific level explore vulnerability management information across different values such as exposed devices, security recommendations, weaknesses, and critical CVEs. |
+|**Endpoints** > **Vulnerability management** > **Tenants** |For all tenants and at a tenant-specific level, explore vulnerability management information across different values such as exposed devices, security recommendations, weaknesses, and critical CVEs. |
 |**Configuration** > **Settings**|Lists the tenants you have access to. Use this page to view and manage your tenants.|
 
 ## Next steps
