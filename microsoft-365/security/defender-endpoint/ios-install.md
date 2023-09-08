@@ -113,7 +113,7 @@ Configure the supervised mode for Defender for Endpoint app through an App confi
 1. In the next screen, select **Use configuration designer** as the format. Specify the following properties:
     - Configuration Key: `issupervised`
     - Value type: String
-    - Configuration Value: `true`
+    - Configuration Value: `{{issupervised}}`
 
     :::image type="content" source="images/ios-deploy-6.png" alt-text="Image of Microsoft Intune admin center6." lightbox="images/ios-deploy-6.png":::
 

@@ -1,7 +1,7 @@
 ---
 title: Manage the Frontline Trial in Teams
 author: lana-chin
-ms.author: v-chinlana
+ms.author: heidip
 manager: serdars
 ms.reviewer: samanro
 ms.topic: how-to
@@ -13,7 +13,6 @@ ms.localizationpriority: high
 ms.collection: 
   - m365-frontline
   - highpri
-  - tier2
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
