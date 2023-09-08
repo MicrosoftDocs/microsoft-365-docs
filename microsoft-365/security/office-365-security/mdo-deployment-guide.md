@@ -68,6 +68,12 @@ Create the following email authentication DNS records at your DNS registrar or D
 
   This SPF TXT record instructs destination email servers to _reject_ messages from senders in the domain that originate from other sources.
 
+  You should also configure the following SPF TXT record to protect against unused subdomains:
+
+  ```txt
+  *.subdomain.contoso.com. IN TXT "v=spf1 -all"
+  ```
+
   If there are other known or unknown sources for email in the domain (for example, third-party email services or on-premises email servers), or if you're using Office 365 Germany or Exchange Online Dedicated, see [Set up SPF to help prevent spoofing](email-authentication-spf-configure.md) for how to correctly configure the SPF TXT record.
 
 
