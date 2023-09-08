@@ -20,7 +20,7 @@ description: Learn how to plan for multi-tenant organizations in Microsoft 365.
 > [!NOTE]
 > Multi-tenant organizations in Microsoft 365 is available in [targeted release](/microsoft-365/admin/manage/release-options-in-office-365).
 
-If your organization manages multiple Microsoft 365 tenants, you can set up a multi-tenant organization in Microsoft 365 to facilitate collaboration and resource access between tenants. Creating a multi-tenant organization and synchronizing users between tenants provides a more seamless collaboration experience between the users in different tenants when [searching for each other](/microsoft-365/enterprise/multi-tenant-people-search), using Teams and meetings, and collaborating on files.
+If your organization manages multiple Microsoft 365 tenants, you can set up a multi-tenant organization in Microsoft 365 to facilitate collaboration and resource access between tenants. Creating a multi-tenant organization and synchronizing users between tenants provides a more seamless collaboration experience between the users in different tenants when [searching for each other](/microsoft-365/enterprise/multi-tenant-people-search), using Microsoft Teams and meetings, and collaborating on files.
 
 The tenant that creates the multi-tenant organization is known as the *owner* while other tenants that join the multi-tenant organization are known as *members*. Once the global administrator in the owner tenant creates the multi-tenant organization, they can invite member tenants. A global administrator in each member tenant can then join the multi-tenant organization.
 
@@ -28,7 +28,7 @@ While you configure Microsoft 365 multi-tenant organizations in the Microsoft 36
 
 ## User synchronization between tenants
 
-Multi-tenant organizations synchronize users between tenants using Azure AD B2B collaboration users. Users from your tenant are provisioned in the other tenants in the multi-tenant organization as B2B collaboration users, but with a user type of member rather than guest. (See [What are the default user permissions in Azure Active Directory?](/azure/active-directory/fundamentals/users-default-permissions) for the differences between these roles.)
+Multi-tenant organizations synchronize users between tenants using Azure AD B2B collaboration users. Users from your tenant are provisioned in the other tenants in the multi-tenant organization as B2B collaboration users, but with a user type of member rather than guest. (See [What are the default user permissions in Azure Active Directory?](/azure/active-directory/fundamentals/users-default-permissions) for the differences between these roles.) The member user type is required by Teams in multi-tenant organizations.
 
 We recommend starting with a small set of users before rolling out to the entire organization. When you do the complete rollout, we highly recommend synchronizing all users across all tenants in your multi-tenant organization for the best user experience. However you can synchronize a subset of users if you need to, including different users to different tenants.
 

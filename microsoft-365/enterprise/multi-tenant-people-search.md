@@ -44,12 +44,7 @@ Megan's user account has been synced from the _Fabrikam_ tenant to the target te
 - The Microsoft Teams audio and video call buttons will direct the call to the Megan's Contoso tenant Teams instance and not the Teams instance target tenant (Fabrikam).
 - The current experience provides limited information on the people card (basic contact information, job title and office location).
 - There is no external tag to differentiate synced users and internal users. For example, if there was a megan@fabrikam and megan@Contoso there's no (External) tag to show that megan@fabrikam is a different user.
-
-## External Member Limitations
-
-- External member isn't supported in Teams Connect shared channels.
-- Converting an external guest into an external member or converting an external member into an external guest isn't currently supported by Teams. For more information, see Guest access in Microsoft Teams.
-- External member isn't supported in Power BI. For more information, see Distribute Power BI content to external guest users using Azure Active Directory B2B.
+- Converting an external guest into an external member or converting an external member into an external guest isn't currently supported by Teams.
 
 
 ## Prerequisites
