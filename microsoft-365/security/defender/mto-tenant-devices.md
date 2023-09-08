@@ -27,7 +27,7 @@ ms.date: 09/01/2023
 
 ## Tenant device list
 
-The Tenants page in the multi-tenant view of Microsoft 365 Defender lists each tenant you have access to. For each tenant, the view includes details such as the number of devices and device types, the number of high value and high exposure devices, and the number of devices available to onboard:
+The Tenants page in the multi-tenant view of Microsoft 365 Defender lists each tenant you have access to. For each tenant, the page includes details such as the number of devices and device types, the number of high value and high exposure devices, and the number of devices available to onboard:
 
    :::image type="content" source="../../media/defender/mto-tenant-page.png" alt-text="Screenshot of the Microsoft 365 Defender multi-tenant settings page" lightbox="../../media/defender/mto-tenant-page.png":::
 
@@ -43,4 +43,4 @@ At the top of the page, you can view the number of tenants and the number of dev
 
 Select a tenant name to navigate to the device inventory for that tenant in [Microsoft 365 Defender](https://security.microsoft.com/machines) portal where all data and inventory-related actions are available.
 
-For more information, see [Device inventory](../defender-endpoint/machines-view-overview.md)
+For more information, see [Device inventory](../defender-endpoint/machines-view-overview.md).
