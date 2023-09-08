@@ -71,7 +71,7 @@ The rest of this article how to configure preset security policies.
      - **Groups**:
        - Members of the specified distribution groups or mail-enabled security groups (dynamic distribution groups aren't supported).
        - The specified Microsoft 365 Groups.
-     - **Domains**: All recipients in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
+     - **Domains**: All recipients in the organization with a primary email address in the specified [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
    Click in the appropriate box, start typing a value, and select the value that you want from the results. Repeat this process as many times as necessary. To remove an existing value, select :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: next to the value.
 
@@ -581,6 +581,6 @@ Consider applying the Standard or Strict preset security policies to a subset of
   - Configure recipients who should get the settings of custom policies as exceptions in the **Standard** preset security policy.
   - Configure recipients who should get the settings of the Built-in protection preset security policy or default policies as exceptions to custom policies.
 
-The Built-in protection** doesn't affect recipients in existing Safe Links or Safe Attachments policies. If you already configured **Standard protection**, **Strict protection** or custom Safe Links or Safe Attachments policies, those policies are _always_ applied _before_ **Built-in protection**, so there's no effect on the recipients who are already defined in those existing preset or custom policies.
+The **Built-in protection** preset security policy doesn't affect recipients in existing Safe Links or Safe Attachments policies. If you already configured **Standard protection**, **Strict protection** or custom Safe Links or Safe Attachments policies, those policies are _always_ applied _before_ **Built-in protection**, so there's no effect on the recipients who are already defined in those existing preset or custom policies.
 
 For more information, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).

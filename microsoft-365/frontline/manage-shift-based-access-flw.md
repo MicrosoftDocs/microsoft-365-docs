@@ -1,7 +1,7 @@
 ---
 title: Manage shift-based access for frontline workers in Teams
 author: lana-chin
-ms.author: v-chinlana
+ms.author: heidip
 manager: serdars
 ms.topic: how-to
 audience: admin
@@ -13,7 +13,6 @@ ms.collection:
   - M365-collaboration
   - m365-frontline
   - highpri
-  - tier2
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers

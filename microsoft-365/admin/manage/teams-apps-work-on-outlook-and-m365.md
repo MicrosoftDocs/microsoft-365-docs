@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
-ms.date: 05/11/2023
+ms.date: 09/05/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -56,6 +56,11 @@ As an admin, you can now deploy these apps on Outlook, and Microsoft 365 (former
 5. Click **Next** to select the set of users to whom you want to deploy the app. Read more about [user groups and assignments](/microsoft-365/admin/manage/test-and-deploy-microsoft-365-apps#user-and-group-assignments).
 6. Next, accept permissions if there are any. Then select **Next**.
 7. Review and finish the deployment of the app. This app is now preinstalled for all selected users in the applicable hosts.
+
+As a Global Administrator or Azure Application Admin, you can also initiate deployment of an app from its overview pane in the Available Apps list on Integrated Apps.  
+1. Select the app you wish to deploy from the **Available Apps** list on **Integrated Apps**. 
+2. Next, select **Deploy app** in the overview pane.  
+3. Complete the deployment steps as listed above.  
 
 > [!NOTE]
 > Any changes made to these apps from Integrated Apps on the Microsoft 365 admin center will only impact these apps on Outlook and the Microsoft 365 app at this time. To manage how these apps show up on Teams, please continue to use Teams admin center.
@@ -198,5 +203,25 @@ You can also upload custom line of business apps and deploy/pre-install them for
 
 Whenever a custom line of business app is uploaded, it is made available to all users in the organization for installation and use by default. You can edit the availability of this custom line of business app from the Available apps list. For more information, see the section about [how to manage availability of an app in your organization](#how-to-manage-the-availability-of-an-app-in-your-organization).  
 
+As a Global Administrator or Azure Application Admin, you can also initiate deployment of a custom app (uploaded from Teams Admin Centre) from its overview pane in the Available Apps list on Integrated Apps. 
+
+1. Once the app is uploaded from Teams Admin Center, it will show up in the **Available Apps** list on **Integrated Apps** with the availability status of **All users in the organization can install**.
+2. Select the app from the **Available Apps** list on **Integrated Apps**.
+3. Next, select **Deploy app** in the overview pane.  
+4. Complete the deployment steps as listed above.
+
+Once finished, the app will be deployed to Outlook and the Microsoft 365 App. To manage this app on Teams, visit Teams Admin Center.  
+
 > [!NOTE]
-> When uploading and deploying a custom app, it will only be preinstalled for selected users/groups on Outlook and the Microsoft 365 App. To manage how it is accessed by users on Teams, please visit Teams admin center.
+> Before uploading a custom app from Integrated Apps on Microsoft 365 admin center, please verify if this app is visible in the Available Apps list. If it is visible, please deploy the app using the steps outlined above.
+
+### Removal of a custom app
+
+1. Select **Remove app** in the overview tab of an app from the **Deployed Apps** list.
+2. Consent to the removal terms.
+3. Select **Remove**, then select **Done**.
+
+> [!NOTE]
+> Removing a custom app from the Deployed Apps list on Integrated Apps will delete the deployment and the app will no longer be available for install to end users in your organization on Outlook and/or the Microsoft 365 App. If the custom app is also supported on Teams, it will be removed from the Teams admin center.
+>
+> Please verify if the app was successfully removed from both the Microsoft 365 admin center and Teams admin center.

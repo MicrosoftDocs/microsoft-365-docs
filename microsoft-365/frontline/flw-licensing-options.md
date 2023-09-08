@@ -1,7 +1,7 @@
 ---
 title: Understand frontline worker user types and licensing
 author: lana-chin
-ms.author: v-chinlana
+ms.author: heidip
 manager: serdars
 ms.reviewer: aaglick
 ms.topic: conceptual
@@ -13,7 +13,6 @@ ms.localizationpriority: high
 ms.collection: 
   - m365-frontline
   - highpri
-  - tier1
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers

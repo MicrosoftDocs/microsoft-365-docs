@@ -1,7 +1,7 @@
 ---
 title: Use PowerShell to connect Shifts to Blue Yonder Workforce Management
 author: lana-chin
-ms.author: v-chinlana
+ms.author: heidip
 manager: serdars
 ms.reviewer: imarquesgil
 ms.topic: how-to
@@ -14,7 +14,7 @@ ms.collection:
   - M365-collaboration
   - m365-frontline
   - highpri
-  - tier2
+  - teams-1p-app-admin
 appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
