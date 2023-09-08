@@ -177,7 +177,7 @@ Remember, when you evaluate or try Defender for Office 365 in audit mode, specia
      - **Groups**:
        - Members of the specified distribution groups or mail-enabled security groups (dynamic distribution groups aren't supported).
        - The specified Microsoft 365 Groups.
-       - **Domains**: All recipients in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
+       - **Domains**: All recipients in the organization with a primary email address in the specified [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
      Click in the box, start typing a value, and select the value from the results below the box. Repeat this process as many times as necessary. To remove an existing value, select :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: next to the value in the box.
 
@@ -250,7 +250,7 @@ Remember, when you try Defender for Office 365 in **blocking mode**, the Standar
      - **Groups**:
        - Members of the specified distribution groups or mail-enabled security groups (dynamic distribution groups aren't supported).
        - The specified Microsoft 365 Groups.
-     - **Domains**: All recipients in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
+     - **Domains**: All recipients in the organization with a primary email address in the specified [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
      Click in the box, start typing a value, and select the value from the results below the box. Repeat this process as many times as necessary. To remove an existing value, select :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: next to the value in the box.
 

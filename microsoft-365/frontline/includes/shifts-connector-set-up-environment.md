@@ -1,10 +1,11 @@
 ---
-author: LanaChin
-ms.author: v-lanachin
+author: lana-chin
+ms.author: v-chinlana
 ms.date: 03/31/2022 
 ms.topic: include
 audience: admin
 ms.service: microsoft-365-frontline
+ms.collection: m365-frontline
 ---
 1. Install PowerShell version 7 or later. For step-by-step guidance, see [Installing PowerShell on Windows](/powershell/scripting/install/installing-powershell-on-windows).
 
