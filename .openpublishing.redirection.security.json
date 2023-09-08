@@ -2688,72 +2688,72 @@
       {
          "source_path":"microsoft-365/security/intelligence/understanding-malware.md",
          "redirect_url":"/microsoft-365/security/defender/",
-         "redirect_document_id":true
+         "redirect_document_id":false
       },
       {
          "source_path":"microsoft-365/security/intelligence/coinminer-malware.md",
          "redirect_url":"/microsoft-365/security/defender/",
-         "redirect_document_id":true
+         "redirect_document_id":false
       },
       {
          "source_path":"microsoft-365/security/intelligence/exploits-malware.md",
          "redirect_url":"/microsoft-365/security/defender/",
-         "redirect_document_id":true
+         "redirect_document_id":false
       },
       {
          "source_path":"microsoft-365/security/intelligence/macro-malware.md",
          "redirect_url":"/microsoft-365/security/defender/",
-         "redirect_document_id":true
+         "redirect_document_id":false
       },
       {
          "source_path":"microsoft-365/security/intelligence/rootkits-malware.md",
          "redirect_url":"/microsoft-365/security/defender/",
-         "redirect_document_id":true
+         "redirect_document_id":false
       },
       {
          "source_path":"microsoft-365/security/intelligence/trojans-malware.md",
          "redirect_url":"/microsoft-365/security/defender/",
-         "redirect_document_id":true
+         "redirect_document_id":false
       },
       {
          "source_path":"microsoft-365/security/intelligence/worms-malware.md",
          "redirect_url":"/microsoft-365/security/defender/",
-         "redirect_document_id":true
+         "redirect_document_id":false
       },
       {
          "source_path":"microsoft-365/security/intelligence/fileless-threats.md",
          "redirect_url":"/microsoft-365/security/defender/",
-         "redirect_document_id":true
+         "redirect_document_id":false
       },
       {
          "source_path":"microsoft-365/security/intelligence/phishing.md",
          "redirect_url":"/microsoft-365/security/defender/",
-         "redirect_document_id":true
+         "redirect_document_id":false
       },
       {
          "source_path":"microsoft-365/security/intelligence/phishing-trends.md",
          "redirect_url":"/microsoft-365/security/defender/",
-         "redirect_document_id":true
+         "redirect_document_id": false
       },
       {
          "source_path":"microsoft-365/security/intelligence/supply-chain-malware.md",
          "redirect_url":"/microsoft-365/security/defender/",
-         "redirect_document_id":true
+         "redirect_document_id": false
       },
       {
          "source_path":"microsoft-365/security/intelligence/prevent-malware-infection.md",
          "redirect_url":"/microsoft-365/security/defender/",
-         "redirect_document_id":true
+         "redirect_document_id": false
       },
       {
          "source_path":"microsoft-365/security/intelligence/unwanted-software.md",
          "redirect_url":"/microsoft-365/security/defender/",
-         "redirect_document_id":true
+         "redirect_document_id": false
       },
       {
          "source_path":"microsoft-365/security/intelligence/support-scams.md",
          "redirect_url":"/microsoft-365/security/defender/",
-         "redirect_document_id":true
+         "redirect_document_id": false
       },
       {
          "source_path": "microsoft-365/security/defender/first-incident-prepare.md",
