@@ -35,7 +35,7 @@ This article describes the steps need to take start using the multi-tenant view 
 
 ## Verify your tenant access
 
-To view the data, you have access to across multiple tenants in multi-tenant view in Microsoft 365 Defender, you need to ensure you have the necessary permissions. For each tenant you want to view and manage, you need one of the following:
+To view the data, you have access to across multiple tenants in the multi-tenant view in Microsoft 365 Defender, you need to ensure you have the necessary permissions. For each tenant you want to view and manage, you need one of the following:
 
 - [Azure Active Directory B2B authentication](/azure/active-directory/external-identities/what-is-b2b)
 - [Granular delegated admin privileges (GDAP)](/partner-center/gdap-introduction)
@@ -62,7 +62,7 @@ To view the data, you have access to across multiple tenants in multi-tenant vie
 
 ## Use the multi-tenant view in Microsoft 365 Defender setup wizard
 
-If this is the first time you're using the multi-tenant view in Microsoft 365 Defender, the setup wizard helps you add the tenants you want to view and manage in the portal. To get started:
+If this is the first time you're using the multi-tenant view in Microsoft 365 Defender, the setup wizard helps you add the tenants you want to view and manage. To get started:
 
 1. Sign in to the [Multi-tenant view in Microsoft 365 Defender](https://mto.security.microsoft.com/).
 2. Select **Add tenants**.
