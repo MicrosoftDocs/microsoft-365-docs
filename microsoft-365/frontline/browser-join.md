@@ -1,7 +1,7 @@
 ---
 title: Manage the join experience for Teams Virtual Appointments on browsers
 author: lana-chin
-ms.author: v-chinlana
+ms.author: heidip
 manager: serdars
 audience: ITPro
 ms.topic: how-to
@@ -43,7 +43,7 @@ Currently, browser join is available for appointments that are scheduled through
 - [The Bookings app](https://support.microsoft.com/office/what-is-bookings-42d4e852-8e99-4d8f-9b70-d7fc93973cb5)
 - Microsoft Teams Electronic Health Record (EHR) connector
 
-  - Integration with [Cerner EHR](ehr-admin-cerner.md)
+  - Integration with [Oracle Health EHR](ehr-admin-oracle-health.md)
   - Integration with [Epic EHR](ehr-admin-epic.md)
 
 ## Set up browser join
@@ -73,7 +73,7 @@ On the **Bookings schedule** tab of the Virtual Appointments app or in the Booki
 
 No setup is needed by you or your staff!
 
-**Integration with Cerner EHR**: The Teams EHR connector supports patients joining virtual appointments through a link in the SMS text message. At the time of the appointment, patients can join by tapping the link in the SMS text message, and Teams opens in a browser.
+**Integration with Oracle Health EHR**: The Teams EHR connector supports patients joining virtual appointments through a link in the SMS text message. At the time of the appointment, patients can join by tapping the link in the SMS text message, and Teams opens in a browser.
 
 **Integration with Epic EHR**: The Teams EHR connector supports patients joining virtual appointments through MyChart web and mobile. At the time of the appointment, patients can start the appointment from MyChart by using the **Begin virtual visit** button, and Teams opens in a browser.
 

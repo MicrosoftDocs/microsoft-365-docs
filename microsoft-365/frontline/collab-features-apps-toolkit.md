@@ -1,7 +1,7 @@
 ---
 title: Help your frontline workers use collaboration apps and features
 author: lana-chin
-ms.author: v-chinlana
+ms.author: heidip
 manager: serdars
 audience: ITPro
 ms.topic: end-user-help 

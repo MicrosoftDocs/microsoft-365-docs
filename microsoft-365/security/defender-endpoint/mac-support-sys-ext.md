@@ -6,8 +6,8 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-smandalika
-author: v-smandalika
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -32,7 +32,7 @@ ms.date: 06/07/2023
 - [Microsoft Defender for Endpoint Plan 2](defender-endpoint-plan-1-2.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/get-started/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https%3a%2f%2faka.ms%2fMDEp2OpenTrial%3focid%3ddocs-wdatp-exposedapis-abovefoldlink&brandingId=28b276fb-d2a0-4379-a7c0-57dce33da0f9&ali=1&bac=1&signedinuser=v-smandalika%40microsoft.com)
+> Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/get-started/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https%3a%2f%2faka.ms%2fMDEp2OpenTrial%3focid%3ddocs-wdatp-exposedapis-abovefoldlink&brandingId=28b276fb-d2a0-4379-a7c0-57dce33da0f9&ali=1&bac=1)
 
 You can submit feedback by opening Microsoft Defender for Endpoint on Mac on your device and by navigating to **Help > Send feedback**.
 

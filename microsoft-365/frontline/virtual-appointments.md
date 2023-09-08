@@ -1,7 +1,7 @@
 ---
 title: Virtual Appointments with Microsoft Teams
 author: lana-chin
-ms.author: v-chinlana
+ms.author: heidip
 manager: serdars
 ms.reviewer: megano
 ms.topic: conceptual
@@ -82,9 +82,9 @@ If your healthcare organization uses an EHR system, you can use the Teams EHR co
 
 After you set up the Teams EHR connector, clinicians can launch visits with patients and consultations with other providers in Teams directly from the EHR system.
 
-Currently, the Teams EHR connector supports integration with the Cerner EHR system and Epic EHR system. To learn more, see:
+Currently, the Teams EHR connector supports integration with the Oracle Health EHR system and Epic EHR system. To learn more, see:
 
-- [Virtual Appointments with Teams - Integration into Cerner EHR](ehr-admin-cerner.md)
+- [Virtual Appointments with Teams - Integration into Oracle Health EHR](ehr-admin-oracle-health.md)
 - [Virtual Appointments with Teams - Integration into Epic EHR](ehr-admin-epic.md)
 
 ## Virtual appointment meeting template
