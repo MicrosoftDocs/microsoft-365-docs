@@ -36,7 +36,7 @@ The steps to configure EOP and Defender for Office 365 are:
 
 ## Requirements
 
-Email threat protection features are included in *all* Microsoft 365 subscriptions with cloud mailboxes via EOP. Defender for Office 365 includes advanced features. For detailed comparisons about the features in EOP, Defender for Office for Plan 1, and Defender for Office Plan 2, see [The Office 365 security ladder from EOP to Microsoft Defender for Office 365](microsoft-defender-for-office-365-product-overview.md#the-office-365-security-ladder-from-eop-to-microsoft-defender-for-office-365).
+Email threat protection features are included in _all_ Microsoft 365 subscriptions with cloud mailboxes via EOP. Defender for Office 365 includes additional protection features. For detailed comparisons about the features in EOP, Defender for Office for Plan 1, and Defender for Office Plan 2, see [The Office 365 security ladder from EOP to Microsoft Defender for Office 365](microsoft-defender-for-office-365-product-overview.md#the-office-365-security-ladder-from-eop-to-microsoft-defender-for-office-365).
 
 ### Roles and permissions
 
@@ -52,15 +52,35 @@ To configure EOP and Defender for Office 365 features, you need permissions. The
 
 ## Step 1: Configure email authentication for your Microsoft 365 domains
 
-Email authentication (also known as *email validation*) is a group of standards to verify that email messages from a sender are legitimate and come from expected sources for the email domain.
+Email authentication (also known as _email validation_) is a group of standards to verify that email messages are legitimate, unaltered, and come from expected sources for the sender's email domain. For more information, see [Email authentication in EOP](email-authentication-about.md).
 
-Configure the following email authentication records in DNS for all [custom domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) that you configured in Microsoft 365:
+We'll proceed with the assumption that you're using one or more [custom domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) (for example @contoso.com) in Microsoft 365 for email, so you need to create specific email authentication DNS records for each custom domain that you're using for email.
 
-- **Sender Policy Framework (SPF)**: This one is the most important. How you configure it depends on whether you're absolutely sure of any/all sources for messages in the domain. For instructions, see [Set up SPF to help prevent spoofing](email-authentication-spf-configure.md).
+Create the following email authentication DNS records at your DNS registrar or DNS hosting service for each custom domain that you use for email in Microsoft 365:
+
+- **Sender Policy Framework (SPF)**: The SPF TXT record identifies valid sources for email from senders in the domain.
+
+  If you're certain that all email from the domain is sent only from Microsoft 365, use the following value for the domain's SPF TXT record: 
+
+  ```text
+  v=spf1 include:spf.protection.outlook.com -all
+  ```
+
+  This SPF TXT record instructs destination email servers to _reject_ messages from senders in the domain that originate from other sources.
+
+  If there are other known or unknown sources for email in the domain (for example, third-party email services or on-premises email servers), or if you're using Office 365 Germany or Exchange Online Dedicated, see [Set up SPF to help prevent spoofing](email-authentication-spf-configure.md) for how to correctly configure the SPF TXT record.
+
+
+
+  If you're unsure of all sources for email in the domain
+
+ThisThis one is the most important. How you configure it depends on whether you're absolutely sure of any/all sources for messages in the domain. For instructions, 
 - **DomainKeys Identified Mail (DKIM)**: The built-in DKIM configuration in Microsoft 365 is probably OK for most customers. Complex environments likely need to manually create DKIM records for their domains. For details and instructions, see [Use DKIM to validate outbound email sent from your custom domain](email-authentication-dkim-configure.md).
 - **Domain-based Message Authentication, Reporting, and Conformance (DMARC)**: For instructions, see [Use DMARC to validate email](email-authentication-dmarc-configure.md).
 - [DKIM](email-authentication-dkim-configure.md): Microsoft 365 
 - [DMARC](email-authentication-dmarc-configure.md)
+
+If you're only using the @\*.onmicrosoft.com domain for email (also known as the Microsoft Online Email Routing Address or MOERA domain), there's not nearly as much for you to do.
 
 Email authentication records aren't required for the .onmicrosoft.com domain.
 
@@ -198,15 +218,15 @@ If you decide to use custom policies, you can use the [Configuration analyzer](c
 
 ## Step 3: Assign permissions
 
-You're probably already using the initial account that you used to enroll in Microsoft 365 to do all the work in EOP and Defender for Office 365. This account is an admin everywhere in Microsoft 365 (specifically, a member of the [Global Administrator](/azure/active-directory/roles/permissions-reference#global-administrator) role in Azure Active Directory (Azure AD), and allows you to do pretty much anything.
+You're probably already using the initial account that you used to enroll in Microsoft 365 to do all the work in this deployment guide. That account is an admin everywhere in Microsoft 365 (specifically, it's a member of the [Global Administrator](/azure/active-directory/roles/permissions-reference#global-administrator) role in Azure Active Directory (Azure AD)), and allows you to do pretty much anything. The required permissions were described earlier in this article at [Roles and permissions](#roles-and-permissions).
 
-But, what you don't want is a lot of people with that level of power. The concept of _least privilege_ (assigning only the required permissions to users and nothing more) is a good practice to follow.
+But, the intent of this step is to configure other admins to help you manage the features of EOP and Defender for Office 365 in the future. What you don't want is a lot of people with Global Administrator power if they don't need it (for example, do they really need to delete/create accounts, delete/create mailboxes, make other users Global Administrators, etc.?). The concept of _least privilege_ (assigning only the required permissions to users and nothing more) is a good practice to follow.
 
-When it comes to assigning permissions EOP and Defender for Office 365, the following options are available:
+When it comes to assigning permissions for tasks in EOP and Defender for Office 365, the following options are available:
 
 - [Azure AD permissions](../../admin/add-users/about-admin-roles.md): These permissions apply to all workloads in Microsoft 365 (Exchange Online, SharePoint Online, Microsoft Teams, etc.).
-- [Exchange Online permissions](/exchange/permissions-exo/permissions-exo): Most tasks in EOP and Defender for Office 365 are available using Exchange Online permissions. Assigning permissions here prevents administrative access in other Microsoft 365 workloads.
-- [Email & collaboration permissions in the Microsoft 365 Defender portal](scc-permissions.md): Some specific security features are able to use these permissions. For example:
+- [Exchange Online permissions](/exchange/permissions-exo/permissions-exo): Most tasks in EOP and Defender for Office 365 are available using Exchange Online permissions. Assigning permissions in Exchange Online only prevents administrative access in other Microsoft 365 workloads.
+- [Email & collaboration permissions in the Microsoft 365 Defender portal](scc-permissions.md): You can administer some security features in EOP and Defender for Office 365 with Email & collaboration permissions. For example:
   - [Configuration analyzer](configuration-analyzer-for-security-policies.md)
   - [Admin quarantine management](quarantine-admin-manage-messages-files.md) and [quarantine policies](quarantine-policies.md)
   - [Admin submissions and review of user reported messages](submissions-admin-review-user-reported-messages.md)
