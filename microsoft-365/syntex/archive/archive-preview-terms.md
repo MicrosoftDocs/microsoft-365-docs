@@ -18,7 +18,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: Learn about the preview terms and conditions for Microsoft 365 Archive.
 ---
 
-# Microsoft 365 Archive Terms Preview Agreement
+# Microsoft 365 Archive Preview Agreement
 
 > [!NOTE]
 > This article is currently in development.
