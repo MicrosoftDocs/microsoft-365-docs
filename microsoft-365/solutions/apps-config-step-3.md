@@ -80,32 +80,68 @@ When you choose to target an app configuration policy to **Managed apps**, you a
 
 > [!NOTE]
 > With Microsoft Intune, app configuration delivered through the mobile device management OS channel is referred to as a **Managed Devices** App Configuration Policy (ACP); app configuration delivered through the App Protection Policy (APP) channel is referred to as a **Managed Apps** App Configuration Policy.
+> 
+> Microsoft recommends you use the deliver the app configuration  through the App Protection Policy (APP) channel as a **Managed Apps** App Configuration Policy.
 
-Microsoft recommends you 
+Microsoft 365 (Office) for iOS/iPadOS supports the following configuration settings:
 
-Use configuration designer with iOS app configuration policy:
-<!--
-https://learn.microsoft.com/mem/intune/apps/app-configuration-policies-use-ios#use-configuration-designer
--->
+| Configuration   action | Description | Keys |
+|---|---|---|
+| [Manage   the creation of Sticky   Notes](com.microsoft.office.OfficeWebAddinDisableOMEXCatalog) | Enable or disable the creation   of Stick Notes for work or school accounts. | com.microsoft.office.NotesCreationEnabled |
+| [Set   add-ins   preference](/mem/intune/apps/manage-microsoft-office#set-add-ins-preference) | Enable or disable office add-in   platform and/or the Office store portion of the platform. | com.microsoft.office.OfficeWebAddinDisableAllCatalogs<br>com.microsoft.office.OfficeWebAddinDisableOMEXCatalog |
+| [Manage   Teams apps running on   Office](/mem/intune/apps/manage-microsoft-office#manage-teams-apps-running-on-office-for-ios-and-android) | Enable or disable Teams apps on   Office. | com.microsoft.office.officemobile.TeamsApps.IsAllowed |
+| [Microsoft   365 Feed for iOS and   Android](/mem/intune/apps/manage-microsoft-office#enable-or-disable-microsoft-365-feed-for-ios-and-android) | Enable or disable the Microsoft   365 Feed. | com.microsoft.office.officemobile.Feed.IsAllowed |
+
+You can use the [configuration designer](/mem/intune/apps/app-configuration-policies-use-ios#use-configuration-designer) to add configuration settings for iOS app configuration policies. 
 
 > [!NOTE]
-> For Microsoft apps on managed iOS/iPadOS devices, you can configure the following:
+> In addition to specific app configuration settings, certain Microsoft apps support common configuration settings on managed iOS/iPadOS devices. You can configure the following:
 > - [Allow only configured organization accounts in apps](/mem/intune/apps/app-configuration-policies-use-ios#allow-only-configured-organization-accounts-in-apps)
 > - [Require configured organization accounts in apps](/mem/intune/apps/app-configuration-policies-use-ios#require-configured-organization-accounts-in-apps)
 
-Create an app configuration policy for iOS/iPadOS app:
-<!--
-https://learn.microsoft.com/mem/intune/apps/app-configuration-policies-use-ios#create-an-app-configuration-policy
--->
-
+For additional app configuration policy information for iOS/iPadOS, see the following resources:
+- [Add app configuration policies for managed iOS/iPadOS devices](/mem/intune/apps/app-configuration-policies-use-ios#create-an-app-configuration-policy)
+- [App configuration policies for Intune App SDK managed apps](/mem/intune/apps/app-configuration-policies-managed-app)
 
 ## Configure Microsoft 365 (Office) on managed Android device
 <!--
 https://learn.microsoft.com/mem/intune/apps/manage-microsoft-office#general-app-configuration-scenarios
 -->
 
+Managed devices:
+- Permissions section
+- Configuration Settings section
+- Connect apps section
+
+Managed apps:
+- General configuration settings section
+- Microsoft Tunnel for Mobile Application Management setting section
+
+-  
+
+
+Microsoft 365 (Office) for Android supports the following configuration settings:
+
+| Configuration   action | Description | Keys |
+|---|---|---|
+| [Manage   the creation of Sticky   Notes](com.microsoft.office.OfficeWebAddinDisableOMEXCatalog) | Enable or disable the creation   of Stick Notes for work or school accounts. | com.microsoft.office.NotesCreationEnabled |
+| [Set   add-ins   preference](/mem/intune/apps/manage-microsoft-office#set-add-ins-preference) | Enable or disable office add-in   platform and/or the Office store portion of the platform. | com.microsoft.office.OfficeWebAddinDisableAllCatalogs<br>com.microsoft.office.OfficeWebAddinDisableOMEXCatalog |
+| [Manage   Teams apps running on   Office](/mem/intune/apps/manage-microsoft-office#manage-teams-apps-running-on-office-for-ios-and-android) | Enable or disable Teams apps on   Office. | com.microsoft.office.officemobile.TeamsApps.IsAllowed |
+| [Microsoft   365 Feed for iOS and   Android](/mem/intune/apps/manage-microsoft-office#enable-or-disable-microsoft-365-feed-for-ios-and-android) | Enable or disable the Microsoft   365 Feed. | com.microsoft.office.officemobile.Feed.IsAllowed |
+
+You can use the [configuration designer](/mem/intune/apps/app-configuration-policies-use-ios#use-configuration-designer) to add configuration settings for iOS app configuration policies.
+
 > [!NOTE]
 > You can also add Microsoft 365 (Office) as a Managed Google Play store app.
+
+> [!NOTE]
+> In addition to specific app configuration settings, certain Microsoft apps support common configuration settings on managed iOS/iPadOS devices. You can configure the following:
+> - [Allow only configured organization accounts in apps](/mem/intune/apps/app-configuration-policies-use-ios#allow-only-configured-organization-accounts-in-apps)
+> - [Require configured organization accounts in apps](/mem/intune/apps/app-configuration-policies-use-ios#require-configured-organization-accounts-in-apps)
+
+For additional app configuration policy information for iOS/iPadOS, see the following resources:
+- [Add app configuration policies for managed iOS/iPadOS devices](/mem/intune/apps/app-configuration-policies-use-ios#create-an-app-configuration-policy)
+- [App configuration policies for Intune App SDK managed apps](/mem/intune/apps/app-configuration-policies-managed-app)
 
 ### App configuration policy
 

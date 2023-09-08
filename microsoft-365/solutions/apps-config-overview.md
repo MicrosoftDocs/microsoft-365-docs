@@ -16,7 +16,7 @@ keywords:
 
 # Configure apps using Microsoft Intune
 
-Once you've [set up and deployed the capabilities of Intune](/microsoft-365/solutions/apps-guide-overview#deploying-intune) and you've [added the apps you want to manage to Intune](/microsoft-365/solutions/apps-add-overview), you can begin the process of creating app configuration policies. App configuration policies will allow members of your organization (end-users) to easily install and use the related apps on their devices. You create app configuration policies directly in Intune that are unique for each app and each group of end-users. Then, you can apply each app configuration policy to users and/or devices. [Apps that can be configured using an Intune app configuration policy](/mem/intune/apps/apps-supported-intune-apps) have been enabled to support configuration settings.
+Once you've [set up and deployed the capabilities of Intune](/microsoft-365/solutions/apps-guide-overview#deploying-intune) and you've [added the apps you want to manage to Intune](/microsoft-365/solutions/apps-add-overview), you can begin the process of creating app configuration policies. App configuration policies will allow members of your organization (end-users) to easily install and use the related apps on their devices. You create app configuration policies directly in Intune that are unique for each app and each group of end-users. Then, you can apply each app configuration policy to users and/or devices. 
 
 > [!NOTE]
 > Intune is provided as a web-based console to manage, protect, and monitor all of your organization's endpoints, whether those endpoints are devices or apps.
@@ -52,14 +52,17 @@ Follow these steps if you haven't already set up Intune and added the apps you n
 
 ## Apps that support app configuration
 
-App configuration can be delivered either through the mobile device management (MDM) OS channel on enrolled devices ([Managed App Configuration](https://developer.apple.com/library/content/samplecode/sc2279/Introduction/Intro.html) channel for iOS or the [Android in the Enterprise](https://developer.android.com/work/managed-configurations) channel for Android) or through the Mobile Application Management (MAM) channel.
+App configuration can be delivered either through the mobile device management (MDM) OS channel on enrolled devices ([Managed App Configuration](https://developer.apple.com/library/content/samplecode/sc2279/Introduction/Intro.html) channel for iOS or the [Android in the Enterprise](https://developer.android.com/work/managed-configurations) channel for Android) or through the Mobile Application Management (MAM) channel. 
 
 Intune represents these different app configuration policy channels as:
 
 - **Managed devices** - The device is managed by Intune as the unified endpoint management provider. The app must be pinned to the management profile on iOS/iPadOS or deployed through Managed Google Play on Android devices. In addition, the app supports the desired app configuration.
 - **Managed apps** - An app that has either integrated the Intune App SDK or have been wrapped using the Intune Wrapping Tool and supports App Protection Policies (APP). In this configuration, neither the device's enrollment state or how the app is delivered to the device matter. The app supports the desired app configuration.
 
-Apps may handle app configuration policy settings differently with respect to user preference. For example, with Outlook for iOS and Android, the Focused Inbox app configuration setting will respect the user setting, allowing the user to override admin intent. Other settings may let you control whether a user can or cannot change the setting based on the admin intent.
+Apps may handle app configuration policy settings differently with respect to user preference. For example, with Outlook for iOS and Android, the **Focused Inbox** app configuration setting will respect the user setting, allowing the user to override admin intent. Other settings may let you control whether a user can or cannot change the setting based on the admin intent.
+
+> [!NOTE]
+> [Apps that can be configured using an Intune app configuration policy](/mem/intune/apps/apps-supported-intune-apps) have been enabled to support configuration settings using the Intune App SDK or the Intune App Wrapping Tool. In addition, apps that support Intune app protection policies also integrate with the Intune Intune App SDK or the Intune App Wrapping Tool.
 
 With Microsoft Intune, app configuration delivered through the MDM OS channel is referred to as a **Managed Devices** App Configuration Policy (ACP); app configuration delivered through the App Protection Policy channel is referred to as a **Managed Apps** App Configuration Policy.
 
@@ -75,18 +78,18 @@ As mentioned, you can apply configuration for your managed apps using app config
 
 For more information, see [App configuration policies](/mem/intune/apps/app-configuration-policies-overview), [iOS managed devices](/mem/intune/apps/app-configuration-policies-use-ios), and [Android managed devices](/mem/intune/apps/app-configuration-policies-use-android).
 
-### General app configuration for managed devices
+### General Microsoft app configuration for managed devices
 
 To support app configuration for apps deployed through Intune on enrolled devices, apps must be written to support the use of app configurations as defined by the OS. Consult your app vendor for details for which app config keys they support for delivery through the MDM OS channel. There are generally four scenarios for app configuration delivery when using the MDM OS channel:
 
 | Configuration   scenario | Description |
 |---|---|
-| Only   allow work or school accounts | Some companies have a   requirement to capture all communications information within their corporate   environment, as well as, ensure the devices are only used for corporate   communications. To support these requirements, multiple Microsoft apps for   iOS and Android on enrolled devices can be configured to only allow a single   corporate account to be provisioned within the app.<p>For more   information, see the following setting:<ul><li>[Android   setting](app-configuration-policies-use-android.md#allow-only-configured-organization-accounts-in-apps)</li><li>[iOS   setting](app-configuration-policies-use-ios.md#allow-only-configured-organization-accounts-in-apps)</li></ul> |
+| Only allow organization accounts | Some companies have a requirement to capture all communications information within their corporate  environment, as well as, ensure the devices are only used for corporate   communications. To support these requirements, multiple Microsoft apps for   iOS and Android on enrolled devices can be configured to only allow a single organization account to be provisioned within the app.<p>For more   information, see the following setting:<ul><li>[Android   setting](app-configuration-policies-use-android.md#allow-only-configured-organization-accounts-in-apps)</li><li>[iOS   setting](app-configuration-policies-use-ios.md#allow-only-configured-organization-accounts-in-apps)</li></ul> |
 | Account   setup configuration settings | Used with managed devices   that   have been enrolled in a unified   endpoint management (UEM) solution. Any UEM     provider is supported. For certain M365 apps for iOS/iPadOS and Android,   such Microsoft Outlook,  you have   the  ability to "push"   account configurations to users leveraging hybrid Modern Authentication   users. For more   information on   account setup configuration, see [Account setup with modern authentication in   Exchange     Online](/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/setup-with-modern-authentication#account-setup-configuration-via-enterprise-mobility-management). |
 | General   app configuration settings | An app configuration policy   contains a **General configuration settings** section in the **Settings**   pane. In this section you can type the **Name** and **Value** to configure   the setting for the app. The **Name** is also known as the **Key**. |
 | App   specific configuration settings | Several apps also contain a   unique app configuration section in the **Settings** pane of an app   configuration policy. To learn which apps support configuration, see the   [Microsoft and third-party apps   list](/mem/intune/apps/apps-supported-intune-apps). For third-party apps, you   may need to see the app developer's documenation or contact them directly to   learn about their app's configuration keys and values.  |
 
-### General managed app configuration
+### General Microsoft app configuration for managed apps
 
 Delivery of app configuration through the MAM channel does not require the device to be enrolled or for the app to be managed or delivered through the unified endpoint management solution. There are three scenarios for app configuration delivery using the MAM channel:
 
@@ -94,7 +97,7 @@ Delivery of app configuration through the MAM channel does not require the devic
 - S/MIME configuration settings
 - Advanced APP data protection settings which extend the capabilities offered by App Protection Policies
 
-### Android specific configuration
+### Specific app configuration
 
 #### Enable connected apps
 
@@ -133,7 +136,7 @@ This solution steps you through the process of creating app configuration polici
 
 :::image type="content" source="../media/configure-managed-apps/configure-managed-apps-01.png" alt-text="Steps used to configure managed apps with Microsoft Intune." border="false" :::
 
-## Configure the Company Portal
+### Configure the Company Portal
 
 End-users use the Company Portal to securely access company data and do common tasks. End-users can access these tasks and information using either the Company Portal app, Company Portal website, or Intune app. The Company Portal app supports iOS/iPadOS, Linux, macOS, and Windows devices. The Intune app supports Android devices.
 
@@ -142,7 +145,7 @@ End-users use the Company Portal to securely access company data and do common t
 
 As an Intune admin, you can customize the Company Portal user experience for your organization. Specifically, you can set the Company Portal branding, support information, enrollment, privacy, notifications, device categories, app sources, and self-service actions.
 
-## Configure Microsoft Outlook
+### Configure Microsoft Outlook
 
 Outlook for iOS and Android supports app settings that allow unified endpoint management (UEM) administrators (using tools such as Microsoft Endpoint Manager) and Microsoft 365 or Office 365 administrators to customize the behavior of the app.
 
@@ -154,7 +157,7 @@ For more information about configuring Microsoft Outlook, go to the following to
 
 - [Manage messaging collaboration access by using Outlook for iOS and Android with Microsoft Intune](/mem/intune/apps/app-configuration-policies-outlook)
 
-## Configure Microsoft 365 Apps
+### Configure Microsoft 365 Apps
 
 Microsoft 365 (M365), formerly known as Microsoft Office, is a suite of productivity apps that include Microsoft Word, Excel, PowerPoint, Teams, and more. Microsoft Intune is the recommended way to install M365 Apps to the devices and users at your organization.
 
@@ -166,7 +169,7 @@ Windows, iOS, and Android delivers several key benefits including:
 
 The richest and broadest protection capabilities for Microsoft 365 data are available when you subscribe to the Enterprise Mobility + Security suite, which includes Microsoft Intune and Azure Active Directory Premium features, such as conditional access. At a minimum, you will want to deploy a conditional access policy that allows connectivity to Office for iOS and Android from mobile devices and an Intune app protection policy that ensures the collaboration experience is protected.
 
-## Configure Microsoft Edge
+### Configure Microsoft Edge
 
 Edge for iOS and Android is designed to enable users to browse the web and supports multi-identity. Users can add a work account, as well as a personal account, for browsing. There is complete separation between the two identities, which is like what is offered in other Microsoft mobile apps.
 
@@ -174,21 +177,21 @@ For more information about configuring Microsoft Edge, go to the following topic
 
 - [Manage Microsoft Edge on iOS and Android with Intune](/mem/intune/apps/manage-microsoft-edge)
 
-## Configure Microsoft Teams
+### Configure Microsoft Teams
 
 Microsoft Teams is the hub for team collaboration in Microsoft 365 that integrates the people, content, and tools your team needs to be more engaged and effective.
 
 The richest and broadest protection capabilities for Microsoft 365 data are available when you subscribe to the Enterprise Mobility + Security suite, which includes Microsoft Intune and Azure Active Directory Premium features, such as conditional access. At a minimum, you'll want to deploy a conditional access policy that allows connectivity to Teams for iOS and Android from mobile devices and an Intune app protection policy that ensures the collaboration experience is protected.
 
-## Configure other apps
+### Configure other apps
 
 Microsoft Intune supports configuring specific apps that have been enhanced to support Intune. The apps include [Microsoft apps](/mem/intune/apps/apps-supported-intune-apps#microsoft-apps), [partner productive apps](/mem/intune/apps/apps-supported-intune-apps#partner-productivity-apps), and [partner UEM apps](/mem/intune/apps/apps-supported-intune-apps#partner-uem-apps). For partner productivity apps, you may need to contact the app vendor for specific details on Intune related setting and support.
 
-### LOB apps
+#### LOB apps
 
 A line-of-business (LOB) app is an app that you add to Intune from an app installation file. This kind of app is typically written in-house. Intune installs the LOB app on the user's device. An organization that creates a LOB apps can integrate that app with Intune using the [Intune App SDK](/mem/intune/developer/app-sdk) for iOS or Android.
 
-### Win32 app
+#### Win32 app
 
 Win32 apps that your organization creates can be added to Intune. These apps are a type of LOB app. When you add a Win32 app to Intune, you can select to customize specific installation settings, such as the how the app is installed and uninstalled. The amount of time required to install the app. Any actions associated with installing the app, such as restarting the device. Additionally, you can set specific requirements when you're adding a Win32 app, such as **Operating system architecture**, **Minimum operating system**, **Disk space required (MB)**, **Physical memory required (MB)**, **Minimum number of logical processors required**, and **Minimum CPU speed required (MHz)**. You can also add requirement rules, detection rules, app dependencies, and app supersedence. For more information, see [Win32 app management in Microsoft Intune](/mem/intune/apps/apps-win32-app-management).
 
