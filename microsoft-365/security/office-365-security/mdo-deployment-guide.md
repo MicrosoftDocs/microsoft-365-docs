@@ -76,12 +76,10 @@ Create the following email authentication DNS records at your DNS registrar or D
 
   If there are other known or unknown sources for email in the domain (for example, third-party email services or on-premises email servers), or if you're using Office 365 Germany or Exchange Online Dedicated, see [Set up SPF to help prevent spoofing](email-authentication-spf-configure.md) for how to correctly configure the SPF TXT record.
 
+- **DomainKeys Identified Mail (DKIM)**: If you're also going to configure DMARC or your environment complex, you need to configure DKIM for the custom domain. For details and instructions, see [Use DKIM to validate outbound email sent from your custom domain](email-authentication-dkim-configure.md).
 
+  Otherwise, the built-in DKIM configuration in Microsoft 365 is probably OK for most customers who use a single custom domain.
 
-  If you're unsure of all sources for email in the domain
-
-ThisThis one is the most important. How you configure it depends on whether you're absolutely sure of any/all sources for messages in the domain. For instructions, 
-- **DomainKeys Identified Mail (DKIM)**: The built-in DKIM configuration in Microsoft 365 is probably OK for most customers. Complex environments likely need to manually create DKIM records for their domains. For details and instructions, see [Use DKIM to validate outbound email sent from your custom domain](email-authentication-dkim-configure.md).
 - **Domain-based Message Authentication, Reporting, and Conformance (DMARC)**: For instructions, see [Use DMARC to validate email](email-authentication-dmarc-configure.md).
 - [DKIM](email-authentication-dkim-configure.md): Microsoft 365 
 - [DMARC](email-authentication-dmarc-configure.md)
