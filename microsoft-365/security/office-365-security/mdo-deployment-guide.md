@@ -80,13 +80,15 @@ Create the following email authentication DNS records at your DNS registrar or D
 
   Otherwise, the built-in DKIM configuration in Microsoft 365 is probably OK for most customers who use a single custom domain.
 
-- **Domain-based Message Authentication, Reporting, and Conformance (DMARC)**: For instructions, see [Use DMARC to validate email](email-authentication-dmarc-configure.md).
-- [DKIM](email-authentication-dkim-configure.md): Microsoft 365 
-- [DMARC](email-authentication-dmarc-configure.md)
+- **Domain-based Message Authentication, Reporting, and Conformance (DMARC)**: DMARC helps destination email servers decide what to do with messages from the custom domain that fail DKIM and DMARC checks.
 
-If you're only using the @\*.onmicrosoft.com domain for email (also known as the Microsoft Online Email Routing Address or MOERA domain), there's not nearly as much for you to do.
+  To set up DMARC for a custom domain, see [Set up DMARC for outbound mail from Microsoft 365](email-authentication-dmarc-configure.md#set-up-dmarc-for-outbound-mail-from-microsoft-365)
 
-Email authentication records aren't required for the .onmicrosoft.com domain.
+If you're only using the @\*.onmicrosoft.com domain for email (also known as the Microsoft Online Email Routing Address or MOERA domain), there's not nearly as much for you to do:
+
+- **SPF**: An SPF record is already configured for the \<domain\>.onmicrosoft.com domain.
+- **DKIM**: A DKIM record is already configured for the \<domain\>.onmicrosoft.com domain.
+- **DMARC**: You need to manually set up the DMARC record for the \<domain\>.onmicrosoft.com domain in the Microsoft 365 admin center at <https://admin.microsoft.com/Adminportal/Home#/Domains> as describe in zzz.
 
 ## Step 2: Configure security policies
 
