@@ -38,7 +38,7 @@ In this article, we walk you through how to use the Shifts connector wizard in t
 
 <!--The Shifts connector wizard in the Microsoft 365 admin center enables you to integrate the Shifts app in Microsoft Teams with your workforce management (WFM) system. Your frontline workers can seamlessly view and manage their schedules in your WFM system from within Shifts.-->
 
-The wizard creates a connection to your UKG Dimensions system and a connection instance, which applies the sync settings and team mappings that you choose. Sync settings determine the schedule information and what entities sync between UKG Dimensions and Shifts. Team mappings define the sync relationship between your UKG instances and teams in Teams.
+The wizard creates a connection to your UKG Dimensions system and a connection instance. A connection instance applies the sync settings and team mappings that you choose. Sync settings determine the schedule information and what entities sync between UKG Dimensions and Shifts. Team mappings define the sync relationship between your UKG instances and teams in Teams.
 
 You can create one or more connection instances, each with different sync settings. For example, if your organization has multiple locations with different schedule requirements, create a connection instance with unique sync settings for each location. A UKG Dimensions instance should only be mapped once to a team in Teams at any given time. However, it's possible in the wizard to have different connection instances with the same mappings. This means that you can create connection instances with duplicated mappings.
 
@@ -63,11 +63,11 @@ The [Microsoft Teams Shifts connector for UKG Dimensions](shifts-connectors.md#m
 
 <!--Before you run the wizard, make sure that your environment is ready and you've completed all prerequisites and configuration tasks in [Prerequisites and requirements for the Teams Shifts connector for UKG Dimensions](shifts-connector-ukg-prerequisites.md).
 
-Take time to review the information and confirm you completed all the tasks before you follow the steps in this article.-->
+Take time to review the information and confirm you completed all the tasks before you follow the steps in this article.Make sure you meet the prerequisites and you complete all the tasks before you follow the steps in this article.-->
 
-Before you run the wizard, take time to review the information and complete all prerequisites and configuration tasks in [Prerequisites and requirements for the Teams Shifts connector for UKG Dimensions](shifts-connector-ukg-prerequisites.md).
+Before you run the wizard, take time to review the information and complete all prerequisite and configuration tasks in [Prerequisites and requirements for the Teams Shifts connector for UKG Dimensions](shifts-connector-ukg-prerequisites.md).
 
-Make sure you meet the prerequisites and you complete all the tasks before you follow the steps in this article.
+Make sure that you complete all the tasks before you follow the steps in this article.
 
 
 <!--Before you try the Shifts connector wizard, check that you meet all these prerequisites:
@@ -121,7 +121,7 @@ To learn more, see [Remove-CsTeamsShiftsScheduleRecord](/powershell/module/teams
 
 ## Run the Shifts connector wizard
 
-After you've completed all prerequisite and configuration tasks, you're ready to run the wizard and connect your UKG Dimensions system to Shifts in Teams.
+After you confirm that you meet all the prerequisites, you're ready to run the wizard and connect your UKG Dimensions system to Shifts in Teams.
 
 ### Create a connection
 
