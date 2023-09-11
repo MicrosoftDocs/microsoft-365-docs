@@ -48,7 +48,7 @@ Team members can find the app in the Teams app store, or you can share the [inst
 
 ## Overview of the app
 
-The [Virtual Appointments app](https://support.microsoft.com/topic/22df0079-e6d9-4225-bc65-22747fb2cb5f) provides a central hub for all your virtual appointments needs in Teams. The app enables a seamless end-to-end experience for business-to-customer engagements, integrating schedules, analytics, and management options, all in one place.
+Use the [Virtual Appointments app](https://support.microsoft.com/topic/22df0079-e6d9-4225-bc65-22747fb2cb5f) in Microsoft Teams for all your virtual appointment needs. The app enables a seamless end-to-end experience for business-to-customer engagements, integrating schedules, analytics, and management options, all in one place.
 
 You can schedule, view, and manage virtual appointments, get real-time status updates in a queue view, send appointment reminders, view analytics and reports on virtual appointments activity, and configure calendar, staff, and booking page settings.
 
@@ -65,12 +65,6 @@ You get an experience that's tailored to your industry. Here's some examples of 
 |Diagnosis or post-op follow-up sessions|Financial consultations|Showcase products|High trust sales calls|Custom waiting rooms for applicants|
 |Consultations with clinicians, insurance providers|Insurance policy and claim support|Virtual fittings or tour showrooms|Issue resolution|Engage multiple interviewers         |
 |Therapy sessions|Loan advisory/management|Provide technical advice and resolve conflicts|Customer service|Post-interview action|
-
-<!--|Industry|Examples|
-|---------|---------|
-|Financial services|Virtual appointments for remote sales and service<br/>Schedule and manage appointments for bank relationship managers, financial advisors, and claims adjusters, just to name a few, to serve your customers with increased efficiency and convenience.|
-|Retail|Virtual fittings and consultations <br/>Schedule and manage appointments for your sales associates, product experts, and design consultants to conduct virtual shopping experiences with customers.|
-|Healthcare|Virtual appointments for patient care <br/>Schedule and manage appointments for your care team members to meet with patients or other healthcare providers to discuss medical care.|-->
 
 With any Microsoft 365 license, you can use basic Virtual Appointments capabilities that make it easy to schedule and join business-to-customer meetings. For example, you can schedule appointments in the calendar and external attendees can [join through a browser](browser-join.md) without having to download Teams. [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) unlocks advanced Virtual Appointments capabilities to manage and personalize the experience. These include a queue view of scheduled and on-demand appointments, SMS notifications, custom waiting rooms, and analytics.
 
