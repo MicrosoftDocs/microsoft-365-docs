@@ -42,6 +42,9 @@ Note that tenants in Microsoft Azure Government (Microsoft 365 GCC High and DoD)
 > [!NOTE]
 > Cross-cloud guest access between Microsoft 365 China (21Vianet) and other Microsoft 365 cloud environments is not supported during the preview.
 
+> [!NOTE]
+> VDI clients aren't supported for cross-cloud guests.
+
 > [!IMPORTANT]
 > The organization that you're collaborating with must also configure these settings for their organization.
 
