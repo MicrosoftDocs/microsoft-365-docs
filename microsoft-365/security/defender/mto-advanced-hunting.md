@@ -59,7 +59,7 @@ Likewise, you can manage custom detection rules from multiple tenants in the Cus
 ### View custom detection rules by tenant
 
 1. To view custom detection rules, go to the [Custom detection rules page](https://mto.security.microsoft.com/v2/custom_detection) in the multi-tenant view in Microsoft 365 Defender.
-2. View the **Tenant Name** column to see which tenant the detection rule comes from:
+2. View the **Tenant name** column to see which tenant the detection rule comes from:
 
    :::image type="content" source="../../media/defender/mto-custom-detection-tenant-name.png" alt-text="Screenshot of the Microsoft 365 Defender multi-tenant custom detection page" lightbox="../../media/defender/mto-custom-detection-tenant-name.png":::
 
