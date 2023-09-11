@@ -69,7 +69,7 @@ To read more about custom detection rules, read [Custom detections overview](cus
 
 ### Manage custom detection rules
 
-You can, **Run**, **Turn off** and **Delete** detection rules from the multi-tenant view in Microsoft 365 Defender.
+You can **Run**, **Turn off**, and **Delete** detection rules from the multi-tenant view in Microsoft 365 Defender.
 
 To manage detection rules:
 
