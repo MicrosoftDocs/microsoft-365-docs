@@ -179,17 +179,17 @@
         - name: Cross-tenant identity mapping
           href: cross-tenant-identity-mapping.md
 
-        - name: Multi-tenant collaboration
+        - name: Multitenant collaboration
           items:
-            - name: Plan for multi-tenant orgs
+            - name: Plan for multitenant orgs
               href: plan-multi-tenant-org-overview.md
-            - name: Set up a multi-tenant org
+            - name: Set up a multitenant org
               href: set-up-multi-tenant-org.md
-            - name: Join or leave a multi-tenant org
+            - name: Join or leave a multitenant org
               href: join-leave-multi-tenant-org.md
             - name: Sync users with other orgs
               href: sync-users-multi-tenant-orgs.md
-            - name: Multi-tenant Organization People Search
+            - name: Multitenant Organization People Search
               href: multi-tenant-people-search.md
 
         - name: Cross-tenant OneDrive migration
