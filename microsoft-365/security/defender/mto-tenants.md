@@ -41,4 +41,4 @@ From the **Settings** page you can:
 
 The Multi-tenant view status indicator is always available in the bottom right corner of the multi-tenant view in Microsoft 365 Defender. This indicator provides information when data issues occur with the page you're viewing, such as data loading issues or permissions issues.
 
-When an issue exists, the status indicator shows a red warning sign and hovering over it displays the issues that have occurred and the tenant information. By expanding each section, you’ll see all the tenants with this issue.
+When an issue exists, the status indicator shows a red warning sign and hovering over it displays the issues that have occurred and the tenant information. By expanding each section, you see all the tenants with this issue.
