@@ -50,7 +50,7 @@ Team members can find the app in the Teams app store, or you can share the [inst
 
 The [Virtual Appointments app](https://support.microsoft.com/topic/22df0079-e6d9-4225-bc65-22747fb2cb5f) provides a central hub for all your virtual appointments needs in Teams. The app enables a seamless end-to-end experience for business-to-customer engagements, integrating schedules, analytics, and management options, all in one place.
 
-You can schedule, view, and manage virtual appointments, get real-time status updates in a queue view, send appointment reminders, view analytics and reports to gain insight into virtual appointments activity, and configure calendar, staff, and booking page settings.
+You can schedule, view, and manage virtual appointments, get real-time status updates in a queue view, send appointment reminders, view analytics and reports on virtual appointments activity, and configure calendar, staff, and booking page settings.
 
 Use it to schedule and manage appointments such as financial consultations, healthcare visits, virtual fittings, interviews, customer support, education office hours, and more. You can also publish an online booking page for your clients, customers, and patients to book appointments with your staff.
 
@@ -141,7 +141,7 @@ To send SMS notifications to attendees by default, turn on **Send them text mess
 
 Keep in mind that schedulers can later choose to turn off the setting on an as-needed basis when they use the appointment type to schedule an appointment.
 
-You can use the [SMS notifications usage report](sms-notifications-usage-report.md) to gain insight into how your workforce is using SMS notifications with virtual appointments.
+You can use the [SMS notifications usage report](sms-notifications-usage-report.md) to see how your workforce is using SMS notifications with virtual appointments.
 
 To learn more, see [Use text messages to remind customers of their appointment](https://support.microsoft.com/topic/adda1e2a-03b8-4db2-864d-0a5a3f3a874a).
 
@@ -208,7 +208,7 @@ From the queue, schedulers can add a new booking, view relevant appointment deta
 
 When an attendee joins the waiting room, the status changes, and their wait time is displayed and tracked. The view automatically refreshes with color-coded updates so that changes can easily be identified.
 
-## Get insight into Virtual Appointments usage
+## View Virtual Appointments usage reports
 
 The Virtual Appointments usage report in the **Analytics** tab gives you an overview of virtual appointments activity in your organization. The report provides key metrics such as total number of appointments, appointment duration, lobby wait time, and no shows. You can view detailed activity for virtual appointments scheduled and conducted through multiple scheduling entry points and drill down into individual appointment data.
 

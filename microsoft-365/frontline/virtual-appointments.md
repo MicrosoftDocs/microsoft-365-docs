@@ -47,7 +47,7 @@ This article gives you an overview of the capabilities available in Teams for sc
 
 The Virtual Appointments app provides a central hub for all your virtual appointment needs. The app enables a seamless end-to-end experience for business-to-customer engagements, integrating schedules, analytics, and management options, all in one place.
 
-You can schedule, view, and manage virtual appointments, get real-time status updates in a queue view, send appointment reminders, view analytics and reports to gain insight into virtual appointments activity, and configure calendar, staff, and booking page settings.
+You can schedule, view, and manage virtual appointments, get real-time status updates in a queue view, send appointment reminders, view analytics and reports on virtual appointments activity, and configure calendar, staff, and booking page settings.
 
 With Microsoft 365 A3, A5, E3, E5, F1, F3, Business Basic, Business Standard, and Business Premium licenses, you can use basic Virtual Appointments capabilities that make it easy to schedule and join business-to-customer meetings. For example, you can schedule appointments in the appointment calendar and external attendees can [join through a browser](browser-join.md) without having to download Teams. [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) unlocks advanced Virtual Appointments capabilities that your organization can use to manage and personalize the experience. These include a queue view of scheduled and on-demand appointments, SMS text notifications, custom waiting rooms, and analytics.
 
