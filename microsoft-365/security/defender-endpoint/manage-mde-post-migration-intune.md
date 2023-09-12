@@ -38,7 +38,7 @@ We recommend using Microsoft Intune to manage your organization's threat protect
 > [!IMPORTANT]
 > You must have either the global administrator or service administrator role assigned in Intune to configure the settings described in this article. To learn more, see **[Types of administrators (Intune)](/mem/intune/fundamentals/users-add#types-of-administrators)**.
 
-1. Go to the [Microsoft Intune Admin center](https://endpoint.microsoft.com/#home) and sign in.
+1. Go to the [Microsoft Intune admin center](https://endpoint.microsoft.com/#home) and sign in.
 
 2. In the navigation pane on the left, choose **Device configuration**, and then, under **Manage**, choose **Profiles**.
 
