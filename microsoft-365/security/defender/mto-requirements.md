@@ -50,7 +50,7 @@ The following table lists the basic requirements you need to use multi-tenant ma
 
 In order to view and manage the data you have access to in multi-tenant management, you need to ensure you have the necessary permissions. For each tenant you want to view and manage, you need to either:
 
-- [Verify your tenant access with Azure Active Directory B2B](#verify-your-tenant-access-with-azure-active-directory-b2b).
+- [Verify your tenant access with Azure Active Directory B2B](#verify-your-tenant-access-with-azure-active-directory-b2b)
 - [Verify your tenant access with GDAP](#verify-your-tenant-access-with-gdap)
 
 ### Verify your tenant access with Azure Active Directory B2B
