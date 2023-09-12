@@ -50,7 +50,7 @@ The MX record value for your accepted domains follows a standard format as noted
 
 For example, if your tenant name is contoso.onmicrosoft.us, you’d use **contoso.mail.protection.office365.us** as the value for your MX record.
 
-## Skype for Business Online
+## Skype for Business Online and Microsoft Teams
 
 ### CNAME records
 
