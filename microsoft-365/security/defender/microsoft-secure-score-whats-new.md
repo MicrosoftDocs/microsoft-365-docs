@@ -32,6 +32,36 @@ Microsoft Secure Score can be found at <https://security.microsoft.com/securesco
 
 ## August 2023
 
+The following recommendations have been added as Microsoft Secure Score improvement actions:
+
+**Microsoft Information Protection:**
+
+- Ensure Microsoft 365 audit log search is enabled
+
+**Microsoft Exchange Online:**
+
+•	Ensure modern authentication for Exchange Online is enabled
+•	Ensure Exchange Online Spam Policies are set to notify administrators
+•	Ensure all forms of mail forwarding are blocked and/or disabled
+•	Ensure MailTips are enabled for end users
+•	Ensure mailbox auditing for all users is enabled
+•	Ensure additional storage providers are restricted in Outlook on the web
+
+Azure Active Directory: 
+•	Ensure password protection is enabled for on-prem Active Directory
+•	Ensure 'LinkedIn account connections' is disabled
+•	In order to view those new controls, Office 365 connector in Microsoft Defender for cloud apps must be toggled on via the App connectors settings page
+SharePoint: 
+•	Ensure SharePoint external sharing is managed through domain whitelist/blacklists
+•	Block OneDrive for Business sync from unmanaged devices
+•	In order to view those new controls, Office 365 connector in Microsoft Defender for cloud apps must be toggled on via the App connectors settings page
+•	Ensure Safe Links for Office Applications is enabled
+•	Ensure Safe Attachments policy is enabled
+•	Ensure that an anti-phishing policy has been created
+
+
+
+
 **Microsoft Secure Score permissions integration with Microsoft 365 Defender Unified role-based access control (RBAC) is now in Public Preview** </br>
 
 Previously, only Azure Active Directory global roles (such as Global Administrators) could access Microsoft Secure Score. Now, you'll be able to control access and grant granular permissions for the Microsoft Secure Score experience as part of the Microsoft 365 Defender Unified RBAC model.  
@@ -41,6 +71,7 @@ You can add the new permission and choose the data sources the user has access t
 A new data source **Secure Score – Additional data source** is also available.  Users with permissions to this data source, will have access to additional data within the Secure score dashboard. For more information on additional data sources, see [Products included in Secure Score](./microsoft-secure-score.md#products-included-in-secure-score).
 
 ## July 2023
+
 
 The following Microsoft Defender for Identity recommendations will be added as Microsoft Secure Score improvement actions:
 
