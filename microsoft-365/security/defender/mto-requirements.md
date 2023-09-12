@@ -44,10 +44,10 @@ The following table lists the basic requirements you need to use multi-tenant ma
 
 ## Verify your tenant access
 
-In order to view and manage the data you have access to in multi-tenant management, you need to ensure you have the necessary permissions. For each tenant you want to view and manage, you need to have either:
+In order to view and manage the data you have access to in multi-tenant management, you need to ensure you have the necessary permissions. For each tenant you want to view and manage, you need to have either [Azure Active Directory B2B authentication](/azure/active-directory/external-identities/what-is-b2b) or [Granular delegated admin privileges (GDAP)](/partner-center/gdap-introduction).
 
-- [Azure Active Directory B2B authentication](/azure/active-directory/external-identities/what-is-b2b)
-- [Granular delegated admin privileges (GDAP)](/partner-center/gdap-introduction)
+- [Verify your tenant access with Azure Active Directory B2B](#verify-your-tenant-access-with-azure-active-directory-b2b).
+- [Verify your tenant access with GDAP](#verify-your-tenant-access-with-gdap)
 
 >[!Note]
 > Setting up [multi-factor authentication trust](/azure/active-directory/external-identities/authentication-conditional-access) is highly recommended for each tenant to avoid missing data in multi-tenant management Microsoft 365 Defender.
@@ -62,12 +62,18 @@ In order to view and manage the data you have access to in multi-tenant manageme
 3. Verify all the tenants you plan to manage in multi-tenant management in Microsoft 365 Defender appear in the list.
 4. For each tenant, go to the [Microsoft 365 Defender portal](https://security.microsoft.com/?tid=tenant_id) and sign in to validate you can successfully access the tenant.
 
+- [Azure Active Directory B2B authentication](/azure/active-directory/external-identities/what-is-b2b)
+
+
 ### Verify your tenant access with GDAP
 
 1. Go to the [Microsoft Partner Center](https://partner.microsoft.com/commerce/granularadminaccess/list).
 2. Under **Customers** you can find the list of organizations you have guest access to.
 3. Verify all the tenants you plan to manage in multi-tenant management in Microsoft 365 Defender appear in the list.
 4. For each tenant, go to the [Microsoft 365 Defender portal)](https://security.microsoft.com/?tid=tenant_id) and sign in to validate you can successfully access the tenant.
+
+- [Granular delegated admin privileges (GDAP)](/partner-center/gdap-introduction).  
+
 
 ## Set up multi-tenant management
 
