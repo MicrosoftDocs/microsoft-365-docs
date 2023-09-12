@@ -65,16 +65,16 @@ To see the following new SharePoint controls the Office 365 connector in Microso
 - Ensure SharePoint external sharing is managed through domain whitelist/blacklists
 - Block OneDrive for Business sync from unmanaged devices
 
-**Microsoft Secure Score integration with Microsoft Lighthouse 365:**
+### Microsoft Secure Score integration with Microsoft Lighthouse 365
 
 Microsoft 365 Lighthouse helps Managed Service Providers (MSPs) grow their business and deliver services to customers at scale from a single portal. Lighthouse allows customers standardize configurations, manage risk, identify artificial intelligence (AI)-driven sales opportunities, and engage with customers to help them maximize their investment in Microsoft 365.
 
 We've now integrated Microsoft Secure Score into Microsoft 365 Lighthouse. This integration provides an aggregate view of the Secure Score across all managed tenants, as well as Secure Score details for each individual tenant. Access to Secure Score is a available from a new card on the Lighthouse homepage or by selecting a tenant on the Lighthouse Tenants page.
 
->
->[!Note] The integration with Microsoft Lighthouse 365 is available to Microsoft partners who the Cloud Solution Provider (CSP) program to manage customer tenants.
+> [!NOTE]
+> The integration with Microsoft Lighthouse 365 is available to Microsoft partners who use the Cloud Solution Provider (CSP) program to manage customer tenants.
 
-**Microsoft Secure Score permissions integration with Microsoft 365 Defender Unified role-based access control (RBAC) is now in Public Preview** </br>
+### Microsoft Secure Score permissions integration with Microsoft 365 Defender Unified role-based access control (RBAC) is now in Public Preview
 
 Previously, only Azure Active Directory global roles (such as Global Administrators) could access Microsoft Secure Score. Now, you'll be able to control access and grant granular permissions for the Microsoft Secure Score experience as part of the Microsoft 365 Defender Unified RBAC model.  
 
@@ -83,7 +83,6 @@ You can add the new permission and choose the data sources the user has access t
 A new data source **Secure Score – Additional data source** is also available.  Users with permissions to this data source, will have access to additional data within the Secure score dashboard. For more information on additional data sources, see [Products included in Secure Score](./microsoft-secure-score.md#products-included-in-secure-score).
 
 ## July 2023
-
 
 The following Microsoft Defender for Identity recommendations will be added as Microsoft Secure Score improvement actions:
 
