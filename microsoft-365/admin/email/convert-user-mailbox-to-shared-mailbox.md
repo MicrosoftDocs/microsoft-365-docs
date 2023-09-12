@@ -2,8 +2,8 @@
 title: "Convert a user mailbox to a shared mailbox"
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: SKjerland
+ms.author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 08/18/2023
 audience: Admin
