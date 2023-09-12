@@ -40,7 +40,7 @@ The following table lists the basic requirements you need to use multi-tenant ma
 | Requirement | Description |
 |:---|:---|
 | Microsoft 365 Defender prerequisites | Verify you meet the [Microsoft 365 Defender prerequisites](prerequisites.md)|
-| Permissions | Users must be assigned the correct roles and permissions at the individual tenant level in order to view and manage the associated data in multi-tenant management. To learn more, see: <br/> - [Manage access to Microsoft 365 Defender with Azure Active Directory global roles](./m365d-permissions.md) <br/> - [Custom roles in role-based access control for Microsoft 365 Defender](./custom-roles.md) <br/> The data returned at a per tenant level based on the roles and permissions assigned|
+| Permissions | Users must be assigned the correct roles and permissions at the individual tenant level in order to view and manage the associated data in multi-tenant management. To learn more, see: <br/><br/> - [Manage access to Microsoft 365 Defender with Azure Active Directory global roles](./m365d-permissions.md) <br/> - [Custom roles in role-based access control for Microsoft 365 Defender](./custom-roles.md)|
 
 ## Verify your tenant access
 
