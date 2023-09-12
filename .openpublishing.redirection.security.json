@@ -2779,6 +2779,16 @@
          "source_path": "microsoft-365/security/defender/first-incident-post.md",
          "redirect_url": "/microsoft-365/security/defender/respond-first-incident-remediate",
          "redirect_document_id": false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/azure-ip-protection-features.md",
+         "redirect_url":"/azure/information-protection/what-is-information-protection",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/help-and-support-for-eop.md",
+         "redirect_url":"/microsoft-365/admin/get-help-support",
+         "redirect_document_id":true
        }
    ]
 }
