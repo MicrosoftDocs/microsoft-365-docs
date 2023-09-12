@@ -78,7 +78,7 @@ As part of the process of creating a device group, you'll:
 6. Click **Close**. The configuration changes are applied.
 
     > [!NOTE]
-    > Device Groups in Defender for Business are managed differently. For more information, visit [Device groups in Microsoft Defender for Business](/security/defender-business/mdb-create-edit-device-groups)
+    > Device Groups in Defender for Business are managed differently. For more information, see [Device groups in Microsoft Defender for Business](/security/defender-business/mdb-create-edit-device-groups).
 
 ## Manage device groups
 
