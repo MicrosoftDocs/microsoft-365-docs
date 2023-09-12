@@ -1,7 +1,7 @@
 ---
 title: Changing from a Microsoft 365 E plan to a Microsoft 365 F plan
 author: lana-chin
-ms.author: v-chinlana
+ms.author: heidip
 manager: serdars
 ms.topic: conceptual
 audience: admin
@@ -14,7 +14,6 @@ ms.collection:
   - Teams_ITAdmin_FLW
   - m365-frontline
   - highpri
-  - tier2
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers

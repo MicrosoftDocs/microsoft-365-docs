@@ -2,8 +2,8 @@
 title: "Resolve issues with shared mailboxes"
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: SKjerland
+ms.author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 02/18/2020
 audience: Admin

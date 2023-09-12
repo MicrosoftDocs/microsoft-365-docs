@@ -1,10 +1,11 @@
 ---
-author: LanaChin
-ms.author: v-lanachin
+author: lana-chin
+ms.author: v-chinlana
 ms.date: 03/31/2022 
 ms.topic: include
 audience: admin
 ms.service: microsoft-365-frontline
+ms.collection: m365-frontline 
 ---
 To complete the steps in this article, you must be a Microsoft 365 global admin or a Shifts connector admin.
 
