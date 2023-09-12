@@ -80,6 +80,9 @@ As part of the process of creating a device group, you'll:
 
 6. Click **Close**. The configuration changes are applied.
 
+    > [!NOTE]
+    > Device Groups in Defender for Business are managed differently. For more information, visit [Device groups in Microsoft Defender for Business](/security/defender-business/mdb-create-edit-device-groups)
+
 ## Manage device groups
 
 You can promote or demote the rank of a device group so that it's given higher or lower priority during matching. A device group with a rank of 1 is the highest ranked group. When a device is matched to more than one group, it's added only to the highest ranked group. You can also edit and delete groups.
