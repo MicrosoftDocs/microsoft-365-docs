@@ -48,7 +48,7 @@ If using a terminal download using the command:
 2. Verify the download.
 
     > [!NOTE]
-    > The current SHA256 hash of 'XMDEClientAnalyzerBinary.zip' that is downloaded from the above link is: 'E8D1B752A937E9AB305AE3C30737E31D75AE6FF9299002AB23F5C463C77DD159'
+    > The current SHA256 hash of 'XMDEClientAnalyzerBinary.zip' that is downloaded from this link is: 'E8D1B752A937E9AB305AE3C30737E31D75AE6FF9299002AB23F5C463C77DD159'
 
     ```console
     echo 'E8D1B752A937E9AB305AE3C30737E31D75AE6FF9299002AB23F5C463C77DD159 XMDEClientAnalyzerBinary.zip' | sha256sum -c
