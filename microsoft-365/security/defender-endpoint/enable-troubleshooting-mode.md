@@ -1,7 +1,6 @@
 ---
 title: Get started with troubleshooting mode in Microsoft Defender for Endpoint 
 description: Turn on the Microsoft Defender for Endpoint troubleshooting mode to address various antivirus issues.
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: microsoft-365-security
 ms.author: dansimp
@@ -14,7 +13,7 @@ ms.collection:
 - tier2
 ms.topic: conceptual
 ms.subservice: mde
-ms.date: 04/18/2023
+ms.date: 09/06/2023
 ---
 
 # Get started with troubleshooting mode in Microsoft Defender for Endpoint 
@@ -62,7 +61,7 @@ During troubleshooting mode, you can use the PowerShell command `Set-MPPreferenc
 
 - Admins can also review the changes in settings that take place during Troubleshooting mode in **Event Viewer** on the device page.
 
-- Troubleshooting mode automatically turns off after reaching the expiration time (it lasts for 3 hours). After expiration, all policy-managed configurations become read-only again and revert back to how the device was configured before enabling troubleshooting mode.
+- Troubleshooting mode automatically turns off after reaching the expiration time (it lasts for 4 hours). After expiration, all policy-managed configurations become read-only again and revert back to how the device was configured before enabling troubleshooting mode.
 
 - It could take up to 15 minutes from the time the command is sent from Microsoft 365 Defender to when it becomes active on the device.
 
@@ -143,7 +142,7 @@ DeviceEvents
 
 ```kusto
 DeviceEvents
-| where Timestamp > ago(3h) // troubleshooting mode automatically disables after 3 hours 
+| where Timestamp > ago(3h) // troubleshooting mode automatically disables after 4 hours 
 | where ActionType == "AntivirusTroubleshootModeEvent"
 | extend _tsmodeproperties = parse_json(AdditionalFields)
 | where _tsmodeproperties.TroubleshootingStateChangeReason contains "started"

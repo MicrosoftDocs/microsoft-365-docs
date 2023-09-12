@@ -2,6 +2,9 @@
 title: Responding to a Compromised Email Account
 f1.keywords: 
   - NOCSH
+  - Hijacked account
+  - Hacked account
+  - Compromised account
 ms.author: chrisda
 author: chrisda
 manager: dansimp
