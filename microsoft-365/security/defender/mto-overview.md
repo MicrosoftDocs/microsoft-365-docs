@@ -1,6 +1,6 @@
 ---
-title: Multi-tenant view in Microsoft 365 Defender
-description: Overview of the multi-tenant view in Microsoft 365 Defender.
+title: Multi-tenant management in Microsoft 365 Defender
+description: Overview of multi-tenant management in Microsoft 365 Defender.
 ms.service: microsoft-365-security
 ms.subservice: m365d
 ms.author: siosulli
@@ -16,7 +16,7 @@ ms.topic: conceptual
 ms.date: 09/01/2023
 ---
 
-# Overview of the multi-tenant view in Microsoft 365 Defender
+# Overview of multi-tenant management in Microsoft 365 Defender
 
 **Applies to:**
 
@@ -26,12 +26,12 @@ ms.date: 09/01/2023
 
 Managing multi-tenant environments can add an additional layer of complexity when it comes to keeping up with the ever-evolving security threats facing your enterprise. Navigating across multiple tenants can be time consuming and reduce the overall efficiency of security operation center (SOC) teams.
 
-The multi-tenant view in Microsoft 365 Defender was designed to provide security operation teams with a single, unified view of all the tenants they manage. This view enables teams to quickly investigate incidents and perform advanced hunting across data from multiple tenants, improving their security operations.
+Multi-tenant management in Microsoft 365 Defender was designed to provide security operation teams with a single, unified view of all the tenants they manage. This view enables teams to quickly investigate incidents and perform advanced hunting across data from multiple tenants, improving their security operations.
 
 >[!Tip]
 >To learn more about multi-tenant organizations, see [Multi-tenant organizations documentation](/azure/active-directory/multi-tenant-organizations/).
 
-Some of the key benefits you get with the multi-tenant view in Microsoft 365 Defender include:
+Some of the key benefits you get with multi-tenant management in Microsoft 365 Defender include:
 
 - **A centralized place to manage incidents across tenants**: A unified view provides SOC analysts with all the information they need for incident investigation across multiple tenants, eliminating the need to sign in and out of each one.
 
@@ -39,9 +39,9 @@ Some of the key benefits you get with the multi-tenant view in Microsoft 365 Def
 
 - **Multi-customer management for partners**: Managed Security Service Provider (MSSP) partners can now gain visibility into security incidents, alerts, and threat hunting across multiple customers through a single pane of glass.
 
-## What's included in the multi-tenant view in Microsoft 365 Defender
+## What's included in multi-tenant management in Microsoft 365 Defender
 
-The following key capabilities are available for each tenant you have access to in the multi-tenant view in Microsoft 365 Defender:
+The following key capabilities are available for each tenant you have access to in multi-tenant management in Microsoft 365 Defender:
 
 | Capability | Description |
 | ------ | ------ |
@@ -56,4 +56,4 @@ The following key capabilities are available for each tenant you have access to 
 
 ## Next steps
 
-- [Set up the multi-tenant view in Microsoft 365 Defender](mto-requirements.md)
+- [Set up multi-tenant management in Microsoft 365 Defender](mto-requirements.md)
