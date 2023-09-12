@@ -242,7 +242,6 @@ When it comes to assigning permissions for tasks in EOP and Defender for Office 
 
 For instructions, see [View and assign administrator roles in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-manage-roles-portal) and [Manage access to Microsoft 365 Defender with Azure Active Directory global roles](/microsoft-365/security/defender/m365d-permissions).
 
-
 ## Step 4: User tags
 
 In Defender for Office 365, priority accounts allows you to tag up to 250 high value users for ease of identification in reports and investigations. These priority account also receive additional heuristics that don't benefit regular employees. For more information, see [Manage and monitor priority accounts](../../admin/setup/priority-accounts.md) and [Configure and review priority account protection in Microsoft Defender for Office 365](priority-accounts-turn-on-priority-account-protection.md).
@@ -257,21 +256,23 @@ The ability of users to report good messages marked as bad (false positives) or 
 
 The important parts of user message reporting are:
 
-- **How do users report messages?**: Make sure clients are using one of the following methods to ensure reported messages appear on the **User-reported** tab of the **Submissions** page in the Defender portal at <https://security.microsoft.com/reportsubmission?viewid=user>:
+- **How do users report messages?**: Make sure clients are using one of the following methods so reported messages appear on the **User-reported** tab of the **Submissions** page in the Defender portal at <https://security.microsoft.com/reportsubmission?viewid=user>:
 
 - The built-in **Report** button in Outlook on the web (formerly known as Outlook Web App or OWA).
-- The Microsoft [Report Message and Report Phishing add-ins](submissions-users-report-message-add-in-configure.md) for Outlook and Outlook on the web.
+- The Microsoft [Report Message or Report Phishing add-ins](submissions-users-report-message-add-in-configure.md) for Outlook and Outlook on the web.
 - Third-party reporting tools that use the [supported message submission format](submissions-user-reported-messages-custom-mailbox.md#message-submission-format-for-third-party-reporting-tools).
 
 - **Where do user reported messages go?**: You have the following options:
-  - To a designated reporting mailbox.
   - To a designated reporting mailbox and to Microsoft (this is the default value).
+  - To a designated reporting mailbox only.
   - To Microsoft only.
 
-  The default mailbox that's used to collect user reported messages is the Global Administrator (the initial account in the organization). If you want user reported messages to go to a reporting mailbox in your organization, you should [create](/exchange/recipients-in-exchange-online/create-user-mailboxes) and [configure](submissions-user-reported-messages-custom-mailbox.md#configuration-requirements-for-the-reporting-mailbox) an exclusive mailbox to use.
+  The default mailbox that's used to collect user reported messages is the Global Administrator's mailbox (the initial account in the organization). If you want user reported messages to go to a reporting mailbox in your organization, you should [create](/exchange/recipients-in-exchange-online/create-user-mailboxes) and [configure](submissions-user-reported-messages-custom-mailbox.md#configuration-requirements-for-the-reporting-mailbox) an exclusive mailbox to use.
 
-  It's up to you whether you want user reported messages to also go to Microsoft for analysis (exclusively or along with delivery to your designated reporting mailbox). Reporting these messages to Microsoft allows our filters to learn and improve.
+  It's up to you whether you want user reported messages to also go to Microsoft for analysis (exclusively or along with delivery to your designated reporting mailbox).
 
   If you want user reported messages to go only to your designated reporting mailbox, you should [manually submit user reported messages to Microsoft for analysis](submissions-admin.md#submit-user-reported-messages-to-microsoft-for-analysis) from the **User-reported** tab of the **Submissions** page in the Defender portal at <https://security.microsoft.com/reportsubmission?viewid=user>.
+
+  Submitting user reported messages to Microsoft is important to allow our filters to learn and improve.
 
 For complete information about user reported message settings, see [User reported settings](submissions-user-reported-messages-custom-mailbox.md).
