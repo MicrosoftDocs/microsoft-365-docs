@@ -48,6 +48,7 @@ The steps in this article won't prevent members of certain roles from creating G
 - Partner Tier 1 Support: Microsoft 365 admin center, Exchange admin center, Azure AD
 - Partner Tier 2 Support: Microsoft 365 admin center, Exchange admin center, Azure AD
 - Directory Writers: Azure AD
+- Groups Administrator: Azure AD
 - SharePoint Administrator: SharePoint admin center, Azure AD
 - Teams Service Administrator: Teams admin center, Azure AD
 - User Administrator: Microsoft 365 admin center, Azure AD
