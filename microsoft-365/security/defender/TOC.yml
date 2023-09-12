@@ -444,9 +444,9 @@
          href: integrate-microsoft-365-defender-secops-tasks.md
     - name: Multi-tenant view in Microsoft 365 Defender
       items:
-        - name: Multi-tenant view in Microsoft 365 Defender
+        - name: Multi-tenant management in Microsoft 365 Defender
           href: mto-overview.md
-        - name: Set up multi-tenant view in Microsoft 365 Defender 
+        - name: Set up multi-tenant management in Microsoft 365 Defender 
           href: mto-requirements.md
         - name: View and manage incidents and alerts
           href: mto-incidents-alerts.md
