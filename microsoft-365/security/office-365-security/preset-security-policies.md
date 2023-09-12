@@ -220,7 +220,7 @@ In PowerShell, preset security policies consist of the following elements:
      - **[Get-MalwareFilterPolicy](/powershell/module/exchange/get-malwarefilterpolicy)**
   - <u>Defender for Office 365 policies</u>:
      - **[Get-SafeAttachmentPolicy](/powershell/module/exchange/get-safeattachmentpolicy)**
-     - **[Get-SafeLinksPolicy](/powershell/module/exchange/get-safesafelinkspolicy)**
+     - **[Get-SafeLinksPolicy](/powershell/module/exchange/get-safelinkspolicy)**
 
   > [!WARNING]
   > Do not attempt to create, modify, or remove the individual security policies that are associated with preset security policies. The only supported method for creating the individual security policies for Standard or Strict preset security policies is to turn on the preset security policy in the Microsoft 365 Defender portal for the first time.
