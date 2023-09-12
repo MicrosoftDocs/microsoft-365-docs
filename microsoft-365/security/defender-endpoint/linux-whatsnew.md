@@ -33,12 +33,12 @@ This article is updated frequently to let you know what's new in the latest rele
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 
 <details>
-	<summary> August-2023 (Build: 101.23072.0021 | Release version: 30.123072.0021.0)</summary>
+	<summary> September-2023 (Build: 101.23072.0021 | Release version: 30.123072.0021.0)</summary>
 
-## August-2023 Build: 101.23072.0021 | Release version: 30.123072.0021.0
+## September-2023 Build: 101.23072.0021 | Release version: 30.123072.0021.0
 
-&ensp;Released: **August 8,2023**<br/>
-&ensp;Published: **August 8,2023**<br/>
+&ensp;Released: **September 11,2023**<br/>
+&ensp;Published: **September 11,2023**<br/>
 &ensp;Build: **101.23072.0021**<br/>
 &ensp;Release version: **30.123072.0021.0**<br/>
 &ensp;Engine version: **1.1.20100.7**<br/>
@@ -47,15 +47,10 @@ This article is updated frequently to let you know what's new in the latest rele
 **What's new**
 
 - There are multiple fixes and new changes in this release
-	- In mde_installer.sh v0.6.3, during cleanup user has to provide channel info for the configured repository, user can do it using --channel argument. For e.x: `sudo ./mde_installer --clean --channel prod`
-	- Added support for sensor-level process exclusions for eBPF.
-  	- Added support for process based exclusions for fanotify.
-  	- The Network Extension can now be reset by administrators using `mdatp network-protection reset`.
-- Other fixes and improvements
-    - Improved performance of Network Protection in audit mode.
-
-- Bug Fixes
-- Other performance improvements
+	- In mde_installer.sh v0.6.3, user can use --channel argument to provide channel of the configured repository during cleanup. For e.x: `sudo ./mde_installer --clean --channel prod`
+	- The Network Extension can now be reset by administrators using `mdatp network-protection reset`.
+	- Other performance improvements
+	- Bug Fixes
 
 **Known issues**
 
