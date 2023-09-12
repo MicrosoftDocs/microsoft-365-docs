@@ -40,27 +40,39 @@ The following recommendations have been added as Microsoft Secure Score improvem
 
 **Microsoft Exchange Online:**
 
-•	Ensure modern authentication for Exchange Online is enabled
-•	Ensure Exchange Online Spam Policies are set to notify administrators
-•	Ensure all forms of mail forwarding are blocked and/or disabled
-•	Ensure MailTips are enabled for end users
-•	Ensure mailbox auditing for all users is enabled
-•	Ensure additional storage providers are restricted in Outlook on the web
+- Ensure modern authentication for Exchange Online is enabled
+- Ensure Exchange Online Spam Policies are set to notify administrators
+- Ensure all forms of mail forwarding are blocked and/or disabled
+- Ensure MailTips are enabled for end users
+- Ensure mailbox auditing for all users is enabled
+- Ensure additional storage providers are restricted in Outlook on the web
 
-Azure Active Directory: 
-•	Ensure password protection is enabled for on-prem Active Directory
-•	Ensure 'LinkedIn account connections' is disabled
-•	In order to view those new controls, Office 365 connector in Microsoft Defender for cloud apps must be toggled on via the App connectors settings page
-SharePoint: 
-•	Ensure SharePoint external sharing is managed through domain whitelist/blacklists
-•	Block OneDrive for Business sync from unmanaged devices
-•	In order to view those new controls, Office 365 connector in Microsoft Defender for cloud apps must be toggled on via the App connectors settings page
-•	Ensure Safe Links for Office Applications is enabled
-•	Ensure Safe Attachments policy is enabled
-•	Ensure that an anti-phishing policy has been created
+**Azure Active Directory:**
 
+To see the following new Azure Active Directory controls the Office 365 connector in Microsoft Defender for Cloud Apps must be turned on in the App connectors settings page.
 
+- Ensure password protection is enabled for on-prem Active Directory
+- Ensure 'LinkedIn account connections' is disabled
 
+**SharePoint:**
+
+- Ensure Safe Links for Office Applications is enabled
+- Ensure Safe Attachments policy is enabled
+- Ensure that an anti-phishing policy has been created
+
+To see the following new SharePoint controls the Office 365 connector in Microsoft Defender for Cloud Apps must be turned on in the App connectors settings page.
+
+- Ensure SharePoint external sharing is managed through domain whitelist/blacklists
+- Block OneDrive for Business sync from unmanaged devices
+
+**Microsoft Secure Score integration with Microsoft Lighthouse 365:**
+
+Microsoft 365 Lighthouse helps Managed Service Providers (MSPs) grow their business and deliver services to customers at scale from a single portal. Lighthouse allows customers standardize configurations, manage risk, identify artificial intelligence (AI)-driven sales opportunities, and engage with customers to help them maximize their investment in Microsoft 365.
+
+We've now integrated Microsoft Secure Score into Microsoft 365 Lighthouse. This integration provides an aggregate view of the Secure Score across all managed tenants, as well as Secure Score details for each individual tenant. Access to Secure Score is a available from a new card on the Lighthouse homepage or by selecting a tenant on the Lighthouse Tenants page.
+
+>
+>[!Note] The integration with Microsoft Lighthouse 365 is available to Microsoft partners who the Cloud Solution Provider (CSP) program to manage customer tenants.
 
 **Microsoft Secure Score permissions integration with Microsoft 365 Defender Unified role-based access control (RBAC) is now in Public Preview** </br>
 
