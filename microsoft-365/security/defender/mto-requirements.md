@@ -24,14 +24,14 @@ ms.date: 09/01/2023
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-This article describes the steps need to take start using multi-tenant management in Microsoft 365 Defender.
+This article describes the steps you need to take to start using multi-tenant management in Microsoft 365 Defender.
 
-1. [Review the requirements](#review-the-requirements).
-2. [Verify your tenant access](#verify-your-tenant-access).
-3. [Set up multi-tenant management in Microsoft 365 Defender](#set-up-multi-tenant-management).
+1. [Review the requirements](#review-the-requirements)
+2. [Verify your tenant access](#verify-your-tenant-access)
+3. [Set up multi-tenant management in Microsoft 365 Defender](#set-up-multi-tenant-management)
 
 >[!Note]
-> [Data privacy](data-privacy.md), [role-based access control (RBAC)](m365d-permissions.md) and [Licensing](prerequisites.md#licensing-requirements) are respected by multi-tenant view in Microsoft 365 Defender.
+> [Data privacy](data-privacy.md), [role-based access control (RBAC)](m365d-permissions.md) and [Licensing](prerequisites.md#licensing-requirements) are respected by multi-tenant management in Microsoft 365 Defender.
 
 ## Review the requirements
 
