@@ -84,7 +84,7 @@ Create the following email authentication DNS records at your DNS registrar or D
 
   To set up DMARC for a custom domain, see [Set up DMARC for outbound mail from Microsoft 365](email-authentication-dmarc-configure.md#set-up-dmarc-for-outbound-mail-from-microsoft-365)
 
-If you're only using the @\*.onmicrosoft.com domain for email (also known as the Microsoft Online Email Routing Address or MOERA domain), there's not nearly as much for you to do:
+If you're using the @\*.onmicrosoft.com domain for email (also known as the Microsoft Online Email Routing Address or MOERA domain), there's not nearly as much for you to do:
 
 - **SPF**: An SPF record is already configured for the \<domain\>.onmicrosoft.com domain.
 - **DKIM**: A DKIM record is already configured for the \<domain\>.onmicrosoft.com domain.
@@ -138,7 +138,7 @@ The previous information and the security policies that are involved are summari
 
 ⁴ Built-in protection is the only preset security policy that's on by default.
 
-⁵ For the Standard and Strict preset security policies, configure recipient conditions and optional exceptions for protection. For Built-in protection, can only configure recipient exceptions from protection.
+⁵ For the Standard and Strict preset security policies, you can configure recipient conditions and optional exceptions for protection. For Built-in protection, you can only configure recipient exceptions from protection.
 
 ⁶ The only customizable security settings in preset security policies are the entries and exceptions for user impersonation protection and domain impersonation protection in the Standard and Strict preset security policies in Defender for Office 365.
 
@@ -147,7 +147,7 @@ The previous information and the security policies that are involved are summari
 How security policies are applied is an important consideration as you decide how to configure security settings for users. The important points to remember are:
 
 - Security features have an unconfigurable [order of processing](how-policies-and-protections-are-combined.md). For example, incoming messages are always evaluated for malware before spam.
-- The security policies of a specific feature (anti-spam, anti-malware, anti-phishing, etc.) are applied in a specific order of precedence (more on that later).
+- The security policies of a specific security feature (anti-spam, anti-malware, anti-phishing, etc.) are applied in a specific order of precedence (more on that later).
 - If a user is intentionally or unintentionally included in multiple policies of a specific feature, the first security policy for that feature where the user is defined (based on the order of precedence) determines what happens to the item (a message, file, URL, etc.).
 - Once that first security policy is applied to a specific item for a user, policy processing for that feature stops. No more security policies of that feature are evaluated for that user and that specific item.
 
@@ -168,7 +168,7 @@ To avoid confusion and unintended application of policies, use the following gui
 
 - Use unambiguous groups or lists of recipients at each level. For example, use different groups or lists of recipients for the Standard and Strict preset security policies.
 - Configure exceptions at each level as required. For example, configure recipients who need custom policies as exceptions to the Standard and Strict preset security policy.
-- Remember, any remaining recipients that aren't identified at the higher levels get the default policies or Built-in protection in Defender for Office 365 (Safe Links and Safe Attachments).
+- Any remaining recipients that aren't identified at the higher levels get the default policies or Built-in protection in Defender for Office 365 (Safe Links and Safe Attachments).
 
 Armed with this information, you can now decided the best way to implement security policies in the organization.
 
@@ -183,7 +183,7 @@ Now that you know about the different types of security policies and how they're
 
 Remember, default policies (and Built-in protection in Defender for Office 365) automatically protect all recipients in the organization (anyone who isn't defined in the Standard or Strict preset security policy or in custom policies). So even if you do nothing, all recipients in the organization get the default protections as described in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
 
-It's also important to realize that you aren't locked into your initial decision forever. The information in the [recommended settings tables](recommended-settings-for-eop-and-office365.md) and the [comparison table table between Standard and Strict](preset-security-policies.md#policy-settings-in-preset-security-policies) should allow you to make an informed decision. But if needs, results, or circumstances change, it's not at all difficult to adopt a different strategy later.
+It's also important to realize that you aren't locked into your initial decision forever. The information in the [recommended settings tables](recommended-settings-for-eop-and-office365.md) and the [comparison table table between Standard and Strict](preset-security-policies.md#policy-settings-in-preset-security-policies) should allow you to make an informed decision. But if needs, results, or circumstances change, it's not difficult to adopt a different strategy later.
 
 **Without a compelling business need that indicates otherwise, we recommend starting with the Standard preset security policy for all users in your organization**. Preset security policies are configured with settings based years of observations in the Microsoft 365 datacenters, and should be the right choice for the majority of organizations. And, the policies are automatically updated to match the threats of the security landscape.
 
@@ -208,7 +208,7 @@ To turn on and configure preset security policies, see [Preset security policies
 
 The decision to use custom policies instead of preset security policies ultimately comes down to the following business requirements:
 
-- Users require security settings that are _different_ from the locked down settings in preset security policies (junk vs. quarantine or vice-versa, no safety tips, etc.).
+- Users require security settings that are _different_ from the locked down settings in preset security policies (junk vs. quarantine or vice-versa, no safety tips, notify custom recipients, etc.).
 - Users require settings that _aren't configured_ in preset security policies (for example, blocking email from specific countries or in specific languages in anti-spam policies).
 - Users need a _quarantine experience_ that's different from the locked down settings in preset security policies. [Quarantine policies](quarantine-policies.md#appendix) define what users can do to their quarantined messages based on why the message was quarantined, and whether recipients are notified about their quarantined messages. The default end-user quarantine experience is summarized in the table [here](quarantine-end-user.md) and the quarantine policies that are used in the Standard and Strict preset security policies are described in the tables [here](recommended-settings-for-eop-and-office365.md).
 
@@ -226,22 +226,52 @@ If you decide to use custom policies, you can use the [Configuration analyzer](c
 
 You're probably already using the initial account that you used to enroll in Microsoft 365 to do all the work in this deployment guide. That account is an admin everywhere in Microsoft 365 (specifically, it's a member of the [Global Administrator](/azure/active-directory/roles/permissions-reference#global-administrator) role in Azure Active Directory (Azure AD)), and allows you to do pretty much anything. The required permissions were described earlier in this article at [Roles and permissions](#roles-and-permissions).
 
-But, the intent of this step is to configure other admins to help you manage the features of EOP and Defender for Office 365 in the future. What you don't want is a lot of people with Global Administrator power if they don't need it (for example, do they really need to delete/create accounts, delete/create mailboxes, make other users Global Administrators, etc.?). The concept of _least privilege_ (assigning only the required permissions to users and nothing more) is a good practice to follow.
+But, the intent of this step is to configure other admins to help you manage the features of EOP and Defender for Office 365 in the future. What you don't want is a lot of people with Global Administrator power if they don't need it (for example, do they really need to delete/create accounts or make other users Global Administrators?). The concept of _least privilege_ (assigning only the required permissions to users and nothing more) is a good practice to follow.
 
 When it comes to assigning permissions for tasks in EOP and Defender for Office 365, the following options are available:
 
 - [Azure AD permissions](../../admin/add-users/about-admin-roles.md): These permissions apply to all workloads in Microsoft 365 (Exchange Online, SharePoint Online, Microsoft Teams, etc.).
-- [Exchange Online permissions](/exchange/permissions-exo/permissions-exo): Most tasks in EOP and Defender for Office 365 are available using Exchange Online permissions. Assigning permissions in Exchange Online only prevents administrative access in other Microsoft 365 workloads.
-- [Email & collaboration permissions in the Microsoft 365 Defender portal](scc-permissions.md): You can administer some security features in EOP and Defender for Office 365 with Email & collaboration permissions. For example:
+- [Exchange Online permissions](/exchange/permissions-exo/permissions-exo): Most tasks in EOP and Defender for Office 365 are available using Exchange Online permissions. Assigning permissions only in Exchange Online prevents administrative access in other Microsoft 365 workloads.
+- [Email & collaboration permissions in the Microsoft 365 Defender portal](scc-permissions.md): Administration of some security features in EOP and Defender for Office 365 is available with Email & collaboration permissions. For example:
   - [Configuration analyzer](configuration-analyzer-for-security-policies.md)
   - [Admin quarantine management](quarantine-admin-manage-messages-files.md) and [quarantine policies](quarantine-policies.md)
   - [Admin submissions and review of user reported messages](submissions-admin-review-user-reported-messages.md)
   - [User tags](user-tags-about.md)
 
-For simplicity, we recommend using the [Security Administrator](/azure/active-directory/roles/permissions-reference#security-administrator) role in Azure AD for others who need to configure settings in EOP and Defender for Office 365.
+**For simplicity, we recommend using the [Security Administrator](/azure/active-directory/roles/permissions-reference#security-administrator) role in Azure AD for others who need to configure settings in EOP and Defender for Office 365.**
 
 For instructions, see [View and assign administrator roles in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-manage-roles-portal) and [Manage access to Microsoft 365 Defender with Azure Active Directory global roles](/microsoft-365/security/defender/m365d-permissions).
 
-## Step 4: User reported message settings
 
-## Step 5: User tags
+## Step 4: User tags
+
+In Defender for Office 365, priority accounts allows you to tag up to 250 high value users for ease of identification in reports and investigations. These priority account also receive additional heuristics that don't benefit regular employees. For more information, see [Manage and monitor priority accounts](../../admin/setup/priority-accounts.md) and [Configure and review priority account protection in Microsoft Defender for Office 365](priority-accounts-turn-on-priority-account-protection.md).
+
+In Defender for Office 365 Plan2, you also have access to create and apply custom _user tags_ to easily identify specific groups of users in reports and investigations. For more information, see [User tags in Microsoft Defender for Office 365](user-tags-about.md).
+
+**Identify appropriate users to tag as priority accounts, and decide if you need to create and apply custom user tabs.**
+
+## Step 5: Review and configure user reported message settings
+
+The ability of users to report good messages marked as bad (false positives) or bad messages allowed (false negatives) is important for you to monitor and adjust protection settings in EOP and Defender for Office 365.
+
+The important parts of user message reporting are:
+
+- **How do users report messages?**: Make sure clients are using one of the following methods to ensure reported messages appear on the **User-reported** tab of the **Submissions** page in the Defender portal at <https://security.microsoft.com/reportsubmission?viewid=user>:
+
+- The built-in **Report** button in Outlook on the web (formerly known as Outlook Web App or OWA).
+- The Microsoft [Report Message and Report Phishing add-ins](submissions-users-report-message-add-in-configure.md) for Outlook and Outlook on the web.
+- Third-party reporting tools that use the [supported message submission format](submissions-user-reported-messages-custom-mailbox.md#message-submission-format-for-third-party-reporting-tools).
+
+- **Where do user reported messages go?**: You have the following options:
+  - To a designated reporting mailbox.
+  - To a designated reporting mailbox and to Microsoft (this is the default value).
+  - To Microsoft only.
+
+  The default mailbox that's used to collect user reported messages is the Global Administrator (the initial account in the organization). If you want user reported messages to go to a reporting mailbox in your organization, you should [create](/exchange/recipients-in-exchange-online/create-user-mailboxes) and [configure](submissions-user-reported-messages-custom-mailbox.md#configuration-requirements-for-the-reporting-mailbox) an exclusive mailbox to use.
+
+  It's up to you whether you want user reported messages to also go to Microsoft for analysis (exclusively or along with delivery to your designated reporting mailbox). Reporting these messages to Microsoft allows our filters to learn and improve.
+
+  If you want user reported messages to go only to your designated reporting mailbox, you should [manually submit user reported messages to Microsoft for analysis](submissions-admin.md#submit-user-reported-messages-to-microsoft-for-analysis) from the **User-reported** tab of the **Submissions** page in the Defender portal at <https://security.microsoft.com/reportsubmission?viewid=user>.
+
+For complete information about user reported message settings, see [User reported settings](submissions-user-reported-messages-custom-mailbox.md).
