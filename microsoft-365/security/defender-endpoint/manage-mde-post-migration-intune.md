@@ -38,13 +38,11 @@ We recommend using Microsoft Intune to manage your organization's threat protect
 > [!IMPORTANT]
 > You must have either the global administrator or service administrator role assigned in Intune to configure the settings described in this article. To learn more, see **[Types of administrators (Intune)](/mem/intune/fundamentals/users-add#types-of-administrators)**.
 
-1. Go to the Azure portal ([https://portal.azure.com](https://portal.azure.com)) and sign in.
+1. Go to the [Microsoft Intune Admin center](https://endpoint.microsoft.com/#home) and sign in.
 
-2. Under **Azure Services**, choose **Intune**.
+2. In the navigation pane on the left, choose **Device configuration**, and then, under **Manage**, choose **Profiles**.
 
-3. In the navigation pane on the left, choose **Device configuration**, and then, under **Manage**, choose **Profiles**.
-
-4. Select an existing profile, or create a new one.
+3. Select an existing profile, or create a new one.
 
 > [!TIP]
 > Need help? See **[Using Microsoft Defender for Endpoint with Intune](/mem/intune/protect/advanced-threat-protection#example-of-using-microsoft-defender-atp-with-intune)**.
