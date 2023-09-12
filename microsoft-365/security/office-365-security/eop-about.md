@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 6/20/2023
+ms.date: 9/11/2023
 audience: ITPro
 ms.topic: overview
 ms.collection: 
@@ -116,9 +116,8 @@ For information about requirements, important limits, and feature availability a
 |False positive ratio SLA|\< 1:250,000|
 |Virus detection and blocking SLA|100% of known viruses|
 |Monthly uptime SLA|99.999%|
-|Phone and web technical support 24 hours a day, seven days a week|[Help and support for EOP](help-and-support-for-eop.md).|
+|Phone and web technical support 24 hours a day, seven days a week|[Get support for Microsoft 365 for business](/microsoft-365/admin/get-help-support).|
 |**Other features**||
 |A geo-redundant global network of servers|EOP runs on a worldwide network of datacenters that are designed to help provide the best availability. For more information, see the [EOP datacenters](#eop-datacenters) section earlier in this article.|
 |Message queuing when the on-premises server can't accept mail|Messages in deferral remain in our queues for one day. Message retry attempts are based on the error we get back from the recipient's mail system. On average, messages are retried every 5 minutes. For more information, see [EOP queued, deferred, and bounced messages FAQ](mail-flow-delivery-faq.yml).|
 |Office 365 Message Encryption available as an add-on|For more information, see [Encryption in Office 365](/purview/encryption).|
-|||
