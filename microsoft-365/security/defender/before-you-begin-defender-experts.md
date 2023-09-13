@@ -45,7 +45,7 @@ For more information about Microsoft's commercial licensing terms, visit [this p
 
 ### Server coverage
 
-Defender Experts for hunting also covers servers—whether on premises or on a hyperscale cloud service provider—that have Defender for Endpoint deployed on them with a Microsoft Defender for Server license. For Defender Experts coverage, a server is considered as a user account for billing. The service doesn’t cover Microsoft Defender for Cloud.
+Defender Experts for Hunting also covers servers—whether on premises or on a hyperscale cloud service provider—that have Defender for Endpoint deployed on them with a Microsoft Defender for Server license. For Defender Experts coverage, a server is considered as a user account for billing. The service doesn’t cover Microsoft Defender for Cloud.
 [Learn more about specific hardware and software requirements](/microsoft-365/security/defender-endpoint/minimum-requirements).
 
 ### Access requirements
