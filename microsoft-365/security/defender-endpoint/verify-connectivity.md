@@ -49,19 +49,18 @@ For more information on the Defender for Endpoint Client Analyzer, see [Troubles
 
 > [!NOTE]
 > (Applies to public preview)<br>
-> For the streamlined onboarding public preview, when testing connectivity on devices not yet onboarded to Defender for Endpoint, run mdeclientanalyzer.cmd with `-o <path to MDE onboarding package >`. The command will use parameters from onboarding script to test connectivity. Otherwise, the default pre-onboarding test will test against the standard URL set. See the following section for more details.
+> For the streamlined onboarding public preview, when testing connectivity on devices not yet onboarded to Defender for Endpoint, run `mdeclientanalyzer.cmd` with `-o <path to MDE onboarding package >`. The command will use geo parameters from the onboarding script to test connectivity. Otherwise, the default pre-onboarding test runs against the standard URL set. See the following section for more details.
 
-
-
-Verify, the proxy configuration is completed successfully. The WinHTTP can then discover and communicate through the proxy server in your environment, and then the proxy server will allow  traffic to the Defender for Endpoint service URLs.
+Verify that the proxy configuration is completed successfully. The WinHTTP can then discover and communicate through the proxy server in your environment, and then the proxy server allows traffic to the Defender for Endpoint service URLs.
 
 1. Download the [Microsoft Defender for Endpoint Client Analyzer tool](https://aka.ms/mdeanalyzer) where Defender for Endpoint sensor is running on. 
 
 2. Extract the contents of MDEClientAnalyzer.zip on the device.
 
 3. Open an elevated command line:
+
    1. Go to **Start** and type **cmd**.
-   1. Right-click **Command prompt** and select **Run as administrator**.
+   2. Right-click **Command prompt** and select **Run as administrator**.
 
 4. Enter the following command and press **Enter**:
 
@@ -92,7 +91,7 @@ Verify, the proxy configuration is completed successfully. The WinHTTP can then 
 
 If any one of the connectivity options returns a (200) status, then the Defender for Endpoint client can communicate with the tested URL properly using this connectivity method.
 
-However, if the connectivity check results indicate a failure, an HTTP error is displayed (see HTTP Status Codes). You can then use the URLs in the table shown in [Enable access to Defender for Endpoint service URLs in the proxy server](configure-environment.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server). The URLs available for use will depend on the region selected during the onboarding procedure.
+However, if the connectivity check results indicate a failure, an HTTP error is displayed (see HTTP Status Codes). You can then use the URLs in the table shown in [Enable access to Defender for Endpoint service URLs in the proxy server](configure-environment.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server). The URLs available for use depend on the region selected during the onboarding procedure.
 
 > [!NOTE]
 > The Connectivity Analyzer tool's cloud connectivity checks are not compatible with Attack Surface Reduction rule [Block process creations originating from PSExec and WMI commands](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands). You will need to temporarily disable this rule, to run the connectivity tool. Alternatively, you can temporarily add [ASR exclusions](attack-surface-reduction-rules-deployment-implement.md#customize-attack-surface-reduction-rules) when running the analyzer.
