@@ -246,7 +246,7 @@ Select the applicable operating system and choose "Streamlined (preview)" from t
 
 Exclude devices from any existing onboarding policies that use the standard onboarding package.
 
-For migrating devices already onboarded to Defender for Endpoint, see [Migrating devices to the streamlined connectivity](migrate-devices-streamlined.md). You will need to reboot your device and follow specific guidance here.  
+For migrating devices already onboarded to Defender for Endpoint, see [Migrating devices to the streamlined connectivity](migrate-devices-streamlined.md). You must reboot your device and follow specific guidance here.  
 
 :::image type="content" source="images/migrate-devices-streamlined.png" alt-text="Screenshot of onboarding page with streamlined connectivity":::
 
