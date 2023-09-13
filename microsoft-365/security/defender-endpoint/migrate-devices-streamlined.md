@@ -18,7 +18,7 @@ ms.collection:
 - tier1
 ms.topic: how-to
 ms.subservice: mde
-ms.date: 08/01/2023
+ms.date: 09/13/2023
 ---
 
 # Migrate devices to use the streamlined connectivity method
@@ -35,7 +35,7 @@ ms.date: 08/01/2023
 [!Include[Prerelease information](../../includes/prerelease.md)]
 
 
-In this article, you'll learn how to migrate (reonboard) devices that are currently onboarded to Defender for Endpoint to use the streamlined device connectivity method. For more information on streamlined connectivity, see [Onboarding devices using streamlined connectivity](configure-device-connectivity.md). 
+This article describes how to migrate (reonboard) devices that are currently onboarded to Defender for Endpoint to use the streamlined device connectivity method. For more information on streamlined connectivity, see [Onboarding devices using streamlined connectivity](configure-device-connectivity.md). 
 
 Streamlined connectivity supports migrating devices onboarded to Defender for Endpoint to use the simplified method. Devices must meet the same prerequisites listed in [Streamlined connectivity](configure-device-connectivity.md#prerequisites). 
 
