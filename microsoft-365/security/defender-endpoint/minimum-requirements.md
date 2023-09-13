@@ -56,7 +56,7 @@ Access to Defender for Endpoint is done through a browser. The following browser
 
 ## Hardware and software requirements
 
-Devices on your network must be running one of these editions. New features or capabilities are typically provided only on operating systems that haven't yet reached the end of their support lifecycle. See [Supported Microsoft Defender for Endpoint capabilities by platform](/microsoft-365/security/defender-endpoint/supported-capabilities-by-platform) for more information. Microsoft recommends the installation of the latest available security patches for any operating system.
+Devices on your network must be running one of these editions. New features or capabilities are typically provided only on operating systems that haven't yet reached the end of their support lifecycle. For more information, see [Supported Microsoft Defender for Endpoint capabilities by platform](/microsoft-365/security/defender-endpoint/supported-capabilities-by-platform). Microsoft recommends the installation of the latest available security patches for any operating system.
 
 ### Supported Windows versions
 
@@ -151,9 +151,9 @@ If you're onboarding servers and Microsoft Defender Antivirus isn't the active a
 
 If you're running Microsoft Defender Antivirus as the primary antimalware product on your devices, the Defender for Endpoint agent will successfully onboard.
 
-If you're running a third-party antimalware client and use Mobile Device Management solutions or Microsoft Configuration Manager (current branch), you need to ensure the Microsoft Defender Antivirus ELAM driver is enabled. For more information, see [Ensure that Microsoft Defender Antivirus is not disabled by policy](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
+If you're running a third-party antimalware client and use Mobile Device Management solutions or Microsoft Configuration Manager (current branch), you need to ensure the Microsoft Defender Antivirus ELAM driver is enabled. For more information, see [Ensure that Microsoft Defender Antivirus isn't disabled by policy](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy).
 
-## Related topics
+## Related articles
 
 - [Set up Microsoft Defender for Endpoint deployment](production-deployment.md)
 - [Onboard devices](onboard-configure.md)
