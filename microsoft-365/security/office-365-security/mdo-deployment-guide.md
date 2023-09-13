@@ -276,3 +276,14 @@ The important parts of user message reporting are:
   Submitting user reported messages to Microsoft is important to allow our filters to learn and improve.
 
 For complete information about user reported message settings, see [User reported settings](submissions-user-reported-messages-custom-mailbox.md).
+
+## Step 6: Allow and block
+
+You need to become familiar with how to temporarily allow and block senders, files (email attachments), and URLs using the [Tenant Allow/Block List](tenant-allow-block-list-about.md) at <https://security.microsoft.com/tenantAllowBlockList> and the Submissions page at <https://security.microsoft.com/reportsubmission>:
+
+- You can block **domains and email addresses**, **files**, and **URLs** on the corresponding tabs in the Tenant Allow/Block List and by submitting the items to Microsoft for analysis from the **Submissions** page. When you submit an item to Microsoft, corresponding block entries are also created in the Tenant Allow/Block List.
+
+  > [!TIP]
+  > Users in the organization also can't _send_ email to domains or email addresses that are specified in block entries in the Tenant Allow/Block List.
+
+- Detections by [spoof intelligence](anti-spoofing-spoof-intelligence.md) in anti-phishing policies are shown in the spoof intelligence insight at <https://security.microsoft.com/spoofintelligence>. If you change an allow entry to a block entry or vice-versa, the sender becomes a manual block or allow entry on the **Spoofed senders** tab in the Tenant Allow/Block List. You can also proactively create allow and block entries for not yet encountered spoofed senders on the **Spoofed senders** tab.
