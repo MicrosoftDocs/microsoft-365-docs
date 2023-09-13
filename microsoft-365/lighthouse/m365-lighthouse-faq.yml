@@ -92,7 +92,7 @@ sections:
           
       - question: What permissions do I currently have for this tenant?
         answer: |
-          If you cannot access tenant information, you may not have the correct permissions for that tenant. Some features are only visible to specific roles. To view what roles you have, see [View your Azure AD roles across tenants](m365-lighthouse-view-your-roles.md).
+          If you cannot access tenant information, you may not have the correct permissions for that tenant. Some features and data are only visible to specific roles. To view what roles you have, see [View your Azure AD roles across tenants](m365-lighthouse-view-your-roles.md).
 
   - name: Deploying baselines
     questions:          
