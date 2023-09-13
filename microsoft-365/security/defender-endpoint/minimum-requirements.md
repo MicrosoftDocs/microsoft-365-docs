@@ -5,7 +5,7 @@ ms.service: microsoft-365-security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 07/12/2023
+ms.date: 09/13/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -18,8 +18,6 @@ search.appverid: met150
 
 # Minimum requirements for Microsoft Defender for Endpoint
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -28,7 +26,7 @@ search.appverid: met150
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-minreqs-abovefoldlink)
 
-There are some minimum requirements for onboarding devices to the service. Learn about the licensing, hardware and software requirements, and other configuration settings to onboard devices to the service.
+There are some minimum requirements for onboarding devices to the Defender for Endpoint service. Learn about the licensing, hardware and software requirements, and other configuration settings to onboard devices to the service.
 
 > [!TIP]
 >
@@ -48,13 +46,13 @@ For more information on the array of features in Windows editions, see [Compare 
 
 ## Browser requirements
 
-Access to Defender for Endpoint is done through a browser, supporting the following browsers:
+Access to Defender for Endpoint is done through a browser. The following browsers are supported:
 
 - Microsoft Edge
 - Google Chrome
 
 > [!NOTE]
-> While other browsers might work, the mentioned browsers are the ones supported.
+> Although other browsers might work, the mentioned browsers are the ones supported.
 
 ## Hardware and software requirements
 
@@ -68,16 +66,11 @@ Devices on your network must be running one of these editions. New features or c
 - Windows 11 Pro Education
 - Windows 10 Enterprise
 - [Windows 10 Enterprise LTSC 2016 (or later)](/windows/whats-new/ltsc/)
-- Windows 10 Enterprise IoT*
+- Windows 10 Enterprise IoT
 - Windows 10 Education
 - Windows 10 Pro
 - Windows 10 Pro Education
-- Windows 8.1 Enterprise**
-- Windows 8.1 Pro**
-- Windows 7 SP1 Enterprise**
-- Windows 7 SP1 Pro**
 - Windows server
-  - Windows Server 2008 R2 SP1**
   - Windows Server 2012 R2
   - Windows Server 2016
   - Windows Server, version 1803 or later
@@ -88,6 +81,14 @@ Devices on your network must be running one of these editions. New features or c
 - Azure Virtual Desktop
 - Windows 365 running one of the above operating systems/versions
 
+The following operating systems require the use of the [Log Analytics](/azure/azure-monitor/agents/log-analytics-agent)/Microsoft Monitoring Agent (MMA) to work with Defender for Endpoint:
+
+- Windows 8.1 Enterprise**
+- Windows 8.1 Pro**
+- Windows 7 SP1 Enterprise**
+- Windows 7 SP1 Pro**
+- Windows Server 2008 R2 SP1**
+
 ### Other supported operating systems
 
 - [macOS](microsoft-defender-endpoint-mac.md)
@@ -97,14 +98,14 @@ Devices on your network must be running one of these editions. New features or c
 
 > [!NOTE]
 > You'll need to confirm the Linux distributions and versions of Android, iOS, and macOS are compatible with Defender for Endpoint.
-> - While Windows 10 IoT Enterprise is a supported OS in Microsoft Defender for Endpoint and enables OEMs/ODMs to distribute it as part of their product or solution, customers should follow the OEM/ODM's guidance around host-based installed software and supportability.
->   - Requires the use of the [Log Analytics](/azure/azure-monitor/agents/log-analytics-agent)/Microsoft Monitoring Agent (MMA).
+> - While Windows 10 IoT Enterprise is a supported OS in Microsoft Defender for Endpoint and enables OEMs/ODMs to distribute it as part of their product or solution, customers should follow the OEM/ODM's guidance around host-based installed software and supportability. And, it requires the use of the [Log Analytics](/azure/azure-monitor/agents/log-analytics-agent)/Microsoft Monitoring Agent (MMA).
 > - Endpoints running mobile versions of Windows (such as Windows CE and Windows 10 Mobile) aren't supported.
 > - Virtual Machines running Windows 10 Enterprise 2016 LTSB may encounter performance issues if run on non-Microsoft virtualization platforms.
 > - For virtual environments, we recommend using Windows 10 Enterprise LTSC 2019 or later.
 > - The standalone versions of [Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md) do not include server licenses. To onboard servers to those plans, you'll need an additional license, such as Microsoft Defender for Servers Plan 1 or Plan 2 (as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) offering). To learn more. see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md).
 
 ### Hardware requirements
+
 The minimum hardware requirements for Defender for Endpoint on Windows devices are the same as the requirements for the operating system itself (that is, they are not in addition to the requirements for the operating system).
 
 > Cores: 2 minimum, 4 preferred
@@ -133,18 +134,18 @@ For more information on additional proxy configuration settings, see [Configure 
 
 ## Microsoft Defender Antivirus configuration requirement
 
-The Defender for Endpoint agent depends on the ability of Microsoft Defender Antivirus to scan files and provide information about them.
+The Defender for Endpoint agent depends on Microsoft Defender Antivirus to scan files and provide information about them.
 
-Configure Security intelligence updates on the Defender for Endpoint devices whether Microsoft Defender Antivirus is the active antimalware or not. For more information, see [Manage Microsoft Defender Antivirus updates and apply baselines](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus).
+Configure Security intelligence updates on the Defender for Endpoint devices whether Microsoft Defender Antivirus is the active antimalware solution or not. For more information, see [Manage Microsoft Defender Antivirus updates and apply baselines](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus).
 
 When Microsoft Defender Antivirus isn't the active antimalware in your organization and you use the Defender for Endpoint service, Microsoft Defender Antivirus goes into passive mode.
 
-If your organization has turned off Microsoft Defender Antivirus through group policy or other methods, devices that are onboarded must be excluded from this group policy.
+If your organization has turned off Microsoft Defender Antivirus through Group Policy or other methods, devices that are onboarded must be excluded from the Group Policy.
 
-If you're onboarding servers and Microsoft Defender Antivirus isn't the active antimalware on your servers, Microsoft Defender Antivirus will either need to be configured to go on passive mode or uninstalled. The configuration is dependent on the server version. For more information, see [Microsoft Defender Antivirus compatibility](microsoft-defender-antivirus-compatibility.md).
+If you're onboarding servers and Microsoft Defender Antivirus isn't the active antimalware on your servers, Microsoft Defender Antivirus must be configured to run in passive mode or be uninstalled. The configuration is dependent on the server version. For more information, see [Microsoft Defender Antivirus compatibility](microsoft-defender-antivirus-compatibility.md).
 
 > [!NOTE]
-> Your regular group policy doesn't apply to Tamper Protection, and changes to Microsoft Defender Antivirus settings will be ignored when Tamper Protection is on.
+> Your regular Group Policy doesn't apply to Tamper Protection, and changes to Microsoft Defender Antivirus settings will be ignored when Tamper Protection is on. See [What happens when tamper protection is turned on](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on)?
 
 ## Microsoft Defender Antivirus Early Launch Antimalware (ELAM) driver is enabled
 
