@@ -259,7 +259,7 @@ When you're ready to set the default onboarding package to streamlined, you can 
 
 :::image type="content" source="images/advanced-setting-streamlined-connectivity.png" alt-text="Screenshot of advanced settings page with streamlined connectivity option":::
 
-This setting sets the default onboarding package to 'streamlined' for applicable operating systems.  You still have the option to use the standard onboarding package within the onboarding page but you will need to specifically select it in the drop-down.  
+This setting sets the default onboarding package to 'streamlined' for applicable operating systems.  You still have the option to use the standard onboarding package within the onboarding page but you must specifically select it in the drop-down.  
 
 
 
