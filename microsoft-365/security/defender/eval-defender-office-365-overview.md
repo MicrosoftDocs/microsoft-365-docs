@@ -11,7 +11,7 @@ ms.pagetype: security
 f1.keywords:
   - NOCSH
 ms.author: dansimp
-author: lovina-saldanha
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro

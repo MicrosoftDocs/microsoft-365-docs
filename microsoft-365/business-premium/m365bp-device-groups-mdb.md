@@ -84,7 +84,7 @@ Create device categories in Intune from which users must choose when they enroll
 
 4. When you're done, select **Create**. You can see the new category in the list.
 
-Use the device category name when you create the Azure Active Directory (Azure AD) security groups. When users enroll their devices, they are presented with a list of the categories you configured in Intune. After they choose a category and finish enrollment, their device is added to the Active Directory security group that is associated with it.
+Use the device category name when you create the Azure Active Directory (Azure AD) security groups. When users enroll their devices, they're presented with a list of the categories you configured in Intune. After they choose a category and finish enrollment, their device is added to the Active Directory security group that is associated with it.
 
 ## Create dynamic device groups in Azure Active Directory
 

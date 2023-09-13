@@ -71,7 +71,7 @@ The rest of this article how to configure preset security policies.
      - **Groups**:
        - Members of the specified distribution groups or mail-enabled security groups (dynamic distribution groups aren't supported).
        - The specified Microsoft 365 Groups.
-     - **Domains**: All recipients in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
+     - **Domains**: All recipients in the organization with a primary email address in the specified [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
    Click in the appropriate box, start typing a value, and select the value that you want from the results. Repeat this process as many times as necessary. To remove an existing value, select :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: next to the value.
 
@@ -220,7 +220,7 @@ In PowerShell, preset security policies consist of the following elements:
      - **[Get-MalwareFilterPolicy](/powershell/module/exchange/get-malwarefilterpolicy)**
   - <u>Defender for Office 365 policies</u>:
      - **[Get-SafeAttachmentPolicy](/powershell/module/exchange/get-safeattachmentpolicy)**
-     - **[Get-SafeLinksPolicy](/powershell/module/exchange/get-safesafelinkspolicy)**
+     - **[Get-SafeLinksPolicy](/powershell/module/exchange/get-safelinkspolicy)**
 
   > [!WARNING]
   > Do not attempt to create, modify, or remove the individual security policies that are associated with preset security policies. The only supported method for creating the individual security policies for Standard or Strict preset security policies is to turn on the preset security policy in the Microsoft 365 Defender portal for the first time.
