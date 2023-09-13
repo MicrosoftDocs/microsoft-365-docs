@@ -48,7 +48,7 @@ Prior to the availability of the simplified method of device connectivity, speci
 >The simplified connectivity method will **not change how Microsoft Defender for Endpoint functions on a device nor will it change the end-user experience**. Only the URLs or IPs that a device uses to connect to the service will change. 
 
 >[!IMPORTANT]
->Preview limitiations and known issues: <br>
+>Preview limitiations and known issues: <br/>
 >- Streamlined connectivity does not support onboarding through Microsoft Defender for Cloud or Intune's API method.
 >- This onboarding method has specific prerequisites that do not apply to the standard onboarding method.
 
@@ -66,7 +66,7 @@ For the full list of required URLs, see [Enable access to the Defender for Endpo
 
 
 >[!IMPORTANT]
->The following Defender for Endpoint URLs consolidated under the simplified domain should no longer be required for connectivity if **\*.endpoint.security.microsoft.com** is allowed and devices are onboarded using the streamlined onboarding package. For more information, see the preceeding section. <br>
+>The following Defender for Endpoint URLs consolidated under the simplified domain should no longer be required for connectivity if **\*.endpoint.security.microsoft.com** is allowed and devices are onboarded using the streamlined onboarding package. For more information, see the preceeding section. <br/>
 >You will need to maintain connectivity with other required services not consolidated that are relevant to your organization (for example, CRL, SmartScreen/Network Protection, and WNS). For more information on the detailed list of URLs, [Download the spreadsheet here](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx).
 
 >[!NOTE]
@@ -86,12 +86,12 @@ For the full list of required URLs, see [Enable access to the Defender for Endpo
 
 | Category   | Service URLs  |
 |------------|---------------|
-| MAPS: cloud-delivered protection   | `*.wdcp.microsoft.com <br>*.wd.microsoft.com`  |
-| Cloud protection &  <br>security intelligence updates for macOS and Linux  | `unitedstates.x.cp.wd.microsoft.com` <br>`europe.x.cp.wd.microsoft.com` <br>`unitedkingdom.x.cp.wd.microsoft.com`<br> `x.cp.wd.microsoft.com`  <br>`https://www.microsoft.com/security/encyclopedia/adlpackages.aspx ` |
-| Malware Sample Submission Storage                      |ussus1eastprod.blob.core.windows.net <br>ussus2eastprod.blob.core.windows.net <br>ussus3eastprod.blob.core.windows.net <br>ussus4eastprod.blob.core.windows.net <br>wsus1eastprod.blob.core.windows.net <br>wsus2eastprod.blob.core.windows.net <br>ussus1westprod.blob.core.windows.net <br>ussus2westprod.blob.core.windows.net <br>ussus3westprod.blob.core.windows.net <br>ussus4westprod.blob.core.windows.net <br>wsus1westprod.blob.core.windows.net <br>wsus2westprod.blob.core.windows.net <br>usseu1northprod.blob.core.windows.net <br>wseu1northprod.blob.core.windows.net <br>usseu1westprod.blob.core.windows.net <br>wseu1westprod.blob.core.windows.net <br>ussuk1southprod.blob.core.windows.net <br>wsuk1southprod.blob.core.windows.net <br>ussuk1westprod.blob.core.windows.net <br>wsuk1westprod.blob.core.windows.net  |
-| Defender for Endpoint AutoIR Sample Storage                              | automatedirstrprdcus.blob.core.windows.net <br>automatedirstrprdeus.blob.core.windows.net <br>automatedirstrprdcus3.blob.core.windows.net <br>automatedirstrprdeus3.blob.core.windows.net <br>automatedirstrprdneu.blob.core.windows.net <br>automatedirstrprdweu.blob.core.windows.net <br>automatedirstrprdneu3.blob.core.windows.net <br>automatedirstrprdweu3.blob.core.windows.net <br>automatedirstrprduks.blob.core.windows.net <br>automatedirstrprdukw.blob.core.windows.net                                                                                                                                                                                                                                                                                                                                                        |
-| Defender for Endpoint Command and Control                                |winatp-gw-cus.microsoft.com <br>winatp-gw-eus.microsoft.com <br>winatp-gw-cus3.microsoft.com <br>winatp-gw-eus3.microsoft.com <br>winatp-gw-neu.microsoft.com <br>winatp-gw-weu.microsoft.com <br>winatp-gw-neu3.microsoft.com <br>winatp-gw-weu3.microsoft.com <br>winatp-gw-uks.microsoft.com <br>winatp-gw-ukw.microsoft.com |
-|EDR Cyberdata | events.data.microsoft.com  <br>us-v20.events.data.microsoft.com <br>eu-v20.events.data.microsoft.com  <br>uk-v20.events.data.microsoft.com  <br>
+| MAPS: cloud-delivered protection   | `*.wdcp.microsoft.com` <br/>`*.wd.microsoft.com`  |
+| Cloud protection &  <br/>security intelligence updates for macOS and Linux  | `unitedstates.x.cp.wd.microsoft.com` <br/>`europe.x.cp.wd.microsoft.com` <br/>`unitedkingdom.x.cp.wd.microsoft.com`<br/> `x.cp.wd.microsoft.com`  <br/>`https://www.microsoft.com/security/encyclopedia/adlpackages.aspx ` |
+| Malware Sample Submission Storage                      |ussus1eastprod.blob.core.windows.net <br/>ussus2eastprod.blob.core.windows.net <br/>ussus3eastprod.blob.core.windows.net <br/>ussus4eastprod.blob.core.windows.net <br/>wsus1eastprod.blob.core.windows.net <br/>wsus2eastprod.blob.core.windows.net <br/>ussus1westprod.blob.core.windows.net <br/>ussus2westprod.blob.core.windows.net <br/>ussus3westprod.blob.core.windows.net <br/>ussus4westprod.blob.core.windows.net <br/>wsus1westprod.blob.core.windows.net <br/>wsus2westprod.blob.core.windows.net <br/>usseu1northprod.blob.core.windows.net <br/>wseu1northprod.blob.core.windows.net <br/>usseu1westprod.blob.core.windows.net <br/>wseu1westprod.blob.core.windows.net <br/>ussuk1southprod.blob.core.windows.net <br/>wsuk1southprod.blob.core.windows.net <br/>ussuk1westprod.blob.core.windows.net <br/>wsuk1westprod.blob.core.windows.net  |
+| Defender for Endpoint AutoIR Sample Storage                              | automatedirstrprdcus.blob.core.windows.net <br/>automatedirstrprdeus.blob.core.windows.net <br/>automatedirstrprdcus3.blob.core.windows.net <br/>automatedirstrprdeus3.blob.core.windows.net <br/>automatedirstrprdneu.blob.core.windows.net <br/>automatedirstrprdweu.blob.core.windows.net <br/>automatedirstrprdneu3.blob.core.windows.net <br/>automatedirstrprdweu3.blob.core.windows.net <br/>automatedirstrprduks.blob.core.windows.net <br/>automatedirstrprdukw.blob.core.windows.net                                                                                                                                                                                                                                                                                                                                                        |
+| Defender for Endpoint Command and Control                                |winatp-gw-cus.microsoft.com <br/>winatp-gw-eus.microsoft.com <br/>winatp-gw-cus3.microsoft.com <br/>winatp-gw-eus3.microsoft.com <br/>winatp-gw-neu.microsoft.com <br/>winatp-gw-weu.microsoft.com <br/>winatp-gw-neu3.microsoft.com <br/>winatp-gw-weu3.microsoft.com <br/>winatp-gw-uks.microsoft.com <br/>winatp-gw-ukw.microsoft.com |
+|EDR Cyberdata | events.data.microsoft.com  <br/>us-v20.events.data.microsoft.com <br/>eu-v20.events.data.microsoft.com  <br/>uk-v20.events.data.microsoft.com  <br/>
 
 
 ## Before you begin 
@@ -127,7 +127,7 @@ Devices must meet specific prerequisites to use the streamlined connectivity met
 
 >[!IMPORTANT]
 >- **Devices running on MMA agent are not supported** on the streamlined onboarding method and will need to continue using legacy URL set (Windows 7, Windows 8.1, Windows Server 2008 R2 MMA, Servers not upgraded to Unified Agent (MMA)). 
->- Windows Server 2012 R2 and Server 2016 R2 will need to upgrade to unified agent to leverage the new method. <br>
+>- Windows Server 2012 R2 and Server 2016 R2 will need to upgrade to unified agent to leverage the new method. <br/>
 >- Windows 10 1607, 1703, 1709, 1803 can leverage the new onboarding option but will need to use a longer list. For more information, see [Updated URL sheet - ADD LINK TO SHEET]().
 
 | Windows   OS    |     Minimum   KB Required (March 8, 2022)    |
@@ -178,7 +178,7 @@ With streamlined connectivity, IP-based solutions can be used as an alternative 
 - Defender for Endpoint Command and Control
 
 >[!IMPORTANT]
->The EDR Cyber data service must be configured separately if you are using the IP method (this service is only consolidated on a URL level). Similarly to Option 1, you must maintain connectivity with other required services including SmartScreen, CRL, Windows Update, and other services.<br>
+>The EDR Cyber data service must be configured separately if you are using the IP method (this service is only consolidated on a URL level). Similarly to Option 1, you must maintain connectivity with other required services including SmartScreen, CRL, Windows Update, and other services.<br/>
 >It is recommended to refer to the following Azure service tags for Microsoft Defender for Endpoint services. The latest IP ranges will always be found in the service tag.  
 >For more information, see [Download Azure IP Ranges and Service Tags – Public Cloud from Official Microsoft Download Center](https://www.microsoft.com/download/details.aspx?WT.mc_id=DP-MVP-5004154&id=56519), [Azure IP ranges](https://azureipranges.azurewebsites.net/).
 
@@ -188,7 +188,7 @@ With streamlined connectivity, IP-based solutions can be used as an alternative 
 | Service tag name    |    Defender for Endpoint services included   |
 :---|:---
 MicrosoftDefenderForEndpoint | MAPS, Malware Sample Submission Storage, AutoIR Sample Storage,  Command and Control.
-OneDsCollector | EDR Cyberdata <br><br> Note: The traffic under this service tag is not limited to Defender for Endpoint and includes diagnostic data traffic for other Microsoft services. 
+OneDsCollector | EDR Cyberdata <br/><br/> Note: The traffic under this service tag is not limited to Defender for Endpoint and includes diagnostic data traffic for other Microsoft services. 
 
 
 The following table lists the current static IP ranges. For latest list, refer to the Azure service tags.
@@ -196,9 +196,9 @@ The following table lists the current static IP ranges. For latest list, refer t
 
 | **Geo**  | **IP Ranges**   |
 |-----------------------|------------------------------|
-| US    |20.15.141.0/24  <br> 20.242.181.0/24 <br>20.10.127.0/24<br>13.83.125.0/24        |
-| EU       |4.208.13.0/24  <br>20.8.195.0/24       |
-|UK      | 20.26.63.224/28  <br>20.254.173.48/28     |
+| US    |20.15.141.0/24  <br/> 20.242.181.0/24 <br/>20.10.127.0/24<br/>13.83.125.0/24        |
+| EU       |4.208.13.0/24  <br/>20.8.195.0/24       |
+|UK      | 20.26.63.224/28  <br/>20.254.173.48/28     |
 
 
 >[!IMPORTANT]
