@@ -106,7 +106,7 @@ The following operating systems require the use of the [Log Analytics](/azure/az
 
 ### Hardware requirements
 
-The minimum hardware requirements for Defender for Endpoint on Windows devices are the same as the requirements for the operating system itself (that is, they are not in addition to the requirements for the operating system).
+The minimum hardware requirements for Defender for Endpoint on Windows devices are the same as the requirements for the operating system itself (that is, they aren't in addition to the requirements for the operating system).
 
 > Cores: 2 minimum, 4 preferred
 > Memory: 1 GB minimum, 4 preferred
@@ -130,7 +130,7 @@ Alternatively, if you must use an IPv6-only configuration, consider adding dynam
 
 Internet connectivity on devices is required either directly or through proxy.
 
-For more information on additional proxy configuration settings, see [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md).
+For more information on other proxy configuration settings, see [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md).
 
 ## Microsoft Defender Antivirus configuration requirement
 
@@ -142,7 +142,7 @@ When Microsoft Defender Antivirus isn't the active antimalware in your organizat
 
 If your organization has turned off Microsoft Defender Antivirus through Group Policy or other methods, devices that are onboarded must be excluded from the Group Policy.
 
-If you're onboarding servers and Microsoft Defender Antivirus isn't the active antimalware on your servers, Microsoft Defender Antivirus must be configured to run in passive mode or be uninstalled. The configuration is dependent on the server version. For more information, see [Microsoft Defender Antivirus compatibility](microsoft-defender-antivirus-compatibility.md).
+If you're onboarding servers and Microsoft Defender Antivirus isn't the active antimalware on your servers, configure Microsoft Defender Antivirus to run in passive mode or uninstall it. The configuration is dependent on the server version. For more information, see [Microsoft Defender Antivirus compatibility](microsoft-defender-antivirus-compatibility.md).
 
 > [!NOTE]
 > Your regular Group Policy doesn't apply to Tamper Protection, and changes to Microsoft Defender Antivirus settings will be ignored when Tamper Protection is on. See [What happens when tamper protection is turned on](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on)?
@@ -157,4 +157,5 @@ If you're running a third-party antimalware client and use Mobile Device Managem
 
 - [Set up Microsoft Defender for Endpoint deployment](production-deployment.md)
 - [Onboard devices](onboard-configure.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
