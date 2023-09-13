@@ -1,5 +1,5 @@
 ---
-ms.date: 06/19/2023
+ms.date: 08/21/2023
 title: "Manage Loop workspaces in Syntex repository services"
 ms.reviewer: dancost, tonchan
 ms.author: v-smandalika
@@ -71,7 +71,7 @@ The Loop app checks the following Cloud Policy setting to see if workspaces are 
 - **Create and view Loop workspaces in Loop**
   
   > [!NOTE]
-  > This policy was previously mistitled **Create and view Loop files in Loop**.
+  > This policy has previously been titled **Create and view Loop files in Loop**.
 
   > [!TIP]
   > If you're new to Cloud Policy and are looking to enable the Loop app for your organization during the public preview, you may appreciate a step-by-step document that describes how to roll out Cloud Policy settings to your tenant. Check out this Tech Community blog: [Learn how to enable the Microsoft Loop app, now in Public Preview](https://techcommunity.microsoft.com/t5/microsoft-365-blog/learn-how-to-enable-the-microsoft-loop-app-now-in-public-preview/ba-p/3769013).
@@ -96,10 +96,6 @@ To configure these Cloud Policy settings, perform the following steps:
 In case you create a new policy configuration or change the configuration for an existing policy, there will be a delay in the change being reflected as described below:
 - If there were existing policy configurations prior to the change, then it will take 90 mins for the change to be reflected.
 - If there were no policy configurations prior to the change, then it will take 24 hours for the change to be reflected.
-
-## eDiscovery for Loop workspaces and content created in Loop workspaces
-
-Loop workspaces and the content created in Loop workspaces don't yet support eDiscovery workflows.
 
 ## Related topics
 

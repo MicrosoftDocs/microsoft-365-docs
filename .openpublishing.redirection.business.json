@@ -472,7 +472,7 @@
      },
      {
         "source_path":"microsoft-365/business-video/moveto-microsoft-365/index.md",
-        "redirect_url":"move-from-google-workspace-overview",
+        "redirect_url":"/microsoft-365/admin/moveto-microsoft-365/move-from-google-workspace-overview",
         "redirect_document_id":true
      },
      {

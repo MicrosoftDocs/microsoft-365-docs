@@ -32,6 +32,55 @@ This article is updated frequently to let you know what's new in the latest rele
 - [What's new in Defender for Endpoint on macOS](mac-whatsnew.md)
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 
+<details>
+	<summary> August-2023 (Build: 101.23072.0021 | Release version: 30.123072.0021.0)</summary>
+
+## August-2023 Build: 101.23072.0021 | Release version: 30.123072.0021.0
+
+&ensp;Released: **August 8,2023**<br/>
+&ensp;Published: **August 8,2023**<br/>
+&ensp;Build: **101.23072.0021**<br/>
+&ensp;Release version: **30.123072.0021.0**<br/>
+&ensp;Engine version: **1.1.20100.7**<br/>
+&ensp;Signature version: **1.385.1648.0**<br/>
+
+**What's new**
+
+- There are multiple fixes and new changes in this release
+	- In mde_installer.sh v0.6.3, during cleanup user has to provide channel info for the configured repository, user can do it using --channel argument. For e.x: `sudo ./mde_installer --clean --channel prod`
+	- Added support for sensor-level process exclusions for eBPF.
+  	- Added support for process based exclusions for fanotify.
+  	- The Network Extension can now be reset by administrators using `mdatp network-protection reset`.
+- Other fixes and improvements
+    - Improved performance of Network Protection in audit mode.
+
+- Bug Fixes
+- Other performance improvements
+
+**Known issues**
+
+- While upgrading from mdatp version 101.75.43 or 101.78.13, you may encounter a kernel hang. Run the following commands before attempting to upgrade to version 101.98.05. More information about the underlying issue can be found at [System hang due to blocked tasks in fanotify code](https://access.redhat.com/solutions/2838901).
+
+There are two ways to mitigate this upgrade issue:
+
+1. Use your package manager to uninstall the 101.75.43 or 101.78.13 mdatp version.
+
+Example:
+```bash
+sudo apt purge mdatp
+sudo apt-get install mdatp
+```
+
+2. As an alternative you can follow the instructions to [uninstall](/microsoft-365/security/defender-endpoint/linux-resources#uninstall), then [install](/microsoft-365/security/defender-endpoint/linux-install-manually#application-installation) the latest version of the package.
+
+If you don't want to uninstall mdatp you can disable rtp and mdatp in sequence before upgrading.
+Some customers (<1%) experience issues with this method.
+
+ ```bash
+sudo mdatp config real-time-protection --value=disabled
+sudo systemctl disable mdatp
+```
+</details>
 
 <details>
 	<summary> July-2023 (Build: 101.23062.0010 | Release version: 30.123062.0010.0)</summary>
@@ -752,7 +801,7 @@ As an alternative to the above, you can follow the instructions to [uninstall](/
 
 </details>
 
-<details><summary> 2021 releases</summary><blockquote>
+<details><summary> 2021 releases</summary>
   <details><summary>(Build: 101.52.57 | Release version: 30.121092.15257.0)</summary>
 
   <p><b>
@@ -907,5 +956,5 @@ As an alternative to the above, you can follow the instructions to [uninstall](/
 
    </details>
 
-</blockquote></details>
+</details>
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

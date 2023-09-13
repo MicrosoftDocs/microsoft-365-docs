@@ -45,8 +45,6 @@ You create and assign quarantine policies in the Microsoft 365 Defender portal o
 
 ## What do you need to know before you begin?
 
-- Quarantine isn't available in Microsoft 365 operated by 21Vianet.
-
 - You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Quarantine policies** page, use <https://security.microsoft.com/quarantinePolicies>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
@@ -631,7 +629,7 @@ By default, the default alert policy named **User requested to release a quarant
 
 Admins can customize the email notification recipients or create a custom alert policy for more options.
 
-For more information about alert policies, see [Alert policies in Microsoft 365](../../compliance/alert-policies.md).
+For more information about alert policies, see [Alert policies in Microsoft 365](/purview/alert-policies).
 
 ## Appendix
 

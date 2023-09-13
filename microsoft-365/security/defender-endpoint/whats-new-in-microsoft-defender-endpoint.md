@@ -11,7 +11,7 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 07/19/2023
+ms.date: 08/08/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -58,87 +58,15 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 
 - [What's new in Defender for Endpoint on Windows](windows-whatsnew.md)
 - [What's new in Defender for Endpoint on macOS](mac-whatsnew.md)
-- [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 - [What's new in Defender for Endpoint on Linux](linux-whatsnew.md)
+- [What's new in Defender for Endpoint on Android](android-whatsnew.md)
+- [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
+
+
 
 ## August 2023
 
--   **Data completeness**
-
-    -   Extended file attributes and registry monitoring capabilities to enhance investigation and detection experience. 
-    
-    -   Conditional Access - Expanding integration between Microsoft Defender for Endpoint and Intune to support additional Azure Active Directory (AAD) joined scenarios to deploy conditional access policies in your environment and enable Zero Trust policies to better protect your network against adversaries. 
-
-    -   Engine bugfixes and improvements. 
-
-
-
--   **Platform**
-
-    -   Enabled safer deployment of features through rings and containment mechanism enhancements. 
-
-    -   Consolidate the billing and alert experiences of customers that are onboarded to both Microsoft Defender for Endpoint and Microsoft Defender for Cloud in cloud environments by collecting machine identifiers that allow de-duplication on cloud side. 
-
-
-
--   **Hardening**
-
-    -   General hardening improvements. 
-
-
--   **Response** 
-
-    -   Device Isolation improvements. For more information, see [Take response actions on a device](respond-machine-alerts.md) 
-
-        -   Strengthen the resilience of device isolation permit and block rules.  
-
-        -   Allow a device that is disconnected from a Command and Control channel using offline signed command to be removed from isolation.  
-
-    -   Improved performance for [Live Response](live-response.md) commands when executed concurrently with automatic investigation.  
-
-    -   Send command status events for isolate and IR commands through Command and Control channel to improve performance, support future design changes, and easier monitoring. 
-
-    -   Custom Exclusion for Isolation - exclusion of apps, allow list of IP addresses and ports, and users.
-
-    -   Isolation hardening is a measure taken against a technique known as process hollowing. Implementing this hardening approach, a system can establish stronger isolation rules that significantly enhance security when dealing with code injection tactics.  
-    
-
-    -   Reduce device disconnections for isolated device caused by third-party inspection drivers. For more information, see [Take response actions on a device](respond-machine-alerts.md).
-
-
-
--   **Vulnerability management** 
-    
-    -   Replaces some of the current threat vulnerability collections and adds new much requested user installed packages collector. 
-
-    -   New and higher-performing (both CPU and memory) vulnerabilities collector. 
-
-    -   Changes on devices will be reflected in a timelier manner to the portal, enabling them to take action against threats faster. 
-
-    -   Bugfix in Vulnerability Management client management component - race condition. 
-
-
-
--   **Threat Prevention/Protection** 
-
-    -   Lateral Movement Firewall - Addressing advanced attacks inflicting customers (Human Operated Ransomware) by expanding identity-oriented response capabilities known to be gaps in our current protection story.
-
-    -   Supporting force close active SMB sessions for incriminated users as part of Lateral Movement Firewall to disrupt and terminate active malicious sessions. 
-
-
-    -   Device Contain - Introducing new Windows Filtering Platform (WFP) network filter to allow telemetry & audit-mode capabilities to network connections enforcements. For more information, see - [Take response actions on a device in Microsoft Defender for Endpoint](respond-machine-alerts.md#contain-devices-from-the-network).
-
-
-    -   Anti-tampering - Addressing tampering gaps in Defender for Endpoint authentication flow by hardening protection of the cryptographic key used to register clients with Defender for Endpoint's authentication service. This is done by storing the key in an AV-protected registry key. 
-
-
-
--   **MITRE**
-
-    -   Introducing a new sensor for MITRE. 
-    -   Alternative data streams support. 
-    -   Extended Registry monitoring capabilities. 
-
+- (GA) The [Monthly security summary report](monthly-security-summary-report.md) is now generally available. The report helps organizations get a visual summary of key findings and overall preventative actions taken to enhance the organization's overall security posture completed in the last month.  
 
 
 ## July 2023
@@ -188,20 +116,6 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 ## November 2022
 
 - [Built-in protection](built-in-protection.md) is now generally available. Built-in protection helps protect your organization from ransomware and other threats with default settings that help ensure your devices are protected. 
-
-- Zeek is now generally available as a component of Microsoft Defender for Endpoint.
-
-   Microsoft has partnered with [Corelight](https://corelight.com/company/zeek-now-component-of-microsoft-windows), a leader in open source Network Detection and Response (NDR), to provide a new open-source integration with [Zeek](https://corelight.com/about-zeek/how-zeek-works) for Defender for Endpoint. With this integration, organizations can super-charge their investigation efforts with rich network signals and reduce the time it takes to detect network-based threats by having unprecedented visibility into network traffic from the endpoints' perspective.
-
-   The new Zeek integration is available in the latest version of the Defender for Endpoint agent via the following knowledge base articles:
-   - [KB5016691](https://support.microsoft.com/topic/august-25-2022-kb5016691-os-build-22000-918-preview-59097044-915a-49a0-8870-49823236adbd)
-   - [KB5016693](https://support.microsoft.com/topic/august-16-2022-kb5016693-os-build-20348-946-preview-ee90d0bc-c162-4124-b7c6-f963ee7b17ed)
-   - [KB5016688](https://support.microsoft.com/topic/august-26-2022-kb5016688-os-builds-19042-1949-19043-1949-and-19044-1949-preview-ec31ebdc-067d-44dd-beb0-eabcc984d843)
-   - [KB5016690](https://support.microsoft.com/topic/august-23-2022-kb5016690-os-build-17763-3346-preview-b81d1ac5-75c7-42c1-b638-f13aa4242f42)
-
-   > [!NOTE]
-   > This integration doesn't currently support the use of custom scripts to gain visibility into extra signals.
-
 
 ## October 2022
 

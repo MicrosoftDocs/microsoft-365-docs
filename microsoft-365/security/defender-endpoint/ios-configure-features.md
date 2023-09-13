@@ -138,7 +138,7 @@ Follow the below steps for setting up MAM config for unenrolled devices for Netw
 
     |Key| Default (true - enable, false - disable)|Description|
     |---|---|---|
-    |`DefenderOpenNetworkDetection`|0|1 - enable, 0 - disable, 2 - Enable. This setting is managed by an IT Admin to enable, audit, or disable open network detection. In Audit mode, alerts will be sent only to the ATP portal with no user side experience. For user experience, set the config to "Enable" mode.|
+    |`DefenderOpenNetworkDetection`|0| 1 - Audit, 0 - Disable (default), 2 - Enable. This setting is managed by an IT admin to enable, audit, or disable open network detection. In Audit mode, alerts will be sent only to the ATP portal with no user side experience. For user experience, set the config to "Enable" mode.|
     |`DefenderEndUserTrustFlowEnable`| false | true - enable, false - disable; This setting is used by IT admins to enable or disable the end user in-app experience to trust and untrust the unsecure and suspicious networks.|
     |`DefenderNetworkProtectionAutoRemediation`| true |true - enable, false - disable; This setting is used by the IT admin to enable or disable the remediation alerts that are sent when a user performs remediation activities like switching to safer WIFI access points or deleting suspicious certificates detected by Defender.|
     |`DefenderNetworkProtectionPrivacy`| true |true - enable, false - disable; This setting is managed by IT admin to enable or disable privacy in network protection.|
@@ -371,6 +371,9 @@ This configuration is available for both the enrolled (MDM) devices as well as u
 1. Admin needs to make **DisableSignOut = true** to disable the sign-out button in the app. Users will not see the sign out button once the policy is pushed.
 1. Click Next and assign this policy to targeted devices/users.
 
+>[!Important]
+>This feature is in Public Preview. The following information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
 ## Device Tagging
 
 Defender for Endpoint on iOS enables bulk tagging the mobile devices during onboarding by allowing the admins to set up tags via Intune. Admin can configure the device tags through Intune via configuration policies and push them to user’s devices. Once the User installs and activates Defender, the client app passes the device tags to the Security Portal. The Device tags appear against the devices in the Device Inventory. 
@@ -432,4 +435,6 @@ Use the following steps to configure the option to send feedback data to Microso
 
 Phishing websites impersonate trustworthy websites for the purpose of obtaining your personal or financial information. Visit the [Provide feedback about network protection](https://www.microsoft.com/wdsi/filesubmission/exploitguard/networkprotection) page to report a website that could be a phishing site.
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+
+
 

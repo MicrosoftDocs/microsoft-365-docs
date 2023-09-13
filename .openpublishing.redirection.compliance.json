@@ -132,17 +132,17 @@
      },
      {
         "source_path":"microsoft-365/compliance/controlling-your-data-using-customer-key.md",
-        "redirect_url":"customer-key-overview",
+        "redirect_url":"/microsoft-365/compliance/customer-key-overview",
         "redirect_document_id":true
      },
     {
       "source_path": "microsoft-365/compliance/archive-jive-data.md",
-      "redirect_url": "compliance/index",
+      "redirect_url": "/microsoft-365/compliance/index",
       "redirect_document_id": false
     },
      {
         "source_path":"microsoft-365/compliance/service-encryption-with-customer-key-faq.md",
-        "redirect_url":"customer-key-overview",
+        "redirect_url":"/microsoft-365/compliance/customer-key-overview",
         "redirect_document_id":false
      },
      {
@@ -5387,32 +5387,32 @@
      },
      {
         "source_path":"microsoft-365/compliance/dlp-configure-endpoints.md",
-        "redirect_url":"microsoft-365/compliance/device-onboarding",
+        "redirect_url":"/microsoft-365/compliance/device-onboarding",
         "redirect_document_id":false
      },
      {
         "source_path":"microsoft-365/compliance/dlp-configure-endpoints-gp.md",
-        "redirect_url":"microsoft-365/compliance/device-onboarding-gp",
+        "redirect_url":"/microsoft-365/compliance/device-onboarding-gp",
         "redirect_document_id":false
      },
      {
         "source_path":"microsoft-365/compliance/dlp-configure-endpoints-mdm.md",
-        "redirect_url":"microsoft-365/compliance/device-onboarding-mdm",
+        "redirect_url":"/microsoft-365/compliance/device-onboarding-mdm",
         "redirect_document_id":false
      },
      {
         "source_path":"microsoft-365/compliance/dlp-configure-endpoints-sccm.md",
-        "redirect_url":"microsoft-365/compliance/device-onboarding-sccm",
+        "redirect_url":"/microsoft-365/compliance/device-onboarding-sccm",
         "redirect_document_id":false
      },
      {
         "source_path":"microsoft-365/compliance/dlp-configure-endpoints-script.md",
-        "redirect_url":"microsoft-365/compliance/device-onboarding-script",
+        "redirect_url":"/microsoft-365/compliance/device-onboarding-script",
         "redirect_document_id":false
      },
      {
         "source_path":"microsoft-365/compliance/dlp-configure-endpoints-vdi.md",
-        "redirect_url":"microsoft-365/compliance/device-onboarding-vdi",
+        "redirect_url":"/microsoft-365/compliance/device-onboarding-vdi",
         "redirect_document_id":false
      },
      {
@@ -5487,7 +5487,7 @@
      },
      {
         "source_path":"microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md",
-        "redirect_url":"/compliance/sit-learn-about-exact-data-match",
+        "redirect_url":"/purview/sit-learn-about-exact-data-match-based-sits",
         "redirect_document_id":false
      },
      {
@@ -6292,17 +6292,17 @@
      },
      {
         "source_path":"microsoft-365/compliance/create-a-dlp-policy-from-a-template.md",
-        "redirect_url":"microsoft-365/compliance/dlp-create-deploy-policy",
+        "redirect_url":"/purview/dlp-create-deploy-policy",
         "redirect_document_id":false
      },
      {
         "source_path":"microsoft-365/compliance/create-test-tune-dlp-policy.md",
-        "redirect_url":"microsoft-365/compliance/create-deploy-policy",
+        "redirect_url":"/purview/dlp-create-deploy-policy",
         "redirect_document_id":false
      },
      {
         "source_path":"microsoft-365/compliance/data-loss-prevention-policies.md",
-        "redirect_url":"microsoft-365/compliance/dlp-learn-about-dlp",
+        "redirect_url":"/microsoft-365/compliance/dlp-learn-about-dlp",
         "redirect_document_id":false
      },
      {
