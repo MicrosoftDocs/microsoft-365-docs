@@ -71,7 +71,7 @@ In order to view and manage the data you have access to in multi-tenant manageme
 1. Go to the [Microsoft Partner Center](https://partner.microsoft.com/commerce/granularadminaccess/list).
 2. Under **Customers** you can find the list of organizations you have guest access to.
 3. Verify all the tenants you plan to manage in multi-tenant management in Microsoft 365 Defender appear in the list.
-4. For each tenant, go to the [Microsoft 365 Defender portal)](https://security.microsoft.com/?tid=tenant_id) and sign in to validate you can successfully access the tenant.
+4. For each tenant, go to the [Microsoft 365 Defender portal](https://security.microsoft.com/?tid=tenant_id) and sign in to validate you can successfully access the tenant.
 
 - [Granular delegated admin privileges (GDAP)](/partner-center/gdap-introduction).  
 
