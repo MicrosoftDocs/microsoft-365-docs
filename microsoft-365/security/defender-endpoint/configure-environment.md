@@ -156,16 +156,19 @@ Depending on the operating system, the proxy to be used for Microsoft Defender f
 
 2. Ensure the machine is successfully reporting into the Microsoft 365 Defender portal.
 
-3. Run the TestCloudConnection.exe tool from "C:\Program Files\Microsoft Monitoring Agent\Agent" to validate the connectivity, and to get the required URLs for your specific workspace.
+3. Run the TestCloudConnection.exe tool from `C:\Program Files\Microsoft Monitoring Agent\Agent` to validate the connectivity, and to get the required URLs for your specific workspace.
 
-4. Check the Microsoft Defender for Endpoint URLs list for the complete list of requirements for your region (refer to the Service URLs [Spreadsheet](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)).
+4. Check the Microsoft Defender for Endpoint URLs list for the complete list of requirements for your region (refer to the Service URLs [Spreadsheet](https://go.microsoft.com/fwlink/?linkid=2247417)).
 
    :::image type="content" source="../../media/defender-endpoint/admin-powershell.png" alt-text="This is admin powershell.":::
 
-The wildcards (\*) used in \*.ods.opinsights.azure.com, \*.oms.opinsights.azure.com, and \*.agentsvc.azure-automation.net URL endpoints can be replaced with your specific Workspace ID. The Workspace ID is specific to your environment and workspace. It can be found in the Onboarding section of your tenant within the Microsoft 365 Defender portal.
+The wildcards (\*) used in `*.ods.opinsights.azure.com`, `*.oms.opinsights.azure.com`, and `*.agentsvc.azure-automation.net` URL endpoints can be replaced with your specific Workspace ID. The Workspace ID is specific to your environment and workspace. It can be found in the Onboarding section of your tenant within the Microsoft 365 Defender portal.
 
-The \*.blob.core.windows.net URL endpoint can be replaced with the URLs shown in the "Firewall Rule: \*.blob.core.windows.net" section of the test results.
+The `*.blob.core.windows.net` URL endpoint can be replaced with the URLs shown in the "Firewall Rule: \*.blob.core.windows.net" section of the test results.
 
 > [!NOTE]
 > In the case of onboarding via Microsoft Defender for Cloud, multiple workspaces can be used. You will need to perform the TestCloudConnection.exe procedure on the onboarded machine from each workspace (to determine, if there are any changes to the *.blob.core.windows.net URLs between the workspaces).
 
+## Next step
+
+[STEP 2:  Configure your devices to connect to the Defender for Endpoint service using a proxy](configure-proxy-internet.md)
