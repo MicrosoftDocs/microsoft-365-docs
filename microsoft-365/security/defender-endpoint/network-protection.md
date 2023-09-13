@@ -3,7 +3,7 @@ title: Use network protection to help prevent connections to bad sites
 description: Protect your network by preventing users from accessing known malicious and suspicious network addresses
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
-ms.date: 06/19/2023
+ms.date: 09/13/2023
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
