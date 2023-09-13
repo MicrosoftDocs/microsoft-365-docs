@@ -100,7 +100,7 @@ The following operating systems require the use of the [Log Analytics](/azure/az
 > - You'll need to confirm the Linux distributions and versions of Android, iOS, and macOS are compatible with Defender for Endpoint.
 > - While Windows 10 IoT Enterprise is a supported OS in Microsoft Defender for Endpoint and enables OEMs/ODMs to distribute it as part of their product or solution, customers should follow the OEM/ODM's guidance around host-based installed software and supportability. And, it requires the use of the [Log Analytics](/azure/azure-monitor/agents/log-analytics-agent)/Microsoft Monitoring Agent (MMA).
 > - Endpoints running mobile versions of Windows (such as Windows CE and Windows 10 Mobile) aren't supported.
-> - Virtual Machines running Windows 10 Enterprise 2016 LTSB may encounter performance issues if run on non-Microsoft virtualization platforms.
+> - Virtual Machines running Windows 10 Enterprise 2016 LTSB can encounter performance issues when used on non-Microsoft virtualization platforms.
 > - For virtual environments, we recommend using Windows 10 Enterprise LTSC 2019 or later.
 > - The standalone versions of [Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md) do not include server licenses. To onboard servers to those plans, you'll need an additional license, such as Microsoft Defender for Servers Plan 1 or Plan 2 (as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) offering). To learn more. see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md).
 
@@ -108,8 +108,8 @@ The following operating systems require the use of the [Log Analytics](/azure/az
 
 The minimum hardware requirements for Defender for Endpoint on Windows devices are the same as the requirements for the operating system itself (that is, they aren't in addition to the requirements for the operating system).
 
-> Cores: 2 minimum, 4 preferred
-> Memory: 1 GB minimum, 4 preferred
+- Cores: 2 minimum, 4 preferred
+- Memory: 1 GB minimum, 4 preferred
 
 ### Network and data storage and configuration requirements
 
