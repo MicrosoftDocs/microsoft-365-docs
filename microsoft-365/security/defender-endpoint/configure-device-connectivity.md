@@ -76,13 +76,12 @@ For the full list of required URLs, see [Enable access to the Defender for Endpo
 #### Consolidated endpoints (Windows, macOS, and Linux)
 
 
->[!NOTE]
->This list may evolve and new URLs may be added as more services get consolidated under the new domain.
+> [!NOTE]
+> This list may evolve and new URLs may be added as more services get consolidated under the new domain.
 
 
-
->[!IMPORTANT]
->If you are configuring using IP ranges, you will need to separately configure the EDR cyberdata service. This service is not consolidated on an IP level. See section below for more details.
+> [!IMPORTANT]
+> If you are configuring using IP ranges, you will need to separately configure the EDR cyberdata service. This service is not consolidated on an IP level. See section below for more details.
 
 | Category   | Service URLs  |
 |------------|---------------|
