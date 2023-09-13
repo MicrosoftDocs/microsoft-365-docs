@@ -19,8 +19,6 @@ search.appverid: met150
 
 # Additional definition sets for network traffic inspection are no longer supported
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 Prior versions of Microsoft 365 Defender enabled administrators to specify additional definition sets for network traffic inspection. 
 
 This feature is no longer available.
@@ -32,4 +30,5 @@ This feature is no longer available.
 - [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
 - [Enable cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md)
 - [How to create and deploy anti-malware policies: Cloud-protection service](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
