@@ -14,7 +14,7 @@
       href: add-storage-space.md
 - name: Manage subscriptions
   items: 
-    - name: Upgrade subscriptions
+    - name: Upgrade your subscription
       href: subscriptions/upgrade-to-different-plan.md
     - name: Renew your subscription
       href: subscriptions/renew-your-subscription.md
@@ -60,10 +60,12 @@
       href: licenses/online-service-activation-faq.yml
 - name: Bills and payments
   items: 
-    - name: View your bill or invoice
+    - name: View your invoice
       href: billing-and-payments/view-your-bill-or-invoice.md
-    - name: Understand your bill or invoice
+    - name: Understand your invoice (MOSA)
       href: billing-and-payments/understand-your-invoice2.md
+    - name: Understand your invoice (MCA)
+      href: billing-and-payments/understand-your-invoice.md
     - name: Pay for your subscription
       href: billing-and-payments/pay-for-your-subscription.md
     - name: Manage payment methods

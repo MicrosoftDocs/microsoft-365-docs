@@ -1,5 +1,5 @@
 ---
-title: Overview of image tagging in Microsoft Syntex
+title: Overview of enhanced image tagging in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,11 +13,10 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
-description: Learn about image tagging in Microsoft Syntex.
+description: Learn about enhanced image tagging in Microsoft Syntex.
 ---
 
-# Overview of image tagging in Microsoft Syntex
+# Overview of enhanced image tagging in Microsoft Syntex
 
 Microsoft Syntex makes it easier to find and manage images in SharePoint document libraries. It does this process by automatically tagging images with descriptive keywords using AI. These keywords are stored in a managed metadata column (the **Image Tags** column), which makes it easier to search, sort, filter, and manage the images.
 

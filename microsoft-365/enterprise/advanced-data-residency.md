@@ -40,7 +40,7 @@ The following workloads are included in ADR. For more information, see:
   - [Sensitivity Labels](m365-dr-workload-purview.md#information-protection---sensitivity-labels)
   - [Data Loss Prevention](m365-dr-workload-purview.md#information-protection---data-loss-prevention-dlp)
   - [Office Message Encryption](m365-dr-workload-purview.md#information-protection---office-message-encryption)
-  - [Information Barriers](m365-dr-workload-purview.md#insider-risk-management---information-barriers)
+  - [Information Barriers](m365-dr-workload-purview.md#risk-and-compliance---information-barriers)
 
 ## Licensing and Purchase
 

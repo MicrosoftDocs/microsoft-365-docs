@@ -72,7 +72,7 @@ You can configure anti-spam policies in the Microsoft 365 Defender portal or in 
    - **Groups**:
      - Members of the specified distribution groups or mail-enabled security groups (dynamic distribution groups aren't supported).
      - The specified Microsoft 365 Groups.
-   - **Domains**: All recipients in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
+   - **Domains**: All recipients in the organization with a primary email address in the specified [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
    Click in the appropriate box, start typing a value, and then select the value that you want from the results. Repeat this process as many times as necessary. To remove an existing value, select :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: next to the value.
 
@@ -154,7 +154,11 @@ You can configure anti-spam policies in the Microsoft 365 Defender portal or in 
      ⁵ Users can't release their own messages that were quarantined as high confidence phishing, regardless of how the quarantine policy is configured. If the policy allows users to release their own quarantined messages, users are instead allowed to _request_ the release of their quarantined high-confidence phishing messages.
      
   - **Intra-Organizational messages to take action on**: Controls whether spam filtering and the corresponding verdict actions are applied to internal messages (messages sent between users within the organization). The action that's configured in the policy for the specified spam filter verdicts is taken on messages sent between internal users. The available values are:
-    - **Default**: This is the default value. Currently, this value is the same as selecting **None**. The behavior for the value **Default** will eventually change to apply the action for high confidence phishing detections in the policy as if you selected **High confidence phishing messages**. Check the Message Center for announcements to changes in this setting.
+    - **Default**: This is the default value. This value is the same as selecting **High confidence phishing messages**.
+  
+      > [!NOTE]
+      > Currently, in U.S. Government organizations (Microsoft 365 GCC, GCC High, and DoD), the value **Default** is the same as selecting **None**.
+
     - **None**
     - **High confidence phishing messages**
     - **Phishing and high confidence phishing messages**

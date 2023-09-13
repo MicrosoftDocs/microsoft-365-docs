@@ -20,7 +20,7 @@ ms.collection:
   - m365-security
   - tier1
 ms.topic: conceptual
-ms.date: 02/16/2021
+ms.date: 08/31/2023
 ---
 
 # Quickly hunt for entity or event information with go hunt
@@ -73,13 +73,14 @@ and DeviceName == deviceName
 
 You can use the *go hunt* option after selecting any of these entity types:
 
-- Files
-- Emails
+- Devices
 - Email clusters
+- Emails
+- Files
+- Groups
+- IP addresses
 - Mailboxes
 - Users
-- Devices
-- IP addresses
 - URLs
 
 ## Query for event information

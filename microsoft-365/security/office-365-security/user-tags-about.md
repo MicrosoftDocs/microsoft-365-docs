@@ -175,7 +175,7 @@ After you apply system tags or custom tags to users, you can use those tags as f
 
 - [Alerts](../defender/investigate-alerts.md)
 - [Incidents](mdo-sec-ops-manage-incidents-and-alerts.md)
-- [Custom alert policies](../../compliance/alert-policies.md#view-alerts)
+- [Custom alert policies](/purview/alert-policies#view-alerts)
 - [Threat Explorer](threat-explorer-about.md)
 - [Campaign Views](campaigns.md)
 - [Email entity page](mdo-email-entity-page.md)
