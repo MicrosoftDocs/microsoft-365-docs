@@ -114,3 +114,9 @@ If you are testing connectivity on a device that has not yet been onboarded to D
 If you are testing connectivity on a device onboarded to  Defender for Endpoint using the streamlined approach, run the  Defender for Endpoint Client Analyzer as normal. The tool will use the configured onboarding parameters to test connectivity.  
 
 For more info on how to access simplified onboarding script, see [Onboarding devices using streamlined device connectivity](configure-device-connectivity.md).  
+
+## Next step
+
+[Onboard Windows Client](onboard-windows-client.md)
+[Onboard Windows Server](onboard-windows-server.md)
+[Onboard non-Windows devices](configure-endpoints-non-windows.md)
