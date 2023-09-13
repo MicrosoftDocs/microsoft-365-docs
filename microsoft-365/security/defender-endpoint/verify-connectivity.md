@@ -40,16 +40,16 @@ Check that clients are able to connect to the Defender for Endpoint service URLs
 
 For more information on the Defender for Endpoint Client Analyzer, see [Troubleshoot sensor health using Microsoft Defender for Endpoint Client Analyzer](overview-client-analyzer.md). 
 
->[!NOTE]
->You can run the Defender for Endpoint Client Analyzer on devices prior to onboarding and after onboarding. 
->- When testing on a device onboarded to Defender for Endpoint, the tool will use the onboarding parameters. <br>
->- When testing on a device not yet onboarded to Defender for Endpoint, the tool will use the defaults of US, UK, and EU.  
+> [!NOTE]
+> You can run the Defender for Endpoint Client Analyzer on devices prior to onboarding and after onboarding. 
+> - When testing on a device onboarded to Defender for Endpoint, the tool will use the onboarding parameters. <br>
+> - When testing on a device not yet onboarded to Defender for Endpoint, the tool will use the defaults of US, UK, and EU.  
 
  
 
->[!NOTE]
->(Applies to public preview)<br>
->For the simplified onboarding public preview, when testing connectivity on devices not yet onboarded to Defender for Endpoint, run mdeclientanalyzer.cmd with `-o <path to MDE onboarding package >`. The command will use parameters from onboarding script to test connectivity. Otherwise, the default pre-onboarding test will test against the standard URL set. See the following section for more details.
+> [!NOTE]
+> (Applies to public preview)<br>
+> For the streamlined onboarding public preview, when testing connectivity on devices not yet onboarded to Defender for Endpoint, run mdeclientanalyzer.cmd with `-o <path to MDE onboarding package >`. The command will use parameters from onboarding script to test connectivity. Otherwise, the default pre-onboarding test will test against the standard URL set. See the following section for more details.
 
 
 
