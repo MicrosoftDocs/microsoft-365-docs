@@ -40,7 +40,7 @@ This article describes how to migrate (reonboard) devices that are currently onb
 Streamlined connectivity supports migrating devices onboarded to Defender for Endpoint to use the simplified method. Devices must meet the same prerequisites listed in [Streamlined connectivity](configure-device-connectivity.md#prerequisites). 
 
 
-In most cases, a full device offboarding isn't necessary when reonboarding. For details on each OS, see the preceding section. You'll be able to run the updated onboarding package and reboot your device to switch connectivity over. 
+In most cases, a full device offboarding isn't necessary when reonboarding. For details on each OS, see the preceding section. You are able to run the updated onboarding package and reboot your device to switch connectivity over. 
 
 >[!IMPORTANT]
 >For migrating devices already onboarded to Defender for Endpoint: 
@@ -58,7 +58,7 @@ The following table lists the available tools based on the endpoint that you nee
 
 Migration recommendation:
 
-- **Start small** - It is recommended to start with a small set of devices first, apply to onboarding blob using any of the supported deployment tools, then monitor for connectivity. 
+- **Start small** - It's recommended to start with a small set of devices first, apply to onboarding blob using any of the supported deployment tools, then monitor for connectivity. 
 
 - **Validate and monitor** - After onboarding the small set of devices, validate that devices have successfully onboarded and are communicating with the service. 
 
@@ -67,7 +67,7 @@ Migration recommendation:
 
 Validate device prerequisites before proceeding with device migrations (link to other doc). Learn more about [Streamlined connectivity](configure-device-connectivity.md). This is a continuation of those articles with a focus on migrating devices. 
 
-To reonboard devices using the streamlined connectivity method, you'll need to use the streamlined onboarding package. For more information on how to access the package, see [Streamlined connectivity](configure-device-connectivity.md).
+To reonboard devices using the streamlined connectivity method, you need to use the streamlined onboarding package. For more information on how to access the package, see [Streamlined connectivity](configure-device-connectivity.md).
 
 Depending on the OS, migrations require a device reboot or service restart once the onboarding package is applied:
 
@@ -161,7 +161,7 @@ Device connectivity to streamlined approach won't start if you don't reboot the 
 
 1. In Microsoft Intune, navigate to **Devices > macOS** and create a new custom policy for the new onboarding method. Don't assign it yet.
 
-2. Remove the assignment of any standard policies  onboarding package to devices you'll reonboard. 
+2. Remove the assignment of any standard policies  onboarding package to devices you reonboard. 
 
 3. Add the assignment of the new onboarding policy. 
 
@@ -188,7 +188,7 @@ For more JAMF guidelines, see [Deploying Microsoft Defender for Endpoint on macO
 
 ### Linux
 
-For specific OS and device pre-requisites, see [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md). 
+For specific OS and device prerequisites, see [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md). 
 
 Requires Defender for Endpoint version 101.23052.0009+ 
 
@@ -201,7 +201,7 @@ Use the guidance in [Deploy Microsoft Defender for Endpoint on Linux manually](l
 After completing the steps, you must either reboot the device or restart the service using `sudo systemctl restart mdatp`.
 
  
-Device connectivity to streamlined approach will not start if you do not reboot the device.
+Device connectivity to streamlined approach won't start if you don't reboot the device.
 
 ### Third-party Linux deployment tools (Puppet, Ansible, Chef)
 
@@ -231,11 +231,11 @@ For macOS and Linux, you can use the following methods:
 
 ### Use Defender for Endpoint Client Analyzer (Windows) to validate connectivity after onboarding for migrated endpoints
 
-Once onboarded, run the MDE Client Analyzer to confirm your device is connecting with the to the appropriate updated URLs.
+Once onboarded, run the MDE Client Analyzer to confirm your device is connecting to the appropriate updated URLs.
 
 Download the Microsoft Defender for Endpoint Client Analyzer tool where Defender for Endpoint sensor is running.
 
-You can follow the same instructions as in [Verify client connectivity to Microsoft Defender for Endpoint service](verify-connectivity.md).  The script will automatically use the onboarding package configured on the device (should be streamlined version) to test connectivity. 
+You can follow the same instructions as in [Verify client connectivity to Microsoft Defender for Endpoint service](verify-connectivity.md).  The script automatically uses the onboarding package configured on the device (should be streamlined version) to test connectivity. 
 
 Ensure connectivity is established with the appropriate URLs. 
 
