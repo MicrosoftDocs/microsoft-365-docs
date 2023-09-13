@@ -116,7 +116,7 @@ Devices must meet specific prerequisites to use the streamlined connectivity met
 **Supported Operating Systems**
 
 -   Windows 10 version 1809 or later
-    -    Windows 10 version 1607, 1703, 1709, 1803 are supported on the streamlined onboarding package but require a different URL list (see updated URL sheet)
+    -    Windows 10 versions 1607, 1703, 1709, 1803 are supported on the streamlined onboarding package but require a different URL list (see updated URL sheet)
 -   Windows 11
 -   Windows Server 2019
 -   Windows Server 2022
@@ -153,7 +153,7 @@ The following illustration shows the streamlined connectivity process and the co
 
 Once you confirm prerequisites are met, ensure your network environment is properly configured to support the streamlined connectivity method. Follow the steps outlined in using streamlined (preview method),  [Configure your network environment to ensure connectivity with Defender for Endpoint service](configure-environment.md). 
 
-Defender for Endpoint services consolidated under the simplified method should no longer be required for connectivity. However, some URLs are not included in the consolidation. 
+Defender for Endpoint services consolidated under the simplified method should no longer be required for connectivity. However, some URLs aren't included in the consolidation. 
 
 Streamlined connectivity allows you to use the following option to configure cloud connectivity:
 
@@ -187,7 +187,7 @@ With streamlined connectivity, IP-based solutions can be used as an alternative 
 | Service tag name    |    Defender for Endpoint services included   |
 :---|:---
 MicrosoftDefenderForEndpoint | MAPS, Malware Sample Submission Storage, AutoIR Sample Storage,  Command and Control.
-OneDsCollector | EDR Cyberdata <br/><br/> Note: The traffic under this service tag is not limited to Defender for Endpoint and includes diagnostic data traffic for other Microsoft services. 
+OneDsCollector | EDR Cyberdata <br/><br/> Note: The traffic under this service tag isn't limited to Defender for Endpoint and includes diagnostic data traffic for other Microsoft services. 
 
 
 The following table lists the current static IP ranges. For latest list, refer to the Azure service tags.
@@ -205,22 +205,22 @@ The following table lists the current static IP ranges. For latest list, refer t
 
 ### Stage 2. Configure your devices to connect to Defender for Endpoint service
 
-Configure devices to communicate through your connectivity infrastructure. Ensure devices meet pre-requisites and have updated sensor and Microsoft Defender Antivirus versions.  For more information, see [Configure device proxy and Internet connection settings ](/microsoft-365/security/defender-endpoint/configure-proxy-internet).
+Configure devices to communicate through your connectivity infrastructure. Ensure devices meet prerequisites and have updated sensor and Microsoft Defender Antivirus versions.  For more information, see [Configure device proxy and Internet connection settings ](/microsoft-365/security/defender-endpoint/configure-proxy-internet).
 
-### Stage 3. Verify client connectivity pre-onboarding
+### Stage 3. Verify client connectivity preonboarding
 
 
 For more information, see [Verify client connectivity](verify-connectivity.md).
 
 To test streamlined connectivity for devices not yet onboarded to Defender for Endpoint, you can use the Client Analyzer for Windows using the following commands: 
 
-- Run `mdeclientanalyzer.cmd -o <path to cmd file>`  from within MDEClientAnalyzer folder. The command will use parameters from onboarding package to test connectivity.  
+- Run `mdeclientanalyzer.cmd -o <path to cmd file>`  from within MDEClientAnalyzer folder. The command uses parameters from onboarding package to test connectivity.  
 
 - Run `mdeclientanalyzer.cmd -g <GW_US, GW_UK, GW_EU>` , where parameter  is of GW_US, GW_EU, GW_UK. GW refers to the streamlined option. Run with applicable tenant geo. 
  
 
->[!NOTE]
->For devices not yet onboarded to Defender for Endpoint, client analyzer will test against standard set of URLs. To test the streamlined approach, you will need to run with the switches listed above. 
+> [!NOTE]
+> For devices not yet onboarded to Defender for Endpoint, client analyzer will test against standard set of URLs. To test the streamlined approach, you will need to run with the switches listed above. 
 
 For Client Analyzer on macOS/Linux: **ADD INFO HERE**
 
@@ -244,7 +244,7 @@ Select the applicable operating system and choose "Streamlined (preview)" from t
 - [Run a detection test on a device to verify it has been properly onboarded to Microsoft Defender for Endpoint](run-detection-test.md)
 
 
-You will need to exclude devices from any existing onboarding policies that use the standard onboarding package.
+Exclude devices from any existing onboarding policies that use the standard onboarding package.
 
 For migrating devices already onboarded to Defender for Endpoint, see [Migrating devices to the streamlined connectivity](migrate-devices-streamlined.md). You will need to reboot your device and follow specific guidance here.  
 
