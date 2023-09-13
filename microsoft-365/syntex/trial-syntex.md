@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: lauris; jaeccles
-ms.date: 10/26/2022
+ms.date: 09/12/2023
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -22,7 +22,7 @@ description: Learn how to plan, sign up, and run a trial pilot program for Micro
 # Run a trial of Microsoft Syntex
 
 > [!NOTE]
-> This article is currently being updated as Microsoft SYntex seat licenses and trials are no longer available. Once updated, this article will describe how to set up and run a proof of concept for Syntex using pay-as-you-go licensing.
+> This article is currently being updated because Microsoft Syntex per-user licenses and trials are no longer available. Once updated, this article will describe how to set up and run a proof of concept for Syntex using pay-as-you-go licensing.
 
 <!---
 This article describes how to set up and run a trial pilot program to deploy Microsoft Syntex in your organization. It also recommends best practices for the trial.
