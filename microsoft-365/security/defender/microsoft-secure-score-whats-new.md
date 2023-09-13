@@ -62,7 +62,7 @@ To see the following new Azure Active Directory controls the Office 365 connecto
 
 To see the following new SharePoint controls the Office 365 connector in Microsoft Defender for Cloud Apps must be turned on in the App connectors settings page.
 
-- Ensure SharePoint external sharing is managed through domain whitelist/blacklists
+- Ensure SharePoint external sharing is managed through domain allow lists / block lists
 - Block OneDrive for Business sync from unmanaged devices
 
 ### Microsoft Secure Score integration with Microsoft Lighthouse 365
