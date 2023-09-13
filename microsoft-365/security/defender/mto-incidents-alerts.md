@@ -1,6 +1,6 @@
 ---
-title: View and manage incidents and alerts in the multi-tenant view in Microsoft 365 Defender
-description: Learn about incidents and alerts in the multi-tenant view in Microsoft 365 Defender
+title: View and manage incidents and alerts in multi-tenant management in Microsoft 365 Defender
+description: Learn about incidents and alerts in multi-tenant management in Microsoft 365 Defender
 search.appverid: met150
 ms.service: microsoft-365-security
 ms.subservice: m365d
@@ -25,13 +25,13 @@ ms.date: 09/01/2023
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-The multi-tenant view in Microsoft 365 Defender enables security operation center (SOC) analysts to access and analyze data from multiple tenants in one place, allowing them to quickly identify and respond to threats.
+Multi-tenant management in Microsoft 365 Defender enables security operation center (SOC) analysts to access and analyze data from multiple tenants in one place, allowing them to quickly identify and respond to threats.
 
 You can manage incidents & alerts originating from multiple tenants under **Incidents & alerts**.
 
 ## View and investigate incidents
 
-1. To View or investigate an incident, go to the [Incidents page](https://mto.security.microsoft.com/incidents) in the multi-tenant view in Microsoft 365 Defender. The **Tenant Name** column shows which tenant the incident originates from:
+1. To View or investigate an incident, go to the [Incidents page](https://mto.security.microsoft.com/incidents) in multi-tenant management in Microsoft 365 Defender. The **Tenant Name** column shows which tenant the incident originates from:
 
    :::image type="content" source="../../media/defender/mto-incidents.png" alt-text="Screenshot of the Microsoft 365 Defender multi-tenant incidents page" lightbox="../../media/defender/mto-incidents.png":::
 
@@ -50,18 +50,18 @@ To learn more, see [Investigate incidents](../defender-endpoint/investigate-inci
 
 To manage incidents across multiple tenants:
 
-1. Go to the [Incidents page](https://mto.security.microsoft.com/incidents) in the multi-tenant view in Microsoft 365 Defender.
+1. Go to the [Incidents page](https://mto.security.microsoft.com/incidents) in multi-tenant management.
 2. Choose the incidents you want to manage from the incidents list and select **Manage incidents**.
 
    :::image type="content" source="../../media/defender/mto-manage-incidents.png" alt-text="Screenshot of the Microsoft 365 Defender incidents page" lightbox="../../media/defender/mto-manage-incidents.png":::
 
-On the incidents fly-out you can assign incidents, assign incidents tags, set the incident status, and classify multiple incidents for multiple tenants simultaneously.
+On the incidents fly-out you can set the incident severity, assign incidents, assign incidents tags, set the incident status, and classify multiple incidents for multiple tenants simultaneously.
 
 To learn more, see [Manage incidents](../defender-endpoint/manage-incidents.md).
 
 ## View and investigate alerts
 
-1. To view or investigate an alert, go to the [Alerts](https://mto.security.microsoft.com/alerts) in the multi-tenant view in Microsoft 365 Defender and select the incident you want to view. A flyout panel opens with the alert details page:
+1. To view or investigate an alert, go to the [Alerts page](https://mto.security.microsoft.com/alerts) in multi-tenant management and select the incident you want to view. A flyout panel opens with the alert details page:
 
    :::image type="content" source="../../media/defender/mto-alerts-details.png" alt-text="Screenshot of the Microsoft 365 Defender alert details page" lightbox="../../media/defender/mto-alerts-details.png":::
 
@@ -76,7 +76,7 @@ To learn more, see [Investigate alerts](../defender-endpoint/investigate-alerts.
 
 To manage alerts across multiple tenants:
 
-1. Go to the [Alerts page](https://mto.security.microsoft.com/alerts) in the multi-tenant view in Microsoft 365 Defender.
+1. Go to the [Alerts page](https://mto.security.microsoft.com/alerts) in multi-tenant management.
 2. Choose the alerts you want to manage from the alerts list and select **Manage alerts**.
 
    :::image type="content" source="../../media/defender/mto-manage-alerts.png" alt-text="Screenshot of the Microsoft 365 Defender alerts page" lightbox="../../media/defender/mto-manage-alerts.png":::
