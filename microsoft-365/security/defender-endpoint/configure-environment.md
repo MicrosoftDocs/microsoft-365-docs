@@ -37,22 +37,23 @@ ms.date: 08/14/2023
 [!Include[Prerelease information](../../includes/prerelease.md)]
 
 
-Take the following steps to configure your environment to connect devices to the Defender for Endpoint service.
+Before you onboard devices to Defender for Endpoint, make sure your network is configured to connect to the service. The first step of this process involves adding URLs to the allowed domains list if your proxy server or firewall rules prevent access to Defender for Endpoint. This article also includes information about proxy and firewall requirements for older versions of Windows client and Windows Server.
 
 ## Enable access to Microsoft Defender for Endpoint service URLs in the proxy server
+
 By default, if a proxy or firewall is blocking all traffic and allowing only specific domains, then add the domains listed in the downloadable sheet to the allowed domains list.
 
 
 The following downloadable spreadsheet lists the services and their associated URLs that your network must be able to connect. Ensure there are no firewall or network filtering rules to deny access for these URLs. Optionally, you may need to create an *allow* rule specifically for them.
 
 
->[!NOTE]
->(Applies to public preview)<br>
->- As part of the preview, certain Defender for Endpoint services have been consolidated behind the URL: **\*.endpoint.security.microsoft.com**. You will be provided the option in Microsoft 365 Defender to use the [consolidated Defender for Endpoint URL](). For more information, see the updated list in the preceding table. You also have the new option of configuring allow lists using static Defender for Endpoint dedicated IP ranges.<br> 
->- The use of the new consolidated URL or static IPs will require you to use a new onboarding package. You must verify that your devices meet the [prerequisites]() before using the new solution. <br>
->For more details, see the updated list in the preceeding table. You also have the option of configuring allow lists using static Defender for Endpoint dedicated IP ranges. <br>
->- Some services were not included in this consolidation effort. You must verify that you maintain connectivity with the required services. For details on services **not** included in the consolidation, see [Services not under the consolidated domain]().
->- Devices running MMA agent are not supported under streamlined solution and will need to use the standard URL list. Devices running Windows version 1607, 1703, 1709, 1803 can onboard using the new onboarding package but will require a longer list of URLs. For more information, see the preceeding table.
+> [!NOTE]
+> (Applies to public preview)<br>
+> - As part of the preview, certain Defender for Endpoint services have been consolidated behind the URL: **\*.endpoint.security.microsoft.com**. You will be provided the option in Microsoft 365 Defender to use the [consolidated Defender for Endpoint URL](). For more information, see the updated list in the preceding table. You also have the new option of configuring allow lists using static Defender for Endpoint dedicated IP ranges.<br> 
+> - The use of the new consolidated URL or static IPs will require you to use a new onboarding package. You must verify that your devices meet the [prerequisites]() before using the new solution. <br>
+> For more details, see the updated list in the preceeding table. You also have the option of configuring allow lists using static Defender for Endpoint dedicated IP ranges. <br>
+> - Some services were not included in this consolidation effort. You must verify that you maintain connectivity with the required services. For details on services **not** included in the consolidation, see [Services not under the consolidated domain]().
+> - Devices running MMA agent are not supported under streamlined solution and will need to use the standard URL list. Devices running Windows version 1607, 1703, 1709, 1803 can onboard using the new onboarding package but will require a longer list of URLs. For more information, see the preceeding table.
 
 <br>
 
@@ -91,15 +92,12 @@ If a proxy or firewall is blocking anonymous traffic from the Defender for Endpo
 
 The information in the list of proxy and firewall configuration information is required to communicate with Log Analytics agent (often referred to as Microsoft Monitoring Agent) for previous versions of Windows, such as Windows 7 SP1, Windows 8.1, and Windows Server 2008 R2*.
 
-
-
-
 |Agent Resource|Ports|Direction|Bypass HTTPS inspection|
 |---|---|---|---|
-|*.ods.opinsights.azure.com|Port 443|Outbound|Yes|
-|*.oms.opinsights.azure.com|Port 443|Outbound|Yes|
-|*.blob.core.windows.net|Port 443|Outbound|Yes|
-|*.azure-automation.net|Port 443|Outbound|Yes|
+|`*.ods.opinsights.azure.com`|Port 443|Outbound|Yes|
+|`*.oms.opinsights.azure.com`|Port 443|Outbound|Yes|
+|`*.blob.core.windows.net`|Port 443|Outbound|Yes|
+|`*.azure-automation.net`|Port 443|Outbound|Yes|
 
 > [!NOTE]
 > These connectivity requirements apply to the previous Microsoft Defender for Endpoint of Windows Server 2016, and Windows Server 2012 R2 that requires MMA. Instructions to onboard these operating systems with the new unified solution are at [Onboard Windows servers](configure-server-endpoints.md), or migrate to the new unified solution at [Server migration scenarios in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/server-migration).
@@ -111,14 +109,12 @@ The information in the list of proxy and firewall configuration information is r
 
 For devices with no direct internet connection, the use of a proxy solution is the recommended approach. For older Windows devices onboarded using the previous, MMA-based solution the use of the OMS gateway solution provides an alternative approach. 
 
->[!NOTE]
->(Applies to public preview)<br>
->With this preview, you can also leverage firewall devices with static IP ranges. For more information see: [Simplified device connectivity](configure-device-connectivity.md) and [URL spreadsheet - ADD URL OF SPREADSHEE WHEN READY]().
-
-
-
+> [!NOTE]
+> (Applies to public preview)<br>
+> With this preview, you can also leverage firewall devices with static IP ranges. For more information see: [Simplified device connectivity](configure-device-connectivity.md) and [URL spreadsheet - ADD URL OF SPREADSHEE WHEN READY]().
 
 For more information about onboarding methods, see the following articles:
+
 - [Onboard previous versions of Windows](/microsoft-365/security/defender-endpoint/onboard-downlevel)
 - [Onboard servers to the Microsoft Defender for Endpoint service](/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-2008-r2-sp1--windows-server-2012-r2-and-windows-server-2016)
 
@@ -151,8 +147,6 @@ Depending on the operating system, the proxy to be used for Microsoft Defender f
 > [!NOTE]
 > Any client that has no access to the internet cannot be onboarded to Microsoft Defender Endpoint. A client must either have access to the required URLs directly, or it must have access via a proxy or firewall.<br>
 >As part of the preview, you can now leverage IP addresses as alternatives to certain Defender for Endpoint service URLs.
-
-
 
 ## Confirm Microsoft Monitoring Agent (MMA) Service URL Requirements 
 
