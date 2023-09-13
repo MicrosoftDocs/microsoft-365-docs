@@ -254,7 +254,7 @@ This information is found in the DeviceInfo table under the "ConnectivityType" c
 
    **Description:** Type of connectivity from the device to the cloud
 
-Once a device is migrated to use the streamlined method and the device establishes successful communication with the EDR command & control channel, the value will be represented as "streamlined".
+Once a device is migrated to use the streamlined method and the device establishes successful communication with the EDR command & control channel, the value is represented as *streamlined*.
 
 If you move the device back to the regular method, the value will be "standard".
 
