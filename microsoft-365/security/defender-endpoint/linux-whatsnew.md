@@ -47,7 +47,7 @@ This article is updated frequently to let you know what's new in the latest rele
 **What's new**
 
 - There are multiple fixes and new changes in this release
-	- In mde_installer.sh v0.6.3, user can use --channel argument to provide channel of the configured repository during cleanup. For e.x: `sudo ./mde_installer --clean --channel prod`
+	- In mde_installer.sh v0.6.3, users can use the `--channel` argument to provide the channel of the configured repository during cleanup. For example, `sudo ./mde_installer --clean --channel prod`
 	- The Network Extension can now be reset by administrators using `mdatp network-protection reset`.
 	- Other performance improvements
 	- Bug Fixes
