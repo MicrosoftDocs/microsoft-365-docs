@@ -83,11 +83,11 @@ Devices on your network must be running one of these editions. New features or c
 
 The following operating systems require the use of the [Log Analytics](/azure/azure-monitor/agents/log-analytics-agent)/Microsoft Monitoring Agent (MMA) to work with Defender for Endpoint:
 
-- Windows 8.1 Enterprise**
-- Windows 8.1 Pro**
-- Windows 7 SP1 Enterprise**
-- Windows 7 SP1 Pro**
-- Windows Server 2008 R2 SP1**
+- Windows 8.1 Enterprise
+- Windows 8.1 Pro
+- Windows 7 SP1 Enterprise
+- Windows 7 SP1 Pro
+- Windows Server 2008 R2 SP1
 
 ### Other supported operating systems
 
