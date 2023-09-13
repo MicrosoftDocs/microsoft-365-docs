@@ -18,7 +18,7 @@ ms.collection:
 - tier1
 ms.topic: conceptual
 ms.subservice: mde
-ms.date: 08/14/2023
+ms.date: 09/13/2023
 ---
 
 # STEP 2:  Configure your devices to connect to the Defender for Endpoint service using a proxy
@@ -175,6 +175,9 @@ netsh winhttp reset proxy
 
 See [Netsh Command Syntax, Contexts, and Formatting](/windows-server/networking/technologies/netsh/netsh-contexts) to learn more.
 
+## Next step
+
+[STEP 3: Verify client connectivity to Microsoft Defender for Endpoint service URLs](verify-connectivity.md)
 
 
 ## Related articles
@@ -184,4 +187,6 @@ See [Netsh Command Syntax, Contexts, and Formatting](/windows-server/networking/
 - [Onboard Windows devices](configure-endpoints.md)
 - [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md)
 - [Onboard devices without Internet access to Microsoft Defender for Endpoint](onboard-offline-machines.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+
