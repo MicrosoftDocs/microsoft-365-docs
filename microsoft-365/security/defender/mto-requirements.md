@@ -41,7 +41,7 @@ The following table lists the basic requirements you need to use multi-tenant ma
 |:---|:---|
 | Microsoft 365 Defender prerequisites | Verify you meet the [Microsoft 365 Defender prerequisites](prerequisites.md)|
 | Multi-tenant access | To view and manage the data you have access to in multi-tenant management, you need to ensure you have the necessary access. For each tenant you want to view and manage, you need to have either: <br/> <br/> - [Granular delegated admin privileges (GDAP)](/partner-center/gdap-introduction) <br/> - [Azure Active Directory B2B authentication](/azure/active-directory/external-identities/what-is-b2b) <br/> <br/> To learn more about how to synchronize multiple B2B users across tenants, see [Configure cross-tenant synchronization](/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-configure).|
-| Permissions | Users must be assigned the correct roles and permissions at the individual tenant level in order to view and manage the associated data in multi-tenant management. To learn more, see: <br/><br/> - [Manage access to Microsoft 365 Defender with Azure Active Directory global roles](./m365d-permissions.md) <br/> - [Custom roles in role-based access control for Microsoft 365 Defender](./custom-roles.md)<br/><br/> To learn how to grant permissions for multiple users at scale, see [What is entitlement management](/azure/active-directory/governance/entitlement-management-overview).|
+| Permissions | Users must be assigned the correct roles and permission,s at the individual tenant level, in order to view and manage the associated data in multi-tenant management. To learn more, see: <br/><br/> - [Manage access to Microsoft 365 Defender with Azure Active Directory global roles](./m365d-permissions.md) <br/> - [Custom roles in role-based access control for Microsoft 365 Defender](./custom-roles.md)<br/><br/> To learn how to grant permissions for multiple users at scale, see [What is entitlement management](/azure/active-directory/governance/entitlement-management-overview).|
 
 >[!Note]
 > Setting up [multi-factor authentication trust](/azure/active-directory/external-identities/authentication-conditional-access) is highly recommended for each tenant to avoid missing data in multi-tenant management Microsoft 365 Defender.
@@ -63,9 +63,6 @@ In order to view and manage the data you have access to in multi-tenant manageme
 3. Verify all the tenants you plan to manage in multi-tenant management in Microsoft 365 Defender appear in the list.
 4. For each tenant, go to the [Microsoft 365 Defender portal](https://security.microsoft.com/?tid=tenant_id) and sign in to validate you can successfully access the tenant.
 
-- [Azure Active Directory B2B authentication](/azure/active-directory/external-identities/what-is-b2b)
-
-
 ### Verify your tenant access with GDAP
 
 1. Go to the [Microsoft Partner Center](https://partner.microsoft.com/commerce/granularadminaccess/list).
@@ -73,19 +70,16 @@ In order to view and manage the data you have access to in multi-tenant manageme
 3. Verify all the tenants you plan to manage in multi-tenant management in Microsoft 365 Defender appear in the list.
 4. For each tenant, go to the [Microsoft 365 Defender portal](https://security.microsoft.com/?tid=tenant_id) and sign in to validate you can successfully access the tenant.
 
-- [Granular delegated admin privileges (GDAP)](/partner-center/gdap-introduction).  
-
-
 ## Set up multi-tenant management
 
 The first time you use multi-tenant management in Microsoft 365 Defender, you need setup the tenants you want to view and manage. To get started:
 
-1. Sign in to the [Multi-tenant view in Microsoft 365 Defender](https://mto.security.microsoft.com/).
+1. Sign in to the [Multi-tenant management in Microsoft 365 Defender](https://mto.security.microsoft.com/).
 2. Select **Add tenants**.
 
    :::image type="content" source="../../media/defender/mto-add-tenants.png" alt-text="Screenshot of the Microsoft 365 Defender multi-tenant portal setup screen" lightbox="../../media/defender/mto-add-tenants.png":::
 
-3. Choose the tenants you want to manage in multi-tenant management in Microsoft 365 Defender and select **Add**.
+3. Choose the tenants you want to manage and select **Add**.
 
 The features available in multi-tenant management now appear on the navigation bar and you're ready to view and manage security data across all your tenants.
 
@@ -97,6 +91,6 @@ Use these articles to get started with multi-tenant management in Microsoft 365 
 
 - [View and manage incidents and alerts](./mto-incidents-alerts.md)
 - [Advanced hunting](./mto-advanced-hunting.md)
-- [Vulnerability management](./mto-dashboard.md)
 - [Multi-tenant device view](./mto-tenant-devices.md)
-- [Manage your tenants](./mto-tenants.md)
+- [Vulnerability management](./mto-dashboard.md)
+- [Manage tenants](./mto-tenants.md)
