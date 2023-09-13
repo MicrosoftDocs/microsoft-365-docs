@@ -73,7 +73,7 @@ You can **Run**, **Turn off**, and **Delete** detection rules from multi-tenant 
 
 To manage detection rules:
 
-1. Go to the [Custom detection rules](https://mto.security.microsoft.com/v2/custom_detection) in multi-tenant management in Microsoft 365 Defender
+1. Go to the [Custom detection rules page](https://mto.security.microsoft.com/v2/custom_detection) in multi-tenant management in Microsoft 365 Defender
 2. Choose the detection rule you want to manage
 
 When you select a single detection rule, a flyout panel opens with the detection rule details:
