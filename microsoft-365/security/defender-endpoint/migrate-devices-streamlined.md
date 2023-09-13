@@ -256,7 +256,7 @@ This information is found in the DeviceInfo table under the "ConnectivityType" c
 
 Once a device is migrated to use the streamlined method and the device establishes successful communication with the EDR command & control channel, the value is represented as *streamlined*.
 
-If you move the device back to the regular method, the value will be "standard".
+If you move the device back to the regular method, the value is *standard*.
 
 For devices that have not yet attempted to reonboard, the value will remain blank. 
 
@@ -294,8 +294,8 @@ pen the Defender for Endpoint service event log using the following steps:
 
 5. Event ID 5 tracks errors if applicable. 
 
->[!NOTE]
->SENSE is the internal name used to refer to the behavioral sensor that powers Microsoft Defender for Endpoint. <br>
+> [!NOTE]
+> SENSE is the internal name used to refer to the behavioral sensor that powers Microsoft Defender for Endpoint. <br>
 > Events recorded by the service will appear in the log. <br>
 > For more information, see [Review events and error using Event Viewer](event-error-codes.md).
 
