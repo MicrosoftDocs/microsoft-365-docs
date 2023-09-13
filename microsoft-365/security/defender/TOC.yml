@@ -1,4 +1,4 @@
-  name: Microsoft 365 Defender
+- name: Microsoft 365 Defender
   href: index.yml
   expanded: true
   items: 
@@ -163,15 +163,11 @@
               - name: Respond to your first incident
                 items: 
                  - name: Overview
-                   href: first-incident-overview.md
-                 - name: Prepare
-                   href: first-incident-prepare.md
-                 - name: Step 1. Triage and analyze
-                   href: first-incident-analyze.md
-                 - name: Step 2. Remediate
-                   href: first-incident-remediate.md
-                 - name: Step 3. Review
-                   href: first-incident-post.md
+                   href: respond-first-incident-365-defender.md
+                 - name: Analyze your first incident
+                   href: respond-first-incident-analyze.md
+                 - name: Remediate your first incident
+                   href: respond-first-incident-remediate.md
                  - name: Additional incident examples
                    items: 
                     - name: Phishing email
@@ -417,7 +413,11 @@
               - name: Additional information
                 href: additional-information-xdr.md
               - name: Frequently asked questions
-                href: frequently-asked-questions.md
+                items: 
+                - name: General information
+                  href: frequently-asked-questions.md
+                - name: Defender Experts for XDR Incident notifications
+                  href: faq-incident-notifications-xdr.md
               - name: How Defender Experts for XDR permissions work
                 href: dex-xdr-permissions.md
        - name: Ransomware playbooks
@@ -560,45 +560,14 @@
             href: ../intelligence/safety-scanner-download.md
           - name: Threat actor naming
             href: ../intelligence/microsoft-threat-actor-naming.md
-          - name: Understand malware & other threats
-            href: ../intelligence/understanding-malware.md
-            items: 
-            - name: Prevent malware infection
-              href: ../intelligence/prevent-malware-infection.md
-            - name: Malware names
-              href: ../intelligence/malware-naming.md
-            - name: Coin miners
-              href: ../intelligence/coinminer-malware.md
-            - name: Exploits and exploit kits
-              href: ../intelligence/exploits-malware.md
-            - name: Fileless threats
-              href: ../intelligence/fileless-threats.md
-            - name: Macro malware
-              href: ../intelligence/macro-malware.md
-            - name: Phishing
-              href: ../intelligence/phishing.md
-            - name: Phishing trends and techniques
-              href: ../intelligence/phishing-trends.md
-            - name: Ransomware
-              href: /security/compass/human-operated-ransomware
-            - name: Rootkits
-              href: ../intelligence/rootkits-malware.md
-            - name: Supply chain attacks
-              href: ../intelligence/supply-chain-malware.md
-            - name: Tech support scams
-              href: ../intelligence/support-scams.md
-            - name: Trojans
-              href: ../intelligence/trojans-malware.md
-            - name: Troubleshoot MSI portal errors caused by admin block
-              href: ../intelligence/portal-submission-troubleshooting.md
-            - name: Unwanted software
-              href: ../intelligence/unwanted-software.md
-            - name: Worms
-              href: ../intelligence/worms-malware.md
+          - name: Malware names
+            href: ../intelligence/malware-naming.md
           - name: How Microsoft identifies malware and PUA
             href: ../intelligence/criteria.md
           - name: Submit files for analysis
             href: ../intelligence/submission-guide.md
+          - name: Troubleshoot MSI portal errors caused by admin block
+            href: ../intelligence/portal-submission-troubleshooting.md
           - name: Industry collaboration programs
             href: ../intelligence/cybersecurity-industry-partners.md
           - name: Virus information alliance

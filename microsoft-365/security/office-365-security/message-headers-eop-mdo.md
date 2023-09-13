@@ -19,7 +19,7 @@ description: Admins can learn about the header fields that are added to messages
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 7/5/2023
+ms.date: 9/8/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
@@ -47,7 +47,7 @@ For information about how to view an email message header in various email clien
 
 After you have the message header information, find the **X-Forefront-Antispam-Report** header. There are multiple field and value pairs in this header separated by semicolons (;). For example:
 
-`...CTRY:;LANG:hr;SCL:1;SRV:;IPV:NLI;SFV:NSPM;PTR:;CAT:NONE;SFTY:;...`
+`...CTRY:;LANG:hr;SCL:1;SRV:;IPV:NLI;SFV:NSPM;PTR:;SFTY:;...`
 
 The individual fields and values are described in the following table.
 
@@ -57,9 +57,10 @@ The individual fields and values are described in the following table.
 |Field|Description|
 |---|---|
 |`ARC`|The `ARC` protocol has the following fields: <ul><li>`AAR`: Records the content of the **Authentication-results** header from DMARC.</li><li>`AMS`: Includes cryptographic signatures of the message.</li><li>`AS`: Includes cryptographic signatures of the message headers. This field contains a tag of a chain validation called `"cv="`, which includes the outcome of the chain validation as **none**, **pass**, or **fail**.</li></ul>|
-|`CAT:`|The category of protection policy, applied to the message: <ul><li>`BULK`: Bulk</li><li>`DIMP`: Domain Impersonation</li><li>`GIMP`: [Mailbox intelligence based impersonation](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>`HPHSH` or `HPHISH`: High confidence phishing</li><li>`HSPM`: High confidence spam</li><li>`MALW`: Malware</li><li>`PHSH`: Phishing</li><li>`SPM`: Spam</li><li>`SPOOF`: Spoofing</li><li>`UIMP`: User Impersonation</li><li>`AMP`: Anti-malware</li><li>`SAP`: Safe attachments</li><li>`FTBP`: Anti-malware filetype policy</li><li>`OSPM`: Outbound spam</li><li>`INTOS`: Intra-Org phish action</li></ul> <br/> An inbound message might be flagged by multiple forms of protection and multiple detection scans. Policies have different priorities, and the policy with the highest priority is applied first. For more information, see [What policy applies when multiple protection methods and detection scans run on your email](how-policies-and-protections-are-combined.md).|
+|`CAT:`|The category of protection policy that's applied to the message: <ul><li>`AMP`: Anti-malware</li><li>`BULK`: Bulk</li><li>`DIMP`: Domain impersonation<sup>\*</sup></li><li>`FTBP`: Anti-malware [common attachments filter](anti-malware-protection-about.md#common-attachments-filter-in-anti-malware-policies)</li><li>`GIMP`: [Mailbox intelligence](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) impersonation<sup>\*</sup></li><li>`HPHSH` or `HPHISH`: High confidence phishing</li><li>`HSPM`: High confidence spam</li><li>`INTOS`: Intra-Organization phishing</li><li>`MALW`: Malware</li><li>`OSPM`: Outbound spam</li><li>`PHSH`: Phishing</li><li>`SAP`: Safe Attachments<sup>\*</sup></li><li>`SPM`: Spam</li><li>`SPOOF`: Spoofing</li><li>`UIMP`: User impersonation<sup>\*</sup></li></ul> <br/> <sup>\*</sup>Defender for Office 365 only. <br/><br/> An inbound message might be flagged by multiple forms of protection and multiple detection scans. Policies are applied in an order of precedence, and the policy with the highest priority is applied first. For more information, see [What policy applies when multiple protection methods and detection scans run on your email](how-policies-and-protections-are-combined.md).|
 |`CIP:[IP address]`|The connecting IP address. You can use this IP address in the IP Allow List or the IP Block List. For more information, see [Configure connection filtering](connection-filter-policies-configure.md).|
 |`CTRY`|The source country/region as determined by the connecting IP address, which might not be the same as the originating sending IP address.|
+|`DIR`|The Directionality of the message: <ul><li>`INB`: Inbound message.</li><li>`OUT`: Outbound message.</li><li>`INT`: Internal message.</li></ul>|
 |`H:[helostring]`|The HELO or EHLO string of the connecting email server.|
 |`IPV:CAL`|The message skipped spam filtering because the source IP address was in the IP Allow List. For more information, see [Configure connection filtering](connection-filter-policies-configure.md).|
 |`IPV:NLI`|The IP address wasn't found on any IP reputation list.|
@@ -72,7 +73,6 @@ The individual fields and values are described in the following table.
 |`SFV:SFE`|Filtering was skipped and the message was allowed because it was sent from an address in a user's Safe Senders list. <p> For more information about how admins can manage a user's Safe Senders list, see [Configure junk email settings on Exchange Online mailboxes](configure-junk-email-settings-on-exo-mailboxes.md).|
 |`SFV:SKA`|The message skipped spam filtering and was delivered to the Inbox because the sender was in the allowed senders list or allowed domains list in an anti-spam policy. For more information, see [Configure anti-spam policies](anti-spam-policies-configure.md).|
 |`SFV:SKB`|The message was marked as spam because it matched a sender in the blocked senders list or blocked domains list in an anti-spam policy. For more information, see [Configure anti-spam policies](anti-spam-policies-configure.md).|
-|`SFV:SKI`|The message was marked based on content of the intra-organizational message. For example, the message was marked as SCL 1 for nonspam or SCL 5 to 9 for spam.|
 |`SFV:SKN`|The message was marked as nonspam before processing by spam filtering. For example, the message was marked as SCL -1 or **Bypass spam filtering** by a mail flow rule.|
 |`SFV:SKQ`|The message was released from the quarantine and was sent to the intended recipients.|
 |`SFV:SKS`|The message was marked as spam before processing by spam filtering. For example, the message was marked as SCL 5 to 9 by a mail flow rule.|
