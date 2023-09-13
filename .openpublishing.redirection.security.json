@@ -2577,17 +2577,17 @@
       },
       {
          "source_path":"microsoft-365/security/defender-business/mdb-admin-guide.md",
-         "redirect_url":"/microsoft-365/business-premium/m365bp--mdb-maintain-environment",
+         "redirect_url":"/microsoft-365/business-premium/m365bp-mdb-maintain-environment",
          "redirect_document_id":false
       },
       {
          "source_path":"microsoft-365/security/defender-business/mdb-security-admin-guide.md",
-         "redirect_url":"/microsoft-365/business-premium/m365bp--mdb-maintain-environment",
+         "redirect_url":"/microsoft-365/business-premium/m365bp-mdb-maintain-environment",
          "redirect_document_id":false
       },
       {
          "source_path":"microsoft-365/security/defender-business/mdb-security-operations-guide.md",
-         "redirect_url":"/microsoft-365/business-premium/m365bp--mdb-maintain-environment",
+         "redirect_url":"/microsoft-365/business-premium/m365bp-mdb-maintain-environment",
          "redirect_document_id":false
       },
       {
@@ -2794,6 +2794,11 @@
          "source_path":"microsoft-365/security/office-365-security/walkthrough-spoof-intelligence-insight.md",
          "redirect_url":"/microsoft-365/security/office-365-security/anti-spoofing-spoof-intelligence",
          "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/defender-business/mdb-maintain-environment.md",
+         "redirect_url":"/microsoft-365/business-premium/m365bp-mdb-maintain-environment",
+         "redirect_document_id":true
        }
    ]
 }
