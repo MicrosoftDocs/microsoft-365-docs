@@ -89,6 +89,10 @@ sections:
               > Once you inactivate a tenant, you can't take action on the tenant until inactivation is complete. It may take up to 48 hours for inactivation to complete.
           
           To learn more about tenants, see [Microsoft 365 Lighthouse tenants page overview](m365-lighthouse-tenants-page-overview.md).
+          
+      - question: What permissions do I currently have for this tenant?
+        answer: |
+          If you cannot access tenant information, you may not have the correct permissions for that tenant. Some features and data are only visible to specific roles. To view what roles you have, see [View your Azure AD roles across tenants](m365-lighthouse-view-your-roles.md).
 
   - name: Deploying baselines
     questions:          
