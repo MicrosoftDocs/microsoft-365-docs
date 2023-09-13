@@ -322,8 +322,6 @@
            href: anti-phishing-mdo-impersonation-insight.md
          - name: Spoof intelligence insight
            href: anti-spoofing-spoof-intelligence.md
-         - name: Spoof intelligence insight walkthrough
-           href: walkthrough-spoof-intelligence-insight.md
          - name: View the admin audit log (Exchange)
            href: /exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log
          - name: View email security reports
