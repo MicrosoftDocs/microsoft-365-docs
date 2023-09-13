@@ -1,13 +1,8 @@
 ---
 title: Onboard non-persistent virtual desktop infrastructure (VDI) devices
 description: Deploy the configuration package on virtual desktop infrastructure (VDI) device so that they are onboarded to Microsoft Defender for Endpoint service.
-keywords: configure virtual desktop infrastructure (VDI) device, vdi, device management, configure Microsoft Defender for Endpoint, endpoints
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
@@ -18,7 +13,7 @@ ms.collection:
 - tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.date: 05/26/2023
+ms.date: 09/12/2023
 ms.subservice: mde
 ---
 
@@ -196,25 +191,7 @@ The following configuration settings are recommended:
 
 #### Exclusions
 
-- Disable local admin merge: Not configured
-
-- Defender processes to exclude:
-
-  - `%Programfiles%\FSLogix\Apps\frxccd.exe`
-  - `%Programfiles%\FSLogix\Apps\frxccds.exe`
-  - `%Programfiles%\FSLogix\Apps\frxsvc.exe`
-
-- File extensions to exclude from scans and real-time protection:
-
-  - `%Programfiles%\FSLogix\Apps\frxccd.sys`
-  - `%Programfiles%\FSLogix\Apps\frxdrv.sys`
-  - `%Programfiles%\FSLogix\Apps\frxdrvvt.sys`
-  - `%TEMP%*.VHD`
-  - `%TEMP%*.VHDX`
-  - `%Windir%\TEMP*.VHD`
-  - `%Windir%\TEMP*.VHDX`
-  - `\\storageaccount.file.core.windows.net\share**.VHD`
-  - `\\storageaccount.file.core.windows.net\share**.VHDX`
+Please review the FXLogix antivirus exclusion recommendations here: [Prerequisites for FSLogix](/fslogix/overview-prerequisites#file--folder-exclusions).
 
 #### Real-time Protection
 
@@ -277,4 +254,6 @@ The following configuration settings are recommended:
 - [Onboard Windows devices using Mobile Device Management tools](configure-endpoints-mdm.md)
 - [Onboard Windows devices using a local script](configure-endpoints-script.md)
 - [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+
