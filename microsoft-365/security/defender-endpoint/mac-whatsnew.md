@@ -51,6 +51,19 @@ Apple has fixed an issue on macOS [Ventura upgrade](<https://developer.apple.com
 Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as Apple ended support for Catalina (10.15) in December 2022.
 </br>
 
+### Aug-2023 (Build: 101.23062.0016  | Release version: 20.123062.16.0)
+
+| Build:             | **101.23062.0016**         |
+|--------------------|-----------------------|
+| Release version:   | **20.123062.16.0** |
+| Engine version:    | **1.1.23050.3**       |
+| Signature version: | **1.395.436.0**      |
+
+##### What's new
+
+- Bug and performance fixes
+- Fix: macOS complains that uninstall background task is from unidentified developer
+
 ### Jul-2023 (Build: 101.23052.0004  | Release version: 20.123052.4.0)
 
 | Build:             | **101.23052.0004**         |

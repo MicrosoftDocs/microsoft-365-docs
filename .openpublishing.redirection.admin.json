@@ -1995,6 +1995,26 @@
          "source_path":"microsoft-365/admin/security-and-compliance/secure-your-business-data.md",
          "redirect_url":"/microsoft-365/business-premium/secure-your-business-data",
          "redirect_document_id":false
-      }
+      },
+      {
+         "source_path": "microsoft-365/admin/security-and-compliance/enable-modern-authentication.md",
+         "redirect_url": "/microsoft-365/admin",
+         "redirect_document_id":false
+       },
+       {
+         "source_path": "microsoft-365/admin/basic-mobility-security/privacy-and-security.md",
+         "redirect_url": "/microsoft-365/admin/basic-mobility-security/overview",
+         "redirect_document_id":false
+       },
+       {
+         "source_path": "microsoft-365/admin/misc/deleted-users-checklist.md",
+         "redirect_url": "/microsoft-365/admin/add-users/remove-former-employee",
+         "redirect_document_id":false
+       },
+       {
+         "source_path": "microsoft-365/admin/misc/message-center-conformance.md",
+         "redirect_url": "/microsoft-365/admin/manage/message-center",
+         "redirect_document_id":false
+       }       
    ]
 }

@@ -2,6 +2,9 @@
 title: Responding to a Compromised Email Account
 f1.keywords: 
   - NOCSH
+  - Hijacked account
+  - Hacked account
+  - Compromised account
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -56,7 +59,7 @@ Users might notice and report unusual activity in their Microsoft 365 mailboxes.
 
 If a user reports these symptoms or other unusual symptoms, you should investigate. The Microsoft 365 Defender portal and the Azure portal offer the following tools to help you investigate suspicious activity on a user account.
 
-- **Unified audit logs in the Microsoft 365 Defender portal**: Filter the logs for activity using a date range that starts immediately before the suspicious activity occurred to today. Don't filter on specific activities during the search. For more information, see [Search the audit log](../../compliance/search-the-audit-log-in-security-and-compliance.md).
+- **Unified audit logs in the Microsoft 365 Defender portal**: Filter the logs for activity using a date range that starts immediately before the suspicious activity occurred to today. Don't filter on specific activities during the search. For more information, see [Search the audit log](/purview/audit-log-search).
 
 - **Azure AD Sign-in logs and other risk reports in the Azure AD portal**: Examine the values in these columns:
   - Review IP address

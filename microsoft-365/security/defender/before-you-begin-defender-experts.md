@@ -20,7 +20,7 @@ ms.collection:
   - tier1
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 07/26/2022
+ms.date: 09/13/2023
 ---
 
 # Before you begin using Defender Experts for Hunting
@@ -43,6 +43,11 @@ Defender Experts for Hunting customers are assigned two Ask Defender Experts (Ex
 
 For more information about Microsoft's commercial licensing terms, visit [this page](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/MCA).
 
+### Server coverage
+
+Defender Experts for Hunting also covers servers—whether on premises or on a hyperscale cloud service provider—that have Defender for Endpoint deployed on them with a Microsoft Defender for Server license. For Defender Experts coverage, a server is considered as a user account for billing. The service doesn’t cover Microsoft Defender for Cloud.
+[Learn more about specific hardware and software requirements](/microsoft-365/security/defender-endpoint/minimum-requirements).
+
 ### Access requirements
 
 Anyone from your organization can complete the customer interest form for Microsoft Defender Experts for Hunting service, however, you need to work with your Commercial Executive to transact the SKU. You might need certain roles and permissions to fully access the service capabilities. Refer to [Custom roles in role-based access control for Microsoft 365 Defender](custom-roles.md) for details.
@@ -57,7 +62,7 @@ The following sections enumerate additional information about the service's data
 
 All data used for hunting from existing Defender services will continue to reside in the customer's original Microsoft 365 Defender service storage location. [Learn more](../../enterprise/o365-data-locations.md)
 
-Defender Experts for Hunting operational data, such as case tickets and analyst notes, are generated and stored in a Microsoft data center in the US region for the length of the service, irrespective of the Microsoft 365 Defender service storage location. Data generated for the reporting dashboard is stored in customer's Microsoft 365 Defender service storage location. Reporting data and operational data will be retained for a grace period of no less than 90 days after a customer leaves the service.
+Defender Experts for Hunting operational data, such as case tickets and analyst notes, are generated and stored in a Microsoft data center in the US region for the length of the service, irrespective of the Microsoft 365 Defender service storage location. Data generated for the reporting dashboard is stored in customer's Microsoft 365 Defender service storage location. Reporting data and operational data will be retained for a grace period of no more than 90 days after a customer’s subscription expires. If the customer terminates their subscription, data will be deleted within 30 days. 
 
 Microsoft experts hunt over [advanced hunting logs](../../security/defender/advanced-hunting-schema-tables.md) in Microsoft 365 Defender advanced hunting tables. The data in these tables depend on the set of Defender services the customer is enabled for (for example, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Identity, Microsoft Defender for Cloud Apps, and Azure Active Directory). Experts also use a large set of internal threat intelligence data to inform their hunting and automation.
 

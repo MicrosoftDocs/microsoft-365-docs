@@ -1,5 +1,5 @@
 ---
-title: Set up and manage optical character recognition in Microsoft Syntex
+title: Set up and manage optical character recognition in Microsoft Syntex (Preview)
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -17,9 +17,11 @@ ms.localizationpriority: medium
 description: Learn how to set up and manage optical character recognition in Microsoft Syntex.
 ---
 
-# Set up and manage optical character recognition in Microsoft Syntex
+# Set up and manage optical character recognition in Microsoft Syntex (Preview)
 
 The optical character recognition (OCR) service for Microsoft Syntex is set up in the Microsoft 365 admin center.
+
+Before you configure the OCR service, read the [Syntex OCR preview terms and conditions](ocr-preview-terms.md).
 
 ## Prerequisites
 
@@ -57,7 +59,7 @@ Manage which SharePoint sites have OCR enabled for Syntex in the Microsoft 365 a
 
     a. Choose which site or sites this service should be enabled for.
 
-    b. To restrict user access to this service, select **No sites** or **Selected sites** and follow the instructions to either select the sites or upload a CSV listing a maximum of 100 sites. You can then manage site access permissions for the sites you selected.
+    b. To restrict user access to this service, select **No sites** or **Selected sites** and follow the instructions to either select the sites or upload a CSV listing a maximum of 100 sites. Be sure to add your content center site if you want it to be included. You can then manage site access permissions for the sites you selected.
 
     c. Select **Save**.
 

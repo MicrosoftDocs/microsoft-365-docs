@@ -154,6 +154,8 @@
                   href: microsoft-365-mailbox-utilization-service-alerts.md
                 - name: Service advisories for auto-expanding archive utilization
                   href: microsoft-365-exo-archive-advisory.md
+                - name: Service advisories for eDiscovery cmdlet exception spike
+                  href: microsoft-365-exchange-monitoring-service-advisories.md
                 - name: Service advisories for eDiscovery throttling
                   href: microsoft-365-ediscovery-throttling-service-advisory.md
                 - name: Service advisories for MRS source delays
@@ -164,18 +166,32 @@
               href: microsoft-365-apps-monitoring.md
             - name: Microsoft 365 Teams monitoring
               href: microsoft-365-teams-monitoring.md
+            - name: Microsoft 365 for the web monitoring
+              href: microsoft-365-for-the-web-monitoring.md
         - name: Setup guides
           href: setup-guides-for-microsoft-365.md
     - name: Multiple tenants
       items: 
-        - name: Multi-Tenant Organization People Search
-          href: multi-tenant-people-search.md
         - name: Inter-tenant collaboration
           href: microsoft-365-inter-tenant-collaboration.md
         - name: Cross-tenant mailbox migration
           href: cross-tenant-mailbox-migration.md
         - name: Cross-tenant identity mapping
           href: cross-tenant-identity-mapping.md
+
+        - name: Multitenant collaboration
+          items:
+            - name: Plan for multitenant orgs
+              href: plan-multi-tenant-org-overview.md
+            - name: Set up a multitenant org
+              href: set-up-multi-tenant-org.md
+            - name: Join or leave a multitenant org
+              href: join-leave-multi-tenant-org.md
+            - name: Sync users with other orgs
+              href: sync-users-multi-tenant-orgs.md
+            - name: Multitenant Organization People Search
+              href: multi-tenant-people-search.md
+
         - name: Cross-tenant OneDrive migration
           items:
             - name: Cross-tenant OneDrive migration overview

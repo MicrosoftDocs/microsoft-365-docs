@@ -15,9 +15,10 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom:
-- Ent_TLGs
-- seo-marvel-apr2020
-- admindeeplinkMAC
+  - Ent_TLGs
+  - seo-marvel-apr2020
+  - admindeeplinkMAC
+  - has-azure-ad-ps-ref
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: Use this Test Lab Guide to create a lightweight test environment for testing Microsoft 365 for enterprise.
 ---
@@ -50,7 +51,7 @@ Use the resulting environment to test the features and functionality of [Microso
 
 ## Phase 1: Create your Microsoft 365 E5 subscription
 
-We start with an Microsoft 365 E5 trial subscription and then add the Microsoft 365 E5 subscription to it.
+We start with a Microsoft 365 E5 trial subscription and then add the Microsoft 365 E5 subscription to it.
 
 >[!NOTE]
 >We recommend that you create a trial subscription of Office 365 so that your test environment has a separate Azure AD tenant from any paid subscriptions you currently have. This separation means that you can add and remove users and groups in the test tenant without affecting your production subscriptions.
@@ -67,7 +68,7 @@ To start your Microsoft 365 E5 trial subscription, you first need a fictitious c
 
 ### Sign up for an Office 365 E5 trial subscription
 
-1. In your browser, go to [https://aka.ms/e5trial](https://aka.ms/e5trial).
+1. In your browser, go to the [Office 365 E5 purchase page](https://go.microsoft.com/fwlink/p/?linkid=2245837) and select **Free trial**.
 
 2. In step 1 of the **Thank you for choosing Office 365 E5** page, enter your new email account address.
 3. In step 2 of the trail subscription process, enter the requested information, and then perform the verification.

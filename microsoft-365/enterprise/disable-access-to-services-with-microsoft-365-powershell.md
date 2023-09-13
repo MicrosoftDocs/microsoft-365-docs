@@ -15,11 +15,12 @@ ms.collection:
 - Ent_O365
 f1.keywords:
 - CSH
-ms.custom: 
-- Ent_Office_Other
-- PowerShell
-- LIL_Placement
-- seo-marvel-apr2020
+ms.custom:
+  - Ent_Office_Other
+  - PowerShell
+  - LIL_Placement
+  - seo-marvel-apr2020
+  - has-azure-ad-ps-ref
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
 description: In this article, learn how to use PowerShell to disable access to Microsoft 365 services for users.
 ---

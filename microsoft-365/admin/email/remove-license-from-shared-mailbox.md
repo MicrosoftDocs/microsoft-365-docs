@@ -2,9 +2,8 @@
 title: "Remove license from shared mailbox"
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: SKjerland
-ms.reviewer: sinakassaw, nicholak
+ms.author: kwekua
+author: kwekuako
 manager: scotv
 audience: Admin
 ms.topic: how-to
@@ -17,7 +16,6 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
-- commerce_licensing
 - AdminSurgePortfolio
 search.appverid:
 - BCS160

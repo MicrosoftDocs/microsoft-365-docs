@@ -4,7 +4,7 @@ description: Learn about Microsoft Defender Antivirus with other security produc
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
-ms.date: 06/14/2023
+ms.date: 09/06/2023
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
@@ -78,17 +78,18 @@ Whether Microsoft Defender Antivirus runs in active mode, passive mode, or is di
 - Which version of Windows is installed on an endpoint
 - Whether Microsoft Defender Antivirus is the primary antivirus/antimalware solution on the endpoint
 - Whether the endpoint is onboarded to Defender for Endpoint
-- Whether Smart App Control is turned on or is in evaluation mode. (See [What is Smart App Control](https://support.microsoft.com/topic/what-is-smart-app-control-285ea03d-fa88-4d56-882e-6698afdb7003)?)
 
 The following table summarizes the state of Microsoft Defender Antivirus in several scenarios. 
 
-|Antivirus/antimalware solution | Onboarded to Defender for Endpoint? | Smart App Control State | Microsoft Defender Antivirus state |
+| Antivirus/antimalware solution | Onboarded to Defender for Endpoint? | Microsoft Defender Antivirus state | Smart App Control State | 
 |---|---|---|---|
-| Microsoft Defender Antivirus | Yes | N/A <br/>Smart App Control is a consumer-only product | Active mode |
-| Microsoft Defender Antivirus | No | Off or Evaluation | Active mode |
-| Microsoft Defender Antivirus | No | On | Passive mode (automatically) |
-| A non-Microsoft antivirus/antimalware solution | Yes | N/A <br/>Smart App Control is a consumer-only product | Passive mode (automatically) |
-| A non-Microsoft antivirus/antimalware solution | No | Evaluation or On | Passive mode (automatically) |
+| Microsoft Defender Antivirus | Yes | Active mode | N/A  |
+| Microsoft Defender Antivirus | No | Active mode | On, Evaluation, or Off | 
+| A non-Microsoft antivirus/antimalware solution | Yes | Passive mode (automatically) | N/A | 
+| A non-Microsoft antivirus/antimalware solution | No | Disabled (automatically) | Evaluation or On | 
+
+> [!NOTE]
+> Smart App Control is a consumer-only product that's used on new Windows 11 installs. It can run alongside your antivirus software and block apps that are considered to be malicious or untrusted. [Learn more about Smart App Control](https://support.microsoft.com/topic/what-is-smart-app-control-285ea03d-fa88-4d56-882e-6698afdb7003).
 
 ## Windows Server and passive mode
 
@@ -139,7 +140,6 @@ Defender for Endpoint affects whether Microsoft Defender Antivirus can run in pa
 | [Cloud-delivered protection](enable-cloud-protection-microsoft-defender-antivirus.md) | Yes | No  | No |
 | [Network protection](network-protection.md)  | Yes | No | No |
 | [Attack surface reduction rules](attack-surface-reduction.md)  | Yes | No | No  |
-| [Limited periodic scanning availability](limited-periodic-scanning-microsoft-defender-antivirus.md) | No | Yes | No |
 | [File scanning and detection information](review-scan-results-microsoft-defender-antivirus.md) | Yes | Yes <br/>[See note 2](#notes-about-protection-states) | No |
 | [Threat remediation](configure-remediation-microsoft-defender-antivirus.md) | Yes | [See note 3](#notes-about-protection-states) | No | 
 | [Security intelligence updates](microsoft-defender-antivirus-updates.md) | Yes | Yes <br/>[See note 4](#notes-about-protection-states) | No | 
@@ -153,7 +153,7 @@ Defender for Endpoint affects whether Microsoft Defender Antivirus can run in pa
 
 1. In general, when Microsoft Defender Antivirus is in passive mode, real-time protection doesn't provide any blocking or enforcement, even though it's enabled and in passive mode.
 
-2. When Microsoft Defender Antivirus is in passive mode, scans aren't scheduled. If scans *are* scheduled in your configuration, the schedule is ignored. However, catchup scans continue to occur unless they are disabled. Scan tasks that are set up in Windows Task Scheduler continue to run according to their schedule. If you have scheduled tasks, you can remove them, if preferred.
+2. When Microsoft Defender Antivirus is in passive mode, scans aren't scheduled. If scans *are* scheduled in your configuration, the schedule is ignored. However, catchup scans continue to occur unless they're disabled. Scan tasks that are set up in Windows Task Scheduler continue to run according to their schedule. If you have scheduled tasks, you can remove them, if preferred.
 
 3. When Microsoft Defender Antivirus is in passive mode, it doesn't remediate threats. However, [Endpoint detection and response (EDR) in block mode](edr-in-block-mode.md) can remediate threats. In this case, you might see alerts showing Microsoft Defender Antivirus as a source, even when Microsoft Defender Antivirus is in passive mode.
 
@@ -274,3 +274,4 @@ You might also use [limited periodic scanning](limited-periodic-scanning-microso
 - [EDR in block mode](edr-in-block-mode.md)
 - [Learn about Endpoint data loss prevention](/microsoft-365/compliance/endpoint-dlp-learn-about)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+

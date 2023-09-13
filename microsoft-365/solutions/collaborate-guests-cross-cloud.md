@@ -39,6 +39,12 @@ In order to invite guests from an organization in a different Microsoft Azure cl
 
 Note that tenants in Microsoft Azure Government (Microsoft 365 GCC High and DoD) can't create a cross-tenant connection with tenants in Microsoft Azure China.
 
+> [!NOTE]
+> Cross-cloud guest access between Microsoft 365 China (21Vianet) and other Microsoft 365 cloud environments is not supported during the preview.
+
+> [!NOTE]
+> VDI clients aren't supported for cross-cloud guests.
+
 > [!IMPORTANT]
 > The organization that you're collaborating with must also configure these settings for their organization.
 
@@ -95,7 +101,7 @@ To configure inbound settings for an organization
 
 ##### Configure outbound settings for the organization
 
-Use the outbound settings to specify which users or groups from the external organization can access resources in your organization.
+Use the outbound settings to specify which users or groups from your organization can access resources in the external organization.
 
 To configure outbound settings for an organization
 
