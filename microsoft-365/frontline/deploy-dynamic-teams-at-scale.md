@@ -40,18 +40,10 @@ Then, you can choose which locations you want to create dynamic frontline teams 
 
 Team membership is automatically managed over time through the power of dynamic teams. As frontline workers are onboarded, offboarded, or change locations, their membership in these teams are updated accordingly.
 
-> [!NOTE]
-> To use this feature, admins must have one of the following role combinations:
->
-> - Teams admin and Global admin
-> - Teams admin and Groups admin
-> - Teams admin and User admin
-> - Teams admin and Intune admin
-
 ## Prerequisites
 
-- Users must have a Microsoft 365 F3, F1, E1, E3, or E5 license. If a user doesn't have one of these licenses, they'll need an Azure AD P1 add-on license to use dynamic teams. [Learn more about frontline licensing](flw-licensing-options.md).
-- The admin running the deployment process needs Teams admin center permissions and must have one of the following role combinations:
+- Users must have a Microsoft 365 F3, F1, E3, or E5 license. If a user doesn't have one of these licenses, they'll need an Azure AD P1 add-on license to use dynamic teams. [Learn more about frontline licensing](flw-licensing-options.md).
+- The admin running the deployment process must have one of the following role combinations:
     - Teams admin and Global admin
     - Teams admin and Groups admin
     - Teams admin and User admin
