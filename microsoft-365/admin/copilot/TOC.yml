@@ -11,12 +11,12 @@
     - name: Extensibility for Microsoft 365 Copilot
       href: 
     - name: Data, Privacy, and Security for Microsoft 365 Copilot
-      href: /DeployOffice/privacy/microsoft-365-copilot.md
+      href: /DeployOffice/privacy/microsoft-365-copilot
 - name: Deploy
   items: 
-    - name: Enable Users for Microsoft 365 Copilot
+    - name: Enable users for Microsoft 365 Copilot
       href: 
 - name: Manage
   items:
     - name: Microsoft 365 Copilot usage report
-      href: /activity-reports/microsoft-365-copilot-usage.md
+      href: /activity-reports/microsoft-365-copilot-usage
