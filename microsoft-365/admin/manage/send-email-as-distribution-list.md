@@ -39,11 +39,17 @@ Before you perform these steps, make sure you've been added to a Microsoft 365 d
 
 3. Select **Reply**.
 
-4. At the bottom of the message, select **More** \> **Show from**.<br/> ![Select More and then choose Show From.](../../media/534f13b7-9f15-48ea-8835-ea2ed1863ece.png)
+4. At the bottom of the message, select **More** \> **Show from**.
+
+   ![Select More and then choose Show From.](../../media/534f13b7-9f15-48ea-8835-ea2ed1863ece.png)
   
-5. Right-click on the From address - such as `Ina@weewalter.me` - and choose **Remove**.<br/> ![Remove the FROM alias.](../../media/9b8d8e8f-dc46-499c-89bd-0a480603bf1f.png)
+5. Right-click on the From address - such as `Ina@weewalter.me` - and choose **Remove**.
+
+   ![Remove the FROM alias.](../../media/9b8d8e8f-dc46-499c-89bd-0a480603bf1f.png)
   
-6. Then type the distribution list address such as support@contoso.com, and send the message. The next time you reply from the distribution list, its address will appear as an option in the **From** list.<br/>![Alias of the shared mailbox appears.](../../media/f7632a9a-9cab-446c-9e37-23ef50c5b975.png)
+6. Then type the distribution list address such as support@contoso.com, and send the message. The next time you reply from the distribution list, its address will appear as an option in the **From** list.
+
+   ![Alias of the shared mailbox appears.](../../media/f7632a9a-9cab-446c-9e37-23ef50c5b975.png)
 
 ## Outlook
 
