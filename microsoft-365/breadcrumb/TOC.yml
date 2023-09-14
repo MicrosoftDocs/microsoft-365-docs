@@ -44,3 +44,6 @@
   - name: Microsoft Whiteboard
     tocHref: /microsoft-365/whiteboard/
     topicHref: /microsoft-365/whiteboard/
+  - name: Microsoft 365 Copilot
+    tocHref: /microsoft-365-copilot/
+    topicHref: /microsoft-365-copilot/
