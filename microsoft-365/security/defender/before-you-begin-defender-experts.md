@@ -20,7 +20,7 @@ ms.collection:
   - tier1
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 09/13/2023
+ms.date: 09/15/2023
 ---
 
 # Before you begin using Defender Experts for Hunting
@@ -39,7 +39,7 @@ Microsoft Defender Experts for Hunting is a separate service from your existing 
 
 ### Eligibility and licensing
 
-Defender Experts for Hunting customers are assigned two Ask Defender Experts (Experts on Demand) credits on the first of each month, which you can use to submit questions. You can still submit inquiries beyond your initial number of allocated credits. Unused credits expire 90 days from date of assignment or at the end of the subscription term, whichever is shortest.
+Defender Experts for Hunting customers are assigned 10 Ask Defender Experts (Experts on Demand) credits, which you can use to submit questions, at the start of each calendar quarter. Unused credits from the current quarter roll up to the next one. You can use up to 20 credits only per quarter. All unused credits expire by the end of the calendar year or at the end of your subscription term, whichever is shortest.
 
 For more information about Microsoft's commercial licensing terms, visit [this page](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/MCA).
 
