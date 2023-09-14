@@ -45,7 +45,7 @@ Users can upload images exported from their working environments to use as basel
 > [!div class="mx-imgBorder"]
 > [![Screenshot of the "Select a VHD file to upload" button.](Media/Validate_apps_against_a_custom_image_2.png)](Media/Validate_apps_against_a_custom_image_2.png#lightbox)
 
-3. Follow the instructions from the popup to select your VHD image file from local. Once selected, click 'Download' link to generate PowerShell script which would help upload the file from your local path via PowerShell
+3. Follow the instructions from the popup to select your VHD image file from local. Once selected, click 'Download' link to generate PowerShell script which would help upload the file from your local path via PowerShell.
 > [!div class="mx-imgBorder"]
 > [![Screenshot of the popup.](Media/Validate_apps_against_a_custom_image_3.png)](Media/Validate_apps_against_a_custom_image_3.png#lightbox)
 
@@ -91,7 +91,7 @@ Users can create an in-place upgrade test by choosing an existing custom image a
 
 
 ##### Step 2: Review the test result once your package has completed execution.
-1. Under the navigation , click on the 'In-place upgrade results' tab and search for the package you created with your custom image as the baseline OS. The test results should be displayed for review.
+1. Under the navigation, click on the 'In-place upgrade results' tab and search for the package you created with your custom image as the baseline OS. The test results should be displayed for review.
 > [!div class="mx-imgBorder"]
 > [![Screenshot of the page of "In-place upgrade results".](Media/Validate_apps_against_a_custom_image_11.png)](Media/Validate_apps_against_a_custom_image_11.png#lightbox)
 
