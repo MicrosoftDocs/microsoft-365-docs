@@ -54,4 +54,3 @@ As the admin of an organization, you may need to add one of your users or contac
 ## Next steps
 
 Learn to [send email as a distribution group in Microsoft 365](../manage/send-email-as-distribution-list.md).
-
