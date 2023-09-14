@@ -3,7 +3,7 @@ title: "View Microsoft 365 account license and service details with PowerShell"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 07/17/2020
+ms.date: 09/14/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
