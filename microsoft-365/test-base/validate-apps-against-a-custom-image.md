@@ -121,4 +121,4 @@ Users can create a security update test by selecting the desired custom image as
 
 2. Click the 'See details' link to view the package test results with your custom image as a baseline.
 > [!div class="mx-imgBorder"]
-> [![Screenshot of the page of test details to view the package test results.](Media/Validate_apps_against_a_custom_image_16.png)](Media/Validate_apps_against_a_custom_image_16.png#lightbox)
+> [![Screenshot of the page of view the package test results.](Media/Validate_apps_against_a_custom_image_16.png)](Media/Validate_apps_against_a_custom_image_16.png#lightbox)
