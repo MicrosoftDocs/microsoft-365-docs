@@ -4,11 +4,11 @@
       href: m365-copilot-setup.md
 - name: Plan
   items: 
-    - name: Microsoft 365 Copilot overview
+    - name: Overview of Microsoft 365 Copilot
       href: 
-    - name: Microsoft 365 Copilot Requirements
+    - name: Requirements for Microsoft 365 Copilot
       href: 
-    - name: Microsoft 365 Copilot Extensibility
+    - name: Extensibility for Microsoft 365 Copilot
       href: 
     - name: Data, Privacy, and Security for Microsoft 365 Copilot
       href: /DeployOffice/privacy/microsoft-365-copilot.md
@@ -19,4 +19,4 @@
 - name: Manage
   items:
     - name: Microsoft 365 Copilot usage report
-    - href: /activity-reports/microsoft-365-copilot-usage.md
+      href: /activity-reports/microsoft-365-copilot-usage.md
