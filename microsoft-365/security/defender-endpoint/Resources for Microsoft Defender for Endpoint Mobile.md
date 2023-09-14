@@ -1,0 +1,72 @@
+---
+title: Resources for Microsoft Defender for endpoint mobile
+description: Learn about the configurations and privacy settings for all the features in MDE mobile.
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, macos, whatsnew
+ms.service: microsoft-365-security
+ms.mktglfcycl: security
+ms.sitesec: library
+ms.pagetype: security
+ms.author: priyankagill
+author: priyankagill
+ms.localizationpriority: medium
+manager: kanisri
+audience: ITPro
+ms.collection: 
+- m365-security
+- tier3
+ms.topic: reference
+ms.subservice: mde
+search.appverid: met150
+---
+
+
+
+Microsoft Defender provides multiple capabilities on mobiles. Some of these are enabled by default while others can be configured by the IT admin.  The following table can be used to access resources related to Microsoft Defender for Endpoint app on Android and iOS.
+
+
+
+
+
+
+# Feature configurations
+
+| Configuration| Description | Android AE config key | Android MAM | iOS |
+|--------------|-------------|-----------------------|-------------|-----|
+|Web Protection|Admins can use this to configure web protection feature. When disabled, end user will not be asked for VPN permissions|Antiphishing = 0/1 (default), VPN = 0/1(default)|Antiphishing=0/1(default), VPN = 0/1(default)| WebProtection = true (default) / false|
+|Network Protection| Network protection is disabled by default. Admins can enable it to have rogue wifi and certificate detection (only android) on mobile.|Enable Network protection in Microsoft Defender = 0(default)/1| DefenderNetworkProtectionEnable = 0(default)/1|DefenderNetworkProtectionEnable = 0(default)/1|
+
+# Privacy configuration
+
+|Configuration| Description | Android AE config key | Android MAM | iOS |
+|-------------|-------------|-----------------------|-------------|-----|
+|Privacy for phishing alert report |If privacy is enabled, defender will not send domain name and website details| Hide URLs in report=0(default)/1| DefenderExcludeURLInReport = 0(default)/1 |DefenderExcludeURLInReport = 0(default)/1|
+|Configure Privacy for malware threat report| Control the collection of app details (name, package information) in the threat report |Hide app details in report= 0(default)/1|DefenderExcludeAppInReport = 0(default)/1|
+|Configure privacy in vulnerability assessment of apps| Control what app data shows up in the security portal when TVM is working|Enable TVM privacy= 0(default)/1|DefenderTVMPrivacyMode = 0(default)/1|DefenderTVMPrivacyMode = 0(default)/1|
+|Network protection | Control the collection of network and certificate details in the alert report|Enable Network protection privacy = 1/0 |DefenderNetworkProtectionPrivacy = 1/0 |DefenderNetworkProtectionPrivacy |
+
+
+# Additional Configurations
+
+|Configuration| Description | Android AE config key | Android MAM | iOS |
+|-------------|-------------|-----------------------|-------------|-----|
+|Disable/enable sign out| Sign out option can be disabled for end user. This helps prevent tampering with the device.|Disable sign out = 1(default)/0 |DisableSignOut = 1/0 |DisableSignOut = 1/0 |
+|Device tagging| MDE enabled bulk tagging the mobile devices during onboarding. Admins can set up tags using this config on Intune.|Device tag (Value as String)|DefenderDeviceTag (Value as String) |DefenderDeviceTag (Value as String)|
+|Optional Permissions| Admins can make some permissions optional for the end user while onboarding defender. Users will get an option to grant these permissions later.| NA|DefenderOptionalVPN = 0(default)/1, DefenderOptionalAccessibility = 0(default)/1|DefenderOptionalVPN = 0(default)/1, DefenderOptionalAccessibility = 0(default)/1|
+
+# Alerts severity and privacy information
+
+|Alert type | Severity | Privacy information (Android)| Privacy information (iOS)|
+|-----------|-----------|---------|---------|
+|Anti-phishing (defender warning)|Informational| URL of malicious connection, connection information, Protocol type; [More information](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/android-privacy?view=o365-worldwide#web-page--network-information) | Domain name, IP address of malicious website; [More information](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/ios-privacy?view=o365-worldwide#web-page-or-network-information) |
+|Anti-phishing (Defender warning overlooked)|Low |  |  |
+|Anti-malware| Medium | Information about malicious APKs including install source, storage location, time of install etc; [More information](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/android-privacy?view=o365-worldwide#app-information)
+| |
+|Jailbreak| High | NA |NA |
+|Rogue Wifi | Low |  |  |
+|Open Network detection | Informational | | |
+Suspicious certificates |Informational| | |
+
+[Complete privacy information for Android](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/android-privacy?view=o365-worldwide)
+
+[Complete privacy information for iOS](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/ios-privacy?view=o365-worldwide)
+
