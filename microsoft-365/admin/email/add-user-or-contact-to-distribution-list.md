@@ -48,8 +48,8 @@ As the admin of an organization, you may need to add one of your users or contac
 
 5. Select **Save** and then **Close**.
 
-> [!NOTE]
-> You can also remove a user on this page. Select the user, select the ellipsis symbol and choose **Remove member**.
+   > [!NOTE]
+   > You can also remove a user on this page. Select the user, select the ellipsis symbol and choose **Remove member**.
   
 ## Next steps
 
