@@ -3,7 +3,7 @@ title: "Fixing problems with directory synchronization for Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 08/10/2020
+ms.date: 09/14/2023
 audience: Admin
 ms.topic: troubleshooting
 ms.service: microsoft-365-enterprise
