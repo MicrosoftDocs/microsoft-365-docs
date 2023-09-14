@@ -17,7 +17,7 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.date: 08/03/2023
+ms.date: 09/13/2023
 ---
 
 # What's new in Microsoft Secure Score
@@ -62,7 +62,7 @@ To see the following new Azure Active Directory controls the Office 365 connecto
 
 To see the following new SharePoint controls the Office 365 connector in Microsoft Defender for Cloud Apps must be turned on in the App connectors settings page.
 
-- Ensure SharePoint external sharing is managed through domain whitelist/blacklists
+- Ensure SharePoint external sharing is managed through domain allow lists / block lists
 - Block OneDrive for Business sync from unmanaged devices
 
 ### Microsoft Secure Score integration with Microsoft Lighthouse 365
