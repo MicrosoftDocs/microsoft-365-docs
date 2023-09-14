@@ -40,9 +40,9 @@ To configure Loop components in your organization, see [Manage Loop components i
 
 ## Summary of compliance capabilities for content created in Loop workspaces
 
-Content created in a Loop workspace is stored in Syntex repository services. For more information, see [Introducing Syntex repository services: Microsoft 365 superpowers for your app](https://devblogs.microsoft.com/microsoft365dev/introducing-syntex-repository-services-microsoft-365-superpowers-for-your-app/).
+Content created in a Loop workspace is stored in Microsoft Syntex repository services. For more information, see [Introducing Microsoft Syntex repository services: Microsoft 365 superpowers for your app](https://devblogs.microsoft.com/microsoft365dev/introducing-syntex-repository-services-microsoft-365-superpowers-for-your-app/).
 
-Syntex repository services has many of the same compliance capabilities as the rest of SharePoint and OneDrive. However, the capabilities below are **not available** yet for content created in Loop workspaces. While we continue to improve rapidly in this area, if you require any of these capabilities, Microsoft recommends proactively disabling Loop workspaces using the instructions in [Manage Loop workspaces in Syntex repository services](/microsoft-365/loop/loop-workspaces-configuration):
+Microsoft Syntex repository services has many of the same compliance capabilities as the rest of SharePoint and OneDrive. However, the capabilities below are **not available** yet for content created in Loop workspaces. While we continue to improve rapidly in this area, if you require any of these capabilities, Microsoft recommends proactively disabling Loop workspaces using the instructions in [Manage Loop workspaces in Microsoft Syntex repository services](/microsoft-365/loop/loop-workspaces-configuration):
 
 - [Intune Device Management Support](/mem/intune/remote-actions/device-management)
 - Tenant admin experience: Restoring a deleted workspace
@@ -56,9 +56,9 @@ Syntex repository services has many of the same compliance capabilities as the r
 *This list of capabilities is not exhaustive*
 
 > [!NOTE]
-> The list of capabilities in this section applies to content created in Loop workspaces (Syntex repository services). It does not apply to Loop components created in either Teams, Outlook, Whiteboard or Word for the web (which are created in OneDrive).
+> The list of capabilities in this section applies to content created in Loop workspaces (Microsoft Syntex repository services). It does not apply to Loop components created in either Teams, Outlook, Whiteboard or Word for the web (which are created in OneDrive).
 
-To configure Loop workspaces in your organization, see [Manage Loop workspaces in Syntex repository services](/microsoft-365/loop/loop-workspaces-configuration)
+To configure Loop workspaces in your organization, see [Manage Loop workspaces in Microsoft Syntex repository services](/microsoft-365/loop/loop-workspaces-configuration)
 
 ## Related topics
 
