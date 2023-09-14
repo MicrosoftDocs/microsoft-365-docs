@@ -5,7 +5,7 @@ ms.date: 02/18/2020
 f1.keywords: CSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: scotv
+manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business

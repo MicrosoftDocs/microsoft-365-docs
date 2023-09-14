@@ -212,6 +212,11 @@ sections:
           The confirmation of the booking is sent to both the service provider's and customer's inboxes. The confirmation email contains an *.ics file attachment, which can then be added to the user's calendar with all relevant appointment details.
 
       - question: |
+          Can users edit Bookings appointments in their Outlook calendar?
+        answer: |
+          No, currently Bookings appointments can only be edited from the Bookings web portal. 
+
+      - question: |
           What triggers service provider or staff and customer emails?
         answer: |
           Emails are triggered based on settings in the Services tab in the Bookings Web app. A booking made by the customer on the Self-service page, or on the Calendar tab in the Bookings Web app, will trigger a confirmation and/or a reminder email. The same thing will happen when someone makes a change to the booking via the **Manage booking** button in the confirmation email or within the Web app. Reminder emails are sent at a specified time period prior to an appointment, as detailed in the Services tab in the Bookings Web app.
