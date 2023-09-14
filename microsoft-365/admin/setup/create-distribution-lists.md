@@ -50,17 +50,17 @@ Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=850
 
 ::: moniker-end
 
-1. Select **Teams and groups** \> **Active teams and groups** \> **Distribution lists**.
-
-2. Select **Add a distribution list**.
-
-3. On the **Set up the basics** page, enter a name, description, and select **Next**.
-
-4. On the **Assign owners** page, select **Assign owners** and select a user and choose **Add**. Select **Next**.
-
-5. On the **Edit settings** page, create a group email address for your new group, and choose whether you want people outside your organization to send email to the group. Select **Next**.
-
-6. On the **Review and finish adding group** page, verify your group information and select **Create group**.
+    1. Select **Teams and groups** \> **Active teams and groups** \> **Distribution lists**.
+    
+    2. Select **Add a distribution list**.
+    
+    3. On the **Set up the basics** page, enter a name, description, and select **Next**.
+    
+    4. On the **Assign owners** page, select **Assign owners** and select a user and choose **Add**. Select **Next**.
+    
+    5. On the **Edit settings** page, create a group email address for your new group, and choose whether you want people outside your organization to send email to the group. Select **Next**.
+    
+    6. On the **Review and finish adding group** page, verify your group information and select **Create group**.
 
 To add users to your distribution list after you've created it, see [Add a user or contact to a distribution list](../email/add-user-or-contact-to-distribution-list.md).
 
