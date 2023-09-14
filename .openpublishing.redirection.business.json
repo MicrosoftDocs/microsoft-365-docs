@@ -13,7 +13,7 @@
     {
     "source_path": "microsoft-365/business-premium/m365bp-maintain-environment.md",
     "redirect_url": "/microsoft-365/business-premium/m365bp-mdb-maintain-environment",
-    "redirect_document_id": true
+    "redirect_document_id": false
   },
   {
     "source_path": "microsoft-365/business-premium/m365bp-admin-guide.md",
