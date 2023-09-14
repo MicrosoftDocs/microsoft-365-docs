@@ -93,16 +93,81 @@ This example shows the services that user BelindaN@litwareinc.com has access to 
 (Get-MgUserLicenseDetail -UserId belindan@litwareinc.com -Property ServicePlans)[0].ServicePlans
 ```
 
-To view all the services for a user who has been assigned *multiple licenses*, use the following syntax:
+This script will generate a CSV file for all users with columns for `DisplayName`, `UserPrincipalName`, `SkuId`, `SkuName`, and each of the `ServicePlans`. If a user does not have a certain service plan assigned, it will show up as "Not Assigned" in the corresponding column. Please replace `"C:\Users\Public\M365LicenseReport.csv"` with your desired output path.
 
 ```powershell
-$userUPN="<user account UPN>"
-$allLicenses = Get-MgUserLicenseDetail -UserId $userUPN -Property SkuPartNumber, ServicePlans
-$allLicenses | ForEach-Object {
-    Write-Host "License:" $_.SkuPartNumber
-    $_.ServicePlans | ForEach-Object {$_}
+
+# Install the Microsoft Graph PowerShell SDK v2
+Install-Module Microsoft.Graph
+
+# Connect to Microsoft Graph
+Connect-MgGraph
+
+# Get all the users in the tenant
+$users = Get-MgUser -All
+
+# Create an empty array to store the output
+$output = @()
+
+# Determine all possible service plans in your tenant
+$allServicePlans = Get-MgSubscribedSku | ForEach-Object { $_.ServicePlans } | Select-Object -ExpandProperty ServicePlanName -Unique
+
+# Loop through each user
+foreach ($user in $users) {
+
+    # Get the user's display name and user principal name
+    $displayName = $user.DisplayName
+    $userPrincipalName = $user.UserPrincipalName
+
+    # Get the user's assigned licenses
+    $licenses = Get-MgUserLicenseDetail -UserId $user.Id
+
+    # Loop through each license
+    foreach ($license in $licenses) {
+
+        # Get the license sku id and name
+        $skuId = $license.SkuId
+        $skuName = (Get-MgSubscribedSku | Where-Object {$_.SkuId -eq $skuId}).SkuPartNumber
+
+        # Create a hash table to store the service plan names and states
+        $servicePlanTable = @{}
+
+        # Initialize all service plans as "Not Assigned"
+        foreach ($plan in $allServicePlans) {
+            $servicePlanTable[$plan] = "Not Assigned"
+        }
+
+        # Loop through each service plan
+        foreach ($servicePlan in $license.ServicePlans) {
+
+            # Get the service plan name and state
+            $servicePlanName = $servicePlan.ServicePlanName
+            $servicePlanState = $servicePlan.ProvisioningStatus
+
+            # Update the service plan state in the hash table
+            $servicePlanTable[$servicePlanName] = $servicePlanState
+        }
+
+        # Create a custom object with the user and license information
+        $object = [pscustomobject]@{
+            DisplayName = $displayName
+            UserPrincipalName = $userPrincipalName
+            SkuId = $skuId
+            SkuName = $skuName
+        }
+
+        # Add the service plan information to the custom object
+        foreach ($key in $servicePlanTable.Keys) {
+            Add-Member -InputObject $object -NotePropertyName $key -NotePropertyValue $servicePlanTable[$key]
+        }
+
+        # Add the custom object to the output array
+        $output += $object
+    }
 }
 
+# Export the output array to a csv file
+$output | Export-Csv -Path "C:\Users\Public\M365LicenseReport.csv" -NoTypeInformation
 ```
 
 ## Use the Azure Active Directory PowerShell for Graph module
