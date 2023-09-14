@@ -48,11 +48,12 @@ The notification is only generated if the following conditions are met:
 This feature is on by default. To disable this feature, follow the steps below.
 
 1. [Connect to Exchange PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+
 2. Using PowerShell, you can disable the notifications informing your users about the Outlook mobile apps. This also prevents the QR code sign-in flow from being shown.
 
-```powershell
-Set-OrganizationConfig -MobileAppEducationEnabled <Boolean>
-```
+   ```powershell
+   Set-OrganizationConfig -MobileAppEducationEnabled <Boolean>
+   ```
 
 > [!NOTE]
 > When using the Exchange PowerShell command, changes may take up to 8 hours to propagate.
