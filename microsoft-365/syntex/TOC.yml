@@ -188,6 +188,18 @@
         - name: Admin setup 
           href: ocr.md
 
+
+    - name: Microsoft 365 Archive 
+      items: 
+        - name: Overview 
+          href: ../archive/archive-overview.md
+        - name: Admin setup 
+          href: ../archive/archive-setup.md
+        - name: Manage 
+          href: ../archive/archive-manage.md
+        - name: Compliance 
+          href: ../archive/archive-compliance.md
+
     - name: Annotations
       href: annotations.md
 
