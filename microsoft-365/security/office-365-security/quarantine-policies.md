@@ -45,6 +45,8 @@ You create and assign quarantine policies in the Microsoft 365 Defender portal o
 
 ## What do you need to know before you begin?
 
+- In Microsoft 365 operated by 21Vianet, quarantine isn't currently available in the Microsoft 365 Defender portal. Quarantine is available only in the classic Exchange admin center (classic EAC).
+
 - You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Quarantine policies** page, use <https://security.microsoft.com/quarantinePolicies>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
