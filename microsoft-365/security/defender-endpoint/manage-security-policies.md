@@ -39,6 +39,9 @@ Use security policies to manage security settings on devices. As a security admi
 
 You'll find endpoint security policies under **Endpoints > Configuration management > Endpoint security policies**.
 
+>[!NOTE]
+>The “Endpoint Security Policies” page in the Defender console is available only for [users with the security administrator role in Microsoft 365 Defender](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/assign-portal-access). Any other user role, such as Security Reader, will not grant access to this page.
+>Once a user has the required level of permissions in the Defender console to view the list of Endpoint Security Policies, the data is presented based on Intune permissions. So if the user is in scope for Intune role-based access control, this will apply on the list of policies presented in the Defender portal. Our recommendation is to grant security administrators with the [Intune Built in role “Endpoint Security Manager”](https://learn.microsoft.com/en-us/mem/intune/fundamentals/role-based-access-control#built-in-roles) in order to effectively align the level of permissions between Intune and M365 Defender.
 
 :::image type="content" source="./images/endpoint-security-policies.png" alt-text="Managing Endpoint security policies in the Microsoft 365 Defender portal":::
 
