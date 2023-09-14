@@ -29,11 +29,11 @@ To set up your own image-based tests, please follow below guidance:
 * [Create an in-place upgrade test using a custom image as the baseline](#createinplaceupgrade)
 * [Create a security update test using a custom image as the baseline](#createsecurityupgrade)
 
-## <a name="prerequisites">Prerequisites
+## <a name="prerequisites"></a>Prerequisites
 Users need to prepare their own images from working environments (e.g. export from Configure Manager or take snapshots from Hyper-V). Please follow below instructions to ensure the image is prepared in VHD format and compatible for Test Base usage.
 [How to prepare a Windows VHD for Test Base](prepare-testbase-vhd-file.md)
 
-## <a name="uploadanimageasbaseline">Upload an image as baseline
+## <a name="uploadanimageasbaseline"></a>Upload an image as baseline
 Users can upload images exported from their working environments to use as baseline for validation.
 
 ##### Step 1: Upload your VHD file
@@ -71,7 +71,7 @@ Users can upload images exported from their working environments to use as basel
 > [!NOTE]
 > The uploaded VHD files will be automatically deleted in 14 days in accordance to Microsoft's data retention policy. You may upload up to 10 custom images due to storage limitations.
 
-## <a name="createinplaceupgrade">Create an in-place upgrade test using a custom image as the baseline
+## <a name="createinplaceupgrade"></a>Create an in-place upgrade test using a custom image as the baseline
 Users can create an in-place upgrade test by choosing an existing custom image as their baseline, allowing the validation to be based on their existing OS settings and configuration.
 
 ##### Step 1: Define custom image as the baseline from the 'Edit package' tab
@@ -100,7 +100,7 @@ Users can create an in-place upgrade test by choosing an existing custom image a
 > [![Screenshot of the page of test details.](Media/Validate_apps_against_a_custom_image_12.png)](Media/Validate_apps_against_a_custom_image_12.png#lightbox)
 
 
-## <a name="createsecurityupgrade">Create a security update test using a custom image as the baseline
+## <a name="createsecurityupgrade"></a>Create a security update test using a custom image as the baseline
 Users can create a security update test by selecting the desired custom image as the baseline from existing custom images to validation against their existing settings and configuration.
 
 ##### Step 1: Define the custom image as the baseline from the Edit package tab
