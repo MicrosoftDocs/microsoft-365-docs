@@ -42,7 +42,7 @@ You can manage incidents & alerts originating from multiple tenants under **Inci
 3. From the incident details page you can:
 
 - Select **Open incident page** to view this incident in a new tab for the specific tenant in the [Microsoft 365 Defender portal](https://security.microsoft.com).
-- Select **Manage incident** to set the incident severity, assign the incident, set incident tags, set the incident status, and classify the incident.
+- Select **Manage incident** to assign the incident, set incident tags, set the incident status, and classify the incident.
 
 To learn more, see [Investigate incidents](../defender-endpoint/investigate-incidents.md).
 
@@ -55,7 +55,7 @@ To manage incidents across multiple tenants:
 
    :::image type="content" source="../../media/defender/mto-manage-incidents.png" alt-text="Screenshot of the Microsoft 365 Defender incidents page" lightbox="../../media/defender/mto-manage-incidents.png":::
 
-On the incidents fly-out you can set the incident severity, assign incidents, assign incidents tags, set the incident status, and classify multiple incidents for multiple tenants simultaneously.
+On the incidents fly-out you can assign incidents, assign incidents tags, set the incident status, and classify multiple incidents for multiple tenants simultaneously.
 
 To learn more about incidents in the Microsoft 365 Defender portal, see [Manage incidents](../defender-endpoint/manage-incidents.md).
 
