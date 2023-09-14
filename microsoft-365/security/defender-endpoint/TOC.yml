@@ -577,8 +577,6 @@
           href: cloud-protection-microsoft-antivirus-sample-submission.md
       - name: Configure and validate Microsoft Defender Antivirus network connections
         href: configure-network-connections-microsoft-defender-antivirus.md
-      - name: Specify additional definition sets for network traffic inspection
-        href: specify-additional-definitions-network-traffic-inspection-mdav.md
       - name: Tamper protection
         items:
         - name: Protect security settings with tamper protection
