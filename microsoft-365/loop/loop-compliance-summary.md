@@ -34,7 +34,9 @@ Because Loop components are stored as files in OneDrive, there are many capabili
 
 - [Sensitivity Labeling](/microsoft-365/compliance/information-protection) (Microsoft Information Protection) at the File-level
 - End-user ability to see [Data Loss Prevention (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) policy tips
-- [Conditional Access](/azure/active-directory/conditional-access/overview) 
+- [Conditional Access](/azure/active-directory/conditional-access/overview)
+
+To configure Loop components in your organization: [Manage Loop components in OneDrive and SharePoint](/microsoft-365/loop/components-configuration)
 
 ## Summary of compliance capabilities for content created in Loop workspaces
 
@@ -48,13 +50,15 @@ Syntex repository services has many of the same compliance capabilities as the r
 - [Sensitivity Labeling](/microsoft-365/compliance/information-protection) (Microsoft Information Protection) at the File-level and Container-level
 - End-user ability to see [Data Loss Prevention (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) policy tips
 - Multiple owners on a workspace
-- [Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo) account move support
+- [Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo) support
 - [Conditional Access](/azure/active-directory/conditional-access/overview) 
 
 *This list of capabilities is not exhaustive*
 
 > [!NOTE]
 > The list of capabilities in this section applies to content created in Loop workspaces (Syntex repository services). It does not apply to Loop components created in either Teams, Outlook, Whiteboard or Word for the web (which are created in OneDrive).
+
+To configure Loop workspaces in your organization: [Manage Loop workspaces in Syntex repository services](/microsoft-365/loop/loop-workspaces-configuration)
 
 ## Related topics
 
