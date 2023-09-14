@@ -11,7 +11,6 @@ ms.service: microsoft-syntex
 ms.custom: CSH, archive
 search.appverid:
 ms.collection:
-    - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
 ROBOTS: NOINDEX, NOFOLLOW

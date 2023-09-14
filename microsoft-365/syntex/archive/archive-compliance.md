@@ -8,10 +8,9 @@ ms.reviewer: sreelakshmi
 ms.date: 09/01/2023
 ms.topic: conceptual
 ms.service: microsoft-syntex
-ms.custom: CSH, archive
+ms.custom: archive
 search.appverid:
 ms.collection:
-    - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
 ROBOTS: NOINDEX, NOFOLLOW

@@ -1,5 +1,5 @@
 ---
-title: Reactivate a site in Microsoft 365 Archive
+title: Manage Microsoft 365 Archive (Preview)
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -11,14 +11,13 @@ ms.service: microsoft-syntex
 ms.custom: CSH, archive
 search.appverid:
 ms.collection:
-    - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
 ROBOTS: NOINDEX, NOFOLLOW
-description: Learn how to reactivate a site in Microsoft 365 Archive.
+description: Learn how to manage Microsoft 365 Archive.
 ---
 
-# Reactivate a site in Microsoft 365 Archive
+# Manage Microsoft 365 Archive (Preview)
 
 > [!NOTE]
 > This article is currently in development.
