@@ -1,6 +1,6 @@
 ---
-title: Defender Vulnerability Management dashboard in the multi-tenant view
-description: Learn about the capabilities of the vulnerability management dashboard in the multi-tenant view in Microsoft 365 Defender
+title: Defender Vulnerability Management dashboard in multi-tenant management
+description: Learn about the capabilities of the vulnerability management dashboard in multi-tenant management in Microsoft 365 Defender
 search.appverid: met150
 ms.service: microsoft-365-security
 ms.subservice: m365d
@@ -17,7 +17,7 @@ ms.topic: conceptual
 ms.date: 09/01/2023
 ---
 
-# Defender Vulnerability Management dashboard in the multi-tenant view
+# Defender Vulnerability Management dashboard in multi-tenant management
 
 **Applies to:**
 
@@ -25,14 +25,14 @@ ms.date: 09/01/2023
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-You can use the vulnerability management dashboard in the multi-tenant view in Microsoft 365 Defender to view aggregated and summarized information across all tenants, such as:
+You can use the vulnerability management dashboard in multi-tenant management to view aggregated and summarized information across all tenants, such as:
 
 - Your exposure score and exposure level for devices across all tenants.
 - Your most exposed tenants along with details of the number of weaknesses, exposed devices, and available recommendations for each tenant.
 
-   :::image type="content" source="../../media/defender/mto-mdvm-dashboard.png" alt-text="Screenshot of the defender vulnerability management dashboard in the multi-tenant view in Microsoft 365 Defender" lightbox="../../media/defender/mto-mdvm-dashboard.png":::
+   :::image type="content" source="../../media/defender/mto-mdvm-dashboard.png" alt-text="Screenshot of the defender vulnerability management dashboard in multi-tenant management in Microsoft 365 Defender" lightbox="../../media/defender/mto-mdvm-dashboard.png":::
 
-The Defender Vulnerability Management dashboard in the multi-tenant view provides the following information across all the tenants you have access to:
+The Defender Vulnerability Management dashboard in multi-tenant management provides the following information across all the tenants you have access to:
 
 |Area|Description|
 |---|---|

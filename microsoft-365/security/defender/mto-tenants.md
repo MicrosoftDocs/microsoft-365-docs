@@ -1,6 +1,6 @@
 ---
-title: Manage tenants with the multi-tenant view in Microsoft 365 Defender
-description: Learn about the tenant list in the multi-tenant view in Microsoft 365 Defender
+title: Manage tenants with multi-tenant management in Microsoft 365 Defender
+description: Learn about the tenant list in multi-tenant management in Microsoft 365 Defender
 search.appverid: met150
 ms.service: microsoft-365-security
 ms.subservice: m365d
@@ -27,9 +27,9 @@ ms.date: 09/01/2023
 
 ## View the tenants page
 
-To view the list of tenants that appear in the multi-tenant view, go to [Settings page](https://mto.security.microsoft.com/mtosettings) in the multi-tenant view in Microsoft 365 Defender:
+To view the list of tenants that appear in multi-tenant management, go to [Settings page](https://mto.security.microsoft.com/mtosettings) in multi-tenant management in Microsoft 365 Defender:
 
-   :::image type="content" source="../../media/defender/mto-multi-tenant-view.png" alt-text="Screenshot of the multi-tenant view in Microsoft 365 Defender" lightbox="../../media/defender/mto-multi-tenant-view.png":::
+   :::image type="content" source="../../media/defender/mto-multi-tenant-view.png" alt-text="Screenshot of multi-tenant management in Microsoft 365 Defender" lightbox="../../media/defender/mto-multi-tenant-view.png":::
 
 From the **Settings** page you can:
 
@@ -39,6 +39,6 @@ From the **Settings** page you can:
 
 ## Multi-tenant view status indicator
 
-The Multi-tenant view status indicator is always available in the bottom right corner of the multi-tenant view in Microsoft 365 Defender. This indicator provides information when data issues occur with the page you're viewing, such as data loading issues or permissions issues.
+The multi-tenant management status indicator is always available in the bottom right corner of multi-tenant management in Microsoft 365 Defender. This indicator provides information when data issues occur with the page you're viewing, such as data loading issues or permissions issues.
 
 When an issue exists, the status indicator shows a red warning sign and hovering over it displays the issues that have occurred and the tenant information. By expanding each section, you see all the tenants with this issue.
