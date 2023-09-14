@@ -2,28 +2,24 @@
 title: Configure your network environment to ensure connectivity with Defender for Endpoint service
 description: Learn how to configure your network environment to connect with the Defender for Endpoint service
 keywords: configure, proxy, internet, internet connectivity, settings, proxy settings, netsh, winhttp, proxy server
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
+ms.reviewer: mkaminska
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier1
 ms.topic: how-to
 ms.subservice: mde
-ms.date: 09/13/2023
+ms.date: 09/14/2023
 ---
 
 
 # STEP 1: Configure your network environment to ensure connectivity with Defender for Endpoint service
-
 
 **Applies to:**
 
@@ -35,7 +31,6 @@ ms.date: 09/13/2023
 
 
 [!Include[Prerelease information](../../includes/prerelease.md)]
-
 
 Before you onboard devices to Defender for Endpoint, make sure your network is configured to connect to the service. The first step of this process involves adding URLs to the allowed domains list if your proxy server or firewall rules prevent access to Defender for Endpoint. This article also includes information about proxy and firewall requirements for older versions of Windows client and Windows Server.
 
@@ -49,11 +44,10 @@ The following downloadable spreadsheet lists the services and their associated U
 
 > [!NOTE]
 > (Applies to public preview)<br>
-> - As part of the preview, certain Defender for Endpoint services have been consolidated behind the URL: **\*.endpoint.security.microsoft.com**. You will be provided the option in Microsoft 365 Defender to use the [consolidated Defender for Endpoint URL](). For more information, see the updated list in the preceding table. You also have the new option of configuring allow lists using static Defender for Endpoint dedicated IP ranges.<br> 
-> - The use of the new consolidated URL or static IPs will require you to use a new onboarding package. You must verify that your devices meet the [prerequisites]() before using the new solution. <br>
-> For more information, see the updated list in the preceeding table. You also have the option of configuring allow lists using static Defender for Endpoint dedicated IP ranges. <br>
-> - Some services were not included in this consolidation effort. You must verify that you maintain connectivity with the required services. For details on services **not** included in the consolidation, see [Services not under the consolidated domain]().
-> - Devices running MMA agent are not supported under streamlined solution and will need to use the standard URL list. Devices running Windows version 1607, 1703, 1709, 1803 can onboard using the new onboarding package but will require a longer list of URLs. For more information, see the preceeding table.
+> - As part of the preview, certain Defender for Endpoint services are consolidated behind the URL: `\*.endpoint.security.microsoft.com`. You have the option to use the a reduced set of URLs in Microsoft 365 Defender for Defender for Endpoint. You also have the new option of configuring allow lists using static Defender for Endpoint dedicated IP ranges. For more information, see the INSTRUCTIONS HERE and review the updated list in the preceding table.<br> 
+> - To use the new onboarding method, devices must meet specific prerequisites and use a new onboarding package. For more information, see LINK.<br>
+> - Certain services are not included in this consolidation. You must verify that you maintain connectivity with the required services. For details on services **not** included in the consolidation, see the UPDATED URL SHEET or LINK TO Services not under the consolidated domain.
+> - Devices running the MMA agent are not supported under streamlined solution and must be onboarded using the down-level method. For a list of required URLs, see the MMA tab in the URL SHEET. Devices running legacy Windows version 1607, 1703, 1709, or 1803 can onboard using the new onboarding package but still require a longer list of URLs. For more information, see the preceeding table.
 
 <br>
 
