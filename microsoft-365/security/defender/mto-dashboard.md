@@ -1,5 +1,5 @@
 ---
-title: Defender Vulnerability Management dashboard in multi-tenant management
+title: Vulnerability management in multi-tenant management
 description: Learn about the capabilities of the vulnerability management dashboard in multi-tenant management in Microsoft 365 Defender
 search.appverid: met150
 ms.service: microsoft-365-security
@@ -17,13 +17,15 @@ ms.topic: conceptual
 ms.date: 09/01/2023
 ---
 
-# Defender Vulnerability Management dashboard in multi-tenant management
+# Vulnerability management in multi-tenant management
 
 **Applies to:**
 
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
+
+## Defender Vulnerability Management dashboard
 
 You can use the vulnerability management dashboard in multi-tenant management to view aggregated and summarized information across all tenants, such as:
 
@@ -41,6 +43,23 @@ The Defender Vulnerability Management dashboard in multi-tenant management provi
 |**Tenants with the largest increase in exposure**|Identify tenants with the largest increase in exposure over the last 30 days.|
 |**Device exposure distribution**|See how many devices are exposed based on their exposure level, across all tenants. Select a section in the doughnut chart to see the number of exposed devices at each level.|
 |**Tenant exposure distribution**|View a summary of exposed tenants aggregated by exposure level.|
+
+## Tenant vulnerability details
+
+The Tenants page under **Vulnerability management** includes vulnerability information for each tenant such as the exposure score, the number exposed devices, and the number of available recommendations:
+
+   :::image type="content" source="../../media/defender/mto-multi-tenant-view.png" alt-text="Screenshot of multi-tenant vulnerability management in Microsoft 365 Defender" lightbox="../../media/defender/mto-multi-tenant-view.png":::
+
+At the top of the page, you can view the number of tenants and you can also see the aggregate number of:
+
+- Exposed devices
+- Critical CVEs
+- High severity CVEs
+- Security recommendations
+
+Select a tenant name to navigate to the Microsoft Defender Vulnerability Management dashboard for that tenant in the [Microsoft 365 Defender](https://security.microsoft.com/machines) portal.
+
+For more information, see [Device inventory](../defender-vulnerability-management/tvm-dashboard-insights.md).
 
 ## Related articles
 
