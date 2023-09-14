@@ -3,7 +3,7 @@ title: "Turn Microsoft Bookings on or off"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 08/04/2020
+ms.date: 09/13/2023
 audience: Admin
 ms.topic: article
 ms.service: bookings
@@ -12,7 +12,6 @@ ms.localizationpriority: medium
 ms.collection:
 - Tier1
 - scotvorg
-ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: "Learn how to get access to Microsoft Bookings in Microsoft 365."
 ---
 
@@ -21,7 +20,7 @@ description: "Learn how to get access to Microsoft Bookings in Microsoft 365."
 Bookings can be turned on or off for your entire organization or for specific users. When you turn on Bookings for users, they can create a Bookings page, create a calendar, and allow other people to book time with them. This article is for owners and administrators who manage Bookings for their organizations.
 
 > [!NOTE]
-> The admin controls described in these sections are not available for Office 365 Operated by 21Vianet (China) customers.
+> The admin controls described in these sections aren't available for Office 365 Operated by 21Vianet (China) customers.
 
 ## Turn Bookings on or off for your organization using the Microsoft 365 admin center
 
@@ -29,7 +28,7 @@ Bookings can be turned on or off for your entire organization or for specific us
 
 2. In the admin center, go to **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Org settings**</a>.
 
-3. Select the checkbox for **Allow your organization to use Bookings** to enable or disable Bookings for your organization.
+3. Select Bookings and choose the checkbox for **Allow your organization to use Bookings** to turn on or turn off Bookings for your organization.
 
    > [!NOTE]
    > Turning off Bookings will disable all access to the service including creation and management of Bookings pages.
@@ -67,6 +66,14 @@ Staff details, such as contact information, will never be sent to customers via 
 You can require employees in your organization to opt-in before their availability information is shared through Bookings and before they can be bookable through a booking page.
 
 When this setting is enabled, people added as staff in booking calendars will get an email with a link to **Approve/Reject** the request.
+
+### Allow Microsoft to send SMS messages
+
+Set up Bookings to send reminders and information customers might need for a meeting or appointment.
+
+### Disable direct search engine indexing
+
+Hide your Bookings page from search results on Google, Bing or other search engines.
 
 ### Enforce naming policy for Bookings calendar alias
 
