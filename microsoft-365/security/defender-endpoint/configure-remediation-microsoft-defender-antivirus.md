@@ -8,7 +8,7 @@ author: denisebmsft
 ms.author: deniseb
 ms.topic: conceptual
 ms.custom: nextgen
-ms.date: 09/06/2023
+ms.date: 09/15/2023
 ms.reviewer:
 manager: dansimp
 ms.collection: 
@@ -91,7 +91,7 @@ If you're using Configuration Manager, see the following articles:
    |Scan <br/>Create a system restore point.|A system restore point is created each day before cleaning or scanning is attempted. |Disabled|
    |Scan<br/>Turn on removal of items from scan history folder.|Specify how many days items should be kept in the scan history.|30 days|
    |Root<br/>Turn off routine remediation.|Specify whether Microsoft Defender Antivirus automatically remediates threats, or whether to prompt the user.|Disabled. Threats are remediated automatically.|
-   |Quarantine<br/>Configure removal of items from Quarantine folder.|Specify how many days items should be kept in quarantine before being removed.|Items are kept in the quarantine folder indefinitely and aren't automatically removed. |
+   |Quarantine<br/>Configure removal of items from Quarantine folder.|Specify how many days items should be kept in quarantine before being removed.|90 days|
    |Threats<br/>Specify threat alert levels at which default action shouldn't be taken when detected.|Every threat that is detected by Microsoft Defender Antivirus is assigned a threat level (low, medium, high, or severe). You can use this setting to define how all threats for each of the threat levels should be remediated (quarantined, removed, or ignored). |Not applicable|
    |Threats<br/>Specify threats upon which default action shouldn't be taken when detected.|Specify how specific threats (using their threat ID) should be remediated. You can specify whether the specific threat should be quarantined, removed, or ignored.|Not applicable|
 
