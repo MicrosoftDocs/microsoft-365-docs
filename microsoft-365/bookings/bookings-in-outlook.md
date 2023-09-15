@@ -88,14 +88,15 @@ Use the **Get-OrganizationConfig** and **Set-OrganizationConfig** commands to fi
 
     If the command returns "EwsEnabled: **$true**" then proceed to Step 2.
 
-    If the command returns "EwsEnabled:" (empty is default), then enable, but only if need to block "Bookings with", and proceed to Step 2.
-    Otherwise the default values of EwsEnabled is enough to leave "Bookings with me" enabled, no further changes are needed.
+    If the command returns "EwsEnabled:" (empty is default),  no further changes are needed then proceed to Step 2
 
+    If the command returns "EwsEnabled: **$false**" then run the following command and proceed to Step 2.
+   
    ```PowerShell
    Set-OrganizationConfig -EwsEnabled: $true
    ```
 
-2. Check your EwsApplicationAccessPolicy by running the following command:
+3. Check your EwsApplicationAccessPolicy by running the following command:
 
    ```PowerShell
    Get-OrganizationConfig | Format-List EwsApplicationAccessPolicy,Ews*List
