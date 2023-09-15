@@ -40,6 +40,7 @@ At the top of the page, you can view the number of tenants and the number of dev
 - Newly discovered
 - High value
 
-Select a tenant name to navigate to the device inventory for that tenant in [Microsoft 365 Defender](https://security.microsoft.com/machines) portal where all data and inventory-related actions are available.
+Select a tenant name to navigate to the device inventory for that tenant in the [Microsoft 365 Defender](https://security.microsoft.com/machines) portal where all data and inventory-related actions are available.
 
 For more information, see [Device inventory](../defender-endpoint/machines-view-overview.md).
+
