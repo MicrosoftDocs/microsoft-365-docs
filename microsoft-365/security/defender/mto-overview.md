@@ -53,7 +53,6 @@ The following key capabilities are available for each tenant you have access to 
 |**Hunting** > **Advanced hunting**| Proactively hunt for intrusion attempts and breach activity across multiple tenants at the same time.|
 |**Hunting** > **Custom detection rules**|View and manage custom detection rules across multiple tenants.|
 |**Assets** > **Devices** > **Tenants**| For all tenants and at a tenant-specific level, explore the device counts across different values such as device type, device value, onboarding status, and risk status.|
-|**Assets** > **Devices** > **Device inventory**|View and manage devices across multiple tenants.|
 |**Endpoints** >**Vulnerability Management** > **Dashboard** |The Microsoft Defender Vulnerability Management dashboard provides both security administrators and security operations teams with aggregated vulnerability management information across multiple tenants. |
 |**Endpoints** > **Vulnerability management** > **Tenants** |For all tenants and at a tenant-specific level, explore vulnerability management information across different values such as exposed devices, security recommendations, weaknesses, and critical CVEs. |
 |**Configuration** > **Settings**|Lists the tenants you have access to. Use this page to view and manage your tenants.|
