@@ -3,7 +3,7 @@ title: "Microsoft Bookings"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 06/24/2020
+ms.date: 09/12/2023
 audience: Admin
 ms.topic: article
 ms.service: bookings
