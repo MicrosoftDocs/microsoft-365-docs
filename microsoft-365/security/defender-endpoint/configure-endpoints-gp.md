@@ -219,7 +219,7 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 
 5. Right-click **Scheduled tasks**, point to **New**, and then click **Immediate task**.
 
-6. In the **Task** window that opens, go to the **General** tab. Under **Security options** click Change User or Group and type SYSTEM and then click Check Names then OK. NT AUTHORITY\SYSTEM appears as the user account the task will run as.
+6. In the **Task** window that opens, go to the **General** tab under **Security options** and select **Change User or Group**, enter SYSTEM, then select **Check Names** and then **OK**. NT AUTHORITY\SYSTEM appears as the user account that the task will run as.
 
 7. Select **Run whether user is logged on or not** and check the **Run with highest privileges** check-box.
 
