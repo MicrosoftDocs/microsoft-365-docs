@@ -442,6 +442,22 @@
          href: integrate-microsoft-365-defender-secops-use-cases.md
        - name: Step 6. SOC maintenance tasks
          href: integrate-microsoft-365-defender-secops-tasks.md
+    - name: Multi-tenant management in Microsoft 365 Defender
+      items:
+        - name: Multi-tenant management in Microsoft 365 Defender
+          href: mto-overview.md
+        - name: Set up multi-tenant management in Microsoft 365 Defender 
+          href: mto-requirements.md
+        - name: View and manage incidents and alerts
+          href: mto-incidents-alerts.md
+        - name: Advanced hunting
+          href: mto-advanced-hunting.md
+        - name: Multi-tenant devices
+          href: mto-tenant-devices.md
+        - name: Vulnerability management
+          href: mto-dashboard.md
+        - name: Manage tenants
+          href: mto-tenants.md
     - name: Reference
       items: 
       - name: Manage roles and permissions
