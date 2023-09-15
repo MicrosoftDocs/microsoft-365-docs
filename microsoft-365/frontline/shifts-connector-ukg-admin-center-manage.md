@@ -48,7 +48,7 @@ You can use the [Shifts connector wizard](shifts-connector-wizard-ukg.md) (Previ
 ### Manage your connection instances
 
 > [!IMPORTANT]
-> Before mapping a UKG Dimensions instance to a Microsoft team, check if the team has schedule entities such as shifts or time off. If the team has an existing schedule with schedule entities, [remove the schedule entities from the team](shifts-connector-wizard-ukg.md#remove-schedule-entities-from-teams-you-want-to-map) before you map a UKG Dimensions instance to it. If you don't remove schedule entities before mapping, you'll see duplicate shifts.
+> Before mapping a UKG Dimensions instance to a team in Teams, check whether the team has schedule entities such as shifts or time off. If the team has an existing schedule with schedule entities, [remove the schedule entities from the team](/frontline/shifts-connector-ukg-prerequisites#make-sure-the-teams-that-you-want-to-map-dont-have-any-existing-schedules) before you map a UKG Dimensions instance to it. If you don't remove schedule entities before mapping, you'll see duplicate shifts.
 
 - To create a new connection instance, select **Create instance**. You're taken to the wizard, where you can [choose your settings and create mappings](shifts-connector-wizard-ukg.md#create-a-connection-instance).
 - To change an existing connection instance, go to **Actions** and select **Edit**. You're taken to the wizard, where you can [update the settings and mappings](shifts-connector-wizard-ukg.md#create-a-connection-instance).
@@ -87,8 +87,8 @@ To **edit your connection instance settings**, choose the data that your Shifts 
 To **edit your connection instance mappings**, you can:
 
 - Add new mappings by following the same process as when you first created your connection instance. See [Map UKG Dimensions instances to teams](/microsoft-365/frontline/shifts-connector-wizard-ukg#map-ukg-dimensions-instances-to-teams)
-- Edit existing mappings to update the team Iin Microsoft Teams to which a WFM instance is connected.
-  If you're mapping to team in Microsoft Teams that has previously used Shifts, make sure you [remove schedule entities from teams you want to map](/microsoft-365/frontline/shifts-connector-wizard-ukg#remove-schedule-entities-from-teams-you-want-to-map)
+- Edit existing mappings to update the team in Teams to which a WFM instance is connected.
+  If you're mapping to a team in Teams that previously used Shifts, make sure you [remove schedule entities from teams you want to map](/frontline/shifts-connector-ukg-prerequisites#make-sure-the-teams-that-you-want-to-map-dont-have-any-existing-schedules)
 - Delete active mappings, either by clearing the check box of the mapped WFM instance, or by uploading the CSV file with the mapped row removed.
 
 ## List of error messages
