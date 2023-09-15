@@ -48,7 +48,7 @@ You can use the [Shifts connector wizard](shifts-connector-wizard-ukg.md) (Previ
 ### Manage your connection instances
 
 > [!IMPORTANT]
-> Before mapping a UKG Dimensions instance to a team in Teams, check whether the team has schedule entities such as shifts or time off. If the team has an existing schedule with schedule entities, [remove the schedule entities from the team](/frontline/shifts-connector-ukg-prerequisites#make-sure-the-teams-that-you-want-to-map-dont-have-any-existing-schedules) before you map a UKG Dimensions instance to it. If you don't remove schedule entities before mapping, you'll see duplicate shifts.
+> Before you map a UKG Dimensions instance to a team in Teams, check whether the team has schedule entities such as shifts or time off. If the team has an existing schedule with schedule entities, [remove the schedule entities from the team](/microsoft-365/frontline/shifts-connector-ukg-prerequisites#make-sure-the-teams-that-you-want-to-map-dont-have-any-existing-schedules) before you map a UKG Dimensions instance to it. If you don't remove schedule entities before mapping, you'll see duplicate shifts.
 
 - To create a new connection instance, select **Create instance**. You're taken to the wizard, where you can [choose your settings and create mappings](shifts-connector-wizard-ukg.md#create-a-connection-instance).
 - To change an existing connection instance, go to **Actions** and select **Edit**. You're taken to the wizard, where you can [update the settings and mappings](shifts-connector-wizard-ukg.md#create-a-connection-instance).
@@ -61,18 +61,18 @@ For a complete list of error messages and how to resolve them, see [List of erro
 
 #### Edit connection instance
 
-To **edit your connection instance settings**, choose the data that your Shifts users can see and change. You have the following options for these settings:
+To edit your connection instance settings, you choose the data that your Shifts users can see and change. You have the following options for these settings:
 
 - **Shifts users will not see provider data**: Data won't sync between UKG Dimensions and Shifts. <br>
 - **Shifts users can see provider data**: Data syncing is unidirectional from UKG Dimensions to Shifts. <br>
 - **Shifts users can see and change provider data**: Data syncing is bidirectional between UKG Dimensions and Shifts.
 
 > [!IMPORTANT]
-> Before you disable a feature by selecting the option **Shifts users will not see provider data**, be aware that:
+> Before you disable a feature by selecting the **Shifts users will not see provider data** option, be aware that:
 >
-> - If the setting **Schedules, groups, shifts, and activities** is disabled, then all other settings, such as **Time off** and **Employee availability**, and more, will also be disabled.
-> - If the setting **Open shift** is disabled, **Open shift request** will also be disabled.
-> - If the setting **Time off** is disabled, **Time off request** will also be disabled.
+> - If the **Schedules, groups, shifts, and activities** setting is disabled, then all other settings, such as **Time off** and **Employee availability**, and more, will also be disabled.
+> - If the **Open shift** setting is disabled, the **Open shift request** setting will also be disabled.
+> - If the **Time off** setting is disabled, the **Time off request** setting will also be disabled.
 
 > [!IMPORTANT]
 > If you chose any of the following options to disable open shifts, open shift requests, swap requests, offer shift requests, or time off requests, there's another step you need to do to hide the capability in Shifts.
@@ -82,13 +82,13 @@ To **edit your connection instance settings**, choose the data that your Shifts 
 > - Time off requests: **Shifts users will not see provider data**
 > - Offer shift requests: **Shifts users will not see provider data**
 >
-> After you edit your settings, make sure you follow the steps to [Disable open shifts, open shifts requests, swap requests, and time off requests.](/microsoft-365/frontline/shifts-connector-wizard-ukg#disable-open-shifts-open-shifts-requests-swap-requests-and-time-off-requests)
+> After you edit your settings, make sure you follow the steps to [disable open shifts, open shifts requests, swap requests, and time off requests.](/microsoft-365/frontline/shifts-connector-wizard-ukg#disable-open-shifts-open-shifts-requests-swap-requests-and-time-off-requests)
 
-To **edit your connection instance mappings**, you can:
+To edit your connection instance mappings, you can:
 
 - Add new mappings by following the same process as when you first created your connection instance. See [Map UKG Dimensions instances to teams](/microsoft-365/frontline/shifts-connector-wizard-ukg#map-ukg-dimensions-instances-to-teams)
 - Edit existing mappings to update the team in Teams to which a WFM instance is connected.
-  If you're mapping to a team in Teams that previously used Shifts, make sure you [remove schedule entities from teams you want to map](/frontline/shifts-connector-ukg-prerequisites#make-sure-the-teams-that-you-want-to-map-dont-have-any-existing-schedules)
+  If you're mapping to a team in Teams that previously used Shifts, make sure you [remove schedule entities from teams you want to map](/microsoft-365/frontline/shifts-connector-ukg-prerequisites#make-sure-the-teams-that-you-want-to-map-dont-have-any-existing-schedules)
 - Delete active mappings, either by clearing the check box of the mapped WFM instance, or by uploading the CSV file with the mapped row removed.
 
 ## List of error messages
