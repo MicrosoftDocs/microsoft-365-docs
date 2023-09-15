@@ -33,7 +33,9 @@ To view the list of tenants that appear in multi-tenant management, go to [Setti
 
 From the **Settings** page you can:
 
-- **Add a tenant**: Select **Add tenant** > Choose the tenants to want to add > Select **Add tenant**. Selecting a tenant from the list opens the [Microsoft 365 Defender portal](https://security.microsoft.com) for that tenant.
+- **Add a tenant**: Select **Add tenant** > Choose the tenants to want to add > Select **Add tenant**.
+
+Select a tenant from the list to open the [Microsoft 365 Defender portal](https://security.microsoft.com) for that tenant.
 
 - **Remove a tenant**: Select the tenant you'd like to remove > select **Remove**.
 

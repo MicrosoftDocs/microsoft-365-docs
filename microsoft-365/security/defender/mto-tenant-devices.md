@@ -52,12 +52,12 @@ You can view and manage devices originating from multiple tenants under **Device
 
 1. To View or investigate a device, go to the [Device inventory page](https://mto.security.microsoft.com/machines) in multi-tenant management in Microsoft 365 Defender. The **Tenant name** and **Tenant ID** columns show which tenant the device belongs to:
 
-   :::image type="content" source="../../media/defender/mto-device-inventory.png" alt-text="Screenshot of the Microsoft 365 Defender multi-tenant incidents page" lightbox="../../media/defender/mto-device-inventory.png":::
+   :::image type="content" source="../../media/defender/mto-device-inventory.png" alt-text="Screenshot of the Microsoft 365 Defender multi-tenant device inventory page" lightbox="../../media/defender/mto-device-inventory.png":::
 
 2. Select the device you want to view. A flyout panel opens with the device details.
 3. From the device details page you can **Open device page** to view this device in a new tab for the specific tenant in the [Microsoft 365 Defender portal](https://security.microsoft.com).
 
 From the device inventory page you can select individual devices, or devices from the same tenant, and take one of the available actions available based on the device type:
 
-   :::image type="content" source="../../media/defender/ mto-device-inventory-actions.png" alt-text="Screenshot of the Microsoft 365 Defender multi-tenant incidents page" lightbox="../../media/defender/ mto-device-inventory-actions.png":::
+   :::image type="content" source="../../media/defender/mto-device-inventory-actions.png" alt-text="Screenshot of actions on the Microsoft 365 Defender multi-tenant device inventory page" lightbox="../../media/defender/mto-device-inventory-actions.png":::
 
