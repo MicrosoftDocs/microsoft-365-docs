@@ -1,7 +1,7 @@
 ---
 title: Use PowerShell to connect Shifts to UKG Dimensions
 author: lana-chin
-ms.author: heidip
+ms.author: v-chinlana
 manager: serdars
 ms.reviewer: imarquesgil
 ms.topic: how-to
@@ -43,11 +43,15 @@ With UKG Dimensions as the system of record, your frontline workers can efficien
 
 ### Prerequisites
 
-[!INCLUDE [shifts-connector-ukg-prerequisites](includes/shifts-connector-ukg-prerequisites.md)]
+Take time to review the information and complete all prerequisite and configuration tasks in [Prerequisites and requirements for the Teams Shifts connector for UKG Dimensions](shifts-connector-ukg-prerequisites.md).
+
+Make sure that you complete all the tasks before you follow the steps in this article.
+
+<!--[!INCLUDE [shifts-connector-ukg-prerequisites](includes/shifts-connector-ukg-prerequisites.md)]
 
 ### Configure single sign-on
 
-[!INCLUDE [shifts-connector-ukg-sso](includes/shifts-connector-ukg-sso.md)]
+[!INCLUDE [shifts-connector-ukg-sso](includes/shifts-connector-ukg-sso.md)]-->
 
 ### Admin role to manage the connector using PowerShell
 
