@@ -43,7 +43,7 @@ The multi-tenant management status indicator provides information on whether dat
 
 When no issue exists, the status indicator is a green tick:
 
-- ![No data issues](../../media/defender/mto-nodata-issue.png)
+- ![No data issues](../../media/defender/mto_nodata_issue.png)
 
 When an issue exists, the status indicator shows a red warning sign:
 
