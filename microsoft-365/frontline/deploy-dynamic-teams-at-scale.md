@@ -25,7 +25,7 @@ ms.date: 08/04/2023
 ## Overview
 
 >[!IMPORTANT]
->This feature will begin rolling out for public preview in July 2023. If you would like to provide feedback and improve this feature while in preview, please fill out [this form](https://forms.microsoft.com/r/DWaJXA6Dax)
+>This feature will begin rolling out for public preview in July 2023. If you would like to provide feedback and improve this feature while in preview, please fill out [this form](https://forms.microsoft.com/r/DWaJXA6Dax).
 
 Frontline teams are a collection of people, content, and tools within an organization for different frontline worker locations. Membership of frontline dynamic teams is determined and managed by a set of Azure Active Directory (Azure AD) attributes. [Learn more about Azure AD attributes](/azure/active-directory/external-identities/customers/how-to-define-custom-attributes).
 
@@ -38,12 +38,17 @@ You also determine team structure and team owners.
 
 Then, you can choose which locations you want to create dynamic frontline teams for.
 
-Team membership will be automatically managed over time through the power of dynamic teams. As frontline workers are onboarded, offboarded, or change locations, their membership in these teams will update accordingly.
+Team membership is automatically managed over time through the power of dynamic teams. As frontline workers are onboarded, offboarded, or change locations, their membership in these teams are updated accordingly.
 
 ## Prerequisites
 
-- Users must have a Microsoft 365 F3, F1, E1, E3, or E5 license. If a user doesn't have one of these licenses, they'll need an Azure AD P1 add-on license to use dynamic teams. [Learn more about frontline licensing](flw-licensing-options.md).
-- The admin running the deployment process needs Teams admin center permissions.
+- Users must have a Microsoft 365 F3, F1, E3, or E5 license. If a user doesn't have one of these licenses, they'll need an Azure AD P1 add-on license to use dynamic teams. [Learn more about frontline licensing](flw-licensing-options.md).
+- The admin running the deployment process must have one of the following role combinations:
+    - Teams admin and Global admin
+    - Teams admin and Groups admin
+    - Teams admin and User admin
+    - Teams admin and Intune admin
+
 - Ensure you can define your frontline workers and their work locations through data available in Azure AD. If you don't have this data in Azure AD, you can sync it through a [human capital management (HCM) connector](/azure/active-directory/app-provisioning/plan-cloud-hr-provision) or [use the PowerShell solution](deploy-teams-at-scale.md) to create teams at scale.
 - When evaluating the right solution, we recommend you do the following:
   1. Plan your frontline deployment.
@@ -125,9 +130,6 @@ You can manage your teams when changes happen in your organization.
 4. After your refresh completes, your setup status shows as **Complete**. You can proceed to [deploy your new teams](#deploy-your-frontline-dynamic-teams). Deployment can take several hours depending on how many new teams you're deploying.
 
 ### Edit your frontline team settings
-
->[!IMPORTANT]
->The ability to edit your frontline team settings is coming soon.
 
 1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), choose **Teams** > **Manage frontline teams**.
 2. In the **Deploy settings** column, choose **Deploy frontline teams** .
