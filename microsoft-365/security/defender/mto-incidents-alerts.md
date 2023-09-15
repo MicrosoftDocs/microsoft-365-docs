@@ -87,6 +87,6 @@ To manage alerts across multiple tenants:
 On the alert fly-out you can assign alerts, set the alert status, and classify the alerts for multiple tenants simultaneously.
 
 >[!Note]
-> You can only assign alerts incidents from same tenant.
+> Currently, you can only assign alerts incidents from same tenant.
 
 To learn more about alerts in the Microsoft 365 Defender portal, see [Manage alerts](../defender-endpoint/manage-alerts.md).

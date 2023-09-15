@@ -33,14 +33,18 @@ To view the list of tenants that appear in multi-tenant management, go to [Setti
 
 From the **Settings** page you can:
 
-- **Add a tenant**: Select **Add tenant** > Choose the tenants to want to add > Select **Add tenant**.
-
-Select a tenant from the list to open the [Microsoft 365 Defender portal](https://security.microsoft.com) for that tenant.
-
+- **Add a tenant**: Select **Add tenants** > Choose the tenants to want to add > Select **Add tenant**.
+- Select a tenant from the list to open the [Microsoft 365 Defender portal](https://security.microsoft.com) for that tenant.
 - **Remove a tenant**: Select the tenant you'd like to remove > select **Remove**.
 
-## Multi-tenant view status indicator
+## Multi-tenant management status indicator
 
-The multi-tenant management status indicator is always available in the bottom right corner of multi-tenant management in Microsoft 365 Defender. This indicator provides information when data issues occur with the page you're viewing, such as data loading issues or permissions issues.
+The multi-tenant management status indicator provides information on whether data issues exist for page you're viewing, such as data loading issues or permissions issues. The indicator appears in the bottom right corner of the page:
+
+- ![No data issues](../../media/defender/mto-nodata-issues.png) no data issues
+- ![data issues](../../media/defender/mto-data-issues.png) data issues exists
+- ![tenant data issues](../../media/defender/mto-tenantdata-issues.png) tenants with data issues
+
+When no issue exists, the status indicator is a green tick.
 
 When an issue exists, the status indicator shows a red warning sign and hovering over it displays the issues that have occurred and the tenant information. By expanding each section, you see all the tenants with this issue.
