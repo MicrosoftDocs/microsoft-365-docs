@@ -29,7 +29,7 @@ As an effort to further enable commercial utilization, Test Base started to supp
   - Intunewin packages to be uploaded. 
 
 **Intunewin file Upload Flow (synchronized with Intune account)** <br/>
-As an Intune customer who has an Intune package, which has been already onboarded to Intune portal. Customer can onboard the intunewin package (containing an app with/without dependencies of pre-install apps managed in Intune) to Test Base service. (via Intune account, which has proper permission to sync the Intune app info).
+As an Intune customer who has an Intune package, which has been already onboarded to Intune portal. Customer can onboard the intunewin package (containing an app with/without dependencies of pre-install apps managed in Intune) to Test Base service (via Intune account, which has proper permission to sync the Intune app info).
 
 **Prep Step**
 1. Login with your Test Base account.
