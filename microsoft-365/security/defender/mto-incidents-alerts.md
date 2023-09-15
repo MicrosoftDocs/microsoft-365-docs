@@ -58,7 +58,7 @@ To manage incidents across multiple tenants:
 On the incidents fly-out you can assign incidents, assign incidents tags, set the incident status, and classify multiple incidents for multiple tenants simultaneously.
 
 >[!Note]
-> You can only assign multiple incidents from same tenant.
+> Currently, you can only assign multiple incidents from same tenant.
 
 To learn more about incidents in the Microsoft 365 Defender portal, see [Manage incidents](../defender-endpoint/manage-incidents.md).
 
