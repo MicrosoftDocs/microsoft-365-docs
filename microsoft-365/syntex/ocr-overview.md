@@ -29,12 +29,10 @@ For example, you enable the OCR service and then add image files to your documen
 
 ### Supported file types
 
-The OCR service is available for the following file types:
-
-- JPEG
-- JPG
-- PNG
-- BMP
+|Endpoint  |Supported file types  |
+|---------|---------|
+|SharePoint and OneDrive     |.bmp, .png, .jpeg, .jpg, .jfif, .arw, .cr2, .crw, .erf, .gif, .mef, .mrw, .nef, .nrw, .orf, .pef, .raw, .rw2, .rw1, .sr2, .tif, .tiff, .heic, .heif, .ari, .bay, .cap, .cr3, .dcs, .dcr, .drf, .eip, .fff, .iiq, .k25, .kdc, .mef, .mos, .ptx, .pxn, .raf, .rwl, .sr2, .srf, .srw, .x3f, and .dng  |
+|Teams, Exchange, and Windows devices     |.bmp, .png, .jpeg, .jpg, .tiff, and .pdf (image only)     |
 
 ### Supported languages
 
