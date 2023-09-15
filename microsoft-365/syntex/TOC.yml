@@ -191,13 +191,13 @@
     - name: Microsoft 365 Archive 
       items: 
         - name: Overview 
-          href: /archive/archive-overview.md
+          href: archive/archive-overview.md
         - name: Admin setup 
-          href: /archive/archive-setup.md
+          href: archive/archive-setup.md
         - name: Manage 
-          href: /archive/archive-manage.md
+          href: archive/archive-manage.md
         - name: Compliance 
-          href: /archive/archive-compliance.md
+          href: archive/archive-compliance.md
 
     - name: Annotations
       href: annotations.md
