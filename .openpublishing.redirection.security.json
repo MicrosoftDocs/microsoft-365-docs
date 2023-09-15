@@ -1,6 +1,11 @@
 {
    "redirections":[
       {
+         "source_path":"microsoft-365/security/defender/opt-out-of-preview.md",
+         "redirect_url":"/microsoft-365/security/defender/dex-xdr-overview",
+         "redirect_document_id":true
+      },
+      {
          "source_path":"microsoft-365/security/defender/defenderexpertsforhuntingprev.md",
          "redirect_url":"/microsoft-365/security/defender/defender-experts-for-hunting",
          "redirect_document_id":true
@@ -2803,6 +2808,11 @@
        {
          "source_path":"microsoft-365/security/defender-endpoint/specify-additional-definitions-network-traffic-inspection-mdav.md",
          "redirect_url":"/microsoft-365/security/defender-endpoint/network-protection",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/defender-business/mdb-get-help.md",
+         "redirect_url":"/microsoft-365/admin/get-help-support",
          "redirect_document_id":false
        }
    ]
