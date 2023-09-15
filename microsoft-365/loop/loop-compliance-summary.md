@@ -36,7 +36,7 @@ Because Loop components are stored as files in OneDrive, there are many capabili
 - End-user ability to see [Data Loss Prevention (DLP)](/microsoft-365/compliance/dlp-learn-about-dlp) policy tips
 - [Conditional Access](/azure/active-directory/conditional-access/overview)
 
-To configure Loop components in your organization, see [Manage Loop components in OneDrive and SharePoint](/microsoft-365/loop/components-configuration).
+To configure Loop components in your organization, see [Manage Loop components in OneDrive and SharePoint](/microsoft-365/loop/loop-components-configuration).
 
 ## Summary of compliance capabilities for content created in Loop workspaces
 
