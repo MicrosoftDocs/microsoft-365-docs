@@ -46,7 +46,7 @@ For more information, see [Device inventory](../defender-endpoint/machines-view-
 
 ## Multi-tenant device inventory
 
-You can manage devices originating from multiple tenants under **Device inventory**.
+You can view and manage devices originating from multiple tenants under **Device inventory**.
 
 ## View and investigate devices
 
@@ -56,3 +56,8 @@ You can manage devices originating from multiple tenants under **Device inventor
 
 2. Select the device you want to view. A flyout panel opens with the device details.
 3. From the device details page you can **Open device page** to view this device in a new tab for the specific tenant in the [Microsoft 365 Defender portal](https://security.microsoft.com).
+
+From the device inventory page you can select individual devices, or devices from the same tenant, and take one of the available actions available based on the device type:
+
+   :::image type="content" source="../../media/defender/ mto-device-inventory-actions.png" alt-text="Screenshot of the Microsoft 365 Defender multi-tenant incidents page" lightbox="../../media/defender/ mto-device-inventory-actions.png":::
+

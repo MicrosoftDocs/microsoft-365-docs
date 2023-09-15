@@ -83,7 +83,7 @@ The first time you use multi-tenant management in Microsoft 365 Defender, you ne
 
 The features available in multi-tenant management now appear on the navigation bar and you're ready to view and manage security data across all your tenants.
 
-   :::image type="content" source="../../media/defender/mto-tenant-settings.png" alt-text="Screenshot of multi-tenant management in Microsoft 365 Defender" lightbox="../../media/defender/mto-multi-tenant-settings.png":::
+   :::image type="content" source="../../media/defender/mto-tenant-settings.png" alt-text="Screenshot of multi-tenant management in Microsoft 365 Defender" lightbox="../../media/defender/mto-tenant-settings.png":::
 
 ## Next step
 
