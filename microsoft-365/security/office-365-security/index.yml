@@ -36,8 +36,8 @@ landingContent:
     linkLists:
       - linkListType: get-started
         links:
-          - text: Protect against threats
-            url: protect-against-threats.md
+          - text: Get started with Microsoft Defender for Office 365
+            url: mdo-deployment-guide.md
           - text: Preset security policies in EOP and Microsoft Defender for Office 365
             url: preset-security-policies.md
           - text: What's new in Microsoft Defender for Office 365

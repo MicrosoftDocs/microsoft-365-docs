@@ -45,8 +45,6 @@ Make sure that the following requirements are met:
 
 - [Audit logging](/purview/audit-log-enable-disable) is turned on for your organization (it's on by default).
 
-- Your organization has policies defined for anti-spam, anti-malware, anti-phishing, and so on. See [Protect against threats in Office 365](protect-against-threats.md).
-
 - You are a global administrator, or you have either the Security Administrator or the Search and Purge role assigned in the Microsoft 365 Defender portal. For more information, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md). For some actions, you must also have the Preview role assigned.
 
 ### Preview role permissions
@@ -186,7 +184,5 @@ Delivery location shows the results of policies and detections that run post-del
 [Remediate malicious email delivered in Office 365](remediate-malicious-email-delivered-office-365.md)
 
 [Microsoft Defender for Office 365](office-365-ti.md)
-
-[Protect against threats in Office 365](protect-against-threats.md)
 
 [View reports for Defender for Office 365](reports-defender-for-office-365.md)

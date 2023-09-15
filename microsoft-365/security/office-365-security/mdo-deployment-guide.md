@@ -76,7 +76,7 @@ Create the following email authentication DNS records at your DNS registrar or D
 
   If there are other known or unknown sources for email in the domain (for example, third-party email services or on-premises email servers), or if you're using Office 365 Germany or Exchange Online Dedicated, see [Set up SPF to help prevent spoofing](email-authentication-spf-configure.md) for how to correctly configure the SPF TXT record.
 
-- **DomainKeys Identified Mail (DKIM)**: If you're also going to configure DMARC or your environment complex, you need to configure DKIM for the custom domain. For details and instructions, see [Use DKIM to validate outbound email sent from your custom domain](email-authentication-dkim-configure.md).
+- **DomainKeys Identified Mail (DKIM)**: If you're also going to configure DMARC or your environment is complex, you need to configure DKIM for the custom domain. For details and instructions, see [Use DKIM to validate outbound email sent from your custom domain](email-authentication-dkim-configure.md).
 
   Otherwise, the built-in DKIM configuration in Microsoft 365 is probably OK for most customers who use a single custom domain.
 
@@ -277,13 +277,35 @@ The important parts of user message reporting are:
 
 For complete information about user reported message settings, see [User reported settings](submissions-user-reported-messages-custom-mailbox.md).
 
-## Step 6: Allow and block
+## Step 6: Block and allow
 
-You need to become familiar with how to temporarily allow and block senders, files (email attachments), and URLs using the [Tenant Allow/Block List](tenant-allow-block-list-about.md) at <https://security.microsoft.com/tenantAllowBlockList> and the Submissions page at <https://security.microsoft.com/reportsubmission>:
+You need to become familiar with how to block and (temporarily) allow message senders, files, and URLs at the following locations in the Defender portal:
 
-- You can block **domains and email addresses**, **files**, and **URLs** on the corresponding tabs in the Tenant Allow/Block List and by submitting the items to Microsoft for analysis from the **Submissions** page. When you submit an item to Microsoft, corresponding block entries are also created in the Tenant Allow/Block List.
+- The [Tenant Allow/Block List](tenant-allow-block-list-about.md) at <https://security.microsoft.com/tenantAllowBlockList>.
+- The **Submissions** page at <https://security.microsoft.com/reportsubmission>.
+- The **Spoof intelligence insight** page at <https://security.microsoft.com/spoofintelligence>.
 
-  > [!TIP]
-  > Users in the organization also can't _send_ email to domains or email addresses that are specified in block entries in the Tenant Allow/Block List.
+In general, it's easier to create blocks than allows, because unnecessary allow entries expose your organization to malicious email that would have been filtered by the system.
 
-- Detections by [spoof intelligence](anti-spoofing-spoof-intelligence.md) in anti-phishing policies are shown in the spoof intelligence insight at <https://security.microsoft.com/spoofintelligence>. If you change an allow entry to a block entry or vice-versa, the sender becomes a manual block or allow entry on the **Spoofed senders** tab in the Tenant Allow/Block List. You can also proactively create allow and block entries for not yet encountered spoofed senders on the **Spoofed senders** tab.
+- **Block**:
+
+  - You can create block entries for **domains and email addresses**, **files**, and **URLs** on the corresponding tabs in the Tenant Allow/Block List and by submitting the items to Microsoft for analysis from the **Submissions** page. When you submit an item to Microsoft, corresponding block entries are also created in the Tenant Allow/Block List.
+
+    > [!TIP]
+    > Users in the organization also can't _send_ email to domains or email addresses that are specified in block entries in the Tenant Allow/Block List.
+
+  - Messages blocked by [spoof intelligence](anti-spoofing-spoof-intelligence.md) are shown on the **Spoof intelligence** page. If you change an allow entry to a block entry, the sender becomes a manual block entry on the **Spoofed senders** tab in the Tenant Allow/Block List. You can also proactively create block entries for not yet encountered spoofed senders on the **Spoofed senders** tab.
+
+- **Allow**:
+
+  - You can't create allow entries for **domains and email addresses**, **files**, and **URLs** directly on the corresponding tabs in the Tenant Allow/Block List. Instead, you use the **Submissions** page to report the item to Microsoft. At the same time, you can select to allow the item, which creates a corresponding temporary allow entry in the Tenant Allow/Block list.
+
+  - Messages allowed by [spoof intelligence](anti-spoofing-spoof-intelligence.md) are shown on the **Spoof intelligence** page. If you change a block entry to an allow entry, the sender becomes a manual allow entry on the **Spoofed senders** tab in the Tenant Allow/Block List. You can also proactively create allow entries for not yet encountered spoofed senders on the **Spoofed senders** tab.
+
+For complete details, see the following articles:
+
+- [Allow or block email using the Tenant Allow/Block List](tenant-allow-block-list-email-spoof-configure.md)
+- [Allow or block files using the Tenant Allow/Block List](tenant-allow-block-list-files-configure.md)
+- [Allow or block URLs using the Tenant Allow/Block List](tenant-allow-block-list-urls-configure.md)
+- [Use the Submissions page to submit suspected spam, phish, URLs, legitimate email getting blocked, and email attachments to Microsoft](submissions-admin.md)
+- [Override the spoof intelligence verdict](anti-spoofing-spoof-intelligence.md#override-the-spoof-intelligence-verdict)

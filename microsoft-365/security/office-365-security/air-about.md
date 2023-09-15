@@ -73,13 +73,7 @@ During and after each automated investigation, your security operations team can
 
 ## How to get AIR
 
-AIR capabilities are included in [Microsoft Defender for Office 365](defender-for-office-365.md#whats-the-difference-between-microsoft-defender-for-office-365-plan-1-and-plan-2), provided your policies and alerts are configured. Need some help? Follow the guidance in [Protect against threats](protect-against-threats.md) to set up or configure the following protection settings:
-
-- [Verify audit logging is turned on](/purview/audit-log-enable-disable)
-- [Anti-malware protection](protect-against-threats.md#part-1---anti-malware-protection-in-eop)
-- [Anti-phishing protection](../office-365-security/protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365)
-- [Anti-spam protection](protect-against-threats.md#part-3---anti-spam-protection-in-eop)
-- [Safe Links and Safe Attachments](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
+AIR capabilities are included in [Microsoft Defender for Office 365](defender-for-office-365.md#whats-the-difference-between-microsoft-defender-for-office-365-plan-1-and-plan-2), as long as [audit logging is turned on](/purview/audit-log-enable-disable) (it's on by default).
 
 In addition, make sure to [review your organization's alert policies](/purview/alert-policies), especially the [default policies in the Threat management category](/purview/alert-policies#default-alert-policies).
 

@@ -42,8 +42,8 @@ Every Office 365 subscription comes with security capabilities. The goals and av
 1. Microsoft Defender for Office 365 Plan 1 (Defender for Office P1).
 1. Microsoft Defender for Office 365 Plan 2 (Defender for Office P2).
 
-> [!NOTE]
-> If you bought your subscription and need to roll out security features *right now*, skip to the steps in the [Protect Against Threats](protect-against-threats.md) article. If you're new to your subscription and would like to know your license before you begin, browse Billing > Your Products in the [Microsoft 365 admin center](https://admin.microsoft.com/AdminPortal/#/homepage).
+> [!TIP]
+> If you're new to your subscription and would like to know your license before you begin, go the **Your products** page in the Microsoft 365 admin center at <https://admin.microsoft.com/Adminportal/Home#/subscriptions>.
 
 Office 365 security builds on the core protections offered by EOP. EOP is present in any subscription where Exchange Online mailboxes can be found (remember, all the security products discussed here are Cloud-based).
 

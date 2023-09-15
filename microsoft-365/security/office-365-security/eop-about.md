@@ -34,7 +34,7 @@ Exchange Online Protection (EOP) is the cloud-based filtering service that prote
 > [!NOTE]
 > EOP is also available by itself to protect on-premises mailboxes and in hybrid environments to protect on-premises Exchange mailboxes. For more information, see [Standalone Exchange Online Protection](/exchange/standalone-eop/standalone-eop).
 
-The steps to set up EOP security features and a comparison to the added security that you get in Microsoft Defender for Office 365, see [protect against threats](protect-against-threats.md). The recommended settings for EOP features are available in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
+EOP protection is on by default, due to the default policies for [anti-malware](anti-malware-policies-configure.md), [anti-spam](anti-spam-policies-configure.md), and [anti-phishing](anti-phishing-policies-eop-configure.md) (spoof protection) that apply to all recipients by default and can't be turned off. You should consider turning on and adding all recipients to the Standard and/or Strict [preset security policies](preset-security-policies.md). The default, standard, and strict settings for EOP features are described in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
 
 The rest of this article explains how EOP works and the features that are available in EOP.
 
@@ -77,7 +77,7 @@ For information about requirements, important limits, and feature availability a
 - EOP uses multiple anti-malware engines help to automatically protect our customers.
 - EOP inspects the active payload in the message body and all message attachments for malware.
 - For recommended values for protection policies, see [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
-- For quick instructions to configure protection policies, see [Protect against threats](protect-against-threats.md).
+-  We recommend turning on and adding all recipients to the Standard and/or Strict [preset security policies](preset-security-policies.md).
 
 |Feature|Comments|
 |---|---|

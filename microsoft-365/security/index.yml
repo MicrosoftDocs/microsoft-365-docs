@@ -91,7 +91,7 @@ conceptualContent:
         # Card
       - title: Enable safe email messages
         links:
-         - url: /microsoft-365/security/office-365-security/protect-against-threats
+         - url: /microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview
            itemType: overview
            text: Get Started with Defender for Office 365
          - url: /microsoft-365/security/office-365-security/mdo-sec-ops-guide

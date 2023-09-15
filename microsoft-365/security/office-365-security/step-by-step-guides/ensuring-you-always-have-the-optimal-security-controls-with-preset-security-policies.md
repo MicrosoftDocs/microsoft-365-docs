@@ -80,4 +80,4 @@ Use config analyzer to determine if your users are configured per Microsoft's be
 > [!TIP]
 > Configuration analyzer allows admins to find and fix security policies where the settings are below the Standard or Strict protection profile settings in preset security policies. Find out more about Configuration analyzer [here](../../office-365-security/configuration-analyzer-for-security-policies.md).
 
-Secure Presets are always recommended because it *ensures* admins are exercising Microsoft best practices. However, in some cases customized configurations are required. Learn about custom policies [here](../../office-365-security/tenant-wide-setup-for-increased-security.md).
+Secure Presets are always recommended because it *ensures* admins are exercising Microsoft best practices. However, in some cases customized configurations are required. Learn about the reasons to use custom policies [here](../../office-365-security/mdo-deployment-guide.md#determine-your-security-policy-strategy)

@@ -139,8 +139,4 @@ The final diagram (as with all parts of the diagram composing it) *is subject to
 
 :::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png" alt-text="All the phases of filtering in Defender for Office 365 in order, from 1 to 4" lightbox="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png":::
 
-## More information
-
-Do you need to set up Microsoft Defender for Office 365 ***right now***? Use this stack, *now*, with [this step-by-step](protect-against-threats.md) to start protecting your organization.
-
 *Special thanks from MSFTTracyP and the docs writing team to Giulian Garruba for this content*.

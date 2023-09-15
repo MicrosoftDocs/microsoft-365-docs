@@ -56,8 +56,6 @@
            items:
            - name: Defender for Office 365
              href: defender-for-office-365.md
-           - name: Protect against threats
-             href: protect-against-threats.md
          - name: Option 3 - Custom EOP and Defender for Office 365 P1 and P2 environments installation path (manual)
            items:
            - name: Exchange Online Protection overview
@@ -80,8 +78,6 @@
      items:
        - name: Defender for Office 365 Security Operations Guide
          href: mdo-sec-ops-guide.md
-       - name: Configure your tenant for increased security
-         href: tenant-wide-setup-for-increased-security.md
        - name: Support for Microsoft Teams
          href: mdo-support-teams-about.md
        - name: Security recommendations for priority accounts
