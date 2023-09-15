@@ -33,7 +33,7 @@ additionalContent:
           url: /deployoffice/privacy/microsoft-365-copilot
         # Card
         - title: Setup
-          summary: Get ready for Microsoft 365 Copilot in the Microsoft 365 Admin Center.
+          summary: Get started with Microsoft 365 Copilot in the Microsoft 365 Admin Center.
           url: /microsoft-365/admin/copilot/m365-copilot-setup/
         # Card
         - title: Service description
