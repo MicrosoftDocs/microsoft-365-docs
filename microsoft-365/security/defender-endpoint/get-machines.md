@@ -1,11 +1,7 @@
 ---
 title: List machines API
 description: Learn how to use the List machines API to retrieve a collection of machines that have communicated with Microsoft Defender for Endpoint cloud.
-keywords: apis, graph api, supported apis, get, devices
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
@@ -19,7 +15,7 @@ ms.collection:
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 09/15/2023
 ---
 
 # List machines API
@@ -49,9 +45,9 @@ See examples at [OData queries with Defender for Endpoint](exposed-apis-odata-sa
 
 ## Limitations
 
-1. You can get devices last seen according to your configured retention period.
-2. Maximum page size is 10,000.
-3. Rate limitations for this API are 100 calls per minute and 1500 calls per hour. 
+- You can get devices last seen according to your configured retention period.
+- Maximum page size is 10,000.
+- Rate limitations for this API are 100 calls per minute and 1500 calls per hour. 
 
 ## Permissions
 
@@ -138,4 +134,5 @@ Content-type: application/json
 ## Related articles
 
 - [OData queries with Microsoft Defender for Endpoint](exposed-apis-odata-samples.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
