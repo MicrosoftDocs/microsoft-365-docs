@@ -28,7 +28,7 @@ As an effort to further enable commercial utilization, Test Base started to supp
   - Currently Test Base support synchronizing via the same subscription between Intune account and Test Base account (you don’t have to have an Intune account to upload your intunewin package however if you’d like to synchronize the Intune configuration for the intunewin file’s corresponding apps from Intune, you'll need to make sure your Intune account is created under the same subscription as your Test Base account).
   - Intunewin packages to be uploaded. 
 
-**Intunwin file Upload Flow (synchronized with Intune account)** <br/>
+**Intunewin file Upload Flow (synchronized with Intune account)** <br/>
 As an Intune customer who has an Intune package, which has been already onboarded to Intune portal. Customer can onboard the intunewin package (containing an app with/without dependencies of pre-install apps managed in Intune) to Test Base service. (via Intune account, which has proper permission to sync the Intune app info).
 
 **Prep Step**
@@ -117,7 +117,7 @@ The Test matrix tab is for you to indicate the specific Windows update program o
 Review the configuration after which the package could be published.<br/><br/>
 
 
-**Intunwin file Upload Flow (unable to synchronize with Intune account)** <br/>
+**Intunewin file Upload Flow (unable to synchronize with Intune account)** <br/>
 As a Test Base customer who has a standalone intunewin package. Customer can onboard the intunewin package (containing an app with/without dependencies of pre-install apps managed in Intune) without needing to get permission granted against Intune account to finish the onboarding process.
 
 **Prep Step**
