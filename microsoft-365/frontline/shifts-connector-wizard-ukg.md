@@ -192,8 +192,8 @@ Choose the UKG Dimensions instances that you want to connect to Shifts, and then
 
 4. Enter the correct location in the **Time Zone** column if needed.
 
->[!NOTE]
->The wizard supports approximately 460 locations. The time zone must be in tz format. If the specific location that you chose isn't supported, you'll see an error in the wizard. Try using the closest city or major city within the same time zone.
+    >[!NOTE]
+    >The wizard supports approximately 460 locations. The time zone must be in tz format. If the specific location that you chose isn't supported, you'll see an error in the wizard. Try using the closest city or major city within the same time zone.
 
 5. On the Mapping page, select **Browse** to find and upload your completed CSV file.
 
