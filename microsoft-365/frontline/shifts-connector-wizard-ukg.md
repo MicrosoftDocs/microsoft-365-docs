@@ -75,7 +75,7 @@ After you confirm that you meet all the prerequisites, you're ready to run the w
 
     :::image type="content" source="media/shifts-connector-wizard-ukg-connection-details.png" alt-text="Screenshot of the Connection details page of the wizard, showing connection settings." lightbox="media/shifts-connector-wizard-ukg-connection-details.png":::
 
-1. Enter your UKG Dimensions information and then select **Save connection**.
+1. Enter your UKG Dimensions information, and then select **Save connection**.
     - Account username
     - Account password
     - API URL
@@ -87,18 +87,18 @@ After you confirm that you meet all the prerequisites, you're ready to run the w
     Signing in with your username enables access to all instances created in UKG Dimensions. If you don't know one or more of your connection details, contact your UKG Dimensions delivery partner or account manager.
 
 > [!NOTE]
-> - Check that your SSO URL is structured like this sample URL:  
-> https://contoso-sso.mykronos.com 
-> - Then add this extra text at the end of the URL (after .com), structured like this (for a sample client ID XDV45GTaaaaab43342XA):  
-> https://contoso-sso.mykronos.com/oauth2/authorize?client_id=XDV45GTaaaaab43342XA
+> - Check that your SSO URL is structured like this sample URL,  
+> https://contoso-sso.mykronos.com.
+> - Then, add this extra text at the end of the URL (after .com), structured like this (for a sample client ID XDV45GTaaaaab43342XA),  
+> https://contoso-sso.mykronos.com/oauth2/authorize?client_id=XDV45GTaaaaab43342XA.
 
-To create another connection, go to the Connector Management Console page and select **Add connection**.
+To create another connection, go to the Connector Management Console page, and select **Add connection**.
 
 ### Create a connection instance
 
 After you create a connection, you can set up one or more connection instances in that connection.
 
-You'll see all the connections you've created on your **Connector Management Console**. Under the connection where you want to create a new instance, select **Create instance**
+You'll see all the connections that you created on the Connector Management Console page. Under the connection where you want to create a new instance, select **Create instance**.
     :::image type="content" source="media/shifts-connector-wizard-ukg-create-instance.png" alt-text="Screenshot of the Connector Management Console showing existing connections." lightbox="media/shifts-connector-wizard-ukg-create-instance.png":::
 
 <a name="sync"> </a>
@@ -110,13 +110,13 @@ On the Settings page, you choose the information to sync from UKG Dimensions to 
 1. Enter a name for your connection instance. It can't be longer than 100 characters or have any special characters.
 
       > [!TIP]
-      > You'll be given the following options for the next group of settings:
+      > For the next group of settings, you have the following options to choose from:
       >
       > - **Shifts users will not see provider data**: Data won't sync between UKG Dimensions and Shifts.
       > - **Shifts users can see provider data**: Data syncing is unidirectional from UKG Dimensions to Shifts.
       > - **Shifts users can see and change provider data**: Data syncing is bidirectional between UKG Dimensions and Shifts.
 
-2. Choose your basic, **Time card**, and **Request** settings from the options listed above.
+2. Choose the option you want for your basic, **Time card**, and **Request** settings.
 
 3. Then, choose your sync frequency.
 
@@ -154,11 +154,11 @@ Choose the UKG Dimensions instances that you want to connect to Shifts, and then
 
 :::image type="content" source="media/shifts-connector-wizard-ukg-map.png" alt-text="Screenshot of wizard, showing the list of UKG Dimensions instances." lightbox="media/shifts-connector-wizard-ukg-map.png":::
 
-1. On the **Mapping** page, start by choosing which WFM instance(s) you want to map to Microsoft Teams team(s).
+1. On the Mapping page, start by choosing the WFM instance(s) that you want to map to team(s) in Teams.
 
-1. Tick the checkbox for each WFM instance you want to map. Instances will only map if you check their boxes.
+1. Select the checkbox for each WFM instance you want to map. An instance is only mapped if the check box is selected.
 
-1. Next, search for and choose the correct Microsoft Teams team.
+1. Next, search for and choose the correct team in Teams.
 
     Keep in mind that teams that are already mapped to a WFM instance in this connection instance won't be available to map again.
 
@@ -168,7 +168,7 @@ Choose the UKG Dimensions instances that you want to connect to Shifts, and then
 
 ##### Use a CSV file to map instances to teams
 
-1. On the **Mapping** page, choose **CSV upload tool**.
+1. On the Mapping page, choose **CSV upload tool**.
 
 2. Select **Download template** to get the CSV mapping file. The template includes a list of all your UKG Dimensions instances and their IDs. The top rows of your template will look like this:
 
@@ -188,18 +188,18 @@ Choose the UKG Dimensions instances that you want to connect to Shifts, and then
    |------|------|------|------|------|
    |Automatically prefilled |Automatically prefilled |Team ID that you moved |Team Name that you moved |Default*|
 
-Repeat this for all your mappings.
+    Repeat this step for all your mappings.
 
-4. Enter the correct location in the Time Zone column if needed.
+4. Enter the correct location in the **Time Zone** column if needed.
 
 >[!NOTE]
->The wizard supports approximately 460 locations. The Time Zone needs to be according to the tz format. If the specific location you chose isn't supported, you'll be shown an error in the wizard. Try using the closest city or major city within the same time zone.
+>The wizard supports approximately 460 locations. The time zone must be in tz format. If the specific location that you chose isn't supported, you'll see an error in the wizard. Try using the closest city or major city within the same time zone.
 
-5. On the **Mapping** page, select **Browse** to find and upload your completed CSV file.
+5. On the Mapping page, select **Browse** to find and upload your completed CSV file.
 
-6. Choose **Done** if your file has uploaded correctly. Otherwise, review the provided error report and upload a corrected file.
+6. Choose **Done** if your file has uploaded correctly. Otherwise, review the error report and upload a corrected file.
 
-7. Your new mappings are listed on the **Mappings** page. Choose **Next**.
+7. Your new mappings are listed on the Mappings page. Choose **Next**.
 
 ### Review and finish
 
