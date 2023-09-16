@@ -49,7 +49,7 @@ Managed Shifts connectors are connectors developed in collaboration with our par
 |[Reflexis Shifts connector for Microsoft Teams](#reflexis-shifts-connector-for-microsoft-teams)|Use this connector to integrate Shifts with Reflexis Workforce Management. This connector is hosted and managed by Zebra. |To learn more, go to <https://connect.zebra.com/microsoft-connectors>.|
 
 <a name="blue_yonder"> </a>
-### Microsoft Teams Shifts connector for Blue Yonder
+## Microsoft Teams Shifts connector for Blue Yonder
 
 The Teams Shifts connector for Blue Yonder is a first-party offering that's hosted and managed by Microsoft. With this connector, you can integrate Shifts with Blue Yonder Workforce Management (Blue Yonder WFM) versions 2020.3, 2021.1, or 2021.2 to manage your schedules and keep them up to date.  
 
@@ -81,7 +81,7 @@ The following actions are currently not supported:
 
 When a frontline manager or worker tries to do any of these actions in Shifts, they'll receive a message to let them know the action isn't supported.
 
-#### Example scenario
+### Example scenario
 
 Eden, a manager, publishes a schedule in Blue Yonder WFM, which is synced to Shifts in Teams through the connector. Alex, a staff member, gets notified in Teams on his mobile device, and views his schedule and assigned shifts.
 
@@ -89,7 +89,7 @@ Alex needs to take some time off and requests a day off using Shifts. The reques
 
 Alex wants to swap a shift with a coworker. In Shifts, Alex sees a list of all shifts that are eligible for a swap based on business rules in Blue Yonder WFM. Alex chooses a shift that's currently assigned to Gena. Gena is notified in Teams on their mobile device and accepts the swap request. Eden sees and approves the request in Shifts, and the approval is synced to Blue Yonder WFM. (Eden can also see and approve the request in Blue Yonder WFM). Alex and Gena are notified in Teams, and view their updated schedules.
 
-#### Set up a connection to Blue Yonder Workforce Management
+### Set up a connection to Blue Yonder Workforce Management
 
 Integrating Shifts with Blue Yonder WFM using the connector takes just a few steps. You can use the Shifts connector wizard in the Microsoft 365 admin center to quickly set up a connection. The wizard configures the connector based on the settings you choose and creates the connection. If you prefer to use PowerShell, we also provide PowerShell scripts that you can use to get connected.
 
@@ -105,7 +105,7 @@ After a connection is set up, you can update and change connection settings at a
 
 As for the connector itself, you don't need to worry about upgrades or maintenance. We take care of that.
 
-### Microsoft Teams Shifts connector for UKG Dimensions
+## Microsoft Teams Shifts connector for UKG Dimensions
 
 The Teams Shifts connector for UKG Dimensions is a first-party offering that's hosted and managed by Microsoft. With this connector, you can integrate Shifts with UKG Dimensions to manage your schedules and keep them up to date.  
 
@@ -135,7 +135,7 @@ The following actions are currently not supported:
 
 When a frontline manager or worker tries to do any of these actions in Shifts, they'll receive a message to let them know the action isn't supported.
 
-#### Example scenario
+### Example scenario
 
 Ravi, a manager, publishes a schedule in UKG Dimensions, which is synced to Shifts in Teams through the connector. Camille, a staff member, gets notified in Teams on her mobile device, and views her schedule and her team's schedule. Within the assigned shifts, Camille can also see detailed information, such as tasks, set by the manager.
 
@@ -143,7 +143,7 @@ Camille needs to take some time off and requests a day off using Shifts. The req
 
 Camille wants to swap a shift with a coworker. In Shifts, Camille sees a list of all shifts that are eligible for a swap based on business rules in UKG Dimensions. Camille chooses a shift that's currently assigned to Kristen. Kristen is notified in Teams on their mobile device and accepts the swap request. Ravi sees and approves the request in Shifts, and the approval is synced to UKG Dimensions. (Ravi can also see and approve the request in UKG Dimensions). Camille and Kristen are notified in Teams, and view their updated schedules.
 
-#### Set up a connection to UKG Dimensions
+### Set up a connection to UKG Dimensions
 
 Integrating Shifts with UKG Dimensions using the connector takes just a few steps. You can use the Shifts connector wizard in the Microsoft 365 admin center to quickly set up a connection. The wizard configures the connector based on the settings you choose and creates the connection. If you prefer to use PowerShell, we also provide PowerShell scripts that you can use to get connected.
 
@@ -163,7 +163,7 @@ After a connection is set up, you can update and change connection settings at a
 
 As for the connector itself, you don't need to worry about upgrades or maintenance. We take care of that.
 
-### Reflexis Shifts connector for Microsoft Teams
+## Reflexis Shifts connector for Microsoft Teams
 
 The Reflexis Shifts connector for Microsoft Teams is hosted and managed by Zebra. With this connector, you can integrate Shifts with Reflexis Workforce Management (WFM) to manage your schedules and keep them up to date.
 
@@ -199,7 +199,7 @@ The following actions are currently not supported:
 - Set availability in Shifts (frontline workers)
 - View and post timecard entries in Shifts (frontline workers)
 
-#### Example scenario
+### Example scenario
 
 Diego, a manager, publishes a schedule in Reflexis WFM, which is synced to Shifts in Teams through the connector. Hayden, a staff member, gets notified in Teams on their mobile device, and views their (and their team’s) new schedule. Hayden can also see detailed information, such as tasks set by the manager, within the assigned shifts.
 
@@ -207,7 +207,7 @@ Hayden wants to take a short vacation and requests a day off using Shifts. The r
 
 In another example, Hayden wants to swap a shift with a coworker. In Shifts, Hayden sees a list of swap-eligible shifts based on business parameters set in Reflexis WFM. Hayden selects a shift that's currently assigned to Joanna. Joanna is notified in Teams on her phone and accepts the swap request in the app. Diego sees and approves the request in Shifts, and the approval is synced with Reflexis WFM. (Diego can also see and approve the request in Reflexis WFM). Hayden and Joanna are each notified in Teams and view their respective updated schedules.
 
-#### Connection setup overview
+### Connection setup overview
 
 Prerequisites for setting up a connection
 
