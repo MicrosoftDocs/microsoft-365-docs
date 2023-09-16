@@ -5,14 +5,14 @@ ms.date: 9/15/2023
 
 ## Learn how to contribute
 
-Anyone who is interested can contribute to the articles. When you contribute, your work goes into the content set after it's been reviewed and merged. It's then be published to [Microsoft Learn](https://learn.microsoft.com/), and you're listed as a contributor at: <https://github.com/MicrosoftDocs/microsoft-365-docs/graphs/contributors>.
+Anyone who is interested can contribute to the articles. When you contribute, your work goes into the content set after it's been reviewed and merged. It's then published to [Microsoft Learn](https://learn.microsoft.com/), and you're listed as a contributor at: <https://github.com/MicrosoftDocs/microsoft-365-docs/graphs/contributors>.
 
 ### Quickly update an article using GitHub.com
 
-Contributors who make infrequent or small updates can edit the file directly on GitHub.com without having to install any software. This article shows you how. [This two-minute video](https://www.microsoft.com/videoplayer/embed/RE1XQTG) also covers how to contribute.
+Contributors who make infrequent or small updates can edit the file directly on GitHub.com without installing any software. This article shows you how. [This two-minute video](https://www.microsoft.com/videoplayer/embed/RE1XQTG) also covers how to contribute.
 
 > [!TIP]
-> To edit an article, you need to get to it on the GitHub.com backend. If you're already on the GitHub.com page of the article, you're starting on step 4.
+> To edit an article, you need to get to it on the GitHub.com backend. If you're already on the GitHub.com page of the article, you're starting at step 4.
 >
 > Your permissions in the repo determine what you see in step 5 and later. People with no special privileges see the steps as described. People with permissions to approve their own pull requests see a similar experience with different button and page titles (for example, **Commit changes** instead of **Propose changes**), extra options for creating a new branch, and fewer confirmation pages. The point is: click any green buttons that are presented to you until there are no more.
 
@@ -52,7 +52,7 @@ Contributors who make infrequent or small updates can edit the file directly on 
 
 8. On the **Open a pull request** page that opens, review the title and comments, and then select the green **Create pull request** button.
 
-   :::image type="content" source="microsoft-365/media/quick-update-open-a-pull-request-page.png" alt-text="x" lightbox="microsoft-365/media/quick-update-open-a-pull-request-page.png":::
+   :::image type="content" source="microsoft-365/media/quick-update-open-a-pull-request-page.png" alt-text="Select the green Create pull request button on the Open a pull request page." lightbox="microsoft-365/media/quick-update-open-a-pull-request-page.png":::
 
 9. That's it. There's nothing more for you to do.
 
