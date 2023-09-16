@@ -93,10 +93,6 @@ Alex wants to swap a shift with a coworker. In Shifts, Alex sees a list of all s
 
 Integrating Shifts with Blue Yonder WFM using the connector takes just a few steps. You can use the Shifts connector wizard in the Microsoft 365 admin center to quickly set up a connection. The wizard configures the connector based on the settings you choose and creates the connection. If you prefer to use PowerShell, we also provide PowerShell scripts that you can use to get connected.
 
-For prerequisites, see:
-
-- [Prerequisites and requirements for the Teams Shifts connector for UKG Dimensions](shifts-connector-ukg-prerequisites.md)
-
 For step-by-step guidance, see:
 
 - [Use the Shifts connector wizard to connect Shifts to Blue Yonder Workforce Management](shifts-connector-wizard.md)
@@ -150,6 +146,10 @@ Camille wants to swap a shift with a coworker. In Shifts, Camille sees a list of
 #### Set up a connection to UKG Dimensions
 
 Integrating Shifts with UKG Dimensions using the connector takes just a few steps. You can use the Shifts connector wizard in the Microsoft 365 admin center to quickly set up a connection. The wizard configures the connector based on the settings you choose and creates the connection. If you prefer to use PowerShell, we also provide PowerShell scripts that you can use to get connected.
+
+For prerequisites, see:
+
+- [Prerequisites and requirements for the Teams Shifts connector for UKG Dimensions](shifts-connector-ukg-prerequisites.md)
 
 For step-by-step guidance, see:
 
