@@ -215,4 +215,4 @@ The following table describes how conflicts are resolved if an email is affected
 |Advanced delivery policy|**User wins**: Email delivered to mailbox|**Tenant wins**: Email delivered to mailbox|
 |Block settings in anti-spam policies|**User wins**: Email delivered to mailbox|**User wins**: Email delivered to user's Junk Email folder|
 |Blocks by mail flow rules|**User wins**: Email delivered to mailbox|**User wins**: Email delivered to user's Junk Email folder|
-|Allows by: <ul><li>Mail flow rules</li><li>IP allowlist (connection filter policy)</li><li>Allowed sender and domain list (anti-spam policies)</li><li>Tenant Allow/Block List</li></ul>|**User wins**: Email delivered to mailbox|**User wins**: Email delivered to user's Junk Email folder|
+|Allows by: <ul><li>Mail flow rules</li><li>IP Allow List (connection filter policy)</li><li>Allowed sender and domain list (anti-spam policies)</li><li>Tenant Allow/Block List</li></ul>|**User wins**: Email delivered to mailbox|**User wins**: Email delivered to user's Junk Email folder|
