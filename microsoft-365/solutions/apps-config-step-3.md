@@ -165,22 +165,28 @@ Intune provides policies specifically for Microsoft Office apps. You can select 
 
 ## Configuration policies for individual Microsoft 365 apps
 
-- Word iOS/iPadOS devices: nothing special
-- Word Android devices:
-    - Permissions
-    - Configuration Settings
-    - Connected apps
-- Word iOS/Android MAM: 
-    - General configuration settings
-    - Microsoft Tunnel for MAM settings
+You can also install and configure specific Microsoft 365 apps. These apps are included in specific Microsoft plans and licenses. For more information about app licenses, see [Understand app licenses used in Intune](/microsoft-365/solutions/apps-license-overview).
 
+Microsoft 365 include the following apps:
 
-## Specific configuration scenarios
+- Microsoft Access
+- Microsoft Edge
+- Microsoft OneNote
+- Microsoft Outlook
+- Microsoft PowerPoint
+- Microsoft Publisher
+- Microsoft Skype for Business
+- Microsoft Teams
+- Microsoft Word
+- Microsoft Project
+- Microsoft Visio
 
+> [!NOTE]
+> Certain Microsoft apps can only be added as a set of Microsoft 365 apps, such as *Microsoft 365 apps for Windows 10 and later*, or as a **[Built-In app](/mem/intune/apps/apps-add-built-in)**.
 
-### Controlling account access for apps on managed devices
+Each app can be added and configured based on a selected license, platform, and [policy channel](microsoft-365/solutions/apps-config-overview#apps-that-support-app-configuration). For instance, Microsoft Word for Android devices supports app configuration **Permissions**, **Configuration Settings**, and **Connected Apps**. Microsoft Word for Android managed apps (MAM channel) supports **General configuration settings** and **Microsoft Tunnel for MAM settings**.
 
-
+For a list of Microsoft apps that have been designed to be configured and protected with Intune, see [Microsoft apps](mem/intune/apps/apps-supported-intune-apps#microsoft-apps). For more information about Built-In apps, see [Built-In app](mem/intune/apps/apps-add-built-in).
 
 ## Next step
 <!--

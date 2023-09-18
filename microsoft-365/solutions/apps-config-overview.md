@@ -59,6 +59,9 @@ Intune represents these different app configuration policy channels as:
 - **Managed devices** - The device is managed by Intune as the unified endpoint management provider. The app must be pinned to the management profile on iOS/iPadOS or deployed through Managed Google Play on Android devices. In addition, the app supports the desired app configuration.
 - **Managed apps** - An app that has either integrated the Intune App SDK or have been wrapped using the Intune Wrapping Tool and supports App Protection Policies (APP). In this configuration, neither the device's enrollment state or how the app is delivered to the device matter. The app supports the desired app configuration.
 
+> [!IMPORTANT]
+> It is important to understand the difference between app configuration policies that support **Managed devices** verses **Managed apps**. Managed devices are those devices that have been enrolled in a unified endpoint management provider, such as Microsoft Intune. These enrolled devices use mobile device management (MDM) provided by the unified endpoint management provider. MDM enables organizations to protect and secure their resources and data on enrolled devices. Managed apps are apps that you have assigned to users via a unified endpoint management provider, such as Intune. Managed apps support app configuration policies and app protection policies. These apps use mobile application management (MAM) that is provided by the unified endpoint management provider. MAM enables organizations to manage and protect their data within an application.
+
 Apps may handle app configuration policy settings differently with respect to user preference. For example, with Outlook for iOS and Android, the **Focused Inbox** app configuration setting will respect the user setting, allowing the user to override admin intent. Other settings may let you control whether a user can or cannot change the setting based on the admin intent.
 
 > [!NOTE]
@@ -78,7 +81,11 @@ As mentioned, you can apply configuration for your managed apps using app config
 
 For more information, see [App configuration policies](/mem/intune/apps/app-configuration-policies-overview), [iOS managed devices](/mem/intune/apps/app-configuration-policies-use-ios), and [Android managed devices](/mem/intune/apps/app-configuration-policies-use-android).
 
-### General Microsoft app configuration for managed devices
+### General app configuration for managed devices
+
+<!--
+https://learn.microsoft.com/en-us/mem/intune/apps/app-configuration-policies-overview#managed-devices
+-->
 
 To support app configuration for apps deployed through Intune on enrolled devices, apps must be written to support the use of app configurations as defined by the OS. Consult your app vendor for details for which app config keys they support for delivery through the MDM OS channel. There are generally four scenarios for app configuration delivery when using the MDM OS channel:
 
@@ -89,7 +96,12 @@ To support app configuration for apps deployed through Intune on enrolled device
 | General   app configuration settings | An app configuration policy   contains a **General configuration settings** section in the **Settings**   pane. In this section you can type the **Name** and **Value** to configure   the setting for the app. The **Name** is also known as the **Key**. |
 | App   specific configuration settings | Several apps also contain a   unique app configuration section in the **Settings** pane of an app   configuration policy. To learn which apps support configuration, see the   [Microsoft and third-party apps   list](/mem/intune/apps/apps-supported-intune-apps). For third-party apps, you   may need to see the app developer's documenation or contact them directly to   learn about their app's configuration keys and values.  |
 
-### General Microsoft app configuration for managed apps
+### General app configuration for managed apps
+
+<!--
+https://learn.microsoft.com/en-us/mem/intune/apps/app-configuration-policies-overview#managed-apps
+-->
+
 
 Delivery of app configuration through the MAM channel does not require the device to be enrolled or for the app to be managed or delivered through the unified endpoint management solution. There are three scenarios for app configuration delivery using the MAM channel:
 
@@ -97,15 +109,17 @@ Delivery of app configuration through the MAM channel does not require the devic
 - S/MIME configuration settings
 - Advanced APP data protection settings which extend the capabilities offered by App Protection Policies
 
-### Specific app configuration
+### Additional app configuration capabilities
 
-#### Enable connected apps
+Certain supported apps can be configured to add additional capabilities. These capabilities may depend on app platform, app configuration policies, and the specific app itself.
 
-You can allow users using Android personally-owned and corporate-owned work profiles to turn on connected apps experiences for supported apps. This app configuration setting enables apps to connect and integrate app data across the work and personal app instances. For an app to provide this experience, the app needs to integrate with Google's connected apps SDK, so only limited apps support it. You can turn on the connected apps setting proactively, and when apps add support, users will be able to enable the connected apps experience. For more information, see [Enable connected apps](/mem/intune/apps/app-configuration-policies-use-android#enable-connected-apps).
+#### Enable connected Android apps
 
-#### Grant state for apps
+You can allow end-users using Android personally-owned and corporate-owned work profiles to turn on connected apps experiences for supported apps. This app configuration setting enables apps to connect and integrate app data across the work and personal app instances on Android. For an app to provide this experience, the app needs to integrate with Google's connected apps SDK, which means only limited apps support it. You can turn on the connected apps setting proactively, and when apps add support, users will be able to enable the connected apps experience. For more information, see [Enable connected apps](/mem/intune/apps/app-configuration-policies-use-android#enable-connected-apps).
 
-You can also preconfigure app permissions to access Android device features. By default, Android apps that require device permissions, such as access to location or the device camera, prompt users to accept or deny permissions. For more information, see [Preconfigure the permissions grant state for apps](/mem/intune/apps/app-configuration-policies-use-android#enable-connected-apps).
+#### Grant state for Android apps
+
+You can pre-configure app permissions to access Android device features. By default, Android apps that require device permissions, such as access to location or the device camera, prompt users to accept or deny permissions. For more information, see [Preconfigure the permissions grant state for apps](/mem/intune/apps/app-configuration-policies-use-android#enable-connected-apps).
 
 #### Configure access by only organization accounts
 
