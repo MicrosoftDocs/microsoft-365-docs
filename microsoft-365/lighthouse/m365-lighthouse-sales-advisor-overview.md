@@ -32,11 +32,11 @@ To view Sales Advisor, select **Sales Advisor \> Opportunities** in the left nav
 
 ## Watch: What is Sales Advisor?
 
-Video: [Preview: Microsoft 365 Lighthouse Sales Advisory](https://cloudpartners.transform.microsoft.com/download?assetname=assets%2FM365-Lighthouse-Sales-Advisor-Sizzle-Video.mp4)
+Video: [Preview: Microsoft 365 Lighthouse Sales Advisor](https://cloudpartners.transform.microsoft.com/download?assetname=assets%2FM365-Lighthouse-Sales-Advisor-Sizzle-Video.mp4)
 
 ## Sales Advisor benefits
 
-Ensure your customers’ success by using AI-driven customer insights, actionable recommendations, and prescriptive guidance. Maximize your customers’ investment in Microsoft 365 and deliver value at every stage of their journey.
+Ensure your customers' success by using AI-driven customer insights, actionable recommendations, and prescriptive guidance. Maximize your customers' investment in Microsoft 365 and deliver value at every stage of their journey.
 
 :::image type="content" source="../media/m365-lighthouse-sales-advisor/m365-lighthouse-opportunities-page.png" alt-text="Screenshot of Lighthouse Opportunities page." lightbox="../media/m365-lighthouse-sales-advisor/m365-lighthouse-opportunities-page.png":::
 
@@ -54,7 +54,7 @@ Ensure your customers’ success by using AI-driven customer insights, actionabl
 
 - Know your customers and where they are in their cloud journey.
 
-- Take advantage of Microsoft’s best-practice recommendations.
+- Take advantage of Microsoft's best-practice recommendations.
 
 - Access opportunity-specific resources to drive action.
 
