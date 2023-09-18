@@ -76,7 +76,7 @@ To set up email notifications for threat analytics reports, perform the followin
 
 ## Next steps
 
-- [Get email notifications on incidents](.m365d-notifications-incidents.md)
-- [Get email notifications on response actions](.m365d-response-actions-notifications.md)
+- [Get email notifications on incidents](m365d-notifications-incidents.md)
+- [Get email notifications on response actions](m365d-response-actions-notifications.md)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
