@@ -1,7 +1,7 @@
 ---
 title: Use the Virtual Appointments app in Microsoft Teams
 author: lana-chin
-ms.author: heidip
+ms.author: v-chinlana
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
@@ -29,7 +29,7 @@ description: Get an overview of how to use the Virtual Appointments app in Teams
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 06/08/2023
+ms.date: 09/18/2023
 ---
 
 # Use the Virtual Appointments app in Microsoft Teams
@@ -41,8 +41,6 @@ ms.date: 06/08/2023
 This article is intended primarily for users in your organization who will set up the Virtual Appointments app for staff members on their team. This can include managers, supervisors, schedulers, or other employees. Users who initially create a shared appointment calendar are automatically assigned the Virtual Appointments admin role for that calendar and can perform most of the tasks in this article.
 
 If you’re an IT admin, see [Manage the Virtual Appointments app](/microsoftteams/manage-virtual-appointments-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json) to learn how to control access to the app in your organization.
-
-<!--Users who want to learn how to use the Virtual Appointments app should visit the [Microsoft Teams support site for Virtual Appointments](https://support.microsoft.com/office/what-is-virtual-appointments-22df0079-e6d9-4225-bc65-22747fb2cb5f), where they can watch a video and read about how to use the app. Topics include how to create a calendar, create and edit appointment types, add and manage staff, customize and publish a booking page, and manage your appointment queue.]-->
 
 Team members can find the app in the Teams app store, or you can share the [installation link](https://teams.microsoft.com/l/app/6e106207-4565-4312-b3ea-bbe9b3ed0a02?source=app-details-dialog) to help them find it. IT admins can use an [app setup policy](/microsoftteams/teams-app-setup-policies) to pin the app for your organization, or team members can [pin the app themselves](https://support.microsoft.com/office/pin-an-app-for-easy-access-3045fd44-6604-4ba7-8ecc-1c0d525e89ec).
 
@@ -58,7 +56,7 @@ The app makes it easy to manage the complex scheduling demands of any organizati
 
 The virtual appointments are held through Teams meetings, which offer robust video conferencing capabilities. For example, a doctor can share their screen and review test results with a patient. Or, a banking advisor can request electronic signatures on documents, allowing them to close transactions remotely.
 
-You get an experience that's tailored to your industry. Here's some examples of how you can use it in your organization.
+You get an experience that's tailored to your industry. Here are some examples of how you can use it in your organization.
 
 |Healthcare  |Financial services |Retail|Sales|HR|
 |---------|---------|---------|---------|---------|
@@ -83,7 +81,7 @@ To get started, [create a new appointment calendar](#to-create-a-new-appointment
 
     :::image type="content" source="media/virtual-appointments-app-new-appointment-calendar.png" alt-text="Screenshot of the new appointment calendar page." lightbox="media/virtual-appointments-app-new-appointment-calendar.png":::
 
-    To learn more, see [Create a Bookings calendar in Virtual Appointments](https://support.microsoft.com/topic/0efc10f6-6152-42db-9cbd-0f939c57d8be).
+    To learn more, see [Create a calendar in Virtual Appointments](https://support.microsoft.com/topic/0efc10f6-6152-42db-9cbd-0f939c57d8be).
 
 #### To work with an existing appointment calendar
 
@@ -101,16 +99,10 @@ You can add up to 100 staff members to an appointment calendar. Each person you 
 
 ### Step 3: Add services using appointment types
 
-<!--Now you must specify which appointment type you want the calendar to use an understand the two different types of appointments.-->
-
 Next, add services to the calendar using the appropriate appointment type. Before you do that, it's important to understand the two different appointment types so that you can choose the appointment type that best represents the services offered by your organization:
 
 - **Scheduled appointment type**: Used by schedulers to book scheduled appointments for staff and attendees. These appointments are scheduled for a specific date, time, and duration.
 - **On-demand appointment type**: Used by your customers, clients, and patients for on-demand appointments. On-demand appointments are for services that are provided upon request, similar to a walk-in waiting room. This feature requires [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams).
-
-  <!--- Schedulers use **scheduled appointments** to book appointments for staff and attendees for a specific date, time, and duration.
-
-  - Customers, staff and others can create their own appointments with **on-demand appointments** for services that are provided upon request, similar to a walk-in waiting room.-->
 
 1. To add a service, on the **Manage** tab, select **Services**, and then under **Scheduled** or **On-demand**, select **Add service**.
     :::image type="content" source="media/virtual-appointments-app-services.png" alt-text="Screenshot of the Services tab." lightbox="media/virtual-appointments-app-services.png":::
@@ -135,9 +127,10 @@ To send SMS notifications to attendees by default, turn on **Send them text mess
 
 Keep in mind that schedulers can later choose to turn off the setting on an as-needed basis when they use the appointment type to schedule an appointment.
 
-You can use the [SMS notifications usage report](sms-notifications-usage-report.md) to see how your workforce is using SMS notifications with virtual appointments.
-
 To learn more, see [Use text messages to remind customers of their appointment](https://support.microsoft.com/topic/adda1e2a-03b8-4db2-864d-0a5a3f3a874a).
+
+> [!NOTE]
+> Admins can use the [SMS notifications usage report](sms-notifications-usage-report.md) to see how your workforce is using SMS notifications with virtual appointments.
 
 ##### Link forms
 
@@ -165,12 +158,6 @@ When a scheduler uses the appointment type to schedule an appointment, they can 
 Enter a name for the service. For example, Drop-in appointment, Account opening, Prescription renewal, Loan consultation, or Tax preparation.
 
 Your customers, clients, and patients can then choose the appointment type on your [booking page](#publish-a-booking-page) to request an on-demand appointment with your staff.
-
-<!--### Tasks for admins and schedulers
-
-After you’ve set up the Virtual Appointments app for your users, they can use the app to schedule appointments, allow customers to schedule their own appointments, and join appointments. For complete instructions on using the app, users should visit the [Microsoft Teams support site for Virtual Appointments](https://support.microsoft.com/office/what-is-virtual-appointments-22df0079-e6d9-4225-bc65-22747fb2cb5f).
-
-Here are some additional tasks that admins and schedulers can do in the app.-->
 
 ## Publish a booking page
 
