@@ -2814,8 +2814,7 @@
          "source_path":"microsoft-365/security/defender-business/mdb-get-help.md",
          "redirect_url":"/microsoft-365/admin/get-help-support",
          "redirect_document_id":false
-       }
-      },
+       },
       {
          "source_path":"microsoft-365/security/defender-endpoint/add-a-new-scan-definition.md",
          "redirect_url":"/microsoft-365/security/defender-endpoint/api/add-a-new-scan-definition",
