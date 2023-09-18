@@ -58,7 +58,7 @@ Delegated (work or school account)|File.Read.All|'Read file profiles'
 > [!NOTE]
 > When obtaining a token using user credentials:
 >
-> - The user needs to have at least the following role permission: 'View Data' (For more information, see [Create and manage roles](user-roles.md))
+> - The user needs to have at least the following role permission: 'View Data' (For more information, see [Create and manage roles](../user-roles.md))
 
 ## HTTP request
 

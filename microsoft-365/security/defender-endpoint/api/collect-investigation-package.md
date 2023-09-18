@@ -62,8 +62,8 @@ Delegated (work or school account)|Machine.CollectForensics|'Collect forensics'
 > [!NOTE]
 > When obtaining a token using user credentials:
 >
-> - The user needs to have at least the following role permission: 'Alerts Investigation' (See [Create and manage roles](user-roles.md) for more information)
-> - The user needs to have access to the device, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
+> - The user needs to have at least the following role permission: 'Alerts Investigation' (See [Create and manage roles](../user-roles.md) for more information)
+> - The user needs to have access to the device, based on device group settings (See [Create and manage device groups](../machine-groups.md) for more information)
 >
 > Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.
 
@@ -90,7 +90,7 @@ Comment|String|Comment to associate with the action. **Required**.
 
 ## Response
 
-If successful, this method returns 201 - Created response code and [Machine Action](machineaction.md) in the response body. If a collection is already running, this returns 400 Bad Request.
+If successful, this method returns 201 - Created response code and [Machine Action](../machineaction.md) in the response body. If a collection is already running, this returns 400 Bad Request.
 
 ## Example
 

@@ -61,7 +61,7 @@ ms.date: 12/18/2020
 
    In order to get your **Event Hubs resource ID**, go to your Azure Event Hubs namespace page on [Azure](https://ms.portal.azure.com/) > properties tab \> copy the text under **Resource ID**:
 
-   :::image type="content" source="images/event-hub-resource-id.png" alt-text="The Event Hubs resource Id-1" lightbox="images/event-hub-resource-id.png":::
+   :::image type="content" source="../images/event-hub-resource-id.png" alt-text="The Event Hubs resource Id-1" lightbox="../images/event-hub-resource-id.png":::
 
 7. Choose the events you want to stream and click **Save**.
 
@@ -87,7 +87,7 @@ ms.date: 12/18/2020
 
 - For more information about the schema of Microsoft Defender for Endpoint events, see [Advanced Hunting overview](advanced-hunting-overview.md).
 
-- In Advanced Hunting, the **DeviceInfo** table has a column named **MachineGroup** which contains the group of the device. Here every event will be decorated with this column as well. See [Device Groups](machine-groups.md) for more information.
+- In Advanced Hunting, the **DeviceInfo** table has a column named **MachineGroup** which contains the group of the device. Here every event will be decorated with this column as well. See [Device Groups](../machine-groups.md) for more information.
     > [!NOTE]
     > Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.  
 
@@ -107,7 +107,7 @@ To get the data types for event properties do the following:
 
 - Here is an example for Device Info event:
 
-  :::image type="content" source="images/machine-info-datatype-example.png" alt-text="The Event Hubs resource Id-2" lightbox="images/machine-info-datatype-example.png":::
+  :::image type="content" source="../images/machine-info-datatype-example.png" alt-text="The Event Hubs resource Id-2" lightbox="../images/machine-info-datatype-example.png":::
 
 ## Related topics
 

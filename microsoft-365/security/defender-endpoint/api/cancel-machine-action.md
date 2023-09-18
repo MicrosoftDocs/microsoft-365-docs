@@ -30,7 +30,7 @@ ms.date: 06/03/2021
 
 **Applies to:**
 
-- [ Microsoft Defender for Endpoint](../defender/microsoft-365-security-center-mde.md)
+- [ Microsoft Defender for Endpoint](../../defender/microsoft-365-security-center-mde.md)
 - [Microsoft Defender for Endpoint Plan 1](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1)
 - [Microsoft Defender for Endpoint Plan 2](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1)
 

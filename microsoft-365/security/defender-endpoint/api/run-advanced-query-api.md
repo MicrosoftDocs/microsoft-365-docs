@@ -69,7 +69,7 @@ Delegated (work or school account)|AdvancedQuery.Read|'Run advanced queries'
 > When obtaining a token using user credentials:
 >
 > - The user needs to have 'View Data' AD role
-> - The user needs to have access to the device, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)
+> - The user needs to have access to the device, based on device group settings (See [Create and manage device groups](../machine-groups.md) for more information)
 >
 > Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.  
 

@@ -62,7 +62,7 @@ Data that is collected using either '_JSON response_ or _via files_' is the curr
 
 > [!NOTE]
 >
-> For information about using the **Device health and antivirus compliance** reporting tool in the Microsoft 365 Security dashboard, see: [Device health and antivirus compliance report in Microsoft Defender for Endpoint](machine-reports.md).
+> For information about using the **Device health and antivirus compliance** reporting tool in the Microsoft 365 Security dashboard, see: [Device health and antivirus compliance report in Microsoft Defender for Endpoint](../machine-reports.md).
 >
 
 ## 1 Export health reporting (JSON response)
@@ -309,12 +309,12 @@ Here's an example response:
 >   - top scans per file per process
 >
 > You can use the information gathered using Performance analyzer to better assess performance issues and apply remediation actions. 
-> See: [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).
+> See: [Performance analyzer for Microsoft Defender Antivirus](../tune-performance-defender-antivirus.md).
 >
 
 ## See also
 
 [Export device health methods and properties](device-health-api-methods-properties.md)
 
-[Device health and compliance reporting](device-health-reports.md)
+[Device health and compliance reporting](../device-health-reports.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../../includes/defender-mde-techcommunity.md)]

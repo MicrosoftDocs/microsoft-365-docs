@@ -55,7 +55,7 @@ The Microsoft Defender for Endpoint solution is built on top of an integration-r
 
 Defender for Endpoint exposes much of its data and actions through a set of programmatic APIs. Those APIs will enable you to automate workflows and innovate based on Defender for Endpoint capabilities.
 
-:::image type="content" source="images/mdatp-apis.png" alt-text="The available API and integration in Microsoft Defender for Endpoint" lightbox="images/mdatp-apis.png":::
+:::image type="content" source="../images/mdatp-apis.png" alt-text="The available API and integration in Microsoft Defender for Endpoint" lightbox="../images/mdatp-apis.png":::
 
 The Defender for Endpoint APIs can be grouped into three:
 

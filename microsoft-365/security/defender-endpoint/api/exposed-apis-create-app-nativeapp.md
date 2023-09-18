@@ -32,10 +32,10 @@ search.appverid: met150
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender for Business](../defender-business/index.yml)
+- [Microsoft Defender for Business](../../defender-business/index.yml)
 
 > [!IMPORTANT]
-> Advanced hunting capabilities are not included in Defender for Business. See [Compare Microsoft Defender for Business to Microsoft Defender for Endpoint Plans 1 and 2](../defender-business/compare-mdb-m365-plans.md#compare-defender-for-business-to-defender-for-endpoint-plan-1-and-plan-2).
+> Advanced hunting capabilities are not included in Defender for Business. See [Compare Microsoft Defender for Business to Microsoft Defender for Endpoint Plans 1 and 2](../../defender-business/compare-mdb-m365-plans.md#compare-defender-for-business-to-defender-for-endpoint-plan-1-and-plan-2).
 
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -62,7 +62,7 @@ This page explains how to create an AAD application, get an access token to Micr
 
 > [!NOTE]
 > When accessing Microsoft Defender for Endpoint API on behalf of a user, you will need the correct Application permission and user permission.
-> If you are not familiar with user permissions on Microsoft Defender for Endpoint, see [Manage portal access using role-based access control](rbac.md).
+> If you are not familiar with user permissions on Microsoft Defender for Endpoint, see [Manage portal access using role-based access control](../rbac.md).
 
 > [!TIP]
 > If you have the permission to perform an action in the portal, you have the permission to perform the action in the API.
@@ -73,7 +73,7 @@ This page explains how to create an AAD application, get an access token to Micr
 
 2. Navigate to **Azure Active Directory** \> **App registrations** \> **New registration**.
 
-   :::image type="content" source="images/atp-azure-new-app2.png" alt-text="The App registrations page in the Microsoft Azure portal" lightbox="images/atp-azure-new-app2.png":::
+   :::image type="content" source="../images/atp-azure-new-app2.png" alt-text="The App registrations page in the Microsoft Azure portal" lightbox="../images/atp-azure-new-app2.png":::
 
 3. When the **Register an application** page appears, enter your application's registration information:
    - **Name** - Enter a meaningful application name that will be displayed to users of the app.
@@ -104,11 +104,11 @@ This page explains how to create an AAD application, get an access token to Micr
      > [!NOTE]
      > *WindowsDefenderATP* does not appear in the original list. Start writing its name in the text box to see it appear.
 
-     :::image type="content" alt-text="add permission." source="images/add-permission.png" lightbox="images/add-permission.png":::
+     :::image type="content" alt-text="add permission." source="../images/add-permission.png" lightbox="../images/add-permission.png":::
 
    - Choose **Delegated permissions** \> **Alert.Read** > select **Add permissions**.
 
-      :::image type="content" source="images/application-permissions-public-client.png" alt-text="The application type and permissions panes" lightbox="images/application-permissions-public-client.png":::
+      :::image type="content" source="../images/application-permissions-public-client.png" alt-text="The application type and permissions panes" lightbox="../images/application-permissions-public-client.png":::
 
    > [!IMPORTANT]
    > Select the relevant permissions. Read alerts is only an example.
@@ -124,13 +124,13 @@ This page explains how to create an AAD application, get an access token to Micr
       > [!NOTE]
       > Every time you add permission you must select on **Grant consent** for the new permission to take effect.
 
-      :::image type="content" source="images/grant-consent.png" alt-text="The Grand admin consent option" lightbox="images/grant-consent.png":::
+      :::image type="content" source="../images/grant-consent.png" alt-text="The Grand admin consent option" lightbox="../images/grant-consent.png":::
 
 5. Write down your application ID and your tenant ID.
 
     On your application page, go to **Overview** and copy the following information:
 
-    :::image type="content" source="images/app-and-tenant-ids.png" alt-text="The created app ID"  lightbox="images/app-and-tenant-ids.png":::
+    :::image type="content" source="../images/app-and-tenant-ids.png" alt-text="The created app ID"  lightbox="../images/app-and-tenant-ids.png":::
 
 ## Get an access token
 
@@ -187,7 +187,7 @@ Verify to make sure you got a correct token:
 - Validate you get a 'scp' claim with the desired app permissions.
 - In the screenshot below you can see a decoded token acquired from the app in the tutorial:
 
-  :::image type="content" source="images/nativeapp-decoded-token.png" alt-text="The token validation page" lightbox="images/nativeapp-decoded-token.png":::
+  :::image type="content" source="../images/nativeapp-decoded-token.png" alt-text="The token validation page" lightbox="../images/nativeapp-decoded-token.png":::
 
 ## Use the token to access Microsoft Defender for Endpoint API
 

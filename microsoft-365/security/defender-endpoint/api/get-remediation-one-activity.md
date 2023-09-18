@@ -30,12 +30,12 @@ ms.date: 04/25/2021
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender Vulnerability Management](../defender-vulnerability-management/index.yml)
+- [Microsoft Defender Vulnerability Management](../../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink).
 
-> Want to experience Microsoft Defender Vulnerability Management? Learn more about how you can sign up to the [Microsoft Defender Vulnerability Management public preview trial](../defender-vulnerability-management/get-defender-vulnerability-management.md).
+> Want to experience Microsoft Defender Vulnerability Management? Learn more about how you can sign up to the [Microsoft Defender Vulnerability Management public preview trial](../../defender-vulnerability-management/get-defender-vulnerability-management.md).
 
 [!Include[Prerelease information](../../../includes/prerelease.md)]
 
@@ -47,7 +47,7 @@ ms.date: 04/25/2021
 
 Returns information for the specified remediation activity. Presents the same columns as [Get all remediation activity](get-remediation-all-activities.md)", but returns results _only for the one specified remediation activity_.
 
-[Learn more about remediation activities](tvm-remediation.md).
+[Learn more about remediation activities](../tvm-remediation.md).
 
 ## List a specified remediation activity for (ID)
 
@@ -147,6 +147,6 @@ GET https://api.securitycenter.windows.com/api/remediationtasks/03942ef5-aecb-4c
 - [Remediation methods and properties](get-remediation-methods-properties.md)
 - [List all remediation activities](get-remediation-all-activities.md)
 - [List exposed devices of one remediation activity](get-remediation-exposed-devices-activities.md)
-- [Microsoft Defender Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
+- [Microsoft Defender Vulnerability Management](../next-gen-threat-and-vuln-mgt.md)
 - [Vulnerabilities in your organization](tvm-weaknesses.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../../includes/defender-mde-techcommunity.md)]

@@ -182,7 +182,7 @@ For information on how to fetch alerts using REST API, see [Fetch alerts from MS
 
 ## See also
 
-- [Grant MSSP access to the portal](grant-mssp-access.md)
-- [Access the MSSP customer portal](access-mssp-portal.md)
-- [Configure alert notifications](configure-mssp-notifications.md)
+- [Grant MSSP access to the portal](../grant-mssp-access.md)
+- [Access the MSSP customer portal](../access-mssp-portal.md)
+- [Configure alert notifications](../configure-mssp-notifications.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../../includes/defender-mde-techcommunity.md)]

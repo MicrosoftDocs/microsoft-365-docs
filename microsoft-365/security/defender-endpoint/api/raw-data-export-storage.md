@@ -56,7 +56,7 @@ ms.date: 12/18/2020
 
 6. Type your **Storage Account Resource ID**. In order to get your **Storage Account Resource ID**, go to your Storage account page on [Azure portal](https://ms.portal.azure.com/) \> properties tab \> copy the text under **Storage account resource ID**:
 
-   :::image type="content" source="images/storage-account-resource-id.png" alt-text="The Event Hubs with resource ID1" lightbox="images/storage-account-resource-id.png":::
+   :::image type="content" source="../images/storage-account-resource-id.png" alt-text="The Event Hubs with resource ID1" lightbox="../images/storage-account-resource-id.png":::
 
 7. Choose the events you want to stream and click **Save**.
 
@@ -64,7 +64,7 @@ ms.date: 12/18/2020
 
 - A blob container will be created for each event type:
 
-  :::image type="content" source="images/storage-account-event-schema.png" alt-text="The Event Hubs with resource ID2" lightbox="images/storage-account-event-schema.png":::
+  :::image type="content" source="../images/storage-account-event-schema.png" alt-text="The Event Hubs with resource ID2" lightbox="../images/storage-account-event-schema.png":::
 
 - The schema of each row in a blob is the following JSON:
 
@@ -83,7 +83,7 @@ ms.date: 12/18/2020
 
 - For more information about the schema of Microsoft Defender for Endpoint events, see [Advanced Hunting overview](advanced-hunting-overview.md).
 
-- In Advanced Hunting, the **DeviceInfo** table has a column named **MachineGroup** which contains the group of the device. Here every event will be decorated with this column as well. See [Device Groups](machine-groups.md) for more information.
+- In Advanced Hunting, the **DeviceInfo** table has a column named **MachineGroup** which contains the group of the device. Here every event will be decorated with this column as well. See [Device Groups](../machine-groups.md) for more information.
     > [!NOTE]
     > Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.  
 
@@ -103,7 +103,7 @@ In order to get the data types for our events properties do the following:
 
 - Here is an example for Device Info event:
 
-  :::image type="content" source="images/data-types-mapping-query.png" alt-text="The Event Hubs with resource ID3" lightbox="images/data-types-mapping-query.png":::
+  :::image type="content" source="../images/data-types-mapping-query.png" alt-text="The Event Hubs with resource ID3" lightbox="../images/data-types-mapping-query.png":::
 
 ## Related topics
 

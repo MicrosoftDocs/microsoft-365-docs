@@ -70,7 +70,7 @@ Delegated (work or school account)|Machine.ReadWrite|'Read and write machine inf
 > [!NOTE]
 > When obtaining a token using user credentials:
 >
-> The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)
+> The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](../user-roles.md) for more information)
 
 ## HTTP request
 

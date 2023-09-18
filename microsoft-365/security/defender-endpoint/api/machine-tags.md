@@ -33,7 +33,7 @@ ms.date: 02/27/2023
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Add tags on devices to create a logical group affiliation. Device tags support proper mapping of the network, enabling you to attach different tags to capture context and to enable dynamic list creation as part of an incident. Tags can be used as a filter in the **Device inventory** view, or to group devices. For more information on device grouping, see [Create and manage device groups](machine-groups.md).
+Add tags on devices to create a logical group affiliation. Device tags support proper mapping of the network, enabling you to attach different tags to capture context and to enable dynamic list creation as part of an incident. Tags can be used as a filter in the **Device inventory** view, or to group devices. For more information on device grouping, see [Create and manage device groups](../machine-groups.md).
 
 > [!NOTE]
 > Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.  
@@ -60,12 +60,12 @@ To add device tags using API, see [Add or remove device tags API](add-or-remove-
 
 2. Select **Manage tags** from the row of Response actions.
 
-    :::image type="content" source="images/manage-tags-option.png" alt-text="Image of manage tags button" lightbox="images/manage-tags-option.png":::
+    :::image type="content" source="../images/manage-tags-option.png" alt-text="Image of manage tags button" lightbox="../images/manage-tags-option.png":::
     
 
 3. Type to find or create tags
 
-    :::image type="content" source="images/create-new-tag.png" alt-text="Adding tags on device1" lightbox="images/create-new-tag.png":::
+    :::image type="content" source="../images/create-new-tag.png" alt-text="Adding tags on device1" lightbox="../images/create-new-tag.png":::
 
 Tags are added to the device view and will also be reflected on the **Devices inventory** view. You can then use the **Tags** filter to see the relevant list of devices.
 
@@ -76,7 +76,7 @@ Tags are added to the device view and will also be reflected on the **Devices in
 
 You can also delete tags from this view.
 
-:::image type="content" source="images/new-tag-label-display.png" alt-text="Adding tags on device2" lightbox="images/new-tag-label-display.png":::
+:::image type="content" source="../images/new-tag-label-display.png" alt-text="Adding tags on device2" lightbox="../images/new-tag-label-display.png":::
 
 ## Add device tags by setting a registry key value
 

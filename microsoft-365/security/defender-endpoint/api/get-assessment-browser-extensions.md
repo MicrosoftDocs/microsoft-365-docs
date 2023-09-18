@@ -30,12 +30,12 @@ ms.date: 06/01/2022
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender Vulnerability Management](../defender-vulnerability-management/index.yml)
+- [Microsoft Defender Vulnerability Management](../../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink).
 
-> Want to experience Microsoft Defender Vulnerability Management? Learn more about how you can sign up to the [Microsoft Defender Vulnerability Management public preview trial](../defender-vulnerability-management/get-defender-vulnerability-management.md).
+> Want to experience Microsoft Defender Vulnerability Management? Learn more about how you can sign up to the [Microsoft Defender Vulnerability Management public preview trial](../../defender-vulnerability-management/get-defender-vulnerability-management.md).
 
 Returns all known installed browser extensions and their details for all devices, on a per-device basis.
 
@@ -237,5 +237,5 @@ GET https://api.securitycenter.microsoft.com/api/machines/browserextensionsinven
 ## Other related
 
 - [Vulnerability management](../defender-vulnerability-management/defender-vulnerability-management.md)
-- [Vulnerabilities in your organization](../defender-vulnerability-management/tvm-weaknesses.md)
+- [Vulnerabilities in your organization](../../defender-vulnerability-management/tvm-weaknesses.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../../includes/defender-mde-techcommunity.md)]

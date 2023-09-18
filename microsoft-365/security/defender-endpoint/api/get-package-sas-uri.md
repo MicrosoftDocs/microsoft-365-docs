@@ -60,8 +60,8 @@ Delegated (work or school account)|Machine.CollectForensics|'Collect forensics'
 > [!NOTE]
 > When obtaining a token using user credentials:
 >
-> - The user needs to have at least the following role permission: 'Alerts Investigation' (For more information, see [Create and manage roles](user-roles.md))
-> - The user needs to have access to the device, based on device group settings (For more information, see [Create and manage device groups](machine-groups.md))
+> - The user needs to have at least the following role permission: 'Alerts Investigation' (For more information, see [Create and manage roles](../user-roles.md))
+> - The user needs to have access to the device, based on device group settings (For more information, see [Create and manage device groups](../machine-groups.md))
 >
 > Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2. 
 

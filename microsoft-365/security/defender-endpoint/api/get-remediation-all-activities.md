@@ -30,12 +30,12 @@ ms.date: 04/25/2021
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Defender Vulnerability Management](../defender-vulnerability-management/index.yml)
+- [Microsoft Defender Vulnerability Management](../../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink).
 
-> Want to experience Microsoft Defender Vulnerability Management? Learn more about how you can sign up to the [Microsoft Defender Vulnerability Management public preview trial](../defender-vulnerability-management/get-defender-vulnerability-management.md).
+> Want to experience Microsoft Defender Vulnerability Management? Learn more about how you can sign up to the [Microsoft Defender Vulnerability Management public preview trial](../../defender-vulnerability-management/get-defender-vulnerability-management.md).
 
 [!Include[Prerelease information](../../../includes/prerelease.md)]
 
@@ -47,7 +47,7 @@ ms.date: 04/25/2021
 
 Returns information about all remediation activities.
 
-[Learn more about remediation activities](tvm-remediation.md).
+[Learn more about remediation activities](../tvm-remediation.md).
 
 **URL:** GET: /api/remediationTasks
 <br>Supports [OData V4 queries](https://www.odata.org/documentation/).
@@ -155,6 +155,6 @@ GET https://api.securitycenter.windows.com/api/remediationtasks/
 - [Remediation methods and properties](get-remediation-methods-properties.md)
 - [Get one remediation activity by ID](get-remediation-one-activity.md)
 - [List exposed devices of one remediation activity](get-remediation-exposed-devices-activities.md)
-- [Microsoft Defender Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
+- [Microsoft Defender Vulnerability Management](../next-gen-threat-and-vuln-mgt.md)
 - [Vulnerabilities in your organization](tvm-weaknesses.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../../includes/defender-mde-techcommunity.md)]
