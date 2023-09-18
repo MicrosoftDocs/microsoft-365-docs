@@ -23,7 +23,7 @@ Microsoft 365 Archive offers lower-cost storage for inactive SharePoint sites wi
 
 ## Introduction
 
-There is a growing need for enterprises to store inactive or aging data for ever-longer periods of time for possible later retrieval. They ideally want to keep the data in place to make compliance and data lifecycle management easy. Microsoft 365 Archive enables them to store this inactive data in place, within the Microsoft trust boundary to maintain the security and compliance standards that would apply to any data in SharePoint. Archive does not directly provide compliance features, but the suite of Purview tools does operate seamlessly on archived content. Some additional advantages of using Microsoft 365 Archive are:
+There's a growing need for enterprises to store inactive or aging data for ever-longer periods of time for possible later retrieval. They ideally want to keep the data in place to make compliance and data lifecycle management easy. Microsoft 365 Archive enables them to store this inactive data in place, within the Microsoft trust boundary to maintain the security and compliance standards that would apply to any data in SharePoint. Archive doesn't directly provide compliance features, but the suite of Purview tools does operate seamlessly on archived content. Some additional advantages of using Microsoft 365 Archive are:
 
 - Ultra-fast archive of sites of any size and any number of sites
 - Cost savings on storage consumption beyond the allocated Microsoft 365 storage quota
@@ -42,16 +42,16 @@ Archiving a site archives everything within it, including:
 > [!NOTE]
 > Microsoft 365 Archive is currently rolling out. More features will become available to organizations throughout October-November 2023.
 
-Administrators should notify the site owners and end users before a site is archived so they are aware that the site will not be accessible.
+Administrators should notify the site owners and end users before a site is archived so they're aware that the site won't be accessible.
 
 ## Limitations of the public preview
 
 1. As a part of the public preview, tenants with more than 50,000 sites might face issues while trying to enumerate archived sites on the Archived Sites page. Applicable enhancements are scheduled to roll out in the future. In this scenario, PowerShell can be used to more efficiently archive sites and manage archived content.
 
-2. Currently, end user search results will not show any archived content. Currently, columns such as Archived Date and Archived By are not available. They will be available by December 2023.
+2. Currently, end user search results won't show any archived content. Currently, columns such as Archived Date and Archived By aren't available. They will be available by December 2023.
 
-3. For multi-geo tenants, while data residency requirements are honored, site moves are not supported. Archived sites will need to be reactivated prior to any move.
+3. For multi-geo tenants, while data residency requirements are honored, site moves aren't supported. Archived sites will need to be reactivated prior to any move.
 
-4. Currently, tenant rename is not supported on archived sites. Sites will need to be reactivated before a tenant rename is triggered.
+4. Currently, tenant rename isn't supported on archived sites. Sites will need to be reactivated before a tenant rename is triggered.
 
-5. Sites that are backed up as part of the Microsoft 365 Backup should not be archived.  
+5. Sites that are backed up as part of the Microsoft 365 Backup shouldn't be archived.  
