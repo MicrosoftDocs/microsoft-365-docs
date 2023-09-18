@@ -69,7 +69,7 @@ The services that aren't included with ExpressRoute for Microsoft 365 are Micros
 
 ## Implementing ExpressRoute for Microsoft 365
 
-Implementing ExpressRoute requires the involvement of network and application owners and requires careful planning to determine the new [network routing architecture](https://support.office.com/article/e1da26c6-2d39-4379-af6f-4da213218408), bandwidth requirements, where security will be implemented, high availability, and so on. To implement ExpressRoute, you'll need to:
+Implementing ExpressRoute requires the involvement of network and application owners and requires careful planning to determine the new [network routing architecture](/azure/architecture/guide/networking/networking-start-here), bandwidth requirements, where security will be implemented, high availability, and so on. To implement ExpressRoute, you'll need to:
 
 1. Fully understand the need ExpressRoute satisfies in your Microsoft 365 connectivity planning. Understand what applications will use the internet or ExpressRoute and fully plan your network capacity, security, and high availability needs in the context of using both the internet and ExpressRoute for Microsoft 365 traffic.
 

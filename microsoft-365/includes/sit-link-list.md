@@ -292,7 +292,7 @@ ms.service: O365-seccomp
 - [SWIFT code](../compliance/sit-defn-swift-code.md)
 - [Switzerland physical addresses](../compliance/sit-defn-switzerland-physical-addresses.md)
 - [Switzerland SSN AHV number](../compliance/sit-defn-switzerland-ssn-ahv-number.md)
-- [Taiwan national identification number](../compliance/sit-defn-taiwan-national-identification-number.md)
+- [Taiwanese identification number](../compliance/sit-defn-taiwan-national-identification-number.md)
 - [Taiwan passport number](../compliance/sit-defn-taiwan-passport-number.md)
 - [Taiwan-resident certificate (ARC/TARC) number](../compliance/sit-defn-taiwan-resident-certificate-number.md)
 - [Thai population identification code](../compliance/sit-defn-thai-population-identification-code.md)
