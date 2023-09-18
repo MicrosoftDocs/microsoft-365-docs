@@ -152,9 +152,9 @@ Tenant allows and blocks are able to override some filtering stack verdicts as d
 
   <sup>\*</sup> Organizations that use a third-party security service or device in front of Microsoft 365 should consider using [Authenticated Received Chain (ARC)](use-arc-exceptions-to-mark-trusted-arc-senders.md) (contact the third-party for availability) and [Enhanced Filtering for Connectors (also known as skip listing)](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) instead of an SCL=-1 mail flow rule. These improved methods reduce email authentication issues and encourage [defense-in-depth](step-by-step-guides/defense-in-depth-guide.md) email security.
 
-- IP allowlist and IP blocklist in [connection filter policies](connection-filter-policies-configure.md):
+- IP Allow List and IP Block List in [connection filter policies](connection-filter-policies-configure.md):
 
-  |Filtering stack verdict|IP allowlist|IP blocklist|
+  |Filtering stack verdict|IP Allow List|IP Block List|
   |---|---|---|
   |Malware|**Filter wins**: Email quarantined|**Filter wins**: Email quarantined|
   |High confidence phishing|**Filter wins**: Email quarantined|**Filter wins**: Email quarantined|
