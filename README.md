@@ -29,7 +29,7 @@ Contributors who make infrequent or small updates can edit the file directly on 
 
 5. The article file opens in a line-numbered editor page where you can make updates.
 
-   Articles on learn.microsoft.com are formatted using the Markdown language. For help on using Markdown, see [Screenshot of how to master Markdown.](https://guides.github.com/features/mastering-markdown/).
+   Articles on learn.microsoft.com are formatted using the Markdown language. For help on using Markdown, see [Mastering Markdown.](https://guides.github.com/features/mastering-markdown/).
 
    Select **Preview** to view your changes as you go. Select **Edit** to go back to making updates.
 
