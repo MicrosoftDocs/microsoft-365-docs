@@ -179,7 +179,7 @@ You can set up Microsoft 365 Defender to notify your staff with an email about n
 - Alert sources 
 - Device group
 
-To set up email notifications for incidents, see [get email notifications on incidents](.m365d-notifications-incidents.md).
+To set up email notifications for incidents, see [get email notifications on incidents](m365d-notifications-incidents.md).
 
 ## Training for security analysts
 

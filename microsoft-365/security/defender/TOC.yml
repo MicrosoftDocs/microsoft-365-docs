@@ -495,7 +495,7 @@
             - name: Get notified about new and updated incidents
               href: m365d-notifications-incidents.md
             - name: Set up email notifications for response actions
-              href: m365d-response-action-notifications.md
+              href: m365d-response-actions-notifications.md
             - name: Set up email notifications for Threat analytics reports
               href: m365d-threat-analytics-notifications.md              
             - name: Configure alert notifications

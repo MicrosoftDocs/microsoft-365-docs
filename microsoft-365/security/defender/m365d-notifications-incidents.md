@@ -84,8 +84,8 @@ Once you get the notification, you can go directly to the incident and start you
 
 ## Next steps
 
-- [Get email notifications on response actions](.m365d-response-actions-notifications.md)
-- [Get email notifications about new reports in Threat analytics](.m365d-threat-analytics-notifications.md)
+- [Get email notifications on response actions](m365d-response-actions-notifications.md)
+- [Get email notifications about new reports in Threat analytics](m365d-threat-analytics-notifications.md)
 
 ## See also
 

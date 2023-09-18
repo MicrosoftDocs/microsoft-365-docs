@@ -200,7 +200,7 @@ _Exposure & mitigations section of a threat analytics report_
 
 ## Set up email notifications for report updates
 
-You can set up email notifications that will send you updates on threat analytics reports. To create email notifications, follow the steps in [get email notifications for Threat analytics updates in Microsoft 365 Defender](.m365d-threat-analytics-notifications).
+You can set up email notifications that will send you updates on threat analytics reports. To create email notifications, follow the steps in [get email notifications for Threat analytics updates in Microsoft 365 Defender](m365d-threat-analytics-notifications).
 
 ## Additional report details and limitations
 
