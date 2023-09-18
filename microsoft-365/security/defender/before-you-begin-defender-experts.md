@@ -39,7 +39,7 @@ Microsoft Defender Experts for Hunting is a separate service from your existing 
 
 ### Eligibility and licensing
 
-Defender Experts for Hunting customers are assigned 10 **Ask Defender Experts** credits, which you can use to submit questions, at the start of each calendar quarter. Unused credits from the current quarter roll up to the next one. You can use up to 20 credits only per quarter. All unused credits expire by the end of the calendar year or at the end of your subscription term, whichever is earlier.
+Defender Experts for Hunting customers are assigned 10 **Ask Defender Experts** credits, which you can use to submit questions, at the start of each calendar quarter. Unused credits from the current quarter roll up to the next one. You can use up to 20 credits only per quarter. All unused credits expire by the end of the calendar year or at the end of your subscription term, whichever comes first.
 
 For more information about Microsoft's commercial licensing terms, visit [this page](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/MCA).
 
