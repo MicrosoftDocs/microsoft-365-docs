@@ -19,7 +19,7 @@ ms.collection:
   - tier1
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 09/15/2023
+ms.date: 09/18/2023
 ---
 
 # Before you begin
@@ -51,7 +51,7 @@ Defender Experts for XDR also covers servers—whether on premises or on a hyper
 
 ### Ask Defender Experts
 
-As part of the service's built-in [Microsoft Defender Experts for Hunting](defender-experts-for-hunting.md), you're also assigned 10 **Ask Defender Experts** credits, which you can use to submit questions, at the start of each calendar quarter. Unused credits from the current quarter roll up to the next one. You can use up to 20 credits only per quarter. All unused credits expire by the end of the calendar year or at the end of your subscription term, whichever is shortest.
+As part of the service's built-in [Microsoft Defender Experts for Hunting](defender-experts-for-hunting.md), you're also assigned 10 **Ask Defender Experts** credits, which you can use to submit questions, at the start of each calendar quarter. Unused credits from the current quarter roll up to the next one. You can use up to 20 credits only per quarter. All unused credits expire by the end of the calendar year or at the end of your subscription term, whichever comes first.
 
 [Learn more about Microsoft's commercial licensing terms](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/MCA).
 
