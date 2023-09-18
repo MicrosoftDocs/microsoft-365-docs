@@ -202,7 +202,7 @@ The analytics experience depends on user role:
 
 ## Related articles
 
-- [What is Virtual Appointments?](https://support.microsoft.com/topic/22df0079-e6d9-4225-bc65-22747fb2cb5f)
+- [What is Virtual Appointments?](https://support.microsoft.com/topic/22df0079-e6d9-4225-bc65-22747fb2cb5f) help documentation for your users
 - [Virtual Appointments with Teams](virtual-appointments.md)
 - [Manage the join experience for Teams Virtual Appointments on browsers](browser-join.md)
 - [Teams Premium licensing](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams)
