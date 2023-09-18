@@ -46,10 +46,10 @@ The first example demonstrates how to connect Power BI to Advanced Hunting API, 
 1. Open Microsoft Power BI.
 
 2. Select **Get Data** \> **Blank Query**.
-   :::image type="content" source="images/power-bi-create-blank-query.png" alt-text="The Blank Query option under the Get Data menu item" lightbox="images/power-bi-create-blank-query.png":::
+   :::image type="content" source="../images/power-bi-create-blank-query.png" alt-text="The Blank Query option under the Get Data menu item" lightbox="../images/power-bi-create-blank-query.png":::
 
 3. Select **Advanced Editor**.
-   :::image type="content" source="images/power-bi-open-advanced-editor.png" alt-text="The Advanced Editor menu item" lightbox="images/power-bi-open-advanced-editor.png":::
+   :::image type="content" source="../images/power-bi-open-advanced-editor.png" alt-text="The Advanced Editor menu item" lightbox="../images/power-bi-open-advanced-editor.png":::
 
 4. Copy the below and paste it in the editor:
 
@@ -95,17 +95,17 @@ The first example demonstrates how to connect Power BI to Advanced Hunting API, 
 
 6. Select **Edit Credentials**.
 
-   :::image type="content" source="images/power-bi-edit-credentials.png" alt-text="The Edit Credentials menu item" lightbox="images/power-bi-edit-credentials.png":::
+   :::image type="content" source="../images/power-bi-edit-credentials.png" alt-text="The Edit Credentials menu item" lightbox="../images/power-bi-edit-credentials.png":::
 
 7. Select **Organizational account** \> **Sign in**.
 
-   :::image type="content" source="images/power-bi-set-credentials-organizational.png" alt-text="The Sign in option in the Organizational account menu item" lightbox="images/power-bi-set-credentials-organizational.png":::
+   :::image type="content" source="../images/power-bi-set-credentials-organizational.png" alt-text="The Sign in option in the Organizational account menu item" lightbox="../images/power-bi-set-credentials-organizational.png":::
 
 8. Enter your credentials and wait to be signed in.
 
 9. Select **Connect**.
 
-   :::image type="content" source="images/power-bi-set-credentials-organizational-cont.png" alt-text="The sign-in confirmation message in the Organizational account menu item" lightbox="images/power-bi-set-credentials-organizational-cont.png":::
+   :::image type="content" source="../images/power-bi-set-credentials-organizational-cont.png" alt-text="The sign-in confirmation message in the Organizational account menu item" lightbox="../images/power-bi-set-credentials-organizational-cont.png":::
 
 Now the results of your query will appear as a table and you can start to build visualizations on top of it!
 
