@@ -22,6 +22,8 @@ ms.collection:
 - securityposture-solution
 - highpri
 - tier1
+- ContentEnagagementFY24
+ms.date: 09/18/2023
 ---
 
 # Strengthen your security posture - Configure capabilities
