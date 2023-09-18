@@ -24,7 +24,7 @@ ms.date: 12/18/2020
 
 # Configure Microsoft Defender for Endpoint to stream Advanced Hunting events to your Azure Event Hubs
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft 365 Defender rebranding](../../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -118,4 +118,4 @@ To get the data types for event properties do the following:
 - [Stream Microsoft Defender for Endpoint events to your Azure storage account](raw-data-export-storage.md)
 - [Azure Event Hubs documentation](/azure/event-hubs/)
 - [Troubleshoot connectivity issues - Azure Event Hubs](/azure/event-hubs/troubleshooting-guide)
-[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../../includes/defender-mde-techcommunity.md)]

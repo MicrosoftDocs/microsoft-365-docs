@@ -24,7 +24,7 @@ ms.date: 06/01/2022
 
 # Get browser extensions permission information
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft 365 Defender rebranding](../../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -37,11 +37,11 @@ ms.date: 06/01/2022
 
 > Want to experience Microsoft Defender Vulnerability Management? Learn more about how you can sign up to the [Microsoft Defender Vulnerability Management public preview trial](../defender-vulnerability-management/get-defender-vulnerability-management.md).
 
-[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../../includes/microsoft-defender-api-usgov.md)]
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
+[!include[Improve request performance](../../../includes/improve-request-performance.md)]
 
-[!include[Prerelease information](../../includes/prerelease.md)]
+[!include[Prerelease information](../../../includes/prerelease.md)]
 
 ## API description
 
@@ -140,4 +140,4 @@ Here is an example of the response.
 
 - [Vulnerability management](../defender-vulnerability-management/defender-vulnerability-management.md)
 - [Vulnerabilities in your organization](../defender-vulnerability-management/tvm-weaknesses.md)
-[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../../includes/defender-mde-techcommunity.md)]

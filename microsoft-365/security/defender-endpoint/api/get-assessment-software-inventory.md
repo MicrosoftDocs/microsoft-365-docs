@@ -24,7 +24,7 @@ ms.date: 06/04/2021
 
 # Export software inventory assessment per device
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft 365 Defender rebranding](../../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -295,4 +295,4 @@ Other related
 
 - [Microsoft Defender Vulnerability Management](next-gen-threat-and-vuln-mgt.md)
 - [Vulnerabilities in your organization](tvm-weaknesses.md)
-[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../../includes/defender-mde-techcommunity.md)]

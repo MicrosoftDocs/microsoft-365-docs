@@ -24,7 +24,7 @@ ms.date: 12/18/2020
 
 # Handling REST API errors 
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft 365 Defender rebranding](../../../includes/microsoft-defender.md)]
 
 HTTP error responses are divided into two categories:
 * Client error (400-code level) – the client sent an invalid request or the request isn't in accordance with definitions.
@@ -109,4 +109,4 @@ When contacting us about an error, attaching this ID helps find the root cause o
     }
 }
 ```
-[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../../includes/defender-mde-techcommunity.md)]

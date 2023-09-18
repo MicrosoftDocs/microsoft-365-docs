@@ -20,7 +20,7 @@ ms.date: 12/15/2022
 
 # Get scan history by definition
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft 365 Defender rebranding](../../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -33,11 +33,11 @@ ms.date: 12/15/2022
 
 > Want to experience Microsoft Defender Vulnerability Management? Find out how to [sign up for a free trial](../defender-vulnerability-management/get-defender-vulnerability-management.md).
 
-[!Include[Prerelease information](../../includes/prerelease.md)]
+[!Include[Prerelease information](../../../includes/prerelease.md)]
 
-[!Include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+[!Include[Microsoft Defender for Endpoint API URIs for US Government](../../../includes/microsoft-defender-api-usgov.md)]
 
-[!Include[Improve request performance](../../includes/improve-request-performance.md)]
+[!Include[Improve request performance](../../../includes/improve-request-performance.md)]
 
 ## API description
 

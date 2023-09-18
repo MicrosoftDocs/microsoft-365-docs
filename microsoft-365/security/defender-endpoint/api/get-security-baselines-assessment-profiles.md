@@ -24,7 +24,7 @@ ms.date: 05/02/2022
 
 # List all security baselines assessment profiles
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft 365 Defender rebranding](../../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -121,4 +121,4 @@ GET https://api.securitycenter.microsoft.com/api/baselineProfiles
 
 - [Export security baselines assessment](export-security-baseline-assessment.md)
 - [Get security baselines assessment configurations](get-security-baselines-assessment-configurations.md)
-[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../../includes/defender-mde-techcommunity.md)]

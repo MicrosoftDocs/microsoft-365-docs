@@ -24,7 +24,7 @@ ms.date: 11/24/2022
 
 # Export Hardware and firmware assessment inventory per device
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft 365 Defender rebranding](../../../includes/microsoft-defender.md)]
 
 **Applies to:**
 

@@ -25,7 +25,7 @@ ms.date: 12/18/2020
 
 # API Explorer
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft 365 Defender rebranding](../../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -69,4 +69,4 @@ Credentials to access an API aren't needed. The API Explorer uses the Defender f
 The logged-in user authentication credential is used to verify that the API Explorer is authorized to access data on your behalf.
 
 Specific API requests are limited based on your RBAC privileges. For example, a request to "Submit indicator" is limited to the security admin role.
-[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../../includes/defender-mde-techcommunity.md)]

@@ -25,7 +25,7 @@ search.appverid: met150
 
 # Supported Microsoft Defender for Endpoint APIs
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft 365 Defender rebranding](../../../includes/microsoft-defender.md)]
 
 **Applies to:** 
 
@@ -57,9 +57,9 @@ search.appverid: met150
 >
 > If you don't specify any version (e.g. `https://api.securitycenter.microsoft.com/api/alerts`) you will get to the latest version.
 
-[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../../includes/microsoft-defender-api-usgov.md)]
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
+[!include[Improve request performance](../../../includes/improve-request-performance.md)]
 
 Learn more about the individual supported entities where you can run API calls to and details such as HTTP request values, request headers and expected responses.
 
@@ -90,4 +90,4 @@ Topic | Description
 - [Microsoft Defender for Endpoint APIs](apis-intro.md)
 
 - [Microsoft Defender for Endpoint API release notes](api-release-notes.md)
-[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../../includes/defender-mde-techcommunity.md)]

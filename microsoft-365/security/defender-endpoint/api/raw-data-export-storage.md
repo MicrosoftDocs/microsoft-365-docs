@@ -24,7 +24,7 @@ ms.date: 12/18/2020
 
 # Configure Microsoft Defender for Endpoint to stream Advanced Hunting events to your Storage account
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft 365 Defender rebranding](../../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -113,4 +113,4 @@ In order to get the data types for our events properties do the following:
 - [Microsoft Defender for Endpoint Streaming API](raw-data-export.md)
 - [Stream Microsoft Defender for Endpoint events to your Azure storage account](raw-data-export-storage.md)
 - [Azure Storage Account documentation](/azure/storage/common/storage-account-overview)
-[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../../includes/defender-mde-techcommunity.md)]

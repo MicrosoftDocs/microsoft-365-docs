@@ -24,7 +24,7 @@ ms.date: 12/18/2020
 
 # Offboard machine API
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft 365 Defender rebranding](../../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -33,9 +33,9 @@ ms.date: 12/18/2020
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-[!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
+[!include[Microsoft Defender for Endpoint API URIs for US Government](../../../includes/microsoft-defender-api-usgov.md)]
 
-[!include[Improve request performance](../../includes/improve-request-performance.md)]
+[!include[Improve request performance](../../../includes/improve-request-performance.md)]
 
 ## API description
 
@@ -45,7 +45,7 @@ Offboard device from Defender for Endpoint.
 
 - Rate limitations for this API are 100 calls per minute and 1500 calls per hour.
 
-  [!include[Machine actions note](../../includes/machineactionsnote.md)]
+  [!include[Machine actions note](../../../includes/machineactionsnote.md)]
 
 > [!NOTE]
 > This API is supported on Windows 11, Windows 10, version 1703 and later; on Windows Server 2019 and later; and on Windows Server 2012 R2 and Windows Server 2016 when using the [new, unified agent for Defender for Endpoint](update-agent-mma-windows.md#upgrade-to-the-new-unified-agent-for-defender-for-endpoint).
@@ -110,4 +110,4 @@ POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2
   "Comment": "Offboard machine by automation"
 }
 ```
-[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../../includes/defender-mde-techcommunity.md)]

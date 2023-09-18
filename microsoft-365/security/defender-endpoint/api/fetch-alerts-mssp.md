@@ -24,7 +24,7 @@ ms.date: 12/18/2020
 
 # Fetch alerts from MSSP customer tenant
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft 365 Defender rebranding](../../../includes/microsoft-defender.md)]
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
@@ -185,4 +185,4 @@ For information on how to fetch alerts using REST API, see [Fetch alerts from MS
 - [Grant MSSP access to the portal](grant-mssp-access.md)
 - [Access the MSSP customer portal](access-mssp-portal.md)
 - [Configure alert notifications](configure-mssp-notifications.md)
-[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../../includes/defender-mde-techcommunity.md)]

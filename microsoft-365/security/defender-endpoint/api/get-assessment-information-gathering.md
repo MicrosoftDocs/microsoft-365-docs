@@ -25,7 +25,7 @@ ms.date: 07/26/2022
 
 # Information gathering assessment per device
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft 365 Defender rebranding](../../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -123,4 +123,4 @@ GET https://api.securitycenter.microsoft.com/api/machines/InfoGatheringExport?$s
 - [DeviceTvmInfoGatheringKB](../defender/advanced-hunting-devicetvminfogatheringkb-table.md)
 - [Vulnerability management](../defender-vulnerability-management/defender-vulnerability-management.md)
 - [Vulnerabilities in your organization](../defender-vulnerability-management/tvm-weaknesses.md)
-[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../../includes/defender-mde-techcommunity.md)]
