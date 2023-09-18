@@ -7,7 +7,7 @@ ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.author: dansimp
-author: martyav
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: 

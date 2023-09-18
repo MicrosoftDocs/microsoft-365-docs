@@ -2,10 +2,10 @@
 title: Corporate communications with frontline workers
 description: Learn how you can use Viva Connections and Viva Engage to connect your frontline team to your broader organization.
 ms.topic: conceptual
-author: daisyfell
-ms.author: daisyfeller
+author: lana-chin
+ms.author: heidip
+manager: serdars
 audience: admin
-manager: pamgreen
 f1.keywords:
 - NOCSH
 ms.service: microsoft-365-frontline
@@ -15,7 +15,6 @@ ms.collection:
   - highpri
   - m365solution-frontline
   - m365solution-scenario
-  - tier1
 ms.localizationpriority: high
 search.appverid: MET150
 searchScope:

@@ -21,7 +21,7 @@ ms.custom: seo-marvel-apr2020
 
 ## Overview of Advanced Data Residency
 
-The Microsoft 365 Advanced Data Residency add-on ("ADR") provides eligible customers with expanded coverage of Microsoft 365 workloads and Customer Data, committed data residency for local country datacenter regions, and prioritized tenant migration services.  With Advanced Data Residency, enterprise customers can best address their data residency compliance and tenant location requirements.
+The Microsoft 365 Advanced Data Residency add-on ("ADR") provides eligible customers with expanded coverage of Microsoft 365 workloads and Customer Data, committed data residency for local country/region datacenter regions, and prioritized tenant migration services.  With Advanced Data Residency, enterprise customers can best address their data residency compliance and tenant location requirements.
 
 The following workloads are included in ADR. For more information, see:
 
@@ -40,7 +40,7 @@ The following workloads are included in ADR. For more information, see:
   - [Sensitivity Labels](m365-dr-workload-purview.md#information-protection---sensitivity-labels)
   - [Data Loss Prevention](m365-dr-workload-purview.md#information-protection---data-loss-prevention-dlp)
   - [Office Message Encryption](m365-dr-workload-purview.md#information-protection---office-message-encryption)
-  - [Information Barriers](m365-dr-workload-purview.md#insider-risk-management---information-barriers)
+  - [Information Barriers](m365-dr-workload-purview.md#risk-and-compliance---information-barriers)
 
 ## Licensing and Purchase
 

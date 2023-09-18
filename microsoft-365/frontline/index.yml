@@ -10,15 +10,15 @@ metadata:
   description: Deploy and manage simple, intuitive, and secure solutions for your essential frontline workers with Microsoft 365 for frontline workers. # Required; article description that is displayed in search results. < 160 chars.
   ms.service: microsoft-365-frontline #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: hub-page # Required
-  author: samanro #Required; your GitHub user alias, with correct capitalization.
-  ms.author: samanro #Required; microsoft alias of author; optional team alias.
-  manager: pamgreen
+  author: lana-chin #Required; your GitHub user alias, with correct capitalization.
+  ms.author: heidip #Required; microsoft alias of author; optional team alias.
+  manager: serdars
+
   audience: Admin
   ms.date: 04/07/2022 #Required; mm/dd/yyyy format.
   ms.collection:
     - m365-frontline
     - highpri
-    - tier2
 
 # highlightedContent section (optional)
 # Maximum of 8 items

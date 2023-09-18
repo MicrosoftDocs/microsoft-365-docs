@@ -19,11 +19,9 @@ description: Learn about how to set up pay-as-you-go Azure billing for Microsoft
 
 # Configure Microsoft Syntex for pay-as-you-go billing
 
-Some Microsoft Syntex features are billed on a pay-as-you-go basis. These features use an Azure subscription for billing and track usage and cost with a Syntex meter. Read the [Microsoft Syntex pay-as-you-go terms of service](/legal/microsoft-365/microsoft-syntex-pay-as-you-go-terms) before you configure pay-as-you-go.
+Microsoft Syntex services are billed on a pay-as-you-go basis. These services use an Azure subscription for billing and track usage and cost with a Syntex meter. Read the [Microsoft Syntex pay-as-you-go terms of service](/legal/microsoft-365/microsoft-syntex-pay-as-you-go-terms) before you configure pay-as-you-go.
 
-For a list of Microsoft Syntex features that use pay-as-you-go, see [Licensing for Microsoft Syntex](syntex-licensing.md)
-
-Note that if you use [Microsoft Syntex per-user licensing](set-up-content-understanding.md) you can't sign up for pay-as-you-go.
+For a list of Microsoft Syntex services that use pay-as-you-go, see [Licensing for Microsoft Syntex](syntex-licensing.md).
 
 ## Prerequisites
 
@@ -40,7 +38,7 @@ For information about how to create an Azure resource group, see [Manage Azure r
 
 ## Set up Microsoft Syntex billing in Azure
 
-When you set up Microsoft Syntex billing in Azure, events will be sent to the Azure meter in your account and you will be able to view the pages processed for unstructured and prebuilt document processing models.
+When you set up Microsoft Syntex billing in Azure, events will be sent to the Azure meter in your account, and you'll be able to view the pages processed for unstructured and prebuilt document processing models.
 
 The following permissions are required to set up Microsoft Syntex billing:
 
@@ -51,29 +49,34 @@ To configure Microsoft Syntex billing
 
 1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>, and then view the **Files and content** section.
 
-1. In the **Files and content** section, select **Use content AI with Microsoft Syntex**.
+2. In the **Files and content** section, select **Use content AI with Microsoft Syntex**.
 
-1. On the **Microsoft Syntex** page, select **Configure billing** to walk through the setup process.
-1. On the **Enter your Azure subscription** panel, choose an Azure subscription from the **Azure subscription** dropdown.
-1. Choose a resource group and region. (The region determines where your tenant ID and usage information such as site names will be stored.)
-1. Read and accept the [Microsoft Syntex pay-as-you-go terms of service](/legal/microsoft-365/microsoft-syntex-pay-as-you-go-terms).
-1. Select **Save**.
+3. On the **Microsoft Syntex** page, select **Configure billing** to walk through the setup process.
+4. On the **Enter your Azure subscription** panel, choose an Azure subscription from the **Azure subscription** dropdown.
+5. Choose a resource group and region. (The region determines where your tenant ID and usage information such as site names will be stored.)
+6. Read and accept the [Microsoft Syntex pay-as-you-go terms of service](/legal/microsoft-365/microsoft-syntex-pay-as-you-go-terms).
+7. Select **Save**.
 
 If you need to change or disconnect your Azure subscription, you can select **Manage billing** on the **Use content AI with Microsoft Syntex**.
 
 ## Monitor your Microsoft Syntex pay-as-you-go usage
 
-You can monitor your Microsoft Syntex pay-as-you-go usage in Azure Cost Management. You must have at least *read* access to the resource group that you specified for Microsoft Syntex. Note that usage information may take up to 24 hours to appear in Cost Management.
+You can monitor your Microsoft Syntex pay-as-you-go usage in Microsoft Cost Management for Azure. You must have at least *read* access to the resource group that you specified for Microsoft Syntex. Note that usage information might take up to 24 hours to appear in Cost Management.
 
 To see the charges applied to the Syntex meters
-1. Sign in to [Azure Cost Management](https://portal.azure.com/#view/Microsoft_Azure_CostManagement/Menu/~/overview).
+1. Sign in to [Microsoft Cost Management for Azure](https://portal.azure.com/#view/Microsoft_Azure_CostManagement/Menu/~/overview).
 1. Under **Cost Management**, select **Cost analysis**.
 1. Select **Add filter**, choose **Product** from the list, and then choose the product (listed below) that you want to filter on.
 1. Select **Add filter**, choose **Tag** from the list, and then choose the tag (listed below) that you want to filter on.
 
-The following Microsoft Syntex products are available:
-- Syntex Unstructured Document Processing
-- Syntex Prebuilt Document Processing
+The following Microsoft Syntex products are currently available:
+
+- Prebuilt document processing
+- Unstructured document processing
+- Content assembly
+- Image tagging
+- Taxonomy tagging
+- Optical character recognition
 
 The following tags are available:
 - Site
