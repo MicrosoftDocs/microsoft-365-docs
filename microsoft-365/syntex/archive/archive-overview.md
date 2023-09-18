@@ -46,12 +46,12 @@ Administrators should notify the site owners and end users before a site is arch
 
 ## Limitations of the public preview
 
-1. As a part of the public preview, tenants with more than 50,000 sites might face issues while trying to enumerate archived sites on the Archived Sites page. Applicable enhancements are scheduled to roll out in the future. In this scenario, PowerShell can be used to more efficiently archive sites and manage archived content.
+- As a part of the public preview, tenants with more than 50,000 sites might face issues while trying to enumerate archived sites on the Archived Sites page. Applicable enhancements are scheduled to roll out in the future. In this scenario, PowerShell can be used to more efficiently archive sites and manage archived content.
 
-2. Currently, end user search results won't show any archived content. Currently, columns such as Archived Date and Archived By aren't available. They will be available by December 2023.
+- Currently, end user search results won't show any archived content. Currently, columns such as Archived Date and Archived By aren't available. They will be available by December 2023.
 
-3. For multi-geo tenants, while data residency requirements are honored, site moves aren't supported. Archived sites will need to be reactivated prior to any move.
+- For multi-geo tenants, while data residency requirements are honored, site moves aren't supported. Archived sites will need to be reactivated prior to any move.
 
-4. Currently, tenant rename isn't supported on archived sites. Sites will need to be reactivated before a tenant rename is triggered.
+- Currently, tenant rename isn't supported on archived sites. Sites will need to be reactivated before a tenant rename is triggered.
 
-5. Sites that are backed up as part of the Microsoft 365 Backup shouldn't be archived.  
+- Sites that are backed up as part of the Microsoft 365 Backup shouldn't be archived.  
