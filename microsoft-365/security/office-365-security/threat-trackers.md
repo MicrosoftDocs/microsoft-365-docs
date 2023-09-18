@@ -95,7 +95,7 @@ The new Noteworthy threat filter highlights items that were recently detected th
 
 - If your organization doesn't already have these Office 365 Threat Investigation and Response capabilities, see [How do we get Office 365 Threat Investigation and Response capabilities?](office-365-ti.md).
 
-- Make sure that your security team has the correct roles and permissions assigned. You must be a global administrator, or have the Security Administrator, or have the Security Reader or Search and Purge role assigned in the Microsoft 365 Defender portal. See [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).
+- Make sure that your security team has the correct roles and permissions assigned. You must be a global administrator, or have the Security Administrator, Security Reader, or Search and Purge role assigned in the Microsoft 365 Defender portal. See [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).
 
 - Watch for the new Trackers to show up in your Microsoft 365 environment. When available, you'll find your Trackers on the **Threat tracker** page in the Microsoft 365 Defender portal at <https://security.microsoft.com/threattracker>.
 
