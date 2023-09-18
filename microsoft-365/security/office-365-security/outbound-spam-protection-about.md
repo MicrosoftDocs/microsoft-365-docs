@@ -60,8 +60,8 @@ It's difficult to strike a balance between customers who want to send a large vo
 As described in the [Exchange Online Service Description](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits), using EOP to send bulk email isn't a supported use of the service, and is permitted only on a "best-effort" basis. For customers who want to send bulk email using EOP, we have the following recommendations:
 
 - Don't send a large rate or volume of email that causes you to run afoul of the [sending limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1) in the service. This recommendation also includes not sending email to a large list of Bcc recipients.
-- Avoid using addresses in your primary email domain (for example, contoso.com) as senders for bulk email. Doing so can affect the delivery of regular email from senders in the domain. Consider using a custom subdomain exclusively for bulk email, particularly if you send transactional email (for example, use the sending email address `orders@t.contoso.com`).
-- Configure any custom subdomains with email authentication records in DNS ([SPF](email-authentication-spf-configure.md), [DKIM](email-authentication-dkim-configure.md), and [DMARC](email-authentication-dmarc-configure.md)).
+- Avoid using addresses in your primary email domain (for example, contoso.com) as senders for bulk email. Doing so can affect the delivery of regular email from senders in the domain. Consider using a custom subdomain exclusively for bulk email. For example use `m.contoso.com` for marketing email and `t.contoso.com` for transactional email.
+- Configure any custom subdomains with email authentication records in DNS ([SPF](email-authentication-spf-configure.md), [DKIM](email-authentication-dkim-configure.md), and [DMARC](email-authentication-dmarc-configure.md)). Many email service providers (for example, Gmail, Yahoo!, and Outlook.com) are configured to reject messages that don't meet email authentication standards.
 
 Use the following resources outside of EOP to send bulk email:
 
