@@ -40,6 +40,8 @@
       href: against-windows-new-features.md
     - name: Test against Windows monthly security updates
       href: validate-monthly-security-updates.md
+    - name: Validate apps against a custom image
+      href: validate-apps-against-a-custom-image.md
 - name: How-to guides
   items:
   - name: Server application testing
