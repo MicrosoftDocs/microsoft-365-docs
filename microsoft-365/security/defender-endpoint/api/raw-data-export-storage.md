@@ -81,7 +81,7 @@ ms.date: 12/18/2020
 
 - Each row contains the event name, the time Defender for Endpoint received the event, the tenant it belongs (you will only get events from your tenant), and the event in JSON format in a property called "properties".
 
-- For more information about the schema of Microsoft Defender for Endpoint events, see [Advanced Hunting overview](advanced-hunting-overview.md).
+- For more information about the schema of Microsoft Defender for Endpoint events, see [Advanced Hunting overview](../advanced-hunting-overview.md).
 
 - In Advanced Hunting, the **DeviceInfo** table has a column named **MachineGroup** which contains the group of the device. Here every event will be decorated with this column as well. See [Device Groups](../machine-groups.md) for more information.
     > [!NOTE]
@@ -109,7 +109,7 @@ In order to get the data types for our events properties do the following:
 
 - [Stream Microsoft 365 Defender events | Microsoft Learn](/microsoft-365/security/defender/streaming-api)
 
-- [Overview of Advanced Hunting](advanced-hunting-overview.md)
+- [Overview of Advanced Hunting](../advanced-hunting-overview.md)
 - [Microsoft Defender for Endpoint Streaming API](raw-data-export.md)
 - [Stream Microsoft Defender for Endpoint events to your Azure storage account](raw-data-export-storage.md)
 - [Azure Storage Account documentation](/azure/storage/common/storage-account-overview)

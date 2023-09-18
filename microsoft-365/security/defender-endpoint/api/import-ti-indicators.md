@@ -152,5 +152,5 @@ Here is an example of the response.
 
 ## Related topic
 
-- [Manage indicators](manage-indicators.md)
+- [Manage indicators](../manage-indicators.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../../includes/defender-mde-techcommunity.md)]

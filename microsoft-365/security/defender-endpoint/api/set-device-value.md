@@ -41,7 +41,7 @@ ms.date: 12/18/2020
 ## API description
 
 Set the device value of a specific [Machine](machine.md).<br>
-See [assign device values](tvm-assign-device-value.md) for more information.
+See [assign device values](../tvm-assign-device-value.md) for more information.
 
 ## Limitations
 

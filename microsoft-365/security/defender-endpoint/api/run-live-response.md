@@ -91,7 +91,7 @@ Before you can initiate a session on a device, make sure you fulfill the followi
       - 12 (Monterey)
       - 11 (Big Sur)
   - **Linux**
-      - [Supported Linux server distributions and kernel versions](microsoft-defender-endpoint-linux.md)
+      - [Supported Linux server distributions and kernel versions](../microsoft-defender-endpoint-linux.md)
 
 ## Permissions
 

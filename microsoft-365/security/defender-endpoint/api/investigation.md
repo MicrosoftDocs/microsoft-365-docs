@@ -39,7 +39,7 @@ ms.date: 12/18/2020
 
 Represent an Automated Investigation entity in Defender for Endpoint.
 
-For more information, see [Overview of automated investigations](automated-investigations.md).
+For more information, see [Overview of automated investigations](../automated-investigations.md).
 
 ## Methods
 

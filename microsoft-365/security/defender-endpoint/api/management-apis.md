@@ -94,5 +94,5 @@ When you enable security information and event management (SIEM) integration, it
 
 - [Access the Microsoft Defender for Endpoint APIs](apis-intro.md)
 - [Supported APIs](exposed-apis-list.md)
-- [Technical partner opportunities](partner-integration.md)
+- [Technical partner opportunities](../partner-integration.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../../includes/defender-mde-techcommunity.md)]

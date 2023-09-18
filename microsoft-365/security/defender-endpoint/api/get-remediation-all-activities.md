@@ -156,5 +156,5 @@ GET https://api.securitycenter.windows.com/api/remediationtasks/
 - [Get one remediation activity by ID](get-remediation-one-activity.md)
 - [List exposed devices of one remediation activity](get-remediation-exposed-devices-activities.md)
 - [Microsoft Defender Vulnerability Management](../next-gen-threat-and-vuln-mgt.md)
-- [Vulnerabilities in your organization](tvm-weaknesses.md)
+- [Vulnerabilities in your organization](../tvm-weaknesses.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../../includes/defender-mde-techcommunity.md)]

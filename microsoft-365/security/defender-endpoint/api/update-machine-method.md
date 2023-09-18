@@ -89,7 +89,7 @@ For best performance, you shouldn't include existing values that haven't change.
 Property|Type|Description
 :---|:---|:---
 machineTags|String collection|Set of [machine](machine.md) tags.
-deviceValue|Nullable Enum|The [value of the device](tvm-assign-device-value.md). Possible values are: 'Normal', 'Low' and 'High'.
+deviceValue|Nullable Enum|The [value of the device](../tvm-assign-device-value.md). Possible values are: 'Normal', 'Low' and 'High'.
 
 ## Response
 

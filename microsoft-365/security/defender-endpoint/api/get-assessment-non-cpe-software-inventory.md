@@ -38,7 +38,7 @@ ms.date: 05/27/2022
 This API returns all the data for installed software that doesn't have a [Common Platform Enumeration(CPE)](https://nvd.nist.gov/products/cpe), on a per-device basis. The information returned by this API, along with the information returned by the [Export software inventory assessment](get-assessment-non-cpe-software-inventory.md) API, for software that does have a CPE, gives you full visibility into the software installed across your organization and the devices it's installed on.
 
 > [!NOTE]
-> Software products without a CPE are not supported by vulnerability management. They will be shown in the software inventory page, but because CPEs are used by vulnerability management to identify the software and any vulnerabilities, information like, exploits, number of exposed devices, and weaknesses won't be available for them. For more information, see [Software inventory](../defender-vulnerability-management/tvm-software-inventory.md).
+> Software products without a CPE are not supported by vulnerability management. They will be shown in the software inventory page, but because CPEs are used by vulnerability management to identify the software and any vulnerabilities, information like, exploits, number of exposed devices, and weaknesses won't be available for them. For more information, see [Software inventory](../../defender-vulnerability-management/tvm-software-inventory.md).
 
 Different API calls get different types of data. Because the amount of data can be large, there are two ways it can be retrieved:
 
@@ -98,7 +98,7 @@ Property (ID)|Data type|Description
 :---|:---|:---
 DeviceId|string|Unique identifier for the device in the service.
 DeviceName|string|Fully qualified domain name (FQDN) of the device.
-OSPlatform|string|Platform of the operating system running on the device. These are specific operating systems with variations within the same family, such as Windows 10 and Windows 11. See [Supported operating systems, platforms and capabilities](../defender-vulnerability-management/tvm-supported-os.md) for details.
+OSPlatform|string|Platform of the operating system running on the device. These are specific operating systems with variations within the same family, such as Windows 10 and Windows 11. See [Supported operating systems, platforms and capabilities](../../defender-vulnerability-management/tvm-supported-os.md) for details.
 RbacGroupName|string|The role-based access control (RBAC) group. If this device is not assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."
 RbacGroupId|string|The role-based access control (RBAC) group ID.
 SoftwareLastSeenTimestamp|string|The last time this software was seen on the device.
@@ -239,5 +239,5 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryNonCp
 
 Other related
 - [Microsoft Defender Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Vulnerabilities in your organization](tvm-weaknesses.md)
+- [Vulnerabilities in your organization](../tvm-weaknesses.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../../includes/defender-mde-techcommunity.md)]

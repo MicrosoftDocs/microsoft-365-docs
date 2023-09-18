@@ -232,10 +232,10 @@ GET https://api.securitycenter.microsoft.com/api/machines/browserextensionsinven
 ## See also
 
 - [Get browser extensions permission info](get-browser-extensions-permission-info.md)
-- [Browser extensions assessment](../defender-vulnerability-management/tvm-browser-extensions.md)
+- [Browser extensions assessment](../../defender-vulnerability-management/tvm-browser-extensions.md)
 
 ## Other related
 
-- [Vulnerability management](../defender-vulnerability-management/defender-vulnerability-management.md)
+- [Vulnerability management](../../defender-vulnerability-management/defender-vulnerability-management.md)
 - [Vulnerabilities in your organization](../../defender-vulnerability-management/tvm-weaknesses.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../../includes/defender-mde-techcommunity.md)]

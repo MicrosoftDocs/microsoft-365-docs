@@ -120,5 +120,5 @@ GET https://api.securitycenter.windows.com/api/remediationtasks/03942ef5-aecb-4c
 - [Get one remediation activity by Id](get-remediation-one-activity.md)
 - [List all remediation activities](get-remediation-all-activities.md)
 - [Microsoft Defender Vulnerability Management](../next-gen-threat-and-vuln-mgt.md)
-- [Vulnerabilities in your organization](tvm-weaknesses.md)
+- [Vulnerabilities in your organization](../tvm-weaknesses.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../../includes/defender-mde-techcommunity.md)]

@@ -54,7 +54,7 @@ Method|Description
 [Get scan history by definition](get-scan-history-by-definition.md)|List scan definition history.
 [Get scan history by session](get-scan-history-by-session.md)|List scan history for a session.
 
-Learn more about [Windows authenticated scan](../defender-vulnerability-management/windows-authenticated-scan.md) and [Network authenticated scans](./network-devices.md).
+Learn more about [Windows authenticated scan](../defender-vulnerability-management/windows-authenticated-scan.md) and [Network authenticated scans](../network-devices.md).
 
 ## Properties
 

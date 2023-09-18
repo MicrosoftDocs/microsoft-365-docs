@@ -295,5 +295,5 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
 Other related
 
 - [Microsoft Defender Vulnerability Management](../next-gen-threat-and-vuln-mgt.md)
-- [Vulnerabilities in your organization](tvm-weaknesses.md)
+- [Vulnerabilities in your organization](../tvm-weaknesses.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../../includes/defender-mde-techcommunity.md)]

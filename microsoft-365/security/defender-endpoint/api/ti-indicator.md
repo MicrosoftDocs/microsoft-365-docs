@@ -82,7 +82,7 @@ The indicator action types supported by the API are:
 - BlockAndRemediate
 - Warn (Defender for Cloud Apps only)
 
-For more information on the description of the response action types, see [Create indicators](manage-indicators.md).
+For more information on the description of the response action types, see [Create indicators](../manage-indicators.md).
 
 > [!Note]
 >
