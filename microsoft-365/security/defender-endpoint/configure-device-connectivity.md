@@ -68,12 +68,12 @@ For the full list of required URLs, see [Enable access to the Defender for Endpo
 > Make sure to onboard devices using the streamlined onboarding package to leverage the reduced URL set. 
 
 
->[!IMPORTANT]
->The following Defender for Endpoint URLs consolidated under the simplified domain should no longer be required for connectivity if **\*.endpoint.security.microsoft.com** is allowed and devices are onboarded using the streamlined onboarding package. For more information, see the preceeding section. <br/>
+> [!IMPORTANT]
+> The following Defender for Endpoint URLs consolidated under the simplified domain should no longer be required for connectivity if **\*.endpoint.security.microsoft.com** is allowed and devices are onboarded using the streamlined onboarding package. For more information, see the preceeding section. <br/>
 >You will need to maintain connectivity with other required services not consolidated that are relevant to your organization (for example, CRL, SmartScreen/Network Protection, and WNS). For more information on the detailed list of URLs, [Download the spreadsheet here](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx).
 
->[!NOTE]
->Applies to Windows, macOS, and Linux.
+> [!NOTE]
+> Applies to Windows, macOS, and Linux.
 
 
 #### Consolidated endpoints (Windows, macOS, and Linux)
@@ -103,18 +103,26 @@ Devices must meet specific prerequisites to use the streamlined connectivity met
 ### Prerequisites
 
 **License:**
-  - Microsoft Defender for Endpoint Plan 1
-  - Microsoft Defender for Endpoint Plan 2
-  - Microsoft Defender for Business
-  - Microsoft Defender Vulnerability Management
+
+- Microsoft Defender for Endpoint Plan 1
+- Microsoft Defender for Endpoint Plan 2
+- Microsoft Defender for Business
+- Microsoft Defender Vulnerability Management
 
 **Minimum KB update (Windows)**
-  - SENSE version: 10.8040.*/ March 8, 2022 or higher (see table)
 
-**Defender Antivirus versions (Windows)**
-   - **Antimalware Client:** 4.18.2211.5 
-   - **Engine:** 1.1.19900.2 
-   - **Antivirus (Security Intelligence):** 1.381.1853.0 
+- SENSE version: 10.8040.*/ March 8, 2022 or higher (see table)
+
+**Microsoft Defender Antivirus versions (Windows)**
+
+- **Antimalware Client:** 4.18.2211.5 
+- **Engine:** 1.1.19900.2 
+- **Antivirus (Security Intelligence):** 1.381.1853.0 
+
+**Defender Antivirus versions (macOS/Linux)**
+
+- macOS supported versions with MDE product version 101.23052.0004 +.*
+- Linux supported versions with MDE product version 101.23052.0009 +.* 
 
 **Supported Operating Systems**
 
@@ -130,7 +138,7 @@ Devices must meet specific prerequisites to use the streamlined connectivity met
 >[!IMPORTANT]
 >- **Devices running on MMA agent are not supported** on the streamlined onboarding method and will need to continue using legacy URL set (Windows 7, Windows 8.1, Windows Server 2008 R2 MMA, Servers not upgraded to Unified Agent (MMA)). 
 >- Windows Server 2012 R2 and Server 2016 R2 will need to upgrade to unified agent to leverage the new method. <br/>
->- Windows 10 1607, 1703, 1709, 1803 can leverage the new onboarding option but will need to use a longer list. For more information, see [Updated URL sheet - ADD LINK TO SHEET]().
+>- Windows 10 1607, 1703, 1709, 1803 can leverage the new onboarding option but will use a longer list. For more information, see [Updated URL sheet - ADD LINK TO SHEET]().
 
 | Windows   OS    |     Minimum   KB Required (March 8, 2022)    |
 :---|:---
