@@ -110,7 +110,7 @@ For _automatic_ forwarding by Inbox rules or SMTP forwarding, the URL isn't rewr
 - The recipient is also protected by Safe Links.
 - The URL was already rewritten in a previous communication.
 
-As long as Safe Links protection is turned on, URLs are scanned prior to message delivery, regardless of whether the URLs are rewritten or not. In supported versions of Outlook (Outlook for Desktop version 16.0.12513 or later), unwrapped URLs are checked by a client-side API call to Safe Links at the time of click in supported Outlook instances (Desktop, Mac, and Web).
+As long as Safe Links protection is turned on, URLs are scanned prior to message delivery, regardless of whether the URLs are rewritten or not. In supported versions of Outlook (Outlook for Desktop version 16.0.12513 or later), unwrapped URLs are checked by a client-side API call to Safe Links at the time of click in supported Outlook instances (desktop, Mac, and web).
 
 The settings in Safe Links policies that apply to email messages are described in the following list:
 
