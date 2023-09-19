@@ -44,7 +44,6 @@ When a site is archived, compliance features such as eDiscovery and retention la
 > [!NOTE]
 > To archive a hub site, you first need to unregister it as a hub site. Archiving teams connected sites with private or shared channel sites is not supported. Teams sites with standard channels are supported.
 
- 
 ## Manage archived sites
 
 Archived sites can be reactivated or deleted. Deletion of archived sites follows the same behavior as that of active sites; that is, a site does not need to be reactivated before being deleted. However, sites in the “Reactivating” state cannot be deleted until reactivation completes.
@@ -57,18 +56,20 @@ If there is a need to access the site contents again, the sites need to be react
 
 After reactivation, the site will move back to active sites page. It will be reactivated in-place, and end users will be able to access the site and its contents as per the permissions they had when the site was archived. After reactivation is complete, the storage consumed by the site will accrue to your storage quota consumption.
 
-1. In the SharePoint admin center, go to **Archived sites**, and sign in with an account that has admin permissions for your organization.
+1. In the SharePoint admin center, go to [**Active sites**](https://go.microsoft.com/fwlink/?linkid=2185220), and sign in with an account that has [admin permissions](https://learn.microsoft.com/en-us/sharepoint/sharepoint-admin-role) for your organization.
 
-> [!NOTE]
-> If you have Office 365 operated by 21Vianet (China), sign in to the Microsoft 365 admin center, then browse to the SharePoint admin center and open the **Active sites** page.
+   > [!NOTE]
+   > If you have Office 365 operated by 21Vianet (China), sign in to the Microsoft 365 admin center, then browse to the SharePoint admin center and open the **Active sites** page.
 
-1. In the left column, select a site that needs to be reactivated.
+2. In the left column, select a site that needs to be reactivated.
 
-2. Select **Archive** in the command bar.
+3. On the command bar, select **Archive**.
 
-3. In the **Archive** pane, select **Reactivate**.
+4. On the **Archive** pane, select **Reactivate**.
 
-4. If you are trying to reactivate a site from “Archived” state, you will see a confirmation pop up, showcasing an estimated price for reactivation. Select **Confirm** on the pop up to reactivate. The site will enter the “Reactivating” state. It will move to active sites once reactivation is complete.
+5. If you are trying to reactivate a site from “Archived” state, you will see a confirmation pop up, showcasing an estimated price for reactivation. Select **Confirm** on the pop up to reactivate. The site will enter the “Reactivating” state. It will move to active sites once reactivation is complete.
+
+    ![Screenshot of an example site that you are reactivating in the SharePoint admin center.](../media/content-understanding/reactivate-site-example.png)
 
 When reactivating a site, its permissions, lists, pages, files, folder-structure, site-level policies, and other metadata will all be the same state as they were when the site was archived. The only two exceptions are when files are deleted while the site is archived:
 
