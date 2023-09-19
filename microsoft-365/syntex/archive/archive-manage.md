@@ -20,7 +20,7 @@ description: Learn how to archive, reactivate, and manage sites in Microsoft 365
 # Manage Microsoft 365 Archive (Preview)
 
 > [!NOTE]
-> This feature is currently in limited preview and subject to change. Before you begin, read the [Microsoft 365 preview terms and conditions](archive/archive.preview-terms.md).
+> This feature is currently in limited preview and subject to change. Before you begin, read the [Microsoft 365 preview terms and conditions](archive.preview-terms.md).
 
 ## Archive sites
 
@@ -39,7 +39,7 @@ When a site is archived, compliance features such as eDiscovery and retention la
 
 4. Archived sites can be seen on the **Archived sites** page in the SharePoint admin center.
 
-    ![Screenshot of the Archived sites page in the SharePoint admin center.](../media/content-understanding/turn-on-archive-admin-center.png)
+    ![Screenshot of the Archived sites page in the SharePoint admin center.](../../media/content-understanding/turn-on-archive-admin-center.png)
 
 > [!NOTE]
 > To archive a hub site, you first need to unregister it as a hub site. Archiving teams connected sites with private or shared channel sites is not supported. Teams sites with standard channels are supported.
@@ -69,7 +69,7 @@ After reactivation, the site will move back to active sites page. The site will 
 
 5. If you're trying to reactivate a site from “Archived” state, you'll see a confirmation pop-up, showcasing an estimated price for reactivation. Select **Confirm** on the pop up to reactivate. The site will enter the “Reactivating” state. It will move to active sites once reactivation is complete.
 
-    ![Screenshot of an example site that you are reactivating in the SharePoint admin center.](../media/content-understanding/reactivate-site-example.png)
+    ![Screenshot of an example site that you are reactivating in the SharePoint admin center.](../../media/content-understanding/reactivate-site-example.png)
 
 When you reactivate a site, its permissions, lists, pages, files, folder-structure, site-level policies, and other metadata will all be the same state as they were when the site was archived. The only two exceptions are when files are deleted while the site is archived:
 
