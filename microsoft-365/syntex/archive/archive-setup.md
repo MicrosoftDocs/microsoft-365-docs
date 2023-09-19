@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 09/01/2023
+ms.date: 09/20/2023
 ms.topic: conceptual
 ms.service: microsoft-syntex
 ms.custom: CSH, archive
@@ -45,27 +45,33 @@ You must have Global admin or SharePoint admin permissions to be able to access 
 
 Once pay-as-you-go billing has been enabled for Syntex on Microsoft 365 admin center, Microsoft 365 Archive can be enabled.
 
-1. Go to the Microsoft Syntex management page in the Microsoft 365 admin center and select Manage Microsoft Syntex.
+1. In the Microsoft 365 admin center, select <a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**Setup**</a>, and then select **Use content AI with Microsoft Syntex**.
 
-2. Selecting Archive opens a pane with details about the feature.
+2. On the **Use content AI with Microsoft Syntex** page, select **Manage Microsoft Syntex**.
 
-3. Select **Turn on** and select **Confirm** on the confirmation pane.
+3. On the **Manage Microsoft Syntex** page, select **Archive (Preview)**.
+
+4. On the **Archive (Preview)** page, select **Turn on**, and then select **Confirm** on the confirmation pane.
 
     ![Screenshot of the Microsoft 365 Archive page in the admin center showing how to turn on Archive.](../../media/content-understanding/turn-on-archive-admin-center.png)
 
-4. Microsoft 365 Archive is now enabled for you, and you're able to archive content from the SharePoint admin center.
+Microsoft 365 Archive is now enabled for you, and you're able to archive content from the SharePoint admin center.
 
 ## Turn off Microsoft 365 Archive
 
-If you want to turn off Microsoft 365 Archive in the future, it can be disabled from the same pane as in the previous step.
+To turn off Microsoft 365 Archive:
 
-Disabling archiving stops any further archiving. The sites already archived will continue to be in an archive state, and will be billed. The sites can be reactivated with reactivation cost or deleted.
+1. On the **Manage Microsoft Syntex** page, select **Archive (Preview)**.
 
-## Charge model
+2. On the **Archive (Preview)** page, select **Turn off**.
 
-Microsoft 365 Archive storage consumption is charged at a per-GB monthly rate and reactivation at a per-GB rate. The Microsoft 365 Archive storage usage is only charged when archived storage plus active SharePoint storage exceeds the tenant’s included or licensed allocated SharePoint storage quota. For more information about storage limits, see [SharePoint limits](https://learn.microsoft.com/en-us/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits).
+When you turn off Microsoft 365 Archive, any further archiving stops. The sites already archived will continue to be in an archive state, and will be billed. The sites can be reactivated with reactivation cost or deleted.
 
-When included or licensed storage quota exceeded, Microsoft 365 Archive is charged for monthly archive usage and reactivations of archived sites back to the Active state.
+## Cost model
+
+Microsoft 365 Archive storage consumption is charged at a per-GB monthly rate and site reactivation at a per-GB rate. The Microsoft 365 Archive storage usage is only charged when archived storage plus active SharePoint storage exceeds the tenant’s included or licensed allocated SharePoint storage quota. For more information about storage limits, see [SharePoint limits](https://learn.microsoft.com/en-us/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits).
+
+When included or licensed storage quota is exceeded, Microsoft 365 Archive is charged for monthly archive usage and reactivations of archived sites back to the active state.
 
 Monthly archive usage is calculated as the sum of the usage of all currently archived sites.  Each site’s usage is equal to the site storage usage of that site, which can be seen on the site itself or from the **Active sites** page in the SharePoint admin center. The size of an archived site, and the storage it's billed for, only changes if the content on the site changes (for example, from recycle bin content naturally expiring).
 
