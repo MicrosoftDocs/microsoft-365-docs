@@ -186,31 +186,27 @@ With streamlined connectivity, IP-based solutions can be used as an alternative 
 - Auto-IR Sample Storage
 - Defender for Endpoint Command and Control
 
->[!IMPORTANT]
->The EDR Cyber data service must be configured separately if you are using the IP method (this service is only consolidated on a URL level). Similarly to Option 1, you must maintain connectivity with other required services including SmartScreen, CRL, Windows Update, and other services.<br/>
->It is recommended to refer to the following Azure service tags for Microsoft Defender for Endpoint services. The latest IP ranges will always be found in the service tag.  
->For more information, see [Download Azure IP Ranges and Service Tags – Public Cloud from Official Microsoft Download Center](https://www.microsoft.com/download/details.aspx?WT.mc_id=DP-MVP-5004154&id=56519), [Azure IP ranges](https://azureipranges.azurewebsites.net/).
-
-
-
+> [!IMPORTANT]
+> The EDR Cyber data service must be configured separately if you are using the IP method (this service is only consolidated on a URL level). Similarly to Option 1, you must maintain connectivity with other required services including SmartScreen, CRL, Windows Update, and other services.<br/>
+> It is recommended to refer to the following Azure service tags for Microsoft Defender for Endpoint services. The latest IP ranges will always be found in the service tag.  
+> For more information, see [Download Azure IP Ranges and Service Tags – Public Cloud from Official Microsoft Download Center](https://www.microsoft.com/download/details.aspx?WT.mc_id=DP-MVP-5004154&id=56519), [Azure IP ranges](https://azureipranges.azurewebsites.net/).
 
 | Service tag name    |    Defender for Endpoint services included   |
-:---|:---
-MicrosoftDefenderForEndpoint | MAPS, Malware Sample Submission Storage, Auto-IR Sample Storage,  Command and Control.
-OneDsCollector | EDR Cyberdata <br/><br/> Note: The traffic under this service tag isn't limited to Defender for Endpoint and includes diagnostic data traffic for other Microsoft services. 
-
+|:---|:---|
+| MicrosoftDefenderForEndpoint | MAPS, Malware Sample Submission Storage, Auto-IR Sample Storage,  Command and Control. |
+| OneDsCollector | EDR Cyberdata <br/><br/> Note: The traffic under this service tag isn't limited to Defender for Endpoint and includes diagnostic data traffic for other Microsoft services. |
 
 The following table lists the current static IP ranges. For latest list, refer to the Azure service tags.
 
 
 | **Geo**  | **IP Ranges**   |
-|-----------------------|------------------------------|
-| US    |20.15.141.0/24  <br/> 20.242.181.0/24 <br/>20.10.127.0/24<br/>13.83.125.0/24        |
-| EU       |4.208.13.0/24  <br/>20.8.195.0/24       |
-|UK      | 20.26.63.224/28  <br/>20.254.173.48/28     |
+|------|-------|
+| US | `20.15.141.0/24` <br/> `20.242.181.0/24` <br/>`20.10.127.0/24`<br/>`13.83.125.0/24`        |
+| EU | `4.208.13.0/24`  <br/>`20.8.195.0/24`       |
+| UK | `20.26.63.224/28`  <br/>`20.254.173.48/28`     |
 
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > In compliance with Defender for Endpoint security and compliance standards, your data will be processed and stored in accordance with your tenant's physical location. Based on client location, traffic may flow through any of these IP regions (which correspond to Azure datacenter regions). For more information, see [Data storage and privacy](/microsoft-365/security/defender-endpoint/data-storage-privacy).  
 
 ### Stage 2. Configure your devices to connect to Defender for Endpoint service
