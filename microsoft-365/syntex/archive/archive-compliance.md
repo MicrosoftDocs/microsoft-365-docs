@@ -20,7 +20,7 @@ description: Learn about compliance features for archived sites in Microsoft 365
 # Compliance features in Microsoft 365 Archive (Preview)
 
 > [!NOTE]
-> This feature is currently in limited preview and subject to change. Before you begin, read the [Microsoft 365 preview terms and conditions](archive/archive.preview-terms.md).
+> This feature is currently in limited preview and subject to change. Before you begin, read the [Microsoft 365 preview terms and conditions](archive.preview-terms.md).
 
 Archived sites, just like active sites, maintain a baseline level of data promises.  This includes the following:
 
