@@ -20,7 +20,7 @@ description: Learn how to set up and configure Microsoft 365 Archive.
 # Set up Microsoft 365 Archive (Preview)
 
 > [!NOTE]
-> This feature is currently in limited preview and subject to change. Before you begin, read the [Microsoft 365 preview terms and conditions](archive/archive.preview-terms.md).
+> This feature is currently in limited preview and subject to change. Before you begin, read the [Microsoft 365 preview terms and conditions](archive-preview-terms.md).
 
 Microsoft 365 Archive follows a pay-as-you-go model, configurable through the Microsoft 365 admin center.
 
