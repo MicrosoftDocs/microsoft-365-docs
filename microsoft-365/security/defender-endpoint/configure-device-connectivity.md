@@ -46,7 +46,7 @@ The Defender for Endpoint-recognized simplified domain: **\*.endpoint.security.m
 - Defender for Endpoint Command & Control
 - EDR Cyberdata
 
-Alternatively, to support network devices without hostname resolution or wildcard support, you can configure connectivity using dedicated Defender for Endpoint static IP ranges. For more information, see [Configure connectivity using static IP ranges](#option-2-configure-connectivity-using-static-ip-ranges).
+To support network devices without hostname resolution or wildcard support, you can alternatively configure connectivity using dedicated Defender for Endpoint static IP ranges. For more information, see [Configure connectivity using static IP ranges](#option-2-configure-connectivity-using-static-ip-ranges).
 
 
 Prior to the availability of the simplified method of device connectivity, specific URLs had to be added to the allowed domains list. Defender for Endpoint static IP ranges weren't supported. For more information, see [Configure your environment to connect to the Defender for Endpoint service](configure-environment.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server). 
