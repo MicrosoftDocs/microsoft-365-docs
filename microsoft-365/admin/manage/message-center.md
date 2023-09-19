@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 02/18/2020
+ms.date: 09/18/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -19,11 +19,6 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
-search.appverid:
-- BCS160
-- MET150
-- MOE150
-ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: "Get an overview of Microsoft 365 Message center and its role in tracking new and changed features and other important announcements."
 ---
 
