@@ -51,8 +51,8 @@ Method|Return Type|Description
 
 Property|Type|Description
 :---|:---|:---
-id|String|Identity of the [Indicator](ti-indicator.md) entity.
-indicatorValue|String|The value of the [Indicator](ti-indicator.md).
+id|String|Identity of the [Indicator](../ti-indicator.md) entity.
+indicatorValue|String|The value of the [Indicator](../ti-indicator.md).
 indicatorType|Enum|Type of the indicator. Possible values are: "FileSha1", "FileSha256", "FileMd5", "CertificateThumbprint", "IpAddress", "DomainName" and "Url".
 application|String|The application associated with the indicator.
 action|Enum|The action that is taken if the indicator will be discovered in the organization. Possible values are: "Warn", "Block", "Audit", "Alert", "AlertAndBlock", "BlockAndRemediate" and "Allowed".

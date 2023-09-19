@@ -38,7 +38,7 @@ ms.date: 12/18/2020
 
 [!include[Improve request performance](../../../includes/improve-request-performance.md)]
 
-Retrieves your [Microsoft Secure Score for Devices](tvm-microsoft-secure-score-devices.md). A higher Microsoft Secure Score for Devices means your endpoints are more resilient from cybersecurity threat attacks.
+Retrieves your [Microsoft Secure Score for Devices](../tvm-microsoft-secure-score-devices.md). A higher Microsoft Secure Score for Devices means your endpoints are more resilient from cybersecurity threat attacks.
 
 ## Permissions
 
