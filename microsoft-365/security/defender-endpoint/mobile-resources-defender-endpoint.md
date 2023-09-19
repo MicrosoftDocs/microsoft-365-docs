@@ -54,7 +54,7 @@ Microsoft Defender for Endpoint provides multiple capabilities on mobile devices
 |-----------|-----------|---------|---------|
 |Anti-phishing (defender warning)|Informational| URL of malicious connection, connection information, Protocol type; [More information](android-privacy.md#web-page--network-information) | Domain name, IP address of malicious website; [More information](ios-privacy.md#web-page-or-network-information) |
 |Anti-phishing (Defender warning overlooked)|Low |  |  |
-|Anti-malware| Medium | Information about malicious APKs including install source, storage location, time of install etc; [More information](android-privacy.md#app-information)
+|Anti-malware| Medium | Information about malicious APKs including install source, storage location, time of install, etc.; [More information](android-privacy.md#app-information)
 | |
 |Jailbreak| High | NA |NA |
 |Rogue Wifi | Low |  |  |
