@@ -2,24 +2,23 @@
 title: Summarize incidents with Security Copilot in Microsoft 365 Defender
 description: Use Security Copilot incident summary capabilities embedded in Microsoft 365 Defender.
 keywords: security copilot, microsoft 365 defender, embedded experience, incident summary, script analyzer, script analysis, query assistant, m365, incident report, guided response, incident response playbooks, incident response, summary, summarize incident, summarize incidents
-search.product: eADQiWindows 10XVcnh
 ms.service: microsoft-365-security
 ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords: 
+f1.keywords:
   - NOCSH
 ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: 
+ms.collection:
   - m365-security
-  - tier3
+  - tier1
 ms.topic: conceptual
-search.appverid: 
+search.appverid:
   - MOE150
   - MET150
 ms.date: 10/10/2023
