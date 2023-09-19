@@ -45,7 +45,7 @@ The following downloadable spreadsheet lists the services and their associated U
 > [!NOTE]
 > (Applies to public preview)<br>
 > - As part of the preview, certain Defender for Endpoint services are consolidated behind the URL: `\*.endpoint.security.microsoft.com`. You have the option to use the a reduced set of URLs in Microsoft 365 Defender for Defender for Endpoint. You also have the new option of configuring allow lists using static Defender for Endpoint dedicated IP ranges. For more information, see the INSTRUCTIONS HERE and review the updated list in the preceding table.<br> 
-> - To use the new onboarding method, devices must meet specific prerequisites and use a new onboarding package. For more information, see LINK.<br>
+> - To use the new onboarding method, devices must meet specific prerequisites and use a new onboarding package. For more information, see LINK. YOu can migrate previously onboarded devices. For more information, see LINK.<br>
 > - Certain services are not included in this consolidation. You must verify that you maintain connectivity with the required services. For details on services **not** included in the consolidation, see the UPDATED URL SHEET or LINK TO Services not under the consolidated domain.
 > - Devices running the MMA agent are not supported under streamlined solution and must be onboarded using the down-level method. For a list of required URLs, see the MMA tab in the URL SHEET. Devices running legacy Windows version 1607, 1703, 1709, or 1803 can onboard using the new onboarding package but still require a longer list of URLs. For more information, see the preceeding table.
 
