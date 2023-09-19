@@ -49,18 +49,15 @@ The Defender for Endpoint-recognized simplified domain: **\*.endpoint.security.m
 To support network devices without hostname resolution or wildcard support, you can alternatively configure connectivity using dedicated Defender for Endpoint static IP ranges. For more information, see [Configure connectivity using static IP ranges](#option-2-configure-connectivity-using-static-ip-ranges).
 
 
-Prior to the availability of the simplified method of device connectivity, specific URLs had to be added to the allowed domains list. Defender for Endpoint static IP ranges weren't supported. For more information, see [Configure your environment to connect to the Defender for Endpoint service](configure-environment.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server). 
-
 >[!NOTE] 
 >The simplified connectivity method will **not change how Microsoft Defender for Endpoint functions on a device nor will it change the end-user experience**. Only the URLs or IPs that a device uses to connect to the service will change. 
 
 >[!IMPORTANT]
->Preview limitiations and known issues: <br/>
->- Streamlined connectivity does not support onboarding through Microsoft Defender for Cloud or Intune's API method.
+>Preview limitations and known issues: <br/>
+>- Streamlined connectivity does not support onboarding through API (includes Microsoft Defender for Cloud and Intune).
 >- This onboarding method has specific prerequisites that do not apply to the standard onboarding method.
 
 ## Consolidated services 
-
 
 As part of this preview, this section lists the Defender for Endpoint services that have been consolidated under the new simplified domain. Previously, you may have been using these individual endpoints. 
 
