@@ -204,7 +204,7 @@ In order to preview new features and provide early feedback, it is recommended t
 For Debian 11 and earlier, run the following command.
 
   ```bash
-  curl -sSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /usr/share/keyrings/microsoft-prod.gpg  > /dev/null
+  curl -sSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/microsoft.gpg > /dev/null
   ```
 For Debian 12 and later, run the following command.
 
