@@ -78,7 +78,9 @@ When you reactivate a site, its permissions, lists, pages, files, folder-structu
 
 Other than these two exceptions, you can expect the site to be unchanged.  
 
-## Archive States
+## Archive states
+
+The following table describes the archive states and allowed operations.
 
 |Archive state  |Description  |Allowed operations  |
 |---------|---------|---------|
