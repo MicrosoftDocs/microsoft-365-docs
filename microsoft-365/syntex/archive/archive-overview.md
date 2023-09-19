@@ -22,7 +22,7 @@ description: Learn about Microsoft 365 Archive.
 Microsoft 365 Archive offers lower-cost storage for inactive SharePoint sites without the need to move any content outside of Microsoft 365.
 
 > [!NOTE]
-> This feature is currently in limited preview and subject to change. Before you begin, read the [Microsoft 365 preview terms and conditions](archive.preview-terms.md).
+> This feature is currently in limited preview and subject to change. Before you begin, read the [Microsoft 365 preview terms and conditions](archive-preview-terms.md).
 
 ## Introduction
 
