@@ -231,7 +231,7 @@ To test streamlined connectivity for devices not yet onboarded to Defender for E
 
 ### Stage 4. Apply the new onboarding package required for streamlined connectivity
 
-Once you configure your network to communicate with the full list of services, you can begin onboarding devices using the streamlined method.  
+Once you configure your network to communicate with the full list of services, you can begin onboarding devices using the streamlined method. . Note that onboarding via API is not currently supported (includes Intune connector & Microsoft Defender for Cloud).  
 
 Before proceeding, confirm devices meet the [prerequisites](#prerequisites) and have updated the sensor and Microsoft Defender Antivirus versions. 
 
