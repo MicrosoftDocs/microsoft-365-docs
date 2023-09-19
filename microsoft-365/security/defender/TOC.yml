@@ -30,6 +30,8 @@
           href: microsoft-365-security-mda-redirection.md
       - name: Microsoft 365 Defender integration with Microsoft Sentinel
         href: microsoft-365-defender-integration-with-azure-sentinel.md
+      - name: Security Copilot in Microsoft 365 Defender
+        href: security-copilot-in-microsoft-365-defender.md        
       - name: Microsoft 365 Defender for US Government customers
         href: usgov.md
       - name: Industry tests
@@ -150,6 +152,12 @@
       items: 
        - name: Overview
          href: incident-response-overview.md
+       - name: Investigate with Security Copilot
+         items:
+              - name: Summarize incidents
+                href: security-copilot-m365d-incident-summary.md
+              - name: Analyze scripts
+                href: security-copilot-m365d-script-analysis.md                               
        - name: Respond to incidents
          items: 
               - name: Overview
