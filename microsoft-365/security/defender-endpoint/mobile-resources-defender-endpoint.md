@@ -19,17 +19,18 @@ ms.subservice: mde
 search.appverid: met150
 ms.date: 09/19/2023
 ---
+# Resources for Microsoft Defender for Endpoint for mobile devices
 
 Microsoft Defender for Endpoint provides multiple capabilities on mobile devices. Some of these capabilities are enabled by default while others are configured by IT admins. The following table shows how to configure the resources related to Microsoft Defender for Endpoint on Android and iOS.
 
-# Feature configurations
+## Feature configurations
 
 | Configuration| Description | Android AE config key | Android MAM | iOS |
 |--------------|-------------|-----------------------|-------------|-----|
 |Web Protection|Admins can use this to configure web protection feature. When disabled, end users are not asked for VPN permissions|Antiphishing = 0/1 (default), VPN = 0/1(default)|Antiphishing=0/1(default), VPN = 0/1(default)| WebProtection = true (default) / false|
 |Network Protection| Network protection is disabled by default. Admins can enable it to include rogue WiFi and certificate detection (only available on android) on mobile.|Enable Network protection in Microsoft Defender = 0(default)/1| DefenderNetworkProtectionEnable = 0(default)/1|DefenderNetworkProtectionEnable = 0(default)/1|
 
-# Privacy configuration
+## Privacy configuration
 
 |Configuration| Description | Android AE config key | Android MAM | iOS |
 |-------------|-------------|-----------------------|-------------|-----|
@@ -39,7 +40,7 @@ Microsoft Defender for Endpoint provides multiple capabilities on mobile devices
 |Network protection | Control the collection of network and certificate details in the alert report|Enable Network protection privacy = 1/0 |DefenderNetworkProtectionPrivacy = 1/0 |DefenderNetworkProtectionPrivacy |
 
 
-# Additional Configurations
+## Additional Configurations
 
 |Configuration| Description | Android AE config key | Android MAM | iOS |
 |-------------|-------------|-----------------------|-------------|-----|
@@ -47,7 +48,7 @@ Microsoft Defender for Endpoint provides multiple capabilities on mobile devices
 |Device tagging| Defender for Endpoint enables bulk tagging mobile devices during onboarding. Admins can set up tags using this configuration by using Intune.|Device tag (Value as String)|DefenderDeviceTag (Value as String) |DefenderDeviceTag (Value as String)|
 |Optional Permissions| Admins can make some permissions optional for the end user while onboarding Defender for Endpoint. Users see an option to grant these permissions later.| NA|DefenderOptionalVPN = 0(default)/1, DefenderOptionalAccessibility = 0(default)/1|DefenderOptionalVPN = 0(default)/1, DefenderOptionalAccessibility = 0(default)/1|
 
-# Alerts severity and privacy information
+## Alerts severity and privacy information
 
 |Alert type | Severity | Privacy information (Android)| Privacy information (iOS)|
 |-----------|-----------|---------|---------|
