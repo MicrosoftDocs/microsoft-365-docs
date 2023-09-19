@@ -21,7 +21,7 @@ metadata:
 additionalContent:
   # Supports up to 4 subsections
   sections:
-    - title: Learn about Microsoft 365 Copilot # < 60 chars (Optional; Remove if not applicable.)
+    - title: Get started with Microsoft 365 Copilot # < 60 chars (Optional; Remove if not applicable.)
       items:
         # Card
         - title: Microsoft 365 Copilot overview
@@ -32,10 +32,6 @@ additionalContent:
           summary: TBD 
           url: index.yml
         # Card
-        - title: Data, Privacy, and Security for Microsoft 365 Copilot
-          summary: Learn how Microsoft 365 Copilot uses data and how it stores and protects that data. 
-          url: /deployoffice/privacy/microsoft-365-copilot
-        # Card
         - title: Setup
           summary: Get started with Microsoft 365 Copilot in the Microsoft 365 Admin Center.
           url: /microsoft-365/admin/copilot/m365-copilot-setup/
@@ -44,13 +40,15 @@ additionalContent:
           summary: TBD 
           url: index.yml
         # Card
+        - title: Data, Privacy, and Security for Microsoft 365 Copilot
+          summary: Learn how Microsoft 365 Copilot uses data and how it stores and protects that data. 
+          url: /deployoffice/privacy/microsoft-365-copilot
+        # Card
         - title: Extensibility
           summary: TBD 
           url: index.yml
-        # Card
-        - title: Service description
-          summary: Read the service description for what's included in Microsoft 365 Copilot
-          url: /office365/servicedescriptions/office-365-platform-service-description/microsoft-365-copilot/
+    - title: Learn about Microsoft 365 Copilot # < 60 chars (Optional; Remove if not applicable.)
+      items:
         # Card
         - title: Overview video
           summary: Watch an overview of Microsoft 365 Copilot
@@ -59,6 +57,10 @@ additionalContent:
         - title: FAQ
           summary: Review the Copilot FAQ
           url: https://support.microsoft.com/topic/frequently-asked-questions-ai-microsoft-365-copilot-and-microsoft-designer-987b275d-f6f2-4d5d-94c5-e927cffae705
+        # Card
+        - title: Service description
+          summary: Read the service description for what's included in Microsoft 365 Copilot
+          url: /office365/servicedescriptions/office-365-platform-service-description/microsoft-365-copilot/
         # Card
         - title: Microsoft AI help & learning
           summary: Help and learning for you and your users
