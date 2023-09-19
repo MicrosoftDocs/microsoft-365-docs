@@ -21,16 +21,19 @@ description: Learn about Microsoft 365 Archive.
 
 Microsoft 365 Archive offers lower-cost storage for inactive SharePoint sites without the need to move any content outside of Microsoft 365.
 
+> [!NOTE]
+> This feature is currently in limited preview and subject to change. Before you begin, read the [Microsoft 365 preview terms and conditions](archive.preview-terms.md).
+
 ## Introduction
 
-There's a growing need for enterprises to store inactive or aging data for ever-longer periods of time for possible later retrieval. They ideally want to keep the data in place to make compliance and data lifecycle management easy. Microsoft 365 Archive enables them to store this inactive data in place, within the Microsoft trust boundary to maintain the security and compliance standards that would apply to any data in SharePoint. Archive doesn't directly provide compliance features, but the suite of Purview tools does operate seamlessly on archived content. Some additional advantages of using Microsoft 365 Archive are:
+There's a growing need for enterprises to store inactive or aging data for ever-longer periods of time for possible later retrieval. They ideally want to keep the data in place to make compliance and data lifecycle management easy. Microsoft 365 Archive enables them to store this inactive data in place, within the Microsoft trust boundary to maintain the security and compliance standards that would apply to any data in SharePoint. Microsoft 365 Archive doesn't directly provide compliance features, but the suite of Microsoft Purview tools does operate seamlessly on archived content. Some additional advantages of using Microsoft 365 Archive are:
 
 - Ultra-fast archive of sites of any size and any number of sites
 - Cost savings on storage consumption beyond the allocated Microsoft 365 storage quota
 - In-place reactivation of archived sites whenever needed with full site fidelity and lossless metadata reactivation
 - Decluttering active sites by moving content to archivable sites and decluttering of search indexes
 
-Microsoft 365 Archive is administered in the SharePoint admin center by SharePoint or Global administrators.
+Microsoft 365 Archive is administered in the SharePoint admin center by Global and SharePoint or administrators.
 
 When a site is archived, it goes into an explicitly colder tier, no longer consumes a tenant’s active storage quota, and instead drives Microsoft 365 Archive storage consumption. Being in this colder tier means the site is no longer accessible by anyone in the organization outside of Microsoft Purview or admin search.
 
@@ -40,7 +43,7 @@ Archiving a site archives everything within it, including:
 - Lists and list data
 
 > [!NOTE]
-> Microsoft 365 Archive is currently rolling out. More features will become available to organizations throughout October-November 2023.
+> Microsoft 365 Archive is currently rolling out. More features will become available to organizations through November 2023.
 
 Administrators should notify the site owners and end users before a site is archived so they're aware that the site won't be accessible.
 
