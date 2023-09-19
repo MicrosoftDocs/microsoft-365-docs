@@ -59,14 +59,13 @@ To support network devices without hostname resolution or wildcard support, you 
 
 ## Consolidated services 
 
-As part of this preview, this section lists the Defender for Endpoint services that have been consolidated under the new simplified domain. Previously, you may have been using these individual endpoints. 
+As part of this preview, this section lists the Defender for Endpoint services that have been consolidated under the new simplified domain: `*.endpoint.security.microsoft.com`. Previously, you might have been using these individual endpoints. 
 
-The following table lists the Defender for Endpoint service URLs that are consolidated under the new simplified domain: `*.endpoint.security.microsoft.com`.
 
 For the full list of required URLs, see [Enable access to the Defender for Endpoint service URLs in the proxy server](configure-environment.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server).
 
->[!NOTE] 
->You will need to onboard devices using the strealined onboarding package to leverage the reduced URL set. 
+> [!NOTE] 
+> Make sure to onboard devices using the streamlined onboarding package to leverage the reduced URL set. 
 
 
 >[!IMPORTANT]
