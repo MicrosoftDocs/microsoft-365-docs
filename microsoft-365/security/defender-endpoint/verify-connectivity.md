@@ -13,7 +13,7 @@ ms.collection:
 - tier1
 ms.topic: how-to
 ms.subservice: mde
-ms.date: 09/13/2023
+ms.date: 09/19/2023
 ---
 
 
@@ -40,7 +40,6 @@ For more information on the Defender for Endpoint Client Analyzer, see [Troubles
 > - When testing on a device onboarded to Defender for Endpoint, the tool will use the onboarding parameters. <br>
 > - When testing on a device not yet onboarded to Defender for Endpoint, the tool will use the defaults of US, UK, and EU.  
 
- 
 
 > [!NOTE]
 > (Applies to public preview)<br>
@@ -98,17 +97,17 @@ However, if the connectivity check results indicate a failure, an HTTP error is 
 
 If you are testing connectivity on a device that has not yet been onboarded to Defender for Endpoint using the streamlined approach (relevant for both new and migrating devices): 
 
-1. Download the 'simplified' onboarding package for relevant OS.
+1. Download the streamlined onboarding package for relevant OS.
 
 2. Extract the .cmd from onboarding package.
 
 3. Follow the instructions in the previous section to download the Client Analyzer. 
 
-4. Run `mdeclientanalyzer.cmd -o <path to onboarding cmd file>` from within the MDEClientAnalyzer folder. The command will use parameters from the onboarding script to test connectivity.  
+4. Run `mdeclientanalyzer.cmd -o <path to onboarding cmd file>` from within the MDEClientAnalyzer folder. The command uses geo parameters from the onboarding script to test connectivity.  
 
-If you are testing connectivity on a device onboarded to  Defender for Endpoint using the streamlined approach, run the  Defender for Endpoint Client Analyzer as normal. The tool will use the configured onboarding parameters to test connectivity.  
+If you are testing connectivity on a device onboarded to Defender for Endpoint using the streamlined onboarding package, run the Defender for Endpoint Client Analyzer as normal. The tool will use the configured onboarding parameters to test connectivity.  
 
-For more info on how to access simplified onboarding script, see [Onboarding devices using streamlined device connectivity](configure-device-connectivity.md).  
+For more info on how to access streamlined onboarding script, see [Onboarding devices using streamlined device connectivity](configure-device-connectivity.md).  
 
 ## Next step
 
