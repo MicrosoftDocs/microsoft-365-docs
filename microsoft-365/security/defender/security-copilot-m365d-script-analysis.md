@@ -50,7 +50,7 @@ See the Security Copilot Early Access Program onboarding for the full list of te
 
 ## Analyze a script
 
-You can access the script analysis capability in the alert timeline within an incident and in the [device timeline](defender-endpoint/device-timeline-event-flag).
+You can access the script analysis capability in the alert timeline within an incident and in the [device timeline](/defender-endpoint/device-timeline-event-flag.md).
 
 To begin analysis, perform the following steps:
 

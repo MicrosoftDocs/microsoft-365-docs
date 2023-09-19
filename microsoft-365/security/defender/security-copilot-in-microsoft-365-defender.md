@@ -41,9 +41,9 @@ To ensure that you have access to Security Copilot, see Security Copilot licensi
 
 Security Copilot in Microsoft 365 Defender can be accessed through the following:
 
-1.	Select Trial on the incident page. 
-2.	Select the Copilot button located on the upper portion of an incident page.
-3.	In the Advanced hunting page, select the Copilot button located beside the Share link option.
+1. Select Trial on the incident page.
+2. Select the Copilot button located on the upper portion of an incident page.
+3. In the Advanced hunting page, select the Copilot button located beside the Share link option.
 
 To review Security Copilot and assess if it’s right for your organization, see the Security Copilot Frequently Asked Questions page.
 
