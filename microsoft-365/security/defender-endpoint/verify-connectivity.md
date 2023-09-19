@@ -72,7 +72,7 @@ Verify that the proxy configuration is completed successfully. The WinHTTP can t
 
 6. Open *MDEClientAnalyzerResult.txt* and verify that you've performed the proxy configuration steps to enable server discovery and access to the service URLs.
 
-   The tool checks the connectivity of Defender for Endpoint service URLs. Ensure the Defender for Endpoint client is configured to interact. The tool will print the results in the *MDEClientAnalyzerResult.txt* file for each URL that can potentially be used to communicate with the Defender for Endpoint services. For example:
+   The tool checks the connectivity of Defender for Endpoint service URLs. Ensure the Defender for Endpoint client is configured to interact. The tool prints the results in the *MDEClientAnalyzerResult.txt* file for each URL that can potentially be used to communicate with the Defender for Endpoint services. For example:
 
    ```text
    Testing URL : https://xxx.microsoft.com/xxx
@@ -95,7 +95,7 @@ However, if the connectivity check results indicate a failure, an HTTP error is 
 
 ## (Public preview) Testing connectivity to the streamlined onboarding method 
 
-If you are testing connectivity on a device that has not yet been onboarded to Defender for Endpoint using the streamlined approach (relevant for both new and migrating devices): 
+If you're testing connectivity on a device that hasn't yet been onboarded to Defender for Endpoint using the streamlined approach (relevant for both new and migrating devices): 
 
 1. Download the streamlined onboarding package for relevant OS.
 
@@ -105,7 +105,7 @@ If you are testing connectivity on a device that has not yet been onboarded to D
 
 4. Run `mdeclientanalyzer.cmd -o <path to onboarding cmd file>` from within the MDEClientAnalyzer folder. The command uses geo parameters from the onboarding script to test connectivity.  
 
-If you are testing connectivity on a device onboarded to Defender for Endpoint using the streamlined onboarding package, run the Defender for Endpoint Client Analyzer as normal. The tool will use the configured onboarding parameters to test connectivity.  
+If you're testing connectivity on a device onboarded to Defender for Endpoint using the streamlined onboarding package, run the Defender for Endpoint Client Analyzer as normal. The tool uses the configured onboarding parameters to test connectivity.  
 
 For more info on how to access streamlined onboarding script, see [Onboarding devices using streamlined device connectivity](configure-device-connectivity.md).  
 
