@@ -24,9 +24,13 @@ additionalContent:
     - title: Learn about Microsoft 365 Copilot # < 60 chars (Optional; Remove if not applicable.)
       items:
         # Card
-        - title: Copilot overview video
-          summary: Watch an overview of Microsoft 365 Copilot
-          url: https://www.youtube.com/watch?v=E5g20qmeKpg
+        - title: Microsoft 365 Copilot overview
+          summary: TBD 
+          url: index.yml
+        # Card
+        - title: Copilot requirements
+          summary: TBD 
+          url: index.yml
         # Card
         - title: Data, Privacy, and Security for Microsoft 365 Copilot
           summary: Learn how Microsoft 365 Copilot uses data and how it stores and protects that data. 
@@ -36,9 +40,21 @@ additionalContent:
           summary: Get started with Microsoft 365 Copilot in the Microsoft 365 Admin Center.
           url: /microsoft-365/admin/copilot/m365-copilot-setup/
         # Card
+        - title: Enable users
+          summary: TBD 
+          url: index.yml
+        # Card
+        - title: Extensibility
+          summary: TBD 
+          url: index.yml
+        # Card
         - title: Service description
           summary: Read the service description for what's included in Microsoft 365 Copilot
           url: /office365/servicedescriptions/office-365-platform-service-description/microsoft-365-copilot/
+        # Card
+        - title: Overview video
+          summary: Watch an overview of Microsoft 365 Copilot
+          url: https://www.youtube.com/watch?v=E5g20qmeKpg
         # Card
         - title: FAQ
           summary: Review the Copilot FAQ
@@ -50,14 +66,10 @@ additionalContent:
     - title: Architecture diagrams # < 60 chars (Optional; Remove if not applicable.)
       items:
         # Card
-        - title: TBD
+        - title: Microsoft 365 Copilot Architecture illustration set
           summary: TBD
           url: index.yml
         # Card
-        - title: TBD
-          summary: TBD
-          url: index.yml
-        # Card
-        - title: TBD
+        - title: Zero Trust Security Guidance
           summary: TBD
           url: index.yml
