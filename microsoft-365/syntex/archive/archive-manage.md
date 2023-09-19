@@ -26,12 +26,12 @@ description: Learn how to archive, reactivate, and manage sites in Microsoft 365
 
 Global admins and SharePoint admins can archive both non-group connected sites and group-connected sites from the SharePoint admin center. Archiving group-connected sites will archive only the site, and the rest of the group will continue being active. As soon as a site is archived, it stops consuming storage from active storage quota, and the storage starts being counted towards Microsoft 365 Archive storage. (There might be a delay in the change in storage being reflected in the admin center.)
 
-When a site is archived, compliance features such as eDiscovery and retention labels continue to be applied on the site.
+When a site is archived, compliance features such as eDiscovery and retention labels continue to be applied to the site.
 
 1. In the SharePoint admin center, go to [**Active sites**](https://go.microsoft.com/fwlink/?linkid=2185220), and sign in with an account that has [admin permissions](https://learn.microsoft.com/en-us/sharepoint/sharepoint-admin-role) for your organization.
 
    > [!NOTE]
-   > If you have Office 365 operated by 21Vianet (China), sign in to the Microsoft 365 admin center, then browse to the SharePoint admin center and open the **Active sites** page.
+   > If you have Office 365 operated by 21Vianet (China), sign in to the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=850627), then browse to the SharePoint admin center and open the **Active sites** page.
 
 2. In the left column, select one or more sites.
 
@@ -39,7 +39,7 @@ When a site is archived, compliance features such as eDiscovery and retention la
 
 4. Archived sites can be seen on the **Archived sites** page in the SharePoint admin center.
 
-    ![Screenshot of the Archived sites page in the SharePoint admin center.](../../media/content-understanding/turn-on-archive-admin-center.png)
+    ![Screenshot of the Archived sites page in the SharePoint admin center.](../../media/content-understanding/archived-sites-page.png)
 
 > [!NOTE]
 > To archive a hub site, you first need to unregister it as a hub site. Archiving teams connected sites with private or shared channel sites is not supported. Teams sites with standard channels are supported.
@@ -59,7 +59,7 @@ After reactivation, the site will move back to active sites page. The site will 
 1. In the SharePoint admin center, go to [**Active sites**](https://go.microsoft.com/fwlink/?linkid=2185220), and sign in with an account that has [admin permissions](https://learn.microsoft.com/en-us/sharepoint/sharepoint-admin-role) for your organization.
 
    > [!NOTE]
-   > If you have Office 365 operated by 21Vianet (China), sign in to the Microsoft 365 admin center, then browse to the SharePoint admin center and open the **Active sites** page.
+   > If you have Office 365 operated by 21Vianet (China), sign in to the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=850627), then browse to the SharePoint admin center and open the **Active sites** page.
 
 2. In the left column, select a site that needs to be reactivated.
 
