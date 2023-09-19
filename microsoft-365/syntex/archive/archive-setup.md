@@ -22,7 +22,7 @@ description: Learn how to set up and configure Microsoft 365 Archive.
 > [!NOTE]
 > This feature is currently in limited preview and subject to change. Before you begin, read the [Microsoft 365 preview terms and conditions](archive-preview-terms.md).
 
-Microsoft 365 Archive follows a pay-as-you-go model, configurable through the Microsoft 365 admin center.
+Microsoft 365 Archive follows a pay-as-you-go model, and is configured through the Microsoft 365 admin center.
 
 To enable Microsoft 365 Archive for a tenant, perform the following steps:
 
@@ -33,9 +33,9 @@ To enable Microsoft 365 Archive for a tenant, perform the following steps:
 
 ### Licensing
 
-Before you can use Microsoft 365 Archive, you must first link an Azure subscription in Syntex pay-as-you-go. Microsoft 365 Archive is billed based on the number of gigabytes (GB) archived and number of gigabytes (GB) reactivated.
+Before you can use Microsoft 365 Archive, you must first link your Azure subscription in [Syntex pay-as-you-go](syntex-azure-billing.md). Microsoft 365 Archive is billed based on the [number of gigabytes (GB) archived and number of gigabytes (GB) reactivated](syntex-pay-as-you-go-services.md).
 
-You can enable pay-as-you-go billing at Syntex billing by following the steps here: Setup pay-as-you-go.
+To set up pay-as-you-go billing, see [Configure Microsoft Syntex for pay-as-you-go billing at Syntex billing](../syntex-azure-billing.md).
 
 ### Permissions
 
