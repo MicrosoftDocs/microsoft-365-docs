@@ -154,7 +154,13 @@
             "source_path": "scheduler/scheduler-using.md",
             "redirect_url": "https://news.microsoft.com/reinventing-productivity",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "admin/setup/migrate-email-and-contacts-admin.md",
+            "redirect_url": "https://support.microsoft.com/office/move-your-old-email-calendars-and-contacts-to-microsoft-365-2c37f0b7-2915-423c-b35e-9e03267f23dc",
+            "redirect_document_id": false
         }
+
 
     ]
 }
