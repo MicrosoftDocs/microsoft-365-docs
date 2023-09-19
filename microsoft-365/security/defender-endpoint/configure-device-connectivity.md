@@ -258,8 +258,8 @@ For migrating devices already onboarded to Defender for Endpoint, see [Migrating
 
 When you're ready to set the default onboarding package to streamlined, you can turn on the following Advanced Feature setting in the Microsoft 365 Defender portal (**Settings > Endpoints > Advanced Features**).
 
->[!NOTE]
->Validate that your environment is ready before moving forward with this option.
+> [!NOTE]
+> Before moving forward with this option, validate that your environment is ready and all devices meet prerequisites.
 
 
 :::image type="content" source="images/advanced-setting-streamlined-connectivity.png" alt-text="Screenshot of advanced settings page with streamlined connectivity option":::
