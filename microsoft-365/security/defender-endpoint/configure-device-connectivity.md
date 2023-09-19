@@ -162,7 +162,7 @@ The following illustration shows the streamlined connectivity process and the co
 
 ### Stage 1. Configure your network environment for cloud connectivity 
 
-Once you confirm prerequisites are met, ensure your network environment is properly configured to support the streamlined connectivity method. Follow the steps outlined in using streamlined (preview method),  [Configure your network environment to ensure connectivity with Defender for Endpoint service](configure-environment.md). 
+Once you confirm prerequisites are met, ensure your network environment is properly configured to support the streamlined connectivity method. Using the streamlined method (preview), follow the steps outlined in [Configure your network environment to ensure connectivity with Defender for Endpoint service](configure-environment.md). 
 
 Defender for Endpoint services consolidated under the simplified method should no longer be required for connectivity. However, some URLs aren't included in the consolidation. 
 
