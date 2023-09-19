@@ -24,7 +24,7 @@ description: Learn how to archive, reactivate, and manage sites in Microsoft 365
 
 ## Archive sites
 
-Both global admins and SharePoint admins can archive both non-group connected sites and group-connected sites from the SharePoint admin center. Archiving gdfsroup-connected sites will archive only the site, and the rest of the group will continue being active. As soon as a site is archived, it stops consuming storage from Active storage quota, and the storage starts being counted towards Microsoft 365 Archive storage. (There might be a delay in the change in storage being reflected in the user interface.)
+Global admins and SharePoint admins can archive both non-group connected sites and group-connected sites from the SharePoint admin center. Archiving gsroup-connected sites will archive only the site, and the rest of the group will continue being active. As soon as a site is archived, it stops consuming storage from Active storage quota, and the storage starts being counted towards Microsoft 365 Archive storage. (There might be a delay in the change in storage being reflected in the user interface.)
 
 When a site is archived, compliance features such as eDiscovery and retention labels continue to be applied on the site.
 
