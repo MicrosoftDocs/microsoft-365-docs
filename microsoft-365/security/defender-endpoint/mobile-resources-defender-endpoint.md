@@ -40,7 +40,7 @@ Microsoft Defender for Endpoint provides multiple capabilities on mobile devices
 |Network protection | Control the collection of network and certificate details in the alert report|Enable Network protection privacy = 1/0 |DefenderNetworkProtectionPrivacy = 1/0 |DefenderNetworkProtectionPrivacy |
 
 
-## Additional Configurations
+## Additional configurations
 
 |Configuration| Description | Android AE config key | Android MAM | iOS |
 |-------------|-------------|-----------------------|-------------|-----|
