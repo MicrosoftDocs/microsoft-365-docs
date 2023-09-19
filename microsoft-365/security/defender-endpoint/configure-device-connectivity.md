@@ -32,9 +32,9 @@ ms.date: 09/19/2023
 
 The streamlined onboarding method is currently in public preview. 
 
-The Microsoft Defender for Endpoint service requires the use of proxy configurations to report diagnostic data and communicate data to the service. Prior to the availability of the streamlined connectivity method, additional URLs were required and Defender for Endpoint static IP ranges were not supported. For more information on full MDE connectivity processes, see [STEP 1: Configure your network environment to ensure connectivity with Defender for Endpoint service](configure-environment.md).
+The Microsoft Defender for Endpoint service requires the use of proxy configurations to report diagnostic data and communicate data to the service. Prior to the availability of the streamlined connectivity method, other URLs were required and Defender for Endpoint static IP ranges weren't supported. For more information on full MDE connectivity processes, see [STEP 1: Configure your network environment to ensure connectivity with Defender for Endpoint service](configure-environment.md).
 
-This article describes the streamlined device connectivity method and how to onboard new devices to leverage a simpler deployment and management of Defender for Endpoint cloud connectivity services. For more information on migrating previously onboarded devices, see [Migrating devices to streamlined connectivity](migrate-devices-streamlined.md). 
+This article describes the streamlined device connectivity method and how to onboard new devices to use a simpler deployment and management of Defender for Endpoint cloud connectivity services. For more information on migrating previously onboarded devices, see [Migrating devices to streamlined connectivity](migrate-devices-streamlined.md). 
 
 To simplify network configuration and management, you now have the option of onboarding devices to Defender for Endpoint using a reduced URL set or static IP ranges. 
 
@@ -42,7 +42,7 @@ The Defender for Endpoint-recognized simplified domain: **\*.endpoint.security.m
 
 - Cloud Protection/MAPS
 - Malware Sample Submission Storage
-- AutoIR Sample Storage
+- Auto-IR Sample Storage
 - Defender for Endpoint Command & Control
 - EDR Cyberdata
 
@@ -92,7 +92,7 @@ For the full list of required URLs, see [Enable access to the Defender for Endpo
 | MAPS: cloud-delivered protection   | `*.wdcp.microsoft.com` <br/>`*.wd.microsoft.com`  |
 | Cloud protection &  <br/>security intelligence updates for macOS and Linux  | `unitedstates.x.cp.wd.microsoft.com` <br/>`europe.x.cp.wd.microsoft.com` <br/>`unitedkingdom.x.cp.wd.microsoft.com`<br/> `x.cp.wd.microsoft.com`  <br/>`https://www.microsoft.com/security/encyclopedia/adlpackages.aspx ` |
 | Malware Sample Submission Storage   | `ussus1eastprod.blob.core.windows.net` <br/>`ussus2eastprod.blob.core.windows.net` <br/>`ussus3eastprod.blob.core.windows.net` <br/>`ussus4eastprod.blob.core.windows.net` <br/>`wsus1eastprod.blob.core.windows.net` <br/>`wsus2eastprod.blob.core.windows.net` <br/>`ussus1westprod.blob.core.windows.net` <br/>`ussus2westprod.blob.core.windows.net` <br/>`ussus3westprod.blob.core.windows.net` <br/>`ussus4westprod.blob.core.windows.net` <br/>`wsus1westprod.blob.core.windows.net`<br/>`wsus2westprod.blob.core.windows.net` <br/>`usseu1northprod.blob.core.windows.net` <br/>`wseu1northprod.blob.core.windows.net` <br/>`usseu1westprod.blob.core.windows.net` <br/>`wseu1westprod.blob.core.windows.net` <br/>`ussuk1southprod.blob.core.windows.net` <br/>`wsuk1southprod.blob.core.windows.net` <br/>`ussuk1westprod.blob.core.windows.net` <br/>`wsuk1westprod.blob.core.windows.net`  |
-| Defender for Endpoint AutoIR Sample Storage   | `automatedirstrprdcus.blob.core.windows.net` <br/>`automatedirstrprdeus.blob.core.windows.net` <br/>`automatedirstrprdcus3.blob.core.windows.net` <br/>`automatedirstrprdeus3.blob.core.windows.net` <br/>`automatedirstrprdneu.blob.core.windows.net` <br/>`automatedirstrprdweu.blob.core.windows.net` <br/>`automatedirstrprdneu3.blob.core.windows.net` <br/>`automatedirstrprdweu3.blob.core.windows.net` <br/>`automatedirstrprduks.blob.core.windows.net` <br/>`automatedirstrprdukw.blob.core.windows.net` |
+| Defender for Endpoint Auto-IR Sample Storage   | `automatedirstrprdcus.blob.core.windows.net` <br/>`automatedirstrprdeus.blob.core.windows.net` <br/>`automatedirstrprdcus3.blob.core.windows.net` <br/>`automatedirstrprdeus3.blob.core.windows.net` <br/>`automatedirstrprdneu.blob.core.windows.net` <br/>`automatedirstrprdweu.blob.core.windows.net` <br/>`automatedirstrprdneu3.blob.core.windows.net` <br/>`automatedirstrprdweu3.blob.core.windows.net` <br/>`automatedirstrprduks.blob.core.windows.net` <br/>`automatedirstrprdukw.blob.core.windows.net` |
 | Defender for Endpoint Command and Control   | `winatp-gw-cus.microsoft.com` <br/>`winatp-gw-eus.microsoft.com` <br/>`winatp-gw-cus3.microsoft.com` <br/>`winatp-gw-eus3.microsoft.com` <br/>`winatp-gw-neu.microsoft.com` <br/>`winatp-gw-weu.microsoft.com` <br/>`winatp-gw-neu3.microsoft.com` <br/>`winatp-gw-weu3.microsoft.com` <br/>`winatp-gw-uks.microsoft.com` <br/>`winatp-gw-ukw.microsoft.com` |
 | EDR Cyberdata | `events.data.microsoft.com` <br/>`us-v20.events.data.microsoft.com` <br/>`eu-v20.events.data.microsoft.com` <br/>`uk-v20.events.data.microsoft.com` |
 
@@ -110,7 +110,7 @@ Devices must meet specific prerequisites to use the streamlined connectivity met
   - Microsoft Defender Vulnerability Management
 
 **Minimum KB update (Windows)**
-  - SENSE version: 10.8040.*/ March 8th 2022 or higher (see table)
+  - SENSE version: 10.8040.*/ March 8, 2022 or higher (see table)
 
 **Defender Antivirus versions (Windows)**
    - **Antimalware Client:** 4.18.2211.5 
@@ -177,7 +177,7 @@ With streamlined connectivity, IP-based solutions can be used as an alternative 
 
 - MAPS
 - Malware Sample Submission Storage
-- AutoIR Sample Storage
+- Auto-IR Sample Storage
 - Defender for Endpoint Command and Control
 
 >[!IMPORTANT]
@@ -190,7 +190,7 @@ With streamlined connectivity, IP-based solutions can be used as an alternative 
 
 | Service tag name    |    Defender for Endpoint services included   |
 :---|:---
-MicrosoftDefenderForEndpoint | MAPS, Malware Sample Submission Storage, AutoIR Sample Storage,  Command and Control.
+MicrosoftDefenderForEndpoint | MAPS, Malware Sample Submission Storage, Auto-IR Sample Storage,  Command and Control.
 OneDsCollector | EDR Cyberdata <br/><br/> Note: The traffic under this service tag isn't limited to Defender for Endpoint and includes diagnostic data traffic for other Microsoft services. 
 
 
@@ -224,7 +224,7 @@ To test streamlined connectivity for devices not yet onboarded to Defender for E
  
 
 > [!NOTE]
-> For devices not yet onboarded to Defender for Endpoint, client analyzer will test against standard set of URLs. To test the streamlined approach, you will need to run with the switches listed above. 
+> For devices not yet onboarded to Defender for Endpoint, client analyzer will test against standard set of URLs. To test the streamlined approach, you will need to run with the switches listed earlier in this article. 
 
 For Client Analyzer on macOS/Linux: **ADD INFO HERE**
 
