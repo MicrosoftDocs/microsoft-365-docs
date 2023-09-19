@@ -22,6 +22,7 @@ search.appverid:
   - MOE150
   - MET150
 ms.date: 10/10/2023
+---
 
 # Summarize an incident with Security Copilot in Microsoft 365 Defender
 
