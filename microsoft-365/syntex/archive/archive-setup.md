@@ -51,11 +51,11 @@ Once pay-as-you-go billing has been enabled for Syntex on Microsoft 365 admin ce
 
 3. On the **Manage Microsoft Syntex** page, select **Archive (Preview)**.
 
-4. On the **Archive (Preview)** page, select **Turn on**, and then select **Confirm** on the confirmation pane.
+4. On the **Archive (Preview)** page, select **Turn on**, and on the confirmation pane, select **Confirm**.
 
     ![Screenshot of the Microsoft 365 Archive page in the admin center showing how to turn on Archive.](../../media/content-understanding/turn-on-archive-admin-center.png)
 
-Microsoft 365 Archive is now enabled for you, and you're able to archive content from the SharePoint admin center.
+   Microsoft 365 Archive is now enabled for you, and you're able to archive content from the SharePoint admin center.
 
 ## Turn off Microsoft 365 Archive
 
@@ -67,7 +67,7 @@ To turn off Microsoft 365 Archive:
 
 When you turn off Microsoft 365 Archive, any further archiving stops. The sites already archived will continue to be in an archive state, and will be billed. The sites can be reactivated with reactivation cost or deleted.
 
-## Cost model
+## Charge model
 
 Microsoft 365 Archive storage consumption is charged at a per-GB monthly rate and site reactivation at a per-GB rate. The Microsoft 365 Archive storage usage is only charged when archived storage plus active SharePoint storage exceeds the tenant’s included or licensed allocated SharePoint storage quota. For more information about storage limits, see [SharePoint limits](https://learn.microsoft.com/en-us/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits).
 
