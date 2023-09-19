@@ -1238,9 +1238,6 @@
               href: api/get-vuln-by-software.md
             - name: Get missing KBs
               href: api/get-missing-kbs-software.md
-            - name: Get KB collection API
-              href: api/get-machinegroups-collection.md
-
           - name: User
             items:
             - name: User methods
@@ -1266,7 +1263,7 @@
         - name: How to use APIs - Samples
           items:
           - name: Power Automate
-            href: api/api-microsoft-flow.md
+            href: api-microsoft-flow.md
           - name: Power BI
             href: api/api-power-bi.md
           - name: Advanced Hunting using Python
