@@ -198,6 +198,8 @@
           href: archive/archive-manage.md
         - name: Compliance 
           href: archive/archive-compliance.md
+        - name: End user experience 
+          href: archive/end-user-experience.md
 
     - name: Annotations
       href: annotations.md
