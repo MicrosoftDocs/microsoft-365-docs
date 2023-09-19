@@ -135,13 +135,13 @@ Devices must meet specific prerequisites to use the streamlined connectivity met
 - macOS supported versions with Defender for Endpoint product version 101.23052.0003 +.*
 - Linux supported versions with Defender for Endpoint product version 101.23052.0003 +.*
 
->[!IMPORTANT]
->- **Devices running on MMA agent are not supported** on the streamlined onboarding method and will need to continue using legacy URL set (Windows 7, Windows 8.1, Windows Server 2008 R2 MMA, Servers not upgraded to Unified Agent (MMA)). 
->- Windows Server 2012 R2 and Server 2016 R2 will need to upgrade to unified agent to leverage the new method. <br/>
->- Windows 10 1607, 1703, 1709, 1803 can leverage the new onboarding option but will use a longer list. For more information, see [Updated URL sheet - ADD LINK TO SHEET]().
+> [!IMPORTANT]
+> - **Devices running on MMA agent are not supported** on the streamlined onboarding method and will need to continue using legacy URL set (Windows 7, Windows 8.1, Windows Server 2008 R2 MMA, Servers not upgraded to Unified Agent (MMA)). 
+> - Windows Server 2012 R2 and Server 2016 R2 will need to upgrade to unified agent to leverage the new method. <br/>
+> - Windows 10 1607, 1703, 1709, 1803 can leverage the new onboarding option but will use a longer list. For more information, see [Updated URL sheet - ADD LINK TO SHEET]().
 
 | Windows   OS    |     Minimum   KB Required (March 8, 2022)    |
-:---|:---
+|:---|:---|
 |     Windows 11    |     KB5011493   (March 8, 2022)    |
 |     Windows 10 1809,   Windows Server 2019    |     KB5011503  (March 8, 2022)    |
 |     Windows 10 19H2   (1909)    |     KB5011485   (March 8, 2022)    |
