@@ -57,11 +57,16 @@ The following downloadable spreadsheet lists the services and their associated U
 |Microsoft Defender for Endpoint URL list for commercial customers (Regular)| Spreadsheet of specific DNS records for service locations, geographic locations, and OS for commercial customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx) <p> Note that Microsoft Defender for Endpoint Plan 1 and Plan 2 share the same proxy service URLs.
 | Microsoft Defender for Endpoint URL list for Gov/GCC/DoD | Spreadsheet of specific DNS records for service locations, geographic locations, and OS for Gov/GCC/DoD customers. <br> [Download the spreadsheet here.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx) |
 
+ 
+> [!NOTE]
+> 1. Windows 10 version 1607, 1703, 1709, 1803 (RS1-RS4) are supported on the onboarding package but require a longer URL list (see updated URL sheet). These versions do not support reonboarding (must be fully offboarded first). 
+> 2. Devices running on Windows 7, Windows 8.1, Windows Server 2008 R2 MMA, Servers not upgraded to Unified Agent (MMA) will need to continue using MMA onboarding method. 
+
 If a proxy or firewall has HTTPS scanning (SSL inspection) enabled, exclude the domains listed in the above table from HTTPS scanning.
 In your firewall, open all the URLs where the geography column is WW. For rows where the geography column isn't WW, open the URLs to your specific data location. To verify your data location setting, see [Verify data storage location and update data retention settings for Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/data-retention-settings). Don't exclude the URL `*.blob.core.windows.net` from any kind of network inspection.
 
 > [!NOTE]
-> Applies to regular URLS: <br>
+> Applies to standard set of URLS: <br>
 > Windows devices running with version 1803 or earlier needs `settings-win.data.microsoft.com`. <br>
 >
 > URLs that include v20 in them are only needed if you have Windows devices running version 1803 or later. For example, `us-v20.events.data.microsoft.com` is needed for a Windows device running version 1803 or later and onboarded to US Data Storage region.
@@ -77,8 +82,8 @@ If a proxy or firewall is blocking anonymous traffic from the Defender for Endpo
 
 ## Microsoft Monitoring Agent (MMA) - proxy and firewall requirements for older versions of Windows client or Windows Server
 
->[!NOTE]
->(Applies to public preview)<br>
+> [!NOTE]
+> (Applies to public preview)<br>
 > Services using MMA-based solutions are not able to leverage the new streamlined connectivity solution (consolidated URL and option to use static IPs). For Windows Server 2016 and Windows Server 2012 R2, you will need to update to the new unified solution.
 
 
@@ -103,7 +108,7 @@ For devices with no direct internet connection, the use of a proxy solution is t
 
 > [!NOTE]
 > (Applies to public preview)<br>
-> With this preview, you can also leverage firewall devices with static IP ranges. For more information, see: [Simplified device connectivity](configure-device-connectivity.md) and [URL spreadsheet - ADD URL OF SPREADSHEE WHEN READY]().
+> With this preview, you can leverage firewall devices with static IP ranges. For more information, see: [Simplified device connectivity](configure-device-connectivity.md) and [URL spreadsheet - ADD URL OF SPREADSHEET WHEN READY]().
 
 For more information about onboarding methods, see the following articles:
 
