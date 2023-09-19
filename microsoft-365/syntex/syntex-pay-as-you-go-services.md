@@ -29,7 +29,7 @@ When you use Microsoft Syntex [pay-as-you-go](syntex-azure-billing.md), services
 |Image tagging |The number of images processed. Each processed image counts as one transaction. You won’t be charged if you only enable pay-as-you-go billing for image tagging. You'll be charged only when you [enable image tagging on a document library](image-tagging.md). |$0.001/transaction |
 |Taxonomy tagging |The number of documents processed. Each processed document counts as one transaction. You won’t be charged if you only enable pay-as-you-go billing for taxonomy tagging. You'll be charged only when you [enable taxonomy tagging on a document library](taxonomy-tagging.md). |$0.05/transaction |
 |Optical character recognition (Preview)  |The number of pages processed for images (JPEG, JPG, PNG, or BMP); the number of pages processed for PDF, TIF, or TIFF; or the number of embedded images in Teams chats and email messages. Each of these counts as one transaction. Processing occurs every time the file is edited. |$0.001/transaction|
-|Microsoft 365 Archive (Preview)  |Monthly site archive is calculated as the sum (in gigabytes) of the usage of all currently archived sites.<br>Site reactivation is charged based on the site storage usage (in gigabytes) of the site being restored. |$0.05/GB/month<br><br>$0.6/GB|
+|Microsoft 365 Archive (Preview)  |Monthly site archive is calculated as the sum (in gigabytes) of the usage of all currently archived sites.<br>Site reactivation is charged based on the site storage usage (in gigabytes) of the site being restored. |$0.05/GB/month<br><br>$0.60/GB|
 
 ## Related articles
 
