@@ -25,11 +25,11 @@ additionalContent:
       items:
         # Card
         - title: Microsoft 365 Copilot overview
-          summary: TBD 
+          summary: Learn how Microsoft 365 Copilot works. 
           url: index.yml
         # Card
         - title: Copilot requirements
-          summary: TBD 
+          summary: Learn about Microsoft 365 Apps, network, and license requirements for Microsoft 365 Copilot. 
           url: index.yml
         # Card
         - title: Setup
@@ -37,16 +37,12 @@ additionalContent:
           url: /microsoft-365/admin/copilot/m365-copilot-setup/
         # Card
         - title: Enable users
-          summary: TBD 
+          summary: Learn about the steps to deploy Microsoft 365 Copilot. 
           url: index.yml
         # Card
         - title: Data, Privacy, and Security for Microsoft 365 Copilot
           summary: Learn how Microsoft 365 Copilot uses data and how it stores and protects that data. 
           url: /deployoffice/privacy/microsoft-365-copilot
-        # Card
-        - title: Extensibility
-          summary: TBD 
-          url: index.yml
     - title: Learn about Microsoft 365 Copilot # < 60 chars (Optional; Remove if not applicable.)
       items:
         # Card
@@ -65,13 +61,3 @@ additionalContent:
         - title: Microsoft AI help & learning
           summary: Help and learning for you and your users
           url: https://support.microsoft.com/microsoft-ai
-    - title: Architecture diagrams # < 60 chars (Optional; Remove if not applicable.)
-      items:
-        # Card
-        - title: Microsoft 365 Copilot Architecture illustration set
-          summary: TBD
-          url: index.yml
-        # Card
-        - title: Zero Trust Security Guidance
-          summary: TBD
-          url: index.yml
