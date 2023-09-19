@@ -52,10 +52,13 @@ Follow these steps if you haven't already set up Intune and added the apps you n
 
 ## Apps that support app configuration
 
-App configuration can be delivered either through the mobile device management (MDM) OS channel on enrolled devices ([Managed App Configuration](https://developer.apple.com/library/content/samplecode/sc2279/Introduction/Intro.html) channel for iOS or the [Android in the Enterprise](https://developer.android.com/work/managed-configurations) channel for Android) or through the Mobile Application Management (MAM) channel. 
+Apps that have been specifically enhanced to support a unified endpoint management provider, such as Microsoft Intune, support configuration. There are two ways to deliver app configuration using Intune:
+1. Use the mobile device management (MDM) OS channel on enrolled devices
+    - For iOS devices, use the [Managed App Configuration channel for iOS](https://developer.apple.com/library/content/samplecode/sc2279/Introduction/Intro.html) 
+    - For Android devices, use the [Android in the Enterprise channel for Android](https://developer.android.com/work/managed-configurations)
+2. Use the Mobile Application Management (MAM) channel
 
 Intune represents these different app configuration policy channels as:
-
 - **Managed devices** - The device is managed by Intune as the unified endpoint management provider. The app must be pinned to the management profile on iOS/iPadOS or deployed through Managed Google Play on Android devices. In addition, the app supports the desired app configuration.
 - **Managed apps** - An app that has either integrated the Intune App SDK or have been wrapped using the Intune Wrapping Tool and supports App Protection Policies (APP). In this configuration, neither the device's enrollment state or how the app is delivered to the device matter. The app supports the desired app configuration.
 
