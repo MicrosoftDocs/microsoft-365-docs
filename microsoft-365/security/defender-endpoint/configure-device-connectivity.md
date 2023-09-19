@@ -34,12 +34,17 @@ The streamlined onboarding method is currently in public preview.
 
 The Microsoft Defender for Endpoint service requires the use of proxy configurations to report diagnostic data and communicate data to the service. Prior to the availability of the streamlined connectivity method, additional URLs were required and Defender for Endpoint static IP ranges were not supported. For more information on full MDE connectivity processes, see [STEP 1: Configure your network environment to ensure connectivity with Defender for Endpoint service](configure-environment.md).
 
-This article describes the streamlined device connectivity method and how to onboard new devices so that you can use the straightforward deployment and management of Defender for Endpoint cloud connectivity services. For more information on migrating previously onboarded devices, see [Migrating devices to streamlined connectivity](migrate-devices-streamlined.md). 
-
+This article describes the streamlined device connectivity method and how to onboard new devices to leverage a simpler deployment and management of Defender for Endpoint cloud connectivity services. For more information on migrating previously onboarded devices, see [Migrating devices to streamlined connectivity](migrate-devices-streamlined.md). 
 
 To simplify network configuration and management, you now have the option of onboarding devices to Defender for Endpoint using a reduced URL set or static IP ranges. 
 
-The Defender for Endpoint-recognized simplified domain: **\*.endpoint.security.microsoft.com** replaces the following core Defender for Endpoint services: Cloud Protection/MAPS, Malware Sample Submission Storage, AutoIR Sample Storage,  Defender for Endpoint Command & Control, and EDR Cyberdata. 
+The Defender for Endpoint-recognized simplified domain: **\*.endpoint.security.microsoft.com** replaces the following core Defender for Endpoint services:
+
+- Cloud Protection/MAPS
+- Malware Sample Submission Storage
+- AutoIR Sample Storage
+- Defender for Endpoint Command & Control
+- EDR Cyberdata
 
 Alternatively, to support network devices without hostname resolution or wildcard support, you can configure connectivity using dedicated Defender for Endpoint static IP ranges. For more information, see [Configure connectivity using static IP ranges](#option-2-configure-connectivity-using-static-ip-ranges).
 
