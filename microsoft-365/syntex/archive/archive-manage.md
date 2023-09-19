@@ -14,7 +14,7 @@ ms.collection:
     - m365initiative-syntex
 ms.localizationpriority:  medium
 ROBOTS: NOINDEX, NOFOLLOW
-description: Learn how to manage Microsoft 365 Archive.
+description: Learn how to archive, reactivate, and manage sites in Microsoft 365 Archive.
 ---
 
 # Manage Microsoft 365 Archive (Preview)
@@ -39,42 +39,48 @@ When a site is archived, compliance features such as eDiscovery and retention la
 
 4. Archived sites can be seen on the **Archived sites** page in the SharePoint admin center.
 
+    ![Screenshot of the Archived sites page in the SharePoint admin center.](../media/content-understanding/turn-on-archive-admin-center.png)
+
 > [!NOTE]
 > To archive a hub site, you first need to unregister it as a hub site. Archiving teams connected sites with private or shared channel sites is not supported. Teams sites with standard channels are supported.
 
  
 ## Manage archived sites
 
-Archived sites can be reactivated or deleted. Deletion of archived sites follows the same behavior as that of active sites: a site does not need to be reactivated before being deleted. However, sites in the “Reactivating” state cannot be deleted until reactivation completes.
+Archived sites can be reactivated or deleted. Deletion of archived sites follows the same behavior as that of active sites; that is, a site does not need to be reactivated before being deleted. However, sites in the “Reactivating” state cannot be deleted until reactivation completes.
+
 Admins can view details of the site, such as the URL, Archive Status, or Storage, from the **Archived sites** page.
 
-Reactivate a site in the SharePoint admin center
+## Reactivate a site in the SharePoint admin center
 
-If there is a need to access the site contents again, the sites need to be reactivated. 
-After a site is archived, it stays in “Recently Archived” state for 7 days. All reactivations from this state are free of cost and instantaneous. After 7 days, the site enters the “Archived” state. Reactivations may take up to 24 hours, and have an associated reactivation cost. To learn more about the costs and how pricing works, refer to Section ‘Charge Model’. 
+If there is a need to access the site contents again, the sites need to be reactivated. After a site is archived, it stays in “Recently Archived” state for 7 days. All reactivations from this state are free of cost and instantaneous. After 7 days, the site enters the “Archived” state. Reactivations might take up to 24 hours, and have an associated reactivation cost. To learn more about the costs and how pricing works, refer to Section ‘Charge Model’.
+
 After reactivation, the site will move back to active sites page. It will be reactivated in-place, and end users will be able to access the site and its contents as per the permissions they had when the site was archived. After reactivation is complete, the storage consumed by the site will accrue to your storage quota consumption.
 
-1.	Go to Archived sites in the SharePoint admin center, and sign in with an account that has admin permissions for your organization.
+1. In the SharePoint admin center, go to **Archived sites**, and sign in with an account that has admin permissions for your organization.
 
- Note
-If you have Office 365 operated by 21Vianet (China), sign in to the Microsoft 365 admin center, then browse to the SharePoint admin center and open the Active sites page.
-1.	In the left column, select a site that needs to be reactivated.
-2.	Select Archive in the command bar.
-3.	In the pane, select Reactivate. 
-4.	If you are trying to reactivate a site from “Archived” state, you will see a confirmation pop up, showcasing an estimated price for reactivation. Select Confirm on the pop up to reactivate. The site will enter “Reactivating” state. It will move to active sites once reactivation is complete. 
- 
-When reactivating a site, its permissions, lists, pages, files, folder-structure, site-level policies, other metadata, etc. will all be the same as they were when it was archived. The only two exceptions are when files are deleted while the site is archived.  Specifically, there are only two such cases:
-1.	Content in the recycle bin expires naturally, and that expiration continues while archived.
-2.	Content marked to be deleted by Retention policies will still be deleted as normal.
-Outside of those two above exceptions, you can expect the site to be unchanged.  
+> [!NOTE]
+> If you have Office 365 operated by 21Vianet (China), sign in to the Microsoft 365 admin center, then browse to the SharePoint admin center and open the **Active sites** page.
 
- 
-Archive States
-Navigation: 
-Microsoft Syntex->  Microsoft 365 Archive -> Archive States 
+1. In the left column, select a site that needs to be reactivated.
 
-Archive state	Description	Allowed operations
-Recently Archived	This is the first stage after a site is archived and is valid for 7 days. A site in this stage can be reactivated without any cost and will be reactivated instantaneously. 	Reactivate, Delete
-Archived	The site enters this state after 7 days after being archived. In this stage, reactivations will be charged, and may take a few hours.	Reactivate, Delete
-Reactivating	If a site is reactivated from “Archived” state, it will be in this stage until reactivation is complete. After this, the site will be active, and will be available in Active sites page.	None
+2. Select **Archive** in the command bar.
 
+3. In the **Archive** pane, select **Reactivate**.
+
+4. If you are trying to reactivate a site from “Archived” state, you will see a confirmation pop up, showcasing an estimated price for reactivation. Select **Confirm** on the pop up to reactivate. The site will enter the “Reactivating” state. It will move to active sites once reactivation is complete.
+
+When reactivating a site, its permissions, lists, pages, files, folder-structure, site-level policies, and other metadata will all be the same state as they were when the site was archived. The only two exceptions are when files are deleted while the site is archived:
+
+- Content in the recycle bin expires naturally, and that expiration continues while archived.
+- Content marked to be deleted by retention policies will still be deleted as normal.
+
+Other than these two exceptions, you can expect the site to be unchanged.  
+
+## Archive States
+
+|Archive state  |Description  |Allowed operations  |
+|---------|---------|---------|
+|Recently Archived    |This is the first stage after a site is archived and is valid for 7 days. A site in this stage can be reactivated without any cost and will be reactivated instantaneously.         |Reactivate, Delete         |
+|Archived    |he site enters this state after 7 days after being archived. In this stage, reactivations will be charged, and may take a few hours.         |Reactivate, Delete         |
+|Reactivating     |If a site is reactivated from “Archived” state, it will be in this stage until reactivation is complete. After this, the site will be active, and will be available in Active sites page.         |None         |
