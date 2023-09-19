@@ -39,7 +39,7 @@ ms.date: 02/02/2021
 
 ## API description
 
-Find [Machines](machine.md) by [Tag](machine-tags.md).
+Find [Machines](machine.md) by [Tag](../machine-tags.md).
 
 `startswith` query is supported.
 

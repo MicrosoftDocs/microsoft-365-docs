@@ -67,7 +67,7 @@ The following information lists the updates made to the Microsoft Defender for E
 
 ### 21.01.2021
 
-- Added new API: [Find devices by tag](machine-tags.md).
+- Added new API: [Find devices by tag](../machine-tags.md).
 - Added new API: [Import Indicators](import-ti-indicators.md).
 
 ### 03.01.2021

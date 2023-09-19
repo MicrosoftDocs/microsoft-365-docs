@@ -3486,6 +3486,11 @@
          "redirect_document_id":false
     },
     {
+      "source_path":"microsoft-365/security/defender-endpoint/machineaction.md",
+      "redirect_url":"/microsoft-365/security/defender-endpoint/api/machineaction",
+      "redirect_document_id":false
+    },
+    {
          "source_path":"microsoft-365/security/defender-endpoint/vulnerability.md",
          "redirect_url":"/microsoft-365/security/defender-endpoint/api/vulnerability",
          "redirect_document_id":false

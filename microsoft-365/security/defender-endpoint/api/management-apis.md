@@ -84,7 +84,7 @@ The Defender for Endpoint event information is pushed directly to Azure storage 
 For more information, see [Raw data streaming API](raw-data-export.md).
 
 The new Microsoft 365 Defender Streaming API includes email and alert events in addition to device events.
-For more information, see [Microsoft 365 Defender Streaming API](defender/streaming-api.md).
+For more information, see [Microsoft 365 Defender Streaming API](../../defender/streaming-api.md).
 
 ## SIEM API
 
