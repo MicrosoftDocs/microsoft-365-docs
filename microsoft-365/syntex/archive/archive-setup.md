@@ -33,7 +33,7 @@ To enable Microsoft 365 Archive for a tenant, perform the following steps:
 
 ### Licensing
 
-Before you can use Microsoft 365 Archive, you must first link an Azure subscription in Syntex pay-as-you-go. Microsoft 365 Archive is billed based on the number of gigabytes (GB) archived and number of gigabytes(GB) reactivated.
+Before you can use Microsoft 365 Archive, you must first link an Azure subscription in Syntex pay-as-you-go. Microsoft 365 Archive is billed based on the number of gigabytes (GB) archived and number of gigabytes (GB) reactivated.
 
 You can enable pay-as-you-go billing at Syntex billing by following the steps here: Setup pay-as-you-go.
 
@@ -51,7 +51,7 @@ Once pay-as-you-go billing has been enabled for Syntex on Microsoft 365 admin ce
 
 3. Select **Turn on** and select **Confirm** on the confirmation pane.
 
-    ![Screenshot of the Microsoft 365 Archive page in the admin center showing how to turn on Archive.](../media/content-understanding/turn-on-archive-admin-center.png)
+    ![Screenshot of the Microsoft 365 Archive page in the admin center showing how to turn on Archive.](../../media/content-understanding/turn-on-archive-admin-center.png)
 
 4. Microsoft 365 Archive will now be enabled for you, and you will be able to archive content from the SharePoint admin center.
 
