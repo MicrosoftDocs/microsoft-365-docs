@@ -22,7 +22,7 @@ description: Learn about compliance features for archived sites in Microsoft 365
 > [!NOTE]
 > This feature is currently in limited preview and subject to change. Before you begin, read the [Microsoft 365 preview terms and conditions](archive.preview-terms.md).
 
-Archived sites, just like active sites, maintain a baseline level of data promises.  This includes the following:
+Archived sites, just like active sites, maintain a baseline level of data promises. This includes the following:
 
 - Durability – All archived data is equally as durable as active SPO data.
 
