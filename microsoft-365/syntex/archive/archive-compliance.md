@@ -36,8 +36,8 @@ The impact of Microsoft 365 Archive on compliance offerings includes the followi
 
 - Preservation hold – Archived sites will still honor preservation holds.  Any file that is deleted via retention policies will still be maintained in the usual preservation hold library.
 
-- eDiscovery – eDiscovery will still be able to find all content even if archived.  However, eDiscovery will not be able to directly reactivate located files.  Before exporting or viewing content of an eDiscovery case, the SharePoint admin will have to reactivate the relevant sites.
+- eDiscovery – eDiscovery will still be able to find all content even if archived.  However, eDiscovery won't be able to directly reactivate located files.  Before exporting or viewing content of an eDiscovery case, the SharePoint admin will have to reactivate the relevant sites.
 
 - Bring your own key (BYOK) – All archived content will comply with the BYOK promises, for any tenant who already uses the BYOK feature or enables it after archiving sites.
 
-- Permissions and access policies – These settings and policies will be retained on the site throughout the archive and reactivation lifecycle (that is, archiving the site and then reactivating does not change the application of permissions or related access policies).
+- Permissions and access policies – These settings and policies will be retained on the site throughout the archive and reactivation lifecycle (that is, archiving the site and then reactivating doesn't change the application of permissions or related access policies).
