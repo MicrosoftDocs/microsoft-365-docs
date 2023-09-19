@@ -1,4 +1,4 @@
----
+--
 title: Configure your network environment to ensure connectivity with Defender for Endpoint service
 description: Learn how to configure your network environment to connect with the Defender for Endpoint service
 keywords: configure, proxy, internet, internet connectivity, settings, proxy settings, netsh, winhttp, proxy server
@@ -16,7 +16,7 @@ ms.collection:
 ms.topic: how-to
 ms.subservice: mde
 ms.date: 09/19/2023
----
+--
 
 
 # STEP 1: Configure your network environment to ensure connectivity with Defender for Endpoint service
@@ -52,8 +52,8 @@ The following downloadable spreadsheet lists the services and their associated U
 <br>
 
 |Spreadsheet of domains list| Description|
-|---|---|
-| Microsoft Defender for Endpoint consolidated URL list (NEW - Streamlined connectivity) <br> | **IMPORTANT:** Currently in public preview. <br> Spreadsheet of consolidated URLs for streamlining device connectivity to Defender for Endpoint. <br><br> LINK TO Download the spreadsheet here<br><br> **Prerequisites:** <br/>(For a complete list of prerequisites, see [Streamlined connectivity process](configure-device-connectivity.md#prerequisites).) <br>- Windows 10, version 1809+ (RS5+)<br><br>- Windows 11<br><br>- Windows Server 2019<br> <br>- Windows Server 2022<br><br>- Windows Server 2012 R2 or Windows Server 2016 R2 fully updated and the running Defender for Endpoint modern unified solution (requires installation through MSI). <br><br/>- macOS supported versions with MDE product version  101.23052.0004 +.<br/><br/>- Linux supported versions with MDE product version 101.23052.0009 +.<br><br>- Minimum component versions:<br/>-- Microsoft Defender Antimalware client: 4.18.2211.5<br/>-- Microsoft Defender<br/>-- Engine: 1.1.19900.2<br/>-- Microsoft Antivirus (Security Intelligence): 1.381.1853.0<br/>-- MDE Agent version (macOS/Linux): 101.23052.0009 +. <br/>-- Minimum KB/Sense version: >10.8040.*/ March 8, 2022+<br><br> If you're moving previously onboarded devices to the streamlined approach, see [Migrating device connectivity](configure-device-connectivity.md). <br> Microsoft Defender for Endpoint Plan 1 and Plan 2 share the same proxy service URLs. |
+|--|--|
+| Microsoft Defender for Endpoint consolidated URL list (NEW - Streamlined connectivity) <br> | **IMPORTANT:** Currently in public preview. <br> Spreadsheet of consolidated URLs for streamlining device connectivity to Defender for Endpoint. <br><br> LINK TO Download the spreadsheet here<br><br> **Prerequisites:** <br/>(For a complete list of prerequisites, see [Streamlined connectivity process](configure-device-connectivity.md#prerequisites).) <br>- Windows 10, version 1809+ (RS5+)<br><br>- Windows 11<br><br>- Windows Server 2019<br> <br>- Windows Server 2022<br><br>- Windows Server 2012 R2 or Windows Server 2016 R2 fully updated and the running Defender for Endpoint modern unified solution (requires installation through MSI). <br><br/>- macOS supported versions with MDE product version  101.23052.0004 +.<br/><br/>- Linux supported versions with MDE product version 101.23052.0009 +.<br><br>- Minimum component versions:<br/>- Microsoft Defender Antimalware client: 4.18.2211.5<br/>- Microsoft Defender<br/>- Engine: 1.1.19900.2<br/>- Microsoft Antivirus (Security Intelligence): 1.381.1853.0<br/>- MDE Agent version (macOS/Linux): 101.23052.0009 +. <br/>- Minimum KB/Sense version: >10.8040.*/ March 8, 2022+<br><br> If you're moving previously onboarded devices to the streamlined approach, see [Migrating device connectivity](configure-device-connectivity.md). <br> Microsoft Defender for Endpoint Plan 1 and Plan 2 share the same proxy service URLs. |
 |Microsoft Defender for Endpoint URL list for commercial customers (Regular)| Spreadsheet of specific DNS records for service locations, geographic locations, and OS for commercial customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx) <p> Microsoft Defender for Endpoint Plan 1 and Plan 2 share the same proxy service URLs.
 | Microsoft Defender for Endpoint URL list for Gov/GCC/DoD | Spreadsheet of specific DNS records for service locations, geographic locations, and OS for Gov/GCC/DoD customers. <br> [Download the spreadsheet here.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx) |
 
@@ -90,7 +90,7 @@ If a proxy or firewall is blocking anonymous traffic from the Defender for Endpo
 The information in the list of proxy and firewall configuration information is required to communicate with Log Analytics agent (often referred to as Microsoft Monitoring Agent) for previous versions of Windows, such as Windows 7 SP1, Windows 8.1, and Windows Server 2008 R2*.
 
 |Agent Resource|Ports|Direction|Bypass HTTPS inspection|
-|---|---|---|---|
+|--|--|--|--|
 |`*.ods.opinsights.azure.com`|Port 443|Outbound|Yes|
 |`*.oms.opinsights.azure.com`|Port 443|Outbound|Yes|
 |`*.blob.core.windows.net`|Port 443|Outbound|Yes|
@@ -113,7 +113,7 @@ For devices with no direct internet connection, the use of a proxy solution is t
 For more information about onboarding methods, see the following articles:
 
 - [Onboard previous versions of Windows](/microsoft-365/security/defender-endpoint/onboard-downlevel)
-- [Onboard servers to the Microsoft Defender for Endpoint service](/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-2008-r2-sp1--windows-server-2012-r2-and-windows-server-2016)
+- [Onboard servers to the Microsoft Defender for Endpoint service](/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-2008-r2-sp1-windows-server-2012-r2-and-windows-server-2016)
 
 > [!IMPORTANT]
 > - Microsoft Defender for Endpoint is a Cloud security solution. "Onboard devices without Internet access" means that Internet access for the endpoints must be configured through a proxy. Microsoft Defender for Endpoint does not support endpoints without direct or proxy Internet access. System wide proxy configuration recommended.
