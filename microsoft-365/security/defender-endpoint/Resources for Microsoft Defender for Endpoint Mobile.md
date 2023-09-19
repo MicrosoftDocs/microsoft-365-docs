@@ -14,12 +14,13 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
-ms.topic: reference
+ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
+ms.date: 09/19/2023
 ---
 
-Microsoft Defender for Endpoint provides multiple capabilities on mobile devices. Some of these capabilities are enabled by default while others are configured by IT admins. The following table shows how to access resources related to Microsoft Defender for Endpoint on Android and iOS.
+Microsoft Defender for Endpoint provides multiple capabilities on mobile devices. Some of these capabilities are enabled by default while others are configured by IT admins. The following table shows how to configure the resources related to Microsoft Defender for Endpoint on Android and iOS.
 
 # Feature configurations
 
@@ -34,7 +35,7 @@ Microsoft Defender for Endpoint provides multiple capabilities on mobile devices
 |-------------|-------------|-----------------------|-------------|-----|
 |Privacy for phishing alert report |If privacy is enabled, Defender for Endpoint will not send domain name and website details| Hide URLs in report=0(default)/1| DefenderExcludeURLInReport = 0(default)/1 |DefenderExcludeURLInReport = 0(default)/1|
 |Configure Privacy for malware threat report| Control the collection of app details (name, package information) in the threat report |Hide app details in report= 0(default)/1|DefenderExcludeAppInReport = 0(default)/1|
-|Configure privacy in vulnerability assessment of apps| Control what app data shows up in the security portal when Defender for Vulnerability Management is working|Enable Vulnerability Management privacy= 0(default)/1|DefenderTVMPrivacyMode = 0(default)/1|DefenderTVMPrivacyMode = 0(default)/1|
+|Configure privacy in vulnerability assessment of apps| Control what app data shows up in the security portal when Defender for Vulnerability Management is enabled|Enable Vulnerability Management privacy= 0(default)/1|DefenderTVMPrivacyMode = 0(default)/1|DefenderTVMPrivacyMode = 0(default)/1|
 |Network protection | Control the collection of network and certificate details in the alert report|Enable Network protection privacy = 1/0 |DefenderNetworkProtectionPrivacy = 1/0 |DefenderNetworkProtectionPrivacy |
 
 
@@ -42,24 +43,24 @@ Microsoft Defender for Endpoint provides multiple capabilities on mobile devices
 
 |Configuration| Description | Android AE config key | Android MAM | iOS |
 |-------------|-------------|-----------------------|-------------|-----|
-|Disable/enable sign out| Sign out option can be disabled for end user. This helps prevent tampering with the device.|Disable sign out = 1(default)/0 |DisableSignOut = 1/0 |DisableSignOut = 1/0 |
-|Device tagging| Defender for Endpoint enabled bulk tagging the mobile devices during onboarding. Admins can set up tags using this config on Intune.|Device tag (Value as String)|DefenderDeviceTag (Value as String) |DefenderDeviceTag (Value as String)|
-|Optional Permissions| Admins can make some permissions optional for the end user while onboarding Defender for Endpoint. Users See an option to grant these permissions later.| NA|DefenderOptionalVPN = 0(default)/1, DefenderOptionalAccessibility = 0(default)/1|DefenderOptionalVPN = 0(default)/1, DefenderOptionalAccessibility = 0(default)/1|
+|Disable/enable sign out| Sign out option can be disabled for an end user. This helps prevent tampering with the device.|Disable sign out = 1(default)/0 |DisableSignOut = 1/0 |DisableSignOut = 1/0 |
+|Device tagging| Defender for Endpoint enables bulk tagging mobile devices during onboarding. Admins can set up tags using this configuration by using Intune.|Device tag (Value as String)|DefenderDeviceTag (Value as String) |DefenderDeviceTag (Value as String)|
+|Optional Permissions| Admins can make some permissions optional for the end user while onboarding Defender for Endpoint. Users see an option to grant these permissions later.| NA|DefenderOptionalVPN = 0(default)/1, DefenderOptionalAccessibility = 0(default)/1|DefenderOptionalVPN = 0(default)/1, DefenderOptionalAccessibility = 0(default)/1|
 
 # Alerts severity and privacy information
 
 |Alert type | Severity | Privacy information (Android)| Privacy information (iOS)|
 |-----------|-----------|---------|---------|
-|Anti-phishing (defender warning)|Informational| URL of malicious connection, connection information, Protocol type; [More information](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/android-privacy?view=o365-worldwide#web-page--network-information) | Domain name, IP address of malicious website; [More information](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/ios-privacy?view=o365-worldwide#web-page-or-network-information) |
+|Anti-phishing (defender warning)|Informational| URL of malicious connection, connection information, Protocol type; [More information](android-privacy.md#web-page--network-information) | Domain name, IP address of malicious website; [More information](ios-privacy.md#web-page-or-network-information) |
 |Anti-phishing (Defender warning overlooked)|Low |  |  |
-|Anti-malware| Medium | Information about malicious APKs including install source, storage location, time of install etc; [More information](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/android-privacy?view=o365-worldwide#app-information)
+|Anti-malware| Medium | Information about malicious APKs including install source, storage location, time of install etc; [More information](android-privacy.md#app-information)
 | |
 |Jailbreak| High | NA |NA |
 |Rogue Wifi | Low |  |  |
 |Open Network detection | Informational | | |
 Suspicious certificates |Informational| | |
 
-[Complete privacy information for Android](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/android-privacy?view=o365-worldwide)
+[Complete privacy information for Android](android-privacy.md)
 
-[Complete privacy information for iOS](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/ios-privacy?view=o365-worldwide)
+[Complete privacy information for iOS](ios-privacy.md)
 
