@@ -1,6 +1,11 @@
 {
    "redirections":[
       {
+         "source_path":"microsoft-365/security/defender/opt-out-of-preview.md",
+         "redirect_url":"/microsoft-365/security/defender/dex-xdr-overview",
+         "redirect_document_id":true
+      },
+      {
          "source_path":"microsoft-365/security/defender/defenderexpertsforhuntingprev.md",
          "redirect_url":"/microsoft-365/security/defender/defender-experts-for-hunting",
          "redirect_document_id":true
