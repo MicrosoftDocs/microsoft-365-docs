@@ -39,7 +39,7 @@ From the **Settings** page you can:
 
 ## Multi-tenant management status indicator
 
-The multi-tenant management status indicator provides information on whether data issues exist for page you're viewing, such as data loading issues or permissions issues. The indicator appears in the bottom right corner of the page:
+The multi-tenant management status indicator provides information on whether data issues exist for the page you're viewing, such as data loading issues or permissions issues. The indicator appears in the bottom right corner of the page:
 
 When no issue exists, the status indicator is a green tick:
 
@@ -52,3 +52,4 @@ When an issue exists, the status indicator shows a red warning sign:
 Hovering over the red warning sign displays the issues that have occurred and the tenant information. By expanding each section, you see all the tenants with this issue.
 
 - ![tenant data issues](../../media/defender/mto-tenantdata-issues.png)
+
