@@ -38,7 +38,7 @@ This article describes the streamlined device connectivity method and how to onb
 
 To simplify network configuration and management, you now have the option of onboarding devices to Defender for Endpoint using a reduced URL set or static IP ranges. 
 
-The Defender for Endpoint-recognized simplified domain: **\*.endpoint.security.microsoft.com** replaces the following core Defender for Endpoint services:
+The Defender for Endpoint-recognized simplified domain: `*.endpoint.security.microsoft.com` replaces the following core Defender for Endpoint services:
 
 - Cloud Protection/MAPS
 - Malware Sample Submission Storage
@@ -69,7 +69,7 @@ For the full list of required URLs, see [Enable access to the Defender for Endpo
 
 
 > [!IMPORTANT]
-> The following Defender for Endpoint URLs consolidated under the simplified domain should no longer be required for connectivity if **\*.endpoint.security.microsoft.com** is allowed and devices are onboarded using the streamlined onboarding package. For more information, see the preceeding section. <br/>
+> The following Defender for Endpoint URLs consolidated under the simplified domain should no longer be required for connectivity if `*.endpoint.security.microsoft.com` is allowed and devices are onboarded using the streamlined onboarding package. For more information, see the preceeding section. <br/>
 >You will need to maintain connectivity with other required services not consolidated that are relevant to your organization (for example, CRL, SmartScreen/Network Protection, and WNS). For more information on the detailed list of URLs, [Download the spreadsheet here](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx).
 
 > [!NOTE]
@@ -171,10 +171,9 @@ Streamlined connectivity allows you to use the following option to configure clo
 - [Option 1: Use the simplified domain](#option-1-configure-connectivity-using-the-simplified-domain)
 - [Option 2: Use static IP ranges](#option-2-configure-connectivity-using-static-ip-ranges)
  
-
 #### Option 1: Configure connectivity using the simplified domain
 
-Configure your environment to allow connections with the simplified Defender for Endpoint domain: **\*.endpoint.security.microsoft.com**. For more information, see [Configure your network environment to ensure connectivity with Defender for Endpoint service](configure-environment.md).
+Configure your environment to allow connections with the simplified Defender for Endpoint domain: `*.endpoint.security.microsoft.com`. For more information, see [Configure your network environment to ensure connectivity with Defender for Endpoint service](configure-environment.md).
 
 You must maintain connectivity with remaining required services listed under the updated list: [LINK](). For example, Certification Revocation List, Windows update, SmartScreen.
 
