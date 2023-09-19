@@ -1,6 +1,6 @@
 ﻿---
 title: Onboarding devices using streamlined connectivity for Microsoft Defender for Endpoint 
-description: Learn how to use a simplified domain or static IP ranges during onboarding when connecting devices to Microsoft Defender for Endpoint         
+description: Learn how to use a  streamlined domain or static IP ranges during onboarding when connecting devices to Microsoft Defender for Endpoint         
 author: mjcaparas
 ms.author: macapara 
 manager: dansimp 
@@ -14,7 +14,7 @@ ms.collection:
 ms.reviewer: 
 search.appverid: MET150
 audience: ITPro
-ms.date: 08/15/2023
+ms.date: 09/19/2023
 ---
 
 # Onboarding devices using streamlined connectivity for Microsoft Defender for Endpoint 
@@ -30,7 +30,9 @@ ms.date: 08/15/2023
 
 [!Include[Prerelease information](../../includes/prerelease.md)]
 
-The Microsoft Defender for Endpoint service requires the use of proxy configurations to report diagnostic data and communicate data to the service. 
+The streamlined onboarding method is currently in public preview. 
+
+The Microsoft Defender for Endpoint service requires the use of proxy configurations to report diagnostic data and communicate data to the service. Prior to the availability of the streamlined connectivity method, additional URLs were required and Defender for Endpoint static IP ranges were not supported. For more information on full MDE connectivity processes, see [STEP 1: Configure your network environment to ensure connectivity with Defender for Endpoint service](configure-environment.md).
 
 This article describes the streamlined device connectivity method and how to onboard new devices so that you can use the straightforward deployment and management of Defender for Endpoint cloud connectivity services. For more information on migrating previously onboarded devices, see [Migrating devices to streamlined connectivity](migrate-devices-streamlined.md). 
 
