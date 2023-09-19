@@ -229,8 +229,6 @@ To test streamlined connectivity for devices not yet onboarded to Defender for E
 > [!NOTE]
 > For devices not yet onboarded to Defender for Endpoint, client analyzer will test against standard set of URLs. To test the streamlined approach, you will need to run with the switches listed earlier in this article. 
 
-For Client Analyzer on macOS/Linux: **ADD INFO HERE**
-
 ### Stage 4. Apply the new onboarding package required for streamlined connectivity
 
 Once you configure your network to communicate with the full list of services, you can begin onboarding devices using the streamlined method.  
