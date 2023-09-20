@@ -207,12 +207,12 @@
       },
       {
          "source_path":"microsoft-365/admin/copilot/m365-copilot-setup.md",
-         "redirect_url":"copilot/library/microsoft-365-copilot-setup",
+         "redirect_url":"/copilot/library/microsoft-365-copilot-setup",
          "redirect_document_id":true
       },
       {
          "source_path":"microsoft-365/admin/copilot/m365-early-access-program.md",
-         "redirect_url":"copilot/library/microsoft-365-early-access-program",
+         "redirect_url":"/copilot/library/microsoft-365-early-access-program",
          "redirect_document_id":true
       }
   
