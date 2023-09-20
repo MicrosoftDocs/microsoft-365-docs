@@ -54,7 +54,7 @@ Migration recommendation:
 
 Validate device prerequisites before proceeding with migrations (link to other doc). This information builds upon the previous article by focusing on migrations. 
 
-To reonboard devices using the streamlined connectivity method, you need to use the streamlined onboarding package. For more information on how to access the package, see [Streamlined connectivity](configure-device-connectivity.md).
+To reonboard devices, use the streamlined onboarding package. For more information on how to access the package, see [Streamlined connectivity](configure-device-connectivity.md).
 
 Depending on the OS, migrations require a device reboot or service restart once the onboarding package is applied:
 
