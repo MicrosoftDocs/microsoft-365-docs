@@ -90,7 +90,7 @@ Follow the guidance in [Intune](/mem/intune/protect/endpoint-security-edr-policy
 
 ### Microsoft Configuration Manager 
 
-Follow the guidance in [Configuration Manager](/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection).
+Follow the guidance in [Configuration Manager](/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection#bkmk_updateatp).
 
 ### VDI
 
