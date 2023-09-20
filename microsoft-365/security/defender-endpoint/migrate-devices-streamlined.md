@@ -151,19 +151,18 @@ Device connectivity to the streamlined approach doesn't start until you reboot t
 
 ### JAMF Pro
 
-1.	Exclude device from any existing 'onboarding' policies in JAMF Pro.
+1. Exclude device from any existing 'onboarding' policies in JAMF Pro.
 
-2.	Create a new onboarding policy for the streamlined connectivity approach. 
+2. Create a new onboarding policy for the streamlined connectivity approach. 
 
-3.	Include device in the new streamlined onboarding policy.
+3. Include device in the new streamlined onboarding policy.
 
-4.	Reboot device if previously onboarded to Defender for Endpoint. Alternatively, you can restart the service using the following commands:
+4. Reboot device if previously onboarded to Defender for Endpoint. Alternatively, you can restart the service using the following commands:
 
-    1.	`sudo launchctl unload /Library/LaunchDaemons/com.microsoft.fresno.plist` 
-    2.	`sudo launchctl load /Library/LaunchDaemons/com.microsoft.fresno.plist` 
+    1. `sudo launchctl unload /Library/LaunchDaemons/com.microsoft.fresno.plist` 
+    2. `sudo launchctl load /Library/LaunchDaemons/com.microsoft.fresno.plist` 
 	
 For more JAMF guidelines, see [Deploying Microsoft Defender for Endpoint on macOS with JAMF Pro](mac-install-with-jamf.md).
-
 
 ### [**Linux**](#tab/linux)
 
