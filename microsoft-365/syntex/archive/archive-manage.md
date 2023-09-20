@@ -42,7 +42,7 @@ When a site is archived, compliance features such as eDiscovery and retention la
     ![Screenshot of the Archived sites page in the SharePoint admin center.](../../media/content-understanding/archived-sites-page.png)
 
 > [!NOTE]
-> To archive a hub site, you first need to unregister it as a hub site. Archiving teams connected sites with private or shared channel sites is not supported. Teams sites with standard channels are supported.
+> To archive a hub site, you first need to unregister it as a hub site. Archiving Microsoft Teams-connected sites with private or shared channel sites is not supported. Teams sites with standard channels are supported.
 
 ## Manage archived sites
 
@@ -50,9 +50,9 @@ Archived sites can be reactivated or deleted. Deletion of archived sites follows
 
 Admins can view details of the site, such as the URL, Archive Status, or Storage, from the **Archived sites** page.
 
-## Reactivate a site in the SharePoint admin center
+## Reactivate a site
 
-If there's a need to access the site contents again, the sites need to be reactivated. After a site is archived, it stays in “Recently Archived” state for seven days. All reactivations from this state are free of cost and instantaneous. After seven days, the site enters the “Archived” state. Reactivations might take up to 24 hours, and have an associated reactivation cost. To learn more about the costs and how pricing works, refer to Section Charge Model-to-be-provided.
+If there's a need to access the site contents again, the sites need to be reactivated. After a site is archived, it stays in “Recently Archived” state for seven days. All reactivations from this state are free of cost and instantaneous. After seven days, the site enters the “Archived” state. Reactivations might take up to 24 hours, and have an associated reactivation cost. To learn more about the costs and how pricing works, see [Charge model](archive-setup#charge-model).
 
 After reactivation, the site will move back to active sites page. The site will resume its normal function, and the users will have the same access rights to the site and its content as they did before the site was archived. After reactivation is complete, the storage consumed by the site will accrue to your storage quota consumption.
 
