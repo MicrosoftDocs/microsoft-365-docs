@@ -147,9 +147,7 @@ Device connectivity to the streamlined approach won't start until you reboot the
 
 3. Add the assignment of the policy using streamlined onboarding package.
 
-4. Reboot the device. 
-
-
+4. Reboot the device.
 
 ### JAMF Pro
 
@@ -175,7 +173,7 @@ For specific OS and device prerequisites, see [Microsoft Defender for Endpoint o
 
 Requires Defender for Endpoint version 101.23052.0009+ 
 
-For general instructions on onboarding to Defender for Endpoint on Linux, see Microsoft Defender for Endpoint on Linux | Microsoft Learn
+For general instructions on onboarding to Defender for Endpoint on Linux, see [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md).
 
 
 ### Local script
