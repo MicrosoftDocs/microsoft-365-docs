@@ -33,12 +33,12 @@ search.appverid: met150
 **Platforms**
 - Windows
 
-[Tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) helps protect certain [security settings](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on), such as virus and threat protection, from being disabled or changed. If you're part of your organization's security team, and you're using [Microsoft Intune](/mem/intune/fundamentals/what-is-intune), you can manage tamper protection for your organization in the [Intune admin center](https://endpoint.microsoft.com). You can manage tamper protection using [co-management with Intune and Configuration Manager](/mem/configmgr/comanage/overview), provided certain requirements are met. (Note that this method doesn't use [tenant attach](/mem/configmgr/tenant-attach/).)
+[Tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) helps protect certain [security settings](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on), such as virus and threat protection, from being disabled or changed. If you're part of your organization's security team, and you're using [Microsoft Intune](/mem/intune/fundamentals/what-is-intune), you can manage tamper protection for your organization in the [Intune admin center](https://endpoint.microsoft.com). You can also manage tamper protection using [comanagement with Intune and Configuration Manager](/mem/configmgr/comanage/overview).
 
-Using Intune or co-management (with Intune and Configuration Manager), you can:
+Using Intune or comanagement (with Intune and Configuration Manager), you can:
 
 - [Turn tamper protection on (or off) for some or all devices](#turn-tamper-protection-on-or-off-in-microsoft-intune). 
-- [Tamper protect antivirus exclusions](#tamper-protection-for-antivirus-exclusions) that are defined for Microsoft Defender Antivirus.
+- [Tamper protect antivirus exclusions](#tamper-protection-for-antivirus-exclusions) that are defined for Microsoft Defender Antivirus. (Certain requirements must be met.)
 
 > [!IMPORTANT]
 > If you're using Microsoft Intune to manage Defender for Endpoint settings, make sure to set [DisableLocalAdminMerge](/windows/client-management/mdm/defender-csp#configurationdisablelocaladminmerge) to true on devices.
@@ -53,7 +53,7 @@ Using Intune or co-management (with Intune and Configuration Manager), you can:
 | Requirement | Details |
 |---|---|
 | Roles and permissions | You must have appropriate permissions assigned through roles, such as Global Administrator or Security Administrator. See [Azure Active Directory roles with Intune access](/mem/intune/fundamentals/role-based-access-control#azure-active-directory-roles-with-intune-access). |
-| Device management | Your organization uses [Intune to manage devices](/mem/intune/fundamentals/manage-devices) or [co-management with Intune and Configuration Manager](/mem/configmgr/comanage/overview). |
+| Device management | Your organization uses [Intune to manage devices](/mem/intune/fundamentals/manage-devices) or [comanagement with Intune and Configuration Manager](/mem/configmgr/comanage/overview). |
 | Intune licenses | Intune licenses are required. See [Microsoft Intune licensing](/mem/intune/fundamentals/licenses). |
 | Operating System | Windows devices must be running Windows 10 [version 1709 or later](/lifecycle/announcements/revised-end-of-service-windows-10-1709) or Windows 11. (For more information about releases, see [Windows release information](/windows/release-health/release-information).) <br/><br/>For Mac, see [Protect macOS security settings with tamper protection](tamperprotection-macos.md). |
 | Security intelligence | You must be using Windows security with [security intelligence](https://www.microsoft.com/wdsi/definitions) updated to version 1.287.60.0 (or later). |
@@ -89,7 +89,7 @@ If your organization has [exclusions defined for Microsoft Defender Antivirus](c
 | Condition | Criteria |
 |---|---|
 | Microsoft Defender platform | Devices are running Microsoft Defender platform `4.18.2211.5` or later. For more information, see [Monthly platform and engine versions](microsoft-defender-antivirus-updates.md#monthly-platform-and-engine-versions). |
-| `DisableLocalAdminMerge` setting | Also referred to as preventing local list merging, `DisableLocalAdminMerge` is enabled so that settings configured on a device aren't merged with organization policies, such as settings in Intune. For more information, see [DisableLocalAdminMerge](/windows/client-management/mdm/defender-csp). |
+| `DisableLocalAdminMerge` setting | This settings is also known as preventing local list merging. `DisableLocalAdminMerge` is enabled so that settings configured on a device aren't merged with organization policies, such as settings in Intune. For more information, see [DisableLocalAdminMerge](/windows/client-management/mdm/defender-csp). |
 | Device management | Devices are either managed in Intune, or are [co-managed with Intune and Configuration Manager](/mem/configmgr/comanage/overview). Sense must be enabled, and [tenant attach](/mem/configmgr/tenant-attach/) is not used. |
 | Antivirus exclusions | Microsoft Defender Antivirus exclusions are managed in Microsoft Intune. For more information, see [Settings for Microsoft Defender Antivirus policy in Microsoft Intune for Windows devices](/mem/intune/protect/antivirus-microsoft-defender-settings-windows). <br/><br/>Functionality to protect Microsoft Defender Antivirus exclusions is enabled on devices. For more information, see [How to determine whether antivirus exclusions are tamper protected on a Windows device](#how-to-determine-whether-antivirus-exclusions-are-tamper-protected-on-a-windows-device). |
 
