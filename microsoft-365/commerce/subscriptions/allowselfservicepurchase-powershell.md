@@ -109,6 +109,7 @@ The following table lists the available products and their **ProductId**. It als
 | Windows 365 Business | CFQ7TTC0J203 | No |
 | Windows 365 Business with Windows Hybrid Benefit | CFQ7TTC0HX99 | No |
 | Microsoft 365 F3 | CFQ7TTC0LH05 | No |
+| Microsoft Purview Discovery | CFQ7TTC0N8SL | Yes |
 | Dynamics 365 Marketing | CFQ7TTC0LH3N | No |
 | Dynamics 365 Marketing Attach | CFQ7TTC0LHWP | No |
 | Dynamics 365 Marketing Additional Application | CFQ7TTC0LHVK | No |
