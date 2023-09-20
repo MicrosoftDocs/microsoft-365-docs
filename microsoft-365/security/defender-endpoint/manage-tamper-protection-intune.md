@@ -115,7 +115,7 @@ You can use a registry key to determine whether the functionality to protect Mic
    | `EnrollmentStatus` value | What the value means |
    |---|---|
    | 4 | Sense is enabled on the device. <br/>Meets a requirement for exclusions to be tamper protected. |
-   | A value other than `4` | Sense is not enabled on the device. <br/>(*In this case, exclusions aren't tamper protected*.) |
+   | A value other than `4` | Sense isn't enabled on the device. <br/>(*In this case, exclusions aren't tamper protected*.) |
 
 4. To confirm that tamper protection is deployed and that exclusions are tamper protected, go to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Features` (or `HKLM\SOFTWARE\Microsoft\Windows Defender\Features`), and look for a `REG_DWORD` entry called `TPExclusions`.
 
