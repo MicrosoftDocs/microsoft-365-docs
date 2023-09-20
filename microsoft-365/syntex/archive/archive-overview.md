@@ -22,7 +22,7 @@ description: Learn about Microsoft 365 Archive.
 > [!NOTE]
 > This feature is currently in limited preview and subject to change. Before you begin, read the [Microsoft 365 preview terms and conditions](archive-preview-terms.md).
 
-Microsoft 365 Archive offers lower-cost storage for inactive SharePoint sites without the need to move any content outside of Microsoft 365.
+Microsoft 365 Archive offers cost-effetive storage for inactive SharePoint sites without the need to move any content outside of Microsoft 365.
 
 Your organization often needs to keep inactive or aging data for long periods of time in case you need to retrieve it later. You prefer to store the data where it is to simplify compliance and data lifecycle management. Microsoft 365 Archive lets you keep the data within the Microsoft 365 trust boundary and ensures the same security and compliance standards as any data in SharePoint. Microsoft 365 Archive reinforces [compliance features for archive sites](archive-compliance.md), and works well with Microsoft Purview tools to help manage archived content.
 
