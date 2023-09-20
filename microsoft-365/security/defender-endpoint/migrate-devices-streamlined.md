@@ -143,11 +143,11 @@ Device connectivity to the streamlined approach won't start until you reboot the
 
 1. In Microsoft Intune, create a new onboarding policy using Custom Configuration profile. Do not assign it yet. Follow the instructions under [Intune-based deployment for Microsoft Defender for Endpoint on Mac](/microsoft-365/security/defender-endpoint/mac-install-with-intune). 
 
-2.	Exclude the macOS device you're reonboarding from its existing onboarding policy. To learn more about excluding groups from policy assignments, see [Exclude groups from a policy assignment](/mem/intune/configuration/device-profile-assign#exclude-groups-from-a-policy-assignment).
+2. Exclude the macOS device you're reonboarding from its existing onboarding policy. To learn more about excluding groups from policy assignments, see [Exclude groups from a policy assignment](/mem/intune/configuration/device-profile-assign#exclude-groups-from-a-policy-assignment).
 
-3.	Add the assignment of the policy using streamlined onboarding package 
+3. Add the assignment of the policy using streamlined onboarding package.
 
-4.	Reboot the device  
+4. Reboot the device. 
 
 
 
