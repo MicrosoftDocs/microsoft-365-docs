@@ -34,9 +34,9 @@ You can use the [Microsoft 365 Copilot Setup Guide](https://admin.microsoft.com/
 
 ## Assign licenses
 
-This article assumes that you have already provisioned users in your tenant. If you have not already done so, follow the steps in the [Microsoft 365 Copilot Setup Guide](https://admin.microsoft.com/Adminportal/Home?Q=m365setup#/modernonboarding/microsoft365copilotsetupguide) or those documented in [Add users and assign licenses in Microsoft 365](/microsoft-365/admin/add-users/add-users?view=o365-worldwide). If you use either of these resources, you can create users and assign the necessary licenses at the same time.
+This article assumes that you have already provisioned users in your tenant. If you have not already done so, follow the steps in the [Microsoft 365 Copilot Setup Guide](https://admin.microsoft.com/Adminportal/Home?Q=m365setup#/modernonboarding/microsoft365copilotsetupguide) or those documented in [Add users and assign licenses in Microsoft 365](/microsoft-365/admin/add-users/add-users). If you use either of these resources, you can create users and assign the necessary licenses at the same time.
 
-If your users exist, you can assign licenses for Microsoft 365 Copilot using the [Microsoft 365 admin center](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide) or PowerShell using the [Set-MsolUserLicense](/powershell/module/msonline/set-msoluserlicense?view=azureadps-1.0) cmdlet. For example:
+If your users exist, you can assign licenses for Microsoft 365 Copilot using the [Microsoft 365 admin center](/microsoft-365/admin/manage/assign-licenses-to-users) or PowerShell using the [Set-MsolUserLicense](/powershell/module/msonline/set-msoluserlicense?view=azureadps-1.0) cmdlet. For example:
 
 **Set-MsolUserLicense -UserPrincipalName \<UserName\> -AddLicenses "\<tenantname\>:Microsoft_365_Copilot"**
 
@@ -58,4 +58,4 @@ We recommend that you enable all feedback settings for the Microsoft 365 apps. T
 
 ## Microsoft 365 Copilot usage activity report
 
-After your users have had a chance to use Copilot, we recommend running and reviewing the [Microsoft 365 Copilot usage report](/microsoft-365/admin/activity-reports/microsoft-365-copilot-usage?view=o365-worldwide) (which is in continuous enhancement) to get a summary of user adoption, retention, and engagement with Microsoft 365 Copilot. The report can be found in the Microsoft 365 admin center under **Reports** > **Usage**.
+After your users have had a chance to use Copilot, we recommend running and reviewing the [Microsoft 365 Copilot usage report](/microsoft-365/admin/activity-reports/microsoft-365-copilot-usage) (which is in continuous enhancement) to get a summary of user adoption, retention, and engagement with Microsoft 365 Copilot. The report can be found in the Microsoft 365 admin center under **Reports** > **Usage**.

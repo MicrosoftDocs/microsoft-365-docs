@@ -5,15 +5,15 @@
 - name: Plan
   items: 
     - name: Overview of Microsoft 365 Copilot
-      href: 
+      href: microsoft-365-copilot-overview.md
     - name: Requirements for Microsoft 365 Copilot
-      href: 
+      href: microsoft-365-copilot-requirements.md
     - name: Data, Privacy, and Security for Microsoft 365 Copilot
       href: /DeployOffice/privacy/microsoft-365-copilot
 - name: Deploy
   items: 
     - name: Enable users for Microsoft 365 Copilot
-      href: 
+      href: microsoft-365-copilot-enable-users.md
 - name: Manage
   items:
     - name: Microsoft 365 Copilot usage report
