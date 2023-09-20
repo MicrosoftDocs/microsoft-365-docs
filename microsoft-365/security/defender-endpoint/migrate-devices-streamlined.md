@@ -46,11 +46,11 @@ The following table lists the available tools based on the device's operating sy
 
 Migration recommendation:
 
-- **Start small** - It's recommended to start with a small set of devices first, apply to onboarding blob using any of the supported deployment tools, then monitor for connectivity. 
+- **Start small**. It's recommended to start with a small set of devices first, apply the onboarding blob using any of the supported deployment tools, then monitor for connectivity. 
 
-- **Validate and monitor** - After onboarding the small set of devices, validate that devices have successfully onboarded and are communicating with the service. 
+- **Validate and monitor**. After onboarding the small set of devices, validate that devices have successfully onboarded and are communicating with the service. 
 
-- **Complete migration** - At this stage, you can gradually roll out the migration to a larger set of devices and remove the old URLs from your network device to complete the migration.
+- **Complete migration**. At this stage, you can gradually roll out the migration to a larger set of devices and remove the old URLs from your network device to complete the migration.
 
 
 Validate device prerequisites before proceeding with device migrations (link to other doc). Learn more about [Streamlined connectivity](configure-device-connectivity.md). This is a continuation of those articles with a focus on migrating devices. 
