@@ -96,15 +96,13 @@ Follow the guidance in [Configuration Manager](/mem/configmgr/protect/deploy-use
 
 Use the guidance in [Onboard non-persistent virtual desktop infrastructure (VDI) devices](/microsoft-365/security/defender-endpoint/configure-endpoints-vdi). After completing the steps, you must restart the device for device connectivity to switch over.
 
-
-
 ### [**Windows Server**](#tab/Windowsserver)
 
 ### Windows Server
 
-For specific OS and device prerequisites, see [Onboard Windows Server overview](onboard-windows-server.md). Streamlined connectivity is only supported for Windows Server running unified agent (non-MMA). 
-
 For general Windows server onboarding instructions, see [Onboard Windows servers to the Microsoft Defender for Endpoint service](/microsoft-365/security/defender-endpoint/configure-server-endpoints).
+
+See [Prerequisites](configure-device-connectivity.md#prerequisites).
 
 
 ### Microsoft Defender for Cloud
