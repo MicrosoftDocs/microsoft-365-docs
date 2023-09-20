@@ -104,19 +104,18 @@ For general Windows server onboarding instructions, see [Onboard Windows servers
 
 See [Prerequisites](configure-device-connectivity.md#prerequisites).
 
-
 ### Microsoft Defender for Cloud
 
 The streamlined connectivity method is not currently supported through Microsoft Defender for Cloud. 
 
+### Microsoft Configuration Manager 
+
+Follow the guidance in [Configuration Manager](/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection#bkmk_updateatp).
 
 ### Group policy
 
 Use the guidance in [Group policy](configure-endpoints-gp.md). After completing the steps, you must then restart the device. Device connectivity won't start if you don't restart the device.
 
-### Microsoft Configuration Manager 
-
-Follow the guidance in 
 
 ### VDI
 
