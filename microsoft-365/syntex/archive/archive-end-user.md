@@ -32,9 +32,7 @@ For a multi-geo tenant, the URL needs to be set for each geo location.
 
 The **Request to reactivate** button will not be visible if a redirect URL has not been set.
 
-### Related articles
+<br>
 
-[Overview of Microsoft 365 Archive (Preview)](archive-overview.md)
-[Set up Microsoft 365 Archive (Preview)](archive-setup.md)
-[Manage Microsoft 365 Archive (Preview)](archive-manage.md)
-[Compliance features in Microsoft 365 Archive (Preview)](archive-compliance.md)
+> [!div class="nextstepaction"]
+> [Back to overview](archive-overview.md)

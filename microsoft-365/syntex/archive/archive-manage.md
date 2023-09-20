@@ -88,10 +88,7 @@ The following table describes the archive states and allowed operations.
 |Archived    |The site enters this state after seven days after being archived. In this stage, reactivations will be charged, and may take a few hours.         |Reactivate, Delete         |
 |Reactivating     |If a site is reactivated from “Archived” state, it will be in this stage until reactivation is complete. After this, the site will be active, and will be available in Active sites page.         |None         |
 
+<br>
 
-## Related articles
-
-[Overview of Microsoft 365 Archive (Preview)](archive-overview.md)
-[Set up Microsoft 365 Archive (Preview)](archive-setup.md)
-[Compliance features in Microsoft 365 Archive (Preview)](archive-compliance.md)
-[End user experience in Microsoft 365 Archive (Preview)](archive-end-user.md)
+> [!div class="nextstepaction"]
+> [Back to overview](archive-overview.md)
