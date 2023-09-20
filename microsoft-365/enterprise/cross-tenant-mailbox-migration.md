@@ -53,7 +53,7 @@ When a mailbox is migrated cross-tenant with this feature, only user-visible con
 > [!WARNING]
 > You must have purchased, or verified that you can purchase, cross-tenant user data migration licenses prior to the next steps. Migrations fail if this step hasn't been completed. Microsoft doesn't offer exceptions for this licensing requirement.
 
-> If you do not have the proper license assigned to the user being migrated, the migration will fail. You will receive an error on the migration user similar to the following:
+If you do not have the proper license assigned to the user being migrated, the migration fails, and you receive an error that is similar to the following:
 
 > Error: CrossTenantMigrationWithoutLicensePermanentException: No license was found for the source recipient, '65c3c3ea-2b9a-44d0-a685-9bfe300f8c87', or the target recipient, '65c3c3ea-2b9a-44d0-a685-9bfe300f8c87'. A Cross-tenant User Data Migration license is requiredto move a mailbox between tenants.
 
