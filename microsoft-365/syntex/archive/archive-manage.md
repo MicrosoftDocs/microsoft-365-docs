@@ -52,9 +52,9 @@ Admins can view details of the site, such as the URL, Archive Status, or Storage
 
 ## Reactivate a site
 
-If there's a need to access the site contents again, the sites need to be reactivated. After a site is archived, it stays in “Recently Archived” state for seven days. All reactivations from this state are free of cost and instantaneous. After seven days, the site enters the “Archived” state. Reactivations might take up to 24 hours, and have an associated reactivation cost. To learn more about the costs and how pricing works, see [Charge model](archive-setup#charge-model).
+If there's a need to access the site content again, the sites need to be reactivated. After a site is archived, it stays in the “Recently Archived” state for seven days. All reactivations from this state are free of cost and instantaneous. After seven days, the site enters the “Archived” state. Reactivations might take up to 24 hours, and have an associated reactivation cost. To learn more about the costs and how pricing works, see [Charge model](archive-setup#charge-model).
 
-After reactivation, the site will move back to active sites page. The site will resume its normal function, and the users will have the same access rights to the site and its content as they did before the site was archived. After reactivation is complete, the storage consumed by the site will accrue to your storage quota consumption.
+After reactivation, the site will move back to the **Active sites**d page. The site will resume its normal function, and the users will have the same access rights to the site and its content as they did before the site was archived. After reactivation is complete, the storage consumed by the site will accrue to your storage quota consumption.
 
 1. In the SharePoint admin center, go to [**Active sites**](https://go.microsoft.com/fwlink/?linkid=2185220), and sign in with an account that has [admin permissions](https://learn.microsoft.com/en-us/sharepoint/sharepoint-admin-role) for your organization.
 
@@ -67,7 +67,7 @@ After reactivation, the site will move back to active sites page. The site will 
 
 4. On the **Archive** pane, select **Reactivate**.
 
-5. If you're trying to reactivate a site from “Archived” state, you'll see a confirmation pop-up, showcasing an estimated price for reactivation. Select **Confirm** on the pop up to reactivate. The site will enter the “Reactivating” state. It will move to active sites once reactivation is complete.
+5. If you're trying to reactivate a site from “Archived” state, you'll see a confirmation pop-up that shows an estimated price for reactivation. Select **Confirm** to reactivate. The site will enter the “Reactivating” state. It will move to active sites once reactivation is complete.
 
     ![Screenshot of an example site that you are reactivating in the SharePoint admin center.](../../media/content-understanding/reactivate-site-example.png)
 
