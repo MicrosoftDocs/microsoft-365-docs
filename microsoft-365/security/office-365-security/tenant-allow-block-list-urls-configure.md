@@ -46,7 +46,7 @@ This article describes how admins can manage entries for URLs in the Microsoft 3
 
 - You can enter a maximum of 250 characters in a URL entry.
 
-- An entry should be active within 30 minutes, but it might take up to 24 hours for the entry to be active.
+- An entry should be active within 5 minutes.
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
   - [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo):
