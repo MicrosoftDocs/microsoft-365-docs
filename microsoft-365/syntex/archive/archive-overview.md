@@ -33,7 +33,7 @@ Some additional advantages of using Microsoft 365 Archive are:
 - In-place reactivation of archived sites whenever needed with full site fidelity and lossless metadata reactivation
 - Declutter active sites by moving content to archivable sites and decluttering of search indexes
 
-Microsoft 365 Archive is administered in the SharePoint admin center by global or SharePoint administrators.
+Microsoft 365 Archive is administered in the SharePoint admin center by global admins or SharePoint admins.
 
 When a site is archived, it goes into an explicitly colder tier, no longer consumes a tenant’s active storage quota, and instead drives Microsoft 365 Archive storage consumption. Being in this colder tier means the site is no longer accessible by anyone in the organization outside of Microsoft Purview or admin search.
 
