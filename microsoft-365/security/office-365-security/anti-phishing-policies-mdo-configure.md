@@ -17,7 +17,7 @@ description: Admins can learn how to create, modify, and delete the advanced ant
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.date: 7/5/2023
+ms.date: 9/19/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
@@ -52,9 +52,10 @@ For anti-phishing policy procedures in organizations without Defender for Office
 
 - For our recommended settings for anti-phishing policies in Defender for Office 365, see [Anti-phishing policy in Defender for Office 365 settings](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365).
 
-- Allow up to 30 minutes for a new or updated policy to be applied.
+  > [!TIP]
+  > Settings in the default or custom anti-phishing policies are ignored if a recipient is also included in the [Standard or Strict preset security policies](preset-security-policies.md). For more information, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
 
-- For information about where anti-phishing policies are applied in the filtering stack, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
+- Allow up to 30 minutes for a new or updated policy to be applied.
 
 ## Use the Microsoft 365 Defender portal to create anti-phishing policies
 
