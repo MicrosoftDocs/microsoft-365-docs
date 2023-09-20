@@ -109,7 +109,7 @@ You can change how your organization receives Microsoft 365 updates by following
 
 6. When you're done adding users, select **Save**.
 
-![Screenshot: Showing the set up release option in the Microsoft 365 admin.](../../media/release_option_admincenter.png)
+:::image type="content" alt-text="Screenshot: Showing the set up release option in the Microsoft 365 admin." source="../../media/release_option_admincenter.png" lightbox="../../media/release_option_admincenter.png":::
 
 ## Next steps
 

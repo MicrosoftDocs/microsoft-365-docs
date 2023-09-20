@@ -73,7 +73,7 @@ These three release statuses will be updated on each applicable message over the
 
 Updates to feature release status are provided on the original Message center post. Filtering capability on **“Status for your org.”** allows easier visibility on the updated release status.
 
-:::image type="content" source="../../media/message-center-rolloutstatus-listanddetailsview.png" alt-text="Image displaying ‘status for your org.’ updated release choices.":::
+:::image type="content" source="../../media/message-center-rolloutstatus-listanddetailsview.png" lightbox="../../media/message-center-rolloutstatus-listanddetailsview.png" alt-text="Image displaying ‘status for your org.’ updated release choices.":::
 
 The release status is **ONLY** available for new and updated features that are also announced on Microsoft 365 Public Roadmap and have reached general availability status (production ready). If you do not see release status on a message, it means the release status is not available for that feature.
 
@@ -115,7 +115,7 @@ Use the **Service**, **Tag**, and **Message state**  drop-down menus to select a
 
 You can select any column heading, except **Service** and **Tag**,  to sort messages in ascending or descending order.
 
-:::image type="content" source="../../media/message-center-admin-impact1.png" alt-text="Message center view sorted by Admin impact.":::
+:::image type="content" source="../../media/message-center-admin-impact1.png" lightbox="../../media/message-center-admin-impact1.png" alt-text="Message center view sorted by Admin impact.":::
 
 ::: moniker-end
 
