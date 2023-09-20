@@ -50,10 +50,9 @@ Migration recommendation:
 
 - **Validate and monitor**. After onboarding the small set of devices, validate that devices have successfully onboarded and are communicating with the service. 
 
-- **Complete migration**. At this stage, you can gradually roll out the migration to a larger set of devices and remove the old URLs from your network device to complete the migration.
+- **Complete migration**. At this stage, you can gradually roll out the migration to a larger set of devices and remove the old URLs and previous onboarding policies from your network device to complete the migration.
 
-
-Validate device prerequisites before proceeding with device migrations (link to other doc). Learn more about [Streamlined connectivity](configure-device-connectivity.md). This is a continuation of those articles with a focus on migrating devices. 
+Validate device prerequisites before proceeding with migrations (link to other doc). This information builds upon the previous article by focusing on migrations. 
 
 To reonboard devices using the streamlined connectivity method, you need to use the streamlined onboarding package. For more information on how to access the package, see [Streamlined connectivity](configure-device-connectivity.md).
 
