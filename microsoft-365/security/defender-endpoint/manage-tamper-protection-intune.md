@@ -104,25 +104,25 @@ You can use a registry key to determine whether the functionality to protect Mic
 
 2. To confirm that the device is managed by Intune or comanaged by Intune and Configuration Manager, go to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender` (or `HKLM\SOFTWARE\Microsoft\Windows Defender`), and look for a `REG_DWORD` entry called `ManagedDefenderProductType`. 
 
-   | `ManagedDefenderProductType` Value | What the value means |
+   | ManagedDefenderProductType Value | What the value means |
    |---|---|
-   | 6 | The device is managed by Intune only. <br/>Meets a requirement for exclusions to be tamper protected. |
-   | 7 | The device is comanaged by Intune and Configuration Manager. <br/>Meets a requirement for exclusions to be tamper protected. |
+   | `6` | The device is managed by Intune only. <br/>Meets a requirement for exclusions to be tamper protected. |
+   | `7` | The device is comanaged by Intune and Configuration Manager. <br/>Meets a requirement for exclusions to be tamper protected. |
    | A value other than `6` or `7` | The device isn't managed by Intune or comanaged with Intune and Configuration Manager. <br/>(*In this case, exclusions aren't tamper protected*.) |
 
 3. To confirm that Sense is enabled, go to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SenseCM` (or `HKLM\SOFTWARE\Microsoft\SenseCM`), and look for a `REG_DWORD` entry called `EnrollmentStatus`.
 
-   | `EnrollmentStatus` value | What the value means |
+   | EnrollmentStatus value | What the value means |
    |---|---|
-   | 4 | Sense is enabled on the device. <br/>Meets a requirement for exclusions to be tamper protected. |
+   | `4` | Sense is enabled on the device. <br/>Meets a requirement for exclusions to be tamper protected. |
    | A value other than `4` | Sense isn't enabled on the device. <br/>(*In this case, exclusions aren't tamper protected*.) |
 
 4. To confirm that tamper protection is deployed and that exclusions are tamper protected, go to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Features` (or `HKLM\SOFTWARE\Microsoft\Windows Defender\Features`), and look for a `REG_DWORD` entry called `TPExclusions`.
 
-   | `TPExclusions` | What the value means |
+   | TPExclusions | What the value means |
    |---|---|
-   | 1 | The required conditions are met, and the new functionality to protect exclusions is enabled on the device.<br/>In this case, exclusions are tamper protected. |
-   | 0 | Tamper protection isn't currently protecting exclusions on the device.<br/> (*If all the requirements are met and this state seems incorrect, contact support*.) |
+   | `1` | The required conditions are met, and the new functionality to protect exclusions is enabled on the device.<br/>In this case, exclusions are tamper protected. |
+   | `0` | Tamper protection isn't currently protecting exclusions on the device.<br/> (*If all the requirements are met and this state seems incorrect, contact support*.) |
 
 > [!CAUTION]
 > **Do not change the value of the registry keys**. Use the preceding procedure for information only. Changing keys has no effect on whether tamper protection applies to exclusions.
