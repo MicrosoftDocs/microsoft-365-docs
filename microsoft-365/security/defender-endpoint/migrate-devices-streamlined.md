@@ -78,7 +78,7 @@ See prerequisites: [Prerequisites](configure-device-connectivity.md#prerequisite
 
 ### Local script
 
-Use the guidance in [Local script (up to 10 devices)](configure-endpoints-script.md). After completing the steps, you must then restart the device. Device connectivity won't start if you don't restart the device.
+Use the guidance in [Local script (up to 10 devices)](configure-endpoints-script.md). After completing the steps, you must restart the device for device connectivity to switch over.
 
 ### Group policy
 
