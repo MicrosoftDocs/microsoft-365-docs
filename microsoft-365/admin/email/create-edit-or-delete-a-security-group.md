@@ -26,7 +26,7 @@ description: "Learn to create, edit,or delete a security group."
 
 # Create, edit, or delete a security group in the Microsoft 365 admin center
 
-On the Microsoft 365 **Active teams and groups** page, you can create groups of user accounts that you can use to assign the same permissions to in SharePoint Online and CRM Online. For example, an administrator can create a security group to grant a certain group of people access to a SharePoint site.
+On the Microsoft 365 **Active teams and groups** page, you can create groups of user accounts that you can use to assign the same permissions to in SharePoint Online and CRM Online. For example, an administrator can create a security group to grant a certain group of people access to a SharePoint site. 
 
 ## Before you begin
 
