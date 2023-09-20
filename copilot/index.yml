@@ -51,17 +51,17 @@ additionalContent:
       items:
         # Card
         - title: Overview video
-          summary: Watch an overview of Microsoft 365 Copilot
+          summary: Watch an overview of Microsoft 365 Copilot.
           url: https://www.youtube.com/watch?v=E5g20qmeKpg
         # Card
         - title: FAQ
-          summary: Review the Copilot FAQ
+          summary: Review the Copilot FAQ.
           url: https://support.microsoft.com/topic/frequently-asked-questions-ai-microsoft-365-copilot-and-microsoft-designer-987b275d-f6f2-4d5d-94c5-e927cffae705
         # Card
         - title: Service description
-          summary: Read the service description for what's included in Microsoft 365 Copilot
+          summary: Read the service description for what's included in Microsoft 365 Copilot.
           url: /office365/servicedescriptions/office-365-platform-service-description/microsoft-365-copilot/
         # Card
         - title: Microsoft AI help & learning
-          summary: Help and learning for you and your users
+          summary: Help and learning for you and your users.
           url: https://support.microsoft.com/microsoft-ai
