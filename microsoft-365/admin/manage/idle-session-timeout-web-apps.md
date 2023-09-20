@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 03/03/2022
+ms.date: 09/18/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -18,8 +18,6 @@ description: "Set how long user's session will last in Microsoft 365 before they
 ---
 
 # Idle session timeout for Microsoft 365
-
-<!-- Add metadata: localization, AdminSurgePortfolio, admindeeplinkMAC. remove robots nofollow -->
 
 > [!IMPORTANT]
 > Idle session timeout isn't available for Microsoft 365 operated by 21Vianet or Microsoft 365 Germany.
@@ -48,7 +46,7 @@ Idle session timeout is one of the many security measures in Microsoft 365. To l
 
 When a user has been inactive in Microsoft 365 web apps for the time period you chose, they'll see the following prompt. They have to select **Stay signed in** or they'll be signed out.
 
-:::image type="content" source="../../media/idle-session-timeout.png" alt-text="Screenshot: Prompt letting you know that your session is about to expire. Select Stay signed in so you don't get signed out of Microsoft 365 web apps":::
+:::image type="content" source="../../media/idle-session-timeout.png" lightbox="../../media/idle-session-timeout.png" alt-text="Screenshot: Prompt letting you know that your session is about to expire. Select Stay signed in so you don't get signed out of Microsoft 365 web apps":::
 
 ## Details about idle session timeout
 
