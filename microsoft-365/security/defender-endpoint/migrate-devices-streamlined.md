@@ -190,7 +190,6 @@ Replace the onboarding package file in the current deployment method.
 
 ## Verifying device connectivity with streamlined method for migrated devices
 
-
 You can use the following methods to check that you have successfully connected Windows devices:
 
 - [Client analyzer](#use-defender-for-endpoint-client-analyzer-windows-to-validate-connectivity-after-onboarding-for-migrated-endpoints)
@@ -199,7 +198,6 @@ You can use the following methods to check that you have successfully connected 
 - [Run tests to confirm connectivity with Defender for Endpoint services](#)
 - Checking the registry editor
 - [PowerShell detection test](#powershell-detection-test)
-
 
 For macOS and Linux, you can use the following methods:
 
@@ -219,25 +217,7 @@ Ensure connectivity is established with the appropriate URLs.
 
 ### Tracking with advanced hunting in Microsoft 365 Defender
 
-You can use advanced hunting in Microsoft 365 Defender portal to view the connectivity type status. 
-
-This information is found in the DeviceInfo table under the "ConnectivityType" column:
-
-   **Column Name:** ConnectivityType
-
-   **Possible Values:** Streamlined, Standard, *blank* 
-
-   **Data type:** string
-
-   **Description:** Type of connectivity from the device to the cloud
-
-Once a device is migrated to use the streamlined method and the device establishes successful communication with the EDR command & control channel, the value is represented as *streamlined*.
-
-If you move the device back to the regular method, the value is *standard*.
-
-For devices that haven't yet attempted to reonboard, the value remains blank. 
-
-For more information on using advanced hunting in Microsoft 365 Defender, see [Overview - Advanced hunting](/microsoft-365/security/defender/advanced-hunting-overview).
+Follow the same instructions as for Windows.
 
 ### Tracking locally on a device through Windows Event Viewer
 
