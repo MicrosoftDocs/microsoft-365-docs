@@ -318,7 +318,7 @@ For detailed syntax and parameter information, see [Remove-TenantAllowBlockListI
 
 Valid URL entries and their results are described in the following subsections.
 
-#### Scenario:Top-level domain blocking
+#### Scenario: Top-level domain blocking
 
 **Entry**: `*.<TLD>/`
 
