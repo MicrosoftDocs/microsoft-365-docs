@@ -318,6 +318,19 @@ For detailed syntax and parameter information, see [Remove-TenantAllowBlockListI
 
 Valid URL entries and their results are described in the following subsections.
 
+#### Scenario: Top-level domain blocking
+
+**Entry**: `*.<TLD>/`
+
+- **Block match**:
+  - a.TLD
+  - TLD/abcd
+  - b.abcd.TLD
+  - TLD/contoso.com
+  - TLD/q=contoso.com
+  - www.abcd.TLD
+  - www.abcd.TLD/q=a@contoso.com
+
 #### Scenario: No wildcards
 
 **Entry**: `contoso.com`
