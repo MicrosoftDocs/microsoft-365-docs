@@ -72,7 +72,9 @@ Depending on the OS, migrations require a device reboot or service restart once 
 >[!IMPORTANT]
 >Windows 10 version 1607, 1703, 1709, and 1803 do not support reonboarding. To migrate existing devices, you will need to fully offboard and onboard using the streamlined onboarding package.
 
-For more information on prerequisites, see [Onboarding Windows Client](onboard-windows-client.md).
+For more information on onboarding Windows client devices, see [Onboarding Windows Client](onboard-windows-client.md).
+
+See prerequisites: [Prerequisites](configure-device-connectivity.md#prerequisites).
 
 ### Local script
 
