@@ -85,11 +85,12 @@ Use the guidance in [Local script (up to 10 devices)](configure-endpoints-script
 Use the guidance in [Group policy](configure-endpoints-gp.md). After completing the steps, you must restart the device for device connectivity to switch over.
 
 ### Microsoft Intune
-Follow the guidance in [Intune](/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection).
+
+Follow the guidance in [Intune](/mem/intune/protect/endpoint-security-edr-policy#updating-the-onboarding-state-for-a-device). After completing the steps, you must restart the device for device connectivity to switch over.
 
 ### Microsoft Configuration Manager 
 
-Follow the guidance in [Intune](/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection).
+Follow the guidance in [Configuration Manager](/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection).
 
 ### VDI
 
