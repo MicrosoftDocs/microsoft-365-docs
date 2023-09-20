@@ -26,7 +26,7 @@ description: "Learn to create, edit,or delete a security group."
 
 # Create, edit, or delete a security group in the Microsoft 365 admin center
 
-On the Microsoft 365 **Active teams and groups** page, you can create groups of user accounts that you can use to assign the same permissions to in SharePoint Online and CRM Online. For example, an administrator can create a security group to grant a certain group of people access to a SharePoint site. 
+On the Microsoft 365 **Active teams and groups** page, you can create groups of user accounts that you can use to assign the same permissions to in SharePoint Online and CRM Online. For example, an administrator can create a security group to grant a certain group of people access to a SharePoint site.
 
 ## Before you begin
 
@@ -41,39 +41,39 @@ There are also [Groups in Exchange Online and SharePoint Online](#groups-in-exch
 
 ### Add a security group
 
-1. In the Microsoft 365 admin center, go to the **Groups** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.
+1. In the Microsoft 365 admin center, go to **Team & groups** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Active teams and groups</a> page.
   
-2. On the **Groups** page, select **Add a group**.
+2. Go to the **Security groups** page, select **Add a security group**.
 
-3. On the **Choose a group type** page, choose **Security**.
+3. On the **Set up the basics** page, add your group name and a description and choose **Next**.
 
-4. Follow the steps to complete creation of the group.
+4. On the **Edit settings** page, select whether you want Azure AD roles can be assigned to this group and select **Next**.
 
-### Add members to a security group
+5. Review your selections and choose **Create group** and **Close**.
 
-1. Select the security group name on the **Groups** page, and on the **Members** tab, select **View all and manage members**.
+### Add owners or members to a security group
 
-2. In the group pane, select **Add members** and choose the person from the list or type the name of the person you want to add in the **Search** box, and then select **Save**.
+1. Select the security group name on the <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Active teams and groups</a> page, and on the **Members** tab, select **View all and manage members**.
 
-    To remove members, select the X next to their name.
+2. On the **General** tab, select **Add group owners** to ad group owners. On the **Members** tab, select **View all and manage members** and choose the person from the list or use the **Search** box. Select **Add** and close.
+
+### Remove members from a security group
+
+1. Select the security group name on the <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Active teams and groups</a> page, and on the **Members** tab, select **View all and manage members**.
+
+2. To remove members, select the user, choose the ellipsis and choose **Remove members**.
   
 ### Edit a security group
 
-1. In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.
+1. Select the security group name on the <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Active teams and groups</a> page, and on the **Members** tab, select **View all and manage members**.
   
-2. On the **Groups** page, select the group's name.
-
-3. In the settings pane, select the **General** tab or the **Members** tab to edit either group details or members.
+2. Select the group's name and make your changes.
 
 ### Delete a security group
 
-1. In the admin center, go to the **Groups** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.
+1. In the Microsoft 365 admin center, go to **Team & groups** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Active teams and groups</a> page.
 
-2. On the **Groups** page, select the group's name.
-
-3. Select **Delete group** (wasetbin icon), and then confirm by selecting **Delete**.
-
-    Select **Close** once the group is deleted.
+2. Select the security group and on the **General** tab, select **Delete group** (waste bin icon), and then confirm by selecting **Delete group** and then **Close** once the group is deleted.
 
 ## Groups in Exchange Online and SharePoint Online
 
@@ -88,16 +88,18 @@ If you want to create groups of users so you can send email to them all at the s
 After you create distribution groups and mail-enabled security groups in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>, their names and user lists appear on the **Security groups** page. You can delete these groups in both locations, but you can edit them only in the Exchange admin center. Dynamic distribution groups don't show up on the **Security groups** page.
   
  SharePoint groups are created automatically when you make a site collection. The default groups use the default permission levels in SharePoint—sometimes called SharePoint roles—to grant users rights and access. For more information, see [Default SharePoint groups in SharePoint Online](/sharepoint/default-sharepoint-groups).
-  
-## How is a security group different from security groups I create in SharePoint?
+
+## Frequently asked questions about groups
+
+### How is a security group different from security groups I create in SharePoint?
 
 Security groups can be used with SharePoint, Exchange, MDM, Windows, and more. A security group you create in SharePoint is only recognized by that SharePoint site collection.
-  
-## Do I have to use security groups for my organization to be secure?
+
+### Do I have to use security groups for my organization to be secure?
 
 No. This is just one more way you can manage security for your organization. You can always grant user permissions and access to sites individually. But with security groups, you can easily manage larger groups of users.
-  
-## Can I send email to a security group?
+
+### Can I send email to a security group?
 
 Yes. But if you want to use groups for email and collaboration, we recommend that you [create a Microsoft 365 group](../create-groups/create-groups.md) instead.
 
