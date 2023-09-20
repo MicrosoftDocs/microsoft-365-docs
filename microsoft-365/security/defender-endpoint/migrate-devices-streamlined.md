@@ -131,18 +131,13 @@ Requires Defender for Endpoint version 101.23052.0004 or later.
 
 For general instructions on onboarding Defender for Endpoint on macOS, see [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md).
 
-
 ### Local script
+
 Use the guidance in [Manual deployment for Microsoft Defender for Endpoint on macOS](mac-install-manually.md).
 
-After completing the steps, you must either reboot the device or restart the service using the following commands: 
+After completing the steps, you must either reboot the device or restart the service. 
 
-1.	`sudo launchctl unload /Library/LaunchDaemons/com.microsoft.fresno.plist` 
-2.	`sudo launchctl load /Library/LaunchDaemons/com.microsoft.fresno.plist` 
-
-Device connectivity to streamlined approach won't start if you don't reboot the device.
-
-
+Device connectivity to the streamlined approach won't start until you reboot the device or restart the service.
 
 ### Microsoft Intune
 
