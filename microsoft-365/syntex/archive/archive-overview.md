@@ -22,6 +22,17 @@ description: Learn about Microsoft 365 Archive.
 > [!NOTE]
 > This feature is currently in limited preview and subject to change. Before you begin, read the [Microsoft 365 preview terms and conditions](archive-preview-terms.md).
 
+In addition to this overview, the documentation for this preview of Microsoft 365 Archive includes the following articles.
+
+|Article  |Description  |
+|---------|---------|
+|Set up Microsoft 365 Archive    | Learn how to set up and configure Microsoft 365 Archive (Preview), including required licensing, permissions, pay-as-you-go billing, and how to turn on the service.        |
+|Manage Microsoft 365 Archive   | Learn how to archive and manage SharePoint sites, how to reactivate archived sites, and about the various archive states.        |
+|Compliance features in Microsoft 365 Archive    | Learn about durability, security, geo residency, and other compliance considerations.         |
+|End user experience for Microsoft 365 Archive     | Learn about how an end user might experience archived sites, and some of the options an admin use to help the user.         |
+
+## Introduction
+
 Microsoft 365 Archive offers cost-effetive storage for inactive SharePoint sites without the need to move any content outside of Microsoft 365.
 
 Your organization often needs to keep inactive or aging data for long periods of time in case you need to retrieve it later. You prefer to store the data where it is to simplify compliance and data lifecycle management. Microsoft 365 Archive lets you keep the data within the Microsoft 365 trust boundary and ensures the same security and compliance standards as any data in SharePoint. Microsoft 365 Archive reinforces [compliance features for archive sites](archive-compliance.md), and works well with Microsoft Purview tools to help manage archived content.
@@ -47,9 +58,9 @@ Archiving a site archives everything within it, including:
 
 Administrators should notify the site owners and end users before a site is archived so they're aware that the site won't be accessible.
 
-## Limitations of this preview
+## Preview limitations
 
-- As a part of the public preview, tenants with more than 50,000 sites might face issues while trying to enumerate archived sites on the **Archived sites** page. Applicable enhancements are scheduled to roll out in the future. In this scenario, PowerShell can be used to more efficiently archive sites and manage archived content.
+- As a part of the preview, tenants with more than 50,000 sites might face issues while trying to enumerate archived sites on the **Archived sites** page. Applicable enhancements are scheduled to roll out in the future. In this scenario, PowerShell can be used to more efficiently archive sites and manage archived content.
 
 - Currently, end user search results won't show any archived content. Columns such as Archived Date and Archived By aren't currently available, but are planned and will be rolled out when available.
 
