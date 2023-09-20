@@ -19,9 +19,6 @@ description: Learn about compliance features for archived sites in Microsoft 365
 
 # End user experience in Microsoft 365 Archive (Preview)
 
-> [!NOTE]
-> This feature is currently in limited preview and subject to change. Before you begin, read the [Microsoft 365 Archive preview terms and conditions](archive.preview-terms.md).
-
 End users aren't able to access or search for any content that has been archived. Whenever users try to access archived content, they see a message stating that the site has been archived.
 
 ![Screenshot of the Site is archived message end users receive when they try to access content that has been archived.](../../media/content-understanding/site-is-archived-message.png)
