@@ -33,7 +33,7 @@ search.appverid: met150
 **Platforms**
 - Windows
 
-[Tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) helps protect certain [security settings](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on), such as virus and threat protection, from being disabled or changed. If you're part of your organization's security team, and you're using [Microsoft Intune](/mem/intune/fundamentals/what-is-intune), you can manage tamper protection for your organization in the [Intune admin center](https://endpoint.microsoft.com). You can manage tamper protection using [co-management with Intune and Configuration Manager](/mem/configmgr/comanage/overview), provided certain requirements are met. (Note that this method doesn't use [tenant attach](/mem/configmgr/tenant-attach/)).)
+[Tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) helps protect certain [security settings](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on), such as virus and threat protection, from being disabled or changed. If you're part of your organization's security team, and you're using [Microsoft Intune](/mem/intune/fundamentals/what-is-intune), you can manage tamper protection for your organization in the [Intune admin center](https://endpoint.microsoft.com). You can manage tamper protection using [co-management with Intune and Configuration Manager](/mem/configmgr/comanage/overview), provided certain requirements are met. (Note that this method doesn't use [tenant attach](/mem/configmgr/tenant-attach/).)
 
 Using Intune or co-management (with Intune and Configuration Manager), you can:
 
@@ -90,7 +90,7 @@ If your organization has [exclusions defined for Microsoft Defender Antivirus](c
 |---|---|
 | Microsoft Defender platform | Devices are running Microsoft Defender platform `4.18.2211.5` or later. For more information, see [Monthly platform and engine versions](microsoft-defender-antivirus-updates.md#monthly-platform-and-engine-versions). |
 | `DisableLocalAdminMerge` setting | Also referred to as preventing local list merging, `DisableLocalAdminMerge` is enabled so that settings configured on a device aren't merged with organization policies, such as settings in Intune. For more information, see [DisableLocalAdminMerge](/windows/client-management/mdm/defender-csp). |
-| Device management | Devices are managed in Intune or co-managed in Intune with Configuration Manager. |
+| Device management | Devices are either managed in Intune, or are [co-managed with Intune and Configuration Manager](/mem/configmgr/comanage/overview). Sense must be enabled, and [tenant attach](/mem/configmgr/tenant-attach/) is not used. |
 | Antivirus exclusions | Microsoft Defender Antivirus exclusions are managed in Microsoft Intune. For more information, see [Settings for Microsoft Defender Antivirus policy in Microsoft Intune for Windows devices](/mem/intune/protect/antivirus-microsoft-defender-settings-windows). <br/><br/>Functionality to protect Microsoft Defender Antivirus exclusions is enabled on devices. For more information, see [How to determine whether antivirus exclusions are tamper protected on a Windows device](#how-to-determine-whether-antivirus-exclusions-are-tamper-protected-on-a-windows-device). |
 
 > [!TIP]
@@ -102,13 +102,17 @@ You can use a registry key to determine whether the functionality to protect Mic
 
 1. On a Windows device open Registry Editor. (Read-only mode is fine; you're not editing the registry key.)
 
-2. To confirm that the device is managed by Intune only, go to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender` (or `HKLM\SOFTWARE\Microsoft\Windows Defender`), and look for a `REG_DWORD` entry called **ManagedDefenderProductType**. 
+2. To confirm that the device is managed by Intune or co-managed by Intune and Configuration Manager, go to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender` (or `HKLM\SOFTWARE\Microsoft\Windows Defender`), and look for a `REG_DWORD` entry called `ManagedDefenderProductType`. 
 
-   - If **ManagedDefenderProductType** has a value of `6`, then the device is managed by Intune only (*this value indicates that exclusions are tamper protected*).
-   - If **ManagedDefenderProductType** has a value of `7`, then the device is co-managed, such as by Intune and Configuration Manager (*this value indicates that exclusions are tamper protected*).
-   - If **ManagedDefenderProductType** doesn't have a value of `6` or `7`, then the device isn't managed by Intune or co-managed with Intune and Configuration Manager. (*In this case, exclusions aren't tamper protected*.)
+   - If `ManagedDefenderProductType` has a value of `6`, then the device is managed by Intune only (*this value indicates that exclusions are tamper protected*).
+   - If `ManagedDefenderProductType` has a value of `7`, then the device is co-managed, such as by Intune and Configuration Manager (*this value indicates that exclusions are tamper protected*).
+   - If `ManagedDefenderProductType` doesn't have a value of `6` or `7`, then the device is neither managed by Intune nor co-managed with Intune and Configuration Manager. (*In this case, exclusions aren't tamper protected*.)
 
-3. To confirm that tamper protection is deployed and that exclusions are tamper protected, go to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Features` (or `HKLM\SOFTWARE\Microsoft\Windows Defender\Features`), and look for a `REG_DWORD` entry called `TPExclusions`.
+3. To confirm that Sense is enabled, go to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SenseCM` (or `HKLM\SOFTWARE\Microsoft\SenseCM`), and look for a `REG_DWORD` entry called `EnrollmentStatus`.
+
+   - If `EnrollmentStatus` has a value of `4`, then Sense is enabled.
+
+4. To confirm that tamper protection is deployed and that exclusions are tamper protected, go to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Features` (or `HKLM\SOFTWARE\Microsoft\Windows Defender\Features`), and look for a `REG_DWORD` entry called `TPExclusions`.
 
    - If `TPExclusions` has a value of `1`, then all required conditions are met, and the new functionality to protect exclusions is enabled on the device. In this case, exclusions are tamper protected. 
    - If `TPExclusions` has a value of `0`, then tamper protection isn't currently protecting exclusions on the device. (*If you meet all the requirements and this state seems incorrect, contact support*.)
