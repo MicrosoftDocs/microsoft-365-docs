@@ -34,19 +34,15 @@ This article describes how to migrate (reonboard) devices that are currently onb
 
 In most cases, full device offboarding isn't required when reonboarding. You can run the updated onboarding package and reboot your device to switch connectivity over. For details on each operating system, see LINK.
 
->[!IMPORTANT]
->For migrating devices already onboarded to Defender for Endpoint: 
->-	Offboarding is not required. You can simply run the updated onboarding package using instructions in the preceeding section and reboot the device (Windows) or restart the service (macOS and Linux).
->-	A device reboot is required for connectivity to switch from using standard to streamlined connectivity (for Windows and macOS). Otherwise, reonboarding will be incomplete.
-
->[!IMPORTANT]
->Preview limitiations and known issues: <br>
->- For device migrations (reonboarding): Offboarding is not required to switch over to streamlined connectivity method. Once the updated onboarding package is run, a full device reboot is required for  Windows devices and a service restart for macOS and Linux. For more information, see the details below. <br>
->- Windows 10 versions 1607, 1703, 1709, and 1803 do not support reonboarding. You will need to offboard first and onboard using the updated package. These versions also require a longer URL list. 
+> [!IMPORTANT]
+> Preview limitations and known issues: <br>
+> - For device migrations (reonboarding): Offboarding is not required to switch over to streamlined connectivity method. Once the updated onboarding package is run, a full device reboot is required for Windows devices and a service restart for macOS and Linux. For more information, see the details below. <br>
+> - Windows 10 versions 1607, 1703, 1709, and 1803 do not support reonboarding. Offboard first and then onboard using the updated package. These versions also require a longer URL list. 
+> - Devices running the MMA agent are not supported and must continue using the MMA onboarding method.
 
 ## Migrating devices using the streamlined method
 
-The following table lists the available tools based on the endpoint that you need to onboard.
+The following table lists the available tools based on the device's operating system.
 
 Migration recommendation:
 
