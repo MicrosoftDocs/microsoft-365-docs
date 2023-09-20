@@ -191,7 +191,7 @@ The following configuration settings are recommended:
 
 #### Exclusions
 
-Please review the FXLogix antivirus exclusion recommendations here: [Prerequisites for FSLogix](/fslogix/overview-prerequisites#file--folder-exclusions).
+- Please review the FXLogix antivirus exclusion recommendations here: [Prerequisites for FSLogix](/fslogix/overview-prerequisites#file--folder-exclusions).
 
 #### Real-time Protection
 
@@ -256,4 +256,5 @@ Please review the FXLogix antivirus exclusion recommendations here: [Prerequisit
 - [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md)
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+
 
