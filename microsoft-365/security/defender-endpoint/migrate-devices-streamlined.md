@@ -32,7 +32,7 @@ ms.date: 09/20/2023
 
 This article describes how to migrate (reonboard) devices that are currently onboarded to Defender for Endpoint to use the streamlined device connectivity method. For more information on streamlined connectivity, see [Onboarding devices using streamlined connectivity](configure-device-connectivity.md). Devices must meet the prerequisites listed in [Streamlined connectivity](configure-device-connectivity.md#prerequisites). 
 
-In most cases, a full device offboarding isn't necessary when reonboarding. For details on each OS, see the preceding section. You are able to run the updated onboarding package and reboot your device to switch connectivity over. 
+In most cases, full device offboarding isn't required when reonboarding. You can run the updated onboarding package and reboot your device to switch connectivity over. For details on each operating system, see LINK.
 
 >[!IMPORTANT]
 >For migrating devices already onboarded to Defender for Endpoint: 
