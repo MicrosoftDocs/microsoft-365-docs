@@ -180,7 +180,6 @@ For general instructions on onboarding to Defender for Endpoint on Linux, see [M
 Use the guidance in [Deploy Microsoft Defender for Endpoint on Linux manually](linux-install-manually.md).
 
 After completing the steps, you must either reboot the device or restart the service using `sudo systemctl restart mdatp`.
-
  
 Device connectivity to streamlined approach doesn't start if you don't reboot the device.
 
@@ -209,7 +208,6 @@ For macOS and Linux, you can use the following methods:
 - Tracking with advanced hunting in Microsoft 365 Defender
 - Run tests to confirm connectivity with Defender for Endpoint services
 
-
 ### Use Defender for Endpoint Client Analyzer (Windows) to validate connectivity after onboarding for migrated endpoints
 
 Once onboarded, run the MDE Client Analyzer to confirm your device is connecting to the appropriate updated URLs.
@@ -219,7 +217,6 @@ Download the Microsoft Defender for Endpoint Client Analyzer tool where Defender
 You can follow the same instructions as in [Verify client connectivity to Microsoft Defender for Endpoint service](verify-connectivity.md).  The script automatically uses the onboarding package configured on the device (should be streamlined version) to test connectivity. 
 
 Ensure connectivity is established with the appropriate URLs. 
-
 
 ### Tracking with advanced hunting in Microsoft 365 Defender
 
@@ -243,21 +240,17 @@ For devices that haven't yet attempted to reonboard, the value remains blank.
 
 For more information on using advanced hunting in Microsoft 365 Defender, see [Overview - Advanced hunting](/microsoft-365/security/defender/advanced-hunting-overview).
 
-
 ### Tracking locally on a device through Windows Event Viewer
 
 You can use Windows Event Viewer’s SENSE operational log to locally validate connections with the new streamlined approach. SENSE Event ID 4 tracks successful EDR connections.
 
-
-pen the Defender for Endpoint service event log using the following steps:
+Open the Defender for Endpoint service event log using the following steps:
 
 1. On the Windows menu, select **Start**, then type **Event Viewer**. Then select **Event Viewer**.
 
 2. In the log list, under **Log Summary**, scroll down until you see **Microsoft-Windows-SENSE/Operational**. Double-click the item to open the log. 
 
-
 	:::image type="content" source="images/log-summary-event-viewer.png" alt-text="Screenshot of Event Viewer with log summary section":::
-
 
 	You can also access the log by expanding**Applications and Services Logs>Microsoft>Windows>SENSE** and select **Operational**. 
 
@@ -311,9 +304,9 @@ For Auto-IR testing labs, navigate to  **Microsoft 365 Defender > Evaluations 
 	"%ProgramFiles%\Windows Defender\MpCmdRun.exe" -ValidateMapsConnection
 	```
 
-  >[!NOTE]
+  > [!NOTE]
   > This command will only work on Windows 10, version 1703 or higher, or Windows 11. 
-  >For more information, see [Manage Microsoft Defender Antivirus with the mpcmdrun.exe commandline tool](command-line-arguments-microsoft-defender-antivirus.md). 
+  > For more information, see [Manage Microsoft Defender Antivirus with the mpcmdrun.exe commandline tool](command-line-arguments-microsoft-defender-antivirus.md). 
 
 #### Test Block at First Sight 
 
@@ -337,13 +330,11 @@ Follow instructions in [Microsoft Defender SmartScreen Demo (msft.net)](https://
 
 After the command runs, the Command Prompt window closes automatically. If successful, the detection test is marked as completed.
 
-
 For macOS and Linux, you can use the following methods:
 
 - MDATP connectivity tests
 - Tracking with advanced hunting in Microsoft 365 Defender
 - Run tests to confirm connectivity with Defender for Endpoint services
- 
 
 ### MDATP connectivity test (macOS and Linux)
 
@@ -354,7 +345,6 @@ Run `mdatp health –details edr` to confirm `edr_partner_geo_location` is avail
 Run mdatp connectivity test. Ensure the streamlined URL pattern is present. You should expect two for '\storage', one for '\mdav', one for '\xplat', and one for '/packages'.
 
 For example: `https:mdav.us.endpoint.security.microsoft/com/storage`
-
 
 ### Tracking with advanced hunting in Microsoft 365 Defender
 
