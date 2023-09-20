@@ -89,8 +89,8 @@ If your organization has [exclusions defined for Microsoft Defender Antivirus](c
 | Condition | Criteria |
 |---|---|
 | Microsoft Defender platform | Devices are running Microsoft Defender platform `4.18.2211.5` or later. For more information, see [Monthly platform and engine versions](microsoft-defender-antivirus-updates.md#monthly-platform-and-engine-versions). |
-| `DisableLocalAdminMerge` setting | This settings is also known as preventing local list merging. `DisableLocalAdminMerge` is enabled so that settings configured on a device aren't merged with organization policies, such as settings in Intune. For more information, see [DisableLocalAdminMerge](/windows/client-management/mdm/defender-csp). |
-| Device management | Devices are either managed in Intune, or are [co-managed with Intune and Configuration Manager](/mem/configmgr/comanage/overview). Sense must be enabled, and [tenant attach](/mem/configmgr/tenant-attach/) is not used. |
+| `DisableLocalAdminMerge` setting | This setting is also known as preventing local list merging. `DisableLocalAdminMerge` is enabled so that settings configured on a device aren't merged with organization policies, such as settings in Intune. For more information, see [DisableLocalAdminMerge](/windows/client-management/mdm/defender-csp). |
+| Device management | Devices are either managed in Intune, or are [comanaged with Intune and Configuration Manager](/mem/configmgr/comanage/overview). Sense must be enabled, and [tenant attach](/mem/configmgr/tenant-attach/) isn't used. |
 | Antivirus exclusions | Microsoft Defender Antivirus exclusions are managed in Microsoft Intune. For more information, see [Settings for Microsoft Defender Antivirus policy in Microsoft Intune for Windows devices](/mem/intune/protect/antivirus-microsoft-defender-settings-windows). <br/><br/>Functionality to protect Microsoft Defender Antivirus exclusions is enabled on devices. For more information, see [How to determine whether antivirus exclusions are tamper protected on a Windows device](#how-to-determine-whether-antivirus-exclusions-are-tamper-protected-on-a-windows-device). |
 
 > [!TIP]
@@ -102,11 +102,11 @@ You can use a registry key to determine whether the functionality to protect Mic
 
 1. On a Windows device open Registry Editor. (Read-only mode is fine; you're not editing the registry key.)
 
-2. To confirm that the device is managed by Intune or co-managed by Intune and Configuration Manager, go to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender` (or `HKLM\SOFTWARE\Microsoft\Windows Defender`), and look for a `REG_DWORD` entry called `ManagedDefenderProductType`. 
+2. To confirm that the device is managed by Intune or comanaged by Intune and Configuration Manager, go to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender` (or `HKLM\SOFTWARE\Microsoft\Windows Defender`), and look for a `REG_DWORD` entry called `ManagedDefenderProductType`. 
 
    - If `ManagedDefenderProductType` has a value of `6`, then the device is managed by Intune only (*this value indicates that exclusions are tamper protected*).
-   - If `ManagedDefenderProductType` has a value of `7`, then the device is co-managed by Intune and Configuration Manager (*this value indicates that exclusions are tamper protected*).
-   - If `ManagedDefenderProductType` doesn't have a value of `6` or `7`, then the device is neither managed by Intune nor co-managed with Intune and Configuration Manager. (*In this case, exclusions aren't tamper protected*.)
+   - If `ManagedDefenderProductType` has a value of `7`, then the device is comanaged by Intune and Configuration Manager (*this value indicates that exclusions are tamper protected*).
+   - If `ManagedDefenderProductType` doesn't have a value of `6` or `7`, then the device is not managed by Intune or comanaged with Intune and Configuration Manager. (*In this case, exclusions aren't tamper protected*.)
 
 3. To confirm that Sense is enabled, go to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SenseCM` (or `HKLM\SOFTWARE\Microsoft\SenseCM`), and look for a `REG_DWORD` entry called `EnrollmentStatus`.
 
