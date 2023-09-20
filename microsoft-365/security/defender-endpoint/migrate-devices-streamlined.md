@@ -175,8 +175,8 @@ Requires Defender for Endpoint version 101.23052.0009+
 
 For general instructions on onboarding to Defender for Endpoint on Linux, see [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md).
 
-
 ### Local script
+
 Use the guidance in [Deploy Microsoft Defender for Endpoint on Linux manually](linux-install-manually.md).
 
 After completing the steps, you must either reboot the device or restart the service using `sudo systemctl restart mdatp`.
