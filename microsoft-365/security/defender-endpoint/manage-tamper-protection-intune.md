@@ -33,7 +33,7 @@ search.appverid: met150
 **Platforms**
 - Windows
 
-[Tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) helps protect certain [security settings](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on), such as virus and threat protection, from being disabled or changed. If you're part of your organization's security team, and you're using [Microsoft Intune](/mem/intune/fundamentals/what-is-intune), you can manage tamper protection for your organization in the [Intune admin center](https://endpoint.microsoft.com). You can also use [co-management with Intune and Configuration Manager](/mem/configmgr/comanage/overview) to manage tamper protection (this method does not use tenant attach), provided certain requirements are met.
+[Tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) helps protect certain [security settings](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on), such as virus and threat protection, from being disabled or changed. If you're part of your organization's security team, and you're using [Microsoft Intune](/mem/intune/fundamentals/what-is-intune), you can manage tamper protection for your organization in the [Intune admin center](https://endpoint.microsoft.com). You can manage tamper protection using [co-management with Intune and Configuration Manager](/mem/configmgr/comanage/overview), provided certain requirements are met. (Note that this method does not use [tenant attach](/mem/configmgr/tenant-attach/)).)
 
 Using Intune or co-management (with Intune and Configuration Manager), you can:
 
