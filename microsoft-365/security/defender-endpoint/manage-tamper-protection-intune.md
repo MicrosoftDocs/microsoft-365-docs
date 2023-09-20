@@ -111,6 +111,7 @@ You can use a registry key to determine whether the functionality to protect Mic
 3. To confirm that Sense is enabled, go to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SenseCM` (or `HKLM\SOFTWARE\Microsoft\SenseCM`), and look for a `REG_DWORD` entry called `EnrollmentStatus`.
 
    - If `EnrollmentStatus` has a value of `4`, then Sense is enabled, and the requirement is met.
+   - If `EnrollmentStatus` has a value that isn't `4`, then the requirement for exclusions to be tamper protected is not met.
 
 4. To confirm that tamper protection is deployed and that exclusions are tamper protected, go to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Features` (or `HKLM\SOFTWARE\Microsoft\Windows Defender\Features`), and look for a `REG_DWORD` entry called `TPExclusions`.
 
