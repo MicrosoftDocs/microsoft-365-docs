@@ -5,7 +5,7 @@ manager: dansimp
 description: Turn tamper protection on or off for your organization in Microsoft Intune.
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
-ms.date: 09/05/2023
+ms.date: 09/20/2023
 audience: ITPro
 ms.topic: how-to
 author: denisebmsft
@@ -33,7 +33,7 @@ search.appverid: met150
 **Platforms**
 - Windows
 
-[Tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) helps protect certain [security settings](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on), such as virus and threat protection, from being disabled or changed. If you're part of your organization's security team, and you're using [Microsoft Intune](/mem/intune/fundamentals/what-is-intune), you can manage tamper protection for your organization in the [Intune admin center](https://endpoint.microsoft.com). You can also use [co-management with Intune and Configuration Manager](/mem/configmgr/comanage/overview) to manage tamper protection.
+[Tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) helps protect certain [security settings](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on), such as virus and threat protection, from being disabled or changed. If you're part of your organization's security team, and you're using [Microsoft Intune](/mem/intune/fundamentals/what-is-intune), you can manage tamper protection for your organization in the [Intune admin center](https://endpoint.microsoft.com). You can also use [co-management with Intune and Configuration Manager](/mem/configmgr/comanage/overview) to manage tamper protection (this method does not use tenant attach), provided certain requirements are met.
 
 Using Intune or co-management (with Intune and Configuration Manager), you can:
 
