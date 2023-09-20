@@ -94,7 +94,7 @@ Follow the guidance in [Configuration Manager](/mem/configmgr/protect/deploy-use
 
 ### VDI
 
-Use the guidance in [Onboard non-persistent virtual desktop infrastructure (VDI) devices](/microsoft-365/security/defender-endpoint/configure-endpoints-vdi). After completing the steps, you must then restart the device. Device connectivity to streamlined approach won't start if you don't reboot the device.
+Use the guidance in [Onboard non-persistent virtual desktop infrastructure (VDI) devices](/microsoft-365/security/defender-endpoint/configure-endpoints-vdi). After completing the steps, you must restart the device for device connectivity to switch over.
 
 
 
