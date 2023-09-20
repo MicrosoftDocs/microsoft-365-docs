@@ -252,7 +252,6 @@ Open the Defender for Endpoint service event log using the following steps:
 > Events recorded by the service will appear in the log. <br>
 > For more information, see [Review events and error using Event Viewer](event-error-codes.md).
 
-
 ### Run tests to confirm connectivity with Defender for Endpoint services  
 
 Once the device is onboarded to Defender for Endpoint, validate that it's continuing to appear in Device Inventory. The DeviceID should remain the same.
@@ -327,28 +326,12 @@ For example: `https:mdav.us.endpoint.security.microsoft/com/storage`
 
 ### Tracking with advanced hunting in Microsoft 365 Defender
 
-You can use advanced hunting in Microsoft 365 Defender portal to view the connectivity type status. 
-
-This information is found in the DeviceInfo table under the "ConnectivityType" column:
-
-   **Column Name:** ConnectivityType
-
-   **Possible Values:** Streamlined, Standard, *blank* 
-
-   **Data type:** string
-
-   **Description:** Type of connectivity from the device to the cloud
-
-Once a device is migrated to use the streamlined method and the device establishes successful communication with the EDR command & control channel, the value is represented as "streamlined".
-
-If you move the device back to the regular method, the value is "standard".
-
-For devices that haven't yet attempted to reonboard, the value remains blank. 
-
-For more information on using advanced hunting in Microsoft 365 Defender, see [Overview - Advanced hunting](/microsoft-365/security/defender/advanced-hunting-overview).
+Follow the same instructions as for Windows.
 
 ### Use Defender for Endpoint Client Analyzer (cross-platform) to validate connectivity post-onboarding for newly migrated endpoints
 
 Download and run the client analyzer for macOS or Linux. For more information, see [Download and run the client analyzer](download-client-analyzer.md).
 
-Use the `–connectivity` switch to test with either an onboarding script or specific tenant geo-location.
+1. Run `mdeclientanalyzer.cmd -o <path to cmd file>` from within the MDEClientAnalyzer folder. The command uses parameters from the onboarding package to test connectivity. 
+
+2.	Run `mdeclientanalyzer.cmd -g <GW_US, GW_UK, GW_EU>` (where parameter is of GW_US, GW_EU, GW_UK). GW refers to the streamlined option. Run with applicable tenant geo.
