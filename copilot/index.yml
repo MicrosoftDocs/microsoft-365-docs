@@ -34,7 +34,7 @@ additionalContent:
         # Card
         - title: Setup
           summary: Get started with Microsoft 365 Copilot in the Microsoft 365 Admin Center.
-          url: /microsoft-365/admin/copilot/m365-copilot-setup/
+          url: m365-copilot-setup.md
         # Card
         - title: Enable users
           summary: Learn about the steps to deploy Microsoft 365 Copilot. 
@@ -43,6 +43,10 @@ additionalContent:
         - title: Data, Privacy, and Security for Microsoft 365 Copilot
           summary: Learn how Microsoft 365 Copilot uses data and how it stores and protects that data. 
           url: /deployoffice/privacy/microsoft-365-copilot
+        # Card
+        - title: End user help and learning for Microsoft 365 Copilot
+          summary: Get your users up to speed with these articles about how to use Copilot with the apps in Microsoft 365.
+          url: https://support.microsoft.com/copilot
     - title: Learn about Microsoft 365 Copilot # < 60 chars (Optional; Remove if not applicable.)
       items:
         # Card
