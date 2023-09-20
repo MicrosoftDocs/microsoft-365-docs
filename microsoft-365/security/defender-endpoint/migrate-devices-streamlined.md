@@ -106,7 +106,8 @@ See [Prerequisites](configure-device-connectivity.md#prerequisites).
 
 
 ### Microsoft Defender for Cloud
-Streamlined connectivity doesn't support onboarding through Microsoft Defender for Cloud at this time. 
+
+The streamlined connectivity method is not currently supported through Microsoft Defender for Cloud. 
 
 
 ### Group policy
