@@ -22,7 +22,7 @@ description: Learn about Microsoft 365 Archive.
 > [!NOTE]
 > This feature is currently in limited preview and subject to change. Before you begin, read the [Microsoft 365 preview terms and conditions](archive-preview-terms.md).
 
-In addition to this overview, the documentation for the preview of Microsoft 365 Archive includes the following articles.
+In addition to this overview, the documentation for the preview includes the following articles.
 
 |Article  |Description  |
 |---------|---------|
