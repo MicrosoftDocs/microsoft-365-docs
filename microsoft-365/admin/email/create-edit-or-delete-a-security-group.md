@@ -21,7 +21,7 @@ ms.custom:
 - AdminTemplateSet
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
-description: "Learn to create, edit,or delete a security group."
+description: "Learn to create, edit, or delete a security group."
 ---
 
 # Create, edit, or delete a security group in the Microsoft 365 admin center
