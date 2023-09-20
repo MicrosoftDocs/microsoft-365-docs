@@ -22,14 +22,14 @@ description: Learn about Microsoft 365 Archive.
 > [!NOTE]
 > This feature is currently in limited preview and subject to change. Before you begin, read the [Microsoft 365 preview terms and conditions](archive-preview-terms.md).
 
-In addition to this overview, the documentation for this preview of Microsoft 365 Archive includes the following articles.
+In addition to this overview, the documentation for the preview of Microsoft 365 Archive includes the following articles.
 
 |Article  |Description  |
 |---------|---------|
-|Set up Microsoft 365 Archive    | Learn how to set up and configure Microsoft 365 Archive (Preview), including required licensing, permissions, pay-as-you-go billing, and how to turn on the service.        |
-|Manage Microsoft 365 Archive   | Learn how to archive and manage SharePoint sites, how to reactivate archived sites, and about the various archive states.        |
-|Compliance features in Microsoft 365 Archive    | Learn about durability, security, geo residency, and other compliance considerations.         |
-|End user experience for Microsoft 365 Archive     | Learn about how an end user might experience archived sites, and some of the options an admin use to help the user.         |
+|Set up Microsoft 365 Archive (Preview)   | Learn how to set up and configure Microsoft 365 Archive, including required licensing, permissions, pay-as-you-go billing, and how to turn on the service.        |
+|Manage Microsoft 365 Archive (Preview)   | Learn how to archive and manage SharePoint sites, how to reactivate archived sites, and about the various archive states.        |
+|Compliance features in Microsoft 365 Archive (Preview)    | Learn about durability, security, geo residency, and other compliance considerations.         |
+|End user experience for Microsoft 365 Archive (Preview)    | Learn about how an end user might experience archived sites, and some of the options an admin can use to help the user find information.         |
 
 ## Introduction
 
