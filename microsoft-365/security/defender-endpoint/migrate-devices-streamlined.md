@@ -36,7 +36,7 @@ In most cases, full device offboarding isn't required when reonboarding. You can
 
 > [!IMPORTANT]
 > Preview limitations and known issues: <br>
-> - For device migrations (reonboarding): Offboarding is not required to switch over to streamlined connectivity method. Once the updated onboarding package is run, a full device reboot is required for Windows devices and a service restart for macOS and Linux. For more information, see the details below. <br>
+> - For device migrations (reonboarding): Offboarding is not required to switch over to streamlined connectivity method. Once the updated onboarding package is run, a full device reboot is required for Windows devices and a service restart for macOS and Linux. For more information, see the details included in this article. <br>
 > - Windows 10 versions 1607, 1703, 1709, and 1803 do not support reonboarding. Offboard first and then onboard using the updated package. These versions also require a longer URL list. 
 > - Devices running the MMA agent are not supported and must continue using the MMA onboarding method.
 
@@ -94,7 +94,7 @@ Follow the guidance in [Configuration Manager](/mem/configmgr/protect/deploy-use
 
 ### VDI
 
-Use the guidance in [Onboard non-persistent virtual desktop infrastructure (VDI) devices](/microsoft-365/security/defender-endpoint/configure-endpoints-vdi). After completing the steps, you must restart the device for device connectivity to switch over.
+Use the guidance in [Onboard nonpersistent virtual desktop infrastructure (VDI) devices](/microsoft-365/security/defender-endpoint/configure-endpoints-vdi). After completing the steps, you must restart the device for device connectivity to switch over.
 
 ### [**Windows Server**](#tab/Windowsserver)
 
@@ -106,7 +106,7 @@ See [Prerequisites](configure-device-connectivity.md#prerequisites).
 
 ### Microsoft Defender for Cloud
 
-The streamlined connectivity method is not currently supported through Microsoft Defender for Cloud. 
+The streamlined connectivity method isn't currently supported through Microsoft Defender for Cloud. 
 
 ### Microsoft Configuration Manager 
 
@@ -118,7 +118,7 @@ Use the guidance in [Group policy](configure-endpoints-gp.md). After completing 
 
 ### VDI
 
-Use the guidance in [Onboard non-persistent virtual desktop infrastructure (VDI) devices](/microsoft-365/security/defender-endpoint/configure-endpoints-vdi). After completing the steps, you must restart the device for device connectivity to switch over.
+Use the guidance in [Onboard nonpersistent virtual desktop infrastructure (VDI) devices](/microsoft-365/security/defender-endpoint/configure-endpoints-vdi). After completing the steps, you must restart the device for device connectivity to switch over.
 
 
 ### [**macOS**](#tab/macOS)
@@ -137,11 +137,11 @@ Use the guidance in [Manual deployment for Microsoft Defender for Endpoint on ma
 
 After completing the steps, you must either reboot the device or restart the service. 
 
-Device connectivity to the streamlined approach won't start until you reboot the device or restart the service.
+Device connectivity to the streamlined approach doesn't start until you reboot the device or restart the service.
 
 ### Microsoft Intune
 
-1. In Microsoft Intune, create a new onboarding policy using Custom Configuration profile. Do not assign it yet. Follow the instructions under [Intune-based deployment for Microsoft Defender for Endpoint on Mac](/microsoft-365/security/defender-endpoint/mac-install-with-intune). 
+1. In Microsoft Intune, create a new onboarding policy using Custom Configuration profile. Don't assign it yet. Follow the instructions under [Intune-based deployment for Microsoft Defender for Endpoint on Mac](/microsoft-365/security/defender-endpoint/mac-install-with-intune). 
 
 2. Exclude the macOS device you're reonboarding from its existing onboarding policy. To learn more about excluding groups from policy assignments, see [Exclude groups from a policy assignment](/mem/intune/configuration/device-profile-assign#exclude-groups-from-a-policy-assignment).
 
@@ -239,7 +239,7 @@ Once a device is migrated to use the streamlined method and the device establish
 
 If you move the device back to the regular method, the value is *standard*.
 
-For devices that have not yet attempted to reonboard, the value will remain blank. 
+For devices that haven't yet attempted to reonboard, the value remains blank. 
 
 For more information on using advanced hunting in Microsoft 365 Defender, see [Overview - Advanced hunting](/microsoft-365/security/defender/advanced-hunting-overview).
 
@@ -271,7 +271,7 @@ pen the Defender for Endpoint service event log using the following steps:
 	</EventData> 
 	```
 
-4. Message1 contains the contacted URL. Confirm the event includes the streamlined URL (endpoint.security.microsoft,com).
+4. Message1 contains the contacted URL. Confirm the event includes the streamlined URL (endpoint.security.microsoft, com).
 
 5. Event ID 5 tracks errors if applicable. 
 
@@ -283,7 +283,7 @@ pen the Defender for Endpoint service event log using the following steps:
 
 ### Run tests to confirm connectivity with Defender for Endpoint services  
 
-Once the device is onboarded to Defender for Endpoint, validate that it is continuing to appear in Device Inventory. The DeviceID should remain the same.
+Once the device is onboarded to Defender for Endpoint, validate that it's continuing to appear in Device Inventory. The DeviceID should remain the same.
 
 Check the Device Page Timeline tab to confirm events are flowing from the device. 
 
@@ -297,7 +297,7 @@ Make sure to run a couple of basic commands post-connection to confirm connectiv
 
 Ensure that Automated investigation and response is working on your test device: [Configure automated investigation and response capabilities](/microsoft-365/security/defender/m365d-configure-auto-investigation-response).
 
-For AutoIR testing labs, navigate to  **Microsoft 365 Defender > Evaluations & Tutorials> Tutorials & Simulations > Tutorials>  Automated Investigation tutorials**.
+For Auto-IR testing labs, navigate to  **Microsoft 365 Defender > Evaluations & Tutorials> Tutorials & Simulations > Tutorials>  Automated Investigation tutorials**.
 
 #### Cloud-delivered protection 
 
@@ -349,7 +349,7 @@ For macOS and Linux, you can use the following methods:
 
 Run `mdatp health –details` to confirm simplified_connectivity: "enabled".
 
-Run `mdatp health –details edr` to confirm `edr_partner_geo_location` is available, The value should be `GW_<geo>` where 'geo' is your tenant’s geo-location.
+Run `mdatp health –details edr` to confirm `edr_partner_geo_location` is available. The value should be `GW_<geo>` where 'geo' is your tenant’s geo-location.
 
 Run mdatp connectivity test. Ensure the streamlined URL pattern is present. You should expect two for '\storage', one for '\mdav', one for '\xplat', and one for '/packages'.
 
@@ -370,16 +370,16 @@ This information is found in the DeviceInfo table under the "ConnectivityType" c
 
    **Description:** Type of connectivity from the device to the cloud
 
-Once a device is migrated to use the streamlined method and the device establishes successful communication with the EDR command & control channel, the value will be represented as "streamlined".
+Once a device is migrated to use the streamlined method and the device establishes successful communication with the EDR command & control channel, the value is represented as "streamlined".
 
-If you move the device back to the regular method, the value will be "standard".
+If you move the device back to the regular method, the value is "standard".
 
-For devices that have not yet attempted to reonboard, the value will remain blank. 
+For devices that haven't yet attempted to reonboard, the value remains blank. 
 
 For more information on using advanced hunting in Microsoft 365 Defender, see [Overview - Advanced hunting](/microsoft-365/security/defender/advanced-hunting-overview).
 
 ### Use Defender for Endpoint Client Analyzer (cross-platform) to validate connectivity post-onboarding for newly migrated endpoints
 
-Download and run the client analyzer for macOS or Linux. For rore information, see [Download and run the client analyzer](download-client-analyzer.md).
+Download and run the client analyzer for macOS or Linux. For more information, see [Download and run the client analyzer](download-client-analyzer.md).
 
 Use the `–connectivity` switch to test with either an onboarding script or specific tenant geo-location.
