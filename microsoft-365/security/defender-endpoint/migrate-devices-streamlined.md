@@ -182,7 +182,7 @@ Use the guidance in [Deploy Microsoft Defender for Endpoint on Linux manually](l
 After completing the steps, you must either reboot the device or restart the service using `sudo systemctl restart mdatp`.
 
  
-Device connectivity to streamlined approach won't start if you don't reboot the device.
+Device connectivity to streamlined approach doesn't start if you don't reboot the device.
 
 ### Third-party Linux deployment tools (Puppet, Ansible, Chef)
 
