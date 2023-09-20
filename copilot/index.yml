@@ -45,7 +45,7 @@ additionalContent:
           url: /deployoffice/privacy/microsoft-365-copilot
         # Card
         - title: End user help and learning for Microsoft 365 Copilot
-          summary: Get your users up to speed with these articles about how to use Copilot with the apps in Microsoft 365.
+          summary: End users can explore how Copilot with the apps in Microsoft 365 can help boost their productivity.
           url: https://support.microsoft.com/copilot
     - title: Learn about Microsoft 365 Copilot # < 60 chars (Optional; Remove if not applicable.)
       items:
