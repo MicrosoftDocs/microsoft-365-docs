@@ -114,7 +114,7 @@ Follow the guidance in [Configuration Manager](/mem/configmgr/protect/deploy-use
 
 ### Group policy
 
-Use the guidance in [Group policy](configure-endpoints-gp.md). After completing the steps, you must then restart the device. Device connectivity won't start if you don't restart the device.
+Use the guidance in [Group policy](configure-endpoints-gp.md). After completing the steps, you must restart the device for device connectivity to switch over.
 
 
 ### VDI
