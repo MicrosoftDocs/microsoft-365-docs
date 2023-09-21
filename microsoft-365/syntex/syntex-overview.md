@@ -149,6 +149,11 @@ Both structured and freeform models use Microsoft Power Apps AI Builder to creat
 
 ### Annotations
 
+Use the annotations feature in Syntex to add notes, comment, and collaborate with others on your content in document libraries. You can use annotations without modifying the original files, so the original records are preserved.
+
+[Learn more about using annotations in Microsoft Syntex.](annotations.md)
+
+<!---
 :::row:::
    :::column span="":::
       ![Image of generic annotations icon.](../media/content-understanding/annotation-image.png)
@@ -157,11 +162,16 @@ Both structured and freeform models use Microsoft Power Apps AI Builder to creat
       Use the annotations feature in Syntex to add notes, comment, and collaborate with others on your content in document libraries. You can use annotations without modifying the original files, so the original records are preserved.
    :::column-end:::
 :::row-end:::
+--->
 
-[Learn more about using annotations in Microsoft Syntex.](annotations.md)
 
 ### Content query
 
+The content query feature in Syntex lets you perform specific metadata-based queries on SharePoint document libraries. You can make faster, more precise queries based on specific metadata column values, rather than just searching for keywords.
+
+[Learn more about how to search for metadata in document libraries in Microsoft Syntex.](metadata-search.md)
+
+<!---
 :::row:::
    :::column span="3":::
       The content query feature in Syntex lets you perform specific metadata-based queries on SharePoint document libraries.
@@ -174,11 +184,15 @@ Both structured and freeform models use Microsoft Power Apps AI Builder to creat
 :::row-end:::
 
 This feature is useful when you have a specific piece of information you want to search for, such as when a document was last modified, a specific person associated with a file, or a specific file type.
-
-[Learn more about how to search for metadata in document libraries in Microsoft Syntex.](metadata-search.md)
+--->
 
 ### Content processing
 
+Syntex lets you build simple rules-driven actions in document libraries based on metadata. From a document library, you can create rules to automate tasks such as sending a notification when metadata changes in a file, when a new file is created in the library, or when files are moved or copied based on metadata extracted by Syntex models.
+
+[Learn more about content processing rules in Microsoft Syntex.](content-processing-overview.md)
+
+<!---
 :::row:::
    :::column span="":::
       ![Image of generic content processing icon.](../media/content-understanding/content-processing-image.png)
@@ -187,11 +201,21 @@ This feature is useful when you have a specific piece of information you want to
       Syntex lets you build simple rules-driven actions in document libraries based on metadata. From a document library, you can create rules to automate tasks such as sending a notification when metadata changes in a file, when a new file is created in the library, or when files are moved or copied based on metadata extracted by Syntex models.
    :::column-end:::
 :::row-end:::
+--->
 
-[Learn more about content processing rules in Microsoft Syntex.](content-processing-overview.md)
+### Solution accelerators
+
+SharePoint site templates for Microsoft Syntex are prebuilt, ready-to-deploy, and customizable. Use these templates to jumpstart a professional site to manage, process, and track the status of business documents in your organization.
+
+[Learn more about the contracts and accounts payable accelerators](site-templates.md)
 
 ### Content compliance
 
+Understanding your content allows for better compliance control and increases management and governance options for all your data. When content is properly tagged and labeled, you have better control over your data and can follow regulations more easily. Syntex helps you ensure compliance by using retention labels and sensitivity labels to manage your documents.
+
+Learn more about how to apply [retention labels](apply-a-retention-label-to-a-model.md) and [sensitivity labels](apply-a-sensitivity-label-to-a-model.md) to models in Microsoft Syntex.
+
+<!---
 :::row:::
    :::column span="3":::
       Understanding your content allows for better compliance control and increases management and governance options for all your data. When content is properly tagged and labeled, you have better control over your data and can follow regulations more easily. Syntex helps you ensure compliance by using retention labels and sensitivity labels to manage your documents.
@@ -200,11 +224,19 @@ This feature is useful when you have a specific piece of information you want to
       ![Image of generic compliance icon.](../media/content-understanding/compliance-image.png)
    :::column-end:::
 :::row-end:::
-
-Learn more about how to apply [retention labels](apply-a-retention-label-to-a-model.md) and [sensitivity labels](apply-a-sensitivity-label-to-a-model.md) to models in Microsoft Syntex.
+--->
 
 ### Premium taxonomy services
 
+Benefit from the following additional term store features for admins:
+
+- [SKOS-based term set import](import-term-set-skos.md), which lets you import a term set using a SKOS-based format.
+
+- [Pushing enterprise content types to a hub site](push-content-type-to-hub.md), which also adds them to the associated sites and any newly created lists or libraries.
+
+- [Term store reports](term-store-analytics.md), which provides you with insights into published term sets and their use across your organization.
+
+<!---
 :::row:::
    :::column span="":::
       ![Image of generic taxonomy icon.](../media/content-understanding/taxonomy-image.png)
@@ -213,12 +245,7 @@ Learn more about how to apply [retention labels](apply-a-retention-label-to-a-mo
       Having one or more Syntex licenses in your organization enables the following additional term store features for admins:<br><br>
    :::column-end:::
 :::row-end:::
-
-- [SKOS-based term set import](import-term-set-skos.md), which lets you import a term set using a SKOS-based format.
-
-- [Pushing enterprise content types to a hub site](push-content-type-to-hub.md), which also adds them to the associated sites and any newly created lists or libraries.
-
-- [Term store reports](term-store-analytics.md), which provides you with insights into published term sets and their use across your organization.
+--->
 
 <!---<br><br>
 > [!div class="nextstepaction"]
