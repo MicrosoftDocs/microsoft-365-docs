@@ -14,20 +14,22 @@ ms.collection:
     - m365initiative-syntex
 ms.localizationpriority:  medium
 ROBOTS: NOINDEX, NOFOLLOW
-description: Learn how to use the classification status column in a SharePoint document library with Microsoft Syntex.
+description: Learn how to use the processing status column in a SharePoint document library with Microsoft Syntex.
 ---
 
 # View the status of a file processed by Microsoft Syntex
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
-In a document library, the **Classification status** column lets you know the status of a file that is being processed by a model in Microsoft Syntex.
+In a document library, the **Processing status** column lets you know the status of a file that is being processed by a model in Microsoft Syntex.
 
 ![Screenshot of a document library showing the Classification status column.](../media/content-understanding/classification-status-column.png)
 
 The status shows you whether the processing of a file is in progress, completed, or wasn’t done due to an error with the file or the job. The status helps you know whether a file needs to be queued again for processing or if more investigation is required.  
 
-The following table describes the classification status values.
+The **Processing details** column provides more information about the processing status.
+
+The following table describes the processing status values.
 
 | Classification status | Description |
 | ------- | ------- 
@@ -37,4 +39,4 @@ The following table describes the classification status values.
 | Error | File can't be queued for processing (for example, the file isn't supported at all). |
 | [Empty] | No models have been applied to the library. |
 
-When a new model is applied to a library, the **Classification status** column is automatically added. However, the column won't be automatically added to libraries where a model has already been applied. You'll need to apply the model again to add the column.
+When a new model is applied to a library, the **Processing status** and the **Processing details** columns are automatically added. However, the columns won't be automatically added to libraries where a model has already been applied. You'll need to apply the model again to add the columns.
