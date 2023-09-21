@@ -145,8 +145,8 @@
                   href: manage-library-settings.md
                 - name: Choose a library view 
                   href: choose-library-view.md
-                - name: View classification status 
-                  href: classification-status.md
+                - name: View processing status 
+                  href: processing-status.md
                 - name: Analyze model usage
                   href: model-usage-analytics.md
 
