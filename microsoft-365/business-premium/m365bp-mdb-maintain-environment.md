@@ -17,6 +17,7 @@ ms.collection:
 - highpri
 - m365-security
 - tier1
+- essentials-manage
 ms.custom:
 - MiniMaven
 search.appverid:

@@ -17,6 +17,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - m365copilot
+- essentials-overview
 description: "Learn about how Microsoft 365 Copilot works."
 ---
 

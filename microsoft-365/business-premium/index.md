@@ -18,6 +18,8 @@ ms.collection:
 - highpri
 - m365-security
 - tier1
+- essentials-overview
+- essentials-get-started
 ms.custom:
 - MiniMaven
 - intro-overview
