@@ -103,8 +103,6 @@ landingContent:
         links:
           - text: Assessment tool
             url: adoption-assessment-tool.md
-          - text: Solution accelerators
-            url: site-templates.md
 
 # Card 6
   - title: Other features
@@ -117,6 +115,8 @@ landingContent:
             url: metadata-search.md
           - text: Content processing
             url: content-processing-overview.md
+          - text: Solution accelerators
+            url: site-templates.md
 
 
     # Card 7
