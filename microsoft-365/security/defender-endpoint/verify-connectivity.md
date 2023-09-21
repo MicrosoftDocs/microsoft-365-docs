@@ -19,7 +19,6 @@ ms.date: 09/19/2023
 
 # STEP 3: Verify client connectivity to Microsoft Defender for Endpoint service URLs
 
-
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
