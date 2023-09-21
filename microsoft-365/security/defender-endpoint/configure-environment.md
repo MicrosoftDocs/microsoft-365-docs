@@ -1,4 +1,4 @@
---
+---
 title: Configure your network environment to ensure connectivity with Defender for Endpoint service
 description: Learn how to configure your network environment to connect with the Defender for Endpoint service
 keywords: configure, proxy, internet, internet connectivity, settings, proxy settings, netsh, winhttp, proxy server
@@ -15,8 +15,8 @@ ms.collection:
 - tier1
 ms.topic: how-to
 ms.subservice: mde
-ms.date: 09/19/2023
---
+ms.date: 09/21/2023
+---
 
 
 # STEP 1: Configure your network environment to ensure connectivity with Defender for Endpoint service
