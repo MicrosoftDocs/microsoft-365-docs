@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.date: 09/06/2023
+ms.date: 09/21/2023
 ms.localizationpriority: medium
 ms.collection: 
 - M365-Campaigns
@@ -34,12 +34,11 @@ As you prepare your plan, you can organize the various tasks into two main categ
 | Task type | Sections |
 |---|---|
 | **[Security tasks](#security-tasks)** | [Daily security tasks](#daily-security-tasks) <br/>[Weekly security tasks](#weekly-security-tasks)<br/>[Monthly security tasks](#monthly-security-tasks)<br/>[Security tasks to perform as needed](#security-tasks-to-perform-as-needed) |
-| **[General admin tasks](#general-admin-tasks)** | [Admin center tasks](#admin-center-tasks)<br/>[Users, groups, and passwords](#users-groups-and-passwords)<br/>[Email and calendars](#email-and-calendars)<br/>[Devices](#devices)<br/>[Devices](#devices)<br/>[Subscriptions and billing](#subscriptions-and-billing) | 
+| **[General admin tasks](#general-admin-tasks)** | [Admin center tasks](#admin-center-tasks)<br/>[Users, groups, and passwords](#users-groups-and-passwords)<br/>[Email and calendars](#email-and-calendars)<br/>[Devices](#devices)<br/>[Subscriptions and billing](#subscriptions-and-billing) | 
 
 ## Security tasks
 
-Security tasks are typically performed by security administrators and security operators. 
-- [Learn more about admin roles](../admin/add-users/about-admin-roles.md)
+Security tasks are typically performed by security administrators and security operators. - [Learn more about admin roles](../admin/add-users/about-admin-roles.md)
 - [Assign security roles and permissions](../security/defender-business/mdb-roles-permissions.md)
 
 ### Daily security tasks
@@ -66,6 +65,7 @@ Security tasks are typically performed by security administrators and security o
 
 
 
+
 ---
 
 ### Weekly security tasks
@@ -83,6 +83,7 @@ Security tasks are typically performed by security administrators and security o
 |---------|---------|
 | **Monitor and improve your Secure Score** | Microsoft Secure Score is a measurement of your organization's security posture. Higher numbers indicate that fewer improvement actions are needed. By using Secure Score, you can: <br/>- Report on the current state of your organization's security posture.<br/>- Improve your security posture by providing discoverability, visibility, guidance, and control.<br/>- Compare with benchmarks and establish key performance indicators (KPIs).<br/><br/>To check your score, follow these steps:<br/><br/>1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane choose **Secure score**. <br/><br/>2. Review and make decisions about the remediations and actions in order to improve your overall Microsoft secure score. |
 | **Improve your Secure Score for devices** | Improve your security configuration by remediating issues using the security recommendations list. As you do so, your Microsoft Secure Score for Devices improves and your organization becomes more resilient against cybersecurity threats and vulnerabilities going forward. It's always worth the time it takes to review and improve your score.<br/><br/>To check your secure score, follow these steps: <br/><br/>1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane select **Secure score**.<br/><br/>2. From the **Microsoft Secure Score for Devices** card in the Defender Vulnerability Management dashboard, select one of the categories. A list of recommendations related to that category displays, along with recommendations.<br/><br/>3.Select an item on the list to display details related to the recommendation.<br/><br/>4. Select **Remediation options**.<br/><br/>5. Read the description to understand the context of the issue and what to do next. Choose a due date, add notes, and select **Export all remediation activity data to CSV** so you can attach it to an email for follow-up. A confirmation message tells you the remediation task has been created.<br/><br/>6. Send a follow-up email to your IT Administrator and allow for the time that you've allotted for the remediation to propagate in the system.<br/><br/>7. Return to the Microsoft Secure Score for Devices card on the dashboard. The number of security controls recommendations has decreased as a result of your actions.<br/><br/>8. Select **Security controls** to go back to the Security recommendations page. The item that you addressed isn't listed there anymore, which results in your Microsoft secure score improving. |
+
 
 
 
@@ -105,6 +106,7 @@ Security tasks are typically performed by security administrators and security o
 | **Run security reports** | Several reports are available in the Microsoft 365 Defender portal.<br/><br/>1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, select **Reports**.<br/><br/>2. Choose a report to review. Each report displays many pertinent categories for that report.<br/><br/>3. Select **View details** to see deeper information for each category.<br/><br/>4. Select the title of a particular threat to see details specific to it.|
 | **Run a simulation tutorial** | It's always a good idea to increase the security preparedness for you and your team through training. You can access simulation tutorials in the Microsoft 365 Defender portal. The tutorials cover several types of cyber threats. To get started, follow these steps:<br/><br/>1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Tutorials**.<<br/><br/>2. Read the walk-through for a tutorial you're interested in running, and then download the file, or copy the script needed to run the simulation according to the instructions. |
 | **Explore the Learning hub** | Use the Learning hub to increase your knowledge of cybersecurity threats and how to address them. We recommend exploring the resources that are offered, especially in the Microsoft 365 Defender and Endpoints sections.<br/><br/>1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Learning hub**.<br/><br/>2. Select an area, such as **Microsoft 365 Defender** or **Endpoints**.<br/><br/>3. Select an item to learn more about each concept. <br/><br/>Some resources in the Learning hub might cover functionality that isn't included in Defender for Business. For example, advanced hunting capabilities are included in enterprise subscriptions, such as Defender for Endpoint Plan 2 or Microsoft 365 Defender, but not in Defender for Business. [Compare security features in Microsoft 365 plans for small and medium-sized businesses](../security/defender-business/compare-mdb-m365-plans.md). |
+
 
 
 
@@ -137,6 +139,7 @@ Security tasks are typically performed by security administrators and security o
 | **Protect high-risk devices** | The overall risk assessment of a device is based on a combination of factors, such as the types and severity of active alerts on the device. As your security team resolves active alerts, approves remediation activities, and suppresses subsequent alerts, the risk level decreases. <br/><br/>See [Manage devices in Microsoft Defender for Business](../security/defender-business/mdb-manage-devices.md). |
 | **Onboard or offboard devices**  | As devices are replaced or retired, new devices are purchased, or your business needs change, you can onboard or offboard devices from Defender for Business. <br/><br/>See the following articles: <br/>- [Onboard devices to Microsoft Defender for Business](../security/defender-business/mdb-onboard-devices.md) <br/>- [Offboard a device from Microsoft Defender for Business](../security/defender-business/mdb-offboard-devices.md) |
 | **Remediate an item** | Defender for Business includes several [remediation actions](#remediation-actions-for-devices). Some actions are taken automatically, and others await approval by your security team.<br/><br/>1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, go to **Assets** > **Devices**.<br/><br/>2. Select a device, such as one with a high risk level or exposure level. A flyout pane opens and displays more information about alerts and incidents generated for that item.<br/><br/>3. On the flyout, view the information that is displayed. Select the ellipsis (...) to open a menu that lists available actions.<br/><br/>4. Select an available action. For example, you might choose **Run antivirus scan**, which will cause Microsoft Defender Antivirus to start a quick scan on the device. Or, you could select **Initiate Automated Investigation** to trigger an automated investigation on the device. |
+
 
 
 
