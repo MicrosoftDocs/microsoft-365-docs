@@ -35,6 +35,6 @@ The **Processing status** column shows you whether the processing of a file is i
 | Error | File can't be queued for processing (for example, the file isn't supported at all). |
 | [Empty] | No models have been applied to the library. |
 
-The **Processing details** column provides more information about the processing status, such as if a file format is not supported or if an image is too small.
+The **Processing details** column provides more information about the processing status, such as if a file format isn't supported or if an image is too small.
 
 When a new model is applied to a library, the **Processing status** and the **Processing details** columns are automatically added. However, the columns won't be automatically added to libraries where a model has already been applied. You'll need to apply the model again to add the columns.
