@@ -8,7 +8,7 @@ ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
   - NOCSH
-ms.date: 08/23/2023
+ms.date: 09/20/2023
 ms.reviewer: georgiah
 ms.custom:
   - it-pro
@@ -53,13 +53,19 @@ When a mailbox is migrated cross-tenant with this feature, only user-visible con
 > [!WARNING]
 > You must have purchased, or verified that you can purchase, cross-tenant user data migration licenses prior to the next steps. Migrations fail if this step hasn't been completed. Microsoft doesn't offer exceptions for this licensing requirement.
 
+If you do not have the proper license assigned to the user being migrated, the migration fails, and you receive an error that is similar to the following:
+
+> Error: CrossTenantMigrationWithoutLicensePermanentException: No license was found for the source recipient, '65c3c3ea-2b9a-44d0-a685-9bfe300f8c87', or the target recipient, '65c3c3ea-2b9a-44d0-a685-9bfe300f8c87'. A Cross-tenant User Data Migration license is requiredto move a mailbox between tenants.
+
 ## Preparing source and target tenants
 
 ### Prerequisites for source and target tenants
 
 Before starting, ensure that you have the necessary permissions to configure the Move Mailbox application in Azure, EXO Migration Endpoint, and the EXO Organization Relationship.
 
-Additionally, at least one mail-enabled security group in the source tenant is required. These groups are used to scope the list of mailboxes that can move from source tenant (or sometimes referred to as resource) to the target tenant. This scoping allows the source tenant administrator to restrict or scope the specific set of mailboxes that need to be moved, preventing unintended users from being migrated. Nested groups aren't supported.
+Additionally, at least one mail-enabled security group in the source tenant is required. These groups are used to scope the list of mailboxes that can move from source tenant (or sometimes referred to as resource) to the target tenant. This scoping allows the source tenant administrator to restrict or scope the specific set of mailboxes that need to be moved, preventing unintended users from being migrated.
+
+If you are migrating more than 10,000 users, we recommend creating multiple groups to contain the user list for best performance. While nested groups are supported, they are not recommended.
 
 You also need to communicate with your trusted partner company (with whom you'll be moving mailboxes) to obtain their Microsoft 365 tenant ID. This tenant ID is used in the **Organization Relationship DomainName** field.
 
@@ -133,7 +139,7 @@ Now that you've successfully created the migration application and secret, the n
 
 ### Grant consent to the application
 
-1. In the Azure Active Directory landing page, select **Enterprise applications** in the navigation pane; then find your migration app you created, select it, and then select **Permissions**.
+1. In the Azure Active Directory landing page, select **Enterprise applications** in the navigation pane; then find your migration app you created, select it, and then select **API Permissions**.
 
 2. Select **Grant admin consent for [your tenant]**. A new browser window opens.
 
@@ -168,8 +174,7 @@ Now that you've successfully created the migration application and secret, the n
    $AppId = "[Guid copied from the migrations app]"
    $Credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $AppId, (ConvertTo-SecureString -String "[this is your secret password you saved in the 
    previous steps]" -AsPlainText -Force)
-   New-MigrationEndpoint -RemoteServer outlook.office.com -RemoteTenant "contoso.onmicrosoft.com" -Credentials $Credential -ExchangeRemoteMove:$true -Name "[the name of your migration 
-   endpoint]" -ApplicationId $AppId
+   New-MigrationEndpoint -RemoteServer outlook.office.com -RemoteTenant "contoso.onmicrosoft.com" -Credentials $Credential -ExchangeRemoteMove:$true -Name "[the name of your migration endpoint]" -ApplicationId $AppId
    ```
 
 3. Create a new organization relationship object or edit your existing organization relationship object to your source tenant.
@@ -204,6 +209,9 @@ Now that you've successfully created the migration application and secret, the n
 4. Create a new organization relationship object or edit your existing organization relationship object to your target (destination) tenant in Exchange Online PowerShell:
 
    ```PowerShell
+   # Enable customization if tenant is dehydrated
+   $dehydrated=Get-OrganizationConfig | select isdehydrated
+   if ($dehydrated.isdehydrated -eq $true) {Enable-OrganizationCustomization}
    $targetTenantId="[tenant id of your trusted partner, where the mailboxes are being moved to]"
    $appId="[application id of the mailbox migration app you consented to]"
    $scope="[name of the mail enabled security group that contains the list of users who are allowed to migrate]"
@@ -212,7 +220,7 @@ Now that you've successfully created the migration application and secret, the n
    $existingOrgRel = $orgrels | ?{$_.DomainNames -like $targetTenantId}
    If ($null -ne $existingOrgRel)
    {
-       Set-OrganizationRelationship $existingOrgRel.Name -Enabled:$true -MailboxMoveEnabled:$true -MailboxMoveCapability RemoteOutbound -OAuthApplicationId $appId - MailboxMovePublishedScopes $scope
+       Set-OrganizationRelationship $existingOrgRel.Name -Enabled:$true -MailboxMoveEnabled:$true -MailboxMoveCapability RemoteOutbound -OAuthApplicationId $appId -MailboxMovePublishedScopes $scope
    }
    If ($null -eq $existingOrgRel)
    {
