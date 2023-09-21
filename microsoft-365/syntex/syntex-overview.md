@@ -13,6 +13,7 @@ search.appverid:
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
+    - essentials-overview
 ms.localizationpriority:  medium
 description: Learn about the capabilities, services, and features in Microsoft Syntex.
 ---
