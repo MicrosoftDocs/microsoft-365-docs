@@ -21,13 +21,11 @@ description: Learn how to use the processing status column in a SharePoint docum
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
-In a document library, the **Processing status** column and the **Processing details** column let you see the status of any file that is being processed by a model in Microsoft Syntex.
+In a document library, you can see the status of any file that is being processed by a model in Microsoft Syntex in the **Processing status** and **Processing details** columns.
 
 ![Screenshot of a document library showing the Processing status column.](../media/content-understanding/processing-status-column.png)
 
 The **Processing status** column shows you whether the processing of a file is in progress, completed, or wasn’t done due to an error with the file or the job. The status helps you know whether a file needs to be queued again for processing or if more investigation is required.
-
-The **Processing details** column provides more information about the processing status, such as if a file format is not supported or if an image is too small.
 
 | Processing status | Description |
 | ------- | ------- 
@@ -36,5 +34,7 @@ The **Processing details** column provides more information about the processing
 | Not supported | File has been queued, but can't be processed (for example, the file type isn't supported). |
 | Error | File can't be queued for processing (for example, the file isn't supported at all). |
 | [Empty] | No models have been applied to the library. |
+
+The **Processing details** column provides more information about the processing status, such as if a file format is not supported or if an image is too small.
 
 When a new model is applied to a library, the **Processing status** and the **Processing details** columns are automatically added. However, the columns won't be automatically added to libraries where a model has already been applied. You'll need to apply the model again to add the columns.
