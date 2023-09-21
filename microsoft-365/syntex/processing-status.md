@@ -27,7 +27,7 @@ In a document library, the **Processing status** column lets you know the status
 
 The status shows you whether the processing of a file is in progress, completed, or wasn’t done due to an error with the file or the job. The status helps you know whether a file needs to be queued again for processing or if more investigation is required.  
 
-The **Processing details** column provides more information about the processing status.
+The **Processing details** column provides more information about the processing status, such as if a file format is not supported or if an image is too small.
 
 The following table describes the processing status values.
 
