@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Copilot Requirements"
+title: "Microsoft 365 Copilot requirements"
 f1.keywords:
 - NOCSH
 ms.author: camillepack
