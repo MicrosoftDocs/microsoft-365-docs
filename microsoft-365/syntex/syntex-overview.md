@@ -207,7 +207,7 @@ Syntex lets you build simple rules-driven actions in document libraries based on
 
 SharePoint site templates for Microsoft Syntex are prebuilt, ready-to-deploy, and customizable. Use these templates to jumpstart a professional site to manage, process, and track the status of business documents in your organization.
 
-[Learn more about the contracts and accounts payable accelerators.](site-templates.md)
+[Learn more about the contracts management and accounts payable accelerators.](site-templates.md)
 
 ### Content compliance
 
