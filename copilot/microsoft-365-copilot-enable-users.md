@@ -43,7 +43,7 @@ If your users exist, you can assign licenses for Microsoft 365 Copilot using the
 ```
 
 ```PowerShell
-    Set-MsolUserLicense -UserPrincipalName <adelev@contoso.com> -AddLicenses "contoso:Microsoft_365_Copilot"
+   Set-MsolUserLicense -UserPrincipalName <adelev@contoso.com> -AddLicenses "contoso:Microsoft_365_Copilot"
 ```
 
 After a user has been assigned a license for Microsoft 365 Copilot, the Copilot experience will automatically appear for them in the Microsoft 365 Apps. In some experiences, like Word, for example, a Copilot dialog will appear when creating a new document. In other experiences, Copilot is quickly accessible on the Ribbon. To use Copilot in Teams, users must [add](https://support.microsoft.com/office/add-an-app-to-microsoft-teams-b2217706-f7ed-4e64-8e96-c413afd02f77) the Copilot app.
