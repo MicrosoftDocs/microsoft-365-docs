@@ -110,6 +110,6 @@ By default, allow entries for domains and email addresses, files, and URLs exist
 
 ## What to expect after you add an allow or block entry
 
-After you add an allow entry on the **Submissions** page or a block entry in the Tenant Allow/Block List, the entry should start working immediately 99.999% of the time. For the rest, it could take up to 24 hours.
+After you add an allow entry on the **Submissions** page or a block entry in the Tenant Allow/Block List, the entry should start working immediately (within 5 minutes).
 
 If Microsoft has learned from the allow entry, the entry is removed. You'll get an alert about the removal of the now unnecessary allow entry from the built-in [alert policy](/purview/alert-policies) named **Removed an entry in Tenant Allow/Block List**).
