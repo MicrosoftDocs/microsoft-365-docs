@@ -1,9 +1,9 @@
 ---
 title: Use the Shifts connector wizard to connect Shifts to Blue Yonder Workforce Management (Preview)
-author: daisyfell
-ms.author: daisyfeller
+author: lana-chin
+ms.author: heidip
+manager: serdars
 ms.reviewer: imarquesgil
-manager: pamgreen
 ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
@@ -14,7 +14,7 @@ ms.collection:
   - M365-collaboration
   - m365-frontline
   - highpri
-  - tier2
+  - teams-1p-app-admin
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
@@ -224,7 +224,7 @@ Repeat this for all your desired mappings.
 4. Enter the correct location in the Time Zone column if needed.
 
 >[!NOTE]
->The wizard supports approximately 460 locations. If the specific location you chose isn't supported, you'll be shown an error in the wizard. Try using the closest city or major city within the same time zone.
+>The wizard supports approximately 460 locations. The Time Zone needs to be according to the tz format. If the specific location you chose isn't supported, you'll be shown an error in the wizard. Try using the closest city or major city within the same time zone.
 
 5. On the **Mapping** page, select **Browse** to find and upload your completed CSV file.
 

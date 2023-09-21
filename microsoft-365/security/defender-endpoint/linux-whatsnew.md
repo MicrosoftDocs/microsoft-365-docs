@@ -7,7 +7,7 @@ ms.author: dansimp
 author: dansimp
 ms.reviewer: kumasumit
 ms.localizationpriority: medium
-ms.date: 04/05/2023
+ms.date: 09/13/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -32,6 +32,50 @@ This article is updated frequently to let you know what's new in the latest rele
 - [What's new in Defender for Endpoint on macOS](mac-whatsnew.md)
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 
+<details>
+	<summary> September-2023 (Build: 101.23072.0021 | Release version: 30.123072.0021.0)</summary>
+
+## September-2023 Build: 101.23072.0021 | Release version: 30.123072.0021.0
+
+&ensp;Released: **September 11,2023**<br/>
+&ensp;Published: **September 11,2023**<br/>
+&ensp;Build: **101.23072.0021**<br/>
+&ensp;Release version: **30.123072.0021.0**<br/>
+&ensp;Engine version: **1.1.20100.7**<br/>
+&ensp;Signature version: **1.385.1648.0**<br/>
+
+**What's new**
+
+- There are multiple fixes and new changes in this release
+	- In mde_installer.sh v0.6.3, users can use the `--channel` argument to provide the channel of the configured repository during cleanup. For example, `sudo ./mde_installer --clean --channel prod`
+	- The Network Extension can now be reset by administrators using `mdatp network-protection reset`.
+	- Other performance improvements
+	- Bug Fixes
+
+**Known issues**
+
+- While upgrading from mdatp version 101.75.43 or 101.78.13, you may encounter a kernel hang. Run the following commands before attempting to upgrade to version 101.98.05. More information about the underlying issue can be found at [System hang due to blocked tasks in fanotify code](https://access.redhat.com/solutions/2838901).
+
+There are two ways to mitigate this upgrade issue:
+
+1. Use your package manager to uninstall the 101.75.43 or 101.78.13 mdatp version.
+
+Example:
+```bash
+sudo apt purge mdatp
+sudo apt-get install mdatp
+```
+
+2. As an alternative you can follow the instructions to [uninstall](/microsoft-365/security/defender-endpoint/linux-resources#uninstall), then [install](/microsoft-365/security/defender-endpoint/linux-install-manually#application-installation) the latest version of the package.
+
+If you don't want to uninstall mdatp, you can disable rtp and mdatp in sequence before upgrading.
+Some customers (<1%) experience issues with this method.
+
+ ```bash
+sudo mdatp config real-time-protection --value=disabled
+sudo systemctl disable mdatp
+```
+</details>
 
 <details>
 	<summary> July-2023 (Build: 101.23062.0010 | Release version: 30.123062.0010.0)</summary>
@@ -48,7 +92,7 @@ This article is updated frequently to let you know what's new in the latest rele
 **What's new**
 
 - There are multiple fixes and new changes in this release
-	- If a proxy is set for Defender for Endpoint then it will be visible in the `mdatp health` command output
+	- If a proxy is set for Defender for Endpoint, then it will be visible in the `mdatp health` command output
 	- With this release we provided two options in mdatp diagnostic hot-event-sources:
         1. Files
         2. Executables
@@ -102,7 +146,7 @@ sudo systemctl disable mdatp
 **What's new**
 
 - There are multiple fixes and new changes in this release
-  	- The build version schema is updated from this release. While the major version number remains same as 101, the minor version number will now have 5 digits followed by 4 digit patch number i.e. 101.xxxxx.yyy
+  	- The build version schema is updated from this release. While the major version number remains same as 101, the minor version number will now have five digits followed by four digit patch number that is, 101.xxxxx.yyy
   	- Improved Network Protection memory consumption under stress
  	- Updated engine version to 1.1.20300.5 and signature version to 1.391.2837.0.
 	- Bug fixes.
@@ -195,11 +239,11 @@ sudo systemctl disable mdatp
 
 - There are multiple fixes and new changes in this release 
 	- Health message improvements to capture details about auditd failures.
-	- Improvements to handle augenrules which was causing installation failure.
+	- Improvements to handle augenrules, which was causing installation failure.
 	- Periodic memory cleanup in engine process.
 	- Fix for memory issue in mdatp audisp plugin.
 	- Handled missing plugin directory path during installation.
-	- When conflicting application is using blocking fanotify, with default configuration mdatp health will show unhealthy. This is now fixed.
+	- When conflicting application is using blocking fanotify, with default configuration mdatp health shows unhealthy. This is now fixed.
 	- Support for ICMP traffic inspection in BM.
 	- Engine Update to 1.1.20100.6 and Signatures Ver: 1.385.68.0.
 	- Bug fixes.
@@ -248,12 +292,12 @@ sudo systemctl disable mdatp
 	- Handle failure in reload of auditd configuration.
 	- Handling for empty auditd rule files during MDE install.
 	- Engine Update to 1.1.20000.2 and Signatures Ver: 1.381.3067.0.
-	- Addressed a health issue in mdatp which occur due to selinux denials.
+	- Addressed a health issue in mdatp that occurs due to selinux denials.
 	- Bug fixes.
 
 **Known issues**
 
-- While upgrading mdatp to version 101.94.13 or later, you may notice that health is false, with health_issues as "no active supplementary event provider". This may happen due to misconfigured/conflicting auditd rules on existing machines. To mitigate the issue, the auditd rules on the existing machines need to be fixed. The following commands can help you to identify such auditd rules (commands need to be run as super user). Please take backup of following file: /etc/audit/rules.d/audit.rules as these steps are only to identify failures.
+- While upgrading mdatp to version 101.94.13 or later, you may notice that health is false, with health_issues as "no active supplementary event provider". This may happen due to misconfigured/conflicting auditd rules on existing machines. To mitigate the issue, the auditd rules on the existing machines need to be fixed. The following commands can help you to identify such auditd rules (commands need to be run as super user). Take a backup of following file: /etc/audit/rules.d/audit.rules as these steps are only to identify failures.
 
 ```bash
 echo -c >> /etc/audit/rules.d/audit.rules
@@ -274,7 +318,7 @@ sudo apt-get install mdatp
 	
 2. As an alternative you can follow the instructions to [uninstall](/microsoft-365/security/defender-endpoint/linux-resources#uninstall), then [install](/microsoft-365/security/defender-endpoint/linux-install-manually#application-installation) the latest version of the package.
 
-If you don't want to uninstall mdatp you can disable rtp and mdatp in sequence before upgrading. 
+If you don't want to uninstall mdatp, you can disable rtp and mdatp in sequence before upgrading. 
 Caution: Some customers (<1%) experience issues with this method. 
 
  ```bash
@@ -311,7 +355,7 @@ sudo ausearch -c 'mdatp_audisp_pl' --raw | sudo audit2allow -M my-mdatpaudisppl_
 sudo semodule -i my-mdatpaudisppl_v1.pp
 ```
 
-Here my-mdatpaudisppl_v1 represents the policy module name. After running the commands, either wait for 24 hours or clear/archive the audit logs. The audit logs could be archived by running the following command
+Here, my-mdatpaudisppl_v1 represents the policy module name. After running the commands, either wait for 24 hours or clear/archive the audit logs. The audit logs could be archived by running the following command
 
 ```
 sudo service auditd stop
@@ -323,7 +367,7 @@ sudo systemctl start mdatp
 mdatp health
 ```
 
-In case the issue reappears with some different denials. We need to run the mitigation again with a different module name(eg my-mdatpaudisppl_v2).
+In case the issue reappears with some different denials. We need to run the mitigation again with a different module name(for example, my-mdatpaudisppl_v2).
 
 </details>
 
@@ -351,8 +395,8 @@ In case the issue reappears with some different denials. We need to run the miti
 		- Improve the stability of mdatp stop flow.
 	- Added new field to wdavstate to keep track of platform update time.
 	- Stability improvements to parsing Defender for Endpoint onboarding blob.
-	- Scan does not proceed if a valid license is not present (fixed)
-	- Added performance tracing option to xPlatClientAnalyzer, with tracing enabled mdatp process will be dumping the flow in all_process.zip file that can be used for analysis of performance issues.
+	- Scan doesn't proceed if a valid license is not present (fixed)
+	- Added performance tracing option to xPlatClientAnalyzer, with tracing enabled mdatp process dumps the flow in all_process.zip file that can be used for analysis of performance issues.
 	- Added support in Defender for Endpoint for the below RHEL-6 kernel versions
 		- 2.6.32-754.43.1.el6.x86_64
 		- 2.6.32-754.49.1.el6.x86_64
@@ -379,7 +423,7 @@ sudo apt purge mdatp
 sudo apt-get install mdatp
 ```
 	
-As an alternative to the above, you can follow the instructions to [uninstall](/microsoft-365/security/defender-endpoint/linux-resources#uninstall), then [install](/microsoft-365/security/defender-endpoint/linux-install-manually#application-installation) the latest version of the package.
+As an alternative, you can follow the instructions to [uninstall](/microsoft-365/security/defender-endpoint/linux-resources#uninstall), then [install](/microsoft-365/security/defender-endpoint/linux-install-manually#application-installation) the latest version of the package.
 
 In case you don't want to uninstall mdatp you can disable rtp and mdatp in sequence before upgrade. 
 Caution: Some customers(<1%) are experiencing issues with this method. 
@@ -419,7 +463,7 @@ sudo systemctl disable mdatp
 
 **Known issues**
 
-- While upgrading mdatp to version 101.94.13, you may notice that health is false, with health_issues as "no active supplementary event provider". This may happen due to misconfigured/conflicting auditd rules on existing machines. To mitigate the issue, the auditd rules on the existing machines need to be fixed. The following steps can help you to identify such auditd rules (these commands need to be run as super user). Please take backup of following file: /etc/audit/rules.d/audit.rules as these steps are only to identify failures.
+- While upgrading mdatp to version 101.94.13, you may notice that health is false, with health_issues as "no active supplementary event provider". This may happen due to misconfigured/conflicting auditd rules on existing machines. To mitigate the issue, the auditd rules on the existing machines need to be fixed. The following steps can help you to identify such auditd rules (these commands need to be run as super user). Take a backup of following file: /etc/audit/rules.d/audit.rules as these steps are only to identify failures.
 
 ```bash
 echo -c >> /etc/audit/rules.d/audit.rules
@@ -752,7 +796,7 @@ As an alternative to the above, you can follow the instructions to [uninstall](/
 
 </details>
 
-<details><summary> 2021 releases</summary><blockquote>
+<details><summary> 2021 releases</summary>
   <details><summary>(Build: 101.52.57 | Release version: 30.121092.15257.0)</summary>
 
   <p><b>
@@ -907,5 +951,5 @@ As an alternative to the above, you can follow the instructions to [uninstall](/
 
    </details>
 
-</blockquote></details>
+</details>
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

@@ -24,7 +24,7 @@ In the same breadth, Vulnerability Intelligence Analysts battle correlating thei
 
 Microsoft’s goal is to re-imagine the analyst workflow by developing a platform, Defender TI, that aggregates and enriches critical data sources and displays data in an innovative, easy to use interface to correlate when indicators are linked to articles and vulnerabilities, infrastructure chain together indicators of compromise (IOCs), and collaborate on investigations with fellow Defender TI licensed users within their tenant. With security organizations actioning an ever-increasing amount of intelligence and alerts within their environment, having a Threat Analysis & Intelligence Platform that allows for accurate and timely assessments of alerting is important.
 
-Below is a screenshot of Defender TI’s Threat Intelligence Home Page. Analysts can quickly scan new featured articles as well as begin their intelligence gathering, triage, incident response, and hunting efforts by performing a keyword, artifact or CVE-ID search.
+Below is a screenshot of Defender TI’s Threat Intelligence Home Page. Analysts can quickly scan new featured articles as well as begin their intelligence gathering, triage, incident response, and hunting efforts by performing a keyword, indicator, or CVE-ID search.
 
 ![TI Overview Edge Screenshot](media/tiOverviewEdgeScreenshot.png)
 
@@ -77,7 +77,7 @@ Vulnerability Articles also include a Defender TI Priority Score and severity in
 
 ## Reputation scoring
 
-Defender TI provides proprietary reputation scores for any Host, Domain, or IP Address. Whether validating the reputation of a known or unknown entity, this score helps users quickly understand any detected ties to malicious or suspicious infrastructure. The platform provides quick information about the activity of these entities, such as First and Last Seen timestamps, ASN, country, associated infrastructure, and a list of rules that impact the reputation score when applicable.
+Defender TI provides proprietary reputation scores for any Host, Domain, or IP Address. Whether validating the reputation of a known or unknown entity, this score helps users quickly understand any detected ties to malicious or suspicious infrastructure. The platform provides quick information about the activity of these entities, such as First and Last Seen timestamps, ASN, country/region, associated infrastructure, and a list of rules that impact the reputation score when applicable.
 
 ![Reputation Summary Card](media/reputationSummaryCard.png)
 
@@ -89,7 +89,7 @@ For more information, see [Reputation scoring](reputation-scoring.md).
 
 Analyst insights distill Microsoft’s vast data set into a handful of observations that simplify the investigation and make it more approachable to analysts of all levels.
 
-Insights are meant to be small facts or observations about a domain or IP address and provide Defender TI users with the ability to make an assessment about the artifact queried and improve a user's ability to determine if an indicator being investigated is malicious, suspicious, or benign.
+Insights are meant to be small facts or observations about a domain or IP address and provide Defender TI users with the ability to make an assessment about the indicator queried and improve a user's ability to determine if an indicator being investigated is malicious, suspicious, or benign.
 
 For more information, see [Analyst insights](analyst-insights.md).
 
@@ -98,9 +98,9 @@ For more information, see [Analyst insights](analyst-insights.md).
 ## Data sets
 Microsoft centralizes numerous data sets into a single platform, Defender TI, making it easier for Microsoft’s community and customers to conduct infrastructure analysis. Microsoft’s primary focus is to provide as much data as possible about Internet infrastructure to support a variety of security use cases.
 
-Microsoft collects, analyzes, and indexes internet data to assist users in detecting and responding to threats, prioritizing incidents, and proactively identifying adversaries’ infrastructure associated with actor groups targeting their organization. Microsoft collects internet data via its’ PDNS sensor network, global proxy network of virtual users, port scans, and leverages third-party sources for malware and added Domain Name System (DNS) data.
+Microsoft collects, analyzes, and indexes Internet data via Passive DNS sensors, port scanning, URL and file detonation, and other sources to assist users in detecting threats, prioritizing incidents, and identifying infrastructure associated with threat actor groups. Users' URL searches may be used to automatically initiate detonations if there is no available detonation data for a URL at the time of the request. The data collected from such detonations is used to populate results for any future searches for that URL from the user who submitted the original search or any other users of the platform.
 
-This internet data is categorized into two distinct groups: traditional and advanced. Traditional data sets include Resolutions, WHOIS, SSL Certificates, Subdomains, DNS, Reverse DNS, and Services. Advanced data sets include Trackers, Components, Host Pairs, and Cookies. Trackers, Components, Host Pairs, and Cookies data sets are collected from observing the Document Object Model (DOM) of web pages crawled. Additionally, Components and Trackers are also observed from detection rules that are triggered based on the banner responses from port scans or SSL Certificate details. Many of these data sets have various methods to sort, filter, and download data, making it easier to access information that may be associated with a specific artifact type or time in history.
+Supported Internet datasets include Resolutions, WHOIS, SSL Certificates, Subdomains, DNS, Reverse DNS, and Detonation Analysis, as well as derived data sets collected from the Document Object Model (DOM) of detonated URLs, including Trackers, Components, Host Pairs, and Cookies. Additionally, Components and Trackers are also observed from detection rules that are triggered based on the banner responses from port scans or SSL Certificate details. Many of these data sets have various methods to sort, filter, and download data, making it easier to access information that may be associated with a specific indicator type or time in history.
 
 For more information, see:
 
@@ -111,7 +111,7 @@ For more information, see:
 
 ## Tags
 
-Defender TI tags are used to provide quick insight about an artifact, whether derived by the system or generated by other users. Tags aid analysts in connecting the dots between current incidents and investigations and their historical context for improved analysis.
+Defender TI tags are used to provide quick insight about an indicator, whether derived by the system or generated by other users. Tags aid analysts in connecting the dots between current incidents and investigations and their historical context for improved analysis.
 
 The Defender TI platform offers two types of tags: system tags and custom tags.
 
@@ -121,9 +121,9 @@ For more information, see [Using tags](using-tags.md).
 
 ## Projects
 
-Microsoft’s Defender TI platform allows users to develop multiple project types for organizing indicators of interest and indicators of compromise from an investigation. Projects contain a listing of all associated artifacts and a detailed history that retains the names, descriptions, and collaborators.
+Microsoft Defender TI platform allows users to develop multiple project types for organizing indicators of interest and indicators of compromise from an investigation. Projects contain a listing of all associated indicators and a detailed history that retains the names, descriptions, and collaborators.
 
-When a user searches an IP address, domain, or host in Defender TI, if that indicator is listed within a project the user has access to, the user can see a link to the project from the Projects sections in the Summary tab as well as Data tab. From here, the user can navigate to the details of the project for more context about the indicator before reviewing the other data sets for more information. This helps analysts to avoid reinventing the wheel of an investigation one of their Defender TI tenant users may have already started or add onto that investigation by adding new artifacts (indicators of compromise) related to that project (if they have been added as a collaborator to the project).
+When a user searches an IP address, domain, or host in Defender TI, if that indicator is listed within a project the user has access to, the user can see a link to the project from the Projects sections in the Summary tab as well as Data tab. From here, the user can navigate to the details of the project for more context about the indicator before reviewing the other data sets for more information. This helps analysts to avoid reinventing the wheel of an investigation one of their Defender TI tenant users may have already started or add onto that investigation by adding new indicators (indicators of compromise) related to that project (if they have been added as a collaborator to the project).
 
 For more information, see [Using projects](using-projects.md).
 

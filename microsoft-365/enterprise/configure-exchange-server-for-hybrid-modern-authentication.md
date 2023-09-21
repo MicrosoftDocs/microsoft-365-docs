@@ -17,7 +17,9 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Learn how to configure an Exchange Server on-premises to use Hybrid Modern Authentication (HMA), offering you more secure user authentication and authorization.
-ms.custom: seo-marvel-apr2020
+ms.custom:
+  - seo-marvel-apr2020
+  - has-azure-ad-ps-ref
 ---
 
 # How to configure Exchange Server on-premises to use Hybrid Modern Authentication

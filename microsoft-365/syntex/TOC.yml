@@ -70,6 +70,8 @@
       items:
             - name: Overview 
               href: form-processing-overview.md
+            - name: Admin setup
+              href: structured-freeform-setup.md
             - name: Train your model
               href: create-a-form-processing-model.md
             - name: Manage your model
@@ -152,6 +154,8 @@
       items: 
         - name: Overview 
           href: content-assembly.md
+        - name: Admin setup 
+          href: content-assembly-setup.md
         - name: Create a modern template
           href: content-assembly-modern-template.md
         - name: Map template fields to library columns
@@ -169,10 +173,19 @@
       items: 
         - name: Overview 
           href: image-tagging-overview.md
-        - name: Admin setup 
+        - name: Admin setup
           href: image-tagging-setup.md
         - name: Find and manage images
           href: image-tagging.md
+
+    - name: Taxonomy tagging 
+      items: 
+        - name: Overview 
+          href: taxonomy-tagging-overview.md
+        - name: Admin setup 
+          href: taxonomy-tagging-setup.md
+        - name: Find and manage terms 
+          href: taxonomy-tagging.md
 
     - name: Optical character recognition 
       items: 
@@ -193,8 +206,10 @@
           href: content-processing-overview.md
         - name: Move or copy a file 
           href: content-processing-create-rules.md
+        - name: Set a content type 
+          href: content-processing-content-type.md
 
-    - name: Taxonomy
+    - name: Term store features
       items:
         - name: Import using SKOS
           href: import-term-set-skos.md
