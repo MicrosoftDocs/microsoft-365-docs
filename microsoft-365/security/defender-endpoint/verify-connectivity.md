@@ -1,6 +1,6 @@
 ---
 title: Verify client connectivity to Microsoft Defender for Endpoint service URLs
-description: Learn how to use Client analyzer to verify client connectivity to Defender for Endpoint
+description: Learn how to verify client connectivity to Defender for Endpoint service URLs
 search.appverid: met150
 ms.service: microsoft-365-security
 ms.author: macapara
