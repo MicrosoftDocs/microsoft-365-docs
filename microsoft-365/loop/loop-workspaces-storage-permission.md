@@ -7,7 +7,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: loop
 ms.reviewer: michalbr
-ms.date: 06/20/2023
+ms.date: 08/21/2023
 ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection: 
@@ -55,9 +55,9 @@ Loop workspaces don't use Microsoft 365 groups for access management, instead th
 
 ## eDiscovery support for Loop content stored in Loop workspaces
 
-Loop content (pages and components) created in the Loop app are discoverable and have eDiscovery workflow support using the Microsoft Purview tool. As mentioned above, these files are stored in [Syntex repository services](https://devblogs.microsoft.com/microsoft365dev/introducing-syntex-repository-services-microsoft-365-superpowers-for-your-app/) and are available for search and collection, and render in review for both eDiscovery (Standard) and eDiscovery (Premium). The HTML offline export format is supported on eDiscovery (Premium). You can also download and re-upload the files to any OneDrive to view them in their native format.
+Loop content (pages and components) created in the Loop app are discoverable and have eDiscovery workflow support using the Microsoft Purview tool. As mentioned above, these files are stored in [Syntex repository services](https://devblogs.microsoft.com/microsoft365dev/introducing-syntex-repository-services-microsoft-365-superpowers-for-your-app/) and are available for search and collection for both eDiscovery (Standard) and eDiscovery (Premium). Render in review and the HTML offline export format is supported on eDiscovery (Premium). You can also download and re-upload the files to any OneDrive to view them in their native format.
 
-A third-party graph export API solution is also available for Loop pages and components that supports both raw export and an HTML offline format.
+A graph export API that can access Loop content stored in [Syntex repository services](https://devblogs.microsoft.com/microsoft365dev/introducing-syntex-repository-services-microsoft-365-superpowers-for-your-app/) is not yet available.
 
 ## Storage management after user departure
 
@@ -76,6 +76,12 @@ Loop components created outside of the Loop are stored in the OneDrive of the pe
 
 Admin management capabilities are not yet available to enumerate, manage, delete and recover Loop content in Syntex repository storage. Therefore, an admin cannot yet query for ownerless workspaces, directly manage the rosters for workspaces, or restore workspaces deleted by end-users.
 
+Content created in Loop workspaces are stored in [Syntex repository services](https://devblogs.microsoft.com/microsoft365dev/introducing-syntex-repository-services-microsoft-365-superpowers-for-your-app/) in the same location as your SharePoint Online tenant.
+
 ## Pricing and licensing model for Loop app
 
 Loop app is free during public preview. Post-preview pricing and licensing requirements for the Loop app are yet to be determined.
+
+## Related topics
+
+[Summary of compliance capabilities for Loop](/microsoft-365/loop/loop-compliance-summary)

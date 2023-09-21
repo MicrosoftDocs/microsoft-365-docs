@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 02/18/2020
+ms.date: 09/12/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -26,10 +26,6 @@ ms.custom:
 - AdminTemplateSet
 - m365solution-removeemployee
 - business_assist
-search.appverid:
-- BCS160
-- MET150
-- MOE150
 description: "Block access to Microsoft 365 so a former employee can't sign in, secure organization data, and allow other employees to access their email and OneDrive data."
 ---
 
@@ -53,7 +49,6 @@ To complete the steps in this series, you use these Microsoft 365 capabilities a
 |Outlook|Import pst files, add mailbox |
 |Active Directory|Remove users in hybrid environments |
 
-
 ## Solution: Remove a former employee
 
 > [!IMPORTANT]
@@ -75,25 +70,12 @@ To complete the steps in this series, you use these Microsoft 365 capabilities a
 |[Step 6 - Remove and delete the Microsoft 365 license from a former employee](remove-former-employee-step-6.md)|When you remove a license, you can assign it to someone else. Or, you can delete the license so you don't pay for it until you hire another person. <p> When you remove or delete a license, the user's old email, contacts, and calendar are retained for **30 days**, then permanently deleted. If you remove or delete a license but don't delete the account, the content in the user's OneDrive will remain accessible to you even after 30 days.|
 |[Step 7 - Delete a former employee's user account](remove-former-employee-step-7.md)|This removes the account from your admin center. Keeps things clean. Emails to the former employee's user account will not be received.|
 
-## Watch: Delete a user
+## Watch: Delete a user overview
 
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198203).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR?autoplay=false]
 
-When an employee leaves the company, you'll need to remove them from Microsoft 365 for business. Before doing so, you should block them from accessing company files, preserve the documents they created, and perform several other admin tasks associated with removing a user.
-
-1. From the admin center, select **Users**, and choose **Active users**.
-1. Select the user you want to remove, and then select **Delete user**.
-1. Check the box to remove their license, and check the box to remove their email aliases.
-1. Check the box to give another user access to the former employee’s email, and choose **Select a user and set email options**.
-1. To remove associated email aliases, select **X** next to their aliases.
-1. Review the shared mailbox information, and select **Finish**.
-1. Confirm your options are set correctly, and choose **Assign and convert**.
-1. Review your results, and select **Close**.
-
-After you remove a user, you have up to 30 days to restore their account.
- 
 ## Does your organization use Active Directory?
 
 If your organization synchronizes user accounts to Microsoft 365 from a local Active Directory environment, you must delete and restore those user accounts in your local Active Directory service. You can't delete or restore them in Microsoft 365.

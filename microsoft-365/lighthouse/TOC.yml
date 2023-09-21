@@ -38,9 +38,9 @@
       href: m365-lighthouse-deployment-insights-overview.md
     - name: View task details
       href: m365-lighthouse-view-task-details.md
-    - name: Assign a baselines
+    - name: Assign a baseline
       href: m365-lighthouse-assign-a-baseline.md    
-    - name: Create a baselines
+    - name: Create a baseline
       href: m365-lighthouse-create-a-baseline.md
     - name: Deploy a task manually
       href: m365-lighthouse-deploy-task-manually.md
@@ -120,9 +120,9 @@
       href: m365-lighthouse-quarantine-messages-overview.md
     - name: Overview of the Apps page
       href: m365-lighthouse-apps-page-overview.md
-- name: Manage opportunities with Sales advisor
+- name: Manage opportunities with Sales Advisor
   items:
-    - name: Overview of the Sales Advisor
+    - name: Overview of Sales Advisor
       href: m365-lighthouse-sales-advisor-overview.md
     - name: Get access to Sales Advisor
       href: m365-lighthouse-get-access-to-sales-advisor.md

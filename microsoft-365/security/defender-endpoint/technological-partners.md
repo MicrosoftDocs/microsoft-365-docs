@@ -3,8 +3,8 @@ title: Technological partners of Microsoft 365 Defender
 ms.reviewer:
 description: View technological partners of M365 Defender to enhance detection, investigation, and threat intelligence capabilities of the platform.
 ms.service: microsoft-365-security
-ms.author: v-aljupudi
-author: alekyaj
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -104,7 +104,6 @@ The following are the solution's categories:
 |[HYAS Protect](https://www.hyas.com/hyas-protect)|HYAS|HYAS Protect utilizes authoritative knowledge of attacker infrastructure to proactively protect MDE endpoints from cyber attacks.|
 |[Better Mobile Security Platform](https://go.microsoft.com/fwlink/?linkid=2202043)|Better Mobile Security Inc.|Provides solution for Threat, Phishing and Privacy Protection and Simulation.|
 |[Vulnerability Control](https://go.microsoft.com/fwlink/?linkid=2201965)|Skybox security|Global security posture management leader with solutions for vulnerability management and network security policy management.|
-|[Open NDR](https://go.microsoft.com/fwlink/?linkid=2201964)|Corelight|Augment device inventory in Microsoft 365 Defender with network evidence for complete visibility.|
 
 ### Identity security
 

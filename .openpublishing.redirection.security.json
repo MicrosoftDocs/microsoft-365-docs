@@ -1,6 +1,11 @@
 {
    "redirections":[
       {
+         "source_path":"microsoft-365/security/defender/opt-out-of-preview.md",
+         "redirect_url":"/microsoft-365/security/defender/dex-xdr-overview",
+         "redirect_document_id":true
+      },
+      {
          "source_path":"microsoft-365/security/defender/defenderexpertsforhuntingprev.md",
          "redirect_url":"/microsoft-365/security/defender/defender-experts-for-hunting",
          "redirect_document_id":true
@@ -1087,7 +1092,7 @@
       },
       {
          "source_path":"microsoft-365/security/office-365-security/move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md",
-         "redirect_url":"/exchange/standalone-eop/move-domains-and-settings-between-eop-orgs",
+         "redirect_url":"/exchange/standalone-eop/standalone-eop",
          "redirect_document_id":false
       },
       {
@@ -1852,12 +1857,12 @@
       },
       {
          "source_path":"microsoft-365/security/defender/m365d-whats-new.md",
-         "redirect_url":"/microsoft-365/security/defender/whats-new?view=o365-worldwide",
+         "redirect_url":"/microsoft-365/security/defender/whats-new",
          "redirect_document_id":false
       },
       {
          "source_path":"microsoft-365/security/defender-endpoint/old-index.md",
-         "redirect_url":"/microsoft-365/security/defender-endpoint/?view=o365-worldwide",
+         "redirect_url":"/microsoft-365/security/defender-endpoint/",
          "redirect_document_id":false
       },
       {
@@ -2577,17 +2582,17 @@
       },
       {
          "source_path":"microsoft-365/security/defender-business/mdb-admin-guide.md",
-         "redirect_url":"/microsoft-365/business-premium/m365bp--mdb-maintain-environment",
+         "redirect_url":"/microsoft-365/business-premium/m365bp-mdb-maintain-environment",
          "redirect_document_id":false
       },
       {
          "source_path":"microsoft-365/security/defender-business/mdb-security-admin-guide.md",
-         "redirect_url":"/microsoft-365/business-premium/m365bp--mdb-maintain-environment",
+         "redirect_url":"/microsoft-365/business-premium/m365bp-mdb-maintain-environment",
          "redirect_document_id":false
       },
       {
          "source_path":"microsoft-365/security/defender-business/mdb-security-operations-guide.md",
-         "redirect_url":"/microsoft-365/business-premium/m365bp--mdb-maintain-environment",
+         "redirect_url":"/microsoft-365/business-premium/m365bp-mdb-maintain-environment",
          "redirect_document_id":false
       },
       {
@@ -2674,6 +2679,141 @@
          "source_path":"microsoft-365/security/defender/alert-grading-playbooks.md",
          "redirect_url":"/microsoft-365/security/defender/alert-classification-playbooks",
          "redirect_document_id":true
-      }
+      },
+      {
+         "source_path":"microsoft-365/security/defender-endpoint/community.md",
+         "redirect_url":"https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/bd-p/MicrosoftDefenderATP",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"microsoft-365/security/defender-endpoint/corelight-integration.md",
+         "redirect_url":"/microsoft-365/security/defender-endpoint/device-discovery",
+         "redirect_document_id":true
+      },
+      {
+         "source_path":"microsoft-365/security/intelligence/understanding-malware.md",
+         "redirect_url":"/microsoft-365/security/defender/",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"microsoft-365/security/intelligence/coinminer-malware.md",
+         "redirect_url":"/microsoft-365/security/defender/",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"microsoft-365/security/intelligence/exploits-malware.md",
+         "redirect_url":"/microsoft-365/security/defender/",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"microsoft-365/security/intelligence/macro-malware.md",
+         "redirect_url":"/microsoft-365/security/defender/",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"microsoft-365/security/intelligence/rootkits-malware.md",
+         "redirect_url":"/microsoft-365/security/defender/",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"microsoft-365/security/intelligence/trojans-malware.md",
+         "redirect_url":"/microsoft-365/security/defender/",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"microsoft-365/security/intelligence/worms-malware.md",
+         "redirect_url":"/microsoft-365/security/defender/",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"microsoft-365/security/intelligence/fileless-threats.md",
+         "redirect_url":"/microsoft-365/security/defender/",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"microsoft-365/security/intelligence/phishing.md",
+         "redirect_url":"/microsoft-365/security/defender/",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"microsoft-365/security/intelligence/phishing-trends.md",
+         "redirect_url":"/microsoft-365/security/defender/",
+         "redirect_document_id": false
+      },
+      {
+         "source_path":"microsoft-365/security/intelligence/supply-chain-malware.md",
+         "redirect_url":"/microsoft-365/security/defender/",
+         "redirect_document_id": false
+      },
+      {
+         "source_path":"microsoft-365/security/intelligence/prevent-malware-infection.md",
+         "redirect_url":"/microsoft-365/security/defender/",
+         "redirect_document_id": false
+      },
+      {
+         "source_path":"microsoft-365/security/intelligence/unwanted-software.md",
+         "redirect_url":"/microsoft-365/security/defender/",
+         "redirect_document_id": false
+      },
+      {
+         "source_path":"microsoft-365/security/intelligence/support-scams.md",
+         "redirect_url":"/microsoft-365/security/defender/",
+         "redirect_document_id": false
+      },
+      {
+         "source_path": "microsoft-365/security/defender/first-incident-prepare.md",
+         "redirect_url": "/microsoft-365/security/defender/respond-first-incident-365-defender",
+         "redirect_document_id": false
+       },
+       {
+         "source_path": "microsoft-365/security/defender/first-incident-overview.md",
+         "redirect_url": "/microsoft-365/security/defender/respond-first-incident-365-defender",
+         "redirect_document_id": false
+       },
+       {
+         "source_path": "microsoft-365/security/defender/first-incident-analyze.md",
+         "redirect_url": "/microsoft-365/security/defender/respond-first-incident-analyze",
+         "redirect_document_id": false
+       },
+       {
+         "source_path": "microsoft-365/security/defender/first-incident-remediate.md",
+         "redirect_url": "/microsoft-365/security/defender/respond-first-incident-remediate",
+         "redirect_document_id": false
+       },
+       {
+         "source_path": "microsoft-365/security/defender/first-incident-post.md",
+         "redirect_url": "/microsoft-365/security/defender/respond-first-incident-remediate",
+         "redirect_document_id": false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/azure-ip-protection-features.md",
+         "redirect_url":"/azure/information-protection/what-is-information-protection",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/help-and-support-for-eop.md",
+         "redirect_url":"/microsoft-365/admin/get-help-support",
+         "redirect_document_id":true
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/walkthrough-spoof-intelligence-insight.md",
+         "redirect_url":"/microsoft-365/security/office-365-security/anti-spoofing-spoof-intelligence",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/defender-business/mdb-maintain-environment.md",
+         "redirect_url":"/microsoft-365/business-premium/m365bp-mdb-maintain-environment",
+         "redirect_document_id":true
+       },
+       {
+         "source_path":"microsoft-365/security/defender-endpoint/specify-additional-definitions-network-traffic-inspection-mdav.md",
+         "redirect_url":"/microsoft-365/security/defender-endpoint/network-protection",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/defender-business/mdb-get-help.md",
+         "redirect_url":"/microsoft-365/admin/get-help-support",
+         "redirect_document_id":false
+       }
    ]
 }

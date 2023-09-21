@@ -17,7 +17,7 @@ ms.custom:
 description: "Admins can configure whether users can report malicious message in Microsoft Teams."
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 7/7/2023
+ms.date: 8/7/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
@@ -33,6 +33,8 @@ Users can report messages in Teams from **internal** chats, channels and meeting
 
 > [!NOTE]
 > User reporting of messages in Teams is not supported in U.S. Government organizations (Microsoft 365 GCC, GCC High, and DoD).
+>
+> For information about user reporting of email messages, see [Report suspicious email messages to Microsoft](submissions-report-messages-files-to-microsoft.md).
 
 ## User reporting settings for Teams messages
 
