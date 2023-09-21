@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Copilot Requirements"
+title: "Microsoft 365 Copilot requirements"
 f1.keywords:
 - NOCSH
 ms.author: camillepack
@@ -44,6 +44,8 @@ Some features in Microsoft 365 Copilot, such as file restore and OneDrive manage
 
 Microsoft 365 Copilot works with the new Outlook (for [Windows](https://support.microsoft.com/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627) and [Mac](https://support.microsoft.com/office/the-new-outlook-for-mac-6283be54-e74d-434e-babb-b70cefc77439)), which are currently in preview. Users can switch to the new Outlook by selecting **Try the new Outlook** in their existing Outlook client.
 
+To have Copilot appear in the new Outlook, you'll need to sync your Microsoft 365 settings. To do this, go to [View and manage your Microsoft 365 settings](https://myaccount.microsoft.com/settingsandprivacy/language).
+
 ### Microsoft Teams
 
 You can use the [Microsoft Teams setup guide](https://admin.microsoft.com/Adminportal/Home?Q=m365setup#/modernonboarding/microsoftteamssetupguide) in the Microsoft 365 admin center to configure popular Teams settings, including external access, guest access, team creation permissions, and more.  Copilot in Teams is available on Windows, Mac, web, Android, and iOS.
@@ -54,7 +56,7 @@ To use Microsoft 365 Copilot with Microsoft Loop, you must have Loop enabled for
 
 ## Network requirements
 
-Copilot services connect to endpoints contained within the [Microsoft 365 endpoint taxonomy](https://aka.ms/o365ip). As with all Microsoft 365 services, we recommend that customers align their network with the [Microsoft 365 network connectivity principles](/microsoft-365/enterprise/microsoft-365-network-connectivity-principles). This will help provide the best experience with Copilot through minimization of latency and increased network quality of service for critical network flows.
+Copilot services connect to endpoints contained within the [Microsoft 365 endpoint taxonomy](https://aka.ms/o365ip). As with all Microsoft 365 services, we recommend that customers align their network with the [Microsoft 365 network connectivity principles](/microsoft-365/enterprise/microsoft-365-network-connectivity-principles). This helps provide the best experience with Copilot through minimization of latency and increased network quality of service for critical network flows.
 
 There are many Copilot experiences, including some core experiences like Excel, Word, PowerPoint, Teams, and Loop, that use WebSocket connections (wss://) from the device running the Microsoft 365 app to a Microsoft service. So, to use these Copilot experiences, WebSocket connections must be allowed from user endpoints to the endpoints listed in our endpoint taxonomy, specifically in ID number 46 in the section for [Microsoft 365 Common and Office Online](/microsoft-365/enterprise/urls-and-ip-address-ranges).
 
