@@ -26,11 +26,11 @@ additionalContent:
         # Card
         - title: Microsoft 365 Copilot overview
           summary: Learn how Microsoft 365 Copilot works. 
-          url: index.yml
+          url: microsoft-365-copilot-overview.md
         # Card
         - title: Copilot requirements
           summary: Learn about Microsoft 365 Apps, network, and license requirements for Microsoft 365 Copilot. 
-          url: index.yml
+          url: microsoft-365-copilot-requirements.md
         # Card
         - title: Setup
           summary: Get started with Microsoft 365 Copilot in the Microsoft 365 Admin Center.
@@ -38,7 +38,7 @@ additionalContent:
         # Card
         - title: Enable users
           summary: Learn about the steps to deploy Microsoft 365 Copilot. 
-          url: index.yml
+          url: microsoft-365-copilot-enable-users.md
         # Card
         - title: Data, Privacy, and Security for Microsoft 365 Copilot
           summary: Learn how Microsoft 365 Copilot uses data and how it stores and protects that data. 
