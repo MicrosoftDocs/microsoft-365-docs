@@ -34,7 +34,7 @@ You can use the [Microsoft 365 Copilot setup guide](https://go.microsoft.com/fwl
 
 ## Assign licenses
 
-This article assumes that you have already provisioned users in your tenant. If you have not already done so, follow the steps in the [Microsoft 365 Copilot setup guide](https://go.microsoft.com/fwlink/p/?linkid=2243702) or those documented in [Add users and assign licenses in Microsoft 365](/microsoft-365/admin/add-users/add-users). If you use either of these resources, you can create users and assign the necessary licenses at the same time.
+This article assumes that you have already provisioned users in your tenant. If you haven't already done so, follow the steps in the [Microsoft 365 Copilot setup guide](https://go.microsoft.com/fwlink/p/?linkid=2243702) or those documented in [Add users and assign licenses in Microsoft 365](/microsoft-365/admin/add-users/add-users). If you use either of these resources, you can create users and assign the necessary licenses at the same time.
 
 If your users exist, you can assign licenses for Microsoft 365 Copilot using the [Microsoft 365 admin center](/microsoft-365/admin/manage/assign-licenses-to-users) or PowerShell using the [Set-MsolUserLicense](/powershell/module/msonline/set-msoluserlicense) cmdlet. For example:
 
