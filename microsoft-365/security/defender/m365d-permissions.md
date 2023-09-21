@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - m365-security
-- tier3
+- tier1
 ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.date: 02/17/2021
+ms.date: 09/21/2023
 ---
 
 # Manage access to Microsoft 365 Defender with Azure Active Directory global roles
