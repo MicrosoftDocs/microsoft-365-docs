@@ -21,7 +21,7 @@ description: Learn how to use the processing status column in a SharePoint docum
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
-In a document library, you can see the status of any file that is being processed by a model in Microsoft Syntex in the **Processing status** and **Processing details** columns.
+In a document library, you can see the status of any file that is being processed by a model in Microsoft Syntex by looking in the **Processing status** and **Processing details** columns.
 
 ![Screenshot of a document library showing the Processing status column.](../media/content-understanding/processing-status-column.png)
 
