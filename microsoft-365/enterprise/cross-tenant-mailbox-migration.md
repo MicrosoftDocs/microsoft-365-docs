@@ -92,11 +92,11 @@ All users in both the source and target organizations must be licensed with the 
 
 4. Select **New registration**.
 
-   ![New Application](../media/tenant-to-tenant-mailbox-move/b36698df128e705eacff4bff7231056a.png)
+   :::image type="content" alt-text="Screenshot of New Application UI." source="../media/tenant-to-tenant-mailbox-move/b36698df128e705eacff4bff7231056a.png":::
 
 5. On the **Register an application** page, under **Supported account types**, select **Accounts in any organizational directory (Any Azure AD directory - Multi-tenant)**. Then, under **Redirect URI (optional)**, select **Web**, and then type `https://office.com`. Then, select **Register**.
 
-   ![Application Registration](../media/tenant-to-tenant-mailbox-move/edcdf18b9f504c47284fe4afb982c433.png)
+   :::image type="content" alt-text="Screenshot of the form 'Register an application'." source="../media/tenant-to-tenant-mailbox-move/edcdf18b9f504c47284fe4afb982c433.png":::
 
    On the top-right corner of the page, see the notification dialog box that states the app was successfully created.
 
@@ -110,25 +110,25 @@ All users in both the source and target organizations must be licensed with the 
 
 10. By default, **User.Read** permissions are assigned to the app you created, but these permissions aren't required for mailbox migrations. You can remove those permissions.
 
-    ![Application Permissions](../media/tenant-to-tenant-mailbox-move/6a8c13a36cb3e10964a6920b8138e12b.png)
+    :::image type="content" alt-text="Screenshot of 'Configured permissions'." source="../media/tenant-to-tenant-mailbox-move/6a8c13a36cb3e10964a6920b8138e12b.png" lightbox="../media/tenant-to-tenant-mailbox-move/6a8c13a36cb3e10964a6920b8138e12b.png":::
 
 11. To add permission for mailbox migration, select **Add a permission**.
 
 12. In the **Request API permissions** window, select **APIs my organization uses**, search for `Office 365 Exchange Online`, and then select it.
 
-    ![Select API](../media/tenant-to-tenant-mailbox-move/0b4dc1eea3910e9c475724d9473aca58.png)
+    :::image type="content" alt-text="Screenshot of 'Select an API' under 'Request API permissions'." source="../media/tenant-to-tenant-mailbox-move/0b4dc1eea3910e9c475724d9473aca58.png":::
 
 13. Select **Application permissions**.
 
-14. Under **Select permissions**, expand **Mailbox**, and check the **Mailbox.Migration** checkbox, and then select **Add permissions** at the bottom on the screen.
+14. Under **Select permissions**, expand **Mailbox** and select **Mailbox.Migration**, and then select **Add permissions** at the bottom on the screen.
 
-    ![Set API](../media/tenant-to-tenant-mailbox-move/0038a4cf74bb13de0feb51800e078803.png)
+    :::image type="content" alt-text="Screenshot of Mailbox.Migration and its checkbox under 'Select permissions'." source="../media/tenant-to-tenant-mailbox-move/0038a4cf74bb13de0feb51800e078803.png":::
 
 15. Now select **Certificates & secrets** in the navigation pane for your application.
 
 16. Under **Client secrets**, select **New client secret**.
 
-    ![Client Secrets](../media/tenant-to-tenant-mailbox-move/273dafd5e6c6455695f9baf35ef9977a.png)
+    :::image type="content" alt-text="Screenshot of 'Client secrets' and the option to add a new client secret." source="../media/tenant-to-tenant-mailbox-move/273dafd5e6c6455695f9baf35ef9977a.png":::
 
 17. In the **Add a client secret** window, type a description, and then configure your expiration settings.
 
