@@ -1,6 +1,6 @@
 ---
 title: Migrate devices to use the streamlined onboarding method
-description: Learn how to use Client analyzer to verify client connectivity to Defender for Endpoint
+description: Learn how to migrate devices to Defender for Endpoint using the streamlined connectivity method.
 search.appverid: met150
 ms.service: microsoft-365-security
 ms.author: macapara
@@ -13,7 +13,7 @@ ms.collection:
 - tier1
 ms.topic: how-to
 ms.subservice: mde
-ms.date: 09/20/2023
+ms.date: 09/21/2023
 ---
 
 # Migrate devices to use the streamlined connectivity method
