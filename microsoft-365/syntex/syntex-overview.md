@@ -227,7 +227,7 @@ Learn more about how to apply [retention labels](apply-a-retention-label-to-a-mo
 :::row-end:::
 --->
 
-### Premium taxonomy services
+### Premium taxonomy features
 
 Benefit from the following additional term store features for admins:
 
