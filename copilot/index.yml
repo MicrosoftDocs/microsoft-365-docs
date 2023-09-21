@@ -1,0 +1,67 @@
+### YamlMime:Hub
+
+title: Microsoft 365 Copilot documentation # < 60 chars
+summary: Learn about Microsoft 365 Copilot and how your organization can use this copilot for work. # < 160 chars
+brand: m365 # brand: aspnet | azure | bash | bizapps | bot-framework | dotnet | dynamics | education | enterprise-mobility | gaming | graph | m365 | nuget | office | powershell | playfab | power-apps | power-automate | power-bi | power-platform | power-virtual-agents | project | sharepoint | sql | surface | system-center | teams | visual-studio | windows | workplace-analytics | xamarin
+
+metadata:
+  title: Microsoft 365 Copilot documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn about Microsoft 365 Copilot and how your organization can use this copilot for work. # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: microsoft-365-copilot 
+  ms.topic: hub-page # Required
+  ms.collection: # Optional; Remove if not applicable.
+  author: samanro #Required; your GitHub user alias, with correct capitalization.
+  ms.author: samanro #Required; microsoft alias of author; optional team alias.
+  ms.date: 09/21/2023 #Required; mm/dd/yyyy format.
+
+
+
+# additionalContent section (Optional; Remove if not applicable.)
+# Card with summary style
+additionalContent:
+  # Supports up to 4 subsections
+  sections:
+    - title: Get started with Microsoft 365 Copilot # < 60 chars (Optional; Remove if not applicable.)
+      items:
+        # Card
+        - title: Microsoft 365 Copilot overview
+          summary: Learn how Microsoft 365 Copilot works. 
+          url: microsoft-365-copilot-overview.md
+        # Card
+        - title: Copilot requirements
+          summary: Learn about Microsoft 365 Apps, network, and license requirements for Microsoft 365 Copilot. 
+          url: microsoft-365-copilot-requirements.md
+        # Card
+        - title: Setup
+          summary: Get started with Microsoft 365 Copilot in the Microsoft 365 Admin Center.
+          url: microsoft-365-copilot-setup.md
+        # Card
+        - title: Enable users
+          summary: Learn about the steps to deploy Microsoft 365 Copilot. 
+          url: microsoft-365-copilot-enable-users.md
+        # Card
+        - title: Data, Privacy, and Security for Microsoft 365 Copilot
+          summary: Learn how Microsoft 365 Copilot uses data and how it stores and protects that data. 
+          url: /deployoffice/privacy/microsoft-365-copilot
+        # Card
+        - title: End user help and learning for Microsoft 365 Copilot
+          summary: End users can explore how Copilot with the apps in Microsoft 365 can help boost their productivity.
+          url: https://support.microsoft.com/copilot
+    - title: Learn about Microsoft 365 Copilot # < 60 chars (Optional; Remove if not applicable.)
+      items:
+        # Card
+        - title: Overview video
+          summary: Watch an overview of Microsoft 365 Copilot.
+          url: https://www.youtube.com/watch?v=E5g20qmeKpg
+        # Card
+        - title: FAQ
+          summary: Review the Copilot FAQ.
+          url: https://support.microsoft.com/topic/frequently-asked-questions-ai-microsoft-365-copilot-and-microsoft-designer-987b275d-f6f2-4d5d-94c5-e927cffae705
+        # Card
+        - title: Service description
+          summary: Read the service description for what's included in Microsoft 365 Copilot.
+          url: /office365/servicedescriptions/office-365-platform-service-description/microsoft-365-copilot/
+        # Card
+        - title: Microsoft AI help & learning
+          summary: Help and learning for you and your users.
+          url: https://support.microsoft.com/microsoft-ai
