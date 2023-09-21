@@ -5,6 +5,7 @@ search.appverid: met150
 ms.service: microsoft-365-security
 ms.author: siosulli
 author: siosulli
+ms.reviewer: pahuijbr
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -13,7 +14,7 @@ ms.collection:
 - tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.date: 09/12/2023
+ms.date: 09/21/2023
 ms.subservice: mde
 ---
 
