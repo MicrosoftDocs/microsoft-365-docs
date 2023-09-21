@@ -45,7 +45,7 @@ This article describes how admins can manage entries for email senders in the Mi
 
 - For details about the syntax for spoofed sender entries, see the [Domain pair syntax for spoofed sender entries](#domain-pair-syntax-for-spoofed-sender-entries) section later in this article.
 
-- An entry should be active within 30 minutes, but it might take up to 24 hours for the entry to be active.
+- An entry should be active within 5 minutes.
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
   - [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo):
