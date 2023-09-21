@@ -36,7 +36,7 @@ ms.date: 06/23/2021
 **Platforms**
 - Windows
 
-It is important to ensure that client components are up-to-date to deliver critical protection capabilities and prevent attacks.
+It is important to ensure that client components are up to date to deliver critical protection capabilities and prevent attacks.
 
 Capabilities are provided through several components:
 
@@ -147,3 +147,4 @@ For details on how to use these tools, see [Create a custom gradual rollout proc
 > - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 > - [Configure Defender for Endpoint on Android features](android-configure.md)
 > - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

@@ -52,7 +52,9 @@ In addition, for Puppet deployment, you need to be familiar with Puppet administ
 
 ## Download the onboarding package
 
-Download the onboarding package from Microsoft 365 Defender portal:
+Download the onboarding package from Microsoft 365 Defender portal.
+
+[!INCLUDE [Defender for Endpoint repackaging warning](../../includes/repackaging-warning.md)]
 
 1. In Microsoft 365 Defender portal, go to **Settings > Endpoints > Device management > Onboarding**.
 2. In the first drop-down menu, select **Linux Server** as the operating system. In the second drop-down menu, select **Your preferred Linux configuration management tool** as the deployment method.
@@ -265,3 +267,4 @@ class remove_mdatp {
     }
 }
 ```
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

@@ -20,7 +20,7 @@ ms.collection:
   - tier1
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 07/26/2022
+ms.date: 09/18/2023
 ---
 
 # Before you begin using Defender Experts for Hunting
@@ -35,13 +35,18 @@ This document outlines the key infrastructure requirements you must meet and imp
 
 ## Check if your environment meets licensing and access prerequisites
 
-Microsoft Defender Experts for Hunting is a separate service from your existing Defender products. Before enrolling in this service, make sure that you have the necessary license and access. 
+Microsoft Defender Experts for Hunting is a separate service from your existing Defender products. Before enrolling in this service, make sure that you have the necessary license and access.
 
 ### Eligibility and licensing
 
-Defender Experts for Hunting customers will be assigned two Experts on Demand credits on the first of each month, which may be used to submit questions. Unused credits expire 90 days from date of assignment or at the end of the subscription term, whichever is shortest.
+Defender Experts for Hunting customers are assigned 10 **Ask Defender Experts** credits, which you can use to submit questions, at the start of each calendar quarter. Unused credits from the current quarter roll up to the next one. You can use up to 20 credits only per quarter. All unused credits expire by the end of the calendar year or at the end of your subscription term, whichever comes first.
 
 For more information about Microsoft's commercial licensing terms, visit [this page](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/MCA).
+
+### Server coverage
+
+Defender Experts for Hunting also covers servers—whether on premises or on a hyperscale cloud service provider—that have Defender for Endpoint deployed on them with a Microsoft Defender for Server license. For Defender Experts coverage, a server is considered as a user account for billing. The service doesn’t cover Microsoft Defender for Cloud.
+[Learn more about specific hardware and software requirements](/microsoft-365/security/defender-endpoint/minimum-requirements).
 
 ### Access requirements
 
@@ -51,13 +56,13 @@ Anyone from your organization can complete the customer interest form for Micros
 
 Defender Experts for Hunting is a managed threat hunting service that proactively hunts for threats across endpoints, email, identity, and cloud apps. To carry out hunting on your behalf, Microsoft experts need access to your Microsoft 365 Defender advanced hunting data. Enrolling in this service means you're granting permission to Microsoft experts to access the said data.
 
-The following sections enumerate additional information about the service's data usage, compliance, and availability. For more information about Microsoft's commitment in valuing and protecting your data, visit the [Trust Center](https://aka.ms/trustcenter-dex4hunting) > scroll down to **Additional products and services** > **Managed Security Services** > [**Microsoft Defender Expert for Hunting**](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE51fRH).
+The following sections enumerate additional information about the service's data usage, compliance, and availability. For more information about Microsoft's commitment in valuing and protecting your data, visit the [Trust Center](https://www.microsoft.com/en-us/trust-center/product-overview) then scroll down to **Additional products and services** > **Managed Security Services** > [**Microsoft Defender Expert for Hunting**](https://aka.ms/trustcenter-defenderexperts).
 
 ### Data collection, usage, and retention
 
 All data used for hunting from existing Defender services will continue to reside in the customer's original Microsoft 365 Defender service storage location. [Learn more](../../enterprise/o365-data-locations.md)
 
-Defender Experts for Hunting operational data, such as case tickets and analyst notes, are generated and stored in a Microsoft data center in the US region for the length of the service, irrespective of the Microsoft 365 Defender service storage location. Data generated for the reporting dashboard is stored in customer's Microsoft 365 Defender service storage location. Reporting data and operational data will be retained for a grace period of no less than 90 days after a customer leaves the service.
+Defender Experts for Hunting operational data, such as case tickets and analyst notes, are generated and stored in a Microsoft data center in the US region for the length of the service, irrespective of the Microsoft 365 Defender service storage location. Data generated for the reporting dashboard is stored in customer's Microsoft 365 Defender service storage location. Reporting data and operational data will be retained for a grace period of no more than 90 days after a customer’s subscription expires. If the customer terminates their subscription, data will be deleted within 30 days. 
 
 Microsoft experts hunt over [advanced hunting logs](../../security/defender/advanced-hunting-schema-tables.md) in Microsoft 365 Defender advanced hunting tables. The data in these tables depend on the set of Defender services the customer is enabled for (for example, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Identity, Microsoft Defender for Cloud Apps, and Azure Active Directory). Experts also use a large set of internal threat intelligence data to inform their hunting and automation.
 
@@ -87,3 +92,4 @@ If you haven't done so yet, you can complete the customer interest form for Defe
 ### Next step
 
 - [Start using Defender Experts for Hunting](onboarding-defender-experts-for-hunting.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

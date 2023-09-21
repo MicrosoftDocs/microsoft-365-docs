@@ -41,8 +41,9 @@ You must configure Security intelligence updates on the Defender for Endpoint de
 
 If an onboarded device is protected by a third-party anti-malware client, Microsoft Defender Antivirus on that endpoint will enter into passive mode.
 
-Microsoft Defender Antivirus will continue to receive updates, and the *mspeng.exe* process will be listed as a running a service. But, it won't perform scans and doesn't replace the running third-party anti-malware client.
+Microsoft Defender Antivirus will continue to receive updates, and the *msmpeng.exe* process will be listed as a running a service. But, it won't perform scans and doesn't replace the running third-party anti-malware client.
 
 The Microsoft Defender Antivirus interface will be disabled. Users on the device won't be able to use Microsoft Defender Antivirus to perform on-demand scans or configure most options.
 
 For more information, see the [Microsoft Defender Antivirus and Defender for Endpoint compatibility topic](microsoft-defender-antivirus-compatibility.md).
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

@@ -101,13 +101,15 @@ The following table lists the available products and their **ProductId**. It als
 | Project Plan 1* | CFQ7TTC0HDB1 | Yes |
 | Project Plan 3* | CFQ7TTC0HDB0 | No |
 | Teams Exploratory | CFQ7TTC0J1FV | Yes |
-| Visio Plan 1* | CFQ7TTC0HD33 | No |
+| Teams Premium Introductory Pricing | CFQ7TTC0RM8K | Yes |
+| Visio Plan 1* | CFQ7TTC0HD33 | Yes |
 | Visio Plan 2* | CFQ7TTC0HD32 | No |
 | Viva Goals (self-service trials only) | CFQ7TTC0PW0V | Yes |
 | Windows 365 Enterprise | CFQ7TTC0HHS9 | No |
 | Windows 365 Business | CFQ7TTC0J203 | No |
 | Windows 365 Business with Windows Hybrid Benefit | CFQ7TTC0HX99 | No |
 | Microsoft 365 F3 | CFQ7TTC0LH05 | No |
+| Microsoft Purview Discovery | CFQ7TTC0N8SL | Yes |
 | Dynamics 365 Marketing | CFQ7TTC0LH3N | No |
 | Dynamics 365 Marketing Attach | CFQ7TTC0LHWP | No |
 | Dynamics 365 Marketing Additional Application | CFQ7TTC0LHVK | No |

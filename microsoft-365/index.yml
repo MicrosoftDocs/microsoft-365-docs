@@ -17,7 +17,7 @@ metadata:
   ms.custom: intro-hub-or-landing
   author: samanro #Required; your GitHub user alias, with correct capitalization.
   ms.author: samanro #Required; microsoft alias of author; optional team alias.
-  ms.date: 12/12/2022 #Required; mm/dd/yyyy format.
+  ms.date: 07/25/2023 #Required; mm/dd/yyyy format.
   ms.localizationpriority: high
 
 # highlightedContent section (optional)
@@ -61,9 +61,6 @@ conceptualContent:
             - url: business/index.yml
               itemType: get-started
               text: Microsoft 365 Business Premium
-            - url: compliance/index.yml
-              itemType: overview
-              text: Microsoft Purview
             - url: security/index.yml
               itemType: overview
               text: Microsoft 365 security
@@ -79,6 +76,9 @@ conceptualContent:
             - url: /sharepoint/introduction
               itemType: overview
               text: SharePoint and OneDrive
+            - url: /purview/
+              itemType: overview
+              text: Microsoft Purview
             - url: /microsoft-365/contentunderstanding/
               itemType: overview
               text: Microsoft Syntex
@@ -213,10 +213,15 @@ tools:
       imageSrc: /office/media/icons/developer-blue.svg
       url: /microsoft-365/developer/?view=o365-worldwide
     # Card
-    - title: Tech community
-      imageSrc: /office/media/icons/users-group.svg
-      url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365
+    - title: FastTrack
+      # imageSrc should be square in ratio with no white space
+      imageSrc: /office/media/icons/deploy-blue.svg
+      url: /microsoft-365/fasttrack/
     # Card
     - title: Microsoft 365 Community Content
       imageSrc: /office/media/icons/blog-site-blue.svg
       url: /microsoft-365/community/
+    # Card
+    - title: Tech community
+      imageSrc: /office/media/icons/users-group.svg
+      url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365

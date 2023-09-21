@@ -1,8 +1,8 @@
 ---
 title: Get started with Microsoft 365 for healthcare organizations
-author: samanro
-ms.author: samanro
-manager: pamgreen
+author: lana-chin
+ms.author: heidip
+manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-frontline
@@ -21,7 +21,6 @@ ms.collection:
   - m365solution-overview
   - m365-frontline
   - highpri
-  - tier1
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers

@@ -34,8 +34,14 @@
       href: m365-lighthouse-review-deployment-plan.md
     - name: Understand deployment statuses
       href: m365-lighthouse-understand-deployment-statuses.md
+    - name: Understanding deployment insights
+      href: m365-lighthouse-deployment-insights-overview.md
     - name: View task details
       href: m365-lighthouse-view-task-details.md
+    - name: Assign a baseline
+      href: m365-lighthouse-assign-a-baseline.md    
+    - name: Create a baseline
+      href: m365-lighthouse-create-a-baseline.md
     - name: Deploy a task manually
       href: m365-lighthouse-deploy-task-manually.md
     - name: Deploy a task automatically
@@ -44,6 +50,14 @@
       href: m365-lighthouse-dismiss-task.md
     - name: Reinstate a task
       href: m365-lighthouse-reinstate-task.md
+    - name: Manage tenants using deployment insights
+      href: m365-lighthouse-manage-tenants-using-deployment-insights.md
+- name: Manage alerts
+  items: 
+    - name: Overview of the Alerts page
+      href: m365-lighthouse-alerts-overview.md
+    - name: Create and manage alert rules
+      href: m365-lighthouse-create-manage-alert-rules.md
 - name: Manage tenants
   items: 
     - name: Overview of the Tenants page
@@ -58,6 +72,8 @@
   items:
     - name: Overview of the Users page
       href: m365-lighthouse-users-page-overview.md
+    - name: Overview of the Multifactor authentication page
+      href: m365-lighthouse-mfa-overview.md
     - name: Block user sign-in
       href: m365-lighthouse-block-user-signin.md
     - name: Block sign-in for shared mailbox accounts
@@ -104,6 +120,16 @@
       href: m365-lighthouse-quarantine-messages-overview.md
     - name: Overview of the Apps page
       href: m365-lighthouse-apps-page-overview.md
+- name: Manage opportunities with Sales Advisor
+  items:
+    - name: Overview of Sales Advisor
+      href: m365-lighthouse-sales-advisor-overview.md
+    - name: Get access to Sales Advisor
+      href: m365-lighthouse-get-access-to-sales-advisor.md
+    - name: Understanding opportunities and data
+      href: m365-lighthouse-understanding-opportunities-and-data.md
+    - name: View opportunities in Sales Advisor
+      href: m365-lighthouse-view-opportunities.md
 - name: Get help and support
   items: 
     - name: Get help and support

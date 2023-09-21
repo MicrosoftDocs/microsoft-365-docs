@@ -136,3 +136,4 @@ Now that your pilot is set up and configured, it's helpful to become familiar wi
 Return to the overview for [Evaluate Microsoft Defender for Office 365](eval-defender-office-365-overview.md)
 
 Return to the overview for [Evaluate and pilot Microsoft 365 Defender](eval-overview.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

@@ -115,7 +115,6 @@ Once disabled, accounts will no longer be routed to security.microsoft.com, and 
 - [Microsoft 365 Defender overview](microsoft-365-defender.md)
 - [Microsoft Defender for Endpoint in Microsoft 365 Defender](microsoft-365-security-center-mde.md)
 - [Microsoft delivers unified SIEM and XDR to modernize security operations](https://www.microsoft.com/security/blog/?p=91813)
-- [XDR versus SIEM infographic](https://afrait.com/blog/xdr-versus-siem/)
-- [`The New Defender`](https://afrait.com/blog/the-new-defender/)
 - [About Microsoft 365 Defender](https://www.microsoft.com/microsoft-365/security/microsoft-365-defender)
 - [Microsoft security portals and admin centers](portals.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

@@ -76,3 +76,4 @@ This download is known malware; SmartScreen should block this program from runni
 ## See also
 
 [Microsoft Defender for Endpoint - demonstration scenarios](defender-endpoint-demonstrations.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

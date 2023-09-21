@@ -1,27 +1,26 @@
 ---
-title: Deploy Teams at scale for frontline workers
-author: LanaChin
-ms.author: v-lanachin
+title: Deploy frontline static teams at scale with PowerShell for frontline workers
+author: lana-chin
+ms.author: heidip
+manager: serdars
 ms.reviewer: rahuldey
-manager: samanro
 ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
 search.appverid: MET150
-description: Learn how to deploy Teams at scale for the frontline workers in your organization. 
+description: Learn how to use PowerShell to deploy static teams at scale for the frontline workers in your organization. 
 ms.localizationpriority: high
 ms.collection: 
   - M365-collaboration
   - m365-frontline
   - highpri
-  - tier2
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
 ms.date: 10/28/2022
 ---
 
-# Deploy Teams at scale for frontline workers
+# Deploy frontline static teams at scale with PowerShell for frontline workers
 
 ## Overview
 
@@ -67,8 +66,8 @@ You'll need to create two CSV files for each batch of teams that you deploy:
     |**User Full Name**|The display name of the user.|
     |**User UPN or ID**|The user principal name (UPN) or ID of the user. For example, averyh@contoso.com.|
     |**Team Name**|The name of the team.|
-    |**ActionType**|Whether you're adding or removing the user from the team. Options are **AddMember** and **RemoveMember**.|
-    |**Owner or Member**|Whether the user is a team owner or team member. Options are **Owner** and **Member**.|
+    |**ActionType**|Whether you're adding or removing the user from the team. Options are `AddMember` and `RemoveMember`.|
+    |**Owner or Member**|Whether the user is a team owner or team member. Options are `Owner` and `Member`.|
 
 #### Examples
 
@@ -93,16 +92,16 @@ Use the following examples to help you create your CSV files. Here, we've named 
 
 |User Full Name |User UPN or ID|Team Name|ActionType|Owner or Member|
 |---------|---------|---------|---------|---------|
-|Avery Howard|averyh@contoso.com|Contoso Store 1|AddMember|Owner|
-|Casey Jensen|caseyj@contoso.com|Contoso Store 2|AddMember|Owner|
-|Jessie Irwin|jessiei@contoso.com|Contoso Store 3|AddMember|Owner|
-|Manjeet Bhatia|manjeetb@contoso.com|Contoso Store 4|AddMember|Owner|
-|Mikaela Lee|mikaelal@contoso.com|Contoso Store 5|AddMember|Owner|
-|Morgan Conners|morganc@contoso.com|Contoso Store 6|AddMember|Member|
-|Oscar Ward|oscarw@contoso.com|Contoso Store 7|AddMember|Member|
-|Rene Pelletier|renep@contoso.com|Contoso Store 8|AddMember|Member|
-|Sydney Mattos|sydneym@contoso.com|Contoso Store 9|AddMember|Member|
-|Violet Martinez|violetm@contoso.com|Contoso Store 10|AddMember|Member|
+|Avery Howard|averyh@contoso.com|Contoso Store 1|`AddMember`|`Owner`|
+|Casey Jensen|caseyj@contoso.com|Contoso Store 2|`AddMember`|`Owner`|
+|Jessie Irwin|jessiei@contoso.com|Contoso Store 3|`AddMember`|`Owner`|
+|Manjeet Bhatia|manjeetb@contoso.com|Contoso Store 4|`AddMember`|`Owner`|
+|Mikaela Lee|mikaelal@contoso.com|Contoso Store 5|`AddMember`|`Owner`|
+|Morgan Conners|morganc@contoso.com|Contoso Store 6|`AddMember`|`Member`|
+|Oscar Ward|oscarw@contoso.com|Contoso Store 7|`AddMember`|`Member`|
+|Rene Pelletier|renep@contoso.com|Contoso Store 8|`AddMember`|`Member`|
+|Sydney Mattos|sydneym@contoso.com|Contoso Store 9|`AddMember`|`Member`|
+|Violet Martinez|violetm@contoso.com|Contoso Store 10|`AddMember`|`Member`|
 
 ### Step 2: Set up your environment
 

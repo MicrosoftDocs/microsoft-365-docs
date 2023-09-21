@@ -1,5 +1,5 @@
 ---
-title: Check the health state of the sensor at Microsoft Defender for Endpoint
+title: Check the device health at Microsoft Defender for Endpoint
 description: Check the sensor health on devices to identify which ones are misconfigured, inactive, or aren't reporting sensor data.
 keywords: sensor, sensor health, misconfigured, inactive, no sensor data, sensor data, impaired communications, communication
 ms.service: microsoft-365-security
@@ -16,11 +16,11 @@ ms.collection:
 - m365-security
 - tier2
 ms.topic: conceptual
-ms.date: 04/24/2018
+ms.date: 05/16/2023
 search.appverid: met150
 ---
 
-# Check sensor health state at Microsoft Defender for Endpoint
+# Check service health at Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,18 +31,16 @@ search.appverid: met150
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-checksensor-abovefoldlink)
 
-The **Devices with sensor issues** tile provides information on the individual device's ability to provide sensor data and communicate with the Defender for Endpoint service. It reports how many devices require attention and helps you identify problematic devices and take action to correct known issues.
+The **Device health** tile provides information on the individual device's ability to provide sensor data and communicate with the Defender for Endpoint service. It reports how many devices require attention and helps you identify problematic devices and take action to correct known issues.
 
 There are two status indicators on the tile that provide information on the number of devices that aren't reporting properly to the service:
 
 - **Misconfigured** - These devices might partially be reporting sensor data to the Defender for Endpoint service and might have configuration errors that need to be corrected.
 - **Inactive** - Devices that have stopped reporting to the Defender for Endpoint service for more than seven days in the past month.
 
-Clicking any of the groups directs you to **Devices list**, filtered according to your choice.
+Clicking any of the groups directs you to **Device inventory**, filtered according to your choice.
 
-:::image type="content" source="images/atp-devices-with-sensor-issues-tile.png" alt-text="Devices with sensor issues tile" lightbox="images/atp-devices-with-sensor-issues-tile.png":::
-
-On **Devices list**, you can filter the health state list by the following status:
+On **Device inventory**, you can filter the health state list by the following status:
 
 - **Active** - Devices that are actively reporting to the Defender for Endpoint service.
 - **Misconfigured** - These devices might partially be reporting sensor data to the Defender for Endpoint service but have configuration errors that need to be corrected. Misconfigured devices can have either one or a combination of the following issues:
@@ -55,7 +53,6 @@ You can also download the entire list in CSV format using the **Export** feature
 > [!NOTE]
 > Export the list in CSV format to display the unfiltered data. The CSV file will include all devices in the organization, regardless of any filtering applied in the view itself and can take a significant amount of time to download, depending on how large your organization is.
 
-:::image type="content" source="images/atp-devices-list-page.png" alt-text="The Export tab in the Device list page" lightbox="images/atp-devices-list-page.png":::
 
 You can view the device details when you click on a misconfigured or inactive device.
 
@@ -67,3 +64,4 @@ You can view the device details when you click on a misconfigured or inactive de
 - [Run the client analyzer on Windows](run-analyzer-windows.md)
 - [Run the client analyzer on macOS or Linux](run-analyzer-macos-linux.md)
 - [Data collection for advanced troubleshooting on Windows](data-collection-analyzer.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

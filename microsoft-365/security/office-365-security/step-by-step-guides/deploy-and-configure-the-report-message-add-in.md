@@ -25,7 +25,7 @@ ms.date: 1/31/2023
 
 # Deploy and configure the Report Message add-in to users
 
-The Report Message and Report Phishing add-ins for Outlook make it easy to report phishing to Microsoft and its affiliates for analysis, along with easy triage for admins on the Submissions page at <https://security.microsoft.com/reportsubmission?viewid=user>.
+The Report Message and Report Phishing add-ins for Outlook make it easy to report phishing to Microsoft and its affiliates for analysis, along with easy triage for admins on the **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=user>.
 
 Depending on whether you are licensed for Defender for Office 365, you'll also get added functionality such as alerting & automated investigation and response (AIR), which will remove the burden from your security operations staff. This guide will walk you through configuring the add-in deployment as recommended by the Microsoft Defender for Office 365 team.
 
@@ -33,6 +33,7 @@ Depending on whether you are licensed for Defender for Office 365, you'll also g
 
 - The Report Phishing add-in provides the option to report only phishing messages
 - The Report Message add-in provides the option to report junk, not junk (false positive), and phishing messages
+- The built-in Report button in Outlook on the web *[Learn More](/microsoft-365/security/office-365-security/submissions-outlook-report-messages)*
 
 ## What you'll need
 
@@ -73,3 +74,4 @@ Depending on whether you are licensed for Defender for Office 365, you'll also g
 Learn more about user reported settings [User reported settings](../submissions-user-reported-messages-custom-mailbox.md)
 
 Enable the report message or report phishing add-in [Enable the Microsoft Report Message or Report Phishing add-ins](../submissions-users-report-message-add-in-configure.md)
+

@@ -20,7 +20,7 @@ metadata:
   ms.author: cmcatee #Required; microsoft alias of author; optional team alias.
   manager: scotv
   audience: Admin
-  ms.date: 03/01/2023
+  ms.date: 07/18/2023
   ms.localizationpriority: medium
   search.appverid: MET150
   ROBOTS: NOINDEX NOFOLLOW
@@ -35,6 +35,8 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
+          - text: Introducing the new Microsoft billing experience
+            url: billing-experience-overview.md
           - text: View your bill or invoice
             url: billing-and-payments/view-your-bill-or-invoice.md
           - text: Understand your bill or invoice

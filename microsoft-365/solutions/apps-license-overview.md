@@ -46,7 +46,7 @@ You can freely add and deploy most apps provided within [Microsoft Intune admin 
 
 ## Microsoft app licenses included with Intune
 
-Intune includes several Microsoft apps based on the Microsoft license that you use for Intune. To learn more about the different Microsoft enterprise license available that includes Intune, see [Microsoft Intune licensing](/mem/intune/fundamentals/licenses). To compare the different Microsoft apps that are available with Microsoft 365, see the [licensing options available with Microsoft 365](/microsoft-365/compare-microsoft-365-enterprise-plans). To see all the options for each plan (including the available Microsoft apps), download the full [Microsoft subscription comparison table](https://go.microsoft.com/fwlink/?linkid=2139145) and locate the plans that include Microsoft Intune.
+Intune includes several Microsoft apps based on the Microsoft license that you use for Intune. To learn more about the different Microsoft enterprise license available that includes Intune, see [Microsoft Intune licensing](/mem/intune/fundamentals/licenses). To compare the different Microsoft apps that are available with Microsoft 365, see the [licensing options available with Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans). To see all the options for each plan (including the available Microsoft apps), download the full [Microsoft subscription comparison table](https://go.microsoft.com/fwlink/?linkid=2139145) and locate the plans that include Microsoft Intune.
 
 ### App functionality included with Microsoft 365 E5 license
 
@@ -57,7 +57,7 @@ When you purchase a plan that includes Microsoft Intune, there are [Microsoft ap
 | **Microsoft 365 apps** | Includes online apps, such as Microsoft Word, Excel, PowerPoint, OneNote, Outlook, and more |
 | **Email, calendar, and scheduling** | Includes Microsoft Exchange and Outlook desktop client |
 | **Meetings, calling, and chat** | Includes Microsoft Teams |
-| **Social, intranet, and storage** | Includes SharePoint, Yammer Enterprise, and Viva Connections |
+| **Social, intranet, and storage** | Includes SharePoint, Viva Engage, and Viva Connections |
 | **Content services** | Includes Microsoft Graph API, Microsoft Search, Microsoft Stream, and more |
 | **Project and task management** | Includes Microsoft Planning and Microsoft To-Do |
 | **Analytics** | Includes Productivity Score, Secure Score, Compliance Management, and Power BI Pro |

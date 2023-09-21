@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 1/31/2023
+ms.date: 8/22/2023
 ms.reviewer: gigarrub
 audience: ITPro
 ms.topic: conceptual
@@ -17,15 +17,14 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
 # Step-by-step threat protection in Microsoft Defender for Office 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
-
-**Applies to:**
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 The Microsoft Defender for Office 365 protection or filtering stack can be broken out into four phases, as in this article. Generally speaking, incoming mail passes through all of these phases before delivery, but the actual path email takes is subject to an organization's Defender for Office 365 configuration.
 
@@ -92,7 +91,7 @@ In this phase the filtering stack begins to handle the specific contents of the 
 
 2. **Microsoft Defender Antivirus** and a *third-party Antivirus engine* are used to detect all known malware in attachments.
 
-3. The anti-virus (AV) engines are also used to true-type supported attachment types, which allows **Type blocking** to correctly block file types specified by admins.
+3. The anti-virus (AV) engines use true type matching to detect the file type, regardless of the filename extension (for example, `exe` files renamed to `txt` are detected as `exe` files). This capability allows **Type blocking** (also known as the common attachment filter) to correctly block file types specified by admins. For the list of supported file types, see [True type matching in the common attachments filter](anti-malware-protection-about.md#true-type-matching-in-the-common-attachments-filter).
 
 4. Whenever Microsoft Defender for Office 365 detects a malicious attachment, the file's hash, and a hash of its active content, are added to Exchange Online Protection (EOP) reputation. **Attachment reputation blocking** blocks that file across all Office 365, and on endpoints, through MSAV cloud calls.
 

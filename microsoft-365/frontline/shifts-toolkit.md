@@ -1,8 +1,8 @@
 ---
 title: Help your frontline workers track time and attendance
-author: daisyfell
-ms.author: daisyfeller
-manager: pamgreen
+author: lana-chin
+ms.author: heidip
+manager: serdars
 audience: ITPro
 ms.topic: end-user-help 
 ms.service: microsoft-365-frontline 
@@ -19,7 +19,6 @@ ms.collection:
   - m365solution-scenario
   - m365-frontline
   - highpri
-  - tier1
 ms.reviewer: 
 description: Resources to help train your frontline team in using Shifts to access and manage their schedules.
 appliesto: 

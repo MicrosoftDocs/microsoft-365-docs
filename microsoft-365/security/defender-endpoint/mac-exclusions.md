@@ -57,10 +57,13 @@ Process|A specific process (specified either by the full path or file name) and 
 
 File, folder, and process exclusions support the following wildcards:
 
-Wildcard|Description|Example|Matches|Does not match
----|---|---|---|---
-\*|Matches any number of any characters including none (note that when this wildcard is used inside a path it will substitute only one folder)|`/var/*/*.log`|`/var/log/system.log`|`/var/log/nested/system.log`
-?|Matches any single character|`file?.log`|`file1.log` <p> `file2.log`|`file123.log`
+Wildcard|Description|Examples|
+---|---|---
+\*|Matches any number of any characters including none (note if this wildcard is not used at the end of the path then it will substitute only one folder)| `/var/*/tmp` includes any file in `/var/abc/tmp` and its subdirectories, and `/var/def/tmp` and its subdirectories. It does not include `/var/abc/log` or `/var/def/log` <p> <p> `/var/*/` includes any file in `/var` and its subdirectories. 
+?|Matches any single character|`file?.log` includes `file1.log` and `file2.log`, but not`file123.log`
+> [!NOTE]
+> When using the * wildcard at the end of the path, it will match all files and subdirectories under the parent of the wildcard.
+
 
 > [!NOTE]
 > The product attempts to resolve firmlinks when evaluating exclusions. Firmlink resolution does not work when the exclusion contains wildcards or the target file (on the `Data` volume) does not exist.
@@ -86,10 +89,10 @@ You can validate that your exclusion lists are working by using `curl` to downlo
 In the following Bash snippet, replace `test.txt` with a file that conforms to your exclusion rules. For example, if you have excluded the `.testing` extension, replace `test.txt` with `test.testing`. If you are testing a path, ensure that you run the command within that path.
 
 ```bash
-curl -o test.txt https://www.eicar.org/download/eicar.com.txt
+curl -o test.txt https://secure.eicar.org/eicar.com.txt
 ```
 
-If Defender for Endpoint on Mac reports malware, then the rule is not working. If there is no report of malware, and the downloaded file exists, then the exclusion is working. You can open the file to confirm that the contents are the same as what is described on the [EICAR test file website](http://2016.eicar.org/86-0-Intended-use.html).
+If Defender for Endpoint on Mac reports malware, then the rule is not working. If there is no report of malware, and the downloaded file exists, then the exclusion is working. You can open the file to confirm that the contents are the same as what is described on the [EICAR test file website](https://www.eicar.org/download-anti-malware-testfile/).
 
 If you do not have Internet access, you can create your own EICAR test file. Write the EICAR string to a new text file with the following Bash command:
 
@@ -120,3 +123,4 @@ For example, to add `EICAR-Test-File (not a virus)` (the threat name associated 
 ```bash
 mdatp threat allowed add --name "EICAR-Test-File (not a virus)"
 ```
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

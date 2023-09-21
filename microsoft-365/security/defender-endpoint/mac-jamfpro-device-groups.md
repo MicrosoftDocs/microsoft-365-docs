@@ -55,3 +55,4 @@ Set up the device groups similar to Group policy  organizational unite (OUs), Mi
 
 ## Next step
 - [Set up Microsoft Defender for Endpoint on macOS policies in Jamf Pro](mac-jamfpro-policies.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

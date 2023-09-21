@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.reviewer: jomaun
+ms.reviewer: nehabha
 ms.date: 05/01/2023
 f1.keywords: NOCSH 
 ms.collection: 
@@ -74,3 +74,4 @@ To view or edit email notification settings for your company, follow these steps
 Proceed to:
 
 - [Step 5: Onboard devices to Defender for Business](mdb-onboard-devices.md)
+- [Step 6: Set up, review, and edit your security policies and settings in Microsoft Defender for Business](mdb-configure-security-settings.md)

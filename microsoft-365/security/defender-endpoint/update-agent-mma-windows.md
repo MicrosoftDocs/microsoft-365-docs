@@ -1,16 +1,12 @@
 ---
 title: Update your agent on devices for Microsoft Defender for Endpoint
 description: Learn about your options for updating or replacing your MMA agent on Windows devices for Defender for Endpoint.
-keywords: MMA, agent, azure log
 ms.service: microsoft-365-security
 ms.subservice: mde
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
-ms.date: 10/25/2022
+ms.date: 07/11/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -22,6 +18,9 @@ search.appverid: met150
 ---
 
 # Updating MMA on Windows devices for Microsoft Defender for Endpoint
+
+> [!IMPORTANT]
+> If you've arrived on this page as a result of clicking on a notification at the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), you have devices in your environment with outdated agents, and you need to take action (see below) to avoid service disruption. For more details, please reference message center post MC598631 (requires access to [Message Center](/microsoft-365/admin/manage/message-center)).
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
@@ -35,7 +34,9 @@ If you're using the Microsoft Monitoring Agent (MMA) on Windows devices, it's im
 
 ## Update MMA on your devices
 
-*This option applies to devices running Windows 7 SP1 Enterprise, Windows 7 SP1 Pro, Windows 8.1 Pro, Windows 8.1 Enterprise, and Windows Server 2008 R2 SP1.* 
+*This option applies to devices running Windows 7 SP1 Enterprise, Windows 7 SP1 Pro, Windows 8.1 Pro, Windows 8.1 Enterprise, and Windows Server 2008 R2 SP1.*
+
+- To help you identify older versions of the MMA inside of your organization, you can use the "EOSDate" column in advanced hunting. Or, follow the instructions in [Plan for end-of-support software and software versions](/microsoft-365/security/defender-vulnerability-management/tvm-end-of-support-software) to use the vulnerability management feature inside of Microsoft Defender for Endpoint to track remediation.
 
 - See [Manage and maintain the Log Analytics agent for Windows and Linux](/azure/azure-monitor/agents/agent-manage?tabs=PowerShellLinux) for instructions on how to upgrade the agent using Azure Automation or a command line approach for use with various deployment tools and methods at your disposal. 
 
@@ -66,7 +67,7 @@ A new agent was released in April 2022 for Windows Server 2012 R2 and Windows Se
 
 - If you've determined that you aren't using the MMA for Defender for Endpoint, or you've already updated your agent, no other steps are needed. 
 
-- If you are, however, still using MMA for other purposes (such as Log Analytics), MMA is currently set to retire in August 2024. See [We're retiring the Log Analytics agent in Azure Monitor on 31 August 2024](https://azure.microsoft.com/updates/were-retiring-the-log-analytics-agent-in-azure-monitor-on-31-august-2024/). Depending your particular scenario, this could be a good time to upgrade to [Azure Monitoring Agent, the successor of MMA](/azure/azure-monitor/agents/azure-monitor-agent-migration). 
+- If you are, however, still using MMA for other purposes (such as Log Analytics), MMA is currently set to retire in August 2024. See [We're retiring the Log Analytics agent in Azure Monitor on 31 August 2024](https://azure.microsoft.com/updates/were-retiring-the-log-analytics-agent-in-azure-monitor-on-31-august-2024/). Depending on your particular scenario, this could be a good time to upgrade to [Azure Monitoring Agent, the successor of MMA](/azure/azure-monitor/agents/azure-monitor-agent-migration). 
 
 > [!IMPORTANT]
 > Devices running Windows 7 SP1, Windows 8.1, Windows Server 2008 R2, Windows Server 2012 R2, or Windows Server 2016 that haven't been upgraded to the [new, unified solution](application-deployment-via-mecm.md) will remain dependent on MMA. In such cases, [AMA](/azure/azure-monitor/agents/agents-overview) cannot be used as a substitute for Defender for Endpoint. 
@@ -76,3 +77,5 @@ A new agent was released in April 2022 for Windows Server 2012 R2 and Windows Se
 - [Make the switch from non-Microsoft endpoint protection to Microsoft Defender for Endpoint](switch-to-mde-overview.md)
 - [Microsoft Defender for Endpoint deployment overview](deployment-phases.md)
 - [Onboard to the Microsoft Defender for Endpoint service](onboarding.md)
+
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

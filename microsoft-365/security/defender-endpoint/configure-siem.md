@@ -131,3 +131,4 @@ For more information, see:
 - [Hello World example (describes how to register an application in Azure Active Directory)](api-hello-world.md)
 - [Get access with application context](exposed-apis-create-app-webapp.md)
 - [Microsoft 365 Defender SIEM integration](../defender/configure-siem-defender.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

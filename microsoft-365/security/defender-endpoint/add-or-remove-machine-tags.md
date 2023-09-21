@@ -14,7 +14,8 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
-ms.topic: conceptual
+- must-keep
+ms.topic: reference
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
@@ -64,7 +65,7 @@ Delegated (work or school account)|Machine.ReadWrite|'Read and write machine inf
 ## HTTP request
 
 ```http
-PATCH https://api.securitycenter.microsoft.com/api/machines/{id}/tags
+POST https://api.securitycenter.microsoft.com/api/machines/{id}/tags
 ```
 
 ## Request headers
@@ -103,3 +104,4 @@ POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2
 ```
 
 To remove machine tag, set the Action to 'Remove' instead of 'Add' in the request body.
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

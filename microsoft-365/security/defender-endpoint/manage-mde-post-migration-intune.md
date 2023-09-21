@@ -1,12 +1,8 @@
 ---
 title: Manage Microsoft Defender for Endpoint using Intune
 description: Learn how to manage Microsoft Defender for Endpoint with Intune
-keywords: post-migration, manage, operations, maintenance, utilization, intune, Microsoft Defender for Endpoint, edr
 ms.service: microsoft-365-security
 ms.subservice: mde
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
@@ -15,8 +11,8 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
-ms.topic: conceptual
-ms.date: 01/27/2023
+ms.topic: how-to
+ms.date: 09/12/2023
 ms.reviewer: chventou
 search.appverid: met150
 ---
@@ -38,13 +34,11 @@ We recommend using Microsoft Intune to manage your organization's threat protect
 > [!IMPORTANT]
 > You must have either the global administrator or service administrator role assigned in Intune to configure the settings described in this article. To learn more, see **[Types of administrators (Intune)](/mem/intune/fundamentals/users-add#types-of-administrators)**.
 
-1. Go to the Azure portal ([https://portal.azure.com](https://portal.azure.com)) and sign in.
+1. Go to the [Microsoft Intune admin center](https://endpoint.microsoft.com/#home) and sign in.
 
-2. Under **Azure Services**, choose **Intune**.
+2. In the navigation pane on the left, choose **Device configuration**, and then, under **Manage**, choose **Profiles**.
 
-3. In the navigation pane on the left, choose **Device configuration**, and then, under **Manage**, choose **Profiles**.
-
-4. Select an existing profile, or create a new one.
+3. Select an existing profile, or create a new one.
 
 > [!TIP]
 > Need help? See **[Using Microsoft Defender for Endpoint with Intune](/mem/intune/protect/advanced-threat-protection#example-of-using-microsoft-defender-atp-with-intune)**.
@@ -82,3 +76,4 @@ If you haven't already done so, configure your Microsoft 365 Defender portal to 
 
 - [Get an overview of Defender Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

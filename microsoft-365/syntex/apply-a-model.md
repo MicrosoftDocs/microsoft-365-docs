@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
-ms.date: 07/01/2022
+ms.date: 10/01/2022
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -112,7 +112,7 @@ An applied model processes all files and folder content uploaded to the document
 
 ### Classification Date field
 
-When a custom is applied to a document library, the **Classification Date** field is included in the library schema. By default, this field is empty. However, when documents are processed and classified by a model, this field is updated with a date-time stamp of completion. 
+When a custom model is applied to a document library, the **Classification Date** field is included in the library schema. By default, this field is empty. However, when documents are processed and classified by a model, this field is updated with a date-time stamp of completion. 
 
    ![Screenshot of a document library showing the Classification Date column.](../media/content-understanding/class-date-column.png) 
 
@@ -132,10 +132,4 @@ To run the flow:
 
     ![Screenshot showing the Create a flow panel and flow option highlighted.](../media/content-understanding/integrate-create-flow.png) 
 
-## See also
 
-[Share an enterprise model](model-discovery.md)
-
-[Discover other trained models](discover-other-trained-models.md)
-
-[Choose the view in a document library](choose-library-view.md)

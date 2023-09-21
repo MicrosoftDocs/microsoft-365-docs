@@ -33,7 +33,7 @@ Adoption Score supports the journey to digital transformation with insights abou
 To get started with Communication insights, people in your organization need to be licensed for:
 
 - Microsoft Teams
-- Yammer
+- Viva Engage
 - Exchange Online
 
 For more information, see [assign licenses to users](../manage/assign-licenses-to-users.md).
@@ -58,9 +58,9 @@ Microsoft 365 provides people the flexibility to fit everyone's communication st
 
    - Sending emails through Exchange
    - Sending messages through Teams
-   - Posting on communities in Yammer
+   - Posting on communities in Viva Engage
 
-   This key metric is shown as a percentage of all people who are using two or more of Exchange, Teams, or Yammer.
+   This key metric is shown as a percentage of all people who are using two or more of Exchange, Teams, or Viva Engage.
 
 2. **Body:** Provides more information on how flexibility in the modes of communication is valuable to people in your org.
 
@@ -110,10 +110,10 @@ We also provide you with information that helps you gain visibility into how you
      - **Numerator**: People sending messages on Microsoft Teams in the last 28 days.
      - **Denominator**: People enabled for Microsoft Teams in the last 28 days.
 
-   - **People posting in communities:** The colored portion and the fraction represent the percentage of users enabled for Yammer that are posting in communities. This fraction is constructed from:
+   - **People posting in communities:** The colored portion and the fraction represent the percentage of users enabled for Viva Engage that are posting in communities. This fraction is constructed from:
 
-     - **Numerator:** People posting in Yammer communities in the last 28 days.
-     - **Denominator:** People enabled for Yammer in the last 28 days.
+     - **Numerator:** People posting in Viva Engage communities in the last 28 days.
+     - **Denominator:** People enabled for Viva Engage in the last 28 days.
 
 4. **View related content:** Select this link to view collated videos, and other related help content.
 
@@ -162,13 +162,13 @@ We also provide you with information that helps you gain visibility into how you
 
 4. **View related content:** Select this link to view collated videos, and other related help content.
 
-### Questions and Answers in Yammer
+### Questions and Answers in Viva Engage
 
-:::image type="content" source="../../media/yammerqsandas.png" alt-text="[Questions and answers in Yammer]":::
+:::image type="content" source="../../media/viva-engage-qsandas.png" alt-text="[Questions and answers in Viva Engage]":::
 
-1. **Header:** Highlights the posts marked as questions on Yammer that have received an answer marked as &quot;Best answer&quot; as a percentage of all posts marked as questions on Yammer in the last 28 days.
+1. **Header:** Highlights the posts marked as questions on Viva Engage that have received an answer marked as &quot;Best answer&quot; as a percentage of all posts marked as questions on Viva Engage in the last 28 days.
 
-2. **Body:** Provides information on the value of using questions and answers in Yammer to share knowledge.
+2. **Body:** Provides information on the value of using questions and answers in Viva Engage to share knowledge.
 
 3. **Visualization:** Breaks down the use of the questions and answers feature in your organization:
 

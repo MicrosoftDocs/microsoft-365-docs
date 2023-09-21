@@ -1,13 +1,8 @@
 ---
 title: Device health Microsoft Defender Antivirus health report
 description: Use the Microsoft Defender Antivirus report to track antivirus status and Microsoft Defender Antivirus engine, intelligence, and platform versions.
-keywords: Microsoft Defender Antivirus report, engine version, intelligence version, and platform versions, antivirus
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 localization_priority: Normal
@@ -37,6 +32,12 @@ ms.reviewer: mkaminska
 The Device Health report provides information about the devices in your organization. The report includes trending information showing the antivirus status and Microsoft Defender Antivirus engine, intelligence, and platform versions.
 
 > [!IMPORTANT]
+> For devices to appear in Microsoft Defender Antivirus device health reports they must meet the following pre-requisites:  
+>
+> - Device is onboarded to Microsoft Defender for Endpoint
+> - OS: Windows 10, Windows 11, Windows Server 2012 R2/, 2016 R2/ 2019/2022 (non MMA), MacOS, Linux 
+> - Sense (MsSense.exe): **10.8210.** \*+. See [Prerequisites](#prerequisites) section for related details.
+>
 > For Windows&nbsp;Server&nbsp;2012&nbsp;R2 and Windows&nbsp;Server&nbsp;2016 to appear in device health reports, these devices must be onboarded using the modern unified solution package. For more information, see [New functionality in the modern unified solution for Windows Server 2012 R2 and 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution).
 
 In the Microsoft 365 Security dashboard navigation panel, select **Reports**, and then open **Device health and compliance**. The [**Microsoft Defender Antivirus health** tab](#microsoft-defender-antivirus-health-tab) has eight cards that report on the following aspects of Microsoft Defender Antivirus:
@@ -99,11 +100,11 @@ Up-to-date reporting generates information for devices that meet the following c
 - Engine version: 1.1.19300.2+
 - Platform version: 4.18.2202.1+
 - Cloud protection enabled
-- MsSense.exe version 10.8210.x or later
+- Sense (MsSense.exe): **10.8210.** \*+
 - Windows OS - Windows 10 1809 or later
 
   > [!NOTE]
-  > Currently up to date reporting is only available for Windows devices. Cross platform devices such as Mac and Linux are listed under "No data available"/Unknown.
+  > \* Currently up to date reporting is only available for Windows devices. Cross platform devices such as Mac and Linux are listed under "No data available"/Unknown.
 
 :::image type="content" source="images/device-health-defender-antivirus-health-tab.png" alt-text="Shows the Microsoft Defender Antivirus Health tab." lightbox="images/device-health-defender-antivirus-health-tab.png":::
 
@@ -270,15 +271,15 @@ Following are up-to-date definitions for engine and platform:
 
 | The engine/platform on the device is considered: | Situation |
 |:---|:---|
-| **up-to-date** | If the device communicated with the Defender report event ('Signature refresh time') within last seven days, and the Engine or Platform version build time is within last 60 days. |
-| **out-of-date** | If the device communicated with the Defender report event ('Signature refresh time') within last seven days, but Engine or Platform version build time is older than 60 days. |
+| **up to date** | If the device communicated with the Defender report event ('Signature refresh time') within last seven days, and the Engine or Platform build version is greater than or equal to (`>=`) the most recent monthly release version. |
+| **out-of-date** | If the device communicated with the Defender report event ('Signature refresh time') within last seven days, but Engine or Platform build version is less than (`<`) the most recent monthly release version. |
 | **unknown (no data available)** | If the device hasn't communicated with the report event ('Signature refresh time') for more than seven days. |
 
 Following is the definitions for up-to-date security intelligence:
 
 | The security intelligence update is considered: | Situation |
 |:---|:---|
-|**up-to-date** | If the security intelligence version on the device was written in the past seven days and the device has communicated with the report event in past seven days. |
+|**up to date** | If the security intelligence version on the device was written in the past seven days and the device has communicated with the report event in past seven days. |
 
 For more information, see:
 
@@ -364,3 +365,4 @@ The following table lays out the possible up to date report values for **Securit
 > - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
 > - [Configure Defender for Endpoint on Android features](android-configure.md)
 > - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

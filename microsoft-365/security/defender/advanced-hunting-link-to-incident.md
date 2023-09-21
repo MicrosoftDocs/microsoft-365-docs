@@ -86,3 +86,4 @@ You can also select the event to open the **Inspect record** pane.
 You can view which alerts were generated from advanced hunting by filtering the Incidents queue and Alerts queue by **Manual** detection source.
 
 :::image type="content" source="../../media/link-to-incident-8-filter.png" alt-text="The manual filtering of Incidents and Alerts queue in the Filters page in the Microsoft 365 Defender portal " lightbox="../../media/link-to-incident-8-filter.png":::
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

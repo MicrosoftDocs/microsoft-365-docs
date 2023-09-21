@@ -4,7 +4,7 @@ description: Identify personal, unmanaged devices and company-owned devices, and
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-ms.date: 04/14/2023
+ms.date: 05/08/2023
 ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: m365bp
@@ -45,19 +45,20 @@ For their part in protecting managed devices, users can:
 
 To learn more about protecting managed devices, see [Set up and secure managed devices](m365bp-protect-managed-devices.md).
 
-##  [**BYOD**](#tab/BYOD)
+##  [**Unmanaged devices**](#tab/Unmanaged)
 
-To protect unmanaged (BYOD) devices, your organization's IT or security team can:
+To protect unmanaged devices, such as BYOD devices, your organization's IT or security team can:
 
 - **Encourage users to keep their antivirus protection turned on and up to date**. Devices should have the latest technology and features needed to protect against new malware and attack techniques. Microsoft regularly releases security intelligence updates and product updates. To learn more, see [Microsoft Defender Antivirus security intelligence and product updates](../security/defender-endpoint/microsoft-defender-antivirus-updates.md).
-- **Onboard devices and protect them with [mobile threat defense](../security/defender-business/mdb-mtd.md) capabilities**. Or, if you prefer to use [Microsoft Intune](/mem/intune/fundamentals/what-is-intune), you can use Intune to enroll and manage devices. To learn more, see [Onboard devices to Microsoft Defender for Business](m365bp-onboard-devices-mdb.md).
-- **View and monitor device health in the Microsoft 365 Defender portal** ([https://security.microsoft.com](https://security.microsoft.com)). You can view details, such as health state and exposure level for onboarded devices. You can also take actions, such as running an antivirus scan or starting an automated investigation on a device that has detected threats or vulnerabilities. To learn more, see [Monitor onboarded devices](m365bp-device-states.md) and [Review detected threats](m365bp-review-threats-take-action.md). 
+- **Consider onboarding unmanaged devices and protecting them with [mobile threat defense](../security/defender-business/mdb-mtd.md) capabilities**. Or, if you prefer to use [Microsoft Intune](/mem/intune/fundamentals/what-is-intune), you can use Intune to enroll and manage devices. To learn more, see [Onboard devices to Microsoft Defender for Business](m365bp-onboard-devices-mdb.md).
+- **View and monitor device health in the Microsoft 365 Defender portal** ([https://security.microsoft.com](https://security.microsoft.com)). After devices are onboarded to Defender for Business (or Intune), you can view details, such as health state and exposure level for onboarded devices. You can also take actions, such as running an antivirus scan or starting an automated investigation on a device that has detected threats or vulnerabilities. To learn more, see [Monitor onboarded devices](m365bp-device-states.md) and [Review detected threats](m365bp-review-threats-take-action.md). 
 
 For their part in protecting unmanaged devices, users can:
 
 - **Turn on encryption and firewall protection**. Disk encryption protects data when devices are lost or stolen. Firewall protection helps protect devices from unwanted contact initiated by other computers when you're connected to the Internet or a network. To learn more, see [Protect unmanaged Windows PCs and Macs in Microsoft 365 Business Premium](m365bp-protect-pcs-macs.md).
 - **Make sure antivirus/antimalware software is installed and up to date on all devices**. To learn more, see  [Stay protected with Windows Security](https://support.microsoft.com/en-us/windows/stay-protected-with-windows-security-2ae0363d-0ada-c064-8b56-6a39afb6a963).
 - **Keep their devices up to date with operating system and application updates**. To learn more, see [Keep your PC up to date](https://support.microsoft.com/en-us/windows/keep-your-pc-up-to-date-de79813c-7919-5fed-080f-0871c7bd9bde).
+- **Consider allowing their devices to be managed by your security team**. Microsoft 365 Business Premium includes advanced protection from ransomware, malware, phishing, and other threats. To learn more, select the **Managed devices** tab (in this article).
 
 To learn more about protecting unmanaged devices, see [Set up unmanaged (BYOD) devices](m365bp-set-up-unmanaged-devices.md).
 

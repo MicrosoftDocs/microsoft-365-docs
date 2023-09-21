@@ -41,9 +41,9 @@ ms.date: 02/18/2020
 | 1/10/2020 | [Microsoft 365 Reports in the admin center - OneDrive for Business usage](/Office365/Admin/activity-reports/onedrive-for-business-usage) | modified |
 | 1/10/2020 | [Microsoft 365 Reports in the admin center - SharePoint activity](/Office365/Admin/activity-reports/sharepoint-activity) | modified |
 | 1/10/2020 | [Microsoft 365 Reports in the admin center - SharePoint site usage](/Office365/Admin/activity-reports/sharepoint-site-usage) | modified |
-| 1/10/2020 | [Microsoft 365 Reports in the admin center - Yammer activity report](/Office365/Admin/activity-reports/yammer-activity-report) | modified |
-| 1/10/2020 | [Microsoft 365 Reports in the admin center - Yammer device usage report](/Office365/Admin/activity-reports/yammer-device-usage-report) | modified |
-| 1/10/2020 | [Microsoft 365 Reports in the admin center - Yammer groups activity report](/Office365/Admin/activity-reports/yammer-groups-activity-report) | modified |
+| 1/10/2020 | [Microsoft 365 Reports in the admin center - Viva Engage activity report](/Office365/Admin/activity-reports/viva-engage-activity-report) | modified |
+| 1/10/2020 | [Microsoft 365 Reports in the admin center - Viva Engage device usage report](/Office365/Admin/activity-reports/viva-engage-device-usage-report) | modified |
+| 1/10/2020 | [Microsoft 365 Reports in the admin center - Viva Engage groups activity report](/Office365/Admin/activity-reports/viva-engage-groups-activity-report) | modified |
 | 1/10/2020 | [About admin roles in the Microsoft 365 admin center](/Office365/Admin/add-users/about-admin-roles) | modified |
 | 1/10/2020 | [Add users individually or in bulk to Microsoft 365](/Office365/Admin/add-users/add-users) | modified |
 | 1/10/2020 | [About admin roles](/Office365/Admin/add-users/admin-roles-page) | modified |

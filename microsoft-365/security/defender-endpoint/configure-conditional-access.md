@@ -113,8 +113,11 @@ Take the following steps to enable Conditional Access:
 6. Select **Enable policy**, and then **Create** to save your changes.
 
 > [!NOTE]
-> You can use the Microsoft Defender for Endpoint app along with the Approved Client app and Compliant Device (Require device to be marked as compliant) controls in Azure AD Conditional Access policies. There's no exclusion required for the Microsoft Defender for Endpoint app while setting up Conditional Access. Although Microsoft Defender for Endpoint on Android & iOS (App ID - dd47d17a-3194-4d86-bfd5-c6ae6f5651e3) isn't an approved app, it is able to report device security posture in both these grant permissions. This permission enables the flow for compliance information to Conditional Access.
+> You can use the Microsoft Defender for Endpoint app along with the Approved Client app and Compliant Device (Require device to be marked as compliant) controls in Azure AD Conditional Access policies. There's no exclusion required for the Microsoft Defender for Endpoint app while setting up Conditional Access. Although Microsoft Defender for Endpoint on Android & iOS (App ID - dd47d17a-3194-4d86-bfd5-c6ae6f5651e3) isn't an approved app, it is able to report device security posture in both these grant permissions. However, internally Defender requests **MSGraph/User.read** scope and **Intune Tunnel** scope (in case of Defender+Tunnel scenarios). So these scopes must be excluded*. To exclude MSGraph/User.read scope, any one cloud app can be excluded. To exclude Tunnel scope, you need to exclude 'Microsoft Tunnel Gateway'.These permission and exclusions enables the flow for compliance information to Conditional Access.
+
+*Please note that applying a Conditional Access policy to All Cloud Apps could inadvertently block user access in some cases, so it's not recommended. Read more about [Conditional Access policies on Cloud Apps](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#all-cloud-apps)
 
 For more information, see [Enforce compliance for Microsoft Defender for Endpoint with Conditional Access in Intune](/intune/advanced-threat-protection).
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-conditionalaccess-belowfoldlink)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

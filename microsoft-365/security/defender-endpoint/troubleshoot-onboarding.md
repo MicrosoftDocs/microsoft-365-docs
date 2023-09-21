@@ -17,7 +17,7 @@ ms.collection:
 ms.topic: troubleshooting
 ms.subservice: mde
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 06/14/2023
 ---
 
 # Troubleshoot Microsoft Defender for Endpoint onboarding issues
@@ -95,6 +95,7 @@ If the script fails and the event is an error, you can check the event ID in the
 |`35`|The script failed to find needed onboarding status registry value|When the SENSE service starts for the first time, it writes onboarding status to the registry location <p> `HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status`. <p> The script failed to find it after several seconds. You can manually test it and check if it's there. For more information on events and errors related to SENSE, see [Review events and errors using Event viewer](event-error-codes.md).|
 |`40`|SENSE service onboarding status isn't set to **1**|The SENSE service has failed to onboard properly. For more information on events and errors related to SENSE, see [Review events and errors using Event viewer](event-error-codes.md).|
 |`65`|Insufficient privileges|Run the script again with administrator privileges.|
+|`70`|Offboarding script is for a different organization|Get an offboarding script for the correct organization that the SENSE service is onboarded to.|
 |
 
 ### Troubleshoot onboarding issues using Microsoft Intune
@@ -209,7 +210,7 @@ If the deployment tools used do not indicate an error in the onboarding process,
    |`63`|Updating the start type of external service. Name: %1, actual start type: %2, expected start type: %3, exit code: %4|Identify what is causing changes in start type of mentioned service. If the exit code isn't 0, fix the start type manually to expected start type.|
    |`64`|Starting stopped external service. Name: %1, exit code: %2|Contact support if the event keeps re-appearing.|
    |`68`|The start type of the service is unexpected. Service name: %1, actual start type: %2, expected start type: %3|Identify what is causing changes in start type. Fix mentioned service start type.|
-   |`69`|The service is stopped. Service name: %1|Start the mentioned service. Contact support if persists.|
+   |`69`|The service is stopped. Service name: %1|Start the mentioned service. Contact support if the issue persists.|
    |
 
 There are additional components on the device that the Microsoft Defender for Endpoint agent depends on to function properly. If there are no onboarding related errors in the Microsoft Defender for Endpoint agent event log, proceed with the following steps to ensure that the additional components are configured correctly.
@@ -217,6 +218,10 @@ There are additional components on the device that the Microsoft Defender for En
 <span id="ensure-the-diagnostics-service-is-enabled" />
 
 ### Ensure the diagnostic data service is enabled
+
+   > [!NOTE]
+   > In Windows 10 build 1809 and later, the Defender for Endpoint EDR service no longer has a direct dependency on the DiagTrack service.
+   > The EDR cyber evidence can still be uploaded if this service is not running. 
 
 If the devices aren't reporting correctly, you might need to check that the Windows diagnostic data service is set to automatically start and is running on the device. The service might have been disabled by other programs or user configuration changes.
 
@@ -494,3 +499,4 @@ The steps below provide guidance for the following scenario:
 - [Troubleshoot Microsoft Defender for Endpoint](troubleshoot-mdatp.md)
 - [Onboard devices](onboard-configure.md)
 - [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

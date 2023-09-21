@@ -58,8 +58,7 @@ Endpoint Attack Notifications are alerts that have been hand crafted by Microsof
 - The alerts queue in the Microsoft 365 Defender portal
 - Using the [API](../../security/defender-endpoint/get-alerts.md)
 - [DeviceAlertEvents](../../security/defender-endpoint/advanced-hunting-devicealertevents-table.md) table in Advanced hunting
-- Your email if you [configure an email notifications](../../security/defender-endpoint/configure-email-notifications.md) rule
-
+- Your email if you [configure an email notifications](../../security/defender-endpoint/configure-vulnerability-email-notifications.md) rule
 
 Endpoint Attack Notifications can be identified by:
 - Have a tag named **Endpoint Attack Notification**
@@ -75,3 +74,4 @@ You can create rules to send email notifications for notification recipients. Se
 ## Next steps
 
 - To proactively hunt threats across endpoints, Office 365, cloud applications, and identity, refer to [Microsoft Defender Experts for Hunting](../defender/defender-experts-for-hunting.md).
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

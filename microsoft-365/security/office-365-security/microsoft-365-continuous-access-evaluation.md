@@ -28,7 +28,7 @@ ms.date: 1/31/2023
 
 Modern cloud services that use OAuth 2.0 for authentication traditionally rely on access token expiration to revoke a user account's access. In practice, this means even if an administrator revokes a user account's access, the user will still have access until the access token expires, which for Microsoft 365 by default, used to be up to an hour after the initial revocation event took place.
 
-Conditional access evaluation for Microsoft 365 and Azure Active Directory (Azure AD) proactively terminates active user sessions and enforces tenant policy changes in near real time instead of relying on access token expiration. Azure AD notifies continuous access evaluation-enabled Microsoft 365 services (such as SharePoint, Teams, and Exchange) when the user account or tenant has changed in a way that requires reevaluation of the user account's authentication state.
+Continuous access evaluation for Microsoft 365 and Azure Active Directory (Azure AD) proactively terminates active user sessions and enforces tenant policy changes in near real time instead of relying on access token expiration. Azure AD notifies continuous access evaluation-enabled Microsoft 365 services (such as SharePoint, Teams, and Exchange) when the user account or tenant has changed in a way that requires reevaluation of the user account's authentication state.
 
 When a continuous access evaluation-enabled client such as Outlook tries to access Exchange with an existing access token, the token is rejected by the service, prompting a new Azure AD authentication. The result is near real time enforcement of user account and policy changes.
 

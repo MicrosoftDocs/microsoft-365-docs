@@ -176,7 +176,7 @@ After you install the Endpoint Protection client on your reference computer, ver
 
 1. On the reference computer, open **System Center Endpoint Protection** from the Windows notification area.
 1. On the **Home** tab of the **System Center Endpoint Protection** dialog box, verify that **Real-time protection** is set to **On.**
-1. Verify that **Up-to-date** is displayed for **Virus and spyware definitions.**
+1. Verify that **up to date** is displayed for **Virus and spyware definitions.**
 1. To make sure that your reference computer is ready for imaging, under **Scan options,** select **Full,** and then click **Scan now.**
 
 
@@ -269,3 +269,4 @@ For more information, see [Introduction to compliance settings in System Center 
 - [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
 - [Run a detection test on a newly onboarded Microsoft Defender for Endpoint device](run-detection-test.md)
 - [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

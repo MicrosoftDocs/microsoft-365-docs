@@ -1,15 +1,11 @@
 ---
 title: Web content filtering
 description: Use web content filtering in Microsoft Defender for Endpoint to track and regulate access to websites based on their content categories.
-keywords: web protection, web threat protection, web browsing, monitoring, reports, cards, domain list, security, phishing, malware, exploit, websites, network protection, Edge, Internet Explorer, Chrome, Firefox, web browser
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
-ms.date: 01/31/2023
+ms.date: 09/07/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -57,9 +53,10 @@ Before trying out this feature, make sure you meet the requirements described in
 
 | Requirement | Description |
 |:---|:---|
-| Subscription | Your subscription must include one of the following:<br/>- [Windows 10/11 Enterprise E5](/windows/deployment/deploy-enterprise-licenses)<br/>- [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise/e5?activetab=pivot%3aoverviewtab)<br/>- Microsoft 365 E5 Security<br/>- [Microsoft 365 E3](https://www.microsoft.com/microsoft-365/enterprise/e3?activetab=pivot%3aoverviewtab)<br/>- [Microsoft Defender for Endpoint Plan 1 or Plan 2](../defender/eval-defender-endpoint-overview.md)<br/>- [Microsoft Defender for Business](../defender-business/mdb-overview.md)<br/>- [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium)|
+| Subscription | Your subscription must include one of the following:<br/>- [Windows 10/11 Enterprise E5](/windows/deployment/deploy-enterprise-licenses)<br/>- [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise/e5?activetab=pivot%3aoverviewtab)<br/>- Microsoft 365 A5<br/>- Microsoft 365 E5 Security<br/>- [Microsoft 365 E3](https://www.microsoft.com/microsoft-365/enterprise/e3?activetab=pivot%3aoverviewtab)<br/>- [Microsoft Defender for Endpoint Plan 1 or Plan 2](../defender/eval-defender-endpoint-overview.md)<br/>- [Microsoft Defender for Business](../defender-business/mdb-overview.md)<br/>- [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium)|
 | Portal access | You must have access to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. |
 | Operating system | Your organization's devices must be running one of the following operating systems with the [latest antivirus/antimalware updates](microsoft-defender-antivirus-updates.md): <br/>- Windows 11<br/>- Windows 10 Anniversary Update (version 1607) or later <br/>- For information on MacOS availability, see [Network Protection for MacOS](network-protection-macos.md)<br/>- For information on Linux availability, see [Network Protection for Linux](network-protection-linux.md)|
+| Browser | Your organization's devices must be running one of the following browsers: <br/>- Microsoft Edge<br/>- Google Chrome<br/>- Mozilla FireFox<br/>- Brave<br/>- Opera<br/>- Internet Explorer|
 | Related protection | [Windows Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) and [network protection](network-protection.md) must be enabled on your organization's devices. |
 
 ## Data handling
@@ -93,88 +90,16 @@ Web content filtering policies specify which site categories are blocked on whic
 
 Policies can be deployed to block any of the following parent or child categories:
 
-<details>
-<summary>Adult content</summary>
+| Parent category | Child categories |
+|---|---|
+| **Adult content** | - **Cults**: Sites related to groups or movements whose members demonstrate passion for a belief system that is different from those that are socially accepted.<br/><br/>- **Gambling**: Online gambling and sites that promote gambling skills and practice.<br/><br/>- **Nudity**: Sites that provide full-frontal and semi-nude images or videos, typically in artistic form, and might allow the download or sale of such materials.<br/><br/>- **Pornography / Sexually explicit**: Sites containing sexually explicit content in an image-based or textual form. Any form of sexually oriented material is also listed here.<br/><br/>- **Sex education**: Sites that discuss sex and sexuality in an informative and non-voyeuristic way, including sites that provide education about human reproduction and contraception, sites that offer advice on preventing infection from sexual diseases, and sites that offer advice on sexual health matters.<br/><br/>- **Tasteless**: Sites oriented towards content unsuitable for school children to view or that an employer would be uncomfortable with their staff accessing, but not necessarily violent or pornographic.<br/><br/>- **Violence**: Sites that display or promote content related to violence against humans or animals. |
+| **High bandwidth** | - **Download sites**: Sites whose primary function is to allow users to download media content or programs, such as computer programs.<br/><br/>- **Image sharing**: Sites that are used primarily for searching or sharing photos, including those that have social aspects.<br/><br/>- **Peer-to-peer**: Sites that host peer-to-peer (P2P) software or facilitate the sharing of files using P2P software.<br/><br/>- **Streaming media & downloads**: Sites whose primary function is the distribution of streaming media, or sites that allow users to search, watch, or listen to streaming media. |
+| **Legal liability** | - **Child abuse images**: Sites that include child abuse images or pornography.<br/><br/>- **Criminal activity**: Sites that give instruction on, advice about, or promotion of illegal activities.<br/><br/>- **Hacking**: Sites that provide resources for illegal or questionable use of computer software or hardware, including sites that distribute copyrighted material that has been cracked.<br/><br/>- **Hate & intolerance**: Sites promoting aggressive, degrading, or abusive opinions about any section of the population that could be identified by race, religion, gender, age, nationality, physical disability, economic situation, sexual preferences or any other lifestyle choice.<br/><br/>- **Illegal drug**: Sites that sell illegal/controlled substances, promote substance abuse, or sell related paraphernalia.<br/><br/>- **Illegal software**: Sites that contain or promote the use of malware, spyware, botnets, phishing scams, or piracy & copyright theft.<br/><br/>- **School cheating**: Sites related to plagiarism or school cheating.<br/><br/>- **Self-harm**: Sites that promote self-harm, including cyberbullying sites that contain abusive and/or threatening messages towards users.<br/><br/>- **Weapons**: Any site that sells weapons or advocates the use of weapons, including but not limited to guns, knives, and ammunition. |
+| **Leisure** | - **Chat**: Sites that are primarily web-based chat rooms.<br/><br/>- **Games**: Sites relating to video or computer games, including sites that promote gaming through hosting online services or information related to gaming.<br/><br/>- **Instant messaging**: Sites that can be used to download instant messaging software or client based instant messaging.<br/><br/>- **Professional network**: Sites that provide professional networking services.<br/><br/>- **Social networking**: Sites that provide social networking services.<br/><br/>- **Web-based email**: Sites offering web-based mail services. |
+| **Uncategorized** | - **Newly registered domains**: Sites that have been newly registered in the past 30 days and have not yet been moved to another category.<br/><br/>- **Parked domains**: Sites that have no content or are parked for later use. |
 
-**Cults**: Sites related to groups or movements whose members demonstrate passion for a belief system that is different from those that are socially accepted.
-
-**Gambling**: Online gambling and sites that promote gambling skills and practice.
-
-**Nudity**: Sites that provide full-frontal and semi-nude images or videos, typically in artistic form, and might allow the download or sale of such materials.
-
-**Pornography / Sexually explicit**: Sites containing sexually explicit content in an image-based or textual form. Any form of sexually oriented material is also listed here.
-
-**Sex education**: Sites that discuss sex and sexuality in an informative and non-voyeuristic way, including sites that provide education about human reproduction and contraception, sites that offer advice on preventing infection from sexual diseases, and sites that offer advice on sexual health matters.
-
-**Tasteless**: Sites oriented towards content unsuitable for school children to view or that an employer would be uncomfortable with their staff accessing, but not necessarily violent or pornographic.
-
-**Violence**: Sites that display or promote content related to violence against humans or animals.
-
-</details>
-
-<details>
-<summary>High bandwidth</summary>
-
-**Download sites**: Sites whose primary function is to allow users to download media content or programs, such as computer programs.
-
-**Image sharing**: Sites that are used primarily for searching or sharing photos, including those that have social aspects.
-
-**Peer-to-peer**: Sites that host peer-to-peer (P2P) software or facilitate the sharing of files using P2P software.
-
-**Streaming media & downloads**: Sites whose primary function is the distribution of streaming media, or sites that allow users to search, watch, or listen to streaming media.
-
-</details>
-
-<details>
-<summary>Legal liability</summary>
-
-**Child abuse images**: Sites that include child abuse images or pornography.
-
-**Criminal activity**: Sites that give instruction on, advice about or promotion of illegal activities.
-
-**Hacking**: Sites that provide resources for illegal or questionable use of computer software or hardware, including sites that distribute copyrighted material that has been cracked.
-
-**Hate & intolerance**: Sites promoting aggressive, degrading, or abusive opinions about any section of the population that could be identified by race, religion, gender, age, nationality, physical disability, economic situation, sexual preferences or any other lifestyle choice.
-
-**Illegal drug**: Sites that sell illegal/controlled substances, promote substance abuse, or sell related paraphernalia.
-
-**Illegal software**: Sites that contain or promote the use of malware, spyware, botnets, phishing scams, or piracy & copyright theft.
-
-**School cheating**: Sites related to plagiarism or school cheating.
-
-**Self-harm**: Sites that promote self-harm, including cyberbullying sites that contain abusive and/or threatening messages towards users.
-
-**Weapons**: Any site that sells weapons or advocates the use of weapons, including but not limited to guns, knives, and ammunition.
-
-</details>
-
-<details>
-<summary>Leisure</summary>
-
-**Chat**: Sites that are primarily web-based chat rooms.
-
-**Games**: Sites relating to video or computer games, including sites that promote gaming through hosting online services or information related to gaming.
-
-**Instant messaging**: Sites that can be used to download instant messaging software or client based instant messaging.
-
-**Professional network**: Sites that provide professional networking services.
-
-**Social networking**: Sites that provide social networking services.
-
-**Web-based email**: Sites offering web-based mail services.
-
-</details>
-
-<details>
-<summary>Uncategorized</summary>
-
-**Newly registered domains**: Sites that have been newly registered in the past 30 days and have not yet been moved to another category.
-
-**Parked domains**: Sites that have no content or are parked for later use.
-
-**NOTE**: Uncategorized contains only newly registered domains and parked domains, and does not include all other sites outside of these categories.
-
-</details>
+> [!NOTE]
+> Uncategorized contains only newly registered domains and parked domains, and does not include all other sites outside of these categories.
 
 ### Create a policy
 
@@ -194,9 +119,9 @@ To add a new policy, follow these steps:
 5. Review the summary and save the policy.
 
 > [!NOTE]
-> - There may be up to 2 hours of latency between the time a policy is created and the policy being enforced on the device.
-> - You can deploy a policy without selecting any category on a device group. This action will create an audit only policy to help you understand user behavior before creating a block policy.
-> - If you are removing a policy or changing device groups at the same time, this might cause a delay in policy deployment.
+> - There might be up to 2 hours of latency between the time a policy is created and when it's enforced on the device.
+> - You can deploy a policy without selecting any category on a device group. This action creates an audit-only policy to help you understand user behavior before creating a block policy.
+> - If you are removing a policy or changing device groups at the same time, there could be a delay in policy deployment.
 > - Blocking the "Uncategorized" category could lead to unexpected and undesired results.
 
 ## End-user experience
@@ -221,7 +146,7 @@ If you encounter a domain that has been incorrectly categorized, you can dispute
 
 To dispute the category of a domain, navigate to **Reports** \> **Web protection** \> **Web Content Filtering Details** \> **Domains**. On the domains tab of the Web Content Filtering reports, you will see an ellipsis beside each of the domains. Hover over this ellipsis and select **Dispute Category**.
 
-A panel will open where you can select the priority and add more details such as the suggested category for recategorization. Once you complete the form, select **Submit**. Our team will review the request within one business day. For immediate unblocking, create a [custom allow indicator](indicator-ip-domain.md).
+A panel opens where you can select the priority and add more details such as the suggested category for recategorization. Once you complete the form, select **Submit**. Our team will review the request within one business day. For immediate unblocking, create a [custom allow indicator](indicator-ip-domain.md).
 
 ## Web content filtering cards and details
 
@@ -263,10 +188,6 @@ Use the time range filter at the top left of the page to select a time period. Y
 
 ### Known issues and limitations
 
-Only Microsoft Edge is supported if your device's OS configuration is Server (**cmd** \> **Systeminfo** \> **OS Configuration**). Network Protection is only supported in Inspect mode on Server devices, which is responsible for securing traffic across supported third-party browsers.
-
-Only Microsoft Edge is supported and network protection is not supported on Windows Azure Virtual Desktop multi-session hosts.
-
 Network protection does not currently support SSL inspection, which might result in some sites being allowed by web content filtering that would normally be blocked. Sites would be allowed due to a lack of visibility into encrypted traffic after the TLS handshake has taken place and an inability to parse certain redirects.  This includes redirections from some web-based mail login pages to the mailbox page. As an accepted workaround, you can create a custom block indicator for the login page to ensure no users are able to access the site. Keep in mind, this might block their access to other services associated with the same website.
 
 If you are using Microsoft 365 Business Premium or Microsoft Defender for Business, you can define one web content filtering policy for your environment. That policy will apply to all users by default.
@@ -278,3 +199,4 @@ If you are using Microsoft 365 Business Premium or Microsoft Defender for Busine
 - [Monitor web security](web-protection-monitoring.md)
 - [Respond to web threats](web-protection-response.md)
 - [Requirements for Network Protection](web-content-filtering.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

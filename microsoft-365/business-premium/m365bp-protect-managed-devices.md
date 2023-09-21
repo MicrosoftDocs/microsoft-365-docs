@@ -48,6 +48,6 @@ Once these objectives have been achieved, your overall mission to protect your o
 ## Next steps
 
 - [Manage devices in Microsoft Defender for Business](../security/defender-business/mdb-manage-devices.md)
-- [Set up a security operations process](m365bp-security-incident-quick-start.md).
+- [Set up a security operations process](m365bp-security-operations-guide.md).
 - [Learn about security incident management](m365bp-security-incident-management.md).
-- [Learn how to maintain your environment](m365bp-maintain-environment.md).
+- [Learn how to maintain your environment](m365bp-mdb-maintain-environment.md).

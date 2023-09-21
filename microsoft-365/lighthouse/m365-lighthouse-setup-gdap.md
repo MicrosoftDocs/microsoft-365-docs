@@ -1,11 +1,11 @@
 ---
-title: "Set up GDAP for your customers"
+title: "Set up GDAP for your customers in Microsoft 365 Lighthouse"
 f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: magarlan, chrigreen
-ms.date: 05/2/2023
+ms.date: 06/09/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -22,7 +22,7 @@ search.appverid: MET150
 description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, learn how to set up granular delegated admin privileges (GDAP) for your customers."
 ---
 
-# Set up GDAP for your customers
+# Set up GDAP for your customers in Microsoft 365 Lighthouse
 
 You can now set up all your customers with granular delegated admin privileges (GDAP) through Microsoft 365 Lighthouse, regardless of their licenses or size. By setting up your organization with GDAP for the customer tenants you manage, users in your organization have the permissions necessary to do their work while keeping customer tenants secure. Lighthouse lets you quickly transition your organization to GDAP and begin the journey to least-privilege for your delegated access to customers.
 
@@ -45,7 +45,7 @@ During the GDAP setup process, you create GDAP templates by configuring what sup
 - The customers you manage in Lighthouse need to be set up in Partner Center with either a reseller relationship or an existing delegated relationship (DAP or GDAP).
 
 > [!NOTE]
-> Lighthouse GDAP templates use role-assignable security groups. An Azure AD P1 license is required to add users to these groups. To enable Just-in-Time (JIT) roles, an Azure AD P2 license is required.
+> Lighthouse GDAP templates use role-assignable security groups. An Azure AD P1 license is required to add users to these groups. To enable Just-in-Time (JIT) roles, Microsoft Entra IDE Governance or an Azure AD P2 license is required.
 
 ## Set up GDAP for the first time
 

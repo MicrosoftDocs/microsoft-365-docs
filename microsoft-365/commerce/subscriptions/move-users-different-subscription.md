@@ -56,7 +56,7 @@ You must be a Global, License, or User admin to assign licenses. For more inform
 
 ## Back up data before changing Microsoft 365 for business plans
 
-If you plant to move a user to another subscription that has fewer data-related services, or a user leaves the organization, you can download a copy of their data stored in Microsoft 365 before they are switched to the new subscription.
+If you plan to move a user to another subscription that has fewer data-related services, or a user leaves the organization, you can download a copy of their data stored in Microsoft 365 before they are switched to the new subscription.
 
 If you're moving a user to a subscription that has the same or more services, you don't need to back up user data.
   
@@ -70,9 +70,9 @@ After the switch to the new plan is finished, users can [Import email, contacts,
 
 Before being switched to a different subscription, users can [download files and folders from OneDrive or SharePoint](https://support.microsoft.com/office/5c7397b7-19c7-4893-84fe-d02e8fa5df05) to a different location, such as a folder on their computer's hard drive, or a file share on the organization's network.
   
-### Save Yammer information
+### Save Viva Engage information
 
-Admins can export all messages, notes, files, topics, users, and groups to a .zip file. For more information, see [Export data from Yammer Enterprise](/yammer/manage-security-and-compliance/export-yammer-enterprise-data). Developers can use the [Yammer API](https://go.microsoft.com/fwlink/p/?linkid=842495) to do this, as well.
+Admins can export all messages, notes, files, topics, users, and groups to a .zip file. For more information, see [Manage data in the Viva Engage admin center](/viva/engage/eac-as-manage-data).
   
 ### How to save SharePoint information
 

@@ -10,8 +10,8 @@ ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.reviewer: jomaun
-ms.date: 07/19/2022
+ms.reviewer: nehabha
+ms.date: 05/17/2023
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
@@ -51,7 +51,7 @@ Currently, in Defender for Business, you can create a new device group while you
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
-2. In the navigation pane, choose **Device configuration**. 
+2. In the navigation pane, choose **Configuration management** and select **Device configuration**. 
 
 3. Take one of the following actions:
 
@@ -71,7 +71,7 @@ Currently, in Defender for Business, you can create a new device group while you
 
 8. On the **Device groups** step, review the list of device groups for the policy. If needed, remove a group from the list. Then choose **Next**.
 
-9. On the **Configuration settings** page, review and edit settings as needed, and then choose **Next**. For more information about these settings, see [Configuration settings](mdb-next-gen-configuration-settings.md).
+9. On the **Configuration settings** page, review and edit settings as needed, and then choose **Next**. For more information about these settings, see [Configuration settings](mdb-next-generation-protection.md).
 
 10. On the **Review your policy** step, review all the settings, make any needed edits, and then choose **Create policy** or **Update policy**.
 

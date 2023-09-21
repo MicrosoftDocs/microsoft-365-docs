@@ -336,7 +336,7 @@ A four second delay in proxy authentication as seen in Wireshark. The **Time del
 
 ### DNS Performance
 
-Name resolution works best and most quickly when it takes place as close to the client's country as possible.
+Name resolution works best and most quickly when it takes place as close to the client's country/region as possible.
 
 If DNS name resolution is taking place overseas, it can add seconds to page loads. Ideally, name resolution happens in under 100ms. If not, you should do further investigation.
 

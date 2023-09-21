@@ -2,10 +2,10 @@
 title: Microsoft 365 for Manufacturing
 description: Learn about the admin resources available to manage and get the most out of Teams for your frontline manufacturing workforce.
 ms.topic: conceptual
-author: daisyfell
-ms.author: daisyfeller
+author: lana-chin
+ms.author: heidip
+manager: serdars
 audience: admin
-manager: pamgreen
 f1.keywords:
 - NOCSH
 ms.service: microsoft-365-frontline
@@ -16,7 +16,6 @@ ms.collection:
   - highpri
   - m365solution-manufacturing
   - m365solution-overview
-  - tier1
 ms.localizationpriority: high
 search.appverid: MET150
 searchScope:

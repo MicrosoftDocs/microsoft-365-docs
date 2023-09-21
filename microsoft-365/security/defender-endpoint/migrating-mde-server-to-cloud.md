@@ -2,7 +2,7 @@
 title: Migrating servers from Microsoft Defender for Endpoint to Microsoft Defender for Cloud
 description: Learn how to migrate servers from Microsoft Defender for Endpoint to Microsoft Defender for Cloud.
 keywords: migrate server, server, Microsoft Defender for Endpoint server, Microsoft Defender for Cloud, MDE, azure, azure cloud, CSPM, CWP, cloud workload protection, threat protection, advanced threat protection, Microsoft Azure, multi-cloud connector
-author: alekyaj
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 audience: ITPro
@@ -87,3 +87,4 @@ Once you've completed the relevant migration steps, Microsoft Defender for Cloud
 The extension acts as a management and deployment interface, which orchestrates and wraps the MDE installation scripts inside the operating system and reflect its provisioning state to the Azure management plane. The installation process recognizes an existing Defender for Endpoint installation and connects it to Defender for Cloud by automatically adding Defender for Endpoint service tags.
 
 In case you have Windows Server 2012 R2 or 2016 machines that are provisioned with the legacy, Log Analytics-based Microsoft Defender for Endpoint solution, Microsoft Defender for Cloud's deployment process deploys the Defender for Endpoint [unified solution](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution). After successful deployment, it will stop and disable the legacy Defender for Endpoint process on these machines.
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
