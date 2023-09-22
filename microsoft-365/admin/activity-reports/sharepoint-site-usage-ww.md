@@ -68,7 +68,7 @@ The **SharePoint site usage** report can be viewed for trends over the last 7 da
   
 |Metric|Description|
 |:-----|:-----|
-|Site URL  |The full URL of the site. |
+|Site URL  |The full URL of the site. Note: The URL will be empty temporarily. |
 |Deleted  |The deletion status of the site. It takes at least 7 days for sites to be marked as deleted.  |
 |Site owner  |The username of the primary owner of the site.   |
 |Site owner principal name  |The email address of the owner of the site. |
@@ -88,6 +88,7 @@ The **SharePoint site usage** report can be viewed for trends over the last 7 da
 |Secure link for guest count  |The number of times documents or folders are shared using "specific people" on the site.  |
 |Secure link for member count  |The number of times documents or folders are shared using "specific people" on the site.  |
 |Root Web Template  |The template used for creating the site.  <br/> NOTE: If you want to filter the data by different site types, then export the data and use the Root Web Template column. |
+| Site ID | The site ID of the site. |
 
 Note that you may see differences between the sites listed above and those listed on the [Active sites page](https://go.microsoft.com/fwlink/?linkid=2185220) in the [SharePoint admin center](https://go.microsoft.com/fwlink/?linkid=2185219), from Sites > Active sites because the certain site templates and URLs are not included as Active Sites. See [Manage sites in the SharePoint admin center](/sharepoint/manage-sites-in-new-admin-center) for more information. 
  
