@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: kkameth
-ms.date: 05/17/2023
+ms.date: 09/21/2023
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -17,6 +17,9 @@ description: Learn how to use universal annotations to mark and collaborate on i
 ---
 
 # Comment and collaborate using annotations in Microsoft Syntex
+
+> [!NOTE]
+> This feature of Microsoft Syntex is available as a preview for a limited time for users who currently subscribe to any of the [Syntex pay-as-you-go services](syntex-pay-as-you-go-services). Before you begin, read the [Microsoft Syntex Features Limited Time License agreement](feature-limited-license.md).
 
 Use the annotations feature in Microsoft Syntex to add notes and comments to your content in document libraries—either for yourself or for collaborating with others. You can use the annotations feature without modifying the original files, so the original records are preserved.
 
