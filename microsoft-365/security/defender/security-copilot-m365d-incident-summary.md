@@ -1,7 +1,7 @@
 ---
 title: Summarize incidents with Security Copilot in Microsoft 365 Defender
 description: Use Security Copilot incident summary capabilities embedded in Microsoft 365 Defender.
-keywords: security copilot, microsoft 365 defender, embedded experience, incident summary, script analyzer, script analysis, query assistant, m365, incident report, guided response, incident response playbooks, incident response, summary, summarize incident, summarize incidents
+keywords: security copilot, microsoft 365 defender, embedded experience, incident summary, script analyzer, script analysis, query assistant, m365, guided response, incident response playbooks, incident response, summary, summarize incident, summarize incidents, incident overview, write incident summary
 ms.service: microsoft-365-security
 ms.subservice: m365d
 ms.mktglfcycl: deploy
@@ -33,12 +33,11 @@ ms.date: 10/10/2023
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
-Microsoft 365 Defender leverages the capabilities of Security Copilot to summarize incidents , delivering impactful information and insights to simplify investigation tasks. Attack investigation is a crucial step for incident response teams to successfully defend an organization against further damage from a cyber threat. Investigations can oftentimes be time-consuming since the incident response team needs to gain understanding of how the attack happened, sort through numerous alerts, identify which assets and entities are involved, and understand the scope and impact of the attack.
+Microsoft 365 Defender leverages the capabilities of [Security Copilot](/copilot/microsoft-365-copilot-overview.md) to summarize incidents , delivering impactful information and insights to simplify investigation tasks. Attack investigation is a crucial step for incident response teams to successfully defend an organization against further damage from a cyber threat. Investigations can oftentimes be time-consuming since the incident response team needs to gain understanding of how the attack happened, sort through numerous alerts, identify which assets and entities are involved, and understand the scope and impact of the attack.
 
 Combining Microsoft 365 Defender’s correlation capabilities and Security Copilot’s AI-powered data processing and contextualization, incident response teams can easily gain the right context to investigate and remediate incidents. Incident response teams are enabled to quickly get important information  through an incident summary.
 
 This guide outlines what to expect and how to access the summarizing capability of Security Copilot within Microsoft 365 Defender, including information on providing feedback.
-
 
 > [!NOTE]
 > Script analysis functions are continuously in development. Analysis of scripts in languages other than PowerShell, batch, and bash are being evaluated.
@@ -49,7 +48,7 @@ This guide describes what the script analysis capability is and how it works, in
 
 ## Technical requirements
 
-See the Security Copilot Early Access Program onboarding for the full list of technical requirements.
+[Learn about the requirements for Security Copilot to get started](/copilot/microsoft-365-copilot-requirements.md).
 
 ## Summarize an incident
 
@@ -61,37 +60,46 @@ Incidents containing up to 100 alerts can be summarized into one incident summar
 - Assets involved in the attack. 
 - Indicators of compromise (IOCs).
 - Information on the [threat actor](/security/intelligence/microsoft-threat-actor-naming) involved.
-- 
+
 To summarize an incident:
 
-
-1. Select an incident. Security Copilot automatically creates an incident summary when opening an incident page.
+1. Select an incident. Security Copilot automatically creates an incident summary when you open an incident page.
+:::image type="content" source="../../media/copilot-in-defender/incident-summary/fig1-sec-copilot-m365d-summarize.png" alt-text="Security Copilot pane in the Microsoft 365 Defender incident page where the incident summary card appears" lightbox="../../media/copilot-in-defender/incident-summary/fig1-sec-copilot-m365d-summarize.png":::
 2. You can stop the summary creation by selecting **Cancel**.
+:::image type="content" source="../../media/copilot-in-defender/incident-summary/fig2-sec-copilot-m365d-summarize.png" alt-text="Security Copilot pane in Microsoft 365 Defender showing the Cancel incident summary creation option" lightbox="../../media/copilot-in-defender/incident-summary/fig2-sec-copilot-m365d-summarize.png":::
 3. Select **Regenerate** to restart the summary creation.
+:::image type="content" source="../../media/copilot-in-defender/incident-summary/fig3-sec-copilot-m365d-summarize.png" alt-text="Security Copilot pane in Microsoft 365 Defender showing the Regenerate incident summary creation option" lightbox="../../media/copilot-in-defender/incident-summary/fig3-sec-copilot-m365d-summarize.png":::
 4. You can view the incident summary on the Copilot side panel. You can copy the details, restart generating the summary, or view the summary in Security Copilot. To do any of these actions, select the three dots at the top of the incident summary to access these actions.
+:::image type="content" source="../../media/copilot-in-defender/incident-summary/fig4-sec-copilot-m365d-summarize.png" alt-text="Incident summary card showing other options for the user" lightbox="../../media/copilot-in-defender/incident-summary/fig4-sec-copilot-m365d-summarize.png":::
 5. Note that a new tab opens when you select See in Security Copilot.
 
 ## Managing feedback
 
-You can validate or report the analysis results provided by Security Copilot. Validating and reporting results enable Security Copilot to further learn and deliver more accurate results in the future.
+You can validate or report the results provided by Security Copilot. Validating and reporting results enable Security Copilot to further learn and deliver more accurate answers in the future.
 
 To provide feedback:
 
-1. Select the down arrow beside the face icon located at the bottom of the script analysis card.
+1. Select the down arrow beside the face icon located at the bottom of the incident summary card.
+:::image type="content" source="../../media/copilot-in-defender/incident-summary/fig5-sec-copilot-m365d-summarize.png" alt-text="Incident summary card showing feedback options for the user" lightbox="../../media/copilot-in-defender/incident-summary/fig5-sec-copilot-m365d-summarize.png":::
 2. From the options, select your feedback.
+:::image type="content" source="../../media/copilot-in-defender/incident-summary/fig6-sec-copilot-m365d-summarize.png" alt-text="Feedback options for the user" lightbox="../../media/copilot-in-defender/incident-summary/fig6-sec-copilot-m365d-summarize.png":::
 3. Select **Confirmed, it looks great** if the file analysis details are accurate based on your assessment. When the analysis details are confirmed, you can provide more information in the next dialog box.
+:::image type="content" source="../../media/copilot-in-defender/incident-summary/fig7-sec-copilot-m365d-summarize.png" alt-text="Feedback options for the user" lightbox="../../media/copilot-in-defender/incident-summary/fig7-sec-copilot-m365d-summarize.png":::
 4. Select **Off-target, inaccurate** if any detail is incorrect or incomplete based on your assessment. You can provide more information about your assessment in the next dialog box and submit this assessment to Microsoft.
+:::image type="content" source="../../media/copilot-in-defender/incident-summary/fig8-sec-copilot-m365d-summarize.png" alt-text="Feedback options for the user" lightbox="../../media/copilot-in-defender/incident-summary/fig8-sec-copilot-m365d-summarize.png":::
 5. You can also report the results if it contains questionable or ambiguous information by selecting **Potentially harmful, inappropriate**. Provide more information about the results in the next dialog box and select Submit.
-6. You can restart summarizing an incident by selecting **Regenerate**.
+:::image type="content" source="../../media/copilot-in-defender/incident-summary/fig9-sec-copilot-m365d-summarize.png" alt-text="Feedback options for the user" lightbox="../../media/copilot-in-defender/incident-summary/fig9-sec-copilot-m365d-summarize.png":::
+1. You can restart summarizing an incident by selecting **Regenerate**.
 
 ## Next steps
 - Respond to threats using guidance from Security Copilot in Microsoft 365 Defender
-- Analyze scripts with Security Copilot in Microsoft 365 Defender
+- [Analyze scripts and codes](security-copilot-m365d-script-analysis.md) with Security Copilot in Microsoft 365 Defender
 - Search for threats with Security Copilot in Microsoft 365 Defender
+- Create an incident report with Security Copilot in Microsoft 365 Defender
 
 ## See also
-- Security Copilot FAQ
-- Licensing information for Security Copilot
+- [Security Copilot FAQ](/copilot/rai-faqs-security-copilot.md)
+- [Learn about Security Copilot features in Microsoft 365 Defender](security-copilot-in-microsoft-365-defender.md)
 - [Investigate incidents in Microsoft 365 Defender](investigate-incidents.md)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

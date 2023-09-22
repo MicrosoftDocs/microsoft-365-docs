@@ -59,7 +59,7 @@ Microsoft 365 Defender brings the capabilities of Security Copilot to the portal
 
 ### Summarize incidents quickly
 
-Investigating incidents with multiple alerts can be a daunting task. To immediately understand an incident, you can tap Security Copilot to summarize an incident for you. Security Copilot creates an overview of the attack containing essential information for you to understand what transpired in the attack, what assets are involved, and the timeline of the attack. Security Copilot automatically creates a summary when you navigate to an incident’s page.
+Investigating incidents with multiple alerts can be a daunting task. To immediately understand an incident, you can tap Security Copilot in Microsoft 365 Defender to [summarize an incident](security-copilot-m365d-incident-summary.md) for you. Security Copilot creates an overview of the attack containing essential information for you to understand what transpired in the attack, what assets are involved, and the timeline of the attack. Security Copilot automatically creates a summary when you navigate to an incident's page.
 
 [Insert screenshot]
 
@@ -69,11 +69,11 @@ Approaching solutions and mitigation for any incident can oftentimes be complex 
 
 [Insert screenshot]
 
-### Get results fast when analyzing scripts
+### Get results fast when analyzing scripts and codes
 
-Most attackers rely on sophisticated malware and files when launching attacks to avoid detection and investigation. These files are usually obfuscated and arrive as scripts, Powershell, batch, and bash. Security Copilot can quickly analyze these types of files to facilitate faster investigation, reducing the time for file analysis and helping security teams decide on the next action steps using information about these files’ capabilities.
+Most attackers rely on sophisticated malware and files when launching attacks to avoid detection and investigation. These files are usually obfuscated and arrive as scripts, Powershell, batch, and bash. Security Copilot can quickly analyze these types of files to facilitate faster investigation, reducing the time for [script or code analysis](security-copilot-m365d-script-analysis.md) and helping security teams decide on the next action steps using information about these files’ capabilities.
 
-[Insert screenshot]
+:::image type="content" source="../../media/copilot-in-defender/script-analyzer/fig5-sec-copilot-m365d-script.png" alt-text="Script analysis card on the Security Copilot pane in the Microsoft 365 Defender incident page" lightbox="../../media/copilot-in-defender/script-analyzer/fig5-sec-copilot-m365d-script.png":::
 
 ### Search for potential threats with guidance
 
@@ -89,16 +89,17 @@ Investigation conclusions usually require reports to document the attack, the st
 
 ## Next steps
 
-- Summarize incidents
-- Respond to incidents
-- Analyze non-PE files
-- Search for potential threats
-- Create incident reports
+- [Learn how to summarize incidents](security-copilot-m365d-incident-summary.md) with Security Copilot in Microsoft 365 Defender
+- Respond to incidents with Security Copilot in Microsoft 365 Defender
+- [Analyze scripts and codes](security-copilot-m365d-script-analysis.md) with Security Copilot in Microsoft 365 Defender
+- Search for potential threats with Security Copilot in Microsoft 365 Defender
+- Create incident reports with Security Copilot in Microsoft 365 Defender
 
 ## See also
 
-- Security Copilot FAQ
-- Licensing information for Security Copilot
+- [Security Copilot FAQ](/copilot/rai-faqs-security-copilot.md)
+- [Get started with Security Copilot](/copilot/microsoft-365-copilot-requirements.md)
+- [Know more about Security Copilot embedded experiences](/copilot/experiences-security-copilot.md)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
 
