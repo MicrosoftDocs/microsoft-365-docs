@@ -8,15 +8,16 @@ manager: scotv
 ms.date: 06/19/2023
 audience: Admin
 ms.topic: article
-ms.service: microsoft-365-business
+ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
-monikerRange: 'o365-worldwide'
 ms.collection: 
 - Tier2
 - scotvorg
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
+- m365copilot
+- essentials-get-started
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn how to prepare your organization for Microsoft 365 Copilot."
 ---

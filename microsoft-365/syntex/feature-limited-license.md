@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: karlha
-ms.date: 09/06/2023
+ms.date: 09/21/2023
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -29,9 +29,8 @@ This License governs the limited time use of the following features, individuall
 &emsp;&emsp;iii.&emsp;&nbsp;&nbsp;&nbsp;Contracts Accelerator<br>
 &emsp;&emsp;iv.&emsp;&nbsp;&nbsp;&nbsp;Accounts Payable Accelerator<br>
 &emsp;&emsp;v.&emsp;&nbsp;&nbsp;&nbsp;&nbsp;Taxonomy features including: import using SKOS, SKOS formatting reference,<br>&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;push content type to hub, and term store reports<br>
-&emsp;&emsp;vi.&emsp;&nbsp;&nbsp;&nbsp;PDF Merge/Split<br>
-&emsp;&emsp;vii.&emsp;&nbsp;&nbsp;PDF Password Protect<br>
-&emsp;&emsp;viii.&emsp;&nbsp;Content Processing: Move or copy a file, set a content type from file name
+&emsp;&emsp;vi.&emsp;&nbsp;&nbsp;&nbsp;PDF Merge/Extract<br>
+&emsp;&emsp;vii.&emsp;&nbsp;&nbsp;Content Processing: Move or copy a file, set a content type from file name
 
 **REQUIREMENTS TO ENABLE THE FEATURES**
 
