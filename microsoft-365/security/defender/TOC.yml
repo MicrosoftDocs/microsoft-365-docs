@@ -592,8 +592,6 @@
             href: ../intelligence/virus-initiative-criteria.md
           - name: Coordinated malware eradication
             href: ../intelligence/coordinated-malware-eradication.md
-          - name: Microsoft Bug Bounty Program
-            href: ../intelligence/microsoft-bug-bounty-program.md
           - name: Software developer FAQ
             href: ../intelligence/developer-faq.yml
     - name: Microsoft 365 Defender docs
