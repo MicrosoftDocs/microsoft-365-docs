@@ -12,6 +12,7 @@ ms.date: 09/20/2022
 ms.reviewer: dmwmsft
 ms.custom:
 - it-pro
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 ---
@@ -24,7 +25,7 @@ ms.collection:
 
 Required Conditions:
 
-- _Tenant_ has a sign up country included in _Local Region Geography_, the European Union or the United States.
+- _Tenant_ has a sign up country/region included in _Local Region Geography_, the European Union or the United States.
 
 **Commitment:**
 
@@ -34,7 +35,7 @@ _For current language please refer to the [Privacy and Security Product Terms](h
 
 Required Conditions:
 
-1. _Tenant_ has a sign up country included in _Local Region Geography_ or _Expanded Local Region Geography_.
+1. _Tenant_ has a sign up country/region included in _Local Region Geography_ or _Expanded Local Region Geography_.
 1. _Tenant_ has a valid Advanced Data Residency subscription for all users in the _Tenant_.
 1. The SharePoint Online subscription customer data is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_.
 
@@ -54,9 +55,43 @@ Required Conditions:
 Customers can assign users of SharePoint Online/OneDrive for Business to any _Satellite Geography_ supported by Multi-Geo (see Section 4.1.3). The following customer data will be stored in the relevant _Satellite Geography_:
 SharePoint Online site content and the files stored within that site, and files uploaded to OneDrive for Business.  
 
+
+## Migration with Advanced Data Residency
+
+When SharePoint Online is moved, data for the following services is also moved:
+  
+- OneDrive for Business
+- Microsoft 365 Video services
+- Office in a browser
+- Microsoft 365 Apps for enterprise
+- Visio Pro for Microsoft 365
+
+After we've completed moving your SharePoint Online data, you might see some of the following effects.
+  
+### Microsoft 365 Video Services
+
+- The data move for video takes longer than the moves for the rest of your content in SharePoint Online.
+- After the SharePoint Online content is moved, there will be a time frame when videos aren't able to be played.
+- We're removing the trans-coded copies from the previous datacenter and transcoding them again in the new datacenter.
+
+### Search
+
+In the course of moving your SharePoint Online data, we migrate your search index and search settings to a new location. Until we've **completed** the move of your SharePoint Online data, we continue to serve your users from the index in the original location. In the new location, search automatically starts crawling your content after we've completed moving your SharePoint Online data. From this point and onwards we serve your users from the migrated index. Changes to your content that occurred after the migration aren't included in the migrated index until crawling picks them up. Most customers don't notice that results are less fresh right after we've completed moving their SharePoint Online data, but some customers might experience reduced freshness in the first 24-48 hours.
+  
+The following search features are affected:
+  
+- Search results and Search Web Parts: Results don't include changes that occurred after the migration until crawling picks them up.
+- Delve: Delve doesn't include changes that occurred after the migration until crawling picks them up.
+- Popularity and Search Reports for the site: Counts for Excel reports in the new location only include migrated counts and counts from usage reports that have run after we completed moving your SharePoint Online data. Any counts from the interim period are lost and can't be recovered. This period is typically a couple of days. Some customers might experience shorter or longer losses.
+- Video Portal: View counts and statistics for the Video Portal depend on the statistics for Excel Reports, so view counts and statistics for the Video Portal are lost for the same time period as for the Excel reports.
+- eDiscovery: Items that changed during the migration aren't shown until crawling picks up the changes.
+- Data Loss Protection (DLP): Policies aren't enforced on items that change until crawling picks up the changes.
+
+As part of the migration, the _Primary Provisioned Geography_ will change and all new content will be stored at rest in the new _Primary Provisioned Geography_. Existing content will move in the background with no impact to you for up to 90 days after the first change to the SharePoint Online data location in the admin center.
+
 ## **Multi-Geo Capabilities in SharePoint Online / OneDrive for Business**
 
-Multi-Geo capabilities in OneDrive and SharePoint Online enable control of shared resources like SharePoint team sites and Microsoft 365 Group mailboxes stored at rest in a specified _Macro Region Geography_ or _Local Region Geography_.
+Multi-Geo capabilities in OneDrive and SharePoint Online enable control of shared resources like SharePoint team sites and Microsoft 365 group mailboxes stored at rest in a specified _Macro Region Geography_ or _Local Region Geography_.
 
 Each user, Group mailbox, and SharePoint site have a Preferred Data Location (PDL) which denotes the _Macro Region Geography_ or _Local Region Geography_ (location where related data is to be stored. Users' personal data (Exchange mailbox and OneDrive) along with any Microsoft 365 Groups or SharePoint sites that they create can be stored in the specified _Macro Region Geography_ or _Local Region Geographies_ location to meet data residency requirements. You can specify different administrators for each _Macro Region Geography_ or _Local Region Geographies_ location.
 
@@ -142,9 +177,9 @@ Be sure to send your users an email when the move has successfully completed inf
 #### Scheduling OneDrive site moves
 
 You can schedule OneDrive site moves in advance (described later in this article). We recommend that you start with a small number of users to validate your workflows and communication strategies. Once you are comfortable with the process, you can schedule moves as follows:
--You can schedule up to 4,000 moves at a time.
--As the moves begin, you can schedule more, with a maximum of 4,000 pending moves in the queue and any given time.
--The maximum size of a OneDrive that can be moved is 1 terabyte (1 TB).
+- You can schedule up to 4,000 moves at a time.
+- As the moves begin, you can schedule more, with a maximum of 4,000 pending moves in the queue and any given time.
+- The maximum size of a OneDrive that can be moved is 2 terabytes (2 TB).
 
 #### **Moving a OneDrive site**
 To perform a OneDrive _Geography_ move, the _Tenant_ administrator must first set the user's Preferred Data Location (PDL) to the appropriate _Geography_ location. Once the PDL is set, wait for at least 24 hours for the PDL update to sync across the _Geography_ locations before starting the OneDrive _Geography_ move.
@@ -326,7 +361,7 @@ You can schedule SharePoint site moves in advance (described later in this artic
 
 - You can schedule up to 4,000 moves at a time.
 - As the moves begin, you can schedule more, with a maximum of 4,000 pending moves in the queue and any given time.
-- The maximum size of a SharePoint site that can be moved is 1 terabyte (1 TB).
+- The maximum size of a SharePoint site that can be moved is 2 terabytes (2 TB).
 
 To schedule a SharePoint site _Geography_ move for a later time, include one of the following parameters when you start the move:
 
@@ -482,7 +517,6 @@ Power Apps need to be recreated in the destination location.
 
 SharePoint uses Azure Blob Storage for its content, while the metadata associated with sites and its files is stored within SharePoint. After the site is moved from its source _Geography_ location to its destination _Geography_ location, the service will also move its associated Blob Storage. Blob Storage moves complete in approximately 40 days. This will not have any impact to users interaction with the data.
 
-You can check the Blob Storage move status using the [Get-SPOCrossGeoMoveReport](/powershell/module/sharepoint-online/get-spocrossgeomovereport) cmdlet.
 ****
 
 ### **Enabling SharePoint Multi-Geo in your _Satellite Geography_ location**
@@ -492,7 +526,7 @@ This article is for Global or SharePoint administrators who have created a Multi
 >[!NOTE]
 >If you have added a new _Geography_ location **after March 27th, 2019**, you do not need to perform these instructions, as your new _Geography_ location will already be enabled for OneDrive and SharePoint Multi-Geo.
 
-These instructions will allow you to enable SharePoint in your _Satellite Geography_ location, so your Multi-Geo satellite users can take advantage of both OneDrive and SharePoint Multi-Geo capabilities in O365.
+These instructions will allow you to enable SharePoint in your _Satellite Geography_ location, so your Multi-Geo satellite users can take advantage of both OneDrive and SharePoint Multi-Geo capabilities in Microsoft 365.
 
 >[!IMPORTANT]
 >Please note that this is a one way enablement. Once you set SPO mode, you will not be able to revert your _Tenant_ to OneDrive only Multi-Geo mode without an escalation with support.
@@ -511,39 +545,6 @@ To set a _Geography_ location into SPO mode, connect to the _Geography_ location
 >[!Note]
 >Certain caches in the service update every 24 hours, so it is possible that for a period of up to 24 hours, your _Satellite Geography_ may intermittently behave as if it was still in ODB mode. This does not cause any technical issues.
 
-## Migration
-
-When SharePoint Online is moved, data for the following services is also moved:
-  
-- OneDrive for Business
-- Microsoft 365 Video services
-- Office in a browser
-- Microsoft 365 Apps for enterprise
-- Visio Pro for Microsoft 365
-
-After we've completed moving your SharePoint Online data, you might see some of the following effects.
-  
-### Microsoft 365 Video Services
-
-- The data move for video takes longer than the moves for the rest of your content in SharePoint Online.
-- After the SharePoint Online content is moved, there will be a time frame when videos aren't able to be played.
-- We're removing the trans-coded copies from the previous datacenter and transcoding them again in the new datacenter.
-
-### Search
-
-In the course of moving your SharePoint Online data, we migrate your search index and search settings to a new location. Until we've **completed** the move of your SharePoint Online data, we continue to serve your users from the index in the original location. In the new location, search automatically starts crawling your content after we've completed moving your SharePoint Online data. From this point and onwards we serve your users from the migrated index. Changes to your content that occurred after the migration aren't included in the migrated index until crawling picks them up. Most customers don't notice that results are less fresh right after we've completed moving their SharePoint Online data, but some customers might experience reduced freshness in the first 24-48 hours.
-  
-The following search features are affected:
-  
-- Search results and Search Web Parts: Results don't include changes that occurred after the migration until crawling picks them up.
-- Delve: Delve doesn't include changes that occurred after the migration until crawling picks them up.
-- Popularity and Search Reports for the site: Counts for Excel reports in the new location only include migrated counts and counts from usage reports that have run after we completed moving your SharePoint Online data. Any counts from the interim period are lost and can't be recovered. This period is typically a couple of days. Some customers might experience shorter or longer losses.
-- Video Portal: View counts and statistics for the Video Portal depend on the statistics for Excel Reports, so view counts and statistics for the Video Portal are lost for the same time period as for the Excel reports.
-- eDiscovery: Items that changed during the migration aren't shown until crawling picks up the changes.
-- Data Loss Protection (DLP): Policies aren't enforced on items that change until crawling picks up the changes.
-
-As part of the migration, the _Primary Provisioned Geography_ will change and all new content will be stored at rest in the new _Primary Provisioned Geography_. Existing content will move in the background with no impact to you for up to 90 days after the first change to the SharePoint Online data location in the admin center.
-
 ## How can I determine customer data location?
 
-You can find the actual data location in _Tenant_ Admin Center.  As a _Tenant_ administrator you can find the actual data location, for committed data,  by navigating to Admin->Settings->Org Settings->Organization Profile->Data Location. If you do not have a _Tenant_ created, you can have a _Tenant_ created when signing up for a M365 trial.
+You can find the actual data location in _Tenant_ Admin Center.  As a _Tenant_ administrator you can find the actual data location, for committed data,  by navigating to Admin->Settings->Org Settings->Organization Profile->Data Location. If you do not have a _Tenant_ created, you can have a _Tenant_ created when signing up for a Microsoft 365 trial.

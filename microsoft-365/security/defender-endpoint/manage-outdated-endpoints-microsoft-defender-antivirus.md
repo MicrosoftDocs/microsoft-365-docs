@@ -138,7 +138,7 @@ The process for enabling this feature is:
 This feature can be enabled for both full and quick scans. 
 
 > [!TIP]
-> We recommend using quick scans for most situations. To learn more, see [Quick scan, full scan, and custom scan](schedule-antivirus-scans.md#quick-scan-full-scan-and-custom-scan). 
+> We recommend using quick scans for most situations. To learn more, see [Quick scan, full scan, and custom scan](schedule-antivirus-scans.md#comparing-the-quick-scan-full-scan-and-custom-scan). 
 
 You can use one of several methods to set up catch-up scans:
 
@@ -223,3 +223,4 @@ See the following article for more information and allowed parameters:
 - [Manage event-based forced updates](manage-event-based-updates-microsoft-defender-antivirus.md)
 - [Manage updates for mobile devices and virtual machines (VMs)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
 - [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

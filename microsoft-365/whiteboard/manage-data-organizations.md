@@ -1,7 +1,7 @@
 ---
 title: Manage data for Microsoft Whiteboard
 ms.author: alexfaulkner
-author: alexfaulkner
+author: alexsfaulkner
 manager: alexfaulkner
 ms.reviewer: 
 ms.date: 03/08/2023
@@ -26,7 +26,7 @@ In order to manage data, you must first ensure that Whiteboard is enabled for yo
 > [!NOTE]
 > The following information applies to whiteboards that are stored in Azure.
 
-Whiteboard currently stores content securely in Azure. Data might be stored in different locations, depending on the country and when Whiteboard switched to storing new content in those locations. To check where new data is created, see [Where your Microsoft 365 customer data is stored](/microsoft-365/enterprise/o365-data-locations).
+Whiteboard currently stores content securely in Azure. Data might be stored in different locations, depending on the country/region and when Whiteboard switched to storing new content in those locations. To check where new data is created, see [Where your Microsoft 365 customer data is stored](/microsoft-365/enterprise/o365-data-locations).
 
 Content in Azure doesn't support Data Loss Prevention (DLP), eDiscovery, retention policies, and similar features. This content can be managed using [Whiteboard PowerShell cmdlets](/powershell/module/whiteboard/). Eventually, whiteboards stored in Azure will need to be migrated to OneDrive for Business or deleted.
 
@@ -96,7 +96,11 @@ Once the .whiteboard file appears in the OneDrive for Business of the new owner,
 1. Open office.com and in the app launcher, select **OneDrive**. 
 2. In the left-hand navigation pane, select **My Files**. 
 3. Open the folder named **Whiteboards**. 
-4. In the list of files, select the moved file and select the **...** button to get rename, delete, and other options. 
+4. In the list of files, select the moved file and select the **...** button to get rename, delete, and other options.
+
+### Auditing
+
+Whiteboard files stored in ODB are included in file audit log activities for create, modify, share and delete activities. Learn more about file activities at [Audit log activities - Microsoft Purview](/microsoft-365/compliance/audit-log-activities?view=o365-worldwide#file-and-page-activities&preserve-view=true).
 
 ## See also
 
@@ -105,3 +109,4 @@ Once the .whiteboard file appears in the OneDrive for Business of the new owner,
 [Manage sharing for Whiteboard](manage-sharing-organizations.md)
 
 [Deploy Whiteboard on Windows](deploy-on-windows-organizations.md)
+

@@ -32,6 +32,11 @@ Microsoft 365 support integration enables you to integrate Microsoft 365 help, s
 
 For the Microsoft 365 support integration app, go to the [ServiceNow Store](https://store.servicenow.com/sn_appstore_store.do#!/store/application/6d05c93f1b7784507ddd4227cc4bcb9f).
 
+> [!NOTE]
+> This app is not supported in regulated or restricted environments.
+>
+> This app is only supported in English.
+
 ## Key features
 
 These are the key features you'll get with the Microsoft 365 support integration app in ServiceNow:
@@ -94,9 +99,6 @@ To open the setup wizard, type **Microsoft 365** in the ServiceNow navigator and
 
 - If you want to get started without setting up the Microsoft 365 support integration app, you can select the option to **Continue without any setup**. This option continues to provide basic recommended solutions.
 - To set up the application with full functionality, select **Start setup**, and then follow the instructions in [Integrate Microsoft 365 with ServiceNow Virtual Agent](../manage/servicenow-virtual-agent-integration.md).
-
-> [!NOTE]
-> This app is not supported in regulated or restricted environments.
 
 > [!IMPORTANT]
 > The Microsoft 365 support integration app occasionally prompts users for feedback about the app. If you don’t want users to be prompted for feedback, turn off this functionality in the app settings. For more information about Microsoft feedback policies, see [Learn about Microsoft feedback for your organization](../misc/feedback-user-control.md). To change the feedback settings, follow the steps in the installation process.

@@ -24,6 +24,11 @@ ms.date: 10/21/2022
 
 # Attack surface reduction rules demonstrations
 
+**Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
 Attack Surface Reduction (ASR) rules target specific behaviors that are typically used by malware and malicious apps to infect machines, such as:
 
 - Executable files and scripts used in Office apps or web mail that attempt to download or run files
@@ -182,3 +187,4 @@ Cleanup c:\demo encryption run the [encrypt/decrypt file](https://demo.wd.micros
 [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md)
 
 [Microsoft Defender for Endpoint - demonstration scenarios](defender-endpoint-demonstrations.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

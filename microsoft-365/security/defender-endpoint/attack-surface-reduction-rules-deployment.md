@@ -1,18 +1,13 @@
 ---
 title: Microsoft Defender for Endpoint (MDE) attack surface reduction (ASR) rules deployment overview
 description: Provides overview and prerequisite guidance about deploying Microsoft Defender for Endpoint (MDE) attack surface reduction (ASR) rules. Links to topics that show how to plan and ASR deployment, test ASR rules, configure ASR rules, and enable ASR rules.
-keywords: Microsoft Defender for Endpoint (MDE) attack surface reduction rules, ASR rules intune, defender ASR rules, Windows 10 ASR rules, defender asr rules, ASR rules report, microsoft Attack surface reduction rules deployment, ASR rules event viewer, enable asr rules, configure ASR, host intrusion prevention system, protection rules, anti-exploit rules, anti-exploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules
-search.product: eADQiWindows 10XVcnh
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
 audience: ITPro
 author: dansimp
 ms.author: dansimp
-ms.reviewer: oogunrinde, sugamar
+ms.reviewer: sugamar
 manager: dansimp
 ms.custom: asr
 ms.topic: conceptual
@@ -21,11 +16,16 @@ ms.collection:
  - m365solution-asr-rules
  - highpri
  - tier1
-ms.date: 12/18/2022
+ms.date: 07/13/2023
 search.appverid: met150
 ---
 
 # Attack surface reduction (ASR) rules deployment overview
+
+**Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Attack surfaces are all the places where your organization is vulnerable to cyberthreats and attacks. Reducing your attack surface means protecting your organization's devices and network, which leaves attackers with fewer ways to attack. Configuring Microsoft Defender for Endpoint (MDE) attack surface reduction (ASR) rules can help.
 
@@ -64,7 +64,7 @@ While you're going through the process of planning, auditing, and enable ASR rul
 Typically, you can enable the standard protection rules with minimal-to-no noticeable impact to the end user. For an easy method to enable the standard protection rules, see: [Simplified standard protection option](attack-surface-reduction-rules-report.md#simplified-standard-protection-option).
 
 > [!NOTE]
-> For Customers who are using a non-Microsoft HIPS and are transitioning to Microsoft Defender for Endpoint attack surface reduction rules: Microsoft advises customers to run their HIPS solution side-by-side with their ASR rules deployment until the moment you shift from Audit to Block mode. Keep in mind that you must reach out to your 3rd-party antivirus vendor for exclusion recommendations.
+> For customers who are using a non-Microsoft HIPS and are transitioning to Microsoft Defender for Endpoint attack surface reduction rules, Microsoft advises running the HIPS solution alongside ASR rules deployment until the moment you shift from Audit mode to Block mode. Keep in mind that you must reach out to your non-Microsoft antivirus provider for exclusion recommendations.
 
 ## Before you begin testing or enabling ASR rules
 
@@ -85,12 +85,12 @@ As outlined in [Use attack surface reduction rules to prevent malware infection]
 
 | Polymorphic threats | Lateral movement & credential theft | Productivity apps rules |  Email rules | Script rules | Misc rules |
 |:---|:---|:---|:---|:---|:---|
-| Block executable files from running unless they meet a prevalence (1000 machines), age (24 hrs), or trusted list criteria | Block process creations originating from PSExec and WMI commands | Block Office apps from creating executable content | Block executable content from email client and webmail | Block obfuscated JS/VBS/PS/macro code | Block abuse of exploited vulnerable signed drivers <sup>[[1](#fn1)]<sup></sup>  |
+| Block executable files from running unless they meet a prevalence (1000 machines), age, or trusted list criteria | Block process creations originating from PSExec and WMI commands | Block Office apps from creating executable content | Block executable content from email client and webmail | Block obfuscated JS/VBS/PS/macro code | Block abuse of exploited vulnerable signed drivers <sup>[[1](#fn1)]<sup></sup>  |
 | Block untrusted and unsigned processes that run from USB | Block credential stealing from the Windows local security authority subsystem (lsass.exe)<sup>[[2](#fn1)]<sup></sup>   | Block Office apps from creating child processes |  Block only Office communication applications from creating child processes | Block JS/VBS from launching downloaded executable content | |
 | Use advanced protection against ransomware | Block persistence through WMI event subscription | Block Office apps from injecting code into other processes | Block Office communication apps from creating child processes | | |
 | | | Block Adobe Reader from creating child processes | | | |
 
-(<a id="fn1">1</a>) _Block abuse of exploited vulnerable signed drivers_ isn't currently available in Intune Endpoint security. You can configure this rule using [Intune OMA-URI](enable-attack-surface-reduction.md#custom-profile-in-intune).
+(<a id="fn1">1</a>) _Block abuse of exploited vulnerable signed drivers_ is now available under **Endpoint Security** > **Attack Surface Reduction**.
 
 (<a id="fn1">2</a>) Some ASR rules generate considerable noise, but won't block functionality. For example, if you're updating Chrome; Chrome will access lsass.exe; passwords are stored in lsass on the device. However, Chrome should not be accessing local device lsass.exe. If you enable the rule to block access to lsass, it will generate a lot of events. Those events are good events because the software update process should not access lsass.exe. Enabling this rule will block Chrome updates from accessing lsass, but will not block Chrome from updating; this is also true of other applications that make unnecessary calls to lsass.exe. The _block access to lsass_ rule will block unnecessary calls to lsass, but won't block the application from running.
 
@@ -207,3 +207,4 @@ Some rules don't work well if un-signed, internally developed application and sc
 [ASR rules Configurations](https://security.microsoft.com/asr?viewid=configuration)
 
 [ASR rules Exclusions](https://security.microsoft.com/asr?viewid=exclusions)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

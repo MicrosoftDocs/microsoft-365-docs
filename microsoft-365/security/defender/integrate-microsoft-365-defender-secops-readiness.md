@@ -16,9 +16,9 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - m365-security
-  - m365solution-m365dsecops
-  - - tier2
+  - zerotrust-solution
+  - msftsolution-secops
+  - tier2
 ms.topic: conceptual
 search.appverid: 
   - MOE150
@@ -52,3 +52,4 @@ Adoption procedures and use case creation are described in Steps 3 and 4.
 ## Next step
 
 [Step 3. Plan for Microsoft 365 Defender integration with your SOC catalog of services](integrate-microsoft-365-defender-secops-services.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

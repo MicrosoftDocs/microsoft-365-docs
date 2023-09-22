@@ -9,8 +9,8 @@ ms.audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.date: 09/15/2022
-ms.localizationpriority: high
+ms.date: 09/08/2023
+ms.localizationpriority: medium
 ms.collection: 
 - M365-Campaigns
 - m365solution-smb
@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Share files and videos inside your campaign with Microsoft Teams and SharePoint. Microsoft 365 Business premium includes Teams which is a great way to safely share files and videos."
+description: "Share files and videos inside your campaign with Microsoft Teams and SharePoint. Microsoft 365 Business premium includes Teams, which is a great way to safely share files and videos."
 ---
 
 # Share files and videos in a safe environment
 
-Another thing to pay attention to is ensuring all members of the organization control who can view and edit files, and that they are stored in a secure location with the proper permissions applied. Microsoft 365 Business Premium users can use Microsoft Teams to store files, and then share the files either inside or outside of the firm, practice or campaign. You can also send a SharePoint link. Sending a link rather than an email attachment means you know who is viewing and modifying the files, and they can't be viewed or modified without permission.
+It's important to pay attention to who can view and edit files, and where those files are stored. Files should be stored in a secure location with the proper permissions applied. With Microsoft 365 Business Premium, users can use Microsoft Teams to store and share files. Alternately, you can send a SharePoint link. Sending a link rather than an email attachment helps ensure that you know who is viewing or modifying files. Files can't be viewed or modified without permissions granted, whereas email attachments are easily forwarded.
 
 ![Diagram of a Microsoft Teams window, showing Files tab and Get link on the menu.](../media/m365-democracy-teams-sharefiles.png)
 
@@ -36,9 +36,13 @@ With files in Microsoft Teams and SharePoint, files can also be worked on and re
 Ensure your users use these methods to share files and videos securely:
 
 1. Store files in Microsoft Teams or SharePoint, and make sure that only the people who need access to those files have them.
+
 2. When you want to share, don't attach files to an email. Instead, choose **Get link** from Microsoft Teams or SharePoint and send the link in email.
+
 3. To share a file externally, add the user as a guest to your team, or use SharePoint to get a secure link to share just that file.
+
 4. Use Microsoft Stream to host videos you want your campaign to see.
+
 5. Use Microsoft Teams or SharePoint to store video files you need your team to collaborate on or share.
 
 ## Set up

@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: armanv, nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
@@ -27,21 +27,21 @@ ms.custom:
 - business_assist
 - AdminTemplateSet
 description: "Learn what payment options are available to pay for your Microsoft business subscription."
-ms.date: 12/08/2022
+ms.date: 03/31/2023
 ---
 
 # Payment options for your Microsoft business subscription
 
 Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
-You can use a credit or debit card, or bank account to pay for your Microsoft business subscription. For qualifying customers, you can pay by invoice, using check or electronic funds transfer (EFT). If you have a billing profile, your options are slightly different. For more information, see [How to pay for your subscription with a billing profile](pay-for-subscription-billing-profile.md). If you're not sure if your account has a billing profile, see [Understand billing profiles](manage-billing-profiles.md).
+You can use a credit or debit card, or bank account to pay for your Microsoft business subscription. For qualifying customers, you can pay by invoice via wire transfer. If you have a billing profile, your options are slightly different. For more information, see [How to pay for your subscription with a billing profile](pay-for-subscription-billing-profile.md). If you're not sure if your account has a billing profile, see [Understand billing profiles](manage-billing-profiles.md).
 
-**Just want to find out where to send your invoice payment?** If you currently pay your invoice by check or EFT, see [Where do I send my check or EFT payment?](#where-do-i-send-my-check-or-eft-payment)
+**Just want to find out where to send your invoice payment?** If you currently pay your invoice by wire transfer, see [Where do I send my wire transfer payment?](#where-do-i-send-my-wire-transfer-payment)
 
 > [!IMPORTANT]
 >
-> - Starting on April 1, 2023, we will stop accepting checks as a payment method for subscriptions paid by invoice. Beginning on that date, pay by check will no longer be available as a payment option, and check payment instructions will be removed from invoices. You can still pay for your invoice by electronic funds transfer (EFT). See your invoice for EFT payment information. If you're an existing customer who currently pays by check, you have until September 30, 2023 to change to paying by EFT, and avoid possible service disruption.
-> - As of January 26, 2021, new bank accounts are no longer supported for customers in Belgium, France, Italy, Luxembourg, Portugal, Spain, and the United States. If you're an existing customer in one of those countries, you can continue paying for your subscription with an existing bank account that is in good standing. However, you can't add new subscriptions to the bank account.
+> - As of April 1, 2023, we no longer accept checks as a payment method for subscriptions paid by invoice. Pay by check is no longer available as a payment option, and check payment instructions have been removed from invoices. You can still pay for your invoice by wire transfer. See your invoice for wire transfer payment information. If you're an existing customer who currently pays by check, you have until September 30, 2023 to change to paying by wire transfer, and avoid possible service disruption.
+> - As of January 26, 2021, new bank accounts are no longer supported for customers in Belgium, France, Italy, Luxembourg, Portugal, Spain, and the United States. If you're an existing customer in one of those countries/regions, you can continue paying for your subscription with an existing bank account that is in good standing. However, you can't add new subscriptions to the bank account.
 
 > [!TIP]
 > If you need help with the steps in this topic, consider [working with a Microsoft small business specialist](https://go.microsoft.com/fwlink/?linkid=2186871). With Business Assist, you and your employees get around-the-clock access to small business specialists as you grow your business, from onboarding to everyday use.
@@ -125,30 +125,26 @@ If you personally added the payment method that has a past due amount, you can u
 
 If you didn't add the payment method used to pay for the subscription, you must replace the payment method with one you previously added, or with a new one.
 
-## Where do I send my check or EFT payment?
+## Where do I send my wire transfer payment?
 
 [Check your invoice](view-your-bill-or-invoice.md) for payment instructions for your country or region. If you're not sure how much you owe, you can check your bill and billing history online on the **Invoices** tab of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.
 
 > [!NOTE]
->
-> - Paying by check is only available in a few countries.
-> - If you must pay the membership fee for the Microsoft Partner Network (MPN) program (Action Pack subscription, Silver or Gold competencies), see [Pay competency fees](/partner-center/mpn-pay-fee-silver-gold-competency?tabs=workspaces-view) for information about how to make an MPN payment.
+> If you must pay the membership fee for the Microsoft Partner Network (MPN) program (Action Pack subscription, Silver or Gold competencies), see [Pay competency fees](/partner-center/mpn-pay-fee-silver-gold-competency?tabs=workspaces-view) for information about how to make an MPN payment.
 
-## Check or wire transfer payment processing time
-
-Payments made by check are posted three to five business days after the check clears your bank. You can contact your bank to confirm the check status.
+## Wire transfer payment processing time
 
 Payments made by wire transfer have processing times that vary, depending on the type of transfer:
 
 - ACH domestic transfers - Five business days. Two to three days to arrive, plus two days to post.
-- Wire transfers (domestic) - Four business days. Two days to arrive, plus two days to post.
-- Wire transfers (international) - Seven business days. Five days to arrive, plus two days to post.
+- Wire transfer (domestic) - Four business days. Two days to arrive, plus two days to post.
+- Wire transfer (international) - Seven business days. Five days to arrive, plus two days to post.
 
-If your account is approved for payment by check or wire transfer, the instructions for payment are on the invoice.
+If your account is approved for payment by wire transfer, the instructions for payment are on the invoice.
 
 ## Can I pay my invoice online?
 
-You can't pay your invoice online. You must remit payment via either check or EFT.
+You can't pay your invoice online. You must remit payment via wire transfer.
 
 ## Can I change from my current payment method to paying by invoice?
 

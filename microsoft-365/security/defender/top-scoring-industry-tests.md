@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   -m365-security-compliance
-  - tier2
+  - tier3
 ms.topic: conceptual
 search.appverid: met150
 ms.date: 02/16/2021
@@ -52,6 +52,8 @@ Microsoft Defender Antivirus is the [next generation protection](https://www.you
 
 The AV-TEST Product Review and Certification Report tests on three categories: protection, performance, and usability. The following scores are for the Protection category that has two scores: Real-World Testing and the AV-TEST reference set (known as "Prevalent Malware").
 
+- 2022 AV-TEST Award – for tested IT Security:  [Best Advanced Protection for Consumer Users and Best Advanced Protection](https://www.av-test.org/en/news/av-test-award-2022-for-microsoft/)
+
 - November - December 2021 AV-TEST Business User test: [Protection score 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/december-2021/microsoft-defender-antivirus-4.18-212622/) <sup>**Latest**</sup>
 
     Microsoft Defender Antivirus achieved a perfect Protection score of 6.0/6.0, with 100% in November and December. 18,870 malware samples were used.
@@ -83,6 +85,8 @@ Business Security Test consists of three main parts: the Real-World Protection T
 ### SE Labs: AAA award in the latest test
 
 SE Labs test a range of solutions used by products and services to detect and/or protect against attacks. It includes endpoint software, network appliances, and cloud services.
+
+- Best Email Security Service of 2023: [AAA award](https://www.microsoft.com/en-us/security/blog/2023/02/21/microsoft-defender-for-office-365-named-best-email-security-service-of-2023-by-se-labs/)
 
 - Annual Report 2020 - 2021: [AAA award](https://selabs.uk/wp-content/uploads/2021/11/annual-report-2021.pdf) <sup>**Latest**</sup>
 
@@ -117,3 +121,4 @@ The capabilities within Microsoft Defender for Endpoint provide [additional laye
 [Learn more about Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) and evaluate it in your own network by signing up for a [90-day trial](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp), or [enabling Preview features on existing tenants](/windows/security/threat-protection/microsoft-defender-atp/preview).
 
 [Learn more about Microsoft 365 Defender](https://www.microsoft.com/security/business/threat-protection/integrated-threat-protection) or [start using the service](m365d-enable.md).
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

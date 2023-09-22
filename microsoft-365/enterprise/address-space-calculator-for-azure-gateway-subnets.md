@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 ms.date: 01/07/2021
 audience: ITPro
-ms.topic: landing-page
+ms.topic: conceptual
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 ms.collection: 

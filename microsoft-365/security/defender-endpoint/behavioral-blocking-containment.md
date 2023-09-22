@@ -26,6 +26,8 @@ ms.date: 12/18/2020
 # Behavioral blocking and containment
 
 **Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Microsoft Defender Antivirus
@@ -137,3 +139,4 @@ This example shows that with behavioral blocking and containment capabilities, t
 - [See recent global threat activity](https://www.microsoft.com/wdsi/threats)
 
 - [Get an overview of Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

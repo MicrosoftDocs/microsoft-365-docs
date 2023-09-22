@@ -1,10 +1,10 @@
 ---
 title: Set up Microsoft Syntex per-user licensing
-ms.author: mikeplum
-author: MikePlumleyMSFT
-ms.reviewer: ssquires
-ms.date: 07/08/2020
-manager: serdars
+ms.author: chucked
+author: chuckedmonson
+ms.reviewer: ssquires, kkameth
+ms.date: 08/08/2023
+manager: pamgreen
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -21,7 +21,9 @@ description: Set up Microsoft Syntex per-user licensing.
 
 # Set up Microsoft Syntex per-user licensing
 
-If you plan to use Microsoft Syntex with per-user licensing, follow the steps in this article to set up your licenses, and then read [Set up Microsoft Syntex](set-up-microsoft-syntex.md) to set up Microsoft Syntex features.
+> [!NOTE]
+> As of July 1, 2023, per-user licenses are no longer available for purchase. You will need to [set up pay-as-you-go billing](syntex-azure-billing.md).<br><br>
+> Per-user licenses purchased before July 1 can still be assigned to new users. After existing per-user licenses expire, you will need to opt-in to Syntex [pay-as-you-go billing](syntex-azure-billing.md).
 
 For an overview of licensing options for Microsoft Syntex, see [Licensing for Microsoft Syntex](syntex-licensing.md).
 
@@ -47,23 +49,24 @@ Prior to setup, make sure to plan for the best way to set up and configure conte
 - The SharePoint sites in which you want to enable document processing - all of them, some, or selected sites
 - The name and admins for your content center
 
-## Requirements 
+## Requirements
 
 > [!NOTE]
 > You must have Global admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up Syntex.
 
 As an admin, you can also make changes to your selected settings anytime after setup, and throughout the content understanding management settings in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
+<!---
 ### Custom Power Platform environments
 
-If you plan to use a custom Power Platform environment, you must install the *AI Builder for Project Cortex* app in this environment. See [Manage Dynamics 365 apps](/power-platform/admin/manage-apps#install-an-app-in-the-environment-view) for details and look for the *AI Builder for Project Cortex* app in the list of Dynamics 365 apps.
+If you plan to use a custom Power Platform environment, you must install the *AI Builder for Project Cortex* app in this environment. See [Manage Dynamics 365 apps](/power-platform/admin/manage-apps#install-an-app-in-the-environment-view) for details and look for the *AI Builder for Project Cortex* app in the list of Dynamics 365 apps. The environment must not be of the Sandbox type.
 
 You also need to [allocate AI Builder credits](/power-platform/admin/capacity-add-on) to the custom environment before you can create document processing models. 
 
 When using a custom environment, model creators must be assigned the Environment Maker security role and model users must be assigned the Basic User security role. See [Assign a security role to a user](/power-platform/admin/assign-security-roles) for more information.
 
 Users creating models in a [content center site](/microsoft-365/contentunderstanding/create-a-content-center) must be site members. Users creating models locally outside the content center must be site owners of those sites.
-
+--->
 ## Assign licenses
 
 You must assign licenses for the users who will be using per-user Microsoft Syntex features.
@@ -80,8 +83,3 @@ To assign licenses:
 
 1. Select **Save changes**.
 
-## See also
-
-[Overview of the document processing model in AI Builder](/ai-builder/form-processing-model-overview)
-
-[Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment)

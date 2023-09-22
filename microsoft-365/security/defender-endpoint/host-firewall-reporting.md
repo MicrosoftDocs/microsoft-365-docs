@@ -105,7 +105,7 @@ catch {
 
 Here are some examples of the firewall report pages. Here you'll find a summary of inbound, outbound, and application activity. You can access this page directly by going to <https://security.microsoft.com/firewall>.
 
-:::image type="content" source="images/host-firewall-reporting-page.png" alt-text="The Host firewall reporting page" lightbox="\images\host-firewall-reporting-page.png":::
+:::image type="content" source="images/host-firewall-reporting-page.png" alt-text="The Host firewall reporting page" lightbox="images/host-firewall-reporting-page.png":::
 
 These reports can also be accessed by going to **Reports** > **Security Report** > **Devices** (section) located at the bottom of the **Firewall Blocked Inbound Connections** card.
 
@@ -113,20 +113,22 @@ These reports can also be accessed by going to **Reports** > **Security Report**
 
 Cards support interactive objects. You can drill into the activity of a device by clicking on the device name, which will launch the Microsoft 365 Defender portal in a new tab, and take you directly to the **Device Timeline** tab.
 
-:::image type="content" source="images/firewall-reporting-blocked-connection.png" alt-text="The Computers with a blocked connection page" lightbox="\images\firewall-reporting-blocked-connection.png":::
+:::image type="content" source="images/firewall-reporting-blocked-connection.png" alt-text="The Computers with a blocked connection page" lightbox="images/firewall-reporting-blocked-connection.png":::
 
 You can now select the **Timeline** tab, which will give you a list of events associated with that device.
 
 After clicking on the **Filters** button on the upper right-hand corner of the viewing pane, select the type of event you want. In this case, select **Firewall events** and the pane will be filtered to Firewall events.
 
-:::image type="content" source="images/firewall-reporting-filters-button.png" alt-text="The Filters button" lightbox="\images\firewall-reporting-filters-button.png":::
+:::image type="content" source="images/firewall-reporting-filters-button.png" alt-text="The Filters button" lightbox="images/firewall-reporting-filters-button.png":::
 
 ### Drill into advanced hunting (preview refresh)
 
 Firewall reports support drilling from the card directly into **Advanced Hunting** by clicking the **Open Advanced hunting** button. The query will be pre-populated.
 
-:::image type="content" source="images/firewall-reporting-advanced-hunting.png" alt-text="The Open Advanced hunting button" lightbox="\images\firewall-reporting-advanced-hunting.png":::
+:::image type="content" source="images/firewall-reporting-advanced-hunting.png" alt-text="The Open Advanced hunting button" lightbox="images/firewall-reporting-advanced-hunting.png":::
 
 The query can now be executed, and all related Firewall events from the last 30 days can be explored.
 
 For more reporting, or custom changes, the query can be exported into Power BI for further analysis. Custom reporting can be facilitated by downloading the [Custom Reporting script](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall) to monitor the Windows Defender Firewall activities using Power BI.
+
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

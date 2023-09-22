@@ -9,9 +9,9 @@ audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.date: 09/15/2022
-ms.localizationpriority: high
-ms.reviewer: shlomiakirav
+ms.date: 07/19/2023
+ms.localizationpriority: medium
+ms.reviewer: nehabha
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
@@ -38,41 +38,35 @@ Microsoft 365 Business Premium includes two main types of policies to protect yo
 
 These policies are part of Microsoft Defender for Business, included in your Microsoft 365 Business Premium subscription. Information is provided for working with policies in the Microsoft 365 Defender portal or in the Microsoft Intune admin center.
 
-## Working with device polices in the Microsoft 365 Defender portal
+## Working with device policies in the Microsoft 365 Defender portal
 
-The following details apply to working with your policies in the security center.
+The following details apply to working with your policies in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
 
-### View existing device protection policies
+:::image type="content" source="media/m365defender.png" alt-text="Screenshot of the Microsoft 365 Defender portal." lightbox="media/m365defender.png":::
 
-To view your existing device protection policies in the Microsoft 365 Defender portal:
+### View existing device protection policies in Microsoft 365 Defender
 
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
-
-1. In the navigation pane, choose **Device configuration**. Policies are organized by operating system (such as **Windows client**) and policy type (such as **Next-generation protection** and **Firewall**).
+1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Device configuration**. Policies are organized by operating system (such as **Windows client**) and policy type (such as **Next-generation protection** and **Firewall**).
 
     :::image type="content" source="../media/mdb-deviceconfiguration.png" lightbox="../media/mdb-deviceconfiguration.png" alt-text="The Device configuration page.":::
 
-1. Select an operating system tab (for example, **Windows clients**), and then review the list of policies under the **Next-generation protection** and **Firewall** categories.
+2. Select an operating system tab (for example, **Windows clients**), and then review the list of policies under the **Next-generation protection** and **Firewall** categories.
 
-1. To view more details about a policy, select its name. A side pane will open that provides more information about that policy, such as which devices are protected by that policy.
+3. To view more details about a policy, select its name. A side pane will open that provides more information about that policy, such as which devices are protected by that policy.
 
    :::image type="content" source="../media/mdb-deviceconfig-selectedpolicy.png" lightbox="../media/mdb-deviceconfig-selectedpolicy.png" alt-text="Screenshot of a policy selected in the Device configuration page..":::
 
-### Edit an existing device protection policy
+### Edit an existing device protection policy in Microsoft 365 Defender
 
-To edit a device policy:
+1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Device configuration**. Policies are organized by operating system (such as **Windows client**) and policy type (such as **Next-generation protection** and **Firewall**).
 
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
+2. Select an operating system tab (for example, **Windows clients**), and then review the list of policies under the **Next-generation protection** and **Firewall** categories.
 
-1. In the navigation pane, choose **Device configuration**. Policies are organized by operating system (such as **Windows client**) and policy type (such as **Next-generation protection** and **Firewall**).
+3. To edit a policy, select its name, and then choose **Edit**.
 
-1. Select an operating system tab (for example, **Windows clients**), and then review the list of policies under the **Next-generation protection** and **Firewall** categories.
+4. On the **General information** tab, review the information. If necessary, you can edit the description. Then choose **Next**.
 
-1. To edit a policy, select its name, and then choose **Edit**.
-
-1. On the **General information** tab, review the information. If necessary, you can edit the description. Then choose **Next**.
-
-1. On the **Device groups** tab, determine which device groups should receive this policy.  
+5. On the **Device groups** tab, determine which device groups should receive this policy.  
 
    - To keep the selected device group as it is, choose **Next**.
    - To remove a device group from the policy, select **Remove**.
@@ -81,37 +75,33 @@ To edit a device policy:
 
    After you have specified which device groups should receive the policy, choose **Next**.
 
-1. On the **Configuration settings** tab, review the settings. If necessary, you can edit the settings for your policy. To get help with this task, see the following articles: 
+6. On the **Configuration settings** tab, review the settings. If necessary, you can edit the settings for your policy. To get help with this task, see the following articles: 
 
-   - [Understand next-generation configuration settings](../security/defender-business/mdb-next-gen-configuration-settings.md)   
+   - [Understand next-generation configuration settings](../security/defender-business/mdb-next-generation-protection.md)   
    - [Firewall settings](../security/defender-business/mdb-firewall.md)
 
    After you have specified your next-generation protection settings, choose **Next**.
 
-1. On the **Review your policy** tab, review the general information, targeted devices, and configuration settings.
+7. On the **Review your policy** tab, review the general information, targeted devices, and configuration settings.
 
    - Make any needed changes by selecting **Edit**.
    - When you’re ready to proceed, choose **Update policy**.
 
-### Create a new device protection policy
+### Create a new device protection policy in Microsoft 365 Defender
 
-To create a new device protection policy:
+1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Device configuration**. Policies are organized by operating system (such as **Windows client**) and policy type (such as **Next-generation protection** and **Firewall**).
 
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in.
+2. Select an operating system tab (for example, **Windows clients**), and then review the list of **Next-generation protection** policies.
 
-1. In the navigation pane, choose **Device configuration**. Policies are organized by operating system (such as **Windows client**) and policy type (such as **Next-generation protection** and **Firewall**).
+3. Under **Next-generation protection** or **Firewall**, select **+ Add**.
 
-1. Select an operating system tab (for example, **Windows clients**), and then review the list of **Next-generation protection** policies.
-
-1. Under **Next-generation protection** or **Firewall**, select **+ Add**.
-
-1. On the **General information** tab, take the following steps:
+4. On the **General information** tab, take the following steps:
 
    1. Specify a name and description. This information will help you and your team identify the policy later on.
    2. Review the policy order, and edit it if necessary. (For more information, see [Policy order](../security/defender-business/mdb-policy-order.md).)
    3. Choose **Next**.
 
-1. On the **Device groups** tab, either create a new device group, or use an existing group. Policies are assigned to devices through device groups. Here are some things to keep in mind:
+5. On the **Device groups** tab, either create a new device group, or use an existing group. Policies are assigned to devices through device groups. Here are some things to keep in mind:
 
    - Initially, you might only have your default device group, which includes the devices people in your organization are using to access organization data and email. You can keep and use your default device group.
    - Create a new device group to apply a policy with specific settings that are different from the default policy.
@@ -120,26 +110,24 @@ To create a new device protection policy:
 
    To learn more about device groups, see [Device groups in Microsoft Defender for Business](../security/defender-business/mdb-create-edit-device-groups.md).
 
-1. On the **Configuration settings** tab, specify the settings for your policy, and then choose **Next**. For more information about the individual settings, see [Understand next-generation configuration settings in Microsoft Defender for Business](../security/defender-business/mdb-next-gen-configuration-settings.md).
+6. On the **Configuration settings** tab, specify the settings for your policy, and then choose **Next**. For more information about the individual settings, see [Understand next-generation configuration settings in Microsoft Defender for Business](../security/defender-business/mdb-next-generation-protection.md).
 
-1. On the **Review your policy** tab, review the general information, targeted devices, and configuration settings.
+7. On the **Review your policy** tab, review the general information, targeted devices, and configuration settings.
 
    - Make any needed changes by selecting **Edit**.
    - When you’re ready to proceed, choose **Create policy**.
 
 ## Working with device policies in the Microsoft Intune admin center
 
-Use the following information to create and manage device policies in Intune, done through Endpoint security in the Microsoft Intune admin center.
+Use the following information to create and manage device policies in Intune, done through Endpoint security in the Microsoft Intune admin center ([https://intune.microsoft.com](https://intune.microsoft.com)).
 
-### Create, duplicate and edit policies
+:::image type="content" source="media/intune-admin-center.png" alt-text="Screenshot of the Intune admin center." lightbox="media/intune-admin-center.png":::
 
-To create a policy in Intune
+### Create policies in Intune
 
-1. Sign in to the Microsoft Intune admin center.
+1. In the Microsoft Intune admin center ([https://intune.microsoft.com](https://intune.microsoft.com)), select **Endpoint security** and the type of policy you want to configure, and then select **Create Policy**.
 
-1. Select **Endpoint security** and the type of policy you want to configure, and then select **Create Policy**.
-
-1. Choose from the following policy types:
+2. Choose from the following policy types:
 
     - Antivirus
     - Disk encryption
@@ -147,51 +135,42 @@ To create a policy in Intune
     - Endpoint detection and response
     - Attack surface reduction
     - Account protection
-    - Enter the following properties:
 
-1. Platform: Choose the platform for which you're creating the policy. The available options depend on the policy type you select.
+3. Specify the following properties:
 
-1. Profile: Choose from the available profiles for the platform you selected. For information about the profiles, see the dedicated section in this article for your chosen policy type.
+   - **Platform**: Choose the platform for which you're creating the policy. The available options depend on the policy type you select.
+   - **Profile**: Choose from the available profiles for the platform you selected. For information about the profiles, see the dedicated section in this article for your chosen policy type.
 
-1. Select **Create**.
+   Then select **Create**.
 
-1. On the Basics page, enter a name and description for the profile, then choose **Next**.
+4. On the Basics page, enter a name and description for the profile, then choose **Next**.
 
-1. On the Configuration settings page, expand each group of settings, and configure the settings you want to manage with this profile.
+5. On the Configuration settings page, expand each group of settings, and configure the settings you want to manage with this profile. Then select **Next**.
 
-1. When you're done configuring settings, select **Next**.
+6. On the **Assignments** page, select the groups that will receive this profile. For more information on assigning profiles, see [Assign user and device profiles](/mem/intune/configuration/device-profile-assign). Then select **Next**.
 
-1. On the Scope tags page, choose **Select scope tags** to open the **Select tags** pane to assign scope tags to the profile.
+7. On the Review + create page, when you're done, choose **Create**. The new profile is displayed in the list when you select the policy type for the profile you created.
 
-1. Select **Next** to continue.
+### Duplicate a policy in Intune
 
-1. On the **Assignments** page, select the groups that will receive this profile. For more information on assigning profiles, see Assign user and device profiles.
+1. In the Microsoft Intune admin center ([https://intune.microsoft.com](https://intune.microsoft.com)), select the policy that you want to copy. Next, select **Duplicate** or select the ellipsis **(...)** to the right of the policy and select **Duplicate**.
 
-1. Select **Next**.
+2. Provide a New name for the policy, and then select **Save**.
 
-1. On the Review + create page, when you're done, choose **Create**. The new profile is displayed in the list when you select the policy type for the profile you created.
+### Edit a policy in Intune
 
-To duplicate a policy in Intune:
+1. In the Microsoft Intune admin center ([https://intune.microsoft.com](https://intune.microsoft.com)), select a policy, and then select **Properties**.
 
-1. Sign in to the Microsoft Intune admin center.
+2. Select **Settings** to expand a list of the configuration settings in the policy. You can’t modify the settings from this view, but you can review how they're configured.
 
-1. Select the policy that you want to copy. Next, select **Duplicate** or select the ellipsis **(...)** to the right of the policy and select **Duplicate**.
-1. Provide a New name for the policy, and then select **Save**.
-
-To edit a policy:
-
-1. Select the new policy, and then select **Properties**.
-
-1. Select **Settings** to expand a list of the configuration settings in the policy. You can’t modify the settings from this view, but you can review how they're configured.
-
-1. To modify the policy, select **Edit** for each category where you want to make a change:
+3. To modify the policy, select **Edit** for each category where you want to make a change:
 
     - Basics
     - Assignments
     - Scope tags
     - Configuration settings
 
-1. After you’ve made changes, select **Save** to save your edits. Edits to one category must be saved before you can introduce edits to any additional categories.
+4. After you’ve made changes, select **Save** to save your edits. Edits to one category must be saved before you can introduce edits to any additional categories.
 
 ## Manage conflicts
 
@@ -202,6 +181,8 @@ Security baselines can set a non-default value for a setting to comply with the 
 Other policy types, including the endpoint security policies, set a value of Not configured by default. These other policy types require you to explicitly configure settings in the policy.
 
 Regardless of the policy method, managing the same setting on the same device through multiple policy types, or through multiple instances of the same policy type can result in conflicts that should be avoided.
+
+If you do run into policy conflicts, see [Troubleshooting policies and profiles in Microsoft Intune](/troubleshoot/mem/intune/device-configuration/troubleshoot-policies-in-microsoft-intune).
 
 ## See also
 

@@ -3,8 +3,8 @@ title: Microsoft Defender for Identity detection exclusions in Microsoft 365 Def
 description: Learn how to configure Microsoft Defender for Identity detection exclusions in Microsoft 365 Defender.
 ms.date: 11/02/2021
 ms.topic: how-to
-author: dcurwin
-ms.author: dacurwin
+author: batamig
+ms.author: bagol
 ms.service: microsoft-defender-for-identity
 manager: raynew
 ms.collection: m365-security

@@ -21,7 +21,7 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.date: 02/22/2023
+ms.date: 05/31/2023
 ---
 
 # Automatic attack disruption in Microsoft 365 Defender
@@ -39,8 +39,6 @@ Automatic attack disruption limits lateral movement early on and reduces the ove
 This article provides an overview of automated attack disruption and includes links to the next steps and additional resources.
 
 ## How automatic attack disruption works
-
-[!include[Prerelease information](../../includes/prerelease.md)]
 
 Automatic attack disruption is designed to contain attacks in progress, limit the impact on an organization's assets, and provide more time for the SOC to remediate the attack fully. Unlike known protection methods such as prevention and blocking based on a single indicator of compromise, the attack disruption in Microsoft 365 Defender leverages the full breadth of our XDR signal to act at the incident level, taking the entire attack into account.
 
@@ -81,15 +79,21 @@ The Microsoft 365 Defender incident page will reflect the automatic attack disru
 
 The Microsoft 365 Defender user experience now includes additional visual cues to ensure visibility of these automatic actions. You will find them across the following experiences:
 
-In the incident queue:
+1. In the incident queue:
 
-- A tag titled *Attack Disruption* appears next to affected incidents
+    - A tag titled *Attack Disruption* appears next to affected incidents
 
-On the incident page:
+2. On the incident page:
 
-- A tag titled *Attack Disruption*
-- A yellow banner at the top of the page that highlights the automatic action taken
-- The current asset status is shown in the incident graph if an action is done on an asset, e.g., account disabled or device contained
+    - A tag titled *Attack Disruption*
+    - A yellow banner at the top of the page that highlights the automatic action taken
+    - The current asset status is shown in the incident graph if an action is done on an asset, e.g., account disabled or device contained
+
+3. Via API:
+
+    An **(attack disruption)** string is added to the end of the titles of incidents with high confidence likely to be automatically disrupted. For example:
+
+    *BEC financial fraud attack launched from a compromised account (attack disruption)*
 
 For more information, see [view attack disruption details and results](autoad-results.md).
 
@@ -98,3 +102,6 @@ For more information, see [view attack disruption details and results](autoad-re
 
 - [Configuring automatic attack disruption in Microsoft 365 Defender](configure-attack-disruption.md)
 - [View details and results](autoad-results.md)
+
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

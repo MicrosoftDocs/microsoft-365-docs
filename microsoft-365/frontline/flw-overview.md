@@ -2,9 +2,9 @@
 title: Get started with Microsoft 365 for frontline workers
 description: Learn how you can use Microsoft 365 and Teams to empower the frontline workers in your organization.
 search.appverid: MET150
-author: samanro
-ms.author: samanro
-manager: pamgreen
+author: lana-chin
+ms.author: heidip
+manager: serdars
 audience: admin
 ms.topic: overview
 ms.service: microsoft-365-frontline
@@ -14,7 +14,8 @@ ms.collection:
   - highpri
   - m365solution-overview
   - m365solution-frontline
-  - tier1
+  - essentials-overview
+  - essentials-get-started
 ms.reviewer: aaglick
 appliesto: 
   - Microsoft Teams
@@ -96,7 +97,6 @@ Safeguard your business with best-in-class security and compliance features. Mic
 
 |Capability |License availability |
 |-----------|---------------------|
-|[Frontline worker onboarding wizard](flw-onboarding-wizard.md) |Enterprise, F1, F3 |
 |[Deploy Teams at scale for frontline workers](deploy-teams-at-scale.md) |Enterprise, F1, F3 |
 |[Teams policy packages for frontline workers](/microsoftteams/policy-packages-flw) |Enterprise, F1, F3 |
 

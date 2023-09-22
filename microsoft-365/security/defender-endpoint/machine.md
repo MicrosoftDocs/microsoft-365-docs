@@ -13,8 +13,9 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - m365-security
-- tier2
-ms.topic: conceptual
+- tier3
+- must-keep
+ms.topic: reference
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
@@ -63,7 +64,7 @@ ms.date: 12/18/2020
 |id|String|[machine](machine.md) identity.|
 |computerDnsName|String|[machine](machine.md) fully qualified name.|
 |firstSeen|DateTimeOffset|First date and time where the [machine](machine.md) was observed by Microsoft Defender for Endpoint.|
-|lastSeen|DateTimeOffset|Time and date of the last received full device report. A device typically sends a full report every 24 hours. <br> NOTE: This property does not correspond to the lastseen value in the UI. It is pertains to the last device update.|
+|lastSeen|DateTimeOffset|Time and date of the last received full device report. A device typically sends a full report every 24 hours. <br> NOTE: This property doesn't correspond to the last seen value in the UI. It pertains to the last device update.|
 |osPlatform|String|Operating system platform.|
 |onboardingstatus|String|Status of machine onboarding. Possible values are: "onboarded", "CanBeOnboarded", "Unsupported", and "InsufficientInfo".|
 |osProcessor|String|Operating system processor. Use osArchitecture property instead.|
@@ -81,3 +82,4 @@ ms.date: 12/18/2020
 |deviceValue|Nullable Enum|The [value of the device](tvm-assign-device-value.md). Possible values are: 'Normal', 'Low' and 'High'.|
 |ipAddresses|IpAddress collection|Set of ***IpAddress*** objects. See [Get machines API](get-machines.md).|
 |osArchitecture|String|Operating system architecture. Possible values are: "32-bit", "64-bit". Use this property instead of osProcessor.|
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

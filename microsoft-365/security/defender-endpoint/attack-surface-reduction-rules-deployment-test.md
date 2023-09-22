@@ -1,16 +1,11 @@
 ---
 title: Test attack surface reduction (ASR) rules
 description: Provides guidance to test your attack surface reduction (ASR) rules deployment. Microsoft Defender for Endpoint (MDE) ASR test includes, audit defender ASR rules, configure ASR rules using Intune, Microsoft ASR rules reporting, ASR rules exclusions, ASR rules event viewer.
-keywords: Microsoft Defender for Endpoint (MDE) Attack surface reduction (ASR) rules deployment, Attack surface reduction guide, ASR deployment, test asr rules, ASR rules exclusions, Microsoft ASR, configure ASR rules, attack surface reduction rules best practice, attack surface reduction intune, ASR rules event viewer, attack surface reduction defender, asr rules powershell, attack surface reduction best practice, disable ASR rules, host intrusion prevention system, protection rules, anti-exploit rules, anti-exploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules
-search.product: eADQiWindows 10XVcnh
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
 audience: ITPro
-author: jweston-1
+author: dansimp
 ms.author: dansimp
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
@@ -21,11 +16,16 @@ ms.collection:
  - m365solution-asr-rules
  - highpri
  - tier1
-ms.date: 12/18/2022
+ms.date: 08/14/2023
 search.appverid: met150
 ---
 
 # Test attack surface reduction (ASR) rules
+
+**Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Testing Microsoft Defender for Endpoint (MDE) attack surface reduction (ASR) rules helps you determine if rules will impede line-of-business operations prior to enabling any rule. By starting with a small, controlled group, you can limit potential work disruptions as you expand your deployment across your organization.
 
@@ -55,7 +55,7 @@ You can use Microsoft Intune Endpoint Security to configure custom ASR rules.
 1. Open the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Go to **Endpoint Security** > **Attack surface reduction**.
 3. Select **Create Policy**.
-4. In **Platform**, select **Windows 10 and later**, and in **Profile**, select **Attack surface reduction rules**.
+4. In **Platform**, select **Windows 10, Windows 11, and Windows Server**, and in **Profile**, select **Attack surface reduction rules**.
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/asr-mem-create-profile.png" alt-text="The profile creation page for ASR rules" lightbox="images/asr-mem-create-profile.png":::
@@ -187,12 +187,11 @@ ASR rules now provide the capability to configure rule-specific exclusions, know
 
 > [!NOTE]
 > Per-rule exclusions cannot currently be configured by using PowerShell or Group Policy.
-> In Microsoft Intune, per-rule exclusions cannot be added to the existing policy. As it is currently implemented, in order to configure per-rule exclusions, you must create a new policy in Intune to replace the existing policy.
 
 To configure per-rule exclusions:
 
 1. Open the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), and navigate to **Home** > **Endpoint security** > **Attack surface reduction**.
-1. If it is not already configured, set the rule for which you want to configure exclusions to **Block*.
+1. If it is not already configured, set the rule for which you want to configure exclusions to **Audit** or **Block**.
 1. In **ASR Only Per Rule Exclusion**, click the toggle to change from **Not configured** to **Configured.**
 1. Enter the names of the files or application that you want to exclude.
 1. At the bottom of the **Create profile** wizard, click **Next** and follow the wizard instructions.
@@ -246,3 +245,4 @@ Event ID | Description
 [Operationalize attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-operationalize.md)
 
 [Attack surface reduction (ASR) rules reference](attack-surface-reduction-rules-reference.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

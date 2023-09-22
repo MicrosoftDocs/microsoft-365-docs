@@ -9,8 +9,8 @@ audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.date: 01/18/2023
-ms.localizationpriority: high
+ms.date: 07/19/2023
+ms.localizationpriority: medium
 ms.reviewer: efratka
 f1.keywords: NOCSH 
 ms.collection: 
@@ -27,11 +27,12 @@ To onboard devices to Defender for Business, you can choose from several options
 
 - [Automatic onboarding for Windows devices that are already enrolled in Microsoft Intune](#use-automatic-onboarding-for-windows-devices-that-are-already-enrolled-in-intune)
 - [A local script to onboard Windows and Mac devices to Defender for Business](#use-a-local-script-to-onboard-windows-and-mac-devices-to-defender-for-business) (for devices that are not already enrolled in Intune)
+- [Onboard mobile devices using the Microsoft Defender app](#onboard-mobile-devices-using-the-microsoft-defender-app) (Mobile threat defense capabilities are now generally available!)
 - [Intune for enrolling new devices, including mobile devices](#use-intune-to-enroll-devices) (Windows, Mac, iOS, and Android) and then apply Defender for Business policies to those devices
 
 This article also includes:
 
-- [What about servers?](#what-about-servers) (NEW!)
+- [What about servers?](#what-about-servers)
 - [How to run a detection test on a Windows device](#run-a-detection-test-on-a-windows-device)
 - [How to onboard devices gradually](#onboard-devices-gradually)
 - [How to offboard a device](#offboard-a-device) if a device is replaced or someone leaves the organization
@@ -60,6 +61,14 @@ You can use a local script to onboard Windows and Mac devices. When you run the 
 
 See [Onboard devices to Microsoft Defender for Business](../security/defender-business/mdb-onboard-devices.md) for detailed instructions.
 
+## Onboard mobile devices using the Microsoft Defender app
+
+You can now onboard Android and iOS devices using the Microsoft Defender app. With [mobile threat defense capabilities in Defender for Business](../security/defender-business/mdb-mtd.md), users download the Microsoft Defender app from Google Play or the Apple App Store, sign in, and complete onboarding steps. 
+
+For detailed instructions, see the **Mobile devices** tab in [Onboard devices to Microsoft Defender for Business](../security/defender-business/mdb-onboard-devices.md).
+
+To learn more about mobile threat defense, see [Mobile threat defense capabilities in Microsoft Defender for Business](../security/defender-business/mdb-mtd.md).
+
 ## Use Intune to enroll devices
 
 To enroll a device, you can enroll it yourself, or have users sign in to the company portal app, enroll their devices, and then install any apps that are needed. 
@@ -86,7 +95,7 @@ After you've onboarded Windows devices to Defender for Business, you can run a d
    powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference = 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-MDATP-test\\invoice.exe');Start-Process 'C:\\test-MDATP-test\\invoice.exe'
    ```
 
-After the command has run, the Command Prompt window closes automatically. If successful, the detection test is marked as completed, and a new alert appears in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) for the newly-onboarded device in about ten minutes.
+After the command has run, the Command Prompt window closes automatically. If successful, the detection test is marked as completed, and a new alert appears in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) for the newly onboarded device in about ten minutes.
 
 ## Onboard devices gradually
 

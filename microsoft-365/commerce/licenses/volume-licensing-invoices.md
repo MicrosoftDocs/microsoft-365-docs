@@ -19,7 +19,7 @@ ms.custom:
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn how to access and view non-Azure volume licensing invoices in the Microsoft 365 admin center."
-ms.date: 11/18/2022
+ms.date: 03/31/2023
 ---
 
 # Non-Azure Microsoft volume licensing invoices
@@ -35,11 +35,10 @@ This new invoice format is a phased implementation and will roll out to VL custo
 
 ## Before you begin
 
-To access VL invoices in the Microsoft 365 admin center, you must satisfy all three of the following conditions:
+To access VL invoices in the Microsoft 365 admin center, you must satisfy the following conditions:
 
 1. You must be the **Bill To contact** for the corresponding contracts.
 2. You must be a Volume Licensing Service Center (VLSC) user.
-3. You must be a Global or Billing admin or have a non-admin Microsoft Azure Active Directory (Azure AD) role.
 
 ## View or download your bill
 
@@ -100,12 +99,9 @@ Total=Charges\-Commitment Usage (if applicable)+Sales Tax
 
 ### Payment Instructions
 
-The **PAYMENT INSTRUCTIONS** section contains the account information you need to send your wire transfer or ACH payment.
+The **PAYMENT INSTRUCTIONS** section contains the account information you need to send your wire transfer payment.
 
-> [!IMPORTANT]
-> Don't mail a physical check to the Microsoft address shown on your invoice.
-
-:::image type="content" source="../../media/volume-licensing-invoices/vlinvoices-paymentinstructions.png" alt-text="The Payment Instructions section of the invoice that contains account information for where to send your wire transfer or ACH payment.":::
+:::image type="content" source="../../media/volume-licensing-invoices/vlinvoices-paymentinstructions.png" alt-text="The Payment Instructions section of the invoice that contains account information for where to send your wire transfer payment.":::
 
 ### Billing Details By Product
 
@@ -149,7 +145,7 @@ The invoice recon file is a CSV file that includes the same information as the I
 |Extended Amount|The quantity multiplied by the unit price.|
 |Commitment Usage|The amount of monetary commitment that was used.|
 |Net Amount|The extended amount minus the commitment usage.|
-|Tax Rate|The tax rate applicable to the product based on the country of billing.|
+|Tax Rate|The tax rate applicable to the product based on the country/region of billing.|
 |Tax Amount|The net amount multiplied by tax rate.|
 |Total|The sum of the net amount and tax amount.|
 |Is Third Party|Indicates whether the product or service is a third-party product.|
@@ -213,7 +209,7 @@ If the amount billed is different than expected, that can happen for a few reaso
 
 ## What is the tax rate applied to my invoice?
 
-The tax rate applied to the invoice depends on the country of billing. You can check the invoice recon file for the tax rate applied to each
+The tax rate applied to the invoice depends on the country/region of billing. You can check the invoice recon file for the tax rate applied to each
 item. For more information, contact your Microsoft partner.
 
 ## Who can I contact for questions related to pricing and the coverage period?

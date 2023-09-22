@@ -1,7 +1,7 @@
 ---
-title: "Compare groups"
-ms.reviewer: arvaradh
-ms.date: 02/18/2020
+title: Compare types of groups in Microsoft 365
+ms.reviewer: rahulnayak
+ms.date: 07/18/2023
 f1.keywords: CSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -9,7 +9,7 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection: 
 - Tier2
 - scotvorg
@@ -26,14 +26,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
-description: "Microsoft 365 Group members get a group email and shared workspace for conversations, files, and calendar events, Stream, and a Planner."
+description: Learn about the types of groups that are available in Microsoft 365
 ---
 
-# Compare groups
+# Compare types of groups in Microsoft 365
 
 In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**Groups**</a> section of the Microsoft 365 admin center, you can create and manage these types of groups: 
 
-- **Microsoft 365 Groups** are used for collaboration between users, both inside and outside your company. They include collaboration services such as SharePoint and Planner.
+- **Microsoft 365 Groups** are used for collaboration between users, both inside and outside your company. They include collaboration services such as SharePoint and Planner. Microsoft Teams uses Microsoft 365 Groups for membership.
 - **Distribution groups** are used for sending email notifications to a group of people.
 - **Security groups** are used for granting access to resources such as SharePoint sites.
 - **Mail-enabled security groups** are used for granting access to resources such as SharePoint, and emailing notifications to those users.
@@ -51,7 +51,7 @@ All of these group types can be used with Power Automate.
 
 ## Microsoft 365 Groups
 
-Microsoft 365 Groups are used for collaboration between users, both inside and outside your company. With each Microsoft 365 Group, members get a group email and shared workspace for conversations, files, and calendar events, Stream, and a Planner.
+Microsoft 365 Groups are used for collaboration between users, both inside and outside your company. With each Microsoft 365 group, members get a group email and shared workspace for conversations, files, and calendar events, Stream, and a Planner. Microsoft 365 Groups can also be connected to Teams or Viva Engage.
 
 You can add people from outside your organization to a group as long as this has been [enabled by the administrator](manage-guest-access-in-groups.md). You can also allow external senders to send email to the group email address.
 
@@ -61,7 +61,7 @@ Microsoft 365 Groups can be accessed through mobile apps such as Outlook for iOS
 
 Group members can send as or send on behalf of the group email address if this has been [enabled by the administrator](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md).
 
-Microsoft 365 groups support nesting through [dynamic groups in Azure Active Directory](/azure/active-directory/enterprise-users/groups-dynamic-rule-member-of).
+Microsoft 365 Groups support nesting through [dynamic groups in Azure Active Directory](/azure/active-directory/enterprise-users/groups-dynamic-rule-member-of).
 
 Microsoft 365 Groups can be added to one of the three SharePoint groups (Owners, Members, or Visitors) to give people permissions to the site.
 
@@ -83,9 +83,9 @@ Unlike regular distribution groups that contain a defined set of members, the me
 
 ## Security groups
 
-[Security groups](../email/create-edit-or-delete-a-security-group.md) are used for granting access to Microsoft 365 resources, such as SharePoint. They can make administration easier because you need only administer the group rather than adding users to each resource individually.
+[Security groups](../email/create-edit-or-delete-a-security-group.md) are used for granting access to Microsoft 365 resources, such as SharePoint sites. They can make administration easier because you need only administer the group rather than adding users to each resource individually.
 
-Security groups can contain users or devices. Creating a security group for devices can be used with mobile device management services, such as Intune.
+Security groups can contain users or devices. Creating a security group for devices can be used with mobile device management services, such as Microsoft Intune.
 
 Security groups can be [configured for dynamic membership in Azure Active Directory](/azure/active-directory/users-groups-roles/groups-change-type), allowing group members or devices to be added or removed automatically based on user attributes such as department, location, or title; or device attributes such as operating system version.
 
@@ -109,9 +109,9 @@ Shared mailboxes can receive external emails if the administrator has enabled th
 
 Shared mailboxes include a calendar that can be used for collaboration.
 
-Users with permissions to the group mailbox can send as or send on behalf of the mailbox email address, if the administrator has given that user permissions to do that. This is especially useful for help and support mailboxes because users can send emails from "Contoso Support" or "Building A Reception Desk."
+Users with permissions to the shared mailbox can send as or send on behalf of the mailbox email address, if the administrator has given that user permissions to do that. This is especially useful for help and support mailboxes because users can send emails from "Contoso Support" or "Building A Reception Desk."
 
-It's not possible to migrate a shared mailbox to a Microsoft 365 Group.
+It's not possible to migrate a shared mailbox to a Microsoft 365 group.
 
 ## Related content
 

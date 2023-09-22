@@ -2,12 +2,8 @@
 title: Step 3. Plan for Microsoft 365 Defender integration with your SOC catalog of services
 description: The basics of integrating Microsoft 365 Defender into your security operations catalog of services.
 keywords: incidents, alerts, investigate, correlation, attack, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyber-attack, secops, security operations, soc
-search.product: eADQiWindows 10XVcnh
 ms.service: microsoft-365-security
 ms.subservice: m365d
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: 
   - NOCSH
 ms.author: dansimp
@@ -16,14 +12,14 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
-  - m365-security
-  - m365solution-m365dsecops
-  - tier2
+  - zerotrust-solution
+  - msftsolution-secops
+  - tier3
 ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.date: 07/15/2021
+ms.date: 05/09/2023
 ---
 
 # Step 3. Plan for Microsoft 365 Defender integration with your SOC catalog of services
@@ -52,8 +48,6 @@ An established Security Operations Center (SOC) should have a catalog of service
 - Data loss prevention
 - Brand monitoring
 
-Because Microsoft 365 Defender technologies span various functions, your SOC team will need to determine which roles and responsibilities are best suited to manage each component of Microsoft 365 Defender and align to service function.
-
 The components of Microsoft 365 Defender are:
 
 - **Microsoft Defender for Identity** (formerly Azure Advanced Threat Protection, also known as Azure ATP) is a cloud-based security solution that uses Active Directory Domain Services (AD DS) signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at organizations.
@@ -76,3 +70,4 @@ To integrate the capabilities of Microsoft 365 Defender, you will need to refine
 ## Next step
 
 [Step 4. Define Microsoft 365 Defender roles, responsibilities, and oversight](integrate-microsoft-365-defender-secops-roles.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

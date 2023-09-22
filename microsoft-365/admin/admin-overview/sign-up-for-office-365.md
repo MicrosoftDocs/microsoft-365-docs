@@ -7,7 +7,7 @@ ms.author: cmcatee
 manager: scotv
 ms.reviewer: zainzaigham, pablom
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
@@ -31,7 +31,7 @@ ms.custom:
 search.appverid:
 - MET150
 ROBOTS: NOINDEX
-description: "Understand what you need to know about the latest versions of the Office programs before you go through the sign-up process for Office 365."
+description: "Understand what you need to know about the latest versions of the Microsoft 365 apps before you go through the sign-up process for Microsoft 365."
 ms.date: 03/17/2021
 ---
 
@@ -41,7 +41,7 @@ Check out all of our small business content on [Small business help & learning](
 
 Check out [Microsoft 365 small business help](https://go.microsoft.com/fwlink/?linkid=2197659) on YouTube.
 
-Sign up for Microsoft 365 for business so that your team can begin using the latest versions of Word, Excel, PowerPoint, and other Office programs.
+Sign up for Microsoft 365 for business so that your team can begin using the latest versions of Word, Excel, PowerPoint, and other Microsoft 365 apps.
 
 ::: moniker range="o365-21vianet"
 
@@ -98,7 +98,7 @@ You don't need to cancel your trial. If you don't buy the trial subscription, it
 
 - **The address and contact information for your subscription:**
 
-  - **Country** where the services will be used. You **won't** be able to change the country later, even during the sign-up process; you'll have to restart the sign-up wizard.
+  - **Country** where the services will be used. You **won't** be able to change the country/region later, even during the sign-up process; you'll have to restart the sign-up wizard.
 
   - **Email** and **phone number** so we can contact you if needed about your subscription. For example, if you forget your password, we would use this information to send you a temporary one. We also send your billing information to the email address you specify.
 

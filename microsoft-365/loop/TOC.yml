@@ -1,0 +1,16 @@
+- name: Microsoft Loop
+  items:
+    - name: Summary compliance capabilities
+      href: loop-compliance-summary.md
+    - name: Microsoft Loop components
+      items:
+        - name: Loop components in Microsoft 365
+          href: loop-components-teams.md
+        - name: Loop components in OneDrive and SharePoint
+          href: loop-components-configuration.md
+    - name: Microsoft Loop workspaces
+      items:
+        - name: Loop workspaces in Syntex repository services
+          href: loop-workspaces-configuration.md
+        - name: Loop workspaces storage and permissions
+          href: loop-workspaces-storage-permission.md

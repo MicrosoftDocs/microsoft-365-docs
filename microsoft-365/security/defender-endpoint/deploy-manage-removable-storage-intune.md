@@ -16,7 +16,7 @@ ms.collection:
 - tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.date: 12/28/2022
+ms.date: 06/06/2023
 ms.reviewer: tewchen
 search.appverid: met150
 ---
@@ -108,8 +108,10 @@ Go to the Microsoft Intune admin center (<https://endpoint.microsoft.com/>) > **
        - **Custom XML** as selected XML file
 
          Take a look at the **Overview** -> **Removable storage group**, you can create different group types. Here's a [group example XML file for any removable storage and CD-ROM and Windows portable devices](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Any%20Removable%20Storage%20and%20CD-DVD%20and%20WPD%20Group.xml).
+         
+   To get the GroupId, sign in to the **Microsoft Intune admin center** and select **Groups** > **Copy the Object ID**.
 
-       :::image type="content" source="media/any-removable-storage-group.png" alt-text="Screenshot of creating any Removable Storage Group." lightbox="media/any-removable-storage-group.png":::
+      :::image type="content" source="media/any-removable-storage-group.png" alt-text="Screenshot of creating any Removable Storage Group." lightbox="media/any-removable-storage-group.png":::
 
    > [!NOTE]
    > Comments using XML comment notation `<!-- COMMENT -->` can be used in the Rule and Group XML files, but they must be inside the first XML tag, not the first line of the XML file.
@@ -344,3 +346,4 @@ For this scenario, you need to create two groups: one group for any removable st
       Choose **+ Edit Entry** for **Entry**, as shown in the following screenshot:
 
       :::image type="content" source="media/208775366-f2cafb54-eb63-4bcd-b0fe-880f3cba2c1b.png" alt-text="Screenshot showing edit mode for an entry." lightbox="media/208775366-f2cafb54-eb63-4bcd-b0fe-880f3cba2c1b.png":::
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

@@ -5,11 +5,11 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: sgautam, jmueller
+ms.reviewer: emmasheridan, nicholak
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-business
-ms.localizationpriority: high
+ms.localizationpriority: medium
 ms.collection:
 - Tier1 
 - scotvorg
@@ -45,8 +45,8 @@ The following table explains what you can expect when a paid Microsoft 365 for b
 | Active | Expired <br/>(30 days\*) | Disabled <br/>(90 days\*) | Deleted |
 |------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
 | *Data accessible to all*                                               | *Data accessible to all*                                                     | *Data accessible to admins only*                                             | **Data deleted<br/>Azure Active Directory is removed, if not in use by other services** |
-| Users have normal access to Microsoft 365, files, and applications   | Users have normal access to Microsoft 365, files, and applications              | Users can't access Microsoft 365, files, or applications                        | Users can't access Microsoft 365, files, or applications                                     |
-| Admins have normal access to Microsoft 365, data, and apps | Admins can access the admin center                                           | Admins can access the admin center, but can't assign licenses to users       | Admins can access the admin center to buy and manage other subscriptions             |
+| Users have normal access to Microsoft 365, files, and Microsoft 365 apps   | Users have normal access to Microsoft 365, files, and Microsoft 365 apps              | Users can't access Microsoft 365 apps                        | Users can't access Microsoft 365, files, or Microsoft 365 apps                                     |
+| Admins have normal access to Microsoft 365, data, and Microsoft 365 apps | Admins can access the admin center                                           | Admins can access the admin center, but can't assign licenses to users       | Admins can access the admin center to buy and manage other subscriptions             |
 |                                                                        | Global or billing admins can reactivate the subscription in the admin center | Global or billing admins can reactivate the subscription in the admin center |                                                                                           |
 
 *For most offers, in most countries and regions.
@@ -77,7 +77,7 @@ To learn how to cancel, see [Cancel your subscription](cancel-your-subscription.
 
 ## What are my options if my subscription is about to expire?
 
-While a subscription is active, you and your users have normal access to your data, services like email and OneDrive for Business, and Office applications. As the admin, you'll receive a series of notifications via email and in the admin center as your subscription nears its expiration date.
+While a subscription is active, you and your users have normal access to your data, services like email and OneDrive for Business, and Microsoft 365 apps. As the admin, you'll receive a series of notifications via email and in the admin center as your subscription nears its expiration date.
   
 Before the subscription actually reaches its expiration date, you have a few options:
   
@@ -102,7 +102,7 @@ Here's what you can expect when your subscription is in each stage.
 
 **What to expect:** The Expired stage lasts for 30 days for most subscriptions, including subscriptions bought through [Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkID=613298), in most countries and regions. For Volume Licensing products, except for Microsoft Open, the Expired stage lasts 90 days.
 
-In this stage, users have normal access to the Microsoft 365 portal, Office applications, and services such as email and SharePoint Online.
+In this stage, users have normal access to the Microsoft 365 portal, Microsoft 365 apps, and services such as email and SharePoint Online.
   
 As an admin, you still have access to the admin center. Don't worry—global or billing admins can [reactivate the subscription](reactivate-your-subscription.md) and continue using Microsoft 365. If you don't reactivate, [back up your data](move-users-different-subscription.md).
   
@@ -110,7 +110,7 @@ As an admin, you still have access to the admin center. Don't worry—global or 
 
 **What to expect:** If you don't reactivate your subscription while it is in the Expired stage, it moves into a Disabled stage, which lasts for 90 days for most subscriptions, in most countries and regions. For Volume Licensing products, the Disabled stage lasts 30 days.
 
-In this stage, your access decreases significantly. Your users can't sign in, or access services like email or SharePoint Online. Office applications eventually move into a read-only, reduced functionality mode and display [Unlicensed Product notifications](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380). You can still sign in and get to the admin center, but can't assign licenses to users. Your customer data, including all user data, email, and files on team sites, is available only to you and other admins.
+In this stage, your access decreases significantly. Users can't access Microsoft 365 apps. Microsoft 365 apps eventually move into a read-only, reduced functionality mode and display [Unlicensed Product notifications](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380). You can still sign in and get to the admin center, but can't assign licenses to users. Your customer data, including all user data, email, and files on team sites, is available only to you and other admins.
 
 As a global or billing admin, you can [reactivate the subscription](reactivate-your-subscription.md) and continue using Microsoft 365 with all of your customer data intact. If you choose not to reactivate, [back up your data](move-users-different-subscription.md).
 
@@ -118,7 +118,7 @@ As a global or billing admin, you can [reactivate the subscription](reactivate-y
   
 **What to expect:** If you don't reactivate your subscription while it's expired or disabled, the subscription is deleted.
   
-Admins and users no longer have access to the services or Office applications that came with the subscription. All customer data—from user data to documents and email—is permanently deleted and is unrecoverable.
+Admins and users no longer have access to the services or Microsoft 365 apps that came with the subscription. All customer data—from user data to documents and email—is permanently deleted and is unrecoverable.
   
 At this point, you can't reactivate the subscription. However, as a global or billing admin, you can still access the admin center to manage other subscriptions, or to buy new subscriptions to meet your business needs.
   

@@ -21,17 +21,16 @@ ms.custom: migrationguides
 description: "Prerequisite steps for migrating from a third-party protection service or device to Microsoft Defender for Office 365 protection."
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 1/31/2023
+ms.date: 6/15/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
 ---
 
 # Migrate to Microsoft Defender for Office 365 - Phase 1: Prepare
 
-**Applies to**
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-
 <br>
 
-|![Phase 1: Prepare.](../../media/phase-diagrams/prepare.png) <br> Phase 1: Prepare|[![Phase 2: Set up](../../media/phase-diagrams/setup.png#lightbox)](migrate-to-defender-for-office-365-setup.md) <br> [Phase 2: Set up](migrate-to-defender-for-office-365-setup.md)|[![Phase 3: Onboard](../../media/phase-diagrams/onboard.png#lightbox)](migrate-to-defender-for-office-365-onboard.md) <br> [Phase 3: Onboard](migrate-to-defender-for-office-365-onboard.md)|
+|:::image type="content" source="../../media/phase-diagrams/prepare.png" alt-text="Phase 1: Prepare." lightbox="../../media/phase-diagrams/prepare.png"::: <br> Phase 1: Prepare|[:::image type="content" source="../../media/phase-diagrams/setup.png" alt-text="Phase 2: Set up." lightbox="../../media/phase-diagrams/setup.png":::](migrate-to-defender-for-office-365-setup.md) <br> [Phase 2: Set up](migrate-to-defender-for-office-365-setup.md)|[:::image type="content" source="../../media/phase-diagrams/onboard.png" alt-text="Phase 3: Onboard." lightbox="../../media/phase-diagrams/onboard.png":::](migrate-to-defender-for-office-365-onboard.md) <br> [Phase 3: Onboard](migrate-to-defender-for-office-365-onboard.md)|
 |---|---|---|
 |*You are here!*|||
 
@@ -50,12 +49,12 @@ A complete inventory of settings, rules, exceptions, etc. from your existing pro
 
 **But, it's very important that you do not automatically or arbitrarily recreate all of your existing customizations in Defender for Office 365**. At best, you might introduce settings that are no longer required, relevant, or functional. At worse, some of your previous customizations might actually create security issues in Defender for Office 365.
 
-Your testing and observation of the native capabilities and behavior of Defender for Office 365 will ultimately determine the overrides and settings that you need. You might find it helpful to organize the settings from your existing protection service into the following categories:
+Your testing and observation of the native capabilities and behavior of Defender for Office 365 ultimately determines the overrides and settings that you need. You might find it helpful to organize the settings from your existing protection service into the following categories:
 
 - **Connection or content filtering**: You'll likely find that you don't need most of these customizations in Defender for Office 365.
-- **Business routing**: The majority of the customizations that you need to recreate will likely fall into this category. For example, you can recreate these settings in Microsoft 365 as Exchange mail flow rules (also known as transport rules), connectors, and exceptions to spoof intelligence.
+- **Business routing**: Most of the customizations that you need to recreate likely fall into this category. For example, you can recreate these settings in Microsoft 365 as Exchange mail flow rules (also known as transport rules), connectors, and exceptions to spoof intelligence.
 
-Instead of moving old settings blindly into Microsoft 365, we recommend a waterfall approach that involves a pilot phase with ever-increasing user membership, and observation-based tuning based on balancing security considerations with organizational business needs.
+Instead of moving old settings blindly into Microsoft 365, we recommend a waterfall approach. This approach involves a pilot phase with ever-increasing user membership, and observation-based tuning based on balancing security considerations with organizational business needs.
 
 ## Check your existing protection configuration in Microsoft 365
 
@@ -70,14 +69,14 @@ Review your existing protection features in Microsoft 365 and consider removing 
 
 - If you're using any sort of complex routing (for example [Centralized Mail Transport](/exchange/transport-options)), you should consider simplifying your routing and thoroughly documenting it. External hops, especially after Microsoft 365 has already received the message, can complicate configuration and troubleshooting.
 
-- Outbound and relay mail flow is out of the scope for this article. However, be aware that you might need to do one or more of the following steps:
+- Outbound and relay mail flow is out of the scope for this article. However, you might need to do one or more of the following steps:
   - Verify that all of the domains that you use to send email have the proper SPF records. For more information, see [Set up SPF to help prevent spoofing](email-authentication-spf-configure.md).
-  - We strongly recommend that you setup DKIM signing in Microsoft 365. For more information, see [Use DKIM to validate outbound email](email-authentication-dkim-configure.md).
+  - We strongly recommend that you set up DKIM signing in Microsoft 365. For more information, see [Use DKIM to validate outbound email](email-authentication-dkim-configure.md).
   - If you're not routing mail directly from Microsoft 365, you need to change that routing by removing or changing the outbound connector.
 
-- Using Microsoft 365 to relay email from your on-premises email servers can be a complex project in itself. A simple example is a small number of apps or devices that send most of their messages to internal recipients and aren't used for mass mailings. See [this guide](/exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365) for details. More extensive environments will need to be more thoughtful. Marketing email and messages that could be seen as spam by recipients are not allowed.
+- Using Microsoft 365 to relay email from your on-premises email servers can be a complex project in itself. A simple example is a small number of apps or devices that send most of their messages to internal recipients and aren't used for mass mailings. See [this guide](/exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-microsoft-365-or-office-365) for details. More extensive environments need to be more thoughtful. Marketing email and messages that could be seen as spam by recipients aren't allowed.
 
-- Defender for Office 365 does not have a feature for aggregating DMARC reports. Visit the [Microsoft Intelligent Security Association (MISA) catalog](https://www.microsoft.com/misapartnercatalog) to view third-party vendors that offer DMARC reporting for Microsoft 365.
+- Defender for Office 365 doesn't have a feature for aggregating DMARC reports. Visit the [Microsoft Intelligent Security Association (MISA) catalog](https://www.microsoft.com/misapartnercatalog) to view third-party vendors that offer DMARC reporting for Microsoft 365.
 
 ## Move features that modify messages into Microsoft 365
 
@@ -85,8 +84,8 @@ You need to transfer any customizations or features that modify messages in any 
 
 If you don't turn off message modification features in your existing protection service, you can expect the following negative results in Microsoft 365:
 
-- DKIM will break. Not all senders rely on DKIM, but those that do will fail authentication.
-- [Spoof intelligence](anti-phishing-protection-spoofing-about.md) and the tuning step later in this guide will not work properly.
+- DKIM will break. Not all senders rely on DKIM, but senders that do will fail authentication.
+- [Spoof intelligence](anti-phishing-protection-spoofing-about.md) and the tuning step later in this guide won't work properly.
 - You'll probably get a high number of false positives (good mail marked as bad).
 
 To recreate external sender identification in Microsoft 365, you have the following options:
@@ -94,7 +93,7 @@ To recreate external sender identification in Microsoft 365, you have the follow
 - The [Outlook external sender call-out feature](https://techcommunity.microsoft.com/t5/exchange-team-blog/native-external-sender-callouts-on-email-in-outlook/ba-p/2250098), together with [first contact safety tips](anti-phishing-policies-about.md#first-contact-safety-tip).
 - Mail flow rules (also known as transport rules). For more information, see [Organization-wide message disclaimers, signatures, footers, or headers in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers).
 
-Microsoft is working with the industry to support the Authenticated Received Chain (ARC) standard in the near future. If you wish to leave any message modification features enabled at your current mail gateway provider, then we recommend contacting them about their plans to support this standard.
+Microsoft is working with the industry to support the Authenticated Received Chain (ARC) standard. If you wish to leave any message modification features enabled at your current mail gateway provider, then we recommend contacting them about their plans to support this standard.
 
 ## Account for any active phishing simulations
 
@@ -110,11 +109,11 @@ If you have active third-party phishing simulations, you need to prevent the mes
 
   Ultimately, it's your decision if you want to prevent delivery of email to the Junk Email folder in favor of delivery to quarantine. But, one thing is certain: if the experience in Defender for Office 365 is different than what your users are used to, you need to notify them and provide basic training. Incorporate learnings from the pilot and make sure that users are prepared for any new behavior for email delivery.
 
-- **Wanted bulk mail vs. unwanted bulk mail**: Many protection systems allow users to allow or block bulk email for themselves. These settings do not easily migrate to Microsoft 365, so you should consider working with VIPs and their staff to recreate their existing configurations in Microsoft 365.
+- **Wanted bulk mail vs. unwanted bulk mail**: Many protection systems allow users to allow or block bulk email for themselves. These settings don't easily migrate to Microsoft 365, so you should consider working with VIPs and their staff to recreate their existing configurations in Microsoft 365.
 
-  Today, Microsoft 365 considers some bulk mail (for example, newsletters) as safe based on the message source. Mail from these "safe" sources is currently not marked as bulk (the bulk complaint level or BCL is 0 or 1), so it's difficult to globally block mail from these sources. For most users, the solution is to ask them to individually unsubscribe from these bulk messages or use Outlook to block the sender. But, some users will not like blocking or unsubscribing from bulk messages themselves.
+  Today, Microsoft 365 considers some bulk mail (for example, newsletters) as safe based on the message source. Mail from these "safe" sources is currently not marked as bulk (the bulk complaint level or BCL is 0 or 1), so it's difficult to globally block mail from these sources. For most users, the solution is to ask them to individually unsubscribe from these bulk messages or use Outlook to block the sender. But, some users don't like blocking or unsubscribing from bulk messages themselves.
 
-  Mail flow rules that filter bulk email can be helpful when VIP users do not wish to manage this themselves. For more information, see [Use mail flow rules to filter bulk email](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-filter-bulk-mail).
+  Mail flow rules that filter bulk email can be helpful when VIP users don't wish to manage bulk email themselves. For more information, see [Use mail flow rules to filter bulk email](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-filter-bulk-mail).
 
 ## Identify and designate priority accounts
 

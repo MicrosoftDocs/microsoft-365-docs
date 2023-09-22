@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: ragovind
-ms.date: 07/08/2021
+ms.date: 07/03/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -48,7 +48,7 @@ The Risky users page also includes the following options:
 
 ## Multifactor Authentication page
 
-The Multifactor Authentication page provides detailed information on the status of multifactor authentication (MFA) enablement across your tenants. Select any tenant in the list to see more details for that tenant, including which Conditional Access policies requiring MFA are already configured and which users haven't yet registered for MFA.
+The Multifactor Authentication page provides detailed information on the status of multifactor authentication (MFA) enablement across your tenants. Select any tenant in the list to see more details for that tenant, including which Conditional Access policies requiring MFA are already configured and which users haven't yet registered for MFA. To learn more about MFA in Lighthouse, see [Overview of the Multifactor authentication page](m365-lighthouse-mfa-overview.md).
 
 :::image type="content" source="../media/m365-lighthouse-users-page-overview/users-mfa-tab.png" alt-text="Screenshot of the Multifactor Authentication page." lightbox="../media/m365-lighthouse-users-page-overview/users-mfa-tab.png":::
 
@@ -60,5 +60,12 @@ The Password reset page shows detailed information on the status of SSPR enablem
 
 ## Related content
 
-[Microsoft 365 Lighthouse device compliance page overview](m365-lighthouse-device-compliance-page-overview.md) (article)\
-[Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)
+[Overview of the Multifactor authentication page](m365-lighthouse-mfa-overview.md) (article)\
+[Block user sign-in](m365-lighthouse-block-user-signin.md) (article)\
+[Block sign-in for shared mailbox accounts](m365-lighthouse-block-signin-shared-mailboxes.md) (article)\
+[Manage inactive users](m365-lighthouse-manage-inactive-users.md) (article)\
+[Manage multifactor authentication](m365-lighthouse-manage-mfa.md) (article)\
+[Manage self-service password reset](m365-lighthouse-manage-sspr.md) (article)\
+[Reset a user password](m365-lighthouse-reset-user-password.md) (article)\
+[Search for users](m365-lighthouse-search-for-users.md) (article)\
+[View and manage risky users](m365-lighthouse-view-manage-risky-users.md) (article)

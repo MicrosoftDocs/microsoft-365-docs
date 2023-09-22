@@ -1,5 +1,5 @@
 ---
-title: Deploy Microsoft Defender for Endpoint on iOS with Mobile Application Manager
+title: Deploy Microsoft Defender for Endpoint on iOS with Mobile Application Management
 description: Describes how to deploy Microsoft Defender for Endpoint on unenrolled iOS devices.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, ios, configure, features, ios
 ms.service: microsoft-365-security
@@ -20,7 +20,7 @@ search.appverid: met150
 ms.date: 07/18/2021
 ---
 
-# Deploy Microsoft Defender for Endpoint on iOS with Mobile Application Manager
+# Deploy Microsoft Defender for Endpoint on iOS with Mobile Application Management
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -51,17 +51,16 @@ End users also need to take steps to install Microsoft Defender for Endpoint on 
 
 ### Pre-requisites
 
-1. **Verify that the connector is enabled**. <br> On the [unified security console](https://security.microsoft.com), go to **Settings** > **Endpoints** > **Advanced Features** and ensure that **Microsoft Intune connection** is enabled.
+1. **Verify that the Intune connector is enabled in Security portal**. <br> On the [unified security console](https://security.microsoft.com), go to **Settings** > **Endpoints** > **Advanced Features** and ensure that **Microsoft Intune connection** is enabled.
 
   :::image type="content" source="images/enable-intune-connection.png" alt-text="The Defender for Endpoint - Intune connector" lightbox="images/enable-intune-connection.png":::
 
-  
-2. **Verify that the connector is enabled on the Intune portal**. <br> In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Endpoint Security** > **Microsoft Defender for Endpoint** and ensure that the Connection status is enabled.
+2. **Verify that the APP connector is enabled in Intune portal**. <br> In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Endpoint Security** > **Microsoft Defender for Endpoint** and ensure that the Connection status is enabled.
 
   :::image type="content" source="images/app-settings.png" alt-text="The application settings" lightbox="images/app-settings.png":::
 
 ### Create an app protection policy
- 
+
 Block access or wipe data of a managed app based on Microsoft Defender for Endpoint risk signals by creating an app protection policy.
 Microsoft Defender for Endpoint can be configured to send threat signals to be used in app protection policies (APP, also known as MAM). With this capability, you can use Microsoft Defender for Endpoint to protect managed apps.
 
@@ -82,16 +81,15 @@ Because mobile app management doesn't require device management, you can protect
 
      :::image type="content" source="images/managed-app.png" alt-text="The Microsoft Outlook menu item on the left navigation pane" lightbox="images/managed-app.png":::
   
+     Select the **Platform, Apps, Data protection, Access requirements** settings that your organization requires for your policy.
 
- 3. Set sign-in security requirements for your protection policy. <br>
-Select **Setting > Max allowed device threat level** in **Device Conditions** and enter a value. Then select  **Action:  "Block Access"**. Microsoft Defender for Endpoint on iOS shares this Device Threat Level.
+ 3.Set sign-in security requirements for your protection policy. <br>
+Select **Setting > Max allowed device threat level** in **Conditional Launch > Device Conditions** and enter a value. This will need to be configured to either Low, Medium, High, or Secured. The actions available to you will be **Block access** or **Wipe data**.  Select  **Action:  "Block Access"**. Microsoft Defender for Endpoint on iOS shares this Device Threat Level.
 
-    
    :::image type="content" source="images/conditional-launch.png" alt-text="The Device conditions pane" lightbox="images/conditional-launch.png":::
 
-4. Assign user groups for whom the policy needs to be applied.<br>
+4.Assign user groups for whom the policy needs to be applied.<br>
   Select **Included groups**. Then add the relevant groups. 
-
 
 For more information on MAM or app protection policy, see [iOS app protection policy settings](/mem/intune/apps/app-protection-policy-settings-ios).
 
@@ -100,3 +98,6 @@ For more information on MAM or app protection policy, see [iOS app protection po
 Microsoft Defender for Endpoint on iOS enables the app protection policy scenario and is available in the Apple app store.
 
 When app protection policies are configured for apps to include device risk signals from Microsoft Defender for Endpoint, users will be redirected to install Microsoft Defender for Endpoint when using such apps. Alternately, users can also install the latest version of the app directly from the Apple app store.
+
+Ensure the device is registered to Authenticator with the same account being used to onboard in Defender for successful MAM registration.
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

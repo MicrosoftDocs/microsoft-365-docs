@@ -17,7 +17,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - m365-security
-  - tier1
+  - tier3
 ms.topic: conceptual
 search.appverid: 
   - MOE150
@@ -68,3 +68,4 @@ One of the best ways to learn is by configuring and testing Microsoft 365 Defend
 ## Simulating an attack
 
 To test your security staff on their ability to detect and respond to a cyberattack, use a simulated attack. See [Simulate attacks with the Microsoft 365 Defender portal](eval-defender-investigate-respond-simulate-attack.md#simulate-attacks-with-the-microsoft-365-defender-portal) for more information. 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

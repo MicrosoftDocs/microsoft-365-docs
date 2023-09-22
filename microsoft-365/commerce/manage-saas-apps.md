@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jamitche, jmueller
+ms.reviewer: armanv, nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
@@ -21,7 +21,7 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150 
 description: Learn how to activate and manage third-party apps in Microsoft 365 admin center.
-ms.date: 04/15/2021
+ms.date: 03/31/2023
 ---
 
 # Manage third-party app subscriptions for your organization
@@ -29,7 +29,7 @@ ms.date: 04/15/2021
 You can manage licenses and billing for third-party apps in the new <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. Updated features include enhanced subscription management, improved access to billing information, and improved flexibility for managing bills. Subscription management is based on Microsoft's updated commerce platform. This applies to software-as-a-service apps that customers purchase directly, or from a third-party provider.
 
 > [!IMPORTANT]
-> Starting on April 1, 2023, we will stop accepting checks as a payment method for subscriptions paid by invoice. Beginning on that date, pay by check will no longer be available as a payment option, and check payment instructions will be removed from invoices. You can still pay for your invoice by electronic funds transfer (EFT). See your invoice for EFT payment information. If you're an existing customer who currently pays by check, you have until September 30, 2023 to change to paying by EFT, and avoid possible service disruption.
+> As of April 1, 2023, we no longer accept checks as a payment method for subscriptions paid by invoice. Pay by check is no longer available as a payment option, and check payment instructions have been removed from invoices. You can still pay for your invoice by wire transfer. See your invoice for wire transfer payment information. If you're an existing customer who currently pays by check, you have until September 30, 2023 to change to paying by wire transfer, and avoid possible service disruption.
 
 ## How to get software-as-a-service apps
 
@@ -243,7 +243,7 @@ Admins can change the number of licenses owned by their organization. This only 
 
 Software-as-a-service apps each have a billing profile assigned to them. Billing profiles let you customize what products are included on your invoice, and how you pay your invoices. They include:
 
-- **Payment methods** – Credit cards or check/wire transfer
+- **Payment methods** – Credit cards or wire transfer
 - **Contact information** –  Billing address and a contact name
 - **Roles** – Roles that allow you to change the billing profile, pay bills, or use the payment method on the billing profile to make purchase.
 

@@ -64,8 +64,6 @@ For mobile devices, modern authentication-capable Exchange ActiveSync clients th
 
 To block Exchange ActiveSync using basic authentication on other devices, follow the steps in [Block Exchange ActiveSync on all devices](/azure/active-directory/conditional-access/howto-policy-approved-app-or-app-protection#block-exchange-activesync-on-all-devices), which prevents Exchange ActiveSync clients using basic authentication on non-mobile devices from connecting to Exchange Online.
 
-You can also use authentication policies to [disable Basic authentication](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online), which forces all client access requests to use modern authentication.
-
 ## Limit access to Exchange Online from Outlook on the web
 
 You can restrict the ability for users to download attachments from Outlook on the web on unmanaged devices. Users on these devices can view and edit these files using Office Online without leaking and storing the files on the device. You can also block users from seeing attachments on an unmanaged device.
@@ -104,7 +102,7 @@ See the steps to configure this policy in [Manage messaging collaboration access
 
 With Microsoft Purview Message Encryption, which leverages the protection features in Azure Information Protection, your organization can easily share protected email with anyone on any device. Users can send and receive protected messages with other Microsoft 365 organizations as well as non-customers using Outlook.com, Gmail, and other email services.
 
-For more information, see [Set up new Office 365 Message Encryption capabilities](../../compliance/set-up-new-message-encryption-capabilities.md).
+For more information, see [Set up new Office 365 Message Encryption capabilities](/purview/set-up-new-message-encryption-capabilities).
 
 ## Next steps
 

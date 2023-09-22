@@ -13,8 +13,9 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - m365-security
-- tier2
-ms.topic: conceptual
+- tier3
+- must-keep
+ms.topic: reference
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
@@ -27,6 +28,7 @@ ms.date: 05/02/2022
 
 **Applies to:**
 
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender Vulnerability Management](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -207,3 +209,4 @@ GET https://api.securitycenter.contoso.com/api/machines/certificateAssessmentExp
         "generatedTime":"2022-03-20T13:18:00Z"
    }
 ```
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

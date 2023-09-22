@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.reviewer: kkameth
-ms.date: 11/18/2021
+ms.date: 11/18/2022
 ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid: 
@@ -118,3 +118,7 @@ Key success factors to managing the contracts management site:
 - Ensure users have an outlet for questions and feedback.
 - Use insights from [site analytics](https://support.microsoft.com/office/view-usage-data-for-your-sharepoint-site-2fa8ddc2-c4b3-4268-8d26-a772dc55779e) to promote content on the home page, update navigation, or rewrite content for clarity.
 - Review the contracts management site as needed to ensure content is fresh and still relevant.
+
+## See also
+
+[Accelerate your solution using site templates for Syntex](site-templates.md)

@@ -1,7 +1,7 @@
 ---
 title: "Microsoft Feedback Code of Conduct"
-ms.author: Kwekua
-author: Kwekua
+ms.author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 09/16/2021
 audience: Admin
@@ -79,7 +79,7 @@ Microsoft reserves the right, at its sole discretion and without any obligation 
 - You are responsible for protecting your computer against interference, spyware, or viruses that may be encountered. We recommend you install a virus protection program on your computer and keep it up to date.
 - You may use the Report Abuse links in the public feedback communities to report violations of this Code of Conduct.
 - Microsoft reserves the right to amend or change the Code of Conduct or any service at any time without notice. We encourage you to periodically review these guidelines to ensure you are in compliance.
-- Some information you provide or upload to the service may be stored outside of the country in which you reside.
+- Some information you provide or upload to the service may be stored outside of the country/region in which you reside.
 - All activity on the service is also governed by the Microsoft Terms of Use and the Microsoft Privacy Policy.
 - You acknowledge that by providing feedback to Microsoft privately or within a public feedback community you are a volunteer participant in the feedback community and that you may discontinue your participation at any time. Nothing related to your participation will be construed as creating an employer-employee relationship, a partnership, joint venture, association, or agency relationship, or as a limitation upon Microsoft's right to terminate your access as foreseen above, or upon Microsoft's discretion, to terminate your access as provided herein. You assume all risk for your use.
 - You understand that posting content or submitting material is voluntary, and you are under no obligation whatsoever to provide any submissions or contributions. You are solely responsible for your dealings with any third party that relates to your use of the community, or any information or materials you obtain from a third party.

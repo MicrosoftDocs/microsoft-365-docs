@@ -2,11 +2,8 @@
 title: Microsoft Virus Initiative
 ms.reviewer: 
 description: The Microsoft Virus Initiative (MVI) helps organizations that make antivirus or antimalware products integrate with Windows and share telemetry with Microsoft.
-keywords: security, malware, MVI, Microsoft Malware Protection Center, MMPC, alliances, WDSI
 ms.service: microsoft-365-security
 ms.subservice: intelligence
-ms.mktglfcycl: secure
-ms.sitesec: library
 ms.localizationpriority: medium
 ms.author: dansimp
 author: dansimp
@@ -17,7 +14,7 @@ ms.collection:
 - tier2
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 03/18/2022
+ms.date: 06/28/2023
 ---
 
 # Microsoft Virus Initiative
@@ -25,9 +22,6 @@ ms.date: 03/18/2022
 The Microsoft Virus Initiative (MVI) helps organizations develop better-together security solutions that are performant, reliable, and aligned with Microsoft technology and strategy.
 
 ## Become a member
-
-> [!NOTE]
-> The MVI Program is not currently accepting new applications for membership. Please contact MVI@microsoft.com for more information.
 
 You can request membership if you're a representative for an organization that develops and produces antimalware or antivirus technology. 
 
@@ -54,7 +48,7 @@ To qualify for the MVI program, your organization must meet all the following re
 |ICSA Labs|Endpoint Anti-Malware Detection </br> <https://www.icsalabs.com/technology-program/anti-virus/criteria>|PASS/Certified|
 |SKD Labs|Certification Requirements Product: Anti-virus or Antimalware </br> <http://www.skdlabs.com/html/english/> </br> <http://www.skdlabs.com/cert/>|SKD Labs Star Check Certification Requirements Pass >= 98.5% with On Demand, On Access and Total Detection tests|
 |VB 100|VB100 Certification Test V1.1 </br> <https://www.virusbulletin.com/testing/vb100/vb100-methodology/vb100-methodology-ver1-1/>|VB100 Certification|
-|West Coast Labs|Checkmark Certified </br> <http://www.checkmarkcertified.com/sme/>|"A" Rating on Product Security Performance|
+|West Coast Labs|Checkmark Certified </br> <http://www.checkmarkcertified.com/>|"A" Rating on Product Security Performance|
 |SE Labs|Protection, Small Business or Enterprise EP Protection Test  </br> <https://selabs.uk/en/reports/consumers/>|Protection A rating or Small Business EP A rating or Enterprise EP Protection A rating |
 
 ## Apply now

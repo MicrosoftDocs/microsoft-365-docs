@@ -101,3 +101,4 @@ Advanced hunting queries in the analyst reports have been vetted by Microsoft an
 - [Threat analytics overview](threat-analytics.md)
 - [Proactively find threats with advanced hunting](advanced-hunting-overview.md)
 - [Custom detection rules](custom-detection-rules.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

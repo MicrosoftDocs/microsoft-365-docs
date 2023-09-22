@@ -15,7 +15,8 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
-ms.topic: conceptual
+- must-keep
+ms.topic: reference
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
@@ -55,7 +56,7 @@ The list of supported APIs is available in the [APIs documentation](apis-intro.m
 
 ## Get started with the API Explorer
 
-1. In the left pane, there is a list of sample requests that you can use.
+1. In the left pane, there's a list of sample requests that you can use.
 2. Follow the links and click **Run query**.
 
 Some of the samples may require specifying a parameter in the URL, for example, {machine- ID}.
@@ -68,3 +69,4 @@ Credentials to access an API aren't needed. The API Explorer uses the Defender f
 The logged-in user authentication credential is used to verify that the API Explorer is authorized to access data on your behalf.
 
 Specific API requests are limited based on your RBAC privileges. For example, a request to "Submit indicator" is limited to the security admin role.
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

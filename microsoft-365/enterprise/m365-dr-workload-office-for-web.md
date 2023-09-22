@@ -12,6 +12,7 @@ ms.date: 09/20/2022
 ms.reviewer: dmwmsft
 ms.custom:
 - it-pro
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 ---
@@ -30,7 +31,7 @@ Capability summary: Office for the web (formerly Office Web Apps) opens Word, Ex
 
 Required Conditions:
 
-1. _Tenant_ has a sign-up country included in _Local Region Geography_ or _Expanded Local Region Geography_.
+1. _Tenant_ has a sign-up country/region included in _Local Region Geography_ or _Expanded Local Region Geography_.
 1. _Tenant_ has a valid _Advanced Data Residency_ subscription for all users in the _Tenant_.
 1. The Office for the Web subscription customer data is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_.
 

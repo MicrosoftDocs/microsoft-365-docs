@@ -2,8 +2,8 @@
 title: "Microsoft product NPS feedback and insights for your organization"
 f1.keywords:
 - NOCSH
-ms.author: Kwekua
-author: Kwekua
+ms.author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 03/26/2021
 audience: Admin
@@ -137,9 +137,9 @@ Verbatim Recall- 94%
 
 Charts are filtered by the NPS rating as follows:
 
-- Detractors are unhappy customers who are unlikely to recommend your product or service.
-- Passives are customers that are satisfied with the service but not enough to recommend your product or service.
-- Promoters- Happy customers that are loyal, enthusiastic and are likely to recommend your product or service.
+- Detractors are unhappy customers who are unlikely to recommend your product or service. For example, 1-3 on the 5 point scale.
+- Passives are customers that are satisfied with the service but not enough to recommend your product or service. For example, 4 on the 5 point scale.
+- Promoters- Happy customers that are loyal, enthusiastic and are likely to recommend your product or service. For example, 5 on the 5 point scale.
 
 :::image type="content" source="../../media/how-likely-recommend.png" alt-text="Screenshot: Chart showing how likely are you to recommend an app to a friend or colleague" lightbox="../../media/how-likely-recommend.png":::
 
@@ -156,7 +156,7 @@ You can export raw data for further analysis using the Export to CSV functionali
 
 You can filter by **Channels**, **Products**, **Platforms** and **Feedback Types**.
 
-**Channels** are a way for organizations to select how often they get feature updates for Office. Learn more at [Overview of update channels for Microsoft 365 Apps](/deployoffice/overview-update-channels). This filter allows you to filter down to feedback submitted from a user on a specific channel.
+**Channels** are a way for organizations to select how often they get feature updates for Microsoft 365. Learn more at [Overview of update channels for Microsoft 365 apps](/deployoffice/overview-update-channels). This filter allows you to filter down to feedback submitted from a user on a specific channel.
 
 Feedback can be submitted on various **Platforms** like Android, iOS, Mac, and Windows. This filter allows you to filter feedback based on the platform it was submitted on.
 

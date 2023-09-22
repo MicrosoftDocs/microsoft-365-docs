@@ -15,7 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - m365-security
-- tier2
+- tier3
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
@@ -109,3 +109,4 @@ Currently, AIR only supports the following OS versions:
 - [PUA protection](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
 - [Automated investigation and response in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/air-about)
 - [Automated investigation and response in Microsoft 365 Defender](/microsoft-365/security/defender/m365d-autoir)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

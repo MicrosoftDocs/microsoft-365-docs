@@ -3,7 +3,7 @@ title: "Step 6 - Remove and delete the Microsoft 365 license from a former emplo
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 03/17/2021
 audience: Admin
@@ -56,7 +56,7 @@ For more information about managing user licenses for Microsoft 365 for business
   
 ## How the deleted employee account affects Skype for Business
 
-When you remove a user's license from Office 365, the PSTN calling number associated with the user will be released. You can assign it to another user.
+When you remove a user's license from Microsoft 365, the PSTN calling number associated with the user will be released. You can assign it to another user.
   
 If the user belongs to a queue group, they will no longer be a viable target of the call queue agents. So, we recommend also removing the user from the groups associated with the call queue.
 

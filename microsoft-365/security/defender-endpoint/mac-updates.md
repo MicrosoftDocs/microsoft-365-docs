@@ -128,7 +128,7 @@ Change how MAU searches for updates.
 
 ### Change whether the "Check for Updates" button is enabled
 
-Change whether local users will be able to click the "Check for Updates" option in the Microsoft AutoUpdate user interface.
+Change whether local users are able to click the "Check for Updates" option in the Microsoft AutoUpdate user interface.
 
 <br>
 
@@ -257,3 +257,4 @@ To configure MAU, you can deploy this configuration profile from the management 
 ## Resources
 
 - [msupdate reference](/deployoffice/mac/update-office-for-mac-using-msupdate)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

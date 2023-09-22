@@ -1,8 +1,8 @@
 ---
 title: Virtual Appointments with Teams - Integration into Oracle Health EHR
-author: samanro
-ms.author: samanro
-manager: pamgreen
+author: lana-chin
+ms.author: heidip
+manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-frontline
@@ -21,13 +21,13 @@ ms.collection:
   - m365solution-scenario
   - m365-frontline
   - highpri
-  - tier2
+  - m365-virtual-appointments 
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
 ms.reviewer: ansantam 
 description: Learn how to integrate the Teams EHR connector to enable healthcare providers in your organization to conduct virtual appointments with patients or other providers in Teams directly from the Oracle Health EHR system.
-ms.date: 01/11/2023
+ms.date: 03/30/2023
 ---
 
 # Virtual Appointments with Teams - Integration into Oracle Health EHR
@@ -52,6 +52,8 @@ This article describes how to set up and configure the Teams EHR connector to in
 > [!NOTE]
 > Make sure you talk to your Oracle Health representative and review your Oracle Health integration guide before you enable the integration.
 
+Oracle Health integration is currently only available in the United States.
+
 ### Prerequisites
 
 Before you integrate the Teams EHR connector in your healthcare organization, you must have the following:
@@ -62,6 +64,10 @@ Before you integrate the Teams EHR connector in your healthcare organization, yo
 - Identified a person in your organization who is a Microsoft 365 global admin with access to the [Teams admin center](https://admin.teams.microsoft.com).
 - Your systems meet all [software and browser requirements](/microsoftteams/hardware-requirements-for-the-teams-app) for Teams.
 - Oracle Health version November 2018 or later
+- Contact Microsoft at teamsforhealthcare@service.microsoft.com to get enrolled in the Oracle Cerner Code program.
+
+> [!IMPORTANT]
+> PowerChart is only available in Microsoft Edge. Internet Explorer is no longer supported.
 
 ## Set up the Teams EHR connector
 
@@ -123,6 +129,10 @@ To enable SMS notifications, your Microsoft 365 admin completes the following st
     If you’re configuring the connector for the first time, you’ll see the FHIR base URL that was entered in the earlier step. The same phone number can be linked to multiple FHIR base URLs, which means that patients will receive SMS notifications from the same phone number for different organizations and/or departments.
 
      Select **Next**.
+
+1. Some telephone carriers now [require unverified toll numbers to be verified](/azure/communication-services/concepts/sms/sms-faq#sms-to-us-phone-numbers). This requirement became effective October 1, 2022. Some carriers are following this more strictly than others.
+
+You'll need to [register your generated phone number in this form](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR0NW3g8C-tRNlyVpwWkCiS1UOEFCVTRHSFMwRk9BVTg3MVdZQlVCNEI4SS4u). This will ensure none of your SMS messages will be blocked when sent to US phone numbers.
 
 ### Review and finish the configuration
 

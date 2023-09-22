@@ -14,7 +14,7 @@ metadata:
   ms.collection: m365-security-compliance
   author: dansimp #Required; your GitHub user alias, with correct capitalization.
   ms.author: dansimp #Required; microsoft alias of author; optional team alias.
-  ms.date: 06/22/2022 #Required; mm/dd/yyyy format.
+  ms.date: 07/28/2023 #Required; mm/dd/yyyy format.
   ms.custom: intro-hub-or-landing
 
 # highlightedContent section (optional)
@@ -55,7 +55,7 @@ conceptualContent:
          - url: /compliance/assurance/assurance-malware-and-ransomware-protection
            itemType: concept
            text: Malware and ransomware protection
-         - url: /microsoft-365/security/office-365-security/recover-from-ransomware
+         - url: /security/ransomware
            itemType: how-to-guide
            text: Recover from a ransomware attack
          - url: /microsoft-365/security/defender/advanced-hunting-find-ransomware

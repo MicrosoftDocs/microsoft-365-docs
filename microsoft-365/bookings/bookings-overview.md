@@ -3,7 +3,7 @@ title: "Microsoft Bookings"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 06/24/2020
+ms.date: 09/12/2023
 audience: Admin
 ms.topic: article
 ms.service: bookings
@@ -26,7 +26,7 @@ Microsoft Bookings makes scheduling and managing appointments a breeze. Bookings
 > [!NOTE]
 > The Bookings calendar is a mailbox in Exchange Online.
 
-Use Bookings to make your organization’s meetings virtual with online meetings via [Microsoft Teams](https://support.microsoft.com/office/overview-of-the-bookings-app-in-teams-7b8569e1-0c8a-444e-b712-d9968b05110b) and Skype for Business. Each appointment booked as an online meeting creates a unique meeting link that is sent to attendees so they can join via a web browser, phone dial-in, or the Skype or Teams app. Bookings is also available as an app within Teams, which allows you to create Bookings calendars, assign staff, and both schedule new and manage existing appointments without ever leaving Teams.
+Use Bookings to make your organization’s meetings virtual with online meetings via [Microsoft Teams](https://support.microsoft.com/office/overview-of-the-bookings-app-in-teams-7b8569e1-0c8a-444e-b712-d9968b05110b) and Skype for Business. Each appointment booked as an online meeting creates a unique meeting link that is sent to attendees so they can join via a web browser, phone dial-in, or the Skype or Teams app. Bookings is also available as an [app in Teams](https://support.microsoft.com/office/overview-of-the-bookings-app-in-teams-7b8569e1-0c8a-444e-b712-d9968b05110b), which allows you to create Bookings calendars, assign staff, and both schedule new and manage existing appointments without ever leaving Teams.
 
 Bookings is made up of these components:
 
@@ -38,12 +38,12 @@ Bookings is made up of these components:
 
 Microsoft Bookings is available in the following subscriptions:
 
-- Office 365: A3, A5, E1, E3, E5, F1, F3, G3, and G5
+- Office 365: A3, A5, E1, E3, E5, F1, F3, G1, G3, and G5
 - Microsoft 365: A3, A5, E1, E3, E5, F1, F3, Business Basic, Business Standard, Business Premium
 
 ## Watch: Introducing Microsoft Bookings
 
-> [VIDEO](https://www.youtube.com/watch?v=G2HOsM767Sw)
+> [!VIDEO https://www.youtube.com/embed/G2HOsM767Sw]
 
 Bookings makes it easier for small businesses to schedule and manage appointments with their customers.
 

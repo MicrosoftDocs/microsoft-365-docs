@@ -93,3 +93,4 @@ Clicking any of the device names will take you to that device's view, where you 
 - [Investigate devices in the Microsoft Defender for Endpoint Devices list](investigate-machines.md)
 - [Investigate a domain associated with a Microsoft Defender for Endpoint alert](investigate-domain.md)
 - [Investigate a user account in Microsoft Defender for Endpoint](investigate-user.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

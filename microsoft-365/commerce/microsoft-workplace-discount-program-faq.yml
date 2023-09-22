@@ -4,7 +4,7 @@ metadata:
   author: cmcatee-MSFT
   ms.author: cmcatee
   manager: scotv
-  ms.reviewer: tugu, jmueller
+  ms.reviewer: jamitche, jobailey
   audience: Admin
   ms.topic: faq
   ms.service: microsoft-365-business
@@ -43,8 +43,8 @@ sections:
         answer: |
           Discounts on Microsoft 365 Family and Personal subscriptions are offered to eligible companies worldwide with these exceptions:
           
-          - Lebanon, Macao, Russia and Venezuela: This offer is not available in these markets.
-          - China and Hong Kong: a one-year subscription is available in these markets. For China, visit [Microsoft 365 in China](https://www.microsoftstore.com.cn/home-use-program/invite). For Hong Kong, visit [Buy Microsoft 365 at a discounted price](https://www.microsoftestore.com.hk/partner/hup?locale=en_HK).
+          - Lebanon, Macao SAR, Russia and Venezuela: This offer is not available in these markets.
+          - China and Hong Kong SAR: a one-year subscription is available in these markets. For China, visit [Microsoft 365 in China](https://www.microsoftstore.com.cn/home-use-program/invite). For Hong Kong SAR, visit [Buy Microsoft 365 at a discounted price](https://www.microsoftestore.com.hk/partner/hup?locale=en_HK).
           - Discounts on select Surface devices and accessories are offered to eligible companies in select markets. 
           
       - question: |
@@ -52,11 +52,11 @@ sections:
         answer: |
           For employees to take advantage of the Microsoft Workplace Discount Program benefit, they must have a valid corporate email address and an active Microsoft Account, and your organization must meet one of the following criteria:
           
-          - Customers who have active Software Assurance for qualifying Office applications
+          - Customers who have active Software Assurance for qualifying Microsoft 365 apps
           - Customers who have Microsoft 365/Microsoft 365 E3/E5 From Software Assurance
           - Commercial and government customers who have purchased 2,000 or more licenses of one or a mix of Microsoft 365 E3/E5
           - Education and non-profit customers
-          - Commercial and government customers who have spent $250,000 USD or more in the previous 12 months on eligible Power BI, Office, Surface devices & accessories, Windows and Enterprise Mobility 
+          - Commercial and government customers who have spent $250,000 USD or more in the previous 12 months on eligible Power BI, Microsoft 365, Surface devices & accessories, Windows and Enterprise Mobility 
           
       - question: |
           What happened to the Home Use Program?
@@ -112,8 +112,8 @@ sections:
           
           - Order status
           - Billing
-          - Installing Office
-          - Signing in to Office
+          - Installing Microsoft 365
+          - Signing in to Microsoft 365
 
       - question: |
           Why should my company participate in the Workplace Discount Program?

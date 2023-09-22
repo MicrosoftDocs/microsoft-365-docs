@@ -15,11 +15,12 @@ ms.collection:
 - Ent_O365
 f1.keywords:
 - CSH
-ms.custom: 
-- Ent_Office_Other
-- O365ITProTrain
-- LIL_Placement
-- PowerShell
+ms.custom:
+  - Ent_Office_Other
+  - O365ITProTrain
+  - LIL_Placement
+  - PowerShell
+  - has-azure-ad-ps-ref
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 
 description: "Explains how to use PowerShell to view information about the licensing plans, services, and licenses that are available in your Microsoft 365 organization."
@@ -204,7 +205,7 @@ The following table shows the Microsoft 365 service plans and their friendly nam
 |:-----|:-----|
 | `SWAY` <br/> |Sway  <br/> |
 | `TEAMS1` <br/> |Microsoft Teams  <br/> |
-| `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
+| `YAMMER_ENTERPRISE` <br/> |Viva Engage  <br/> |
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Microsoft 365 Apps for enterprise *(previously named Office 365 ProPlus)*  <br/> |
 | `MCOSTANDARD` <br/> |Skype for Business Online  <br/> |

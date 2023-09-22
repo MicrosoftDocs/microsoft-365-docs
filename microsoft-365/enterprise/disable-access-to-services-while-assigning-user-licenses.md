@@ -16,8 +16,9 @@ search.appverid:
 f1.keywords:
 - CSH
 ms.custom:
-- PowerShell
-- Ent_Office_Other
+  - PowerShell
+  - Ent_Office_Other
+  - has-azure-ad-ps-ref
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: "Learn how to assign licenses to user accounts and disable specific service plans at the same time using PowerShell for Microsoft 365."
 ---
@@ -104,7 +105,7 @@ The following table shows the Microsoft 365 service plans and their friendly nam
 |:-----|:-----|
 | `SWAY` <br/> |Sway  <br/> |
 | `TEAMS1` <br/> |Microsoft Teams  <br/> |
-| `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
+| `YAMMER_ENTERPRISE` <br/> |Viva Engage  <br/> |
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
 | `OFFICESUBSCRIPTION` <br/> |Microsoft 365 Apps for enterprise *(previously named Office 365 ProPlus)*  <br/> |
 | `MCOSTANDARD` <br/> |Skype for Business Online  <br/> |

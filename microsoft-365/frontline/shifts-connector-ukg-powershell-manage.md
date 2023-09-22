@@ -1,9 +1,9 @@
 ---
 title: Use PowerShell to manage your Shifts connection to UKG Dimensions
-author: samanro
-ms.author: samanro
+author: lana-chin
+ms.author: heidip
+manager: serdars
 ms.reviewer: imarquesgil
-manager: pamgreen
 ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
@@ -13,11 +13,11 @@ ms.localizationpriority: high
 ms.collection:
   - M365-collaboration
   - m365-frontline
-  - tier2
+  - teams-1p-app-admin
 appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 10/28/2022
+ms.date: 03/21/2023
 ---
 
 # Use PowerShell to manage your Shifts connection to UKG Dimensions
@@ -130,7 +130,18 @@ ForEach ($mapping in $mappings){
 
 ## Change connection settings
 
-[!INCLUDE [shifts-connector-change-connection-settings](includes/shifts-connector-change-connection-settings.md)]
+Use this script to change connection settings. Settings that you can change include your WFM service account and password, Microsoft 365 system account, team mappings, and sync settings.
+
+Sync settings include the sync frequency (in minutes) and the schedule data that's synced between your WFM system and Shifts. Schedule data is defined in the following parameters, which you can view by running [Get-CsTeamsShiftsConnectionConnector](/powershell/module/teams/get-csteamsshiftsconnectionconnector).
+
+- The **enabledConnectorScenarios** parameter defines data that's synced from your WFM system to Shifts. Options are `Shift`, `SwapRequest`, `OfferShiftRequest`, `UserShiftPreferences`, `OpenShift`, `OpenShiftRequest`, `TimeOff`, `TimeOffRequest`.
+- The **enabledWfiScenarios** parameter defines data that's synced from Shifts to your WFM system. Options are `SwapRequest`, `OfferShiftRequest`, `OpenShiftRequest`, `TimeOffRequest`, `UserShiftPreferences`.
+
+    > [!NOTE]
+    > If you choose not to sync open shifts, open shift requests, swap requests, or time off requests between Shifts and your WFM system, there's another step you need to do to hide the capability in Shifts. After you run this script, make sure you follow the steps in the [Disable open shifts, open shifts requests, swap requests, and time off requests](#disable-open-shifts-open-shifts-requests-swap-requests-and-time-off-requests) section later in this article.
+
+    > [!IMPORTANT]
+    > For settings that you don't want to change, you'll need to re-enter the original settings when you're prompted by the script.
 
 [Set up your environment](#set-up-your-environment) (if you haven't already), and then run the following script.
 
@@ -257,7 +268,17 @@ Write-Host "Success"
 
 ## Disable open shifts, open shifts requests, swap requests, and time off requests
 
-[!INCLUDE [shifts-connector-disable-shifts-requests](includes/shifts-connector-disable-shifts-requests.md)]
+> [!IMPORTANT]
+> Follow these steps only if you chose to disable open shifts, open shift requests, swap requests, or time off requests using the script in the [Change connection settings](#change-connection-settings) section earlier in this article or by using the [Set-CsTeamsShiftsConnectionInstance](/powershell/module/teams/set-csteamsshiftsconnectioninstance) cmdlet. Completing this step hides the capability in Shifts. Without this second step, users will still see the capability in Shifts, and will get an "unsupported operation" error message if they try to use it.
+
+To hide open shifts, swap requests, and time off requests in Shifts, use the Graph API [schedule resource type](/graph/api/resources/schedule) to set the following parameters to ```false``` for each team that you mapped to a WFM instance:
+
+- Open shifts: ```openShiftsEnabled```
+- Swap requests:  ```swapShiftsRequestsEnabled```
+- Time off requests: ```timeOffRequestsEnabled```
+- Offer shift requests: ```offerShiftRequestsEnabled```
+
+To hide open shifts requests in Shifts, go to **Settings** in Shifts, and then turn off the **Open shifts** setting.
 
 ## Unmap a team from one connection and map it to another connection
 

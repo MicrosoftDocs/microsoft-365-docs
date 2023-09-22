@@ -17,7 +17,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - m365-security
-  - tier1
+  - tier3
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
@@ -82,3 +82,4 @@ In addition to remediation actions that follow automated investigations, your se
 - [View and manage remediation actions](m365d-autoir-actions.md)
 - [Address false positives or false negatives](m365d-autoir-report-false-positives-negatives.md)
 - [Contain devices from the network](../defender-endpoint\respond-machine-alerts.md#contain-devices-from-the-network)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

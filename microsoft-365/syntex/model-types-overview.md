@@ -21,19 +21,19 @@ description: Learn about custom models and prebuilt models in Microsoft Syntex.
 
 <sup>**Applies to:**  &ensp; &#10003; All custom models &ensp; | &ensp; &#10003; All prebuilt models</sup>
 
-Content understanding in Microsoft Syntex starts with AI models. Models let you identify and classify documents that are uploaded to SharePoint document libraries, and then to extract the information you need from each file.
-
-When applied to a SharePoint document library, the model is associated with a content type and has columns to store the information being extracted. The content type you create is stored in the SharePoint content type gallery. You can also choose to use existing content types to use their schema.
-
 </br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GJXS] 
 
 </br>
 
+Content understanding in Microsoft Syntex starts with document processing models. Document processing models let you identify and classify documents that are uploaded to SharePoint document libraries, and then to extract the information you need from each file.
+
+When applied to a SharePoint document library, the model is associated with a content type and has columns to store the information being extracted. The content type you create is stored in the SharePoint content type gallery. You can also choose to use existing content types to use their schema.
+
 Syntex uses [custom models](#custom-models) and [prebuilt models](#prebuilt-models). 
 
-![Diagram showing the types of Syntex custom and prebuilt models.](../media/content-understanding/syntex-model-types-diagram.png)
+![Diagram showing the types of Syntex custom and prebuilt models.](../media/content-understanding/syntex-model-types-diagram-2.png)
 
 Models can be either *enterprise models*, which are created in a [content center](create-a-content-center.md), or *local models*, which are created on your [local SharePoint site](create-local-model.md).
 
@@ -49,7 +49,7 @@ Custom models include:
 
 To view the side-by-side differences in custom models, see [Compare custom models](./difference-between-document-understanding-and-form-processing-model.md).
 
-When you create a custom model, you'll select the training method associated with the model type. For example, if you want to create an unstructured document processing model, on the **Options for model creation** page where you create a model, you will choose the **Teaching method** option. The following table shows the training method associated with each custom model type.
+When you create a custom model, you'll select the training method associated with the model type. For example, if you want to create an unstructured document processing model, on the **Options for model creation** page where you create a model, you'll choose the **Teaching method** option. The following table shows the training method associated with each custom model type.
 
 |Unstructured<br> document processing  |Freeform<br> document processing  |Structured<br> document processing  |
 |---------|---------|---------|
@@ -85,7 +85,7 @@ This model type is the best option for English documents in PDF or image files w
 
 When you create a freeform document processing model, use the **Freeform selection method** option.
 
-For more information, see [Overview of freeform document processing](freeform-document-processing-overview.md).
+For more information, see [Overview of structured and freeform document processing](form-processing-overview.md).
 
 ### Structured document processing
 
@@ -97,18 +97,27 @@ This model type supports the widest range of languages and is trained to underst
 
 When you create a structured document processing model, use the **Layout method** option.
 
-For more information, see [Overview of structured document processing](form-processing-overview.md).
+For more information, see [Overview of structured and freeform document processing](form-processing-overview.md).
 
 ## Prebuilt models
 
-If you don't need to build a custom model, you can use a [prebuilt model](prebuilt-overview.md) that has already been trained for specific structured documents.
+If you don't need to build a custom model, you can use a [prebuilt document processing model](prebuilt-overview.md) that has already been trained for specific structured documents.
 
 Prebuilt models include:
 
+- [Contract processing](#contract-processing)
 - [Invoice processing](#invoice-processing)
 - [Receipt processing](#receipt-processing)
 
+![Screenshot of the Options for model creation page showing the prebuilt model options.](../media/content-understanding/model-options-prebuilt.png)
+
 Prebuilt models are pretrained to recognize documents and the structured information in the documents. Instead of having to create a new custom model from scratch, you can iterate on an existing pretrained model to add specific fields that fit the needs of your organization.
+
+### Contract processing
+
+The contract processing model analyzes and extracts key information from contract documents. The API analyzes contracts in various formats and extracts key contract information such as client or party name, billing address, jurisdiction, and expiration date.
+
+For more information about prebuilt contract processing models, see [Use a prebuilt model to extract information from contracts](prebuilt-model-contract.md).
 
 ### Invoice processing
 
@@ -122,8 +131,3 @@ The prebuilt receipt processing model analyzes and extracts key information from
 
 For more information about prebuilt receipt processing models, see [Use a prebuilt model to extract information from receipts](prebuilt-model-receipt.md).
 
-## See also
-
-[Compare custom models in Microsoft Syntex](./difference-between-document-understanding-and-form-processing-model.md)
-
-[Training: Improve business performance with AI Builder](/learn/paths/improve-business-performance-ai-builder/?source=learn)

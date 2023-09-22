@@ -13,6 +13,7 @@ ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
 ms.collection: scotvorg
+ms.localizationpriority: medium
 description: The roadmap to set up device management for Microsoft 365.
 ---
 
@@ -39,7 +40,7 @@ This is built into Microsoft 365 and helps you secure and manage your users' mob
 
 ## Choose between the two options
 
-To help you better assess which device management option is best for you, see [Choose between Basic Mobility Security and Intune](/microsoft-365/admin/basic-mobility-security/choose-between-basic-mobility-and-security-and-intunee).
+To help you better assess which device management option is best for you, see [Choose between Basic Mobility Security and Intune](/microsoft-365/admin/basic-mobility-security/choose-between-basic-mobility-and-security-and-intune).
 
 Based on your assessment, get started managing your devices with:
 

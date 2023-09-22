@@ -1,13 +1,9 @@
 ---
 title: Use network protection to help prevent connections to bad sites
 description: Protect your network by preventing users from accessing known malicious and suspicious network addresses
-keywords: Network protection, exploits, malicious website, ip, domain, domains, command and control, SmartScreen, toast notification
 ms.service: microsoft-365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: medium
-ms.date: 12/02/2022
+ms.date: 09/13/2023
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
@@ -26,6 +22,7 @@ search.appverid: met150
 
 **Applies to:**
 
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Microsoft Defender Antivirus
@@ -36,11 +33,11 @@ search.appverid: met150
 - macOS
 - Linux
 
-Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink).
 
 ## Overview of network protection
 
-Network protection helps protect devices from Internet-based events. Network protection is an attack surface reduction capability. It helps prevent employees from accessing dangerous domains through applications. Domains that host phishing scams, exploits, and other malicious content on the Internet are considered dangerous. Network protection expands the scope of [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) to block all outbound HTTP(s) traffic that attempts to connect to low-reputation sources (based on the domain or hostname).
+Network protection helps protect devices from Internet-based events. Network protection is an attack surface reduction capability. It helps prevent employees from accessing dangerous domains through applications. Domains that host phishing scams, exploits, and other malicious content on the Internet are considered dangerous. Network protection expands the scope of [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) to block all outbound HTTP(S) traffic that attempts to connect to low-reputation sources (based on the domain or hostname).
 
 Network protection extends the protection in [Web protection](web-protection-overview.md) to the operating system level, and is a core component for Web Content Filtering (WCF). It provides the web protection functionality found in Microsoft Edge to other supported browsers and non-browser applications. Network protection also provides visibility and blocking of indicators of compromise (IOCs) when used with [Endpoint detection and response](overview-endpoint-detection-response.md). For example, network protection works with your [custom indicators](manage-indicators.md) that you can use to block specific domains or host names.
 
@@ -55,9 +52,8 @@ The following table summarizes network protection areas of coverage.
 | Web Content Filtering | SmartScreen must be enabled | NP has to be in block mode | Not supported |
 
 > [!NOTE]
-> Network protection does not monitor msedge.exe on Windows devices.
-> For Mac and Linux, you must have network protection in block mode to get support for these features in Edge.
-> For processes other than Microsoft Edge and Internet Explorer, web protection scenarios leverage Network Protection for inspection and enforcement:
+> On Mac and Linux, you must have network protection in block mode to get support for these features in Edge.
+> On Windows, network protection does not monitor Microsoft Edge. For processes other than Microsoft Edge and Internet Explorer, web protection scenarios leverage network protection for inspection and enforcement.
 > - IP is supported for all three protocols (TCP, HTTP, and HTTPS (TLS)).
 > - Only single IP addresses are supported (no CIDR blocks or IP ranges) in custom indicators.
 > - Encrypted URLs (full path) can only be blocked on first party browsers (Internet Explorer, Edge).
@@ -80,11 +76,11 @@ Network protection requires Windows 10 or 11 (Pro or Enterprise), Windows Server
 
 ## Why network protection is important
 
-Network protection is a part of the attack surface reduction group of solutions in Microsoft Defender for Endpoint. Network protection enables layer the network layer of blocking URLs and IP addresses. Network protection can block URLs from being accessed by using certain browsers and standard network connections. By default, network protection guards your computers from known malicious URLs using the SmartScreen feed, which blocks malicious URLs in a manner similar to SmartScreen in Microsoft Edge browser. The network protection functionality can be extended to:
+Network protection is a part of the attack surface reduction group of solutions in Microsoft Defender for Endpoint. Network protection enables the network layer to block URLs and IP addresses. Network protection can block URLs from being accessed by using certain browsers and standard network connections. By default, network protection guards your computers from known malicious URLs using the SmartScreen feed, which blocks malicious URLs in a manner similar to SmartScreen in Microsoft Edge browser. The network protection functionality can be extended to:
 
 - Block IP/URL addresses from your own threat intelligence ([indicators](indicator-ip-domain.md))
 - Block unsanctioned services from [Microsoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps)
-- Block sites based on category ([Web content filtering](web-content-filtering.md))
+- Block browser access to websites based on category ([Web content filtering](web-content-filtering.md))
 
 Network protection is a critical part of the Microsoft protection and response stack.
 
@@ -93,11 +89,11 @@ Network protection is a critical part of the Microsoft protection and response s
 
 ### Block Command and Control attacks
 
-Command and Control (C2) server computers are used by malicious users to send commands to systems compromised by malware, and then exert some type of control over compromised systems. C2 attacks typically hide in cloud-based services such as file-sharing and webmail services, enabling the C2 servers to avoid detection by blending in with typical traffic.
+Command and Control (C2) server computers are used by malicious users to send commands to systems previously compromised by malware. C2 attacks typically hide in cloud-based services such as file-sharing and webmail services, enabling the C2 servers to avoid detection by blending in with typical traffic.
 
 C2 servers can be used to initiate commands that can:
 
-- Steal data (for example, by way of phishing)
+- Steal data
 - Control compromised computers in a botnet
 - Disrupt legitimate applications
 - Spread malware, such as ransomware
@@ -142,7 +138,7 @@ A user visits a website:
 - If the url has an unknown or uncertain reputation, a toast notification will present the user with the following options:
 
   - **Ok** - The toast notification is released (removed), and the attempt to access the site is ended.
-  - **Unblock** - The user won't need to access the Windows Defender Security Intelligence (WDSI) portal to gain site access. The user will have access to the site for 24 hours; at which point the block is reenabled for another 24 hours. The user can continue to use **Unblock** to access the site until such time that the administrator prohibits (blocks) the site, thus removing the option to **Unblock**.
+  - **Unblock** - The user will have access to the site for 24 hours; at which point the block is reenabled. The user can continue to use **Unblock** to access the site until such time that the administrator prohibits (blocks) the site, thus removing the option to **Unblock**.
   - **Feedback** - The toast notification presents the user with a link to submit a ticket, which the user can use to submit feedback to the administrator in an attempt to justify access to the site.
 
     :::image type="content" source="images/network-protection-phishing-warn-2.png" alt-text="Shows a network protection phishing content warn notification.":::
@@ -162,7 +158,7 @@ A user visits a website:
 
 ## SmartScreen Unblock
 
-With indicators in Defender for Endpoint, administrators can allow end users to bypass warnings that are generated for some URLs and IPs. Depending on why the URL was blocked, when a SmartScreen block is encountered it may offer administrators the ability to unblock the site for up to 24 hours. In such cases, a Windows Security toast notification will appear, permitting the end-user to **Unblock** the URL or IP for the defined period of time.  
+With indicators in Defender for Endpoint, administrators can allow end users to bypass warnings that are generated for some URLs and IPs. Depending on why the URL was blocked, when a SmartScreen block is encountered it may offer the ability to unblock the site for up to 24 hours. In such cases, a Windows Security toast notification will appear, permitting the end-user to **Unblock** the URL or IP for the defined period of time.  
 
 :::image type="content" source="images/network-protection-smart-screen-block-notification.png" alt-text="Windows Security notification for network protection.":::
 
@@ -252,7 +248,7 @@ Once you've created an indicator, you can look at resolving the underlying issue
 Using this data you can make an informed decision on enabling Network protection in Block mode. See [Order of precedence for Network protection blocks](web-protection-overview.md#order-of-precedence).
 
 > [!NOTE]
-> As this is a per device setting if there are devices that cannot move to Block mode you can simply leave them on audit until you can rectify the challenge and you will still receive the auditing events.
+> As this is a per-device setting, if there are devices that cannot move to Block mode you can simply leave them on audit until you can rectify the challenge and you will still receive the auditing events.
 
 For information about how to report false positives see [Report false positives](web-protection-overview.md#report-false-positives).
 
@@ -262,7 +258,7 @@ For details on how to create your own Power BI reports, see [Create custom repor
 
 For more information about how to enable network protection, see **[Enable network protection](enable-network-protection.md)**. Use Group Policy, PowerShell, or MDM CSPs to enable and manage network protection in your network.
 
-After you've enabled the services, you might need to configure your network or firewall to allow the connections between the services and your devices (also referred to as endpoints).
+After you've enabled network protection, you might need to configure your network or firewall to allow the connections between your endpoint devices and the web services:
 
 - `.smartscreen.microsoft.com`
 - `.smartscreen-prod.microsoft.com`
@@ -313,7 +309,7 @@ Due to the multi-user nature of Windows 10 Enterprise, keep the following points
 
 1. Network protection is a device-wide feature and can't be targeted to specific user sessions.
 
-2. Web content filtering policies are also device wide.
+2. Web content filtering policies are also device-wide.
 
 3. If you need to differentiate between user groups, consider creating separate Windows Virtual Desktop host pools and assignments.
 
@@ -389,11 +385,11 @@ For Windows Servers and Windows Multi-session, there are additional items that y
 
 ## Network protection troubleshooting
 
-Due to the environment where network protection runs, Microsoft might not be able to detect operating system proxy settings. In some cases, network protection clients are unable to reach the cloud service. To resolve the connectivity problem, [configure a static proxy for Microsoft Defender Antivirus](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus).
+Due to the environment where network protection runs, the feature might not be able to detect operating system proxy settings. In some cases, network protection clients are unable to reach the cloud service. To resolve the connectivity problem, [configure a static proxy for Microsoft Defender Antivirus](configure-proxy-internet.md#configure-a-static-proxy-for-microsoft-defender-antivirus).
 
 ## Optimizing network protection performance
 
-Network protection now has a performance optimization that allows Block mode to start asynchronously inspecting long connections after they're validated and allowed by SmartScreen, which might provide a potential reduction in the cost that inspection has on bandwidth and can also help with app compatibility problems. This optimization capability is on by default. You can turn off this capability by using the following PowerShell cmdlet:
+Network protection now has a performance optimization that allows Block mode to start asynchronously inspecting long-lived connections, which might provide a performance improvement and can also help with app compatibility problems. This optimization capability is on by default. You can turn off this capability by using the following PowerShell cmdlet:
 
 `Set-MpPreference -AllowSwitchToAsyncInspection $false`
 
@@ -404,3 +400,4 @@ Network protection now has a performance optimization that allows Block mode to 
 - [Configuring attack surface reduction capabilities in Microsoft Intune](/mem/intune/protect/endpoint-security-asr-policy)
 - [Network protection for Linux](network-protection-linux.md) | To learn about using Microsoft Network protection for Linux devices.
 - [Network protection for macOS](network-protection-macos.md) | To learn more about Microsoft Network protection for macOS
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

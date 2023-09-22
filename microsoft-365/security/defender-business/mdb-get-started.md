@@ -10,8 +10,8 @@ ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 09/15/2022
-ms.reviewer: shlomiakirav
+ms.date: 09/06/2023
+ms.reviewer: nehabha
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
@@ -34,13 +34,13 @@ Use the navigation bar on the left side of the screen to access your incidents, 
 | Item | Description |
 |:---|:---|
 | **Home** | Takes you to your home page in the Microsoft 365 Defender portal. The home page highlights any active threats that are detected, along with recommendations to help secure your company's data and devices. Recommendations are included in Defender for Business to save your security team time and effort. The recommendations are based on industry best practices. To learn more, see [Security recommendations - Microsoft Defender Vulnerability Management](../defender-endpoint/tvm-security-recommendation.md). |
-| **Incidents** | Takes you to your list of recent incidents. As alerts are triggered, incidents are created. An incident can include multiple alerts. Make sure to review your incidents regularly. To learn more, see [View and manage incidents in Defender for Business](mdb-view-manage-incidents.md).|
+| **Incidents & alerts** > **Incidents** | Takes you to your list of recent incidents. As alerts are triggered, incidents are created. An incident can include multiple alerts. Make sure to review your incidents regularly. To learn more, see [View and manage incidents in Defender for Business](mdb-view-manage-incidents.md).|
 | **Actions & submissions** > **Action center** | Takes you to your list of response actions, including completed and pending actions.<br/>- Select the **Pending** tab to view actions that require approval to proceed.<br/>- Select the **History** tab to see the actions that were taken. Some actions are taken automatically; others are taken manually or complete after they're approved.<br/><br/>To learn more, see [Review remediation actions in the Action center](mdb-review-remediation-actions.md). |
 | **Actions & submissions** > **Submissions** | Takes you to the unified submissions portal, where you can submit files to Microsoft for analysis. To learn more, see [Submit files in Microsoft Defender for Endpoint](../defender-endpoint/admin-submissions-mde.md) (the process is similar for Defender for Business). |
-| **Threat analytics** | Takes you to a view of current threats, and provides an at-a-glance view of your threat landscape. Threat analytics also includes reports and information from Microsoft security researchers. To learn more, see [Track and respond to emerging threats through threat analytics](../defender-endpoint/threat-analytics.md). |
 | **Secure score** | Provides a representation of your company's security position and offers suggestions to improve it. To learn more, see [Microsoft Secure Score for Devices](../defender-endpoint/tvm-microsoft-secure-score-devices.md). |
 | **Learning hub** | Provides access to security training and other resources through learning paths that are included with your subscription. You can filter by product, skill level, role, and more. The Learning hub can help your security team ramp up on security features and capabilities in Defender for Business and more Microsoft offerings, such as [Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md) and [Microsoft Defender for Office 365](../office-365-security/defender-for-office-365.md).  |
 | **Trials** | Try additional security and compliance capabilities by adding on a trial subscription. If you do not see **Trials** in your navigation bar, and you want to add on another trial, you can take one of the following steps: <br/>- Visit the [Small Business Solutions page](https://www.microsoft.com/en-us/store/b/business?icid=CNavBusinessStore), and choose **Questions? Talk to an expert** to get some help adding on a trial subscription. <br/>- Go to the [Microsoft 365 admin center](https://admin.microsoft.com/?auth_upn=admin%40M365B614031.onmicrosoft.com&source=applauncher#/catalog), and choose **Billing** > **Purchase services**. If you need help, choose **Help & support**.    |
+| **Partner catalog** | Lists Microsoft partners who provide technical and professional services. |
 | **Assets** > **Devices** | Enables you to view devices, such as computers and mobile devices that are enrolled in [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). |
 | **Endpoints** > **Vulnerability management** | Enables you to access your [Microsoft Defender Vulnerability Management](../defender-vulnerability-management/defender-vulnerability-management.md) capabilities. Provides a dashboard, recommendations, remediation activities, a software inventory, and a list of potential weaknesses within your company. |
 | **Endpoints** > **Tutorials** | Provides access to walkthroughs and simulations to help you learn more about how your threat protection features work. Select the **Read the walkthrough** link before attempting to get the simulation file for each tutorial. Some simulations require Office apps, such as Microsoft Word, to read the walkthrough. |
@@ -57,5 +57,4 @@ Use the navigation bar on the left side of the screen to access your incidents, 
 
 ## Next steps
 
-- [Use the setup wizard in Defender for Business](mdb-use-wizard.md)
 - [See the overall setup and configuration process](mdb-setup-configuration.md)

@@ -5,7 +5,7 @@ author: kelleyvice-msft
 manager: scotv
 ms.date: 12/17/2019
 audience: Admin
-ms.topic: landing-page
+ms.topic: how-to
 ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 search.appverid:

@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: drjones, jmueller
+ms.reviewer: drjones, jobailey
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
@@ -32,7 +32,7 @@ If you purchased Microsoft 365 for business from a [Microsoft Open License Progr
   
  **Need something else?**
 
- **For help with Microsoft 365 Home, or Personal**, see [Using product keys with Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759).
+ **For help with Microsoft 365 Home, or Personal**, see [Using product keys with Microsoft 365](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759).
   
  **For help with Microsoft 365 Business Standard purchased from a retail store**, see [Enter your product key purchased from a retail store](enter-your-product-key.md).
   

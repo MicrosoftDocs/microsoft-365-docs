@@ -7,7 +7,7 @@ ms.author: cmcatee
 manager: scotv
 ms.reviewer: enuviadenu, pablom
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
@@ -16,9 +16,10 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- commerce_signup
-- AdminSurgePortfolio
-- okr_SMB
+  - commerce_signup
+  - AdminSurgePortfolio
+  - okr_SMB
+  - has-azure-ad-ps-ref
 search.appverid: MET150
 description: "Learn about the Microsoft 365 self-service sign-up and available self-service programs such as Microsoft Power Apps, Microsoft Power Automate, and Dynamics 365 for Finance."
 ms.date: 03/17/2021

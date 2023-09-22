@@ -2,7 +2,7 @@
 title: "Activate rights management in the admin center"
 ms.author: krowley
 author: kccross
-manager: scotv
+manager: laurawi
 ms.date: 07/16/2020
 audience: Admin
 ms.topic: article

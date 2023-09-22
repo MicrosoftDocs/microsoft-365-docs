@@ -12,6 +12,7 @@ ms.date: 09/20/2022
 ms.reviewer: dmwmsft
 ms.custom:
 - it-pro
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 ---
@@ -22,7 +23,7 @@ Microsoft Privacy and Security product terms included with Microsoft's Cloud pro
 
 1. Online Services: Exchange Online, SharePoint Online, and Microsoft Teams (as of Nov 1, 2022).
 2. Commitments period: The length of the customers contract with Microsoft. Typically, this is 1-3 years.
-3. Country/regions included: Local Geographies, United States and the European Union.
+3. Country/regions included: Australia, Brazil, Canada, France, Germany, India, Japan, Norway, Qatar, South Africa, South Korea, Sweden, Switzerland, the United Kingdom, the United Arab Emirates, United States and the European Union.
 
 The language at time of writing this article is:
 
@@ -33,6 +34,5 @@ For additional data residency capabilities, refer to the [_Multi-Geo_ service](m
 
 ## Product Terms Data Residency Migration
 
-When Microsoft's data centers were launched in _Local Region Geographies_, it was possible for any _Tenant_ with the appropriate _Default Geography_ to opt in to move their data into the _Local Region Geographies_. This opt in period was open for six months after the Data Center was operational.
+When Microsoft's data centers were launched in Australia, Brazil, Canada, the European Union, France, Germany, India, Japan, Norway, Qatar, South Africa, South Korea, Sweden, Switzerland, the United Kingdom, or the United Arab Emirates, it was possible for any _Tenant_ with the appropriate _Default Geography_ to opt in to move their data into the applicabile geography. This opt in period was open for six months after the Data Center was operational.
 
-Practically, this means that there are a number of tenants that didn't opt in to move and remain in the _Macro Region Geography_ data centers. On or about November 1, 2022 with the introduction of the Advanced Data Residency add-on, all tenants that remain in the _Macro Region Geography_ data centers will have another six month period to opt in for data migration to their _Local Region Geography_.  See the [Legacy Move Program page](m365-dr-legacy-move-program.md#how-to-request-your-data-move---final-opportunity) for more details.

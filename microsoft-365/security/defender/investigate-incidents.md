@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: dansimp
-author: dansimp
+ms.author: diannegali
+author: diannegali
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -21,7 +21,7 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.date: 02/16/2021
+ms.date: 05/24/2023
 ---
 
 # Investigate incidents in Microsoft 365 Defender
@@ -56,7 +56,8 @@ You can also open the main page for an incident by selecting the incident name f
 
 Attack stories help you to quickly review, investigate, and remediate attacks while viewing the full story of the attack on the same tab. It also allows you to review the entity details and take remediation actions, such as deleting a file or isolating a device without losing context.
 
-:::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-summary-tab.png" alt-text="The attack story of an incident" lightbox="../../media/first-incident-analyze/first-incident-analyze-summary-tab.png":::
+The attack story is briefly described in the following video. 
+ > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW129Jc]
 
 Within the attack story you can find the alert page and the incident graph.
 
@@ -237,3 +238,4 @@ As needed:
 - [Incidents overview](incidents-overview.md)
 - [Prioritize incidents](incident-queue.md)
 - [Manage incidents](manage-incidents.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

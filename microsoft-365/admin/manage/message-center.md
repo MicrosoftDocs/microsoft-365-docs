@@ -3,9 +3,9 @@ title: "Message center in the Microsoft 365 admin center"
 f1.keywords:
 - CSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
-ms.date: 02/18/2020
+ms.date: 09/18/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -19,11 +19,6 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
-search.appverid:
-- BCS160
-- MET150
-- MOE150
-ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: "Get an overview of Microsoft 365 Message center and its role in tracking new and changed features and other important announcements."
 ---
 
@@ -54,21 +49,21 @@ To unsubscribe from Message center emails, see [Unsubscribe from Message center 
 |Question|Answer|
 |---|---|
 |Who can view posts in Message center?|Most users who have been assigned any admin role in Microsoft 365 can view Message center posts. [Here's a list](#admin-roles-that-dont-have-access-to-the-message-center) of admin roles that don't have access to the Message center. You can also assign the Message center reader role to users who should be able to read and share Message center posts without having any other admin privileges.|
-|Is this the only way Microsoft will communicate changes about Microsoft 365?|No, but Message center is the primary way we communicate the timing of individual changes in Microsoft 365. See [Stay on top of Microsoft 365 changes](stay-on-top-of-updates.md) for information about additional resources.|
-|How can I see posts in my language?|Message center posts are written in English only, but you can control whether, by default, posts are shown in English or are automatically machine-translated to your preferred language. You can also select to machine-translate posts to any language we support. See [Language translation for Message center posts](language-translation-for-message-center-posts.md) for more details.|
+|Is this the only way Microsoft communicates changes about Microsoft 365?|No, but Message center is the primary way we communicate the timing of individual changes in Microsoft 365. See [Stay on top of Microsoft 365 changes](stay-on-top-of-updates.md) for more information.|
+|How can I see posts in my language?|Message center posts are written in English. You can control whether, by default, posts are shown in English or are automatically machine-translated to your preferred language. You can also select to machine-translate posts to any language we support. See [Language translation for Message center posts](language-translation-for-message-center-posts.md) for more details.|
 |Can I preview changes or features before they are rolled-out to my organization?|Some changes and new features can be previewed by opting in to the Targeted release program. To opt in, in the admin center, go to **Settings** > **Org settings** > **Organization profile** > **Release preferences**. (In the admin center, you may need to select **Show all** at the bottom of the left navigation pane to see **Settings**.) You can choose Targeted release for your entire organization, or just for selected users. See [Standard or Targeted release options in Microsoft 365](release-options-in-office-365.md) for more information about the program.|
-|Can I find out the exact date a change will be available to my organization?|Unfortunately, we can't tell you the exact date a change will be made to your organization. In our Message center post, we will give as much information as we can on the timing of the release, based on our confidence level. We're working on improvements to get better with that level of detail.|
+|Can I find out the exact date a change is available in my organization?|Unfortunately, we can't tell you the exact date a change is made to your organization. In our Message center post, we will give as much information as we can on the timing of the release, based on our confidence level. We're working on improvements to get better with that level of detail.|
 |Are these messages specific to my organization?|We do our best to make sure that you only see Message center posts that affect your organization. The Microsoft 365 Roadmap includes all of the features we are currently working on and rolling out, but not all of these features apply to every organization.|
 |Can I get message center posts emailed instead?|Yes! You can select to have a weekly digest emailed to you and up to two other email addresses. The emailed weekly digest is turned on by default. If you aren't getting your weekly digests, check your spam folder. See the [Preferences](#preferences) section of this article for more information on how to set up the weekly digest.|
 |How do I stop getting the Message center digest?|Go to Message center in the admin center and select **Preferences**. In the **Email** tab, turn off the option to **Send me email notifications from message center**.|
-|How can I ensure data privacy notifications are received by the right contacts in my organization?|As a global admin you will receive data privacy messages for your organization. Additionally, you can assign the Message Center Privacy reader role to people who should see data privacy messages. Other admin roles with access to Message Center cannot view data privacy messages.   <br/><br/>For more info, see [Preferences](#preferences) in this article.|
+|How can I ensure data privacy notifications are received by the right contacts in my organization?|As a global admin you'll receive data privacy messages for your organization. Additionally, you can assign the Message Center Privacy reader role to people who should see data privacy messages. Other admin roles with access to Message Center cannot view data privacy messages.   <br/><br/>For more info, see [Preferences](#preferences) in this article.|
 |Why can’t I see a message that was previously there?|To manage the number of messages within Message center, each message will expire and be removed after a period of time. Generally, messages expire 30 days post the time period outlined in the message body.|
 
 ## Feature release status for your organization in Message Center
 
  For each new and updated feature announcement in Message center, “Status for your org.” field provides a release status to help you track when a feature is available in your tenant.
 
-These three release statuses will be updated on each applicable message over the lifecycle of the feature release
+These three release statuses are updated on each applicable message over the lifecycle of the feature release
 
 - **Scheduled**: The feature is planned to release to your tenant, and is not available to any users in your organization
 
@@ -87,7 +82,7 @@ The release status is **ONLY** available for new and updated features that are a
 
 ## Relevance Recommendation
 
-For each new Message center post, we will provide a recommendation for how relevant the change is for your organization. This recommendation is based on multiple factors such as:
+For each new Message center post, we provide a recommendation for how relevant the change is for your organization. This recommendation is based on multiple factors such as:
 
 - Apps and service usage
 - Changes meant to prevent or fix issues for subscription.
@@ -96,13 +91,13 @@ For each new Message center post, we will provide a recommendation for how relev
 
 There are three levels of relevance:
 
-- **High** - These are posts about changes in your organization which need immediate action to avoid service disruption. These can also include feature releases with high potential impact to your organization, for example, an app or service being heavily used by people in your organization.
+- **High** - These are posts about changes in your organization, which need immediate action to avoid service disruption. These can also include feature releases with high potential impact to your organization, for example, an app or service being heavily used by people in your organization.
 
-- **Medium** - These are posts about changes in your organization which don't need immediate action. . Examples are non-breaking changes or new features for a service which is being used by your organization, an early announcement for an upcoming breaking feature change, retirement
+- **Medium** - These are posts about changes in your organization, which don't need immediate action. . Examples are non-breaking changes or new features for a service which is being used by your organization, an early announcement for an upcoming breaking feature change, retirement
 
-- **Low** - These are posts about changes which just need monitoring. They are related to low impact apps and services in your organization. Examples would be a feature update for an app or service which isn't actively used in your organization.
+- **Low** - These are posts about changes which just need monitoring. They are related to low impact apps and services in your organization. Examples would be a feature update for an app or service, which isn't actively used in your organization.
 
-The relevance recommendations will **ONLY** be available for the newer MC posts. This means the MC posts you already received will see a "blank" for relevance recommendation.
+The relevance recommendations are **ONLY** be available for the newer MC posts. This means the MC posts you already received will see a "blank" for relevance recommendation.
 
 If you see “**Processing**” for a MC post, it means that the score is being computed for this post and should be available soon. You should try to refresh after a few minutes.
 
@@ -116,7 +111,7 @@ The Archive tab shows the messages you have archived. To archive a message, in t
 
 ::: moniker range="o365-worldwide"
 
-Use the **Service**, **Tag**, and **Message state**  drop-down menus to select a filtered view of messages. For example, in this diagram the messages are tagged with the **Admin impact** tag.
+Use the **Service**, **Tag**, and **Message state**  drop-down menus to select a filtered view of messages. For example, in this diagram,the messages are tagged with the **Admin impact** tag.
 
 You can select any column heading, except **Service** and **Tag**,  to sort messages in ascending or descending order.
 
@@ -163,7 +158,7 @@ If administration is distributed across your organization, you may not want or n
 
 2. In the **Custom View** tab, make sure that the check box is selected for each service that you want to monitor. Clear the check boxes for the services you want to filter out of your Message center view.
 
-3. Digest emails are turned on by default and are sent to your primary email address. To stop receiving the weekly digest, clear the **Send me email notifications from message center** check box in he **Email tab**.
+3. Digest emails are turned on by default and are sent to your primary email address. To stop receiving the weekly digest, clear the **Send me email notifications from message center** check box in the **Email tab**.
 
    You can also enter up to two email addresses, separated by a semicolon.
 

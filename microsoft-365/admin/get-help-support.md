@@ -6,7 +6,7 @@ ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: microsoft-365-business
 ms.localizationpriority: high
 ms.collection: 
@@ -26,7 +26,7 @@ search.appverid:
 - MET150
 - MOE150
 description: "Learn how to get online or phone support for your Microsoft 365 for business subscription. You must be an admin for a business subscription to get support."
-ms.date: 11/08/2022
+ms.date: 07/25/2023
 ---
 
 # Get support for Microsoft 365 for business
@@ -46,18 +46,18 @@ Check out this video and others on our [YouTube channel](https://go.microsoft.co
 Need to speak to someone right away? Admins, have your account details ready when you call Support.
 
 > [!IMPORTANT]
-> You must be an admin for a business subscription to use these support methods. If you're not a business admin, please use [this support page](https://support.microsoft.com/contactus).
+> You must be an admin for a business subscription to use these support methods. [Find out more about admin roles for the Microsoft 365 admin center](add-users/about-admin-roles.md). If you're not a business admin, please use [this support page](https://support.microsoft.com/contactus).
 
 Start by [checking the current health of your services](../enterprise/view-service-health.md). You can view detailed information about current and past issues on the <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Service health dashboard</a>. If you're experiencing an issue that isn't listed, you can get support in one of the following ways:
 
 ## Online support
 
-Save time by starting your service request online. We'll help you find a solution or connect you to technical support.
+Save time by starting your service request online. We can help you find a solution or connect you to technical support.
 
 > [!IMPORTANT]
 > You must have bought at least one subscription through Microsoft to access Microsoft support. If you bought all your subscriptions through a partner, contact your partner for support.
 
-1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">https://admin.microsoft.com</a>. If you get a message that says you don't have permission to access this page or perform this action, you aren't an admin. For more information, see [Who has admin permissions in my business?](../admin/admin-overview/admin-center-overview.md#who-has-admin-permissions-in-my-business).
+1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. If you get a message that says you don't have permission to access this page or perform this action, you aren't an admin. For more information, see [Who has admin permissions in my business?](../admin/admin-overview/admin-center-overview.md#who-has-admin-permissions-in-my-business).
 2. On the bottom right side of the page, select **Help & support**.
 3. Type a question or keyword into the text box. If you get a drop-down list, select the one closest to your question, or continue typing your question, then press **Enter**.
 4. If the results don't help, at the bottom, select **Contact Support**.
@@ -65,7 +65,7 @@ Save time by starting your service request online. We'll help you find a solutio
 
 ## Phone support
 
-In most countries or regions, billing support for Microsoft 365 for business products and services is provided in English from 9 AM-5 PM, Monday through Friday. Local language support varies by country or region.
+In most countries/regions, billing support for Microsoft 365 for business products and services is provided in English from 9 AM-5 PM, Monday through Friday. Local language support varies by country/region.
 
 Technical support is provided in English 24 hours a day, 7 days a week, and in some cases, in local languages as noted.
 

@@ -62,6 +62,8 @@ landingContent:
           url: m365d-enable.md
         - text: Deploy supported services
           url: deploy-supported-services.md
+        - text: Setup guides for Microsoft 365 Defender
+          url: deploy-configure-m365-defender.md
 # Card
   - title: Microsoft Defender for Identity
     linkLists:

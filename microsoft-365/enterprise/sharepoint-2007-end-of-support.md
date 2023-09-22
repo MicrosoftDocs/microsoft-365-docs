@@ -2,7 +2,7 @@
 title: SharePoint Server 2007 end of support roadmap
 ms.author: tracyp
 author: MSFTTracyP
-manager: scotv
+manager: dansimp
 ms.date: 01/28/2019
 audience: ITPro
 ms.topic: conceptual

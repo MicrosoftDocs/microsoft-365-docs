@@ -22,20 +22,19 @@ ms.custom:
 description: Learn about Microsoft Defender for Office 365 for files in SharePoint Online, OneDrive for Business, and Microsoft Teams.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 12/05/2022
+ms.date: 6/19/2023
+appliesto:
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
 # Safe Attachments for SharePoint, OneDrive, and Microsoft Teams
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-**Applies to**
-- [Microsoft Defender for Office 365 plan 1 and plan 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+In organizations with Microsoft Defender for Office 365, Safe Attachments for SharePoint, OneDrive, and Microsoft Teams provides an additional layer of protection against malware. After files are asynchronously scanned by the [common virus detection engine in Microsoft 365](anti-malware-protection-for-spo-odfb-teams-about.md), Safe Attachments opens files in a virtual environment to see what happens (a process known as _detonation_). As part of detonation, any password protected files are checked against a list of known passwords or patterns that are typically used by malicious actors. Safe Attachments for SharePoint, OneDrive, and Microsoft Teams also helps detect and block existing files that are identified as malicious in team sites and document libraries.
 
-Safe Attachments for SharePoint, OneDrive, and Microsoft Teams in [Microsoft Defender for Office 365](defender-for-office-365-whats-new.md) provides an additional layer of protection for files that have already been scanned asynchronously by the [common virus detection engine in Microsoft 365](anti-malware-protection-for-spo-odfb-teams-about.md). Safe Attachments for SharePoint, OneDrive, and Microsoft Teams helps detect and block existing files that are identified as malicious in team sites and document libraries.
-
-Safe Attachments for SharePoint, OneDrive, and Microsoft Teams is not enabled by default. To turn it on, see [Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-configure.md).
+Safe Attachments for SharePoint, OneDrive, and Microsoft Teams is enabled by default. To turn it on or off, see [Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-configure.md).
 
 ## How Safe Attachments for SharePoint, OneDrive, and Microsoft Teams works
 
@@ -43,7 +42,7 @@ When Safe Attachments for SharePoint, OneDrive, and Microsoft Teams is enabled a
 
 :::image type="content" source="../../media/2bba71cc-7ad1-4799-8b9d-d56f923db3a7.png" alt-text="The files in OneDrive for Business with one detected as malicious" lightbox="../../media/2bba71cc-7ad1-4799-8b9d-d56f923db3a7.png":::
 
-Although the blocked file is still listed in the document library and in web, mobile, or desktop applications, people can't open, copy, move, or share the file. But they can delete the blocked file.
+Although the blocked file is still listed in the document library and in web, mobile, or desktop applications, people can't open, copy, move, or share the file. But, they can delete the blocked file.
 
 Here's an example of what a blocked file looks like on a mobile device:
 
@@ -59,14 +58,14 @@ To learn more about the user experience when a file has been detected as malicio
 
 ## View information about malicious files detected by Safe Attachments for SharePoint, OneDrive, and Microsoft Teams
 
-Files that are identified as malicious by Safe Attachments for SharePoint, OneDrive, and Microsoft Teams will show up in [reports for Microsoft Defender for Office 365](reports-defender-for-office-365.md) and in [Explorer (and real-time detections)](threat-explorer-about.md).
+Files that are identified as malicious by Safe Attachments for SharePoint, OneDrive, and Microsoft Teams appear in [reports for Microsoft Defender for Office 365](reports-defender-for-office-365.md) and in [Explorer (and real-time detections)](threat-explorer-about.md).
 
 When a file is identified as malicious by Safe Attachments for SharePoint, OneDrive, and Microsoft Teams, the file is also available in quarantine, but only to admins. For more information, see [Manage quarantined files in Defender for Office 365](quarantine-admin-manage-messages-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365).
 
 ## Keep these points in mind
 
-- Defender for Office 365 will not scan every single file in SharePoint Online, OneDrive for Business, or Microsoft Teams. This is by design. Files are scanned asynchronously. The process uses sharing and guest activity events along with smart heuristics and threat signals to identify malicious files.
+- Defender for Office 365 doesn't scan every single file in SharePoint Online, OneDrive for Business, or Microsoft Teams. This behavior is by design. Files are scanned asynchronously. The process uses sharing and guest activity events along with smart heuristics and threat signals to identify malicious files.
 
-- Make sure your SharePoint sites are configured to use the [Modern experience](/sharepoint/guide-to-sharepoint-modern-experience). Defender for Office 365 protection applies whether the Modern experience or the Classic view is used; however, visual indicators that a file is blocked are available only in the Modern experience.
+- Make sure your SharePoint sites are configured to use the [Modern experience](/sharepoint/guide-to-sharepoint-modern-experience). Visual indicators that a file is blocked are available only in the Modern experience.
 
 - Safe Attachments for SharePoint, OneDrive, and Microsoft Teams is part of your organization's overall threat protection strategy, which includes anti-spam and anti-malware protection in Exchange Online Protection (EOP), as well as Safe Links and Safe Attachments in Microsoft Defender for Office 365. To learn more, see [Protect against threats in Office 365](protect-against-threats.md).

@@ -2,10 +2,10 @@
 title: "About shared mailboxes"
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: SKjerland
+ms.author: kwekua
+author: kwekuako
 manager: scotv
-ms.date: 02/18/2020
+ms.date: 08/18/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -21,10 +21,6 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
-search.appverid:
-- BCS160
-- MET150
-- MOE150
 description: "Shared mailboxes are used when multiple people need access to the same mailbox. Learn what you need to know before creating a shared mailbox."
 ---
 
@@ -33,8 +29,6 @@ description: "Shared mailboxes are used when multiple people need access to the 
 Shared mailboxes are used when multiple people need access to the same mailbox, such as a company information or support email address, reception desk, or other function that might be shared by multiple people.
 
 Users with permissions to the group mailbox can send as or send on behalf of the mailbox email address if the administrator has given that user permissions to do that. This is particularly useful for help and support mailboxes because users can send emails from "Contoso Support" or "Building A Reception Desk."
-
-## Before you begin
 
 Before you [create a shared mailbox](create-a-shared-mailbox.md), here are some things you should know:
 
@@ -47,14 +41,14 @@ Before you [create a shared mailbox](create-a-shared-mailbox.md), here are some 
 > - The shared mailbox has more than 50 GB of storage in use.
 > - The shared mailbox uses in-place archiving.
 > - The shared mailbox is placed on litigation hold.
-> 
-> For step-by-step instructions on how to assign licenses, see [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users). 
+
+> For step-by-step instructions on how to assign licenses, see [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users).
 
 - **User permissions:** You need to give users permissions (membership) to use the shared mailbox. Only people inside your organization can use a shared mailbox.
 
 - **External users:** You can't give people outside your business (such as people with a Gmail account) access to your shared mailbox. If you want to do this, consider creating a group for Outlook instead. To learn more, see [Create a Microsoft 365 group in the admin center](../create-groups/create-groups.md).
 
-- **Use with Outlook:** In addition to using Outlook on the web from your browser to access shared mailboxes, you can also use the Outlook for iOS app or the Outlook for Android app. To learn more, see [Add a shared mailbox to Outlook mobile](https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f). Another option is to create a group for your shared mailbox. To learn more, see [Compare Groups](../create-groups/compare-groups.md).
+- **Use with Outlook for Android and iOS App:** In addition to using Outlook on the web from your browser to access shared mailboxes, you can also use the Outlook for iOS app or the Outlook for Android app. To learn more, see [Add a shared mailbox to Outlook mobile](https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f). Another option is to create a group for your shared mailbox. To learn more, see [Compare Groups](../create-groups/compare-groups.md).
 
 - **Encryption:** You can't encrypt email sent from a shared mailbox. This is because a shared mailbox does not have its own security context (username/password) so it cannot be assigned a key. If more than one person is a member, and they send/receive emails they encrypted with their own keys, other members might be able to read the email and others might not, depending which public key the email was encrypted with.
 
@@ -66,15 +60,16 @@ Before you [create a shared mailbox](create-a-shared-mailbox.md), here are some 
 
 - **Signing in:** A shared mailbox is not intended for direct sign-in by its associated user account. You should always block sign-in for the shared mailbox account and keep it blocked.
 
-- **Too many users:** When there are too many designated users concurrently accessing a shared mailbox (no more than 25 is recommended), they may intermittently fail to connect to this mailbox or have inconsistencies like messages being duplicated in the outbox. In this case, you can consider reducing the number of users or using a different workload, such as a Microsoft 365 group or a Public folder.
+- **Too many users:** When there are too many designated users concurrently accessing a shared mailbox (the max supported is 25), they may intermittently fail to connect to this mailbox or have inconsistencies like messages being duplicated in the outbox. In this case, reduce the number of users or use a different workload, like a Microsoft 365 group.
 
 - **Message deletion:** Unfortunately, you can't prevent people from deleting messages in a shared mailbox. The only way around this is to [create a Microsoft 365 group](/microsoft-365/admin/create-groups/create-groups) instead of a shared mailbox. A group in Outlook is like a shared mailbox. For a comparison of the two, see [Compare groups](../create-groups/compare-groups.md). To learn more about groups, see [Learn about Microsoft 365 groups](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 
-- **Multi-Geo** In a multi-geo environment, shared mailboxes need to be licensed the same way a user mailbox is licensed. Note that cross-geo mailbox auditing is not supported. For example, if a user is assigned permissions to access a shared mailbox in a different geo location, mailbox actions performed by that user are not logged in the mailbox audit log of the shared mailbox. 
-
+- **Multi-Geo** In a multi-geo environment, shared mailboxes need to be licensed the same way a user mailbox is licensed. Note that cross-geo mailbox auditing is not supported. For example, if a user is assigned permissions to access a shared mailbox in a different geo location, mailbox actions performed by that user are not logged in the mailbox audit log of the shared mailbox.
 
 > [!NOTE]
-> To access a shared mailbox, a user must have an Exchange Online license, but the shared mailbox doesn't require a separate license. Every shared mailbox has a corresponding user account. Notice how you weren't asked to provide a password when you created the shared mailbox? The account has a password, but it's system-generated (unknown). You shouldn't use the account to log in to the shared mailbox. Without a license, shared mailboxes are limited to 50 GB. To increase the size limit to 100 GB, the shared mailbox must be assigned an Exchange Online Plan 2 license. The Exchange Online Plan 1 license with an Exchange Online Archiving add-on license will only increase the size of the archive mailbox. This will also let you enable auto-expanding archiving for additional archive storage capacity. Similarly, if you want to place a shared mailbox on litigation hold, the shared mailbox must have an Exchange Online Plan 2 license or an Exchange Online Plan 1 license with an Exchange Online Archiving add-on license. If you want to apply advanced features such as Microsoft Defender for Office 365, eDiscovery (Premium), or retention policies, the shared mailbox must be licensed for those features.
+> To access a shared mailbox, a user must have an Exchange Online license, but the shared mailbox doesn't require a separate license. Every shared mailbox has a corresponding user account. Notice how you weren't asked to provide a password when you created the shared mailbox? The account has a password, but it's system-generated (unknown). You shouldn't use the account to log in to the shared mailbox. Without a license, shared mailboxes are limited to 50 GB. To increase the size limit to 100 GB, the shared mailbox must be assigned an Exchange Online Plan 2 license. The Exchange Online Plan 1 license with an Exchange Online Archiving add-on license will only increase the size of the archive mailbox. This will also let you enable auto-expanding archiving for additional archive storage capacity. Similarly, if you want to place a shared mailbox on litigation hold, the shared mailbox must have an Exchange Online Plan 2 license or an Exchange Online Plan 1 license with an Exchange Online Archiving add-on license.
+>
+>If you want to apply advanced features such as Microsoft Defender for Office 365, eDiscovery (Premium), or retention policies, licenses may be required. For more information, see [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 > [!NOTE]
 > Prior to July 2018, all unlicensed shared mailboxes were provisioned with a size of 100 GB. For more information, see [Correcting Shared Mailbox provisioning and sizing](https://techcommunity.microsoft.com/t5/exchange-team-blog/correcting-shared-mailbox-provisioning-and-sizing/ba-p/607991).

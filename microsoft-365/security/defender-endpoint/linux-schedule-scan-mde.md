@@ -23,6 +23,8 @@ ms.date: 10/22/2021
 # Schedule scans with Microsoft Defender for Endpoint (Linux)
 
 **Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 
@@ -232,3 +234,4 @@ crontab -u username -r
 | | | | +—- day of week (values: 0 - 6) (Sunday=0 or 7) (special characters: , \- \* / L W C) <br>
 | | | | |*****command to be executed
 ```
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

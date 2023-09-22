@@ -1,9 +1,9 @@
 ---
 title: Set up Microsoft 365 for frontline workers
-author: samanro
-ms.author: samanro
+author: lana-chin
+ms.author: heidip
+manager: serdars
 ms.reviewer: samanro
-manager: pamgreen
 ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
@@ -14,11 +14,10 @@ ms.collection:
   - m365-frontline
   - highpri
   - m365solution-frontline
-  - tier1
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 02/01/2023
+ms.date: 04/04/2023
 ---
 
 # Set up Microsoft 365 for frontline workers
@@ -61,7 +60,7 @@ The Microsoft 365 admin center has a set of [Setup guides](/microsoft-365/enterp
 
 ## Step 3: Provision users, configure groups, and assign licenses
 
-Now that you have Microsoft 365 set up, you can start to add users, organize them into groups, and assign licenses.
+Now that you have Microsoft 365 set up, you can start to add users, organize them into groups, and assign licenses. Much of this information is also in the [downloadable technical planning guide](https://go.microsoft.com/fwlink/?linkid=2211637).
 
 ### Provision users
 
@@ -167,9 +166,7 @@ Using dynamic group backed shared mailboxes based on attributes such as Location
 
 ### Set up Microsoft Teams
 
-For a pilot project, you can use the Frontline worker onboarding wizard to set up a single team, configured for your frontline workers. For step-by-step guidance, see [Use the Frontline Worker onboarding wizard to get your frontline workforce up and running](flw-onboarding-wizard.md).
-
-For full deployments, follow the guidance in [Deploy Teams at scale for frontline workers](deploy-teams-at-scale.md).
+Follow the guidance in [Deploy Teams at scale for frontline workers](deploy-teams-at-scale.md).
 
 ### Set up employee experiences with Microsoft Viva
 

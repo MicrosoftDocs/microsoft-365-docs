@@ -8,7 +8,6 @@ audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - Tier2
 - scotvorg
@@ -27,9 +26,6 @@ description: "The Teams usage report shows you how users are communicating and c
 # Microsoft 365 Reports in the admin center - Microsoft Teams usage activity
 
 The Microsoft 365 Reports dashboard shows you the activity overview across the products in your organization. It enables you to drill in to individual product level reports to give you more granular insight about the activities within each product. Check out [the Reports overview topic](activity-reports.md).
-
-> [!NOTE]
-> The information and data on the Microsoft 365 Experience insights dashboard helps you to better understand and improve your users' overall experience with Microsoft 365. [Learn more](/microsoft-365/admin/misc/experience-insights-dashboard).
 
 The brand-new **Teams usage report** gives you an overview of the usage activity in Teams, including the number of active users, channels and messages so you can quickly see how many users across your organization are using Teams to communicate and collaborate.  It also includes other Teams specific activities, such as the number of active guests, meetings, and messages.
 
@@ -117,6 +113,9 @@ Data for following metrics are available for individual teams.
 |Urgent messages|Count of urgent messages in the specified time period.|
 |Channel messages|The number of unique messages that the user posted in a team chat during the specified time period.|
 |Last activity date|The latest date that any member of the team has committed an action.|
+
+> [!NOTE]
+> Metric counts include Teams client built-in features, but don't include changes to chat and channel through service integration, such as Teams app posts or replies and emails in the channel.
 
 ## Make the user-specific data anonymous
 

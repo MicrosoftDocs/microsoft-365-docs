@@ -1,4 +1,4 @@
-﻿---
+---
 title: Take response actions on a device in Microsoft Defender for Endpoint
 description: Take response actions on a device such as isolating devices, collecting an investigation package, managing tags, running an av scan, and restricting app execution.
 keywords: respond, isolate, isolate device, collect investigation package, action center, restrict, manage tags, av scan, restrict app
@@ -6,10 +6,10 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: diannegali
+author: diannegali
 ms.localizationpriority: medium
-ms.date: 01/06/2023
+ms.date: 05/29/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -68,7 +68,7 @@ Response actions run along the top of a specific device page and include:
 
 > [!IMPORTANT]
 >
-> - These response actions are only available for devices on Windows 10, version  1703 or later, Windows 11, Windows Server 2019, and Windows Server 2022.
+> - These response actions are only available for devices on Windows 10, version  1703 or later, Windows 11, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019, and Windows Server 2022.
 > - For non-Windows platforms, response capabilities (such as isolate device) are dependent on the third-party capabilities.
 > - For Microsoft first party agents, please refer to the "more information" link under each feature for minimum OS requirements.
 
@@ -84,7 +84,7 @@ You can start a new general purpose automated investigation on the device if nee
 
 For more information on automated investigations, see [Overview of Automated investigations](automated-investigations.md).
 
-## Initiate live response Session
+## Initiate live response session
 
 Live response is a capability that gives you instantaneous access to a device by using a remote shell connection. This gives you the power to do in-depth investigative work and take immediate response actions to promptly contain identified threats in real time.
 
@@ -99,25 +99,33 @@ As part of the investigation or response process, you can collect an investigati
 > [!IMPORTANT]
 > These actions are not currently supported for devices running macOS or Linux. Use live response to run the action. For more information on live response, see [Investigate entities on devices using live response](live-response.md)
 
-To download the package (Zip file) and investigate the events that occurred on a device
+To download the package (Zip file) and investigate the events that occurred on a device:
 
 1. Select **Collect investigation package** from the row of response actions at the top of the device page.
 
 2. Specify in the text box why you want to perform this action. Select **Confirm**.
 
-3. The zip file will download
+3. The zip file downloads.
 
-Alternate way:
+Alternate steps:
 
-1. Select **Action center** from the response actions section of the device page.
+1. Select **Collect Investigation Package** from the response actions section of the device page.
 
-   :::image type="content" source="images/action-center-package-collection.png" alt-text="The Action center option" lightbox="images/action-center-package-collection.png":::
+    ![Image of collect investigation package](images/collect-investigation-package.png)
+   
+2. Add comments and select **Confirm**.
 
-2. In the Action center fly-out, select **Package collection package available** to download the zip file.
+    ![Image of confirm comment](images/comments-confirm.png)
 
-   :::image type="content" source="images/collect-package.png" alt-text="The download package option" lightbox="images/collect-package.png":::
+3. Select **Action center** from the response actions section of the device page.
 
-The package contains the following folders:
+    ![Image of action center](images/action-center-selected.png)
+
+4. Click the **Package collection package available** to download the collection package.
+
+    ![Image of download package](images/download-package.png)
+
+For Windows devices, the package contains the following folders:
 
 |Folder|Description|
 |---|---|
@@ -136,13 +144,28 @@ The package contains the following folders:
 |WdSupportLogs|Provides the MpCmdRunLog.txt and MPSupportFiles.cab  <p> <div class="alert"><b>NOTE:</b> This folder will only be created on Windows 10, version 1709 or later with February 2020 update rollup or more recent installed: <ul><li>Win10 1709 (RS3) Build 16299.1717: [KB4537816](https://support.microsoft.com/help/4537816/windows-10-update-kb4537816)</li><li>Win10 1803 (RS4) Build 17134.1345: [KB4537795](https://support.microsoft.com/help/4537795/windows-10-update-kb4537795)</li><li>Win10 1809 (RS5) Build 17763.1075: [KB4537818](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818)</li><li>Win10 1903/1909 (19h1/19h2) Builds 18362.693 and 18363.693: [KB4535996](https://support.microsoft.com/help/4535996/windows-10-update-kb4535996)</li></ul> </div>|
 |CollectionSummaryReport.xls|This file is a summary of the investigation package collection, it contains the list of data points, the command used to extract the data, the execution status, and the error code if there is failure. You can use this report to track if the package includes all the expected data and identify if there were any errors.|
 
+The collection packages for macOS and Linux devices contain the following:
+
+|Object|macOS|Linux|
+|---|---|---|
+|Applications|A list of all installed applications|Not applicable|
+|Disk volume|<ul><li>Amount of free space</li><li>List of all mounted disk volumes</li><li>List of all partitions</li>|<ul><li>Amount of free space</li><li>List of all mounted disk volumes</li><li>List of all partitions</li>|
+|File|A list of all open files with the corresponding processes using these files|A list of all open files with the corresponding processes using these files|
+|History|Shell history|Not applicable|
+|Kernel modules|All loaded modules|Not applicable|
+|Network connections|<ul><li>Active connections</li><li>Active listening connections</li><li>ARP table</li><li>Firewall rules</li><li>Interface configuration</li><li>Proxy settings</li><li>VPN settings</li></ul>|<ul><li>Active connections</li><li>Active listening connections</li><li>ARP table</li><li>Firewall rules</li><li>IP list</li><li>Proxy settings</li></ul>|
+|Processes|A list of all running processes|A list of all running processes|
+|Services and scheduled tasks|<ul><li>Certificates</li><li>Configuration profiles</li><li>Hardware information|<ul><li>CPU details</li><li>Hardware information</li><li>Operating system information</li>|
+|System security information|<ul><li>Extensible Firmware Interface (EFI) integrity information</li><li>Firewall status</li><li>Malware Removal Tool (MRT) information</li><li>System Integrity Protection (SIP) status</li>|Not applicable|
+|Users and groups|<ul><li>Login history</li><li>Sudoers</li></ul>|<ul><li>Login history</li><li>Sudoers</li></ul>|
+
 ## Run Microsoft Defender Antivirus scan on devices
 
 As part of the investigation or response process, you can remotely initiate an antivirus scan to help identify and remediate malware that might be present on a compromised device.
 
 > [!IMPORTANT]
 >
-> - This action is not currently supported for macOS and Linux. Use live response to run the action. For more information on live response, see [Investigate entities on devices using live response](live-response.md)
+> - This action is supported for macOS and Linux for client version 101.98.84 and above. It is in preview. You can also use live response to run the action. For more information on live response, see [Investigate entities on devices using live response](live-response.md)
 > - A Microsoft Defender Antivirus scan can run alongside other antivirus solutions, whether Microsoft Defender Antivirus is the active antivirus solution or not. Microsoft Defender Antivirus can be in Passive mode. For more information, see [Microsoft Defender Antivirus compatibility](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility).
 
 One you have selected **Run antivirus scan**, select the scan type that you'd like to run (quick or full) and add a comment before confirming the scan.
@@ -190,15 +213,17 @@ Depending on the severity of the attack and the sensitivity of the device, you m
 
 > [!IMPORTANT]
 >
-> - Isolating devices from the network is not currently supported for devices running macOS. For macOS, use live response to run the action. For more information on live response, see [Investigate entities on devices using live response](live-response.md).
-> - Full isolation is available for devices running Windows 11, Windows 10, version 1703 or later, Windows Server 2022, Windows Server 2019, and Windows Server 2016.
+> - Isolating devices from the network is supported for macOS for client version 101.98.84 and above. It is in preview. You can also use live response to run the action. For more information on live response, see [Investigate entities on devices using live response](live-response.md) 
+> - Full isolation is available for devices running Windows 11, Windows 10, version 1703 or later, Windows Server 2022, Windows Server 2019, Windows Server 2016 and Windows Server 2012 R2.
 > - You can use the device isolation capability **in public preview** on all supported Microsoft Defender for Endpoint on Linux listed in [System requirements](microsoft-defender-endpoint-linux.md#system-requirements).
 > - Selective isolation is available for devices running Windows 10, version 1709 or later, and Windows 11.
 > - When isolating a device, only certain processes and destinations are allowed. Therefore, devices that are behind a full VPN tunnel won't be able to reach the Microsoft Defender for Endpoint cloud service after the device is isolated. We recommend using a split-tunneling VPN for Microsoft Defender for Endpoint and Microsoft Defender Antivirus cloud-based protection-related traffic.
 > - The feature supports VPN connection.
 > - You must have at least one the following role permissions: 'Active remediation actions'. For more information, see [Create and manage roles](user-roles.md).
 > - You must have access to the device based on the device group settings. For more information, see [Create and manage device groups](machine-groups.md).
-> - Exclusion for Linux isolation is not supported.
+> - Exclusion for both macOS and Linux isolation is not supported.
+> - An isolated device is removed from isolation when an administrator modifies or adds a new iptable rule to the isolated device.
+> - Isolating a server running on Microsoft Hyper-V blocks network traffic to all child virtual machines of the server.
 
 This device isolation feature disconnects the compromised device from the network while retaining connectivity to the Defender for Endpoint service, which continues to monitor the device.
 
@@ -213,6 +238,31 @@ Once you have selected **Isolate device** on the device page, type a comment and
 
 > [!NOTE]
 > The device will remain connected to the Defender for Endpoint service even if it is isolated from the network. If you've chosen to enable Outlook and Skype for Business communication, then you'll be able to communicate to the user while the device is isolated.
+
+### Forcibly release device from isolation
+
+The device isolation feature is an invaluable tool for safeguarding devices against external threats. However, there are instances when isolated devices become unresponsive.<br> 
+There's a downloadable script for these instances that you can run to forcibly release devices from isolation. The script is available through a link in the UI.
+
+> [!NOTE]
+> - Admins and manage security settings in Security Center permissions can forcibly release devices from isolation. 
+> - The script is valid for the specific device only.
+> - The script will expire in three days.
+
+To forcibly release device from isolation:
+
+1. On the device page, select **Download script to force-release a device from isolation** from the action menu.
+1. On the right-hand side wizard, select **Download script**.
+
+#### Minimum requirements
+The minimum requirements for 'forcibly release device from isolation' feature are:
+
+- Supports only Windows
+- The following Windows versions are supported:
+    - Windows 10 21H2 and 22H2 with KB KB5023773
+    - Windows 11 version 21H2, all editions with KB5023774 
+    - Windows 11 version 22H2, all editions with KB5023778 
+    
 
 ### Notification on device user
 
@@ -294,3 +344,4 @@ All other related details are also shown, for example, submission date/time, sub
 - [Take response actions on a file](respond-file-alerts.md)
 - [Manual response actions in Microsoft Defender for Endpoint Plan 1](defender-endpoint-plan-1.md#manual-response-actions)
 - [Report inaccuracy](/microsoft-365/security/defender-endpoint/tvm-security-recommendation#report-inaccuracy)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

@@ -14,9 +14,9 @@ manager: dansimp
 audience: ITPro 
 ms.collection:
  - m365-security
- - ContentEngagementFY23
+ - must-keep
  - tier3
-ms.topic: conceptual 
+ms.topic: reference 
 ms.subservice: mde 
 ms.custom: api 
 search.appverid: met150
@@ -26,6 +26,7 @@ search.appverid: met150
 
 **Applies to:**
 
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -135,3 +136,4 @@ Method|Data type|Description
 [Export device antivirus health report](device-health-export-antivirus-health-report-api.md)
 
 [Device health and compliance reporting](device-health-reports.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

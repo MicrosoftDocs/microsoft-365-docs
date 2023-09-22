@@ -13,8 +13,9 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
 - m365-security
-- tier2
-ms.topic: conceptual
+- tier3
+- must-keep
+ms.topic: reference
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
@@ -87,3 +88,4 @@ Here's an example of the request.
 ```http
 DELETE https://api.securitycenter.microsoft.com/api/indicators/995
 ```
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

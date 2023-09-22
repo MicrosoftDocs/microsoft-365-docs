@@ -1,16 +1,12 @@
 ---
 title: Address false positives/negatives in Microsoft Defender for Endpoint
 description: Learn how to handle false positives or false negatives in Microsoft Defender for Endpoint.
-keywords: antivirus, exception, exclusion, Microsoft Defender for Endpoint, false positive, false negative, blocked file, blocked url
 ms.service: microsoft-365-security
 ms.subservice: mde
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
-ms.date: 01/27/2023
+ms.date: 07/18/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -32,6 +28,7 @@ search.appverid: met150
 
 **Applies to:**
 
+- [Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender Antivirus
 
@@ -213,29 +210,37 @@ The procedures in this section describe how to define exclusions and indicators.
 In general, you shouldn't need to define exclusions for Microsoft Defender Antivirus. Make sure that you define exclusions sparingly, and that you only include the files, folders, processes, and process-opened files that are resulting in false positives. In addition, make sure to review your defined exclusions regularly. We recommend using [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) to define or edit your antivirus exclusions; however, you can use other methods, such as [Group Policy](/azure/active-directory-domain-services/manage-group-policy) (see [Manage Microsoft Defender for Endpoint](manage-mde-post-migration.md).
 
 > [!TIP]
-> Need help with antivirus exclusions? See [Configure and validate exclusions for Microsoft Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md).
+> Need help with antivirus exclusions? See [Configure and validate exclusions for Microsoft Defender Antivirus](configure-exclusions-microsoft-defender-antivirus.md).
 
 #### Use Intune to manage antivirus exclusions (for existing policies)
 
-1. In the [Microsoft Intune admin center](https://endpoint.microsoft.com), choose **Endpoint security** \> **Antivirus**, and then select an existing policy. (If you don't have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-intune-to-create-a-new-antivirus-policy-with-exclusions)).
+1. In the [Microsoft Intune admin center](https://intune.microsoft.com), choose **Endpoint security** \> **Antivirus**, and then select an existing policy. (If you don't have an existing policy, or you want to create a new policy, skip to [Use Intune to create a new antivirus policy with exclusions](#use-intune-to-create-a-new-antivirus-policy-with-exclusions).)
 
 2. Choose **Properties**, and next to **Configuration settings**, choose **Edit**.
 
 3. Expand **Microsoft Defender Antivirus Exclusions** and then specify your exclusions.
 
+   - **Excluded Extensions** are exclusions that you define by file type extension. These extensions apply to any file name that has the defined extension without the file path or folder. Separate each file type in the list must be separated with a `|` character. For example, `lib|obj`. For more information, see [ExcludedExtensions](/windows/client-management/mdm/policy-csp-defender#excludedextensions).
+   - **Excluded Paths** are exclusions that you define by their location (path). These types of exclusions are also known as file and folder exclusions. Separate each path in the list with a `|` character. For example, `C:\Example|C:\Example1`. For more information, see [ExcludedPaths](/windows/client-management/mdm/policy-csp-defender#excludedpaths).
+   - **Excluded Processes** are exclusions for files that are opened by certain processes. Separate each file type in the list with a `|` character. For example, `C:\Example. exe|C:\Example1.exe`. These exclusions aren't for the actual processes. To exclude processes, you can use file and folder exclusions. For more information, see [ExcludedProcesses](/windows/client-management/mdm/policy-csp-defender#excludedprocesses).
+
 4. Choose **Review + save**, and then choose **Save**.
 
 #### Use Intune to create a new antivirus policy with exclusions
 
-1. In the [Microsoft Intune admin center](https://endpoint.microsoft.com), choose **Endpoint security** \> **Antivirus** \> **+ Create Policy**.
+1. In the [Microsoft Intune admin center](https://intune.microsoft.com), choose **Endpoint security** \> **Antivirus** \> **+ Create Policy**.
 
-2. Select a platform (such as **Windows 10 and later**, **macOS**, or **Windows 10 and Windows Server**).
+2. Select a platform (such as **Windows 10, Windows 11, and Windows Server**).
 
 3. For **Profile**, select **Microsoft Defender Antivirus exclusions**, and then choose **Create**.
 
-4. Specify a name and description for the profile, and then choose **Next**.
+4. On the **Create profile** step, specify a name and description for the profile, and then choose **Next**.
 
 5. On the **Configuration settings** tab, specify your antivirus exclusions, and then choose **Next**.
+
+   - **Excluded Extensions** are exclusions that you define by file type extension. These extensions apply to any file name that has the defined extension without the file path or folder. Separate each file type in the list with a `|` character. For example, `lib|obj`. For more information, see [ExcludedExtensions](/windows/client-management/mdm/policy-csp-defender#excludedextensions).
+   - **Excluded Paths** are exclusions that you define by their location (path). These types of exclusions are also known as file and folder exclusions. Separate each path in the list with a `|` character. For example, `C:\Example|C:\Example1`. For more information, see [ExcludedPaths](/windows/client-management/mdm/policy-csp-defender#excludedpaths).
+   - **Excluded Processes** are exclusions for files that are opened by certain processes. Separate each file type in the list with a `|` character. For example, `C:\Example. exe|C:\Example1.exe`. These exclusions aren't for the actual processes. To exclude processes, you can use file and folder exclusions. For more information, see [ExcludedProcesses](/windows/client-management/mdm/policy-csp-defender#excludedprocesses).
 
 6. On the **Scope tags** tab, if you're using scope tags in your organization, specify scope tags for the policy you're creating. (See [Scope tags](/mem/intune/fundamentals/scope-tags).)
 
@@ -345,82 +350,23 @@ Defender for Endpoint offers a wide variety of options, including the ability to
 
 ### Cloud-delivered protection
 
-Check your cloud-delivered protection level for Microsoft Defender Antivirus. By default, cloud-delivered protection is set to **Not configured**, which corresponds to a normal level of protection for most organizations. If your cloud-delivered protection is set to **High**, **High +**, or **Zero tolerance**, you might experience a higher number of false positives.
+Check your cloud-delivered protection level for Microsoft Defender Antivirus. By default, cloud-delivered protection is set to **Not configured**; however, we recommend turning it on. To learn more about configuring your cloud-delivered protection, see [Turn on cloud protection in Microsoft Defender Antivirus](enable-cloud-protection-microsoft-defender-antivirus.md).
 
-> [!TIP]
-> To learn more about configuring your cloud-delivered protection, see [Specify the cloud-delivered protection level](/windows/security/threat-protection/microsoft-defender-antivirus/specify-cloud-protection-level-microsoft-defender-antivirus).
+You can use [Intune](/mem/intune/fundamentals/what-is-intune) or other methods, such as [Group Policy](/azure/active-directory-domain-services/manage-group-policy), to edit or set your cloud-delivered protection settings.
 
-We recommend using [Intune](/mem/intune/fundamentals/what-is-intune) to edit or set your cloud-delivered protection settings; however, you can use other methods, such as [Group Policy](/azure/active-directory-domain-services/manage-group-policy) (see [Manage Microsoft Defender for Endpoint](manage-mde-post-migration.md).
-
-#### Use Intune to review and edit cloud-delivered protection settings (for existing policies)
-
-1. In the [Microsoft Intune admin center](https://endpoint.microsoft.com), choose **Endpoint security** \> **Antivirus** and then select an existing policy. (If you don't have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-intune-to-set-cloud-delivered-protection-settings-for-a-new-policy)).
-
-2. Under **Manage**, select **Properties**. Then, next to **Configuration settings**, choose **Edit**.
-
-3. Expand **Cloud protection**, and review your current setting in the **Cloud-delivered protection level** row. We recommend setting cloud-delivered protection to **Not configured**, which provides strong protection while reducing the chances of getting false positives.
-
-4. Choose **Review + save**, and then **Save**.
-
-#### Use Intune to set cloud-delivered protection settings (for a new policy)
-
-1. In the [Microsoft Intune admin center](https://endpoint.microsoft.com), choose **Endpoint security** \> **Antivirus** \> **+ Create policy**.
-
-2. For **Platform**, select an option, and then for **Profile**, select **Antivirus** or **Microsoft Defender Antivirus** (the specific option depends on what you selected for **Platform**.) Then choose **Create**.
-
-3. On the **Basics** tab, specify a name and description for the policy. Then choose **Next**.
-
-4. On the **Configuration settings** tab, expand **Cloud protection**, and specify the following settings:
-
-   - Set **Turn on cloud-delivered protection** to **Yes**.
-   - Set **Cloud-delivered protection level** to **Not configured**. (This level provides a strong level of protection by default while reducing the chances of getting false positives.)
-
-5. On the **Scope tags** tab, if you're using scope tags in your organization, specify scope tags for the policy. (See [Scope tags](/mem/intune/fundamentals/scope-tags).)
-
-6. On the **Assignments** tab, specify the users and groups to whom your policy should be applied, and then choose **Next**. (If you need help with assignments, see [Assign user and device profiles in Microsoft Intune](/mem/intune/configuration/device-profile-assign).)
-
-7. On the **Review + create** tab, review the settings, and then choose **Create**.
+See [Turn on cloud protection in Microsoft Defender Antivirus](enable-cloud-protection-microsoft-defender-antivirus.md).
 
 ### Remediation for potentially unwanted applications
 
 Potentially unwanted applications (PUA) are a category of software that can cause devices to run slowly, display unexpected ads, or install other software that might be unexpected or unwanted. Examples of PUA include advertising software, bundling software, and evasion software that behaves differently with security products. Although PUA isn't considered malware, some kinds of software are PUA based on their behavior and reputation.
 
-> [!TIP]
-> To learn more about PUA, see [Detect and block potentially unwanted applications](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
+To learn more about PUA, see [Detect and block potentially unwanted applications](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
 
 Depending on the apps your organization is using, you might be getting false positives as a result of your PUA protection settings. If necessary, consider running PUA protection in audit mode for a while, or apply PUA protection to a subset of devices in your organization. PUA protection can be configured for the Microsoft Edge browser and for Microsoft Defender Antivirus.
 
-We recommend using [Intune](/mem/endpoint-manager-overview) to edit or set PUA protection settings; however, you can use other methods, such as [Group Policy](/azure/active-directory-domain-services/manage-group-policy) (see [Manage Microsoft Defender for Endpoint](manage-mde-post-migration.md).
+We recommend using [Intune](/mem/endpoint-manager-overview) to edit or set PUA protection settings; however, you can use other methods, such as [Group Policy](/azure/active-directory-domain-services/manage-group-policy).
 
-#### Use Intune to edit PUA protection (for existing configuration profiles)
-
-1. In the [Microsoft Intune admin center](https://endpoint.microsoft.com), choose **Devices** \> **Configuration profiles**, and then select an existing policy. (If you don't have an existing policy, or you want to create a new policy, skip to [the next procedure](#use-intune-to-set-pua-protection-for-a-new-configuration-profile).)
-
-2. Under **Manage**, choose **Properties**, and then, next to **Configuration settings**, choose **Edit**.
-
-3. On the **Configuration settings** tab, scroll down and expand **Microsoft Defender Antivirus**.
-
-4. Set **Detect potentially unwanted applications** to **Audit**. (You can turn it off, but by using audit mode, you'll be able to see detections.)
-
-5. Choose **Review + save**, and then choose **Save**.
-
-#### Use Intune to set PUA protection (for a new configuration profile)
-
-1. In the [Microsoft Intune admin center](https://endpoint.microsoft.com), choose **Devices** \> **Configuration profiles** \> **+ Create profile**.
-
-2. For the **Platform**, choose **Windows 10 and later**, and for **Profile**, select **Device restrictions**.
-
-3. On the **Basics** tab, specify a name and description for your policy. Then choose **Next**.
-
-4. On the **Configuration settings** tab, scroll down and expand **Microsoft Defender Antivirus**.
-
-5. Set **Detect potentially unwanted applications** to **Audit**, and then choose **Next**. (You can turn off PUA protection, but by using audit mode, you'll be able to see detections.)
-
-6. On the **Assignments** tab, specify the users and groups to whom your policy should be applied, and then choose **Next**. (If you need help with assignments, see [Assign user and device profiles in Microsoft Intune](/mem/intune/configuration/device-profile-assign).)
-
-7. On the **Applicability Rules** tab, specify the OS editions or versions to include or exclude from the policy. For example, you can set the policy to be applied to all devices certain editions of Windows 10. Then choose **Next**.
-
-8. On the **Review + create** tab, review your settings, and, and then choose **Create**.
+See [Configure PUA protection in Microsoft Defender Antivirus](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md#configure-pua-protection-in-microsoft-defender-antivirus).
 
 ### Automated investigation and remediation
 
@@ -442,18 +388,14 @@ If you've worked through all the steps in this article and still need help, cont
 
 2. In the **Support Assistant** window, describe your issue, and then send your message. From there, you can open a service request.
 
-> [!TIP]
-> If you're looking for Antivirus related information for other platforms, see:
-> - [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md)
-> - [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
-> - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
-> - [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
-> - [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
-> - [Configure Defender for Endpoint on Android features](android-configure.md)
-> - [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md) 
-
 ## See also
 
 - [Manage Defender for Endpoint](manage-mde-post-migration.md)
 - [Manage exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
 - [Overview of Microsoft 365 Defender portal](/microsoft-365/security/defender-endpoint/use)
+- [Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md)
+- [Configure Microsoft Defender for Endpoint on iOS features](ios-configure-features.md) 
+- [Configure Defender for Endpoint on Android features](android-configure.md)
+
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

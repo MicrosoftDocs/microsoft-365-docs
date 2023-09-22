@@ -31,9 +31,6 @@ description: "Get the SharePoint site usage report to know how many files users 
 
 As a Microsoft 365 admin, the Reports dashboard shows you the activity overview across various products in your organization. It enables you to drill in to get more granular insight about the activities specific to each product. For example, you can get a high-level view of the value you are getting from SharePoint in terms of the total number of files that users store in SharePoint sites, how many files are actively being used, and the storage consumed across all these sites. Then, you can drill into the SharePoint site usage report to understand the trends and per site level details for all sites.
 
-> [!NOTE] 
-> The information and data on the Microsoft 365 Experience insights dashboard helps you to better understand and improve your users' overall experience with Microsoft 365. [Learn more](/microsoft-365/admin/misc/experience-insights-dashboard).
-
 ## How to get to the SharePoint site usage report
 
 1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page. 
@@ -91,3 +88,6 @@ The **SharePoint site usage** report can be viewed for trends over the last 7 da
 |Secure link for guest count  |The number of times documents or folders are shared using "specific people" on the site.  |
 |Secure link for member count  |The number of times documents or folders are shared using "specific people" on the site.  |
 |Root Web Template  |The template used for creating the site.  <br/> NOTE: If you want to filter the data by different site types, then export the data and use the Root Web Template column. |
+
+Note that you may see differences between the sites listed above and those listed on the [Active sites page](https://go.microsoft.com/fwlink/?linkid=2185220) in the [SharePoint admin center](https://go.microsoft.com/fwlink/?linkid=2185219), from Sites > Active sites because the certain site templates and URLs are not included as Active Sites. See [Manage sites in the SharePoint admin center](/sharepoint/manage-sites-in-new-admin-center) for more information. 
+ 

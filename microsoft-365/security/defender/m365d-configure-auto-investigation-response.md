@@ -2,15 +2,15 @@
 title: Configure automated investigation and response capabilities in Microsoft 365 Defender
 description: Configure automated investigation and response with self-healing in Microsoft 365 Defender
 search.appverid: MET150
-ms.author: dansimp
-author: dansimp
+ms.author: diannegali
+author: diannegali
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: m365d
 ms.localizationpriority: medium
-ms.date: 11/29/2022
+ms.date: 04/18/2023
 ms.collection:
 - m365-security
 - tier2
@@ -89,10 +89,9 @@ You can choose from several options to change settings for your automated invest
 | To do this  | Follow these steps  |
 |---------|---------|
 | Specify automation levels for groups of devices     | <ol><li>Set up one or more device groups. See [Create and manage device groups](../defender-endpoint/machine-groups.md). </li><li>In the Microsoft 365 Defender portal, go to **Permissions** > **Endpoints roles & groups** > **Device groups**.</li><li>Select a device group and review its **Automation level** setting. (We recommend using **Full - remediate threats automatically**). See [Automation levels in automated investigation and remediation capabilities](../defender-endpoint/automation-levels.md).</li><li>Repeat steps 2 and 3 as appropriate for all your device groups. </li></ol>     |
-| Turn automated investigation on or off     | *We recommend keeping automated investigation turned on. If you want to turn it off for some devices, we recommend [reviewing or changing the automation level for device groups](#review-or-change-the-automation-level-for-device-groups) instead of turning off automated investigation for your organization.* <ol><li>In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), go to **Settings** > **Endpoints** > **Advanced features**. </li><li>Turn the **Automated Investigation** toggle to **On** (or **Off**). <br/>Keep in mind that if you turn off automated investigation here, it will affect automated investigation and response actions for all devices. It will also affect [manual response actions for emails](../office-365-security/air-remediation-actions.md) (such as deleting email messages manually after they have arrived on devices). Rather than turning automated investigation off, try [changing the automation level for device groups](#review-or-change-the-automation-level-for-device-groups).</li><li>Go to **Auto remediation** and review your automated remediation levels for your devices. See [Automation levels in automated investigation and remediation capabilities](../defender-endpoint/automation-levels.md).        |
-
 
 ## Next steps
 
 - [Remediation actions in Microsoft 365 Defender](m365d-remediation-actions.md)
 - [Visit the Action center](m365d-action-center.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

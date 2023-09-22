@@ -1,9 +1,8 @@
 ---
 title: Shifts connectors
-author: samanro
-ms.author: samanro
-ms.reviewer: aaku
-manager: pamgreen
+author: lana-chin
+ms.author: heidip
+manager: serdars
 ms.topic: conceptual
 audience: admin
 ms.service: microsoft-365-frontline
@@ -14,11 +13,11 @@ ms.collection:
   - M365-collaboration
   - m365-frontline
   - highpri
-  - tier2
+  - teams-1p-app-admin
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 12/21/2022
+ms.date: 03/21/2023
 ---
 
 # Shifts connectors
@@ -125,7 +124,7 @@ Frontline workers can:
 - See their own and their team's shifts and schedules in Shifts.
 - Request time off, view time off information, and view their team's open shifts in Shifts.
 - View and post timecard entries in Shifts.
-- Request open shifts and swap shifts in Shifts.
+- Request open shifts, swap shifts, and offer a shift to a specific teammate in Shifts.
 - Set their availability in Shifts on Teams mobile.
 
 The following actions are currently not supported:

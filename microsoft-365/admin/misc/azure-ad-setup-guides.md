@@ -1,7 +1,7 @@
 ---
 title: "Azure Active Directory setup guides"
-ms.author: Kwekua
-author: Kwekua
+ms.author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 12/13/2021
 audience: Admin
@@ -41,13 +41,13 @@ This catalog contains some basic security features you can use to ensure your us
 
 ### Licensing
 
-An Azure Active Directory P2 license is required to utilize the security features in this catalog.
+Using features in this catalog requires either Microsoft Entra ID Governance or Microsoft Azure AD Premium P2 license. To find the right license for your requirements, see [Compare generally available features of Microsoft Azure AD](https://www.microsoft.com/security/business/identity-access-management/azure-ad-pricing).
 
 [Open the Identity security for Teams catalog](https://portal.office.com/AdminPortal/home?Q=azuredocs#/teamsidentity)
 
 ## Identity Governance
 
-This catalog is designed to help customers with Azure AD P2 functionality, including access reviews, PIM, entitlement management (ELM), Access Reviews, HR-driven user provisioning, and life cycle workflows.
+This catalog is designed to help customers with Microsoft Entra ID Governance or Azure AD P2 functionality, including access reviews, PIM, entitlement management (ELM), Access Reviews, HR-driven user provisioning, and life cycle workflows.
 
 ### PIM
 
@@ -72,7 +72,7 @@ Easily manage your users' lifecycle in Azure AD by creating custom workflows to 
 [Open the Identity Governance setup guide](https://admin.microsoft.com/adminportal/home?Q=azuredocs#/modernonboarding/identitygovernance)
 
 > [!NOTE]
-> Azure Active Directory P2 license is required to utilize the security features in this catalog.
+> A Microsoft Entra ID Governance or Azure Active Directory P2 license is required to utilize the security features in this catalog.
 
 ## Azure Active Directory deployment  
 
@@ -110,6 +110,8 @@ This setup guide is designed to help you enable and configure self service passw
 
 SSPR requires one of the following licenses:
 
+- Microsoft Entra ID Governance
+
 - Azure Active Directory P1 or P2
 
 - Microsoft 365 Business Premium
@@ -122,11 +124,11 @@ SSPR requires one of the following licenses:
 
 ## Configure multi-factor authentication (MFA)
 
-For customers with Azure P1 or Azure P2, we provide customizable Conditional Access templates that include the most common and least intrusive security standards. When Azure licensing isn’t available, we provide a one-click solution to enable Security Defaults, a baseline protection policy for all users, or we provide steps to enable legacy (per-user) MFA.
+For customers with Entra ID Governance,Azure P1, or Azure P2, we provide customizable Conditional Access templates that include the most common and least intrusive security standards. When Azure licensing isn’t available, we provide a one-click solution to enable Security Defaults, a baseline protection policy for all users, or we provide steps to enable legacy (per-user) MFA.
 
 ### Licensing
 
-Conditional Access requires an Azure Active Directory P1 or P2 license. Security defaults and per-user MFA are included with all Microsoft 365 subscriptions.
+Conditional Access requires Microsoft Entra ID Governance or an Azure Active Directory P1 or P2 license. Security defaults and per-user MFA are included with all Microsoft 365 subscriptions.
 
 [Open the multi-factor authentication (MFA) guide](https://admin.microsoft.com/adminportal/home?Q=azuredocs#/modernonboarding/mfasetupguide)
 

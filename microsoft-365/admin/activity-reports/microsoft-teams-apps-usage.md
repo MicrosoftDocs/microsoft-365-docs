@@ -44,7 +44,7 @@ The Teams app usage report is available in the Microsoft 365 admin center and th
 
 - How many users in your environment have installed at least one app?
 - How many users in your environment have used at least one app?
-- How many users are using an app across platforms (Windows, Mac, Web, etc)?
+- How many users are using an app across platforms (Windows, Mac, Web, etc.)?
 - How many apps has each user used?
 
 ## How to get to the Microsoft Teams apps usage report
@@ -70,7 +70,7 @@ You can view the **App usage** in the Teams app usage report by choosing the **A
 
 :::image type="content" source="../../media/teams-apps-usage-tab.png" alt-text="Teams user activity." lightbox="../../media/teams-apps-usage-tab.png":::
 
-On the top of the report, you will see three charts describing cross-app trends across your organization.
+On the top of the report, you'll see three charts describing cross-app trends across your organization.
 
 - Apps installed
 - Apps used
@@ -106,7 +106,7 @@ This table shows you per-app view with the following metrics for each app. A sub
 
 |Metric|Definition|Included by default?|
 |---|---|---|
-|App ID|The external App identifier present in the app manifest.|Yes|
+|App ID|The external App identifiers present in the app manifest.|Yes|
 |Last used date|The date when that app was last used by anyone in your organization.|Yes|
 |Teams using this app|The number of distinct Teams teams that have at least one user using this app.|Yes|
 |Users using this app|The number of distinct users in your organization that are using this app.|Yes|
@@ -170,7 +170,7 @@ This table shows you per-user view with the following metrics for each app. A su
 
 ## Managing apps in the Teams Admin Center
 
-For more information about how to manage your Teams apps, please refer to [About apps in Microsoft Teams](/microsoftteams/deploy-apps-microsoft-teams-landing-page.md).
+For more information about how to manage your Teams apps, please refer to [About apps in Microsoft Teams](/microsoftteams/deploy-apps-microsoft-teams-landing-page).
 
 To link an app in this report to the Manage Apps experience in Teams Admin Center, you can use the following:
 

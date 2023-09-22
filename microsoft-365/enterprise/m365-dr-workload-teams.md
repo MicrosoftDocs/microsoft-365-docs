@@ -12,6 +12,7 @@ ms.date: 09/20/2022
 ms.reviewer: dmwmsft
 ms.custom:
 - it-pro
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 ---
@@ -24,7 +25,7 @@ ms.collection:
 
 Required Conditions:
 
-1. _Tenant_ has a sign up country included in _Local Region Geography_, the European Union or the United States.
+1. _Tenant_ has a sign up country/region included in _Local Region Geography_, the European Union or the United States.
 
 **Commitment:**
 
@@ -34,7 +35,7 @@ _For current language please refer to the [Privacy and Security Product Terms](h
 
 Required Conditions:
 
-1. _Tenant_ has a sign-up country included in _Local Region Geography_ or _Expanded Local Region Geography_.
+1. _Tenant_ has a sign-up country/region included in _Local Region Geography_ or _Expanded Local Region Geography_.
 1. _Tenant_ has a valid Advanced Data Residency subscription for all users in the _Tenant_
 1. The Microsoft Teams subscription customer data is provisioned in _Local Region Geography_ or _Expanded Local Region Geography_.
 
@@ -115,7 +116,7 @@ In addition to Exchange Online, SharePoint Online, and OneDrive for Business; Mi
 - Teams chat messages, including private messages and channel messages.
 - Teams images used in chats.
 
-Teams files are stored in SharePoint Online and Teams chat files are stored in OneDrive for Business. Voicemail, calendar, and contacts are stored in Exchange Online. In many cases, Exchange Online, SharePoint Online, and OneDrive for Business are already used by the customer in the local datacenter _Geography_ and are also part of the Microsoft 365 migration program for eligible customer countries.
+Teams files are stored in SharePoint Online and Teams chat files are stored in OneDrive for Business. Voicemail, calendar, and contacts are stored in Exchange Online. In many cases, Exchange Online, SharePoint Online, and OneDrive for Business are already used by the customer in the local datacenter _Geography_ and are also part of the Microsoft 365 migration program for eligible customer countries/regions.
 
 ### How can I determine customer data location?
 You can find the actual data location in _Tenant_ Admin Center. As a _Tenant_ administrator you can find the actual data location, for committed data, by navigating to Admin|Settings|Org Settings|Organization Profile|Data Location.

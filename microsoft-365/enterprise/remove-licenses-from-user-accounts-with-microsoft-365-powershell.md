@@ -15,11 +15,12 @@ ms.collection:
 - Ent_O365
 f1.keywords:
 - CSH
-ms.custom: 
-- PowerShell
-- Ent_Office_Other
-- LIL_Placement
-- O365ITProTrain
+ms.custom:
+  - PowerShell
+  - Ent_Office_Other
+  - LIL_Placement
+  - O365ITProTrain
+  - has-azure-ad-ps-ref
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
 
 description: "Explains how to use PowerShell to remove Microsoft 365 licenses that were previously assigned to users."

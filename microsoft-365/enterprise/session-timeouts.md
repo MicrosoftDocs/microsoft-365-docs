@@ -2,7 +2,7 @@
 title: "Session timeouts for Microsoft 365"
 ms.author: tracyp
 author: MSFTTracyP
-manager: scotv
+manager: dansimp
 ms.date: 6/29/2018
 audience: Admin
 ms.topic: reference
@@ -43,4 +43,4 @@ The following table lists the session lifetimes for Microsoft 365 services:
 |Outlook Web App  <br/> |6 hours.  <br/> You can change this value by using the  _ActivityBasedAuthenticationTimeoutInterval_ parameter in the [Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig) cmdlet.  <br/> |
 |Azure Active Directory  <br/> (Used by Office and Microsoft 365 applications in Windows clients with modern authentication enabled)  <br/> | Modern authentication uses access tokens and refresh tokens to grant user access to Microsoft 365 resources using Azure Active Directory. An access token is a JSON Web Token provided after a successful authentication and is valid for 1 hour. A refresh token with a longer lifetime is also provided. When access tokens expire, Office clients use a valid refresh token to obtain a new access token. This exchange succeeds if the user's initial authentication is still valid.  <br/>  Refresh tokens are valid for 90 days, and with continuous use, they can be valid until revoked.  <br/>  Refresh tokens can be invalidated by several events such as:  <br/>  User's password has changed since the refresh token was issued.  <br/>  An administrator can apply conditional access policies that restrict access to the resource the user is trying to access.  <br/> |
 |SharePoint and OneDrive mobile apps for Android, iOS, and Windows 10  <br/> |The default lifetime for the access token is 1 hour. The default max inactive time of the refresh token is 90 days.  <br/> [Learn more about tokens and how to configure token lifetimes](/azure/active-directory/active-directory-configurable-token-lifetimes) <br/> To revoke the refresh token, you can reset the user's Microsoft 365 password  <br/> |
-|Yammer with Microsoft 365 Sign-In  <br/> |Lifetime of the browser. If users close the browser and access Yammer in a new browser, Yammer will re-authenticate them with Microsoft 365. If users use third-party browsers that cache cookies, they may not need to re-authenticate when they reopen the browser.  <br/> > [!NOTE]> This is valid only for networks using Microsoft 365 Sign-In for Yammer.           |
+|Viva Engage with Microsoft 365 Sign-In  <br/> |Lifetime of the browser. If users close the browser and access Viva Engage in a new browser, Viva Engage will re-authenticate them with Microsoft 365. If users use third-party browsers that cache cookies, they may not need to re-authenticate when they reopen the browser.  <br/> > [!NOTE]> This is valid only for networks using Microsoft 365 Sign-In for Viva Engage.           |

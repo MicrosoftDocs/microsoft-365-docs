@@ -29,6 +29,7 @@ ms.subservice: mde
 **Applies to:**
 - Windows Server 2012 R2
 - Windows Server 2016
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > [!NOTE]
@@ -112,3 +113,4 @@ If you're using Microsoft Defender for Cloud, you can leverage the automated upg
 ## Group Policy configuration
 
 For configuration using Group Policy, ensure you're using the latest ADMX files in your central store to access the correct Defender for Endpoint policy options. Please reference [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) and download the latest files **for use with Windows 10**.
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

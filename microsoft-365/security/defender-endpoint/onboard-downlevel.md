@@ -25,6 +25,8 @@ ms.date: 12/18/2020
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -131,7 +133,7 @@ Once completed, you should see onboarded Windows servers in the portal within an
 
 ## Onboard Windows servers through Microsoft Defender for Cloud
 
-1. In the Microsoft 365 Defender navigation pane, select **Settings** > **Device management** > **Onboarding**.
+1. In the Microsoft 365 Defender navigation pane, select **Settings** > **Endpoints** > **Device management** > **Onboarding**.
 
 2. Select **Windows Server 2008 R2 SP1** as the operating system.
 
@@ -336,3 +338,4 @@ You can use either of the following methods:
     # Reload the configuration and apply changes
     $AgentCfg.ReloadConfiguration()
     ```
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

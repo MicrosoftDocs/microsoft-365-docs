@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: armanv, nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
@@ -21,7 +21,7 @@ ms.custom:
 - commerce_billing
 - okr_SMB
 - AdminSurgePortfolio
-ms.date: 12/08/2022
+ms.date: 03/31/2023
 ---
 
 # How to pay for your Microsoft business subscription with a billing profile
@@ -31,13 +31,13 @@ When you buy a subscription, you pay for it with a billing profile. The billing 
 If you're not sure if your account has a billing profile, see [Understand billing profiles](manage-billing-profiles.md). If you don't have a billing profile, see [How to pay for your subscription](pay-for-your-subscription.md).
 
 > [!IMPORTANT]
-> Starting on April 1, 2023, we will stop accepting checks as a payment method for subscriptions paid by invoice. Beginning on that date, pay by check will no longer be available as a payment option, and check payment instructions will be removed from invoices. You can still pay for your invoice by electronic funds transfer (EFT). See your invoice for EFT payment information. If you're an existing customer who currently pays by check, you have until September 30, 2023 to change to paying by EFT, and avoid possible service disruption.
+> As of April 1, 2023, we no longer accept checks as a payment method for subscriptions paid by invoice. Pay by check is no longer available as a payment option, and check payment instructions have been removed from invoices. You can still pay for your invoice by wire transfer. See your invoice for wire transfer payment information. If you're an existing customer who currently pays by check, you have until September 30, 2023 to change to paying by wire transfer, and avoid possible service disruption.
 
 ## Paying with recurring billing turned on or off
 
 By default, recurring billing is automatically turned on for all paid subscriptions. Every billing period, we automatically charge the payment method associated with the billing profile to pay for any subscriptions that use that billing profile. If your payment method is declined, you can use the **Pay now** button on the invoice summary in the Microsoft 365 admin center to make a one-time payment for your subscription.
 
-If recurring billing is turned off for a billing profile, you can use the **Pay now** button on the invoice summary in the admin center to pay for it every billing period, regardless of what payment method is linked with the billing profile. You can also pay by check or electronic funds transfer (EFT). Instructions for how to do that are included on the PDF copy of your invoice.
+If recurring billing is turned off for a billing profile, you can use the **Pay now** button on the invoice summary in the admin center to pay for it every billing period, regardless of what payment method is linked with the billing profile. You can also pay by wire transfer. Instructions for how to do that are included on the PDF copy of your invoice.
 
 ## Directives from the Reserve Bank of India
 
@@ -76,7 +76,7 @@ Refunds are treated as a regular charge and are refunded to your bank account.
 
 ## Paying by invoice
 
-If you have a billing profile that is set up to be paid by invoice, you can pay for your subscription with a check or EFT. You can also use a credit or debit card to make a one-time payment by using the **Pay now** button on your invoice.
+If you have a billing profile that is set up to be paid by invoice, you can pay for your subscription with a wire transfer. You can also use a credit or debit card to make a one-time payment by using the **Pay now** button on your invoice.
 
 To be eligible to pay by invoice, you must:
 
@@ -88,24 +88,19 @@ If a credit check is required, you're notified when you buy your subscription. I
 
 If your billing profile is backed by an invoice, you get an email when your billing statement is ready to view. This email doesn't contain a copy of your billing statement. However, you can choose to [receive your organization's invoices as email attachments](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments). Your billing statement includes details about your options for making a payment, and where to send it. If you enter a purchase order (PO) number in your billing profile, the number appears on your billing statement. For information about accessing billing statements, see [View your bill or invoice](view-your-bill-or-invoice.md).
 
-## Where do I send my check or EFT payment?
+## Where do I send my wire transfer payment?
 
 [Check your invoice](view-your-bill-or-invoice.md) for payment instructions for your country or region. If you're not sure how much you owe, you can check your bill and billing history online on the **Invoices** tab of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.
 
-> [!NOTE]
-> Paying by check is only available in a few countries.
-
-## Check or wire transfer payment processing time
-
-Payments made by check are posted three to five business days after the check clears your bank. You can contact your bank to confirm the check status.
+## Wire transfer payment processing time
 
 Payments made by wire transfer have processing times that vary, depending on the type of transfer:
 
 - ACH domestic transfers - Five business days. Two to three days to arrive, plus two days to post.
-- Wire transfers (domestic) - Four business days. Two days to arrive, plus two days to post.
-- Wire transfers (international) - Seven business days. Five days to arrive, plus two days to post.
+- Wire transfer (domestic) - Four business days. Two days to arrive, plus two days to post.
+- Wire transfer (international) - Seven business days. Five days to arrive, plus two days to post.
 
-If your account is approved for payment by check or wire transfer, the instructions for payment are on the invoice.
+If your account is approved for payment by wire transfer, the instructions for payment are on the invoice.
 
 ## Can I pay my invoice online?
 

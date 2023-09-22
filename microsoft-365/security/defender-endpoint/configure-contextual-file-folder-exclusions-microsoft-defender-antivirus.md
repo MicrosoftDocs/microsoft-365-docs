@@ -22,6 +22,11 @@ search.appverid: met150
 
 # Contextual file and folder exclusions
 
+**Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
 This article/section describes the contextual file and folder exclusions capability for Microsoft Defender Antivirus on Windows. This capability allows you to be more specific when you define under which context Microsoft Defender Antivirus shouldn't scan a file or folder, by applying restrictions.
 
 ## Overview
@@ -156,3 +161,4 @@ To exclude a file or folder only when accessed by a specific process, create a n
 After constructing your desired contextual exclusions, you can use your existing management tool to configure file and folder exclusions using the string you created.
 
 See: [Configure and validate exclusions for Microsoft Defender Antivirus scans](configure-exclusions-microsoft-defender-antivirus.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

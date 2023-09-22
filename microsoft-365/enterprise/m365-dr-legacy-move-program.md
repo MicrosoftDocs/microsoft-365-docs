@@ -12,6 +12,7 @@ ms.date: 09/20/2022
 ms.reviewer: dmwmsft
 ms.custom:
 - it-pro
+ms.localizationpriority: medium
 ms.collection:
 - M365-subscription-management
 ---
@@ -21,46 +22,40 @@ ms.collection:
 > [!NOTE]
 > Coinciding with the launch of the Microsoft 365 Advanced Data Residency add-on, the Move Program will no longer be offered during the launch of new local datacenter regions.  Our most recent local datacenter region launch in Qatar (August 2022) is the final region to receive Move Program benefits. The following information is still valid for regions that were part of Move Program and all customers currently opted-in for migration will be processed.  For more details, see [the ADR page](advanced-data-residency.md).
 
-## How to Request your Data Move - FINAL OPPORTUNITY
 
-With the launch of the Microsoft 365 Advanced Data Residency add-on and associated changes to the Move Program, we are providing a final opportunity for eligible commercial and public sector customers to receive a complimentary _Tenant_ migration into their local datacenter region.  For a limited time, customers may only opt-in for complimentary migration from macro region into a local datacenter region that matches initial signup country.  _Tenant_ migrations may take up to 24 months to complete, commencing at request deadline date.  See table below for a list of eligible countries and associated dates.
-
-Eligible customers will see a page in the Microsoft 365 admin center which will allow them to request to have their applicable customer data moved to their new datacenter region.
-
-To access the page in the Microsoft 365 admin center, in the navigation pane on the left, expand **Settings**, and then click **Org Settings**. Select the tab **Organization profile**, then select the option **Data residency**.
-
-You will not see this section if your _Tenant_ is not eligible for the Microsoft 365 Move Program. If your organization has data residency requirements and you need to request migration, mark the checkbox and then Save.
 
 ## When Can I Request a Move (final opt-in opportunity)
 
-|**Customers with signup country in**|**Request period begins**|**Request deadline**|
-|:-----|:-----|:-----|
-| Japan <br/> | Nov. 1, 2022  <br/> | Apr. 30, 2023  <br/> |
-| Australia, New Zealand, Fiji <br/> | Nov. 1, 2022  <br/> | Apr. 30, 2023  <br/> |
-| India <br/> | Nov. 1, 2022  <br/> | Apr. 30, 2023  <br/> |
-| Canada <br/> | Nov. 1, 2022  <br/> | Apr. 30, 2023  <br/> |
-| United Kingdom <br/> | Nov. 1, 2022  <br/> | Apr. 30, 2023  <br/> |
-| South Korea <br/> | Nov. 1, 2022  <br/> | Apr. 30, 2023  <br/> |
-| France <br/> | Nov. 1, 2022  <br/> | Apr. 30, 2023  <br/> |
-| United Arab Emirates <br/> | Nov. 1, 2022  <br/> | Apr. 30, 2023  <br/> |
-| South Africa <br/> | Nov. 1, 2022  <br/> | Apr. 30, 2023  <br/> |
-| Switzerland, Liechtenstein <br/> | Nov. 1, 2022  <br/> | Apr. 30, 2023  <br/> |
-| Norway <br/> | Nov. 1, 2022  <br/> | Apr. 30, 2023  <br/> |
-| Germany <br/> | Nov. 1, 2022  <br/> | Apr. 30, 2023  <br/> |
-| Brazil <br/> | Nov. 1, 2022  <br/> | Apr. 30, 2023  <br/> |
-| Sweden <br/> | Nov. 1, 2022  <br/> | Apr. 30, 2023  <br/> |
+|**Customers with signup country/region in**|**Request period begins**|**Request deadline**|**Migration Commitment**|
+|:-----|:-----|:-----|:-----|
+| Japan <br/> | Nov. 1, 2022  <br/> | Apr. 30, 2023  <br/> | May 1, 2025  <br/> |
+| Australia, New Zealand, Fiji <br/> | Nov. 1, 2022  <br/> | Apr. 30, 2023  <br/> | May 1, 2025  <br/> |
+| India <br/> | Nov. 1, 2022  <br/> | Apr. 30, 2023  <br/> | May 1, 2025  <br/> |
+| Canada <br/> | Nov. 1, 2022  <br/> | Apr. 30, 2023  <br/> | May 1, 2025  <br/> |
+| United Kingdom <br/> | Nov. 1, 2022  <br/> | Apr. 30, 2023  <br/> | May 1, 2025  <br/> |
+| South Korea <br/> | Nov. 1, 2022  <br/> | Apr. 30, 2023  <br/> | May 1, 2025  <br/> |
+| France <br/> | Nov. 1, 2022  <br/> | Apr. 30, 2023  <br/> | May 1, 2025  <br/> |
+| United Arab Emirates <br/> | Nov. 1, 2022  <br/> | Apr. 30, 2023  <br/> | May 1, 2025  <br/> |
+| South Africa <br/> | Nov. 1, 2022  <br/> | Apr. 30, 2023  <br/> | May 1, 2025  <br/> |
+| Switzerland, Liechtenstein <br/> | Nov. 1, 2022  <br/> | Apr. 30, 2023  <br/> | May 1, 2025  <br/> |
+| Norway <br/> | Nov. 1, 2022  <br/> | Apr. 30, 2023  <br/> | May 1, 2025  <br/> |
+| Germany <br/> | Nov. 1, 2022  <br/> | Apr. 30, 2023  <br/> | May 1, 2025  <br/> |
+| Brazil <br/> | Nov. 1, 2022  <br/> | Apr. 30, 2023  <br/> | May 1, 2025  <br/> |
+| Sweden <br/> | Nov. 1, 2022  <br/> | Apr. 30, 2023  <br/> | May 1, 2025  <br/> |
 
-## Remaining Countries in the Move Program
+## Remaining Countries/regions in the Move Program
 
 > [!NOTE]
-> Even though the Move Program is officially ending, we still have some in-flight geographies that we will see through to completion, based on the original 24-month migration commitment. Please refer to the table below for the remaining countries and their migration deadlines.
+> Even though the Move Program is officially ending, we still have some in-flight geographies that we will see through to completion, based on the original 24-month migration commitment. Please refer to the table below for the remaining countries/regions and their migration deadlines.
 
-|**Customers with signup country in**|**Original Opt-in: migration commitment date**|**Final Opt-in (above): migration commitment date**|
+|**Customers with signup country/region in**|**Original Opt-in: migration commitment date**|**Final Opt-in (above): migration commitment date**|
 |:-----|:-----|:-----|
 | Germany <br/> | May 1, 2023  <br/> | May 1, 2025  <br/> |
 | Brazil <br/> | June 1, 2023  <br/> | May 1, 2025  <br/> |
 | Sweden <br/> | June 1, 2024  <br/> | May 1, 2025  <br/> |
 | Qatar <br/> | March 1, 2025  <br/> | Not Applicable  <br/> |
+
+
 
 ### Data Residency Option Moving Forward
 
@@ -72,21 +67,12 @@ Microsoft will use reasonable efforts to try to complete a legacy Move Program m
 
 Data moves are a back-end service operation with minimal impact to end-users. We adhere to the [Microsoft Online Services Service Level Agreement (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897) for availability so there is nothing that customers need to prepare for or to monitor during the move. Notification of any service maintenance is done if needed.
 
-During the migration process, Microsoft temporarily copies your address book data into Microsoft global resources where it is encrypted and only used to support business continuity and disaster recovery operations (BCDR). After Microsoft has completed the mailbox data moves, Microsoft deletes that temporary data from the global resources. Microsoft continues to invest in global and regional resources on a regular basis. In calendar year 2023, Microsoft plans to utilize regional resources for BCDR purposes during the migration process.
-
 ## Data move general FAQ
 
 >[!NOTE]
 >The following Q&A content relates to Move Program customers **only**.
 
 Here are answers to general questions about moving applicable  customer data at rest to a new datacenter geo.
-
-### What customers are eligible to request a move?
-<details><summary>Click to expand</summary>
-
-Existing Microsoft 365 commercial customers who selected a country eligible for the new datacenter geo will be able to request a move. The program exists only for _Tenants_ with an eligible country code assigned to the Microsoft 365 _Tenant_ to migrate applicable customer data at rest for eligible workloads to the corresponding Microsoft 365 datacenter geo. For more information, see [Microsoft 365 Multi-Geo availability](microsoft-365-multi-geo.md#microsoft-365-multi-geo-availability) to confirm country eligibility.
-
-</details>
 
 ### How do we define Applicable Customer Data?
 <details><summary>Click to expand</summary>
@@ -108,7 +94,7 @@ In addition to Exchange Online, SharePoint Online, and OneDrive for Business; Mi
 - Teams chat messages, including private messages and channel messages.
 - Teams images used in chats.
 
-Teams files are stored in SharePoint Online and Teams chat files are stored in OneDrive for Business. Voicemail, calendar, and contacts are stored in Exchange Online. In many cases, Exchange Online, SharePoint Online, and OneDrive for Business are already used by the customer in the local datacenter geo and are also part of the Microsoft 365 migration program for eligible customer countries.
+Teams files are stored in SharePoint Online and Teams chat files are stored in OneDrive for Business. Voicemail, calendar, and contacts are stored in Exchange Online. In many cases, Exchange Online, SharePoint Online, and OneDrive for Business are already used by the customer in the local datacenter geo and are also part of the Microsoft 365 migration program for eligible customer countries/regions.
 
 </details>
 
@@ -141,41 +127,6 @@ Some of the Microsoft 365 services may be located in different geos for some exi
 <details><summary>Click to expand</summary>
 
 Customer _Tenant_ admins can view the data location card in the Admin Center at any time to confirm the applicable customer data at rest location for each service, specifically for their _Tenant_. We also publish the location of datacenter geos, datacenters, and location of Microsoft 365 customer data in [Where your Microsoft 365 customer data is stored](https://office.com/datamaps) as a reference for the current default applicable customer data at rest locations for new _Tenant_. You can verify the location of your customer data at rest via the Data Location section under your Organization Profile in the Microsoft 365 admin center.
-
-</details>
-
-### When will I be able to request a move?
-<details><summary>Click to expand</summary>
-
-Please refer to the [Data Residency Legacy Move Program](m365-dr-legacy-move-program.md) page for supported timeframes for your datacenter geo.
-
-</details>
-
-### How can I request to be moved?
-<details><summary>Click to expand</summary>
-
-Eligible customers will see a page in their [Microsoft 365 admin center](https://admin.microsoft.com/). Please see [Data Residency Legacy Move Program](m365-dr-legacy-move-program.md) for instructions on how to request a move.
-
-</details>
-
-### Can I change my selection after requesting a move?
-<details><summary>Click to expand</summary>
-
-It is not possible for us to remove you from the process after you submit your request.
-
-</details>
-
-### What happens if I do not request a move before the deadline?
-<details><summary>Click to expand</summary>
-
-We cannot accept requests for migration after the open enrollment period.
-
-</details>
-
-### What if I want to move my data in order to get better network performance?
-<details><summary>Click to expand</summary>
-
-Physical proximity to a Microsoft 365 datacenter is not a guarantee for a better networking performance. There are many factors and components that affect the network performance between the end user and the Microsoft 365 service. For more information about this and performance tuning, see [Network planning and performance tuning for Microsoft 365](network-planning-and-performance.md).
 
 </details>
 
@@ -214,24 +165,11 @@ Watch the Microsoft 365 Message Center for confirmation that the move of each se
 
 </details>
 
-### I am a Microsoft 365 customer in one of the new datacenter geos, but when I signed up, I selected a different country. How can I be moved to the new datacenter geo?
-<details><summary>Click to expand</summary>
-
-It is not possible to change the signup country associated with your _Tenant_. Instead, you need to create a new Microsoft 365 _Tenant_ with a new subscription and manually move your users and data to the new _Tenant_.
-
-</details>
 
 ### What happens if we are in process of email data migration to Microsoft 365 during the Exchange Online move?
 <details><summary>Click to expand</summary>
 
 This is a very common scenario and is fully supported. Cloud migration between datacenter geos does not interfere with any on-premises to cloud mailbox migrations.
-
-</details>
-
-### Can I pilot some users?
-<details><summary>Click to expand</summary>
-
-You can create a separate trial _Tenant_ to test connectivity, but the trial _Tenant_ can't be combined in any way with your existing _Tenant_.
 
 </details>
 
@@ -251,23 +189,13 @@ No, this is not possible. Customers who have been moved to new geo datacenters c
 
 </details>
 
-### Will Microsoft 365 _Tenants_ hosted in the new datacenters be available to users outside of the country?
+### Will Microsoft 365 _Tenants_ hosted in the new datacenters be available to users outside of the country/region?
 <details><summary>Click to expand</summary>
 
-Yes. Microsoft maintains a large global network with public Internet connections in more than 130 locations in 35 countries around the world with peering agreements with more than 2,700 Internet Service Providers (ISPs). Users will be able to access the datacenters from wherever they are on the Internet.
+Yes. Microsoft maintains a large global network with public Internet connections in more than 130 locations in 35 countries/regions around the world with peering agreements with more than 2,700 Internet Service Providers (ISPs). Users will be able to access the datacenters from wherever they are on the Internet.
 
 </details>
 
-### My _Tenant_ has configured the Multi Geo add-on. Can I still enroll in my _Tenant_ in the Microsoft 365 Move Program? to change my default geo and move any user not in a satellite region to the new default geo?
-<details><summary>Click to expand</summary>
-
-Yes, your _Tenant_ is eligible to enroll but there are significant considerations as tenant-level move is not fully supported for customers that have configured [Multi-Geo](https://aka.ms/multi-geo).
-
-SharePoint Online and OneDrive for Business cannot migrate to the new datacenter geo at the _Tenant_ level through this program. The customer administrator can configure OneDrive for Business shares to move to any available region using Multi-Geo, but the default location for the _Tenant_ cannot be changed once Multi-Geo has been configured for a _Tenant_.
-
-For customers that opt-in for migration - we will move all Exchange Online mailboxes from your current default geo to your new local datacenter geo and update the default Exchange Online region. We will not move any EXO mailboxes configured in Multi Geo satellite regions to continue to respect satellite region data residency as you"ve intended.  Teams chat service _Tenant_ migrations for customers with a Multi Geo configuration behave similarly to Exchange Online.
-
-</details>
 
 ### I have public folders deployed in my _Tenant_. What will be the impact on public folder access during or after the move?
 <details><summary>Click to expand</summary>

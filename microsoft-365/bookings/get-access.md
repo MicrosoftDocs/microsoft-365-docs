@@ -3,7 +3,7 @@ title: "Get access to Microsoft Bookings"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 06/18/2020
+ms.date: 09/13/2023
 audience: Admin
 ms.topic: article
 ms.service: bookings
@@ -11,7 +11,6 @@ ms.localizationpriority: medium
 ms.collection: 
 - Tier1
 - scotvorg
-ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: "Learn how to get access to the Bookings feature in Microsoft 365."
 ---
 
@@ -21,7 +20,7 @@ This topic describes how to get access to Bookings for the first time. It also t
 
 ## Access Bookings for the first time
 
-If your IT administrator has granted you [access to Bookings](/microsoft-365/bookings/turn-bookings-on-or-off), you can access the app via Office online.
+If your IT administrator has granted you [access to Bookings](/microsoft-365/bookings/turn-bookings-on-or-off), you can access the app via Microsoft 365 on the web.
 
 The first time you use [Bookings](https://outlook.office.com/bookings/onboarding) you'll create a calendar and set up your business.
 
@@ -31,7 +30,7 @@ The first time you use [Bookings](https://outlook.office.com/bookings/onboarding
 
 1. Enter your business name and business type and select **Continue**.
 
-You're now ready to set up Bookings for your organization. You can get to the Bookings page with this [link](https://outlook.office.com/bookings/onboarding), from the app launcher or from office.com. Use the following topics to continue setting up your Bookings features.
+You're ready to go. You can get to the Bookings page with this [link](https://outlook.office.com/bookings/onboarding), from the app launcher or from office.com. Use the following topics to continue setting up your Bookings features.
 
 - [Enter your business information](enter-business-information.md)
 - [Add staff to Bookings](add-staff.md)

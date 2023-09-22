@@ -33,9 +33,6 @@ The Microsoft 365 Reports dashboard shows you the activity overview across the p
   
 For example, you can use the **Active Users** report to find out how many product licenses are being used by individuals in your organization, and drill down for information about which users are using what products. This report can help administrators identify underutilized products or users that might need additional training or information.
 
-> [!NOTE] 
-> The information and data on the Microsoft 365 Experience insights dashboard helps you to better understand and improve your users' overall experience with Microsoft 365. [Learn more](/microsoft-365/admin/misc/experience-insights-dashboard).
-
 ## How to get to the Active Users report
 
 1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page. 
@@ -63,6 +60,6 @@ You can also export the report data into an Excel .csv file, by selecting the Ex
 
 You can change what information is displayed in the grid table with column controls.
 
-If your subscription is operated by 21Vianet, then you will not see Yammer.
+If your subscription is operated by 21Vianet, then you will not see Viva Engage.
 
 If your organization's policies prevents you from viewing reports where user information is identifiable, you can change the privacy setting for all these reports. Check out the **How do I hide user level details?** section in [Activity Reports in the Microsoft 365 admin center](activity-reports.md).  

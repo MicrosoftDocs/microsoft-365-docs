@@ -7,12 +7,12 @@ brand: m365
 
 metadata:
   title: Microsoft 365 admin center help # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Set up and manage Office 365 and Microsoft 365 in the Microsoft 365 admin center. # Required; article description that is displayed in search results. < 160 chars.
+  description: Set up and manage Microsoft 365 in the Microsoft 365 admin center. # Required; article description that is displayed in search results. < 160 chars.
   ms.service: microsoft-365-business #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: hub-page # Required
   author: kwekua #Required; your GitHub user alias, with correct capitalization.
   ms.author: kwekua #Required; microsoft alias of author; optional team alias.
-  ms.date: 08/26/2022
+  ms.date: 09/12/2023
   ms.localizationpriority: high
   ms.custom: 
   - VSBFY23
@@ -66,7 +66,7 @@ productDirectory:
     # Card
     - title: Install apps
       imageSrc: /office/media/icons/deploy-blue.svg
-      summary:  Install Office and other Microsoft apps.
+      summary:  Install Microsoft 365 apps.
       url: setup/install-applications.md
     # Card
     - title: Migrate data
@@ -112,5 +112,5 @@ additionalContent:
           url:  manage/share-calendars-with-external-users.md
         # Card
         - title: Troubleshoot
-          summary: Access resources to help you troubleshoot and fix problems with your Office products or services.
+          summary: Access resources to help you troubleshoot and fix problems with your Microsoft 365 products or services.
           url: /office/troubleshoot/

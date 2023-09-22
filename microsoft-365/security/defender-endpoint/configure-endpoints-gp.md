@@ -1,11 +1,7 @@
 ---
 title: Onboard Windows devices to Microsoft Defender for Endpoint via Group Policy
 description: Use Group Policy to deploy the configuration package on Windows devices so that they are onboarded to the service.
-keywords: configure devices using group policy, device management, configure Microsoft Defender for Endpoint devices, onboard Microsoft Defender for Endpoint devices, group policy
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
@@ -16,7 +12,7 @@ ms.collection:
 - tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.date: 12/07/2021
+ms.date: 09/15/2023
 ms.subservice: mde
 search.appverid: met150
 ---
@@ -30,6 +26,7 @@ search.appverid: met150
 **Applies to:**
 
 - Group Policy
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -43,7 +40,7 @@ search.appverid: met150
 > [!NOTE]
 > If you're using the new, unified Microsoft Defender for Endpoint solution for Windows Server 2012 R2 and 2016, please ensure you are using the latest ADMX files in your central store to get access to the correct Microsoft Defender for Endpoint policy options. Please reference [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) and download the latest files **for use with Windows 10**.
 
-Check out the [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  or  [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) to see the various paths in deploying Defender for Endpoint.
+Check out [Identify Defender for Endpoint architecture and deployment method](deployment-strategy.md) to see the various paths in deploying Defender for Endpoint.
 
 1. Open the GP configuration package file (`WindowsDefenderATPOnboardingPackage.zip`) that you downloaded from the service onboarding wizard. You can also get the package from the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>:
 
@@ -218,7 +215,7 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 
 5. Right-click **Scheduled tasks**, point to **New**, and then click **Immediate task**.
 
-6. In the **Task** window that opens, go to the **General** tab. Choose the local SYSTEM user account (BUILTIN\SYSTEM) under **Security options**.
+6. In the **Task** window that opens, go to the **General** tab under **Security options** and select **Change User or Group**, enter SYSTEM, then select **Check Names** and then **OK**. NT AUTHORITY\SYSTEM appears as the user account that the task will run as.
 
 7. Select **Run whether user is logged on or not** and check the **Run with highest privileges** check-box.
 
@@ -278,7 +275,7 @@ Browse to **Computer Configuration** \> **Policies** \> **Administrative Templat
  
 2. Browse to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Windows Defender SmartScreen** > **Microsoft Edge**.
 
-    :::image type="content" source="images/config-windows-def-smartscr-edge.png" alt-text="Screenshot that shows configure windows defender smart screen Edge." lightbox="images/config-windows-def-smartscr-edge.png":::
+    :::image type="content" source="images/configure-windows-defender-smartscreen.png" alt-text="Configure windows defender smart screen on Microsoft Edge" lightbox="images/configure-windows-defender-smartscreen.png":::
 
 ### Configure Potentially Unwanted Applications
 
@@ -330,3 +327,4 @@ When you configure cloud protection level policy to **Default Microsoft Defender
 - [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
 - [Run a detection test on a newly onboarded Microsoft Defender for Endpoint devices](run-detection-test.md)
 - [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

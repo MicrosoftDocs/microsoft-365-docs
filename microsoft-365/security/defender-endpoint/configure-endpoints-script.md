@@ -4,9 +4,6 @@ description: Use a local script to deploy the configuration package on devices t
 keywords: configure devices using a local script, device management, configure Microsoft Defender for Endpoint devices
 search.appverid: met150
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
@@ -18,7 +15,7 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.subservice: mde
-ms.date: 12/18/2020
+ms.date: 08/31/2023
 ---
 
 # Onboard Windows devices using a local script
@@ -41,18 +38,11 @@ You can also manually onboard individual devices to Defender for Endpoint. You m
 > This setting is for evaluation purposes and is not normally used in production deployments. For this reason, there are concerns about environmental impact, so we recommend limiting the number of deployments using local scripts to ten.
 > If you are deploying to a production environment as previously described, use [other deployment options](configure-endpoints.md) like  Group Policy or Microsoft Endpoint Configuration Manager.
 
-Check out the [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  or  [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) to see the various paths in deploying Defender for Endpoint. 
+Check out [Identify Defender for Endpoint architecture and deployment method](deployment-strategy.md) to see the various paths in deploying Defender for Endpoint.
 
-## Onboard devices 
+## Onboard devices
 
-1.  Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>:
-
-    1. In the navigation pane, select **Settings** > **Endpoints** > **Device management** > **Onboarding**.
-
-
-Check out the [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf)  or  [Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx) to see the various paths in deploying Defender for Endpoint.
-
-1. Open the GP configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>:
+1. Open the configuration package .zip file (*WindowsDefenderATPOnboardingPackage.zip*) that you downloaded from the service onboarding wizard. You can also get the package from <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>:
     1. In the navigation pane, select **Settings** \> **Endpoints** \> **Device management** \> **Onboarding**.
     2. Select Windows 10 or Windows 11 as the operating system.
     3. In the **Deployment method** field, select **Local Script**.
@@ -69,6 +59,10 @@ Check out the [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-
 4.  Type the location of the script file. If you copied the file to the desktop, type: *%userprofile%\Desktop\WindowsDefenderATPLocalOnboardingScript.cmd*
 
 5.  Press the **Enter** key or click **OK**.
+
+6.  Type "Y" and enter when prompted.
+
+7.  After the script completes, it will display "Press any key to continue...". Press any key to complete the steps on the device.
 
 For information on how you can manually validate that the device is compliant and correctly reports sensor data see, [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md).
 
@@ -137,13 +131,16 @@ Monitoring can also be done directly on the portal, or by using the different de
 ### Monitor devices using the portal
 
 1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
+
 2. Click **Devices inventory**.
+
 3. Verify that devices are appearing.
 
-## Related topics
+## Related articles
 - [Onboard Windows devices using Group Policy](configure-endpoints-gp.md)
 - [Onboard Windows devices using Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [Onboard Windows devices using Mobile Device Management tools](configure-endpoints-mdm.md)
 - [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
 - [Run a detection test on a newly onboarded Microsoft Defender for Endpoint device](run-detection-test.md)
 - [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

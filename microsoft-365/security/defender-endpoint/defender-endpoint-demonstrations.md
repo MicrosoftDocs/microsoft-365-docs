@@ -24,6 +24,11 @@ ms.date: 10/21/2022
 
 # Microsoft Defender for Endpoint - demonstration scenarios
 
+**Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
 The following demonstration scenarios will help you learn about the capabilities of Microsoft Defender for Endpoint on Windows (Mac and Linux are out of scope). Demonstration scenarios are provided for the following Microsoft Defender for Endpoint protection areas:
 
 :::image type="content" source="images/microsoft-defender-for-endpoint-cloud-protection.png" alt-text="Shows the areas of Microsoft Defender for Endpoint demonstration scenarios covered in this collection" lightbox="images/microsoft-defender-for-endpoint-cloud-protection.png":::
@@ -62,3 +67,4 @@ The following table lists the available demonstrations alphabetically, with thei
 [Endpoint detection and response \(EDR\) overview](overview-endpoint-detection-response.md)
 [Microsoft Defender for Endpoint security blog](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/bg-p/MicrosoftDefenderATPBlog)
 
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

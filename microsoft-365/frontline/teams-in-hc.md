@@ -1,8 +1,8 @@
 ---
 title: Get started with Microsoft 365 for healthcare organizations
-author: samanro
-ms.author: samanro
-manager: pamgreen
+author: lana-chin
+ms.author: heidip
+manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-frontline
@@ -21,7 +21,6 @@ ms.collection:
   - m365solution-overview
   - m365-frontline
   - highpri
-  - tier1
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
@@ -30,7 +29,7 @@ description: Learn about the telemedicine features in Microsoft 365 and Microsof
 ms.custom: 
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.date: 03/03/2023
+ms.date: 03/15/2023
 ---
 
 # Get started with Microsoft 365 for healthcare organizations
@@ -58,25 +57,27 @@ To get the most benefit for your healthcare organization, you first choose which
 
 ## Scenarios for healthcare
 
-The following scenarios are available for healthcare organizations:
+Facilitate and centralize collaboration among care teams and across your entire healthcare organization.
+
+- [Provide seamless virtual visits](#provide-seamless-virtual-visits)
+- [Connect and engage the healthcare workforce](#connect-and-engage-the-healthcare-workforce)
+- [Efficiently manage and motivate care teams](#efficiently-manage-and-motivate-care-teams)
+
+The following scenarios support these goals:
 
 | Scenario | Description | Requirements |
 | -------- | -------- | -------- |
-| [Virtual Appointments with Teams and Electronic Healthcare Record (EHR) integration](#virtual-appointments-and-electronic-healthcare-record-ehr-integration) | Schedule, manage, and conduct virtual appointments with patients. This scenario connects Teams and the Oracle Health or Epic platform to support virtual appointments. | Active subscription to Microsoft Cloud for Healthcare or subscription to Microsoft Teams EHR connector standalone offer. <br> Users must have an appropriate Microsoft 365 or Office 365 license that includes Teams meetings*. <br> Organizations must have Oracle Health version November 2018 or later or Epic version November 2018 or later. <br>Details for [Oracle Health EHR](ehr-admin-oracle-health.md#before-you-begin) and [Epic EHR](ehr-admin-epic.md#before-you-begin) requirements |
-| [Virtual Appointments with Teams](#virtual-appointments-and-electronic-healthcare-record-ehr-integration) | Schedule, manage, and conduct virtual appointments with patients. This scenario relies on the Virtual Appointments app or the Bookings app to support virtual appointments. | The Virtual Appointments app or the Bookings app must be enabled for your organization. <br> All staff who conduct meetings must have a license that supports Teams Meeting scheduling*.|
-| [Care coordination and collaboration](#care-coordination-and-collaboration) | Clinicians and staff can collaborate internally on schedules, documents, tasks, and so on.| Users must have an appropriate license*. |
+| [Virtual Appointments](virtual-appointments.md) | Schedule, manage, and conduct virtual appointments with patients. This scenario connects Teams and the Oracle Health or Epic platform to support virtual appointments. | Active subscription to Microsoft Cloud for Healthcare or subscription to Microsoft Teams EHR connector standalone offer. <br> Users must have an appropriate Microsoft 365 or Office 365 license that includes Teams meetings*. <br> Organizations must have Oracle Health version November 2018 or later or Epic version November 2018 or later. <br>Details for [Oracle Health EHR](ehr-admin-oracle-health.md#before-you-begin) and [Epic EHR](ehr-admin-epic.md#before-you-begin) requirements |
+| [Team communication and collaboration](flw-team-collaboration.md) |Help your frontline workforce communicate within their store, shift, or team with Microsoft Teams. Viva Connections helps you create a dashboard that puts the information they need front and center on their devices, so they can reach out whenever they need to. |Users must have an appropriate license to use Microsoft Teams apps.* |
+| [Engage your employees and focus on employee wellbeing](flw-wellbeing-engagement.md) | Build deeper connections across your organization and create an inclusive workplace. |Users must have an appropriate license to use Microsoft Teams apps.* |
+| [Schedule your teams with Shifts](shifts-for-teams-landing-page.md) |Use Shifts and Shifts Connectors to schedule your team and connect with your workforce management tools. |Users must have an appropriate license to use Microsoft Teams apps.* |
+| [Simplify business processes](simplify-business-processes.md) | Use task publishing to create standard processes across sites, lists to manage information and track ongoing processes, and streamline requests with Approvals. Automated workflows can speed up and automate actions, like collecting data or routing notifications. |Users must have an appropriate license to use Microsoft Teams apps.* To use Power Apps and Power Automate, users will need an appropriate license.**|
 
 *Office 365 A3, A5, E3, E5, F1, F3, Microsoft 365 A3, A5, E3, and E5, Business Standard are supported. For more information about general Teams licensing, see [Manage user access to Teams](/microsoftteams/user-access).
+**Office 365 E1, E3, E5, F3, Microsoft 365 E3, E5, F3.
+For a detailed comparison of what's included in Microsoft 365 with various licenses, see this [Comparison table](https://go.microsoft.com/fwlink/?linkid=2139145).
 
-Or choose from other [scenarios](flw-choose-scenarios.md) for Microsoft 365 for frontline workers, such as [Corporate communications](flw-corp-comms.md) or [Wellbeing and engagement](flw-wellbeing-engagement.md).
-
-And take advantage of these features that help Microsoft Teams work for your healthcare organization:
-
-| Feature | Description | Requirements |
-| -------- | -------- | -------- |
-| [Teams policy packages](#teams-policy-packages)| Ensure that clinical workers, information workers, and patient room devices have the appropriate access to Teams functionality.| Users must have an appropriate license*. |
-| [Secure messaging](#secure-messaging) | Get quicker attention to urgent messages and have confidence that the message was received and read. | Users must have an appropriate license*.  |
-| [Teams templates](#teams-templates-for-healthcare-organizations) | Create teams that include a predefined template of settings, channels, and pre-installed apps for communication and collaboration within a ward, pod, or department, or between multiple wards, pods, and departments within a hospital. | Users must have an appropriate license*.  |
+Depending on your business needs, you can choose to incorporate more [scenarios](flw-choose-scenarios.md) for Microsoft 365 for frontline workers.
 
 ### Download a poster with scenario overviews
 
@@ -86,26 +87,29 @@ Use the following poster to start envisioning what your organization can do with
 |:-----|:-----|
 |[![Microsoft 365 for frontline workers: Healthcare scenarios.](media/m365-frontline-healthcare-thumb.png)](https://go.microsoft.com/fwlink/?linkid=2206475) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2206475) \| [Visio](https://go.microsoft.com/fwlink/?linkid=2206474)  <br>Updated September 2022   |This poster provides an overview of the scenarios you can implement for your frontline workforce in a healthcare setting.|
 
-## Virtual Appointments and Electronic Healthcare Record (EHR) integration
+## Provide seamless virtual visits
 
 Use the complete meetings platform in Teams to schedule, manage, and conduct virtual appointments with patients.
 
 - If your organization already uses an Electronic Health Record (EHR) system, you can integrate Teams for a more seamless experience. Teams Electronic Health Record (EHR) connector makes it easy for clinicians to launch a virtual patient appointment or consultation with another provider in Teams directly from the EHR system. To learn more, see [Virtual Appointments with Teams - Integration into Oracle Health EHR](ehr-admin-oracle-health.md) and [Virtual Appointments with Teams - Integration into Epic EHR](ehr-admin-epic.md).
-- If you aren't using a supported EHR system, you can use the Virtual Appointments app the Bookings app in Teams. To learn more, see [Virtual Appointments with Teams](virtual-appointments.md).
+- If you aren't using a supported EHR system, you can use the Virtual Appointments app in Teams. To learn more, see [Virtual Appointments with Teams](virtual-appointments.md).
 
 ![Virtual Appointments with Microsoft Teams.](media/virtual-visits-teams.png)
 
-## Teams policy packages
+## Connect and engage the healthcare workforce
 
-Apply Teams policy packages to define what different roles can do in Teams. For example, specify policies for:
+Bring your health team together to coordinate care and collaborate with Teams.
 
-- Clinical workers, such as registered nurses, charge nurses, physicians, and social workers, so that they can have full access to chat, calling, shift management, and meetings.
-- Information workers in your healthcare organization, such as IT personnel, informatics staff, finance personnel, and compliance officers, can have full access to chat, calling, and meetings.
-- Patient rooms, to control settings for patient room devices.
+![Screenshot of Healthcare: Collaborate with your health team in Teams.](media/teams-healthcare-collaborate-in-teams.png)
 
-To learn more, see [Teams policy packages for healthcare](/microsoftteams/policy-packages-healthcare?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
+Teams enables physicians, clinicians, nurses, and other staff to collaborate efficiently with included collaboration features in Teams, such as:
 
-## Secure messaging
+- Set up teams and channels for your health teams and information workers. Use channels with tabs as a way to structure their work, with additional help from tabs to which they can pin information sources.
+- Chat, post messages, and communicate. Your team can have persistent conversations about different patients needing attention.
+- Call and meet with members of the health team. Set up individual meetings, or use channel meetings to manage daily meetings, both with the power of Teams audio, video, screen sharing, recording, and transcription features.
+- Store and share files and documents. Your health team is part of a single virtualized team that works and collaborates on Office documents.
+
+### Secure messaging
 
 Secure messaging supports collaboration within health teams, including several new features:
 
@@ -116,37 +120,31 @@ Together, these features allow quicker attention to urgent messages and confiden
 
 To learn more, see [Get started with Secure Messaging policies for Healthcare organizations](messaging-policies-hc.md).
 
-Also related to secure messaging is the ability to have other tenants federated by Healthcare organizations, allowing richer inter-tenant communication. (See [Manage external meetings and chat in Microsoft Teams](/microsoftteams/manage-external-access)).
-
-## Teams templates for healthcare organizations
-
-Teams includes templates designed specifically for healthcare organizations, making it easier to create teams for staff to communicate and collaborate on patient care or operational needs. To learn more, see [Use healthcare team templates](/microsoftteams/expand-teams-across-your-org/healthcare/healthcare-templates-admin-console?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
-
-## Care coordination and collaboration
-
-Bring your health team together to coordinate care and collaborate with Teams.
-
-![Healthcare: Collaborate with your health team in Teams.](media/teams-healthcare-collaborate-in-teams.png)
-
-Teams enables physicians, clinicians, nurses, and other staff to collaborate efficiently with included collaboration features in Teams, such as:
-
-- Set up teams and channels for your health teams and information workers. Use channels with tabs as a way to structure their work, with additional help from tabs to which they can pin information sources.
-- Chat, post messages, and communicate. Your team can have persistent conversations about different patients needing attention.
-- Call and meet with members of the health team. Set up individual meetings, or use channel meetings to manage daily meetings, both with the power of Teams audio, video, screen sharing, recording, and transcription features.
-- Store and share files and documents. Your health team is part of a single virtualized team that works and collaborates on Office documents.
-
-In addition, your team can use apps in Teams to:
-
-- Share lists and track information with the Lists app
-- Track and monitor tasks with the Tasks app
-- Streamline approvals with the Approvals app
-- Create, manage, and share schedules with the Shifts app
+Also related to secure messaging is the ability to have other tenants federated by Healthcare organizations, allowing richer inter-tenant communication. To learn more, see [Manage external meetings and chat in Microsoft Teams](/microsoftteams/manage-external-access).
 
 ### Coordinate over email with Exchange Online
 
 Email is a core communication tool for most workplaces. [Set up email with Exchange Online](flw-setup-microsoft-365.md#set-up-email-with-exchange-online) to help your frontline managers and workers coordinate with care team members in other locations or schedule meetings to discuss care plans. Users must have an F3 license to have an email mailbox.
 
 You can also set up shared mailboxes to allow for incoming mail from customers (such as for customer service or scheduling requests) and have a group of workers who monitor and send email from a public email alias like info@contoso.com. For more information about shared mailboxes, see [About shared mailboxes](../admin/email/about-shared-mailboxes.md) and [Open and use a shared mailbox in Outlook](https://support.microsoft.com/office/open-and-use-a-shared-mailbox-in-outlook-d94a8e9e-21f1-4240-808b-de9c9c088afd).
+
+## Efficiently manage and motivate care teams
+
+Unburden and empower your teams with seamless shift scheduling, task management, and workflow automation so they can focus on what matters.
+
+### Teams policy packages
+
+Apply Teams policy packages to define what different roles can do in Teams. For example, specify policies for:
+
+- Clinical workers, such as registered nurses, charge nurses, physicians, and social workers, so that they can have full access to chat, calling, shift management, and meetings.
+- Information workers in your healthcare organization, such as IT personnel, informatics staff, finance personnel, and compliance officers, can have full access to chat, calling, and meetings.
+- Patient rooms, to control settings for patient room devices.
+
+To learn more, see [Teams policy packages for healthcare](/microsoftteams/policy-packages-healthcare?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
+
+### Teams templates for healthcare organizations
+
+Teams includes templates designed specifically for healthcare organizations, making it easier to create teams for staff to communicate and collaborate on patient care or operational needs. To learn more, see [Use healthcare team templates](/microsoftteams/expand-teams-across-your-org/healthcare/healthcare-templates-admin-console?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json).
 
 ### Share lists and track information with the Lists app
 

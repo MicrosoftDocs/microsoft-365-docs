@@ -3,7 +3,7 @@ title: "Microsoft 365 admin center forms activity reports"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 11/10/2020
 audience: Admin
@@ -30,9 +30,6 @@ description: "Learn how to get a Microsoft Forms activity report using the Micro
 The Microsoft 365 Reports dashboard shows you the activity overview across the products in your organization. It lets you drill in to individual product level reports to give you more granular insight about the activities within each product. Check out [the Reports overview topic](activity-reports.md).
   
 For example, you can understand the activity of every user licensed to use Microsoft Forms by looking at their interaction with forms. It also helps you to understand the level of collaboration going on by looking at the number of forms created and forms the user responded to.
-
-> [!NOTE]
-> The information and data on the Microsoft 365 Experience insights dashboard helps you to better understand and improve your users' overall experience with Microsoft 365. [Learn more](/microsoft-365/admin/misc/experience-insights-dashboard).
   
 ## How to get to the Forms activity report
 

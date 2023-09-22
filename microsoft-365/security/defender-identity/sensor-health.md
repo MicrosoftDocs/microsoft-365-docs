@@ -3,8 +3,8 @@ title: Microsoft Defender for Identity sensor health and settings in Microsoft 3
 description: Learn how to configure Microsoft Defender for Identity sensors and monitor their health in Microsoft 365 Defender
 ms.date: 06/07/2021
 ms.topic: how-to
-author: dcurwin
-ms.author: dacurwin
+author: batamig
+ms.author: bagol
 ms.service: microsoft-defender-for-identity
 ms.custom: admindeeplinkDEFENDER
 manager: raynew

@@ -18,7 +18,8 @@ audience: ITPro
 ms.collection: 
  - m365-security
  - tier3
-ms.topic: conceptual
+ - must-keep
+ms.topic: reference
 search.appverid: 
   - MOE150
   - MET150
@@ -107,3 +108,4 @@ Each error response contains a unique ID parameter for tracking. The property na
 - [Supported Microsoft 365 Defender APIs](api-supported.md)
 - [Access the Microsoft 365 Defender APIs](api-access.md)
 - [Learn about API limits and licensing](api-terms.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

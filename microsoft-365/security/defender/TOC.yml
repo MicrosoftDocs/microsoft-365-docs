@@ -26,8 +26,6 @@
           href: microsoft-365-security-center-defender-cloud-apps.md
         - name: Redirecting Defender for Endpoint to Microsoft 365 Defender
           href: microsoft-365-security-mde-redirection.md
-        - name: Redirecting Defender for Identity to Microsoft 365 Defender
-          href: microsoft-365-security-mdi-redirection.md
         - name: Redirecting Defender for Cloud Apps to Microsoft 365 Defender
           href: microsoft-365-security-mda-redirection.md
       - name: Microsoft 365 Defender integration with Microsoft Sentinel
@@ -108,6 +106,8 @@
           href: m365d-enable.md
         - name: 2. Deploy supported services
           href: deploy-supported-services.md
+        - name: Setup guides for Microsoft 365 Defender
+          href: deploy-configure-m365-defender.md  
         - name: Turning on Microsoft 365 Defender FAQs
           href: m365d-enable-faq.md              
         - name: Train your security staff
@@ -163,15 +163,11 @@
               - name: Respond to your first incident
                 items: 
                  - name: Overview
-                   href: first-incident-overview.md
-                 - name: Prepare
-                   href: first-incident-prepare.md
-                 - name: Step 1. Triage and analyze
-                   href: first-incident-analyze.md
-                 - name: Step 2. Remediate
-                   href: first-incident-remediate.md
-                 - name: Step 3. Review
-                   href: first-incident-post.md
+                   href: respond-first-incident-365-defender.md
+                 - name: Analyze your first incident
+                   href: respond-first-incident-analyze.md
+                 - name: Remediate your first incident
+                   href: respond-first-incident-remediate.md
                  - name: Additional incident examples
                    items: 
                     - name: Phishing email
@@ -182,11 +178,13 @@
                 items: 
                  - name: Incidents
                    href: investigate-incidents.md
-                 - name: Data loss incidents
-                   href: investigate-dlp.md
+                 - name: Investigate data loss prevention alerts with Microsoft 365 Defender
+                   href: dlp-investigate-alerts-defender.md
+                 - name: Investigate data loss prevention alerts with Microsoft Sentinel
+                   href: dlp-investigate-alerts-sentinel.md
                  - name: Alerts
                    href: investigate-alerts.md    
-                 - name: Alert grading playbooks
+                 - name: Alert classification playbooks
                    items: 
                     - name: Overview
                       href: alert-grading-playbooks.md
@@ -200,6 +198,8 @@
                       href: alert-grading-password-spray.md                      
                     - name: Malicious exchange connectors
                       href: alert-grading-for-malicious-exchange-connectors.md
+                    - name: Password spray attacks
+                      href: alert-grading-password-spray-attack.md                    
                  - name: Users 
                    href: investigate-users.md                  
               - name: Incident response playbooks
@@ -266,7 +266,9 @@
                    href: advanced-hunting-query-results.md
                  - name: Quickly investigate with go hunt
                    href: advanced-hunting-go-hunt.md
-                 - name: Functions
+                 - name: Create custom functions 
+                   href: advanced-hunting-custom-functions.md                   
+                 - name: Use built-in functions
                    items: 
                     - name: AssignedIPAddresses()
                       href: advanced-hunting-assignedipaddresses-function.md                    
@@ -296,6 +298,10 @@
                   href: advanced-hunting-alertevidence-table.md
                 - name: AlertInfo
                   href: advanced-hunting-alertinfo-table.md
+                - name: BehaviorEntities
+                  href: advanced-hunting-behaviorentities-table.md
+                - name: BehaviorInfo
+                  href: advanced-hunting-behaviorinfo-table.md                                    
                 - name: CloudAppEvents
                   href: advanced-hunting-cloudappevents-table.md
                 - name: DeviceEvents
@@ -372,6 +378,8 @@
          items:
               - name: Threat analytics overview
                 href: threat-analytics.md
+              - name: Defender Threat Intelligence in Microsoft 365 Defender
+                href: defender-threat-intelligence.md
               - name: Understand the analyst report
                 href: threat-analytics-analyst-reports.md
        - name: Endpoint Attack Notifications
@@ -390,16 +398,28 @@
                 href: onboarding-defender-experts-for-hunting.md
               - name: Understand Defender Experts for Hunting reports
                 href: defender-experts-report.md
-       - name: Expanded Microsoft Defender Experts for XDR preview
+       - name: Collaborate with Microsoft Defender Experts for XDR
          items:
               - name: Overview
                 href: dex-xdr-overview.md
-              - name: Get started with Microsoft Defender Experts for XDR preview service
+              - name: Before you begin
+                href: before-you-begin-xdr.md
+              - name: Get started with Microsoft Defender Experts for XDR service
                 href: get-started-xdr.md
-              - name: Start using Microsoft Defender Experts for XDR preview service
+              - name: Start using Microsoft Defender Experts for XDR service
                 href: start-using-mdex-xdr.md
+              - name: Auditing
+                href: auditing.md
+              - name: Additional information
+                href: additional-information-xdr.md
               - name: Frequently asked questions
-                href: frequently-asked-questions.md
+                items: 
+                - name: General information
+                  href: frequently-asked-questions.md
+                - name: Defender Experts for XDR Incident notifications
+                  href: faq-incident-notifications-xdr.md
+              - name: How Defender Experts for XDR permissions work
+                href: dex-xdr-permissions.md
        - name: Ransomware playbooks
          items: 
               - name: Detecting human-operated ransomware attacks with Microsoft 365 Defender
@@ -422,6 +442,22 @@
          href: integrate-microsoft-365-defender-secops-use-cases.md
        - name: Step 6. SOC maintenance tasks
          href: integrate-microsoft-365-defender-secops-tasks.md
+    - name: Multi-tenant management in Microsoft 365 Defender
+      items:
+        - name: Multi-tenant management in Microsoft 365 Defender
+          href: mto-overview.md
+        - name: Set up multi-tenant management in Microsoft 365 Defender 
+          href: mto-requirements.md
+        - name: View and manage incidents and alerts
+          href: mto-incidents-alerts.md
+        - name: Advanced hunting
+          href: mto-advanced-hunting.md
+        - name: Multi-tenant devices
+          href: mto-tenant-devices.md
+        - name: Vulnerability management
+          href: mto-dashboard.md
+        - name: Manage tenants
+          href: mto-tenants.md
     - name: Reference
       items: 
       - name: Manage roles and permissions
@@ -430,21 +466,23 @@
               href: m365d-permissions.md
             - name: Custom roles in role-based access 
               href: custom-roles.md
-            - name: Manage permissions with Microsoft 365 Defender RBAC
+            - name: Manage permissions with Microsoft 365 Defender Unified RBAC
               items: 
               - name: Overview
                 href: manage-rbac.md
+              - name: What's new in Microsoft 365 Defender Unified RBAC
+                href: whats-new-in-microsoft-defender-urbac.md
               - name: Create custom roles 
                 href: create-custom-rbac-roles.md
               - name: Import roles
                 href: Import-rbac-roles.md
-              - name: Activate Microsoft 365 Defender RBAC 
+              - name: Activate Microsoft 365 Defender Unified RBAC 
                 href: activate-defender-rbac.md
-              - name: Edit and delete roles
+              - name: Edit, delete and export roles
                 href: edit-delete-rbac-roles.md
-              - name: Map RBAC permission
+              - name: Map Unified RBAC permission
                 href: compare-rbac-roles.md
-              - name: About RBAC custom permission
+              - name: About Unified RBAC custom permission
                 href: custom-permissions-details.md
       - name: Portal settings
         items: 
@@ -456,6 +494,8 @@
               href: troubleshoot.md
             - name: Configure alert notifications
               href: configure-email-notifications.md
+            - name: Asset Rule Management
+              href: configure-asset-rules.md
             - name: Provide feedback
               href: feedback.md
             - name: Provide managed service provider (MSSP) access
@@ -534,45 +574,16 @@
         items: 
           - name: Safety Scanner download
             href: ../intelligence/safety-scanner-download.md
-          - name: Understand malware & other threats
-            href: ../intelligence/understanding-malware.md
-            items: 
-            - name: Prevent malware infection
-              href: ../intelligence/prevent-malware-infection.md
-            - name: Malware names
-              href: ../intelligence/malware-naming.md
-            - name: Coin miners
-              href: ../intelligence/coinminer-malware.md
-            - name: Exploits and exploit kits
-              href: ../intelligence/exploits-malware.md
-            - name: Fileless threats
-              href: ../intelligence/fileless-threats.md
-            - name: Macro malware
-              href: ../intelligence/macro-malware.md
-            - name: Phishing
-              href: ../intelligence/phishing.md
-            - name: Phishing trends and techniques
-              href: ../intelligence/phishing-trends.md
-            - name: Ransomware
-              href: /security/compass/human-operated-ransomware
-            - name: Rootkits
-              href: ../intelligence/rootkits-malware.md
-            - name: Supply chain attacks
-              href: ../intelligence/supply-chain-malware.md
-            - name: Tech support scams
-              href: ../intelligence/support-scams.md
-            - name: Trojans
-              href: ../intelligence/trojans-malware.md
-            - name: Troubleshoot MSI portal errors caused by admin block
-              href: ../intelligence/portal-submission-troubleshooting.md
-            - name: Unwanted software
-              href: ../intelligence/unwanted-software.md
-            - name: Worms
-              href: ../intelligence/worms-malware.md
+          - name: Threat actor naming
+            href: ../intelligence/microsoft-threat-actor-naming.md
+          - name: Malware names
+            href: ../intelligence/malware-naming.md
           - name: How Microsoft identifies malware and PUA
             href: ../intelligence/criteria.md
           - name: Submit files for analysis
             href: ../intelligence/submission-guide.md
+          - name: Troubleshoot MSI portal errors caused by admin block
+            href: ../intelligence/portal-submission-troubleshooting.md
           - name: Industry collaboration programs
             href: ../intelligence/cybersecurity-industry-partners.md
           - name: Virus information alliance

@@ -6,8 +6,8 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-smandalika
-author: v-smandalika
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: high
 ms.date: 02/16/2023
 manager: dansimp
@@ -22,6 +22,11 @@ search.appverid: met150
 ---
 
 # Enable and update Defender Antivirus to the latest version on Windows Server
+
+**Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 If you wish to use Microsoft Defender Antivirus on your Windows Server, and it had been previously disabled or uninstalled, you may need to take further steps to re-enable it and ensure it's fully updated.
 
@@ -88,3 +93,4 @@ As a local administrator on the server, perform the following steps:
 ## Related articles
 
 [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

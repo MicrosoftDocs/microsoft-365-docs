@@ -11,8 +11,8 @@ metadata:
   ms.service: microsoft-365-security
   ms.subservice: mdb
   ms.localizationpriority: medium
-  ms.date: 03/14/2023
-  ms.reviewer: efratka. jomaun. oogunrinde
+  ms.date: 07/19/2023
+  ms.reviewer: efratka, nehabha
   f1.keywords: NOCSH 
   ms.collection: 
   - SMB
@@ -30,7 +30,7 @@ sections:
         answer: |
           As Defender for Business and Microsoft Defender for Business servers are both now generally available, the preview program for each has ended and can't be extended.   
           
-          See [Get Defender for Business](get-defender-business.md) or [Get Microsoft Defender for Business servers](get-defender-business-servers.md).
+          See [Get Defender for Business](get-defender-business.md) or [Get Microsoft Defender for Business servers](get-defender-business.md#how-to-get-microsoft-defender-for-business-servers).
 
       - question: How do I try or buy Defender for Business?
         answer: |
@@ -50,24 +50,22 @@ sections:
         answer: |
           You can onboard and secure up to five client devices per user license.
 
-          If you have servers, you'll need the [Microsoft Defender for Business servers](get-defender-business-servers.md) add-on.
+          If you have servers, you'll need an additional license, such as [Microsoft Defender for Business servers](get-defender-business.md#how-to-get-microsoft-defender-for-business-servers).
           
       - question: Does Defender for Business protect Mac, Android, and iOS/iPadOS client devices?
         answer: |
           Yes. Defender for Business supports protection for Windows, Mac, Android, and iOS/iPadOS devices. See [Onboard devices](mdb-onboard-devices.md).
 
-          - You can onboard Mac devices using a local script in the Microsoft 365 Defender portal. 
-          - To onboard Android and iOS/iPadOS devices, you can use [Microsoft Intune](/mem/intune/).
-
-          More simplification for Mac, iOS/iPadOS, and Android devices is on the roadmap. 
+          - You can onboard Windows and Mac client devices using a local script in the Microsoft 365 Defender portal. 
+          - To onboard Android and iOS/iPadOS devices, you can use [Microsoft Intune](/mem/intune/) or [mobile threat defense capabilities](mdb-mtd.md) in Defender for Business.
 
       - question: Does Defender for Business support servers? 
         answer: |
-          If you're planning to onboard an instance of Windows Server or Linux Server, you'll need an additional license, such as [Microsoft Defender for Business servers](get-defender-business-servers.md). 
+          If you're planning to onboard an instance of Windows Server or Linux Server, you'll need an additional license, such as [Microsoft Defender for Business servers](get-defender-business.md#how-to-get-microsoft-defender-for-business-servers). 
 
           Alternately, you could use [Microsoft Defender for Servers Plan 1 or Plan 2](/azure/defender-for-cloud/plan-defender-for-servers). To learn more, see [What happens if I have a mix of Microsoft endpoint security subscriptions?](#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions) and [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md).
 
-          [Microsoft Defender for Business servers](get-defender-business-servers.md) is available as an add-on to Microsoft 365 Business Premium and the standalone version of Defender for Business. The Microsoft Defender for Business servers license is priced at $3 per server instance. You can either purchase a license for each onboarded server, or choose to offboard servers from Defender for Business.
+          [Microsoft Defender for Business servers](get-defender-business.md#how-to-get-microsoft-defender-for-business-servers) is available as an add-on to Microsoft 365 Business Premium and the standalone version of Defender for Business. The Microsoft Defender for Business servers license is priced at $3 per server instance. You can either purchase a license for each onboarded server, or choose to offboard servers from Defender for Business.
 
           If you have more than 60 servers, you'll need to get Microsoft Defender for Servers Plan 1 or Plan 2.
 
@@ -77,7 +75,7 @@ sections:
 
           | Microsoft Defender for Business servers | Microsoft Defender for Servers Plan 1 / Plan 2 |
           |:---|:---|
-          | [Microsoft Defender for Business servers](get-defender-business-servers.md) is an add-on to Defender for Business and Microsoft 365 Business Premium only. <br/><br/>Provides a single endpoint security experience for both clients and servers within the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). <br/><br/>Designed for businesses with up to 300 employees. <br/><br/>Enables customers who don't necessarily have a security background to set up, configure, and protect company devices, including servers. | [Microsoft Defender for Servers Plan 1/Plan 2](/azure/defender-for-cloud/plan-defender-for-servers) is an enterprise-focused offering that can be purchased with any other Microsoft cloud plan. <br/><br/>Part of [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction). <br/><br/>Includes advanced threat hunting with six months of data retention and the Microsoft Threat Experts service.<br/><br/>The admin experience for Defender for Cloud resides within the Azure portal ([https://portal.azure.com](https://portal.azure.com)). |
+          | [Microsoft Defender for Business servers](get-defender-business.md#how-to-get-microsoft-defender-for-business-servers) is an add-on to Defender for Business and Microsoft 365 Business Premium only. <br/><br/>Provides a single endpoint security experience for both clients and servers within the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). <br/><br/>Designed for businesses with up to 300 employees. <br/><br/>Enables customers who don't necessarily have a security background to set up, configure, and protect company devices, including servers. | [Microsoft Defender for Servers Plan 1/Plan 2](/azure/defender-for-cloud/plan-defender-for-servers) is an enterprise-focused offering that can be purchased with any other Microsoft cloud plan. <br/><br/>Part of [Microsoft Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction). <br/><br/>Includes advanced threat hunting with six months of data retention and the Microsoft Threat Experts service.<br/><br/>The admin experience for Defender for Cloud resides within the Azure portal ([https://portal.azure.com](https://portal.azure.com)). |
 
           Adding Defender for Cloud to a tenant that has Defender for Business won't change the simplified Defender for Business experience. The functionality in Microsoft Defender for Servers Plan 1 or Plan 2 will work with Defender for Business. See [What happens if I have a mix of Microsoft endpoint security subscriptions?](#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions) for more details.
 
@@ -85,7 +83,7 @@ sections:
         answer: |
           Currently, Defender for Business supports only one uniform web filtering policy per Defender for Business tenant. 
           
-          See [Set up web content filtering](mdb-configure-security-settings.md#set-up-web-content-filtering).
+          See [Set up web content filtering](mdb-web-content-filtering.md).
 
       - question: Can I use non-Microsoft antivirus/antimalware software with Defender for Business? 
         answer: |
@@ -94,6 +92,17 @@ sections:
           In Defender for Business, real-time protection is turned on by default; however, devices running non-Microsoft antivirus/antimalware software could affect your settings. 
           
           To learn more, see [I'm seeing indications that some devices aren't protected even though they're onboarded to Defender for Business](mdb-troubleshooting.yml#i-m-seeing-indications-that-some-devices-aren-t-protected-even-though-they-re-onboarded-to-defender-for-business).
+
+      - question: Are device control capabilities available in Microsoft Defender for Business?
+        answer: |
+          [Device control in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/device-control-removable-storage-protection) prevents users, endpoints, or both from using unauthorized removable storage media.
+
+          These capabilities can be configured in Defender for Business, as described in the following table:
+
+          | OS | Method | Notes |
+          |---|---|---|
+          | Windows  | [Attack surface reduction (ASR) rules](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment) | On Windows devices, you can configure device control through ASR rules. You'll need [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) to set up your ASR rules. Intune is not included in the standalone version of Defender for Business, but you can add it on. Intune is included in [Microsoft 365 Business Premium](/microsoft-365/business-premium). <br/><br/>[ASR capabilities in Defender for Business](mdb-asr.md) |
+          | Mac | Jamf or Intune | You can use Jamf or Intune to set up device control on Mac. See [Device Control for macOS](/microsoft-365/security/defender-endpoint/mac-device-control-overview). |
 
       - question: How do I run custom reports with Defender for Business?
         answer: |
@@ -117,7 +126,7 @@ sections:
 
           When you enroll devices in Intune and onboard those devices to Defender for Business, you create a connection between Intune and Defender for Business.
            
-          You can manage your next-generation protection and firewall protection policies in the Microsoft 365 Defender portal with a [simplified configuration experience](mdb-simplified-configuration.md). These policies are visible in Intune. To manage other settings, such as attack surface reduction policies, you'll use Intune.  
+          You can manage your next-generation protection and firewall protection policies in the Microsoft 365 Defender portal with a [simplified configuration experience](mdb-setup-configuration.md). These policies are visible in Intune. To manage other settings, such as attack surface reduction policies, you'll use Intune.  
 
       - question: If I'm already using Microsoft 365 Business Premium, why do I need Defender for Business?
         answer: |
@@ -130,7 +139,7 @@ sections:
 
       - question: What are the differences between Defender for Business and Defender for Endpoint Plans 1 and 2?
         answer: |
-          Both Defender for Business and Defender for Endpoint provide strong threat protection capabilities for your company's devices (also referred to as endpoints). Defender for Business was designed for small and medium-sized businesses (up to 300 employees). With a [simplified configuration process](mdb-simplified-configuration.md) and [device onboarding options](mdb-onboard-devices.md), Defender for Business enables customers who don't necessarily have a security background to set up, configure, and use Defender for Business to protect company devices.  
+          Both Defender for Business and Defender for Endpoint provide strong threat protection capabilities for your company's devices (also referred to as endpoints). Defender for Business was designed for small and medium-sized businesses (up to 300 employees). With a [simplified configuration process](mdb-setup-configuration.md) and [device onboarding options](mdb-onboard-devices.md), Defender for Business enables customers who don't necessarily have a security background to set up, configure, and use Defender for Business to protect company devices.  
 
           Defender for Endpoint is an enterprise endpoint security platform designed to help organizations like yours to prevent, detect, investigate, and respond to advanced threats.  
           
@@ -138,9 +147,9 @@ sections:
 
       - question: What happens if I have a mix of Microsoft endpoint security subscriptions? 
         answer: |
-          *Suppose you have assigned 10 users a Defender for Business license, and you have assigned 10 other users a Defender for Endpoint Plan license. What happens if you have a mix of subscriptions like this example in your tenant?*
+          *Suppose you have assigned 10 users a Defender for Business license, 10 other users a Defender for Endpoint Plan 1 license, and 5 other users a Defender for Endpoint Plan 2 license. What happens if you have a mix of subscriptions like this example in your tenant?*
 
-          Currently, a tenant with Defender for Business will default to the Defender for Business experience, tenant wide, even if you have Defender for Endpoint licenses in your tenant. If you have a mix of Defender for Business and Defender for Endpoint Plan licenses, all users and onboarded devices will receive Defender for Business capabilities. Note that Defender for Business was designed especially for small and medium-sized businesses, and includes more security features and capabilities than Defender for Endpoint Plan 1 (standalone). 
+          Currently, a tenant with Defender for Business will default to the Defender for Business experience, tenant wide, even if you have Defender for Endpoint licenses in your tenant. If you have a mix of Defender for Business and Defender for Endpoint licenses, all users and onboarded devices will receive Defender for Business capabilities.  
           
           For more information, see [Compare Microsoft endpoint security plans](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1-2). For more information about licenses and product terms, see [Licensing and product terms for Microsoft 365 subscriptions](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/MCA).
 

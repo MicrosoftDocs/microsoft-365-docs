@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: argani, nicholak
+ms.reviewer: sinakassaw, nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
@@ -24,7 +24,7 @@ ms.custom:
 - adminvideo
 search.appverid: MET150
 description: "Use these steps to buy more licenses or reduce the number of licenses for your Microsoft 365 for business subscription."
-ms.date: 09/29/2022
+ms.date: 05/10/2023
 ---
 
 # Buy or remove Microsoft 365 licenses for a subscription
@@ -85,7 +85,7 @@ If you've removed licenses from a subscription, the next thing to do is [delete 
 
 ## Add licenses to a prepaid subscription by using a Microsoft 365 product key
 
-Prepaid product licenses are issued to you as a 25-character alphanumeric code, called a product key. After you buy the licenses you need, you can add them to your subscription by using the steps below. You can also use a product key to [extend the expiration date of your subscription](../subscriptions/renew-your-subscription.md#extend-the-expiration-date-of-your-prepaid-subscription-by-using-a-microsoft-365-product-key).
+Prepaid product licenses are issued to you as a 25-character alphanumeric code, called a product key. After you buy the licenses you need, you can add them to your subscription by using the steps below. You can also use a product key to [extend the expiration date of your subscription](../enter-your-product-key.md#extend-the-expiration-date-for-an-existing-subscription).
 
 > [!NOTE]
 > If you don't want to buy a new product key, you can always choose to add a credit card or bank account to your subscription to pay for more licenses. For more information, see [Renew your subscription](../subscriptions/renew-your-subscription.md).

@@ -1,8 +1,8 @@
 ---
 title: "Tune Exchange Online performance"
 ms.author: krowley
-author: tracyp
-manager: scotv
+author: MSFTTracyP
+manager: laurawi
 ms.date: 12/14/2017
 audience: Admin
 ms.topic: troubleshooting
@@ -40,11 +40,9 @@ To improve the speed of migration and reduce your organization's bandwidth const
 ## General advice
 
 - Make certain that DNS lookup for outlook.office.com enters the MS-datacenter at a logical entry location for your location.
-
 - Research mailbox caching and choose the appropriate options (re. caching period, shared mailbox caching, et cetera).
-
 - Keep your Outlook data from passing over VPN connections (to a central office) before it goes over the Internet.
-
 - Be sure your mailbox data adheres to the limitations on folder, and item, amounts.
     
 For more information about Exchange migration performance, see [Office 365 migration performance and best practices](https://support.office.com/article/d9acb371-fd6c-4c14-aa8e-db5cbe39aa57).
+

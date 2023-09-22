@@ -9,9 +9,9 @@ audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.date: 09/15/2022
-ms.localizationpriority: high
-ms.reviewer: shlomiakirav
+ms.date: 07/19/2023
+ms.localizationpriority: medium
+ms.reviewer: nehabha
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
@@ -84,7 +84,7 @@ Create device categories in Intune from which users must choose when they enroll
 
 4. When you're done, select **Create**. You can see the new category in the list.
 
-Use the device category name when you create the Azure Active Directory (Azure AD) security groups. When users enroll their devices, they are presented with a list of the categories you configured in Intune. After they choose a category and finish enrollment, their device is added to the Active Directory security group that is associated with it.
+Use the device category name when you create the Azure Active Directory (Azure AD) security groups. When users enroll their devices, they're presented with a list of the categories you configured in Intune. After they choose a category and finish enrollment, their device is added to the Active Directory security group that is associated with it.
 
 ## Create dynamic device groups in Azure Active Directory
 
@@ -124,4 +124,4 @@ After choosing a category, the device is automatically added to the correspondin
 
 ## Next steps
 
-Now that you've completed your primary missions, take time to set up your [response teams](m365bp-security-incident-management.md) and [maintain your environment](m365bp-maintain-environment.md).
+Now that you've completed your primary missions, take time to set up your [response teams](m365bp-security-incident-management.md) and [maintain your environment](m365bp-mdb-maintain-environment.md).

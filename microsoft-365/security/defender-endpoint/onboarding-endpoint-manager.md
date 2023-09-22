@@ -29,12 +29,13 @@ ms.date: 12/18/2020
 
 **Applies to:**
 
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-This article is part of the Deployment guide and acts as an example onboarding method.
+This article acts as an example onboarding method.
 
 In the [Planning](deployment-strategy.md) topic, there were several methods provided to onboard devices to the service. This topic covers the cloud-native architecture.
 
@@ -122,12 +123,12 @@ Then you will continue by creating several different types of endpoint security 
 
 1. Open the Intune admin center.
 
-2. Navigate to **Endpoint security > Endpoint detection and response**. Click on **Create Profile**.
+2. Navigate to **Endpoint security > Endpoint detection and response**. Click on **Create Policy**.
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/58dcd48811147feb4ddc17212b7fe840.png" alt-text="The Microsoft Intune admin center4" lightbox="images/58dcd48811147feb4ddc17212b7fe840.png":::
 
-3. Under **Platform, select Windows 10 and Later, Profile - Endpoint detection
+3. Under **Platform, select Windows 10, Windows 11, and Windows Server, Profile - Endpoint detection
     and response > Create**.
 
 4. Enter a name and description, then select  **Next**.
@@ -383,7 +384,7 @@ To confirm that the configuration policy has been applied to your test device, f
 
 ### Confirm Attack Surface Reduction - Attack surface reduction rules
 
-1. Before applying the policy on a test device, pen a PowerShell Window and type `Get-MpPreference`.
+1. Before applying the policy on a test device, open a PowerShell Window and type `Get-MpPreference`.
 
 2. This should respond with the following lines with no content:
 
@@ -416,3 +417,4 @@ To confirm that the configuration policy has been applied to your test device, f
 4. This should respond with a 1 as shown below.
 
    :::image type="content" source="images/c06fa3bbc2f70d59dfe1e106cd9a4683.png" alt-text="The command line-4" lightbox="images/c06fa3bbc2f70d59dfe1e106cd9a4683.png":::
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

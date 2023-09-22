@@ -9,13 +9,13 @@ ms.localizationpriority: medium
 search.appverid: 
 ms.reviewer: 
 ms.date: 08/03/2022
-author: serdars
+author: SerdarSoysal
 ms.author: serdars
 ---
 
 # Microsoft 365 group mailbox size management 
 
-Each Microsoft 365 group comes equipped with a dedicated mailbox that stores the emails received on the group. The group mailbox is also used by applications like SharePoint Online, Yammer, Teams etc. The group mailbox is equipped with initial storage quota of 50 GB. If the group mailbox quota is reached, people sending emails to the group receive a non-delivery report. Hence, it’s a good practice to remove the older content from group mailboxes, to ensure the group mailbox doesn’t reach its quota. 
+Each Microsoft 365 group comes equipped with a dedicated mailbox that stores the emails received on the group. The group mailbox is also used by applications like SharePoint Online, Viva Engage, Teams etc. The group mailbox is equipped with initial storage quota of 50 GB. If the group mailbox quota is reached, people sending emails to the group receive a non-delivery report. Hence, it’s a good practice to remove the older content from group mailboxes, to ensure the group mailbox doesn’t reach its quota. 
 
 The following ways help you understand how the quota calculation works, best practices or proactive approach taken to ensure the group mailbox doesn't reach its quota. And the course of action to be performed if the group mailbox as reached or exceeded its quota.
 
@@ -49,20 +49,20 @@ As mentioned earlier, the group mailbox is used for various applications to stor
 
    The group mailbox is distributed in various `TargetQuota`, namely System, Recoverable and User. The folders matching `TargetQuota` “User” is the only one considered in the calculation of the group quota.  
 
-2. Use the following command to verify the folder size that’s occupying User data: 
+1. Use the following command to verify the folder size that’s occupying User data: 
 
    ```PowerShell
    Get-MailboxFolderStatistics <groupname> | where { $_.TargetQuota -like 'User' } | ft Name,FolderPath,FolderType,FolderSize 
 
    Get-MailboxFolderStatistics <groupname> -FolderScope NonIPMRoot | where { $_.TargetQuota -like 'User' } | ft Name,FolderType,*size* 
    ```
-3. Check the folders quota or size.
+1. Check the folders quota or size.
 
-4. If the folder consuming the space is `SharePointWebPartsConnectorMessages`, as mentioned in [Use the Connector web part](https://support.microsoft.com/en-us/office/use-the-connector-web-part-db0756aa-f78f-4b74-8b19-be5dca0420e1?ns=spostandard&version=16&syslcid=1033&uilcid=1033&appver=spo160&helpid=wssenduser_useconnectorwebpart_fl862286&ui=en-us&rs=en-us&ad=us)then do the following:
+1. If the folder consuming the space is `SharePointWebPartsConnectorMessages`, as mentioned in [Use the Connector web part](https://support.microsoft.com/en-us/office/use-the-connector-web-part-db0756aa-f78f-4b74-8b19-be5dca0420e1?ns=spostandard&version=16&syslcid=1033&uilcid=1033&appver=spo160&helpid=wssenduser_useconnectorwebpart_fl862286&ui=en-us&rs=en-us&ad=us)then do the following:
 
    1. Disable the connector if not used. 
 
-   2. Wait for the messages to be cleared by default in 90 days. 
+   1. Wait for the messages to be cleared by default in 90 days. 
 
-5. If there's no special folder occupying the group mailbox size, [apply the group mailbox retention policy,](/microsoft-365/compliance/create-retention-policies) and wait for retention policy to clean up the emails from group mailbox. 
-  
+1. If there's no special folder occupying the group mailbox size, [apply the group mailbox retention policy,](/microsoft-365/compliance/create-retention-policies) and wait for retention policy to clean up the emails from group mailbox.
+

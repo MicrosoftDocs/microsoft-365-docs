@@ -1,5 +1,5 @@
 ---
-title: Redirecting accounts from Microsoft Defender for Cloud Apps to Microsoft 365 Defender (Preview)
+title: Redirecting accounts from Microsoft Defender for Cloud Apps to Microsoft 365 Defender
 description: How to redirect accounts and sessions from Defender for Cloud Apps to Microsoft 365 Defender.
 keywords: Microsoft 365 Defender, Getting started with Microsoft 365 Defender, security center redirection
 search.product: eADQiWindows 10XVcnh
@@ -11,8 +11,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: dacurwin
-author: dcurwin
+ms.author: bagol
+author: batamig
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -22,7 +22,7 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ---
-# Redirecting accounts from Microsoft Defender for Cloud Apps to Microsoft 365 Defender (Preview)
+# Redirecting accounts from Microsoft Defender for Cloud Apps to Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -32,6 +32,8 @@ ms.topic: conceptual
 - Defender for Cloud Apps
 
 This guide explains how to route accounts to Microsoft 365 Defender by enabling automatic redirection from the former Microsoft Defender for Cloud Apps portal (`portal.cloudappsecurity.com`), to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>.
+
+Customers using preview features are now automatically redirected to Microsoft 365 Defender from the classic Microsoft Defender for Cloud Apps portal. Admins can still update the redirect setting to continue using the classic Defender for Cloud Apps portal.
 
 ## What to expect
 
@@ -81,4 +83,5 @@ Once disabled, accounts will no longer be routed to security.microsoft.com.
 - [Microsoft 365 Defender overview](microsoft-365-defender.md)
 - [About Microsoft 365 Defender](https://www.microsoft.com/microsoft-365/security/microsoft-365-defender)
 - [Microsoft security portals and admin centers](portals.md)
-- [Microsoft Defender for Cloud Apps in Microsoft 365 Defender (Preview)](microsoft-365-security-center-defender-cloud-apps.md)
+- [Microsoft Defender for Cloud Apps in Microsoft 365 Defender](microsoft-365-security-center-defender-cloud-apps.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

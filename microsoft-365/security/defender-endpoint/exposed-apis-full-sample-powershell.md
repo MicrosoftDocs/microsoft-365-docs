@@ -16,7 +16,8 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
-ms.topic: conceptual
+- must-keep
+ms.topic: reference
 ms.date: 01/25/2023
 ms.subservice: mde
 ms.custom: api
@@ -28,6 +29,8 @@ search.appverid: met150
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:** 
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Business](../defender-business/index.yml)
 
@@ -54,7 +57,7 @@ In this section, we share PowerShell samples to
 ## Preparation instructions
 
 - Open a PowerShell window.
-- If your policy does not allow you to run the PowerShell commands, you can run the below command:
+- If your policy doesn't allow you to run the PowerShell commands, you can run the below command:
   ```
   Set-ExecutionPolicy -ExecutionPolicy Bypass
   ```
@@ -65,7 +68,7 @@ For more information, see [PowerShell documentation](/powershell/module/microsof
 
 Run the below:
 
-- $tenantId: ID of the tenant on behalf of which you want to run the query (i.e., the query will be run on the data of this tenant)
+- $tenantId: ID of the tenant on behalf of which you want to run the query (that is, the query is run on the data of this tenant)
 - $appId: ID of your AAD app (the app must have 'Run advanced queries' permission to Defender for Endpoint)
 - $appSecret: Secret of your Azure AD app
 
@@ -137,3 +140,4 @@ $response
 - [Microsoft Defender for Endpoint APIs](apis-intro.md)
 - [Advanced Hunting API](run-advanced-query-api.md)
 - [Advanced Hunting using Python](run-advanced-query-sample-python.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

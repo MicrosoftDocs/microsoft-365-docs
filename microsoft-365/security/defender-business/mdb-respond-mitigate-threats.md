@@ -10,8 +10,8 @@ ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 09/14/2022
-ms.reviewer: shlomiakirav
+ms.date: 09/06/2023
+ms.reviewer: nehabha
 f1.keywords: NOCSH 
 ms.collection: 
 - SMB
@@ -24,18 +24,17 @@ ms.collection:
 
 The Microsoft 365 Defender portal enables your security team to respond to and mitigate detected threats. This article walks you through an example of how you can use Defender for Business.
 
-
 ## View detected threats
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
-2. Notice cards on the Home page. Cards tell you at a glance how many threats were detected, along with how many user accounts, endpoints (devices), and other assets were affected. The following image is an example of cards you might see:
+2. Notice cards on the Home page. These cards were designed to tell you at a glance how many threats were detected, how many user accounts, and what endpoints (devices) or other assets were affected. The following image is an example of cards you might see:
 
    :::image type="content" source="../../media/defender-business/mdb-examplecards.png" alt-text="Screenshot of cards in the Microsoft 365 Defender portal":::
 
 3. Select a button or link on the card to view more information and take action. As an example, our **Devices at risk** card includes a **View details** button. Selecting that button takes us to the **Devices** list, as shown in the following image:
 
-   :::image type="content" source="../../media/defender-business/mdb-deviceinventory.png" alt-text="Screenshot of device inventory":::
+   :::image type="content" source="../../media/defender-business/mdb-device-inventory.png" alt-text="Screenshot of device inventory":::
 
    The **Devices** page lists company devices, along with their risk level and exposure level.
 

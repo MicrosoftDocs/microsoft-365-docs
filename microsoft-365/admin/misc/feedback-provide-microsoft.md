@@ -2,8 +2,8 @@
 title: "Learn about how to provide feedback to Microsoft"
 f1.keywords:
 - NOCSH
-ms.author: Kwekua
-author: Kwekua
+ms.author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 10/25/2021
 audience: Admin

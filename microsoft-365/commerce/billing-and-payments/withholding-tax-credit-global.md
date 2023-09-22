@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller, martinl, melmar
+ms.reviewer: jkinma, nicholak, martinl, melmar
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-business
@@ -21,7 +21,7 @@ ms.custom:
 - commerce_billing
 - AdminSurgePortfolio
 monikerRange: 'o365-worldwide'
-ms.date: 05/27/2021
+ms.date: 03/31/2023
 ---
 
 # Request a credit for Withholding Tax on your account (Global customers)
@@ -30,12 +30,12 @@ ms.date: 05/27/2021
 >
 > If your organization is based in India, please see [Request a credit for Withholding Tax on your account (India customers)](withholding-tax-credit-india.md).
 
-Some customers receive Web Direct (Azure and Microsoft 365) invoices billed by a Microsoft entity located in a foreign country. If your organization makes cross-border payments to that entity, the Tax Authority in your country might require you to withhold part of the cross-border payment as withholding tax (WHT). If you withheld taxes as required by your Tax Authority when remitting  payments to Microsoft, this article explains the process for claiming a credit for the tax withheld.
+Some customers receive Web Direct (Azure and Microsoft 365) invoices billed by a Microsoft entity located in a foreign country/region. If your organization makes cross-border payments to that entity, the Tax Authority in your country/region might require you to withhold part of the cross-border payment as withholding tax (WHT). If you withheld taxes as required by your Tax Authority when remitting  payments to Microsoft, this article explains the process for claiming a credit for the tax withheld.
 
 > [!IMPORTANT]
-> Starting on April 1, 2023, we will stop accepting checks as a payment method for subscriptions paid by invoice. Beginning on that date, pay by check will no longer be available as a payment option, and check payment instructions will be removed from invoices. You can still pay for your invoice by electronic funds transfer (EFT). See your invoice for EFT payment information. If you're an existing customer who currently pays by check, you have until September 30, 2023 to change to paying by EFT, and avoid possible service disruption.
+> As of April 1, 2023, we no longer accept checks as a payment method for subscriptions paid by invoice. Pay by check is no longer available as a payment option, and check payment instructions have been removed from invoices. You can still pay for your invoice by wire transfer. See your invoice for wire transfer payment information. If you're an existing customer who currently pays by check, you have until September 30, 2023 to change to paying by wire transfer, and avoid possible service disruption.
 
-## For invoice pay customers who pay by check or wire
+## For invoice pay customers who pay by wire transfer
 
 If you withheld tax when remitting payment and deposited the withheld tax with the relevant Tax Authority, you must submit a WHT request to clear the outstanding balance in your account.
 
@@ -69,7 +69,7 @@ If there's a problem with your request, the review team might require correction
 
 ## Approved requests
 
-**For customers paying by check or wire:** Approved WHT requests are settled against the unpaid portion of the invoice amount reflected in Withholding Tax Credit Form.
+**For customers paying by wire transfer:** Approved WHT requests are settled against the unpaid portion of the invoice amount reflected in Withholding Tax Credit Form.
 
 After your claim is approved, it's reflected in the next billing cycle. The WHT amount paid is included in the payment section of your next invoice. The amount is also displayed under the paid amount in the customer portal.
 

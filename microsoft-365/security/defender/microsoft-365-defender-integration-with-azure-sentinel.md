@@ -17,7 +17,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: 
   - m365-security
-  - tier1
+  - tier3
 ms.topic: conceptual
 search.appverid: 
   - MOE150
@@ -58,3 +58,4 @@ Here's how it works.
 
 - [Overview of incidents in Microsoft 365 Defender](incidents-overview.md)
 - [Investigate incidents with Microsoft Sentinel](/azure/sentinel/tutorial-investigate-cases)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

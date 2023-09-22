@@ -3,9 +3,9 @@ title: "Idle session timeout for Microsoft 365"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
-author: kwekua
+author: kwekuako
 manager: scotv
-ms.date: 03/03/2022
+ms.date: 09/18/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -18,8 +18,6 @@ description: "Set how long user's session will last in Microsoft 365 before they
 ---
 
 # Idle session timeout for Microsoft 365
-
-<!-- Add metadata: localization, AdminSurgePortfolio, admindeeplinkMAC. remove robots nofollow -->
 
 > [!IMPORTANT]
 > Idle session timeout isn't available for Microsoft 365 operated by 21Vianet or Microsoft 365 Germany.
@@ -48,7 +46,7 @@ Idle session timeout is one of the many security measures in Microsoft 365. To l
 
 When a user has been inactive in Microsoft 365 web apps for the time period you chose, they'll see the following prompt. They have to select **Stay signed in** or they'll be signed out.
 
-:::image type="content" source="../../media/idle-session-timeout.png" alt-text="Screenshot: Prompt letting you know that your session is about to expire. Select Stay signed in so you don't get signed out of Microsoft 365 web apps":::
+:::image type="content" source="../../media/idle-session-timeout.png" lightbox="../../media/idle-session-timeout.png" alt-text="Screenshot: Prompt letting you know that your session is about to expire. Select Stay signed in so you don't get signed out of Microsoft 365 web apps":::
 
 ## Details about idle session timeout
 
@@ -59,13 +57,19 @@ When a user has been inactive in Microsoft 365 web apps for the time period you 
     - OneDrive for Business
 
     - SharePoint Online (SPO)
+ 
+    - Microsoft Fabric
 
-    - Office.com and other start pages
+    - Microsoft365.com and other start pages
 
-    - Office (Word, Excel, PowerPoint) on the web
+    - Microsoft 365 apps (Word, Excel, PowerPoint) on the web
 
     - Microsoft 365 Admin Center
 
+    - M365 Defender Portal
+
+    - Microsoft Purview Compliance Portal
+    
 - Activity refers to any client-side user interaction happening in the context of the web app. For example, mouse clicks and keyboard presses.  
 
 - Idle session timeout works on a per-browser session basis. A user’s activity on Microsoft Edge is treated differently than their activity in other browsers such as Google Chrome. Users will be signed out from all tabs corresponding to their account within that browser session.
@@ -111,7 +115,7 @@ If you're already using existing Outlook web app and SharePoint Online idle time
 
 ### What happens if I am inactive on an included Microsoft 365 web app, but active on a Microsoft web app or SaaS web app that doesn't have idle session timeout turned on?  
 
-The following Microsoft 365 web apps are supported.
+The following Microsoft 365 apps are supported.
 
 - Outlook Web App
 
@@ -119,13 +123,23 @@ The following Microsoft 365 web apps are supported.
 
 - SharePoint Online (SPO)
 
-- Office.com and other start pages
+- Microsoft Fabric
 
-- Office (Word, Excel, PowerPoint) on the web
+- Microsoft365.com and other start pages
 
-- Microsoft 365 Admin Center
+- Microsoft 365 apps (Word, Excel, PowerPoint) on the web
+
+- Microsoft 365 admin center
+
+- M365 Defender Portal
+
+- Microsoft Purview Compliance Portal
 
 If you're working on a different web app with the same account, the activity in that web app won't be applied to the idle session timeout.
+
+### I am active in Azure Portal, but I am logged out of other M365 Apps for inactivity.  Why am I logged out?
+
+Azure Portal supports a similar inactivity feature, but is supported by Azure Portal only. For more information, see [Azure Portal: Signing-Out + Notification](/azure/azure-portal/set-preferences#signing-out--notifications).
 
 ### I want to make changes to the idle session timeout policy or delete it. How can I do that?
 
@@ -139,4 +153,4 @@ Delete the policy:
 
 1. In the Microsoft 365 admin center, select **Org settings**, go to the **Security & Privacy** tab and select **Idle session timeout**.
 
-2. Uncheck **Turn on to set the period of inactivity for users to be signed off of Office web apps** and select **Save**.
+2. Uncheck **Turn on to set the period of inactivity for users to be signed off of Microsoft 365 apps** and select **Save**.

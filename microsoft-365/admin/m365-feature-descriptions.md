@@ -5,7 +5,7 @@ author: pebaum
 manager: scotv
 ms.date: 06/18/2022
 audience: ITPro
-ms.topic: reference
+ms.topic: conceptual
 f1.keywords:
 - 'microsoft-365-and-office-365-general-information'
 ms.service: microsoft-365-business
@@ -200,7 +200,7 @@ Microsoft Office 365 provides the following help and training resources. Communi
 
 **Community:** The Office 365 Community is a single destination for self-help support information. It has the latest information to help customers find answers to a variety of technical, billing, and service questions through support forums, wikis, and blogs. The support forums are staffed and moderated by Microsoft Support agents. From the Office 365 Community home page, customers can access the following resources: Forums, Wikis, Blogs. For more information, visit the [Office 365 community](https://techcommunity.microsoft.com/).
 
-**Forums:** Forums are intended to provide community participants with an online destination where they can post technical support questions and discuss topics related to the Office 365 services. Here are the forums that are available: Deploy Office 365, Directory integration services, Domains in Office 365, Downloads, Email and calendar, IM, meetings and conferencing, Manage Office 365, Manage projects, Mobile access, Office 365 for Mac, Office apps, Sites and document sharing, Trust Center documents, Upgrade to Office 365, Yammer
+**Forums:** Forums are intended to provide community participants with an online destination where they can post technical support questions and discuss topics related to the Office 365 services. Here are the forums that are available: Deploy Office 365, Directory integration services, Domains in Office 365, Downloads, Email and calendar, IM, meetings and conferencing, Manage Office 365, Manage projects, Mobile access, Office 365 for Mac, Office apps, Sites and document sharing, Trust Center documents, Upgrade to Office 365, Viva Engage
 
 **Wikis:** Wikis include wiki pages created by Microsoft employees and authenticated community members. This collaborative site encompasses the latest collective content about specific Office 365 technical scenarios. Each individual wiki page typically includes links to websites, webcasts, troubleshooting videos, FAQ pages, documents, and downloads about that specific technical scenario. Historical tracking of every revision date and author alias is provided along with the ability to compare versions.
 

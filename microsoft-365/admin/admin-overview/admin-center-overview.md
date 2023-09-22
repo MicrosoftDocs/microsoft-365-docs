@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
-ms.date: 11/18/2020
+ms.date: 08/10/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -58,11 +58,11 @@ Here are the features and settings you'll find in the left-hand navigation of th
 |**Resources**|Create and manage resources, like a SharePoint site collection. Learn how to [create site collections](/sharepoint/create-site-collection).|
 |**Billing**|View, purchase, or cancel subscriptions for your organization. View past billing statements or view the number of assigned licenses to individual users. Learn how to [manage billing](../../commerce/index.yml).|
 |**Support**|View existing service requests or create new ones. Learn more in [Contact support for business products - Admin Help](../../business-video/get-help-support.md).|
-|**Settings**|Manage global settings for apps like email, sites, and the Office suite. Change your password policy and expiration date. Add and update domain names like contoso.com. Change your organization profile and release preferences. And choose whether partners can access your admin center.|
-|**Setup**|Manage existing domains, turn on and manage multi-factor authentication, manage admin access, migrate user mailboxes to Office 365, manage feature updates, and help users install their Office apps.|
-|**Reports**|See at a glance how your organization is using Microsoft 365 with detailed reports on email use, Office activations, and more. Learn how to use the new [activity reports](../activity-reports/activity-reports.md).|
+|**Settings**|Manage global settings for apps like email, sites, and Microsoft 365. Change your password policy and expiration date. Add and update domain names like contoso.com. Change your organization profile and release preferences. And choose whether partners can access your admin center.|
+|**Setup**|Manage existing domains, turn on and manage multi-factor authentication, manage admin access, migrate user mailboxes to Microsoft 365, manage feature updates, and help users install their Microsoft 365 apps.|
+|**Reports**|See at a glance how your organization is using Microsoft 365 with detailed reports on email use, Microsoft 365 activations, and more. Learn how to use the new [activity reports](../activity-reports/activity-reports.md).|
 |**Health**|View health at a glance. You can also check out more details and the health history. See [How to check service health](../../enterprise/view-service-health.md) and [How to check Windows release health](/windows/deployment/update/check-release-health) for more information. <p> Use Message center to keep track of upcoming changes to features and services. We post announcements there with information that helps you plan for change and understand how it may affect users. Get more details in [Message center](../manage/message-center.md).|
-|**Admin centers**|Open separate admin centers for Exchange, Skype for Business, SharePoint, Yammer, and Azure AD. Each admin center includes all available settings for that service. <p> For example, in the Exchange admin center, set up and manage email, calendars, distribution groups, and more. In the SharePoint admin center, create and manage site collections, site settings, and OneDrive for Business. In the Skype for Business admin center, set up instant messaging notifications, dial-in conferencing, and online presence. <p> Learn more about the [Exchange admin center](/exchange/exchange-admin-center) and [SharePoint Admin Center](/sharepoint/sharepoint-online). <p> **Note:** The admin centers available to you depend on your plan and region.|
+|**Admin centers**|Open separate admin centers for Exchange, Skype for Business, SharePoint, Viva Engage, and Azure AD. Each admin center includes all available settings for that service. <p> For example, in the Exchange admin center, set up and manage email, calendars, distribution groups, and more. In the SharePoint admin center, create and manage site collections, site settings, and OneDrive for Business. In the Skype for Business admin center, set up instant messaging notifications, dial-in conferencing, and online presence. <p> Learn more about the [Exchange admin center](/exchange/exchange-admin-center) and [SharePoint Admin Center](/sharepoint/sharepoint-online). <p> **Note:** The admin centers available to you depend on your plan and region.|
 
 ## Two dashboard views
 
@@ -81,7 +81,7 @@ Check out this video and others on our [YouTube channel](https://go.microsoft.co
 
 With the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, you can reset passwords, view your invoice, add or remove users, and much more all in one place.
 
-Sign in to Office.com with your work account, and select the app launcher.
+Sign in to Microsoft365.com with your work account, and select the app launcher.
 
 If you have permission to access the admin center, you'll see **Admin** in the list. Select it.
 
@@ -162,7 +162,7 @@ Don't see your questions answered here? Go to the **Feedback** section at the bo
 
 ### Which Microsoft 365 plans are available to trial or buy?
 
-Microsoft 365 is a complete, intelligent solution that includes Office 365, Windows 10, and Enterprise Mobility + Security that empowers everyone to be creative and work together, securely. The following Microsoft 365 subscriptions are available in the admin center for you to try or buy now:
+Microsoft 365 is a complete, intelligent solution that includes Microsoft 365, Windows 10, and Enterprise Mobility + Security that empowers everyone to be creative and work together, securely. The following Microsoft 365 subscriptions are available in the admin center for you to try or buy now:
 
 - Microsoft 365 for business
 - Microsoft 365 Enterprise E3

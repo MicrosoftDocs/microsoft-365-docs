@@ -15,7 +15,8 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
-ms.topic: conceptual
+- must-keep
+ms.topic: reference
 ms.custom: api
 search.appverid: met150
 ms.date: 02/02/2021
@@ -48,7 +49,7 @@ The following information lists the updates made to the Microsoft Defender for E
 
 - Added new Export assessment API method  - _Delta Export software vulnerabilities assessment (JSON response)_ [Export assessment methods and properties per device](get-assessment-methods-properties.md).
 
-### 05.25.2021
+### 25.05.2021
 
 - Added new API [Export assessment methods and properties per device](get-assessment-methods-properties.md).
 
@@ -86,3 +87,4 @@ The following information lists the updates made to the Microsoft Defender for E
 ### 01.09.2020
 
 - Added option to expand the Alert entity with its related Evidence. See [List Alerts](get-alerts.md).
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

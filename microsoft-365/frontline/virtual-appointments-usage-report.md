@@ -1,8 +1,8 @@
 ---
 title: Microsoft Teams Virtual Appointments usage report
-author: daisyfell
-ms.author: daisyfeller
-manager: samanro
+author: lana-chin
+ms.author: heidip
+manager: serdars
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-frontline
@@ -15,7 +15,7 @@ ms.collection:
   - M365-collaboration
   - m365-frontline
   - m365initiative-meetings
-  - tier1
+  - m365-virtual-appointments 
 description: Learn how to use the Virtual Appointments usage report in the Microsoft Teams admin center to get an overview of virtual appointment activity in your organization.
 appliesto: 
   - Microsoft Teams
@@ -27,7 +27,7 @@ ms.date: 02/01/2023
 
 ![Information icon](media/info.png) **This feature requires a [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) or a Teams EHR connector license.**
 
-The Virtual Appointments usage report in the Microsoft Teams admin center gives you an overview of Teams Virtual Appointments activity in your organization. You can view detailed activity for virtual appointments scheduled through the [Bookings app](https://support.microsoft.com/office/what-is-bookings-42d4e852-8e99-4d8f-9b70-d7fc93973cb5) and the [Microsoft Teams Electronic Health Record (EHR) connector](teams-in-hc.md#virtual-appointments-and-electronic-healthcare-record-ehr-integration).
+The Virtual Appointments usage report in the Microsoft Teams admin center gives you an overview of Teams Virtual Appointments activity in your organization. You can view detailed activity for virtual appointments scheduled through the [Bookings app](https://support.microsoft.com/office/what-is-bookings-42d4e852-8e99-4d8f-9b70-d7fc93973cb5) and the [Microsoft Teams Electronic Health Record (EHR) connector](teams-in-hc.md#provide-seamless-virtual-visits).
 
 To view the report, you must be a Global admin, Teams admin, Global reader, or Report reader.
 
@@ -119,7 +119,7 @@ This tab shows appointments scheduled through Bookings.
 
 ### EHR
 
-You'll see this tab if you have a license that includes the Teams EHR connector. To learn more, see [Integration into Cerner EHR](ehr-admin-cerner.md) or [Integration into Epic EHR](ehr-admin-epic.md).
+You'll see this tab if you have a license that includes the Teams EHR connector. To learn more, see [Integration into Oracle Health EHR](ehr-admin-oracle-health.md) or [Integration into Epic EHR](ehr-admin-epic.md).
 
 :::image type="content" source="media/va-usage-report-ehr.png" alt-text="Screenshot of the EHR tab of the Virtual Appointments usage report showing numbered callouts." lightbox="media/va-usage-report-ehr.png":::
 
@@ -135,5 +135,5 @@ You'll see this tab if you have a license that includes the Teams EHR connector.
 
 - [Advanced Virtual Appointments activity report](advanced-virtual-appointments-activity-report.md)
 - [Virtual Appointments with Teams - Integration into Epic EHR](ehr-admin-epic.md)
-- [Virtual Appointments with Teams - Integration into Cerner EHR](ehr-admin-cerner.md)
+- [Virtual Appointments with Teams - Integration into Oracle Health EHR](ehr-admin-oracle-health.md)
 - [Teams Premium licensing](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams)

@@ -21,6 +21,8 @@ ms.date: 03/14/2023
 # Customize controlled folder access
 
 **Applies to:**
+
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Microsoft Defender Antivirus
@@ -176,3 +178,4 @@ For more information about customizing the notification when a rule is triggered
 - [Protect important folders with controlled folder access](controlled-folders.md)
 - [Enable controlled folder access](enable-controlled-folders.md)
 - [Enable attack surface reduction rules](enable-attack-surface-reduction.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

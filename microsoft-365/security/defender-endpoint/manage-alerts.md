@@ -122,6 +122,9 @@ Alternatively, the team leader might assign the alert to the **Resolved** queue 
 
 You can choose not to set a classification, or specify whether an alert is a true alert or a false alert. It's important to provide the classification of true positive/false positive. This classification is used to monitor alert quality, and make alerts more accurate. The "determination" field defines additional fidelity for a "true positive" classification.
 
+The steps to classify alerts are included in this video:
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LHJq]
+
 ## Add comments and view the history of an alert
 
 You can add comments and view historical events about an alert to see previous changes made to the alert.
@@ -141,3 +144,6 @@ Added comments instantly appear on the pane.
 - [Investigate an IP address associated with a Microsoft Defender for Endpoint alert](investigate-ip.md)
 - [Investigate a domain associated with a Microsoft Defender for Endpoint alert](investigate-domain.md)
 - [Investigate a user account in Microsoft Defender for Endpoint](investigate-user.md)
+
+
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

@@ -56,11 +56,13 @@ The following table summarizes the steps you would need to take to deploy and ma
 |[Network Extension policy](#network-filter)|MDATP_NetExt.xml|N/A|
 |[Configure Microsoft AutoUpdate (MAU)](mac-updates.md#intune)|MDATP_Microsoft_AutoUpdate.xml|com.microsoft.autoupdate2|
 |[Microsoft Defender for Endpoint configuration settings](mac-preferences.md#intune-full-profile) <p> **Note:** If you're planning to run a third-party AV for macOS, set `passiveMode` to `true`.|MDATP_WDAV_and_exclusion_settings_Preferences.xml|com.microsoft.wdav|
-|[Configure Microsoft Defender for Endpoint and MS AutoUpdate (MAU) notifications](mac-updates.md)|MDATP_MDAV_Tray_and_AutoUpdate2.mobileconfig|com.microsoft.autoupdate2 or com.microsoft.wdav.tray|
+|[Configure Microsoft Defender for Endpoint and MS AutoUpdate (MAU) notifications](/microsoft-365/security/defender-endpoint/mac-install-with-intune#notifications)|MDATP_MDAV_Tray_and_AutoUpdate2.mobileconfig|com.microsoft.autoupdate2 or com.microsoft.wdav.tray|
 
 ## Download the onboarding package
 
-Download the onboarding packages from Microsoft 365 Defender portal:
+Download the onboarding packages from Microsoft 365 Defender portal.
+
+[!INCLUDE [Defender for Endpoint repackaging warning](../../includes/repackaging-warning.md)]
 
 1. In Microsoft 365 Defender portal, go to **Settings** \> **Endpoints** \> **Device management** \> **Onboarding**.
 
@@ -91,7 +93,7 @@ In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2
 
 ### Onboarding blob
 
-This profile contains a license information for Microsoft Defender for Endpoint. Without license information, Microsoft Defender for Endpoint will report that it is not licensed.
+This profile contains a license information for Microsoft Defender for Endpoint. Without license information, Microsoft Defender for Endpoint will report that it isn't licensed.
 
 1. Select **Create Profile** under **Configuration Profiles**.
 1. Select **Platform**=**macOS**, **Profile type**=**Templates**. **Template name**=**Custom**. Click **Create**.
@@ -99,12 +101,12 @@ This profile contains a license information for Microsoft Defender for Endpoint.
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/mdatp-6-systemconfigurationprofiles-1.png" alt-text="The Custom Configuration Profile creation page" lightbox="images/mdatp-6-systemconfigurationprofiles-1.png":::
 
-1. Choose a name for the profile, e.g., "Defender for Cloud or Endpoint onboarding for macOS". Click **Next**.
+1. Choose a name for the profile, for example, "Defender for Cloud or Endpoint onboarding for macOS". Click **Next**.
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/mdatp-6-systemconfigurationprofiles-2.png" alt-text="The Custom Configuration Profile name field" lightbox="images/mdatp-6-systemconfigurationprofiles-2.png":::
 
-1. Choose a name for the configuration profile name, e.g., "Defender for Endpoint onboarding for macOS".
+1. Choose a name for the configuration profile name, for example, "Defender for Endpoint onboarding for macOS".
 1. Choose a [deployment channel](/mem/intune/fundamentals/whats-new#new-deployment-channel-setting-for-custom-device-configuration-profiles-on-macos-devices).
 1. Select intune/WindowsDefenderATPOnboarding.xml that you extracted from the onboarding package above as configuration profile file.
 
@@ -115,13 +117,10 @@ This profile contains a license information for Microsoft Defender for Endpoint.
 1. Assign devices on the **Assignment** tab. Click **Next**.
 
     > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/mdatp-6-systemconfigurationprofiles-2.png" alt-text="The custom configuration profile - assignment" lightbox="images/mdatp-6-systemconfigurationprofiles-2.png":::
+    > :::image type="content" source="images/mdatp-6-systemconfigurationprofiles-3.png" alt-text="The completion of the custom configuration profile." lightbox="images/mdatp-6-systemconfigurationprofiles-3.png":::
 
 1. Review and **Create**.
 1. Open **Devices** \> **Configuration profiles**, you can see your created profile there.
-
-    > [!div class="mx-imgBorder"]
-    > :::image type="content" source="images/mdatp-6-systemconfigurationprofiles-3.png" alt-text="The completion of the custom configuration profile" lightbox="images/mdatp-6-systemconfigurationprofiles-3.png":::
 
 ### Approve System Extensions
 
@@ -143,7 +142,9 @@ This profile is needed for macOS 11 (Big Sur) or later. It will be ignored on ol
 1. In the **Assignments** tab, assign this profile to **All Users & All devices**.
 1. Review and create this configuration profile.
 
+
 ### Full Disk Access
+
 
 > [!NOTE]
 > Enabling **TCC** (Transparency, Consent & Control) through an Mobile Device Management solution such as [Intune](mac-install-with-intune.md), will eliminate the risk of Defender for Endpoint losing **Full Disk Access** Authorization to function properly.
@@ -280,3 +281,4 @@ For more information on how to find the automatically generated log that is crea
 ## Uninstallation
 
 See [Uninstalling](mac-resources.md#uninstalling) for details on how to remove Microsoft Defender for Endpoint on macOS from client devices.
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

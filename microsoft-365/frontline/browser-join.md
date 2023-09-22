@@ -1,8 +1,8 @@
 ---
 title: Manage the join experience for Teams Virtual Appointments on browsers
-author: daisyfell
-ms.author: daisyfeller
-manager: samanro
+author: lana-chin
+ms.author: heidip
+manager: serdars
 audience: ITPro
 ms.topic: how-to
 ms.service: microsoft-365-frontline 
@@ -21,8 +21,8 @@ ms.collection:
   - m365solution-scenario
   - m365-frontline
   - highpri
-  - tier2
   - m365initiative-meetings
+  - m365-virtual-appointments 
 ms.reviewer: hafarmer
 description: Learn about the join experience for Teams Virtual Appointments on browsers. 
 appliesto: 
@@ -43,7 +43,7 @@ Currently, browser join is available for appointments that are scheduled through
 - [The Bookings app](https://support.microsoft.com/office/what-is-bookings-42d4e852-8e99-4d8f-9b70-d7fc93973cb5)
 - Microsoft Teams Electronic Health Record (EHR) connector
 
-  - Integration with [Cerner EHR](ehr-admin-cerner.md)
+  - Integration with [Oracle Health EHR](ehr-admin-oracle-health.md)
   - Integration with [Epic EHR](ehr-admin-epic.md)
 
 ## Set up browser join
@@ -73,7 +73,7 @@ On the **Bookings schedule** tab of the Virtual Appointments app or in the Booki
 
 No setup is needed by you or your staff!
 
-**Integration with Cerner EHR**: The Teams EHR connector supports patients joining virtual appointments through a link in the SMS text message. At the time of the appointment, patients can join by tapping the link in the SMS text message, and Teams opens in a browser.
+**Integration with Oracle Health EHR**: The Teams EHR connector supports patients joining virtual appointments through a link in the SMS text message. At the time of the appointment, patients can join by tapping the link in the SMS text message, and Teams opens in a browser.
 
 **Integration with Epic EHR**: The Teams EHR connector supports patients joining virtual appointments through MyChart web and mobile. At the time of the appointment, patients can start the appointment from MyChart by using the **Begin virtual visit** button, and Teams opens in a browser.
 
@@ -98,7 +98,7 @@ Here are the browsers that are currently supported. We support the latest versio
 |Platform  |Google Chrome |Apple Safari |Microsoft Edge (Chromium)|
 |---------|:---|:---|:---:|
 |Android   | &#x2714; &sup1;      |         |         |
-|iOS    |         | &#x2714; &sup1; &sup2; |         |
+|iOS    | &#x2714; | &#x2714; &sup1; &sup2; |         |
 |macOS     | &#x2714; | &#x2714;|         |
 |Windows    | &#x2714; |   | &#x2714; |
 |Ubuntu/Linux     | &#x2714;         |     |         |
@@ -113,7 +113,7 @@ Here are some things about the user experience to know about with browser join.
 
 ### Screen sharing
 
-The staff member who conducts the appointment can share their screen from their Teams desktop, mobile, or web client with an attendee who joins from a desktop or mobile browser. However, attendees can't share their screen from a desktop or mobile browser.
+The staff member who conducts the appointment can share their screen from their Teams desktop, mobile, or web client with an attendee who joins from a desktop or mobile browser. Attendees can share their screen when joining on desktop, but can't share on a mobile browser.
 
 ### Live captions
 

@@ -1,14 +1,13 @@
 ---
-title: Manage your Microsoft Defender for Endpoint subscription settings across client devices
+title: Manage your Microsoft Defender for Endpoint subscription settings across client devices (preview!)
 description: Learn about your options for managing your Defender for Endpoint subscription settings. Choose Plan 1, Plan 2, or mixed mode.
-keywords: Defender for Endpoint, choose plan 1, choose plan 2, mixed mode, device tag, endpoint protection, endpoint security, device security, cybersecurity
 search.appverid: MET150  
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: overview
-ms.date: 03/06/2023
+ms.date: 08/05/2023
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
@@ -19,7 +18,7 @@ ms.collection:
 - m365initiative-defender-endpoint
 ---
 
-# Manage Microsoft Defender for Endpoint subscription settings across client devices
+# Manage Microsoft Defender for Endpoint subscription settings across client devices (preview!)
 
 A [mixed-licensing scenario](defender-endpoint-plan-1-2.md#mixed-licensing-scenarios) is a situation in which an organization is using a mix of Defender for Endpoint Plan 1 and Plan 2 licenses. Until recently, mixed-licensing scenarios weren't supported; in cases of multiple subscriptions, the highest functional subscription would take precedence for your tenant. Now, **the ability to manage your subscription settings to accommodate mixed licensing scenarios across client devices is currently in preview**! These capabilities enable you to:
 
@@ -31,7 +30,7 @@ A [mixed-licensing scenario](defender-endpoint-plan-1-2.md#mixed-licensing-scena
 ## Set your tenant to mixed mode and tag devices
 
 > [!IMPORTANT]
-> - **Mixed-mode settings apply to client endpoints only**. Tagging server devices won’t change their subscription state. All server devices running Windows Server or Linux should have appropriate licenses, such as [Defender for Servers](/azure/defender-for-cloud/plan-defender-for-servers-select-plan). See [Options for onboarding servers](defender-endpoint-plan-1-2.md#options-for-onboarding-servers).
+> - **Mixed-mode settings apply to client endpoints only**. Tagging server devices won't change their subscription state. All server devices running Windows Server or Linux should have appropriate licenses, such as [Defender for Servers](/azure/defender-for-cloud/plan-defender-for-servers-select-plan). See [Options for onboarding servers](defender-endpoint-plan-1-2.md#options-for-onboarding-servers).
 > - **Make sure to follow the procedures in this article to try mixed-license scenarios in your environment**. Assigning user licenses in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) doesn't set your tenant to mixed mode. 
 > - Make sure that you have opted in to receive [preview features](preview.md).
 > - **You should have active trial or paid licenses for both Defender for Endpoint Plan 1 and Plan 2**. 
@@ -42,7 +41,7 @@ A [mixed-licensing scenario](defender-endpoint-plan-1-2.md#mixed-licensing-scena
 
 1. As an admin, go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
-2. Go to **Settings** > **Endpoints** > **Licenses**. Your usage report report opens and displays information about your organization’s Defender for Endpoint licenses.
+2. Go to **Settings** > **Endpoints** > **Licenses**. Your usage report opens and displays information about your organization's Defender for Endpoint licenses.
 
 3. Under **Subscription state**, select **Manage subscription settings**. 
 
@@ -113,6 +112,7 @@ For example, suppose that you want to use a tag called `VIP` for all the devices
 
    If you chose to apply Defender for Endpoint Plan 1 to all devices, proceed to [Validate that devices are receiving only Defender for Endpoint Plan 1 capabilities](#validate-that-a-device-is-receiving-only-defender-for-endpoint-plan-1-capabilities).
 
+
 ---
 
 ## Validate that a device is receiving only Defender for Endpoint Plan 1 capabilities
@@ -124,11 +124,13 @@ After you have assigned Defender for Endpoint Plan 1 capabilities to some or all
 2. Select a device that is tagged with `License MDE P1`. You should see that Defender for Endpoint Plan 1 is assigned to the device.
 
 > [!NOTE]
-> Devices that are assigned Defender for Endpoint Plan 1 capabilities will not have vulnerabilities or security recommendations listed.
+> Devices that are assigned Defender for Endpoint Plan 1 capabilities don't have any vulnerabilities or security recommendations listed.
 
 ## Review license usage
 
-The license usage report is estimated based on sign-in activities on the device. To reduce management overhead, there will not be a requirement for device-to-user mapping and assignment. Instead, the license report will provide a utilization estimation that is calculated based on the utilization seen across your organization. It might take up to one day for your usage report to reflect the active usage of your devices.
+The license usage report is estimated based on sign-in activities on the device. Defender for Endpoint Plan 2 licenses are per user, and each user can have up to five concurrent, onboarded devices. To learn more about license terms, see [Microsoft Licensing](https://www.microsoft.com/en-us/licensing/default).  
+
+To reduce management overhead, there's no requirement for device-to-user mapping and assignment. Instead, the license report provides a utilization estimation that is calculated based on device usage seen across your organization. It might take up to one day for your usage report to reflect the active usage of your devices.
 
 > [!IMPORTANT]
 > To access license information, you must have one of the following roles assigned in Azure Active Directory (Azure AD):
@@ -150,3 +152,6 @@ The license usage report is estimated based on sign-in activities on the device.
 - [Get started with Microsoft Security (trial offers)](https://www.microsoft.com/security/business/get-started/start-free-trial)
 - [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)
 - [Microsoft Defender for Business](../defender-business/mdb-overview.md) (endpoint protection for small and medium-sized businesses)
+
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+
