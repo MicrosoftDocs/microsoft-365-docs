@@ -19,12 +19,12 @@ ms.collection:
     - m365-security
     - m365solution-getstarted
     - highpri
-    - tier3
+    - tier1
 ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.date: 02/17/2021
+ms.date: 09/21/2023
 ---
 
 # Turn on Microsoft 365 Defender
