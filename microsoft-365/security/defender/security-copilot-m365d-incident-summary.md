@@ -82,13 +82,13 @@ To provide feedback:
 1. Select the down arrow beside the face icon located at the bottom of the incident summary card.
 :::image type="content" source="../../media/copilot-in-defender/incident-summary/fig5-sec-copilot-m365d-summarize.png" alt-text="Incident summary card showing feedback options for the user" lightbox="../../media/copilot-in-defender/incident-summary/fig5-sec-copilot-m365d-summarize.png":::
 2. From the options, select your feedback.
-:::image type="content" source="../../media/copilot-in-defender/incident-summary/fig6-sec-copilot-m365d-summarize.png" alt-text="Feedback options for the user" lightbox="../../media/copilot-in-defender/incident-summary/fig6-sec-copilot-m365d-summarize.png":::
+:::image type="content" source="../../media/copilot-in-defender/incident-summary/fig6-sec-copilot-m365d-summarize.png" alt-text="Highlighting feedback options for the user" lightbox="../../media/copilot-in-defender/incident-summary/fig6-sec-copilot-m365d-summarize.png":::
 3. Select **Confirmed, it looks great** if the file analysis details are accurate based on your assessment. When the analysis details are confirmed, you can provide more information in the next dialog box.
-:::image type="content" source="../../media/copilot-in-defender/incident-summary/fig7-sec-copilot-m365d-summarize.png" alt-text="Feedback options for the user" lightbox="../../media/copilot-in-defender/incident-summary/fig7-sec-copilot-m365d-summarize.png":::
+:::image type="content" source="../../media/copilot-in-defender/incident-summary/fig7-sec-copilot-m365d-summarize.png" alt-text="Option confirming results" lightbox="../../media/copilot-in-defender/incident-summary/fig7-sec-copilot-m365d-summarize.png":::
 4. Select **Off-target, inaccurate** if any detail is incorrect or incomplete based on your assessment. You can provide more information about your assessment in the next dialog box and submit this assessment to Microsoft.
-:::image type="content" source="../../media/copilot-in-defender/incident-summary/fig8-sec-copilot-m365d-summarize.png" alt-text="Feedback options for the user" lightbox="../../media/copilot-in-defender/incident-summary/fig8-sec-copilot-m365d-summarize.png":::
+:::image type="content" source="../../media/copilot-in-defender/incident-summary/fig8-sec-copilot-m365d-summarize.png" alt-text="Option citing inacccurate results" lightbox="../../media/copilot-in-defender/incident-summary/fig8-sec-copilot-m365d-summarize.png":::
 5. You can also report the results if it contains questionable or ambiguous information by selecting **Potentially harmful, inappropriate**. Provide more information about the results in the next dialog box and select Submit.
-:::image type="content" source="../../media/copilot-in-defender/incident-summary/fig9-sec-copilot-m365d-summarize.png" alt-text="Feedback options for the user" lightbox="../../media/copilot-in-defender/incident-summary/fig9-sec-copilot-m365d-summarize.png":::
+:::image type="content" source="../../media/copilot-in-defender/incident-summary/fig9-sec-copilot-m365d-summarize.png" alt-text="Option to report harmful results" lightbox="../../media/copilot-in-defender/incident-summary/fig9-sec-copilot-m365d-summarize.png":::
 1. You can restart summarizing an incident by selecting **Regenerate**.
 
 ## Next steps
