@@ -159,7 +159,9 @@
               - name: Analyze scripts and codes
                 href: security-copilot-m365d-script-analysis.md
               - name: Create incident reports
-                href: security-copilot-m365d-create-incident-report.md                                                  
+                href: security-copilot-m365d-create-incident-report.md
+              - name: Use guided responses
+                href: security-copilot-m365d-guided-response.md                                                   
        - name: Respond to incidents
          items: 
               - name: Overview
