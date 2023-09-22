@@ -78,7 +78,7 @@ You can validate or report the analysis results provided by Security Copilot. Va
 ## Next steps
 - [Summarize an incident](security-copilot-m365d-incident-summary.md) with Security Copilot in Microsoft 365 Defender
 - Respond to incidents with Security Copilot in Microsoft 365 Defender
-- Create an incident report with Security Copilot in Microsoft 365 Defender
+- [Create an incident report](security-copilot-m365d-create-incident-report.md) with Security Copilot in Microsoft 365 Defender
 
 ## See also
 -	[Security Copilot FAQ](/copilot/rai-faqs-security-copilot.md)
