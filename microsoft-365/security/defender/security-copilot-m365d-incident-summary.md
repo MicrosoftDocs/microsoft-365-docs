@@ -33,18 +33,11 @@ ms.date: 10/10/2023
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
-Microsoft 365 Defender leverages the capabilities of [Security Copilot](/copilot/microsoft-365-copilot-overview.md) to summarize incidents , delivering impactful information and insights to simplify investigation tasks. Attack investigation is a crucial step for incident response teams to successfully defend an organization against further damage from a cyber threat. Investigations can oftentimes be time-consuming since the incident response team needs to gain understanding of how the attack happened, sort through numerous alerts, identify which assets and entities are involved, and understand the scope and impact of the attack.
+Microsoft 365 Defender applies the capabilities of [Security Copilot](/copilot/microsoft-365-copilot-overview.md) to summarize incidents , delivering impactful information and insights to simplify investigation tasks. Attack investigation is a crucial step for incident response teams to successfully defend an organization against further damage from a cyber threat. Investigations can oftentimes be time-consuming. Incident response teams need to understand how the attack happened, sort through numerous alerts, identify which assets and entities are involved, and assess the scope and impact of an attack.
 
 Combining Microsoft 365 Defender’s correlation capabilities and Security Copilot’s AI-powered data processing and contextualization, incident response teams can easily gain the right context to investigate and remediate incidents. Incident response teams are enabled to quickly get important information  through an incident summary.
 
 This guide outlines what to expect and how to access the summarizing capability of Security Copilot within Microsoft 365 Defender, including information on providing feedback.
-
-> [!NOTE]
-> Script analysis functions are continuously in development. Analysis of scripts in languages other than PowerShell, batch, and bash are being evaluated.
-
-The script analysis capability within Microsoft 365 Defender provides an additional capacity to inspect scripts without using external tools. This capability also strips complexity to analysis, minimizing challenges in analysis and allowing security teams to quickly assess and identify a script as malicious or benign.
-
-This guide describes what the script analysis capability is and how it works, including how you can provide feedback on the results generated.
 
 ## Technical requirements
 
@@ -71,7 +64,7 @@ To summarize an incident:
 :::image type="content" source="../../media/copilot-in-defender/incident-summary/fig3-sec-copilot-m365d-summarize.png" alt-text="Security Copilot pane in Microsoft 365 Defender showing the Regenerate incident summary creation option" lightbox="../../media/copilot-in-defender/incident-summary/fig3-sec-copilot-m365d-summarize.png":::
 4. You can view the incident summary on the Copilot side panel. You can copy the details, restart generating the summary, or view the summary in Security Copilot. To do any of these actions, select the three dots at the top of the incident summary to access these actions.
 :::image type="content" source="../../media/copilot-in-defender/incident-summary/fig4-sec-copilot-m365d-summarize.png" alt-text="Incident summary card showing other options for the user" lightbox="../../media/copilot-in-defender/incident-summary/fig4-sec-copilot-m365d-summarize.png":::
-5. Note that a new tab opens when you select See in Security Copilot.
+5. A new tab opens when you select See in Security Copilot.
 
 ## Managing feedback
 

@@ -35,9 +35,9 @@ ms.date: 10/10/2023
 
 [Security Copilot](/copilot/microsoft-365-copilot-overview.md) in Microsoft 365 Defender assists security operations teams in simplifying investigation documentation. Utilizing Security Copilot’s AI-powered data processing, security teams can immediately create accurate incident reports within Microsoft 365 Defender.
 
-Incident responders usually conclude investigations by writing a report that includes a summary of the incident, a timeline of what happened and what remediation and solutions were deployed, the team members involved in the investigation, and recommendations moving forward. This document is essential for current and future security decision making and investigations. However, putting together all the elements for the documentation can be time-consuming. Security teams can now instantly create an incident report within the portal with Security Copilot.
+Incident responders usually conclude investigations by writing a report. The report usually includes a summary of the incident, a timeline of what happened and what remediation and solutions were deployed, the team members involved in the investigation, and recommendations to consider. The incident report is essential for current and future security decision making and investigations. However, putting together all the elements for the documentation can be time-consuming. Security teams can now instantly create an incident report within the portal with Security Copilot.
 
-This guide outlines what to expect and how to access the incident report creation capability of Security Copilot within Microsoft 365 Defender, including information on how to provide feedback.
+This guide outlines what to expect and how to access incident report creation capability within the portal, including information on how to provide feedback.
 
 ## Technical requirements
 
@@ -51,7 +51,7 @@ Security Copilot helps you create an incident report that includes:
 - The team members who responded to the incident, including the response actions and timeframe for each member involved.
 - The investigation actions and mitigation done.
 - The conclusion of the investigation.
-- Gaps and follow-up requirements to be addressed.
+- Gaps and follow up requirements to be addressed.
 
 To create an incident report:
 
@@ -61,7 +61,7 @@ To create an incident report:
 3. You can stop the report creation by selecting **Cancel**.
 4. You can restart the report creation by selecting **Regenerate**. Additionally, you can restart report creation if you encounter an error in creation.
 5. You can copy the report details by selecting the three dots at the top of the incident summary to access **Copy to clipboard**.
-6. Note that a new tab opens when you select **See in Security Copilot**.
+6. A new tab opens when you select **See in Security Copilot**.
 
 ## Managing feedback
 
