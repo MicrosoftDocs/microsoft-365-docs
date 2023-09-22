@@ -1,5 +1,5 @@
 ---
-title: Comment and collaborate using annotations in Microsoft Syntex
+title: Comment and collaborate using annotations in Microsoft Syntex (Preview)
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 description: Learn how to use universal annotations to mark and collaborate on items in SharePoint document libraries using Microsoft Syntex.
 ---
 
-# Comment and collaborate using annotations in Microsoft Syntex
+# Comment and collaborate using annotations in Microsoft Syntex (Preview)
 
 > [!NOTE]
 > This feature of Microsoft Syntex is available as a preview for a limited time for users who currently subscribe to any of the [Syntex pay-as-you-go services](syntex-pay-as-you-go-services). Before you begin, read the [Microsoft Syntex Features Limited Time License agreement](feature-limited-license.md).
@@ -28,9 +28,6 @@ Annotation tools currently include pen and highlighter, where can choose the col
 The feature is currently available for the following file types: .ai, .dwg, .epub, .pdf, .rtf, and .tiff.
 
 More annotation tools and file types will be added in future releases.
-
-> [!NOTE]
-> This feature is available only for users who are licensed for Syntex. 
 
 ## To use annotations
 
