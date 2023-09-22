@@ -16,10 +16,12 @@ keywords:
 
 # Configure apps using Microsoft Intune
 
-Once you've [set up and deployed the capabilities of Intune](/microsoft-365/solutions/apps-guide-overview#deploying-intune) and you've [added the apps you want to manage to Intune](/microsoft-365/solutions/apps-add-overview), you can begin the process of creating app configuration policies. App configuration policies will allow members of your organization (end-users) to easily install and use the related apps on their devices. You create app configuration policies directly in Intune that are unique for each app and each group of end-users. Then, you can apply each app configuration policy to users and/or devices. 
+Once you've [set up and deployed the capabilities of Intune](/microsoft-365/solutions/apps-guide-overview#deploying-intune) and you've [added the apps you want to manage to Intune](/microsoft-365/solutions/apps-add-overview), you can begin the process of creating app configuration policies. App configuration policies will allow members of your organization (end-users) to easily install and use the related apps on their devices. You create app configuration policies directly in Intune that are unique for each app and each group of end-users. Then, you can apply each app configuration policy to end-users and/or devices. 
 
 > [!NOTE]
 > Intune is provided as a web-based console to manage, protect, and monitor all of your organization's endpoints, whether those endpoints are devices or apps.
+> 
+> Deploying an app configuration policy involves assigning the policy to end-users and/or devices. Similar to app protection policies, app configuration policies should be assigned to end-users and/or devices before assigning the related app.
 
  App configuration policies can help you eliminate app setup problems by letting you assign configuration settings to a policy that is then assigned to end-users before they run the app. The settings are then supplied automatically when the app is configured on the end-user's device. Most importantly, end-users don't need to take action. You can create and use app configuration policies to provide configuration settings for both iOS/iPadOS or Android apps. The configuration policy settings are used when the app checks for these settings, typically the first time the app is run.
 
@@ -52,7 +54,7 @@ Follow these steps if you haven't already set up Intune and added the apps you n
 
 ## Apps that support app configuration
 
-Apps that have been specifically enhanced to support a unified endpoint management provider, such as Microsoft Intune, support configuration. [Apps that can be configured using an Intune app configuration policy](/mem/intune/apps/apps-supported-intune-apps) have been enabled to support configuration settings using the Intune App SDK or the Intune App Wrapping Tool. In addition, apps that support Intune app protection policies also integrate with the Intune Intune App SDK or the Intune App Wrapping Tool.
+Apps that have been specifically enhanced to support a unified endpoint management provider, such as Microsoft Intune, support configuration. Apps that can be configured using an Intune app configuration policy have been enabled to support configuration settings using the Intune App SDK or the Intune App Wrapping Tool. For more information about apps that have been enhanced to support Intune, see [Microsoft Intune protected apps](/mem/intune/apps/apps-supported-intune-apps). Note that an app doesn't have to support app configuration or app protection in order to be assigned to end-users and/or devices.
 
 ## Delivery channels for app configuration policies
 
@@ -66,11 +68,11 @@ When you create a app configuration policy in Intune, there are two ways to deli
 
 Intune represents these different app configuration policy channels as:
 - **Managed devices** - The device is managed by Intune as the unified endpoint management provider. The app must be pinned to the management profile on iOS/iPadOS or deployed through Managed Google Play on Android devices. In addition, the app supports the desired app configuration.
-- **Managed apps** - An app that has either integrated the Intune App SDK or have been wrapped using the Intune Wrapping Tool and supports App Protection Policies (APP). In this configuration, neither the device's enrollment state or how the app is delivered to the device matter. The app supports the desired app configuration. Using a **Managed apps** app configuration policy allows you to protect apps on unmanaged (non-enrolled) devices.
+- **Managed apps** - An app that has either integrated the Intune App SDK or have been wrapped using the Intune Wrapping Tool and supports App Protection Policies (APP) or app configuration policies. In this configuration, neither the device's enrollment state or how the app is delivered to the device matters. The app supports the desired app configuration. Using a **Managed apps** app configuration policy allows you to protect apps on unmanaged (non-enrolled) devices.
 
 Apps may handle app configuration policy settings differently with respect to user preference. For example, with Outlook for iOS and Android, the **Focused Inbox** app configuration setting will respect the user setting, allowing the user to override admin intent. Other settings may let you control whether a user can or cannot change the setting based on the admin intent.
 
-With Microsoft Intune, app configuration delivered through the MDM OS channel is referred to as a **Managed Devices** App Configuration Policy (ACP); app configuration delivered through the App Protection Policy channel is referred to as a **Managed Apps** App Configuration Policy.
+With Microsoft Intune, app configuration delivered through the MDM OS channel is referred to as a **Managed Devices** App Configuration Policy (ACP). App configuration delivered through the App Protection Policy channel is referred to as a **Managed Apps** App Configuration Policy.
 
 ## Understand the app configuration policy
 

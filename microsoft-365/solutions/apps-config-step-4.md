@@ -18,7 +18,7 @@ keywords:
 
 Microsoft Edge provides AI-powered web browsing capabilities. Your organization's end-users can use Edge to safely view and work with your company resources. Using Intune, Edge can be added, configured, and assigned to Your organization's end-users. Using Intune, you can also assign Microsoft Edge to your end-users to support conditional access, app protection, and single sign-on at your organization. 
 
-You can add Microsoft Edge to Intune as a store app (Android, iOS/iPadOS), a Built-In app (Android, iOS/iPadOS), a Windows 10 and later app, a macOS app, or a Managed Google Play store app.
+You can add Microsoft Edge to Intune as a store app (Android, iOS/iPadOS), a Built-In app (Android, iOS/iPadOS), a Windows 10 and later app, a macOS app, or a Managed Google Play store app. However, only the Microsoft Edge for the iOS/iPadOS and Android platforms support app configuration policies.
 
 > [!NOTE]
 > Configuring Microsoft Edge using Intune applies to the following platforms:
