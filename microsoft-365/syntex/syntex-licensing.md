@@ -47,6 +47,20 @@ Pay-as-you-go is a way to pay for Microsoft Syntex using an Azure subscription. 
 
 All users in your organization will be able to create and apply unstructured and prebuilt document processing models and can upload documents to a primed library. This is charged on a pay-per-use basis.
 
+### Feature limited preview
+
+Pay-as-you-go licensing includes access to additional Syntex features for a limited time as a preview. You will not be charged on a pay-as-you-go basis during the preview. These features include:
+
+- Content query
+- Universal annotations
+- Contracts management accelerator
+- Accounts payable accelerator
+- Taxonomy features (including import using SKOS, SKOS formatting reference, push content type to hub, and term store reports)
+- PDF merge and extract pages
+- Content processing: Move or copy a file, set a content type from file name
+
+For more information, see [Microsoft Syntex Features Limited Time License agreement](feature-limited-license.md).
+
 ## Microsoft Syntex per-user licensing
 
 > [!NOTE]
