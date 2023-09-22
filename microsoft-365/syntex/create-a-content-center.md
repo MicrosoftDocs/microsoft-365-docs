@@ -13,6 +13,7 @@ ms.custom: admindeeplinkSPO
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
+    - essentials-how-to
 ms.localizationpriority:  medium
 description: Learn how to create a content center in Microsoft Syntex.
 ---
