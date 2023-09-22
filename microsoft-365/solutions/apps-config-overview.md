@@ -52,7 +52,13 @@ Follow these steps if you haven't already set up Intune and added the apps you n
 
 ## Apps that support app configuration
 
-Apps that have been specifically enhanced to support a unified endpoint management provider, such as Microsoft Intune, support configuration. There are two ways to deliver app configuration using Intune:
+Apps that have been specifically enhanced to support a unified endpoint management provider, such as Microsoft Intune, support configuration. [Apps that can be configured using an Intune app configuration policy](/mem/intune/apps/apps-supported-intune-apps) have been enabled to support configuration settings using the Intune App SDK or the Intune App Wrapping Tool. In addition, apps that support Intune app protection policies also integrate with the Intune Intune App SDK or the Intune App Wrapping Tool.
+
+## Delivery channels for app configuration policies
+
+It is important to understand the difference between app configuration policies that support **Managed devices** verses **Managed apps**. Managed devices are those devices that have been enrolled in a unified endpoint management provider, such as Microsoft Intune. These enrolled devices use mobile device management (MDM) provided by the unified endpoint management provider. MDM enables organizations to protect and secure their resources and data on enrolled devices. Managed apps are apps that you have assigned to users via a unified endpoint management provider, such as Intune. Managed apps support app configuration policies and app protection policies. These apps use mobile application management (MAM) that is provided by the unified endpoint management provider. MAM enables organizations to manage and protect their data within an application.
+
+When you create a app configuration policy in Intune, there are two ways to deliver app configuration using Intune:
 1. Use the mobile device management (MDM) OS channel on enrolled devices
     - For iOS devices, use the [Managed App Configuration channel for iOS](https://developer.apple.com/library/content/samplecode/sc2279/Introduction/Intro.html) 
     - For Android devices, use the [Android in the Enterprise channel for Android](https://developer.android.com/work/managed-configurations)
@@ -60,19 +66,13 @@ Apps that have been specifically enhanced to support a unified endpoint manageme
 
 Intune represents these different app configuration policy channels as:
 - **Managed devices** - The device is managed by Intune as the unified endpoint management provider. The app must be pinned to the management profile on iOS/iPadOS or deployed through Managed Google Play on Android devices. In addition, the app supports the desired app configuration.
-- **Managed apps** - An app that has either integrated the Intune App SDK or have been wrapped using the Intune Wrapping Tool and supports App Protection Policies (APP). In this configuration, neither the device's enrollment state or how the app is delivered to the device matter. The app supports the desired app configuration.
-
-> [!IMPORTANT]
-> It is important to understand the difference between app configuration policies that support **Managed devices** verses **Managed apps**. Managed devices are those devices that have been enrolled in a unified endpoint management provider, such as Microsoft Intune. These enrolled devices use mobile device management (MDM) provided by the unified endpoint management provider. MDM enables organizations to protect and secure their resources and data on enrolled devices. Managed apps are apps that you have assigned to users via a unified endpoint management provider, such as Intune. Managed apps support app configuration policies and app protection policies. These apps use mobile application management (MAM) that is provided by the unified endpoint management provider. MAM enables organizations to manage and protect their data within an application.
+- **Managed apps** - An app that has either integrated the Intune App SDK or have been wrapped using the Intune Wrapping Tool and supports App Protection Policies (APP). In this configuration, neither the device's enrollment state or how the app is delivered to the device matter. The app supports the desired app configuration. Using a **Managed apps** app configuration policy allows you to protect apps on unmanaged (non-enrolled) devices.
 
 Apps may handle app configuration policy settings differently with respect to user preference. For example, with Outlook for iOS and Android, the **Focused Inbox** app configuration setting will respect the user setting, allowing the user to override admin intent. Other settings may let you control whether a user can or cannot change the setting based on the admin intent.
 
-> [!NOTE]
-> [Apps that can be configured using an Intune app configuration policy](/mem/intune/apps/apps-supported-intune-apps) have been enabled to support configuration settings using the Intune App SDK or the Intune App Wrapping Tool. In addition, apps that support Intune app protection policies also integrate with the Intune Intune App SDK or the Intune App Wrapping Tool.
-
 With Microsoft Intune, app configuration delivered through the MDM OS channel is referred to as a **Managed Devices** App Configuration Policy (ACP); app configuration delivered through the App Protection Policy channel is referred to as a **Managed Apps** App Configuration Policy.
 
-## General app configuration
+## Understand the app configuration policy
 
 As mentioned, you can apply configuration for your managed apps using app configuration policies. You create and assign those policies from [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431). When you create a app configuration policy, you start by selecting to create the policy for **Managed devices** or **Managed apps** as describe above. Then, you add the following policy areas/actions:
 
@@ -124,7 +124,16 @@ You can allow end-users using Android personally-owned and corporate-owned work 
 
 You can pre-configure app permissions to access Android device features. By default, Android apps that require device permissions, such as access to location or the device camera, prompt users to accept or deny permissions. For more information, see [Preconfigure the permissions grant state for apps](/mem/intune/apps/app-configuration-policies-use-android#enable-connected-apps).
 
+## Microsoft apps configuration
+
+Specific Microsoft apps that have been enhanced to support a unified endpoint management provider, such as Microsoft Intune, support a common set of configuration capabilities. These configuration capabilities are in addition to the specific app configuration settings that a protected Microsoft app may have available. Protected [Microsoft apps](/mem/intune/apps/apps-supported-intune-apps#microsoft-apps) include common settings, such as the following:
+
+- Organization allowed accounts mode
+- S/MIME settings
+
 #### Configure access by only organization accounts
+
+<!-- https://learn.microsoft.com/en-us/mem/intune/apps/manage-microsoft-edge#only-allow-work-or-school-accounts -->
 
 You can control which work or school accounts are added to Microsoft apps on managed devices. You can limit access to only allowed organization user accounts and block personal accounts within the apps (if supported) on enrolled devices. iOS configuration keys used in this scenario include `IntuneMAMAllowedAccountsOnly` and `IntuneMAMUPN`. The Android configuration key is `com.microsoft.intune.mam.AllowedAccountUPNs`.
 
@@ -164,7 +173,7 @@ As an Intune admin, you can customize the Company Portal user experience for you
 
 ### Configure Microsoft Outlook
 
-Outlook for iOS and Android supports app settings that allow unified endpoint management (UEM) administrators (using tools such as Microsoft Endpoint Manager) and Microsoft 365 or Office 365 administrators to customize the behavior of the app.
+Outlook for iOS and Android supports app settings that allow unified endpoint management (UEM) administrators (using tools such as Microsoft Intune) and Microsoft 365 or Office 365 administrators to customize the behavior of the app.
 
 The Outlook for iOS and Android app is designed to enable users in your organization to do more from their mobile devices, by bringing together email, calendar, contacts, and other files.
 

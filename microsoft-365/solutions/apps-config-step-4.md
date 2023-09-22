@@ -16,34 +16,89 @@ keywords:
 
 # Step 4. Configure Microsoft Edge
 
-Microsoft Edge provides AI-powered web browsing capabilities. Edge can be added, configured, and protected with Intune. Using Intune, you can assign Microsoft Edge to your end-users to support conditional access, app protection, single sign-on, and app configuration. You can add Microsoft Edge to Intune as a store app (Android, iOS/iPadOS), a Built-In app (Android, iOS/iPadOS), a Windows 10 and later app, a macOS app, or a Managed Google Play store app.
+Microsoft Edge provides AI-powered web browsing capabilities. Your organization's end-users can use Edge to safely view and work with your company resources. Using Intune, Edge can be added, configured, and assigned to Your organization's end-users. Using Intune, you can also assign Microsoft Edge to your end-users to support conditional access, app protection, and single sign-on at your organization. 
 
-There are two ways to deliver app configuration using Intune:
-1. Use the mobile device management (MDM) OS channel on enrolled devices. 
-    - For iOS devices, use the [Managed App Configuration channel for iOS](https://developer.apple.com/library/content/samplecode/sc2279/Introduction/Intro.html) 
-    - For Android devices, use the [Android in the Enterprise channel for Android](https://developer.android.com/work/managed-configurations)
-2. Use the Mobile Application Management (MAM) channel
-
-Microsoft Edge supports multi-identity. Users can add a work account, as well as a personal account, for browsing. There is complete separation between the two identities, which is similar to other Microsoft mobile apps.
+You can add Microsoft Edge to Intune as a store app (Android, iOS/iPadOS), a Built-In app (Android, iOS/iPadOS), a Windows 10 and later app, a macOS app, or a Managed Google Play store app.
 
 > [!NOTE]
 > Configuring Microsoft Edge using Intune applies to the following platforms:
 > - iOS/iPadOS 14.0 or later
 > - Android 8.0 or later for enrolled devices and Android 9.0 or later for unenrolled devices
 
+When you use Intune's app configuration policies, you create and assign configuration settings separately from adding and assigning the app itself. Therefore, you should consider adding the app to Intune without assigning the app, create and assign an app configuration policy for the app, and then assign the app itself to the device or user.
 
+There are two ways to deliver app configuration using Intune. The first way is to use the mobile device management (MDM) OS channel on enrolled devices for iOS and Android devices. The second way is to use the Mobile Application Management (MAM) channel. For more information, see [Delivery channels for app configuration policies](apps-config-overview.md#delivery-channels-for-app-configuration-policies). For additional information about delivery channels, see [Managed App Configuration channel for iOS](https://developer.apple.com/library/content/samplecode/sc2279/Introduction/Intro.html) and [Android in the Enterprise channel for Android](https://developer.android.com/work/managed-configurations).
 
+> [!IMPORTANT]
+> When considering configuration setting for Microsoft Edge, also be aware that if you use the MAM channel you'll want to consider how you protect the app using app protection policies.
+
+## Configuration settings
+
+You, as the admin, can customize the behavior of Microsoft Edge by creating and assigning an app configuration policy for Edge. When you create an app configuration policy for Microsoft Edge in Intune, you commonly set an app configuration key. Each configuration key is specifically named for the app. When you use a configuration key, you add the name of the configuration key, the value type, and the configuration value. 
+
+> [!IMPORTANT]
+> App configuration keys are case sensitive. Use the proper casing to ensure the configuration takes effect.
+
+### Common settings for Microsoft protected apps
+
+Microsoft Edge for iOS/iPadOSand Android supports the following configuration scenarios:
+
+- Organization allowed accounts mode - Must have enrolled devices.
+
+### General app configuration settings
+
+Microsoft Edge provides several different configuration settings that allow you to customize the behavior of Edge on an end-user's device. The following table provides a list of general app configuration settings for Edge.
+
+| Key | Description |
+|---|---|
+| com.microsoft.intune.mam.managedbrowser.NewTabPage.BrandLogo | You can customize the New Tab   Page in Edge for iOS and Android devices to display your organization's logo   as the page background. You can also upload your organization logo. For more   information, see [New Tab Page experiences](/mem/intune/apps/manage-microsoft-edge#new-tab-page-experiences). |
+| com.microsoft.intune.mam.managedbrowser.NewTabPage.BrandColor | You can customize the New Tab   Page in Edge for iOS and Android devices to display your organization's brand   color in the page background. For more information, see [New Tab Page   experiences](/mem/intune/apps/manage-microsoft-edge#new-tab-page-experiences). |
+| com.microsoft.intune.mam.managedbrowser.homepage | You can configure a homepage   shortcut for Edge for iOS and Android in the New Tab Page. The homepage   shortcut you configure appears as the first icon beneath the search bar when   the user opens a new tab in Edge for iOS and Android.  For more information, see [Homepage   shortcut](/mem/intune/apps/manage-microsoft-edge#homepage-shortcut). |
+| com.microsoft.intune.mam.managedbrowser.managedTopSites | You can configure multiple top   site shortcuts on New Tab Pages in Edge for iOS and Android. For more   information, see [Multiple top site   shortcuts](/mem/intune/apps/manage-microsoft-edge#multiple-top-site-shortcuts). |
+| com.microsoft.intune.mam.managedbrowser.NewTabPage.IndustryNews | You can configure the New Tab   Page experience within Edge for iOS and Android to display industry news that   is relevant to your organization. For more information, see   [/mem/intune/apps/manage-microsoft-edge#industry-news](/mem/intune/apps/manage-microsoft-edge#industry-news). |
+| com.microsoft.intune.mam.managedbrowser.NewTabPage.CustomURL | You can disable the New Tab Page   experience in Edge for iOS and Android and instead have a web site launch   when the user opens a new tab. For more information, see [Homepage instead of   New Tab Page experience](/mem/intune/apps/manage-microsoft-edge#homepage-instead-of-new-tab-page-experience). |
+| com.microsoft.intune.mam.managedbrowser.bookmarks | You can configure bookmarks that   you'd like your users to have available when they are using Edge for iOS and   Android. For more information, see [Managed   bookmarks](/mem/intune/apps/manage-microsoft-edge#managed-bookmarks). |
+| com.microsoft.intune.mam.managedbrowser.MyApps | You can have users view My Apps   bookmark within the organization folder inside Edge for iOS and Android. For   more information, see [My Apps   bookmark](/mem/intune/apps/manage-microsoft-edge#my-apps-bookmark). |
+| com.microsoft.intune.mam.managedbrowser.PasswordSSO | You can enable Azure AD password   single sign-on (SSO) functionality offered by Azure Active Directory to allow   user access management to web applications that don't support identity   federation. For more information, see [Azure AD password single sign-on](/mem/intune/apps/manage-microsoft-edge#azure-ad-password-single-sign-on). |
+| com.microsoft.intune.mam.managedbrowser.defaultHTTPS | Microsoft Edge for iOS and   Android devices uses the HTTPS protocol handler when the user doesn't specify   the protocol in the URL. For more information, see [Default protocol   handler](/mem/intune/apps/manage-microsoft-edge#default-protocol-handler). |
+| com.microsoft.intune.mam.managedbrowser.disableShareUsageData | You can choose to enable data   collection so that the end-user browsing experience in Edge is personalized.   By default, end-users are promted to share usage data. You can choose to   disable the prompt and share usage data. For more information, see [Disable   data sharing for   personalization](/mem/intune/apps/manage-microsoft-edge#disable-data-sharing-for-personalization). |
+| com.microsoft.intune.mam.managedbrowser.disableShareBrowsingHistory | Edge will prompt end-users to   share browsing history to personalize their browsing experience. You can   choose to disable the prompt and share browsing history. For more   information, see  [Disable data sharing   for personalization](/mem/intune/apps/manage-microsoft-edge#disable-data-sharing-for-personalization). |
+| com.microsoft.intune.mam.managedbrowser.disabledFeatures | You can disable certain features   in Edge that are enabled by default. For example, you can disable password   prompts, InPrivate browsing, authfill, translator, readaloud, drop documents   and messages to devices), and developer tools. For more information, see   [      Disable specific   features](/mem/intune/apps/manage-microsoft-edge#disable-specific-features). |
+| com.microsoft.intune.mam.managedbrowser.disableImportPasswords | You can disable the import of   passwords from Password Manager. For more information, see [Disable import   passwords   feature](/mem/intune/apps/manage-microsoft-edge#disable-import-passwords-feature). |
+| com.microsoft.intune.mam.managedbrowser.cookieControlsMode | You can control whether sites   can store cookies for your end-users. You can choose to allow cookies, block   non-Microsoft cookies, block non-Microsoft cookies in InPrivate mode, or   block all cookies. Cookies contain data about end-user browsing perferences.   The are used to show you relavant content. |
+| com.microsoft.intune.mam.managedbrowser.enableKioskMode | For Android devices, you can   enable kiosk mode in Edge. Kiosk mode runs Edge in full-screen. By default,   kiosk mode is disabled. For more information, see [Kiosk mode experiences on   Android devices](/mem/intune/apps/manage-microsoft-edge#kiosk-mode-experiences-on-android-devices). |
+| com.microsoft.intune.mam.managedbrowser.showAddressBarInKioskMode | For Android devices, you can   show the address bar in kiosk mode in Edge. By default, this setting is   disabled. For more information, see [Kiosk mode experiences on Android   devices](/mem/intune/apps/manage-microsoft-edge#kiosk-mode-experiences-on-android-devices). |
+| com.microsoft.intune.mam.managedbrowser.showBottomBarInKioskMode | For Android devices, you can   show the bottom action bar in kiosk mode in Edge. By default, this setting is   disabled. For more information, see [Kiosk mode experiences on Android   devices](/mem/intune/apps/manage-microsoft-edge#kiosk-mode-experiences-on-android-devices). |
+| com.microsoft.intune.mam.managedbrowser.NetworkStackPref | You can choose which network   stack is used for Microsoft Edge service communication. The layers of the   network architecture are called the network stack. The layers of a network   stack are broadly divided into sections, such as Network Interface, Network Driver   Interface Specification (NDIS), Protocol Stack, System Drivers, and User-Mode   Applications. By default, Microsoft Edge uses the Chromium network stack. You   can choose between using the Chromium network stack and the iOS network   stack. Primarily, by choosing a network stack, you select which sync services   and auto search suggestions are used. |
+| com.microsoft.intune.mam.managedbrowser.proxyPacUrl | You can choose a URL to a proxy   auto-config (PAC) file to use with Microsoft Edge. **Note:** Use   **ProxySettings** instead. For more information, see   [ProxyPacUrl](/DeployEdge/microsoft-edge-policies#proxypacurl) and [Set a   proxy .pac file URL](/mem/intune/apps/manage-microsoft-edge#set-a-proxy-pac-file-url). |
+| com.microsoft.intune.mam.managedbrowser.proxyPacUrl.FailOpenEnabled | You can choose to block network   access with invalid or unavailable proxy auto-config (PAC) script. By   default, network access is blocked. For more information, see [PAC   failed-open   support](/mem/intune/apps/manage-microsoft-edge#pac-failed-open-support) and   [ProxySettings](/DeployEdge/microsoft-edge-policies#proxysettings). |
+| com.microsoft.intune.mam.managedbrowser.PersistentWebsiteDataStore | For iOS devices, you can choose   the persistent website data store to use for an end-user in Edge. By default,   the personal account is used. However, you can choose to use the website data   store based on the first signed-in account, or choose to use the work or   school account first regardless of the sign-in order. For more information,   see [iOS Website data   store](/mem/intune/apps/manage-microsoft-edge#ios-website-data-store). |
+| com.microsoft.intune.mam.managedbrowser.Chat | You can choose to hide or show   the Bing button in the bottom bar of Edge as part of Bing Chat Enterprise.   For more information, see [Bing Chat   Enterprise](/mem/intune/apps/manage-microsoft-edge#bing-chat-enterprise). |
+| com.microsoft.intune.mam.managedbrowser.ChatPageContext | You can choose whether Bing Chat   Enterprise has access to page content. By default, this setting shows the   **Page context** and **Show quick chat panel** options under the Bing   co-pilot mode. For more information, see [Bing Chat Enterprise](/mem/intune/apps/manage-microsoft-edge#bing-chat-enterprise). |
+
+### Data protection configuration settings
+
+Microsoft Edge provides several different configuration settings that allow you to customize the behavior of Edge on an end-user's device. The following table provides a list of data protection configuration settings for Edge.
+
+| Key | Description |
+|---|---|
+| com.microsoft.intune.mam.managedbrowser.account.syncDisabled | You can choose to allow Edge to   sync end-user's browsing data across all their signed-in devices. This   relates to Favorites, Passwords, and Address (autofill). For more   information, see [Manage account   synchronization](/mem/intune/apps/manage-microsoft-edge#manage-account-synchronization). |
+| com.microsoft.intune.mam.managedbrowser.AllowListURLs | You can add a list of URLs that   end-users are allowed to reach. End-users must be using their work or school   account in Edge. For more information, see [Manage restricted web   sites](/mem/intune/apps/manage-microsoft-edge#manage-restricted-web-sites). |
+| com.microsoft.intune.mam.managedbrowser.BlockListURLs | You can choose a list of URLs   that end-users are not allowed to reach. End-users must be using their work   or school account in Edge. For more information, see [Manage restricted web   sites](/mem/intune/apps/manage-microsoft-edge#manage-restricted-web-sites). |
+| com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock | You can choose to allow managed   users (work or school account) to switch to their personal account to view a   website. Personal accounts must not disabled. Users are prompted to either   switch to the personal context to open the restricted site, or to add a   personal account.  For more   information, see [Manage restricted web   sites](/mem/intune/apps/manage-microsoft-edge#manage-restricted-web-sites). |
+| com.microsoft.intune.mam.managedbrowser.openInPrivateIfBlocked | You can choose to allow   restricted sites to be opened in the Azure AD account's InPrivate context. If   the Azure AD account is the only account configured in Edge, the restricted   site is opened automatically in the InPrivate context.   For more information, see [Manage   restricted web   sites](/mem/intune/apps/manage-microsoft-edge#manage-restricted-web-sites). |
+| com.microsoft.intune.mam.managedbrowser.durationOfOpenInPrivateSnackBar | You can choose the number of   seconds that an end-user will see the snack bar notification "Access to   this site is blocked by your organization. We’ve opened it in InPrivate mode   for you to access the site." For more information, see [Manage restricted   web   sites](/mem/intune/apps/manage-microsoft-edge#manage-restricted-web-sites). |
+| com.microsoft.intune.mam.managedbrowser.AppProxyRedirection | On iOS devices, you can enable   Azure AD App Proxy redirection scenarios. By default,  Azure AD App Proxy scenarios are prevented.   For more information, see [Manage proxy   configuration](/mem/intune/apps/manage-microsoft-edge#manage-proxy-configuration). |
+| com.microsoft.intune.mam.managedbrowser.NTLMSSOURLs | You can choose a list of   internal (intranet) websites that enable NTLM credential caching. The   end-users must enter credentials and successfully authenticate when   attempting to access a URL in the list. NTLM is a Windows network   authentication protocol. For more information, see [Manage NTLM single   sign-on   sites](/mem/intune/apps/manage-microsoft-edge#manage-ntlm-single-sign-on-sites). |
+| com.microsoft.intune.mam.managedbrowser.durationOfNTLMSSO | You can enter the number of   hours to cache credentials when using NTLM credential caching. NTLM is a   Windows network authentication protocol. For more information, see [Manage   NTLM single sign-on   sites](/mem/intune/apps/manage-microsoft-edge#manage-ntlm-single-sign-on-sites). |
+
+<!-- 
 https://learn.microsoft.com/en-us/mem/intune/apps/manage-microsoft-edge
 https://learn.microsoft.com/en-us/mem/intune/apps/app-configuration-policies-use-ios#allow-only-configured-organization-accounts-in-apps
 https://learn.microsoft.com/en-us/mem/intune/apps/app-configuration-policies-use-android#allow-only-configured-organization-accounts-in-apps
-
-- Edge iOS devices
-    - nothing predefined, however several key settings
-- Edge Android MAM
-    - General configuration settings
-    - Microsoft Tunnel for Mobile Application Management settings
-    - Edge configuration settings (get screenshot)
-- 
+ 
+-->
+ 
 
 ## Next step
 <!--
