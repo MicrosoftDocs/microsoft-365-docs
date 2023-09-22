@@ -17,7 +17,7 @@ ms.custom:
 description: "Admins can configure where user reported messages go for analysis: to an internal reporting mailbox, to Microsoft, or both. Other settings complete the reporting experience for users when they report good messages, spam, or phishing messages from Outlook."
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 8/7/2023
+ms.date: 9/21/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
@@ -102,8 +102,8 @@ On the **User reported settings** page, the available settings for reporting mes
 
   - Use the built-in **Report** button in Outlook on the web or the Microsoft Report Message or Report Phishing add-ins in virtually all Outlook platforms to report email messages.
     - Configure user reported messages to go to the reporting mailbox, to Microsoft, or both.
-    - Decide whether users receive before reporting and after reporting pop-ups in Outlook.
-    - Decide whether to customize the feedback email that's sent to users after an admin reviews and marks the message on the **Submissions** page.
+    - Decide whether users receive default or customized pre-reporting and post-reporting pop-ups in supported version of Outlook.
+    - Decide whether to customize the feedback email that's sent to users after an admin reviews and marks the message on the **User submissions** tab on the **Submissions** page.
     - Decide whether users can report email messages from quarantine as they release quarantined messages.
 
     For details, see the [Options for Microsoft reporting tools](#options-for-microsoft-reporting-tools) section in this article.
@@ -117,18 +117,51 @@ On the **User reported settings** page, the available settings for reporting mes
 
 When **Monitor reported messages in Outlook** is selected and you also select **Use the built-in Report button in Outlook**, the following options are available on the **User reported settings** page:
 
-- **Outlook** section \> **Select an Outlook report button configuration** section \> **When the Report button is clicked**: 
+- **Outlook** section \> **Select an Outlook report button configuration** section \> **When the user reports an email** section: 
 
-  - **Show a pop-up message before email is reported**: Select this setting to show users a pop-up notification in Outlook before they report a message.
+  - **Ask the user to confirm before reporting**: A pre-reporting pop-up is shown in supported versions of Outlook for the following user actions:
+    - **Report phishing**
+    - **Report junk**
+    - **Report not junk**
+  - **Show a success message after the message is reported**: A post-reporting pop-up is shown in supported versions of Outlook for the following user actions:
+    - **Phishing reported**
+    - **Junk reported**
 
-    To customize the text in the notification, select **Customize before message**. In the flyout that opens, enter the text in the **Title** and **Message** boxes. Use the variable `%type%` to include the submission type (junk, not junk, phishing, etc.). When you're finished in the flyout, select **Confirm**.
-
-  - **Show a pop-up success message after email is reported**: Select this setting to show users a pop-up notification in Outlook after they report a message.
-
-    To customize the text in the notification, select **Customize after message**. In the flyout that opens, enter the text in the **Title** and **Message** boxes. Use the variable `%type%` to include the submission type (junk, not junk, phishing, etc.). When you're finished in the flyout, select **Confirm**.
+  Notification pop-ups contain default English text that's automatically localized for users based on their client language. To customize the pop-up text, you can create custom versions of the five reporting pop-ups in up to seven different languages.
 
   > [!NOTE]
-  > Currently, users who report messages from Outlook on the web using the built-in **Report** button don't get the before or after pop-up notifications. The pop-ups work for users who report messages using the Microsoft Report Message and Report Phishing add-ins.
+  > Customized pre-reporting and post-reporting pop-ups are shown when using the **Report** button in Outlook on the web.
+  >
+  > The Microsoft Report Message add-in supports only customized **Title** and **Description** values, and only for pre-reporting pop-ups (**Report phishing**, **Report junk**, and **Report not junk**).
+  >
+  > The Microsoft Report Phishing add-in supports all customized values, but only for the **Report phishing** pre-reporting pop-up.
+
+  To view the default or customized notification pop-ups, select **Customize messages**. The following information is available in the **Customize messages** flyout that opens:
+
+  - **Language**: The value **Default** for the default notifications or the language for a custom notification.
+  - **Status**: The value is **5 of 5 messages configured** for the default notifications or **n of 5 notifications configured** for custom notifications.
+  - **Action**: The **View** link for the default notifications. The **Edit** and **Delete** links for custom notifications.
+
+  To create customized pop-up notifications in specific languages, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Add customized message**. In the **Add customized message** flyout that opens, configure the following settings:
+
+  - Select the tab for the notification pop-up to customize:
+    - **Report phishing** (this is the default selection)
+    - **Report junk**
+    - **Report not junk**
+    - **Phishing reported**
+    - **Junk reported**
+
+  - **Choose language**: The available values are: **Amharic**, **Arabic**, **Bangla (India)**, **Basque**, **Bulgarian**, **Catalan**, **Chinese (Simplified)**, **Croatian**, **Czech**, **Danish**, **Dutch**, **English**, **Estonian**, **Filipino**, **Finnish**, **French**, **Galician**, **German**, **Greek**, **Gujarati**, **Hebrew**, **Hindi**, **Hungarian**, **Icelandic**, **Indonesian**, **Italian**, **Japanese**, **Kannada**, **Kazakh**, **Korean**, **Latvian**, **Lithuanian**, **Malayalam**, **Malayalam**, **Marathi**, **Norwegian**, **Norwegian (Nynorsk)**, **Polish**, **Portuguese**, **Romanian**, **Russian**, **Serbian**, **Slovak**, **Slovenian**, **Spanish**, **Swahili**, **Swedish**, **Tamil**, **Telugu**, **Thai**, **Turkish**, **Ukrainian**, **Urdu**, and **Vietnamese**.
+
+    After you select a language, the following settings are available:
+
+  - **Title**: Enter a maximum of 50 characters.
+  - **Description**: Enter a maximum of 300 characters.
+  - **Add a link to more information**: Select the check box and enter values in the following boxes that appear:
+    - **Link text**: Enter a maximum of 30 characters.
+    - **URL**: Enter the URL.
+
+  When you're finished in the **Add customized message** flyout, select **Save** or **Save & apply to all the message types**.
 
 - **Reported message destinations** section \> **Send the reported messages to**: Select one of the following options:
 
@@ -234,7 +267,7 @@ The difference between these two elements isn't obvious when you manage the user
   Only after you specify a reporting mailbox (used by Microsoft or third-party reporting tools) and save the changes on the **User reported settings page** is the report submission rule named DefaultReportSubmissionRule created. It might take several seconds before the rule is visible in PowerShell.
 
   > [!NOTE]
-  > Currently, the default settings on the **User reported settings** page include **Send reported messages to** \> **Microsoft and my reporting mailbox** with a blank value for the reporting mailbox. In PowerShell, there's no report submission rule. This default configuration means the reporting mailbox is the global admin's Exchange Online mailbox. The global admin isn't _shown_ as the reporting mailbox in the output of the **Get-ReportSubmissionPolicy** and **Get-ReportSubmissionRule** cmdlets or on the **User reported settings** page until _after_ the first user in the organization reports a message from Outlook.
+  > The default settings on the **User reported settings** page include **Send reported messages to** \> **Microsoft and my reporting mailbox** with a blank value for the reporting mailbox. In PowerShell, there's no report submission rule. This default configuration means the reporting mailbox is the global admin's Exchange Online mailbox. The global admin isn't _shown_ as the reporting mailbox in the output of the **Get-ReportSubmissionPolicy** and **Get-ReportSubmissionRule** cmdlets or on the **User reported settings** page until _after_ the first user in the organization reports a message from Outlook.
 
 - You can delete the report submission rule and recreate it with a different name, but the rule is always associated with the report submission policy, and you can't select or change the name of the policy. So, we recommend naming the rule DefaultReportSubmissionRule if you create or recreate the rule.
 
@@ -268,7 +301,7 @@ Remember, the report submission policy doesn't exist if any of the following sta
 
 Likewise, the report submission rule doesn't exist if either of the following statements are true:
 
-- No one ever specified a reporting mailbox on the **User reported settings** page.
+- No one ever specified a reporting mailbox on the **User reported settings** page (but remember, the global admin's Exchange Online mailbox is used by default). 
 - No one ever manually created the report submission rule in PowerShell.
 - Someone manually deleted the report submission rule in PowerShell.
 
@@ -305,14 +338,18 @@ This example creates the report submission policy with the default settings:
 
 Other settings:
 
-- **Outlook section** \> **Select an Outlook report button configuration** section \> **When the report button is clicked** section:
-  - **Show a pop-up message before email is supported**: When you go to the **User reported settings** page in the Defender portal for the first time (which creates the report submission policy), this setting is not selected (equivalent to `-PreSubmitMessageEnabled -$false`). But, the default value when you use the PowerShell to create the policy is `-PreSubmitMessageEnabled $true`. So, the example includes `-PreSubmitMessageEnabled $false`.
+- **Outlook** section \> **Select an Outlook report button configuration** section \> **When a user reports an email** section:
+  - **Ask the user to confirm before reporting**: When you go to the **User reported settings** page in the Defender portal for the first time (which creates the report submission policy), this setting is not selected (equivalent to `-PreSubmitMessageEnabled -$false`). But, the default value when you use the PowerShell to create the policy is `-PreSubmitMessageEnabled $true`. So, the example includes `-PreSubmitMessageEnabled $false`.
     - **Customize before message**: Nothing is entered in the **Title** or **Message** boxes in the flyout (`-EnableCustomizedMsg $false` is the default value).
-  - **Show a pop-up success message after the email is reported**: When you go to the **User reported settings** page in the Defender portal for the first time (which creates the report submission policy), this setting is not selected (equivalent to `-PostSubmitMessageEnabled -$false`). But, the default value when you use the PowerShell to create the policy is `-PostSubmitMessageEnabled $true`. So, the example includes `-PostSubmitMessageEnabled $false`.
+  - **Show a success message after the message is reported**: When you go to the **User reported settings** page in the Defender portal for the first time (which creates the report submission policy), this setting is not selected (equivalent to `-PostSubmitMessageEnabled -$false`). But, the default value when you use the PowerShell to create the policy is `-PostSubmitMessageEnabled $true`. So, the example includes `-PostSubmitMessageEnabled $false`.
     - **Customize after message**: Nothing is entered in the **Title** or **Message** boxes in the flyout (`-EnableCustomizedMsg $false` is the default value).
 
   > [!NOTE]
-  > Currently, users who report messages from Outlook on the web using the built-in **Report** button don't get the before or after pop-up notifications. The pop-ups work for users who report messages using the Microsoft Report Message and Report Phishing add-ins.
+  > Customized pre-reporting and post-reporting pop-ups are shown when using the **Report** button in Outlook on the web.
+  >
+  > The Microsoft Report Message add-in supports only customized **Title** and **Description** values, and only for pre-reporting pop-ups (**Report phishing**, **Report junk**, and **Report not junk**).
+  >
+  > The Microsoft Report Phishing add-in supports all customized values, but only for the **Report phishing** pre-reporting pop-up.
 
 - **Email notifications** section:
   - **Results email** section \> **Customize results email**: Nothing is entered in the **Email body results text** or **Email footer text** boxes on the **Phishing**, **Junk**, or **No threats found** tabs in the flyout (`-EnableCustomizedMsg $false` is the default value).
@@ -576,7 +613,7 @@ Get-ReportSubmissionRule | Remove-ReportSubmissionRule
 To remove both the report submission policy and report submission rule in the same command without a confirmation, run the following command:
 
 ```powershell
-Remove-ReportSubmissionPolicy -Identity DefaultReportSubmissionPolicy; Get-ReportSubmissionRule | Remove-ReportSubmissionRule -Confirm:$false
+Remove-ReportSubmissionPolicy -Identity DefaultReportSubmissionPolicy; Get-ReportSubmissionRule | Remove-ReportSubmissionRule
 ```
 
 For detailed syntax and parameter information, see [Remove-ReportSubmissionPolicy](/powershell/module/exchange/remove-reportsubmissionpolicy) and [Remove-ReportSubmissionRule](/powershell/module/exchange/remove-reportsubmissionrule).
