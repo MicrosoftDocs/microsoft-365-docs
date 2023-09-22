@@ -101,19 +101,18 @@ Configure the connector's redirection URL. This allows UKG Dimensions to redirec
 
 Create at least one team in Teams, and add the following people and account to it:
 
-- Frontline workers as team members
+- Frontline workers as team members.
 - Frontline managers as team owners and/or schedule owners. To learn more about schedule owners, see [Schedule Owner for shift management](schedule-owner-for-shift-management.md).
 
     > [!NOTE]
     > When adding people to your teams, make sure you do the following:
     >
     > - Add frontline workers to every team that they're allowed to work at, based on their UKG Dimensions locations.
-    > - Add frontline managers to every team in which they have frontline workers as direct reports. Otherwise, managers will only receive workers' requests in UKG Dimensions and not in Shifts.  
+    > - Add frontline managers to every team in which they have frontline workers as direct reports. Otherwise, managers will only receive workers' requests in UKG Dimensions and not in Shifts.
 
 - A general account, what we call the Microsoft 365 system account, as team owner.
 
-    > [!NOTE]
-    > The Microsoft 365 system account is a general account must be added as team owner to all teams you want to map. [Create this account in the Microsoft 365 admin center](/microsoft-365/admin/add-users/add-users) and assign it a Microsoft 365 license. Then, add the account as a team owner. The Shifts connector uses this account when syncing Shifts changes from UKG Dimensions. We recommend you create an account specifically for this purpose and not use your personal user account.
+    The Microsoft 365 system account is a general account must be added as team owner to all teams you want to map. [Create this account in the Microsoft 365 admin center](/microsoft-365/admin/add-users/add-users) and assign it a Microsoft 365 license. Then, add the account as a team owner. The Shifts connector uses this account when syncing Shifts changes from UKG Dimensions. We recommend you create an account specifically for this purpose and not use your personal user account.
 
 For guidance on creating frontline teams, see [How to find the best frontline team solution for your organization](frontline-team-options.md). If you want to create more than one team, see [Deploy frontline dynamic teams at scale](deploy-dynamic-teams-at-scale.md) and [Deploy frontline static teams at scale](deploy-teams-at-scale.md).
 
@@ -277,7 +276,7 @@ In this scenario, the admin adds team members
 
 #### What does this mean when I run the Shifts connector wizard?
 
-When the IT admin sets up a connection instance in the [wizard](shifts-connector-wizard-ukg.md), they map each store location to the relevant team.
+When the IT admin sets up a connection instance in the [wizard](shifts-connector-wizard-ukg.md), they map each store location to the relevant team, as shown in the following table.
 
 |Store location  |Team name |
 |---------|---------|
@@ -293,7 +292,7 @@ Within each store, in Shifts:
 
 - Frontline managers see employees within their respective scheduling groups.
 - Frontline workers see their own schedule and their team's schedule.
-- Frontline workers can communicate within their own Store shift via ‘Teams shifts chat’. Additionally, using Tags they can directly reach others who are on-shift in real time within their store.
+- Frontline workers can communicate within their own store shift through ‘Teams Shifts chat’. Additionally, they can use tags to directly reach others who are on-shift in real time in their store.
 - Frontline workers and managers can request time off, swap shifts, offer shifts and open shifts if the requests are configured in UKG Dimensions.  
 
 For employees who work at multiple stores, in Shifts:
