@@ -63,7 +63,7 @@ The **OneDrive for Business usage** report can be viewed for trends over the las
 |Files  <br/> |The number of files in the OneDrive. <br/>|
 |Active files  <br/> | The number of active files within the time period.<br/> NOTE: If files were removed during the specified time period for the report, the number of active files shown in the report may be larger than the current number of files in the OneDrive. >  Deleted users will continue to appear in reports for 180 days.  <br/> |
 |Storage used (MB)  <br/> |The amount of storage the OneDrive uses in MB. |
-| Site ID <br/> | Site ID of the site. |
+| Site ID <br/> | The site ID of the site. |
 |||
    
 > [!NOTE]
