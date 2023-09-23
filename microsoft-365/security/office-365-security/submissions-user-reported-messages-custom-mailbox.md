@@ -187,11 +187,17 @@ When **Monitor reported messages in Outlook** is selected and you also select **
 
 - **Email notifications** section: These options affect the notification email message that's sent to users when an admin selects :::image type="icon" source="../../media/m365-cc-scc-mark-and-notify-icon.png" border="false"::: **Mark as and notify** on the **Submissions** page at <https://security.microsoft.com/reportsubmission>. The following options are available:
 
-  - **Results email** section: Select **Customize results email**. In the **Customize admin review email notifications** flyout that opens, configure the following settings on the **Phishing**, **Junk** and **No threats found** tabs:
-    - **Email body results text**: Enter the custom text to use. You can use different text for **Phishing**, **Junk** and **No threats found**.
-    - **Email footer text**: Enter the custom message footer text to use. The same text is used for **Phishing**, **Junk** and **No threats found**.
+  - **Results email** section:
+    - Select **Customize results email**. In the **Customize admin review email notifications** flyout that opens, configure the following settings on the **Phishing**, **Junk** and **No threats found** tabs:
+      - **Email body results text**: Enter the custom text to use. You can use different text for **Phishing**, **Junk** and **No threats found**.
+      - **Email footer text**: Enter the custom message footer text to use. The same text is used for **Phishing**, **Junk** and **No threats found**.
 
-     When you're finished in the **Customize admin review email notifications** flyout, select **Confirm** to return to the **User reported settings** page.
+       When you're finished in the **Customize admin review email notifications** flyout, select **Confirm** to return to the **User reported settings** page.
+
+  - **Automatically email users the results of the investigation**: If you select this option, select one or more of the following values that appear:
+    - **Phishing or malware**
+    - **Spam**
+    - **No threats found**
 
   - **Customize sender and branding** section:
     - **Specify a Microsoft 365 mailbox to use ads the From address of email notifications**: Select this option and enter the sender's email address in the box that appears. If you don't select this option, the default sender is submissions@messaging.microsoft.com.
@@ -212,6 +218,9 @@ When **Monitor reported messages in Outlook** is selected and you also select **
 - **Report from quarantine** section \> **Allow reporting for quarantined messages**: Verify that this setting is selected to let users report messages from quarantine as they [release quarantined email messages](quarantine-end-user.md#release-quarantined-email). Otherwise, uncheck this setting.
 
 When you're finished on the **User reported settings** page, select **Save**.
+
+> [!TIP]
+> If **Monitor reported messages in Microsoft Teams** is selected in the **Microsoft Teams** section when **Use a non-Microsoft add-in button** is also selected, the settings in the **Email notifications** sections are available. But, these settings apply only to user-reported Teams messages. For more information, see [User reported message settings in Microsoft Teams](submissions-teams.md).
 
 #### Message submission format for third-party reporting tools
 
@@ -321,43 +330,90 @@ For detailed syntax and parameter information, see [New-ReportSubmissionPolicy](
 
 This example creates the report submission policy with the default settings:
 
-- Reporting in Outlook is turned on: **Outlook** section \> **Monitor reported messages in Outlook** is selected by default and **Select an Outlook report button configuration** section \> **Use the built-in Report button in Outlook** is selected by default (`-EnableThirdPartyAddress $false` is the default value, so you don't need to use the parameter).
+- Reporting in Outlook is turned on: `-EnableThirdPartyAddress $false` is the default value, so you don't need to use the parameter to get:
+  - **Outlook** section: **Monitor reported messages in Outlook** selected.
+  - **Select an Outlook report button configuration** section: **Use the built-in Report button in Outlook** selected.
 
 - **Reported message destinations** section:
-  - **Send reported messages to** \> **Microsoft and my reporting mailbox** is selected by default (`-EnableReportToMicrosoft $true`, `-ReportJunkToCustomizedAddress $true`, `-ReportNotJunkToCustomizedAddress $true`, and `-ReportPhishToCustomizedAddress $true` are the default values, so you don't need to use those parameters).
-    - **Add an Exchange Online mailbox to send reported messages to** specifies the email address of the reporting mailbox.
-      - **New-ReportSubmissionPolicy**: `-ReportJunkAddresses <emailaddress>`, `-ReportNotJunkAddresses <emailaddress>`, and `-ReportPhishAddresses <emailaddress>` are required.
-      - **New-ReportSubmissionRule**: `-SentTo <emailaddress>` is required.
+  - **Send reported messages to**: **Microsoft and my reporting mailbox** is selected: `-EnableReportToMicrosoft $true`, `-ReportJunkToCustomizedAddress $true`, `-ReportNotJunkToCustomizedAddress $true`, and `-ReportPhishToCustomizedAddress $true` are the default values, so you don't need to use those parameters. 
+
+    To populate **Add an Exchange Online mailbox to send reported messages to** with the email address of the reporting mailbox, use the following cmdlets and parameters:
+
+    - **New-ReportSubmissionPolicy**: `-ReportJunkAddresses <emailaddress>`, `-ReportNotJunkAddresses <emailaddress>`, and `-ReportPhishAddresses <emailaddress>`.
+    - **New-ReportSubmissionRule**: `-SentTo <emailaddress>`.
 
     > [!NOTE]
-    > Currently, the default value of the parameters that identify the the reporting mailbox is blank, which means the default reporting mailbox is the global admin's Exchange Online mailbox. The global admin isn't _shown_ as the reporting mailbox in the output of the **Get-ReportSubmissionPolicy** and **Get-ReportSubmissionRule** cmdlets or on the **User reported settings** page in the Defender portal until _after_ the first user in the organization reports a message from Outlook.
+    > The default value of the parameters that identify the the reporting mailbox is blank, which means the default reporting mailbox is the global admin's Exchange Online mailbox. The global admin isn't _shown_ as the reporting mailbox in the output of the **Get-ReportSubmissionPolicy** and **Get-ReportSubmissionRule** cmdlets or on the **User reported settings** page in the Defender portal until _after_ the first user in the organization reports a message from Outlook.
     >
     > Use the same email address value in all parameters that identify the reporting mailbox.
 
-    In this example, the email address of the reporting mailbox is reportedmessages@contoso.com in Exchange Online (you can't specify an external email address).
-
 Other settings:
 
-- **Outlook** section \> **Select an Outlook report button configuration** section \> **When a user reports an email** section:
-  - **Ask the user to confirm before reporting**: When you go to the **User reported settings** page in the Defender portal for the first time (which creates the report submission policy), this setting is not selected (equivalent to `-PreSubmitMessageEnabled -$false`). But, the default value when you use the PowerShell to create the policy is `-PreSubmitMessageEnabled $true`. So, the example includes `-PreSubmitMessageEnabled $false`.
-    - **Customize before message**: Nothing is entered in the **Title** or **Message** boxes in the flyout (`-EnableCustomizedMsg $false` is the default value).
-  - **Show a success message after the message is reported**: When you go to the **User reported settings** page in the Defender portal for the first time (which creates the report submission policy), this setting is not selected (equivalent to `-PostSubmitMessageEnabled -$false`). But, the default value when you use the PowerShell to create the policy is `-PostSubmitMessageEnabled $true`. So, the example includes `-PostSubmitMessageEnabled $false`.
-    - **Customize after message**: Nothing is entered in the **Title** or **Message** boxes in the flyout (`-EnableCustomizedMsg $false` is the default value).
+- **Outlook** section \> **Select an Outlook report button configuration** section:
+  - ***When the user reports an email** section:
+    - **Ask the user to confirm before reporting**:
+      - When you go to the **User reported settings** page in the Defender portal for the first time (which creates the report submission policy), this setting is not selected (equivalent to `-PreSubmitMessageEnabled -$false`).
+      - When you use PowerShell to create the policy, the default value is `-PreSubmitMessageEnabled $true`.
 
-  > [!NOTE]
-  > Customized pre-reporting and post-reporting pop-ups are shown when using the **Report** button in Outlook on the web.
-  >
-  > The Microsoft Report Message add-in supports only customized **Title** and **Description** values, and only for pre-reporting pop-ups (**Report phishing**, **Report junk**, and **Report not junk**).
-  >
-  > The Microsoft Report Phishing add-in supports all customized values, but only for the **Report phishing** pre-reporting pop-up.
+        So, to use PowerShell to recreate the default settings, you need to use `-PreSubmitMessageEnabled $false`.
+
+    - **Show a success message after the message is reported**:
+      - When you go to the **User reported settings** page in the Defender portal for the first time (which creates the report submission policy), this setting is not selected (equivalent to `-PostSubmitMessageEnabled -$false`).
+      - When you use PowerShell to create the policy, the default value is `-PostSubmitMessageEnabled $true`.
+
+        So, to use PowerShell to recreate the default settings, you need to use `-PostSubmitMessageEnabled $false`.
+
+    - **Customize messages**: Nothing is customized (`-EnableCustomizedMsg $false` is the default value).
+
+      The syntax to enter customized values for up to 7 different languages with the line split for clarity is:
+
+      ```powershell
+      -PreSubmitMessageEnabled $true -MultiLanguageSetting LanguageCode1,LanguageCode2...LanguageCode7 `
+      -MultiLanguagePreSubmitMessageTitleForPhishing "Language1 Before Phishing Title Text","Language2 Before Phishing Title Text",..."Language7 Before Phishing Title Text" `
+      -MultiLanguagePreSubmitMessageForPhishing "Language1 Before Phishing Description Text","Language2 Before Phishing Description Text",..."Language7 Before Phishing Description Text" `
+      [-MultiLanguagePreSubmitMessageButtonTextForPhishing "Language1 Before Phishing Info Button Text","Language2 Before Phishing Info Button Text",..."Language7 Before Phishing Info Button Text"] `
+      [-MultiLanguagePreSubmitMessageButtonLinkForPhishing "Language1 Before Phishing Info Button URL","Language2 Before Phishing Info Button URL",..."Language7 Before Phishing Info Button URL"] `
+      -MultiLanguagePreSubmitMessageTitleForJunk "Language1 Before Junk Title Text","Language2 Before Junk Title Text",..."Language7 Before Junk Title Text" `
+      -MultiLanguagePreSubmitMessageForJunk "Language1 Before Junk Description Text","Language2 Before Junk Description Text",..."Language7 Before Junk Description Text" `
+      [-MultiLanguagePreSubmitMessageButtonTextForJunk "Language1 Before Junk Info Button Text","Language2 Before Junk Info Button Text",..."Language7 Before Junk Info Button Text"] `  
+      [-MultiLanguagePreSubmitMessageButtonLinkForJunk "Language1 Before Junk Info Button URL","Language2 Before Junk Info Button URL",..."Language7 Before Junk Info Button URL"]  
+      -MultiLanguagePreSubmitMessageTitleForNotJunk "Language1 Before Not Junk Title Text","Language2 Before Not Junk Title Text",..."Language7 Before Not Junk Title Text" `
+      -MultiLanguagePreSubmitMessageForNotJunk "Language1 Before Not Junk Description Text","Language2 Before Not Junk Description Text",..."Language7 Before Not Junk Description Text" `
+      [-MultiLanguagePreSubmitMessageButtonTextForNotJunk "Language1 Before Not Junk Info Button Text","Language2 Before Not Junk Info Button Text",..."Language7 Before Not Junk Info Button Text"] `
+      [-MultiLanguagePreSubmitMessageButtonLinkForNotJunk "Language1 Before Not Junk Info Button URL","Language2 Before Not Junk Info Button URL",..."Language7 Before Not Junk Info Button URL"] `
+      -MultiLanguagePostSubmitMessageTitleForPhishing "Language1 After Phishing Title Text","Language2 After Phishing Title Text",..."Language7 After Phishing Title Text" `
+      -MultiLanguagePostSubmitMessageForPhishing "Language1 After Phishing Description Text","Language2 After Phishing Description Text",..."Language7 After Phishing Description Text" `
+      [-MultiLanguagePostSubmitMessageButtonTextForPhishing "Language1 After Phishing Info Button Text","Language2 After Phishing Info Button Text",..."Language7 After Phishing Info Button Text"] `
+      [-MultiLanguagePostSubmitMessageButtonLinkForPhishing "Language1 After Phishing Info Button URL","Language2 After Phishing Info Button URL",..."Language7 After Phishing Info Button URL"] `
+      -MultiLanguagePostSubmitMessageTitleForJunk "Language1 After Not Junk Title Text","Language2 After Not Junk Title Text",..."Language7 After Not Junk Title Text" `
+      -MultiLanguagePostSubmitMessageForJunk "Language1 After Not Junk Description Text","Language2 After Not Junk Description Text",..."Language7 After Not Junk Description Text" `
+      [-MultiLanguagePostSubmitMessageButtonTextForJunk "Language1 After Not Junk Info Button Text","Language2 After Not Junk Info Button Text",..."Language7 After Not Junk Info Button Text"] `
+      [-MultiLanguagePostSubmitMessageButtonLinkForJunk "Language1 After Not Junk Info Button URL","Language2 After Not Junk Info Button URL",..."Language7 After Not Junk Info Button URL"]
+      ```
+
+      - Valid language codes are available [here](/powershell/module/exchange/new-reportsubmissionpolicy#-multilanguagesetting).
+      - The order that you enter the language codes doesn't matter, but you must use the same order for the corresponding _MultiLanguagePre\*_ and _MultiLanguagePost\*_ parameter values.
+      - A text value for each language is required in the _MultiLanguage\*SubmitMessageTitleFor\*_ and _MultiLanguage\*SubmitMessageFor\*_ parameters (for example, _MultiLanguagePreSubmitMessageTitleForPhishing_ and _MultiLanguagePreSubmitMessageForPhishing_). The corresponding _MultiLanguage\*SubmitMessageButtonTextFor\*_ and _MultiLanguage\*SubmitMessageButtonLinkFor\*_ are optional, but you must use them both together.
+      - For the number of language codes that you specify, you need to provide the same number of blank values for **all** of the _MultiLanguage\*SubmitMessage\*_ parameters that you aren't using. For example, if you're using three languages, but you aren't using the _MultiLanguagePostSubmitMessageButtonTextForJunk_ and _MultiLanguagePostSubmitMessageButtonLinkForJunk_ parameters, you need to use the value `"","",""` for those parameters. You might need to add these blank values for up to 18 of the _MultiLanguage\*SubmitMessage\*_ parameters.
+
+    > [!NOTE]
+    > Customized pre-reporting and post-reporting pop-ups are shown when using the **Report** button in Outlook on the web.
+    >
+    > The Microsoft Report Message add-in supports only customized **Title** and **Description** values, and only for pre-reporting pop-ups (**Report phishing**, **Report junk**, and **Report not junk**).
+    >
+    > The Microsoft Report Phishing add-in supports all customized values, but only for the **Report phishing** pre-reporting pop-up.
 
 - **Email notifications** section:
-  - **Results email** section \> **Customize results email**: Nothing is entered in the **Email body results text** or **Email footer text** boxes on the **Phishing**, **Junk**, or **No threats found** tabs in the flyout (`-EnableCustomizedMsg $false` is the default value).
+  - **Results email** section:
+    - **Customize results email**: Nothing is entered in the **Email body results text** or **Email footer text** boxes on the **Phishing**, **Junk**, or **No threats found** tabs in the flyout (`-EnableCustomizedMsg $false` is the default value).
+    - **Automatically email users the results of the investigation.**
   - **Customize sender and branding** section:
     - **Specify a Microsoft 365 mailbox to use as the From address of email notifications** isn't selected (`-EnableCustomNotificationSender $false` is the default value).
     - **Replace the Microsoft logo with my organization's logo across all reporting experiences** isn't selected (`-EnableOrganizationBranding $false` is the default value).
 
 - **Reporting from quarantine** section: **Allow reporting for quarantined messages** is selected (`-DisableQuarantineReportingOption $false` is the default value).
+
+In this example, the email address of the reporting mailbox is reportedmessages@contoso.com in Exchange Online (you can't specify an external email address).
 
 ```powershell
 $usersub = "reportedmessages@contoso.com"
@@ -371,24 +427,29 @@ New-ReportSubmissionRule -Name DefaultReportSubmissionRule -ReportSubmissionPoli
 
 This example creates the report submission policy and the report submission rule with the following settings:
 
-- Reporting in Outlook is turned on: **Outlook** section \> **Monitor reported messages in Outlook** is selected and **Select an Outlook report button configuration** section \> **Use the built-in Report button in Outlook** is selected by default (`-EnableThirdPartyAddress $false` is the default value, so you don't need to use the parameter).
+- Reporting in Outlook is turned on: `-EnableThirdPartyAddress $false` is the default value, so you don't need to use the parameter to get:
+  - **Outlook** section: **Monitor reported messages in Outlook** selected.
+  - **Select an Outlook report button configuration** section: **Use the built-in Report button in Outlook** selected.
 
 - **Reported message destinations** section:
   - **Send reported messages to** \> **My reporting mailbox only**: `-EnableReportToMicrosoft $false` and `-EnableUserEmailNotification $true` are required. `-ReportJunkToCustomizedAddress $true`, `-ReportNotJunkToCustomizedAddress $true`, and `-ReportPhishToCustomizedAddress $true` are the default values, so you don't need to use those parameters.
-    - **Add an Exchange Online mailbox to send reported messages to** specifies the email address of the reporting mailbox.
-      - **New-ReportSubmissionPolicy**: `-ReportJunkAddresses <emailaddress>`, `-ReportNotJunkAddresses <emailaddress>`, and `-ReportPhishAddresses <emailaddress>` are required.
-      - **New-ReportSubmissionRule**: `-SentTo <emailaddress>` is required.
 
-    > [!NOTE]
-    > Currently, the value `-ReportChatMessageEnabled $false` is required. Even when the _ReportChatMessageEnabled_ property value is `$false` in PowerShell, the **Monitor reported message in Microsoft Teams** settings on the **User reported settings** page is selected. Selecting or unselecting **Monitor reported message in Microsoft Teams** on the **User reported settings** page doesn't change the value of the _ReportChatMessageEnabled_ property in PowerShell.
-    >
-    > Currently, the default value of the parameters that identify the the reporting mailbox is blank, which means the default reporting mailbox is the global admin's Exchange Online mailbox. The global admin isn't _shown_ as the reporting mailbox in the output of the **Get-ReportSubmissionPolicy** and **Get-ReportSubmissionRule** cmdlets until _after_ the first user in the organization reports a message from Outlook.
+    To populate **Add an Exchange Online mailbox to send reported messages to** with the email address of the reporting mailbox, use the following cmdlets and parameters:
+
+    - **New-ReportSubmissionPolicy**: `-ReportJunkAddresses <emailaddress>`, `-ReportNotJunkAddresses <emailaddress>`, and `-ReportPhishAddresses <emailaddress>`.
+    - **New-ReportSubmissionRule**: `-SentTo <emailaddress>`.
+
+    > [!TIP]
+    > The default value of the parameters that identify the the reporting mailbox is blank, which means the default reporting mailbox is the global admin's Exchange Online mailbox. The global admin isn't _shown_ as the reporting mailbox in the output of the **Get-ReportSubmissionPolicy** and **Get-ReportSubmissionRule** cmdlets until _after_ the first user in the organization reports a message from Outlook.
     >
     > Use the same email address value in all parameters that identify the reporting mailbox.
 
-    In this example, the email address of the reporting mailbox is userreportedmessages@fabrikam.com in Exchange Online (you can't specify an external email address).
-
 The remaining settings are the default values in "Other settings" as described in the [Use PowerShell to configure reporting in Outlook with report messages to Microsoft and the reporting mailbox](#use-powershell-to-configure-reporting-in-outlook-with-report-messages-to-microsoft-and-the-reporting-mailbox) section.
+
+In this example, the email address of the reporting mailbox is userreportedmessages@fabrikam.com in Exchange Online (you can't specify an external email address).
+
+> [!TIP]
+> The value `-ReportChatMessageEnabled $false` is required to achieve **Send reported messages to** \> **My reporting mailbox only**. Even when the _ReportChatMessageEnabled_ property value is `$false` in PowerShell, the **Monitor reported message in Microsoft Teams** settings on the **User reported settings** page is selected. Selecting or unselecting **Monitor reported message in Microsoft Teams** on the **User reported settings** page doesn't change the value of the _ReportChatMessageEnabled_ property in PowerShell.
 
 ```powershell
 $usersub = "userreportedmessages@fabrikam.com"
@@ -402,21 +463,25 @@ New-ReportSubmissionRule -Name DefaultReportSubmissionRule -ReportSubmissionPoli
 
 This example creates the report submission policy with the following settings:
 
-- Reporting in Outlook is turned on: **Outlook** section \> **Monitor reported messages in Outlook** is selected by default and **Select an Outlook report button configuration** section \> **Use the built-in Report button in Outlook** is selected by default (`-EnableThirdPartyAddress $false` is the default value, so you don't need to use the parameter).
+- Reporting in Outlook is turned on: `-EnableThirdPartyAddress $false` is the default value, so you don't need to use the parameter to get:
+  - **Outlook** section: **Monitor reported messages in Outlook** selected.
+  - **Select an Outlook report button configuration** section: **Use the built-in Report button in Outlook** selected.
 
 - **Reported message destinations** section:
   - **Send reported messages to** \> **Microsoft only**: `-EnableReportToMicrosoft $true` is the default value, so you don't need to use the parameter. `-ReportJunkToCustomizedAddress $false`, `-ReportNotJunkToCustomizedAddress $false`, and `-ReportPhishToCustomizedAddress $false` are required.
 
-  > [!NOTE]
-  > Currently, the default value of the parameters that identify the the reporting mailbox is blank, which means the default reporting mailbox is the global admin's Exchange Online mailbox. The global admin isn't _shown_ as the reporting mailbox in the output of the **Get-ReportSubmissionPolicy** and **Get-ReportSubmissionRule** cmdlets until _after_ the first user in the organization reports a message from Outlook.
+  > [!TIP]
+  > The default value of the parameters that identify the the reporting mailbox is blank, which means the default reporting mailbox is the global admin's Exchange Online mailbox. The global admin isn't _shown_ as the reporting mailbox in the output of the **Get-ReportSubmissionPolicy** and **Get-ReportSubmissionRule** cmdlets until _after_ the first user in the organization reports a message from Outlook.
 
 The remaining settings are the default values in "Other settings" as described in the [Use PowerShell to configure reporting in Outlook with report messages to Microsoft and the reporting mailbox](#use-powershell-to-configure-reporting-in-outlook-with-report-messages-to-microsoft-and-the-reporting-mailbox) section.
 
-> [!NOTE]
-> Currently, the values `-EnableUserEmailNotification $true` and `-ReportChatMessageToCustomizedAddressEnabled $false` are required.
+> [!TIP]
+> The value `-ReportChatMessageEnabled $false` is required to achieve **Send reported messages to** \> **Microsoft only**. Even when the _ReportChatMessageEnabled_ property value is `$false` in PowerShell, the **Monitor reported message in Microsoft Teams** setting on the **User reported settings** page is selected. Selecting or unselecting **Monitor reported message in Microsoft Teams** on the **User reported settings** page doesn't change the value of the _ReportChatMessageEnabled_ property in PowerShell.
+>
+> The values `-EnableUserEmailNotification $true` and `-ReportChatMessageToCustomizedAddressEnabled $false` are required to achieve **Send reported messages to** \> **Microsoft only**.
 
 ```powershell
-New-ReportSubmissionPolicy -ReportJunkToCustomizedAddress $false -ReportNotJunkToCustomizedAddress $false -ReportPhishToCustomizedAddress $false -PreSubmitMessageEnabled $false -PostSubmitMessageEnabled $false -EnableUserEmailNotification $true -ReportChatMessageToCustomizedAddressEnabled $false
+New-ReportSubmissionPolicy -ReportJunkToCustomizedAddress $false -ReportNotJunkToCustomizedAddress $false -ReportPhishToCustomizedAddress $false -PreSubmitMessageEnabled $false -PostSubmitMessageEnabled $false -EnableUserEmailNotification $true -ReportChatMessageToCustomizedAddressEnabled $false -ReportChatMessageEnabled $false
 ```
 
 Because a reporting mailbox isn't used, the report submission rule isn't needed or created.
@@ -425,22 +490,24 @@ Because a reporting mailbox isn't used, the report submission rule isn't needed 
 
 This example creates the report submission policy and the report submission rule with the following settings:
 
-- Reporting in Outlook is turned on: **Outlook** section \> **Monitor reported messages in Outlook** is selected by default and **Select an Outlook report button configuration** section \> **Use a non-Microsoft add-in button** is selected (`-EnableThirdPartyAddress $true` is required).
+- Reporting in Outlook is turned on:
+  - **Outlook** section: **Monitor reported messages in Outlook** is selected.
+  - **Select an Outlook report button configuration** section: **Use a non-Microsoft add-in button** is selected (`-EnableThirdPartyAddress $true` is required).
 
 - **Reported message destinations** section:
   - **Send reported messages to** \> **My reporting mailbox only**: `-EnableReportToMicrosoft $false`, `-EnableUserEmailNotification $true`, `-ReportJunkToCustomizedAddress $false`, `-ReportNotJunkToCustomizedAddress $false`, and `-ReportPhishToCustomizedAddress $false` are required.
-    - **Add an Exchange Online mailbox to send reported messages to** specifies the email address of the reporting mailbox.
-      - **New-ReportSubmissionPolicy**: `-ThirdPartyReportAddresses <emailaddress>`, `-ReportJunkAddresses <emailaddress>`, `-ReportNotJunkAddresses <emailaddress>`, and `-ReportPhishAddresses <emailaddress>` are required.
-      - **New-ReportSubmissionRule**: `-SentTo <emailaddress>` is required.
 
-    In this example, the email address of the reporting mailbox is thirdpartyreporting@wingtiptoys.com in Exchange Online (you can't specify an external email address).
+    To populate **Add an Exchange Online mailbox to send reported messages to** with the email address of the reporting mailbox, use the following cmdlets and parameters:
 
-    > [!NOTE]
-    > Currently, the default value of the parameters that identify the the reporting mailbox is blank, which means the default reporting mailbox is the global admin's Exchange Online mailbox. The global admin isn't _shown_ as the reporting mailbox in the output of the **Get-ReportSubmissionPolicy** and **Get-ReportSubmissionRule** cmdlets until _after_ the first user in the organization reports a message from Outlook.
-    >
+    - **New-ReportSubmissionPolicy**: `-ThirdPartyReportAddresses <emailaddress>`, `-ReportJunkAddresses <emailaddress>`, `-ReportNotJunkAddresses <emailaddress>`, and `-ReportPhishAddresses <emailaddress>` are required.
+    - **New-ReportSubmissionRule**: `-SentTo <emailaddress>` is required.
+
+    > [!TIP]
     > Use the same email address value in all parameters that identify the reporting mailbox.
 
 The remaining settings are the default values in "Other settings" as described in the [Use PowerShell to configure reporting in Outlook with report messages to Microsoft and the reporting mailbox](#use-powershell-to-configure-reporting-in-outlook-with-report-messages-to-microsoft-and-the-reporting-mailbox) section.
+
+In this example, the email address of the reporting mailbox is thirdpartyreporting@wingtiptoys.com in Exchange Online (you can't specify an external email address).
 
 ```powershell
 $usersub = "thirdpartyreporting@wingtiptoys.com"
@@ -460,8 +527,11 @@ Turning off reporting in Outlook has the following consequences:
 
 This example creates the report submission policy with reporting in Outlook turned off (**Outlook** section \> **Monitor reported messages in Outlook** not selected): `-EnableThirdPartyAddress $false` is the default value, so you don't need to use the parameter. `-EnableReportToMicrosoft $false`, `-EnableThirdPartyAddress $false, -ReportJunkToCustomizedAddress $false, -ReportNotJunkToCustomizedAddress $false, and -ReportPhishToCustomizedAddress $false` are required.
 
+> [!TIP]
+> The values `-PreSubmitMessageEnabled $true` and `-PostSubmitMessageEnabled $true` are required to achieve **Monitor reported messages in Outlook** not selected.
+
 ```powershell
-New-ReportSubmissionPolicy -EnableReportToMicrosoft $false -ReportJunkToCustomizedAddress $false -ReportNotJunkToCustomizedAddress $false -ReportPhishToCustomizedAddress $false
+New-ReportSubmissionPolicy -EnableReportToMicrosoft $false -ReportJunkToCustomizedAddress $false -ReportNotJunkToCustomizedAddress $false -ReportPhishToCustomizedAddress $false -PreSubmitMessageEnabled $true -PostSubmitMessageEnabled $true
 ```
 
 Because a reporting mailbox isn't used, the report submission rule isn't needed or created.
@@ -523,9 +593,7 @@ The following examples show how to change the user reporting experience without 
 - Turn on reporting in Outlook if necessary, select **Use the built-in Report button in Outlook**, and change **Send reported messages to** to **Microsoft only**:
 
   ```powershell
-  Set-ReportSubmissionPolicy -Identity DefaultReportSubmissionPolicy -EnableReportToMicrosoft $true -EnableThirdPartyAddress $false -ThirdPartyReportAddresses $null -ReportJunkToCustomizedAddress $false -ReportJunkAddresses $null -ReportNotJunkToCustomizedAddress $false -ReportNotJunkAddresses $null -ReportPhishToCustomizedAddress $false -ReportPhishAddresses $null -PreSubmitMessageEnabled $false -PostSubmitMessageEnabled $false -EnableUserEmailNotification $true -ReportChatMessageToCustomizedAddressEnabled $false
-
-  Get-ReportSubmissionRule | Remove-ReportSubmissionRule
+  Set-ReportSubmissionPolicy -Identity DefaultReportSubmissionPolicy -EnableReportToMicrosoft $true -EnableThirdPartyAddress $false -ThirdPartyReportAddresses $null -ReportJunkToCustomizedAddress $false -ReportJunkAddresses $null -ReportNotJunkToCustomizedAddress $false -ReportNotJunkAddresses $null -ReportPhishToCustomizedAddress $false -ReportPhishAddresses $null -PreSubmitMessageEnabled $false -PostSubmitMessageEnabled $false -EnableUserEmailNotification $true -ReportChatMessageToCustomizedAddressEnabled $false -ReportChatMessageEnabled $false
   ```
 
   The following command is required only if the report submission rule already exists:
@@ -539,7 +607,7 @@ The following examples show how to change the user reporting experience without 
   ```powershell
   $usersub = "thirdpartyreporting@wingtiptoys.com"
 
-  Set-ReportSubmissionPolicy -Identity DefaultReportSubmissionPolicy -EnableReportToMicrosoft $false -EnableThirdPartyAddress $true -ThirdPartyReportAddresses $usersub -ReportJunkToCustomizedAddress $false -ReportJunkAddresses $null -ReportNotJunkToCustomizedAddress $false -ReportNotJunkAddresses $null -ReportPhishToCustomizedAddress $false -ReportPhishAddresses $null -PreSubmitMessageEnabled $false -PostSubmitMessageEnabled $false -ReportChatMessageEnabled $true
+  Set-ReportSubmissionPolicy -Identity DefaultReportSubmissionPolicy -EnableReportToMicrosoft $false -EnableThirdPartyAddress $true -ThirdPartyReportAddresses $usersub -ReportJunkToCustomizedAddress $true -ReportJunkAddresses $usersub -ReportNotJunkToCustomizedAddress $true -ReportNotJunkAddresses $usersub -ReportPhishToCustomizedAddress $true -ReportPhishAddresses $usersub -PreSubmitMessageEnabled $false -PostSubmitMessageEnabled $false -ReportChatMessageEnabled $true
   ```
 
   And then run one of the following commands, depending on the existing configuration:
@@ -559,7 +627,7 @@ The following examples show how to change the user reporting experience without 
 - Turn off reporting in Outlook (**Monitor reported messages in Outlook** isn't selected):
 
   ```powershell
-  Set-ReportSubmissionPolicy -Identity DefaultReportSubmissionPolicy -EnableReportToMicrosoft $false -EnableThirdPartyAddress $false -ThirdPartyReportAddresses $null -ReportJunkToCustomizedAddress $false -ReportJunkAddresses $null -ReportNotJunkToCustomizedAddress $false -ReportNotJunkAddresses $null -ReportPhishToCustomizedAddress $false -ReportPhishAddresses $null
+  Set-ReportSubmissionPolicy -Identity DefaultReportSubmissionPolicy -EnableReportToMicrosoft $false -EnableThirdPartyAddress $false -ThirdPartyReportAddresses $null -ReportJunkToCustomizedAddress $false -ReportJunkAddresses $null -ReportNotJunkToCustomizedAddress $false -ReportNotJunkAddresses $null -ReportPhishToCustomizedAddress $false -ReportPhishAddresses $null -PreSubmitMessageEnabled $true -PostSubmitMessageEnabled $true
   ```
 
   And then run the following command if the report submission rule already exists:
@@ -613,7 +681,7 @@ Get-ReportSubmissionRule | Remove-ReportSubmissionRule
 To remove both the report submission policy and report submission rule in the same command without a confirmation, run the following command:
 
 ```powershell
-Remove-ReportSubmissionPolicy -Identity DefaultReportSubmissionPolicy; Get-ReportSubmissionRule | Remove-ReportSubmissionRule
+Remove-ReportSubmissionPolicy -Identity DefaultReportSubmissionPolicy; Get-ReportSubmissionRule | Remove-ReportSubmissionRule -Confirm:$false
 ```
 
 For detailed syntax and parameter information, see [Remove-ReportSubmissionPolicy](/powershell/module/exchange/remove-reportsubmissionpolicy) and [Remove-ReportSubmissionRule](/powershell/module/exchange/remove-reportsubmissionrule).
