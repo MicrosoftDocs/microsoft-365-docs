@@ -127,7 +127,7 @@ Go to the Microsoft Intune admin center (<https://endpoint.microsoft.com/>) > **
 
    - In the **Add Row** pane, enter:
      - **Name** as **Evidence folder location**
-     - **OMA-URI** as `./Vendor/MSFT/Defender/Configuration/DataDuplicationRemoteLocation`
+     - **OMA-URI** as `./Device/Vendor/MSFT/Defender/Configuration/DataDuplicationRemoteLocation`
      - **Data Type** as **String**
 
        :::image type="content" source="media/device-control-oma-uri-edit-row.png" alt-text="Set location for file evidence." lightbox="media/device-control-oma-uri-edit-row.png":::
