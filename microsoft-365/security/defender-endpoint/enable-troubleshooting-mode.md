@@ -44,7 +44,7 @@ During troubleshooting mode, you can use the PowerShell command `Set-MPPreferenc
 
 - Local admins, with appropriate permissions, can change configurations on individual endpoints that are usually locked by policy. Having a device in troubleshooting mode can be helpful when diagnosing Microsoft Defender Antivirus performance and compatibility scenarios.
 
-  - Local admins won't be able to turn off Microsoft Defender Antivirus, or uninstall it.
+  - Local admins cannot turn off Microsoft Defender Antivirus, or uninstall it.
 
   - Local admins can configure all other security settings in the Microsoft Defender Antivirus suite (for example, cloud protection, tamper protection).
 
