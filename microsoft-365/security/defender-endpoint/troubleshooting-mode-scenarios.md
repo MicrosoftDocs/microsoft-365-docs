@@ -76,7 +76,7 @@ For more information on Set-MpPreference cmdlet configuration preferences for Wi
 
 ## Scenario 3: Application taking longer to perform an action
 
-When Microsoft Defender Antivirus real-time protection is turned on, application takes a long time to perform basic tasks. To turn off real-time protection and troubleshoot the issue, follow the steps below. 
+When Microsoft Defender Antivirus real-time protection is turned on, application takes a long time to perform basic tasks. To turn off real-time protection and troubleshoot the issue, use the following procedure. 
 
 1. Request security admin to turn on troubleshooting mode on the device. 
 
@@ -92,7 +92,7 @@ When Microsoft Defender Antivirus real-time protection is turned on, application
 
 ## Scenario 4: Microsoft Office plugin blocked by Attack Surface Reduction
 
-Attack Surface Reduction (ASR) is not allowing Microsoft Office plugin to work properly because **Block all Office applications from creating child processes** is set to block mode. 
+Attack Surface Reduction (ASR) isn't allowing Microsoft Office plugin to work properly because **Block all Office applications from creating child processes** is set to block mode. 
 
 1. Turn on troubleshooting mode, and log in to the device. 
 
@@ -121,7 +121,7 @@ For more information, see [Use network protection to help prevent connections to
 ## Related topics
 
 > [!TIP]
-> **Performance tip** Due to a variety of factors (examples listed below) Microsoft Defender Antivirus, like other antivirus software, can cause performance issues on endpoint devices. In some cases, you might need to tune the performance of Microsoft Defender Antivirus to alleviate those performance issues. Microsoft's **Performance analyzer** is a PowerShell command-line tool that helps determine which files, file paths, processes, and file extensions might be causing performance issues; some examples are:
+> **Performance tip** Due to a variety of factors (such as the examples included in this article) Microsoft Defender Antivirus, like other antivirus software, can cause performance issues on endpoint devices. In some cases, you might need to tune the performance of Microsoft Defender Antivirus to alleviate those performance issues. Microsoft's **Performance analyzer** is a PowerShell command-line tool that helps determine which files, file paths, processes, and file extensions might be causing performance issues; some examples are:
 >
 > - Top paths that impact scan time
 > - Top files that impact scan time
