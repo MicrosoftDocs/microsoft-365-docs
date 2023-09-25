@@ -50,7 +50,7 @@ If you want to install an application but receive an error message that Microsof
 5. Launch an elevated PowerShell command prompt, and toggle off [real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md). 
 
     - Run `Get-MpComputerStatus` to check the RealTimeProtection status.
-    - Run `Set-mppreference -DisableRealtimeMonitoring $true` to turn off RTP.
+    - Run `Set-mppreference -DisableRealtimeMonitoring $true` to turn off [real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md).
     - Run `Get-MpComputerStatus` again to verify to RealTimeProtection status.
 
 6. Try installing the application.
@@ -85,7 +85,7 @@ When Microsoft Defender Antivirus real-time protection is turned on, application
 
 1. Request security admin to turn on troubleshooting mode on the device. 
 
-2. To disable RTP for this scenario, first turn off tamper protection. For more information, see [Protect security settings with tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md). 
+2. To disable [real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md) for this scenario, first turn off tamper protection. For more information, see [Protect security settings with tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md). 
 
 3. Once tamper protection is disabled, log in to the device. 
 
@@ -93,7 +93,7 @@ When Microsoft Defender Antivirus real-time protection is turned on, application
 
     - `Set-mppreference -DisableRealtimeMonitoring $true` 
 
-5. After disabling RTP, check to see if the application is slow. 
+5. After disabling [real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md), check to see if the application is slow. 
 
 ## Scenario 4: Microsoft Office plugin blocked by Attack Surface Reduction
 
