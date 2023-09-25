@@ -16,8 +16,6 @@ keywords:
 
 # Step 5. Configure Microsoft Teams
 
-https://learn.microsoft.com/en-us/mem/intune/apps/manage-microsoft-teams
-
 Microsoft Teams allows your organization to collaborate and communicate in real-time. Your organization can use Teams to chat between individuals, groups, teams, and channels. They can set up meetings, share apps and files, and make calls. Team also supports adding a variety of apps to bring capability and insight.
 
 Using Intune, Teams can be added, configured, and assigned to Your organization's end-users. Using Intune, you can also assign Microsoft Teams to your end-users to support conditional access, app protection, and single sign-on at your organization.

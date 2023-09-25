@@ -16,15 +16,13 @@ keywords:
 
 # Step 7. Verify app configuration
 
+You can use reports and logs to help view app configuration status.
 
-You can use the **App Configuration Status** report to view configuration based on the following columns:
+## View the app configuration status report
 
-## View the report
+The App Configuration Status report, available in the Intune console, provides details about the configuration state of each app based on user.
 
-1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Select **Apps** > **Monitor** > **App configuration status**.
-
-The following list provides details about app protection status: 
+The report provided the following list of app configuration status: 
 - **User**: The name of the user.
 - **Email**: The email of the user.
 - **App**: The name of the app that is being protected.
@@ -45,31 +43,22 @@ The following list provides details about app protection status:
 - **MDM device ID**: The MDM device ID is displayed if the device is enrolled with Microsoft Intune MDM.
  
 >[!NOTE]
-> The **Last Sync** column represents the same value in both the in-console User status report and the App Protection Policy [exportable .csv report](/mdm/intune/app-protection-policies-monitor#export-app-protection-activities). The difference is a small delay in synchronization between the value in the two reports.
->
-> The time referenced in Last Sync is when Intune last saw the app instance. When a user launches an app, it might notify the Intune App Protection service at that launch time, depending on when it last checked in. See [the retry interval times for App Protection Policy check-in](/mem/intune/apps/app-protection-policy-delivery). If a user hasn't used that particular app in the last check-in interval (which is usually 30 minutes for active usage), and they launch the app, then:
->
-> - The App Protection Policy exportable .csv report has the newest time, within 1 minute (minimum) to 30 minutes (maximum).
-> - The User status report has the newest time instantly.
->
-> For example, consider a targeted and licensed user who launches a protected app at 12:00 PM:
->
-> - If this is a sign in for the first time, that means the user was signed out before, and doesn't have an app instance registration with Intune. After the user signs in, the user gets a new app instance registration, and can be checked-in immediately (with the same time delays listed previously for future check-ins). Thus, the Last Sync time is 12:00 PM in the User status report, and 12:01 PM (or 12:30 PM at latest) in the App Protection Policy report.
-> - If the user is just launching the app, the Last Sync time reported depends on when the user last checked in.
+> The **Last Sync** column represents the same value in the in-console **User status report**, the **App Protection Policy** [exportable .csv report](/mdm/intune/app-protection-policies-monitor#export-app-protection-activities), and the **App Configuration Report**. The difference is a small delay in synchronization between the value in the reports.
 
-## Diagnostic logs
-[Diagnostic Logs](/mem/intune/apps/app-configuration-policies-overview#diagnostic-logs)
-[Using logs to show a configuration parameter](/mem/intune/apps/app-configuration-policies-overview#using-logs-to-show-a-configuration-parameter)
+## Understand app configuration diagnostic logs
 
+You can validate configuration by using the **Intune Diagnostic Log** for settings deployed through the managed app configuration policies. See the following resources related to app configuration logs:
+- [iOS/iPadOS configuration on unmanaged devices](/mem/intune/apps/app-configuration-policies-overview?branch=main#iosipados-configuration-on-unmanaged-devices)
+- [iOS/iPadOS configuration on managed devices](/mem/intune/apps/app-configuration-policies-overview?branch=main#iosipados-configuration-on-managed-devices)
+- [Android configuration on managed devices](/mem/intune/apps/app-configuration-policies-overview?branch=main#android-configuration-on-managed-devices)
 
-## Monitor app configuration status
-[Monitor iOS/iPadOS app configuration status per device](/mem/intune/apps/app-configuration-policies-use-ios#monitor-iosipados--app-configuration-status-per-device)
+## Monitor app configuration status for managed devices
 
-
+Once a configuration policy has been assigned, you can monitor app configuration status for each *managed* device. In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), select **Devices** > **All devices**. From the list of managed devices, select a specific device to display a pane for the device. On the device pane, select **App configuration**.  
 
 ## After configuring apps in Intune
 
-Once you have completed the above steps, you'll be ready to configure, protect, assign, and monitor the managed apps your organization uses.
+Once you have reviewed and completed the steps provided in this solution, you'll be ready to configure, protect, assign, and monitor the managed apps your organization uses.
 
 For more information about how to proceed, see the following topics:
 - [App configuration policies for Microsoft Intune](/mem/intune/apps/app-configuration-policies-overview)
