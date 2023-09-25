@@ -102,7 +102,7 @@ During troubleshooting mode, you can use the PowerShell command `Set-MPPreferenc
 
 1. Go to the Microsoft 365 Defender portal (<https://security.microsoft.com>), and sign in.
 
-2. Navigate to the device page/machine page for the device you would like to turn on troubleshooting mode. Select **Turn on troubleshooting mode**. Note that this requires "Manage security settings in Security Center" permissions for Microsoft Defender for Endpoint.
+2. Navigate to the device page/machine page for the device you would like to turn on troubleshooting mode. Select **Turn on troubleshooting mode**. You must have "Manage security settings in Security Center" [permissions](assign-portal-access.md) for Microsoft Defender for Endpoint.
 
    :::image type="content" source="../../media/ts-mode-menu.png" alt-text="Turn on troubleshooting mode" lightbox="../../media/ts-mode-menu.png":::
 
@@ -119,7 +119,7 @@ During troubleshooting mode, you can use the PowerShell command `Set-MPPreferenc
 
 ## Advanced hunting queries
 
-Here are some pre-built advanced hunting queries to give you visibility into the troubleshooting events that are occurring in your environment. You can also use these queries to [create detection rules](../defender/custom-detection-rules.md#create-a-custom-detection-rule) to generate alerts when devices are in troubleshooting mode.
+Here are some prebuilt advanced hunting queries to give you visibility into the troubleshooting events that are occurring in your environment. You can also use these queries to [create detection rules](../defender/custom-detection-rules.md#create-a-custom-detection-rule) to generate alerts when devices are in troubleshooting mode.
 
 ### Get troubleshooting events for a particular device
 
