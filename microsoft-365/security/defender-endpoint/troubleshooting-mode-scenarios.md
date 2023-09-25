@@ -5,6 +5,7 @@ search.appverid: met150
 ms.service: microsoft-365-security
 ms.author: dansimp
 author: dansimp
+ms.reviewer: pricci
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -95,9 +96,9 @@ When Microsoft Defender Antivirus [real-time protection](configure-real-time-pro
 
 3. Once tamper protection is disabled, sign into the device. 
 
-4. Launch an elevated PowerShell command prompt. 
+4. Launch an elevated PowerShell command prompt, and run the following command: 
 
-    - `Set-mppreference -DisableRealtimeMonitoring $true` 
+   `Set-mppreference -DisableRealtimeMonitoring $true` 
 
 5. After disabling [real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md), check to see if the application is slow. 
 
