@@ -90,7 +90,7 @@ The following section applies to Loop components stored in OneDrive (created out
 - **[Data Loss Prevention](/microsoft-365/compliance/dlp-learn-about-dlp)** (DLP) policy tips ✻
 - **[Sensitivity Labeling](/microsoft-365/compliance/information-protection)** (MIP) ✻
 
-✻ requires E3/E5 license | ✻✻ requires E5 license
+✻ requires E3 or E5 license&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;✻✻ requires E5 license
 
 
 ## Loop workspace content stored in Microsoft Syntex
@@ -154,7 +154,7 @@ We will expand our administrative workspace management capabilities via PowerShe
 - **[Data Loss Prevention](/microsoft-365/compliance/dlp-learn-about-dlp)** (DLP) policy tips ✻
 - **[Sensitivity Labeling](/microsoft-365/compliance/information-protection)** (MIP) ✻
 
-✻ requires E3/E5 license | ✻✻ requires E5 license
+✻ requires E3 or E5 license&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;✻✻ requires E5 license
 
 
 ## Managing Loop in your organization
