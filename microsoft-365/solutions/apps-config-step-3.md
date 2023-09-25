@@ -39,7 +39,7 @@ When you add [Microsoft 365 Apps for Windows 10 and later](/mem/intune/apps/apps
 > [!NOTE]
 > You can only configure the app suite of the Microsoft 365 Apps for business edition using XML data. 
 
-To use the configuration designer, you must set **Configuration settings format** to **Configuration designer**. By choosing **Configuration designer**, the **Add Microsoft 365 Apps** pane will show three additional settings areas:
+To use the configuration designer, you must set **Configuration settings format** to **Configuration designer**. By choosing **Configuration designer**, the **Add Microsoft 365 Apps** pane shows three additional settings areas:
 - Configure app suite
 - App suite information
 - Properties
@@ -71,9 +71,9 @@ For more information about configuring the Microsoft 365 Apps for Windows 10 and
 
 ## Configure Microsoft 365 (Office) for iOS/iPadOS
 
-You can create a app configuration policy in Intune that allows you to configure specific settings for Microsoft 365 (Office) for iOS/iPadOS. For the iOS/iPad app that support [app configuation](/mem/intune/apps/app-configuration-policies-overview#apps-that-support-app-configuration), you can create either an app configuration policy to target [Managed devices](/mem/intune/apps/app-configuration-policies-overview#managed-devices) or [Managed apps](/mem/intune/apps/app-configuration-policies-overview#managed-apps). 
+You can create an app configuration policy in Intune that allows you to configure specific settings for Microsoft 365 (Office) for iOS/iPadOS. For the iOS/iPad app that support [app configuration](/mem/intune/apps/app-configuration-policies-overview#apps-that-support-app-configuration), you can create either an app configuration policy to target [Managed devices](/mem/intune/apps/app-configuration-policies-overview#managed-devices) or [Managed apps](/mem/intune/apps/app-configuration-policies-overview#managed-apps). 
 
-When you choose to target an app configuration policy to **Managed apps**, you are using "MAM channel" to deliver app configuration to end-users at your organization. Within the Intune admin center, the MAM channel is referred to as a Managed Apps app configuration policy. The MAM channel is different than the mobile device management (MDM) OS platform channels that are offered when a device is enrolled. By using the MAM channel, apps can receive app configuration policies regardless of the device enrollment state. This is an important difference between mobile application management and mobile device management.
+When you choose to target an app configuration policy to **Managed apps**, you're using "MAM channel" to deliver app configuration to end-users at your organization. Within the Intune admin center, the MAM channel is referred to as a Managed Apps app configuration policy. The MAM channel is different than the mobile device management (MDM) OS platform channels that are offered when a device is enrolled. By using the MAM channel, apps can receive app configuration policies regardless of the device enrollment state. This is an important difference between mobile application management and mobile device management.
 
 > [!NOTE]
 > With Microsoft Intune, app configuration delivered through the mobile device management OS channel is referred to as a **Managed Devices** App Configuration Policy (ACP); app configuration delivered through the App Protection Policy (APP) channel is referred to as a **Managed Apps** App Configuration Policy.
@@ -102,7 +102,7 @@ For additional app configuration policy information for iOS/iPadOS, see the foll
 
 ## Configure Microsoft 365 (Office) on managed Android device
 
-You can configure Microsoft 365 (Office) on managed Android Enterprise device using the **Managed devices** channel. Configuration settings available for this app when you choose this channel for your policy include [permissions](apps-config-step-6.md#app-configuration-permissions), general [configuration settings](apps-config-step-6.md#app-configuration-settings), and configuration for [connected apps](apps-config-step-6.md#connected-apps-configuration). For more information about this channel for managed devices see, [App configuration policies for the Managed devices channel](apps-config-step-6.md#app-configuration-policies-for-the-managed-devices-channel).
+You can configure Microsoft 365 (Office) on managed Android Enterprise device using the **Managed devices** channel. Configuration settings available for this app when you choose this channel for your policy include [permissions](apps-config-step-6.md#app-configuration-permissions), general [configuration settings](apps-config-step-6.md#app-configuration-settings), and configuration for [connected apps](apps-config-step-6.md#connected-apps-configuration). For more information about this channel for managed devices, see, [App configuration policies for the Managed devices channel](apps-config-step-6.md#app-configuration-policies-for-the-managed-devices-channel).
 
 Microsoft 365 (Office) for Android supports the following configuration settings:
 
@@ -137,7 +137,7 @@ For additional app configuration policy information for iOS/iPadOS, see the foll
 
 ## Configure Microsoft 365 (Office) as a managed app
 
-If your end-user's Android devices is not managed, you can use the **Managed apps** channel to configuration Microsoft 365 (Office). Configuration settings available for this app when you choose this channel for your policy include general [configuration settings](apps-config-step-6.md#managed-apps-configuration-settings) and configuration for [Microsoft Tunnel](apps-config-step-6.md#connected-apps-configuration). For more information about this channel for managed devices see, [App configuration policies for the Managed apps channel](apps-config-step-6.md#app-configuration-policies-for-the-managed-apps-channel).
+If your end-user's Android devices isn't managed, you can use the **Managed apps** channel to configuration Microsoft 365 (Office). Configuration settings available for this app when you choose this channel for your policy include general [configuration settings](apps-config-step-6.md#managed-apps-configuration-settings) and configuration for [Microsoft Tunnel](apps-config-step-6.md#connected-apps-configuration). For more information about this channel for managed devices, see, [App configuration policies for the Managed apps channel](apps-config-step-6.md#app-configuration-policies-for-the-managed-apps-channel).
 
 ## Policies for Office apps
 
@@ -149,7 +149,7 @@ You must meet the requirements to use policies for Office apps. For more informa
 
 You can also install and configure specific Microsoft 365 apps. These apps are included in specific Microsoft plans and licenses. For more information about app licenses, see [Understand app licenses used in Intune](/microsoft-365/solutions/apps-license-overview).
 
-Microsoft 365 include the following apps:
+Microsoft 365 includes the following apps:
 
 - Microsoft Access
 - Microsoft Edge

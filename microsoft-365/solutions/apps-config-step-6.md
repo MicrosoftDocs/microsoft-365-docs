@@ -16,7 +16,7 @@ keywords:
 
 # Step 6. Configure other apps
 
-App configuration policies can be deployed based on the **Managed devices** channel or the **Managed apps** channel. It's important to know the the different capabilities that each channel offers. For more information about these channels, see [Delivery channels for app configuration policies](apps-config-overview.md#delivery-channels-for-app-configuration-policies).
+App configuration policies can be deployed based on the **Managed devices** channel or the **Managed apps** channel. It's important to know the different capabilities that each channel offers. For more information about these channels, see [Delivery channels for app configuration policies](apps-config-overview.md#delivery-channels-for-app-configuration-policies).
 
 > [!NOTE]
 > Not all apps integrated with the Intune App SDK or the Intune App Wrapping Tool include configuration settings, however those apps may include app protection settings.
@@ -25,13 +25,13 @@ App configuration policies can be deployed based on the **Managed devices** chan
 
 ## App configuration policies for the Managed devices channel
 
-When you choose **Managed devices** you can choose to target your app configuration policy to either **iOS/iPadOS** or **Android Enterprise** devices. For **iOS/iPadOS** apps, you can choose a single associated **Built-In iOS app** or **iOS store app**. For **Android Enterprise** apps, you can choose a single associated **Managed Google Play store app** or **Managed Google Play web link**. 
+When you choose Managed devices,** you can choose to target your app configuration policy to either **iOS/iPadOS** or **Android Enterprise** devices. For **iOS/iPadOS** apps, you can choose a single associated **Built-In iOS app** or **iOS store app**. For **Android Enterprise** apps, you can choose a single associated **Managed Google Play store app** or **Managed Google Play web link**. 
 
-When you select the **Managed devices** channel, you'll find that iOS/iPadOS has different standard configuration options than Android Enterprise. When you select **iOS/iPadOS** as the platform for your configuration policy, you can add standard configuration keys for the specific app. When you select **Android Enterprise** as the platform for your configuration policy, you must select a **Profile Type** that specifies how your app is targeted based on the Android device profile. Additionally, you can add standard configuration keys for the specific app, and you can also choose to enable [Connected apps](#connected-apps-configuration).
+When you select the **Managed devices** channel, you find that iOS/iPadOS has different standard configuration options than Android Enterprise. When you select **iOS/iPadOS** as the platform for your configuration policy, you can add standard configuration keys for the specific app. When you select **Android Enterprise** as the platform for your configuration policy, you must select a **Profile Type** that specifies how your app is targeted based on the Android device profile. Additionally, you can add standard configuration keys for the specific app, and you can also choose to enable [Connected apps](#connected-apps-configuration).
 
 ### Configure specific Android Enterprise apps
 
-Managed Home Screen, Google Chrome for Android, and Microsoft Launcher are [Android Enterprise](/mem/intune/apps/app-configuration-policies-use-android) apps that can be configured for the **Managed devices** channel. Each of these apps support configuring the following areas:
+Managed Home Screen, Google Chrome for Android, and Microsoft Launcher are [Android Enterprise](/mem/intune/apps/app-configuration-policies-use-android) apps that can be configured for the **Managed devices** channel. Each of these apps supports configuring the following areas:
 - [Permissions](#android-enterprise-app-configuration-permissions)
 - [Configuration Settings](#android-enterprise-app-configuration-settings)
 - [Connected apps](#connected-apps-configuration)
@@ -56,11 +56,11 @@ If the managed app supports configuration settings, the Configuration settings f
 
 #### Connected apps configuration
 
-You can allow users using Android personally-owned and corporate-owned work profiles to turn on connected apps experiences for supported apps. This app configuration setting enables apps to connect and integrate app data across the work and personal app instances. For example, connecting a calendar app can show work and personal events together. Some apps might not support connected apps. Additionally, this setting only works for personally-owned and corporate-owned work profile devices. For more information, see [Enable connected apps](/mem/intune/apps/app-configuration-policies-use-android#enable-connected-apps).
+You can allow users using Android personally owned and corporate-owned work profiles to turn on connected apps experiences for supported apps. This app configuration setting enables apps to connect and integrate app data across the work and personal app instances. For example, connecting a calendar app can show work and personal events together. Some apps might not support connected apps. Additionally, this setting only works for personally owned and corporate-owned work profile devices. For more information, see [Enable connected apps](/mem/intune/apps/app-configuration-policies-use-android#enable-connected-apps).
  
 ## App configuration policies for the Managed apps channel
 
-When you choose the **Managed apps** channel, you can choose you can select the app(s) you would like to target with the policy. You can to target an app configuration policy to **Selected apps**, **All apps**, **All Microsoft apps**, or **Core Microsoft apps**. **All Apps** include all Microsoft and partner apps that have integrated the Intune SDK. **Microsoft Apps** include all Microsoft apps that have integrated the Intune SDK. **Core Microsoft apps** include a set of specific Microsoft apps. **Selected apps** allows you to apply an app configuration policy to specific apps. These specific apps can include **Public apps** and **Custom apps**. **Public apps** are apps contained in a predefined app group, such as store apps that you have added to Intune. **Custom apps** are apps that you that you have added from an apps store and have also added to Intune.
+When you choose the **Managed apps** channel, you can choose you can select the app(s) you would like to target with the policy. You can target an app configuration policy to **Selected apps**, **All apps**, **All Microsoft apps**, or **Core Microsoft apps**. **All Apps** include all Microsoft and partner apps that have integrated the Intune SDK. **Microsoft Apps** include all Microsoft apps that have integrated the Intune SDK. **Core Microsoft apps** include a set of specific Microsoft apps. **Selected apps** allows you to apply an app configuration policy to specific apps. These specific apps can include **Public apps** and **Custom apps**. **Public apps** are apps contained in a predefined app group, such as store apps that you have added to Intune. **Custom apps** are apps that you that you have added from an app store and have also added to Intune.
 
 > [!NOTE]
 > The MAM channel supports Microsoft Launcher and includes general configuration settings and Microsoft Tunnel settings.
@@ -100,7 +100,7 @@ Similar to app configuration policies for managed devices, if the managed app su
 
 ## Obtain settings for other apps
 
-Not every app supports app configuration. Check with the app developer to see if their app supports app configuration policies or for [toubleshooting specific app configuation settings](/mem/intune/apps/app-configuration-policies-overview?branch=main#troubleshooting). For a list of Microsoft and partner apps, see [Microsoft Intune protected apps](/mem/intune/apps/apps-supported-intune-apps).
+Not every app supports app configuration. Check with the app developer to see if their app supports app configuration policies or for [troubleshooting specific app configuration settings](/mem/intune/apps/app-configuration-policies-overview?branch=main#troubleshooting). For a list of Microsoft and partner apps, see [Microsoft Intune protected apps](/mem/intune/apps/apps-supported-intune-apps).
 
 ## Next step
 <!--

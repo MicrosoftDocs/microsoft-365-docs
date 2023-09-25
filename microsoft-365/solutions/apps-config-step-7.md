@@ -58,7 +58,7 @@ Once a configuration policy has been assigned, you can monitor app configuration
 
 ## After configuring apps in Intune
 
-Once you have reviewed and completed the steps provided in this solution, you'll be ready to configure, protect, assign, and monitor the managed apps your organization uses.
+Once you have reviewed and completed the steps provided in this solution, you are ready to configure, protect, assign, and monitor the managed apps your organization uses.
 
 For more information about how to proceed, see the following topics:
 - [App configuration policies for Microsoft Intune](/mem/intune/apps/app-configuration-policies-overview)
