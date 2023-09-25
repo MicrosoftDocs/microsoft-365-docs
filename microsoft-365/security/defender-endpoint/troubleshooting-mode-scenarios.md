@@ -95,7 +95,7 @@ When Microsoft Defender Antivirus [real-time protection](configure-real-time-pro
 
    For more information, see [Protect security settings with tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md). 
 
-3. Once tamper protection is disabled, log in to the device. 
+3. Once tamper protection is disabled, sign into the device. 
 
 4. Launch an elevated PowerShell command prompt. 
 
@@ -107,11 +107,11 @@ When Microsoft Defender Antivirus [real-time protection](configure-real-time-pro
 
 Attack Surface Reduction (ASR) isn't allowing Microsoft Office plugin to work properly because **Block all Office applications from creating child processes** is set to block mode. 
 
-1. Turn on troubleshooting mode, and log in to the device. 
+1. Turn on troubleshooting mode, and sign into the device. 
 
-2. Launch an elevated PowerShell command prompt. 
+2. Launch an elevated PowerShell command prompt, and run the following command: 
 
-    - `Set-MpPreference -AttackSurfaceReductionRules_Ids D4F940AB-401B-4EFC-AADC-AD5F3C50688A -AttackSurfaceReductionRules_Actions Disabled` 
+   `Set-MpPreference -AttackSurfaceReductionRules_Ids D4F940AB-401B-4EFC-AADC-AD5F3C50688A -AttackSurfaceReductionRules_Actions Disabled` 
 
 3. After disabling the ASR Rule, confirm that the Microsoft Office plugin now works.
 
@@ -121,11 +121,11 @@ For more information, see [Overview of attack surface reduction](overview-attack
 
 Network Protection is blocking Microsoft domain, preventing users from accessing it. 
 
-1. Turn on troubleshooting mode, and log in to the device. 
+1. Turn on troubleshooting mode, and sign into the device. 
 
-2. Launch an elevated PowerShell command prompt. 
+2. Launch an elevated PowerShell command prompt, and run the following commmand: 
 
-    - `Set-MpPreference -EnableNetworkProtection Disabled` 
+   `Set-MpPreference -EnableNetworkProtection Disabled` 
 
 3. After disabling Network Protection, check to see if the domain is now allowed. 
 
