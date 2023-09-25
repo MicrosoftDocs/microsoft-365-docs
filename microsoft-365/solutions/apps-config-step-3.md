@@ -102,7 +102,7 @@ For additional app configuration policy information for iOS/iPadOS, see the foll
 
 ## Configure Microsoft 365 (Office) on managed Android device
 
-You can configure Microsoft 365 (Office) on managed Android Enterprise device using the **Managed devices** channel. Configuration settings available for this app when you choose this channel for your policy include [permissions](apps-config-step-6.md#app-configuration-permissions), general [configuration settings](apps-config-step-6.md#app-configuration-settings), and configuration for [connected apps](apps-config-step-6.md#connected-apps-configuration). For more information about this channel for managed devices, see, [App configuration policies for the Managed devices channel](apps-config-step-6.md#app-configuration-policies-for-the-managed-devices-channel).
+You can configure Microsoft 365 (Office) on managed Android Enterprise device using the **Managed devices** channel. Configuration settings available for this app when you choose this channel for your policy include [permissions](apps-config-step-6.md#android-enterprise-app-configuration-permissions), general [configuration settings](apps-config-step-6.md#android-enterprise-app-configuration-settings), and configuration for [connected apps](apps-config-step-6.md#connected-apps-configuration). For more information about this channel for managed devices, see, [App configuration policies for the Managed devices channel](apps-config-step-6.md#app-configuration-policies-for-the-managed-devices-channel).
 
 Microsoft 365 (Office) for Android supports the following configuration settings:
 
