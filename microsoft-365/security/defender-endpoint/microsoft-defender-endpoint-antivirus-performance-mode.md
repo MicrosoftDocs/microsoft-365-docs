@@ -103,11 +103,11 @@ Set performance mode status to enabled via Group Policy:
 In GPMC.msc or GPedit.msc  
 Computer Configuration -> Administrative Templates -> Windows Components -> Microsoft Defender Antivirus -> Real-time Protection
 
-Double-click on "Configure performance mode status"![Defender_Performance_Mode_10](media/microsoft-defender-endpoint-antivirus-performance-mode/defender-performance-mode-10.png)
+Double-click on "Configure performance mode status"![Screenshot of Defender_Performance_Mode_10.](media/microsoft-defender-endpoint-antivirus-performance-mode/defender-performance-mode-10.png)
 
 Select the radio button for "Enabled"
 
-![Defender_Performance_Mode_11](media/microsoft-defender-endpoint-antivirus-performance-mode/defender-performance-mode-11.png)
+![Screenshot of Defender_Performance_Mode_11.](media/microsoft-defender-endpoint-antivirus-performance-mode/defender-performance-mode-11.png)
 
 Click on "Apply"
 
@@ -121,19 +121,19 @@ Powershell (Run as admin)
 
 Type "set-MpPreference -PerformanceModeStatus Enabled" w/o the double quoters, and press Enter.
 
-![Defender_Performance_Mode_04](media/microsoft-defender-endpoint-antivirus-performance-mode/defender-performance-mode-5.png)
+![Screenshot of Defender_Performance_Mode_04.](media/microsoft-defender-endpoint-antivirus-performance-mode/defender-performance-mode-5.png)
 
 ## Verify performance mode is enabled
 
 To verify that Dev Drive + Defender Performance Mode is enabled
 
-Step 1) In the Windows Security App -> Go to "Virus & threat Protection settings" -> "Manage settings" -> verify that "Dev Drive protection" is enabled![Defender_Performance_Mode_02](media/microsoft-defender-endpoint-antivirus-performance-mode/defender-performance-mode-02.png)
+Step 1) In the Windows Security App -> Go to "Virus & threat Protection settings" -> "Manage settings" -> verify that "Dev Drive protection" is enabled![Screenshot of Defender_Performance_Mode_02.](media/microsoft-defender-endpoint-antivirus-performance-mode/defender-performance-mode-02.png)
 
 Step 2)
 
 Click on "See volumes"
 
-![Defender_Performance_Mode_03](media/microsoft-defender-endpoint-antivirus-performance-mode/defender-performance-mode-03.png)
+![Screenshot of Defender_Performance_Mode_03.](media/microsoft-defender-endpoint-antivirus-performance-mode/defender-performance-mode-03.png)
 
 |Drive| Status|
 | -------- | -------- |
