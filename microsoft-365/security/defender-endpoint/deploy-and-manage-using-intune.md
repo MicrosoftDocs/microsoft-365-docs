@@ -3,9 +3,6 @@ title: Deploy and manage using Intune
 description: Use Intune OMA-URI and Intune user interface to deploy and manage on printer protection.
 ms.service: microsoft-365-security
 ms.subservice: mde
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: dansimp
 author: nimishasatapathy
 ms.localizationpriority: medium
@@ -16,7 +13,7 @@ ms.collection:
 - tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.date: 01/09/2023
+ms.date: 09/25/2023
 ms.reviewer: tewchen
 search.appverid: met150
 ---
