@@ -61,7 +61,7 @@ Sometimes during a scheduled scan, MsMpEng.exe can consume high CPU.
 
 1. Go to **Task Manager** > **Details** tab to confirm that `MsMpEng.exe` is the reason behind the high CPU usage. Also check to see if a scheduled scan is currently underway.
 
-2. Run ProcMon during the CPU spike for around five minutes, and then review the ProcMon log for clues. 
+2. Run [Process Monitor](troubleshoot-performance-issues.md#capture-process-logs-using-process-monitor) (ProcMon) during the CPU spike for around five minutes, and then review the ProcMon log for clues. 
 
 3. When the root cause is determined, turn on troubleshooting mode. 
 
