@@ -47,7 +47,7 @@ If you want to install an application but receive an error message that Microsof
 
 4. Go to **Windows security** > **Threat & virus protection** > **Manage settings** > **Tamper protection** > **Off**.  
 
-5. Launch an elevated PowerShell command prompt, and toggle off RTP. 
+5. Launch an elevated PowerShell command prompt, and toggle off [real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md). 
 
     - Run `Get-MpComputerStatus` to check the RealTimeProtection status.
     - Run `Set-mppreference -DisableRealtimeMonitoring $true` to turn off RTP.
