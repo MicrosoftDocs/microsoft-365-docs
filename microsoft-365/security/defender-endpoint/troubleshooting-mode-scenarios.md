@@ -59,25 +59,25 @@ If you want to install an application but receive an error message that Microsof
 
 Sometimes during a scheduled scan, MsMpEng.exe can consume high CPU.
 
-1. Go to **Task Manager** > **Details** tab to confirm that MsMpEng.exe is the reason behind the high CPU usage. Also check to see if a scheduled scan is currently underway.
+1. Go to **Task Manager** > **Details** tab to confirm that `MsMpEng.exe` is the reason behind the high CPU usage. Also check to see if a scheduled scan is currently underway.
 
-2. Run ProcMon during the CPU spike for around 5 minutes, and then review the ProcMon log for clues. 
+2. Run ProcMon during the CPU spike for around five minutes, and then review the ProcMon log for clues. 
 
-3. Once root cause is determined, turn on troubleshooting mode. 
+3. When the root cause is determined, turn on troubleshooting mode. 
 
-4. Log in to the machine and launch an elevated PowerShell command prompt. 
+4. Sign into the device, and launch an elevated PowerShell command prompt. 
 
 5. Add process/file/folder/extension exclusions based on ProcMon findings using one of the following commands (the path, extension, and process exclusions mentioned in this article are examples only): 
 
-    - `Set-mppreference -ExclusionPath` (for example, C:\DB\DataFiles) 
+    - `Set-mppreference -ExclusionPath` (for example, `C:\DB\DataFiles`) 
     
-    - `Set-mppreference –ExclusionExtension` (for example, .dbx) 
+    - `Set-mppreference –ExclusionExtension` (for example, `.dbx`) 
     
-    - `Set-mppreference –ExclusionProcess` (for example, C:\DB\Bin\Convertdb.exe) 
+    - `Set-mppreference –ExclusionProcess` (for example, `C:\DB\Bin\Convertdb.exe`) 
 
 6. After adding the exclusion, check to see if the CPU usage has dropped. 
 
-For more information on Set-MpPreference cmdlet configuration preferences for Windows Defender scans and updates, see [Set-MpPreference](/powershell/module/defender/set-mppreference). 
+For more information on `Set-MpPreference` cmdlet configuration preferences for Microsoft Defender Antivirus scans and updates, see [Set-MpPreference](/powershell/module/defender/set-mppreference). 
 
 ## Scenario 3: Application taking longer to perform an action
 
