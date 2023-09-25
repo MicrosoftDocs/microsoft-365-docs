@@ -34,7 +34,7 @@ For troubleshooting performance-specific issues related to Microsoft Defender An
 
 If you want to install an application but receive an error message that Microsoft Defender Antivirus and tamper protection is on, use the following procedure to troubleshoot the issue.
 
-1. Request the security admin to turn on troubleshooting mode. You'll get a Windows Security notification once the troubleshooting mode starts.  
+1. Request the security admin to turn on troubleshooting mode. You get a Windows Security notification once the troubleshooting mode starts.  
 
 2. Connect to the device (using Terminal Services for example) with local admin permissions.  
 
@@ -62,7 +62,7 @@ Sometimes during a scheduled scan, MsMpEng.exe can consume high CPU.
 
 4. Log in to the machine and launch an elevated PowerShell command prompt. 
 
-5. Add process/file/folder/extension exclusions based on ProcMon findings using one of the following commands (the path, extension, and process exclusions mentioned below are examples only): 
+5. Add process/file/folder/extension exclusions based on ProcMon findings using one of the following commands (the path, extension, and process exclusions mentioned in this article are examples only): 
 
     - `Set-mppreference -ExclusionPath` (for example, C:\DB\DataFiles) 
     
