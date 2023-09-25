@@ -44,7 +44,7 @@ During troubleshooting mode, you can use the PowerShell command `Set-MPPreferenc
 
 - Local admins, with appropriate permissions, can change configurations on individual endpoints that are usually locked by policy. Having a device in troubleshooting mode can be helpful when diagnosing Microsoft Defender Antivirus performance and compatibility scenarios.
 
-  - Local admins cannot turn off Microsoft Defender Antivirus, or uninstall it.
+  - Local admins can't turn off Microsoft Defender Antivirus, or uninstall it.
 
   - Local admins can configure all other security settings in the Microsoft Defender Antivirus suite (for example, cloud protection, tamper protection).
 
@@ -58,7 +58,7 @@ During troubleshooting mode, you can use the PowerShell command `Set-MPPreferenc
   
   - Operational logs from during troubleshooting mode are also collected.
 
-  - Logs and snapshots are collected and are available for an admin to collect using the [Collect investigation package](respond-machine-alerts.md#collect-investigation-package-from-devices) feature on the device page. Note that Microsoft won't remove this data from the device until an admin collects them.
+  - Logs and snapshots are collected and are available for an admin to collect using the [Collect investigation package](respond-machine-alerts.md#collect-investigation-package-from-devices) feature on the device page. Microsoft doesn't remove this data from the device until an admin has collected it.
 
 - Admins can also review the changes in settings that take place during Troubleshooting mode in **Event Viewer** on the device page.
 
@@ -88,11 +88,11 @@ During troubleshooting mode, you can use the PowerShell command `Set-MPPreferenc
 
 - Troubleshooting mode is also available for machines running the modern, unified solution for Windows Server 2012 R2 and Windows Server 2016. Before you use troubleshooting mode, make sure all of the following components are up to date:
 
-  - Sense version 10.8049.22439.1084 or later ([KB5005292: Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB5005292))
+  - Sense version `10.8049.22439.1084` or later ([KB5005292: Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB5005292))
 
-  - Microsoft Defender Antivirus - Platform: 4.18.2207.7 or later ([KB4052623: Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623))
+  - Microsoft Defender Antivirus - Platform: `4.18.2207.7` or later ([KB4052623: Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623))
 
-  - Microsoft Defender Antivirus - Engine: 1.1.19500.2 or later ([KB2267602: Microsoft Update Catalog](https://www.microsoft.com/en-us/wdsi/defenderupdates))
+  - Microsoft Defender Antivirus - Engine: `1.1.19500.2` or later ([KB2267602: Microsoft Update Catalog](https://www.microsoft.com/en-us/wdsi/defenderupdates))
 
 - For troubleshooting mode to be applied, Microsoft Defender for Endpoint must be tenant-enrolled and active on the device.
 
@@ -119,7 +119,7 @@ During troubleshooting mode, you can use the PowerShell command `Set-MPPreferenc
 
 ## Advanced hunting queries
 
-Here are some pre-built advanced hunting queries to give you visibility into the troubleshooting events that are occurring in your environment. You can also use these queries to [create detection rules](../defender/custom-detection-rules.md#create-a-custom-detection-rule) that'd alert you when the devices are in troubleshooting mode.
+Here are some pre-built advanced hunting queries to give you visibility into the troubleshooting events that are occurring in your environment. You can also use these queries to [create detection rules](../defender/custom-detection-rules.md#create-a-custom-detection-rule) to generate alerts when devices are in troubleshooting mode.
 
 ### Get troubleshooting events for a particular device
 
