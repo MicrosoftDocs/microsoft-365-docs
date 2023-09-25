@@ -38,21 +38,21 @@ Managed Home Screen, Google Chrome for Android, and Microsoft Launcher are [Andr
 
 > [!NOTE]
 > You must adhere to the following prerequisites:
-> - The user's Android Enterprise device must be enrolled in Intune. For more information, see [Set up enrollment of Android Enterprise personally-owned work profile devices](../enrollment/android-work-profile-enroll.md).
-> - Managed Home Screen, Google Chrome for Android, and Microsoft Launcher are added as a Managed Google Play app. For more information about Managed Google Play, see [Connect your Intune account to your Managed Google Play account](../enrollment/connect-intune-android-enterprise.md).
+> - The user's Android Enterprise device must be enrolled in Intune. For more information, see [Set up enrollment of Android Enterprise personally-owned work profile devices](/mem/intune/enrollment/android-work-profile-enroll).
+> - Managed Home Screen, Google Chrome for Android, and Microsoft Launcher are added as a Managed Google Play app. For more information about Managed Google Play, see [Connect your Intune account to your Managed Google Play account](/mem/intune/enrollment/connect-intune-android-enterprise).
 
 For more information about configuring these apps, see the following resources:
 - [Configure the Microsoft Managed Home Screen app for Android Enterprise](/mem/intune/apps/app-configuration-managed-home-screen-app)
 - [Configure Google Chrome for Android devices using Intune](/mem/intune/apps/apps-configure-chrome-android)
 - [Configure Microsoft Launcher](/mem/intune/apps/configure-microsoft-launcher)
 
-#### App configuration permissions
+#### Android Enterprise app configuration permissions
 
 When creating an app configuration policy for an Android Enterprise device using the **Managed devices** channel, you can add **Permissions** within the **Settings** pane. Permissions granted will override the "Default app permissions" policy for the selected apps. You can set the Permission state for each permission. You can choose from Prompt, Auto grant, or Auto deny. By default, Android apps that require device permissions, such as access to location or the device camera, prompt users to accept or deny permissions. For more information, see [Preconfigure the permissions grant state for apps](/mem/intune/apps/app-configuration-policies-use-android#preconfigure-the-permissions-grant-state-for-apps).
 
-#### App configuration settings
+#### Android Enterprise app configuration settings
 
-If the managed app supports configuration settings, the Configuration settings format dropdown box is visible. You can set the configuration values by using either the configuation designer or by entering JSON data. Both methods accomplish the same configuration setting results. Additional, setting keys, types, and values may be available for the specific app. Check with the app developer to determine if there are additional configuation settings available for an app. For more information, see [Add app configuration policies for managed Android Enterprise devices](/mem/intune/apps/app-configuration-policies-use-android).
+If the managed app supports configuration settings, the Configuration settings format dropdown box is visible. You can set the configuration values by using either the configuration designer or by entering JSON data. Both methods accomplish the same configuration setting results. Additional, setting keys, types, and values may be available for the specific app. Check with the app developer to determine if there are additional configuration settings available for an app. For more information, see [Add app configuration policies for managed Android Enterprise devices](/mem/intune/apps/app-configuration-policies-use-android).
 
 #### Connected apps configuration
 
@@ -93,6 +93,10 @@ Microsoft Tunnel is a VPN gateway solution for Microsoft Intune that runs in a c
 > This capability is available when you add Microsoft Intune Plan 2 or Microsoft Intune Suite as an add-on license. For more information, see [Use Intune Suite add-on capabilities](/mem/intune/fundamentals/intune-add-ons).
 
 For more information about Microsoft Tunnel for MAM, see [Microsoft Tunnel for Mobile Application Management](\memdocs\intune\protect\microsoft-tunnel-mam).
+
+#### Managed apps configuration settings
+
+Similar to app configuration policies for managed devices, if the managed app supports configuration settings, the **Configuration settings** dropdown box is visible. You can set the configuration values by using either the configuration designer or by entering JSON data. Both methods accomplish the same configuration setting results. Additional, setting keys, types, and values may be available for the specific app. Check with the app developer to determine if there are additional configuration settings available for an app. 
 
 ## Obtain settings for other apps
 

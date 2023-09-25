@@ -115,8 +115,6 @@ You can choose which additional app sources will be shown in Company Portal to e
 
 You can customize the visibility of specific self-service device actions for Windows and iOS devices. The **Remove** and **Reset** device actions can be customized for end-users in the Company Portal. These actions can be used to restrict device actions in the Company Portal app and website, however do not implement any device restriction policies. To prevent users from removing or resetting corporate Windows and iOS devices, you can hide these actions from the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) by selecting **Tenant Administration** > **Customization**. For more information, see [Customizing Remove and Reset device actions](/mem/intune/apps/company-portal-app#customizing-remove-and-reset-device-actions).
 
-## Specific configuration scenarios
-
 ### Configure the Company Portal for iOS/iPadOS ADE
 
 Apple's Automated Device Enrollments (ADE) are not compatible with the app store version of the Company Portal app by default. However, you can configure the Company Portal app to support iOS/iPadOS ADE devices even when users have downloaded the Company Portal from the App Store. You can create a app configuration policy that uses the Company Portal on an ADE device enrolled with user affinity, or enrolled without user affinity. For more information, see [Configure the Company Portal app to support iOS and iPadOS devices enrolled with Automated Device Enrollment](/mem/intune/apps/app-configuration-policies-use-ios#configure-the-company-portal-app-to-support-ios-and-ipados-devices-enrolled-with-automated-device-enrollment).

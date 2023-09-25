@@ -70,9 +70,6 @@ By default, Intune will install Office with the default language of the operatin
 For more information about configuring the Microsoft 365 Apps for Windows 10 and later, see [Configure app suite using the configuration designer](/mem/intune/apps/apps-add-office365#step-2---option-1-configure-app-suite-using-the-configuration-designer). For additional information about installing Microsoft 365 Apps for Windows 10 and later, such as [deployment details](/mem/intune/apps/apps-add-office365#deployment-details), [troubleshooting](/mem/intune/apps/apps-add-office365#troubleshooting), and [installation errors](/mem/intune/apps/apps-add-office365#errors-during-installation-of-the-app-suite), see [Add Microsoft 365 Apps to Windows 10/11 devices with Microsoft Intune](/mem/intune/apps/apps-add-office365#troubleshooting).
 
 ## Configure Microsoft 365 (Office) for iOS/iPadOS
-<!--
-https://learn.microsoft.com/mem/intune/apps/manage-microsoft-office#general-app-configuration-scenarios
--->
 
 You can create a app configuration policy in Intune that allows you to configure specific settings for Microsoft 365 (Office) for iOS/iPadOS. For the iOS/iPad app that support [app configuation](/mem/intune/apps/app-configuration-policies-overview#apps-that-support-app-configuration), you can create either an app configuration policy to target [Managed devices](/mem/intune/apps/app-configuration-policies-overview#managed-devices) or [Managed apps](/mem/intune/apps/app-configuration-policies-overview#managed-apps). 
 
@@ -87,7 +84,7 @@ Microsoft 365 (Office) for iOS/iPadOS supports the following configuration setti
 
 | Configuration   action | Description | Keys |
 |---|---|---|
-| [Manage   the creation of Sticky   Notes](com.microsoft.office.OfficeWebAddinDisableOMEXCatalog) | Enable or disable the creation   of Stick Notes for work or school accounts. | com.microsoft.office.NotesCreationEnabled |
+| [Manage   the creation of Sticky   Notes](/mem/intune/apps/manage-microsoft-office#manage-the-creation-of-sticky-notes) | Enable or disable the creation   of Stick Notes for work or school accounts. | com.microsoft.office.NotesCreationEnabled |
 | [Set   add-ins   preference](/mem/intune/apps/manage-microsoft-office#set-add-ins-preference) | Enable or disable office add-in   platform and/or the Office store portion of the platform. | com.microsoft.office.OfficeWebAddinDisableAllCatalogs<br>com.microsoft.office.OfficeWebAddinDisableOMEXCatalog |
 | [Manage   Teams apps running on   Office](/mem/intune/apps/manage-microsoft-office#manage-teams-apps-running-on-office-for-ios-and-android) | Enable or disable Teams apps on   Office. | com.microsoft.office.officemobile.TeamsApps.IsAllowed |
 | [Microsoft   365 Feed for iOS and   Android](/mem/intune/apps/manage-microsoft-office#enable-or-disable-microsoft-365-feed-for-ios-and-android) | Enable or disable the Microsoft   365 Feed. | com.microsoft.office.officemobile.Feed.IsAllowed |
@@ -104,27 +101,14 @@ For additional app configuration policy information for iOS/iPadOS, see the foll
 - [App configuration policies for Intune App SDK managed apps](/mem/intune/apps/app-configuration-policies-managed-app)
 
 ## Configure Microsoft 365 (Office) on managed Android device
-<!--
-https://learn.microsoft.com/mem/intune/apps/manage-microsoft-office#general-app-configuration-scenarios
--->
 
-Managed devices:
-- Permissions section
-- Configuration Settings section
-- Connect apps section
-
-Managed apps:
-- General configuration settings section
-- Microsoft Tunnel for Mobile Application Management setting section
-
--  
-
+You can configure Microsoft 365 (Office) on managed Android Enterprise device using the **Managed devices** channel. Configuration settings available for this app when you choose this channel for your policy include [permissions](../apps-config-step-6.md#app-configuration-permissions), general [configuration settings](../apps-config-step-6.md#app-configuration-settings), and configuration for [connected apps](../apps-config-step-6.md#connected-apps-configuration). For more information about this channel for managed devices see, [App configuration policies for the Managed devices channel](apps-config-step-6.md#app-configuration-policies-for-the-managed-devices-channel).
 
 Microsoft 365 (Office) for Android supports the following configuration settings:
 
 | Configuration   action | Description | Keys |
 |---|---|---|
-| [Manage   the creation of Sticky   Notes](com.microsoft.office.OfficeWebAddinDisableOMEXCatalog) | Enable or disable the creation   of Stick Notes for work or school accounts. | com.microsoft.office.NotesCreationEnabled |
+| [Manage   the creation of Sticky   Notes](/mem/intune/apps/manage-microsoft-office#manage-the-creation-of-sticky-notes) | Enable or disable the creation   of Stick Notes for work or school accounts. | com.microsoft.office.NotesCreationEnabled |
 | [Set   add-ins   preference](/mem/intune/apps/manage-microsoft-office#set-add-ins-preference) | Enable or disable office add-in   platform and/or the Office store portion of the platform. | com.microsoft.office.OfficeWebAddinDisableAllCatalogs<br>com.microsoft.office.OfficeWebAddinDisableOMEXCatalog |
 | [Manage   Teams apps running on   Office](/mem/intune/apps/manage-microsoft-office#manage-teams-apps-running-on-office-for-ios-and-android) | Enable or disable Teams apps on   Office. | com.microsoft.office.officemobile.TeamsApps.IsAllowed |
 | [Microsoft   365 Feed for iOS and   Android](/mem/intune/apps/manage-microsoft-office#enable-or-disable-microsoft-365-feed-for-ios-and-android) | Enable or disable the Microsoft   365 Feed. | com.microsoft.office.officemobile.Feed.IsAllowed |
@@ -153,15 +137,13 @@ For additional app configuration policy information for iOS/iPadOS, see the foll
 
 ## Configure Microsoft 365 (Office) as a managed app
 
-
+If your end-user's Android devices is not managed, you can use the **Managed apps** channel to configuration Microsoft 365 (Office). Configuration settings available for this app when you choose this channel for your policy include general [configuration settings](../apps-config-step-6.md#managed-apps-configuration-settings) and configuration for [Microsoft Tunnel](../apps-config-step-6.md#connected-apps-configuration). For more information about this channel for managed devices see, [App configuration policies for the Managed apps channel](apps-config-step-6.md#app-configuration-policies-for-the-managed-apps-channel).
 
 ## Policies for Office apps
 
-Intune provides policies specifically for Microsoft Office apps. You can select specific options to create mobile app management policies for Office mobile apps that connect to Microsoft 365 services. There are many policies for Office apps that you can add to Microsoft Intune and apply to groups of end users.
+Intune provides [policies specifically for Microsoft Office apps](/mem/intune/apps/app-office-policies). You can select specific options to create mobile app management policies for Office mobile apps that connect to Microsoft 365 services. There are many policies for Office apps that you can add to Microsoft Intune and apply to groups of end users.
 
-`intune\apps\app-office-policies.md`
-
-**Policies for Office apps**: Select this option to create mobile app management policies for Office mobile apps that connect to Microsoft 365 services. You can also protect access to Exchange on-premises mailboxes by creating Intune app protection policies for Outlook for iOS/iPadOS and Android enabled with hybrid Modern Authentication. You must meet the requirements to use policies for Office apps. For more information about requirements, see [Requirements for using the Office cloud policy service](/deployoffice/overview-office-cloud-policy-service#requirements-for-using-the-office-cloud-policy-service). App protection policies aren't supported for other apps that connect to on-premises Exchange or SharePoint services. For related information, see [Overview of the Office cloud policy service for Microsoft 365 Apps for enterprise](/deployoffice/overview-office-cloud-policy-service).
+You must meet the requirements to use policies for Office apps. For more information about requirements, see [Requirements for using the Office cloud policy service](/deployoffice/overview-office-cloud-policy-service#requirements-for-using-the-office-cloud-policy-service). App protection policies aren't supported for other apps that connect to on-premises Exchange or SharePoint services. For related information, see [Overview of the Office cloud policy service for Microsoft 365 Apps for enterprise](/deployoffice/overview-office-cloud-policy-service).
 
 ## Configuration policies for individual Microsoft 365 apps
 
@@ -184,9 +166,9 @@ Microsoft 365 include the following apps:
 > [!NOTE]
 > Certain Microsoft apps can only be added as a set of Microsoft 365 apps, such as *Microsoft 365 apps for Windows 10 and later*, or as a **[Built-In app](/mem/intune/apps/apps-add-built-in)**.
 
-Each app can be added and configured based on a selected license, platform, and [policy channel](microsoft-365/solutions/apps-config-overview#apps-that-support-app-configuration). For instance, Microsoft Word for Android devices supports app configuration **Permissions**, **Configuration Settings**, and **Connected Apps**. Microsoft Word for Android managed apps (MAM channel) supports **General configuration settings** and **Microsoft Tunnel for MAM settings**.
+Each app can be added and configured based on a selected license, platform, and [policy channel](/microsoft-365/solutions/apps-config-overview#apps-that-support-app-configuration). For instance, Microsoft Word for Android devices supports app configuration **Permissions**, **Configuration Settings**, and **Connected Apps**. Microsoft Word for Android managed apps (MAM channel) supports **General configuration settings** and **Microsoft Tunnel for MAM settings**.
 
-For a list of Microsoft apps that have been designed to be configured and protected with Intune, see [Microsoft apps](mem/intune/apps/apps-supported-intune-apps#microsoft-apps). For more information about Built-In apps, see [Built-In app](mem/intune/apps/apps-add-built-in).
+For a list of Microsoft apps that have been designed to be configured and protected with Intune, see [Microsoft apps](/mem/intune/apps/apps-supported-intune-apps#microsoft-apps). For more information about Built-In apps, see [Built-In app](/mem/intune/apps/apps-add-built-in).
 
 ## Next step
 <!--
