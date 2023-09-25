@@ -30,6 +30,11 @@ Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot 
 
 For troubleshooting performance-specific issues related to Microsoft Defender Antivirus, see: [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).
 
+> [!TIP]
+> - During troubleshooting mode, you can use the PowerShell command `Set-MPPreference -DisableTamperProtection $true` on Windows devices.
+> - To check the state of [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md), you can use the [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) PowerShell cmdlet. In the list of results, look for `IsTamperProtected` or `RealTimeProtectionEnabled`. (A value of *true* means tamper protection is enabled.)
+
+
 ## Scenario 1: Unable to install application
 
 If you want to install an application but receive an error message that Microsoft Defender Antivirus and tamper protection is on, use the following procedure to troubleshoot the issue.
