@@ -34,7 +34,7 @@ You must hold the Executive report viewer or Report viewer role in Partner Cente
 
 ## View opportunities
 
-1. In the left navigation pane in Lighthouse, select **Sales Advisor** \> **Opportunities**.
+1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Sales Advisor** \> **Opportunities**.
 
 2. On the **All opportunities** tab, select the tenant you want to research.
 
