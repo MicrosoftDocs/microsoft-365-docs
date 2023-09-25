@@ -32,8 +32,8 @@ When you select the **Managed devices** channel, you'll find that iOS/iPadOS has
 ### Configure specific Android Enterprise apps
 
 Managed Home Screen, Google Chrome for Android, and Microsoft Launcher are [Android Enterprise](/mem/intune/apps/app-configuration-policies-use-android) apps that can be configured for the **Managed devices** channel. Each of these apps support configuring the following areas:
-- [Permissions](#app-configuration-permissions)
-- [Configuration Settings](#app-configuration-settings)
+- [Permissions](#android-enterprise-app-configuration-permissions)
+- [Configuration Settings](#android-enterprise-app-configuration-settings)
 - [Connected apps](#connected-apps-configuration)
 
 > [!NOTE]
