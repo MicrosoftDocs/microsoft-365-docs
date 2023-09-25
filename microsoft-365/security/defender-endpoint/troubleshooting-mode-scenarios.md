@@ -73,11 +73,9 @@ Sometimes during a scheduled scan, MsMpEng.exe can consume high CPU.
 
 5. Add process/file/folder/extension exclusions based on ProcMon findings using one of the following commands (the path, extension, and process exclusions mentioned in this article are examples only): 
 
-    - `Set-mppreference -ExclusionPath` (for example, `C:\DB\DataFiles`) 
-    
-    - `Set-mppreference –ExclusionExtension` (for example, `.dbx`) 
-    
-    - `Set-mppreference –ExclusionProcess` (for example, `C:\DB\Bin\Convertdb.exe`) 
+    `Set-mppreference -ExclusionPath` (for example, `C:\DB\DataFiles`) 
+    `Set-mppreference –ExclusionExtension` (for example, `.dbx`) 
+    `Set-mppreference –ExclusionProcess` (for example, `C:\DB\Bin\Convertdb.exe`) 
 
 6. After adding the exclusion, check to see if the CPU usage has dropped. 
 
