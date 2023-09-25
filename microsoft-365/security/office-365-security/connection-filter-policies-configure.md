@@ -44,6 +44,8 @@ This article describes how to configure the default connection filter policy in 
 > The IP Allow List, safe list, and the IP Block List are one part of your overall strategy to allow or block email in your organization. For more information, see [Create safe sender lists](create-safe-sender-lists-in-office-365.md) and [Create blocked sender lists](create-block-sender-lists-in-office-365.md).
 >
 > IPv6 ranges are not supported.
+>
+> The emails that are blocked due to IP Block List will not show up in Message trace in the Exchange admin center.
 
 ## What do you need to know before you begin?
 
