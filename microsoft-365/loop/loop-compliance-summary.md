@@ -46,11 +46,11 @@ The following section applies to Loop components stored in OneDrive (created out
 
 #### Foundations
 - **[Admin Toggles](/microsoft-365/loop/loop-components-configuration#available-policy-settings)** to turn on/off all Loop components in the M365 ecosystem, if enabled in the M365 ecosystem there's a toggle to turn on/off Loop components specifically in Outlook or Teams, and an independent toggle to turn off Loop components for collaborative meeting notes
-- **GDPR** data subject requests as part of the [Security and Compliance admin center](compliance/regulatory/gdpr-data-subject-requests#data-subject-request-admin-tools) and [Purview eDiscovery workflows](/purview/ediscovery)
+- **GDPR** data subject requests as part of the [Security and Compliance admin center](/compliance/regulatory/gdpr-data-subject-requests#data-subject-request-admin-tools) and [Purview eDiscovery workflows](/purview/ediscovery)
 - **EUDB** compliance - [What is the EU Data Boundary?](/privacy/eudb/eu-data-boundary-learn)
 
 #### Admin Management
-- **[Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo)** capabilities, including creation of .loop files in a user's OneDrive in the geo that matches the user's [preferred data location](/microsoft-365/enterprise/plan-for-multi-geo?view=o365-worldwide#best-practices) and ability to move the user's OneDrive when the their preferred data location changes. 
+- **[Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo)** capabilities, including creation of .loop files in a user's OneDrive in the geo that matches the user's [preferred data location](/microsoft-365/enterprise/plan-for-multi-geo#best-practices) and ability to move the user's OneDrive when the their preferred data location changes. 
 - When a user leaves an organization, [OneDrive retention policies](/sharepoint/retention-and-deletion) apply to the .loop files just as they do to other content created by the user
 
 #### Audit
@@ -62,7 +62,7 @@ The following section applies to Loop components stored in OneDrive (created out
 - **Audit** logs are retained, can be exported, and can be streamed to third party tools
 
 #### Legal Hold and eDiscovery
-- Microsoft **[Purview eDiscovery](/microsoft-365/loop/loop-components-teams?view=o365-worldwide#do-loop-and-fluid-files-support-ediscovery)** review (premium only) and export (also as HTML, premium only) ✻
+- Microsoft **[Purview eDiscovery](/microsoft-365/loop/loop-components-teams#do-loop-and-fluid-files-support-ediscovery)** review (premium only) and export (also as HTML, premium only) ✻
 - Microsoft **[Graph API](/graph/api/driveitem-get-content-format)** export ✻
 - **Legal Hold** support to ensure content is not deleted (as related to litigation and security investigations) and stored in the [Preservation Hold Library](/sharepoint/governance/ediscovery-and-in-place-holds-in-sharepoint-server) ✻
 
@@ -102,7 +102,7 @@ The following sections apply to Loop workspace content stored in Microsoft Synte
 
 #### Foundations 
 - **[Admin Toggle](/microsoft-365/loop/loop-workspaces-configuration)** to turn on/off creation of content in Loop workspaces
-- **GDPR** data subject requests as part of the [Security and Compliance admin center](compliance/regulatory/gdpr-data-subject-requests#data-subject-request-admin-tools) and [Purview eDiscovery workflows](/purview/ediscovery)
+- **GDPR** data subject requests as part of the [Security and Compliance admin center](/compliance/regulatory/gdpr-data-subject-requests#data-subject-request-admin-tools) and [Purview eDiscovery workflows](/purview/ediscovery)
 - **EUDB** compliance - [What is the EU Data Boundary?](/privacy/eudb/eu-data-boundary-learn)
 
 #### Audit
@@ -113,7 +113,7 @@ The following sections apply to Loop workspace content stored in Microsoft Synte
 - **Audit** logs are retained, can be exported, and can be streamed to third party tools
 
 #### Legal Hold and eDiscovery
-- Microsoft **[Purview eDiscovery](/microsoft-365/loop/loop-components-teams?view=o365-worldwide#do-loop-and-fluid-files-support-ediscovery)** review (premium only) and export (also as HTML, premium only) ✻
+- Microsoft **[Purview eDiscovery](/microsoft-365/loop/loop-components-teams#do-loop-and-fluid-files-support-ediscovery)** review (premium only) and export (also as HTML, premium only) ✻
 - **Legal Hold** support to ensure content is not deleted (as related to litigation and security investigations) and stored in the [Preservation Hold Library](/sharepoint/governance/ediscovery-and-in-place-holds-in-sharepoint-server) ✻
 
 #### Data Lifecycle Management
