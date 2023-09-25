@@ -26,13 +26,13 @@ ms.date: 09/25/2023
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
-Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot various Microsoft Defender Antivirus features by enabling them from the device and testing different scenarios, even if they're controlled by the organization policy. The troubleshooting mode is disabled by default and requires you to turn it on for a device (and/or group of devices) for a limited time. Note that this is exclusively an enterprise-only feature, and requires Microsoft 365 Defender access.
+Microsoft Defender for Endpoint troubleshooting mode allows you to troubleshoot various Microsoft Defender Antivirus features by enabling them from the device and testing different scenarios, even if they're controlled by the organization policy. The troubleshooting mode is disabled by default and requires you to turn it on for a device (and/or group of devices) for a limited time. This is exclusively an enterprise-only feature, and requires Microsoft 365 Defender access.
 
 For troubleshooting performance-specific issues related to Microsoft Defender Antivirus, see: [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).
 
 ## Scenario 1: Unable to install application
 
-If you want to install an application but receive an error message that Microsoft Defender Antivirus and tamper protection is on, follow the steps below to troubleshoot the issue.
+If you want to install an application but receive an error message that Microsoft Defender Antivirus and tamper protection is on, use the following procedure to troubleshoot the issue.
 
 1. Request the security admin to turn on troubleshooting mode. You'll get a Windows Security notification once the troubleshooting mode starts.  
 
