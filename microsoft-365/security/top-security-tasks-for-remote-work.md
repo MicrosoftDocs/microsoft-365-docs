@@ -82,7 +82,7 @@ Default settings for these EOP features are automatically assigned to all recipi
 
 For instructions, see [Use the Microsoft 365 Defender portal to assign Standard and Strict preset security policies to users](office-365-security/preset-security-policies.md#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users).
 
-The differences between Standard and Strict are summarized in the table [here](../office-365-security/preset-security-policies.md#policy-settings-in-preset-security-policies). The comprehensive settings for Standard and Strict **EOP settings** are described in the tables [here](office-365-security/recommended-settings-for-eop-and-office365.md#anti-spam-anti-malware-and-anti-phishing-protection-in-eop). 
+The differences between Standard and Strict are summarized in the table [here](office-365-security/preset-security-policies.md#policy-settings-in-preset-security-policies). The comprehensive settings for Standard and Strict **EOP settings** are described in the tables [here](office-365-security/recommended-settings-for-eop-and-office365.md#anti-spam-anti-malware-and-anti-phishing-protection-in-eop). 
 
 ## 3: Configure Microsoft Defender for Office 365
 
@@ -99,11 +99,11 @@ The [Built-in protection preset security policy](office-365-security/preset-secu
 
 As in the previous section, **to bump up the Defender for Office 365 protection level to Microsoft's recommended Standard or Strict security settings based on observations in the datacenters, turn on and assign the Standard preset security policy (for most users) and/or the Strict preset security policy (for admins and other high-risk users)**. As new protection capabilities are added and as the security landscape changes, the Defender for Office 365 settings in preset security policies are automatically updated to our recommended settings.
 
-The users that you select for **Defender for Office 365 protection** in preset security policies get Microsoft's recommended Standard or Strict security settings for Safe Attachments and Safe Links. You also need to add entries and optional exceptions for [user impersonation and domain impersonation protection](../office-365-security/anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+The users that you select for **Defender for Office 365 protection** in preset security policies get Microsoft's recommended Standard or Strict security settings for Safe Attachments and Safe Links. You also need to add entries and optional exceptions for [user impersonation and domain impersonation protection](office-365-security/anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
 
 For instructions, see [Use the Microsoft 365 Defender portal to assign Standard and Strict preset security policies to users](office-365-security/preset-security-policies.md#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users).
 
-The differences between **Defender for Office 365 protection** settings in Standard and Strict are summarized in the table [here](../office-365-security/preset-security-policies.md#policy-settings-in-preset-security-policies). The comprehensive settings for Standard and Strict **Defender for Office 365 protection** settings are described in the tables [here](office-365-security/recommended-settings-for-eop-and-office365.md#microsoft-defender-for-office-365-security). 
+The differences between **Defender for Office 365 protection** settings in Standard and Strict are summarized in the table [here](office-365-security/preset-security-policies.md#policy-settings-in-preset-security-policies). The comprehensive settings for Standard and Strict **Defender for Office 365 protection** settings are described in the tables [here](office-365-security/recommended-settings-for-eop-and-office365.md#microsoft-defender-for-office-365-security). 
 
 You can turn on and turn off Safe Attachments for SharePoint, OneDrive, and Microsoft Teams independently of preset security policies (it's on by default). To verify, see [Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](office-365-security/safe-attachments-for-spo-odfb-teams-configure.md).
 
