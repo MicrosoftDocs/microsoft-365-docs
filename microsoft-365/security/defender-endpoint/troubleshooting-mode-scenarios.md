@@ -122,7 +122,7 @@ Network Protection is blocking Microsoft domain, preventing users from accessing
 
 1. Turn on troubleshooting mode, and sign into the device. 
 
-2. Launch an elevated PowerShell command prompt, and run the following commmand: 
+2. Launch an elevated PowerShell command prompt, and run the following command: 
 
    `Set-MpPreference -EnableNetworkProtection Disabled` 
 
