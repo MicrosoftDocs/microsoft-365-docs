@@ -32,7 +32,7 @@ Troubleshooting mode is disabled by default, and requires you to turn it on for 
 
 > [!TIP]
 > - During troubleshooting mode, you can use the PowerShell command `Set-MPPreference -DisableTamperProtection $true` on Windows devices.
-> - To check the state of tamper protection, you can use the [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) PowerShell cmdlet. In the list of results, look for `IsTamperProtected` or `RealTimeProtectionEnabled`. (A value of *true* means tamper protection is enabled.)
+> - To check the state of [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md), you can use the [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) PowerShell cmdlet. In the list of results, look for `IsTamperProtected` or `RealTimeProtectionEnabled`. (A value of *true* means tamper protection is enabled.)
 .
 ## What do you need to know before you begin?
 
