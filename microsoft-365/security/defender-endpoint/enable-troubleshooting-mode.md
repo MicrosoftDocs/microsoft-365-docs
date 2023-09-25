@@ -30,7 +30,10 @@ Troubleshooting mode in Microsoft Defender for Endpoint enables you to troublesh
 
 Troubleshooting mode is disabled by default, and requires you to turn it on for a device (and/or group of devices) for a limited time. Note that this is exclusively an Enterprise-only feature, and requires Microsoft 365 Defender access.
 
-
+> [!TIP]
+> - During troubleshooting mode, you can use the PowerShell command `Set-MPPreference -DisableTamperProtection $true` on Windows devices.<br/>
+> - To check the state of tamper protection, you can use the [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) PowerShell cmdlet. In the list of results, look for `IsTamperProtected` or `RealTimeProtectionEnabled`. (A value of *true* means tamper protection is enabled.)
+.
 ## What do you need to know before you begin?
 
 During troubleshooting mode, you can use the PowerShell command `Set-MPPreference -DisableTamperProtection $true` or, on client operating systems, the Security Center app to temporarily disable tamper protection on your device and make your necessary configuration changes. 
