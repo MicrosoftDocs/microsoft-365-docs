@@ -55,7 +55,7 @@ Moving a .loop file from OneDrive to a SharePoint site will result in the Live c
 
 ## What happens if the owner of the file leaves the company?
 
-[OneDrive retention policies](/sharepoint/retention-and-deletion) apply to the .loop files just as they do to other content created by the user.
+OneDrive retention policies apply to the .loop files just as they do to other content created by the user.
 
 ## How are .loop files shared?
 
