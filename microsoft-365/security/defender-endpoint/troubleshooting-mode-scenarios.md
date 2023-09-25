@@ -45,7 +45,11 @@ If you want to install an application but receive an error message that Microsof
 
 3. Start [Process Monitor](troubleshoot-performance-issues.md#capture-process-logs-using-process-monitor) (ProcMon). See the steps described in [Troubleshoot performance issues related to real-time protection](troubleshoot-performance-issues.md).  
 
-4. Go to **Windows security** > **Threat & virus protection** > **Manage settings** > **Tamper protection** > **Off**.  
+4. Go to **Windows security** > **Threat & virus protection** > **Manage settings** > **Tamper protection** > **Off**.
+
+   Alternately, during troubleshooting mode, you can use the PowerShell command `Set-MPPreference -DisableTamperProtection $true` on Windows devices.
+
+   To check the state of [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md), you can use the [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) PowerShell cmdlet. In the list of results, look for `IsTamperProtected` or `RealTimeProtectionEnabled`. (A value of *true* means tamper protection is enabled.)
 
 5. Launch an elevated PowerShell command prompt, and toggle off [real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md). 
 
