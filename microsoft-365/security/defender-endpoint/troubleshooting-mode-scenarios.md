@@ -18,8 +18,6 @@ ms.date: 09/25/2023
 
 # Troubleshooting mode scenarios in Microsoft Defender for Endpoint 
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 **Applies to:**
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
