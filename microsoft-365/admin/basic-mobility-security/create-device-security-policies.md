@@ -67,7 +67,7 @@ After you’ve created a device policy, check that the policy works as you expec
 1. From your browser, go to [https://compliance.microsoft.com/basicmobilityandsecurity](https://compliance.microsoft.com/basicmobilityandsecurity).
 2. Select **View the list of managed devices**.
 3. Check the status of user devices that have the policy applied. You want the **State** of devices to be **Managed.**
-4. You can also do a full or selective wipe on a device by clicking on **Factory reset** or **Remove company data** from **Manage** button after selecting a device. For instructions, see [Wipe a mobile device in Microsoft 365.
+4. You can also do a full or selective wipe on a device by clicking on **Factory reset** or **Remove company data** from **Manage** button after selecting a device. For instructions, see [Wipe a mobile device in Basic Mobility and Security](wipe-mobile-device.md).
 
 ## Step 3: Deploy a policy to your organization
 
