@@ -49,9 +49,9 @@ If you want to install an application but receive an error message that Microsof
 
 5. Launch an elevated PowerShell command prompt, and toggle off [real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md). 
 
-    - Run `Get-MpComputerStatus` to check the RealTimeProtection status.
-    - Run `Set-mppreference -DisableRealtimeMonitoring $true` to turn off [real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md).
-    - Run `Get-MpComputerStatus` again to verify to RealTimeProtection status.
+    - Run `Get-MpComputerStatus` to check the status of real-time protection.
+    - Run `Set-MpPreference -DisableRealtimeMonitoring $true` to turn off real-time protection.
+    - Run `Get-MpComputerStatus` again to verify status.
 
 6. Try installing the application.
 
