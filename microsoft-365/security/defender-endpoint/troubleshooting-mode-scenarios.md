@@ -127,25 +127,25 @@ Network Protection is blocking Microsoft domain, preventing users from accessing
 
 For more information, see [Use network protection to help prevent connections to bad sites](network-protection.md). 
 
-## Related topics
+## Performance analyzer for Microsoft Defender Antivirus
 
-> [!TIP]
-> **Performance tip** Due to a variety of factors (such as the examples included in this article) Microsoft Defender Antivirus, like other antivirus software, can cause performance issues on endpoint devices. In some cases, you might need to tune the performance of Microsoft Defender Antivirus to alleviate those performance issues. Microsoft's **Performance analyzer** is a PowerShell command-line tool that helps determine which files, file paths, processes, and file extensions might be causing performance issues; some examples are:
->
-> - Top paths that impact scan time
-> - Top files that impact scan time
-> - Top processes that impact scan time
-> - Top file extensions that impact scan time
-> - Combinations – for example:
->   - top files per extension
->   - top paths per extension
->   - top processes per path
->   - top scans per file
->   - top scans per file per process
->
-> You can use the information gathered using Performance analyzer to better assess performance issues and apply remediation actions. 
-> See: [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).
->
+Due to a variety of factors (such as the examples included in this article) Microsoft Defender Antivirus, like other antivirus software, can cause performance issues on endpoint devices. In some cases, you might need to tune the performance of Microsoft Defender Antivirus to alleviate those performance issues. Microsoft's **Performance analyzer** is a PowerShell command-line tool that helps determine which files, file paths, processes, and file extensions might be causing performance issues; some examples are:
+
+- Top paths that impact scan time
+- Top files that impact scan time
+- Top processes that impact scan time
+- Top file extensions that impact scan time
+- Combinations – for example:
+  - top files per extension
+  - top paths per extension
+  - top processes per path
+  - top scans per file
+  - top scans per file per process
+
+You can use the information gathered using Performance analyzer to better assess performance issues and apply remediation actions. 
+See: [Performance analyzer for Microsoft Defender Antivirus](tune-performance-defender-antivirus.md).
+
+## See also
 
 - [Enable troubleshooting mode](enable-troubleshooting-mode.md)
 - [Protect security settings with tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md)
@@ -155,4 +155,5 @@ For more information, see [Use network protection to help prevent connections to
 - [Detect and block potentially unwanted applications](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)
 - [Get an overview of Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
 - [Better together: Microsoft Defender Antivirus and Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
