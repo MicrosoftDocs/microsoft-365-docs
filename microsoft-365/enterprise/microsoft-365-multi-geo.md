@@ -41,7 +41,7 @@ In a Multi-Geo environment, your Microsoft 365 _Tenant_ consists of a central lo
 
 Microsoft 365 Multi-Geo is available as an add-on to the following Microsoft 365 subscription plans.
 
-Enterprise Agreement customers must purchase a quantity of Multi-Geo licenses equal to or greater than 5% of their total eligible seats. Similarly, CSP partners must purchase and assign a quantity of Multi-Geo licenses equal to or greater than 5% of their customer's total eligible Microsoft 365 seats. For Enterprise customers, user subscription licenses must be on the same Enterprise Agreement as the Multi-Geo Services licenses. Contact your Microsoft account team for details.
+Enterprise Agreement customers must purchase a quantity of Multi-Geo licenses equal to or greater than 5% of their total eligible seats. Similarly, CSP partners must purchase and assign a quantity of Multi-Geo licenses equal to or greater than 5% of their customers' total eligible Microsoft 365 seats. For Enterprise customers, user subscription licenses must be on the same Enterprise Agreement as the Multi-Geo Services licenses. Contact your Microsoft account team for details.
 
 - Microsoft 365 F1, F3, E3, or E5
 - Office 365 F3, E1, E3, or E5
