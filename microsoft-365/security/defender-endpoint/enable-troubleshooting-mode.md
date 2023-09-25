@@ -13,12 +13,10 @@ ms.collection:
 - tier2
 ms.topic: conceptual
 ms.subservice: mde
-ms.date: 09/06/2023
+ms.date: 09/25/2023
 ---
 
 # Get started with troubleshooting mode in Microsoft Defender for Endpoint 
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
