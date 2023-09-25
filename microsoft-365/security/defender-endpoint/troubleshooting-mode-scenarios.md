@@ -81,11 +81,15 @@ For more information on Set-MpPreference cmdlet configuration preferences for Wi
 
 ## Scenario 3: Application taking longer to perform an action
 
-When Microsoft Defender Antivirus real-time protection is turned on, application takes a long time to perform basic tasks. To turn off real-time protection and troubleshoot the issue, use the following procedure. 
+When Microsoft Defender Antivirus [real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md) is turned on, applications can take longer to perform basic tasks. To turn off real-time protection and troubleshoot the issue, use the following procedure. 
 
 1. Request security admin to turn on troubleshooting mode on the device. 
 
-2. To disable [real-time protection](configure-real-time-protection-microsoft-defender-antivirus.md) for this scenario, first turn off tamper protection. For more information, see [Protect security settings with tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md). 
+2. To disable real-time protection for this scenario, first turn off [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md). You can use the PowerShell command `Set-MPPreference -DisableTamperProtection $true` on Windows devices. 
+
+   To check the state of tamper protection, you can use the [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) PowerShell cmdlet. In the list of results, look for `IsTamperProtected` or `RealTimeProtectionEnabled`. (A value of *true* means tamper protection is enabled.)
+
+   For more information, see [Protect security settings with tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md). 
 
 3. Once tamper protection is disabled, log in to the device. 
 
