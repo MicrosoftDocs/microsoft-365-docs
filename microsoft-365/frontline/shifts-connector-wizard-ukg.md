@@ -127,11 +127,11 @@ On the Settings page, you choose the information to sync from UKG Dimensions to 
 5. Under **Email notification recipients**, choose who receives email notifications about this connection instance. You can add individual users and groups. The email notifications contain information about setup status and any issues or errors that may occur after the connection instance is set up.
 
     > [!IMPORTANT]
-    > Before you disable a feature by selecting the option **Shifts users will not see provider data**, be aware that:
+    > Before you disable a feature by selecting the **Shifts users will not see provider data** option, be aware that:
     >
-    > - If the setting **Schedules, groups, shifts, and activities** is disabled, then all other settings, such as **Time off** and **Employee availability**, and more, will also be disabled.
-    > - If the setting **Open shift** is disabled, **Open shift request** will also be disabled.
-    > - If the setting **Time off** is disabled, **Time off request** will also be disabled.
+    > - If the **Schedules, groups, shifts, and activities** setting is disabled, then all other settings, such as **Time off** and **Employee availability**, and more, will also be disabled.
+    > - If the **Open shift** setting is disabled, **Open shift request** will also be disabled.
+    > - If the **Time off** setting is disabled, **Time off request** will also be disabled.
 
     > [!IMPORTANT]
     > If you chose any of the following options to disable open shifts, open shift requests, swap requests, offer shift requests, or time off requests, there's another step you need to do to hide the capability in Shifts.
