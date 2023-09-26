@@ -24,7 +24,7 @@ Microsoft Syntex has two types of licensing:
 - [Microsoft Syntex pay-as-you-go](#microsoft-syntex-pay-as-you-go)
 - [SharePoint Syntex per-user licensing](#microsoft-syntex-per-user-licensing)
 
-The features available for each license type are described below. <!-- You can use both licenses if you need to.-->
+The features available for each license type are described in this article. <!-- You can use both licenses if you need to.-->
 
 In the future, most new Microsoft Syntex features will be added to pay-as-you-go.
 
@@ -45,11 +45,11 @@ Pay-as-you-go is a way to pay for Microsoft Syntex using an Azure subscription. 
 - Taxonomy tagging
 - Optical character recognition
 
-All users in your organization will be able to create and apply unstructured and prebuilt document processing models and can upload documents to a primed library. This is charged on a pay-per-use basis.
+All users in your organization will be able to create and apply unstructured and prebuilt document processing models and can upload documents to a primed library. This service is charged on a pay-per-use basis.
 
 ### Feature limited preview
 
-Pay-as-you-go licensing includes access to additional Syntex features for a limited time as a preview. You will not be charged on a pay-as-you-go basis during the preview. These features include:
+Pay-as-you-go licensing includes access to additional Syntex features for a limited time as a preview. You won't be charged on a pay-as-you-go basis during the preview. These features include:
 
 - Content query
 - Universal annotations
@@ -67,7 +67,7 @@ For more information, see [Microsoft Syntex features limited time license agreem
 > As of July 1, 2023, per-user licenses are no longer available for purchase. You will need to [set up pay-as-you-go billing](syntex-azure-billing.md).<br><br>
 > Per-user licenses purchased before July 1 can still be assigned to new users. After existing per-user licenses expire, you will need to opt-in to Syntex [pay-as-you-go billing](syntex-azure-billing.md).
 
-To use Syntex, you must have a license for each Syntex user. If you remove all Syntex per-user licenses from your tenant at a future date (or your trial expires), users will no longer be able to create, publish, or run custom models. Additionally, term store reports, SKOS taxonomy import, and content type push will no longer be available. No models, content, or metadata will be deleted, and site permissions won't be changed.
+To use Syntex, you must have a license for each Syntex user. If you remove all Syntex per-user licenses from your tenant at a future date (or your trial expires), users will not be able to create, publish, or run custom models. Additionally, term store reports, SKOS taxonomy import, and content type push will not be available. No models, content, or metadata will be deleted, and site permissions won't be changed.
 
 #### Tasks requiring a per-user license
  
@@ -87,9 +87,9 @@ Unlicensed users can be granted access to a content center and can create models
  
 #### Cost of training and running models
  
-The cost of training and running unstructured document processing models is included in the cost of a Syntex per-user license. However, the structured document processing and freeform document processing models use AI Builder capacity, for both training and runtime processing. Capacity must be allocated to the Power Apps environment where you will use AI Builder.
+The cost of training and running unstructured document processing models is included in the cost of a Syntex per-user license. However, the structured document processing and freeform document processing models use AI Builder capacity, for both training and runtime processing. Capacity must be allocated to the Power Apps environment where you'll use AI Builder.
 
-For each Syntex per-user license, you are allocated 3,500 AI Builder credits per license, per month pooled at the tenant level, with a maximum allocation of 1 million credits per month. This allocation is renewed each month for each active Syntex per-user license. (Unused credits don't roll over from month to month.)
+For each Syntex per-user license, you're allocated 3,500 AI Builder credits per license, per month pooled at the tenant level, with a maximum allocation of 1 million credits per month. This allocation is renewed each month for each active Syntex per-user license. (Unused credits don't roll over from month to month.)
 
 You can estimate the AI Builder capacity that’s right for you with the [AI Builder calculator](https://powerapps.microsoft.com/ai-builder-calculator).
 
@@ -105,7 +105,7 @@ Having one or more Syntex per-user licenses in your organization enables the fol
 - Pushing enterprise content types to a hub site, which also adds them to the associated sites and any newly created lists or libraries
 - Term store reports providing insights into published term sets and their use across your tenant
 
-## Related topics
+## Related articles
 
 [Microsoft Syntex - SharePoint Advanced Management overview](/sharepoint/advanced-management)
 
