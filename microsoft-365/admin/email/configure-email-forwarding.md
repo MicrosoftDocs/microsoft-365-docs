@@ -43,7 +43,7 @@ Before you set up email forwarding, note the following:
 
 - Once you set up email forwarding, only **new** emails sent to the  **from**  mailbox will be forwarded.
 
-- Email forwarding requires that the  *from*  account has a license unless it is a shared mailbox. If you're setting up email forwarding because the user has left your organization, another option is to [convert their mailbox to a shared mailbox](convert-user-mailbox-to-shared-mailbox.md). This way several people can access it. However, a shared mailbox cannot exceed 50GB.
+- Email forwarding requires that the  *from*  account has a license unless it is a shared mailbox. If you're setting up email forwarding because the user has left your organization, another option is to [convert their mailbox to a shared mailbox](convert-user-mailbox-to-shared-mailbox.md). This way several people can access it. However, a shared mailbox cannot exceed 50 GB.
 
 - You must be an Exchange administrator or Global administrator in Microsoft 365 to do these steps. For more information, see the topic [About admin roles](../add-users/about-admin-roles.md).
 
