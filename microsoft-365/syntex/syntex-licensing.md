@@ -59,7 +59,7 @@ Pay-as-you-go licensing includes access to additional Syntex features for a limi
 - PDF merge and extract pages
 - Content processing: Move or copy a file, set a content type from file name
 
-For more information, see [Microsoft Syntex Features Limited Time License agreement](feature-limited-license.md).
+For more information, see [Microsoft Syntex features limited time license agreement](feature-limited-license.md).
 
 ## Microsoft Syntex per-user licensing
 
