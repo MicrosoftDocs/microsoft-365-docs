@@ -64,7 +64,7 @@ The next step after each external tenant accepts the invitation to join the mult
 
 ## Related topics
 
-[Set up a multitenant organization using Microsoft Graph API](/azure/active-directory/multi-tenant-organizations/configure-graph#step-2-create-a-multi-tenant-organization)
+[Set up a multitenant organization using Microsoft Graph API](/azure/active-directory/multi-tenant-organizations/multi-tenant-organization-configure-graph)
 
 [Plan for multitenant organizations in Microsoft 365](plan-multi-tenant-org-overview.md)
 

@@ -71,17 +71,78 @@ An _untrusted_ Dev Drive doesn't have the same benefits as a _trusted_ Dev Drive
 
 ## Microsoft Defender Antivirus requirements for performance mode
 
-- Antimalware platform version of 4.18.2303.8 (or higher)
-- Antimalware signature version of 1.385.1455.0 (or higher)
-- Real-time protection must be turned on
+Step 1) For requirements specific to Dev Drive, see [Set up a Dev Drive on Windows 11](/windows/dev-drive).
 
-For requirements specific to Dev Drive, see [Set up a Dev Drive on Windows 11](/windows/dev-drive).
+Step 2) Microsoft Defender Antivirus needs to be updated to:
+
+- Antimalware platform version of 4.18.2303.8 (or higher)
+- Antimalware Security Intelligence Update version of 1.385.1455.0 (or higher)
+- Real-time protection must be turned on
 
 ## Manage performance mode
 
-Performance mode can only run on a *trusted* Dev Drive and is enabled by default when a new Dev Drive is created. For more information, see [Understanding security risks and trust in relation to Dev Drive](/windows/dev-drive#understanding-security-risks-and-trust-in-relation-to-dev-drive).
+Step 1) Performance mode can only run on a *trusted* Dev Drive and is enabled by default when a new Dev Drive is created. For more information, see [Understanding security risks and trust in relation to Dev Drive](/windows/dev-drive#understanding-security-risks-and-trust-in-relation-to-dev-drive).
+
+Step 2) Enforce the Microsoft Defender Antivirus Performance Mode
+
+2a) Via Intune
+
+Set performance mode status to enabled via the following OMA-URI setting:
+
+| Setting | Value |
+| -------- | -------- |
+|OMA-URI:| ./Device/Vendor/MSFT/Defender/Configuration/PerformanceModeStatus |
+|Data type|Integer|
+|Value|1|
+
+2b) Via Group Policy
+
+Set performance mode status to enabled via Group Policy:
+
+  
+In GPMC.msc or GPedit.msc  
+Computer Configuration -> Administrative Templates -> Windows Components -> Microsoft Defender Antivirus -> Real-time Protection
+
+Double-click on "Configure performance mode status"![Screenshot of Defender_Performance_Mode_10.](media/microsoft-defender-endpoint-antivirus-performance-mode/defender-performance-mode-10.png)
+
+Select the radio button for "Enabled"
+
+![Screenshot of Defender_Performance_Mode_11.](media/microsoft-defender-endpoint-antivirus-performance-mode/defender-performance-mode-11.png)
+
+Click on "Apply"
+
+Click on OK
+
+2c) Via Powershell
+
+Set performance mode status to enabled via Powershell:
+
+Powershell (Run as admin)
+
+Type "set-MpPreference -PerformanceModeStatus Enabled" w/o the double quoters, and press Enter.
+
+![Screenshot of Defender_Performance_Mode_04.](media/microsoft-defender-endpoint-antivirus-performance-mode/defender-performance-mode-5.png)
+
+## Verify performance mode is enabled
+
+To verify that Dev Drive + Defender Performance Mode is enabled
+
+Step 1) In the Windows Security App -> Go to "Virus & threat Protection settings" -> "Manage settings" -> verify that "Dev Drive protection" is enabled![Screenshot of Defender_Performance_Mode_02.](media/microsoft-defender-endpoint-antivirus-performance-mode/defender-performance-mode-02.png)
+
+Step 2)
+
+Click on "See volumes"
+
+![Screenshot of Defender_Performance_Mode_03.](media/microsoft-defender-endpoint-antivirus-performance-mode/defender-performance-mode-03.png)
+
+|Drive| Status|
+| -------- | -------- |
+| C: |Since the system drive (e.g. C: or D:) drive is formatted with NTFS, it's not eligible for Defender Performance mode.|
+|D:|Dev Drive is enabled but Defender Performance mode is not enabled|
+|F:|Dev Drive is enabled, and Defender Performance mode is enabled|
 
 ## See also
 
 [Set up a Dev Drive on Windows 11](/windows/dev-drive)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+
