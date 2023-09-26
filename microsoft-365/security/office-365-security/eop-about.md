@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 9/11/2023
+ms.date: 9/25/2023
 audience: ITPro
 ms.topic: overview
 ms.collection: 
@@ -34,7 +34,15 @@ Exchange Online Protection (EOP) is the cloud-based filtering service that prote
 > [!NOTE]
 > EOP is also available by itself to protect on-premises mailboxes and in hybrid environments to protect on-premises Exchange mailboxes. For more information, see [Standalone Exchange Online Protection](/exchange/standalone-eop/standalone-eop).
 
-EOP protection is on by default, due to the default policies for [anti-malware](anti-malware-policies-configure.md), [anti-spam](anti-spam-policies-configure.md), and [anti-phishing](anti-phishing-policies-eop-configure.md) (spoof protection) that apply to all recipients by default and can't be turned off. You should consider turning on and adding all recipients to the Standard and/or Strict [preset security policies](preset-security-policies.md). The default, standard, and strict settings for EOP features are described in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
+EOP protection is on by default due to the default policies for:
+
+- [Anti-malware protection](anti-malware-protection-about.md)
+- [Anti-spam protection](anti-spam-protection-about.md)
+- [Anti-phishing (spoof) protection](anti-phishing-protection-about.md#anti-phishing-protection-in-eop)
+
+These default policies apply to all recipients by default and can't be turned off, but they can be overridden by custom policies and [preset security policies](preset-security-policies.md).
+
+You can customize the security settings in the default policies, create custom policies, or better yet, turn on and add all recipients to the Standard and/or Strict preset security policies. For complete information, see [Configure security policies](mdo-deployment-guide.md#step-2-configure-security-policies).
 
 The rest of this article explains how EOP works and the features that are available in EOP.
 
@@ -76,12 +84,11 @@ For information about requirements, important limits, and feature availability a
 - EOP uses a vast list of domains that are known to send spam.
 - EOP uses multiple anti-malware engines help to automatically protect our customers.
 - EOP inspects the active payload in the message body and all message attachments for malware.
-- For recommended values for protection policies, see [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
--  We recommend turning on and adding all recipients to the Standard and/or Strict [preset security policies](preset-security-policies.md).
 
 |Feature|Comments|
 |---|---|
 |**Protection**||
+|Preset security policies|[Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md) <p> [Configuration analyzer for protection policies in EOP and Microsoft Defender for Office 365](configuration-analyzer-for-security-policies.md)|
 |Anti-malware|[Anti-malware protection in EOP](anti-malware-protection-about.md) <p> [Anti-malware protection FAQ](anti-malware-protection-faq.yml) <p> [Configure anti-malware policies in EOP](anti-malware-policies-configure.md)|
 |Inbound anti-spam|[Anti-spam protection in EOP](anti-spam-protection-about.md) <p> [Anti-spam protection FAQ](anti-spam-protection-faq.yml) <p> [Configure anti-spam policies in EOP](anti-spam-policies-configure.md)|
 |Outbound anti-spam|[Outbound spam protection in EOP](outbound-spam-protection-about.md) <p> [Configure outbound spam filtering in EOP](outbound-spam-policies-configure.md) <p> [Control automatic external email forwarding in Microsoft 365](outbound-spam-policies-external-email-forwarding.md)|
@@ -89,7 +96,6 @@ For information about requirements, important limits, and feature availability a
 |Anti-phishing|[Anti-phishing policies in Microsoft 365](anti-phishing-policies-about.md) <p> [Configure anti-phishing policies in EOP](anti-phishing-policies-eop-configure.md)|
 |Anti-spoofing protection|[Spoof intelligence insight in EOP](anti-spoofing-spoof-intelligence.md) <p> [Manage the Tenant Allow/Block List](tenant-allow-block-list-about.md)|
 |Zero-hour auto purge (ZAP) for delivered malware, spam, and phishing messages|[ZAP in Exchange Online](zero-hour-auto-purge.md)|
-|Preset security policies|[Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md) <p> [Configuration analyzer for protection policies in EOP and Microsoft Defender for Office 365](configuration-analyzer-for-security-policies.md)|
 |Tenant Allow/Block List|[Manage the Tenant Allow/Block List](tenant-allow-block-list-about.md)|
 |Block lists for message senders|[Create blocked sender lists in EOP](create-block-sender-lists-in-office-365.md)|
 |Allow lists for message senders|[Create safe sender lists in EOP](create-safe-sender-lists-in-office-365.md)|

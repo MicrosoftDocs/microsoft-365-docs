@@ -30,15 +30,13 @@ appliesto:
 # Why do I need Microsoft Defender for Office 365?
 
 > [!IMPORTANT]
-> **If you are being blocked by Safe Links pages**, go here for info: [Advanced Outlook.com security for Microsoft 365 subscribers](https://support.microsoft.com/office/advanced-outlook-com-security-for-microsoft-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2?storagetype=live).
+> **If Safe Links pages is blocking your access**, go here for info: [Advanced Outlook.com security for Microsoft 365 subscribers](https://support.microsoft.com/office/advanced-outlook-com-security-for-microsoft-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2?storagetype=live).
 
 **Microsoft Defender for Office 365 is a seamless integration into your Office 365 subscription** that protects against threats in email, links (URLS), attachments, or collaboration tools.
 
 For email threats that you may discover after the fact, Zero-hour autopurge (ZAP) can remove those mails. Automated Investigation and Response (AIR) allows you to automate monitoring and remediation, making it more efficient for security operations (SecOps) teams. The deep integration with Office 365 and robust reporting ensures that you're always on top of security operations.
 
-## Let's focus on the features of Microsoft Defender for Office 365
-
-Microsoft Defender for Office 365 safeguards organizations against malicious threats by providing admins and SecOps teams a wide range of capabilities. These features *start* benefitting users, admins, and SecOps at the time of installation. For example:
+Microsoft Defender for Office 365 safeguards organizations against malicious threats by providing admins and SecOps teams a wide range of capabilities. Users, admins, and SecOps personnel benefit from these features *start* benefitting users, admins, and SecOps at the time of installation. For example:
 
 - **[Preset security policies can configure everything for you](preset-security-policies.md)**: The protection policies included in Standard and Strict preset security policies contain our recommended settings. All you need to do is decide who gets the protection (by user, group, or domain) and specify the entries and optional exceptions for user and domain impersonation protection. For instructions, see [Use the Microsoft 365 Defender portal to assign Standard and Strict preset security policies to users](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users).
 

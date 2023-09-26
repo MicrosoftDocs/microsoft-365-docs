@@ -4,20 +4,24 @@
   items:
    - name: Overview
      items:
+       - name: Microsoft Defender for Office 365 security product overview
+         href: microsoft-defender-for-office-365-product-overview.md
+       - name: Exchange Online Protection overview
+         href: eop-about.md
        - name: Why do I need Microsoft Defender for Office 365?
          href: why-do-i-need-microsoft-defender-for-office-365.md
        - name: What's new in Defender for Office 365
          href: defender-for-office-365-whats-new.md
-       - name: Zero Trust for Defender for Office 365
-         href: zero-trust-with-microsoft-365-defender-office-365.md
    - name: Get started
      items:
-     - name: Defender for Office 365
-       href: defender-for-office-365.md
+     - name: Get started with Microsoft Defender for Office 365
+       href: mdo-deployment-guide.md
      - name: How threat protection works in Defender for Office 365
        href: protection-stack-microsoft-defender-for-office365.md
      - name: Secure by default
        href: secure-by-default.md
+     - name: Zero Trust for Defender for Office 365
+       href: zero-trust-with-microsoft-365-defender-office-365.md
      - name: Microsoft 365 Defender portal overview
        href: ../defender/microsoft-365-defender.md
    - name: Evaluate
@@ -58,8 +62,6 @@
              href: defender-for-office-365.md
          - name: Option 3 - Custom EOP and Defender for Office 365 P1 and P2 environments installation path (manual)
            items:
-           - name: Exchange Online Protection overview
-             href: eop-about.md
            - name: Recommended settings for configuring EOP and Defender for Office 365 Security
              href: recommended-settings-for-eop-and-office365.md
        - name: Step 2 - Configure Permissions
@@ -107,7 +109,7 @@
          - name: Spam confidence level (SCL)
            href: anti-spam-spam-confidence-level-scl-about.md
          - name: Bulk complaint level (BCL)
-           href: anti-spam-bulk-complaint-level-bcl-about.md
+           href: anti-spam-bulk-complaint-level-bcl-about.md#bulk-complaint-threshold-bcl-in-anti-spam-policies
          - name: Backscatter in EOP
            href: anti-spam-backscatter-about.md
          - name: Configure junk email settings on Exchange Online mailboxes

@@ -226,7 +226,7 @@ If you decide to use custom policies, use the [Configuration analyzer](configura
 
 You're probably already using the initial account that you used to enroll in Microsoft 365 to do all the work in this deployment guide. That account is an admin everywhere in Microsoft 365 (specifically, it's a member of the [Global Administrator](/azure/active-directory/roles/permissions-reference#global-administrator) role in Azure Active Directory (Azure AD)), and allows you to do pretty much anything. The required permissions were described earlier in this article at [Roles and permissions](#roles-and-permissions).
 
-But, the intent of this step is to configure other admins to help you manage the features of EOP and Defender for Office 365 in the future. What you don't want is a lot of people with Global Administrator power if they don't need it (for example, do they really need to delete/create accounts or make other users Global Administrators?). The concept of _least privilege_ (assigning only the required permissions to users and nothing more) is a good practice to follow.
+But, the intent of this step is to configure other admins to help you manage the features of EOP and Defender for Office 365 in the future. What you don't want is a lot of people with Global Administrator power if they don't need it (for example, do they really need to delete/create accounts or make other users Global Administrators?) The concept of _least privilege_ (assigning only the required permissions to users and nothing more) is a good practice to follow.
 
 When it comes to assigning permissions for tasks in EOP and Defender for Office 365, the following options are available:
 

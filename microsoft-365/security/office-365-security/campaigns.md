@@ -334,8 +334,8 @@ The diagram contains the following information:
   |**Detected**|`SFV:SPM`|The message was marked as spam by spam filtering.|
   |**Not Detected**|`SFV:NSPM`|The message was marked as not spam by spam filtering.|
   |**Released**|`SFV:SKQ`|The message skipped spam filtering because it was released from quarantine.|
-  |**Tenant Allow**¹|`SFV:SKA`|The message skipped spam filtering because of the settings in an anti-spam policy. For example, the sender was in the allowed sender list or allowed domain list.|
-  |**Tenant Block**²|`SFV:SKA`|The message was blocked by spam filtering because of the settings in an anti-spam policy. For example, the sender was in the allowed sender list or allowed domain list.|
+  |**Tenant Allow**¹|`SFV:SKA`|The message skipped spam filtering because of the settings in an anti-spam policy. For example, the sender was in the allowed senders list or allowed domain list.|
+  |**Tenant Block**²|`SFV:SKA`|The message was blocked by spam filtering because of the settings in an anti-spam policy. For example, the sender was in the allowed senders list or allowed domain list.|
   |**User Allow**¹|`SFV:SFE`|The message skipped spam filtering because the sender was in a user's Safe Senders list.|
   |**User Block**²|`SFV:BLK`|The message was blocked by spam filtering because the sender was in a user's Blocked Senders list.|
   |**ZAP**|n/a|[Zero-hour auto purge (ZAP)](zero-hour-auto-purge.md) moved the delivered message to the Junk Email folder or quarantine. You configure the action in [anti-spam policies](anti-spam-policies-configure.md).|

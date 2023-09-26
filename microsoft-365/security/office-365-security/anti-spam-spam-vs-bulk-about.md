@@ -19,7 +19,7 @@ ms.custom:
 description: Admins can learn about the differences between junk email (spam) and bulk email (gray mail) in Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 06/09/2023
+ms.date: 9/25/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
@@ -30,21 +30,17 @@ appliesto:
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, customers sometimes ask: "What's the difference between junk email and bulk email?" This article explains the difference and describes the controls that are available in EOP.
 
-- **Junk email** is spam, which is an unsolicited and universally unwanted message (when identified correctly). EOP rejects spam based on the reputation of the source email server. If a message passes source IP inspection, it continues through spam filtering. If the message is classified as **Spam** or **High confidence spam** by spam filtering, what happens to the message depends on the verdict and the anti-spam policy that detected the message:
-  - **Spam**:
-    - **Default anti-spam policy, new anti-spam policies, and [Standard preset security policy](preset-security-policies.md)**: Deliver the message to recipient Junk Email folders.
-    - **Strict preset security policy**: [Quarantine the message](quarantine-end-user.md).
-  - **High confidence spam**:
-    - **Default anti-spam policy and new anti-spam policies**: Deliver the message to recipient Junk Email folders.
-    - **Standard and Strict preset security policies**: Quarantine the message.
+- **Junk email** is spam, which is an unsolicited and universally unwanted message (when identified correctly). EOP rejects spam based on the reputation of the source email server. If a message passes source IP inspection, it continues through spam filtering. If the message is classified as **Spam** or **High confidence spam** by spam filtering, what happens to the message depends on the verdict and the anti-spam policy that detected the message.
 
-  In the default anti-spam policy and in new anti-spam policies, you can configure the action to take on spam filtering verdicts. For instructions, see [Configure anti-spam policies in EOP](anti-spam-policies-configure.md).
+  For the default actions that are taken on spam and high confidence spam messages in the default anti-spam policy and in the Standard and Strict [preset security policies](preset-security-policies.md), see the **Spam** and **High confidence spam** entries in [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
+
+  In the default anti-spam policy and in custom anti-spam policies, you can configure the action to take on spam filtering verdicts. For instructions, see [Configure anti-spam policies in EOP](anti-spam-policies-configure.md).
 
   If you disagree with the spam filtering verdict, you can report messages as spam or good to Microsoft in several ways, as described in [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).
 
 - **Bulk email** (also known as _gray mail_), is more difficult to classify. Whereas spam is a constant threat, bulk email is often one-time advertisements or marketing messages. Some users want bulk email messages (and in fact, they have deliberately signed up to receive them), while other users consider bulk email to be spam. For example, some users want to receive advertising messages from the Contoso Corporation or invitations to an upcoming conference on cybersecurity, while other users consider these same messages to be spam.
 
-  For more information about how bulk email is identified, see [Bulk complaint level (BCL) in EOP](anti-spam-bulk-complaint-level-bcl-about.md).
+  For more information about how bulk email is identified, see [Bulk complaint threshold (BCL) in anti-spam policies](anti-spam-protection-about.md#bulk-complaint-threshold-bcl-in-anti-spam-policies).
 
 ## How to manage bulk email
 
@@ -52,7 +48,7 @@ Because of the mixed reaction to bulk email, there isn't universal guidance that
 
 Anti-spam policies have a default BCL threshold that's used to identify bulk email as spam, and a specific action to take on those bulk messages. For more information, see the following articles:
 
-- [Bulk complaint level (BCL) in EOP](anti-spam-bulk-complaint-level-bcl-about.md)
+- [Bulk complaint threshold (BCL) in anti-spam policies](anti-spam-protection-about.md#bulk-complaint-threshold-bcl-in-anti-spam-policies)
 - [Configure anti-spam policies in EOP](anti-spam-policies-configure.md).
 - [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings)
 
@@ -62,7 +58,7 @@ Another option that's easy to overlook: if a user complains about receiving bulk
 
 As of September 2022, Microsoft Defender for Office 365 Plan 2 customers can access BCL from [advanced hunting](/microsoft-365/security/defender/advanced-hunting-overview). This feature allows admins to look at all bulk senders who sent mail to their organization, their corresponding BCL values, and the amount of email that was received. You can drill down into the bulk senders by using other columns in **EmailEvents** table in the **Email & collaboration** schema. For more information, see [EmailEvents](/microsoft-365/security/defender/advanced-hunting-emailevents-table).
 
-For example, if Contoso has set their current bulk threshold to 7 in anti-spam policies, Contoso recipients receive email from all senders in their Inbox if the BCL value is 7 or less. Admins can run the following query to get a list of all bulk senders in the organization:
+For example, if Contoso has set their current bulk threshold to 7 in anti-spam policies, Contoso recipients receive email from all senders in their Inbox if the BCL value is 6 or less. Admins can run the following query to get a list of all bulk senders in the organization:
 
 ```console
 EmailEvents

@@ -144,7 +144,7 @@ The next best option is to add the source email server or servers to the IP Allo
 >
 > Do not use popular domains (for example, microsoft.com) in allowed domain lists.
 
-The least desirable option is to use the allowed sender list or allowed domain list in anti-spam policies. You should avoid this option _if at all possible_ because senders bypass all spam, spoof, phishing protection (except high confidence phishing), and sender authentication (SPF, DKIM, DMARC). This method is best used for temporary testing only. The detailed steps can be found in [Configure anti-spam policies in EOP](anti-spam-policies-configure.md) topic.
+The least desirable option is to use the allowed sender lists or allowed domain lists in anti-spam policies. You should avoid this option _if at all possible_ because senders bypass all spam, spoof, phishing protection (except high confidence phishing), and sender authentication (SPF, DKIM, DMARC). This method is best used for temporary testing only. The detailed steps can be found in [Configure anti-spam policies in EOP](anti-spam-policies-configure.md) topic.
 
 The maximum limit for these lists is approximately 1000 entries; although, you'll only be able to enter 30 entries into the portal. You must use PowerShell to add more than 30 entries.
 
