@@ -1,5 +1,5 @@
 ---
-title: Work with advanced hunting query results in Microsoft 365 Defender
+title: Microsoft Security Copilot in advanced hunting
 description: Make the most of the query results returned by advanced hunting in Microsoft 365 Defender
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, custom detections, schema, kusto, visualization, chart, filters, drill-down
 search.product: eADQiWindows 10XVcnh
@@ -36,6 +36,8 @@ ms.date: 02/16/2021
 
 ## Security Copilot in advanced hunting
 [INTRO: discuss Security Copilot, how to get access (through getting Security Copilot, general function of query assistant)]
+
+[Microsoft Security Copilot in Microsoft 365 Defender](security-copilot-in-microsoft-365-defender.md) comes with a query assistant function in advanced hunting. Users who 
 
 ## Try your first prompt
 1. Open the **advanced hunting** page from the navigation bar in Microsoft 365 Defender.
