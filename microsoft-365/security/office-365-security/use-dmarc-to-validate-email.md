@@ -228,12 +228,9 @@ If the DMARC policy of the sending server is `p=reject`, [Exchange Online Protec
 Microsoft 365 is configured like this because some legitimate email may fail DMARC. For example, a message might fail DMARC if it's sent to a mailing list that then relays the message to all list participants. If Microsoft 365 rejected these messages, people could lose legitimate email and have no way to retrieve it. Instead, these messages will still fail DMARC but they'll be marked as spam and not rejected. If desired, users can still get these messages in their inbox through these methods:
 
 - Users add safe senders individually by using their email client.
-
 - Admins can use the [spoof intelligence insight](learn-about-spoof-intelligence.md) or the [Tenant Allow/Block List](manage-tenant-allow-block-list.md) to allow messages from the spoofed sender.
-
-- Admins create an Exchange mail flow rule (also known as a transport rule) for all users that allows messages for those particular senders.
-
-- Admins create an Exchange mail flow rule (also known as a transport rule) for all users for rejected emails that fail your organization's DMARC policy.
+- Admins create an Exchange mail flow rule (also known as a transport rule) for all users that allows messages from those particular senders.
+- Admins create an Exchange mail flow rule for all users for rejected email that fails the organization's DMARC policy.
 
 For more information, see [Create safe sender lists](create-safe-sender-lists-in-office-365.md).
 
