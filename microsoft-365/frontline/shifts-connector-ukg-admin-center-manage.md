@@ -51,8 +51,8 @@ You can use the [Shifts connector wizard](shifts-connector-wizard-ukg.md) (Previ
 > Before you map a UKG Dimensions instance to a team in Teams, check whether the team has schedule entities such as shifts or time off. If the team has an existing schedule with schedule entities, [remove the schedule entities from the team](/microsoft-365/frontline/shifts-connector-ukg-prerequisites#make-sure-the-teams-that-you-want-to-map-dont-have-any-existing-schedules) before you map a UKG Dimensions instance to it. If you don't remove schedule entities before mapping, you'll see duplicate shifts.
 
 - To create a new connection instance, select **Create instance**. You're taken to the wizard, where you can [choose your settings and create mappings](shifts-connector-wizard-ukg.md#create-a-connection-instance).
-- To change an existing connection instance, go to **Actions** and select **Edit**. You're taken to the wizard, where you can [update the settings and mappings](shifts-connector-wizard-ukg.md#create-a-connection-instance).
-- To delete an existing connection instance, go to **Actions** and select **Delete**. You can't undo this action.
+- To change an existing connection instance, under **Actions**, select **Edit**. You're taken to the wizard, where you can [update the settings and mappings](shifts-connector-wizard-ukg.md#create-a-connection-instance).
+- To delete an existing connection instance, under **Actions**, select **Delete**. You can't undo this action.
 - To view more details about an existing connection instance, select its name. On the details page, you'll see health information, including ongoing errors (if any), and mappings. You can also choose **Edit** to update settings in the wizard or **Back** to return to the Connector Management Console.
 
   :::image type="content" source="media/shifts-connector-ukg-manage-details.png" alt-text="Screenshot of the details page for a connection, showing connector health and mappings information." lightbox="media/shifts-connector-ukg-manage-details.png":::

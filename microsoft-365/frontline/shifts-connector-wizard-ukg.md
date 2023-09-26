@@ -33,7 +33,7 @@ In this article, we walk you through how to use the Shifts connector wizard in t
 
 The wizard creates a connection to your UKG Dimensions system and a connection instance. A connection instance applies the sync settings and team mappings that you choose. Sync settings determine the schedule information and what entities sync between UKG Dimensions and Shifts. Team mappings define the sync relationship between your UKG instances and teams in Teams.
 
-You can create one or more connection instances, each with different sync settings. For example, if your organization has multiple locations with different schedule requirements, create a connection instance with unique sync settings for each location. A UKG Dimensions instance should only be mapped once to a team in Teams at any given time. However, it's possible in the wizard to have different connection instances with the same mappings. This means that you can create connection instances with duplicated mappings.
+You can create one or more connection instances, each with different sync settings. For example, if your organization has multiple locations with different schedule requirements, create a connection instance with unique sync settings for each location. A UKG Dimensions instance (also referred to as a WFM instance) should only be mapped once to a team in Teams at any given time. However, it's possible in the wizard to have different connection instances with the same mappings. This means that you can create connection instances with duplicate mappings.
 
 With UKG Dimensions as the system of record, your frontline workers can efficiently manage their schedules and availability in Shifts on their devices. Frontline managers can continue to use UKG Dimensions to set up schedules.
 
@@ -43,13 +43,9 @@ With UKG Dimensions as the system of record, your frontline workers can efficien
 |-----|-----------|
 |Connection |A connection enables access to all WFM instances created in your UKG Dimensions system. To create a connection, you provide your UKG Dimensions details, which include your account username, password, and service URLs.|
 |Connection instance |To create a connection instance, you configure the following settings: <ul><li>Sync settings that determine how and which schedule information syncs between UKG Dimensions and Shifts</li><li> Team mappings to define the relationship between your WFM instances and teams in Teams</li></ul>|
-|WFM instance|This term refers to a team within your UKG Dimensions system, which is different than a team in Teams. |
+|WFM instance|This term refers to a team in your UKG Dimensions system, which is different than a team in Teams. |
 
 ## Prerequisites
-
-<!--Before you run the wizard, make sure that your environment is ready and you've completed all prerequisites and configuration tasks in [Prerequisites and requirements for the Teams Shifts connector for UKG Dimensions](shifts-connector-ukg-prerequisites.md).
-
-Take time to review the information and confirm you completed all the tasks before you follow the steps in this article.Make sure you meet the prerequisites and you complete all the tasks before you follow the steps in this article.-->
 
 Before you run the wizard, take time to review the information and complete all prerequisite and configuration tasks in [Prerequisites and requirements for the Teams Shifts connector for UKG Dimensions](shifts-connector-ukg-prerequisites.md).
 
@@ -84,54 +80,52 @@ After you confirm that you meet all the prerequisites, you're ready to run the w
     - Client secret
     - SSO URL
 
-    Signing in with your username enables access to all instances created in UKG Dimensions. If you don't know one or more of your connection details, contact your UKG Dimensions delivery partner or account manager.
+    Signing in with your username enables access to all instances created in UKG Dimensions. If you don't know one or more of your connection details, contact UKG Dimensions support.
 
-> [!NOTE]
-> - Check that your SSO URL is structured like this sample URL,  
-> https://contoso-sso.mykronos.com.
-> - Then, add this extra text at the end of the URL (after .com), structured like this (for a sample client ID XDV45GTaaaaab43342XA),  
-> https://contoso-sso.mykronos.com/oauth2/authorize?client_id=XDV45GTaaaaab43342XA.
+    > [!NOTE]
+    > - Check that your SSO URL is structured like this sample URL,  
+    > https://contoso-sso.mykronos.com.
+    > - Then, add this extra text at the end of the URL (after .com), structured like this (for a sample client ID XDV45GTaaaaab43342XA),  
+    > https://contoso-sso.mykronos.com/oauth2/authorize?client_id=XDV45GTaaaaab43342XA.
 
-To create another connection, go to the Connector Management Console page, and select **Add connection**.
+To create another connection, go to the Connector Management Console page, and then select **Add connection**.
 
 ### Create a connection instance
 
 After you create a connection, you can set up one or more connection instances in that connection.
 
-You'll see all the connections that you created on the Connector Management Console page. Under the connection where you want to create a new instance, select **Create instance**.
+The connections that you created are listed on the Connector Management Console page. Under the connection where you want to create a new instance, select **Create instance**.
     :::image type="content" source="media/shifts-connector-wizard-ukg-create-instance.png" alt-text="Screenshot of the Connector Management Console showing existing connections." lightbox="media/shifts-connector-wizard-ukg-create-instance.png":::
 
 <a name="sync"> </a>
 #### Choose settings
 
-On the Settings page, you choose the information to sync from UKG Dimensions to Shifts, the sync frequency, and whether Shifts users can make changes to the data.
+On the Instance settings page, you choose the information to sync from UKG Dimensions to Shifts, the sync frequency, and whether Shifts users can make changes to the data.
     :::image type="content" source="media/shifts-connector-wizard-sync-settings.png" alt-text="Screenshot of the Sync settings page of the wizard, showing sync settings." lightbox="media/shifts-connector-wizard-sync-settings.png":::
 
 1. Enter a name for your connection instance. It can't be longer than 100 characters or have any special characters.
 
-      > [!TIP]
-      > For the next group of settings, you have the following options to choose from:
-      >
-      > - **Shifts users will not see provider data**: Data won't sync between UKG Dimensions and Shifts.
-      > - **Shifts users can see provider data**: Data syncing is unidirectional from UKG Dimensions to Shifts.
-      > - **Shifts users can see and change provider data**: Data syncing is bidirectional between UKG Dimensions and Shifts.
-
-2. Choose the option you want for your basic, **Time card**, and **Request** settings.
-
-3. Then, choose your sync frequency.
-
-4. Enter your Microsoft 365 system account. This is the [account that you created as a prerequisite](#prerequisites) that is a team owner of all the teams you want to map.
+1. Enter your Microsoft 365 system account. This is the [account that you created as a prerequisite](shifts-connector-ukg-prerequisites.md) that's a team owner of all the teams you want to map.
 
 <a name="email"> </a>
 
-5. Under **Email notification recipients**, choose who receives email notifications about this connection instance. You can add individual users and groups. The email notifications contain information about setup status and any issues or errors that may occur after the connection instance is set up.
+1. Under **Email notification recipients**, choose who receives email notifications about this connection instance. You can add individual users and groups. The email notifications contain information about setup status and any issues or errors that may occur after the connection instance is set up.
+
+1. Choose your sync settings.</br> For each of these settings, you have the following options to choose from:
+     - **Shifts users will not see provider data**: Data won't sync between UKG Dimensions and Shifts.
+     - **Shifts users can see provider data**: Data syncing is unidirectional from UKG Dimensions to Shifts.
+     - **Shifts users can see and change provider data**: Data syncing is bidirectional between UKG Dimensions and Shifts.
 
     > [!IMPORTANT]
     > Before you disable a feature by selecting the **Shifts users will not see provider data** option, be aware that:
     >
-    > - If the **Schedules, groups, shifts, and activities** setting is disabled, then all other settings, such as **Time off** and **Employee availability**, and more, will also be disabled.
-    > - If the **Open shift** setting is disabled, **Open shift request** will also be disabled.
-    > - If the **Time off** setting is disabled, **Time off request** will also be disabled.
+    > - If the **Schedules, groups, shifts, and activities** setting is disabled, then all other settings, such as **Time off** and **Employee availability**, and more, are also disabled.
+    > - If the **Open shift** setting is disabled, **Open shift request** is also disabled.
+    > - If the **Time off** setting is disabled, **Time off request** is also disabled.
+
+1. Choose your sync frequency.
+
+1. When you're done choosing your settings, select **Next**.
 
     > [!IMPORTANT]
     > If you chose any of the following options to disable open shifts, open shift requests, swap requests, offer shift requests, or time off requests, there's another step you need to do to hide the capability in Shifts.
@@ -143,18 +137,21 @@ On the Settings page, you choose the information to sync from UKG Dimensions to 
     >
     > After you run the wizard, make sure you follow the steps in the [Disable open shifts, open shifts requests, swap requests, and time off requests](#disable-open-shifts-open-shifts-requests-swap-requests-and-time-off-requests) section later in this article.
 
-6. When you're done choosing your settings, select **Next**.
-
 <a name="instances"> </a>
 #### Map UKG Dimensions instances to teams
 
-Choose the UKG Dimensions instances that you want to connect to Shifts, and then map each WFM instance to a team in Teams. You can map up to 400 instances.
+Choose the UKG Dimensions instances that you want to connect to Shifts, and then map each WFM instance to a team in Teams. You can map up to 400 instances. 
+
+To complete this step, you can:
+
+- [Manually map instances](#manually-map-instances-to-teams)
+- [Use a CSV file to map instances](#use-a-csv-file-to-map-instances-to-teams)
 
 ##### Manually map instances to teams
 
 :::image type="content" source="media/shifts-connector-wizard-ukg-map.png" alt-text="Screenshot of wizard, showing the list of UKG Dimensions instances." lightbox="media/shifts-connector-wizard-ukg-map.png":::
 
-1. On the Mapping page, start by choosing the WFM instance(s) that you want to map to team(s) in Teams.
+1. On the Mapping page, start by choosing the WFM instances that you want to map to teams in Teams.
 
 1. Select the checkbox for each WFM instance you want to map. An instance is only mapped if the check box is selected.
 
@@ -164,7 +161,7 @@ Choose the UKG Dimensions instances that you want to connect to Shifts, and then
 
 1. Choose the time zone. The closest city is automatically filled in, but you can change it.
 
-1. When you've mapped all your teams, select **Next**.
+1. When you're done mapping all your teams, select **Next**.
 
 ##### Use a CSV file to map instances to teams
 
@@ -197,7 +194,7 @@ Choose the UKG Dimensions instances that you want to connect to Shifts, and then
 
 5. On the Mapping page, select **Browse** to find and upload your completed CSV file.
 
-6. Choose **Done** if your file has uploaded correctly. Otherwise, review the error report and upload a corrected file.
+6. Choose **Done** if your file uploaded correctly. Otherwise, review the error report and upload a corrected file.
 
 7. Your new mappings are listed on the Mappings page. Choose **Next**.
 
@@ -207,7 +204,7 @@ Before finishing, review the summary of the connection instance creation process
 
 :::image type="content" source="media/shifts-connector-wizard-review.png" alt-text="Screenshot of the Review page of the wizard, showing mappings." lightbox="media/shifts-connector-wizard-review.png":::
 
-The wizard starts the process to set up the connection instance, which may take some time to complete. If you try to edit the connection instance before the setup is complete, you most likely won't be able to view the mappings you created previously.
+The wizard starts the process to set up the connection instance, which may take some time to complete. If you try to edit the connection instance before setup is complete, you most likely won't be able to view the mappings you created previously.
 
 The email notification recipients you chose will receive email notifications about setup status in case there are any errors.
 
