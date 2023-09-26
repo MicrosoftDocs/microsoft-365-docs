@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: jaeccles
-ms.date: 08/25/2022
+ms.date: 08/25/2023
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
