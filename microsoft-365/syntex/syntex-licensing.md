@@ -14,7 +14,7 @@ ms.collection:
     - Tier1
 search.appverid: MET150
 ms.localizationpriority: medium
-description: Learn about licensing for Microsoft Syntex.
+description: Learn about pay-as-you-go licensing for Microsoft Syntex.
 ---
 
 # Licensing for Microsoft Syntex
