@@ -30,15 +30,12 @@ As a compliance manager or IT administrator, it is crucial to stay up-to-date on
 
 Microsoft Loop is built on top of SharePoint, OneDrive, and [Microsoft Syntex repository services](https://devblogs.microsoft.com/microsoft365dev/introducing-syntex-repository-services-microsoft-365-superpowers-for-your-app/), which means that most compliance capabilities work just like existing files in your ecosystem. This makes it familiar and enables Loop content to be managed within your existing workflows. To help you understand how Loop content is stored in the Microsoft ecosystem, here's a high-level diagram:
 
-High-Level Overview: The Loop content storage location is determined by where it was originally created:
-- In the Loop app ➡️️ Microsoft Syntex 
-- All other places (i.e. Teams chat) ➡️️ OneDrive 
-/* IMAGE FULL */
-Caption: Diagram showing where Loop content is stored based on where it was originally created
+The Loop content storage location is determined by where it was originally created:
+- Created in the Loop app ➡️️ Microsoft Syntex 
+- Created in all other places (i.e. Teams chat, Outlook email, Word for the web, Whiteboard) ➡️️ OneDrive 
 
 
 ## Loop components stored in OneDrive
-/* IMAGE LEFT */
 The following section applies to Loop components stored in OneDrive (created outside the Loop app i.e. in Teams chat)
 
 
@@ -66,9 +63,8 @@ The following section applies to Loop components stored in OneDrive (created out
 - Microsoft **[Graph API](/graph/api/driveitem-get-content-format)** export ✻
 - **Legal Hold** support to ensure content is not deleted (as related to litigation and security investigations) and stored in the [Preservation Hold Library](/sharepoint/governance/ediscovery-and-in-place-holds-in-sharepoint-server) ✻
 
-#### Data Lifecycle and Records Management
-- **[Retention Policies + Preservation Hold Library](/microsoft-365/compliance/retention-policies-sharepoint)** enforced - content will appear editable to the user, but edits will not save
-- **[Retention labels and record unlock](/purview/record-versioning)**
+#### Data Lifecycle Management
+- **[Retention Policies](/microsoft-365/compliance/retention-policies-sharepoint)** are enforced
 
 #### Information Barriers
 - **[Information Barriers](/purview/information-barriers-sharepoint)** ✻✻
@@ -83,9 +79,6 @@ The following section applies to Loop components stored in OneDrive (created out
 - Basic **Intune** [Device Management Support](/mem/intune/remote-actions/device-management) for Loop app on iOS and Android
 - Basic **[Conditional Access](/sharepoint/control-access-from-unmanaged-devices)** support
 
-#### Data Lifecycle Management
-- **[Retention labels and record unlock](/purview/record-versioning)** available from within Loop app
-
 #### Data Loss Prevention, Information Protection
 - **[Data Loss Prevention](/microsoft-365/compliance/dlp-learn-about-dlp)** (DLP) policy tips ✻
 - **[Sensitivity Labeling](/microsoft-365/compliance/information-protection)** (MIP) ✻
@@ -94,7 +87,6 @@ The following section applies to Loop components stored in OneDrive (created out
 
 
 ## Loop workspace content stored in Microsoft Syntex
-/* IMAGE RIGHT */
 The following sections apply to Loop workspace content stored in Microsoft Syntex (created inside the Loop app i.e. new workspaces, new pages or new components) 
 
 
@@ -117,7 +109,7 @@ The following sections apply to Loop workspace content stored in Microsoft Synte
 - **Legal Hold** support to ensure content is not deleted (as related to litigation and security investigations) and stored in the [Preservation Hold Library](/sharepoint/governance/ediscovery-and-in-place-holds-in-sharepoint-server) ✻
 
 #### Data Lifecycle Management
-- **[Retention Policies + Preservation Hold Library](/microsoft-365/compliance/retention-policies-sharepoint)** enforced - content will appear editable to the user, but edits will not save
+- **[Retention Policies](/microsoft-365/compliance/retention-policies-sharepoint)** configured for 'all SharePoint sites' will be enforced on all Loop workspaces
 
 #### Information Barriers
 - **[Information Barriers](/purview/information-barriers-sharepoint)** ✻✻
@@ -148,7 +140,7 @@ We will expand our administrative workspace management capabilities via PowerShe
 - Microsoft **[Graph API](/graph/api/driveitem-get-content-format)** export ✻
 
 #### Data Lifecycle Management
-- **[Retention labels and record unlock](/purview/record-versioning)** available from within Loop app
+- **[Retention Policies](/microsoft-365/compliance/retention-policies-sharepoint)** that can be overridden or set at the Loop workspace level
 
 #### Data Loss Prevention, Information Protection
 - **[Data Loss Prevention](/microsoft-365/compliance/dlp-learn-about-dlp)** (DLP) policy tips ✻
