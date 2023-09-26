@@ -71,7 +71,7 @@ There are several methods and deployment tools that you can use to install and c
 ### System requirements
 
 The three most recent major releases of macOS are supported.
-- 13 (Ventura), 12 (Monterey), 11 (Big Sur)
+- 14 (Sonoma), 13 (Ventura), 12 (Monterey)
 > [!IMPORTANT]
 > On macOS 11 (Big Sur) and above, Microsoft Defender for Endpoint requires additional configuration profiles. If you are an existing customer upgrading from earlier versions of macOS, make sure to deploy the additional configuration profiles listed on [New configuration profiles for macOS Big Sur and newer versions of macOS](mac-sysext-policies.md). 
 - Supported processors: x64 and ARM64 (M1 and M2).
