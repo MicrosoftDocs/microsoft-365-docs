@@ -104,9 +104,9 @@ This query returns the following fields for each internet-facing device with the
 - **InternetFacingPublicScannedPort**: The internet facing port that was externally scanned
 - **InternetFacingTransportProtocol**: The transport protocol used (TCP/UDP)
 
-### Get information on inbounds connections
+### Get information on inbound connections
 
-For TCP connections, you can  gain further insights into applications or services identified as listening on a device by querying [DeviceNetworkEvents](../defender/advanced-hunting-devicenetworkevents-table.md).
+For TCP connections, you can gain further insights into applications or services identified as listening on a device by querying [DeviceNetworkEvents](../defender/advanced-hunting-devicenetworkevents-table.md).
 
 Use the following query for devices tagged with the reason **This device received external incoming communication**:
 
@@ -163,3 +163,4 @@ You can report an inaccuracy for a device with incorrect internet-facing informa
 
 - [Device inventory](machines-view-overview.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+
