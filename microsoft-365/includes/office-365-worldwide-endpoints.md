@@ -24,6 +24,7 @@ ID | Category | ER | Addresses | Ports
 36 | Default<BR>Required | No | `g.live.com, oneclient.sfx.ms` | **TCP:** 443, 80
 37 | Default<BR>Required | No | `*.sharepointonline.com, spoprod-a.akamaihd.net` | **TCP:** 443, 80
 39 | Default<BR>Required | No | `*.svc.ms` | **TCP:** 443, 80
+67 | Default<BR>Optional<BR>**Notes:** OneDrive for Business: telemetry | No | `*.blob.core.windows.net` | **TCP:** 443
 
 ## Skype for Business Online and Microsoft Teams
 
