@@ -31,9 +31,9 @@ In this article, we walk you through how to use the Shifts connector wizard in t
 > [!NOTE]
 > If you prefer, you can use PowerShell to integrate Shifts with UKG Dimensions. To learn more, see [Use PowerShell to connect Shifts to UKG Dimensions](shifts-connector-ukg-powershell-setup.md).
 
-The wizard creates a connection to your UKG Dimensions system and a connection instance. A connection instance applies the sync settings and team mappings that you choose. Sync settings determine the schedule information and what entities sync between UKG Dimensions and Shifts. Team mappings define the sync relationship between your UKG instances and teams in Teams.
+The wizard creates a connection to your UKG Dimensions system and a connection instance. A connection instance applies the sync settings and team mappings that you choose. Sync settings determine the schedule information and what entities sync between UKG Dimensions and Shifts. Team mappings define the sync relationship between your UKG Dimensions instances (also called WFM instances) and teams in Teams.
 
-You can create one or more connection instances, each with different sync settings. For example, if your organization has multiple locations with different schedule requirements, create a connection instance with unique sync settings for each location. A UKG Dimensions instance (also referred to as a WFM instance) should only be mapped once to a team in Teams at any given time. However, it's possible in the wizard to have different connection instances with the same mappings. This means that you can create connection instances with duplicate mappings.
+You can create one or more connection instances, each with different sync settings. For example, if your organization has multiple locations with different schedule requirements, create a connection instance with unique sync settings for each location. A WFM instance should only be mapped once to a team in Teams at any given time. However, it's possible in the wizard to have different connection instances with the same mappings. This means that you can create connection instances with duplicate mappings.
 
 With UKG Dimensions as the system of record, your frontline workers can efficiently manage their schedules and availability in Shifts on their devices. Frontline managers can continue to use UKG Dimensions to set up schedules.
 
@@ -138,18 +138,18 @@ On the Instance settings page, you choose the information to sync from UKG Dimen
     > After you run the wizard, make sure you follow the steps in the [Disable open shifts, open shifts requests, swap requests, and time off requests](#disable-open-shifts-open-shifts-requests-swap-requests-and-time-off-requests) section later in this article.
 
 <a name="instances"> </a>
-#### Map UKG Dimensions instances to teams
+#### Map WFM instances to teams
 
-Choose the UKG Dimensions instances that you want to connect to Shifts, and then map each WFM instance to a team in Teams. You can map up to 400 instances. 
+Choose the WFM instances that you want to connect to Shifts, and then map each instance to a team in Teams. You can map up to 400 instances.
 
 To complete this step, you can:
 
-- [Manually map instances](#manually-map-instances-to-teams)
-- [Use a CSV file to map instances](#use-a-csv-file-to-map-instances-to-teams)
+- [Manually map WFM instances](#manually-map-instances-to-teams)
+- [Use a CSV file to map WFM instances](#use-a-csv-file-to-map-instances-to-teams)
 
-##### Manually map instances to teams
+##### Manually map WFM instances to teams
 
-:::image type="content" source="media/shifts-connector-wizard-ukg-map.png" alt-text="Screenshot of wizard, showing the list of UKG Dimensions instances." lightbox="media/shifts-connector-wizard-ukg-map.png":::
+:::image type="content" source="media/shifts-connector-wizard-ukg-map.png" alt-text="Screenshot of wizard, showing the list of WFM instances." lightbox="media/shifts-connector-wizard-ukg-map.png":::
 
 1. On the Mapping page, start by choosing the WFM instances that you want to map to teams in Teams.
 
@@ -163,11 +163,11 @@ To complete this step, you can:
 
 1. When you're done mapping all your teams, select **Next**.
 
-##### Use a CSV file to map instances to teams
+##### Use a CSV file to map WFM instances to teams
 
 1. On the Mapping page, choose **CSV upload tool**.
 
-2. Select **Download template** to get the CSV mapping file. The template includes a list of all your UKG Dimensions instances and their IDs. The top rows of your template will look like this:
+2. Select **Download template** to get the CSV mapping file. The template includes a list of all your WFM instances and their IDs. The top rows of your template will look like this:
 
    |UKG Dimensions Instance ID |UKG Dimensions Instance Name |Team ID |Team Name |Time Zone |
    |------|------|------|------|------|
@@ -179,7 +179,7 @@ To complete this step, you can:
    |------|------|------|------|------|
    |Blank |Blank |Automatically prefilled |Automatically prefilled |Default*|
 
-3. Choose a team that you want to map to a UKG Dimensions instance. Cut and paste the Team ID and Team Name from the bottom half of your template to be in line with the UKG Dimensions instance that you want. A completed row of your template should look like this:
+3. Choose a team that you want to map to a WFM instance. Cut and paste the Team ID and Team Name from the bottom half of your template to be in line with the WFM instance that you want. A completed row of your template should look like this:
 
    |UKG Dimensions Instance ID |UKG Dimensions Instance Name |Team ID |Team Name |Time Zone |
    |------|------|------|------|------|
@@ -220,7 +220,7 @@ The email notification recipients you chose will receive email notifications abo
 >
 > After you edit your settings, make sure you follow the steps to [Disable open shifts, open shifts requests, swap requests, and time off requests.](/microsoft-365/frontline/shifts-connector-wizard-ukg#disable-open-shifts-open-shifts-requests-swap-requests-and-time-off-requests)
 
-To hide open shifts, swap requests, and time off requests in Shifts, use the Graph API [schedule resource type](/graph/api/resources/schedule) to set the following parameters to ```false``` for each team that you mapped to a UKG Dimensions instance:
+To hide open shifts, swap requests, and time off requests in Shifts, use the Graph API [schedule resource type](/graph/api/resources/schedule) to set the following parameters to ```false``` for each team that you mapped to a WFM instance:
 
 - Open shifts: ```openShiftsEnabled```
 - Swap requests:  ```swapShiftsRequestsEnabled```

@@ -28,11 +28,11 @@ Use the [Microsoft Teams Shifts connector for UKG Dimensions](shifts-connectors.
 
 In this article, we walk you through how to use PowerShell to set up and configure the connector to integrate Shifts with UKG Dimensions.
 
-To set up the connection, you run a PowerShell script. The script configures the connector, applies sync settings, creates the connection, and maps UKG Dimensions instances to teams. Sync settings determine the features enabled in Shifts and the schedule information that's synced between UKG Dimensions and Shifts. Mappings define the sync relationship between your UKG Dimensions instances and teams in Microsoft Teams. You can map to existing teams and new teams.
+To set up the connection, you run a PowerShell script. The script configures the connector, applies sync settings, creates the connection, and maps UKG Dimensions instances (also called WFM instances) to teams in Teams. Sync settings determine the features enabled in Shifts and the schedule information that's synced between UKG Dimensions and Shifts. Mappings define the sync relationship between your WFM instances and teams in Teams. You can map to existing teams and new teams.
 
 We provide two scripts. You can use either script, depending on whether you want to map to existing teams or create new teams to map to.
 
-You can set up multiple connections, each with different sync settings. For example, if your organization has multiple locations with different schedule requirements, create a connection with unique sync settings for each location. Keep in mind that a UKG Dimensions instance can only be mapped to one team at any given time. If an instance is already mapped to a team, it can't be mapped to another team.
+You can set up multiple connections, each with different sync settings. For example, if your organization has multiple locations with different schedule requirements, create a connection with unique sync settings for each location. Keep in mind that a WFM instance can only be mapped to one team at any given time. If an instance is already mapped to a team, it can't be mapped to another team.
 
 With UKG Dimensions as the system of record, your frontline workers can efficiently manage their schedules and availability in Shifts on their devices. Frontline managers can continue to use UKG Dimensions to set up schedules.
 
@@ -74,7 +74,7 @@ When you're prompted, sign in using your admin credentials. You're now set up to
 ## Identify the teams you want to map
 
 > [!NOTE]
-> Complete this step if you're mapping UKG Dimensions instances to existing teams. If you're creating new teams to map to, you can skip this step.
+> Complete this step if you're mapping WFM instances to existing teams. If you're creating new teams to map to, you can skip this step.
 
 In the Azure portal, go to the [All groups](https://ms.portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/AllGroups) page to get a list of the TeamIds of teams in your organization.
 
@@ -85,24 +85,24 @@ Take note of the TeamIds of the teams you want to map. The script will prompt yo
 
 ## Run the script
 
-Run one of these two scripts, depending on whether you're creating a new team or mapping to an existing team:
+Run one of the following scripts, depending on whether you're creating a new team or mapping to an existing team:
 
-- To set up a connection while creating a new team within Microsoft Teams and mapping a UKG team to the new team, run the [new teams script](#set-up-a-connection-and-create-a-new-team).
-- To set up a connection and map to an existing team within Microsoft Teams, run the [existing teams script](#set-up-a-connection-and-map-an-existing-team).
+- To set up a connection, create a new team in Teams, and map a WFM instance to the new team, run the [new teams script](#set-up-a-connection-and-create-a-new-team).
+- To set up a connection and map WFM instances to existing teams in Teams, run the [existing teams script](#set-up-a-connection-and-map-an-existing-team).
 
-Follow the on-screen instructions when you run the script. The script will complete these actions:
+Follow the on-screen instructions when you run the script. The script completes the following actions:
 
 1. Test and verify the connection to UKG Dimensions using the UKG Dimensions service account credentials and service URLs that you enter.
 1. Apply sync settings. These settings include the sync frequency (in minutes) and the schedule data synced between UKG Dimensions and Shifts. You can enable schedule data defined by these scenarios:  `Shift`, `SwapRequest`, `OfferShiftRequest`, `UserShiftPreferences`, `OpenShift`, `OpenShiftRequest`, `TimeOff`, `TimeOffRequest`.
 
     To learn more, see [New-CsTeamsShiftsConnectionInstance](/powershell/module/teams/new-csteamsshiftsconnectioninstance). To see the list of supported sync options for each parameter, run [Get-CsTeamsShiftsConnectionConnector](/powershell/module/teams/get-csteamsshiftsconnectionconnector).
 
-> [!NOTE]
-> The script you select will enable sync for each supported sync option. If you want to change sync settings, you can do so after the connection is set up. To learn more, see [Use PowerShell to manage your Shifts connection to UKG Dimensions](shifts-connector-ukg-powershell-manage.md).
+    > [!NOTE]
+    > The script enables sync for each supported sync option. If you want to change sync settings, you can do so after the connection is set up. To learn more, see [Use PowerShell to manage your Shifts connection to UKG Dimensions](shifts-connector-ukg-powershell-manage.md).
 
-1. Map UKG Dimensions instances to your teams within Microsoft Teams.
-    - If you select the new teams script to create new teams, mappings are based on the new teams you create.
-    - If you select the existing teams script above to map existing teams, mappings are based on UKG Dimensions instance IDs and TeamIds that you enter. If a team has an existing schedule, the script removes all schedule data.
+1. Map WFM instances to your teams in Teams.
+    - If you chose to run the [new teams script](#set-up-a-connection-and-create-a-new-team) to create new teams, mappings are based on the new teams you create.
+    - If you chose to run the [existing teams script](#set-up-a-connection-and-map-an-existing-team) to map existing teams, mappings are based on WFM instance IDs and TeamIds that you enter. If a team has an existing schedule, the script removes all schedule data.
 
 After you run the script, a **Success** message confirms if your connection is successfully set up.
 
