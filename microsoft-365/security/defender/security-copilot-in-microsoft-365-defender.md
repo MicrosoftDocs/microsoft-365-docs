@@ -1,5 +1,5 @@
 ---
-title: Security Copilot in Microsoft 365 Defender
+title: Microsoft Security Copilot in Microsoft 365 Defender
 description: Learn about Security Copilot capabilities embedded in Microsoft 365 Defender.
 keywords: security copilot, microsoft 365 defender, embedded experience, incident summary, script analyzer, script analysis, query assistant, m365, incident report, guided response, incident response automated, automatic incident response, summarize incidents, summarize incident report
 ms.service: microsoft-365-security
@@ -32,9 +32,11 @@ ms.date: 10/10/2023
 
 - Microsoft 365 Defender
 
-The Microsoft Security Copilot in Microsoft 365 Defender Early Access Program is an invitation-only, paid preview. If your organization is interested in this program, work with your Microsoft account manager to learn more about nominations for a potential invite. To learn more about this program, see the announcement of the Security Copilot Early Access Program.
+The Microsoft Security Copilot in Microsoft 365 Defender Early Access Program is an invitation-only, paid preview. If your organization is interested in this program, work with your Microsoft account manager to learn more about nominations for a potential invite. To learn more about this program, see the [Security Copilot Early Access Program](/security-copilot/faq-security-copilot.md).
 
-This article provides an overview for users of the Security Copilot embedded experience in Microsoft 365 Defender, including steps to access, key capabilities, and links that detail these Security Copilot capabilities in Microsoft 365 Defender.
+[Security Copilot](/security-copilot/microsoft-security-copilot.md) is a platform that brings together the power of AI and human expertise to help security teams respond to attacks faster and more effectively. Security Copilot is embedded in Microsoft 365 Defender to provide security teams with the capabilities to summarize incidents, analyze scripts and codes, use guided responses to resolve incidents, generate KQL queries, and create incident reports.
+
+This article provides an overview for users of the Security Copilot embedded experience in Microsoft 365 Defender, including steps to access, key capabilities, and links that detail these capabilities.
 
 ## Access Security Copilot in Microsoft 365 Defender
 
@@ -93,14 +95,15 @@ Investigation conclusions usually require reports to document the attack, the st
 - [Learn how to summarize incidents](security-copilot-m365d-incident-summary.md) with Security Copilot in Microsoft 365 Defender
 - [Use guided responses](security-copilot-m365d-guided-response.md) with Security Copilot in Microsoft 365 Defender when responding to incidents
 - [Analyze scripts and codes](security-copilot-m365d-script-analysis.md) with Security Copilot in Microsoft 365 Defender
-- Search for potential threats with Security Copilot in Microsoft 365 Defender
+- [Generate KQL queries](advanced-hunting-security-copilot.md) with Security Copilot in Microsoft 365 Defender
 - [Create incident reports](security-copilot-m365d-create-incident-report.md) with Security Copilot in Microsoft 365 Defender
 
 ## See also
 
-- [Security Copilot FAQ](/copilot/rai-faqs-security-copilot.md)
+- [Security Copilot Early Access Program FAQs](/security-copilot/faq-security-copilot.md)
 - [Get started with Security Copilot](/copilot/microsoft-365-copilot-requirements.md)
 - [Know more about other Security Copilot embedded experiences](/copilot/experiences-security-copilot.md)
+- [Privacy and data security in Security Copilot](/security-copilot/privacy-data-security.md)
+- [Responsible AI FAQs](/security-copilot/responsible-ai-overview-security-copilot.md)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
-

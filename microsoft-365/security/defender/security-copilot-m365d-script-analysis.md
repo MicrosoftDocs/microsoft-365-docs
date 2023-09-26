@@ -82,10 +82,11 @@ You can validate or report the analysis results provided by Security Copilot. Va
 - [Summarize an incident](security-copilot-m365d-incident-summary.md)
 - [Respond to incidents using guided responses](security-copilot-m365d-guided-response.md)
 - [Create an incident report](security-copilot-m365d-create-incident-report.md)
-- Search for threats
+- [Generate KQL queries](advanced-hunting-security-copilot.md)
 
 ## See also
--	[Security Copilot FAQ](/copilot/rai-faqs-security-copilot.md)
+- [Security Copilot Early Access Program FAQs](/security-copilot/faq-security-copilot.md)
+- [Get started with Security Copilot](/copilot/microsoft-365-copilot-requirements.md)
 - [Learn about other Security Copilot embedded experiences](/copilot/experiences-security-copilot.md)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

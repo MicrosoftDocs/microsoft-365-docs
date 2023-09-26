@@ -89,13 +89,14 @@ To provide feedback:
 
 - [Use guided responses when responding to threats](security-copilot-m365d-guided-response.md)
 - [Analyze scripts and codes](security-copilot-m365d-script-analysis.md)
-- Search for threats with Security Copilot in Microsoft 365 Defender
+- [Generate KQL queries](advanced-hunting-security-copilot.md)
 - [Create incident reports](security-copilot-m365d-create-incident-report.md)
 
 ## See also
 
-- [Security Copilot FAQ](/copilot/rai-faqs-security-copilot.md)
+- [Security Copilot Early Access Program FAQs](/security-copilot/faq-security-copilot.md)
 - [Investigate incidents in Microsoft 365 Defender](investigate-incidents.md)
+- [Get started with Security Copilot](/copilot/microsoft-365-copilot-requirements.md)
 - [Learn about other Security Copilot embedded experiences](/copilot/experiences-security-copilot.md)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
