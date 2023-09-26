@@ -33,7 +33,7 @@ sections:
 
       - question: How do I prepare my organization's data governance for Copilot? 
           
-        answer: Microsoft 365 Copilot is integrated into Microsoft 365 and automatically inherits all your company's valuable security, compliance, and privacy policies and processes. Data permissions will be consistent and users will only be able to search the information they already have access to. Review [Data, Privacy, and Security for Microsoft 365 Copilot](/DeployOffice/privacy/microsoft-365-copilot) for more information about privacy with Microsoft 365 Copilot. To learn more about how to approach getting your organization ready to use Copilot, [watch this Microsoft Mechanics video](https://www.youtube.com/watch?v=oeX0lsMA69U).  
+        answer: Microsoft 365 Copilot is integrated into Microsoft 365 and automatically inherits all your company's valuable security, compliance, and privacy policies and processes. Data permissions will be consistent and users will only be able to search the information they already have access to. Review [Data, Privacy, and Security for Microsoft 365 Copilot](microsoft-365-copilot-privacy.md) for more information about privacy with Microsoft 365 Copilot. To learn more about how to approach getting your organization ready to use Copilot, [watch this Microsoft Mechanics video](https://www.youtube.com/watch?v=oeX0lsMA69U).  
 
       - question: What happens after my organization gets invited into the program? 
          

@@ -48,7 +48,6 @@ To investigate Microsoft Purview Data Loss Prevention incidents in the Microsoft
 - Microsoft Office 365 E5/A5
 - Microsoft 365 E5/A5
 - Microsoft 365 E5/A5 Compliance
-- Microsoft 365 E5/A5 Security
 - Microsoft 365 E5/A5 Information Protection and Governance
 
 > [!NOTE]
