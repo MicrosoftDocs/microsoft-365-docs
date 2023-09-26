@@ -69,7 +69,7 @@ You can also assign licenses in bulk to [groups of users through the Azure admin
 
 ## Security and privacy
 
-Microsoft 365 Copilot ensures data security and privacy by adhering to existing obligations and integrating with your organization's policies. It utilizes your Microsoft Graph content with the same access controls as other Microsoft 365 services. To learn more about privacy with Microsoft 365 Copilot, see [Data, Privacy, and Security for Microsoft 365 Copilot](/DeployOffice/privacy/microsoft-365-copilot).
+Microsoft 365 Copilot ensures data security and privacy by adhering to existing obligations and integrating with your organization's policies. It utilizes your Microsoft Graph content with the same access controls as other Microsoft 365 services. To learn more about privacy with Microsoft 365 Copilot, see [Data, Privacy, and Security for Microsoft 365 Copilot](microsoft-365-copilot-privacy.md).
 
 ## More resources
 
