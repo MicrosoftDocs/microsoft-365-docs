@@ -144,8 +144,8 @@ Choose the WFM instances that you want to connect to Shifts, and then map each i
 
 To complete this step, you can:
 
-- [Manually map WFM instances](#manually-map-instances-to-teams)
-- [Use a CSV file to map WFM instances](#use-a-csv-file-to-map-instances-to-teams)
+- [Manually map WFM instances](#manually-map-wfm-instances-to-teams)
+- [Use a CSV file to map WFM instances](#use-a-csv-file-to-map-wfm-instances-to-teams)
 
 ##### Manually map WFM instances to teams
 
