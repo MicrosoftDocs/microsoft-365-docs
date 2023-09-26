@@ -24,14 +24,15 @@ search.appverid:
 ms.date: 10/10/2023
 ---
 
-# Security Copilot in Microsoft 365 Defender
+# Microsoft Security Copilot in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
+
 - Microsoft 365 Defender
 
-The Security Copilot in Microsoft 365 Defender Early Access Program is an invitation-only, paid preview. If your organization is interested in this program, work with your Microsoft account manager to learn more about nominations for a potential invite. To learn more about this program, see the announcement of the Security Copilot Early Access Program.
+The Microsoft Security Copilot in Microsoft 365 Defender Early Access Program is an invitation-only, paid preview. If your organization is interested in this program, work with your Microsoft account manager to learn more about nominations for a potential invite. To learn more about this program, see the announcement of the Security Copilot Early Access Program.
 
 This article provides an overview for users of the Security Copilot embedded experience in Microsoft 365 Defender, including steps to access, key capabilities, and links that detail these Security Copilot capabilities in Microsoft 365 Defender.
 
@@ -65,7 +66,7 @@ Investigating incidents with multiple alerts can be a daunting task. To immediat
 
 ### Take action on incidents through guided response
 
-Approaching solutions and mitigation for any incident can oftentimes be complex for several reasons, including understanding where to begin, what solutions are appropriate, and following new investigation flows for security teams. Security Copilot minimizes these complications through guided response where recommended actions appropriate for an attack are listed.
+Approaching solutions and mitigation for any incident can oftentimes be complex for several reasons, including understanding where to begin, what solutions are appropriate, and following new investigation flows for security teams. Security Copilot minimizes these complications through [guided responses](security-copilot-m365d-guided-response.md). These responses are recommended actions specific to each incident.
 
 [Insert screenshot]
 
@@ -83,23 +84,23 @@ Security teams tasked to mitigate potential attacks rely on Microsoft 365 Defend
 
 ### Write post-investigation reports with speed and accuracy
 
-Investigation conclusions usually require reports to document the attack, the steps taken, results of the investigation, and other post-analysis items that need to be recorded to aid future security decisions and learning. Oftentimes, documenting investigations can be time-consuming and needs to have accurate information to be effective. Security Copilot creates incident reports to summarize the investigation upon closure.
+Investigation conclusions usually require reports to document the attack, the steps taken, results of the investigation, and other post-analysis items that need to be recorded to aid future security decisions and learning. Oftentimes, documenting investigations can be time-consuming and needs to have accurate information to be effective. Security Copilot [creates incident reports](security-copilot-m365d-create-incident-report.md) to summarize the investigation upon closure.
 
 [insert screenshot here]
 
 ## Next steps
 
 - [Learn how to summarize incidents](security-copilot-m365d-incident-summary.md) with Security Copilot in Microsoft 365 Defender
-- Respond to incidents with Security Copilot in Microsoft 365 Defender
+- [Use guided responses](security-copilot-m365d-guided-response.md) with Security Copilot in Microsoft 365 Defender when responding to incidents
 - [Analyze scripts and codes](security-copilot-m365d-script-analysis.md) with Security Copilot in Microsoft 365 Defender
 - Search for potential threats with Security Copilot in Microsoft 365 Defender
-- Create incident reports with Security Copilot in Microsoft 365 Defender
+- [Create incident reports](security-copilot-m365d-create-incident-report.md) with Security Copilot in Microsoft 365 Defender
 
 ## See also
 
 - [Security Copilot FAQ](/copilot/rai-faqs-security-copilot.md)
 - [Get started with Security Copilot](/copilot/microsoft-365-copilot-requirements.md)
-- [Know more about Security Copilot embedded experiences](/copilot/experiences-security-copilot.md)
+- [Know more about other Security Copilot embedded experiences](/copilot/experiences-security-copilot.md)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
 
