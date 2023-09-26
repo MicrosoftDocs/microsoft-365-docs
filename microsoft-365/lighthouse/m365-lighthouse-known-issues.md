@@ -74,8 +74,8 @@ Either granular delegated admin privileges (GDAP) plus an indirect reseller rela
 
 | Issue | Description | Solution |
 | ---------------- | ---------------- | ---------------- |
-| Total tenants and total seats count mismatch with Partner Center  | Total seats and tenants displayed in the summary view of Customer acquisition, Customer retention, and Customer growth tabs are mismatched between the Lighthouse experience and Partner Center experience. | No workaround is required. This issue doesn't impact the number of opportunities visible in the recommendation table or the export. You'll still have access to the full list of opportunities available across your customer tenants. |
-| Filtering and sorting experience in Lighthouse is different than in Partner Center | Column sorting, Recommendation filter, Product filter, and MPN ID filter are unavailable in the Lighthouse experience. | No workaround is required. You still have access to the full list of opportunities.  |
+| **Total tenants and total seats count mismatch with Partner Center** | Total seats and tenants displayed in the summary view of Customer acquisition, Customer retention, and Customer growth tabs are mismatched between the Lighthouse experience and Partner Center experience. | No workaround is required. This issue doesn't impact the number of opportunities visible in the recommendation table or the export. You still have access to the full list of opportunities available across your customer tenants. |
+| **Filtering and sorting experience in Lighthouse is different than in Partner Center**| Column sorting, Recommendation filter, Product filter, and MPN ID filter are unavailable in the Lighthouse experience. | No workaround is required. You still have access to the full list of opportunities available across your customer tenants.  |
 
 ## Related content
 

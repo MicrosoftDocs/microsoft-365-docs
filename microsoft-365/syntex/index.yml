@@ -9,7 +9,7 @@ metadata:
   ms.service: microsoft-syntex #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.subservice: subservice
   ms.topic: landing-page # Required
-  ms.collection: enabler-strategic, m365initiative-syntex
+  ms.collection: enabler-strategic, m365initiative-syntex, essentials-hub-or-landing
   ms.custom: intro-hub-or-landing
   author: chuckedmonson #Required; your GitHub user alias, with correct capitalization.
   ms.author: chucked #Required; microsoft alias of author; optional team alias.
@@ -39,8 +39,8 @@ landingContent:
             url: https://www.linkedin.com/learning/search?keywords=syntex&upsellOrderOrigin=default_guest_learning&trk=homepage-learning_learning-search-bar_search-submit
       - linkListType: whats-new
         links:
-          - text: Optical character recognition
-            url: ocr-overview.md
+          - text: Image tagging
+            url: image-tagging-overview.md
 
 # Card 2
   - title: Get started
@@ -61,7 +61,7 @@ landingContent:
             url: create-local-model.md
 
 # Card 3
-  - title: Services and features
+  - title: Syntex services
     linkLists:
       - linkListType: overview
         links:
@@ -73,14 +73,10 @@ landingContent:
             url: document-understanding-overview.md
           - text: Content assembly
             url: content-assembly.md
+          - text: Image tagging
+            url: image-tagging-overview.md
           - text: Optical character recognition
             url: ocr-overview.md
-          - text: Annotations
-            url: annotations.md
-          - text: Content processing
-            url: content-processing-overview.md
-          - text: Content query
-            url: metadata-search.md
 
 # Card 4
   - title: Extensibility
@@ -108,7 +104,22 @@ landingContent:
           - text: Assessment tool
             url: adoption-assessment-tool.md
 
-    # Card 6
+# Card 6
+  - title: Other features
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Annotations
+            url: annotations.md
+          - text: Content query
+            url: metadata-search.md
+          - text: Content processing
+            url: content-processing-overview.md
+          - text: Solution accelerators
+            url: site-templates.md
+
+
+    # Card 7
   - title: Get support
     linkLists:
       - linkListType: overview

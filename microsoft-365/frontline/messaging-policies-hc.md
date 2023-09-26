@@ -1,8 +1,8 @@
 ---
 title: Secure Messaging for healthcare organizations using Microsoft Teams
-author: samanro
-ms.author: samanro
-manager: pamgreen
+author: lana-chin
+ms.author: heidip
+manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-frontline
@@ -19,7 +19,6 @@ ms.collection:
   - microsoftcloud-healthcare
   - m365-frontline
   - highpri
-  - tier2
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers

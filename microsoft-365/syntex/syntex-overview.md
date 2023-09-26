@@ -13,6 +13,7 @@ search.appverid:
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
+    - essentials-overview
 ms.localizationpriority:  medium
 description: Learn about the capabilities, services, and features in Microsoft Syntex.
 ---
@@ -52,9 +53,7 @@ You can dive deeper into your content to truly understand it, and you can turn t
 
 :::row:::
    :::column span="3":::
-      With Syntex, you can automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, and correspondence.
-
-      You can do all these tasks quicker, more consistently, and with fewer errors in Syntex.
+      With Syntex, you can automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, and correspondence. You can do all these tasks quicker, more consistently, and with fewer errors in Syntex.
    :::column-end:::
    :::column span="":::
       ![Image of generic document icon.](../media/content-understanding/document-assembly-image.png)
@@ -108,23 +107,54 @@ Both structured and freeform models use Microsoft Power Apps AI Builder to creat
 
 [Learn more about unstructured models in Microsoft Syntex.](document-understanding-overview.md)
 
+### Image tagging
+
+:::row:::
+   :::column span="3":::
+      Use image tagging in Syntex to find and manage images in SharePoint document libraries. Syntex automatically tags images with descriptive keywords using AI. These keywords are stored in a managed metadata column, making it easier to search, sort, filter, and manage the images.
+   :::column-end:::
+   :::column span="":::
+      ![Image of generic image tagging icon.](../media/content-understanding/image-tagging-image.png) 
+   :::column-end:::
+:::row-end:::
+
+[Learn more about image tagging in Microsoft Syntex.](image-tagging-overview.md)
+
+### Taxonomy tagging
+
+:::row:::
+   :::column span="":::
+      ![Image of generic taxonomy tagging icon.](../media/content-understanding/taxonomy-tagging-image.png)
+   :::column-end:::
+   :::column span="3":::
+      Use taxonomy tagging in Syntex to find and manage terms in SharePoint document libraries. Syntex automatically tags documents with terms or terms sets configured in your taxonomy store using AI. These terms are stored in a managed metadata column, making the documents easier to search, sort, filter, and manage.
+   :::column-end:::
+:::row-end:::
+
+[Learn more about taxonomy tagging in Microsoft Syntex.](taxonomy-tagging-overview.md)
+
 ### Optical character recognition
 
 :::row:::
    :::column span="3":::
-      The optical character recognition (OCR) service in Syntex lets you extract printed or handwritten text from images. Syntex automatically scans the image files, extracts the relevant text, and makes the text from the images available for search and indexing. This lets you quickly and accurately find the keywords and phrases you're looking for. 
+      The optical character recognition (OCR) service in Syntex lets you extract printed or handwritten text from images. Syntex automatically scans the image files, extracts the relevant text, and makes the text from the images available for search and indexing. This lets you quickly and accurately find the keywords and phrases you're looking for.
    :::column-end:::
    :::column span="":::
       ![Image of generic OCR icon.](../media/content-understanding/ocr-image.png)
    :::column-end:::
 :::row-end:::
 
-[Learn more about using the OCR service in Microsoft Syntex.](ocr.md)
+[Learn more about using the OCR service in Microsoft Syntex.](ocr-overview.md)
 
 ## Other features
 
 ### Annotations
 
+Use the annotations feature in Syntex to add notes, comment, and collaborate with others on your content in document libraries. You can use annotations without modifying the original files, so the original records are preserved.
+
+[Learn more about using annotations in Microsoft Syntex.](annotations.md)
+
+<!---
 :::row:::
    :::column span="":::
       ![Image of generic annotations icon.](../media/content-understanding/annotation-image.png)
@@ -133,16 +163,21 @@ Both structured and freeform models use Microsoft Power Apps AI Builder to creat
       Use the annotations feature in Syntex to add notes, comment, and collaborate with others on your content in document libraries. You can use annotations without modifying the original files, so the original records are preserved.
    :::column-end:::
 :::row-end:::
+--->
 
-[Learn more about using annotations in Microsoft Syntex.](annotations.md)
 
 ### Content query
 
+The content query feature in Syntex lets you perform specific metadata-based queries on SharePoint document libraries. You can make faster, more precise queries based on specific metadata column values, rather than just searching for keywords.
+
+[Learn more about how to search for metadata in document libraries in Microsoft Syntex.](metadata-search.md)
+
+<!---
 :::row:::
    :::column span="3":::
       The content query feature in Syntex lets you perform specific metadata-based queries on SharePoint document libraries.
 
-      You can make faster, more precise queries based on specific metadata column values, rather than just searching for keywords.    
+      You can make faster, more precise queries based on specific metadata column values, rather than just searching for keywords.
    :::column-end:::
    :::column span="":::
       ![Image of generic search icon.](../media/content-understanding/search-generic-image.png)
@@ -150,52 +185,68 @@ Both structured and freeform models use Microsoft Power Apps AI Builder to creat
 :::row-end:::
 
 This feature is useful when you have a specific piece of information you want to search for, such as when a document was last modified, a specific person associated with a file, or a specific file type.
-
-[Learn more about how to search for metadata in document libraries in Microsoft Syntex.](metadata-search.md)
-
-### Content compliance
-
-:::row:::
-   :::column span="":::
-      ![Image of generic compliance icon.](../media/content-understanding/compliance-image.png)
-   :::column-end:::
-   :::column span="3":::
-       Understanding your content allows for better compliance control and increases management and governance options for all your data. When content is properly tagged and labeled, you have better control over your data and can follow regulations more easily. Syntex helps you ensure compliance by using retention labels and sensitivity labels to manage your documents.
-   :::column-end:::
-:::row-end:::
-
-Learn more about how to apply [retention labels](apply-a-retention-label-to-a-model.md) and [sensitivity labels](apply-a-sensitivity-label-to-a-model.md) to models in Microsoft Syntex.
+--->
 
 ### Content processing
 
-:::row:::
-   :::column span="3":::
-      Syntex lets you build simple rules-driven actions in document libraries based on metadata. From a document library, you can create rules to automate tasks such as sending a notification when metadata changes in a file, when a new file is created in the library, or when files are moved or copied based on metadata extracted by Syntex models. 
-   :::column-end:::
-   :::column span="":::
-      ![Image of generic content processing icon.](../media/content-understanding/content-processing-image.png)
-   :::column-end:::
-:::row-end:::
+Syntex lets you build simple rules-driven actions in document libraries based on metadata. From a document library, you can create rules to automate tasks such as sending a notification when metadata changes in a file, when a new file is created in the library, or when files are moved or copied based on metadata extracted by Syntex models.
 
 [Learn more about content processing rules in Microsoft Syntex.](content-processing-overview.md)
 
-### Premium taxonomy services
-
+<!---
 :::row:::
    :::column span="":::
-      ![Image of generic taxonomy icon.](../media/content-understanding/taxonomy-image.png)
+      ![Image of generic content processing icon.](../media/content-understanding/content-processing-image.png)
    :::column-end:::
    :::column span="3":::
-      Having one or more Syntex licenses in your organization enables the following additional term store features for admins:<br><br>
-             
+      Syntex lets you build simple rules-driven actions in document libraries based on metadata. From a document library, you can create rules to automate tasks such as sending a notification when metadata changes in a file, when a new file is created in the library, or when files are moved or copied based on metadata extracted by Syntex models.
    :::column-end:::
 :::row-end:::
+--->
+
+### Solution accelerators
+
+SharePoint site templates for Microsoft Syntex are prebuilt, ready-to-deploy, and customizable. Use these templates to jumpstart a professional site to manage, process, and track the status of business documents in your organization.
+
+[Learn more about the contracts management and accounts payable accelerators.](site-templates.md)
+
+### Content compliance
+
+Understanding your content allows for better compliance control and increases management and governance options for all your data. When content is properly tagged and labeled, you have better control over your data and can follow regulations more easily. Syntex helps you ensure compliance by using retention labels and sensitivity labels to manage your documents.
+
+Learn more about how to apply [retention labels](apply-a-retention-label-to-a-model.md) and [sensitivity labels](apply-a-sensitivity-label-to-a-model.md) to models in Microsoft Syntex.
+
+<!---
+:::row:::
+   :::column span="3":::
+      Understanding your content allows for better compliance control and increases management and governance options for all your data. When content is properly tagged and labeled, you have better control over your data and can follow regulations more easily. Syntex helps you ensure compliance by using retention labels and sensitivity labels to manage your documents.
+   :::column-end:::
+   :::column span="":::
+      ![Image of generic compliance icon.](../media/content-understanding/compliance-image.png)
+   :::column-end:::
+:::row-end:::
+--->
+
+### Premium taxonomy features
+
+Benefit from the following additional term store features for admins:
 
 - [SKOS-based term set import](import-term-set-skos.md), which lets you import a term set using a SKOS-based format.
 
 - [Pushing enterprise content types to a hub site](push-content-type-to-hub.md), which also adds them to the associated sites and any newly created lists or libraries.
 
 - [Term store reports](term-store-analytics.md), which provides you with insights into published term sets and their use across your organization.
+
+<!---
+:::row:::
+   :::column span="":::
+      ![Image of generic taxonomy icon.](../media/content-understanding/taxonomy-image.png)
+   :::column-end:::
+   :::column span="3":::
+      Having one or more Syntex licenses in your organization enables the following additional term store features for admins:<br><br>
+   :::column-end:::
+:::row-end:::
+--->
 
 <!---<br><br>
 > [!div class="nextstepaction"]

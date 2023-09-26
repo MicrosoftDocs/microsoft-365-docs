@@ -7,7 +7,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: loop
 ms.reviewer: michalbr
-ms.date: 06/20/2023
+ms.date: 08/21/2023
 ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection: 
@@ -27,7 +27,7 @@ appliesto:
 Microsoft [Syntex repository services](https://devblogs.microsoft.com/microsoft365dev/introducing-syntex-repository-services-microsoft-365-superpowers-for-your-app/) powered by SharePoint platform stores all Loop app content. All Loop workspaces, pages, and components created in the Loop app are stored in a container in the Syntex repository service, which is designated for that specific workspace.
 
 > [!NOTE]
-> There are limited security and compliance capabilities available specifically for the Loop app.
+> There are limited [security and compliance capabilities](/microsoft-365/loop/loop-compliance-summary) available specifically for the Loop app.
 
 Separately, Loop components created outside of the Loop app in other Microsoft 365 apps (such as [Teams](https://support.microsoft.com/office/first-things-to-know-about-loop-components-in-microsoft-teams-ee2a584b-5785-4dd6-8a2d-956131a29c81), [Outlook](https://support.microsoft.com/office/use-loop-components-in-outlook-9b47c279-011d-4042-bd7f-8bbfca0cb136), [Whiteboard](https://support.microsoft.com/office/loop-components-in-whiteboard-c5f08f54-995e-473e-be6e-7f92555da347), [Word for the web](https://support.microsoft.com/office/use-loop-components-in-word-for-the-web-645cc20d-5c98-4bdb-b559-380c5a27c5e5)) are stored in the creator's OneDrive. For example, if User A creates a Loop component within a Teams chat with User B, that Loop component is stored in User A's OneDrive and is shared with User B.
 
@@ -53,6 +53,12 @@ When you share only a Loop page, you're giving users access to that specific pag
 
 Loop workspaces don't use Microsoft 365 groups for access management, instead they create a roster for access management.
 
+## eDiscovery support for Loop content stored in Loop workspaces
+
+Loop content (pages and components) created in the Loop app are discoverable and have eDiscovery workflow support using the Microsoft Purview tool. As mentioned above, these files are stored in [Syntex repository services](https://devblogs.microsoft.com/microsoft365dev/introducing-syntex-repository-services-microsoft-365-superpowers-for-your-app/) and are available for search and collection for both eDiscovery (Standard) and eDiscovery (Premium). Render in review and the HTML offline export format is supported on eDiscovery (Premium). You can also download and re-upload the files to any OneDrive to view them in their native format.
+
+A graph export API that can access Loop content stored in [Syntex repository services](https://devblogs.microsoft.com/microsoft365dev/introducing-syntex-repository-services-microsoft-365-superpowers-for-your-app/) is not yet available.
+
 ## Storage management after user departure
 
 ### In the Loop app
@@ -70,6 +76,12 @@ Loop components created outside of the Loop are stored in the OneDrive of the pe
 
 Admin management capabilities are not yet available to enumerate, manage, delete and recover Loop content in Syntex repository storage. Therefore, an admin cannot yet query for ownerless workspaces, directly manage the rosters for workspaces, or restore workspaces deleted by end-users.
 
+Content created in Loop workspaces are stored in [Syntex repository services](https://devblogs.microsoft.com/microsoft365dev/introducing-syntex-repository-services-microsoft-365-superpowers-for-your-app/) in the same location as your SharePoint Online tenant.
+
 ## Pricing and licensing model for Loop app
 
 Loop app is free during public preview. Post-preview pricing and licensing requirements for the Loop app are yet to be determined.
+
+## Related topics
+
+[Summary of compliance capabilities for Loop](/microsoft-365/loop/loop-compliance-summary)

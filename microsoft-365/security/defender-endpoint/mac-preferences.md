@@ -463,7 +463,7 @@ Specify whether to enable cloud-delivered protection the device or not. To impro
 
 #### Diagnostic collection level
 
-Diagnostic data is used to keep Microsoft Defender for Endpoint secure and up-to-date, detect, diagnose and fix problems, and also make product improvements. This setting determines the level of diagnostics sent by Microsoft Defender for Endpoint to Microsoft.
+Diagnostic data is used to keep Microsoft Defender for Endpoint secure and up to date, detect, diagnose and fix problems, and also make product improvements. This setting determines the level of diagnostics sent by Microsoft Defender for Endpoint to Microsoft.
 
 <br>
 
@@ -825,7 +825,7 @@ The following configuration profile (or, in case of JAMF, a property list that c
     <key>tamperProtection</key>
     <dict>
         <key>enforcementLevel</key>
-        <string>block</key>
+        <string>block</string>
     </dict>
 </dict>
 </plist>
@@ -1034,7 +1034,7 @@ The following templates contain entries for all settings described in this docum
     <key>tamperProtection</key>
     <dict>
         <key>enforcementLevel</key>
-        <string>block</key>
+        <string>block</string>
         <key>exclusions</key>
         <array>
         <dict>
@@ -1222,7 +1222,7 @@ The following templates contain entries for all settings described in this docum
                 <key>tamperProtection</key>
                 <dict>
                     <key>enforcementLevel</key>
-                    <string>block</key>
+                    <string>block</string>
                     <key>exclusions</key>
                     <array>
                     <dict>

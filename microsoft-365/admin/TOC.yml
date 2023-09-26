@@ -99,8 +99,6 @@
           href: multi-tenant/manage.md
     - name: Office 365 operated by 21Vianet
       items: 
-        - name: About Office 365 operated by 21Vianet
-          href: services-in-china/services-in-china.md
         - name: Download the Office app for Android for Office 365 operated by 21Vianet
           href: services-in-china/download-office-app-for-Android.md
         - name: Download the Office app for iOS for Office 365 operated by 21Vianet
@@ -229,6 +227,8 @@
           href: email/add-user-or-contact-to-distribution-list.md
         - name: Manage clutter for your organization
           href: email/configure-clutter.md
+        - name: Mailbox not found error
+          href: misc/mailbox-not-found-error.md
     - name: Manage domains
       items:
         - name: Add a domain
@@ -461,8 +461,6 @@
           href: security-and-compliance/increase-threat-protection.md
         - name: Turn on Idle session timeout
           href: manage/idle-session-timeout-web-apps.md
-        - name: Enable Modern Authentication for Office 2013
-          href: security-and-compliance/enable-modern-authentication.md
         - name: A guide to GDPR compliance
           href: security-and-compliance/gdpr-compliance.md
     - name: Manage devices and app data
@@ -489,8 +487,6 @@
               href: basic-mobility-security/manage-enrolled-devices.md
             - name: Enroll your mobile device
               href: basic-mobility-security/enroll-your-mobile-device.md
-            - name: Privacy and security
-              href: basic-mobility-security/privacy-and-security.md
             - name: Frequently asked questions
               href: basic-mobility-security/frequently-asked-questions.yml
             - name: Wipe mobile devices

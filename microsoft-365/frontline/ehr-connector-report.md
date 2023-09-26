@@ -1,8 +1,8 @@
 ---
 title: Microsoft Teams EHR connector Virtual Appointments report
-author: LanaChin
-ms.author: v-lanachin
-manager: samanro
+author: lana-chin
+ms.author: heidip
+manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.service: microsoft-365-frontline
@@ -21,7 +21,7 @@ ms.collection:
   - m365solution-scenario
   - m365-frontline
   - highpri
-  - tier2
+  - m365-virtual-appointments
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
@@ -76,5 +76,5 @@ Choose **View details** to view the report. To purchase more licenses, choose **
 
 ## Related articles
 
-- [Virtual Appointments with Teams - Integration into Cerner EHR](ehr-admin-cerner.md)
+- [Virtual Appointments with Teams - Integration into Oracle Health EHR](ehr-admin-oracle-health.md)
 - [Virtual Appointments with Teams - Integration into Epic EHR](ehr-admin-epic.md)

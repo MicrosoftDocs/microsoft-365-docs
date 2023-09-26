@@ -18,10 +18,11 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
-- VSBFY23
-- MSStore_Link
-- AdminSurgePortfolio
-- AdminTemplateSet
+  - VSBFY23
+  - MSStore_Link
+  - AdminSurgePortfolio
+  - AdminTemplateSet
+  - has-azure-ad-ps-ref
 search.appverid:
 description: "Sign in to your Microsoft 365 admin account to set some individual user passwords to never expire by using Azure AD PowerShell."
 ---
@@ -44,7 +45,7 @@ This guide applies to other providers, such as Intune and Microsoft 365, which a
 Use the `Connect-MgGraph` command to sign in with the required scopes. You need to sign in with an admin account to consent to the required scopes.
 
 ```powershell
-Connect-MgGraph -Scopes "User.Read.All","Group.ReadWrite.All"
+Connect-MgGraph -Scopes "User.ReadWrite.All","Group.ReadWrite.All"
  ```
 The command prompts you to go to a web page to sign in using a device code. Once you've done that, the command indicates success with a `Welcome To Microsoft Graph!` message. You only need to sign in once per session.
 
@@ -96,13 +97,13 @@ Run one of the following commands:
 - To set the password of one user to never expire, run the following cmdlet by using the UPN or the user ID of the user:
 
     ```powershell
-    Update-MgUser -UserId <user ID> -PasswordPolicies DisablePasswordExpiration -PassThru
+    Update-MgUser -UserId <user ID> -PasswordPolicies DisablePasswordExpiration
     ```
 
 - To set the passwords of all the users in an organization to never expire, run the following cmdlet:
 
     ```powershell
-    Get-MGuser -All | Update-MgUser -PasswordPolicies DisablePasswordExpiration -PassThru
+    Get-MGuser -All | Update-MgUser -PasswordPolicies DisablePasswordExpiration
     ```
 
 > [!WARNING]
@@ -115,13 +116,13 @@ Run one of the following commands:
 - To set the password of one user so that the password expires, run the following cmdlet by using the UPN or the user ID of the user:
 
     ```powershell
-    Update-MgUser -UserId <user ID> -PasswordPolicies None -PassThru
+    Update-MgUser -UserId <user ID> -PasswordPolicies None
     ```
 
 - To set the passwords of all users in the organization so that they expire, use the following cmdlet:
 
     ```powershell
-    Get-MGuser -All | Update-MgUser -PasswordPolicies None -PassThru
+    Get-MGuser -All | Update-MgUser -PasswordPolicies None
     ```
 
 ## Related content

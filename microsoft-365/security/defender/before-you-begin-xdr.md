@@ -19,7 +19,7 @@ ms.collection:
   - tier1
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 11/17/2022
+ms.date: 09/18/2023
 ---
 
 # Before you begin
@@ -44,7 +44,14 @@ Aside from the requirements stated previously, to get Defender Experts for XDR c
 
 Defender Experts for XDR is a managed extended detection and response (XDR) service. To get native XDR coverage, we recommend deploying the full Microsoft 365 Defender suite.
 
-As part of the service's built-in [Microsoft Defender Experts for Hunting](defender-experts-for-hunting.md), you're also assigned two **Ask Defender Experts** credits on the first of each month, which you may use to submit questions. You can still submit inquiries beyond the initial number of allocated credits. Unused credits expire 90 days from date of assignment or at the end of the subscription term, whichever is shortest.
+### Server coverage
+
+Defender Experts for XDR also covers servers—whether on premises or on a hyperscale cloud service provider—that have Defender for Endpoint deployed on them with a Microsoft Defender for Server license. For Defender Experts coverage, a server is considered as a user account for billing. The service doesn’t cover Microsoft Defender for Cloud.
+[Learn more about specific hardware and software requirements](/microsoft-365/security/defender-endpoint/minimum-requirements).
+
+### Ask Defender Experts
+
+As part of the service's built-in [Microsoft Defender Experts for Hunting](defender-experts-for-hunting.md), you're also assigned 10 **Ask Defender Experts** credits, which you can use to submit questions, at the start of each calendar quarter. Unused credits from the current quarter roll up to the next one. You can use up to 20 credits only per quarter. All unused credits expire by the end of the calendar year or at the end of your subscription term, whichever comes first.
 
 [Learn more about Microsoft's commercial licensing terms](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/MCA).
 
@@ -65,7 +72,7 @@ The following sections enumerate additional information about the service's data
 
 All data used for hunting from existing Defender services will continue to reside in the customer's original Microsoft 365 Defender service storage location. [Learn more](/microsoft-365/enterprise/o365-data-locations).
 
-Defender Experts for XDR operational data, such as case tickets and analyst notes, are generated and stored in a Microsoft data center in the US region for the length of the service, irrespective of the Microsoft 365 Defender service storage location. Data generated for the reporting dashboard is stored in customer's Microsoft 365 Defender service storage location. Reporting data and operational data will be retained for a grace period of no less than 90 days after a customer leaves the service.
+Defender Experts for XDR operational data, such as case tickets and analyst notes, are generated and stored in a Microsoft data center in the US region for the length of the service, irrespective of the Microsoft 365 Defender service storage location. Data generated for the reporting dashboard is stored in customer's Microsoft 365 Defender service storage location. Reporting data and operational data will be retained for a grace period of no more than 90 days after a customer’s subscription expires. If the customer terminates their subscription, data will be deleted within 30 days.
 
 Microsoft experts hunt over [advanced hunting logs](advanced-hunting-schema-tables.md) in Microsoft 365 Defender advanced hunting tables. The data in these tables depend on the set of Defender services the customer is enabled for (for example, Defender for Endpoint, Defender for Office 365, Defender for Identity, Defender for Cloud Apps, and Azure AD). Experts also use a large set of internal threat intelligence data to inform their hunting and automation.
 

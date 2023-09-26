@@ -2,10 +2,10 @@
 title: Frontline team collaboration
 description: Learn how your frontline teams can communicate and collaborate effectively within or across locations.
 ms.topic: conceptual
-author: daisyfell
-ms.author: daisyfeller
+author: lana-chin
+ms.author: heidip
+manager: serdars
 audience: admin
-manager: pamgreen
 f1.keywords:
 - NOCSH
 ms.service: microsoft-365-frontline
@@ -15,7 +15,6 @@ ms.collection:
   - highpri
   - m365solution-frontline
   - m365solution-scenario
-  - tier1
 ms.localizationpriority: high
 search.appverid: MET150
 searchScope:

@@ -60,6 +60,9 @@ Automated investigation and remediation (AIR) capabilities in Microsoft Defender
 
 - You can keep your default automation settings, or change them according to your organizational needs. To change your settings, [set your level of automation](/microsoft-365/security/defender-endpoint/configure-automated-investigations-remediation#set-up-device-groups).
 
+> [!NOTE]
+> [Defender for Business](../defender-business/mdb-overview.md) depends on real-time protection for automatic investigation. Real-time protection must be enabled and in active mode to enable automatic investigation.
+
 ## Next steps
 
 - [Configure automated investigation and remediation capabilities in Defender for Endpoint](configure-automated-investigations-remediation.md)

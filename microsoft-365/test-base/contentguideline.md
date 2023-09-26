@@ -88,11 +88,14 @@ Validation is necessary to properly diagnose where errors occur during a test ru
 
 > [!IMPORTANT]
 > **Avoid the following:**
-> Scripts should not reboot the machine, if a reboot is necessary please specify this during the upload of your scripts.  
+> - Scripts should not reboot the machine, if a reboot is necessary please specify this during the upload of your scripts.  
+> - Do not modify the DNS Suffix Search List in Windows IP Configuration. 
 > [!IMPORTANT]
 > The maximum disc space available is 127 Gb. Packages that consume more than this amount of space will not be executed.  
 > [!IMPORTANT]
 > Packages that interact with the Windows UI must have the Autologon Credentials enabled to execute properly.
+> [!IMPORTANT]
+> Scripts within packages all have an execution time limit of 60 mins. Scripts execution after 60 minutes would time out.
 
 ## 3. Log collection
 

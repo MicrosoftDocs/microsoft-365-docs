@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
-ms.date: 07/01/2022
+ms.date: 07/06/2023
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -13,6 +13,7 @@ ms.custom: admindeeplinkSPO
 ms.collection: 
     - enabler-strategic
     - m365initiative-syntex
+    - essentials-how-to
 ms.localizationpriority:  medium
 description: Learn how to create a content center in Microsoft Syntex.
 ---

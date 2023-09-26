@@ -1,8 +1,6 @@
 ---
 title: What's new in Microsoft Secure Score
 description: Describes what new changes have happened to Microsoft Secure Score in the Microsoft 365 Defender portal.
-keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, Microsoft 365 Defender portal
-ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
   - NOCSH
@@ -19,10 +17,7 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.custom: 
-  - seo-marvel-apr2020
-  - seo-marvel-jun2020
-ms.date: 02/16/2021
+ms.date: 09/13/2023
 ---
 
 # What's new in Microsoft Secure Score
@@ -34,6 +29,58 @@ To make Microsoft Secure Score a better representative of your security posture,
 The more improvement actions you take, the higher your Secure Score will be. For more information, see [Microsoft Secure Score](microsoft-secure-score.md).
 
 Microsoft Secure Score can be found at <https://security.microsoft.com/securescore> in the [Microsoft 365 Defender portal](microsoft-365-defender-portal.md).
+
+## August 2023
+
+The following recommendations have been added as Microsoft Secure Score improvement actions:
+
+**Microsoft Information Protection:**
+
+- Ensure Microsoft 365 audit log search is enabled
+
+**Microsoft Exchange Online:**
+
+- Ensure modern authentication for Exchange Online is enabled
+- Ensure Exchange Online Spam Policies are set to notify administrators
+- Ensure all forms of mail forwarding are blocked and/or disabled
+- Ensure MailTips are enabled for end users
+- Ensure mailbox auditing for all users is enabled
+- Ensure additional storage providers are restricted in Outlook on the web
+
+**Azure Active Directory:**
+
+To see the following new Azure Active Directory controls the Office 365 connector in Microsoft Defender for Cloud Apps must be turned on in the App connectors settings page.
+
+- Ensure password protection is enabled for on-prem Active Directory
+- Ensure 'LinkedIn account connections' is disabled
+
+**SharePoint:**
+
+- Ensure Safe Links for Office Applications is enabled
+- Ensure Safe Attachments policy is enabled
+- Ensure that an anti-phishing policy has been created
+
+To see the following new SharePoint controls the Office 365 connector in Microsoft Defender for Cloud Apps must be turned on in the App connectors settings page.
+
+- Ensure SharePoint external sharing is managed through domain allow lists / block lists
+- Block OneDrive for Business sync from unmanaged devices
+
+### Microsoft Secure Score integration with Microsoft Lighthouse 365
+
+Microsoft 365 Lighthouse helps Managed Service Providers (MSPs) grow their business and deliver services to customers at scale from a single portal. Lighthouse allows customers standardize configurations, manage risk, identify artificial intelligence (AI)-driven sales opportunities, and engage with customers to help them maximize their investment in Microsoft 365.
+
+We've now integrated Microsoft Secure Score into Microsoft 365 Lighthouse. This integration provides an aggregate view of the Secure Score across all managed tenants, as well as Secure Score details for each individual tenant. Access to Secure Score is a available from a new card on the Lighthouse homepage or by selecting a tenant on the Lighthouse Tenants page.
+
+> [!NOTE]
+> The integration with Microsoft Lighthouse 365 is available to Microsoft partners who use the Cloud Solution Provider (CSP) program to manage customer tenants.
+
+### Microsoft Secure Score permissions integration with Microsoft 365 Defender Unified role-based access control (RBAC) is now in Public Preview
+
+Previously, only Azure Active Directory global roles (such as Global Administrators) could access Microsoft Secure Score. Now, you'll be able to control access and grant granular permissions for the Microsoft Secure Score experience as part of the Microsoft 365 Defender Unified RBAC model.  
+
+You can add the new permission and choose the data sources the user has access to by selecting the **Security posture** permissions group when creating the role. For more information, see [Create custom roles with Microsoft 365 Defender Unified RBAC](./create-custom-rbac-roles.md). Users will see Secure Score data for the data sources they have permissions to.
+
+A new data source **Secure Score – Additional data source** is also available.  Users with permissions to this data source, will have access to additional data within the Secure score dashboard. For more information on additional data sources, see [Products included in Secure Score](./microsoft-secure-score.md#products-included-in-secure-score).
 
 ## July 2023
 

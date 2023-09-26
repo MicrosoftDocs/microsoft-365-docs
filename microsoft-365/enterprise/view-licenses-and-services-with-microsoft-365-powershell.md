@@ -15,11 +15,12 @@ ms.collection:
 - Ent_O365
 f1.keywords:
 - CSH
-ms.custom: 
-- Ent_Office_Other
-- O365ITProTrain
-- LIL_Placement
-- PowerShell
+ms.custom:
+  - Ent_Office_Other
+  - O365ITProTrain
+  - LIL_Placement
+  - PowerShell
+  - has-azure-ad-ps-ref
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 
 description: "Explains how to use PowerShell to view information about the licensing plans, services, and licenses that are available in your Microsoft 365 organization."

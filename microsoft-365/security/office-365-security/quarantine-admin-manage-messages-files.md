@@ -19,7 +19,7 @@ ms.custom:
 description: Admins can learn how to view and manage quarantined messages for all users in Exchange Online Protection (EOP). Admins in organizations with Microsoft Defender for Office 365 can also manage quarantined files in SharePoint Online, OneDrive for Business, and Microsoft Teams.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 7/7/2023
+ms.date: 9/13/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
@@ -61,7 +61,7 @@ Watch this short video to learn how to manage quarantined messages as an admin.
     - _Submit messages from quarantine to Microsoft_:  Membership in the **Security Administrator** role.
     - _Read-only access to quarantined messages for all users_: Membership in the **Global Reader** or **Security Reader** roles.
 
-- Quarantined messages and files are retained for a default period of time based on why they were quarantined. After the retention period expires, the messages are automatically deleted and aren't recoverable. For more information, see [Quarantined email messages in EOP and Defender for Office 365](quarantine-about.md).
+- Quarantined messages and files are retained for a default period of time based on why they were quarantined. After the retention period expires, the messages are automatically deleted and aren't recoverable. For more information, see [Quarantine retention](quarantine-about.md#quarantine-retention).
 
 ## Use the Microsoft 365 Defender portal to manage quarantined email messages
 
@@ -245,6 +245,11 @@ If you don't release or remove a message, it's automatically deleted from quaran
 - When you select individual original recipients to receive the released message, you can select only recipients who haven't already received the released message.
 - Members of the **Security Administrators** role group can see and use the **Submit the message to Microsoft to improve detection** and **Allow email with similar attributes** options.
 - Users can report false positives to Microsoft from quarantine, depending on the value of the **Reporting from quarantine** setting in [user reported settings](submissions-user-reported-messages-custom-mailbox.md).
+
+> [!TIP]
+> - If a message is released from quarantine and then routed to a third party security service or device before delivery to the original recipient, there will be some content loss when the message arrives at the recipient's mailbox.
+> - Admins can use [message trace](message-trace-scc.md) to determine if a released message was delivered to the recipient's Inbox.
+> - Third party anti-virus solutions can prevent a released email message from making it to the recipient's Inbox.
 
 After you select the message, use either of the following methods to release it:
 
@@ -436,6 +441,27 @@ When you select multiple quarantined messages on the **Email** tab by selecting 
 - [Download email from quarantine](#download-email-from-quarantine)
 
 :::image type="content" source="../../media/quarantine-message-bulk-actions.png" alt-text="The available actions when selecting multiple messages on the Email tab in quarantine." lightbox="../../media/quarantine-message-bulk-actions.png":::
+
+### Find who deleted a quarantined message
+
+By default, many security policy verdicts allow users to delete their quarantined messages (messages where they're a recipient). For more information, see the table at [Manage quarantined messages and files as a user](quarantine-end-user.md).
+
+Admins can search the audit log to find events for messages that were deleted from quarantine by using the following procedures:
+
+1. In the Defender portal at <https://security.microsoft.com>, go to **Audit**. Or, to go directly to the **Audit** page, use <https://security.microsoft.com/auditlogsearch>.
+
+   > [!TIP]
+   > You can also get to the **Audit** page in the Microsoft Purview compliance portal at <https://compliance.microsoft.com/auditlogsearch>
+
+2. On the **Audit** page, verify that the **New Search** tab is selected, and then configure the following settings:
+
+   - **Date and time range (UTC)**
+   - **Activities - friendly names**: Click in the box, start typing "quarantine" in the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box that appears, and then select **Deleted Quarantine message** from the results.
+   - **Users**: If know who deleted the message from quarantine, you can further filter the results by user.
+
+3. When you're finished entering the search criteria, select **Search** to generate the search.
+
+For complete instructions for audit log searches, see [Audit New Search](/purview/audit-new-search).
 
 ## Use the Microsoft 365 Defender portal to manage quarantined files in Defender for Office 365
 

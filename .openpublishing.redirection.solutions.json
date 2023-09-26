@@ -77,13 +77,33 @@
      },
      {
         "source_path": "microsoft-365/solutions/end-life-cycle-groups-teams-sites-yammer.md",
-        "redirect_url": "/microsoft-365/solutions/end-life-cycle-groups-teams-sites-viva-engage.md",
+        "redirect_url": "/microsoft-365/solutions/end-life-cycle-groups-teams-sites-viva-engage",
         "redirect_document_id": false
       },
      {
         "source_path":"microsoft-365/solutions/information-protection-deploy-govern.md",
         "redirect_url":"/microsoft-365/solutions/data-privacy-protection",
         "redirect_document_id":false
+     },
+     {
+        "source_path":"microsoft-365/solutions/groups-services-interactions.md",
+        "redirect_url":"/microsoft-365/solutions/groups-sharepoint-teams-governance",
+        "redirect_document_id":false
+     },
+     {
+        "source_path":"microsoft-365/solutions/groups-teams-compliance-governance.md",
+        "redirect_url":"/microsoft-365/solutions/groups-teams-access-governance",
+        "redirect_document_id":false
+     },
+     {
+        "source_path":"microsoft-365/solutions/groups-teams-communication-governance.md",
+        "redirect_url":"/microsoft-365/solutions/groups-teams-access-governance",
+        "redirect_document_id":false
+     },
+     {
+      "source_path":"microsoft-365/solutions/limit-guest-sharing-to-specific-organization.md",
+      "redirect_url":"/microsoft-365/solutions/trusted-vendor-onboarding",
+      "redirect_document_id":false
      },
      {
         "source_path":"microsoft-365/solutions/information-protection-deploy-monitor-respond.md",

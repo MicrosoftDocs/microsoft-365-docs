@@ -1,9 +1,9 @@
 ---
 title: Tailor Teams apps for your frontline workers
-author: samanro
-ms.author: samanro
+author: lana-chin
+ms.author: heidip
+manager: serdars
 ms.reviewer: aaglick
-manager: pamgreen
 ms.topic: how-to
 audience: admin
 ms.service: microsoft-365-frontline
@@ -14,7 +14,7 @@ ms.collection:
   - M365-collaboration
   - m365-frontline
   - highpri
-  - tier2
+  - essentials-manage
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
