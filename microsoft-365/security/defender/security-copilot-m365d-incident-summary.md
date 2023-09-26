@@ -32,9 +32,10 @@ ms.date: 10/10/2023
 
 - Microsoft 365 Defender
 
-[!INCLUDE [Prerelease](../includes/prerelease.md)]
+> [!IMPORTANT]
+> The information in this article only applies to the Microsoft Security Copilot Early Access Program, an invite-only paid preview program for commercial customers. Some information in this article relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-Microsoft 365 Defender applies the capabilities of [Microsoft Security Copilot](/copilot/microsoft-365-copilot-overview.md) to summarize incidents, delivering impactful information and insights to simplify investigation tasks. Attack investigation is a crucial step for incident response teams to successfully defend an organization against further damage from a cyber threat. Investigations can oftentimes be time-consuming. Incident response teams need to understand how the attack happened, sort through numerous alerts, identify which assets and entities are involved, and assess the scope and impact of an attack.
+Microsoft 365 Defender applies the capabilities of [Security Copilot](/copilot/microsoft-365-copilot-overview.md) to summarize incidents, delivering impactful information and insights to simplify investigation tasks. Attack investigation is a crucial step for incident response teams to successfully defend an organization against further damage from a cyber threat. Investigations can oftentimes be time-consuming. Incident response teams need to understand how the attack happened, sort through numerous alerts, identify which assets and entities are involved, and assess the scope and impact of an attack.
 
 Incident responders can easily gain the right context to investigate and remediate incidents through Microsoft 365 Defender’s correlation capabilities and Security Copilot’s AI-powered data processing and contextualization. With an incident summary, responders can quickly get important information to help in investigation.
 
@@ -69,7 +70,7 @@ To summarize an incident:
 
 ## Managing feedback
 
-You can validate or report the results provided by Security Copilot. Validating and reporting results enable Security Copilot to continuously improve delivery of more accurate answers in the future.
+You can validate or report the results provided by Security Copilot. Validating and reporting results enable Security Copilot to continuously improve delivery of more accurate answers.
 
 To provide feedback:
 
