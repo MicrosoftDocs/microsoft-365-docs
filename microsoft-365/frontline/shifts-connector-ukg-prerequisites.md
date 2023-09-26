@@ -24,11 +24,9 @@ ms.date: 3/23/2023
 
 ## Overview
 
-The [Microsoft Teams Shifts connector for UKG Dimensions](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-dimensions) (Preview) enables you to integrate the Shifts app in Microsoft Teams with UKG Dimensions. Your frontline workers can seamlessly view and manage their schedules in UKG Dimensions from within Shifts.
+The [Microsoft Teams Shifts connector for UKG Dimensions](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-dimensions) (Preview) enables you to integrate the Shifts app in Microsoft Teams with your UKG Dimensions workforce management (WFM) system. Your frontline workers can seamlessly view and manage their schedules in UKG Dimensions from within Shifts.
 
 You can use the [Shifts connector wizard](shifts-connector-wizard-ukg.md) (Preview) in the Microsoft 365 admin center or [PowerShell](shifts-connector-ukg-powershell-setup.md) to create a connection and connection instances. After they're set up, you can manage them in the Microsoft 365 admin center or by using PowerShell.
-
-<!--This article gives you an overview of prerequisites, configuration tasks to complete, and important concepts to keep in mind, before you use the wizard or PowerShell to integrate Shifts in Teams with UKG Dimensions.-->
 
 This article lists requirements, prerequisites, and configuration tasks that you must complete before you use the wizard or PowerShell to create a connection. It also gives you an overview of how to set up your teams in Teams based on your UKG Dimensions organizational structure.
 
@@ -123,7 +121,7 @@ For guidance on creating frontline teams, see [How to find the best frontline te
 > [!NOTE]
 > This step applies only if you're running the wizard to create a connection. If you're using PowerShell to create a connection, the PowerShell script removes existing schedules from teams for you.
 
-If a team has an existing schedule that was created in Shifts, follow these steps to remove schedule entities from the team before you map a UKG Dimensions location (also called an instance) to it. Otherwise, you'll see duplicate shifts.
+If a team has an existing schedule that was created in Shifts, follow these steps to remove schedule entities from the team before you map a UKG Dimensions location (also called a WFM instance) to it. Otherwise, you'll see duplicate shifts.
 
 Use PowerShell to remove schedule entities from teams.
 
