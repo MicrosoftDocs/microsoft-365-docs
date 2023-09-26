@@ -157,10 +157,6 @@ You can configure anti-spam policies in the Microsoft 365 Defender portal or in 
      
   - **Intra-Organizational messages to take action on**: Controls whether spam filtering and the corresponding verdict actions are applied to internal messages (messages sent between users within the organization). The action that's configured in the policy for the specified spam filter verdicts is taken on messages sent between internal users. The available values are:
     - **Default**: This is the default value. This value is the same as selecting **High confidence phishing messages**.
-  
-      > [!NOTE]
-      > Currently, in U.S. Government organizations (Microsoft 365 GCC, GCC High, and DoD), the value **Default** is the same as selecting **None**.
-
     - **None**
     - **High confidence phishing messages**
     - **Phishing and high confidence phishing messages**
