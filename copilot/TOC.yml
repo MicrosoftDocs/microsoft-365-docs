@@ -10,7 +10,7 @@
         - name: Requirements for Microsoft 365 Copilot
           href: microsoft-365-copilot-requirements.md
         - name: Data, Privacy, and Security for Microsoft 365 Copilot
-          href: /DeployOffice/privacy/microsoft-365-copilot
+          href: microsoft-365-copilot-privacy.md
     - name: Deploy
       items: 
         - name: Enable users for Microsoft 365 Copilot
