@@ -137,54 +137,7 @@ Use PowerShell to remove schedule entities from teams.
 
 To learn more, see [Remove-CsTeamsShiftsScheduleRecord](/powershell/module/teams/remove-csteamsshiftsschedulerecord).
 
-<!--### Configure single sign-on
-
-Follow these steps to have UKG Dimensions enable SSO for your organization.
-
-#### Change user accounts to federated accounts
-
-Each person who uses the Shifts connector will need a federated account in UKG Dimensions.
-
-1. On the left menu in UKG Dimensions, go to **Maintenance** > **People information**.
-1. Open the user's profile.
-1. Under the **Employee** section, expand **Information**.
-1. Change the **Authentication Type** to **Federated**.
-1. Save your changes and repeat the process for all users that will use the connector.
-
-#### Allow Shifts SSO redirection URLs
-
-Configure the connector's redirection URL. This allows UKG Dimensions to redirect the user to the Shifts app in Teams as part of the SSO flow.
-
-1. Sign in to UKG Dimensions by using an account that has access to Application Setup.
-1. On the left menu, go to **Administration** > **Application Setup**.
-1. Then, go to **System Configuration** and choose **System Settings**.
-1. Select **Global Values**.
-1. In the **global.oAuth.authCode.redirection.uris** field, enter the value: "https://aka.ms/shifts/connector/ukgdimensions/auth".
-1. In the **global.oAuthToken.redirection.domain.whiteList** field, enter the value: "aka.ms".
-1. Select **Save**.
-
-<a name="remove_schedules"> </a>
-
-### Remove schedule entities from teams you want to map
-
-> [!NOTE]
-> Complete this step if you're mapping UKG Dimensions instances to existing teams that have schedule entities. If you're mapping to teams that don't have any schedules or if you've already created new teams to map to, you can skip this step.
-
-Use PowerShell to remove schedule entities from teams.
-
-1. [Install the PowerShell modules and set up your PowerShell environment](shifts-connector-ukg-powershell-manage.md#set-up-your-environment) (if you haven't already).
-
-1. Run the following command:
-
-    ```powershell
-    Remove-CsTeamsShiftsScheduleRecord -TeamId <Teams team ID> -DateRangeStartDate <start time> -DateRangeEndDate <end time> -ClearSchedulingGroup:$false -EntityType <the scenario entities that you want to remove, the format is @(scenario1, scenario2, ...)> -DesignatedActorId <Teams team owner ID>
-    ```
-
-    To get a list of scenarios for the `EntityType` parameter, run [Get-CsTeamsShiftsConnectionConnector](/powershell/module/teams/get-csteamsshiftsconnectionconnector). Schedule data will be removed for the date and time range that you specify.
-
-To learn more, see [Remove-CsTeamsShiftsScheduleRecord](/powershell/module/teams/remove-csteamsshiftsschedulerecord).-->
-
-## Roles and permissions in Teams and their impact on Shifts
+<!--## Roles and permissions in Teams and their impact on Shifts-->
 
 ## Understand how your UKG Dimensions organizational structure influences Teams and Shifts setup
 
@@ -229,14 +182,7 @@ In this scenario, the UKG Dimensions location structure looks something like thi
 |    4|Personal shopper |Job type|
 |    4|Beauty advisor |Job type|
 
-<!--Based on the location structure, UKG Dimensions would provide the following information.-->
 Here's how frontline managers (FLM) and frontline workers (FLW) are set up in the location structure in UKG Dimensions. The table lists each workers' primary job and who they report to.
-
-<!--|UKG Dimensions location|Users|Primary job|Reports to|
-|---------|---------|---------|---------|
-|Contoso/Retail/Central London/Soho|FLW1, FLW2<br>FLW3, FLW4<br>FLW5, FLW6, FLW7<br>FLW8, FLW9, FLW10|Beauty advisor<br>Leather goods sales associate<br>Sales associate<br>Personal shopper|FLM1|
-|Contoso/Retail/Central London/Covent Garden|FLW11, FLW12, FLW13, FLW14<br>FLW15, FLW16|Leather goods sales associate<br>Sales associate|FLM2|
-|Contoso/Retail/Central London/Chelsea|FLW17, FLW18, FLW19, FLW20<br>FLW21, FLW21, FLW23<br>FLW24|Sales associate<br>Personal shopper<br>Beauty advisor|FLM3|-->
 
 |UKG Dimensions location|Users|Primary job|Reports to|
 |---------|---------|---------|---------|
@@ -263,14 +209,6 @@ In this scenario, the IT admin organizes teams in Teams as follows.
     |Chelsea Store|FLW1, FLW5, FLW15, FLW16, FLW17|FLM3|
 
     Keep in mind that FLW1 and FLW5 are added to all teams for the store locations that they're allowed to work at. The other frontline workers aren't allowed to work at other stores, and are added only to the team that represents their primary job location.
-
-<!--Here's how the team structure looks like for each store in the Central London Area.x
-
-In this scenario, the admin adds team members 
-
-- FLW1 is added as a member of the Soho Store team and Chelsea Store team.
-- FLW2 is added as a member of the Soho Store team, Covent Garden Store team, and Chelsea Store team.
-- The other frontline workers aren't allowed to work at other stores so they are added to one team based on the correponding UKG Dimensions location.-->
 
 #### What does this mean when I run the Shifts connector wizard?
 
