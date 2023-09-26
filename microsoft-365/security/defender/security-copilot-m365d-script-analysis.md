@@ -24,14 +24,16 @@ search.appverid:
 ms.date: 10/10/2023
 ---
 
-# Analyze scripts and codes with Security Copilot in Microsoft 365 Defender
+# Analyze scripts and codes with Microsoft Security Copilot in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
+
 - Microsoft 365 Defender
 
-[!INCLUDE [Prerelease](../includes/prerelease.md)]
+> [!IMPORTANT]
+> The information in this article only applies to the Microsoft Security Copilot Early Access Program, an invite-only paid preview program for commercial customers. Some information in this article relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 Through AI-powered investigation capabilities from [Security Copilot](/copilot/microsoft-365-copilot-overview.md) embedded in Microsoft 365 Defender, security teams can speed up their analysis of malicious or suspicious scripts and codes within PowerShell, batch, and bash.
 
@@ -71,17 +73,19 @@ In the device timeline view, select an event to inspect. In the process tree sho
 
 ## Managing feedback
 
-You can validate or report the analysis results provided by Security Copilot. Validating and reporting results enable Security Copilot to further learn and deliver more accurate results in the future.
+You can validate or report the analysis results provided by Security Copilot. Validating and reporting results enable Security Copilot to improve and deliver more accurate results in the future.
 
 [Follow these steps to provide feedback](security-copilot-m365d-incident-summary.md#managing-feedback).
 
 ## Next steps
-- [Summarize an incident](security-copilot-m365d-incident-summary.md) with Security Copilot in Microsoft 365 Defender
-- Respond to incidents with Security Copilot in Microsoft 365 Defender
-- [Create an incident report](security-copilot-m365d-create-incident-report.md) with Security Copilot in Microsoft 365 Defender
+
+- [Summarize an incident](security-copilot-m365d-incident-summary.md)
+- [Respond to incidents using guided responses](security-copilot-m365d-guided-response.md)
+- [Create an incident report](security-copilot-m365d-create-incident-report.md)
+- Search for threats
 
 ## See also
 -	[Security Copilot FAQ](/copilot/rai-faqs-security-copilot.md)
--	[Learn about Security Copilot features in Microsoft 365 Defender](security-copilot-in-microsoft-365-defender.md)
+- [Learn about other Security Copilot embedded experiences](/copilot/experiences-security-copilot.md)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

@@ -2,6 +2,37 @@
 
 
 
+## Week of September 18, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 9/18/2023 | [Use the Virtual Appointments app in Microsoft Teams](/microsoft-365/frontline/virtual-appointments-app?view=o365-worldwide) | modified |
+| 9/18/2023 | [Virtual Appointments with Microsoft Teams](/microsoft-365/frontline/virtual-appointments?view=o365-worldwide) | modified |
+| 9/18/2023 | [Edit or delete roles Microsoft 365 Defender Unified role-based access control (RBAC)](/microsoft-365/security/defender/edit-delete-rbac-roles?view=o365-worldwide) | modified |
+| 9/18/2023 | [Microsoft 365 network connectivity test tool](/microsoft-365/enterprise/office-365-network-mac-perf-onboarding-tool?view=o365-worldwide) | modified |
+| 9/18/2023 | [Order and precedence of email protection](/microsoft-365/security/office-365-security/how-policies-and-protections-are-combined?view=o365-worldwide) | modified |
+| 9/19/2023 | [Resources for Microsoft Defender for Endpoint for mobile devices](/microsoft-365/security/defender-endpoint/mobile-resources-defender-endpoint?view=o365-worldwide) | added |
+| 9/19/2023 | [Outbound spam protection](/microsoft-365/security/office-365-security/outbound-spam-protection-about?view=o365-worldwide) | modified |
+| 9/19/2023 | Move email and data to Microsoft 365 Business Standard | removed |
+| 9/19/2023 | [Microsoft 365 Lighthouse frequently asked questions (FAQs)](/microsoft-365/lighthouse/m365-lighthouse-faq?view=o365-worldwide) | modified |
+| 9/19/2023 | [Complete Safe Links overview for Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/safe-links-about?view=o365-worldwide) | modified |
+| 9/20/2023 | [Preset security policies](/microsoft-365/security/office-365-security/preset-security-policies?view=o365-worldwide) | modified |
+| 9/20/2023 | [Restore a user](/microsoft-365/admin/add-users/restore-user?view=o365-worldwide) | modified |
+| 9/20/2023 | [Create, edit, or delete a security group in the Microsoft 365 admin center](/microsoft-365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) | modified |
+| 9/20/2023 | [User email settings](/microsoft-365/admin/email/office-365-user-email-settings?view=o365-worldwide) | modified |
+| 9/20/2023 | [Message center in the Microsoft 365 admin center](/microsoft-365/admin/manage/message-center?view=o365-worldwide) | modified |
+| 9/20/2023 | [Set up the Standard or Targeted release options](/microsoft-365/admin/manage/release-options-in-office-365?view=o365-worldwide) | modified |
+| 9/20/2023 | [Managing user consent to apps in Microsoft 365](/microsoft-365/admin/misc/user-consent?view=o365-worldwide) | modified |
+| 9/20/2023 | [Add your company branding to the Microsoft 365 sign-in page](/microsoft-365/admin/setup/customize-sign-in-page?view=o365-worldwide) | modified |
+| 9/20/2023 | [Allow or block URLs using the Tenant Allow/Block List](/microsoft-365/security/office-365-security/tenant-allow-block-list-urls-configure?view=o365-worldwide) | modified |
+| 9/21/2023 | [Cross-tenant mailbox migration](/microsoft-365/enterprise/cross-tenant-mailbox-migration?view=o365-worldwide) | modified |
+| 9/21/2023 | [Monitor and maintain Microsoft 365 Business Premium and Defender for Business](/microsoft-365/business-premium/m365bp-mdb-maintain-environment?view=o365-worldwide) | modified |
+| 9/22/2023 | [Cross-tenant mailbox migration](/microsoft-365/enterprise/cross-tenant-mailbox-migration?view=o365-worldwide) | modified |
+| 9/22/2023 | About the Microsoft Bug Bounty Program | removed |
+| 9/22/2023 | [Overview of Microsoft Syntex](/microsoft-365/syntex/syntex-overview) | modified |
+
+
 ## Week of September 11, 2023
 
 
@@ -217,36 +248,3 @@
 | 8/25/2023 | [Overview of optical character recognition in Microsoft Syntex (Preview)](/microsoft-365/syntex/ocr-overview) | modified |
 | 8/25/2023 | [Overview of the Tenants page in Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-tenants-page-overview?view=o365-worldwide) | modified |
 | 8/25/2023 | [Professional services supported by Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/professional-services?view=o365-worldwide) | modified |
-
-
-## Week of August 14, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 8/14/2023 | [Allow cookies for LMS URLs in your browser](/microsoft-365/lti/browser-cookies?view=o365-worldwide) | modified |
-| 8/14/2023 | [Onboard trusted vendors to collaborate in Microsoft 365](/microsoft-365/solutions/trusted-vendor-onboarding?view=o365-worldwide) | added |
-| 8/14/2023 | Limit guest sharing to specific organizations | removed |
-| 8/14/2023 | [Get scan history by definition](/microsoft-365/security/defender-endpoint/get-scan-history-by-definition?view=o365-worldwide) | modified |
-| 8/15/2023 | [Manage your Microsoft Defender for Endpoint subscription settings across client devices (preview!)](/microsoft-365/security/defender-endpoint/defender-endpoint-subscription-settings?view=o365-worldwide) | modified |
-| 8/15/2023 | [Enable controlled folder access](/microsoft-365/security/defender-endpoint/enable-controlled-folders?view=o365-worldwide) | modified |
-| 8/16/2023 | [Overview of Microsoft 365 Groups for administrators](/microsoft-365/admin/create-groups/office-365-groups?view=o365-worldwide) | modified |
-| 8/16/2023 | [Overview of the Microsoft Feed](/microsoft-365/ms-feed/m365-feed?view=o365-worldwide) | modified |
-| 8/16/2023 | [Roles and role groups in Microsoft Defender for Office 365 and Microsoft Purview compliance](/microsoft-365/security/office-365-security/scc-permissions?view=o365-worldwide) | modified |
-| 8/16/2023 | [Licensing for Microsoft Syntex](/microsoft-365/syntex/syntex-licensing) | modified |
-| 8/16/2023 | [Assign a baseline in Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-assign-a-baseline?view=o365-worldwide) | added |
-| 8/16/2023 | [Create a baseline in Microsoft 365 Lighthouse](/microsoft-365/lighthouse/m365-lighthouse-create-a-baseline?view=o365-worldwide) | added |
-| 8/16/2023 | [Product keys FAQ](/microsoft-365/commerce/licenses/product-keys-faq?view=o365-worldwide) | modified |
-| 8/16/2023 | [Overview of optical character recognition in Microsoft Syntex](/microsoft-365/syntex/ocr-overview) | modified |
-| 8/17/2023 | [Summary of compliance capabilities for Loop experiences](/microsoft-365/loop/loop-compliance-summary?view=o365-worldwide) | modified |
-| 8/17/2023 | Enable Corelight as data source in Microsoft Defender for Endpoint | removed |
-| 8/17/2023 | [What's new in Microsoft Defender for Endpoint on Mac](/microsoft-365/security/defender-endpoint/mac-whatsnew?view=o365-worldwide) | modified |
-| 8/17/2023 | [What's new in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/whats-new-in-microsoft-defender-endpoint?view=o365-worldwide) | modified |
-| 8/17/2023 | [Microsoft 365 for the web monitoring](/microsoft-365/enterprise/microsoft-365-for-the-web-monitoring?view=o365-worldwide) | added |
-| 8/18/2023 | [Sign up for Microsoft 365 Business Basic](/microsoft-365/admin/setup/signup-business-basic?view=o365-worldwide) | modified |
-| 8/18/2023 | [Enter your product key for Microsoft 365 Business Standard](/microsoft-365/commerce/enter-your-product-key?view=o365-worldwide) | modified |
-| 8/18/2023 | [Reactivate your subscription in the Microsoft 365 admin center](/microsoft-365/commerce/subscriptions/reactivate-your-subscription?view=o365-worldwide) | modified |
-| 8/18/2023 | [Manage recurring billing in the Microsoft 365 admin center](/microsoft-365/commerce/subscriptions/renew-your-subscription?view=o365-worldwide) | modified |
-| 8/18/2023 | [Professional services supported by Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/professional-services?view=o365-worldwide) | modified |
-| 8/18/2023 | [How Microsoft names malware](/microsoft-365/security/intelligence/malware-naming?view=o365-worldwide) | modified |
-| 8/18/2023 | [Prevent malware infection](/microsoft-365/security/intelligence/prevent-malware-infection?view=o365-worldwide) | modified |
