@@ -47,7 +47,7 @@ For more information on what's new with other Microsoft Defender security produc
 ## August 2023
 
 - If the [User reported settings](submissions-user-reported-messages-custom-mailbox.md) in the organization send user reported messages (email and [Microsoft Teams](submissions-teams.md)) to Microsoft (exclusively or in addition to the reporting mailbox), we now do the same checks as when admins submit messages to Microsoft for analysis from the **Submissions** page.
-- **Intra-organizational protection by default:** Default behavior is to quarantine intra-organizational messages that contain high-confidence phishing URLs. Admin’s may opt-out of this behavior or opt-in to additional protections in the anti-spam policy. More information can be found in [Configure spam filer policies | Microsoft Learn](https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/anti-spam-policies-configure?view=o365-worldwide).
+- **Default intra-organizational protection**: By default, messages sent between internal users that are identified as high confidence phishing are quarantined. Admins change this setting in the default anti-spam policy or in custom policies (opt-out of intra-org protection or include other spam filtering verdicts). For configuration information, see [Configure anti-spam policies in EOP](anti-spam-policies-configure.md).
 
 ## July 2023
 
