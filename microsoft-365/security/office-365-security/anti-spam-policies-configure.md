@@ -618,6 +618,6 @@ Generic Test for Unsolicited Bulk Email (GTUBE) is a text string that you includ
 
 Include the following GTUBE text in an email message on a single line, without any spaces or line breaks:
 
-```text
+```console
 XJS*C4JDBQADN1.NSBN3*2IDNEN*GTUBE-STANDARD-ANTI-UBE-TEST-EMAIL*C.34X
 ```
