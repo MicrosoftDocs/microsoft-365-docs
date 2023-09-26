@@ -63,7 +63,7 @@ The following section applies to Loop components stored in OneDrive (created out
 - Microsoft **[Graph API](/graph/api/driveitem-get-content-format)** export ✻
 - **Legal Hold** support to ensure content is not deleted (as related to litigation and security investigations) and stored in the [Preservation Hold Library](/sharepoint/governance/ediscovery-and-in-place-holds-in-sharepoint-server) ✻
 
-#### Data Lifecycle and Records Management
+#### Data Lifecycle Management
 - **[Retention Policies](/microsoft-365/compliance/retention-policies-sharepoint)** are enforced
 
 #### Information Barriers
