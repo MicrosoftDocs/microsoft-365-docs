@@ -76,9 +76,9 @@ Most attackers rely on sophisticated malware and files when launching attacks to
 
 :::image type="content" source="../../media/copilot-in-defender/script-analyzer/fig5-sec-copilot-m365d-script.png" alt-text="Script analysis card on the Security Copilot pane in the Microsoft 365 Defender incident page" lightbox="../../media/copilot-in-defender/script-analyzer/fig5-sec-copilot-m365d-script.png":::
 
-### Search for potential threats with guidance
+### Generate KQL queries from natural-language input 
 
-Security teams tasked to mitigate potential attacks rely on Microsoft 365 Defender’s advanced hunting feature. However, understanding attack patterns, the necessary operations, and data sets can be barriers to effective hunting. Security Copilot empowers security teams with a query assistant to author and build queries in advanced hunting.
+Security teams who use advanced hunting to proactively hunt for threats in their network can now use a query assistant that converts any natural-language question in the context of threat hunting, into a ready-to-run KQL query. The query assistant saves security teams time by generating a KQL query that can then be automatically run or further tweaked according to the analyst needs. Read more about the query assistant in [Security Copilot in advanced hunting](advanced-hunting-security-copilot.md)
 
 [Insert screenshot]
 
