@@ -64,7 +64,7 @@ Watch this short video to learn more about Attack simulation training.
   > [!NOTE]
   > NOR, ZAF, ARE and DEU are the latest additions. All features except reported email telemetry will be available in these regions. We are working to enable the features and will notify our customers as soon as reported email telemetry becomes available.
 
-- As of September 2023, Attack simulation training is available in GCC and GCC High environments. If your organization has Office 365 G5 GCC or Microsoft Defender for Office 365 (Plan 2) for Government, you can use Attack simulation training as described in this article. Attack simulation training isn't yet available in DoD environment. Additionally, certain advanced features, such as Payload automation, MDO recommended payloads, and ML-based Predicted Compromised Rate, are not available in the GCC High environment.
+- As of September 2023, Attack simulation training is available in GCC and GCC High environments, but certain advanced features are not available (for example, payload automation, recommended payloads, the predicted compromised rate). If your organization has Office 365 G5 GCC or Microsoft Defender for Office 365 (Plan 2) for Government, you can use Attack simulation training as described in this article. Attack simulation training isn't yet available in DoD environments.
 
 > [!NOTE]
 > Attack simulation training offers a subset of capabilities to E3 customers as a trial. The trial offering contains the ability to use a Credential Harvest payload and the ability to select 'ISA Phishing' or 'Mass Market Phishing' training experiences. No other capabilities are part of the E3 trial offering.
