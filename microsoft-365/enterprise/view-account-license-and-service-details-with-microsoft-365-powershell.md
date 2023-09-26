@@ -93,7 +93,7 @@ This example shows the services that user BelindaN@litwareinc.com has access to 
 (Get-MgUserLicenseDetail -UserId belindan@litwareinc.com -Property ServicePlans)[0].ServicePlans
 ```
 
-This script will generate a CSV file for all users with columns for `DisplayName`, `UserPrincipalName`, `SkuId`, `SkuName`, and each of the `ServicePlans`. If a user does not have a certain service plan assigned, it will show up as "Not Assigned" in the corresponding column. Please replace `"C:\Users\Public\M365LicenseReport.csv"` with your desired output path.
+This script will generate a CSV file for all users with columns for `DisplayName`, `UserPrincipalName`, `SkuId`, `SkuName`, and each of the `ServicePlans`. If a user does not have a certain service plan assigned, it will show up as "Not Assigned" in the corresponding column. You should replace `"C:\Users\Public\M365LicenseReport.csv"` with your desired output path.
 
 ```powershell
 
