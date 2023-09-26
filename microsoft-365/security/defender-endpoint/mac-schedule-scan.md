@@ -3,12 +3,10 @@ title: How to schedule scans with Microsoft Defender for Endpoint on macOS
 description: Learn how to schedule an automatic scanning time for Microsoft Defender for Endpoint in macOS to better protect your organization's assets.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, scans, antivirus, big sur, monterey, ventura, mde for mac
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
+ms.date: 07/13/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -62,8 +60,6 @@ The following code shows the schema you need to use to schedule a quick scan.
         <true/>
         <key>StartCalendarInterval</key>
         <dict>
-            <key>Day</key>
-            <integer>3</integer>
             <key>Hour</key>
             <integer>2</integer>
             <key>Minute</key>
@@ -101,8 +97,6 @@ The following code shows the schema you need to use to schedule a quick scan.
         <true/>
         <key>StartCalendarInterval</key>
         <dict>
-            <key>Day</key>
-            <integer>3</integer>
             <key>Hour</key>
             <integer>2</integer>
             <key>Minute</key>
@@ -148,3 +142,4 @@ The following code shows the schema you need to use to schedule a quick scan.
 You can also schedule scans with Microsoft Intune. The runMDATPQuickScan.sh shell script available at [Scripts for Microsoft Defender for Endpoint](https://github.com/microsoft/shell-intune-samples/tree/master/macOS/Config/MDATP) will persist when the device resumes from sleep mode. 
 
 See [Use shell scripts on macOS devices in Intune](/mem/intune/apps/macos-shell-scripts) for more detailed instructions on how to use this script in your enterprise.
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

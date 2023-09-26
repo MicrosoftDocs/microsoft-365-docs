@@ -35,7 +35,15 @@ Admins can mark messages and notify users of review results only if the user [re
 
 ## What do you need to know before you begin?
 
-- You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>. To go directly to the **User reported** page, use <https://security.microsoft.com/securitysettings/userSubmission>.
+- You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Submissions** page, use <https://security.microsoft.com/reportsubmission>. To go directly to the **User reported settings** page, use <https://security.microsoft.com/securitysettings/userSubmission>.
+
+- If the [User reported settings](submissions-user-reported-messages-custom-mailbox.md) in the organization send user reported messages (email and [Microsoft Teams](submissions-teams.md)) to Microsoft (exclusively or in addition to the reporting mailbox), we do the same checks as when admins submit messages to Microsoft for analysis from the **Submissions** page:
+  - **Email authentication check** (email messages only): Whether email authentication passed or failed when it was delivered.
+  - **Policy hits**: Information about any policies or overrides that might have allowed or blocked the incoming email into the organization, thus overriding our filtering verdicts.
+  - **Payload reputation/detonation**: Up-to-date examination of any URLs and attachments in the message.
+  - **Grader analysis**: Review done by human graders to confirm whether or not messages are malicious.
+
+  So, submitting or resubmitting messages to Microsoft is useful to admins only for messages that have never been submitted to Microsoft, or when you disagree with the original verdict.
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
   - [Email & collaboration RBAC in the Microsoft 365 Defender portal](mdo-portal-permissions.md): Membership in the **Organization Management** or **Security Administrator** role groups.
@@ -58,33 +66,38 @@ Admins can mark messages and notify users of review results only if the user [re
    - Select the message from the list by clicking anywhere in the row other than the check box. In the details flyout that opens, select :::image type="icon" source="../../media/m365-cc-scc-mark-and-notify-icon.png" border="false"::: **Mark as and notify** or :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More options** \> :::image type="icon" source="../../media/m365-cc-scc-mark-and-notify-icon.png" border="false"::: **Mark as and notify**.
 
 4. In the **Mark as and notify** dropdown list, select one of the following values:
-   - **No threats found**
-   - **Phishing**
-   - **Spam**
 
-   :::image type="content" source="../../media/admin-review-send-message-from-portal.png" alt-text="The page displaying the user-reported messages" lightbox="../../media/admin-review-send-message-from-portal.png":::
+   - Available verdicts for email messages:
+     - **No threats found**
+     - **Phishing**
+     - **Spam**
 
-The reported message is marked as **No threats found**, **Phishing**, or **Spam**, and an email is automatically sent to notify the user who reported the message.
+   - Available verdicts for Microsoft Teams messages:
+     - **No threats found**
+     - **Phishing**
+
+The reported message is marked with the selected verdict, and an email message is automatically sent to notify the user who reported the message.
 
 To customize the notification email, see the next section.
 
 ## Customize the messages used to notify users
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to the **User reported** page at **Settings** \> **Email & collaboration** \> **User reported** tab. Or, to go directly to the **User reported** page, use <https://security.microsoft.com/securitysettings/userSubmission>.
+1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to the **User reported** page at **Settings** \> **Email & collaboration** \> **User reported settings** tab. Or, to go directly to the **User reported settings** page, use <https://security.microsoft.com/securitysettings/userSubmission>.
 
-2. On the **User reported** page, verify that the toggle at the top of the page is :::image type="icon" source="../../media/scc-toggle-on.png" border="false"::: **On**.
+2. On the **User reported settings** page, verify that **Monitor reported messages in Outlook** is selected in the **Outlook** section at the top of the page.
 
-3. Find the **Email sent to user after admin review** section and configure one or more of the following settings:
+3. Find the **Email notifications** section and configure one or more of the following settings:
 
-   - **Specify an Office 365 mailbox to send email notifications from**: Select this option and enter the sender's email address in the box that appears.
-   - **Replace the Microsoft logo with my company logo**: Select this option to replace the default Microsoft logo that's used in notifications. Before you do this step, you need to follow the instructions in [Customize the Microsoft 365 theme for your organization](../../admin/setup/customize-your-organization-theme.md) to upload your custom logo.
-   - **Customize email notification messages**: Select this link to customize the email notification that's sent after an admin reviews and marks a reported message. In the **Customize admin review email notifications** flyout that appears, configure the following settings on the **Phishing**, **Junk** and **No threats found** tabs:
-     - **Email box results text**: Enter the custom text to use.
-       - **Footer** tab: The following options are available:
-       - **Email footer text**: Enter the custom message footer text to use.
+   - **Results email** section: Select **Customize results email**. In the **Customize admin review email notifications** flyout that opens, configure the following settings on the **Phishing**, **Junk** and **No threats found** tabs:
+    - **Email body results text**: Enter the custom text to use. You can use different text for **Phishing**, **Junk** and **No threats found**.
+    - **Email footer text**: Enter the custom message footer text to use. The same text is used for **Phishing**, **Junk** and **No threats found**.
 
-     When you're finished on the **Customize admin review email notifications** flyout, select **Confirm**.
+     When you're finished in the **Customize admin review email notifications** flyout, select **Confirm** to return to the **User reported settings** page.
 
-   :::image type="content" source="../../media/admin-review-customize-message.png" alt-text="The Customize confirmation message page" lightbox="../../media/admin-review-customize-message.png":::
+     :::image type="content" source="../../media/admin-review-customize-message.png" alt-text="The Customize confirmation message flyout." lightbox="../../media/admin-review-customize-message.png":::
 
-4. When you're finished on the **User reported** page, select **Save**. To clear these values, select **Restore** on the **User reported** page.
+   - **Customize sender and branding** section:
+     - **Specify a Microsoft 365 mailbox to use ads the From address of email notifications**: Select this option and enter the sender's email address in the box that appears. If you don't select this option, the default sender is submissions@messaging.microsoft.com.
+     - **Replace the Microsoft logo with my organization's logo across all reporting experiences**: Select this option to replace the default Microsoft logo that's used in notifications. Before you do this step, follow the instructions in [Customize the Microsoft 365 theme for your organization](../../admin/setup/customize-your-organization-theme.md) to upload your custom logo.
+
+4. When you're finished on the **User reported settings** page, select **Save**.

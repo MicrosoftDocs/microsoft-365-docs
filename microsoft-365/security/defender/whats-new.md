@@ -12,7 +12,7 @@ ms.pagetype: security
 ms.author: diannegali
 author: diannegali
 ms.localizationpriority: medium
-ms.date: 05/25/2023
+ms.date: 07/24/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -23,7 +23,7 @@ ms.topic: conceptual
 
 # What's new in Microsoft 365 Defender
 
-Lists the new features and functionality in Microsoft 365 Defender. 
+Lists the new features and functionality in Microsoft 365 Defender.
 
 RSS feed: Get notified when this page is updated by copying and pasting the following URL into your feed reader:
 
@@ -39,6 +39,22 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Cloud Apps](/cloud-app-security/release-notes)
 
 You can also get product updates and important notifications through the [message center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter).
+
+## September 2023
+- (Preview) Custom detections using data from Microsoft Defender for Identity and Microsoft Defender for Cloud Apps, specifically the `CloudAppEvents`, `IdentityDirectoryEvents`, `IdentityLogonEvents`, and `IdentityQueryEvents` [tables](custom-detection-rules.md#tables-that-support-continuous-nrt-frequency) can now be run in near real-time [Continuous (NRT)](custom-detection-rules.md) frequency.
+
+
+## August 2023
+
+- Guides to responding to your first incident for new users are now live. [Understand incidents](respond-first-incident-365-defender.md) and learn to triage and prioritize, [analyze your first incident](respond-first-incident-analyze.md) using tutorials and videos, and [remediate attacks](respond-first-incident-remediate.md) by understanding actions available in the portal.
+- (Preview) [Asset rule management - Dynamic rules for devices](./configure-asset-rules.md) is now in public preview. Dynamic rules can help manage device context by assigning tags and device values automatically based on certain criteria.
+- (Preview) The [DeviceInfo](advanced-hunting-deviceinfo-table.md) table in advanced hunting now also includes the columns `DeviceManualTags` and `DeviceDynamicTags` in public preview to surface both manually and dynamically assigned tags related to the device you are investigating.
+- The **Guided response** feature in Microsoft Defender Experts for XDR has been renamed to **[Managed response](start-using-mdex-xdr.md#how-to-use-managed-response-in-microsoft-365-defender)**. We have also added a [new FAQ section](faq-incident-notifications-xdr.md#understanding-and-managing-defender-experts-for-xdr-incident-updates) on incident updates.
+
+## July 2023
+
+- (GA) The [Attack story](investigate-incidents.md#attack-story) in incidents is now generally available. The attack story provides the full story of the attack and allows incident response teams to view the details and apply remediation.
+- A new URL and domain page is now available in Microsoft 365 Defender. The updated URL and domain page provides a single place to view all the information about a URL or a domain, including its reputation, the users who clicked it, the devices that accessed it, and emails where the URL or domain was seen. For details, see [Investigate URLs in Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/investigate-domain).
 
 ## June 2023
 
@@ -206,3 +222,4 @@ The security operations team can view all actions pending approval, and the stip
   Find information about events in various cloud apps and services covered by Microsoft Defender for Cloud Apps. This table also includes information previously available in the `AppFileEvents` table.
 
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

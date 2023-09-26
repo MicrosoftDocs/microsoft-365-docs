@@ -1,9 +1,9 @@
 ---
 title: Teams Shifts connector for Blue Yonder known issues
-author: daisyfell
-ms.author: daisyfeller
+author: lana-chin
+ms.author: heidip
+manager: serdars
 ms.reviewer: imarquesgil
-manager: pamgreen
 ms.topic: troubleshooting
 audience: admin
 ms.service: microsoft-365-frontline
@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.collection:
   - M365-collaboration
   - m365-frontline
-  - tier2
+  - teams-1p-app-admin
 appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers

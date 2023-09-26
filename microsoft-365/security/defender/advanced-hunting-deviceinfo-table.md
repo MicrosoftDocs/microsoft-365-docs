@@ -19,7 +19,7 @@ audience: ITPro
 ms.collection: 
 - tier3
 - m365-security
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 03/07/2023
 ---
 
@@ -68,11 +68,16 @@ For information on other tables in the advanced hunting schema, [see the advance
 |`MergedDeviceIds` | `string` | Previous device IDs that have been assigned to the same device |
 |`MergedToDeviceId` | `string` | The most recent device ID assigned to a device |
 |`SensorHealthState` | `string` | Indicates health of the device's EDR sensor, if onboarded to Microsoft Defender For Endpoint |
-|	`IsExcluded`| `bool` | Determines if the device is currently excluded from Microsoft Defender for Vulnerability Management experiences |
+|`IsExcluded`| `bool` | Determines if the device is currently excluded from Microsoft Defender for Vulnerability Management experiences |
 |`ExclusionReason` | `string` | Indicates the reason for device exclusion |
 |	`AssetValue`| `string` | Indicates the value of a device as assigned by the user |
 |	`ExposureLevel` | `string` | Indicates the exposure level of a device |
 |	`IsInternetFacing` | `boolean` | Indicates whether the device is internet-facing |
+|	`DeviceManualTags` | `string` | Device tags created manually using the portal UI or public API |
+|	`DeviceDynamicTags` | `string` | Device tags assigned automatically using dynamic tagging rules |
+
+
+
 
 
 The `DeviceInfo` table provides device information based on periodic reports or signals (heartbeats) from a device. Complete reports are sent every hour and every time a change happens to a previous heartbeat. 
@@ -93,3 +98,4 @@ DeviceInfo
 - [Hunt across devices, emails, apps, and identities](advanced-hunting-query-emails-devices.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

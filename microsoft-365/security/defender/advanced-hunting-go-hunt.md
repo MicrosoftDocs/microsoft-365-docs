@@ -20,7 +20,7 @@ ms.collection:
   - m365-security
   - tier1
 ms.topic: conceptual
-ms.date: 02/16/2021
+ms.date: 08/31/2023
 ---
 
 # Quickly hunt for entity or event information with go hunt
@@ -73,13 +73,14 @@ and DeviceName == deviceName
 
 You can use the *go hunt* option after selecting any of these entity types:
 
-- Files
-- Emails
+- Devices
 - Email clusters
+- Emails
+- Files
+- Groups
+- IP addresses
 - Mailboxes
 - Users
-- Devices
-- IP addresses
 - URLs
 
 ## Query for event information
@@ -119,3 +120,4 @@ In addition to modifying the query to get more relevant results, you can also:
 - [Learn the query language](advanced-hunting-query-language.md)
 - [Work with query results](advanced-hunting-query-results.md)
 - [Custom detection rules](custom-detection-rules.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

@@ -4,7 +4,7 @@ ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
 ms.reviewer: dmwmsft
-ms.date: 06/22/2023
+ms.date: 07/31/2023
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -25,12 +25,12 @@ description: "Determine where your Microsoft 365 customer data is stored worldwi
 # Where your Microsoft 365 customer data is stored
 
 > [!NOTE]
-> The **Poland** local data center region launched on April 26, 2023. If your organization requires the migration of your Microsoft 365 customer data to Poland, and a data residency commitments for Poland, please refer to [Advanced Data Residency](advanced-data-residency.md) for more information.
+> The **Poland** local data center region launched on April 26, 2023. If your organization requires the migration of your Microsoft 365 customer data to Poland, and data residency commitments for Poland, see [Advanced Data Residency](advanced-data-residency.md).
 
 > [!NOTE]
-> For tenants in Australia, Brazil, Canada, France, Germany, India, Japan, Qatar, South Korea, Norway, South Africa, Sweden, Switzerland, United Arab Emirates, and the United Kingdom, additional workloads are available for data residency commitments. Refer to [Advanced Data Residency](advanced-data-residency.md) for more information.
+> For tenants in Australia, Brazil, Canada, France, Germany, India, Japan, Qatar, South Korea, Norway, South Africa, Sweden, Switzerland, United Arab Emirates, and the United Kingdom, additional workloads are available for data residency commitments. For more information, see [Advanced Data Residency](advanced-data-residency.md).
 
-See the following links to understand how you can determine current workload data location.
+See the following links to understand how you can determine current data residency and data residency commitments.
 
 - Exchange Online [Data Location](m365-dr-workload-exo.md#how-can-i-determine-customer-data-location)
 - SharePoint Online (ODSP) and OneDrive for Business [Data Location](m365-dr-workload-spo.md#how-can-i-determine-customer-data-location)
@@ -40,14 +40,16 @@ See the following links to understand how you can determine current workload dat
 - Viva Connections [Data Location](m365-dr-workload-viva-connections.md#how-can-i-determine-customer-data-location)
 - Viva Topics [Data Location](m365-dr-workload-viva-topics.md#how-can-i-determine-customer-data-location)
 - Microsoft Purview (select services)  [Data Location](m365-dr-workload-purview.md#how-can-i-determine-customer-data-location)
+
   - Audit (Standard)
   - Audit (Premium)
-  - Data Retention
-  - Records Management
-  - Sensitivity labels
-  - Data Loss Prevention
-  - Office Message Encryption
-  - Information Barriers
+  - Data loss prevention
+  - Data retention
+  - Information barriers
+  - Office message encryption
+  - Records management
+  - Sensitivity labels  
+  
 - Azure Active Directory [Data Location](m365-dr-workload-other.md#azure-active-directory-aad)
 - Whiteboard [Data Location](m365-dr-workload-other.md#whiteboard)
 - Forms [Data Location](m365-dr-workload-other.md#forms)
@@ -57,6 +59,8 @@ See the following links to understand how you can determine current workload dat
 - Viva Insights – Advanced, Mgr, Leader [Data Location](m365-dr-workload-other.md#viva-insights--advanced-mgr-leader)
 - Viva Insights – Personal [Data Location](m365-dr-workload-other.md#viva-insights--personal)
 - Viva Learning [Data Location](m365-dr-workload-other.md#viva-learning)
+- Viva Pulse [Data Location](/viva/pulse/get-started/data-residency-for-viva-pulse)
+- Yammer [Data Location](m365-dr-workload-other.md#viva-engage)
 - Viva Engage [Data Location](m365-dr-workload-other.md#viva-engage)
 - Office for mobile [Data Location](m365-dr-workload-other.md#office-for-mobile)
 - OneNote Services [Data Location](m365-dr-workload-other.md#onenote-services)

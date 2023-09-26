@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
-ms.date: 07/12/2022
+ms.date: 04/26/2023
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -114,7 +114,7 @@ Use the **Freeform selection method** to create a [freeform document processing 
 
 5. When you're ready to create the model, select **Create**.
 
-6. You're now ready to [train the model](train-freeform-document-processing-model.md).
+6. You're now ready to [train the model](create-a-form-processing-model.md).
 
     > [!NOTE]
     > When published, this model type is available for reuse by others who do not own the model. Currently, this model can be edited and shared for editing only by the model owner.

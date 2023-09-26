@@ -6,7 +6,7 @@ ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-nsatapathy
+ms.author: dansimp
 author: nimishasatapathy
 ms.localizationpriority: medium
 manager: dansimp
@@ -111,3 +111,4 @@ Different from AD group, the Sid is using Object ID for Azure AD group. You can 
 
 PrintJobBlocked is designed for [Printer Protection V1](printer-protection.md). Because the new Printer Protection solution is built based on the V1 solution, the system will still use PrintJobBlocked. If you are using the [new Printer Protection](printer-protection-overview.md), RemovableStoragePolicyTriggered is used to track the event.
 
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

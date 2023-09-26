@@ -40,3 +40,4 @@ Learn how to download the Microsoft Defender for Endpoint client analyzer on sup
 1. The latest stable edition will be integrated into the MDE for Endpoint agent. Ensure that you are running the latest edition for either [macOS](mac-whatsnew.md) or [Linux](linux-whatsnew.md).
 
 2. The latest preview edition is available for direct download from following URL: <https://aka.ms/XMDEClientAnalyzer>
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

@@ -58,7 +58,7 @@ If the policy still isn't working, contact support, and share your support cab. 
 
 ## Why is there no configuration UX for some policy groups? 
 
-There is no configuration UX for **Define device control policy groups** and **Define device control policy rules** on your Group Policy. But, you can still get the related `.adml` and `.admx` files by selecting **Raw** and **Save as** at the [WindowsDefender.adml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.adml) and [WindowsDefender.admx](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.admx) files.
+There is no configuration UX for **Define device control policy groups** and **Define device control policy rules** on your Group Policy. But, you can still get the related `.adml` and `.admx` files by selecting **Raw** and **Save as** at the [WindowsDefender.adml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/WindowsDefender.adml) and [WindowsDefender.admx](https://github.com/microsoft/mdatp-devicecontrol/blob/main/WindowsDefender.admx) files.
 
 ## How do I confirm that the latest policy has been deployed to the target machine?
 
@@ -130,3 +130,4 @@ Yes, for Windows and Mac.
 To set up device control on Windows, use [attack surface reduction rules in Defender for Business](/microsoft-365/security/defender-business/mdb-asr). You'll need [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). The standalone version of Defender for Business does not include Intune, but it can be added on. [Microsoft 365 Business Premium](/microsoft-365/business-premium) does include Intune. See [Microsoft Defender for Endpoint Device Control Removable Storage Access Control](device-control-removable-storage-access-control.md).
 
 To set up device control on Mac, use Intune or Jamf. See [Device Control for macOS](mac-device-control-overview.md).
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

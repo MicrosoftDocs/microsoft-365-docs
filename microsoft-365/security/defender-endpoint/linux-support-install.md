@@ -195,3 +195,4 @@ Now try restarting the mdatp service using step 2. Revert the configuration chan
     ```
 
     Path to a zip file that contains the logs will be displayed as an output. Reach out to our customer support with these logs.
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

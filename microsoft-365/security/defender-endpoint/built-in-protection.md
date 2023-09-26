@@ -98,3 +98,4 @@ Built-in protection is a set of default settings. You aren't required to keep th
 - [Configure Microsoft Defender for Endpoint in Intune](/mem/intune/protect/advanced-threat-protection-configure)
 - [Manage Microsoft Defender for Endpoint on devices with Microsoft Intune](/mem/intune/protect/mde-security-integration)
 - [Responding to ransomware attacks](../defender/playbook-responding-ransomware-m365-defender.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

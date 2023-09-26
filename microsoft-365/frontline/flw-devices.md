@@ -1,9 +1,9 @@
 ---
 title: Manage devices for frontline workers
-author: samanro
-ms.author: samanro
+author: lana-chin
+ms.author: heidip
+manager: serdars
 ms.reviewer: mabolan
-manager: samanro
 ms.topic: conceptual
 audience: admin
 ms.service: microsoft-365-frontline
@@ -13,7 +13,7 @@ description: Get an overview of managing mobile shared and BYOD devices for fron
 ms.collection: 
   - m365-frontline
   - highpri
-  - tier2
+  - essentials-manage
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers

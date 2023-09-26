@@ -359,4 +359,5 @@ As needed for in-process incidents, continue your [investigation](investigate-in
 - [Investigate incidents](investigate-incidents.md)
 - [Investigate data loss prevention alerts in Defender](dlp-investigate-alerts-defender.md)
 - [Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection)
-- 
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

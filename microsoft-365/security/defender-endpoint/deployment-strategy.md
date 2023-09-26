@@ -45,7 +45,7 @@ Depending on your environment, some tools are better suited for certain architec
 |---|---|
 |**Cloud-native**| We recommend using Microsoft Intune to onboard, configure, and remediate endpoints from the cloud for enterprises that don't have an on-premises configuration management solution or are looking to reduce their on-premises infrastructure. |
 |**Co-management**| For organizations that host both on-premises and cloud-based workloads we recommend using Microsoft's ConfigMgr and Intune for their management needs. These tools provide a comprehensive suite of cloud-powered management features, as well as unique co-management options to provision, deploy, manage, and secure endpoints and applications across an organization. |
-|**On-premise**|For enterprises that want to take advantage of the cloud-based capabilities of Microsoft Defender for Endpoint while also maximizing their investments in Configuration Manager or Active Directory Domain Services, we recommend this architecture.|
+|**On-premises**|For enterprises that want to take advantage of the cloud-based capabilities of Microsoft Defender for Endpoint while also maximizing their investments in Configuration Manager or Active Directory Domain Services, we recommend this architecture.|
 |**Evaluation and local onboarding**|We recommend this architecture for SOCs (Security Operations Centers) that are looking to evaluate or run a Microsoft Defender for Endpoint pilot, but don't have existing management or deployment tools. This architecture can also be used to onboard devices in small environments without management infrastructure, such as a DMZ (Demilitarized Zone).|
 
 ## Step 2: Select deployment method
@@ -67,3 +67,4 @@ Once you have determined the architecture of your environment and have created a
 ## Next step
 
 After choosing your Defender for Endpoint architecture and deployment method continue to [Step 4 - Onboard devices](onboarding.md).
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

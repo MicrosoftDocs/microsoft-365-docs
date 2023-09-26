@@ -7,8 +7,8 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-mathavale
-author: v-mathavale
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 05/14/2023
 manager: dansimp
@@ -99,3 +99,4 @@ See also:
 - [What's new in Defender for Endpoint on macOS](mac-whatsnew.md)
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 - [What's new in Defender for Endpoint on Linux](linux-whatsnew.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

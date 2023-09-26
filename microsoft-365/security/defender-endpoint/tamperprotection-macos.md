@@ -197,13 +197,14 @@ Configure tamper protection mode in Microsoft Defender for Endpoint [configurati
 > If you already have a configuration profile for Microsoft Defender for Endpoint then you need to *add* settings to it. You should not create a second configuration profile.
 
 ### Intune
+#### Settings catalog
+You can create a new settings catalog profile to add the Tamper protection configuration, or you can add it to an existing one. The setting "Enforcement level" can be found under category "Microsoft Defender" and subcategory "Tamper protection". Afterwards, choose the desired level.
 
-Follow the documented Intune profile example to configure Tamper Protection through Intune. For more information, see [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md).
-
-Add the following configuration in your Intune profile:
+#### Custom profile
+As an alternative, you can also configure Tamper protection via a custom profile. For more information, see [Set preferences for Microsoft Defender for Endpoint on macOS](mac-preferences.md).
 
 > [!NOTE]
-> For Intune configuration, you can create a new profile configuration file to add the Tamper protection configuration, or you can add these parameters to the existing one.
+> For Intune configuration, you can create a new profile configuration file to add the Tamper protection configuration, or you can add these parameters to the existing one. Choose the desired level.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -259,7 +260,7 @@ Add the following configuration in your Intune profile:
     </dict>
 </plist>
 ```
-
+#### Check status
 Check the tamper protection status by running the following command:
 
 `mdatp health --field tamper_protection`
@@ -452,7 +453,7 @@ Executable Segment limit=16384
 Executable Segment flags=0x1
 Page size=4096
 Launch Constraints:
-	None
+  None
 CDHash=335c10d40db9417d80db87f658f6565018a4c3d6
 Signature size=4442
 Authority=Software Signing
@@ -543,3 +544,4 @@ configuration_is_managed                    : false
 ```console
 $ sudo grep -F '[{tamperProtection}]: Feature state:' /Library/Logs/Microsoft/mdatp/microsoft_defender_core.log | tail -n 1
 ```
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

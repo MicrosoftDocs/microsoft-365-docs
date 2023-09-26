@@ -138,7 +138,7 @@ Follow the below steps for setting up MAM config for unenrolled devices for Netw
 
     |Key| Default (true - enable, false - disable)|Description|
     |---|---|---|
-    |`DefenderOpenNetworkDetection`|0|1 - enable, 0 - disable, 2 - Enable. This setting is managed by an IT Admin to enable, audit, or disable open network detection. In Audit mode, alerts will be sent only to the ATP portal with no user side experience. For user experience, set the config to "Enable" mode.|
+    |`DefenderOpenNetworkDetection`|0| 1 - Audit, 0 - Disable (default), 2 - Enable. This setting is managed by an IT admin to enable, audit, or disable open network detection. In Audit mode, alerts will be sent only to the ATP portal with no user side experience. For user experience, set the config to "Enable" mode.|
     |`DefenderEndUserTrustFlowEnable`| false | true - enable, false - disable; This setting is used by IT admins to enable or disable the end user in-app experience to trust and untrust the unsecure and suspicious networks.|
     |`DefenderNetworkProtectionAutoRemediation`| true |true - enable, false - disable; This setting is used by the IT admin to enable or disable the remediation alerts that are sent when a user performs remediation activities like switching to safer WIFI access points or deleting suspicious certificates detected by Defender.|
     |`DefenderNetworkProtectionPrivacy`| true |true - enable, false - disable; This setting is managed by IT admin to enable or disable privacy in network protection.|
@@ -297,7 +297,7 @@ Defender for Endpoint on iOS enables admins to configure custom indicators on iO
 
 Reducing cyber risk requires comprehensive risk-based vulnerability management to identify, assess, remediate, and track all your biggest vulnerabilities across your most critical assets, all in a single solution. Visit this [page](next-gen-threat-and-vuln-mgt.md) to learn more about Microsoft Defender Vulnerability Management in Microsoft Defender for Endpoint.
 
-Defender for Endpoint on iOS supports vulnerability assessments of apps only for enrolled (MDM) devices. Admins can use the following steps to configure the vulnerability assessment of apps.
+Defender for Endpoint on iOS supports vulnerability assessments of OS and apps. Vulnerability assessment of iOS versions is available for both enrolled (MDM) and unenrolled (MAM) devices. Vulnerability assessment of apps is only for enrolled (MDM) devices. Admins can use the following steps to configure the vulnerability assessment of apps.
 
 ### On a Supervised Device
 
@@ -363,13 +363,50 @@ This configuration is available for both the enrolled (MDM) devices as well as u
 
 **For unenrolled devices(MAM)**
 
-1. In the Microsoft Intune admin center, navigate to Apps \> App configuration policies \> Add \> Managed apps.
+1. In the Microsoft Intune admin center, navigate to Apps > App configuration policies > Add > Managed apps.
 1. Give the policy a name.
 1. Under the Select Public Apps, choose Microsoft Defender for Endpoint as the target app.
 1. In Settings page, add **DisableSignOut** as the key and value as **true**, under the General Configuration Settings.
 1. By default, DisableSignOut = false.
 1. Admin needs to make **DisableSignOut = true** to disable the sign-out button in the app. Users will not see the sign out button once the policy is pushed.
 1. Click Next and assign this policy to targeted devices/users.
+
+>[!Important]
+>This feature is in Public Preview. The following information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+
+## Device Tagging
+
+Defender for Endpoint on iOS enables bulk tagging the mobile devices during onboarding by allowing the admins to set up tags via Intune. Admin can configure the device tags through Intune via configuration policies and push them to user’s devices. Once the User installs and activates Defender, the client app passes the device tags to the Security Portal. The Device tags appear against the devices in the Device Inventory. 
+
+This configuration is available for both the enrolled (MDM) devices as well as unenrolled (MAM) devices. Admins can use the following steps to configure the Device tags.
+
+### Configure Device tags
+
+**For enrolled devices(MDM)**
+
+1. In the Microsoft Intune admin center, navigate to Apps \> App configuration policies \> Add \> Managed devices.
+1. Give the policy a name, select Platform \> iOS/iPadOS
+1. Select Microsoft Defender for Endpoint as the target app. 
+1. In Settings page, select Use configuration designer and add **DefenderDeviceTag** as the key and value type as **String**.
+   - Admin can assign a new tag by adding the key **DefenderDeviceTag** and setting a value for device tag.
+   - Admin can edit an existing tag by modifying the value of the key **DefenderDeviceTag**.
+   - Admin can delete an existing tag by removing the key **DefenderDeviceTag**.
+
+1. Click Next and assign this policy to targeted devices/users.
+
+**For unenrolled devices(MAM)**
+
+1. In the Microsoft Intune admin center, navigate to Apps > App configuration policies > Add > Managed apps.
+1. Give the policy a name.
+1. Under the Select Public Apps, choose Microsoft Defender for Endpoint as the target app.
+1. In Settings page, add **DefenderDeviceTag** as the key under the General Configuration Settings.
+   - Admin can assign a new tag by adding the key **DefenderDeviceTag** and setting a value for device tag.
+   - Admin can edit an existing tag by modifying the value of the key **DefenderDeviceTag**.
+   - Admin can delete an existing tag by removing the key **DefenderDeviceTag**.
+1. Click Next and assign this policy to targeted devices/users.
+
+> [!NOTE] 
+> The Defender app needs to be opened for tags to be synced with Intune and passed to Security Portal. It may take upto 18 hours for tags to reflect in the portal.
 
 ## Configure option to send in-app feedback
 
@@ -386,7 +423,7 @@ Use the following steps to configure the option to send feedback data to Microso
 
 1. Select **Microsoft Defender for Endpoint** as the target app.
 
-1. On the Settings page, select **Use configuration designer** and add **DefenderSendFeedback** as the key and value type as **Boolean**.
+1. On the Settings page, select **Use configuration designer** and add **DefenderFeedbackData** as the key and value type as **Boolean**.
 
    - To remove the ability of end-users to provide feedback, set the value as `false` and assign this policy to users. By default, this value is set to `true`. For US Government customers, the default value is set to 'false'.
 
@@ -397,3 +434,7 @@ Use the following steps to configure the option to send feedback data to Microso
 ## Report unsafe site
 
 Phishing websites impersonate trustworthy websites for the purpose of obtaining your personal or financial information. Visit the [Provide feedback about network protection](https://www.microsoft.com/wdsi/filesubmission/exploitguard/networkprotection) page to report a website that could be a phishing site.
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+
+
+

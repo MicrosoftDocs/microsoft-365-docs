@@ -20,7 +20,7 @@ ms.custom:
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ROBOTS:
-ms.date: 7/12/2023
+ms.date: 7/31/2023
 ---
 
 # Try Microsoft Defender for Office 365
@@ -36,6 +36,9 @@ Before you try Defender for Office 365 Plan 2, there are some key questions that
 This article helps you answer those questions so you can try Defender for Office 365 Plan 2 in a way that best meets the needs of your organization.
 
 For a companion guide for how to use your trial, see [Trial User Guide: Microsoft Defender for Office 365](trial-user-guide-defender-for-office-365.md).
+
+> [!NOTE]
+> Trials and evaluations of Defender for Office 365 aren't available in U.S. Government organizations (Microsoft 365 GCC, GCC High, and DoD) or Microsoft 365 Education organizations.
 
 ## Overview of Defender for Office 365
 
@@ -174,7 +177,7 @@ Remember, when you evaluate or try Defender for Office 365 in audit mode, specia
      - **Groups**:
        - Members of the specified distribution groups or mail-enabled security groups (dynamic distribution groups aren't supported).
        - The specified Microsoft 365 Groups.
-       - **Domains**: All recipients in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
+       - **Domains**: All recipients in the organization with a primary email address in the specified [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
      Click in the box, start typing a value, and select the value from the results below the box. Repeat this process as many times as necessary. To remove an existing value, select :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: next to the value in the box.
 
@@ -247,7 +250,7 @@ Remember, when you try Defender for Office 365 in **blocking mode**, the Standar
      - **Groups**:
        - Members of the specified distribution groups or mail-enabled security groups (dynamic distribution groups aren't supported).
        - The specified Microsoft 365 Groups.
-     - **Domains**: All recipients in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
+     - **Domains**: All recipients in the organization with a primary email address in the specified [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
      Click in the box, start typing a value, and select the value from the results below the box. Repeat this process as many times as necessary. To remove an existing value, select :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: next to the value in the box.
 
@@ -446,7 +449,7 @@ A: See [Extend your trial](/microsoft-365/commerce/try-or-buy-microsoft-365#exte
 
 ### Q: What happens to my data after the trial expires?
 
-A: After your trial expires, yo have access to your trial data (data from features in Defender for Office 365 that you didn't have previously) for 30 days. After this 30 day period, all policies and data that were associated with the Defender for Office 365 trial are deleted.
+A: After your trial expires, you have access to your trial data (data from features in Defender for Office 365 that you didn't have previously) for 30 days. After this 30 day period, all policies and data that were associated with the Defender for Office 365 trial are deleted.
 
 ### Q: How many times can I use the Defender for Office 365 trial in my organization?
 

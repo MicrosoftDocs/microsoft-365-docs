@@ -75,3 +75,4 @@ The following table gives information about the supported Microsoft Defender for
 
 > [!NOTE]
 > Windows 7, 8.1, Windows Server 2008 R2 include support for the EDR sensor, and AV using System Center Endpoint Protection (SCEP).
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

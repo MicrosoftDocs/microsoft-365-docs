@@ -9,7 +9,7 @@ metadata:
   ms.service: microsoft-syntex #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.subservice: subservice
   ms.topic: landing-page # Required
-  ms.collection: enabler-strategic, m365initiative-syntex
+  ms.collection: enabler-strategic, m365initiative-syntex, essentials-hub-or-landing
   ms.custom: intro-hub-or-landing
   author: chuckedmonson #Required; your GitHub user alias, with correct capitalization.
   ms.author: chucked #Required; microsoft alias of author; optional team alias.
@@ -39,10 +39,8 @@ landingContent:
             url: https://www.linkedin.com/learning/search?keywords=syntex&upsellOrderOrigin=default_guest_learning&trk=homepage-learning_learning-search-bar_search-submit
       - linkListType: whats-new
         links:
-          - text: Optical character recognition
-            url: ocr.md
-          - text: Prebuilt model for contracts
-            url: prebuilt-model-contract.md
+          - text: Image tagging
+            url: image-tagging-overview.md
 
 # Card 2
   - title: Get started
@@ -51,72 +49,48 @@ landingContent:
         links:
           - text: Licensing
             url: syntex-licensing.md
+          - text: Set up Syntex
+            url: set-up-microsoft-syntex.md
       - linkListType: how-to-guide
         links:
-          - text: Set up Syntex
-            url: set-up-content-understanding.md
           - text: Create a content center
             url: create-a-content-center.md
-
-# Card 3
-  - title: Build Syntex models
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Unstructured document processing
-            url: document-understanding-overview.md
-          - text: Freeform document processing
-            url: create-a-form-processing-model.md
-          - text: Structured document processing
-            url: create-a-form-processing-model.md
-          - text: Prebuilt models
-            url: prebuilt-overview.md
-      - linkListType: video
-        links:
-          - text: Syntex model types
-            url: https://www.microsoft.com/videoplayer/embed/RE4GJXS
-      - linkListType: how-to-guide
-        links:
           - text: Create an enterprise model
             url: create-syntex-model.md
           - text: Create a local model
             url: create-local-model.md
 
-    # Card 4
-  - title: Manage Syntex models
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Apply a model
-            url: apply-a-model.md
-          - text: Share an enterprise model
-            url: model-discovery.md
-          - text: Discover other trained models
-            url: discover-other-trained-models.md
-          - text: Add a retention label
-            url: apply-a-retention-label-to-a-model.md
-          - text: Add a sensitivity label
-            url: apply-a-sensitivity-label-to-a-model.md
-          - text: Analyze model usage
-            url: model-usage-analytics.md
-
-    # Card 5
-  - title: Content assembly
+# Card 3
+  - title: Syntex services
     linkLists:
       - linkListType: overview
         links:
-          - text: Learn about content assembly
+          - text: Prebuilt document processing
+            url: prebuilt-overview.md
+          - text: Structured and freeform document processing
+            url: form-processing-overview.md
+          - text: Unstructured document processing
+            url: document-understanding-overview.md
+          - text: Content assembly
             url: content-assembly.md
-      - linkListType: how-to-guide
-        links:
-          - text: Create modern templates
-            url: content-assembly-modern-template.md
-          - text: Generate documents
-            url: content-assembly-create-document.md
-          - text: Use with Power Automate
-            url: automate-document-generation.md
+          - text: Image tagging
+            url: image-tagging-overview.md
+          - text: Optical character recognition
+            url: ocr-overview.md
 
-    # Card 6
+# Card 4
+  - title: Extensibility
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: PowerShell for Syntex
+            url: powershell-syntex-intro.md
+          - text: Syntex Model REST API
+            url: /sharepoint/dev/apis/syntex/syntex-model-rest-api
+          - text: Syntex-SharePoint Advanced Management
+            url: /sharepoint/advanced-management
+
+# Card 5
   - title: Adoption
     linkLists:
       - linkListType: overview
@@ -129,17 +103,11 @@ landingContent:
         links:
           - text: Assessment tool
             url: adoption-assessment-tool.md
-          - text: Run a trial
-            url: trial-syntex.md
-      - linkListType: whats-new
-        links:
-          - text: Solution accelerators
-            url: site-templates.md
 
-    # Card 7
-  - title: More features
+# Card 6
+  - title: Other features
     linkLists:
-      - linkListType: how-to-guide
+      - linkListType: overview
         links:
           - text: Annotations
             url: annotations.md
@@ -147,22 +115,11 @@ landingContent:
             url: metadata-search.md
           - text: Content processing
             url: content-processing-overview.md
-          - text: Optical character recognition
-            url: ocr.md
+          - text: Solution accelerators
+            url: site-templates.md
 
-    # Card 8
-  - title: Extensibility
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: PowerShell for Syntex
-            url: powershell-syntex-intro.md
-          - text: Syntex Model REST API
-            url: /sharepoint/dev/apis/syntex/syntex-model-rest-api
-          - text: Syntex-SharePoint Advanced Management
-            url: /sharepoint/advanced-management
 
-    # Card 9
+    # Card 7
   - title: Get support
     linkLists:
       - linkListType: overview
@@ -170,4 +127,4 @@ landingContent:
           - text: Tech Community blog
             url: https://techcommunity.microsoft.com/t5/sharepoint-syntex-blog/bg-p/SharePointSyntex
           - text: FAQ
-            url: https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex?activetab=pivot:faqtab
+            url: https://www.microsoft.com/microsoft-365/enterprise/microsoft-syntex-plan?activetab=pivot:faqtab&rtc=1

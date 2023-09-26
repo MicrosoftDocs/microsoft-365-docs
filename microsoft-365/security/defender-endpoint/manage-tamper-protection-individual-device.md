@@ -3,10 +3,9 @@ title: Manage tamper protection on an individual device
 ms.reviewer: joshbregman, mattcall, pahuijbr, hayhov, oogunrinde
 manager: dansimp
 description: Turn tamper protection on or off for an individual device.
-keywords: malware, defender, antivirus, tamper protection
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
-ms.date: 03/08/2023
+ms.date: 09/05/2023
 audience: ITPro
 ms.topic: conceptual
 author: denisebmsft
@@ -56,3 +55,4 @@ Here's what you see in the Windows Security app:
 [Protect security settings with tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md)
 
 [Troubleshoot problems with tamper protection](troubleshoot-problems-with-tamper-protection.yml)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

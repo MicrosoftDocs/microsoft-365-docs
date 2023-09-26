@@ -19,12 +19,12 @@ ms.collection:
     - m365-security
     - m365solution-getstarted
     - highpri
-    - tier3
+    - tier1
 ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.date: 02/17/2021
+ms.date: 09/21/2023
 ---
 
 # Turn on Microsoft 365 Defender
@@ -115,3 +115,4 @@ Microsoft support staff can help provision or deprovision the service and relate
 - [Microsoft Defender for Cloud Apps overview](/cloud-app-security/what-is-cloud-app-security)
 - [Microsoft Defender for Identity overview](/azure-advanced-threat-protection/what-is-atp)
 - [Microsoft Defender for Endpoint data storage](../defender-endpoint/data-storage-privacy.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

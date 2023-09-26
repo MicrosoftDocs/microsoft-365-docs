@@ -5,7 +5,7 @@ manager: dansimp
 description: Turn tamper protection on or off for your organization in Microsoft Intune.
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
-ms.date: 06/27/2023
+ms.date: 09/05/2023
 audience: ITPro
 ms.topic: how-to
 author: denisebmsft
@@ -122,3 +122,4 @@ You can use a registry key to determine whether the functionality to protect Mic
 - [macOS Antivirus policy settings for Microsoft Defender Antivirus for Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 - [Troubleshoot problems with tamper protection](troubleshoot-problems-with-tamper-protection.yml)
 - [Manage Microsoft Defender for Endpoint on devices with Microsoft Intune](/mem/intune/protect/mde-security-integration)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

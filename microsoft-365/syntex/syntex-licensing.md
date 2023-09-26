@@ -31,12 +31,18 @@ In the future, most new Microsoft Syntex features will be added to pay-as-you-go
 > [!NOTE] 
 > Microsoft Syntex is an add-on and requires users also to have a license for Microsoft 365.
 
+> [!NOTE] 
+> For Government Community Cloud (GCC) organizations, pay-as-you-go licensing is not yet available. GCC organizations can continue to purchase and use per-user licenses until pay-as-you-go becomes available.
+
 ## Microsoft Syntex pay-as-you-go
 
 Pay-as-you-go is a way to pay for Microsoft Syntex using an Azure subscription. You can use Microsoft Syntex without any license commitment or upfront purchasing. Pay-as-you-go supports the following Microsoft Syntex services:
 
 - Prebuilt document processing
-- Unstructured document processing (formerly document understanding)
+- Unstructured document processing
+- Content assembly
+- Image tagging
+- Taxonomy tagging
 - Optical character recognition
 
 All users in your organization will be able to create and apply unstructured and prebuilt document processing models and can upload documents to a primed library. This is charged on a pay-per-use basis.
@@ -54,15 +60,14 @@ To use Syntex, you must have a license for each Syntex user. If you remove all S
 The following tasks require a [Syntex per-user license](https://www.microsoft.com/microsoft-365/enterprise/sharepoint-syntex) for the user performing them:
  
 - Apply an unstructured document processing model to a library. (Unlicensed users can be granted access to a content center and can create models there, but can't apply them to a document library.)
-- Create a structured document processing model or a freeform document processing model via the entry point in a library
-- Upload content to a library where a custom model has been applied
-- Run an unstructured document processing model on-demand
-- Create a modern template with content assembly
-- Generate a document from a modern template
-- Use of content query to search for metadata
-- Use of annotations to add notes and comments
+- Create a structured document processing model or a freeform document processing model via the entry point in a library.
+- Upload content to a library where a custom model has been applied.
+- Run an unstructured document processing model on-demand.
+- Use of content query to search for metadata.
+- Use of annotations to add notes and comments.
 - Use of premium taxonomy services. (Premium taxonomy services comprise SKOS-based term set import, pushing enterprise content types to hub-associated sites, and term store reports.)
-- Use the document library rules to move or copy content
+- Use the document library rules to move or copy content.
+- Merge and extract PDFs.
 
 Unlicensed users can be granted access to a content center and can create models there, but can't apply them to a document library.
  

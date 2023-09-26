@@ -1,4 +1,4 @@
-﻿---
+---
 title: Troubleshoot performance issues for Microsoft Defender for Endpoint on macOS
 description: Troubleshoot performance issues in Microsoft Defender for Endpoint on macOS.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, performance, big sur, monterey, ventura, mde for mac
@@ -185,3 +185,4 @@ To run the client analyzer for troubleshooting performance issues, see [Run the 
 ## See also
 
 - [Investigate agent health issues](health-status.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

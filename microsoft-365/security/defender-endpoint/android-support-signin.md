@@ -171,3 +171,4 @@ If a user faces an issue, which isn't already addressed in the above sections or
     :::image type="content" source="images/finalsubmit5.png" alt-text="The pane on which you can add details and attach diagnostic data" lightbox="images/finalsubmit5.png":::
 
 6. Click on "Submit" to successfully send the feedback.
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

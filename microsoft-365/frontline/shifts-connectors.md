@@ -1,9 +1,8 @@
 ---
 title: Shifts connectors
-author: samanro
-ms.author: samanro
-ms.reviewer: aaku
-manager: pamgreen
+author: lana-chin
+ms.author: heidip
+manager: serdars
 ms.topic: conceptual
 audience: admin
 ms.service: microsoft-365-frontline
@@ -14,7 +13,7 @@ ms.collection:
   - M365-collaboration
   - m365-frontline
   - highpri
-  - tier2
+  - teams-1p-app-admin
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers

@@ -1,6 +1,6 @@
 ### YamlMime:FAQ
 metadata:
-  ms.date: 05/22/2023
+  ms.date: 07/17/2023
   title: "Microsoft 365 Lighthouse frequently asked questions (FAQs)"
   f1.keywords: NOCSH
   ms.author: sharik
@@ -23,7 +23,7 @@ metadata:
   description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, get answers to frequently asked questions (FAQs) about Microsoft 365 Lighthouse."
 title: Microsoft 365 Lighthouse frequently asked questions (FAQs)
 summary: |
-  Last updated June 16, 2023. This article contains answers to frequently asked questions (FAQs) about Microsoft 365 Lighthouse.
+  Last updated September 19, 2023. This article contains answers to frequently asked questions (FAQs) about Microsoft 365 Lighthouse.
   
   If you can't find an answer to your question, let us know by leaving a comment and we'll add it to this article.
   
@@ -33,15 +33,18 @@ sections:
     questions:
       - question: What is Microsoft 365 Lighthouse?
         answer: |
-          Microsoft 365 Lighthouse is an admin portal that helps Managed Service Providers (MSPs) secure and manage devices, data, and users at scale for small- and medium-sized business (SMB) customers. Lighthouse simplifies onboarding of tenants by recommending security configuration baselines tailored to SMBs and providing multi-tenant views across all customer environments. For more information, see [Overview of Microsoft 365 Lighthouse](m365-lighthouse-overview.md).
+          Microsoft 365 Lighthouse helps Managed Service Providers (MSPs) grow their business and deliver services to customers at scale from a single portal. With Lighthouse, you can standardize configurations, manage risk, identify artificial intelligence (AI)-driven sales opportunities, and engage with customers in an unprecedented manner, allowing you to anticipate customers needs and maximize their investment in Microsoft 365.  
           
-      - question: What's the difference between Microsoft 365 Lighthouse and Azure Lighthouse?
-        answer: |
-          Microsoft 365 Lighthouse is focused on Microsoft 365 services rather than Azure services. While Azure Lighthouse is built into the Azure portal and allows IT partners to manage multiple tenants for Azure, Microsoft 365 Lighthouse is a standalone portal that helps MSPs manage multiple Microsoft 365 customer tenants. For more information about Microsoft 365 Lighthouse, see [Overview of Microsoft 365 Lighthouse](m365-lighthouse-overview.md). For more information about Azure Lighthouse, see [What is Azure Lighthouse?](/azure/lighthouse/overview)
+          For MSP service technicians with delegated access, Lighthouse helps you secure and manage devices, data, and users at scale for small and medium business (SMB) customers. Lighthouse simplifies onboarding of tenants by recommending security configuration baselines tailored to SMBs and providing multi-tenant views across all customer environments.
           
+          For account managers, sales professionals, and customer success users, the Sales Advisor capability within Lighthouse uses artificial intelligence (AI) to analyze your customer base and apply data models—built by Microsoft data scientists—to identify opportunities where you can engage, nurture, and grow your customer's Microsoft 365 usage through actionable recommendations and prescriptive guidance. 
+          
+          For more information, see [Overview of Microsoft 365 Lighthouse](m365-lighthouse-overview.md).
+          
+
       - question: How much does Microsoft 365 Lighthouse cost?
         answer: |
-          No additional costs are associated with using Lighthouse to manage multiple Microsoft 365 customer tenants. Lighthouse is available to MSPs servicing small- to medium-sized businesses and who have a Cloud Solution Provider (CSP) relationship with their customers. Note that indirect providers aren't currently supported by Lighthouse. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
+          No additional costs are associated with using Lighthouse to manage multiple Microsoft 365 customer tenants. Lighthouse is available to MSPs servicing small- to medium-sized businesses and who have a Cloud Solution Provider (CSP) relationship with their customers. For more information, see [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md).
 
       - question: What are the requirements to use Microsoft 365 Lighthouse?
         answer: |
@@ -86,6 +89,10 @@ sections:
               > Once you inactivate a tenant, you can't take action on the tenant until inactivation is complete. It may take up to 48 hours for inactivation to complete.
           
           To learn more about tenants, see [Microsoft 365 Lighthouse tenants page overview](m365-lighthouse-tenants-page-overview.md).
+          
+      - question: What permissions do I currently have for this tenant?
+        answer: |
+          If you can't access tenant information, you may not have the correct permissions for that tenant. Some features and data are only visible to specific roles. To view what roles you have, see [View your Azure AD roles across tenants](m365-lighthouse-view-your-roles.md).
 
   - name: Deploying baselines
     questions:          
@@ -238,6 +245,71 @@ sections:
         answer: |
           You can purchase Windows 365 licenses through all available Microsoft commercial sales channels. One license purchased is equivalent to the purchase of one Cloud PC. Currently, each user can be assigned only one Cloud PC of the same SKU type, but they can be assigned multiple Cloud PCs if they are of different SKU types. To compare Windows 365 plans and pricing, see [Get the Windows 365 Cloud PC that's right for you](https://www.microsoft.com/windows-365/business/compare-plans-pricing).
 
+  - name: Managing opportunities with Sales Advisor
+    questions:          
+      - question: What is the Sales Advisor capability in Microsoft 365 Lighthouse, and what is the business value proposition for partners? 
+        answer: |
+          Understanding how customers interact with a product or solution through data can help partners anticipate customer needs and improve overall performance throughout the various stages of the customer lifecycle.  Microsoft is investing in its partners by creating a tool that supports a customer lifecycle management (CLM) experience and continuous customer engagement across the customer lifecycle. This experience was available during a public preview phase and was referred to as “Project Orland for Microsoft 365.” The public preview phase has concluded, and this same experience is now generally available as a capability within Microsoft 365 Lighthouse.
+
+          Leveraging the same data models and insights Microsoft sellers use for account management, partners can: 
+          1.	Target customer engagement at the right time with the right actions. 
+          2.	Engage with customers when they are ready for the next step in their digital transformation based on their usage patterns.  
+          3.	Get early warning of customers where direct engagement can avoid future Microsoft 365 churn.  
+          4.	Access personalized marketing content (such as pitch decks), usage information, and more specific to each customer opportunity surfaced within the experience. 
+          5.	Take advantage of best-practice recommendations from Microsoft.
+
+      - question: What customer segments does the Sales Advisor capability in Microsoft 365 Lighthouse support? Is it only to be used with SMBs? 
+        answer: |
+          Sales Advisor surfaces opportunities across all segments. The opportunities and the models are not exclusive to SMB customers. CSP partners who support medium-sized customers will find that Sales Advisor serves them well with all the customers they engage with.  
+      - question: Is the Sales Advisor capability in Microsoft 365 Lighthouse only for Microsoft 365, or is it also available for Azure and BizApps? 
+        answer: |
+          The Microsoft 365 Lighthouse Sales Advisor capability only supports Modern Work Microsoft 365 services and solutions.  
+      - question: Once a partner is onboarded to Lighthouse, how do they get started with Sales Advisor? 
+        answer: |
+          Instructions on how to onboard to Lighthouse and how to use the Sales Advisor capabilities are posted on [Get access to Sales Advisor](m365-lighthouse-get-access-to-sales-advisor.md). 
+      - question: What is the difference between Sales Advisor and Cloud Ascent? Are they complimentary? 
+        answer: |
+          The two offerings serve different purposes and use different signals to generate information shared with partners. 
+          
+          Cloud Ascent is a targeting tool focusing on potential cloud customers that partners can move to the cloud. Partners should use Cloud Ascent to support lead generation and new customer marketing.  
+          
+          For customers with a Microsoft 365 trial or paid subscription, the sales advisor capability in Microsoft 365 Lighthouse will help partners nurture that customer by converting trials to paid, increasing product adoption, or moving paid customers to more advanced workloads. It is a lifecycle management tool that supports continuous customer engagement. Sales advisor leverages the same data models, insights, and signals that Microsoft sellers use for account management, tapping into the best practices we see across the market to help partners grow their business.  
+
+  - name: Other multitenant management solutions
+    questions:          
+      - question: What's the difference between Microsoft 365 Lighthouse and Azure Lighthouse?
+        answer: |
+          Microsoft 365 Lighthouse is focused on Microsoft 365 services rather than Azure services. While Azure Lighthouse is built into the Azure portal and allows IT partners to manage multiple tenants for Azure, Microsoft 365 Lighthouse is a standalone portal that helps MSPs manage multiple Microsoft 365 customer tenants. For more information about Microsoft 365 Lighthouse, see [Overview of Microsoft 365 Lighthouse](m365-lighthouse-overview.md). For more information about Azure Lighthouse, see [What is Azure Lighthouse?](/azure/lighthouse/overview)
+
+      - question: What's the difference between Microsoft 365 Lighthouse and the multitenant organization capabilities in Microsoft 365 Defender? If I manage services for SMBs, which should I use?
+        answer: |
+          The multitenant capabilities in Microsoft 365 Defender provide large organizations with the ability to secure and manage multiple tenants from a single portal, with a focus on global security operations center (SOC) investigation flows, including a unified view of incidents across tenants and the ability to perform advanced search across the data contained in multiple tenants. The capabilities also help enterprise managed security service providers (MSSPs) efficiently run their SOC.
+
+          For MSPs who manage services for SMB customers and who need a full set of capabilities spanning security, identity, and management of Microsoft 365 applications in a unified experience in a single portal, we continue to recommend Microsoft 365 Lighthouse.  Lighthouse includes a broader set of capabilities optimized for MSPs, particularly those using Microsoft 365 Business Premium and Defender for Business.
+
+          The following table provides a comparison between Microsoft 365 Lighthouse and the multitenant organization capabilities in Microsoft 365 Defender.
+
+          |                  |Microsoft 365 Lighthouse |Multitenant organization capabilities in Microsoft 365 Defender |
+          |------------------|---------|--------|
+          |**Audience and solution focus**|MSPs enrolled in the CSP program, particularly those focused on SMB solutions like Defender for Business and Microsoft 365 Business Premium<br><br>Includes a full set of capabilities spanning security, identity, and management of Microsoft 365 applications in a unified experience in a single portal  |Large customer organizations and MSSPs focused on enterprise customers<br><br>Helps MSSPs efficiently manage their Microsoft 365 Defender security operations by providing the ability to view incidents and alerts, search for threats, and address advanced security scenarios from a single portal |
+          |**Eligibility**|MSPs must be enrolled in the CSP program<br><br>Requires a delegated access relationship with the customer<br><br>[See full list of requirements](m365-lighthouse-requirements.md)  |Requires a [GDAP relationship](/partner-center/gdap-introduction) with the customer<br><br>Customers who use [Azure Active Directory B2B collaboration](/azure/active-directory/external-identities/what-is-b2b) |
+          |**Seat cap**|Up to 2500 seats per managed tenant  |Unlimited |
+          |**Tenant cap**|Unlimited  |Up to 50 tenants per customer or partner |
+          |**Tenant provisioning to Defender for Business or Defender for Endpoint**|Initiated via one-click provisioning in the default baseline in Lighthouse  |Initiated by selecting **Assets** > **Devices** in the customer's Microsoft 365 Defender portal |
+          |**Onboarding to Defender for Business or Defender for Endpoint**|Done via the default baseline in Lighthouse for devices enrolled in Intune  |Devices can be onboarded in each customer's Microsoft 365 Defender portal or by using Intune |
+          |**Ability to view the licensing state**|Visible through the default baseline in Lighthouse  |Visible in each customer's Microsoft 365 Defender portal |
+          |**Device inventory**|View all devices (all platforms) enrolled in Intune, or Windows devices onboarded to Defender for Business or Defender for Endpoint  |View a list of tenants and information about devices (Windows, iOS, Android, Mac, Linux) onboarded to Defender for Business or Defender for Endpoint |
+          |**Configuration management across endpoint, email, Intune, identity, data protection**|Deploy recommended configurations to tenants via the default baseline, including antivirus, firewall, and attack surface reduction policies, as well as email, Intune, and more<br><br>Detect configurations already present in the tenant and variances from the recommended configuration<br><br>Multi-tenant reporting on deployments across tenants  |Planned for a future release |
+          |**Threat and vulnerability management**|Aggregated view of exposure score, most exposed devices, and recommendations across tenants  |Aggregated view of exposure score and most exposed devices |
+          |**Incidents and alerts**|View incidents and alerts, with links to individual tenants to view details and take action<br><br>Bulk actions to assign or resolve an incident or alert<br><br>Automated incident and alert email notifications based on customizable rules  |View incidents and alerts, with links to individual tenants to view details and take action<br><br>Bulk actions to assign or resolve an incident or alert |
+          |**Advanced hunting**|Not available  |Hunt for threats across multiple tenants simultaneously<br><br>**Note:** Advanced hunting is only available in Microsoft Defender for Endpoint P2  |
+          |**Global search**|Global search for users and managed devices across tenants  |Global search for files, users, and devices across tenants |
+          |**Microsoft Secure Score**|Comparative view of Secure Score across all managed tenants  |Not available |
+          |**Identity**|Users flagged by Microsoft Entra ID Protection for risky behavior across tenants, including the ability to remediate risks in bulk<br><br>Inactive user accounts and unprotected shared mailbox accounts, including the ability to block them<br><br>Multifactor authentication enablement and registration completion across tenants<br><br>Self-service password reset enablement and registration completion across tenants  |Not available |
+          |**Management**|List of all devices enrolled in Intune and their device compliance status<br><br>Device and app health insights for devices enrolled in Intune from Endpoint analytics<br><br>List of Windows 365 Cloud PC devices and basic management actions  |Not available |
+          |**Other security capabilities**|List of devices enrolled in Intune that are overdue for scans or that don't have Microsoft Defender Antivirus or the latest Microsoft Defender Antivirus updates<br><br>Insights on quarantined emails across tenants<br><br>Aggregated view of service health incidents and advisories across tenants  |Not available |
+          |**Sales Advisor**|AI-driven insights, recommendations, and guidance to help MSPs acquire, retain, and grow customers  |Not available |
+     
   - name: Getting help and providing feedback
     questions:          
       - question: How do I get help and support?

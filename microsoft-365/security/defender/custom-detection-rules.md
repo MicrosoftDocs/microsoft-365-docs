@@ -159,6 +159,7 @@ You can run a query continuously as long as:
 Near real-time detections are supported for the following tables:
 
 - `AlertEvidence`
+- `CloudAppEvents`
 - `DeviceEvents`
 - `DeviceFileCertificateInfo`
 - `DeviceFileEvents`
@@ -173,7 +174,11 @@ Near real-time detections are supported for the following tables:
 - `EmailEvents`
 - `EmailPostDeliveryEvents`
 - `EmailUrlInfo`
+- `IdentityDirectoryEvents`
+- `IdentityLogonEvents`
+- `IdentityQueryEvents`
 - `UrlClickEvents`
+
 
 > [!NOTE]
 > Only columns that are generally available can support **Continuous (NRT)** frequency.
@@ -309,3 +314,4 @@ In the rule details screen (**Hunting** \> **Custom detections** \> **[Rule name
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the advanced hunting query language](advanced-hunting-query-language.md)
 - [Migrate advanced hunting queries from Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

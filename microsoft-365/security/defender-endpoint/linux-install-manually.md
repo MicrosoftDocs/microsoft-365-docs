@@ -114,7 +114,7 @@ In order to preview new features and provide early feedback, it is recommended t
 - Install the Microsoft GPG public key:
 
   ```bash
-  sudo rpm --import http://packages.microsoft.com/keys/microsoft.asc
+  sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
   ```
 
 ### SLES and variants
@@ -140,7 +140,7 @@ In order to preview new features and provide early feedback, it is recommended t
 - Install the Microsoft GPG public key:
 
   ```bash
-  sudo rpm --import http://packages.microsoft.com/keys/microsoft.asc
+  sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
   ```
 
 ### Ubuntu and Debian systems
@@ -491,3 +491,4 @@ See [Uninstall](linux-resources.md#uninstall-defender-for-endpoint-on-linux) for
 ## See also
 
 - [Investigate agent health issues](health-status.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

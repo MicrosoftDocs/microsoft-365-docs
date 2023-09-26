@@ -119,7 +119,6 @@ The capabilities on the following pages are fully integrated into Microsoft 365 
 
 - The new Defender for Cloud Apps experience in the Microsoft 365 Defender portal is currently available for all users detailed in [Manage admin access](/defender-cloud-apps/manage-admins), except for:
   - **App/Instance admin**, **User group admin**, **Cloud Discovery global admin**, and **Cloud Discovery report admin**, as defined in [Built-in admin roles in Defender for Cloud Apps](/defender-cloud-apps/manage-admins#built-in-admin-roles-in-defender-for-cloud-apps).
-  - User privacy groups as defined in [Activity privacy](/defender-cloud-apps/activity-privacy)
 
 ## What's changed
 
@@ -161,8 +160,16 @@ For more information, see [Microsoft Defender for Cloud Apps preview features](/
 
 Learn how to protect your cloud apps in Microsoft 365 Defender:
 
+<br>
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE59yVU]
+
+<br>
+
+> [!VIDEO https://learn.microsoft.com/_themes/docs.theme/master/en-us/_themes/global/video-embed.html?id=2105e5c9-23bf-41fb-a61d-0f0fae8ef05f]
+
 
 ## Related information
 
 - [Microsoft 365 Defender](microsoft-365-defender.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

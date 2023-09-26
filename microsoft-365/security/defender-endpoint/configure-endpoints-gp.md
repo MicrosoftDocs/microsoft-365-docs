@@ -1,11 +1,7 @@
 ---
 title: Onboard Windows devices to Microsoft Defender for Endpoint via Group Policy
 description: Use Group Policy to deploy the configuration package on Windows devices so that they are onboarded to the service.
-keywords: configure devices using group policy, device management, configure Microsoft Defender for Endpoint devices, onboard Microsoft Defender for Endpoint devices, group policy
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
@@ -16,7 +12,7 @@ ms.collection:
 - tier1
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.date: 12/07/2021
+ms.date: 09/15/2023
 ms.subservice: mde
 search.appverid: met150
 ---
@@ -219,7 +215,7 @@ For security reasons, the package used to Offboard devices will expire 30 days a
 
 5. Right-click **Scheduled tasks**, point to **New**, and then click **Immediate task**.
 
-6. In the **Task** window that opens, go to the **General** tab. Choose the local SYSTEM user account (BUILTIN\SYSTEM) under **Security options**.
+6. In the **Task** window that opens, go to the **General** tab under **Security options** and select **Change User or Group**, enter SYSTEM, then select **Check Names** and then **OK**. NT AUTHORITY\SYSTEM appears as the user account that the task will run as.
 
 7. Select **Run whether user is logged on or not** and check the **Run with highest privileges** check-box.
 
@@ -331,3 +327,4 @@ When you configure cloud protection level policy to **Default Microsoft Defender
 - [Onboard non-persistent virtual desktop infrastructure (VDI) devices](configure-endpoints-vdi.md)
 - [Run a detection test on a newly onboarded Microsoft Defender for Endpoint devices](run-detection-test.md)
 - [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

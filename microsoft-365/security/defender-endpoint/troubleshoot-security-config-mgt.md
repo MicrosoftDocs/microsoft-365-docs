@@ -1,11 +1,7 @@
 ---
 title: Troubleshoot onboarding issues related to Security Management for Microsoft Defender for Endpoint
 description: Troubleshoot issues that might arise during the onboarding of devices using Security Management for Microsoft Defender for Endpoint.
-keywords: troubleshoot onboarding, onboarding issues, event viewer, data collection and preview builds, sensor data and diagnostics
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
@@ -17,7 +13,7 @@ ms.collection:
 ms.topic: troubleshooting
 ms.subservice: mde
 search.appverid: met150
-ms.date: 06/19/2023
+ms.date: 08/04/2023
 ---
 
 # Troubleshoot onboarding issues related to Security Management for Microsoft Defender for Endpoint
@@ -202,8 +198,9 @@ For Security Management for Microsoft Defender for Endpoint on Windows Server 20
 7. Select **Save** to save the new rule.
 
 > [!NOTE]
-> After this rule change is performed, a full synchronization of your Active Directory will be required. For large environments, it is recommended to schedule this rule change and full sync during on-premise Active Directory quiet periods.
+> After this rule change is performed, a full synchronization of your Active Directory is required. For large environments, it is recommended to schedule this rule change and full sync during on-premises Active Directory quiet periods.
 
 ## Related topic
 
 - [Manage Microsoft Defender for Endpoint on devices with Microsoft Intune](/mem/intune/protect/mde-security-integration)
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

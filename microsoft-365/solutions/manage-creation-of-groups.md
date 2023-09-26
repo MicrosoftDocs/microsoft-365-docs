@@ -1,15 +1,17 @@
 ---
-title: "Manage who can create Microsoft 365 Groups"
+title: Manage who can create Microsoft 365 Groups
 f1.keywords: NOCSH
 ms.author: mikeplum
-ms.reviewer: arvaradh
-ms.date: 02/18/2020
+ms.reviewer: rahulnayak
+ms.date: 07/28/2023
 author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-solutions
 ms.localizationpriority: medium
+ms.custom:
+  - has-azure-ad-ps-ref
 ms.collection: 
 - highpri
 - M365-subscription-management
@@ -19,7 +21,7 @@ search.appverid:
 - MET150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 recommendations: false
-description: "Learn how to control which users can create Microsoft 365 Groups."
+description: Learn how to control which users can create Microsoft 365 Groups.
 ---
 
 # Manage who can create Microsoft 365 Groups
@@ -36,7 +38,6 @@ When you limit who can create a group, it affects all services that rely on grou
 - SharePoint
 - Viva Engage
 - Microsoft Teams
-- Microsoft Stream
 - Planner
 - Power BI (classic)
 - Project for the web / Roadmap
@@ -47,6 +48,7 @@ The steps in this article won't prevent members of certain roles from creating G
 - Partner Tier 1 Support: Microsoft 365 admin center, Exchange admin center, Azure AD
 - Partner Tier 2 Support: Microsoft 365 admin center, Exchange admin center, Azure AD
 - Directory Writers: Azure AD
+- Groups Administrator: Azure AD
 - SharePoint Administrator: SharePoint admin center, Azure AD
 - Teams Service Administrator: Teams admin center, Azure AD
 - User Administrator: Microsoft 365 admin center, Azure AD

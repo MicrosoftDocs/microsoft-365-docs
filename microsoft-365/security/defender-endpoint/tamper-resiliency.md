@@ -64,7 +64,7 @@ One of the most common tampering techniques is to use a vulnerable driver to gai
 
 In order to prevent a driver based tampering on a single device, the device needs to be configured to block the loading of that driver before the attack.
 
-Microsoft provides several ways to keep devices well protected and up-to-date against driver based tampering.
+Microsoft provides several ways to keep devices well protected and up to date against driver based tampering.
 
 ### Broadest protection - Microsoft vulnerable driver blocklist
 
@@ -135,3 +135,4 @@ If [Windows Defender Application Control](/windows/security/threat-protection/wi
 
 
 
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

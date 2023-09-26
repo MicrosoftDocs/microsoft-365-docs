@@ -19,7 +19,7 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 04/27/2022
 ---
 
@@ -70,3 +70,4 @@ UrlClickEvents
 - [Proactively hunt for threats](advanced-hunting-overview.md)
 - [Safe Links in Microsoft Defender for Office 365](../office-365-security/safe-links-about.md)
 - [Take action on advanced hunting query results](advanced-hunting-take-action.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

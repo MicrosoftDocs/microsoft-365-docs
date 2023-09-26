@@ -269,9 +269,6 @@ The **Mail latency report** in Defender for Office 365 contains information on t
 
 ## Post-delivery activities report
 
-> [!NOTE]
-> This report is in the process of being rolled out. Worldwide availability is expected by the end of March 2023.
-
 The **Post-delivery activities** report shows information about email messages that removed from user mailboxes after delivery by zero-hour auto purge (ZAP). For more information about ZAP, see [Zero-hour auto purge (ZAP) in Exchange Online](zero-hour-auto-purge.md).
 
 The report shows real-time information, with updated threat information.
@@ -1016,7 +1013,7 @@ The **URL protection report** is available only in Microsoft Defender for Office
 ## User reported messages report
 
 > [!IMPORTANT]
-> In order for the **User reported messages** report to work correctly, **audit logging must be turned on** in your Microsoft 365 organization (it's on by default). For more information, see [Turn auditing on or off](../../compliance/audit-log-enable-disable.md).
+> In order for the **User reported messages** report to work correctly, **audit logging must be turned on** in your Microsoft 365 organization (it's on by default). For more information, see [Turn auditing on or off](/purview/audit-log-enable-disable).
 
 The **User reported messages** report shows information about email messages that users have reported as junk, phishing attempts, or good mail by using the [built-in Report button in Outlook on the web](submissions-outlook-report-messages.md#use-the-built-in-report-button-in-outlook-on-the-web) or the [Microsoft Report Message or Report Phishing add-ins](submissions-outlook-report-messages.md#use-the-report-message-and-report-phishing-add-ins-in-outlook).
 

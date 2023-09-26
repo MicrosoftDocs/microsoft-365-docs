@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 06/10/2020
+ms.date: 09/14/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -25,7 +25,7 @@ description: "Monitor failed and delayed emailed messages sent to or from accoun
 
 In every Microsoft 365 organization, there are people that are essential, like executives, leaders, managers, or other users who have access to sensitive, proprietary, or high priority information.
 
-To help your organization protect these accounts, you can now designate specific users as priority accounts and leverage app-specific features that provide them with extra protection. In the future, more apps and features will support priority accounts, and to start with, we've announced two capabilities: **priority account protection** and **premium mail flow monitoring**.
+To help your organization protect these accounts, you can now designate specific users as priority accounts and leverage app-specific features that provide them with extra protection. In the future, more apps and features will support priority accounts, and to start with, we've announced two capabilities: **priority account protection** and **Exchange Online priority account monitoring** including **premium mail flow monitoring**.
 
 - **Priority account protection** - Microsoft Defender for Office 365 supports priority accounts as tags that can be used in filters in alerts, reports, and investigations. For more information, check out [User tags in Microsoft Defender for Office 365](../../security/office-365-security/user-tags-about.md).
 
@@ -33,6 +33,8 @@ To help your organization protect these accounts, you can now designate specific
 
   - **Additional heuristics**: Our analysis of mail flow in the Microsoft datacenters indicates that mail flow patterns for company executives are different than the average employee. Priority account protection offers additional heuristics that are specifically tailored to company executives that wouldn't benefit a regular employee.
   - **Additional visibility in reporting**: In effect, information for all users (or all affected users) is already available in alerts, reports, and investigations. The priority accounts tag as a filter allows you to specifically target your investigations.
+
+- **Exchange Online priority account monitoring** - Making sure core functionalities of Exchange Online run smoothly is important for priority account users. Scenarios such as Exchange licensing, Mailbox storage, Message limit, subfolders per folder, folder hierarchy and recoverable items can be monitored. For more information, check out [Exchange Online monitoring for Microsoft 365](../../enterprise/microsoft-365-exchange-monitoring.md).
 
 - **Premium Mail Flow Monitoring** - Healthy mail flow can be critical to business success, and delivery delays or failures can have a negative impact on the business. You can choose a threshold for failed or delayed emails, receive alerts when that threshold is exceeded, and view a report of email issues for priority accounts. For more information, check out [Email issues for priority accounts report in the modern EAC](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)
 
@@ -44,7 +46,7 @@ The **Priority account protection** feature that's described in this topic is av
 
 - Microsoft Defender for Office 365 Plan 2, including those with Office 365 E3, Office 365 E5, Microsoft 365 E5, or Microsoft 365 E5 Security.
 
-The **Premium Mail Flow Monitoring** feature that's described in this topic is available only to organizations that meet the following requirements:
+The **Exchange Online priority account monitoring** and **Premium mail flow monitoring** features that are described in this topic is available only to organizations that meet the following requirements:
 
 - Your organization needs to have a license count of at least 5,000, from either one of, or a combination of the following products: Office 365 E3, Microsoft 365 E3, Office 365 E5, Microsoft 365 E5. For example, your organization can have 3,000 Office 365 E3 licenses and 2,500 Microsoft 365 E5, for a total of 5,500 licenses from the qualifying products.
 - Your organization needs to have at least 50 monthly active users for one or more core workloads – Teams, OneDrive for Business, SharePoint Online, Exchange Online and Microsoft 365 apps.

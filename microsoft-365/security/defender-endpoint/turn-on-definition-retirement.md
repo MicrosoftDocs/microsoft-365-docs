@@ -30,7 +30,7 @@ search.appverid: met150
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-You can configure definition retirement using Group Policy. Definition retirement checks to see if a computer has the required security updates necessary to protect it against a particular vulnerability. If the system isn't vulnerable to the exploit detected by a definition, then that definition is "retired". If all security intelligence for a given protocol is retired, then that protocol is no longer parsed. Enabling this feature helps to improve performance. On a computer that is up-to-date with all the latest security updates, network protection has no impact on network performance.
+You can configure definition retirement using Group Policy. Definition retirement checks to see if a computer has the required security updates necessary to protect it against a particular vulnerability. If the system isn't vulnerable to the exploit detected by a definition, then that definition is "retired". If all security intelligence for a given protocol is retired, then that protocol is no longer parsed. Enabling this feature helps to improve performance. On a computer that is up to date with all the latest security updates, network protection has no impact on network performance.
 
 ## Use Group Policy to configure definition retirement
 
@@ -48,3 +48,4 @@ You can configure definition retirement using Group Policy. Definition retiremen
 
 > [!TIP]
 > Are you using Group Policy Objects on premises? See how they translate in the cloud. [Analyze your on-premises group policy objects using Group Policy analytics in Microsoft Intune](/mem/intune/configuration/group-policy-analytics).
+[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

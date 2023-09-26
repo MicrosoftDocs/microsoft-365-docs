@@ -8,7 +8,7 @@ manager: dansimp
 audience: Admin
 ms.reviewer: dhagarwal
 ms.topic: how-to
-ms.date: 6/20/2023
+ms.date: 8/7/2023
 ms.localizationpriority: medium
 search.appverid:
   - MET150
@@ -97,13 +97,21 @@ After the add-in is installed and enabled, users see the following icons based o
 
 - The add-ins aren't available for on-premises Exchange mailboxes.
 
-- For more information on how to report a message using the Report Message feature, see [Report false positives and false negatives in Outlook](submissions-outlook-report-messages.md).
+- For more information on how to report a message using reporting in Outlook, see [Report false positives and false negatives in Outlook](submissions-outlook-report-messages.md).
 
   > [!NOTE]
-  > Reported messages are available to admins on the **User reported** tab of **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=user> **only** if both of the following settings are configured on the **User reported** page at <https://security.microsoft.com/securitysettings/userSubmission>:
+  > Reported messages are available to admins on the **User reported** tab of **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=user> **only** if both of the following settings are configured on the **User reported settings** page at <https://security.microsoft.com/securitysettings/userSubmission>:
   >
-  > - The toggle on the **User reported** page is **On** :::image type="icon" source="../../media/scc-toggle-on.png" border="false":::.
-  > - **Use the built-in "Report" button with "Phishing", "Junk", and "Not Junk options"** is selected.
+  > - **Monitor reported messages in Outlook** is selected.
+  > - **Use the built-in "Report" button in Outlook** is selected.
+
+- If the [User reported settings](submissions-user-reported-messages-custom-mailbox.md) in the organization send user reported messages (email and [Microsoft Teams](submissions-teams.md)) to Microsoft (exclusively or in addition to the reporting mailbox), we do the same checks as when admins submit messages to Microsoft for analysis from the **Submissions** page:
+  - **Email authentication check** (email messages only): Whether email authentication passed or failed when it was delivered.
+  - **Policy hits**: Information about any policies or overrides that might have allowed or blocked the incoming email into the organization, thus overriding our filtering verdicts.
+  - **Payload reputation/detonation**: Up-to-date examination of any URLs and attachments in the message.
+  - **Grader analysis**: Review done by human graders to confirm whether or not messages are malicious.
+
+  So, submitting or resubmitting messages to Microsoft is useful to admins only for messages that have never been submitted to Microsoft, or when you disagree with the original verdict.
 
 - Organizations that use URL filtering or a third-party security solution (for example, a proxy and/or firewall) must be able to reach the following URLs using the HTTPS protocol:
   - `ipagave.azurewebsites.net`

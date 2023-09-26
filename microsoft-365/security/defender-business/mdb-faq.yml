@@ -11,8 +11,8 @@ metadata:
   ms.service: microsoft-365-security
   ms.subservice: mdb
   ms.localizationpriority: medium
-  ms.date: 06/29/2023
-  ms.reviewer: efratka, jomaun
+  ms.date: 07/19/2023
+  ms.reviewer: efratka, nehabha
   f1.keywords: NOCSH 
   ms.collection: 
   - SMB
@@ -57,7 +57,7 @@ sections:
           Yes. Defender for Business supports protection for Windows, Mac, Android, and iOS/iPadOS devices. See [Onboard devices](mdb-onboard-devices.md).
 
           - You can onboard Windows and Mac client devices using a local script in the Microsoft 365 Defender portal. 
-          - To onboard Android and iOS/iPadOS devices, you can use [Microsoft Intune](/mem/intune/) or [mobile threat defense capabilities](mdb-mtd.md) (preview) in Defender for Business.
+          - To onboard Android and iOS/iPadOS devices, you can use [Microsoft Intune](/mem/intune/) or [mobile threat defense capabilities](mdb-mtd.md) in Defender for Business.
 
       - question: Does Defender for Business support servers? 
         answer: |

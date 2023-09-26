@@ -92,3 +92,4 @@ The following table lists the available tools based on the endpoint that you nee
 Return to the overview for [Evaluate Microsoft Defender for Endpoint](eval-defender-endpoint-overview.md)
 
 Return to the overview for [Evaluate and pilot Microsoft 365 Defender](eval-overview.md)
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
