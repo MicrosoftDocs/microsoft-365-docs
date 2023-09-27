@@ -34,7 +34,7 @@ The customer tenant must be active within Microsoft 365 Lighthouse. To determine
 
 ## Notify users who aren't registered for MFA
 
-1. In the left navigation pane in Lighthouse, select **Users** \> **Multifactor authentication**.
+1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Users** \> **Multifactor authentication**.
 
 2. Select the tenant that contains the user(s) that you want to notify.
 
@@ -60,7 +60,7 @@ The customer tenant must be active within Microsoft 365 Lighthouse. To determine
 
 ## Exclude users from MFA registration
 
-1. In the left navigation pane in Lighthouse, select **Users \> Multifactor authentication**.
+1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Users \> Multifactor authentication**.
 
 2. Select the tenant containing the user(s) you want to exclude.
 
@@ -77,7 +77,7 @@ The customer tenant must be active within Microsoft 365 Lighthouse. To determine
 
 ## Block sign-in for users not registered for MFA
 
-1. In the left navigation pane in Lighthouse, select **Users \> Multifactor authentication**.
+1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Users \> Multifactor authentication**.
 2. Select the tenant that contains the user(s) you want to block.
 3. Select **Users not registered for MFA** tab.
 4. Select the user(s) that you want to block.
@@ -92,7 +92,7 @@ Blocking a user prevents anyone from signing in as this user and is a good idea 
 
 ## Remove a user from the Excluded users group
 
-1. In the left navigation pane in Lighthouse, select **Users \> Multifactor authentication**.
+1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Users \> Multifactor authentication**.
 2. Select the tenant that contains the user(s) you want to remove.
 3. Select **Exclude users** tab.
 4. Select the user(s) that you want to remove.
