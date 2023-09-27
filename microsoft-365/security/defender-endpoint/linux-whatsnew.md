@@ -159,7 +159,7 @@ sudo systemctl disable mdatp
 **What's new**
 
 - There are multiple fixes and new changes in this release
-	- If a proxy is set for Defender for Endpoint, then it is visible in the `mdatp health` command output
+	- If a proxy is set for Defender for Endpoint, then it's visible in the `mdatp health` command output
 	- With this release we provided two options in mdatp diagnostic hot-event-sources:
         1. Files
         2. Executables
@@ -167,7 +167,7 @@ sudo systemctl disable mdatp
 	- Improved logging in Network Protection block and audit events for debugging
 - Other fixes and improvements
     - From this version, enforcementLevel are in passive mode by default giving admins more control over where they want 'RTP on' within their estate
-    - This change only applies to fresh MDE deployments, for example, servers where Defender for Endpoint is being deployed for the first time. In update scenarios, servers that have Defender for Endpoint deployed with RTP ON, will continue operating with RTP ON even post update to version 101.23062.0010
+    - This change only applies to fresh MDE deployments, for example, servers where Defender for Endpoint is being deployed for the first time. In update scenarios, servers that have Defender for Endpoint deployed with RTP ON, continue operating with RTP ON even post update to version 101.23062.0010
 
 - Bug Fixes
     - RPM database corruption issue in Defender Vulnerability Management baseline has been fixed
