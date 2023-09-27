@@ -830,7 +830,7 @@ As an alternative to the above, you can follow the instructions to [uninstall](/
 **What's new**
 
 - The command-line tool now supports restoring quarantined files to a location other than the one where the file was originally detected. This can be done through `mdatp threat quarantine restore --id [threat-id] --path [destination-folder]`.
-- Starting with this version, network protection for Linux can be evaluated on demand
+- Beginning with this version, network protection for Linux can be evaluated on demand
 - Bug fixes
 
 <br/><br/>
