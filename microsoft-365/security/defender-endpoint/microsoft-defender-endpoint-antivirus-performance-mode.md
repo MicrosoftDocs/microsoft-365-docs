@@ -21,7 +21,7 @@ search.appverid: met150
 ms.date: 06/06/2023
 ---
 
-# Protecting Dev Drive using performance mode
+# Protect Dev Drive using performance mode
 
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
