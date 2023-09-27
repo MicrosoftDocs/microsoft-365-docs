@@ -215,7 +215,7 @@ sudo systemctl disable mdatp
 - There are multiple fixes and new changes in this release
   	- The build version schema is updated from this release. While the major version number remains same as 101, the minor version number now has five digits followed by four digit patch number that is, `101.xxxxx.yyy`
   	- Improved Network Protection memory consumption under stress
- 	- Updated engine version to `1.1.20300.5` and signature version to `1.391.2837.0`.
+ 	- Updated the engine version to `1.1.20300.5` and signature version to `1.391.2837.0`.
 	- Bug fixes.
 
 **Known issues**
@@ -260,7 +260,7 @@ sudo systemctl disable mdatp
 - There are multiple fixes and new changes in this release 
 	- Improved Network Protection Proxy handling.
 	- In Passive mode, Defender for Endpoint no longer scans when Definition update happens.
-	- Device will continue to be protected even after Defender for Endpoint agent has expired. It is still recommended to upgrade the Defender for Endpoint Linux agent to the latest available version to receive bug fixes, features and performance improvements.
+	- Devices continue to be protected even after Defender for Endpoint agent has expired. We recommend upgrading the Defender for Endpoint Linux agent to the latest available version to receive bug fixes, features and performance improvements.
 	- Removed semanage package dependency.
 	- Engine Update to `1.1.20100.7` and Signatures Ver: `1.385.1648.0`.
 	- Bug fixes.
