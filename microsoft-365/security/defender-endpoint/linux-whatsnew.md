@@ -637,9 +637,9 @@ sudo mdatp config real-time-protection --value=disabled
 sudo systemctl disable mdatp
 ```
 
-After executing the above, use your package manager to perform the upgrade.
+After executing the commands, use your package manager to perform the upgrade.
 
-As an alternative to the above, you can follow the instructions to [uninstall](/microsoft-365/security/defender-endpoint/linux-resources#uninstall), then [install](/microsoft-365/security/defender-endpoint/linux-install-manually#application-installation) the latest version of the package.
+As an alternative approach, follow the instructions to [uninstall](/microsoft-365/security/defender-endpoint/linux-resources#uninstall), then [install](/microsoft-365/security/defender-endpoint/linux-install-manually#application-installation) the latest version of the package.
 </br>
 
 <br/><br/>
@@ -784,7 +784,7 @@ As an alternative to the above, you can follow the instructions to [uninstall](/
 
 **What's new**
 
-- Addressed an issue where the product would incorrectly block access to files greater than 2GB in size when running on older kernel versions
+- Addressed an issue where the product would incorrectly block access to files greater than 2 GB in size when running on older kernel versions
 - Bug fixes
 
 <br/><br/>
