@@ -5,7 +5,7 @@ ms.service: microsoft-365-security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 06/29/2023
+ms.date: 09/27/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
