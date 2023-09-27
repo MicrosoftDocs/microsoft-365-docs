@@ -998,7 +998,7 @@ As an alternative to the above, you can follow the instructions to [uninstall](/
 
    <p><b>What's new</b></p>
 
-   - Performance improvement for the situation where an entire mount point is added to the antivirus exclusion list. Prior to this version, file activity originating from the mount point was still processed by the product. Beginning with this version, file activity for excluded mount points is suppressed, leading to better product performance
+   - Performance improvement for the situation where an entire mount point is added to the antivirus exclusion list. Prior to this version, the product processed file activity originating from the mount point. Beginning with this version, file activity for excluded mount points is suppressed, leading to better product performance
    - Added a new option to the command-line tool to view information about the last on-demand scan. To view information about the last on-demand scan, run `mdatp health --details antivirus`
    - Other performance improvements & bug fixes
 
