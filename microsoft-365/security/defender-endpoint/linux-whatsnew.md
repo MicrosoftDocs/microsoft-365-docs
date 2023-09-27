@@ -58,7 +58,7 @@ This article is updated frequently to let you know what's new in the latest rele
       ```
     - Prerequisite to enable feature
       - Engine version on device needs to be `1.1.23080.007` or later. Check your engine version using the following command: ` mdatp health --field engine_version`
-  - Option to support monitoring of NFS and FUSE mount points. (These are ignored by default).
+  - Option to support monitoring of NFS and FUSE mount points. (These mount points are ignored by default).
     Example to monitor all filesystem ignoring only NFS :
     ```
     "antivirusEngine": {
@@ -957,7 +957,7 @@ As an alternative to the above, you can follow the instructions to [uninstall](/
    <p><b>What's new</b></p>
 
    - Beginning with this version, threats detected during on-demand antivirus scans triggered through the command-line client are automatically remediated. Threats detected during scans triggered through the user interface still require manual action.
-   - `mdatp diagnostic real-time-protection-statistics` now supports two additional switches:
+   - `mdatp diagnostic real-time-protection-statistics` now supports two more switches:
      - `--sort`: sorts the output descending by total number of files scanned
      - `--top N`: displays the top N results (only works if `--sort` is also specified)
    - Performance improvements & bug fixes
