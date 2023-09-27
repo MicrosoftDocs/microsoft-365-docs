@@ -462,11 +462,11 @@ In case the issue reappears with some different denials. We need to run the miti
 		- Improve the stability of mdatp stop flow.
 	- Added new field to wdavstate to keep track of platform update time.
 	- Stability improvements to parsing Defender for Endpoint onboarding blob.
-	- Scan doesn't proceed if a valid license is not present (fixed)
+	- Scan doesn't proceed if a valid license isn't present (fixed)
 	- Added performance tracing option to xPlatClientAnalyzer, with tracing enabled mdatp process dumps the flow in all_process.zip file that can be used for analysis of performance issues.
-	- Added support in Defender for Endpoint for the below RHEL-6 kernel versions
-		- 2.6.32-754.43.1.el6.x86_64
-		- 2.6.32-754.49.1.el6.x86_64
+	- Added support in Defender for Endpoint for the following RHEL-6 kernel versions:
+		- `2.6.32-754.43.1.el6.x86_64`
+		- `2.6.32-754.49.1.el6.x86_64`
 	- Other fixes
 	
 **Known issues**
