@@ -56,7 +56,7 @@ Security Copilot creates an incident report containing the following details:
 - The timestamps for the first and last actions, including incident assignment and closure.
 - Actions done on the incident, including:
   - Incident assignment or incident closure
-  - Remediation actions ([manual](respond-first-incident-remediate#manual-remediation.md) or [automated](respond-first-incident-remediate#automatic-remediation.md)) from Microsoft 365 Defender and Microsoft Sentinel portals applied
+  - [Portal-based](respond-first-incident-remediate.md#manual-remediation) and [automated](respond-first-incident-remediate.md#automatic-remediation) remediation actions from Microsoft 365 Defender and Microsoft Sentinel applied
   - Comments supplied by analysts
 - The conclusion of the investigation.
 - Gaps and follow up requirements to be addressed.

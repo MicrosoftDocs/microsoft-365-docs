@@ -62,7 +62,7 @@ Microsoft 365 Defender brings the capabilities of Security Copilot to the portal
 
 Investigating incidents with multiple alerts can be a daunting task. To immediately understand an incident, you can tap Security Copilot in Microsoft 365 Defender to [summarize an incident](security-copilot-m365d-incident-summary.md) for you. Security Copilot creates an overview of the attack containing essential information for you to understand what transpired in the attack, what assets are involved, and the timeline of the attack. Security Copilot automatically creates a summary when you navigate to an incident's page.
 
-:::image type="content" source="../../media/copilot-in-defender/first-run/fig1-sec-copilot-m365d-first-run.png" alt-text="Incident summary pane as seen in Microsoft 365 Defender's incident page" lightbox="../../media/copilot-in-defender/script-analyzer/fig1-sec-copilot-m365d-first-run.png":::
+:::image type="content" source="../../media/copilot-in-defender/first-run/fig1-sec-copilot-m365d-first-run.png" alt-text="Incident summary pane as seen in Microsoft 365 Defender's incident page" lightbox="../../media/copilot-in-defender/first-run/fig1-sec-copilot-m365d-first-run.png":::
 
 ### Take action on incidents through guided response
 
