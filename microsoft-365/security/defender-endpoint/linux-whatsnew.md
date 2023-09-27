@@ -525,7 +525,7 @@ sudo systemctl disable mdatp
   - Fixes an issue with Network Protection and SMB.
   - lttng performance tracing support.
   - TVM, eBPF, auditd, telemetry and mdatp cli improvements.
-  - mdatp health will now report behavior_monitoring
+  - mdatp health now reports behavior_monitoring
   - Other fixes.
 
 **Known issues**
