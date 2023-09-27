@@ -39,22 +39,25 @@ ms.date: 10/10/2023
 
 Incident responders usually conclude investigations by writing a report. The report usually includes a summary of the incident, a timeline of what happened and what remediation and solutions were deployed, the team members involved in the investigation, and recommendations to consider. The incident report is essential for current and future security decision making and investigations. However, putting together all the elements for the documentation can be time-consuming. Security teams can now instantly create an incident report within the portal with Security Copilot.
 
-An incident report differs from an [incident summary](security-copilot-m365d-incident-summary.md). An incident summary is a high-level overview of the incident, while an incident report contains all the details of the investigation, including the actions taken by the team, the automation applied, and the comments from the analysts. The incident report gets all relevant incident data from the Microsoft portals where the security teams work.
+An incident report differs from an [incident summary](security-copilot-m365d-incident-summary.md). An incident summary is a high-level overview of the incident, while an incident report contains all the details of the investigation, including the actions taken by the team, the automation applied, and the comments from the analysts. Whether security teams are using Microsoft 365 Defender, Microsoft Sentinel, or both, all relevant incident data are added into the generated incident report.
 
-This guide outlines what to expect and how to access incident report creation capability within the portal, including information on how to provide feedback.
+This guide outlines what to expect and how to access the incident report creation capability within the portal, including information on how to provide feedback.
 
 ## Technical requirements
 
-[Learn about the requirements for Security Copilot to get started](/copilot/microsoft-365-copilot-requirements.md).
+[Learn about the Security Copilot requirements](/copilot/microsoft-365-copilot-requirements.md).
 
 ## Create an incident report
 
-Security Copilot helps you create an incident report that includes:
+Security Copilot creates an incident report containing the following details:
 
-- An overview of the incident or attack.
+- The incident summary.
 - The team members who responded to the incident.
-- The timestamps for the first and last actions applied to the incident.
-- The actions done on the incident, including incident assignment, the available actions from Microsoft 365 Defender and Microsoft Sentinel portals applied to the incident, the automated actions from the portals, and comments supplied by analysts.
+- The timestamps for the first and last actions, including incident assignment and closure.
+- Actions done on the incident, including:
+  - Incident assignment or incident closure
+  - Remediation actions ([manual](respond-first-incident-remediate#manual-remediation.md) or [automated](respond-first-incident-remediate#automatic-remediation.md)) from Microsoft 365 Defender and Microsoft Sentinel portals applied
+  - Comments supplied by analysts
 - The conclusion of the investigation.
 - Gaps and follow up requirements to be addressed.
 
@@ -68,7 +71,8 @@ To create an incident report:
 :::image type="content" source="../../media/copilot-in-defender/incident-report/fig3-sec-copilot-m365d-create-report.png" alt-text="Incident report card in the incident page" lightbox="../../media/copilot-in-defender/incident-report/fig3-sec-copilot-m365d-create-report.png":::
 4. You can copy the report details, add the details to an activity log, restart report creation, or see the results in the Security Copilot standalone product. To do any of these actions, select the three dots located on right side of the incident report card.
 :::image type="content" source="../../media/copilot-in-defender/incident-report/fig4-sec-copilot-m365d-create-report.png" alt-text="User options in the incident report card" lightbox="../../media/copilot-in-defender/incident-report/fig4-sec-copilot-m365d-create-report.png":::
-5. When posting the report to the activity log, [INSERT SCREENSHOT HERE]
+5. Selecting **Post to activity log** adds the incident report to the activity log.
+:::image type="content" source="../../media/copilot-in-defender/incident-report/fig5-sec-copilot-m365d-create-report.png" alt-text="Screenshot of the activity log with details from the incident report" lightbox="../../media/copilot-in-defender/incident-report/fig5-sec-copilot-m365d-create-report.png":::
 6. A new tab opens when you select **Open in Security Copilot**.
 
 ## Managing feedback

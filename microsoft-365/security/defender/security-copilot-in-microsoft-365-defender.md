@@ -52,19 +52,17 @@ To review Security Copilot and assess if it’s right for your organization, see
 
 ## Technical requirements
 
-See the Security Copilot Early Access Program onboarding for the full list of technical requirements.
+[See the requirements to access Security Copilot](/copilot/microsoft-365-copilot-requirements.md).
 
 ## Key features
 
 Microsoft 365 Defender brings the capabilities of Security Copilot to the portal, enabling security teams to tackle attack investigations in a timely manner with ease and precision. Bringing AI to Microsoft 365 Defender allows teams to understand attacks immediately, promptly assess and apply appropriate mitigation to stop and contain attacks, quickly analyze complex files, and hunt for threats with ease.
 
-[Insert gif/video of first modal here when available]
-
 ### Summarize incidents quickly
 
 Investigating incidents with multiple alerts can be a daunting task. To immediately understand an incident, you can tap Security Copilot in Microsoft 365 Defender to [summarize an incident](security-copilot-m365d-incident-summary.md) for you. Security Copilot creates an overview of the attack containing essential information for you to understand what transpired in the attack, what assets are involved, and the timeline of the attack. Security Copilot automatically creates a summary when you navigate to an incident's page.
 
-[Insert screenshot]
+:::image type="content" source="../../media/copilot-in-defender/first-run/fig1-sec-copilot-m365d-first-run.png" alt-text="Incident summary pane as seen in Microsoft 365 Defender's incident page" lightbox="../../media/copilot-in-defender/script-analyzer/fig1-sec-copilot-m365d-first-run.png":::
 
 ### Take action on incidents through guided response
 
@@ -76,13 +74,13 @@ Approaching solutions and mitigation for any incident can oftentimes be complex 
 
 Most attackers rely on sophisticated malware and files when launching attacks to avoid detection and investigation. These files are usually obfuscated and arrive as scripts, Powershell, batch, and bash. Security Copilot can quickly analyze these types of files to facilitate faster investigation, reducing the time for [script or code analysis](security-copilot-m365d-script-analysis.md) and helping security teams decide on the next action steps using information about these files’ capabilities.
 
-:::image type="content" source="../../media/copilot-in-defender/script-analyzer/fig5-sec-copilot-m365d-script.png" alt-text="Script analysis card on the Security Copilot pane in the Microsoft 365 Defender incident page" lightbox="../../media/copilot-in-defender/script-analyzer/fig5-sec-copilot-m365d-script.png":::
+:::image type="content" source="../../media/copilot-in-defender/first-run/fig3-sec-copilot-m365d-first-run.png" alt-text="Script analysis card on the Security Copilot pane in the Microsoft 365 Defender incident page" lightbox="../../media/copilot-in-defender/first-run/fig3-sec-copilot-m365d-first-run.png":::
 
 ### Generate KQL queries from natural-language input 
 
 Security teams who use advanced hunting to proactively hunt for threats in their network can now use a query assistant that converts any natural-language question in the context of threat hunting, into a ready-to-run KQL query. The query assistant saves security teams time by generating a KQL query that can then be automatically run or further tweaked according to the analyst needs. Read more about the query assistant in [Security Copilot in advanced hunting](advanced-hunting-security-copilot.md)
 
-[Insert screenshot]
+:::image type="content" source="../../media/copilot-in-defender/first-run/fig2-sec-copilot-m365d-first-run.png" alt-text="Query assistant pane as seen in the Microsoft 365 Defender advanced hunting page" lightbox="../../media/copilot-in-defender/first-run/fig2-sec-copilot-m365d-first-run.png":::
 
 ### Write post-investigation reports with speed and accuracy
 
@@ -92,11 +90,11 @@ Investigation conclusions usually require reports to document the attack, the st
 
 ## Next steps
 
-- [Learn how to summarize incidents](security-copilot-m365d-incident-summary.md) with Security Copilot in Microsoft 365 Defender
-- [Use guided responses](security-copilot-m365d-guided-response.md) with Security Copilot in Microsoft 365 Defender when responding to incidents
-- [Analyze scripts and codes](security-copilot-m365d-script-analysis.md) with Security Copilot in Microsoft 365 Defender
-- [Generate KQL queries](advanced-hunting-security-copilot.md) with Security Copilot in Microsoft 365 Defender
-- [Create incident reports](security-copilot-m365d-create-incident-report.md) with Security Copilot in Microsoft 365 Defender
+- [Learn how to summarize incidents](security-copilot-m365d-incident-summary.md)
+- [Use guided responses when responding to incidents](security-copilot-m365d-guided-response.md)
+- [Analyze scripts and codes](security-copilot-m365d-script-analysis.md)
+- [Generate KQL queries](advanced-hunting-security-copilot.md)
+- [Create incident reports](security-copilot-m365d-create-incident-report.md)
 
 ## See also
 
