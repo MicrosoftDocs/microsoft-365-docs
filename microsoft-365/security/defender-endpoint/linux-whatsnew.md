@@ -312,7 +312,7 @@ sudo systemctl disable mdatp
 	- Handled missing plugin directory path during installation.
 	- When conflicting application is using blocking fanotify, with default configuration mdatp health shows unhealthy. This is now fixed.
 	- Support for ICMP traffic inspection in BM.
-	- Engine Update to 1.1.20100.6 and Signatures Ver: 1.385.68.0.
+	- Engine Update to `1.1.20100.6` and Signatures Ver: `1.385.68.0`.
 	- Bug fixes.
 
 **Known issues**
