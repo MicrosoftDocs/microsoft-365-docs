@@ -50,7 +50,7 @@ This article is updated frequently to let you know what's new in the latest rele
   - MDE-Attach Feature is in Public Preview since Mid July.
     - It's required to add "*.dm.microsoft.com" to firewall exclusions for the feature to work Seamlessly.
   - Support to enable Signature verification of updates downloaded
-    - To enable these features, update the manajed.json as below
+    - To enable these features, update the manajed.json: 
       ```
         "features":{
           "OfflineDefinitionUpdateVerifySig":"enabled"
