@@ -88,7 +88,7 @@ Use the **Get-OrganizationConfig** and **Set-OrganizationConfig** commands to fi
 
     If the command returns "EwsEnabled: **$true**" then proceed to Step 2.
 
-    If the command returns "EwsEnabled:" (empty is default),  no further changes are needed then proceed to Step 2
+    If the command returns "EwsEnabled:" (empty is default), no further changes are needed, proceed to Step 2.
 
     If the command returns "EwsEnabled: **$false**" then run the following command and proceed to Step 2.
    
