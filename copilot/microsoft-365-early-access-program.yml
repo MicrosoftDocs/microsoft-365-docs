@@ -9,7 +9,7 @@ metadata:
   ms.date: 06/19/2023
   audience: Admin
   ms.topic: faq
-  ms.service: microsoft-365-business
+  ms.service: microsoft-365-copilot
   ms.localizationpriority: medium
   monikerRange: 'o365-worldwide'
   ms.collection: 
@@ -18,6 +18,7 @@ metadata:
   - M365-subscription-management 
   - Adm_O365
   - Adm_TOC
+  - m365copilot
   ROBOTS: NOINDEX, NOFOLLOW
   description: "Frequently asked questions about the Microsoft 365 Copilot Early Access Program."
 title: Microsoft 365 Copilot Early Access Program Frequently Asked Questions
@@ -28,11 +29,11 @@ sections:
     questions:
       - question: How do I prepare my organization for Microsoft 365 Copilot? 
 
-        answer: To learn about prerequisites and licensing requirements, see [Get started with Microsoft 365 Copilot](m365-copilot-setup.md).
+        answer: To learn about prerequisites and licensing requirements, see [Get started with Microsoft 365 Copilot](microsoft-365-copilot-setup.md).
 
       - question: How do I prepare my organization's data governance for Copilot? 
           
-        answer: Microsoft 365 Copilot is integrated into Microsoft 365 and automatically inherits all your company's valuable security, compliance, and privacy policies and processes. Data permissions will be consistent and users will only be able to search the information they already have access to. Review [Data, Privacy, and Security for Microsoft 365 Copilot](/DeployOffice/privacy/microsoft-365-copilot) for more information about privacy with Microsoft 365 Copilot. To learn more about how to approach getting your organization ready to use Copilot, [watch this Microsoft Mechanics video](https://www.youtube.com/watch?v=oeX0lsMA69U).  
+        answer: Microsoft 365 Copilot is integrated into Microsoft 365 and automatically inherits all your company's valuable security, compliance, and privacy policies and processes. Data permissions will be consistent and users will only be able to search the information they already have access to. Review [Data, Privacy, and Security for Microsoft 365 Copilot](microsoft-365-copilot-privacy.md) for more information about privacy with Microsoft 365 Copilot. To learn more about how to approach getting your organization ready to use Copilot, [watch this Microsoft Mechanics video](https://www.youtube.com/watch?v=oeX0lsMA69U).  
 
       - question: What happens after my organization gets invited into the program? 
          
@@ -75,5 +76,5 @@ sections:
     questions:
       - question: What are technical requirements for using Microsoft 365 Copilot? 
          
-        answer:  See [Get started with Microsoft 365 Copilot](m365-copilot-setup.md) for the full list of technical requirements.
+        answer:  See [Get started with Microsoft 365 Copilot](microsoft-365-copilot-setup.md) for the full list of technical requirements.
     
