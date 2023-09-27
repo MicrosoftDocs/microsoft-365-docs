@@ -22,7 +22,7 @@ ms.date: 10/2/2023
 
 # Known issues: Team Shifts connector for UKG Pro Workforce Management (Preview)
 
-This article lists known issues for the [Microsoft Teams Shifts connector for UKG Pro Workforce Management](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-dimensions) (UKG Pro WFM).
+This article lists known issues for the [Microsoft Teams Shifts connector for UKG Pro Workforce Management](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-dimensions) (Preview).
 
 ## You can map a WFM instance to more than one team using PowerShell or your Microsoft 365 admin center
 
@@ -32,7 +32,7 @@ However, when you use PowerShell or Microsoft 365 admin center to set up a conne
 
 ## Frontline managers can select a time zone for a schedule in Shifts that's different from the time zone that's set in UKG Pro WFM
 
-The time zone setting of schedules in Shifts is synced from UKG Pro WFM. However, it's possible for frontline managers to change the time zone of a schedule in Shifts to one that's different from what's configured in UKG Pro WFM. Doing so can result in syncing issues and unexpected behavior.
+The time zone setting of schedules in Shifts is synced from UKG Pro Workforce Management (UKG Pro WFM). However, it's possible for frontline managers to change the time zone of a schedule in Shifts to one that's different from what's configured in UKG Pro WFM. Doing so can result in syncing issues and unexpected behavior.
 
 To work around this issue, keep the time zone setting as is.
 
@@ -65,9 +65,7 @@ To mitigate this issue, do one of the following actions:
 
 ## Availability can only be set for one team in Teams
 
-If a user in Shifts belongs to multiple teams and one of those teams has availability syncing enabled, the user is unable to set their availability. Instead, they receive an error message.
-
-A user can only set availability in one team even if they belong to multiple teams in Shifts.
+If a user in Shifts belongs to multiple teams and one of those teams has availability syncing enabled, the user is unable to set their availability. Instead, they receive an error message. A user can only set availability in one team even if they belong to multiple teams in Shifts.
 
 ## Related articles
 
