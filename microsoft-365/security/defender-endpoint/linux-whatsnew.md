@@ -213,7 +213,7 @@ sudo systemctl disable mdatp
 **What's new**
 
 - There are multiple fixes and new changes in this release
-  	- The build version schema is updated from this release. While the major version number remains same as 101, the minor version number now has five digits followed by four digit patch number that is, 101.xxxxx.yyy
+  	- The build version schema is updated from this release. While the major version number remains same as 101, the minor version number now has five digits followed by four digit patch number that is, `101.xxxxx.yyy`
   	- Improved Network Protection memory consumption under stress
  	- Updated engine version to `1.1.20300.5` and signature version to `1.391.2837.0`.
 	- Bug fixes.
@@ -224,7 +224,7 @@ sudo systemctl disable mdatp
 
 There are two ways to mitigate this upgrade issue:
 
-1. Use your package manager to uninstall the 101.75.43 or 101.78.13 mdatp version.
+1. Use your package manager to uninstall the `101.75.43` or `101.78.13` mdatp version.
 
 Example:
 ```bash
