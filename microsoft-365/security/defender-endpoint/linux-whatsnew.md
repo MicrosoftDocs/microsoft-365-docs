@@ -167,7 +167,7 @@ sudo systemctl disable mdatp
 	- Network Protection: Connections that are blocked by Network Protection and have the block overridden by users are now correctly reported to Microsoft 365 Defender
 	- Improved logging in Network Protection block and audit events for debugging
 - Other fixes and improvements
-    - From this version, enforcementLevel will be in passive mode by default giving admins more control over where they want 'RTP on' within their estate
+    - From this version, enforcementLevel are in passive mode by default giving admins more control over where they want 'RTP on' within their estate
     - This change only applies to fresh MDE deployments, for example, servers where Defender for Endpoint is being deployed for the first time. In update scenarios, servers that have Defender for Endpoint deployed with RTP ON, will continue operating with RTP ON even post update to version 101.23062.0010
 
 - Bug Fixes
