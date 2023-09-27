@@ -580,7 +580,7 @@ sudo systemctl disable mdatp
   - V2 engine is default with this release and V1 engine bits are removed for enhanced security.
   - V2 engine support configuration path for AV definitions. (mdatp definition set path)
   - Removed external packages dependencies from MDE package. Removed dependencies are libatomic1, libselinux, libseccomp, libfuse, and libuuid
-  - In case crash collection is disabled by configuration, crash monitoring process won't be launched.
+  - In case crash collection is disabled by configuration, crash monitoring process isn't launched.
   - Performance fixes to optimally use system events for AV capabilities.
   - Stability improvement when restarting mdatp and load epsext issues.
   - Other fixes
