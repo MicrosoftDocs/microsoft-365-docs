@@ -55,7 +55,7 @@ Security Copilot creates an incident report containing the following details:
 - The team members who responded to the incident.
 - The timestamps for the first and last actions, including incident assignment and closure.
 - Actions done on the incident, including:
-  - Incident assignment or incident closure
+  - Incident assignment or closure
   - [Portal-based](respond-first-incident-remediate.md#manual-remediation) and [automated](respond-first-incident-remediate.md#automatic-remediation) remediation actions from Microsoft 365 Defender and Microsoft Sentinel applied
   - Comments supplied by analysts
 - The conclusion of the investigation.
@@ -82,6 +82,14 @@ You can validate an incident report's details and submit feedback about Security
 [Follow these steps to provide your feedback about the results](security-copilot-m365d-incident-summary.md#managing-feedback).
 
 ## Recommendations for incident report creation
+
+Here are some recommendations to consider to ensure that Security Copilot generates a comprehensive and complete incident report:
+
+- Write thorough comments on incidents. Comments from analysts provide context on the investigation and the actions taken by the team. See the following steps to know how to access the comments field:
+  - [Add comments to incidents in Microsoft 365 Defender](manage-incidents.md#add-comments) 
+  - [Add comments to incidents in Microsoft Sentinel](/azure/sentinel/investigate-cases.md#comment-on-incidents)
+- Resolve the incident before generating the incident report. Security Copilot includes the incident resolution in the incident report.
+- [Enable Microsoft Sentinel and ServiceNow bi-directional sync](https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/what-s-new-introducing-microsoft-sentinel-solution-for/ba-p/3692840) for richer incident data.
 
 ## Next steps
 
