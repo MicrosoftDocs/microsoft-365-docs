@@ -65,7 +65,7 @@ For more information, see [Microsoft Syntex features limited time license agreem
 
 > [!NOTE]
 > As of July 1, 2023, per-user licenses are no longer available for purchase. You will need to [set up pay-as-you-go billing](syntex-azure-billing.md).<br><br>
-> Per-user licenses purchased before July 1 can still be assigned to new users. After existing per-user licenses expire, you will need to opt-in to Syntex [pay-as-you-go billing](syntex-azure-billing.md).
+> **Per-user licenses purchased before July 1, 2023, can still be assigned to new users.** After existing per-user licenses expire, you will need to opt-in to Syntex [pay-as-you-go billing](syntex-azure-billing.md).
 
 To use Syntex, you must have a license for each Syntex user. If you remove all Syntex per-user licenses from your tenant at a future date (or your trial expires), users won't be able to create, publish, or run custom models. Additionally, term store reports, SKOS taxonomy import, and content type push won't be available. Models, content, or metadata won't be deleted, and site permissions won't be changed.
 

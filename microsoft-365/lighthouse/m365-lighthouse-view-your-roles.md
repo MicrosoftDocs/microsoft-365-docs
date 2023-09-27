@@ -32,7 +32,7 @@ You must have access to a partner tenant that has onboarded to the Microsoft 365
 
 ## View your roles
 
-1. In the left navigation pane in Lighthouse, select **Tenants**.
+1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Tenants**.
 
 2. From the list of tenants, select any tenant name to open the tenant's **Overview** page.
 
