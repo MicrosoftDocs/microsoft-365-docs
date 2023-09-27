@@ -160,11 +160,11 @@ sudo systemctl disable mdatp
 **What's new**
 
 - There are multiple fixes and new changes in this release
-	- If a proxy is set for Defender for Endpoint, then it will be visible in the `mdatp health` command output
+	- If a proxy is set for Defender for Endpoint, then it is visible in the `mdatp health` command output
 	- With this release we provided two options in mdatp diagnostic hot-event-sources:
         1. Files
         2. Executables
-	- Network Protection: Connections that are blocked by Network Protection and have the block overridden by users will now correctly be reported to  Microsoft 365 Defender
+	- Network Protection: Connections that are blocked by Network Protection and have the block overridden by users are now correctly reported to Microsoft 365 Defender
 	- Improved logging in Network Protection block and audit events for debugging
 - Other fixes and improvements
     - From this version, enforcementLevel will be in passive mode by default giving admins more control over where they want 'RTP on' within their estate
