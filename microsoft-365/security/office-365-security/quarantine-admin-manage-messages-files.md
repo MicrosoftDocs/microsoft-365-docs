@@ -247,9 +247,15 @@ If you don't release or remove a message, it's automatically deleted from quaran
 - Users can report false positives to Microsoft from quarantine, depending on the value of the **Reporting from quarantine** setting in [user reported settings](submissions-user-reported-messages-custom-mailbox.md).
 
 > [!TIP]
-> - If a message is released from quarantine and then routed to a third party security service or device before delivery to the original recipient, there will be some content loss when the message arrives at the recipient's mailbox.
-> - Admins can use [message trace](message-trace-scc.md) to determine if a released message was delivered to the recipient's Inbox.
-> - Third party anti-virus solutions can prevent a released email message from making it to the recipient's Inbox.
+> Third party anti-virus solutions or security services can cause the following issues for messages that are released from quarantine:
+> - The message is quarantined after being released.
+> - Content is removed from the released message before it reaches the recipient's Inbox.
+> - The released message never arrives in the recipient's Inbox.
+> - Actions in [quarantine notifications](quarantine-quarantine-notifications.md) might be randomly selected.
+>
+> Verify that you aren't using third party filtering before you open a support ticket about these issues.
+>
+> Admins can use [message trace](message-trace-scc.md) to determine if a released message was delivered to the recipient's Inbox.
 
 After you select the message, use either of the following methods to release it:
 
