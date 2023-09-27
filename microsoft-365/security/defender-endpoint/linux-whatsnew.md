@@ -884,7 +884,7 @@ As an alternative approach, follow the instructions to [uninstall](/microsoft-36
 
   <p><b>What's new</b></p>
 
-   - Added a new switch to the command-line tool to control whether archives are scanned during on-demand scans. This can be configured through mdatp config scan-archives --value [enabled/disabled]. By default, this is set to enabled.
+   - Added a new switch to the command-line tool to control whether archives are scanned during on-demand scans. This can be configured through mdatp config scan-archives --value [enabled/disabled]. By default, this setting is set to enabled.
 
    - Bug fixes
 
