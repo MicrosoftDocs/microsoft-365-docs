@@ -51,7 +51,7 @@ For more information on remote access to data by personnel, see [Continuing data
 | Canada                                   | Indonesia     | Nigeria               | Thailand             |
 | Chile                                    | Ireland       | North Macedonia       | Trinidad and Tobago  |
 | China                                    | Israel        | Norway                | Tunisia              |
-| Colombia                                 | Italy         | Oman                  | Turkey               |
+| Colombia                                 | Italy         | Oman                  | Türkiye              |
 | Costa Rica                               | Jamaica       | Pakistan              | Ukraine              |
 | Côte d'Ivoire                            | Japan         | Palestinian Authority | United Arab Emirates |
 | Croatia                                  | Jordan        | Panama                | United Kingdom       |
@@ -71,7 +71,7 @@ For more information on remote access to data by personnel, see [Continuing data
 | Bolivia                            | Germany       | New Zealand | Switzerland         |
 | Brazil                             | Ghana         | Norway      | Taiwan              |
 | Bulgaria                           | Guatemala     | Panama      | Trinidad and Tobago |
-| Canada                             | Honduras      | Paraguay    | Turkey              |
+| Canada                             | Honduras      | Paraguay    | Türkiye             |
 | China                              | Hong Kong SAR | Peru        | United Kingdom      |
 | Costa Rica                         | Hungary       | Philippines | United States       |
 | Czech Republic                     | India         | Poland      | Uruguay             |

@@ -1204,7 +1204,7 @@ Spanish: 24 hours a day, 7 days a week
 [Svalbard](#svalbard)\
 [Sweden](#sweden)\
 [Switzerland](#switzerland)\
-[Turkey](#turkey)\
+[Türkiye](#Türkiye)\
 [Ukraine](#ukraine)\
 [United Kingdom](#united-kingdom)\
 [Vatican City](#vatican-city)
@@ -2226,7 +2226,7 @@ English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
 
-### Turkey
+### Türkiye
 
 :::row:::
    :::column:::
