@@ -56,7 +56,7 @@ The **Deployment insights** page includes the following:
 
 ### Tenant progress
 
-The tenant progress graph measures deployment progress by customer tenant, reporting the status of each tenants' deployment plan as one of the following:
+The tenant progress graph measures deployment progress by customer tenant, reporting the status of each tenant's deployment plan as one of the following:
 
 - **Complete** – The status of all deployment tasks is **Compliant** or **Dismissed**.
 
