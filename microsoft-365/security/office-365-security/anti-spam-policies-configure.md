@@ -155,17 +155,13 @@ You can configure anti-spam policies in the Microsoft 365 Defender portal or in 
 
      ⁵ Users can't release their own messages that were quarantined as high confidence phishing, regardless of how the quarantine policy is configured. If the policy allows users to release their own quarantined messages, users are instead allowed to _request_ the release of their quarantined high-confidence phishing messages.
      
-  - **Intra-Organizational messages to take action on**: Controls whether spam filtering and the corresponding verdict actions are applied to internal messages (messages sent between users within the organization). The action that's configured in the policy for the specified spam filter verdicts is taken on messages sent between internal users. The available values are:
-    - **Default**: This is the default value. This value is the same as selecting **High confidence phishing messages**.
-  
-      > [!NOTE]
-      > Currently, in U.S. Government organizations (Microsoft 365 GCC, GCC High, and DoD), the value **Default** is the same as selecting **None**.
-
-    - **None**
-    - **High confidence phishing messages**
-    - **Phishing and high confidence phishing messages**
-    - **All phishing and high confidence spam messages**
-    - **All phishing and spam messages**
+   - **Intra-Organizational messages to take action on**: Controls whether spam filtering and the corresponding verdict actions are applied to internal messages (messages sent between users within the organization). The action that's configured in the policy for the specified spam filter verdicts is taken on messages sent between internal users. The available values are:
+     - **Default**: This is the default value. This value is the same as selecting **High confidence phishing messages**.
+     - **None**
+     - **High confidence phishing messages**
+     - **Phishing and high confidence phishing messages**
+     - **All phishing and high confidence spam messages**
+     - **All phishing and spam messages**
    
    - **Retain spam in quarantine for this many days**: Specifies how long to keep the message in quarantine if you selected **Quarantine message** as the action for a spam filtering verdict. After the time period expires, the message is deleted, and isn't recoverable. A valid value is from 1 to 30 days.
 
@@ -382,14 +378,16 @@ Creating an anti-spam policy in PowerShell is a two-step process:
 1. Create the spam filter policy.
 2. Create the spam filter rule that specifies the spam filter policy that the rule applies to.
 
- **Notes**:
-
-- You can create a new spam filter rule and assign an existing, unassociated spam filter policy to it. A spam filter rule can't be associated with more than one spam filter policy.
-- You can configure the following settings on new spam filter policies in PowerShell that aren't available in the Microsoft 365 Defender portal until after you create the policy:
-  - Create the new policy as disabled (_Enabled_ `$false` on the **New-HostedContentFilterRule** cmdlet).
-  - Set the priority of the policy during creation (_Priority_ _\<Number\>_) on the **New-HostedContentFilterRule** cmdlet).
-
-- A new spam filter policy that you create in PowerShell isn't visible in the Microsoft 365 Defender portal until you assign the policy to a spam filter rule.
+> [!NOTE]
+> - You can create a new spam filter rule and assign an existing, unassociated spam filter policy to it. A spam filter rule can't be associated with more than one spam filter policy.
+>
+> - You can configure the following settings on new spam filter policies in PowerShell that aren't available in the Microsoft 365 Defender portal until after you create the policy:
+>
+>  - Create the new policy as disabled (_Enabled_ `$false` on the **New-HostedContentFilterRule** cmdlet).
+>
+>  - Set the priority of the policy during creation (_Priority_ _\<Number\>_) on the **New-HostedContentFilterRule** cmdlet).
+>
+> - A new spam filter policy that you create in PowerShell isn't visible in the Microsoft 365 Defender portal until you assign the policy to a spam filter rule.
 
 #### Step 1: Use PowerShell to create a spam filter policy
 
@@ -570,10 +568,10 @@ This example sets the priority of the rule named Marketing Department to 2. All 
 Set-HostedContentFilterRule -Identity "Marketing Department" -Priority 2
 ```
 
-**Notes**:
-
-- To set the priority of a new rule when you create it, use the _Priority_ parameter on the **New-HostedContentFilterRule** cmdlet instead.
-- The default spam filter policy doesn't have a corresponding spam filter rule, and it always has the unmodifiable priority value **Lowest**.
+> [!NOTE]
+> - To set the priority of a new rule when you create it, use the _Priority_ parameter on the **New-HostedContentFilterRule** cmdlet instead.
+>
+> - The default spam filter policy doesn't have a corresponding spam filter rule, and it always has the unmodifiable priority value **Lowest**.
 
 ### Use PowerShell to remove spam filter policies
 
@@ -622,6 +620,6 @@ Generic Test for Unsolicited Bulk Email (GTUBE) is a text string that you includ
 
 Include the following GTUBE text in an email message on a single line, without any spaces or line breaks:
 
-```text
+```console
 XJS*C4JDBQADN1.NSBN3*2IDNEN*GTUBE-STANDARD-ANTI-UBE-TEST-EMAIL*C.34X
 ```
