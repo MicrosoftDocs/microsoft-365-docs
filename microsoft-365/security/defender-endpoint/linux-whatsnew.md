@@ -46,38 +46,41 @@ This article is updated frequently to let you know what's new in the latest rele
 
 **What's new**
 - Feature updates and new changes
-  - eBPF sensor has been made default as supplementary event provider on the endpoint.
-  - MDE-Attach Feature is in Public Preview since Mid July.
-    - It is required to add "*.dm.microsoft.com" to firewall exclusions for the feature to work Seamlessly.
+  - eBPF sensor is now the default supplementary event provider for endpoints
+  - Microsoft Intune tenant attach feature is in public preview (as of mid July)
+    - You must add "*.dm.microsoft.com" to firewall exclusions for the feature to work correctly
   - Support to enable Signature verification of updates downloaded
-    - To enable please update the manajed.json as below
+    - Note that you must update the manajed.json as shown below
       ```
         "features":{
           "OfflineDefinitionUpdateVerifySig":"enabled"
         }
       ```
+      
     - Prerequisite to enable feature
-      - Engine version on device needs to be  "1.1.23080.007" or above. Check your engine version using below command.
+      - Engine version on the device must be  "1.1.23080.007" or above. Check your engine version by using the following command.
         ``` mdatp health --field engine_version ```
-  - Option to support monitoring of NFS and FUSE mount points. (These are ignored by default).
-    Example to monitor all filesystem ignoring only NFS :
+  - Option to support monitoring of NFS and FUSE mount points. These are ignored by default.
+    The following example shows how to monitor all filesystem while ignoring only NFS:
     ```
     "antivirusEngine": {
         "unmonitoredFilesystems": ["nfs"]
     }
     ```
-    Example to monitor all filesystems including NFS and FUSE
+    
+    Example to monitor all filesystems including NFS and FUSE:
     ```
     "antivirusEngine": {
         "unmonitoredFilesystems": []
     }
     ```
+
   - Other performance improvements
   - Bug Fixes
 
 **Known issues**
 
-- While upgrading from mdatp version 101.75.43 or 101.78.13, you may encounter a kernel hang. Run the following commands before attempting to upgrade to version 101.98.05. More information about the underlying issue can be found at [System hang due to blocked tasks in fanotify code](https://access.redhat.com/solutions/2838901).
+- When upgrading from mdatp version 101.75.43 or 101.78.13, you may encounter a kernel hang. Run the following commands before attempting to upgrade to version 101.98.05. More information about the underlying issue can be found at [System hang due to blocked tasks in fanotify code](https://access.redhat.com/solutions/2838901).
 
 There are two ways to mitigate this upgrade issue:
 
