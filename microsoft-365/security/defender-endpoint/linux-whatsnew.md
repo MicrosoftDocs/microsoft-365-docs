@@ -918,7 +918,7 @@ As an alternative approach, follow the instructions to [uninstall](/microsoft-36
 
   - Added new switches to the command-line tool:
     - Control degree of parallelism for on-demand scans. This can be configured through `mdatp config maximum-on-demand-scan-threads --value [number-between-1-and-64]`. By default, a degree of parallelism of `2` is used.
-    - Control whether scans after security intelligence updates are enabled or disabled. This can be configured through `mdatp config scan-after-definition-update --value [enabled/disabled]`. By default, this is set to `enabled`.
+    - Control whether scans after security intelligence updates are enabled or disabled. This can be configured through `mdatp config scan-after-definition-update --value [enabled/disabled]`. By default, this setting is set to `enabled`.
   - Changing the product log level now requires elevation
   - Bug fixes
 
