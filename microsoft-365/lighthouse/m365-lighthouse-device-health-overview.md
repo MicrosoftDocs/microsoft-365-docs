@@ -26,7 +26,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 Microsoft 365 Lighthouse brings the features of Microsoft Endpoint Analytics for devices into a simplified multi-tenant management view. Performance issues and other problems can go undetected by a tenant for an extended period, impacting end-user experience and increasing support costs. The Device health page brings these problems to the surface faster and across multiple tenants to save time and end-user pain by allowing you to gain insights and remedy problems.
 
-The Device health page provides a subset of device analytics offered through Endpoint Analytics, specifically device performance and startup processes. Example data includes device health status, total restarts, total blue screens, top processes, and hardware specifications. The data only reflects fully managed Windows devices. Data on Bring Your Own Devices is not supported.
+The Device health page provides a subset of device analytics offered through Endpoint Analytics, specifically device performance and startup processes. Example data includes device health status, total restarts, total blue screens, top processes, and hardware specifications. The data only reflects fully managed Windows devices. Data on Bring Your Own Devices isn't supported.
 
 ## Requirements
 
