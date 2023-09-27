@@ -262,7 +262,7 @@ sudo systemctl disable mdatp
 	- In Passive mode, Defender for Endpoint no longer scans when Definition update happens.
 	- Device will continue to be protected even after Defender for Endpoint agent has expired. It is still recommended to upgrade the Defender for Endpoint Linux agent to the latest available version to receive bug fixes, features and performance improvements.
 	- Removed semanage package dependency.
-	- Engine Update to 1.1.20100.7 and Signatures Ver: 1.385.1648.0.
+	- Engine Update to `1.1.20100.7` and Signatures Ver: `1.385.1648.0`.
 	- Bug fixes.
 
 **Known issues**
