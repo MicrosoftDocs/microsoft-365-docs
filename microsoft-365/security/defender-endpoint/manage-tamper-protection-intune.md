@@ -5,7 +5,7 @@ manager: dansimp
 description: Turn tamper protection on or off for your organization in Microsoft Intune.
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
-ms.date: 09/20/2023
+ms.date: 09/27/2023
 audience: ITPro
 ms.topic: how-to
 author: denisebmsft
