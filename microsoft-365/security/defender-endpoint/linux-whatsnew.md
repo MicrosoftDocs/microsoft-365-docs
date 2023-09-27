@@ -80,7 +80,7 @@ This article is updated frequently to let you know what's new in the latest rele
 
 There are two ways to mitigate this upgrade issue:
 
-1. Use your package manager to uninstall the 101.75.43 or 101.78.13 mdatp version.
+1. Use your package manager to uninstall the `101.75.43` or `101.78.13` mdatp version.
 
 Example:
 ```bash
@@ -121,11 +121,11 @@ sudo systemctl disable mdatp
 
 **Known issues**
 
-- While upgrading from mdatp version 101.75.43 or 101.78.13, you might encounter a kernel hang. Run the following commands before attempting to upgrade to version 101.98.05. For more information, see [System hang due to blocked tasks in fanotify code](https://access.redhat.com/solutions/2838901).
+- While upgrading from mdatp version `101.75.43` or `101.78.13`, you might encounter a kernel hang. Run the following commands before attempting to upgrade to version `101.98.05`. For more information, see [System hang due to blocked tasks in fanotify code](https://access.redhat.com/solutions/2838901).
 
 There are two ways to mitigate this upgrade issue:
 
-1. Use your package manager to uninstall the 101.75.43 or 101.78.13 mdatp version.
+1. Use your package manager to uninstall the `101.75.43` or `101.78.13` mdatp version.
 
 Example:
 ```bash
