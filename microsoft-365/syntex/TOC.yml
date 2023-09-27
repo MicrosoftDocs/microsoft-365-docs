@@ -181,6 +181,15 @@
         - name: Find and manage terms 
           href: taxonomy-tagging.md
 
+    - name: Translation 
+      items: 
+        - name: Overview 
+          href: translation-overview.md
+        - name: Admin setup 
+          href: translation-setup.md
+        - name: Translate documents 
+          href: translation.md
+
     - name: Optical character recognition 
       items: 
         - name: Overview 
