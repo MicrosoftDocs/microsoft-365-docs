@@ -57,7 +57,7 @@ This article is updated frequently to let you know what's new in the latest rele
         }
       ```
     - Prerequisite to enable feature
-      - Engine version on device needs to be  "1.1.23080.007" or above. Check your engine version using below command.
+      - Engine version on device needs to be `1.1.23080.007` or later. Check your engine version using below command.
         ``` mdatp health --field engine_version ```
   - Option to support monitoring of NFS and FUSE mount points. (These are ignored by default).
     Example to monitor all filesystem ignoring only NFS :
