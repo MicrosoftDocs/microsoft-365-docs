@@ -358,7 +358,7 @@ sudo systemctl disable mdatp
 	- Logging and error reporting improvements for auditd.
 	- Handle failure in reload of auditd configuration.
 	- Handling for empty auditd rule files during MDE install.
-	- Engine Update to 1.1.20000.2 and Signatures Ver: 1.381.3067.0.
+	- Engine Update to `1.1.20000.2` and Signatures Ver: `1.381.3067.0`.
 	- Addressed a health issue in mdatp that occurs due to selinux denials.
 	- Bug fixes.
 
