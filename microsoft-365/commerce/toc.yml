@@ -58,6 +58,8 @@
       href: licenses/manage-license-requests-faq.yml
     - name: Online service activation FAQ
       href: licenses/online-service-activation-faq.yml
+    - name: Volume licensing invoices
+      href: licenses/volume-licensing-invoices.md
 - name: Bills and payments
   items: 
     - name: View your invoice
