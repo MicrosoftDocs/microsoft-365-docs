@@ -56,7 +56,7 @@ Using Intune or comanagement (with Intune and Configuration Manager), you can:
 | Device management | Your organization uses [Intune to manage devices](/mem/intune/fundamentals/manage-devices) or [comanagement with Intune and Configuration Manager](/mem/configmgr/comanage/overview). |
 | Intune licenses | Intune licenses are required. See [Microsoft Intune licensing](/mem/intune/fundamentals/licenses). |
 | Operating System | Windows devices must be running Windows 10 [version 1709 or later](/lifecycle/announcements/revised-end-of-service-windows-10-1709) or Windows 11. (For more information about releases, see [Windows release information](/windows/release-health/release-information).) <br/><br/>For Mac, see [Protect macOS security settings with tamper protection](tamperprotection-macos.md). |
-| Security intelligence | You must be using Windows security with [security intelligence](https://www.microsoft.com/wdsi/definitions) updated to version 1.287.60.0 (or later). |
+| Security intelligence | You must be using Windows security with [security intelligence](https://www.microsoft.com/wdsi/definitions) updated to version `1.287.60.0` (or later). |
 | Antimalware platform | Devices must be using antimalware platform version `4.18.1906.3` (or later) and anti-malware engine version `1.1.15500.X` (or later). See [Manage Microsoft Defender Antivirus updates and apply baselines](microsoft-defender-antivirus-updates.md). |
 | Azure Active Directory (Azure AD) | Your Intune and Defender for Endpoint tenants must share the same Azure AD infrastructure. |
 | Defender for Endpoint | Your devices must be onboarded to Defender for Endpoint. |
