@@ -411,9 +411,9 @@ sudo systemctl disable mdatp
 	
 **Known issues**
 
-- With mdatp version 101.98.30 you might see a health false issue in some of the cases, because SELinux rules are not defined for certain scenarios. The health warning could look something like this:
+- With mdatp version 101.98.30 you might see a health false issue in some of the cases, because SELinux rules aren't defined for certain scenarios. The health warning could look something like this:
 
-*found SELinux denials within last one day. If the MDATP is recently installed, please clear the existing audit logs or wait for a day for this issue to auto-resolve. Please use command: \"sudo ausearch -i -c 'mdatp_audisp_pl' | grep \"type=AVC\" | grep \" denied\" to find details*
+*found SELinux denials within last one day. If the MDATP is recently installed, clear the existing audit logs or wait for a day for this issue to auto-resolve. Please use command: \"sudo ausearch -i -c 'mdatp_audisp_pl' | grep \"type=AVC\" | grep \" denied\" to find details*
 
 The issue could be mitigated by running the following commands.
 
