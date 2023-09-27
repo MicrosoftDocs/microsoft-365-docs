@@ -118,7 +118,7 @@ If you aren’t in the Microsoft 365 Copilot EAP, you can still start [preparing
 
 You can learn more about Microsoft 365 Copilot by reviewing these resources:
 
-- [Data, Privacy, and Security for Microsoft 365 Copilot](/DeployOffice/privacy/microsoft-365-copilot#how-does-microsoft-365-copilot-work)
+- [Data, Privacy, and Security for Microsoft 365 Copilot](microsoft-365-copilot-privacy.md)
 
 - [The Copilot System: Explained by Microsoft](https://www.youtube.com/watch?v=E5g20qmeKpg) 
 

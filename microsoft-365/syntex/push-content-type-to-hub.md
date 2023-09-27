@@ -3,7 +3,7 @@ title: Push content types to a hub
 ms.author: mikeplum
 author: chucked
 ms.reviewer: chuckedmonson
-ms.date: 05/14/2022
+ms.date: 01/14/2023
 manager: pamgreen
 audience: admin
 ms.topic: conceptual
