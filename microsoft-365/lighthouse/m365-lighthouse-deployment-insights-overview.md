@@ -36,7 +36,7 @@ Microsoft 365 Lighthouse provides deployment insights within and across the tena
 
 - Prioritize deployment activities based on risk.
 
-To access deployment insights, in the left navigation pane in Lighthouse, select **Deployment \> Deployment insights**.
+To access deployment insights, in the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Deployment \> Deployment insights**.
 
 ## Watch: Deployment insights
 
