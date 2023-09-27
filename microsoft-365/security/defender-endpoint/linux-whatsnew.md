@@ -705,7 +705,7 @@ As an alternative to the above, you can follow the instructions to [uninstall](/
 **What's new**
 
 - Added an option to [configure file hash computation](linux-preferences.md#configure-file-hash-computation-feature)
-- From this build onwards, the product will have the new anti-malware engine by default
+- From this build onwards, the product has the new anti-malware engine by default
 - Performance improvements for file copy operations
 - Bug fixes
 </br>
@@ -723,10 +723,10 @@ As an alternative to the above, you can follow the instructions to [uninstall](/
 
 **What's new**
 
-- Fix to support definitions storage in non-standard locations (outside of /var) for v2 definition updates
+- Fix to support definitions storage in nonstandard locations (outside of /var) for v2 definition updates
 - Fixed an issue in the product sensor used on RHEL 6 that could lead to an OS hang
 - `mdatp connectivity test` was extended with an extra URL that the product requires to function correctly. The new URL is [https://go.microsoft.com/fwlink/?linkid=2144709](https://go.microsoft.com/fwlink/?linkid=2144709).
-- Up until now, the product log level wasn't persisted between product restarts. Starting from this version, there's a new command-line tool switch that persists the log level. The new command is `mdatp log level persist --level <level>`.
+- Up until now, the product log level wasn't persisted between product restarts. Beginning with this version, there's a new command-line tool switch that persists the log level. The new command is `mdatp log level persist --level <level>`.
 - Removed the dependency on `python` from the product installation package
 - Performance improvements for file copy operations and processing of network events originating from `auditd`
 - Bug fixes
