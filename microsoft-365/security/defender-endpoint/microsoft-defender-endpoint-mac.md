@@ -1,12 +1,8 @@
 ---
 title: Microsoft Defender for Endpoint on Mac
-ms.reviewer: 
+ms.reviewer: yongrhee
 description: Learn how to install, configure, update, and use Microsoft Defender for Endpoint on Mac.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamf, macos, monterey, big sur, ventura, mde for mac
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
@@ -18,7 +14,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 04/26/2023
+ms.date: 09/27/2023
 ---
 
 # Microsoft Defender for Endpoint on Mac
