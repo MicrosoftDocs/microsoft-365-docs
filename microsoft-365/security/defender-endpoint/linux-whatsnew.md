@@ -7,7 +7,7 @@ ms.author: dansimp
 author: dansimp
 ms.reviewer: kumasumit
 ms.localizationpriority: medium
-ms.date: 09/26/2023
+ms.date: 09/27/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -48,9 +48,9 @@ This article is updated frequently to let you know what's new in the latest rele
 - Feature updates and new changes
   - eBPF sensor has been made default as supplementary event provider on the endpoint.
   - MDE-Attach Feature is in Public Preview since Mid July.
-    - It is required to add "*.dm.microsoft.com" to firewall exclusions for the feature to work Seamlessly.
+    - It's required to add "*.dm.microsoft.com" to firewall exclusions for the feature to work Seamlessly.
   - Support to enable Signature verification of updates downloaded
-    - To enable please update the manajed.json as below
+    - To enable these features, update the manajed.json as below
       ```
         "features":{
           "OfflineDefinitionUpdateVerifySig":"enabled"
@@ -435,7 +435,7 @@ sudo systemctl start mdatp
 mdatp health
 ```
 
-In case the issue reappears with some different denials. We need to run the mitigation again with a different module name(for example, my-mdatpaudisppl_v2).
+In case the issue reappears with some different denials. We need to run the mitigation again with a different module name (for example, my-mdatpaudisppl_v2).
 
 </details>
 
