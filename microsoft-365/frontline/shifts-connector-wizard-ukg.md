@@ -31,7 +31,10 @@ In this article, we walk you through how to use the Shifts connector wizard in t
 > [!NOTE]
 > If you prefer, you can use PowerShell to integrate Shifts with UKG Pro WFM. To learn more, see [Use PowerShell to connect Shifts to UKG Pro Workforce Management](shifts-connector-ukg-powershell-setup.md).
 
-The wizard creates a connection to your UKG Pro WFM system and a connection instance. A connection instance applies the sync settings and team mappings that you choose. Sync settings determine the schedule information and what entities sync between UKG Pro WFM and Shifts. Team mappings define the sync relationship between your UKG Pro WFM instances (also called WFM instances) and teams in Teams.
+The wizard creates a connection to your UKG Pro WFM system and a connection instance. A connection instance applies the sync settings and team mappings that you choose.
+
+- Sync settings determine the schedule information and what entities sync between UKG Pro WFM and Shifts. 
+- Team mappings define the sync relationship between your UKG Pro WFM instances (also called WFM instances) and teams in Teams.
 
 You can create one or more connection instances, each with different sync settings. For example, if your organization has multiple locations with different schedule requirements, create a connection instance with unique sync settings for each location. A WFM instance should only be mapped once to a team in Teams at any given time. However, it's possible in the wizard to have different connection instances with the same mappings. This means that you can create connection instances with duplicate mappings.
 
