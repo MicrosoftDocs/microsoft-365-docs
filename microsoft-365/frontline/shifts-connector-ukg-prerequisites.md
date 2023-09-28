@@ -26,7 +26,7 @@ ms.date: 10/2/2023
 
 The [Microsoft Teams Shifts connector for UKG Pro Workforce Management](shifts-connectors.md#microsoft-teams-shifts-connector-for-ukg-pro-workforce-management) (Preview) enables you to integrate the Shifts app in Microsoft Teams with your UKG Workforce management (UKG Pro WFM) system. Your frontline workers can seamlessly view and manage their schedules in UKG Pro WFM from within Shifts.
 
-You can use the [Shifts connector wizard](shifts-connector-wizard-ukg.md) (Preview) in the Microsoft 365 admin center or [PowerShell](shifts-connector-ukg-powershell-setup.md) to create a connection and connection instances. After they're set up, you can manage them in the Microsoft 365 admin center or by using PowerShell.
+You can use the [Shifts connector wizard](shifts-connector-wizard-ukg.md) in the Microsoft 365 admin center or [PowerShell](shifts-connector-ukg-powershell-setup.md) to create a connection and connection instances. After they're set up, you can manage them in the Microsoft 365 admin center or by using PowerShell.
 
 This article lists requirements, prerequisites, and configuration tasks that you must complete before you use the wizard or PowerShell to create a connection. It also gives you an overview of how to set up your teams in Teams based on your UKG Pro WFM organizational structure.
 
@@ -52,6 +52,11 @@ Before you integrate Shifts with UKG Pro WFM, your organization must have the fo
         >  - Availability patterns change request subtype.  
 
 - You're using Azure Active Directory (Azure AD) as your identity provider.
+- Review your conditional access policies in Azure AD.
+
+    Shifts doesn't support using the Microsoft Authenticator app. If you have a conditional access policy, exclude the Kronos Workforce Dimensions from the policy. The app is excluded when you [enable SSO by setting up integration between Azure AD and UKG Pro WFM](#enable-sso-by-setting-up-integration-between-azure-ad-and-ukg-pro-workforce-management).
+
+    <!--Shifts does not support using the Microsoft Authenticator app. In case, you have a conditional access policy related to tTherefore, when you start using Shifts, upon testing if you see a message that mentions the authenticator app, please test if you are see any message that re-directs you to  In case, you have a conditional access policy, you will be required to exclude the Kronos Workforce Dimensions from this conditional access policy (the app excluded is the one you set up when enabling SSO by setting up integration between Azure AD and UKG Dimensions).-->
 
 ## Prerequisites
 
@@ -152,7 +157,7 @@ As mentioned earlier, Shifts supports grouping users by location in UKG Pro WFM.
 
 <!--Users in UKG Pro WFM are assigned and grouped by primary jobs that exist within a location. This means that from a Teams and Shifts standpoint, employees who have the same location path up to the node before the job type are part of the same team. The job type in a location path is represented as a scheduling group in Shifts.-->
 
-Users in UKG Pro WFM are assigned and grouped by jobs that exist within a location. This means that from a Teams and Shifts standpoint, employees who have the same location path up to the node before the job type are considered as part of the same team. In Shifts, we sync the job types in the location path and represent them as [groups](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821).
+Users in UKG Pro WFM are assigned and grouped by jobs that exist within a location. This means that from a Teams and Shifts standpoint, employees who have the same location path up to the node before the job type are considered as part of the same team. The job types in the location path are synced and represented as [groups](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821) in Shifts.
 
 ## Example
 
