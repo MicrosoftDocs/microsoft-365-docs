@@ -2,16 +2,12 @@
 title: What's new in Microsoft Defender for Endpoint
 description: See what features are generally available (GA) in the latest release of Microsoft Defender for Endpoint, and security features in Windows 10 and Windows Server.
 keywords: what's new in Microsoft Defender for Endpoint, ga, generally available, capabilities, available, new
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: microsoft-365-security
-ms.mktglfcycl: secure
-ms.sitesec: library
-ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 08/08/2023
+ms.date: 09/27/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -63,6 +59,8 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 
 
+## September 2023
+(GA) The [Protecting Dev Drive using performance mode](microsoft-defender-endpoint-antivirus-performance-mode.md) is now generally available. The goal of Performance mode is to improve functional performance for developers who use Windows 11.  Performance mode which reduces the performance impact of Microsoft Defender Antivirus scans for files stored on designated Dev Drive.
 
 ## August 2023
 
