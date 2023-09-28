@@ -5,7 +5,7 @@ ms.service: microsoft-365-security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 06/29/2023
+ms.date: 09/27/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -67,6 +67,7 @@ Microsoft Defender will support macOS Sonoma (14.0) as soon as Apple makes it ge
 
 - Bug and performance fixes
 - Fix: Security Portal events may have missed ancestors details for short lived processes
+- Fix: Major performance issues on macOS when Network Protection is set to Audit mode
 
 ### Aug-2023 (Build: 101.23062.0016  | Release version: 20.123062.16.0)
 
