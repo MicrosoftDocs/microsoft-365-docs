@@ -36,7 +36,7 @@ To view audit logs, you must have one of the following permissions:
 
 ## Review audit logs
 
-1. In the left navigation pane in Lighthouse, select **Audit logs**.
+1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Audit logs**.
 
     > [!NOTE]
     > It might take up to 1 hour to see new logs. Go to the respective service to see the most recent changes.

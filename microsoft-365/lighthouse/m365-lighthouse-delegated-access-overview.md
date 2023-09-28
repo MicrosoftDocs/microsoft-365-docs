@@ -24,7 +24,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # Overview of Delegated Access in Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse provides delegated relationship insights across all your customer tenants in a single view. You can track your transition away from Delegated Administrative Privileges (DAP) and ensure your Granular Delegated Administrative Privileges (GDAP) relationships are set up as intended. Data is available for any customer tenant in Lighthouse, regardless of the customers' licensing, user count, or geographic region. To access these insights, select **Permissions** > **Delegated access** in the left navigation pane in Lighthouse. You must hold the Admin agent role in Partner Center. 
+Microsoft 365 Lighthouse provides delegated relationship insights across all your customer tenants in a single view. You can track your transition away from Delegated Administrative Privileges (DAP) and ensure your Granular Delegated Administrative Privileges (GDAP) relationships are set up as intended. Data is available for any customer tenant in Lighthouse, regardless of the customers' licensing, user count, or geographic region. To access these insights, select **Permissions** > **Delegated access** in the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com). You must hold the Admin agent role in Partner Center. 
 
 ## Delegated access page
 
