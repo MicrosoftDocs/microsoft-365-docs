@@ -34,7 +34,7 @@ Microsoft 365 Lighthouse provides deployment insights within and across the tena
 
 ## Manage deployment progress using deployment insights
 
-1. In the left navigation pane in Lighthouse, select **Deployment \> Deployment insights**.
+1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Deployment** > **Deployment insights**.
 
 2. On the **Deployment insights** page, review the following areas to gather insight on your tenants' deployment progress.
 
@@ -49,7 +49,7 @@ For additional solutions for common deployment issues, see [Deploying baselines]
 
 ## Review regressed tasks
 
-1. In the left navigation pane in Lighthouse, select **Deployment \> Deployment insights**.
+1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Deployment** > **Deployment insights**.
 
 2. From the Tenants list, review tenants with regressed tasks indicated by the **Regressed tasks** column.
 
@@ -67,7 +67,7 @@ Every dismissed task and excluded user represent a potential threat. You can aud
 
 ### Audit dismissed tasks
 
-1. In the left navigation pane in Lighthouse, select **Deployment \> Deployment insights**.
+1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Deployment** > **Deployment insights**.
 
 2. From the Tenants list, select the tenant with a dismissed task.
 
@@ -79,7 +79,7 @@ Every dismissed task and excluded user represent a potential threat. You can aud
 
 ### Audit excluded users
 
-1. In the left navigation pane in Lighthouse, select **Deployment \> Deployment insights**.
+1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Deployment** > **Deployment insights**.
 
 2. From the Tenants list, select the tenant with an **Excluded** user.
 
