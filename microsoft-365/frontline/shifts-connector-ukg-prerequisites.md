@@ -46,10 +46,10 @@ Before you integrate Shifts with UKG Pro WFM, your organization must have the fo
         > [!IMPORTANT]
         > Shifts currently supports the following UKG Pro WFM request types:
         >  - Open shift requests. Partial shift criteria aren't supported.
-           - Swap requests.  
-           - Requests to cover shifts. Partial shift criteria aren't supported.
-           - Time off requests.
-           - Availability patterns change request subtype.  
+        >  - Swap requests.  
+        >  - Requests to cover shifts. Partial shift criteria aren't supported.
+        >  - Time off requests.
+        >  - Availability patterns change request subtype.  
 
 - You're using Azure Active Directory (Azure AD) as your identity provider.
 
@@ -157,7 +157,7 @@ Users in UKG Pro WFM are assigned and grouped by jobs that exist within a locati
 ## Example
 
 <!--Here's an example to help you understand how your UKG Pro WFM structure influences the way you set up your teams and how schedule information syncs to Shifts.-->
-Here's an example to help you understand how your UKG Pro WFM structure influences the way you set your teams, mapping consideration, and how information syncs to Shifts.  
+Here's an example to help you understand how your UKG Pro WFM structure influences the way you set your teams, mapping considerations, and how information syncs to Shifts.  
 
 ### Scenario
 
