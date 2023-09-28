@@ -197,8 +197,8 @@ When you're finished configuring the filters, select **Apply**, **Cancel**, or :
 
 On the **URL threat protection** page, the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](reports-email-security.md#schedule-recurring-reports)**, :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](reports-email-security.md#request-on-demand-reports-for-download)**, and :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Export](reports-email-security.md#export-report-data)** actions are available.
 
->[!NOTE]
->URL clicks by Guest users will also be available in the report as the guest user account could still be compromised or access malicious content inside the tenant
+> [!NOTE]
+> URL clicks by guest users are also available in the report. The guest user account could still be compromised or access malicious content inside the organization.
 
 ## Additional reports to view
 
