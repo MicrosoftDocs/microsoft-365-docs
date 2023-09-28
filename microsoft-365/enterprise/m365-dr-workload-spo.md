@@ -300,9 +300,9 @@ Upon OneDrive _Geography_ move completion, the existing shared links for the fil
 
 #### **OneNote Experience**
 
-OneNote win32 client and UWP (Universal) App will automatically detect and seamlessly sync notebooks to the new OneDrive location once OneDrive _Geography_ move is complete. The user does not need to sign-in again or take any other action. The only visible indicator to the user is notebook sync would fail when OneDrive _Geography_ move is in progress. This experience is available on the following OneNote client versions:
+OneNote Win32 client and UWP (Universal) App will automatically detect and seamlessly sync notebooks to the new OneDrive location once OneDrive _Geography_ move is complete. The user does not need to sign-in again or take any other action. The only visible indicator to the user is notebook sync would fail when OneDrive _Geography_ move is in progress. This experience is available on the following OneNote client versions:
 
-- OneNote win32 – Version 16.0.8326.2096 (and later)
+- OneNote Win32 – Version 16.0.8326.2096 (and later)
 - OneNote UWP – Version 16.0.8431.1006 (and later)
 - OneNote Mobile App – Version 16.0.8431.1011 (and later)
 
@@ -389,6 +389,9 @@ We do not support moving sites with:
 - Business Connectivity Services
 - InfoPath forms
 - Information Rights Management (IRM) templates applied
+
+>[!NOTE]
+> Sites archived with Microsoft 365 Archive need to be reactivated before being moved. Archiving sites while a move is in progress is not supported.
 
 To ensure all _Geography_ locations are compatible, run `Get-SPOGeoMoveCrossCompatibilityStatus`. This will display all your _Geography_ locations and whether the environment is compatible with the destination _Geography_ location.
 
@@ -487,10 +490,11 @@ The MRU service is updated with the site url and its content URLs once the move 
 
 #### **OneNote experience**
 
-OneNote win32 client and UWP (Universal) App will automatically detect and seamlessly sync notebooks to the new site location once site move is complete. The user does not need to sign in again or take any other action. The only visible indicator to the user is notebook sync would fail when site move is in progress. This experience is available on the following OneNote client versions:
--OneNote win32 – Version 16.0.8326.2096 (and later)
--OneNote UWP – Version 16.0.8431.1006 (and later)
--OneNote Mobile App – Version 16.0.8431.1011 (and later)
+OneNote Win32 client and UWP (Universal) App will automatically detect and seamlessly sync notebooks to the new site location once site move is complete. The user does not need to sign in again or take any other action. The only visible indicator to the user is notebook sync would fail when site move is in progress. This experience is available on the following OneNote client versions:
+
+- OneNote Win32 – Version 16.0.8326.2096 (and later)
+- OneNote UWP – Version 16.0.8431.1006 (and later)
+- OneNote Mobile App – Version 16.0.8431.1011 (and later)
 
 #### **Teams (applicable to Microsoft 365 group connected sites)**
 
