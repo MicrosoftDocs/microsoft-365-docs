@@ -25,6 +25,7 @@ ms.custom:
   - admindeeplinkMAC
   - business_assist
   - has-azure-ad-ps-ref
+  - azure-ad-ref-level-one-done
 description: "Learn how an admin can set a password expiration policy for your business, school, or nonprofit in Microsoft 365 admin center."
 ---
 
@@ -82,9 +83,9 @@ You can set more password policies and restrictions in Azure active directory. C
 
 ## Update password Policy using PowerShell
 
-The Set-MsolPasswordPolicy cmdlet updates the password policy of a specified domain or tenant and indicates the length of time that a password remains valid before it must be changed.
+The Update-MgDomain cmdlet updates the password policy of a specified domain or tenant and indicates the length of time that a password remains valid before it must be changed.
 
-To learn how to update password policy for a specific domain or tenant, see [Set-MsolPasswordPolicy](/powershell/module/msonline/set-msolpasswordpolicy).
+To learn how to update password policy for a specific domain or tenant, see [Update-MgDomain](/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdomain?view=graph-powershell-1.0&preserve-view=true).
 
 ## Related content
 
