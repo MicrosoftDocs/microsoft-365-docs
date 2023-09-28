@@ -74,7 +74,7 @@ To enable external access
 
 For users to invite people from outside your organization to a shared channel, both organizations must set up an organizational relationship in Azure AD B2B direct connect. (This is covered in the following sections.)
 
-You can specify an internal link for users who try to share a channel with people in an organization where a two-way Azure AD B2B direct connect relationship has not been set up. This link appears when they try to share the channel. Use this link to direct your users to your internal process or request form for setting up shared channels with other organizations.
+You can specify an internal link for users who try to share a channel with people in an organization where a two-way Azure AD B2B direct connect relationship has not been set up. This link appears when they try to share the channel. Use this link to direct your users to your internal support page or request form for setting up shared channels with other organizations.
 
 To specify an internal help link for shared channel users
 1. In the [Teams admin center](https://admin.teams.microsoft.com/), expand **Teams**, and then select **Teams settings**.
