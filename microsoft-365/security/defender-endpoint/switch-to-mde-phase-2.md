@@ -6,7 +6,7 @@ ms.subservice: mde
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
-ms.date: 04/24/2023
+ms.date: 09/28/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
