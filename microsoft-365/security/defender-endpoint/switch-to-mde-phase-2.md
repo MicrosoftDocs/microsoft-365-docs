@@ -6,7 +6,7 @@ ms.subservice: mde
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
-ms.date: 04/24/2023
+ms.date: 09/28/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -206,3 +206,4 @@ Device groups, device collections, and organizational units enable your security
 
 - [Proceed to Phase 3: Onboard to Defender for Endpoint](switch-to-mde-phase-3.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+
