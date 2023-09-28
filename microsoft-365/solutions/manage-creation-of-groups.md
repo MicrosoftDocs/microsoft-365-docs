@@ -12,6 +12,7 @@ ms.service: o365-solutions
 ms.localizationpriority: medium
 ms.custom:
   - has-azure-ad-ps-ref
+  - azure-ad-ref-level-one-done
 ms.collection: 
 - highpri
 - M365-subscription-management
@@ -115,7 +116,7 @@ and [sign in with your administrator account](../enterprise/connect-to-microsoft
 $GroupName = "<GroupName>"
 $AllowGroupCreation = $False
 
-Connect-AzureAD
+Connect-MgGraph
 
 $settingsObjectID = (Get-AzureADDirectorySetting | Where-object -Property Displayname -Value "Group.Unified" -EQ).id
 if(!$settingsObjectID)
@@ -131,7 +132,7 @@ $settingsCopy["EnableGroupCreation"] = $AllowGroupCreation
 
 if($GroupName)
 {
-  $settingsCopy["GroupCreationAllowedGroupId"] = (Get-AzureADGroup -SearchString $GroupName).objectid
+  $settingsCopy["GroupCreationAllowedGroupId"] = (Get-MgGroup -SearchString $GroupName).objectid
 } else {
 $settingsCopy["GroupCreationAllowedGroupId"] = $GroupName
 }
