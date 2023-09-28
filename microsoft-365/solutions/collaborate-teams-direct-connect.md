@@ -136,7 +136,7 @@ To configure outbound settings for an organization
 1. Select the **Office 365** application, and then choose **Select**.
 1. Select **Save**, choose **Yes** to confirm, and close the **Outbound access settings** blade.
 
-## See also
+## Related topics
 
 [B2B direct connect overview](/azure/active-directory/external-identities/b2b-direct-connect-overview)
 
