@@ -23,6 +23,7 @@ ms.custom:
   - AdminSurgePortfolio
   - AdminTemplateSet
   - has-azure-ad-ps-ref
+  - azure-ad-ref-level-one-done
 search.appverid:
 description: "Sign in to your Microsoft 365 admin account to set some individual user passwords to never expire by using Microsoft Graph PowerShell."
 ---
