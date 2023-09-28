@@ -54,6 +54,19 @@ To investigate Microsoft Purview Data Loss Prevention incidents in the Microsoft
 > [!NOTE]
 > When you are licensed and eligible for this feature, DLP alerts will automatically flow into Microsoft 365 Defender. If you don't want DLP alerts to flow into Defender, open a support case to disable this feature. If you disable this feature DLP alerts will surface in the Defender portal as Microsoft Defender for Office alerts.
 
+## Roles
+
+It is best practice to only grant minimal permissions to alerts in the Microsoft 365 Defender portal. You can create a custom role with these roles and assign it to the users who need to investigate DLP alerts.
+
+|Permission  |Defender Alert Access  |
+|---------|---------|
+|Manage Alerts    | DLP + Security |
+|View-Only Manage Alerts     |DLP + Security         |
+|Information Protection Analyst     |DLP only         |
+|DLP Compliance Management     |DLP only         |
+|View-Only DLP Compliance Management     |DLP only         |
+
+
 ## Before you start
 
 [Turn on alerts for all your DLP policies](/purview/dlp-create-deploy-policy.md) in the <a href="https://purview.microsoft.com" target="_blank">Microsoft Purview compliance portal</a>.
