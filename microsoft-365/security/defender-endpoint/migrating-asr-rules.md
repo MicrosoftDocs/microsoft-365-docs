@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-author: lovina-saldanha
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 ms.custom: asr

@@ -1,5 +1,5 @@
 ---
-title: Overview of optical character recognition in Microsoft Syntex
+title: Overview of optical character recognition in Microsoft Syntex (Preview)
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 description: Learn about optical character recognition in Microsoft Syntex.
 ---
 
-# Overview of optical character recognition in Microsoft Syntex
+# Overview of optical character recognition in Microsoft Syntex (Preview)
 
 The optical character recognition (OCR) service in Microsoft Syntex lets you extract printed or handwritten text from images, such as posters, drawings, and product labels, as well as from documents like articles, reports, forms, and invoices.
 
@@ -29,12 +29,10 @@ For example, you enable the OCR service and then add image files to your documen
 
 ### Supported file types
 
-The OCR service is available for the following file types:
-
-- JPEG
-- JPG
-- PNG
-- BMP
+|Endpoint  |Supported file types  |
+|---------|---------|
+|SharePoint and OneDrive     |.bmp, .png, .jpeg, .jpg, .jfif, .arw, .cr2, .crw, .erf, .gif, .mef, .mrw, .nef, .nrw, .orf, .pef, .raw, .rw2, .rw1, .sr2, .tif, .tiff, .heic, .heif, .ari, .bay, .cap, .cr3, .dcs, .dcr, .drf, .eip, .fff, .iiq, .k25, .kdc, .mef, .mos, .ptx, .pxn, .raf, .rwl, .sr2, .srf, .srw, .x3f, and .dng  |
+|Teams, Exchange, and Windows devices     |.bmp, .png, .jpeg, .jpg, .tiff, and .pdf (image only)     |
 
 ### Supported languages
 
@@ -42,11 +40,15 @@ The OCR service supports more than [150 languages](/azure/cognitive-services/lan
 
 ### Supported locations and solutions
 
+The OCR service supports multiple solutions, as shown in the following table. For details about compliance solutions, see [Supported locations and solutions in Microsoft Purview](/purview/ocr-learn-about#supported-locations-and-solutions).
+
 |Location    |Supported solution  |
 |---------|---------|
-|Exchange           |Text is available in end-user search and search-driven scenarios. |
-|SharePoint sites   |Text is available in end-user search and search-driven scenarios. |
-|OneDrive accounts  |Text is available in end-user search and search-driven scenarios. |
+|Exchange           |Text is available for end-user search and search-driven solutions.<br>Text is available for [compliance solutions](/purview/ocr-learn-about#supported-locations-and-solutions). |
+|SharePoint sites   |Text is available for end-user search and search-driven solutions.<br>Text is available for [compliance solutions](/en-us/purview/ocr-learn-about#supported-locations-and-solutions). |
+|OneDrive accounts  |Text is available for end-user search and search-driven solutions.<br>Text is available for [compliance solutions](/purview/ocr-learn-about#supported-locations-and-solutions). |
+|Teams chat and channel message  |Text is available for [compliance solutions](/purview/ocr-learn-about#supported-locations-and-solutions). |
+|Devices            | Text is available for [compliance solutions](/purview/ocr-learn-about#supported-locations-and-solutions).    |
 
 ### File limitations
 

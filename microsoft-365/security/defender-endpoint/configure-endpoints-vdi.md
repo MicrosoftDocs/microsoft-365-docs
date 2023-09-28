@@ -1,15 +1,11 @@
 ---
 title: Onboard non-persistent virtual desktop infrastructure (VDI) devices
 description: Deploy the configuration package on virtual desktop infrastructure (VDI) device so that they are onboarded to Microsoft Defender for Endpoint service.
-keywords: configure virtual desktop infrastructure (VDI) device, vdi, device management, configure Microsoft Defender for Endpoint, endpoints
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: siosulli
 author: siosulli
+ms.reviewer: pahuijbr
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -18,7 +14,7 @@ ms.collection:
 - tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.date: 05/26/2023
+ms.date: 09/21/2023
 ms.subservice: mde
 ---
 
@@ -157,13 +153,14 @@ With the ability to easily deploy updates to VMs running in VDIs, we've shortene
 
 If you have onboarded the primary image of your VDI environment (SENSE service is running), then you must offboard and clear some data before putting the image back into production.
 
-1. Ensure the sensor is stopped by running the following command in a CMD window:
+1. [Offboard the machine](offboard-machines.md).
+2. Ensure the sensor is stopped by running the following command in a CMD window:
 
    ```console
    sc query sense
    ```
 
-2. Run the following commands using PsExec.exe (which can be downloaded from [https://download.sysinternals.com/files/PSTools.zip](https://download.sysinternals.com/files/PSTools.zip)):
+3. Run the following commands using PsExec.exe (which can be downloaded from [https://download.sysinternals.com/files/PSTools.zip](https://download.sysinternals.com/files/PSTools.zip)):
 
    ```console
    PsExec.exe -s cmd.exe
@@ -196,25 +193,7 @@ The following configuration settings are recommended:
 
 #### Exclusions
 
-- Disable local admin merge: Not configured
-
-- Defender processes to exclude:
-
-  - `%Programfiles%\FSLogix\Apps\frxccd.exe`
-  - `%Programfiles%\FSLogix\Apps\frxccds.exe`
-  - `%Programfiles%\FSLogix\Apps\frxsvc.exe`
-
-- File extensions to exclude from scans and real-time protection:
-
-  - `%Programfiles%\FSLogix\Apps\frxccd.sys`
-  - `%Programfiles%\FSLogix\Apps\frxdrv.sys`
-  - `%Programfiles%\FSLogix\Apps\frxdrvvt.sys`
-  - `%TEMP%*.VHD`
-  - `%TEMP%*.VHDX`
-  - `%Windir%\TEMP*.VHD`
-  - `%Windir%\TEMP*.VHDX`
-  - `\\storageaccount.file.core.windows.net\share**.VHD`
-  - `\\storageaccount.file.core.windows.net\share**.VHDX`
+- Please review the FXLogix antivirus exclusion recommendations here: [Prerequisites for FSLogix](/fslogix/overview-prerequisites#file--folder-exclusions).
 
 #### Real-time Protection
 
@@ -277,4 +256,7 @@ The following configuration settings are recommended:
 - [Onboard Windows devices using Mobile Device Management tools](configure-endpoints-mdm.md)
 - [Onboard Windows devices using a local script](configure-endpoints-script.md)
 - [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+
+

@@ -49,7 +49,7 @@ This article describes how admins can manage entries for files in the Microsoft 
 
 - You can enter a maximum of 64 characters in a file entry.
 
-- An entry should be active within 30 minutes, but it might take up to 24 hours for the entry to be active.
+- An entry should be active within 5 minutes.
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
   - [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo):

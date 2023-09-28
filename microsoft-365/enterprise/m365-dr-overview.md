@@ -27,12 +27,12 @@ In order to promote clarity in the capability descriptions on data residency fun
 
 | **Term** | **Definition** |
 |:-----|:-----|
-|Macro Region Geography  <br/> |Macro Region Geography 1 – EMEA, Macro Region Geography – Asia Pacific, Macro Region Geography - Americas  <br/> |
+|Macro Region Geography  <br/> |Macro Region Geography 1 – EMEA, Macro Region Geography 2 – Asia Pacific, Macro Region Geography 3 - Americas  <br/> |
 |Macro Region Geography 1 - EMEA  <br/> |Data centers in Austria, Finland, France, Ireland, Netherlands, Poland, Sweden  <br/> |
 |Macro Region Geography 2 - Asia Pacific  <br/> |Data centers in Hong Kong Special Administrative Region, Japan, Malaysia, Singapore, South Korea  <br/> |
 |Macro Region Geography 3 - Americas  <br/> |Data centers in Brazil, Chile, United States  <br/> |
 |Local Region Geography  <br/> |Australia, Brazil, Canada, France, Germany, India, Japan, Poland, Qatar, South Korea, Norway, South Africa, Sweden, Switzerland, United Arab Emirates, United Kingdom  <br/> |
-|Expanded Local Region Geography  <br/> | Future planned data center regions: Italy, Indonesia, Israel, Spain, Mexico, Malaysia, Austria, Chile, New Zealand, Denmark, Greece, Taiwan  <br/> |
+|Expanded Local Region Geography  <br/> | Future planned data center regions: Italy, Indonesia, Israel, Spain, Mexico, Malaysia, Austria, Chile, New Zealand, Denmark, Greece, Taiwan, Saudi Arabia  <br/> |
 |Geography  <br/> |_Local Region Geography, Expanded Local Region Geography_, or _Macro Region Geography_  <br/> |
 |Satellite Geography  <br/> |If a customer subscribes to the Multi Geo service, then they can cause defined user customer data to be stored in other Geographies outside of the _Tenant_ _Primary Provisioned Geography_  <br/> |
 |AAD  <br/> |Azure Active Directory  <br/> |
@@ -110,9 +110,9 @@ There are three methods for ensuring that the _Tenant_ data location for a parti
 | Viva Topics <br/> |-  <br/> |-  <br/> |X<sup>3</sup>  <br/> |
 | Microsoft Purview <br/> |-  <br/> |-  <br/> |X<sup>3</sup>  <br/> |
 
-1. Only available in the following countries/regions: Australia, Brazil, Canada, France, Germany, India, Japan, Poland, Qatar, South Korea, Norway, South Africa, Sweden, Switzerland, United Arab Emirates, United Kingdom, European Union and the United States.
+1. Only available in the following countries/regions: Australia, Brazil, Canada, France, Germany, India, Japan, Qatar, South Korea, Norway, South Africa, Sweden, Switzerland, United Arab Emirates, United Kingdom, European Union and the United States.
 1. Available in _Local Region Geography_, _Expanded Local Region Geography_ (when the future data center is launched) and _Regional Geography countries/regions_
-1. Only available for _Local Region Geography_ and _Expanded Local Region Geography_ (when the future data center is launced) countries/regions.
+1. Only available for _Local Region Geography_ and _Expanded Local Region Geography_ (when the future data center is launched) countries/regions. [Learn about supported Microsoft Purview services and solutions](m365-dr-workload-purview.md).
 
 >[!NOTE]
 >See the [Workload Data Residency Capabilities section](m365-dr-workload-exo.md) for more details on these topics.

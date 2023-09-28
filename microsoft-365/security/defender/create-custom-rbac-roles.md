@@ -94,7 +94,7 @@ To access and manage roles and permissions, without being a Global Administrator
     - Select all permissions - users will be able to create and manage roles and permissions.
     - Read-only - uses will be able to access and view roles and permissions in a read-only mode.
 
-    :::image type="content" source="../../media/defender/m365-defender-rbac-authorization-role.png" alt-text="Screenshot of the Permissions and roles page" lightbox="../../media/defender/m365-defender-rbac-authorization-role.png":::
+    :::image type="content" source="../../media/defender/m365-defender-rbac-authorization-role.png" alt-text="Screenshot of the permissions and roles page" lightbox="../../media/defender/m365-defender-rbac-authorization-role.png":::
 
 8. Select **Apply** and then **Next** to assign users and data sources.
 9. Select **Add assignments** and enter the Assignment name.

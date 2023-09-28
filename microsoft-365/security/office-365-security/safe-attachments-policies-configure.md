@@ -19,7 +19,7 @@ description: Learn about how to define Safe Attachments policies to protect your
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 7/12/2023
+ms.date: 9/19/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
@@ -59,6 +59,9 @@ You configure Safe Attachments policies in the Microsoft 365 Defender portal or 
 
 - For our recommended settings for Safe Attachments policies, see [Safe Attachments settings](recommended-settings-for-eop-and-office365.md#safe-attachments-settings).
 
+  > [!TIP]
+  > [Exceptions to Built-in protection for Safe Attachments](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-add-exclusions-to-the-built-in-protection-preset-security-policy) or settings in custom Safe Attachments policies are ignored if a recipient is also included in the [Standard or Strict preset security policies](preset-security-policies.md). For more information, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
+
 - Allow up to 30 minutes for a new or updated policy to be applied.
 
 - For more information about licensing requirements, see [Licensing terms](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#licensing-terms).
@@ -80,7 +83,7 @@ You configure Safe Attachments policies in the Microsoft 365 Defender portal or 
    - **Groups**:
      - Members of the specified distribution groups or mail-enabled security groups (dynamic distribution groups aren't supported).
      - The specified Microsoft 365 Groups.
-   - **Domains**: All recipients in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
+   - **Domains**: All recipients in the organization with a primary email address in the specified [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
    Click in the appropriate box, start typing a value, and select the value that you want from the results. Repeat this process as many times as necessary. To remove an existing value, select :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png"::: next to the value.
 

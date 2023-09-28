@@ -19,7 +19,7 @@ ms.custom:
 description: Admins can learn how to view and manage quarantined messages for all users in Exchange Online Protection (EOP). Admins in organizations with Microsoft Defender for Office 365 can also manage quarantined files in SharePoint Online, OneDrive for Business, and Microsoft Teams.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 8/2/2023
+ms.date: 9/13/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
@@ -61,7 +61,7 @@ Watch this short video to learn how to manage quarantined messages as an admin.
     - _Submit messages from quarantine to Microsoft_:  Membership in the **Security Administrator** role.
     - _Read-only access to quarantined messages for all users_: Membership in the **Global Reader** or **Security Reader** roles.
 
-- Quarantined messages and files are retained for a default period of time based on why they were quarantined. After the retention period expires, the messages are automatically deleted and aren't recoverable. For more information, see [Quarantined email messages in EOP and Defender for Office 365](quarantine-about.md).
+- Quarantined messages and files are retained for a default period of time based on why they were quarantined. After the retention period expires, the messages are automatically deleted and aren't recoverable. For more information, see [Quarantine retention](quarantine-about.md#quarantine-retention).
 
 ## Use the Microsoft 365 Defender portal to manage quarantined email messages
 
@@ -245,6 +245,17 @@ If you don't release or remove a message, it's automatically deleted from quaran
 - When you select individual original recipients to receive the released message, you can select only recipients who haven't already received the released message.
 - Members of the **Security Administrators** role group can see and use the **Submit the message to Microsoft to improve detection** and **Allow email with similar attributes** options.
 - Users can report false positives to Microsoft from quarantine, depending on the value of the **Reporting from quarantine** setting in [user reported settings](submissions-user-reported-messages-custom-mailbox.md).
+
+> [!TIP]
+> Third party anti-virus solutions or security services can cause the following issues for messages that are released from quarantine:
+> - The message is quarantined after being released.
+> - Content is removed from the released message before it reaches the recipient's Inbox.
+> - The released message never arrives in the recipient's Inbox.
+> - Actions in [quarantine notifications](quarantine-quarantine-notifications.md) might be randomly selected.
+>
+> Verify that you aren't using third party filtering before you open a support ticket about these issues.
+>
+> Admins can use [message trace](message-trace-scc.md) to determine if a released message was delivered to the recipient's Inbox.
 
 After you select the message, use either of the following methods to release it:
 

@@ -3,9 +3,6 @@ title: Create and manage device groups in Microsoft Defender for Endpoint
 description: Create device groups and set automated remediation levels on them by confirming the rules that apply on the group
 keywords: device groups, groups, remediation, level, rules, aad group, role, assign, rank
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
@@ -17,7 +14,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 09/12/2023
 ---
 
 # Create and manage device groups
@@ -79,6 +76,9 @@ As part of the process of creating a device group, you'll:
     > You can only grant access to Azure AD user groups that have been assigned to RBAC roles.
 
 6. Click **Close**. The configuration changes are applied.
+
+    > [!NOTE]
+    > Device Groups in Defender for Business are managed differently. For more information, see [Device groups in Microsoft Defender for Business](../defender-business/mdb-create-edit-device-groups.md).
 
 ## Manage device groups
 

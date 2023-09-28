@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 02/18/2020
+ms.date: 08/30/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -29,7 +29,10 @@ description: "Determine if your tenant and users meet the requirements, so that 
 
 # Determine if Centralized Deployment of add-ins works for your organization
 
-Centralized Deployment is the recommended and most feature-rich way for most customers to deploy Office Add-ins to users and groups within your organization. If you're an admin, use this guidance to determine if your organization and users meet the requirements so that you can use Centralized Deployment.
+> [!NOTE]
+>  [Integrated Apps](test-and-deploy-microsoft-365-apps.md) is the recommended and most feature-rich way for most customers to centrally deploy Office add-ins to users and groups within your organization.
+>
+>If Integrated Apps is not available for you or you are a customer in one of the sovereign or government clouds (GCC, GCC-H, DoD, AirGap or Gallatin), use this article as guidance to determine if your organization and users meet the requirements to use Centralized Deployment.  
 
 Centralized Deployment provides the following benefits:
 
@@ -107,6 +110,9 @@ In order to deploy an add-in via Centralized Deployment, you need to be either a
 ### Centralized Deployment Compatibility Checker
 
 Using the Centralized Deployment Compatibility Checker, you can verify whether the users on your tenant are set up to use Centralized Deployment for Word, Excel, and PowerPoint. The Compatibility Checker is not required for Outlook support. Download and install the [compatibility checker](https://aka.ms/officeaddindeploymentorgcompatibilitychecker).
+
+> [!NOTE]
+> Compatibility checker is currently not supported in any of the sovereign or government clouds (GCC, GCC-H, DoD, AirGap, Gallatin).
 
 #### Run the compatibility checker
 

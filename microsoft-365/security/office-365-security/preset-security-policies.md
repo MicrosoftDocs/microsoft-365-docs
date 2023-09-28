@@ -17,7 +17,7 @@ description: Admins can learn how to apply Standard and Strict policy settings a
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.date: 6/19/2023
+ms.date: 9/19/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
@@ -30,7 +30,7 @@ appliesto:
 
 _Preset security policies_ allow you to apply protection features to users based on our recommended settings. Unlike custom policies that are infinitely configurable, virtually all of the settings in preset security policies aren't configurable, and are based on our observations in the datacenters. The settings in preset security policies provide a balance between keeping harmful content away from users while avoiding unnecessary disruptions.
 
-Depending on your organization, preset security policies provide the protection features that are available in [Exchange Online Protection (EOP)](eop-about.md) and [Microsoft Defender for Office 365](microsoft-defender-for-office-365-product-overview.md).
+Depending on your organization, preset security policies provide many of the protection features that are available in [Exchange Online Protection (EOP)](eop-about.md) and [Microsoft Defender for Office 365](microsoft-defender-for-office-365-product-overview.md).
 
 The following preset security policies are available:
 
@@ -71,7 +71,7 @@ The rest of this article how to configure preset security policies.
      - **Groups**:
        - Members of the specified distribution groups or mail-enabled security groups (dynamic distribution groups aren't supported).
        - The specified Microsoft 365 Groups.
-     - **Domains**: All recipients in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
+     - **Domains**: All recipients in the organization with a primary email address in the specified [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
    Click in the appropriate box, start typing a value, and select the value that you want from the results. Repeat this process as many times as necessary. To remove an existing value, select :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: next to the value.
 
@@ -220,7 +220,7 @@ In PowerShell, preset security policies consist of the following elements:
      - **[Get-MalwareFilterPolicy](/powershell/module/exchange/get-malwarefilterpolicy)**
   - <u>Defender for Office 365 policies</u>:
      - **[Get-SafeAttachmentPolicy](/powershell/module/exchange/get-safeattachmentpolicy)**
-     - **[Get-SafeLinksPolicy](/powershell/module/exchange/get-safesafelinkspolicy)**
+     - **[Get-SafeLinksPolicy](/powershell/module/exchange/get-safelinkspolicy)**
 
   > [!WARNING]
   > Do not attempt to create, modify, or remove the individual security policies that are associated with preset security policies. The only supported method for creating the individual security policies for Standard or Strict preset security policies is to turn on the preset security policy in the Microsoft 365 Defender portal for the first time.
@@ -522,12 +522,15 @@ As previously described, you can apply EOP protections to different users than D
 
 ### Policy settings in preset security policies
 
-Fundamentally, you can't modify the individual policy settings in the protection profiles. The Standard, Strict, and Built-in protection policy setting values, including the associated [quarantine policies](quarantine-policies.md#anatomy-of-a-quarantine-policy), are listed in the feature tables in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
+Fundamentally, you can't modify the individual policy settings in the protection profiles. Customizing the corresponding default policy or creating a new custom policy has no effect due to the [order of precedence](#order-of-precedence-for-preset-security-policies-and-other-policies) when the same user (recipient) is defined in multiple policies (the Standard and Strict preset security policies are _always_ applied first).
+
+- The Standard, Strict, and Built-in protection policy setting values, including the associated [quarantine policies](quarantine-policies.md#anatomy-of-a-quarantine-policy), are listed in the feature tables in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
+- You can also use Exchange Online PowerShell to quickly see all of the policy setting values as explained [earlier in this article](#use-powershell-to-view-individual-security-policies-for-preset-security-policies).
 
 But, you need to configure the individual users (senders) and domains to receive [impersonation protection](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) in Defender for Office 365. Otherwise, preset security policies automatically configure the following types of impersonation protection:
 
 - Domain impersonation protection for all domains that you own ([accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)).
-- [Mailbox intelligence protection (contact history)](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+- [Mailbox intelligence protection (contact graph)](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
 
 The differences in meaningful policy settings in the Standard preset security policy and the Strict preset security policy are summarized in the following table:
 
