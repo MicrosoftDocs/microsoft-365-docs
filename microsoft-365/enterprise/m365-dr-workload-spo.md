@@ -390,6 +390,9 @@ We do not support moving sites with:
 - InfoPath forms
 - Information Rights Management (IRM) templates applied
 
+>[!NOTE]
+> Sites archived with Microsoft 365 Archive need to be reactivated before being moved. Archiving sites while a move is in progress is not supported.
+
 To ensure all _Geography_ locations are compatible, run `Get-SPOGeoMoveCrossCompatibilityStatus`. This will display all your _Geography_ locations and whether the environment is compatible with the destination _Geography_ location.
 
 To perform a validation-only check on your site, use `Start-SPOSiteContentMove` with the `-ValidationOnly` parameter to validate if the site is able to be moved. For example:
