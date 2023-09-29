@@ -86,7 +86,7 @@ Each person who uses the Shifts connector needs a federated account in UKG Pro W
 1. Open the user's profile.
 1. Under the **Employee** section, expand **Information**.
 1. Change the **Authentication Type** to **Federated**.
-1. Save your changes and repeat the process for all users who will use the connector.
+1. Save your changes and repeat the process for all Shifts users who you want to connect to UKG Pro WFM.
 
 #### Step 2: Allow Shifts SSO redirection URLs
 
@@ -142,12 +142,6 @@ Use PowerShell to remove schedule entities from teams.
 
 To learn more, see [Remove-CsTeamsShiftsScheduleRecord](/powershell/module/teams/remove-csteamsshiftsschedulerecord).
 
-### Review your conditional access policies in Azure AD.
-
-Shifts doesn't support using the Microsoft Authenticator app. If you have a conditional access policy, exclude the Kronos Workforce Dimensions from the policy. The app is excluded when you [enable SSO by setting up integration between Azure AD and UKG Pro WFM](#enable-sso-by-setting-up-integration-between-azure-ad-and-ukg-pro-workforce-management).
-
-<!--Shifts does not support using the Microsoft Authenticator app. In case, you have a conditional access policy related to tTherefore, when you start using Shifts, upon testing if you see a message that mentions the authenticator app, please test if you are see any message that re-directs you to  In case, you have a conditional access policy, you will be required to exclude the Kronos Workforce Dimensions from this conditional access policy (the app excluded is the one you set up when enabling SSO by setting up integration between Azure AD and UKG Dimensions).-->
-
 <!--## Roles and permissions in Teams and their impact on Shifts-->
 
 ## Understand how your UKG Pro Workforce Management organizational structure influences Teams and Shifts setup
@@ -175,7 +169,7 @@ Assumptions:
 - Some frontline workers are allowed to take shifts from other stores within the Central London Area. In other words, in UKG Pro WFM, these frontline workers are part of a job transfer set.
 
 > [!NOTE]
-> Shifts doesn't yet support the concept of cross-locations. This means that workers can't offer or swap shifts with workers who are in different locations (that is, on different teams in Teams). Workers can only perform these actions within their own team.
+> Shifts doesn't yet support workers' request across different teams. This means that workers can't offer or swap shifts with workers who are in different locations (that is, on different teams in Teams). Workers can only perform these actions within their own team.
 
 ### UKG Pro Workforce Management location structure
 
@@ -250,13 +244,13 @@ Within each store, in Shifts:
 
 - Frontline managers see employees within their respective scheduling groups (that is, job types).
 - Frontline workers see their own schedule and their team's schedule.
-- Frontline workers can communicate within their own store shift through Teams Shifts chat.
+- Frontline workers can communicate with co-workers in their own store through chat.
 - Frontline workers and managers can request time off, swap shifts, offer shifts and open shifts if the requests are configured in UKG Pro WFM and set to be synced in the connection instance settings that you configure in the [wizard](shifts-connector-wizard-ukg.md).
 - Frontline workers and managers can reach other employees in their store who are on shift, if [shift-based tags](/microsoftteams/manage-tags) are enabled.
 
 For employees who work at multiple stores, in Shifts:
 
-- Frontline workers and managers can only make requests within a particular store. <!--We currently don't support requests between stores.--> Shifts currently doesn't support the concept of cross-locations.
+- Frontline workers and managers can only make requests within a particular store. Shifts currently doesn't support workers' request between different stores.
 - Frontline workers can view their schedule and their team’s schedule in any store they work at.
 
 ## Related articles
