@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: kywirpel
-ms.date: 08/21/2023
+ms.date: 09/29/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -155,6 +155,10 @@ The Deployment progress by user tab also includes the following options:
 - **Export:** Select to export tenant data to an Excel comma-separated values (.csv) file.
 - **Refresh:** Select to retrieve the most current deployment step data.
 - **Search:** Enter keywords to quickly locate a specific deployment step in the list.
+
+### Secure score tab
+
+This tab provides security score information from Microsoft 365 Defender, a measurement of an organization's security posture. The higher the score, the better protected the organization is from threats. Microsoft provides recommendations for how to increase an organization's Secure Score, which will improve its security posture.
 
 ## Related content
 
