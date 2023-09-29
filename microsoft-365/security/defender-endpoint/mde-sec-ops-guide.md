@@ -13,6 +13,7 @@ ms.author: deniseb
 ms.custom: 
 - nextgen
 - admindeeplinkDEFENDER
+- mde-ngp
 ms.subservice: mde
 ms.collection: 
 - m365-security
