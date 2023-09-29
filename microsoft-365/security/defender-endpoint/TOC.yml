@@ -1345,14 +1345,6 @@
         href: conditional-access.md
       - name: Microsoft Defender for Cloud Apps integration overview
         href: microsoft-cloud-app-security-integration.md
-
-    - name: Access the Microsoft Defender for Endpoint Community Center
-      href: community.md
-
-    - name: Helpful resources
-      href: helpful-resources.md
-
-
   - name: Troubleshoot
     items:
     - name: Troubleshoot onboarding issues
@@ -1399,8 +1391,6 @@
           href: manage-profiles-approve-sys-extensions-intune.md
         - name: JamF
           href: manage-sys-extensions-using-jamf.md
-        - name: Other MDM
-          href: manage-sys-extensions-other-mdm.md
         - name: Manual deployment
           href: manage-sys-extensions-manual-deployment.md
 
