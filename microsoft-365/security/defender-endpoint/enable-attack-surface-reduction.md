@@ -97,7 +97,7 @@ When adding exclusions, keep in mind:
 
   * Exclusions are typically based on individual files or folders (using folder paths or the full path of the file to be excluded).
   * Exclusion paths can use environment variables and wildcards. See [Use wildcards in the file name and folder path or extension exclusion lists](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists)
-  * When deployed through Group Policy or PowerShell, exclusions apply to all ASR rules. Using Intune, it is possible to configure an exclusion for a specific ASR rule. See [Configure ASR rules per-rule exclusions](attack-surface-reduction-rules-deployment-test.md#configure-asr-rules-per-rule-exclusions)
+  * When deployed through Group Policy or PowerShell, exclusions apply to all ASR rules. Using Intune, it is possible to configure an exclusion for a specific ASR rule. See [Configure ASR rules per-rule exclusions](attack-surface-reduction-rules-deployment-test.md#configure-asr-per-rule-exclusions)
   * Exclusions can be added based on certificate and file hashes, by allowing specified Defender for Endpoint file and certificate indicators. See [Manage indicators](manage-indicators.md).
 
 ## Policy Conflict
