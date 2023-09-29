@@ -1,6 +1,6 @@
 ---
 title: Manage access to Microsoft Whiteboard for GCC High environments
-ms.author: v-jdeweese
+ms.author: alexfaulkner
 author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: 
