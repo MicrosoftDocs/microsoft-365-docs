@@ -25,7 +25,6 @@ ms.date: 02/16/2021
 
 # Microsoft Security Copilot in advanced hunting
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -35,16 +34,21 @@ ms.date: 02/16/2021
 > The information in this article only applies to the Microsoft Security Copilot Early Access Program, an invite-only paid preview program for commercial customers. Some information in this article relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 ## Security Copilot in advanced hunting
-[INTRO: discuss Security Copilot, how to get access (through getting Security Copilot, general function of query assistant)]
 
-[Microsoft Security Copilot in Microsoft 365 Defender](security-copilot-in-microsoft-365-defender.md) comes with a query assistant function in advanced hunting. Users who 
+[Microsoft Security Copilot in Microsoft 365 Defender](security-copilot-in-microsoft-365-defender.md) comes with a query assistant capability in advanced hunting. 
 
-## Try your first prompt
+Threat hunters or security analysts who are not yet familiar with or have yet to learn KQL can make a request or ask a question in natural language (for instance, *Get all alerts involving user admin123*). Security Copilot then generates a KQL query that corresponds to the request using the advanced hunting data schema.
+
+This feature reduces the time  it takes to write a hunting query from scratch so that threat hunters and security analysts can focus on hunting and investigating threats.
+
+Users with access to Security Copilot has access to this capability in advanced hunting. 
+
+## Try your first request
 1. Open the **advanced hunting** page from the navigation bar in Microsoft 365 Defender.
-1. Select the **Security Copilot** button to open the query assistant side pane. 
+
 
     [IMAGE]
-1. Ask Security Copilot about any threat hunting query you want to run and press **Enter**.
+1. In the Security Copilot input field, ask any threat hunting query that you want to run and press **Enter**.
 
     [IMAGE]
 1. Security Copilot generates a KQL query from your text instruction or question. While Security Copilot is generating, you can cancel the query generation by selecting **Cancel**. You can then edit your input by selecting the pencil icon.
@@ -54,20 +58,26 @@ ms.date: 02/16/2021
 
      [IMAGE]
 
-    If you need to make further tweaks, select **Edit query**. The generated query appears in the query editor, where you can edit it before running using **Run query** above the query editor.
+    If you need to make further tweaks, select **Add to editor**. The generated query appears in the main query editor as the last query, where you can edit it before running using the regular **Run query** above the main query editor.
 
      [IMAGE]
 1. You can provide feedback by selecting the feedback **smiley icon** and choosing whether the query **Looks right**, **Needs improvement**, or **Inappropriate**.
 
      [IMAGE]
 
-
-## Modify settings
-
-You can choose to
+> [!TIP]
+> Providing feedback is an important way to let the Microsoft Security Copilot team know how well the query assistant was able to help in generating a useful KQL query. Feel free to articulate what could have made the query better, what adjustments you had to make before running the generated KQL query, or share the KQL query that you eventually used. 
 
 ## Query sessions
 
-Refreshing the advanced hunting page does not 
+You can start your first session anytime by asking a question in the Security Copilot side pane in advanced hunting. Your session contains the requests you made using your user account. Closing the side pane or refreshing the advanced hunting page does not discard the session. You can still access the generated queries should you need them. 
 
-Select **Clear chat history** to 
+Select the trash icon (**Clear chat history**) to discard the current session. 
+
+## Modify settings
+
+Select the gear icon in the Security Copilot side pane to choose whether or not to automatically add and run the generated query in advanced hunting. 
+
+Deselecting the setting gives you the option of running the generated query automatically (**Run query**) or adding the generated query to the query editor for further modification (**Add to editor**). 
+
+
