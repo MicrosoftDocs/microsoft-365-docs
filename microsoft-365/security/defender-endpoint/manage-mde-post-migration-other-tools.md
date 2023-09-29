@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
+- mde-ngp
 - ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.reviewer: chventou

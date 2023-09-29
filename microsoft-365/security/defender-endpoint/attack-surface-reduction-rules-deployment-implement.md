@@ -21,6 +21,7 @@ ms.collection:
  - m365solution-asr-rules
  - highpri
  - tier1
+ - mde-asr
 ms.date: 12/19/2022
 search.appverid: met150
 ---

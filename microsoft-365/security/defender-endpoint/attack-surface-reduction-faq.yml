@@ -16,7 +16,9 @@ metadata:
   manager: dansimp
   ms.custom: asr
   ms.topic: faq
-  ms.collection: m365-security
+  ms.collection: 
+  - m365-security
+  - mde-asr
   ms.date: 1/11/2023
 
 title: Attack surface reduction frequently asked questions (FAQ)
