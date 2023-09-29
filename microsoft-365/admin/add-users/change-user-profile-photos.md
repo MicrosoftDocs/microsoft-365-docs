@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 9/28/2023
+ms.date: 9/29/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -44,6 +44,8 @@ You can't remove existing user photos using the Microsoft 365 admin center. You 
 
 You can't manage user photos for Microsoft 365 Groups using the Microsoft 365 admin center. You can only use Microsoft Graph PowerShell.
 
+The maximum supported size of a photo is 4 MB.
+
 ## Use the Microsoft 365 admin center to change a user's profile photo
 
 1. In the Microsoft 365 admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
@@ -54,7 +56,7 @@ You can't manage user photos for Microsoft 365 Groups using the Microsoft 365 ad
 
 3. In the **Change photo** flyout that opens, select :::image type="icon" source="../../media/m365-cc-sc-import-icon.png" border="false"::: **Choose photo**.
 
-4. In the **File upload** dialog that opens, find an select the photo, and then select **Open**.
+4. In the **File upload** dialog that opens, find and select the photo, and then select **Open**.
 
 5. Back on the **Change photo** flyout, select **Save changes**, and then select :::image type="icon" source="../../media/m365-cc-sc-back-icon.png" border="false"::: **Back** to return to the details flyout, or :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: **Close** to return to the **Active users** page
 
@@ -63,7 +65,7 @@ You can't manage user photos for Microsoft 365 Groups using the Microsoft 365 ad
 
 ## Manage user photos in Microsoft Graph PowerShell
 
-After you [install the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation), use the **Connect-MgGraph** cmdlet in Microsoft Graph PowerShell to sign in with the required scopes. You need to sign in with an admin account to consent to the required scopes.
+After you [install the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation), use the **Connect-MgGraph** cmdlet to sign in with the required scopes. You need to sign in with an admin account to consent to the required scopes.
 
 - **Users only**:
 
@@ -102,10 +104,10 @@ After you [install the Microsoft Graph PowerShell SDK](/powershell/microsoftgrap
 - **Microsoft 365 Groups**:
 
   ```powershell
-  Set-MgGroupPhotoContent -GroupId <Id> -InFile "<PhotoPathAndFileName>"
+  Set-MgGroupPhotoContent -GroupId <ID> -InFile "<PhotoPathAndFileName>"
   ```
 
-  You get the Id value of the Microsoft 365 Group from the output of a **Get-MgGroup** command.
+  You get the ID GUID value of the Microsoft 365 Group from the output of a **Get-MgGroup** command.
 
   For example:
 
@@ -142,10 +144,10 @@ If the user has no photo, the commands return the error: `Exception of type 'Mic
 - **Microsoft 365 Groups**:
 
   ```powershell
-  Set-MgGroupPhoto -GroupId <Id>
+  Set-MgGroupPhoto -GroupId <ID>
   ```
 
-  You get the Id value of the Microsoft 365 Group from the output of a **Get-MgGroup** command.
+  You get the ID GUID value of the Microsoft 365 Group from the output of a **Get-MgGroup** command.
 
   For example:
 
@@ -174,10 +176,10 @@ If the user has no photo, the commands return the error: `Exception of type 'Mic
 - **Microsoft 365 Groups**:
 
   ```powershell
-  Get-MgGroupPhotoContent -GroupId <Id> -OutFile "<PhotoPathAndFileName>
+  Get-MgGroupPhotoContent -GroupId <ID> -OutFile "<PhotoPathAndFileName>
   ```
 
-  You get the Id value of the Microsoft 365 Group from the output of a **Get-MgGroup** command.
+  You get the ID GUID value of the Microsoft 365 Group from the output of a **Get-MgGroup** command.
 
   For example:
 
@@ -206,10 +208,10 @@ If the user has no photo, the commands return the error: `Exception of type 'Mic
 - **Microsoft 365 Groups**:
 
   ```powershell
-  Remove-MgGroupPhoto -GroupId <Id>
+  Remove-MgGroupPhoto -GroupId <ID>
   ```
 
-  You get the Id value of the Microsoft 365 Group from the output of a **Get-MgGroup** command.
+  You get the ID GUID value of the Microsoft 365 Group from the output of a **Get-MgGroup** command.
 
   For example:
 
