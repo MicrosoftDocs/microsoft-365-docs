@@ -80,7 +80,7 @@ Follow these steps to configure federated SSO authentication in your UKG Pro WFM
 
 #### Step 1: Change user accounts to federated accounts
 
-Each person who uses the Shifts connector needs a federated account in UKG Pro WFM.
+Each Shifts user who you want to connect to UKG Pro WFM needs a federated account in UKG Pro WFM.
 
 1. On the left menu in UKG Pro WFM, go to **Maintenance** > **People information**.
 1. Open the user's profile.

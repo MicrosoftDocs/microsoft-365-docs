@@ -91,7 +91,7 @@ Alex wants to swap a shift with a coworker. In Shifts, Alex sees a list of all s
 
 ### Set up a connection to Blue Yonder Workforce Management
 
-Integrating Shifts with Blue Yonder WFM using the connector takes just a few steps. You can use the Shifts connector wizard in the Microsoft 365 admin center to quickly set up a connection. The wizard configures the connector based on the settings you choose and creates the connection. If you prefer to use PowerShell, we also provide PowerShell scripts that you can use to get connected.
+Integrating Shifts with Blue Yonder WFM using the connector takes just a few steps. You can use the Shifts connector wizard in the Microsoft 365 admin center to set up a connection. The wizard configures the connector based on the settings you choose and creates the connection. If you prefer to use PowerShell, we also provide PowerShell scripts that you can use to get connected.
 
 For step-by-step guidance, see:
 
@@ -147,7 +147,7 @@ Camille wants to swap a shift with a coworker. In Shifts, Camille sees a list of
 
 ### Set up a connection to UKG Pro Workforce Management
 
-Integrating Shifts with UKG Pro WFM using the connector takes just a few steps. You can use the Shifts connector wizard in the Microsoft 365 admin center to quickly set up a connection. The wizard configures the connector based on the settings you choose and creates the connection. If you prefer to use PowerShell, we also provide PowerShell scripts that you can use to get connected.
+Integrating Shifts with UKG Pro WFM using the connector takes just a few steps. You can use the Shifts connector wizard in the Microsoft 365 admin center to set up a connection. The wizard configures the connector based on the settings you choose and creates the connection. If you prefer to use PowerShell, we also provide PowerShell scripts that you can use to get connected.
 
 For prerequisites, see:
 
