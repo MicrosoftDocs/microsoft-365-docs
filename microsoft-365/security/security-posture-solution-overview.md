@@ -1,5 +1,5 @@
 ---
-title: "Strengthen your security posture"
+title: "Strengthen your security posture with Microsoft 365 Defender"
 f1.keywords:
 - security posture
 - strengthen security posture
@@ -20,9 +20,11 @@ ms.collection:
 - securityposture-solution
 - highpri
 - tier1
+- ContentEnagagementFY24
+ms.date: 09/18/2023
 ---
 
-# Strengthen your security posture
+# Strengthen your security posture with Microsoft 365 Defender
 
 It has never been more important to be able to detect and defend your organization against cyber security threats. Knowing your assets, using the built-in configurations available to you, and taking recommended actions helps you build great security posture and resilience while also empowering you to respond rapidly to new and evolving threats.
 

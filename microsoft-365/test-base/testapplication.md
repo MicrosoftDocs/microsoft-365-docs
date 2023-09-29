@@ -62,8 +62,11 @@ In the left-hand menu under **Package catalog**, select the **New package**. The
 1. Select the **Type of test**. There are two test types supported:
    - An **Out of Box (OOB) test** performs an install, launch, close, and uninstall of your package. After the install, the launch-close routine is repeated 30 times before a single uninstall is run. The OOB test provides you with standardized telemetry on your package to compare across Windows builds.
    - A **Functional test** would execute your uploaded test script(s) on your package. The scripts are run in the sequence you specified and a failure in a particular script will stop subsequent scripts from executing.
+   - A **Flown Driven test** allows you to arrange your test scripts with enhanced flow control. To help you comprehensively validate the impact of an in-place Windows upgrade, you can use flow driven tests to execute your tests on both the baseline OS and target OS with a side-by-side test result comparison.
 
    > [!NOTE]
+   > Users can also select the pre-installed Microsoft apps option. This option will install Microsft apps, like Office, before the user application is installed.
+   >
    > Out of Box test is optional now.
 
    > [!div class="mx-imgBorder"]

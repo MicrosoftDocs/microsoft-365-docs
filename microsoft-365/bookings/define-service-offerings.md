@@ -27,9 +27,14 @@ You can also add customized information and URLs to the email confirmation and r
 
 ## Steps
 
+Here are the steps to add a new service. It should be noted that changes to business-related settings, like enabling or disabling one-time passwords (OTP) or sending meeting invites, may take up to 10 minutes to apply.
+
 1. In Microsoft 365, select the App launcher, and then select **Bookings**.
 
 2. Go to **Your calendar** > **Services** and select **Add new service**.
+
+    >[!NOTE]
+    > The number of services should be limited to 50.
 
 3. On the **Basic details** page, add your selections.
 
@@ -103,8 +108,12 @@ You can also add customized information and URLs to the email confirmation and r
 
 7. On the **Notifications** page, you can send SMS messages, set up reminders, and send notifications.
 
-    - **Enable text message notifications for your customer** If selected, SMS messages are sent to the customer, but only if they opt in.
-    - **Reminders and notifications** are sent out to customers, staff members, or both, at a specified time before the appointment. Multiple messages can be created for each appointment, according to your preference.
+> [!NOTE]
+> Text message notifications in Bookings requires a Teams Premium license.
+
+**Enable text message notifications for your customer** If selected, SMS messages are sent to the customer, but only if they opt in.
+
+**Reminders and notifications** are sent out to customers, staff members, or both, at a specified time before the appointment. Multiple messages can be created for each appointment, according to your preference.
 
    :::image type="content" source="media/bookings-remind-confirm-2.png" alt-text="A confirmation email from Bookings.":::
 

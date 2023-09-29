@@ -159,6 +159,7 @@ You can run a query continuously as long as:
 Near real-time detections are supported for the following tables:
 
 - `AlertEvidence`
+- `CloudAppEvents`
 - `DeviceEvents`
 - `DeviceFileCertificateInfo`
 - `DeviceFileEvents`
@@ -173,7 +174,11 @@ Near real-time detections are supported for the following tables:
 - `EmailEvents`
 - `EmailPostDeliveryEvents`
 - `EmailUrlInfo`
+- `IdentityDirectoryEvents`
+- `IdentityLogonEvents`
+- `IdentityQueryEvents`
 - `UrlClickEvents`
+
 
 > [!NOTE]
 > Only columns that are generally available can support **Continuous (NRT)** frequency.

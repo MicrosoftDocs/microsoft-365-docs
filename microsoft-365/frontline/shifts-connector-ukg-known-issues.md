@@ -1,7 +1,7 @@
 ---
 title: Team Shifts connector for UKG Dimensions known issues
 author: lana-chin
-ms.author: v-chinlana
+ms.author: heidip
 manager: serdars
 ms.reviewer: imarquesgil
 ms.topic: troubleshooting
@@ -13,7 +13,7 @@ ms.localizationpriority: high
 ms.collection:
   - M365-collaboration
   - m365-frontline
-  - tier2
+  - teams-1p-app-admin
 appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers

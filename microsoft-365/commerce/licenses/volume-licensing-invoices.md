@@ -1,5 +1,5 @@
 ---
-title: "Non-Azure Microsoft volume licensing invoices"
+title: "Microsoft volume licensing invoices"
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -22,9 +22,10 @@ description: "Learn how to access and view non-Azure volume licensing invoices i
 ms.date: 03/31/2023
 ---
 
-# Non-Azure Microsoft volume licensing invoices
+# Microsoft volume licensing invoices
 
-This article applies only to non-Azure volume licensing (VL) invoices and explains the format of a new invoice PDF and invoice recon file that are available to volume licensing (VL) customers.
+> [!IMPORTANT]
+> This article applies only to non-Azure volume licensing (VL) invoices and explains the format of a new invoice PDF and invoice recon file that are available to volume licensing (VL) customers.
 
 Starting on November 18, 2022, VL customers with non-Azure products purchased **under a direct VL agreement** can access the new invoice format in the Microsoft 365 admin center. This invoice applies to all types of VL programs except Microsoft Products & Services Agreements (MPSA), Federal Government, Special agreements, and Select Plus agreements.
 

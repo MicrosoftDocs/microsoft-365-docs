@@ -18,7 +18,7 @@ description: Admins can learn how the order of protection settings and the prior
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.date: 8/14/2023
+ms.date: 9/18/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
@@ -39,16 +39,16 @@ There are two major factors that determine which policy is applied to a message:
 
   |Order|Email protection|Category|Where to manage|
   |:---:|---|---|---|
-  |1|Malware|CAT:MALW|[Configure anti-malware policies in EOP](anti-malware-policies-configure.md)|
-  |2|High confidence Phish|CAT:HPHSH|[Configure anti-spam policies in EOP](anti-spam-policies-configure.md)|
-  |3|Phishing|CAT:PHSH|[Configure anti-spam policies in EOP](anti-spam-policies-configure.md)|
-  |4|High confidence spam|CAT:HSPM|[Configure anti-spam policies in EOP](anti-spam-policies-configure.md)|
-  |5|Spoofing|CAT:SPOOF|[Spoof intelligence insight in EOP](anti-spoofing-spoof-intelligence.md)|
-  |6<sup>\*</sup>|User impersonation (protected users)|UIMP|[Configure anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-mdo-configure.md)|
-  |7<sup>\*</sup>|Domain impersonation (protected domains)|DIMP|[Configure anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-mdo-configure.md)|
-  |8<sup>\*</sup>|Mailbox intelligence (contact graph)|GIMP|[Configure anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-mdo-configure.md)|
-  |9|Spam|CAT:SPM|[Configure anti-spam policies in EOP](anti-spam-policies-configure.md)|
-  |10|Bulk|CAT:BULK|[Configure anti-spam policies in EOP](anti-spam-policies-configure.md)|
+  |1|Malware|`CAT:MALW`|[Configure anti-malware policies in EOP](anti-malware-policies-configure.md)|
+  |2|High confidence Phish|`CAT:HPHSH`|[Configure anti-spam policies in EOP](anti-spam-policies-configure.md)|
+  |3|Phishing|`CAT:PHSH`|[Configure anti-spam policies in EOP](anti-spam-policies-configure.md)|
+  |4|High confidence spam|`CAT:HSPM`|[Configure anti-spam policies in EOP](anti-spam-policies-configure.md)|
+  |5|Spoofing|`CAT:SPOOF`|[Spoof intelligence insight in EOP](anti-spoofing-spoof-intelligence.md)|
+  |6<sup>\*</sup>|User impersonation (protected users)|`CAT:UIMP`|[Configure anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-mdo-configure.md)|
+  |7<sup>\*</sup>|Domain impersonation (protected domains)|`CAT:DIMP`|[Configure anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-mdo-configure.md)|
+  |8<sup>\*</sup>|Mailbox intelligence (contact graph)|`CAT:GIMP`|[Configure anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-mdo-configure.md)|
+  |9|Spam|`CAT:SPM`|[Configure anti-spam policies in EOP](anti-spam-policies-configure.md)|
+  |10|Bulk|`CAT:BULK`|[Configure anti-spam policies in EOP](anti-spam-policies-configure.md)|
 
   <sup>\*</sup> These features are available only in anti-phishing policies in Microsoft Defender for Office 365.
 
@@ -99,7 +99,7 @@ To make sure that recipients get the protection settings that you want, use the 
 
 ## Appendix
 
-It's important to understand how user allows and blocks, tenant allows and blocks, and filtering stack verdicts in EOP and Defender for Office 365 compliment or contradict each other.
+It's important to understand how user allows and blocks, tenant allows and blocks, and filtering stack verdicts in EOP and Defender for Office 365 complement or contradict each other.
 
 - For information about filtering stacks and how they're combined, see [Step-by-step threat protection in Microsoft Defender for Office 365](protection-stack-microsoft-defender-for-office365.md).
 - After the filtering stack determines a verdict, only then are tenant policies and their configured actions evaluated.
@@ -138,17 +138,19 @@ Tenant allows and blocks are able to override some filtering stack verdicts as d
   |Bulk|**Tenant wins**: Email delivered to mailbox|
   |Not spam|**Tenant wins**: Email delivered to mailbox|
 
-- [Enhanced Filtering for Connectors](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) (skip listing):
+- [Exchange mail flow rules](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (also known as transport rules):
 
-  |Filtering stack verdict|Enhanced Filtering|
-  |---|---|
-  |Malware|**Filter wins**: Email quarantined|
-  |High confidence phishing|**Tenant wins**: Email delivered to mailbox|
-  |Phishing|**Tenant wins**: Email delivered to mailbox|
-  |High confidence spam|**Tenant wins**: Email delivered to mailbox|
-  |Spam|**Tenant wins**: Email delivered to mailbox|
-  |Bulk|**Tenant wins**: Email delivered to mailbox|
-  |Not spam|**Tenant wins**: Email delivered to mailbox|
+  |Filtering stack verdict|Mail flow rule allows<sup>\*</sup>|Mail flow rule blocks|
+  |---|---|---|
+  |Malware|**Filter wins**: Email quarantined|**Filter wins**: Email quarantined|
+  |High confidence phishing|**Filter wins**: Email quarantined except in complex routing|**Filter wins**: Email quarantined|
+  |Phishing|**Tenant wins**: Email delivered to mailbox|**Tenant wins**: Phishing action in the applicable anti-spam policy|
+  |High confidence spam|**Tenant wins**: Email delivered to mailbox|**Tenant wins**: Email delivered to user's Junk Email folder|
+  |Spam|**Tenant wins**: Email delivered to mailbox|**Tenant wins**: Email delivered to user's Junk Email folder|
+  |Bulk|**Tenant wins**: Email delivered to mailbox|**Tenant wins**: Email delivered to user's Junk Email folder|
+  |Not spam|**Tenant wins**: Email delivered to mailbox|**Tenant wins**: Email delivered to user's Junk Email folder|
+
+  <sup>\*</sup> Organizations that use a third-party security service or device in front of Microsoft 365 should consider using [Authenticated Received Chain (ARC)](use-arc-exceptions-to-mark-trusted-arc-senders.md) (contact the third-party for availability) and [Enhanced Filtering for Connectors (also known as skip listing)](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) instead of an SCL=-1 mail flow rule. These improved methods reduce email authentication issues and encourage [defense-in-depth](step-by-step-guides/defense-in-depth-guide.md) email security.
 
 - IP Allow List and IP Block List in [connection filter policies](connection-filter-policies-configure.md):
 
@@ -162,22 +164,10 @@ Tenant allows and blocks are able to override some filtering stack verdicts as d
   |Bulk|**Tenant wins**: Email delivered to mailbox|**Tenant wins**: Email silently dropped|
   |Not spam|**Tenant wins**: Email delivered to mailbox|**Tenant wins**: Email silently dropped|
 
-- [Exchange mail flow rules](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (also known as transport rules):
-
-  |Filtering stack verdict|Mail flow rule allows|Mail flow rule blocks|
-  |---|---|---|
-  |Malware|**Filter wins**: Email quarantined|**Filter wins**: Email quarantined|
-  |High confidence phishing|**Filter wins**: Email quarantined except in complex routing|**Filter wins**: Email quarantined|
-  |Phishing|**Tenant wins**: Email delivered to mailbox|**Tenant wins**: Phishing action in the applicable anti-spam policy|
-  |High confidence spam|**Tenant wins**: Email delivered to mailbox|**Tenant wins**: Email delivered to user's Junk Email folder|
-  |Spam|**Tenant wins**: Email delivered to mailbox|**Tenant wins**: Email delivered to user's Junk Email folder|
-  |Bulk|**Tenant wins**: Email delivered to mailbox|**Tenant wins**: Email delivered to user's Junk Email folder|
-  |Not spam|**Tenant wins**: Email delivered to mailbox|**Tenant wins**: Email delivered to user's Junk Email folder|
-
 - Allow and block settings in [anti-spam policies](anti-spam-policies-configure.md):
   - Allowed sender and domain list.
   - Blocked sender and domain list.
-  - Block messages from specific countries or in specific languages.
+  - Block messages from specific countries/regions or in specific languages.
   - Block messages based on [Advanced Spam Filter (ASF) settings](anti-spam-policies-asf-settings-about.md).
 
   |Filtering stack verdict|Anti-spam policy allows|Anti-spam policy blocks|

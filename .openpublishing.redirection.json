@@ -199,6 +199,21 @@
          "source_path":"security/defender-endpoint/enable-microsoft-defender-for-iot-integration.md",
          "redirect_url":"/azure/defender-for-iot/organizations/concept-enterprise",
          "redirect_document_id":false
+      },
+      {
+         "source_path":"microsoft-365/scheduler/index.yml",
+         "redirect_url":"https://news.microsoft.com/reinventing-productivity",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"microsoft-365/admin/copilot/m365-copilot-setup.md",
+         "redirect_url":"/microsoft-365-copilot/microsoft-365-copilot-setup",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"microsoft-365/admin/copilot/m365-early-access-program.yml",
+         "redirect_url":"/microsoft-365-copilot/microsoft-365-early-access-program",
+         "redirect_document_id":false
       }
   
     ]

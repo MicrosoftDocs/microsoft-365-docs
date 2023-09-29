@@ -20,7 +20,7 @@ ms.collection:
   - tier1
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 08/08/2023
+ms.date: 09/18/2023
 ---
 
 # Before you begin using Defender Experts for Hunting
@@ -39,13 +39,13 @@ Microsoft Defender Experts for Hunting is a separate service from your existing 
 
 ### Eligibility and licensing
 
-Defender Experts for Hunting customers are assigned two Ask Defender Experts (Experts on Demand) credits on the first of each month, which you can use to submit questions. You can still submit inquiries beyond your initial number of allocated credits. Unused credits expire 90 days from date of assignment or at the end of the subscription term, whichever is shortest.
+Defender Experts for Hunting customers are assigned 10 **Ask Defender Experts** credits, which you can use to submit questions, at the start of each calendar quarter. Unused credits from the current quarter roll up to the next one. You can use up to 20 credits only per quarter. All unused credits expire by the end of the calendar year or at the end of your subscription term, whichever comes first.
 
 For more information about Microsoft's commercial licensing terms, visit [this page](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/MCA).
 
 ### Server coverage
 
-Defender Experts for XDR also covers servers—whether on premises or on a hyperscale cloud service provider—that have Defender for Endpoint deployed on them with a Microsoft Defender for Server license. For Defender Experts coverage, a server is considered as a user account for billing. The service doesn’t cover Microsoft Defender for Cloud.
+Defender Experts for Hunting also covers servers—whether on premises or on a hyperscale cloud service provider—that have Defender for Endpoint deployed on them with a Microsoft Defender for Server license. For Defender Experts coverage, a server is considered as a user account for billing. The service doesn’t cover Microsoft Defender for Cloud.
 [Learn more about specific hardware and software requirements](/microsoft-365/security/defender-endpoint/minimum-requirements).
 
 ### Access requirements

@@ -2,10 +2,10 @@
 title: "Deploy add-ins in the admin center"
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekuako
+ms.author: efrene
+author: efrene
 manager: scotv
-ms.date: 02/18/2020
+ms.date: 08/30/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -32,7 +32,10 @@ description: "Learn to deploy add-ins to users and groups in your organization b
 
 # Deploy add-ins in the Microsoft 365 admin center
 
-Office Add-ins help you personalize your documents and streamline the way you access information on the web (see [Start using your Office Add-in](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). As an admin, you can deploy Office Add-ins for the users in your organization by using the Centralized Deployment feature in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. Centralized Deployment is the recommended and most feature-rich way for most admins to deploy add-ins to users and groups within an organization.
+> [!NOTE]
+> [Integrated Apps](test-and-deploy-microsoft-365-apps.md) is the recommended and most feature-rich way for most customers to centrally deploy Office add-ins to users and groups within your organization.
+
+Office Add-ins help you personalize your documents and streamline the way you access information on the web (see [Start using your Office Add-in](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). As an admin, you can deploy Office Add-ins for the users in your organization by using the Centralized Deployment feature in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
 For more information on how to determine if your organization can support Centralized Deployment, see [Determine if Centralized Deployment of add-ins works for your organization](centralized-deployment-of-add-ins.md).
 
@@ -63,28 +66,32 @@ Before you begin, see [Determine if Centralized Deployment of add-ins works for 
 
 3. If you selected the option to add an add-in from the Office Store, make your add-in selection. </br>
 
-    You can view available add-ins by categories: **Suggested for you**, **Rating**, or **Name**. Only free add-ins are available from the Office Store. Paid add-ins aren't supported currently. After you select an add-in, accept the terms and conditions to proceed. <br/> 
+   You can view available add-ins by categories: **Suggested for you**, **Rating**, or **Name**. Only free add-ins are available from the Office Store. Paid add-ins aren't supported currently. After you select an add-in, accept the terms and conditions to proceed. <br/>
 
-    > [!NOTE]
-    > With the Office Store option, updates and enhancements are automatically deployed to users.
+   :::image type="content" source="../../media/addanaddin.png" alt-text="Select Add-in" lightbox="../../media/addanaddin.png":::
+
+> [!NOTE]
+> With the Office Store option, updates and enhancements are automatically deployed to users.
 
 5. On the next page, select **Everyone**, **Specific users/groups**, or **Just me** to specify who the add-in is deployed to. Use the Search box to find specific users or groups. <br/>
 
-    > [!NOTE]
-    > To learn about other states that apply to an add-in, see [Add-in states](./manage-addins-in-the-admin-center.md).
+   :::image type="content" source="../../media/selectusers.png" alt-text="Select Users" lightbox="../../media/selectusers.png":::
+
+> [!NOTE]
+> To learn about other states that apply to an add-in, see [Add-in states](./manage-addins-in-the-admin-center.md).
   
 6. Select **Deploy**.
   
 7. A green tick appears when the add-in is deployed. Follow the on-page instructions to test the add-in.
 
-    > [!NOTE]
-    > Users might need to relaunch Microsoft 365 to view the add-in icon on the app ribbon. Outlook add-ins can take up to 24 hours to appear on app ribbons.
+> [!NOTE]
+> Users might need to relaunch Microsoft 365 to view the add-in icon on the app ribbon. Outlook add-ins can take up to 24 hours to appear on app ribbons.
 
 8. When finished, select **Next**. If you've deployed to just yourself, you can select **Change who has access to add-in** to deploy to more users.
 
-    If you've deployed the add-in to other members of your organization, follow the instructions to announce the deployment of the add-in. <br/>
+   If you've deployed the add-in to other members of your organization, follow the instructions to announce the deployment of the add-in. <br/>
   
-    It's good practice to inform users and groups that the deployed add-in is available. Consider sending an email that describes when and how to use the add-in. Include or link to Help content or FAQs that might help users if they have problems with the add-in.
+   It's good practice to inform users and groups that the deployed add-in is available. Consider sending an email that describes when and how to use the add-in. Include or link to Help content or FAQs that might help users if they have problems with the add-in.
   
 ### Considerations when assigning an add-in to users and groups
 
@@ -120,8 +127,8 @@ Updates for add-ins happen as follows:
   
 - **Line-of-business add-in:** In this case, where an admin explicitly uploaded a manifest, the add-in requires that the admin upload a new manifest file to support metadata changes. The next time the relevant Microsoft 365 apps start, the add-in will update. The web application can change at any time.
 
-    > [!NOTE]
-    > Admin does not need to remove a LOB Add-in for doing an update.   In the Add-ins section, Admin can simply click on the LOB Add-in and choose the **Update Button** in the bottom right corner. Update will work only if the version of the new add-in is greater than that of the existing add-in.
+  > [!NOTE]
+  > Admin does not need to remove a LOB Add-in for doing an update.   In the Add-ins section, Admin can simply click on the LOB Add-in and choose the **Update Button** in the bottom right corner. Update will work only if the version of the new add-in is greater than that of the existing add-in.
 
 - **Office Store add-in:** When an admin selected an add-in from the Office Store, if an add-in updates in the Office Store, the add-in will update later in Centralized Deployment. The next time the relevant Office applications start, the add-in will update. The web application can change at any time.
   

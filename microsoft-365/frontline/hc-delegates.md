@@ -1,7 +1,7 @@
 ---
 title: Use a Teams status message to assign a delegate
 author: lana-chin
-ms.author: v-chinlana
+ms.author: heidip
 manager: serdars
 audience: ITPro
 ms.topic: how-to
@@ -19,9 +19,7 @@ ms.collection:
   - microsoftcloud-healthcare
   - m365-frontline
   - highpri
-  - EngageScoreSep2022
   - contentengagementFY23
-  - tier2
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers

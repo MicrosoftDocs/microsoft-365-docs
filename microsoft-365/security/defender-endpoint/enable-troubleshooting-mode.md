@@ -1,25 +1,23 @@
 ---
 title: Get started with troubleshooting mode in Microsoft Defender for Endpoint 
 description: Turn on the Microsoft Defender for Endpoint troubleshooting mode to address various antivirus issues.
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: microsoft-365-security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
+ms.reviewer: pricci
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
 ms.topic: conceptual
 ms.subservice: mde
-ms.date: 04/18/2023
+ms.date: 09/25/2023
 ---
 
 # Get started with troubleshooting mode in Microsoft Defender for Endpoint 
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -29,11 +27,14 @@ ms.date: 04/18/2023
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
-Troubleshooting mode in Microsoft Defender for Endpoint enables you to troubleshoot various Microsoft Defender Antivirus features by enabling them on a device and testing different scenarios, even if they're controlled by organization policy. For example, if [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) is enabled, [certain settings](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on) cannot be modified or turned off, but you can use troubleshooting mode on a device to edit those settings temporarily.
+Troubleshooting mode in Microsoft Defender for Endpoint enables admins to troubleshoot various Microsoft Defender Antivirus features, even if devices are managed by organizational policies. For example, if [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) is enabled, [certain settings](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on) can't be modified or turned off, but you can use troubleshooting mode on a device to edit those settings temporarily.
 
-Troubleshooting mode is disabled by default, and requires you to turn it on for a device (and/or group of devices) for a limited time. Note that this is exclusively an Enterprise-only feature, and requires Microsoft 365 Defender access.
+Troubleshooting mode is disabled by default, and requires you to turn it on for a device (and/or group of devices) for a limited time. Troubleshooting mode is exclusively an enterprise-only feature, and requires Microsoft 365 Defender portal access.
 
-
+> [!TIP]
+> - During troubleshooting mode, you can use the PowerShell command `Set-MPPreference -DisableTamperProtection $true` on Windows devices.
+> - To check the state of [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md), you can use the [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) PowerShell cmdlet. In the list of results, look for `IsTamperProtected` or `RealTimeProtectionEnabled`. (A value of *true* means tamper protection is enabled.)
+.
 ## What do you need to know before you begin?
 
 During troubleshooting mode, you can use the PowerShell command `Set-MPPreference -DisableTamperProtection $true` or, on client operating systems, the Security Center app to temporarily disable tamper protection on your device and make your necessary configuration changes. 
@@ -44,7 +45,7 @@ During troubleshooting mode, you can use the PowerShell command `Set-MPPreferenc
 
 - Local admins, with appropriate permissions, can change configurations on individual endpoints that are usually locked by policy. Having a device in troubleshooting mode can be helpful when diagnosing Microsoft Defender Antivirus performance and compatibility scenarios.
 
-  - Local admins won't be able to turn off Microsoft Defender Antivirus, or uninstall it.
+  - Local admins can't turn off Microsoft Defender Antivirus, or uninstall it.
 
   - Local admins can configure all other security settings in the Microsoft Defender Antivirus suite (for example, cloud protection, tamper protection).
 
@@ -58,11 +59,11 @@ During troubleshooting mode, you can use the PowerShell command `Set-MPPreferenc
   
   - Operational logs from during troubleshooting mode are also collected.
 
-  - Logs and snapshots are collected and are available for an admin to collect using the [Collect investigation package](respond-machine-alerts.md#collect-investigation-package-from-devices) feature on the device page. Note that Microsoft won't remove this data from the device until an admin collects them.
+  - Logs and snapshots are collected and are available for an admin to collect using the [Collect investigation package](respond-machine-alerts.md#collect-investigation-package-from-devices) feature on the device page. Microsoft doesn't remove this data from the device until an admin has collected it.
 
 - Admins can also review the changes in settings that take place during Troubleshooting mode in **Event Viewer** on the device page.
 
-- Troubleshooting mode automatically turns off after reaching the expiration time (it lasts for 3 hours). After expiration, all policy-managed configurations become read-only again and revert back to how the device was configured before enabling troubleshooting mode.
+- Troubleshooting mode automatically turns off after reaching the expiration time (it lasts for 4 hours). After expiration, all policy-managed configurations become read-only again and revert back to how the device was configured before enabling troubleshooting mode.
 
 - It could take up to 15 minutes from the time the command is sent from Microsoft 365 Defender to when it becomes active on the device.
 
@@ -88,11 +89,11 @@ During troubleshooting mode, you can use the PowerShell command `Set-MPPreferenc
 
 - Troubleshooting mode is also available for machines running the modern, unified solution for Windows Server 2012 R2 and Windows Server 2016. Before you use troubleshooting mode, make sure all of the following components are up to date:
 
-  - Sense version 10.8049.22439.1084 or later ([KB5005292: Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB5005292))
+  - Sense version `10.8049.22439.1084` or later ([KB5005292: Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB5005292))
 
-  - Microsoft Defender Antivirus - Platform: 4.18.2207.7 or later ([KB4052623: Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623))
+  - Microsoft Defender Antivirus - Platform: `4.18.2207.7` or later ([KB4052623: Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623))
 
-  - Microsoft Defender Antivirus - Engine: 1.1.19500.2 or later ([KB2267602: Microsoft Update Catalog](https://www.microsoft.com/en-us/wdsi/defenderupdates))
+  - Microsoft Defender Antivirus - Engine: `1.1.19500.2` or later ([KB2267602: Microsoft Update Catalog](https://www.microsoft.com/en-us/wdsi/defenderupdates))
 
 - For troubleshooting mode to be applied, Microsoft Defender for Endpoint must be tenant-enrolled and active on the device.
 
@@ -102,7 +103,7 @@ During troubleshooting mode, you can use the PowerShell command `Set-MPPreferenc
 
 1. Go to the Microsoft 365 Defender portal (<https://security.microsoft.com>), and sign in.
 
-2. Navigate to the device page/machine page for the device you would like to turn on troubleshooting mode. Select **Turn on troubleshooting mode**. Note that this requires "Manage security settings in Security Center" permissions for Microsoft Defender for Endpoint.
+2. Navigate to the device page/machine page for the device you would like to turn on troubleshooting mode. Select **Turn on troubleshooting mode**. You must have "Manage security settings in Security Center" [permissions](assign-portal-access.md) for Microsoft Defender for Endpoint.
 
    :::image type="content" source="../../media/ts-mode-menu.png" alt-text="Turn on troubleshooting mode" lightbox="../../media/ts-mode-menu.png":::
 
@@ -119,7 +120,7 @@ During troubleshooting mode, you can use the PowerShell command `Set-MPPreferenc
 
 ## Advanced hunting queries
 
-Here are some pre-built advanced hunting queries to give you visibility into the troubleshooting events that are occurring in your environment. You can also use these queries to [create detection rules](../defender/custom-detection-rules.md#create-a-custom-detection-rule) that'd alert you when the devices are in troubleshooting mode.
+Here are some prebuilt advanced hunting queries to give you visibility into the troubleshooting events that are occurring in your environment. You can also use these queries to [create detection rules](../defender/custom-detection-rules.md#create-a-custom-detection-rule) to generate alerts when devices are in troubleshooting mode.
 
 ### Get troubleshooting events for a particular device
 
@@ -143,7 +144,7 @@ DeviceEvents
 
 ```kusto
 DeviceEvents
-| where Timestamp > ago(3h) // troubleshooting mode automatically disables after 3 hours 
+| where Timestamp > ago(3h) // troubleshooting mode automatically disables after 4 hours 
 | where ActionType == "AntivirusTroubleshootModeEvent"
 | extend _tsmodeproperties = parse_json(AdditionalFields)
 | where _tsmodeproperties.TroubleshootingStateChangeReason contains "started"
