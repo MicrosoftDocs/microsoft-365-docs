@@ -244,7 +244,7 @@ Within each store, in Shifts:
 
 - Frontline managers see employees within their respective scheduling groups (that is, job types).
 - Frontline workers see their own schedule and their team's schedule.
-- Frontline workers can communicate with co-workers in their own store through chat.
+- Frontline workers can communicate with coworkers in their own store through chat.
 - Frontline workers and managers can request time off, swap shifts, offer shifts and open shifts if the requests are configured in UKG Pro WFM and set to be synced in the connection instance settings that you configure in the [wizard](shifts-connector-wizard-ukg.md).
 - Frontline workers and managers can reach other employees in their store who are on shift, if [shift-based tags](/microsoftteams/manage-tags) are enabled.
 
