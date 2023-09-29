@@ -8,7 +8,7 @@ ms.date: 12/14/2020
 audience: admin
 ms.topic: landing-page
 ms.custom: 
-ms.service: microsoft-365-enterprise
+ms.service: whiteboard
 search.appverid: MET150
 ms.collection: 
 ms.localizationpriority: medium

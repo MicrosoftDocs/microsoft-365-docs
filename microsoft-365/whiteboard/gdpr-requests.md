@@ -8,7 +8,7 @@ ms.date: 07/05/2022
 audience: admin
 ms.topic: article
 ms.custom: 
-ms.service: microsoft-365-enterprise
+ms.service: whiteboard
 search.appverid: MET150
 ms.collection: 
 ms.localizationpriority: medium
