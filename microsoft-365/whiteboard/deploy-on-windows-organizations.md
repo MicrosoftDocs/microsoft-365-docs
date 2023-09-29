@@ -1,6 +1,6 @@
 ---
 title: Deploy Microsoft Whiteboard on Windows 10 devices
-ms.author: v-jdeweese
+ms.author: alexfaulkner
 author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: 
