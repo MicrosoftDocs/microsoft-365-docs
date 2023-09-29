@@ -158,11 +158,12 @@ The Deployment progress by user tab also includes the following options:
 
 ### Secure score tab
 
-This tab provides security score information from Microsoft 365 Defender, a measurement of an organization's security posture. The higher the score, the better protected the organization is from threats. Microsoft provides recommendations for how to increase an organization's Secure Score, which will improve its security posture.
+This tab provides Microsoft Security Score information, a measurement of an organization's security posture. The higher the score, the better protected the organization is from threats. Microsoft provides recommendations for how to increase an organization's secure score, which will improve its security posture. To learn more, see [Microsoft Secure Score](../security/defender/microsoft-secure-score.md).
 
 ## Related content
 
 [Requirements for Microsoft 365 Lighthouse](m365-lighthouse-requirements.md) (article)\
 [Microsoft 365 Lighthouse FAQ](m365-lighthouse-faq.yml) (article)\
 [Manage your tenant list in Microsoft 365 Lighthouse](m365-lighthouse-manage-tenant-list.md) (article)\
-[Overview of using Microsoft 365 Lighthouse baselines to deploy standard tenant configurations](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (article)
+[Overview of using Microsoft 365 Lighthouse baselines to deploy standard tenant configurations](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) (article)\
+[Microsoft Secure Score](../security/defender/microsoft-secure-score.md) (article)
