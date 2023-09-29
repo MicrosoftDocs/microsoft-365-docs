@@ -84,7 +84,7 @@ To configure attack surface reduction in your environment, follow these steps:
 
 ## Test attack surface reduction in Microsoft Defender for Endpoint
 
-As part of your organization's security team, you can configure attack surface reduction capabilities to run in audit mode to see how they'll work. You can enable the following ASR security features in audit mode:
+As part of your organization's security team, you can configure attack surface reduction capabilities to run in audit mode to see how they'll work. You can enable the following attack surface reduction security features in audit mode:
 
 - Attack surface reduction rules
 - Exploit protection
@@ -107,13 +107,13 @@ You can enable audit mode using Group Policy, PowerShell, and configuration serv
 | Audit options | How to enable audit mode | How to view events |
 |---|---|---|
 | Audit applies to all events | [Enable controlled folder access](enable-controlled-folders.md) | [Controlled folder access events](evaluate-controlled-folder-access.md#review-controlled-folder-access-events-in-windows-event-viewer) |
-| Audit applies to individual rules | [Step 1: Test ASR rules using Audit mode](attack-surface-reduction-rules-deployment-test.md#step-1-test-asr-rules-using-audit) | [Step 2: Understand the Attack surface reduction rules reporting page](attack-surface-reduction-rules-deployment-test.md#step-2-understand-the-asr-rules-reporting-page-in-the-microsoft-365-defender-portal) |
+| Audit applies to individual rules | [Step 1: Test attack surface reduction rules using Audit mode](attack-surface-reduction-rules-deployment-test.md#step-1-test-asr-rules-using-audit) | [Step 2: Understand the Attack surface reduction rules reporting page](attack-surface-reduction-rules-deployment-test.md#step-2-understand-the-asr-rules-reporting-page-in-the-microsoft-365-defender-portal) |
 | Audit applies to all events | [Enable network protection](enable-network-protection.md) | [Network protection events](evaluate-network-protection.md#review-network-protection-events-in-windows-event-viewer) |
 | Audit applies to individual mitigations | [Enable exploit protection](enable-exploit-protection.md) | [Exploit protection events](exploit-protection.md#review-exploit-protection-events-in-windows-event-viewer) |
 
-For example, you can test attack surface reduction rules in audit mode prior to enabling (block mode) them. Attack surface reduction (ASR) rules are pre-defined to harden common, known attack surfaces. There are several methods you can use to implement attack surface reduction rules. The preferred method is documented in the following attack surface reduction rules deployment topics:
+For example, you can test attack surface reduction rules in audit mode prior to enabling (block mode) them. Attack surface reduction rules are pre-defined to harden common, known attack surfaces. There are several methods you can use to implement attack surface reduction rules. The preferred method is documented in the following attack surface reduction rules deployment topics:
 
-- [Attack surface reduction (ASR) rules deployment overview](attack-surface-reduction-rules-deployment.md)
+- [Attack surface reduction rules deployment overview](attack-surface-reduction-rules-deployment.md)
 - [Plan attack surface reduction rules deployment](attack-surface-reduction-rules-deployment-plan.md)
 - [Test attack surface reduction rules](attack-surface-reduction-rules-deployment-test.md)
 - [Enable attack surface reduction rules](attack-surface-reduction-rules-deployment-implement.md)
@@ -281,9 +281,9 @@ You can access these events in Windows Event viewer:
 |Attack surface reduction|Windows Defender (Operational)|1121|Event when rule fires in Block-mode|
 
 > [!NOTE]
-> From the user's perspective, ASR Warn mode notifications are made as a Windows Toast Notification for attack surface reduction rules.
+> From the user's perspective, attack surface reduction Warn mode notifications are made as a Windows Toast Notification for attack surface reduction rules.
 >
-> In ASR, Network Protection provides only Audit and Block modes.
+> In attack surface reduction, Network Protection provides only Audit and Block modes.
 
 ## Resources to learn more about attack surface reduction
 
@@ -292,8 +292,8 @@ As mentioned in the video, Defender for Endpoint includes several attack surface
 | Article | Description |
 |:---|:---|
 | [Application control](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) | Use application control so that your applications must earn trust in order to run. |
-| [Attack surface reduction (ASR) rules reference](attack-surface-reduction-rules-reference.md) | Provides details about each attack surface reduction rule. |
-| [Attack surface reduction (ASR) rules deployment guide](attack-surface-reduction-rules-deployment.md) | Presents overview information and prerequisites for deploying attack surface reduction rules, followed by step-by-step guidance for testing (audit mode), enabling (block mode) and monitoring. |
+| [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md) | Provides details about each attack surface reduction rule. |
+| [Attack surface reduction rules deployment guide](attack-surface-reduction-rules-deployment.md) | Presents overview information and prerequisites for deploying attack surface reduction rules, followed by step-by-step guidance for testing (audit mode), enabling (block mode) and monitoring. |
 | [Controlled folder access](controlled-folders.md) | Help prevent malicious or suspicious apps (including file-encrypting ransomware malware) from making changes to files in your key system folders (Requires Microsoft Defender Antivirus). |
 | [Device control](device-control-report.md) | Protects against data loss by monitoring and controlling media used on devices, such as removable storage and USB drives, in your organization. |
 | [Exploit protection](exploit-protection.md) | Help protect the operating systems and apps your organization uses from being exploited. Exploit protection also works with third-party antivirus solutions. |

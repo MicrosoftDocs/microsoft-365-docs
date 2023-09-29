@@ -41,7 +41,7 @@ Attack surface reduction rules target specific behaviors that are typically used
 - Windows 10 1803 build (1803 rules)
 - Microsoft Defender AV
 - Microsoft Office (required for Office rules and sample)
-- [Download ASR PowerShell scripts](https://demo.wd.microsoft.com/Content/WindowsDefender_ASR_scripts.zip)
+- [Download attack surface reduction PowerShell scripts](https://demo.wd.microsoft.com/Content/WindowsDefender_ASR_scripts.zip)
 
 ## PowerShell commands
 
@@ -78,7 +78,7 @@ Get-MpPreference
 
 ## Test files
 
-Note - some test files have multiple exploits embedded and will trigger multiple rules
+Note - some test files have multiple exploits embedded and triggers multiple rules
 
 | Rule name | Rule GUID | Windows version |
 |:---|:---|:---|
@@ -110,12 +110,12 @@ You can perform these manual steps instead:
 
 1. Create a folder under c: named demo, "c:\demo"
 2. Save this [clean file](https://demo.wd.microsoft.com/Content/testfile_safe.txt) into c:\demo.
-3. Enable all rules using the powershell commands above.
+3. Enable all rules using the PowerShell command.
 
 ### Scenario 1: ASR blocks a test file with multiple vulnerabilities
 
-1. Enable all rules in block mode using the PowerShell commands above (you can copy paste all)
-2. Download and open any of the test file/documents linked above, enable editing and content if prompted.
+1. Enable all rules in block mode using the PowerShell commands (you can copy paste all)
+2. Download and open any of the test file/documents, enable editing and content if prompted.
 
 #### Scenario 1 expected results
 
@@ -123,9 +123,9 @@ You should immediately see an "Action blocked" notification.
 
 ### Scenario 2: ASR rule blocks the test file with the corresponding vulnerability
 
-1. Configure the rule you want to test using the PowerShell command from above.
+1. Configure the rule you want to test using the PowerShell command from the previous step.
 2. Example: `Add-MpPreference -AttackSurfaceReductionRules_Ids D4F940AB-401B-4EfC-AADC-AD5F3C50688A -AttackSurfaceReductionRules_Actions Enabled`
-3. Download and open the test file/document for the rule you want to test linked above, enable editing and content if prompted
+3. Download and open the test file/document for the rule you want to test, enable editing and content if prompted
 4. Example: [Block Office applications from creating child processes](https://demo.wd.microsoft.com/Content/ransomware_testfile_doc.docm) D4F940AB-401B-4EFC-AADC-AD5F3C50688A
 
 #### Scenario 2 expected results
@@ -148,12 +148,12 @@ You should immediately see an "Action blocked" notification.
 
 ### Scenario 4: What would happen without ASR
 
-1. Turn off all ASR rules using PowerShell commands below in the cleanup section
-2. Download any test file/document linked above, enable editing and content if prompted
+1. Turn off all attack surface reduction rules using PowerShell commands in the cleanup section
+2. Download any test file/document, enable editing and content if prompted
 
 #### Scenario 4 expected results
 
-- The files in c:\demo will be encrypted and you should get a warning message
+- The files in c:\demo are encrypted and you should get a warning message
 - Execute the test file again to decrypt the files
 
 ## Clean-up
@@ -178,7 +178,7 @@ Add-MpPreference -AttackSurfaceReductionRules_Ids 26190899-1602-49E8-8B27-EB1D0A
 Add-MpPreference -AttackSurfaceReductionRules_Ids 7674BA52-37EB-4A4F-A9A1-F0F9A1619A2C -AttackSurfaceReductionRules_Actions Disabled
 ```
 
-Cleanup c:\demo encryption run the [encrypt/decrypt file](https://demo.wd.microsoft.com/Content/ransomware_cleanup_encrypt_decrypt.exe)
+Cleanup **c:\demo** encryption by running the [encrypt/decrypt file](https://demo.wd.microsoft.com/Content/ransomware_cleanup_encrypt_decrypt.exe)
 
 ## See also
 
