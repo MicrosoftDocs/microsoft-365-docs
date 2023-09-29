@@ -1,5 +1,5 @@
 ---
-title: Understand and use attack surface reduction (ASR)
+title: Understand and use attack surface reduction
 ms.reviewer: 
 description: Learn about the attack surface reduction capabilities of Microsoft Defender for Endpoint.
 keywords: asr, attack surface reduction, attack surface reduction rules, Microsoft Defender for Endpoint, microsoft defender, antivirus, av, windows defender

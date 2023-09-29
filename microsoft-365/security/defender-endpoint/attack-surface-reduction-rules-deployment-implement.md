@@ -1,5 +1,5 @@
 ---
-title: Enable attack surface reduction (ASR) rules
+title: Enable attack surface reduction rules
 description: Provides guidance to implement your attack surface reduction rules deployment.
 keywords: Attack surface reduction rules deployment, ASR deployment, enable asr rules, configure ASR, host intrusion prevention system, protection rules, anti-exploit rules, anti-exploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules
 search.product: eADQiWindows 10XVcnh
@@ -26,7 +26,7 @@ ms.date: 12/19/2022
 search.appverid: met150
 ---
 
-# Enable attack surface reduction (ASR) rules
+# Enable attack surface reduction rules
 
 **Applies to:**
 
@@ -134,7 +134,7 @@ You can customize the notification for when a rule is triggered and blocks an ap
 
 ## Additional articles in this deployment collection
 
-[Attack surface reduction (ASR) rules deployment overview](attack-surface-reduction-rules-deployment.md)
+[Attack surface reduction rules deployment overview](attack-surface-reduction-rules-deployment.md)
 
 [Plan attack surface reduction rules deployment](attack-surface-reduction-rules-deployment-plan.md)
 
@@ -142,7 +142,7 @@ You can customize the notification for when a rule is triggered and blocks an ap
 
 [Operationalize attack surface reduction rules](attack-surface-reduction-rules-deployment-operationalize.md)
 
-[Attack surface reduction (ASR) rules reference](attack-surface-reduction-rules-reference.md)
+[Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md)
 
 ## See also
 

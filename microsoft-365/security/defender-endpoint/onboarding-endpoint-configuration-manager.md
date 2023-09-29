@@ -254,7 +254,7 @@ After completing this task, you now have successfully configured Microsoft Defen
 
 ### Attack surface reduction
 
-The attack surface reduction pillar of Defender for Endpoint includes the feature set that is available under Exploit Guard. Attack surface reduction (ASR) rules, Controlled Folder Access, Network Protection, and Exploit Protection.
+The attack surface reduction pillar of Defender for Endpoint includes the feature set that is available under Exploit Guard. Attack surface reduction rules, Controlled Folder Access, Network Protection, and Exploit Protection.
 
 All these features provide a test mode and a block mode. In test mode, there's no end-user impact. All it does is collect additional telemetry and make it available in the Microsoft 365 Defender portal. The goal with a deployment is to step-by-step move security controls into block mode.
 

@@ -1,6 +1,6 @@
 ---
 title: Attack surface reduction rules reference
-description: Lists details about Microsoft Defender for Endpoint (MDE) attack surface reduction (ASR) rules on a per-rule basis.
+description: Lists details about Microsoft Defender for Endpoint attack surface reduction rules on a per-rule basis.
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
@@ -19,7 +19,7 @@ ms.date: 08/04/2023
 search.appverid: met150
 ---
 
-# Attack surface reduction (ASR) rules reference
+# Attack surface reduction rules reference
 
 **Applies to:**
 
@@ -46,7 +46,7 @@ This article provides information about Microsoft Defender for Endpoint attack s
 ASR rules are categorized as one of two types:
 
 1. **Standard protection rules**: Are the minimum set of rules which Microsoft recommends you always enable, while you are evaluating the impact and configuration needs of the other ASR rules. These rules typically have minimal-to-no noticeable impact on the end user.
-1. **Other rules**: Rules which require some measure of following the documented deployment steps [Plan > Test (audit) > Enable (block/warn modes)], as documented in the [Attack surface reduction (ASR) rules deployment guide](attack-surface-reduction-rules-deployment.md)
+1. **Other rules**: Rules which require some measure of following the documented deployment steps [Plan > Test (audit) > Enable (block/warn modes)], as documented in the [Attack surface reduction rules deployment guide](attack-surface-reduction-rules-deployment.md)
 
 For the easiest method to enable the standard protection rules, see: [Simplified standard protection option](attack-surface-reduction-rules-report.md#simplified-standard-protection-option).
 
@@ -585,7 +585,7 @@ Dependencies: Microsoft Defender Antivirus, Cloud Protection
 
 ## See also
 
-- [Attack surface reduction (ASR) rules deployment overview](attack-surface-reduction-rules-deployment.md)
+- [Attack surface reduction rules deployment overview](attack-surface-reduction-rules-deployment.md)
 - [Plan attack surface reduction rules deployment](attack-surface-reduction-rules-deployment-plan.md)
 - [Test attack surface reduction rules](attack-surface-reduction-rules-deployment-test.md)
 - [Enable attack surface reduction rules](attack-surface-reduction-rules-deployment-implement.md)
