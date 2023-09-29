@@ -70,9 +70,9 @@ To configure attack surface reduction in your environment, follow these steps:
 
 9. Set up your network firewall.
 
-   1. Get an overview of [Windows Defender Firewall with advanced security](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
-   2. Use the [Windows Defender Firewall design guide](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-design-guide) to decide how you want to design your firewall policies.
-   3. Use the [Windows Defender Firewall deployment guide](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide) to set up your organization's firewall with advanced security.
+   1. Get an overview of [Windows Firewall with advanced security](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
+   2. Use the [Windows Firewall design guide](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-design-guide) to decide how you want to design your firewall policies.
+   3. Use the [Windows Firewall deployment guide](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide) to set up your organization's firewall with advanced security.
 
 > [!TIP]
 > In most cases, when you configure attack surface reduction capabilities, you can choose from among several methods:
@@ -84,7 +84,7 @@ To configure attack surface reduction in your environment, follow these steps:
 
 ## Test attack surface reduction in Microsoft Defender for Endpoint
 
-As part of your organization's security team, you can configure attack surface reduction capabilities to run in audit mode to see how they'll work. You can enable the following attack surface reduction security features in audit mode:
+As part of your organization's security team, you can configure attack surface reduction capabilities to run in audit mode to see how they work. You can enable the following attack surface reduction security features in audit mode:
 
 - Attack surface reduction rules
 - Exploit protection
@@ -94,9 +94,9 @@ As part of your organization's security team, you can configure attack surface r
 
 Audit mode lets you see a record of what *would* have happened if you had enabled the feature.
 
-You can enable audit mode when testing how the features will work. Enabling audit mode only for testing helps to prevent audit mode from affecting your line-of-business apps. You can also get an idea of how many suspicious file modification attempts occur over a certain period of time.
+You can enable audit mode when testing how the features work. Enabling audit mode only for testing helps to prevent audit mode from affecting your line-of-business apps. You can also get an idea of how many suspicious file modification attempts occur over a certain period of time.
 
-The features won't block or prevent apps, scripts, or files from being modified. However, the Windows Event Log will record events as if the features were fully enabled. With audit mode, you can review the event log to see what affect the feature would have had if it was enabled.
+The features won't block or prevent apps, scripts, or files from being modified. However, the Windows Event Log records events as if the features were fully enabled. With audit mode, you can review the event log to see what effect the feature would have had if it was enabled.
 
 To find the audited entries, go to **Applications and Services** \> **Microsoft** \> **Windows** \> **Windows Defender** \> **Operational**.
 
@@ -111,7 +111,7 @@ You can enable audit mode using Group Policy, PowerShell, and configuration serv
 | Audit applies to all events | [Enable network protection](enable-network-protection.md) | [Network protection events](evaluate-network-protection.md#review-network-protection-events-in-windows-event-viewer) |
 | Audit applies to individual mitigations | [Enable exploit protection](enable-exploit-protection.md) | [Exploit protection events](exploit-protection.md#review-exploit-protection-events-in-windows-event-viewer) |
 
-For example, you can test attack surface reduction rules in audit mode prior to enabling (block mode) them. Attack surface reduction rules are pre-defined to harden common, known attack surfaces. There are several methods you can use to implement attack surface reduction rules. The preferred method is documented in the following attack surface reduction rules deployment topics:
+For example, you can test attack surface reduction rules in audit mode prior to enabling (block mode) them. Attack surface reduction rules are predefined to harden common, known attack surfaces. There are several methods you can use to implement attack surface reduction rules. The preferred method is documented in the following attack surface reduction rules deployment articles:
 
 - [Attack surface reduction rules deployment overview](attack-surface-reduction-rules-deployment.md)
 - [Plan attack surface reduction rules deployment](attack-surface-reduction-rules-deployment-plan.md)
@@ -154,7 +154,7 @@ You can also manually navigate to the event area that corresponds to the feature
 
 5. Select **Open**.
 
-6. It will create a custom view that filters to only show the events related to that feature.
+6. It creates a custom view that filters to only show the events related to that feature.
 
 #### Copy the XML directly
 
@@ -245,7 +245,7 @@ You can access these events in Windows Event viewer:
 |Exploit protection|Security-Mitigations (Kernel Mode/User Mode)|1|ACG audit|
 |Exploit protection|Security-Mitigations (Kernel Mode/User Mode)|2|ACG enforce|
 |Exploit protection|Security-Mitigations (Kernel Mode/User Mode)|3|Do not allow child processes audit|
-|Exploit protection|Security-Mitigations (Kernel Mode/User Mode)|4|Do not allow child processes block|
+|Exploit protection|Security-Mitigations (Kernel Mode/User Mode)|4|Don't allow child processes block|
 |Exploit protection|Security-Mitigations (Kernel Mode/User Mode)|5|Block low integrity images audit|
 |Exploit protection|Security-Mitigations (Kernel Mode/User Mode)|6|Block low integrity images block|
 |Exploit protection|Security-Mitigations (Kernel Mode/User Mode)|7|Block remote images audit|
