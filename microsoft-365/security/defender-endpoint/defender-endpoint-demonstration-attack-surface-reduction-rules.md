@@ -29,7 +29,7 @@ ms.date: 10/21/2022
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Attack Surface Reduction (ASR) rules target specific behaviors that are typically used by malware and malicious apps to infect machines, such as:
+Attack surface reduction rules target specific behaviors that are typically used by malware and malicious apps to infect machines, such as:
 
 - Executable files and scripts used in Office apps or web mail that attempt to download or run files
 - Scripts that are obfuscated or otherwise suspicious

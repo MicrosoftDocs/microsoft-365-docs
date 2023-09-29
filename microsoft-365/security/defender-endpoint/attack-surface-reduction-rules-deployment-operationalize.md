@@ -28,7 +28,7 @@ search.appverid: met150
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-After you've fully deployed attack surface reduction (ASR) rules, it's vital that you have processes in place to monitor and respond to ASR-related activities. Activities include: 
+After you've fully deployed attack surface reduction rules, it's vital that you have processes in place to monitor and respond to ASR-related activities. Activities include: 
 
 ## Managing ASR rules false positives
 
@@ -89,11 +89,11 @@ For more information about hunting options, see: [Demystifying attack surface re
 
 [Attack surface reduction (ASR) rules deployment overview](attack-surface-reduction-rules-deployment.md)
 
-[Plan attack surface reduction (ASR) rules deployment](attack-surface-reduction-rules-deployment-plan.md)
+[Plan attack surface reduction rules deployment](attack-surface-reduction-rules-deployment-plan.md)
 
-[Test attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-test.md)
+[Test attack surface reduction rules](attack-surface-reduction-rules-deployment-test.md)
 
-[Enable attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-implement.md)
+[Enable attack surface reduction rules](attack-surface-reduction-rules-deployment-implement.md)
 
 [Attack surface reduction (ASR) rules reference](attack-surface-reduction-rules-reference.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

@@ -52,10 +52,10 @@ Such software behaviors are sometimes seen in legitimate applications. However, 
 For a sequential, end-to-end process of how to manage ASR rules, see:
 
 - [Attack surface reduction (ASR) rules deployment overview](attack-surface-reduction-rules-deployment.md)
-- [Plan attack surface reduction (ASR) rules deployment](attack-surface-reduction-rules-deployment-plan.md)
-- [Test attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-test.md)
-- [Enable attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-implement.md)
-- [Operationalize attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-operationalize.md)
+- [Plan attack surface reduction rules deployment](attack-surface-reduction-rules-deployment-plan.md)
+- [Test attack surface reduction rules](attack-surface-reduction-rules-deployment-test.md)
+- [Enable attack surface reduction rules](attack-surface-reduction-rules-deployment-implement.md)
+- [Operationalize attack surface reduction rules](attack-surface-reduction-rules-deployment-operationalize.md)
 
 ## Assess rule impact before deployment
 
@@ -79,7 +79,7 @@ By monitoring audit data and [adding exclusions](attack-surface-reduction-rules-
 
 ### Per-rule exclusions
 
-For information about configuring per-rule exclusions, see the section titled **Configure ASR rules per-rule exclusions** in the topic [Test attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-test.md).
+For information about configuring per-rule exclusions, see the section titled **Configure ASR rules per-rule exclusions** in the topic [Test attack surface reduction rules](attack-surface-reduction-rules-deployment-test.md).
 
 ## Warn mode for users
 
@@ -193,10 +193,10 @@ The "engine version" listed for attack surface reduction events in the event log
 ## See also
 
 - [Attack surface reduction (ASR) rules deployment overview](attack-surface-reduction-rules-deployment.md)
-- [Plan attack surface reduction (ASR) rules deployment](attack-surface-reduction-rules-deployment-plan.md)
-- [Test attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-test.md)
-- [Enable attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-implement.md)
-- [Operationalize attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-operationalize.md)
+- [Plan attack surface reduction rules deployment](attack-surface-reduction-rules-deployment-plan.md)
+- [Test attack surface reduction rules](attack-surface-reduction-rules-deployment-test.md)
+- [Enable attack surface reduction rules](attack-surface-reduction-rules-deployment-implement.md)
+- [Operationalize attack surface reduction rules](attack-surface-reduction-rules-deployment-operationalize.md)
 - [Attack surface reduction \(ASR\) rules report](attack-surface-reduction-rules-report.md)
 - [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
 

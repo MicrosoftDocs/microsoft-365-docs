@@ -37,7 +37,7 @@ sections:
   - name: Ignored
     questions:
       - question: |
-          Is attack surface reduction (ASR) part of Windows?
+          Is attack surface reduction part of Windows?
         answer: |
           ASR was originally a feature of the suite of exploit guard features introduced as a major update to Microsoft Defender Antivirus, in Windows 10, version 1709. Microsoft Defender Antivirus is the native antimalware component of Windows. However, the full ASR feature-set is only available with a Windows enterprise license. Also note that some Microsoft Defender Antivirus exclusions are applicable to ASR rule exclusions. See [Attack surface reduction rules reference - Microsoft Defender Antivirus exclusions and ASR rules](attack-surface-reduction-rules-reference.md#microsoft-defender-antivirus-exclusions-and-asr-rules).
 
@@ -79,7 +79,7 @@ sections:
 
           Be aware of the following items about ASR rules exclusions (including wildcards and env. variables):
 
-          - Most ASR rules exclusions are independent from Microsoft Defender Antivirus exclusions. However, Microsoft Defender Antivirus exclusions do apply to some attack surface reduction (ASR) rules. See [Attack surface reduction rules reference - Microsoft Defender Antivirus exclusions and ASR rules](attack-surface-reduction-rules-reference.md#microsoft-defender-antivirus-exclusions-and-asr-rules).
+          - Most ASR rules exclusions are independent from Microsoft Defender Antivirus exclusions. However, Microsoft Defender Antivirus exclusions do apply to some attack surface reduction rules. See [Attack surface reduction rules reference - Microsoft Defender Antivirus exclusions and ASR rules](attack-surface-reduction-rules-reference.md#microsoft-defender-antivirus-exclusions-and-asr-rules).
           - Wildcards can't be used to define a drive letter.
           - If you want to exclude more than one folder, in a path, use multiple instances of ```\*\``` to indicate multiple nested folders (for example, ```c:\Folder\*\*\Test```)
           - Microsoft Endpoint Configuration Manager supports wildcards (* or ?).
@@ -107,7 +107,7 @@ sections:
       - question: |
           How do I configure per-rule exclusions?
         answer: |
-          For information about configuring per-rule exclusions, see the section titled **Configure ASR rules per-rule exclusions** in the article [Test attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-test.md).
+          For information about configuring per-rule exclusions, see the section titled **Configure ASR rules per-rule exclusions** in the article [Test attack surface reduction rules](attack-surface-reduction-rules-deployment-test.md).
 
       - question: |
           What are the rules Microsoft recommends enabling?
@@ -138,7 +138,7 @@ sections:
       - question: |
           Is Local security authority subsystem enabled by default?
         answer: |
-          The default state for the Attack Surface Reduction (ASR) rule "Block credential stealing from the Windows local security authority subsystem (lsass.exe)" changes from **Not Configured** to **Configured** and the default mode set to **Block**. All other ASR rules remain in their default state: **Not Configured**. Additional filtering logic has already been incorporated in the rule to reduce end user notifications. Customers can configure the rule to **Audit**, **Warn** or **Disabled** modes, which overrides the default mode. The functionality of this rule is the same, whether the rule is configured in the on-by-default mode, or if you enable Block mode manually.
+          The default state for the attack Surface Reduction rule "Block credential stealing from the Windows local security authority subsystem (lsass.exe)" changes from **Not Configured** to **Configured** and the default mode set to **Block**. All other ASR rules remain in their default state: **Not Configured**. Additional filtering logic has already been incorporated in the rule to reduce end user notifications. Customers can configure the rule to **Audit**, **Warn** or **Disabled** modes, which overrides the default mode. The functionality of this rule is the same, whether the rule is configured in the on-by-default mode, or if you enable Block mode manually.
 
       - question: |
           What are some good recommendations for getting started with ASR?

@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender for Endpoint (MDE) attack surface reduction (ASR) rules deployment overview
-description: Provides overview and prerequisite guidance about deploying Microsoft Defender for Endpoint (MDE) attack surface reduction (ASR) rules. Links to topics that show how to plan and ASR deployment, test ASR rules, configure ASR rules, and enable ASR rules.
+title: Microsoft Defender for Endpoint (MDE) attack surface reduction rules deployment overview
+description: Provides overview and prerequisite guidance about deploying Microsoft Defender for Endpoint (MDE) attack surface reduction rules. Links to topics that show how to plan and ASR deployment, test ASR rules, configure ASR rules, and enable ASR rules.
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
@@ -28,7 +28,7 @@ search.appverid: met150
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Attack surfaces are all the places where your organization is vulnerable to cyberthreats and attacks. Reducing your attack surface means protecting your organization's devices and network, which leaves attackers with fewer ways to attack. Configuring Microsoft Defender for Endpoint (MDE) attack surface reduction (ASR) rules can help.
+Attack surfaces are all the places where your organization is vulnerable to cyberthreats and attacks. Reducing your attack surface means protecting your organization's devices and network, which leaves attackers with fewer ways to attack. Configuring Microsoft Defender for Endpoint (MDE) attack surface reduction rules can help.
 
 ASR rules target certain software behaviors, such as:
 
@@ -52,7 +52,7 @@ This deployment collection provides information about the following aspects of M
 
 As with any new, wide-scale implementation which could potentially impact your line-of-business operations, it is important to be methodical in your planning and implementation. Because of the powerful capabilities of ASR rules in preventing malware, careful planning and deployment of these rules is necessary to ensure they work best for your unique customer workflows. To work in your environment, you need to plan, test, implement, and operationalize ASR rules carefully.  
 
-  :::image type="content" source="images/asr-rules-deployment-phases.png" alt-text="Plan Microsoft Defender for Endpoint (MDE) attack surface reduction (ASR) rules, test MDE ASR rules, Enable MDE ASR rules, maintain ASR rules." lightbox="images/asr-rules-deployment-phases.png":::
+  :::image type="content" source="images/asr-rules-deployment-phases.png" alt-text="Plan Microsoft Defender for Endpoint (MDE) attack surface reduction rules, test MDE ASR rules, Enable MDE ASR rules, maintain ASR rules." lightbox="images/asr-rules-deployment-phases.png":::
 
 ## Important pre-deployment caveat
 
@@ -147,11 +147,11 @@ Some rules don't work well if un-signed, internally developed application and sc
 
 ## Additional topics in this deployment collection
 
-[Test attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-test.md)
+[Test attack surface reduction rules](attack-surface-reduction-rules-deployment-test.md)
 
-[Enable attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-implement.md)
+[Enable attack surface reduction rules](attack-surface-reduction-rules-deployment-implement.md)
 
-[Operationalize attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-operationalize.md)
+[Operationalize attack surface reduction rules](attack-surface-reduction-rules-deployment-operationalize.md)
 
 [Attack surface reduction (ASR) rules reference](attack-surface-reduction-rules-reference.md)
 
