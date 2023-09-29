@@ -1,6 +1,6 @@
 ---
 title: Manage sharing for Microsoft Whiteboard in GCC High environments
-ms.author:alexfaulkner
+ms.author: alexfaulkner
 author: johnddeweese
 manager: alexfaulkner
 ms.reviewer:
