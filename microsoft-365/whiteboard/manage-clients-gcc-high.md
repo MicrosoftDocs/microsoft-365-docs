@@ -1,6 +1,6 @@
 ---
 title: Manage clients for Microsoft Whiteboard in GCC High environments
-ms.author: v-jdeweese
+ms.author: alexfaulkner
 author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: 
