@@ -95,17 +95,17 @@
           href: shifts-connector-powershell-manage.md
         - name: Known issues
           href: shifts-connector-blue-yonder-known-issues.md
-      - name: Connect Shifts to UKG Dimensions
+      - name: Connect Shifts to UKG Pro WFM
         items:
         - name: Prerequisites
           href: shifts-connector-ukg-prerequisites.md
-        - name: Use the Shifts connector wizard to set up a connection to UKG Dimensions
+        - name: Use the Shifts connector wizard to set up a connection to UKG Pro WFM
           href: shifts-connector-wizard-ukg.md
-        - name: Use PowerShell to set up a connection to UKG Dimensions
+        - name: Use PowerShell to set up a connection to UKG Pro WFM
           href: shifts-connector-ukg-powershell-setup.md
-        - name: Use the Microsoft 365 admin center to manage your connection to UKG Dimensions
+        - name: Use the Microsoft 365 admin center to manage your connection to UKG Pro WFM
           href: shifts-connector-ukg-admin-center-manage.md
-        - name: Use PowerShell to manage your connection to UKG Dimensions
+        - name: Use PowerShell to manage your connection to UKG Pro WFM
           href: shifts-connector-ukg-powershell-manage.md
         - name: Known issues
           href: shifts-connector-ukg-known-issues.md
