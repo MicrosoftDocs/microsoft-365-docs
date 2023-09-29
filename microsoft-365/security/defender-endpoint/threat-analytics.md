@@ -18,6 +18,7 @@ ms.collection:
   - m365-security
   - m365initiative-defender-endpoint
   - tier1
+  - mde-edr
 ms.topic: conceptual
 ms.subservice: mde
 ms.date: 12/18/2020

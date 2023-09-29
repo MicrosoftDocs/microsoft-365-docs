@@ -14,12 +14,13 @@ ms.author: dansimp
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom:
-- asr
+- mde-asr
 - admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.collection:
 - m365-security
 - tier2
+- mde-asr
 search.appverid: met150
 ms.date: 1/11/2023
 ---

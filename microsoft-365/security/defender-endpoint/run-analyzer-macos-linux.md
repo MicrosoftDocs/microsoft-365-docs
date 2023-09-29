@@ -17,6 +17,7 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
+- mde-ngp
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
