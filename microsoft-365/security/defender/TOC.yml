@@ -248,7 +248,7 @@
                href: advanced-hunting-overview.md
              - name: Guided and advanced modes
                href: advanced-hunting-modes.md 
-             - name: Write KQL queries with Security Copilot
+             - name: Generate queries with Security Copilot
                href: advanced-hunting-security-copilot.md                             
              - name: Build queries using guided mode 
                items: 
