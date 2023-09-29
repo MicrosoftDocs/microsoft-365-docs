@@ -3501,6 +3501,11 @@
          "redirect_document_id":false
     },
     {
+      "source_path":"microsoft-365/security/defender-endpoint/manage-sys-extensions-other-mdm.md",
+      "redirect_url":"/microsoft-365/security/defender-endpoint/mac-install-with-other-mdm.md)",
+      "redirect_document_id":false
+ },
+    {
     "source_path":"microsoft-365/security/defender-endpoint/helpful-resources.md",
     "redirect_url":"/microsoft-365/security/defender-endpoint/",
     "redirect_document_id":false
