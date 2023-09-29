@@ -33,7 +33,7 @@ search.appverid: met150
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Implementing attack surface reduction (ASR) rules move the first test ring into an enabled, functional state.
+Implementing attack surface reduction rules move the first test ring into an enabled, functional state.
 
 > :::image type="content" source="images/asr-rules-implementation-steps.png" alt-text="The procedure to implement ASR rules" lightbox="images/asr-rules-implementation-steps.png":::
   
@@ -136,11 +136,11 @@ You can customize the notification for when a rule is triggered and blocks an ap
 
 [Attack surface reduction (ASR) rules deployment overview](attack-surface-reduction-rules-deployment.md)
 
-[Plan attack surface reduction (ASR) rules deployment](attack-surface-reduction-rules-deployment-plan.md)
+[Plan attack surface reduction rules deployment](attack-surface-reduction-rules-deployment-plan.md)
 
-[Test attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-test.md)
+[Test attack surface reduction rules](attack-surface-reduction-rules-deployment-test.md)
 
-[Operationalize attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-operationalize.md)
+[Operationalize attack surface reduction rules](attack-surface-reduction-rules-deployment-operationalize.md)
 
 [Attack surface reduction (ASR) rules reference](attack-surface-reduction-rules-reference.md)
 

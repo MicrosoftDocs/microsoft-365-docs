@@ -40,7 +40,7 @@ search.appverid: met150
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-The attack surface reduction (ASR) rules report provides information about the _attack surface reduction rules_ that are applied to devices in your organization. This report also provides information about:
+The attack surface reduction rules report provides information about the _attack surface reduction rules_ that are applied to devices in your organization. This report also provides information about:
 
 - detected threats
 - blocked threats
@@ -295,10 +295,10 @@ The Add exclusion page has two buttons for actions that can be used on any detec
 ## See also
 
 - [Attack surface reduction (ASR) rules deployment overview](attack-surface-reduction-rules-deployment.md)
-- [Plan attack surface reduction (ASR) rules deployment](attack-surface-reduction-rules-deployment-plan.md)
-- [Test attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-test.md)
-- [Enable attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-implement.md)
-- [Operationalize attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-operationalize.md)
+- [Plan attack surface reduction rules deployment](attack-surface-reduction-rules-deployment-plan.md)
+- [Test attack surface reduction rules](attack-surface-reduction-rules-deployment-test.md)
+- [Enable attack surface reduction rules](attack-surface-reduction-rules-deployment-implement.md)
+- [Operationalize attack surface reduction rules](attack-surface-reduction-rules-deployment-operationalize.md)
 - [Attack surface reduction \(ASR\) rules report](attack-surface-reduction-rules-report.md)
 - [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
