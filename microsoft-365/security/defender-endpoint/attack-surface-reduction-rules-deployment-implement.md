@@ -21,6 +21,7 @@ ms.collection:
  - m365solution-asr-rules
  - highpri
  - tier1
+ - mde-asr
 ms.date: 12/19/2022
 search.appverid: met150
 ---
@@ -32,7 +33,7 @@ search.appverid: met150
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Implementing attack surface reduction (ASR) rules move the first test ring into an enabled, functional state.
+Implementing attack surface reduction rules move the first test ring into an enabled, functional state.
 
 > :::image type="content" source="images/asr-rules-implementation-steps.png" alt-text="The procedure to implement ASR rules" lightbox="images/asr-rules-implementation-steps.png":::
   
@@ -86,7 +87,7 @@ In cases in which blocks aren't self resolved in a timely manner, customers can 
 > [!WARNING]
 > Excluding or unblocking files or folders could potentially allow unsafe files to run and infect your devices. Excluding files or folders can severely reduce the protection provided by attack surface reduction rules. Files that would have been blocked by a rule will be allowed to run, and there will be no report or event recorded.
 
-An exclusion can apply to all rules that allow exclusions or apply to specific rules using [per-rule exclusions](attack-surface-reduction-rules-deployment-test.md#configure-asr-rules-per-rule-exclusions). You can specify an individual file, folder path, or the fully qualified domain name for a resource.
+An exclusion can apply to all rules that allow exclusions or apply to specific rules using [per-rule exclusions](attack-surface-reduction-rules-deployment-test.md#configure-asr-per-rule-exclusions). You can specify an individual file, folder path, or the fully qualified domain name for a resource.
 
 An exclusion is applied only when the excluded application or service starts. For example, if you add an exclusion for an update service that is already running, the update service continues to trigger events until the service is stopped and restarted.
 
@@ -135,11 +136,11 @@ You can customize the notification for when a rule is triggered and blocks an ap
 
 [Attack surface reduction (ASR) rules deployment overview](attack-surface-reduction-rules-deployment.md)
 
-[Plan attack surface reduction (ASR) rules deployment](attack-surface-reduction-rules-deployment-plan.md)
+[Plan attack surface reduction rules deployment](attack-surface-reduction-rules-deployment-plan.md)
 
-[Test attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-test.md)
+[Test attack surface reduction rules](attack-surface-reduction-rules-deployment-test.md)
 
-[Operationalize attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-operationalize.md)
+[Operationalize attack surface reduction rules](attack-surface-reduction-rules-deployment-operationalize.md)
 
 [Attack surface reduction (ASR) rules reference](attack-surface-reduction-rules-reference.md)
 
