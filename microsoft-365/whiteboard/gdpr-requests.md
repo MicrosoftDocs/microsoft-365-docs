@@ -1,6 +1,6 @@
 ---
 title: Manage GDPR data subject requests in Microsoft Whiteboard
-ms.author: v-jdeweese
+ms.author: alexfaulkner
 author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: 
