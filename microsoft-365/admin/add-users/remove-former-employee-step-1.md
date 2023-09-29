@@ -32,6 +32,35 @@ search.appverid:
 description: "Global administrators can block a former employee from logging in and block their access to Microsoft 365 services."
 ---
 
+## What you need to know about terminating an employee's email session
+
+Here's information about how to get an employee out of email (Exchange).
+
+<br>
+
+****
+
+|What you can do|How you do it|
+|:-----|:-----|
+|Terminate a session (such as Outlook on the web, Outlook, Exchange active sync, etc.) and force to open a new session|Reset password|
+|Terminate a session and block access to future sessions (for all protocols)|Disable the account. For example, in the Exchange admin center or using PowerShell: <p>  `Set-Mailbox user@contoso.com -AccountDisabled:$true`|
+|Terminate the session for a particular protocol (such as ActiveSync)|Disable the protocol. For example, in the Exchange admin center or using PowerShell: <p>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false`|
+|
+
+The above operations can be done in three places:
+  
+<br>
+
+****
+
+|If you terminate the session here|How long it takes|
+|---|---|
+|In the Exchange admin center or using PowerShell|Expected delay is within 30 min|
+|In the Azure Active Directory admin center|Expected delay is 60 min|
+|In an on-premises environment|Expected delay is 3 hours or more|
+|
+
+
 # Step 1 - Prevent a former employee from logging in and block access to Microsoft 365 services
 
 If you need to immediately prevent a user's sign-in access, you should reset their password. In this step, force a sign out of the user from Microsoft 365.
