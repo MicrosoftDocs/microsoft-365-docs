@@ -58,7 +58,7 @@ For more information, see [Features and capabilities for each plan](https://www.
 
 ## Get the big picture
 
-The [Microsoft 365 for enterprise poster](http://download.microsoft.com/download/f/4/a/f4a4b49c-1dea-4299-a2cb-65bc08abdcb2/Microsoft365Enterprise.pdf) is a central location for you to view:
+The [Microsoft 365 for enterprise poster](https://download.microsoft.com/download/f/4/a/f4a4b49c-1dea-4299-a2cb-65bc08abdcb2/Microsoft365Enterprise.pdf) is a central location for you to view:
 
 - The benefits of Microsoft 365 for enterprise, and how apps and services map to its value pillars.
 - Microsoft 365 for enterprise plans and which components they contain.
