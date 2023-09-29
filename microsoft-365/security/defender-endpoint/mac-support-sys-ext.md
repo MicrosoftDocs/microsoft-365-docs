@@ -39,7 +39,7 @@ You can submit feedback by opening Microsoft Defender for Endpoint on Mac on you
 
 Another option is to submit feedback via the Microsoft 365 Defender by launching **security.microsoft.com** and selecting the **Give feedback** tab.
 
-This article provides information on how to troubleshoot issues with the system extension that's installed as part of Microsoft Defender for Endpoint (MDE) on macOS.
+This article provides information on how to troubleshoot issues with the system extension that's installed as part of Microsoft Defender for Endpoint on macOS.
 
 Starting with macOS BigSur (11), Apple’s macOS requires all system extensions to be explicitly approved before they're allowed to run on the device.
 
