@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: ragovind
-ms.date: 06/09/2023
+ms.date: 09/29/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -36,6 +36,9 @@ Azure AD Identity Protection identifies risks of many types, including:
 - Signing in from infected devices
 - Signing in from IP addresses with suspicious activity
 - Signing in from unfamiliar locations
+
+> [!NOTE]
+> This page provides insights around data that is limited or unavailable due to insufficient licensing.
 
 ## Before you begin
 

@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: ragovind
-ms.date: 06/30/2023
+ms.date: 09/29/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -27,6 +27,9 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 Microsoft 365 Lighthouse allows you to manage multifactor authentication (MFA) settings across all tenants. The Multifactor Authentication page provides detailed information on the status of MFA enablement and the ability to take action on specific users.
 
 For small- and medium-sized business (SMB) customers, Microsoft recommends enabling [security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) at a minimum. For more complex scenarios, you can use [Conditional Access](/azure/active-directory/conditional-access/overview) to configure specific policies.
+
+> [!NOTE]
+> This page provides insights around tenants for which data availability is limited.
 
 ## Before you begin
 

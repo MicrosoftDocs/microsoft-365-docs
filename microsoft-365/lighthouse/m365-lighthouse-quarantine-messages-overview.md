@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: shcallaw
-ms.date: 07/03/2023
+ms.date: 09/29/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -26,6 +26,9 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 Microsoft 365 Lighthouse lets you see insights and information about quarantined emails across all your customer tenants. From a single view, you can triage quarantined emails and take the appropriate actions. The data is available if the tenant has implemented Exchange Online Protection (EOP) and Microsoft Defender for Office365 Plan 1 (MDO).
 
 You can access the information in Lighthouse by selecting **Home** in the left navigation pane, or by selecting **Data Protection** in the left navigation pane to open the Quarantined messages page.
+
+> [!NOTE]
+> This page provides the number of tenants for which data is unavailable because they do not have the required licenses.
 
 ## Quarantined messages page
 
