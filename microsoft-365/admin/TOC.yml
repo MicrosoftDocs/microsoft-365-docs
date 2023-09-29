@@ -465,8 +465,10 @@
           href: security-and-compliance/gdpr-compliance.md
     - name: Manage devices and app data
       items:
-        - name: Device and app data protection methods 
+        - name: Device and app data protection methods
           href: basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md
+        - name: Manage user consent to apps
+          href: misc/user-consent.md
         - name: Basic Mobility and Security
           items:
             - name: Overview of Basic Mobility and Security
