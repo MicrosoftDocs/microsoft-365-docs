@@ -34,7 +34,7 @@ You must hold the Executive report viewer or Report viewer role in Partner Cente
 
 ## View opportunities
 
-1. In the left navigation pane in Lighthouse, select **Sales Advisor** \> **Opportunities**.
+1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Sales Advisor** > **Opportunities**.
 
 2. On the **All opportunities** tab, select the tenant you want to research.
 
@@ -43,24 +43,24 @@ You must hold the Executive report viewer or Report viewer role in Partner Cente
 |Tab      |Description  |
 |---------|---------|
 |Recommendation     |  Contains the following:  <br>**Customer insights** - characteristics of the selected customer based on historical data and correlation, explains why we're suggesting the specific recommendation.  <br>**Suggested actions** - specific suggestions to enforce the recommendation (such as running a workshop).  <br>**Related Resources** - marketing materials such as playbook, demo, cheat sheets, and email templates to help prepare partners for the conversation with the customer regarding the opportunity.       |
-|Subscription     | Contains subscription information about the products purchased by the customer from the partner’s organization or from Microsoft directly, including product name, purchase quantity, and subscription status (Active/Inactive).         |
+|Subscription     | Contains subscription information about the products purchased by the customer from the partner's organization or from Microsoft directly, including product name, purchase quantity, and subscription status (Active/Inactive).         |
 |Usage     | Shows how users use Microsoft 365 services for all products the customer owns. Includes a usage per-user graph that can be filtered by workload. In addition, a table view with the following information:<br>**Workload** - Exchange Online, OneDrive for Business, Azure Active Directory, etc.<br>**Assigned users** - Number of seats containing the workload assigned to a user.<br>**Active users** - Number of users actively using the workload.<br>**Trend** - The trend in monthly active usage over the previous three months is defined as No change, Positive or Negative.        |
 
 ## View opportunities by opportunity type
 
-1. In the left navigation pane in Lighthouse, select **Sales Advisor** \> **Opportunities**.
+1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Sales Advisor** > **Opportunities**.
 2. Select the desired opportunity type you want to review.
 
 For a definition of each opportunity type, see the Opportunity Type section in [Understanding opportunities and data in Sales Advisor](m365-lighthouse-understanding-opportunities-and-data.md).
 
 ## Export opportunities out of Sales Advisor
 
-1. In the left navigation pane in Lighthouse, select **Sales Advisor** \> **Opportunities**.
+1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Sales Advisor** > **Opportunities**.
 2. Select the view you want to export (All opportunities, Customer acquisition, Customer retention, or Customer growth).
 3. Filter the list as needed using the filters (Probability, Opportunity type, and Date created).
 4. Select **Export**.
 
-Lighthouse exports the data displayed into a CSV file that you can integrate into internal tools and create custom reports. If you’ve applied filters to the table, the exported data reflect the selected filters. The downloaded CSV file contains the following data:
+Lighthouse exports the data displayed into a CSV file that you can integrate into internal tools and create custom reports. If you've applied filters to the table, the exported data reflect the selected filters. The downloaded CSV file contains the following data:
 
 - Customer ID
 - TPID

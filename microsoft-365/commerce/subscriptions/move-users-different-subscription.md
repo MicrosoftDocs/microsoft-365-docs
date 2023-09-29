@@ -56,7 +56,7 @@ You must be a Global, License, or User admin to assign licenses. For more inform
 
 ## Back up data before changing Microsoft 365 for business plans
 
-If you plant to move a user to another subscription that has fewer data-related services, or a user leaves the organization, you can download a copy of their data stored in Microsoft 365 before they are switched to the new subscription.
+If you plan to move a user to another subscription that has fewer data-related services, or a user leaves the organization, you can download a copy of their data stored in Microsoft 365 before they are switched to the new subscription.
 
 If you're moving a user to a subscription that has the same or more services, you don't need to back up user data.
   

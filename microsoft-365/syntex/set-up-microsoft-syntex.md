@@ -12,6 +12,7 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 - Tier1
+- essentials-get-started
 ms.custom: 
 - admindeeplinkMAC
 search.appverid: MET150

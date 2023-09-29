@@ -1,9 +1,9 @@
 ---
-title: Collaborate with guests from other Microsoft 365 cloud environments (Preview)
+title: Collaborate with guests from other Microsoft 365 cloud environments
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
-ms.date: 07/24/2023
+ms.date: 09/29/2023
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -22,7 +22,7 @@ recommendations: false
 description: Learn how to enable guest invitations between Microsoft 365 cloud environments (such as commercial and DoD).
 ---
 
-# Collaborate with guests from other Microsoft 365 cloud environments (Preview)
+# Collaborate with guests from other Microsoft 365 cloud environments
 
 Microsoft 365 organizations have one of several tenant types and are located in one of three Microsoft clouds:
 
@@ -41,6 +41,9 @@ Note that tenants in Microsoft Azure Government (Microsoft 365 GCC High and DoD)
 
 > [!NOTE]
 > Cross-cloud guest access between Microsoft 365 China (21Vianet) and other Microsoft 365 cloud environments is not supported during the preview.
+
+> [!NOTE]
+> VDI clients aren't supported for cross-cloud guests.
 
 > [!IMPORTANT]
 > The organization that you're collaborating with must also configure these settings for their organization.

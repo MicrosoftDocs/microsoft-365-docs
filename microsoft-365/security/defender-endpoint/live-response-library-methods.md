@@ -18,6 +18,7 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
+- mde-edr
 ms.topic: reference
 ms.subservice: mde
 ms.date: 06/03/2021

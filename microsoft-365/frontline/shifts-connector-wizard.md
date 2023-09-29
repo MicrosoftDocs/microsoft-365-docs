@@ -1,7 +1,7 @@
 ---
 title: Use the Shifts connector wizard to connect Shifts to Blue Yonder Workforce Management (Preview)
 author: lana-chin
-ms.author: v-chinlana
+ms.author: heidip
 manager: serdars
 ms.reviewer: imarquesgil
 ms.topic: how-to
@@ -14,6 +14,7 @@ ms.collection:
   - M365-collaboration
   - m365-frontline
   - highpri
+  - teams-1p-app-admin
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers

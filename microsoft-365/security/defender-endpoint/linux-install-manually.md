@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
+- mde-linux
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
@@ -114,7 +115,7 @@ In order to preview new features and provide early feedback, it is recommended t
 - Install the Microsoft GPG public key:
 
   ```bash
-  sudo rpm --import http://packages.microsoft.com/keys/microsoft.asc
+  sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
   ```
 
 ### SLES and variants
@@ -140,7 +141,7 @@ In order to preview new features and provide early feedback, it is recommended t
 - Install the Microsoft GPG public key:
 
   ```bash
-  sudo rpm --import http://packages.microsoft.com/keys/microsoft.asc
+  sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
   ```
 
 ### Ubuntu and Debian systems
