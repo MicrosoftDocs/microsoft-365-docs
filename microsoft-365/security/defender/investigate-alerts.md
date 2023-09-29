@@ -340,7 +340,7 @@ To create the automation, you'll need an API token before you can connect Power 
 
 1. Open [Microsoft Defender](https://security.microsoft.com/), Click **Settings**, select **Cloud Apps**, Click **API token** and then Click on **Add token** in the **API tokens** tab.
 
-2. Provide a name for your token, and then click **Generate**. Save the token as you'll need it later.
+2. Provide a name for your token, and then select **Generate**. Save the token as you'll need it later.
 
 ### Create an automated flow
 
