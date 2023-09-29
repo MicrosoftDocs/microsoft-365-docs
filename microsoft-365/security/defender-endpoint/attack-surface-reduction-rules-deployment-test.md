@@ -182,7 +182,7 @@ This tab provides a method to select detected entities (for example, false posit
 
 For more information about using the ASR rules report, see [Attack surface reduction rules reports](attack-surface-reduction-rules-report.md).
 
-## Configure per-rule exclusions
+## Configure ASR per-rule exclusions
 
 ASR rules now provide the capability to configure rule-specific exclusions, known as "Per Rule Exclusions."
 
