@@ -1345,14 +1345,6 @@
         href: conditional-access.md
       - name: Microsoft Defender for Cloud Apps integration overview
         href: microsoft-cloud-app-security-integration.md
-
-    - name: Access the Microsoft Defender for Endpoint Community Center
-      href: community.md
-
-    - name: Helpful resources
-      href: helpful-resources.md
-
-
   - name: Troubleshoot
     items:
     - name: Troubleshoot onboarding issues

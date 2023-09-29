@@ -14,6 +14,7 @@ ms.topic: conceptual
 ms.collection: 
 - m365-security
 - tier3
+- mde-asr
 ms.custom: admindeeplinkDEFENDER
 search.appverid: met150
 ---

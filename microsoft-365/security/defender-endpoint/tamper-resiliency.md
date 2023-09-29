@@ -12,6 +12,7 @@ ms.topic: overview
 ms.collection:
 - tier1
 - highpri
+- mde-ngp
 f1.keywords: NOCSH
 audience: ITPro
 ---

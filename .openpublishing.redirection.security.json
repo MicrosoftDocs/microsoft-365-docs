@@ -3499,6 +3499,11 @@
          "source_path":"microsoft-365/security/defender-endpoint/vulnerability.md",
          "redirect_url":"/microsoft-365/security/defender-endpoint/api/vulnerability",
          "redirect_document_id":false
+    },
+    {
+    "source_path":"microsoft-365/security/defender-endpoint/helpful-resources.md",
+    "redirect_url":"/microsoft-365/security/defender-endpoint/",
+    "redirect_document_id":false
     }
    ]
 }
