@@ -65,8 +65,6 @@ The [Microsoft 365 for enterprise poster](https://download.microsoft.com/downloa
 - The key components of the Microsoft modern workplace, which Microsoft 365 for enterprise enables.
 - The [Microsoft 365 Productivity Library](https://www.microsoft.com/microsoft-365/success/) and representative scenarios for some common organization departments.
 
-[![Image for the Microsoft 365 for enterprise poster.](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft365Enterprise.pdf)
-
 You can also [download a copy of the poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft365Enterprise.pdf).
 
 
