@@ -14,6 +14,7 @@ ms.topic: reference
 ms.collection: 
 - m365-security
 - tier2
+- mde-asr
 ms.date: 08/04/2023
 search.appverid: met150
 ---
@@ -31,7 +32,7 @@ search.appverid: met150
 
 - Windows
 
-This article provides information about Microsoft Defender for Endpoint attack surface reduction (ASR) rules:
+This article provides information about Microsoft Defender for Endpoint attack surface reduction rules:
 
 - [ASR rules supported operating system versions](#asr-rules-supported-operating-systems)
 - [ASR rules supported configuration management systems](#asr-rules-supported-configuration-management-systems)
@@ -70,7 +71,7 @@ For the easiest method to enable the standard protection rules, see: [Simplified
 
 ## Microsoft Defender Antivirus exclusions and ASR rules
 
-Microsoft Defender Antivirus exclusions apply to some Microsoft Defender for Endpoint capabilities, such as some of the attack surface reduction (ASR) rules.
+Microsoft Defender Antivirus exclusions apply to some Microsoft Defender for Endpoint capabilities, such as some of the attack surface reduction rules.
 
 The following ASR rules DO NOT honor Microsoft Defender Antivirus exclusions:
 
@@ -84,7 +85,7 @@ The following ASR rules DO NOT honor Microsoft Defender Antivirus exclusions:
 | [Block Office communication application from creating child processes](#block-office-communication-application-from-creating-child-processes) |
 
 > [!NOTE]
-> For information about configuring per-rule exclusions, see the section titled **Configure ASR rules per-rule exclusions** in the topic [Test attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-test.md).
+> For information about configuring per-rule exclusions, see the section titled **Configure ASR rules per-rule exclusions** in the topic [Test attack surface reduction rules](attack-surface-reduction-rules-deployment-test.md).
 
 ## ASR rules supported operating systems
 
@@ -585,10 +586,10 @@ Dependencies: Microsoft Defender Antivirus, Cloud Protection
 ## See also
 
 - [Attack surface reduction (ASR) rules deployment overview](attack-surface-reduction-rules-deployment.md)
-- [Plan attack surface reduction (ASR) rules deployment](attack-surface-reduction-rules-deployment-plan.md)
-- [Test attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-test.md)
-- [Enable attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-implement.md)
-- [Operationalize attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-operationalize.md)
+- [Plan attack surface reduction rules deployment](attack-surface-reduction-rules-deployment-plan.md)
+- [Test attack surface reduction rules](attack-surface-reduction-rules-deployment-test.md)
+- [Enable attack surface reduction rules](attack-surface-reduction-rules-deployment-implement.md)
+- [Operationalize attack surface reduction rules](attack-surface-reduction-rules-deployment-operationalize.md)
 - [Attack surface reduction \(ASR\) rules report](attack-surface-reduction-rules-report.md)
 - [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md)
 - [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
