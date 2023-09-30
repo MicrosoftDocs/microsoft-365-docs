@@ -34,7 +34,7 @@ description: "Global administrators can block a former employee from logging in 
 
 ## What you need to know about terminating an employee's email session
 
-Here's information about how to get an employee out of email (Exchange).
+The following information explains how to remove an employee from the organization's email (Exchange):
 
 <br>
 
