@@ -36,10 +36,6 @@ description: "Global administrators can block a former employee from logging in 
 
 The following information explains how to remove an employee from the organization's email (Exchange):
 
-<br>
-
-****
-
 |What you can do|How you do it|
 |:-----|:-----|
 |Terminate a session (such as Outlook on the web, Outlook, Exchange active sync, etc.) and force to open a new session|Reset password|
