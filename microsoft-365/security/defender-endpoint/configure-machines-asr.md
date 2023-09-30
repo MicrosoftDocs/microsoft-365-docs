@@ -1,6 +1,6 @@
 ---
 title: Optimize ASR rule deployment and detections
-description: Optimize your attack surface reduction (ASR) rules to identify and prevent typical malware exploits.
+description: Optimize your attack surface reduction rules to identify and prevent typical malware exploits.
 keywords: onboard, Intune management, Microsoft Defender for Endpoint, Microsoft Defender, Windows Defender, attack surface reduction, ASR, security baseline
 ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
@@ -33,7 +33,7 @@ ms.date: 12/18/2020
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
-[Attack surface reduction (ASR) rules](./attack-surface-reduction.md) identify and prevent typical malware exploits. They control when and how potentially malicious code can run. For example, they can prevent JavaScript or VBScript from launching a downloaded executable, block Win32 API calls from Office macros, and block processes that run from USB drives.
+[Attack surface reduction rules](./attack-surface-reduction.md) identify and prevent typical malware exploits. They control when and how potentially malicious code can run. For example, they can prevent JavaScript or VBScript from launching a downloaded executable, block Win32 API calls from Office macros, and block processes that run from USB drives.
 
 :::image type="content" source="../../media/attack-surface-mgmt.png" alt-text="Attack surface management card" lightbox="../../media/attack-surface-mgmt.png":::
 
