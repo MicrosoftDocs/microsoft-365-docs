@@ -43,10 +43,6 @@ The following information explains how to remove an employee from the organizati
 |Terminate the session for a particular protocol (such as ActiveSync).|Disable the protocol, for example, in the Exchange admin center or using PowerShell: <p>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false`.|
 
 These operations can be done in three different places:
-  
-<br>
-
-****
 
 |If you terminate the session here|How long does it take|
 |---|---|
