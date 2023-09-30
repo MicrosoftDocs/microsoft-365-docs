@@ -38,9 +38,9 @@ The following information explains how to remove an employee from the organizati
 
 |What you can do|How you do it|
 |:-----|:-----|
-|Terminate a session (such as Outlook on the web, Outlook, Exchange active sync, etc.) and force to open a new session|Reset password|
-|Terminate a session and block access to future sessions (for all protocols)|Disable the account. For example, in the Exchange admin center or using PowerShell: <p>  `Set-Mailbox user@contoso.com -AccountDisabled:$true`|
-|Terminate the session for a particular protocol (such as ActiveSync)|Disable the protocol. For example, in the Exchange admin center or using PowerShell: <p>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false`|
+|Terminate a session (such as Outlook on the web, Outlook, or Exchange active sync) and force them to open a new session.|Reset password.|
+|Terminate a session and block access to future sessions (for all protocols).|Disable the account, for example, in the Exchange admin center or using PowerShell: <p>  `Set-Mailbox user@contoso.com -AccountDisabled:$true`.|
+|Terminate the session for a particular protocol (such as ActiveSync).|Disable the protocol, for example, in the Exchange admin center or using PowerShell: <p>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false`.|
 |
 
 The above operations can be done in three places:
