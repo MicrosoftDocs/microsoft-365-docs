@@ -53,13 +53,11 @@ The above operations can be done in three places:
 
 ****
 
-|If you terminate the session here|How long it takes|
+|If you terminate the session here|How long does it take|
 |---|---|
-|In the Exchange admin center or using PowerShell|Expected delay is within 30 min|
-|In the Azure Active Directory admin center|Expected delay is 60 min|
-|In an on-premises environment|Expected delay is 3 hours or more|
-|
-
+|In the Exchange admin center or using PowerShell.|Expected delay is approximately 30 minutes.|
+|In the Azure Active Directory admin center.|Expected delay is 60 minutes.|
+|In an on-premises environment.|Expected delay is 3 hours or more.|
 
 # Step 1 - Prevent a former employee from logging in and block access to Microsoft 365 services
 
