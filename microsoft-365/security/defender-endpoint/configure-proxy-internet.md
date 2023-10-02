@@ -145,7 +145,7 @@ Configure the static proxy using the Group Policy available in Administrative Te
 
 > [!NOTE]
 > To use the proxy correctly, configure these three different proxy settings:
->  - Microsoft Defender for Endpoint (MDE)
+>  - Microsoft Defender for Endpoint
 >  - AV (Antivirus)
 >  - Endpoint Detection and Response (EDR)
 >

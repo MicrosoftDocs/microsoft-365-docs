@@ -439,13 +439,13 @@
       items:
       - name: Attack surface reduction overview
         href: overview-attack-surface-reduction.md
-      - name: Attack surface reduction (ASR) rules
+      - name: Attack surface reduction rules
         items:
         - name: Learn about ASR rules
           href: attack-surface-reduction.md
-        - name: Attack surface reduction (ASR) rules deployment guide
+        - name: Attack surface reduction rules deployment guide
           items:
-          - name: Attack surface reduction (ASR) rules deployment overview
+          - name: Attack surface reduction rules deployment overview
             href: attack-surface-reduction-rules-deployment.md
           - name: Plan attack surface reduction rules deployment
             href: attack-surface-reduction-rules-deployment-plan.md
@@ -455,7 +455,7 @@
             href: attack-surface-reduction-rules-deployment-implement.md
           - name: Operationalize attack surface reduction rules
             href: attack-surface-reduction-rules-deployment-operationalize.md
-        - name: Attack surface reduction (ASR) rules reference
+        - name: Attack surface reduction rules reference
           href: attack-surface-reduction-rules-reference.md
         - name: Attack surface reduction rules report
           href: attack-surface-reduction-rules-report.md

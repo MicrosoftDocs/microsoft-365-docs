@@ -1,7 +1,7 @@
 ---
 title: Plan attack surface reduction rules deployment
-description: Provides guidance to plan your attack surface reduction (ASR) rules deployment.
-keywords: Attack surface reduction rules deployment, Microsoft Defender for Endpoint (MDE) ASR deployment, Defender ASR rules, enable asr rules, configure ASR, host intrusion prevention system, protection rules, anti-exploit rules, anti-exploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules
+description: Provides guidance to plan your attack surface reduction rules deployment.
+keywords: Attack surface reduction rules deployment, Microsoft Defender for Endpoint ASR deployment, Defender ASR rules, enable asr rules, configure ASR, host intrusion prevention system, protection rules, anti-exploit rules, anti-exploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules
 search.product: eADQiWindows 10XVcnh
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -26,7 +26,7 @@ ms.date: 12/18/2022
 search.appverid: met150
 ---
 
-# Plan attack surface reduction (ASR) rules deployment
+# Plan attack surface reduction rules deployment
 
 **Applies to:**
 
