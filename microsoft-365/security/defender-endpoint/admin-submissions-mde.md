@@ -37,17 +37,17 @@ In Microsoft Defender for Endpoint, admins can use the unified submissions featu
 
 ## What do you need to know before you begin?
 
-- The new unified submissions experience is available only in subscriptions that include Microsoft Defender for Endpoint Plan 2.
-- You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-   - Microsoft Defender for Endpoint permissions:
-            - Submit files / file hashes: _"Alerts investigation" or "Manage security settings in Security Center”_ 
-            - View submissions: "_View Data - Security operations"_
+The new unified submissions experience is available only in subscriptions that include Microsoft Defender for Endpoint Plan 2.
+You need to be assigned permissions before you can do the procedures in this article. You have the following options:
+**Microsoft Defender for Endpoint** permissions:
+ - Submit files / file hashes: _"Alerts investigation" or "Manage security settings in Security Center”_ 
+ - View submissions: "_View Data - Security operations"_
                   
-      - Microsoft 365 Defender Unified RBAC permissions:
-            - Submit files / file hashes: *"Alerts (Manage)" or "Core security settings (manage)"* 
-            - View submissions: _"Security data basics (read)"_
+**Microsoft 365 Defender** unified RBAC permissions:
+ - Submit files / file hashes: *"Alerts (Manage)" or "Core security settings (manage)"* 
+ - View submissions: _"Security data basics (read)"_
                         
-- For more information about how you can submit spam, phish, URLs, and email attachments to Microsoft, see [Use the Submissions page to submit suspected spam, phish, URLs, legitimate email getting blocked, and email attachments to Microsoft](../office-365-security/submissions-admin.md).
+For more information about how you can submit spam, phish, URLs, and email attachments to Microsoft, see [Use the Submissions page to submit suspected spam, phish, URLs, legitimate email getting blocked, and email attachments to Microsoft](../office-365-security/submissions-admin.md).
 
 ## Submit a file or file hash to Microsoft from the Defender portal
 
