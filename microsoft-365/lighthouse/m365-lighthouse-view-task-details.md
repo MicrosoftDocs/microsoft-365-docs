@@ -43,7 +43,7 @@ Additionally, each partner tenant user must meet the following requirements:
 
 ## View task details
 
-1. In the left navigation pane in Lighthouse, select **Tenants**.
+1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Tenants**.
 
 2. Select an active tenant.
 

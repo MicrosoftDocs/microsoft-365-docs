@@ -26,7 +26,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 Microsoft 365 Lighthouse brings the features of Microsoft Endpoint Analytics for applications into a simplified management view. The Apps page provides insight into potential issues for desktop applications on managed devices. You can quickly identify the top applications impacting end-user productivity along with app failure metrics for these applications.
 
-The data only reflects fully managed Windows devices. Data on Bring Your Own Devices is not supported.
+The data only reflects fully managed Windows devices. Data on Bring Your Own Devices isn't supported.
 
 ## Requirements
 

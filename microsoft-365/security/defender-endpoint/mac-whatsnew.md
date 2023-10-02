@@ -5,12 +5,13 @@ ms.service: microsoft-365-security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 06/29/2023
+ms.date: 09/28/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security
 - tier3
+- mde-macos
 ms.topic: reference
 ms.subservice: mde
 search.appverid: met150
@@ -47,13 +48,16 @@ Network protection for macOS is now available for all Mac devices onboarded to D
 
 Apple has fixed an issue on macOS [Ventura upgrade](<https://developer.apple.com/documentation/macos-release-notes/macos-13_1-release-notes>), which is fixed with the latest OS update. The issue impacts Microsoft Defender for Endpoint security extensions, and might result in losing Full Disk Access Authorization, impacting its ability to function properly.
 
-**Catalina Deprecation**
-
-Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as Apple ended support for Catalina (10.15) in December 2022.
 
 **Sonoma support**
 
-Microsoft Defender will support macOS Sonoma (14.0) as soon as Apple makes it generally available (September 26th, 2023).
+Microsoft Defender supports macOS Sonoma (14.0) as Apple made it generally available (September 26th, 2023).
+
+**macOS Deprecation**
+
+Microsoft Defender for Endpoint no longer supports these macOS as Apple ended support for:
+Catalina (10.15) in December 2022.
+Mojave (10.14) in October 2021.
 
 ### Sep-2023 (Build: 101.23072.0025 | Release version: 20.123072.25.0)
 
@@ -67,6 +71,7 @@ Microsoft Defender will support macOS Sonoma (14.0) as soon as Apple makes it ge
 
 - Bug and performance fixes
 - Fix: Security Portal events may have missed ancestors details for short lived processes
+- Fix: Major performance issues on macOS when Network Protection is set to Audit mode
 
 ### Aug-2023 (Build: 101.23062.0016  | Release version: 20.123062.16.0)
 

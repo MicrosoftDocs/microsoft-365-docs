@@ -16,6 +16,7 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
+- mde-android
 ms.topic: conceptual
 ms.subservice: mde
 ms.date: 01/13/2023

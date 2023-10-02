@@ -12,7 +12,9 @@ metadata:
   manager: dansimp
   ms.custom: asr
   ms.topic: faq
-  ms.collection: m365-security
+  ms.collection: 
+  - m365-security
+  - mde-ngp
   ms.date: 09/05/2023
 title: Frequently asked questions (FAQs) on tamper protection 
 summary: | 

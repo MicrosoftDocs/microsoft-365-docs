@@ -21,10 +21,7 @@ search.appverid: met150
 ms.date: 06/06/2023
 ---
 
-# Protecting Dev Drive using performance mode
-
-> [!IMPORTANT]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+# Protect Dev Drive using performance mode
 
 > [!NOTE]
 > Want to experience Microsoft 365 Defender? Learn more about how you can [evaluate and pilot Microsoft 365 Defender](/microsoft-365/security/defender/eval-overview?ocid=cx-docs-MTPtriallab).
