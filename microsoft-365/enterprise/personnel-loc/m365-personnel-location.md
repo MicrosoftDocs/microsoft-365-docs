@@ -9,7 +9,7 @@ ms.topic: article
 f1.keywords:
 - NOCSH
 ms.reviewer: TracyTughanMSFT
-ms.date: 11/21/2022
+ms.date: 09/28/2023
 ms.custom:
 - it-pro
 ms.localizationpriority: medium
@@ -32,34 +32,36 @@ Remote access to data by Microsoft personnel, including contract staff, is limit
 For more information on remote access to data by personnel, see [Continuing data transfers that apply to all EU Data Boundary services](/privacy/eudb/eu-data-boundary-transfers-for-all-services).
 
 | Microsoft Subsidiary <br>Personnel Locations |&nbsp;|&nbsp;|&nbsp;|
-|---|---|---|---|
-| Albania                                  | Egypt         | Latvia                | Qatar                |
-| Algeria                                  | El Salvador   | Lebanon               | Romania              |
-| Angola                                   | Estonia       | Lithuania             | Saudi Arabia         |
-| Argentina                                | Finland       | Luxembourg            | Senegal              |
-| Armenia                                  | France        | Macao SAR             | Serbia               |
-| Australia                                | Georgia       | Madagascar            | Singapore            |
-| Austria                                  | Germany       | Malaysia              | Slovakia             |
-| Azerbaijan                               | Ghana         | Malta                 | Slovenia             |
-| Bahrain                                  | Greece        | Mauritius             | South Africa         |
-| Bangladesh                               | Guatemala     | Mexico                | Spain                |
-| Belgium                                  | Honduras      | Montenegro            | Sri Lanka            |
-| Bolivia                                  | Hong Kong SAR | Morocco               | Sweden               |
-| Bosnia and Herzegovina                   | Hungary       | Namibia               | Switzerland          |
-| Brazil                                   | Iceland       | Netherlands           | Taiwan               |
-| Bulgaria                                 | India         | New Zealand           | Tajikistan           |
-| Canada                                   | Indonesia     | Nigeria               | Thailand             |
-| Chile                                    | Ireland       | North Macedonia       | Trinidad and Tobago  |
-| China                                    | Israel        | Norway                | Tunisia              |
-| Colombia                                 | Italy         | Oman                  | Türkiye              |
-| Costa Rica                               | Jamaica       | Pakistan              | Ukraine              |
-| Côte d'Ivoire                            | Japan         | Palestinian Authority | United Arab Emirates |
-| Croatia                                  | Jordan        | Panama                | United Kingdom       |
-| Cyprus                                   | Kazakhstan    | Paraguay              | United States        |
-| Czech Republic                           | Kenya         | Peru                  | Uruguay              |
-| Denmark                                  | South Korea   | Philippines           | Vietnam              |
-| Dominican Republic                       | Kuwait        | Poland                |                      |
-| Ecuador                                  | Kyrgyzstan    | Portugal              |                      |
+|---------|---------|---------|---------|
+| Albania | Ecuador | Rwanda  | Portugal |
+| Algeria | Egypt   | Uzbekistan | Qatar |
+| Angola  | El Salvador | Latvia | Romania |
+| Argentina | Estonia | Lebanon | Saudi Arabia |
+| Armenia | Finland | Lithuania | Senegal |
+| Australia | France | Luxembourg | Serbia |
+| Austria | Georgia | Macao SAR | Singapore |
+| Azerbaijan | Germany | Madagascar | Slovakia |
+| Bahrain | Ghana | Malaysia | Slovenia |
+| Bangladesh | Greece | Malta | South Africa |
+| Belgium | Guatemala | Mauritius | Spain |
+| Bolivia | Honduras | Mexico | Sri Lanka |
+| Bosnia and Herzegovina | Hong Kong SAR | Montenegro | Sweden |
+| Brazil | Hungary | Morocco | Switzerland |
+| Brunei | Iceland | Namibia | Taiwan |
+| Bulgaria | India | Nepal | Tajikistan |
+| Cambodia | Indonesia | Netherlands | Thailand |
+| Cameroon | Ireland | New Zealand | Trinidad and Tobago |
+| Canada | Israel | Nigeria | Tunisia |
+| Chile | Italy | North Macedonia | Turkey |
+| China | Jamaica | Norway | Ukraine |
+| Colombia | Japan | Oman | United Arab Emirates |
+| Costa Rica | Jordan | Pakistan | United Kingdom |
+| Côte d'Ivoire | Kazakhstan | Palestinian Authority | United States |
+| Croatia | Kenya | Panama | Uruguay |
+| Cyprus | South Korea | Paraguay | Vietnam |
+| Czech Republic | Kuwait | Peru | |
+| Denmark | Kyrgyzstan | Philippines | |
+| Dominican Republic | Nicaragua | Poland | |
 
 | Contract Staff <br>Personnel Locations |&nbsp;|&nbsp;|&nbsp;|
 |---|---|---|---|

@@ -38,7 +38,7 @@ Setting up this test environment involves three phases:
 - [Phase 3: Install Azure AD Connect on APP1](#phase-3-install-azure-ad-connect-on-app1)
     
 > [!TIP]
-> For a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack, go to [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
+> For a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack, go to [Microsoft 365 for enterprise Test Lab Guide Stack](https://download.microsoft.com/download/5/e/4/5e43a139-09c5-4700-b846-e468444bc557/Microsoft365EnterpriseTLGStack.pdf).
   
 ## Phase 1: Create the Microsoft 365 simulated enterprise test environment
 
