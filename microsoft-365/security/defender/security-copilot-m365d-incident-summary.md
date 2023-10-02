@@ -54,36 +54,23 @@ Incidents containing up to 100 alerts can be summarized into one incident summar
 - A summary of timelines of how the attack unfolded.
 - Assets involved in the attack. 
 - Indicators of compromise (IOCs).
-- Information on the [threat actor](/security/intelligence/microsoft-threat-actor-naming) involved.
+- Name of the [threat actor](/security/intelligence/microsoft-threat-actor-naming) involved.
 
-To summarize an incident:
+To summarize an incident, perform the following steps:
 
-1. Select an incident. Security Copilot automatically creates an incident summary when you open an incident page.
-:::image type="content" source="../../media/copilot-in-defender/incident-summary/fig1-sec-copilot-m365d-summarize.png" alt-text="Security Copilot pane in the Microsoft 365 Defender incident page where the incident summary card appears" lightbox="../../media/copilot-in-defender/incident-summary/fig1-sec-copilot-m365d-summarize.png":::
-2. You can stop the summary creation by selecting **Cancel**.
-:::image type="content" source="../../media/copilot-in-defender/incident-summary/fig2-sec-copilot-m365d-summarize.png" alt-text="Security Copilot pane in Microsoft 365 Defender showing the Cancel incident summary creation option" lightbox="../../media/copilot-in-defender/incident-summary/fig2-sec-copilot-m365d-summarize.png":::
-3. Select **Regenerate** to restart the summary creation.
-:::image type="content" source="../../media/copilot-in-defender/incident-summary/fig3-sec-copilot-m365d-summarize.png" alt-text="Security Copilot pane in Microsoft 365 Defender showing the Regenerate incident summary creation option" lightbox="../../media/copilot-in-defender/incident-summary/fig3-sec-copilot-m365d-summarize.png":::
-4. You can view the incident summary on the Copilot side panel. You can copy the details, restart generating the summary, or view the summary in Security Copilot. To do any of these actions, select the three dots at the top of the incident summary to access these actions.
-:::image type="content" source="../../media/copilot-in-defender/incident-summary/fig4-sec-copilot-m365d-summarize.png" alt-text="Incident summary card showing other options for the user" lightbox="../../media/copilot-in-defender/incident-summary/fig4-sec-copilot-m365d-summarize.png":::
-5. A new tab opens when you select See in Security Copilot.
+1. Select an incident. Security Copilot automatically creates an incident summary when you open an incident page. You can stop the summary creation by selecting **Cancel** and select **Regenerate** to restart the summary creation.
+:::image type="content" source="../../media/copilot-in-defender/incident-summary/fig1-sec-copilot-m365d-summarize.png" alt-text="Highlighting the automatic incident summary generation by Security Copilot pane in the Microsoft 365 Defender incident page" lightbox="../../media/copilot-in-defender/incident-summary/fig1-sec-copilot-m365d-summarize.png":::
+2. You can view the incident summary card on the Security Copilot pane in the incident page.
+:::image type="content" source="../../media/copilot-in-defender/incident-summary/fig2-sec-copilot-m365d-summarize.png" alt-text="Incident summary card on the Security Copilot pane as seen in the the Microsoft 365 Defender incident page" lightbox="../../media/copilot-in-defender/incident-summary/fig2-sec-copilot-m365d-summarize.png":::
+3. You can copy the details, restart generating the summary, or view the summary in Security Copilot. To do any of these actions, select the three dots at the top of the incident summary card.
+:::image type="content" source="../../media/copilot-in-defender/incident-summary/fig3-sec-copilot-m365d-summarize.png" alt-text="Highlighting the actions available on the incident summary card" lightbox="../../media/copilot-in-defender/incident-summary/fig3-sec-copilot-m365d-summarize.png":::
+4. A new tab opens when you select **Open in Security Copilot**.
 
 ## Managing feedback
 
-You can validate or report the results provided by Security Copilot. Validating and reporting results enable Security Copilot to continuously improve delivery of more accurate answers.
+You can validate or report the results of the incident summary provided by Security Copilot. Validating and reporting results enable Security Copilot to continuously improve delivery of more accurate answers.
 
-To provide feedback:
-
-1. Select the down arrow beside the face icon located at the bottom of the incident summary card.
-:::image type="content" source="../../media/copilot-in-defender/incident-summary/fig5-sec-copilot-m365d-summarize.png" alt-text="Incident summary card showing feedback options for the user" lightbox="../../media/copilot-in-defender/incident-summary/fig5-sec-copilot-m365d-summarize.png":::
-2. From the options, select your feedback.
-:::image type="content" source="../../media/copilot-in-defender/incident-summary/fig6-sec-copilot-m365d-summarize.png" alt-text="Highlighting feedback options for the user" lightbox="../../media/copilot-in-defender/incident-summary/fig6-sec-copilot-m365d-summarize.png":::
-3. Select **Confirmed, it looks great** if the file analysis details are accurate based on your assessment. When the analysis details are confirmed, you can provide more information in the next dialog box.
-:::image type="content" source="../../media/copilot-in-defender/incident-summary/fig7-sec-copilot-m365d-summarize.png" alt-text="Option confirming results" lightbox="../../media/copilot-in-defender/incident-summary/fig7-sec-copilot-m365d-summarize.png":::
-4. Select **Off-target, inaccurate** if any detail is incorrect or incomplete based on your assessment. You can provide more information about your assessment in the next dialog box and submit this assessment to Microsoft.
-:::image type="content" source="../../media/copilot-in-defender/incident-summary/fig8-sec-copilot-m365d-summarize.png" alt-text="Option citing inacccurate results" lightbox="../../media/copilot-in-defender/incident-summary/fig8-sec-copilot-m365d-summarize.png":::
-5. You can also report the results if it contains questionable or ambiguous information by selecting **Potentially harmful, inappropriate**. Provide more information about the results in the next dialog box and select Submit.
-:::image type="content" source="../../media/copilot-in-defender/incident-summary/fig9-sec-copilot-m365d-summarize.png" alt-text="Option to report harmful results" lightbox="../../media/copilot-in-defender/incident-summary/fig9-sec-copilot-m365d-summarize.png":::
+[Follow these steps to provide your feedback about the results](security-copilot-in-microsoft-365-defender.md#providing-feedback).
 
 ## Next steps
 

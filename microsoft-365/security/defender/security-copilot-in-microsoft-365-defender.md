@@ -62,31 +62,45 @@ Microsoft 365 Defender brings the capabilities of Security Copilot to the portal
 
 Investigating incidents with multiple alerts can be a daunting task. To immediately understand an incident, you can tap Security Copilot in Microsoft 365 Defender to [summarize an incident](security-copilot-m365d-incident-summary.md) for you. Security Copilot creates an overview of the attack containing essential information for you to understand what transpired in the attack, what assets are involved, and the timeline of the attack. Security Copilot automatically creates a summary when you navigate to an incident's page.
 
-:::image type="content" source="../../media/copilot-in-defender/first-run/fig1-sec-copilot-m365d-first-run.png" alt-text="Incident summary pane as seen in Microsoft 365 Defender's incident page" lightbox="../../media/copilot-in-defender/first-run/fig1-sec-copilot-m365d-first-run.png":::
+:::image type="content" source="../../media/copilot-in-defender/first-run/fig1-sec-copilot-m365d-first-run.png" alt-text="Incident summary highlighted in the Seccurity Copilot pane as seen in Microsoft 365 Defender's incident page" lightbox="../../media/copilot-in-defender/first-run/fig1-sec-copilot-m365d-first-run.png":::
 
 ### Take action on incidents through guided response
 
 Approaching solutions and mitigation for any incident can oftentimes be complex for several reasons, including understanding where to begin, what solutions are appropriate, and following new investigation flows for security teams. Security Copilot minimizes these complications through [guided responses](security-copilot-m365d-guided-response.md). These responses are recommended actions specific to each incident.
 
-[Insert screenshot]
+:::image type="content" source="../../media/copilot-in-defender/first-run/fig2-sec-copilot-m365d-first-run.png" alt-text="Guided responses highlighted in the Security Copilot pane as seen in Microsoft 365 Defender's incident page" lightbox="../../media/copilot-in-defender/first-run/fig2-sec-copilot-m365d-first-run.png":::
 
 ### Get results fast when analyzing scripts and codes
 
 Most attackers rely on sophisticated malware and files when launching attacks to avoid detection and investigation. These files are usually obfuscated and arrive as scripts, Powershell, batch, and bash. Security Copilot can quickly analyze these types of files to facilitate faster investigation, reducing the time for [script or code analysis](security-copilot-m365d-script-analysis.md) and helping security teams decide on the next action steps using information about these files’ capabilities.
 
-:::image type="content" source="../../media/copilot-in-defender/first-run/fig3-sec-copilot-m365d-first-run.png" alt-text="Script analysis card on the Security Copilot pane in the Microsoft 365 Defender incident page" lightbox="../../media/copilot-in-defender/first-run/fig3-sec-copilot-m365d-first-run.png":::
+:::image type="content" source="../../media/copilot-in-defender/first-run/fig3-sec-copilot-m365d-first-run.png" alt-text="Script analysis highlighted in the Security Copilot pane as seen in Microsoft 365 Defender's incident page" lightbox="../../media/copilot-in-defender/first-run/fig3-sec-copilot-m365d-first-run.png":::
 
 ### Generate KQL queries from natural-language input 
 
 Security teams who use advanced hunting to proactively hunt for threats in their network can now use a query assistant that converts any natural-language question in the context of threat hunting, into a ready-to-run KQL query. The query assistant saves security teams time by generating a KQL query that can then be automatically run or further tweaked according to the analyst needs. Read more about the query assistant in [Security Copilot in advanced hunting](advanced-hunting-security-copilot.md)
 
-:::image type="content" source="../../media/copilot-in-defender/first-run/fig2-sec-copilot-m365d-first-run.png" alt-text="Query assistant pane as seen in the Microsoft 365 Defender advanced hunting page" lightbox="../../media/copilot-in-defender/first-run/fig2-sec-copilot-m365d-first-run.png":::
+:::image type="content" source="../../media/copilot-in-defender/first-run/fig4-sec-copilot-m365d-first-run.png" alt-text="Query assistant pane as seen in the Microsoft 365 Defender advanced hunting page" lightbox="../../media/copilot-in-defender/first-run/fig4-sec-copilot-m365d-first-run.png":::
 
 ### Write post-investigation reports with speed and accuracy
 
 Investigation conclusions usually require reports to document the attack, the steps taken, results of the investigation, and other post-analysis items that need to be recorded to aid future security decisions and learning. Oftentimes, documenting investigations can be time-consuming and needs to have accurate information to be effective. Security Copilot [creates incident reports](security-copilot-m365d-create-incident-report.md) to summarize the investigation upon closure.
 
-[insert screenshot here]
+:::image type="content" source="../../media/copilot-in-defender/first-run/fig5-sec-copilot-m365d-first-run.png" alt-text="Incident report results in the Security Copilot pane as seen in the Microsoft 365 Defender incident page" lightbox="../../media/copilot-in-defender/first-run/fig5-sec-copilot-m365d-first-run.png":::
+
+## Providing feedback
+
+You can validate or report the results provided by Security Copilot in Microsoft 365 Defender. Validating and reporting results enable both Security Copilot and Microsoft 365 Defender to continuously improve delivery of more accurate answers. All features in key features have an option for you to provide feedback.
+
+To provide feedback:
+
+1. Select the down arrow beside the face icon located at the bottom of a card in the Security Copilot pane.
+:::image type="content" source="../../media/copilot-in-defender/first-run/fig6-sec-copilot-m365d-first-run.png" alt-text="Highlighting the icon for feedback options for Security Copilot results" lightbox="../../media/copilot-in-defender/first-run/fig6-sec-copilot-m365d-first-run.png":::
+2. From the options, select your feedback.
+:::image type="content" source="../../media/copilot-in-defender/first-run/fig7-sec-copilot-m365d-first-run.png" alt-text="Highlighting the feedback options for Security Copilot results" lightbox="../../media/copilot-in-defender/first-run/fig7-sec-copilot-m365d-first-run.png":::
+3. Select **Confirmed, it looks great** if the results are accurate based on your assessment. When results are confirmed, you can provide more information in the next dialog box.
+4. Select **Off-target, inaccurate** if any detail is incorrect or incomplete based on your assessment. You can provide more information about your assessment in the next dialog box and submit this assessment to Microsoft.
+5. You can also report the results if it contains questionable or ambiguous information by selecting **Potentially harmful, inappropriate**. Provide more information about the results in the next dialog box and select Submit.
 
 ## Next steps
 

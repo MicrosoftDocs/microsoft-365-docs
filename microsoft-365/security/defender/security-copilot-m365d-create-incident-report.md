@@ -61,25 +61,23 @@ Security Copilot creates an incident report containing the following details:
 - The conclusion of the investigation.
 - Gaps and follow up requirements to be addressed.
 
-To create an incident report:
+To create an incident report, perform the following steps:
 
 1. Select an incident. In the incident page, select **Generate incident report** located at the top right corner of the page. Alternately, you can select the report icon found in the Security Copilot pane.
 :::image type="content" source="../../media/copilot-in-defender/incident-report/fig1-sec-copilot-m365d-create-report.png" alt-text="Highlighting generate incident report and report icon buttons in the incident page" lightbox="../../media/copilot-in-defender/incident-report/fig1-sec-copilot-m365d-create-report.png":::
 2. Security Copilot creates the incident report. You can stop the report creation by selecting **Cancel** and restart report creation by selecting **Regenerate**. Additionally, you can restart report creation if you encounter an error.
-:::image type="content" source="../../media/copilot-in-defender/incident-report/fig2-sec-copilot-m365d-create-report.png" alt-text="Security Copilot generating an incident report" lightbox="../../media/copilot-in-defender/incident-report/fig2-sec-copilot-m365d-create-report.png":::
 3. The incident report card contains all the details related to the investigation. Contents of an incident report significantly varies per incident.  Refer to the recommendations section for best practices in creating incident reports.
-:::image type="content" source="../../media/copilot-in-defender/incident-report/fig3-sec-copilot-m365d-create-report.png" alt-text="Incident report card in the incident page" lightbox="../../media/copilot-in-defender/incident-report/fig3-sec-copilot-m365d-create-report.png":::
-4. You can copy the report details, add the details to an activity log, restart report creation, or see the results in the Security Copilot standalone product. To do any of these actions, select the three dots located on right side of the incident report card.
-:::image type="content" source="../../media/copilot-in-defender/incident-report/fig4-sec-copilot-m365d-create-report.png" alt-text="User options in the incident report card" lightbox="../../media/copilot-in-defender/incident-report/fig4-sec-copilot-m365d-create-report.png":::
-5. Selecting **Post to activity log** adds the incident report to the activity log.
-:::image type="content" source="../../media/copilot-in-defender/incident-report/fig5-sec-copilot-m365d-create-report.png" alt-text="Screenshot of the activity log with details from the incident report" lightbox="../../media/copilot-in-defender/incident-report/fig5-sec-copilot-m365d-create-report.png":::
+:::image type="content" source="../../media/copilot-in-defender/incident-report/fig2-sec-copilot-m365d-create-report.png" alt-text="Incident report card in the incident page" lightbox="../../media/copilot-in-defender/incident-report/fig2-sec-copilot-m365d-create-report.png":::
+4. You can copy the report details, add the details to the comments and history of the incident, restart report creation, or see the results in the Security Copilot standalone product. To do any of these actions, select the three dots located on right side of the incident report card.
+:::image type="content" source="../../media/copilot-in-defender/incident-report/fig3-sec-copilot-m365d-create-report.png" alt-text="User options in the incident report card" lightbox="../../media/copilot-in-defender/incident-report/fig3-sec-copilot-m365d-create-report.png":::
+5. Selecting **Post to comments and history** adds the incident report details to the comments and history of the incident.
 6. A new tab opens when you select **Open in Security Copilot**.
 
 ## Managing feedback
 
 You can validate an incident report's details and submit feedback about Security Copilot's results. Validating the results enable Security Copilot to learn further and deliver more accurate answers in the future.
 
-[Follow these steps to provide your feedback about the results](security-copilot-m365d-incident-summary.md#managing-feedback).
+[Follow these steps to provide your feedback about the results](security-copilot-in-microsoft-365-defender.md#providing-feedback).
 
 ## Recommendations for incident report creation
 
