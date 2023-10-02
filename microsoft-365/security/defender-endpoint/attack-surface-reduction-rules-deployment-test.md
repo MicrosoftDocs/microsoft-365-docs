@@ -1,6 +1,6 @@
 ---
 title: Test attack surface reduction rules
-description: Provides guidance to test your attack surface reduction (ASR) rules deployment. Microsoft Defender for Endpoint (MDE) ASR test includes, audit Defender rules, configure ASR rules using Intune, Microsoft ASR rules reporting, ASR rules exclusions, ASR rules event viewer.
+description: Provides guidance to test your attack surface reduction rules deployment. Microsoft Defender for Endpoint ASR test includes, audit Defender rules, configure ASR rules using Intune, Microsoft ASR rules reporting, ASR rules exclusions, ASR rules event viewer.
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.localizationpriority: medium
@@ -21,14 +21,14 @@ ms.date: 08/14/2023
 search.appverid: met150
 ---
 
-# Test attack surface reduction (ASR) rules
+# Test attack surface reduction rules
 
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Testing Microsoft Defender for Endpoint (MDE) attack surface reduction (ASR) rules helps you determine if rules impede line-of-business operations prior to enabling any rule. By starting with a small, controlled group, you can limit potential work disruptions as you expand your deployment across your organization.
+Testing Microsoft Defender for Endpoint attack surface reduction rules helps you determine if rules impede line-of-business operations prior to enabling any rule. By starting with a small, controlled group, you can limit potential work disruptions as you expand your deployment across your organization.
 
 In this section of the ASR rules deployment guide, you'll learn how to:
 
@@ -41,9 +41,9 @@ In this section of the ASR rules deployment guide, you'll learn how to:
 > [!NOTE]
 > Before you begin testing ASR rules, it is recommended that you first disable all rules that you have previously set to either **audit** or **enable** (if applicable). See [Attack surface reduction rules reports](attack-surface-reduction-rules-report.md) for information about using the ASR rules report to disable ASR rules.
 
-Begin your attack surface reduction (ASR) rules deployment with ring 1.
+Begin your attack surface reduction rules deployment with ring 1.
 
-> :::image type="content" source="images/asr-rules-testing-steps.png" alt-text="The Microsoft Defender for Endpoint (MDE) attack surface reduction (ASR rules) test steps. Audit ASR rules, configure ASR rules exclusions. Configure ASR rules Intune. ASR rules exclusions. ASR rules event viewer." lightbox="images/asr-rules-testing-steps.png":::
+> :::image type="content" source="images/asr-rules-testing-steps.png" alt-text="The Microsoft Defender for Endpoint attack surface reduction (ASR rules) test steps. Audit ASR rules, configure ASR rules exclusions. Configure ASR rules Intune. ASR rules exclusions. ASR rules event viewer." lightbox="images/asr-rules-testing-steps.png":::
 
 ## Step 1: Test ASR rules using Audit
 
@@ -237,13 +237,13 @@ Event ID | Description
 
 ## Other articles in this deployment collection
 
-[Attack surface reduction (ASR) rules deployment overview](attack-surface-reduction-rules-deployment.md)
+[Attack surface reduction rules deployment overview](attack-surface-reduction-rules-deployment.md)
 
-[Plan attack surface reduction (ASR) rules deployment](attack-surface-reduction-rules-deployment-plan.md)
+[Plan attack surface reduction rules deployment](attack-surface-reduction-rules-deployment-plan.md)
 
-[Enable attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-implement.md)
+[Enable attack surface reduction rules](attack-surface-reduction-rules-deployment-implement.md)
 
-[Operationalize attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-operationalize.md)
+[Operationalize attack surface reduction rules](attack-surface-reduction-rules-deployment-operationalize.md)
 
-[Attack surface reduction (ASR) rules reference](attack-surface-reduction-rules-reference.md)
+[Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
