@@ -4,7 +4,7 @@ description: Learn how to use the unified submissions feature in Microsoft 365 D
 keywords: antivirus, spam, phish, file, alert, Microsoft Defender for Endpoint, false positive, false negative, blocked file, blocked url, submission, submit, report
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.date: 06/5/2023
+ms.date: 10/02/2023
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.mktglfcycl: deploy
@@ -41,11 +41,11 @@ In Microsoft Defender for Endpoint, admins can use the unified submissions featu
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
    - Microsoft Defender for Endpoint permissions:
             - Submit files / file hashes: _"Alerts investigation" or "Manage security settings in Security Center”_ 
-                  - View submissions: "_View Data - Security operations"_
+            - View submissions: "_View Data - Security operations"_
                   
       - Microsoft 365 Defender Unified RBAC permissions:
-                  - Submit files / file hashes: *"Alerts (Manage)" or "Core security settings (manage)"* 
-                        - View submissions: _"Security data basics (read)"_
+            - Submit files / file hashes: *"Alerts (Manage)" or "Core security settings (manage)"* 
+            - View submissions: _"Security data basics (read)"_
                         
 - For more information about how you can submit spam, phish, URLs, and email attachments to Microsoft, see [Use the Submissions page to submit suspected spam, phish, URLs, legitimate email getting blocked, and email attachments to Microsoft](../office-365-security/submissions-admin.md).
 
