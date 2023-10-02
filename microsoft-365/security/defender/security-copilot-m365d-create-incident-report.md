@@ -99,7 +99,7 @@ Here are some recommendations to consider to ensure that Security Copilot genera
 ## See also
 
 - [Security Copilot Early Access Program FAQs](/security-copilot/faq-security-copilot.md)
-- [Get started with Security Copilot](/copilot/microsoft-365-copilot-requirements.md)
-- [Learn about other Security Copilot embedded experiences](/copilot/experiences-security-copilot.md)
+- [Get started with Security Copilot](/security-copilot/get-started-security-copilot.md)
+- [Learn about other Security Copilot embedded experiences](/security-copilot/experiences-security-copilot.md)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

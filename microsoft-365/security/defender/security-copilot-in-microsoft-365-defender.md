@@ -40,19 +40,9 @@ This article provides an overview for users of the Security Copilot embedded exp
 
 ## Access Security Copilot in Microsoft 365 Defender
 
-To ensure that you have access to Security Copilot, see Security Copilot licensing information.
+Review Security Copilot and assess if it's right for your organization, see the [Security Copilot Frequently Asked Questions](/security-copilot/faq-security-copilot.md) page. To ensure that you have access to Security Copilot, see [Security Copilot licensing information](/security-copilot/faq-security-copilot.md#licensing-information).
 
-Security Copilot in Microsoft 365 Defender can be accessed through the following:
-
-1. Select Trial on the incident page.
-2. Select the Copilot button located on the upper portion of an incident page.
-3. In the Advanced hunting page, select the Copilot button located beside the Share link option.
-
-To review Security Copilot and assess if it’s right for your organization, see the Security Copilot Frequently Asked Questions page.
-
-## Technical requirements
-
-[See the requirements to access Security Copilot](/copilot/microsoft-365-copilot-requirements.md).
+[Review information on other requirements to access Security Copilot](/security-copilot/get-started-security-copilot.md).
 
 ## Key features
 
@@ -95,9 +85,13 @@ You can validate or report the results provided by Security Copilot in Microsoft
 To provide feedback:
 
 1. Select the down arrow beside the face icon located at the bottom of a card in the Security Copilot pane.
+
 :::image type="content" source="../../media/copilot-in-defender/first-run/fig6-sec-copilot-m365d-first-run.png" alt-text="Highlighting the icon for feedback options for Security Copilot results" lightbox="../../media/copilot-in-defender/first-run/fig6-sec-copilot-m365d-first-run.png":::
+
 2. From the options, select your feedback.
+
 :::image type="content" source="../../media/copilot-in-defender/first-run/fig7-sec-copilot-m365d-first-run.png" alt-text="Highlighting the feedback options for Security Copilot results" lightbox="../../media/copilot-in-defender/first-run/fig7-sec-copilot-m365d-first-run.png":::
+
 3. Select **Confirmed, it looks great** if the results are accurate based on your assessment. When results are confirmed, you can provide more information in the next dialog box.
 4. Select **Off-target, inaccurate** if any detail is incorrect or incomplete based on your assessment. You can provide more information about your assessment in the next dialog box and submit this assessment to Microsoft.
 5. You can also report the results if it contains questionable or ambiguous information by selecting **Potentially harmful, inappropriate**. Provide more information about the results in the next dialog box and select Submit.
@@ -113,8 +107,8 @@ To provide feedback:
 ## See also
 
 - [Security Copilot Early Access Program FAQs](/security-copilot/faq-security-copilot.md)
-- [Get started with Security Copilot](/copilot/microsoft-365-copilot-requirements.md)
-- [Know more about other Security Copilot embedded experiences](/copilot/experiences-security-copilot.md)
+- [Get started with Security Copilot](/security-copilot/get-started-security-copilot.md)
+- [Know more about other Security Copilot embedded experiences](/security-copilot/experiences-security-copilot.md)
 - [Privacy and data security in Security Copilot](/security-copilot/privacy-data-security.md)
 - [Responsible AI FAQs](/security-copilot/responsible-ai-overview-security-copilot.md)
 
