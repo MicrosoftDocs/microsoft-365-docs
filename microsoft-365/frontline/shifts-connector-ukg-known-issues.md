@@ -54,7 +54,7 @@ The correct, expected behavior is a green check mark to indicate that the cowork
 
 This issue can occur if multiple users use the same device to connect to the Teams Shifts app and require a single sign-on (SSO) in UKG Pro WFM.
 
-For example, user A signs in to Teams, submits a time off request, and signs out. To make the request, user A had to enter their Azure AD credentials for SSO.<!--To perform the request, user A was required to introduce their Azure AD credentials to verify (SSO).--> On the same device, user B signs in to Teams and tries to perform another action in Shifts that requires SSO.
+For example, user A signs in to Teams, submits a time off request, and signs out. To make the request, user A had to enter their Azure AD credentials for SSO. On the same device, user B signs in to Teams and tries to perform another action in Shifts that requires SSO.
 
 In this scenario, an issue occurs in which user B is signed in to Teams and Shifts and user A is still signed in to UKG Pro WFM.
 
