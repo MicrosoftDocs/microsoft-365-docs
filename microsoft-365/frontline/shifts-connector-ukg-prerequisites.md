@@ -97,7 +97,7 @@ Configure the connector's redirection URL. This allows UKG Pro WFM to redirect t
 1. Then, go to **System Configuration** and choose **System Settings**.
 1. Select **Global Values**.
 1. In the **global.oAuth.authCode.redirection.uris** field, enter the value, "https://aka.ms/shifts/connector/ukgdimensions/auth".
-1. In the **global.oAuthToken.redirection.domain.whiteList** field, enter the value, "aka.ms".
+1. In the **`global.oAuthToken.redirection.domain.whiteList`** field, enter the value, "aka.ms".
 1. Select **Save**.
 
 ### Create at least one team in Teams
