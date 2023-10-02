@@ -38,7 +38,7 @@ In Microsoft Defender for Endpoint, admins can use the unified submissions featu
 ## What do you need to know before you begin?
 
 The new unified submissions experience is available only in subscriptions that include Microsoft Defender for Endpoint Plan 2.
-You need to be assigned permissions before you can do the procedures in this article. You have the following options:
+You need to assign permissions before you can perform the procedures in this article. Use one of the following options:
 
 **Microsoft Defender for Endpoint** permissions:
  - Submit files / file hashes: _"Alerts investigation" or "Manage security settings in Security Center”_ 
