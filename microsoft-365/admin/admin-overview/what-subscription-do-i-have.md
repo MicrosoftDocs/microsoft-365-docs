@@ -26,7 +26,7 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: "Learn to verify which Microsoft 365 subscriptions your organization has by going to the Your products page."
-ms.date: 01/21/2021
+ms.date: 03/15/2023
 ---
 
 # Which Microsoft 365 subscription do I have?
