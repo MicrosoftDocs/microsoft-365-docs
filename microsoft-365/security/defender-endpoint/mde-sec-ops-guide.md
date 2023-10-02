@@ -125,7 +125,7 @@ The Microsoft Defender Endpoint should be set up to support your regular securit
 
 - **Review attack surface reduction reporting** 
 
-    Review ASR reports to identify any files that affect your environment. See [Attack surface reduction (ASR) rules report](attack-surface-reduction-rules-report.md).
+    Review ASR reports to identify any files that affect your environment. See [Attack surface reduction rules report](attack-surface-reduction-rules-report.md).
     
 - **Review web protection events** 
     

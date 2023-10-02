@@ -1,6 +1,6 @@
 ---
-title: Attack surface reduction (ASR) rules reporting
-description: Provides information about attack surface reduction (ASR) rules detections, configuration, block threats, and methods to enable three standard rules and exclusions.
+title: Attack surface reduction rules reporting
+description: Provides information about attack surface reduction rules detections, configuration, block threats, and methods to enable three standard rules and exclusions.
 keywords: Attack surface reduction rules, ASR, asr rules, hips, host intrusion prevention system, protection rules, anti-exploit rules, antiexploit, exploit rules, infection prevention rules, Microsoft Defender for Endpoint, configure ASR rules, ASR rule description
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -23,7 +23,7 @@ ms.date: 03/27/2023
 search.appverid: met150
 ---
 
-# Attack surface reduction (ASR) rules report
+# Attack surface reduction rules report
 
 **Applies to:**
 
@@ -218,12 +218,12 @@ The "Detection" main page has a list of all detections (files/processes) in the 
 The **Possible exclusion and impact** section provides impact of the selected file or process. You can:
 
 - Select **Go hunt** which opens the Advanced Hunting query page
-- **Open file page** opens Microsoft Defender for Endpoint (MDE) detection
+- **Open file page** opens Microsoft Defender for Endpoint detection
 - The **Add exclusion** button is linked with the add exclusion main page.
 
 The following image illustrates how the Advanced Hunting query page opens from the link on the actionable flyout:
 
->:::image type="content" source="images/attack-surface-reduction-rules-report-main-detections-flyout-hunting.png" alt-text="Shows the (ASR) rules report main detections tab flyout link opening Advanced Hunting" lightbox="images/attack-surface-reduction-rules-report-main-detections-flyout-hunting.png":::
+>:::image type="content" source="images/attack-surface-reduction-rules-report-main-detections-flyout-hunting.png" alt-text="Shows the attack surface reduction rules report main detections tab flyout link opening Advanced Hunting" lightbox="images/attack-surface-reduction-rules-report-main-detections-flyout-hunting.png":::
 
 For more information about Advanced hunting, see [Proactively hunt for threats with advanced hunting in Microsoft 365 Defender](advanced-hunting-overview.md)
 
@@ -294,7 +294,7 @@ The Add exclusion page has two buttons for actions that can be used on any detec
 
 ## See also
 
-- [Attack surface reduction (ASR) rules deployment overview](attack-surface-reduction-rules-deployment.md)
+- [Attack surface reduction rules deployment overview](attack-surface-reduction-rules-deployment.md)
 - [Plan attack surface reduction rules deployment](attack-surface-reduction-rules-deployment-plan.md)
 - [Test attack surface reduction rules](attack-surface-reduction-rules-deployment-test.md)
 - [Enable attack surface reduction rules](attack-surface-reduction-rules-deployment-implement.md)

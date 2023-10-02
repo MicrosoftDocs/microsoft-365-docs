@@ -164,7 +164,7 @@ sections:
       - question: |
           Does attack surface reduction support file or folder exclusions that include system variables and wildcards in the path?
         answer: |
-          Yes. For more information on excluding files or folders from attack surface reduction rules, see [Excluding files and folders from attack surface reduction rules](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) and for more information on using system variables and wildcards in excluded file paths, see[Configure and validate exclusions based on file extension and folder location](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists).
+          Yes. For more information on excluding files or folders from attack surface reduction rules, see [Excluding files and folders from attack surface reduction rules](enable-attack-surface-reduction.md#exclude-files-and-folders-from-attack-surface-reduction-rules) and for more information on using system variables and wildcards in excluded file paths, see[Configure and validate exclusions based on file extension and folder location](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists).
 
       - question: |
           Do attack surface reduction rules cover all applications by default?

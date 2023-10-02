@@ -1,5 +1,5 @@
 ---
-title: Operationalize attack surface reduction (ASR) rules
+title: Operationalize attack surface reduction rules
 description: Provides guidance to operationalize your attack surface reduction rules deployment.
 ms.service: microsoft-365-security
 ms.subservice: mde
@@ -21,7 +21,7 @@ ms.date: 08/29/2023
 search.appverid: met150
 ---
 
-# Operationalize attack surface reduction (ASR) rules
+# Operationalize attack surface reduction rules
 
 **Applies to:**
 
