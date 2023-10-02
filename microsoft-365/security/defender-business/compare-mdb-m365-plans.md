@@ -104,7 +104,7 @@ Defender for Business brings the enterprise-grade capabilities of Defender for E
 > [!NOTE]
 > 1. Onboard and manage devices in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) or by using Microsoft Intune ([https://intune.microsoft.com](https://intune.microsoft.com)).
 > 
-> 2. Intune is required to configure and manage [ASR rules](../defender-endpoint/attack-surface-reduction.md).
+> 2. Intune is required to configure and manage [Attack surface reduction rules](../defender-endpoint/attack-surface-reduction.md).
 > 
 > 3. Endpoint detection and response (EDR) capabilities in Defender for Business include behavior-based detection and the following manual response actions: Run antivirus scan; Isolate device; and Add an indicator to block or allow a file.
 > 

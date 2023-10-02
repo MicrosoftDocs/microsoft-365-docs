@@ -18,7 +18,7 @@ ms.collection:
 - tier1
 ms.topic: conceptual
 ms.subservice: mde
-ms.date: 08/18/2023
+ms.date: 09/29/2023
 ---
 
 # Configure device proxy and Internet connectivity settings
@@ -145,7 +145,7 @@ Configure the static proxy using the Group Policy available in Administrative Te
 
 > [!NOTE]
 > To use the proxy correctly, configure these three different proxy settings:
->  - Microsoft Defender for Endpoint (MDE)
+>  - Microsoft Defender for Endpoint
 >  - AV (Antivirus)
 >  - Endpoint Detection and Response (EDR)
 >
