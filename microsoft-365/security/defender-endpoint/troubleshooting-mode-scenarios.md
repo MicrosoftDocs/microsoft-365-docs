@@ -105,7 +105,7 @@ When Microsoft Defender Antivirus [real-time protection](configure-real-time-pro
 
 ## Scenario 4: Microsoft Office plugin blocked by Attack Surface Reduction
 
-Attack Surface Reduction (ASR) isn't allowing Microsoft Office plugin to work properly because **Block all Office applications from creating child processes** is set to block mode. 
+Attack surface reduction isn't allowing Microsoft Office plugin to work properly because **Block all Office applications from creating child processes** is set to block mode. 
 
 1. Turn on troubleshooting mode, and sign into the device. 
 

@@ -1,5 +1,5 @@
 ---
-title: Understand and use attack surface reduction (ASR)
+title: Understand and use attack surface reduction
 ms.reviewer: 
 description: Learn about the attack surface reduction capabilities of Microsoft Defender for Endpoint.
 keywords: asr, attack surface reduction, attack surface reduction rules, Microsoft Defender for Endpoint, microsoft defender, antivirus, av, windows defender
@@ -70,9 +70,9 @@ To configure attack surface reduction in your environment, follow these steps:
 
 9. Set up your network firewall.
 
-   1. Get an overview of [Windows Defender Firewall with advanced security](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
-   2. Use the [Windows Defender Firewall design guide](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-design-guide) to decide how you want to design your firewall policies.
-   3. Use the [Windows Defender Firewall deployment guide](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide) to set up your organization's firewall with advanced security.
+   1. Get an overview of [Windows Firewall with advanced security](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security).
+   2. Use the [Windows Firewall design guide](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-design-guide) to decide how you want to design your firewall policies.
+   3. Use the [Windows Firewall deployment guide](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide) to set up your organization's firewall with advanced security.
 
 > [!TIP]
 > In most cases, when you configure attack surface reduction capabilities, you can choose from among several methods:
@@ -84,7 +84,7 @@ To configure attack surface reduction in your environment, follow these steps:
 
 ## Test attack surface reduction in Microsoft Defender for Endpoint
 
-As part of your organization's security team, you can configure attack surface reduction capabilities to run in audit mode to see how they'll work. You can enable the following ASR security features in audit mode:
+As part of your organization's security team, you can configure attack surface reduction capabilities to run in audit mode to see how they work. You can enable the following attack surface reduction security features in audit mode:
 
 - Attack surface reduction rules
 - Exploit protection
@@ -94,9 +94,9 @@ As part of your organization's security team, you can configure attack surface r
 
 Audit mode lets you see a record of what *would* have happened if you had enabled the feature.
 
-You can enable audit mode when testing how the features will work. Enabling audit mode only for testing helps to prevent audit mode from affecting your line-of-business apps. You can also get an idea of how many suspicious file modification attempts occur over a certain period of time.
+You can enable audit mode when testing how the features work. Enabling audit mode only for testing helps to prevent audit mode from affecting your line-of-business apps. You can also get an idea of how many suspicious file modification attempts occur over a certain period of time.
 
-The features won't block or prevent apps, scripts, or files from being modified. However, the Windows Event Log will record events as if the features were fully enabled. With audit mode, you can review the event log to see what affect the feature would have had if it was enabled.
+The features won't block or prevent apps, scripts, or files from being modified. However, the Windows Event Log records events as if the features were fully enabled. With audit mode, you can review the event log to see what effect the feature would have had if it was enabled.
 
 To find the audited entries, go to **Applications and Services** \> **Microsoft** \> **Windows** \> **Windows Defender** \> **Operational**.
 
@@ -107,17 +107,17 @@ You can enable audit mode using Group Policy, PowerShell, and configuration serv
 | Audit options | How to enable audit mode | How to view events |
 |---|---|---|
 | Audit applies to all events | [Enable controlled folder access](enable-controlled-folders.md) | [Controlled folder access events](evaluate-controlled-folder-access.md#review-controlled-folder-access-events-in-windows-event-viewer) |
-| Audit applies to individual rules | [Step 1: Test ASR rules using Audit mode](attack-surface-reduction-rules-deployment-test.md#step-1-test-asr-rules-using-audit) | [Step 2: Understand the Attack surface reduction rules reporting page](attack-surface-reduction-rules-deployment-test.md#step-2-understand-the-asr-rules-reporting-page-in-the-microsoft-365-defender-portal) |
+| Audit applies to individual rules | [Step 1: Test attack surface reduction rules using Audit mode](attack-surface-reduction-rules-deployment-test.md#step-1-test-asr-rules-using-audit) | [Step 2: Understand the Attack surface reduction rules reporting page](attack-surface-reduction-rules-deployment-test.md#step-2-understand-the-asr-rules-reporting-page-in-the-microsoft-365-defender-portal) |
 | Audit applies to all events | [Enable network protection](enable-network-protection.md) | [Network protection events](evaluate-network-protection.md#review-network-protection-events-in-windows-event-viewer) |
 | Audit applies to individual mitigations | [Enable exploit protection](enable-exploit-protection.md) | [Exploit protection events](exploit-protection.md#review-exploit-protection-events-in-windows-event-viewer) |
 
-For example, you can test attack surface reduction rules in audit mode prior to enabling (block mode) them. Attack surface reduction (ASR) rules are pre-defined to harden common, known attack surfaces. There are several methods you can use to implement attack surface reduction rules. The preferred method is documented in the following attack surface reduction (ASR) rules deployment topics:
+For example, you can test attack surface reduction rules in audit mode prior to enabling (block mode) them. Attack surface reduction rules are predefined to harden common, known attack surfaces. There are several methods you can use to implement attack surface reduction rules. The preferred method is documented in the following attack surface reduction rules deployment articles:
 
-- [Attack surface reduction (ASR) rules deployment overview](attack-surface-reduction-rules-deployment.md)
-- [Plan attack surface reduction (ASR) rules deployment](attack-surface-reduction-rules-deployment-plan.md)
-- [Test attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-test.md)
-- [Enable attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-implement.md)
-- [Operationalize attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-operationalize.md)
+- [Attack surface reduction rules deployment overview](attack-surface-reduction-rules-deployment.md)
+- [Plan attack surface reduction rules deployment](attack-surface-reduction-rules-deployment-plan.md)
+- [Test attack surface reduction rules](attack-surface-reduction-rules-deployment-test.md)
+- [Enable attack surface reduction rules](attack-surface-reduction-rules-deployment-implement.md)
+- [Operationalize attack surface reduction rules](attack-surface-reduction-rules-deployment-operationalize.md)
 
 ## View attack surface reduction events
 
@@ -154,7 +154,7 @@ You can also manually navigate to the event area that corresponds to the feature
 
 5. Select **Open**.
 
-6. It will create a custom view that filters to only show the events related to that feature.
+6. It creates a custom view that filters to only show the events related to that feature.
 
 #### Copy the XML directly
 
@@ -245,7 +245,7 @@ You can access these events in Windows Event viewer:
 |Exploit protection|Security-Mitigations (Kernel Mode/User Mode)|1|ACG audit|
 |Exploit protection|Security-Mitigations (Kernel Mode/User Mode)|2|ACG enforce|
 |Exploit protection|Security-Mitigations (Kernel Mode/User Mode)|3|Do not allow child processes audit|
-|Exploit protection|Security-Mitigations (Kernel Mode/User Mode)|4|Do not allow child processes block|
+|Exploit protection|Security-Mitigations (Kernel Mode/User Mode)|4|Don't allow child processes block|
 |Exploit protection|Security-Mitigations (Kernel Mode/User Mode)|5|Block low integrity images audit|
 |Exploit protection|Security-Mitigations (Kernel Mode/User Mode)|6|Block low integrity images block|
 |Exploit protection|Security-Mitigations (Kernel Mode/User Mode)|7|Block remote images audit|
@@ -281,9 +281,9 @@ You can access these events in Windows Event viewer:
 |Attack surface reduction|Windows Defender (Operational)|1121|Event when rule fires in Block-mode|
 
 > [!NOTE]
-> From the user's perspective, ASR Warn mode notifications are made as a Windows Toast Notification for attack surface reduction rules.
+> From the user's perspective, attack surface reduction Warn mode notifications are made as a Windows Toast Notification for attack surface reduction rules.
 >
-> In ASR, Network Protection provides only Audit and Block modes.
+> In attack surface reduction, Network Protection provides only Audit and Block modes.
 
 ## Resources to learn more about attack surface reduction
 
@@ -292,13 +292,13 @@ As mentioned in the video, Defender for Endpoint includes several attack surface
 | Article | Description |
 |:---|:---|
 | [Application control](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) | Use application control so that your applications must earn trust in order to run. |
-| [Attack surface reduction (ASR) rules reference](attack-surface-reduction-rules-reference.md) | Provides details about each attack surface reduction rule. |
-| [Attack surface reduction (ASR) rules deployment guide](attack-surface-reduction-rules-deployment.md) | Presents overview information and prerequisites for deploying attack surface reduction rules, followed by step-by-step guidance for testing (audit mode), enabling (block mode) and monitoring. |
+| [Attack surface reduction rules reference](attack-surface-reduction-rules-reference.md) | Provides details about each attack surface reduction rule. |
+| [Attack surface reduction rules deployment guide](attack-surface-reduction-rules-deployment.md) | Presents overview information and prerequisites for deploying attack surface reduction rules, followed by step-by-step guidance for testing (audit mode), enabling (block mode) and monitoring. |
 | [Controlled folder access](controlled-folders.md) | Help prevent malicious or suspicious apps (including file-encrypting ransomware malware) from making changes to files in your key system folders (Requires Microsoft Defender Antivirus). |
 | [Device control](device-control-report.md) | Protects against data loss by monitoring and controlling media used on devices, such as removable storage and USB drives, in your organization. |
 | [Exploit protection](exploit-protection.md) | Help protect the operating systems and apps your organization uses from being exploited. Exploit protection also works with third-party antivirus solutions. |
 | [Hardware-based isolation](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | Protect and maintain the integrity of a system as it starts and while it's running. Validate system integrity through local and remote attestation. Use container isolation for Microsoft Edge to help guard against malicious websites. |
 | [Network protection](network-protection.md) | Extend protection to your network traffic and connectivity on your organization's devices. (Requires Microsoft Defender Antivirus). |
-| [Test attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-test.md) | Provides steps to use audit mode to test attack surface reduction rules. |
+| [Test attack surface reduction rules](attack-surface-reduction-rules-deployment-test.md) | Provides steps to use audit mode to test attack surface reduction rules. |
 | [Web protection](web-protection-overview.md) | Web protection lets you secure your devices against web threats and helps you regulate unwanted content. |
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

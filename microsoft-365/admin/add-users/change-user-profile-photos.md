@@ -144,7 +144,7 @@ If the user has no photo, the commands return the error: `Exception of type 'Mic
 - **Microsoft 365 Groups**:
 
   ```powershell
-  Set-MgGroupPhoto -GroupId <ID>
+  Get-MgGroupPhoto -GroupId <ID>
   ```
 
   You get the ID GUID value of the Microsoft 365 Group from the output of a **Get-MgGroup** command.
@@ -152,10 +152,10 @@ If the user has no photo, the commands return the error: `Exception of type 'Mic
   For example:
 
   ```powershell
-  Set-MgGroupPhoto -GroupId 173cd812-5563-439c-9da4-bc2715fa2aee
+  Get-MgGroupPhoto -GroupId 173cd812-5563-439c-9da4-bc2715fa2aee
   ```
 
-  For detailed syntax and parameter information, see [Set-MgGroupPhoto](/powershell/module/microsoft.graph.users/set-mggroupphoto).
+  For detailed syntax and parameter information, see [Get-MgGroupPhoto](/powershell/module/microsoft.graph.users/get-mggroupphoto).
 
 ### Download user photos in Microsoft Graph PowerShell
 
