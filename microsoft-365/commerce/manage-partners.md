@@ -21,7 +21,7 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 description: "Learn how to work with Microsoft-certified solution providers (partners) to buy and manage products and services for your organization or school."
-ms.date: 09/29/2023
+ms.date: 10/02/2023
 ---
 
 # Manage Microsoft-certified solution provider partner relationships
