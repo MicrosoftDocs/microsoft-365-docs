@@ -46,7 +46,7 @@ Use the _advanced delivery policy_ in EOP to prevent inbound messages _in these 
   - [Safe Links in Defender for Office 365](safe-links-about.md) doesn't block or detonate the specified URLs in these messages at time of click. URLs are still wrapped, but they aren't blocked.
   - [Safe Attachments in Defender for Office 365](safe-attachments-about.md) doesn't detonate attachments in these messages.
 
-¹ You can't bypass malware filtering.
+¹ Malware filtering will be bypassed for SecOps mailboxes only.
 
 ² You can bypass ZAP for malware by creating an anti-malware policy for the SecOps mailbox where ZAP for malware is turned off. For instructions, see [Configure anti-malware policies in EOP](anti-malware-policies-configure.md).
 
@@ -552,3 +552,4 @@ Remove-TenantAllowBlockListItems -ListType Url -ListSubType AdvancedDelivery -En
 ```
 
 For detailed syntax and parameter information, see [Remove-TenantAllowBlockListItems](/powershell/module/exchange/remove-tenantallowblocklistitems).
+
