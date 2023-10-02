@@ -9,7 +9,7 @@ ms.audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: m365bp
-ms.date: 05/10/2023
+ms.date: 10/02/2023
 ms.localizationpriority: medium
 ms.collection: 
 - M365-Campaigns
@@ -56,5 +56,7 @@ The guidance in these missions is based upon the [Zero Trust security model](/se
 ## Next steps
 
 Proceed to [Fortify your environment](m365bp-setup-overview.md).
+
+See [What's new in Microsoft 365 Business Premium and Microsoft Defender for Business](m365bp-mdb-whats-new.md)
 
 
