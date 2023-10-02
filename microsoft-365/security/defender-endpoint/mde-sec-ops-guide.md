@@ -13,6 +13,7 @@ ms.author: deniseb
 ms.custom: 
 - nextgen
 - admindeeplinkDEFENDER
+- mde-ngp
 ms.subservice: mde
 ms.collection: 
 - m365-security
@@ -122,9 +123,9 @@ The Microsoft Defender Endpoint should be set up to support your regular securit
 
     Review TVM to identify any new vulnerabilities and recommendations that require action. See [Vulnerability management dashboard.](../defender-vulnerability-management/tvm-dashboard-insights.md)
 
-- **Review attack surface reduction (ASR) reporting** 
+- **Review attack surface reduction reporting** 
 
-    Review ASR reports to identify any files that affect your environment. See [Attack surface reduction (ASR) rules report](attack-surface-reduction-rules-report.md).
+    Review ASR reports to identify any files that affect your environment. See [Attack surface reduction rules report](attack-surface-reduction-rules-report.md).
     
 - **Review web protection events** 
     
