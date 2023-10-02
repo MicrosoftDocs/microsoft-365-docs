@@ -33,8 +33,8 @@ productDirectory:
     - title: What's new?
       # imageSrc should be square in ratio with no whitespace
       imageSrc: /office/media/icons/get-started-blue.svg
-      summary: See what's new in Microsoft 365 Business Premium and Defender for Business.
-      url: /microsoft-365/business-premium/m365bp-mdb-whats-new
+      summary: See what's new in security for small and medium-sized businesses.
+      url:  https://aka.ms/cybersecuritysmb
     # Card
     - title: Get the free partner kit
       imageSrc: /office/media/icons/education-tutorial-blue.svg
