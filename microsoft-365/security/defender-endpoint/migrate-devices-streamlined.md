@@ -215,7 +215,7 @@ You can use advanced hunting in Microsoft 365 Defender portal to view the connec
 
 This information is found in the DeviceInfo table under the “ConnectivityType” column:
 - Column Name: ConnectivityType
-- Possible Values: <blank>, Streamlined, Standard
+- Possible Values: `<blank>`, Streamlined, Standard
 - Data type: String
 - Description: Type of connectivity from the device to the cloud
 
