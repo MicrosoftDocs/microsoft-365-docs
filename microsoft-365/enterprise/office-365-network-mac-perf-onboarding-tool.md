@@ -334,7 +334,7 @@ Here are answers to some of our frequently asked questions.
 
 The advanced test client requires .NET 6.0 Runtime. If you run the advanced test client without that installed you'll be directed to [the .NET 6.0 installer page](https://dotnet.microsoft.com/en-us/download/dotnet/6.0/runtime?utm_source=getdotnetcore). Be sure to install from the Run desktop apps column for Windows. Administrator permissions on the machine are required to install .NET 6.0 Runtime.
 
-The advanced test client uses SignalR to communicate to the web page. For this, you must ensure that TCP port 443 connectivity to **connectivity.service.signalr.net** is open. This URL isn't published in the <https://aka.ms/o365ip> because that connectivity isn't required for a Microsoft 365 client application user.
+The advanced test client uses SignalR to communicate to the web page. For this, you must ensure that TCP port 443 connectivity to **connectivity.service.signalr.net** is open. This URL isn't published in the <https://aka.ms/o365ip> because that connectivity isn't required for a Microsoft 365 client application user. If you are using an HTTP proxy for connection to FQDN connectivity.office.com and encounter the error **SignalR proxy configuration is different than origin.**, ensure connection to FQDN connectivity.service.signalr.net is allowed through the proxy. If a PAC file is being used to push proxy configuration settings, ensure the PAC file will return the same proxy settings for FQDN's connectivity.office.com and connectivity.service.signalr.net.
 
 ### What is Microsoft 365 service front door?
 
