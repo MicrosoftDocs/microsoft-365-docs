@@ -72,4 +72,4 @@ The Semantic Index for Microsoft 365 Copilot also requires a license for Microso
 
 ## Privacy settings for Microsoft 365 Apps for enterprise
 
-Some privacy settings for Microsoft 365 Apps for enterprise have an effect on the availability of Microsoft 365 Copilot features. For more information, see [Microsoft 365 Copilot and policy settings for connected experiences](microsoft-365-copilot-privacy.md#microsoft-365-copilot-and-policy-settings-for-connected-experiences).
+Review your privacy settings for Microsoft 365 Apps for enterprise because those settings might have an effect on the availability of Microsoft 365 Copilot features. For more information, see [Microsoft 365 Copilot and policy settings for connected experiences](microsoft-365-copilot-privacy.md#microsoft-365-copilot-and-policy-settings-for-connected-experiences).
