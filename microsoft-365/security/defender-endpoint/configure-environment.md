@@ -59,7 +59,8 @@ The following downloadable spreadsheet lists the services and their associated U
 | Microsoft Defender for Endpoint URL list for Gov/GCC/DoD | Spreadsheet of specific DNS records for service locations, geographic locations, and OS for Gov/GCC/DoD customers. <br> [Download the spreadsheet here.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx) |
 
  
-> [!NOTE] Applies to public preview for streamlined connectivity <br/>
+> [!NOTE] Applies to public preview for streamlined connectivity.
+>
 > 1. Windows 10 version 1607, 1703, 1709, 1803 (RS1-RS4) are supported on the streamlined onboarding package but require a longer URL list. See, [streamlined URL sheet](https://go.microsoft.com/fwlink/?linkid=2248278). These versions do not support reonboarding (must be fully offboarded first). 
 > 2. Devices running on Windows 7, Windows 8.1, Windows Server 2008 R2 MMA, Windows Server 2012 R2, 2016 R2 not upgraded to unified agent will need to continue using MMA onboarding method. 
 
