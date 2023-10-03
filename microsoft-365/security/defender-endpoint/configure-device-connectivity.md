@@ -36,7 +36,7 @@ The Microsoft Defender for Endpoint service requires the use of proxy configurat
 
 This article describes the streamlined device connectivity method and how to onboard new devices to use a simpler deployment and management of Defender for Endpoint cloud connectivity services. For more information on migrating previously onboarded devices, see [Migrating devices to streamlined connectivity](migrate-devices-streamlined.md). 
 
-To simplify network configuration and management, you now have the option of onboarding devices to Defender for Endpoint using a reduced URL set or static IP ranges. 
+To simplify network configuration and management, you now have the option of onboarding devices to Defender for Endpoint using a reduced URL set or static IP ranges. See, [streamlined URL list](https://go.microsoft.com/fwlink/?linkid=2248278)
 
 The Defender for Endpoint-recognized simplified domain: `*.endpoint.security.microsoft.com` replaces the following core Defender for Endpoint services:
 
@@ -67,7 +67,7 @@ For the full list of required URLs, see [Enable access to the Defender for Endpo
 
 > [!IMPORTANT]
 > The following Defender for Endpoint URLs consolidated under the streamlined domain should no longer be required for connectivity if `*.endpoint.security.microsoft.com` is allowed and devices are onboarded using the streamlined onboarding package. For more information, see the preceeding section. <br/>
->You will need to maintain connectivity with other required services not consolidated that are relevant to your organization (for example, CRL, SmartScreen/Network Protection, and WNS). For more information on the updated list of URLs, see [Download the spreadsheet here]().
+>You will need to maintain connectivity with other required services not consolidated that are relevant to your organization (for example, CRL, SmartScreen/Network Protection, and WNS). For more information on the updated list of URLs, see [Download the spreadsheet here](https://go.microsoft.com/fwlink/?linkid=2248278).
 
 > [!NOTE]
 > Applies to Windows, macOS, and Linux.
@@ -120,7 +120,7 @@ Devices must meet specific prerequisites to use the streamlined connectivity met
 **Supported Operating Systems**
 
 -   Windows 10 version 1809 or later
-    -    Windows 10 versions 1607, 1703, 1709, 1803 are supported on the streamlined onboarding package but require a different URL list, see [Updated URL sheet - ADD LINK]()
+    -    Windows 10 versions 1607, 1703, 1709, 1803 are supported on the streamlined onboarding package but require a different URL list, see [streamlined URL sheet](https://go.microsoft.com/fwlink/?linkid=2248278)
 -   Windows 11
 -   Windows Server 2019
 -   Windows Server 2022
@@ -131,7 +131,7 @@ Devices must meet specific prerequisites to use the streamlined connectivity met
 > [!IMPORTANT]
 > - **Devices running on MMA agent are not supported** on the streamlined connectivity method and will need to continue using the standard URL set (Windows 7, Windows 8.1, Windows Server 2008 R2 MMA, Server 2012 & 2016 R2 not upgraded to modern unified agent). 
 > - Windows Server 2012 R2 and Server 2016 R2 will need to upgrade to unified agent to leverage the new method. <br/>
-> - Windows 10 1607, 1703, 1709, 1803 can leverage the new onboarding option but will use a longer list. For more information, see [Updated URL sheet - ADD LINK TO SHEET]().
+> - Windows 10 1607, 1703, 1709, 1803 can leverage the new onboarding option but will use a longer list. For more information, see [streamlined URL sheet](https://go.microsoft.com/fwlink/?linkid=2248278).
 
 | Windows   OS    |     Minimum   KB Required (March 8, 2022)    |
 |:---|:---|
@@ -168,7 +168,7 @@ Streamlined connectivity allows you to use the following option to configure clo
 
 Configure your environment to allow connections with the simplified Defender for Endpoint domain: `*.endpoint.security.microsoft.com`. For more information, see [Configure your network environment to ensure connectivity with Defender for Endpoint service](configure-environment.md).
 
-You must maintain connectivity with remaining required services listed under the updated list: [LINK](). For example, Certification Revocation List, Windows update, SmartScreen.
+You must maintain connectivity with remaining required services listed under the [updated list](https://go.microsoft.com/fwlink/?linkid=2248278). For example, Certification Revocation List, Windows update, SmartScreen.
 
 #### Option 2: Configure connectivity using static IP ranges 
 
@@ -197,7 +197,7 @@ The following table lists the current static IP ranges. For latest list, refer t
 | US | `20.15.141.0/24` <br/> `20.242.181.0/24` <br/>`20.10.127.0/24`<br/>`13.83.125.0/24`        |
 | EU | `4.208.13.0/24`  <br/>`20.8.195.0/24`       |
 | UK | `20.26.63.224/28`  <br/>`20.254.173.48/28`     |
-
+| AU | `68.218.120.64/28`  <br/>`20.211.228.80/28`     |
 
 > [!IMPORTANT]
 > In compliance with Defender for Endpoint security and compliance standards, your data will be processed and stored in accordance with your tenant's physical location. Based on client location, traffic may flow through any of these IP regions (which correspond to Azure datacenter regions). For more information, see [Data storage and privacy](/microsoft-365/security/defender-endpoint/data-storage-privacy).  
