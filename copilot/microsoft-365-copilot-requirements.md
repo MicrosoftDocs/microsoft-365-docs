@@ -56,7 +56,7 @@ To use Microsoft 365 Copilot with Microsoft Loop, you must have Loop enabled for
 
 ### Update channels
 
-User devices must be on either the Current Channel or Monthly Enterprise channel to access Microsoft 365 Copilot features. In November, Copilot will initially be available on the Current Channel, and the Monthly Enterprise channel a month later. To learn more about update channels, see [update channels for Microsoft 365 Apps](/deployoffice/updates/overview-update-channels#current-channel-overview).
+User devices must be on either Current Channel or Monthly Enterprise Channel to access Microsoft 365 Copilot features. In November, Copilot will initially be available on Current Channel, and Monthly Enterprise Channel a month later. To learn more about update channels, see [update channels for Microsoft 365 Apps](/deployoffice/updates/overview-update-channels#current-channel-overview).
 
 ## Network requirements
 
@@ -69,3 +69,7 @@ There are many Copilot experiences, including some core experiences like Excel, 
 Microsoft 365 Copilot users require a license for Microsoft 365 E3 or Microsoft 365 E5, as well as a license for Microsoft 365 Copilot. You can use the [Microsoft 365 Copilot setup guide](https://go.microsoft.com/fwlink/p/?linkid=2243702) in the Microsoft 365 admin center to assign the required licenses to users. For more information, see [Assign licenses to users in the Microsoft 365 admin center](/microsoft-365/admin/manage/assign-licenses-to-users).
 
 The Semantic Index for Microsoft 365 Copilot also requires a license for Microsoft 365 E3 or E5.
+
+## Privacy settings for Microsoft 365 Apps for enterprise
+
+Some privacy settings for Microsoft 365 Apps for enterprise have an effect on the availability of Microsoft 365 Copilot features. For more information, see [Microsoft 365 Copilot and policy settings for connected experiences](microsoft-365-copilot-privacy.md#microsoft-365-copilot-and-policy-settings-for-connected-experiences).
