@@ -1,7 +1,7 @@
 ---
 title: Microsoft Security Copilot in Microsoft 365 Defender
 description: Learn about Security Copilot capabilities embedded in Microsoft 365 Defender.
-keywords: security copilot, microsoft 365 defender, embedded experience, incident summary, script analyzer, script analysis, query assistant, m365, incident report, guided response, incident response automated, automatic incident response, summarize incidents, summarize incident report
+keywords: security copilot, microsoft 365 defender, embedded experience, incident summary, script analyzer, script analysis, query assistant, m365, incident report, guided response, incident response automated, automatic incident response, summarize incidents, summarize incident report, plugins, Microsoft plugins
 ms.service: microsoft-365-security
 ms.subservice: m365d
 ms.mktglfcycl: deploy
@@ -32,17 +32,17 @@ ms.date: 10/10/2023
 
 - Microsoft 365 Defender
 
-The Microsoft Security Copilot in Microsoft 365 Defender Early Access Program is an invitation-only, paid preview. If your organization is interested in this program, work with your Microsoft account manager to learn more about nominations for a potential invite. To learn more about this program, see the [Security Copilot Early Access Program](/security-copilot/faq-security-copilot.md).
+The Microsoft Security Copilot in Microsoft 365 Defender Early Access Program is an invitation-only, paid preview. If your organization is interested in this program, work with your Microsoft account manager to learn more about nominations for a potential invite. To learn more about this program, see the [Security Copilot Early Access Program FAQ](/security-copilot/faq-security-copilot.md).
 
-[Security Copilot](/security-copilot/microsoft-security-copilot.md) is a platform that brings together the power of AI and human expertise to help security teams respond to attacks faster and more effectively. Security Copilot is embedded in Microsoft 365 Defender to provide security teams with the capabilities to summarize incidents, analyze scripts and codes, use guided responses to resolve incidents, generate KQL queries, and create incident reports.
+[Security Copilot](/security-copilot/microsoft-security-copilot.md) is a platform that brings together the power of AI and human expertise to help security teams respond to attacks faster and more effectively. Security Copilot is embedded in Microsoft 365 Defender to provide security teams with to summarize incidents, analyze scripts and codes, use guided responses to resolve incidents, generate KQL queries, and create incident reports.
 
 This article provides an overview for users of the Security Copilot embedded experience in Microsoft 365 Defender, including steps to access, key capabilities, and links that detail these capabilities.
 
 ## Access Security Copilot in Microsoft 365 Defender
 
-Review Security Copilot and assess if it's right for your organization, see the [Security Copilot Frequently Asked Questions](/security-copilot/faq-security-copilot.md) page. To ensure that you have access to Security Copilot, see [Security Copilot licensing information](/security-copilot/faq-security-copilot.md#licensing-information).
+ To ensure that you have access to Security Copilot, see [Security Copilot purchase and licensing information](/security-copilot/faq-security-copilot.md). Once you have access to Security Copilot, you can access it in Microsoft 365 Defender.
 
-[Review information on other requirements to access Security Copilot](/security-copilot/get-started-security-copilot.md).
+[Review information on how to get started with Security Copilot](/security-copilot/get-started-security-copilot.md).
 
 ## Key features
 
@@ -80,21 +80,23 @@ Investigation conclusions usually require reports to document the attack, the st
 
 ## Providing feedback
 
-You can validate or report the results provided by Security Copilot in Microsoft 365 Defender. Validating and reporting results enable both Security Copilot and Microsoft 365 Defender to continuously improve delivery of more accurate answers. All features in key features have an option for you to provide feedback.
+You can validate or report the results provided by Security Copilot in Microsoft 365 Defender. Validating and reporting results enable both Security Copilot and Microsoft 365 Defender to continuously improve delivery of more accurate answers. All key features have an option for providing feedback.
 
 To provide feedback:
 
 1. Select the down arrow beside the face icon located at the bottom of a card in the Security Copilot pane.
-
 :::image type="content" source="../../media/copilot-in-defender/first-run/fig6-sec-copilot-m365d-first-run.png" alt-text="Highlighting the icon for feedback options for Security Copilot results" lightbox="../../media/copilot-in-defender/first-run/fig6-sec-copilot-m365d-first-run.png":::
-
 2. From the options, select your feedback.
-
 :::image type="content" source="../../media/copilot-in-defender/first-run/fig7-sec-copilot-m365d-first-run.png" alt-text="Highlighting the feedback options for Security Copilot results" lightbox="../../media/copilot-in-defender/first-run/fig7-sec-copilot-m365d-first-run.png":::
-
 3. Select **Confirmed, it looks great** if the results are accurate based on your assessment. When results are confirmed, you can provide more information in the next dialog box.
 4. Select **Off-target, inaccurate** if any detail is incorrect or incomplete based on your assessment. You can provide more information about your assessment in the next dialog box and submit this assessment to Microsoft.
 5. You can also report the results if it contains questionable or ambiguous information by selecting **Potentially harmful, inappropriate**. Provide more information about the results in the next dialog box and select Submit.
+
+## Microsoft 365 Defender in Security Copilot
+
+Microsoft 365 Defender is one of the [Microsoft plugins](/security-copilot/manage-plugins.md#microsoft-plugins) that enable the Security Copilot platform to generate accurate and relevant information. Through the Microsoft 365 Defender plugin, the Security Copilot portal can provide more context to incidents and generate more accurate results.
+
+You can learn more about plugins implemented in the Security Copilot portal in [Manage plugins in Security Copilot](/security-copilot/manage-plugins.md). Additionally, you can learn more about the embedded experiences in other Microsoft security products in [Microsoft Security Copilot experiences](/security-copilot/experiences-security-copilot.md)
 
 ## Next steps
 
@@ -106,9 +108,6 @@ To provide feedback:
 
 ## See also
 
-- [Security Copilot Early Access Program FAQs](/security-copilot/faq-security-copilot.md)
-- [Get started with Security Copilot](/security-copilot/get-started-security-copilot.md)
-- [Know more about other Security Copilot embedded experiences](/security-copilot/experiences-security-copilot.md)
 - [Privacy and data security in Security Copilot](/security-copilot/privacy-data-security.md)
 - [Responsible AI FAQs](/security-copilot/responsible-ai-overview-security-copilot.md)
 

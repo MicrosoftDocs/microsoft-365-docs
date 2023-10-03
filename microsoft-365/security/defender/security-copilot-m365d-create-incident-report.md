@@ -89,13 +89,6 @@ Here are some recommendations to consider to ensure that Security Copilot genera
 - Resolve the incident before generating the incident report. Security Copilot includes the incident resolution in the incident report.
 - [Enable Microsoft Sentinel and ServiceNow bi-directional sync](https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/what-s-new-introducing-microsoft-sentinel-solution-for/ba-p/3692840) for richer incident data.
 
-## Next steps
-
-- [Summarize an incident](security-copilot-m365d-incident-summary.md)
-- [Use guided responses when responding to threats](security-copilot-m365d-guided-response.md)
-- [Analyze scripts and codes](security-copilot-m365d-script-analysis.md)
-- [Generate KQL queries](advanced-hunting-security-copilot.md)
-
 ## See also
 
 - [Security Copilot Early Access Program FAQs](/security-copilot/faq-security-copilot.md)

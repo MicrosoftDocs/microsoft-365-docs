@@ -76,10 +76,9 @@ You can validate or report the script analysis results provided by Security Copi
 
 ## Next steps
 
-- [Summarize an incident](security-copilot-m365d-incident-summary.md)
 - [Respond to incidents using guided responses](security-copilot-m365d-guided-response.md)
-- [Create an incident report](security-copilot-m365d-create-incident-report.md)
 - [Generate KQL queries](advanced-hunting-security-copilot.md)
+- [Create an incident report](security-copilot-m365d-create-incident-report.md)
 
 ## See also
 - [Security Copilot Early Access Program FAQs](/security-copilot/faq-security-copilot.md)

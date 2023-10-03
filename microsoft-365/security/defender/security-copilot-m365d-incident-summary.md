@@ -74,8 +74,8 @@ You can validate or report the results of the incident summary provided by Secur
 
 ## Next steps
 
-- [Use guided responses when responding to threats](security-copilot-m365d-guided-response.md)
 - [Analyze scripts and codes](security-copilot-m365d-script-analysis.md)
+- [Use guided responses when responding to threats](security-copilot-m365d-guided-response.md)
 - [Generate KQL queries](advanced-hunting-security-copilot.md)
 - [Create incident reports](security-copilot-m365d-create-incident-report.md)
 
