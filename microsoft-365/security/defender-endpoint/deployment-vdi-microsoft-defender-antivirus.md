@@ -15,6 +15,7 @@ ms.collection:
 - m365-security
 - tier2
 - ContentEngagementFY23
+- mde-ngp
 search.appverid: met150
 ---
 
