@@ -32,7 +32,7 @@ ms.date: 09/21/2023
 
 This article describes how to migrate (reonboard) devices that are currently onboarded to Defender for Endpoint to use the streamlined device connectivity method. For more information on streamlined connectivity, see [Onboarding devices using streamlined connectivity](configure-device-connectivity.md). Devices must meet the prerequisites listed in [Streamlined connectivity](configure-device-connectivity.md#prerequisites). 
 
-In most cases, full device offboarding isn't required when reonboarding. You can run the updated onboarding package and reboot your device to switch connectivity over. For details on each operating system, see LINK.
+In most cases, full device offboarding isn't required when reonboarding. You can run the updated onboarding package and reboot your device to switch connectivity over. See below for details on individual operating systems.
 
 > [!IMPORTANT]
 > Preview limitations and known issues: <br>
@@ -50,13 +50,13 @@ Migration recommendation:
 
 - **Validate and monitor**. After onboarding the small set of devices, validate that devices have successfully onboarded and are communicating with the service. 
 
-- **Complete migration**. At this stage, you can gradually roll out the migration to a larger set of devices and remove the old URLs and previous onboarding policies from your network device to complete the migration.
+- **Complete migration**. At this stage, you can gradually roll out the migration to a larger set of devices. Over time, you can remove the old URLs from your network device and replace previous onboarding policies to complete the migration.
 
-Validate device prerequisites before proceeding with migrations (link to other doc). This information builds upon the previous article by focusing on migrations. 
+Validate [device prerequisites](configure-device-connectivity.md#prerequisites) before proceeding with any migrations. This information builds upon the previous article by focusing on migrating existing devices. 
 
-To reonboard devices, use the streamlined onboarding package. For more information on how to access the package, see [Streamlined connectivity](configure-device-connectivity.md).
+To reonboard devices, you will need to use the streamlined onboarding package. For more information on how to access the package, see [Streamlined connectivity](configure-device-connectivity.md).
 
-Depending on the OS, migrations require a device reboot or service restart once the onboarding package is applied:
+Depending on the OS, migrations may require a device reboot or service restart once the onboarding package is applied:
 
 - Windows: reboot the device
 - macOS: Reboot the device or restart the Defender for Endpoint service by running:
@@ -72,21 +72,21 @@ Depending on the OS, migrations require a device reboot or service restart once 
 >[!IMPORTANT]
 >Windows 10 version 1607, 1703, 1709, and 1803 do not support reonboarding. To migrate existing devices, you will need to fully offboard and onboard using the streamlined onboarding package.
 
-For more information on onboarding Windows client devices, see [Onboarding Windows Client](onboard-windows-client.md).
+For general information on onboarding Windows client devices, see [Onboarding Windows Client](onboard-windows-client.md).
 
-See prerequisites: [Prerequisites](configure-device-connectivity.md#prerequisites).
+Confirm prerequisites are met: [Prerequisites for using streamlined method](configure-device-connectivity.md#prerequisites).
 
 ### Local script
 
-Use the guidance in [Local script (up to 10 devices)](configure-endpoints-script.md). After completing the steps, you must restart the device for device connectivity to switch over.
+Follow the guidance in [Local script (up to 10 devices)](configure-endpoints-script.md) using the streamlined onboarding package. After completing the steps, you must restart the device for device connectivity to switch over.
 
 ### Group policy
 
-Use the guidance in [Group policy](configure-endpoints-gp.md). After completing the steps, you must restart the device for device connectivity to switch over.
+Follow the guidance in [Group policy](configure-endpoints-gp.md) using the streamlined onboarding package. After completing the steps, you must restart the device for device connectivity to switch over.
 
 ### Microsoft Intune
 
-Follow the guidance in [Intune](/mem/intune/protect/endpoint-security-edr-policy#updating-the-onboarding-state-for-a-device). After completing the steps, you must restart the device for device connectivity to switch over.
+Follow the guidance in [Intune](/mem/intune/protect/endpoint-security-edr-policy#updating-the-onboarding-state-for-a-device) using the streamlined onboarding pacakge. After completing the steps, you must restart the device for device connectivity to switch over.
 
 ### Microsoft Configuration Manager 
 
@@ -100,9 +100,9 @@ Use the guidance in [Onboard nonpersistent virtual desktop infrastructure (VDI) 
 
 ### Windows Server
 
-For general Windows server onboarding instructions, see [Onboard Windows servers to the Microsoft Defender for Endpoint service](/microsoft-365/security/defender-endpoint/configure-server-endpoints).
+For general information on onboarding Windows server devices, see [Onboard Windows servers to the Microsoft Defender for Endpoint service](/microsoft-365/security/defender-endpoint/configure-server-endpoints).
 
-See [Prerequisites](configure-device-connectivity.md#prerequisites).
+Confirm prerequisites are met: [Prerequisites for streamlined method](configure-device-connectivity.md#prerequisites).
 
 ### Microsoft Defender for Cloud
 
@@ -114,30 +114,26 @@ Follow the guidance in [Configuration Manager](/mem/configmgr/protect/deploy-use
 
 ### Group policy
 
-Use the guidance in [Group policy](configure-endpoints-gp.md). After completing the steps, you must restart the device for device connectivity to switch over.
+Follow the guidance in [Group policy](configure-endpoints-gp.md) using the streamlined onboarding package. After completing the steps, you must restart the device for device connectivity to switch over.
 
 ### VDI
 
-Use the guidance in [Onboard nonpersistent virtual desktop infrastructure (VDI) devices](/microsoft-365/security/defender-endpoint/configure-endpoints-vdi). After completing the steps, you must restart the device for device connectivity to switch over.
+Follow the guidance in [Onboard nonpersistent virtual desktop infrastructure (VDI) devices](/microsoft-365/security/defender-endpoint/configure-endpoints-vdi). After completing the steps, you must restart the device for device connectivity to switch over.
 
 
 ### [**macOS**](#tab/macOS)
 
 ### macOS
 
-For specific OS and device prerequisites, see [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md).
+For general information on onboarding macOS devices, see [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md).
 
-Requires Defender for Endpoint version 101.23052.0004 or later.
-
-For general instructions on onboarding Defender for Endpoint on macOS, see [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md).
+Confirm prerequisites are met: [Prerequisites for streamlined method](configure-device-connectivity.md#prerequisites). 
 
 ### Local script
 
-Use the guidance in [Manual deployment for Microsoft Defender for Endpoint on macOS](mac-install-manually.md).
+Follow the guidance in [Manual deployment for Microsoft Defender for Endpoint on macOS](mac-install-manually.md) using the streamlined onboarding package.
 
-After completing the steps, you must either reboot the device or restart the service. 
-
-Device connectivity to the streamlined approach doesn't start until you reboot the device or restart the service.
+After completing the steps, you must either reboot the device or restart the service for connectivity to switch over. 
 
 ### Microsoft Intune
 
@@ -168,15 +164,13 @@ For more JAMF guidelines, see [Deploying Microsoft Defender for Endpoint on macO
 
 ### Linux
 
-For specific OS and device prerequisites, see [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md). 
+For general information on onboarding Linux devices, see [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md). 
 
-Requires Defender for Endpoint version 101.23052.0009+ 
-
-For general instructions on onboarding to Defender for Endpoint on Linux, see [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md).
+Confirm prerequisites are met: [Prerequisites for streamlined method](configure-device-connectivity.md#prerequisites). 
 
 ### Local script
 
-Use the guidance in [Deploy Microsoft Defender for Endpoint on Linux manually](linux-install-manually.md).
+Use the guidance in [Deploy Microsoft Defender for Endpoint on Linux manually](linux-install-manually.md) using the streamlined onboarding package.
 
 After completing the steps, you must either reboot the device or restart the service using `sudo systemctl restart mdatp`.
  
@@ -217,7 +211,20 @@ Ensure connectivity is established with the appropriate URLs.
 
 ### Tracking with advanced hunting in Microsoft 365 Defender
 
-Follow the same instructions as for Windows.
+You can use advanced hunting in Microsoft 365 Defender portal to view the connectivity type status. 
+
+This information is found in the DeviceInfo table under the “ConnectivityType” column:
+- Column Name: ConnectivityType
+- Possible Values: `<blank>`, Streamlined, Standard
+- Data type: String
+- Description: Type of connectivity from the device to the cloud
+
+Once a device is migrated to use the streamlined method and the device establishes successful communication with the EDR command & control channel, the value will be represented as “Streamlined”.
+
+If you move the device back to the regular method, the value will be “standard”.
+
+For devices that have not yet attempted reonboard, the value will remain blank. 
+
 
 ### Tracking locally on a device through Windows Event Viewer
 
