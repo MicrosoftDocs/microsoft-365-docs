@@ -64,20 +64,13 @@ As part of this preview, this section lists the Defender for Endpoint services t
 
 For the full list of required URLs, see [Enable access to the Defender for Endpoint service URLs in the proxy server](configure-environment.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server).
 
-> [!NOTE] 
-> Make sure to onboard devices using the streamlined onboarding package to leverage the reduced URL set. 
-
 
 > [!IMPORTANT]
-> The following Defender for Endpoint URLs consolidated under the simplified domain should no longer be required for connectivity if `*.endpoint.security.microsoft.com` is allowed and devices are onboarded using the streamlined onboarding package. For more information, see the preceeding section. <br/>
->You will need to maintain connectivity with other required services not consolidated that are relevant to your organization (for example, CRL, SmartScreen/Network Protection, and WNS). For more information on the detailed list of URLs, [Download the spreadsheet here](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx).
+> The following Defender for Endpoint URLs consolidated under the streamlined domain should no longer be required for connectivity if `*.endpoint.security.microsoft.com` is allowed and devices are onboarded using the streamlined onboarding package. For more information, see the preceeding section. <br/>
+>You will need to maintain connectivity with other required services not consolidated that are relevant to your organization (for example, CRL, SmartScreen/Network Protection, and WNS). For more information on the updated list of URLs, see [Download the spreadsheet here]().
 
 > [!NOTE]
 > Applies to Windows, macOS, and Linux.
-
-
-#### Consolidated endpoints (Windows, macOS, and Linux)
-
 
 > [!NOTE]
 > This list may evolve and new URLs may be added as more services get consolidated under the new domain.
@@ -117,7 +110,7 @@ Devices must meet specific prerequisites to use the streamlined connectivity met
 
 - **Antimalware Client:** 4.18.2211.5 
 - **Engine:** 1.1.19900.2 
-- **Antivirus (Security Intelligence):** 1.381.1853.0 
+- **Antivirus (Security Intelligence):** 1.391.315.0
 
 **Defender Antivirus versions (macOS/Linux)**
 
@@ -127,7 +120,7 @@ Devices must meet specific prerequisites to use the streamlined connectivity met
 **Supported Operating Systems**
 
 -   Windows 10 version 1809 or later
-    -    Windows 10 versions 1607, 1703, 1709, 1803 are supported on the streamlined onboarding package but require a different URL list (see updated URL sheet)
+    -    Windows 10 versions 1607, 1703, 1709, 1803 are supported on the streamlined onboarding package but require a different URL list, see [Updated URL sheet - ADD LINK]()
 -   Windows 11
 -   Windows Server 2019
 -   Windows Server 2022
@@ -136,7 +129,7 @@ Devices must meet specific prerequisites to use the streamlined connectivity met
 - Linux supported versions with Defender for Endpoint product version 101.23052.0003 +.*
 
 > [!IMPORTANT]
-> - **Devices running on MMA agent are not supported** on the streamlined onboarding method and will need to continue using legacy URL set (Windows 7, Windows 8.1, Windows Server 2008 R2 MMA, Servers not upgraded to Unified Agent (MMA)). 
+> - **Devices running on MMA agent are not supported** on the streamlined connectivity method and will need to continue using the standard URL set (Windows 7, Windows 8.1, Windows Server 2008 R2 MMA, Server 2012 & 2016 R2 not upgraded to modern unified agent). 
 > - Windows Server 2012 R2 and Server 2016 R2 will need to upgrade to unified agent to leverage the new method. <br/>
 > - Windows 10 1607, 1703, 1709, 1803 can leverage the new onboarding option but will use a longer list. For more information, see [Updated URL sheet - ADD LINK TO SHEET]().
 
@@ -189,7 +182,7 @@ With streamlined connectivity, IP-based solutions can be used as an alternative 
 > [!IMPORTANT]
 > The EDR Cyber data service must be configured separately if you are using the IP method (this service is only consolidated on a URL level). Similarly to Option 1, you must maintain connectivity with other required services including SmartScreen, CRL, Windows Update, and other services.<br/>
 > It is recommended to refer to the following Azure service tags for Microsoft Defender for Endpoint services. The latest IP ranges will always be found in the service tag.  
-> For more information, see [Download Azure IP Ranges and Service Tags – Public Cloud from Official Microsoft Download Center](https://www.microsoft.com/download/details.aspx?WT.mc_id=DP-MVP-5004154&id=56519), [Azure IP ranges](https://azureipranges.azurewebsites.net/).
+> For more information, see [Azure IP ranges](https://azureipranges.azurewebsites.net/).
 
 | Service tag name    |    Defender for Endpoint services included   |
 |:---|:---|
@@ -231,7 +224,7 @@ To test streamlined connectivity for devices not yet onboarded to Defender for E
 
 ### Stage 4. Apply the new onboarding package required for streamlined connectivity
 
-Once you configure your network to communicate with the full list of services, you can begin onboarding devices using the streamlined method. . Note that onboarding via API isn't currently supported (includes Intune connector & Microsoft Defender for Cloud).  
+Once you configure your network to communicate with the full list of services, you can begin onboarding devices using the streamlined method. Note that onboarding via API isn't currently supported (includes Intune & Microsoft Defender for Cloud).  
 
 Before proceeding, confirm devices meet the [prerequisites](#prerequisites) and have updated the sensor and Microsoft Defender Antivirus versions. 
 
