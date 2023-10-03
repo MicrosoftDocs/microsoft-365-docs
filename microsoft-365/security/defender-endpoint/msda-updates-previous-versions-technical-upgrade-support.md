@@ -12,6 +12,7 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier1
+- mde-ngp
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
@@ -46,7 +47,7 @@ Microsoft regularly releases [security intelligence updates and product updates 
 - Fixed scan randomization issue when setting Intune policy  
 - Fixed sense offboarding on Windows Server 2016 when [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) is enabled  
 - Fixed inconsistent results of caching files with the internal Defender file cache  
-- Augmented attack surface reduction (ASR) telemetry with more data related to an ASR detection  
+- Augmented attack surface reduction telemetry with more data related to an ASR detection  
 - Removed Image File Execution Options (IFEO) debugger value during installation, which can be used to prevent service starts
 - Fixed memory leaked in ASR logic  
 - Improved validation guard-rail for Malicious Software Removal Tool (MSRT) releases
@@ -71,7 +72,7 @@ Microsoft regularly releases [security intelligence updates and product updates 
 - Fixed memory leak in behavior monitoring
 - Improved resiliency of signature loading and platform updates
 - Quarantine and restore support for [WMI](use-wmi-microsoft-defender-antivirus.md)
-- Fixed attack surface reduction (ASR) rule output with [Get-MpPreference](/powershell/module/defender/get-mppreference)
+- Fixed attack surface reduction rule output with [Get-MpPreference](/powershell/module/defender/get-mppreference)
 - Fixed MSERT to only use release engine version
 - Improved the enforcement of exclusions
 - Added support for enabling real-time protection and signature updates during OOBE
@@ -117,7 +118,7 @@ Microsoft regularly releases [security intelligence updates and product updates 
 
 ### What's new
 
-- Fixed attack surface reduction (ASR) rule output with [Get-MpPreference](/powershell/module/defender/get-mppreference)
+- Fixed attack surface reduction rule output with [Get-MpPreference](/powershell/module/defender/get-mppreference)
 - Fixed threat DefaultAction outputs in Get-MpPreference
 - Improved Defender performance during file copy operations for .NET applications
 - Fixed [Microsoft Defender Vulnerability Management](/microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management) app block warn feature

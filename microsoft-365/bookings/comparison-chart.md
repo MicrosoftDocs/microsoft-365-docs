@@ -31,9 +31,9 @@ Teams app features are being added all the time and we will continue to update t
 | Add staff with Guest permissions for people outside your org | Yes | No |
 | Schedule in-person or offline bookings | Yes | No |
 | Schedule group or multi-customer bookings | Yes | No |
-| Set a logo for your business | Yes | No |
-| Set business hours | Yes | No |
+| Set a logo for your business | Yes | Yes |
+| Set business hours | Yes | Yes |
 | Publish a self-service scheduling page | Yes | No |
 | Manage customer contacts | Yes | No |
-| Set time off for staff | Yes | No |
+| Set time off for staff | Yes | Yes |
 | Scheduled queue view | No | Yes |

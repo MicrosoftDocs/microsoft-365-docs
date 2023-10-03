@@ -129,6 +129,8 @@
              href: create-groups/manage-guest-access-in-groups.md
            - name: Change a user name and email address
              href: add-users/change-a-user-name-and-email-address.md
+           - name: Change user profile photos
+             href: add-users/change-user-profile-photos.md
            - name: Restore a user
              href: add-users/restore-user.md
            - name: Create template to add users
@@ -465,8 +467,10 @@
           href: security-and-compliance/gdpr-compliance.md
     - name: Manage devices and app data
       items:
-        - name: Device and app data protection methods 
+        - name: Device and app data protection methods
           href: basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md
+        - name: Manage user consent to apps
+          href: misc/user-consent.md
         - name: Basic Mobility and Security
           items:
             - name: Overview of Basic Mobility and Security

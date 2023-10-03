@@ -39,7 +39,7 @@ You must be either a Windows 365 Administrator or a Global Administrator in the 
 
 ## Set or change a Windows 365 Business Cloud PC account type
 
-1.  In the left navigation pane in Lighthouse, select **Devices** > **Windows 365**.
+1.  In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Devices** > **Windows 365**.
 
 2.  Select the **All Cloud PCs** tab.
 
