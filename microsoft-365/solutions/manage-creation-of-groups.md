@@ -132,7 +132,7 @@ $settingsCopy["EnableGroupCreation"] = $AllowGroupCreation
 
 if($GroupName)
 {
-  $settingsCopy["GroupCreationAllowedGroupId"] = (Get-MgGroup -SearchString $GroupName).objectid
+  $settingsCopy["GroupCreationAllowedGroupId"] = (Get-MgGroup -Filter "DisplayName eq $GroupName).Id
 } else {
 $settingsCopy["GroupCreationAllowedGroupId"] = $GroupName
 }
