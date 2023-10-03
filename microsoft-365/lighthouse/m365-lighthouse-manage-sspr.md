@@ -36,13 +36,13 @@ The following conditions must be met before a tenant will appear in the list:
 
 ## View SSPR tenant status
 
-- In the left navigation pane in Lighthouse, select **Users** > **Password reset**.
+- In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Users** > **Password reset**.
 
 The Password reset page provides an overview of the tenants that have enabled SSPR through the recommended settings, the number of users who haven't registered for SSPR, and a detailed breakdown by tenant of the SSPR deployment progress across the organizations that you manage.
 
 ## Enable SSPR for a tenant
 
-1. In the left navigation pane in Lighthouse, select **Users** > **Password reset**.
+1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Users** > **Password reset**.
 
 2. On the **Password reset** page, select a tenant from the list to open the details pane.
 
@@ -52,7 +52,7 @@ The Password reset page provides an overview of the tenants that have enabled SS
 
 ## Notify users to register for SSPR
 
-1. In the left navigation pane in Lighthouse, select **Users** > **Password reset**.
+1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Users** > **Password reset**.
 
 2. On the **Password reset** page, select a tenant from the list to open the details pane.
 
