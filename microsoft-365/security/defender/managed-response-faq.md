@@ -1,5 +1,5 @@
 ---
-title: FAQs related to managed response notifications in Microsoft Defender Experts for XDR
+title: FAQs related to Microsoft Defender Experts for XDR managed response
 ms.reviewer:
 description: Frequently asked questions related to managed response notifications
 keywords: managed response, xdr, Xtended detection and response, defender experts for xdr, Microsoft Defender Experts for XDR, managed threat hunting, managed detection and response (MDR) service, service delivery manager, real-time visibility with XDR experts, FAQ's related to XDR
@@ -22,23 +22,25 @@ search.appverid: met150
 ms.date: 10/04/2023
 ---
 
-# FAQ's on managed response notifications
+# Understanding managed response
 
 **Applies to:**
 
 - [Microsoft 365 Defender](microsoft-365-defender.md)
 
+The following section lists down questions you or your SOC team might have regarding [managed response](start-using-mdex-xdr.md#managed-detection-and-response).
+
 | Questions | Answers |
 |---------|---------|
-| **What is Managed Response?** | Defender Experts offers Managed response where we manage the entire remediation process for incidents that require response. This includes investigating the incident to identify the root cause, determine the required response actions and taking those actions on the customer's behalf.|
-| **What actions are in scope for Managed Response?** | All actions that are specific to devices and users are in scope for Managed Response. |
-| **Do we have a list of actions that are supported as a part of Managed Response?** | All device actions found in [machineAction resource](/microsoft-365/security/defender-endpoint/api/machineaction) type and [user actions](/microsoft-365/security/defender-endpoint/api/user) are in scope for Managed Response for any device and user that is not excluded. |
-| **What can customers customize?** | Customers can configure the extent to which Defender Experts will do the Managed Response actions on their behalf. This can be done by excluding certain devices and users (individually or by groups) from Managed Response, either during onboarding or later on via settings. See **insert link** on how to do this. |
-| **What support does Defender Experts (DEX) offer for excluded assets?** | If Defender Experts determine that response actions need to be taken on excluded devices or users, we notify customers in various, customizable, methods and direct them to the Microsoft 365 Defender portal, where they can view a detailed summary of our investigation process and the required response actions, which can be executed in a single click directly from the portal. Identical capabilities are available through Defender APIs, in case the customer prefers to use a SIEM, ITSM, or any other external tool. |
-| **How is the customer informed about the actions?** | Customers are informed in the incident home page via the Managed Response side panel on the actions that Defender Experts completed on their behalf in addition to any pending actions (if any) that they'd have to complete on assets that were excluded. |
-| **Do customers have an option to customize Managed Response based on actions?** | No. If certain devices or users are considered High Value or Sensitive, customers can add them to the exclusion list and Defender Experts will NOT take any actions on them and only offer guidance if they were found to be impacted in an incident.
+| **What is managed response?** | Microsoft Defender Experts for XDR offers **managed response** where our experts manage the entire remediation process for incidents that require them. This process includes investigating the incident to identify the root cause, determining the required response actions, and taking those actions on your behalf.|
+| **What actions are in scope for managed response?** | All actions specific to devices and users that aren't excluded in the Defender Experts for XDR service are in scope for managed response. All device actions are listed in [machineAction resource](/microsoft-365/security/defender-endpoint/api/machineaction), while user actions can be found in the [user resource type page](/microsoft-365/security/defender-endpoint/api/user). |
+| **Can I customize the extent of managed response?** | You can configure the extent to which our experts do managed response actions on your behalf by excluding certain devices and users (individually or by groups) either during onboarding or later by modifying your service's settings. **Read more about excluding device and user groups** |
+| **What support do Defender Experts offer for excluded assets?** | If our experts determine that you need to perform response actions on excluded devices or users, we notify you through various customizable methods and direct you to your Microsoft 365 Defender portal. From your portal, you can then view a detailed summary of our investigation process and the required response actions in the portal, and perform these required actions directly. Similar capabilities are also available through Defender APIs, in case you prefer using a security information and event management (SIEM), IT service management (ITSM), or any other third-party tool. |
+| **How am I going to be informed about the response actions?** | Response actions that our experts have completed on your behalf and any pending ones that you need to perform on your excluded assets are displayed in the **Managed response** panel in your Microsoft 365 Defender portal's **Incidents** page. |
+| **Can I customize managed response based on actions?** | No. If you have devices or users that are considered high-value or sensitive, you can add them to your exclusion list. Our experts will NOT take any action on them and will only provide guidance if they're impacted by an incident.
 
 ### See also
 
-[How Microsoft Defender Experts for XDR permissions work](dex-xdr-permissions.md)
+[Start using Defender Experts for XDR service](start-using-mdex-xdr.md)
+
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
