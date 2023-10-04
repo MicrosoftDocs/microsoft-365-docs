@@ -202,7 +202,7 @@ If the Microsoft Defender for Endpoint installation fails due to missing depende
 
 ### Configuring Exclusions
 
-When adding exclusions to Microsoft Defender Antivirus, you should be mindful of [Common Exclusion Mistakes for Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus)
+When adding exclusions to Microsoft Defender Antivirus, you should be mindful of [Common Exclusion Mistakes for Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus).
 
 ### Network connections
 
