@@ -419,7 +419,7 @@
                 - name: Defender Experts for XDR Incident notifications
                   href: faq-incident-notifications-xdr.md
                 - name: Managed response notifications
-                  href: managed-response-faq.md
+                  href: faq-managed-response.md
               - name: How Defender Experts for XDR permissions work
                 href: dex-xdr-permissions.md
        - name: Ransomware playbooks
