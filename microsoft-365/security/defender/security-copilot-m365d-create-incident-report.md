@@ -39,7 +39,7 @@ ms.date: 10/10/2023
 
 Security operations teams often write incident reports to record important information about an incident, including the summary, the team members who responded to the incident, what and when response actions were done, and follow up tasks recommended. A comprehensive incident report is essential as a reference for security teams and security operations management. However, writing all necessary information for a comprehensive and clear incident report can be time-consuming. Security teams can now instantly create a cohesive incident report within the portal with Security Copilot.
 
-While an [incident summary](security-copilot-m365d-incident-summary.md) is focused in summarizing what the incident is and how it happened, an incident report consolidates information about the response actions taken, including manual and automated response actions and playbooks used, the analysts involved in the response, and the comments from the analysts. Whether security teams are using Microsoft 365 Defender, Microsoft Sentinel, or both, all relevant incident data are added into the generated incident report.
+While an [incident summary](security-copilot-m365d-incident-summary.md) provides an overview of an incident and how it happened, an incident report consolidates information about the response actions taken, including manual and automated response actions and playbooks used, the analysts involved in the response, and the comments from the analysts. Whether security teams are using Microsoft 365 Defender, Microsoft Sentinel, or both, all relevant incident data are added into the generated incident report.
 
 This guide outlines what to expect and how to access the incident report creation capability within the portal, including information on how to provide feedback about the generated report.
 
@@ -74,7 +74,6 @@ To create an incident report, perform the following steps:
 3. The incident report card appears on the Security Copilot pane. The generated report depends on the information available in the incident's comments and history. Refer to the [recommendations](security-copilot-m365d-create-incident-report.md#recommendations-for-incident-report-creation) to ensure a comprehensive incident report.
 :::image type="content" source="../../media/copilot-in-defender/incident-report/fig2-sec-copilot-m365d-create-report.png" alt-text="Incident report card in the incident page" lightbox="../../media/copilot-in-defender/incident-report/fig2-sec-copilot-m365d-create-report.png":::
 4. Select the three dots located on the right side of the incident report card. To copy the report, select **copy to clipboard** and paste the report to your preferred system, or **Post to comments and history** to add the report to the comments and history of the incident. 
-:::image type="content" source="../../media/copilot-in-defender/incident-report/fig3-sec-copilot-m365d-create-report.png" alt-text="User options in the incident report card" lightbox="../../media/copilot-in-defender/incident-report/fig3-sec-copilot-m365d-create-report.png":::
 5. Select **Regenerate** to restart report creation or select **Open in Security Copilot** to see the results in the Security Copilot standalone portal.
 
 ## Managing feedback
