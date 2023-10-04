@@ -319,7 +319,7 @@ After onboarding the device, you can choose to run a detection test to verify th
     > [!NOTE]
     > This verification step is only required if you're using Microsoft Defender Antivirus as your active antimalware solution.
 
-    ```DOS
+    ```cmd
     sc.exe query Windefend
     ```
 
@@ -329,7 +329,7 @@ After onboarding the device, you can choose to run a detection test to verify th
 
 2. Run the following command to verify that Microsoft Defender for Endpoint is running:
 
-    ```DOS
+    ```cmd
     sc.exe query sense
     ```
 
