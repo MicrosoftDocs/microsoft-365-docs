@@ -103,8 +103,8 @@ The following clients are recommended when a secure documents policy has been ap
 
 For more information about client support in Microsoft 365, see the following articles:
 
-- [Microsoft 365 Client App Support - Conditional Access](../../enterprise/microsoft-365-client-support-conditional-access.md)
-- [Microsoft 365 Client App Support - Multi-factor authentication](../../enterprise/microsoft-365-client-support-multi-factor-authentication.md)
+- [Microsoft 365 Client App Support - Conditional Access](/microsoft-365/enterprise/microsoft-365-client-support-conditional-access)
+- [Microsoft 365 Client App Support - Multi-factor authentication](/microsoft-365/enterprise/microsoft-365-client-support-multi-factor-authentication)
 
 ## Protecting administrator accounts
 
@@ -116,7 +116,7 @@ Here are some additional recommendations:
 
 - Use [Azure AD Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-getting-started) to reduce the number of persistent administrative accounts.
 - [Use privileged access management](/purview/privileged-access-management) to protect your organization from breaches that may use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings.
-- Create and use separate accounts that are assigned [Microsoft 365 administrator roles](../../admin/add-users/about-admin-roles.md) *only for administration*. Admins should have their own user account for regular non-administrative use and only use an administrative account when necessary to complete a task associated with their role or job function.
+- Create and use separate accounts that are assigned [Microsoft 365 administrator roles](/microsoft-365/admin/add-users/about-admin-roles) *only for administration*. Admins should have their own user account for regular non-administrative use and only use an administrative account when necessary to complete a task associated with their role or job function.
 - Follow [best practices](/azure/active-directory/roles/best-practices) for securing privileged accounts in Azure AD.
 
 ## Next step

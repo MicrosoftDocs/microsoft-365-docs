@@ -160,7 +160,7 @@ sections:
 
           - **Ensure that proper SPF records are set up in DNS**: SPF records are a mechanism for validating that mail sent from a domain really is coming from that domain and isn't spoofed. For more information about SPF records, see the following links:
             - [Set up SPF to help prevent spoofing](email-authentication-spf-configure.md)
-            - [Domains FAQ](../../admin/setup/domains-faq.yml#how-can-i-validate-spf-records-for-my-domain)
+            - [Domains FAQ](/microsoft-365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
 
           - **Signing email with DKIM, sign with relaxed canonicalization**: If a sender wants to sign their messages using Domain Keys Identified Mail (DKIM) and they want to send outbound mail through the service, they should sign using the relaxed header canonicalization algorithm. Signing with strict header canonicalization may invalidate the signature when it passes through the service.
 

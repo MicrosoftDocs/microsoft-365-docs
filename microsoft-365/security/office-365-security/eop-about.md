@@ -79,7 +79,7 @@ EOP performs load balancing between datacenters but only within a region. If you
 The following communication channels are available for issues and new features in EOP:
 
 - If you're affected by a Service Level Event, you should see a communication alert (typically accompanied by a bell icon) in the Microsoft 365 admin center at <https://admin.microsoft.com>. We recommend that you read and act on any items as appropriate.
-- The Microsoft 365 Message center at <https://admin.microsoft.com/Adminportal/Home?#/MessageCenter> also contains information about new and updated features. For more information, see [Track new and changed features in the Microsoft 365 Message center](../../admin/manage/message-center.md).
+- The Microsoft 365 Message center at <https://admin.microsoft.com/Adminportal/Home?#/MessageCenter> also contains information about new and updated features. For more information, see [Track new and changed features in the Microsoft 365 Message center](/microsoft-365/admin/manage/message-center).
 - The [Microsoft 365 for business roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) is a good resource for finding out information about upcoming new features.
 - We also posting blog articles about new features to the [Microsoft 365 Blogs](https://www.microsoft.com/microsoft-365/blog/) website.
 
@@ -136,5 +136,5 @@ For information about requirements, important limits, and feature availability a
 |Phone and web technical support 24 hours a day, seven days a week|[Get support for Microsoft 365 for business](/microsoft-365/admin/get-help-support).|
 |**Other features**||
 |A geo-redundant global network of servers|EOP runs on a worldwide network of datacenters that are designed to help provide the best availability. For more information, see the [EOP datacenters](#eop-datacenters) section earlier in this article.|
-|Message queuing when the on-premises server can't accept mail|Messages in deferral remain in our queues for one day. Message retry attempts are based on the error we get back from the recipient's mail system. On average, messages are retried every 5 minutes. For more information, see [EOP queued, deferred, and bounced messages FAQ](mail-flow-delivery-faq.yml).|
+|Message queuing when the on-premises server can't accept mail|Messages in deferral remain in our queues for one day. Message retry attempts are based on the error we get back from the recipient's mail system. On average, messages are retried every 5 minutes. For more information, see the [Mail flow delivery FAQ](mail-flow-about.md#mail-flow-delivery-faq).|
 |Office 365 Message Encryption available as an add-on|For more information, see [Encryption in Office 365](/purview/encryption).|

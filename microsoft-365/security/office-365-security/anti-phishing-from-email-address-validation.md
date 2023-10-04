@@ -102,7 +102,7 @@ For the null MX record, choose an email domain that can't receive email. For exa
 noreply.contoso.com IN MX .
 ```
 
-For more information about setting up MX records, see [Create DNS records at any DNS hosting provider for Microsoft 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
+For more information about setting up MX records, see [Create DNS records at any DNS hosting provider for Microsoft 365](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
 For more information about publishing a null MX, see [RFC 7505](https://tools.ietf.org/html/rfc7505).
 
@@ -114,4 +114,4 @@ You can't override the From address requirements for outbound email that you sen
 
 ## Other ways to prevent and protect against cybercrimes in Microsoft 365
 
-For more information on how to strengthen your organization against phishing, spam, data breaches, and other threats, see [Best practices for securing Microsoft 365 for business plans](../../business-premium/secure-your-business-data.md).
+For more information on how to strengthen your organization against phishing, spam, data breaches, and other threats, see [Best practices for securing Microsoft 365 for business plans](/microsoft-365/business-premium/secure-your-business-data).

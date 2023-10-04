@@ -84,7 +84,7 @@ Do **all** of the following steps to regain control of the account. Go through t
 
 ### Step 1: Reset the user's password
 
-Follow the procedures in [Reset a business password for someone](../../admin/add-users/reset-passwords.md#reset-my-admin-password).
+Follow the procedures in [Reset a business password for someone](/microsoft-365/admin/add-users/reset-passwords#reset-my-admin-password).
 
 > [!IMPORTANT]
 >
@@ -98,7 +98,7 @@ Follow the procedures in [Reset a business password for someone](../../admin/add
 >
 > - Be sure to update app passwords. App passwords aren't automatically revoked when you reset the password. The user should delete existing app passwords and create new ones. For instructions, see [Create and delete app passwords from the Additional security verification page](/azure/active-directory/user-help/multi-factor-authentication-end-user-app-passwords#create-and-delete-app-passwords-from-the-additional-security-verification-page).
 >
-> - We highly recommended that you enable multi-factor authentication (MFA) for the account. MFA is a good way to help prevent account compromise, and is very important for accounts with administrative privileges. For instructions, see [Set up multi-factor authentication](../../admin/security-and-compliance/set-up-multi-factor-authentication.md).
+> - We highly recommended that you enable multi-factor authentication (MFA) for the account. MFA is a good way to help prevent account compromise, and is very important for accounts with administrative privileges. For instructions, see [Set up multi-factor authentication](/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication).
 
 ### Step 2: Remove suspicious email forwarding addresses
 

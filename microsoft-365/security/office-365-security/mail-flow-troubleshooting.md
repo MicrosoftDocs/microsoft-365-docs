@@ -79,7 +79,7 @@ After we evaluate the messages and determine everything is OK, we remove the res
 
 ## I can't receive email from senders in Microsoft 365
 
-To receive messages from Microsoft 365 senders, make sure your network allows connections from the IP addresses that EOP uses in our datacenters. For more information, see [Exchange Online Protection IP addresses](../../enterprise/urls-and-ip-address-ranges.md).
+To receive messages from Microsoft 365 senders, make sure your network allows connections from the IP addresses that EOP uses in our datacenters. For more information, see [Exchange Online Protection IP addresses](/microsoft-365/enterprise/urls-and-ip-address-ranges).
 
 ## Best practices for bulk emailing to Microsoft 365 users
 

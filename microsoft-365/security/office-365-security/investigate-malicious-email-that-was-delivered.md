@@ -41,7 +41,7 @@ appliesto:
 
 Make sure that the following requirements are met:
 
-- Your organization has [Microsoft Defender for Office 365](defender-for-office-365.md) and [licenses are assigned to users](../../admin/manage/assign-licenses-to-users.md).
+- Your organization has [Microsoft Defender for Office 365](defender-for-office-365.md) and [licenses are assigned to users](/microsoft-365/admin/manage/assign-licenses-to-users).
 
 - [Audit logging](/purview/audit-log-enable-disable) is turned on for your organization (it's on by default).
 

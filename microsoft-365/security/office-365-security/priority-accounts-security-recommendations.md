@@ -57,7 +57,7 @@ Microsoft 365 and Microsoft Defender for Office 365 contain several key features
 
 Priority accounts require increased sign-in security. You can increase their sign-in security by requiring multi-factor authentication (MFA) and disabling legacy authentication protocols.
 
-For instructions, see [Step 1. Increase sign-in security for remote workers with MFA](../../solutions/empower-people-to-work-remotely-secure-sign-in.md). Although this article is about remote workers, the same concepts apply to priority users.
+For instructions, see [Step 1. Increase sign-in security for remote workers with MFA](/microsoft-365/solutions/empower-people-to-work-remotely-secure-sign-in). Although this article is about remote workers, the same concepts apply to priority users.
 
 **Note**: We strongly recommend that you globally disable legacy authentication protocols for all priority users as described in the previous article. If your business requirements prevent you from doing so, Exchange Online offers the following controls to help limit the scope of legacy authentication protocols:
 
@@ -85,7 +85,7 @@ For details about how the Strict policy settings differ from the default and Sta
 
 User tags in Microsoft Defender for Office 365 Plan 2 (as part of Microsoft 365 E5 or an add-on subscription) are a way to quickly identify and classify specific users or groups of users in reports and incident investigations.
 
-**Priority accounts** is a type of built-in user tag (known as a _system tag_) that you can use to identify incidents and alerts that involve priority accounts. For more information about **priority accounts**, see [Manage and monitor priority accounts](../../admin/setup/priority-accounts.md).
+**Priority accounts** is a type of built-in user tag (known as a _system tag_) that you can use to identify incidents and alerts that involve priority accounts. For more information about **priority accounts**, see [Manage and monitor priority accounts](/microsoft-365/admin/setup/priority-accounts).
 
 You can also create custom tags to further identify and classify your priority accounts. For more information, see [User tags](user-tags-about.md). You can manage **priority accounts** (system tags) in the same interface as custom user tags.
 
@@ -134,5 +134,5 @@ In addition, Microsoft recommends that users take the actions described in this 
 
 - [User tags in Microsoft Defender for Office 365](user-tags-about.md)
 - [Configure and review priority accounts](protection-stack-microsoft-defender-for-office365.md)
-- [Manage and monitor priority accounts](../../admin/setup/priority-accounts.md)
+- [Manage and monitor priority accounts](/microsoft-365/admin/setup/priority-accounts)
 - [Announcing Priority Account Protection in Microsoft Defender for Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/announcing-priority-account-protection-in-microsoft-defender-for/ba-p/1696385)

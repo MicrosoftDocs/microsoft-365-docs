@@ -125,7 +125,7 @@ The **Zero Trust identity and device protection for Microsoft 365** architecture
 
 -->
 
-Additionally, see the [Deploy information protection for data privacy regulations](../../solutions/information-protection-deploy.md) solution to protect information stored in Microsoft 365.
+Additionally, see the [Deploy information protection for data privacy regulations](/microsoft-365/solutions/information-protection-deploy) solution to protect information stored in Microsoft 365.
 
 ## Security and productivity trade-offs
 
