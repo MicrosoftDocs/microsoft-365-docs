@@ -47,9 +47,10 @@ To turn Bookings on or off for your organization using the PowerShell cmdlet [Se
 
 Use the settings below to control who can use Bookings, decide on what Bookings information is shared, whether staff need approval before they can be added to a Booking calendar, and enforce naming policy.
 
-It should be noted that changes to all tenant settings, such as "block bookings from outside the organization" or "require staff approvals," may take up to 30 minutes to apply.
-
 :::image type="content" source="../media/bookings-granular-controls.png" alt-text="Screenshot of settings that allow you to control who can use Bookings, decide what Bookings info is shared, staff approval, and naming policy.":::
+
+>[!NOTE]
+> Changes to all tenant settings, such as "block bookings from outside the organization" or "require staff approvals," may take up to 30 minutes to apply.
 
 ### Block bookings from outside your organization
 
