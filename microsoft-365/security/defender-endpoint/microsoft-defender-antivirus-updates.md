@@ -105,11 +105,11 @@ All our updates contain
 ### What's new
 
 - Fixed automatic remediation during on demand scans involving archives with multiple threats
-- Improved the performace of scanning files on network locations
+- Improved the performance of scanning files on network locations
 - Added support for domain computer SID for Device Control policies
 - Improved installer of Unified Agent to include legacy version of Server 2012 (6.3.9600.17735)
-- Fixed issue in Device Control when querying AAD group membership which resulted in increased network traffic.
-- Improved parsing of ASR exclusions in the antimalware engine
+- Fixed issue in Device Control when querying Azure AD group membership, which resulted in increased network traffic.
+- Improved parsing of attack surface reduction exclusions in the antimalware engine
 - Improved reliability in scanning PE files
 - Improved deployments safeguards for Security Intelligence Updates
 
