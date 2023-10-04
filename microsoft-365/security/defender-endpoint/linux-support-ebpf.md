@@ -75,15 +75,7 @@ sudo mdatp config ebpf-supplementary-event-provider --value [enabled/disabled]
 
 > [!IMPORTANT]
 > If you disable eBPF, the supplementary event provider switches back to auditd.
-
-### Troubleshooting and diagnostics
-
-You can check the agent health status by running the **mdatp** health command. Make sure that the eBPF sensor for Defender for Endpoint on Linux is supported by checking the current kernel version by using the following command line:
-
-```bash
-uname -a
-```
-
+>
 > [!NOTE]
 > For customers using auditd in immutable mode, a reboot is required post enablement of eBPF in order to clear the audit rules file. This is a limitation in immutable mode of auditd which freezes the rules file and prohibits editing/overwriting. This is resolved with the reboot.
 > Post reboot, run the below command to check if audit rules got cleared.
@@ -94,6 +86,14 @@ uname -a
 > 1. Switch to ebpf mode
 > 2. Remove the file /etc/audit/rules.d/mdatp.rules
 > 3. Reboot the machine
+
+### Troubleshooting and diagnostics
+
+You can check the agent health status by running the **mdatp** health command. Make sure that the eBPF sensor for Defender for Endpoint on Linux is supported by checking the current kernel version by using the following command line:
+
+```bash
+uname -a
+```
 >
 
 The following two sets of data help analyze potential issues and determine the most effective resolution options.
