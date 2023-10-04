@@ -80,7 +80,7 @@ Mail flow reports and insights are available in the Exchange admin center (EAC).
 
 For information about ransomware protection, see the following articles:
 
-- [Protect against ransomware](../../business-premium/secure-your-business-data.md)
+- [Protect against ransomware](/microsoft-365/business-premium/secure-your-business-data)
 - [Malware and Ransomware Protection in Microsoft 365](/compliance/assurance/assurance-malware-and-ransomware-protection)
 - [Ransomware incident response playbooks](/security/ransomware/)
 

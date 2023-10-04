@@ -39,7 +39,7 @@ Microsoft uses these user reported messages to improve the effectiveness of emai
 
 The Report Message add-in provides the option to report both spam and phishing messages. The Report Phishing add-in provides the option to report phishing messages only.
 
-Admins can install and enable the add-ins for the organization. Both add-ins are available through [Centralized Deployment](../../admin/manage/centralized-deployment-of-add-ins.md). Individual users can install the add-ins for themselves.
+Admins can install and enable the add-ins for the organization. Both add-ins are available through [Centralized Deployment](/microsoft-365/admin/manage/centralized-deployment-of-add-ins). Individual users can install the add-ins for themselves.
 
 After the add-in is installed and enabled, users see the following icons based on their Outlook client:
 
@@ -80,11 +80,11 @@ After the add-in is installed and enabled, users see the following icons based o
 ## What do you need to know before you begin?
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-  - [Email & collaboration RBAC in the Microsoft 365 Defender portal](mdo-portal-permissions.md): Membership in the **Organization Management** role group.
-  - [Exchange Online RBAC](/Exchange/permissions-exo/permissions-exo): Membership in the **Organization Management** role group.
-  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator** role gives users the required permissions _and_ permissions for other features in Microsoft 365.
+  - [Email & collaboration permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md): Membership in the **Organization Management** role group.
+  - [Exchange Online permissions](/Exchange/permissions-exo/permissions-exo): Membership in the **Organization Management** role group.
+  - [Azure AD permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator** role gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
-- For organizational installs, the organization needs to be configured to use OAuth authentication. For more information, see [Determine if Centralized Deployment of add-ins works for your organization](../../admin/manage/centralized-deployment-of-add-ins.md).
+- For organizational installs, the organization needs to be configured to use OAuth authentication. For more information, see [Determine if Centralized Deployment of add-ins works for your organization](/microsoft-365/admin/manage/centralized-deployment-of-add-ins).
 
 - The Report Message and Report Phishing add-ins work with most Microsoft 365 subscriptions and the following products:
   - Outlook on the web
