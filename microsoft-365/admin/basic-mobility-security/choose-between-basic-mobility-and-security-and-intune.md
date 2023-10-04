@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 08/31/2020
+ms.date: 09/21/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -19,8 +19,6 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
-search.appverid:
-- MET150
 description: "Basic Mobility and Security is part of the Microsoft 365 plans, while Microsoft Intune is a standalone product included with certain Microsoft 365 plans."
 ---
 
@@ -28,7 +26,7 @@ description: "Basic Mobility and Security is part of the Microsoft 365 plans, wh
 
 [Microsoft Intune](/mem/intune/) is a standalone product included with certain Microsoft 365 plans, while Basic Mobility and Security is part of the Microsoft 365 plans.
 
- ## Availability of Basic Mobility and Security and Intune
+## Availability of Basic Mobility and Security and Intune
 
 Both Basic Mobility and Security and Intune are included in various plans, described in the following table.
 
