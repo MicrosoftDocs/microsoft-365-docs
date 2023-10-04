@@ -3,7 +3,7 @@ title: Microsoft Defender Antivirus security intelligence and product updates
 description: Manage how Microsoft Defender Antivirus receives protection and product updates.
 ms.service: microsoft-365-security
 ms.localizationpriority: high
-ms.date: 08/30/2023
+ms.date: 10/04/2023
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -94,6 +94,25 @@ All our updates contain
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 
+### September-2023 (Platform: 4.18.23090.2008 | Engine: 1.1.23090.2007)
+ 
+- Security intelligence update version: **x.x.x.x**
+- Release date:  **October 3, 2023 (Engine) / October 4, 2023 (Platform)**
+- Platform: **4.18.23090.2008**
+- Engine: **1.1.23090.2007**
+- Support phase: **Security and Critical Updates**
+ 
+### What's new
+	• Fixed automatic remediation during on demand scans involving archives with multiple threats
+	• Improved the performace of scanning files on network locations
+	• Added support for domain computer SID for Device Control policies
+	• Improved installer of Unified Agent to include legacy version of Server 2012 (6.3.9600.17735)
+	• Fixed issue in Device Control when querying AAD group membership which resulted in increased network traffic.
+	• Improved parsing of ASR exclusions in the antimalware engine
+	• Improved reliability in scanning PE files
+	• Improved deployments safeguards for Security Intelligence Updates
+
+
 ### August-2023 (Platform: 4.18.23080.2006 | Engine: 1.1.23080.2005)
 
 - Security intelligence update version: **1.397.59.0**
@@ -148,56 +167,6 @@ All our updates contain
 ### Known issues
  
 - None
-
-### May-2023 *UPDATE* (Platform: 4.18.23050.9)
-
-*Microsoft has released a platform update (**4.18.23050.9**) for the May 2023 release.*
-
-- Security intelligence update version: **1.393.1315.0**
-- Released: **July 24, 2023 (Platform only)**
-- Platform: **4.18.23050.9**
-- Engine: **1.1.23060.1005**
-- Support phase: **Security and Critical Updates**
-
-#### What's new
-
-- Fixed a regression where HTTP requests were being handled sequentially, causing high latency for [network protection](network-protection.md) scenarios
-- Fixed a bug where DNS requests with empty authority records were being improperly parsed
-
-### June-2023 (Engine: 1.1.23060.1005)
-
-- Security intelligence update version: **1.393.71.0**
-- Released:  **July 10, 2023 (Engine only)** 
-- Engine: **1.1.23060.1005**
-- Support phase: **Security and Critical Updates**
-   
-#### What's new  
-
-- Fixed an issue with [ASR rules deployed via Intune](/mem/intune/protect/endpoint-security-asr-policy) to display accurately in the Microsoft 365 Defender portal
-- Fixed a performance issue when building and validating the Microsoft Defender Antivirus cache
-- Improved performance by removing redundant exclusion checks
- 
-#### Known Issues  
-
-- See [May-2023 *UPDATE* (Platform: 4.18.23050.9 | Engine: 1.1.23060.1005)](#may-2023-update-platform-418230509) for platform updates.
-
-### May-2023 *UPDATE* (Platform: 4.18.23050.5 | Engine:  1.1.23050.2)
-
-*Microsoft released a platform update (**4.18.23050.5**) for the May 2023 release, followed by [an additional update](#may-2023-update-platform-418230509).*
-
-- Security intelligence update version: **1.391.860.0**
-- Released: **June 12, 2023**
-- Platform: **4.18.23050.5**
-- Engine: **1.1.23050.2**
-- Support phase: **Security and Critical Updates**
-   
-#### What's new  
-
-- Fixed issue that could lead to resolution of incorrect service endpoint
-  
-#### Known Issues  
-
-- Users encounter slow loading webpages in non-Microsoft web browsers with [web content filtering](/microsoft-365/security/defender-endpoint/web-content-filtering) enabled
 
 
 ### Previous version updates: Technical upgrade support only
