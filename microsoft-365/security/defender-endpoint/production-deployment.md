@@ -125,9 +125,7 @@ The policy sets two registry values `TelemetryProxyServer` as REG_SZ and `Disabl
 
 The registry value `TelemetryProxyServer` takes the following string format:
 
-```text
-<server name or ip>:<port>
-```
+`<server name or ip>:<port>`
 
 For example: 10.0.0.6:8080
 
