@@ -241,7 +241,7 @@ The information in the list of proxy and firewall configuration information is r
 
 4. Check the Microsoft Defender for Endpoint URLs list for the complete list of requirements for your region (refer to the Service URLs [Spreadsheet](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls-commercial.xlsx)).
 
-   :::image type="content" source="../../media/defender-endpoint/admin-powershell.png" alt-text="This is admin powershell.":::
+   :::image type="content" alt-text="This is admin powershell." source="../../media/defender-endpoint/admin-powershell.png" lightbox="../../media/defender-endpoint/admin-powershell.png":::
 
 The wildcards (\*) used in \*.ods.opinsights.azure.com, \*.oms.opinsights.azure.com, and \*.agentsvc.azure-automation.net URL endpoints can be replaced with your specific Workspace ID. The Workspace ID is specific to your environment and workspace. It can be found in the Onboarding section of your tenant within the Microsoft 365 Defender portal.
 
