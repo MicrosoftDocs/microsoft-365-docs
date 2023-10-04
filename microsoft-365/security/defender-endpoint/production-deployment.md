@@ -146,7 +146,7 @@ Use netsh to configure a system-wide static proxy.
 
 2. Enter the following command and press **Enter**:
 
-   ```PowerShell
+   ```cmd
    netsh winhttp set proxy <proxy>:<port>
    ```
 
