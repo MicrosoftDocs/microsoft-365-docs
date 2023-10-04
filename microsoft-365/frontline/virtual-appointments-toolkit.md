@@ -1,7 +1,7 @@
 ---
 title: Help your clients and customers use virtual appointments scheduled with the Bookings app in Teams
 author: lana-chin
-ms.author: heidip
+ms.author: v-chinlana
 manager: serdars
 audience: ITPro
 ms.topic: end-user-help 
