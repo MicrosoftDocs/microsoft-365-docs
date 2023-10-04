@@ -419,9 +419,9 @@
                 - name: Defender Experts for XDR Incident notifications
                   href: faq-incident-notifications-xdr.md
                 - name: Managed response notifications
-                  href: faq-incident-notifications-xdr.md
-                - name: How Defender Experts for XDR permissions work
                   href: managed-response-faq.md
+              - name: How Defender Experts for XDR permissions work
+                href: dex-xdr-permissions.md
        - name: Ransomware playbooks
          items: 
               - name: Detecting human-operated ransomware attacks with Microsoft 365 Defender
