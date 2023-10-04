@@ -103,7 +103,9 @@ The static proxy is configurable through group policy (GP), both the settings un
 >
 > The following command can be used to insert the registry value in the correct location:
 >
-> ```reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection" /v PreferStaticProxyForHttpRequest /t REG_DWORD /d 1 /f```
+> ```console
+> reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection" /v PreferStaticProxyForHttpRequest /t REG_DWORD /d 1 /f
+> ```
 >
 > The above registry value is applicable only starting with MsSense.exe version 10.8210.* and later, or version 10.8049.* and later.
 
