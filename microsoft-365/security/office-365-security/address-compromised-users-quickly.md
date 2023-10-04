@@ -64,7 +64,7 @@ You have a few options for navigating to a list of restricted users. For example
 
    :::image type="content" source="../../media/m365-sc-alerts-page-with-restricted-user.png" alt-text="The Alerts page in the Microsoft 365 Defender portal filtered for restricted users" lightbox="../../media/m365-sc-alerts-page-with-restricted-user.png":::
 
-3. If you select the entry by clicking on the name, a **User restricted from sending email** page opens with additional details for you to review. Next to the **Manage alert** button, you can click ![More options icon.](../../media/m365-cc-sc-more-actions-icon.png) **More options** and then select **View restricted user details** to go to the **Restricted users** page, where you can [release the restricted user](removing-user-from-restricted-users-portal-after-spam.md).
+3. If you select the entry by clicking on the name, a **User restricted from sending email** page opens with additional details for you to review. Next to the **Manage alert** button, you can click :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More options** and then select **View restricted user details** to go to the **Restricted users** page, where you can [release the restricted user](removing-user-from-restricted-users-portal-after-spam.md).
 
   :::image type="content" source="../../media/m365-sc-alerts-user-restricted-from-sending-email-page.png" alt-text="The User restricted from sending email page" lightbox="../../media/m365-sc-alerts-user-restricted-from-sending-email-page.png":::
 

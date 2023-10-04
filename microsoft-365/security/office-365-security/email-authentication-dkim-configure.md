@@ -69,7 +69,7 @@ In basic, a private key encrypts the header in a domain's outgoing email. The pu
 
 SPF adds information to a message envelope but DKIM *encrypts* a signature within the message header. When you forward a message, portions of that message's envelope can be stripped away by the forwarding server. Since the digital signature stays with the email message because it's part of the email header, DKIM works even when a message has been forwarded as shown in the following example.
 
-![Diagram showing a forwarded message passing DKIM authentication where the SPF check fails.](../../media/28f93b4c-97e7-4309-acc4-fd0d2e0e3377.jpg)
+:::image type="content" source="../../media/28f93b4c-97e7-4309-acc4-fd0d2e0e3377.jpg" alt-text="Diagram showing a forwarded message passing DKIM authentication where the SPF check fails." lightbox="../../media/28f93b4c-97e7-4309-acc4-fd0d2e0e3377.jpg":::
 
 In this example, if you had only published an SPF TXT record for your domain, the recipient's mail server could have marked your email as spam and generated a false positive result. **The addition of DKIM in this scenario reduces *false positive* spam reporting.** Because DKIM relies on public key cryptography to authenticate and not just IP addresses, DKIM is considered a much stronger form of authentication than SPF. We recommend using both SPF and DKIM, as well as DMARC in your deployment.
 
@@ -233,7 +233,7 @@ Once you have published the CNAME records in DNS, you are ready to enable DKIM s
 
 2. On the **DKIM** page, select the domain by clicking on the name.
 
-3. In the details flyout that appears, change the **Sign messages for this domain with DKIM signatures** setting to **Enabled** (![Toggle on.](../../media/scc-toggle-on.png))
+3. In the details flyout that appears, change the **Sign messages for this domain with DKIM signatures** setting to **Enabled** (:::image type="icon" source="../../media/scc-toggle-on.png" border="false":::).
 
    When you're finished, click **Rotate DKIM keys**.
 

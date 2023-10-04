@@ -196,17 +196,17 @@ For more information about the recommended settings for Safe Attachments, see [S
 1. Open the **Safe Attachments** page in the Microsoft 365 Defender portal at <https://security.microsoft.com/safeattachmentv2>.
 
 2. On the **Safe Attachments** page, select **Global settings**, and then configure the following settings on the flyout that appears:
-   - **Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams**: Turn on this setting (![Toggle on.](../../media/scc-toggle-on.png)).
+   - **Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams**: Turn on this setting (:::image type="icon" source="../../media/scc-toggle-on.png" border="false":::).
 
      > [!IMPORTANT]
      > **Before you turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams, verify that audit logging is turned in your organization** (it's on by default). To verify that audit logging is turned on or to turn it on, see [Turn auditing on or off](/purview/audit-log-enable-disable).
 
-   - **Turn on Safe Documents for Office clients**: Turn on this setting (![Toggle on.](../../media/scc-toggle-on.png)). Note that this feature is available and meaningful only with the required types of licenses. For more information, see [Safe Documents in Microsoft 365 E5](safe-documents-in-e5-plus-security-about.md).
-   - **Allow people to click through Protected View even if Safe Documents identified the file as malicious**: Verify this setting is turned off (![Toggle off.](../../media/scc-toggle-off.png)).
+   - **Turn on Safe Documents for Office clients**: Turn on this setting (:::image type="icon" source="../../media/scc-toggle-on.png" border="false":::). Note that this feature is available and meaningful only with the required types of licenses. For more information, see [Safe Documents in Microsoft 365 E5](safe-documents-in-e5-plus-security-about.md).
+   - **Allow people to click through Protected View even if Safe Documents identified the file as malicious**: Verify this setting is turned off (:::image type="icon" source="../../media/scc-toggle-off.png" border="false":::).
 
    When you're finished, select **Save**
 
-3. Back on the **Safe Attachments** page, select ![Create icon.](../../media/m365-cc-sc-create-icon.png).
+3. Back on the **Safe Attachments** page, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false":::.
 
 4. In the **Create Safe Attachments policy** wizard that opens, configure the following settings:
    - **Name your policy** page:
@@ -236,7 +236,7 @@ For detailed instructions for configuring Safe Attachments policies and global s
 
 For more information about the recommended settings for Safe Links, see [Safe Links policy settings](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings).
 
-1. Open the **Safe Links** page in the Microsoft 365 Defender portal at <https://security.microsoft.com/safelinksv2>, and then select ![Create icon.](../../media/m365-cc-sc-create-icon.png).
+1. Open the **Safe Links** page in the Microsoft 365 Defender portal at <https://security.microsoft.com/safelinksv2>, and then select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false":::.
 
 2. In the **Create Safe Links policy** wizard that opens, configure the following settings:
    - **Name your policy** page:

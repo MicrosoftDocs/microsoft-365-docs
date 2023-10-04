@@ -72,7 +72,7 @@ There are four different ways to find and take auto investigation actions:
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to the **Threat investigation** page at **Email & collaboration** \> **Investigations**. To go directly to the **Threat investigation** page, use <https://security.microsoft.com/airinvestigation>.
 2. On the **Threat investigation** page, find and an item from the list whose status is **Pending action**.
-3. Click ![Open in new window icon.](../../media/m365-cc-sc-open-icon.png) **Open in new window** on the list time (between **ID** and **Status**).
+3. Click :::image type="icon" source="../../media/m365-cc-sc-open-icon.png" border="false"::: **Open in new window** on the list time (between **ID** and **Status**).
 4. In the page that opens, take approve or reject actions.
 
 ## Change or undo one remediation action

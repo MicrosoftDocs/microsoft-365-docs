@@ -112,7 +112,7 @@ After the file opens, there are a few visual indicators that signal that the fil
 
 - The application icon with a shield in the taskbar
 
-  ![Icon in taskbar.](../../media/ag12-limitations.png)
+  :::image type="icon" source="../../media/ag12-limitations.png" border="false":::
 
 ## Configure Application Guard for Office
 

@@ -60,8 +60,7 @@ Once emails are selected through Explorer, you can start remediation by taking d
 
 **Automated investigation and response** actions are triggered by alerts or by security operations teams from Explorer. These may include recommended remediation actions that must be approved by a security operations team. These actions are included on the **Action** tab in the automated investigation.
 
-> [!div class="mx-imgBorder"]
-> [![Mail with malware in "Zapped" page showing time of Zap execution.](../../media/tp-RemediationArticle3.png)](../../media/tp-RemediationArticle3.png#lightbox)
+:::image type="content" source="../../media/tp-RemediationArticle3.png" alt-text="Email with malware in "Zapped" page showing time of ZAP execution." lightbox="../../media/tp-RemediationArticle3.png":::
 
 All remediation (direct approvals) created in Explorer, Advanced hunting, or through Automated investigation are displayed in the Action center at **Actions & Submissions** \> **Action center** \> **History** tab (<https://security.microsoft.com/action-center/history>).
 
