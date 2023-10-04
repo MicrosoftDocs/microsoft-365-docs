@@ -127,7 +127,7 @@ Configure the static proxy using the Group Policy available in Administrative Te
 
    The registry value `ProxyServer` takes the following string format:
 
-    ```text
+    ```console
     <server name or ip>:<port>
 
     For example: http://10.0.0.6:8080
@@ -171,7 +171,7 @@ Use netsh to configure a system-wide static proxy.
 
 2. Enter the following command and press **Enter**:
 
-   ```command prompt
+   ```cmd
    netsh winhttp set proxy <proxy>:<port>
    ```
 
@@ -179,7 +179,7 @@ Use netsh to configure a system-wide static proxy.
 
 To reset the winhttp proxy, enter the following command and press **Enter**:
 
-```command prompt
+```cmd
 netsh winhttp reset proxy
 ```
 
@@ -268,13 +268,13 @@ Verify, the proxy configuration is completed successfully. The WinHTTP can then 
 
 4. Enter the following command and press **Enter**:
 
-    ```command prompt
+    ```cmd
     HardDrivePath\MDEClientAnalyzer.cmd
     ```
 
     Replace *HardDrivePath* with the path, where the MDEClientAnalyzer tool was downloaded. For example:
 
-    ```command prompt
+    ```cmd
     C:\Work\tools\MDEClientAnalyzer\MDEClientAnalyzer.cmd
     ```
 
@@ -284,7 +284,7 @@ Verify, the proxy configuration is completed successfully. The WinHTTP can then 
 
    The tool checks the connectivity of Defender for Endpoint service URLs. Ensure the Defender for Endpoint client is configured to interact. The tool will print the results in the *MDEClientAnalyzerResult.txt* file for each URL that can potentially be used to communicate with the Defender for Endpoint services. For example:
 
-   ```text
+   ```console
    Testing URL : https://xxx.microsoft.com/xxx
    1 - Default proxy: Succeeded (200)
    2 - Proxy auto discovery (WPAD): Succeeded (200)
