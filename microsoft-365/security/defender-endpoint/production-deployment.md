@@ -164,7 +164,6 @@ If a proxy or firewall is blocking anonymous traffic, as Microsoft Defender for 
 
 The following downloadable spreadsheet lists the services and their associated URLs that your network must be able to connect to. Ensure there are no firewall or network filtering rules that would deny access to these URLs, or you may need to create an *allow* rule specifically for them.
 
-<br>
 
 ****
 
