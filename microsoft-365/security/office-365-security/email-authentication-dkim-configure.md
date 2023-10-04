@@ -221,7 +221,7 @@ TTL:                3600
 ```
 
 > [!NOTE]
-> It’s important to create CNAME records for both the selectors in the DNS , but only one (active) selector is published with Public key at the time of creation. This is expected behaviour and doesn’t affect DKIM signing for your custom domains. The second selector will be published with public key upon any further key rotation in future and it becomes active.
+> It's important to create CNAME records for both the selectors in the DNS , but only one (active) selector is published with Public key at the time of creation. This is expected behaviour and doesn’t affect DKIM signing for your custom domains. The second selector will be published with public key upon any further key rotation in future and it becomes active.
 
 ### Steps to enable DKIM signing for your custom domain using powershell
 <a name="EnableDKIMinO365"> </a>
