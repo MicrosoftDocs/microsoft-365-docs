@@ -74,23 +74,21 @@ Security teams who use advanced hunting to proactively hunt for threats in their
 
 ### Write incident reports efficiently
 
-Security operations teams usually write reports to document an attack, the steps taken, investigation results, and other information that need to be recorded to aid future security decisions and learning. Oftentimes, documenting incidents can be time-consuming and needs to have all important information about the incident to be effective. Security Copilot [creates incident reports](security-copilot-m365d-create-incident-report.md), capturing important incident details and speeds up the documenting process.
+Security operations teams usually write reports to record important information, including what response actions were taken and the corresponding results, the team members involved, and other information to aid future security decisions and learning. Oftentimes, documenting incidents can be time-consuming. For incident reports to be effective, it must contain an incident's summary along with the actions taken. Security Copilot helps security teams consolidate these information pieces through the [create incident report](security-copilot-m365d-create-incident-report.md) feature.
 
 :::image type="content" source="../../media/copilot-in-defender/first-run/fig5-sec-copilot-m365d-first-run.png" alt-text="Incident report results in the Security Copilot pane as seen in the Microsoft 365 Defender incident page" lightbox="../../media/copilot-in-defender/first-run/fig5-sec-copilot-m365d-first-run.png":::
 
 ## Providing feedback
 
-Security Copilot and Microsoft 365 Defender uses AI and machine learning to process data and generate responses for each of the key features. However, these generated responses might be inaccurate or incomplete. You can validate or report the generated responses. Providing your feedback about the responses enable both Security Copilot and Microsoft 365 Defender to continuously improve delivery of more accurate responses in the future.
+Security Copilot and Microsoft 365 Defender uses AI and machine learning to process data and generate responses for each of the key features. However, AI might misinterpret some data, which sometimes cause a mismatch in responses. Providing your feedback about the generated responses enable both Security Copilot and Microsoft 365 Defender to continuously improve delivery of more accurate responses in the future.
 
 All key features have an option for providing feedback. To provide feedback, perform the following steps:
 
-1. Select the down arrow beside the face icon located at the bottom of a card in the Security Copilot pane.
+1. Select the down arrow beside the face icon located at the bottom of any response card in the Security Copilot pane.
 :::image type="content" source="../../media/copilot-in-defender/first-run/fig6-sec-copilot-m365d-first-run.png" alt-text="Highlighting the icon for feedback options for Security Copilot results" lightbox="../../media/copilot-in-defender/first-run/fig6-sec-copilot-m365d-first-run.png":::
-2. From the options, select your feedback.
-:::image type="content" source="../../media/copilot-in-defender/first-run/fig7-sec-copilot-m365d-first-run.png" alt-text="Highlighting the feedback options for Security Copilot results" lightbox="../../media/copilot-in-defender/first-run/fig7-sec-copilot-m365d-first-run.png":::
-3. Select **Confirmed, it looks great** if the results are accurate based on your assessment. When results are confirmed, you can provide more information in the next dialog box.
-4. Select **Off-target, inaccurate** if any detail is incorrect or incomplete based on your assessment. You can provide more information about your assessment in the next dialog box and submit this assessment to Microsoft.
-5. You can also report the results if it contains questionable or ambiguous information by selecting **Potentially harmful, inappropriate**. Provide more information about the results in the next dialog box and select Submit.
+2. Select **Confirmed, it looks great** if the results are accurate based on your assessment. When results are confirmed, you can provide more information in the next dialog box.
+3. Select **Off-target, inaccurate** if any detail is incorrect or incomplete based on your assessment. You can provide more information about your assessment in the next dialog box and submit this assessment to Microsoft.
+4. You can also report the results if it contains questionable or ambiguous information by selecting **Potentially harmful, inappropriate**. Provide more information about the results in the next dialog box and select Submit.
 
 ## Microsoft 365 Defender plugin in Security Copilot
 
