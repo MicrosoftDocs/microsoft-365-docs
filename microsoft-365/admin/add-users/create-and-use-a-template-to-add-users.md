@@ -2,8 +2,8 @@
 title: "Create and use a template to add users"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: efrene
+author: efrene
 manager: scotv
 ms.date: 02/18/2020
 audience: Admin
