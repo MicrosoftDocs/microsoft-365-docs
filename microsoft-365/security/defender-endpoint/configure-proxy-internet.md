@@ -189,7 +189,7 @@ By default, if a proxy or firewall is blocking all traffic by default and allowi
 
 The following downloadable spreadsheet lists the services and their associated URLs that your network must be able to connect. Ensure there are no firewall or network filtering rules to deny access for these URLs. Optional, you may need to create an *allow* rule specifically for them.
 
-<br>
+
 
 |Spreadsheet of domains list| Description|
 |---|---|
