@@ -107,11 +107,11 @@ All our updates contain
 - Fixed automatic remediation during on demand scans involving archives with multiple threats
 - Improved the performance of scanning files on network locations
 - Added support for domain computer SID for Device Control policies
-- Improved installer of Unified Agent to include legacy version of Server 2012 (6.3.9600.17735)
+- Improved installer of unified agent to include legacy version of Windows Server 2012 (6.3.9600.17735)
 - Fixed issue in Device Control when querying Azure AD group membership, which resulted in increased network traffic.
 - Improved parsing of attack surface reduction exclusions in the antimalware engine
 - Improved reliability in scanning PE files
-- Improved deployments safeguards for Security Intelligence Updates
+- Improved deployments safeguards for security intelligence updates
 
 ### August-2023 (Platform: 4.18.23080.2006 | Engine: 1.1.23080.2005)
 
