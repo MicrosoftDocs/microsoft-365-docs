@@ -103,15 +103,15 @@ All our updates contain
 - Support phase: **Security and Critical Updates**
  
 ### What's new
-	• Fixed automatic remediation during on demand scans involving archives with multiple threats
-	• Improved the performace of scanning files on network locations
-	• Added support for domain computer SID for Device Control policies
-	• Improved installer of Unified Agent to include legacy version of Server 2012 (6.3.9600.17735)
-	• Fixed issue in Device Control when querying AAD group membership which resulted in increased network traffic.
-	• Improved parsing of ASR exclusions in the antimalware engine
-	• Improved reliability in scanning PE files
-	• Improved deployments safeguards for Security Intelligence Updates
 
+- Fixed automatic remediation during on demand scans involving archives with multiple threats
+- Improved the performace of scanning files on network locations
+- Added support for domain computer SID for Device Control policies
+- Improved installer of Unified Agent to include legacy version of Server 2012 (6.3.9600.17735)
+- Fixed issue in Device Control when querying AAD group membership which resulted in increased network traffic.
+- Improved parsing of ASR exclusions in the antimalware engine
+- Improved reliability in scanning PE files
+- Improved deployments safeguards for Security Intelligence Updates
 
 ### August-2023 (Platform: 4.18.23080.2006 | Engine: 1.1.23080.2005)
 
