@@ -61,7 +61,6 @@ Microsoft Defender for Endpoint for US Government customers requires one of the 
 
 The following are the Microsoft Defender for Endpoint portal URLs for US Government customers:
 
-<br />
 
 |Customer type|Portal URL|
 |---|---|
@@ -78,7 +77,6 @@ The following are the Microsoft Defender for Endpoint portal URLs for US Governm
 
 The following OS versions are supported:
 
-<br />
 
 OS version|GCC|GCC High|DoD
 :---|:---:|:---:|:---:
@@ -121,7 +119,6 @@ iOS|![Yes.](images/svg/check-yes.svg) <br /> |![Yes](images/svg/check-yes.svg) <
 
 The following OS versions are supported when using [Microsoft Defender for servers](/azure/security-center/security-center-wdatp):
 
-<br />
 
 OS version|GCC|GCC High|DoD
 :---|:---:|:---:|:---:
@@ -153,7 +150,6 @@ For more information, see [Configure device proxy and Internet connectivity sett
 
 Instead of the public URIs listed in our [API documentation](apis-intro.md), you'll need to use the following URIs:
 
-<br />
 
 |Endpoint type|GCC|GCC High & DoD|
 |---|---|---|
@@ -179,7 +175,6 @@ These are the known gaps:
 
 These are the features and known gaps for [Mobile Threat Defense (Microsoft Defender for Endpoint on Android & iOS)](mtd.md):
 
-<br />
 
 |Feature name|GCC|GCC High|DoD|
 |---|:---:|:---:|:---:|
