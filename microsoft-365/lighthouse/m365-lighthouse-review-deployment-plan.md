@@ -41,7 +41,7 @@ Additionally, each partner tenant user must meet the following requirements:
 
 ## Access a tenant deployment plan
 
-1. In the left navigation pane in Lighthouse, select **Tenants**.
+1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Tenants**.
 
 2. From the tenant list, select the tenant you want to view.
 

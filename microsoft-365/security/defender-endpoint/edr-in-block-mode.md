@@ -11,12 +11,13 @@ ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.custom:
   - next-gen
-  - edr
+  - mde-edr
   - admindeeplinkDEFENDER
 ms.date: 03/31/2023
 ms.collection: 
 - m365-security
 - tier2
+- mde-edr
 ms.subservice: mde
 search.appverid: met150
 ---
