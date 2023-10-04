@@ -97,7 +97,7 @@ All our updates contain
 ### September-2023 (Platform: 4.18.23090.2008 | Engine: 1.1.23090.2007)
  
 - Security intelligence update version: **1.399.44.0**
-- Release date:  **October 3, 2023 (Engine) / October 4, 2023 (Platform)**
+- Release date:  **October 3, 2023 (Engine) | October 4, 2023 (Platform)**
 - Platform: **4.18.23090.2008**
 - Engine: **1.1.23090.2007**
 - Support phase: **Security and Critical Updates**
