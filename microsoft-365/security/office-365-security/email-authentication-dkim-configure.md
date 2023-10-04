@@ -37,7 +37,7 @@ In this article:
 - [How DKIM works better than SPF alone to prevent malicious spoofing](#how-dkim-works-better-than-spf-alone-to-prevent-malicious-spoofing)
 - [Steps to Create, enable and disable DKIM from Microsoft 365 Defender portal](#steps-to-create-enable-and-disable-dkim-from-microsoft-365-defender-portal)
 - [Steps to manually upgrade your 1024-bit keys to 2048-bit DKIM encryption keys](#steps-to-manually-upgrade-your-1024-bit-keys-to-2048-bit-dkim-encryption-keys)
-- [Steps to manually set up DKIM using powershell](#steps-to-manually-set-up-dkim-using-powershell)
+- [Steps to manually set up DKIM using PowerShell](#steps-to-manually-set-up-dkim-using-powershell)
 - [Error: No DKIM keys saved for this domain](#error-no-dkim-keys-saved-for-this-domain)
 - [Steps to configure DKIM for more than one custom domain](#to-configure-dkim-for-more-than-one-custom-domain)
 - [Disabling the DKIM signing policy for a custom domain](#disabling-the-dkim-signing-policy-for-a-custom-domain)
@@ -171,6 +171,7 @@ Run the following commands in Exchange Online PowerShell to create the selector 
 
 ```powershell
 New-DkimSigningConfig -DomainName <domain> -Enabled $false
+
 Get-DkimSigningConfig -Identity <domain> | Format-List Selector1CNAME, Selector2CNAME
 ```
 
@@ -221,23 +222,25 @@ TTL:                3600
 ```
 
 > [!NOTE]
-> It's important to create CNAME records for both the selectors in the DNS , but only one (active) selector is published with Public key at the time of creation. This is expected behaviour and doesn’t affect DKIM signing for your custom domains. The second selector will be published with public key upon any further key rotation in future and it becomes active.
+> It's important to create CNAME records for both selectors in the DNS, but only one (active) selector is published with the public key at the time of creation. This behavior is expected and doesn't affect DKIM signing for your custom domains. The second selector will be published with the public key after any future key rotation when it becomes active.
 
-### Steps to enable DKIM signing for your custom domain using powershell
+### Steps to enable DKIM signing for your custom domain using PowerShell
 <a name="EnableDKIMinO365"> </a>
 
-Once you have published the CNAME records in DNS, Run the following commands in Exchange Online PowerShell to enable DKIM signing through Microsoft 365.
+Once you have published the CNAME records in DNS, replace \<Domain\> with your domain name, and then run the following command in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) to enable DKIM signing through Microsoft 365:
 
 ```powershell
-   Set-DkimSigningConfig -Identity <Domain> -Enabled $true
-   ```
+Set-DkimSigningConfig -Identity <Domain> -Enabled $true
+```
+
+For detailed syntax and parameter information, see  [Set-DkimSigningConfig](/powershell/module/exchange/set-dkimsigningconfig).
 
 ## Error: No DKIM keys saved for this domain
 <a name="NoDKIMKeys"> </a>
 
-> [!IMPORTANT]
-> If you are configuring DKIM for the first time and see the error 'No DKIM keys saved for this domain' you will have to use Windows PowerShell to enable DKIM signing as explained in the next step.
-> :::image type="content" source="../../media/dkim.png" alt-text="The No DKIM keys saved for this domain error" lightbox="../../media/dkim.png":::
+If you're configuring DKIM for the first time and see the error 'No DKIM keys saved for this domain', you need to use Exchange Online PowerShell to enable DKIM signing.
+
+:::image type="content" source="../../media/dkim.png" alt-text="The No DKIM keys saved for this domain error." lightbox="../../media/dkim.png":::
 
 1. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -254,6 +257,8 @@ Once you have published the CNAME records in DNS, Run the following commands in 
    ```powershell
    Set-DkimSigningConfig -Identity contoso.com -Enabled $true
    ```
+
+For detailed syntax and parameter information, see  [Set-DkimSigningConfig](/powershell/module/exchange/set-dkimsigningconfig).
 
 #### To Confirm DKIM signing is configured properly for Microsoft 365
 
