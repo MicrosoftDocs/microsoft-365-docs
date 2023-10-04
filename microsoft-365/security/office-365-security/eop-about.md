@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 9/25/2023
+ms.date: 10/3/2023
 audience: ITPro
 ms.topic: overview
 ms.collection: 
@@ -29,18 +29,20 @@ appliesto:
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-Exchange Online Protection (EOP) is the cloud-based filtering service that protects your organization against spam, malware, and other email threats. EOP is included in all Microsoft 365 organizations with Exchange Online mailboxes.
+Exchange Online Protection (EOP) is the cloud-based filtering service that protects your organization against spam, malware, phishing and other email threats. EOP is included in all Microsoft 365 organizations that have Exchange Online mailboxes.
 
-> [!NOTE]
+> [!TIP]
 > EOP is also available by itself to protect on-premises mailboxes and in hybrid environments to protect on-premises Exchange mailboxes. For more information, see [Standalone Exchange Online Protection](/exchange/standalone-eop/standalone-eop).
 
-EOP protection is on by default due to the default policies for:
+You can sign up for an EOP trial and get pricing information at the [Exchange Online Protection home page](https://products.office.com/exchange/exchange-email-security-spam-protection).
+
+EOP protection is on by default thanks to the default policies for:
 
 - [Anti-malware protection](anti-malware-protection-about.md)
 - [Anti-spam protection](anti-spam-protection-about.md)
 - [Anti-phishing (spoof) protection](anti-phishing-protection-about.md#anti-phishing-protection-in-eop)
 
-These default policies apply to all recipients by default and can't be turned off, but they can be overridden by custom policies and [preset security policies](preset-security-policies.md).
+These default policies apply to all recipients by default and can't be turned off, but they can be overridden by [preset security policies](preset-security-policies.md) or custom policies that you create.
 
 You can customize the security settings in the default policies, create custom policies, or better yet, turn on and add all recipients to the Standard and/or Strict preset security policies. For complete information, see [Configure security policies](mdo-deployment-guide.md#step-2-configure-security-policies).
 
@@ -71,6 +73,15 @@ For more information, see [Order and precedence of email protection](how-policie
 EOP runs on a worldwide network of datacenters that are designed to provide the best availability. For example, if a datacenter becomes unavailable, email messages are automatically routed to another datacenter without any interruption in service. Servers in each datacenter accept messages on your behalf, providing a layer of separation between your organization and the internet, thereby reducing load on your servers. Through this highly available network, Microsoft can ensure that email reaches your organization in a timely manner.
 
 EOP performs load balancing between datacenters but only within a region. If you're provisioned in one region, all of your messages are processed using the mail routing for that region.
+
+### EOP communications
+
+The following communication channels are available for issues and new features in EOP:
+
+- If you're affected by a Service Level Event, you should see a communication alert (typically accompanied by a bell icon) in the Microsoft 365 admin center at <https://admin.microsoft.com>. We recommend that you read and act on any items as appropriate.
+- The Microsoft 365 Message center at <https://admin.microsoft.com/Adminportal/Home?#/MessageCenter> also contains information about new and updated features. For more information, see [Track new and changed features in the Microsoft 365 Message center](../../admin/manage/message-center.md).
+- The [Microsoft 365 for business roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) is a good resource for finding out information about upcoming new features.
+- We also posting blog articles about new features to the [Microsoft 365 Blogs](https://www.microsoft.com/microsoft-365/blog/) website.
 
 ### EOP features
 

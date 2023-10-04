@@ -1123,7 +1123,7 @@
       {
          "source_path":"microsoft-365/security/office-365-security/eop-features.md",
          "redirect_url":"/microsoft-365/security/office-365-security/eop-about#eop-features",
-         "redirect_document_id":false
+         "redirect_document_id":true
       },
       {
          "source_path":"microsoft-365/security/office-365-security/view-the-admin-audit-log-eop.md",
@@ -2288,12 +2288,12 @@
       {
          "source_path":"microsoft-365/security/office-365-security/exchange-online-protection-overview.md",
          "redirect_url":"/microsoft-365/security/office-365-security/eop-about",
-         "redirect_document_id":true
+         "redirect_document_id":false
       },
       {
          "source_path":"microsoft-365/security/office-365-security/eop-general-faq.yml",
-         "redirect_url":"/microsoft-365/security/office-365-security/eop-faq",
-         "redirect_document_id":true
+         "redirect_url":"/microsoft-365/security/office-365-security/eop-about",
+         "redirect_document_id":false
       },
       {
          "source_path":"microsoft-365/security/office-365-security/mail-flow-in-eop.md",
@@ -2798,6 +2798,11 @@
        {
          "source_path":"microsoft-365/security/office-365-security/walkthrough-spoof-intelligence-insight.md",
          "redirect_url":"/microsoft-365/security/office-365-security/anti-spoofing-spoof-intelligence",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/eop-faq.yml",
+         "redirect_url":"/microsoft-365/security/office-365-security/eop-about",
          "redirect_document_id":false
        },
        {
