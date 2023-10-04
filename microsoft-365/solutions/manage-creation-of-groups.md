@@ -113,32 +113,50 @@ Run the script by typing:
 and [sign in with your administrator account](../enterprise/connect-to-microsoft-365-powershell.md#step-2-connect-to-azure-ad-for-your-microsoft-365-subscription) when prompted.
 
 ```PowerShell
-$GroupName = "<GroupName>"
+$GroupName = "<SecurityGroupName>"
 $AllowGroupCreation = $False
 
-Connect-MgGraph
+Connect-MgGraph -Scopes "Directory.ReadWrite.All", "Group.Read.All"
 
-$settingsObjectID = (Get-AzureADDirectorySetting | Where-object -Property Displayname -Value "Group.Unified" -EQ).id
+$settingsObjectID = (Get-MgBetaDirectorySetting | Where-object -Property Displayname -Value "Group.Unified" -EQ).id
 if(!$settingsObjectID)
 {
-    $template = Get-AzureADDirectorySettingTemplate | Where-object {$_.displayname -eq "group.unified"}
-    $settingsCopy = $template.CreateDirectorySetting()
-    New-AzureADDirectorySetting -DirectorySetting $settingsCopy
-    $settingsObjectID = (Get-AzureADDirectorySetting | Where-object -Property Displayname -Value "Group.Unified" -EQ).id
+    $params = @{
+	  templateId = "62375ab9-6b52-47ed-826b-58e47e0e304b"
+	  values = @(
+		    @{
+			       name = "EnableMSStandardBlockedWords"
+			       value = "true"
+		     }
+	 	     )
+	     }
+	
+    New-MgBetaDirectorySetting -BodyParameter $params
+	
+    $settingsObjectID = (Get-MgBetaDirectorySetting | Where-object -Property Displayname -Value "Group.Unified" -EQ).Id
 }
 
-$settingsCopy = Get-AzureADDirectorySetting -Id $settingsObjectID
+$settingsCopy = Get-MgBetaDirectorySetting -DirectorySettingId $settingsObjectID
 $settingsCopy["EnableGroupCreation"] = $AllowGroupCreation
 
 if($GroupName)
-{
-  $settingsCopy["GroupCreationAllowedGroupId"] = (Get-MgGroup -Filter "DisplayName eq $GroupName).Id
-} else {
-$settingsCopy["GroupCreationAllowedGroupId"] = $GroupName
+{ 
+  $groupId = (Get-MgGroup | Where-object {$_.displayname -eq $GroupName}).Id
 }
-Set-AzureADDirectorySetting -Id $settingsObjectID -DirectorySetting $settingsCopy
 
-(Get-AzureADDirectorySetting -Id $settingsObjectID).Values
+$params = @{
+	templateId = "62375ab9-6b52-47ed-826b-58e47e0e304b"
+	values = @(
+		@{
+			name = "EnableGroupCreation"
+			value = $AllowGroupCreation
+		}
+		@{
+			name = "GroupCreationAllowedGroupId"
+			value = $groupId
+		}
+	)
+}
 ```
 
 The last line of the script will display the updated settings:
