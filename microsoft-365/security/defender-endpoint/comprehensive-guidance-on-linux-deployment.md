@@ -561,6 +561,7 @@ Use the following syntaxes to help identify the process that is causing CPU over
 
   ```bash
   sudo ps -T -p <PID> >> Thread_with_highest_cpu_usage.log
+  ```
 
   :::image type="content" source="images/cpu-utilization.png" alt-text="This is CPU utilization":::
 
