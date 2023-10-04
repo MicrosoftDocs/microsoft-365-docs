@@ -175,7 +175,7 @@ Follow these steps to download the packages:
 
 > [!IMPORTANT]
 >
-> - A local onboarding script is suitable for a proof of concept but should not be used for production deployment. For a production deployment, we recommend using Group Policy, or Microsoft Endpoint Configuration Manager.
+> A local onboarding script is suitable for a proof of concept but should not be used for production deployment. For a production deployment, we recommend using Group Policy, or Microsoft Endpoint Configuration Manager.
 
 ### STEP 2: Apply the installation and onboarding package
 
