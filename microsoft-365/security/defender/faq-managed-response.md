@@ -1,5 +1,5 @@
 ---
-title: FAQs related to Microsoft Defender Experts for XDR managed response
+title: FAQ's related to Microsoft Defender Experts for XDR managed response
 ms.reviewer:
 description: Frequently asked questions related to managed response notifications
 keywords: managed response, xdr, Xtended detection and response, defender experts for xdr, Microsoft Defender Experts for XDR, managed threat hunting, managed detection and response (MDR) service, service delivery manager, real-time visibility with XDR experts, FAQ's related to XDR
