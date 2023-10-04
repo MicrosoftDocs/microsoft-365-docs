@@ -113,6 +113,10 @@ All our updates contain
 - Improved reliability in scanning PE files
 - Improved deployments safeguards for security intelligence updates
 
+### Known issues
+
+- None
+
 ### August-2023 (Platform: 4.18.23080.2006 | Engine: 1.1.23080.2005)
 
 - Security intelligence update version: **1.397.59.0**
@@ -130,7 +134,6 @@ All our updates contain
 - [DisableFtpParsing](/windows/client-management/mdm/defender-csp#configurationdisableftpparsing) can now be configured through [Set-MpPreference](/powershell/module/defender/set-mppreference)
 - Fixed an issue where [device control](device-control-removable-storage-protection.md) policies were not applied correctly without a reboot following product updates
 - Fixed an issue in the attack surface reduction rule, [Block Win32 API calls from Office macros](attack-surface-reduction-rules-reference.md#block-win32-api-calls-from-office-macros), configured in warn mode where excluded files were incorrectly blocked until the next device reboot
-
 
 ### Known issues
 
