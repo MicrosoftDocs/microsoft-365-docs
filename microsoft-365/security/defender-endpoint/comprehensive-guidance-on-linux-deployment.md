@@ -309,7 +309,7 @@ Set up your device groups, device collections, and organizational units Device g
   }
   ```
 
-**Recommendations**:
+  **Recommendations**:
 
   ```JSON
          {
