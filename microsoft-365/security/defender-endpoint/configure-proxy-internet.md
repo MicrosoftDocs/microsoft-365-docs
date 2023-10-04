@@ -218,8 +218,6 @@ The information in the list of proxy and firewall configuration information is r
 
 <br>
 
-****
-
 |Agent Resource|Ports|Direction|Bypass HTTPS inspection|
 |---|---|---|---|
 |*.ods.opinsights.azure.com|Port 443|Outbound|Yes|
