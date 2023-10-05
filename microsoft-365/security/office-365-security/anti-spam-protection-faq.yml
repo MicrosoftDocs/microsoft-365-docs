@@ -98,7 +98,7 @@ sections:
         answer: |
           Yes, the service has a URL filter that checks for URLs within messages. If URLs associated with known spam or malicious content are detected, the message is marked as spam.
 
-          Customers with Microsoft 365 Defender for Office licenses also get Safe Links protection. For more information, see [Safe Links in Microsoft Defender for Office 365](safe-links-about.md).
+          Customers with Microsoft 365 Defender for Office 365 licenses also get Safe Links protection. For more information, see [Safe Links in Microsoft Defender for Office 365](safe-links-about.md).
 
       - question: |
           How can Microsoft 365 customers send false positive (bad) and false negative (good) messages to Microsoft?

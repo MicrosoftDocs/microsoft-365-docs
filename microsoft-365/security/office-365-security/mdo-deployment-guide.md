@@ -36,7 +36,7 @@ The steps to configure EOP and Defender for Office 365 are:
 
 ## Requirements
 
-Email threat protection features are included in _all_ Microsoft 365 subscriptions with cloud mailboxes via EOP. Defender for Office 365 includes additional protection features. For detailed comparisons about the features in EOP, Defender for Office for Plan 1, and Defender for Office Plan 2, see [The Microsoft 365 security ladder from EOP to Defender for Office 365](mdo-security-comparison.md#the-microsoft-365-security-ladder-from-eop-to-defender-for-office-365).
+Email threat protection features are included in _all_ Microsoft 365 subscriptions with cloud mailboxes via EOP. Defender for Office 365 includes additional protection features. For detailed comparisons about the features in EOP, Defender for Office 365 for Plan 1, and Defender for Office 365 Plan 2, see [The Microsoft 365 security ladder from EOP to Defender for Office 365](mdo-security-comparison.md#the-microsoft-365-security-ladder-from-eop-to-defender-for-office-365).
 
 ### Roles and permissions
 

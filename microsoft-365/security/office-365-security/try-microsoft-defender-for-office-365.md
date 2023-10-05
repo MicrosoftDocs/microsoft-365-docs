@@ -113,7 +113,7 @@ The key factors that determine which modes are available to you are:
 
 What's the difference between an evaluation and a trial of Defender for Office 365 Plan 2? Aren't they the same thing? Well, yes and no. The licensing in your Microsoft 365 organization makes all the difference:
 
-- **No Defender for Office Plan 2**: If you don't already have Defender for Office 365 Plan 2 (for example, you have standalone EOP, Microsoft 365 E3, Microsoft 365 Business Premium, or a Defender for Office 365 Plan 1 add-on subscription), you can start the Defender for Office 365 Plan 2 experience from the following locations in the Microsoft 365 Defender portal:
+- **No Defender for Office 365 Plan 2**: If you don't already have Defender for Office 365 Plan 2 (for example, you have standalone EOP, Microsoft 365 E3, Microsoft 365 Business Premium, or a Defender for Office 365 Plan 1 add-on subscription), you can start the Defender for Office 365 Plan 2 experience from the following locations in the Microsoft 365 Defender portal:
 
   - The **Microsoft 365 trials** page at <https://security.microsoft.com/trialHorizontalHub>.
   - The **Microsoft Defender for Office 365 evaluation** page at <https://security.microsoft.com/atpEvaluation>.
@@ -165,7 +165,7 @@ Remember, when you evaluate or try Defender for Office 365 in audit mode, specia
    - On the **Microsoft 365 trials** page at <https://security.microsoft.com/trialHorizontalHub>, find and select **Defender for Office 365**.
    - On the **Microsoft Defender for Office 365 evaluation** page at <https://security.microsoft.com/atpEvaluation>, select **Start evaluation**.
 
-2. The **Turn on protection** dialog isn't available in organizations with Defender for Office Plan 1 or Plan 2.
+2. The **Turn on protection** dialog isn't available in organizations with Defender for Office 365 Plan 1 or Plan 2.
 
    In the **Turn on protection** dialog, select **No, I only want reporting**, and then select **Continue**.
 
@@ -238,7 +238,7 @@ Remember, when you try Defender for Office 365 in **blocking mode**, the Standar
    - On the **Microsoft 365 trials** page at <https://security.microsoft.com/trialHorizontalHub>, find and select **Defender for Office 365**.
    - On the **Microsoft Defender for Office 365 evaluation** page at <https://security.microsoft.com/atpEvaluation>, select **Start evaluation**.
 
-2. The **Turn on protection** dialog isn't available in organizations with Defender for Office Plan 1 or Plan 2.
+2. The **Turn on protection** dialog isn't available in organizations with Defender for Office 365 Plan 1 or Plan 2.
 
    In the **Turn on protection** dialog, select **Yes, protect my organization by blocking threats**, and then select **Continue**.
 
