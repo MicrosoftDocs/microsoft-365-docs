@@ -25,8 +25,8 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid: MET150
-description: "Learn to verify which Microsoft business subscriptions your organization has by going to the Microsoft 365 admin center."
-ms.date: 10/04/2023
+description: "Find out what Microsoft business subscriptions your organization has by using the Your products page in the Microsoft 365 admin center."
+ms.date: 10/05/2023
 ---
 
 # What Microsoft business subscriptions do I have?
@@ -39,13 +39,13 @@ Not sure what Microsoft business subscriptions your organization has? If you're 
 
 ## Before you begin
 
-You must be a global or billing admin to view the subscriptions for your organization. For more information, see [About Microsoft 365 admin roles](../add-users/about-admin-roles.md).
+You must be a global or billing admin to view the subscriptions for your organization. For more information, see [About admin roles in the Microsoft 365 admin center](../add-users/about-admin-roles.md).
 
 ## Find out what subscriptions you have
 
 1. Go to the Microsoft 365 admin center.
    - If you’re using the **Simplified view**, select **Subscriptions**.
-   - If you’re using the D**ashboard view**, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
+   - If you’re using the **Dashboard view**, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. You see a list of all your subscriptions. Each line includes information about the product name, the number of assigned licenses, the total number of licenses, and the subscription status.
 3. If you’re using the **Dashboard view**, you can change the columns that appear in the list on the **Your products** page. Select **Choose columns**, change the selection of columns, then select **Save**.
 4. To see more details for a single subscription, select that subscription.
