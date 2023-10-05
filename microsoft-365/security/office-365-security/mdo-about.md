@@ -40,9 +40,9 @@ Defender for Office 365 safeguards organizations against malicious threats by pr
 
 - **[Preset security policies can configure everything for you](preset-security-policies.md)**: The protection policies included in Standard and Strict preset security policies contain our recommended settings. All you need to do is decide who gets the protection (by user, group, domain, or all recipients) and specify the entries and optional exceptions for user and domain impersonation protection. For instructions, see [Use the Microsoft 365 Defender portal to assign Standard and Strict preset security policies to users](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users).
 
-- **[Threat protection policies](#defender-for-office-protection-365-policies)**: Define threat-protection policies so admins can set the right level of protection for the organization.
+- **[Threat protection policies](#defender-for-office-365-protection-policies)**: Define threat-protection policies so admins can set the right level of protection for the organization.
 
-- **[Reports](#view-microsoft-defender-for-office-365-reports)**: SecOps personnel can view real-time reports to monitor Defender for Office 365 performance in the organization.
+- **[Reports](#view-defender-for-office-365-reports)**: SecOps personnel can view real-time reports to monitor Defender for Office 365 performance in the organization.
 
 - **[Threat investigation and response capabilities](#best-of-class-threat-investigation-and-response-capabilities)**: These tools are leading-edge and allow you to investigate, understand, simulate, and prevent threats.
 

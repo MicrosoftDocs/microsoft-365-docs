@@ -4,12 +4,12 @@
   items:
    - name: Overview
      items:
-       - name: Microsoft Defender for Office 365 security product overview
-         href: mdo-security-comparison.md
-       - name: Exchange Online Protection overview
-         href: eop-about.md
        - name: Microsoft Defender for Office 365 overview
          href: mdo-about.md
+       - name: Exchange Online Protection overview
+         href: eop-about.md
+       - name: Microsoft Defender for Office 365 security comparison
+         href: mdo-security-comparison.md
        - name: What's new in Defender for Office 365
          href: defender-for-office-365-whats-new.md
    - name: Get started
