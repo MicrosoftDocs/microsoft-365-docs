@@ -136,18 +136,9 @@ In the case where multiple different action types are set on the same indicator 
 
 _Allow_ overrides _warn_ which overrides _block_: Allow > Warn > Block. Therefore, in the above example, Microsoft.com would be allowed.
 
-### Policy conflict handling follows the order below
+### Defender for Cloud Apps Indicators
 
-- Defender for Cloud Apps creates an unsanctioned indicator for all users but URL is allowed for a specific device group, the specific device group is Blocked access to the URL.
-- If the IP, URL/Domain is allowed
-- If the IP, URL/Domain is not allowed
-- If the IP, URL/Domain is allowed
-- If the IP, URL/Domain is not allowed
-- If the IP, URL/Domain is allowed
-
-Threat and vulnerability management's block vulnerable application features uses the file IoCs for enforcement and will follow the above conflict handling order.
-
-If there are conflicting file IoC policies with the same enforcement type and target, the policy of the more secure will be applied.
+If your organization has enabled integration between MDE and Defender for Cloud Apps, block indicators will be created in MDE for all unsanctioned cloud applications. If an application is put in monitor mode, warn indicators (bypassable block) will be created for the URLs associated with the application. Allow indicators cannot be created for sanctioned applications at this time. Indicators created by Defender for Cloud Apps follow the same policy conflict handling described in the previous section.
 
 ## Policy precedence
 
