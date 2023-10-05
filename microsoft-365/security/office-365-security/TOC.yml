@@ -8,8 +8,8 @@
          href: mdo-security-comparison.md
        - name: Exchange Online Protection overview
          href: eop-about.md
-       - name: Why do I need Microsoft Defender for Office 365?
-         href: why-do-i-need-microsoft-defender-for-office-365.md
+       - name: Microsoft Defender for Office 365 overview
+         href: mdo-about.md
        - name: What's new in Defender for Office 365
          href: defender-for-office-365-whats-new.md
    - name: Get started
@@ -490,8 +490,6 @@
        items:
        - name: Delegated administration FAQ
          href: delegated-administration-faq.yml
-       - name: EOP queued, deferred, and bounced messages FAQ
-         href: mail-flow-delivery-faq.yml
    - name: Microsoft 365 Defender docs
      items:
        - name: Microsoft 365 Defender

@@ -36,7 +36,7 @@ This article introduces you to your new Microsoft Defender for Office 365 securi
 
 ## What is Defender for Office 365 security
 
-Every Office 365 subscription comes with security capabilities. The goals and available actions depend on the focus of these different subscriptions. In Office 365 security, there are three main security services (or products) tied to your subscription type:
+Every Microsoft 365 subscription comes with security capabilities. The goals and available actions depend on the focus of these different subscriptions. In Microsoft 365 security, there are three main security services (or products) tied to your subscription type:
 
 1. Exchange Online Protection (EOP).
 1. Microsoft Defender for Office 365 365 Plan 1 (Defender for Office 365 P1).
@@ -45,7 +45,7 @@ Every Office 365 subscription comes with security capabilities. The goals and av
 > [!TIP]
 > If you're new to your subscription and would like to know your license before you begin, go the **Your products** page in the Microsoft 365 admin center at <https://admin.microsoft.com/Adminportal/Home#/subscriptions>.
 
-Office 365 security builds on the core protections offered by EOP. EOP is present in any subscription where Exchange Online mailboxes can be found (remember, all the security products discussed here are cloud-based).
+Microsoft 365 security builds on the core protections offered by EOP. EOP is present in any subscription where Exchange Online mailboxes can be found (remember, all the security products discussed here are cloud-based).
 
 You may be accustomed to seeing these three components discussed in this way:
 
@@ -59,16 +59,16 @@ But in terms of architecture, let's start by thinking of each piece as cumulativ
 
 Though each of these services emphasizes a goal from among Protect, Detect, Investigate, and Respond, ***all*** the services can carry out ***any*** of the goals of protecting, detecting, investigating, and responding.
 
-The core of Office 365 security is EOP protection. Defender for Office 365 P1 contains EOP. Defender for Office 365 P2 contains P1 and EOP plus more features. The structure is cumulative. That's why, when configuring this product, you should start with EOP and work up to Defender for Office 365 Plan 2.
+The core of Microsoft 365 security is EOP protection. Defender for Office 365 P1 contains EOP. Defender for Office 365 P2 contains P1 and EOP plus more features. The structure is cumulative. That's why, when configuring this product, you should start with EOP and work up to Defender for Office 365 Plan 2.
 
 Though email authentication configuration takes place in public DNS, it's important to configure this feature to help defend against spoofing. *If you have EOP,* ***you should [configure email authentication](email-authentication-about.md)***.
 
-If you have an Office 365 E3 or virtually any subscription with Exchange Online mailboxes, you definitely have EOP. You can most likely purchase Defender for Office 365 as an add-on subscription. If you have Office 365 E5, you already have Defender for Office 365 P2.
+If you have a Microsoft 365 E3 or virtually any subscription with Exchange Online mailboxes, you definitely have EOP. You can most likely purchase Defender for Office 365 as an add-on subscription. If you have Microsoft 365 E5, you already have Defender for Office 365 P2.
 
 > [!TIP]
-> If your subscription is neither Office 365 E3 or E5, you can use [this page](https://www.microsoft.com/microsoft-365/exchange/advance-threat-protection#coreui-contentrichblock-x07wids) to see if you can upgrade to Defender for Office 365 (check the end of the page for the fine-print).
+> If your subscription is neither Microsoft 365 E3 or E5, you can use [this page](https://www.microsoft.com/microsoft-365/exchange/advance-threat-protection#coreui-contentrichblock-x07wids) to see if you can upgrade to Defender for Office 365 (check the end of the page for the fine-print).
 
-## The Office 365 security ladder from EOP to Defender for Office 365
+## The Microsoft 365 security ladder from EOP to Defender for Office 365
 
 > [!IMPORTANT]
 > Learn the details on these pages: [Exchange Online Protection](eop-about.md), and [Defender for Office 365](defender-for-office-365.md).
@@ -122,7 +122,7 @@ This quick-reference helps you understand what capabilities come with each Defen
 |---|---|
 |Prevent and detect capabilities: <ul><li>[Safe Attachments](safe-attachments-about.md), including [Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](safe-attachments-for-spo-odfb-teams-about.md)</li><li>[Safe Links](safe-links-about.md)</li><li>[Advanced phishing thresholds and impersonation protection](anti-phishing-policies-about.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Real-time detections](threat-explorer-about.md)</li></ul>|Everything in Defender for Office 365 Plan 1 capabilities <br/><br/> --- plus --- <br/><br/> Prevent and detect capabilities: <ul><li>[Attack simulation training](attack-simulation-training-simulations.md)</li></ul> <br/> Automate, investigate, and respond capabilities: <ul><li>[Threat Trackers](threat-trackers.md)</li><li>[Threat Explorer](threat-explorer-about.md)</li><li>[Automated investigation and response](air-about.md)</li><li>[Proactively hunt for threats with advanced hunting in Microsoft 365 Defender](../defender/advanced-hunting-overview.md)</li><li>[Investigate incidents in Microsoft 365 Defender](../defender/investigate-incidents.md)</li><li>[Investigate alerts in Microsoft 365 Defender](../defender/investigate-alerts.md)</li></ul>|
 
-- Defender for Office 365 Plan 2 is included in Office 365 E5, Office 365 A5, and Microsoft 365 E5.
+- Defender for Office 365 Plan 2 is included in Microsoft 365 E5, Microsoft 365 A5, and Microsoft 365 E5.
 - Defender for Office 365 Plan 1 is included in Microsoft 365 Business Premium.
 - Defender for Office 365 Plan 1 and Defender for Office 365 Plan 2 are each available as an add-on for certain subscriptions. To learn more, see [Feature availability across Defender for Office 365 plans](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
 - [Safe Documents](safe-documents-in-e5-plus-security-about.md) is available to users with the Microsoft 365 A5 or Microsoft 365 E5 Security licenses (not included in Defender for Office 365 plans).
@@ -130,7 +130,7 @@ This quick-reference helps you understand what capabilities come with each Defen
 - Defender for Office 365 P2 customers have access to **Microsoft 365 Defender integration** to efficiently detect, review, and respond to incidents and alerts.
 
 > [!TIP]
-> ***Insider tip***. You can use the Microsoft Learn table of contents to learn about EOP and Defender for Office 365. Navigate back to this page, [Office 365 Security overview](index.yml), and you'll notice that table of contents organization in the side-bar. It begins with Deployment (including migration) and then continues into prevention, detection, investigation, and response.
+> ***Insider tip***. You can use the Microsoft Learn table of contents to learn about EOP and Defender for Office 365. Navigate back to this page, [Microsoft 365 Security overview](index.yml), and you'll notice that table of contents organization in the side-bar. It begins with Deployment (including migration) and then continues into prevention, detection, investigation, and response.
 >
 > This structure is divided so that **Security Administration** topics are followed by **Security Operations** topics. If you're a new member of either job role, use the link in this tip, and your knowledge of the table of contents, to help learn the space. Remember to use *feedback links* and *rate articles* as you go. Feedback helps us improve what we offer you.
 

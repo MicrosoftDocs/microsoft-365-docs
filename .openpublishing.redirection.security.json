@@ -2303,7 +2303,7 @@
       {
          "source_path":"microsoft-365/security/office-365-security/eop-queued-deferred-and-bounced-messages-faq.yml",
          "redirect_url":"/microsoft-365/security/office-365-security/mail-flow-about#mail-flow-delivery-faq",
-         "redirect_document_id":true
+         "redirect_document_id":false
       },
       {
          "source_path":"microsoft-365/security/office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md",
