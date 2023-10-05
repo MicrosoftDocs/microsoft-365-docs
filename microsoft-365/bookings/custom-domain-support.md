@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ms.collection:
 - Tier1
 - scotvorg
-ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
+- essentials-manage
 description: "Learn how to configure custom domain support in Microsoft Bookings."
 ---
 
