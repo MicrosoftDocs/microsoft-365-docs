@@ -68,25 +68,24 @@ The eBPF sensor will be automatically enabled for all customers for agent versio
 
 :::image type="content" source="../../media/defender-endpoint/ebpf-subsystem-linux.png" alt-text="ebpf subsystem highlight in the mdatp health command" lightbox="../../media/defender-endpoint/ebpf-subsystem-linux.png":::
 
-If you're running a production build and interested in evaluating the eBPF preview functionality, you can use the following mdatp config command (requires privileges):
+If you want to manually disable eBPF, you can run the following command:
 
 ```bash
 sudo mdatp config ebpf-supplementary-event-provider --value [enabled/disabled]
 ```
 
 > [!IMPORTANT]
-> If you disable eBPF, the supplementary event provider switches back to auditd.
+> If you disable eBPF, the supplementary event provider switches back to auditd. </br>
 > In the event eBPF doesn't become enabled or is not supported on any specific kernel, it will automatically switch back to auditd and retain all auditd custom rules.
 
 ### Immutable mode of Auditd
-For customers using auditd in immutable mode, a reboot is required post enablement of eBPF in order to clear the audit rules added by Microsoft Defender for Endpoint. This is a limitation in immutable mode of auditd which freezes the rules file and prohibits editing/overwriting. This is resolved with the reboot.
 
-Post reboot, run the below command to check if audit rules got cleared.
+After enabling eBPF, customers using auditd in immutable mode must reboot their system in order to clear the audit rules added by Microsoft Defender for Endpoint. This is because immutable mode of auditd freezes the rules file and prevents it from being edited or overwritten. To verify that the audit rules have been cleared, run the following command after the reboot.
 
 ```bash
 % sudo auditctl -l
-```
-The output of above command should show no rules or any user added rules. In case the rules did not get removed, then perform the following steps to clear the audit rules file:
+
+The output of the command should show no rules or any user added rules. If the rules weren't removed, follow these steps to clear the audit rules file:
 
   1. Switch to ebpf mode
   2. Remove the file /etc/audit/rules.d/mdatp.rules
