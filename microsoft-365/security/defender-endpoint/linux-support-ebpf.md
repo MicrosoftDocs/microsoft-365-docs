@@ -44,7 +44,7 @@ With eBPF, events previously obtained from the auditd event provider now flow fr
 In addition, the eBPF sensor uses capabilities of the Linux kernel without requiring the use of a kernel module that helps increase system stability.
 
 > [!NOTE]
-> eBPF will be used in conjunction with auditd where auditd will be used only for logging data and network protection events and will capture these events without any custom rules and flow them automatically. Be aware that auditd will be gradually removed in future versions.
+> eBPF will be used in conjunction with auditd where auditd will be used only for user login events and will capture these events without any custom rules and flow them automatically. Be aware that auditd will be gradually removed in future versions.
 
 ## System prerequisites
 
