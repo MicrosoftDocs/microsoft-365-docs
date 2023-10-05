@@ -1,7 +1,7 @@
 ---
 title: Manage devices for frontline workers
 author: lana-chin
-ms.author: heidip
+ms.author: v-chinlana
 manager: serdars
 ms.reviewer: mabolan
 ms.topic: conceptual
