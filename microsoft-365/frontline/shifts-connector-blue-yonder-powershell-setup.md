@@ -1,7 +1,7 @@
 ---
 title: Use PowerShell to connect Shifts to Blue Yonder Workforce Management
 author: lana-chin
-ms.author: heidip
+ms.author: v-chinlana
 manager: serdars
 ms.reviewer: imarquesgil
 ms.topic: how-to
