@@ -34,7 +34,7 @@ monikerRange: 'o365-21vianet'
 
 Office 365 operated by 21Vianet is designed to meet the needs for secure, reliable and scalable cloud services in China. This service is powered by technology that Microsoft has licensed to 21Vianet.
 
-Microsoft does not operate the service itself. 21Vianet operates, provides, and manages delivery of the service. 21Vianet is the largest carrier-neutral Internet data center services provider in China, providing hosting, managed network services, and cloud computing infrastructure services. By licensing Microsoft technologies, 21Vianet operates local Office 365 datacenters to provide you the ability to use Office 365 services while keeping your data within China. 21Vianet also provides your subscription and billing services, as well as support.
+Microsoft doesn't operate the service itself. 21Vianet operates, provides, and manages delivery of the service. 21Vianet is the largest carrier-neutral Internet data center services provider in China, providing hosting, managed network services, and cloud computing infrastructure services. By licensing Microsoft technologies, 21Vianet operates local Office 365 datacenters to provide you with the ability to use Office 365 services while keeping your data within China. 21Vianet also provides your subscription and billing services, as well as support.
 
 > [!NOTE]
 > These services are subject to Chinese laws.
@@ -47,7 +47,7 @@ Scan this QR code to follow us on WeChat and get the latest updates for Office 3
 
  **About services in Office 365 operated by 21Vianet**
 
-The sections below highlight some of the differences you will find in each service. Ultimately our goal is to achieve parity with global services. However, due to the unique nature of the China services - operated by a partner from datacenters inside China - there are some features that have not yet been enabled. Customers will see the services come closer to full feature parity over time. For a more detailed look at services available for each Office 365 plan operated by 21Vianet, see the [Office 365 Service Description](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet).
+The following sections highlight some of the differences you'll find in each service. Ultimately our goal is to achieve parity with global services. However, due to the unique nature of the China services - operated by a partner from datacenters inside China - there are some features that haven't yet been enabled. Customers will see the services come closer to full feature parity over time. For a more detailed look at services available for each Office 365 plan operated by 21Vianet, see the [Office 365 Service Description](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet).
 
 If you would like to learn how to get started with general Office 365 services, see [Get started](../admin-overview/get-started-with-office-365.md).
 
@@ -55,18 +55,18 @@ If you would like to learn how to get started with general Office 365 services, 
 
 |Function|Availability|
 |---|---|
-|Custom domains|Administrators can create and/or use custom domains registered through Chinese-specific domain providers. If you don't have a custom domain, you can [How to buy a domain name](../get-help-with-domains/buy-a-domain-name.md) from a domain name registrar. If you already have one, [Find your domain registrar or DNS hosting provider](../get-help-with-domains/find-your-domain-registrar.md).  <br/> Additionally, if you create a public website using the Office 365 SharePoint Online service, China Internet compliance policy requires that you get an Internet Content Provider (ICP) number.  **Note:** Automatic validation for disallowed words in custom domain names is not available.|
+|Custom domains|Administrators can create and/or use custom domains registered through Chinese-specific domain providers. If you don't have a custom domain, you can [buy a domain name](../get-help-with-domains/buy-a-domain-name.md) from a domain name registrar. If you already have one, [Find your domain registrar or DNS hosting provider](../get-help-with-domains/find-your-domain-registrar.md).  <br/> Additionally, if you create a public website using the Office 365 SharePoint Online service, China Internet compliance policy requires that you get an Internet Content Provider (ICP) number.  **Note:** Automatic validation for disallowed words in custom domain names isn't available.|
 |Subscriptions, billing, and technical support|Provided by 21Vianet. For information on how to contact support, see [Contact Office 365 for business support](../../business-video/get-help-support.md).|
 |Self-service password reset|Available for admins only. For more information, see [Change or reset your password in Office 365 operated by 21Vianet](https://support.microsoft.com/office/d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b).|
 |Security, privacy, compliance, and details on levels of support|Provided by 21Vianet.|
-|Office Desktop Setup|Office desktop setup is not available for Office 2010 and Office 2007. However, administrators can [Configure current Office desktop applications to work with Office 365](https://support.microsoft.com/office/85646aba-7e6c-4e24-a047-8fd9ce4f9d2e).|
-|Mobile and device support\*|Coming soon are the following mobile features:  <br/>  Mobile Device Management (MDM)  <br/>  Blackberry Business Cloud Services (BBCS) is not available, but you can use Exchange ActiveSync devices or an offering from Research in Motion (RIM, the BlackBerry wireless email solution) to run Blackberry Enterprise Server (BES).  <br/>  For more information on mobile support, see [Set up and manage mobile access for your users](https://support.microsoft.com/office/01fff219-4492-40f2-82d3-fd2ffc0ad802).|
+|Office Desktop Setup|Office desktop setup isn't available for Office 2010 and Office 2007. However, administrators can [Configure current Office desktop applications to work with Office 365](https://support.microsoft.com/office/85646aba-7e6c-4e24-a047-8fd9ce4f9d2e).|
+|Mobile and device support\*|Coming soon are the following mobile features:  <br/>  Mobile Device Management (MDM)  <br/>  Blackberry Business Cloud Services (BBCS) isn't available, but you can use Exchange ActiveSync devices or an offering from Research in Motion (RIM, the BlackBerry wireless email solution) to run Blackberry Enterprise Server (BES).  <br/>  For more information on mobile support, see [Set up and manage mobile access for your users](https://support.microsoft.com/office/01fff219-4492-40f2-82d3-fd2ffc0ad802).|
 |Office Lens|Not available.|
 |Microsoft Planner|Coming soon.|
 |Microsoft Teams|Not available.|
 |Sway|Coming soon.|
 |Help in multiple languages|Help is available in Simplified Chinese and English only.|
-|Community-provided help|Community-provided help is not available yet, but you can select the Help button ( **?** ) in the upper right corner of your portal to see help articles.|
+|Community-provided help|Community-provided help isn't available yet, but you can select the Help button (**?**) in the upper right corner of your portal to see help articles.|
 
 \*Optional services provided directly by Microsoft, and subject to Microsoft's Terms of Service and privacy statements.
 
@@ -74,14 +74,14 @@ If you would like to learn how to get started with general Office 365 services, 
 
 |Function|Availability|
 |---|---|
-|Sharing a document, library, or site by email with someone outside of your organization|This feature is available, but off by default as using it could make files shared accessible outside of your country/region. Administrators do have the ability to turn it on, but will get a warning message indicating that it could make files shared accessible outside of your country/region. Users who attempt to share with someone outside of the organization will also receive a warning. For more information, see [Share SharePoint files or folders in Office 365](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c).|
-|Access Services|Access 2013 is supported, but adding new Access apps may not be available as this feature will be retired from Office 365 and SharePoint Online. Creation of new Access-based web apps and Access web databases in Office 365 and SharePoint Online will stop starting in June 2017 and any remaining web apps and web databases by April 2018. Additionally, Access 2010 functionality is not supported, and attempting to use an Access 2010 database will result in errors and possible data loss.|
+|Sharing a document, library, or site by email with someone outside of your organization|This feature is available, but off by default as using it could make file shares accessible outside of your country/region. Administrators do have the ability to turn it on, but will get a warning message indicating that it could make file shares accessible outside of your country/region. Users who attempt to share with someone outside of the organization will also receive a warning. For more information, see [Share SharePoint files or folders in Office 365](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c).|
+|Access Services|Access 2013 is supported, but adding new Access apps may not be available as this feature will be retired from Office 365 and SharePoint Online. Creation of new Access-based web apps and Access web databases in Office 365 and SharePoint Online will stop starting in June 2017 and any remaining web apps and web databases by April 2018. Additionally, Access 2010 functionality isn't supported, and attempting to use an Access 2010 database will result in errors and possible data loss.|
 |Microsoft Power Apps|Microsoft Power Apps and Microsoft Power Automate are now available to customers in regulated industries and commercial organizations that do business with tables in China and require local data residency.|
 |Information Rights Management (IRM)|The ability to set IRM capabilities to SharePoint for your organization is coming soon.|
-|Ability to translate text or pages|Available, but off by default. Tenant admins can turn this ability on, but the translation cloud service may be located outside your country/region. If you do not want users to send content to a translation cloud service, you may keep these features disabled.|
+|Ability to translate text or pages|Available, but off by default. Tenant admins can turn on this ability, but the translation cloud service may be located outside your country/region. If you don't want users to send content to a translation cloud service, you may keep these features disabled.|
 |Public website ICP registration|China Internet compliance policy requires that you get an Internet Content Provider (ICP) number for your public website.|
-|Public website features|Public websites are available only if you purchased Office 365 before March 9, 2015. However, Bing maps, external sharing, and comments are not available in a public web site as these features may send data outside of your country/region.|
-|Newsfeed and Viva Engage (enterprise social networks)|Newsfeed (the social hub where you'll see updates from the people, documents, sites, and tags you're following) is available. Viva Engage is unavailable.|
+|Public website features|Public websites are available only if you purchased Office 365 before March 9, 2015. However, Bing maps, external sharing, and comments aren't available in a public web site as these features may send data outside of your country/region.|
+|Newsfeed and Viva Engage (enterprise social networks)|Newsfeed (the social hub where you see updates from the people, documents, sites, and tags you're following) is available. Viva Engage is unavailable.|
 |Autohosted apps|You can deploy a provider-hosted app that uses SharePoint and SQL Azure. For more information, see [Create a basic provider hosted app for SharePoint](/sharepoint/dev/sp-add-ins/get-started-creating-provider-hosted-sharepoint-add-ins). Coming soon is the ability for developers to deploy an app that uses an autohosted web site.|
 |InfoPath|Not available.|
 |SharePoint Store|The Office and SharePoint App Stores are optional services operated by Microsoft Corporation or its affiliate from any of Microsoft's worldwide facilities. The apps available in the Store are provided by various app publishers, and are subject to the app publisher's terms and conditions and privacy statement. Your use of any of these apps may result in your data being transferred to, stored, or processed in any country/region where the app publisher, its affiliates or service providers maintain facilities. Please carefully review the app publisher's terms and conditions and privacy statements before downloading and using such apps.|
@@ -100,7 +100,7 @@ If you would like to learn how to get started with general Office 365 services, 
 |Sharing contacts|Coming soon.|
 |Message tracking|Coming soon.|
 |Apps|Coming soon.|
-|Places feature|This feature shows maps of addresses in email; because it may allow data outside of your country/region, it is not available.|
+|Places feature|This feature shows maps of addresses in email; because it may allow data outside of your country/region, it isn't available.|
 |Connected Accounts|Connecting to other accounts such as Hotmail (Outlook.com) is coming soon.|
 
 ## Exchange
