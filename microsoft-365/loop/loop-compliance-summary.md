@@ -70,7 +70,7 @@ The following section applies to Loop components stored in OneDrive (created out
 - **[Information Barriers](/purview/information-barriers-sharepoint)**
 
 #### Customer Key
-- **[Customer Lockbox](/purview/customer-lockbox-requests)
+- **[Customer Lockbox](/purview/customer-lockbox-requests)**
 
 
 ### Capabilities that are Not Yet Available
@@ -95,6 +95,9 @@ The following sections apply to Loop workspace content stored in Microsoft Synte
 - **GDPR** data subject requests as part of the [Security and Compliance admin center](/compliance/regulatory/gdpr-data-subject-requests#data-subject-request-admin-tools) and [Purview eDiscovery workflows](/purview/ediscovery)
 - **EUDB** compliance - [What is the EU Data Boundary?](/privacy/eudb/eu-data-boundary-learn)
 
+#### Admin Management
+- **[Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo)** capabilities, including creation of .loop files in a user's Loop workspaces in the geo that matches the user's [preferred data location](/microsoft-365/enterprise/plan-for-multi-geo#best-practices). 
+
 #### Audit
 - **Version History** [export in Purview](/purview/ediscovery-export-search-results#step-1-prepare-search-results-for-export)
 - **Audit** logs for all events: search and export Microsoft 365 service events for security and compliance investigations
@@ -110,10 +113,10 @@ The following sections apply to Loop workspace content stored in Microsoft Synte
 - **[Retention Policies](/microsoft-365/compliance/retention-policies-sharepoint)** configured for 'all SharePoint sites' are enforced on all Loop workspaces
 
 #### Information Barriers
-- **[Information Barriers](/purview/information-barriers-sharepoint)
+- **[Information Barriers](/purview/information-barriers-sharepoint)**
 
 #### Customer Key
-- **[Customer Lockbox](/purview/customer-lockbox-requests)
+- **[Customer Lockbox](/purview/customer-lockbox-requests)**
 
 
 ### Capabilities that are Not Yet Available
@@ -122,6 +125,7 @@ The following sections apply to Loop workspace content stored in Microsoft Synte
 - PowerShell ability to
   - list all Loop workspaces
   - view comprehensive details of a specific workspace such as storage and membership
+  - **[Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo)** rehome of Loop workspaces and .loop files as needed.
   - delete and restore Loop workspaces
   - get and set sensitivity labels
   - get and set conditional access policy
@@ -130,7 +134,6 @@ The following sections apply to Loop workspace content stored in Microsoft Synte
 - Loop workspace management: multiple owners for lifecycle management
 - Basic **Intune** [Device Management Support](/mem/intune/remote-actions/device-management) for Loop app on iOS and Android
 - Basic **[Conditional Access](/sharepoint/control-access-from-unmanaged-devices)** support
-- Multi-Geo capabilities, including creation of Loop workspaces in the geo that matches the user's preferred data location and moving their Loop workspaces to a different geo when the user's preferred data location changes. Loop workspaces are moved in the same manner as the user's OneDrive, when the user's preferred data location is updated. 
 
 We plan to expand our administrative workspace management capabilities via PowerShell. Furthermore, we plan to make these administrative functions accessible in SharePoint Admin Center.
 

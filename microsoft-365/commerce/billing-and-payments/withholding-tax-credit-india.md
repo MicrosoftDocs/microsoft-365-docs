@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, nicholak, martinl, melmar
+ms.reviewer: jkinma, nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
@@ -20,9 +20,10 @@ description: "Learn how to request a credit on your account for Withholding Tax 
 ms.custom: 
 - commerce_billing
 - AdminSurgePortfolio
+- martinl, melmar
 ROBOTS: NOINDEX, NOFOLLOW
 monikerRange: 'o365-worldwide'
-ms.date: 03/31/2023
+ms.date: 10/04/2023
 ---
 
 # Request a credit for Withholding Tax on your account (India customers)
