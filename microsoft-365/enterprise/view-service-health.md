@@ -100,7 +100,7 @@ The advisory or incident summary provides the following information:
 
 ### Translate service health details
 
-We use machine translation to automatically display messages in your preferred language. Read [Language translation for Service health dashboard](lang-service-health.md) for more information on how to set your language.
+We use machine translation to automatically display messages in your preferred language. Read [Language translation for Service health dashboard](#language-translation-for-service-health-dashboard) for more information on how to set your language.
 
 ### Definitions
 

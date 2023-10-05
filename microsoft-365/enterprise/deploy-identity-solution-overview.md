@@ -30,13 +30,13 @@ Check out all of our small business content on [Small business help & learning](
 
 In Microsoft 365 for enterprise, a well-planned and executed identity infrastructure paves the way for stronger security, including restricting access to your productivity workloads and their data to only authenticated users and devices. Security for identities is a key element of a Zero Trust deployment, in which all attempts to access resources both on-premises and in the cloud are authenticated and authorized.
 
-For information about the identity features of each Microsoft 365 for enterprise, the role of Azure Active Directory (Azure AD), on-premises and cloud-based components, and the most common authentication configurations, see the [Identity Infrastructure poster](../downloads/m365e-identity-infra.pdf).
+For information about the identity features of each Microsoft 365 for enterprise, the role of Azure Active Directory (Azure AD), on-premises and cloud-based components, and the most common authentication configurations, see the [Identity Infrastructure poster](https://download.microsoft.com/download/a/e/1/ae1a5a93-e0ec-43e5-bfe6-0e8acaaee1af/m365e-identity-infra.pd).
 
-[![The Identity Infrastructure poster.](../downloads/m365e-identity-infra.png)](../downloads/m365e-identity-infra.pdf)
+[![The Identity Infrastructure poster.](../downloads/m365e-identity-infra.png)](https://download.microsoft.com/download/a/e/1/ae1a5a93-e0ec-43e5-bfe6-0e8acaaee1af/m365e-identity-infra.pd)
 
 Review this two-page poster to quickly ramp up on identity concepts and configurations for Microsoft 365 for enterprise.
 
-You can [download this poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf) and can print it in letter, legal, or tabloid (11 x 17) format.
+You can [download this poster](https://download.microsoft.com/download/a/e/1/ae1a5a93-e0ec-43e5-bfe6-0e8acaaee1af/m365e-identity-infra.pd) and can print it in letter, legal, or tabloid (11 x 17) format.
 
 This solution is the first step to build out the Microsoft 365 Zero Trust deployment stack.
 
