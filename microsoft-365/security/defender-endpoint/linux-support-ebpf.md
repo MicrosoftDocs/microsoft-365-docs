@@ -80,11 +80,11 @@ sudo mdatp config ebpf-supplementary-event-provider --value [enabled/disabled]
 
 ### Immutable mode of Auditd
 
-After enabling eBPF, customers using auditd in immutable mode must reboot their system in order to clear the audit rules added by Microsoft Defender for Endpoint. This is because immutable mode of auditd freezes the rules file and prevents it from being edited or overwritten. To verify that the audit rules have been cleared, run the following command after the reboot.
+After enabling eBPF, customers using auditd in immutable mode must reboot their system in order to clear the audit rules added by Microsoft Defender for Endpoint. This is because immutable mode of auditd freezes the rules file and prevents it from being edited or overwritten. To verify that the audit rules have been cleared, run the following command after the reboot:
 
 ```bash
 % sudo auditctl -l
-
+```
 The output of the command should show no rules or any user added rules. If the rules weren't removed, follow these steps to clear the audit rules file:
 
   1. Switch to ebpf mode
