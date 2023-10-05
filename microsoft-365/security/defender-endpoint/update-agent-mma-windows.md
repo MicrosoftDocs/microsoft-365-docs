@@ -38,7 +38,7 @@ If you're using the Microsoft Monitoring Agent (MMA) on Windows devices, it's im
 
 - To help you identify older versions of the MMA inside of your organization, you can use the "EOSDate" column in advanced hunting. Or, follow the instructions in [Plan for end-of-support software and software versions](/microsoft-365/security/defender-vulnerability-management/tvm-end-of-support-software) to use the vulnerability management feature inside of Microsoft Defender for Endpoint to track remediation.
 
-- See [Manage and maintain the Log Analytics agent for Windows and Linux](/azure/azure-monitor/agents/agent-manage?tabs=PowerShellLinux) for instructions on how to upgrade the agent using Azure Automation or a command line approach for use with various deployment tools and methods at your disposal. 
+- See [Manage and maintain the Log Analytics agent for Windows and Linux](/azure/azure-monitor/agents/agent-manage?tabs=PowerShellLinux) for instructions on how to upgrade the agent using Azure Automation or a command-line approach to use with various deployment tools and methods. 
 
 - Update MMA by using [Microsoft Update](/windows/deployment/update/how-windows-update-works), through [Windows Server Update Services](/windows/deployment/update/waas-manage-updates-wsus) or [Configuration Manager](/mem/configmgr/osd/deploy-use/manage-windows-as-a-service). Use the method that was configured when MMA was first installed on the device.
 
