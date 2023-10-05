@@ -43,7 +43,7 @@ You must be a global or billing admin to view the subscriptions for your organiz
 
 ## Find out what subscriptions you have
 
-1. Go to the Microsoft 365 admin center.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
    - If you’re using the **Simplified view**, select **Subscriptions**.
    - If you’re using the **Dashboard view**, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. You see a list of all your subscriptions. Each line includes information about the product name, the number of assigned licenses, the total number of licenses, and the subscription status.
