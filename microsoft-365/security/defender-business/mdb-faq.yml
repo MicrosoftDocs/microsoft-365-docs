@@ -135,7 +135,7 @@ sections:
           - [Overview of Defender for Business](mdb-overview.md)
           - [Compare Defender for Business to Microsoft 365 Business Premium](compare-mdb-m365-plans.md)
 
-          Microsoft 365 Business Premium also includes [Microsoft Defender for Office 365 Plan 1](/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet), which provides protection for your company's email and Office files.
+          Microsoft 365 Business Premium also includes [Microsoft Defender for Office 365 Plan 1](/microsoft-365/security/office-365-security/mdo-security-comparison#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet), which provides protection for your company's email and Office files.
 
       - question: What are the differences between Defender for Business and Defender for Endpoint Plans 1 and 2?
         answer: |

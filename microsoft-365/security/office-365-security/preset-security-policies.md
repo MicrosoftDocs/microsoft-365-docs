@@ -20,7 +20,7 @@ search.appverid: met150
 ms.date: 9/19/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
@@ -30,7 +30,7 @@ appliesto:
 
 _Preset security policies_ allow you to apply protection features to users based on our recommended settings. Unlike custom policies that are infinitely configurable, virtually all of the settings in preset security policies aren't configurable, and are based on our observations in the datacenters. The settings in preset security policies provide a balance between keeping harmful content away from users while avoiding unnecessary disruptions.
 
-Depending on your organization, preset security policies provide many of the protection features that are available in [Exchange Online Protection (EOP)](eop-about.md) and [Microsoft Defender for Office 365](microsoft-defender-for-office-365-product-overview.md).
+Depending on your organization, preset security policies provide many of the protection features that are available in [Exchange Online Protection (EOP)](eop-about.md) and [Microsoft Defender for Office 365](mdo-security-comparison.md).
 
 The following preset security policies are available:
 

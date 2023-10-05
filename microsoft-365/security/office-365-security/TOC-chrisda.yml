@@ -4,12 +4,12 @@
   items:
    - name: Overview
      items:
-       - name: Microsoft Defender for Office 365 security product overview
-         href: microsoft-defender-for-office-365-product-overview.md
+       - name: Microsoft Defender for Office 365 overview
+         href: mdo-about.md
        - name: Exchange Online Protection overview
          href: eop-about.md
-       - name: Why do I need Microsoft Defender for Office 365?
-         href: why-do-i-need-microsoft-defender-for-office-365.md
+       - name: Defender for Office 365 security comparison
+         href: mdo-security-comparison.md
        - name: What's new in Defender for Office 365
          href: defender-for-office-365-whats-new.md
    - name: Get started
@@ -480,8 +480,6 @@
        href: siem-integration-with-office-365-ti.md
      - name: Privileged identity management in Defender for Office 365
        href: use-privileged-identity-management-in-defender-for-office-365.md
-     - name: Anonymous inbound email messages over IPv6
-       href: mail-flow-inbound-ipv6-support-about.md
      - name: Support for DKIM-signed messages
        href: email-authentication-dkim-support-about.md
      - name: Install Application Guard for Office
@@ -490,8 +488,6 @@
        items:
        - name: Delegated administration FAQ
          href: delegated-administration-faq.yml
-       - name: EOP queued, deferred, and bounced messages FAQ
-         href: mail-flow-delivery-faq.yml
    - name: Microsoft 365 Defender docs
      items:
        - name: Microsoft 365 Defender

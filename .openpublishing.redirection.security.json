@@ -2307,8 +2307,8 @@
       },
       {
          "source_path":"microsoft-365/security/office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md",
-         "redirect_url":"/microsoft-365/security/office-365-security/mail-flow-inbound-ipv6-support-about",
-         "redirect_document_id":true
+         "redirect_url":"/microsoft-365/security/office-365-security/mail-flow-about#support-for-anonymous-inbound-email-over-ipv6",
+         "redirect_document_id":false
       },
       {
          "source_path":"microsoft-365/security/office-365-security/troubleshooting-mail-sent-to-office-365.md",
@@ -2617,7 +2617,7 @@
       },
       {
          "source_path":"microsoft-365/security/office-365-security/defender-for-office-365.md",
-         "redirect_url":"/microsoft-365/security/office-365-security/why-do-i-need-microsoft-defender-for-office-365",
+         "redirect_url":"/microsoft-365/security/office-365-security/mdo-about",
          "redirect_document_id":false
       },
       {
@@ -2803,6 +2803,21 @@
        {
          "source_path":"microsoft-365/security/office-365-security/eop-faq.yml",
          "redirect_url":"/microsoft-365/security/office-365-security/eop-about",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/mail-flow-inbound-ipv6-support-about.md",
+         "redirect_url":"/microsoft-365/security/office-365-security/mail-flow-about#support-for-anonymous-inbound-email-over-ipv6",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/why-do-i-need-microsoft-defender-for-office-365.md",
+         "redirect_url":"/microsoft-365/security/office-365-security/mdo-about",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview.md",
+         "redirect_url":"/microsoft-365/security/office-365-security/mdo-security-comparison",
          "redirect_document_id":false
        },
        {

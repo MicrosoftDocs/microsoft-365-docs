@@ -5,7 +5,7 @@
    - name: Overview
      items:
        - name: Microsoft Defender for Office 365 security product overview
-         href: microsoft-defender-for-office-365-product-overview.md
+         href: mdo-security-comparison.md
        - name: Exchange Online Protection overview
          href: eop-about.md
        - name: Why do I need Microsoft Defender for Office 365?
