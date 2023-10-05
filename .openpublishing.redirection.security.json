@@ -2302,7 +2302,7 @@
       },
       {
          "source_path":"microsoft-365/security/office-365-security/eop-queued-deferred-and-bounced-messages-faq.yml",
-         "redirect_url":"/microsoft-365/security/office-365-security/mail-flow-delivery-faq",
+         "redirect_url":"/microsoft-365/security/office-365-security/mail-flow-about#mail-flow-delivery-faq",
          "redirect_document_id":true
       },
       {
