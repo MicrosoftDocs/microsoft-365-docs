@@ -53,7 +53,7 @@ If you're using the Microsoft Monitoring Agent (MMA) on Windows devices, it's im
 
 A new agent was released in April 2022 for Windows Server 2012 R2 and Windows Server 2016. The new agent doesn't depend on MMA. There are significant benefits to moving to this new agent, such as a vastly extended feature set. To learn more, see [Tech Community Blog: Defending Windows Server 2012 R2 and 2016](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/defending-windows-server-2012-r2-and-2016/ba-p/2783292).
 
-- Microsoft Defender Vulnerability Management provides an assessment (SCID-2030) titled "Update Microsoft Defender for Endpoint core components" that will allow you to track which Windows Server 2012 R2 and 2016 machines haven't yet been upgraded.
+- Microsoft Defender Vulnerability Management provides an assessment (SCID-2030) titled "Update Microsoft Defender for Endpoint core components" that allows you to track which Windows Server 2012 R2 or Windows Server 2016 machines haven't been upgraded yet.
 
 - See [Server migration scenarios from the previous, MMA-based Microsoft Defender for Endpoint solution](server-migration.md) to understand your options for upgrading to the new agent.
 
