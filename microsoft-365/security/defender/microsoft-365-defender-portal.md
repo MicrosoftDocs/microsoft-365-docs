@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 Defender portal
-description: The Microsoft 365 Defender portal combines protection, detection, investigation, and response to email, collaboration, identity, device, and app threats, in a central place.
+description: Learn about the Microsoft 365 Defender portal as the central location for protection, detection, investigation, and response to email, collaboration, identity, device, and app threats,.
 keywords: introduction to MMicrosoft 365 Defender, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -24,24 +24,25 @@ ms.custom:
   - intro-overview
 ms.topic: conceptual
 adobe-target: true
-ms.date: 07/13/2023
+ms.date: 10/5/2023
 ---
 
 # Microsoft 365 Defender portal
 
-The [Microsoft 365 Defender portal](https://sip.security.microsoft.com/homepage) combines protection, detection, investigation, and response to email, collaboration, identity, device, and cloud app threats, in a central place. The Microsoft 365 Defender portal emphasizes quick access to information, simpler layouts, and bringing related information together for easier use. It includes:
+The Microsoft 365 Defender portal at <https://security.microsoft.com> combines protection, detection, investigation, and response to email, collaboration, identity, device, and cloud app threats, in a central place. The Defender portal emphasizes quick access to information, simpler layouts, and bringing related information together for easier use. It includes:
 
 - **[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)** Microsoft Defender for Office 365 helps organizations secure their enterprise with a set of prevention, detection, investigation and hunting features to protect email, and Office 365 resources.
 - **[Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection)** delivers preventative protection, post-breach detection, automated investigation, and response for devices in your organization.
-- **[Microsoft Defender for Identity](/defender-for-identity/what-is)** is a cloud-based security solution that leverages your on-premises Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization.
+- **[Microsoft Defender for Identity](/defender-for-identity/what-is)** is a cloud-based security solution that uses your on-premises Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization.
 - **[Microsoft Defender for Cloud Apps](/cloud-app-security/)** is a comprehensive cross-SaaS and PaaS solution bringing deep visibility, strong data controls, and enhanced threat protection to your cloud apps.
 
-Watch this short video to learn about the Microsoft 365 Defender portal.
+Watch this short video to learn about the Defender portal.
+
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBKau]
 
 ## What to expect
 
-The Microsoft 365 Defender portal helps security teams investigate and respond to attacks by bringing in signals from different workloads into a set of unified experiences for:
+The Defender portal helps security teams investigate and respond to attacks by bringing in signals from different workloads into a set of unified experiences for:
 
 - Incidents & alerts
 - Hunting
@@ -55,7 +56,7 @@ The Microsoft 365 Defender portal helps security teams investigate and respond t
 Microsoft 365 Defender emphasizes *unity, clarity, and common goals*.
 
 > [!NOTE]
-> The Microsoft 365 Defender portal is accessible without any need for customers to take migration steps or purchase a new license. For example, this new portal is accessible to administrators with an E3 subscription, just as it is to those with Microsoft Defender for Office 365 Plan 1 and Plan 2; however, Exchange Online Protection, or Defender for Office 365 Plan 1 customers see only the security features their subscription license supports. The goal of the portal is to centralize security.
+> The Defender portal is accessible without any need for customers to take migration steps or purchase a new license. For example, this new portal is accessible to administrators with an E3 subscription, just as it is to those with Microsoft Defender for Office 365 Plan 1 and Plan 2; however, Exchange Online Protection, or Defender for Office 365 Plan 1 customers see only the security features their subscription license supports. The goal of the portal is to centralize security.
 
 ## Incident and alert investigations
 
@@ -63,7 +64,7 @@ Centralizing security information creates a single place for investigating secur
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="The Incidents page in the Microsoft 365 Defender portal." lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
-Selecting an incident name displays a page that demonstrates the value of centralizing security information as you'll have better insights into the full extend of a threat, from email, to identity, to endpoints.
+Selecting an incident name displays a page that demonstrates the value of centralizing security information as you get better insights into the full extend of a threat, from email, to identity, to endpoints.
 
 :::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Screenshot that shows the attack story page for an incident in the Microsoft 365 Defender portal." lightbox="../../media/incidents-overview/incidents-ss-incident-summary.png":::
 
@@ -93,14 +94,13 @@ Access to Microsoft 365 Defender is configured with Azure AD global roles or by 
 - Learn more about how to [manage access to Microsoft 365 Defender](m365d-permissions.md)
 - Learn more about how to [create custom roles](custom-roles.md) in Microsoft 365 Defender
 
-
 ### Integrated reports
 
 Reports are also unified in Microsoft 365 Defender. Admins can start with a general security report, and branch into specific reports about endpoints, email & collaboration. The links here are dynamically generated based upon workload configuration.
 
 ### Quickly view your Microsoft 365 environment
 
-The **Home** page shows many of the common cards that security teams need. The composition of cards and data is dependent on the user role. Because Microsoft 365 Defender portal uses role-based access control, different roles will see cards that are more meaningful to their day to day jobs.
+The **Home** page shows many of the common cards that security teams need. The composition of cards and data is dependent on the user role. Because the Defender portal uses role-based access control, different roles see cards that are more meaningful to their day to day jobs.
 
 This at-a-glance information helps you keep up with the latest activities in your organization. Microsoft 365 Defender brings together signals from different sources to present a holistic view of your Microsoft 365 environment.
 
@@ -136,14 +136,13 @@ Threat analytics is the Microsoft 365 Defender threat intelligence solution from
 
 ## Learning Hub
 
-<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> includes a learning hub that provides guidance from resources such as the Microsoft security blog, the Microsoft security community on YouTube, and the official documentation.
+The Defender portal includes a learning hub that provides guidance from resources such as the Microsoft security blog, the Microsoft security community on YouTube, and the official documentation.
 
-> [!NOTE]
+> [!TIP]
 > There are helpful **filters** along the top of Microsoft 365 Defender learning hub that will let you choose between products (currently Microsoft 365 Defender, Microsoft Defender for Endpoint, and Microsoft Defender for Office 365). Notice that the number of learning resources for each section is listed, which can help learners keep track of how many resources they have at hand for training and learning.
 >
 > Along with the Product filter, current topics, types of resources (from videos to webinars), levels of familiarity or experience with security areas, security roles, and product features are listed.
-
-> [!TIP]
+>
 > There are lots of other learning opportunities in [Microsoft Learn](/training/). You'll find certification training such as [Course MS-500T00: Microsoft 365 Security Administration](/training/courses/ms-500t00).
 
 ## Partner catalog
@@ -157,7 +156,7 @@ Microsoft 365 Defender supports two types of partners:
 
 We need your feedback. We're always looking to improve, so if there's something you'd like to see, [watch this video to find out how you can trust us to read your feedback](https://www.microsoft.com/videoplayer/embed/RE4K5Ci).
 
-## Explore what the Microsoft 365 Defender portal has to offer
+## Explore what the Defender portal has to offer
 
 Keep exploring the features and capabilities in Microsoft 365 Defender:
 
@@ -185,4 +184,5 @@ With this learning path from Microsoft Learn, you can understand Microsoft 365 D
 - [What's new in Microsoft 365 Defender](whats-new.md)
 - [Microsoft Defender for Office 365 in Microsoft 365 Defender](microsoft-365-security-center-mdo.md)
 - [Microsoft Defender for Endpoint in Microsoft 365 Defender](microsoft-365-security-center-mde.md)
+
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
