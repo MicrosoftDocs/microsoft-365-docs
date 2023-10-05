@@ -61,31 +61,33 @@ The eBPF sensor for Microsoft Defender for Endpoint on Linux is supported on the
 | Oracle Linux RHCK  | 7.9                  | 3.10.0-1160    |
 | Oracle Linux UEK   | 7.9                  | 5.4            |
 
-When the eBPF sensor is enabled on an endpoint, Defender for Endpoint on Linux updates supplementary_events_subsystem to ebpf.
+
 
 ## Use eBPF
 
-The eBPF sensor will be automatically enabled for all customers by default for agent versions “101.23082.0006” and above. Customers need to update to the above-mentioned supported versions to experience the feature. In the event eBPF doesn't become enabled or is not supported on any specific kernel, it will automatically switch back to auditd and retain all auditd custom rules. In case you want to manually disable eBPF then you can run the below command -
+The eBPF sensor will be automatically enabled for all customers by default for agent versions “101.23082.0006” and above. Customers need to update to the above-mentioned supported versions to experience the feature. 
 
+When the eBPF sensor is enabled on an endpoint, Defender for Endpoint on Linux updates supplementary_events_subsystem to ebpf.
 :::image type="content" source="../../media/defender-endpoint/ebpf-subsystem-linux.png" alt-text="ebpf subsystem highlight in the mdatp health command" lightbox="../../media/defender-endpoint/ebpf-subsystem-linux.png":::
 
+In case you want to manually disable eBPF then you can run the below command -
 ```bash
 sudo mdatp config ebpf-supplementary-event-provider --value [enabled/disabled]
 ```
-
 > [!IMPORTANT]
 > If you disable eBPF, the supplementary event provider switches back to auditd.
->
-> [!NOTE]
-> For customers using auditd in immutable mode, a reboot is required post enablement of eBPF in order to clear the audit rules file. This is a limitation in immutable mode of auditd which freezes the rules file and prohibits editing/overwriting. This is resolved with the reboot.
-> Post reboot, run the below command to check if audit rules got cleared.
+> In the event eBPF doesn't become enabled or is not supported on any specific kernel, it will automatically switch back to auditd and retain all auditd custom rules. 
+
+## Immutable mode of Auditd
+For customers using auditd in immutable mode, a reboot is required post enablement of eBPF in order to clear the audit rules added by Microsoft Defender for Endpoint. This is a limitation in immutable mode of auditd which freezes the rules file and prohibits editing/overwriting. This is resolved with the reboot.
+Post reboot, run the below command to check if audit rules got cleared.
 ```bash
 % sudo auditctl -l
 ```
-> The output of above command should show no rules. In case the rules did not get removed, then perform the following steps to clear the audit rules file
-> 1. Switch to ebpf mode
-> 2. Remove the file /etc/audit/rules.d/mdatp.rules
-> 3. Reboot the machine
+The output of above command should show no rules or any user added rules. In case the rules did not get removed, then perform the following steps to clear the audit rules file
+  1. Switch to ebpf mode
+  2. Remove the file /etc/audit/rules.d/mdatp.rules
+  3. Reboot the machine
 
 ### Troubleshooting and diagnostics
 
