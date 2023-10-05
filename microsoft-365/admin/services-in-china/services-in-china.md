@@ -25,7 +25,7 @@ search.appverid:
 - MET150
 - GEU150
 - GEA150
-ROBOTS: NOINDEX
+ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn more about Office 365 operated by 21Vianet that is designed to meet the needs for secure, reliable and scalable cloud services in China."
 monikerRange: 'o365-21vianet'
 ---
