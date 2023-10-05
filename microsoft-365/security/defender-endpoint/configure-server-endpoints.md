@@ -146,13 +146,12 @@ You'll need to download both the **installation** and **onboarding** packages fr
 > The installation package is updated monthly. Be sure to download the latest package before usage.
 > To update after installation, you do not have to run the installer package again. If you do, the installer will ask you to offboard first as that is a requirement for uninstallation. See [Update packages for Microsoft Defender for Endpoint on Windows Server 2012 R2 and 2016](#update-packages-for-microsoft-defender-for-endpoint-on-windows-server-2012-r2-and-2016).
 
-> [!div class="mx-imgBorder"]
-> ![Image of onboarding dashboard](images/install-agent-onboard.png)
+:::image type="content" alt-text="Image of onboarding dashboard" source="images/install-agent-onboard.png" lightbox="images/install-agent-onboard.png":::
 
-   > [!NOTE]
-   > On Windows Server 2012R2, Microsoft Defender Antivirus will get installed by the installation package and will be active unless you set it to passive mode. On Windows Server 2016, Microsoft Defender Antivirus must be installed as a feature (see [Switch to MDE](/microsoft-365/security/defender-endpoint/switch-to-mde-phase-2#re-enable-microsoft-defender-antivirus-on-windows-server-2016)) first and fully updated before proceeding with the installation.
-   >
-   > If you are running a non-Microsoft anti-malware solution ensure you add exclusions for Microsoft Defender Antivirus ([from this list of Microsoft Defender Processes on the Defender Processes tab](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)) to the non-Microsoft solution before installation.  It is also recommended to add non-Microsoft security solutions to the Defender Antivirus exclusion list.
+> [!NOTE]
+> On Windows Server 2012R2, Microsoft Defender Antivirus will get installed by the installation package and will be active unless you set it to passive mode. On Windows Server 2016, Microsoft Defender Antivirus must be installed as a feature (see [Switch to MDE](/microsoft-365/security/defender-endpoint/switch-to-mde-phase-2#re-enable-microsoft-defender-antivirus-on-windows-server-2016)) first and fully updated before proceeding with the installation.
+>
+> If you are running a non-Microsoft anti-malware solution ensure you add exclusions for Microsoft Defender Antivirus ([from this list of Microsoft Defender Processes on the Defender Processes tab](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls-commercial.xlsx)) to the non-Microsoft solution before installation.  It is also recommended to add non-Microsoft security solutions to the Defender Antivirus exclusion list.
 
 The **installation package** contains an MSI file that installs the Microsoft Defender for Endpoint agent.
 
@@ -175,14 +174,14 @@ Follow these steps to download the packages:
 
 > [!IMPORTANT]
 >
-> - A local onboarding script is suitable for a proof of concept but should not be used for production deployment. For a production deployment, we recommend using Group Policy, or Microsoft Endpoint Configuration Manager.
+> A local onboarding script is suitable for a proof of concept but should not be used for production deployment. For a production deployment, we recommend using Group Policy, or Microsoft Endpoint Configuration Manager.
 
 ### STEP 2: Apply the installation and onboarding package
 
 In this step, you'll install the prevention and detection components required before onboarding your device to the Microsoft Defender for Endpoint cloud environment, to prepare the machine for onboarding. Ensure all [prerequisites](#prerequisites) have been met.
 
-   > [!NOTE]
-   > Microsoft Defender Antivirus will get installed and will be active unless you set it to passive mode.
+> [!NOTE]
+> Microsoft Defender Antivirus will get installed and will be active unless you set it to passive mode.
 
 #### Options to install the Microsoft Defender for Endpoint packages
 
@@ -248,7 +247,7 @@ This script can be used in various scenarios, including those scenarios describe
 
 8. Go to the **Actions** tab and select **New...** Ensure that **Start a program** is selected in the **Action** field. The [installer script](server-migration.md#installer-script) handles the installation, and immediately perform the onboarding step after installation completes. Select *C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe* then provide the arguments:
 
-    ```console
+    ```powershell
      -ExecutionPolicy RemoteSigned \\servername-or-dfs-space\share-name\install.ps1 -OnboardingScript \\servername-or-dfs-space\share-name\windowsdefenderatponboardingscript.cmd
     ```
 
@@ -319,7 +318,7 @@ After onboarding the device, you can choose to run a detection test to verify th
     > [!NOTE]
     > This verification step is only required if you're using Microsoft Defender Antivirus as your active antimalware solution.
 
-    ```DOS
+    ```cmd
     sc.exe query Windefend
     ```
 
@@ -329,7 +328,7 @@ After onboarding the device, you can choose to run a detection test to verify th
 
 2. Run the following command to verify that Microsoft Defender for Endpoint is running:
 
-    ```DOS
+    ```cmd
     sc.exe query sense
     ```
 
