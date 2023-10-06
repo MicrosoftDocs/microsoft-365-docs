@@ -28,9 +28,9 @@ To help protect against human-operated attacks, [automatic attack disruption](..
 
 Automatic attack disruption is designed to:
 
-- Contain attacks in progress;
-- Limit the impact on your business assets (such as devices); and
-- Provide more time for your security team to remediate the attack fully. 
+- Contain human-operated attacks that are in progress;
+- Limit the impact of such attacks on your business assets (such as devices); and
+- Provide more time for your security team to remediate an attack fully. 
 
 Automatic attack disruption uses insights from Microsoft security researchers and advanced AI models to counteract the complexities of advanced attacks. It limits a threat actor's progress early on and dramatically reduces the overall impact of an attack, from associated costs to loss of productivity.
 
@@ -49,11 +49,11 @@ An Incident page provides details about the attack and up-to-date status of affe
 
 ## How to get automatic attack disruption
 
-1. Sign up for to receive preview features.
+1. Sign up for to receive preview features. See [Microsoft Defender for Business preview features](mdb-preview.md).
 
-2. Onboard all your organization's devices to Defender for Business.
+2. Onboard all your organization's devices to Defender for Business. See [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md).
 
-
+3. 
 
 ## See also
 
