@@ -43,9 +43,22 @@ An Incident page provides details about the attack and up-to-date status of affe
 - Disabling a user account - an account is automatically suspended
 
 
-## View details about an attack in the Action center
+## View details about an attack in the Microsoft 365 Defender portal
 
+Review the incident graph
+Microsoft 365 Defender automatic attack disruption is built-in in the Incident view. Reviewing the incident graph enables you to get the entire attack story and assess the attack disruption impact and status.
 
+Here are some examples of what it looks like:
+
+Disrupted incidents include a tag for 'Attack Disruption' and the specific threat type identified (i.e., ransomware). If you subscribe to incident email notifications, these tags also appear in the emails.
+A highlighted notification below the incident title indicating that the incident was disrupted.
+Suspended users and contained devices appear with a label indicating their status.
+To release a user account or a device from containment, click on the contained asset and click release from containment for a device or enable user for a user account.
+
+Track the actions in the Action center
+The Action center (https://security.microsoft.com/action-center) brings together remediation and response actions across your devices, email & collaboration content, and identities. Actions listed include remediation actions that were taken automatically or manually. You can view automatic attack disruption actions in the Action center.
+
+After you mitigate the risk and complete the investigation of an incident, you can release the contained assets from the action details pane (e.g., enable a disabled user account or release a device from containment). For more information about the action center, see Action center.
 
 ## How to get automatic attack disruption
 
