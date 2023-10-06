@@ -42,9 +42,9 @@ The Password reset page provides an overview of the tenants that have enabled SS
 
 ## Enable SSPR for a tenant
 
-1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Users** > **Password reset**.
+1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Users** > **Self-service password reset**.
 
-2. On the **Password reset** page, select a tenant from the list to open the details pane.
+2. On the **Self-service password reset** page, select a tenant from the list to open the details pane.
 
 3. Select **Edit SSPR settings in Azure Active Directory** to go to Azure Active Directory (Azure AD).
 
@@ -52,9 +52,9 @@ The Password reset page provides an overview of the tenants that have enabled SS
 
 ## Notify users to register for SSPR
 
-1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Users** > **Password reset**.
+1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Users** > **Self-service password reset**.
 
-2. On the **Password reset** page, select a tenant from the list to open the details pane.
+2. On the **Self-service password reset** page, select a tenant from the list to open the details pane.
 
 3. Select the users that you want to notify.
 

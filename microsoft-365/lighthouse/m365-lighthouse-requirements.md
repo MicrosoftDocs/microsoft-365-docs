@@ -37,7 +37,7 @@ In addition, each MSP customer tenant must meet the following requirements to be
     > [!NOTE]
     > Either granular delegated admin privileges (GDAP) or a delegated admin privileges (DAP) relationship is required to onboard customers to Lighthouse. An indirect reseller relationship is no longer required to onboard to Lighthouse. If DAP and GDAP coexist in a customer tenant, GDAP permissions take precedence for MSP technicians in GDAP-enabled security groups.
     > [!NOTE]
-    > To use Lighthouse to view opportunities in Sales advisor, you don’t need additional delegated access permissions from the customer.
+    > To use Lighthouse to view opportunities in Sales advisor, you don't need additional delegated access permissions from the customer.
 - Must have at least one license of Microsoft 365 Business Premium, Microsoft 365 E3, Microsoft 365 E5, Windows 365 Business, or Microsoft Defender for Business
 - Must have no more than 2500 licensed users
 - Must reside in the same geographic region (Americas, European Union, or Asia plus Australia) as the partner organization that manages them
@@ -53,7 +53,7 @@ To view customer tenant devices on the device management pages, an MSP must:
 
 ## Requirements for enabling user management
 
-For customer data to show up in reports on user management pages, including Risky users, Multifactor authentication, and Password reset, customer tenants must have licenses for Azure Active Directory Premium P1 or later. Azure AD Premium P1 is included with Microsoft 365 Business Premium and Microsoft 365 E3. Azure AD Premium P2 is included with Microsoft 365 E5.
+For customer data to show up in reports on user management pages, including Risky users, Multifactor authentication, and Self-service password reset, customer tenants must have licenses for Azure Active Directory Premium P1 or later. Azure AD Premium P1 is included with Microsoft 365 Business Premium and Microsoft 365 E3. Azure AD Premium P2 is included with Microsoft 365 E5.
 
 ## Requirements for enabling threat management
 
