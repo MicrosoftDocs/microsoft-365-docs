@@ -8,7 +8,7 @@
          href: mdo-about.md
        - name: Exchange Online Protection overview
          href: eop-about.md
-       - name: Microsoft Defender for Office 365 security comparison
+       - name: Defender for Office 365 security comparison
          href: mdo-security-comparison.md
        - name: What's new in Defender for Office 365
          href: defender-for-office-365-whats-new.md
@@ -22,8 +22,10 @@
        href: secure-by-default.md
      - name: Zero Trust for Defender for Office 365
        href: zero-trust-with-microsoft-365-defender-office-365.md
+     - name: Mail flow in EOP
+       href: mail-flow-about.md
      - name: Microsoft 365 Defender portal overview
-       href: ../defender/microsoft-365-defender.md
+       href: ../defender/microsoft-365-defender-portal.md
    - name: Evaluate
      items:
      - name: Try Defender for Office 365
@@ -32,19 +34,18 @@
        href: trial-user-guide-defender-for-office-365.md
    - name: Deploy
      items:
-     - name: Phase 1 - Email authentication
+     - name: Email authentication
+       href: email-authentication-about.md
        items:
-       - name: Email authentication
-         href: email-authentication-about.md
-       - name: Step 1 - Set up SPF to help prevent spoofing
+       - name: Step 1 - Set up SPF
          href: email-authentication-spf-configure.md
-       - name: Step 2 - Use DKIM to validate outbound email
+       - name: Step 2 - Set up DKIM
          href: email-authentication-dkim-configure.md
-       - name: Step 3 - Use DMARC to validate email
+       - name: Step 3 - Set up DMARC
          href: email-authentication-dmarc-configure.md
        - name: Use DMARC Reports to validate email
          href: email-authentication-dmarc-reports.md
-       - name: Use Trusted ARC senders for legitimate devices and services between the sender and receiver
+       - name: Configure trusted ARC sealers
          href: email-authentication-arc-configure.md
      - name: Phase 2 - Choose your installation path
        items:
@@ -480,8 +481,6 @@
        href: siem-integration-with-office-365-ti.md
      - name: Privileged identity management in Defender for Office 365
        href: use-privileged-identity-management-in-defender-for-office-365.md
-     - name: Anonymous inbound email messages over IPv6
-       href: mail-flow-inbound-ipv6-support-about.md
      - name: Support for DKIM-signed messages
        href: email-authentication-dkim-support-about.md
      - name: Install Application Guard for Office
