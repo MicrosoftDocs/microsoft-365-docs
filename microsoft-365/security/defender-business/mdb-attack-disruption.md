@@ -20,9 +20,9 @@ audience: Admin
 
 # Automatic attack disruption in Microsoft Defender for Business
 
-A human-operated attack is an active attack by cybercriminals who infiltrate an organization, elevate their privileges, navigate the network, and deploy ransomware or steal information. These types of attacks can be catastrophic to business operations, tend to be difficult to clean up, and sometimes continue to threaten business operations after the initial encounter. To learn more, see [Human-operated ransomware attacks](/security/ransomware/human-operated-ransomware#human-operated-ransomware-attacks).
+A human-operated attack is an active attack by cybercriminals who infiltrate an organization, elevate their privileges, navigate the network, and deploy ransomware or steal information. These types of attacks can be catastrophic to business operations, tend to be difficult to address, and sometimes continue to threaten business operations after the initial encounter. For more information, see [Human-operated ransomware attacks](/security/ransomware/human-operated-ransomware#human-operated-ransomware-attacks).
 
-To help protect against human-operated attacks, [automatic attack disruption](../defender/automatic-attack-disruption.md) capabilities were recently added to Microsoft 365 Defender. Now, these capabilities are coming to Defender for Business! 
+To help protect against human-operated attacks, [automatic attack disruption](../defender/automatic-attack-disruption.md) capabilities were recently added to Microsoft 365 Defender. Now, these capabilities are coming to Defender for Business! This article describes how automatic attack disruption works, how to view details about an attack, and how to get these capabilities.
 
 ## How automatic attack disruption works
 
