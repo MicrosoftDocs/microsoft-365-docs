@@ -51,9 +51,11 @@ EOP offers flexibility in how your messages are routed. The following articles e
 
 ## Verify mail flow
 
-To verify that your EOP setup, including your connector configuration, is working correctly, see the "How do you know this task worked?" section in [Set up your EOP service](/exchange/standalone-eop/set-up-your-eop-service).
+To verify that EOP mail flow is working correctly, use the following tests:
 
-[Test mail flow by validating your Microsoft 365 connectors](/exchange/mail-flow-best-practices/test-mail-flow) provides instructions for testing that your mail flow is set up correctly.
+- Send an email message from any web-based email account to a recipient in your Microsoft 365 organization.
+- Send an email messages from a user in your organization to a web-based email account.
+- If you configured connectors for email communication between an on-premises environment or a partner organization, you can use the built-in connector validation to test mail flow. For more information, see [Validate connectors in Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors).
 
 ## Support for anonymous inbound email over IPv6
 

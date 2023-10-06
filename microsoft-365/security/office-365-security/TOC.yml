@@ -45,7 +45,7 @@
        - name: Use DMARC Reports to validate email
          href: email-authentication-dmarc-reports.md
        - name: Use Trusted ARC senders for legitimate devices and services between the sender and receiver
-         href: use-arc-exceptions-to-mark-trusted-arc-senders.md
+         href: email-authentication-arc-configure.md
      - name: Phase 2 - Choose your installation path
        items:
        - name: Step 1 - installation path with or without EOP
