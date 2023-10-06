@@ -54,7 +54,7 @@ conceptualContent:
   # Card
     - title: What is Microsoft 365 Business Premium?
       links:
-        - url: ../business-premium/index.md
+        - url: ../business-premium/m365bp-overview.md
           itemType: overview
           text: Microsoft 365 Business Premium overview
         - url: ../business-premium/why-choose-microsoft-365-business-premium.md

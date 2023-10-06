@@ -26,7 +26,7 @@ ms.collection:
 
 Small and medium-sized businesses recognize that security is important, but they often don't have the capacity or expertise to have a dedicated security operations team. These customers often need help with setup and configuration, managing security for their devices and network, and addressing alerts or detected threats. Microsoft partners can help!
 
-If you're a Microsoft partner, and you're working with customers who have or need [Microsoft Defender for Business](mdb-overview.md), [Microsoft 365 Business Premium](../../business-premium/index.md), [Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md), or [Microsoft 365 E3](../../enterprise/microsoft-365-overview.md), this article is for you!
+If you're a Microsoft partner, and you're working with customers who have or need [Microsoft Defender for Business](mdb-overview.md), [Microsoft 365 Business Premium](../../business-premium/m365bp-overview.md), [Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md), or [Microsoft 365 E3](../../enterprise/microsoft-365-overview.md), this article is for you!
 
 - [Download our security guide and checklist](#download-our-security-guide-and-checklist-new) (NEW!)
 - [Learn how you can integrate Microsoft endpoint security with your RMM tools and PSA software](#integrate-microsoft-endpoint-security-with-your-rmm-tools-and-psa-software).
