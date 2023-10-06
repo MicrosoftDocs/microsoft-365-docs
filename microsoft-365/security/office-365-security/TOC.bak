@@ -247,7 +247,7 @@
        - name: Advanced delivery policies
          items:
          - name: Configure advanced delivery policies
-           href: skip-filtering-phishing-simulations-sec-ops-mailboxes.md
+           href: advanced-delivery-policy-configure.md
        - name: User tags and priority accounts
          items:
          - name: User tags in Defender for Office 365
@@ -369,7 +369,7 @@
         - name: Remove blocked entities
           items:
            - name: Remove blocked users
-             href: removing-user-from-restricted-users-portal-after-spam.md
+             href: outbound-spam-restore-restricted-users.md
            - name: Remove blocked connectors
              href: connectors-remove-blocked.md
         - name: Tune anti-phishing protection

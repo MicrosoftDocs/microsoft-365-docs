@@ -49,7 +49,7 @@ Delivering user reported messages to a reporting mailbox instead of directly to 
 
 Before you get started, you need to use the following steps to configure Exchange Online Protection and Defender for Office 365 so user reported messages are delivered to the reporting mailbox without being filtered:
 
-- Identify the reporting mailbox as a SecOps mailbox. For instructions, see [Use the Microsoft 365 Defender portal to configure SecOps mailboxes in the advanced delivery policy](skip-filtering-phishing-simulations-sec-ops-mailboxes.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
+- Identify the reporting mailbox as a SecOps mailbox. For instructions, see [Use the Microsoft 365 Defender portal to configure SecOps mailboxes in the advanced delivery policy](advanced-delivery-policy-configure.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy).
 
   > [!NOTE]
   > This step is especially important if you use [Attack simulation training](attack-simulation-training-get-started.md) or a third-party product to do phishing simulations. If you don't configure the reporting mailbox as a SecOps mailbox, a user reported message might trigger a training assignment by the phishing simulation product.

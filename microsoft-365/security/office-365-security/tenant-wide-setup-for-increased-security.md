@@ -55,7 +55,7 @@ We recommend turning on and using the Standard and/or Strict preset security pol
 - Difference in settings between Standard and Strict preset security policies: [Policy settings in preset security policies](preset-security-policies.md#policy-settings-in-preset-security-policies).
 - Complete list of all features and settings in default policies, Standard preset security policies, and Strict preset security policies: [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
 
-Custom policies are required if the business needs of your organization require policy settings that are *different than* or *aren't defined in* preset security policies. For more information, see [Determine your security policy strategy](mdo-deployment-guide.md#determine-your-security-policy-strategy).
+Custom policies are required if the business needs of your organization require policy settings that are *different than* or *aren't defined in* preset security policies. For more information, see [Determine your protection policy strategy](mdo-deployment-guide.md#determine-your-protection-policy-strategy).
 
 ## View dashboards and reports in the Microsoft 365 Defender portal
 

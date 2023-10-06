@@ -2037,17 +2037,17 @@
       },
       {
          "source_path":"microsoft-365/security/office-365-security/office365-security-incident-response-overview.md",
-         "redirect_url":"/microsoft-365/security/office-365-security/defender-for-office-365",
+         "redirect_url":"/microsoft-365/security/office-365-security/mdo-about",
          "redirect_document_id":false
       },
       {
          "source_path":"microsoft-365/security/office-365-security/security-roadmap.md",
-         "redirect_url":"/microsoft-365/security/office-365-security/defender-for-office-365",
+         "redirect_url":"/microsoft-365/security/office-365-security/mdo-about",
          "redirect_document_id":false
       },
       {
          "source_path":"microsoft-365/security/office-365-security/old-index.md",
-         "redirect_url":"/microsoft-365/security/office-365-security/defender-for-office-365",
+         "redirect_url":"/microsoft-365/security/office-365-security/mdo-about",
          "redirect_document_id":false
       },
       {
@@ -2067,7 +2067,7 @@
       },
       {
          "source_path":"microsoft-365/security/office-365-security/overview.md",
-         "redirect_url":"/microsoft-365/security/office-365-security/defender-for-office-365",
+         "redirect_url":"/microsoft-365/security/office-365-security/mdo-about",
          "redirect_document_id":true
       },
       {
@@ -2437,13 +2437,13 @@
       },
       {
          "source_path":"microsoft-365/security/office-365-security/configure-advanced-delivery.md",
-         "redirect_url":"/microsoft-365/security/office-365-security/skip-filtering-phishing-simulations-sec-ops-mailboxes",
-         "redirect_document_id":false
+         "redirect_url":"/microsoft-365/security/office-365-security/advanced-delivery-policy-configure",
+         "redirect_document_id":true
       },
       {
          "source_path":"microsoft-365/security/office-365-security/skip-filtering-phising-simulations-sec-ops-mailboxes.md",
-         "redirect_url":"/microsoft-365/security/office-365-security/skip-filtering-phishing-simulations-sec-ops-mailboxes",
-         "redirect_document_id":true
+         "redirect_url":"/microsoft-365/security/office-365-security/advanced-delivery-policy-configure",
+         "redirect_document_id":false
       },
       {
          "source_path":"microsoft-365/security/office-365-security/admin-submission.md",
@@ -2823,6 +2823,16 @@
        {
          "source_path":"microsoft-365/security/office-365-security/use-arc-exceptions-to-mark-trusted-arc-senders.md",
          "redirect_url":"/microsoft-365/security/office-365-security/email-authentication-arc-configure",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/skip-filtering-phishing-simulations-sec-ops-mailboxes.md",
+         "redirect_url":"/microsoft-365/security/office-365-security/advanced-delivery-policy-configure",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/removing-user-from-restricted-users-portal-after-spam.md",
+         "redirect_url":"/microsoft-365/security/office-365-security/outbound-spam-restore-restricted-users",
          "redirect_document_id":false
        },
        {

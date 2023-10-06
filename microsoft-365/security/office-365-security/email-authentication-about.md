@@ -37,7 +37,7 @@ Email authentication (also known as _email validation_) is a group of standards 
 
 Email authentication verifies that email messages from a sender (for example, laura@contoso.com) are legitimate and come from expected sources for that email domain (for example, contoso.com).
 
-The rest of this article explains how these technologies work, and how EOP uses them to check inbound email.
+The rest of this article explains how these technologies work, and how EOP uses them to check inbound email. For information about configuring SPF, DKIM, and DMARC records in DNS, see the previous links.
 
 ## Use email authentication to help prevent spoofing
 

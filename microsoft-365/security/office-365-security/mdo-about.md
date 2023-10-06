@@ -80,7 +80,7 @@ There are two methods to enhance the default protection that's provided in Defen
 
 - **Manual setup**: Most of the policy settings in preset security policies are locked down. If your organization requires security settings that are *different* from or *undefined* in preset security policies, you can go manual. Keep in mind that anti-malware, anti-spam, anti-phishing, outbound spam, and connection filtering have default policies that are always on and apply to all recipients (and you can change any of the settings). The settings and values in the default policies are described in the tables in [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
 
-  You can also create custom policies to meet your business needs. For a discussion about when or why to use preset vs. custom policies, see [Determine your security policy strategy](mdo-deployment-guide.md#determine-your-security-policy-strategy).
+  You can also create custom policies to meet your business needs. For a discussion about when or why to use preset vs. custom policies, see [Determine your protection policy strategy](mdo-deployment-guide.md#determine-your-protection-policy-strategy).
 
 > [!TIP]
 > Defender for Office 365 comes in two different licenses:
