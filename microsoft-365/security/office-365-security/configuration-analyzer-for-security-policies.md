@@ -118,6 +118,9 @@ After you automatically or manually update the setting, click **Refresh** to see
 
 ### Configuration drift analysis and history tab in the configuration analyzer
 
+> [!NOTE]
+> [Unified Auditing](/purview/audit-log-enable-disable) needs to be enabled for drift analysis. 
+
 This tab allows you to track the changes that have been made to your security policies and how those changes compare to the Standard or Strict settings. By default, the following information is displayed:
 
 - **Last modified**
