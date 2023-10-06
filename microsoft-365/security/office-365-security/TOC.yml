@@ -376,8 +376,8 @@
          href: anti-phishing-mdo-impersonation-insight.md
        - name: Spoof intelligence insight
          href: anti-spoofing-spoof-intelligence.md
-       - name: View the admin audit log (Exchange)
-         href: /exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log
+       - name: Search the audit log
+         href: /purview/audit-log-search
        - name: View email security reports
          href: reports-email-security.md
        - name: View Defender for Office 365 reports
