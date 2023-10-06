@@ -289,4 +289,4 @@ Want more information about DMARC? These resources can help.
 
 [**Use DKIM to validate outbound email sent from your custom domain in Microsoft 365**](email-authentication-dkim-configure.md)
 
-[Use trusted ARC Senders for legitimate mailflows](/microsoft-365/security/office-365-security/use-arc-exceptions-to-mark-trusted-arc-senders?view=o365-21vianet&preserve-view=true)
+[Configure trusted ARC sealers](/microsoft-365/security/office-365-security/email-authentication-arc-configure)

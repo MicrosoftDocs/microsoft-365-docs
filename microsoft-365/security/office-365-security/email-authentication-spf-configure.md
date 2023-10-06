@@ -142,6 +142,6 @@ For advanced examples, a more detailed discussion about supported SPF syntax, sp
 
  For advanced examples and a more detailed discussion about supported SPF syntax, see [How SPF works to prevent spoofing and phishing in Office 365](email-authentication-anti-spoofing.md#how-spf-works-to-prevent-spoofing-and-phishing-in-microsoft-365).
 
-[Use trusted ARC Senders for legitimate mailflows](/microsoft-365/security/office-365-security/use-arc-exceptions-to-mark-trusted-arc-senders)
+[Configure trusted ARC sealers](/microsoft-365/security/office-365-security/email-authentication-arc-configure)
 
 *Select 'This page' under 'Feedback' if you have feedback on this documentation.*

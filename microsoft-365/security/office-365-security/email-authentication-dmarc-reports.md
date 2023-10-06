@@ -98,4 +98,4 @@ Ultimately the value of your DMARC investment, how effectively it's working, and
 
 [**DMARC**](email-authentication-dmarc-configure.md) email authentication's goal is to make sure that SPF and DKIM information matches the From address.
 
-[**Use trusted ARC Senders for legitimate mailflows**](use-arc-exceptions-to-mark-trusted-arc-senders.md)
+[**Configure trusted ARC sealers**](email-authentication-arc-configure.md)
