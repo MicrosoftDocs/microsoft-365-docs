@@ -126,7 +126,7 @@ For more information about the safelist collection and anti-spam settings on use
 
 Tenant allows and blocks are able to override some filtering stack verdicts as described in the following tables:
 
-- [Advanced delivery policy](skip-filtering-phishing-simulations-sec-ops-mailboxes.md) (skip filtering for designated SecOps mailboxes and phishing simulation URLs):
+- [Advanced delivery policy](advanced-delivery-policy-configure.md) (skip filtering for designated SecOps mailboxes and phishing simulation URLs):
 
   |Filtering stack verdict|Advanced delivery policy allow|
   |---|---|

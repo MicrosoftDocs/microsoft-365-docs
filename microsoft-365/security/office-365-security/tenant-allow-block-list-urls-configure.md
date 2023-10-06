@@ -30,7 +30,7 @@ appliesto:
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, admins can create and manage entries for URLs in the Tenant Allow/Block List. For more information about the Tenant Allow/Block List, see [Manage allows and blocks in the Tenant Allow/Block List](tenant-allow-block-list-about.md).
 
 > [!NOTE]
-> To allow phishing URLs from third-party phishing simulations, use the [advanced delivery configuration](skip-filtering-phishing-simulations-sec-ops-mailboxes.md) to specify the URLs. Don't use the Tenant Allow/Block List.
+> To allow phishing URLs from third-party phishing simulations, use the [advanced delivery configuration](advanced-delivery-policy-configure.md) to specify the URLs. Don't use the Tenant Allow/Block List.
 
 This article describes how admins can manage entries for URLs in the Microsoft 365 Defender Portal and in Exchange Online PowerShell.
 
@@ -360,7 +360,7 @@ Valid URL entries and their results are described in the following subsections.
 #### Scenario: Left wildcard (subdomain)
 
 > [!TIP]
-> Allow entries of this pattern are supported only from [advanced delivery configuration](skip-filtering-phishing-simulations-sec-ops-mailboxes.md).
+> Allow entries of this pattern are supported only from [advanced delivery configuration](advanced-delivery-policy-configure.md).
 
 **Entry**: `*.contoso.com`
 
@@ -392,7 +392,7 @@ Valid URL entries and their results are described in the following subsections.
 #### Scenario: Left tilde
 
 > [!TIP]
-> Allow entries of this pattern are supported only from [advanced delivery configuration](skip-filtering-phishing-simulations-sec-ops-mailboxes.md).
+> Allow entries of this pattern are supported only from [advanced delivery configuration](advanced-delivery-policy-configure.md).
 
 **Entry**: `~contoso.com`
 
@@ -424,7 +424,7 @@ Valid URL entries and their results are described in the following subsections.
 #### Scenario: Left wildcard subdomain and right wildcard suffix
 
 > [!TIP]
-> Allow entries of this pattern are supported only from [advanced delivery configuration](skip-filtering-phishing-simulations-sec-ops-mailboxes.md).
+> Allow entries of this pattern are supported only from [advanced delivery configuration](advanced-delivery-policy-configure.md).
 
 **Entry**: `*.contoso.com/*`
 
@@ -440,7 +440,7 @@ Valid URL entries and their results are described in the following subsections.
 #### Scenario: Left and right tilde
 
 > [!TIP]
->  Allow entries of this pattern are supported only from [advanced delivery configuration](skip-filtering-phishing-simulations-sec-ops-mailboxes.md).
+>  Allow entries of this pattern are supported only from [advanced delivery configuration](advanced-delivery-policy-configure.md).
 
 **Entry**: `~contoso.com~`
 

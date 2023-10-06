@@ -850,7 +850,7 @@ In the **View data by System override** and **Chart breakdown by Reason** view, 
 - **On-premises skip**
 - **Organization allowed domains**
 - **Organization allowed senders**
-- **Phishing simulation**: For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](skip-filtering-phishing-simulations-sec-ops-mailboxes.md).
+- **Phishing simulation**: For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](advanced-delivery-policy-configure.md).
 - **TABL - Both URL and file allowed**
 - **TABL - File allowed**
 - **TABL - File blocked**
@@ -899,7 +899,7 @@ On the **Threat protection status** page, the :::image type="icon" source="../..
 In the **View data by System override** and **Chart breakdown by Delivery location** view, the following override reason information is shown in the chart:
 
 - **Junk Mail folder not enabled**
-- **SecOps mailbox**: For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](skip-filtering-phishing-simulations-sec-ops-mailboxes.md).
+- **SecOps mailbox**: For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](advanced-delivery-policy-configure.md).
 
 In the details table below the chart, the following information is available:
 

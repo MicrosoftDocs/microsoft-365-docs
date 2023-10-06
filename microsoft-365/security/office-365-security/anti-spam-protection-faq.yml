@@ -179,4 +179,4 @@ sections:
 
           If you use a third-party protection service or device to scan email before it's delivered to Microsoft 365, you should also enable Enhanced Filtering for Connectors (also known as *skip listing*) so detection, reporting, and investigation features in Microsoft 365 are able to correctly identify messages sources. For more information, see [Enhanced Filtering for Connectors](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
-          If you need to bypass spam filtering for SecOps mailboxes or phishing simulations, don't use mail flow rules. For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](skip-filtering-phishing-simulations-sec-ops-mailboxes.md).
+          If you need to bypass spam filtering for SecOps mailboxes or phishing simulations, don't use mail flow rules. For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](advanced-delivery-policy-configure.md).

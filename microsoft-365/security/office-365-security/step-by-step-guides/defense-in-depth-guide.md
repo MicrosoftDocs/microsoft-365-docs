@@ -87,7 +87,7 @@ The information below will detail how to get the most out of your investment, br
 
 - Advanced Delivery should be configured to deliver any third party phish simulations correctly, and if you have a Security Operations mailbox, consider defining it as a SecOps mailbox to ensure emails *do not* get removed from the mailbox due to threats.
 
-**Read more here:** [Advanced delivery](../skip-filtering-phishing-simulations-sec-ops-mailboxes.md)
+**Read more here:** [Advanced delivery](../advanced-delivery-policy-configure.md)
 
 - You can configure user reported settings to allow users to report good or bad messages to Microsoft, to a designated reporting mailbox (to integrate with current security workflows) or both. Admins can use the **User reported** tab on the **Submissions** page to triage false positives and false negative user reported messages.
 

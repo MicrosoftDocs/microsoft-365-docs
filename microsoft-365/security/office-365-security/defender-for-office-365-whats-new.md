@@ -78,7 +78,7 @@ For more information on what's new with other Microsoft Defender security produc
 ## January 2023
 
 - [Automatic Tenant Allow/Block List expiration management is now available in Microsoft Defender for Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447): Microsoft now automatically removes allow entries from the Tenant Allow/Block List once the system has learned from it. Alternatively, Microsoft extends the expiration time of the allows if the system hasn't learned yet. This behavior prevents legitimate email from going to junk or quarantine.
-- **Configuring third-party phishing simulations in Advanced Delivery:** We've expanded "Simulation URLs to allow" limit to 30 URLs. To learn how to configure, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](skip-filtering-phishing-simulations-sec-ops-mailboxes.md)
+- **Configuring third-party phishing simulations in Advanced Delivery:** We've expanded "Simulation URLs to allow" limit to 30 URLs. To learn how to configure, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](advanced-delivery-policy-configure.md)
 - [Enhanced user telemetry in the simulation reports in Attack Simulation Training](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/attack-simulation-training-new-insights-into-targeted-user/ba-p/3673105): As part of our enhanced user telemetry, administrators can now view additional details about how their targeted users are interacting with the phishing payload from phishing simulation campaigns.
 
 ## December 2022
@@ -164,7 +164,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 ## October 2021
 
-- [Advanced Delivery DKIM enhancement](skip-filtering-phishing-simulations-sec-ops-mailboxes.md): Added support for DKIM domain entry as part of third-party phishing simulation configuration.
+- [Advanced Delivery DKIM enhancement](advanced-delivery-policy-configure.md): Added support for DKIM domain entry as part of third-party phishing simulation configuration.
 - [Secure by Default](secure-by-default.md): Extended Secure by Default for Exchange mail flow rules (also known as transport rules).
 
 ## September 2021
@@ -187,7 +187,7 @@ For more information on what's new with other Microsoft Defender security produc
 ## July 2021
 
 - [Email analysis improvements in automated investigations](email-analysis-investigations.md)
-- [Advanced Delivery](skip-filtering-phishing-simulations-sec-ops-mailboxes.md): Introducing a new capability for configuring the delivery of third-party phishing simulations to users and unfiltered messages to security operation mailboxes.
+- [Advanced Delivery](advanced-delivery-policy-configure.md): Introducing a new capability for configuring the delivery of third-party phishing simulations to users and unfiltered messages to security operation mailboxes.
 - [Safe Links for Microsoft Teams](safe-links-about.md#safe-links-settings-for-microsoft-teams)
 - New alert policies for the following scenarios: compromised mailboxes, Forms phishing, malicious mails delivered due to overrides and rounding out ZAP
   - Suspicious email forwarding activity
