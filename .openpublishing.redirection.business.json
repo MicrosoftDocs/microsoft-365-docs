@@ -1,6 +1,21 @@
 {
   "redirections":[
-     {
+   {
+      "source_path": "microsoft-365/business/index.yml",
+      "redirect_url": "/microsoft-365/business-premium/index.yml",
+      "redirect_document_id": false
+    },
+   {
+      "source_path": "microsoft-365/business/ui/mam-and-mdm.md",
+      "redirect_url": "/microsoft-365/business-premium/m365-business-premium-setup",
+      "redirect_document_id": false
+    },
+   {
+      "source_path": "microsoft-365/business/get-microsoft-365-business.md",
+      "redirect_url": "/microsoft-365/business-premium/m365-business-premium-setup",
+      "redirect_document_id": false
+    },  
+   {
         "source_path":"microsoft-365/business-video/join-guest-meeting.md",
         "redirect_url":"https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508",
         "redirect_document_id":false

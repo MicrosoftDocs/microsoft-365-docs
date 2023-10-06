@@ -47,7 +47,7 @@ Defender for Business provides advanced security protection for your devices, wi
 
 The following table summarizes what's included in each plan:
 
-| Feature/capability | [Defender for Business](mdb-overview.md)<br/>(standalone) | [Microsoft 365 Business Premium](../../business-premium/index.md) |
+| Feature/capability | [Defender for Business](mdb-overview.md)<br/>(standalone) | [Microsoft 365 Business Premium](../../business-premium/m365bp-overview.md) |
 |---|---|---|
 | **Identity management** | :::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false"::: | :::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::| 
 | [Azure Active Directory Free](/azure/active-directory/fundamentals/active-directory-whatis) (Azure AD) (includes security defaults) | :::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::  | |
@@ -122,4 +122,4 @@ Defender for Business brings the enterprise-grade capabilities of Defender for E
 - [See the requirements for Microsoft Defender for Business](mdb-requirements.md)
 - [Get Microsoft Defender for Business](get-defender-business.md)
 - [Learn how to set up and configure Microsoft Defender for Business](mdb-setup-configuration.md)
-- [Learn more about Microsoft 365 Business Premium](../../business-premium/index.md)
+- [Learn more about Microsoft 365 Business Premium](../../business-premium/m365bp-overview.md)
