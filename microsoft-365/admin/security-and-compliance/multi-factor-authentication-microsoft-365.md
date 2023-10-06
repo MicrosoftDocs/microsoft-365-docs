@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 05/21/2020
+ms.date: 09/20/2023
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-business
@@ -21,11 +21,6 @@ ms.custom:
 - okr_smb
 - AdminTemplateSet
 - admindeeplinkMAC
-search.appverid:
-- BCS160
-- MET150
-- MOE150
-ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Multi-factor authentication (MFA) uses both a password, which should be strong, and an additional verification method."
 ---
