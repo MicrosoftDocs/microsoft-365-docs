@@ -4,7 +4,7 @@ description: Get an overview of automatic attack disruption capabilities in Micr
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-ms.date: 10/05/2023
+ms.date: 10/06/2023
 ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: mdb
@@ -20,9 +20,13 @@ audience: Admin
 
 # Automatic attack disruption in Microsoft Defender for Business
 
-[Automatic attack disruption](../defender/automatic-attack-disruption.md) capabilities are coming to Defender for Business! With these capabilities, as soon as a [human-operated attack](/security/ransomware/human-operated-ransomware#human-operated-ransomware-attacks) is detected on a device, automated attack disruption capabilities take action immediately to contain the affected device and user accounts on the device. 
+A human-operated attack is an active attack by cybercriminals who infiltrate an organization, elevate their privileges, navigate the network, and deploy ransomware or steal information. To learn more, see [Human-operated ransomware attacks](/security/ransomware/human-operated-ransomware#human-operated-ransomware-attacks).
 
-When an attack is detected, an incident is created in the Microsoft 365 Defender portal. Your security team can view details about the risk and the containment status of compromised assets, during and after the process. You can view these details on the Incident page, which provides the full details of the attack and the up-to-date status of associated assets.
+To help protect against human-operated attacks, [automatic attack disruption](../defender/automatic-attack-disruption.md) capabilities were recently added to Microsoft 365 Defender. Now, these capabilities are coming to Defender for Business! 
+
+With automatic attack disruption, as soon as a human-operated attack is detected on a device, steps are taken immediately to contain the affected device and user accounts on the device. An an incident is created in the Microsoft 365 Defender portal. Your security team can view details about the risk and containment status of compromised assets during and after the process. An Incident page provides details about the attack and up-to-date status of affected assets.
+
+
 
 ## View details about an attack in the Action center
 
