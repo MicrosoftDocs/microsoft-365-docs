@@ -50,11 +50,10 @@ Microsoft Defender for Office 365 helps deal with important legitimate business 
 ## Handling legitimate emails in quarantine folder of an admin
 
 1. Admins can view the quarantined emails (including the ones asking permission to request release) from the [review page](/microsoft-365/security/office-365-security/quarantine-admin-manage-messages-files).
-2. Admins can release the message from quarantine while submitting it to Microsoft for analysis, and create an temporary allow to mitigate the situation.
+2. Admins can release the message from quarantine while submitting it to Microsoft for analysis, and create a temporary allow to mitigate the situation.
 3. Once the results for submissions are available, admins should read the verdict to understand the reason.
-
-- If False positives are due to tenant configuration , admins can correct it to mitigate the issue.
-- If False positives are due to other factors , Microsoft learns from submission and similar emails aren’t quarantined anymore. For more information, see [Automatic tenant Allow/Block list expiration management](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447).
+   - If false positives are due to tenant configuration, admins can correct it to mitigate the issue.
+   - If false positives are due to other factors, Microsoft learns from the submission and similar messages aren't quarantined anymore. For more information, see [Automatic tenant Allow/Block list expiration management](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447).
 
 > [!NOTE]
-> Admins should manually release any similar messages that have already been quarantined as this will not be done automatically. To find and release quarantined messages in bulk, see [Can I release or report more than one quarantined message at a time?](https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/quarantine-faq?view=o365-worldwide#can-i-release-or-report-more-than-one-quarantined-message-at-a-time-).
+> Admins need to manually release any similar messages that have already been quarantined, as the quarantined messages aren't release automatically. To find and release quarantined messages in bulk, see [Can I release or report more than one quarantined message at a time?](/microsoft-365/security/office-365-security/quarantine-faq#can-i-release-or-report-more-than-one-quarantined-message-at-a-time-).
