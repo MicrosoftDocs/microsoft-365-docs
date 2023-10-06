@@ -68,7 +68,7 @@ To change information on your organization's profile page, use the following ste
 
 The following table explains the fields shown in the **Organization information** pane.
 
-|**Field**  |**Description**  |
+| Field | Description |
 |---------|---------|
 |Name  | The organization's name that's used to identify it.  |
 |Address, City, State/Province, ZIP/Postal code   | The address entered is shown on your invoice under **Sold To**. The Sold To address is the same as your organization address on your profile page.    |
