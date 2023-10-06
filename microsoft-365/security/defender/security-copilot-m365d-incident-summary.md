@@ -59,11 +59,11 @@ Incidents containing up to 100 alerts can be summarized into one incident summar
 To summarize an incident, perform the following steps:
 
 1. Navigate to the incident queue in **Incidents and Alerts** and select an incident. Once the incident page loads, Security Copilot automatically creates an incident summary. You can stop the summary creation by selecting **Cancel** or restart creation by selecting **Regenerate**.
-:::image type="content" source="../../media/copilot-in-defender/incident-summary/fig1-sec-copilot-m365d-summarize.png" alt-text="Highlighting the automatic incident summary generation by Security Copilot pane in the Microsoft 365 Defender incident page" lightbox="../../media/copilot-in-defender/incident-summary/fig1-sec-copilot-m365d-summarize.png":::
+:::image type="content" source="../../media/copilot-in-defender/incident-summary/fig1-sec-copilot-m365d-summarize.png" alt-text="Screenshot highlighting the automatic incident summary generation by Security Copilot pane in the Microsoft 365 Defender incident page." lightbox="../../media/copilot-in-defender/incident-summary/fig1-sec-copilot-m365d-summarize.png":::
 2. The incident summary card loads on the Security Copilot pane in the incident page. Review the generated summary on the card.
-:::image type="content" source="../../media/copilot-in-defender/incident-summary/fig2-sec-copilot-m365d-summarize.png" alt-text="Incident summary card on the Security Copilot pane as seen in the the Microsoft 365 Defender incident page" lightbox="../../media/copilot-in-defender/incident-summary/fig2-sec-copilot-m365d-summarize.png":::
+:::image type="content" source="../../media/copilot-in-defender/incident-summary/fig2-sec-copilot-m365d-summarize.png" alt-text="Screenshot of the incident summary card on the Security Copilot pane as seen in the Microsoft 365 Defender incident page." lightbox="../../media/copilot-in-defender/incident-summary/fig2-sec-copilot-m365d-summarize.png":::
 3. You can copy the details, regenerate the summary, or view the summary in Security Copilot by selecting the three dots at the top of the incident summary card. Selecting **Open in Security Copilot** opens a new tab to the Security Copilot standalone portal.
-:::image type="content" source="../../media/copilot-in-defender/incident-summary/fig3-sec-copilot-m365d-summarize.png" alt-text="Highlighting the actions available on the incident summary card" lightbox="../../media/copilot-in-defender/incident-summary/fig3-sec-copilot-m365d-summarize.png":::
+:::image type="content" source="../../media/copilot-in-defender/incident-summary/fig3-sec-copilot-m365d-summarize.png" alt-text="Screenshot highlighting the actions available on the incident summary card." lightbox="../../media/copilot-in-defender/incident-summary/fig3-sec-copilot-m365d-summarize.png":::
 
 ## Managing feedback
 
