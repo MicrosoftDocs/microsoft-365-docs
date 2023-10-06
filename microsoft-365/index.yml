@@ -58,7 +58,7 @@ conceptualContent:
             - url: frontline/index.yml
               itemType: get-started
               text: Microsoft 365 for frontline workers
-            - url: business/index.yml
+            - url: business-premium/index.yml
               itemType: get-started
               text: Microsoft 365 Business Premium
             - url: security/index.yml
