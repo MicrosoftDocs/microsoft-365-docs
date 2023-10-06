@@ -59,15 +59,15 @@ The following section applies to Loop components stored in OneDrive (created out
 - **Audit** logs are retained, can be exported, and can be streamed to third party tools
 
 #### Legal Hold and eDiscovery
-- Microsoft **[Purview eDiscovery](/microsoft-365/loop/loop-components-teams#do-loop-and-fluid-files-support-ediscovery)** review (premium only) and export (also as HTML, premium only) ✻
-- Microsoft **[Graph API](/graph/api/driveitem-get-content-format)** export ✻
-- **Legal Hold** support to ensure content isn't deleted (as related to litigation and security investigations) and stored in the [Preservation Hold Library](/sharepoint/governance/ediscovery-and-in-place-holds-in-sharepoint-server) ✻
+- Microsoft **[Purview eDiscovery](/microsoft-365/loop/loop-components-teams#do-loop-and-fluid-files-support-ediscovery)** review (premium only) and export (also as HTML, premium only)
+- Microsoft **[Graph API](/graph/api/driveitem-get-content-format)** export
+- **Legal Hold** support to ensure content isn't deleted (as related to litigation and security investigations) and stored in the [Preservation Hold Library](/sharepoint/governance/ediscovery-and-in-place-holds-in-sharepoint-server)
 
 #### Data Lifecycle Management
 - **[Retention Policies](/microsoft-365/compliance/retention-policies-sharepoint)** are enforced
 
 #### Information Barriers
-- **[Information Barriers](/purview/information-barriers-sharepoint)** ✻✻
+- **[Information Barriers](/purview/information-barriers-sharepoint)**
 
 #### Customer Key
 - **[Customer Lockbox](/purview/customer-lockbox-requests)**
@@ -80,10 +80,8 @@ The following section applies to Loop components stored in OneDrive (created out
 - Basic **[Conditional Access](/sharepoint/control-access-from-unmanaged-devices)** support
 
 #### Data Loss Prevention, Information Protection
-- **[Data Loss Prevention](/microsoft-365/compliance/dlp-learn-about-dlp)** (DLP) policy tips ✻
-- **[Sensitivity Labeling](/microsoft-365/compliance/information-protection)** (MIP) ✻
-
-✻ requires E3 or E5 license&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;✻✻ requires E5 license
+- **[Data Loss Prevention](/microsoft-365/compliance/dlp-learn-about-dlp)** (DLP) policy tips
+- **[Sensitivity Labeling](/microsoft-365/compliance/information-protection)** (MIP)
 
 
 ## Loop workspace content stored in Microsoft Syntex
@@ -97,6 +95,9 @@ The following sections apply to Loop workspace content stored in Microsoft Synte
 - **GDPR** data subject requests as part of the [Security and Compliance admin center](/compliance/regulatory/gdpr-data-subject-requests#data-subject-request-admin-tools) and [Purview eDiscovery workflows](/purview/ediscovery)
 - **EUDB** compliance - [What is the EU Data Boundary?](/privacy/eudb/eu-data-boundary-learn)
 
+#### Admin Management
+- **[Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo)** capabilities, including creation of .loop files in a user's Loop workspaces in the geo that matches the user's [preferred data location](/microsoft-365/enterprise/plan-for-multi-geo#best-practices). 
+
 #### Audit
 - **Version History** [export in Purview](/purview/ediscovery-export-search-results#step-1-prepare-search-results-for-export)
 - **Audit** logs for all events: search and export Microsoft 365 service events for security and compliance investigations
@@ -105,14 +106,14 @@ The following sections apply to Loop workspace content stored in Microsoft Synte
 - **Audit** logs are retained, can be exported, and can be streamed to third party tools
 
 #### Legal Hold and eDiscovery
-- Microsoft **[Purview eDiscovery](/microsoft-365/loop/loop-components-teams#do-loop-and-fluid-files-support-ediscovery)** review (premium only) and export (also as HTML, premium only) ✻
-- **Legal Hold** support to ensure content isn't deleted (as related to litigation and security investigations) and stored in the [Preservation Hold Library](/sharepoint/governance/ediscovery-and-in-place-holds-in-sharepoint-server) ✻
+- Microsoft **[Purview eDiscovery](/microsoft-365/loop/loop-components-teams#do-loop-and-fluid-files-support-ediscovery)** review (premium only) and export (also as HTML, premium only)
+- **Legal Hold** support to ensure content isn't deleted (as related to litigation and security investigations) and stored in the [Preservation Hold Library](/sharepoint/governance/ediscovery-and-in-place-holds-in-sharepoint-server)
 
 #### Data Lifecycle Management
 - **[Retention Policies](/microsoft-365/compliance/retention-policies-sharepoint)** configured for 'all SharePoint sites' are enforced on all Loop workspaces
 
 #### Information Barriers
-- **[Information Barriers](/purview/information-barriers-sharepoint)** ✻✻
+- **[Information Barriers](/purview/information-barriers-sharepoint)**
 
 #### Customer Key
 - **[Customer Lockbox](/purview/customer-lockbox-requests)**
@@ -124,6 +125,7 @@ The following sections apply to Loop workspace content stored in Microsoft Synte
 - PowerShell ability to
   - list all Loop workspaces
   - view comprehensive details of a specific workspace such as storage and membership
+  - **[Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo)** rehome of Loop workspaces and .loop files as needed.
   - delete and restore Loop workspaces
   - get and set sensitivity labels
   - get and set conditional access policy
@@ -132,21 +134,18 @@ The following sections apply to Loop workspace content stored in Microsoft Synte
 - Loop workspace management: multiple owners for lifecycle management
 - Basic **Intune** [Device Management Support](/mem/intune/remote-actions/device-management) for Loop app on iOS and Android
 - Basic **[Conditional Access](/sharepoint/control-access-from-unmanaged-devices)** support
-- Multi-Geo capabilities, including creation of Loop workspaces in the geo that matches the user's preferred data location and moving their Loop workspaces to a different geo when the user's preferred data location changes. Loop workspaces are moved in the same manner as the user's OneDrive, when the user's preferred data location is updated. 
 
 We plan to expand our administrative workspace management capabilities via PowerShell. Furthermore, we plan to make these administrative functions accessible in SharePoint Admin Center.
 
 #### Legal Hold and eDiscovery
-- Microsoft **[Graph API](/graph/api/driveitem-get-content-format)** export ✻
+- Microsoft **[Graph API](/graph/api/driveitem-get-content-format)** export
 
 #### Data Lifecycle Management
 - **[Retention Policies](/microsoft-365/compliance/retention-policies-sharepoint)** that can be overridden or set at the Loop workspace level
 
 #### Data Loss Prevention, Information Protection
-- **[Data Loss Prevention](/microsoft-365/compliance/dlp-learn-about-dlp)** (DLP) policy tips ✻
-- **[Sensitivity Labeling](/microsoft-365/compliance/information-protection)** (MIP) ✻
-
-✻ requires E3 or E5 license&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;✻✻ requires E5 license
+- **[Data Loss Prevention](/microsoft-365/compliance/dlp-learn-about-dlp)** (DLP) policy tips
+- **[Sensitivity Labeling](/microsoft-365/compliance/information-protection)** (MIP)
 
 
 ## Managing Loop in your organization

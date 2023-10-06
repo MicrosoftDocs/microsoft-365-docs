@@ -14,7 +14,7 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 description: "Learn about the accessibility conformance and features of the Microsoft 365 admin center."
-ms.date: 11/03/2022
+ms.date: 09/27/2023
 ---
 
 # Microsoft 365 admin center accessibility overview
