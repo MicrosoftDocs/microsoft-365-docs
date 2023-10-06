@@ -124,7 +124,7 @@ Follow the procedures in [Reset a business password for someone](/microsoft-365/
 
 If the account was used to send spam or a high volume of email, it's likely that the mailbox has been blocked from sending mail.
 
-To unblock a mailbox from sending email, follow the procedures in [Remove blocked users from the Restricted entities page](removing-user-from-restricted-users-portal-after-spam.md).
+To unblock a mailbox from sending email, follow the procedures in [Remove blocked users from the Restricted entities page](outbound-spam-restore-restricted-users.md).
 
 ### Step 5 Optional: Block the user account from signing-in
 

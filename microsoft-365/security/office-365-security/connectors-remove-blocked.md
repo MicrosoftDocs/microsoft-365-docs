@@ -43,7 +43,7 @@ For more information about compromised connectors and how to regain control of t
 
 The procedures in this article explain how admins can remove connectors from the **Restricted entities** page in the Microsoft 365 Defender portal or in Exchange Online PowerShell.
 
-For more information about compromised _user accounts_ and how to remove them from the **Restricted entities** page, see [Remove blocked users from the Restricted entities page](removing-user-from-restricted-users-portal-after-spam.md).
+For more information about compromised _user accounts_ and how to remove them from the **Restricted entities** page, see [Remove blocked users from the Restricted entities page](outbound-spam-restore-restricted-users.md).
 
 ## What do you need to know before you begin?
 
@@ -137,4 +137,4 @@ For detailed syntax and parameter information, see [Remove-BlockedConnector](/po
 ## More information
 
 - [Respond to a compromised connector](connectors-detect-respond-to-compromise.md)
-- [Remove blocked users](removing-user-from-restricted-users-portal-after-spam.md)
+- [Remove blocked users](outbound-spam-restore-restricted-users.md)

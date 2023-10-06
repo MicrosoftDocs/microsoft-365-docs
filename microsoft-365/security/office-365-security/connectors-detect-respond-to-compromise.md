@@ -128,4 +128,4 @@ After you identify the admin account that was responsible for the unauthorized c
 ## More information
 
 - [Remove blocked connectors](connectors-remove-blocked.md)
-- [Remove blocked users](removing-user-from-restricted-users-portal-after-spam.md)
+- [Remove blocked users](outbound-spam-restore-restricted-users.md)
