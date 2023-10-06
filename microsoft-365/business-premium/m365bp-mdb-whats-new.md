@@ -23,10 +23,10 @@ f1.keywords: NOCSH
 # What's new in Microsoft 365 Business Premium and Microsoft Defender for Business
 
 **Applies to:**
-- [Microsoft 365 Business Premium](index.md)
+- [Microsoft 365 Business Premium](m365bp-overview.md)
 - [Microsoft Defender for Business](../security/defender-business/mdb-overview.md)
 
-This article lists new features in the latest release of [Microsoft 365 Business Premium](index.md) and [Microsoft Defender for Business](../security/defender-business/mdb-overview.md). Features that are currently in preview are denoted with **(preview)**.
+This article lists new features in the latest release of [Microsoft 365 Business Premium](m365bp-overview.md) and [Microsoft Defender for Business](../security/defender-business/mdb-overview.md). Features that are currently in preview are denoted with **(preview)**.
 
 ## October 2023
 
