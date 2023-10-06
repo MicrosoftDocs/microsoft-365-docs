@@ -149,6 +149,9 @@ The relationship between spoof intelligence and whether sender DMARC policies ar
 > [!NOTE]
 > If the MX record for the domain points to a third-party service or device that sits in front of Microsoft 365, the **Honor DMARC policy** setting is applied only if [Enhanced Filtering for Connectors](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) is enabled for the connector that receives inbound messages.
 
+> [!NOTE]
+> Customers can override Honor DMARC for specific emails/senders using Tenant and user overrides.
+
 ### Unauthenticated sender indicators
 
 Unauthenticated sender indicators are part of the [Spoof settings](#spoof-settings) that are available in the **Safety tips & indicators** section in anti-phishing policies in both EOP and Defender for Office 365. The following settings are available only when spoof intelligence is turned on:
