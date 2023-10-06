@@ -117,8 +117,6 @@ If you'd rather use PowerShell to view, add, or remove trusted ARC sealers, conn
 
   To add or remove ARC sealers without affecting the other entries, see the Examples section in [Set-ArcConfig](/powershell/module/exchange/set-arcconfig).
 
-  To clear the list, use the value $null.
-
 ## Validate a trusted ARC sealer
 
 If there's an ARC seal from a third party before the message reaches Microsoft 365, check the message header for the latest ARC headers after the message is delivered.
