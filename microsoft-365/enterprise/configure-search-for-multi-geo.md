@@ -1,6 +1,6 @@
 ---
 title: "Configure search for Microsoft 365 Multi-Geo"
-ms.reviewer: adwood
+ms.reviewer: anfra
 ms.date: 08/10/2020
 ms.author: tlarsen
 author: tklarsen
