@@ -21,7 +21,7 @@ ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 6/19/2023
+ms.date: 10/6/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
@@ -75,7 +75,7 @@ In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to 
 
    To change the list of entities from normal to compact spacing, select :::image type="icon" source="../../media/m365-cc-sc-standard-icon.png" border="false"::: **Change list spacing to compact or normal**, and then select :::image type="icon" source="../../media/m365-cc-sc-compact-icon.png" border="false"::: **Compact list**.
 
-   Use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box and a corresponding value to find specific connectors.
+   Use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** box and a corresponding value to find specific users.
 
 3. Select the user to unblock by selecting the check box for the entity, and then selecting the **Unblock** action that appears on the page.
 
@@ -94,7 +94,7 @@ In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to 
 
 ## Verify the alert settings for restricted users
 
-The default alert policy named **User restricted from sending email** automatically notifies admins when connectors are blocked from relaying email. For more information about alert policies, see [Alert policies in Microsoft 365](/purview/alert-policies).
+The default alert policy named **User restricted from sending email** automatically notifies admins when users are blocked from sending email. For more information about alert policies, see [Alert policies in Microsoft 365](/purview/alert-policies).
 
 > [!IMPORTANT]
 > For alerts to work, audit logging must to be turned on (it's on by default). To verify that audit logging is turned on or to turn it on, see [Turn auditing on or off](/purview/audit-log-enable-disable).
