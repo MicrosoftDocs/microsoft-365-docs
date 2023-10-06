@@ -43,9 +43,9 @@ Schedule business closures or employee off.
 
 1. Select **Save**.
 
-When a customer attempts to schedule service on a day the office is closed, they'll see a message on the booking page.
+    When a customer attempts to schedule service on a day the office is closed, they'll see a message on the booking page.
 
-   ![Image of example message that customer sees when trying to book during time off.](../media/bookings-timeoff-message.png)
+    ![Image of example message that customer sees when trying to book during time off.](../media/bookings-timeoff-message.png)
 
 ## Schedule employee time off
 
