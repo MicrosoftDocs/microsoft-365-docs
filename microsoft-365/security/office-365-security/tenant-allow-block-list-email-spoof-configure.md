@@ -509,6 +509,8 @@ Here are some examples of valid domain pairs to identify spoofed senders:
 
 > [!NOTE]
 > You can specify wildcards in the sending infrastructure or in the spoofed user, but not in both at the same time. For example, `*, *` isn't permitted.
+>
+> If you're using a domain instead of the IP address or IP address range in the sending infrastructure, the domain needs to match the PTR record for the connecting IP in the **Authentication-Results** header. You can determine the PTR by running the command: `ping -a <IP address>`. We also recommend using the PTR Organization Domain as the domain value. For example, if the PTR resolves to "smtp.inbound.contoso.com", you should use "contoso.com" as the sending infrastructure.
 
 Adding a domain pair allows or blocks the *combination* of the spoofed user *and* the sending infrastructure *only*. For example, you add an allow entry for the following domain pair:
 
