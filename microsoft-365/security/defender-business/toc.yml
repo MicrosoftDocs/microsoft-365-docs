@@ -77,7 +77,7 @@
       href: mdb-view-manage-incidents.md
     - name: Respond to and mitigate threats
       href: mdb-respond-mitigate-threats.md
-    - name: Use automated attack disruption
+    - name: Disrupt human-operated attacks
       href: mdb-attack-disruption.md
     - name: Review remediation actions
       href: mdb-review-remediation-actions.md
