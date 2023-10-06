@@ -71,7 +71,7 @@ To configure a custom domain for a specific user, follow the steps below after j
    New-OwaMailboxPolicy -Name “<custom-policy-name>”
    ```
 
-For more information, see [New-OwaMailboxPolicy](/powershell/module/exchange/new-owamailboxpolicy?view=exchange-ps0&preserve-view=true).
+   For more information, see [New-OwaMailboxPolicy](/powershell/module/exchange/new-owamailboxpolicy?view=exchange-ps0&preserve-view=true).
 
 2. Configure the policy with a custom domain.
 
@@ -85,6 +85,6 @@ For more information, see [New-OwaMailboxPolicy](/powershell/module/exchange/new
    Set-CASMailbox -Identity <User-email-address>-OwaMailboxPolicy “<custom-policy-name>”
    ```
 
-For more information, see [Set-CASMailbox](/powershell/module/exchange/set-casmailbox?view=exchange-ps&preserve-view=true).
+   For more information, see [Set-CASMailbox](/powershell/module/exchange/set-casmailbox?view=exchange-ps&preserve-view=true).
 
 When users with the custom OWA policy create a Booking calendar, it will be created with the custom domain, and not the default domain.
