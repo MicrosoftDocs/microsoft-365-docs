@@ -52,7 +52,7 @@ For more information about how to personalize and customize your booking page, s
 
 1. Click **Ok** at the top of the page, and then **Save the service**.
 
-Bookings saves all of your custom questions in a master list so that you can easily add questions to each service. For example, if you open a different service, the question you created for the first service shows up in the Custom fields section, but wil be disabled. When you select the question, a highlighted rectangle displays and the question is enabled.
+Bookings saves all of your custom questions in a master list so that you can easily add questions to each service. For example, if you open a different service, the question you created for the first service shows up in the Custom fields section, but will be disabled. When you select the question, a highlighted rectangle displays and the question is enabled.
 
 In this example, you can see that the questions that were added for the first service are available for this service. Any questions you create for this service will be available for all services.
 
