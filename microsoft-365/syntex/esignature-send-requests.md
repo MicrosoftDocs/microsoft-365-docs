@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: amcdonnell
-ms.date: 08/01/2023
+ms.date: 09/29/2023
 audience: enabler
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -33,7 +33,7 @@ Before you can use Syntex eSignature, an admin must [set up the Syntex eSignatur
 You must be signed in to SharePoint Online by using your work email address.
 
 > [!NOTE]
-> For this preview, Syntex eSignature is available for PDF documents only at this time.
+> For this preview, Syntex eSignature is available for only PDF documents at this time.
 
 ## Create a signature request
 

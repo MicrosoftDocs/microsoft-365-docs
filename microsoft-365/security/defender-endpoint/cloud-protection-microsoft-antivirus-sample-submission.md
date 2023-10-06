@@ -17,6 +17,7 @@ ms.date: 02/24/2022
 ms.collection: 
 - m365-security
 - tier2
+- mde-ngp
 search.appverid: met150
 ---
 

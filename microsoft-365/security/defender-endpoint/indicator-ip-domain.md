@@ -11,6 +11,7 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
+- mde-asr
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
@@ -61,7 +62,10 @@ URL/IP allow and block requires that the Microsoft Defender for Endpoint compone
 - Windows Server 2012 R2
 - Windows Server 2019
 - Windows Server 2022
-- Android and iOS devices
+- macOS
+- Linux
+- iOS 
+- Android
 
 ### Windows Server 2016 and Windows Server 2012 R2 requirements
 
@@ -189,3 +193,5 @@ The result is that categories 1-4 are all blocked. This is illustrated in the fo
 - [Manage indicators](indicator-manage.md)
 - [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+
+

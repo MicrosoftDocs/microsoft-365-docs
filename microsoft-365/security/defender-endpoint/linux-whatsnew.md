@@ -13,6 +13,7 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
+- mde-linux
 ms.topic: reference
 ms.subservice: mde
 search.appverid: met150
@@ -31,77 +32,6 @@ This article is updated frequently to let you know what's new in the latest rele
 
 - [What's new in Defender for Endpoint on macOS](mac-whatsnew.md)
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
-
-<details>
-	<summary> October-2023 (Build: 101.23082.0006 | Release version: 30.123082.0006.0)</summary>
-
-## October-2023 Build: 101.23082.0006 | Release version: 30.123082.0006.0
-
-&ensp;Released: **September 15,2023**<br/>
-&ensp;Published: **October 9,2023**<br/>
-&ensp;Build: **101.23082.0006**<br/>
-&ensp;Release version: **30.123082.0006.0**<br/>
-&ensp;Engine version: **1.1.23070.1002**<br/>
-&ensp;Signature version: **1.393.1305.0**<br/>
-
-**What's new**
-- Feature updates and new changes
-  - eBPF sensor is now the default supplementary event provider for endpoints
-  - Microsoft Intune tenant attach feature is in public preview (as of mid July)
-    - You must add "*.dm.microsoft.com" to firewall exclusions for the feature to work correctly
-  - Support to enable Signature verification of updates downloaded
-    - Note that you must update the manajed.json as shown below
-      ```
-        "features":{
-          "OfflineDefinitionUpdateVerifySig":"enabled"
-        }
-      ```
-      
-    - Prerequisite to enable feature
-      - Engine version on the device must be  "1.1.23080.007" or above. Check your engine version by using the following command.
-        ``` mdatp health --field engine_version ```
-  - Option to support monitoring of NFS and FUSE mount points. These are ignored by default.
-    The following example shows how to monitor all filesystem while ignoring only NFS:
-
-  ```
-    "antivirusEngine": {
-        "unmonitoredFilesystems": ["nfs"]
-    }
-    ```
-    
-    Example to monitor all filesystems including NFS and FUSE:
-    ```
-    "antivirusEngine": {
-        "unmonitoredFilesystems": []
-    }
-    ```
-
-  - Other performance improvements
-  - Bug Fixes
-
-**Known issues**
-
-- When upgrading from mdatp version 101.75.43 or 101.78.13, you may encounter a kernel hang. Run the following commands before attempting to upgrade to version 101.98.05. More information about the underlying issue can be found at [System hang due to blocked tasks in fanotify code](https://access.redhat.com/solutions/2838901).
-There are two ways to mitigate this upgrade issue:
-
-1. Use your package manager to uninstall the `101.75.43` or `101.78.13` mdatp version.
-
-Example:
-```bash
-sudo apt purge mdatp
-sudo apt-get install mdatp
-```
-
-2. As an alternative you can follow the instructions to [uninstall](/microsoft-365/security/defender-endpoint/linux-resources#uninstall), then [install](/microsoft-365/security/defender-endpoint/linux-install-manually#application-installation) the latest version of the package.
-
-If you don't want to uninstall mdatp, you can disable rtp and mdatp in sequence before upgrading.
-Some customers (<1%) experience issues with this method.
-
- ```bash
-sudo mdatp config real-time-protection --value=disabled
-sudo systemctl disable mdatp
-```
-</details>
 
 <details>
 	<summary> September-2023 (Build: 101.23072.0021 | Release version: 30.123072.0021.0)</summary>
