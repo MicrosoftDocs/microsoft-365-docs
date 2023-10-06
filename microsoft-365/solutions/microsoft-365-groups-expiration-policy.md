@@ -1,6 +1,6 @@
 ---
 title: "Microsoft 365 group expiration policy"
-ms.reviewer: arvaradh
+ms.reviewer: rahulnayak
 ms.date: 08/12/2020
 f1.keywords: NOCSH
 ms.author: mikeplum
