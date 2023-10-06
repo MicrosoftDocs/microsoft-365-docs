@@ -49,11 +49,11 @@ An Incident page provides details about the attack and up-to-date status of affe
 
 ## How to get automatic attack disruption
 
-1. Sign up for to receive preview features. See [Microsoft Defender for Business preview features](mdb-preview.md).
+Automatic attack disruption is built into Defender for Business; you don't have to explicitly turn these capabilities on. One important step to take is to onboard all your organization's devices (computers, phones, and tablets) to Defender for Business so that they're protected. Additionally, sign up to receive preview features so that you get the latest and greatest capabilities as soon as they're available. 
 
-2. Onboard all your organization's devices to Defender for Business. See [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md).
+See the following articles for more information:
 
-3. 
+- [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md)
+- [Microsoft Defender for Business preview features](mdb-preview.md)
 
-## See also
 
