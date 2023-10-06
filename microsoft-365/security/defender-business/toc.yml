@@ -75,10 +75,10 @@
       href: mdb-view-tvm-dashboard.md
     - name: View and manage incidents
       href: mdb-view-manage-incidents.md
-    - name: Respond to and mitigate threats
-      href: mdb-respond-mitigate-threats.md
     - name: Disrupt human-operated attacks
       href: mdb-attack-disruption.md
+    - name: Respond to and mitigate threats
+      href: mdb-respond-mitigate-threats.md
     - name: Review remediation actions
       href: mdb-review-remediation-actions.md
     - name: View and use reports
