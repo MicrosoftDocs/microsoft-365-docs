@@ -10,6 +10,7 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
+- mde-linux
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
@@ -101,7 +102,7 @@ Use the following steps to check the network connectivity of Microsoft Defender 
 
 #### Step 1. Allow URLs for the Microsoft Defender for Endpoint traffic
 
-1. Download the [Microsoft Defender for Endpoint URL list for commercial customers](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx) or the [Microsoft Defender for Endpoint URL list for Gov/GCC/DoD](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) for a list of services and their associated URLs that your network must be able to connect.
+1. Download the [Microsoft Defender for Endpoint URL list for commercial customers](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls-commercial.xlsx) or the [Microsoft Defender for Endpoint URL list for Gov/GCC/DoD](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) for a list of services and their associated URLs that your network must be able to connect.
 
 2. Under **Geography** column, ensure the following checkboxes are selected:
     - EU, or UK, or US
@@ -308,7 +309,7 @@ Set up your device groups, device collections, and organizational units Device g
   }
   ```
 
-**Recommendations**:
+  **Recommendations**:
 
   ```JSON
          {
@@ -497,7 +498,7 @@ With macOS and Linux, you could take a couple of systems and run in the Beta cha
 
 The choice of the channel determines the type and frequency of updates that are offered to your device. Devices in Beta are the first ones to receive updates and new features, followed later by Preview and lastly by Current.
 
-:::image type="content" source="images/insider-rings.png" alt-text="The insider rings." lightbox="images/insider-rings.png":::
+:::image type="content" source="images/insider-rings.png" alt-text="The insider rings.":::
 
 In order to preview new features and provide early feedback, it's recommended that you configure some devices in your enterprise to use either Beta or Preview.
 
@@ -560,6 +561,7 @@ Use the following syntaxes to help identify the process that is causing CPU over
 
   ```bash
   sudo ps -T -p <PID> >> Thread_with_highest_cpu_usage.log
+  ```
 
   :::image type="content" source="images/cpu-utilization.png" alt-text="This is CPU utilization":::
 

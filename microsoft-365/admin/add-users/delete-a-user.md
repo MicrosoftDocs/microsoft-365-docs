@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 02/18/2020
+ms.date: 09/26/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -19,9 +19,6 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
-search.appverid:
-- MET150
-ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: "Learn how to delete a Microsoft 365 user account, what to do with the user's email and OneDrive content, and whether to keep the product license."
 ---
 
