@@ -1,6 +1,16 @@
 {
   "redirections":[
    {
+      "source_path": "microsoft-365/business/ui/mam-and-mdm.md",
+      "redirect_url": "/microsoft-365/business-premium/m365-business-premium-setup",
+      "redirect_document_id": false
+    },
+   {
+      "source_path": "microsoft-365/business/ui/mam-and-mdm.md",
+      "redirect_url": "/microsoft-365/business-premium/m365-business-premium-setup",
+      "redirect_document_id": false
+    },
+   {
       "source_path": "microsoft-365/business/get-microsoft-365-business.md",
       "redirect_url": "/microsoft-365/business-premium/m365-business-premium-setup",
       "redirect_document_id": false
