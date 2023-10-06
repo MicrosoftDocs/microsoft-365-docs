@@ -55,7 +55,7 @@ When a mailbox is migrated cross-tenant with this feature, only user-visible con
 
 If you do not have the proper license assigned to the user being migrated, the migration fails, and you receive an error that is similar to the following:
 
-> Error: CrossTenantMigrationWithoutLicensePermanentException: No license was found for the source recipient, '65c3c3ea-2b9a-44d0-a685-9bfe300f8c87', or the target recipient, '65c3c3ea-2b9a-44d0-a685-9bfe300f8c87'. A Cross-tenant User Data Migration license is requiredto move a mailbox between tenants.
+> Error: CrossTenantMigrationWithoutLicensePermanentException: No license was found for the source recipient, '65c3c3ea-2b9a-44d0-a685-9bfe300f8c87', or the target recipient, '65c3c3ea-2b9a-44d0-a685-9bfe300f8c87'. A Cross-tenant User Data Migration license is required to move a mailbox between tenants.
 
 ## Preparing source and target tenants
 
@@ -781,3 +781,67 @@ Mailbox signatures are not migrated cross tenant and must be recreated.
   | Microsoft Defender for Office 365 (Plan 2)       |
   | Office 365 Privileged Access Management          |
   | Premium Encryption in Office 365                 |
+
+## Migration Failures
+
+- MailboxNotInCrossTenantMigrationScopeException
+
+  Ensure the migration scope is setup correctly on the source tenant and that MailboxMovesPublishedScopes is set in the organization relationship with the target tenant.
+  Verify that the mailbox to be migrated has been added to the SG in the source tenant.
+  After adding user to correct SG, resume the migration batch.
+
+- AuxArchiveNotFoundInTargetRecipientException
+
+  This failure is because the user was not in the migration scope when batch was started and the user has AuxArchive on the source.
+  Add user to SG on source target.
+  Remove the migration user from the batch.
+  Remove users with the following command: Get-MigrationUser -Identity mailbox@contoso.onmicrosoft.com -IncludeAssociatedUsers | Remove-MigrationUser
+  Add user to new batch.
+
+- MailboxIsNotInExpectedDBException
+
+  This failure is due to internal Microsoft maintenance.
+  Remove the migration user from the batch.
+  Remove users with the following command: Get-MigrationUser -Identity mailbox@contoso.onmicrosoft.com -IncludeAssociatedUsers | Remove-MigrationUser
+  Add user to new batch.
+
+- NotAcceptedDomainException
+
+  There is an invalid proxy address stamped on the target user. An example would be where a user in contoso.onmicrosoft.com had a proxy address of fabrikam.onmicrosoft.com, which is the source tenant.
+  Remove the invalid proxy address using Set-MailUser mailbox@contoso.onmicrosoft.com -EmailAddress @{remove="smtp:mailbox@fabrikam.onmicrosoft.com"}
+  Resume the migration batch.
+
+- SourceAuxArchiveIsProvisionedDuringCrossTenantMovePermanentException
+
+  A new AuxArchive was provisioned during migration.
+  Remove the migration user from the batch.
+  Remove users with the following command: Get-MigrationUser -Identity mailbox@contoso.onmicrosoft.com -IncludeAssociatedUsers | Remove-MigrationUser
+  Add user to new batch.
+
+- UserDuplicateInOtherBatchException
+
+  User exists in another batch already.
+  Remove the migration user from the batch.
+  Remove users with the following command: Get-MigrationUser -Identity mailbox@contoso.onmicrosoft.com -IncludeAssociatedUsers | Remove-MigrationUser
+  Add user to new batch.
+
+- MissingExchangeGuidException
+
+  The target mailuser object is missing the correct ExchangeGuid value.
+  Use Set-MailUser mailbox@contoso.onmicrosoft.com -ExchangeGuid 4e3188c6-39f5-4387-adc7-b355b6b852c8
+  Resume migration batch.
+
+- SourceMailboxAlreadyBeingMovedPermanentException
+
+  The source mailbox already has an existing move request. Investigate and remove the existing move. It is possible that this is an internal Microsoft move and you will need to wait for the move to complete.
+  Remove the migration user from the batch.
+  Remove users with the following command: Get-MigrationUser -Identity mailbox@contoso.onmicrosoft.com -IncludeAssociatedUsers | Remove-MigrationUser
+  Add user to new batch after the original move has been removed or completed.
+
+- UserAlreadyHasDemotedArchiveException
+
+  The user had an archive mailbox previously that was disabled.
+  Permanently delete the disabled archive mailbox, this is unreversable. Set-Mailbox -RemoveDisabledArchive mailbox@contoso.onmicrosoft.com
+  Re-enable the disabled archive mailbox. Enable-Mailbox -Archive mailbox@contoso.onmicrosoft.com.
+  If you re-enable the disabled archive mailbox, you will need to update the archive guid on the target mailuser object.
+  Resume migration batch.
