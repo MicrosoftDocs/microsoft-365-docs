@@ -150,7 +150,7 @@ Please refer to [Data Residency - Viva Engage | Microsoft Learn](/viva/engage/ma
 | KH | Cambodia | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
 | CM | Cameroon | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | CA | Canada | AMER<sup>3</sup>| Canada<sup>5</sup>| CAN<sup>5</sup>|
-| CV | Cape Verde | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
+| CV | Cabo Verde | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | KY | Cayman Islands | AMER<sup>3</sup>| AMER<sup>3</sup>| AMER<sup>3</sup>|
 | CF | Central African Republic | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | TD | Chad | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
@@ -180,7 +180,7 @@ Please refer to [Data Residency - Viva Engage | Microsoft Learn](/viva/engage/ma
 | ER | Eritrea | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | EE | Estonia | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | ET | Ethiopia | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
-| FK | Falkland Islands (Malvinas) | AMER<sup>3</sup>| AMER<sup>3</sup>| AMER<sup>3</sup>|
+| FK | Falkland Islands | AMER<sup>3</sup>| AMER<sup>3</sup>| AMER<sup>3</sup>|
 | FO | Faroe Islands | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | FM | Federated States of Micronesia | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
 | FJ | Fiji | APC<sup>2</sup>| APC<sup>2</sup>| AUS<sup>4</sup>|
@@ -289,7 +289,7 @@ Please refer to [Data Residency - Viva Engage | Microsoft Learn](/viva/engage/ma
 | PT | Portugal | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | PR | Puerto Rico | AMER<sup>3</sup>| AMER<sup>3</sup>| AMER<sup>3</sup>|
 | QA | Qator | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
-| MK | Republic of Macedonia | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
+| MK | Republic of North Macedonia | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | RE | Réunion | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | RO | Romania | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | RU | Russian Federation | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
@@ -303,7 +303,7 @@ Please refer to [Data Residency - Viva Engage | Microsoft Learn](/viva/engage/ma
 | MF | Saint-Martin (French part) | AMER<sup>3</sup>| EUR<sup>1</sup>| AMER<sup>3</sup>|
 | WS | Samoa | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
 | SM | San Marino | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
-| ST | Sao Tome and Principe | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
+| ST | São Tomé and Príncipe | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | SA | Saudi Arabia | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | SN | Senegal | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | RS | Serbia | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
@@ -334,7 +334,7 @@ Please refer to [Data Residency - Viva Engage | Microsoft Learn](/viva/engage/ma
 | TO | Tonga | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
 | TT | Trinidad and Tobago | AMER<sup>3</sup>| AMER<sup>3</sup>| AMER<sup>3</sup>|
 | TN | Tunisia | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
-| TR | Turkey | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
+| TR | Türkiye | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | TM | Turkmenistan | EUR<sup>1</sup>| APC<sup>2</sup>| EUR<sup>1</sup>|
 | TC | Turks and Caicos Islands | AMER<sup>3</sup>| AMER<sup>3</sup>| AMER<sup>3</sup>|
 | TV | Tuvalu | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
@@ -352,7 +352,6 @@ Please refer to [Data Residency - Viva Engage | Microsoft Learn](/viva/engage/ma
 | VN | Vietnam | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
 | VI | Virgin Islands, US | AMER<sup>3</sup>| AMER<sup>3</sup>| AMER<sup>3</sup>|
 | WF | Wallis and Futuna Islands | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
-| EH | Western Sahara | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | YE | Yemen | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | ZM | Zambia | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | ZW | Zimbabwe | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|

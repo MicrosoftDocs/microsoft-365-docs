@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: kkameth
-ms.date: 07/01/2023
+ms.date: 10/03/2023
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -31,7 +31,7 @@ For example, you enable the OCR service and then add image files to your documen
 
 |Endpoint  |Supported file types  |
 |---------|---------|
-|SharePoint and OneDrive     |.bmp, .png, .jpeg, .jpg, .jfif, .arw, .cr2, .crw, .erf, .gif, .mef, .mrw, .nef, .nrw, .orf, .pef, .raw, .rw2, .rw1, .sr2, .tif, .tiff, .heic, .heif, .ari, .bay, .cap, .cr3, .dcs, .dcr, .drf, .eip, .fff, .iiq, .k25, .kdc, .mef, .mos, .ptx, .pxn, .raf, .rwl, .sr2, .srf, .srw, .x3f, and .dng  |
+|SharePoint and OneDrive     |.bmp, .png, .jpeg, .jpg, .jfif, .arw, .cr2, .crw, .erf, .gif, .mef, .mrw, .nef, .nrw, .orf, .pef, .raw, .rw2, .rw1, .sr2, .tif, .tiff, .heic, .heif, .ari, .bay, .cap, .cr3, .dcs, .dcr, .drf, .eip, .fff, .iiq, .k25, .kdc, .mef, .mos, .ptx, .pxn, .raf, .rwl, .sr2, .srf, .srw, .x3f, .dng, .tiff, and .pdf (image only)  |
 |Teams, Exchange, and Windows devices     |.bmp, .png, .jpeg, .jpg, .tiff, and .pdf (image only)     |
 
 ### Supported languages
