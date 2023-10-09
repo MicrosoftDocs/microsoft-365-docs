@@ -76,6 +76,7 @@ The following Microsoft Syntex products are currently available:
 - Content assembly
 - Image tagging
 - Taxonomy tagging
+- Syntex eSignature
 - Optical character recognition
 
 The following tags are available:
