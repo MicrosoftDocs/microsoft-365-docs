@@ -87,7 +87,7 @@ Some capabilities are *not yet* configured. You have the following options for c
 
   You can also use the [Configuration analyzer](../office-365-security/configuration-analyzer-for-security-policies.md) to compare the settings in your custom policies to the Standard and Strict values.
 
-For detailed information about choosing preset security policies vs. custom policies, see [Determine your security policy strategy](../office-365-security/mdo-deployment-guide.md#determine-your-security-policy-strategy).
+For detailed information about choosing preset security policies vs. custom policies, see [Determine your security policy strategy](../office-365-security/mdo-deployment-guide.md#determine-your-protection-policy-strategy).
 
 ### Assign preset security policies
 
