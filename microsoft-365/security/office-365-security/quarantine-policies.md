@@ -792,7 +792,7 @@ If the **Delete** permission is enabled:
 If the **Delete** permission is disabled, users can't delete their own messages from quarantine (the action isn't available).
 
 > [!TIP]
-> Admins can find out who deleted a quarantined message by searching the admin audit log. For instructions, see [Find who deleted a quarantined message](quarantine-admin-manage-messages-files.md#find-who-deleted-a-quarantined-message). Admins can use [message trace](message-trace-scc.md) to find out what happened to a released message if the original recipient can't find it.
+> Admins can find out who deleted a quarantined message by searching the admin audit log. For instructions, see [Find who deleted a quarantined message](quarantine-admin-manage-messages-files.md#find-who-deleted-a-quarantined-message). Admins can use [message trace](message-trace-defender-portal.md) to find out what happened to a released message if the original recipient can't find it.
 
 ##### Preview permission
 

@@ -2836,6 +2836,11 @@
          "redirect_document_id":false
        },
        {
+         "source_path":"microsoft-365/security/office-365-security/message-trace-scc.md",
+         "redirect_url":"/microsoft-365/security/office-365-security/message-trace-defender-portal",
+         "redirect_document_id":false
+      },
+       {
          "source_path":"microsoft-365/security/defender-business/mdb-maintain-environment.md",
          "redirect_url":"/microsoft-365/business-premium/m365bp-mdb-maintain-environment",
          "redirect_document_id":true

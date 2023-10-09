@@ -91,7 +91,7 @@ To filter the entries, select :::image type="icon" source="../../media/m365-cc-s
 
 - **Message ID**: The globally unique identifier of the message.
 
-  For example, you used [message trace](message-trace-scc.md) to look for a message, and you determine that the message was quarantined instead of delivered. Be sure to include the full message ID value, which might include angle brackets (\<\>). For example: `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`.
+  For example, you used [message trace](message-trace-defender-portal.md) to look for a message, and you determine that the message was quarantined instead of delivered. Be sure to include the full message ID value, which might include angle brackets (\<\>). For example: `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`.
 
 - **Sender address**
 - **Recipient address**
@@ -255,7 +255,7 @@ If you don't release or remove a message, it's automatically deleted from quaran
 >
 > Verify that you aren't using third party filtering before you open a support ticket about these issues.
 >
-> Admins can use [message trace](message-trace-scc.md) to determine if a released message was delivered to the recipient's Inbox.
+> Admins can use [message trace](message-trace-defender-portal.md) to determine if a released message was delivered to the recipient's Inbox.
 
 After you select the message, use either of the following methods to release it:
 

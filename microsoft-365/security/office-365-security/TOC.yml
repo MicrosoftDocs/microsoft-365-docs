@@ -307,7 +307,7 @@
        - name: Message trace
          items:
          - name: Message trace
-           href: message-trace-scc.md
+           href: message-trace-defender-portal.md
        - name: Quarantine
          items:
          - name: Quarantine
@@ -383,7 +383,9 @@
        - name: View Defender for Office 365 reports
          href: reports-defender-for-office-365.md
        - name: Message trace
-         href: message-trace-scc.md
+         items:
+         - name: Message trace
+           href: message-trace-defender-portal.md
 
        - name: Email entity page
          href: mdo-email-entity-page.md

@@ -112,7 +112,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: Reporting and message trace in EOP
-            url: message-trace-scc.md
+            url: message-trace-defender-portal.md
           - text: View the admin audit log
             url: /exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log
        # Card

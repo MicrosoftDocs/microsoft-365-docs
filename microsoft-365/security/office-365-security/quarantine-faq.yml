@@ -106,7 +106,7 @@ sections:
 
           Verify that you aren't using third party filtering before you open a support ticket about these issues.
 
-          Admins can use [message trace](message-trace-scc.md) to determine if a released message was delivered to the recipient's Inbox.
+          Admins can use [message trace](message-trace-defender-portal.md) to determine if a released message was delivered to the recipient's Inbox.
 
       - question: |
           Can I release or report more than one quarantined message at a time?
