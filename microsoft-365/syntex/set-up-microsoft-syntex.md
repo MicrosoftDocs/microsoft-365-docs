@@ -60,4 +60,5 @@ The following table provides links to the specific setup instructions for each s
 |Content assembly                 | [Set up content assembly](content-assembly-setup.md)  |
 |Image tagging                    | [Set up image tagging](image-tagging-setup.md)  |
 |Taxonomy tagging                    | [Set up taxonomy tagging](taxonomy-tagging-setup.md)  |
+|Syntex eSignature                    | [Set up Syntex eSignature](esignature-setup.md)  |
 |Optical character recognition    | [Set up optical character recognition](ocr.md)  |
