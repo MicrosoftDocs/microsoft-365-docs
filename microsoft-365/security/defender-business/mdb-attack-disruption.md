@@ -64,13 +64,21 @@ When an incident is disrupted, highlighted text appears below the incident title
 
 ## Track the actions in the Action center
 
-The Action center (https://security.microsoft.com/action-center) brings together remediation and response actions across your devices, email & collaboration content, and identities. Actions listed include remediation actions that were taken automatically or manually. You can view automatic attack disruption actions in the Action center.
+The [Action center](https://security.microsoft.com/action-center) brings together remediation and response actions, whether those actions were taken automatically or manually. You can view all automatic attack disruption actions in the Action center. Additionally, after your IT team or security team has mitigated the risk and completed the investigation of an incident, contained assets can be released.
 
-After you mitigate the risk and complete the investigation of an incident, you can release the contained assets from the action details pane (e.g., enable a disabled user account or release a device from containment). For more information about the action center, see Action center.
+1. In the Microsoft 365 Defender portal, go to **Actions & submissions** > **Action cente**.
+
+2. Select the **History** tab.
+
+3. Select an action, such as **Contain user** or **Contain device**, and then choose **Undo**.
+
+For more information, see [Review remediation actions in the Action center](mdb-review-remediation-actions.md).
 
 ## How to get automatic attack disruption
 
-Automatic attack disruption is built into Defender for Business; you don't have to explicitly turn these capabilities on. One important step to take is to onboard all your organization's devices (computers, phones, and tablets) to Defender for Business so that they're protected. Additionally, sign up to receive preview features so that you get the latest and greatest capabilities as soon as they're available. 
+Automatic attack disruption is built into Defender for Business; you don't have to explicitly turn these capabilities on. It's important to onboard all your organization's devices (computers, phones, and tablets) to Defender for Business so that they're protected. 
+
+Additionally, sign up to receive preview features so that you get the latest and greatest capabilities as soon as they're available. 
 
 See the following articles for more information:
 
