@@ -39,8 +39,8 @@ With automatic attack disruption, as soon as a human-operated attack is detected
 Automated response actions include:
 
 - Containing a device by blocking incoming/outgoing communication
-- Containing a user account by disconnecting user connections at the device level (your IT team doesn't have to access Azure Active Directory, or Azure AD)
-- Disabling a user account by automatically suspending the account in Azure AD
+- Containing a user account by disconnecting current user connections at the device level
+- Disabling a user account by automatically suspending the account in Azure Active Directory
 
 ## View details about an attack in the Microsoft 365 Defender portal
 
@@ -82,7 +82,5 @@ Additionally, sign up to receive preview features so that you get the latest and
 
 ## See also
 
-- [What's new in Microsoft 365 Business Premium and Microsoft Defender for Business](../../business-premium/m365bp-mdb-whats-new.md)
-- [Microsoft Defender for Business preview features](mdb-preview.md)
-
+- [Automatic attack disruption in Microsoft 365 Defender](../defender/automatic-attack-disruption.md)
 
