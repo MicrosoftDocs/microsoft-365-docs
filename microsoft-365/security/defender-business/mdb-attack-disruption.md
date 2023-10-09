@@ -60,7 +60,7 @@ Automated response actions include:
 
 Disrupted incidents include a tag for `Attack Disruption` and the specific threat type identified (such as ransomware). If your IT team or security team receives [incident email notifications](mdb-email-notifications.md), these tags also appear in the emails.
 
-When an incident is disrupted, highlighted text appears below the incident title. Suspended users and contained devices appear with a label indicating their status. 
+When an incident is disrupted, highlighted text appears below the incident title. Disabled user accounts and contained devices/users appear with a label indicating their status. 
 
 ## Track the actions in the Action center
 
