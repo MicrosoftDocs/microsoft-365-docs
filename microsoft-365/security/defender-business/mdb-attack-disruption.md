@@ -34,26 +34,33 @@ Automatic attack disruption is designed to:
 
 Automatic attack disruption uses insights from Microsoft security researchers and advanced AI models to counteract the complexities of advanced attacks. It limits a threat actor's progress early on and dramatically reduces the overall impact of an attack, from associated costs to loss of productivity.
 
-With automatic attack disruption, as soon as a human-operated attack is detected on a device, steps are taken immediately to contain the affected device and user accounts on the device. An incident is created in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), where your IT team or security team can view details about the risk and containment status of compromised assets during and after the process. In the portal, an **Incident** page provides details about the attack and up-to-date status of affected assets. 
+With automatic attack disruption, as soon as a human-operated attack is detected on a device, steps are taken immediately to contain the affected device and user accounts on the device. An incident is created in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). There, your IT team or security team can view details about the risk and containment status of compromised assets during and after the process. An **Incident** page provides details about the attack and up-to-date status of affected assets. 
 
 Automated response actions include:
 
-- Containing a device - incoming/outgoing communication is blocked on the device
-- Containing a user account - WHAT IS THIS?
-- Disabling a user account - an account is automatically suspended
+- Containing a device by blocking incoming/outgoing communication
+- Containing a user account by disconnecting user connections at the device level (your IT team doesn't have to access Azure Active Directory, or Azure AD)
+- Disabling a user account by automatically suspending the account in Azure AD
 
 ## View details about an attack in the Microsoft 365 Defender portal
 
+1. In the Microsoft 365 Defender portal, go to **Incidents**.
 
-Review the incident graph
-Microsoft 365 Defender automatic attack disruption is built-in in the Incident view. Reviewing the incident graph enables you to get the entire attack story and assess the attack disruption impact and status.
+2. Select an incident that is tagged with *Attack Disruption*.
 
-Here are some examples of what it looks like:
+3. Review the incident graph, which enables you to get the entire attack story and assess the attack disruption impact and status.
 
-Disrupted incidents include a tag for 'Attack Disruption' and the specific threat type identified (i.e., ransomware). If you subscribe to incident email notifications, these tags also appear in the emails.
-A highlighted notification below the incident title indicating that the incident was disrupted.
-Suspended users and contained devices appear with a label indicating their status.
-To release a user account or a device from containment, click on the contained asset and click release from containment for a device or enable user for a user account.
+4. When you're ready to release a contained device or user account, or re-enable a user account, take one of the following steps:
+
+   1. To release a contained device, select the device, and then choose **Release from containment**.
+
+   2. To release a contained user, select the user account, and then, in the side pane, select **Undo**.
+
+   3. To re-enable a user account, select the user account, and then select **Enable user**.
+
+Disrupted incidents include a tag for `Attack Disruption` and the specific threat type identified (such as ransomware). If your IT team or security team receives [incident email notifications](mdb-email-notifications.md), these tags also appear in the emails.
+
+When an incident is disrupted, highlighted text appears below the incident title. Suspended users and contained devices appear with a label indicating their status. 
 
 ## Track the actions in the Action center
 
