@@ -28,6 +28,7 @@ When you use Microsoft Syntex [pay-as-you-go](syntex-azure-billing.md), services
 |Content assembly |The number of documents (Word or PDF) created using Syntex templates. Each processed document counts as one transaction.<br><br>If you have an existing Syntex per-user license, you will not be charged for generating documents manually but will be charged for automated document generation using Power Automate. |$0.15/transaction |
 |Image tagging |The number of images processed. Each processed image counts as one transaction. You won’t be charged if you only enable pay-as-you-go billing for image tagging. You'll be charged only when you [enable image tagging on a document library](image-tagging.md). |$0.001/transaction |
 |Taxonomy tagging |The number of documents processed. Each processed document counts as one transaction. You won’t be charged if you only enable pay-as-you-go billing for taxonomy tagging. You'll be charged only when you [enable taxonomy tagging on a document library](taxonomy-tagging.md). |$0.05/transaction |
+|Syntex eSignature (Preview) |Description TBD. |$0.00/transaction |
 |Optical character recognition (Preview)  |The number of pages processed for images (JPEG, JPG, PNG, or BMP); the number of pages processed for PDF, TIF, or TIFF; or the number of embedded images in Teams chats and email messages. Each of these counts as one transaction. Processing occurs every time the file is edited. |$0.001/transaction|
 
 ## Related articles
