@@ -212,7 +212,7 @@ If you have a new account and are setting up your first subscription, you can us
 
 - [Set up Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md)
 - [Set up Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)
-- [Set up Microsoft 365 Business Premium](../business-premium/index.md)
+- [Set up Microsoft 365 Business Premium](../business-premium/m365bp-overview.md)
 - [Set up Microsoft Defender for Business](../security/defender-business/mdb-setup-configuration.md)
 - [Set up Microsoft 365 Apps for business](../admin/setup/setup-apps-for-business.md)
 

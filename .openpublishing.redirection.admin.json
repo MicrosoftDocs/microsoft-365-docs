@@ -2015,6 +2015,11 @@
          "source_path": "microsoft-365/admin/misc/message-center-conformance.md",
          "redirect_url": "/microsoft-365/admin/manage/message-center",
          "redirect_document_id":false
+       },
+       {
+         "source_path": "microsoft-365/admin/manage/language-translation-for-message-center-posts.md",
+         "redirect_url": "/microsoft-365/enterprise/view-service-health",
+         "redirect_document_id":false
        }       
    ]
 }

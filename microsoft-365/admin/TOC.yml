@@ -129,6 +129,8 @@
              href: create-groups/manage-guest-access-in-groups.md
            - name: Change a user name and email address
              href: add-users/change-a-user-name-and-email-address.md
+           - name: Change user profile photos
+             href: add-users/change-user-profile-photos.md
            - name: Restore a user
              href: add-users/restore-user.md
            - name: Create template to add users
@@ -286,11 +288,13 @@
             - name: Microsoft browser usage
               href: activity-reports/browser-usage-report.md
             - name: Dynamics 365 Customer Voice activity
-              href: activity-reports/forms-activity-ww.md
+              href: activity-reports/forms-pro-activity-ww.md
             - name: Email activity
               href: activity-reports/email-activity-ww.md
             - name: Email apps usage
               href: activity-reports/email-apps-usage-ww.md
+            - name: Forms activity
+              href: activity-reports/forms-activity-ww.md
             - name: Mailbox usage
               href: activity-reports/mailbox-usage.md
             - name: Microsoft Office activations
@@ -379,6 +383,8 @@
               href: manage/teams-apps-work-only-on-teams.md  
             - name: SaaS Linked Apps
               href: manage/saas-linked-apps.md  
+            - name: Manage plugins for CoPiliot
+              href: manage/manage-plugins-for-copilot-in-integrated-apps.md                
          - name: Centralized deployment of add-ins
            items:
             - name: Requirements for centralized deployment of add-ins
@@ -465,8 +471,10 @@
           href: security-and-compliance/gdpr-compliance.md
     - name: Manage devices and app data
       items:
-        - name: Device and app data protection methods 
+        - name: Device and app data protection methods
           href: basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md
+        - name: Manage user consent to apps
+          href: misc/user-consent.md
         - name: Basic Mobility and Security
           items:
             - name: Overview of Basic Mobility and Security

@@ -56,7 +56,6 @@ You must be an [global admin or password administrator](about-admin-roles.md) to
 Check out this video and others on our [YouTube channel](https://go.microsoft.com/fwlink/?linkid=2198204).
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FVVP]
-  
 ## Steps: Reset a business password for a user
 
 When a user requests a new password, you'll receive a password reset request in email. Follow these steps to reset the password.
@@ -126,7 +125,7 @@ These steps work for a business with tens of users. If you have hundreds or thou
 Use PowerShell! Check out this post by Eyal Doron: [Managing passwords with PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).
   
 <!-- Here's a related article: [Set the passwords for multiple user accounts](/office365/enterprise/powershell/manage-office-365-with-office-365-powershell). -->
-  
+
 For overview information, see [Manage Microsoft 365 with PowerShell](../../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md).
   
 ## Force a password change for all users in your business
@@ -135,22 +134,26 @@ Check out this great blog post by Vasil Michev, Microsoft MVP: [Force password c
 
 ## Set strong passwords
 
-1. [Connect to Microsoft 365 with PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+1. Connect to Microsoft Entra ID using [Microsoft Graph PowerShell](/powershell/microsoftgraph/get-started). You can explore other [authentication methods](/powershell/microsoftgraph/authentication-commands) too.
+
+    ```powershell
+    Connect-MgGraph -Scopes "User.Read.All"
+    ```
 
 2. Using PowerShell, you can turn off strong password requirements for all users with the following command:
 
     ```powershell
-    Get-MsolUser | Set-MsolUser -StrongPasswordRequired $false
+    Get-MgUser | ForEach { Update-MgUser –UserId $_.Id -PasswordPolicies "DisableStrongPassword" }
 
 3. You can turn **OFF** strong password requirements for specific users with this command:
 
     ```powershell
-    Set-MsolUser –UserPrincipalName –StrongPasswordRequired  $false
+    Update-MgUser -UserId <UserPrincipalName> -PasswordPolicies "DisableStrongPassword"
     ```
 
 > [!NOTE]
 > The userPrincipalName must be in the Internet-style sign-in format where the user name is followed by the at sign (@) and a domain name. For example: user@contoso.com.
-  
+
 ## Related content
   
 [Let users reset their own passwords](../add-users/let-users-reset-passwords.md) (article)\
@@ -158,3 +161,4 @@ Check out this great blog post by Vasil Michev, Microsoft MVP: [Force password c
 [Set an individual user's password to never expire](set-password-to-never-expire.md) (article)\
 [Set the password expiration policy for your organization](../manage/set-password-expiration-policy.md) (article)\
 [Microsoft 365 for business training videos](../../business-video/index.yml) (link page)
+
