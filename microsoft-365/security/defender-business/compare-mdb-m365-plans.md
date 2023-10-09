@@ -23,7 +23,7 @@ f1.keywords: NOCSH
 
 # Compare security features in Microsoft 365 plans for small and medium-sized businesses
 
-Microsoft offers a wide variety of cloud solutions and services, including plans for small and medium-sized businesses. For example, [Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md) includes security and device-management capabilities, along with productivity features such as Office apps. This article describes the security features in Microsoft 365 Business Premium, Microsoft Defender for Business, and [Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md).
+Microsoft offers a wide variety of cloud solutions and services, including plans for small and medium-sized businesses. For example, [Microsoft 365 Business Premium](../../business-premium/m365bp-overview.md) includes security and device-management capabilities, along with productivity features such as Office apps. This article describes the security features in Microsoft 365 Business Premium, Microsoft Defender for Business, and [Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md).
 
 > [!IMPORTANT]
 > This article provides a high-level overview of features and capabilities that are included in Microsoft Defender for Business (as a standalone plan) and Microsoft 365 Business Premium (which includes Defender for Business). It's not intended to be a service description or licensing contract document. For more detailed information, see the following resources:
@@ -47,7 +47,7 @@ Defender for Business provides advanced security protection for your devices, wi
 
 The following table summarizes what's included in each plan:
 
-| Feature/capability | [Defender for Business](mdb-overview.md)<br/>(standalone) | [Microsoft 365 Business Premium](../../business-premium/index.md) |
+| Feature/capability | [Defender for Business](mdb-overview.md)<br/>(standalone) | [Microsoft 365 Business Premium](../../business-premium/m365bp-overview.md) |
 |---|---|---|
 | **Identity management** | :::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false"::: | :::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::| 
 | [Azure Active Directory Free](/azure/active-directory/fundamentals/active-directory-whatis) (Azure AD) (includes security defaults) | :::image type="icon" source="../../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included" border="false":::  | |
@@ -122,4 +122,4 @@ Defender for Business brings the enterprise-grade capabilities of Defender for E
 - [See the requirements for Microsoft Defender for Business](mdb-requirements.md)
 - [Get Microsoft Defender for Business](get-defender-business.md)
 - [Learn how to set up and configure Microsoft Defender for Business](mdb-setup-configuration.md)
-- [Learn more about Microsoft 365 Business Premium](../../business-premium/index.md)
+- [Learn more about Microsoft 365 Business Premium](../../business-premium/m365bp-overview.md)
