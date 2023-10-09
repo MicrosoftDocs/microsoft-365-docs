@@ -32,9 +32,9 @@ If you're looking to manage Loop components in the Microsoft 365 ecosystem, visi
 
 Just like other Microsoft 365 experiences, Loop also leverages core services across SharePoint and Microsoft 365. To effectively enable Loop workspace experiences, follow the instructions in [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges) to ensure connections to Loop services.
 
-### Exchange Online license
+### License requirements
 
-Loop workspaces currently require each user to have an Exchange Online license and the user account cannot be a resource account (e.g. a shared mailbox user). If these requirements are not met, users will experience failures in the Loop app; won't receive notifications or signals when they collaborate and update; and encounter failures in other experiences also.
+Licensing through the new Loop with workspaces service plan covers the creation of new workspaces. If these requirements are not met, users will experience failures in the Loop app; won't receive notifications or signals when they collaborate and update; and encounter failures in other experiences also.
 
 ### WebSocket connections
 
