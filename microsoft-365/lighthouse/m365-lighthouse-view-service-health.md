@@ -34,7 +34,7 @@ To view service health, you'll need an Azure AD role in the partner tenant with 
 
 ## View service health status for all tenants
 
-1. In the left navigation pane in Lighthouse, select **Service health**.
+1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Service health**.
 
 2. On the **Service health** page, review the current service health status, including:
 
@@ -48,7 +48,7 @@ To view service health, you'll need an Azure AD role in the partner tenant with 
 
 ## Review issue details
 
-1. In the left navigation pane in Lighthouse, select **Service health**.
+1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Service health**.
 
 2. On the **Service health** page, select the **All services** or **All issues** tab.
 
