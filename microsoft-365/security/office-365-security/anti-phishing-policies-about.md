@@ -18,7 +18,7 @@ description: Admins can learn about the anti-phishing policies that are availabl
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.date: 8/14/2023
+ms.date: 10/9/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
@@ -148,9 +148,8 @@ The relationship between spoof intelligence and whether sender DMARC policies ar
 
 > [!NOTE]
 > If the MX record for the domain points to a third-party service or device that sits in front of Microsoft 365, the **Honor DMARC policy** setting is applied only if [Enhanced Filtering for Connectors](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) is enabled for the connector that receives inbound messages.
-
-> [!NOTE]
-> Customers can override Honor DMARC for specific emails/senders using Tenant and user overrides.
+>
+> Customers can override the **Honor DMARC policy** setting for specific email messages and/or senders using tenant and user overrides.
 
 ### Unauthenticated sender indicators
 
