@@ -80,7 +80,3 @@ Automatic attack disruption is built into Defender for Business; you don't have 
 
 Additionally, sign up to receive preview features so that you get the latest and greatest capabilities as soon as they're available. 
 
-## See also
-
-- [Automatic attack disruption in Microsoft 365 Defender](../defender/automatic-attack-disruption.md)
-
