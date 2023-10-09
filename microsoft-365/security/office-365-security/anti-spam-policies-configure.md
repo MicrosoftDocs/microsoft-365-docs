@@ -31,7 +31,7 @@ appliesto:
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, inbound email messages are automatically protected against spam by EOP. EOP uses anti-spam policies (also known as spam filter policies or content filter policies) as part of your organization's overall defense against spam. For more information, see [Anti-spam protection](anti-spam-protection-about.md).
 
 > [!TIP]
-> We recommend turning on and adding all users to the Standard and/or Strict preset security policies. For more information, see [Configure security policies](mdo-deployment-guide.md#step-2-configure-security-policies).
+> We recommend turning on and adding all users to the Standard and/or Strict preset security policies. For more information, see [Configure protection policies](mdo-deployment-guide.md#step-2-configure-protection-policies).
 
 The default anti-spam policy automatically applies to all recipients in the organization. For greater granularity, you can also create custom anti-spam policies that apply to specific users, groups, or domains.
 

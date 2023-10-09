@@ -47,7 +47,7 @@ As an initial step, you need to configure *email authentication* records in DNS 
 > [!NOTE]
 > For non-standard deployments of SPF, hybrid deployments, and troubleshooting: [How Microsoft 365 uses Sender Policy Framework (SPF) to prevent spoofing](email-authentication-anti-spoofing.md).
 
-Most protection features in Exchange Online Protection (EOP) and Defender for Office 365 come with *default policy configurations*. For more information, see the table [here](mdo-deployment-guide.md#step-2-configure-security-policies).
+Most protection features in Exchange Online Protection (EOP) and Defender for Office 365 come with *default policy configurations*. For more information, see the table [here](mdo-deployment-guide.md#step-2-configure-protection-policies).
 
 We recommend turning on and using the Standard and/or Strict preset security policies for all recipients. For more information, see the following articles:
 

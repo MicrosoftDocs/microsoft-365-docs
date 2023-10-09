@@ -44,7 +44,7 @@ EOP protection is on by default thanks to the default policies for:
 
 These default policies apply to all recipients by default and can't be turned off, but they can be overridden by [preset security policies](preset-security-policies.md) or custom policies that you create.
 
-You can customize the security settings in the default policies, create custom policies, or better yet, turn on and add all recipients to the Standard and/or Strict preset security policies. For complete information, see [Configure security policies](mdo-deployment-guide.md#step-2-configure-security-policies).
+You can customize the security settings in the default policies, create custom policies, or better yet, turn on and add all recipients to the Standard and/or Strict preset security policies. For complete information, see [Configure protection policies](mdo-deployment-guide.md#step-2-configure-protection-policies).
 
 The rest of this article explains how EOP works and the features that are available in EOP.
 
@@ -122,7 +122,7 @@ For information about requirements, important limits, and feature availability a
 |Connectors|[Configure mail flow using connectors in Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)|
 |Enhanced Filtering for Connectors|[Enhanced filtering for connectors in Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)|
 |**Monitoring**||
-|Message trace|[Message trace](message-trace-scc.md) <p> [Message trace in the Exchange admin center](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac)|
+|Message trace|[Message trace](message-trace-defender-portal.md) <p> [Message trace in the Exchange admin center](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac)|
 |Email & collaboration reports|[View email security reports](reports-email-security.md)|
 |Mail flow reports|[Mail flow reports in the Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
 |Mail flow insights|[Mail flow insights in the Exchange admin center](/exchange/monitoring/mail-flow-insights/mail-flow-insights)|

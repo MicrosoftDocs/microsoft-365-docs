@@ -87,7 +87,7 @@ Some capabilities are *not yet* configured. You have the following options for c
 
   You can also use the [Configuration analyzer](../office-365-security/configuration-analyzer-for-security-policies.md) to compare the settings in your custom policies to the Standard and Strict values.
 
-For detailed information about choosing preset security policies vs. custom policies, see [Determine your security policy strategy](../office-365-security/mdo-deployment-guide.md#determine-your-protection-policy-strategy).
+For detailed information about choosing preset security policies vs. custom policies, see [Determine your protection policy strategy](../office-365-security/mdo-deployment-guide.md#determine-your-protection-policy-strategy).
 
 ### Assign preset security policies
 
@@ -105,7 +105,7 @@ The pre-defined *Standard* or *Strict* Defender for Office 365 policy templates 
 
 It's *important* to be aware of the precedence these protection policies take when applied and enforced, as explained in [Order of precedence for preset security policies and other policies](../office-365-security/preset-security-policies.md#order-of-precedence-for-preset-security-policies-and-other-policies).
 
-The explanation and table in [Configure security policies](../office-365-security/mdo-deployment-guide.md#step-2-configure-security-policies) provides a handy reference for what you need to configure.
+The explanation and table in [Configure protection policies](../office-365-security/mdo-deployment-guide.md#step-2-configure-protection-policies) provides a handy reference for what you need to configure.
 
 ## Step 3: Try out capabilities and get familiar with simulation, monitoring, and metrics
 
