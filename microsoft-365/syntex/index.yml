@@ -77,7 +77,7 @@ landingContent:
             url: image-tagging-overview.md
           - text: Taxonomy tagging
             url: taxonomy-tagging-overview.md
-          - text: Syntex eSignature
+          - text: Syntex eSignature (Preview)
             url: esignature-overview.md
           - text: Optical character recognition
             url: ocr-overview.md
