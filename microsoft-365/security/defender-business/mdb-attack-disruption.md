@@ -22,7 +22,7 @@ audience: Admin
 
 A human-operated attack is an active attack by cybercriminals who infiltrate an organization, elevate their privileges, navigate the network, and deploy ransomware or steal information. These types of attacks can be catastrophic to business operations, tend to be difficult to address, and sometimes continue to threaten business operations after the initial encounter. For more information, see [Human-operated ransomware attacks](/security/ransomware/human-operated-ransomware#human-operated-ransomware-attacks).
 
-To help protect against human-operated or other advanced attacks, Microsoft 365 Defender added [automatic attack disruption](../defender/automatic-attack-disruption.md) in November, 2022. Now, these capabilities are coming to Defender for Business! This article describes how automatic attack disruption works, how to view details about an attack, and how to get these capabilities.
+To help protect against human-operated or other advanced attacks, Microsoft 365 Defender added [automatic attack disruption](../defender/automatic-attack-disruption.md) in November  2022. Now, these capabilities are coming to Defender for Business! This article describes how automatic attack disruption works, how to view details about an attack, and how to get these capabilities.
 
 ## How automatic attack disruption works
 
@@ -66,7 +66,7 @@ When an incident is disrupted, highlighted text appears below the incident title
 
 The [Action center](https://security.microsoft.com/action-center) brings together remediation and response actions, whether those actions were taken automatically or manually. You can view all automatic attack disruption actions in the Action center. Additionally, after your IT team or security team has mitigated the risk and completed the investigation of an incident, contained assets can be released.
 
-1. In the Microsoft 365 Defender portal, go to **Actions & submissions** > **Action cente**.
+1. In the Microsoft 365 Defender portal, go to **Actions & submissions** > **Action center**.
 
 2. Select the **History** tab.
 
@@ -76,13 +76,13 @@ For more information, see [Review remediation actions in the Action center](mdb-
 
 ## How to get automatic attack disruption
 
-Automatic attack disruption is built into Defender for Business; you don't have to explicitly turn these capabilities on. It's important to onboard all your organization's devices (computers, phones, and tablets) to Defender for Business so that they're protected. 
+Automatic attack disruption is built into Defender for Business; you don't have to explicitly turn on these capabilities. It's important to [onboard all your organization's devices](mdb-onboard-devices.md) (computers, phones, and tablets) to Defender for Business so that they're protected. 
 
 Additionally, sign up to receive preview features so that you get the latest and greatest capabilities as soon as they're available. 
 
-See the following articles for more information:
+## See also
 
-- [Onboard devices to Microsoft Defender for Business](mdb-onboard-devices.md)
+- [What's new in Microsoft 365 Business Premium and Microsoft Defender for Business](../../business-premium/m365bp-mdb-whats-new.md)
 - [Microsoft Defender for Business preview features](mdb-preview.md)
 
 
