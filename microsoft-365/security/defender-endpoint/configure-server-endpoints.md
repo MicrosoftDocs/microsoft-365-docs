@@ -229,7 +229,7 @@ You can use the [installer helper script](server-migration.md#installer-script) 
 
 This script can be used in various scenarios, including those scenarios described in [Server migration scenarios from the previous, MMA-based Microsoft Defender for Endpoint solution](/microsoft-365/security/defender-endpoint/server-migration) and for deployment using Group Policy as described below.
 
-##### Apply the Microsoft Defender for Endpoint installation and onboarding packages using Group policy
+## Apply the Microsoft Defender for Endpoint installation and onboarding packages using Group policy when performing the installation with an installer script.
 
 1. Create a group policy: <br> Open the [Group Policy Management Console](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) (GPMC), right-click **Group Policy Objects** you want to configure and select **New**. Enter the name of the new GPO in the dialogue box that is displayed and select **OK**.
 
