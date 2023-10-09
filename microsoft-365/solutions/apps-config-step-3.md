@@ -171,7 +171,7 @@ Each app can be added and configured based on a selected license, platform, and 
 For a list of Microsoft apps that have been designed to be configured and protected with Intune, see [Microsoft apps](/mem/intune/apps/apps-supported-intune-apps#microsoft-apps). For more information about Built-In apps, see [Built-In app](/mem/intune/apps/apps-add-built-in).
 
 ## Next step
-<!--
-[![Step 4 Configure Microsoft Edge](../media/configure-managed-apps/configure-managed-apps-06.png)](apps-config-step-4.md)
--->
-Continue with [Step 4](apps-config-step-4.md) to configure Microsoft Edge in Intune.
+
+[:::image type="content" source="../media/configure-managed-apps/configure-managed-apps-04.png" alt-text="Step 4 - Configure Microsoft Edge" border="false" :::](apps-config-step-4.md)
+
+Continue with [Step 4](apps-config-step-4.md) to configure Microsoft Edge in Microsoft Intune.

@@ -121,7 +121,6 @@ Apple's Automated Device Enrollments (ADE) aren't compatible with the app store 
 
 ## Next step
 
-<!--
-[![Step 2 - configure Microsoft Outlook](../media/configure-managed-apps/configure-managed-apps-04.png)](apps-config-step-2.md)
--->
-Continue with [Step 2](apps-config-step-2.md) configure Microsoft Outlook in Microsoft Intune.
+[:::image type="content" source="../media/configure-managed-apps/configure-managed-apps-02.png" alt-text="Step 2 - Configure Microsoft Outlook" border="false" :::](apps-config-step-2.md)
+
+Continue with [Step 2](apps-config-step-2.md) to configure Microsoft Outlook in Microsoft Intune.

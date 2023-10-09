@@ -102,8 +102,14 @@ Similar to app configuration policies for managed devices, if the managed app su
 
 Not every app supports app configuration. Check with the app developer to see if their app supports app configuration policies or for [troubleshooting specific app configuration settings](/mem/intune/apps/app-configuration-policies-overview?branch=main#troubleshooting). For a list of Microsoft and partner apps, see [Microsoft Intune protected apps](/mem/intune/apps/apps-supported-intune-apps).
 
+## Custom apps
+
+A line-of-business (LOB) app is an app that you add to Intune from an app installation file. This kind of app is typically written in-house. Intune installs the LOB app on the user's device. An organization that creates a LOB app can integrate that app with Intune using the [Intune App SDK](/mem/intune/developer/app-sdk) for iOS or Android.
+
+Win32 apps that your organization creates can be added to Intune. These apps are a type of LOB app. When you add a Win32 app to Intune, you can select to customize specific installation settings, such as the how the app is installed and uninstalled. The amount of time required to install the app. Any actions associated with installing the app, such as restarting the device. Additionally, you can set specific requirements when you're adding a Win32 app, such as **Operating system architecture**, **Minimum operating system**, **Disk space required (MB)**, **Physical memory required (MB)**, **Minimum number of logical processors required**, and **Minimum CPU speed required (MHz)**. You can also add requirement rules, detection rules, app dependencies, and app supersedence. For more information, see [Win32 app management in Microsoft Intune](/mem/intune/apps/apps-win32-app-management).
+
 ## Next step
-<!--
-[![Step 7 - Verify app configuration](../media/configure-managed-apps/configure-managed-apps-07.png)](apps-config-step-5.md)
--->
-Continue with [Step 7](apps-config-step-5.md) to verify app configuration in Microsoft Intune.
+
+[:::image type="content" source="../media/configure-managed-apps/configure-managed-apps-07.png" alt-text="Step 7 - Verify app configuration" border="false" :::](apps-config-step-7.md)
+
+Continue with [Step 7](apps-config-step-7.md) to verify other apps in Microsoft Intune.

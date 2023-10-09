@@ -45,7 +45,7 @@ For these notifications to show up on iOS/iPadOS and Android devices, your end-u
 > Microsoft Teams also supports Microsoft Tunnel for Mobile Application Management. For more information, see [Microsoft Tunnel for Mobile Application Management for Android](/mem/intune/protect/microsoft-tunnel-mam-android) and [Microsoft Tunnel for Mobile Application Management for iOS/iPadOS](/mem/intune/protect/microsoft-tunnel-mam-ios).
 
 ## Next step
-<!--
-[![Step 6 - Configure other apps](../media/configure-managed-apps/configure-managed-apps-07.png)](apps-config-step-5.md)
--->
-Continue with [Step 5](apps-config-step-5.md) to manage apps and licenses in Microsoft Intune.
+
+[:::image type="content" source="../media/configure-managed-apps/configure-managed-apps-06.png" alt-text="Step 6 - Configure other apps" border="false" :::](apps-config-step-6.md)
+
+Continue with [Step 6](apps-config-step-6.md) to configure other apps in Microsoft Intune.

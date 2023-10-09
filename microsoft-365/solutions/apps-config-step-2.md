@@ -20,6 +20,8 @@ Microsoft Intune makes it easy to provide Microsoft Outlook to your end users at
 
 > [!NOTE]
 > The methods described use Microsoft Intune as the unified endpoint management service and Exchange as the messaging platform.
+> 
+> If your organization uses a native email app or a different email service, you don't need to configure Microsoft Outlook.
 
 Outlook app configuration can be delivered by selecting either of the following methods:
 1. **Managed devices** - Select the mobile device management (MDM) OS channel.
@@ -30,9 +32,9 @@ Outlook app configuration can be delivered by selecting either of the following 
     - **Android**: Use an App Protection Policy for Android.
 
 > [!NOTE]
-> Managed devices are those devices that have been enrolled in a mobile device management (MDM) solution. Unmanaged devices that use managed apps, follow a mobile application management scenario.
+> Managed devices are those devices that have been enrolled in a mobile device management (MDM) solution. Unmanaged devices that use managed apps, follow a mobile application management (MAM) scenario.
 
-Outlook for iOS/iPadOSand Android supports the following configuration scenarios:
+Outlook for iOS/iPadOS and Android supports the following configuration scenarios:
 - **Account setup configuration** - Must have enrolled devices.
 - **Organization allowed accounts mode** - Must have enrolled devices.
 - **General app configuration settings**
@@ -197,8 +199,10 @@ You can find this setting in [Microsoft Intune admin center](https://go.microsof
 
 You can set app configuration settings by adding the name and value to an app configuration policy under the **General configuration settings** on the **Settings** pane. For more information about creating an app configuration policy in Intune, see [Create an app configuration policy](/mem/intune/apps/app-configuration-policies-use-ios#create-an-app-configuration-policy) for iOS/iPadOS devices and [Create an app configuration policy](/mem/intune/apps/app-configuration-policies-use-android#create-an-app-configuration-policy) for Android Enterprise devices. In addition, see [Email apps](/mem/intune/apps/app-configuration-policies-use-android#email-apps) for Android Enterprise devices.
 
+For more information about configuring Microsoft Outlook, see [Manage messaging collaboration access by using Outlook for iOS and Android with Microsoft Intune](/mem/intune/apps/app-configuration-policies-outlook).
+
 ## Next step
-<!--
-[![Step 3 - Configure Microsoft Office](../media/configure-managed-apps/configure-managed-apps-05.png)](apps-config-step-3.md)
--->
-Continue with [Step 3](apps-config-step-3.md) to configure Microsoft Office in Microsoft Intune.
+
+[:::image type="content" source="../media/configure-managed-apps/configure-managed-apps-03.png" alt-text="Step 3 - Configure Microsoft 365" border="false" :::](apps-config-step-3.md)
+
+Continue with [Step 3](apps-config-step-3.md) to configure Microsoft 365 in Microsoft Intune.

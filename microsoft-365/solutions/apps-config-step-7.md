@@ -63,5 +63,6 @@ Once you have reviewed and completed the steps provided in this solution, you ar
 For more information about how to proceed, see the following topics:
 - [App configuration policies for Microsoft Intune](/mem/intune/apps/app-configuration-policies-overview)
 - [App protection policies overview](/mem/intune/apps/app-protection-policy)
+- [Data protection framework using app protection policies](/mem/intune/apps/app-protection-framework)
 - [Assign apps to groups with Microsoft Intune](/mem/intune/apps/apps-deploy)
 - [Monitor app information and assignments with Microsoft Intune](/mem/intune/apps/apps-monitor)

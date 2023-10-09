@@ -98,10 +98,12 @@ https://learn.microsoft.com/en-us/mem/intune/apps/app-configuration-policies-use
 https://learn.microsoft.com/en-us/mem/intune/apps/app-configuration-policies-use-android#allow-only-configured-organization-accounts-in-apps
  
 -->
- 
+
+For more information about configuring Microsoft Edge, see [Manage Microsoft Edge on iOS and Android with Intune](/mem/intune/apps/manage-microsoft-edge). 
 
 ## Next step
-<!--
-[![Step 5 to manage apps and licenses](../media/configure-managed-apps/configure-managed-apps-07.png)](apps-config-step-5.md)
--->
-Continue with [Step 5](apps-config-step-5.md) to manage apps and licenses in Microsoft Intune.
+
+[:::image type="content" source="../media/configure-managed-apps/configure-managed-apps-05.png" alt-text="Step 5 - Configure Microsoft Teams" border="false" :::](apps-config-step-5.md)
+
+Continue with [Step 5](apps-config-step-5.md) to configure Microsoft Teams in Microsoft Intune.
+
