@@ -74,7 +74,7 @@ Security teams who use advanced hunting to proactively hunt for threats in their
 
 Security operations teams usually write reports to record important information, including what response actions were taken and the corresponding results, the team members involved, and other information to aid future security decisions and learning. Oftentimes, documenting incidents can be time-consuming. For incident reports to be effective, it must contain an incident's summary along with the actions taken, including what actions were taken by whom and when. Security Copilot helps security teams consolidate these information pieces through the [create incident report](security-copilot-m365d-create-incident-report.md) feature.
 
-:::image type="content" source="../../media/copilot-in-defender/incident-report/fig2-sec-copilot-m365d-create-report.png" alt-text="Screenshot of the incident report card in the incident page." lightbox="../../media/copilot-in-defender/incident-report/fig2-sec-copilot-m365d-create-report.png":::
+:::image type="content" source="../../media/copilot-in-defender/incident-report/fig2-sec-copilot-m365d-create-report.png" alt-text="Screenshot of the incident report card in the incident page." lightbox="../../media/copilot-in-defender/incident-report/fig2-expanded-sec-copilot-m365d-create-report.png":::
 
 ## Providing feedback
 
