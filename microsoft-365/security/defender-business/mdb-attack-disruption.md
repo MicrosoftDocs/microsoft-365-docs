@@ -22,15 +22,15 @@ audience: Admin
 
 A human-operated attack is an active attack by cybercriminals who infiltrate an organization, elevate their privileges, navigate the network, and deploy ransomware or steal information. These types of attacks can be catastrophic to business operations, tend to be difficult to address, and sometimes continue to threaten business operations after the initial encounter. For more information, see [Human-operated ransomware attacks](/security/ransomware/human-operated-ransomware#human-operated-ransomware-attacks).
 
-To help protect against human-operated or other advanced attacks, [automatic attack disruption](../defender/automatic-attack-disruption.md) capabilities were recently added to Microsoft 365 Defender. Now, these capabilities are coming to Defender for Business! This article describes how automatic attack disruption works, how to view details about an attack, and how to get these capabilities.
+To help protect against human-operated or other advanced attacks, Microsoft 365 Defender added [automatic attack disruption](../defender/automatic-attack-disruption.md) in November, 2022. Now, these capabilities are coming to Defender for Business! This article describes how automatic attack disruption works, how to view details about an attack, and how to get these capabilities.
 
 ## How automatic attack disruption works
 
 Automatic attack disruption is designed to:
 
-- Contain human-operated attacks that are in progress;
-- Limit the impact of such attacks on your business assets (such as devices); and
-- Provide more time for your security team to remediate an attack fully. 
+- Contain advanced attacks that are in progress;
+- Limit the impact and progression of such attacks on your business assets (such as devices); and
+- Provide more time for your IT team or security team to remediate an attack fully. 
 
 Automatic attack disruption uses insights from Microsoft security researchers and advanced AI models to counteract the complexities of advanced attacks. It limits a threat actor's progress early on and dramatically reduces the overall impact of an attack, from associated costs to loss of productivity.
 
