@@ -73,4 +73,3 @@ Shared mailboxes usually don't require a license. Follow these instructions to r
 [Create a shared mailbox](create-a-shared-mailbox.md) (article)\
 [Configure a shared mailbox](configure-a-shared-mailbox.md) (article)\
 [Convert a user mailbox to a shared mailbox](convert-user-mailbox-to-shared-mailbox.md) (article)\
-[Resolve issues with shared mailboxes](resolve-issues-with-shared-mailboxes.md) (article)

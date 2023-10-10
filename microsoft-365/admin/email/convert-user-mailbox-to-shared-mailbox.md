@@ -109,4 +109,3 @@ For more info about converting a user mailbox to a shared mailbox in an Exchange
 [Create a shared mailbox](create-a-shared-mailbox.md) (article)\
 [Configure a shared mailbox](configure-a-shared-mailbox.md) (article)\
 [Remove a license from a shared mailbox](remove-license-from-shared-mailbox.md) (article)\
-[Resolve issues with shared mailboxes](resolve-issues-with-shared-mailboxes.md) (article)
