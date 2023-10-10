@@ -9,7 +9,7 @@ metadata:
   description: Learn about Microsoft 365 Copilot and how your organization can use this copilot for work. # Required; article description that is displayed in search results. < 160 chars.
   ms.service: microsoft-365-copilot 
   ms.topic: hub-page # Required
-  ms.collection: # Optional; Remove if not applicable.
+  ms.collection: essentials-hub-or-landing # Optional; Remove if not applicable.
   author: samanro #Required; your GitHub user alias, with correct capitalization.
   ms.author: samanro #Required; microsoft alias of author; optional team alias.
   ms.date: 09/21/2023 #Required; mm/dd/yyyy format.
@@ -42,7 +42,7 @@ additionalContent:
         # Card
         - title: Data, Privacy, and Security for Microsoft 365 Copilot
           summary: Learn how Microsoft 365 Copilot uses data and how it stores and protects that data. 
-          url: /deployoffice/privacy/microsoft-365-copilot
+          url: microsoft-365-copilot-privacy.md
         # Card
         - title: End user help and learning for Microsoft 365 Copilot
           summary: End users can explore how Copilot with the apps in Microsoft 365 can help boost their productivity.

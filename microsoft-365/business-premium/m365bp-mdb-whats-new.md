@@ -9,7 +9,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 07/19/2023
+ms.date: 10/02/2023
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
@@ -23,10 +23,16 @@ f1.keywords: NOCSH
 # What's new in Microsoft 365 Business Premium and Microsoft Defender for Business
 
 **Applies to:**
-- [Microsoft 365 Business Premium](index.md)
+- [Microsoft 365 Business Premium](m365bp-overview.md)
 - [Microsoft Defender for Business](../security/defender-business/mdb-overview.md)
 
-This article lists new features in the latest release of [Microsoft 365 Business Premium](index.md) and [Microsoft Defender for Business](../security/defender-business/mdb-overview.md). Features that are currently in preview are denoted with **(preview)**.
+This article lists new features in the latest release of [Microsoft 365 Business Premium](m365bp-overview.md) and [Microsoft Defender for Business](../security/defender-business/mdb-overview.md). Features that are currently in preview are denoted with **(preview)**.
+
+## October 2023
+
+- **October is Cybersecurity Awareness Month**. See [how we're making it easier for small and medium-sized businesses to stay secure]( https://aka.ms/cybersecuritysmb). 
+
+- **Special pricing for new Microsoft 365 Business Premium customers**. During October, we're offering special pricing for new customers. For all the details, see [Security for your small or medium-sized business](https://aka.ms/SMBSecurity).
 
 ## July 2023
 

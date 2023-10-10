@@ -2,11 +2,7 @@
 title: Deploy updates for Microsoft Defender for Endpoint on Linux
 ms.reviewer: 
 description: Describes how to deploy updates for Microsoft Defender for Endpoint on Linux in enterprise environments.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, updates, deploy
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
@@ -15,10 +11,11 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
+- mde-linux
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 09/25/2023
 ---
 
 # Deploy updates for Microsoft Defender for Endpoint on Linux
@@ -68,7 +65,7 @@ sudo apt-get install --only-upgrade mdatp
 ```
 
 > [!IMPORTANT]
-> When integrating Microsoft Defender for Endpoint and Defender for Cloud, the mdatp agent will automatically receive updates by default.
+> When Defender for Cloud is provisioning the Microsoft Defender for Endpoint agent to Linux servers, it will keep the client updated automatically.
 
 To schedule an update of Microsoft Defender for Endpoint on Linux, see [Schedule an update of the Microsoft Defender for Endpoint (Linux)](linux-update-mde-linux.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

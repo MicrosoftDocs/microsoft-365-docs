@@ -180,7 +180,7 @@ A CSP can purchase an offer in Partner Center in their end customer's currency s
 | Thailand                            | TH        | USD          | EUR, THB, USD |
 | Trinidad and Tobago                 | TT        | USD          | EUR, TTD, USD |
 | Tunisia                             | TN        | USD          | EUR, TND, USD |
-| Turkey                              | TR        | USD          | EUR, TRY, USD |
+| Türkiye                             | TR        | USD          | EUR, TRY, USD |
 | Turkmenistan                        | TM        | USD          | EUR, TMT, USD |
 | Uganda                              | UG        | USD          | EUR, UGX, USD |
 | Ukraine                             | UA        | USD          | EUR, RUB, UAH, USD |
