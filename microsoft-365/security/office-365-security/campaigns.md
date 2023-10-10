@@ -85,7 +85,7 @@ The main **Campaigns** page consists of the following elements:
 >   - **Malware** tab \> **Campaign** tab
 >   - **Phish** tab \> **Campaign** tab
 >
-> - If you have a Microsoft Defender for Endpoint subscription, you can select :::image type="icon" source="../../media/m365-cc-sc-gear-icon.png" border="false"::: **MDE Settings** on the **Campaigns** page to connect or disconnect the campaigns information with Microsoft Defender for Endpoint. For more information, see [Integrate Microsoft Defender for Office 365 with Microsoft Defender for Endpoint](integrate-office-365-ti-with-mde.md).
+> - If you have a Microsoft Defender for Endpoint subscription, campaigns information is connected with Microsoft Defender for Endpoint.
 
 ### Chart area on the Campaigns page
 

@@ -21,7 +21,7 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.date: 9/13/2023
+ms.date: 10/10/2023
 ---
 
 # Better together: Microsoft Defender Antivirus and Office 365
@@ -78,9 +78,7 @@ Microsoft Defender for Office 365 integrated with Microsoft Defender for Endpoin
 
     SO
 
-- Once integration is enabled, your security operations team can see a list of devices that are used by the recipients of any detected URLs or email messages, along with recent alerts for those devices, in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
-
-If you haven't already done so, [integrate Microsoft Defender for Office 365 with Microsoft Defender for Endpoint](/microsoft-365/security/office-365-security/integrate-office-365-ti-with-mde).
+- Your security operations team can see a list of devices that are used by the recipients of any detected URLs or email messages, along with recent alerts for those devices, in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
 
 ## More good reasons to use OneDrive
 
