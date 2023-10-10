@@ -45,7 +45,10 @@ You can set up Microsoft 365 Defender to notify you through email about manual o
 
 ## Create a rule for email notifications
 
-To create a rule for email notifications:
+> [!NOTE]
+> Custom detections containing response actions are not supported in action email notifications currently.
+
+To create a rule for email notifications, perform the following steps:
 
 1. In the navigation pane of Microsoft 365 Defender, select **Settings > Microsoft 365 Defender**.  Under **General**, select **Email notifications**. Go to the **Actions** tab.
 :::image type="content" source="../../media/m35d-response-actions-notifications/fig1-response-notifications.png" alt-text="Actions tab in the Microsoft 365 Defender Settings page" lightbox="../../media/m35d-response-actions-notifications/fig1-response-notifications.png":::
