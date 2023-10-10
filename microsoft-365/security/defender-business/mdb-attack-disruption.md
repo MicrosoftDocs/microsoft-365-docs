@@ -32,7 +32,7 @@ Automatic attack disruption is designed to:
 - Limit the impact and progression of such attacks on your business assets (such as devices); and
 - Provide more time for your IT/security team to remediate an attack fully. 
 
-Automatic attack disruption uses insights from Microsoft security researchers and advanced AI models to counteract the complexities of advanced attacks. It limits a threat actor's progress early on and dramatically reduces the overall impact of an attack, from associated costs to loss of productivity.
+Automatic attack disruption uses insights from Microsoft security researchers and advanced AI models to counteract the complexities of advanced attacks. It limits a threat actor's progress early on and dramatically reduces the overall impact of an attack, from associated costs to loss of productivity. See some examples at the [Microsoft Security Blog](https://aka.ms/ContainUserSecBlog).
 
 With automatic attack disruption, as soon as a human-operated attack is detected on a device, steps are taken immediately to contain the affected device and user accounts on the device. An incident is created in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). There, your IT/security team can view details about the risk and containment status of compromised assets during and after the process. An **Incident** page provides details about the attack and up-to-date status of affected assets. 
 
