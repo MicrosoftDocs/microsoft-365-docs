@@ -4,9 +4,6 @@ ms.reviewer:
 description: Learn about the endpoint detection and response capabilities in Microsoft Defender for Endpoint
 keywords: Microsoft Defender for Endpoint, endpoint detection and response, response, detection, cybersecurity, protection
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
@@ -15,10 +12,11 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
+- mde-edr
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 10/09/2023
 ---
 
 # Overview of endpoint detection and response
@@ -34,9 +32,7 @@ Endpoint detection and response capabilities in Defender for Endpoint provide ad
 When a threat is detected, alerts are created in the system for an analyst to investigate. Alerts with the same attack techniques or attributed to the same attacker are aggregated into an entity called an _incident_. Aggregating alerts in this manner makes it easy for analysts to collectively investigate and respond to threats.
 
 > [!NOTE]
-> Defender for Endpoint detection is not intended to be an auditing or logging solution that records every operation or activity that happens on a given endpoint. Our sensor has an internal throttling mechanism, so the high rate of repeat identical events will not flood the logs.
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4o1j5]
+> Defender for Endpoint detection is not intended to be an auditing or logging solution that records every operation or activity that happens on a given endpoint. Our sensor has an internal throttling mechanism, so the high rate of repeat identical events don't flood the logs.
 
 > [!IMPORTANT]
 > [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md) and [Microsoft Defender for Business](../defender-business/mdb-overview.md) include only the following manual response actions:
@@ -49,9 +45,10 @@ Inspired by the "assume breach" mindset, Defender for Endpoint continuously coll
 
 The response capabilities give you the power to promptly remediate threats by acting on the affected entities.
 
-## Related topics
+## See also
 
 - [Incidents queue](view-incidents-queue.md)
 - [Alerts queue](alerts-queue.md)
 - [Devices list](machines-view-overview.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

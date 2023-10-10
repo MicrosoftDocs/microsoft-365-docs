@@ -13,6 +13,7 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
+- mde-linux
 ms.topic: reference
 ms.subservice: mde
 search.appverid: met150
@@ -37,7 +38,7 @@ This article is updated frequently to let you know what's new in the latest rele
 
 ## October-2023 Build: 101.23082.0006 | Release version: 30.123082.0006.0
 
-&ensp;Released: **September 15,2023**<br/>
+&ensp;Released: **October 9,2023**<br/>
 &ensp;Published: **October 9,2023**<br/>
 &ensp;Build: **101.23082.0006**<br/>
 &ensp;Release version: **30.123082.0006.0**<br/>

@@ -1,7 +1,7 @@
 ---
 title: Use a Teams status message to assign a delegate
 author: lana-chin
-ms.author: heidip
+ms.author: v-chinlana
 manager: serdars
 audience: ITPro
 ms.topic: how-to
