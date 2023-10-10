@@ -3,6 +3,7 @@ title: "Special considerations for Stream and Teams events in VPN environments"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
+ms.reviewer: bryanyce
 ms.date: 10/10/2023
 audience: Admin
 ms.topic: conceptual
