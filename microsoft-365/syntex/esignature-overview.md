@@ -17,7 +17,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: Learn about Microsoft Syntex eSignature and how to send electronic signature requests to people inside and outside of your organization. 
 ---
 
-# Create, review, and sign signature requests using Microsoft Syntex eSignature (Preview)
+# Overview of Microsoft Syntex eSignature (Preview)
 
 > [!NOTE]
 > This feature is currently in limited preview and subject to change.
@@ -34,3 +34,9 @@ You must be signed in to SharePoint Online by using your work email address.
 
 > [!NOTE]
 > For this preview, Syntex eSignature is available for only PDF documents at this time.
+
+
+<br>
+
+> [!div class="nextstepaction"]
+> [Create a signature request](esignature-send-requests.md)
