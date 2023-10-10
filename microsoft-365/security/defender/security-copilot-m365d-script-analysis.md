@@ -48,7 +48,7 @@ This guide describes what the script analysis capability is and how it works, in
 
 ## Technical requirements
 
-[Learn about the requirements for Security Copilot to get started](/copilot/microsoft-365-copilot-requirements.md).
+[Learn about the requirements for Security Copilot to get started](/security-copilot/microsoft-365-copilot-requirements).
 
 ## Analyze a script or code
 
@@ -78,8 +78,8 @@ You can validate or report the script analysis results provided by Security Copi
 - [Create an incident report](security-copilot-m365d-create-incident-report.md)
 
 ## See also
-- [Security Copilot Early Access Program FAQs](/security-copilot/faq-security-copilot.md)
-- [Get started with Security Copilot](/security-copilot/get-started-security-copilot.md)
-- [Learn about other Security Copilot embedded experiences](/security-copilot/experiences-security-copilot.md)
+- [Security Copilot Early Access Program FAQs](/security-copilot/faq-security-copilot)
+- [Get started with Security Copilot](/security-copilot/get-started-security-copilot)
+- [Learn about other Security Copilot embedded experiences](/security-copilot/experiences-security-copilot)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
