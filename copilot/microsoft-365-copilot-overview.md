@@ -96,7 +96,7 @@ For example, when you ask it about the “Q2 Sales Report,” it doesn’t simpl
 
 As illustrated below, the Semantic Index for Copilot is critical to getting relevant, actionable responses to prompts in Microsoft 365 Copilot (and it enhances enterprise search results users – whether or not they use Copilot).
 
-:::image type="content" source="media/compare-semantic-index-for-copilot.png" alt-text="Diagram that compares the difference in search with Semantic Index.":::
+:::image type="content" source="media/compare-semantic-index-for-copilot.png" lightbox="media/compare-semantic-index-for-copilot.png" alt-text="Diagram that compares the difference in search with Semantic Index.":::
 
 Microsoft 365, the Microsoft Graph, and the Semantic Index for Copilot enable an unprecedented expressiveness for search, chat, and Copilots leveraging Microsoft 365 data. This expressiveness is foundational to surface the right grounding data to get the most out of Microsoft 365 Copilot with your organizational data. To learn more about how to manage this, check out these resources:
 
