@@ -277,7 +277,7 @@ When a device is being isolated, the following notification is displayed to info
 ## Contain devices from the network
 
 > [!NOTE]
-> Contain capabilities are currently in public preview. To learn about new features in the Microsoft 365 Defender preview release and be among the first to try upcoming features by turning on the preview experience, see [Preview features in Micrsoft 365 Defender](../defender/preview.md).
+> Contain capabilities are currently in public preview. To learn about new features in the Microsoft 365 Defender preview release and be among the first to try upcoming features by turning on the preview experience, see [Preview features in Microsoft 365 Defender](../defender/preview.md).
 
 When you have identified an unmanaged device that is compromised or potentially compromised, you might want to contain that device from the network. When you contain a device any Microsoft Defender for Endpoint onboarded device will block incoming and outgoing communication with that device. This action can help prevent neighboring devices from becoming compromised while the security operations analyst locates, identifies, and remediates the threat on the compromised device.
 
@@ -320,6 +320,12 @@ You'll be able to stop containing a device at any time.
 1. Select the device from the **Device inventory** or open the device page.
 
 2. Select **Release from containment** from the action menu. This action will restore this device's connection to the network.
+
+## Contain users from the network
+
+> [!NOTE]
+> Contain User capability is currently available in public preview. To learn more about new preview features in Microsoft 365 Defender preview, see [Preview features in Microsoft 365 Defender](../defender/preview.md).
+
 
 ## Consult a threat expert
 
