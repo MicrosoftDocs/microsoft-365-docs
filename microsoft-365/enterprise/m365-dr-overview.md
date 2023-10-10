@@ -164,7 +164,7 @@ The following Regional Geographies can store data at rest.
 |Australia   |Sydney, Melbourne   |
 |Brazil   |Rio, Campinas   |
 |Canada      |Quebec City, Toronto    |
-|European Union      |Austria (Vienna), Finland (Helsinki), France (Paris, Marseille), Ireland (Dublin), Netherlands (Amsterdam), Poland (Warsaw), (Sweden (Gävle, Sandviken, Staffanstorp)     |
+|European Union      |Austria (Vienna), Finland (Helsinki), France (Paris, Marseille), Ireland (Dublin), Italy (Milan), Netherlands (Amsterdam), Poland (Warsaw), Sweden (Gävle, Sandviken, Staffanstorp)     |
 |France      |Paris, Marseille     |
 |Germany     |Frankfurt, Berlin       |
 |India   |Chennai, Mumbai, Pune        |
