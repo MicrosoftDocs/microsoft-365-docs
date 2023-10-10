@@ -3,7 +3,7 @@ title: Learn where to start with a frontline deployment
 author: lana-chin
 ms.author: v-chinlana
 manager: serdars
-ms.reviewer: samanro
+ms.reviewer: aaglick
 ms.topic: conceptual
 audience: admin
 ms.service: microsoft-365-frontline
@@ -16,7 +16,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 10/28/2022
+ms.date: 10/10/2023
 ---
 
 # Learn where to start with a frontline deployment
