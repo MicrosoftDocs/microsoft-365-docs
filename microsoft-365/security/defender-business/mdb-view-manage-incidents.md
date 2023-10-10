@@ -45,7 +45,7 @@ As threats are detected and alerts are triggered, incidents are created. Your co
 3. In the flyout pane, you can see the alert title, view a list of assets (such as endpoints or user accounts) that were affected, take available actions, and use links to view more information and even open the details page for the selected alert. 
 
 > [!TIP]
-> Defender for Business is designed to help you address detected threats by recommeding actions you can take. When you view an alert, look for these suggestions. Also notice the alert severity, which is determined not only on the basis of the detected threat severity, but also on the level of risk to your company. 
+> Defender for Business is designed to help you address detected threats by recommending actions you can take. When you view an alert, look for these suggestions. Also notice the alert severity, which is determined not only on the basis of the detected threat severity, but also on the level of risk to your company. 
 
 ## Alert severity
 
