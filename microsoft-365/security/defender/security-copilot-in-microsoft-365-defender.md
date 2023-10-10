@@ -83,7 +83,6 @@ Security Copilot and Microsoft 365 Defender uses AI and machine learning to proc
 All key features have an option for providing feedback. To provide feedback, perform the following steps:
 
 1. Select the down arrow beside the face icon located at the bottom of any response card in the Security Copilot pane.
-:::image type="content" source="../../media/copilot-in-defender/first-run/fig2-sec-copilot-m365d-first-run.png" alt-text="Screenshot highlighting the icon and feedback options for Security Copilot responses." lightbox="../../media/copilot-in-defender/first-run/fig2-sec-copilot-m365d-first-run.png":::
 2. Select **Confirmed, it looks great** if the results are accurate based on your assessment. When results are confirmed, you can provide more information in the next dialog box.
 3. Select **Off-target, inaccurate** if any detail is incorrect or incomplete based on your assessment. You can provide more information about your assessment in the next dialog box and submit this assessment to Microsoft.
 4. You can also report the results if it contains questionable or ambiguous information by selecting **Potentially harmful, inappropriate**. Provide more information about the results in the next dialog box and select Submit.
