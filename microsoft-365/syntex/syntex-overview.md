@@ -133,7 +133,7 @@ Both structured and freeform models use Microsoft Power Apps AI Builder to creat
 
 [Learn more about taxonomy tagging in Microsoft Syntex.](taxonomy-tagging-overview.md)
 
-### Syntex eSignature (Preview)
+### Syntex eSignature
 
 :::row:::
    :::column span="3":::
