@@ -58,6 +58,7 @@ The following table lists a few examples of alerts and their severity levels:
 
 | Scenario | Alert severity and reason |
 |:---|:---|
+| [Automated attack disruption](mdb-attack-disruption.md) detects an advanced attack, and contains devices or user accounts to help prevent the attack from proceeding. | **High**. Attack disruption capabilities help contain an attack so your IT/security team can address it. |
 | Microsoft Defender Antivirus detects and stops a threat before it does any damage. | **Informational**. The threat was stopped before any damage was done. |
 | Microsoft Defender Antivirus detects malware that was executing within your company. The malware is stopped and remediated. | **Low**. Although some damage might have been done to an individual endpoint, the malware now poses no threat to your company. |
 | Malware that is executing is detected by Defender for Business. The malware is blocked almost immediately. | **Medium** or **High**. The malware poses a threat to individual endpoints and to your company. |
