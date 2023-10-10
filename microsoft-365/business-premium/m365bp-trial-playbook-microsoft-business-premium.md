@@ -10,8 +10,7 @@ ms.topic: conceptual
 ms.collection: 
 - m365-security
 - tier1
-ms.service: microsoft-365-security
-ms.subservice: m365bp
+ms.service: microsoft-365-business
 ms.date: 07/19/2023
 ms.reviewer: nehabha
 ms.localizationpriority: medium
