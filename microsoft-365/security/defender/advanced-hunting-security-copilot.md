@@ -41,7 +41,7 @@ Threat hunters or security analysts who are not yet familiar with or have yet to
 
 This feature reduces the time  it takes to write a hunting query from scratch so that threat hunters and security analysts can focus on hunting and investigating threats.
 
-Users with access to Security Copilot has access to this capability in advanced hunting. 
+Users with access to Security Copilot have access to this capability in advanced hunting. 
 
 ## Try your first request
 1. Open the **advanced hunting** page from the navigation bar in Microsoft 365 Defender. The Security Copilot side pane for advanced hunting appears at the right hand side.
