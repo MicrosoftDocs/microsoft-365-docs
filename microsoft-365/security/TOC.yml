@@ -27,7 +27,7 @@
         - name: Recommended Defender for Cloud Apps policies for SaaS apps
           href: ./office-365-security/zero-trust-identity-device-access-policies-mcas-saas.md
         - name: Continuous access evaluation
-          href: /azure/active-directory/conditional-access/concept-continuous-access-evaluation
+          href: ./office-365-security/zero-trust-continuous-access-evaluation-microsoft-365.md
     - name: Strengthen your security posture with Microsoft 365 Defender
       items:
         - name: Overview

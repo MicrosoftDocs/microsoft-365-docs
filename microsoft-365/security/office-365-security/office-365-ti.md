@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 6/15/2023
+ms.date: 10/10/2023
 audience: Admin
 ms.topic: overview
 ms.localizationpriority: medium
@@ -57,17 +57,9 @@ To view and use this report in the Microsoft 365 Defender portal at <https://sec
 
 #### Office 365 Threat Intelligence connection
 
-> [!IMPORTANT]
-> This setting was used when Microsoft Defender for Office 365 and Microsoft Defender for Endpoint were managed in different portals. After the convergence of security experiences into the Microsoft 365 Defender portal at <https://security.microsoft.com>, these settings are irrelevant and don't have any functionality associated with them. You can safely ignore the status of the control until it has been removed from the portal.
-
 This feature is only available if you have an active Office 365 E5 or G5 or Microsoft 365 E5 or G5 subscription or the Threat Intelligence add-on. For more information, see the Office 365 Enterprise E5 product page.
 
-When you turn on this feature, you'll be able to incorporate data from Microsoft Defender for Office 365 into Microsoft 365 Defender to conduct a comprehensive security investigation across Office 365 mailboxes and Windows devices.
-
-> [!NOTE]
-> This setting is no longer functional in the Microsoft 365 Defender portal at <https://security.microsoft.com> and will be deprecated soon. Customers can still see Defender for Office 365 data in the security portal and are advised not to use this setting. 
-
-To receive contextual device integration in Office 365 Threat Intelligence, you'll need to enable the Defender for Endpoint settings in the Security & Compliance dashboard. For more information, see [Use Microsoft Defender for Office 365 together with Microsoft Defender for Endpoint](/microsoft-365/security/office-365-security/integrate-office-365-ti-with-mde).
+Data from Microsoft Defender for Office 365 is incorporated into Microsoft 365 Defender to conduct a comprehensive security investigation across Office 365 mailboxes and Windows devices.
 
 ### Incidents
 
@@ -119,5 +111,4 @@ Microsoft Defender for Office 365 uses role-based access control. Permissions ar
 
 - [Learn about Threat Trackers - New and Noteworthy](threat-trackers.md)
 - [Find and investigate malicious email that was delivered (Office 365 Threat Investigation and Response)](investigate-malicious-email-that-was-delivered.md)
-- [Integrate Office 365 Threat Investigation and Response with Microsoft Defender for Endpoint](integrate-office-365-ti-with-mde.md)
 - [Simulate a phishing attack](attack-simulation-training-simulations.md)

@@ -1167,7 +1167,7 @@
       },
       {
          "source_path":"microsoft-365/security/defender-365-security/integrate-office-365-ti-with-wdatp.md",
-         "redirect_url":"/microsoft-365/security/office-365-security/integrate-office-365-ti-with-mde",
+         "redirect_url":"/microsoft-365/security/defender/deploy-configure-m365-defender",
          "redirect_document_id":false
       },
       {
@@ -2873,6 +2873,61 @@
        {
          "source_path":"microsoft-365/security/office-365-security/reference-policies-practices-and-guidelines.md",
          "redirect_url":"/microsoft-365/security/office-365-security/external-senders-policies-practices-guidelines",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/protect-against-threats.md",
+         "redirect_url":"/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/microsoft-365-policies-configurations.md",
+         "redirect_url":"/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-overview",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/identity-access-prerequisites.md",
+         "redirect_url":"/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-prereq",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/identity-access-policies.md",
+         "redirect_url":"/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-common",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/identity-access-policies-guest-access.md",
+         "redirect_url":"/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-guest-access",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/teams-access-policies.md",
+         "redirect_url":"/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-teams",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/secure-email-recommended-policies.md",
+         "redirect_url":"/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-exchange",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/sharepoint-file-access-policies.md",
+         "redirect_url":"/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-sharepoint",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/mcas-saas-access-policies.md",
+         "redirect_url":"/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-mcas-saas",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/microsoft-365-continuous-access-evaluation.md",
+         "redirect_url":"/microsoft-365/security/office-365-security/zero-trust-continuous-access-evaluation-microsoft-365",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/integrate-office-365-ti-with-mde.md",
+         "redirect_url":"/microsoft-365/security/defender/deploy-configure-m365-defender",
          "redirect_document_id":false
        },
        {

@@ -178,10 +178,10 @@
              href: anti-phishing-from-email-address-validation.md    
            - name: Tune anti-phishing protection
              href: anti-phishing-protection-tuning.md
-           - name: Impersonation insight
-             href: anti-phishing-mdo-impersonation-insight.md
            - name: Spoof intelligence insight
              href: anti-spoofing-spoof-intelligence.md
+           - name: Impersonation insight
+             href: anti-phishing-mdo-impersonation-insight.md
            - name: How Microsoft 365 uses SPF to prevent spoofing
              href: email-authentication-anti-spoofing.md
          - name: Safe Attachments in Defender for Office 365
@@ -398,10 +398,10 @@
            href: teams-message-entity-panel.md
        - name: Insights
          items:
-         - name: Impersonation insight
-           href: anti-phishing-mdo-impersonation-insight.md
          - name: Spoof intelligence insight
            href: anti-spoofing-spoof-intelligence.md
+         - name: Impersonation insight
+           href: anti-phishing-mdo-impersonation-insight.md
        - name: Search the audit log
          href: audit-log-search-defender-portal.md
        - name: Reports
@@ -424,7 +424,6 @@
          href: siem-server-integration.md
        - name: SIEM threat intelligence integration
          href: siem-integration-with-office-365-ti.md
-
 
      - name: Respond and remediate
        items:
