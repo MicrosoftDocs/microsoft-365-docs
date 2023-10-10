@@ -46,7 +46,7 @@ Currently, Copilot can use search-based message extensions as plugins, but only 
 
 When Copilot extensibility is enabled, users can see an extensibility icon in Copilot that allows them to access the plugin for Copilot hub. The plugin hub shows the list of plugins that are available and deployed for the user. Users can toggle it on or off to restrict access of Copilot to any specific plugin during the interaction. Users can also add or remove plugins from the plugin hub by right-clicking on the plugin and selecting the appropriate option. Users can only access the plugins that are allowed by the admin and that they have installed or been assigned to.
 
-## Manage plugins for Copilot plugins in the Microsoft 365 admin center
+## Manage plugins for Copilot in the Microsoft 365 admin center
 
 Admins can manage plugins for Copilot as apps in the Integrated apps section of the Microsoft 365 admin center, where they can see the list of available, deployed, or blocked apps for their organization. They will be able to:
 
