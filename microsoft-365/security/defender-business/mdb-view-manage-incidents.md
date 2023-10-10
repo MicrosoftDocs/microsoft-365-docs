@@ -35,6 +35,9 @@ As threats are detected and alerts are triggered, incidents are created. Your co
 
 1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, go to **Incidents & alerts**, and then select **Incidents**. Any incidents that were created are listed on the page.
 
+   > [!IMPORTANT]
+   > If you see an incident tagged with `Attack disruption`, it means an advanced attack has been detected. See [Automatic attack disruption](mdb-attack-disruption.md).
+
 2. Select an alert to open its flyout pane, where you can learn more about the alert. 
 
    :::image type="content" source="../../media/defender-business/mdb-incident-flyout.png" alt-text="Screenshot of incident selected with flyout open":::
