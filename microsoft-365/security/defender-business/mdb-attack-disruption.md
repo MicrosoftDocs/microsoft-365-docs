@@ -76,7 +76,7 @@ For more information, see [Review remediation actions in the Action center](mdb-
 
 ## How to get automatic attack disruption
 
-Automatic attack disruption is built into Defender for Business; you don't have to explicitly turn on these capabilities. It's important to [onboard all your organization's devices](mdb-onboard-devices.md) (computers, phones, and tablets) to Defender for Business so that they're protected. 
+Automatic attack disruption is built into Defender for Business; you don't have to explicitly turn on these capabilities. It's important to [onboard all your organization's devices](mdb-onboard-devices.md) (computers, phones, and tablets) to Defender for Business so that they're protected as soon as possible. 
 
 Additionally, sign up to receive [preview features](mdb-preview.md) so that you get the latest and greatest capabilities as soon as they're available. 
 
