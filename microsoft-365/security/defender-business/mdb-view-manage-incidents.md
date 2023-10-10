@@ -51,7 +51,7 @@ As threats are detected and alerts are triggered, incidents are created. Your co
 
 When a threat is detected, a severity level is assigned to each alert that is generated. 
 
-- Microsoft Defender Antivirus assigns an alert severity based on the absolute severity of a detected threat (such as malware) and the potential risk to an individual endpoint (if infected). 
+- Microsoft Defender Antivirus assigns an alert severity based on the absolute severity of a detected threat (such as malware) and the potential risk to an individual device (if infected). 
 - Defender for Business assigns an alert severity based on the severity of the detected behavior, the actual risk to an endpoint (device), and more importantly, the potential risk to your company. 
 
 The following table lists a few examples of alerts and their severity levels:
