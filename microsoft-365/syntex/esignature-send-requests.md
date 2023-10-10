@@ -22,20 +22,9 @@ description: Learn how to use Microsoft Syntex eSignature to send electronic sig
 > [!NOTE]
 > This feature is currently in limited preview and subject to change.
 
-Microsoft Syntex eSignature simplifies the process of signing and sharing documents, while providing the security and compliance of Microsoft 365.
-
-With Syntex eSignature, you can quickly and securely send documents for signature to people both inside and outside of your organization. You'll also have a digital audit trail, which can be used to verify the authenticity of documents and transactions.
-
-## Before you begin
-
-Before you can use Syntex eSignature, an admin must [set up the Syntex eSignature service](esignature-setup.md) in the Microsoft 365 admin center.
-
-You must be signed in to SharePoint Online by using your work email address.
-
-> [!NOTE]
-> For this preview, Syntex eSignature is available for only PDF documents at this time.
-
 ## Create a signature request
+
+Use the following steps to start the Syntex eSignature process.
 
 1. From a SharePoint document library, open the document for which you want to start the Syntex eSignature process.
 
@@ -59,6 +48,25 @@ You must be signed in to SharePoint Online by using your work email address.
 
     Once sent, the status of the request is set to **In progress** and recipients are able to add their signatures.
 
+## Cancel a signature request
+
+If you create a signature request and want to cancel it, follow these steps.
+
+1. From one of your email notifications, select **View Request**.
+
+2. When the document is open in the document viewer, select **More options** (...), and then select **Cancel request**.
+
+    ![Screenshot of a document showing the Cancel signature request option.](../media/content-understanding/esignature-cancel-signature-request-option.png)
+
+3. On the **Cancel signature request** confirmation screen, enter a message detailing why the request is canceled if needed, and then select **Yes, cancel**.
+
+    ![Screenshot of the Cancel signature request confirmation screen.](../media/content-understanding/esignature-cancel-signature-request-confirmation.png)
+
+    Once canceled, the status of the request is set to **Canceled** and recipients receive an email notification telling them that the request was canceled and that no further action is possible on this request.
+
+
+## Troubleshoot a signature request
+
 ### Unable to create a request
 
 If you aren't able to create a signature request, check the PDF viewer settings or the collaboration settings.
@@ -76,22 +84,6 @@ Syntex eSignature is an extension of SharePoint document storage and management 
 - The document is stored in a library or folder that has unique permissions or sharing settings. This event might override the default settings of the SharePoint site or tenant and either allow or block certain users from initiating or accessing an eSignature request with that document.
 
 - Microsoft Entra ID collaboration settings restrict document sharing to specific individuals. This event limits who the requests can be sent to.
-
-### Cancel a signature request
-
-If you create a signature request and want to cancel it, follow these steps.
-
-1. From one of your email notifications, select **View Request**.
-
-2. When the document is open in the document viewer, select **More options** (...), and then select **Cancel request**.
-
-    ![Screenshot of a document showing the Cancel signature request option.](../media/content-understanding/esignature-cancel-signature-request-option.png)
-
-3. On the **Cancel signature request** confirmation screen, enter a message detailing why the request is canceled if needed, and then select **Yes, cancel**.
-
-    ![Screenshot of the Cancel signature request confirmation screen.](../media/content-understanding/esignature-cancel-signature-request-confirmation.png)
-
-    Once canceled, the status of the request is set to **Canceled** and recipients receive an email notification telling them that the request was canceled and that no further action is possible on this request.
 
 <br>
 
