@@ -74,15 +74,16 @@ Users and groups are included in the same file. Depending on whether it's a user
 
 
 >[!Important]
->When creating your Identity Mapping please note that for Group Connected sites, the Target site URL must align with the Alias of the new Group created on the Target tenant.
+>When creating your Identity Mapping for Group Connected sites, the Target site URL **must** align with the alias of the new Group created on the Target tenant.
 >
 >**Example:**  
 >Source site: https://<spam>contoso.sharepoint.<<spam>com/teams/O365SourceGroup
 >New Target Group Alias = O365TargetGroup
 >
->In your Identity Mapping file the Target site needs to be https://fabrikam.sharepoint.com/teams/O365TargetGroup
+>In your Identity Mapping file the Target site needs to be:
+> -  https://fabrikam<spam>.sharepoint.<spam>com/teams/**O365TargetGroup**
 >
->If Target Alias and Target URL do not align then the migration will fail.
+>If the Target Alias and Target URL don't align, the migration will fail.
 
 
 > [!IMPORTANT]
