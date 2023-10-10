@@ -1,6 +1,6 @@
 ---
 title: Review remediation actions in Microsoft Defender for Business
-description: View remediations that were taken on detected threats with Defender for Business. You can view actions in the Action center in the Microsoft 365 Defender portal.
+description: View remediations that were taken on detected threats or suspected attacks with Defender for Business.
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
