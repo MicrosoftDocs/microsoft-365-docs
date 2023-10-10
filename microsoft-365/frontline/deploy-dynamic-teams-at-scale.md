@@ -156,3 +156,8 @@ The [Teams usage report](/microsoft-365/admin/activity-reports/microsoft-teams-u
 
     > [!NOTE]
     > To get a list of your frontline team IDs, in the Teams admin center, go to **Teams** > **Manage frontline teams**, and then in the **Frontline teams** section, select **Download CSV**.
+
+## Related articles
+
+- [Learn where to start with a frontline deployment](flw-deploy-overview.md)
+- [How to find the best frontline team solution for your organization](frontline-team-options.md)

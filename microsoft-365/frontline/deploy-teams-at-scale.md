@@ -160,9 +160,23 @@ You use the [New-CsBatchTeamsDeployment](/powershell/module/teams/New-CsBatchTea
     Get-CsBatchTeamsDeploymentStatus -OrchestrationId "OrchestrationId"
     ```
 
+## Get analytics on frontline teams usage
+
+The [Teams usage report](/microsoft-365/admin/activity-reports/microsoft-teams-usage-activity) in  Teams admin center gives you an overview of usage activity in Teams. You can use the report to view usage details for your frontline teams, including active users, active channels, total organized meetings, last activity date, and other information.
+
+1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), **choose Analytics & reports** > **Usage reports**.
+2. On the **View reports** tab, under **Report**, select **Teams usage**.
+3. Under **Date range**, select a date range of 7 days, 30 days, 90 days, or 180 days. Then, choose **Run report**.
+4. In the upper-right corner, select **Export to Excel** > **Export table as CSV**.
+5. Filter the spreadsheet based on your frontline team IDs.
+
+    > [!NOTE]
+    > Your frontline team IDs are listed in the PowerShell output when you deploy your teams.
+
 ## Related articles
 
 - [New-CsBatchTeamsDeployment](/powershell/module/teams/New-CsBatchTeamsDeployment)
 - [Get-CsBatchTeamsDeploymentStatus](/powershell/module/teams/Get-CsBatchTeamsDeploymentstatus)
 - [Teams PowerShell Overview](/microsoftteams/teams-powershell-overview)
 - [Learn where to start with a frontline deployment](flw-deploy-overview.md)
+- [How to find the best frontline team solution for your organization](frontline-team-options.md)
