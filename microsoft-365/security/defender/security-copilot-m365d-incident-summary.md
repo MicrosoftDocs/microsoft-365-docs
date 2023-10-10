@@ -43,7 +43,7 @@ This guide outlines what to expect and how to access the summarizing capability 
 
 ## Technical requirements
 
-[Learn about the requirements for Security Copilot to get started](/security-copilot/microsoft-365-copilot-requirements.md).
+[Learn about the requirements for Security Copilot to get started](/security-copilot/microsoft-365-copilot-requirements).
 
 ## Summarize an incident
 
