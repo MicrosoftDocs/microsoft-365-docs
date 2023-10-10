@@ -47,7 +47,7 @@
      },
      {
         "source_path":"microsoft-365/solutions/configure-secure-access.md",
-        "redirect_url":"/microsoft-365/security/office-365-security/microsoft-365-policies-configurations",
+        "redirect_url":"/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-overview",
         "redirect_document_id":true
      },
      {

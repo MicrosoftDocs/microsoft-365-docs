@@ -22,7 +22,7 @@ description: Create a Microsoft 365 environment to test identity and device acce
 
 *This Test Lab Guide can only be used for Microsoft 365 for enterprise test environments.*
 
-[Identity and device access configurations](../security/office-365-security/microsoft-365-policies-configurations.md) are a set of recommended configurations and conditional access policies to protect access to all services that are integrated with Azure Active Directory (Azure AD).
+[Identity and device access configurations](../security/office-365-security/zero-trust-identity-device-access-policies-overview.md) are a set of recommended configurations and conditional access policies to protect access to all services that are integrated with Azure Active Directory (Azure AD).
 
 To create a test environment that has the common identity and device access configurations in place:
 
@@ -32,7 +32,7 @@ To create a test environment that has the common identity and device access conf
   - [Password hash synchronization (PHS)](phs-prereqs-m365-test-environment.md)
   - [Pass-through authentication (PTA)](pta-prereqs-m365-test-environment.md)
 
-2. Use [Common identity and device access policies](../security/office-365-security/identity-access-policies.md) to configure the policies that build on the prerequisites configured for your test environment and explore and verify protection for identities and devices.
+2. Use [Common identity and device access policies](../security/office-365-security/zero-trust-identity-device-access-policies-common.md) to configure the policies that build on the prerequisites configured for your test environment and explore and verify protection for identities and devices.
 
 ## See also
 

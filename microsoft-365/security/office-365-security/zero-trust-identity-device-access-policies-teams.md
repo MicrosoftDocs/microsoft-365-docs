@@ -28,9 +28,9 @@ search.appverid: met150
 
 # Policy recommendations for securing Teams chats, groups, and files
 
-This article describes how to implement the recommended Zero Trust identity and device access policies to protect Microsoft Teams chats, groups, and content such as files and calendars. This guidance builds on the [common identity and device access policies](identity-access-policies.md), with additional information that's Teams-specific. Because Teams integrates with our other products, also see [Policy recommendations for securing SharePoint sites and files](sharepoint-file-access-policies.md) and [Policy recommendations for securing email](secure-email-recommended-policies.md).
+This article describes how to implement the recommended Zero Trust identity and device access policies to protect Microsoft Teams chats, groups, and content such as files and calendars. This guidance builds on the [common identity and device access policies](zero-trust-identity-device-access-policies-common.md), with additional information that's Teams-specific. Because Teams integrates with our other products, also see [Policy recommendations for securing SharePoint sites and files](zero-trust-identity-device-access-policies-sharepoint.md) and [Policy recommendations for securing email](zero-trust-identity-device-access-policies-exchange.md).
 
-These recommendations are based on three different tiers of security and protection for Teams that can be applied based on the granularity of your needs: starting point, enterprise, and specialized security. You can learn more about these security tiers and the recommended policies referenced by these recommendations in the [Identity and device access configurations](microsoft-365-policies-configurations.md).
+These recommendations are based on three different tiers of security and protection for Teams that can be applied based on the granularity of your needs: starting point, enterprise, and specialized security. You can learn more about these security tiers and the recommended policies referenced by these recommendations in the [Identity and device access configurations](zero-trust-identity-device-access-policies-overview.md).
 
 More recommendations specific to Teams deployment are included in this article to cover specific authentication circumstances, including for users outside your organization. You'll need to follow this guidance for a complete security experience.
 
@@ -48,7 +48,7 @@ You don't need to enable dependent services to get started with Microsoft Teams.
 
 To protect chat, groups and content in Teams, the following diagram illustrates which policies to update from the common identity and device access policies. For each policy to update, make sure that Teams and dependent services are included in the assignment of cloud apps.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png" alt-text="The summary of policy updates for the protection of access to Teams and its dependent services" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png":::
+:::image type="content" source="../../media/zero-trust-identity-device-access-policies-overview/identity-access-ruleset-teams.png" alt-text="The summary of policy updates for the protection of access to Teams and its dependent services" lightbox="../../media/zero-trust-identity-device-access-policies-overview/identity-access-ruleset-teams.png":::
 
 These services are the dependent services to include in the assignment of cloud apps for Teams:
 
@@ -59,24 +59,24 @@ These services are the dependent services to include in the assignment of cloud 
 - Microsoft Stream (meeting recordings)
 - Microsoft Planner (Planner tasks and plan data)
 
-This table lists the policies that need to be revisited and links to each policy in the [common identity and device access policies](identity-access-policies.md), which has the wider policy set for all Office applications.
+This table lists the policies that need to be revisited and links to each policy in the [common identity and device access policies](zero-trust-identity-device-access-policies-common.md), which has the wider policy set for all Office applications.
 
 |Protection level|Policies|Further information for Teams implementation|
 |---|---|---|
-|**Starting point**|[Require MFA when sign-in risk is *medium* or *high*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Be sure Teams and dependent services are included in the list of apps. Teams has Guest Access and External Access rules to consider as well, you'll learn more about these rules later in this article.|
-||[Block clients that don't support modern authentication](identity-access-policies.md#block-clients-that-dont-support-multifactor-authentication)|Include Teams and dependent services in the assignment of cloud apps.|
-||[High risk users must change password](identity-access-policies.md#high-risk-users-must-change-password)|Forces Teams users to change their password when signing in if high-risk activity is detected for their account. Be sure Teams and dependent services are included in the list of apps.|
-||[Apply APP data protection policies](identity-access-policies.md#app-protection-policies)|Be sure Teams and dependent services are included in the list of apps. Update the policy for each platform (iOS, Android, Windows).|
-|**Enterprise**|[Require MFA when sign-in risk is *low*, *medium* or *high*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Teams has Guest Access and External Access rules to consider as well, you'll learn more about these rules later in this article. Include Teams and dependent services in this policy.|
-||[Define device compliance policies](identity-access-policies.md#create-device-compliance-policies)|Include Teams and dependent services in this policy.|
-||[Require compliant PCs *and* mobile devices](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Include Teams and dependent services in this policy.|
-|**Specialized security**|[*Always* require MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Regardless of user identity, MFA will be used by your organization. Include Teams and dependent services in this policy. |
+|**Starting point**|[Require MFA when sign-in risk is *medium* or *high*](zero-trust-identity-device-access-policies-common.md#require-mfa-based-on-sign-in-risk)|Be sure Teams and dependent services are included in the list of apps. Teams has Guest Access and External Access rules to consider as well, you'll learn more about these rules later in this article.|
+||[Block clients that don't support modern authentication](zero-trust-identity-device-access-policies-common.md#block-clients-that-dont-support-multifactor-authentication)|Include Teams and dependent services in the assignment of cloud apps.|
+||[High risk users must change password](zero-trust-identity-device-access-policies-common.md#high-risk-users-must-change-password)|Forces Teams users to change their password when signing in if high-risk activity is detected for their account. Be sure Teams and dependent services are included in the list of apps.|
+||[Apply APP data protection policies](zero-trust-identity-device-access-policies-common.md#app-protection-policies)|Be sure Teams and dependent services are included in the list of apps. Update the policy for each platform (iOS, Android, Windows).|
+|**Enterprise**|[Require MFA when sign-in risk is *low*, *medium* or *high*](zero-trust-identity-device-access-policies-common.md#require-mfa-based-on-sign-in-risk)|Teams has Guest Access and External Access rules to consider as well, you'll learn more about these rules later in this article. Include Teams and dependent services in this policy.|
+||[Define device compliance policies](zero-trust-identity-device-access-policies-common.md#create-device-compliance-policies)|Include Teams and dependent services in this policy.|
+||[Require compliant PCs *and* mobile devices](zero-trust-identity-device-access-policies-common.md#require-compliant-pcs-and-mobile-devices)|Include Teams and dependent services in this policy.|
+|**Specialized security**|[*Always* require MFA](zero-trust-identity-device-access-policies-common.md#require-mfa-based-on-sign-in-risk)|Regardless of user identity, MFA will be used by your organization. Include Teams and dependent services in this policy. |
 
 ## Teams dependent services architecture
 
 For reference, the following diagram illustrates the services Teams relies on. For more information and illustrations, see [Microsoft Teams and related productivity services in Microsoft 365 for IT architects](/microsoft-365/solutions/productivity-illustrations).
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png" alt-text="The diagram showing Teams dependencies on SharePoint, OneDrive for Business, and Exchange" lightbox="../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png":::
+:::image type="content" source="../../media/zero-trust-identity-device-access-policies-overview/identity-access-logical-architecture-teams.png" alt-text="The diagram showing Teams dependencies on SharePoint, OneDrive for Business, and Exchange" lightbox="../../media/zero-trust-identity-device-access-policies-overview/identity-access-logical-architecture-teams.png":::
 
 ## Guest and external access for Teams
 
@@ -93,7 +93,7 @@ In Azure AD, guest and external users are the same. The user type for both of th
 
 -->
 
-For recommended policies to allow access for guest and external users with an Azure AD B2B account, see [Policies for allowing guest and external B2B account access](identity-access-policies-guest-access.md).
+For recommended policies to allow access for guest and external users with an Azure AD B2B account, see [Policies for allowing guest and external B2B account access](zero-trust-identity-device-access-policies-guest-access.md).
 
 ### Guest access in Teams
 
@@ -139,9 +139,9 @@ For more reading about App Permission Policies, check out [Manage app permission
 
 ## Next steps
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png" alt-text="The Step 4: Policies for Microsoft 365 cloud apps" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png":::
+:::image type="content" source="../../media/zero-trust-identity-device-access-policies-overview/identity-device-access-steps-next-step-4.png" alt-text="The Step 4: Policies for Microsoft 365 cloud apps" lightbox="../../media/zero-trust-identity-device-access-policies-overview/identity-device-access-steps-next-step-4.png":::
 
 Configure Conditional Access policies for:
 
-- [Exchange Online](secure-email-recommended-policies.md)
-- [SharePoint](sharepoint-file-access-policies.md)
+- [Exchange Online](zero-trust-identity-device-access-policies-exchange.md)
+- [SharePoint](zero-trust-identity-device-access-policies-sharepoint.md)

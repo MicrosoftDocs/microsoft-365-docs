@@ -62,7 +62,7 @@ Here's the server running Azure AD Connect polling the Contoso AD DS forest for 
  
 ## Conditional Access policies for Zero Trust identity and device access
 
-Contoso created a set of Azure AD and Intune [Conditional Access policies](../security/office-365-security/identity-access-policies.md) for three protection levels:
+Contoso created a set of Azure AD and Intune [Conditional Access policies](../security/office-365-security/zero-trust-identity-device-access-policies-common.md) for three protection levels:
 
 - *Starting point* protections apply to all user accounts.
 - *Enterprise* protections apply to senior leadership and executive staff.

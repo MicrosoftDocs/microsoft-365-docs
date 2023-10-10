@@ -22,9 +22,9 @@ description: Create a Microsoft 365 environment to test identity and device acce
 
 *This Test Lab Guide can only be used for Microsoft 365 for enterprise test environments.*
 
-[Identity and device access configurations](../security/office-365-security/microsoft-365-policies-configurations.md) are a set of configurations and conditional access policies to protect access to all services in Microsoft 365 for enterprise that are integrated with Azure Active Directory (Azure AD).
+[Identity and device access configurations](../security/office-365-security/zero-trust-identity-device-access-policies-overview.md) are a set of configurations and conditional access policies to protect access to all services in Microsoft 365 for enterprise that are integrated with Azure Active Directory (Azure AD).
 
-This article describes how you can configure a Microsoft 365 test environment that meets the requirements of the [Pass-through authentication prerequisite configuration](../security/office-365-security/identity-access-prerequisites.md#prerequisites) for identity and device access.
+This article describes how you can configure a Microsoft 365 test environment that meets the requirements of the [Pass-through authentication prerequisite configuration](../security/office-365-security/zero-trust-identity-device-access-policies-prereq.md#prerequisites) for identity and device access.
 
 There are ten phases to setting up this test environment:
 
@@ -117,11 +117,11 @@ For Skype for Business Online:
   Get-CsOAuthConfiguration
   ```
 
-The result is a test environment that meets the requirements of the [Pass-through authentication prerequisite configuration](../security/office-365-security/identity-access-prerequisites.md#prerequisites) for identity and device access. 
+The result is a test environment that meets the requirements of the [Pass-through authentication prerequisite configuration](../security/office-365-security/zero-trust-identity-device-access-policies-prereq.md#prerequisites) for identity and device access. 
 
 ## Next step
 
-Use [Common identity and device access policies](../security/office-365-security/identity-access-policies.md) to configure the policies that build on the prerequisites and protect identities and devices.
+Use [Common identity and device access policies](../security/office-365-security/zero-trust-identity-device-access-policies-common.md) to configure the policies that build on the prerequisites and protect identities and devices.
 
 ## See also
 

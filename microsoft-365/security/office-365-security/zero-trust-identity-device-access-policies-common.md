@@ -44,7 +44,7 @@ We group these policies into three protection levels based on where you are on y
 
 The following diagram shows which level of protections each policy applies to and whether the policies apply to PCs or phones and tablets, or both categories of devices.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png" alt-text="A Diagram showing common identity and device policies that support Zero Trust principles." lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png":::
+:::image type="content" source="../../media/zero-trust-identity-device-access-policies-overview/identity-device-access-policies-byplan.png" alt-text="A Diagram showing common identity and device policies that support Zero Trust principles." lightbox="../../media/zero-trust-identity-device-access-policies-overview/identity-device-access-policies-byplan.png":::
 
 You can download this diagram as a [PDF](https://download.microsoft.com/download/e/d/0/ed03381c-16ce-453e-9c89-c13967819cea/zero-trust-identity-and-device-access-policies.pdf) file.
 
@@ -52,7 +52,7 @@ You can download this diagram as a [PDF](https://download.microsoft.com/download
 
 Here's a one-page PDF summary:
 
-[![Thumb image for the Zero Trust identity and device protection for Microsoft 365 handout.](../../media/microsoft-365-policies-configurations/zero-trust-id-device-protection-model-handout-thumbnail.png)](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br> [View as a PDF](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \| [Download as a PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)
+[![Thumb image for the Zero Trust identity and device protection for Microsoft 365 handout.](../../media/zero-trust-identity-device-access-policies-overview/zero-trust-id-device-protection-model-handout-thumbnail.png)](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br> [View as a PDF](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \| [Download as a PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)
 
 -->
 
@@ -182,7 +182,7 @@ iOS/iPadOS supports several enrollment scenarios, two of which are covered as pa
 - [Device enrollment for personally owned devices](/mem/intune/enrollment/ios-enroll) – these devices are personally owned and used for both work and personal use.
 - [Automated device enrollment for corporate-owned devices](/mem/intune/enrollment/device-enrollment-program-enroll-ios) – these devices are corporate-owned, associated with a single user, and used exclusively for work and not personal use.
 
-Using the principles outlined in [Zero Trust identity and device access configurations](microsoft-365-policies-configurations.md):
+Using the principles outlined in [Zero Trust identity and device access configurations](zero-trust-identity-device-access-policies-overview.md):
 
 - The [starting point](#starting-point) and [enterprise](#enterprise) protection levels map closely with the level 2 enhanced security settings.
 - The [specialized](#specialized-security) security protection level maps closely to the level 3 high security settings.
@@ -208,7 +208,7 @@ Android Enterprise supports several enrollment scenarios, two of which are cover
 
 The Android Enterprise security configuration framework is organized into several distinct configuration scenarios, providing guidance for work profile and fully managed scenarios.
 
-Using the principles outlined in [Zero Trust identity and device access configurations](microsoft-365-policies-configurations.md):
+Using the principles outlined in [Zero Trust identity and device access configurations](zero-trust-identity-device-access-policies-overview.md):
 
 - The [starting point](#starting-point) and [enterprise](#enterprise) protection levels map closely with the level 2 enhanced security settings.
 - The [specialized](#specialized-security) security protection level maps closely to the level 3 high security settings.
@@ -227,7 +227,7 @@ Using the principles outlined in [Zero Trust identity and device access configur
 
 #### Recommended compliance settings for Windows 10 and later
 
-The following settings are configured in **Step 2: Compliance settings**, of the [compliance policy creation process for Windows 10 and newer devices](/mem/intune/protect/compliance-policy-create-windows). These settings align with the principles outlined in [Zero Trust identity and device access configurations](microsoft-365-policies-configurations.md).
+The following settings are configured in **Step 2: Compliance settings**, of the [compliance policy creation process for Windows 10 and newer devices](/mem/intune/protect/compliance-policy-create-windows). These settings align with the principles outlined in [Zero Trust identity and device access configurations](zero-trust-identity-device-access-policies-overview.md).
 
 For **Device health > Windows Health Attestation Service evaluation rules**, see this table.
 
@@ -339,6 +339,6 @@ Follow the guidance in the article [Common Conditional Access policy: Require MF
 
 ## Next steps
 
-[![Step 3: Policies for guest and external users.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png#lightbox)](identity-access-policies-guest-access.md)
+[![Step 3: Policies for guest and external users.](../../media/zero-trust-identity-device-access-policies-overview/identity-device-access-steps-next-step-3.png#lightbox)](zero-trust-identity-device-access-policies-guest-access.md)
 
-[Learn about policy recommendations for guest and external users](identity-access-policies-guest-access.md)
+[Learn about policy recommendations for guest and external users](zero-trust-identity-device-access-policies-guest-access.md)

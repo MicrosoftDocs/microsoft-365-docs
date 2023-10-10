@@ -45,7 +45,7 @@ You'll also determine how you're going to manage personal devices and organizati
 
 ## Identity and device access configurations
 
-Microsoft provides a set of configurations for [identity and device access](../security/office-365-security/microsoft-365-policies-configurations.md) to ensure a secure and productive workforce. These configurations include the use of:
+Microsoft provides a set of configurations for [identity and device access](../security/office-365-security/zero-trust-identity-device-access-policies-overview.md) to ensure a secure and productive workforce. These configurations include the use of:
 
 - Azure AD Conditional Access policies
 - Microsoft Intune device compliance and app protection policies
@@ -58,8 +58,8 @@ Here is an example of the application of these settings and policies to validate
 
 For device access and app management, use the configurations in these articles:
 
-- [Prerequisites](../security/office-365-security/identity-access-prerequisites.md)
-- [Common identity and device access policies](../security/office-365-security/identity-access-policies.md)
+- [Prerequisites](../security/office-365-security/zero-trust-identity-device-access-policies-prereq.md)
+- [Common identity and device access policies](../security/office-365-security/zero-trust-identity-device-access-policies-common.md)
 
 ## Results of Step 5
 

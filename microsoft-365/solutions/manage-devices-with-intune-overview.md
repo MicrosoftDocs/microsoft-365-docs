@@ -73,7 +73,7 @@ In this illustration:
 
 ## Coordinating endpoint management with Zero Trust identity and device access policies
 
-This guidance is tightly coordinated with the recommended [**Zero Trust identity and device access policies**](../security/office-365-security/microsoft-365-policies-configurations.md). You will be working with your identity team to carry through protection that you configure with Intune into Conditional Access policies in Azure AD.
+This guidance is tightly coordinated with the recommended [**Zero Trust identity and device access policies**](../security/office-365-security/zero-trust-identity-device-access-policies-overview.md). You will be working with your identity team to carry through protection that you configure with Intune into Conditional Access policies in Azure AD.
 
 Here’s an illustration of the recommended policy set with step callouts for the work you will do in Intune and the related Conditional Access policies you will help coordinate in Azure AD.
 

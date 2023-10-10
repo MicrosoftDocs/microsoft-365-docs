@@ -35,7 +35,7 @@ During the transition to passwordless authentication, use these best practices f
 - Extend blocking of known weak and custom passwords to your [on-premises Active Directory Domain Services (AD DS) with Azure AD Password Protection](/azure/active-directory/authentication/concept-password-ban-bad-on-premises).
 - Allow your users to change their own passwords with [Self-Service Password Reset (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks).
 
-Next, implement the [Common identity and device access policies](/microsoft-365/security/office-365-security/identity-access-policies). These policies provide higher security for access to Microsoft 365 cloud services. 
+Next, implement the [Common identity and device access policies](/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-common). These policies provide higher security for access to Microsoft 365 cloud services. 
 
 For user sign-ins, these policies include:
 

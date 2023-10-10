@@ -122,7 +122,7 @@ Identity and device access policies are defined to be used in three tiers:
 
 These tiers and their corresponding configurations provide consistent levels of protection across your data, identities, and devices.
 
-Microsoft highly recommends configuring and rolling out Zero Trust identity and device access policies in your organization, including specific settings for Microsoft Teams, Exchange Online, and SharePoint. For more information, see [Zero Trust identity and device access configurations](../security/office-365-security/microsoft-365-policies-configurations.md).
+Microsoft highly recommends configuring and rolling out Zero Trust identity and device access policies in your organization, including specific settings for Microsoft Teams, Exchange Online, and SharePoint. For more information, see [Zero Trust identity and device access configurations](../security/office-365-security/zero-trust-identity-device-access-policies-overview.md).
 
 ## Azure AD Identity Protection
 
@@ -147,7 +147,7 @@ See the [steps to enable Azure AD Identity Protection](/azure/active-directory/i
 - [Deploy identity for Microsoft 365](deploy-identity-solution-overview.md)
 - [Azure Academy Azure AD training videos](https://www.youtube.com/watch?v=pN8o0owHfI0&list=PL-V4YVm6AmwUFpC3rXr2i2piRQ708q_ia)
 - [Configure the Azure AD Multi-Factor Authentication registration policy](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
-- [Identity and device access configurations](../security/office-365-security/microsoft-365-policies-configurations.md)
+- [Identity and device access configurations](../security/office-365-security/zero-trust-identity-device-access-policies-overview.md)
 
 ## Next step
 

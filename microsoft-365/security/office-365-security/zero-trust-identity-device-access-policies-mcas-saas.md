@@ -46,14 +46,13 @@ Permissions to SaaS apps are typically based on business need for access to the 
 
 To protect data across your collection of SaaS apps, the following diagram illustrates the necessary Azure AD conditional access policy plus suggested policies you can create in Defender for Cloud Apps. In this example, the policies created in Defender for Cloud Apps apply to all SaaS apps you're managing. These are designed to apply appropriate controls based on whether devices are managed as well as sensitivity labels that are already applied to files.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png" alt-text="The policies for managing SaaS apps in Defender for Cloud Apps" lightbox="../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png":::
+:::image type="content" source="../../media/zero-trust-identity-device-access-policies-overview/mcas-manage-saas-apps-2.png" alt-text="The policies for managing SaaS apps in Defender for Cloud Apps" lightbox="../../media/zero-trust-identity-device-access-policies-overview/mcas-manage-saas-apps-2.png":::
 
 The following table lists the new conditional access policy you must create in Azure AD.
 
 |Protection level|Policy|More information|
 |---|---|---|
 |All protection levels|[Use Conditional Access App Control in Defender for Cloud Apps](/cloud-app-security/proxy-deployment-aad#configure-integration-with-azure-ad)|This configures your IdP (Azure AD) to work with Defender for Cloud Apps.|
-||||
 
 This next table lists the example policies illustrated above that you can create to protect all SaaS apps. Be sure to evaluate your own business, security, and compliance objectives and then create policies that provide the most appropriate protection for your environment.
 
@@ -62,7 +61,6 @@ This next table lists the example policies illustrated above that you can create
 |Starting point|Monitor traffic from unmanaged devices <p> Add protection to file downloads from unmanaged devices|
 |Enterprise|Block download of files labeled with sensitive or classified from unmanaged devices (this provides browser only access)|
 |Specialized security|Block download of files labeled with classified from all devices (this provides browser only access)|
-|||
 
 For end-to-end instructions for setting up Conditional Access App Control, see [Deploy Conditional Access App Control for featured apps](/cloud-app-security/proxy-deployment-aad). This article walks you through the process of creating the necessary conditional access policy in Azure AD and testing your SaaS apps.
 
@@ -95,14 +93,13 @@ Defender for Cloud Apps can be a valuable tool for configuring protection for co
 
 The following illustration and table provide several examples of policies that can be configured to help comply with  the General Data Protection Regulation (GDPR). In these examples, policies look for specific data. Based on the sensitivity of the data, each policy is configured to take appropriate action.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/mcas-dlp.png" alt-text="The Defender for Cloud Apps policies for data loss prevention page" lightbox="../../media/microsoft-365-policies-configurations/mcas-dlp.png":::
+:::image type="content" source="../../media/zero-trust-identity-device-access-policies-overview/mcas-dlp.png" alt-text="The Defender for Cloud Apps policies for data loss prevention page" lightbox="../../media/zero-trust-identity-device-access-policies-overview/mcas-dlp.png":::
 
 |Protection level|Example policies|
 |---|---|
 |Starting point|Alert when files containing this sensitive information type ("Credit Card Number") are shared outside the organization <p> Block downloads of files containing this sensitive information type ("Credit card number") to unmanaged devices|
 |Enterprise|Protect downloads of files containing this sensitive information type ("Credit card number") to managed devices <p> Block downloads of files containing this sensitive information type ("Credit card number") to unmanaged devices <p> Alert when a file with on of these labels is uploaded to OneDrive for Business or Box (Customer data, Human Resources: Salary Data, Human Resources, Employee data)|
 |Specialized security|Alert when files with this label ("Highly classified") are downloaded to managed devices <p> Block downloads of files with this label ("Highly classified") to unmanaged devices|
-|||
 
 ## Next steps
 

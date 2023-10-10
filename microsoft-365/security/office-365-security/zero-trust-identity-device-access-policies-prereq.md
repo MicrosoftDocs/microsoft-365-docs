@@ -52,7 +52,7 @@ The following table details the prerequisite features and their configuration th
 |[Configure Azure AD password protection](/azure/active-directory/authentication/concept-password-ban-bad). Azure AD Password Protection detects and blocks known weak passwords and their variants, and can also block additional weak terms that are specific to your organization. Default global banned password lists are automatically applied to all users in an Azure AD tenant. You can define additional entries in a custom banned password list. When users change or reset their passwords, these banned password lists are checked to enforce the use of strong passwords.||Microsoft 365 E3 or E5|
 |[Enable Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection). Azure AD Identity Protection enables you to detect potential vulnerabilities affecting your organization's identities and configure an automated remediation policy to low, medium, and high sign-in risk and user risk.||Microsoft 365 E5 or Microsoft 365 E3 with the E5 Security add-on|
 |**Enable modern authentication** for [Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) and for [Skype for Business Online](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx). Modern authentication is a prerequisite for using MFA. Modern authentication is enabled by default for Office 2016 and 2019 clients, SharePoint, and OneDrive for Business.||Microsoft 365 E3 or E5|
-|[Enable continuous access evaluation](microsoft-365-continuous-access-evaluation.md) for Azure AD. Continuous access evaluation proactively terminates active user sessions and enforces tenant policy changes in near real-time.||Microsoft 365 E3 or E5|
+|[Enable continuous access evaluation](/azure/active-directory/conditional-access/concept-continuous-access-evaluation) for Azure AD. Continuous access evaluation proactively terminates active user sessions and enforces tenant policy changes in near real-time.||Microsoft 365 E3 or E5|
 
 ## Recommended client configurations
 
@@ -121,6 +121,6 @@ Here are some additional recommendations:
 
 ## Next step
 
-[![Step 2: Configure the common Zero Trust identity and access Conditional Access policies.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png#lightbox)](identity-access-policies.md)
+[![Step 2: Configure the common Zero Trust identity and access Conditional Access policies.](../../media/zero-trust-identity-device-access-policies-overview/identity-device-access-steps-next-step-2.png#lightbox)](zero-trust-identity-device-access-policies-common.md)
 
-[Configure the common Zero Trust identity and device access policies](identity-access-policies.md)
+[Configure the common Zero Trust identity and device access policies](zero-trust-identity-device-access-policies-common.md)

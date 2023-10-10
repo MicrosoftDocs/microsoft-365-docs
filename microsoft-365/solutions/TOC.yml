@@ -400,7 +400,7 @@
   - name: Top tasks for security teams to support working from home
     href: ../security/top-security-tasks-for-remote-work.md
   - name: Identity and device access configurations
-    href: ../security/office-365-security/microsoft-365-policies-configurations.md
+    href: ../security/office-365-security/zero-trust-identity-device-access-policies-overview.md
   - name: Evaluate and pilot Microsoft 365 Defender
     href: ../security/defender/eval-overview.md
   - name: Respond to your first incident

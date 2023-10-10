@@ -33,7 +33,7 @@ After setting up device compliance policies and assigning these to user groups, 
 
 ![Steps for managing devices](../media/devices/intune-mdm-step-3.png#lightbox)
 
-The recommended Zero Trust identity and device access rule set includes this rule. See [Require compliant PCs and mobile devices](../security/office-365-security/identity-access-policies.md#require-compliant-pcs-and-mobile-devices), as illustrated below.
+The recommended Zero Trust identity and device access rule set includes this rule. See [Require compliant PCs and mobile devices](../security/office-365-security/zero-trust-identity-device-access-policies-common.md#require-compliant-pcs-and-mobile-devices), as illustrated below.
 
 
 [![Zero Trust identity and device access policies](../media/devices/identity-device-require-compliance.png#lightbox)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/devices/identity-device-require-compliance.png)
@@ -50,7 +50,7 @@ Be sure to:
 
 To troubleshoot device profiles in Intune, including conflicts between policies, see [Common questions and answers with device policies and profiles in Microsoft Intune](/mem/intune/configuration/device-profile-troubleshoot).
 
-Note: If you want to start by requiring compliant PCs, but not mobile devices, see [Require compliant PCs (but not phones and tablets)](../security/office-365-security/identity-access-policies.md) 
+Note: If you want to start by requiring compliant PCs, but not mobile devices, see [Require compliant PCs (but not phones and tablets)](../security/office-365-security/zero-trust-identity-device-access-policies-common.md) 
 
 ## Next steps
 

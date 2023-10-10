@@ -68,7 +68,7 @@ Applying these policies takes only a few minutes, but be prepared to support you
 |---|---|
 |Microsoft 365 plans (without Azure AD P1 or P2)|[Enable Security defaults in Azure AD](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Security defaults in Azure AD include MFA for users and administrators.|
 |Microsoft 365 E3 (with Azure AD P1)|Use [Common Conditional Access policies](/azure/active-directory/conditional-access/concept-conditional-access-policy-common) to configure the following policies: <ul><li>[Require MFA for administrators](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa)</li><li>[Require MFA for all users](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)</li><li>[Block legacy authentication](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)</li></ul>|
-|Microsoft 365 E5 (with Azure AD P2)|Taking advantage of feature in Azure Active Directory, begin to implement Microsoft's [recommended set of Conditional Access and related policies](./office-365-security/identity-access-policies.md) like: <ul><li>Requiring MFA when sign-in risk is medium or high.</li><li>Blocking clients that don't support modern authentication.</li><li>Requiring high risk users change their password.</li></ul>|
+|Microsoft 365 E5 (with Azure AD P2)|Taking advantage of feature in Azure Active Directory, begin to implement Microsoft's [recommended set of Conditional Access and related policies](./office-365-security/zero-trust-identity-device-access-policies-common.md) like: <ul><li>Requiring MFA when sign-in risk is medium or high.</li><li>Blocking clients that don't support modern authentication.</li><li>Requiring high risk users change their password.</li></ul>|
 
 ## 2: Protect against threats
 
@@ -140,10 +140,10 @@ APP protection policies include many settings. Fortunately, you don't need to le
 
 Even better, Microsoft coordinates this app protection framework with a set of conditional access and related policies we recommend all organizations use as a starting point. If you implemented MFA using the guidance in this article, you're half way there!
 
-To configure mobile app protection, use the guidance in [Common identity and device access policies](./office-365-security/identity-access-policies.md):
+To configure mobile app protection, use the guidance in [Common identity and device access policies](./office-365-security/zero-trust-identity-device-access-policies-common.md):
 
- 1. Use the [Apply APP data protection policies](./office-365-security/identity-access-policies.md#app-protection-policies) guidance to create policies for iOS and Android. Level 2 (enhanced data protection) is recommended for baseline protection.
- 2. Create a conditional access rule to [Require approved apps and APP protection](./office-365-security/identity-access-policies.md#require-approved-apps-and-app-protection-policies).
+ 1. Use the [Apply APP data protection policies](./office-365-security/zero-trust-identity-device-access-policies-common.md#app-protection-policies) guidance to create policies for iOS and Android. Level 2 (enhanced data protection) is recommended for baseline protection.
+ 2. Create a conditional access rule to [Require approved apps and APP protection](./office-365-security/zero-trust-identity-device-access-policies-common.md#require-approved-apps-and-app-protection-policies).
 
 ## 7: Configure MFA and conditional access for guests, including Intune mobile app protection
 
@@ -154,7 +154,7 @@ If you're using the Microsoft 365 E5 plan and you're taking advantage of Azure I
 - Create a new conditional access rule to require MFA always for guests and external users.
 - Update the risk-based MFA conditional access rule to exclude guests and external users.
 
-Use the guidance in [Updating the common policies to allow and protect guest and external access](./office-365-security/identity-access-policies-guest-access.md) to understand how guest access works with Azure AD and to update the affected policies.
+Use the guidance in [Updating the common policies to allow and protect guest and external access](./office-365-security/zero-trust-identity-device-access-policies-guest-access.md) to understand how guest access works with Azure AD and to update the affected policies.
 
 The Intune mobile app protection policies you created, together with the conditional access rule to require approved apps and APP protection, apply to guests accounts and help protect your organization's data.
 
@@ -172,12 +172,12 @@ You can also take advantage of these tutorials:
 - [Use Autopilot to enroll Windows devices in Intune](/mem/intune/enrollment/tutorial-use-autopilot-enroll-devices)
 - [Use Apple's Corporate Device Enrollment features in Apple Business Manager (ABM) to enroll iOS/iPadOS devices in Intune](/mem/intune/enrollment/tutorial-use-device-enrollment-program-enroll-ios)
 
-After enrolling devices, use the guidance in [Common identity and device access policies](./office-365-security/identity-access-policies.md) to create these policies:
+After enrolling devices, use the guidance in [Common identity and device access policies](./office-365-security/zero-trust-identity-device-access-policies-common.md) to create these policies:
 
-- [Define device-compliance policies](./office-365-security/identity-access-policies.md#create-device-compliance-policies): The recommended settings for Windows 10 include requiring antivirus protection. If you have Microsoft 365 E5, use Microsoft Defender for Endpoint to monitor the health of employee devices. Be sure compliance policies for other operating systems include antivirus protection and end-point protection software.
-- [Require compliant PCs](./office-365-security/identity-access-policies.md#require-compliant-pcs-and-mobile-devices): This requirement is the conditional access rule in Azure AD that enforces the device compliance policies.
+- [Define device-compliance policies](./office-365-security/zero-trust-identity-device-access-policies-common.md#create-device-compliance-policies): The recommended settings for Windows 10 include requiring antivirus protection. If you have Microsoft 365 E5, use Microsoft Defender for Endpoint to monitor the health of employee devices. Be sure compliance policies for other operating systems include antivirus protection and end-point protection software.
+- [Require compliant PCs](./office-365-security/zero-trust-identity-device-access-policies-common.md#require-compliant-pcs-and-mobile-devices): This requirement is the conditional access rule in Azure AD that enforces the device compliance policies.
 
-Only one organization can manage a device, so be sure to exclude guest accounts from the conditional access rule in Azure AD. If you don't exclude guest and external users from policies that require device compliance, these policies block guests and external users. For more information, see [Updating the common policies to allow and protect guest and external access](./office-365-security/identity-access-policies-guest-access.md).
+Only one organization can manage a device, so be sure to exclude guest accounts from the conditional access rule in Azure AD. If you don't exclude guest and external users from policies that require device compliance, these policies block guests and external users. For more information, see [Updating the common policies to allow and protect guest and external access](./office-365-security/zero-trust-identity-device-access-policies-guest-access.md).
 
 ## 9: Optimize your network for cloud connectivity
 

@@ -90,10 +90,10 @@ For more information, see [MFA for Microsoft 365](../admin/security-and-complian
   
 ## 3. Protect administrator accounts with Zero Trust identity and device access recommendations
 
-To help ensure a secure and productive workforce, Microsoft provides a set of recommendations for [identity and device access](../security/office-365-security/microsoft-365-policies-configurations.md). For identity, use the recommendations and settings in these articles:
+To help ensure a secure and productive workforce, Microsoft provides a set of recommendations for [identity and device access](../security/office-365-security/zero-trust-identity-device-access-policies-overview.md). For identity, use the recommendations and settings in these articles:
 
-- [Prerequisites](../security/office-365-security/identity-access-prerequisites.md)
-- [Common identity and device access policies](../security/office-365-security/identity-access-policies.md)
+- [Prerequisites](../security/office-365-security/zero-trust-identity-device-access-policies-prereq.md)
+- [Common identity and device access policies](../security/office-365-security/zero-trust-identity-device-access-policies-common.md)
 
 ## Additional protections for enterprise organizations
 

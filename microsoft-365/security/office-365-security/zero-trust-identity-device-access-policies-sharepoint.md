@@ -28,9 +28,9 @@ ms.date: 1/31/2023
 
 # Policy recommendations for securing SharePoint sites and files
 
-This article describes how to implement the recommended Zero Trust identity and device access policies to protect SharePoint and OneDrive for Business. This guidance builds on the [common identity and device access policies](identity-access-policies.md).
+This article describes how to implement the recommended Zero Trust identity and device access policies to protect SharePoint and OneDrive for Business. This guidance builds on the [common identity and device access policies](zero-trust-identity-device-access-policies-common.md).
 
-These recommendations are based on three different tiers of security and protection for SharePoint files that can be applied based on the granularity of your needs: **starting point**, **enterprise**, and **specialized security**. You can learn more about these security tiers, and the recommended client operating systems, referenced by these recommendations in [the overview](microsoft-365-policies-configurations.md).
+These recommendations are based on three different tiers of security and protection for SharePoint files that can be applied based on the granularity of your needs: **starting point**, **enterprise**, and **specialized security**. You can learn more about these security tiers, and the recommended client operating systems, referenced by these recommendations in [the overview](zero-trust-identity-device-access-policies-overview.md).
 
 In addition to implementing this guidance, be sure to configure SharePoint sites with the right amount of protection, including setting appropriate permissions for enterprise and specialized security content.
 
@@ -38,24 +38,24 @@ In addition to implementing this guidance, be sure to configure SharePoint sites
 
 To protect files in SharePoint and OneDrive, the following diagram illustrates which policies to update from the common identity and device access policies.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png" alt-text="The summary of policy updates for protecting the access to SharePoint" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png":::
+:::image type="content" source="../../media/zero-trust-identity-device-access-policies-overview/identity-access-ruleset-sharepoint.png" alt-text="The summary of policy updates for protecting the access to SharePoint" lightbox="../../media/zero-trust-identity-device-access-policies-overview/identity-access-ruleset-sharepoint.png":::
 
 If you included SharePoint when you created the common policies, you only need to create the new policies. For Conditional Access policies, SharePoint includes OneDrive.
 
 The new policies implement device protection for enterprise and specialized security content by applying specific access requirements to SharePoint sites that you specify.
 
-The following table lists the policies you either need to review and update or create new for SharePoint. The common policies link to the associated configuration instructions in the [Common identity and device access policies](identity-access-policies.md) article.
+The following table lists the policies you either need to review and update or create new for SharePoint. The common policies link to the associated configuration instructions in the [Common identity and device access policies](zero-trust-identity-device-access-policies-common.md) article.
 
 |Protection level|Policies|More information|
 |---|---|---|
-|**Starting point**|[Require MFA when sign-in risk is *medium* or *high*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Include SharePoint in the assignment of cloud apps.|
-||[Block clients that don't support modern authentication](identity-access-policies.md#block-clients-that-dont-support-multifactor-authentication)|Include SharePoint in the assignment of cloud apps.|
-||[Apply APP data protection policies](identity-access-policies.md#app-protection-policies)|Be sure all recommended apps are included in the list of apps. Be sure to update the policy for each platform (iOS, Android, Windows).|
+|**Starting point**|[Require MFA when sign-in risk is *medium* or *high*](zero-trust-identity-device-access-policies-common.md#require-mfa-based-on-sign-in-risk)|Include SharePoint in the assignment of cloud apps.|
+||[Block clients that don't support modern authentication](zero-trust-identity-device-access-policies-common.md#block-clients-that-dont-support-multifactor-authentication)|Include SharePoint in the assignment of cloud apps.|
+||[Apply APP data protection policies](zero-trust-identity-device-access-policies-common.md#app-protection-policies)|Be sure all recommended apps are included in the list of apps. Be sure to update the policy for each platform (iOS, Android, Windows).|
 ||[Use app enforced restrictions in SharePoint](#use-app-enforced-restrictions-in-sharepoint)|Add this new policy. This tells Azure Active Directory (Azure AD) to use the settings specified in SharePoint. This policy applies to all users, but only affects access to sites included in SharePoint access policies.|
-|**Enterprise**|[Require MFA when sign-in risk is *low*, *medium* or *high*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Include SharePoint in the assignments of cloud apps.|
-||[Require compliant PCs *and* mobile devices](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Include SharePoint in the list of cloud apps.|
+|**Enterprise**|[Require MFA when sign-in risk is *low*, *medium* or *high*](zero-trust-identity-device-access-policies-common.md#require-mfa-based-on-sign-in-risk)|Include SharePoint in the assignments of cloud apps.|
+||[Require compliant PCs *and* mobile devices](zero-trust-identity-device-access-policies-common.md#require-compliant-pcs-and-mobile-devices)|Include SharePoint in the list of cloud apps.|
 ||[SharePoint access control policy](#sharepoint-access-control-policies): Allow browser-only access to specific SharePoint sites from unmanaged devices.|This prevents editing and downloading of files. Use PowerShell to specify sites.|
-|**Specialized security**|[*Always* require MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Include SharePoint in the assignment of cloud apps.|
+|**Specialized security**|[*Always* require MFA](zero-trust-identity-device-access-policies-common.md#require-mfa-based-on-sign-in-risk)|Include SharePoint in the assignment of cloud apps.|
 ||[SharePoint access control policy](#use-app-enforced-restrictions-in-sharepoint): Block access to specific SharePoint sites from unmanaged devices.|Use PowerShell to specify sites.|
 
 ## Use app-enforced restrictions in SharePoint
@@ -79,7 +79,7 @@ It's important to understand that SharePoint site permissions are typically base
 
 The following illustration provides an example of how SharePoint device access policies protect access to sites for a user.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png" alt-text="An example of how SharePoint device access policies protect sites" lightbox="../../media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png":::
+:::image type="content" source="../../media/zero-trust-identity-device-access-policies-overview/SharePoint-rules-scenario.png" alt-text="An example of how SharePoint device access policies protect sites" lightbox="../../media/zero-trust-identity-device-access-policies-overview/SharePoint-rules-scenario.png":::
 
 James has starting point Conditional Access policies assigned, but he can be given access to SharePoint sites with enterprise or specialized security protection.
 
@@ -89,9 +89,9 @@ James has starting point Conditional Access policies assigned, but he can be giv
 
 ## Next step
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png" alt-text="The Step 4 - Policies for Microsoft 365 cloud apps" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png":::
+:::image type="content" source="../../media/zero-trust-identity-device-access-policies-overview/identity-device-access-steps-next-step-4.png" alt-text="The Step 4 - Policies for Microsoft 365 cloud apps" lightbox="../../media/zero-trust-identity-device-access-policies-overview/identity-device-access-steps-next-step-4.png":::
 
 Configure Conditional Access policies for:
 
-- [Microsoft Teams](teams-access-policies.md)
-- [Exchange Online](secure-email-recommended-policies.md)
+- [Microsoft Teams](zero-trust-identity-device-access-policies-teams.md)
+- [Exchange Online](zero-trust-identity-device-access-policies-exchange.md)
