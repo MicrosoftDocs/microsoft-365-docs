@@ -69,7 +69,7 @@ When an incident is disrupted, highlighted text appears below the incident title
 
 ## Track attack disruption actions in the Action center
 
-The [Action center](https://security.microsoft.com/action-center) brings together all remediation and response actions, whether those actions were taken automatically or manually. You can view all automatic attack disruption actions in the Action center. And, after your IT/security team has mitigated the risk and completed the investigation of an incident, contained assets can be released.
+The [Action center](https://security.microsoft.com/action-center) brings together all remediation and response actions, whether those actions were taken automatically or manually. You can view all automatic attack disruption actions in the Action center. And, after your IT/security team has mitigated the risk and completed the investigation of an incident, they can release contained assets.
 
 1. In the Microsoft 365 Defender portal, go to **Actions & submissions** > **Action center**.
 
