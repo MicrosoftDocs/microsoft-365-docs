@@ -9,7 +9,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.date: 10/05/2023
+ms.date: 10/10/2023
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
@@ -30,9 +30,9 @@ This article lists new features in the latest release of [Microsoft 365 Business
 
 ## October 2023
 
-- **October is Cybersecurity Awareness Month**. See [how we're making it easier for small and medium-sized businesses to stay secure]( https://aka.ms/cybersecuritysmb). 
-
 - **Automated attack disruption** capabilities are coming to Defender for Business! Learn how these capabilities can disrupt a human-operated attack almost immediately. See [Automatic attack disruption in Microsoft Defender for Business](../security/defender-business/mdb-attack-disruption.md).
+
+- **October is Cybersecurity Awareness Month**. See [how we're making it easier for small and medium-sized businesses to stay secure]( https://aka.ms/cybersecuritysmb). 
 
 - **Special pricing for new Microsoft 365 Business Premium customers**. During October, we're offering special pricing for new customers. For all the details, see [Security for your small or medium-sized business](https://aka.ms/SMBSecurity).
 
