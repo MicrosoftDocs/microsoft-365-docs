@@ -152,4 +152,7 @@ The [Teams usage report](/microsoft-365/admin/activity-reports/microsoft-teams-u
 2. On the **View reports** tab, under **Report**, select **Teams usage**.
 3. Under **Date range**, select a date range of 7 days, 30 days, 90 days, or 180 days. Then, choose **Run report**.
 4. In the upper-right corner, select **Export to Excel** > **Export table as CSV**.
-5. Filter the spreadsheet based on your frontline team IDs.
+5. Filter the spreadsheet based on your frontline team IDs. 
+
+    > [!NOTE]
+    > To get a list of your frontline team IDs, in the Teams admin center, go to **Teams** > **Manage frontline teams**, and then in the **Frontline teams** section, select **Download CSV**.
