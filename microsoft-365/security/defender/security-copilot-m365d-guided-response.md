@@ -35,7 +35,7 @@ ms.date: 10/10/2023
 > [!IMPORTANT]
 > The information in this article only applies to the Microsoft Security Copilot Early Access Program, an invite-only paid preview program for commercial customers. Some information in this article relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-[Microsoft Security Copilot](/copilot/microsoft-365-copilot-overview.md) in Microsoft 365 Defender supports incident response teams in immediately resolving incidents with guided responses. Security Copilot and Microsoft 365 Defender use AI and machine learning capabilities to contextualize an incident and learn from previous investigations to generate appropriate response actions.
+[Microsoft Security Copilot](/security-copilot/microsoft-security-copilot) in Microsoft 365 Defender supports incident response teams in immediately resolving incidents with guided responses. Security Copilot and Microsoft 365 Defender use AI and machine learning capabilities to contextualize an incident and learn from previous investigations to generate appropriate response actions.
 
 Responding to incidents in Microsoft 365 Defender often requires familiarity with the portal's available actions to stop attacks. In addition, new incident responders might have different ideas of where and how to start responding to incidents. The guided response capability of Security Copilot in Microsoft 365 Defender allows incident response teams at all levels to confidently and quickly apply response actions to resolve incidents with ease.
 
