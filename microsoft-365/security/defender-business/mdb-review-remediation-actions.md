@@ -52,6 +52,7 @@ The following table lists remediation actions that are available.
 
 | Source  | Actions  |
 |---------|---------|
+| [Automatic attack disruption](mdb-attack-disruption.md) | - Contain a device <br/>- Contain a user <br/>- Disable a user account |
 | [Automated investigations](../defender-endpoint/automated-investigations.md)      |- Quarantine a file<br/> - Remove a registry key<br/> - Kill a process<br/> - Stop a service<br/> - Disable a driver<br/> - Remove a scheduled task  |
 | [Manual response actions](../defender-endpoint/respond-machine-alerts.md)   |- Run antivirus scan<br/> - Isolate a device<br/> - Add an indicator to block or allow a file |
 | [Live response](../defender-endpoint/live-response.md)   |- Collect forensic data<br/> - Analyze a file<br/> - Run a script<br/> - Send a suspicious entity to Microsoft for analysis<br/> - Remediate a file <br/> - Proactively hunt for threats|
