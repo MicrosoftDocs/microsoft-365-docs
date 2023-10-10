@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 09/06/2023
+ms.date: 10/10/2023
 ms.reviewer: nehabha
 f1.keywords: NOCSH 
 ms.collection: 
@@ -50,6 +50,7 @@ The Microsoft 365 Defender portal enables your security team to respond to and m
 
 ## Next steps
 
+- [Learn about automatic attack disruption](mdb-attack-disruption.md)
 - [Review remediation actions in the Action center](mdb-review-remediation-actions.md)
 - [Manage devices in Defender for Business](mdb-manage-devices.md)
 - [View and manage incidents in Defender for Business](mdb-view-manage-incidents.md)
