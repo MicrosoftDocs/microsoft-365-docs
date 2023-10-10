@@ -44,7 +44,7 @@ We group these policies into three protection levels based on where you are on y
 
 The following diagram shows which level of protections each policy applies to and whether the policies apply to PCs or phones and tablets, or both categories of devices.
 
-:::image type="content" source="../../media/zero-trust-identity-device-access-policies-overview/identity-device-access-policies-byplan.png" alt-text="A Diagram showing common identity and device policies that support Zero Trust principles." lightbox="../../media/zero-trust-identity-device-access-policies-overview/identity-device-access-policies-byplan.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png" alt-text="A Diagram showing common identity and device policies that support Zero Trust principles." lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png":::
 
 You can download this diagram as a [PDF](https://download.microsoft.com/download/e/d/0/ed03381c-16ce-453e-9c89-c13967819cea/zero-trust-identity-and-device-access-policies.pdf) file.
 
@@ -52,7 +52,7 @@ You can download this diagram as a [PDF](https://download.microsoft.com/download
 
 Here's a one-page PDF summary:
 
-[![Thumb image for the Zero Trust identity and device protection for Microsoft 365 handout.](../../media/zero-trust-identity-device-access-policies-overview/zero-trust-id-device-protection-model-handout-thumbnail.png)](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br> [View as a PDF](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \| [Download as a PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)
+[![Thumb image for the Zero Trust identity and device protection for Microsoft 365 handout.](../../media/microsoft-365-policies-configurations/zero-trust-id-device-protection-model-handout-thumbnail.png)](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br> [View as a PDF](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \| [Download as a PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)
 
 -->
 
@@ -339,6 +339,6 @@ Follow the guidance in the article [Common Conditional Access policy: Require MF
 
 ## Next steps
 
-[![Step 3: Policies for guest and external users.](../../media/zero-trust-identity-device-access-policies-overview/identity-device-access-steps-next-step-3.png#lightbox)](zero-trust-identity-device-access-policies-guest-access.md)
+[![Step 3: Policies for guest and external users.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png#lightbox)](zero-trust-identity-device-access-policies-guest-access.md)
 
 [Learn about policy recommendations for guest and external users](zero-trust-identity-device-access-policies-guest-access.md)

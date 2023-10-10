@@ -121,6 +121,6 @@ Here are some additional recommendations:
 
 ## Next step
 
-[![Step 2: Configure the common Zero Trust identity and access Conditional Access policies.](../../media/zero-trust-identity-device-access-policies-overview/identity-device-access-steps-next-step-2.png#lightbox)](zero-trust-identity-device-access-policies-common.md)
+[![Step 2: Configure the common Zero Trust identity and access Conditional Access policies.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png#lightbox)](zero-trust-identity-device-access-policies-common.md)
 
 [Configure the common Zero Trust identity and device access policies](zero-trust-identity-device-access-policies-common.md)

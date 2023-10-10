@@ -46,7 +46,7 @@ Permissions to SaaS apps are typically based on business need for access to the 
 
 To protect data across your collection of SaaS apps, the following diagram illustrates the necessary Azure AD conditional access policy plus suggested policies you can create in Defender for Cloud Apps. In this example, the policies created in Defender for Cloud Apps apply to all SaaS apps you're managing. These are designed to apply appropriate controls based on whether devices are managed as well as sensitivity labels that are already applied to files.
 
-:::image type="content" source="../../media/zero-trust-identity-device-access-policies-overview/mcas-manage-saas-apps-2.png" alt-text="The policies for managing SaaS apps in Defender for Cloud Apps" lightbox="../../media/zero-trust-identity-device-access-policies-overview/mcas-manage-saas-apps-2.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png" alt-text="The policies for managing SaaS apps in Defender for Cloud Apps" lightbox="../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png":::
 
 The following table lists the new conditional access policy you must create in Azure AD.
 
@@ -93,7 +93,7 @@ Defender for Cloud Apps can be a valuable tool for configuring protection for co
 
 The following illustration and table provide several examples of policies that can be configured to help comply with  the General Data Protection Regulation (GDPR). In these examples, policies look for specific data. Based on the sensitivity of the data, each policy is configured to take appropriate action.
 
-:::image type="content" source="../../media/zero-trust-identity-device-access-policies-overview/mcas-dlp.png" alt-text="The Defender for Cloud Apps policies for data loss prevention page" lightbox="../../media/zero-trust-identity-device-access-policies-overview/mcas-dlp.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/mcas-dlp.png" alt-text="The Defender for Cloud Apps policies for data loss prevention page" lightbox="../../media/microsoft-365-policies-configurations/mcas-dlp.png":::
 
 |Protection level|Example policies|
 |---|---|
