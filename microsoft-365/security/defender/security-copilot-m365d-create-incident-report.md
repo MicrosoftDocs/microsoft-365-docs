@@ -45,7 +45,7 @@ This guide outlines what to expect and how to access the incident report creatio
 
 ## Technical requirements
 
-[Learn about the Security Copilot requirements](/security-copilot/microsoft-365-copilot-requirements).
+[Learn about the Security Copilot requirements](/security-copilot/get-started-security-copilot).
 
 ## Create an incident report
 
