@@ -95,16 +95,17 @@ Ensure the URLs clients may connect to are listed as HTTPS service principal nam
    Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 | select -ExpandProperty ServicePrincipalNames
    ```
 
-   Take note of (and screenshot for later comparison) the output of this command, which should include an `https://*autodiscover.yourdomain.com*` and `https://*mail.yourdomain.com*` URL, but mostly consist of SPNs that begin with `00000002-0000-0ff1-ce00-000000000000/`. If there are `https://` URLs from your on-premises that are missing, those specific records should be added to this list.
+   Take note of (and screenshot for later comparison) the output of this command, which should include an `https://*autodiscover.yourdomain.com*` and `https://*mail.yourdomain.com*` URL, but mostly consist of SPNs that begin with `00000002-0000-0ff1-ce00-000000000000/`. If there are `https://` URLs from your on-premises Exchange Server organization that are missing, those specific records should be added to this list.
 
-3. If you don't see your internal and external MAPI/HTTP, EWS, ActiveSync, OAB, and Autodiscover records in this list, you must add them using the command below (the example URLs are `mail.corp.contoso.com` and `owa.contoso.com`, but you'd **replace the example URLs with your own**):
+3. If you don't see your internal and external MAPI/HTTP, EWS, ActiveSync, OAB, and Autodiscover records in this list, you must add them using the command below (the example URLs are `mail.corp.contoso.com` and `owa.contoso.com`, but you'd **replace the example URLs with your own**). Ensure that the generic AutoDiscover record for your domain (for example `autodiscover.contoso.com`) is included as well:
 
    ```powershell
    $x= Get-MsolServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000
    $x.ServicePrincipalnames.Add("https://mail.corp.contoso.com/")
    $x.ServicePrincipalnames.Add("https://owa.contoso.com/")
+   $x.ServicePrincipalnames.Add("https://autodiscover.contoso.com/")
    Set-MSOLServicePrincipal -AppPrincipalId 00000002-0000-0ff1-ce00-000000000000 -ServicePrincipalNames $x.ServicePrincipalNames
-   ```
+   ``` 
 
 4. Verify your new records were added by running the `Get-MsolServicePrincipal` command from step 2 again, and looking through the output. Compare the list / screenshot from before to the new list of SPNs. You might also take a screenshot of the new list for your records. If you were successful, you will see the two new URLs in the list. Going by our example, the list of SPNs will now include the specific URLs `https://mail.corp.contoso.com` and `https://owa.contoso.com`.
 
