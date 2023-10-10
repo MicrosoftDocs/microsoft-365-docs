@@ -1,10 +1,10 @@
 ---
-title: Create, review, and sign signature requests using Microsoft Syntex eSignature (Preview)
+title: Create a signature request using Microsoft Syntex eSignature (Preview)
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: amcdonnell
-ms.date: 09/29/2023
+ms.date: 10/15/2023
 audience: enabler
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -17,7 +17,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: Learn how to use Microsoft Syntex eSignature to send electronic signature requests to people inside and outside of your organization. 
 ---
 
-# Create, review, and sign signature requests using Microsoft Syntex eSignature (Preview)
+# Create a signature request using Microsoft Syntex eSignature (Preview)
 
 > [!NOTE]
 > This feature is currently in limited preview and subject to change.
@@ -238,3 +238,8 @@ After all recipients have signed the document, the signatures are added and an a
 
 For setup and technical information for admins, see [Set up Microsoft Syntex eSignature (Preview)](esignature-setup.md).
 
+
+<br>
+
+> [!div class="nextstepaction"]
+> [Review and sign a request](esignature-review-sign-requests.md)
