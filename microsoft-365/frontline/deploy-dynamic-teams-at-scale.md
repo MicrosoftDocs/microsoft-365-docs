@@ -135,11 +135,21 @@ You can manage your teams when changes happen in your organization.
 2. In the **Deploy settings** column, choose **Deploy frontline teams** .
 3. Edit your settings on this page, and then select **Save**. Your settings may take several hours to update. See the following table for the effects of updating your settings.
 
-|Setting |Effect on existing frontline teams |Effect on new frontline teams |
-|--------|-----------------------------------|------------------------------|
-|Define your frontline Azure AD attribute. |All existing frontline teams will be members that have the new Azure AD attribute defined. |All new frontline teams members will have the new Azure AD attribute defined. |
-|Choose the values applicable to your frontline Azure AD attribute. |All existing frontline team membership will reflect your updated values. |All new teams will be populated with members who have the updated Azure AD attributes that you defined. |
-|Define your frontline locations. | Existing teams will continue to persist. If a team is no longer tied to a location, there will be no users in that team, and users will be put in their respective location teams. |You can create new frontline teams based on the locations defined by your new Azure AD attribute. |
-|Set your team name prefix. |All existing team names will be updated to reflect the prefix and location name if that was changed. |All new teams will have the updated naming convention. |
-|Select your team template. |No updates to the team structure will occur. |All new teams will use the updated team template. |
-|Select your team owner. |The team owner will be updated for all existing teams. |All new teams will have the updated team owner. |
+    |Setting |Effect on existing frontline teams |Effect on new frontline teams |
+    |--------|-----------------------------------|------------------------------|
+    |Define your frontline Azure AD attribute. |All existing frontline teams will be members that have the new Azure AD attribute defined. |All new frontline teams members will have the new Azure AD attribute defined. |
+    |Choose the values applicable to your frontline Azure AD attribute. |All existing frontline team membership will reflect your updated values. |All new teams will be populated with members who have the updated Azure AD attributes that you defined. |
+    |Define your frontline locations. | Existing teams will continue to persist. If a team is no longer tied to a location, there will be no users in that team, and users are put in their respective location teams. |You can create new frontline teams based on the locations defined by your new Azure AD attribute. |
+    |Set your team name prefix. |All existing team names will be updated to reflect the prefix and location name if that was changed. |All new teams will have the updated naming convention. |
+    |Select your team template. |No updates to the team structure will occur. |All new teams will use the updated team template. |
+    |Select your team owner. |The team owner will be updated for all existing teams. |All new teams will have the updated team owner. |
+
+## Get analytics on frontline teams usage
+
+The [Teams usage report](/microsoft-365/admin/activity-reports/microsoft-teams-usage-activity) in  Teams admin center gives you an overview of usage activity in Teams. You can use the report to view usage details for your frontline teams, including active users, active channels, total organized meetings, last activity date, and other information.
+
+1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), **choose Analytics & reports** > **Usage reports**.
+2. On the **View reports** tab, under **Report**, select **Teams usage**.
+3. Under **Date range**, select a date range of 7 days, 30 days, 90 days, or 180 days. Then, choose **Run report**.
+4. In the upper-right corner, select **Export to Excel** > **Export table as CSV**.
+5. Filter the spreadsheet based on your frontline team IDs.
