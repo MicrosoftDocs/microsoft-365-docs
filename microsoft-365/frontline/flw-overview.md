@@ -14,7 +14,8 @@ ms.collection:
   - highpri
   - m365solution-overview
   - m365solution-frontline
-  - tier1
+  - essentials-overview
+  - essentials-get-started
 ms.reviewer: aaglick
 appliesto: 
   - Microsoft Teams

@@ -32,7 +32,7 @@ To use Microsoft Syntex pay-as-you go, you need:
 
 If you already have these resources for other purposes, you can also use them with Microsoft Syntex.
 
-For information about how to create an Azure subscription, see [Create your initial Azure subscriptions](/azure/cloud-adoption-framework/ready/azure-best-practices/initial-subscriptions)
+For information about how to create an Azure subscription, see [Create your initial Azure subscriptions](/azure/cloud-adoption-framework/ready/azure-best-practices/initial-subscriptions).
 
 For information about how to create an Azure resource group, see [Manage Azure resource groups by using the Azure portal](/azure/azure-resource-manager/management/manage-resource-groups-portal).
 
@@ -75,6 +75,7 @@ The following Microsoft Syntex products are currently available:
 - Unstructured document processing
 - Content assembly
 - Image tagging
+- Taxonomy tagging
 - Optical character recognition
 
 The following tags are available:

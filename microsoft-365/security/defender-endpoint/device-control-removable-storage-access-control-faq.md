@@ -11,6 +11,7 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
+- mde-asr
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.date: 05/11/2023
@@ -58,7 +59,7 @@ If the policy still isn't working, contact support, and share your support cab. 
 
 ## Why is there no configuration UX for some policy groups? 
 
-There is no configuration UX for **Define device control policy groups** and **Define device control policy rules** on your Group Policy. But, you can still get the related `.adml` and `.admx` files by selecting **Raw** and **Save as** at the [WindowsDefender.adml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.adml) and [WindowsDefender.admx](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.admx) files.
+There is no configuration UX for **Define device control policy groups** and **Define device control policy rules** on your Group Policy. But, you can still get the related `.adml` and `.admx` files by selecting **Raw** and **Save as** at the [WindowsDefender.adml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/WindowsDefender.adml) and [WindowsDefender.admx](https://github.com/microsoft/mdatp-devicecontrol/blob/main/WindowsDefender.admx) files.
 
 ## How do I confirm that the latest policy has been deployed to the target machine?
 

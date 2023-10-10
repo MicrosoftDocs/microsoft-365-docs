@@ -12,6 +12,7 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
+- mde-linux
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
@@ -64,7 +65,7 @@ Specifies the enforcement preference of antivirus engine. There are three values
   - Real-time protection is turned off.
 - [Passive (`passive`)](microsoft-defender-antivirus-compatibility.md#passive-mode-or-edr-block-mode): Runs the antivirus engine in passive mode. In this:
   - Real-time protection is turned off: Threats are not remediated by Microsoft Defender Antivirus.
-  - On-demand scanning is turned on: Still use the scan capabilites on the endpoint.
+  - On-demand scanning is turned on: Still use the scan capabilities on the endpoint.
   - Automatic threat remediation is turned off: No files will be moved and security admin is expected to take required action.
   - Security intelligence updates are turned on: Alerts will be available on security admins tenant.
 
@@ -579,7 +580,18 @@ Determines whether module load events are monitored using eBPF and scanned.
 |**Possible values**|disabled (default) <p> enabled|
 |**Comments**|Available in Defender for Endpoint version 101.68.80 or higher.|
 
-#### Network protection configurations
+#### Report AV Suspicious Events to EDR
+
+Determines whether suspicious events from Antivirus are reported to EDR.
+
+|Description|Value|
+|---|---|
+|**Key**|sendLowfiEvents|
+|**Data type**|String|
+|**Possible values**|disabled (default) <p> enabled|
+|**Comments**|Available in Defender for Endpoint version 101.23062.0010 or higher.|
+
+### Network protection configurations
 
 The following settings can be used to configure advanced Network Protection inspection features to control what traffic gets inspected by Network Protection.
 
@@ -592,7 +604,7 @@ The following settings can be used to configure advanced Network Protection insp
 |**Data type**|Dictionary (nested preference)|
 |**Comments**|See the following sections for a description of the dictionary contents.|
 
-##### Configure ICMP inspection
+#### Configure ICMP inspection
 Determines whether ICMP events are monitored and scanned.
 
 >[!NOTE]

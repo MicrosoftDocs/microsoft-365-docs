@@ -44,14 +44,14 @@ Use the resulting environment to test the features and functionality of [Microso
 ![Test Lab Guides for the Microsoft cloud.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
 > [!TIP]
-> For a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack, see [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
+> For a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack, see [Microsoft 365 for enterprise Test Lab Guide Stack](https://download.microsoft.com/download/5/e/4/5e43a139-09c5-4700-b846-e468444bc557/Microsoft365EnterpriseTLGStack.pdf).
 
 >[!NOTE]
 >You might want to print this article to record the specific information that you will need for this environment over the 30 days of the Office 365 trial subscription. You can easily extend the trail subscription for another 30 days. For a permanent test environment, create a new paid subscription with a separate Azure AD tenant and a small number of licenses.
 
 ## Phase 1: Create your Microsoft 365 E5 subscription
 
-We start with an Microsoft 365 E5 trial subscription and then add the Microsoft 365 E5 subscription to it.
+We start with a Microsoft 365 E5 trial subscription and then add the Microsoft 365 E5 subscription to it.
 
 >[!NOTE]
 >We recommend that you create a trial subscription of Office 365 so that your test environment has a separate Azure AD tenant from any paid subscriptions you currently have. This separation means that you can add and remove users and groups in the test tenant without affecting your production subscriptions.
@@ -68,7 +68,7 @@ To start your Microsoft 365 E5 trial subscription, you first need a fictitious c
 
 ### Sign up for an Office 365 E5 trial subscription
 
-1. In your browser, go to [https://aka.ms/e5trial](https://aka.ms/e5trial).
+1. In your browser, go to the [Office 365 E5 purchase page](https://go.microsoft.com/fwlink/p/?linkid=2245837) and select **Free trial**.
 
 2. In step 1 of the **Thank you for choosing Office 365 E5** page, enter your new email account address.
 3. In step 2 of the trail subscription process, enter the requested information, and then perform the verification.

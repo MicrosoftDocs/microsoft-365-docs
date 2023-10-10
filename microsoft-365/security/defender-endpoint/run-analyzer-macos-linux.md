@@ -17,6 +17,7 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
+- mde-ngp
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
@@ -48,10 +49,10 @@ If using a terminal download using the command:
 2. Verify the download.
 
     > [!NOTE]
-    > The current SHA256 hash of 'XMDEClientAnalyzerBinary.zip' that is downloaded from the above link is: '32f1d67448773e3eda5b26cab332ccf9686ad9740be8a9624d7d02347b0af365'
+    > The current SHA256 hash of 'XMDEClientAnalyzerBinary.zip' that is downloaded from this link is: '87452324ADADBB2F7B75E6B0B295ADD89B787C5D7AF7F30ED0EBDBD8F0CF4E39'
 
     ```console
-    echo '32f1d67448773e3eda5b26cab332ccf9686ad9740be8a9624d7d02347b0af365  XMDEClientAnalyzerBinary.zip' | sha256sum -c
+    echo '87452324ADADBB2F7B75E6B0B295ADD89B787C5D7AF7F30ED0EBDBD8F0CF4E39 XMDEClientAnalyzerBinary.zip' | sha256sum -c
     ```
 
 3. Extract the contents of <i>XMDEClientAnalyzerBinary.zip</i> on the machine.
@@ -132,7 +133,7 @@ When using a terminal, unzip the file using one of the following commands based 
 2. Verify the download
 
     ```console
-    echo '78e8f2078313ff2d3314c0c992ec5af370b5940a7adf7e416a5224d31d2691e5 XMDEClientAnalyzer.zip' | sha256sum -c
+    echo 'F51A565A083A5B12AF8D9A16D6AE16FCACDCE4D5CABD48883EC0EEA10D33E19D XMDEClientAnalyzer.zip' | sha256sum -c
     ```
 
 3. Extract the contents of XMDEClientAnalyzer.zip on the machine.\

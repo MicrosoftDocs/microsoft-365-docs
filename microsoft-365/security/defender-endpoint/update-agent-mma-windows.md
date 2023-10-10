@@ -6,7 +6,7 @@ ms.subservice: mde
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
-ms.date: 07/11/2023
+ms.date: 10/05/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -20,7 +20,7 @@ search.appverid: met150
 # Updating MMA on Windows devices for Microsoft Defender for Endpoint
 
 > [!IMPORTANT]
-> If you've arrived on this page as a result of clicking on a notification at the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), you have devices in your environment with outdated agents, and you need to take action (see below) to avoid service disruption. For more details, please reference message center post MC598631 (requires access to [Message Center](/microsoft-365/admin/manage/message-center])).
+> If you've arrived on this page as a result of clicking on a notification at the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), you have devices in your environment with outdated agents, and you need to take action (described in this article) to avoid service disruption. For more details, please reference message center post MC598631 (requires access to [Message Center](/microsoft-365/admin/manage/message-center)).
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
@@ -34,11 +34,11 @@ If you're using the Microsoft Monitoring Agent (MMA) on Windows devices, it's im
 
 ## Update MMA on your devices
 
-*This option applies to devices running Windows 7 SP1 Enterprise, Windows 7 SP1 Pro, Windows 8.1 Pro, Windows 8.1 Enterprise, and Windows Server 2008 R2 SP1.* 
+*This option applies to devices running Windows 7 SP1 Enterprise, Windows 7 SP1 Pro, Windows 8.1 Pro, Windows 8.1 Enterprise, and Windows Server 2008 R2 SP1.*
 
 - To help you identify older versions of the MMA inside of your organization, you can use the "EOSDate" column in advanced hunting. Or, follow the instructions in [Plan for end-of-support software and software versions](/microsoft-365/security/defender-vulnerability-management/tvm-end-of-support-software) to use the vulnerability management feature inside of Microsoft Defender for Endpoint to track remediation.
 
-- See [Manage and maintain the Log Analytics agent for Windows and Linux](/azure/azure-monitor/agents/agent-manage?tabs=PowerShellLinux) for instructions on how to upgrade the agent using Azure Automation or a command line approach for use with various deployment tools and methods at your disposal. 
+- See [Manage and maintain the Log Analytics agent for Windows and Linux](/azure/azure-monitor/agents/agent-manage?tabs=PowerShellLinux) for instructions on how to upgrade the agent using Azure Automation or a command-line approach to use with various deployment tools and methods. 
 
 - Update MMA by using [Microsoft Update](/windows/deployment/update/how-windows-update-works), through [Windows Server Update Services](/windows/deployment/update/waas-manage-updates-wsus) or [Configuration Manager](/mem/configmgr/osd/deploy-use/manage-windows-as-a-service). Use the method that was configured when MMA was first installed on the device.
 
@@ -53,7 +53,7 @@ If you're using the Microsoft Monitoring Agent (MMA) on Windows devices, it's im
 
 A new agent was released in April 2022 for Windows Server 2012 R2 and Windows Server 2016. The new agent doesn't depend on MMA. There are significant benefits to moving to this new agent, such as a vastly extended feature set. To learn more, see [Tech Community Blog: Defending Windows Server 2012 R2 and 2016](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/defending-windows-server-2012-r2-and-2016/ba-p/2783292).
 
-- Microsoft Defender Vulnerability Management provides an assessment (SCID-2030) titled "Update Microsoft Defender for Endpoint core components" that will allow you to track which Windows Server 2012 R2 and 2016 machines haven't yet been upgraded.
+- Microsoft Defender Vulnerability Management provides an assessment (SCID-2030) titled "Update Microsoft Defender for Endpoint core components" that allows you to track which Windows Server 2012 R2 or Windows Server 2016 machines haven't been upgraded yet.
 
 - See [Server migration scenarios from the previous, MMA-based Microsoft Defender for Endpoint solution](server-migration.md) to understand your options for upgrading to the new agent.
 
@@ -67,10 +67,14 @@ A new agent was released in April 2022 for Windows Server 2012 R2 and Windows Se
 
 - If you've determined that you aren't using the MMA for Defender for Endpoint, or you've already updated your agent, no other steps are needed. 
 
-- If you are, however, still using MMA for other purposes (such as Log Analytics), MMA is currently set to retire in August 2024. See [We're retiring the Log Analytics agent in Azure Monitor on 31 August 2024](https://azure.microsoft.com/updates/were-retiring-the-log-analytics-agent-in-azure-monitor-on-31-august-2024/). Depending your particular scenario, this could be a good time to upgrade to [Azure Monitoring Agent, the successor of MMA](/azure/azure-monitor/agents/azure-monitor-agent-migration). 
+- If you are, however, still using MMA for other purposes (such as Log Analytics), MMA is currently set to retire in August 2024. See [We're retiring the Log Analytics agent in Azure Monitor on 31 August 2024](https://azure.microsoft.com/updates/were-retiring-the-log-analytics-agent-in-azure-monitor-on-31-august-2024/). Depending on your particular scenario, now might be a good time to upgrade to [Azure Monitoring Agent, the successor of MMA](/azure/azure-monitor/agents/azure-monitor-agent-migration). 
 
 > [!IMPORTANT]
-> Devices running Windows 7 SP1, Windows 8.1, Windows Server 2008 R2, Windows Server 2012 R2, or Windows Server 2016 that haven't been upgraded to the [new, unified solution](application-deployment-via-mecm.md) will remain dependent on MMA. In such cases, [AMA](/azure/azure-monitor/agents/agents-overview) cannot be used as a substitute for Defender for Endpoint. 
+> Devices running Windows 7 SP1, Windows 8.1, or Windows Server 2008 R2 remain dependent on MMA.
+>
+> Devices running Windows Server 2012 R2 or Windows Server 2016 should be upgraded to the [new, unified solution](application-deployment-via-mecm.md) so that they no longer require the use of MMA. 
+>
+> [AMA](/azure/azure-monitor/agents/agents-overview) cannot be used as a substitute for Defender for Endpoint. 
 
 ## See also
 

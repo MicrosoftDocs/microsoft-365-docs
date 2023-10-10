@@ -5,7 +5,7 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-nsatapathy
+ms.author: dansimp
 author: nimishasatapathy
 ms.localizationpriority: medium
 manager: dansimp
@@ -13,6 +13,7 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
+- mde-asr
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.subservice: mde

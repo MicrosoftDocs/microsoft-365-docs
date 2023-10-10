@@ -40,7 +40,7 @@ The following workloads are included in ADR. For more information, see:
   - [Sensitivity Labels](m365-dr-workload-purview.md#information-protection---sensitivity-labels)
   - [Data Loss Prevention](m365-dr-workload-purview.md#information-protection---data-loss-prevention-dlp)
   - [Office Message Encryption](m365-dr-workload-purview.md#information-protection---office-message-encryption)
-  - [Information Barriers](m365-dr-workload-purview.md#insider-risk-management---information-barriers)
+  - [Information Barriers](m365-dr-workload-purview.md#risk-and-compliance---information-barriers)
 
 ## Licensing and Purchase
 
@@ -48,7 +48,7 @@ The following workloads are included in ADR. For more information, see:
 
 The Advanced Data Residency ("ADR") add-on is intended for Microsoft 365 enterprise customers who have comprehensive data residency requirements.  To be eligible to purchase ADR, customers must meet the following pre-requisites:
 
-- The _Tenant_ _Default Geography_ must be one of the countries/regions included in the _Local Region Geography_ (Australia, Brazil, Canada, France, Germany, India, Japan, Poland, Qatar, South Korea, Norway, South Africa, Sweden, Switzerland, United Arab Emirates, and United Kingdom).
+- The _Tenant_ _Default Geography_ must be one of the countries/regions included in the _Local Region Geography_ (Australia, Brazil, Canada, France, Germany, India, Italy, Japan, Poland, Qatar, South Korea, Norway, South Africa, Sweden, Switzerland, United Arab Emirates, and United Kingdom).
 - Customers must have licensed one or more of the following products:
   - Microsoft 365 F1, F3, E3, or E5
   - Office 365 F3, E1, E3, or E5

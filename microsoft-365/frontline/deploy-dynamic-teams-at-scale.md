@@ -13,11 +13,10 @@ ms.localizationpriority: medium
 ms.collection: 
   - M365-collaboration
   - m365-frontline
-  - tier2
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 08/04/2023
+ms.date: 10/10/2023
 
 ---
 
@@ -26,7 +25,7 @@ ms.date: 08/04/2023
 ## Overview
 
 >[!IMPORTANT]
->This feature will begin rolling out for public preview in July 2023. If you would like to provide feedback and improve this feature while in preview, please fill out [this form](https://forms.microsoft.com/r/DWaJXA6Dax)
+>This feature will begin rolling out for public preview in July 2023. If you would like to provide feedback and improve this feature while in preview, please fill out [this form](https://forms.microsoft.com/r/DWaJXA6Dax).
 
 Frontline teams are a collection of people, content, and tools within an organization for different frontline worker locations. Membership of frontline dynamic teams is determined and managed by a set of Azure Active Directory (Azure AD) attributes. [Learn more about Azure AD attributes](/azure/active-directory/external-identities/customers/how-to-define-custom-attributes).
 
@@ -39,12 +38,17 @@ You also determine team structure and team owners.
 
 Then, you can choose which locations you want to create dynamic frontline teams for.
 
-Team membership will be automatically managed over time through the power of dynamic teams. As frontline workers are onboarded, offboarded, or change locations, their membership in these teams will update accordingly.
+Team membership is automatically managed over time through the power of dynamic teams. As frontline workers are onboarded, offboarded, or change locations, their membership in these teams are updated accordingly.
 
 ## Prerequisites
 
-- Users must have a Microsoft 365 F3, F1, E1, E3, or E5 license. If a user doesn't have one of these licenses, they'll need an Azure AD P1 add-on license to use dynamic teams. [Learn more about frontline licensing](flw-licensing-options.md).
-- The admin running the deployment process needs Teams admin center permissions.
+- Users must have a Microsoft 365 F3, F1, E3, or E5 license. If a user doesn't have one of these licenses, they'll need an Azure AD P1 add-on license to use dynamic teams. [Learn more about frontline licensing](flw-licensing-options.md).
+- The admin running the deployment process must have one of the following role combinations:
+    - Teams admin and Global admin
+    - Teams admin and Groups admin
+    - Teams admin and User admin
+    - Teams admin and Intune admin
+
 - Ensure you can define your frontline workers and their work locations through data available in Azure AD. If you don't have this data in Azure AD, you can sync it through a [human capital management (HCM) connector](/azure/active-directory/app-provisioning/plan-cloud-hr-provision) or [use the PowerShell solution](deploy-teams-at-scale.md) to create teams at scale.
 - When evaluating the right solution, we recommend you do the following:
   1. Plan your frontline deployment.
@@ -127,18 +131,33 @@ You can manage your teams when changes happen in your organization.
 
 ### Edit your frontline team settings
 
->[!IMPORTANT]
->The ability to edit your frontline team settings is coming soon.
-
 1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), choose **Teams** > **Manage frontline teams**.
 2. In the **Deploy settings** column, choose **Deploy frontline teams** .
 3. Edit your settings on this page, and then select **Save**. Your settings may take several hours to update. See the following table for the effects of updating your settings.
 
-|Setting |Effect on existing frontline teams |Effect on new frontline teams |
-|--------|-----------------------------------|------------------------------|
-|Define your frontline Azure AD attribute. |All existing frontline teams will be members that have the new Azure AD attribute defined. |All new frontline teams members will have the new Azure AD attribute defined. |
-|Choose the values applicable to your frontline Azure AD attribute. |All existing frontline team membership will reflect your updated values. |All new teams will be populated with members who have the updated Azure AD attributes that you defined. |
-|Define your frontline locations. | Existing teams will continue to persist. If a team is no longer tied to a location, there will be no users in that team, and users will be put in their respective location teams. |You can create new frontline teams based on the locations defined by your new Azure AD attribute. |
-|Set your team name prefix. |All existing team names will be updated to reflect the prefix and location name if that was changed. |All new teams will have the updated naming convention. |
-|Select your team template. |No updates to the team structure will occur. |All new teams will use the updated team template. |
-|Select your team owner. |The team owner will be updated for all existing teams. |All new teams will have the updated team owner. |
+    |Setting |Effect on existing frontline teams |Effect on new frontline teams |
+    |--------|-----------------------------------|------------------------------|
+    |Define your frontline Azure AD attribute. |All existing frontline teams will be members that have the new Azure AD attribute defined. |All new frontline teams members will have the new Azure AD attribute defined. |
+    |Choose the values applicable to your frontline Azure AD attribute. |All existing frontline team membership will reflect your updated values. |All new teams will be populated with members who have the updated Azure AD attributes that you defined. |
+    |Define your frontline locations. | Existing teams will continue to persist. If a team is no longer tied to a location, there will be no users in that team, and users are put in their respective location teams. |You can create new frontline teams based on the locations defined by your new Azure AD attribute. |
+    |Set your team name prefix. |All existing team names will be updated to reflect the prefix and location name if that was changed. |All new teams will have the updated naming convention. |
+    |Select your team template. |No updates to the team structure will occur. |All new teams will use the updated team template. |
+    |Select your team owner. |The team owner will be updated for all existing teams. |All new teams will have the updated team owner. |
+
+## Get analytics on frontline teams usage
+
+The [Teams usage report](/microsoft-365/admin/activity-reports/microsoft-teams-usage-activity) in  Teams admin center gives you an overview of usage activity in Teams. You can use the report to view usage details for your frontline teams, including active users, active channels, total organized meetings, last activity date, and other information.
+
+1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com), **choose Analytics & reports** > **Usage reports**.
+2. On the **View reports** tab, under **Report**, select **Teams usage**.
+3. Under **Date range**, select a date range of 7 days, 30 days, 90 days, or 180 days. Then, choose **Run report**.
+4. In the upper-right corner, select **Export to Excel** > **Export table as CSV**.
+5. Filter the spreadsheet based on your frontline team IDs. 
+
+    > [!NOTE]
+    > To get a list of your frontline team IDs, in the Teams admin center, go to **Teams** > **Manage frontline teams**, and then in the **Frontline teams** section, select **Download CSV**.
+
+## Related articles
+
+- [Learn where to start with a frontline deployment](flw-deploy-overview.md)
+- [How to find the best frontline team solution for your organization](frontline-team-options.md)

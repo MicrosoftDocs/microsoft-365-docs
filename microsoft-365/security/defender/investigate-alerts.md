@@ -338,9 +338,9 @@ If both are true, SecOps marks the alert as legitimate travel and resolves it. A
 
 To create the automation, you'll need an API token before you can connect Power Automate to Microsoft Defender for Cloud Apps.
 
-1. Click **Settings**, select **Security extensions**, and then click **Add token** in the **API tokens** tab.
+1. Open [Microsoft Defender](https://security.microsoft.com/) and select **Settings** > **Cloud Apps** > **API token**, and then select **Add token** in the **API tokens** tab.
 
-2. Provide a name for your token, and then click **Generate**. Save the token as you'll need it later.
+2. Provide a name for your token, and then select **Generate**. Save the token as you'll need it later.
 
 ### Create an automated flow
 
@@ -359,5 +359,5 @@ As needed for in-process incidents, continue your [investigation](investigate-in
 - [Investigate incidents](investigate-incidents.md)
 - [Investigate data loss prevention alerts in Defender](dlp-investigate-alerts-defender.md)
 - [Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection)
-- 
+
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

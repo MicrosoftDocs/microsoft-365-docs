@@ -46,7 +46,7 @@ Use the _advanced delivery policy_ in EOP to prevent inbound messages _in these 
   - [Safe Links in Defender for Office 365](safe-links-about.md) doesn't block or detonate the specified URLs in these messages at time of click. URLs are still wrapped, but they aren't blocked.
   - [Safe Attachments in Defender for Office 365](safe-attachments-about.md) doesn't detonate attachments in these messages.
 
-¹ You can't bypass malware filtering.
+¹ Malware filtering is bypassed for SecOps mailboxes only.
 
 ² You can bypass ZAP for malware by creating an anti-malware policy for the SecOps mailbox where ZAP for malware is turned off. For instructions, see [Configure anti-malware policies in EOP](anti-malware-policies-configure.md).
 
@@ -130,7 +130,11 @@ There must be a match on at least one **Domain** and one **Sending IP**, but no 
 If your MX record doesn't point to Microsoft 365, the IP address in the `Authentication-results` header must match the IP address in the advanced delivery policy. If the IP addresses don't match, you might need to configure [Enhanced Filtering for Connectors](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) so the correct IP address is detected.
 
 > [!NOTE]
+> Enhanced Filtering for Connectors doesn't work for third-party phishing simulations in complex email routing scenarios (for example, email from the internet is routed to Microsoft 365, then to an on-premises environment or third-party security service, and then back to Microsoft 365). EOP can't identify the true IP address of the message source. Don't try to work around this limitation by adding the IP addresses of the on-premises or third-party sending infrastructure to the third-party phishing simulation. Doing so effectively bypasses spam filtering for any internet sender who impersonates the domain that's specified in the third-party phishing simulation.
+>
 > If you're using the [Built-in protection preset security policy](preset-security-policies.md#profiles-in-preset-security-policies) or your custom Safe Links policies have the setting **Do not rewrite URLs, do checks via SafeLinks API only** enabled, time of click protection doesn't treat phishing simuation links in email as threats in Outlook on the web, Outlook for iOS and Android, Outlook for Windows v16.0.15317.10000 or later, and Outlook for Mac v16.74.23061100 or later. If you're using older versions of Outlook, consider disabling the **Do not rewrite URLs, do checks via SafeLinks API only** setting in custom Safe Links policies.
+>
+> Adding phishing simulation URLs to the **Do not rewrite the following URLs in email** section in Safe Links policies might result in unwanted alerts for URL clicks. Phishing simulation URLs in email messages are automatically allowed both during mail flow and at time of click. 
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Advanced delivery** in the **Rules** section. Or, to go directly to the **Advanced delivery** page, use <https://security.microsoft.com/advanceddelivery>.
 

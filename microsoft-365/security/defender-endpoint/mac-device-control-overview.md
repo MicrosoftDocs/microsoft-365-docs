@@ -14,6 +14,7 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
+- mde-macos
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
@@ -67,9 +68,9 @@ Example 1: JAMF using [schema.json](https://github.com/microsoft/mdatp-xplat/tre
 
 :::image type="content" source="images/macos-device-control-jamf-json.png" alt-text="Shows how to enable Device Control in Microsoft Defender for Endpoint Data Loss Prevention / Features." lightbox="images/macos-device-control-jamf-json.png":::
 
-Example 2: [demo.mobileconfig](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples/macos/mobileconfig)
+Example 2: [demo.mobileconfig](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/macOS/mobileconfig/demo.mobileconfig)
 
-```json
+```xml
    <key>dlp</key>
     <dict> 
       <key>features</key>
