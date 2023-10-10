@@ -62,7 +62,7 @@ Disrupted incidents include a tag for `Attack Disruption` and the specific threa
 
 When an incident is disrupted, highlighted text appears below the incident title. Disabled user accounts and contained devices/users appear with a label indicating their status. 
 
-## Track the actions in the Action center
+## Track attack disruption actions in the Action center
 
 The [Action center](https://security.microsoft.com/action-center) brings together remediation and response actions, whether those actions were taken automatically or manually. You can view all automatic attack disruption actions in the Action center. Additionally, after your IT/security team has mitigated the risk and completed the investigation of an incident, contained assets can be released.
 
