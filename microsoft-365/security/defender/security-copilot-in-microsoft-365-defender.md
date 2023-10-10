@@ -32,17 +32,17 @@ ms.date: 10/10/2023
 
 - Microsoft 365 Defender
 
-The Microsoft Security Copilot in Microsoft 365 Defender Early Access Program is an invitation-only, paid preview. If your organization is interested in this program, work with your Microsoft account manager to learn more about nominations for a potential invite. To learn more about this program, see the [Microsoft Security Copilot Early Access Program FAQ](/security-copilot/faq-security-copilot.md).
+The Microsoft Security Copilot in Microsoft 365 Defender Early Access Program is an invitation-only, paid preview. If your organization is interested in this program, work with your Microsoft account manager to learn more about nominations for a potential invite. To learn more about this program, see the [Microsoft Security Copilot Early Access Program FAQ](/security-copilot/faq-security-copilot).
 
-[Microsoft Security Copilot](/security-copilot/microsoft-security-copilot.md) is a platform that brings together the power of AI and human expertise to help security teams respond to attacks faster and more effectively. Security Copilot is embedded in Microsoft 365 Defender for security teams to efficiently summarize incidents, analyze scripts and codes, use guided responses to resolve incidents, generate KQL queries, and create incident reports.
+[Microsoft Security Copilot](/security-copilot/microsoft-security-copilot) is a platform that brings together the power of AI and human expertise to help security teams respond to attacks faster and more effectively. Security Copilot is embedded in Microsoft 365 Defender for security teams to efficiently summarize incidents, analyze scripts and codes, use guided responses to resolve incidents, generate KQL queries, and create incident reports.
 
 This article provides an overview for users of the Security Copilot embedded experience in Microsoft 365 Defender, including steps to access, key capabilities, and links that detail these capabilities.
 
 ## Access Security Copilot in Microsoft 365 Defender
 
-To ensure that you have access to Security Copilot, see [Security Copilot purchase and licensing information](/security-copilot/faq-security-copilot.md). Once you have access to Security Copilot, you can access it in Microsoft 365 Defender.
+To ensure that you have access to Security Copilot, see [Security Copilot purchase and licensing information](/security-copilot/faq-security-copilot). Once you have access to Security Copilot, you can access it in Microsoft 365 Defender.
 
-[Review information on how to get started with Security Copilot](/security-copilot/get-started-security-copilot.md).
+[Review information on how to get started with Security Copilot](/security-copilot/get-started-security-copilot).
 
 ## Key features
 
@@ -68,7 +68,7 @@ Most attackers rely on sophisticated malware when launching attacks to avoid det
 
 ### Generate KQL queries from natural-language input
 
-Security teams who use advanced hunting to proactively hunt for threats in their network can now use a query assistant that converts any natural-language question in the context of threat hunting, into a ready-to-run KQL query. The query assistant saves security teams time by generating a KQL query that can then be automatically run or further tweaked according to the analyst needs. Read more about the query assistant in [Security Copilot in advanced hunting](advanced-hunting-security-copilot.md)
+Security teams who use advanced hunting to proactively hunt for threats in their network can now use a query assistant that converts any natural-language question in the context of threat hunting, into a ready-to-run KQL query. The query assistant saves security teams time by generating a KQL query that can then be automatically run or further tweaked according to the analyst needs. Read more about the query assistant in [Security Copilot in advanced hunting](advanced-hunting-security-copilot.md).
 
 ### Write incident reports efficiently
 
@@ -89,9 +89,9 @@ All key features have an option for providing feedback. To provide feedback, per
 
 ## Microsoft 365 Defender plugin in Security Copilot
 
-Microsoft 365 Defender is one of the [Microsoft plugins](/security-copilot/manage-plugins.md#microsoft-plugins) that enable the Security Copilot platform to generate accurate and relevant information. Through the Microsoft 365 Defender plugin, the Security Copilot portal can provide more context to incidents and generate more accurate results.
+Microsoft 365 Defender is one of the [Microsoft plugins](/security-copilot/manage-plugins.md#microsoft-plugins) that enable the Security Copilot platform to generate accurate and relevant information. Through the Microsoft 365 Defender plugin, the Security Copilot portal can provide more context to incidents and generate more accurate results. The key features mentioned in this article are capabilities that are also available in the Security Copilot portal.
 
-You can learn more about plugins implemented in the Security Copilot portal in [Manage plugins in Security Copilot](/security-copilot/manage-plugins.md). Additionally, you can learn more about the embedded experiences in other Microsoft security products in [Microsoft Security Copilot experiences](/security-copilot/experiences-security-copilot.md)
+You can learn more about plugins implemented in the Security Copilot portal in [Manage plugins in Security Copilot](/security-copilot/manage-plugins). Additionally, you can learn more about the embedded experiences in other Microsoft security products in [Microsoft Security Copilot experiences](/security-copilot/experiences-security-copilot)
 
 ## Next steps
 
@@ -103,7 +103,7 @@ You can learn more about plugins implemented in the Security Copilot portal in [
 
 ## See also
 
-- [Privacy and data security in Security Copilot](/security-copilot/privacy-data-security.md)
-- [Responsible AI FAQs](/security-copilot/responsible-ai-overview-security-copilot.md)
+- [Privacy and data security in Security Copilot](/security-copilot/privacy-data-security)
+- [Responsible AI FAQs](/security-copilot/responsible-ai-overview-security-copilot)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
