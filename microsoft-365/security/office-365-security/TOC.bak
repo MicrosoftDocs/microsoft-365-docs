@@ -4,24 +4,20 @@
   items:
    - name: Overview
      items:
-       - name: Microsoft Defender for Office 365 overview
-         href: mdo-about.md
-       - name: Exchange Online Protection overview
-         href: eop-about.md
-       - name: Microsoft Defender for Office 365 security comparison
-         href: mdo-security-comparison.md
+       - name: Why do I need Microsoft Defender for Office 365?
+         href: why-do-i-need-microsoft-defender-for-office-365.md
        - name: What's new in Defender for Office 365
          href: defender-for-office-365-whats-new.md
+       - name: Zero Trust for Defender for Office 365
+         href: zero-trust-with-microsoft-365-defender-office-365.md
    - name: Get started
      items:
-     - name: Get started with Microsoft Defender for Office 365
-       href: mdo-deployment-guide.md
+     - name: Defender for Office 365
+       href: defender-for-office-365.md
      - name: How threat protection works in Defender for Office 365
        href: protection-stack-microsoft-defender-for-office365.md
      - name: Secure by default
        href: secure-by-default.md
-     - name: Zero Trust for Defender for Office 365
-       href: zero-trust-with-microsoft-365-defender-office-365.md
      - name: Microsoft 365 Defender portal overview
        href: ../defender/microsoft-365-defender.md
    - name: Evaluate
@@ -45,7 +41,7 @@
        - name: Use DMARC Reports to validate email
          href: email-authentication-dmarc-reports.md
        - name: Use Trusted ARC senders for legitimate devices and services between the sender and receiver
-         href: email-authentication-arc-configure.md
+         href: use-arc-exceptions-to-mark-trusted-arc-senders.md
      - name: Phase 2 - Choose your installation path
        items:
        - name: Step 1 - installation path with or without EOP
@@ -60,8 +56,12 @@
            items:
            - name: Defender for Office 365
              href: defender-for-office-365.md
+           - name: Protect against threats
+             href: protect-against-threats.md
          - name: Option 3 - Custom EOP and Defender for Office 365 P1 and P2 environments installation path (manual)
            items:
+           - name: Exchange Online Protection overview
+             href: eop-about.md
            - name: Recommended settings for configuring EOP and Defender for Office 365 Security
              href: recommended-settings-for-eop-and-office365.md
        - name: Step 2 - Configure Permissions
@@ -80,6 +80,8 @@
      items:
        - name: Defender for Office 365 Security Operations Guide
          href: mdo-sec-ops-guide.md
+       - name: Configure your tenant for increased security
+         href: tenant-wide-setup-for-increased-security.md
        - name: Support for Microsoft Teams
          href: mdo-support-teams-about.md
        - name: Security recommendations for priority accounts
@@ -108,6 +110,8 @@
            href: anti-spam-spam-vs-bulk-about.md
          - name: Spam confidence level (SCL)
            href: anti-spam-spam-confidence-level-scl-about.md
+         - name: Bulk complaint level (BCL)
+           href: anti-spam-bulk-complaint-level-bcl-about.md
          - name: Backscatter in EOP
            href: anti-spam-backscatter-about.md
          - name: Configure junk email settings on Exchange Online mailboxes
@@ -247,7 +251,7 @@
        - name: Advanced delivery policies
          items:
          - name: Configure advanced delivery policies
-           href: advanced-delivery-policy-configure.md
+           href: skip-filtering-phishing-simulations-sec-ops-mailboxes.md
        - name: User tags and priority accounts
          items:
          - name: User tags in Defender for Office 365
@@ -265,7 +269,7 @@
        - name: Alert policies
          items:
          - name: Alert policies
-           href: alert-policies-defender-portal.md
+           href: /purview/alert-policies
        - name: Auditing
          items:
          - name: Run an administrator role group report
@@ -325,7 +329,7 @@
          - name: View Defender for Office 365 reports
            href: reports-defender-for-office-365.md
          - name: Message trace
-           href: message-trace-defender-portal.md
+           href: message-trace-scc.md
      - name: Respond and remediate
        items:
          - name: Responding to a Compromised Email Account in Office 365
@@ -369,7 +373,7 @@
         - name: Remove blocked entities
           items:
            - name: Remove blocked users
-             href: outbound-spam-restore-restricted-users.md
+             href: removing-user-from-restricted-users-portal-after-spam.md
            - name: Remove blocked connectors
              href: connectors-remove-blocked.md
         - name: Tune anti-phishing protection
@@ -391,7 +395,7 @@
           - name: Quarantine FAQ
             href: quarantine-faq.yml
         - name: Use the delist portal to remove yourself from the blocked senders list
-          href: external-senders-use-the-delist-portal-to-unblock-yourself.md
+          href: use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
    - name: Step-by-step guides
      items:
       - name: Microsoft Defender for Office 365 step-by-step guides and how to use them
@@ -461,17 +465,17 @@
      - name: Policies and protections
        href: how-policies-and-protections-are-combined.md
      - name: Troubleshooting mail sent to Microsoft 365
-       href: external-senders-mail-flow-troubleshooting.md
+       href: mail-flow-troubleshooting.md
      - name: Anti-spam message headers
        href: message-headers-eop-mdo.md
      - name: Policies, practices, and guidelines
-       href: external-senders-policies-practices-guidelines.md
+       href: reference-policies-practices-and-guidelines.md
      - name: Sending mail to Office 365
-       href: external-senders-sending-email-to-microsoft-365.md
+       href: sending-mail-to-office-365.md
      - name: How Office 365 uses SPF to prevent spoofing
        href: email-authentication-anti-spoofing.md
      - name: Microsoft 365 services for external email senders
-       href: external-senders-microsoft-365-services.md
+       href: services-for-non-customers.md
      - name: Configure EOP to deliver spam to Junk Email folders in hybrid (Exchange)
        href: /exchange/standalone-eop/configure-eop-spam-protection-hybrid
      - name: SIEM server integration
@@ -479,17 +483,21 @@
      - name: SIEM threat intelligence integration
        href: siem-integration-with-office-365-ti.md
      - name: Privileged identity management in Defender for Office 365
-       href: pim-in-mdo-configure.md
+       href: use-privileged-identity-management-in-defender-for-office-365.md
      - name: Anonymous inbound email messages over IPv6
        href: mail-flow-inbound-ipv6-support-about.md
      - name: Support for DKIM-signed messages
        href: email-authentication-dkim-support-about.md
      - name: Install Application Guard for Office
-       href: app-guard-for-office-install.md
+       href: install-app-guard.md
      - name: FAQ
        items:
        - name: Delegated administration FAQ
          href: delegated-administration-faq.yml
+       - name: EOP general FAQ
+         href: eop-faq.yml
+       - name: EOP queued, deferred, and bounced messages FAQ
+         href: mail-flow-delivery-faq.yml
    - name: Microsoft 365 Defender docs
      items:
        - name: Microsoft 365 Defender
