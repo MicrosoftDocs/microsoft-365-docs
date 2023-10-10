@@ -29,12 +29,12 @@ appliesto:
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, message trace follows email messages as they travel through your Exchange Online organization. You can determine if a message was received, rejected, deferred, or delivered by the service. It also shows what actions were taken on the message before it reached its final status.
+In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, message trace follows email messages as they travel through your Microsoft 365 organization. You can determine if a message was received, rejected, deferred, or delivered by the service. It also shows what actions were taken on the message before it reached its final status.
 
 You can use the information from message trace to efficiently answer user questions about what happened to messages, troubleshoot mail flow issues, and validate policy changes.
 
-> [!NOTE]
-> Message trace in the Microsoft 365 Defender portal is a pass through to Message trace in the new Exchange admin center (EAC). For more information, see [Message trace in the new EAC](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac).
+> [!TIP]
+> The **Message trace** page in the Microsoft 365 Defender portal is a really pass through to **Message trace** page in the new Exchange admin center (EAC) at <https://admin.exchange.microsoft.com/#/messagetrace>.
 
 ## What do you need to know before you begin?
 
@@ -46,6 +46,6 @@ You can use the information from message trace to efficiently answer user questi
 
 ## Open message trace
 
-In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Exchange message trace**. Or, to go directly to the message trace page, use <https://admin.exchange.microsoft.com/#/messagetrace>.
+In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Exchange message trace**.
 
-At this point, message trace in the EAC opens. For more information, see [Message trace in the modern Exchange admin center](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac).
+At this point, the **Message trace** page in the new EAC opens. To go directly to this page, use <https://admin.exchange.microsoft.com/#/messagetrace>. For more information, see [Message trace in the new Exchange admin center](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac).

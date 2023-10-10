@@ -265,7 +265,7 @@
        - name: Alert policies
          items:
          - name: Alert policies
-           href: /purview/alert-policies
+           href: alert-policies-defender-portal.md
        - name: Auditing
          items:
          - name: Run an administrator role group report
@@ -391,7 +391,7 @@
           - name: Quarantine FAQ
             href: quarantine-faq.yml
         - name: Use the delist portal to remove yourself from the blocked senders list
-          href: use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
+          href: external-senders-use-the-delist-portal-to-unblock-yourself.md
    - name: Step-by-step guides
      items:
       - name: Microsoft Defender for Office 365 step-by-step guides and how to use them
@@ -461,17 +461,17 @@
      - name: Policies and protections
        href: how-policies-and-protections-are-combined.md
      - name: Troubleshooting mail sent to Microsoft 365
-       href: mail-flow-troubleshooting.md
+       href: external-senders-mail-flow-troubleshooting.md
      - name: Anti-spam message headers
        href: message-headers-eop-mdo.md
      - name: Policies, practices, and guidelines
-       href: reference-policies-practices-and-guidelines.md
+       href: external-senders-policies-practices-guidelines.md
      - name: Sending mail to Office 365
-       href: sending-mail-to-office-365.md
+       href: external-senders-sending-email-to-microsoft-365.md
      - name: How Office 365 uses SPF to prevent spoofing
        href: email-authentication-anti-spoofing.md
      - name: Microsoft 365 services for external email senders
-       href: services-for-non-customers.md
+       href: external-senders-microsoft-365-services.md
      - name: Configure EOP to deliver spam to Junk Email folders in hybrid (Exchange)
        href: /exchange/standalone-eop/configure-eop-spam-protection-hybrid
      - name: SIEM server integration
@@ -479,13 +479,13 @@
      - name: SIEM threat intelligence integration
        href: siem-integration-with-office-365-ti.md
      - name: Privileged identity management in Defender for Office 365
-       href: use-privileged-identity-management-in-defender-for-office-365.md
+       href: pim-in-mdo-configure.md
      - name: Anonymous inbound email messages over IPv6
        href: mail-flow-inbound-ipv6-support-about.md
      - name: Support for DKIM-signed messages
        href: email-authentication-dkim-support-about.md
      - name: Install Application Guard for Office
-       href: install-app-guard.md
+       href: app-guard-for-office-install.md
      - name: FAQ
        items:
        - name: Delegated administration FAQ

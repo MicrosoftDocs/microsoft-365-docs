@@ -148,7 +148,7 @@ sections:
       - question: |
           What are the best practices for outbound mail that help to ensure my mail is delivered?
         answer: |
-          The guidelines at [Best practices for bulk emailing to Microsoft 365 users](mail-flow-troubleshooting.md#best-practices-for-bulk-emailing-to-microsoft-365-users) and following guidelines are best practices for sending outbound email messages:
+          The guidelines at [External senders - Troubleshoot email sent to Microsoft 365](external-senders-mail-flow-troubleshooting.md#best-practices-for-bulk-emailing-to-microsoft-365-users) and following guidelines are best practices for sending outbound email messages:
 
           - **The source email domain should resolve in DNS**: For example, if the sender is user@fabrikam, the domain fabrikam resolves to the IP address 192.168.43.10.
 

@@ -2312,7 +2312,7 @@
       },
       {
          "source_path":"microsoft-365/security/office-365-security/troubleshooting-mail-sent-to-office-365.md",
-         "redirect_url":"/microsoft-365/security/office-365-security/mail-flow-troubleshooting",
+         "redirect_url":"/microsoft-365/security/office-365-security/external-senders-mail-flow-troubleshooting",
          "redirect_document_id":true
       },
       {
@@ -2839,7 +2839,42 @@
          "source_path":"microsoft-365/security/office-365-security/message-trace-scc.md",
          "redirect_url":"/microsoft-365/security/office-365-security/message-trace-defender-portal",
          "redirect_document_id":false
-      },
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/install-app-guard.md",
+         "redirect_url":"/microsoft-365/security/office-365-security/app-guard-for-office-install",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/use-privileged-identity-management-in-defender-for-office-365.md",
+         "redirect_url":"/microsoft-365/security/office-365-security/pim-in-mdo-configure",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/sending-mail-to-office-365.md",
+         "redirect_url":"/microsoft-365/security/office-365-security/external-senders-microsoft-365-services",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/services-for-non-customers.md",
+         "redirect_url":"/microsoft-365/security/office-365-security/external-senders-microsoft-365-services",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/mail-flow-troubleshooting.md",
+         "redirect_url":"/microsoft-365/security/office-365-security/external-senders-mail-flow-troubleshooting",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md",
+         "redirect_url":"/microsoft-365/security/office-365-security/external-senders-use-the-delist-portal-to-unblock-yourself",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/reference-policies-practices-and-guidelines.md",
+         "redirect_url":"/microsoft-365/security/office-365-security/external-senders-policies-practices-guidelines",
+         "redirect_document_id":false
+       },
        {
          "source_path":"microsoft-365/security/defender-business/mdb-maintain-environment.md",
          "redirect_url":"/microsoft-365/business-premium/m365bp-mdb-maintain-environment",

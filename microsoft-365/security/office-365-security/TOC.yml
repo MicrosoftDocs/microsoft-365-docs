@@ -12,12 +12,15 @@
          href: mdo-security-comparison.md
        - name: What's new in Defender for Office 365
          href: defender-for-office-365-whats-new.md
+
    - name: Get started
      items:
      - name: Get started with Microsoft Defender for Office 365
        href: mdo-deployment-guide.md
      - name: How threat protection works in Defender for Office 365
        href: protection-stack-microsoft-defender-for-office365.md
+     - name: How policies and protections are combined
+       href: how-policies-and-protections-are-combined.md
      - name: Secure by default
        href: secure-by-default.md
      - name: Zero Trust for Defender for Office 365
@@ -26,12 +29,14 @@
        href: mail-flow-about.md
      - name: Microsoft 365 Defender portal overview
        href: ../defender/microsoft-365-defender-portal.md
+
    - name: Evaluate
      items:
      - name: Try Defender for Office 365
        href: try-microsoft-defender-for-office-365.md
      - name: Trial User Guide for Defender for Office 365
        href: trial-user-guide-defender-for-office-365.md
+
    - name: Deploy
      items:
      - name: Step 1 - Configure email authentication
@@ -42,6 +47,8 @@
          href: email-authentication-spf-configure.md
        - name: Set up DKIM
          href: email-authentication-dkim-configure.md
+       - name: Support for DKIM-signed messages
+         href: email-authentication-dkim-support-about.md
        - name: Set up DMARC
          href: email-authentication-dmarc-configure.md
        - name: Configure trusted ARC sealers
@@ -102,6 +109,7 @@
          href: migrate-to-defender-for-office-365-setup.md
        - name: Step 3 - Onboard
          href: migrate-to-defender-for-office-365-onboard.md
+
    - name: Protect and Detect
      items:
        - name: Defender for Office 365 SecOps Guide
@@ -128,6 +136,8 @@
              href: anti-malware-protection-faq.yml
            - name: Zero-hour auto purge (ZAP)
              href: zero-hour-auto-purge.md
+           - name: Virus detection in SharePoint Online
+             href: anti-malware-protection-for-spo-odfb-teams-about.md
          - name: Anti-spam in EOP
            items:
            - name: Anti-spam protection
@@ -206,14 +216,18 @@
            items:
            - name: Configure the connection filtering policy
              href: connection-filter-policies-configure.md
-       - name: Admin audit logging
+       - name: Audit log search
          items:
          - name: Search the audit log
-           href: /purview/audit-log-search
+           href: audit-log-search-defender-portal.md
        - name: Advanced delivery policy
          items:
          - name: Configure SecOps mailboxes and phishing simulation URLs
            href: advanced-delivery-policy-configure.md
+       - name: Alert policies
+         items:
+         - name: Alert policies
+           href: alert-policies-defender-portal.md
        - name: Allow and block
          items:
          - name: Tenant Allow/Block List
@@ -232,10 +246,6 @@
            href: create-block-sender-lists-in-office-365.md
          - name: Create safe sender lists
            href: create-safe-sender-lists-in-office-365.md
-       - name: Alert policies
-         items:
-         - name: Alert policies
-           href: /purview/alert-policies
        - name: Attack simulation training in Defender for Office 365
          items:
          - name: Get started using Attack simulation training
@@ -274,6 +284,10 @@
            href: connectors-detect-respond-to-compromise.md
          - name: Remove blocked connectors
            href: connectors-remove-blocked.md
+       - name: Delegated administration
+         items:
+         - name: Delegated administration FAQ
+           href: delegated-administration-faq.yml
        - name: Exchange mail flow rules (transport rules)
          items:
          - name: About mail flow rules
@@ -324,10 +338,16 @@
            href: quarantine-quarantine-notifications.md
          - name: Quarantine FAQ
            href: quarantine-faq.yml
+       - name: Reports
+         items:
+         - name: Email security reports
+           href: reports-email-security.md
+         - name: Defender for Office 365 reports
        - name: Safe Documents in Microsoft 365 A5 or E5 Security
          items:
          - name: Safe Documents in A5 or E5 Security
            href: safe-documents-in-e5-plus-security-about.md
+
    - name: Investigate and Respond
      items:
      - name: Manage incidents and alerts in Microsoft 365 Defender
@@ -372,29 +392,39 @@
            href: threat-explorer-about.md
          - name: Threat Explorer views
            href: threat-explorer-views.md
-       - name: Impersonation insight
-         href: anti-phishing-mdo-impersonation-insight.md
-       - name: Spoof intelligence insight
-         href: anti-spoofing-spoof-intelligence.md
+         - name: Email entity page
+           href: mdo-email-entity-page.md
+         - name: Teams message entity panel
+           href: teams-message-entity-panel.md
+       - name: Insights
+         items:
+         - name: Impersonation insight
+           href: anti-phishing-mdo-impersonation-insight.md
+         - name: Spoof intelligence insight
+           href: anti-spoofing-spoof-intelligence.md
        - name: Search the audit log
-         href: /purview/audit-log-search
-       - name: View email security reports
-         href: reports-email-security.md
-       - name: View Defender for Office 365 reports
-         href: reports-defender-for-office-365.md
+         href: audit-log-search-defender-portal.md
+       - name: Reports
+         items:
+         - name: Email security reports
+           href: reports-email-security.md
+         - name: Defender for Office 365 reports
+           href: reports-defender-for-office-365.md
        - name: Message trace
          items:
          - name: Message trace
            href: message-trace-defender-portal.md
-
-       - name: Email entity page
-         href: mdo-email-entity-page.md
-       - name: Teams message entity panel
-         href: teams-message-entity-panel.md
        - name: Threat Trackers
          items:
          - name: Use Threat Trackers
            href: threat-trackers.md
+     - name: SIEM server integration
+       items:
+       - name: SIEM server integration
+         href: siem-server-integration.md
+       - name: SIEM threat intelligence integration
+         href: siem-integration-with-office-365-ti.md
+
 
      - name: Respond and remediate
        items:
@@ -432,6 +462,43 @@
          href: detect-and-remediate-illicit-consent-grants.md
        - name: Detect and Remediate Outlook Rules and Custom Forms Injections Attacks in Office 365
          href: detect-and-remediate-outlook-rules-forms-attack.md
+
+   - name: Reference
+     items:
+     - name: Anti-spam message headers
+       href: message-headers-eop-mdo.md
+     - name: Application Guard for Office
+       href: app-guard-for-office-install.md
+     - name: Data retention in Defender for Office 365
+       href: mdo-data-retention.md
+     - name: External email senders - Microsoft 365 resources
+       items:
+       - name: Microsoft 365 services for external email senders
+         href: external-senders-microsoft-365-services.md
+       - name: External senders - Troubleshooting email sent to Microsoft 365
+         href: external-senders-mail-flow-troubleshooting.md
+       - name: External senders - Remove yourself from the blocked senders list
+         href: external-senders-use-the-delist-portal-to-unblock-yourself.md
+       - name: Policies, practices, and guidelines
+         href: external-senders-policies-practices-guidelines.md
+     - name: Privileged identity management in Defender for Office 365
+       href: pim-in-mdo-configure.md
+
+   - name: Microsoft 365 Defender docs
+     items:
+       - name: Microsoft 365 Defender
+         href: ../defender/index.yml
+       - name: Defender for Endpoint
+         href: ../defender-endpoint/index.yml
+       - name: Defender for Identity
+         href: /defender-for-identity
+       - name: Defender for Cloud Apps
+         href: /cloud-app-security
+       - name: Defender for Business
+         href: ../defender-business/index.yml
+       - name: Defender Vulnerability Management
+         href: ../defender-vulnerability-management/index.yml
+
    - name: Step-by-step guides
      items:
       - name: Microsoft Defender for Office 365 step-by-step guides and how to use them
@@ -491,59 +558,3 @@
           href: step-by-step-guides/assess-the-impact-of-security-configuration-changes-with-explorer.md
         - name: Review and remove unnecessary allow list entries with Advanced Hunting in Microsoft Defender for Office 365
           href: step-by-step-guides/review-allow-entries.md
-
-   - name: Reference
-     items:
-     - name: Defender for Office 365 data retention
-       href: mdo-data-retention.md
-     - name: Policies and protections
-       href: how-policies-and-protections-are-combined.md
-
-     - name: Anti-spam message headers
-       href: message-headers-eop-mdo.md
-     - name: Policies, practices, and guidelines
-       href: reference-policies-practices-and-guidelines.md
-
-     - name: External email senders into Microsoft 365
-       items:
-       - name: Sending mail to Office 365
-         href: sending-mail-to-office-365.md
-       - name: Microsoft 365 services for external email senders
-         href: services-for-non-customers.md
-       - name: Troubleshooting mail sent to Microsoft 365
-         href: mail-flow-troubleshooting.md
-       - name: External senders - Remove yourself from the blocked senders list
-         href: use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
-
-
-     - name: SIEM server integration
-       href: siem-server-integration.md
-     - name: SIEM threat intelligence integration
-       href: siem-integration-with-office-365-ti.md
-     - name: Privileged identity management in Defender for Office 365
-       href: use-privileged-identity-management-in-defender-for-office-365.md
-     - name: Support for DKIM-signed messages
-       href: email-authentication-dkim-support-about.md
-     - name: Install Application Guard for Office
-       href: install-app-guard.md
-     - name: Virus detection in SharePoint Online
-       href: anti-malware-protection-for-spo-odfb-teams-about.md
-     - name: FAQ
-       items:
-       - name: Delegated administration FAQ
-         href: delegated-administration-faq.yml
-
-   - name: Microsoft 365 Defender docs
-     items:
-       - name: Microsoft 365 Defender
-         href: ../defender/index.yml
-       - name: Defender for Endpoint
-         href: ../defender-endpoint/index.yml
-       - name: Defender for Identity
-         href: /defender-for-identity
-       - name: Defender for Cloud Apps
-         href: /cloud-app-security
-       - name: Defender for Business
-         href: ../defender-business/index.yml
-       - name: Defender Vulnerability Management
-         href: ../defender-vulnerability-management/index.yml

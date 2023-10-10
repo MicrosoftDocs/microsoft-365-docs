@@ -35,7 +35,7 @@ By default, data across different features is retained for a maximum of 30 days.
 
 |Feature|Retention period|
 |---|---|
-|Alert metadata details (Microsoft Defender for Office 365 alerts)|90 days.|
+|Alert metadata details (Defender for Office 365 alerts)|90 days.|
 |Entity metadata details (Email)|30 days.|
 |Activity alert details (audit logs)|7 days.|
 |Email entity page|30 days.|

@@ -181,7 +181,7 @@ Short videos for specific tasks are also available in the [Microsoft Defender fo
 Permissions for managing Defender for Office 365 in the Microsoft 365 Defender portal and PowerShell are based on the role-based access control (RBAC) permissions model. RBAC is the same permissions model that's used by most Microsoft 365 services. For more information, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).
 
 > [!NOTE]
-> Privileged Identity Management (PIM) in Azure AD is also a way to assign required permissions to SecOps personnel. For more information, see [Privileged Identity Management (PIM) and why to use it with Microsoft Defender for Office 365](use-privileged-identity-management-in-defender-for-office-365.md).
+> Privileged Identity Management (PIM) in Azure AD is also a way to assign required permissions to SecOps personnel. For more information, see [Privileged Identity Management (PIM) and why to use it with Microsoft Defender for Office 365](pim-in-mdo-configure.md).
 
 The following permissions (roles and role groups) are available in Defender for Office 365 and can be used to grant access to security team members:
 

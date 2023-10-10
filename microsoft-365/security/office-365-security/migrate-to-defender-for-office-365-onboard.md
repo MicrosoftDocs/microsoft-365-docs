@@ -55,7 +55,7 @@ If your organization has a security response team, now is the time to begin inte
   - Admin management of quarantined messages is important. For instructions, see [Manage quarantined messages and files as an admin](quarantine-admin-manage-messages-files.md).
   - Message trace allows you to see what happened to messages as they enter or leave Microsoft 365. For more information, see [Message trace in the modern Exchange admin center in Exchange Online](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac).
 - Identify risks that may have been let into the organization.
-- Tune and customize [alerts](/purview/alert-policies) for organizational processes.
+- Tune and customize [alerts](alert-policies-defender-portal.md) for organizational processes.
 - Manage the incident queue and remediate potential risks.
 
 If your organization has purchased Microsoft Defender for Office 365 Plan 2, they should begin familiarizing themselves with and using features such as Threat Explorer, Advanced Hunting, and Incidents. For relevant trainings, see <https://aka.ms/mdoninja>.

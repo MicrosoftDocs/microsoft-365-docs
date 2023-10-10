@@ -27,7 +27,7 @@ appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
-# Use the delist portal to remove yourself from the blocked senders list and address 5.7.511 Access denied errors
+# External senders - Use the delist portal to remove yourself from the blocked senders list and address 5.7.511 Access denied errors
 
 Are you getting an error message when you try to send an email to a recipient whose email address is in Microsoft 365 (for example and address 5.7.511 Access denied)? If you think you shouldn't be receiving the error message, you can use the delist portal to remove yourself from the blocked senders list.
 

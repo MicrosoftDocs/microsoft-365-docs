@@ -21,10 +21,10 @@ description: Learn to integrate Azure PIM in order to grant just-in-time, time l
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ---
-<!--A-->
+
 # Privileged Identity Management (PIM) and why to use it with Microsoft Defender for Office 365
 
-Privileged Identity Management (PIM) is an Azure feature that, once set up, gives users access to data for a limited period of time (sometimes called time-boxed period of time) so that a specific task can be done. This access is given 'just-in-time' to do the action that's required, and then revoked. PIM limits the access and time that user has to sensitive data, reducing exposure risk when compared to privileged administration accounts that have long-term access to data and other settings. So how can we use this feature (PIM) in conjunction with Microsoft Defender for Office 365?
+Privileged Identity Management (PIM) is an Azure feature that, once set up, gives users access to data for a limited period of time (sometimes called a _time-boxed_ period of time) so that a specific task can be done. Access is given 'just-in-time' to do the action that's required, and then revoked. PIM limits the access and time that user has to sensitive data, reducing exposure risk when compared to privileged administration accounts that have long-term access to data and other settings. So how can we use this feature (PIM) in conjunction with Microsoft Defender for Office 365?
 
 > [!TIP]
 > PIM access is scoped to the role and identity level and allows completion of multiple tasks. It's not to be confused with Privileged Access Management (PAM) which is scoped at a Task level.
@@ -33,14 +33,14 @@ Privileged Identity Management (PIM) is an Azure feature that, once set up, give
 
 By setting up PIM to work with Defender for Office 365, admins create a process for a user to request access to take the actions they need. The user must *justify* the need for the elevation of their privileges.
 
-In this example we will configure "Alex", a member of our security team who will have zero-standing access within Office 365, but can elevate to both a role required for normal day-to-day operations, such as [Threat Hunting](threat-explorer-threat-hunting.md) and then also to a higher level of privilege when less frequent but sensitive operations, such as [remediating malicious delivered email](remediate-malicious-email-delivered-office-365.md) is required.
+In this example we configure "Alex", a member of our security team who has zero-standing access within Microsoft 365, but can elevate to both a role required for normal day-to-day operations, such as [Threat Hunting](threat-explorer-threat-hunting.md) and then also to a higher level of privilege when less frequent but sensitive operations, such as [remediating malicious delivered email](remediate-malicious-email-delivered-office-365.md) is required.
 
 > [!NOTE]
 > This will walk you through the steps required to setup PIM for a Security Analyst who requires the ability to purge emails using Threat Explorer in Microsoft Defender for Office 365, but the same steps can be used for other RBAC roles within the Security, and Compliance portal. For example this process could be used for a information worker who requires day-to-day access in eDiscovery to perform searches and case work, but only occasionally needs the elevated right to export data from the tenant.
 
 ***Step 1***. In the Azure PIM console for your subscription, add the user (Alex) to the Azure Security Reader role and configure the security settings related to activation.
 
-1. Sign into the [Azure AD Admin Center](https://aad.portal.azure.com/) and select  **Azure Active Directory** > **Roles and administrators**.
+1. Sign into the [Azure AD Admin Center](https://aad.portal.azure.com/) and select **Azure Active Directory** > **Roles and administrators**.
 2. Select **Security Reader** in the list of roles and then **Settings** > **Edit**
 3. Set the '**Activation maximum duration (hours)**' to a normal working day and 'On activation' to require **Azure MFA**.
 4. As this is Alex's normal privilege level for day-to-day operations, we will Uncheck **Require justification on activation**' > **Update**.
@@ -98,5 +98,3 @@ In the Microsoft 365 Defender portal, create a custom role group that contains t
 Permanent assignment of administrative roles and permissions such as Search and Purge Role doesn't hold with the Zero Trust security initiative, but as you can see, PIM can be used to grant just-in-time access to the toolset required.
 
 *Our thanks to Customer Engineer Ben Harris for access to the blog post and resources used for this content.*
-
-<!--A-->

@@ -30,7 +30,7 @@ appliesto:
 
 Microsoft is dedicated to helping provide the most trusted user experience on the web. Therefore, Microsoft has developed various policies, procedures, and adopted several industry best practices to help protect our users from abusive, unwanted, or malicious email. Senders attempting to send email to users should ensure they fully understand and are following the guidance in this article to help in this effort and to help avoid potential delivery issues.
 
-If you aren't in compliance with these policies and guidelines, it may not be possible for our support team to assist you. If you're adhering to the guidelines, practices, and policies presented in this article and are still experiencing delivery issues based on your sending IP address, follow the steps to submit a delisting request. For instructions, see [Use the delist portal to remove yourself from the blocked senders list](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
+If you aren't in compliance with these policies and guidelines, it may not be possible for our support team to assist you. If you're adhering to the guidelines, practices, and policies presented in this article and are still experiencing delivery issues based on your sending IP address, follow the steps to submit a delisting request. For instructions, see [Use the delist portal to remove yourself from the blocked senders list](external-senders-use-the-delist-portal-to-unblock-yourself.md).
 
 ## General Microsoft policies
 

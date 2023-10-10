@@ -127,7 +127,6 @@ For information about requirements, important limits, and feature availability a
 |Mail flow reports|[Mail flow reports in the Exchange admin center](/exchange/monitoring/mail-flow-reports/mail-flow-reports)|
 |Mail flow insights|[Mail flow insights in the Exchange admin center](/exchange/monitoring/mail-flow-insights/mail-flow-insights)|
 |Auditing reports|[Auditing reports in the Exchange admin center](/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports)|
-|Alert policies|[Alert policies](/purview/alert-policies)|
 |**Service Level Agreements (SLAs) and support**||
 |Spam effectiveness SLA|\> 99%|
 |False positive ratio SLA|\< 1:250,000|

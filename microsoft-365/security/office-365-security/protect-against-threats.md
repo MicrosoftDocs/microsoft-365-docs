@@ -295,7 +295,7 @@ To receive notification when a file in SharePoint Online or OneDrive for Busines
 
 6. On the **Review your settings** page, review your settings, verify **Yes, turn it on right away** is selected, and then select **Finish**
 
-To learn more about alert policies, see [Alert policies in the Microsoft Purview compliance portal](/purview/alert-policies).
+To learn more about alert policies, see [Alert policies in the Microsoft 365 Defender portal](alert-policies-defender-portal.md).
 
 > [!NOTE]
 > When you're finished configuring, use these links to start workload investigations:

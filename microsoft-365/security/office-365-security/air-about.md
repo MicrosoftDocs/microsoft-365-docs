@@ -75,7 +75,7 @@ During and after each automated investigation, your security operations team can
 
 AIR capabilities are included in [Microsoft Defender for Office 365](defender-for-office-365.md#whats-the-difference-between-microsoft-defender-for-office-365-plan-1-and-plan-2), as long as [audit logging is turned on](/purview/audit-log-enable-disable) (it's on by default).
 
-In addition, make sure to [review your organization's alert policies](/purview/alert-policies), especially the [default policies in the Threat management category](/purview/alert-policies#default-alert-policies).
+In addition, make sure to review your organization's [alert policies](alert-policies-defender-portal.md), especially the [default policies in the Threat management category](/purview/alert-policies#default-alert-policies).
 
 ## Which alert policies trigger automated investigations?
 
@@ -95,7 +95,7 @@ Microsoft 365 provides many built-in alert policies that help identify Exchange 
 |Admin triggered user compromise investigation|**Medium**|This alert is generated when an admin triggers the manual user compromise investigation of either an email sender or recipient from Threat Explorer.  This alert notifies your organization that the user compromise investigation was started.|
 
 > [!TIP]
-> To learn more about alert policies or edit the default settings, see [Alert policies in the Microsoft Purview compliance portal](/purview/alert-policies).
+> To learn more about alert policies or edit the default settings, see [Alert policies in the Microsoft 365 Defender portal](alert-policies-defender-portal.md).
 
 ## Required permissions to use AIR capabilities
 
