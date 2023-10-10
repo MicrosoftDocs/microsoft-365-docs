@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
-ms.date: 06/01/2023
+ms.date: 10/15/2023
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -23,7 +23,7 @@ description: Learn how to use the processing status column in a SharePoint docum
 
 In a document library, you can see the status of any file that is being processed by a model in Microsoft Syntex by looking in the **Processing status** and **Processing details** columns.
 
-![Screenshot of a document library showing the Processing status column.](../media/content-understanding/processing-status-column.png)
+![Screenshot of a document library showing the Processing status and Processing details columns.](../media/content-understanding/processing-status-column.png)
 
 The **Processing status** column shows you whether the processing of a file is in progress, completed, or wasn’t done due to an error with the file or the job. The status helps you know whether a file needs to be queued again for processing or if more investigation is required.
 
