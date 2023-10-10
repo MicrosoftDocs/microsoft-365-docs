@@ -50,14 +50,14 @@ Users with access to Security Copilot have access to this capability in advanced
 1. In the Security Copilot prompt bar, ask any threat hunting query that you want to run and press ![Send icon](../../media/Send.png) or **Enter** .
 
    
-1. Security Copilot generates a KQL query from your text instruction or question. While Security Copilot is generating, you can cancel the query generation by selecting **Cancel**. You can then edit your input by selecting the pencil icon.
+1. Security Copilot generates a KQL query from your text instruction or question. While Security Copilot is generating, you can cancel the query generation by selecting **Cancel**.
 
  
 1. Review the generated query. You can then choose to run the query by selecting **Run query**. The generated query then appears as the last query in the query editor and runs automatically. 
 
    
 
-    If you need to make further tweaks, select **Add to editor**. The generated query appears in the main query editor as the last query, where you can edit it before running using the regular **Run query** above the main query editor.
+    If you need to make further tweaks, select **Add to editor**. The generated query appears in the query editor as the last query, where you can edit it before running using the regular **Run query** above the query editor.
 
    
 1. You can provide feedback about the generated response by selecting the feedback **smiley icon** and choosing  **Confirm**, **Off-target**, or **Report**.
