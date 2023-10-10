@@ -35,7 +35,7 @@ ms.date: 10/10/2023
 > [!IMPORTANT]
 > The information in this article only applies to the Microsoft Security Copilot Early Access Program, an invite-only paid preview program for commercial customers. Some information in this article relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-[Microsoft Security Copilot](/copilot/microsoft-365-copilot-overview.md) in Microsoft 365 Defender assists security operations teams with writing incident reports efficiently. Utilizing Security Copilot's AI-powered data processing, security teams can immediately create incident reports with a click of a button in Microsoft 365 Defender.
+[Microsoft Security Copilot](/security-copilot/microsoft-security-copilot) in Microsoft 365 Defender assists security operations teams with writing incident reports efficiently. Utilizing Security Copilot's AI-powered data processing, security teams can immediately create incident reports with a click of a button in Microsoft 365 Defender.
 
 A comprehensive and clear incident report is an essential reference for security teams and security operations management. However, writing a comprehensive report with the important details present can be a time-consuming task for security operations teams as it involves collecting, organizing, and summarizing incident information from multiple sources. Security teams can now instantly create an extensive incident report within the portal.
 
@@ -45,7 +45,7 @@ This guide outlines what to expect and how to access the incident report creatio
 
 ## Technical requirements
 
-[Learn about the Security Copilot requirements](/copilot/microsoft-365-copilot-requirements.md).
+[Learn about the Security Copilot requirements](/security-copilot/microsoft-365-copilot-requirements).
 
 ## Create an incident report
 
@@ -92,8 +92,8 @@ Here are some recommendations to consider to ensure that Security Copilot genera
 
 ## See also
 
-- [Security Copilot Early Access Program FAQs](/security-copilot/faq-security-copilot.md)
-- [Get started with Security Copilot](/security-copilot/get-started-security-copilot.md)
-- [Learn about other Security Copilot embedded experiences](/security-copilot/experiences-security-copilot.md)
+- [Security Copilot Early Access Program FAQs](/security-copilot/faq-security-copilot)
+- [Get started with Security Copilot](/security-copilot/get-started-security-copilot)
+- [Learn about other Security Copilot embedded experiences](/security-copilot/experiences-security-copilot)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
