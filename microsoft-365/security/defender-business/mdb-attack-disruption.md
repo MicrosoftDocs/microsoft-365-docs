@@ -42,6 +42,11 @@ Automated response actions include:
 - Containing a user account by disconnecting current user connections at the device level
 - Disabling a user account by automatically suspending the account in Azure Active Directory
 
+> [!IMPORTANT]
+> - To view information about a detected advanced attack, you must have the Security Reader, Security Administrator, or Global Administrator role assigned.
+> - To take remediation actions, release a contained device/user, or re-enable a user account, you must have either the Security Administrator or Global Administrator role assigned.
+> - See [Security roles and permissions in Defender for Business](mdb-roles-permissions.md).
+
 ## View details about an attack in the Microsoft 365 Defender portal
 
 1. In the Microsoft 365 Defender portal, go to **Incidents**.
