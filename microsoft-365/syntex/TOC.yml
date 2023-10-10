@@ -188,9 +188,9 @@
         - name: Admin setup 
           href: esignature-setup.md
         - name: Create a signature request 
-          href: esignature-create-request.md
+          href: esignature-send-requests.md
         - name: Review and sign a request 
-          href: esignature-review-sign-request.md
+          href: esignature-review-sign-requests.md
 
     - name: Optical character recognition 
       items: 
