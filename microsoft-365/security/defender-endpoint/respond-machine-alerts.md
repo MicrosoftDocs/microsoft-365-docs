@@ -339,7 +339,34 @@ Currently, containing users is only available automatically by using automatic a
 
 After a user is contained, you can view the action in this History view of the Action Center. Here, you can see when the action occurred, and which users in your organization were contained:
 
-:::image type="content" source="/../../media/defender-endpoint/user-contain-action-center.png" alt-text="View the user contain action in the action center" lightbox="/../../media/defender-endpoint/user-contain-action-center.png":::
+:::image type="content" source="../../media/defender-endpoint/user-contain-action-center.png" alt-text="View the user contain action in the action center" lightbox="../../media/defender-endpoint/user-contain-action-center.png":::
+
+:::image type="content" source="../../media/defender-endpoint/user-contain-incident.png" alt-text="View of a user contain incident" lightbox="../../media/defender-endpoint/user-contain-incident.png":::
+
+Furthermore, after an identity is considered “contained", that user will be blocked by Defender for Endpoint and cannot perform any malicious lateral movement or remote encryption on or to any supported Defender for Endpoint onboarded device. These blocks will show up as alerts to help you quickly see the devices the compromised user attempted access and potential attack techniques:
+
+:::image type="content" source="../../media/defender-endpoint/user-contain-lateral-move-block.png" alt-text="Shows a user contain lateral movement block event" lightbox="../../media/defender-endpoint/user-contain-lateral-move-block.png":::
+
+### Undo Contain user actions
+
+You can release the blocks and containment on a user at any time:
+
+1. Select the **Contain User** action in the **Action Center**. In the side pane select **Undo**
+2. Select the user from either the user inventory, Incident page side pane or alert side pane and select **Undo**
+
+This action will restore this user’s connection to the network.
+
+:::image type="content" source="../../media/defender-endpoint/undo-user-contain-action.png" alt-text="Shows a user contain lateral movement block event" lightbox="../../media/defender-endpoint/undo-user-contain-action.png":::
+
+### Investigation capabilities with Contain User
+
+After a user is contained, you can investigate the potential threat by viewing the blocked actions by the compromised user. In the Device timeline view, you can see information about specific events, including protocol and interface granularity, and the relevant MITRE Technique associated it.
+
+:::image type="content" source="../../media/defender-endpoint/event-blocked by-contained-user.png" alt-text="Shows blocked event details for a contained users" lightbox="../../media/defender-endpoint/event-blocked by-contained-user.png":::
+
+In addition, you can expand the investigation by using Advanced Hunting. Look for any “Action Type” starting with “Contain” in the “DeviceEvents” table. Then, you can view all the different singular blocking events in relation to Contain User in your tenant, dive deeper into the context of each block, and extract the different entities and techniques associated with those events.
+
+:::image type="content" source="../../media/defender-endpoint/user-contain-advanced-hunting.png" alt-text="Shows blocked event details for a contained users" lightbox="../../media/defender-endpoint/user-contain-advanced-hunting.png":::
 
 ## Consult a threat expert
 
