@@ -152,6 +152,5 @@ Contact our small business support experts who can help you change your business
 
 ## Related articles
 
-[Set up Microsoft 365 Business Standard with a new or existing domain](../setup/setup-business-standard.md)
-
+[Set up Microsoft 365 Business Standard with a new or existing domain](../setup/setup-business-standard.md)\
 [Invite users to Microsoft 365 Business Standard](user-invite-business-standard.md)
