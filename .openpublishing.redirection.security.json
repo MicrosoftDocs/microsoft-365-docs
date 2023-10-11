@@ -198,7 +198,7 @@
       {
          "source_path":"microsoft-365/security/office-365-security/fighting-junk-email.md",
          "redirect_url":"/microsoft-365/security/office-365-security/anti-spam-protection-about",
-         "redirect_document_id":false
+         "redirect_document_id":true
       },
       {
          "source_path":"microsoft-365/security/office-365-security/prevent-email-from-being-marked-as-spam.md",
@@ -2193,7 +2193,7 @@
       {
          "source_path":"microsoft-365/security/office-365-security/bulk-complaint-level-values.md",
          "redirect_url":"/microsoft-365/security/office-365-security/anti-spam-protection-about#bulk-complaint-threshold-bcl-in-anti-spam-policies",
-         "redirect_document_id":true
+         "redirect_document_id":false
       },
       {
          "source_path":"microsoft-365/security/office-365-security/advanced-spam-filtering-asf-options.md",
@@ -2208,7 +2208,7 @@
       {
          "source_path":"microsoft-365/security/office-365-security/anti-spam-protection.md",
          "redirect_url":"/microsoft-365/security/office-365-security/anti-spam-protection-about",
-         "redirect_document_id":true
+         "redirect_document_id":false
       },
       {
          "source_path":"microsoft-365/security/office-365-security/spam-confidence-levels.md",
