@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 04/22/2021
+ms.date: 10/11/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -36,10 +36,8 @@ There are a couple of ways to get started:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX]
 
-
 > [!IMPORTANT]
 > Microsoft 365 Business Standard subscriptions are for commercial use and are intended for business and enterprise customers.
-
 
 ## Sign up steps
 
