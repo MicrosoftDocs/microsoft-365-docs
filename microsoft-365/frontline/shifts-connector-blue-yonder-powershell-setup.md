@@ -44,7 +44,7 @@ With Blue Yonder WFM as the system of record, your frontline workers can efficie
 
 ### Prerequisites
 
-Before you get started, make sure you have all the following prerequisites:
+Before you get started, make sure you meet all the following prerequisites:
 
 [!INCLUDE [shifts-connector-blue-yonder-prerequisites](includes/shifts-connector-blue-yonder-prerequisites.md)]
 

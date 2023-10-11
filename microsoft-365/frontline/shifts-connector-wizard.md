@@ -53,7 +53,11 @@ With Blue Yonder WFM as your system of record, your frontline workers can effici
 
 Before you get started, make sure you meet all the following prerequisites.
 
+- You're a Microsoft 365 global admin.
+
 [!INCLUDE [shifts-connector-blue-yonder-prerequisites](includes/shifts-connector-blue-yonder-prerequisites.md)]
+
+- Make sure the teams you want to map don't have any schedules in Shifts or Blue Yonder WFM. If a team has an existing schedule, follow the steps in the next section to [remove schedule entities from the team](#remove-schedule-entities-from-teams-you-want-to-map) before you map a WFM instance to it. Otherwise, you'll see duplicate shifts.
 
 - You're a Microsoft 365 global admin.
 
