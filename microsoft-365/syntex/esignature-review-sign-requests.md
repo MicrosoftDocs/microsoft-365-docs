@@ -26,7 +26,7 @@ When a signature request is created, an email notification is sent to the recipi
 
 ## Access the document to be signed
 
-When you receive the email notification, select **View signed document** in the email to begin the signing process.
+When you receive the email notification, select **View request** in the email to begin the signing process.
 
 ![Screenshot of an email notification showing the View request button.](../media/content-understanding/esignature-notification-view-request.png)
 
