@@ -5,7 +5,7 @@ ms.service: microsoft-365-security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 09/13/2023
+ms.date: 10/11/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -32,6 +32,7 @@ There are some minimum requirements for onboarding devices to the Defender for E
 >
 > - Learn about the latest enhancements in Defender for Endpoint: [Defender for Endpoint Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced).
 > - Defender for Endpoint demonstrated industry-leading optics and detection capabilities in the recent MITRE evaluation. Read: [Insights from the MITRE ATT&CK-based evaluation](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
+> - If you're looking for endpoint protection for small and medium-sized businesses, see [Microsoft Defender for Business](../defender-business/mdb-overview.md) and [Defender for Business requirements](../defender-business/mdb-requirements.md).
 
 ## Licensing requirements
 
