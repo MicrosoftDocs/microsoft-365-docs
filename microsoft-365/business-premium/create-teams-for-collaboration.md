@@ -7,10 +7,9 @@ author: denisebmsft
 manager: dansimp
 ms.audience: Admin
 ms.topic: how-to
-ms.service: microsoft-365-security
-ms.subservice: m365bp
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
-ms.date: 09/15/2022
+ms.date: 10/10/2023
 ms.collection: 
 - Adm_O365
 - M365-subscription-management 
