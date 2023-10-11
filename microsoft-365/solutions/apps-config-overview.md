@@ -49,10 +49,10 @@ Before you can configure and manage apps with Microsoft Intune, you must follow 
 > If you're new to Intune, start with the [Microsoft Intune free trial](/mem/intune/fundamentals/free-trial-sign-up). Trying out Intune is free for 30 days. When you complete the sign-up process, you'll have a new tenant that you can use to evaluate Intune. A tenant is a dedicated instance of [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) (Azure AD) where your subscription to Intune is hosted. You can then configure the tenant, which involves many capabilities that you can use to protect your organization. One of those involves adding and configuring apps for Intune.
 
 Follow these steps if you haven't already set up Intune and added the apps you need to manage:
-1. Set up and [deploy Intune](/microsoft-365/solutions/apps-guide-overview?toc=%2Fmem%2Fintune%2Ftoc.json&bc=%2Fmem%2Fintune%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide#deploying-intune&preserve-view=true)
-2. Understand [Mobile Application Management configurations](/microsoft-365/solutions/apps-guide-overview?toc=%2Fmem%2Fintune%2Ftoc.json&bc=%2Fmem%2Fintune%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide#mobile-application-management-configurations&preserve-view=true)
-3. [Understand app types](/microsoft-365/solutions/apps-guide-overview?toc=%2Fmem%2Fintune%2Ftoc.json&bc=%2Fmem%2Fintune%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide#understand-app-types&preserve-view=true)
-4. [Add apps to Intune](/microsoft-365/solutions/apps-add-overview?toc=%2Fmem%2Fintune%2Ftoc.json&bc=%2Fmem%2Fintune%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide&preserve-view=true)
+1. Set up and [deploy Intune](/microsoft-365/solutions/apps-guide-overview#deploying-intune&preserve-view=true)
+2. Understand [Mobile Application Management configurations](/microsoft-365/solutions/apps-guide-overview#mobile-application-management-configurations&preserve-view=true)
+3. [Understand app types](/microsoft-365/solutions/apps-guide-overview#understand-app-types&preserve-view=true)
+4. [Add apps to Intune](/microsoft-365/solutions/apps-add-overview)
 
 > [!IMPORTANT]
 > To use Microsoft Intune beyond the free trial, you'll need to acquire a license from Microsoft. For more information about licenses that include Microsoft Intune, see [Microsoft Intune licensing](/mem/intune/fundamentals/licenses).
