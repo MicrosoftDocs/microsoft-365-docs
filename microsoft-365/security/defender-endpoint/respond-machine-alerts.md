@@ -321,11 +321,25 @@ You'll be able to stop containing a device at any time.
 
 2. Select **Release from containment** from the action menu. This action will restore this device's connection to the network.
 
-## Contain users from the network
+## Contain user from the network
 
 > [!NOTE]
 > Contain User capability is currently available in public preview. To learn more about new preview features in Microsoft 365 Defender preview, see [Preview features in Microsoft 365 Defender](../defender/preview.md).
 
+When an identity in your network might be compromised, you must prevent that identity from accessing the network and different endpoints. Defender for Endpoint can “contain” an identity, blocking it from access, and helping prevent attacks-- specifically, ransomware. When an identity is contained, any supported Microsoft Defender for Endpoint onboarded device will block incoming traffic in specific protocols related to attacks (network logons, RPC, SMB, RDP) while enabling legitimate traffic. This action can significantly help to reduce the impact of an attack. When an identity is contained, security operations analysts have extra time to locate, identify and remediate the threat to the compromised identity.
+
+> [!NOTE]
+> Blocking incoming communication with a “contained” user is supported on onboarded Microsoft Defender for Endpoint Windows 10 and 11 devices (Sense version 8740 and higher), Windows Server 2019+ devices and Windows Servers 2012R2 and 2016 with the modern agent.
+
+### How to contain a user
+
+Currently, containing users is only available automatically by using automatic attack disruption. When Microsoft detects a user as being compromised a “Contain User” policy is automatically set.
+
+### View the Contain user actions
+
+After a user is contained, you can view the action in this History view of the Action Center. Here, you can see when the action occurred, and which users in your organization were contained:
+
+:::image type="content" source="/../../media/defender-endpoint/user-contain-action-center.png" alt-text="View the user contain action in the action center" lightbox="/../../media/defender-endpoint/user-contain-action-center.png":::
 
 ## Consult a threat expert
 
