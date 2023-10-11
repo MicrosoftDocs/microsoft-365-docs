@@ -66,8 +66,8 @@ Catalina (10.15) in December 2022.
 | Engine version:    | **1.1.23070.1002**         |
 | Signature version: | **1.399.384.0**            |
 
-- [[device control](mac-device-control-overview)] Detailed status with `mdatp health --details device_control`
-- [[device control](mac-device-control-overview)] `mdatp config device-control policy` to [set policy](mac-device-control-manual) on a non-managed machine
+- [[device control](mac-device-control-overview.md)] Detailed status with `mdatp health --details device_control`
+- [[device control](mac-device-control-overview.md)] `mdatp config device-control policy` to [set policy](mac-device-control-manual.md) on a non-managed machine
 - Bug and performance fixes
 
 ### Sep-2023 (Build: 101.23072.0025 | Release version: 20.123072.25.0)
