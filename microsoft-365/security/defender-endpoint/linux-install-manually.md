@@ -202,7 +202,7 @@ In order to preview new features and provide early feedback, it is recommended t
   ```
 
 - Install the Microsoft GPG public key:
-  - For Debain 12
+  - For Debian 12
   ```bash
   curl -sSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /usr/share/keyrings/microsoft-prod.gpg > /dev/null
   ```
