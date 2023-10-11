@@ -25,41 +25,42 @@ ms.date: 2/27/2023
 
 ## Overview
 
-The Shifts connector wizard in the Microsoft 365 admin center enables you to integrate the Shifts app in Microsoft Teams with your workforce management (WFM) system. Your frontline workers can seamlessly view and manage their schedules in your WFM system from within Shifts.
+The [Microsoft Teams Shifts connector for Blue Yonder](shifts-connectors.md#microsoft-teams-shifts-connector-for-blue-yonder) enables you to integrate Shifts with Blue Yonder Workforce Management (Blue Yonder WFM). Your frontline workers can seamlessly view and manage their schedules in Blue Yonder WFM from within Shifts.
 
-The wizard creates a connection to your Blue Yonder WFM system and a connection instance. This applies the sync settings and team mappings you choose. Sync settings determine the schedule information and what entities sync between Blue Yonder and Shifts. Team mappings define the sync relationship between your Blue Yonder instances and teams in Microsoft Teams.
+In this article, we walk you through how to run the Shifts connector wizard in the Microsoft 365 admin center to connect Shfits to Blue Yonder WFM.
 
-You can create one or more connection instances, each with different sync settings. For example, if your organization has multiple locations with different schedule requirements, create a connection instance with unique sync settings for each location. A Blue Yonder instance should only be mapped once to a Microsoft team at any given time. However, it's possible in the wizard to have different connection instances with the same mappings. This means that you can create connection instances with duplicated mappings.
+> [!NOTE]
+> If you prefer, you can use PowerShell to integrate Shifts with Blue Yonder WFM. To learn more, see [Use PowerShell to connect Shifts to Blue Yonder Workforce Management](shifts-connector-blue-yonder-powershell-setup.md).
 
-With Blue Yonder, your frontline workers can efficiently manage their schedules and availability in Shifts on their devices. Frontline managers can continue to use Blue Yonder to set up schedules.
+The wizard creates a connection to your Blue Yonder WFM system and a connection instance. A connection instance applies the sync settings and team mappings you choose.
+
+- Sync settings determine the schedule information and what entities sync between Blue Yonder WFM and Shifts.
+- Team mappings define the sync relationship between your Blue Yonder WFM instances and teams in Teams.
+
+You can create one or more connection instances, each with different sync settings. For example, if your organization has multiple locations with different schedule requirements, create a connection instance with unique sync settings for each location. A Blue Yonder WFM instance should only be mapped once to a team in Teams at any given time. However, it's possible in the wizard to have different connection instances with the same mappings. This means that you can create connection instances with duplicate mappings.
+
+With Blue Yonder WFM as your system of record, your frontline workers can efficiently manage their schedules and availability in Shifts on their devices. Frontline managers can continue to use Blue Yonder WFM to set up schedules.
 
 ### Terms used in this article
 
 |Term |Definition |
 |-----|-----------|
-|Connection |This is where you configure your Blue Yonder WFM details by providing your service account name, password, and service URLs. This enables access to all your WFM (workforce management) instances created in your Blue Yonder WFM system. |
-|Connection instance |This is where you configure: <br> - The synchronization settings that determine how and which schedule information syncs between Blue Yonder WFM and Shifts <br> - Team mappings to define the relationship between your WFM instances and teams in Microsoft Teams |
-|WFM instance | This term refers to a site within your Blue Yonder WFM system. |
+|Connection |A connection enables access to all WFM instances created in your Blue Yonder WFM system. To create a connection, you provide your Blue Yonder WFM details, which include your service account name, password, and service URLs. |
+|Connection instance |To create a connection instance, you configure the following settings: <ul><li>Sync settings that determine how and which schedule information syncs between Blue Yonder WFM and Shifts</li><li>Team mappings to define the relationship between your WFM instances and teams in Teams.</li></ul> |
+|WFM instance | This term refers to a site in your Blue Yonder WFM system. |
 
-## Integrate Shifts with Blue Yonder Workforce Management
+## Prerequisites
 
-The [Microsoft Teams Shifts connector for Blue Yonder](shifts-connectors.md#microsoft-teams-shifts-connector-for-blue-yonder) enables you to integrate Shifts with Blue Yonder Workforce Management (Blue Yonder WFM) to manage your schedules and keep them up to date. In this article, we walk you through how to run the wizard to set up a connection and connection instance to Blue Yonder WFM through the connector.
+Before you get started, make sure you gather the following information and complete all the following prerequisite tasks.
 
-> [!NOTE]
-> If you prefer, you can use PowerShell to integrate Shifts with Blue Yonder WFM. To learn more, see [Use PowerShell to connect Shifts to Blue Yonder Workforce Management](shifts-connector-blue-yonder-powershell-setup.md).
+- You're a Microsoft 365 global admin.
 
-### Prerequisites
+- You have Blue Yonder WFM version 2020.3, 2021.1, or 2021.2.
 
-Before you try the Shifts connector wizard, check that you meet all these prerequisites:
+    > [!NOTE]
+    > If you have Blue Yonder WFM 2020.3 or 2021.1, apply the 2020.3.0.4 or 2021.1.0.3 patch. This patch fixes an issue where users get a persistent error message in Shifts. It also fixes an issue that prevents users from updating their availability in Shifts.
 
--	Make sure you’re a Microsoft 365 global admin.
-
--	Make sure you have Blue Yonder WFM version 2020.3, 2021.1, or 2021.2.
-
-> [!NOTE]
-> If you have Blue Yonder WFM 2020.3 or 2021.1, apply the 2020.3.0.4 or 2021.1.0.3 patch. This patch fixes an issue where users get a persistent error message in Shifts. It also fixes an issue that prevents users from updating their availability in Shifts.
-
--	Know your Blue Yonder WFM Service account name, password and service URLs:
+- You know your Blue Yonder WFM service account name, password and service URLs:
     - Federated authentication URL
     - Cookie authentication URL
     - Employee self-service URL
@@ -69,28 +70,26 @@ Before you try the Shifts connector wizard, check that you meet all these prereq
 
     If you don't have all this information, contact Blue Yonder support. A Blue Yonder account is created at the root enterprise level by a Blue Yonder enterprise administrator. It must have API Access, Client Admin, Store Manager, and Worker access. The account and password are required to create a connection.
 
-
--   Make sure federated SSO authentication is enabled in your Blue Yonder WFM environment. Contact Blue Yonder support to make sure federated SSO is enabled. They'll need the following information:
+- Enable federated SSO authentication in your Blue Yonder WFM environment. Contact Blue Yonder support to make sure federated SSO is enabled. They'll need the following information:
     - federatedSSOValidationService: https://wfmconnector.teams.microsoft.com/api/v1/fedauth/{tenantId}/6A51B888-FF44-4FEA-82E1-839401E9CD74/authorize where {tenantId} is your tenantId
     - proxyHeader: X-MS-AuthToken
+- You have at least one team set up in Teams.
 
--	Make sure you have at least one team set up in Microsoft Teams.
+- Add a general account, what we call the Microsoft 365 system account, as team owner to all teams you want to map.
 
--	Make sure you’ve added a Microsoft 365 system account (not your personal user account) as team owner to all teams you want to map.
+    [Create this account in the Microsoft 365 admin center](/microsoft-365/admin/add-users/add-users) and assign it a Microsoft 365 license. Then, add the account as a team owner to all teams that you want to map. The Shifts connector uses this account when syncing Shifts changes from Blue Yonder WFM. We recommend you create an account specifically for this purpose and not use your personal user account.
 
-    You can [create this account in Microsoft 365](/microsoft-365/admin/add-users/add-users) and assign it a Microsoft 365 license. Then, add the account as a team owner to all teams that you want to map. The Shifts connector uses this account when syncing Shifts changes from Blue Yonder. We recommend you create an account specifically for this purpose and not use your personal user account.
+- Make sure the teams you want to map don't have any schedules in Shifts or Blue Yonder WFM. If a team has an existing schedule, follow the steps in the next section to [remove schedule entities from the team](#remove-schedule-entities-from-teams-you-want-to-map) before you map a WFM instance to it. Otherwise, you'll see duplicate shifts.
 
--  Make sure the teams you want to map don't have any schedules in Shifts or Blue Yonder. If a team has an existing schedule, follow the steps below to [remove schedule entities from the team](#remove-schedule-entities-from-teams-you-want-to-map) before you map a UKG Dimensions instance to it. Otherwise, you'll see duplicate shifts.
-
-## Remove schedule entities from teams you want to map
+### Remove schedule entities from teams you want to map
 <a name="remove_schedules"> </a>
 
 > [!NOTE]
-> Complete this step if you're mapping Blue Yonder WFM instances to existing teams that have schedule entities. If you're mapping to teams that don't have any schedules or if you're creating new teams to map to, you can skip this step.
+> Complete this step if you're mapping WFM instances to existing teams that have schedule entities. If you're mapping to teams that don't have any schedules or if you're creating new teams to map to, you can skip this step.
 
 Use PowerShell to remove schedule entities from teams.
 
-1. First, you'll need to install the PowerShell modules and get set up. Follow the steps to [set up your environment](shifts-connector-powershell-manage.md#set-up-your-environment)
+1. First, you'll need to install the PowerShell modules and get set up. Follow the steps to [set up your environment](shifts-connector-powershell-manage.md#set-up-your-environment).
 1. Run the following command:
 
     ```powershell
@@ -117,7 +116,7 @@ To learn more, see [Remove-CsTeamsShiftsScheduleRecord](/powershell/module/teams
 
 1. In the Connection settings pane, give your connection a unique name. It can't be longer than 100 characters or have any special characters.
 
-1. Enter your Blue Yonder WFM service account name and password and service URLs. If you don't know one or more of your connection details, contact your Blue Yonder WFM partner.
+1. Enter your Blue Yonder WFM service account name and password and service URLs. If you don't know one or more of your connection details, contact Blue Yonder support.
     :::image type="content" source="media/shifts-connector-wizard-connection-details.png" alt-text="Screenshot of the Connection details page of the wizard, showing connection settings." lightbox="media/shifts-connector-wizard-connection-details.png":::
 
 1. When you're done, select **Save connection**.
@@ -129,7 +128,7 @@ To learn more, see [Remove-CsTeamsShiftsScheduleRecord](/powershell/module/teams
 
 After you create a connection, you can set up one or more connection instances in that connection.
 
-You'll see all the connections you've created on your **Connector Management Console**. Under the connection where you want to create a new instance, select **Create instance**.
+The connections that you created  are listed on the Connector Management Console page. Under the connection where you want to create a new instance, select **Create instance**.
     :::image type="content" source="media/shifts-connector-wizard-by-create-instance.png" alt-text="Screenshot of the Connector Management Console, showing the button to create a new instance." lightbox="media/shifts-connector-wizard-by-create-instance.png":::
 
 #### Choose settings
