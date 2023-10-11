@@ -43,13 +43,13 @@ This guide outlines how to access the guided response capability of Security Cop
 
 ## Technical requirements
 
-[Learn about the requirements for Security Copilot](/security-copilot/microsoft-365-copilot-requirements).
+[Learn how you can get started with Security Copilot](/security-copilot/get-started-security-copilot).
 
 ## Use guided responses to resolve incidents
 
 Guided responses recommend actions in the following categories:
 
-- Triage - includes a recommended action to classify incidents as informational, true positive, or false positive. It also includes a recommended action to set alert classification.
+- Triage - includes a recommendation to classify incidents as informational, true positive, or false positive
 - Containment - includes recommended actions to contain an incident
 - Investigation - includes recommended actions for further investigation
 - Remediation - includes recommended response actions to apply to specific entities involved in an incident

@@ -40,9 +40,7 @@ This article provides an overview for users of the Security Copilot embedded exp
 
 ## Access Security Copilot in Microsoft 365 Defender
 
-To ensure that you have access to Security Copilot, see [Security Copilot purchase and licensing information](/security-copilot/faq-security-copilot). Once you have access to Security Copilot, you can access it in Microsoft 365 Defender.
-
-[Review information on how to get started with Security Copilot](/security-copilot/get-started-security-copilot).
+To ensure that you have access to Security Copilot, see the [Security Copilot purchase and licensing information](/security-copilot/faq-security-copilot). Once you have access to Security Copilot, the key capabilities discussed below become accessible in the Microsoft 365 Defender portal.
 
 ## Key features
 
@@ -89,7 +87,7 @@ All key features have an option for providing feedback. To provide feedback, per
 
 ## Microsoft 365 Defender plugin in Security Copilot
 
-Microsoft 365 Defender is one of the [Microsoft plugins](/security-copilot/manage-plugins.md#microsoft-plugins) that enable the Security Copilot platform to generate accurate and relevant information. Through the Microsoft 365 Defender plugin, the Security Copilot portal can provide more context to incidents and generate more accurate results.
+Microsoft 365 Defender is one of the [Microsoft plugins](/security-copilot/manage-plugins.md#microsoft-plugins) that enable the Security Copilot platform to generate accurate and relevant information. Through the Microsoft 365 Defender plugin, the Security Copilot portal can provide more context to incidents and generate more accurate results. The key features mentioned in this article are capabilities that are also available in the Security Copilot portal.
 
 You can learn more about plugins implemented in the Security Copilot portal in [Manage plugins in Security Copilot](/security-copilot/manage-plugins). Additionally, you can learn more about the embedded experiences in other Microsoft security products in [Microsoft Security Copilot experiences](/security-copilot/experiences-security-copilot)
 
@@ -103,6 +101,7 @@ You can learn more about plugins implemented in the Security Copilot portal in [
 
 ## See also
 
+- [Get started with Security Copilot](/security-copilot/get-started-security-copilot)
 - [Privacy and data security in Security Copilot](/security-copilot/privacy-data-security)
 - [Responsible AI FAQs](/security-copilot/responsible-ai-overview-security-copilot)
 
