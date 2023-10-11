@@ -152,16 +152,18 @@
       items: 
        - name: Overview
          href: incident-response-overview.md
-       - name: Investigate with Security Copilot
+       - name: Investigate and respond with Security Copilot
          items:
               - name: Summarize incidents
                 href: security-copilot-m365d-incident-summary.md
               - name: Analyze scripts and codes
                 href: security-copilot-m365d-script-analysis.md
-              - name: Create incident reports
-                href: security-copilot-m365d-create-incident-report.md
               - name: Use guided responses
-                href: security-copilot-m365d-guided-response.md                                                   
+                href: security-copilot-m365d-guided-response.md
+              - name: Generate KQL queries
+                href: advanced-hunting-security-copilot.md   
+              - name: Create incident reports
+                href: security-copilot-m365d-create-incident-report.md                                                                   
        - name: Respond to incidents
          items: 
               - name: Overview
@@ -247,9 +249,7 @@
              - name: Overview
                href: advanced-hunting-overview.md
              - name: Guided and advanced modes
-               href: advanced-hunting-modes.md 
-             - name: Generate queries with Security Copilot
-               href: advanced-hunting-security-copilot.md                             
+               href: advanced-hunting-modes.md                        
              - name: Build queries using guided mode 
                items: 
                  - name: Get started with query builder
