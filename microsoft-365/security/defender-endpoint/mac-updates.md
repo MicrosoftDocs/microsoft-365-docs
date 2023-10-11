@@ -85,6 +85,8 @@ The `Current` channel contains the most stable version of the product.
 
 
 
+
+
 ****
 
 |Section|Value|
@@ -109,6 +111,8 @@ Change how often MAU searches for updates.
 
 
 
+
+
 ****
 
 |Section|Value|
@@ -124,6 +128,8 @@ Change how often MAU searches for updates.
 
 Change how MAU searches for updates.
 <br>
+
+
 
 
 
@@ -145,6 +151,8 @@ Change whether local users are able to click the "Check for Updates" option in t
 
 
 
+
+
 ****
 
 |Section|Value|
@@ -159,6 +167,8 @@ Change whether local users are able to click the "Check for Updates" option in t
 
 Set to true to make the "Join the Office Insider Program..." checkbox unavailable / greyed out to users.
 <br>
+
+
 
 
 
