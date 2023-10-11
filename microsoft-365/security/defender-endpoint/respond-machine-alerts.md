@@ -324,30 +324,28 @@ You'll be able to stop containing a device at any time.
 ## Contain user from the network
 
 > [!NOTE]
-> Contain User capability is currently available in public preview. To learn more about new preview features in Microsoft 365 Defender preview, see [Preview features in Microsoft 365 Defender](../defender/preview.md).
+> Contain user capability is currently available in public preview. To learn more about new preview features in Microsoft 365 Defender preview, see [Preview features in Microsoft 365 Defender](../defender/preview.md).
 
 When an identity in your network might be compromised, you must prevent that identity from accessing the network and different endpoints. Defender for Endpoint can “contain” an identity, blocking it from access, and helping prevent attacks-- specifically, ransomware. When an identity is contained, any supported Microsoft Defender for Endpoint onboarded device will block incoming traffic in specific protocols related to attacks (network logons, RPC, SMB, RDP) while enabling legitimate traffic. This action can significantly help to reduce the impact of an attack. When an identity is contained, security operations analysts have extra time to locate, identify and remediate the threat to the compromised identity.
 
 > [!NOTE]
-> Blocking incoming communication with a “contained” user is supported on onboarded Microsoft Defender for Endpoint Windows 10 and 11 devices (Sense version 8740 and higher), Windows Server 2019+ devices and Windows Servers 2012R2 and 2016 with the modern agent.
+> Blocking incoming communication with a “contained” user is supported on onboarded Microsoft Defender for Endpoint Windows 10 and 11 devices (Sense version 8740 and higher), Windows Server 2019+ devices, and Windows Servers 2012R2 and 2016 with the modern agent.
 
 ### How to contain a user
 
 Currently, containing users is only available automatically by using automatic attack disruption. When Microsoft detects a user as being compromised a “Contain User” policy is automatically set.
 
-### View the Contain user actions
+### View the contain user actions
 
 After a user is contained, you can view the action in this History view of the Action Center. Here, you can see when the action occurred, and which users in your organization were contained:
 
 :::image type="content" source="../../media/defender-endpoint/user-contain-action-center.png" alt-text="View the user contain action in the action center" lightbox="../../media/defender-endpoint/user-contain-action-center.png":::
 
-:::image type="content" source="../../media/defender-endpoint/user-contain-incident.png" alt-text="View of a user contain incident" lightbox="../../media/defender-endpoint/user-contain-incident.png":::
-
 Furthermore, after an identity is considered “contained", that user will be blocked by Defender for Endpoint and cannot perform any malicious lateral movement or remote encryption on or to any supported Defender for Endpoint onboarded device. These blocks will show up as alerts to help you quickly see the devices the compromised user attempted access and potential attack techniques:
 
 :::image type="content" source="../../media/defender-endpoint/user-contain-lateral-move-block.png" alt-text="Shows a user contain lateral movement block event" lightbox="../../media/defender-endpoint/user-contain-lateral-move-block.png":::
 
-### Undo Contain user actions
+### Undo contain user actions
 
 You can release the blocks and containment on a user at any time:
 
