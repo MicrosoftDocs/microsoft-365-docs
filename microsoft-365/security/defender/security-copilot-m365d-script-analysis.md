@@ -48,7 +48,7 @@ This guide describes what the script analysis capability is and how it works, in
 
 ## Technical requirements
 
-[Learn about the requirements for Security Copilot to get started](/security-copilot/get-started-security-copilot).
+[Learn how you can get started with Security Copilot](/security-copilot/get-started-security-copilot).
 
 ## Analyze a script or code
 
