@@ -51,7 +51,9 @@ With Blue Yonder WFM as your system of record, your frontline workers can effici
 
 ## Prerequisites
 
-Before you get started, make sure you gather the following information and complete all the following prerequisite tasks.
+Before you get started, make sure you meet all the following prerequisites.
+
+[!INCLUDE [shifts-connector-blue-yonder-prerequisites](includes/shifts-connector-blue-yonder-prerequisites.md)]
 
 - You're a Microsoft 365 global admin.
 

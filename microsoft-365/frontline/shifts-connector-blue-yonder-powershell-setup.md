@@ -44,7 +44,9 @@ With Blue Yonder WFM as the system of record, your frontline workers can efficie
 
 ### Prerequisites
 
-[!INCLUDE [shifts-connector-prerequisites](includes/shifts-connector-prerequisites.md)]
+Before you get started, make sure you have all the following prerequisites:
+
+[!INCLUDE [shifts-connector-blue-yonder-prerequisites](includes/shifts-connector-blue-yonder-prerequisites.md)]
 
 ### Admin role to manage the connector using PowerShell
 
