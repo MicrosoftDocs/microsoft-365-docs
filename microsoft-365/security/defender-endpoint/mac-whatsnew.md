@@ -55,8 +55,8 @@ Microsoft Defender supports macOS Sonoma (14.0) in the current Defender release.
 **macOS Deprecation**
 
 Microsoft Defender for Endpoint no longer supports these macOS as Apple ended support for:
-Big Sur (11) in December 2023.
-Catalina (10.15) in December 2022.
+- Big Sur (11) in December 2023.
+- Catalina (10.15) in December 2022.
 
 ### Oct-2023 (Build: 101.23082.0018  | Release version: 20.123082.18.0)
 
