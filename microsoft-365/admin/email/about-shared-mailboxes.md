@@ -41,7 +41,7 @@ Before you [create a shared mailbox](create-a-shared-mailbox.md), here are some 
 > - The shared mailbox has more than 50 GB of storage in use.
 > - The shared mailbox uses in-place archiving.
 > - The shared mailbox is placed on litigation hold.
-
+>
 > For step-by-step instructions on how to assign licenses, see [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users).
 
 - **User permissions:** You need to give users permissions (membership) to use the shared mailbox. Only people inside your organization can use a shared mailbox.
