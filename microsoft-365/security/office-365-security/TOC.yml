@@ -126,6 +126,8 @@
            href: preset-security-policies.md
          - name: Recommended settings for configuring EOP and Defender for Office 365 Security
            href: recommended-settings-for-eop-and-office365.md
+         - name: Configuration analyzer for protection policies
+           href: configuration-analyzer-for-security-policies.md
          - name: Anti-malware in EOP
            items:
            - name: Anti-malware protection
@@ -175,7 +177,7 @@
            - name: Anti-spoofing protection FAQ
              href: anti-phishing-protection-spoofing-faq.yml
            - name: How EOP validates the From address
-             href: anti-phishing-from-email-address-validation.md    
+             href: anti-phishing-from-email-address-validation.md
            - name: Tune anti-phishing protection
              href: anti-phishing-protection-tuning.md
            - name: Spoof intelligence insight

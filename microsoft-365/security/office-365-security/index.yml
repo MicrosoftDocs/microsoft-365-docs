@@ -14,7 +14,7 @@ metadata:
   ms.custom: intro-hub-or-landing
   author: mjcaparas #Required; your GitHub user alias, with correct capitalization.
   ms.author: macapara #Required; microsoft alias of author; optional team alias.
-  ms.date: 09/15/2022
+  ms.date: 10/10/2023
   ms.localizationpriority: high
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -27,10 +27,14 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Office 365 Security overview
-            url:  defender-for-office-365.md
-          - text: Set up with Preset security policies in EOP and Defender for Office 365
-            url: preset-security-policies.md
+          - text: Microsoft Defender for Office 365 overview
+            url: mdo-about.md
+          - text: Exchange Online Protection overview
+            url: eop-about.md
+          - text: Defender for Office 365 security comparison
+            url: mdo-security-comparison.md
+          - text: What's new in Defender for Office 365
+            url: defender-for-office-365-whats-new.md
   # Card
   - title: Getting started with Defender for Office 365
     linkLists:
@@ -38,10 +42,7 @@ landingContent:
         links:
           - text: Get started with Microsoft Defender for Office 365
             url: mdo-deployment-guide.md
-          - text: Preset security policies in EOP and Microsoft Defender for Office 365
-            url: preset-security-policies.md
-          - text: What's new in Microsoft Defender for Office 365
-            url: defender-for-office-365-whats-new.md
+
   # Card
   - title: Evaluate Defender for Office 365
     linkLists:
@@ -63,12 +64,12 @@ landingContent:
           - text: Use DMARC to validate email
             url: email-authentication-dmarc-configure.md
    # Card
-  - title: Set up Exchange Online Protection
+  - title: Set up EOP and Defender for Office 365
     linkLists:
       - linkListType: overview
         links:
-          - text: Exchange Online Protection overview
-            url: eop-about.md
+          - text: Preset security policies in EOP and Microsoft Defender for Office 365
+            url: preset-security-policies.md
           - text: Recommended settings for EOP and Microsoft Defender for Office 365 security for set up
             url: recommended-settings-for-eop-and-office365.md
    # Card
@@ -76,8 +77,6 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Configure your Microsoft 365 tenant for increased security
-            url: tenant-wide-setup-for-increased-security.md
           - text: Configuration analyzer in EOP and Defender for Office 365
             url: configuration-analyzer-for-security-policies.md
           - text: Gain insights through Attack simulation training
@@ -100,29 +99,31 @@ landingContent:
         links:
           - text: Views in Threat Explorer and real-time detections
             url: threat-explorer-views.md
-          - text: Campaign Views in Microsoft Defender for Office 365
+          - text: Campaign Views in Defender for Office 365
             url: campaigns.md
-          - text: Investigate malicious email that was delivered in Office 365
+          - text: Investigate malicious email that was delivered in Microsoft 365
             url: investigate-malicious-email-that-was-delivered.md
-          - text: View Defender for Office 365 reports
+          - text: Email security reports
+            url: reports-email-security.md
+          - text: Defender for Office 365 reports
             url: reports-defender-for-office-365.md
       # Card
   - title: Investigate in EOP
     linkLists:
       - linkListType: overview
         links:
-          - text: Reporting and message trace in EOP
+          - text: Email security reports
+            url: reports-email-security.md
+          - text: Message trace
             url: message-trace-defender-portal.md
-          - text: View the admin audit log
-            url: /exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log
        # Card
   - title: Respond
     linkLists:
       - linkListType: overview
         links:
-          - text: Remediate malicious email delivered in Office 365
+          - text: Remediate malicious email delivered in Microsoft 365
             url: remediate-malicious-email-delivered-office-365.md
-          - text: Respond to a Compromised Email Account
+          - text: Respond to a compromised email account
             url: responding-to-a-compromised-email-account.md
           - text: Remediate Outlook Rules and Custom Forms Injections Attacks
             url: detect-and-remediate-outlook-rules-forms-attack.md
