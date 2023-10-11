@@ -115,7 +115,7 @@ To learn more about litigation hold, see [Create a Litigation Hold](../../compli
 
 2. Select the shared mailbox you want to edit, then select **Members** > **Customize permissions**.
 
-Select Edit next to the permission you want to change for a member.
+   Select Edit next to the permission you want to change for a member.
 
 3. Do one of the following:
    - To give that permission to an additional member, select **Add permissions**, search for or select a member to add, and then select **Save**.
