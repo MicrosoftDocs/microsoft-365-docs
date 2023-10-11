@@ -37,16 +37,16 @@ ms.date: 12/18/2020
 
 Microsoft regularly publishes software updates to improve performance, security, and to deliver new features.
 
-To update Microsoft Defender for Endpoint on macOS, a program named Microsoft AutoUpdate (MAU) is used. MAU checks updates periodically, and automatically downloads and installs them.
-
-:::image type="content" source="images/MDATP-34-MAU.png" alt-text="MAU" lightbox="images/MDATP-34-MAU.png":::
-
 > [!WARNING]
 > Each version of Defender for Endpoint on macOS is set to expire automatically after 6 months. While expired versions continue to receive security intelligence updates, install the latest version to get all available fixes and enhancements. <br>
 >To check the expiration date, run the following command:
 > ```bash
 > mdatp health --field product_expiration
 > ```
+
+To update Microsoft Defender for Endpoint on macOS, a program named Microsoft AutoUpdate (MAU) is used. MAU checks updates periodically, and automatically downloads and installs them.
+
+:::image type="content" source="images/MDATP-34-MAU.png" alt-text="MAU" lightbox="images/MDATP-34-MAU.png":::
 
 You can deploy preferences to configure how and when MAU checks for updates for the Macs in your organization.
 
@@ -84,6 +84,7 @@ The `Current` channel contains the most stable version of the product.
 <br>
 
 
+
 ****
 
 |Section|Value|
@@ -107,6 +108,7 @@ Change how often MAU searches for updates.
 <br>
 
 
+
 ****
 
 |Section|Value|
@@ -122,6 +124,7 @@ Change how often MAU searches for updates.
 
 Change how MAU searches for updates.
 <br>
+
 
 
 ****
@@ -141,6 +144,7 @@ Change whether local users are able to click the "Check for Updates" option in t
 <br>
 
 
+
 ****
 
 |Section|Value|
@@ -155,6 +159,7 @@ Change whether local users are able to click the "Check for Updates" option in t
 
 Set to true to make the "Join the Office Insider Program..." checkbox unavailable / greyed out to users.
 <br>
+
 
 
 ****
