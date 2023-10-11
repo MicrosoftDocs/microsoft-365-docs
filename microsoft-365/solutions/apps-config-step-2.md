@@ -16,12 +16,14 @@ keywords:
 
 # Step 2. Configure Microsoft Outlook
 
-Microsoft Intune makes it easy to provide Microsoft Outlook to your end users at your organization. Outlook provides secure email, calendar, contacts, and files. You can choose to add Microsoft Outlook to iOS/iPadOS or Android devices. Outlook for iOS/iPadOS and Android supports app settings that allow unified endpoint management (UEM) administrators (using tools such as Microsoft Intune) and Microsoft 365 or Office 365 administrators to customize the behavior of the app.
+Microsoft Intune makes it easy to provide Microsoft Outlook to your end-users at your organization. Outlook provides secure email, calendar, contacts, and files. You can choose to add app configuration policies for Microsoft Outlook to iOS/iPadOS or Android devices. Outlook for iOS/iPadOS and Android supports app settings that allow unified endpoint management (UEM) administrators (using tools such as Microsoft Intune) and Microsoft 365 or Office 365 administrators to customize the behavior of the app.
 
 > [!NOTE]
 > The methods described use Microsoft Intune as the unified endpoint management service and Exchange as the messaging platform.
 > 
 > If your organization uses a native email app or a different email service, you don't need to configure Microsoft Outlook.
+>
+> App configuration policies are targeted to the iOS/iPadOS and Android platforms. However some apps, such as M365 apps for Windows and later devices, have configuration options available when you add the app to Intune.
 
 Outlook app configuration can be delivered by selecting either of the following methods:
 1. **Managed devices** - Select the mobile device management (MDM) OS channel.

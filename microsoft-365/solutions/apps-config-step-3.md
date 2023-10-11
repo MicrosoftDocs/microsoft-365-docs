@@ -20,16 +20,18 @@ https://learn.microsoft.com/deployoffice/deploy-microsoft-365-apps-cloud
 
 # Step 3. Configure Microsoft 365 Apps
 
-[Microsoft 365 Apps in the enterprise](/deployoffice/about-microsoft-365-apps) is a suite of Microsoft Office apps that include Microsoft Word, Excel, PowerPoint, Teams, and more. Intune support Microsoft 365 Apps for Windows, iOS/iPadOS, macOS, and Android platforms. Microsoft Intune is the recommended way to assign M365 Apps to the devices and users at your organization. You commonly add M365 Apps to Intune as a group, but you can also add individual Microsoft 365 (M365) store apps for Windows, iOS/iPadOS, and Android.
+[Microsoft 365 Apps in the enterprise](/deployoffice/about-microsoft-365-apps) is a suite of Microsoft Office apps that include Microsoft Word, Excel, PowerPoint, Teams, and more. Microsoft Intune supports adding Microsoft 365 Apps on Windows, iOS/iPadOS, macOS, and Android platforms. Microsoft Intune is the recommended way to assign M365 Apps to the devices and users at your organization. You commonly add M365 Apps to Intune as a group, but you can also add individual Microsoft 365 (M365) store apps for Windows, iOS/iPadOS, and Android.
 
 > [!NOTE]
+> App configuration policies apply to iOS/iPadOS and Android platforms. However certain apps, such as Microsoft 365 apps, have configuration options available when adding the apps to Intune.
+>
 > There are no additional configuration options provided for **Microsoft 365 Apps for macOS**.
 
  ## Configure Microsoft 365 Apps for Windows 10 and later
 
 Microsoft 365 Apps is a version of Office that's available through Microsoft 365 plans. It includes the applications that you're familiar with, including Access, Excel, OneDrive, OneNote, Outlook, PowerPoint, Publisher, Skype for Business, Teams, and Word. You can use these applications to connect with Microsoft 365 services such as SharePoint Online, Exchange Online, and Skype for Business Online.
 
-Configuration for **Microsoft 365 Apps for Windows 10 and later** in Intune takes place when adding the app to Intune. App configuration policies in Intune only apply to either the iOS/iPadOS platform or the Android platform. 
+Configuration for **Microsoft 365 Apps for Windows 10 and later** in Intune takes place when adding the app to Intune. 
 
 > [!IMPORTANT]
 > Before you add Microsoft 365 Apps to Intune, you want to check the prerequisites for the end-user's devices at your organization. For more information, see the [Before you start]() section of [Add Microsoft 365 Apps to Windows 10/11 devices with Microsoft Intune](/mem/intune/apps/apps-add-office365).
@@ -44,7 +46,7 @@ To use the configuration designer, you must set **Configuration settings format*
 - App suite information
 - Properties
 
-:::image type="content" source="../media/configure-managed-apps/configure-managed-apps-02.png" alt-text="Screenshot: Add Microsoft 365 Apps - Configuration designer." border="false" :::
+:::image type="content" source="../media/configure-managed-apps/configure-managed-apps-10.png" alt-text="Screenshot: Add Microsoft 365 Apps for Windows 10 and later" border="false" :::
 
 ### Configure app suite
 
@@ -141,7 +143,7 @@ If your end-user's Android devices isn't managed, you can use the **Managed apps
 
 ## Policies for Office apps
 
-Intune provides [policies specifically for Microsoft Office apps](/mem/intune/apps/app-office-policies). You can select specific options to create mobile app management policies for Office mobile apps that connect to Microsoft 365 services. There are many policies for Office apps that you can add to Microsoft Intune and apply to groups of end users.
+Intune provides [policies specifically for Microsoft Office apps](/mem/intune/apps/app-office-policies). You can select specific options to create mobile app management policies for Office mobile apps that connect to Microsoft 365 services. There are many policies for Office apps that you can add to Microsoft Intune and apply to groups of end-users.
 
 You must meet the requirements to use policies for Office apps. For more information about requirements, see [Requirements for using the Office cloud policy service](/deployoffice/overview-office-cloud-policy-service#requirements-for-using-the-office-cloud-policy-service). App protection policies aren't supported for other apps that connect to on-premises Exchange or SharePoint services. For related information, see [Overview of the Office cloud policy service for Microsoft 365 Apps for enterprise](/deployoffice/overview-office-cloud-policy-service).
 

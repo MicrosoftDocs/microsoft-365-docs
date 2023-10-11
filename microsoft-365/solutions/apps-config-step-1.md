@@ -34,7 +34,7 @@ End-users can use the Company Portal to view details about their managed devices
 > [!IMPORTANT]
 > Before end-users can use the Company Portal, you must set up their work account. Your organization must also have a subscription to Microsoft Intune.
 
-Company Portal helps simplify the tasks your end-users need to do for work. For example, end-users may using the Company Portal to do the following:
+Company Portal helps simplify the tasks your end-users need to do for work. For example, end-users may use the Company Portal to do the following:
 
 - Enroll their device to access corporate resources, including Office, email, and OneDrive for Business.
 - Quickly reset the password to their work account if they should forget it
@@ -49,9 +49,9 @@ Company Portal helps simplify the tasks your end-users need to do for work. For 
 
 You can customize the end-user experience for the Company Portal. Customizing the Company Portal is different from configuring the Company Portal. Customization helps provide a familiar and helpful experience for your end-users. You can customize the Company Portal so that it supports specific details about your organization, such as the following:
 
-- Add branding information for the end-users at your organization
-- Add support information for your organization
-- Configure the Company Portal experience for enrollment, privacy, notifications, device categories, app sources, and self-service actions
+- [Add branding information](#add-branding-information) for the end-users at your organization
+- [Add support information](#add-support-information) for your organization
+- [Configure the Company Portal](#configure-the-company-portal) experience for enrollment, privacy, notifications, device categories, app sources, and self-service actions
 
 Navigate to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and select **Tenant Administration** > **Customization**, where you can either edit the default policy or create up to 10 group targeted policies. These settings apply to the Company Portal apps, Company Portal website, and Intune app on Android.
 
@@ -73,7 +73,7 @@ For more information, such as branding best practices and examples, see [Brandin
 
 Adding support information for your Intune tenant will also allow you to customize the end-users experience. By providing your organization's support information, your end-users can reach out with questions. This support information is displayed on **Support**, **Help & Support**, and **Helpdesk** pages across the end-user experience.
 
-Support fields in Intune, include the following:
+Support fields in Intune include the following:
 
 - Contact name
 - Phone number
@@ -87,6 +87,8 @@ For more information, see [Support Information](/mem/intune/apps/company-portal-
 ## Configure the Company Portal
 
 You can configure the Company Portal experience specifically for enrollment, privacy, notifications, device categories, app sources, and self-service actions. The Company Portal app can be configured for each of the device platforms that your organization uses.
+
+:::image type="content" source="../media/configure-managed-apps/configure-managed-apps-09.png" alt-text="Edit customization policy" border="false" :::
 
 ### Understand enrollment and the Company Portal
 

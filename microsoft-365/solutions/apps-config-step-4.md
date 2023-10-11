@@ -16,7 +16,7 @@ keywords:
 
 # Step 4. Configure Microsoft Edge
 
-Microsoft Edge provides AI-powered web browsing capabilities. Your organization's end-users can use Edge to safely view and work with your company resources. Using Intune, Edge can be added, configured, and assigned to Your organization's end-users. Using Intune, you can also assign Microsoft Edge to your end-users to support conditional access, app protection, and single sign-on at your organization. 
+Microsoft Edge provides AI-powered web browsing capabilities. Using Intune, Microsoft Edge can be added, configured, and assigned to end-users at your organization. Once added and assigned, end-users can use Microsoft Edge to safely view and work with your company resources. Using Intune, you can also assign Microsoft Edge to your end-users to support conditional access, app protection, and single sign-on at your organization.
 
 You can add Microsoft Edge to Intune as a store app (Android, iOS/iPadOS), a Built-In app (Android, iOS/iPadOS), a Windows 10 and later app, a macOS app, or a Managed Google Play store app. However, only the Microsoft Edge for the iOS/iPadOS and Android platforms support app configuration policies.
 
@@ -30,18 +30,18 @@ When you use Intune's app configuration policies, you create and assign configur
 There are two ways to deliver app configuration using Intune. The first way is to use the mobile device management (MDM) OS channel on enrolled devices for iOS and Android devices. The second way is to use the Mobile Application Management (MAM) channel. For more information, see [Delivery channels for app configuration policies](apps-config-overview.md#delivery-channels-for-app-configuration-policies). For more information about delivery channels, see [Managed App Configuration channel for iOS](https://developer.apple.com/library/content/samplecode/sc2279/Introduction/Intro.html) and [Android in the Enterprise channel for Android](https://developer.android.com/work/managed-configurations).
 
 > [!IMPORTANT]
-> When considering configuration setting for Microsoft Edge, also be aware that if you use the MAM channel you'll want to consider how you protect the app using app protection policies.
+> When considering configuration setting for Microsoft Edge, also be aware that if you use the MAM channel, you'll want to consider how you protect the app using [app protection policies](/mem/intune/apps/app-protection-policy) in Intune.
 
 ## Configuration settings
 
-You, as the admin, can customize the behavior of Microsoft Edge by creating and assigning an app configuration policy for Edge. When you create an app configuration policy for Microsoft Edge in Intune, you commonly set an app configuration key. Each configuration key is specifically named for the app. When you use a configuration key, you add the name of the configuration key, the value type, and the configuration value. 
+You, as the admin, can customize the behavior of Microsoft Edge by creating and assigning an app configuration policy for Edge. When you create an app configuration policy for Microsoft Edge in Intune, you commonly set one or more app configuration keys. Each configuration key is specifically named for the app. When you use a configuration key, you add the name of the configuration key, the value type, and the configuration value.
 
 > [!IMPORTANT]
 > App configuration keys are case sensitive. Use the proper casing to ensure the configuration takes effect.
 
 ### Common settings for Microsoft protected apps
 
-Microsoft Edge for iOS/iPadOSand Android supports the following configuration scenarios:
+Microsoft Edge for iOS/iPadOS and Android supports the following configuration scenarios:
 
 - Organization allowed accounts mode - Must have enrolled devices.
 
@@ -62,7 +62,6 @@ Microsoft Edge provides several different configuration settings that allow you 
 | com.microsoft.intune.mam.managedbrowser.PasswordSSO | You can enable Azure AD password   single sign-on (SSO) functionality offered by Azure Active Directory to allow   user access management to web applications that don't support identity   federation. For more information, see [Azure AD password single sign-on](/mem/intune/apps/manage-microsoft-edge#azure-ad-password-single-sign-on). |
 | com.microsoft.intune.mam.managedbrowser.defaultHTTPS | Microsoft Edge for iOS and   Android devices uses the HTTPS protocol handler when the user doesn't specify   the protocol in the URL. For more information, see [Default protocol   handler](/mem/intune/apps/manage-microsoft-edge#default-protocol-handler). |
 | com.microsoft.intune.mam.managedbrowser.disableShareUsageData | You can choose to enable data   collection so that the end-user browsing experience in Edge is personalized.   By default, end-users are promoted to share usage data. You can choose to   disable the prompt and share usage data. For more information, see [Disable   data sharing for   personalization](/mem/intune/apps/manage-microsoft-edge#disable-data-sharing-for-personalization). |
-| com.microsoft.intune.mam.managedbrowser.disableShareBrowsingHistory | Edge prompts end-users to   share browsing history to personalize their browsing experience. You can   choose to disable the prompt and share browsing history. For more   information, see  [Disable data sharing   for personalization](/mem/intune/apps/manage-microsoft-edge#disable-data-sharing-for-personalization). |
 | com.microsoft.intune.mam.managedbrowser.disabledFeatures | You can disable certain features   in Edge that are enabled by default. For example, you can disable password   prompts, InPrivate browsing, authfill, translator, readaloud, drop documents   and messages to devices), and developer tools. For more information, see   [      Disable specific   features](/mem/intune/apps/manage-microsoft-edge#disable-specific-features). |
 | com.microsoft.intune.mam.managedbrowser.disableImportPasswords | You can disable the import of   passwords from Password Manager. For more information, see [Disable import   passwords   feature](/mem/intune/apps/manage-microsoft-edge#disable-import-passwords-feature). |
 | com.microsoft.intune.mam.managedbrowser.cookieControlsMode | You can control whether sites   can store cookies for your end-users. You can choose to allow cookies, block   non-Microsoft cookies, block non-Microsoft cookies in InPrivate mode, or   block all cookies. Cookies contain data about end-user browsing preferences.   The are used to show you relevant content. |
@@ -73,6 +72,8 @@ Microsoft Edge provides several different configuration settings that allow you 
 | com.microsoft.intune.mam.managedbrowser.proxyPacUrl | You can choose a URL to a proxy   autoconfig (PAC) file to use with Microsoft Edge. **Note:** Use   **ProxySettings** instead. For more information, see   [ProxyPacUrl](/DeployEdge/microsoft-edge-policies#proxypacurl) and [Set a   proxy .pac file URL](/mem/intune/apps/manage-microsoft-edge#set-a-proxy-pac-file-url). |
 | com.microsoft.intune.mam.managedbrowser.proxyPacUrl.FailOpenEnabled | You can choose to block network   access with invalid or unavailable proxy autoconfig (PAC) script. By   default, network access is blocked. For more information, see [PAC   failed-open   support](/mem/intune/apps/manage-microsoft-edge#pac-failed-open-support) and   [ProxySettings](/DeployEdge/microsoft-edge-policies#proxysettings). |
 | com.microsoft.intune.mam.managedbrowser.PersistentWebsiteDataStore | For iOS devices, you can choose   the persistent website data store to use for an end-user in Edge. By default,   the personal account is used. However, you can choose to use the website data   store based on the first signed-in account, or choose to use the work or   school account first regardless of the sign-in order. For more information,   see [iOS Website data   store](/mem/intune/apps/manage-microsoft-edge#ios-website-data-store). |
+| com.microsoft.intune.mam.managedbrowser.SmartScreenEnabled  | Microsoft Defender SmartScreen is a feature that helps users avoid malicious sites and downloads. For more information, see [Microsoft Defender SmartScreen](/mem/intune/apps/manage-microsoft-edge#microsoft-defender-smartscreen). |
+| com.microsoft.intune.mam.managedbrowser.OpeningExternalApps  | When a web page requests to open an external app, users will see a pop-up asking them to open the external app or not. Organizations can manage the behavior. For more information, see [Block opening external apps](/mem/intune/apps/manage-microsoft-edge#block-opening-external-apps). |
 | com.microsoft.intune.mam.managedbrowser.Chat | You can choose to hide or show   the Bing button in the bottom bar of Edge as part of Bing Chat Enterprise.   For more information, see [Bing Chat   Enterprise](/mem/intune/apps/manage-microsoft-edge#bing-chat-enterprise). |
 | com.microsoft.intune.mam.managedbrowser.ChatPageContext | You can choose whether Bing Chat   Enterprise has access to page content. By default, this setting shows the   **Page context** and **Show quick chat panel** options under the Bing   co-pilot mode. For more information, see [Bing Chat Enterprise](/mem/intune/apps/manage-microsoft-edge#bing-chat-enterprise). |
 
@@ -91,13 +92,6 @@ Microsoft Edge provides several different configuration settings that allow you 
 | com.microsoft.intune.mam.managedbrowser.AppProxyRedirection | On iOS devices, you can enable   Azure AD App Proxy redirection scenarios. By default,  Azure AD App Proxy scenarios are prevented.   For more information, see [Manage proxy   configuration](/mem/intune/apps/manage-microsoft-edge#manage-proxy-configuration). |
 | com.microsoft.intune.mam.managedbrowser.NTLMSSOURLs | You can choose a list of   internal (intranet) websites that enable NTLM credential caching. The   end-users must enter credentials and successfully authenticate when   attempting to access a URL in the list. NTLM is a Windows network   authentication protocol. For more information, see [Manage NTLM single   sign-on   sites](/mem/intune/apps/manage-microsoft-edge#manage-ntlm-single-sign-on-sites). |
 | com.microsoft.intune.mam.managedbrowser.durationOfNTLMSSO | You can enter the number of   hours to cache credentials when using NTLM credential caching. NTLM is a   Windows network authentication protocol. For more information, see [Manage   NTLM single sign-on   sites](/mem/intune/apps/manage-microsoft-edge#manage-ntlm-single-sign-on-sites). |
-
-<!-- 
-https://learn.microsoft.com/en-us/mem/intune/apps/manage-microsoft-edge
-https://learn.microsoft.com/en-us/mem/intune/apps/app-configuration-policies-use-ios#allow-only-configured-organization-accounts-in-apps
-https://learn.microsoft.com/en-us/mem/intune/apps/app-configuration-policies-use-android#allow-only-configured-organization-accounts-in-apps
- 
--->
 
 For more information about configuring Microsoft Edge, see [Manage Microsoft Edge on iOS and Android with Intune](/mem/intune/apps/manage-microsoft-edge). 
 
