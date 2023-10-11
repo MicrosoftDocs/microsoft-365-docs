@@ -356,7 +356,7 @@ You can release the blocks and containment on a user at any time:
 
 This action will restore this user’s connection to the network.
 
-:::image type="content" source="../../media/defender-endpoint/undo-user-contain-action.png" alt-text="Shows a user contain lateral movement block event" lightbox="../../media/defender-endpoint/undo-user-contain-action.png":::
+:::image type="content" source="../../media/defender-endpoint/undo-user-contain-action.png" alt-text="Shows user contain undo option in the action center" lightbox="../../media/defender-endpoint/undo-user-contain-action.png":::
 
 ### Investigation capabilities with Contain User
 
@@ -366,7 +366,7 @@ After a user is contained, you can investigate the potential threat by viewing t
 
 In addition, you can expand the investigation by using Advanced Hunting. Look for any “Action Type” starting with “Contain” in the “DeviceEvents” table. Then, you can view all the different singular blocking events in relation to Contain User in your tenant, dive deeper into the context of each block, and extract the different entities and techniques associated with those events.
 
-:::image type="content" source="../../media/defender-endpoint/user-contain-advanced-hunting.png" alt-text="Shows blocked event details for a contained users" lightbox="../../media/defender-endpoint/user-contain-advanced-hunting.png":::
+:::image type="content" source="../../media/defender-endpoint/user-contain-advanced-hunting.png" alt-text="Shows advanced hunting for user contain events" lightbox="../../media/defender-endpoint/user-contain-advanced-hunting.png":::
 
 ## Consult a threat expert
 
