@@ -43,7 +43,7 @@ This guide outlines how to access the guided response capability of Security Cop
 
 ## Technical requirements
 
-[Learn about the requirements for Security Copilot](/security-copilot/get-started-security-copilot).
+[Learn how you can get started with Security Copilot](/security-copilot/get-started-security-copilot).
 
 ## Use guided responses to resolve incidents
 
