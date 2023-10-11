@@ -40,9 +40,7 @@ This article provides an overview for users of the Security Copilot embedded exp
 
 ## Access Security Copilot in Microsoft 365 Defender
 
-To ensure that you have access to Security Copilot, see [Security Copilot purchase and licensing information](/security-copilot/faq-security-copilot). Once you have access to Security Copilot, you can access it in Microsoft 365 Defender.
-
-[Review information on how to get started with Security Copilot](/security-copilot/get-started-security-copilot).
+To ensure that you have access to Security Copilot, see the [Security Copilot purchase and licensing information](/security-copilot/faq-security-copilot). Once you have access to Security Copilot, the key capabilities discussed below become accessible in the Microsoft 365 Defender portal.
 
 ## Key features
 
@@ -103,6 +101,7 @@ You can learn more about plugins implemented in the Security Copilot portal in [
 
 ## See also
 
+- [Get started with Security Copilot](/security-copilot/get-started-security-copilot)
 - [Privacy and data security in Security Copilot](/security-copilot/privacy-data-security)
 - [Responsible AI FAQs](/security-copilot/responsible-ai-overview-security-copilot)
 
