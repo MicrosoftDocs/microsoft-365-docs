@@ -72,18 +72,8 @@ Collect the following background information by answering the following question
 
 ### Recommended investigation flow
  
-Successfully applying app configuration settings for mobile apps relies on adding proper settings based on guidance from the publisher (developer) of the mobile app. Also, success also relies on the related [delivery channel](/microsoft-365/solutions/apps-config-overview#delivery-channels-for-app-configuration-policies) dependencies used when deploying app configuration settings.
+Successfully applying app configuration settings for mobile apps relies on adding proper settings based on guidance from the publisher (developer) of the mobile app. Also, success also relies on the related [delivery channel](/microsoft-365/solutions/apps-config-overview#delivery-channels-for-app-configuration-policies) dependencies used when deploying app configuration settings. See the steps below for more information.
 
-See list below for more details.
-
-To successfully investigate app configuration settings, use the following list of steps:
- 
-1. Verify you have met the prerequisites for deploying Intune app configuration settings. 
-2. Check status of your app config policy when using **Managed Devices** for communication channel.
-3. Check status of your app config policy when using **Managed Apps** for communication channel.
-4. Collect device data.
- 
- 
 #### Step 1: Verify prerequisites for deploying app configuration settings
  
 App configuration can be delivered either through the mobile device management (MDM) OS channel on enrolled devices (Managed App Configuration channel for iOS or the Android in the Enterprise channel for Android) or through the Mobile Application Management (MAM) channel. 
