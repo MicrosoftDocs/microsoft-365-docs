@@ -6,8 +6,7 @@ ms.author: deniseb
 manager: dansimp 
 ms.date: 05/08/2023
 ms.topic: conceptual
-ms.service: microsoft-365-security
-ms.subservice: m365bp
+ms.service: microsoft-365-business
 ms.localizationpriority: medium 
 ms.collection: 
 - M365-Campaigns

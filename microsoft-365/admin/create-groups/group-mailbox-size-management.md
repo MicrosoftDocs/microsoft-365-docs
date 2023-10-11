@@ -7,10 +7,10 @@ ms.topic: article
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 search.appverid: 
-ms.reviewer: 
+ms.reviewer: rahulnayak
 ms.date: 08/03/2022
-author: SerdarSoysal
-ms.author: serdars
+ms.author: mikeplum
+author: MikePlumleyMSFT
 ---
 
 # Microsoft 365 group mailbox size management 

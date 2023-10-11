@@ -58,7 +58,7 @@ conceptualContent:
             - url: frontline/index.yml
               itemType: get-started
               text: Microsoft 365 for frontline workers
-            - url: business/index.yml
+            - url: business-premium/index.yml
               itemType: get-started
               text: Microsoft 365 Business Premium
             - url: security/index.yml
@@ -128,7 +128,7 @@ conceptualContent:
             - url: solutions/data-privacy-protection.md
               itemType: how-to-guide
               text: Manage data privacy and data protection
-            - url: business-premium/index.md
+            - url: business-premium/m365bp-overview.md
               itemType: how-to-guide
               text: Microsoft 365 for smaller businesses and campaigns
             - url: solutions/productivity-illustrations.md

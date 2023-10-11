@@ -72,6 +72,20 @@ Users and groups are included in the same file. Depending on whether it's a user
 |5|TargetUserEmail|GroupName|M365GroupAlias|
 |6|UserType|GroupType|GroupType|
 
+
+>[!Important]
+>When creating your Identity Mapping for Group Connected sites, the Target site URL **must** align with the alias of the new Group created on the Target tenant.
+>
+>**Example:**  
+>Source site: https://contoso.sharepoint.com/teams/O365SourceGroup
+>New Target Group Alias = O365TargetGroup
+>
+>In your Identity Mapping file the Target site needs to be:
+> -  https://fabrikam.sharepoint.com/teams/**O365TargetGroup**
+>
+>If the Target Alias and Target URL don't align, the migration will fail.
+
+
 > [!IMPORTANT]
 > **Do NOT include column headings in your CSV file.**  In the examples below we include them for illustrative purposes only.
 
