@@ -66,7 +66,7 @@ Microsoft Defender for Endpoint Device Control feature enables you to:
 
 Example 1: JAMF using [schema.json](https://github.com/microsoft/mdatp-xplat/tree/master/macos/schema)
 
-:::image type="content" source="images/macos-device-control-jamf-json.png" alt-text="Shows how to enable Device Control in Microsoft Defender for Endpoint Data Loss Prevention / Features." lightbox="images/macos-device-control-jamf-json.png":::
+:::image type="content" source="images/macos-device-control-jamf-json.png" alt-text="Screenshot that shows how to enable Device Control in Microsoft Defender for Endpoint Data Loss Prevention / Features." lightbox="images/macos-device-control-jamf-json.png":::
 
 Example 2: [demo.mobileconfig](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/macOS/mobileconfig/demo.mobileconfig)
 
@@ -88,7 +88,7 @@ Example 2: [demo.mobileconfig](https://github.com/microsoft/mdatp-devicecontrol/
 - Minimum product version: 101.91.92 or higher
 - Run _mdatp version_ through Terminal to see the product version on your client machine:
 
-:::image type="content" source="images/macos-device-control-mdatp-version-terminal.png " alt-text="Shows the results when you run mdatp version in Terminal to see the product version on a client machine." lightbox="images/macos-device-control-mdatp-version-terminal.png ":::
+:::image type="content" source="images/macos-device-control-mdatp-version-terminal.png " alt-text="Screenshot that shows the results when you run mdatp version in Terminal to see the product version on a client machine." lightbox="images/macos-device-control-mdatp-version-terminal.png ":::
 
 ## Device Control for macOS properties
 
@@ -224,7 +224,7 @@ The following table lists the properties you can use in entry:
 
 Once Deny happens and the notification is enabled in the policy, the end user sees a dialog:
 
-:::image type="content" source="images/macos-device-control-enduser-experience-dialog.png" alt-text="Shows a Device Control Dialog that indicates the USB device is restricted" lightbox="images/macos-device-control-enduser-experience-dialog.png":::
+:::image type="content" source="images/macos-device-control-enduser-experience-dialog.png" alt-text="Screenshot that shows a Device Control Dialog that indicates the USB device is restricted" lightbox="images/macos-device-control-enduser-experience-dialog.png":::
 
 ## Status
 
