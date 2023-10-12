@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 05/27/2020
+ms.date: 10/10/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -27,10 +27,6 @@ ms.custom:
 - AdminTemplateSet
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
-search.appverid:
-- MET150
-- MOE150
-- BEA160
 description: "When you purchase Microsoft 365 Business Standard, you have the option of using a domain you own, or buying one during the sign-up."
 ---
 

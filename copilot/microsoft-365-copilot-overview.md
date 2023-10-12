@@ -72,7 +72,7 @@ Microsoft 365 Copilot capabilities that users see in Microsoft 365 Apps and othe
 
 The following diagram provides a visual representation of how Microsoft 365 Copilot works.
 
-:::image type="content" source="media/microsoft-365-copilot-flow.png" alt-text="Diagram that shows the relationship among the components of Microsoft 365 Copilot, such as Microsoft Graph and LLM." lightbox="media/microsoft-365-copilot-architecture.jpg":::
+:::image type="content" source="media/microsoft-365-copilot-flow.png" alt-text="Diagram that shows the relationship among the components of Microsoft 365 Copilot, such as Microsoft Graph and LLM." lightbox="media/microsoft-365-copilot-flow.png":::
 
 Here's an explanation of how Microsoft 365 Copilot works:
 
