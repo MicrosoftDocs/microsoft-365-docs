@@ -64,9 +64,23 @@ To configure shared channels
 
 In order for external channel participants to participate in meetings, external access must be enabled. This is also required to be able to see external participants' presence in the channel.
 
+#### Enable external access
+
 To enable external access
 1. In the [Teams admin center](https://admin.teams.microsoft.com/), expand **Users**, and then select **External access**.
 1. Under **Teams and Skype for Business users in external organizations**, ensure that the organizations that you want to collaborate with are not blocked.
+
+#### Specify a link to your internal process for requesting new external organizations
+
+For users to invite people from outside your organization to a shared channel, both organizations must set up an organizational relationship in Azure AD B2B direct connect. (This is covered in the following sections.)
+
+You can specify an internal link for users who try to share a channel with people in an organization where a two-way Azure AD B2B direct connect relationship has not been set up. This link appears when they try to share the channel. Use this link to direct your users to your internal support page or request form for setting up shared channels with other organizations.
+
+To specify an internal help link for shared channel users
+1. In the [Teams admin center](https://admin.teams.microsoft.com/), expand **Teams**, and then select **Teams settings**.
+1. Under **Shared channels**, turn **Provide a link to my support request page** on.
+1. Type the URL to your support page in the **Support request page link** box.
+1. Select **Save**.
 
 ## Configure cross-tenant access settings in Azure AD
 
@@ -122,7 +136,7 @@ To configure outbound settings for an organization
 1. Select the **Office 365** application, and then choose **Select**.
 1. Select **Save**, choose **Yes** to confirm, and close the **Outbound access settings** blade.
 
-## See also
+## Related topics
 
 [B2B direct connect overview](/azure/active-directory/external-identities/b2b-direct-connect-overview)
 
