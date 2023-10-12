@@ -202,7 +202,7 @@ Now that you've successfully created the migration application and secret, the n
    > [!NOTE]
    > You'll need the application ID of the mailbox migration app you just created. You will need to replace `contoso.onmicrosoft.com` in the previous example with your source tenant's `onmicrosoft.com` URL. You'll also need to replace [application_id_of_the_app_you_just_created] with the application ID of the mailbox migration app you just created.
 
-2. Accept the application when the pop up appears. You can also sign in to your Azure Active Directory portal and find the application under **Enterprise applications**.
+2. Accept the application when the pop-up appears. You can also sign in to your Azure Active Directory portal and find the application under **Enterprise applications**.
 
 3. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) on the source Exchange Online tenant.
 
@@ -786,7 +786,7 @@ Mailbox signatures are not migrated cross tenant and must be recreated.
 
 - MailboxNotInCrossTenantMigrationScopeException
 
-  Ensure the migration scope is setup correctly on the source tenant and that MailboxMovesPublishedScopes is set in the organization relationship with the target tenant.  
+  Ensure the migration scope is set up correctly on the source tenant and that MailboxMovesPublishedScopes is set in the organization relationship with the target tenant.  
   Verify that the mailbox to be migrated has been added to the security group in the source tenant.  
   After adding user to correct security group, resume the migration batch.  
 
