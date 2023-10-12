@@ -102,7 +102,7 @@ By default, allow entries for domains and email addresses, files, and URLs exist
 > [!IMPORTANT]
 > Microsoft does not allow you to create allow entries directly. Unnecessary allow entries expose your organization to malicious email which could have been filtered by the system.
 >
-> Microsoft manages the creation of allow entries from the **Submissions** page. Allow entries are added during mail flow based on the filters that determined the message was malicious. For example, if the sender email address and a URL in the message were determined to be bad, an allow entry is created for the sender (email address or domain) and the URL.
+> Microsoft manages the creation of allow entries from the **Submissions** page at <https://security.microsoft.com/reportsubmission>. Allow entries are added during mail flow based on the filters that determined the message was malicious. For example, if the sender email address and a URL in the message were determined to be bad, an allow entry is created for the sender (email address or domain) and the URL.
 >
 > When the entity is encountered again (during mail flow or time of click), all filters associated with that entity are skipped.
 >
