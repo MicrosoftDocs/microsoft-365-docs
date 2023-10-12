@@ -30,7 +30,7 @@ As a Compliance Manager or IT administrator, it's crucial to stay up-to-date on 
 
 Microsoft Loop is built on top of SharePoint, OneDrive, and [Microsoft Syntex repository services](https://devblogs.microsoft.com/microsoft365dev/introducing-syntex-repository-services-microsoft-365-superpowers-for-your-app/), which means that most compliance capabilities work just like existing files in your ecosystem. Being a file makes Loop content familiar and it to be managed within your existing workflows. To help you understand how Loop content is stored in the Microsoft ecosystem, here's a high-level diagram:
 
-:::image type="content" source="media/loop-files-sharepoint.png" alt-text="the place a Loop file is stored depends on where it was originally created":::
+:::image type="content" source="media/loop-files-sharepoint.png" alt-text="Diagram showing that the place a Loop file is stored depends on where it was originally created.":::
 
 Where the loop content was originally created determines its storage location:
 - Created in the Loop app ➡️️ Microsoft Syntex 
@@ -40,7 +40,7 @@ Where the loop content was originally created determines its storage location:
 ## Loop components stored in OneDrive
 The following section applies to Loop components stored in OneDrive (created outside the Loop app e.g. in Teams chat)
 
-:::image type="content" source="media/loop-files-onedrive.png" alt-text="files created outside the Loop app are stored in OneDrive":::
+:::image type="content" source="media/loop-files-onedrive.png" alt-text="Diagram showing that files created outside the Loop app are stored in OneDrive.":::
 
 ### Governance, Lifecycle and Compliance Capabilities
 
@@ -90,7 +90,7 @@ The following section applies to Loop components stored in OneDrive (created out
 ## Loop workspace content stored in Microsoft Syntex
 The following sections apply to Loop workspace content stored in Microsoft Syntex (created inside the Loop app e.g. new workspaces, new pages or new components) 
 
-:::image type="content" source="media/loop-files-syntex.png" alt-text="files created inside the Loop app are stored in Microsoft Syntex":::
+:::image type="content" source="media/loop-files-syntex.png" alt-text="Diagram showing that files created inside the Loop app are stored in Microsoft Syntex.":::
 
 ### Governance, Lifecycle and Compliance Capabilities
 
