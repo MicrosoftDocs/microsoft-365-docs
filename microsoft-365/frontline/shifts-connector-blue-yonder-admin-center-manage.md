@@ -89,7 +89,7 @@ To edit your connection instance mappings, you can:
 
 - Add new mappings, by following the same process as when you first create your connection instance. See [Map Blue Yonder WFM instances to teams](shifts-connector-wizard.md#map-wfm-instances-to-teams)
 - Edit existing mappings to update the team in Teams to which a Blue Yonder WFM instance is connected.
-  If you're mapping to team in Teams that previously used Shifts, make sure you [remove schedule entities from teams you want to map](shifts-connector-wizard.md##remove-schedule-entities-from-teams-you-want-to-map).
+  If you're mapping to team in Teams that previously used Shifts, make sure you [remove schedule entities from teams you want to map](shifts-connector-wizard.md#remove-schedule-entities-from-teams-you-want-to-map).
 - Delete active mappings, either by clearing the checkbox of the mapped Blue Yonder WFM instance, or by uploading the CSV file with the mapping rows removed.
   
 ## List of error messages
