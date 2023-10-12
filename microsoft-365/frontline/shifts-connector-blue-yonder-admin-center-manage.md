@@ -1,5 +1,5 @@
 ---
-title: Use the Microsoft 365 admin center to manage your Shifts connection to Blue Yonder Workforce Management (Preview)
+title: Use the Microsoft 365 admin center to manage your Shifts connection to Blue Yonder Workforce Management
 author: lana-chin
 ms.author: v-chinlana
 manager: serdars
@@ -20,13 +20,13 @@ appliesto:
 ms.date: 3/01/2023
 ---
 
-# Use the Microsoft 365 admin center to manage your Shifts connection to Blue Yonder Workforce Management (Preview)
+# Use the Microsoft 365 admin center to manage your Shifts connection to Blue Yonder Workforce Management
 
 ## Overview
 
-The [Microsoft Teams Shifts connector for Blue Yonder](shifts-connectors.md#microsoft-teams-shifts-connector-for-blue-yonder) (Preview) enables you to integrate the Shifts app in Microsoft Teams with Blue Yonder Workforce Management (Blue Yonder WFM). Your frontline workers can seamlessly view and manage their schedules in Blue Yonder WFM from within Shifts.
+The [Microsoft Teams Shifts connector for Blue Yonder](shifts-connectors.md#microsoft-teams-shifts-connector-for-blue-yonder)  enables you to integrate the Shifts app in Microsoft Teams with Blue Yonder Workforce Management (Blue Yonder WFM). Your frontline workers can seamlessly view and manage their schedules in Blue Yonder WFM from within Shifts.
 
-You can use the [Shifts connector wizard](shifts-connector-wizard.md) (Preview) in the Microsoft 365 admin center or [PowerShell](shifts-connector-blue-yonder-powershell-setup.md) to create a connection and connection instances. After they're set up, you can manage them in the Microsoft 365 admin center. The Connector Management Console page lists each connection and connection instance that you've set up, along with information such as health status and sync interval details. You can also access the wizard to create a new connection and connection instances or make changes to any of your existing ones. Select the name of a connection instance to view the details of any errors.
+You can use the [Shifts connector wizard](shifts-connector-wizard.md) in the Microsoft 365 admin center or [PowerShell](shifts-connector-blue-yonder-powershell-setup.md) to create a connection and connection instances. After they're set up, you can manage them in the Microsoft 365 admin center. The Connector Management Console page lists each connection and connection instance that you've set up, along with information such as health status and sync interval details. You can also access the wizard to create a new connection and connection instances or make changes to any of your existing ones. Select the name of a connection instance to view the details of any errors.
 
 > [!NOTE]
 > You can also use PowerShell to manage a connection. For example, you can view an error report, change connection settings, and disable sync. To learn more, see [Use PowerShell to manage your Shifts connection to Blue Yonder Workforce Management](shifts-connector-powershell-manage.md).
@@ -48,12 +48,12 @@ You can use the [Shifts connector wizard](shifts-connector-wizard.md) (Preview) 
 ### Manage your connection instances
 
 > [!IMPORTANT]
-> Before mapping a Blue Yonder WFM instance to a Microsoft team, check if the team has schedule entities such as shifts or time off. If the team has an existing schedule with schedule entities, [remove the schedule entities from the team](shifts-connector-wizard.md#remove-schedule-entities-from-teams-you-want-to-map) before you map a Blue Yonder WFM instance to it. If you don't remove schedule entities before mapping, you'll see duplicate shifts.
+> Before you map a Blue Yonder WFM instance to a team in Teams, check whether the team has schedule entities such as shifts or time off. If the team has an existing schedule with schedule entities, [remove the schedule entities from the team](shifts-connector-wizard.md#remove-schedule-entities-from-teams-you-want-to-map) before you map a Blue Yonder WFM instance to it. If you don't remove schedule entities before mapping, you'll see duplicate shifts.
 
 - To create a new connection instance, select **Create instance**. You're taken to the wizard, where you can [choose your settings and create mappings](shifts-connector-wizard.md#create-a-connection-instance).
-- To change an existing connection instance, go to **Actions** and select **Edit**. You're taken to the wizard, where you can [update the settings and mappings](shifts-connector-wizard.md#create-a-connection-instance).
-- To delete an existing connection instance, go to **Actions** and select **Delete**. You can't undo this action.
-- To view more details about an existing connection instance, select its name. On the details page, you'll see health information, including ongoing errors (if any), and mappings. You can also choose **Edit** to update settings in the wizard or **Back** to return to the Connector Management Console.
+- To change an existing connection instance, under **Actions**, select **Edit**. You're taken to the wizard, where you can [update the settings and mappings](shifts-connector-wizard.md#create-a-connection-instance).
+- To delete an existing connection instance, under **Actions**, select **Delete**. You can't undo this action.
+- To view more details about an existing connection instance, select its name. On the details page, you'll see health information, including ongoing errors (if any), and mappings. You can also choose **Edit** to update settings in the wizard or **Back** to return to the Connector Management Console page.
 
   :::image type="content" source="media/shifts-connector-blue-yonder-manage-details.png" alt-text="Screenshot of the details page for a connection, showing connector health and mappings information." lightbox="media/shifts-connector-blue-yonder-manage-details.png":::
 
@@ -61,18 +61,18 @@ For a complete list of error messages and how to resolve them, see [List of erro
 
 #### Edit connection instance
 
-To **edit your connection instance settings**, choose the data that your Shifts users can see and change. You have the following options for these settings:
+To edit your connection instance settings, choose the data that your Shifts users can see and change. You have the following options for these settings:
 
-- **Shifts users will not see provider data**: Data won't sync between Blue Yonder WFM and Shifts. <br>
-- **Shifts users can see provider data**: Data syncing is unidirectional from Blue Yonder WFM to Shifts. <br>
+- **Shifts users will not see provider data**: Data won't sync between Blue Yonder WFM and Shifts.
+- **Shifts users can see provider data**: Data syncing is unidirectional from Blue Yonder WFM to Shifts.
 - **Shifts users can see and change provider data**: Data syncing is bidirectional between Blue Yonder WFM and Shifts.
 
 > [!IMPORTANT]
-> Before you disable a feature by selecting the option **Shifts users will not see provider data**, be aware that:
+> Before you disable a feature by selecting the **Shifts users will not see provider data**  option, be aware that:
 >
-> - If the setting **Schedules, groups, shifts, and activities** is disabled, then all other settings, such as **Time off** and **Employee availability**, and more, will also be disabled.
-> - If the setting **Open shift** is disabled, **Open shift request** will also be disabled.
-> - If the setting **Time off** is disabled, **Time off request** will also be disabled.
+> - If the **Schedules, groups, shifts, and activities** setting is disabled, then all other settings, such as **Time off** and **Employee availability**, and more, are also disabled.
+> - If the **Open shift** setting is disabled, **Open shift request** is also disabled.
+> - If the **Time off** setting is disabled, **Time off request** is also disabled.
 
 > [!IMPORTANT]
 > If you chose any of the following options to disable open shifts, open shift requests, swap requests, or time off requests, there's another step you need to do to hide the capability in Shifts.
@@ -81,14 +81,14 @@ To **edit your connection instance settings**, choose the data that your Shifts 
 > - Swap requests: **Shifts users will not see provider data**
 > - Time off requests: **Shifts users will not see provider data**
 >
-> After you edit your settings, make sure you follow the steps to [Disable open shifts, open shifts requests, swap requests, and time off requests.](/microsoft-365/frontline/shifts-connector-wizard#disable-open-shifts-open-shifts-requests-swap-requests-and-time-off-requests)
+> After you edit your settings, make sure you follow the steps to [disable open shifts, open shifts requests, swap requests, and time off requests](shifts-connector-wizard#disable-open-shifts-open-shifts-requests-swap-requests-and-time-off-requests).
 
-To **Edit your connection instance mappings**, you have the choice of:
+To edit your connection instance mappings, you can:
 
-- Adding new mappings, by following the same process as when you first create your connection instance. See [Map Blue Yonder Workforce Management instances to teams](/microsoft-365/frontline/shifts-connector-wizard#map-blue-yonder-workforce-management-instances-to-teams)
-- Edit existing mappings, to update the team in Microsoft Teams to which a WFM instance is connected.
-  If you're mapping to team in Microsoft Teams that has previously used Shifts, make sure you [remove schedule entities from teams you want to map](/microsoft-365/frontline/shifts-connector-wizard?#remove-schedule-entities-from-teams-you-want-to-map)
-- Deleting active mappings, either by clearing the checkbox of the mapped WFM instance, or by uploading the CSV file with the mapping rows removed.
+- Add new mappings, by following the same process as when you first create your connection instance. See [Map Blue Yonder Workforce Management instances to teams](shifts-connector-wizard#map-blue-yonder-workforce-management-instances-to-teams)
+- Edit existing mappings to update the team in Teams to which a Blue Yonder WFM instance is connected.
+  If you're mapping to team in Teams that previously used Shifts, make sure you [remove schedule entities from teams you want to map](shifts-connector-wizard?#remove-schedule-entities-from-teams-you-want-to-map).
+- Delete active mappings, either by clearing the checkbox of the mapped Blue Yonder WFM instance, or by uploading the CSV file with the mapping rows removed.
   
 ## List of error messages
 
