@@ -18,5 +18,6 @@ description: Learn how to translate documents using Microsoft Syntex.
 
 # Translate documents in Microsoft Syntex
 
-> [!NOTE]
-> This article is currently in development.
+Microsoft Syntex lets you easily translate a selected file or a set of files in a SharePoint document library. Translation is available for all supported languages and dialects, while preserving the original format and structure of the file.
+
+You can translate files manually or automatically. You can use this feature to translate a variety of file types, and apply custom glossaries and models to ensure accurate and consistent translations.
