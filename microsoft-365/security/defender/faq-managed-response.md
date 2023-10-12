@@ -32,11 +32,10 @@ The following section lists down questions you or your SOC team might have regar
 
 | Questions | Answers |
 |---------|---------|
-| **What is managed response?** |
-| Category | Actions |
+| **What is managed response?**| All actions found below are in scope for Managed Response for any device and user that is not excluded.|
 <br><br>
+|**Category** | **Actions** |
 | **Device** | Isolate machine<br><br>Release from isolation<br><br>Run antivirus scan<br><br>Stop and quarantine file<br><br>Release from quarantine<br><br>Restrict app execution<br><br>Remove app restriction<br><br>
-|---------|---------|
 **User** | Force password reset<br><br>Disable user<br><br>Enable user<br><br>Suspend user<br><br>Unsuspend user<br><br>Revoke user tokens<br><br>Soft delete emails |
 | **What is managed response?** | Microsoft Defender Experts for XDR offers **managed response** where our experts manage the entire remediation process for incidents that require them. This process includes investigating the incident to identify the root cause, determining the required response actions, and taking those actions on your behalf.|.|
 | **What actions are in scope for managed response?** | All actions specific to devices and users that aren't excluded in the Defender Experts for XDR service are in scope for managed response. All device actions are listed in [machineAction resource](/microsoft-365/security/defender-endpoint/api/machineaction), while user actions can be found in the [user resource type page](/defender-for-identity/remediation-actions). |
