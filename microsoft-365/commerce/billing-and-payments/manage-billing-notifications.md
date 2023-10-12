@@ -32,13 +32,13 @@ You can manage who receives billing notification emails for your organization on
 ## Before you begin
 
 - [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
-- If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a billing account owner or contributor to do the tasks in this article. For information about billing account roles, see [Understand your Microsoft business billing account].
+- If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a billing account owner or contributor to do the tasks in this article. For information about billing account roles, see [Understand your Microsoft business billing account](../manage-billing-accounts.md).
 - If you have a Microsoft Online Services Agreement (MOSA), you must be a Global admin to do the tasks in this article. Billing admins can also make some of these changes, as noted in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 
 > [!NOTE]
-> If you're the person who signed up for the subscription, you're automatically a Global admin.
+> If you're the person who signed up for the subscription, you're automatically a Global admin .
 
-## Who receives billing notifications?
+## Change who receives billing notifications
 
 You can change who receives billing notifications for your organization in the Microsoft 365 admin center. However, the steps to change who receives billing notifications depend on the type of billing account that you have. [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
 
