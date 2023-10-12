@@ -34,7 +34,7 @@ The following section lists down questions you or your SOC team might have regar
 |---------|---------|
 | **What is managed response?** | Microsoft Defender Experts for XDR offers **managed response** where our experts manage the entire remediation process for incidents that require them. This process includes investigating the incident to identify the root cause, determining the required response actions, and taking those actions on your behalf.|
 
-| **What actions are in scope for managed response?** | All actions found below are in scope for Managed Response for any device and user that is not excluded.
+| **What actions are in scope for managed response?** | All actions found below are in scope for Managed Response for any device and user that is not excluded.|
 
 | **Category** | **Actions** |
 |------------|------------|
