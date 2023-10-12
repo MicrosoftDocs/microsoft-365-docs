@@ -44,7 +44,7 @@ Billing notification emails are sent in your organization's preferred language. 
 2. In the **Billing notification settings** section, select **Edit notification settings**.
 3. In the **Billing notification settings** pane, under **Preferred language** select the language you want to use, then select **Save**.
 
-## Change who receives Billing notifications
+## Change who receives billing notifications
 
 Billing notifications are sent to the primary and alternate email address of every Global and Billing admin in your organization. To change which users have the Global or Billing admin role, use the following steps.
 
@@ -97,7 +97,7 @@ To stop receiving the invoice attachment at any time, follow the steps in this p
 
 If you have a Microsoft Customer Agreement (MCA) billing account type, you pay for your subscription with a billing profile. Because you have a billing profile, some of the steps described in this article might be slightly different for some of your subscriptions. This section describes those differences. [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
 
-### Who receives Billing notifications?
+### Who receives billing notifications?
 
 Billing notification emails are sent to the primary and alternate email addresses for users who are assigned one of the following roles:
 
@@ -125,5 +125,5 @@ You can receive your invoice as an attachment to your invoice notification email
 
 [View your invoice in the Microsoft 365 admin center](view-your-bill-or-invoice.md) (article)\
 [Billing information for Microsoft 365 for business in Mexico](mexico-billing-info.md) (article)\
-[Understand your invoice for your Microsoft MCA billing account](understand-your-invoice.md)(article)\
+[Understand your invoice for your Microsoft MCA billing account](understand-your-invoice.md) (article)\
 [Understand your invoice for your Microsoft MOSA billing account](understand-your-invoice2.md) (article)
