@@ -47,7 +47,7 @@ If you want to scope the Cloud Policy settings to only some users in your tenant
 > [!NOTE]
 > This section isn't required if you choose to apply the Loop settings to all the users in your tenant.
 
-You are be able to use this group for the Cloud Policy setup procedure specified in [Settings management in Cloud Policy](#settings-management-in-cloud-policy).
+You can use this group for the Cloud Policy setup procedure specified in [Settings management in Cloud Policy](#settings-management-in-cloud-policy).
 
 If you prefer, you can also create other types of groups to use with Cloud Policy. For more information, see [learn more about creating groups in the Microsoft 365 admin center](/microsoft-365/admin/email/create-edit-or-delete-a-security-group) or [learn more about creating dynamic groups in AzureAD](/azure/active-directory/external-identities/use-dynamic-groups).
 
