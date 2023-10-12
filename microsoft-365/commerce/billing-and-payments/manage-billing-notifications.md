@@ -22,7 +22,7 @@ ms.custom:
 search.appverid:
 - MET150
 description: "Learn how to manage who receives billing notification emails and invoice attachments in the Microsoft 365 admin center."
-ms.date: 03/17/2021
+ms.date: 10/12/2023
 ---
 
 # Manage billing notifications and invoice attachment settings in the Microsoft 365 admin center
