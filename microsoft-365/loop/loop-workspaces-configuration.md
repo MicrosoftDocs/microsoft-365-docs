@@ -56,11 +56,11 @@ If you prefer, you can also create other types of groups to use with Cloud Polic
 If you're looking for a simple way to turn on or off the creation of content in Loop workspaces in your tenant, do the following:
 
 1. Sign in to the Microsoft 365 admin center as a Global Administrator.
-2. Navigate to [Home > Org settings > Services > Loop](https://admin.microsoft.com/Adminportal/Home#/Settings/Services/:/Settings/L1/Loop).
-3. Choose your desired state for Loop workspaces via the checkbox.
+1. Navigate to [Home > Org settings > Services > Loop](https://admin.microsoft.com/Adminportal/Home#/Settings/Services/:/Settings/L1/Loop).
+1. Choose your desired state for Loop workspaces via the checkbox.
     > [!NOTE]
-    > If your tenant was automatically enabled as part of an early adopter program by Microsoft, the checkbox may not reflect this. However, the state you save in the Admin Center will override any defaults for your tenant.
-4. Select Save.
+    > While we are updating the admin center to reflect the state of Loop in your environment, the checkbox may not reflect your configured state on load. However, the state you select and choose Save in the Admin Center will persist and override any defaults for your tenant.
+1. Select Save.
 
 The Microsoft Admin Center will configure the Cloud Policy setting described below, targeted at All users (your full tenant). See the next section if you wish to perform more advanced controls.
 
@@ -69,34 +69,31 @@ The Microsoft Admin Center will configure the Cloud Policy setting described bel
 The Loop app checks the following Cloud Policy setting to see if workspaces are enabled:
 
 - **Create and view Loop workspaces in Loop**
-  
-  > [!NOTE]
-  > This policy has previously been titled **Create and view Loop files in Loop**.
 
-  > [!TIP]
-  > If you're new to Cloud Policy and are looking to enable the Loop app for your organization during the public preview, you may appreciate a step-by-step document that describes how to roll out Cloud Policy settings to your tenant. Check out this Tech Community blog: [Learn how to enable the Microsoft Loop app, now in Public Preview](https://techcommunity.microsoft.com/t5/microsoft-365-blog/learn-how-to-enable-the-microsoft-loop-app-now-in-public-preview/ba-p/3769013).
-
-To configure these Cloud Policy settings, perform the following steps:
+To configure this Cloud Policy setting, perform the following steps:
 
 1. Sign in to https://config.office.com/ with your Microsoft 365 admin credentials.
-2. Select **Customization** from the left pane.
-3. Select **Policy Management**.
-4. Create a new policy configuration or edit an existing one.
-5. From the **Choose the scope** dropdown list, choose either **All users** or select the group for which you want to apply the policy. For more information, See [Microsoft 365 Groups for Cloud Policy](#microsoft-365-groups-for-cloud-policy).
-6. In **Configure Settings**, choose **Create and view Loop workspaces in Loop** and then choose one of the following settings:
-    - **Enabled**: Loop app and creation of workspaces is available to the users.
-    - **Disabled**: Loop app and creation of workspaces isn't available to the users.
-    - **Not configured**: Loop app and creation of workspaces isn't available to the users.
-        - Loop during Public Preview is **IT Admin Opt-in** by default.
+1. Select **Customization** from the left pane.
+1. Select **Policy Management**.
+1. Create a new policy configuration or edit an existing one.
+1. From the **Choose the scope** dropdown list, choose either **All users** or select the group for which you want to apply the policy. For more information, See [Microsoft 365 Groups for Cloud Policy](#microsoft-365-groups-for-cloud-policy).
+1. In **Configure Settings**, choose **Create and view Loop workspaces in Loop** and then choose one of the following settings:
+    - **Disabled**: Creation of Loop content in workspaces isn't available to the users.
         - Loop app will still open Loop components when workspaces is disabled. If this isn't rolled out to your environment, Loop components will open in Office.com.
-        - Ensure additional [Loop service requirements](#requirements) are met.
-7. Save the policy configuration.
-8. Reassign priority for any security group, if required. (If two or more policy configurations are applicable to the same set of users, the one with the higher priority is applied.)
+    - **Enabled**: Creation of Loop content in workspaces is available to the users.
+    - **Not configured**: Creation of Loop content in workspaces is available to the users.
+1. Save the policy configuration.
+1. Reassign priority for any security group, if required. (If two or more policy configurations are applicable to the same set of users, the one with the higher priority is applied.)
 
 In case you create a new policy configuration or change the configuration for an existing policy, there will be a delay in the change being reflected as described below:
 - If there were existing policy configurations prior to the change, then it will take 90 mins for the change to be reflected.
 - If there were no policy configurations prior to the change, then it will take 24 hours for the change to be reflected.
 
+> [!NOTE]
+> In order to target only a group of users in your organization to be able to create Loop content in workspaces, create a second group that targets All users, set this group to Disabled, and make it a lower priority than your target group that is set to Enabled. This will override the default Not Configured state to Disabled for all users but your target group.
+
 ## Related topics
 
-[Get started with Microsoft Loop - Microsoft Support](https://support.microsoft.com/office/get-started-with-microsoft-loop-9f4d8d4f-dfc6-4518-9ef6-069408c21f0c)
+- [Get started with Microsoft Loop - Microsoft Support](https://support.microsoft.com/office/get-started-with-microsoft-loop-9f4d8d4f-dfc6-4518-9ef6-069408c21f0c)
+- [Manage Loop components in OneDrive and SharePoint](/microsoft-365/loop/loop-components-configuration)
+- [Summary of governance, lifecycle and compliance capabilities for Loop](/microsoft-365/loop/loop-compliance-summary)
