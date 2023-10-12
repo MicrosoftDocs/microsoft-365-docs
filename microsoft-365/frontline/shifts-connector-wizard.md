@@ -1,5 +1,5 @@
 ---
-title: Use the Shifts connector wizard to connect Shifts to Blue Yonder Workforce Management (Preview)
+title: Use the Shifts connector wizard to connect Shifts to Blue Yonder Workforce Management
 author: lana-chin
 ms.author: v-chinlana
 manager: serdars
@@ -21,7 +21,7 @@ appliesto:
 ms.date: 2/27/2023
 ---
 
-# Use the Shifts connector wizard to connect Shifts to Blue Yonder Workforce Management (Preview)
+# Use the Shifts connector wizard to connect Shifts to Blue Yonder Workforce Management
 
 ## Overview
 
