@@ -22,7 +22,7 @@ search.appverid:
 description: "Learn how to manage Loop workspaces in Syntex repository services."
 ---
 
-# Manage Loop workspace experiences in Syntex repository services
+# Manage Loop workspace experiences in Microsoft Syntex repository services
 
 Loop workspaces and the content created in Loop workspaces are backed by [Syntex repository services](https://devblogs.microsoft.com/microsoft365dev/introducing-syntex-repository-services-microsoft-365-superpowers-for-your-app/). IT admins can manage access to Loop workspaces experiences using Cloud Policy.
 
@@ -30,24 +30,24 @@ If you're looking to manage Loop components in the Microsoft 365 ecosystem, visi
 
 ## Requirements
 
-Just like other Microsoft 365 experiences, Loop also leverages core services across SharePoint and Microsoft 365. To effectively enable Loop workspace experiences, follow the instructions in [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges) to ensure connections to Loop services.
+Just like other Microsoft 365 experiences, Loop also uses core services across SharePoint and Microsoft 365. To effectively enable Loop workspace experiences, follow the instructions in [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges) to ensure connections to Loop services.
 
 ### Exchange Online license
 
-Loop workspaces currently require each user to have an Exchange Online license and the user account cannot be a resource account (e.g. a shared mailbox user). If these requirements are not met, users will experience failures in the Loop app; won't receive notifications or signals when they collaborate and update; and encounter failures in other experiences also.
+Loop workspaces currently require each user to have an Exchange Online license and the user account can't be a resource account (for example, a shared mailbox user). If these requirements are not met: users experience failures in the Loop app, users won't receive notifications or signals when they collaborate and update, and users encounter failures in other experiences within Loop.
 
 ### WebSocket connections
 
-Loop's near real-time communications are enabled by the core services that run a WebSocket server. Coauthors in the same session need to establish secured WebSocket connections to this service to send and receive collaborative data such as changes made by others, live cursors, presence, and so on. These experiences are crucial to Loop, and to all the scenarios powered by Fluid framework. So, at the minimum, WebSocket will need to be unblocked from the user's endpoint.
+Loop's near real-time communications are enabled by the core services that run a WebSocket server. Coauthors in the same session need to establish secured WebSocket connections to this service to send and receive collaborative data such as changes made by others, live cursors, presence, and so on. These experiences are crucial to Loop, and to all the scenarios powered by Fluid framework. So, at the minimum, WebSocket needs to be unblocked from the user's endpoint.
 
 ### Microsoft 365 Groups for Cloud Policy
 
-If you want to scope the Cloud Policy settings to only some users in your tenant, you must create or use an existing Microsoft 365 group that defines which users in your organization this policy will apply to. To create a Microsoft 365 group, see [Create a Microsoft 365 group](/microsoft-365/admin/create-groups/create-groups).
+If you want to scope the Cloud Policy settings to only some users in your tenant, create or use an existing Microsoft 365 group. This group is used to define which users in your organization this policy apply to. To create a Microsoft 365 group, see [Create a Microsoft 365 group](/microsoft-365/admin/create-groups/create-groups).
 
 > [!NOTE]
 > This section isn't required if you choose to apply the Loop settings to all the users in your tenant.
 
-You'll be able to use this group for the Cloud Policy setup procedure specified in [Settings management in Cloud Policy](#settings-management-in-cloud-policy).
+You are be able to use this group for the Cloud Policy setup procedure specified in [Settings management in Cloud Policy](#settings-management-in-cloud-policy).
 
 If you prefer, you can also create other types of groups to use with Cloud Policy. For more information, see [learn more about creating groups in the Microsoft 365 admin center](/microsoft-365/admin/email/create-edit-or-delete-a-security-group) or [learn more about creating dynamic groups in AzureAD](/azure/active-directory/external-identities/use-dynamic-groups).
 
@@ -62,7 +62,7 @@ If you're looking for a simple way to turn on or off the creation of content in 
     > While we are updating the admin center to reflect the state of Loop in your environment, the checkbox may not reflect your configured state on load. However, the state you select and choose Save in the Admin Center will persist and override any defaults for your tenant.
 1. Select Save.
 
-The Microsoft Admin Center will configure the Cloud Policy setting described below, targeted at All users (your full tenant). See the next section if you wish to perform more advanced controls.
+The Microsoft Admin Center configures the Cloud Policy setting described in the next section, targeted at All users (your full tenant). See the next section if you wish to perform more advanced controls.
 
 ## Settings management in Cloud Policy
 
@@ -79,15 +79,15 @@ To configure this Cloud Policy setting, perform the following steps:
 1. From the **Choose the scope** dropdown list, choose either **All users** or select the group for which you want to apply the policy. For more information, See [Microsoft 365 Groups for Cloud Policy](#microsoft-365-groups-for-cloud-policy).
 1. In **Configure Settings**, choose **Create and view Loop workspaces in Loop** and then choose one of the following settings:
     - **Disabled**: Creation of Loop content in workspaces isn't available to the users.
-        - Loop app will still open Loop components when workspaces is disabled. If this isn't rolled out to your environment, Loop components will open in Office.com.
+        - Loop app will open Loop components when workspaces is disabled. If this isn't rolled out to your environment, Loop components open in Office.com.
     - **Enabled**: Creation of Loop content in workspaces is available to the users.
     - **Not configured**: Creation of Loop content in workspaces is available to the users.
 1. Save the policy configuration.
-1. Reassign priority for any security group, if required. (If two or more policy configurations are applicable to the same set of users, the one with the higher priority is applied.)
+1. Reassign priority for any security group, if necessary. (If two or more policy configurations are applicable to the same set of users, the one with the higher priority is applied.)
 
-In case you create a new policy configuration or change the configuration for an existing policy, there will be a delay in the change being reflected as described below:
-- If there were existing policy configurations prior to the change, then it will take 90 mins for the change to be reflected.
-- If there were no policy configurations prior to the change, then it will take 24 hours for the change to be reflected.
+In case you create a new policy configuration or change the configuration for an existing policy, there will be a delay in the change being reflected:
+- If there were existing policy configurations prior to the change, then it takes 90 mins for the change to be reflected.
+- If there were no policy configurations prior to the change, then it takes 24 hours for the change to be reflected.
 
 > [!NOTE]
 > In order to target only a group of users in your organization to be able to create Loop content in workspaces, create a second group that targets All users, set this group to Disabled, and make it a lower priority than your target group that is set to Enabled. This will override the default Not Configured state to Disabled for all users but your target group.
