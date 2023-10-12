@@ -17,8 +17,7 @@ metadata:
   - scotvorg
   ms.localizationpriority: medium
   description: "Frequently asked questions about license reservations in the Microsoft 365 admin center."
-  ROBOTS: NOINDEX, NOFOLLOW
-  ms.date: 07/21/2023
+  ms.date: 10/12/2023
 
 title: License Reservation Frequently Asked Questions
 summary: |
@@ -31,113 +30,106 @@ sections:
         answer: |
           >[!NOTE]
           >
-          > Online reservation orders apply only to customers with Enterprise Agreements, Enterprise Agreement Subscriptions, and Enterprise Agreements for Government Partners.
+          > Online reservation orders apply only to customers with Enterprise Agreements, Enterprise Agreement Subscriptions and Enterprise Agreements for Government Partners.
 
           A *License Reservation* allows a customer to place a License Reservation order to migrate on-premises assets to the Cloud without a Purchase Order.
 
-          - Only Online Services are eligible for License Reservation orders
-          - Reservation orders are a financial obligation that is realized during the True-Up or Annual Order process. This is based on the Usage Date of the reservation and the quantity reserved.
+          - Only Online Services are eligible for License Reservation orders.
+          - Reservation orders are a financial obligation that is realized during the true-Up or annual order process. This is based on the Usage Date of the reservation and the quantity reserved.
           - You can place Reservation orders for the current date or a future usage that is no more than six months in the future.
-          - You can cancel Reservation orders within 72 hours of the usage date (weekends and holidays included).
-          - Reservations can't be placed if the enrollment has expired or in the last month before the enrollment expires. Consult your Microsoft Reseller about ordering options instead.
+          - You can cancel Reservation orders up to 72 hours from the start the usage date (weekends and holidays included).
+          - Reservations can't be made if the enrollment has expired or in the last 30 days of agreement anniversary. Consult your Microsoft Reseller about ordering options instead.
 
       - question: |
-          How do I make a License Reservation order
+          Who is eligible to place Reservation orders?
+        answer: |
+          You must have one of the following volume licensing roles to be able to place on online Reservation: Administrator or Online Service Manager.
+
+          > [!NOTE]
+          >
+          > A Microsoft Licensing Solution Partner can place a reservation on behalf of their customer if granted permission by the customer.
+
+      - question: |
+          How do I make a License Reservation order?
         answer: |
           1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> and sign in with your credentials.
           2. In the **Navigation menu**, select **Billing** > **Your products**, then select the **Volume licensing** tab.
-          3. Select **Reserve New Online services**.
-          4. From your list of **Enterprise Agreements for License Reservation**, select the active agreement to proceed with the online reservation and then select **Continue**.
-          5. Select the **Usage Date** for the online reservation and then select **Continue**. The **Usage Date** is the date that the online reservation can start to be used.
+          3. Select **Make reservations**.
+          4. From your list of **Enterprise Agreements for License Reservation**, select the active agreement to proceed with the online reservation.
+          5. Select the **Usage Date** for the online reservation and then select **View services**. The **Usage Date** is the date that the online reservation can start to be used.
 
               >[!NOTE]
               >
-              > After 72 hours, no changes are allowed to your reservation. This is reflected as part of your True-up or Annual Order based on the usage date and quantity reserved.
+              > Selecting a usage date within 60 days of your anniversary date may impact your ability to step-up licenses.
+              >
+              > Reservation is not possible within 30 days of the agreement's anniversary date.
+              >
+              > After you place a reservation, you can't change it. However, you may cancel a submitted reservation up to 72 hours from the start of the usage date (weekends and holidays included).              
 
-          6. After the **Usage Date** is selected, you'll see a list of eligible Online Services available for reserving online.
-          7. Select the online service you want to submit a reservation for and then choose the action you want to perform for this service: **Add License** or **Step-up License**.
-          8. To make the reservation, select **New License**.
-          9. Select **Continue**. The **Reservation Confirmation** page displays.
-          10. Preview the reservation on the **Reservation Confirmation** page. After confirming that the reservation is correct, select **Submit Reservation**. The **Reservation Confirmation** pop-up displays. After reading and agreeing to the terms of services, select **Submit Reservation**.
+          6. Select **Add services** to see a list of eligible Online Services available for reserving online.
+          7. Select the online services that you want to reserve. Select **Add services**.
+          8. For each service, add usage details: usage country and the number of licenses to be reserved.
+          9. Review the reservation for accuracy, then select **Reserve services** to continue.
+          10.	The **Reservation Confirmation** pop-up window displays. After reading and agreeing to the terms of services, select **Place Reservation**.
           11. Your online reservation is complete.
 
       - question: |
-          How do I cancel or change a Reservation order
+          How do I cancel Reservation order?
         answer: |
-          After you place a reservation, you can't change it. You can cancel a submitted reservation within 72 hours of submission.
-
           1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Your products</a> page, select the **Volume licensing** tab, then select **View Reservation**.
-          2. Select how you want to view your reservation history: by Service, Licensing ID, or Reservation.
+          2. Search for the reservation order that you want to view details of or cancel through the search bar on the top right: by Reservation ID, Licensing Contract ID, or organization.
+            > [!NOTE]
+            ? A message appears if you don't have any previous reservations.
+          3. Copy the reservation ID and then select the **Cancel** button under the **Action** column.
+          4. Paste the reservation ID and enter the reason for cancellation.
+          5. Select **OK** to cancel the reservation.
+            > [!NOTE]
+            > You can cancel a submitted reservation within 72 hours of the usage date.
+          
+      - question: |
+          How can I view my Reservation History?
+        answer: |
+          1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Your products</a> page, select the **Volume licensing** tab, then select **View Reservation**.
+          2. Search for the reservation order that you want to view details of or cancel through the search bar on the top right: by Reservation ID, Licensing Contract ID, or organization.
+          3. Select the **Details** button under the **Action** column to the view details.
 
               >[!NOTE]
               >
               > A message appears if you don't have any previous reservations.
 
-          3. From the **Service** view: Open the detailed view of the reservation you want to cancel. If the reservation can be canceled a **Cancel** button is displayed.
-          4. From **Reservation** view: The results are displayed in descending order by **Reservation Date**. Reservation orders that can be canceled are displayed at the top of the page.
-          5. Select **Cancel** to cancel the reservation.
-
-          If it has been more than 72 hours since your License Reservation was submitted, work with your Microsoft Licensing Reseller to make the necessary adjustments.
-
       - question: |
-          Why are some fields on the License Reservation page disabled
-        answer: |
-          Only customers with Enterprise Agreements, Enterprise Agreement Subscriptions, and Enterprise Agreements for Government Partners can reserve services in the Microsoft 365 admin center.
-
-      - question: |
-          How can I view my Reservation History
-        answer: |
-          You can view your reservation history from the **Reservation Confirmation** page or the **View Reservation** page.
-
-          1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Your products</a> page, select the **Volume licensing** tab, then select **View Reservation**.
-          2. Select how you want to view your reservation history: by Service, Licensing ID, or Reservation.
-
-              >[!NOTE]
-              >
-              > A message displays if you don't have any previous reservation orders.
-
-      - question: |
-          At anniversary time, can I pay only for the licenses I have used
+          At anniversary time, can I pay only for the licenses I have used?
         answer: |
           No, you must pay for all the licenses you committed to when you reserved them.
 
       - question: |
-          What services are available for Reservation orders
+          What services are available for Reservation orders?
         answer: |
-          Availability of services is based on customer eligibility and whether Microsoft products are available through reservation orders. Services that are eligible for Reservation are listed in the Online Services screen.
+          Availability of services is based on customer eligibility and whether Microsoft products are available through reservation orders. Services that are eligible for reservation are listed on the Online Services pop-up.
 
           Microsoft volume licensing has three categories of Online Services Reservations.
 
           - **Standard Reservations**: Products configured for this type of reservation are available to customers with a valid Enterprise Agreement and Microsoft 365 admin center sign-in credentials.
-          - **License Reservation Only**: Products configured for this type of reservation require that customers have either a prior purchase (Order history) or Price fixed (Special Pricing) in order to see the offer on Microsoft 365 Admin center for reservation. This category includes some of our more complex product configurations such as Add On services that require a base license. Microsoft uses this categorization in order to reduce the risk that customers unintentionally order incorrect services. Your Microsoft Licensing Solution Partner should be able to assist you in placing the necessary orders.
-          - A third category of Services aren't configured for online reservation, so your Microsoft Licensing Solution Partner needs to place always a manual order.
+          - **License Reservation Only**: Products configured for this type of reservation require that customers have either a prior purchase (Order history) or Price fixed (Special Pricing) to see the offer on Microsoft 365 Admin center for reservation. This category includes some of our more complex product configurations such as Add On services that require a base license. Microsoft uses this categorization to reduce the risk that customers unintentionally order incorrect services. Your Microsoft Licensing Solution Partner should be able to assist you in placing the necessary orders.
+          - •	A third category of Services aren't configured for online reservation, so your Microsoft Licensing Solution Partner needs to always place a manual order.
 
           >[!NOTE]
           >
-          > For reservations to be available, you must have already signed the Updated Enterprise Agreement (uEA) Amendment or have an agreement from 2011 or later. The product must have been previously ordered or be price locked in the Customer Price Sheet (CPS).
+          > For reservations to be available, you must have already signed the Updated Enterprise Agreement (uEA) Amendment or have an agreement from 2011 or later. The product must have been ordered previously or be price locked in the Customer Price Sheet (CPS).
 
       - question: |
-          Who is eligible to place Reservation orders
-        answer: |
-          In the Microsoft 365 admin center, only the Online Administrator and Online Service Manager with the **Manage Reservation** permission can create Reservation orders. 
-          
-          >[!NOTE]
-          > 
-          > Manage Reservation permissions must be specifically assigned to the OSM admin.
-
-          A Microsoft Licensing Solution Partner can place a reservation on behalf of their customer if granted permission by the customer.
-
-      - question: |
-          What if I don't have the authority to accept the Reservation Commitment required for submitting a Reservation order
+          What if I don't have the authority to accept the Reservation Commitment required for submitting a Reservation order?
         answer: |
           A Reservation order is a financial commitment to purchase reserved items. If you don't have the authority to accept this commitment, work with the person in your organization who is authorized to do so.
 
       - question: |
-          Who can I contact with other questions regarding Reservation orders
+          Who can I contact with other questions regarding Reservation orders?
         answer: |
           Contact your Partner or Microsoft Representative with any questions.
 
       - question: |
           Contact Assisted Support
         answer: |
-          Microsoft 365 admin center customers may also [Contact Us](/licensing/contact-us) by phone or by Web Form. Microsoft responds to Web Form submissions within 24 hours. For support contact information for your country/region, see [Find Microsoft 365 for business support phone numbers by country or region](../../admin/support-contact-info.md).
+          1. Microsoft 365 admin center Volume Licensing customers may also [Contact Us](../../admin/get-help-support.md) by phone or by Web Form. Microsoft responds to Web Form submissions within 24 hours. In the Microsoft 365 admin center, select the **Help & support** button.
+          2. Type a description of your issue into the text box.
+          3. If none of the resolutions offered match your needs, you have the option to submit a support ticket to the VL support team. Be sure to provide your VL contract ID, Reservation ID and the phone number our team can use to reach you.
