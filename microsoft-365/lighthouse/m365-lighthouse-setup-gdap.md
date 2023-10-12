@@ -55,7 +55,7 @@ If you encounter any problems during GDAP setup, see [Troubleshoot error message
 
 To get started:
 
-1. In the left navigation pane in Lighthouse, select **Home**.
+1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Home**.
 
 2. On the **Set up GDAP** card, select **Set up GDAP**.
 

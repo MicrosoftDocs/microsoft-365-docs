@@ -16,6 +16,7 @@ ms.subservice: mde
 ms.collection: 
 - m365-security
 - tier2
+- mde-asr
 search.appverid: met150
 ms.date: 12/18/2020
 ---

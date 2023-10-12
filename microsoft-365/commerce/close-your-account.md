@@ -51,7 +51,7 @@ Delete all users except for one global admin. The global admin completes the ste
 If users are synchronized from on-premises, first turn off sync, then delete the users in the cloud directory by using the Azure portal or Azure PowerShell cmdlets. For more information, see [Delete Microsoft 365 user accounts with PowerShell](../enterprise/delete-and-restore-user-accounts-with-microsoft-365-powershell.md).
 
 - To delete users, see [User management admin: Delete one or more users](../admin/add-users/delete-a-user.md#user-management-admin-delete-one-or-more-users-from-microsoft-365).
-- To delete users in bulk, use the [Remove-MsolUser](/powershell/module/msonline/remove-msoluser) PowerShell cmdlet.
+- To delete users in bulk, use the [Remove-MgUser](/powershell/module/microsoft.graph.users/remove-mguser) Microsoft Graph PowerShell cmdlet.
 
 If your organization uses Active Directory that synchronizes with Microsoft Azure Active Directory (Azure AD), delete the user account from Active Directory, instead. For instructions, see [Bulk delete users in Azure Active Directory](/azure/active-directory/users-groups-roles/users-bulk-delete).
 
@@ -103,3 +103,4 @@ After you complete this final step, your account with Microsoft is closed and de
 [Understand your invoice for your Microsoft MCA billing account](billing-and-payments/understand-your-invoice.md) (article)\
 [Understand your invoice for your Microsoft MOSA billing account](billing-and-payments/understand-your-invoice2.md) (article)\
 [Cancel your Microsoft business subscription](subscriptions/cancel-your-subscription.md) (article)
+

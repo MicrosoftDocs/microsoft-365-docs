@@ -28,7 +28,7 @@ Microsoft 365 Lighthouse lets you change or reset user passwords. You can reset 
 
 ## Reset a password for a user
 
-1. In the left navigation pane in Lighthouse, select **Users** > **Account management** > **Search users**.
+1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Users** > **Account management** > **Search users**.
 
 2. On the **Search users** tab, enter a user's name in the search box.
 
@@ -46,7 +46,7 @@ Microsoft 365 Lighthouse lets you change or reset user passwords. You can reset 
 
 ## Reset a password for a risky user
 
-1. In the left navigation pane in Lighthouse, select **Users** > **Risky users**.
+1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Users** > **Risky users**.
 
 2. On the **Risky Users** page, select a risky user from the list.
 

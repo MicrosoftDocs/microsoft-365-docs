@@ -6,8 +6,7 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: conceptual 
-ms.service: microsoft-365-security
-ms.subservice: m365bp
+ms.service: microsoft-365-business
 ms.date: 09/15/2022
 ms.localizationpriority: medium
 ms.collection:

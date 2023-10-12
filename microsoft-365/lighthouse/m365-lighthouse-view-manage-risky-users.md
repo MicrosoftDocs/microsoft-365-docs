@@ -49,7 +49,7 @@ The following conditions must be met before users can appear in the risky users 
 
 In Azure AD Identity Protection, risk detections include any identified suspicious actions related to user accounts in Azure AD.
 
-1. In the left navigation pane in Lighthouse, select **Users** > **Risky users**.
+1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Users** > **Risky users**.
 
 2. On the **Risky Users** page, review the users in the list with a risk state of **At risk**.
 
@@ -69,7 +69,7 @@ In Azure AD Identity Protection, risk detections include any identified suspicio
 
 To take action on multiple affected users at once:
 
-1. In the left navigation pane in Lighthouse, select **Users** > **Risky users**.
+1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Users** > **Risky users**.
 
 2. On the **Risky Users** page, select the set of users you want to take action on.
 
