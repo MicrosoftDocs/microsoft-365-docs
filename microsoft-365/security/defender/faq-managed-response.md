@@ -34,12 +34,9 @@ The following section lists down questions you or your SOC team might have regar
 |---------|---------|
 | **What is managed response?** | Microsoft Defender Experts for XDR offers **managed response** where our experts manage the entire remediation process for incidents that require them. This process includes investigating the incident to identify the root cause, determining the required response actions, and taking those actions on your behalf.|
 
-| **What actions are in scope for managed response?** | All actions found below are in scope for Managed Response for any device and user that is not excluded.|
-
-| **Category** | **Actions** |
-|------------|------------|
-| **Device** | <br><br>Isolate machine<br><br>Release from isolation<br><br>Run antivirus scan<br><br>Stop and quarantine file<br><br>Release from quarantine<br><br>Restrict app execution<br><br>Remove app restriction|
-| **User** | Force password reset<br><br>Disable user<br><br>Enable user<br><br>Suspend user<br><br>Unsuspend user<br><br>Revoke user tokens<br><br>Soft delete emails |
+| **What actions are in scope for managed response?** | All actions found below are in scope for Managed Response for any device and user that is not excluded. <br><br>
+ *For devices* <ul><li>Isolate machine<br><li>Release from isolation<br><li>Run antivirus scan<br><li>Stop and quarantine file<br><li>Release from quarantine<br><li>Restrict app execution<br><li>Remove app restriction</ul><br>|
+*User* <br><li>Force password reset<br><li>Disable user<br><li>Enable user<br><li>Suspend user<br><li>Unsuspend user<br><li>Revoke user tokens<br><li>Soft delete emails </ul><br>|
 
 | **Can I customize the extent of managed response?** | You can configure the extent to which our experts do managed response actions on your behalf by excluding certain devices and users (individually or by groups) either during onboarding or later by modifying your service's settings. |
 
