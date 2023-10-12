@@ -42,6 +42,7 @@ You can also get product updates and important notifications through the [messag
 
 ## October 2023
 
+- (Preview) You can now get email notifications for manual or automated actions done in Microsoft 365 Defender. Learn how to configure email notifications for manual or automated response actions performed in the portal. For details, see [Get email notifications for response actions in Microsoft 365 Defender](m365d-response-actions-notifications.md).
 - (Preview) [Microsoft Security Copilot in Microsoft 365 Defender](security-copilot-in-microsoft-365-defender.md) is now in preview. Microsoft 365 Defender users can take advantage of Security Copilot capabilities to summarize incidents, analyze scripts and codes, use guided responses to resolve incidents, generate KQL queries, and create incident reports within the portal. Security Copilot is on an invitation-only preview. Learn more about Security Copilot in the [Microsoft Security Copilot Early Access Program Frequently Asked Questions](/security-copilot/faq-security-copilot).
 
 ## September 2023

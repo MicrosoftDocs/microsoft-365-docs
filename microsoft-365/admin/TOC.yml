@@ -221,8 +221,6 @@
               href: email/convert-user-mailbox-to-shared-mailbox.md
             - name: Remove a license from a shared mailbox
               href: email/remove-license-from-shared-mailbox.md
-            - name: Resolve issues with shared mailboxes
-              href: email/resolve-issues-with-shared-mailboxes.md
         - name: Set up Focused Inbox
           href: setup/configure-focused-inbox.md
         - name: Add user or contact to distribution group

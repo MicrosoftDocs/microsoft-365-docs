@@ -43,7 +43,7 @@ This guide outlines what to expect and how to access the summarizing capability 
 
 ## Technical requirements
 
-[Learn about the requirements for Security Copilot to get started](/security-copilot/get-started-security-copilot).
+[Learn how you can get started with Security Copilot](/security-copilot/get-started-security-copilot).
 
 ## Summarize an incident
 
