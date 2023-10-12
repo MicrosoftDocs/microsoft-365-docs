@@ -98,11 +98,11 @@ The Microsoft 365 Defender user experience now includes additional visual cues t
 
 For more information, see [view attack disruption details and results](autoad-results.md).
 
-
 ## Next steps
 
 - [Configuring automatic attack disruption in Microsoft 365 Defender](configure-attack-disruption.md)
 - [View details and results](autoad-results.md)
+- [Get email notifications for response actions](m365d-response-actions-notifications.md)
 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
