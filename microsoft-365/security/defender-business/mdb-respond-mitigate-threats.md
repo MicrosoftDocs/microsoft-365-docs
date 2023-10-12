@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 09/06/2023
+ms.date: 10/10/2023
 ms.reviewer: nehabha
 f1.keywords: NOCSH 
 ms.collection: 
@@ -46,10 +46,11 @@ The Microsoft 365 Defender portal enables your security team to respond to and m
 
    :::image type="content" source="../../media/defender-business/mdb-deviceinventory-selecteddeviceflyout-menu.png" alt-text="Screenshot of available actions for a selected device":::
 
-6. Select an available action. For example, you might choose **Run antivirus scan**, which will cause Microsoft Defender Antivirus to start a quick scan on the device. Or, you could select **Initiate Automated Investigation** to trigger an automated investigation on the device.
+6. Select an available action. For example, you might choose **Run antivirus scan**, which starts a quick scan with Microsoft Defender Antivirus on the device. Or, you could select **Initiate Automated Investigation** to trigger an automated investigation on the device.
 
 ## Next steps
 
+- [Learn about automatic attack disruption](mdb-attack-disruption.md)
 - [Review remediation actions in the Action center](mdb-review-remediation-actions.md)
 - [Manage devices in Defender for Business](mdb-manage-devices.md)
 - [View and manage incidents in Defender for Business](mdb-view-manage-incidents.md)
