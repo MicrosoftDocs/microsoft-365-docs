@@ -33,9 +33,8 @@ The following section lists down questions you or your SOC team might have regar
 | Questions | Answers |
 |---------|---------|
 | **What is managed response?** |
-
 | Category | Actions |
-|---------|---------|
+<br><br>
 | **Device** | Isolate machine<br><br>Release from isolation<br><br>Run antivirus scan<br><br>Stop and quarantine file<br><br>Release from quarantine<br><br>Restrict app execution<br><br>Remove app restriction<br><br>
 |---------|---------|
 **User** | Force password reset<br><br>Disable user<br><br>Enable user<br><br>Suspend user<br><br>Unsuspend user<br><br>Revoke user tokens<br><br>Soft delete emails |
