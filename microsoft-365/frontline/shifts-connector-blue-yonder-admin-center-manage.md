@@ -26,7 +26,9 @@ ms.date: 3/01/2023
 
 The [Microsoft Teams Shifts connector for Blue Yonder](shifts-connectors.md#microsoft-teams-shifts-connector-for-blue-yonder)  enables you to integrate the Shifts app in Microsoft Teams with Blue Yonder Workforce Management (Blue Yonder WFM). Your frontline workers can seamlessly view and manage their schedules in Blue Yonder WFM from within Shifts.
 
-You can use the [Shifts connector wizard](shifts-connector-wizard.md) in the Microsoft 365 admin center or [PowerShell](shifts-connector-blue-yonder-powershell-setup.md) to create a connection and connection instances. After they're set up, you can manage them in the Microsoft 365 admin center. The Connector Management Console page lists each connection and connection instance that you've set up, along with information such as health status and sync interval details. You can also access the wizard to create a new connection and connection instances or make changes to any of your existing ones. Select the name of a connection instance to view the details of any errors.
+You can use the [Shifts connector wizard](shifts-connector-wizard.md) in the Microsoft 365 admin center or [PowerShell](shifts-connector-blue-yonder-powershell-setup.md) to create a connection and connection instances. After they're set up, you can manage them in the Microsoft 365 admin center.
+
+The Connector Management Console page lists each connection and connection instance that you've set up, along with information such as health status and sync interval details. You can also access the wizard to create a new connection and connection instances or make changes to any of your existing ones. Select the name of a connection instance to view the details of any errors.
 
 > [!NOTE]
 > You can also use PowerShell to manage a connection. For example, you can view an error report, change connection settings, and disable sync. To learn more, see [Use PowerShell to manage your Shifts connection to Blue Yonder Workforce Management](shifts-connector-powershell-manage.md).
@@ -85,7 +87,7 @@ To edit your connection instance settings, choose the data that your Shifts user
 
 To edit your connection instance mappings, you can:
 
-- Add new mappings, by following the same process as when you first create your connection instance. See [Map Blue Yonder Workforce Management instances to teams](shifts-connector-wizard.md#map-blue-yonder-workforce-management-instances-to-teams)
+- Add new mappings, by following the same process as when you first create your connection instance. See [Map Blue Yonder WFM instances to teams](shifts-connector-wizard.md#map-wfm-instances-to-teams)
 - Edit existing mappings to update the team in Teams to which a Blue Yonder WFM instance is connected.
   If you're mapping to team in Teams that previously used Shifts, make sure you [remove schedule entities from teams you want to map](shifts-connector-wizard.md##remove-schedule-entities-from-teams-you-want-to-map).
 - Delete active mappings, either by clearing the checkbox of the mapped Blue Yonder WFM instance, or by uploading the CSV file with the mapping rows removed.
