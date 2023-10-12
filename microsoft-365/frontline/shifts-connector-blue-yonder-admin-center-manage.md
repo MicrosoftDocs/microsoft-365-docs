@@ -81,13 +81,13 @@ To edit your connection instance settings, choose the data that your Shifts user
 > - Swap requests: **Shifts users will not see provider data**
 > - Time off requests: **Shifts users will not see provider data**
 >
-> After you edit your settings, make sure you follow the steps to [disable open shifts, open shifts requests, swap requests, and time off requests](shifts-connector-wizard#disable-open-shifts-open-shifts-requests-swap-requests-and-time-off-requests).
+> After you edit your settings, make sure you follow the steps to [disable open shifts, open shifts requests, swap requests, and time off requests](shifts-connector-wizard.md#disable-open-shifts-open-shifts-requests-swap-requests-and-time-off-requests).
 
 To edit your connection instance mappings, you can:
 
-- Add new mappings, by following the same process as when you first create your connection instance. See [Map Blue Yonder Workforce Management instances to teams](shifts-connector-wizard#map-blue-yonder-workforce-management-instances-to-teams)
+- Add new mappings, by following the same process as when you first create your connection instance. See [Map Blue Yonder Workforce Management instances to teams](shifts-connector-wizard.md#map-blue-yonder-workforce-management-instances-to-teams)
 - Edit existing mappings to update the team in Teams to which a Blue Yonder WFM instance is connected.
-  If you're mapping to team in Teams that previously used Shifts, make sure you [remove schedule entities from teams you want to map](shifts-connector-wizard?#remove-schedule-entities-from-teams-you-want-to-map).
+  If you're mapping to team in Teams that previously used Shifts, make sure you [remove schedule entities from teams you want to map](shifts-connector-wizard.md##remove-schedule-entities-from-teams-you-want-to-map).
 - Delete active mappings, either by clearing the checkbox of the mapped Blue Yonder WFM instance, or by uploading the CSV file with the mapping rows removed.
   
 ## List of error messages
