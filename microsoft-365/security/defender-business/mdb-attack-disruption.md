@@ -4,7 +4,7 @@ description: Learn about automatic attack disruption in Microsoft Defender for B
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-ms.date: 10/10/2023
+ms.date: 10/12/2023
 ms.topic: conceptual
 ms.service: microsoft-365-security
 ms.subservice: mdb
@@ -40,7 +40,6 @@ Automated response actions include:
 
 - Containing a device by blocking incoming/outgoing communication
 - Containing a user account by disconnecting current user connections at the device level
-- Disabling a user account by automatically suspending the account in Azure Active Directory
 
 > [!IMPORTANT]
 > - To view information about a detected advanced attack, you must have the Security Reader, Security Administrator, or Global Administrator role assigned.
@@ -57,15 +56,12 @@ Automated response actions include:
 
 4. When you're ready to release a contained device or user account, or re-enable a user account, take one of the following steps:
 
-   1. To release a contained device, select the device, and then choose **Release from containment**.
-
-   2. To release a contained user, select the user account, and then, in the side pane, select **Undo**.
-
-   3. To re-enable a user account, select the user account, and then select **Enable user**.
+   - To release a contained device, select the device, and then choose **Release from containment**.
+   - To release a contained user, select the user account, and then, in the side pane, select **Undo**.
 
 Disrupted incidents include a tag for `Attack Disruption` and the specific threat type identified (such as ransomware). If your IT/security team receives [incident email notifications](mdb-email-notifications.md), these tags also appear in the emails.
 
-When an incident is disrupted, highlighted text appears below the incident title. Disabled user accounts and contained devices/users appear with a label indicating their status. 
+When an incident is disrupted, highlighted text appears below the incident title. Contained devices or user accounts are listed with a label that indicates their status. 
 
 ## Track attack disruption actions in the Action center
 
