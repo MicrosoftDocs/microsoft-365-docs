@@ -29,7 +29,7 @@ To help protect against human-operated or other advanced attacks, Microsoft 365 
 Automatic attack disruption is designed to:
 
 - Contain advanced attacks that are in progress;
-- Limit the impact and progression of such attacks on your business assets (such as devices); and
+- Limit the impact and progression of attacks on your business assets (like devices); and
 - Provide more time for your IT/security team to remediate an attack fully. 
 
 Automatic attack disruption uses insights from Microsoft security researchers and advanced AI models to counteract the complexities of advanced attacks. It limits a threat actor's progress early on and dramatically reduces the overall impact of an attack, from associated costs to loss of productivity. See some examples at the [Microsoft Security Blog](https://aka.ms/ContainUserSecBlog).
