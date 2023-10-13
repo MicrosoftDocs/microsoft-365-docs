@@ -78,6 +78,8 @@ It is important to understand that you have different app configuration options 
 
 ## How does it work?
 
+|   |   |
+|---|---|
 | :::image type="content" source="../media/configure-managed-apps/step1.png" alt-text="Setup and deploy Intune" border="false" ::: | The first step towards managing   devices and apps at your organization involves setting up Microsoft Intune.   For more information, see [Deploying   Intune](/microsoft-365/solutions/apps-guide-overview#deploying-intune). |
 | :::image type="content" source="../media/configure-managed-apps/step2.png" alt-text="Add app   to Intune" border="false" ::: | After you have set up Intune, consider whether you plan to manage devices and/or apps. When you're ready,   add apps that you want to manage to Intune. For more information, see [Add   apps to Microsoft Intune overview](/microsoft-365/solutions/apps-add-overview). |
 | :::image type="content" source="../media/configure-managed-apps/step3.png" alt-text="Determine your management deployment model" border="false" ::: | Determine whether you want to   manage only devices, only apps, or both devices and apps. For more   information, see [Determine your management deployment   model](/microsoft-365/solutions/apps-config-overview#determine-your-management-deployment-model). |
