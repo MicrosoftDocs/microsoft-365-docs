@@ -78,15 +78,7 @@ It is important to understand that you have different app configuration options 
 
 ## How does it work?
 
-|   |   |
-|---|---|
-| :::image type="content" source="../media/configure-managed-apps/step1.png" alt-text="Setup and deploy Intune" border="false" ::: | The first step towards managing   devices and apps at your organization involves setting up Microsoft Intune.   For more information, see [Deploying   Intune](/microsoft-365/solutions/apps-guide-overview#deploying-intune). |
-| :::image type="content" source="../media/configure-managed-apps/step2.png" alt-text="Add app   to Intune" border="false" ::: | After you have set up Intune, consider whether you plan to manage devices and/or apps. When you're ready,   add apps that you want to manage to Intune. For more information, see [Add   apps to Microsoft Intune overview](/microsoft-365/solutions/apps-add-overview). |
-| :::image type="content" source="../media/configure-managed-apps/step3.png" alt-text="Determine your management deployment model" border="false" ::: | Determine whether you want to   manage only devices, only apps, or both devices and apps. For more   information, see [Determine your management deployment   model](/microsoft-365/solutions/apps-config-overview#determine-your-management-deployment-model). |
-| :::image type="content" source="../media/configure-managed-apps/step4.png" alt-text="Determine your app configuration delivery channel" border="false" ::: | You can choose to delivery app   configuration policies to the managed devices or the managed app. For more   information, see [Delivery channels for app configuration   policies](/microsoft-365/solutions/apps-config-overview#determine-your-management-deployment-model).  |
-| :::image type="content" source="../media/configure-managed-apps/step5.png" alt-text="Create and assign the app configuration policy" border="false" ::: | When you're ready to create app   configuration policies, following the provided steps to add the most common   apps. If you're planning on managing devices, start by configing the [Company   Portal](apps-config-step-1.md). If you need to configure  common Microsoft apps, choose   [Outlook](apps-config-step-2.md), [M365](apps-config-step-3.md),   [Edge](apps-config-step-4.md), or [Teams](apps-config-step-5.md). In   additional, you can follow the process to configure [other   apps](apps-config-step-6.md). |
-| :::image type="content" source="../media/configure-managed-apps/step6.png" alt-text="Assign the app to end-users" border="false" ::: | As part of creating an app   configuration policy, you can choose how you want to assign the policy. You   can also choose to assign the app configuration policy at a later time by   modifying the policy. |
-| :::image type="content" source="../media/configure-managed-apps/step7.png" alt-text="Verify the app configuration policy" border="false" ::: | To monitor and determine the   status of an app configuration policy, or to Troubleshoot app configuration,   see [Verify app configuration](apps-config-step-7.md). |
+:::image type="content" source="../media/configure-managed-apps/guide.png" alt-text="Common process to configure apps using Microsoft Intune" border="false" :::
 
 ## Delivery channels for app configuration policies
 
