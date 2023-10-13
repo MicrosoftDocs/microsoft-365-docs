@@ -2,8 +2,8 @@
 title: "Configure shared mailbox settings"
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: SKjerland
+ms.author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 08/21/2023
 audience: Admin
@@ -115,7 +115,7 @@ To learn more about litigation hold, see [Create a Litigation Hold](../../compli
 
 2. Select the shared mailbox you want to edit, then select **Members** > **Customize permissions**.
 
-Select Edit next to the permission you want to change for a member.
+   Select Edit next to the permission you want to change for a member.
 
 3. Do one of the following:
    - To give that permission to an additional member, select **Add permissions**, search for or select a member to add, and then select **Save**.
@@ -139,5 +139,4 @@ If you choose not to show the shared mailbox in the global address list, the mai
 [About shared mailboxes](about-shared-mailboxes.md) (article)\
 [Create a shared mailbox](create-a-shared-mailbox.md) (article)\
 [Convert a user mailbox to a shared mailbox](convert-user-mailbox-to-shared-mailbox.md) (article)\
-[Remove a license from a shared mailbox](remove-license-from-shared-mailbox.md) (article)\
-[Resolve issues with shared mailboxes](resolve-issues-with-shared-mailboxes.md) (article)
+[Remove a license from a shared mailbox](remove-license-from-shared-mailbox.md) (article)

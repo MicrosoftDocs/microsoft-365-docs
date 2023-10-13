@@ -39,7 +39,7 @@ Setting up multi-factor authentication for an account in your Microsoft 365 for 
 ![Test Lab Guides for the Microsoft cloud.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> For a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack, go to [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
+> For a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack, go to [Microsoft 365 for enterprise Test Lab Guide Stack](https://download.microsoft.com/download/5/e/4/5e43a139-09c5-4700-b846-e468444bc557/Microsoft365EnterpriseTLGStack.pdf).
   
 ## Phase 1: Build out your Microsoft 365 for enterprise test environment
 

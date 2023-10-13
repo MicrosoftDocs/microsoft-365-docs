@@ -251,6 +251,8 @@
 
     - name: Configure Mobile Threat Defense
       items:
+      - name: Mobile device resources for Defender for Endpoint 
+        href: mobile-resources-defender-endpoint.md
       - name: Configure Defender for Endpoint on Android features
         href: android-configure.md
       - name: Configure Defender for Endpoint on Android risk signals using app protection policy
@@ -437,27 +439,27 @@
       items:
       - name: Attack surface reduction overview
         href: overview-attack-surface-reduction.md
-      - name: Attack surface reduction (ASR) rules
+      - name: Attack surface reduction rules
         items:
         - name: Learn about ASR rules
           href: attack-surface-reduction.md
-        - name: Attack surface reduction (ASR) rules deployment guide
+        - name: Attack surface reduction rules deployment guide
           items:
-          - name: Attack surface reduction (ASR) rules deployment overview
+          - name: Attack surface reduction rules deployment overview
             href: attack-surface-reduction-rules-deployment.md
-          - name: Plan attack surface reduction (ASR) rules deployment
+          - name: Plan attack surface reduction rules deployment
             href: attack-surface-reduction-rules-deployment-plan.md
-          - name: Test attack surface reduction (ASR) rules
+          - name: Test attack surface reduction rules
             href: attack-surface-reduction-rules-deployment-test.md
-          - name: Enable attack surface reduction (ASR) rules
+          - name: Enable attack surface reduction rules
             href: attack-surface-reduction-rules-deployment-implement.md
-          - name: Operationalize attack surface reduction (ASR) rules
+          - name: Operationalize attack surface reduction rules
             href: attack-surface-reduction-rules-deployment-operationalize.md
-        - name: Attack surface reduction (ASR) rules reference
+        - name: Attack surface reduction rules reference
           href: attack-surface-reduction-rules-reference.md
         - name: Attack surface reduction rules report
           href: attack-surface-reduction-rules-report.md
-        - name: Troubleshoot attack surface reduction (ASR) rules
+        - name: Troubleshoot attack surface reduction rules
           href: troubleshoot-asr-rules.md
         - name: Enable ASR rules alternate configuration methods
           href: enable-attack-surface-reduction.md
@@ -577,8 +579,6 @@
           href: cloud-protection-microsoft-antivirus-sample-submission.md
       - name: Configure and validate Microsoft Defender Antivirus network connections
         href: configure-network-connections-microsoft-defender-antivirus.md
-      - name: Specify additional definition sets for network traffic inspection
-        href: specify-additional-definitions-network-traffic-inspection-mdav.md
       - name: Tamper protection
         items:
         - name: Protect security settings with tamper protection
@@ -839,6 +839,8 @@
             href: respond-machine-alerts.md#isolate-devices-from-the-network
           - name: Contain devices from the network
             href: respond-machine-alerts.md#contain-devices-from-the-network
+          - name: Contain user from the network
+            href: respond-machine-alerts.md#contain-user-from-the-network
           - name: Consult a threat expert
             href: respond-machine-alerts.md#consult-a-threat-expert
           - name: Check activity details in Action center
@@ -938,9 +940,9 @@
     - name: Management and APIs
       items:
       - name: Overview of management and APIs
-        href: management-apis.md
+        href: api/management-apis.md
       - name: API release notes
-        href: api-release-notes.md
+        href: api/api-release-notes.md
       - name: Microsoft Defender for Endpoint API
         items:
         - name: Get started
@@ -948,156 +950,156 @@
           - name: Microsoft Defender for Endpoint API license and terms
             href: api-terms-of-use.md
           - name: Access the Microsoft Defender for Endpoint APIs
-            href: apis-intro.md
+            href: api/apis-intro.md
           - name: Hello World
-            href: api-hello-world.md
+            href: api/api-hello-world.md
           - name: Get access with application context
-            href: exposed-apis-create-app-webapp.md
+            href: api/exposed-apis-create-app-webapp.md
           - name: Get access with user context
-            href: exposed-apis-create-app-nativeapp.md
+            href: api/exposed-apis-create-app-nativeapp.md
 
         - name: Microsoft Defender for Endpoint APIs Schema
           items:
           - name: Supported Microsoft Defender for Endpoint APIs
-            href: exposed-apis-list.md
+            href: api/exposed-apis-list.md
           - name: Common REST API error codes
-            href: common-errors.md
+            href: api/common-errors.md
           - name: Advanced Hunting
-            href: run-advanced-query-api.md
+            href: api/run-advanced-query-api.md
 
           - name: Alert
             items:
             - name: Alert methods and properties
-              href: alerts.md
+              href: api/alerts.md
             - name: List alerts
-              href: get-alerts.md
+              href: api/get-alerts.md
             - name: Create alert
-              href: create-alert-by-reference.md
+              href: api/create-alert-by-reference.md
             - name: Batch update alerts
-              href: batch-update-alerts.md
+              href: api/batch-update-alerts.md
             - name: Update Alert
-              href: update-alert.md
+              href: api/update-alert.md
             - name: Get alert information by ID
-              href: get-alert-info-by-id.md
+              href: api/get-alert-info-by-id.md
             - name: Get alert related domains information
-              href: get-alert-related-domain-info.md
+              href: api/get-alert-related-domain-info.md
             - name: Get alert related file information
-              href: get-alert-related-files-info.md
+              href: api/get-alert-related-files-info.md
             - name: Get alert-related IPs information
-              href: get-alert-related-ip-info.md
+              href: api/get-alert-related-ip-info.md
             - name: Get alert-related device information
-              href: get-alert-related-machine-info.md
+              href: api/get-alert-related-machine-info.md
             - name: Get alert-related user information
-              href: get-alert-related-user-info.md
+              href: api/get-alert-related-user-info.md
 
           - name: Assessments of vulnerabilities and secure configurations
             items:
             - name: Export assessment methods and properties
-              href: get-assessment-methods-properties.md
+              href: api/get-assessment-methods-properties.md
             - name: Export secure configuration assessment
-              href: get-assessment-secure-config.md
+              href: api/get-assessment-secure-config.md
             - name: Export software inventory assessment
-              href: get-assessment-software-inventory.md
+              href: api/get-assessment-software-inventory.md
             - name: Export non product code software inventory assessment
-              href: get-assessment-non-cpe-software-inventory.md
+              href: api/get-assessment-non-cpe-software-inventory.md
             - name: Export software vulnerabilities assessment
-              href: get-assessment-software-vulnerabilities.md
+              href: api/get-assessment-software-vulnerabilities.md
 
           - name: Authenticated scan
             items:
             - name: Authenticated scan methods and properties
-              href: get-authenticated-scan-properties.md
+              href: api/get-authenticated-scan-properties.md
             - name: Get all scan definitions
-              href: get-all-scan-definitions.md
+              href: api/get-all-scan-definitions.md
             - name: Add, delete or update a scan definition
-              href: add-a-new-scan-definition.md
+              href: api/add-a-new-scan-definition.md
             - name: Get all scan agents
-              href: get-all-scan-agents.md
+              href: api/get-all-scan-agents.md
             - name: Get scan agent by Id
-              href: get-agent-details.md
+              href: api/get-agent-details.md
             - name: Get scan history by definition
-              href: get-scan-history-by-definition.md
+              href: api/get-scan-history-by-definition.md
             - name: Get scan history by session
-              href: get-scan-history-by-session.md
+              href: api/get-scan-history-by-session.md
 
           - name: Browser extensions
             items:
             - name: Export browser extensions assessment
-              href: get-assessment-browser-extensions.md
+              href: api/get-assessment-browser-extensions.md
             - name: Get browser extensions permission information
-              href: get-browser-extensions-permission-info.md
+              href: api/get-browser-extensions-permission-info.md
 
           - name: Automated investigation
             items:
             - name: Investigation methods and properties
-              href: investigation.md
+              href: api/investigation.md
             - name: List Investigation
-              href: get-investigation-collection.md
+              href: api/get-investigation-collection.md
             - name: Get Investigation
-              href: get-investigation-object.md
+              href: api/get-investigation-object.md
             - name: Start Investigation
-              href: initiate-autoir-investigation.md
+              href: api/initiate-autoir-investigation.md
 
           - name: Device Health
             items:
             - name: Export device health methods and properties
-              href: device-health-api-methods-properties.md
+              href: api/device-health-api-methods-properties.md
             - name: Export device antivirus health report
-              href: device-health-export-antivirus-health-report-api.md
+              href: api/device-health-export-antivirus-health-report-api.md
 
           - name: Certificate inventory
             items:
             - name: Export certificate inventory assessment
-              href: export-certificate-inventory-assessment.md
+              href: api/export-certificate-inventory-assessment.md
 
           - name: Domain
             items:
             - name: Get domain related alerts
-              href: get-domain-related-alerts.md
+              href: api/get-domain-related-alerts.md
             - name: Get domain related machines
-              href: get-domain-related-machines.md
+              href: api/get-domain-related-machines.md
             - name: Get domain statistics
-              href: get-domain-statistics.md
+              href: api/get-domain-statistics.md
 
           - name: File
             items:
             - name: File methods and properties
-              href: files.md
+              href: api/files.md
             - name: Get file information
-              href: get-file-information.md
+              href: api/get-file-information.md
             - name: Get file related alerts
-              href: get-file-related-alerts.md
+              href: api/get-file-related-alerts.md
             - name: Get file related machines
-              href: get-file-related-machines.md
+              href: api/get-file-related-machines.md
             - name: Get file statistics
-              href: get-file-statistics.md
+              href: api/get-file-statistics.md
 
           - name: Indicators
             items:
             - name: Indicators methods and properties
-              href: ti-indicator.md
+              href: api/ti-indicator.md
             - name: List Indicators
-              href: get-ti-indicators-collection.md
+              href: api/get-ti-indicators-collection.md
             - name: Submit Indicator
-              href: post-ti-indicator.md
+              href: api/post-ti-indicator.md
             - name: Import Indicator
-              href: import-ti-indicators.md
+              href: api/import-ti-indicators.md
             - name: Delete Indicator
-              href: delete-ti-indicator-by-id.md
+              href: api/delete-ti-indicator-by-id.md
 
             - name: Batch Delete Indicators
-              href: batch-delete-ti-indicators.md
+              href: api/batch-delete-ti-indicators.md
           - name: Information gathering
             items:
             - name: Export information gathering assessment
-              href: get-assessment-information-gathering.md
+              href: api/get-assessment-information-gathering.md
 
           - name: IP
             items:
             - name: Get IP related alerts
-              href: get-ip-related-alerts.md
+              href: api/get-ip-related-alerts.md
             - name: Get IP statistics
-              href: get-ip-statistics.md
+              href: api/get-ip-statistics.md
 
           - name: Live response library
             items:
@@ -1113,181 +1115,178 @@
           - name: Machine
             items:
             - name: Machine methods and properties
-              href: machine.md
+              href: api/machine.md
             - name: List machines
-              href: get-machines.md
+              href: api/get-machines.md
             - name: Get machine by ID
-              href: get-machine-by-id.md
+              href: api/get-machine-by-id.md
             - name: Get machine log on users
-              href: get-machine-log-on-users.md
+              href: api/get-machine-log-on-users.md
             - name: Get machine related alerts
-              href: get-machine-related-alerts.md
+              href: api/get-machine-related-alerts.md
             - name: Get installed software
-              href: get-installed-software.md
+              href: api/get-installed-software.md
             - name: Get discovered vulnerabilities
-              href: get-discovered-vulnerabilities.md
+              href: api/get-discovered-vulnerabilities.md
             - name: Get security recommendations
-              href: get-security-recommendations.md
+              href: api/get-security-recommendations.md
             - name: Add or remove a machine tag
-              href: add-or-remove-machine-tags.md
+              href: api/add-or-remove-machine-tags.md
             - name: Add or remove a tag from multiple machines
-              href: add-or-remove-multiple-machine-tags.md
+              href: api/add-or-remove-multiple-machine-tags.md
             - name: Find machines by IP
-              href: find-machines-by-ip.md
+              href: api/find-machines-by-ip.md
             - name: Find device information by internal IP
-              href: find-machine-info-by-ip.md
+              href: api/find-machine-info-by-ip.md
             - name: Find machines by tag
-              href: find-machines-by-tag.md
+              href: api/find-machines-by-tag.md
             - name: Get missing KBs
-              href: get-missing-kbs-machine.md
+              href: api/get-missing-kbs-machine.md
             - name: Set device value
-              href: set-device-value.md
+              href: api/set-device-value.md
             - name: Update machine
-              href: update-machine-method.md
+              href: api/update-machine-method.md
 
           - name: Machine Action
             items:
             - name: Machine Action methods and properties
-              href: machineaction.md
+              href: api/machineaction.md
             - name: List Machine Actions
-              href: get-machineactions-collection.md
+              href: api/get-machineactions-collection.md
             - name: Get Machine Action
-              href: get-machineaction-object.md
+              href: api/get-machineaction-object.md
             - name: Collect investigation package
-              href: collect-investigation-package.md
+              href: api/collect-investigation-package.md
             - name: Get investigation package SAS URI
-              href: get-package-sas-uri.md
+              href: api/get-package-sas-uri.md
             - name: Get live response result
-              href: get-live-response-result.md
+              href: api/get-live-response-result.md
             - name: Isolate machine
-              href: isolate-machine.md
+              href: api/isolate-machine.md
             - name: Release machine from isolation
-              href: unisolate-machine.md
+              href: api/unisolate-machine.md
             - name: Restrict app execution
-              href: restrict-code-execution.md
+              href: api/restrict-code-execution.md
             - name: Remove app restriction
-              href: unrestrict-code-execution.md
+              href: api/unrestrict-code-execution.md
             - name: Run antivirus scan
-              href: run-av-scan.md
+              href: api/run-av-scan.md
             - name: Run live response
-              href: run-live-response.md
+              href: api/run-live-response.md
             - name: Offboard machine
-              href: offboard-machine-api.md
+              href: api/offboard-machine-api.md
             - name: Stop and quarantine file
-              href: stop-and-quarantine-file.md
+              href: api/stop-and-quarantine-file.md
             - name: Cancel machine action
-              href: cancel-machine-action.md
+              href: api/cancel-machine-action.md
 
           - name: Recommendation
             items:
             - name: Recommendation methods and properties
               href: recommendation.md
             - name: List all recommendations
-              href: get-all-recommendations.md
+              href: api/get-all-recommendations.md
             - name: Get recommendation by ID
-              href: get-recommendation-by-id.md
+              href: api/get-recommendation-by-id.md
             - name: Get recommendation by software
-              href: list-recommendation-software.md
+              href: api/list-recommendation-software.md
             - name: List machines by recommendation
-              href: get-recommendation-machines.md
+              href: api/get-recommendation-machines.md
             - name: List vulnerabilities by recommendation
-              href: get-recommendation-vulnerabilities.md
+              href: api/get-recommendation-vulnerabilities.md
 
           - name: Remediation activity
             items:
             - name: Remediation activity methods and properties
-              href: get-remediation-methods-properties.md
+              href: api/get-remediation-methods-properties.md
             - name: Get one remediation activity by ID
-              href: get-remediation-one-activity.md
+              href: api/get-remediation-one-activity.md
             - name: List all remediation activities
-              href: get-remediation-all-activities.md
+              href: api/get-remediation-all-activities.md
             - name: List exposed devices of one remediation activity
-              href: get-remediation-exposed-devices-activities.md
+              href: api/get-remediation-exposed-devices-activities.md
 
           - name: Score
             items:
             - name: Score methods and properties
-              href: score.md
+              href: api/score.md
             - name: List exposure score by machine group
-              href: get-machine-group-exposure-score.md
+              href: api/get-machine-group-exposure-score.md
             - name: Get exposure score
-              href: get-exposure-score.md
+              href: api/get-exposure-score.md
             - name: Get device secure score
-              href: get-device-secure-score.md
+              href: api/get-device-secure-score.md
 
           - name: Security baselines
             items:
             - name: Export security baselines assessment
-              href: export-security-baseline-assessment.md
+              href: api/export-security-baseline-assessment.md
             - name: List security baselines assessment profiles
-              href: get-security-baselines-assessment-profiles.md
+              href: api/get-security-baselines-assessment-profiles.md
             - name: Get baseline profile configurations
-              href: get-security-baselines-assessment-configurations.md
+              href: api/get-security-baselines-assessment-configurations.md
 
           - name: Software
             items:
             - name: Software methods and properties
-              href: software.md
+              href: api/software.md
             - name: List software
-              href: get-software.md
+              href: api/get-software.md
             - name: Get software by ID
-              href: get-software-by-id.md
+              href: api/get-software-by-id.md
             - name: List software version distribution
-              href: get-software-ver-distribution.md
+              href: api/get-software-ver-distribution.md
             - name: List machines by software
-              href: get-machines-by-software.md
+              href: api/get-machines-by-software.md
             - name: List vulnerabilities by software
-              href: get-vuln-by-software.md
+              href: api/get-vuln-by-software.md
             - name: Get missing KBs
-              href: get-missing-kbs-software.md
-            - name: Get KB collection API
-              href: get-machinegroups-collection.md
-
+              href: api/get-missing-kbs-software.md
           - name: User
             items:
             - name: User methods
-              href: user.md
+              href: api/user.md
             - name: Get user related alerts
-              href: get-user-related-alerts.md
+              href: api/get-user-related-alerts.md
             - name: Get user related machines
-              href: get-user-related-machines.md
+              href: api/get-user-related-machines.md
 
           - name: Vulnerability
             items:
             - name: Vulnerability methods and properties
-              href: vulnerability.md
+              href: api/vulnerability.md
             - name: List vulnerabilities
-              href: get-all-vulnerabilities.md
+              href: api/get-all-vulnerabilities.md
             - name: List vulnerabilities by machine and software
-              href: get-all-vulnerabilities-by-machines.md
+              href: api/get-all-vulnerabilities-by-machines.md
             - name: Get vulnerability by ID
-              href: get-vulnerability-by-id.md
+              href: api/get-vulnerability-by-id.md
             - name: List machines by vulnerability
-              href: get-machines-by-vulnerability.md
+              href: api/get-machines-by-vulnerability.md
 
         - name: How to use APIs - Samples
           items:
           - name: Power Automate
             href: api-microsoft-flow.md
           - name: Power BI
-            href: api-power-bi.md
+            href: api/api-power-bi.md
           - name: Advanced Hunting using Python
-            href: run-advanced-query-sample-python.md
+            href: api/run-advanced-query-sample-python.md
           - name: Advanced Hunting using PowerShell
-            href: run-advanced-query-sample-powershell.md
+            href: api/run-advanced-query-sample-powershell.md
           - name: Using OData Queries
-            href: exposed-apis-odata-samples.md
+            href: api/exposed-apis-odata-samples.md
           - name: Advanced Hunting with PowerShell API Guide
-            href: exposed-apis-full-sample-powershell.md
+            href: api/exposed-apis-full-sample-powershell.md
 
       - name: Raw data streaming API
         items:
         - name: Raw data streaming
-          href: raw-data-export.md
+          href: api/raw-data-export.md
         - name: Stream advanced hunting events to Azure Events hub
-          href: raw-data-export-event-hub.md
+          href: api/raw-data-export-event-hub.md
         - name: Stream advanced hunting events to your storage account
-          href: raw-data-export-storage.md
+          href: api/raw-data-export-storage.md
 
       - name: SIEM integration
         items:
@@ -1348,14 +1347,6 @@
         href: conditional-access.md
       - name: Microsoft Defender for Cloud Apps integration overview
         href: microsoft-cloud-app-security-integration.md
-
-    - name: Access the Microsoft Defender for Endpoint Community Center
-      href: community.md
-
-    - name: Helpful resources
-      href: helpful-resources.md
-
-
   - name: Troubleshoot
     items:
     - name: Troubleshoot onboarding issues
@@ -1402,8 +1393,6 @@
           href: manage-profiles-approve-sys-extensions-intune.md
         - name: JamF
           href: manage-sys-extensions-using-jamf.md
-        - name: Other MDM
-          href: manage-sys-extensions-other-mdm.md
         - name: Manual deployment
           href: manage-sys-extensions-manual-deployment.md
 

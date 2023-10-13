@@ -18,6 +18,7 @@ ms.topic: overview
 ms.collection: 
 - m365-security
 - tier2
+- mde-linux
 search.appverid: met150
 ms.date: 02/17/2023
 ---

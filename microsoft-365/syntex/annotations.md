@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: kkameth
-ms.date: 05/17/2023
+ms.date: 09/21/2023
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -29,7 +29,7 @@ The feature is currently available for the following file types: .ai, .dwg, .epu
 More annotation tools and file types will be added in future releases.
 
 > [!NOTE]
-> This feature is available only for users who are licensed for Syntex. 
+> This feature is available only for licensed Syntex users. 
 
 ## To use annotations
 

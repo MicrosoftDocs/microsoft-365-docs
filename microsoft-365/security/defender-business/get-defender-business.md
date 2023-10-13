@@ -62,7 +62,7 @@ Defender for Business provides advanced security protection for your company's d
    It might take a few hours for your tenant to finish provisioning before you can onboard devices or complete the setup and configuration process.
 
 > [!NOTE]
-> If you have Microsoft 365 Business Premium and you haven't set it up yet, see [Microsoft 365 Business Premium – productivity and cybersecurity for small business](../../business-premium/index.md). This guidance walks you through how to set up and configure all of your productivity and security capabilities, including Defender for Business.
+> If you have Microsoft 365 Business Premium and you haven't set it up yet, see [Microsoft 365 Business Premium – productivity and cybersecurity for small business](../../business-premium/m365bp-overview.md). This guidance walks you through how to set up and configure all of your productivity and security capabilities, including Defender for Business.
 
 ## [Get Microsoft 365 Business Premium](#tab/getpremium)
 
@@ -79,7 +79,7 @@ Microsoft 365 Business Premium includes Defender for Business, Microsoft Defende
 5. Follow the guidance in [Boost your security protection](../../business-premium/m365bp-security-overview.md) to set up your security capabilities.
 
 > [!IMPORTANT]
-> Make sure to complete all the steps described in [Microsoft 365 Business Premium – productivity and cybersecurity for small business](../../business-premium/index.md).
+> Make sure to complete all the steps described in [Microsoft 365 Business Premium – productivity and cybersecurity for small business](../../business-premium/m365bp-overview.md).
 
 ## [Work with a Microsoft partner](#tab/findpartner)
 
@@ -113,7 +113,7 @@ Microsoft Defender for Business servers is an add-on to Defender for Business th
 4. Review the information, and complete the purchase process. You need one Microsoft Defender for Business servers license for each instance of Windows Server or Linux, and you don't assign that license to users or devices. 
 
 > [!IMPORTANT]
-> - In order to add on Microsoft Defender for Business servers, you'll need at least one paid license for [Defender for Business](mdb-overview.md) (standalone) or [Microsoft 365 Business Premium](../../business-premium/index.md). 
+> - In order to add on Microsoft Defender for Business servers, you'll need at least one paid license for [Defender for Business](mdb-overview.md) (standalone) or [Microsoft 365 Business Premium](../../business-premium/m365bp-overview.md). 
 > - There's a limit of 60 Microsoft Defender for Business servers licenses per subscription to Microsoft 365 Business Premium or Defender for Business.
 > - If preferred, you could use [Microsoft Defender for Servers Plan 1 or Plan 2](/azure/defender-for-cloud/plan-defender-for-servers) instead to onboard your servers. To learn more, see [What happens if I have a mix of Microsoft endpoint security subscriptions](mdb-faq.yml#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions)?
    

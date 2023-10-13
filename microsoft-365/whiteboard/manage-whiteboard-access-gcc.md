@@ -1,6 +1,6 @@
 ---
 title: Manage access to Microsoft Whiteboard for GCC environments
-ms.author: v-jdeweese
+ms.author: alexfaulkner
 author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: 
@@ -8,7 +8,7 @@ ms.date: 05/05/2022
 audience: admin
 ms.topic: article
 ms.custom: 
-ms.service: microsoft-365-enterprise
+ms.service: whiteboard
 search.appverid: MET150
 ms.collection: 
 ms.localizationpriority: medium
