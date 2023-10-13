@@ -79,7 +79,7 @@ sections:
           1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Your products</a> page, select the **Volume licensing** tab, then select **View Reservation**.
           2. Search for the reservation order that you want to view details of or cancel through the search bar on the top right: by Reservation ID, Licensing Contract ID, or organization.
             > [!NOTE]
-            ? A message appears if you don't have any previous reservations.
+            > A message appears if you don't have any previous reservations.
           3. Copy the reservation ID and then select the **Cancel** button under the **Action** column.
           4. Paste the reservation ID and enter the reason for cancellation.
           5. Select **OK** to cancel the reservation.
@@ -111,7 +111,7 @@ sections:
 
           - **Standard Reservations**: Products configured for this type of reservation are available to customers with a valid Enterprise Agreement and Microsoft 365 admin center sign-in credentials.
           - **License Reservation Only**: Products configured for this type of reservation require that customers have either a prior purchase (Order history) or Price fixed (Special Pricing) to see the offer on Microsoft 365 Admin center for reservation. This category includes some of our more complex product configurations such as Add On services that require a base license. Microsoft uses this categorization to reduce the risk that customers unintentionally order incorrect services. Your Microsoft Licensing Solution Partner should be able to assist you in placing the necessary orders.
-          - •	A third category of Services aren't configured for online reservation, so your Microsoft Licensing Solution Partner needs to always place a manual order.
+          - A third category of Services aren't configured for online reservation, so your Microsoft Licensing Solution Partner needs to always place a manual order.
 
           >[!NOTE]
           >

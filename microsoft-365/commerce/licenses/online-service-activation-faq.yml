@@ -30,9 +30,9 @@ sections:
         answer: |
           Open customers can activate online services in two ways:
 
-          - After you order your online services through the Open program family, you'll receive an email with a link and instructions to activate your services.
+          1. After you order your online services through the Open program family, you'll receive an email with a link and instructions to activate your services.
           OR
-          - Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> and sign in with your credentials.
+          2. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> and sign in with your credentials.
             - In the **Navigation menu**, select **Billing** > **Your products**, then select the **Volume licensing** tab.
             - Go to **Product & Services** or **Contracts modules** and under the **Keys** section, select the license ID to manage.
             - Select the **Manage activation** link, then select **Start Activation**. A product activation window opens and prepopulates the key.
@@ -48,7 +48,7 @@ sections:
       - question: |
           What is a work or school account and why do I need one to activate online services?
         answer: |
-          A work or school account is intended for users to sign into the organization Microsoft services. The sign-in typically uses the form *username@orgname.com* or *username@orgname.onmicrosoft.com*, where *orgname* is their organization email domain name.
+          A work or school account is intended for users to sign in to the organization Microsoft services. The sign-in typically uses the form *username@orgname.com* or *username@orgname.onmicrosoft.com*, where *orgname* is their organization email domain name.
 
       - question: |
           How do I know if my organization already has an account?
