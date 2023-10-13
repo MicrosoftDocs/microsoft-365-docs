@@ -30,7 +30,7 @@ To enable Microsoft 365 Archive for a tenant, perform the following steps:
 
 ### Licensing
 
-Before you can use Microsoft 365 Archive, you must first link your Azure subscription in [Syntex pay-as-you-go](../syntex-azure-billing.md). Microsoft 365 Archive is billed based on the [number of gigabytes (GB) archived and number of gigabytes (GB) reactivated](../syntex-pay-as-you-go-services.md).
+Before you can use Microsoft 365 Archive, you must first link your Azure subscription in [Syntex pay-as-you-go](../syntex-azure-billing.md). Microsoft 365 Archive is billed based on the number of gigabytes (GB) archived and number of gigabytes (GB) reactivated. For more information about pricing, see [Pricing model](../syntex-pay-as-you-go-services.md).
 
 To set up pay-as-you-go billing, see [Configure Microsoft Syntex for pay-as-you-go billing at Syntex billing](../syntex-azure-billing.md).
 
