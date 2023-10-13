@@ -3,12 +3,11 @@ title: OneDrive Cross-tenant OneDrive migration Step 3
 ms.author: jhendr
 author: JoanneHendrickson
 manager: serdars
-ms.date: 10/25/2022
+ms.date: 10/13/2023
 recommendations: true
 audience: ITPro
 ms.topic: article
-ms.service: sharepoint-online
-ms.subservice: sharepoint-migration
+ms.service: microsoft-365-migration
 ms.localizationpriority: high
 ms.collection: 
 - SPMigration
