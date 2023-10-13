@@ -37,6 +37,13 @@ ms.date: 12/18/2020
 
 Microsoft regularly publishes software updates to improve performance, security, and to deliver new features.
 
+> [!WARNING]
+> Each version of Defender for Endpoint on macOS is set to expire automatically after 6 months. While expired versions continue to receive security intelligence updates, we recommend that you install the latest version to get all available improvements and enhancements. <br>
+> To check the expiration date, run the following command:
+> ```bash
+> mdatp health --field product_expiration
+> ```
+
 To update Microsoft Defender for Endpoint on macOS, a program named Microsoft AutoUpdate (MAU) is used. MAU checks updates periodically, and automatically downloads and installs them.
 
 :::image type="content" source="images/MDATP-34-MAU.png" alt-text="MAU" lightbox="images/MDATP-34-MAU.png":::
@@ -76,6 +83,10 @@ The `Current` channel contains the most stable version of the product.
 
 <br>
 
+
+
+
+
 ****
 
 |Section|Value|
@@ -96,8 +107,11 @@ The `Current` channel contains the most stable version of the product.
 ### Set update check frequency
 
 Change how often MAU searches for updates.
-
 <br>
+
+
+
+
 
 ****
 
@@ -113,8 +127,11 @@ Change how often MAU searches for updates.
 ### Change how MAU interacts with updates
 
 Change how MAU searches for updates.
-
 <br>
+
+
+
+
 
 ****
 
@@ -130,8 +147,11 @@ Change how MAU searches for updates.
 ### Change whether the "Check for Updates" button is enabled
 
 Change whether local users are able to click the "Check for Updates" option in the Microsoft AutoUpdate user interface.
-
 <br>
+
+
+
+
 
 ****
 
@@ -146,8 +166,11 @@ Change whether local users are able to click the "Check for Updates" option in t
 ### Disable Insider checkbox
 
 Set to true to make the "Join the Office Insider Program..." checkbox unavailable / greyed out to users.
-
 <br>
+
+
+
+
 
 ****
 
@@ -259,3 +282,4 @@ To configure MAU, you can deploy this configuration profile from the management 
 
 - [msupdate reference](/deployoffice/mac/update-office-for-mac-using-msupdate)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+
