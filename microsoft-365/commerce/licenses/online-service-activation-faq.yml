@@ -17,7 +17,7 @@ metadata:
   - scotvorg
   ms.localizationpriority: medium
   description: "Online service activation for Open program Frequently Asked Questions"
-  ms.date: 10/12/2023
+  ms.date: 10/13/2023
 
 title: Online service activation for Open program Frequently Asked Questions
 summary: |
@@ -82,4 +82,4 @@ sections:
       - question: |
           How do I contact support?
         answer: |
-          For phone or web for support, see [Get help or support](../../admin/get-help-support.md). Microsoft responds to web form submissions within 24 hours.
+          For phone or web for support, see [Contact Us](/licensing/contact-us). Microsoft responds to web form submissions within 24 hours.

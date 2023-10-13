@@ -17,7 +17,7 @@ metadata:
   - scotvorg
   ms.localizationpriority: medium
   description: "Frequently asked questions about license reservations in the Microsoft 365 admin center."
-  ms.date: 10/12/2023
+  ms.date: 10/13/2023
 
 title: License Reservation Frequently Asked Questions
 summary: |
@@ -130,6 +130,6 @@ sections:
       - question: |
           Contact Assisted Support
         answer: |
-          1. Microsoft 365 admin center Volume Licensing customers may also [Contact Us](../../admin/get-help-support.md) by phone or by Web Form. Microsoft responds to Web Form submissions within 24 hours. In the Microsoft 365 admin center, select the **Help & support** button.
+          1. Microsoft 365 admin center Volume Licensing customers may also [Contact Us](/licensing/contact-us) by phone or by web form. Microsoft responds to web form submissions within 24 hours. In the Microsoft 365 admin center, select the **Help & support** button.
           2. Type a description of your issue into the text box.
           3. If none of the resolutions offered match your needs, you have the option to submit a support ticket to the VL support team. Be sure to provide your VL contract ID, Reservation ID and the phone number our team can use to reach you.
