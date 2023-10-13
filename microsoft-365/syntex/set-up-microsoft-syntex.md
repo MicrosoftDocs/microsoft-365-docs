@@ -61,4 +61,4 @@ The following table provides links to the specific setup instructions for each s
 |Image tagging                    | [Set up image tagging](image-tagging-setup.md)  |
 |Taxonomy tagging                    | [Set up taxonomy tagging](taxonomy-tagging-setup.md)  |
 |Optical character recognition    | [Set up optical character recognition](ocr.md)  |
-|Microsoft 365 Archive    | [Set up Microsoft 365 Archive](archive/archive-setup.md)  |
+<!---|Microsoft 365 Archive    | [Set up Microsoft 365 Archive](archive/archive-setup.md)  |--->
