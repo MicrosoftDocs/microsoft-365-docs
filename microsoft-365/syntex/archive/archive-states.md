@@ -19,11 +19,9 @@ description: Learn about the archived states and what they mean in Microsoft 365
 
 # Archived states in Microsoft 365 Archive (Preview)
 
-## Archive states
+The following table describes the archived states and allowed operations.
 
-The following table describes the archive states and allowed operations.
-
-|Archive state  |Description  |Allowed operations  |
+|Archived state  |Description  |Allowed operations  |
 |---------|---------|---------|
 |Recently Archived    |This is the first stage after a site is archived and is valid for seven days. A site in this stage can be reactivated without any cost and will be reactivated instantaneously.         |Reactivate, Delete         |
 |Archived    |The site enters this state after seven days after being archived. In this stage, reactivations will be charged, and may take a few hours.         |Reactivate, Delete         |
