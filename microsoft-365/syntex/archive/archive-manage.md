@@ -81,4 +81,4 @@ Other than these two exceptions, you can expect the site to be unchanged.
 <br>
 
 > [!div class="nextstepaction"]
-> [Back to list of preview documentation](archive-overview#preview-documentation.md)
+> [Back to list of preview documentation](archive-overview.md#preview-documentation)

@@ -50,4 +50,4 @@ Reactivations are charged based on the Site Storage usage of the site being rest
 <br>
 
 > [!div class="nextstepaction"]
-> [Back to list of preview documentation](archive-overview#preview-documentation.md)
+> [Back to list of preview documentation](archive-overview.md#preview-documentation)

@@ -33,4 +33,4 @@ The following table describes the archived states and allowed operations.
 <br>
 
 > [!div class="nextstepaction"]
-> [Back to list of preview documentation](archive-overview#preview-documentation.md)
+> [Back to list of preview documentation](archive-overview.md#preview-documentation)

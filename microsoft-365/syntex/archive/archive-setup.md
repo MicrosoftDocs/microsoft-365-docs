@@ -70,4 +70,4 @@ When you turn off Microsoft 365 Archive, any further archiving stops. The sites 
 <br>
 
 > [!div class="nextstepaction"]
-> [Back to list of preview documentation](archive-overview#preview-documentation.md)
+> [Back to list of preview documentation](archive-overview.md#preview-documentation)
