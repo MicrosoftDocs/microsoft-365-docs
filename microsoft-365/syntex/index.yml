@@ -79,8 +79,6 @@ landingContent:
             url: taxonomy-tagging-overview.md
           - text: Optical character recognition
             url: ocr-overview.md
-          - text: Microsoft 365 Archive
-            url: archive/archive-overview.md
 
 # Card 4
   - title: Extensibility
