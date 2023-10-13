@@ -45,7 +45,7 @@ This guide outlines what to expect and how to access the incident report creatio
 
 ## Technical requirements
 
-[Learn about the Security Copilot requirements](/security-copilot/get-started-security-copilot).
+[Learn how you can get started with Security Copilot](/security-copilot/get-started-security-copilot).
 
 ## Create an incident report
 
