@@ -43,13 +43,13 @@ Microsoft 365 Archive lets you retain this inactive data by moving it into a col
 
 Some additional advantages of using Microsoft 365 Archive are:
 
-- **Speed** – ultra-fast archive of sites of any size and any number of sites. 
+- **Speed** – Ultra-fast archive of sites of any size and any number of sites.
 
-- **Cost savings** – a lower list price on storage consumption beyond your license-allocated Microsoft 365 storage quota 
+- **Cost savings** – A lower list price on storage consumption beyond your license-allocated Microsoft 365 storage quota.
 
-- **Lossless Metadata** – a site will retain all of its metadata and permissions upon reactivation.
+- **Lossless Metadata** – A site will retain all of its metadata and permissions upon reactivation.
 
-- **Decluttering** – explicit separation between active and inactive content to help you manage your site's lifecycle.
+- **Decluttering** – Explicit separation between active and inactive content to help you manage your site's lifecycle.
 
 Microsoft 365 Archive, coupled with the Microsoft 365 search index and the Microsoft Purview feature set, provides a powerful combination for your long-term data management needs at a price point that matches the lifecycle of your content. Microsoft 365 Archive is controlled in the SharePoint admin center by global or SharePoint admins.
 
