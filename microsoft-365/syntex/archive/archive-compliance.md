@@ -31,7 +31,7 @@ Archived SharePoint sites, just like active SharePoint sites, maintain a baselin
 
 The impact of Microsoft 365 Archive on compliance offerings includes the following:
 
-- Preservation hold – Archived sites will still honor preservation holds. Any file that is deleted via retention policies will still be maintained in the usual preservation hold library.
+- Data lifecycle management and records management – Archived sites will still honor the retention and deletion periods from any retention policies or retention labels.
 
 - eDiscovery – eDiscovery will still be able to find all content even if archived. However, eDiscovery won't be able to directly reactivate located files.  Before exporting or viewing content of an eDiscovery case, the SharePoint admin will have to reactivate the relevant sites.
 
