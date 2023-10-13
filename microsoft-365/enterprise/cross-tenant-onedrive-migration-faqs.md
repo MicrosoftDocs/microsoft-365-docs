@@ -8,7 +8,7 @@ recommendations: true
 audience: ITPro
 ms.topic: article
 ms.service: sharepoint-online
-ms.subservice: sharepoint-migration
+ms.subservice: microsoft-365-migration
 ms.localizationpriority: high
 ms.collection: 
 - SPMigration
