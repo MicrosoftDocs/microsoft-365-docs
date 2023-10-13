@@ -52,7 +52,7 @@ Once pay-as-you-go billing has been enabled for Syntex on Microsoft 365 admin ce
 
     ![Screenshot of the Microsoft 365 Archive page in the admin center showing how to turn on Archive.](../../media/content-understanding/turn-on-archive-admin-center.png)
 
-   Microsoft 365 Archive is now enabled for you, and you're able to archive content from the SharePoint admin center.
+Microsoft 365 Archive is now enabled for you, and you're able to archive content from the SharePoint admin center.
 
 ## Turn off Microsoft 365 Archive
 
