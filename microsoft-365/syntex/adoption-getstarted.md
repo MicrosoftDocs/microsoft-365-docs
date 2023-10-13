@@ -3,7 +3,7 @@ title: Get started driving adoption of Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
-ms.date: 09/30/2022
+ms.date: 10/15/2022
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -29,7 +29,7 @@ With new AI services and capabilities, you can build content understanding and c
 | Unstructured document processing | Structured document processing | Freeform document processing |
 | ------- | ------- | ------- |
 | Created in the content center, part of Syntex. | Created from document library. | Created from document library. |
-| Model created in native interface. | Model created in AI builder. | Model created in AI builder. |
+| Model created in native interface. | Model created in AI Builder. | Model created in AI Builder. |
 | Used for semi-structured or unstructured file formats. | Used for structured or semi-structured file formats. | Used for unstructured or free-form file formats. |
 | Trainable classifier with optional extractors. | Settable classifier. | Settable classifier. |
 | Can be applied to multiple libraries. | Restricted to a single library. | Restricted to a single library. |

@@ -9,11 +9,11 @@ metadata:
   ms.service: microsoft-syntex #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.subservice: subservice
   ms.topic: landing-page # Required
-  ms.collection: enabler-strategic, m365initiative-syntex
+  ms.collection: enabler-strategic, m365initiative-syntex, essentials-hub-or-landing
   ms.custom: intro-hub-or-landing
   author: chuckedmonson #Required; your GitHub user alias, with correct capitalization.
   ms.author: chucked #Required; microsoft alias of author; optional team alias.
-  ms.date: 09/01/2022 #Required; mm/dd/yyyy format
+  ms.date: 09/01/2023 #Required; mm/dd/yyyy format
   ms.localizationpriority: medium
   titleSuffix: Microsoft Syntex
 
@@ -39,8 +39,8 @@ landingContent:
             url: https://www.linkedin.com/learning/search?keywords=syntex&upsellOrderOrigin=default_guest_learning&trk=homepage-learning_learning-search-bar_search-submit
       - linkListType: whats-new
         links:
-          - text: Image tagging
-            url: image-tagging-overview.md
+          - text: Taxonomy tagging
+            url: taxonomy-tagging-overview.md
 
 # Card 2
   - title: Get started
@@ -75,6 +75,8 @@ landingContent:
             url: content-assembly.md
           - text: Image tagging
             url: image-tagging-overview.md
+          - text: Taxonomy tagging
+            url: taxonomy-tagging-overview.md
           - text: Optical character recognition
             url: ocr-overview.md
           - text: Microsoft 365 Archive
@@ -105,8 +107,6 @@ landingContent:
         links:
           - text: Assessment tool
             url: adoption-assessment-tool.md
-          - text: Solution accelerators
-            url: site-templates.md
 
 # Card 6
   - title: Other features
@@ -119,6 +119,8 @@ landingContent:
             url: metadata-search.md
           - text: Content processing
             url: content-processing-overview.md
+          - text: Solution accelerators
+            url: site-templates.md
 
 
     # Card 7

@@ -216,7 +216,7 @@
         - name: Set a content type 
           href: content-processing-content-type.md
 
-    - name: Term store features
+    - name: Premium taxonomy features
       items:
         - name: Import using SKOS
           href: import-term-set-skos.md

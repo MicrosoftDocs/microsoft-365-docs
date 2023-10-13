@@ -16,6 +16,7 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
+- mde-ngp
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
@@ -58,5 +59,5 @@ For more information about our privacy statement, see [Microsoft Privacy Stateme
 - For Windows devices, if you are running the analyzer directly on specific machines and not remotely via [Live Response](/microsoft-365/security/defender-endpoint/troubleshoot-collect-support-log), then SysInternals [PsExec.exe](/sysinternals/downloads/psexec) should be allowed (at least temporarily) to run. The analyzer calls into PsExec.exe tool to run cloud connectivity checks as Local System and emulate the behavior of the SENSE service.
 
     > [!NOTE]
-    > On Windows devices, if you use Attack Surface Reduction (ASR) rule [Block process creations originating from PSExec and WMI commands](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands), then may want to temporarily disable the rule or [configure an exclusion to the ASR rule](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) to allow the analyzer to run connectivity checks to cloud as expected.
+    > On Windows devices, if you use attack surface reduction rule [Block process creations originating from PSExec and WMI commands](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands), then may want to temporarily disable the rule or [configure an exclusion to the ASR rule](enable-attack-surface-reduction.md#exclude-files-and-folders-from-attack-surface-reduction-rules) to allow the analyzer to run connectivity checks to cloud as expected.
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

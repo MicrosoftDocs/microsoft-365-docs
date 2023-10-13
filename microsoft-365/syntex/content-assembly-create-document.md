@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.reviewer: anrasto, shrganguly
-ms.date: 09/30/2022
+ms.date: 06/30/2023
 ms.topic: conceptual
 ms.service: microsoft-syntex
 search.appverid:
