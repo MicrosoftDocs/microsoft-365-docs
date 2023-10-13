@@ -34,7 +34,7 @@ As an admin, you typically assign licenses to users either manually, or by using
 
 You must be a Global admin to create and manage auto-claim policies. For more information, see [About Microsoft 365 admin roles](../../admin/add-users/about-admin-roles.md).
 
-> [!NOTE}
+> [!NOTE]
 > If you're the person who signed up for the subscription, you're automatically a global admin.
 
 ## Turn the auto-claim policy feature on or off
@@ -76,6 +76,7 @@ When you create an auto-claim policy, you can add a backup product to it. If the
 9. On the **Review and finish** page, verify the new policy information, make any necessary changes, then select **Create policy**.
 10. Select **Close**.
 
+<!--
 ## Apps and services available for use with auto-claim policies
 
 You can create auto-claim policies for the following products.
@@ -91,7 +92,7 @@ You can create auto-claim policies for the following products.
         Column 3
     :::column-end:::
 :::row-end:::
-
+-->
 ## Turn a policy on or off
 
 When you turn off a policy, no more users can claim licenses under that policy. The change doesn't affect users who already claimed licenses under that policy.
