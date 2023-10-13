@@ -5,7 +5,7 @@ author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 09/19/2023
+ms.date: 10/17/2023
 ms.topic: conceptual
 ms.service: microsoft-syntex
 ms.custom: archive
