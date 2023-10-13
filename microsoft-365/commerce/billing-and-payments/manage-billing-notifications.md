@@ -22,7 +22,7 @@ ms.custom:
 search.appverid:
 - MET150
 description: "Learn how to manage who receives billing notification emails and invoice attachments in the Microsoft 365 admin center."
-ms.date: 10/12/2023
+ms.date: 10/13/2023
 ---
 
 # Manage billing notifications and invoice attachment settings in the Microsoft 365 admin center
@@ -104,7 +104,7 @@ In addition to your Global and Billing admins, we send billing notifications to 
 
 ## Receive your organization's invoices as email attachments
 
-You can choose to receive your organization's invoices as amail attachments. However, the steps to manage the invoice attachment setting in the Microsoft 365 admin center depend on the type of billing account that you have. [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
+You can choose to receive your organization's invoices as email attachments. However, the steps to manage the invoice attachment setting in the Microsoft 365 admin center depend on the type of billing account that you have. [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
 
 ### Receive your invoice as an email attachment for MCA billing account types
 

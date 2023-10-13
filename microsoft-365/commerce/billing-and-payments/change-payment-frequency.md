@@ -27,13 +27,13 @@ ms.date: 10/13/2023
 
 # Change your Microsoft 365 subscription billing frequency
 
-When you buy a Microoft 365 for busines subscription, you select a billing frequency. You can change how often you're billed for your subscription in the Microsoft 365 admin center.
+When you buy a Microoft 365 for business subscription, you select a billing frequency. You can change how often you're billed for your subscription in the Microsoft 365 admin center.
 
 ## Before you begin
 
-    - [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
-    - You must have a Microsoft Online Services Agreement (MOSA) billing account type and be a billing account owner or contributor to do the task in this article.
-    - If you have a Microsoft Customer Agreement (MCA) billing account type, you can only change the billing frequency when you buy, upgrade, or renew a subscription.
+- [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
+- You must have a Microsoft Online Services Agreement (MOSA) billing account type and be a billing account owner or contributor to do the task in this article.
+- If you have a Microsoft Customer Agreement (MCA) billing account type, you can only change the billing frequency when you buy, upgrade, or renew a subscription.
 
 > [!NOTE]
 > If you're the person who signed up for the subscription, you're automatically a global admin.
