@@ -35,4 +35,4 @@ The **Request to reactivate** button will not be visible if a redirect URL has n
 <br>
 
 > [!div class="nextstepaction"]
-> [Back to overview](archive-overview.md)
+> [Back to list of preview documentation](archive-overview#preview-documentation.md)
