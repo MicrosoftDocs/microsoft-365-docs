@@ -35,18 +35,23 @@ In addition to this overview, the documentation for the preview includes the fol
 
 ## Introduction
 
-Microsoft 365 Archive offers cost-effective storage for inactive SharePoint sites without the need to move any content outside of Microsoft 365.
+Microsoft 365 Archive offers cost-effective storage for inactive SharePoint sites.
 
-Your organization might need to keep inactive or aging data for long periods of time in case you need to retrieve it later. You prefer to store the data where it is to simplify compliance and data lifecycle management. Microsoft 365 Archive lets you keep the data within the Microsoft 365 trust boundary and ensures the same security and compliance standards as any data in SharePoint. Microsoft 365 Archive reinforces [compliance features for archive sites](archive-compliance.md), and works well with Microsoft Purview tools to help manage archived content.
+Your organization might need to keep inactive or aging data for long periods of time in case you need to retrieve it later. You might prefer to store the data in SharePoint to simplify searchability, security, compliance, and data lifecycle management.
+
+Microsoft 365 Archive lets you retain this inactive data by moving it into a cold storage tier (archive) within SharePoint. Any data archived with Microsoft 365 Archive will have the same searchability, security, and [compliance](archive-compliance.md) standards applied automatically at a much reduced cost.
 
 Some additional advantages of using Microsoft 365 Archive are:
 
-- Ultra-fast archive of sites of any size and any number of sites
-- Cost savings on storage consumption beyond the allocated Microsoft 365 storage quota
-- In-place reactivation of archived sites whenever needed with full site fidelity and lossless metadata reactivation
-- Declutter active sites by moving content to archivable sites and decluttering of search indexes
+- **Speed** – ultra-fast archive of sites of any size and any number of sites. 
 
-Microsoft 365 Archive is administered in the SharePoint admin center by global admins or SharePoint admins.
+- **Cost savings** – a lower list price on storage consumption beyond your license-allocated Microsoft 365 storage quota 
+
+- **Lossless Metadata** – a site will retain all of its metadata and permissions upon reactivation.
+
+- **Decluttering** – explicit separation between active and inactive content to help you manage your site's lifecycle.
+
+Microsoft 365 Archive, coupled with the Microsoft 365 search index and the Microsoft Purview feature set, provides a powerful combination for your long-term data management needs at a price point that matches the lifecycle of your content. Microsoft 365 Archive is controlled in the SharePoint admin center by global or SharePoint admins.
 
 When a site is archived, it goes into an explicitly colder tier, no longer consumes a tenant’s active storage quota, and instead drives Microsoft 365 Archive storage consumption. Being in this colder tier means the site is no longer accessible by anyone in the organization outside of Microsoft Purview or admin search.
 
