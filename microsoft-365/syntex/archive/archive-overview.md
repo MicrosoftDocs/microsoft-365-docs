@@ -26,10 +26,12 @@ In addition to this overview, the documentation for the preview includes the fol
 
 |Article  |Description  |
 |---------|---------|
-|[Set up Microsoft 365 Archive (Preview)](archive-setup.md)   | Learn how to set up and configure Microsoft 365 Archive, including required licensing, permissions, pay-as-you-go billing, and how to turn on the service.        |
-|[Manage Microsoft 365 Archive (Preview)](archive-manage.md)   | Learn how to archive and manage SharePoint sites, how to reactivate archived sites, and about the various archive states.        |
-|[Compliance features in Microsoft 365 Archive (Preview)](archive-compliance.md)    | Learn about durability, security, geo residency, and other compliance considerations.         |
-|[End user experience for Microsoft 365 Archive (Preview)](archive-end-user.md)    | Learn about how an end user might experience archived sites, and some of the options an admin can use to help the user find information.         |
+|[Set up Microsoft 365 Archive (Preview)](archive-setup.md)   | Learn how to set up and configure Microsoft 365 Archive, including required licensing, permissions, pay-as-you-go billing, and how to turn on the service.|
+|[Pricing model for Microsoft 365 Archive (Preview)](archive-pricing.md)   | Learn how archive usage is calculated, including for monthly usage and reactivations. |
+|[Manage Microsoft 365 Archive (Preview)](archive-manage.md)   | Learn how to archive and manage SharePoint sites, and how to reactivate archived sites. |
+|[Archived states in Microsoft 365 Archive (Preview)](archive-states.md)   | Learn about the various archived states, what they mean, and their allowed operations. |
+|[Compliance features in Microsoft 365 Archive (Preview)](archive-compliance.md)    | Learn about durability, security, geo residency, and other compliance considerations. |
+|[End user experience for Microsoft 365 Archive (Preview)](archive-end-user.md)    | Learn about how an end user might experience archived sites, and some of the options an admin can use to help the user find information. |
 
 ## Introduction
 
