@@ -175,7 +175,7 @@ Admins can now create auto-claim policies for Power Apps per user licenses in th
 
 If a user lacks a standalone Power Apps license and launches an app that requires a premium license, the system automatically grants a Power Apps per user license to the user.
 
-If a user without a standalone Power Apps license launches an app within a Managed environment, they are automatically granted a Power Apps per user license.
+If a user without a standalone Power Apps license launches an app within a Managed environment, they're automatically granted a Power Apps per user license.
 
 ## Next steps
 
