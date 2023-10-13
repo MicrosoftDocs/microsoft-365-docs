@@ -25,7 +25,7 @@ ms.date: 10/13/2023
 
 # Manage auto-claim policies in the Microsoft 365 admin center
 
-As an admin, you typically assign licenses to users either manually, or by using group-based licensing. For some products and services, you can use an *auto-claim policy* to let users automatically claim a license without requiring you to assign them. With an auto-claim policy in place,  users can automatically claim a license for a product the first time that they sign in to an app that requires a license. By using auto-claim policies, you manage the products for which users can automatically claim licenses. You can also control which products those licenses come from. You manage auto-claim policies in the Microsoft 365 admin center.
+As an admin, you typically assign licenses to users either manually, or by using group-based licensing. For some products and services, you can use an *auto-claim policy* to let users automatically claim a license without requiring you to assign them. With an auto-claim policy in place, users can automatically claim a license for a product the first time that they sign in to an app that requires a license. By using auto-claim policies, you manage the products for which users can automatically claim licenses. You can also control which products those licenses come from. You manage auto-claim policies in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
 > [!IMPORTANT]
 > Auto-claim policies are currently only available on a product-by-product basis.
@@ -35,7 +35,7 @@ As an admin, you typically assign licenses to users either manually, or by using
 You must be a Global admin to create and manage auto-claim policies. For more information, see [About Microsoft 365 admin roles](../../admin/add-users/about-admin-roles.md).
 
 > [!NOTE]
-> If you're the person who signed up for the subscription, you're automatically a global admin.
+> If you're the person who signed up for the subscription, you're automatically a Global admin.
 
 ## Turn the auto-claim policy feature on or off
 
@@ -58,7 +58,7 @@ If you already have an active policy, but you don't want any more users to claim
 
 ## Create an auto-claim policy
 
-The <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">Auto-claim policy</a> tab lists the policies that you create. On this tab, you can see: the name of the policy, the app that is associated with the policy, the product that's assigned to the policy, the number of available licenses, and the status of the policy.
+The <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">Auto-claim policy</a> tab lists the policies that you create. On this tab, you can see the following: the name of the policy, the app that is associated with the policy, the product that's assigned to the policy, the number of available licenses, and the status of the policy.
 
 When you create an auto-claim policy, you can add a backup product to it. If the primary product is out of licenses, the backup product is used to assign licenses to users. You can add up to four backup products and [change the order in which they're used](#change-the-assigning-order-for-backup-products). To learn more, see [Add or remove backup products](#add-or-remove-backup-products).
 

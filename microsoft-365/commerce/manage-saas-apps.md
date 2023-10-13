@@ -34,8 +34,8 @@ You can manage licenses and billing for third-party apps in the <a href="https:/
 ## Before you begin
 
 - [Find out what type of billing account you have](manage-billing-accounts.md#view-my-billing-accounts).
-- If you have a Microsoft Online Services Agreement (MOSA) billing account type, you must be a global or billing admin to do the tasks in this article. For more information, see [About admin roles in the Microsoft 365 admin center](../admin/add-users/about-admin-roles.md).
-- If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a billing account owner or contributor to do the tasks in this article. For more information about billing account and billing profile roles, see [Understand your Microsoft business billing account](manage-billing-accounts.md) and [Understand your Microsoft business billing profile](billing-and-payments/manage-billing-profiles.md).
+- If you have a Microsoft Online Services Agreement (MOSA) billing account type, you must be a Global or Billing admin to do the tasks in this article. For more information, see [About admin roles in the Microsoft 365 admin center](../admin/add-users/about-admin-roles.md).
+- If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a Billing account owner or contributor to do the tasks in this article. For more information about billing account and billing profile roles, see [Understand your Microsoft business billing account](manage-billing-accounts.md) and [Understand your Microsoft business billing profile](billing-and-payments/manage-billing-profiles.md).
 
 > [!NOTE]
 > If you're the person who signed up for the subscription, you're automatically a Global admin or Billing account owner.
@@ -59,7 +59,7 @@ App providers sell their apps either at a flat rate, or by buying licenses for u
 
 As as admin, you must activate third-party apps before you can assign them to users. These apps are activated in the third-party publisher's portal.
 
-1. In the Microsoft 365 admin center, go to the **Billing** > **Your products** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> page.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, go to the **Billing** > **Your products** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> page.
 2. Find and select the app that you want to manage.
 3. Under **Settings & actions**, select **Manage in publisher's portal**.
 

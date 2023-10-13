@@ -39,13 +39,13 @@ This article only applies to canceling **Dynamics 365**, **Intune**, **Power Pla
 ## Before you begin
 
 - [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
-- If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a billing account owner or contributor, or a billing profile owner or contributor to do the tasks in this article. For information about billing account roles and billing profile roles, see [Understand your Microsoft business billing account](../manage-billing-accounts.md) and [Understand your Microsoft business billing profile](../billing-and-payments/manage-billing-profiles.md).
-- If you have a Microsoft Online Subscription Agreement (MOSA), you must be a global or billing admin to do the tasks in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.
+- If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a Billing account owner or contributor, or a Billing profile owner or contributor to do the tasks in this article. For information about Billing account roles and Billing profile roles, see [Understand your Microsoft business billing account](../manage-billing-accounts.md) and [Understand your Microsoft business billing profile](../billing-and-payments/manage-billing-profiles.md).
+- If you have a Microsoft Online Subscription Agreement (MOSA), you must be a Global or Billing admin to do the tasks in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.
 - If you added your own domain name to use with your subscription, you must [remove the domain](../../admin/get-help-with-domains/remove-a-domain.md) before you cancel your subscription.
 - If you have a domain subscription, to prevent any other charges for that subscription, [turn off recurring billing](renew-your-subscription.md).).
 
 > [!NOTE]
-> If you're the person who signed up for the subscription, you're automatically a billing account owner or global admin.
+> If you're the person who signed up for the subscription, you're automatically a Billing account owner or Global admin.
 
 ## What's the easiest way to cancel?
 
@@ -100,7 +100,7 @@ You can cancel your subscription in the Microsoft 365 admin center. However, the
 
 ### Cancel your subscription when you have an MCA billing account type
 
-1. Go to the Microsoft 365 admin center.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
    - If you're using the **Simplified view**, select **Subscriptions**.
    - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a>.
@@ -114,7 +114,7 @@ You can cancel your subscription in the Microsoft 365 admin center. However, the
 
 ### Cancel your subscription when you have an MOSA billing account type
 
-1. Go to the Microsoft 365 admin center.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
 
    - If you're using the **Simplified view**, select **Subscriptions**.
    - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.

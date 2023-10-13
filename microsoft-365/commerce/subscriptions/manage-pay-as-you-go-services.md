@@ -28,11 +28,9 @@ ms.date: 10/13/2023
 
 # Enable pay-as-you-go for your subscription
 
-By default, when you buy a subscription that has a Microsoft Calling Plan, you're limited to the number of minutes included in the plan. After those minutes are used up, your users can't make Teams calls until the next billing period. You can turn on the pay-as-you-go option, so that your users can continue to make calls over the number of minutes included in the plan. When calls go over the number of minutes included in a plan, it's referred to as *overage*. Your next invoice shows overage charges for extra calls at the pay-as-you-go rate.
+By default, when you buy a subscription that has a Microsoft Calling Plan, you're limited to the number of minutes included in the plan. After those minutes are used up, your users can't make Teams calls until the next billing period. You can turn on the pay-as-you-go option in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. When you turn on the pay-as-you-go option, your users can continue to make calls over the number of minutes included in the plan. When calls go over the number of minutes included in a plan, it's referred to as *overage*. Your next invoice shows overage charges for extra calls at the pay-as-you-go rate.
 
 ## Before you begin
-
-You must be a billing account owner or billing account contributor to buy a subscription with a calling plan and enable the pay-as-you-go option. For more information, see [Understand billing accounts](../manage-billing-accounts.md).
 
 - [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
 - You must have a Microsoft Customer Agreement (MCA) billing account type, and you must be a Billing account owner or contributor, or a Billing profile owner or contributor to do the tasks in this article. For information about billing account and billing profile roles, see [Understand your Microsoft business billing account](../manage-billing-accounts.md) and [Understand your Microsoft business billing profile](../billing-and-payments/manage-billing-profiles.md).
@@ -44,7 +42,7 @@ You must be a billing account owner or billing account contributor to buy a subs
 
 If you already have a subscription, you can use the Microsoft 365 admin center to buy a new plan that has a calling plan, and then enable the overage option for it.
 
-1. Go to the Microsoft 365 admin center.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
    - If you're using the **Simplified view**, select **Subscriptions**, then select **Add more products**.
    - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
 2. Search for the pay-as-you-go product that you want to buy, like **Microsoft Teams Calling Plan pay-as-you-go**, then select **Details**. Pay-as-you-go products have the **PAY-AS-YOU-GO AVAILABLE** tag.
