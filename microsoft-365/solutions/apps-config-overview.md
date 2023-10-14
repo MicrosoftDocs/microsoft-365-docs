@@ -76,7 +76,7 @@ Before you configure apps to be managed by Intune, you first need to determine y
 
 It is important to understand that you have different app configuration options and capabilities depending on the management workflow you use at your organization. For more information about MAM, see [MAM configurations](/mem/intune/fundamentals/deployment-plan-protect-apps#mam-configurations). For more information about management deployment models, see [Enroll in device management, application management, or both](/mem/intune/fundamentals/what-is-intune#enroll-in-device-management-application-management-or-both).
 
-## How does it work?
+## What process should you follow?
 
 :::image type="content" source="../media/configure-managed-apps/guide.png" alt-text="Common process to configure apps using Microsoft Intune" border="false" :::
 
