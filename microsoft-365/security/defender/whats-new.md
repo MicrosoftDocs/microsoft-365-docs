@@ -40,6 +40,15 @@ For more information on what's new with other Microsoft Defender security produc
 
 You can also get product updates and important notifications through the [message center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter).
 
+## October 2023
+
+- (Preview) You can now get email notifications for manual or automated actions done in Microsoft 365 Defender. Learn how to configure email notifications for manual or automated response actions performed in the portal. For details, see [Get email notifications for response actions in Microsoft 365 Defender](m365d-response-actions-notifications.md).
+- (Preview) [Microsoft Security Copilot in Microsoft 365 Defender](security-copilot-in-microsoft-365-defender.md) is now in preview. Microsoft 365 Defender users can take advantage of Security Copilot capabilities to summarize incidents, analyze scripts and codes, use guided responses to resolve incidents, generate KQL queries, and create incident reports within the portal. Security Copilot is on an invitation-only preview. Learn more about Security Copilot in the [Microsoft Security Copilot Early Access Program Frequently Asked Questions](/security-copilot/faq-security-copilot).
+
+## September 2023
+
+- (Preview) Custom detections using data from Microsoft Defender for Identity and Microsoft Defender for Cloud Apps, specifically the `CloudAppEvents`, `IdentityDirectoryEvents`, `IdentityLogonEvents`, and `IdentityQueryEvents` [tables](custom-detection-rules.md#tables-that-support-continuous-nrt-frequency) can now be run in near real-time [Continuous (NRT)](custom-detection-rules.md) frequency.
+
 ## August 2023
 
 - Guides to responding to your first incident for new users are now live. [Understand incidents](respond-first-incident-365-defender.md) and learn to triage and prioritize, [analyze your first incident](respond-first-incident-analyze.md) using tutorials and videos, and [remediate attacks](respond-first-incident-remediate.md) by understanding actions available in the portal.
@@ -63,6 +72,7 @@ You can also get product updates and important notifications through the [messag
 - (Preview) [Custom functions](advanced-hunting-custom-functions.md) are now available in advanced hunting. You can now create your own custom functions so you can reuse any query logic when you hunt in your environment. 
 
 ## April 2023
+
 - (GA) The [unified Assets tab in the Incidents page](investigate-incidents.md) is now generally available.
 - Microsoft is using a new weather-based naming taxonomy for threat actors. This new naming schema will provide more clarity and will be easier to reference. [Learn more about the new naming taxonomy](/microsoft-365/security/intelligence/microsoft-threat-actor-naming).
 

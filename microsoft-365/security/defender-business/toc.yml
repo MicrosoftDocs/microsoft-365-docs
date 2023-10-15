@@ -71,16 +71,18 @@
       href: mdb-offboard-devices.md
   - name: View and respond to detected threats
     items: 
-    - name: View and use reports
-      href: mdb-reports.md
     - name: Use your vulnerability management dashboard
       href: mdb-view-tvm-dashboard.md
     - name: View and manage incidents
       href: mdb-view-manage-incidents.md
+    - name: Use attack disruption capabilities
+      href: mdb-attack-disruption.md
     - name: Respond to and mitigate threats
       href: mdb-respond-mitigate-threats.md
     - name: Review remediation actions
       href: mdb-review-remediation-actions.md
+    - name: View and use reports
+      href: mdb-reports.md
   - name: Create, view, or edit security policies
     items:
     - name: View, edit, and create policies
@@ -94,7 +96,7 @@
     - name: Top 10 ways to secure your business data
       href: ../../business-premium/secure-your-business-data.md?bc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-business%2Fbreadcrumb%2Ftoc.json&toc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-business%2Ftoc.json
     - name: How to get help or contact support
-      href: mdb-get-help.md
+      href: /microsoft-365/admin/get-help-support.md
     - name: Frequently asked questions
       href: mdb-faq.yml
     - name: Troubleshooting

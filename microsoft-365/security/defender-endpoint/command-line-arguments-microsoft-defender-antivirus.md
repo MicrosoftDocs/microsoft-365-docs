@@ -14,6 +14,7 @@ ms.topic: how-to
 ms.collection: 
 - m365-security
 - tier3
+- mde-ngp
 search.appverid: met150
 ---
 

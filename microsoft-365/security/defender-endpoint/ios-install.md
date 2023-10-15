@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
+- mde-ios
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
@@ -69,7 +70,7 @@ Deploy Defender for Endpoint on iOS via Microsoft Intune Company Portal.
 
 1. On the **Add app** page, click on **Search the App Store** and type **Microsoft Defender** in the search bar. In the search results section, click on *Microsoft Defender* and click **Select**.
 
-1. Select **iOS 14.0** as the Minimum operating system. Review the rest of information about the app and click **Next**.
+1. Select **iOS 15.0** as the Minimum operating system. Review the rest of information about the app and click **Next**.
 
 1. In the **Assignments** section, go to the **Required** section and select **Add group**. You can then choose the user group(s) that you would like to target Defender for Endpoint on iOS app. Click **Select** and then **Next**.
 
@@ -113,7 +114,7 @@ Configure the supervised mode for Defender for Endpoint app through an App confi
 1. In the next screen, select **Use configuration designer** as the format. Specify the following properties:
     - Configuration Key: `issupervised`
     - Value type: String
-    - Configuration Value: `true`
+    - Configuration Value: `{{issupervised}}`
 
     :::image type="content" source="images/ios-deploy-6.png" alt-text="Image of Microsoft Intune admin center6." lightbox="images/ios-deploy-6.png":::
 

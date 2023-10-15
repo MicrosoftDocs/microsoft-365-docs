@@ -13,11 +13,13 @@ metadata:
   author: lana-chin #Required; your GitHub user alias, with correct capitalization.
   ms.author: v-chinlana #Required; microsoft alias of author; optional team alias.
   manager: serdars
+
   audience: Admin
   ms.date: 04/07/2022 #Required; mm/dd/yyyy format.
   ms.collection:
     - m365-frontline
     - highpri
+    - essentials-hub-or-landing
 
 # highlightedContent section (optional)
 # Maximum of 8 items

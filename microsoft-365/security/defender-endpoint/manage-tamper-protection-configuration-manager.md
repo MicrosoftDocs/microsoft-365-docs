@@ -3,10 +3,9 @@ title: Manage tamper protection using tenant attach with Configuration Manager, 
 ms.reviewer: joshbregman, mattcall, pahuijbr, hayhov, oogunrinde
 manager: dansimp
 description: Turn tamper protection on or off using tenant attach with Configuration Manager.
-keywords: malware, defender, antivirus, tamper protection, Configuration Manager
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
-ms.date: 06/23/2023
+ms.date: 09/05/2023
 audience: ITPro
 ms.topic: conceptual
 author: denisebmsft
@@ -17,7 +16,7 @@ ms.custom:
 ms.subservice: mde
 ms.collection: 
 - m365-security
-- tier2
+- mde-ngp
 search.appverid: met150
 ---
 
@@ -29,7 +28,7 @@ search.appverid: met150
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender Antivirus](microsoft-defender-antivirus-windows.md)
 - [Microsoft Defender for Business](../defender-business/mdb-overview.md)
-- [Microsoft 365 Business Premium](../../business-premium/index.md)
+- [Microsoft 365 Business Premium](../../business-premium/m365bp-overview.md)
 
 **Platforms**
 - Windows

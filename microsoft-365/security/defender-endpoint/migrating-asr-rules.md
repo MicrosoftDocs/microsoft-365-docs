@@ -9,7 +9,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
-author: lovina-saldanha
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 ms.custom: asr
@@ -17,6 +17,7 @@ ms.subservice: mde
 ms.collection: 
 - m365-security
 - tier2
+- mde-asr
 search.appverid: met150
 ms.date: 03/26/2021
 ---

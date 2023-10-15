@@ -18,6 +18,7 @@ ms.subservice: mde
 ms.collection: 
 - m365-security
 - tier3
+- mde-ngp
 ---
 
 # Troubleshoot performance issues related to real-time protection

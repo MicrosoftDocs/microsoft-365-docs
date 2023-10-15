@@ -2,8 +2,8 @@
 title: "Convert a user mailbox to a shared mailbox"
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: SKjerland
+ms.author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 08/18/2023
 audience: Admin
@@ -108,5 +108,4 @@ For more info about converting a user mailbox to a shared mailbox in an Exchange
 [About shared mailboxes](about-shared-mailboxes.md) (article)\
 [Create a shared mailbox](create-a-shared-mailbox.md) (article)\
 [Configure a shared mailbox](configure-a-shared-mailbox.md) (article)\
-[Remove a license from a shared mailbox](remove-license-from-shared-mailbox.md) (article)\
-[Resolve issues with shared mailboxes](resolve-issues-with-shared-mailboxes.md) (article)
+[Remove a license from a shared mailbox](remove-license-from-shared-mailbox.md) (article)

@@ -92,7 +92,7 @@ Use the following reference table below to understand how our previously publicl
 |RADIUM|Raspberry Typhoon|China|APT30, LotusBlossom|
 |RUBIDIUM|Lemon Sandstorm|Iran|Fox Kitten, UNC757, PioneerKitten|
 |SEABORGIUM|Star Blizzard|Russia|Callisto, Reuse Team|
-|SILICON|Marbled Dust|Turkey|Sea Turtle|
+|SILICON|Marbled Dust|Türkiye|Sea Turtle|
 |SOURGUM|Caramel Tsunami|Private sector offensive actor|Candiru|
 |SPURR|Tomato Tempest|Financially motivated|Vatet|
 |STRONTIUM|Forest Blizzard|Russia|APT28, Fancy Bear|

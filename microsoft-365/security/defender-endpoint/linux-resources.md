@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
+- mde-linux
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
@@ -130,6 +131,7 @@ The following table lists commands for some of the most common scenarios. Run `m
 |Configuration|Turn on/off file hash computation|`mdatp config enable-file-hash-computation --value [enabled/disabled]`|
 |Diagnostics|Change the log level|`mdatp log level set --level verbose [error|warning|info|verbose]`|
 |Diagnostics|Generate diagnostic logs|`mdatp diagnostic create --path [directory]`|
+|Diagnostics|Size limits for retained product logs|`mdatp config  log-rotation-parameters [max-current-size/max-rotated-size] --size [value in MB]`|
 |Health|Check the product's health|`mdatp health`|
 |Protection|Scan a path|`mdatp scan custom --path [path] [--ignore-exclusions]`|
 |Protection|Do a quick scan|`mdatp scan quick`|

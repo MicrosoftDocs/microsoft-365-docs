@@ -2,8 +2,8 @@
 title: "Create a shared mailbox"
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: SKjerland
+ms.author: kwekua
+author: kwekuako
 manager: scotv
 ms.date: 08/21/2023
 audience: Admin
@@ -174,5 +174,4 @@ When you created the shared mailbox, you automatically created a shared calendar
 [About shared mailboxes](about-shared-mailboxes.md) (article)\
 [Configure a shared mailbox](configure-a-shared-mailbox.md) (article)\
 [Convert a user mailbox to a shared mailbox](convert-user-mailbox-to-shared-mailbox.md) (article)\
-[Remove a license from a shared mailbox](remove-license-from-shared-mailbox.md) (article)\
-[Resolve issues with shared mailboxes](resolve-issues-with-shared-mailboxes.md) (article)
+[Remove a license from a shared mailbox](remove-license-from-shared-mailbox.md) (article)

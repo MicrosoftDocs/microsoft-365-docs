@@ -12,6 +12,7 @@ metadata:
   ms.collection: 
   - Tier1
   - scotvorg
+  - essentials-compliance
   description: "Microsoft Bookings frequently asked questions."
 title: Microsoft Bookings Frequently Asked Questions
 summary: |
@@ -210,6 +211,11 @@ sections:
           How can Bookings appointments show up on a person's calendar?
         answer: |
           The confirmation of the booking is sent to both the service provider's and customer's inboxes. The confirmation email contains an *.ics file attachment, which can then be added to the user's calendar with all relevant appointment details.
+
+      - question: |
+          Can users edit Bookings appointments in their Outlook calendar?
+        answer: |
+          No, currently Bookings appointments can only be edited from the Bookings web portal. 
 
       - question: |
           What triggers service provider or staff and customer emails?

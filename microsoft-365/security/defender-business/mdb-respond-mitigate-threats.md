@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 09/14/2022
+ms.date: 10/10/2023
 ms.reviewer: nehabha
 f1.keywords: NOCSH 
 ms.collection: 
@@ -24,12 +24,11 @@ ms.collection:
 
 The Microsoft 365 Defender portal enables your security team to respond to and mitigate detected threats. This article walks you through an example of how you can use Defender for Business.
 
-
 ## View detected threats
 
 1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
-2. Notice cards on the Home page. Cards tell you at a glance how many threats were detected, along with how many user accounts, endpoints (devices), and other assets were affected. The following image is an example of cards you might see:
+2. Notice cards on the Home page. These cards were designed to tell you at a glance how many threats were detected, how many user accounts, and what endpoints (devices) or other assets were affected. The following image is an example of cards you might see:
 
    :::image type="content" source="../../media/defender-business/mdb-examplecards.png" alt-text="Screenshot of cards in the Microsoft 365 Defender portal":::
 
@@ -47,10 +46,11 @@ The Microsoft 365 Defender portal enables your security team to respond to and m
 
    :::image type="content" source="../../media/defender-business/mdb-deviceinventory-selecteddeviceflyout-menu.png" alt-text="Screenshot of available actions for a selected device":::
 
-6. Select an available action. For example, you might choose **Run antivirus scan**, which will cause Microsoft Defender Antivirus to start a quick scan on the device. Or, you could select **Initiate Automated Investigation** to trigger an automated investigation on the device.
+6. Select an available action. For example, you might choose **Run antivirus scan**, which starts a quick scan with Microsoft Defender Antivirus on the device. Or, you could select **Initiate Automated Investigation** to trigger an automated investigation on the device.
 
 ## Next steps
 
+- [Learn about automatic attack disruption](mdb-attack-disruption.md)
 - [Review remediation actions in the Action center](mdb-review-remediation-actions.md)
 - [Manage devices in Defender for Business](mdb-manage-devices.md)
 - [View and manage incidents in Defender for Business](mdb-view-manage-incidents.md)
