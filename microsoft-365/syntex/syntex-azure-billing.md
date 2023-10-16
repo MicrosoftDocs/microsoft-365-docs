@@ -78,6 +78,7 @@ The following Microsoft Syntex products are currently available:
 - Taxonomy tagging
 - Syntex eSignature
 - Optical character recognition
+<!---- Microsoft 365 Archive--->
 
 The following tags are available:
 - Site

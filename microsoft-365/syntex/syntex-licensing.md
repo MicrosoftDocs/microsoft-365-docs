@@ -45,6 +45,7 @@ Pay-as-you-go is a way to pay for Microsoft Syntex using an Azure subscription. 
 - Taxonomy tagging
 - Syntex eSignature
 - Optical character recognition
+<!---- Microsoft 365 Archive--->
 
 All users in your organization are able to create and apply unstructured and prebuilt document processing models and can upload documents to a primed library. This service is charged on a pay-per-use basis.
 
