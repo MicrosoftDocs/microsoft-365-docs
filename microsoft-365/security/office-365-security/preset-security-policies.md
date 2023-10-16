@@ -17,7 +17,7 @@ description: Admins can learn how to apply Standard and Strict policy settings a
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.date: 9/19/2023
+ms.date: 10/16/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
@@ -207,7 +207,7 @@ To verify that you've successfully assigned the **Standard protection** or **Str
 
 For example, for email that's detected as spam (not high confidence spam) verify that the message is delivered to the Junk Email folder for **Standard protection** users, and quarantined for **Strict protection** users.
 
-Or, for [bulk mail](anti-spam-protection-about.md#bulk-complaint-threshold-bcl-in-anti-spam-policies), verify that the BCL value 6 or higher delivers the message to the Junk Email folder for **Standard protection** users, and the BCL value 4 or higher quarantines the message for **Strict protection** users.
+Or, for [bulk mail](anti-spam-protection-about.md#bulk-complaint-threshold-bcl-in-anti-spam-policies), verify that the BCL value 6 or higher delivers the message to the Junk Email folder for **Standard protection** users, and the BCL value 5 or higher quarantines the message for **Strict protection** users.
 
 ## Preset security policies in Exchange Online PowerShell
 
@@ -539,7 +539,7 @@ The differences in meaningful policy settings in the Standard preset security po
 |**Anti-malware policy**|No difference|No difference|
 |**Anti-spam policy**|||
 |&nbsp;&nbsp;**Bulk compliant level (BCL) met or exceeded** detection action (_BulkSpamAction_)|**Move message to Junk Email folder** (`MoveToJmf`)|**Quarantine message** (`Quarantine`)|
-|&nbsp;&nbsp;**Bulk email threshold** (_BulkThreshold_)|7|6|
+|&nbsp;&nbsp;**Bulk email threshold** (_BulkThreshold_)|6|5|
 |&nbsp;&nbsp;**Spam** detection action (_SpamAction_)|**Move message to Junk Email folder** (`MoveToJmf`)|**Quarantine message** (`Quarantine`)|
 |**Anti-phishing policy**|||
 |&nbsp;&nbsp;**If the message is detected as spoof by spoof intelligence** (_AuthenticationFailAction_)|**Move message to Junk Email folder** (`MoveToJmf`)|**Quarantine message** (`Quarantine`)|
