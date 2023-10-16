@@ -86,6 +86,9 @@ You have now successfully activated (or deactivated) that workload.
 > [!NOTE]
 > The Microsoft 365 Defender Unified RBAC model only impacts the Microsoft 365 Defender security portal. It does not impact the [Microsoft Purview Compliance center](https://compliance.microsoft.com) or the [Exchange Admin Center](https://admin.exchange.microsoft.com).
 
+> [!NOTE]
+> Unified RBAC - Preview experience is currently not available for US Government customers using GCC and GCC High.
+
 ## Deactivate Microsoft 365 Defender Unified RBAC
 
 You can deactivate Microsoft 365 Defender Unified RBAC and revert to the individual RBAC models from Microsoft Defender for Endpoint, Microsoft Defender for Identity, and Microsoft Defender for Office 365 (Exchange Online Protection).
