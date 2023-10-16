@@ -41,7 +41,7 @@ Microsoft 365 Archive offers cost-effective storage for inactive SharePoint site
 
 Your organization might need to keep inactive or aging data for long periods of time in case you need to retrieve it later. You might prefer to store the data in SharePoint to simplify searchability, security, compliance, and data lifecycle management.
 
-Microsoft 365 Archive lets you retain this inactive data by moving it into a cold storage tier (archive) within SharePoint. Any data archived with Microsoft 365 Archive will have the same searchability, security, and [compliance](archive-compliance.md) standards applied automatically at a much reduced cost.
+Microsoft 365 Archive allows you to retain this inactive data by moving it into a cold storage tier (archive) within SharePoint. Any data archived with Microsoft 365 Archive will have the same searchability, security, and [compliance](archive-compliance.md) standards applied automatically at a much reduced cost.
 
 Some additional advantages of using Microsoft 365 Archive are:
 
@@ -53,7 +53,7 @@ Some additional advantages of using Microsoft 365 Archive are:
 
 - **Decluttering** – Explicit separation between active and inactive content to help you manage your site's lifecycle.
 
-Microsoft 365 Archive, coupled with the Microsoft 365 search index and the Microsoft Purview feature set, provides a powerful combination for your long-term data management needs at a price point that matches the lifecycle of your content. Microsoft 365 Archive is controlled in the SharePoint admin center by global or SharePoint admins.
+Microsoft 365 Archive, coupled with the Microsoft 365 search index and the [Microsoft Purview](https://learn.microsoft.com/en-us/purview/purview) feature set, provides a powerful combination for your long-term data management needs at a price point that matches the lifecycle of your content. Microsoft 365 Archive is controlled in the SharePoint admin center by global or SharePoint admins.
 
 When a site is archived, it goes into an explicitly colder tier, no longer consumes a tenant’s active storage quota, and instead drives Microsoft 365 Archive storage consumption. Being in this colder tier means the site is no longer accessible by anyone in the organization outside of Microsoft Purview or admin search.
 
@@ -65,15 +65,15 @@ Archiving a site archives everything within it, including:
 > [!NOTE]
 > Microsoft 365 Archive (Preview) is currently rolling out. More features will be rolled out as they become available.
 
-Administrators should notify the site owners and end users before a site is archived so they're aware that the site won't be accessible.
+Administrators should notify the site owners and end users before a site is archived so they're aware that the site will not be accessible.
 
 ## Preview limitations
 
 - As a part of the preview, tenants with more than 50,000 sites might face issues while trying to enumerate archived sites on the **Archived sites** page. Applicable enhancements are scheduled to roll out in the future. In this scenario, PowerShell can be used to more efficiently archive sites and manage archived content.
 
-- Currently, end user search results won't show any archived content. Columns such as Archived Date and Archived By aren't currently available, but are planned and will be rolled out when available.
+- Currently, end user search results will not show any archived content. Columns such as Archived Date and Archived By are not currently available, but are planned and will be rolled out when available.
 
-- For multi-geo tenants, while data residency requirements are honored, site moves aren't supported. Archived sites will need to be reactivated prior to any move.
+- For multi-geo tenants, while data residency requirements are honored, site moves are not supported. Archived sites will need to be reactivated prior to any move.
 
 - Currently, tenant rename isn't supported on archived sites. Sites will need to be reactivated before a tenant rename is triggered.
 
