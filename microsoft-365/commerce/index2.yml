@@ -42,7 +42,7 @@ landingContent:
           - text: Understand your bill or invoice
             url: billing-and-payments/understand-your-invoice.md
           - text: Paying for your subscription with a billing profile
-            url: billing-and-payments/pay-for-subscription-billing-profile.md
+            url: billing-and-payments/pay-for-your-subscription.md#Paying-with-a-billing-profile
           - text: Manage payment methods
             url: billing-and-payments/manage-payment-methods.md
             

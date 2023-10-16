@@ -93,7 +93,6 @@ Select the following **Run Tests: Unknown Charge** link to open the diagnostic t
 [Understand your invoice for your Microsoft MCA billing account](understand-your-invoice.md) (article)\
 [Understand your invoice for your Microsoft MOSA billing account](understand-your-invoice2.md) (article)\
 [Payment options for your Microsoft business subscription](pay-for-your-subscription.md) (article)\
-[How to pay for your Microsoft business subscription with a billing profile](pay-for-subscription-billing-profile.md)\
 [Manage payment methods](manage-payment-methods.md) (article)\
 [Billing information for Microsoft 365 for business in Mexico](mexico-billing-info.md) (article)\
 [Minecraft: Education Edition payment options](/education/windows/school-get-minecraft) (article)
