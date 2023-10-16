@@ -47,7 +47,7 @@ Before you get started with Printer protection, you must confirm your [Microsoft
    The purpose of this configuration is to temporarily disable device control on specific machine.
 
    > [!NOTE]
-   > If you don't see this group policy objects, you need to add the group policy administrative template. You can download administrative template (WindowsDefender.admx and WindowsDefender.admx) from [samples](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples).
+   > If you don't see this group policy objects, you need to add the group policy administrative template. You can download administrative template (WindowsDefender.admx and WindowsDefender.admx) from [samples](https://github.com/microsoft/mdatp-devicecontrol/tree/main).
    >
    > This configuration controls both Removable storage access control [Microsoft Defender for Endpoint Device Control Removable Storage Access Control](device-control-removable-storage-access-control.md) and Printer protection.
 
