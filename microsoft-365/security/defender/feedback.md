@@ -33,14 +33,10 @@ ms.date: 02/16/2021
 **Applies to:**
 - Microsoft 365 Defender
 
-Your feedback helps us get better in protecting your environment from advanced attacks. Share your experience, impressions, and  requests by providing feedback.
-
-Check out this video to see how easy it is to provide feedback.
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LWeP]
+Your feedback helps us get better at protecting your environment from advanced attacks. Share your experience, impressions, and  requests by providing feedback.
 
 
-1. From any part of the portal, select **Give feedback**. 
+1. From the home page of Microsoft Defender, select **Give feedback** and click on **Leave Feedback**. 
 
     :::image type="content" source="../../media/feedback.png" alt-text="The incidents in the Microsoft 365 security portal" lightbox="../../media/feedback.png":::   
  
