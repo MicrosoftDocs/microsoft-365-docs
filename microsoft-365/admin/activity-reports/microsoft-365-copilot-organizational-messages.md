@@ -38,17 +38,17 @@ To preview Organizational messages in the Microsoft 365 Copilot usage report, yo
 
 - Organizational Message Writer
 
-The Organizational Message Writer role is a built-in role that allows assigned admins to view and configure Organizational Messages for their tenant. Please note that this role doesn't grant access to user-level details in usage reports or the ability to modify permission settings. To learn more about the Organizational Message Writer role, see [About admin roles](../add-users/about-admin-roles.md).
+The Organizational Message Writer role is a built-in role that allows assigned admins to view and configure Organizational Messages for their tenant. Note that this role doesn't grant access to user-level details in usage reports or the ability to modify permission settings. To learn more about the Organizational Message Writer role, see [About admin roles](../add-users/about-admin-roles.md).
 
 The global administrator can assign the Organizational Messages Writer role to an admin user by following these steps:
 
-1. Go to **Roles** > **Role assignments**
+1. Go to **Roles** > **Role assignments**.
 
-2. Search for and select **Organizational Message Writer**
+2. Search for and select **Organizational Message Writer**.
 
-3. Under **Assigned**, select **Add users** or **Add groups**
+3. Under **Assigned**, select **Add users** or **Add groups**.
 
-4. Choose a group of admins you'd like to assign the role to, and select **Add**
+4. Choose a group of admins you'd like to assign the role to, and select **Add**.
 
 ## Getting started
 
@@ -60,7 +60,7 @@ Select **Schedule message** within the recommendation card and follow these step
 
 ### Step 1: Select message content
 
-Within Message section of the Organizational messages panel, choose one from the set of the pre-made content, each comprising a ‘title’, ‘message’, and ‘link’ for your users to visit when they interact with the message. You can then review what the message will look like to your targeted users within the Preview section.
+Within the Message section of the Organizational messages panel, you can choose from a set of pre-made content. Each pre-made message includes a 'title,' a 'message,' and a 'link' for your users to visit when they interact with the message. You can then review what the message will look like to your targeted users within the Preview section.
 
 >[!NOTE]
 > Messages will align with your computer's system language settings. We currently support 15 languages. If your language is not among them, we will default to the nearest available option. [Check the appendix to see which languages are supported](#appendix).
@@ -71,11 +71,11 @@ For this Copilot awareness scenario, the recipients of your message are, by defa
 
 ### Step 3: Schedule a time window and frequency for delivery of the messages
 
-Within the Schedule section, you must select a start date and an end date for your selected message as well as a frequency, which determines how often the message may be shown to the same targeted user within the scheduled timeframe. It's important to note that your message may be delivered to a user according to your set schedule and frequency. However, if the user takes the recommendation or dismisses the message, the message will not reappear to that user unless your team creates a subsequent message using this experience.
+Within the Schedule section, you must select a start date and an end date for your selected message. Additionally, you'll choose a frequency, which determines how often the message can be shown to the same targeted user within the scheduled timeframe. It's important to note that your message can be delivered to a user according to your set schedule and frequency. However, if the user takes the recommendation or dismisses the message, the message won't reappear to that user unless your team creates a subsequent message using this experience.
 
 ### Step 4: Acknowledge and complete
 
-Once you are satisfied with the configuration of your message, check the acknowledgement box and then select **Schedule message**. This will cause the message to be registered for delivery according to your selections.
+Once you're satisfied with the configuration of your message, check the acknowledgment box and then select **Schedule message**. This causes the message to be registered for delivery according to your selections.
 
 :::image type="content" source="../../media/copilot-organizational-message-panel.png" alt-text="Screenshot showing the panel to select an Organizational message about Microsoft 365 Copilot." lightbox="../../media/copilot-organizational-message-panel.png":::
 
@@ -83,7 +83,7 @@ Once you are satisfied with the configuration of your message, check the acknowl
 
 ## What’s next?
 
-The Organizational message will start sending on your provided start date. You can confirm the status of your message within the recommendation card and/or by selecting **View details**. If you need to make any changes, you may cancel the current message within the details panel and create a new one by repeating the process described above.
+The Organizational message will start sending on your provided start date. You can confirm the status of your message within the recommendation card and/or by selecting **View details**. If you need to make any changes, you can cancel the current message within the details panel and create a new one by repeating the previously described process.
 
 ## FAQ
 
