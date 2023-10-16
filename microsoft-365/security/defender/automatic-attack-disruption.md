@@ -38,6 +38,9 @@ Automatic attack disruption limits lateral movement early on and reduces the ove
 
 This article provides an overview of automated attack disruption and includes links to the next steps and additional resources.
 
+> [!NOTE]
+> Automatic attack disruption is currently not available for US Government customers using GCC and GCC High.
+
 ## How automatic attack disruption works
 
 Automatic attack disruption is designed to contain attacks in progress, limit the impact on an organization's assets, and provide more time for the SOC to remediate the attack fully. Unlike known protection methods such as prevention and blocking based on a single indicator of compromise, the attack disruption in Microsoft 365 Defender leverages the full breadth of our XDR signal to act at the incident level, taking the entire attack into account.
