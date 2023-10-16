@@ -89,7 +89,7 @@ The **CloudAppEvents** table contains enriched logs from all SaaS applications c
 - GitHub
 - Atlassian
 
-Connect supported cloud apps for instant, out-of-the-box protection, deep visibility into the app’s user and device activities, and more.  For more information, see [Protect connected apps using cloud service provider APIs](/defender-cloud-apps/protect-connected-apps).
+Connect supported cloud apps for instant, out-of-the-box protection, deep visibility into the app’s user and device activities, and more. For more information, see [Protect connected apps using cloud service provider APIs](/defender-cloud-apps/protect-connected-apps).
 
 ## Related topics
 
