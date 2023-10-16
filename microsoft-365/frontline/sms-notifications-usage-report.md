@@ -53,7 +53,7 @@ On the **Distribution** tab, you'll see a chart that provides an overview of SMS
 
 ### Delivery status descriptions
 
-Here are the delivery status values that you may see in the report and what they mean.
+Here are the delivery status values that you might see in the report and what they mean.
 
 |Status  |Description |
 |---------|---------|
