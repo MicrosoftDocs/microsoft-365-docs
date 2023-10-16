@@ -20,7 +20,7 @@ ms.collection:
 - m365-security
 - tier3
 ms.topic: reference
-ms.date: 02/16/2021
+ms.date: 10/16/2023
 ---
 
 # CloudAppEvents
@@ -74,29 +74,20 @@ For information on other tables in the advanced hunting schema, [see the advance
 The __CloudAppEvents__ table contains enriched logs from all SaaS applications connected to Microsoft Defender for Cloud Apps, such as:
 - Office 365 and Microsoft Applications, including:
    - Exchange Online
-
-      - SharePoint Online
-
-         - Microsoft Teams
-
-            - Dynamics 365
-
-               - Skype for Business
-
-                  - Viva Engage
-
-                     - Power Automate
-
-                        - Power BI
-
-                           - And more
-
+   - SharePoint Online
+   - Microsoft Teams
+   - Dynamics 365
+   - Skype for Business
+   - Viva Engage
+   - Power Automate
+   - Power BI
+   - And more
 - Dropbox
 - Salesforce
 - GitHub
 - Atlassian
 
-Connect supported cloud apps for instant, out-of-the-box protection, deep visibility into the app’s user and device activities, and more.  For more information, see [Protect connected apps using cloud service provider APIs - Microsoft Defender for Cloud Apps | Microsoft Learn](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Flearn.microsoft.com%2Fen-us%2Fdefender-cloud-apps%2Fprotect-connected-apps&data=05%7C01%7Cassafyatziv%40microsoft.com%7C3ffe8127f57542d0495608dbca504fba%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638326218515899744%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000%7C%7C%7C&sdata=adbLOc4S%2FwNrtF%2F%2B%2FBrkHfWKhFOzZcB33iaTNqcKYvc%3D&reserved=0).
+Connect supported cloud apps for instant, out-of-the-box protection, deep visibility into the app’s user and device activities, and more.  For more information, see [Protect connected apps using cloud service provider APIs - Microsoft Defender for Cloud Apps](/defender-cloud-apps/protect-connected-apps).
 
 ## Related topics
 
