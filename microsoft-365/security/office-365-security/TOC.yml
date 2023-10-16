@@ -39,6 +39,8 @@
 
    - name: Deploy
      items:
+     - name: Get started with Microsoft Defender for Office 365
+       href: mdo-deployment-guide.md
      - name: Step 1 - Configure email authentication
        items:
        - name: About email authentication
@@ -356,6 +358,8 @@
        href: mdo-sec-ops-manage-incidents-and-alerts.md
      - name: How threat investigation and response works
        href: office-365-ti.md
+     - name: Defender for Office 365 SecOps Guide
+       href: mdo-sec-ops-guide.md
      - name: Analyze and classify
        items:
        - name: Investigate malicious email

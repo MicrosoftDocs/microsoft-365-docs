@@ -21,7 +21,7 @@ ms.custom:
 description: Manual configurations for Exchange Online Protection, Microsoft Defender for Office 365, Plan 1 and 2, and Microsoft 365 Defender, for complete protection of your Office 365 subscription.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 9/14/2023
+ms.date: 10/16/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
@@ -55,7 +55,7 @@ We recommend turning on and using the Standard and/or Strict preset security pol
 - Difference in settings between Standard and Strict preset security policies: [Policy settings in preset security policies](preset-security-policies.md#policy-settings-in-preset-security-policies).
 - Complete list of all features and settings in default policies, Standard preset security policies, and Strict preset security policies: [Recommended settings for EOP and Microsoft Defender for Office 365 security](recommended-settings-for-eop-and-office365.md).
 
-Custom policies are required if the business needs of your organization require policy settings that are *different than* or *aren't defined in* preset security policies. For more information, see [Determine your protection policy strategy](mdo-deployment-guide.md#determine-your-protection-policy-strategy).
+Custom policies are required if the business needs of your organization require policy settings that are *different than* or *aren't defined in* preset security policies. Or, if your organization requires a different user experience for quarantined messages (including notifications). For more information, see [Determine your protection policy strategy](mdo-deployment-guide.md#determine-your-protection-policy-strategy).
 
 ## View dashboards and reports in the Microsoft 365 Defender portal
 

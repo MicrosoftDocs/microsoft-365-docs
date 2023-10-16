@@ -18,7 +18,7 @@ ms.custom:
 description: Learn how to get started with the initial deployment and configuration of Microsoft Defender for Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 9/19/2023
+ms.date: 10/16/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
@@ -52,7 +52,7 @@ To configure EOP and Defender for Office 365 features, you need permissions. The
 
 ## Step 1: Configure email authentication for your Microsoft 365 domains
 
-**Summary**: Configure [SPF](email-authentication-spf-configure.md), [DKIM](email-authentication-dkim-configure.md), and [DMARC](email-authentication-dmarc-configure.md) records (in that order) for all custom Microsoft 365 domains. If known, trusted services modify messages in transit before they reach your Microsoft 365 organization, configure the services as [trusted ARC sealers](email-authentication-arc-configure.md).
+**Summary**: Configure [SPF](email-authentication-spf-configure.md), [DKIM](email-authentication-dkim-configure.md), and [DMARC](email-authentication-dmarc-configure.md) records (in that order) for all custom Microsoft 365 domains (including parked domains and all subdomains). If necessary, configure any [trusted ARC sealers](email-authentication-arc-configure.md).
 
 **Details**:
 
@@ -62,37 +62,19 @@ We'll proceed with the assumption that you're using one or more [custom domains]
 
 Create the following email authentication DNS records at your DNS registrar or DNS hosting service for each custom domain that you use for email in Microsoft 365:
 
-- **Sender Policy Framework (SPF)**: The SPF TXT record identifies valid sources for email from senders in the domain.
+- **Sender Policy Framework (SPF)**: The SPF TXT record identifies valid sources for email from senders in the domain. For instructions, see [Set up SPF to help prevent spoofing](email-authentication-spf-configure.md).
 
-  If you're certain that all email from the domain is sent only from Microsoft 365, use the following value for the domain's SPF TXT record: 
+- **DomainKeys Identified Mail (DKIM)**: DKIM encrypts a signature within the message header that survives message forwarding. For instructions, see [Use DKIM to validate outbound email sent from your custom domain](email-authentication-dkim-configure.md).
 
-  ```text
-  v=spf1 include:spf.protection.outlook.com -all
-  ```
+- **Domain-based Message Authentication, Reporting, and Conformance (DMARC)**: DMARC helps destination email servers decide what to do with messages from the custom domain that fail SPF and DKIM checks. Be sure to include `p=reject` or `p=quarantine` policies in the DMARC records. for instructions, see [Set up DMARC for outbound mail from Microsoft 365](email-authentication-dmarc-configure.md#set-up-dmarc-for-outbound-mail-from-microsoft-365).
 
-  This SPF TXT record instructs destination email servers to _reject_ messages from senders in the domain that originate from other sources.
-
-  You should also configure the following SPF TXT record to protect against unused subdomains:
-
-  ```txt
-  *.subdomain.contoso.com. IN TXT "v=spf1 -all"
-  ```
-
-  If there are other known or unknown sources for email in the domain (for example, third-party email services or on-premises email servers), or if you're using Office 365 Germany or Exchange Online Dedicated, see [Set up SPF to help prevent spoofing](email-authentication-spf-configure.md) for how to correctly configure the SPF TXT record.
-
-- **DomainKeys Identified Mail (DKIM)**: If you're also going to configure DMARC or your environment is complex, you need to configure DKIM for the custom domain. For details and instructions, see [Use DKIM to validate outbound email sent from your custom domain](email-authentication-dkim-configure.md).
-
-  Otherwise, the built-in DKIM configuration in Microsoft 365 is probably OK for most customers who use a single custom domain.
-
-- **Domain-based Message Authentication, Reporting, and Conformance (DMARC)**: DMARC helps destination email servers decide what to do with messages from the custom domain that fail DKIM and DMARC checks.
-
-  To set up DMARC for a custom domain, see [Set up DMARC for outbound mail from Microsoft 365](email-authentication-dmarc-configure.md#set-up-dmarc-for-outbound-mail-from-microsoft-365)
+- **Authenticated Received Chain (ARC)**: If you use third-party services that modify message in transit, you can configure the services as _trusted ARC sealers_ so the modified messages can still pass email authentication checks (if the service supports it). For instructions, see [Configure trusted ARC sealers](email-authentication-arc-configure.md).
 
 If you're using the @\*.onmicrosoft.com domain for email (also known as the Microsoft Online Email Routing Address or MOERA domain), there's not nearly as much for you to do:
 
 - **SPF**: An SPF record is already configured for the \<domain\>.onmicrosoft.com domain.
 - **DKIM**: A DKIM record is already configured for the \<domain\>.onmicrosoft.com domain.
-- **DMARC**: You need to manually set up the DMARC record for the \<domain\>.onmicrosoft.com domain in the Microsoft 365 admin center at <https://admin.microsoft.com/Adminportal/Home#/Domains> as described in zzz.
+- **DMARC**: You need to manually set up the DMARC record for the \<domain\>.onmicrosoft.com domain in the Microsoft 365 admin center at <https://admin.microsoft.com/Adminportal/Home#/Domains> as described in [Activate DMARC for a MOERA domain](step-by-step-guides/how-to-enable-dmarc-reporting-for-microsoft-online-email-routing-address-moera-and-parked-domains.md#activate-dmarc-for-moera-domain).
 
 ## Step 2: Configure protection policies
 
@@ -336,7 +318,11 @@ For complete details, see the following articles:
 
 ## Step 7: Launch phishing simulations using Attack simulation training
 
-Is this worthy of being here?
+In Defender for Office 365 Plan 2, Attack simulation training allows you to send simulated phishing messages to users and assign training based on how they respond. The following options are available:
+
+- [Individual simulations](attack-simulation-training-simulations.md) using built-in payloads or custom payloads.
+- [Simulation automations](attack-simulation-training-simulation-automations.md) taken from real-world phishing attacks using multiple payloads and automated scheduling.
+- [Training-only campaigns](attack-simulation-training-training-campaigns.md) where you don't need to launch a campaign and wait for users to click links or download attachments in the simulated phishing messages before trainings are assigned.
 
 ## Step 8: Protect, detect, and respond
 
