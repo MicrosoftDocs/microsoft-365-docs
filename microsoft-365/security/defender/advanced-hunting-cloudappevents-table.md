@@ -71,7 +71,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 
 ## Apps and services covered
 
-The __CloudAppEvents__ table contains eriched logs from all SaaS applications connected to Microsoft Defender for Cloud Apps, such as:
+The __CloudAppEvents__ table contains enriched logs from all SaaS applications connected to Microsoft Defender for Cloud Apps, such as:
 - Office 365 and Microsoft Applications, including:
    - Exchange Online
 
