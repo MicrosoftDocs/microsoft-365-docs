@@ -68,7 +68,7 @@ The following are definitions for each metric in the user activity table.
 |Display name|The full name of the user.|
 |Last activity date|The latest date the user in that row had activity in Project, including any of the activities in the summary reports.|
 |Projects visited (Desktop)|The number of projects opened by the user in the Project Online desktop client during the time range selected in the top right of the page.|
-|Projects visited (Web)| The number of tasks created by the user in Project for the Web during the time range selected in the top right of the page.|
+|Projects visited (Web)| The number of projects visited by the user in Project for the Web during the time range selected in the top right of the page.|
 |Tasks created (Web)|The number of tasks created by the user in Project for the Web during the time range selected in the top right of the page.|
 |Tasks edited (Web)|The number of tasks edited by the user in Project for the Web during the time range selected in the top right of the page.|
 |Other|This value is true if the user has performed an activity in Project Online desktop client or in Project for the Web (that is not covered by the other columns) in the time range selected in the top right of the page. If the user has not, this value is false.|
