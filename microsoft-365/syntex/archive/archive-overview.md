@@ -53,7 +53,7 @@ Some additional advantages of using Microsoft 365 Archive are:
 
 - **Decluttering** – Explicit separation between active and inactive content to help you manage your site's lifecycle.
 
-Microsoft 365 Archive, coupled with the Microsoft 365 search index and the [Microsoft Purview](https://learn.microsoft.com/en-us/purview/purview) feature set, provides a powerful combination for your long-term data management needs at a price point that matches the lifecycle of your content. Microsoft 365 Archive is controlled in the SharePoint admin center by global or SharePoint admins.
+Microsoft 365 Archive, coupled with the Microsoft 365 search index and the [Microsoft Purview](../purview/purview) feature set, provides a powerful combination for your long-term data management needs at a price point that matches the lifecycle of your content. Microsoft 365 Archive is controlled in the SharePoint admin center by global or SharePoint admins.
 
 When a site is archived, it goes into an explicitly colder tier, no longer consumes a tenant’s active storage quota, and instead drives Microsoft 365 Archive storage consumption. Being in this colder tier means the site is no longer accessible by anyone in the organization outside of Microsoft Purview or admin search.
 
