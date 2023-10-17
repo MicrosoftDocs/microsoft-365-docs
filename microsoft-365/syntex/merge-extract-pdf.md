@@ -23,7 +23,7 @@ With Microsoft Syntex, you can combine two or more PDF files into a new PDF file
 
 The **Merge** feature lets you quickly combine PDF files into a new PDF file stored in SharePoint or OneDrive. You can easily organize, share, and sending multiple PDF files. Integrating multiple PDFs into a large PDF file lets users better organize the information they want to view or share with others.
 
-The **Extract** feature lets you divide a PDF file into multiple PDFs, allowing you to quickly split and extract multiple pages of a PDF into a new PDF file. Now, Syntex users won’t have to worry about sharing information they don’t want from a large PDF file. Splitting a large PDF file into multiple, smaller files lets users tailor the information they want to view or share with others.
+The **Extract** feature lets you divide a PDF file into multiple PDFs, allowing you to quickly split and extract multiple pages of a PDF into a new PDF file. You can easily share individual pages from a larger PDF file. Dividing a large PDF file into multiple, smaller files lets users tailor the information they want to view or share with others.
 
 > [!NOTE]
 > These features are available only for licensed Syntex users.
@@ -51,6 +51,5 @@ To split a PDF file, follow these steps:
 2. At the top left of the screen, select **More options** (**…**), and then select **Extract**.
 
     ![Screenshot of a More options menu showing the Extract option.](../media/content-understanding/extract-option.png)
-
 
 3. Select the page you want to extract, and then select **Extract**.
