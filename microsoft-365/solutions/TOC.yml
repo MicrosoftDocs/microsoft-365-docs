@@ -375,6 +375,24 @@
           href: apps-add-step-4.md
         - name: Step 5. Manage apps and licenses
           href: apps-add-step-5.md                  
+    - name: Configure apps using Microsoft Intune
+      items: 
+      - name: Overview
+        href: apps-config-overview.md
+      - name: Step 1. Configure the Company Portal
+        href: apps-config-step-1.md
+      - name: Step 2. Configure Microsoft Outlook
+        href: apps-config-step-2.md
+      - name: Step 3. Configure Microsoft 365
+        href: apps-config-step-3.md
+      - name: Step 4. Configure Microsoft Edge
+        href: apps-config-step-4.md
+      - name: Step 5. Configure Microsoft Teams
+        href: apps-config-step-5.md  
+      - name: Step 6. Configure other apps
+        href: apps-config-step-6.md
+      - name: Step 7. Verify app configuration
+        href: apps-config-step-7.md        
 
 - name: Compliance
   items:
