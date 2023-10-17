@@ -37,7 +37,7 @@ As an admin, you can add or remove licenses for your business subscriptions in t
 
 - [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
 - If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a Billing account owner or contributor, or a Billing profile owner or contributor to do the tasks in this article.
-- If you have a Microsoft Online Subscription Agreement (MOSA) billing account type, you must be a Global or Billing admin to to the tasks in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+- If you have a Microsoft Online Subscription Agreement (MOSA) billing account type, you must be a Global or Billing admin to complete the tasks in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 - You can [add users and assign licenses at the same time](../../admin/add-users/add-users.md).
 - If you bought your Microsoft 365 for business or Office 365 Enterprise plan through a third-party partner, you must buy additional licenses through that partner.
 
