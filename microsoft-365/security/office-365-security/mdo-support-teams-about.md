@@ -17,7 +17,7 @@ ms.collection:
 description: Admins can learn about Microsoft Teams features in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 8/4/2023
+ms.date: 10/17/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
 ---
@@ -53,16 +53,6 @@ In Microsoft 365 E5 and Defender for Office 365 Plan 2, we've extended Teams pro
 2. On the **Microsoft Teams protection** page, verify the toggle in the **Zero-hour auto purge (ZAP)** section:
    - **Turn on ZAP for Teams**: Verify the toggle is **On** :::image type="icon" source="../../media/scc-toggle-on.png" border="false":::.
    - **Turn off ZAP for Teams**: Slide the toggle to **Off** :::image type="icon" source="../../media/scc-toggle-off.png" border="false":::.
-
-   > [!NOTE]
-   > Before August 22, 2023, even if the toggle is **On**, do the following steps to activate ZAP for Teams protection:
-   >
-   > 1. Slide the toggle to **Off** :::image type="icon" source="../../media/scc-toggle-off.png" border="false":::, select **Save** at the bottom of the page, and then select **OK** in the confirmation dialog that opens.
-   > 2. Slide the toggle to **On** :::image type="icon" source="../../media/scc-toggle-on.png" border="false":::, select **Save** at the bottom of the page, and then select **OK** in the confirmation dialog that opens.
-   >
-   > Before August 22, 2023, run the following command in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) to verify that ZAP for Teams protection is turned on: `Get-TeamsProtectionPolicy | Format-List ZapEnabled`. The value True means ZAP for Teams is turned on. The value False means ZAP for Teams is turned off.
-   >
-   > After August 22, 2023, ZAP for Teams protection is turned on and functional by default (**On** on the **Microsoft Teams protection** page means ZAP for Teams is turned on, so there's no need to confirm in PowerShell).
 
 3. When the toggle is **On** :::image type="icon" source="../../media/scc-toggle-on.png" border="false":::, use the remaining settings on the page to customize ZAP for Teams protection:
 
