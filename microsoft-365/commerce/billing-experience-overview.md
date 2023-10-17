@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jamitche, jobailey
+ms.reviewer: mijeffer, nicholak
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
@@ -23,7 +23,7 @@ ms.custom:
 search.appverid: MET150
 ROBOTS: NOINDEX NOFOLLOW
 description: "Learn about the new billing experience for business subscription in the Microsoft 365 admin center."
-ms.date: 07/18/2023
+ms.date: 10/10/2023
 ---
 
 # Overview of the new Microsoft billing experience for business subscriptions
@@ -68,4 +68,4 @@ The following list describes other changes we’ve made to the billing experienc
 [Understand your Microsoft business billing account](manage-billing-accounts.md) (article)\
 [Understand your Microsoft business billing profile](billing-and-payments/manage-billing-profiles.md) (article)\
 [Understand your bill or invoice](billing-and-payments/understand-your-invoice.md) (article)\
-[How to pay for your Microsoft business subscription with a billing profile](billing-and-payments/pay-for-subscription-billing-profile.md) (article)
+[Payment options for Microsoft business subscriptions](billing-and-payments/pay-for-your-subscription.md) (article)

@@ -11,6 +11,7 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
+- mde-asr
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.subservice: mde

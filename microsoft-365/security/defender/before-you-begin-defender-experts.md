@@ -2,7 +2,7 @@
 title: Key infrastructure requirements before enrolling in the Microsoft Defender Experts for Hunting service
 ms.reviewer:
 description: This section outlines the key infrastructure requirements you must meet and important information on data access and compliance
-keywords: managed threat hunting service, managed threat hunting, managed detection and response (MDR) service, MTE, Microsoft Threat Experts, MTE-TAN, defender experts notification, Targeted Attack Notification, Microsoft Defender Experts for hunting, threat hunting and analysis.
+keywords: managed threat hunting service, defender experts eligibility, managed detection and response (MDR) service, defender experts notifications, apply for defender experts service, dex, defender experts notification, Microsoft Defender Experts for hunting, threat hunting and analysis, managed response
 search.product: Windows 10
 ms.service: microsoft-365-security
 ms.subservice: m365d
@@ -20,7 +20,7 @@ ms.collection:
   - tier1
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 09/13/2023
+ms.date: 10/17/2023
 ---
 
 # Before you begin using Defender Experts for Hunting
@@ -39,7 +39,7 @@ Microsoft Defender Experts for Hunting is a separate service from your existing 
 
 ### Eligibility and licensing
 
-Defender Experts for Hunting customers are assigned two Ask Defender Experts (Experts on Demand) credits on the first of each month, which you can use to submit questions. You can still submit inquiries beyond your initial number of allocated credits. Unused credits expire 90 days from date of assignment or at the end of the subscription term, whichever is shortest.
+Defender Experts for Hunting customers are assigned 10 **Ask Defender Experts** credits, which you can use to submit questions, at the start of each calendar quarter. Unused credits from the current quarter roll up to the next one. You can use up to 20 credits only per quarter. All unused credits expire by the end of the calendar year or at the end of your subscription term, whichever comes first.
 
 For more information about Microsoft's commercial licensing terms, visit [this page](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/MCA).
 

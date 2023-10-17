@@ -45,7 +45,7 @@ This article describes how admins can manage entries for email senders in the Mi
 
 - For details about the syntax for spoofed sender entries, see the [Domain pair syntax for spoofed sender entries](#domain-pair-syntax-for-spoofed-sender-entries) section later in this article.
 
-- An entry should be active within 30 minutes, but it might take up to 24 hours for the entry to be active.
+- An entry should be active within 5 minutes.
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
   - [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo):
@@ -85,8 +85,6 @@ To create block entries for *domains and email addresses*, use either of the fol
 - From the **Domains & addresses** tab on the **Tenant Allow/Block Lists** page or in PowerShell as described in this section.
 
 To create block entries for *spoofed senders*, see [this section](#create-block-entries-for-spoofed-senders) later in this article.
-
-By default, allow entries for domains and email addresses exist for 30 days. During those 30 days, Microsoft learns from the allow entries and [removes them or automatically extends them](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447). After Microsoft learns from the removed allow entries, messages that contain those entities are delivered, unless something else in the message is detected as malicious. By default, allow entries for spoofed senders never expire.
 
 Email from these blocked senders is marked as *phishing* and quarantined.
 
@@ -509,6 +507,8 @@ Here are some examples of valid domain pairs to identify spoofed senders:
 
 > [!NOTE]
 > You can specify wildcards in the sending infrastructure or in the spoofed user, but not in both at the same time. For example, `*, *` isn't permitted.
+>
+> If you're using a domain instead of the IP address or IP address range in the sending infrastructure, the domain needs to match the PTR record for the connecting IP in the **Authentication-Results** header. You can determine the PTR by running the command: `ping -a <IP address>`. We also recommend using the PTR Organization Domain as the domain value. For example, if the PTR resolves to "smtp.inbound.contoso.com", you should use "contoso.com" as the sending infrastructure.
 
 Adding a domain pair allows or blocks the *combination* of the spoofed user *and* the sending infrastructure *only*. For example, you add an allow entry for the following domain pair:
 

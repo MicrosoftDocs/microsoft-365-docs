@@ -3,7 +3,7 @@ title: "Microsoft Bookings"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 06/24/2020
+ms.date: 09/12/2023
 audience: Admin
 ms.topic: article
 ms.service: bookings
@@ -13,6 +13,7 @@ ms.collection:
 - Tier1
 - scotvorg
 - highpri
+- essentials-overview
 ms.custom: VSBFY23
 description: "An overview of the Microsoft Bookings app, which includes a web-based booking calendar and integrates with Outlook to optimize your staff’s calendar and give your customers flexibility to book appointments."
 ---

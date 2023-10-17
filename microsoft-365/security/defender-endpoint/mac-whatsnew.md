@@ -5,12 +5,13 @@ ms.service: microsoft-365-security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 06/29/2023
+ms.date: 09/28/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security
 - tier3
+- mde-macos
 ms.topic: reference
 ms.subservice: mde
 search.appverid: met150
@@ -35,9 +36,9 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 - - [What's new in Microsoft Defender for Endpoint on Linux](linux-whatsnew.md)
 - - [What's new in Microsoft Defender for Endpoint on iOS](ios-whatsnew.md)
 
-**Mac devices to soon receive built-in protection**
+**Mac devices receive built-in protection**
 
-Tamper protection will extend to macOS devices and will be turned on in block mode by default to help secure your Mac against threats. To learn more, see [Protect macOS security settings with tamper protection](built-in-protection.md).
+Tamper protection is turned on in block mode by default to help secure your Mac against threats. To learn more, see [Protect macOS security settings with tamper protection](built-in-protection.md).
 
 **Network protection available for macOS**
 
@@ -45,19 +46,51 @@ Network protection for macOS is now available for all Mac devices onboarded to D
 
 **Known issues**
 
-Apple has fixed an issue on macOS [Ventura upgrade](<https://developer.apple.com/documentation/macos-release-notes/macos-13_1-release-notes>), which is fixed with the latest OS update. The issue impacts Microsoft Defender for Endpoint security extensions, and might result in losing Full Disk Access Authorization, impacting its ability to function properly.<br>
-<br>
-**Catalina Deprecation**<br>
-Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as Apple ended support for Catalina (10.15) in December 2022.
-</br>
+Apple has fixed an issue on macOS [Ventura upgrade](<https://developer.apple.com/documentation/macos-release-notes/macos-13_1-release-notes>), which is fixed with the latest OS update. The issue impacts Microsoft Defender for Endpoint security extensions, and might result in losing Full Disk Access Authorization, impacting its ability to function properly.
+
+**Sonoma support**
+
+Microsoft Defender supports macOS Sonoma (14.0) in the current Defender release.
+
+**macOS Deprecation**
+
+Microsoft Defender for Endpoint no longer supports these macOS as Apple ended support for:
+- Big Sur (11) in December 2023.
+- Catalina (10.15) in December 2022.
+
+### Oct-2023 (Build: 101.23082.0018  | Release version: 20.123082.18.0)
+
+| Build:             | **101.23082.0018**         |
+|--------------------|----------------------------|
+| Release version:   | **20.123082.18.0**         |
+| Engine version:    | **1.1.23070.1002**         |
+| Signature version: | **1.399.384.0**            |
+
+- [[device control](mac-device-control-overview.md)] Detailed status with `mdatp health --details device_control`
+- [[device control](mac-device-control-overview.md)] `mdatp config device-control policy` to [set policy](mac-device-control-manual.md) on a non-managed machine
+- Bug and performance fixes
+
+### Sep-2023 (Build: 101.23072.0025 | Release version: 20.123072.25.0)
+
+| Build:             | **101.23072.0025**    |
+|--------------------|-----------------------|
+| Release version:   | **20.123072.25.0**    |
+| Engine version:    | **1.1.23050.3**       |
+| Signature version: | **1.397.911.0**       |
+
+##### What's new
+
+- Bug and performance fixes
+- Fix: Security Portal events may have missed ancestors details for short lived processes
+- Fix: Major performance issues on macOS when Network Protection is set to Audit mode
 
 ### Aug-2023 (Build: 101.23062.0016  | Release version: 20.123062.16.0)
 
-| Build:             | **101.23062.0016**         |
+| Build:             | **101.23062.0016**    |
 |--------------------|-----------------------|
-| Release version:   | **20.123062.16.0** |
+| Release version:   | **20.123062.16.0**    |
 | Engine version:    | **1.1.23050.3**       |
-| Signature version: | **1.395.436.0**      |
+| Signature version: | **1.395.436.0**       |
 
 ##### What's new
 
@@ -66,9 +99,9 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 
 ### Jul-2023 (Build: 101.23052.0004  | Release version: 20.123052.4.0)
 
-| Build:             | **101.23052.0004**         |
+| Build:             | **101.23052.0004**    |
 |--------------------|-----------------------|
-| Release version:   | **20.123052.4.0** |
+| Release version:   | **20.123052.4.0**     |
 | Engine version:    | **1.1.20100.7**       |
 | Signature version: | **1.391.2163.0**      |
 
@@ -84,7 +117,7 @@ Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as App
 |--------------------|-----------------------|
 | Release version:   | **20.123042.19884.0** |
 | Engine version:    | **1.1.20300.4**       |
-| Signature version: | **1.391.221.0**      |
+| Signature version: | **1.391.221.0**       |
 
 ##### What's new
 

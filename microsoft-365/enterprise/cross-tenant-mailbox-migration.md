@@ -8,7 +8,7 @@ ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
   - NOCSH
-ms.date: 08/23/2023
+ms.date: 09/20/2023
 ms.reviewer: georgiah
 ms.custom:
   - it-pro
@@ -53,13 +53,19 @@ When a mailbox is migrated cross-tenant with this feature, only user-visible con
 > [!WARNING]
 > You must have purchased, or verified that you can purchase, cross-tenant user data migration licenses prior to the next steps. Migrations fail if this step hasn't been completed. Microsoft doesn't offer exceptions for this licensing requirement.
 
+If you do not have the proper license assigned to the user being migrated, the migration fails, and you receive an error that is similar to the following:
+
+> Error: CrossTenantMigrationWithoutLicensePermanentException: No license was found for the source recipient, '65c3c3ea-2b9a-44d0-a685-9bfe300f8c87', or the target recipient, '65c3c3ea-2b9a-44d0-a685-9bfe300f8c87'. A Cross-tenant User Data Migration license is required to move a mailbox between tenants.
+
 ## Preparing source and target tenants
 
 ### Prerequisites for source and target tenants
 
 Before starting, ensure that you have the necessary permissions to configure the Move Mailbox application in Azure, EXO Migration Endpoint, and the EXO Organization Relationship.
 
-Additionally, at least one mail-enabled security group in the source tenant is required. These groups are used to scope the list of mailboxes that can move from source tenant (or sometimes referred to as resource) to the target tenant. This scoping allows the source tenant administrator to restrict or scope the specific set of mailboxes that need to be moved, preventing unintended users from being migrated. Nested groups aren't supported.
+Additionally, at least one mail-enabled security group in the source tenant is required. These groups are used to scope the list of mailboxes that can move from source tenant (or sometimes referred to as resource) to the target tenant. This scoping allows the source tenant administrator to restrict or scope the specific set of mailboxes that need to be moved, preventing unintended users from being migrated.
+
+If you are migrating more than 10,000 users, we recommend creating multiple groups to contain the user list for best performance. While nested groups are supported, they are not recommended.
 
 You also need to communicate with your trusted partner company (with whom you'll be moving mailboxes) to obtain their Microsoft 365 tenant ID. This tenant ID is used in the **Organization Relationship DomainName** field.
 
@@ -86,11 +92,11 @@ All users in both the source and target organizations must be licensed with the 
 
 4. Select **New registration**.
 
-   ![New Application](../media/tenant-to-tenant-mailbox-move/b36698df128e705eacff4bff7231056a.png)
+   :::image type="content" alt-text="Screenshot of New Application UI." source="../media/tenant-to-tenant-mailbox-move/b36698df128e705eacff4bff7231056a.png":::
 
 5. On the **Register an application** page, under **Supported account types**, select **Accounts in any organizational directory (Any Azure AD directory - Multi-tenant)**. Then, under **Redirect URI (optional)**, select **Web**, and then type `https://office.com`. Then, select **Register**.
 
-   ![Application Registration](../media/tenant-to-tenant-mailbox-move/edcdf18b9f504c47284fe4afb982c433.png)
+   :::image type="content" alt-text="Screenshot of the form 'Register an application'." source="../media/tenant-to-tenant-mailbox-move/edcdf18b9f504c47284fe4afb982c433.png":::
 
    On the top-right corner of the page, see the notification dialog box that states the app was successfully created.
 
@@ -104,36 +110,36 @@ All users in both the source and target organizations must be licensed with the 
 
 10. By default, **User.Read** permissions are assigned to the app you created, but these permissions aren't required for mailbox migrations. You can remove those permissions.
 
-    ![Application Permissions](../media/tenant-to-tenant-mailbox-move/6a8c13a36cb3e10964a6920b8138e12b.png)
+    :::image type="content" alt-text="Screenshot of 'Configured permissions'." source="../media/tenant-to-tenant-mailbox-move/6a8c13a36cb3e10964a6920b8138e12b.png" lightbox="../media/tenant-to-tenant-mailbox-move/6a8c13a36cb3e10964a6920b8138e12b.png":::
 
 11. To add permission for mailbox migration, select **Add a permission**.
 
 12. In the **Request API permissions** window, select **APIs my organization uses**, search for `Office 365 Exchange Online`, and then select it.
 
-    ![Select API](../media/tenant-to-tenant-mailbox-move/0b4dc1eea3910e9c475724d9473aca58.png)
+    :::image type="content" alt-text="Screenshot of 'Select an API' under 'Request API permissions'." source="../media/tenant-to-tenant-mailbox-move/0b4dc1eea3910e9c475724d9473aca58.png":::
 
 13. Select **Application permissions**.
 
-14. Under **Select permissions**, expand **Mailbox**, and check the **Mailbox.Migration** checkbox, and then select **Add permissions** at the bottom on the screen.
+14. Under **Select permissions**, expand **Mailbox** and select **Mailbox.Migration**, and then select **Add permissions** at the bottom on the screen.
 
-    ![Set API](../media/tenant-to-tenant-mailbox-move/0038a4cf74bb13de0feb51800e078803.png)
+    :::image type="content" alt-text="Screenshot of Mailbox.Migration and its checkbox under 'Select permissions'." source="../media/tenant-to-tenant-mailbox-move/0038a4cf74bb13de0feb51800e078803.png":::
 
 15. Now select **Certificates & secrets** in the navigation pane for your application.
 
 16. Under **Client secrets**, select **New client secret**.
 
-    ![Client Secrets](../media/tenant-to-tenant-mailbox-move/273dafd5e6c6455695f9baf35ef9977a.png)
+    :::image type="content" alt-text="Screenshot of 'Client secrets' and the option to add a new client secret." source="../media/tenant-to-tenant-mailbox-move/273dafd5e6c6455695f9baf35ef9977a.png":::
 
 17. In the **Add a client secret** window, type a description, and then configure your expiration settings.
 
-   > [!NOTE]
-   > The password is used when creating your migration endpoint. It's extremely important that you copy this password to your clipboard and/or to a secure/secret password safe location. The secret creation stage is the only time during which you can see this password! If you do somehow lose it or need to reset it, you can sign back into the Azure portal, go to **App registrations**, find your migration app, select **Secrets & certificates**, and then create a new secret for your app.
+    > [!NOTE]
+    > The password is used when creating your migration endpoint. It's extremely important that you copy this password to your clipboard and/or to a secure/secret password safe location. The secret creation stage is the only time during which you can see this password! If you do somehow lose it or need to reset it, you can sign back into the Azure portal, go to **App registrations**, find your migration app, select **Secrets & certificates**, and then create a new secret for your app.
 
 Now that you've successfully created the migration application and secret, the next step is to consent to the application. 
 
 ### Grant consent to the application
 
-1. In the Azure Active Directory landing page, select **Enterprise applications** in the navigation pane; then find your migration app you created, select it, and then select **Permissions**.
+1. In the Azure Active Directory landing page, select **Enterprise applications** in the navigation pane; then find your migration app you created, select it, and then select **API Permissions**.
 
 2. Select **Grant admin consent for [your tenant]**. A new browser window opens.
 
@@ -168,8 +174,7 @@ Now that you've successfully created the migration application and secret, the n
    $AppId = "[Guid copied from the migrations app]"
    $Credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $AppId, (ConvertTo-SecureString -String "[this is your secret password you saved in the 
    previous steps]" -AsPlainText -Force)
-   New-MigrationEndpoint -RemoteServer outlook.office.com -RemoteTenant "contoso.onmicrosoft.com" -Credentials $Credential -ExchangeRemoteMove:$true -Name "[the name of your migration 
-   endpoint]" -ApplicationId $AppId
+   New-MigrationEndpoint -RemoteServer outlook.office.com -RemoteTenant "contoso.onmicrosoft.com" -Credentials $Credential -ExchangeRemoteMove:$true -Name "[the name of your migration endpoint]" -ApplicationId $AppId
    ```
 
 3. Create a new organization relationship object or edit your existing organization relationship object to your source tenant.
@@ -197,13 +202,16 @@ Now that you've successfully created the migration application and secret, the n
    > [!NOTE]
    > You'll need the application ID of the mailbox migration app you just created. You will need to replace `contoso.onmicrosoft.com` in the previous example with your source tenant's `onmicrosoft.com` URL. You'll also need to replace [application_id_of_the_app_you_just_created] with the application ID of the mailbox migration app you just created.
 
-2. Accept the application when the pop up appears. You can also sign in to your Azure Active Directory portal and find the application under **Enterprise applications**.
+2. Accept the application when the pop-up appears. You can also sign in to your Azure Active Directory portal and find the application under **Enterprise applications**.
 
 3. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) on the source Exchange Online tenant.
 
 4. Create a new organization relationship object or edit your existing organization relationship object to your target (destination) tenant in Exchange Online PowerShell:
 
    ```PowerShell
+   # Enable customization if tenant is dehydrated
+   $dehydrated=Get-OrganizationConfig | select isdehydrated
+   if ($dehydrated.isdehydrated -eq $true) {Enable-OrganizationCustomization}
    $targetTenantId="[tenant id of your trusted partner, where the mailboxes are being moved to]"
    $appId="[application id of the mailbox migration app you consented to]"
    $scope="[name of the mail enabled security group that contains the list of users who are allowed to migrate]"
@@ -212,7 +220,7 @@ Now that you've successfully created the migration application and secret, the n
    $existingOrgRel = $orgrels | ?{$_.DomainNames -like $targetTenantId}
    If ($null -ne $existingOrgRel)
    {
-       Set-OrganizationRelationship $existingOrgRel.Name -Enabled:$true -MailboxMoveEnabled:$true -MailboxMoveCapability RemoteOutbound -OAuthApplicationId $appId - MailboxMovePublishedScopes $scope
+       Set-OrganizationRelationship $existingOrgRel.Name -Enabled:$true -MailboxMoveEnabled:$true -MailboxMoveCapability RemoteOutbound -OAuthApplicationId $appId -MailboxMovePublishedScopes $scope
    }
    If ($null -eq $existingOrgRel)
    {
@@ -221,8 +229,8 @@ Now that you've successfully created the migration application and secret, the n
    }
    ```
 
-> [!NOTE]
-> The tenant ID that you enter as the \$sourceTenantId and \$targetTenantId is the GUID and not the tenant domain name. For an example of a tenant ID and information about finding your tenant ID, see [Find your Microsoft 365 tenant ID](/onedrive/find-your-office-365-tenant-id).
+   > [!NOTE]
+   > The tenant ID that you enter as the \$sourceTenantId and \$targetTenantId is the GUID and not the tenant domain name. For an example of a tenant ID and information about finding your tenant ID, see [Find your Microsoft 365 tenant ID](/onedrive/find-your-office-365-tenant-id).
 
 ## Prepare target user objects for migration
 
@@ -249,35 +257,35 @@ For any mailbox moving from a source organization, you must provision a MailUser
 
          Example **target** MailUser object:
 
-      | Attribute            | Value                                                                                                                                |
-      | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-      | Alias                | LaraN                                                                                                                                |
-      | RecipientType        | MailUser                                                                                                                             |
-      | RecipientTypeDetails | MailUser                                                                                                                             |
-      | UserPrincipalName    | LaraN@northwintraders.onmicrosoft.com                                                                                                |
-      | PrimarySmtpAddress   | Lara.Newton@northwindtraders.com                                                                                                     |
-      | ExternalEmailAddress | SMTP:LaraN@contoso.onmicrosoft.com                                                                                                   |
-      | ExchangeGUID         | 1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8                                                                                                 |
-      | LegacyExchangeDN     | /o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=74e5385fce4b46d19006876949855035-Lara      |
-      | EmailAddresses       | x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=d11ec1a2cacd4f81858c81907273f1f9-Lara |
-      |                      | smtp:LaraN@northwindtraders.onmicrosoft.com                                                                                          |
-      |                      | SMTP:Lara.Newton@northwindtraders.com                                                                                                |
-      |                      | X500:/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=f161af74128f460fba5c0c23984b3d6c-Lara       |
+         | Attribute            | Value                                                                                                                                |
+         | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+         | Alias                | LaraN                                                                                                                                |
+         | RecipientType        | MailUser                                                                                                                             |
+         | RecipientTypeDetails | MailUser                                                                                                                             |
+         | UserPrincipalName    | LaraN@northwintraders.onmicrosoft.com                                                                                                |
+         | PrimarySmtpAddress   | Lara.Newton@northwindtraders.com                                                                                                     |
+         | ExternalEmailAddress | SMTP:LaraN@contoso.onmicrosoft.com                                                                                                   |
+         | ExchangeGUID         | 1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8                                                                                                 |
+         | LegacyExchangeDN     | /o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=74e5385fce4b46d19006876949855035-Lara      |
+         | EmailAddresses       | x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=d11ec1a2cacd4f81858c81907273f1f9-Lara |
+         |                      | smtp:LaraN@northwindtraders.onmicrosoft.com                                                                                          |
+         |                      | SMTP:Lara.Newton@northwindtraders.com                                                                                                |
+         |                      | X500:/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=f161af74128f460fba5c0c23984b3d6c-Lara       |
 
          Example **source** Mailbox object:
 
-      | Attribute            | Value                                                                                                                          |
-      | -------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-      | Alias                | LaraN                                                                                                                          |
-      | RecipientType        | UserMailbox                                                                                                                    |
-      | RecipientTypeDetails | UserMailbox                                                                                                                    |
-      | UserPrincipalName    | LaraN@contoso.onmicrosoft.com                                                                                                  |
-      | PrimarySmtpAddress   | Lara.Newton@contoso.com                                                                                                        |
-      | ExchangeGUID         | 1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8                                                                                           |
-      | LegacyExchangeDN     | /o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=d11ec1a2cacd4f81858c81907273f1f9-Lara|
-      | EmailAddresses       | smtp:LaraN@contoso.onmicrosoft.com                                                                                             |
-      |                      | SMTP:Lara.Newton@contoso.com                                                                                                   |
-      |                      | X500:/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=f161af74128f460fba5c0c23984b3d6c-Lara |
+         | Attribute            | Value                                                                                                                          |
+         | -------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+         | Alias                | LaraN                                                                                                                          |
+         | RecipientType        | UserMailbox                                                                                                                    |
+         | RecipientTypeDetails | UserMailbox                                                                                                                    |
+         | UserPrincipalName    | LaraN@contoso.onmicrosoft.com                                                                                                  |
+         | PrimarySmtpAddress   | Lara.Newton@contoso.com                                                                                                        |
+         | ExchangeGUID         | 1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8                                                                                           |
+         | LegacyExchangeDN     | /o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=d11ec1a2cacd4f81858c81907273f1f9-Lara|
+         | EmailAddresses       | smtp:LaraN@contoso.onmicrosoft.com                                                                                             |
+         |                      | SMTP:Lara.Newton@contoso.com                                                                                                   |
+         |                      | X500:/o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=f161af74128f460fba5c0c23984b3d6c-Lara |
 
 7. Other attributes may be included in Exchange hybrid write-back already. If not, they should be included.
 
@@ -374,7 +382,7 @@ T2Tbatch                   Syncing ExchangeRemoteMove 1
 
 A minimal example of a CSV file is:
 
-```csv
+```CSV
 EmailAddress
 userA@northwindtraders.onmicrosoft.com
 userB@northwindtraders.onmicrosoft.com
@@ -651,16 +659,16 @@ Mailbox signatures are not migrated cross tenant and must be recreated.
 
 - If you synchronize users from on-premises using Azure AD Connect in the target tenant, then you can provision on-premises MailUser objects with ExternalEmailAddress pointing to the source tenant where the mailbox exists (LaraN@contoso.onmicrosoft.com), and you stamp the PrimarySMTPAddress as a domain that resides in the target tenant (Lara.Newton@northwindtraders.com). These values synchronize down to the tenant and an appropriate mail user is provisioned and is ready for migration. An example object is shown here.
 
-```PowerShell
-Get-MailUser LaraN | select ExternalEmailAddress, EmailAddresses
+  ```PowerShell
+  Get-MailUser LaraN | select ExternalEmailAddress, EmailAddresses
 
-ExternalEmailAddress               EmailAddresses
---------------------               --------------
-SMTP:LaraN@contoso.onmicrosoft.com {SMTP:lara.newton@northwindtraders.com}
-```
+  ExternalEmailAddress               EmailAddresses
+  --------------------               --------------
+  SMTP:LaraN@contoso.onmicrosoft.com {SMTP:lara.newton@northwindtraders.com}
+  ```
 
-> [!NOTE]
-> The _contoso.onmicrosoft.com_ address is _not_ present in the EmailAddresses/proxyAddresses array.
+  > [!NOTE]
+  > The _contoso.onmicrosoft.com_ address is _not_ present in the EmailAddresses/proxyAddresses array.
 
 - MailUser objects with "external" primary SMTP addresses are modified/reset to "internal" company-claimed domains.
 
@@ -668,108 +676,172 @@ SMTP:LaraN@contoso.onmicrosoft.com {SMTP:lara.newton@northwindtraders.com}
 
 - When any Exchange service plan is applied to a MailUser, the Azure AD process starts to enforce proxy scrubbing to ensure that the local organization isn't able to send out mail, spoof, or mail from another tenant. Any SMTP address on a recipient object with these service plans will be removed if the address isn't verified by the local organization. As is the case in the example, the northwindtraders.com domain isn't verified by the contoso.onmicrosoft.com tenant; therefore, the scrubbing removes that northwindtraders.com domain. If you wish to persist these external domains on MailUser, either before or after the migration, you need to alter your migration processes to strip licenses after the move completes or before the move to ensure that the users have the expected external branding applied. You'll need to ensure that the mailbox object is properly licensed to not affect mail service. An example script to remove the service plans on a MailUser in the contoso.onmicrosoft.com tenant is shown here.
 
-```PowerShell
-$LO = New-MsolLicenseOptions -AccountSkuId "contoso:ENTERPRISEPREMIUM" DisabledPlans "LOCKBOX_ENTERPRISE","EXCHANGE_S_ENTERPRISE","INFORMATION_BARRIERS","MIP_S_CLP2","MIP_S_CLP1","MYANALYTICS_P2","EXCHANGE_ANALYTICS","EQUIVIO_ANALYTICS","THREAT_INTELLIGENCE","PAM_ENTERPRISE","PREMIUM_ENCRYPTION"
-Set-MsolUserLicense -UserPrincipalName ProxyTest@contoso.com LicenseOptions $lo
-```
+  ```PowerShell
+  $LO = New-MsolLicenseOptions -AccountSkuId "contoso:ENTERPRISEPREMIUM" DisabledPlans "LOCKBOX_ENTERPRISE","EXCHANGE_S_ENTERPRISE","INFORMATION_BARRIERS","MIP_S_CLP2","MIP_S_CLP1","MYANALYTICS_P2","EXCHANGE_ANALYTICS","EQUIVIO_ANALYTICS","THREAT_INTELLIGENCE","PAM_ENTERPRISE","PREMIUM_ENCRYPTION"
+  Set-MsolUserLicense -UserPrincipalName ProxyTest@contoso.com LicenseOptions $lo
+  ```
 
-Results in the set of ServicePlans assigned are shown here:
+  Results in the set of ServicePlans assigned are shown here:
 
-```PowerShell
-(Get-MsolUser -UserPrincipalName ProxyTest@contoso.com).licenses | Select-Object -ExpandProperty ServiceStatus |sort ProvisioningStatus -Descending
+  ```PowerShell
+  (Get-MsolUser -UserPrincipalName ProxyTest@contoso.com).licenses | Select-Object -ExpandProperty ServiceStatus |sort ProvisioningStatus -Descending
 
-ServicePlan           ProvisioningStatus
------------           ------------------
-ATP_ENTERPRISE        PendingProvisioning
-MICROSOFT_SEARCH      PendingProvisioning
-INTUNE_O365           PendingActivation
-PAM_ENTERPRISE        Disabled
-EXCHANGE_ANALYTICS    Disabled
-EQUIVIO_ANALYTICS     Disabled
-THREAT_INTELLIGENCE   Disabled
-LOCKBOX_ENTERPRISE    Disabled
-PREMIUM_ENCRYPTION    Disabled
-EXCHANGE_S_ENTERPRISE Disabled
-INFORMATION_BARRIERS  Disabled
-MYANALYTICS_P2        Disabled
-MIP_S_CLP1            Disabled
-MIP_S_CLP2            Disabled
-ADALLOM_S_O365        PendingInput
-RMS_S_ENTERPRISE      Success
-YAMMER_ENTERPRISE     Success
-PROJECTWORKMANAGEMENT Success
-BI_AZURE_P2           Success
-WHITEBOARD_PLAN3      Success
-SHAREPOINTENTERPRISE  Success
-SHAREPOINTWAC         Success
-KAIZALA_STANDALONE    Success
-OFFICESUBSCRIPTION    Success
-MCOSTANDARD           Success
-Deskless              Success
-STREAM_O365_E5        Success
-FLOW_O365_P3          Success
-POWERAPPS_O365_P3     Success
-TEAMS1                Success
-MCOEV                 Success
-MCOMEETADV            Success
-BPOS_S_TODO_3         Success
-FORMS_PLAN_E5         Success
-SWAY                  Success
-```
+  ServicePlan           ProvisioningStatus
+  -----------           ------------------
+  ATP_ENTERPRISE        PendingProvisioning
+  MICROSOFT_SEARCH      PendingProvisioning
+  INTUNE_O365           PendingActivation
+  PAM_ENTERPRISE        Disabled
+  EXCHANGE_ANALYTICS    Disabled
+  EQUIVIO_ANALYTICS     Disabled
+  THREAT_INTELLIGENCE   Disabled
+  LOCKBOX_ENTERPRISE    Disabled
+  PREMIUM_ENCRYPTION    Disabled
+  EXCHANGE_S_ENTERPRISE Disabled
+  INFORMATION_BARRIERS  Disabled
+  MYANALYTICS_P2        Disabled
+  MIP_S_CLP1            Disabled
+  MIP_S_CLP2            Disabled
+  ADALLOM_S_O365        PendingInput
+  RMS_S_ENTERPRISE      Success
+  YAMMER_ENTERPRISE     Success
+  PROJECTWORKMANAGEMENT Success
+  BI_AZURE_P2           Success
+  WHITEBOARD_PLAN3      Success
+  SHAREPOINTENTERPRISE  Success
+  SHAREPOINTWAC         Success
+  KAIZALA_STANDALONE    Success
+  OFFICESUBSCRIPTION    Success
+  MCOSTANDARD           Success
+  Deskless              Success
+  STREAM_O365_E5        Success
+  FLOW_O365_P3          Success
+  POWERAPPS_O365_P3     Success
+  TEAMS1                Success
+  MCOEV                 Success
+  MCOMEETADV            Success
+  BPOS_S_TODO_3         Success
+  FORMS_PLAN_E5         Success
+  SWAY                  Success
+  ```
 
-The user's PrimarySMTPAddress is no longer scrubbed. The northwindtraders.com domain isn't owned by the contoso.onmicrosoft.com tenant and will persist as the primary SMTP address shown in the directory.
+  The user's PrimarySMTPAddress is no longer scrubbed. The northwindtraders.com domain isn't owned by the contoso.onmicrosoft.com tenant and will persist as the primary SMTP address shown in the directory.
 
-Here's an example:
+  Here's an example:
 
-```PowerShell
-Get-Recipient ProxyTest | Format-Table -AutoSize UserPrincipalName, PrimarySmtpAddress, ExternalEmailAddress, ExternalDirectoryObjectId
-UserPrincipalName               PrimarySmtpAddress              ExternalEmailAddress                 ExternalDirectoryObjectId
------------------               ------------------              --------------------                 -------------------------
-ProxyTest@contoso.com          ProxyTest@contoso.com          SMTP:ProxyTest@contoso.com          e2513482-1d5b-4066-936a-cbc7f8f6f817
-```
+  ```PowerShell
+  Get-Recipient ProxyTest | Format-Table -AutoSize UserPrincipalName, PrimarySmtpAddress, ExternalEmailAddress, ExternalDirectoryObjectId
+  UserPrincipalName               PrimarySmtpAddress              ExternalEmailAddress                 ExternalDirectoryObjectId
+  -----------------               ------------------              --------------------                 -------------------------
+  ProxyTest@contoso.com          ProxyTest@contoso.com          SMTP:ProxyTest@contoso.com          e2513482-1d5b-4066-936a-cbc7f8f6f817
+  ```
 
-When `msExchRemoteRecipientType` is set to 8 (DeprovisionMailbox), for on-premises MailUsers that are migrated to the target tenant, the proxy scrubbing logic in Azure removes non-owned domains and reset the primarySMTP to an owned domain. With the msExchRemoteRecipientType in the on-premises MailUser being cleared, the proxy scrub logic no longer applies.
+  When `msExchRemoteRecipientType` is set to 8 (DeprovisionMailbox), for on-premises MailUsers that are migrated to the target tenant, the proxy scrubbing logic in Azure removes non-owned domains and reset the primarySMTP to an owned domain. With the msExchRemoteRecipientType in the on-premises MailUser being cleared, the proxy scrub logic no longer applies.
 
-Below is the full set of current service plans that include Exchange Online:
+  Below is the full set of current service plans that include Exchange Online:
 
-| Name                                             |
-| ------------------------------------------------ |
-| eDiscovery (Premium) Storage (500 GB)            |
-| Customer Lockbox                                 |
-| Data Loss Prevention                             |
-| Exchange Enterprise CAL Services (EOP, DLP)      |
-| Exchange Essentials                              |
-| Exchange Foundation                              |
-| Exchange Online (P1)                             |
-| Exchange Online (Plan 1)                         |
-| Exchange Online (Plan 2)                         |
-| Exchange Online Archiving for Exchange Online    |
-| Exchange Online Archiving for Exchange Server    |
-| Exchange Online Inactive User Add-on             |
-| Exchange Online Kiosk                            |
-| Exchange Online Multi-Geo                        |
-| Exchange Online Plan 1                           |
-| Exchange Online POP                              |
-| Exchange Online Protection                       |
-| Graph Connectors Search with Index               |
-| Information Barriers                             |
-| Information Protection for Office 365 - Premium  |
-| Information Protection for Office 365 - Standard |
-| Insights by MyAnalytics                          |
-| Microsoft Information Governance                 |
-| Microsoft Purview Audit (Premium)                |
-| Microsoft Bookings                               |
-| Microsoft Business Center                        |
-| Microsoft Data Investigations                    |
-| Microsoft MyAnalytics (Full)                     |
-| Microsoft Communications Compliance              |
-| Microsoft Communications DLP                     |
-| Microsoft Customer Key                           |
-| Microsoft 365 Advanced Auditing                  |
-| Microsoft Records Management                     |
-| Office 365 eDiscovery (Premium)                  |
-| Office 365 Advanced eDiscovery                   |
-| Microsoft Defender for Office 365 (Plan 1)       |
-| Microsoft Defender for Office 365 (Plan 2)       |
-| Office 365 Privileged Access Management          |
-| Premium Encryption in Office 365                 |
+  | Name                                             |
+  | ------------------------------------------------ |
+  | eDiscovery (Premium) Storage (500 GB)            |
+  | Customer Lockbox                                 |
+  | Data Loss Prevention                             |
+  | Exchange Enterprise CAL Services (EOP, DLP)      |
+  | Exchange Essentials                              |
+  | Exchange Foundation                              |
+  | Exchange Online (P1)                             |
+  | Exchange Online (Plan 1)                         |
+  | Exchange Online (Plan 2)                         |
+  | Exchange Online Archiving for Exchange Online    |
+  | Exchange Online Archiving for Exchange Server    |
+  | Exchange Online Inactive User Add-on             |
+  | Exchange Online Kiosk                            |
+  | Exchange Online Multi-Geo                        |
+  | Exchange Online Plan 1                           |
+  | Exchange Online POP                              |
+  | Exchange Online Protection                       |
+  | Graph Connectors Search with Index               |
+  | Information Barriers                             |
+  | Information Protection for Office 365 - Premium  |
+  | Information Protection for Office 365 - Standard |
+  | Insights by MyAnalytics                          |
+  | Microsoft Information Governance                 |
+  | Microsoft Purview Audit (Premium)                |
+  | Microsoft Bookings                               |
+  | Microsoft Business Center                        |
+  | Microsoft Data Investigations                    |
+  | Microsoft MyAnalytics (Full)                     |
+  | Microsoft Communications Compliance              |
+  | Microsoft Communications DLP                     |
+  | Microsoft Customer Key                           |
+  | Microsoft 365 Advanced Auditing                  |
+  | Microsoft Records Management                     |
+  | Office 365 eDiscovery (Premium)                  |
+  | Office 365 Advanced eDiscovery                   |
+  | Microsoft Defender for Office 365 (Plan 1)       |
+  | Microsoft Defender for Office 365 (Plan 2)       |
+  | Office 365 Privileged Access Management          |
+  | Premium Encryption in Office 365                 |
+
+## Migration Failures
+
+- MailboxNotInCrossTenantMigrationScopeException
+
+  Ensure the migration scope is set up correctly on the source tenant and that MailboxMovesPublishedScopes is set in the organization relationship with the target tenant.  
+  Verify that the mailbox to be migrated has been added to the security group in the source tenant.  
+  After adding user to correct security group, resume the migration batch.  
+
+- AuxArchiveNotFoundInTargetRecipientException
+
+  This failure is because the user was not in the migration scope when batch was started and the user has AuxArchive on the source.  
+  Add user to the correct security group on source target.  
+  Remove the migration user from the batch.  
+  Remove users with the following command: Get-MigrationUser -Identity LaraN@contoso.onmicrosoft.com -IncludeAssociatedUsers | Remove-MigrationUser  
+  Add user to new batch.  
+
+- MailboxIsNotInExpectedDBException
+
+  This failure is due to internal Microsoft maintenance.  
+  Remove the migration user from the batch.  
+  Remove users with the following command: Get-MigrationUser -Identity LaraN@contoso.onmicrosoft.com -IncludeAssociatedUsers | Remove-MigrationUser  
+  Add user to new batch.  
+
+- NotAcceptedDomainException
+
+  There is an invalid proxy address stamped on the target user. An example would be where a user in contoso.onmicrosoft.com had a proxy address of  fabrikam.onmicrosoft.com, which is the source tenant.  
+  Remove the invalid proxy address using Set-MailUser LaraN@contoso.onmicrosoft.com -EmailAddress @{remove="smtp:LaraN@northwindtraders.onmicrosoft.com"}  
+  Resume the migration batch.  
+
+- SourceAuxArchiveIsProvisionedDuringCrossTenantMovePermanentException
+
+  A new AuxArchive was provisioned during migration.  
+  Remove the migration user from the batch.  
+  Remove users with the following command: Get-MigrationUser -Identity LaraN@contoso.onmicrosoft.com -IncludeAssociatedUsers | Remove-MigrationUser  
+  Add user to new batch.  
+
+- UserDuplicateInOtherBatchException
+
+  User exists in another batch already.  
+  Remove the migration user from the batch.  
+  Remove users with the following command: Get-MigrationUser -Identity LaraN@contoso.onmicrosoft.com -IncludeAssociatedUsers | Remove-MigrationUser  
+  Add user to new batch.  
+
+- MissingExchangeGuidException
+
+  The target mailuser object is missing the correct ExchangeGuid value.  
+  Use Set-MailUser LaraN@contoso.onmicrosoft.com -ExchangeGuid 4e3188c6-39f5-4387-adc7-b355b6b852c8  
+  Resume migration batch.  
+
+- SourceMailboxAlreadyBeingMovedPermanentException
+
+  The source mailbox already has an existing move request. Investigate and remove the existing move. It is possible that this is an internal Microsoft  move and you will need to wait for the move to complete.  
+  Remove the migration user from the batch.  
+  Remove users with the following command: Get-MigrationUser -Identity LaraN@contoso.onmicrosoft.com -IncludeAssociatedUsers | Remove-MigrationUser  
+  Add user to new batch after the original move has been removed or completed.  
+
+- UserAlreadyHasDemotedArchiveException
+
+  The user had an archive mailbox previously that was disabled. Choose one of the two following options to resolve this issue.  
+  Permanently delete the disabled archive mailbox, this is unreversable. Set-Mailbox -RemoveDisabledArchive LaraN@contoso.onmicrosoft.com  
+  Re-enable the disabled archive mailbox. Enable-Mailbox -Archive mailbox@contoso.onmicrosoft.com.  
+  If you re-enable the disabled archive mailbox, you will need to update the archive guid on the target mailuser object.  
+  Resume migration batch.  
