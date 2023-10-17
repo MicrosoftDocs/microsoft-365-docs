@@ -77,6 +77,9 @@ The script uses Az module to authenticate the user and generate access token whi
 
 ### Examples
 
+> [!NOTE]
+> The PowerShell script will be available for you to download shortly. The download link will be posted here as soon as it is available.
+
 ```
 # To get Copilot Extensibility Status
 .\Invoke-CopilotMethod.ps1 -GetCopilotExtensibilityStatus
