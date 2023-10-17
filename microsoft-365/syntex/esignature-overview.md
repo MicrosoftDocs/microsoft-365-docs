@@ -29,7 +29,7 @@ Before you can use Syntex eSignature, an admin must [set up Syntex eSignature](e
 
 You must be signed in to SharePoint Online by using your work email address.
 
-## Supported file types
+### Supported file types
 
 Syntex eSignature is available for only PDF documents at this time.
 
