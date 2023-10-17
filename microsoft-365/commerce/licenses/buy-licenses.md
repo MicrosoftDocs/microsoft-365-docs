@@ -81,7 +81,7 @@ As an admin, you can add or remove licenses for your business subscriptions in t
 Prepaid product licenses are issued to you as a 25-character alphanumeric code, called a product key. After you buy the licenses you need, you can add them to your subscription by using the steps below. You can also use a product key to [extend the expiration date of your subscription](../enter-your-product-key.md#extend-the-expiration-date-for-an-existing-subscription).
 
 > [!NOTE]
-> If you don't want to buy a new product key, you can always choose to add a credit card or bank account to your subscription to pay for more licenses. For more information, see [Renew your subscription](../subscriptions/renew-your-subscription.md).
+> If you don't want to buy a new product key, you can always choose to add a credit card or debit card to your subscription to pay for more licenses. For more information, see [Renew your subscription](../subscriptions/renew-your-subscription.md).
   
 1. Go to the admin center.
    - If you’re using the **Simplified view**, select **Subscriptions**.

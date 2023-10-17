@@ -34,7 +34,7 @@ ms.date: 10/17/2023
 
 Check out all of our small business content on [Small business help & learning](https://go.microsoft.com/fwlink/?linkid=2224585).
 
-Microsoft accepts credit and debit cards as payment methods for the business products and services that you buy from us. In some cases, you can use a wire transfer to pay your invoice. How these payment methods are applied depends on the type of billing account that you have with us. For example, if you have a Microsoft Customer Agreement (MCA) billing account, you pay your bill with a billing profile that’s backed with a credit card, debit card, or wire transfer. If you have a Microsoft Online Subscription Agreement (MOSA), you pay your bill directly with a credit card or debit card.
+Microsoft accepts credit cards and debit cards as payment methods for the business products and services that you buy from us. In some cases, you can use a wire transfer to pay your invoice. How these payment methods are applied depends on the type of billing account that you have with us. For example, if you have a Microsoft Customer Agreement (MCA) billing account, you pay your bill with a billing profile that’s backed with a credit card, debit card, or wire transfer. If you have a Microsoft Online Subscription Agreement (MOSA), you pay your bill directly with a credit card or debit card.
 
 You can manage payment methods whenever you need to. To learn how to add, change, or replace a payment method, see [Manage payment methods for Microsoft business accounts](manage-payment-methods.md).
 
@@ -47,14 +47,14 @@ You can manage payment methods whenever you need to. To learn how to add, change
 
 - [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
 - If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a Billing account owner or contributor, a Billing profile owner or contributor, or an Invoice manager to do the tasks in this article. For information about billing account and billing profile roles, see [Understand your Microsoft business billing account](../manage-billing-accounts.md) and [Understand your Microsoft business billing profile](manage-billing-profiles.md).
-- If you have a Microsoft Online Subscription Agreement (MOSA), you must be a Global or Billing admin to do the tasks in this article. For more information, see [About admin roles].
+- If you have a Microsoft Online Subscription Agreement (MOSA), you must be a Global or Billing admin to do the tasks in this article. For more information, see [About admin roles in the Microsoft 365 admin center](../../admin/add-users/about-admin-roles.md).
 
 > [!NOTE]
 > If you're the person who signed up for the subscription, you're automatically a Billing account owner or Global admin.
 
 ## Paying with a credit card or debit card
 
-If you have an MOSA billing account type, you can pay for your subscription with a credit or debit card. By default, recurring billing is automatically turned on for all paid subscriptions. Each billing period, we automatically charge the payment method on file to pay for your subscription. We continue to charge that payment method until the subscription expires or is canceled. If recurring billing is turned off for a subscription, we continue to charge the payment method on file until the end of the subscription term.
+If you have an MOSA billing account type, you can pay for your subscription with a credit or debit card. By default, [recurring billing](../subscriptions/renew-your-subscription.md) is automatically turned on for all paid subscriptions. Each billing period, we automatically charge the payment method on file to pay for your subscription. We continue to charge that payment method until the subscription expires or is canceled. If recurring billing is turned off for a subscription, we continue to charge the payment method on file until the end of the subscription term.
 
 ## Paying by wire transfer
 
@@ -70,7 +70,7 @@ If you're an existing customer, and you meet the eligibility requirements, you c
 
 If a credit check is required, you're notified when you buy your subscription. If you agree to be contacted, you get an email that includes more information about applying for credit approval. Credit checks are usually completed within two business days.
 
-If your subscription or billing profile is paid by wire transfer, you can pay for your subscription with a wire transfer. At the end of each billing period, You get an email when your billing statement is ready to view. This email doesn't contain a copy of your billing statement. However, you can choose to [receive your organization's invoices as email attachments](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments). Your billing statement includes details about your options for making a payment, and where to send it. If you enter a purchase order (PO) number when you buy a subscription, the number appears on your billing statement. For information about accessing billing statements, see [View your invoice in the Microsoft 365 admin center](view-your-bill-or-invoice.md).
+If your subscription or billing profile is paid by wire transfer, at the end of each billing period, you get an email when your billing statement is ready to view. This email doesn't contain a copy of your billing statement. However, you can choose to [receive your organization's invoices as email attachments](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments). Your billing statement includes details about your options for making a payment, and where to send it. If you enter a purchase order (PO) number when you buy a subscription, the number appears on your billing statement. For information about accessing billing statements, see [View your invoice in the Microsoft 365 admin center](view-your-bill-or-invoice.md).
 
 If you have an MCA billing account type, and you have a billing profile that's paid by wire transfer, you can also use a credit card or debit card to make a one-time payment by using the **Pay now** button on your invoice.
 
@@ -78,7 +78,7 @@ If you have an MCA billing account type, and you have a billing profile that's p
 
 If you have an MCA billing account type, you can use a credit or debit card to back the billing profile that pays for your subscriptions. We use the associated billing profile to pay for all subscriptions that use that billing profile.
 
-By default, recurring billing is automatically turned on for all paid subscriptions. If recurring billing is turned off for a subscription that is paid for by a billing profile, you can use the **Pay now** button on the invoice summary in the admin center to pay for it every billing period, regardless of what payment method is linked with the billing profile.
+By default, [recurring billing](../subscriptions/renew-your-subscription.md) is automatically turned on for all paid subscriptions. If recurring billing is turned off for a subscription that is paid for by a billing profile, you can use the **Pay now** button on the invoice summary in the admin center to pay for it every billing period, regardless of what payment method is linked with the billing profile.
 
 ## Paying by Boleto Bancario in Brazil
 
@@ -126,7 +126,7 @@ Payments made by wire transfer have processing times that vary, depending on the
 
 ## Can I pay my invoice online?
 
-If you have an MCA billing account type, and recurring billing is turned off for your subscription, you can use a credit card or debit card to pay your invoice online. To make a payment, use the **Pay now** button on your invoice in the admin center. To find your invoice, see [View your invoice](view-your-bill-or-invoice.md).
+If you have an MCA billing account type, and [recurring billing](../subscriptions/renew-your-subscription.md) is turned off for your subscription, you can use a credit card or debit card to pay your invoice online. To make a payment, use the **Pay now** button on your invoice in the admin center. To find your invoice, see [View your invoice](view-your-bill-or-invoice.md).
 
 If you have an MOSA billing account type, you can't pay your invoice online. You must pay by wire transfer.
 
@@ -173,7 +173,8 @@ Refunds are treated as a regular charge and are refunded to your bank account.
 
 ## Related content
 
-j[Manage payment methods for Microsoft business accounts](manage-payment-methods.md) (article)\
+[Manage payment methods for Microsoft business accounts](manage-payment-methods.md) (article)\
+[Manage recurring billing in the Microsoft 365 admin center](../subscriptions/renew-your-subscription.md) (article)\
 [View your invoice in the Microsoft 365 admin center](view-your-bill-or-invoice.md) (article)\
 [Understand your invoice for your Microsoft MCA billing account](understand-your-invoice.md) (article)\
 [Understand your invoice for your Microsoft MOSA billing account](understand-your-invoice2.md) (article)
