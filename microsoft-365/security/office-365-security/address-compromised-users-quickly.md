@@ -52,7 +52,8 @@ When a user account is compromised, alerts are triggered. And in some cases, tha
 > You must have appropriate permissions to perform the following tasks. See [Required permissions to use AIR capabilities](air-about.md#required-permissions-to-use-air-capabilities).
 
 Watch this short video to learn how you can detect and respond to user compromise in Microsoft Defender for Office 365 using Automated Investigation and Response (AIR) and compromised user alerts.
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWAl83]
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWAl83 "Responding to user compromise"]
 
 ### View and investigate restricted users
 
