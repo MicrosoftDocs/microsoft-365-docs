@@ -1,7 +1,8 @@
 ---
 author: lana-chin
 ms.author: v-chinlana
-ms.date: 08/04/2022
+manager: serdars
+ms.date: 10/17/2023
 ms.topic: include
 audience: admin
 ms.service: microsoft-365-frontline
