@@ -35,6 +35,7 @@ landingContent:
             url: mdo-security-comparison.md
           - text: What's new in Defender for Office 365
             url: defender-for-office-365-whats-new.md
+
   # Card
   - title: Get started with Defender for Office 365
     linkLists:
@@ -70,3 +71,13 @@ landingContent:
             url: email-authentication-dkim-configure.md
           - text: Use DMARC to validate email
             url: email-authentication-dmarc-configure.md
+          - text: Configure trusted ARC sealers
+            url: email-authentication-arc-configure.md            
+
+   # Card
+  - title: Investigate and respond
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Defender for Office 365 SecOps guide
+            url: mdo-sec-ops-guide.md
