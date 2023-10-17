@@ -2931,6 +2931,11 @@
          "redirect_document_id":false
        },
        {
+         "source_path":"microsoft-365/security/office-365-security/mail-flow-delivery-faq.yml",
+         "redirect_url":"/microsoft-365/security/office-365-security/mail-flow-about#mail-flow-delivery-faq",
+         "redirect_document_id":false
+      },
+       {
          "source_path":"microsoft-365/security/defender-business/mdb-maintain-environment.md",
          "redirect_url":"/microsoft-365/business-premium/m365bp-mdb-maintain-environment",
          "redirect_document_id":true
