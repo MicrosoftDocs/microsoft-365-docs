@@ -54,7 +54,7 @@ You can manage payment methods whenever you need to. To learn how to add, change
 
 ## Paying with a credit card or debit card
 
-If you have an MOSA billing account type, you can pay for your subscription with a credit or debit card. By default, [recurring billing](../subscriptions/renew-your-subscription.md) is automatically turned on for all paid subscriptions. Each billing period, we automatically charge the payment method on file to pay for your subscription. We continue to charge that payment method until the subscription expires or is canceled. If recurring billing is turned off for a subscription, we continue to charge the payment method on file until the end of the subscription term.
+If you have an MOSA billing account type, you can pay for your subscription with a credit card or debit card. By default, [recurring billing](../subscriptions/renew-your-subscription.md) is automatically turned on for all paid subscriptions. Each billing period, we automatically charge the payment method on file to pay for your subscription. We continue to charge that payment method until the subscription expires or is canceled. If recurring billing is turned off for a subscription, we continue to charge the payment method on file until the end of the subscription term.
 
 ## Paying by wire transfer
 
@@ -76,7 +76,7 @@ If you have an MCA billing account type, and you have a billing profile that's p
 
 ## Paying with a billing profile
 
-If you have an MCA billing account type, you can use a credit or debit card to back the billing profile that pays for your subscriptions. We use the associated billing profile to pay for all subscriptions that use that billing profile.
+If you have an MCA billing account type, you can use a credit card or debit card to back the billing profile that pays for your subscriptions. We use the associated billing profile to pay for all subscriptions that use that billing profile.
 
 By default, [recurring billing](../subscriptions/renew-your-subscription.md) is automatically turned on for all paid subscriptions. If recurring billing is turned off for a subscription that is paid for by a billing profile, you can use the **Pay now** button on the invoice summary in the admin center to pay for it every billing period, regardless of what payment method is linked with the billing profile.
 
@@ -134,7 +134,7 @@ If you have an MOSA billing account type, you can't pay your invoice online. You
 
 If you have an MCA billing account type, and your billing profile is backed by wire transfer payments, you can't change the payment method. You can use the **Pay now** button on your online invoice to make a one-time payment with a credit card or debit card.
 
-If you have an MOSA billing account type, you can't automatically change from paying by wire transfer to paying with a different payment method. Instead, you must [buy a different subscription](../try-or-buy-microsoft-365.md#buy-a-different-subscription) paid for with a credit or debit card, [move all users to the new subscription](../subscriptions/move-users-different-subscription.md), and then [cancel the old subscription](../subscriptions/cancel-your-subscription.md).
+If you have an MOSA billing account type, you can't automatically change from paying by wire transfer to paying with a different payment method. Instead, you must [buy a different subscription](../try-or-buy-microsoft-365.md#buy-a-different-subscription) paid for with a credit card or debit card, [move all users to the new subscription](../subscriptions/move-users-different-subscription.md), and then [cancel the old subscription](../subscriptions/cancel-your-subscription.md).
 
 ## Directives from the Reserve Bank of India
 
