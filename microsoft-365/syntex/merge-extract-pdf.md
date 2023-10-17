@@ -14,7 +14,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority: medium
-description: Learn how to use enhacnced image tagging to search, sort, filter, and manage images in  Microsoft Syntex.
+description: Learn how to combine multiple PDF files or split PDF files in Microsoft Syntex.
 ---
 
 # Merge and extract PDF files in Microsoft Syntex
@@ -36,18 +36,21 @@ To merge PDF files, follow these steps:
 
 1. In a SharePoint document library or OneDrive, open one of the PDF files you want to combine.
 
-2. At the top left of the screen, select see more button (…) to see the new menu.
+2. At the top left of the screen, select **More options** (**…**), and then select **Merge**.
 
-3. Select **Merge**.
+    ![Screenshot of a More options menu showing the Merge option.](../media/content-understanding/merge-option.png)
+
+3. Select the files you want to combine, select **Next**, and then save the merged file to the document library you want it saved in.
 
 ## Extract PDF files
 
-Now, Syntex users won’t have to worry about sharing information they don’t want from a large PDF file. Splitting a large PDF file into multiple, smaller files lets users tailor the information they want to view or share with others. 
-
 To split a PDF file, follow these steps:  
 
-1. In a SharePoint document library or OneDrive, Open the PDF file you want to split.
+1. In a SharePoint document library or OneDrive, open the PDF file you want to split.
 
-2. At the top left of the screen, select see more button (…) to see the new menu.
+2. At the top left of the screen, select **More options** (**…**), and then select **Extract**.
 
-3. Select Extract.
+    ![Screenshot of a More options menu showing the Extract option.](../media/content-understanding/extract-option.png)
+
+
+3. Select the page you want to extract, and then select **Extract**.
