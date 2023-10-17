@@ -70,7 +70,7 @@ To edit your connection instance settings, choose the data that your Shifts user
 - **Shifts users can see and change provider data**: Data syncing is bidirectional between Blue Yonder WFM and Shifts.
 
 > [!IMPORTANT]
-> Before you disable a feature by selecting the **Shifts users will not see provider data**  option, be aware that:
+> Before you disable a feature by selecting the **Shifts users will not see provider data** option, be aware that:
 >
 > - If the **Schedules, groups, shifts, and activities** setting is disabled, then all other settings, such as **Time off** and **Employee availability**, and more, are also disabled.
 > - If the **Open shift** setting is disabled, **Open shift request** is also disabled.
