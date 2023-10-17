@@ -2,6 +2,56 @@
 
 
 
+## Week of October 02, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 10/2/2023 | [Prerequisites and requirements for the Teams Shifts connector for UKG Pro Workforce Management (Preview)](/microsoft-365/frontline/shifts-connector-ukg-prerequisites?view=o365-worldwide) | added |
+| 10/2/2023 | [Use the Microsoft 365 admin center to manage your Shifts connection to UKG Pro Workforce Management (Preview)](/microsoft-365/frontline/shifts-connector-ukg-admin-center-manage?view=o365-worldwide) | modified |
+| 10/2/2023 | [Team Shifts connector for UKG Pro Workforce Management known issues (Preview)](/microsoft-365/frontline/shifts-connector-ukg-known-issues?view=o365-worldwide) | modified |
+| 10/2/2023 | [Use PowerShell to manage your Shifts connection to UKG Pro Workforce Management (Preview)](/microsoft-365/frontline/shifts-connector-ukg-powershell-manage?view=o365-worldwide) | modified |
+| 10/2/2023 | [Use PowerShell to connect Shifts to UKG Pro Workforce Management (Preview)](/microsoft-365/frontline/shifts-connector-ukg-powershell-setup?view=o365-worldwide) | modified |
+| 10/2/2023 | [Use the Shifts connector wizard to connect Shifts to UKG Pro Workforce Management (Preview)](/microsoft-365/frontline/shifts-connector-wizard-ukg?view=o365-worldwide) | modified |
+| 10/2/2023 | [Shifts connectors](/microsoft-365/frontline/shifts-connectors?view=o365-worldwide) | modified |
+| 10/2/2023 | [Implement attack surface reduction rules](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment-implement?view=o365-worldwide) | modified |
+| 10/2/2023 | [Test attack surface reduction rules](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment-test?view=o365-worldwide) | modified |
+| 10/2/2023 | [Attack surface reduction rules reporting](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-report?view=o365-worldwide) | modified |
+| 10/2/2023 | [Enable attack surface reduction rules](/microsoft-365/security/defender-endpoint/enable-attack-surface-reduction?view=o365-worldwide) | modified |
+| 10/2/2023 | [Onboarding using Microsoft Configuration Manager](/microsoft-365/security/defender-endpoint/onboarding-endpoint-configuration-manager?view=o365-worldwide) | modified |
+| 10/2/2023 | [Manage Microsoft-certified solution provider partner relationships](/microsoft-365/commerce/manage-partners?view=o365-worldwide) | modified |
+| 10/3/2023 | [Overview and Definitions](/microsoft-365/enterprise/m365-dr-overview?view=o365-worldwide) | modified |
+| 10/3/2023 | [Summary of governance, lifecycle and compliance capabilities for Loop experiences](/microsoft-365/loop/loop-compliance-summary?view=o365-worldwide) | modified |
+| 10/3/2023 | [Submit files in Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/admin-submissions-mde?view=o365-worldwide) | modified |
+| 10/3/2023 | [What's new in Microsoft Defender for Endpoint on Linux](/microsoft-365/security/defender-endpoint/linux-whatsnew?view=o365-worldwide) | modified |
+| 10/4/2023 | [Guest users in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-guest-users?view=o365-worldwide) | modified |
+| 10/4/2023 | [Create device security policies in Basic Mobility and Security](/microsoft-365/admin/basic-mobility-security/create-device-security-policies?view=o365-worldwide) | modified |
+| 10/4/2023 | [Microsoft Defender Antivirus security intelligence and product updates](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-updates?view=o365-worldwide) | modified |
+| 10/4/2023 | [Microsoft Defender Antivirus updates - Previous versions for technical upgrade support](/microsoft-365/security/defender-endpoint/msda-updates-previous-versions-technical-upgrade-support?view=o365-worldwide) | modified |
+| 10/5/2023 | [FAQ's related to Microsoft Defender Experts for XDR managed response](/microsoft-365/security/defender/faq-managed-response?view=o365-worldwide) | added |
+| 10/5/2023 | Language translation for Message center posts | removed |
+| 10/5/2023 | [Data Residency for Other Microsoft 365 Services](/microsoft-365/enterprise/m365-dr-workload-other?view=o365-worldwide) | modified |
+| 10/5/2023 | [Summary of governance, lifecycle and compliance capabilities for Loop experiences](/microsoft-365/loop/loop-compliance-summary?view=o365-worldwide) | modified |
+| 10/5/2023 | [Configure device proxy and Internet connection settings](/microsoft-365/security/defender-endpoint/configure-proxy-internet?view=o365-worldwide) | modified |
+| 10/5/2023 | [Onboard Windows servers to the Microsoft Defender for Endpoint service](/microsoft-365/security/defender-endpoint/configure-server-endpoints?view=o365-worldwide) | modified |
+| 10/5/2023 | [Set up Microsoft Defender for Endpoint deployment](/microsoft-365/security/defender-endpoint/production-deployment?view=o365-worldwide) | modified |
+| 10/5/2023 | [Update your agent on devices for Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/update-agent-mma-windows?view=o365-worldwide) | modified |
+| 10/5/2023 | [How to use DKIM for email in your custom domain](/microsoft-365/security/office-365-security/email-authentication-dkim-configure?view=o365-worldwide) | modified |
+| 10/5/2023 | [Reset passwords](/microsoft-365/admin/add-users/reset-passwords?view=o365-worldwide) | modified |
+| 10/5/2023 | [What Microsoft business subscriptions do I have?](/microsoft-365/admin/admin-overview/what-subscription-do-i-have?view=o365-worldwide) | modified |
+| 10/5/2023 | [Office 365 operated by 21Vianet](/microsoft-365/admin/services-in-china/services-in-china?view=o365-21vianet) | modified |
+| 10/6/2023 | [Add custom and required questions to the booking page](/microsoft-365/bookings/add-questions?view=o365-worldwide) | modified |
+| 10/6/2023 | [Custom domain support in Bookings](/microsoft-365/bookings/custom-domain-support?view=o365-worldwide) | modified |
+| 10/6/2023 | [Define your Bookings service offerings](/microsoft-365/bookings/define-service-offerings?view=o365-worldwide) | modified |
+| 10/6/2023 | [Enter your Bookings business information](/microsoft-365/bookings/enter-business-information?view=o365-worldwide) | modified |
+| 10/6/2023 | [Set Bookings buffer time](/microsoft-365/bookings/set-buffer-time?view=o365-worldwide) | modified |
+| 10/6/2023 | Get Microsoft 365 Business Premium from partner center | removed |
+| 10/6/2023 | What is the difference between device and app management | removed |
+| 10/6/2023 | [Manage self-service license requests in the Microsoft 365 admin center](/microsoft-365/commerce/licenses/manage-license-requests?view=o365-worldwide) | modified |
+| 10/6/2023 | [Change your organization's address and technical contact in the Microsoft 365 admin center](/microsoft-365/admin/manage/change-address-contact-and-more?view=o365-worldwide) | modified |
+| 10/6/2023 | [Create indicators for IPs and URLs/domains](/microsoft-365/security/defender-endpoint/indicator-ip-domain?view=o365-worldwide) | modified |
+
+
 ## Week of September 25, 2023
 
 
@@ -288,56 +338,3 @@
 | 9/8/2023 | [Synchronize users in multitenant organizations in Microsoft 365 (Preview)](/microsoft-365/enterprise/sync-users-multi-tenant-orgs?view=o365-worldwide) | modified |
 | 9/8/2023 | [Test Base FAQ](/microsoft-365/test-base/faq?view=o365-worldwide) | modified |
 | 9/8/2023 | [Share files and videos in Microsoft Teams and SharePoint](/microsoft-365/business-premium/share-files-and-videos?view=o365-worldwide) | modified |
-
-
-## Week of August 28, 2023
-
-
-| Published On |Topic title | Change |
-|------|------------|--------|
-| 8/28/2023 | [Add more SharePoint storage to your subscription](/microsoft-365/commerce/add-storage-space?view=o365-worldwide) | modified |
-| 8/28/2023 | [Buy and manage add-ons in the Microsoft 365 admin center](/microsoft-365/commerce/buy-or-edit-an-add-on?view=o365-worldwide) | modified |
-| 8/28/2023 | [Allow cookies for LMS URLs in your browser](/microsoft-365/lti/browser-cookies?view=o365-worldwide) | modified |
-| 8/28/2023 | [Block potentially unwanted applications with Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus?view=o365-worldwide) | modified |
-| 8/28/2023 | [Manage how and where Microsoft Defender Antivirus receives updates](/microsoft-365/security/defender-endpoint/manage-protection-updates-microsoft-defender-antivirus?view=o365-worldwide) | modified |
-| 8/28/2023 | [Microsoft Defender Antivirus in the Windows Security app](/microsoft-365/security/defender-endpoint/microsoft-defender-security-center-antivirus?view=o365-worldwide) | modified |
-| 8/28/2023 | [Restore quarantined files in Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/restore-quarantined-files-microsoft-defender-antivirus?view=o365-worldwide) | modified |
-| 8/29/2023 | [FAQs related to Microsoft Defender Experts for XDR incident notifications](/microsoft-365/security/defender/faq-incident-notifications-xdr?view=o365-worldwide) | added |
-| 8/29/2023 | [List of fixed customer reported inaccuracies](/microsoft-365/security/defender-vulnerability-management/fixed-reported-inaccuracies?view=o365-worldwide) | modified |
-| 8/29/2023 | [How to use the Microsoft Defender Experts for XDR service](/microsoft-365/security/defender/start-using-mdex-xdr?view=o365-worldwide) | modified |
-| 8/29/2023 | [Overview of content processing in Microsoft Syntex](/microsoft-365/syntex/content-processing-overview) | modified |
-| 8/29/2023 | [Understanding overrides within the email entity page in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/step-by-step-guides/understand-overrides-in-email-entity?view=o365-worldwide) | added |
-| 8/29/2023 | [Microsoft Syntex Optical Character Recognition (“OCR”) Feature Preview Agreement](/microsoft-365/syntex/ocr-preview-terms) | added |
-| 8/29/2023 | Privacy and security in Basic Mobility and Security | removed |
-| 8/29/2023 | Quick help Deleted users checklist | removed |
-| 8/29/2023 | Conformance metadata for Message Center posts | removed |
-| 8/29/2023 | Add a marketing campaign ID to a Bookings page URL | removed |
-| 8/29/2023 | [Customize and publish your booking page](/microsoft-365/bookings/customize-booking-page?view=o365-worldwide) | modified |
-| 8/29/2023 | Language translation for Service health dashboard | removed |
-| 8/29/2023 | [How to check Microsoft 365 service health](/microsoft-365/enterprise/view-service-health?view=o365-worldwide) | modified |
-| 8/30/2023 | [Troubleshoot system extension issues for Microsoft Defender for Endpoint on macOS](/microsoft-365/security/defender-endpoint/mac-support-sys-ext?view=o365-worldwide) | added |
-| 8/30/2023 | [Manage profiles and approve extensions using Intune](/microsoft-365/security/defender-endpoint/manage-profiles-approve-sys-extensions-intune?view=o365-worldwide) | added |
-| 8/30/2023 | [Manage system extensions using the manual methods of deployment](/microsoft-365/security/defender-endpoint/manage-sys-extensions-manual-deployment?view=o365-worldwide) | added |
-| 8/30/2023 | [Manage system extensions using other MDM solutions](/microsoft-365/security/defender-endpoint/manage-sys-extensions-other-mdm?view=o365-worldwide) | added |
-| 8/30/2023 | [Manage system extensions using JamF](/microsoft-365/security/defender-endpoint/manage-sys-extensions-using-jamf?view=o365-worldwide) | added |
-| 8/30/2023 | [Microsoft Defender Antivirus security intelligence and product updates](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-updates?view=o365-worldwide) | modified |
-| 8/30/2023 | [Microsoft Defender Antivirus updates - Previous versions for technical upgrade support](/microsoft-365/security/defender-endpoint/msda-updates-previous-versions-technical-upgrade-support?view=o365-worldwide) | modified |
-| 8/30/2023 | [Anti-malware protection](/microsoft-365/security/office-365-security/anti-malware-protection-about?view=o365-worldwide) | modified |
-| 8/30/2023 | [Determine if Centralized Deployment of add-ins works for your organization](/microsoft-365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide) | modified |
-| 8/30/2023 | [Deploy add-ins in the admin center](/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide) | modified |
-| 8/30/2023 | [Use network protection to help prevent Linux connections to bad sites](/microsoft-365/security/defender-endpoint/network-protection-linux?view=o365-worldwide) | modified |
-| 8/30/2023 | [Enable the Report Message or the Report Phishing add-ins](/microsoft-365/security/office-365-security/submissions-users-report-message-add-in-configure?view=o365-worldwide) | modified |
-| 8/30/2023 | [Quarantined email messages](/microsoft-365/security/office-365-security/quarantine-about?view=o365-worldwide) | modified |
-| 8/31/2023 | [Overview of taxonomy tagging in Microsoft Syntex](/microsoft-365/syntex/taxonomy-tagging-overview) | added |
-| 8/31/2023 | [Set up and manage taxonomy tagging in Microsoft Syntex](/microsoft-365/syntex/taxonomy-tagging-setup) | added |
-| 8/31/2023 | [Find and manage terms using taxonomy tagging in Microsoft Syntex](/microsoft-365/syntex/taxonomy-tagging) | added |
-| 8/31/2023 | [Microsoft 365 data locations](/microsoft-365/enterprise/o365-data-locations?view=o365-worldwide) | modified |
-| 8/31/2023 | [Overview of Microsoft Syntex](/microsoft-365/syntex/syntex-overview) | modified |
-| 8/31/2023 | [Test Base FAQ](/microsoft-365/test-base/faq?view=o365-worldwide) | modified |
-| 8/31/2023 | [Functional testing on Test Base](/microsoft-365/test-base/functional?view=o365-worldwide) | modified |
-| 8/31/2023 | [Close your Microsoft business account](/microsoft-365/commerce/close-your-account?view=o365-worldwide) | modified |
-| 9/1/2023 | Scheduler for Microsoft 365 # < 60 chars | removed |
-| 9/1/2023 | [Onboard Windows devices using a local script](/microsoft-365/security/defender-endpoint/configure-endpoints-script?view=o365-worldwide) | modified |
-| 9/1/2023 | [Use the Microsoft 365 admin center to manage your Shifts connection to Blue Yonder Workforce Management (Preview)](/microsoft-365/frontline/shifts-connector-blue-yonder-admin-center-manage?view=o365-worldwide) | modified |
-| 9/1/2023 | [Use the Microsoft 365 admin center to manage your Shifts connection to UKG Dimensions (Preview)](/microsoft-365/frontline/shifts-connector-ukg-admin-center-manage?view=o365-worldwide) | modified |
-| 9/1/2023 | [Anti-malware protection](/microsoft-365/security/office-365-security/anti-malware-protection-about?view=o365-worldwide) | modified |

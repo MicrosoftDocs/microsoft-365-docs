@@ -28,7 +28,7 @@ appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
 ms.custom: seo-marvel-jun2020
-ms.date: 09/29/2022
+ms.date: 10/2/2023
 ---
 
 # Shifts for frontline workers

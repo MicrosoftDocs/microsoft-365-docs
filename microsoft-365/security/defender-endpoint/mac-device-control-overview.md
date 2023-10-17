@@ -66,7 +66,7 @@ Microsoft Defender for Endpoint Device Control feature enables you to:
 
 Example 1: JAMF using [schema.json](https://github.com/microsoft/mdatp-xplat/tree/master/macos/schema)
 
-:::image type="content" source="images/macos-device-control-jamf-json.png" alt-text="Shows how to enable Device Control in Microsoft Defender for Endpoint Data Loss Prevention / Features." lightbox="images/macos-device-control-jamf-json.png":::
+:::image type="content" source="images/macos-device-control-jamf-json.png" alt-text="Screenshot that shows how to enable Device Control in Microsoft Defender for Endpoint Data Loss Prevention / Features." lightbox="images/macos-device-control-jamf-json.png":::
 
 Example 2: [demo.mobileconfig](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/macOS/mobileconfig/demo.mobileconfig)
 
@@ -88,7 +88,7 @@ Example 2: [demo.mobileconfig](https://github.com/microsoft/mdatp-devicecontrol/
 - Minimum product version: 101.91.92 or higher
 - Run _mdatp version_ through Terminal to see the product version on your client machine:
 
-:::image type="content" source="images/macos-device-control-mdatp-version-terminal.png " alt-text="Shows the results when you run mdatp version in Terminal to see the product version on a client machine." lightbox="images/macos-device-control-mdatp-version-terminal.png ":::
+:::image type="content" source="images/macos-device-control-mdatp-version-terminal.png " alt-text="Screenshot that shows the results when you run mdatp version in Terminal to see the product version on a client machine." lightbox="images/macos-device-control-mdatp-version-terminal.png ":::
 
 ## Device Control for macOS properties
 
@@ -224,7 +224,32 @@ The following table lists the properties you can use in entry:
 
 Once Deny happens and the notification is enabled in the policy, the end user sees a dialog:
 
-:::image type="content" source="images/macos-device-control-enduser-experience-dialog.png" alt-text="Shows a Device Control Dialog that indicates the USB device is restricted" lightbox="images/macos-device-control-enduser-experience-dialog.png":::
+:::image type="content" source="images/macos-device-control-enduser-experience-dialog.png" alt-text="Screenshot that shows a Device Control Dialog that indicates the USB device is restricted" lightbox="images/macos-device-control-enduser-experience-dialog.png":::
+
+## Status
+
+Use `mdatp health --details device_control` to inspect the Device Control status:
+
+```
+active                                      : ["v2"]
+v1_configured                               : false
+v1_enforcement_level                        : unavailable
+v2_configured                               : true
+v2_state                                    : "enabled"
+v2_sensor_connection                        : "created_ok"
+v2_full_disk_access                         : "approved"
+```
+
+- `active` - feature version, you should see ["v2"]. (Device Control is enabled, but not configured.)
+    - [] - Device Control is not configured on this machine
+    - ["v1"] - You are on a preview version of Device Control. Please migrate to version 2 using this guide. v1 is considered obsolete and not described in this documentation.
+    - ["v1","v2"] - You have both v1 and v2 enabled. Please offboard from v1.
+- `v1_configured` - v1 configuration is applied
+- `v1_enforcement_level` - when v1 is enabled
+- `v2_configured` - v2 configuration is applied
+- `v2_state` - v2 status, `enabled` if fully working
+- `v2_sensor_connection` - if `created_ok`, then Device Control established connection to the system extension
+- `v2_full_disk_access` - if not `approved`, then Device Control cannot prevent some or all operations
 
 ## Reporting
 
@@ -432,5 +457,6 @@ In this case, only have one access rule policy, but if you have multiple, make s
 
 - [Deploy Device Control by using Intune](mac-device-control-intune.md)
 - [Deploy Device Control by using JAMF](mac-device-control-jamf.md)
+- [Deploy Device Control manually](mac-device-control-manual.md)
 - [macOS Device Control frequently asked questions (FAQ)](mac-device-control-faq.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

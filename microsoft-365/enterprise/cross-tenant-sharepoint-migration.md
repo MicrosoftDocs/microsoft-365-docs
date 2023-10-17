@@ -3,10 +3,11 @@ title: Cross-tenant SharePoint site migration overview (preview)
 ms.author: jhendr
 author: JoanneHendrickson
 manager: serdars
+ms.date: 10/13/2023
 recommendations: true
 audience: ITPro
 ms.topic: article
-ms.service: microsoft-365-enterprise
+ms.service: microsoft-365-migration
 ms.localizationpriority: high
 ms.collection: 
 - SPMigration
