@@ -30,9 +30,9 @@ In new Microsoft 365 organizations with Microsoft Defender for Office 365 (inclu
 
 Although your Microsoft 365 organization includes a default level of protection from the moment you create it (or add Defender for Office 365 to it), the steps in this article give you an actionable plan to unleash the full protection capabilities of EOP and Defender for Office 365. After you complete the steps, you can also use this article to show management that you're maximizing your investment in Microsoft 365.
 
-The steps to configure EOP and Defender for Office 365 are:
+The steps to configure EOP and Defender for Office 365 are described in the following diagram:
 
-<!---Art with numbered pool balls similar to https://learn.microsoft.com/microsoft-365/security/defender-endpoint/mde-planning-guide> goes here--->
+:::image type="content" source="../../media/mdo-deployment-guide.png" alt-text="A conceptual diagram showing the steps to configure Defender for Office 365." lightbox="../../media/mdo-deployment-guide.png":::
 
 ## Requirements
 
@@ -102,23 +102,23 @@ As you can probably imagine, a lot of protection policies are available in EOP a
 
 The previous information and the protection policies that are involved are summarized in the following table:
 
-|&nbsp;|Default policies|Preset protection policies|Custom policies|
+|&nbsp;|Default policies|Preset security policies|Custom policies|
 |---|:---:|:---:|:---:|
 |**EOP protection policies**:||||
-|[Anti-malware](anti-malware-policies-configure.md)|✔|✔|✔|
-|[Anti-spam](anti-spam-policies-configure.md)|✔|✔|✔|
-|[Anti-phishing (spoofing protection)](anti-phishing-policies-about.md#spoof-settings)|✔|✔|✔|
-|[Outbound spam](outbound-spam-policies-configure.md)|✔||✔|
-|[Connection filtering](connection-filter-policies-configure.md)|✔¹|||
+|&nbsp;&nbsp;[Anti-malware](anti-malware-policies-configure.md)|✔|✔|✔|
+|&nbsp;&nbsp;[Anti-spam](anti-spam-policies-configure.md)|✔|✔|✔|
+|&nbsp;&nbsp;[Anti-phishing (spoofing protection)](anti-phishing-policies-about.md#spoof-settings)|✔|✔|✔|
+|&nbsp;&nbsp;[Outbound spam](outbound-spam-policies-configure.md)|✔||✔|
+|&nbsp;&nbsp;[Connection filtering](connection-filter-policies-configure.md)|✔¹|||
 |**Defender for Office 365 policies**:||||
-|[Anti-phishing (spoofing protection)](anti-phishing-policies-about.md#spoof-settings) plus: <ul><li>[Impersonation protection](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Advanced phishing thresholds](anti-phishing-policies-about.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li></ul>|✔²|✔²|✔|
-|[Safe Links](safe-links-policies-configure.md)|³|✔|✔|
-|[Safe Attachments](safe-attachments-policies-configure.md)|³|✔|✔|
+|&nbsp;&nbsp;[Anti-phishing (spoofing protection)](anti-phishing-policies-about.md#spoof-settings) plus: <ul><li>[Impersonation protection](anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Advanced phishing thresholds](anti-phishing-policies-about.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li></ul>|✔²|✔²|✔|
+|&nbsp;&nbsp;[Safe Links](safe-links-policies-configure.md)|³|✔|✔|
+|&nbsp;&nbsp;[Safe Attachments](safe-attachments-policies-configure.md)|³|✔|✔|
 |**General behavior**||||
-|Protection on by default?|✔|⁴||
-|Configure conditions/exceptions for protection?||✔⁵|✔|
-|Customize security settings?|✔|⁶|✔|
-|Protection settings automatically updated?||✔||
+|&nbsp;&nbsp;Protection on by default?|✔|⁴||
+|&nbsp;&nbsp;Configure conditions/exceptions for protection?||✔⁵|✔|
+|&nbsp;&nbsp;Customize security settings?|✔|⁶|✔|
+|&nbsp;&nbsp;Protection settings automatically updated?||✔||
 
 ¹ There are no default entries in the IP Allow List or the IP Block List, so the default connection filter policy effectively does nothing unless you customize the settings.
 
@@ -136,8 +136,8 @@ The previous information and the protection policies that are involved are summa
 
 How protection policies are applied is an important consideration as you decide how to configure security settings for users. The important points to remember are:
 
-- Security features have an unconfigurable [order of processing](how-policies-and-protections-are-combined.md). For example, incoming messages are always evaluated for malware before spam.
-- The protection policies of a specific security feature (anti-spam, anti-malware, anti-phishing, etc.) are applied in a specific order of precedence (more on the order of precedence later).
+- Protection features have an unconfigurable [order of processing](how-policies-and-protections-are-combined.md). For example, incoming messages are always evaluated for malware before spam.
+- The protection policies of a specific feature (anti-spam, anti-malware, anti-phishing, etc.) are applied in a specific order of precedence (more on the order of precedence later).
 - If a user is intentionally or unintentionally included in multiple policies of a specific feature, the first protection policy for that feature where the user is defined (based on the order of precedence) determines what happens to the item (a message, file, URL, etc.).
 - Once that first protection policy is applied to a specific item for a user, policy processing for that feature stops. No more protection policies of that feature are evaluated for that user and that specific item.
 
@@ -212,7 +212,7 @@ Design guidelines for multiple custom policies for a specific feature (for examp
 
 If you decide to use custom policies, use the [Configuration analyzer](configuration-analyzer-for-security-policies.md) to periodically compare the settings in your policies to the recommended settings in the Standard and Strict preset security policies.
 
-## Step 3: Assign permissions
+## Step 3: Assign permissions to admins
 
 **Summary**: Assign the [Security Administrator](/azure/active-directory/roles/permissions-reference#security-administrator) role in Azure Active Directory to other admins, specialists, and help desk personnel so they can do tasks in EOP and Defender for Office 365.
 
@@ -236,7 +236,7 @@ When it comes to assigning permissions for tasks in EOP and Defender for Office 
 
 For instructions, see [View and assign administrator roles in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-manage-roles-portal) and [Manage access to Microsoft 365 Defender with Azure Active Directory global roles](/microsoft-365/security/defender/m365d-permissions).
 
-## Step 4: User tags
+## Step 4: Priority accounts and user tags
 
 **Summary**: Identify and tag the appropriate users in your organization as [priority accounts](/microsoft-365/admin/setup/priority-accounts) for easier identification in reports and investigations, and to receive [priority account protection](priority-accounts-turn-on-priority-account-protection.md) in Defender for Office 365. Consider creating and applying custom [user tags](user-tags-about.md) in Defender for Office 365 Plan 2.
 
@@ -246,7 +246,7 @@ In Defender for Office 365, priority accounts allows you to tag up to 250 high v
 
 In Defender for Office 365 Plan 2, you also have access to create and apply custom _user tags_ to easily identify specific groups of users in reports and investigations. For more information, see [User tags in Microsoft Defender for Office 365](user-tags-about.md).
 
-**Identify appropriate users to tag as priority accounts, and decide if you need to create and apply custom user tabs.**
+**Identify appropriate users to tag as priority accounts, and decide if you need to create and apply custom user tags.**
 
 ## Step 5: Review and configure user reported message settings
 
@@ -279,7 +279,7 @@ The important parts of user message reporting are:
 
 For complete information about user reported message settings, see [User reported settings](submissions-user-reported-messages-custom-mailbox.md).
 
-## Step 6: Block and allow
+## Step 6: Block and allow entries
 
 **Summary**: Familiarize yourself with the procedures to block and allow messages, files and URLs in Defender for Office 365.
 
@@ -320,10 +320,12 @@ For complete details, see the following articles:
 
 In Defender for Office 365 Plan 2, Attack simulation training allows you to send simulated phishing messages to users and assign training based on how they respond. The following options are available:
 
-- [Individual simulations](attack-simulation-training-simulations.md) using built-in payloads or custom payloads.
+- [Individual simulations](attack-simulation-training-simulations.md) using built-in or custom payloads.
 - [Simulation automations](attack-simulation-training-simulation-automations.md) taken from real-world phishing attacks using multiple payloads and automated scheduling.
 - [Training-only campaigns](attack-simulation-training-training-campaigns.md) where you don't need to launch a campaign and wait for users to click links or download attachments in the simulated phishing messages before trainings are assigned.
 
-## Step 8: Protect, detect, and respond
+For more information, see [Get started using Attack simulation training](attack-simulation-training-get-started.md).
+
+## Step 8: Investigate and respond
 
 Now that your initial set up is complete, use the information in the [Microsoft Defender for Office 365 Security Operations Guide](mdo-sec-ops-guide.md) to monitor and investigate threats in the organization.
