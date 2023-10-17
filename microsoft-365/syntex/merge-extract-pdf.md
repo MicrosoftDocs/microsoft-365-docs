@@ -26,7 +26,7 @@ The **Merge** feature lets you quickly combine PDF files into a new PDF file sto
 The **Extract** feature lets you divide a PDF file into multiple PDFs, allowing you to quickly split and extract multiple pages of a PDF into a new PDF file. Now, Syntex users won’t have to worry about sharing information they don’t want from a large PDF file. Splitting a large PDF file into multiple, smaller files lets users tailor the information they want to view or share with others.
 
 > [!NOTE]
-> This feature is available only for licensed Syntex users.
+> These features are available only for licensed Syntex users.
 
 ## Merge PDF files
 
@@ -43,7 +43,6 @@ To merge PDF files, follow these steps:
 ## Extract PDF files
 
 Now, Syntex users won’t have to worry about sharing information they don’t want from a large PDF file. Splitting a large PDF file into multiple, smaller files lets users tailor the information they want to view or share with others. 
- 
 
 To split a PDF file, follow these steps:  
 
