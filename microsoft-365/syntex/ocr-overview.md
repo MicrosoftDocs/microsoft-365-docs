@@ -1,10 +1,10 @@
 ---
-title: Overview of optical character recognition in Microsoft Syntex (Preview)
+title: Overview of optical character recognition in Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: kkameth
-ms.date: 10/03/2023
+ms.date: 10/16/2023
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -17,7 +17,7 @@ ms.localizationpriority: medium
 description: Learn about optical character recognition in Microsoft Syntex.
 ---
 
-# Overview of optical character recognition in Microsoft Syntex (Preview)
+# Overview of optical character recognition in Microsoft Syntex
 
 The optical character recognition (OCR) service in Microsoft Syntex lets you extract printed or handwritten text from images, such as posters, drawings, and product labels, as well as from documents like articles, reports, forms, and invoices.
 
