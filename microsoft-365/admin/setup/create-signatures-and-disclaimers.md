@@ -105,7 +105,7 @@ Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=850
 
 1. Choose **Defer the message** if rule processing doesn’t complete if you want this experience.
 
-1. Select ***Header** under the **Match sender address in message** drop down and click **Next** and **Finish**
+1. Select ***Header** under the **Match sender address in message** drop-down and then select **Next** and **Finish**.
     
 ## Limitations of organization wide signatures
 
