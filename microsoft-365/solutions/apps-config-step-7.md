@@ -60,11 +60,11 @@ Once a configuration policy has been assigned, you can monitor app configuration
 
 Before you start troubleshooting app configuration, collect some basic information to help you better understand the problem and reduce the time to find a resolution.
  
-Collect the following background information by answering the following questions:
+Collect background information by answering the following questions:
 - Which policy setting is or isn't being applied? Is any app config policy being applied at all?
 - What is the version or build release of the targeted application? Is it the most current in the mobile store?
 - Did app configuration settings work on previous application releases, but started breaking on this new release?
-- What application is targeted the app config settings? Is this a public store application or custom LOB?
+- What application is targeted in the app config settings? Is this a public store application or custom LOB?
 - How many users/applications are affected? Are all or only subset (only 10 out of 100 affected)? 
 - What platform or device types are impacted (Android or iOS)?
 - Have you reviewed the application publishers documentation around supported application configuration settings for the specific app (publishers may change settings from time to time for a number of reasons)? 
@@ -79,16 +79,16 @@ Successfully applying app configuration settings for mobile apps relies on addin
 App configuration can be delivered either through the mobile device management (MDM) OS channel on enrolled devices (Managed App Configuration channel for iOS or the Android in the Enterprise channel for Android) or through the Mobile Application Management (MAM) channel. 
  
 Confirm your app configuration channel you selected for the app configuration policy:
-   - Both communication channels or methods require the user must be assigned an Intune license. 
+   - Both communication channels or methods require that the user must be assigned an Intune license. 
    - User, app, and device must meet the requirements under related app configuration policy channel.
      - For managed devices, the device must be properly enrolled in Intune MDM with a healthy enrollment profile and has synced with the service recently. 
      - For managed apps, the app must support the Intune SDK and any related app protection policy must be applied correctly.  
  
-#### Step 2: Check status of your app config policy when using the **Managed Devices** channel
+#### Step 2: Check status of your app config policy when using the Managed Devices channel
 
-When the device is MDM enrolled, you can use the **Troubleshooting + support** > **Troubleshoot** dashboard to help review a specific user and device details. You can find and select a user by entering a display name or email. You can then select policy from the tab options. Once selected, you can review the list of currently assigned policies for that user to validate the intended app config policy is assigned. Additionally, you can select the assigned app config policy for review.
+When the device is MDM enrolled, you can use the **Troubleshooting + support** > **Troubleshoot** dashboard in Intune to help review a specific user and device details. You can find and select a user by entering a display name or email. You can then select policy from the tab options. Once selected, you can review the list of currently assigned policies for that user to validate the intended app config policy is assigned. Additionally, you can select the assigned app config policy for review.
 
-#### Step 3: Check status of your app config policy when using **Managed Apps** channel
+#### Step 3: Check status of your app config policy when using Managed Apps channel
  
 Similar to the previous step used for reviewing a policy, using the **Managed Devices** channel, use the **Troubleshooting** dashboard to validate the specific user is targeted with the intended app config policy. However, app config policies using the **Managed Apps** channel currently doesn't have a monitoring feature. 
  
