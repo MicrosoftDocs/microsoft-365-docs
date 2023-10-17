@@ -81,7 +81,7 @@ Microsoft Defender for Endpoint on Android supports installation on both modes o
 > [!NOTE]
 > **Microsoft Defender for Endpoint on Android is available on [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.scmx) now.**
 >
-> You can connect to Google Play from Intune to deploy Microsoft Defender for Endpoint app, across Device Administrator and Android Enterprise entrollment modes.
+> You can connect to Google Play from Intune to deploy Microsoft Defender for Endpoint app, across Device Administrator and Android Enterprise enrollment modes.
 
 ## How to Configure Microsoft Defender for Endpoint on Android
 
