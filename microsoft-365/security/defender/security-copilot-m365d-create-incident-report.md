@@ -62,7 +62,7 @@ Security Copilot creates an incident report containing the following information
   - Automated actions applied by the system, including Microsoft Sentinel Playbooks ran and Microsoft 365 Defender actions applied
 - Follow up actions like recommendations, open issues, or next steps noted by the analysts in the incident logs.
 
-To create an incident report, perform the following steps:okra
+To create an incident report, perform the following steps:
 
 1. Open an incident page. In the incident page, select **Generate incident report** located at the top right corner of the page. Alternately, you can select the report icon found in the Security Copilot pane.
 :::image type="content" source="../../media/copilot-in-defender/incident-report/fig1-sec-copilot-m365d-create-report.png" alt-text="Screenshot highlighting the generate incident report and report icon buttons in the incident page." lightbox="../../media/copilot-in-defender/incident-report/fig1-expanded-sec-copilot-m365d-create-report.png":::
