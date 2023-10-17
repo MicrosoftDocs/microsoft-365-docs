@@ -39,9 +39,9 @@ ms.date: 10/10/2023
 
 A comprehensive and clear incident report is an essential reference for security teams and security operations management. However, writing a comprehensive report with the important details present can be a time-consuming task for security operations teams as it involves collecting, organizing, and summarizing incident information from multiple sources. Security teams can now instantly create an extensive incident report within the portal.
 
-While an [incident summary](security-copilot-m365d-incident-summary.md) provides an overview of an incident and how it happened, an incident report consolidates incident information from various data sources available in Microsoft Sentinel and Microsoft 365 Defender, including all analyst-driven steps and automated actions, the analysts involved in the response, and the comments from the analysts. Whether security teams are using Microsoft 365 Defender, Microsoft Sentinel, or both, all relevant incident data are added into the generated incident report.
+While an [incident summary](security-copilot-m365d-incident-summary.md) provides an overview of an incident and how it happened, an incident report consolidates incident information from various data sources available in Microsoft Sentinel and Microsoft 365 Defender. The incident report also includes all analyst-driven steps and automated actions, the analysts involved in the response, and the comments from the analysts. Whether security teams are using Microsoft 365 Defender, Microsoft Sentinel, or both, all relevant incident data are added into the generated incident report.
 
-This guide outlines what to expect and how to access the incident report creation capability within the portal, including information on how to provide feedback about the generated report.
+This guide lists the data in incident reports and contains steps on how to access the incident report creation capability within the portal. It also includes information on how to provide feedback about the generated report.
 
 ## Technical requirements
 
@@ -62,7 +62,7 @@ Security Copilot creates an incident report containing the following information
   - Automated actions applied by the system, including Microsoft Sentinel Playbooks ran and Microsoft 365 Defender actions applied
 - Follow up actions like recommendations, open issues, or next steps noted by the analysts in the incident logs.
 
-To create an incident report, perform the following steps:okra
+To create an incident report, perform the following steps:
 
 1. Open an incident page. In the incident page, select **Generate incident report** located at the top right corner of the page. Alternately, you can select the report icon found in the Security Copilot pane.
 :::image type="content" source="../../media/copilot-in-defender/incident-report/fig1-sec-copilot-m365d-create-report.png" alt-text="Screenshot highlighting the generate incident report and report icon buttons in the incident page." lightbox="../../media/copilot-in-defender/incident-report/fig1-expanded-sec-copilot-m365d-create-report.png":::
@@ -83,12 +83,12 @@ You can validate and submit feedback about a generated incident report. Validati
 Here are some recommendations to consider to ensure that Security Copilot generates a comprehensive and complete incident report:
 
 - Classify and resolve the incident before generating the incident report.
-- While investigating an incident, write and save comments in the Microsoft Sentinel activity log or in the Microsoft 365 Defender incident comments and history to ensure that these are included in the incident report.
+- Ensure that you write and save comments in the Microsoft Sentinel activity log or in the Microsoft 365 Defender incident comments and history to include the comments in the incident report.
 - Write comments using comprehensive and clear language. In-depth and clear comments provide better context about the response actions. See the following steps to know how to access the comments field:
   - [Add comments to incidents in Microsoft 365 Defender](manage-incidents.md#add-comments) 
   - [Add comments to incidents in Microsoft Sentinel](/azure/sentinel/investigate-cases.md#comment-on-incidents)
 - For ServiceNow users, [enable the Microsoft Sentinel and ServiceNow bi-directional sync](https://techcommunity.microsoft.com/t5/microsoft-sentinel-blog/what-s-new-introducing-microsoft-sentinel-solution-for/ba-p/3692840) to get more robust incident data.
-- Copy the generated incident report and post it to the comments and history of the incident. This ensures that the incident report is saved in the incident page.
+- Copy the generated incident report and post it to the comments and history of the incident to ensure that the incident report is saved in the incident page.
 
 ## See also
 
