@@ -1,5 +1,5 @@
 ---
-title: Review and sign a signature request using Microsoft Syntex eSignature (Preview)
+title: Review and sign a signature request using Microsoft Syntex eSignature
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -17,10 +17,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: Learn how to review and sign signature requests using Microsoft Syntex eSignature. 
 ---
 
-# Review and sign a signature request using Microsoft Syntex eSignature (Preview)
-
-> [!NOTE]
-> This feature is currently in limited preview and subject to change.
+# Review and sign a signature request using Microsoft Syntex eSignature
 
 When a signature request is created, an email notification is sent to the recipients. The notification contains details of the request, including all recipients who are required to sign, and any signing instructions. A recipient doesn't need to have a Syntex license or a Microsoft account to sign the request.
 

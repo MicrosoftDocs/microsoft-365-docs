@@ -1,5 +1,5 @@
 ---
-title: Overview of Microsoft Syntex eSignature (Preview)
+title: Overview of Microsoft Syntex eSignature
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -17,10 +17,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: Learn about Microsoft Syntex eSignature and how to send electronic signature requests to people inside and outside of your organization. 
 ---
 
-# Overview of Microsoft Syntex eSignature (Preview)
-
-> [!NOTE]
-> This feature is currently in limited preview and subject to change.
+# Overview of Microsoft Syntex eSignature
 
 Microsoft Syntex eSignature simplifies the process of signing and sharing documents, while providing the security and compliance of Microsoft 365.
 
@@ -28,13 +25,13 @@ With Syntex eSignature, you can quickly and securely send documents for signatur
 
 ## Before you begin
 
-Before you can use Syntex eSignature, an admin must [set up the Syntex eSignature service](esignature-setup.md) in the Microsoft 365 admin center.
+Before you can use Syntex eSignature, an admin must [set up Syntex eSignature](esignature-setup.md) in the Microsoft 365 admin center.
 
 You must be signed in to SharePoint Online by using your work email address.
 
 ## Supported file types
 
-For this preview, Syntex eSignature is available for only PDF documents at this time.
+Syntex eSignature is available for only PDF documents at this time.
 
 <br>
 

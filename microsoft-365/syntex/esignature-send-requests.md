@@ -1,5 +1,5 @@
 ---
-title: Create a signature request using Microsoft Syntex eSignature (Preview)
+title: Create a signature request using Microsoft Syntex eSignature
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -17,10 +17,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: Learn how to use Microsoft Syntex eSignature to send electronic signature requests to people inside and outside of your organization. 
 ---
 
-# Create a signature request using Microsoft Syntex eSignature (Preview)
-
-> [!NOTE]
-> This feature is currently in limited preview and subject to change.
+# Create a signature request using Microsoft Syntex eSignature
 
 ## Create a signature request
 
@@ -63,7 +60,6 @@ If you create a signature request and want to cancel it, follow these steps.
     ![Screenshot of the Cancel signature request confirmation screen.](../media/content-understanding/esignature-cancel-signature-request-confirmation.png)
 
     Once canceled, the status of the request is set to **Canceled** and recipients receive an email notification telling them that the request was canceled and that no further action is possible on this request.
-
 
 ## Troubleshoot a signature request
 
