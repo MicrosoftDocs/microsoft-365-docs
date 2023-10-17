@@ -2192,7 +2192,7 @@
       },
       {
          "source_path":"microsoft-365/security/office-365-security/bulk-complaint-level-values.md",
-         "redirect_url":"/microsoft-365/security/office-365-security/anti-spam-protection-about#bulk-complaint-threshold-bcl-in-anti-spam-policies",
+         "redirect_url":"/microsoft-365/security/office-365-security/anti-spam-bulk-complaint-level-bcl-about",
          "redirect_document_id":false
       },
       {
@@ -2928,11 +2928,6 @@
        {
          "source_path":"microsoft-365/security/office-365-security/integrate-office-365-ti-with-mde.md",
          "redirect_url":"/microsoft-365/security/defender/deploy-configure-m365-defender",
-         "redirect_document_id":false
-       },
-       {
-         "source_path":"microsoft-365/security/office-365-security/anti-spam-bulk-complaint-level-bcl-about.md",
-         "redirect_url":"/microsoft-365/security/office-365-security/anti-spam-protection-about#bulk-complaint-threshold-bcl-in-anti-spam-policies",
          "redirect_document_id":false
        },
        {

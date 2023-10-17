@@ -40,7 +40,7 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or standalone E
 
 - **Bulk email** (also known as _gray mail_), is more difficult to classify. Whereas spam is a constant threat, bulk email is often one-time advertisements or marketing messages. Some users want bulk email messages (and in fact, they have deliberately signed up to receive them), while other users consider bulk email to be spam. For example, some users want to receive advertising messages from the Contoso Corporation or invitations to an upcoming conference on cybersecurity, while other users consider these same messages to be spam.
 
-  For more information about how bulk email is identified, see [Bulk complaint threshold (BCL) in anti-spam policies](anti-spam-protection-about.md#bulk-complaint-threshold-bcl-in-anti-spam-policies).
+  For more information about how bulk email is identified, see [Bulk complaint level (BCL) in EOP](anti-spam-bulk-complaint-level-bcl-about.md).
 
 ## How to manage bulk email
 
@@ -48,7 +48,7 @@ Because of the mixed reaction to bulk email, there isn't universal guidance that
 
 Anti-spam policies have a default BCL threshold that's used to identify bulk email as spam, and a specific action to take on those bulk messages. For more information, see the following articles:
 
-- [Bulk complaint threshold (BCL) in anti-spam policies](anti-spam-protection-about.md#bulk-complaint-threshold-bcl-in-anti-spam-policies)
+- [Bulk complaint level (BCL) in EOP](anti-spam-bulk-complaint-level-bcl-about.md)
 - [Configure anti-spam policies in EOP](anti-spam-policies-configure.md).
 - [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings)
 

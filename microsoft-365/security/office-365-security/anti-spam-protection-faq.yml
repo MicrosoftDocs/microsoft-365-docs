@@ -91,7 +91,7 @@ sections:
       - question: |
           Is bulk email filtering automatically enabled?
         answer: |
-          Yes. For more information about bulk email, see [What's the difference between junk email and bulk email?](anti-spam-spam-vs-bulk-about.md) and [Bulk complaint threshold (BCL) in anti-spam policies](anti-spam-protection-about.md#bulk-complaint-threshold-bcl-in-anti-spam-policies).
+          Yes. For more information about bulk email, see [What's the difference between junk email and bulk email?](anti-spam-spam-vs-bulk-about.md) and [Bulk complaint level (BCL) in EOP](anti-spam-bulk-complaint-level-bcl-about.md).
 
       - question: |
           Does the service provide URL filtering?

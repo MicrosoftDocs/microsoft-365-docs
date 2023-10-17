@@ -93,7 +93,7 @@ You can configure anti-spam policies in the Microsoft 365 Defender portal or in 
 
 5. On the **Bulk email threshold & spam properties** page, configure the following settings:
 
-   - **Bulk email threshold**: Specifies the bulk complaint level (BCL) of a message that must bet met or exceeded to trigger the specified action for the **Bulk compliant level (BCL) met or exceeded** spam filtering verdict that you configure on the next page. A higher value indicates the message is less desirable (more likely to resemble spam). For more information, see [Bulk complaint threshold (BCL) in anti-spam policies](anti-spam-protection-about.md#bulk-complaint-threshold-bcl-in-anti-spam-policies).
+   - **Bulk email threshold**: Specifies the bulk complaint level (BCL) of a message that must bet met or exceeded to trigger the specified action for the **Bulk compliant level (BCL) met or exceeded** spam filtering verdict that you configure on the next page. A higher value indicates the message is less desirable (more likely to resemble spam). For more information, see [Bulk complaint level (BCL) in EOP](anti-spam-bulk-complaint-level-bcl-about.md).
 
    - **Spam properties** section:
 
