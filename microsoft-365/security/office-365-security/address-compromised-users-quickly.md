@@ -53,7 +53,7 @@ When a user account is compromised, alerts are triggered. And in some cases, tha
 
 Watch this short video to learn how you can detect and respond to user compromise in Microsoft Defender for Office 365 using Automated Investigation and Response (AIR) and compromised user alerts.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWAl83 "Responding to user compromise"]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWAl83]
 
 ### View and investigate restricted users
 
