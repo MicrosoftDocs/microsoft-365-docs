@@ -28,7 +28,7 @@ description: "Learn how you can use Organizational messages to help with the ado
 
 Organizational messages enable Enterprise administrators to deliver clear, actionable in-product messages to users of Microsoft 365 experiences. To learn more about Organizational messages, see [Organizational Messages in Adoption Score](../adoption/organizational-messages.md) and [Organizational Messages in Intune](/mem/intune/remote-actions/organizational-messages-prerequisites).
 
-To help with the adoption of Microsoft 365 Copilot features, Organizational messages in Microsoft 365 Usage analytics report enable admins to send messages to their Microsoft 365 licensed users who haven't recently used any Copilot features. In the pipeline, we're planning to expand Organizational messages across platforms like Teams, Outlook, Excel, PowerPoint, and Word to further enhance the adoption of specific copilot features.
+To help with the adoption of Microsoft 365 Copilot features, Organizational messages in Microsoft 365 usage analytics report enable admins to send messages to their Microsoft 365 licensed users who haven't recently used any Copilot features. In the pipeline, we're planning to expand Organizational messages across platforms like Teams, Outlook, Excel, PowerPoint, and Word to further enhance the adoption of specific Copilot features.
 
 ## Who can use the feature?
 
@@ -38,7 +38,7 @@ To preview Organizational messages in the Microsoft 365 Copilot usage report, yo
 
 - Organizational Message Writer
 
-The Organizational Message Writer role is a built-in role that allows assigned admins to view and configure Organizational Messages for their tenant. Note that this role doesn't grant access to user-level details in usage reports or the ability to modify permission settings. To learn more about the Organizational Message Writer role, see [About admin roles](../add-users/about-admin-roles.md).
+The Organizational Message Writer role is a built-in role that allows assigned admins to view and configure Organizational messages for their tenant. Note that this role doesn't grant access to user-level details in usage reports or the ability to modify permission settings. To learn more about the Organizational Message Writer role, see [About admin roles](../add-users/about-admin-roles.md).
 
 The global administrator can assign the Organizational Messages Writer role to an admin user by following these steps:
 
