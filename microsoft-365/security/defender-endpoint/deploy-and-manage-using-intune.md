@@ -1,5 +1,5 @@
 ---
-title: Deploy and manage using Intune
+title: Deploy and manage printer protection using Intune
 description: Use Intune OMA-URI and Intune user interface to deploy and manage on printer protection.
 ms.service: microsoft-365-security
 ms.subservice: mde
@@ -11,6 +11,7 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
+- mde-asr
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.date: 09/25/2023
@@ -18,7 +19,7 @@ ms.reviewer: tewchen
 search.appverid: met150
 ---
 
-# Deploy and manage using Intune
+# Deploy and manage printer protection using Intune
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)

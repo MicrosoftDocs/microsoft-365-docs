@@ -53,3 +53,7 @@ The Action center ([https://security.microsoft.com/action-center](https://securi
 
 After you mitigate the risk and complete the investigation of an incident, you can release the contained assets from the action details pane (e.g., enable a disabled user account or release a device from containment). For more information about the action center, see [Action center](m365d-action-center.md).
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+
+## Next step
+
+- [Get email notifications for response actions](m365d-response-actions-notifications.md)

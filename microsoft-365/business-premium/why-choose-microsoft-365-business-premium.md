@@ -7,8 +7,7 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
-ms.service: microsoft-365-security
-ms.subservice: m365bp
+ms.service: microsoft-365-business
 ms.date: 05/10/2023
 ms.localizationpriority: medium
 ms.collection: 
@@ -46,7 +45,7 @@ Watch the following video to see how Microsoft 365 Business Premium helps your b
 
 ## Resources to train everyone
 
-The security recommendations provided in [this guidance](index.md) make it much harder for cyberattackers to gain access to your environment. An important part of your security strategy also includes training everyone in your organization &mdash; the people in your company who use your systems regularly. Users can be your first line of defense. Everyone needs to know how to work productively while maintaining a more secure environment.
+The security recommendations provided in [this guidance](m365bp-overview.md) make it much harder for cyberattackers to gain access to your environment. An important part of your security strategy also includes training everyone in your organization &mdash; the people in your company who use your systems regularly. Users can be your first line of defense. Everyone needs to know how to work productively while maintaining a more secure environment.
 
 Resources are available to help everyone in your organization to:
 

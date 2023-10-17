@@ -39,7 +39,7 @@ landingContent:
           - text: Manage data privacy and data protection
             url: data-privacy-protection.md
           - text: Microsoft 365 for smaller businesses and campaigns
-            url: ../business-premium/index.md
+            url: ../business-premium/m365bp-overview.md
 
   # Card
   - title: Architecture illustrations and design principles
