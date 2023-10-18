@@ -50,6 +50,7 @@ An alert is triggered, and a security playbook starts an automated investigation
 1. An automated investigation is initiated in one of the following ways:
    - Either [an alert is triggered](#which-alert-policies-trigger-automated-investigations) by something suspicious in email (such as a message, attachment, URL, or compromised user account). An incident is created, and an automated investigation begins; or
    - A security analyst [starts an automated investigation](air-about-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer) while using [Explorer](threat-explorer-about.md).
+
 2. While an automated investigation runs, it gathers data about the email in question and _entities_ related to that email (for example, files, URLs, and recipients). The investigation's scope can increase as new and related alerts are triggered.
 
 3. During and after an automated investigation, [details and results](air-view-investigation-results.md) are available to view. Results might include [recommended actions](air-remediation-actions.md) that can be taken to respond to and remediate any existing threats that were found.
@@ -58,7 +59,8 @@ An alert is triggered, and a security playbook starts an automated investigation
 
 5. As pending remediation actions are approved (or rejected), the automated investigation completes.
 
-Note: If the investigation does not result in recommended actions the automated investigation will close and the details of what was reviewed as part of the automated investigation will still be available on the investigation page.
+> [!NOTE]
+> If the investigation does not result in recommended actions the automated investigation will close and the details of what was reviewed as part of the automated investigation will still be available on the investigation page.
 
 In Microsoft Defender for Office 365, no remediation actions are taken automatically. Remediation actions are taken only upon approval by your organization's security team. AIR capabilities save your security operations team time by identifying remediation actions and providing the details needed to make an informed decision.
 
@@ -104,7 +106,7 @@ Permissions are granted through certain roles, such as those that are described 
 |Task|Role(s) required|
 |---|---|
 |Set up AIR features|One of the following roles: <ul><li>Global Administrator</li><li>Security Administrator</li></ul> <br/> These roles can be assigned in [Azure Active Directory](/azure/active-directory/roles/permissions-reference) or in the [Microsoft 365 Defender portal](mdo-portal-permissions.md).|
-|Start an automated investigation <p> --- or --- <p> Approve or reject recommended actions|One of the following roles, assigned in [Azure Active Directory](/azure/active-directory/roles/permissions-reference) or in the [Microsoft 365 Defender portal](mdo-portal-permissions.md): <ul><li>Global Administrator</li><li>Security Administrator</li><li>Security Operator</li><li>Security Reader <br> --- and --- </li><li>Search and Purge (this role is assigned only in the [Microsoft 365 Defender portal](mdo-portal-permissions.md). You might need to create a new **Email & collaboration** role group there and add the Search and Purge role to that new role group.</li></ul>|
+|Start an automated investigation <p> --- or --- <p> Approve or reject recommended actions|One of the following roles, assigned in [Azure Active Directory](/azure/active-directory/roles/permissions-reference) or in the [Microsoft 365 Defender portal](mdo-portal-permissions.md): <ul><li>Global Administrator</li><li>Security Administrator</li><li>Security Operator</li><li>Global Reader</li><li>Security Reader <br> --- and --- </li><li>Search and Purge (this role is assigned only in the [Microsoft 365 Defender portal](mdo-portal-permissions.md). You might need to create a new **Email & collaboration** role group there and add the Search and Purge role to that new role group.</li></ul>|
 
 ## Required licenses
 
