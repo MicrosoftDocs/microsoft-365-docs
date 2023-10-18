@@ -3,6 +3,7 @@ title: SharePoint Cross-tenant SharePoint migration Step 5 (preview)
 ms.author: jhendr
 author: JoanneHendrickson
 manager: serdars
+ms.date: 10/13/2023
 recommendations: true
 audience: ITPro
 ms.topic: article

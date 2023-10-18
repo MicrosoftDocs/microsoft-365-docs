@@ -3,7 +3,7 @@ title: OneDrive Cross-tenant OneDrive migration Step 6
 ms.author: jhendr
 author: JoanneHendrickson
 manager: serdars
-ms.date: 10/25/2022
+ms.date: 10/13/2023
 recommendations: true
 audience: ITPro
 ms.topic: article
@@ -30,7 +30,7 @@ This is Step 6 in a solution designed to complete a Cross-tenant OneDrive migrat
 
 Now you're ready to start your OneDrive migration.  Before starting any cross-tenant migration, do the following steps.
 
-1. Ensure you have verified the compatibility status. If you see a status of either **Compatible** or **Warning**  on your source tenant, you may continue. Run:
+1. Ensure you have verified the compatibility status. If you see a status of either **Compatible** or **Warning**  on your source tenant, you can continue. Run:
 
    ```powershell
    Get-SPOCrossTenantCompatibilityStatus –PartnerCrossTenantHostURL [Target tenant hostname]
@@ -55,7 +55,7 @@ Start-SPOCrossTenantUserContentMove -SourceUserPrincipalName DiegoS@M365x016651.
         Test-Diego@M365x946316.OnMicrosoft.com -TargetCrossTenantHostUrl https://m365x946316-my.sharepoint.com/ 
 ```
 
-To Schedule a migration for a later time, you may use and append the above command with the one of the following parameters. 
+To Schedule a migration for a later time, you can use and append the above command with the one of the following parameters. 
 
 These commands can be useful when planning bulk batches of OneDrive migrations.  You can queue/migrate up to 4,000 OneDrive migrations per batch.  If your user count exceeds 4,000, create separate batches, and schedule them to run once the current batch is close to completion.
 
@@ -66,7 +66,7 @@ These commands can be useful when planning bulk batches of OneDrive migrations. 
 
 ## OneDrive status pre-migration
 
-Before starting the migration, the users current source OneDrive status will be similar to the example below.  This example is from the users source tenant, showing their current files and folders.
+Before starting the migration, the users current source OneDrive status is similar to the example below.  This example is from the users source tenant, showing their current files and folders.
 
 :::image type="content" source="../media/cross-tenant-migration/t2t-onedrive-status-premigration.png" alt-text="pre-migration status":::
 
@@ -138,7 +138,7 @@ Get-SPOCrossTenantUserContentMoveState -PartnerCrossTenantHostURL https://ttestt
 |---|---|
 |NotStarted|The migration hasn't yet started.|
 |Scheduled|The migration is now in the queue and is scheduled to run when a slot becomes available.|
-|ReadytoTrigger|The Migration is in its pre-flight stage and will start the Migration shortly.|
+|ReadytoTrigger|The Migration is in its preflight stage and will start the Migration shortly.|
 |InProgress|The migration is in progress in one of the following states: </br>- Validation </br>- Backup </br>- Restore </br>- Cleanup|
 |Success|The Migration has completed successfully.|
 |Rescheduled|The migration may not have completed and has been requeued for another pass.|
