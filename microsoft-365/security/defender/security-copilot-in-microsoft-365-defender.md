@@ -68,6 +68,8 @@ Most attackers rely on sophisticated malware when launching attacks to avoid det
 
 Security teams who use advanced hunting to proactively hunt for threats in their network can now use a query assistant that converts any natural-language question in the context of threat hunting, into a ready-to-run KQL query. The query assistant saves security teams time by generating a KQL query that can then be automatically run or further tweaked according to the analyst needs. Read more about the query assistant in [Security Copilot in advanced hunting](advanced-hunting-security-copilot.md).
 
+:::image type="content" source="../../media/copilot-in-defender/generate-kql/generate-kql-queries.png" alt-text="Screenshot of Security Copilot in advanced hunting" lightbox="../../media/copilot-in-defender/generate-kql/generate-kql-queries.png":::
+
 ### Write incident reports efficiently
 
 Security operations teams usually write reports to record important information, including what response actions were taken and the corresponding results, the team members involved, and other information to aid future security decisions and learning. Oftentimes, documenting incidents can be time-consuming. For incident reports to be effective, it must contain an incident's summary along with the actions taken, including what actions were taken by whom and when. Security Copilot helps security teams consolidate these information pieces through the [create incident report](security-copilot-m365d-create-incident-report.md) feature.
