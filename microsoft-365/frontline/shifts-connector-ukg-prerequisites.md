@@ -205,7 +205,7 @@ Here's how frontline managers (FLM) and frontline workers (FLW) are set up in th
 &sup1;FLW1 can also work as a beauty advisor in Central London/Chelsea.<br>
 &sup2;FLW5 can also work as a sales associate in Central London/Covent Garden and Central London/Chelsea.
 
-#### What does it mean when I set up teams in Teams?
+#### What does this mean when I set up teams in Teams?
 
 In this scenario, the IT admin organizes teams in Teams as follows.
 
