@@ -249,7 +249,9 @@
              - name: Overview
                href: advanced-hunting-overview.md
              - name: Guided and advanced modes
-               href: advanced-hunting-modes.md                        
+               href: advanced-hunting-modes.md
+             - name: Generate KQL queries
+               href: advanced-hunting-security-copilot.md                                         
              - name: Build queries using guided mode 
                items: 
                  - name: Get started with query builder
