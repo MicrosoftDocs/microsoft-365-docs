@@ -88,8 +88,8 @@ Exchange Online synchronizes the PreferredDataLocation property from AAD into th
 - Outlook for Mac users may experience a temporary loss of access to their Online Archive folder while you move their mailbox to a new _Geography_ location. This condition occurs when the user's the primary and archive mailboxes are in different _Geography_ locations, because cross-geo mailbox moves may complete at different times.
 - Users can't share mailbox folders across _Geography_ locations in Outlook on the web (formerly known as Outlook Web App or OWA). For example, a user in the European Union can't use Outlook on the web to open a shared folder in a mailbox that's located in the United States. However, Outlook on the Web users can open other mailboxes in different _Geography_ locations by using a separate browser window as described in Open another person's mailbox in a separate browser window in Outlook Web App.
 
->[!NOTE]
->Cross-geo mailbox folder sharing is supported in Outlook on Windows.
+  > [!NOTE]
+  > Cross-geo mailbox folder sharing is supported in Outlook on Windows.
 
 - Public folders are supported in Multi-Geo organizations. However, the public folders must remain in the _Primary Provisioned Geography_ location. You can't move public folders to satellite geo locations.
 - In a Multi-Geo environment, cross-geo mailbox auditing isn't supported. For example, if a user is assigned permissions to access a shared mailbox in a different _Geography_ location, mailbox actions performed by that user aren't logged in the mailbox audit log of the shared mailbox. Exchange admin audit events are also only available for the default location. For more information, see Manage mailbox auditing.
