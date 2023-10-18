@@ -122,13 +122,13 @@ The following connection instructions work for accounts that are or aren't confi
 
 1. In a Windows PowerShell window, load the EXO V2 module by running the following command:
 
-  ```powershell
+   ```powershell
    Import-Module ExchangeOnlineManagement
    ```
   
 1. In the following example, admin@contoso.onmicrosoft.com is the admin account, and the target geo location is where the mailbox olga@contoso.onmicrosoft.com resides.
   
-  ```powershell
+   ```powershell
    Connect-ExchangeOnline -UserPrincipalName admin@contoso.onmicrosoft.com -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com
    ```
   
