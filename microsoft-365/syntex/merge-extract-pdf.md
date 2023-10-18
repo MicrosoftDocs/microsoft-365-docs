@@ -19,7 +19,7 @@ description: Learn how to combine multiple PDF files or split PDF files in Micro
 
 # Merge and extract PDF files in Microsoft Syntex
 
-With Microsoft Syntex, you can merge two or more PDF files into a new PDF file or you can extract pages from a PDF file to make new individual PDF files.
+With Microsoft Syntex, you can merge two or more PDF files into a new PDF file, or you can extract pages from a PDF file to make new individual PDF files.
 
 The **Merge** option lets you quickly combine PDF files into a new PDF file stored in SharePoint or OneDrive. You can easily organize, share, and send multiple PDF files as a single file, allowing you to better organize the information you want to view or share with others.
 
