@@ -21,16 +21,14 @@ description: Learn how to combine multiple PDF files or split PDF files in Micro
 
 With Microsoft Syntex, you can merge two or more PDF files into a new PDF file or you can extract pages from a PDF file to make new individual PDF files.
 
-The **Merge** option lets you quickly combine PDF files into a new PDF file stored in SharePoint or OneDrive. You can easily organize, share, and send multiple PDF files. Integrating multiple PDFs into a large PDF file lets users better organize the information they want to view or share with others.
+The **Merge** option lets you quickly combine PDF files into a new PDF file stored in SharePoint or OneDrive. You can easily organize, share, and send multiple PDF files as a single file, allowing you to better organize the information you want to view or share with others.
 
-The **Extract** option lets you divide a PDF file into multiple PDF files, allowing you to quickly split multiple pages of a PDF file into a new PDF file. You can easily share individual pages from a larger PDF file. Dividing a large PDF file into multiple, smaller files lets users tailor the information they want to view or share with others.
+The **Extract** option lets you divide a PDF file into multiple PDF files. You can quickly share individual pages from a larger PDF file into multiple smaller files that let you tailor the information you want to view or share with others.
 
 > [!NOTE]
 > This feature is available only for licensed Syntex users.
 
 ## Merge PDF files
-
-Now, Syntex users won’t have to worry about organizing, sharing, or sending multiple PDF files. Integrating multiple PDFs into a large PDF file lets users better organize the information they want to view or share with others.
 
 To merge PDF files, follow these steps:
 
@@ -44,7 +42,7 @@ To merge PDF files, follow these steps:
 
 ## Extract PDF files
 
-To split a PDF file, follow these steps:  
+To split a PDF file into smaller files, follow these steps:  
 
 1. In a SharePoint document library or OneDrive, open the PDF file you want to split.
 
