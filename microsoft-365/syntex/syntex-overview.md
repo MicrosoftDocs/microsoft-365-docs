@@ -189,7 +189,7 @@ This feature is useful when you have a specific piece of information you want to
 
 ### Merge and extract PDFs
 
-Quickly combine multiple PDF files into a single PDF file or split a larger PDF file into multiple smaller PDF files to better organize the information you want to view or share with others.
+Quickly combine multiple PDF files into a single PDF file, or split a larger PDF file into multiple smaller PDF files to better organize the information you want to view or share with others.
 
 [Learn more about merging and extracting PDF files in Microsoft Syntex.](merge-extract-pdf.md)
 
