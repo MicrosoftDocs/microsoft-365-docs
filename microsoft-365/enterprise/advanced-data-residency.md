@@ -46,7 +46,7 @@ The following workloads are included in ADR. For more information, see:
 
 ### Eligibility
 
-The Advanced Data Residency ("ADR") add-on is intended for Microsoft 365 enterprise customers who have comprehensive data residency requirements.  To be eligible to purchase ADR, customers must meet the following pre-requisites:
+The Advanced Data Residency ("ADR") add-on is intended for Microsoft 365 enterprise customers who have comprehensive data residency requirements.  To be eligible to purchase ADR, customers must meet the following prerequisites:
 
 - The _Tenant_ _Default Geography_ must be one of the countries/regions included in the _Local Region Geography_ (Australia, Brazil, Canada, France, Germany, India, Italy, Japan, Poland, Qatar, South Korea, Norway, South Africa, Sweden, Switzerland, United Arab Emirates, and United Kingdom).
 - Customers must have licensed one or more of the following products:
@@ -55,9 +55,9 @@ The Advanced Data Residency ("ADR") add-on is intended for Microsoft 365 enterpr
   - Exchange Online Plan 1 or Plan 2
   - OneDrive for Business Plan 1 or Plan 2
   - SharePoint Online Plan 1 or Plan 2
-  - M365 Business Basic, Standard or Premium
+  - Microsoft 365 Business Basic, Standard or Premium
 
-Geographic availability will be updated as available.
+Geographic availability is updated as available.
 
 Customers must cover 100% of paid seats in the tenant  above with ADR add-on license for tenant to receive data residency for ADR workloads.  See the table below for an example. See the table below for an example.
 
@@ -68,11 +68,11 @@ Customers must cover 100% of paid seats in the tenant  above with ADR add-on lic
 | Exchange Online Plan 2 | 25 | 22 | 25 | 
 | Totals | 1645 | 1247 | 1645 <sup>1</sup> | 
 
-1: If you have 1645 seats purchased for ADR then you have a data residency commitment for your _Local Region Geography_.  If you have less than 1645 seats then you do NOT have a data residency commitment and your tenant is subject to being moved out of the _Local Region Geography_.
+1: If you have 1645 seats purchased for ADR, then you have a data residency commitment for your _Local Region Geography_.  If you have less than 1645 seats, then you do NOT have a data residency commitment, and your tenant is subject to being moved out of the _Local Region Geography_.
 
-Customers who have purchased Multi-Geo seats for their tenant do not have to also pay for ADR for the same seats. This is to avoid “double licensing” a single seat for two different data residency programs. For example, if a customer would normally require 15,000 ADR seats to satisfy the program requirements, but they also have 4,000 Multi-Geo seats, then they are only required to purchase 11,000 ADR seats as the two programs combined would cover the normal ADR program requirement of 100% user coverage.
+Customers who have purchased Multi-Geo seats for their tenant don't have to also pay for ADR for the same seats. This is to avoid “double licensing” a single seat for two different data residency programs. For example, if a customer would normally require 15,000 ADR seats to satisfy the program requirements, but they also have 4,000 Multi-Geo seats, then they're only required to purchase 11,000 ADR seats as the two programs combined would cover the normal ADR program requirement of 100% user coverage.
 
-To find out how many ADR seats you need go to Tenant Admin Center - Billing - Your Products within your tenant and add up the total Purchase Quantity for all ADR-eligible SKUs to get the proper total of ADR seats required.
+To find out how many ADR seats, you need go to Tenant Admin Center - Billing - Your Products within your tenant and add up the total Purchase Quantity for all ADR-eligible SKUs to get the proper total of ADR seats required.
 
 
 
@@ -80,7 +80,7 @@ To find out how many ADR seats you need go to Tenant Admin Center - Billing - Yo
 
 When a customer has a mix of commercial and education license types including both Commercial/Public Sector (for example, E3, E5) and Education (for example, A1, A3, etc.) licenses in their subscription, the following applies:
 
-- Customers have rights to purchase full ADR add-on for only the paid portion of Microsoft 365 SKUs and are not obligated to cover free subscription types. However, they must cover the paid education seats with ADR (Microsoft 365 A3/A5, Office 365 A3/A5 student or faculty).
+- Customers have rights to purchase full ADR add-on for only the paid portion of Microsoft 365 SKUs and aren't obligated to cover free subscription types. However, they must cover the paid education seats with ADR (Microsoft 365 A3/A5, Office 365 A3/A5 student or faculty).
 
 - ADR for Education products is only available to Volume Licensing / EES (Microsoft Enrollment for Education Solutions) customers; contact your Microsoft account representative for details on how to obtain an ADR Education related SKU.
 
@@ -91,15 +91,15 @@ If all of a customer's tenant data covered by the Advanced Data Residency featur
 
 ### Starting Data Migration
 
-After a customer has received their Advanced Data Residency licenses,  the customer will need to signal that they are ready to schedule data migration, if one is necessary. To signal your tenant is ready for its data migration, the customer administrator will visit the Data Location section of the Microsoft 365 Admin Console within the Settings -> Org Settings -> Organization Profile area. From here the customer administrator will be able to see the current location of their data-at-rest and what _Local Region Geography_ their customer data will be migrated to, Please Note: Data migration will not be scheduled until the customer administrator has executed this task. Further, the migration expectation discussed elsewhere in this documentation  won't start being tracked until this task has been executed by the customer administrator.
+After a customer has received their Advanced Data Residency licenses,  the customer will need to signal that they're ready to schedule data migration, if one is necessary. To signal your tenant is ready for its data migration, the customer administrator visits the Data Location section of the Microsoft 365 Admin Console within the Settings -> Org Settings -> Organization Profile area. From here the customer administrator will be able to see the current location of their data-at-rest and what _Local Region Geography_ their customer data will be migrated to, Please Note: Data migration won't be scheduled until the customer administrator has executed this task. Further, the migration expectation discussed elsewhere in this documentation  won't start being tracked until this task has been executed by the customer administrator.
 
-Once the customer signal is received, they'll be provided with their opt-in date and the target date of completion.
+Once the customer signal is received, they are provided with their opt-in date and the target date of completion.
 
 In addition to a notification posted to the Message Center upon completion, the Data Location section in the Microsoft 365 Admin Console will also be updated as each workload requiring a data migration is complete.
 
 ### Migration Expectations
 
-Microsoft will use reasonable efforts to try to complete an Advanced Data Residency add-on customer migration within twelve (12) months from the time the customer administrator has signaled they're ready for migration. However, Microsoft may not be able to complete the migration within this timeframe for all customers. For example, larger or more complex customers or situations outside of Microsoft's control may require additional time to complete the migration. Advanced Data Residency add-on customers also receive prioritized migration services for their tenants over the legacy Move Program migration option. These migration expectations also apply to all ADR EDU customers as well. Customers utilizing the legacy Move Program for a data migration who don't have the Advanced Data Residency feature, will instead follow [Legacy Move Program Migration Expectations](m365-dr-legacy-move-program.md#migration-expectations).
+Microsoft uses reasonable efforts to try to complete an Advanced Data Residency add-on customer migration within twelve (12) months from the time the customer administrator has signaled they're ready for migration. However, Microsoft may not be able to complete the migration within this timeframe for all customers. For example, larger or more complex customers or situations outside of Microsoft's control may require additional time to complete the migration. Advanced Data Residency add-on customers also receive prioritized migration services for their tenants over the legacy Move Program migration option. These migration expectations also apply to all ADR EDU customers as well. Customers utilizing the legacy Move Program for a data migration who don't have the Advanced Data Residency feature, will instead follow [Legacy Move Program Migration Expectations](m365-dr-legacy-move-program.md#migration-expectations).
 
 Data moves are a back-end service operation with minimal impact to end-users. We adhere to the [Microsoft Online Services Service Level Agreement (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897) for availability so there's nothing that customers need to prepare for or to monitor during the move. Notification of any service maintenance is done if needed.
 
@@ -110,7 +110,7 @@ Data moves are a back-end operation with minimal if any impact to end users. No 
 > [!NOTE]
 > Moves occur at different times for each service. As a result, you'll see the described below on reduced functionality for each service happen at different times.
 
-Watch the Microsoft 365 Message Center for confirmation when moves for each workload service is complete.
+Watch the Microsoft 365 Message Center for confirmation when moves for each workload service are complete.
 
 ### Impact on End Users and Workloads
 
