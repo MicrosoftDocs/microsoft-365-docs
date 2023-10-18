@@ -53,6 +53,7 @@ Users with access to Security Copilot have access to this capability in advanced
     :::image type="content" source="../../media/advanced-hunting-security-copilot-query.png" alt-text="Prompt bar in the Security Copilot for advanced hunting" lightbox="../../media/advanced-hunting-security-copilot-query.png":::
        
 1. Security Copilot generates a KQL query from your text instruction or question. While Security Copilot is generating, you can cancel the query generation by selecting **Cancel**.
+
     :::image type="content" source="../../media/advanced-hunting-security-copilot-generate.png" alt-text="Security Copilot in advanced hunting generating a response" lightbox="../../media/advanced-hunting-security-copilot-generate.png":::    
 
  
