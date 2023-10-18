@@ -93,7 +93,16 @@ Open any remediation item to view details about it, including its remediation na
     - Hard-deleted folder
     - On-premises/external
     - Failed/dropped
-
+    - Unknown
+   
+**Types of Move and Delete action supported** 
+ There are 5 different types of move and delete action availbe.  
+- Move to junk folder- Moves the messages to Junk folder.
+- Move to inbox- Moves the messages to inbox folder.
+- Move to deleted items-  Moves emails to user’s deleted folder in outlook. The end user when deleted messages, it lands in the same deleted items folder.
+- Soft delete- Moves messages to a deleted folder in the cloud.
+- Hard delete - Delete mesasges permanently. 
+ 
   Suspicious messages are categorized as either remediable or nonremediable. In most cases, remediable and nonremediable messages combine equals total messages submitted. But in rare cases this may not be true. This can happen because of system delays, timeouts, or expired messages. Messages expire based on the Explorer retention period for your organization.
 
   Unless you're remediating old messages after your organization's Explorer retention period, it's advisable to retry remediating items if you see number inconsistencies. For system delays, remediation updates are typically refreshed within a few hours.
