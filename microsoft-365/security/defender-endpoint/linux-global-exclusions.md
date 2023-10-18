@@ -114,7 +114,7 @@ For more information, see [Exclusion Settings under set preferences for Defender
 
 ### From the command line
 
-Similar to how AV exclusions ( scope = *'epp'* ) are configured in [How to configure list of exclusions from the command line](linux-exclusions.md#From-the-command-line).
+Similar to how AV exclusions ( scope = *'epp'* ) are configured in [How to configure list of exclusions from the command line](linux-exclusions.md#from-the-command-line).
 
 Run the following command to see the available switches for managing exclusions:
 
@@ -199,6 +199,6 @@ Examples:
 
 ## Validate global exclusions
 
-Same as [Validate exclusions lists with the EICAR test file](linux-exclusions.md#Validate-exclusions-lists-with-the-EICAR-test-file).
+Same as [Validate exclusions lists with the EICAR test file](linux-exclusions.md#validate-exclusions-lists-with-the-eicar-test-file).
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
