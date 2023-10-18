@@ -17,51 +17,76 @@ metadata:
 
 
 # additionalContent section (Optional; Remove if not applicable.)
-# Card with summary style
+# Card with links style
 additionalContent:
   # Supports up to 4 subsections
   sections:
-    - title: Get started with Microsoft 365 Copilot # < 60 chars (Optional; Remove if not applicable.)
-      items:
+    - items:
         # Card
-        - title: Microsoft 365 Copilot overview
-          summary: Learn how Microsoft 365 Copilot works. 
-          url: microsoft-365-copilot-overview.md
+        - title: Get ready for Microsoft 365 Copilot
+          links:
+            - text: Microsoft 365 Copilot overview
+              url: microsoft-365-copilot-overview.md
+            - text: Sensitivity labels
+              url: /microsoft-365/compliance/sensitivity-labels
+            - text: Review current access, Entra ID
+              url: /azure/active-directory/governance/review-your-access
+            - text: Data loss prevention
+              url: /microsoft-365/compliance/dlp-learn-about-dlp
+            - text: Microsoft 365 Copilot Service Description
+              url: /office365/servicedescriptions/office-365-platform-service-description/microsoft-365-copilot/
         # Card
-        - title: Copilot requirements
-          summary: Learn about Microsoft 365 Apps, network, and license requirements for Microsoft 365 Copilot. 
-          url: microsoft-365-copilot-requirements.md
+        - title: Get started with Microsoft 365 Copilot
+          links:
+            - text: Copilot requirements
+              url: microsoft-365-copilot-requirements.md
+            - text: Setup
+              url: microsoft-365-copilot-setup.md
+            - text: Overview of update channels
+              url: /deployoffice/updates/overview-update-channels
+            - text: Enable users
+              url: microsoft-365-copilot-enable-users.md
+            - text: Drive adoption
+              url: https://adoption.microsoft.com/Copilot/
         # Card
-        - title: Setup
-          summary: Get started with Microsoft 365 Copilot in the Microsoft 365 Admin Center.
-          url: microsoft-365-copilot-setup.md
+        - title: Manage and extend Copilot
+          links:
+            - text: Related admin controls
+              url: /microsoft-365/solutions/tenant-management-overview
+            - text: Extend Microsoft 365 Copilot
+              url: /microsoftteams/platform/copilot/how-to-extend-copilot#how-to-make-your-graph-connector-work-better-with-copilot
+            - text: Manage extensions
+              url: 
         # Card
-        - title: Enable users
-          summary: Learn about the steps to deploy Microsoft 365 Copilot. 
-          url: microsoft-365-copilot-enable-users.md
+        - title: Security, privacy, and compliance
+          links:
+            - text: Data, Privacy, and Security for Microsoft 365 Copilot
+              url: microsoft-365-copilot-privacy.md
+            - text: Zero trust guidance
+              url: 
+            - text: Protect and manage Copilot interactions with Microsoft Purview
+              url: 
         # Card
-        - title: Data, Privacy, and Security for Microsoft 365 Copilot
-          summary: Learn how Microsoft 365 Copilot uses data and how it stores and protects that data. 
-          url: microsoft-365-copilot-privacy.md
+        - title: End user content
+          links:
+            - text: Copilot capabilities
+              url: https://support.microsoft.com/copilot
+            - text: Copilot lab
+              url: https://copilot.cloud.microsoft
         # Card
-        - title: End user help and learning for Microsoft 365 Copilot
-          summary: End users can explore how Copilot with the apps in Microsoft 365 can help boost their productivity.
-          url: https://support.microsoft.com/copilot
-    - title: Learn about Microsoft 365 Copilot # < 60 chars (Optional; Remove if not applicable.)
-      items:
+        - title: Learning and skilling
+          links:
+            - text: Getting ready for Microsoft 365 Copilot learning path
+              url: /training/paths/prepare-your-organization-microsoft-365-copilot/
+            - text: Virtual training days
+              url: 
+            - text: 30-day challenge
+              url: 
         # Card
-        - title: Overview video
-          summary: Watch an overview of Microsoft 365 Copilot.
-          url: https://www.youtube.com/watch?v=E5g20qmeKpg
-        # Card
-        - title: FAQ
-          summary: Review the Copilot FAQ.
-          url: https://support.microsoft.com/topic/frequently-asked-questions-ai-microsoft-365-copilot-and-microsoft-designer-987b275d-f6f2-4d5d-94c5-e927cffae705
-        # Card
-        - title: Service description
-          summary: Read the service description for what's included in Microsoft 365 Copilot.
-          url: /office365/servicedescriptions/office-365-platform-service-description/microsoft-365-copilot/
-        # Card
-        - title: Microsoft AI help & learning
-          summary: Help and learning for you and your users.
-          url: https://support.microsoft.com/microsoft-ai
+        - title: Video library
+          links:
+            - text: Mechanics Copilot playlist
+              url: https://www.youtube.com/playlist?list=PLXtHYVsvn_b-NeN9BbLb5sLpIGfdP8j78
+            - text: Microsoft 365 Copilot - Security & Privacy
+              url: 
+
