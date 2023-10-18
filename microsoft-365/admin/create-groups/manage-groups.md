@@ -18,7 +18,7 @@ ms.collection:
 - Adm_TOC
 ms.custom:
   - admindeeplinkMAC
-  - has-azure-ad-ps-ref
+  - has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 search.appverid:
 - BCS160
 - MET150
@@ -89,7 +89,7 @@ This option is great if you want to have a company email address such as info@co
 Sometimes you may want to permanently purge a group without waiting for the 30 day soft-deletion period to expire. To do that, start PowerShell and run this command to get the object ID of the group:
  
  ```powershell
-Get-AzureADMSDeletedGroup
+Get-MgDirectoryDeletedItem
 ```
 
 Take note of the object ID of the group, or groups, that you want to permanently delete.
@@ -100,10 +100,10 @@ Take note of the object ID of the group, or groups, that you want to permanently
 To purge the group run this command in PowerShell:
 
 ```powershell
-Remove-AzureADMSDeletedDirectoryObject -Id <objectId>
+Remove-MgDirectoryObject -Id <objectId>
 ```
 
-To confirm that the group has been successfully purged, run the  *Get-AzureADMSDeletedGroup*  cmdlet again to confirm that the group no longer appears on the list of soft-deleted groups. In some cases it may take as long as 24 hours for the group and all of its data to be permanently deleted. 
+To confirm that the group has been successfully purged, run the  *Get-MgDirectoryDeletedItem*  cmdlet again to confirm that the group no longer appears on the list of soft-deleted groups. In some cases it may take as long as 24 hours for the group and all of its data to be permanently deleted. 
   
 ## Related articles
 
