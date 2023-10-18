@@ -20,7 +20,7 @@ ms.custom:
 description: Admins can learn about the anti-spam settings and filters that help prevent spam in Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 9/26/2023
+ms.date: 10/18/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
@@ -97,20 +97,7 @@ You can only use a condition or exception once, but the condition or exception c
 
 EOP assigns a bulk complaint level (BCL) value to inbound messages from bulk senders. Messages from bulk senders are also known as _bulk mail_ or _gray mail_.
 
-Bulk senders vary in their sending patterns, content creation, and recipient acquisition practices. Good bulk senders send desired messages with relevant content to their subscribers. These messages generate few complaints from recipients. Other bulk senders send unsolicited messages that closely resemble spam and generate many complaints from recipients. Microsoft uses both internal and third party sources to identify bulk mail senders and determine the appropriate BCL value for those senders.
-
-The BCL value is added to the message in an X-header and is similar to the [spam confidence level (SCL)](anti-spam-spam-confidence-level-scl-about.md) that's used to identify messages as spam. A higher BCL value indicates a bulk message is more likely to exhibit undesirable spam-like behavior. For more information, see [What's the difference between junk email and bulk email?](anti-spam-spam-vs-bulk-about.md)
-
-The BCL thresholds are described in the following table:
-
-|BCL|Description|
-|:---:|---|
-|0|The message isn't from a bulk sender.|
-|1, 2, 3|The message is from a bulk sender that generates few complaints.|
-|4, 5, 6, 7|The message is from a bulk sender that generates a mixed number of complaints.|
-|8, 9|The message is from a bulk sender that generates a high number of complaints.|
-
-For the default BCL thresholds that are used in the default anti-spam policy and in the Standard and Strict preset security policies, see the **Bulk email threshold** entry in [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
+For more information about BCL, see [Bulk complaint level (BCL) in EOP](anti-spam-bulk-complaint-level-bcl-about.md).
 
 > [!TIP]
 > By default, the PowerShell only setting _MarkAsSpamBulkMail_ is `On` in anti-spam policies in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). This setting dramatically affects the results of a **Bulk compliant level (BCL) met or exceeded** filtering verdict:

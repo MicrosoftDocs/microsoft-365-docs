@@ -154,6 +154,8 @@
              href: anti-spam-spam-vs-bulk-about.md
            - name: Spam confidence level (SCL)
              href: anti-spam-spam-confidence-level-scl-about.md
+           - name: Bulk complaint level (BCL)
+             href: anti-spam-bulk-complaint-level-bcl-about.md
            - name: Backscatter in EOP
              href: anti-spam-backscatter-about.md
            - name: Configure junk email settings on Exchange Online mailboxes
