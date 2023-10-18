@@ -10,8 +10,7 @@ ms.topic: conceptual
 ms.collection: 
 - m365-security
 - tier1
-ms.service: microsoft-365-security
-ms.subservice: m365bp
+ms.service: microsoft-365-business
 ms.date: 07/19/2023
 ms.reviewer: nehabha
 ms.localizationpriority: medium
@@ -100,5 +99,5 @@ Microsoft 365 Business Premium includes Defender for Business, a new security so
 
 ## See also
 
-- [Microsoft 365 Business Premium - cybersecurity for small business](index.md)
+- [Microsoft 365 Business Premium - cybersecurity for small business](m365bp-overview.md)
 - [What is Microsoft Defender for Business?](../security/defender-business/mdb-overview.md)

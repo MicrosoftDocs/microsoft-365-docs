@@ -30,6 +30,8 @@
           href: microsoft-365-security-mda-redirection.md
       - name: Microsoft 365 Defender integration with Microsoft Sentinel
         href: microsoft-365-defender-integration-with-azure-sentinel.md
+      - name: Microsoft Security Copilot in Microsoft 365 Defender
+        href: security-copilot-in-microsoft-365-defender.md        
       - name: Microsoft 365 Defender for US Government customers
         href: usgov.md
       - name: Industry tests
@@ -150,6 +152,18 @@
       items: 
        - name: Overview
          href: incident-response-overview.md
+       - name: Investigate and respond with Security Copilot
+         items:
+              - name: Summarize incidents
+                href: security-copilot-m365d-incident-summary.md
+              - name: Analyze scripts and codes
+                href: security-copilot-m365d-script-analysis.md
+              - name: Use guided responses
+                href: security-copilot-m365d-guided-response.md
+              - name: Generate KQL queries
+                href: advanced-hunting-security-copilot.md   
+              - name: Create incident reports
+                href: security-copilot-m365d-create-incident-report.md                                                                   
        - name: Respond to incidents
          items: 
               - name: Overview
@@ -235,7 +249,9 @@
              - name: Overview
                href: advanced-hunting-overview.md
              - name: Guided and advanced modes
-               href: advanced-hunting-modes.md               
+               href: advanced-hunting-modes.md
+             - name: Generate KQL queries
+               href: advanced-hunting-security-copilot.md                                         
              - name: Build queries using guided mode 
                items: 
                  - name: Get started with query builder
@@ -494,9 +510,15 @@
               href: device-profile.md
             - name: Troubleshoot Microsoft 365 Defender service issues
               href: troubleshoot.md
+            - name: Get notified about new and updated incidents
+              href: m365d-notifications-incidents.md
+            - name: Set up email notifications for response actions
+              href: m365d-response-actions-notifications.md
+            - name: Set up email notifications for Threat analytics reports
+              href: m365d-threat-analytics-notifications.md              
             - name: Configure alert notifications
               href: configure-email-notifications.md
-            - name: Asset Rule Management
+            - name: Asset rule management
               href: configure-asset-rules.md
             - name: Provide feedback
               href: feedback.md
