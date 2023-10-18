@@ -3,7 +3,7 @@ title: "Advanced data residency in Microsoft 365"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.reviewer: dmwmsft
+ms.reviewer: deanw
 ms.date: 07/22/2022
 audience: ITPro
 ms.topic: article

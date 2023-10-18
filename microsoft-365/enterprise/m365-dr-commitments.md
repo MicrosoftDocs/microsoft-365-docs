@@ -9,7 +9,7 @@ ms.topic: article
 f1.keywords:
 - NOCSH
 ms.date: 10/27/2022
-ms.reviewer: dmwmsft
+ms.reviewer: deanw
 ms.custom:
 - it-pro
 ms.localizationpriority: medium
