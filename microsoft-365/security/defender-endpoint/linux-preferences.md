@@ -126,7 +126,7 @@ Specifies the degree of parallelism for on-demand scans. This corresponds to the
 
 #### Exclusion merge policy
 
-Specifies the merge policy for exclusions. It can be a combination of administrator-defined and user-defined exclusions (`merge`) or only administrator-defined exclusions (`admin_only`). This setting can be used to restrict local users from defining their own exclusions.
+Specifies the merge policy for Antivirus Exclusions. It can be a combination of administrator-defined and user-defined exclusions (`merge`) or only administrator-defined exclusions (`admin_only`). This setting can be used to restrict local users from defining their own exclusions.
 
 |Description|Value|
 |---|---|
@@ -137,7 +137,7 @@ Specifies the merge policy for exclusions. It can be a combination of administra
 
 #### Scan exclusions
 
-Entities that have been excluded from the scan. Exclusions can be specified by full paths, extensions, or file names.
+Entities that have been excluded from the scan. Antivirus Exclusions can be specified by full paths, extensions, or file names.
 (Exclusions are specified as an array of items, administrator can specify as many elements as necessary, in any order.)
 
 |Description|Value|
@@ -448,6 +448,120 @@ Determines whether security intelligence updates are installed automatically:
 |**Data type**|Boolean|
 |**Possible values**|true (default) <p> false|
 
+
+### Exclusion Setting preferences [**PREVIEW**]
+
+The *exclusionSettings* section of the configuration profile is used to manage the preferences and list the exclusions of the product.
+
+|Description|Value|
+|---|---|
+|**Key**|exclusionSettings|
+|**Data type**|Dictionary (nested preference)|
+|**Comments**|See the following sections for a description of the dictionary contents.|
+
+#### Merge policy
+
+Specifies the merge policy for exclusions. It can be a combination of administrator-defined and user-defined exclusions (`merge`) or only administrator-defined exclusions (`admin_only`). This setting can be used to restrict local users from defining their own exclusions. It is applicable for exclusions of all [scopes](linux-preferences.md#scopes-of-exclusion-optional).
+
+|Description|Value|
+|---|---|
+|**Key**|mergePolicy|
+|**Data type**|String|
+|**Possible values**|merge (default) <p> admin_only|
+|**Comments**|Available in Defender for Endpoint version Sept 2023 or higher.|
+
+#### Exclusions
+
+Entities that have been excluded. Exclusions can be specified by full paths, extensions, or file names. Each exclusion has a [scope](linux-preferences.md#scopes-of-exclusion-optional). 
+(Exclusions are specified as an array of items, administrator can specify as many elements as necessary, in any order.)
+
+|Description|Value|
+|---|---|
+|**Key**|exclusions|
+|**Data type**|Dictionary (nested preference)|
+|**Comments**|See the following sections for a description of the dictionary contents.|
+
+##### Type of exclusion
+
+Specifies the type of content excluded from the scan.
+
+|Description|Value|
+|---|---|
+|**Key**|$type|
+|**Data type**|String|
+|**Possible values**|excludedPath <p> excludedFileExtension <p> excludedFileName|
+
+##### Scopes of exclusion (optional)
+
+Specifies the set of scopes of content excluded. Scopes supported are `epp` and `global`.
+
+`epp` is for excluding from antivirus (AV) scan. 
+
+To know about Antivirus Exclusions, see [Configure and validate exclusions for Microsoft Defender for Endpoint on Linux](linux-exclusions.md)
+
+`global` is for excluding at sensor level. 
+
+To know about Global Exclusions see [Global Exclusions for Microsoft Defender for Endpoint on Linux](linux-global-exclusions.md).
+
+If nothing is specified `global` is considered as scope. More scopes will be introduced in future. 
+
+>[!NOTE]
+>Global exclusions will not work with mdatp custom scan.
+
+|Description|Value|
+|---|---|
+|**Key**|scopes|
+|**Data type**|Set of strings|
+|**Possible values**|epp <p> global|
+
+>[!NOTE]
+>Previously applied exclusions using (`mdatp_managed.json`) or by CLI will remain unaffected. The scope for those exclusions will be (`epp`) since they were added under (`antivirusEngine`).
+
+##### Path to excluded content
+
+Used to exclude content from the scan by full file path.
+
+|Description|Value|
+|---|---|
+|**Key**|path|
+|**Data type**|String|
+|**Possible values**|valid paths|
+|**Comments**|Applicable only if *$type* is *excludedPath*. Wildcard not supported if exclusion has *global* as a scope.|
+
+##### Path type (file / directory)
+
+Indicates if the *path* property refers to a file or directory.
+
+|Description|Value|
+|---|---|
+|**Key**|isDirectory|
+|**Data type**|Boolean|
+|**Possible values**|false (default) <p> true|
+|**Comments**|Applicable only if *$type* is *excludedPath* Wildcard not supported if exclusion has *global* as a scope.|
+
+##### File extension excluded from the scan
+
+Used to exclude content from the scan by file extension.
+
+|Description|Value|
+|---|---|
+|**Key**|extension|
+|**Data type**|String|
+|**Possible values**|valid file extensions|
+|**Comments**|Applicable only if *$type* is *excludedFileExtension*. Not supported if exclusion has *global* as a scope.|
+
+##### Process excluded from the scan*
+
+Specifies a process for which all file activity is excluded from scanning. The process can be specified either by its name (for example, `cat`) or full path (for example, `/bin/cat`).
+
+|Description|Value|
+|---|---|
+|**Key**|name|
+|**Data type**|String|
+|**Possible values**|any string|
+|**Comments**|Applicable only if *$type* is *excludedFileName*. Wildcard/name not supported if exclusion has *global* as a scope, need to provide full path.|
+
+For sample profile, see [Configure Global Exclusions from manged configuration](linux-global-exclusions.md#sample-profile)
 
 ### Advanced optional features
 
