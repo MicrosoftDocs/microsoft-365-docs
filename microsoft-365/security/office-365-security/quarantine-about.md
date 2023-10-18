@@ -34,6 +34,9 @@ appliesto:
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, quarantine is available to hold potentially dangerous or unwanted messages.
 
+> [!NOTE]
+> In Microsoft 365 operated by 21Vianet, quarantine isn't currently available in the Microsoft 365 Defender portal. Quarantine is available only in the classic Exchange admin center (classic EAC).
+
 Whether a detected message is quarantined by default depends on the following factors:
 
 - The protection feature that detected the message. For example, the following detections are always quarantined:
