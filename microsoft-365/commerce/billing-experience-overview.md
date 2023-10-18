@@ -68,4 +68,4 @@ The following list describes other changes we’ve made to the billing experienc
 [Understand your Microsoft business billing account](manage-billing-accounts.md) (article)\
 [Understand your Microsoft business billing profile](billing-and-payments/manage-billing-profiles.md) (article)\
 [Understand your bill or invoice](billing-and-payments/understand-your-invoice.md) (article)\
-[How to pay for your Microsoft business subscription with a billing profile](billing-and-payments/pay-for-subscription-billing-profile.md) (article)
+[Payment options for Microsoft business subscriptions](billing-and-payments/pay-for-your-subscription.md) (article)
