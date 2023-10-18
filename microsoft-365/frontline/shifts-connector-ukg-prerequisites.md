@@ -66,7 +66,7 @@ Make sure you gather the following information and complete the following config
     - Application key
     - Client ID
     - Client secret
-    - Single Sign On (SSO) URL
+    - [Single Sign On (SSO) URL](#enable-sso-by-setting-up-integration-between-azure-ad-and-ukg-pro-workforce-management)
 
     If you don't have all this information, contact UKG Pro WFM support.
 
@@ -78,11 +78,15 @@ For a step-by-step tutorial, see [Tutorial: Azure AD SSO integration with Kronos
 
 Follow these steps to configure federated SSO authentication in your UKG Pro WFM environment.
 
+> [!IMPORTANT]
+> Make sure that the username and email in Azure ID match what's in each user's profile in UKG Pro WFM.
+
 #### Step 1: Change user accounts to federated accounts
 
 Each Shifts user who you want to connect to UKG Pro WFM needs a federated account in UKG Pro WFM.
 
-1. On the left menu in UKG Pro WFM, go to **Maintenance** > **People information**.
+1. Sign in to UKG Pro WFM by using an admin or super user account that has access to Application Setup.
+1. On the left menu, go to **Maintenance** > **People information**.
 1. Open the user's profile.
 1. Under the **Employee** section, expand **Information**.
 1. Change the **Authentication Type** to **Federated**.
@@ -92,12 +96,12 @@ Each Shifts user who you want to connect to UKG Pro WFM needs a federated accoun
 
 Configure the connector's redirection URL. This allows UKG Pro WFM to redirect the user to the Shifts app in Teams as part of the SSO flow.
 
-1. Sign in to UKG Pro WFM by using an account that has access to Application Setup.
+1. Sign in to UKG Pro WFM by using an admin or super user account that has access to Application Setup.
 1. On the left menu, go to **Administration** > **Application Setup**.
 1. Then, go to **System Configuration** and choose **System Settings**.
 1. Select **Global Values**.
 1. In the **global.oAuth.authCode.redirection.uris** field, enter the value, "https://aka.ms/shifts/connector/ukgdimensions/auth".
-1. In the `global.oAuthToken.redirection.domain.whiteList` field, enter the value, "aka.ms".
+1. In the **global.oAuthToken.redirection.domain.whiteList** field, enter the value, "aka.ms".
 1. Select **Save**.
 
 ### Create at least one team in Teams
@@ -150,13 +154,10 @@ To learn more, see [Remove-CsTeamsShiftsScheduleRecord](/powershell/module/teams
 
 As mentioned earlier, Shifts supports grouping users by location in UKG Pro WFM. In UKG Pro WFM, the nodes in each location represent the hierarchy in your organizational chart. A location path reaches its endpoint when a job type is configured.
 
-<!--Users in UKG Pro WFM are assigned and grouped by primary jobs that exist within a location. This means that from a Teams and Shifts standpoint, employees who have the same location path up to the node before the job type are part of the same team. The job type in a location path is represented as a scheduling group in Shifts.-->
-
-Users in UKG Pro WFM are assigned and grouped by jobs that exist within a location. This means that from a Teams and Shifts standpoint, employees who have the same location path up to the node before the job type are considered as part of the same team. The job types in the location path are synced and represented as [groups](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821) in Shifts.
+Users in UKG Pro WFM are assigned and grouped by jobs that exist within a location. This means that from a Teams and Shifts standpoint, employees who have the same location path up to the node before the job type are considered as part of the same team. The job types in the location path are synced and represented as [schedule groups](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821) in Shifts.
 
 ## Example
 
-<!--Here's an example to help you understand how your UKG Pro WFM structure influences the way you set up your teams and how schedule information syncs to Shifts.-->
 Here's an example to help you understand how your UKG Pro WFM structure influences the way you set your teams, mapping considerations, and how information syncs to Shifts.  
 
 ### Scenario
@@ -169,7 +170,7 @@ Assumptions:
 - Some frontline workers are allowed to take shifts from other stores within the Central London Area. In other words, in UKG Pro WFM, these frontline workers are part of a job transfer set.
 
 > [!NOTE]
-> Shifts doesn't yet support workers' request across different teams. This means that workers can't offer or swap shifts with workers who are in different locations (that is, on different teams in Teams). Workers can only perform these actions within their own team.
+> Shifts doesn't yet support workers' requests across different teams. This means that workers can't offer or swap shifts with workers who are in different locations (that is, on different teams in Teams). Workers can only perform these actions within their own team.
 
 ### UKG Pro Workforce Management location structure
 
@@ -204,7 +205,7 @@ Here's how frontline managers (FLM) and frontline workers (FLW) are set up in th
 &sup1;FLW1 can also work as a beauty advisor in Central London/Chelsea.<br>
 &sup2;FLW5 can also work as a sales associate in Central London/Covent Garden and Central London/Chelsea.
 
-#### What does mean when I set up teams in Teams?
+#### What does it mean when I set up teams in Teams?
 
 In this scenario, the IT admin organizes teams in Teams as follows.
 
@@ -238,11 +239,11 @@ When the IT admin sets up a connection instance in the [wizard](shifts-connector
 
 #### What does this look like in Shifts?
 
-In Shifts, the scheduling groups of each team represent the jobs defined for the store location.
+In Shifts, the schedule groups of each team represent the jobs defined for the store location.
 
 Within each store, in Shifts:
 
-- Frontline managers see employees within their respective scheduling groups (that is, job types).
+- Frontline managers see employees within their respective schedule groups (that is, job types).
 - Frontline workers see their own schedule and their team's schedule.
 - Frontline workers can communicate with coworkers in their own store through chat.
 - Frontline workers and managers can request time off, swap shifts, offer shifts and open shifts if the requests are configured in UKG Pro WFM and set to be synced in the connection instance settings that you configure in the [wizard](shifts-connector-wizard-ukg.md).
