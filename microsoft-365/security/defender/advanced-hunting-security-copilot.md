@@ -84,13 +84,13 @@ You can start your first session anytime by asking a question in the Security Co
 
 Select the trash icon (**Clear session**) to discard the current session. 
 
-:::image type="content" source="../../media/advanced-hunting-security-copilot-clear-session.png" alt-text="Security Copilot in advanced hunting showing the Add to editor option" lightbox="../../media/advanced-hunting-security-copilot-clear-session.png"::: 
+:::image type="content" source="../../media/advanced-hunting-security-copilot-clear-session.png" alt-text="Security Copilot in advanced hunting showing the clear session trash icon" lightbox="../../media/advanced-hunting-security-copilot-clear-session.png"::: 
 
 ## Modify settings
 
 Select the gear icon in the Security Copilot side pane to choose whether or not to automatically add and run the generated query in advanced hunting. 
 
-:::image type="content" source="../../media/advanced-hunting-security-copilot-settings.png" alt-text="Security Copilot in advanced hunting showing the Add to editor option" lightbox="../../media/advanced-hunting-security-copilot-settings.png"::: 
+:::image type="content" source="../../media/advanced-hunting-security-copilot-settings.png" alt-text="Security Copilot in advanced hunting showing the settings gear icon" lightbox="../../media/advanced-hunting-security-copilot-settings.png"::: 
 
 Deselecting the **Run generated query automatically** setting gives you the option of running the generated query automatically (**Add and run**) or adding the generated query to the query editor for further modification (**Add to editor**). 
 
