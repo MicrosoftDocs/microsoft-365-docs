@@ -46,27 +46,27 @@ Users with access to Security Copilot have access to this capability in advanced
 ## Try your first request
 1. Open the **advanced hunting** page from the navigation bar in Microsoft 365 Defender. The Security Copilot side pane for advanced hunting appears at the right hand side.
 
-    :::image type="content" source="../../media/advanced-hunting-security-copilot-pane.png" alt-text="Security Copilot pane in advanced hunting" lightbox="../../media/advanced-hunting-security-copilot-pane.png":::
+    :::image type="content" source="../../media/advanced-hunting-security-copilot-pane.png" alt-text="Screenshot of Security Copilot pane in advanced hunting." lightbox="../../media/advanced-hunting-security-copilot-pane.png":::
     
     You can also reopen Security Copilot by selecting ![Security Copilot button](../../media/security-copilot-ah-button.png) at the top of the query editor.
 1. In the Security Copilot prompt bar, ask any threat hunting query that you want to run and press ![Send icon](../../media/Send.png) or **Enter** .
 
-    :::image type="content" source="../../media/advanced-hunting-security-copilot-query.png" alt-text="Prompt bar in the Security Copilot for advanced hunting" lightbox="../../media/advanced-hunting-security-copilot-query.png":::
+    :::image type="content" source="../../media/advanced-hunting-security-copilot-query.png" alt-text="Screenshot that shows Prompt bar in the Security Copilot for advanced hunting." lightbox="../../media/advanced-hunting-security-copilot-query.png":::
        
 1. Security Copilot generates a KQL query from your text instruction or question. While Security Copilot is generating, you can cancel the query generation by selecting **Cancel**.
 
-    :::image type="content" source="../../media/advanced-hunting-security-copilot-generate.png" alt-text="Security Copilot in advanced hunting generating a response" lightbox="../../media/advanced-hunting-security-copilot-generate.png":::    
+    :::image type="content" source="../../media/advanced-hunting-security-copilot-generate.png" alt-text="Screenshot of Security Copilot in advanced hunting generating a response." lightbox="../../media/advanced-hunting-security-copilot-generate.png":::    
 
  
 1. Review the generated query. You can then choose to run the query by selecting **Add and run**. 
 
-    :::image type="content" source="../../media/advanced-hunting-security-copilot-run-query.png" alt-text="Security Copilot button showing Add the query to query editor and run" lightbox="../../media/advanced-hunting-security-copilot-run-query.png":::      
+    :::image type="content" source="../../media/advanced-hunting-security-copilot-run-query.png" alt-text="Screenshot of Security Copilot button showing Add the query to query editor and run." lightbox="../../media/advanced-hunting-security-copilot-run-query.png":::      
 
     The generated query then appears as the last query in the query editor and runs automatically. 
 
     If you need to make further tweaks, select **Add to editor**. 
 
-    :::image type="content" source="../../media/advanced-hunting-security-copilot-add-editor.png" alt-text="Security Copilot in advanced hunting showing the Add to editor option" lightbox="../../media/advanced-hunting-security-copilot-add-editor.png"::: 
+    :::image type="content" source="../../media/advanced-hunting-security-copilot-add-editor.png" alt-text="Screenshot of Security Copilot in advanced hunting showing the Add to editor option." lightbox="../../media/advanced-hunting-security-copilot-add-editor.png"::: 
 
     The generated query appears in the query editor as the last query, where you can edit it before running using the regular **Run query** above the query editor.
 
@@ -84,13 +84,13 @@ You can start your first session anytime by asking a question in the Security Co
 
 Select the trash icon (**Clear session**) to discard the current session. 
 
-:::image type="content" source="../../media/advanced-hunting-security-copilot-clear-session.png" alt-text="Security Copilot in advanced hunting showing the clear session trash icon" lightbox="../../media/advanced-hunting-security-copilot-clear-session.png"::: 
+:::image type="content" source="../../media/advanced-hunting-security-copilot-clear-session.png" alt-text="Screenshot of Security Copilot in advanced hunting showing the clear session trash icon." lightbox="../../media/advanced-hunting-security-copilot-clear-session.png"::: 
 
 ## Modify settings
 
 Select the gear icon in the Security Copilot side pane to choose whether or not to automatically add and run the generated query in advanced hunting. 
 
-:::image type="content" source="../../media/advanced-hunting-security-copilot-settings.png" alt-text="Security Copilot in advanced hunting showing the settings gear icon" lightbox="../../media/advanced-hunting-security-copilot-settings.png"::: 
+:::image type="content" source="../../media/advanced-hunting-security-copilot-settings.png" alt-text="Screenshot of Security Copilot in advanced hunting showing the settings gear icon." lightbox="../../media/advanced-hunting-security-copilot-settings.png"::: 
 
 Deselecting the **Run generated query automatically** setting gives you the option of running the generated query automatically (**Add and run**) or adding the generated query to the query editor for further modification (**Add to editor**). 
 
