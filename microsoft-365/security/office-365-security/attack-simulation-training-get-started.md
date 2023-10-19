@@ -49,7 +49,7 @@ Watch this short video to learn more about Attack simulation training.
 - For more information about the availability of Attack simulation training across different Microsoft 365 subscriptions, see [Microsoft Defender for Office 365 service description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): You need membership in one of the following roles:
+  - [Microsoft Entra RBAC](../../admin/add-users/about-admin-roles.md): You need membership in one of the following roles:
     - **Global Administrator**
     - **Security Administrator**
     - **Attack Simulation Administrators**<sup>\*</sup>: Create and manage all aspects of attack simulation campaigns.

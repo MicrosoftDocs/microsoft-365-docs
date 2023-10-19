@@ -51,9 +51,9 @@ While these portals are not specifically for managing security, they support var
 
 | Portal name | Description | Link |
 |---|---|---|
-| Entra portal | Access and administer the [Microsoft Entra](/entra) family to protect your business with decentralized identity, identity protection, governance, and more, in a multi-cloud environment | [entra.microsoft.com](https://entra.microsoft.com/) |
+| Microsoft Entra admin center | Access and administer the [Microsoft Entra](/entra) family to protect your business with decentralized identity, identity protection, governance, and more, in a multi-cloud environment | [entra.microsoft.com](https://entra.microsoft.com/) |
 | Azure portal | View and manage all your [Azure resources](/azure/azure-resource-manager/management/overview)  | [portal.azure.com](https://portal.azure.com/) |
-| Azure Active Directory portal | View and manage [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) | [aad.portal.azure.com](https://aad.portal.azure.com/) |
+| Microsoft Entra admin center | View and manage [Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-whatis) | [aad.portal.azure.com](https://aad.portal.azure.com/) |
 | Microsoft Purview compliance portal | Manage data handling policies and ensure [compliance with regulations](/compliance/regulatory/offering-home) | [compliance.microsoft.com](https://compliance.microsoft.com/) |
 | Microsoft 365 admin center | Configure Microsoft 365 services; manage roles, licenses, and track updates to your Microsoft 365 services | [admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2166757) |
 | Microsoft Intune admin center | Use [Microsoft Intune](/mem/intune/fundamentals/what-is-intune) to manage and secure devices. Can also combine Intune and Configuration Manager capabilities. | [endpoint.microsoft.com](https://endpoint.microsoft.com/) |

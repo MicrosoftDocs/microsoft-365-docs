@@ -56,10 +56,10 @@ For more information, [view the Microsoft 365 Enterprise service plans](https://
 Go to Microsoft 365 admin center ([admin.microsoft.com](https://admin.microsoft.com/)) to view your existing licenses. In the admin center, go to **Billing** > **Licenses**.
 
 > [!NOTE]
-> You need to be assigned either the **Billing admin** or **Global reader** [role in Azure AD](/azure/active-directory/roles/permissions-reference) to be able to see license information. If you encounter access problems, contact a global admin.
+> You need to be assigned either the **Billing admin** or **Global reader** [role in Microsoft Entra ID](/azure/active-directory/roles/permissions-reference) to be able to see license information. If you encounter access problems, contact a global admin.
 
 ## Required permissions
-You must be a **global administrator** or a **security administrator** in Azure Active Directory to turn on Microsoft 365 Defender. For the list of roles required to use Microsoft 365 Defender and information on how access to data is regulated, read about [managing access to Microsoft 365 Defender](m365d-permissions.md).
+You must be a **global administrator** or a **security administrator** in Microsoft Entra ID to turn on Microsoft 365 Defender. For the list of roles required to use Microsoft 365 Defender and information on how access to data is regulated, read about [managing access to Microsoft 365 Defender](m365d-permissions.md).
 
 ## Browser requirements
 Access Microsoft 365 Defender in the Microsoft 365 Defender portal using Microsoft Edge, Internet Explorer 11, or any HTML 5 compliant web browser.
@@ -82,5 +82,3 @@ Currently, the Microsoft Defender for Office 365 integration into the unified Mi
 - [Turn on Microsoft 365 Defender](m365d-enable.md)
 - [Manage access and permissions](m365d-permissions.md)
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
-
-

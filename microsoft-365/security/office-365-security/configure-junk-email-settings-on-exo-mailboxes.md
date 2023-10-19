@@ -53,7 +53,7 @@ Admins can use Exchange Online PowerShell to configure entries in the safelist c
 
 - In hybrid environments where EOP protects on-premises Exchange mailboxes, you need to configure mail flow rules (also known as transport rules) in on-premises Exchange. These mail flow rules translate the EOP spam filtering verdict so the junk email rule in the mailbox can move the message to the Junk Email folder. For details, see [Configure EOP to deliver spam to the Junk Email folder in hybrid environments](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
 
-- Safe senders for shared mailboxes aren't synchronized to Azure AD and EOP by design.
+- Safe senders for shared mailboxes aren't synchronized to Microsoft Entra ID and EOP by design.
 
 ## Use Exchange Online PowerShell to configure the safelist collection on a mailbox
 
@@ -141,7 +141,7 @@ Outlook and Outlook on the web both support the safelist collection. The safelis
 
 ## Limits for junk email settings
 
-The safelist collection (the Safe Senders list, Safe Recipients list, and Blocked Senders list) that's stored in the user's mailbox is also synchronized to EOP. With directory synchronization, the safelist collection is synchronized to Azure AD.
+The safelist collection (the Safe Senders list, Safe Recipients list, and Blocked Senders list) that's stored in the user's mailbox is also synchronized to EOP. With directory synchronization, the safelist collection is synchronized to Microsoft Entra ID.
 
 - The safelist collection in the user's mailbox has a limit of 510 KB, which includes all lists, plus additional junk email filter settings. If a user exceeds this limit, they receive an Outlook error that looks like this:
 
@@ -159,13 +159,13 @@ The safelist collection (the Safe Senders list, Safe Recipients list, and Blocke
 
     Outlook users can continue to add more than 1024 entries until they reach the Outlook limit of 510 KB. Outlook can use these additional entries, as long as an EOP filter doesn't block the message before delivery to the mailbox (mail flow rules, anti-spoofing, etc.).
 
-- With directory synchronization, the entries are synchronized to Azure AD in the following order:
+- With directory synchronization, the entries are synchronized to Microsoft Entra ID in the following order:
   1. Mail contacts if **Trust email from my contacts** is enabled.
   2. The Safe Sender list and Safe Recipient list are combined, de-duplicated, and sorted alphabetically whenever a change is made for the first 1024 entries.
 
   The first 1024 entries are used, and relevant information is stamped in the message headers.
 
-  Entries over 1024 that weren't synchronized to Azure AD are processed by Outlook (not Outlook on the web), and no information is stamped in the message headers.
+  Entries over 1024 that weren't synchronized to Microsoft Entra ID are processed by Outlook (not Outlook on the web), and no information is stamped in the message headers.
 
 As you can see, enabling the **Trust email from my contacts** setting reduces the number of Safe Senders and Safe Recipients that can be synchronized. If this reduction is a concern, we recommend using Group Policy to turn off this feature:
 

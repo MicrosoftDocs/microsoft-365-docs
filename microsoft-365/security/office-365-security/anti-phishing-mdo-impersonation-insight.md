@@ -51,7 +51,7 @@ Admins can use the impersonation insight in the Microsoft 365 Defender portal to
     - **Security Administrator**
     - **Security Reader**
     - **Global Reader**
-  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator**, **Security Administrator**, **Security Reader**, or **Global Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
+  - [Microsoft Entra RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator**, **Security Administrator**, **Security Reader**, or **Global Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 - You enable and configure impersonation protection in anti-phishing policies in Microsoft Defender for Office 365. Impersonation protection isn't enabled by default. For more information, see [Configure anti-phishing policies in Microsoft Defender for Office 365](anti-phishing-policies-mdo-configure.md) and [Use the Microsoft 365 Defender portal to assign Standard and Strict preset security policies to users](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users).
 

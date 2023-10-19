@@ -36,7 +36,7 @@ This topic guides you to set up a dedicated lab environment. For information on 
 ## Create an Office 365 E5 trial tenant
 
 > [!NOTE]
-> If you already have an existing Office 365 or Azure Active Directory subscription, you can skip the Office 365 E5 trial tenant creation steps.
+> If you already have an existing Office 365 or Microsoft Entra subscription, you can skip the Office 365 E5 trial tenant creation steps.
 
 1. Go to the [Office 365 E5 product portal](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e5-business-software?activetab=pivot%3aoverviewtab) and select **Free trial**.
 

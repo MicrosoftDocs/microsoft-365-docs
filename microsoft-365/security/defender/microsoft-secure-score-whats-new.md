@@ -47,9 +47,9 @@ The following recommendations have been added as Microsoft Secure Score improvem
 - Ensure mailbox auditing for all users is enabled
 - Ensure additional storage providers are restricted in Outlook on the web
 
-**Azure Active Directory:**
+**Microsoft Entra ID:**
 
-To see the following new Azure Active Directory controls the Office 365 connector in Microsoft Defender for Cloud Apps must be turned on in the App connectors settings page.
+To see the following new Microsoft Entra controls the Office 365 connector in Microsoft Defender for Cloud Apps must be turned on in the App connectors settings page.
 
 - Ensure password protection is enabled for on-prem Active Directory
 - Ensure 'LinkedIn account connections' is disabled
@@ -76,7 +76,7 @@ We've now integrated Microsoft Secure Score into Microsoft 365 Lighthouse. This 
 
 ### Microsoft Secure Score permissions integration with Microsoft 365 Defender Unified role-based access control (RBAC) is now in Public Preview
 
-Previously, only Azure Active Directory global roles (such as Global Administrators) could access Microsoft Secure Score. Now, you'll be able to control access and grant granular permissions for the Microsoft Secure Score experience as part of the Microsoft 365 Defender Unified RBAC model.  
+Previously, only Microsoft Entra global roles (such as Global Administrators) could access Microsoft Secure Score. Now, you'll be able to control access and grant granular permissions for the Microsoft Secure Score experience as part of the Microsoft 365 Defender Unified RBAC model.  
 
 You can add the new permission and choose the data sources the user has access to by selecting the **Security posture** permissions group when creating the role. For more information, see [Create custom roles with Microsoft 365 Defender Unified RBAC](./create-custom-rbac-roles.md). Users will see Secure Score data for the data sources they have permissions to.
 
