@@ -49,7 +49,7 @@ If you are unable to sign in to the admin center, you can use the [service statu
 
 3. On the **Service health** page, the health state of each cloud service is shown in a table format.
 
-   ![View of current issues in service health.](../media/shd-landing-page.png)
+    :::image type="content" source="../media/sh-page-upper-section-customer-side-issue.png" alt-text="Screenshot: Page with view of current issues in service health":::
 
 The **Overview** tab (the default view) shows all services, their current health state, and any active incidents or advisories. An icon and status in the **Health** column indicate the state of each service.
 
@@ -83,7 +83,7 @@ You can also subscribe to email notifications for individual events instead of e
 
 In the **Active issues Microsoft is working on** section, select the issue title to see the issue detail page. This page shows more information about the issue, including a feed of all the messages posted while we work on a solution.
 
-[![Screenshot showing the service advisory.](../media/service-health-advisory.png)](../media/service-health-advisory.png#lightbox)
+:::image type="content" source="../media/sh-page-upper-section.png" alt-text="Screenshot: Page showing the service advisory":::
 
 The advisory or incident summary provides the following information:
 
@@ -98,7 +98,7 @@ The advisory or incident summary provides the following information:
 - **User Impact** - A brief description of the impact this issue has on the end user.
 - **All Updates** - We post frequent messages to let you know the progress that we're making in applying a solution.
 
-![A screenshot showing issue details.](../media/service-health-advisory-detail.png)
+:::image type="content" source="../media/sh-page-with-issue-details.png" alt-text="Screenshot: Page showing issue details":::
 
 ### Translate service health details
 
