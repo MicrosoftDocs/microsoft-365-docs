@@ -20,7 +20,7 @@ description: Learn how to set up Microsoft Whiteboard for your organization in t
 >[!NOTE]
 > This article applies to Enterprise or Education organizations who use Whiteboard. For US Government GCC High environments, see [Manage access to Microsoft Whiteboard for GCC High environments](manage-whiteboard-access-gcc-high.md).
 
-Microsoft Whiteboard is a visual collaboration canvas where people, content, and ideas come together. Microsoft Whiteboard on OneDrive for Business is enabled by default for applicable Microsoft 365 tenants. It can be enabled or disabled at a tenant-wide level. You should also ensure that **Microsoft Whiteboard Services** is enabled in the **Azure Active Directory admin center** > **Enterprise applications**.
+Microsoft Whiteboard is a visual collaboration canvas where people, content, and ideas come together. Microsoft Whiteboard on OneDrive for Business is enabled by default for applicable Microsoft 365 tenants. It can be enabled or disabled at a tenant-wide level. You should also ensure that **Microsoft Whiteboard Services** is enabled in the **Microsoft Entra admin center** > **Enterprise applications**.
 
 Whiteboard conforms to global standards including SOC 1, SOC 2, ISO 27001, HIPAA, and EU Model Clauses. 
 
@@ -36,7 +36,7 @@ You can control access to Whiteboard in the following ways:
 
 - Show or hide Whiteboard for specific users in meetings using a Teams meeting policy. It will still be visible via the web, native clients, and the Teams tab app.
 
-- Require conditional access policies for accessing Whiteboard using the Azure Active Directory admin center.
+- Require conditional access policies for accessing Whiteboard using the Microsoft Entra admin center.
 
 >[!NOTE]
 > Teams meeting policies only hide Whiteboard entry points; they don't prevent the users from using Whiteboard. Conditional access policies prevent any access to Whiteboard, but don't hide the entry points.
@@ -76,4 +76,3 @@ To prevent access to Whiteboard for specific users, see [Building a Conditional 
 [Manage sharing for Whiteboard](manage-sharing-organizations.md)
 
 [Deploy Whiteboard on Windows](deploy-on-windows-organizations.md)
-
