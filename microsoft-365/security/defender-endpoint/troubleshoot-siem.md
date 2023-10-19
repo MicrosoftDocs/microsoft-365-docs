@@ -48,7 +48,7 @@ If your client secret expires or if you've misplaced the copy provided when you 
 
 1. Log in to the [Azure management portal](https://portal.azure.com).
 
-2. Select **Azure Active Directory**.
+2. Select **Microsoft Entra ID**.
 
 3. Select your tenant.
 
@@ -62,11 +62,11 @@ If your client secret expires or if you've misplaced the copy provided when you 
 
 ## Error when getting a refresh access token
 
-If you encounter an error when trying to get a refresh token when using the threat intelligence API or SIEM tools, you'll need to add reply URL for relevant application in Azure Active Directory.
+If you encounter an error when trying to get a refresh token when using the threat intelligence API or SIEM tools, you'll need to add reply URL for relevant application in Microsoft Entra ID.
 
 1. Log in to the [Azure management portal](https://ms.portal.azure.com).
 
-2. Select **Azure Active Directory**.
+2. Select **Microsoft Entra ID**.
 
 3. Select your tenant.
 

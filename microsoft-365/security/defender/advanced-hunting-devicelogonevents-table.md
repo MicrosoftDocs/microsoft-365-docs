@@ -63,7 +63,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `InitiatingProcessAccountName` | `string` | User name of the account that ran the process responsible for the event |
 | `InitiatingProcessAccountSid` | `string` | Security Identifier (SID) of the account that ran the process responsible for the event |
 | `InitiatingProcessAccountUpn` | `string` | User principal name (UPN) of the account that ran the process responsible for the event |
-| ` InitiatingProcessAccountObjectId` | `string` | Azure AD object ID of the user account that ran the process responsible for the event |
+| ` InitiatingProcessAccountObjectId` | `string` | Microsoft Entra object ID of the user account that ran the process responsible for the event |
 | `InitiatingProcessIntegrityLevel` | `string` | Integrity level of the process that initiated the event. Windows assigns integrity levels to processes based on certain characteristics, such as if they were launched from an internet download. These integrity levels influence permissions to resources |
 | `InitiatingProcessTokenElevation` | `string` | Token type indicating the presence or absence of User Access Control (UAC) privilege elevation applied to the process that initiated the event |
 | `InitiatingProcessSHA1` | `string` | SHA-1 of the process (image file) that initiated the event |

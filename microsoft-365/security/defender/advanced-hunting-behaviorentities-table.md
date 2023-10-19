@@ -62,7 +62,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 |`AccountName`|`string` |User name of the account |
 |`AccountDomain`|`string` |Domain of the account |
 |`AccountSid`|`string` |Security Identifier (SID) of the account |
-| `AccountObjectId` | `string` | Unique identifier for the account in Azure AD |
+| `AccountObjectId` | `string` | Unique identifier for the account in Microsoft Entra ID |
 | `AccountUpn` | `string` | User principal name (UPN) of the account |
 | `DeviceId` | `string` | Unique identifier for the machine in the service |
 |`DeviceName`|`string` | Fully qualified domain name (FQDN) of the device |
