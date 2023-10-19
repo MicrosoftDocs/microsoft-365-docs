@@ -71,7 +71,7 @@ To connect to the PowerShell module with your credentials, run the following com
 Connect-MSCommerce
 ```
 
-This command connects the current PowerShell session to an Azure Active Directory tenant. The command prompts you for a username and password for the tenant you want to connect to. If multi-factor authentication is enabled for your credentials, you use the interactive option to sign in.
+This command connects the current PowerShell session to a Microsoft Entra tenant. The command prompts you for a username and password for the tenant you want to connect to. If multi-factor authentication is enabled for your credentials, you use the interactive option to sign in.
 
 ## View details for AllowSelfServicePurchase
 

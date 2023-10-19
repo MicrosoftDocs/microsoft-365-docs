@@ -54,4 +54,4 @@ When DAP is enabled, you have no control over the number of Global admins your p
 
 [Manage partner relationships](manage-partners.md) (article)\
 [About admin roles](../admin/add-users/about-admin-roles.md) (article)\
-[Delegated admin privileges in Azure AD](/partner-center/customers-revoke-admin-privileges#delegated-admin-privileges-in-azure-ad) (article)
+[Delegated admin privileges in Microsoft Entra ID](/partner-center/customers-revoke-admin-privileges#delegated-admin-privileges-in-azure-ad) (article)

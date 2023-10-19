@@ -33,7 +33,7 @@ description: "Describes how to create users and groups when your Microsoft 365 s
 
 *This article applies to both Microsoft 365 Enterprise and Office 365 Enterprise.*
 
-If you have chosen the cloud-only identity model, you already have an Azure Active Directory (Azure AD) tenant for your Microsoft 365 subscription to store all of your users, groups, and contacts. After setting up protection for administrator accounts in [Step 2](protect-your-global-administrator-accounts.md) and user accounts in [Step 3](microsoft-365-secure-sign-in.md) of this solution, you are now ready to begin creating the new accounts and groups that your organization needs.
+If you have chosen the cloud-only identity model, you already have a Microsoft Entra tenant for your Microsoft 365 subscription to store all of your users, groups, and contacts. After setting up protection for administrator accounts in [Step 2](protect-your-global-administrator-accounts.md) and user accounts in [Step 3](microsoft-365-secure-sign-in.md) of this solution, you are now ready to begin creating the new accounts and groups that your organization needs.
 
 Here are the basic components of cloud-only identity.
  
@@ -49,7 +49,7 @@ Take stock of the types of users in your organization. What are the groupings? F
 
 Additionally, some cloud services can be shared with users outside your organization without any user accounts. You'll need to identify these groups of users as well.
 
-You can use groups in Azure AD for several purposes that simplify management of your cloud environment. For example, with Azure AD groups, you can:
+You can use groups in Microsoft Entra ID for several purposes that simplify management of your cloud environment. For example, with Microsoft Entra groups, you can:
 
 - Use group-based licensing to assign licenses for Microsoft 365 to your user accounts automatically as soon as they are added as members.
 - Add user accounts to specific groups dynamically based on user account attributes, such as department name.

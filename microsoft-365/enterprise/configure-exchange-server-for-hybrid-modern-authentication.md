@@ -49,7 +49,7 @@ Turning on HMA means:
 1. Since many **prerequisites** are common for both Skype for Business and Exchange, [Hybrid Modern Authentication overview and prerequisites for using it with on-premises Skype for Business and Exchange servers](hybrid-modern-auth-overview.md). Do this before you begin any of the steps in this article.
 Requirements about linked mailboxes to be inserted.
 
-1. Adding on-premises web service URLs as **Service Principal Names (SPNs)** in Azure AD. In case EXCH is in hybrid with **multiple tenants**, these on-premises web service URLs must be added as SPNs in the Azure AD of all the tenants which are in hybrid with EXCH.
+1. Adding on-premises web service URLs as **Service Principal Names (SPNs)** in Microsoft Entra ID. In case EXCH is in hybrid with **multiple tenants**, these on-premises web service URLs must be added as SPNs in the Microsoft Entra ID of all the tenants which are in hybrid with EXCH.
 
 1. Ensuring all Virtual Directories are enabled for HMA
 
@@ -65,13 +65,15 @@ Requirements about linked mailboxes to be inserted.
 Since many prerequisites are common for both Skype for Business and Exchange, review [Hybrid Modern Authentication overview and prerequisites for using it with on-premises Skype for Business and Exchange servers](hybrid-modern-auth-overview.md). Do this  *before*  you begin any of the steps in this article.
 
 > [!NOTE]
-> Outlook Web App and Exchange Control Panel do not work with hybrid Modern Authentication.  In addition, publishing Outlook Web App and Exchange Control Panel through Azure AD Application Proxy is unsupported.
+> Outlook Web App and Exchange Control Panel do not work with hybrid Modern Authentication.  In addition, publishing Outlook Web App and Exchange Control Panel through Microsoft Entra application proxy is unsupported.
 
-## Add on-premises web service URLs as SPNs in Azure AD
+<a name='add-on-premises-web-service-urls-as-spns-in-azure-ad'></a>
 
-Run the commands that assign your on-premises web service URLs as Azure AD SPNs. SPNs are used by client machines and devices during authentication and authorization. All the URLs that might be used to connect from on-premises to Azure Active Directory (Azure AD) must be registered in Azure AD (this includes both internal and external namespaces).
+## Add on-premises web service URLs as SPNs in Microsoft Entra ID
 
-First, gather all the URLs that you need to add in AAD. Run these commands on-premises:
+Run the commands that assign your on-premises web service URLs as Microsoft Entra SPNs. SPNs are used by client machines and devices during authentication and authorization. All the URLs that might be used to connect from on-premises to Microsoft Entra ID must be registered in Microsoft Entra ID (this includes both internal and external namespaces).
+
+First, gather all the URLs that you need to add in Microsoft Entra ID. Run these commands on-premises:
 
 ```powershell
 Get-MapiVirtualDirectory | FL server,*url*
@@ -82,9 +84,9 @@ Get-AutodiscoverVirtualDirectory | FL server,*url*
 Get-OutlookAnywhere | FL server,*hostname*
 ```
 
-Ensure the URLs clients may connect to are listed as HTTPS service principal names in AAD. In case EXCH is in hybrid with **multiple tenants**, these HTTPS SPNs should be added in the AAD of all the tenants in hybrid with EXCH.
+Ensure the URLs clients may connect to are listed as HTTPS service principal names in Microsoft Entra ID. In case EXCH is in hybrid with **multiple tenants**, these HTTPS SPNs should be added in the Microsoft Entra ID of all the tenants in hybrid with EXCH.
 
-1. First, connect to AAD with [these instructions](connect-to-microsoft-365-powershell.md).
+1. First, connect to Microsoft Entra ID with [these instructions](connect-to-microsoft-365-powershell.md).
 
     > [!NOTE]
     > You need to use the _Connect-MsolService_ option from this page to be able to use the command below.

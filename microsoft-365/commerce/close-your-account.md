@@ -53,7 +53,7 @@ If users are synchronized from on-premises, first turn off sync, then delete the
 - To delete users, see [User management admin: Delete one or more users](../admin/add-users/delete-a-user.md#user-management-admin-delete-one-or-more-users-from-microsoft-365).
 - To delete users in bulk, use the [Remove-MgUser](/powershell/module/microsoft.graph.users/remove-mguser) Microsoft Graph PowerShell cmdlet.
 
-If your organization uses Active Directory that synchronizes with Microsoft Azure Active Directory (Azure AD), delete the user account from Active Directory, instead. For instructions, see [Bulk delete users in Azure Active Directory](/azure/active-directory/users-groups-roles/users-bulk-delete).
+If your organization uses Active Directory that synchronizes with Microsoft Entra ID, delete the user account from Active Directory, instead. For instructions, see [Bulk delete users in Microsoft Entra ID](/azure/active-directory/users-groups-roles/users-bulk-delete).
 
 ## Step 2: Cancel all active subscriptions
 
@@ -92,9 +92,11 @@ You must be a global admin to do the following steps. To verify what role you ha
 
 You can also [use PowerShell to disable multi-factor authentication for multiple users](/azure/active-directory/authentication/howto-mfa-userstates#change-state-using-powershell).
 
-## Step 5: Delete the tenant in Azure Active Directory
+<a name='step-5-delete-the-tenant-in-azure-active-directory'></a>
 
-To delete your tenant, follow the steps in [Delete an Azure Active Directory tenant - Microsoft Entra](/azure/active-directory/enterprise-users/directory-delete-howto#delete-the-organization).
+## Step 5: Delete the tenant in Microsoft Entra ID
+
+To delete your tenant, follow the steps in [Delete a Microsoft Entra tenant - Microsoft Entra](/azure/active-directory/enterprise-users/directory-delete-howto#delete-the-organization).
 
 After you complete this final step, your account with Microsoft is closed and deleted.
 
@@ -103,4 +105,3 @@ After you complete this final step, your account with Microsoft is closed and de
 [Understand your invoice for your Microsoft MCA billing account](billing-and-payments/understand-your-invoice.md) (article)\
 [Understand your invoice for your Microsoft MOSA billing account](billing-and-payments/understand-your-invoice2.md) (article)\
 [Cancel your Microsoft business subscription](subscriptions/cancel-your-subscription.md) (article)
-

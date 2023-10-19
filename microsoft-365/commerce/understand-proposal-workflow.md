@@ -77,7 +77,7 @@ If this is a new billing account, and no one has accepted an agreement, you auto
 
 - Are the person named in the proposal
   or
-- Are already an [Azure Active Directory global admin](/azure/active-directory/roles/permissions-reference#global-administrator) for your organization
+- Are already an [Microsoft Entra global admin](/azure/active-directory/roles/permissions-reference#global-administrator) for your organization
 
 ## What is the overall workflow?
 

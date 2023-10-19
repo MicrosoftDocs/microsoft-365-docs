@@ -123,9 +123,9 @@ sections:
         answer: |
           Yes, Microsoft 365 Business Premium subscribers are licensed to use full Intune capabilities for iOS, Android, Mac, and other cross-platform device management. Features not available in the simplified management console in Microsoft 365 Business Premium, like third-party app management, configuration of Wi-Fi profiles, and VPN certificates, can be managed in the full Intune console.
 
-      - question: Does Azure Active Directory (Azure AD) Premium P1 come with Microsoft 365 Business Premium?
+      - question: Does Microsoft Entra ID P1 come with Microsoft 365 Business Premium?
         answer: |
-          Yes, Azure AD Premium P1 is included with Microsoft Business Premium.
+          Yes, Microsoft Entra ID P1 is included with Microsoft Business Premium.
 
       - question: Does Microsoft 365 Business Premium allow customers to manage Mac?
         answer: |
