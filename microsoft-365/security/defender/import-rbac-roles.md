@@ -44,7 +44,7 @@ Importing roles will migrate and maintain the roles with full parity in relation
 The following steps guide you on how to import roles into Microsoft 365 Defender Unified RBAC:
 
 > [!IMPORTANT]
-> You must be a Global Administrator or Security Administrator in Azure Active Directory, or have all the **Authorization** permissions assigned in Microsoft 365 Defender Unified RBAC to perform this task. For more information on permissions, see [Permission pre-requisites](../defender/manage-rbac.md#permissions-pre-requisites).
+> You must be a Global Administrator or Security Administrator in Microsoft Entra ID, or have all the **Authorization** permissions assigned in Microsoft 365 Defender Unified RBAC to perform this task. For more information on permissions, see [Permission pre-requisites](../defender/manage-rbac.md#permissions-pre-requisites).
 
 1. Sign in to the [Microsoft 365 Defender portal](https://security.microsoft.com).
 2. In the navigation pane, select **Permissions**.

@@ -59,7 +59,7 @@ You must be one of the following roles to turn on Microsoft 365 Defender:
 - Application Administrator
 - Cloud Application Administrator
 
-[View your roles in Azure AD](/azure/active-directory/users-groups-roles/directory-manage-roles-portal)
+[View your roles in Microsoft Entra ID](/azure/active-directory/users-groups-roles/directory-manage-roles-portal)
 
 ## Supported services
 

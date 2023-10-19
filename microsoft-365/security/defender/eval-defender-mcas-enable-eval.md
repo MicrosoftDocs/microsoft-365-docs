@@ -54,7 +54,7 @@ Use the following steps to set up Microsoft Defender for Cloud Apps.
 
 <a name="step-1"></a>
 
-## Step 1. Connect to the Defender for Cloud Apps portal
+## Step 1: Connect to the Defender for Cloud Apps portal
 
 To verify licensing and to connect to the Defender for Cloud Apps portal, see [Quickstart: Get started with Microsoft Defender for Cloud Apps](/cloud-app-security/getting-started-with-cloud-app-security).
 
@@ -64,7 +64,7 @@ If you're still having trouble, review [Network requirements](/cloud-app-securit
 
 <a name="step-2"></a>
 
-## Step 2. Integrate with Microsoft Defender for Endpoint
+## Step 2: Integrate with Microsoft Defender for Endpoint
 
 Microsoft Defender for Cloud Apps integrates with Microsoft Defender for Endpoint natively. The integration simplifies roll out of Cloud Discovery, extends Cloud Discovery capabilities beyond your corporate network, and enables device-based investigation. This integration reveals cloud apps and services being accessed from IT-managed Windows 10 and Windows 11 devices.
 
@@ -74,7 +74,7 @@ To accomplish these tasks, see [Microsoft Defender for Endpoint integration with
 
 <a name="step-3"></a>
 
-## Step 3. Deploy the Defender for Cloud Apps log collector on your firewalls and other proxies
+## Step 3: Deploy the Defender for Cloud Apps log collector on your firewalls and other proxies
 
 For coverage on all devices connected to your network, deploy the Defender for Cloud Apps log collector on your firewalls and other proxies to collect data from your endpoints and send it to Defender for Cloud Apps for analysis.
 
@@ -89,7 +89,7 @@ For more information on integrating with these network devices, see [Set up Clou
 
 <a name="step-4"></a>
 
-## Step 4. View the Cloud Discovery dashboard to see what apps are being used in your organization
+## Step 4: View the Cloud Discovery dashboard to see what apps are being used in your organization
 
 The Cloud Discovery dashboard is designed to give you more insight into how cloud apps are being used in your organization. It provides an at-a-glance overview of what kinds of apps are being used, your open alerts, and the risk levels of apps in your organization.
 

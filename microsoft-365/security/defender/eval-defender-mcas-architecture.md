@@ -85,19 +85,21 @@ In this illustration:
 
 Session controls allow you to apply parameters to how cloud apps are used by your organization. For example, if your organization is using Salesforce, you can configure a session policy that allows only managed devices to access your organization's data at Salesforce. A simpler example could be configuring a policy to monitor traffic from unmanaged devices so you can analyze the risk of this traffic before applying stricter policies.
 
-### Integrating with Azure AD with Conditional Access App Control
+<a name='integrating-with-azure-ad-with-conditional-access-app-control'></a>
 
-You might already have SaaS apps added to your Azure AD tenant to enforce multi-factor authentication and other conditional access policies. Microsoft Defender for Cloud Apps natively integrates with Azure AD. All you have to do is configure a policy in Azure AD to use Conditional Access App Control in Defender for Cloud Apps. This routes network traffic for these managed SaaS apps through Defender for Cloud Apps as a proxy, which allows Defender for Cloud Apps to monitor this traffic and to apply session controls.
+### Integrating with Microsoft Entra ID with Conditional Access App Control
+
+You might already have SaaS apps added to your Microsoft Entra tenant to enforce multi-factor authentication and other conditional access policies. Microsoft Defender for Cloud Apps natively integrates with Microsoft Entra ID. All you have to do is configure a policy in Microsoft Entra ID to use Conditional Access App Control in Defender for Cloud Apps. This routes network traffic for these managed SaaS apps through Defender for Cloud Apps as a proxy, which allows Defender for Cloud Apps to monitor this traffic and to apply session controls.
 
 :::image type="content" source="../../media/defender/m365-defender-mcas-architecture-e.png" alt-text="The architecture for the Microsoft Defender for Cloud Apps - SaaS apps" lightbox="../../media/defender/m365-defender-mcas-architecture-e.png":::
 
 In this illustration:
 
-- SaaS apps are integrated with the Azure AD tenant. This integration allows Azure AD to enforce conditional access policies, including multi-factor authentication.
-- A policy is added to Azure Active Directory to direct traffic for SaaS apps to Defender for Cloud Apps. The policy specifies which SaaS apps to apply this policy to. Therefore, after Azure AD enforces any conditional access policies that apply to these SaaS apps, Azure AD then directs (proxies) the session traffic through Defender for Cloud Apps.
+- SaaS apps are integrated with the Microsoft Entra tenant. This integration allows Microsoft Entra ID to enforce conditional access policies, including multi-factor authentication.
+- A policy is added to Microsoft Entra ID to direct traffic for SaaS apps to Defender for Cloud Apps. The policy specifies which SaaS apps to apply this policy to. Therefore, after Microsoft Entra ID enforces any conditional access policies that apply to these SaaS apps, Microsoft Entra ID then directs (proxies) the session traffic through Defender for Cloud Apps.
 - Defender for Cloud Apps monitors this traffic and applies any session control policies that have been configured by administrators.
 
-You might have discovered and sanctioned cloud apps using Defender for Cloud Apps that have not been added to Azure AD. You can take advantage of Conditional Access App Control by adding these cloud apps to your Azure AD tenant and the scope of your conditional access rules.
+You might have discovered and sanctioned cloud apps using Defender for Cloud Apps that have not been added to Microsoft Entra ID. You can take advantage of Conditional Access App Control by adding these cloud apps to your Microsoft Entra tenant and the scope of your conditional access rules.
 
 ### Protecting your organization from hackers
 
@@ -116,7 +118,7 @@ The following table identified key concepts that are important to understand whe
 |Concept  |Description |More information  |
 |---------|---------|---------|
 | Defender for Cloud Apps Dashboard | Presents an overview of the most important information about your organization and gives links to deeper investigation.        | [Working with the dashboard](/cloud-app-security/daily-activities-to-protect-your-cloud-environment)       |
-| Conditional Access App Control    | Reverse proxy architecture that integrates with your Identity Provider (IdP) to give Azure AD conditional access policies and selectively enforce session controls.        |  [Protect apps with Microsoft Defender for Cloud Apps Conditional Access App Control](/cloud-app-security/proxy-intro-aad)       |
+| Conditional Access App Control    | Reverse proxy architecture that integrates with your Identity Provider (IdP) to give Microsoft Entra Conditional Access policies and selectively enforce session controls.        |  [Protect apps with Microsoft Defender for Cloud Apps Conditional Access App Control](/cloud-app-security/proxy-intro-aad)       |
 |  Cloud App Catalog   | The Cloud App Catalog gives you a full picture against Microsoft catalog of over 16,000 cloud apps that are ranked and scored based on more than 80 risk factors.    |  [Working with App risk scores](/cloud-app-security/risk-score)       |
 | Cloud Discovery Dashboard    | Cloud Discovery analyzes your traffic logs and is designed to give more insight into how cloud apps are being used in your organization as well as give alerts and risk levels.     |  [Working with discovered apps](/cloud-app-security/discovered-apps)    |
 |Connected Apps |Defender for Cloud Apps provides end-to-end protection for connected apps using Cloud-to-Cloud integration, API connectors, and real-time access and session controls using our Conditional App Access Controls. |[Protecting connected apps](/cloud-app-security/protect-connected-apps) |
@@ -132,9 +134,11 @@ To discover cloud apps used in your environment, you can implement one or both o
 
 These options are included in [Step 2. Enable the evaluation environment](eval-defender-mcas-enable-eval.md).
 
-### Applying Azure AD Conditional Access policies to cloud apps
+<a name='applying-azure-ad-conditional-access-policies-to-cloud-apps'></a>
 
-Conditional Access App Control (the ability to apply Conditional Access policies to cloud apps) requires integration with Azure AD. This integration isn't a requirement for getting started with Defender for Cloud Apps. It is a step we encourage you to try out during the pilot phase—[Step 3. Pilot Microsoft Defender for Cloud Apps](eval-defender-mcas-pilot.md).
+### Applying Microsoft Entra Conditional Access policies to cloud apps
+
+Conditional Access App Control (the ability to apply Conditional Access policies to cloud apps) requires integration with Microsoft Entra ID. This integration isn't a requirement for getting started with Defender for Cloud Apps. It is a step we encourage you to try out during the pilot phase—[Step 3. Pilot Microsoft Defender for Cloud Apps](eval-defender-mcas-pilot.md).
 
 ## SIEM integration
 

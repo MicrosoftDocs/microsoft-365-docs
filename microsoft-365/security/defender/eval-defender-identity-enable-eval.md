@@ -42,7 +42,7 @@ Use the following steps to set up your Microsoft Defender for Identity environme
 - [Step 3. Configure event log and proxy settings on machines with the sensor](#step-3-configure-event-log-and-proxy-settings-on-machines-with-the-sensor)
 - [Step 4. Allow Defender for Identity to identify local admins on other computers](#step-4-allow-defender-for-identity-to-identify-local-admins-on-other-computers)
 
-## Step 1. Set up the Defender for Identity Instance
+## Step 1: Set up the Defender for Identity Instance
 
 Sign in to the Defender for Identity portal to create your instance and then connect this instance to your Active Directory environment.
 
@@ -51,7 +51,7 @@ Sign in to the Defender for Identity portal to create your instance and then con
 |1|Create the Defender for Identity instance|[Quickstart: Create your Microsoft Defender for Identity instance](/defender-for-identity/install-step1)|
 |2|Connect the Defender for Identity instance to your Active Directory forest|[Quickstart: Connect to your Active Directory Forest](/defender-for-identity/install-step2)|
 
-## Step 2. Install and configure the sensor
+## Step 2: Install and configure the sensor
 
 Next, download, install, and configure the Defender for Identity sensor on the domain controllers and AD FS servers in your on-premises environment.
 
@@ -62,7 +62,7 @@ Next, download, install, and configure the Defender for Identity sensor on the d
 |3|Install the Defender for Identity sensor|[Quickstart: Install the Microsoft Defender for Identity sensor](/defender-for-identity/install-step4)|
 |4|Configure the sensor|[Configure Microsoft Defender for Identity sensor settings](/defender-for-identity/install-step5)|
 
-## Step 3. Configure event log and proxy settings on machines with the sensor
+## Step 3: Configure event log and proxy settings on machines with the sensor
 
 On the machines that you installed the sensor on, configure Windows event log collection and Internet proxy settings to enable and enhance detection capabilities.
 
@@ -71,7 +71,7 @@ On the machines that you installed the sensor on, configure Windows event log co
 |1|Configure Windows event log collection|[Configure Windows Event collection](/defender-for-identity/configure-windows-event-collection)|
 |2|Configure Internet proxy settings|[Configure endpoint proxy and Internet connectivity settings for your Microsoft Defender for Identity Sensor](/defender-for-identity/configure-proxy)|
 
-## Step 4. Allow Defender for Identity to identify local admins on other computers
+## Step 4: Allow Defender for Identity to identify local admins on other computers
 
 Microsoft Defender for Identity lateral movement path detection relies on queries that identify local admins on specific machines. These queries are performed with the SAM-R protocol, using the Defender for Identity Service account.
 
