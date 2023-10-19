@@ -51,7 +51,7 @@ The following table lists the policies you either need to review and update or c
 |**Starting point**|[Require MFA when sign-in risk is *medium* or *high*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Include SharePoint in the assignment of cloud apps.|
 ||[Block clients that don't support modern authentication](identity-access-policies.md#block-clients-that-dont-support-multifactor-authentication)|Include SharePoint in the assignment of cloud apps.|
 ||[Apply APP data protection policies](identity-access-policies.md#app-protection-policies)|Be sure all recommended apps are included in the list of apps. Be sure to update the policy for each platform (iOS, Android, Windows).|
-||[Use app enforced restrictions in SharePoint](#use-app-enforced-restrictions-in-sharepoint)|Add this new policy. This tells Azure Active Directory (Azure AD) to use the settings specified in SharePoint. This policy applies to all users, but only affects access to sites included in SharePoint access policies.|
+||[Use app enforced restrictions in SharePoint](#use-app-enforced-restrictions-in-sharepoint)|Add this new policy. This tells Microsoft Entra ID to use the settings specified in SharePoint. This policy applies to all users, but only affects access to sites included in SharePoint access policies.|
 |**Enterprise**|[Require MFA when sign-in risk is *low*, *medium* or *high*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Include SharePoint in the assignments of cloud apps.|
 ||[Require compliant PCs *and* mobile devices](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Include SharePoint in the list of cloud apps.|
 ||[SharePoint access control policy](#sharepoint-access-control-policies): Allow browser-only access to specific SharePoint sites from unmanaged devices.|This prevents editing and downloading of files. Use PowerShell to specify sites.|
@@ -60,7 +60,7 @@ The following table lists the policies you either need to review and update or c
 
 ## Use app-enforced restrictions in SharePoint
 
-If you implement access controls in SharePoint, Conditional Access policies are created in Azure AD to tell Azure AD to enforce the policies you configure in SharePoint. By default, this policy applies to all users, but only affects access to the sites you specify using PowerShell when you create the access controls in SharePoint. The policy can also be scoped for specific users, groups, or sites.
+If you implement access controls in SharePoint, Conditional Access policies are created in Microsoft Entra ID to tell Microsoft Entra ID to enforce the policies you configure in SharePoint. By default, this policy applies to all users, but only affects access to the sites you specify using PowerShell when you create the access controls in SharePoint. The policy can also be scoped for specific users, groups, or sites.
 
 To configure this policy see "Block or limit access to specific SharePoint site collections or OneDrive accounts" in [Control access from unmanaged devices](/sharepoint/control-access-from-unmanaged-devices).
 
@@ -75,7 +75,7 @@ See "Block or limit access to specific SharePoint site collections or OneDrive a
 
 ## How these policies work together
 
-It's important to understand that SharePoint site permissions are typically based on business need for access to sites. These permissions are managed by site owners and can be highly dynamic. Using SharePoint device access policies ensures protection to these sites, regardless of whether users are assigned to an Azure AD group associated with starting point, enterprise, or specialized security protection.
+It's important to understand that SharePoint site permissions are typically based on business need for access to sites. These permissions are managed by site owners and can be highly dynamic. Using SharePoint device access policies ensures protection to these sites, regardless of whether users are assigned to a Microsoft Entra group associated with starting point, enterprise, or specialized security protection.
 
 The following illustration provides an example of how SharePoint device access policies protect access to sites for a user.
 

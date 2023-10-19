@@ -105,13 +105,13 @@ Your organization's privacy statement can be configured for the Company Portal. 
 
 ### Understand device categories
 
-Device categories allow you to easily manage and group devices in Microsoft Intune. Create a category, such as sales or accounting, and Intune will automatically add all devices that fall within that category to the corresponding device group in Intune. To enable categories in your tenant, you must create a category in the Microsoft Intune admin center and set up dynamic Azure Active Directory (Azure AD) security groups.
+Device categories allow you to easily manage and group devices in Microsoft Intune. Create a category, such as sales or accounting, and Intune will automatically add all devices that fall within that category to the corresponding device group in Intune. To enable categories in your tenant, you must create a category in the Microsoft Intune admin center and set up dynamic Microsoft Entra security groups.
 
 You can allow or block the device category prompt in Intune Company Portal. For more information about device categories, see [Categorize devices into groups](/mem/intune/enrollment/device-group-mapping).
 
 ### App sources
 
-You can choose which additional app sources will be shown in Company Portal to end-users at your organization. You can choose to hide or show Azure AD Enterprise Applications, Office Online Applications, or Configuration Manager Applications. You can find these settings in [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) by selecting **Tenant administration** > **Customization**. For more information, see [App source setting options](/mem/intune/apps/company-portal-app#app-source-setting-options).
+You can choose which additional app sources will be shown in Company Portal to end-users at your organization. You can choose to hide or show Microsoft Entra Enterprise Applications, Office Online Applications, or Configuration Manager Applications. You can find these settings in [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) by selecting **Tenant administration** > **Customization**. For more information, see [App source setting options](/mem/intune/apps/company-portal-app#app-source-setting-options).
 
 ### Remove and reset device actions
 

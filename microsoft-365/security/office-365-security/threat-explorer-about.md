@@ -274,8 +274,8 @@ You'll be able to see both the GUID and the name of the transport rules that wer
 >
 > - EXO Only - data loss prevention: All
 > - EXO Only - O365SupportViewConfig: All
-> - Microsoft Azure Active Directory or EXO - Security Admin: All
-> - AAD or EXO - Security Reader: All
+> - Microsoft Entra ID or EXO - Security Admin: All
+> - Microsoft Entra ID or EXO - Security Reader: All
 > - EXO Only - Transport Rules: All
 > - EXO Only - View-Only Configuration: All
 >
@@ -522,7 +522,7 @@ To view and use Explorer or Real-time detections, you must have appropriate perm
 - For the Microsoft 365 Defender portal, you must have one of the following roles assigned:
 
   - Organization Management
-  - Security Administrator (this can be assigned in the Azure Active Directory admin center (<https://aad.portal.azure.com>)
+  - Security Administrator (this can be assigned in the Microsoft Entra admin center (<https://aad.portal.azure.com>)
   - Security Reader
 
 - For Exchange Online, you must have one of the following roles assigned in either the Exchange admin center (EAC) or [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell):

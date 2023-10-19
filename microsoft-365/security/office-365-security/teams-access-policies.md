@@ -82,18 +82,18 @@ For reference, the following diagram illustrates the services Teams relies on. F
 
 Microsoft Teams defines the following access types:
 
-- **Guest access** uses an Azure AD B2B account for a guest or external user that can be added as a member of a team and have all permissioned access to the communication and resources of the team.
+- **Guest access** uses a Microsoft Entra B2B account for a guest or external user that can be added as a member of a team and have all permissioned access to the communication and resources of the team.
 
-- **External access** is for an external user that doesn't have an Azure AD B2B account. External access can include invitations and participation in calls, chats, and meetings, but doesn't include team membership and access to the resources of the team.
+- **External access** is for an external user that doesn't have a Microsoft Entra B2B account. External access can include invitations and participation in calls, chats, and meetings, but doesn't include team membership and access to the resources of the team.
 
-Conditional Access policies only apply to guest access in Teams because there's a corresponding Azure AD B2B account.
+Conditional Access policies only apply to guest access in Teams because there's a corresponding Microsoft Entra B2B account.
 
 <!--
 In Azure AD, guest and external users are the same. The user type for both of these is Guest. Guest users are B2B users. Microsoft Teams differentiates between guest users and external users in the app. While it's important to understand how each of these are treated in Teams, both types of users are B2B users in Azure AD and the recommended policies for B2B users apply to both.
 
 -->
 
-For recommended policies to allow access for guest and external users with an Azure AD B2B account, see [Policies for allowing guest and external B2B account access](identity-access-policies-guest-access.md).
+For recommended policies to allow access for guest and external users with a Microsoft Entra B2B account, see [Policies for allowing guest and external B2B account access](identity-access-policies-guest-access.md).
 
 ### Guest access in Teams
 
@@ -109,7 +109,7 @@ External access is a way for Teams users from an entire external domain to find,
 
 External access users have less access and functionality than an individual who's been added via guest access. For example, external access users can chat with your internal users with Teams but can't access team channels, files, or other resources.
 
-External access doesn't use Azure AD B2B user accounts and therefore doesn't use Conditional Access policies.
+External access doesn't use Microsoft Entra B2B user accounts and therefore doesn't use Conditional Access policies.
 
 ## Teams policies
 

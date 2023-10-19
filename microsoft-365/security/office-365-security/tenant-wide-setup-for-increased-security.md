@@ -107,21 +107,23 @@ To support the goals for baseline protection, configure tenant-wide sharing poli
 
 SharePoint admin center and OneDrive for Business admin center include the same settings. The settings in either admin center apply to both.
 
-## Configure settings in Azure Active Directory
+<a name='configure-settings-in-azure-active-directory'></a>
 
-Be sure to visit these two areas in Azure Active Directory to complete tenant-wide setup for more secure environments.
+## Configure settings in Microsoft Entra ID
+
+Be sure to visit these two areas in Microsoft Entra ID to complete tenant-wide setup for more secure environments.
 
 ### Configure named locations (under conditional access)
 
-If your organization includes offices with secure network access, add the trusted IP address ranges to Azure Active Directory as named locations. This feature helps reduce the number of reported false positives for sign-in risk events.
+If your organization includes offices with secure network access, add the trusted IP address ranges to Microsoft Entra ID as named locations. This feature helps reduce the number of reported false positives for sign-in risk events.
 
-See: [Named locations in Azure Active Directory](/azure/active-directory/conditional-access/location-condition)
+See: [Named locations in Microsoft Entra ID](/azure/active-directory/conditional-access/location-condition)
 
 ### Block apps that don't support modern authentication
 
 Multi-factor authentication requires apps that support modern authentication. Apps that do not support modern authentication cannot be blocked by using conditional access rules.
 
-For secure environments, be sure to disable authentication for apps that do not support modern authentication. You can do this in Azure Active Directory with a control that is coming soon.
+For secure environments, be sure to disable authentication for apps that do not support modern authentication. You can do this in Microsoft Entra ID with a control that is coming soon.
 
 In the meantime, use one of the following methods to accomplish this for SharePoint Online and OneDrive for Business:
 

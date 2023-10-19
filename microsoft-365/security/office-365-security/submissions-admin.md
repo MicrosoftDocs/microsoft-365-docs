@@ -62,7 +62,7 @@ For other ways that **admins** can report messages to Microsoft in the Defender 
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
   - [Email & collaboration RBAC in the Microsoft 365 Defender portal](mdo-portal-permissions.md): Membership in the **Security Administrator** or **Security Reader** role groups.
-  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Security Administrator** or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
+  - [Microsoft Entra RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Security Administrator** or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 - Admins can submit email messages as old as 30 days if they're still available in the mailbox and haven't been purged by the user or an admin.
 
