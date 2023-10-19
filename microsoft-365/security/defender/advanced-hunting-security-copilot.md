@@ -47,7 +47,8 @@ Users with access to Security Copilot have access to this capability in advanced
 1. Open the **advanced hunting** page from the navigation bar in Microsoft 365 Defender. The Security Copilot side pane for advanced hunting appears at the right hand side.
 
     :::image type="content" source="../../media/advanced-hunting-security-copilot-pane.png" alt-text="Security Copilot pane in advanced hunting" lightbox="../../media/advanced-hunting-security-copilot-pane.png":::
-
+    
+    You can also reopen Security Copilot by selecting ![Security Copilot button](../../media/security-copilot-ah-button.png) at the top of the query editor.
 1. In the Security Copilot prompt bar, ask any threat hunting query that you want to run and press ![Send icon](../../media/Send.png) or **Enter** .
 
     :::image type="content" source="../../media/advanced-hunting-security-copilot-query.png" alt-text="Prompt bar in the Security Copilot for advanced hunting" lightbox="../../media/advanced-hunting-security-copilot-query.png":::
@@ -57,7 +58,7 @@ Users with access to Security Copilot have access to this capability in advanced
     :::image type="content" source="../../media/advanced-hunting-security-copilot-generate.png" alt-text="Security Copilot in advanced hunting generating a response" lightbox="../../media/advanced-hunting-security-copilot-generate.png":::    
 
  
-1. Review the generated query. You can then choose to run the query by selecting **Run query**. 
+1. Review the generated query. You can then choose to run the query by selecting **Add and run**. 
 
     :::image type="content" source="../../media/advanced-hunting-security-copilot-run-query.png" alt-text="Security Copilot button showing Add the query to query editor and run" lightbox="../../media/advanced-hunting-security-copilot-run-query.png":::      
 
@@ -91,6 +92,6 @@ Select the gear icon in the Security Copilot side pane to choose whether or not 
 
 :::image type="content" source="../../media/advanced-hunting-security-copilot-settings.png" alt-text="Security Copilot in advanced hunting showing the Add to editor option" lightbox="../../media/advanced-hunting-security-copilot-settings.png"::: 
 
-Deselecting the **Run generated query automatically** setting gives you the option of running the generated query automatically (**Run query**) or adding the generated query to the query editor for further modification (**Add to editor**). 
+Deselecting the **Run generated query automatically** setting gives you the option of running the generated query automatically (**Add and run**) or adding the generated query to the query editor for further modification (**Add to editor**). 
 
 
