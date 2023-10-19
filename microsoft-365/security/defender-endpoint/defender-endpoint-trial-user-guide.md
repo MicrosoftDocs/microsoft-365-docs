@@ -68,20 +68,20 @@ This playbook is a simple guide to help you make the most of your free trial. Us
 
 ## Step 1: Confirm your license state
 
-To make sure your Defender for Endpoint subscription is properly provisioned, you can check your license state in either the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) or Azure Active Directory ([https://portal.azure.com](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)).
+To make sure your Defender for Endpoint subscription is properly provisioned, you can check your license state in either the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) or Microsoft Entra ID ([https://portal.azure.com](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)).
 
 [Check your license state](production-deployment.md#check-license-state).
 
 ## Step 2: Set up role-based access control and grant permissions to your security team
 
-Microsoft recommends using the concept of least privileges. Defender for Endpoint uses built-in roles within Azure Active Directory. [Review the different roles that are available](/azure/active-directory/roles/permissions-reference) and choose appropriate roles for your security team. Some roles may need to be applied temporarily and removed after the trial has been completed.
+Microsoft recommends using the concept of least privileges. Defender for Endpoint uses built-in roles within Microsoft Entra ID. [Review the different roles that are available](/azure/active-directory/roles/permissions-reference) and choose appropriate roles for your security team. Some roles may need to be applied temporarily and removed after the trial has been completed.
 
 Use [Privileged Identity Management](/azure/active-directory/active-directory-privileged-identity-management-configure) to manage your roles to provide extra auditing, control, and access review for users with directory permissions.
 
 Defender for Endpoint supports two ways to manage permissions:
 
-- Basic permissions management: Set permissions to either full access or read-only. Users with Global Administrator or Security Administrator roles in Azure Active Directory have full access. The Security reader role has read-only access and doesn't grant access to view machines/device inventory.
-- Role-based access control (RBAC): Set granular permissions by defining roles, assigning Azure AD user groups to the roles, and granting the user groups access to device groups. For more information, see [Manage portal access using role-based access control](rbac.md).
+- Basic permissions management: Set permissions to either full access or read-only. Users with Global Administrator or Security Administrator roles in Microsoft Entra ID have full access. The Security reader role has read-only access and doesn't grant access to view machines/device inventory.
+- Role-based access control (RBAC): Set granular permissions by defining roles, assigning Microsoft Entra user groups to the roles, and granting the user groups access to device groups. For more information, see [Manage portal access using role-based access control](rbac.md).
 
     > [!NOTE]
     > Device group creation is supported in Defender for Endpoint Plan 1 and Plan 2.

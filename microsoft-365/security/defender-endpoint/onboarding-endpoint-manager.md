@@ -54,7 +54,7 @@ This topic guides users in:
 This onboarding guidance will walk you through the following basic steps that you need to take when using Microsoft Intune:
 
 - [Identifying target devices or users](#identify-target-devices-or-users)
-  - Creating an Azure Active Directory group (User or Device)
+  - Creating a Microsoft Entra group (User or Device)
 - [Creating a Configuration Profile](#step-2-create-configuration-policies-to-configure-microsoft-defender-for-endpoint-capabilities)
   - In Microsoft Intune, we'll guide you in creating a separate policy for each capability.
 
@@ -75,7 +75,7 @@ For more information about Microsoft Intune, go to [Microsoft Intune securely ma
 In this section, we will create a test group to assign your configurations on.
 
 > [!NOTE]
-> Intune uses Azure Active Directory (Azure AD) groups to manage devices and users. As an Intune admin, you can set up groups to suit your organizational needs.
+> Intune uses Microsoft Entra groups to manage devices and users. As an Intune admin, you can set up groups to suit your organizational needs.
 >
 > For more information, see [Add groups to organize users and devices](/mem/intune/fundamentals/groups-add).
 

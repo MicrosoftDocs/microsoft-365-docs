@@ -52,7 +52,7 @@ Select **Go to attack surface management** \> **Reports** \> **Attack surface re
 > *The **Add exclusions** tab in the Attack surface reduction rules page in Microsoft 365 Defender portal*
 
 > [!NOTE]
-> To access Microsoft 365 Defender portal, you need a Microsoft 365 E3 or E5 license and an account that has certain roles on Azure Active Directory. [Read about required licenses and permissions](/microsoft-365/security/defender/prerequisites).
+> To access Microsoft 365 Defender portal, you need a Microsoft 365 E3 or E5 license and an account that has certain roles on Microsoft Entra ID. [Read about required licenses and permissions](/microsoft-365/security/defender/prerequisites).
 
 For more information about ASR rule deployment in <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, see [Optimize ASR rule deployment and detections](configure-machines-asr.md).
 

@@ -100,7 +100,7 @@ Use the following steps to check the network connectivity of Microsoft Defender 
 2. If the Linux servers are behind a proxy, then set the proxy settings. For more information, see [Set up proxy settings](#step-2-set-up-proxy-settings).
 3. Verify that the traffic isn't being inspected by SSL inspection (TLS inspection). This is the most common network related issue when setting up Microsoft Defender Endpoint, see [Verify SSL inspection isn't being performed on the network traffic](#step-3-verify-ssl-inspection-isnt-being-performed-on-the-network-traffic).
 
-#### Step 1. Allow URLs for the Microsoft Defender for Endpoint traffic
+#### Step 1: Allow URLs for the Microsoft Defender for Endpoint traffic
 
 1. Download the [Microsoft Defender for Endpoint URL list for commercial customers](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls-commercial.xlsx) or the [Microsoft Defender for Endpoint URL list for Gov/GCC/DoD](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) for a list of services and their associated URLs that your network must be able to connect.
 
@@ -114,7 +114,7 @@ Use the following steps to check the network connectivity of Microsoft Defender 
 
 3. Work with the Firewall/Proxy/Networking admins to allow the relevant URLs.
 
-#### Step 2. Set up proxy settings
+#### Step 2: Set up proxy settings
 
 If the Linux servers are behind a proxy, use the following settings guidance.
 
@@ -130,7 +130,7 @@ The following table lists the supported proxy settings:
 - [Static proxy configuration](../defender-endpoint/linux-static-proxy-configuration.md)
 - [Troubleshooting connectivity issues in static proxy scenario](linux-support-connectivity.md#troubleshooting-steps-for-environments-with-static-proxy)
 
-#### Step 3. Verify SSL inspection isn't being performed on the network traffic
+#### Step 3: Verify SSL inspection isn't being performed on the network traffic
 
 To prevent man-in-the-middle attacks, all Microsoft Azure hosted traffic uses certificate pinning. As a result, SSL inspections by major firewall systems aren't allowed. You have to bypass SSL inspection for Microsoft Defender for Endpoint URLs.
 
@@ -230,7 +230,7 @@ Set up your device groups, device collections, and organizational units Device g
 |---|---|
 |[Device groups](/microsoft-365/security/defender-endpoint/machine-groups) (formerly called *machine groups*) enable your security operations team to configure security capabilities, such as automated investigation and remediation. <br/><br/> Device groups are also useful for assigning access to those devices so that your security operations team can take remediation actions if needed. <br/><br/> Device groups are created while the attack was detected and stopped, alerts, such as an "initial access alert," were triggered and appeared in the [Microsoft 365 Defender portal](/microsoft-365/security/defender/microsoft-365-defender).|1. Go to the Microsoft 365 Defender portal (<https://security.microsoft.com>).<br/><br/>2. In the navigation pane on the left, choose **Settings** \> **Endpoints** \> **Permissions** \> **Device groups**.<br/><br/>3. Choose **+ Add device group**.<br/><br/>4. Specify a name and description for the device group.<br/><br/>5. In the **Automation level** list, select an option. (We recommend **Full - remediate threats automatically**.) To learn more about the various automation levels, see [How threats are remediated](/microsoft-365/security/defender-endpoint/automated-investigations#how-threats-are-remediated).<br/><br/>6. Specify conditions for a matching rule to determine which devices belong to the device group. For example, you can choose a domain, OS versions, or even use [device tags](/microsoft-365/security/defender-endpoint/machine-tags).<br/><br/>7. On the **User access** tab, specify roles that should have access to the devices that are included in the device group.<br/><br/>8. Choose **Done**.|
 |[Device collections](/mem/configmgr/core/clients/manage/collections/introduction-to-collections) enable your security operations team to manage applications, deploy compliance settings, or install software updates on the devices in your organization. <br/><br/> Device collections are created by using [Configuration Manager](/mem/configmgr/).|Follow the steps in [Create a collection](/mem/configmgr/core/clients/manage/collections/create-collections#bkmk_create).|
-|[Organizational units](/azure/active-directory-domain-services/create-ou) enable you to logically group objects such as user accounts, service accounts, or computer accounts. <br/><br/> You can then assign administrators to specific organizational units, and apply group policy to enforce targeted configuration settings. <br/><br/> Organizational units are defined in [Azure Active Directory Domain Services](/azure/active-directory-domain-services).|Follow the steps in [Create an Organizational Unit in an Azure Active Directory Domain Services managed domain](/azure/active-directory-domain-services/create-ou).|
+|[Organizational units](/azure/active-directory-domain-services/create-ou) enable you to logically group objects such as user accounts, service accounts, or computer accounts. <br/><br/> You can then assign administrators to specific organizational units, and apply group policy to enforce targeted configuration settings. <br/><br/> Organizational units are defined in [Microsoft Entra Domain Services](/azure/active-directory-domain-services).|Follow the steps in [Create an Organizational Unit in a Microsoft Entra Domain Services managed domain](/azure/active-directory-domain-services/create-ou).|
 
 ## 10. Configure Microsoft Defender for Endpoint on Linux antimalware settings
 
@@ -541,7 +541,7 @@ If you observe that third-party ISVs, internally developed Linux apps, or script
 1. Identify the thread or process that's causing the symptom.
 2. Apply further diagnostic steps based on the identified process to address the issue.
 
-### Step 1. Identify the Microsoft Defender for Endpoint on Linux thread causing the symptom
+### Step 1: Identify the Microsoft Defender for Endpoint on Linux thread causing the symptom
 
 Use the following syntaxes to help identify the process that is causing CPU overhead:
 
@@ -574,7 +574,7 @@ The following table lists the processes that may cause a high CPU usage:
 |wdavdaemon edr||EDR engine|
 |mdatp_audisp_plugin|audit framework (auditd)|Audit log ingestion|
 
-### Step 2. Apply further diagnostic steps based on the identified process
+### Step 2: Apply further diagnostic steps based on the identified process
 
 Now that you've identified the process that is causing the high CPU usage, use the corresponding diagnostic guidance in the following section.
 

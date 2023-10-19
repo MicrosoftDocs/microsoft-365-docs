@@ -56,8 +56,8 @@ Here is a list of the types of data being collected:
   - Wi-Fi adapter MAC address
   - Randomly generated globally unique identifier (GUID)
 - Tenant, Device, and User information
-  - Azure Active Directory (AD) Device ID and Azure User ID - Uniquely identifies the device, User respectively at Azure Active directory.
-  - Azure tenant ID - GUID that identifies your organization within Azure Active Directory.
+  - Microsoft Entra Device ID and Azure User ID - Uniquely identifies the device, User respectively at Microsoft Entra ID.
+  - Azure tenant ID - GUID that identifies your organization within Microsoft Entra ID.
   - Microsoft Defender for Endpoint org ID - Unique identifier associated with the enterprise that the device belongs to. Allows Microsoft to identify if there are issues affecting a select set of enterprises and the number of enterprises impacted.
   - User Principal Name - Email ID of the user.
 

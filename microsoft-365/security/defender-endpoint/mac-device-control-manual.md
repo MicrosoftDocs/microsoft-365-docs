@@ -76,7 +76,7 @@ You can now try protected operations, or use usual `mdatp device-control` comman
 
 You can edit your policy file, reapply it, and see changes immediately.
 
-### Step 3. Undo your changes
+### Step 3: Undo your changes
 
 To clear the policy, use `mdatp config device-control policy reset`.
 

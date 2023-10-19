@@ -40,7 +40,7 @@ With Conditional Access, you can control access to enterprise information based 
 
 You can define security conditions under which devices and applications can run and access information from your network by enforcing policies to stop applications from running until a device returns to a compliant state.
 
-The implementation of Conditional Access in Defender for Endpoint is based on Microsoft Intune (Intune) device compliance policies and Azure Active Directory (Azure AD) conditional access policies.
+The implementation of Conditional Access in Defender for Endpoint is based on Microsoft Intune (Intune) device compliance policies and Microsoft Entra Conditional Access policies.
 
 The compliance policy is used with Conditional Access to allow only devices that fulfill one or more device compliance policy rules to access applications.
 
@@ -54,7 +54,7 @@ Depending on how you configure policies in Intune, Conditional Access can be set
 
 For example, you can configure Intune to apply Conditional Access on devices that have a high risk.
 
-In Intune, a device compliance policy is used with Azure AD Conditional Access to block access to applications. In parallel, an automated investigation and remediation process is launched.
+In Intune, a device compliance policy is used with Microsoft Entra Conditional Access to block access to applications. In parallel, an automated investigation and remediation process is launched.
 
  A user can still use the device while the automated investigation and remediation is taking place, but access to enterprise data is blocked until the threat is fully remediated.
 
@@ -74,8 +74,8 @@ The following example sequence of events explains Conditional Access in action:
 
 1. A user opens a malicious file and Defender for Endpoint flags the device as high risk.
 2. The high risk assessment is passed along to Intune. In parallel, an automated investigation is initiated to remediate the identified threat. A manual remediation can also be done to remediate the identified threat.
-3. Based on the policy created in Intune, the device is marked as not compliant. The assessment is then communicated to Azure AD by the Intune Conditional Access policy. In Azure AD, the corresponding policy is applied to block access to applications.
-4. The manual or automated investigation and remediation is completed and the threat is removed. Defender for Endpoint sees that there's no risk on the device and Intune assesses the device to be in a compliant state. Azure AD applies the policy, which allows access to applications.
+3. Based on the policy created in Intune, the device is marked as not compliant. The assessment is then communicated to Microsoft Entra ID by the Intune Conditional Access policy. In Microsoft Entra ID, the corresponding policy is applied to block access to applications.
+4. The manual or automated investigation and remediation is completed and the threat is removed. Defender for Endpoint sees that there's no risk on the device and Intune assesses the device to be in a compliant state. Microsoft Entra ID applies the policy, which allows access to applications.
 5. Users can now access applications.
 
 ## Related topic

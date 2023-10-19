@@ -39,13 +39,13 @@ The next step when deploying Defender for Endpoint is to assign roles and permis
 
 ## Role-based access control
 
-Microsoft recommends using the concept of least privileges. Defender for Endpoint leverages built-in roles within Azure Active Directory. Microsoft recommends [review the different roles that are available](/azure/active-directory/roles/permissions-reference) and choose the right one to solve your needs for each persona for this application. Some roles may need to be applied temporarily and removed after the deployment has been completed.
+Microsoft recommends using the concept of least privileges. Defender for Endpoint leverages built-in roles within Microsoft Entra ID. Microsoft recommends [review the different roles that are available](/azure/active-directory/roles/permissions-reference) and choose the right one to solve your needs for each persona for this application. Some roles may need to be applied temporarily and removed after the deployment has been completed.
 
 <br>
 
 ****
 
-|Personas|Roles|Azure AD Role (if necessary)|Assign to|
+|Personas|Roles|Microsoft Entra role (if necessary)|Assign to|
 |---|---|---|---|
 |Security Administrator||||
 |Security Analyst||||
@@ -58,13 +58,13 @@ Microsoft recommends using [Privileged Identity Management](/azure/active-direct
 
 Defender for Endpoint supports two ways to manage permissions:
 
-- **Basic permissions management**: Set permissions to either full access or read-only. Users with Global Administrator or Security Administrator roles in Azure Active Directory have full access. The Security reader role has read-only access and does not grant access to view machines/device inventory.
+- **Basic permissions management**: Set permissions to either full access or read-only. Users with Global Administrator or Security Administrator roles in Microsoft Entra ID have full access. The Security reader role has read-only access and does not grant access to view machines/device inventory.
 
-- **Role-based access control (RBAC)**: Set granular permissions by defining roles, assigning Azure AD user groups to the roles, and granting the user groups access to device groups. For more information. see [Manage portal access using role-based access control](rbac.md).
+- **Role-based access control (RBAC)**: Set granular permissions by defining roles, assigning Microsoft Entra user groups to the roles, and granting the user groups access to device groups. For more information. see [Manage portal access using role-based access control](rbac.md).
 
 Microsoft recommends leveraging RBAC to ensure that only users that have a business justification can access Defender for Endpoint.
 
-You can find details on permission guidelines here: [Create roles and assign the role to an Azure Active Directory group](/microsoft-365/security/defender-endpoint/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group).
+You can find details on permission guidelines here: [Create roles and assign the role to a Microsoft Entra group](/microsoft-365/security/defender-endpoint/user-roles#create-roles-and-assign-the-role-to-an-azure-active-directory-group).
 
 The following example table serves to identify the Cyber Defense Operations Center structure in your environment that will help you determine the RBAC structure required for your environment.
 

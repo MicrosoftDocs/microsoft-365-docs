@@ -108,7 +108,7 @@ All our updates contain
 - Improved the performance of scanning files on network locations
 - Added support for domain computer SID for device control policies
 - Improved installer of unified agent to include legacy version of Windows Server 2012 (6.3.9600.17735)
-- Fixed issue in device control when querying Azure AD group membership, which resulted in increased network traffic.
+- Fixed issue in device control when querying Microsoft Entra group membership, which resulted in increased network traffic.
 - Improved parsing of attack surface reduction exclusions in the antimalware engine
 - Improved reliability in scanning PE files
 - Improved deployments safeguards for security intelligence updates
@@ -807,5 +807,3 @@ For more information, see [Microsoft Defender update for Windows operating syste
 
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
-
-
