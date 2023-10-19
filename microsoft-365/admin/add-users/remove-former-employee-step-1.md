@@ -24,7 +24,7 @@ ms.custom:
   - AdminSurgePortfolio
   - m365solution-removeemployee
   - admindeeplinkEXCHANGE
-  - has-azure-ad-ps-ref
+  - has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 search.appverid:
 - BCS160
 - MET150
