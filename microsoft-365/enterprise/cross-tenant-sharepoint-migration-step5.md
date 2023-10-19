@@ -126,7 +126,7 @@ Users and groups are included in the same file. Depending on whether it's a user
 To obtain Source Tenant Company ID:
 
 1. Sign in as Admin to your [Azure portal](https://ms.portal.azure.com/)
-2. Select or Search for **Azure Active Directory**.
+2. Select or Search for **Microsoft Entra ID**.
 3. Scroll down on the left-hand panel and select **Properties**.
 4. Locate the **Tenant ID Field**. The required Tenant ID will be in that box.
 

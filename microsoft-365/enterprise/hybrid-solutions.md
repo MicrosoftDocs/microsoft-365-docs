@@ -28,7 +28,7 @@ With Microsoft Azure, you can deploy some Office Server workloads that were typi
   
 For Microsoft 365 identity infrastructure in Azure:
 
-- [Using Azure AD for SharePoint Server Authentication](/azure/active-directory/saas-apps/sharepoint-on-premises-tutorial)
+- [Using Microsoft Entra ID for SharePoint Server Authentication](/azure/active-directory/saas-apps/sharepoint-on-premises-tutorial)
 
 - [Deploy Microsoft 365 Directory Synchronization in Microsoft Azure](deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md)
   
