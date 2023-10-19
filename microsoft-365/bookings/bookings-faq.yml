@@ -164,7 +164,7 @@ sections:
       - question: |
           Where do Bookings calendars show up in my Microsoft 365 tenant?
         answer: |
-          Each new Bookings calendar creates a corresponding mailbox in Exchange, and a related entry in Azure Active Directory (Azure AD), where the entry is listed as an unlicensed user.
+          Each new Bookings calendar creates a corresponding mailbox in Exchange, and a related entry in Microsoft Entra ID, where the entry is listed as an unlicensed user.
 
       - question: |
           Can I delete a previously created Bookings calendar?
@@ -174,7 +174,7 @@ sections:
       - question: |
           If I create a calendar and someone else has access to Bookings, would they be able to see my calendar?
         answer: |
-          The only people who have access to Bookings calendars that you create (through the Web app) is anyone who has been added as staff, in either an Administrator or Viewer role. Tenant admins will be able to see a list of all Bookings mailboxes in Exchange and Azure AD.
+          The only people who have access to Bookings calendars that you create (through the Web app) is anyone who has been added as staff, in either an Administrator or Viewer role. Tenant admins will be able to see a list of all Bookings mailboxes in Exchange and Microsoft Entra ID.
 
       - question: |
           Are video conferencing meetings integrated into the Bookings app?
@@ -289,7 +289,7 @@ sections:
       - question: |
           How are users authenticated?
         answer: |
-          Access to the Bookings Web app involves authentication through the regular Azure Active Directory (Azure AD) authentication. The Self-service booking page can be made available to everyone with the Web page link. However, when the **Require a Microsoft 365 or Office 365 account from my organization** to book setting is selected, the page is restricted for use only within the Microsoft 365 tenant (using Azure AD authentication).
+          Access to the Bookings Web app involves authentication through the regular Microsoft Entra authentication. The Self-service booking page can be made available to everyone with the Web page link. However, when the **Require a Microsoft 365 or Office 365 account from my organization** to book setting is selected, the page is restricted for use only within the Microsoft 365 tenant (using Microsoft Entra authentication).
           
           :::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Booking page access control in Bookings":::
           

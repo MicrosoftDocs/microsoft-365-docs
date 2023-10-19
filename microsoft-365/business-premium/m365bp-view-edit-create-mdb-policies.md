@@ -105,7 +105,7 @@ The following details apply to working with your policies in the Microsoft 365 D
    - Initially, you might only have your default device group, which includes the devices people in your organization are using to access organization data and email. You can keep and use your default device group.
    - Create a new device group to apply a policy with specific settings that are different from the default policy.
    - When you set up your device group, you specify certain criteria, such as the operating system version. Devices that meet the criteria are included in that device group, unless you exclude them.
-   - All device groups, including the default and custom device groups that you define, are stored in Azure Active Directory (Azure AD).
+   - All device groups, including the default and custom device groups that you define, are stored in Microsoft Entra ID.
 
    To learn more about device groups, see [Device groups in Microsoft Defender for Business](../security/defender-business/mdb-create-edit-device-groups.md).
 
