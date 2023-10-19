@@ -4,7 +4,7 @@ description: Learn about user testing in Multi-Geo
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.reviewer: dmwmsft, anfra
+ms.reviewer: deanw, anfra
 ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
