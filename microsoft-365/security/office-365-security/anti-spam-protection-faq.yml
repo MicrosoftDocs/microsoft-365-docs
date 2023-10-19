@@ -74,7 +74,7 @@ sections:
           As an admin, you can use the following methods to further refine anti-spam protection:
 
           - Add users to the Standard and Strict preset security policies.
-          - Edit the default spam filtering settings in the default anti-spam policy.<
+          - Edit the default spam filtering settings in the default anti-spam policy.
           - Create anti-spam policies that are applied to specified users, groups, or domains in your organization.
 
           For more information, see the following articles:
