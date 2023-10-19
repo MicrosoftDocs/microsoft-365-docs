@@ -115,6 +115,8 @@ landingContent:
             url: annotations.md
           - text: Content query
             url: metadata-search.md
+          - text: Merge and extract PDFs
+            url: merge-extract-pdf.md
           - text: Content processing
             url: content-processing-overview.md
           - text: Solution accelerators
