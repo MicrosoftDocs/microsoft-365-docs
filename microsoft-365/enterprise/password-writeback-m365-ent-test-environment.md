@@ -25,7 +25,7 @@ description: "Summary: Configure password writeback for your Microsoft 365 test 
 
 *This Test Lab Guide can only be used for Microsoft 365 for enterprise test environments.*
 
-Users can use password writeback to update their passwords through Azure Active Directory (Azure AD), which is then replicated to your local Active Directory Domain Services (AD DS). With password writeback, users don't have to update their passwords through the on-premises AD DS where their original user accounts are stored. This helps roaming or remote users who don't have a remote access connection to their on-premises network.
+Users can use password writeback to update their passwords through Microsoft Entra ID, which is then replicated to your local Active Directory Domain Services (AD DS). With password writeback, users don't have to update their passwords through the on-premises AD DS where their original user accounts are stored. This helps roaming or remote users who don't have a remote access connection to their on-premises network.
 
 This article describes how to configure your Microsoft 365 test environment for password writeback.
 
@@ -48,7 +48,7 @@ This configuration consists of:
   
 - A Microsoft 365 E5 trial or paid subscription.
 - A simplified organization intranet connected to the internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network.
-- Azure AD Connect runs on APP1 to synchronize the TESTLAB AD DS domain to the Azure AD tenant of your Microsoft 365 subscription.
+- Microsoft Entra Connect runs on APP1 to synchronize the TESTLAB AD DS domain to the Microsoft Entra tenant of your Microsoft 365 subscription.
 
 ## Phase 2: Enable password writeback for the TESTLAB AD DS domain
 
@@ -95,17 +95,17 @@ Next, configure the User 1 account with the security settings that allow it to c
 
 12. Close **Active Directory Users and Computers**.
 
-Next, configure Azure AD Connect on APP1 for password writeback.
+Next, configure Microsoft Entra Connect on APP1 for password writeback.
 
 1. If needed, connect to APP1 with the TESTLAB\User1 account.
 
-2. From the desktop of APP1, double-click **Azure AD Connect**.
+2. From the desktop of APP1, double-click **Microsoft Entra Connect**.
 
 3. On the **Welcome page**, select **Configure**.
 
 4. On the **Additional tasks** page, select **Customize synchronization options**, and then select **Next**.
 
-5. On the **Connect to Azure AD** page, enter your global administrator account credentials, and then select **Next**.
+5. On the **Connect to Microsoft Entra ID** page, enter your global administrator account credentials, and then select **Next**.
 
 6. On the **Connect directories** and **Domain/OU filtering** pages, select **Next**.
 
@@ -125,8 +125,8 @@ This configuration consists of:
 
 - A Microsoft 365 E5 trial or paid subscriptions with the DNS domain TESTLAB.\<*your domain name*> registered.
 - A simplified organization intranet connected to the internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network.
-- Azure AD Connect runs on APP1 to synchronize the list of accounts and groups from the Azure AD tenant of your Microsoft 365 subscription to the TESTLAB AD DS domain.
-- Password writeback is enabled so that users can change their passwords through Azure AD without having to be connected to the simplified intranet.
+- Microsoft Entra Connect runs on APP1 to synchronize the list of accounts and groups from the Microsoft Entra tenant of your Microsoft 365 subscription to the TESTLAB AD DS domain.
+- Password writeback is enabled so that users can change their passwords through Microsoft Entra ID without having to be connected to the simplified intranet.
 
 ## Next step
 

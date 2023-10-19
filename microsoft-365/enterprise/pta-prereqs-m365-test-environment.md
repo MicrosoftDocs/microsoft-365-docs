@@ -22,21 +22,21 @@ description: Create a Microsoft 365 environment to test identity and device acce
 
 *This Test Lab Guide can only be used for Microsoft 365 for enterprise test environments.*
 
-[Identity and device access configurations](../security/office-365-security/microsoft-365-policies-configurations.md) are a set of configurations and conditional access policies to protect access to all services in Microsoft 365 for enterprise that are integrated with Azure Active Directory (Azure AD).
+[Identity and device access configurations](../security/office-365-security/microsoft-365-policies-configurations.md) are a set of configurations and conditional access policies to protect access to all services in Microsoft 365 for enterprise that are integrated with Microsoft Entra ID.
 
 This article describes how you can configure a Microsoft 365 test environment that meets the requirements of the [Pass-through authentication prerequisite configuration](../security/office-365-security/identity-access-prerequisites.md#prerequisites) for identity and device access.
 
 There are ten phases to setting up this test environment:
 
 1. Build out your simulated enterprise with pass-through authentication Microsoft 365 test environment
-2. Configure Azure AD seamless single sign-on
+2. Configure Microsoft Entra seamless single sign-on
 3. Configure named locations
 4. Configure password writeback
 5. Configure self-service password reset
 6. Configure multifactor authentication
 7. Enable automatic device registration of domain-joined Windows computers
-8. Configure Azure AD password protection 
-9. Enable Azure AD Identity Protection
+8. Configure Microsoft Entra password protection 
+9. Enable Microsoft Entra ID Protection
 10. Enable modern authentication for Exchange Online and Skype for Business Online
 
 ## Phase 1: Build out your simulated enterprise with pass-through authentication Microsoft 365 test environment
@@ -47,15 +47,17 @@ Here is the resulting configuration.
 
 ![The simulated enterprise with pass-through authentication test environment.](../media/pass-through-auth-m365-ent-test-environment/Phase2.png)
  
-## Phase 2: Configure Azure AD seamless single sign-on
+<a name='phase-2-configure-azure-ad-seamless-single-sign-on'></a>
 
-Follow the instructions in [Phase 2 of the Azure AD Seamless Single Sign-on Test Lab Guide](single-sign-on-m365-ent-test-environment.md#phase-2-configure-azure-ad-connect-on-app1-for-azure-ad-seamless-sso).
+## Phase 2: Configure Microsoft Entra seamless single sign-on
+
+Follow the instructions in [Phase 2 of the Microsoft Entra seamless single sign-on Test Lab Guide](single-sign-on-m365-ent-test-environment.md#phase-2-configure-azure-ad-connect-on-app1-for-azure-ad-seamless-sso).
 
 ## Phase 3: Configure named locations
 
 First, determine the public IP addresses or address ranges used by your organization.
 
-Next, follow the instructions in [Configure named locations in Azure Active Directory](/azure/active-directory/reports-monitoring/quickstart-configure-named-locations) to add the addresses or address ranges as named locations. 
+Next, follow the instructions in [Configure named locations in Microsoft Entra ID](/azure/active-directory/reports-monitoring/quickstart-configure-named-locations) to add the addresses or address ranges as named locations. 
 
 ## Phase 4: Configure password writeback
 
@@ -65,7 +67,7 @@ Follow the instructions in [Phase 2 of the password writeback Test Lab Guide](pa
 
 Follow the instructions in [Phase 3 of the password reset Test Lab Guide](password-reset-m365-ent-test-environment.md#phase-3-configure-and-test-password-reset). 
 
-When enabling password reset for the accounts in a specific Azure AD group, add these accounts to the **Password reset** group:
+When enabling password reset for the accounts in a specific Microsoft Entra group, add these accounts to the **Password reset** group:
 
 - User 2
 - User 3
@@ -89,13 +91,17 @@ Test multi-factor authentication only for the User 2 account.
 
 Follow [these instructions](/azure/active-directory/devices/hybrid-azuread-join-plan) to enable automatic device registration of domain-joined Windows computers.
 
-## Phase 8: Configure Azure AD password protection 
+<a name='phase-8-configure-azure-ad-password-protection'></a>
+
+## Phase 8: Configure Microsoft Entra password protection 
 
 Follow [these instructions](/azure/active-directory/authentication/concept-password-ban-bad) to block known weak passwords and their variants.
 
-## Phase 9: Enable Azure AD Identity Protection
+<a name='phase-9-enable-azure-ad-identity-protection'></a>
 
-Follow the instructions in [Phase 2 of the Azure AD Identity Protection Test Lab Guide](azure-ad-identity-protection-microsoft-365-test-environment.md#phase-2-use-azure-ad-identity-protection). 
+## Phase 9: Enable Microsoft Entra ID Protection
+
+Follow the instructions in [Phase 2 of the Microsoft Entra ID Protection Test Lab Guide](azure-ad-identity-protection-microsoft-365-test-environment.md#phase-2-use-azure-ad-identity-protection). 
 
 ## Phase 10: Enable modern authentication for Exchange Online and Skype for Business Online
 

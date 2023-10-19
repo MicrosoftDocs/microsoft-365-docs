@@ -25,7 +25,7 @@ description: "Use these steps to protect global administrator accounts in your M
 
 You can prevent digital attacks on your organization by ensuring that your administrator accounts are as secure as possible. 
 
-This article describes how to use Azure Active Directory (Azure AD) conditional access policies to protect global administrator accounts.
+This article describes how to use Microsoft Entra Conditional Access policies to protect global administrator accounts.
 
 Protecting global administrator accounts in your Microsoft 365 for enterprise test environment involves two phases:
 - [Phase 1: Build out your Microsoft 365 for enterprise test environment](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
@@ -74,7 +74,7 @@ Next, create conditional access policies to require multi-factor authentication 
 This first policy requires that all global administrator accounts use MFA.
 
 1. In a new tab of your browser, go to [https://portal.azure.com](https://portal.azure.com).
-2. Click **Azure Active Directory** > **Security** > **Conditional Access**.
+2. Click **Microsoft Entra ID** > **Security** > **Conditional Access**.
 3. In the **Conditional access – Policies** pane, select **Baseline policy: Require MFA for admins (preview)**.
 4. In the **Baseline policy** pane, select **Use policy immediately > Save**.
 
