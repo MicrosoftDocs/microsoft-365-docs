@@ -74,7 +74,7 @@ When a user has been inactive in Microsoft 365 web apps for the time period you 
 
 - Idle session timeout works on a per-browser session basis. A user’s activity on Microsoft Edge is treated differently than their activity in other browsers such as Google Chrome. Users will be signed out from all tabs corresponding to their account within that browser session.
 
-- Once you turn on idle session timeout, it applies to your entire organization and can't be scoped to specific users, organizational units, or groups. Use [Azure AD Conditional Access](/azure/active-directory/conditional-access/) policies for different users and groups to access SharePoint and Exchange Online.
+- Once you turn on idle session timeout, it applies to your entire organization and can't be scoped to specific users, organizational units, or groups. Use [Microsoft Entra Conditional Access](/azure/active-directory/conditional-access/) policies for different users and groups to access SharePoint and Exchange Online.
 
 - Users must be inactive on all Microsoft 365 web app tabs for the configured duration. If the user is active on one tab (say OWA) while being inactive on another tab (say SPO), they will be considered active and will not be signed out.  
 
@@ -85,13 +85,13 @@ When a user has been inactive in Microsoft 365 web apps for the time period you 
 
 ## Trigger idle session timeout only on unmanaged devices
 
-By default, the idle session timeout feature triggers on all device types if the other conditions are met. For this feature to trigger only on an unmanaged device, an eligible Azure AD Premium P1 or P2 subscription is required. You'll also need to add a Conditional Access policy in the Azure AD admin center.
+By default, the idle session timeout feature triggers on all device types if the other conditions are met. For this feature to trigger only on an unmanaged device, an eligible Microsoft Entra ID P1 or P2 subscription is required. You'll also need to add a Conditional Access policy in the Microsoft Entra admin center.
 
 ## Idle session timeout on unmanaged devices  
 
-For idle session timeout to get triggered only on unmanaged devices, you'll need to add a Conditional Access policy in the Azure AD admin center.
+For idle session timeout to get triggered only on unmanaged devices, you'll need to add a Conditional Access policy in the Microsoft Entra admin center.
 
-1. On the **Conditional Access | Policies** page of the Azure AD admin center, select **New policy** and enter a name for the policy.
+1. On the **Conditional Access | Policies** page of the Microsoft Entra admin center, select **New policy** and enter a name for the policy.
 
 2. Select **Users or workload identities**, and then select **All users**.
 

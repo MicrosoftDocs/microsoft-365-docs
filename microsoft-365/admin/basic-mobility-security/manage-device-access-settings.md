@@ -107,7 +107,7 @@ To run the Get-GraphUserDeviceComplianceStatus.ps1 script, you need to enable th
 
 #### Run the Get-MgDevice cmdlet to display details for all devices in your organization
 
-1. Open the Microsoft Azure Active Directory Module for Windows PowerShell.
+1. Open the Microsoft Azure Active Directory module for Windows PowerShell.
 
 2. Run the following command.
 

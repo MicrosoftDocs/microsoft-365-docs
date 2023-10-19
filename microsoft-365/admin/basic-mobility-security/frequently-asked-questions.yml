@@ -93,7 +93,7 @@ sections:
         answer: |
           - Make sure that your domain is set up in Microsoft 365 to work with Basic Mobility and Security. For more info, see [Set up Basic Mobility and Security](set-up.md).
     
-          - Unless you have Azure Active Directory Premium, make sure that the user is choosing **Enroll in Device Management only** rather than choosing **Connect**.
+          - Unless you have Microsoft Entra ID P1 or P2, make sure that the user is choosing **Enroll in Device Management only** rather than choosing **Connect**.
 
       - question: |
           I’m having issues setting up Basic Mobility and Security on Android phone or tablet. What can I do?

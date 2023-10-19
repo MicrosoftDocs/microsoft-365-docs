@@ -28,7 +28,7 @@ description: "Scoped Certified application installation and configuration guide 
 
 These prerequisites are necessary to set up the **Microsoft 365 support integration**.
 
-1. \[AAD Admin\] Create Azure AD Application under your Microsoft 365 tenant.
+1. \[Microsoft Entra Admin\] Create Microsoft Entra Application under your Microsoft 365 tenant.
 
     1. Log on to the Azure Portal with your Microsoft 365 tenant credentials and go to the [App registrations page](https://portal.azure.com/?Microsoft_AAD_RegisteredApps=true#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) to create a new application.
 
@@ -127,15 +127,15 @@ These steps are required to set up the integration between your ServiceNow insta
 1. \[ServiceNow Admin\] Configure the environment and setup type.
 
     If this installation is on a test environment, select the option This is a test environment. You will be able to quickly disable this option after the setup and all of your tests are completed later.
-    If your instance allows Basic Authentication for inbound connections, select Yes, otherwise please refer to the [Advanced Setup with AAD](servicenow-aad-oauth-token.md). :::image type="content" source="../../media/ServiceNow-guide/snowbasic-2.png" lightbox="../../media/ServiceNow-guide/snowbasic-2.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
+    If your instance allows Basic Authentication for inbound connections, select Yes, otherwise please refer to the [Advanced Setup with Microsoft Entra ID](servicenow-aad-oauth-token.md). :::image type="content" source="../../media/ServiceNow-guide/snowbasic-2.png" lightbox="../../media/ServiceNow-guide/snowbasic-2.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
 1. \[ServiceNow Admin\] Enter your Microsoft 365 tenant domain.
 
     :::image type="content" source="../../media/ServiceNow-guide/snowbasic-3.png" lightbox="../../media/ServiceNow-guide/snowbasic-3.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
 1. \[ServiceNow Admin\] Configure Outbound settings.
-    1. Register the Azure Active Directory (AAD) App.
-    1. After completing the instructions in the prerequisites section, click **Done**. Otherwise, follow the instructions in the wizard to create the necessary application registration in AAD.
+    1. Register the Microsoft Entra App.
+    1. After completing the instructions in the prerequisites section, click **Done**. Otherwise, follow the instructions in the wizard to create the necessary application registration in Microsoft Entra ID.
     :::image type="content" source="../../media/ServiceNow-guide/snowbasic-4.png" lightbox="../../media/ServiceNow-guide/snowbasic-4.png" alt-text="Graphical user interface, text, application, email Description automatically generated":::
 
     1. Register the ServiceNow OAuth App.

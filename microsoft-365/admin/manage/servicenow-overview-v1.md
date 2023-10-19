@@ -54,7 +54,7 @@ These are the key features you'll get with the Microsoft 365 support integration
 
 To proceed with this guide, make sure that the following permissions are available and configured for your environments during the whole process:
 
-- Azure Active Directory (AAD) admin who can create AAD applications
+- Microsoft Entra admin who can create Microsoft Entra applications
 
 - ServiceNow admin
 
@@ -64,9 +64,9 @@ To proceed with this guide, make sure that the following permissions are availab
 
 To set up **Microsoft 365 support integration**:
 
-- Register applications in Microsoft Azure Active Directory (AAD) for authentication of both outbound and inbound API calls.
+- Register applications in Microsoft Entra ID for authentication of both outbound and inbound API calls.
 
-- Create ServiceNow entities with Microsoft AAD application for both outbound and inbound data flow.
+- Create ServiceNow entities with Microsoft Entra application for both outbound and inbound data flow.
 
 - Integrate ServiceNow instance with Microsoft support through the Microsoft 365 admin portal.
 
@@ -95,8 +95,8 @@ Depending on your answers to the questions above, this table tells you what feat
 | **Question \#1 Answer** | **Question \#2 Answer** | **What features are available?** | **Configuration** |Steps                                                                                                        
 |---------------------|---------------------|-----------|----------------|
 | Yes                 | Yes/No              | Service Health Incidents Recommended Solutions Microsoft service request | [Set up Microsoft 365 support integration with ServiceNow Basic Authentication](servicenow-basic-authentication-v1.md) |
-| No                  | Yes                 | Service Health Incidents Recommended Solutions Microsoft service request | [Set up Microsoft 365 support integration with AAD OAuth Token](servicenow-aad-oauth-token-v1.md)                 |
+| No                  | Yes                 | Service Health Incidents Recommended Solutions Microsoft service request | [Set up Microsoft 365 support integration with Microsoft Entra ID OAuth Token](servicenow-aad-oauth-token-v1.md)                 |
 | No                  | No                  | Service Health Incidents Recommended Solutions                           | [Set up Microsoft 365 support integration for Insights ONLY]                |
 
 
-[Configure Microsoft 365 support integration with Azure AD Auth Token](servicenow-aad-oauth-token-v1.md)
+[Configure Microsoft 365 support integration with Microsoft Entra auth Token](servicenow-aad-oauth-token-v1.md)
