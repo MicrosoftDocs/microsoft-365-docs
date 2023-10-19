@@ -35,8 +35,8 @@ In order to promote clarity in the capability descriptions on data residency fun
 |Expanded Local Region Geography  <br/> | Future planned data center regions: Indonesia, Israel, Spain, Mexico, Malaysia, Austria, Chile, New Zealand, Denmark, Greece, Taiwan, Saudi Arabia  <br/> |
 |Geography  <br/> |_Local Region Geography, Expanded Local Region Geography_, or _Macro Region Geography_  <br/> |
 |Satellite Geography  <br/> |If a customer subscribes to the Multi Geo service, then they can cause defined user customer data to be stored in other Geographies outside of the _Tenant_ _Primary Provisioned Geography_  <br/> |
-|AAD  <br/> |Azure Active Directory  <br/> |
-|Tenant  <br/> |A _Tenant_ represents an organization in Azure Active Directory. It's a reserved Azure AD service instance that an organization receives and owns when it signs up for a Microsoft cloud service such as Azure or Microsoft 365. Each Azure AD _Tenant_ is distinct and separate from other Azure AD _Tenant's_  <br/> |
+|Microsoft Entra ID  <br/> |Microsoft Entra ID  <br/> |
+|Tenant  <br/> |A _Tenant_ represents an organization in Microsoft Entra ID. It's a reserved Microsoft Entra service instance that an organization receives and owns when it signs up for a Microsoft cloud service such as Azure or Microsoft 365. Each Microsoft Entra ID _Tenant_ is distinct and separate from other Microsoft Entra ID _Tenant's_  <br/> |
 |Default Geography  <br/> |When an _AAD Tenant_ is created, a country/region is provided by the customer during the sign-up process.  This country/region determines the default Geography for all Microsoft 365 services.  In some cases, not all services are able to provision in this single _Default Geography_. See _Microsoft 365 Service provisioning mapping_ below for a description.  <br/> |
 |Microsoft 365 Service provisioning mapping  <br/> |All Microsoft 365 Services  use the _Default Geography_ to determine where a given _Tenant's_ specified data will be provisioned and stored.  <br/> |
 |Microsoft 365 Service provisioning country mapping  <br/> |Refer to [data maps](https://aka.ms/datamaps) to learn where a given service provisions specified customer data, based on the _Tenant Default Geography._  <br/> |
@@ -57,9 +57,11 @@ Microsoft makes decisions on where to persistently store customer data based on 
 1. The _Default Geography_ of the _Tenant_
 1. Available _Geographies_ for a given service
 
-### _Default Geography_ of the AAD _Tenant_
+<a name='default-geography-of-the-aad-tenant'></a>
 
-When a customer creates a new AAD _Tenant_, the customer enters a country/region during the creation process.  This country/region is what defines the _Default Geography_ for the _Tenant_.  There are multiple paths to creating _Tenants_.  They can be created through AAD forms, they can be created when trying out new Microsoft 365 services (trials), etc.  Once a _Tenant_ is created, the _Default Geography_ cannot be changed.
+### _Default Geography_ of the Microsoft Entra ID _Tenant_
+
+When a customer creates a new Microsoft Entra ID _Tenant_, the customer enters a country/region during the creation process.  This country/region is what defines the _Default Geography_ for the _Tenant_.  There are multiple paths to creating _Tenants_.  They can be created through Microsoft Entra ID forms, they can be created when trying out new Microsoft 365 services (trials), etc.  Once a _Tenant_ is created, the _Default Geography_ cannot be changed.
 
 ### Available Geographies for a given service
 

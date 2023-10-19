@@ -37,7 +37,7 @@ This article provides the steps for doing common management tasks for Groups in 
 
 When users [create or edit a group in Outlook](https://support.office.com/article/04d0c9cf-6864-423c-a380-4fa858f27102.aspx), you can show them a link to your organization's usage guidelines. For example, if you require a specific prefix or suffix to be added to a group name.
 
-Use the Azure Active Directory (Azure AD) PowerShell to point your users to your organization's usage guidelines for Microsoft 365 groups. Check out [Azure Active Directory cmdlets for configuring group settings](/azure/active-directory/enterprise-users/groups-settings-cmdlets) and follow the steps in the **Create settings at the directory level** to define the usage guideline hyperlink. After you run the Azure AD cmdlet, users see the link to your guidelines when they create or edit a group in Outlook.
+Use the Azure Active Directory (Azure AD) PowerShell to point your users to your organization's usage guidelines for Microsoft 365 groups. Check out [Microsoft Entra cmdlets for configuring group settings](/azure/active-directory/enterprise-users/groups-settings-cmdlets) and follow the steps in the **Create settings at the directory level** to define the usage guideline hyperlink. After you run the Microsoft Entra cmdlet, users see the link to your guidelines when they create or edit a group in Outlook.
 
 ![Create a new group with usage guidelines link.](../media/3f74463f-3448-4f24-a0ec-086d9aa95caa.png)
 
@@ -72,7 +72,7 @@ You can create sensitivity labels that the users in your organization can set wh
 
 You can still use the previous groups classification feature. You can create classifications that the users in your organization can set when they create a Microsoft 365 Group. For example, you can allow users to set **Standard**, **Secret**, and **Top Secret** on groups they create. Group classifications aren't set by default and you need to create it in order for your users to set it. Use Azure AD PowerShell to point your users to your organization's usage guidelines for Microsoft 365 Groups.
 
-Check out [Azure Active Directory cmdlets for configuring group settings](/azure/active-directory/users-groups-roles/groups-settings-cmdlets) and follow the steps in the **Create settings at the directory level** to define the classification for Microsoft 365 Groups.
+Check out [Microsoft Entra cmdlets for configuring group settings](/azure/active-directory/users-groups-roles/groups-settings-cmdlets) and follow the steps in the **Create settings at the directory level** to define the classification for Microsoft 365 Groups.
 
 ```powershell
 $setting["ClassificationList"] = "Low Impact, Medium Impact, High Impact"
@@ -179,7 +179,7 @@ To learn more, see [Set-OrganizationConfig](/powershell/module/exchange/set-orga
 The following cmdlets can be used with Microsoft 365 Groups.
 
 > [!TIP]
-> User photos for Microsoft 365 Groups are stored in Azure AD. To manage user photos for Microsoft 365 Groups, see [Manage user photos in Microsoft Graph PowerShell](../admin/add-users/change-user-profile-photos.md#manage-user-photos-in-microsoft-graph-powershell).
+> User photos for Microsoft 365 Groups are stored in Microsoft Entra ID. To manage user photos for Microsoft 365 Groups, see [Manage user photos in Microsoft Graph PowerShell](../admin/add-users/change-user-profile-photos.md#manage-user-photos-in-microsoft-graph-powershell).
 
 |Cmdlet name|Description|
 |---|---|

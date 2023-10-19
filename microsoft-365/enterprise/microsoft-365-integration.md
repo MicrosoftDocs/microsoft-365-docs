@@ -35,9 +35,9 @@ You can integrate Microsoft 365 with your existing on-premises Active Directory 
  - When you integrate AD DS, you can synchronize and manage user accounts for both environments. You can also add password hash synchronization (PHS) or single sign-on (SSO) so users can log on to both environments with their on-premises credentials.
  - When you integrate with on-premises server products, you create a hybrid environment. A hybrid environment can help as you migrate users or information to Microsoft 365, or you can continue to have some users or some information on-premises and some in the cloud. For more information about hybrid environments, see [hybrid cloud](../solutions/cloud-architecture-models.md#hybrid).
 
-You can also use the Azure Active Directory (Azure AD) advisors for customized setup guidance in the Microsoft 365 admin center (you must be signed in to Microsoft 365):
+You can also use the Microsoft Entra advisors for customized setup guidance in the Microsoft 365 admin center (you must be signed in to Microsoft 365):
 
-- [Azure AD setup guide](https://aka.ms/aadpguidance)
+- [Microsoft Entra setup guide](https://aka.ms/aadpguidance)
 - [Sync users from your org's directory](https://aka.ms/aadconnectpwsync)
 - [Active Directory Federation Services (AD FS) deployment advisor](https://aka.ms/adfsguidance)
    
@@ -61,7 +61,7 @@ If you want users to be able to log on to Microsoft 365 with their on-premises c
 
 A user logs on to their on-premises environment with their user account (domain\username). When they go to Microsoft 365, they must log on again with their work or school account (user@domain.com). The user name is the same in both environments. When you add PHS or PTA, the user has the same password for both environments, but will have to provide those credentials again when logging on to Microsoft 365. Directory synchronization with PHS is the most commonly used directory synchronization .
 
-To set up directory synchronization, use Azure AD Connect. For instructions, see [Set up directory synchronization for Microsoft 365](set-up-directory-synchronization.md) and [Azure AD Connect with express settings](/azure/active-directory/hybrid/how-to-connect-install-express).
+To set up directory synchronization, use Microsoft Entra Connect. For instructions, see [Set up directory synchronization for Microsoft 365](set-up-directory-synchronization.md) and [Microsoft Entra Connect with express settings](/azure/active-directory/hybrid/how-to-connect-install-express).
 
 Learn more about [preparing for directory synchronization to Microsoft 365](prepare-for-directory-synchronization.md).
 
@@ -69,13 +69,15 @@ Learn more about [preparing for directory synchronization to Microsoft 365](prep
 
 A user logs on to their on-premises environment with their user account. When they go to Microsoft 365, they are either logged on automatically, or they log on using the same credentials they use for their on-premises environment (domain\username).
 
-To set up SSO you also use Azure AD Connect. For instructions, see [Custom installation of Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-install-custom).
+To set up SSO you also use Microsoft Entra Connect. For instructions, see [Custom installation of Microsoft Entra Connect](/azure/active-directory/hybrid/how-to-connect-install-custom).
 
 For more information, see [single sign-on](/azure/active-directory/manage-apps/what-is-single-sign-on).
 
-## Azure AD Connect
+<a name='azure-ad-connect'></a>
 
-Azure AD Connect replaces older versions of identity integration tools such as DirSync and Azure AD Sync. If you want to update from Azure Active Directory Sync to Azure AD Connect, see [the upgrade instructions](/azure/active-directory/hybrid/how-to-dirsync-upgrade-get-started). 
+## Microsoft Entra Connect
+
+Microsoft Entra Connect replaces older versions of identity integration tools such as DirSync and Azure AD Sync. If you want to update from Azure Active Directory Sync to Microsoft Entra Connect, see [the upgrade instructions](/azure/active-directory/hybrid/how-to-dirsync-upgrade-get-started). 
 
 ## See also
 

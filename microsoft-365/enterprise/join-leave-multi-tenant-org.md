@@ -24,16 +24,18 @@ To join a multitenant organization, a global administrator in the owner organiza
 
 Once you've joined, you can leave a multitenant organization at any time.
 
-#### Related settings in Azure AD
+<a name='related-settings-in-azure-ad'></a>
 
-When you join an existing multitenant organization, the following settings are configured in Azure Active Directory:
+#### Related settings in Microsoft Entra ID
+
+When you join an existing multitenant organization, the following settings are configured in Microsoft Entra ID:
 
 - A cross-tenant synchronization configuration is added with the name *MTO_Sync_\<TenantID\>*, but no sync jobs are created yet. (If you already have a cross-tenant synchronization configuration, it remains unchanged.)
 - An organization relationship is added to the [cross-tenant access settings](/azure/active-directory/external-identities/cross-tenant-access-overview) based on the [multitenant organization templates](/azure/active-directory/multi-tenant-organizations/templates) for cross-tenant access and identity synchronization. (If an organizational relationship already exists, the existing one is used.)
 - The multitenant organization template for identity synchronization is set to allow users to sync into this tenant.
 - The multitenant org template for cross-tenant access will be set to automatically redeem user invitations, inbound as well as outbound.
 
-When you leave a multitenant organization, the cross-tenant access settings and cross-tenant synchronization configurations in Azure AD aren't affected.
+When you leave a multitenant organization, the cross-tenant access settings and cross-tenant synchronization configurations in Microsoft Entra ID aren't affected.
 
 ## Join an existing multitenant organization
 
@@ -69,13 +71,13 @@ To remove a tenant from a multitenant organization in Microsoft 365
 1. Select **Remove tenant**.
 1. Read the details regarding tenant removal in the side panel, and then select **Remove tenant**.
 
-Removing a tenant doesn't change any user synchronization configurations or cross-tenant access settings in Azure AD. We recommend you review these settings and make any updates needed after the tenant is removed.
+Removing a tenant doesn't change any user synchronization configurations or cross-tenant access settings in Microsoft Entra ID. We recommend you review these settings and make any updates needed after the tenant is removed.
 
 #### Remove synchronized users from other tenants
 
-When you remove a tenant from a multitenant organization, you may want to stop synchronizing users between that tenant and the tenants that remain in the multitenant organization. This can be done by updating the cross-tenant synchronization configuration in Azure AD and removing the security groups being synchronized, then restarting the synchronization with zero users.
+When you remove a tenant from a multitenant organization, you may want to stop synchronizing users between that tenant and the tenants that remain in the multitenant organization. This can be done by updating the cross-tenant synchronization configuration in Microsoft Entra ID and removing the security groups being synchronized, then restarting the synchronization with zero users.
 
-Cross-tenant synchronization configurations for multitenant organizations that were created in the Microsoft 365 admin center are named *MTO_Sync_\<TenantID\>* in Azure AD cross-tenant synchronization.
+Cross-tenant synchronization configurations for multitenant organizations that were created in the Microsoft 365 admin center are named *MTO_Sync_\<TenantID\>* in Microsoft Entra cross-tenant synchronization.
 
 To remove the cross-synchronized users:
 
@@ -124,7 +126,7 @@ For more information about cross-tenant access settings, see [Configure cross-te
 
 [Configure cross-tenant synchronization](/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-configure)
 
-[Overview: Cross-tenant access with Azure AD External Identities](/azure/active-directory/external-identities/cross-tenant-access-overview)
+[Overview: Cross-tenant access with Microsoft Entra External ID](/azure/active-directory/external-identities/cross-tenant-access-overview)
 
 [Plan for multitenant organizations in Microsoft 365](plan-multi-tenant-org-overview.md)
 
