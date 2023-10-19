@@ -63,9 +63,9 @@ additionalContent:
             - text: Data, Privacy, and Security for Microsoft 365 Copilot
               url: microsoft-365-copilot-privacy.md
             - text: Zero trust guidance
-              url: 
+              url: index.yml
             - text: Protect and manage Copilot interactions with Microsoft Purview
-              url: 
+              url: index.yml
         # Card
         - title: End user content
           links:
@@ -79,14 +79,14 @@ additionalContent:
             - text: Getting ready for Microsoft 365 Copilot learning path
               url: /training/paths/prepare-your-organization-microsoft-365-copilot/
             - text: Virtual training days
-              url: 
+              url: index.yml
             - text: 30-day challenge
-              url: 
+              url: index.yml
         # Card
         - title: Video library
           links:
             - text: Mechanics Copilot playlist
               url: https://www.youtube.com/playlist?list=PLXtHYVsvn_b-NeN9BbLb5sLpIGfdP8j78
             - text: Microsoft 365 Copilot - Security & Privacy
-              url: 
+              url: index.yml
 
