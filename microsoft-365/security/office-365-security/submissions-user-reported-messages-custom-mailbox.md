@@ -170,6 +170,8 @@ When you're finished on the **User reported settings** page, select **Save**.
 
 ### Options for third-party reporting tools
 
+If you are using a third-party button for end users, such as (but not limited to) KnowBe4 Report Phish, Cofense Report Phishing, or PhishAlarm, you can benefit from the power of Defender incident management, in-product phish triage, and native automated response capabilities by implementing integration of your button with Microsoft Defender for Office 365.
+
 When **Monitor reported messages in Outlook** is selected and you also select **Use a non-Microsoft add-in button**, the following options are available on the **User reported settings** page:
 
 - **Reported message destinations** section \> **Add an Exchange Online mailbox to send reported messages to**: Click in the box to find and select an existing Exchange Online mailbox to use as the reporting mailbox that holds user-reported messages from third-party reporting tools.
