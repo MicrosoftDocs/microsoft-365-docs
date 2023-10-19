@@ -4,7 +4,7 @@ f1.keywords: NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: tadaom
+ms.reviewer: hongda
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-business
@@ -13,9 +13,10 @@ ms.collection:
 - Tier3
 - Adm_O365
 - scotvorg
+- must-keep
 ROBOTS: NOINDEX, NOFOLLOW 
 description: "Learn how to view the Japanese katakana glossary for the Microsoft 365 admin center."
-ms.date: 2/24/2023
+ms.date: 10/19/2023
 ---
 <!-- DO NOT MAKE CHANGES TO THIS ARTICLE WITHOUT FIRST CONTACTING THE MS.REVIEWER -->
 
