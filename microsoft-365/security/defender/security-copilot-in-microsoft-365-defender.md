@@ -68,7 +68,7 @@ Most attackers rely on sophisticated malware when launching attacks to avoid det
 
 Security teams who use advanced hunting to proactively hunt for threats in their network can now use a query assistant that converts any natural-language question in the context of threat hunting, into a ready-to-run KQL query. The query assistant saves security teams time by generating a KQL query that can then be automatically run or further tweaked according to the analyst needs. Read more about the query assistant in [Security Copilot in advanced hunting](advanced-hunting-security-copilot.md).
 
-:::image type="content" source="../../media/copilot-in-defender/generate-kql/generate-kql-queries.png" alt-text="Screenshot of Security Copilot in advanced hunting" lightbox="../../media/copilot-in-defender/generate-kql/generate-kql-queries.png":::
+:::image type="content" source="../../media/copilot-in-defender/generate-kql/generate-kql-queries.png" alt-text="Screenshot of Security Copilot in advanced hunting." lightbox="../../media/copilot-in-defender/generate-kql/generate-kql-queries.png":::
 
 ### Write incident reports efficiently
 
