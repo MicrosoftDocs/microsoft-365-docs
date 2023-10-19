@@ -1,8 +1,8 @@
 ---
 title: How to subscribe to Microsoft Defender Experts for Hunting
 ms.reviewer:
-description: If you're new to Microsoft 365 Defender and Defender Experts for Hunting, this is how you subscribe
-keywords: managed threat hunting service, managed threat hunting, managed detection and response (MDR) service, MTE, Microsoft Threat Experts, MTE-TAN, targeted attack notification, defender experts notifications, endpoint attack notifications, Microsoft Defender Experts for hunting, threat hunting and analysis.
+description: If you're new to Microsoft 365 Defender and Defender Experts for Hunting, this is how you subscribe to Defender experts notifications
+keywords: managed threat hunting service, defender experts notifications, managed detection and response (MDR) service, MTE, Microsoft Threat Experts, MTE-TAN, targeted attack notification, endpoint attack notifications, Microsoft Defender Experts for hunting, managed response, guided response.
 search.product: Windows 10
 ms.service: microsoft-365-security
 ms.subservice: m365d
@@ -19,7 +19,7 @@ ms.collection:
   - tier1
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 07/26/2022
+ms.date: 10/17/2023
 ---
 
 # Start using Microsoft Defender Experts for Hunting

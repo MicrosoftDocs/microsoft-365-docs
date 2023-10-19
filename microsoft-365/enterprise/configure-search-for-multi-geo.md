@@ -1,10 +1,10 @@
 ---
 title: "Configure search for Microsoft 365 Multi-Geo"
-ms.reviewer: adwood
+ms.reviewer:
 ms.date: 08/10/2020
-ms.author: tlarsen
-author: tklarsen
-manager: arnek
+ms.author: mikeplum
+author: MikePlumleyMSFT
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise

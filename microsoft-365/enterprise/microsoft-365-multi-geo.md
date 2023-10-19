@@ -1,6 +1,6 @@
 ---
 title: "Microsoft 365 Multi-Geo"
-ms.reviewer: anfra
+ms.reviewer:
 ms.date: 08/10/2020
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -45,9 +45,11 @@ Enterprise Agreement customers must purchase a quantity of Multi-Geo licenses eq
 
 - Microsoft 365 F1, F3, E3, or E5
 - Office 365 F3, E1, E3, or E5
-- Exchange Online Plan 1 or Plan 2
-- OneDrive for Business Plan 1 or Plan 2
-- SharePoint Online Plan 1 or Plan 2
+- Standalone Exchange Online Plan 1 or Plan 2
+- Standalone OneDrive for Business Plan 1 or Plan 2
+- Standalone SharePoint Online Plan 1 or Plan 2
+
+***Note that Small Business products do not currently qualify for Multi-Geo, even if they contain elements of the above list.***
 
 Note that _Multi-Geo Capabilities in Microsoft 365_ is a user-level add-on license. You need a license for each user that you want to host in a _Satellite Geography_ location. You can add more licenses over time as you add users in _Satellite Geography_ locations.
 
