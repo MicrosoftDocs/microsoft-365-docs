@@ -220,15 +220,37 @@ Specifies the behavior of RTP on mount point marked as noexec. There are two val
 
 #### Unmonitor Filesystems
 
-Configure filesystems to be unmonitored/excluded from Real Time Protection(RTP). The filesystems configured are validated against Microsoft Defender's list of permitted filesystems. Only post successful validation, will the filesystem be allowed to be unmonitored. These configured unmonitored filesystems will still be scanned by Quick, Full, and custom scans.
-
-By default, NFS and Fuse are unmonitored from RTP, Quick, and Full scans. However, they can still be scanned by a custom scan.
+Configure filesystems to be unmonitored/excluded from Real Time Protection(RTP). The filesystems configured are validated against Microsoft Defender's list of monitored filesystems. Only post successful validation, will the filesystem be allowed to be unmonitored. These configured unmonitored filesystems will still be scanned by Quick, Full, and custom scans.
 
 |Description|Value|
 |---|---|
 |**Key**|unmonitoredFilesystems|
 |**Data type**|Array of strings|
 |**Comments**|Configured filesystem will be unmonitored only if it is present in Microsoft's list of permitted unmonitored filesystems.|
+
+By default, NFS and Fuse are part of unmonitored filesystems list(excluded from RTP). To remove NFS from the list of unmonitored filesystems list, do the following
+
+```JSON
+{
+   "antivirusEngine":{
+      "unmonitoredFilesystems": ["Fuse"]
+  }
+}
+```
+To remove both NFS and Fuse, do the following
+
+```JSON
+{
+   "antivirusEngine":{
+      "unmonitoredFilesystems": []
+  }
+}
+```
+
+>[!NOTE]
+>Here's the list of monitored Filesystems by default for RTP  **[btrfs, ecryptfs, ext2, ext3, ext4, fuseblk, jfs, overlay, ramfs, reiserfs, tmpfs, vfat, xfs]**
+>If any monitored filesystem needs to be added to the list of unmonitored filesystems,then it needs to be evaluated and enabled by Microsoft, if deemed safe. Following which customers can update managed_mdatp.json to unmonitor that filesystem.
+
 
 #### Configure file hash computation feature
 
