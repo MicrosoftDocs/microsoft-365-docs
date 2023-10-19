@@ -46,13 +46,13 @@ Microsoft 365 Defender exposes much of its data and actions through a set of pro
 
 In general, you'll need to take the following steps to use these APIs:
 
-- Create an Azure Active Directory (Azure AD) application.
+- Create a Microsoft Entra application.
 - Get an access token using this application.
 - Use the token to access Microsoft 365 Defender API.
 
 This article explains how to:
 
-- Create an Azure AD application
+- Create a Microsoft Entra application
 - Get an access token to Microsoft 365 Defender
 - Validate the token.
 
@@ -60,7 +60,7 @@ This article explains how to:
 
 1. Sign in to [Azure](https://portal.azure.com) as a user with the **Global Administrator** role.
 
-2. Navigate to **Azure Active Directory** > **App registrations** > **New registration**.
+2. Navigate to **Microsoft Entra ID** > **App registrations** > **New registration**.
 
    :::image type="content" source="../../media/atp-azure-new-app2.png" alt-text="The New registration tab in the Microsoft 365 Defender portal" lightbox="../../media/atp-azure-new-app2.png":::
 
@@ -119,7 +119,7 @@ This article explains how to:
 
 ## Get an access token
 
-For more information on Azure Active Directory tokens, see the [Azure AD tutorial](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
+For more information on Microsoft Entra tokens, see the [Microsoft Entra tutorial](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
 
 > [!IMPORTANT]
 > Although the examples in this section encourage you to paste in secret values for testing purposes, you should **never hardcode secrets** into an application running in production. A third party could use your secret to access resources. You can help keep your app's secrets secure by using [Azure Key Vault](/azure/key-vault/general/about-keys-secrets-certificates). For a practical example of how you can protect your app, see [Manage secrets in your server apps with Azure Key Vault](/training/modules/manage-secrets-with-azure-key-vault/).

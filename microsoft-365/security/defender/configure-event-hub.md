@@ -44,13 +44,15 @@ Learn how to configure your Event Hubs so that it can ingest events from Microso
 
 :::image type="content" source="../../media/f893db7a7b1f7aa520e8b9257cc72562.png" alt-text="The list of service providers page in the Microsoft Azure portal" lightbox="../../media/f893db7a7b1f7aa520e8b9257cc72562.png":::
 
-## Set up Azure Active Directory App Registration
+<a name='set-up-azure-active-directory-app-registration'></a>
+
+## Set up Microsoft Entra App Registration
 
 > [!NOTE]
-> You must have Administrator role or Azure Active Directory (AAD) must be set to allow non-Administrators to register apps. You must also have an Owner or User Access Administrator role to assign the service principal a role. For more information, see [Create an Azure AD app & service principal in the portal - Microsoft identity platform \| Microsoft Docs](/azure/active-directory/develop/howto-create-service-principal-portal).
+> You must have Administrator role or Microsoft Entra ID must be set to allow non-Administrators to register apps. You must also have an Owner or User Access Administrator role to assign the service principal a role. For more information, see [Create a Microsoft Entra app & service principal in the portal - Microsoft identity platform \| Microsoft Docs](/azure/active-directory/develop/howto-create-service-principal-portal).
 
 1. Create a new registration (which inherently creates a service principal) in
-**Azure Active Directory** \> **App registrations** \> **New registration.**
+**Microsoft Entra ID** \> **App registrations** \> **New registration.**
 
 1. Fill out the form with just the Name (no Redirect URI is required).
 
@@ -88,7 +90,7 @@ This client secret value is used by Microsoft Graph APIs to authenticate this ap
 You're required to add permissions to the following roles to entities that are involved in Event Hubs data management:
 
 - **Contributor**: The permissions related to this role are added to entity who logs in to the Microsoft 365 Defender portal.
-- **Reader** and **Azure Event Hub data Receiver**: The permissions related to these roles are assigned to the entity who is already assigned the role of a **Service Principal** and logs in to the Azure Active Directory application.
+- **Reader** and **Azure Event Hub data Receiver**: The permissions related to these roles are assigned to the entity who is already assigned the role of a **Service Principal** and logs in to the Microsoft Entra application.
 
 To ensure that these roles have been added, perform the following step:
 

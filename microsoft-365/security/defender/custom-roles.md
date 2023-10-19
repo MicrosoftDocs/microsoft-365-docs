@@ -39,10 +39,10 @@ search.appverid:
 
 There are two types of roles that can be used to access to Microsoft 365 Defender:
 
-- **Global Azure Active Directory (AD) roles**
+- **Global Microsoft Entra roles**
 - **Custom roles**
 
-Access to Microsoft 365 Defender can be managed collectively by using [Global roles in Azure Active Directory (AAD)](m365d-permissions.md)
+Access to Microsoft 365 Defender can be managed collectively by using [Global roles in Microsoft Entra ID](m365d-permissions.md)
 
 If you need greater flexibility and control over access to specific product data, Microsoft 365 Defender access can also be managed with the creation of Custom roles through each respective security portal.
 
@@ -79,7 +79,7 @@ Permissions and roles can also be managed in the Microsoft 365 Defender portal:
 
 ## Required roles and permissions
 
-The following table outlines the roles and permissions required to access each unified experience in each workload. Roles defined in the table below refer to custom roles in individual portals and are not connected to global roles in Azure AD, even if similarly named.
+The following table outlines the roles and permissions required to access each unified experience in each workload. Roles defined in the table below refer to custom roles in individual portals and are not connected to global roles in Microsoft Entra ID, even if similarly named.
 
 > [!NOTE]
 > Incident management requires management permissions for all products that are part of the incident.

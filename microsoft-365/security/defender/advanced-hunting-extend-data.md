@@ -31,7 +31,7 @@ ms.date: 02/16/2021
 **Applies to:**
 - Microsoft 365 Defender
 
-[Advanced hunting](advanced-hunting-overview.md) relies on data coming from various sources, including your devices, your Office 365 workspaces, Azure AD, and Microsoft Defender for Identity. To get the most comprehensive data possible, ensure that you have the correct settings in the corresponding data sources.
+[Advanced hunting](advanced-hunting-overview.md) relies on data coming from various sources, including your devices, your Office 365 workspaces, Microsoft Entra ID, and Microsoft Defender for Identity. To get the most comprehensive data possible, ensure that you have the correct settings in the corresponding data sources.
 
 ## Advanced security auditing on Windows devices
 Turn on these advanced auditing settings to ensure you get data about activities on your devices, including local account management, local security group management, and service creation.

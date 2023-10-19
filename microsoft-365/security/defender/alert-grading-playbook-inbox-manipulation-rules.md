@@ -183,7 +183,7 @@ CloudAppEvents
 ## Recommended actions
 
 1. Disable the malicious inbox rule.
-2. Reset the user account's credentials. You can also verify if the user account has been compromised with Microsoft Defender for Cloud Apps, which gets security signals from Azure Active Directory (Azure AD) Identity Protection.
+2. Reset the user account's credentials. You can also verify if the user account has been compromised with Microsoft Defender for Cloud Apps, which gets security signals from Microsoft Entra ID Protection.
 3. Search for other malicious activities performed by the impacted user account.
 4. Check for other suspicious activity in the tenant that originated from the same IP or from the same ISP (if the ISP is uncommon) to find other compromised user accounts.
 

@@ -50,13 +50,13 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `SenderMailFromAddress` | `string` | Sender email address in the MAIL FROM header, also known as the envelope sender or the Return-Path address |
 | `SenderFromAddress` | `string` | Sender email address in the FROM header, which is visible to email recipients on their email clients |
 | `SenderDisplayName` | `string` | Name of the sender displayed in the address book, typically a combination of a given or first name, a middle initial, and a last name or surname |
-| `SenderObjectId` | `string` |Unique identifier for the sender's account in Azure AD |
+| `SenderObjectId` | `string` |Unique identifier for the sender's account in Microsoft Entra ID |
 | `SenderMailFromDomain` | `string` | Sender domain in the MAIL FROM header, also known as the envelope sender or the Return-Path address |
 | `SenderFromDomain` | `string` | Sender domain in the FROM header, which is visible to email recipients on their email clients |
 | `SenderIPv4` | `string` | IPv4 address of the last detected mail server that relayed the message |
 | `SenderIPv6` | `string` | IPv6 address of the last detected mail server that relayed the message |
 | `RecipientEmailAddress` | `string` | Email address of the recipient, or email address of the recipient after distribution list expansion |
-| `RecipientObjectId` | `string` | Unique identifier for the email recipient in Azure AD |
+| `RecipientObjectId` | `string` | Unique identifier for the email recipient in Microsoft Entra ID |
 | `Subject` | `string` | Subject of the email |
 | `EmailClusterId` | `string` | Identifier for the group of similar emails clustered based on heuristic analysis of their contents |
 | `EmailDirection` | `string` | Direction of the email relative to your network:  Inbound, Outbound, Intra-org |

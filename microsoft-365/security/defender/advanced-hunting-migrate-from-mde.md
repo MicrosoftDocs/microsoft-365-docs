@@ -56,7 +56,7 @@ The [Microsoft 365 Defender advanced hunting schema](advanced-hunting-schema-tab
 | [EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md) | Security events that occur post-delivery, after Microsoft 365 has delivered the emails to the recipient mailbox |
 | [EmailUrlInfo](advanced-hunting-emailurlinfo-table.md) | Information about URLs on emails |
 | [IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md) | Events involving an on-premises domain controller running Active Directory (AD). This table covers a range of identity-related events and system events on the domain controller. |
-| [IdentityInfo](advanced-hunting-identityinfo-table.md) | Account information from various sources, including Azure Active Directory |
+| [IdentityInfo](advanced-hunting-identityinfo-table.md) | Account information from various sources, including Microsoft Entra ID |
 | [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md) | Authentication events on Active Directory and Microsoft online services |
 | [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md) | Queries for Active Directory objects, such as users, groups, devices, and domains |
 

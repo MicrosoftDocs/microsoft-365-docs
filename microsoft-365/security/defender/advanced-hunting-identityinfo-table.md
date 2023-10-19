@@ -31,7 +31,7 @@ ms.date: 02/16/2021
 **Applies to:**
 - Microsoft 365 Defender
 
-The `IdentityInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about user accounts obtained from various services, including Azure Active Directory. Use this reference to construct queries that return information from this table.
+The `IdentityInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about user accounts obtained from various services, including Microsoft Entra ID. Use this reference to construct queries that return information from this table.
 
 > [!NOTE]
 > This table was renamed from `AccountInfo`. During renames, all queries saved in the portal are automatically updated. Check queries you have saved elsewhere.
@@ -41,7 +41,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | Column name | Data type | Description |
 |-------------|-----------|-------------|
 | `Timestamp` [*](#mdi-only) | `datetime` | The date and time that the line was written to the database. <br><br>This is used when there are multiple lines for each identity, such as when a change is detected, or if 24 hours have passed since the last database line was added. |
-| `AccountObjectId` | `string` | Unique identifier for the account in Azure AD |
+| `AccountObjectId` | `string` | Unique identifier for the account in Microsoft Entra ID |
 | `AccountUpn` | `string` | User principal name (UPN) of the account |
 | `OnPremSid` | `string` | On-premises security identifier (SID) of the account |
 | `AccountDisplayName` | `string` | Name of the account user displayed in the address book. Typically a combination of a given or first name, a middle initiation, and a last name or surname. |
@@ -61,10 +61,10 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `Manager` [*](#mdi-only)  | `string` | The listed manager of the account user |
 | `Phone` [*](#mdi-only)  | `string` | The listed phone number of the account user|
 | `CreatedDateTime` [*](#mdi-only)  | `datetime` | The date and time that the user was created|
-| `SourceProvider` [*](#mdi-only)  | `string` |The identity's source, such as Azure Active Directory, Active Directory, or a [hybrid identity](/azure/active-directory/hybrid/what-is-provisioning) synchronized from Active Directory to Azure Active Directory |
+| `SourceProvider` [*](#mdi-only)  | `string` |The identity's source, such as Microsoft Entra ID, Active Directory, or a [hybrid identity](/azure/active-directory/hybrid/what-is-provisioning) synchronized from Active Directory to Microsoft Entra ID |
 | `ChangeSource` [*](#mdi-only)  | `string` |Identifies which identity provider or process triggered the addition of the new row. For example, the `System-UserPersistence` value is used for any rows added by an automated process.|
 | `Tags` [*](#mdi-only)  | `dynamic` | Tags assigned to the account user by Defender for Identity |
-| `AssignedRoles` [*](#mdi-only) | `dynamic` | For identities from Azure Active Directory only, the roles assigned to the account user|
+| `AssignedRoles` [*](#mdi-only) | `dynamic` | For identities from Microsoft Entra-only, the roles assigned to the account user|
 
 <a name="mdi-only"></a>* Available only for tenants with [Microsoft Defender for Identity](microsoft-365-security-center-mdi.md) deployed.
 

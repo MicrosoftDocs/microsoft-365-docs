@@ -45,7 +45,7 @@ Microsoft 365 Defender exposes much of its data and actions through a set of pro
 
 In general, you'll need to take the following steps to use the APIs:
 
-- Create an Azure Active Directory application
+- Create a Microsoft Entra application
 - Get an access token using this application
 - Use the token to access the Microsoft 365 Defender API
 
@@ -58,7 +58,7 @@ Once you've accomplished these steps, you're ready to access the Microsoft 365 D
 
 Use this context for apps that run without a signed-in user present, such as background services or daemons.
 
-1. Create an Azure Active Directory web application.
+1. Create a Microsoft Entra web application.
 2. Assign the desired permissions to the application.
 3. Create a key for the application.
 4. Get a security token using the application and its key.
@@ -70,7 +70,7 @@ For more information, see **[Create an app to access Microsoft 365 Defender with
 
 Use this context to perform actions on behalf of a single user.
 
-1. Create an Azure Active Directory native application.
+1. Create a Microsoft Entra native application.
 2. Assign the desired permission to the application.
 3. Get a security token using the user credentials for the application.
 4. Use the token to access the Microsoft 365 Defender API.
@@ -81,7 +81,7 @@ For more information, see **[Create an app to access Microsoft 365 Defender APIs
 
 Use this context when you need to provide an app to many users across [multiple tenants](/azure/active-directory/develop/single-and-multi-tenant-apps).
 
-1. Create an Azure Active Directory multi-tenant application.
+1. Create a Microsoft Entra multi-tenant application.
 2. Assign the desired permission to the application.
 3. Get [admin consent](/azure/active-directory/develop/v2-permissions-and-consent#requesting-consent-for-an-entire-tenant) for the app from each tenant.
 4. Get a security token using user credentials based on a customer's tenant ID.

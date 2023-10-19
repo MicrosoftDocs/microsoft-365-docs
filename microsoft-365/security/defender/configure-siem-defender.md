@@ -39,7 +39,7 @@ ms.date: 10/25/2021
 > - [Microsoft 365 Defender Incidents](incident-queue.md) consists of collections of correlated alerts and their evidence.
 > - [Microsoft 365 Defender Streaming API](streaming-api.md) streams event data from Microsoft 365 Defender to event hubs or Azure storage accounts.
 
-Microsoft 365 Defender supports security information and event management (SIEM) tools ingesting information from your enterprise tenant in Azure Active Directory (AAD) using the OAuth 2.0 authentication protocol for a registered AAD application representing the specific SIEM solution or connector installed in your environment.
+Microsoft 365 Defender supports security information and event management (SIEM) tools ingesting information from your enterprise tenant in Microsoft Entra ID using the OAuth 2.0 authentication protocol for a registered Microsoft Entra application representing the specific SIEM solution or connector installed in your environment.
 
 For more information, see:
 
@@ -73,7 +73,7 @@ Using the new, fully supported Splunk Add-on for Microsoft Security that support
 
   - Microsoft 365 Defender
   - Microsoft Defender for Endpoint
-  - Microsoft Defender for Identity and Azure Active Directory Identity Protection
+  - Microsoft Defender for Identity and Microsoft Entra ID Protection
   - Microsoft Defender for Cloud Apps
 
 - Ingesting Defender for Endpoint alerts (from the Defender for Endpoint's Azure endpoint) and updating these alerts
@@ -103,7 +103,7 @@ For more information on the Elastic connector, see: [Microsoft M365 Defender | E
 
 ## Ingesting streaming event data via Event Hubs
 
-First you need to stream events from your Azure AD tenant to your Event Hubs or Azure Storage Account. For more information, see [Streaming API](../defender/streaming-api.md).
+First you need to stream events from your Microsoft Entra tenant to your Event Hubs or Azure Storage Account. For more information, see [Streaming API](../defender/streaming-api.md).
 
 For more information on the event types supported by the Streaming API, see [Supported streaming event types](../defender/supported-event-types.md).
 

@@ -56,7 +56,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `InitiatingProcessAccountName` | `string` | User name of the account that ran the process responsible for the event |
 | `InitiatingProcessAccountSid` | `string` | Security Identifier (SID) of the account that ran the process responsible for the event |
 | `InitiatingProcessAccountUpn` | `string` | User principal name (UPN) of the account that ran the process responsible for the event |
-| `InitiatingProcessAccountObjectId` | `string` | Azure AD object ID of the user account that ran the process responsible for the event |
+| `InitiatingProcessAccountObjectId` | `string` | Microsoft Entra object ID of the user account that ran the process responsible for the event |
 | `InitiatingProcessSHA1` | `string` | SHA-1 of the process (image file) that initiated the event |
 | `InitiatingProcessSHA256` | `string` | SHA-256 of the process (image file) that initiated the event. This field is usually not populated — use the SHA1 column when available. |
 | `InitiatingProcessMD5` | `string` | MD5 hash of the process (image file) that initiated the event |
