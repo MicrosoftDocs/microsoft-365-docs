@@ -77,16 +77,16 @@ To turn off guest sharing in Microsoft 365 Groups
 > [!NOTE]
 > If you want to prevent guest sharing for a particular group or team, you can do so by using [Microsoft PowerShell](per-group-guest-access.md) or [sensitivity labels](../compliance/sensitivity-labels-teams-groups-sites.md).
 
-You can limit guest sharing to users from specific domains by allowing or blocking domains in Azure Active Directory. This will also affect guest sharing in SharePoint if you have enabled [SharePoint and OneDrive integration with Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview).
+You can limit guest sharing to users from specific domains by allowing or blocking domains in Microsoft Entra ID. This will also affect guest sharing in SharePoint if you have enabled [SharePoint and OneDrive integration with Microsoft Entra B2B](/sharepoint/sharepoint-azureb2b-integration-preview).
 
 To allow sharing invitations only from specified domains
-1. In Azure Active Directory, on the Overview page, expand **External identities**, and then choose **External collaboration settings**.
+1. In Microsoft Entra ID, on the Overview page, expand **External identities**, and then choose **External collaboration settings**.
 1. Under **Collaboration restrictions**, select **Deny invitations to the specified domains** or **Allow invitations only to the specified domains**, and then type the domains that you want to use.
 1. Click **Save**.
 
-    ![Screenshot of collaboration restrictions settings in Azure Active Directory.](../media/azure-ad-allow-only-specified-domains.png)
+    ![Screenshot of collaboration restrictions settings in Microsoft Entra ID.](../media/azure-ad-allow-only-specified-domains.png)
 
-You can also use **Cross-tenant access settings** in Azure AD to limit sharing to specific organizations. See [Limit guest sharing to specific organizations](limit-guest-sharing-to-specific-organization.md).
+You can also use **Cross-tenant access settings** in Microsoft Entra ID to limit sharing to specific organizations. See [Limit guest sharing to specific organizations](limit-guest-sharing-to-specific-organization.md).
 
 ## SharePoint site
 
@@ -218,9 +218,9 @@ Users who have access to files and folders in Microsoft 365 can download files a
 
 ## Conditional access
 
-Azure Active Directory conditional access provides options to limit or prevent sharing with people based on network location, device health, sign-in risk, and other factors. See [What is Conditional Access?](/azure/active-directory/conditional-access/overview).
+Microsoft Entra Conditional Access provides options to limit or prevent sharing with people based on network location, device health, sign-in risk, and other factors. See [What is Conditional Access?](/azure/active-directory/conditional-access/overview).
 
-SharePoint provides direct integration with Azure AD conditional access for both unmanaged devices and network location. See the following references for details:
+SharePoint provides direct integration with Microsoft Entra Conditional Access for both unmanaged devices and network location. See the following references for details:
 
 - [Control access from unmanaged devices](/sharepoint/control-access-from-unmanaged-devices)
 - [Control access to SharePoint and OneDrive data based on network location](/sharepoint/control-access-based-on-network-location)

@@ -54,7 +54,7 @@ If you want to delete a group but preserve the content from one or more of the g
 
 A groups naming policy can help you govern groups in two ways:
 
-- A prefix/suffix naming policy can be used to enforce fixed strings or Azure AD attributes at the beginning or end of a group name and its associated email address. By doing this, you can ensure the inclusion of, for example, department names or regions in group names.
+- A prefix/suffix naming policy can be used to enforce fixed strings or Microsoft Entra attributes at the beginning or end of a group name and its associated email address. By doing this, you can ensure the inclusion of, for example, department names or regions in group names.
 - A blocked words policy can ensure that certain words, such as the names of executives, aren't used in group names.
 
 Naming policies are applied when groups are created from any of the group-connected services.

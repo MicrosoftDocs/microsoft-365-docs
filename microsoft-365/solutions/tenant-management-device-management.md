@@ -47,9 +47,9 @@ You'll also determine how you're going to manage personal devices and organizati
 
 Microsoft provides a set of configurations for [identity and device access](../security/office-365-security/microsoft-365-policies-configurations.md) to ensure a secure and productive workforce. These configurations include the use of:
 
-- Azure AD Conditional Access policies
+- Microsoft Entra Conditional Access policies
 - Microsoft Intune device compliance and app protection policies
-- Azure AD Identity Protection user risk policies
+- Microsoft Entra ID Protection user risk policies
 - Additional policies of cloud apps
 
 Here is an example of the application of these settings and policies to validate and restrict users, their devices, and their use of local and cloud productivity apps like Microsoft Teams.

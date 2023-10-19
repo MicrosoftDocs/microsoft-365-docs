@@ -81,7 +81,7 @@ To set up a domain allow or deny list
 
 5. Click **Save**.
 
-If you want to limit sharing by domain at a higher level than SharePoint and OneDrive, you can [allow or block invitations to B2B users from specific organizations](/azure/active-directory/b2b/allow-deny-list) in Azure Active Directory. (You must configure the [SharePoint and OneDrive integration with Azure AD B2B Preview](/sharepoint/sharepoint-azureb2b-integration-preview) for these settings to affect SharePoint and OneDrive.)
+If you want to limit sharing by domain at a higher level than SharePoint and OneDrive, you can [allow or block invitations to B2B users from specific organizations](/azure/active-directory/b2b/allow-deny-list) in Microsoft Entra ID. (You must configure the [SharePoint and OneDrive integration with Microsoft Entra B2B Preview](/sharepoint/sharepoint-azureb2b-integration-preview) for these settings to affect SharePoint and OneDrive.)
 
 ## Limit sharing of files, folders, and sites with people outside your organization to specified security groups
 

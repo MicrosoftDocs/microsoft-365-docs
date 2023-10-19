@@ -27,26 +27,28 @@ description: "Learn about the guest sharing settings available in Microsoft 365 
 
 # Microsoft 365 guest sharing settings reference
 
-This article provides a reference for the various settings that can affect sharing with people outside your organization for the Microsoft 365 workloads: Teams, Microsoft 365 Groups, SharePoint, and OneDrive. These settings are located in the Azure Active Directory, Microsoft 365, Teams, and SharePoint admin centers.
+This article provides a reference for the various settings that can affect sharing with people outside your organization for the Microsoft 365 workloads: Teams, Microsoft 365 Groups, SharePoint, and OneDrive. These settings are located in the Microsoft Entra ID, Microsoft 365, Teams, and SharePoint admin centers.
 
-## Azure Active Directory
+<a name='azure-active-directory'></a>
+
+## Microsoft Entra ID
 
 **Admin role:** Global administrator
 
-Azure Active Directory is the directory service used by Microsoft 365. The Azure Active Directory Organizational relationships settings directly affect sharing in Teams, Microsoft 365 Groups, SharePoint, and OneDrive.
+Microsoft Entra ID is the directory service used by Microsoft 365. The Microsoft Entra Organizational relationships settings directly affect sharing in Teams, Microsoft 365 Groups, SharePoint, and OneDrive.
 
 > [!NOTE]
-> These settings only affect SharePoint when [SharePoint and OneDrive integration with Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview) has been configured. The table below assumes that this has been configured.
+> These settings only affect SharePoint when [SharePoint and OneDrive integration with Microsoft Entra B2B](/sharepoint/sharepoint-azureb2b-integration-preview) has been configured. The table below assumes that this has been configured.
 
 ### External collaboration settings
 
-**Navigation:** [Azure Active Directory admin center](https://aad.portal.azure.com) > Azure Active Directory > External Identities > External collaboration settings
+**Navigation:** [Microsoft Entra admin center](https://aad.portal.azure.com) > Microsoft Entra ID > External Identities > External collaboration settings
 
-![Screenshot of Azure Active Directory Organizational Relationships Settings page.](../media/azure-ad-organizational-relationships-settings.png)
+![Screenshot of Microsoft Entra Organizational Relationships Settings page.](../media/azure-ad-organizational-relationships-settings.png)
 
 | Setting | Default | Description |
 |:-----|:-----|:-----|
-|Guest user access|Guest users have limited access to properties and memberships of directory objects|Determines the [permissions that guests have in Azure Active Directory](/azure/active-directory/fundamentals/users-default-permissions).|
+|Guest user access|Guest users have limited access to properties and memberships of directory objects|Determines the [permissions that guests have in Microsoft Entra ID](/azure/active-directory/fundamentals/users-default-permissions).|
 |Guest invite settings|Anyone in the organization can invite guest users including guests and non-admins|Determines whether guests, members, and admins can invite guests to the organization. <p> This setting affects  Microsoft 365 sharing experiences such as Teams and SharePoint.|
 |Enable guest self-service sign-up via user flows|No|Determines if you can create user flows that allow someone to sign up for an app that you created and create a new guest account.|
 |Collaboration restrictions|Allow invitations to be sent to any domain|This setting allows you to specify a list of allowed or blocked domains for sharing. When allowed domains are specified, then sharing invitations can only be sent to those domains. When denied domains are specified, then sharing invitations cannot be sent to those domains. <p> This setting affects  Microsoft 365 sharing experiences such as Teams and SharePoint. You can allow or block domains at a more granular level by using domain filtering in SharePoint or Teams.|
@@ -55,23 +57,23 @@ These settings affect how users are invited to the directory. They do not affect
 
 ### Cross-tenant access settings
 
-**Navigation:** [Azure Active Directory admin center](https://aad.portal.azure.com) > Azure Active Directory > External Identities > Cross-tenant access settings > Default settings tab
+**Navigation:** [Microsoft Entra admin center](https://aad.portal.azure.com) > Microsoft Entra ID > External Identities > Cross-tenant access settings > Default settings tab
 
-The default settings apply to all external Azure AD organizations except those with organization-specific settings. Settings for a specific organization can be configured on the **Organizational settings** tab. There are separate settings for guests (B2B collaboration) and [Azure AD B2B direct connect](/azure/active-directory/external-identities/b2b-direct-connect-overview) users.
+The default settings apply to all external Microsoft Entra organizations except those with organization-specific settings. Settings for a specific organization can be configured on the **Organizational settings** tab. There are separate settings for guests (B2B collaboration) and [Microsoft Entra B2B direct connect](/azure/active-directory/external-identities/b2b-direct-connect-overview) users.
 
-![Screenshot of Azure Active Directory Cross-tenant access settings page.](../media/azure-ad-cross-tenant-default-settings.png)
+![Screenshot of Microsoft Entra Cross-tenant access settings page.](../media/azure-ad-cross-tenant-default-settings.png)
 
 **Inbound access settings**
 
-Inbound access settings control whether users from external Azure AD organizations can access resources in your organization.
+Inbound access settings control whether users from external Microsoft Entra organizations can access resources in your organization.
 
 | Setting | Default | Description |
 |:-----|:-----|:-----|
-|B2B collaboration - external users and groups|All Allowed|Determines what people in other Azure AD organizations can be granted access to resources in your organization as guests.|
+|B2B collaboration - external users and groups|All Allowed|Determines what people in other Microsoft Entra organizations can be granted access to resources in your organization as guests.|
 |B2B collaboration - applications|All allowed|Determines what apps in your organization guests can be granted access to.|
-|B2B direct connect - external users and groups|All blocked|Determines if people in other Azure AD organizations can be granted access to resources in your organization through B2B direct connect.|
+|B2B direct connect - external users and groups|All blocked|Determines if people in other Microsoft Entra organizations can be granted access to resources in your organization through B2B direct connect.|
 |B2B direct connect - applications|All blocked|Determines what apps in your organization B2B direct connect users can be granted access to.|
-|Trust settings|Disabled|Determines if your conditional access policies will accept claims from other Azure AD organizations when people from those organizations access your resources.|
+|Trust settings|Disabled|Determines if your conditional access policies will accept claims from other Microsoft Entra organizations when people from those organizations access your resources.|
 
 **Outbound access settings**
 
@@ -79,10 +81,10 @@ Outbound access settings control whether your users can access resources in an e
 
 | Setting | Default | Description |
 |:-----|:-----|:-----|
-|B2B collaboration - external users and groups|All Allowed|Determines which users in your organization can be granted access to resources in other Azure AD organizations as guests.|
-|B2B collaboration - applications|All allowed|Determines what apps in other Azure AD organizations your users can be granted access to as guests.|
-|B2B direct connect - external users and groups|All blocked|Determines which users in your organization can be granted access to resources in other Azure AD organizations through B2B direct connect.|
-|B2B direct connect - applications|All blocked|Determines what apps in other Azure AD organizations your users can be granted access to through B2B direct connect.|
+|B2B collaboration - external users and groups|All Allowed|Determines which users in your organization can be granted access to resources in other Microsoft Entra organizations as guests.|
+|B2B collaboration - applications|All allowed|Determines what apps in other Microsoft Entra organizations your users can be granted access to as guests.|
+|B2B direct connect - external users and groups|All blocked|Determines which users in your organization can be granted access to resources in other Microsoft Entra organizations through B2B direct connect.|
+|B2B direct connect - applications|All blocked|Determines what apps in other Microsoft Entra organizations your users can be granted access to through B2B direct connect.|
 
 ## Microsoft 365
 
@@ -98,7 +100,7 @@ The Microsoft 365 admin center has organization-level settings for sharing and f
 
 | Setting | Default | Description |
 |:-----|:-----|:-----|
-|Let users add new guests to the organization|On|When set to **Yes**, Azure AD members can invite guests via Azure AD; when set to **No**, they cannot. When set to **Yes**, Microsoft 365 group members can invite guests with owner approval; when set to **No**, Microsoft 365 group members can invite guests with owner approval but owners must be global administrators to approve. <p> Note that **Members can invite** refers to members in Azure AD (as opposed to guests) and not to site or group members in  Microsoft 365. <p> This is identical to the **Members can invite** setting in Azure Active Directory Organizational relationships settings.|
+|Let users add new guests to the organization|On|When set to **Yes**, Microsoft Entra members can invite guests via Microsoft Entra ID; when set to **No**, they cannot. When set to **Yes**, Microsoft 365 group members can invite guests with owner approval; when set to **No**, Microsoft 365 group members can invite guests with owner approval but owners must be global administrators to approve. <p> Note that **Members can invite** refers to members in Microsoft Entra ID (as opposed to guests) and not to site or group members in  Microsoft 365. <p> This is identical to the **Members can invite** setting in Microsoft Entra Organizational relationships settings.|
 
 ### Microsoft 365 Groups
 
@@ -197,7 +199,7 @@ Because OneDrive is a hierarchy of sites within SharePoint, the organization-lev
 |:-----|:-----|:-----|
 |Limit external sharing by domain|Off|This setting allows you to specify a list of allowed or blocked domains for sharing. When allowed domains are specified, then sharing invitations can only be sent to those domains. When denied domains are specified, then sharing invitations cannot be sent to those domains. <p> This setting affects all SharePoint and OneDrive sites in the organization.|
 |Allow only users in specific security groups to share externally|Off|If you want to limit who can share with guests in SharePoint and OneDrive, you can do so by limiting sharing to people in specified security groups. These settings do not affect sharing via Microsoft 365 Groups or Teams. Guests invited via a group or team would also have access to the associated site, though document and folder sharing could only be done by people in the specified security groups. <p> For each specified group, you can choose which of those users can share with Anyone links.|
-|Guests must sign in using the same account to which sharing invitations are sent|Off|Prevents guests from redeeming site sharing invitations using a different email address than the invitation was sent to. <p> [SharePoint and OneDrive integration with Azure AD B2B (Preview)](/sharepoint/sharepoint-azureb2b-integration-preview) does not use this setting because all guests are added to the directory based on the email address that the invitation was sent to. Alternate email addresses cannot be used to access the site.|
+|Guests must sign in using the same account to which sharing invitations are sent|Off|Prevents guests from redeeming site sharing invitations using a different email address than the invitation was sent to. <p> [SharePoint and OneDrive integration with Microsoft Entra B2B (Preview)](/sharepoint/sharepoint-azureb2b-integration-preview) does not use this setting because all guests are added to the directory based on the email address that the invitation was sent to. Alternate email addresses cannot be used to access the site.|
 |Allow guests to share items they don't own|On|When **On**, guests can share items that they don't own with other users or guests; when **Off** they cannot. Guests can always share items for which they have full control.|
 |People who use a verification code must reauthenticate after this many days|Off|This setting allows you to require that users authenticating with a one-time passcode need to reauthenticate after a certain number of days.|
 |Guest access to a site or OneDrive will expire automatically after this many days|On|If your administrator has set an expiration time for guest access, each guest that you invite to the site or with whom you share individual files and folders will be given access for a certain number of days. For more information visit, [Manage guest expiration for a site](https://support.microsoft.com/en-us/office/manage-guest-expiration-for-a-site-25bee24f-42ad-4ee8-8402-4186eed74dea)
@@ -250,7 +252,7 @@ You can set defaults for link type and permissions, and expiration settings for 
 
 | Setting | Default | Description |
 |:-----|:-----|:-----|
-|Limit sharing by domain|Off|This setting allows you to specify a list of allowed or blocked domains for sharing. When allowed domains are specified, then sharing invitations can only be sent to those domains. When denied domains are specified, then sharing invitations cannot be sent to those domains. <p> This setting cannot be used to override domain restrictions set at the organization or Azure AD level.|
+|Limit sharing by domain|Off|This setting allows you to specify a list of allowed or blocked domains for sharing. When allowed domains are specified, then sharing invitations can only be sent to those domains. When denied domains are specified, then sharing invitations cannot be sent to those domains. <p> This setting cannot be used to override domain restrictions set at the organization or Microsoft Entra ID level.|
 |Default sharing link type|Same as organization-level setting|This setting allows you to specify the default sharing link presented to users in this site. The *Same as organization-level setting* option is defined by a combination of organization and site sharing settings.|
 |Advanced settings for Anyone links|Same as organization-level setting|Specifies the number of days after an *Anyone* link is created for a file in this site that it expires. Expired links cannot be renewed. Create a new link if you need to continue sharing past the expiration.|
 |Default link permission|Same as organization-level setting|This setting allows you to specify the default permission (View or Edit) for sharing links created for files in this site.|

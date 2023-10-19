@@ -33,7 +33,7 @@ You can also prevent the addition of new guests to individual groups by using Po
 
 You must use the preview version of [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2) (module name **AzureADPreview**) to change the group-level guest access setting:
 
-- If you haven't installed any version of the Azure AD PowerShell module before, see [Installing the Azure AD Module](/powershell/azure/active-directory/install-adv2?preserve-view=true&view=azureadps-2.0-preview) and follow the instructions to install the public preview release.
+- If you haven't installed any version of the Azure AD PowerShell module before, see [Installing the Azure AD module](/powershell/azure/active-directory/install-adv2?preserve-view=true&view=azureadps-2.0-preview) and follow the instructions to install the public preview release.
 
 - If you have the 2.0 general availability version of the Azure AD PowerShell module (AzureAD) installed, you must uninstall it by running `Uninstall-Module AzureAD` in your PowerShell session, and then install the preview version by running `Install-Module AzureADPreview`.
 
@@ -111,6 +111,6 @@ Set-AzureADUser -ObjectId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressLis
 
 [Manage Group membership in the Microsoft 365 admin center](../admin/create-groups/add-or-remove-members-from-groups.md)
   
-[Azure Active Directory access reviews](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review)
+[Microsoft Entra access reviews](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review)
 
 [Set-AzureADUser](/powershell/module/azuread/set-azureaduser)
