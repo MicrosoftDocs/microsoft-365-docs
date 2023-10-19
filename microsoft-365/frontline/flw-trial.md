@@ -25,7 +25,7 @@ ms.date: 10/28/2022
 > [!NOTE]
 > This trial experience is coming soon. You can check when this is available to your organization by looking for a message in the [Message center](https://go.microsoft.com/fwlink/p/?linkid=2070717) in your Microsoft 365 Admin center.
 
-The Microsoft Teams Frontline Trial experience lets users in your organization who are in Teams initiate a Teams experience for their entire frontline team, as long as the other members are in Azure Active Directory (Azure AD). You can disable this feature for users in your organization by using the [AllowSelfServicePurchase PowerShell module](/microsoft-365/commerce/subscriptions/allowselfservicepurchase-powershell).
+The Microsoft Teams Frontline Trial experience lets users in your organization who are in Teams initiate a Teams experience for their entire frontline team, as long as the other members are in Microsoft Entra ID. You can disable this feature for users in your organization by using the [AllowSelfServicePurchase PowerShell module](/microsoft-365/commerce/subscriptions/allowselfservicepurchase-powershell).
 
 ## What services are included
 
@@ -48,7 +48,7 @@ Users can start a frontline trial for their team if they:
 > [!IMPORTANT]
 > If the user who initiated the trial leaves your organization before the trial ends, you as admin will need to monitor the trial, check in with the team to see who's benefiting from these features, and decide which users you'll need to upgrade to a paid license.
 
-Users can participate in a frontline worker trial if they have a managed Azure Active Directory domain email address.
+Users can participate in a frontline worker trial if they have a managed Microsoft Entra domain email address.
 
 Users can participate if they've previously started a trial, but can't initiate another trial.
 
@@ -84,7 +84,7 @@ Users may reach out to you to ask for licenses when the trial is ending. You'll 
 Near the end of the 90-day trial, you'll need to check with your users to see who needs to continue with a paid license. Make sure to do this before the Frontline Trial subscription expires to avoid any disruption to the users' experiences.
 
 > [!IMPORTANT]
-> If the Frontline Trial license ends and a user isn't immediately assigned a license that includes Teams, they lose access to Teams. After 30 days, their data (files, messages, and more) is deleted. The user still exists in Azure Active Directory. If a new license is assigned to the user to enable Teams functionality within the 30-day period, all their content in Teams will still exist.
+> If the Frontline Trial license ends and a user isn't immediately assigned a license that includes Teams, they lose access to Teams. After 30 days, their data (files, messages, and more) is deleted. The user still exists in Microsoft Entra ID. If a new license is assigned to the user to enable Teams functionality within the 30-day period, all their content in Teams will still exist.
 
 ### Choose an upgrade path
 

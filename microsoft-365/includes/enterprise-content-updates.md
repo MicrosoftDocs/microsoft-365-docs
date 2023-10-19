@@ -65,7 +65,7 @@ ms.date: 08/10/2020
 | 7/21/2020 | [NAT support with Office 365](/Office365/Enterprise/nat-support-with-office-365) | modified |
 | 7/21/2020 | [Setup guides for Microsoft 365 and Office 365 services](/Office365/Enterprise/setup-guides-for-office-365) | modified |
 | 7/22/2020 | [Planning your portal launch roll-out plan in SharePoint Online](/Office365/Enterprise/planportallaunchroll-out) | modified |
-| 7/22/2020 | [Microsoft 365 identity models and Azure Active Directory](/Office365/Enterprise/about-office-365-identity) | modified |
+| 7/22/2020 | [Microsoft 365 identity models and Microsoft Entra ID](/Office365/Enterprise/about-office-365-identity) | modified |
 | 7/22/2020 | [Activate Rights Management in the admin center](/Office365/Enterprise/activate-rms-in-office-365) | modified |
 | 7/22/2020 | [Assign Microsoft 365 licenses to user accounts](/Office365/Enterprise/assign-licenses-to-user-accounts) | modified |
 | 7/22/2020 | Automate file collection for eDiscovery | removed |

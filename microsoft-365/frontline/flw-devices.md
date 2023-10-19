@@ -75,25 +75,25 @@ In a shared devices deployment, the ability to store multiple user profiles on a
 
 ## User identity
 
-Microsoft 365 for frontline workers uses Azure AD as the underlying identity service for delivering and securing all applications and resources. Users must have an identity that exists in Azure AD to access Microsoft 365 cloud applications.
+Microsoft 365 for frontline workers uses Microsoft Entra ID as the underlying identity service for delivering and securing all applications and resources. Users must have an identity that exists in Microsoft Entra ID to access Microsoft 365 cloud applications.
 
-If you choose to manage frontline user identities with Active Directory Domain Services (AD DS) or a third-party identity provider, you’ll need to federate these identities to Azure AD. [Learn how to integrate your third-party service with Azure AD](flw-setup-microsoft-365.md#provision-users).
+If you choose to manage frontline user identities with Active Directory Domain Services (AD DS) or a third-party identity provider, you’ll need to federate these identities to Microsoft Entra ID. [Learn how to integrate your third-party service with Microsoft Entra ID](flw-setup-microsoft-365.md#provision-users).
 
 The possible implementation patterns for managing frontline identities include:
 
-- **Azure AD standalone:** Your organization creates and manages user, device, and application identities in Azure AD as a standalone identity solution for your frontline workloads. This implementation pattern is recommended as it simplifies your frontline deployment architecture and maximizes performance during user sign-on.
-- **Active Directory Domain Services (AD DS) integration with Azure AD:** Microsoft provides Azure AD Connect to join these two environments. Azure AD Connect replicates AD user accounts to Azure AD, allowing a user to have a single identity capable of accessing both local and cloud-based resources. Although both AD DS and Azure AD can exist as independent directory environments, you can choose to create hybrid directories.
-- **Third-party identity solution sync with Azure AD:** Azure AD supports integration with third-party identity providers such as Okta and Ping Identity through federation. [Learn more about using third-party identity providers](flw-setup-microsoft-365.md#provision-users).
+- **Microsoft Entra standalone:** Your organization creates and manages user, device, and application identities in Microsoft Entra ID as a standalone identity solution for your frontline workloads. This implementation pattern is recommended as it simplifies your frontline deployment architecture and maximizes performance during user sign-on.
+- **Active Directory Domain Services (AD DS) integration with Microsoft Entra ID:** Microsoft provides Microsoft Entra Connect to join these two environments. Microsoft Entra Connect replicates AD user accounts to Microsoft Entra ID, allowing a user to have a single identity capable of accessing both local and cloud-based resources. Although both AD DS and Microsoft Entra ID can exist as independent directory environments, you can choose to create hybrid directories.
+- **Third-party identity solution sync with Microsoft Entra ID:** Microsoft Entra ID supports integration with third-party identity providers such as Okta and Ping Identity through federation. [Learn more about using third-party identity providers](flw-setup-microsoft-365.md#provision-users).
 
 ### HR-driven user provisioning
 
 Automating user provisioning is a practical need for organizations that want frontline employees to be able to access applications and resources on day one. From a security perspective, it’s also important to automate deprovisioning during employee offboarding to ensure that previous employees don’t retain access to company resources.
 
-Azure AD user provisioning service integrates with cloud-based and on-premises HR applications, such as Workday and SAP SuccessFactors. You can configure the service to automate user provisioning and deprovisioning when an employee is created or disabled in the HR system.
+Microsoft Entra user provisioning service integrates with cloud-based and on-premises HR applications, such as Workday and SAP SuccessFactors. You can configure the service to automate user provisioning and deprovisioning when an employee is created or disabled in the HR system.
 
 ### My Staff
 
-With the [My Staff](/azure/active-directory/roles/my-staff-configure) feature in Azure Active Directory (Azure AD), you can delegate common user management tasks to frontline managers through the My Staff portal. Frontline managers can perform password resets or manage phone numbers for frontline workers directly from the store or factory floor, without having to route the requests to helpdesk, operations, or IT.
+With the [My Staff](/azure/active-directory/roles/my-staff-configure) feature in Microsoft Entra ID, you can delegate common user management tasks to frontline managers through the My Staff portal. Frontline managers can perform password resets or manage phone numbers for frontline workers directly from the store or factory floor, without having to route the requests to helpdesk, operations, or IT.
 
 My Staff also enables frontline managers to register their team members' phone numbers for SMS sign-in. If [SMS-based authentication](/azure/active-directory/authentication/howto-authentication-sms-signin) is enabled in your organization, frontline workers can sign in to Teams and other apps using only their phone numbers and a one-time passcode sent via SMS. This makes signing in for frontline workers simple, secure, and fast.
 
@@ -103,23 +103,23 @@ Mobile device management (MDM) solutions can simplify deployment, management and
 
 - **Zero-touch provisioning:** IT admins can enroll and pre-configure mobile devices without physical custody of the devices (for manual configuration). This capability is useful when deploying shared devices at scale to field locations because devices can be shipped directly to the intended frontline location where automated configuration and provisioning steps can be completed remotely.
 - **Single sign-out:** Stops background processes and automates user sign out across all applications and resources assigned to the previous user when a new user signs in. Android and iOS devices must be enrolled in shared device mode to use single sign out.
-- **Azure AD conditional access:** IT admins can implement automated access control decisions for cloud-based applications and resources through identity-driven signals. For example, it’s possible to prevent access by a shared or BYOD device that doesn’t have the latest security updates installed. [Learn more about how to secure your deployment](flw-setup-microsoft-365.md#step-6-configure-security).
+- **Microsoft Entra Conditional Access:** IT admins can implement automated access control decisions for cloud-based applications and resources through identity-driven signals. For example, it’s possible to prevent access by a shared or BYOD device that doesn’t have the latest security updates installed. [Learn more about how to secure your deployment](flw-setup-microsoft-365.md#step-6-configure-security).
 
 If you’re using a third-party MDM solution for your shared devices deployment, such as VMware’s Workspace ONE or SOTI MobiControl, it’s important to understand the associated capabilities, limitations and available workarounds.
 
 Some third-party MDMs can clear app data when a global sign out occurs on an Android device. However, app data clearing can miss data that is stored in a shared location, delete app settings, or cause first-run experiences to reappear. Android devices enrolled in shared device mode can selectively clear the necessary application data during device check-in or when the new user logs in to the device. [Learn more about authentication in shared device mode](#authentication).
 
-You can manually configure shared device mode in third-party MDM solutions for iOS and Android devices, however, manual configuration steps don’t mark the device compliant in Azure AD, which means conditional access isn’t supported in this scenario. If you choose to manually configure devices in shared device mode, you’ll need to take additional steps to re-enroll Android devices in shared device mode with zero-touch provisioning to get conditional access support when third-party MDM support is available by uninstalling and reinstalling Authenticator from the device.
+You can manually configure shared device mode in third-party MDM solutions for iOS and Android devices, however, manual configuration steps don’t mark the device compliant in Microsoft Entra ID, which means conditional access isn’t supported in this scenario. If you choose to manually configure devices in shared device mode, you’ll need to take additional steps to re-enroll Android devices in shared device mode with zero-touch provisioning to get conditional access support when third-party MDM support is available by uninstalling and reinstalling Authenticator from the device.
 
 A device can only be enrolled in one MDM solution, but you can use multiple MDM solutions to manage separate pools of devices. For example, you could use Workspace ONE for shared devices and Intune for BYOD. If you use multiple MDM solutions, keep in mind that some users may not be able to access shared devices because of a mismatch in conditional access policies.
 
-|MDM solution |Single sign out|Zero touch provisioning|Azure AD conditional access|
+|MDM solution |Single sign out|Zero touch provisioning|Microsoft Entra Conditional Access|
 |-------------|---------------|-----------------------|---------------------------|
 |Intune (Microsoft) |Supported for Android and iOS devices enrolled in shared device mode |Supported for Android and iOS devices enrolled in shared device mode |Supported for Android and iOS devices enrolled in shared device mode |
 |Workspace ONE (VMware) |Supported with [Clear Android app data](https://docs.vmware.com/en/VMware-Workspace-ONE-UEM/services/iOS_Platform/GUID-SharedDevicesOverview.html) capabilities. Unavailable for iOS |Currently unavailable for Android and iOS. |Currently unavailable for Android and iOS. |
 |MobiControl (SOTI) |Supported with [Wipe program data](https://www.soti.net/mc/help/v14.4/en/console/applications/wipe_app_data.html) capabilities. Unavailable for iOS. |Currently unavailable for Android and iOS. |Currently unavailable for Android and iOS. |
 
-Windows devices enrolled in Intune support single sign out, zero touch provisioning, and Azure AD conditional access. You don’t need to configure shared device mode on Windows devices.
+Windows devices enrolled in Intune support single sign out, zero touch provisioning, and Microsoft Entra Conditional Access. You don’t need to configure shared device mode on Windows devices.
 
 Intune is recommended for BYOD scenarios because it provides the best support and functionality out-of-the-box across device types.
 
@@ -135,11 +135,11 @@ To learn more, see ["Personal devices vs Organization-owned devices" in the Intu
 
 Authentication features control who or what uses an account to gain access to applications, data, and resources. Organizations deploying shared devices to frontline workers need authentication controls that don’t impede worker productivity while preventing unauthorized or unintended access to applications and data when devices are transferred between authenticated users.
 
-Microsoft’s frontline solution is delivered from the cloud and utilizes Azure AD as the underlying identity service for securing Microsoft 365 applications and resources. These authentication features in Azure AD address the unique considerations for shared devices deployments: automatic single sign-on, single sign out, and other strong authentication methods.
+Microsoft’s frontline solution is delivered from the cloud and utilizes Microsoft Entra ID as the underlying identity service for securing Microsoft 365 applications and resources. These authentication features in Microsoft Entra ID address the unique considerations for shared devices deployments: automatic single sign-on, single sign out, and other strong authentication methods.
 
 ### Shared device mode
 
-[Shared device mode](/azure/active-directory/develop/msal-shared-devices) is a feature of Azure AD that enables you to configure devices to be shared by employees. This feature enables single sign-on (SSO) and device-wide sign out for Microsoft Teams and all other apps that support shared device mode. You can integrate this capability into your line-of-business (LOB) apps using the Microsoft Authentication Library (MSAL). Once a device is in shared device mode, applications that leverage Microsoft Authentication Library (MSAL) can detect that they’re running on a shared device and determine who the current active user is. With this information, applications can accomplish these authentication controls:
+[Shared device mode](/azure/active-directory/develop/msal-shared-devices) is a feature of Microsoft Entra ID that enables you to configure devices to be shared by employees. This feature enables single sign-on (SSO) and device-wide sign out for Microsoft Teams and all other apps that support shared device mode. You can integrate this capability into your line-of-business (LOB) apps using the Microsoft Authentication Library (MSAL). Once a device is in shared device mode, applications that leverage Microsoft Authentication Library (MSAL) can detect that they’re running on a shared device and determine who the current active user is. With this information, applications can accomplish these authentication controls:
 
 - **Automatic single sign-on:** If a user has already signed into another MSAL application, the user will be logged into any application compatible with Shared Device Mode. This is an improvement to the previous single sign-on experience because it further reduces the time it takes to access applications after signing into the first application by removing the need for a user to select a previously signed in account.
 - **Single sign-out:** Once a user signs out of an app using MSAL, all other applications integrated with shared device mode can stop background processes and commence sign out data clearing processes to prevent unauthorized or unintended access by the next user.
@@ -148,7 +148,7 @@ Here's how shared device mode works, using Teams as an example. When an employee
 
 Shared device mode is an improvement to the app data clear functionality for Android because it allows application developers to selectively clear personal user data without impacting app settings or cached data. With shared device mode, the flags that allow an application to remember if a first run experience is shown aren't deleted so users don’t see a first run experience every time they sign-on.
 
-Shared device mode also allows a device to be enrolled into Azure AD once for all users so that you can easily create profiles that secure app and data usage on the shared device. This allows you to support conditional access without having to re-enroll the device every time a new user authenticates into the device.
+Shared device mode also allows a device to be enrolled into Microsoft Entra ID once for all users so that you can easily create profiles that secure app and data usage on the shared device. This allows you to support conditional access without having to re-enroll the device every time a new user authenticates into the device.
 
 You use a mobile device management (MDM) solution like Microsoft Intune or Microsoft Configuration Manager to prepare a device to be shared by installing the [Microsoft Authenticator app](https://support.microsoft.com/account-billing/how-to-use-the-microsoft-authenticator-app-9783c865-0308-42fb-a519-8cf666fe0acc) and turning on shared mode. Teams and all other apps that support shared device mode use the shared mode setting to manage users on the device. The MDM solution you use should also perform a device cleanup when sign out occurs.
 
@@ -179,7 +179,7 @@ Shared device mode is currently supported on Android devices. Here's some resour
 To manage and enroll Android devices into shared device mode using Intune, devices must be running Android OS version 8.0 or later, and have Google Mobile Services (GMS) connectivity. To learn more, see:
 
 - [Set up Intune enrollment for Android Enterprise dedicated devices](/mem/intune/enrollment/android-kiosk-enroll)
-- [Enroll Android Enterprise dedicated devices into Azure AD shared device mode](https://techcommunity.microsoft.com/t5/intune-customer-success/enroll-android-enterprise-dedicated-devices-into-azure-ad-shared/ba-p/1820093)
+- [Enroll Android Enterprise dedicated devices into Microsoft Entra shared device mode](https://techcommunity.microsoft.com/t5/intune-customer-success/enroll-android-enterprise-dedicated-devices-into-azure-ad-shared/ba-p/1820093)
 
 You can also choose to deploy the Microsoft Managed Home Screen app to tailor the experience for users on their Intune-enrolled Android dedicated devices. Managed Home Screen acts as a launcher for other approved apps to run on top of it, and lets you customize devices and restrict what employees can access. For example, you can define how apps appear on the home screen, add your company logo, set custom wallpaper, and allow employees to set a session PIN. You can even configure sign out to happen automatically after a specified period of inactivity.  To learn more, see:
 
@@ -195,7 +195,7 @@ If you're a developer, see the following resources for more information about ho
 
 ### Multifactor authentication
 
-Azure AD supports several forms of multifactor authentication with the Authenticator app, FIDO2 keys, SMS, voice calls, and more.
+Microsoft Entra ID supports several forms of multifactor authentication with the Authenticator app, FIDO2 keys, SMS, voice calls, and more.
 
 Due to higher cost and legal restrictions, the most secure authentication methods may not be practical for many organizations. For example, FIDO2 security keys are typically considered too expensive, biometric tools like Windows Hello may run against existing regulations or union rules, and SMS sign in may not be possible if frontline workers aren’t permitted to bring their personal devices to work.
 
@@ -225,17 +225,19 @@ If you're deploying with shared devices and the previous passwordless options ar
 
 ## Authorization
 
-Authorization features control what an authenticated user can do or access. In Microsoft 365, this is achieved through a combination of Azure AD conditional access policies and application protection policies.
+Authorization features control what an authenticated user can do or access. In Microsoft 365, this is achieved through a combination of Microsoft Entra Conditional Access policies and application protection policies.
 
 Implementing robust authorization controls is a critical component of securing a frontline shared devices deployment, particularly if it isn't possible to implement strong authentication methods like multifactor authentication (MFA) for cost or practicality reasons.
 
-### Azure AD conditional access
+<a name='azure-ad-conditional-access'></a>
+
+### Microsoft Entra Conditional Access
 
 With conditional access, you can create rules that limit access based on the following signals:
 
 - User or group membership
 - IP location information
-- Device (only available if the device is enrolled in Azure AD)
+- Device (only available if the device is enrolled in Microsoft Entra ID)
 - Application
 - Real-time and calculated risk detection
 
@@ -257,7 +259,7 @@ Conditional access **not** supported for:
 > [!NOTE]
 > Conditional access for Android devices managed with select third-party MDM solutions is coming soon.
 
-For more information on conditional access, see the [Azure AD conditional access documentation](/azure/active-directory/conditional-access/).
+For more information on conditional access, see the [Microsoft Entra Conditional Access documentation](/azure/active-directory/conditional-access/).
 
 ### App protection policies
 
@@ -284,13 +286,13 @@ Your deployment plan should include an inventory and assessment of the applicati
 
 For the purposes of this assessment, applications are categorized in three groups:
 
-- **Microsoft applications** are built and supported by Microsoft. Microsoft applications support Azure AD and integrate with Intune’s APP SDK. However, not all Microsoft applications are supported with shared device mode. [See a list of supported applications and availability.](authentication bookmark)
-- **Third-party applications** are built and sold commercially by a third-party provider. Some applications don’t support Azure AD, Intune’s APP SDK, or shared device mode. Work with the application provider and your Microsoft account team to confirm what the user experience will be.
-- **Custom line-of-business applications** are developed by your organization to address internal business needs. If you build applications using Power Apps, your app will automatically be enabled with Azure AD, Intune, and shared device mode.
+- **Microsoft applications** are built and supported by Microsoft. Microsoft applications support Microsoft Entra ID and integrate with Intune’s APP SDK. However, not all Microsoft applications are supported with shared device mode. [See a list of supported applications and availability.](authentication bookmark)
+- **Third-party applications** are built and sold commercially by a third-party provider. Some applications don’t support Microsoft Entra ID, Intune’s APP SDK, or shared device mode. Work with the application provider and your Microsoft account team to confirm what the user experience will be.
+- **Custom line-of-business applications** are developed by your organization to address internal business needs. If you build applications using Power Apps, your app will automatically be enabled with Microsoft Entra ID, Intune, and shared device mode.
 
 The applications that frontline users access meet these requirements (as applicable) for global single-in and single sign out to be enabled.
 
-- **Integrate custom and third-party applications with [MSAL](/azure/active-directory/develop/msal-overview):** Users can authenticate into your applications using Azure AD, enable SSO, and conditional access policies can be applied.
+- **Integrate custom and third-party applications with [MSAL](/azure/active-directory/develop/msal-overview):** Users can authenticate into your applications using Microsoft Entra ID, enable SSO, and conditional access policies can be applied.
 - **Integrate applications with shared device mode (applies only to Android or iOS shared devices):** Applications can use the necessary shared device mode APIs in MSAL to perform automatic single sign-on and single sign out. Appropriately using these APIs allows you to integrate with shared device mode. This isn’t necessary if you’re running your application in Teams, Microsoft Edge, or PowerApps.
 - **Integrate with Intune’s APP SDK (applies only to Android or iOS shared devices):** Applications can be managed in Intune to prevent unintended or unauthorized data exposure. This isn’t necessary if your MDM performs app data clears that wipe any sensitive data during device check-in flows (single sign out).
 
