@@ -24,13 +24,13 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # Manage self-service password reset in Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse lets Managed Service Providers (MSPs) manage Azure Active Directory (Azure AD) self-service password reset (SSPR). SSPR gives users the ability to change or reset their password with no administrator or help desk involvement. If a user's account is locked or they forget their password, they can follow prompts to unblock themselves and get back to work. This ability reduces help desk calls and loss of productivity when a user can't sign in to their device or an application.
+Microsoft 365 Lighthouse lets Managed Service Providers (MSPs) manage Microsoft Entra self-service password reset (SSPR). SSPR gives users the ability to change or reset their password with no administrator or help desk involvement. If a user's account is locked or they forget their password, they can follow prompts to unblock themselves and get back to work. This ability reduces help desk calls and loss of productivity when a user can't sign in to their device or an application.
 
 ## Before you begin
 
 The following conditions must be met before a tenant will appear in the list:
 
-- The customer tenant must have an Azure AD Premium license for each user. For more information on which licenses support SSPR, see [Licensing requirements for Azure Active Directory self-service password reset](/azure/active-directory/authentication/concept-sspr-licensing).
+- The customer tenant must have a Microsoft Entra ID P1 or P2 license for each user. For more information on which licenses support SSPR, see [Licensing requirements for Microsoft Entra self-service password reset](/azure/active-directory/authentication/concept-sspr-licensing).
 
 - The customer tenant must be active within Lighthouse. To learn how to determine if a tenant is active, see [Overview of the Tenants page in Microsoft 365 Lighthouse](m365-lighthouse-tenants-page-overview.md).
 
@@ -46,9 +46,9 @@ The Password reset page provides an overview of the tenants that have enabled SS
 
 2. On the **Password reset** page, select a tenant from the list to open the details pane.
 
-3. Select **Edit SSPR settings in Azure Active Directory** to go to Azure Active Directory (Azure AD).
+3. Select **Edit SSPR settings in Microsoft Entra ID** to go to Microsoft Entra ID.
 
-4. In Azure AD, enable SSPR for all or selected users. To learn more, see [Tutorial: Enable users to unlock their account or reset passwords using Azure Active Directory self-service password reset](/azure/active-directory/authentication/tutorial-enable-sspr).
+4. In Microsoft Entra ID, enable SSPR for all or selected users. To learn more, see [Tutorial: Enable users to unlock their account or reset passwords using Microsoft Entra self-service password reset](/azure/active-directory/authentication/tutorial-enable-sspr).
 
 ## Notify users to register for SSPR
 
@@ -66,7 +66,7 @@ If you want to use a different email account, you can export the list of users t
 
 ## Related content
 
-[Plan an Azure Active Directory self-service password reset deployment](/azure/active-directory/authentication/howto-sspr-deployment) (article)\
-[Tutorial: Enable users to unlock their account or reset passwords using Azure Active Directory self-service password reset](/azure/active-directory/authentication/tutorial-enable-sspr) (article)\
-[How to enable and configure SSPR in Azure AD](https://www.youtube.com/watch?v=rA8TvhNcCvQ) (video)\
+[Plan a Microsoft Entra self-service password reset deployment](/azure/active-directory/authentication/howto-sspr-deployment) (article)\
+[Tutorial: Enable users to unlock their account or reset passwords using Microsoft Entra self-service password reset](/azure/active-directory/authentication/tutorial-enable-sspr) (article)\
+[How to enable and configure SSPR in Microsoft Entra ID](https://www.youtube.com/watch?v=rA8TvhNcCvQ) (video)\
 [Manage multifactor authentication in Microsoft 365 Lighthouse](m365-lighthouse-manage-mfa.md) (article)

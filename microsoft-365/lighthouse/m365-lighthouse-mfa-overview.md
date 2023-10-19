@@ -1,5 +1,5 @@
 ---
-title: "Overview of the Multifactor authentication page in Microsoft 365 Lighthouse"
+title: "Overview of the multifactor authentication page in Microsoft 365 Lighthouse"
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -22,30 +22,30 @@ search.appverid: MET150
 description: "For Managed Service Providers (MSPs), learn more about multifactor authentication in Microsoft 365 Lighthouse."
 ---
 
-# Overview of the Multifactor authentication page in Microsoft 365 Lighthouse
+# Overview of the multifactor authentication page in Microsoft 365 Lighthouse
 
-Multifactor authentication (MFA) in Azure Active Directory (Azure AD) helps protect your customer tenants against breaches due to lost or stolen credentials by using a second form of authentication to provide an extra layer of security.
+Multifactor authentication (MFA) in Microsoft Entra ID helps protect your customer tenants against breaches due to lost or stolen credentials by using a second form of authentication to provide an extra layer of security.
 
 There are several ways to enable MFA:
 
-- **Conditional Access policies (Recommended)** – Enable conditional access policies for tenants with Azure AD Premium licensing.
+- **Conditional Access policies (Recommended)** – Enable conditional access policies for tenants with Microsoft Entra ID P1 or P2 licensing.
 
-- **Security defaults** – Enable security defaults for tenants without Azure AD Premium licensing.
+- **Security defaults** – Enable security defaults for tenants without Microsoft Entra ID P1 or P2 licensing.
 
-- **Per-user MFA** – It isn't recommended to enable MFA on a per-user basis unless the tenant doesn't have Azure AD Premium licensing and you don't want to use security defaults.
+- **Per-user MFA** – It isn't recommended to enable MFA on a per-user basis unless the tenant doesn't have Microsoft Entra ID P1 or P2 licensing and you don't want to use security defaults.
 
-The **Multifactor authentication** page provides detailed information on the status of MFA enablement across your customer tenants and recommended actions to enhance your customers’ security. Select any tenant in the list to see more details about that tenant, including which Conditional Access policies requiring MFA are already configured and which users still need to register for MFA.
+The **multifactor authentication** page provides detailed information on the status of MFA enablement across your customer tenants and recommended actions to enhance your customers’ security. Select any tenant in the list to see more details about that tenant, including which Conditional Access policies requiring MFA are already configured and which users still need to register for MFA.
 
-## Multifactor Authentication page
+## Multifactor authentication page
 
-The Multifactor Authentication page includes the following:
+The multifactor authentication page includes the following:
 
 - MFA enforcement
 - MFA registration
 - MFA insights
 - MFA insights by tenant
 
-:::image type="content" source="../media/m365-lighthouse-mfa-overview/m365-lighthouse-mfa-page.png" alt-text="Screenshot of the Multifactor authentication page." lightbox="../media/m365-lighthouse-mfa-overview/m365-lighthouse-mfa-page.png":::
+:::image type="content" source="../media/m365-lighthouse-mfa-overview/m365-lighthouse-mfa-page.png" alt-text="Screenshot of the multifactor authentication page." lightbox="../media/m365-lighthouse-mfa-overview/m365-lighthouse-mfa-page.png":::
 
 ## MFA enforcement
 
@@ -56,7 +56,7 @@ The MFA enforcement graph measures MFA enforcement progress by tenant, reporting
 - **No MFA detected** - No Conditional Access policies that require MFA are enabled, and Security defaults have been disabled.
 
 > [!NOTE]
-> The detection of a Conditional Access policy that requires MFA with a deployment state of enabled does not mean that all targeted users will be required to authenticate with MFA. An assessment of a tenant's conditional access policies in Microsoft 365 Lighthouse or the tenant's Azure Active Directory portal is needed to confirm the tenant is secure.
+> The detection of a Conditional Access policy that requires MFA with a deployment state of enabled does not mean that all targeted users will be required to authenticate with MFA. An assessment of a tenant's conditional access policies in Microsoft 365 Lighthouse or the tenant's Microsoft Entra admin center is needed to confirm the tenant is secure.
 
 ## MFA registration
 
@@ -92,14 +92,14 @@ Recommended actions are determined for each tenant based on MFA enablement, lice
 
 | **MFA enablement**                | **Licensing**            | **Registration progress**               | **Recommended actions**                              |
 |-----------------------------------|--------------------------|-----------------------------------------|------------------------------------------------------|
-| Conditional Access policy enabled | With Azure AD Premium    | Complete                                | Assess deployment                                    |
+| Conditional Access policy enabled | With Microsoft Entra ID P1 or P2    | Complete                                | Assess deployment                                    |
 |                                   |                          | Not complete                            | Assess deployment, complete MFA registration         |
-| Security defaults                 | With Azure AD Premium    | Complete                                | Deploy Conditional Access                            |
+| Security defaults                 | With Microsoft Entra ID P1 or P2    | Complete                                | Deploy Conditional Access                            |
 |                                   |                          | Not complete                            | Deploy Conditional Access, complete MFA registration |
-|                                   | Without Azure AD Premium | Data unavailable due to missing license |                                                      |
-| No MFA detected                   | With Azure AD Premium    | Complete                                | Deploy Conditional Access                            |
+|                                   | Without Microsoft Entra ID P1 or P2 | Data unavailable due to missing license |                                                      |
+| No MFA detected                   | With Microsoft Entra ID P1 or P2    | Complete                                | Deploy Conditional Access                            |
 |                                   |                          | Not complete                            | Enable security defaults, complete MFA registration  |
-|                                   | Without Azure AD Premium | Data unavailable due to missing license |                                                      |
+|                                   | Without Microsoft Entra ID P1 or P2 | Data unavailable due to missing license |                                                      |
 
 ## MFA insights by tenant
 
@@ -135,7 +135,7 @@ The **Excluded users** tab lists the user accounts that are part of the **Micros
 ## Related content
 
 [Manage multifactor authentication in Lighthouse](m365-lighthouse-manage-mfa.md) (article)\
-[Plan an Azure Active Directory Multi-Factor Authentication deployment](/azure/active-directory/authentication/howto-mfa-getstarted) (article)\
+[Plan a Microsoft Entra multifactor authentication deployment](/azure/active-directory/authentication/howto-mfa-getstarted) (article)\
 [What are security defaults?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) (article)\
 [What is Conditional Access?](/azure/active-directory/conditional-access/overview) (article)\
 [Learn how to convert users from per-user MFA to Conditional Access](/azure/active-directory/authentication/howto-mfa-getstarted#convert-users-from-per-user-mfa-to-conditional-access-based-mfa) (article)
