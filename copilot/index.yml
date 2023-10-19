@@ -56,7 +56,7 @@ additionalContent:
             - text: Extend Microsoft 365 Copilot
               url: /microsoftteams/platform/copilot/how-to-extend-copilot#how-to-make-your-graph-connector-work-better-with-copilot
             - text: Manage extensions
-              url: 
+              url: index.yml
         # Card
         - title: Security, privacy, and compliance
           links:
