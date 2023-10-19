@@ -72,7 +72,7 @@ To change the default sharing link
 1. Under **File and folder links**, select **Only people in your organization**.
 1. Select **Save**.
 
-For the best guest sharing experience, we also recommend that you enable [SharePoint and OneDrive integration with Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview).
+For the best guest sharing experience, we also recommend that you enable [SharePoint and OneDrive integration with Microsoft Entra B2B](/sharepoint/sharepoint-azureb2b-integration-preview).
 
 ## Create a team
 

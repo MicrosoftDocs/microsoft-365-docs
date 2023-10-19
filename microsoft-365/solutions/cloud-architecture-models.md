@@ -19,7 +19,7 @@ ms.date: 12/05/2022
 
 # Microsoft cloud for IT architects illustrations
 
-These cloud architecture posters give you information about Microsoft cloud services, including Microsoft 365, Azure Active Directory (Azure AD), Microsoft Intune, Microsoft Dynamics 365, and hybrid on-premises and cloud solutions. 
+These cloud architecture posters give you information about Microsoft cloud services, including Microsoft 365, Microsoft Entra ID, Microsoft Intune, Microsoft Dynamics 365, and hybrid on-premises and cloud solutions. 
 
 IT decision makers and architects can use these resources to determine the ideal solutions for their workloads and to make decisions about core infrastructure components such as networking, identity, and security.
 
@@ -62,7 +62,7 @@ What IT architects need to know about designing identity for organizations using
   
 | Item | Description |
 |:-----|:-----|
-|[![Thumb image for Microsoft cloud identity model.](../media/solutions-architecture-center/msft-cloud-identity-model-thumb.png)](https://download.microsoft.com/download/3/6/a/36a7c1ba-fe48-414f-92c9-9c9ddba323cd/5594928a.pdf) <br/> [PDF](https://download.microsoft.com/download/3/6/a/36a7c1ba-fe48-414f-92c9-9c9ddba323cd/5594928a.pdf)  <br/> Updated November 2021 | This model contains:  <ul> <li> Introduction to identity with Microsoft's cloud </li><li> Azure AD IDaaS capabilities </li><li>Zero Trust identity and device access policies</li><li> Integrating on-premises Active Directory Domain Services (AD DS) accounts with Azure AD </li><li> Putting directory components in Azure IaaS </li><li> AD DS options for workloads in Azure IaaS </li></ul><br/>  <br/>|
+|[![Thumb image for Microsoft cloud identity model.](../media/solutions-architecture-center/msft-cloud-identity-model-thumb.png)](https://download.microsoft.com/download/3/6/a/36a7c1ba-fe48-414f-92c9-9c9ddba323cd/5594928a.pdf) <br/> [PDF](https://download.microsoft.com/download/3/6/a/36a7c1ba-fe48-414f-92c9-9c9ddba323cd/5594928a.pdf)  <br/> Updated November 2021 | This model contains:  <ul> <li> Introduction to identity with Microsoft's cloud </li><li> Microsoft Entra IDaaS capabilities </li><li>Zero Trust identity and device access policies</li><li> Integrating on-premises Active Directory Domain Services (AD DS) accounts with Microsoft Entra ID </li><li> Putting directory components in Azure IaaS </li><li> AD DS options for workloads in Azure IaaS </li></ul><br/>  <br/>|
 
 <a name="security"></a>
 ### Microsoft cloud security for IT architects

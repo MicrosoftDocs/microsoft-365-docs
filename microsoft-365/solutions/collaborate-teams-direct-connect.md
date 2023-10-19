@@ -72,9 +72,9 @@ To enable external access
 
 #### Specify a link to your internal process for requesting new external organizations
 
-For users to invite people from outside your organization to a shared channel, both organizations must set up an organizational relationship in Azure AD B2B direct connect. (This is covered in the following sections.)
+For users to invite people from outside your organization to a shared channel, both organizations must set up an organizational relationship in Microsoft Entra B2B direct connect. (This is covered in the following sections.)
 
-You can specify an internal link for users who try to share a channel with people in an organization where a two-way Azure AD B2B direct connect relationship has not been set up. This link appears when they try to share the channel. Use this link to direct your users to your internal support page or request form for setting up shared channels with other organizations.
+You can specify an internal link for users who try to share a channel with people in an organization where a two-way Microsoft Entra B2B direct connect relationship has not been set up. This link appears when they try to share the channel. Use this link to direct your users to your internal support page or request form for setting up shared channels with other organizations.
 
 To specify an internal help link for shared channel users
 1. In the [Teams admin center](https://admin.teams.microsoft.com/), expand **Teams**, and then select **Teams settings**.
@@ -82,9 +82,11 @@ To specify an internal help link for shared channel users
 1. Type the URL to your support page in the **Support request page link** box.
 1. Select **Save**.
 
-## Configure cross-tenant access settings in Azure AD
+<a name='configure-cross-tenant-access-settings-in-azure-ad'></a>
 
-Azure AD B2B direct connect is disabled by default. To enable collaboration in shared channels with people from other organizations, you must:
+## Configure cross-tenant access settings in Microsoft Entra ID
+
+Microsoft Entra B2B direct connect is disabled by default. To enable collaboration in shared channels with people from other organizations, you must:
 
 1. [Add an organization](#add-an-organization).
 1. [Configure inbound settings](#configure-inbound-settings) for the organization to allow users from the organization to be invited to your shared channels.
@@ -100,7 +102,7 @@ As part of this configuration, we enable the **Office 365** application, which i
 Add each organization with which you want to participate in shared channels.
 
 To add an organization
-1. Sign in to [Azure Active Directory](https://entra.microsoft.com/) using a Global administrator or Security administrator account.
+1. Sign in to [Microsoft Entra ID](https://entra.microsoft.com/) using a Global administrator or Security administrator account.
 1. Select **External Identities**, and then select **Cross-tenant access settings**.
 1. Select **Organizational settings**.
 1. Select **Add organization**.
@@ -113,7 +115,7 @@ To add an organization
 Follow this procedure for each organization where you want to invite external participants.
 
 To configure inbound settings for an organization
-1. In [Azure Active Directory](https://entra.microsoft.com/), select **External Identities**, and then select **Cross-tenant access settings**.
+1. In [Microsoft Entra ID](https://entra.microsoft.com/), select **External Identities**, and then select **Cross-tenant access settings**.
 1. Select the inbound access link for the organization that you want to modify.
 1. On the **B2B direct connect** tab, choose **Customize settings**.
 1. On the **External users and groups** tab, choose **Allow access** and **All external users and groups**. (You can choose **Select external users and groups** if you want to limit access to specific users and groups, such as those who have signed a non-disclosure agreement.)
@@ -127,7 +129,7 @@ To configure inbound settings for an organization
 Follow this procedure for each organization where you want your users to be able to participate in external shared channels.
 
 To configure outbound settings for an organization
-1. In [Azure Active Directory](https://entra.microsoft.com/), select **External Identities**, and then select **Cross-tenant access settings**.
+1. In [Microsoft Entra ID](https://entra.microsoft.com/), select **External Identities**, and then select **Cross-tenant access settings**.
 1. Select the outbound access link for the organization that you want to modify.
 1. On the **B2B direct connect** tab, choose **Customize settings**.
 1. On the **External users and groups** tab, choose **Allow access** and set an **Applies to** of all users.

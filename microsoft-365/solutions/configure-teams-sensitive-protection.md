@@ -79,7 +79,7 @@ To create a sensitivity label
 1. Click **Next**.
 1. On the **Define external sharing and device access settings** page, select **Control external sharing from labeled SharePoint sites**.
 1. Under **Content can be shared with**, choose **New and existing guests** if you're allowing guest access or **Only people in your organization** if not.
-1. Select **Use Azure AD Conditional Access to protect labeled SharePoint sites**.
+1. Select **Use Microsoft Entra Conditional Access to protect labeled SharePoint sites**.
 1. Choose the **Determine whether users can access SharePoint sites from unmanaged devices** option, and then choose **Allow limited, web-only access**.
 1. Click **Next**.
 1. On the **Auto-labeling for database columns** page, click **Next**.
@@ -115,7 +115,7 @@ You can also use [teams policies](/MicrosoftTeams/teams-policies) to control who
 
 ## Shared channel settings
 
-[Shared channels](/MicrosoftTeams/shared-channels) doesn't have team-level settings. The shared channel settings you configure in the Teams admin center and Azure AD apply to all teams regardless of sensitivity.
+[Shared channels](/MicrosoftTeams/shared-channels) doesn't have team-level settings. The shared channel settings you configure in the Teams admin center and Microsoft Entra ID apply to all teams regardless of sensitivity.
 
 ## SharePoint settings
 

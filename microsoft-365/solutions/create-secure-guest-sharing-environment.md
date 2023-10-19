@@ -30,7 +30,7 @@ In this article, we'll walk through a variety of options for creating a more sec
 
 This article includes:
 
-- Setting up multi-factor authentication for guests.
+- Setting up multifactor authentication for guests.
 - Setting up a terms of use for guests.
 - Setting up quarterly guest access reviews to periodically validate whether guests continue to need permissions to teams and sites.
 - Restricting guests to web-only access for unmanaged devices.
@@ -39,17 +39,19 @@ This article includes:
 - Automatically assigning a sensitivity label to documents that contain a sensitive information type.
 - Automatically removing guest access from files with a sensitivity label.
 
-Some of the options discussed in this article require guests to have an account in Azure Active Directory. To ensure that guests are included in the directory when you share files and folders with them, use the [SharePoint and OneDrive integration with Azure AD B2B Preview](/sharepoint/sharepoint-azureb2b-integration-preview).
+Some of the options discussed in this article require guests to have an account in Microsoft Entra ID. To ensure that guests are included in the directory when you share files and folders with them, use the [SharePoint and OneDrive integration with Microsoft Entra B2B Preview](/sharepoint/sharepoint-azureb2b-integration-preview).
 
 Note that we won't discuss enabling guest sharing settings in this article. See [Collaborating with people outside your organization](collaborate-with-people-outside-your-organization.md) for details about enabling guest sharing for different scenarios.
 
-## Set up multi-factor authentication for guests
+<a name='set-up-multi-factor-authentication-for-guests'></a>
 
-Multi-factor authentication greatly reduces the chances of an account being compromised. Since guests may be using personal email accounts that don't adhere to any governance policies or best practices, it's especially important to require multi-factor authentication for guests. If a guest's username and password is stolen, requiring a second factor of authentication greatly reduces the chances of unknown parties gaining access to your sites and files.
+## Set up multifactor authentication for guests
 
-In this example, we'll set up multi-factor authentication for guests by using a conditional access policy in Azure Active Directory.
+Multifactor authentication greatly reduces the chances of an account being compromised. Since guests may be using personal email accounts that don't adhere to any governance policies or best practices, it's especially important to require multifactor authentication for guests. If a guest's username and password is stolen, requiring a second factor of authentication greatly reduces the chances of unknown parties gaining access to your sites and files.
 
-To set up multi-factor authentication for guests
+In this example, we'll set up multifactor authentication for guests by using a conditional access policy in Microsoft Entra ID.
+
+To set up multifactor authentication for guests
 
 1. Go to [Azure conditional access policies](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade).
 1. On the **Conditional Access | Policies** blade, click **New policy**.
@@ -60,28 +62,28 @@ To set up multi-factor authentication for guests
 1. Select the **Cloud apps or actions** link.
 1. Select **All cloud apps** on the **Include** tab.
 1. Select the **Grant** link.
-1. On the **Grant** blade, select the **Require multi-factor authentication** check box, and then click **Select**.
+1. On the **Grant** blade, select the **Require multifactor authentication** check box, and then click **Select**.
 1. Under **Enable policy**, click **On**, and then click **Create**.
 
-Now, guest will be required to enroll in multi-factor authentication before they can access shared content, sites, or teams.
+Now, guest will be required to enroll in multifactor authentication before they can access shared content, sites, or teams.
 
 ### More information
 
-[Planning an Azure AD multi-factor authentication deployment](/azure/active-directory/authentication/howto-mfa-getstarted)
+[Planning a Microsoft Entra multifactor authentication deployment](/azure/active-directory/authentication/howto-mfa-getstarted)
 
 ## Set up a terms of use for guests
 
 In some situations guests may not have signed non-disclosure agreements or other legal agreements with your organization. You can require guests to agree to a terms of use before accessing files that are shared with them. The terms of use can be displayed the first time they attempt to access a shared file or site.
 
-To create a terms of use, you first need to create the document in Word or another authoring program, and then save it as a .pdf file. This file can then be uploaded to Azure AD.
+To create a terms of use, you first need to create the document in Word or another authoring program, and then save it as a .pdf file. This file can then be uploaded to Microsoft Entra ID.
 
-To create an Azure AD terms of use
+To create a Microsoft Entra terms of use
 
 1. Sign in to Azure as a Global Administrator, Security Administrator, or Conditional Access Administrator.
 1. Navigate to [Terms of use](https://aka.ms/catou).
 1. Click **New terms**.
 
-   ![Screenshot of Azure AD new terms of use settings.](../media/azure-ad-guest-terms-of-use.png)
+   ![Screenshot of Microsoft Entra new terms of use settings.](../media/azure-ad-guest-terms-of-use.png)
 
 1. Type a **Name**.
 1. For **Terms of use document**, browse to the pdf file that you created and select it.
@@ -111,15 +113,15 @@ To create a conditional access policy
 Now, the first time a guest attempts to access content or a team or site in your organization, they will be required to accept the terms of use.
 
 > [!NOTE]
-> Using Conditional Access requires an Azure AD Premium P1 license. For more information, see [What is Conditional Access](/azure/active-directory/conditional-access/overview).
+> Using Conditional Access requires a Microsoft Entra ID P1 license. For more information, see [What is Conditional Access](/azure/active-directory/conditional-access/overview).
 
 ### More information
 
-[Azure Active Directory terms of use](/azure/active-directory/conditional-access/terms-of-use)
+[Microsoft Entra terms of use](/azure/active-directory/conditional-access/terms-of-use)
 
 ## Set up guest access reviews
 
-With access reviews in Azure AD, you can automate a periodic review of user access to various teams and groups. By requiring an access review for guests specifically, you can help ensure guests do not retain access to your organization's sensitive information for longer than is necessary.
+With access reviews in Microsoft Entra ID, you can automate a periodic review of user access to various teams and groups. By requiring an access review for guests specifically, you can help ensure guests do not retain access to your organization's sensitive information for longer than is necessary.
 
 To set up a guest access review
 
@@ -135,11 +137,11 @@ To set up a guest access review
 1. Select a start date and duration.
 1. For **End**, choose **Never**, and then click **Next: Settings**.
 
-    ![Screenshot of Azure AD access review tab.](../media/azure-ad-create-access-review.png)
+    ![Screenshot of Microsoft Entra access review tab.](../media/azure-ad-create-access-review.png)
 
 1. On the **Settings** tab, review the settings for compliance with your business rules.
 
-    ![Screenshot of Azure AD access review settings tab.](../media/azure-ad-create-access-review-settings.png)
+    ![Screenshot of Microsoft Entra access review settings tab.](../media/azure-ad-create-access-review-settings.png)
 
 1. Click **Next: Review + Create**.
 1. Type a **Review name** and review the settings.
@@ -147,15 +149,15 @@ To set up a guest access review
 
 ### More information
 
-[Manage guest access with Azure AD access reviews](/azure/active-directory/governance/manage-guest-access-with-access-reviews)
+[Manage guest access with Microsoft Entra access reviews](/azure/active-directory/governance/manage-guest-access-with-access-reviews)
 
-[Create an access review of groups or applications in Azure AD access reviews](/azure/active-directory/governance/create-access-review)
+[Create an access review of groups or applications in Microsoft Entra access reviews](/azure/active-directory/governance/create-access-review)
 
 ## Set up web-only access for guests with unmanaged devices
 
 If your guests use devices that are not managed by your organization or another organization that you have a trust relationship with, you can require them to access your teams, sites, and files by using a web browser only. This reduces the chance that they might download sensitive files and leave them on an unmanaged device. This is also useful when sharing with environments that use shared devices.
 
-For Microsoft 365 Groups and Teams, this is done with an Azure AD conditional access policy. For SharePoint, this is configured in the SharePoint admin center. (You can also [use sensitivity labels to restrict guests to web-only access](../compliance/sensitivity-labels-teams-groups-sites.md).)
+For Microsoft 365 Groups and Teams, this is done with a Microsoft Entra Conditional Access policy. For SharePoint, this is configured in the SharePoint admin center. (You can also [use sensitivity labels to restrict guests to web-only access](../compliance/sensitivity-labels-teams-groups-sites.md).)
 
 To restrict guests to web-only access for Groups and Teams:
 
@@ -172,11 +174,11 @@ To restrict guests to web-only access for Groups and Teams:
 1. On the **Conditions** blade, click the **Client apps** link.
 1. On the **Client apps** blade, click **Yes** for **Configure**, and then select the **Mobile apps and desktop clients**, **Exchange ActiveSync clients**, and **Other clients** settings. Clear the **Browser** check box.
 
-    ![Screenshot of Azure AD conditional access client apps settings.](../media/azure-ad-conditional-access-client-mobile.png)
+    ![Screenshot of Microsoft Entra Conditional Access client apps settings.](../media/azure-ad-conditional-access-client-mobile.png)
 
 1. Click **Done**.
 1. Click the **Grant** link.
-1. On the **Grant** blade, select **Require device to be marked as compliant** and **Require Hybrid Azure AD joined device**.
+1. On the **Grant** blade, select **Require device to be marked as compliant** and **Require Microsoft Entra hybrid joined device**.
 1. Under **For multiple controls**, select **Require one of the selected controls**, and then click **Select**.
 1. Under **Enable policy**, click **On**, and then click **Create**.
 
@@ -186,7 +188,7 @@ To restrict guests to web-only access for Groups and Teams:
 
 ## Configure a session timeout for guests
 
-Requiring guests to authenticate on a regular basis can reduce the possibility of unknown users accessing your organization's content if a guest's device isn't kept secure. You can configure a session timeout conditional access policy for guests in Azure AD.
+Requiring guests to authenticate on a regular basis can reduce the possibility of unknown users accessing your organization's content if a guest's device isn't kept secure. You can configure a session timeout conditional access policy for guests in Microsoft Entra ID.
 
 To configure a guest session timeout policy
 
@@ -294,10 +296,10 @@ It's important to note that this policy doesn't remove access if the guest is a 
 
 ## Additional options
 
-There are some additional options in Microsoft 365 and Azure Active Directory that can help secure your guest sharing environment.
+There are some additional options in Microsoft 365 and Microsoft Entra ID that can help secure your guest sharing environment.
 
 - You can create a list of allowed or denied sharing domains to limit who users can share with. See [Restrict sharing of SharePoint and OneDrive content by domain](/sharepoint/restricted-domains-sharing) and [Allow or block invitations to B2B users from specific organizations](/azure/active-directory/b2b/allow-deny-list) for more information.
-- You can limit which other Azure Active Directory tenants your users can connect to. See [Use tenant restrictions to manage access to SaaS cloud applications](/azure/active-directory/manage-apps/tenant-restrictions) for information.
+- You can limit which other Microsoft Entra tenants your users can connect to. See [Use tenant restrictions to manage access to SaaS cloud applications](/azure/active-directory/manage-apps/tenant-restrictions) for information.
 - You can create a managed environment where partners can help manage guest accounts. See [Create a B2B extranet with managed guests](/Office365/Enterprise/b2b-extranet) for information.
 
 ## See Also

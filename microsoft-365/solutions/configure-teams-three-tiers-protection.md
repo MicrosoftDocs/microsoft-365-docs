@@ -99,12 +99,12 @@ By default, both owners and members of the team can share files and folders with
 
 If you need to share Teams content with people outside your organization, there are two options:
 
-- **Guest sharing** - Guest sharing uses Azure AD B2B collaboration which allows users to share files, folders, sites, groups, and teams with people from outside your organization. These people access shared resources by using guest accounts in your directory.
-- **Shared channels** - Shared channels uses Azure AD B2B direct connect which allows users to share resources in your organization with people from other Azure AD organizations. These people access the shared channels in Teams by using their own work or school account. No guest account is created in your organization.
+- **Guest sharing** - Guest sharing uses Microsoft Entra B2B collaboration which allows users to share files, folders, sites, groups, and teams with people from outside your organization. These people access shared resources by using guest accounts in your directory.
+- **Shared channels** - Shared channels uses Microsoft Entra B2B direct connect which allows users to share resources in your organization with people from other Microsoft Entra organizations. These people access the shared channels in Teams by using their own work or school account. No guest account is created in your organization.
 
 Both guest sharing and shared channels are useful depending on the situation. See [Plan external collaboration](plan-external-collaboration.md) for details on each and how to decide which to use for a given scenario.
 
-If you plan to use guest sharing, we recommend configuring [SharePoint and OneDrive integration with Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview) for the best sharing and administration experience.
+If you plan to use guest sharing, we recommend configuring [SharePoint and OneDrive integration with Microsoft Entra B2B](/sharepoint/sharepoint-azureb2b-integration-preview) for the best sharing and administration experience.
 
 Teams guest sharing is on by default, but you can turn it off if needed in the sensitive and highly sensitive tiers by using a sensitivity label. Shared channels are on by default, but require setting up cross-organizational relationships for each organization you want to collaborate with. See [Collaborate with external participants in a channel](collaborate-teams-direct-connect.md) for details.
 
@@ -112,7 +112,7 @@ In the highly sensitive tier, we configure the default library sensitivity label
 
 We highly recommend that you leave guest sharing on for the baseline tier and for the sensitive or highly sensitive tiers if you need to collaborate with people outside your organization. The guest sharing features in Microsoft 365 provide a much more secure and governable sharing experience than sending files as attachments in email messages. It also reduces the risk of shadow IT where users use ungoverned consumer products to share with legitimate external collaborators.
 
-If you regularly collaborate with other organizations that use Azure AD, shared channels may be a good option. Shared channels appear seamlessly in the other organization's Teams client and allow external participants to use their regular user account for their organization rather than having to log in separately using a guest account.
+If you regularly collaborate with other organizations that use Microsoft Entra ID, shared channels may be a good option. Shared channels appear seamlessly in the other organization's Teams client and allow external participants to use their regular user account for their organization rather than having to log in separately using a guest account.
 
 See the following references to create a secure and productive guest sharing environment for your organization:
 
@@ -122,20 +122,20 @@ See the following references to create a secure and productive guest sharing env
 
 ## Conditional access policies
 
-Azure AD conditional access offers many options for determining how people access Microsoft 365, including limitations based on location, risk, device compliance, and other factors. We recommend you read [What is Conditional Access?](/azure/active-directory/conditional-access/overview) and consider which additional policies might be appropriate for your organization.
+Microsoft Entra Conditional Access offers many options for determining how people access Microsoft 365, including limitations based on location, risk, device compliance, and other factors. We recommend you read [What is Conditional Access?](/azure/active-directory/conditional-access/overview) and consider which additional policies might be appropriate for your organization.
 
 For the sensitive and highly sensitive tiers, we use sensitivity labels to restrict access to SharePoint content. 
 
 
 For the sensitive tier, we'll restrict access to web-only for unmanaged devices. (Note that guests often don't have devices that are managed by your organization. If you allow guests in any of the tiers, consider what kinds of devices they'll be using to access teams and sites and set your unmanaged device policies accordingly.)
 
-For the highly sensitive tier, we'll use [Azure Active Directory authentication context](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#configure-authentication-contexts) with the sensitivity label to trigger a custom conditional access policy when people access the SharePoint site associate with the team.
+For the highly sensitive tier, we'll use [Microsoft Entra authentication context](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#configure-authentication-contexts) with the sensitivity label to trigger a custom conditional access policy when people access the SharePoint site associate with the team.
 
 ### Conditional access across Teams-related services
 
-The conditional access settings in sensitivity labels only affect SharePoint access. If you want to expand conditional access beyond SharePoint, you can [Create an Azure Active Directory conditional access policy for all apps and services in your organization](/azure/active-directory/conditional-access/howto-conditional-access-policy-compliant-device) instead. To configure this policy specifically for [Microsoft 365 services](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#office-365), select the **Office 365** cloud app under **Cloud apps or actions**.
+The conditional access settings in sensitivity labels only affect SharePoint access. If you want to expand conditional access beyond SharePoint, you can [Create a Microsoft Entra Conditional Access policy for all apps and services in your organization](/azure/active-directory/conditional-access/howto-conditional-access-policy-compliant-device) instead. To configure this policy specifically for [Microsoft 365 services](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#office-365), select the **Office 365** cloud app under **Cloud apps or actions**.
 
-![Screenshot of the Office 365 cloud app in an Azure Active Directory conditional access policy.](../media/azure-ca-office365-policy.png)
+![Screenshot of the Office 365 cloud app in a Microsoft Entra Conditional Access policy.](../media/azure-ca-office365-policy.png)
 
 Using a policy that affects all Microsoft 365 services can lead to better security and a better experience for your users. For example, when you block access to unmanaged devices in SharePoint only, users can access the chat in a team with an unmanaged device, but will lose access when they try to access the **Files** tab. Using the Office 365 cloud app helps avoid issues with [service dependencies](/azure/active-directory/conditional-access/service-dependencies).
 
