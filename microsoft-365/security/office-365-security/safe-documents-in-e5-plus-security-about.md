@@ -19,7 +19,7 @@ ms.collection:
 description: Learn about Safe Documents in Microsoft 365 A5 or E5 Security.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 8/25/2023
+ms.date: 10/13/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
@@ -130,6 +130,6 @@ To verify that you've enabled and configured Safe Documents, do any of the follo
 
 - The following files are available to test Safe Documents protection. These files are similar to the EICAR.TXT file for testing anti-malware and anti-virus solutions. The files aren't harmful, but they trigger Safe Documents protection.
 
-  - [SafeDocsDemo.docx](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/SafeDocsDemo.docx)
-  - [SafeDocsDemo.pptx](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/SafeDocsDemo.pptx)
-  - [SafeDocsDemo.xlsx](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/SafeDocsDemo.xlsx)
+  - [SafeDocsDemo.docx](https://download.microsoft.com/download/1/9/7/19774467-5ff1-4c4d-9224-27b3751fa58f/SafeDocsDemo.docx)
+  - [SafeDocsDemo.pptx](https://download.microsoft.com/download/b/e/f/bef1df26-2c91-45b3-b8d0-348c6fead4af/SafeDocsDemo.pptx)
+  - [SafeDocsDemo.xlsx](https://download.microsoft.com/download/d/1/5/d1547fa8-575b-4ae0-969c-0d5265f6d985/SafeDocsDemo.xlsx)

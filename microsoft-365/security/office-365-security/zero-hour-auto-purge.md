@@ -44,7 +44,7 @@ Spam and malware signatures in the service are updated in real-time on a daily b
 - Zero-day malware that was undetectable during mail flow.
 - Content that's weaponized after being delivered to users.
 
-ZAP addresses these issues by continually monitoring spam and malware signature updates in the service. ZAP can find and take automated actions on messages that are already in a user's mailbox up to 48 hours after delivery. ZAP is seamless for users. Users aren't notified if a message is detected and moved.
+ZAP addresses these issues by continually monitoring spam and malware signature updates in the service, and is seamless for users. ZAP finds and takes automated action on messages that are already in a user's mailbox. ZAP's search is limited to the last 48 hours of delivered email. Users aren't notified if ZAP detects and moves a message.
 
 Watch this short video to learn how ZAP in Microsoft Defender for Office 365 automatically detects and neutralizes threats in email.
 

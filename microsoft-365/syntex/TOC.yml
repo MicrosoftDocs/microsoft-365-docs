@@ -203,6 +203,9 @@
     - name: Content query
       href: metadata-search.md
 
+    - name: Merge and extract PDFs
+      href: merge-extract-pdf.md
+
     - name: Content processing
       items: 
         - name: Overview 
