@@ -77,8 +77,8 @@ aadToken = jsonResponse["access_token"]
 where
 
 - tenantId: ID of the tenant on behalf of which you want to run the query (that is, the query will be run on the data of this tenant)
-- appId: ID of your Azure AD app (the app must have 'Run advanced queries' permission to Microsoft Defender for Endpoint)
-- appSecret: Secret of your Azure AD app
+- appId: ID of your Microsoft Entra app (the app must have 'Run advanced queries' permission to Microsoft Defender for Endpoint)
+- appSecret: Secret of your Microsoft Entra app
 
 ## Run query
 

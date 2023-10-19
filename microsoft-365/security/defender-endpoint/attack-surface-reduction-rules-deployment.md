@@ -99,7 +99,7 @@ The following table shows attack surface reduction rules by category:
 
 Although multiple methods of implementing attack surface reduction rules are possible, this guide is based on an infrastructure consisting of
 
-- Azure Active Directory
+- Microsoft Entra ID
 - Microsoft Intune
 - Windows 10 and Windows 11 devices
 - Microsoft Defender for Endpoint E5 or Windows E5 licenses

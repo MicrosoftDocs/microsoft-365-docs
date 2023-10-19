@@ -80,8 +80,8 @@ For Android Enterprise with a work profile - Information about Android applicati
   - Randomly generated globally unique identifier (GUID).
 
 - Tenant, Device and User information
-  - Azure Active Directory (AD) Device ID and Azure User ID: Uniquely identifies the device, User respectively at Azure Active directory.
-  - Azure tenant ID: GUID that identifies your organization within Azure Active Directory.
+  - Microsoft Entra Device ID and Azure User ID: Uniquely identifies the device, User respectively at Microsoft Entra ID.
+  - Azure tenant ID: GUID that identifies your organization within Microsoft Entra ID.
   - Microsoft Defender for Endpoint org ID: Unique identifier associated with the enterprise that the device belongs to. Allows Microsoft to identify whether issues are impacting a select set of enterprises and how many enterprises are impacted.
   - User Principal Name: Email ID of the user
 

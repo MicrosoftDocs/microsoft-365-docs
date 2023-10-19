@@ -51,15 +51,17 @@ It only takes 5 minutes done in two steps:
 
 ### Do I need a permission to connect?
 
-For the Application registration stage, you must have a **Global administrator** role in your Azure Active Directory (Azure AD) tenant.
+For the Application registration stage, you must have a **Global administrator** role in your Microsoft Entra tenant.
 
-### Step 1 - Create an App in Azure Active Directory
+<a name='step-1---create-an-app-in-azure-active-directory'></a>
+
+### Step 1 - Create an App in Microsoft Entra ID
 
 1. Log on to [Azure](https://portal.azure.com) with your **Global administrator** user.
 
-2. Navigate to **Azure Active Directory** \> **App registrations** \> **New registration**.
+2. Navigate to **Microsoft Entra ID** \> **App registrations** \> **New registration**.
 
-   :::image type="content" source="../images/atp-azure-new-app2.png" alt-text="The App registrations option under the Manage pane in the Azure Active Directory portal"  lightbox="../images/atp-azure-new-app2.png":::
+   :::image type="content" source="../images/atp-azure-new-app2.png" alt-text="The App registrations option under the Manage pane in the Microsoft Entra admin center"  lightbox="../images/atp-azure-new-app2.png":::
 
 3. In the registration form, choose a name for your application and then click **Register**.
 
@@ -70,7 +72,7 @@ For the Application registration stage, you must have a **Global administrator**
      > [!NOTE]
      > WindowsDefenderATP does not appear in the original list. You need to start writing its name in the text box to see it appear.
 
-     :::image type="content" source="../images/add-permission.png" alt-text="The API permissions option under the Manage pane in the Azure Active Directory portal" lightbox="../images/add-permission.png":::
+     :::image type="content" source="../images/add-permission.png" alt-text="The API permissions option under the Manage pane in the Microsoft Entra admin center" lightbox="../images/add-permission.png":::
 
    - Choose **Application permissions** \> **Alert.Read.All** > Click on **Add permissions**.
 
@@ -90,7 +92,7 @@ For the Application registration stage, you must have a **Global administrator**
    > [!NOTE]
    > Every time you add permission, you must click on **Grant consent** for the new permission to take effect.
 
-   :::image type="content" source="../images/grant-consent.png" alt-text="The grant permission consent option in the Azure Active Directory portal" lightbox="../images/grant-consent.png":::
+   :::image type="content" source="../images/grant-consent.png" alt-text="The grant permission consent option in the Microsoft Entra admin center" lightbox="../images/grant-consent.png":::
 
 6. Add a secret to the application.
 
@@ -99,13 +101,13 @@ For the Application registration stage, you must have a **Global administrator**
     > [!IMPORTANT]
     > After click Add, **copy the generated secret value**. You won't be able to retrieve after you leave!
 
-    :::image type="content" source="../images/webapp-create-key2.png" alt-text="The Certificates & secrets menu item in the Manage pane in the Azure Active Directory portal" lightbox="../images/webapp-create-key2.png":::
+    :::image type="content" source="../images/webapp-create-key2.png" alt-text="The Certificates & secrets menu item in the Manage pane in the Microsoft Entra admin center" lightbox="../images/webapp-create-key2.png":::
 
 7. Write down your application ID and your tenant ID.
 
    On your application page, go to **Overview** and copy the following:
 
-   :::image type="content" source="../images/app-and-tenant-ids.png" alt-text="The application details pane under the Overview menu item in the Azure Active Directory portal" lightbox="../images/app-and-tenant-ids.png":::
+   :::image type="content" source="../images/app-and-tenant-ids.png" alt-text="The application details pane under the Overview menu item in the Microsoft Entra admin center" lightbox="../images/app-and-tenant-ids.png":::
 
 Done! You have successfully registered an application!
 

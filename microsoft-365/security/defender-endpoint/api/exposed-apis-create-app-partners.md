@@ -44,24 +44,24 @@ search.appverid: met150
 
 [!include[Improve request performance](../../../includes/improve-request-performance.md)]
 
-This page describes how to create an Azure Active Directory (Azure AD) application to get programmatic access to Microsoft Defender for Endpoint on behalf of your customers.
+This page describes how to create a Microsoft Entra application to get programmatic access to Microsoft Defender for Endpoint on behalf of your customers.
 
 Microsoft Defender for Endpoint exposes much of its data and actions through a set of programmatic APIs. Those APIs will help you automate work flows and innovate based on Microsoft Defender for Endpoint capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 In general, you'll need to take the following steps to use the APIs:
 
-- Create a **multi-tenant** Azure AD application.
+- Create a **multi-tenant** Microsoft Entra application.
 - Get authorized(consent) by your customer administrator for your application to access Defender for Endpoint resources it needs.
 - Get an access token using this application.
 - Use the token to access Microsoft Defender for Endpoint API.
 
-The following steps will guide you how to create an Azure AD application, get an access token to Microsoft Defender for Endpoint and validate the token.
+The following steps will guide you how to create a Microsoft Entra application, get an access token to Microsoft Defender for Endpoint and validate the token.
 
 ## Create the multi-tenant app
 
 1. Sign in to your [Azure tenant](https://portal.azure.com) with user that has **Global Administrator** role.
 
-2. Navigate to **Azure Active Directory** \> **App registrations** \> **New registration**.
+2. Navigate to **Microsoft Entra ID** \> **App registrations** \> **New registration**.
 
    :::image type="content" source="../images/atp-azure-new-app2.png" alt-text="The navigation to application registration pane" lightbox="../images/atp-azure-new-app2.png":::
 
@@ -142,7 +142,7 @@ In the following example we will use **'Read all alerts'** permission:
 
 **Note:** To get access token on behalf of your customer, use the customer's tenant ID on the following token acquisitions.
 
-For more information on AAD token, see [AAD tutorial](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
+For more information on Microsoft Entra token, see [Microsoft Entra tutorial](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
 ### Using PowerShell
 

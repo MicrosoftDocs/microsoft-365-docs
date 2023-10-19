@@ -42,13 +42,13 @@ By default, MSSP customers access their Microsoft 365 Defender tenant through th
 
 MSSPs however, will need to use a tenant-specific URL in the following format: `https://security.microsoft.com?tid=customer_tenant_id` to access the MSSP customer portal.
 
-In general, MSSPs will need to be added to each of the MSSP customer's Azure AD that they intend to manage.
+In general, MSSPs will need to be added to each of the MSSP customer's Microsoft Entra ID that they intend to manage.
 
 Use the following steps to obtain the MSSP customer tenant ID and then use the ID to access the tenant-specific URL:
 
-1. As an MSSP, log in to Azure AD with your credentials.
+1. As an MSSP, log in to Microsoft Entra ID with your credentials.
 2. Switch directory to the MSSP customer's tenant.
-3. Select **Azure Active Directory > Properties**. You'll find the tenant ID in the Tenant ID field.
+3. Select **Microsoft Entra ID > Properties**. You'll find the tenant ID in the Tenant ID field.
 4. Access the MSSP customer portal by replacing the `customer_tenant_id` value in the following URL: `https://security.microsoft.com/?tid=customer_tenant_id`.
 5. Access a Unified View for MSSP (Preview) in `https://mto.security.microsoft.com/`
 

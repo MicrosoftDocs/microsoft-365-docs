@@ -43,7 +43,7 @@ You can also create new device groups to assign policies with specific settings 
 > [!NOTE]
 > As you create policies in Defender for Business, an order of priority is assigned. If you apply multiple policies to a given set of devices, those devices will receive the first applied policy only. For more information, see [Understand policy order in Defender for Business](mdb-policy-order.md).
 
-All device groups, including your default device groups and any custom device groups that you define, are stored in [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) (Azure AD).
+All device groups, including your default device groups and any custom device groups that you define, are stored in [Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-whatis) (Microsoft Entra ID).
 
 ## Create a new device group
 

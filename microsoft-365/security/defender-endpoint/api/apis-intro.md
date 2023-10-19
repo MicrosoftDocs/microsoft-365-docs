@@ -46,7 +46,7 @@ Watch this video for a quick overview of Defender for Endpoint's APIs.
 
 In general, you'll need to take the following steps to use the APIs:
 
-- Create an [AAD application](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-nativeapp)
+- Create an [Microsoft Entra application](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-nativeapp)
 - Get an access token using this application
 - Use the token to access Defender for Endpoint API
 
@@ -58,7 +58,7 @@ You can access Defender for Endpoint API with **Application Context** or **User 
 
   Steps that need to be taken to access Defender for Endpoint API with application context:
 
-  1. Create an AAD Web-Application.
+  1. Create a Microsoft Entra Web-Application.
   2. Assign the desired permission to the application, for example, 'Read Alerts', 'Isolate Machines'.
   3. Create a key for this Application.
   4. Get token using the application with its key.
@@ -72,7 +72,7 @@ You can access Defender for Endpoint API with **Application Context** or **User 
 
   Steps to take to access Defender for Endpoint API with user context:
 
-  1. Create AAD Native-Application.
+  1. Create Microsoft Entra Native-Application.
   2. Assign the desired permission to the application, e.g 'Read Alerts', 'Isolate Machines' etc.
   3. Get token using the application with user credentials.
   4. Use the token to access the Microsoft Defender for Endpoint API

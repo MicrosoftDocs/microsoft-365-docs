@@ -32,7 +32,7 @@ ms.date: 12/18/2020
 
 ## Conditional Access with Defender for Endpoint on Android
 
-Microsoft Defender for Endpoint on Android, along with Microsoft Intune and Azure Active Directory, enables enforcing Device compliance and Conditional Access policies based on device risk levels. Defender for Endpoint is a Mobile Threat Defense (MTD) solution that you can deploy through Intune.
+Microsoft Defender for Endpoint on Android, along with Microsoft Intune and Microsoft Entra ID, enables enforcing Device compliance and Conditional Access policies based on device risk levels. Defender for Endpoint is a Mobile Threat Defense (MTD) solution that you can deploy through Intune.
 
 For more information about how to set up Defender for Endpoint on Android and Conditional Access, see [Defender for Endpoint and Intune](/mem/intune/protect/advanced-threat-protection).
 
@@ -340,4 +340,3 @@ Use the following steps to configure the Device tags:
 - [Overview of Microsoft Defender for Endpoint on Android](microsoft-defender-endpoint-android.md)
 - [Deploy Microsoft Defender for Endpoint on Android with Microsoft Intune](android-intune.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
-

@@ -49,17 +49,17 @@ This page describes how to create an application to get programmatic access to D
 Microsoft Defender for Endpoint exposes much of its data and actions through a set of programmatic APIs. Those APIs will help you automate work flows and innovate based on Defender for Endpoint capabilities. The API access requires OAuth2.0 authentication. For more information, see [OAuth 2.0 Authorization Code Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 In general, you'll need to take the following steps to use the APIs:
-- Create an Azure Active Directory (Azure AD) application.
+- Create a Microsoft Entra application.
 - Get an access token using this application.
 - Use the token to access Defender for Endpoint API.
 
-This article explains how to create an Azure AD application, get an access token to Microsoft Defender for Endpoint, and validate the token.
+This article explains how to create a Microsoft Entra application, get an access token to Microsoft Defender for Endpoint, and validate the token.
 
 ## Create an app
 
 1. Log on to [Azure](https://portal.azure.com) with a user that has the **Global Administrator** role.
 
-2. Navigate to **Azure Active Directory** \> **App registrations** \> **New registration**. 
+2. Navigate to **Microsoft Entra ID** \> **App registrations** \> **New registration**. 
 
     :::image type="content" source="../images/atp-azure-new-app2.png" alt-text="The application registration pane" lightbox="../images/atp-azure-new-app2.png":::
 
@@ -123,7 +123,7 @@ This article explains how to create an Azure AD application, get an access token
 
 ## Get an access token
 
-For more information on Azure AD tokens, see the [Azure AD tutorial](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
+For more information on Microsoft Entra tokens, see the [Microsoft Entra tutorial](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
 
 ### Use PowerShell
 
