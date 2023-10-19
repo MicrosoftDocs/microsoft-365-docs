@@ -31,11 +31,11 @@ appliesto:
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-Global roles in Azure Active Directory (Azure AD) allow you to manage permissions and access to capabilities in all of Microsoft 365, which also includes Microsoft Defender for Office 365. But, if you need to limit permissions and capabilities to security features in Defender for Office 365 only, you can assign **Email & collaboration** permissions in the Microsoft 365 Defender portal.
+Global roles in Microsoft Entra ID allow you to manage permissions and access to capabilities in all of Microsoft 365, which also includes Microsoft Defender for Office 365. But, if you need to limit permissions and capabilities to security features in Defender for Office 365 only, you can assign **Email & collaboration** permissions in the Microsoft 365 Defender portal.
 
 To manage Defender for Office 365 permissions in the Microsoft 365 Defender portal, go to **Permissions** \> **Email & collaboration roles** \> **Roles** or go directly to <https://security.microsoft.com/emailandcollabpermissions>.
 
-You need to be member of the **Global Administrator** role in Azure AD or a member of the **Organization Management** role group in Defender for Office 365 permissions. Specifically, the **Role Management** role in Defender for Office 365 allows users to view, create, and modify Defender for Office 365 role groups. By default, that role is assigned only to the **Organization Management** role group (and by extension, global administrators).
+You need to be member of the **Global Administrator** role in Microsoft Entra ID or a member of the **Organization Management** role group in Defender for Office 365 permissions. Specifically, the **Role Management** role in Defender for Office 365 allows users to view, create, and modify Defender for Office 365 role groups. By default, that role is assigned only to the **Organization Management** role group (and by extension, global administrators).
 
 > [!NOTE]
 > Some Defender for Office 365 features require additional permissions in Exchange Online. For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
@@ -60,21 +60,23 @@ Defender for Office 365 permissions in the Microsoft 365 Defender portal include
 
 On the **Permissions** page in the Defender portal at <https://security.microsoft.com/securitypermissions>, the following types of roles and role groups are available:
 
-- **Azure AD roles**: You can view the roles and assigned users, but you can't manage them directly in the Microsoft 365 Defender portal. Azure AD roles are central roles that assign permissions for **all** Microsoft 365 services.
+- **Microsoft Entra roles**: You can view the roles and assigned users, but you can't manage them directly in the Microsoft 365 Defender portal. Microsoft Entra roles are central roles that assign permissions for **all** Microsoft 365 services.
 
 - **Email & collaboration roles**: You can view and manage these role groups directly in the Microsoft 365 Defender portal. These permissions are specific to the Microsoft 365 Defender portal and the Microsoft Purview compliance portal. These permissions don't cover all of the permissions that you need in other Microsoft 365 workloads.
 
 :::image type="content" source="../../media/m365-sc-permissions-and-roles-page.png" alt-text="The Permissions & roles page in the Microsoft 365 Defender portal" lightbox="../../media/m365-sc-permissions-and-roles-page.png":::
 
-### Azure AD roles in the Microsoft 365 Defender portal
+<a name='azure-ad-roles-in-the-microsoft-365-defender-portal'></a>
 
-Azure AD roles that are described in this section are available in the [Defender portal](https://security.microsoft.com) \> **Permissions** \> **Azure AD** \> **Roles** or directly at <https://security.microsoft.com/aadpermissions>.
+### Microsoft Entra roles in the Microsoft 365 Defender portal
 
-When you select a role, a details flyout opens that contains the description of the role and the user assignments. But to manage those assignments, you need to select **Manage members in Azure AD** at the bottom of the flyout.
+Microsoft Entra roles that are described in this section are available in the [Defender portal](https://security.microsoft.com) \> **Permissions** \> **Microsoft Entra ID** \> **Roles** or directly at <https://security.microsoft.com/aadpermissions>.
 
-:::image type="content" source="../../media/permissions-manage-in-azure-ad-link.png" alt-text="The link to manage permissions in Azure Active Directory" lightbox="../../media/permissions-manage-in-azure-ad-link.png":::
+When you select a role, a details flyout opens that contains the description of the role and the user assignments. But to manage those assignments, you need to select **Manage members in Microsoft Entra ID** at the bottom of the flyout.
 
-For more information, see [View and assign administrator roles in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-manage-roles-portal) and [Manage access to Microsoft 365 Defender with Azure Active Directory global roles](/microsoft-365/security/defender/m365d-permissions).
+:::image type="content" source="../../media/permissions-manage-in-azure-ad-link.png" alt-text="The link to manage permissions in Microsoft Entra ID" lightbox="../../media/permissions-manage-in-azure-ad-link.png":::
+
+For more information, see [View and assign administrator roles in Microsoft Entra ID](/azure/active-directory/users-groups-roles/directory-manage-roles-portal) and [Manage access to Microsoft 365 Defender with Microsoft Entra global roles](/microsoft-365/security/defender/m365d-permissions).
 
 |Role|Description|
 |---|---|

@@ -121,7 +121,7 @@ The simplest way to verify a rules or custom forms attack is to run the [Get-All
 
 #### Prerequisites
 
-You need to be a member of the Global Administrator role in [Azure Active Directory](../../admin/add-users/about-admin-roles.md) or the Organization Management role group in [Exchange Online](/exchange/permissions-exo/permissions-exo), because the script connects to every mailbox in the organization to read rules and forms.
+You need to be a member of the Global Administrator role in [Microsoft Entra ID](../../admin/add-users/about-admin-roles.md) or the Organization Management role group in [Exchange Online](/exchange/permissions-exo/permissions-exo), because the script connects to every mailbox in the organization to read rules and forms.
 
 1. Use an account with local administrator rights to sign in to the computer where you intend to run the script.
 

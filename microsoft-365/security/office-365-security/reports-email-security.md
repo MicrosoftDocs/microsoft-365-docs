@@ -1054,7 +1054,7 @@ You need to be assigned permissions before you can view and use the reports that
   - **Security Administrator**
   - **Security Reader**
   - **Global Reader**
-- [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator**<sup>\*</sup>, **Security Administrator**, **Security Reader**, or **Global Reader** roles in Azure Active Directory gives users the required permissions _and_ permissions for other features in Microsoft 365.
+- [Microsoft Entra RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator**<sup>\*</sup>, **Security Administrator**, **Security Reader**, or **Global Reader** roles in Microsoft Entra ID gives users the required permissions _and_ permissions for other features in Microsoft 365.
 the 
 <sup>\*</sup> Membership in the **Organization Management** role group or in the **Global Administrator** role is required to use the :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **[Create schedule](#schedule-recurring-reports)** or :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **[Request report](#request-on-demand-reports-for-download)** actions in reports (where available).
 
@@ -1103,7 +1103,7 @@ Depending on the report and possibly the specific view in the report, one or mor
 ### Schedule recurring reports
 
 > [!NOTE]
-> To create scheduled reports, you need to be a member of the **Organization management** role in Exchange Online or the **Global Administrator** role in Azure AD.
+> To create scheduled reports, you need to be a member of the **Organization management** role in Exchange Online or the **Global Administrator** role in Microsoft Entra ID.
 
 1. On the report page, select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png"::: **Create schedule** to start the new scheduled report wizard.
 
@@ -1191,7 +1191,7 @@ Back on the **Manage schedules** page, the deleted scheduled report entry is no 
 [Request on-demand reports](#request-on-demand-reports-for-download)
 
 > [!NOTE]
-> To create on-demand reports, you need to be a member of the **Organization management** role in Exchange Online or the **Global Administrator** role in Azure AD.
+> To create on-demand reports, you need to be a member of the **Organization management** role in Exchange Online or the **Global Administrator** role in Microsoft Entra ID.
 
 1. On the report page, select :::image type="icon" source="../../media/m365-cc-sc-download-icon.png" border="false"::: **Request report** to start the new on-demand report wizard.
 
@@ -1224,7 +1224,7 @@ The report creation task (and eventually the finished report) is available on th
 #### Download reports
 
 > [!NOTE]
-> To download on-demand reports, you need to be a member of the **Organization management** role in Exchange Online or the **Global Administrator** role in Azure AD.
+> To download on-demand reports, you need to be a member of the **Organization management** role in Exchange Online or the **Global Administrator** role in Microsoft Entra ID.
 
 After you request an on-demand report as described in the previous section, you check the status of the report and eventually download the report on the **Reports for download** page in the Defender portal.
 

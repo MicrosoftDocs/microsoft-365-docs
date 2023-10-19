@@ -70,20 +70,22 @@ You need to search the **audit log** to find signs, also called Indicators of Co
 
 If you have one or more instances of the IOCs listed above, you need to do further investigation to positively confirm that the attack occurred. You can use any of these three methods to confirm the attack:
 
-- Inventory applications and their permissions using the Azure Active Directory portal. This method is thorough, but you can only check one user at a time which can be very time consuming if you have many users to check.
+- Inventory applications and their permissions using the Microsoft Entra admin center. This method is thorough, but you can only check one user at a time which can be very time consuming if you have many users to check.
 - Inventory applications and their permissions using PowerShell. This is the fastest and most thorough method, with the least amount of overhead.
 - Have your users individually check their apps and permissions and report the results back to the administrators for remediation.
 
 ## Inventory apps with access in your organization
 
-You can do this for your users with either the Azure Active Directory Portal, or PowerShell or have your users individually enumerate their application access.
+You can do this for your users with either the Microsoft Entra admin center, or PowerShell or have your users individually enumerate their application access.
 
-### Steps for using the Azure Active Directory Portal
+<a name='steps-for-using-the-azure-active-directory-portal'></a>
 
-You can look up the applications to which any individual user has granted permissions by using the Azure Active Directory Portal at <https://portal.azure.com>.
+### Steps for using the Microsoft Entra admin center
+
+You can look up the applications to which any individual user has granted permissions by using the Microsoft Entra admin center at <https://portal.azure.com>.
 
 1. Sign in to the Azure portal with administrative rights.
-2. Select the **Azure Active Directory** blade.
+2. Select the **Microsoft Entra ID** blade.
 3. Select **Users**.
 4. Select the user that you want to review.
 5. Select **Applications**.
@@ -142,8 +144,8 @@ After you have finished inventorying application access, review the **audit log*
 
 After you have identified an application with illicit permissions, you have several ways to remove that access.
 
-- You can revoke the application's permission in the Azure Active Directory Portal by:
-  1. Navigate to the affected user in the **Azure Active Directory User** blade.
+- You can revoke the application's permission in the Microsoft Entra admin center by:
+  1. Navigate to the affected user in the **Microsoft Entra user** blade.
   2. Select **Applications**.
   3. Select the illicit application.
   4. Click **Remove** in the drill down.
@@ -159,7 +161,7 @@ After you have identified an application with illicit permissions, you have seve
 ## See also
 
 - [Unexpected application in my applications list](/azure/active-directory/application-access-unexpected-application) walks administrators through various actions they may want to take after realizing there are unexpected applications with access to data.
-- [Integrating applications with Azure Active Directory](/azure/active-directory/active-directory-apps-permissions-consent) is a high-level overview of consent and permissions.
+- [Integrating applications with Microsoft Entra ID](/azure/active-directory/active-directory-apps-permissions-consent) is a high-level overview of consent and permissions.
 - [Problems developing my application](/azure/active-directory/active-directory-application-dev-development-content-map) provides links to various consent related articles.
-- [Application and service principal objects in Azure Active Directory (Azure AD)](/azure/active-directory/develop/active-directory-application-objects) provides an overview of the Application and Service principal objects that are core to the application model.
+- [Application and service principal objects in Microsoft Entra ID](/azure/active-directory/develop/active-directory-application-objects) provides an overview of the Application and Service principal objects that are core to the application model.
 - [Manage access to apps](/azure/active-directory/active-directory-managing-access-to-apps) is an overview of the capabilities that administrators have to manage user access to apps.

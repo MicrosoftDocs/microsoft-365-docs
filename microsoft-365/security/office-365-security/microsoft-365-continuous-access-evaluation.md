@@ -1,6 +1,6 @@
 ---
 title: Continuous access evaluation for Microsoft 365 - Microsoft 365 for enterprise
-description: Describes how conditional access evaluation for Microsoft 365 and Azure AD proactively terminates active user sessions and enforces tenant policy changes in near real time.
+description: Describes how conditional access evaluation for Microsoft 365 and Microsoft Entra ID proactively terminates active user sessions and enforces tenant policy changes in near real time.
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -28,15 +28,15 @@ ms.date: 1/31/2023
 
 Modern cloud services that use OAuth 2.0 for authentication traditionally rely on access token expiration to revoke a user account's access. In practice, this means even if an administrator revokes a user account's access, the user will still have access until the access token expires, which for Microsoft 365 by default, used to be up to an hour after the initial revocation event took place.
 
-Continuous access evaluation for Microsoft 365 and Azure Active Directory (Azure AD) proactively terminates active user sessions and enforces tenant policy changes in near real time instead of relying on access token expiration. Azure AD notifies continuous access evaluation-enabled Microsoft 365 services (such as SharePoint, Teams, and Exchange) when the user account or tenant has changed in a way that requires reevaluation of the user account's authentication state.
+Continuous access evaluation for Microsoft 365 and Microsoft Entra ID proactively terminates active user sessions and enforces tenant policy changes in near real time instead of relying on access token expiration. Microsoft Entra ID notifies continuous access evaluation-enabled Microsoft 365 services (such as SharePoint, Teams, and Exchange) when the user account or tenant has changed in a way that requires reevaluation of the user account's authentication state.
 
-When a continuous access evaluation-enabled client such as Outlook tries to access Exchange with an existing access token, the token is rejected by the service, prompting a new Azure AD authentication. The result is near real time enforcement of user account and policy changes.
+When a continuous access evaluation-enabled client such as Outlook tries to access Exchange with an existing access token, the token is rejected by the service, prompting a new Microsoft Entra authentication. The result is near real time enforcement of user account and policy changes.
 
 Here are some additional benefits:
 
-- For a malicious insider who copies and exports a valid access token outside of your organization, continuous access evaluation prevents usage of this token through Azure AD IP address location policy. With continuous access evaluation, Azure AD synchronizes policies down to supported Microsoft 365 services so when an access token attempts to access the service from outside of the IP address range in the policy, the service rejects the token.
+- For a malicious insider who copies and exports a valid access token outside of your organization, continuous access evaluation prevents usage of this token through Microsoft Entra IP address location policy. With continuous access evaluation, Microsoft Entra ID synchronizes policies down to supported Microsoft 365 services so when an access token attempts to access the service from outside of the IP address range in the policy, the service rejects the token.
 
-- Continuous access evaluation improves resiliency by requiring less token refreshes. Because supporting services receive proactive notifications about requiring reauthentication, Azure AD can issue longer-lived tokens, for example, beyond one hour. With longer-lived tokens, clients don't have to request a token refresh from Azure AD as often, so the user experience is more resilient.
+- Continuous access evaluation improves resiliency by requiring less token refreshes. Because supporting services receive proactive notifications about requiring reauthentication, Microsoft Entra ID can issue longer-lived tokens, for example, beyond one hour. With longer-lived tokens, clients don't have to request a token refresh from Microsoft Entra ID as often, so the user experience is more resilient.
 
 Here are some examples of situations where continuous access evaluation improves user access control security:
 
@@ -51,7 +51,7 @@ For Microsoft 365, continuous access evaluation is currently supported by the:
 
 Microsoft is working on additional Microsoft 365 services and clients to support continuous access evaluation.
 
-Continuous access evaluation will be included in all versions of Office 365 and Microsoft 365. Configuring Conditional Access policies requires Azure AD Premium P1, which is included in all Microsoft 365 versions.
+Continuous access evaluation will be included in all versions of Office 365 and Microsoft 365. Configuring Conditional Access policies requires Microsoft Entra ID P1, which is included in all Microsoft 365 versions.
 
 > [!NOTE]
 > See [this article](/azure/active-directory/conditional-access/concept-continuous-access-evaluation#limitations) for the limitations of continuous access evaluation.
@@ -69,11 +69,11 @@ Critical events include:
 - Password is changed
 - User sessions are revoked
 - Multifactor authentication is enabled for the user
-- Account risk increased based on the evaluation of the access from [Azure AD Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection)
+- Account risk increased based on the evaluation of the access from [Microsoft Entra ID Protection](/azure/active-directory/identity-protection/overview-identity-protection)
 
 Conditional Access policy evaluation occurs when the user account is no longer connecting from a trusted network.
 
-The following Microsoft 365 services currently support continuous access evaluation by listening to events from Azure AD.
+The following Microsoft 365 services currently support continuous access evaluation by listening to events from Microsoft Entra ID.
 
 |Enforcement type|Exchange|SharePoint|Teams|
 |---|---|---|---|
@@ -91,7 +91,7 @@ For more information about how to set up a Conditional Access policy, see [this 
 
 ## Microsoft 365 clients supporting continuous access evaluation
 
-Continuous access evaluation-enabled clients for Microsoft 365 support a claim challenge, which is a redirect of a user session to Azure AD for reauthentication, when a cached user token is rejected by a continuous access evaluation-enabled Microsoft 365 service.
+Continuous access evaluation-enabled clients for Microsoft 365 support a claim challenge, which is a redirect of a user session to Microsoft Entra ID for reauthentication, when a cached user token is rejected by a continuous access evaluation-enabled Microsoft 365 service.
 
 The following clients support continuous access evaluation on web, Win32, iOS, Android, and Mac:
 
@@ -109,4 +109,4 @@ For clients that don't support continuous access evaluation, the access token li
 
 - [Continuous access evaluation](/azure/active-directory/conditional-access/concept-continuous-access-evaluation)
 - [Conditional Access documentation](/azure/active-directory/conditional-access/overview)
-- [Azure AD Identity Protection documentation](/azure/active-directory/identity-protection/overview-identity-protection)
+- [Microsoft Entra ID Protection documentation](/azure/active-directory/identity-protection/overview-identity-protection)
