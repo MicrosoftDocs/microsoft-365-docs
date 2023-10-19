@@ -145,7 +145,7 @@ The details pages are:
 
 ## Group Level Aggregates
 
-The group-level filters functionality helps admins and adoption strategists understand how different groups, based on data from Azure Active Directory, are performing on the people experiencing insights. It's used to provide higher granularity of insights and actions.
+The group-level filters functionality helps admins and adoption strategists understand how different groups, based on data from Microsoft Entra ID, are performing on the people experiencing insights. It's used to provide higher granularity of insights and actions.
 
 [Learn more about Group Level Aggregates](group-level-aggregates.md).
 

@@ -38,7 +38,7 @@ This article is for people who set password expiration policy for a business, sc
 
 You can use the Microsoft cloud service [Microsoft Graph Powershell](/powershell/microsoftgraph/overview) to set passwords not to expire for specific users, remove the never-expire configuration or see which users' passwords are set to never expire.
 
-This guide applies to other providers, such as Intune and Microsoft 365, which also rely on Azure AD for identity and directory services. Password expiration is the only part of the policy that can be changed.
+This guide applies to other providers, such as Intune and Microsoft 365, which also rely on Microsoft Entra ID for identity and directory services. Password expiration is the only part of the policy that can be changed.
 
 ## How to check the expiration policy for a password
 

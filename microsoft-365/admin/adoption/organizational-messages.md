@@ -101,7 +101,7 @@ As global administrator or organizational message writer role, you can do any of
 
 - Choose a message from a set of templated content for business bars or teaching call-outs
 
-- Select the recipients based on user activities, Azure AD user groups, and group level aggregates
+- Select the recipients based on user activities, Microsoft Entra user groups, and group level aggregates
 
 - Schedule a time frame and frequency for delivery of the messages
 
@@ -133,7 +133,7 @@ As global administrator or organizational message writer role, you can do any of
 
 2. Select **Apply filter** \> **Choose organizational attribute**
 
-    - **Groups**: In addition to the default recipients, you can send messages to specific Azure AD user groups
+    - **Groups**: In addition to the default recipients, you can send messages to specific Microsoft Entra user groups
 
     - **Companies, Country (State) - City, Departments**: Using group-level aggregates, you can apply attributes filter such as attributes like location, departments, and companies to target specific groups of audiences. [Learn more about how to open Group Level Aggregates and validate data accuracy](group-level-aggregates.md).
 
@@ -219,7 +219,7 @@ A: For any given message, not every user **in its selected audience** (selected 
 
 ### Q: How can I test the messages before sending them to users of my entire company?
 
-A: You can send messages to specific Azure AD groups, such as your IT department. See [Select the recipients](#step-2-select-the-recipients) for details.
+A: You can send messages to specific Microsoft Entra groups, such as your IT department. See [Select the recipients](#step-2-select-the-recipients) for details.
 
 ### Q: What is the recommended time frame window for the messages?
 

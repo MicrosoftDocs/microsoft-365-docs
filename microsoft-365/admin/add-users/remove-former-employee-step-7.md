@@ -55,7 +55,7 @@ If your organization synchronizes user accounts to Microsoft 365 from a local Ac
 
 To learn how to delete and restore user account in Active Directory, see [Delete a User Account](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11)).
   
-If you're using Azure Active Directory, see the [Remove-MgUser](/powershell/module/microsoft.graph.users/remove-mguser) PowerShell cmdlet.
+If you're using Microsoft Entra ID, see the [Remove-MgUser](/powershell/module/microsoft.graph.users/remove-mguser) PowerShell cmdlet.
   
 ## What you need to know about terminating an employee's email session
 
@@ -81,15 +81,15 @@ The above operations can be done in three places:
 |If you terminate the session here|How long it takes|
 |---|---|
 |In the Exchange admin center or using PowerShell|Expected delay is within 30 min|
-|In the Azure Active Directory admin center|Expected delay is 60 min|
+|In the Microsoft Entra admin center|Expected delay is 60 min|
 |In an on-premises environment|Expected delay is 3 hours or more|
 |
 
 ### How to get fastest response for account termination
 
-**Fastest**: Use the Exchange admin center (use PowerShell) or Azure Active Directory admin center. In an on-premises environment, it can take several hours to sync the change through Azure AD Connect.
+**Fastest**: Use the Exchange admin center (use PowerShell) or Microsoft Entra admin center. In an on-premises environment, it can take several hours to sync the change through Microsoft Entra Connect.
   
-**Fastest for a user with presence on-premises and in the Exchange Datacenter**: Terminate the session using Azure Active Directory admin center/Exchange admin center AND make the change in the on-premises environment as well. Otherwise, the change in Azure Active Directory admin center/Exchange admin center will be overwritten by Azure AD Connect.
+**Fastest for a user with presence on-premises and in the Exchange Datacenter**: Terminate the session using Microsoft Entra admin center/Exchange admin center AND make the change in the on-premises environment as well. Otherwise, the change in Microsoft Entra admin center/Exchange admin center will be overwritten by Microsoft Entra Connect.
   
 ## Related content
 
