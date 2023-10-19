@@ -117,7 +117,7 @@ landingContent:
             url: metadata-search.md
           - text: Merge and extract PDFs
             url: merge-extract-pdf.md
-          - text: Content processing
+          - text: Processing rules
             url: content-processing-overview.md
           - text: Solution accelerators
             url: site-templates.md
