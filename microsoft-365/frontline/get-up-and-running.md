@@ -35,13 +35,6 @@ The apps that support these capabilities are included in Teams and most are read
 
 This article will help you get Teams for frontline workers, set up a team, and then configure the features and apps you need to get your team going with these capabilities.
 
-## Get Teams for frontline workers
-
-First, you'll need to [initiate the frontline trial experience](https://support.microsoft.com/office/learn-more-about-the-frontline-trial-in-microsoft-teams-73a429fc-f211-4360-8329-704bc102ba98) from within the Tasks app in Microsoft Teams. If you already have Microsoft 365 for frontline workers, you can skip this step and follow the rest of this article to learn how to get the most out of your licenses.
-
-> [!NOTE]
-> The Frontline Trial is based on the Microsoft 365 F3 license.
-
 ## Enable quick communication
 
 Use the inbuilt communication tools in Microsoft Teams to enable your frontline workers to stay in touch. You don’t need to do any additional setup for the communication apps or to use them in your team. You’ll always see the Teams, Chats, and Activity icons when you open Teams, either on desktop or mobile, while Walkie Talkie is only available on mobile.
