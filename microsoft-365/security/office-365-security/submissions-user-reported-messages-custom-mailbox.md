@@ -17,7 +17,7 @@ ms.custom:
 description: "Admins can configure where user reported messages go for analysis: to an internal reporting mailbox, to Microsoft, or both. Other settings complete the reporting experience for users when they report good messages, spam, or phishing messages from Outlook."
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 8/7/2023
+ms.date: 10/19/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
@@ -170,7 +170,7 @@ When you're finished on the **User reported settings** page, select **Save**.
 
 ### Options for third-party reporting tools
 
-If you are using a third-party button for end users, such as (but not limited to) KnowBe4 Report Phish, Cofense Report Phishing, or PhishAlarm, you can benefit from the power of Defender incident management, in-product phish triage, and native automated response capabilities by implementing integration of your button with Microsoft Defender for Office 365.
+If you're using a third-party reporting button for end users (for example, KnowBe4 Report Phish, Cofense Report Phishing, or PhishAlarm), you can benefit from the power of Defender incident management, in-product phishing triage, and native automated response capabilities by integrating the reporting button with Microsoft Defender for Office 365.
 
 When **Monitor reported messages in Outlook** is selected and you also select **Use a non-Microsoft add-in button**, the following options are available on the **User reported settings** page:
 
