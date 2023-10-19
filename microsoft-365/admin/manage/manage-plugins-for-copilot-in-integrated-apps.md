@@ -5,9 +5,10 @@ f1.keywords:
 ms.author: efrene
 author: efrene
 manager: scotv
-ms.date: 10/09/2023
+ms.date: 10/19/2023
 audience: Admin
 ms.topic: article
+ms.collection: m365copilot
 ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection:
