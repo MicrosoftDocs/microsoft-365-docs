@@ -106,9 +106,9 @@ DeviceId|String|Unique identifier for the device in the service.|9eaf3a8b5962e0e
 DeviceName|String|Fully qualified domain name (FQDN) of the device.|johnlaptop.europe.contoso.com
 DiskPaths|Array\[string\]|Disk evidence that the product is installed on the device.|["C:\Program Files (x86)\Microsoft\Silverlight\Application\silverlight.exe"]
 ExploitabilityLevel|String|The exploitability level of this vulnerability (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)|ExploitIsInKit
-FirstSeenTimestamp|String|First time the CVE of this product was seen on the device.|2020-11-03 10:13:34.8476880
+FirstSeenTimestamp|String|First time this product CVE was seen on the device.|2020-11-03 10:13:34.8476880
 Id|String|Unique identifier for the record.|123ABG55_573AG&mnp!
-LastSeenTimestamp|String|Last time the CVE was seen on the device.|2020-11-03 10:13:34.8476880
+LastSeenTimestamp|String|Last time the software vulnerability was seen on the device.|2020-11-03 10:13:34.8476880
 OSPlatform|String|Platform of the operating system running on the device. This property indicates specific operating systems with variations within the same family, such as Windows 10 and Windows 11. See Microsoft Defender Vulnerability Management supported operating systems and platforms for details.|Windows10 and Windows 11
 RbacGroupName|String|The role-based access control (RBAC) group. If this device isn't assigned to any RBAC group, the value will be "Unassigned." If the organization doesn't contain any RBAC groups, the value will be "None."|Servers
 RecommendationReference|String|A reference to the recommendation ID related to this software.|va-_-microsoft-_-silverlight
