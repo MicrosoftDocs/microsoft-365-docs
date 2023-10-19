@@ -105,7 +105,7 @@ Admins can assign or unassign plugins for Copilot to specific users or groups by
 
 ## Block or unblock plugins for Copilot
 
-Admins can block or unblock plugins for Copilot for the whole organization or specific users or groups by using the same gestures and controls that work for any other app in the Microsoft 365 admin center. Admins can select an app that has a plugin for Copilotfrom the available or deployed apps list and click on the block or unblock button. Admins can also choose to block or unblock the app for everyone or specific users or groups. Blocking or unblocking an app affects its availability and functionality in Copilot as well as other host products, such as Outlook, Teams, or Microsoft 365.
+Admins can block or unblock plugins for Copilot for the whole organization or specific users or groups by using the same gestures and controls that work for any other app in the Microsoft 365 admin center. Admins can select an app that has a plugin for Copilot from the available or deployed apps list and click on the block or unblock button. Admins can also choose to block or unblock the app for everyone or specific users or groups. Blocking or unblocking an app affects its availability and functionality in Copilot as well as other host products, such as Outlook, Teams, or Microsoft 365.
 
 ## View and consent to permissions and data access 
 
