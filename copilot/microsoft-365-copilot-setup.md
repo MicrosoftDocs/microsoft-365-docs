@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: camillepack
 author: camillepack
 manager: scotv
-ms.date: 06/19/2023
+ms.date: 10/05/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-copilot
@@ -54,10 +54,10 @@ To get started with the implementation process, see [Deployment guide for Micros
 - **Microsoft Loop** To use Copilot in Microsoft Loop, you must have Loop enabled for your tenant. For more information on enabling Loop, see [Get started with Microsoft Loop](https://support.microsoft.com/office/get-started-with-microsoft-loop-9f4d8d4f-dfc6-4518-9ef6-069408c21f0c).
 
 >[!IMPORTANT]
-> This note only applies to Microsoft 365 Apps for enterprise subscribers. Your users must be on the Current Channel to access Copilot. To learn more, see [update channels for Microsoft 365 Apps](/deployoffice/updates/overview-update-channels#current-channel-overview).
+> This note only applies to Microsoft 365 Apps for enterprise subscribers. Your users must be on Current Channel to access Copilot. To learn more, see [update channels for Microsoft 365 Apps](/deployoffice/updates/overview-update-channels#current-channel-overview).
 
 >[!NOTE]
-> We previously stated that support for the Monthly Enterprise Channel was available for Microsoft 365 Copilot. As we continue to make frequent product updates and enhancements during the early access program, the time between updates in the Monthly Enterprise Channel limits Microsoft's ability to provide an optimum Copilot experience on desktop clients. Going forward, users in the early access program must be on the Current Channel to receive Copilot updates when they become available. We expect support in the Monthly Enterprise Channel in the future.
+> We previously stated that support for Monthly Enterprise Channel was available for Microsoft 365 Copilot. As we continue to make frequent product updates and enhancements during the early access program, the time between updates in Monthly Enterprise Channel limits Microsoft's ability to provide an optimum Copilot experience on desktop clients. Going forward, users in the early access program must be on Current Channel to receive Copilot updates when they become available. We expect support in Monthly Enterprise Channel in the future.
 
 ## Manage licenses for Copilot
 
@@ -69,7 +69,11 @@ You can also assign licenses in bulk to [groups of users through the Azure admin
 
 ## Security and privacy
 
-Microsoft 365 Copilot ensures data security and privacy by adhering to existing obligations and integrating with your organization's policies. It utilizes your Microsoft Graph content with the same access controls as other Microsoft 365 services. To learn more about privacy with Microsoft 365 Copilot, see [Data, Privacy, and Security for Microsoft 365 Copilot](/DeployOffice/privacy/microsoft-365-copilot).
+Microsoft 365 Copilot ensures data security and privacy by adhering to existing obligations and integrating with your organization's policies. It utilizes your Microsoft Graph content with the same access controls as other Microsoft 365 services. To learn more about privacy with Microsoft 365 Copilot, see [Data, Privacy, and Security for Microsoft 365 Copilot](microsoft-365-copilot-privacy.md).
+
+### Privacy settings for Microsoft 365 Apps for enterprise
+
+Review your privacy settings for Microsoft 365 Apps for enterprise because those settings might have an effect on the availability of Microsoft 365 Copilot features. For more information, see [Microsoft 365 Copilot and policy settings for connected experiences](microsoft-365-copilot-privacy.md#microsoft-365-copilot-and-policy-settings-for-connected-experiences).
 
 ## More resources
 

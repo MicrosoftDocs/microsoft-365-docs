@@ -4,7 +4,7 @@ description: Learn about user testing in Multi-Geo
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.reviewer: dmwmsft
+ms.reviewer: deanw, anfra
 ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
@@ -59,7 +59,7 @@ Get-MsolUser -UserPrincipalName Robyn.Buckley@Contoso.com.PreferredDatalocation
 We recommend that you include setting the user's Preferred Data Location as a part of your standard user creation workflow.
 
 >[!IMPORTANT]
->or new users with no OneDrive provisioned, license the account and wait at least 48 hours after a user's PDL is set for the changes to propagate before the user logs in to OneDrive. (Setting the preferred data location before the user logs in to provision their OneDrive for Business ensures that the user's new OneDrive will be provisioned in the correct location.)
+>For new users with no OneDrive provisioned, license the account and wait at least 48 hours after a user's PDL is set for the changes to propagate before the user logs in to OneDrive. (Setting the preferred data location before the user logs in to provision their OneDrive for Business ensures that the user's new OneDrive will be provisioned in the correct location.)
 
 ## OneDrive for Business Provisioning and the effect of PDL
 
