@@ -39,7 +39,7 @@ Because email actions create automated investigations in the backend, you need t
 
 *Manual hunting* occurs when security teams identify threats manually by using the search and filtering capabilities in Explorer. Manual email remediation can be triggered through any email view (*Malware*, *Phish*, or *All email*) after you identify a set of emails that need to be remediated.
 
-:::image type="content" source="../../media/microsoft-365-defender-threat-explorer-manual-remediation.png" alt-text="Screenshot of manual hunting in Office 365 Explorer by date.":::
+:::image type="content" source="../../media/microsoft-365-defender-threat-explorer-manual-remediation.png"  lightbox="../../media/microsoft-365-defender-threat-explorer-manual-remediation.png" alt-text="Screenshot of manual hunting in Office 365 Explorer by date.":::
 
 Security teams can use Explorer to select emails in several ways:
 
@@ -67,7 +67,7 @@ All remediation (direct approvals) created in Explorer, Advanced hunting, or thr
 
 Manual actions pending approval using the two-step approval process (1. Add to remediation by one security operation team member, 2. Reviewed and approved by another security operation team member) are visible at **Actions & Submissions** \> **Action center** \> **Pending** tab (<https://security.microsoft.com/action-center/pending>). After approval, they're visible at **Actions & Submissions** \> **Action center** \> **History** tab (<https://security.microsoft.com/action-center/history>).
 
-:::image type="content" source="../../media/microsoft-365-defender-action-center-history.png" alt-text="The unified Action Center shows you 30 days of remediation actions.":::
+:::image type="content" source="../../media/microsoft-365-defender-action-center-history.png" lightbox="../../media/microsoft-365-defender-action-center-history.png" alt-text="The unified Action Center shows you 30 days of remediation actions.":::
 
 Unified Action Center shows remediation actions for the past 30 days. Actions taken through Explorer are listed by the name that the security operations team provided when the remediation was created as well as approval Id, Investigation Id. Actions taken through automated investigations have titles that begin with the related alert that triggered the investigation, such as *Zap email cluster*.
 
@@ -77,7 +77,7 @@ Open any remediation item to view details about it, including its remediation na
 - *Email count* Displays the number of emails submitted through Threat Explorer. These emails can be actionable or not actionable.
 - *Action logs* Show the details of remediation statuses like successful, failed, and already in destination.
 
-  :::image type="content" source="../../media/microsoft-365-defender-action-center-history-panel.png" alt-text="The Action Center with the Move to Inbox option open.":::
+  :::image type="content" source="../../media/microsoft-365-defender-action-center-history-panel.png" lightbox="../../media/microsoft-365-defender-action-center-history-panel.png" alt-text="The Action Center with the Move to Inbox option open.":::
 
   - **Actionable**: Emails in the following cloud mailbox locations can be acted on and moved:
     - Inbox
@@ -137,6 +137,6 @@ In case of remediating large batches of email, export the messages sent for reme
 
  Admins can take remediation actions like moving email messages to Junk, Inbox, or Deleted items folder and delete actions like soft deleted or hard delete from Advanced Hunting pages.
 
-:::image type="content" source="../../media/microsoft-365-defender-advanced-hunting-actions-pane.png" alt-text="The Advanced Hunting, Take Actions panel with your choice of actions.":::
+:::image type="content" source="../../media/microsoft-365-defender-advanced-hunting-actions-pane.png" lightbox="../../media/microsoft-365-defender-advanced-hunting-actions-pane.png" alt-text="The Advanced Hunting, Take Actions panel with your choice of actions.":::
 
 Remediation mitigates threats, addresses suspicious emails, and helps keep an organization secure.
