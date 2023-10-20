@@ -42,7 +42,7 @@ There are several ways that a partner can work with you. Based on your stated bu
 
 | Partner type | Description | Roles |
 | ------------ | ----------- | ----- |
-| Advisor | Partners can reset passwords and handle support incidents for you. | No roles assigned. |
+| Advisor | Partners can reset passwords and handle support incidents for you. | Global admin, Helpdesk admin. |
 | Granular delegated administrator | Partners who manage products and services for your organization or school, but who have limited access to what they can do in the Microsoft 365 admin center. Granular delegated administrator privileges (GDAP) let partners complete tasks in the admin center without having global admin permission. By giving GDAP to partners, you ensure they have the least-permissive roles and limit the risk to your organization. | Any Azure Active Directory (AD) role.<br><br>For more information, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference). |
 | Independent Software Vendors | Partners who develop and sell custom software products that run on one or more computer hardware or operating system platforms. Some ISVs focus on developing software or custom applications that focus on a particular operating system, and other ISVs specialize in a particular application area. | No roles assigned. |
 | Indirect reseller | Partners who manage products and services for your organization or school. | No roles assigned. |
