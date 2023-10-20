@@ -61,7 +61,7 @@ These are the key features you'll get with the Microsoft 365 support integration
 
 To proceed with this guide, make sure that the following permissions are available and configured for your environments during the entire process:
 
-- Azure Active Directory (AAD) admin who can create Azure AD Applications
+- Microsoft Entra admin who can create Microsoft Entra Applications
 
 - ServiceNow admin
 
@@ -71,9 +71,9 @@ To proceed with this guide, make sure that the following permissions are availab
 
 To set up Microsoft 365 support integration:
 
-- Register application in Microsoft Azure Active Directory (AAD) for authentication of both outbound and inbound API calls.
+- Register application in Microsoft Entra ID for authentication of both outbound and inbound API calls.
 
-- Create ServiceNow entities with Microsoft Azure AD Application for both outbound and inbound data flow.
+- Create ServiceNow entities with Microsoft Entra Application for both outbound and inbound data flow.
 
 - Integrate ServiceNow instance with Microsoft support through the Microsoft 365 admin portal.
 
