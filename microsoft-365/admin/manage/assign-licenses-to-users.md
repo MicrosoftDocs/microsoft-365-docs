@@ -51,8 +51,8 @@ You can assign or unassign licenses for users in the Microsoft 365 admin center 
 ## Before you begin
 
 - You must be a Global, License, or User admin to assign licenses. For more information, see [About Microsoft 365 admin roles](../add-users/about-admin-roles.md).
-- In addition to the steps described in this article, you can also use the Microsoft Graph PowerShell SDK to [assign Microsoft 365 licenses to user accounts with PowerShell](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md) or [remove licenses from user accounts](../../enterprise/remove-licenses-from-user-accounts-with-microsoft-365-powershell.md).
-- To use group-based licensing, see [Assign licenses to users by group membership in Microsoft Entra ID](/azure/active-directory/enterprise-users/licensing-groups-assign.md)
+- In addition to the steps described in this article, you can also use the Microsoft Graph PowerShell SDK to [assign Microsoft 365 licenses to user accounts with PowerShell](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md) or [remove Microsoft 365 licenses from user accounts with PowerShell](../../enterprise/remove-licenses-from-user-accounts-with-microsoft-365-powershell.md).
+- To use group-based licensing, see [Assign licenses to users by group membership in Microsoft Entra ID](/azure/active-directory/enterprise-users/licensing-groups-assign)
 - Some services, like Sway, are automatically assigned to users, and don't need to be assigned individually.
 - You can also [delete user accounts](../add-users/delete-a-user.md) that were assigned a license to make their license available to other users. When you delete a user account, their license is immediately available to assign to someone else.
 - If you're a Cloud Solution Provider (CSP) and you bought products on behalf of a customer, you can't use the **Your products** page to assign or unassign licenses for certain products, like perpetual software. To assign or unassign licenses for those products, [use the Licenses page](#use-the-licenses-page-to-assign-or-unassign-licenses).
@@ -116,7 +116,7 @@ When you use the **Active users** page to assign or unassign licenses, you assig
 
 ## Assign a license to a guest user
 
-You can invite guest users to collaborate with your organization in the Azure Active Directory admin center. To learn about guest users, see [What is guest user access in Azure Active Directory B2B?](/azure/active-directory/external-identities/what-is-b2b). If you don't have any guest users, see [Quickstart: Add a guest user and send an invitation](/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal).
+You can invite guest users to collaborate with your organization in the Microsoft Entra admin center. To learn about guest users, see [B2B collaboration overview](/azure/active-directory/external-identities/what-is-b2b). If you don't have any guest users, see [Quickstart: Add a guest user and send an invitation](/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal).
 
 > [!IMPORTANT]
 > You must be a Global admin to do these steps.
@@ -135,7 +135,7 @@ You can invite guest users to collaborate with your organization in the Azure Ac
 
 ## Use the Active users page to unassign licenses
 
-When you use the **Active users** page to unassign licenses, you unassign product licenses from users.
+When you use the **Active users** page to unassign licenses, you remove product licenses from users.
 
 ### Unassign licenses from one user
 
