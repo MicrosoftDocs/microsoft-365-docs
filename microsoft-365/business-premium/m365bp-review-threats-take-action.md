@@ -49,11 +49,11 @@ When you view details about specific threats or devices, you'll see recommendati
 
 1. Go to the ([Microsoft 365 Defender portal](https://security.microsoft.com)) and sign in.
 
-1. In the navigation pane, choose **Threat Analytics** to see all the current threats. Threads are categorized by threat severity and type.
+2. In the navigation pane, choose **Threat Analytics** to see all the current threats. Threads are categorized by threat severity and type.
 
-1. Click on a threat to see more details about the threat.
+3. Select a threat to see more details about the threat.
 
-1. In the table, you can filter the alerts according to a number of criteria.
+4. In the table, you can filter the alerts according to a number of criteria.
 
 ## Manage threat detections in Microsoft Intune
 
