@@ -26,7 +26,7 @@ Microsoft Defender Antivirus detects and protects against the following kinds of
 - Phishing attempts
 - Data theft attempts
 
-As an IT professional/admin, you can view information about threat detections across [Windows devices enrolled in Intune](/mem/intune/enrollment/device-enrollment) in the Microsoft 365 admin center. You'll see summary information, such as:
+As an IT professional/admin, you can view information about threat detections across [Windows devices enrolled in Intune](/mem/intune/enrollment/device-enrollment) in the Microsoft 365 admin center. Summary information includes:
 
 - How many devices need antivirus protection
 - How many devices aren't in compliance with security policies
