@@ -1,11 +1,11 @@
 ---
-title: "Manage Plugins for Copilot in Integrated Apps (PREVIEW)"
+title: "Manage Apps with Plugins for Copilot in Integrated Apps"
 f1.keywords:
 - NOCSH
 ms.author: efrene
 author: efrene
 manager: scotv
-ms.date: 10/19/2023
+ms.date: 10/20/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -29,10 +29,7 @@ description: "Learn how to manage plugins for Copilot in Integrated Apps."
 
 # Manage Plugins for Copilot in Integrated Apps (PREVIEW)
 
-> [!IMPORTANT]
-> The information in this article only applies to the Microsoft Early Access Program, an invite-only paid preview program for commercial customers. Some information in this article relates to a prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
-Microsoft 365 Copilot is a new experience inside Microsoft 365 that combines the power of large language models with your data and Microsoft 365 apps to capture natural language commands to produce content and analyze data. Plugins for Copilot are extensions that enable Copilot to access and use third-party apps, such as Jira, Dynamics 365, or Bing Web Search. Admins can manage plugins for Copilot in the same way as they manage any other app in the Integrated apps section of the Microsoft 365 admin center (MAC). This document explains how admins can enable, disable, assign, block, or remove plugins for Copilot for their organization, and about Copilot capabilities and data privacy.
+Microsoft 365 Copilot is a new experience inside Microsoft 365 that combines the power of large language models with your data and Microsoft 365 apps to capture natural language commands to produce content and analyze data. Plugins for Copilot are extensions that enable Copilot to access and use third-party apps, such as Jira, Dynamics 365, or Bing Web Search. Admins can manage plugins for Copilot in the same way as they manage any other app in the Integrated apps section of the Microsoft 365 admin center. This document explains how admins can enable, disable, assign, block, or remove plugins for Copilot for their organization, and about Copilot capabilities and data privacy.
 
 ## Overview
 
@@ -45,7 +42,7 @@ There are two types of message extensions (ME):
 
 Currently, Copilot can use search-based message extensions as plugins, but only those that meet high quality standards and have been validated. Not all search-based message extensions qualify as plugins for Copilot.
 
-When Copilot extensibility is enabled, users can see an extensibility icon in Copilot that allows them to access the plugin for Copilot hub. The plugin hub Copilot experience shows the list of plugins that are available and deployed for the user. Users can toggle it on or off to restrict access of Copilot to any specific plugin during the interaction. Users can also add or remove plugins in their Copilot experience by right-clicking on the plugin and selecting the appropriate option. Users can only access the plugins that are allowed by the admin and that they have installed or been assigned to.
+When Copilot extensibility is enabled, users can see an 3P plugins in Copilot that allows them to access the plugin for Copilot. The plugin hub Copilot experience shows the list of plugins that are available and deployed for the user. Users can toggle it on or off to restrict access of Copilot to any specific plugin during the interaction. Users can also add or remove plugins in their Copilot experience by right-clicking on the plugin and selecting the appropriate option. Users can only access the plugins that are allowed by the admin and that they have installed or been assigned to.
 
 ## Manage plugins for Copilot in the Microsoft 365 admin center
 
@@ -56,45 +53,12 @@ Admins can manage plugins for Copilot as apps in the Integrated apps section of 
 - Deploy or remove apps with plugins for Copilot for the whole organization or specific users or groups.
 - Block or unblock apps with plugins for Copilot for the whole organization.
 
-## Enabling or disabling Copilot extensibility
+## Enable or disable Copilot extensibility
 
-Admins can enable or disable Copilot extensibility at the tenant level by using the following Powershell script and instructions.
+Admins can enable or disable Copilot extensibility at the tenant level by using a new setting in the tenant default options in the Integrated Apps section of the . This setting allows admins to control who can access Copilot plugins in their organization. The setting has two options:
 
-### Prerequisites
-
-- PowerShell (Version 5.1 or higher)
-- Az module 10.3
-- Global administrator role
- 
-### Usage
-
-1. Copy the script to your local machine.
-1. Open a PowerShell terminal in administrative mode.
-1. Navigate to the directory where the script is located.
-1. When the script asks for login information, make sure this is an AAD user with a global admin role.
-
-### Authentication
-
-The script uses Az module to authenticate the user and generate access token which is then used to call our services.
-
-### Examples
-
-```
-# To get Copilot Extensibility Status 
-.\Invoke-CopilotMethod.ps1 -GetCopilotExtensibilityStatus 
-```
-```
-# To Update Copilot Extensibility Status 
- .\Invoke-CopilotMethod.ps1 -SetCopilotExtensibilityStatus -EnableCopilotfeature 
- .\Invoke-CopilotMethod.ps1 -SetCopilotExtensibilityStatus -DisableCopilotfeature 
-
-```
-```azurepowershell
- # To Help menu for invoking this script 
- .\Invoke-CopilotMethod.ps1 -Help 
-```
-
-[Download the script and Readme file](https://download.microsoft.com/download/2/2/1/22171164-3548-4f92-822d-c180f9e7938a/PSScript.zip)
+- **All Users**: This is the default option and it means that all users in the organization can access Copilot plugins, subject to the existing app policies and user assignments.
+- **No Users**: This option means that no users in the organization can access Copilot plugins, and the 3P plugins are disabled in Copilot plugin flyout. This option also hides the apps that have Copilot plugins from the available and deployed apps lists in the Microsoft 365 admin center.
 
 ## Deploy or remove plugins for Copilot
 
