@@ -78,7 +78,7 @@ Send them this article to help them install Microsoft 365: [Download and install
 
 Under GDPR, an employee or customer may ask that you retrieve, or delete all information about them in your Microsoft cloud. For more info, check out, [Data Subject Requests](/compliance/regulatory/gdpr-data-subject-requests).
 
-To search data that's been saved in the Microsoft cloud as part of your Microsoft 365 Business subscription, you and each user you’ve invited will need to visit [https://account.microsoft.com/account/privacy](https://account.microsoft.com/account/privacy) to search data in locations such as OneDrive.  In addition, you (business or admin) may need to search for employee account data that's saved in the [Azure Active Directory portal](/compliance/regulatory/gdpr-dsr-office365).
+To search data that's been saved in the Microsoft cloud as part of your Microsoft 365 Business subscription, you and each user you’ve invited will need to visit [https://account.microsoft.com/account/privacy](https://account.microsoft.com/account/privacy) to search data in locations such as OneDrive.  In addition, you (business or admin) may need to search for employee account data that's saved in the [Microsoft Entra admin center](/compliance/regulatory/gdpr-dsr-office365).
 
 Depending on how you and other users save documents, you and every user you’ve invited may need to use built in search, and delete functionality to discover what is saved on your Windows PCs or Macs, on business apps on smartphones, and on non-Microsoft apps and sites.
 
