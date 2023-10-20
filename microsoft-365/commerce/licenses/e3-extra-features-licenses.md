@@ -1,5 +1,5 @@
 ---
-title: "Understand Microsoft 365 E3 Extra Features licenses"
+title: "Understand the Microsoft 365 E3 Extra Features license"
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -18,14 +18,14 @@ search.appverid: MET150
 description: "Learn about Microsoft 365 E3 Extra Features and how to assign licenses for it to your users."
 ms.date: 10/20/2023
 ---
-# Understand Microsoft 365 E3 Extra Features licenses
+# Understand the Microsoft 365 E3 Extra Features license
 
 > [!IMPORTANT]
 > This article only applies if you bought a Microsoft 365 E3 Original subscription through an Enterprise Agreement (EA). If this applies to you, you now see the Microsoft 365 E3 Extra Features product on the **Licenses** page in the Microsoft 365 admin center.
 
 If you have a Microsoft 365 E3 Original subscription that you bought through an Enterprise Agreement (EA), you now also have a subscription for Microsoft 365 E3 Extra Features. Microsoft 365 E3 Extra Features provides the following products and services added to Microsoft 365 E3 Original at no additional cost.
 
-- Microsoft Office 365 E3
+- Office 365 E3
 - Enterprise Mobility and Security E3
 - Windows E3
 - Microsoft Defender for Endpoint Plan 1
@@ -36,11 +36,11 @@ The new Microsoft 365 E3 Extra Features product is now included in this list. To
 
 Microsoft 365 E3 Extra Features provides the following features for your users:
 
-- [Bing Chat Enterprise](https://blogs.microsoft.com/blog/2023/07/18/furthering-our-ai-ambitions-announcing-bing-chat-enterprise-and-microsoft-365-copilot-pricing/) &mdash; An AI-powered copilot for the web, with commercial data protection. It ensures user and business data are protected, won’t leak outside the organization and won’t be used to train the large language models.
-- [Microsoft Clipchamp](https://www.microsoft.com/microsoft-365/blog/2023/07/31/introducing-microsoft-clipchamp-unlock-the-power-of-video-at-work/) &mdash; A video editing tool for anyone to create professional-looking videos, even with no prior experience.
-- [Microsoft Loop](https://www.microsoft.com/microsoft-365/blog/2023/03/22/new-microsoft-loop-app-is-built-for-modern-co-creation/) &mdash; A co-creation app that lets teams bring together all the parts of a project in one place and collaborate across the apps and devices they already use.
-- [Avatars for Teams](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/avatars-for-microsoft-teams-in-public-preview/ba-p/3774421) &mdash; A service that lets users create personalized avatars for video calls that express their appearance, style, or mood for the day. 
-- [Windows Autopatch](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/windows-autopatch-has-arrived/ba-p/3570119) &mdash; A service that manages and automates Windows 10, Windows 11, Microsoft Edge, Microsoft Teams and Microsoft 365 software updates.
+- [Bing Chat Enterprise](https://blogs.microsoft.com/blog/2023/07/18/furthering-our-ai-ambitions-announcing-bing-chat-enterprise-and-microsoft-365-copilot-pricing/)&mdash;An AI-powered copilot for the web, with commercial data protection. It ensures user and business data are protected, won’t leak outside the organization and won’t be used to train the large language models.
+- [Microsoft Clipchamp](https://www.microsoft.com/microsoft-365/blog/2023/07/31/introducing-microsoft-clipchamp-unlock-the-power-of-video-at-work/)&mdash;A video editing tool for anyone to create professional-looking videos, even with no prior experience.
+- [Microsoft Loop](https://www.microsoft.com/microsoft-365/blog/2023/03/22/new-microsoft-loop-app-is-built-for-modern-co-creation/)&mdash;A co-creation app that lets teams bring together all the parts of a project in one place and collaborate across the apps and devices they already use.
+- [Avatars for Teams](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/avatars-for-microsoft-teams-in-public-preview/ba-p/3774421)&mdash;A service that lets users create personalized avatars for video calls that express their appearance, style, or mood for the day. 
+- [Windows Autopatch](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/windows-autopatch-has-arrived/ba-p/3570119)&mdash;A service that manages and automates Windows 10, Windows 11, Microsoft Edge, Microsoft Teams and Microsoft 365 software updates.
 
 ## Assign the Microsoft 365 E3 Extra Features license to users
 
