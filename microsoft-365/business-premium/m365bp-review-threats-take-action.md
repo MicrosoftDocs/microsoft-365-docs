@@ -34,7 +34,7 @@ As an IT professional/admin, you can view information about threat detections ac
 
 ## Actions you can take
 
-When you view details about specific threats or devices, you'll see recommendations and one or more actions you can take. The following table describes actions that you might see.<br><br>
+When you view details about specific threats or devices, you see recommendations and one or more actions you can take. The following table describes actions that you might see.<br><br>
 
 | Action | Description |
 |--|--|
@@ -53,7 +53,7 @@ When you view details about specific threats or devices, you'll see recommendati
 
 3. Select a threat to see more details about the threat.
 
-4. In the table, you can filter the alerts according to a number of criteria.
+4. In the table, you can filter the alerts according to many criteria.
 
 ## Manage threat detections in Microsoft Intune
 
@@ -63,11 +63,11 @@ You can use Microsoft Intune to manage threat detections as well. First, all dev
 
 2. In the navigation pane, select **Endpoint security**.
 
-3. Under **Manage**, select **Antivirus**. You'll see tabs for **Summary**, **Unhealthy endpoints**, and **Active malware**.
+3. Under **Manage**, select **Antivirus**. You see tabs for **Summary**, **Unhealthy endpoints**, and **Active malware**.
 
 4. Review the information on the available tabs, and then take any needed action.
 
-For example, suppose that devices are listed on the **Active malware** tab. When you select a device, you'll have certain actions available, such as **Restart**, **Quick Scan**, **Full Scan**, **Sync**, or **Update signatures**. Select an action for that device.
+For example, suppose that devices are listed on the **Active malware** tab. When you select a device, certain actions are available, such as **Restart**, **Quick Scan**, **Full Scan**, **Sync**, or **Update signatures**. Select an action for that device.
 
 The following table describes the actions you might see in Microsoft Intune.<br><br>
 
