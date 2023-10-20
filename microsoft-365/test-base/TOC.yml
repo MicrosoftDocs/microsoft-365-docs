@@ -20,6 +20,8 @@
         href: uploadapplication.md
       - name: Create Package from App Gallery
         href: createpackagefromappgallery.md
+      - name: Package Validation
+        href: packagevalidation.md
     - name: Build a Package
       href: buildpackage.md
     - name: Clone an existing package

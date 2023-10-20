@@ -9,7 +9,7 @@ ms.topic: article
 f1.keywords:
 - NOCSH
 ms.date: 09/20/2022
-ms.reviewer: dmwmsft
+ms.reviewer: deanw
 ms.custom:
 - it-pro
 ms.localizationpriority: medium
@@ -25,28 +25,28 @@ In order to promote clarity in the capability descriptions on data residency fun
 
 **Table 1: Definitions and Terms**
 
-| **Term** | **Definition** |
+| Term | Definition |
 |:-----|:-----|
-|Macro Region Geography  <br/> |Macro Region Geography 1 – EMEA, Macro Region Geography 2 – Asia Pacific, Macro Region Geography 3 - Americas  <br/> |
-|Macro Region Geography 1 - EMEA  <br/> |Data centers in Austria, Finland, France, Ireland, Italy, Netherlands, Poland, Sweden  <br/> |
-|Macro Region Geography 2 - Asia Pacific  <br/> |Data centers in Hong Kong Special Administrative Region, Japan, Malaysia, Singapore, South Korea  <br/> |
-|Macro Region Geography 3 - Americas  <br/> |Data centers in Brazil, Chile, United States  <br/> |
-|Local Region Geography  <br/> |Australia, Brazil, Canada, France, Germany, India, Italy, Japan, Poland, Qatar, South Korea, Norway, South Africa, Sweden, Switzerland, United Arab Emirates, United Kingdom  <br/> |
-|Expanded Local Region Geography  <br/> | Future planned data center regions: Indonesia, Israel, Spain, Mexico, Malaysia, Austria, Chile, New Zealand, Denmark, Greece, Taiwan, Saudi Arabia  <br/> |
-|Geography  <br/> |_Local Region Geography, Expanded Local Region Geography_, or _Macro Region Geography_  <br/> |
-|Satellite Geography  <br/> |If a customer subscribes to the Multi Geo service, then they can cause defined user customer data to be stored in other Geographies outside of the _Tenant_ _Primary Provisioned Geography_  <br/> |
-|AAD  <br/> |Azure Active Directory  <br/> |
-|Tenant  <br/> |A _Tenant_ represents an organization in Azure Active Directory. It's a reserved Azure AD service instance that an organization receives and owns when it signs up for a Microsoft cloud service such as Azure or Microsoft 365. Each Azure AD _Tenant_ is distinct and separate from other Azure AD _Tenant's_  <br/> |
-|Default Geography  <br/> |When an _AAD Tenant_ is created, a country/region is provided by the customer during the sign-up process.  This country/region determines the default Geography for all Microsoft 365 services.  In some cases, not all services are able to provision in this single _Default Geography_. See _Microsoft 365 Service provisioning mapping_ below for a description.  <br/> |
-|Microsoft 365 Service provisioning mapping  <br/> |All Microsoft 365 Services  use the _Default Geography_ to determine where a given _Tenant's_ specified data will be provisioned and stored.  <br/> |
-|Microsoft 365 Service provisioning country mapping  <br/> |Refer to [data maps](https://aka.ms/datamaps) to learn where a given service provisions specified customer data, based on the _Tenant Default Geography._  <br/> |
-|Primary Provisioned Geography  <br/> |A given Microsoft 365 service  use the _Tenant Default Geography_ combined with the _Microsoft 365 Service provisioning country mapping_ to determine which _Geography_ to provision customer data into.   <br/> |
-|Microsoft 365 Admin Center Data Location  <br/> |To see the _Primary Provisioned Geography_ for Exchange Online, SharePoint Online and Microsoft Teams refer to Office 365 Admin Center in Settings; Org settings; Organization profile; Data location card.  <br/> |
-|Microsoft 365 Multi-Geo Capabilities  <br/> |Microsoft 365 Multi-Geo Capabilities allows a single _Tenant_ to store customer data-at-rest across multiple geographies rather than be limited to the single _Primary Provisioned Geography_. See the Multi-Geo description for more detail.  <br/> |
-|Preferred Data Location (PDL)  <br/> |Used for _Tenants_ with a Multi-Geo subscription.  A property set by the administrator that indicates where the user or shared resource's s data should be stored at-rest.  See the Multi-Geo description for more detail.  <br/> |
-|Advanced Data Residency (ADR)  <br/> |A new Microsoft 365 add-on service that guarantees customer data residency for a defined set of services. See section 3  <br/> |
-|Privacy and Security Product Terms  <br/> |Privacy and Security Terms for Microsoft 365 services provides some customer data location related commitments.  The document can be found <a href="https://www.microsoft.com/licensing/terms/en-US/product/PrivacyandSecurityTerms/EAEAS" target="_blank">here</a>. The extract of the relevant section (on November 1, 2022) is:<br>**Office 365 Services.** If Customer provisions its _Tenant_ in Australia, Brazil, Canada, the European Union, France, Germany, India, Japan, Norway, Qatar, South Africa, South Korea, Sweden, Switzerland, the United Kingdom, the United Arab Emirates, or the United States, Microsoft stores the following Customer Data at rest only within that Geo: (1) Exchange Online mailbox content (e-mail body, calendar entries, and the content of e-mail attachments), (2) SharePoint Online site content and the files stored within that site,  (3) files uploaded to OneDrive for Business, and (4) Microsoft Teams chat messages (including private messages, channel messages, meeting messages and images used in chats), and for customers using Microsoft Stream (on SharePoint), meeting recordings.
-|Workloads  <br/> |Often used to refer to a Microsoft 365 service such as but not limited to Exchange Online, SharePoint Online, Microsoft Teams, etc.|
+|Macro Region Geography  |Macro Region Geography 1 – EMEA, Macro Region Geography 2 – Asia Pacific, Macro Region Geography 3 - Americas  |
+|Macro Region Geography 1 - EMEA  |Data centers in Austria, Finland, France, Ireland, Italy, Netherlands, Poland, Sweden  |
+|Macro Region Geography 2 - Asia Pacific  |Data centers in Hong Kong Special Administrative Region, Japan, Malaysia, Singapore, South Korea  |
+|Macro Region Geography 3 - Americas  |Data centers in Brazil, Chile, United States  |
+|Local Region Geography  |Australia, Brazil, Canada, France, Germany, India, Italy, Japan, Poland, Qatar, South Korea, Norway, South Africa, Sweden, Switzerland, United Arab Emirates, United Kingdom  |
+|Expanded Local Region Geography  | Future planned data center regions: Indonesia, Israel, Spain, Mexico, Malaysia, Austria, Chile, New Zealand, Denmark, Greece, Taiwan, Saudi Arabia  |
+|Geography  |_Local Region Geography, Expanded Local Region Geography_, or _Macro Region Geography_  |
+|Satellite Geography  |If a customer subscribes to the Multi Geo service, then they can cause defined user customer data to be stored in other Geographies outside of the _Tenant_ _Primary Provisioned Geography_  |
+|AAD  |Azure Active Directory  |
+|Tenant  |A _Tenant_ represents an organization in Azure Active Directory. It's a reserved Azure AD service instance that an organization receives and owns when it signs up for a Microsoft cloud service such as Azure or Microsoft 365. Each Azure AD _Tenant_ is distinct and separate from other Azure AD _Tenant's_  |
+|Default Geography  |When an _AAD Tenant_ is created, a country/region is provided by the customer during the sign-up process.  This country/region determines the default Geography for all Microsoft 365 services.  In some cases, not all services are able to provision in this single _Default Geography_. See _Microsoft 365 Service provisioning mapping_ below for a description.  |
+|Microsoft 365 Service provisioning mapping  |All Microsoft 365 Services  use the _Default Geography_ to determine where a given _Tenant's_ specified data will be provisioned and stored.  |
+|Microsoft 365 Service provisioning country mapping  |Refer to [data maps](https://aka.ms/datamaps) to learn where a given service provisions specified customer data, based on the _Tenant Default Geography._  |
+|Primary Provisioned Geography  |A given Microsoft 365 service  use the _Tenant Default Geography_ combined with the _Microsoft 365 Service provisioning country mapping_ to determine which _Geography_ to provision customer data into.   |
+|Microsoft 365 Admin Center Data Location  |To see the _Primary Provisioned Geography_ for Exchange Online, SharePoint Online and Microsoft Teams refer to Office 365 Admin Center in Settings; Org settings; Organization profile; Data location card.  |
+|Microsoft 365 Multi-Geo Capabilities  |Microsoft 365 Multi-Geo Capabilities allow a single _Tenant_ to store customer data-at-rest across multiple geographies rather than be limited to the single _Primary Provisioned Geography_. See the Multi-Geo description for more detail.  |
+|Preferred Data Location (PDL)  |Used for _Tenants_ with a Multi-Geo subscription.  A property set by the administrator that indicates where the user or shared resource's s data should be stored at-rest.  See the Multi-Geo description for more detail.  |
+|Advanced Data Residency (ADR)  |A new Microsoft 365 add-on service that guarantees customer data residency for a defined set of services. See section 3  |
+|Privacy and Security Product Terms  |Privacy and Security Terms for Microsoft 365 services provides some customer data location related commitments.  The document can be found <a href="https://www.microsoft.com/licensing/terms/en-US/product/PrivacyandSecurityTerms/EAEAS" target="_blank">here</a>. The extract of the relevant section (on November 1, 2022) is:<br>**Office 365 Services.** If Customer provisions its _Tenant_ in Australia, Brazil, Canada, the European Union, France, Germany, India, Japan, Norway, Qatar, South Africa, South Korea, Sweden, Switzerland, the United Kingdom, the United Arab Emirates, or the United States, Microsoft stores the following Customer Data at rest only within that Geo: (1) Exchange Online mailbox content (e-mail body, calendar entries, and the content of e-mail attachments), (2) SharePoint Online site content and the files stored within that site,  (3) files uploaded to OneDrive for Business, and (4) Microsoft Teams chat messages (including private messages, channel messages, meeting messages and images used in chats), and for customers using Microsoft Stream (on SharePoint), meeting recordings.
+|Workloads  |Often used to refer to a Microsoft 365 service such as but not limited to Exchange Online, SharePoint Online, Microsoft Teams, etc.|
 
 ## Overview of Data Residency
 
@@ -63,9 +63,9 @@ When a customer creates a new AAD _Tenant_, the customer enters a country/region
 
 ### Available Geographies for a given service
 
-Microsoft 365 services are not deployed to all Microsoft data centers globally.  The larger services, like Exchange Online, SharePoint Online and Microsoft Teams are universally deployed to all _Geographies_.   Other services make decisions on where to deploy their services based on the number of customers, regional affiliations, and software architectures.  When a customer first uses a service in this category, the provisioning logic  use the _Default Geography_ and the supported _Geographies_ to determine where to provision a given customer.
+Microsoft 365 services are not deployed to all Microsoft data centers globally.  The larger services, like Exchange Online, SharePoint Online and Microsoft Teams are universally deployed to all _Geographies_.   Other services make decisions on where to deploy their services based on the number of customers, regional affiliations, and software architectures.  When a customer first uses a service in this category, the provisioning logic  uses the _Default Geography_ and the supported _Geographies_ to determine where to provision a given customer.
 
-Over time, a particular service may deploy their software to additional _Geographies_, so the provisioning locations for new customers can change over time.  This does not necessarily cause customer data to move to a new _Geography_.
+Over time, a particular service may deploy their software to additional _Geographies_, so the provisioning locations for new customers can change over time.  This doesn't necessarily cause customer data to move to a new _Geography_.
 
 In order to understand where your data, for a given service is stored, your primary tool for understanding this is in the _Tenant_ Admin Center.  As a _Tenant_ administrator you can find the actual data location by navigating to Admin->Settings->Org Settings->Organization Profile->Data Location.  Currently the data location is available for Exchange Online, SharePoint Online and Microsoft Teams.  In addition to this resource, see the [Data Maps page](o365-data-locations.md).
 
@@ -91,24 +91,24 @@ Once a Microsoft 365 service provisions a _Tenant_ into a particular _Geography_
 
 ### Durable commitments on data location
 
-There are three methods for ensuring that the _Tenant_ data location for a particular service does not change.
+There are three methods for ensuring that the _Tenant_ data location for a particular service doesn't change.
 
-1. Product Terms: Exchange Online, SharePoint Online, OneDrive for Business and Microsoft Teams provisioned in Australia, Brazil, Canada, France, Germany, India, Japan, Qatar, South Korea, Norway, South Africa, Sweden, Switzerland, United Arab Emirates, United Kingdom, European Union and the United States have a commitment for customer data residency expressed in the [Product Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all).  For more information see the [Product Terms Data Residency page](m365-dr-product-terms-dr.md).
-1. _Multi Geo_ subscription: allows customers to assign data location for Exchange Online, SharePoint Online, OneDrive for Business and Microsoft Teams to any supported _Geography_.  For more information see [Multi Geo Data Residency](microsoft-365-multi-geo.md).
-1. _Advanced Data Residency_ subscription guarantees data residency for an expanded set of Microsoft 365 services in any _Local Region Geography_.  For more information see the [Advanced Data Residency page](advanced-data-residency.md).
+1. Product Terms: Exchange Online, SharePoint Online, OneDrive for Business and Microsoft Teams provisioned in Australia, Brazil, Canada, France, Germany, India, Japan, Qatar, South Korea, Norway, South Africa, Sweden, Switzerland, United Arab Emirates, United Kingdom, European Union and the United States have a commitment for customer data residency expressed in the [Product Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all).  For more information, see the [Product Terms Data Residency page](m365-dr-product-terms-dr.md).
+1. _Multi Geo_ subscription: allows customers to assign data location for Exchange Online, SharePoint Online, OneDrive for Business and Microsoft Teams to any supported _Geography_.  For more information, see [Multi Geo Data Residency](microsoft-365-multi-geo.md).
+1. _Advanced Data Residency_ subscription guarantees data residency for an expanded set of Microsoft 365 services in any _Local Region Geography_.  For more information, see the [Advanced Data Residency page](advanced-data-residency.md).
 
 **Table 2: Available Data Residency by Workload**
 
-|**Service Name**|**Product Terms**|**Multi-Geo**|**ADR**|
+| Service Name | Product Terms | Multi-Geo | ADR |
 |:-----|:-----|:-----|:-----|
-|Exchange Online <br/> |X<sup>1</sup>  <br/> |X<sup>2</sup>  <br/> |X<sup>3</sup>  <br/> |
-| SharePoint Online / OneDrive for Business <br/> |X<sup>1</sup>  <br/> |X<sup>2</sup>  <br/> |X<sup>3</sup>  <br/> |
-| Microsoft Teams <br/> |X<sup>1</sup>  <br/> |X<sup>2</sup>  <br/> |X<sup>3</sup>  <br/> |
-| Microsoft Defender for Office P1 <br/> |-  <br/> |-  <br/> |X<sup>3</sup>  <br/> |
-| Office for the Web <br/> |-  <br/> |-  <br/> |X<sup>3</sup>  <br/> |
-| Viva Connections <br/> |-  <br/> |-  <br/> |X<sup>3</sup>  <br/> |
-| Viva Topics <br/> |-  <br/> |-  <br/> |X<sup>3</sup>  <br/> |
-| Microsoft Purview <br/> |-  <br/> |-  <br/> |X<sup>3</sup>  <br/> |
+|Exchange Online |X<sup>1</sup>  |X<sup>2</sup>  |X<sup>3</sup>  |
+| SharePoint Online / OneDrive for Business |X<sup>1</sup>  |X<sup>2</sup>  |X<sup>3</sup>  |
+| Microsoft Teams |X<sup>1</sup>  |X<sup>2</sup>  |X<sup>3</sup>  |
+| Microsoft Defender for Office P1 |-  |-  |X<sup>3</sup>  |
+| Office for the Web |-  |-  |X<sup>3</sup>  |
+| Viva Connections |-  |-  |X<sup>3</sup>  |
+| Viva Topics |-  |-  |X<sup>3</sup>  |
+| Microsoft Purview |-  |-  |X<sup>3</sup>  |
 
 1. Only available in the following countries/regions: Australia, Brazil, Canada, France, Germany, India, Japan, Qatar, South Korea, Norway, South Africa, Sweden, Switzerland, United Arab Emirates, United Kingdom, European Union and the United States.
 1. Available in _Local Region Geography_, _Expanded Local Region Geography_ (when the future data center is launched) and _Regional Geography countries/regions_
@@ -151,7 +151,7 @@ The following Regional Geographies can store data at rest.
 
 **Table 4: Regional Geographies**
 
-|**Regional Geographies** |**Locations where customer data may be stored**  |
+| Regional Geographies | Locations where customer data may be stored |
 |---------|---------|
 |Macro Region Geography 1 - EMEA (Europe, Middle East and Africa) |  Austria, Finland, France, Ireland, Italy, Netherlands, Poland, Sweden  |
 |Macro Region Geography 2 - Asia Pacific |  Hong Kong SAR, Japan, Malaysia, Singapore, South Korea  |
@@ -184,7 +184,7 @@ The following Regional Geographies can store data at rest.
 ### FAQ
 
 #### How does Microsoft define data?
-<details><summary>Click to expand</summary>
+<details><summary>Select to expand</summary>
 
 Review our [definitions for different types of customer data](https://go.microsoft.com/fwlink/p/?linkid=864390) on the Microsoft Trust Center. In the [Privacy & Security Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all), Microsoft makes contractual commitments regarding customer data/your _Tenant_ and user data. We refer to customer data as the customer data that is committed to be stored at rest only within a _Tenant's_ region according to the [Privacy & Security Terms](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all).
 
@@ -192,21 +192,21 @@ Review our [definitions for different types of customer data](https://go.microso
 
 #### Where are the exact addresses of the data centers?
 
-<details><summary>Click to expand</summary>
+<details><summary>Select to expand</summary>
 
-Microsoft does not disclose the exact addresses of its data centers. We established this policy to help secure our data center facilities. However, we do list city locations. See Table 5 in the [Country/Region-specific Data Center City Locations](m365-dr-overview.md#countryregion-specific-data-center-city-locations) on the Overview and Definitions page to learn more.
+Microsoft doesn't disclose the exact addresses of its data centers. We established this policy to help secure our data center facilities. However, we do list city locations. See Table 5 in the [Country/Region-specific Data Center City Locations](m365-dr-overview.md#countryregion-specific-data-center-city-locations) on the Overview and Definitions page to learn more.
 
 </details>
 
 #### Does the location of your customer data have a direct impact on your end users' experience?
-<details><summary>Click to expand</summary>
+<details><summary>Select to expand</summary>
 
-The performance of Microsoft 365 is not simply proportional to a _Tenant_ user's distance to data center locations. Microsoft's continued investments in its global cloud network, global cloud infrastructure, and the Microsoft 365 services architecture help provide users with a singular, consistent experience independent of where customer data is stored at rest. If your users are experiencing performance issues, you should troubleshoot those in depth. Microsoft has published guidance for Microsoft 365 customers to plan for and optimize end-user performance on the [Office Support web site](network-planning-and-performance.md).
+The performance of Microsoft 365 isn't simply proportional to a _Tenant_ user's distance to data center locations. Microsoft's continued investments in its global cloud network, global cloud infrastructure, and the Microsoft 365 services architecture help provide users with a singular, consistent experience independent of where customer data is stored at rest. If your users are experiencing performance issues, you should troubleshoot those in depth. Microsoft has published guidance for Microsoft 365 customers to plan for and optimize end-user performance on the [Office Support web site](network-planning-and-performance.md).
 
 </details>
 
 #### How does Microsoft help me comply with my national, regional, and industry-specific regulations?
-<details><summary>Click to expand</summary>
+<details><summary>Select to expand</summary>
 
 To help a _Tenant_ comply with national, regional, and industry-specific requirements governing the collection and use of individuals' data, Microsoft 365 offers the most comprehensive set of compliance offerings of any global cloud productivity provider. Review [our compliance offerings](/compliance/regulatory/offering-home) and more details in the [Microsoft Purview](https://go.microsoft.com/fwlink/p/?linkid=862317) section on the Microsoft Trust Center. Also, certain Microsoft 365 plans offer further compliance solutions to help a _Tenant_ manage their data, comply with legal and regulatory requirements, and monitor actions taken on their data.
 
@@ -220,28 +220,28 @@ To help a _Tenant_ comply with national, regional, and industry-specific require
 </details>
 
 #### Does Microsoft access your data?
-<details><summary>Click to expand</summary>
+<details><summary>Select to expand</summary>
 
 Microsoft automates most Microsoft 365 operations while intentionally limiting its own access to customer data. This helps us manage Microsoft 365 at scale and address the risks of internal threats to customer data. By default, Microsoft engineers have no standing administrative privileges and no standing access to customer data in Microsoft 365. A Microsoft engineer may have limited and logged access to customer data for a limited amount of time, but only when necessary for normal service operations and only when approved by a member of senior management at Microsoft (and, for customers who are licensed for the Customer Lockbox feature, by the customer).
 
 </details>
 
 #### How does Microsoft secure your data?
-<details><summary>Click to expand</summary>
+<details><summary>Select to expand</summary>
 
 Microsoft has robust policies, controls, and systems built into Microsoft 365 to help keep your information safe. Review the [Microsoft 365 security section](https://go.microsoft.com/fwlink/p/?linkid=864393) on the Microsoft Trust Center to learn more.
 
 </details>
 
 #### Does Microsoft 365 encrypt your data?
-<details><summary>Click to expand</summary>
+<details><summary>Select to expand</summary>
 
 Microsoft 365 uses service-side technologies that encrypt customer data at rest and in transit. For customer data at rest, Microsoft 365 uses volume-level and file-level encryption. For customer data in transit, Microsoft 365 uses multiple encryption technologies for communications between data centers and between clients and servers, such as Transport Layer Security (TLS) and Internet Protocol Security (IPsec). Microsoft 365 also includes customer-managed encryption features.
 
 </details>
 
 #### Where can I find data residency information for Microsoft Azure?
-<details><summary>Click to expand</summary>
+<details><summary>Select to expand</summary>
 
 Review the [Products available by region](https://go.microsoft.com/fwlink/p/?linkid=2093451) page to find data residency information for Microsoft Azure.
 
