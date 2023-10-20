@@ -33,7 +33,7 @@ This article describes proactive detection of new or ongoing human-operated rans
 - Microsoft Defender for Office 365
 - Microsoft Defender for Identity
 - Microsoft Defender for Cloud Apps (including the app governance add-on)
-- Microsoft Azure AD Identity Protection
+- Microsoft Entra ID Protection
 - Microsoft Defender for IoT
 - Microsoft 365 Business Premium
 - Microsoft Defender for Business
@@ -139,7 +139,7 @@ Attacker is attempting to compromise a user account, device, or app.
 |Weak application settings|Defender for Cloud Apps, Defender for Cloud Apps with the app governance add-on|Defender for Cloud Apps|
 |Malicious app activity|Defender for Cloud Apps, Defender for Cloud Apps with the app governance add-on|Defender for Cloud Apps|
 |Phishing email|Defender for Office 365|
-|Password spray against Azure AD accounts|Azure AD Identity Protection via Defender for Cloud Apps|Defender for Cloud Apps|
+|Password spray against Microsoft Entra accounts|Microsoft Entra ID Protection via Defender for Cloud Apps|Defender for Cloud Apps|
 |Password spray against on-premises accounts|Microsoft Defender for Identity|
 |Device compromise|Defender for Endpoint|
 |Credential theft|Microsoft Defender for Identity|
@@ -151,8 +151,8 @@ Attacker is attempting to probe for additional entities to compromise.
 
 |Spike category|Signal source|Alternate security portals|
 |---|---|---|
-|Sign-ins: Numerous failed attempts, attempts to logon to multiple devices in a short period, multiple first-time logons, etc.|Azure AD Identity Protection via Defender for Cloud Apps, Microsoft Defender for Identity|Defender for Cloud Apps|
-|Recently active user account, group, machine account, app|Azure AD Identity Protection via Defender for Cloud Apps (Azure AD), Defender for Identity (Active Directory Domain Services [AD DS])|Defender for Cloud Apps|
+|Sign-ins: Numerous failed attempts, attempts to logon to multiple devices in a short period, multiple first-time logons, etc.|Microsoft Entra ID Protection via Defender for Cloud Apps, Microsoft Defender for Identity|Defender for Cloud Apps|
+|Recently active user account, group, machine account, app|Microsoft Entra ID Protection via Defender for Cloud Apps (Microsoft Entra ID), Defender for Identity (Active Directory Domain Services [AD DS])|Defender for Cloud Apps|
 |Recent app activity such as data access|Apps with Defender for Cloud Apps with the app governance add-on|Defender for Cloud Apps|
 
 #### New activity
@@ -196,14 +196,14 @@ Microsoft 365 Defender portal centralizes signals from:
 - Microsoft Defender for Office 365
 - Microsoft Defender for Identity
 - Microsoft Defender for Cloud Apps (including the app governance add-on)
-- Microsoft  Azure AD Identity Protection
+- Microsoft Entra ID Protection
 - Microsoft Defender for IoT
 
 This table lists some typical attacks and their corresponding signal source for Microsoft 365 Defender.
 
 |Attacks and incidents|Signal source|
 |---|---|
-|Cloud identity: Password spray, numerous failed attempts, attempts to log on to multiple devices in a short period, multiple first-time logons, recently active user accounts|Azure AD Identity Protection|
+|Cloud identity: Password spray, numerous failed attempts, attempts to log on to multiple devices in a short period, multiple first-time logons, recently active user accounts|Microsoft Entra ID Protection|
 |On-premises identity (AD DS) compromise|Defender for Identity|
 |Phishing|Defender for Office 365|
 |Malicious apps|Defender for Cloud Apps or Defender for Cloud Apps with app governance add-on|
@@ -284,7 +284,7 @@ Preparing your SecOps team for proactive ransomware detection requires:
 Consider these steps to get your SecOps team and organization ready for focused ransomware attack prevention:
 
 1. Configure your IT and cloud infrastructure for ransomware prevention with the [Rapidly protect against ransomware and extortion](/security/compass/protect-against-ransomware-phase3) guidance. The phases and tasks in this guidance can be done in parallel with the following steps.
-2. Get the appropriate licenses for the Defender for Endpoint, Defender for Office 365, Defender for Identity, Defender for Cloud Apps, the app governance add-on, Defender for IoT, and Azure AD Identity Protection services.
+2. Get the appropriate licenses for the Defender for Endpoint, Defender for Office 365, Defender for Identity, Defender for Cloud Apps, the app governance add-on, Defender for IoT, and Microsoft Entra ID Protection services.
 3. Assemble a catalog of advanced hunting queries tuned for known ransomware attack methods or attack phases.
 4. Create the set of custom detection rules for specific advanced hunting queries that create alerts for known ransomware attack methods, including their schedule, alert naming, and automated actions.
 5. Determine the set of [custom tags](./manage-incidents.md) or standards to create new one to identify incidents that are known to be part of a larger, coordinated ransomware attack

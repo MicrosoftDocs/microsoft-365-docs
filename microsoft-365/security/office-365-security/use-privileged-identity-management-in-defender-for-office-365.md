@@ -40,7 +40,7 @@ In this example we will configure "Alex", a member of our security team who will
 
 ***Step 1***. In the Azure PIM console for your subscription, add the user (Alex) to the Azure Security Reader role and configure the security settings related to activation.
 
-1. Sign into the [Azure AD Admin Center](https://aad.portal.azure.com/) and select  **Azure Active Directory** > **Roles and administrators**.
+1. Sign into the [Microsoft Entra Admin Center](https://aad.portal.azure.com/) and select  **Microsoft Entra ID** > **Roles and administrators**.
 2. Select **Security Reader** in the list of roles and then **Settings** > **Edit**
 3. Set the '**Activation maximum duration (hours)**' to a normal working day and 'On activation' to require **Azure MFA**.
 4. As this is Alex's normal privilege level for day-to-day operations, we will Uncheck **Require justification on activation**' > **Update**.
@@ -67,11 +67,13 @@ In the Microsoft 365 Defender portal, create a custom role group that contains t
 3. Name your group to reflect its purpose such as 'Search and Purge PIM'.
 4. Don't add members, simply save the group and move on to the next part!
 
-### Create the security group in Azure AD for elevated permissions
+<a name='create-the-security-group-in-azure-ad-for-elevated-permissions'></a>
 
-1. Browse back to the [Azure AD Admin Center](https://aad.portal.azure.com/) and navigate to **Azure AD** > **Groups** > **New Group**.
-2. Name your Azure AD group to reflect its purpose, **no owners or members are required** right now.
-3. Turn **Azure AD roles can be assigned to the group** to **Yes**.
+### Create the security group in Microsoft Entra ID for elevated permissions
+
+1. Browse back to the [Microsoft Entra Admin Center](https://aad.portal.azure.com/) and navigate to **Microsoft Entra ID** > **Groups** > **New Group**.
+2. Name your Microsoft Entra group to reflect its purpose, **no owners or members are required** right now.
+3. Turn **Microsoft Entra roles can be assigned to the group** to **Yes**.
 4. Don't add any roles, members or owners, create the group.
 5. Go back into the group you've just created, and select **Privileged Access** > **Enable Privileged Access**.
 6. Within the group, select **Eligible assignments** > **Add assignments** > Add the user who needs Search & Purge as a role of **Member**.

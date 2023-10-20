@@ -88,7 +88,7 @@ Microsoft 365 Copilot iteratively processes and orchestrates these sophisticated
 
 ## Semantic Index
 
-The Semantic Index for Copilot is a separate index or map of your user and company data—identifying relationships and connections. It works with Copilot and the Microsoft Graph to create a sophisticated map of all data and content in your organization to enable Microsoft 365 Copilot to deliver personalized, relevant, and actionable responses. The Semantic Index is part of the Microsoft 365 service and is created automatically. Although you can’t disable the index, you can exclude files and folders from it.
+The Semantic Index for Copilot is a separate index or map of your user and company data—identifying relationships and connections. It works with Copilot and the Microsoft Graph to create a sophisticated map of all data and content in your organization to enable Microsoft 365 Copilot to deliver personalized, relevant, and actionable responses. The Semantic Index is part of the Microsoft 365 service and is created automatically. You can disable SharePoint sites from appearing in search and omit them from the index.
 
 :::image type="content" source="media/semantic-index-for-copilot.png" alt-text="Diagram that shows the relationship among the components of Semantic Index, graph connectors, and Microsoft 365 Copilot.":::
   

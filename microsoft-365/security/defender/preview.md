@@ -53,7 +53,7 @@ When working with features in public preview, these features:
 
 ## Required permissions
 
-Accounts assigned the following Azure Active Directory (Azure AD) roles can turn on Microsoft 365 Defender Preview features:
+Accounts assigned the following Microsoft Entra roles can turn on Microsoft 365 Defender Preview features:
 
 - Global administrator
 - Security administrator

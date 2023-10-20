@@ -146,14 +146,14 @@ This command instructs PowerShell to:
 
 1. Set the user location to France (**Set-AzureADUser -UsageLocation FR**).
 
-## Use the Microsoft Azure Active Directory Module for Windows PowerShell
+## Use the Microsoft Azure Active Directory module for Windows PowerShell
 
-To configure properties for user accounts with the Microsoft Azure Active Directory Module for Windows PowerShell, use the **Set-MsolUser** cmdlet and specify the properties to set or change.
+To configure properties for user accounts with the Microsoft Azure Active Directory module for Windows PowerShell, use the **Set-MsolUser** cmdlet and specify the properties to set or change.
 
 First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
   
 > [!NOTE]
-> PowerShell Core doesn't support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with *Msol* in their name. Run these cmdlets from Windows PowerShell.
+> PowerShell Core doesn't support the Microsoft Azure Active Directory module for Windows PowerShell module and cmdlets with *Msol* in their name. Run these cmdlets from Windows PowerShell.
 
 ### Change properties for a specific user account
 

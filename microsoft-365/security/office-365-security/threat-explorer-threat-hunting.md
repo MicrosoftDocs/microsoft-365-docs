@@ -122,7 +122,7 @@ To view and use Explorer or Real-time detections, you must have the following pe
 
 - In the Microsoft 365 Defender portal:
   - Organization Management
-  - Security Administrator (this can be assigned in the Azure Active Directory admin center (<https://aad.portal.azure.com>)
+  - Security Administrator (this can be assigned in the Microsoft Entra admin center (<https://aad.portal.azure.com>)
   - Security Reader
 - In Exchange Online:
   - Organization Management
