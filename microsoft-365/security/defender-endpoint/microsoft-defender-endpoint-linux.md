@@ -166,7 +166,7 @@ If you experience any installation failures, refer to [Troubleshooting installat
   
   |RTP, Quick, Full Scan| Custom Scan|
   |---|---|
-  |btrfs|All filesystems supported for RTP, Quick, Full Scan +|
+  |btrfs|All filesystems supported for RTP, Quick, Full Scan|
   |ecryptfs|Efs|
   |ext2|S3fs|
   |ext3|Blobfuse|
