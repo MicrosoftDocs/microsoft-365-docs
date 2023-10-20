@@ -81,7 +81,7 @@ For a step-by-step tutorial, see [Tutorial: Microsoft Entra SSO integration with
 Follow these steps to configure federated SSO authentication in your UKG Pro WFM environment.
 
 > [!IMPORTANT]
-> Make sure that the username and email in Azure ID match what's in each user's profile in UKG Pro WFM.
+> Make sure that the username and email in Microsoft Entra ID match what's in each user's profile in UKG Pro WFM.
 
 #### Step 1: Change user accounts to federated accounts
 
