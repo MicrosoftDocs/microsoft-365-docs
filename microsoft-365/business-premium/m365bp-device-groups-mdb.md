@@ -22,16 +22,6 @@ ms.collection:
 
 Microsoft 365 Business Premium includes endpoint protection through Microsoft Defender for Business and Microsoft Intune. Device protection policies are applied to devices through certain collections that are called device groups. In Intune, devices are grouped into device categories as a different way of organizing them. 
 
-This article includes the following sections:  
-
-- [Working with device groups](#working-with-device-groups)
-- [How to create a new device group in the Microsoft 365 Defender portal](#create-a-device-group-in-the-microsoft-365-defender-portal)
-- [How to create a new device category in Intune](#create-a-device-category-in-intune)
-- [How to create dynamic device groups in Microsoft Entra ID](#create-dynamic-device-groups-in-azure-active-directory)
-- [How categories are used when enrolling devices](#how-categories-are-used-when-enrolling-devices)
-- [How to view the categories of devices that you manage](#view-the-categories-of-devices-that-you-manage)
-- [How to change the category of a device](#change-the-category-of-a-device)
-
 ## Working with device groups
 
 A device group is a collection of devices that are grouped together because of certain specified criteria, such as the operating system version. Devices that meet the criteria are included in that device group, unless you exclude them.
