@@ -60,7 +60,7 @@ You create and assign quarantine policies in the Microsoft 365 Defender portal o
     - **Organization Management**
     - **Security Administrator**
     - **Quarantine Administrator**
-  - [Microsoft Entra RBAC](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator**, **Security Administrator**, or **Quarantine Administrator** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
+  - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator**, **Security Administrator**, or **Quarantine Administrator** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 ## Step 1: Create quarantine policies in the Microsoft 365 Defender portal
 
