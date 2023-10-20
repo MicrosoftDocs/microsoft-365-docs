@@ -33,7 +33,7 @@ Microsoft Secure Score is a measurement of an organization's security posture, w
 
 To help you find the information you need more quickly, Microsoft recommended actions are organized into groups:
 
-- Identity (Azure Active Directory accounts & roles)
+- Identity (Microsoft Entra accounts & roles)
 - Device (Microsoft Defender for Endpoint, known as [Microsoft Secure Score for Devices](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices))
 - Apps (email and cloud apps, including Office 365 and Microsoft Defender for Cloud Apps)
 - Data (through Microsoft Information Protection)

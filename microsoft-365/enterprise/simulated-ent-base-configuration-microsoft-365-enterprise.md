@@ -356,7 +356,7 @@ Your current configuration looks like this:
 
 ## Phase 2: Create your Microsoft 365 E5 subscription
 
-In this phase, you create a new Microsoft 365 E5 subscription that uses a new Azure AD tenant, one that is separate from your production subscription. You can do this in two ways:
+In this phase, you create a new Microsoft 365 E5 subscription that uses a new Microsoft Entra tenant, one that is separate from your production subscription. You can do this in two ways:
 
 - Use a trial subscription of Microsoft 365 E5.
 

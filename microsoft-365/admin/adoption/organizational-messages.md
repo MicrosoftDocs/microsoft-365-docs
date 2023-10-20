@@ -55,7 +55,7 @@ The organizational message writer role is the new built-in role that allows assi
 
 ## Where will the messages appear?
 
-In this preview, we support the teaching call-out and business bars in Word, Excel, PowerPoint, and Outlook Desktop Apps..
+In this preview, we support the teaching call-out and business bars in Word, Excel, PowerPoint, and Outlook Desktop Apps.
 Business bars are supported by Microsoft 365 Consumer subscribers, Office 2019, Office 2016, Office 2013, and Office 2010.
 
 :::image type="content" source="../../media/org-message-location-bar-expanded.jpg" alt-text="In-product notification recommending to use Teams messages" lightbox="../../media/org-message-location-bar-expanded.jpg":::
@@ -70,7 +70,7 @@ The desktop teaching call-out is supported by Microsoft 365 Consumer and Commerc
 
 ## How to enable Adoption Score Organizational Messages
 
-To enable Adoption Score Organizational Message, the global administrator needs to enable Adoption Score first:
+To enable Adoption Score Organizational Messages, the global administrator needs to enable Adoption Score first:
 
 1. Sign in to the [admin center](https://admin.microsoft.com/) as a global administrator and go to **Reports** \> **Adoption Score**
 

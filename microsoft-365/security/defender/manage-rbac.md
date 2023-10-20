@@ -64,15 +64,15 @@ This section provides useful information on what you need to know before you sta
 > Unified RBAC - Preview experience is currently not available for US Government customers using GCC and GCC High.
 
 
-- You must be a Global Administrator or Security Administrator in Azure Active Directory to:
+- You must be a Global Administrator or Security Administrator in Microsoft Entra ID to:
 
   - Gain initial access to [Permissions and roles](https://security.microsoft.com/mtp_roles) in the Microsoft 365 Defender portal.
 
   - Manage roles and permissions in Microsoft 365 Defender Unified RBAC.
 
-  - Create a custom role that can grant access to security groups or individual users to manage roles and permissions in Microsoft 365 Defender unified RBAC. This will remove the need for Azure Active Directory global roles to manage permissions. To do this you need assign the **Authorization** permission in Microsoft 365 Defender Unified RBAC. For details on how to assign the Authorization permission, see [Create a role to access and manage roles and permissions](../defender/create-custom-rbac-roles.md#create-a-role-to-access-and-manage-roles-and-permissions).
+  - Create a custom role that can grant access to security groups or individual users to manage roles and permissions in Microsoft 365 Defender unified RBAC. This will remove the need for Microsoft Entra global roles to manage permissions. To do this you need assign the **Authorization** permission in Microsoft 365 Defender Unified RBAC. For details on how to assign the Authorization permission, see [Create a role to access and manage roles and permissions](../defender/create-custom-rbac-roles.md#create-a-role-to-access-and-manage-roles-and-permissions).
 
-- The Microsoft 365 Defender security solution will continue to respect existing Azure Active Directory global roles when you activate the Microsoft 365 Defender Unified RBAC model for some or all of your workloads i.e. Global Admins will retain assigned admin privileges.
+- The Microsoft 365 Defender security solution will continue to respect existing Microsoft Entra global roles when you activate the Microsoft 365 Defender Unified RBAC model for some or all of your workloads i.e. Global Admins will retain assigned admin privileges.
 
 ### Migration of existing roles and permissions
 

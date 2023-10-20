@@ -47,13 +47,15 @@ To fetch alerts into your SIEM system, you'll need to take the following steps:
 - Step 2: Get access and refresh tokens from your customer's tenant
 - Step 3: allow your application on Microsoft 365 Defender
 
-### Step 1: Create an application in Azure Active Directory (Azure AD)
+<a name='step-1-create-an-application-in-azure-active-directory-azure-ad'></a>
+
+### Step 1: Create an application in Microsoft Entra ID
 
 You'll need to create an application and grant it permissions to fetch alerts from your customer's Microsoft 365 Defender tenant.
 
-1. Sign in to the [Azure AD portal](https://aad.portal.azure.com/).
+1. Sign in to the [Microsoft Entra admin center](https://aad.portal.azure.com/).
 
-2. Select **Azure Active Directory** \> **App registrations**.
+2. Select **Microsoft Entra ID** \> **App registrations**.
 
 3. Click **New registration**.
 

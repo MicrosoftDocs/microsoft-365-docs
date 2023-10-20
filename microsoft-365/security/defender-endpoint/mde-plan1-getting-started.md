@@ -77,9 +77,9 @@ The navigation bar on the left side of the screen enables you to move easily bet
 | **Health** | Includes links to the **Service health** and **Message center**.  |
 | **Health** > **Service health** | Navigates to the Service health page in the Microsoft 365 admin center. This page enables you to view health status across all the services available with your organization's subscriptions.   |
 | **Health** > **Message center** | Navigates to the Message center in the Microsoft 365 admin center. The Message center provides information about planned changes. Each message describes what's coming, how it might affect users, and how to manage changes. |  
-| **Permissions & roles** | Enables you to grant permissions to use the Microsoft 365 Defender portal. Permissions are granted through roles in Azure Active Directory (Azure AD). Select a role, and a flyout pane appears. The flyout contains a link to Azure AD where you can add or remove members in a role group. <br/><br/> To learn more, see [Manage portal access using role-based access control](rbac.md).  |
+| **Permissions & roles** | Enables you to grant permissions to use the Microsoft 365 Defender portal. Permissions are granted through roles in Microsoft Entra ID. Select a role, and a flyout pane appears. The flyout contains a link to Microsoft Entra ID where you can add or remove members in a role group. <br/><br/> To learn more, see [Manage portal access using role-based access control](rbac.md).  |
 | **Settings** | Navigates to general settings for your Microsoft 365 Defender portal (listed as **Security center**) and Defender for Endpoint (listed as **Endpoints**). <br/><br/> To learn more, see [Settings](../defender/microsoft-365-defender-portal.md). |
-| **More resources** | Displays a list of more portals and centers, such as Azure Active Directory and the Microsoft Purview compliance portal. <br/><br/> To learn more, see [Microsoft security portals and admin centers](../defender/portals.md). |
+| **More resources** | Displays a list of more portals and centers, such as Microsoft Entra ID and the Microsoft Purview compliance portal. <br/><br/> To learn more, see [Microsoft security portals and admin centers](../defender/portals.md). |
 
 > [!TIP]
 > To learn more, see the [Microsoft 365 Defender portal overview](../defender/microsoft-365-security-center-mde.md).

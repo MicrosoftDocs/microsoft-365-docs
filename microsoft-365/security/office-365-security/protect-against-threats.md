@@ -62,9 +62,9 @@ To configure Defender for Office 365 policies, you must be assigned an appropria
 
 |Role or role group|Where to learn more|
 |---|---|
-|Global Administrator in Azure AD|[About Microsoft 365 admin roles](../../admin/add-users/about-admin-roles.md)|
+|Global Administrator in Microsoft Entra ID|[About Microsoft 365 admin roles](../../admin/add-users/about-admin-roles.md)|
 |Organization Management in Email & collaboration role groups|[Role groups in Microsoft Defender for Office 365](scc-permissions.md#role-groups-in-microsoft-defender-for-office-365-and-microsoft-purview-compliance)|
-|Security Administrator in Azure AD|[Azure AD built-in roles](/azure/active-directory/roles/permissions-reference#security-administrator)
+|Security Administrator in Microsoft Entra ID|[Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference#security-administrator)
 |Security Administrator in Email & collaboration role groups|[Role groups in Microsoft Defender for Office 365](scc-permissions.md#role-groups-in-microsoft-defender-for-office-365-and-microsoft-purview-compliance)|
 |Exchange Online Organization Management|[Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo)|
 
