@@ -35,15 +35,15 @@ ms.date: 02/16/2021
 
 To implement a multi-tenant delegated access solution, take the following steps:
 
-1. Enable [role-based access control](/microsoft-365/security/defender-endpoint/rbac) for Defender for Endpoint via the Microsoft 365 Defender portal and connect with Azure Active Directory (Azure AD) groups.
+1. Enable [role-based access control](/microsoft-365/security/defender-endpoint/rbac) for Defender for Endpoint via the Microsoft 365 Defender portal and connect with Microsoft Entra groups.
 
-2. Configure [entitlement management for external users](/azure/active-directory/governance/entitlement-management-external-users) within Azure AD Identity Governance to enable access requests and provisioning.
+2. Configure [entitlement management for external users](/azure/active-directory/governance/entitlement-management-external-users) within Microsoft Entra ID Governance to enable access requests and provisioning.
 
 3. Manage access requests and audits in [Microsoft Myaccess](/azure/active-directory/governance/entitlement-management-request-approve).
 
 ## Enable role-based access controls in Microsoft Defender for Endpoint in Microsoft 365 Defender portal
 
-1. **Create access groups for MSSP resources in Customer AAD: Groups**
+1. **Create access groups for MSSP resources in Customer Microsoft Entra ID: Groups**
 
     These groups will be linked to the Roles you create in Defender for Endpoint in Microsoft 365 Defender portal. To do so, in the customer AD tenant, create three groups. In our example approach, we create the following groups:
 
@@ -71,13 +71,13 @@ To implement a multi-tenant delegated access solution, take the following steps:
 
 ## Configure Governance Access Packages
 
-1. **Add MSSP as Connected Organization in Customer AAD: Identity Governance**
+1. **Add MSSP as Connected Organization in Customer Microsoft Entra ID: Identity Governance**
 
     Adding the MSSP as a connected organization will allow the MSSP to request and have accesses provisioned. 
 
     To do so, in the customer AD tenant, access Identity Governance: Connected organization. Add a new organization and search for your MSSP Analyst tenant via Tenant ID or Domain. We suggest creating a separate AD tenant for your MSSP Analysts.
 
-2. **Create a resource catalog in Customer AAD: Identity Governance**
+2. **Create a resource catalog in Customer Microsoft Entra ID: Identity Governance**
 
     Resource catalogs are a logical collection of access packages, created in the customer AD tenant.
 
@@ -88,7 +88,7 @@ To implement a multi-tenant delegated access solution, take the following steps:
 
     Further more information, see [Create a catalog of resources](/azure/active-directory/governance/entitlement-management-catalog-create).
 
-3. **Create access packages for MSSP resources Customer AAD: Identity Governance**
+3. **Create access packages for MSSP resources Customer Microsoft Entra ID: Identity Governance**
 
     Access packages are the collection of rights and accesses that a requestor will be granted upon approval. 
 
@@ -103,7 +103,7 @@ To implement a multi-tenant delegated access solution, take the following steps:
 
     For more information, see [Create a new access package](/azure/active-directory/governance/entitlement-management-access-package-create).
 
-4. **Provide access request link to MSSP resources from Customer AAD: Identity Governance**
+4. **Provide access request link to MSSP resources from Customer Microsoft Entra ID: Identity Governance**
 
     The My Access portal link is used by MSSP SOC analysts to request access via the access packages created. The link is durable, meaning the same link may be used over time for new analysts. The analyst request goes into a queue for approval by the **MSSP Analyst Approvers**.
 

@@ -34,12 +34,12 @@ If you're a small or medium-size organization using one of Microsoft's business 
 
 For customers using our enterprise plans, Microsoft recommends you complete the tasks listed in the following table that apply to your service plan. If, instead of purchasing a Microsoft 365 enterprise plan, you're combining subscriptions, note the following:
 
-- Microsoft 365 E3 includes Enterprise Mobility + Security (EMS) E3 and Azure AD P1
-- Microsoft 365 E5 includes EMS E5 and Azure AD P2
+- Microsoft 365 E3 includes Enterprise Mobility + Security (EMS) E3 and Microsoft Entra ID P1
+- Microsoft 365 E5 includes EMS E5 and Microsoft Entra ID P2
 
 |Step|Task|All Office 365 Enterprise plans|Microsoft 365 E3|Microsoft 365 E5|
 |---|---|---|---|---|
-|1|[Enable Azure AD Multifactor Authentication (MFA)](#1-enable-azure-ad-multifactor-authentication-mfa)|![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|1|[Enable Microsoft Entra multifactor authentication (MFA)](#1-enable-azure-ad-multifactor-authentication-mfa)|![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |2|[Protect against threats](#2-protect-against-threats)|![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |3|[Configure Microsoft Defender for Office 365](#3-configure-microsoft-defender-for-office-365)|||![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |4|[Configure Microsoft Defender for Identity](#4-configure-microsoft-defender-for-identity)|||![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
@@ -56,19 +56,21 @@ Before you begin, check your [Microsoft 365 Secure Score](./defender/microsoft-s
 
 :::image type="content" source="../media/secure-score.png" alt-text="The Microsoft Secure Score screen in the Microsoft 365 Defender portal" lightbox="../media/secure-score.png":::
 
-## 1: Enable Azure AD Multifactor Authentication (MFA)
+<a name='1-enable-azure-ad-multifactor-authentication-mfa'></a>
+
+## 1: Enable Microsoft Entra multifactor authentication (MFA)
 
 The single best thing you can do to improve security for employees working from home is to turn on MFA. If you don't already have processes in place, treat this as an emergency pilot and make sure you have support folks ready to help employees who get stuck. As you probably can't distribute hardware security devices, use Windows Hello biometrics and smartphone authentication apps like Microsoft Authenticator.
 
-Normally, Microsoft recommends you give users 14 days to register their device for Multifactor Authentication before requiring MFA. However, if your workforce is suddenly working from home, go ahead and require MFA as a security priority and be prepared to help users who need it.
+Normally, Microsoft recommends you give users 14 days to register their device for multifactor authentication before requiring MFA. However, if your workforce is suddenly working from home, go ahead and require MFA as a security priority and be prepared to help users who need it.
 
 Applying these policies takes only a few minutes, but be prepared to support your users over the next several days.
 
 |Plan|Recommendation|
 |---|---|
-|Microsoft 365 plans (without Azure AD P1 or P2)|[Enable Security defaults in Azure AD](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Security defaults in Azure AD include MFA for users and administrators.|
-|Microsoft 365 E3 (with Azure AD P1)|Use [Common Conditional Access policies](/azure/active-directory/conditional-access/concept-conditional-access-policy-common) to configure the following policies: <br/>- [Require MFA for administrators](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br/>- [Require MFA for all users](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br/> - [Block legacy authentication](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)|
-|Microsoft 365 E5 (with Azure AD P2)|Taking advantage of feature in Azure Active Directory, begin to implement Microsoft's [recommended set of Conditional Access and related policies](./office-365-security/identity-access-policies.md) like:<br/> - Requiring MFA when sign-in risk is medium or high. <br/>- Blocking clients that don't support modern authentication. <br/>- Requiring high risk users change their password. |
+|Microsoft 365 plans (without Microsoft Entra ID P1 or P2)|[Enable Security defaults in Microsoft Entra ID](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Security defaults in Microsoft Entra ID include MFA for users and administrators.|
+|Microsoft 365 E3 (with Microsoft Entra ID P1)|Use [Common Conditional Access policies](/azure/active-directory/conditional-access/concept-conditional-access-policy-common) to configure the following policies: <br/>- [Require MFA for administrators](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br/>- [Require MFA for all users](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br/> - [Block legacy authentication](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)|
+|Microsoft 365 E5 (with Microsoft Entra ID P2)|Taking advantage of feature in Microsoft Entra ID, begin to implement Microsoft's [recommended set of Conditional Access and related policies](./office-365-security/identity-access-policies.md) like:<br/> - Requiring MFA when sign-in risk is medium or high. <br/>- Blocking clients that don't support modern authentication. <br/>- Requiring high risk users change their password. |
 
 ## 2: Protect against threats
 
@@ -128,7 +130,7 @@ After you've configured one or more of your Defender for Office 365 services, tu
 Microsoft Intune Mobile Application Management (MAM) allows you to manage and protect your organization's data on phones and tablets without managing these devices. Here's how it works:
 
 - You create an App Protection Policy (APP) that determines which apps on a device are managed and what behaviors are allowed (such as preventing data from a managed app from being copied to an unmanaged app). You create one policy for each platform (iOS, Android).
-- After creating the app protection policies, you enforce these by creating a conditional access rule in Azure AD to require approved apps and APP data protection.
+- After creating the app protection policies, you enforce these by creating a conditional access rule in Microsoft Entra ID to require approved apps and APP data protection.
 
 APP protection policies include many settings. Fortunately, you don't need to learn about every setting and weigh the options. Microsoft makes it easy to apply a configuration of settings by recommending starting points. The [Data protection framework using app protection policies](/mem/intune/apps/app-protection-framework) includes three levels you can choose from.
 
@@ -143,12 +145,12 @@ To configure mobile app protection, use the guidance in [Common identity and dev
 
 Next, let's ensure you can continue to collaborate and work with guests. If you're using the Microsoft 365 E3 plan and you implemented MFA for all users, you're set.
 
-If you're using the Microsoft 365 E5 plan and you're taking advantage of Azure Identity Protection for risk-based MFA, you need to make a couple of adjustments (because Azure AD Identity protection doesn't extend to guests):
+If you're using the Microsoft 365 E5 plan and you're taking advantage of Azure Identity Protection for risk-based MFA, you need to make a couple of adjustments (because Microsoft Entra ID Protection doesn't extend to guests):
 
 - Create a new conditional access rule to require MFA always for guests and external users.
 - Update the risk-based MFA conditional access rule to exclude guests and external users.
 
-Use the guidance in [Updating the common policies to allow and protect guest and external access](./office-365-security/identity-access-policies-guest-access.md) to understand how guest access works with Azure AD and to update the affected policies.
+Use the guidance in [Updating the common policies to allow and protect guest and external access](./office-365-security/identity-access-policies-guest-access.md) to understand how guest access works with Microsoft Entra ID and to update the affected policies.
 
 The Intune mobile app protection policies you created, together with the conditional access rule to require approved apps and APP protection, apply to guests accounts and will help protect your organization data.
 
@@ -169,9 +171,9 @@ You can also take advantage of these tutorials:
 After enrolling devices, use the guidance in [Common identity and device access policies](./office-365-security/identity-access-policies.md) to create these policies:
 
 - [Define device-compliance policies](./office-365-security/identity-access-policies.md#create-device-compliance-policies) — The recommended settings for Windows 10 include requiring antivirus protection. If you have Microsoft 365 E5, use Microsoft Defender for Endpoint to monitor the health of employee devices. Be sure compliance policies for other operating systems include antivirus protection and end-point protection software.
-- [Require compliant PCs](./office-365-security/identity-access-policies.md#require-compliant-pcs-and-mobile-devices) — This is the conditional access rule in Azure AD that enforces the device compliance policies.
+- [Require compliant PCs](./office-365-security/identity-access-policies.md#require-compliant-pcs-and-mobile-devices) — This is the conditional access rule in Microsoft Entra ID that enforces the device compliance policies.
 
-Only one organization can manage a device, so be sure to exclude guest accounts from the conditional access rule in Azure AD. If you don't exclude guest and external users from policies that require device compliance, these policies will block these users. For more information, see [Updating the common policies to allow and protect guest and external access](./office-365-security/identity-access-policies-guest-access.md).
+Only one organization can manage a device, so be sure to exclude guest accounts from the conditional access rule in Microsoft Entra ID. If you don't exclude guest and external users from policies that require device compliance, these policies will block these users. For more information, see [Updating the common policies to allow and protect guest and external access](./office-365-security/identity-access-policies-guest-access.md).
 
 ## 9: Optimize your network for cloud connectivity
 

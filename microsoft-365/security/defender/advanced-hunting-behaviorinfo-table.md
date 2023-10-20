@@ -56,7 +56,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `DataSources` | `list` | Products or services that provided information for the behavior |
 | `DeviceId` | `string` | Unique identifier for the machine in the service |
 | `AccountUpn` | `string` | User principal name (UPN) of the account |
-| `AccountObjectId` | `string` | Unique identifier for the account in Azure AD |
+| `AccountObjectId` | `string` | Unique identifier for the account in Microsoft Entra ID |
 | `StartTime` | `datetime` | Date and time of the first activity related to the behavior|
 | `EndTime` | `datetime` | Date and time of the last activity related to the behavior|
 | `AdditionalFields` | `string` | Additional information about the behavior|

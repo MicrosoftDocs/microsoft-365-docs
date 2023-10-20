@@ -29,7 +29,7 @@ Use this article to get started with your information protection capabilities.
 
 ## Before you begin
 
-Make sure you have one of the following roles assigned in Azure Active Directory:
+Make sure you have one of the following roles assigned in Microsoft Entra ID:
 
 - Global Administrator
 - Compliance Administrator

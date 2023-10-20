@@ -84,7 +84,7 @@ The images and the tables below list the changes in navigation between Microsoft
 
 | Defender for Cloud Apps | Microsoft 365 Defender |
 |---------|---------|
-| Policies | Cloud apps -> Policy management. Note: Azure AD identity protection policies will be removed gradually from the Cloud apps policies list. To configure alerts from these policies, see [Configure AAD IP alert service](investigate-alerts.md#configure-aad-ip-alert-service) |
+| Policies | Cloud apps -> Policy management. Note: Microsoft Entra ID Protection policies will be removed gradually from the Cloud apps policies list. To configure alerts from these policies, see [Configure Microsoft Entra IP alert service](investigate-alerts.md#configure-aad-ip-alert-service) |
 | Templates | Cloud apps -> Policy templates |
 
 ### Settings
@@ -111,7 +111,7 @@ The images and the tables below list the changes in navigation between Microsoft
 
 The capabilities on the following pages are fully integrated into Microsoft 365 Defender, and therefore don't have their own standalone experience in Microsoft 365 Defender:
   
-- [Settings > Azure AD Identity Protection](investigate-alerts.md)
+- [Settings > Microsoft Entra ID Protection](investigate-alerts.md)
 - [Settings > App Governance](/defender-cloud-apps/app-governance-get-started)
 - [Settings > Microsoft Defender for Identity](/defender-for-identity/deploy-defender-identity)
 

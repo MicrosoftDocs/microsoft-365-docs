@@ -145,7 +145,7 @@ devices|All devices where alerts related to the incident were sent.|\[\] (see de
 Field name|Description|Example value
 ---|---|---
 DeviceId|The device ID as designated in Microsoft Defender for Endpoint.|24c222b0b60fe148eeece49ac83910cc6a7ef491
-aadDeviceId|The device ID as designated in [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis). Only available for domain-joined devices.|null
+aadDeviceId|The device ID as designated in [Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-whatis). Only available for domain-joined devices.|null
 deviceDnsName|The fully qualified domain name for the device.|user5cx.middleeast.corp.contoso.com
 osPlatform|The OS platform the device is running.|WindowsServer2016
 osBuild|The build version for the OS the device is running.|14393

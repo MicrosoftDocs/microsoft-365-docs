@@ -73,17 +73,17 @@ If you confirmed that your customer tenant meets the onboarding criteria and the
 
 ### Message when trying to access Lighthouse: "Not Authorized" or "Insufficient privileges" or "Access Restriction: Insufficient or lack of permissions is causing access restriction" 
 
-**Cause:** You don't belong to the correct security group in Azure AD, or you haven't been assigned the correct role in Partner Center to be able to access Lighthouse.
+**Cause:** You don't belong to the correct security group in Microsoft Entra ID, or you haven't been assigned the correct role in Partner Center to be able to access Lighthouse.
 
-**Resolution:** Make sure that an admin from your partner tenant with the appropriate permissions has assigned you to the correct GDAP security group in Azure AD and assigned you the correct role in Partner Center. Also, keep in mind that some actions in Lighthouse require you to be a Global Administrator. To learn more about the GDAP roles and what each role can do, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). For a detailed description of all Azure AD built-in roles and permissions for GDAP, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
+**Resolution:** Make sure that an admin from your partner tenant with the appropriate permissions has assigned you to the correct GDAP security group in Microsoft Entra ID and assigned you the correct role in Partner Center. Also, keep in mind that some actions in Lighthouse require you to be a Global Administrator. To learn more about the GDAP roles and what each role can do, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). For a detailed description of all Microsoft Entra built-in roles and permissions for GDAP, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference).
 
 For customers with DAP relationships, the partner admin will need to assign you to either the Admin agent or Helpdesk agent role in Partner Center. For a detailed description of all Partner Center roles and permissions, see [Assign roles and permissions to users](/partner-center/permissions-overview).
 
 ### I don't see complete data in certain areas of Lighthouse, or I can't perform certain tasks, or I can't access certain tenants
 
-**Cause:** You have limited GDAP access based on the roles assigned to the Azure AD security group that you're in.
+**Cause:** You have limited GDAP access based on the roles assigned to the Microsoft Entra security group that you're in.
 
-**Resolution:** Make sure that an admin from your partner tenant with the appropriate permissions has assigned you to the correct GDAP security group in Azure AD. Also, keep in mind that some actions in Lighthouse require you to be a Global admin. To learn more about the GDAP roles and what each role can do, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). For a detailed description of all Azure AD built-in roles and permissions for GDAP, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
+**Resolution:** Make sure that an admin from your partner tenant with the appropriate permissions has assigned you to the correct GDAP security group in Microsoft Entra ID. Also, keep in mind that some actions in Lighthouse require you to be a Global admin. To learn more about the GDAP roles and what each role can do, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). For a detailed description of all Microsoft Entra built-in roles and permissions for GDAP, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference).
 
 ## GDAP setup and management
 
@@ -91,7 +91,7 @@ For customers with DAP relationships, the partner admin will need to assign you 
 
 **Cause:** You don't have the required roles to set up GDAP in Lighthouse, or settings in the partner or customer tenants are preventing you from completing GDAP setup.
 
-**Resolution:** Make sure you have the required roles to run GDAP Setup, including Global Administrator (assigned in Azure AD) and Admin agent (assigned in Partner Center). Also, make sure your account meets security requirements to run GDAP Setup, including making sure you're not a Risky User and that you have multifactor authentication (MFA) set up. To check for and remediate risks in your account, see [Remediate risks and unblock users](/azure/active-directory/identity-protection/howto-identity-protection-remediate-unblock). For instructions on how to mandate MFA, see [Mandating MFA for your partner tenant](/partner-center/partner-security-requirements-mandating-mfa).
+**Resolution:** Make sure you have the required roles to run GDAP Setup, including Global Administrator (assigned in Microsoft Entra ID) and Admin agent (assigned in Partner Center). Also, make sure your account meets security requirements to run GDAP Setup, including making sure you're not a Risky User and that you have multifactor authentication (MFA) set up. To check for and remediate risks in your account, see [Remediate risks and unblock users](/azure/active-directory/identity-protection/howto-identity-protection-remediate-unblock). For instructions on how to mandate MFA, see [Mandating MFA for your partner tenant](/partner-center/partner-security-requirements-mandating-mfa).
 
 You should also make sure Conditional Access policies configured in the customer tenants aren't blocking your ability to establish a GDAP relationship with them. For step-by-step guidance on how to confirm this, see [What is the recommended next step if the conditional access policy set by the customer blocks all external access?](/partner-center/gdap-bulk-migration-tool-faq#what-is-the-recommended-next-step-if-the-conditional-access-policy-set-by-the-customer-blocks-all-external-access-including-csps-access-aobo-to-the-customers-tenant).
 
@@ -161,7 +161,7 @@ If data is still not appearing on the Device compliance and Threat management pa
 
 **Cause 2:** There's a technical problem on our backend that's preventing opportunities from being displayed.
 
-**Resolution:** Open a service request by following the instructions in [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md). To create a Lighthouse service request, make sure you have a partner tenant role and at least one Azure AD role assigned to you with the following property set: **microsoft.office365.supportTickets/allEntities/allTasks**. For a complete list of Azure AD roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
+**Resolution:** Open a service request by following the instructions in [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md). To create a Lighthouse service request, make sure you have a partner tenant role and at least one Microsoft Entra role assigned to you with the following property set: **microsoft.office365.supportTickets/allEntities/allTasks**. For a complete list of Microsoft Entra roles, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference).
 
 ### Message when trying to access Lighthouse from the Partner Insights tab of Sales advisor: "You must be an indirect reseller or direct-bill partner to use this service" or I'm redirected to the Lighthouse Home page but can't sign in
 
@@ -171,7 +171,7 @@ If data is still not appearing on the Device compliance and Threat management pa
 
 **Cause 2:** Your organization has multiple partner tenants and you attempted to access Lighthouse using credentials for a partner tenant that hasn't yet deployed Lighthouse.
 
-**Resolution:** Use the same Azure AD credentials that you used to sign in to Partner Center to access Lighthouse. If you're unsure, reach out to a Global Administrator in your partner tenant to confirm which partner tenants have deployed Lighthouse. If needed, have them deploy Lighthouse to the partner tenant that you're trying to use. For more information, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md). 
+**Resolution:** Use the same Microsoft Entra credentials that you used to sign in to Partner Center to access Lighthouse. If you're unsure, reach out to a Global Administrator in your partner tenant to confirm which partner tenants have deployed Lighthouse. If needed, have them deploy Lighthouse to the partner tenant that you're trying to use. For more information, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md). 
 
 **Cause 3:** You attempted to access Lighthouse from a partner tenant that isn't qualified to use Lighthouse. At this time, Lighthouse supports only indirect resellers and direct-bill partners.
 
@@ -181,7 +181,7 @@ If data is still not appearing on the Device compliance and Threat management pa
 
 **Cause:** If you see an opportunity with a customer that you don't recognize, you may have incomplete or incorrect information regarding the partner relationship that your organization has with that customer.
 
-**Resolution:** Open a service request by following the instructions in [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md). To create a Lighthouse service request, make sure you have a partner tenant role and at least one Azure AD role assigned to you with the following property set: **microsoft.office365.supportTickets/allEntities/allTasks**. For a complete list of Azure AD roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
+**Resolution:** Open a service request by following the instructions in [Get help and support for Microsoft 365 Lighthouse](m365-lighthouse-get-help-and-support.md). To create a Lighthouse service request, make sure you have a partner tenant role and at least one Microsoft Entra role assigned to you with the following property set: **microsoft.office365.supportTickets/allEntities/allTasks**. For a complete list of Microsoft Entra roles, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference).
 
 ## Related content
 
