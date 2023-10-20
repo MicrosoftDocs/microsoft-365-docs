@@ -39,7 +39,7 @@ sections:
       - question: |
           How does a customer make a self-service purchase?
         answer: |
-          Customers can make a self-service purchase online from the product websites or from in-app purchase prompts. Customers are first asked to enter an email address to ensure that they're a user in an existing Azure Active Directory (AD) tenant. Next, they're directed to sign in by using their Azure AD credentials. After signing in, the customer is asked to select how many subscriptions they want to buy, and to provide credit card payment. When the purchase is complete, they can start using their subscription. The purchaser has access to a limited view of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> where they can assign licenses to the product to other people in their organization.
+          Customers can make a self-service purchase online from the product websites or from in-app purchase prompts. Customers are first asked to enter an email address to ensure that they're a user in an existing Microsoft Entra tenant. Next, they're directed to sign in by using their Microsoft Entra credentials. After signing in, the customer is asked to select how many subscriptions they want to buy, and to provide credit card payment. When the purchase is complete, they can start using their subscription. The purchaser has access to a limited view of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> where they can assign licenses to the product to other people in their organization.
           
       - question: |
           What are the payment options for self-service purchases?
@@ -49,7 +49,7 @@ sections:
       - question: |
           Who can buy through self-service purchase?
         answer: |
-          Any user with a non-guest user account in a managed Azure AD tenant can make a self-service purchase. Self-service purchasing isn’t available to tenants that are government or education organizations. If this applies to your organization, then no additional action is required to control self-service purchase.
+          Any user with a non-guest user account in a managed Microsoft Entra tenant can make a self-service purchase. Self-service purchasing isn’t available to tenants that are government or education organizations. If this applies to your organization, then no additional action is required to control self-service purchase.
           
           Users in organizations or markets who aren’t eligible for self-service purchase see a message asking them to contact their IT admin.
           
@@ -61,12 +61,12 @@ sections:
       - question: |
           Can users synced from an on-premises Active Directory buy through self-service purchase?
         answer: |
-          If a user has an active user account in an eligible Azure AD tenant, they can complete a self-service purchase.
+          If a user has an active user account in an eligible Microsoft Entra tenant, they can complete a self-service purchase.
 
       - question: |
           Who can self-service purchasers assign licenses to?
         answer: |
-          Self-service purchasers can only assign licenses to users in the same Azure AD tenant. The purchaser has access to a limited view of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> to assign licenses. Purchasers can assign licenses to those products that they've bought through self-service purchase, and can only assign those licenses to users in the same Azure AD tenant.
+          Self-service purchasers can only assign licenses to users in the same Microsoft Entra tenant. The purchaser has access to a limited view of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> to assign licenses. Purchasers can assign licenses to those products that they've bought through self-service purchase, and can only assign those licenses to users in the same Microsoft Entra tenant.
           
       - question: |
           Where does the self-service purchaser see and manage their purchases?

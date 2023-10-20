@@ -27,7 +27,7 @@ This article includes the following sections:
 - [Working with device groups](#working-with-device-groups)
 - [How to create a new device group in the Microsoft 365 Defender portal](#create-a-device-group-in-the-microsoft-365-defender-portal)
 - [How to create a new device category in Intune](#create-a-device-category-in-intune)
-- [How to create dynamic device groups in Azure Active Directory](#create-dynamic-device-groups-in-azure-active-directory)
+- [How to create dynamic device groups in Microsoft Entra ID](#create-dynamic-device-groups-in-azure-active-directory)
 - [How categories are used when enrolling devices](#how-categories-are-used-when-enrolling-devices)
 - [How to view the categories of devices that you manage](#view-the-categories-of-devices-that-you-manage)
 - [How to change the category of a device](#change-the-category-of-a-device)
@@ -38,7 +38,7 @@ A device group is a collection of devices that are grouped together because of c
 
 With Microsoft 365 Business Premium, you have default device groups that you can use. The default device groups include all the devices that are onboarded to Defender for Business. However, you can also create new device groups to assign device protection policies with specific settings to certain devices.
 
-All device groups, including your default device groups and any custom device groups that you define, are stored in [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) (Azure AD).
+All device groups, including your default device groups and any custom device groups that you define, are stored in [Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-whatis) (Microsoft Entra ID).
 
 ## Create a device group in the Microsoft 365 Defender portal
 
@@ -83,13 +83,15 @@ Create device categories in Intune from which users must choose when they enroll
 
 4. When you're done, select **Create**. You can see the new category in the list.
 
-Use the device category name when you create the Azure Active Directory (Azure AD) security groups. When users enroll their devices, they're presented with a list of the categories you configured in Intune. After they choose a category and finish enrollment, their device is added to the Active Directory security group that is associated with it.
+Use the device category name when you create the Microsoft Entra security groups. When users enroll their devices, they're presented with a list of the categories you configured in Intune. After they choose a category and finish enrollment, their device is added to the Active Directory security group that is associated with it.
 
-## Create dynamic device groups in Azure Active Directory
+<a name='create-dynamic-device-groups-in-azure-active-directory'></a>
 
-You can also enter the Azure Active Directory (Azure AD) portal ([https://portal.azure.com](https://portal.azure.com)) from the Microsoft 365 admin center. In the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com/)), choose **All admin centers**, and then choose **Azure Active Directory**.
+## Create dynamic device groups in Microsoft Entra ID
 
-In the Azure AD portal, you can create dynamic groups based on the device category and device category name. Use dynamic group rules to automatically add and remove devices. If a device's attributes change, the system looks at your dynamic group rules for the directory to see if the device meets the rule requirements (is added) or no longer meets the rules requirements (is removed).
+You can also enter the Microsoft Entra admin center ([https://portal.azure.com](https://portal.azure.com)) from the Microsoft 365 admin center. In the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com/)), choose **All admin centers**, and then choose **Microsoft Entra ID**.
+
+In the Microsoft Entra admin center, you can create dynamic groups based on the device category and device category name. Use dynamic group rules to automatically add and remove devices. If a device's attributes change, the system looks at your dynamic group rules for the directory to see if the device meets the rule requirements (is added) or no longer meets the rules requirements (is removed).
 
 You can create a dynamic group for either devices or users, but not for both. You also can't create a device group based on the device owners' attributes. Device membership rules can only reference device attributions. 
 
@@ -104,7 +106,7 @@ After categories and device groups are established, people who have iOS and Andr
 After choosing a category, the device is automatically added to the corresponding group. If a device is already enrolled before you configure categories, the user sees a notification about the device on the Company Portal website. This lets the user know to select a category the next time they access the Company Portal app on iOS/iPadOS or Android.
 
 > [!NOTE]
-> - You can edit a device category in the Azure portal, but you must manually update any Azure AD security groups that reference this category.
+> - You can edit a device category in the Azure portal, but you must manually update any Microsoft Entra security groups that reference this category.
 > - If you delete a category, devices assigned to it display the category name **Unassigned**.
 
 ## View the categories of devices that you manage

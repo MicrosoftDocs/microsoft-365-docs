@@ -51,7 +51,7 @@ Before you integrate Shifts with UKG Pro WFM, your organization must have the fo
         >  - Time off requests.
         >  - Availability patterns change request subtype.  
 
-- You're using Azure Active Directory (Azure AD) as your identity provider.
+- You're using Microsoft Entra ID as your identity provider.
 
 ## Prerequisites
 
@@ -70,9 +70,11 @@ Make sure you gather the following information and complete the following config
 
     If you don't have all this information, contact UKG Pro WFM support.
 
-### Enable SSO by setting up integration between Azure AD and UKG Pro Workforce Management
+<a name='enable-sso-by-setting-up-integration-between-azure-ad-and-ukg-pro-workforce-management'></a>
 
-For a step-by-step tutorial, see [Tutorial: Azure AD SSO integration with Kronos Workforce Dimensions](/azure/active-directory/saas-apps/kronos-workforce-dimensions-tutorial). If you need help or more information about setting up SSO, contact UKG Pro WFM support.
+### Enable SSO by setting up integration between Microsoft Entra ID and UKG Pro Workforce Management
+
+For a step-by-step tutorial, see [Tutorial: Microsoft Entra SSO integration with Kronos Workforce Dimensions](/azure/active-directory/saas-apps/kronos-workforce-dimensions-tutorial). If you need help or more information about setting up SSO, contact UKG Pro WFM support.
 
 ### Configure federated SSO authentication in UKG Pro Workforce Management
 
