@@ -24,7 +24,7 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # Manage self-service password reset in Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse lets Managed Service Providers (MSPs) manage Azure Active Directory (Azure AD) self-service password reset (SSPR). SSPR gives users the ability to change or reset their password with no administrator or help desk involvement. If a user's account is locked or they forget their password, they can follow prompts to unblock themselves and get back to work. This ability reduces help desk calls and loss of productivity when a user can't sign in to their device or an application. 
+Microsoft 365 Lighthouse lets Managed Service Providers (MSPs) manage Microsoft Entra self-service password reset (SSPR). SSPR gives users the ability to change or reset their password with no administrator or help desk involvement. If a user's account is locked or they forget their password, they can follow prompts to unblock themselves and get back to work. This ability reduces help desk calls and loss of productivity when a user can't sign in to their device or an application. 
 
 The Password Reset page provides detailed information on the status of SSPR enablement across your customer tenants and helps you ensure users are enabled and registered.  
 
@@ -62,7 +62,7 @@ The password reset details table provides a detailed view of SSPR enabled and re
 |Registration progress     | The number of total users that have registered for SSPR.         |
 
 > [!NOTE]
-> Enabled users and registration progress data will be unavailable for tenants that do not have an Azure AD premium license.
+> Enabled users and registration progress data will be unavailable for tenants that do not have an Microsoft Entra premium license.
 
 Selecting any tenant from the password reset details table opens the tenant details pane, which provides additional details around the tenant’s enablement and user registration status.
 
@@ -70,8 +70,8 @@ Selecting any tenant from the password reset details table opens the tenant deta
 
 1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com/), select **Users** > **Password reset**.
 2. On the **Password reset** page, select a tenant from the list to open the details pane.
-3. Select **Edit SSPR settings in Microsoft Entra** to go to Azure Active Directory (Azure AD).
-4. In Azure AD, enable SSPR for all or selected users. To learn more, see [Tutorial: Enable users to unlock their account or reset passwords using Azure Active Directory self-service password reset](/azure/active-directory/authentication/tutorial-enable-sspr).
+3. Select **Edit SSPR settings in Microsoft Entra ID** to go to Microsoft Entra ID.
+4. In Microsoft Entra ID, enable SSPR for all or selected users. To learn more, see [Tutorial: Enable users to unlock their account or reset passwords using Microsoft Entra self-service password reset](/azure/active-directory/authentication/tutorial-enable-sspr).
 
 ## Notify users to register for SSPR
 
@@ -86,7 +86,7 @@ If you want to use a different email account, you can export the list of users t
 
 ## Related content
 
-[Plan an Azure Active Directory self-service password reset deployment](/azure/active-directory/authentication/howto-sspr-deployment) (article)\
-[Tutorial: Enable users to unlock their account or reset passwords using Azure Active Directory self-service password reset](/azure/active-directory/authentication/tutorial-enable-sspr) (article)\
-[How to enable and configure SSPR in Azure AD](https://www.youtube.com/watch?v=rA8TvhNcCvQ) (video)\
+[Plan a Microsoft Entra self-service password reset deployment](/azure/active-directory/authentication/howto-sspr-deployment) (article)\
+[Tutorial: Enable users to unlock their account or reset passwords using Microsoft Entra self-service password reset](/azure/active-directory/authentication/tutorial-enable-sspr) (article)\
+[How to enable and configure SSPR in Microsoft Entra ID](https://www.youtube.com/watch?v=rA8TvhNcCvQ) (video)\
 [Manage multifactor authentication in Microsoft 365 Lighthouse](m365-lighthouse-manage-mfa.md) (article)

@@ -80,9 +80,9 @@ After the add-in is installed and enabled, users see the following icons based o
 ## What do you need to know before you begin?
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-  - [Email & collaboration permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md): Membership in the **Organization Management** role group.
-  - [Exchange Online permissions](/Exchange/permissions-exo/permissions-exo): Membership in the **Organization Management** role group.
-  - [Azure AD permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator** role gives users the required permissions _and_ permissions for other features in Microsoft 365.
+  - [Email & collaboration RBAC in the Microsoft 365 Defender portal](mdo-portal-permissions.md): Membership in the **Organization Management** role group.
+  - [Exchange Online RBAC](/Exchange/permissions-exo/permissions-exo): Membership in the **Organization Management** role group.
+  - [Microsoft Entra RBAC](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator** role gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 - For organizational installs, the organization needs to be configured to use OAuth authentication. For more information, see [Determine if Centralized Deployment of add-ins works for your organization](/microsoft-365/admin/manage/centralized-deployment-of-add-ins).
 

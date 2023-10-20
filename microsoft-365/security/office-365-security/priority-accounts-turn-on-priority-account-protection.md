@@ -40,8 +40,8 @@ This article describes how to confirm that priority account protection is turned
 - You open the Microsoft 365 Defender portal at <https://security.microsoft.com>.
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-  - [Exchange Online permissions](/exchange/permissions-exo/permissions-exo): Membership in the **Organization Management** or **Security Administrator** role groups.
-  - [Azure AD permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator** or **Security Administrator** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
+  - [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo): Membership in the **Organization Management** or **Security Administrator** role groups.
+  - [Microsoft Entra RBAC](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator** or **Security Administrator** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 - As previously described, priority account protection is applied to accounts that have the **Priority account** tag applied to them. For instructions, see [Manage and monitor priority accounts](/microsoft-365/admin/setup/priority-accounts).
 

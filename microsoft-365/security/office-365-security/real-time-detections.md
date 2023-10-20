@@ -148,7 +148,7 @@ To view and use Explorer *or* Real-time detections, you need the following permi
 
 - In Defender for Office 365:
   - Organization Management
-  - Security Administrator (this can be assigned in the Azure Active Directory admin center) (<https://aad.portal.azure.com>)
+  - Security Administrator (this can be assigned in the Microsoft Entra admin center) (<https://aad.portal.azure.com>)
   - Security Reader
 - In Exchange Online:
   - Organization Management

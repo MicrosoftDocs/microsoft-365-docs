@@ -50,20 +50,20 @@ Microsoft provides capabilities to help protect your organization, but they're e
 3. Protect privileged accounts with Zero Trust identity and device access recommendations.
 
 > [!NOTE]
-> To secure your privileged roles, check out [Best practices for Azure AD roles](/azure/active-directory/roles/best-practices) to secure privileged access to your tenant.
+> To secure your privileged roles, check out [Best practices for Microsoft Entra roles](/azure/active-directory/roles/best-practices) to secure privileged access to your tenant.
 
 ## 1. Create dedicated, privileged, cloud-based user accounts and use them only when necessary
 
-Instead of using everyday user accounts that have been assigned administrator roles, create dedicated user accounts that have the admin roles in Azure AD. 
+Instead of using everyday user accounts that have been assigned administrator roles, create dedicated user accounts that have the admin roles in Microsoft Entra ID. 
 
 From this moment onward, you sign in with the dedicated privileged accounts only for tasks that require administrator privileges. All other Microsoft 365 administration must be done by assigning other administration roles to user accounts.
   
 > [!NOTE]
 > This does require additional steps to sign out as your everyday user account and sign in with a dedicated administrator account. But this only needs to be done occasionally for administrator operations. Consider that recovering your Microsoft 365 subscription after an administrator account breach requires a lot more steps.
 
-You also need to create [emergency access accounts](/azure/active-directory/roles/security-emergency-access) to prevent being accidentally locked out of Azure AD.
+You also need to create [emergency access accounts](/azure/active-directory/roles/security-emergency-access) to prevent being accidentally locked out of Microsoft Entra ID.
 
-You can further protect your privileged accounts with Azure AD Privileged Identity Management (PIM) for on-demand, just-in-time assignment of administrator roles. 
+You can further protect your privileged accounts with Microsoft Entra Privileged Identity Management (PIM) for on-demand, just-in-time assignment of administrator roles. 
  
 ## 2. Configure multi-factor authentication for your dedicated Microsoft 365 privileged accounts
 
@@ -105,9 +105,9 @@ To ensure that the execution of highly privileged tasks is as secure as possible
   
 For instructions on how to set up a PAW, see [https://aka.ms/cyberpaw](/security/compass/privileged-access-devices).
 
-To enable Azure PIM for your Azure AD tenant and administrator accounts, see the [steps to configure PIM](/azure/active-directory/active-directory-privileged-identity-management-configure).
+To enable Azure PIM for your Microsoft Entra tenant and administrator accounts, see the [steps to configure PIM](/azure/active-directory/active-directory-privileged-identity-management-configure).
 
-To develop a comprehensive roadmap to secure privileged access against cyber attackers, see [Securing privileged access for hybrid and cloud deployments in Azure AD](/azure/active-directory/admin-roles-best-practices).
+To develop a comprehensive roadmap to secure privileged access against cyber attackers, see [Securing privileged access for hybrid and cloud deployments in Microsoft Entra ID](/azure/active-directory/admin-roles-best-practices).
 
 ### Privileged Identity Management
 
@@ -117,14 +117,14 @@ Your administrator accounts go from being permanent admins to eligible admins. T
   
 Using PIM and this process significantly reduces the amount of time that your privileged accounts are vulnerable to attack and use by malicious users.
 
-Using this feature requires either Microsoft Entra ID Governance or Microsoft Azure AD Premium P2 subscriptions. To find the right license for your requirements, see [Compare generally available features of Microsoft Azure AD](https://www.microsoft.com/security/business/identity-access-management/azure-ad-pricing).
+Using this feature requires either Microsoft Entra ID Governance or Microsoft Entra ID P2 subscriptions. To find the right license for your requirements, see [Compare generally available features of Microsoft Entra ID](https://www.microsoft.com/security/business/identity-access-management/azure-ad-pricing).
 
 For information about licenses for users, see [License requirements to use Privileged Identity Management](/azure/active-directory/privileged-identity-management/subscription-requirements).
   
 For more information, see:
 
 - [Privileged Identity Management](/azure/active-directory/active-directory-privileged-identity-management-configure).
-- [Securing privileged access for hybrid and cloud deployments in Azure AD](/azure/active-directory/roles/security-planning)
+- [Securing privileged access for hybrid and cloud deployments in Microsoft Entra ID](/azure/active-directory/roles/security-planning)
   
 
 ### Privileged access management
@@ -145,7 +145,7 @@ For more information, see [Learn about privileged access management](/microsoft-
 
 ### Security information and event management (SIEM) software for Microsoft 365 logging
 
-SIEM software run on a server performs real-time analysis of security alerts and events created by applications and network hardware. To allow your SIEM server to include Microsoft 365 security alerts and events in its analysis and reporting functions, integrate Azure AD into your SEIM. See [Introduction to Azure Log Integration](/azure/security/security-azure-log-integration-overview).
+SIEM software run on a server performs real-time analysis of security alerts and events created by applications and network hardware. To allow your SIEM server to include Microsoft 365 security alerts and events in its analysis and reporting functions, integrate Microsoft Entra ID into your SEIM. See [Introduction to Azure Log Integration](/azure/security/security-azure-log-integration-overview).
 
 ## Next step
 

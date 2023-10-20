@@ -37,7 +37,7 @@ search.appverid: met150
 The following steps guide you on how to create custom roles in Microsoft 365 Defender Unified RBAC.
 
 > [!IMPORTANT]
-> You must be a Global Administrator or Security Administrator in Azure Active Directory, or have all the **Authorization** permissions assigned in Microsoft 365 Defender Unified RBAC to perform this task. For more information on permissions, see [Permission pre-requisites](../defender/manage-rbac.md#permissions-pre-requisites).
+> You must be a Global Administrator or Security Administrator in Microsoft Entra ID, or have all the **Authorization** permissions assigned in Microsoft 365 Defender Unified RBAC to perform this task. For more information on permissions, see [Permission pre-requisites](../defender/manage-rbac.md#permissions-pre-requisites).
 
 1. Sign in to the [Microsoft 365 Defender portal](https://security.microsoft.com).
 2. In the navigation pane, select **Permissions**.
@@ -73,7 +73,7 @@ The following steps guide you on how to create custom roles in Microsoft 365 Def
     > [!NOTE]
     > By selecting **Choose all data sources** all supported data sources within Microsoft 365 Defender Unified RBAC and any future data sources that are added will be automatically assigned to this assignment.
 
-11. In **Assigned users and groups** choose the Azure Active Directory security groups or individual users to assign the role to, and select **Add**.
+11. In **Assigned users and groups** choose the Microsoft Entra security groups or individual users to assign the role to, and select **Add**.
 
     > [!NOTE]
     > In Microsoft 365 Defender Unified RBAC, you can create as many assignments as needed under the same role with same permissions. For example, you can have an assignment within a role that has access to all data sources and then a separate assignment for a team that only needs access to Endpoint alerts from the Defender for Endpoint data source. This enables maintaining the minimum number of roles.
@@ -82,7 +82,7 @@ The following steps guide you on how to create custom roles in Microsoft 365 Def
 
 ## Create a role to access and manage roles and permissions
 
-To access and manage roles and permissions, without being a Global Administrator or Security Administrator in Azure Active Directory, you need to create a role with **Authorization** permissions. To create this role:
+To access and manage roles and permissions, without being a Global Administrator or Security Administrator in Microsoft Entra ID, you need to create a role with **Authorization** permissions. To create this role:
 
 1. Sign in to the [Microsoft 365 Defender portal](https://security.microsoft.com) as Global Administrator or Security Administrator.
 2. In the navigation pane, select **Permissions**.
@@ -103,7 +103,7 @@ To access and manage roles and permissions, without being a Global Administrator
     - Select **Choose all data sources** to grant users permissions to create new roles and manage roles for all data sources.
     - Select **Select specific data sources** to grant users permissions to create new roles and manage roles for a specific data source. For example, select Microsoft Defender for Endpoint from the dropdown to grant users the Authorization permission for the Microsoft Defender for Endpoint data source only.
 
-11. In **Assigned users and groups** – choose the Azure Active Directory security groups or individual users to assign the role to, and select **Add**.
+11. In **Assigned users and groups** – choose the Microsoft Entra security groups or individual users to assign the role to, and select **Add**.
 12. Select **Next** to review and finish creating the role and then select **Submit**.
 
 > [!NOTE]

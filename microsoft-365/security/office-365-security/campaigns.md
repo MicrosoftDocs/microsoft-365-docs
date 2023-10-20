@@ -61,7 +61,7 @@ A campaign might be short-lived, or could span several days, weeks, or months wi
     - **Organization Management**
     - **Security Administrator**
     - **Security Reader**
-  - [Azure AD permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator**, **Security Administrator**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
+  - [Microsoft Entra RBAC](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator**, **Security Administrator**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 ## Campaigns page in the Microsoft 365 Defender portal
 

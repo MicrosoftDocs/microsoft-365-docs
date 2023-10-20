@@ -58,7 +58,7 @@ This article describes how admins can manage entries for URLs in the Microsoft 3
       - **Security Reader**
       - **View-Only Configuration**
       - **View-Only Organization Management**
-  - [Azure AD permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions *and* permissions for other features in Microsoft 365.
+  - [Microsoft Entra RBAC](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions *and* permissions for other features in Microsoft 365.
 
 ## Create allow entries for URLs
 

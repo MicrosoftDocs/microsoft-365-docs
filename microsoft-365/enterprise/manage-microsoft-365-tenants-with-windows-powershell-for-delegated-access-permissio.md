@@ -52,7 +52,7 @@ Get-MsolPartnerContract -All | Select-Object TenantId
 This will display a listing of all your customer tenants by **TenantId**.
 
 >[!Note]
->PowerShell Core does not support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with **Msol** in their name. To continue using these cmdlets, you must run them from Windows PowerShell.
+>PowerShell Core does not support the Microsoft Azure Active Directory module for Windows PowerShell module and cmdlets with **Msol** in their name. To continue using these cmdlets, you must run them from Windows PowerShell.
 >
 
 ### Get a tenant ID by using the domain name

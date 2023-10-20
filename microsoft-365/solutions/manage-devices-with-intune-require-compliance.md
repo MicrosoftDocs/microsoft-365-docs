@@ -9,7 +9,7 @@ f1.keywords:
 manager: dougeby
 ms.date: 10/20/2021
 audience: ITPro
-description: Create a conditional access policy in Azure AD to require compliant devices, keeping corporate data secure when users work from any device in any location.
+description: Create a conditional access policy in Microsoft Entra ID to require compliant devices, keeping corporate data secure when users work from any device in any location.
 ms.topic: article
 ms.service: o365-solutions
 ms.localizationpriority: high
@@ -26,9 +26,9 @@ ms.custom:
 
 # Step 4. Require healthy and compliant devices with Intune
 
-Conditional Access provides additional verification of device status prior to allowing access to a service. Conditional Access doesn’t work unless you specify conditions. In [Step 3. Set up compliance policies](manage-devices-with-intune-compliance-policies.md), you defined compliance policies that specify the minimum requirements a device must meet to access your environment. In this article, you’ll create the corresponding Conditional Access policy in Azure AD to require compliant devices. This helps keep your corporate data secure while giving users the ability to work from any device and from any location.
+Conditional Access provides additional verification of device status prior to allowing access to a service. Conditional Access doesn’t work unless you specify conditions. In [Step 3. Set up compliance policies](manage-devices-with-intune-compliance-policies.md), you defined compliance policies that specify the minimum requirements a device must meet to access your environment. In this article, you’ll create the corresponding Conditional Access policy in Microsoft Entra ID to require compliant devices. This helps keep your corporate data secure while giving users the ability to work from any device and from any location.
 
-After setting up device compliance policies and assigning these to user groups, Intune lets Azure AD know if a device is compliant or not. To use this status as a condition for access, you must work with your Azure AD administrator to create a Conditional Access rule to require compliant PCs and mobile devices.
+After setting up device compliance policies and assigning these to user groups, Intune lets Microsoft Entra ID know if a device is compliant or not. To use this status as a condition for access, you must work with your Microsoft Entra administrator to create a Conditional Access rule to require compliant PCs and mobile devices.
 
 
 ![Steps for managing devices](../media/devices/intune-mdm-step-3.png#lightbox)
