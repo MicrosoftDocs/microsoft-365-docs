@@ -66,7 +66,7 @@ The supported apps for the different types of mobile devices in the following ta
 
 The following diagram shows what happens when a user with a new device signs in to an app that supports access control with Basic Mobility and Security. The user is blocked from accessing Microsoft 365 resources in the app until they enroll their device.
 
-:::image type="content" source="../../media/basic-mobility-security/bms-1-access-control.png" alt-text="Basic Mobility and Security access control.":::
+:::image type="content" source="../../media/microsoft-365-bsm-app-diagram.png" alt-text="Basic Mobility and Security access control":::
 
 > [!NOTE]
 > Policies and access rules created in Basic Mobility and Security for Microsoft 365 Business Standard will override Exchange ActiveSync mobile device mailbox policies and device access rules created in the Exchange admin center. After a device is enrolled in Basic Mobility and Security for Microsoft 365 Business Standard, any Exchange ActiveSync mobile device mailbox policy or device access rule applied to the device will be ignored. To learn more about Exchange ActiveSync, see [Exchange ActiveSync in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/exchange-activesync/exchange-activesync).
