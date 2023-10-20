@@ -45,7 +45,7 @@ Microsoft 365 Lighthouse now provides a consolidated view of prioritized alerts 
 
 Lighthouse also now supports the ability to configure customized push-alerts to allow integration with your existing ticketing and support systems.
 
-To access this functionality, in the left navigation pane in Lighthouse, select **Alerts**.
+To access this functionality, in the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Alerts**.
 
 To learn more, see [Overview of the Alerts page in Microsoft 365 Lighthouse](m365-lighthouse-alerts-overview.md).
 

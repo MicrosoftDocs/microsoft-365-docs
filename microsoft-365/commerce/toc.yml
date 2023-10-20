@@ -44,6 +44,8 @@
       href: licenses/manage-third-party-app-licenses.md
     - name: Manage auto-claim policies
       href: licenses/manage-auto-claim-policies.md
+    - name: Understand Microsoft 365 E3 Extra Features licenses
+      href: licenses/e3-extra-features-licenses.md
     - name: Understand subscriptions and licenses
       href: licenses/subscriptions-and-licenses.md
 - name: Manage volume licensing
@@ -58,6 +60,8 @@
       href: licenses/manage-license-requests-faq.yml
     - name: Online service activation FAQ
       href: licenses/online-service-activation-faq.yml
+    - name: Volume licensing invoices
+      href: licenses/volume-licensing-invoices.md
 - name: Bills and payments
   items: 
     - name: View your invoice

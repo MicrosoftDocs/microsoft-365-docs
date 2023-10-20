@@ -14,7 +14,7 @@ ms.collection:
 - tier1
 ms.topic: conceptual
 ms.subservice: mde
-ms.date: 09/13/2023
+ms.date: 09/29/2023
 ---
 
 # STEP 2:  Configure your devices to connect to the Defender for Endpoint service using a proxy
@@ -93,10 +93,16 @@ The static proxy is configurable through group policy (GP), both the settings un
 | Configure connected user experiences and telemetry | `HKLM\Software\Policies\Microsoft\Windows\DataCollection` | `TelemetryProxyServer` | ```servername:port or ip:port``` <br> <br> For example: ```10.0.0.6:8080``` (REG_SZ) |
 
 > [!NOTE]
-> If you are using 'TelemetryProxyServer' setting on devices that are otherwise **completely offline**, meaning the operating system is unable to connect for the online certificate revocation list or Windows Update, then it is required to add the additional registry setting `PreferStaticProxyForHttpRequest` with a value of `1`.<br>
-> Parent registry path location for "PreferStaticProxyForHttpRequest" is "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection"<br>
-> The following command can be used to insert the registry value in the correct location:<br>
-> ```reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection" /v PreferStaticProxyForHttpRequest /t REG_DWORD /d 1 /f```<br>
+> If you are using 'TelemetryProxyServer' setting on devices that are otherwise **completely offline**, meaning the operating system is unable to connect for the online certificate revocation list or Windows Update, then it is required to add the additional registry setting `PreferStaticProxyForHttpRequest` with a value of `1`.
+>
+> Parent registry path location for "PreferStaticProxyForHttpRequest" is "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection"
+>
+> The following command can be used to insert the registry value in the correct location:
+>
+> ```console
+> reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection" /v PreferStaticProxyForHttpRequest /t REG_DWORD /d 1 /f
+> ```
+>
 > The above registry value is applicable only starting with MsSense.exe version 10.8210.* and later, or version 10.8049.* and later.
 
 
@@ -117,11 +123,9 @@ Configure the static proxy using the Group Policy available in Administrative Te
 
    The registry value `ProxyServer` takes the following string format:
 
-    ```text
-    <server name or ip>:<port>
+    `<server name or ip>:<port>`
 
     For example: http://10.0.0.6:8080
-    ```
 
 >[!NOTE]
 >If you are using static proxy setting on devices that are otherwise completely offline, meaning the operating system is unable to connect for the online certificate revocation list or Windows Update, then it is required to add the additional registry setting SSLOptions with a dword value of 0. Parent registry path location for "SSLOptions" is "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Spynet" <br>
@@ -143,6 +147,7 @@ Configure the static proxy using the Group Policy available in Administrative Te
 > - AV (Antivirus)
 > - Endpoint Detection and Response (EDR)
 
+
 ## Configure the proxy server manually using netsh command
 
 Use netsh to configure a system-wide static proxy.
@@ -157,7 +162,7 @@ Use netsh to configure a system-wide static proxy.
 
 2. Enter the following command and press **Enter**:
 
-   ```command prompt
+   ```cmd
    netsh winhttp set proxy <proxy>:<port>
    ```
 
@@ -165,7 +170,7 @@ Use netsh to configure a system-wide static proxy.
 
 To reset the winhttp proxy, enter the following command and press **Enter**:
 
-```command prompt
+```cmd
 netsh winhttp reset proxy
 ```
 

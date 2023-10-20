@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: amcdonnell
-ms.date: 08/01/2023
+ms.date: 09/29/2023
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -60,13 +60,7 @@ By default, Syntex eSignature is turned on for libraries in all SharePoint sites
     b. To restrict user access to this service, select **No SharePoint libraries** or **Libraries in selected sites** and follow the instructions to either select the sites or upload a CSV listing a maximum of 100 sites. Be sure to add your content center site if you want it to be included. You can then manage site access permissions for the sites you selected.
 
     c. Select **Save**.
-<!---
-### Turn off Syntex eSignature
 
-1. On the **Manage Microsoft Syntex** page, select **Syntex eSignature**.
-
-2. On the **Turn off Syntex eSignature** page, select **Turn off**.
---->
 ## Document storage and retention
 
 ### Document storage

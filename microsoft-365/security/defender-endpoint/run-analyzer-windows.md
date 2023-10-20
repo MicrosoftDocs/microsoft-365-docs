@@ -16,6 +16,7 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
+- mde-ngp
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
@@ -104,7 +105,7 @@ By default, the unpacked MDEClientAnalyzerResult.zip file will contain the follo
 
     - dsregcmd.txt
 
-      Description: Output from running [dsregcmd](/azure/active-directory/devices/troubleshoot-device-dsregcmd). This provides details about the Azure AD status of the machine.
+      Description: Output from running [dsregcmd](/azure/active-directory/devices/troubleshoot-device-dsregcmd). This provides details about the Microsoft Entra status of the machine.
 
     - IFEO.txt
 

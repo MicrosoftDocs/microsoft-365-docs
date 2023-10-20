@@ -19,6 +19,7 @@ ms.topic: how-to
 ms.collection: 
 - m365-security
 - tier2
+- mde-asr
 search.appverid: met150
 ---
 

@@ -244,6 +244,7 @@ When anti-phishing policies are configured to not honor `p=quarantine` or `p=rej
 - Users add safe senders individually by using their email client.
 - Admins can use the [spoof intelligence insight](anti-spoofing-spoof-intelligence.md#override-the-spoof-intelligence-verdict) or the [Tenant Allow/Block List](tenant-allow-block-list-email-spoof-configure.md#create-allow-entries-for-spoofed-senders) to allow messages from the spoofed sender.
 - Admins create an Exchange mail flow rule (also known as a transport rule) for all users that allows messages for those particular senders.
+- Admins create an Exchange mail flow rule for all users for rejected email that fails the organization's DMARC policy.
 
 For more information, see [Create safe sender lists](create-safe-sender-lists-in-office-365.md).
 

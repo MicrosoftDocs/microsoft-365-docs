@@ -7,9 +7,8 @@ author: denisebmsft
 manager: dansimp
 ms.audience: Admin
 ms.topic: how-to
-ms.service: microsoft-365-security
-ms.subservice: m365bp
-ms.date: 09/15/2022
+ms.service: microsoft-365-business
+ms.date: 10/10/2023
 ms.localizationpriority: medium
 ms.collection: 
 - Adm_O365
@@ -31,7 +30,7 @@ description: "Create a SharePoint communications site for your campaign or busin
 
 # Create a communications site
 
-A great way to communicate priorities, share strategy documents, and highlight upcoming events is to use a communications site in SharePoint, and that's what this mission is all about. Communications sites are for sharing things broadly across your whole business or campaign &mdash; it's your internal strategy site and tactical room. 
+A great way to communicate priorities, share strategy documents, and highlight upcoming events is to use a communications site in SharePoint, and that's what this mission is all about. Communications sites are for sharing things broadly across your whole business or campaign—it's your internal strategy site and tactical room. 
 
 ## Best practices
 
@@ -61,9 +60,9 @@ The following links for PowerPoint and PDF can be downloaded and printed in tabl
 
 1. Sign in to [https://Office.com](https://Office.com).
 
-2. In the top-left corner of the page, select the app launcher icon and then select the **SharePoint** tile. If you don't see the **SharePoint** tile, click the **Sites** tile or **All** if SharePoint isn't visible.
+2. In the top-left corner of the page, select the app launcher icon and then select the **SharePoint** tile. If you don't see the **SharePoint** tile, select the **Sites** tile or **All** if SharePoint isn't visible.
 
-3. At the top of the SharePoint home page, click **+ Create site** and choose the **Communication site** option.
+3. At the top of the SharePoint home page, select **+ Create site** and choose the **Communication site** option.
 
 Learn all [about Communications sites](https://support.office.com/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732) and how to [create a communication site in SharePoint Online](https://support.microsoft.com/en-us/office/create-a-communication-site-in-sharepoint-online-7fb44b20-a72f-4d2c-9173-fc8f59ba50eb).
 
@@ -73,4 +72,4 @@ If you don't see the **+ Create** site link, self-service site creation might no
 
 ## Next mission
 
-Congratulations &mdash; you've completed the mission! Now, immediately turn your focus toward [protecting the managed devices](m365bp-protect-managed-devices.md) for the entire org!
+Congratulations—you've completed the mission! Now, immediately turn your focus toward [protecting the managed devices](m365bp-protect-managed-devices.md) for the entire org!

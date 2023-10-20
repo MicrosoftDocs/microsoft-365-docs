@@ -88,7 +88,7 @@ Common controls and content either appear in the same place, or are condensed in
 
 :::image type="content" source="../../media/converged-roles-5.png" alt-text="The Endpoints roles & groups displayed on the Permissions & roles page" lightbox="../../media/converged-roles-5.png":::
 
-Access to Microsoft 365 Defender is configured with Azure AD global roles or by using custom roles.
+Access to Microsoft 365 Defender is configured with Microsoft Entra global roles or by using custom roles.
 
 - Learn more about how to [manage access to Microsoft 365 Defender](m365d-permissions.md)
 - Learn more about how to [create custom roles](custom-roles.md) in Microsoft 365 Defender

@@ -7,8 +7,7 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: microsoft-365-security
-ms.subservice: m365bp
+ms.service: microsoft-365-business
 ms.date: 10/18/2022
 ms.localizationpriority: medium
 ms.collection: 
@@ -89,9 +88,9 @@ To protect all your admin accounts, make sure to follow these recommendations:
 
 - Require all admin accounts to use passwordless authentication (such as Windows Hello or an authenticator app), or MFA. To learn more about why passwordless authentication is important, see the [Microsoft Security whitepaper: Passwordless protection](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2KEup).
 
-- Avoid using custom permissions for admins. Instead of granting permissions to specific users, assign permissions through roles in Azure Active Directory (Azure AD). And, grant access to only the data and operations needed to perform the task at hand. [Learn about least-privileged roles in Azure AD](/azure/active-directory/roles/delegate-by-task).
+- Avoid using custom permissions for admins. Instead of granting permissions to specific users, assign permissions through roles in Microsoft Entra ID. And, grant access to only the data and operations needed to perform the task at hand. [Learn about least-privileged roles in Microsoft Entra ID](/azure/active-directory/roles/delegate-by-task).
 
-- Use built-in roles for assigning permissions where possible. Azure role-based access control (RBAC) has several built-in roles that you can use. [Learn more about Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
+- Use built-in roles for assigning permissions where possible. Azure role-based access control (RBAC) has several built-in roles that you can use. [Learn more about Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference).
 
 ## Additional recommendations
 

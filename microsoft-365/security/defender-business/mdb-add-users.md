@@ -56,20 +56,20 @@ One good way to make sure MFA is enabled for all users is by using [security def
 
 1. Go to the Azure portal ([https://portal.azure.com/](https://portal.azure.com/)) and sign in.
 
-2. Under **Manage Azure Active Directory**, select **View**.
+2. Under **Manage Microsoft Entra ID**, select **View**.
 
-   :::image type="content" source="media/mdb-manage-azuread.png" alt-text="Screenshot showing the View button under the heading Manage Azure Active Directory." lightbox="media/mdb-manage-azuread.png":::
+   :::image type="content" source="media/mdb-manage-azuread.png" alt-text="Screenshot showing the View button under the heading Manage Microsoft Entra ID." lightbox="media/mdb-manage-azuread.png":::
 
 3. In the navigation pane, select **Properties**, and then select **Manage security defaults**.
 
-   :::image type="content" source="media/mdb-azuread-properties.png" alt-text="Screenshot showing Properties and Manage Security Defaults for Azure Active Directory." lightbox="media/mdb-azuread-properties.png":::
+   :::image type="content" source="media/mdb-azuread-properties.png" alt-text="Screenshot showing Properties and Manage Security Defaults for Microsoft Entra ID." lightbox="media/mdb-azuread-properties.png":::
 
 4. On the right side of the screen, in the **Security defaults** pane, see whether security defaults are turned on (**Enabled**) or off (**Disabled**). To turn security defaults on, use the drop-down menu to select **Enabled**. 
 
    > [!CAUTION]
    > If your organization is using Conditional Access policies, you won't be able to enable security defaults. You'll see a message that indicates you're using classic policies instead. You can use *either* security defaults *or* Conditional Access, but not both. For most organizations, security defaults offer a good level of sign-in security. But if your organization must meet more stringent requirements, you can use Conditional Access policies instead. To learn more, see the following articles:
    > - [Multi-factor authentication](../../business-premium/m365bp-turn-on-mfa.md) (in the Microsoft 365 Business Premium documentation)
-   > - [Security defaults in Azure AD](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
+   > - [Security defaults in Microsoft Entra ID](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
 
 5. Save your changes.
 

@@ -18,6 +18,7 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
+- mde-edr
 ms.topic: conceptual
 ms.custom: 
 - autoir

@@ -57,7 +57,7 @@ The following table lists the different threat statuses and their definition:<br
 |---|---|
 | Active | Threat is active on the device. |
 | No status | Threat status is unavailable. Run a full scan on the device to have Microsoft Defender Antivirus redetect the threat. |
-| Action failed | The device is not at risk. An action has failed but a potential threat has been stopped and isn't active on the device. Run a full scan on the device. |
+| Action failed | The device isn't at risk. An action has failed but a potential threat has been stopped and isn't active on the device. Run a full scan on the device. |
 | Manual steps required | The threat has been stopped but it requires a manual step to be completed, such as a full scan or a reboot of the device. |
 | Full scan required | A full scan of the device is required. |
 | Reboot required | A reboot of the device is required. |

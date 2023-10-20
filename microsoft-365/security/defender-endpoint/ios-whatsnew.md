@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
+- mde-ios
 ms.topic: reference
 ms.subservice: mde
 search.appverid: met150

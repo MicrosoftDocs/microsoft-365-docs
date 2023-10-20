@@ -36,7 +36,7 @@ description: View the health status of Microsoft 365 services before you call su
 
 You can view the health of your Microsoft services, including Office on the web, Viva Engage, Microsoft Dynamics CRM, and mobile device management cloud services, on the **Service health** page in the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339). If you are experiencing problems with a cloud service, you can check the service health to determine whether this is a known issue with a resolution in progress before you call support or spend time troubleshooting.
 
-If you are unable to sign in to the admin center, you can use the [service status page](https://status.office365.com) to check for known issues preventing you from logging into your tenant.  Also sign up to follow us at [@MSFT365status](https://twitter.com/MSFT365Status) on Twitter to see information on certain events.
+If you are unable to sign in to the admin center, you can use the [service status page](https://status.cloud.microsoft/m365/) to check for known issues preventing you from logging into your tenant.  Also, sign up to follow us at [@MSFT365status](https://twitter.com/MSFT365Status) on Twitter to see information on certain events.
 
 ## How to check service health
 
@@ -100,7 +100,7 @@ The advisory or incident summary provides the following information:
 
 ### Translate service health details
 
-We use machine translation to automatically display messages in your preferred language. Read [Language translation for Service health dashboard](lang-service-health.md) for more information on how to set your language.
+We use machine translation to automatically display messages in your preferred language. Read [Language translation for Service health dashboard](#language-translation-for-service-health-dashboard) for more information on how to set your language.
 
 ### Definitions
 

@@ -42,7 +42,8 @@
     "globalMetadata": {
       "breadcrumb_path": "/microsoft-365-copilot/breadcrumb/toc.json",
       "feedback_system": "Standard",
-      "permissioned-type": "public"
+      "permissioned-type": "public",
+      "uhfHeaderId": "MSDocsHeader-M365-IT"
     },
     "fileMetadata": {},
     "template": [],

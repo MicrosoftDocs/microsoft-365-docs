@@ -115,7 +115,7 @@ Connect-AzAccount
 ```
 
 > [!TIP]
-> To generate ready-to-run PowerShell command blocks based on your custom settings, use this [Microsoft Excel configuration workbook](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx). 
+> To generate ready-to-run PowerShell command blocks based on your custom settings, use this [Microsoft Excel configuration workbook](https://download.microsoft.com/download/1/b/7/1b745323-d84d-4fad-9e66-f34f589e5d31/O365FedAuthInAzure_Config.xlsx). 
 
 Get your subscription name using the following command.
   

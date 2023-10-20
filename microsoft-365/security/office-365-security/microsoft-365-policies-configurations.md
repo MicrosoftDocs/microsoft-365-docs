@@ -63,14 +63,14 @@ Zero Trust identity and device access policies address the **Verify explicitly**
 
   Apply controls and technologies to discover shadow IT, ensure appropriate in-app permissions, gate access based on real-time analytics, monitor for abnormal behavior, control user actions, and validate secure configuration options.
 
-This series of articles describe a set of identity and device access prerequisite configurations and a set of Azure Active Directory (Azure AD) Conditional Access, Microsoft Intune, and other policies for Zero Trust access to Microsoft 365 for enterprise cloud apps and services, other SaaS services, and on-premises applications published with Azure AD Application Proxy.
+This series of articles describe a set of identity and device access prerequisite configurations and a set of Microsoft Entra Conditional Access, Microsoft Intune, and other policies for Zero Trust access to Microsoft 365 for enterprise cloud apps and services, other SaaS services, and on-premises applications published with Microsoft Entra application proxy.
 
 Zero Trust identity and device access settings and policies are recommended in three tiers: starting point, enterprise, and specialized security for environments with highly regulated or classified data. These tiers and their corresponding configurations provide consistent levels of Zero Trust protection across your data, identities, and devices.
 
 These capabilities and their recommendations:
 
 - Are supported in Microsoft 365 E3 and Microsoft 365 E5.
-- Are aligned with [Microsoft Secure Score](../defender/microsoft-secure-score.md) as well as [identity score in Azure AD](/azure/active-directory/fundamentals/identity-secure-score), and will increase these scores for your organization.
+- Are aligned with [Microsoft Secure Score](../defender/microsoft-secure-score.md) as well as [identity score in Microsoft Entra ID](/azure/active-directory/fundamentals/identity-secure-score), and will increase these scores for your organization.
 - Will help you implement these [five steps to securing your identity infrastructure](/azure/security/azure-ad-secure-steps).
 
 If your organization has unique environment requirements or complexities, use these recommendations as a starting point. However, most organizations can implement these recommendations as prescribed.
@@ -86,13 +86,13 @@ Watch this video for a quick overview of identity and device access configuratio
 
 ## Intended audience
 
-These recommendations are intended for enterprise architects and IT professionals who are familiar with Microsoft 365 cloud productivity and security services, which include Azure AD (identity), Microsoft Intune (device management), and Microsoft Purview Information Protection (data protection).
+These recommendations are intended for enterprise architects and IT professionals who are familiar with Microsoft 365 cloud productivity and security services, which include Microsoft Entra ID (identity), Microsoft Intune (device management), and Microsoft Purview Information Protection (data protection).
 
 ### Customer environment
 
-The recommended policies are applicable to enterprise organizations operating both entirely within the Microsoft cloud and for customers with hybrid identity infrastructure, which is an on-premises Active Directory Domain Services (AD DS) forest that is synchronized with an Azure AD tenant.
+The recommended policies are applicable to enterprise organizations operating both entirely within the Microsoft cloud and for customers with hybrid identity infrastructure, which is an on-premises Active Directory Domain Services (AD DS) forest that is synchronized with a Microsoft Entra tenant.
 
-Many of the provided recommendations rely on services available only with Microsoft 365 E5, Microsoft 365 E3 with the E5 Security add-on, EMS E5, or Azure AD Premium P2 licenses.
+Many of the provided recommendations rely on services available only with Microsoft 365 E5, Microsoft 365 E3 with the E5 Security add-on, EMS E5, or Microsoft Entra ID P2 licenses.
 
 For those organizations who do not have these licenses, Microsoft recommends you at least implement [security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults), which is included with all Microsoft 365 plans.
 
@@ -144,27 +144,29 @@ Microsoft 365 for enterprise is designed for large organizations to empower ever
 
 This section provides an overview of the Microsoft 365 services and capabilities that are important for Zero Trust identity and device access.
 
-### Azure AD
+<a name='azure-ad'></a>
 
-Azure AD provides a full suite of identity management capabilities. We recommend using these capabilities to secure access.
+### Microsoft Entra ID
+
+Microsoft Entra ID provides a full suite of identity management capabilities. We recommend using these capabilities to secure access.
 
 |Capability or feature|Description|Licensing|
 |---|---|---|
-|[Multi-factor authentication (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks)|MFA requires users to provide two forms of verification, such as a user password plus a notification from the Microsoft Authenticator app or a phone call. MFA greatly reduces the risk that stolen credentials can be used to access your environment. Microsoft 365 uses the Azure AD Multi-Factor Authentication service for MFA-based sign-ins.|Microsoft 365 E3 or E5|
-|[Conditional Access](/azure/active-directory/conditional-access/overview)|Azure AD evaluates the conditions of the user sign-in and uses Conditional Access policies to determine the allowed access. For example, in this guidance we show you how to create a Conditional Access policy to require device compliance for access to sensitive data. This greatly reduces the risk that a hacker with their own device and stolen credentials can access your sensitive data. It also protects sensitive data on the devices, because the devices must meet specific requirements for health and security.|Microsoft 365 E3 or E5|
-|[Azure AD groups](/azure/active-directory/fundamentals/active-directory-manage-groups)|Conditional Access policies, device management with Intune, and even permissions to files and sites in your organization rely on the assignment to user accounts or Azure AD groups. We recommend you create Azure AD groups that correspond to the levels of protection you are implementing. For example, your executive staff are likely higher value targets for hackers. Therefore, it makes sense to add the user accounts of these employees to an Azure AD group and assign this group to Conditional Access policies and other policies that enforce a higher level of protection for access.|Microsoft 365 E3 or E5|
-|[Device enrollment](/azure/active-directory/devices/overview)|You enroll a device into Azure AD to create an identity for the device. This identity is used to authenticate the device when a user signs in and to apply Conditional Access policies that require domain-joined or compliant PCs. For this guidance, we use device enrollment to automatically enroll domain-joined Windows computers. Device enrollment is a prerequisite for managing devices with Intune.|Microsoft 365 E3 or E5|
-|[Azure AD Identity Protection](/azure/active-directory/identity-protection/overview)|Enables you to detect potential vulnerabilities affecting your organization's identities and configure automated remediation policy to low, medium, and high sign-in risk and user risk. This guidance relies on this risk evaluation to apply Conditional Access policies for multi-factor authentication. This guidance also includes a Conditional Access policy that requires users to change their password if high-risk activity is detected for their account.|Microsoft 365 E5, Microsoft 365 E3 with the E5 Security add-on, EMS E5, or Azure AD Premium P2 licenses|
+|[Multifactor authentication (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks)|MFA requires users to provide two forms of verification, such as a user password plus a notification from the Microsoft Authenticator app or a phone call. MFA greatly reduces the risk that stolen credentials can be used to access your environment. Microsoft 365 uses the Microsoft Entra multifactor authentication service for MFA-based sign-ins.|Microsoft 365 E3 or E5|
+|[Conditional Access](/azure/active-directory/conditional-access/overview)|Microsoft Entra ID evaluates the conditions of the user sign-in and uses Conditional Access policies to determine the allowed access. For example, in this guidance we show you how to create a Conditional Access policy to require device compliance for access to sensitive data. This greatly reduces the risk that a hacker with their own device and stolen credentials can access your sensitive data. It also protects sensitive data on the devices, because the devices must meet specific requirements for health and security.|Microsoft 365 E3 or E5|
+|[Microsoft Entra groups](/azure/active-directory/fundamentals/active-directory-manage-groups)|Conditional Access policies, device management with Intune, and even permissions to files and sites in your organization rely on the assignment to user accounts or Microsoft Entra groups. We recommend you create Microsoft Entra groups that correspond to the levels of protection you are implementing. For example, your executive staff are likely higher value targets for hackers. Therefore, it makes sense to add the user accounts of these employees to a Microsoft Entra group and assign this group to Conditional Access policies and other policies that enforce a higher level of protection for access.|Microsoft 365 E3 or E5|
+|[Device enrollment](/azure/active-directory/devices/overview)|You enroll a device into Microsoft Entra ID to create an identity for the device. This identity is used to authenticate the device when a user signs in and to apply Conditional Access policies that require domain-joined or compliant PCs. For this guidance, we use device enrollment to automatically enroll domain-joined Windows computers. Device enrollment is a prerequisite for managing devices with Intune.|Microsoft 365 E3 or E5|
+|[Microsoft Entra ID Protection](/azure/active-directory/identity-protection/overview)|Enables you to detect potential vulnerabilities affecting your organization's identities and configure automated remediation policy to low, medium, and high sign-in risk and user risk. This guidance relies on this risk evaluation to apply Conditional Access policies for multifactor authentication. This guidance also includes a Conditional Access policy that requires users to change their password if high-risk activity is detected for their account.|Microsoft 365 E5, Microsoft 365 E3 with the E5 Security add-on, EMS E5, or Microsoft Entra ID P2 licenses|
 |[Self-service password reset (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks)|Allow your users to reset their passwords securely and without help-desk intervention, by providing verification of multiple authentication methods that the administrator can control.|Microsoft 365 E3 or E5|
-|[Azure AD password protection](/azure/active-directory/authentication/concept-password-ban-bad)|Detect and block known weak passwords and their variants and additional weak terms that are specific to your organization. Default global banned password lists are automatically applied to all users in an Azure AD tenant. You can define additional entries in a custom banned password list. When users change or reset their passwords, these banned password lists are checked to enforce the use of strong passwords.|Microsoft 365 E3 or E5|
+|[Microsoft Entra password protection](/azure/active-directory/authentication/concept-password-ban-bad)|Detect and block known weak passwords and their variants and additional weak terms that are specific to your organization. Default global banned password lists are automatically applied to all users in a Microsoft Entra tenant. You can define additional entries in a custom banned password list. When users change or reset their passwords, these banned password lists are checked to enforce the use of strong passwords.|Microsoft 365 E3 or E5|
 
-Here are the components of Zero Trust identity and device access, including Intune and Azure AD objects, settings, and subservices.
+Here are the components of Zero Trust identity and device access, including Intune and Microsoft Entra objects, settings, and subservices.
 
 :::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-components.png" alt-text="The Components of Zero Trust identity and device access" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-components.png":::
 
 ### Microsoft Intune
 
-[Intune](/intune/introduction-intune) is Microsoft's cloud-based mobile device management service. This guidance recommends device management of Windows PCs with Intune and recommends device compliance policy configurations. Intune determines whether devices are compliant and sends this data to Azure AD to use when applying Conditional Access policies.
+[Intune](/intune/introduction-intune) is Microsoft's cloud-based mobile device management service. This guidance recommends device management of Windows PCs with Intune and recommends device compliance policy configurations. Intune determines whether devices are compliant and sends this data to Microsoft Entra ID to use when applying Conditional Access policies.
 
 #### Intune app protection
 
@@ -180,7 +182,7 @@ This guidance shows you how to implement a set of policies to protect access to 
 
 ### Windows 11 or Windows 10 with Microsoft 365 Apps for enterprise
 
-Windows 11 or Windows 10 with Microsoft 365 Apps for enterprise is the recommended client environment for PCs. We recommend Windows 11 or Windows 10 because Azure is designed to provide the smoothest experience possible for both on-premises and Azure AD. Windows 11 or Windows 10 also includes advanced security capabilities that can be managed through Intune. Microsoft 365 Apps for enterprise includes the latest versions of Office applications. These use modern authentication, which is more secure and a requirement for Conditional Access. These apps also include enhanced compliance and security tools.
+Windows 11 or Windows 10 with Microsoft 365 Apps for enterprise is the recommended client environment for PCs. We recommend Windows 11 or Windows 10 because Azure is designed to provide the smoothest experience possible for both on-premises and Microsoft Entra ID. Windows 11 or Windows 10 also includes advanced security capabilities that can be managed through Intune. Microsoft 365 Apps for enterprise includes the latest versions of Office applications. These use modern authentication, which is more secure and a requirement for Conditional Access. These apps also include enhanced compliance and security tools.
 
 ## Applying these capabilities across the three levels of protection
 
@@ -201,7 +203,7 @@ We recommend organization-owned devices be managed by Intune or domain-joined to
 
 ## Deployment and your apps
 
-Prior to configuring and rolling out Zero Trust identity and device access configuration for your Azure AD-integrated apps, you must:
+Prior to configuring and rolling out Zero Trust identity and device access configuration for your Microsoft Entra integrated apps, you must:
 
 - Decide which apps used in your organization you want to protect.
 - Analyze this list of apps to determine the sets of policies that provide appropriate levels of protection.
@@ -227,7 +229,7 @@ Microsoft recommends that you do not create policy sets that apply to all apps b
 3. Configure Conditional Access policies for guest and external users.
 4. Configure Conditional Access policies for Microsoft 365 cloud apps—such as Microsoft Teams, Exchange, and SharePoint—and Microsoft Defender for Cloud Apps policies.
 
-After you have configured Zero Trust identity and device access, see the [Azure AD feature deployment guide](/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2) for a phased checklist of additional features to consider and [Azure AD Identity Governance](/azure/active-directory/governance/) to protect, monitor, and audit access.
+After you have configured Zero Trust identity and device access, see the [Microsoft Entra feature deployment guide](/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2) for a phased checklist of additional features to consider and [Microsoft Entra ID Governance](/azure/active-directory/governance/) to protect, monitor, and audit access.
 
 ## Next step
 

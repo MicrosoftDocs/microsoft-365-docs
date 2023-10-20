@@ -49,7 +49,7 @@ This article describes how admins can manage entries for files in the Microsoft 
 
 - You can enter a maximum of 64 characters in a file entry.
 
-- An entry should be active within 30 minutes, but it might take up to 24 hours for the entry to be active.
+- An entry should be active within 5 minutes.
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
   - [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo):
@@ -61,7 +61,7 @@ This article describes how admins can manage entries for files in the Microsoft 
       - **Security Reader**
       - **View-Only Configuration**
       - **View-Only Organization Management**
-  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
+  - [Microsoft Entra RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 - A **Files** tab is available on the **Submissions** page only in organizations with Microsoft 365 Defender or Microsoft Defender for Endpoint Plan 2. For information and instructions to submit files from the **Files** tab, see [Submit files in Microsoft Defender for Endpoint](../defender-endpoint/admin-submissions-mde.md).
 

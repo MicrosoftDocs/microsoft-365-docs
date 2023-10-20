@@ -59,7 +59,7 @@ Checking for the license state and whether it was properly provisioned can be do
 
     On the screen, you'll see all the provisioned licenses and their current **Status**.
 
-    :::image type="content" source="images/atp-billing-subscriptions.png" alt-text="The billing licenses page" lightbox="images/atp-billing-subscriptions.png":::
+    :::image type="content" source="images/atp-billing-subscriptions.png" alt-text="The billing licenses page":::
 
 ## Cloud Service Provider validation
 
@@ -125,9 +125,7 @@ The policy sets two registry values `TelemetryProxyServer` as REG_SZ and `Disabl
 
 The registry value `TelemetryProxyServer` takes the following string format:
 
-```text
-<server name or ip>:<port>
-```
+`<server name or ip>:<port>`
 
 For example: 10.0.0.6:8080
 
@@ -148,7 +146,7 @@ Use netsh to configure a system-wide static proxy.
 
 2. Enter the following command and press **Enter**:
 
-   ```PowerShell
+   ```cmd
    netsh winhttp set proxy <proxy>:<port>
    ```
 
@@ -166,14 +164,12 @@ If a proxy or firewall is blocking anonymous traffic, as Microsoft Defender for 
 
 The following downloadable spreadsheet lists the services and their associated URLs that your network must be able to connect to. Ensure there are no firewall or network filtering rules that would deny access to these URLs, or you may need to create an *allow* rule specifically for them.
 
-<br>
 
-****
 
 
 |Spreadsheet of domains list| Description|
 |---|---|
-|Microsoft Defender for Endpoint URL list for commercial customers| Spreadsheet of specific DNS records for service locations, geographic locations, and OS for commercial customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
+|Microsoft Defender for Endpoint URL list for commercial customers| Spreadsheet of specific DNS records for service locations, geographic locations, and OS for commercial customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls-commercial.xlsx)
 | Microsoft Defender for Endpoint URL list for Gov/GCC/DoD | Spreadsheet of specific DNS records for service locations, geographic locations, and OS for Gov/GCC/DoD customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
 
 ## Next step

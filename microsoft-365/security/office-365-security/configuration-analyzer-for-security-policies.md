@@ -60,7 +60,7 @@ The Standard and Strict policy setting values that are used as baselines are des
     - _Use the configuration analyzer and update the affected security policies_: Membership in the **Organization Management** or **Security Administrator** role groups.
     - _Read-only access to the configuration analyzer_: Membership in the **Global Reader** or **Security Reader** role groups.
   - [Exchange Online RBAC](/Exchange/permissions-exo/permissions-exo): Membership in the **View-Only Organization Management** role group gives read-only access to the configuration analyzer.
-  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
+  - [Microsoft Entra RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 ## Use the configuration analyzer in the Microsoft 365 Defender portal
 
@@ -117,6 +117,9 @@ If you select a row and click **View policy** you're taken to the details flyout
 After you automatically or manually update the setting, click **Refresh** to see the reduced number of recommendations and the removal of the updated row from the results.
 
 ### Configuration drift analysis and history tab in the configuration analyzer
+
+> [!NOTE]
+> [Unified Auditing](/purview/audit-log-enable-disable) needs to be enabled for drift analysis. 
 
 This tab allows you to track the changes that have been made to your security policies and how those changes compare to the Standard or Strict settings. By default, the following information is displayed:
 

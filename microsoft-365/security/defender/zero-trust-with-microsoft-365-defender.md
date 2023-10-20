@@ -51,14 +51,14 @@ Microsoft 365 Defender helps you apply the principles of Zero Trust in the follo
 | Zero Trust principle | Met by |
 | --- | --- |
 | Verify explicitly | Microsoft 365 Defender provides XDR across users, identities, devices, apps, and emails.  |
-| Use least privileged access | If used with Azure Active Directory (Azure AD) Identity Protection, Microsoft 365 Defender blocks users based on the level of risk posed by an identity. Azure AD Identity Protection is licensed separately from Microsoft 365 Defender and is included with Azure AD Premium P2.  |
+| Use least privileged access | If used with Microsoft Entra ID Protection, Microsoft 365 Defender blocks users based on the level of risk posed by an identity. Microsoft Entra ID Protection is licensed separately from Microsoft 365 Defender and is included with Microsoft Entra ID P2.  |
 | Assume breach | Microsoft 365 Defender continuously scans the environment for threats and vulnerabilities. It can implement automated remediation tasks, including automated investigations and isolating endpoints. |
 
 To add Microsoft 365 Defender to your Zero Trust strategy and architecture, go to [Evaluate and pilot Microsoft 365 Defender](eval-overview.md) for a methodical guide to piloting and deploying Microsoft 365 Defender components. The following table summarizes what these topics include.
 
 |Includes|Prerequisites|Doesn't include|
 |---------|---------|---------|
-| Set up the evaluation and pilot environment for all components: <ul><li>Defender for Identity</li><li>Defender for Office 365</li><li>Defender for Endpoint</li><li>Microsoft Defender for Cloud Apps</li></ul> <br> Protect against threats <br><br> Investigate and respond to threats | See the guidance for the architecture requirements for each component of Microsoft 365 Defender. | Azure AD Identity Protection is not included in this solution guide. It is included in [Step 1. Configure Zero Trust identity and device access protection](../microsoft-365-zero-trust.md#step-1-configure-zero-trust-identity-and-device-access-protection--starting-point-policies). |
+| Set up the evaluation and pilot environment for all components: <ul><li>Defender for Identity</li><li>Defender for Office 365</li><li>Defender for Endpoint</li><li>Microsoft Defender for Cloud Apps</li></ul> <br> Protect against threats <br><br> Investigate and respond to threats | See the guidance for the architecture requirements for each component of Microsoft 365 Defender. | Microsoft Entra ID Protection is not included in this solution guide. It is included in [Step 1. Configure Zero Trust identity and device access protection](../microsoft-365-zero-trust.md#step-1-configure-zero-trust-identity-and-device-access-protection--starting-point-policies). |
 
 ## Next steps
 

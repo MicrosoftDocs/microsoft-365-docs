@@ -5,6 +5,7 @@ search.appverid: met150
 ms.service: microsoft-365-security
 ms.author: siosulli
 author: siosulli
+ms.reviewer: pahuijbr
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -13,7 +14,7 @@ ms.collection:
 - tier2
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.date: 09/12/2023
+ms.date: 09/21/2023
 ms.subservice: mde
 ---
 
@@ -152,13 +153,14 @@ With the ability to easily deploy updates to VMs running in VDIs, we've shortene
 
 If you have onboarded the primary image of your VDI environment (SENSE service is running), then you must offboard and clear some data before putting the image back into production.
 
-1. Ensure the sensor is stopped by running the following command in a CMD window:
+1. [Offboard the machine](offboard-machines.md).
+2. Ensure the sensor is stopped by running the following command in a CMD window:
 
    ```console
    sc query sense
    ```
 
-2. Run the following commands using PsExec.exe (which can be downloaded from [https://download.sysinternals.com/files/PSTools.zip](https://download.sysinternals.com/files/PSTools.zip)):
+3. Run the following commands using PsExec.exe (which can be downloaded from [https://download.sysinternals.com/files/PSTools.zip](https://download.sysinternals.com/files/PSTools.zip)):
 
    ```console
    PsExec.exe -s cmd.exe

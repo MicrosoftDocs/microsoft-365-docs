@@ -14,7 +14,8 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
-ms.topic: conceptual
+ms.topic: reference
+ms.custom: api
 ms.subservice: mde
 search.appverid: met150
 ms.date: 02/27/2023
@@ -22,7 +23,7 @@ ms.date: 02/27/2023
 
 # Create and manage device tags
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -45,7 +46,7 @@ You can add tags on devices using the following ways:
 > [!NOTE]
 > There may be some latency between the time a tag is added to a device and its availability in the devices list and device page.
 
-To add device tags using API, see [Add or remove device tags API](add-or-remove-machine-tags.md).
+To add device tags using API, see [Add or remove device tags API](api/add-or-remove-machine-tags.md).
 
 ## Add and manage device tags using the portal
 

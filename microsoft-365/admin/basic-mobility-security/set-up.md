@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 09/01/2020
+ms.date: 09/19/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -40,7 +40,7 @@ Have questions? For a FAQ to help address common questions, see [Basic Mobility 
 
 2. Go to [Activate Basic Mobility and Security](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx).
 
-   It can take some time to activate Basic Mobility and Security. When it finishes, you'll receive an email that explains the next steps to take.
+   It can take some time to activate Basic Mobility and Security. When it finishes, select **Manage devices** on the page. You'll also receive an email that explains the next steps to take if you don't see the Manage devices page.
 
 ## Set up Mobile Device Management
 

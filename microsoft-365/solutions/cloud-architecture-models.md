@@ -19,7 +19,7 @@ ms.date: 12/05/2022
 
 # Microsoft cloud for IT architects illustrations
 
-These cloud architecture posters give you information about Microsoft cloud services, including Microsoft 365, Azure Active Directory (Azure AD), Microsoft Intune, Microsoft Dynamics 365, and hybrid on-premises and cloud solutions. 
+These cloud architecture posters give you information about Microsoft cloud services, including Microsoft 365, Microsoft Entra ID, Microsoft Intune, Microsoft Dynamics 365, and hybrid on-premises and cloud solutions. 
 
 IT decision makers and architects can use these resources to determine the ideal solutions for their workloads and to make decisions about core infrastructure components such as networking, identity, and security.
 
@@ -62,7 +62,7 @@ What IT architects need to know about designing identity for organizations using
   
 | Item | Description |
 |:-----|:-----|
-|[![Thumb image for Microsoft cloud identity model.](../media/solutions-architecture-center/msft-cloud-identity-model-thumb.png)](https://download.microsoft.com/download/3/6/a/36a7c1ba-fe48-414f-92c9-9c9ddba323cd/5594928a.pdf) <br/> [PDF](https://download.microsoft.com/download/3/6/a/36a7c1ba-fe48-414f-92c9-9c9ddba323cd/5594928a.pdf)  <br/> Updated November 2021 | This model contains:  <ul> <li> Introduction to identity with Microsoft's cloud </li><li> Azure AD IDaaS capabilities </li><li>Zero Trust identity and device access policies</li><li> Integrating on-premises Active Directory Domain Services (AD DS) accounts with Azure AD </li><li> Putting directory components in Azure IaaS </li><li> AD DS options for workloads in Azure IaaS </li></ul><br/>  <br/>|
+|[![Thumb image for Microsoft cloud identity model.](../media/solutions-architecture-center/msft-cloud-identity-model-thumb.png)](https://download.microsoft.com/download/3/6/a/36a7c1ba-fe48-414f-92c9-9c9ddba323cd/5594928a.pdf) <br/> [PDF](https://download.microsoft.com/download/3/6/a/36a7c1ba-fe48-414f-92c9-9c9ddba323cd/5594928a.pdf)  <br/> Updated November 2021 | This model contains:  <ul> <li> Introduction to identity with Microsoft's cloud </li><li> Microsoft Entra IDaaS capabilities </li><li>Zero Trust identity and device access policies</li><li> Integrating on-premises Active Directory Domain Services (AD DS) accounts with Microsoft Entra ID </li><li> Putting directory components in Azure IaaS </li><li> AD DS options for workloads in Azure IaaS </li></ul><br/>  <br/>|
 
 <a name="security"></a>
 ### Microsoft cloud security for IT architects
@@ -89,7 +89,7 @@ What IT architects need to know about hybrid cloud for Microsoft services and pl
   
 | Item | Description |
 |:-----|:-----|
-|[![Thumb image for the Microsoft hybrid cloud model.](../media/solutions-architecture-center/msft-hybrid-cloud-model-thumb.png)](../downloads/MSFT_cloud_architecture_hybrid.pdf) <br/> [View as a PDF](../downloads/MSFT_cloud_architecture_hybrid.pdf)  \| [Download as a PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_hybrid.pdf)  \| [Download as a Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_hybrid.vsdx) <br>Updated August 2020 | This model contains: <ul><li> Microsoft's cloud offerings (SaaS, Azure PaaS, and Azure IaaS) and their common elements </li><li> Hybrid cloud architecture for Microsoft's cloud offerings </li><li> Hybrid cloud scenarios for Microsoft SaaS (Office 365), Azure PaaS, and Azure IaaS </li></ul><br/>|
+|[![Thumb image for the Microsoft hybrid cloud model.](../media/solutions-architecture-center/msft-hybrid-cloud-model-thumb.png)](https://download.microsoft.com/download/5/e/4/5e43a139-09c5-4700-b846-e468444bc557/Microsoft365EnterpriseTLGStack.pdf) <br/> [View as a PDF](https://download.microsoft.com/download/5/e/4/5e43a139-09c5-4700-b846-e468444bc557/Microsoft365EnterpriseTLGStack.pdf)  \| [Download as a PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_hybrid.pdf)  \| [Download as a Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_hybrid.vsdx) <br>Updated August 2020 | This model contains: <ul><li> Microsoft's cloud offerings (SaaS, Azure PaaS, and Azure IaaS) and their common elements </li><li> Hybrid cloud architecture for Microsoft's cloud offerings </li><li> Hybrid cloud scenarios for Microsoft SaaS (Office 365), Azure PaaS, and Azure IaaS </li></ul><br/>|
 
 ### Architecture approaches for Microsoft cloud tenant-to-tenant migrations 
 This series of topics illustrates several architecture approaches for mergers, acquisitions, divestitures, and other scenarios that might lead you to migrate to a new cloud tenant. These topics provide starting-point guidance for enterprise resource planning. 

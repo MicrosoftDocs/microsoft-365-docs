@@ -18,7 +18,7 @@ description: Admins can learn how the order of protection settings and the prior
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
-ms.date: 9/18/2023
+ms.date: 10/20/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
@@ -40,7 +40,7 @@ There are two major factors that determine which policy is applied to a message:
   |Order|Email protection|Category|Where to manage|
   |:---:|---|---|---|
   |1|Malware|`CAT:MALW`|[Configure anti-malware policies in EOP](anti-malware-policies-configure.md)|
-  |2|High confidence Phish|`CAT:HPHSH`|[Configure anti-spam policies in EOP](anti-spam-policies-configure.md)|
+  |2|High confidence phishing|`CAT:HPHSH`|[Configure anti-spam policies in EOP](anti-spam-policies-configure.md)|
   |3|Phishing|`CAT:PHSH`|[Configure anti-spam policies in EOP](anti-spam-policies-configure.md)|
   |4|High confidence spam|`CAT:HSPM`|[Configure anti-spam policies in EOP](anti-spam-policies-configure.md)|
   |5|Spoofing|`CAT:SPOOF`|[Spoof intelligence insight in EOP](anti-spoofing-spoof-intelligence.md)|
@@ -86,7 +86,7 @@ As another example, consider the following custom anti-phishing policies in Micr
 |Policy A|1|On|Off|
 |Policy B|2|Off|On|
 
-1. The message is identified as spoofing, because spoofing (4) is evaluated before user impersonation (5) in the order of processing for the email protection type.
+1. The message is identified as spoofing, because spoofing (5) is evaluated before user impersonation (6) in the order of processing for the email protection type.
 2. Policy A is applied first, because it has a higher priority than Policy B.
 3. Based on the settings in Policy A, no action is taken on the message because anti-spoofing is turned off.
 4. The processing of anti-phishing policies stops for all included recipients, so Policy B is never applied to recipients who are also in Policy A.
@@ -214,5 +214,6 @@ The following table describes how conflicts are resolved if an email is affected
 |Block entries for spoofed senders in the Tenant Allow/Block List|**Tenant wins**: Spoof intelligence action in the applicable anti-phishing policy|**Tenant wins**: Spoof intelligence action in the applicable anti-phishing policy|
 |Advanced delivery policy|**User wins**: Email delivered to mailbox|**Tenant wins**: Email delivered to mailbox|
 |Block settings in anti-spam policies|**User wins**: Email delivered to mailbox|**User wins**: Email delivered to user's Junk Email folder|
+|Honor DMARC policy|**User wins**: Email delivered to mailbox|**User wins**: Email delivered to user's Junk Email folder|
 |Blocks by mail flow rules|**User wins**: Email delivered to mailbox|**User wins**: Email delivered to user's Junk Email folder|
 |Allows by: <ul><li>Mail flow rules</li><li>IP Allow List (connection filter policy)</li><li>Allowed sender and domain list (anti-spam policies)</li><li>Tenant Allow/Block List</li></ul>|**User wins**: Email delivered to mailbox|**User wins**: Email delivered to user's Junk Email folder|
