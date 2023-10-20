@@ -42,11 +42,13 @@ ms.date: 02/16/2021
 
 It should take 5 to 10 minutes to complete this project. This time estimate includes registering the application, and applying the code from the PowerShell sample script.
 
-### Register an app in Azure Active Directory
+<a name='register-an-app-in-azure-active-directory'></a>
+
+### Register an app in Microsoft Entra ID
 
 1. Sign in to [Azure](https://portal.azure.com) as a user with the **Global administrator** role.
 
-2. Navigate to **Azure Active Directory** > **App registrations** > **New registration**.
+2. Navigate to **Microsoft Entra ID** > **App registrations** > **New registration**.
 
    :::image type="content" source="../../media/atp-azure-new-app2.png" alt-text="The New registration section in the Microsoft 365 Defender portal" lightbox="../../media/atp-azure-new-app2.png":::
 
@@ -80,7 +82,7 @@ It should take 5 to 10 minutes to complete this project. This time estimate incl
 
 ### Get a token using the app and use the token to access the API
 
-For more information on Azure Active Directory tokens, see the [Azure AD tutorial](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
+For more information on Microsoft Entra tokens, see the [Microsoft Entra tutorial](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
 
 > [!IMPORTANT]
 > Although the example in this demo app encourage you to paste in your secret value for testing purposes, you should **never hardcode secrets** into an application running in production. A third party could use your secret to access resources. You can help keep your app's secrets secure by using [Azure Key Vault](/azure/key-vault/general/about-keys-secrets-certificates). For a practical example of how you can protect your app, see [Manage secrets in your server apps with Azure Key Vault](/training/modules/manage-secrets-with-azure-key-vault/).

@@ -68,13 +68,13 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `AccountName` | `string` | User name of the account |
 | `AccountSid` | `string` | Security Identifier (SID) of the account |
 | `AccountUpn` | `string` | User principal name (UPN) of the account |
-| `AccountObjectId` | `string` | Unique identifier for the account in Azure AD |
+| `AccountObjectId` | `string` | Unique identifier for the account in Microsoft Entra ID |
 | `LogonId` | `string` | Identifier for a logon session. This identifier is unique on the same machine only between restarts |
 | `InitiatingProcessAccountDomain` | `string` | Domain of the account that ran the process responsible for the event |
 | `InitiatingProcessAccountName` | `string` | User name of the account that ran the process responsible for the event |
 | `InitiatingProcessAccountSid` | `string` | Security Identifier (SID) of the account that ran the process responsible for the event |
 | `InitiatingProcessAccountUpn` | `string` | User principal name (UPN) of the account that ran the process responsible for the event |
-| `InitiatingProcessAccountObjectId` | `string` | Azure AD object ID of the user account that ran the process responsible for the event |
+| `InitiatingProcessAccountObjectId` | `string` | Microsoft Entra object ID of the user account that ran the process responsible for the event |
 | `InitiatingProcessLogonId` | `string` | Identifier for a logon session of the process that initiated the event. This identifier is unique on the same machine only between restarts. |
 | `InitiatingProcessIntegrityLevel` | `string` | Integrity level of the process that initiated the event. Windows assigns integrity levels to processes based on certain characteristics, such as if they were launched from an internet download. These integrity levels influence permissions to resources |
 | `InitiatingProcessTokenElevation` | `string` | Token type indicating the presence or absence of User Access Control (UAC) privilege elevation applied to the process that initiated the event |
