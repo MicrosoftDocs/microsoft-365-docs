@@ -25,7 +25,7 @@ metadata:
   - MOE150
   description: "Review the answers to frequent questions about Centralized Deployment from the Microsoft 365 admin center."
 title: Centralized Deployment FAQ
-summary: Centralized Deployment is a way for an Microsoft 365 admin to deploy Office Add-ins (Word, Excel, PowerPoint, and Outlook) to users and groups within an organization, provided the organization meets all requirements for using Centralized Deployment as outlined in this article. However, note that [Integrated Apps](test-and-deploy-microsoft-365-apps.md) is the recommended and most feature-rich way for most customers to centrally deploy Office add-ins to users and groups within your organization.
+summary: Centralized Deployment is a way for a Microsoft 365 admin to deploy Office Add-ins (Word, Excel, PowerPoint, and Outlook) to users and groups within an organization, provided the organization meets all requirements for using Centralized Deployment as outlined in this article. However, note that [Integrated Apps](test-and-deploy-microsoft-365-apps.md) is the recommended and most feature-rich way for most customers to centrally deploy Office add-ins to users and groups within your organization.
 
 sections:
   - name: Ignored
@@ -33,7 +33,7 @@ sections:
       - question: |
           How do I know if my organization is set up for Centralized Deployment?
         answer: |
-          Centralized deployment of add-ins requires that users are using Microsoft 365 apps for enterprise (and are signed into Microsoft 365 using their organizational log-in credentials) and have Exchange Online mailboxes. Your subscription directory must either be in, or federated to, Azure Active Directory. 
+          Centralized deployment of add-ins requires that users are using Microsoft 365 apps for enterprise (and are signed into Microsoft 365 using their organizational log-in credentials) and have Exchange Online mailboxes. Your subscription directory must either be in, or federated to, Microsoft Entra ID. 
            
           Centralized Deployment is only supported for online mailboxes. It does not support deployment to on-premises Exchange mailboxes.
           
@@ -42,7 +42,7 @@ sections:
       - question: |
           How do you target add-in user assignments with Centralized Deployment?
         answer: |
-          Centralized Deployment supports assignments to individual users, groups, and everyone in the tenant. Centralized Deployment can be used for users in top-level groups or groups without parent groups, but not for users in nested groups or groups that have parent groups. Centralized Deployment is also part of most Azure Active Directory groups, including Microsoft 365 Groups, distribution lists, dynamic groups, and security groups. 
+          Centralized Deployment supports assignments to individual users, groups, and everyone in the tenant. Centralized Deployment can be used for users in top-level groups or groups without parent groups, but not for users in nested groups or groups that have parent groups. Centralized Deployment is also part of most Microsoft Entra groups, including Microsoft 365 Groups, distribution lists, dynamic groups, and security groups. 
           
           It is better to use groups assignments instead of individual user assignment for easier management.
            
