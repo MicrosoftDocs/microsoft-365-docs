@@ -70,6 +70,8 @@ additionalContent:
               url: /microsoftteams/platform/copilot/how-to-extend-copilot#how-to-make-your-graph-connector-work-better-with-copilot
             - text: Manage extensions
               url: index.yml
+            - text: Manage Plugins for Copilot in Integrated Apps (PREVIEW)
+              url: /microsoft-365/admin/manage/manage-plugins-for-copilot-in-integrated-apps
         # Card
         - title: Get trained on Microsoft 365 Copilot
           links:
