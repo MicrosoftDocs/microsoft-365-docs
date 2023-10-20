@@ -39,9 +39,9 @@ If you have chosen the hybrid identity model and configured protection for admin
 - Optionally enabling single sign-on scenario
 - Automating account changes in Microsoft 365
 
-For more information about the advantages of using directory synchronization, see [hybrid identity with Azure Active Directory (Azure AD)](/azure/active-directory/hybrid/whatis-hybrid-identity).
+For more information about the advantages of using directory synchronization, see [hybrid identity with Microsoft Entra ID](/azure/active-directory/hybrid/whatis-hybrid-identity).
 
-However, directory synchronization requires planning and preparation to ensure that your Active Directory Domain Services (AD DS) synchronizes to the Azure AD tenant of your Microsoft 365 subscription with a minimum of errors.
+However, directory synchronization requires planning and preparation to ensure that your Active Directory Domain Services (AD DS) synchronizes to the Microsoft Entra tenant of your Microsoft 365 subscription with a minimum of errors.
 
 Follow these steps in order for the best results.
 
@@ -59,11 +59,11 @@ Your directory preparation should focus on the following tasks:
 - Remove invalid and questionable characters in the **givenName**, surname ( **sn** ), **sAMAccountName**, **displayName**, **mail**, **proxyAddresses**, **mailNickname**, and **userPrincipalName** attributes. For details about preparing attributes, see [List of attributes that are synced by the Azure Active Directory Sync Tool](https://go.microsoft.com/fwlink/p/?LinkId=396719).
 
     > [!NOTE]
-    > These are the same attributes that Azure AD Connect synchronizes. 
+    > These are the same attributes that Microsoft Entra Connect synchronizes. 
   
 ## Multi-forest deployment considerations
 
-For multiple forests and SSO options, use a [Custom Installation of Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-install-custom).
+For multiple forests and SSO options, use a [Custom Installation of Microsoft Entra Connect](/azure/active-directory/hybrid/how-to-connect-install-custom).
   
 If your organization has multiple forests for authentication (logon forests), we highly recommend the following:
   
@@ -72,13 +72,13 @@ If your organization has multiple forests for authentication (logon forests), we
 
 If you can't consolidate your multi-forest AD DS deployment or are using other directory services to manage identities, you may be able to synchronize these with the help of Microsoft or a partner.
   
-See [Topologies for Azure AD Connect](/azure/active-directory/hybrid/plan-connect-topologies) for more information.
+See [Topologies for Microsoft Entra Connect](/azure/active-directory/hybrid/plan-connect-topologies) for more information.
   
 ## Features that are dependent on directory synchronization
   
 Directory synchronization is required for the following features and functionality:
   
-- Azure AD Seamless Single Sign-On (SSO)
+- Microsoft Entra seamless single sign-on (SSO)
 - Skype coexistence
 - Exchange hybrid deployment, including:
   - Fully shared global address list (GAL) between your on-premises Exchange environment and Microsoft 365.
@@ -94,7 +94,7 @@ Directory synchronization is required for the following features and functionali
 
 ## 1. Directory cleanup tasks
 
-Before you synchronize your AD DS to your Azure AD tenant, you need to clean up your AD DS.
+Before you synchronize your AD DS to your Microsoft Entra tenant, you need to clean up your AD DS.
 
 > [!IMPORTANT]
 > If you don't perform AD DS cleanup before you synchronize, it can lead to a significant negative impact on the deployment process. It might take days, or even weeks, to go through the cycle of directory synchronization, identifying errors, and re-synchronization.
@@ -105,7 +105,7 @@ In your AD DS, complete the following clean-up tasks for each user account that 
 
 2. Remove any duplicate values in the **proxyAddresses** attribute.
 
-3. If possible, ensure a valid and unique value for the **userPrincipalName** attribute in the user's **user** object. For the best synchronization experience, ensure that the AD DS UPN matches the Azure AD UPN. If a user doesn't have a value for the **userPrincipalName** attribute, then the **user** object must contain a valid and unique value for the **sAMAccountName** attribute. Remove any duplicate values in the **userPrincipalName** attribute.
+3. If possible, ensure a valid and unique value for the **userPrincipalName** attribute in the user's **user** object. For the best synchronization experience, ensure that the AD DS UPN matches the Microsoft Entra UPN. If a user doesn't have a value for the **userPrincipalName** attribute, then the **user** object must contain a valid and unique value for the **sAMAccountName** attribute. Remove any duplicate values in the **userPrincipalName** attribute.
 
 4. For optimal use of the global address list (GAL), ensure the information in the following attributes of the AD DS user account is correct:
 
@@ -214,11 +214,11 @@ The attributes that you need to prepare are listed here:
 
 ## 3. Prepare the userPrincipalName attribute
 
-Active Directory is designed to allow the end users in your organization to sign in to your directory by using either **sAMAccountName** or **userPrincipalName**. Similarly, end users can sign in to Microsoft 365 by using the user principal name (UPN) of their work or school account. Directory synchronization attempts to create new users in Azure Active Directory by using the same UPN that's in your AD DS. The UPN is formatted like an email address.
+Active Directory is designed to allow the end users in your organization to sign in to your directory by using either **sAMAccountName** or **userPrincipalName**. Similarly, end users can sign in to Microsoft 365 by using the user principal name (UPN) of their work or school account. Directory synchronization attempts to create new users in Microsoft Entra ID by using the same UPN that's in your AD DS. The UPN is formatted like an email address.
 
-In Microsoft 365, the UPN is the default attribute that's used to generate the email address. It's easy to get **userPrincipalName** (in AD DS and in Azure AD) and the primary email address in **proxyAddresses** set to different values. When they're set to different values, there can be confusion for administrators and end users.
+In Microsoft 365, the UPN is the default attribute that's used to generate the email address. It's easy to get **userPrincipalName** (in AD DS and in Microsoft Entra ID) and the primary email address in **proxyAddresses** set to different values. When they're set to different values, there can be confusion for administrators and end users.
 
-It's best to align these attributes to reduce confusion. To meet the requirements of single sign-on with Active Directory Federation Services (AD FS) 2.0, you need to ensure that the UPNs in Azure Active Directory and your AD DS match and are using a valid domain namespace.
+It's best to align these attributes to reduce confusion. To meet the requirements of single sign-on with Active Directory Federation Services (AD FS) 2.0, you need to ensure that the UPNs in Microsoft Entra ID and your AD DS match and are using a valid domain namespace.
 
 ## 4. Add an alternative UPN suffix to AD DS
 
@@ -228,7 +228,7 @@ For more information on how to add an alternative UPN suffix to Active Directory
 
 ## 5. Match the AD DS UPN with the Microsoft 365 UPN
 
-If you've already set up directory synchronization, the user's UPN for Microsoft 365 may not match the user's AD DS UPN that's defined in your AD DS. This can occur when a user was assigned a license before the domain was verified. To fix this, use [PowerShell to fix duplicate UPN](https://go.microsoft.com/fwlink/p/?LinkId=396730) to update the user's UPN to ensure that the Microsoft 365 UPN matches the corporate user name and domain. If you're updating the UPN in the AD DS and would like it to synchronize with the Azure Active Directory identity, you need to remove the user's license in Microsoft 365 prior to making the changes in AD DS.
+If you've already set up directory synchronization, the user's UPN for Microsoft 365 may not match the user's AD DS UPN that's defined in your AD DS. This can occur when a user was assigned a license before the domain was verified. To fix this, use [PowerShell to fix duplicate UPN](https://go.microsoft.com/fwlink/p/?LinkId=396730) to update the user's UPN to ensure that the Microsoft 365 UPN matches the corporate user name and domain. If you're updating the UPN in the AD DS and would like it to synchronize with the Microsoft Entra identity, you need to remove the user's license in Microsoft 365 prior to making the changes in AD DS.
 
 Also see [How to prepare a non-routable domain (such as .local domain) for directory synchronization](prepare-a-non-routable-domain-for-directory-synchronization.md).
 
