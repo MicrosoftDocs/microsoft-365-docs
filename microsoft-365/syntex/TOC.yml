@@ -197,7 +197,7 @@
     - name: Merge and extract PDFs
       href: merge-extract-pdf.md
 
-    - name: Content processing
+    - name: Processing rules
       items: 
         - name: Overview 
           href: content-processing-overview.md
