@@ -115,12 +115,10 @@
              href: add-users/add-users.md
            - name: Add a new employee
              href: add-users/add-new-employee.md
-           - name: Assign licenses to users
+           - name: Assign or unassign licenses for users
              href: manage/assign-licenses-to-users.md  
            - name: Assign admin roles
              href: add-users/assign-admin-roles.md
-           - name: Unassign licenses from users
-             href: manage/remove-licenses-from-users.md
            - name: Turn pronouns on or off
              href: add-users/turn-pronouns-on-or-off.md
            - name: Guest users
