@@ -41,12 +41,12 @@ When you pilot Microsoft Defender for Endpoint, you may choose to onboard a few 
 
 You can then try out capabilities that are available such as running attack simulations and seeing how Defender for Endpoint surfaces malicious activities and enables you to conduct an efficient response. 
 
-## Step 1. Verify pilot group
+## Step 1: Verify pilot group
 After completing the onboarding steps outlined in the [Enable evaluation](eval-defender-endpoint-enable-eval.md) section, you should see the devices in the Device inventory list approximately after an hour. 
 
 When you see your onboarded devices you can then proceed with trying out capabilities. 
 
-## Step 2. Try out capabilities
+## Step 2: Try out capabilities
 Now that you've completed onboarding some devices and verified that they are reporting to the service, familiarize yourself with the product by trying out the powerful capabilities that are available right out of the box.
 
 During the pilot, you can easily get started with trying out some of the features to see the product in action without going through complex configuration steps.
