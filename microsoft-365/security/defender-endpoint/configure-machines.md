@@ -67,7 +67,7 @@ Before you can ensure your devices are configured properly, enroll them to Intun
 
 ## Obtain required permissions
 
-By default, only users who have been assigned the Global Administrator or the Intune Service Administrator role on Azure AD can manage and assign the device configuration profiles needed for onboarding devices and deploying the security baseline.
+By default, only users who have been assigned the Global Administrator or the Intune Service Administrator role on Microsoft Entra ID can manage and assign the device configuration profiles needed for onboarding devices and deploying the security baseline.
 
 If you have been assigned other roles, ensure you have the necessary permissions:
 
