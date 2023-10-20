@@ -16,7 +16,7 @@ ms.date: 09/26/2023
 # Data, Privacy, and Security for Microsoft 365 Copilot
 
 > [!IMPORTANT]
-> The information in this article only applies to the [Microsoft 365 Copilot Early Access Program](/microsoft-365/admin/security-copilot/m365-early-access-program), an invite-only paid preview program for commercial customers. Details are subject to change.
+> The information in this article only applies to the [Microsoft 365 Copilot Early Access Program](microsoft-365-early-access-program.yml), an invite-only paid preview program for commercial customers. Details are subject to change.
 
 Microsoft 365 Copilot is a sophisticated processing and orchestration engine that provides AI-powered productivity capabilities by coordinating the following components:
 
