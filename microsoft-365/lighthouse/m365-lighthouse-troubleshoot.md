@@ -85,6 +85,12 @@ For customers with DAP relationships, the partner admin will need to assign you 
 
 **Resolution:** Make sure that an admin from your partner tenant with the appropriate permissions has assigned you to the correct GDAP security group in Azure AD. Also, keep in mind that some actions in Lighthouse require you to be a Global admin. To learn more about the GDAP roles and what each role can do, see [Overview of permissions in Microsoft 365 Lighthouse](m365-lighthouse-overview-of-permissions.md). For a detailed description of all Azure AD built-in roles and permissions for GDAP, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
 
+### Some Partner users are missing when configuring alerts or assigning users to Security Groups in GDAP Setup
+
+**Cause:** The "User Type" field in for your account in Microsoft Entra ID is blank
+
+**Resolution:** Make sure that an admin from your partner tenant with the appropriate permissions has set your User Type to "Member"
+
 ## GDAP setup and management
 
 ### Message when running GDAP Setup: "Failed to Create Relationship"
