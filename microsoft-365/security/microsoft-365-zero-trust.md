@@ -79,7 +79,7 @@ The first step is to build your Zero Trust foundation by configuring identity an
 
 :::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-identities.png" alt-text="Diagram that shows the process to configure Zero Trust identity and device access protection." lightbox="../media/zero-trust/m365-zero-trust-architecture-identities.png":::
 
-Go to [**_Zero Trust identity and device access protection_**](office-365-security/zero-trust-identity-device-access-policies-overview.mdd) for prescriptive guidance to accomplish this. This series of articles describes a set of identity and device access prerequisite configurations and a set of Microsoft Entra Conditional Access, Microsoft Intune, and other policies to secure access to Microsoft 365 for enterprise cloud apps and services, other SaaS services, and on-premises applications published with Microsoft Entra application proxy.
+Go to [**_Zero Trust identity and device access protection_**](office-365-security/zero-trust-identity-device-access-policies-overview.md) for prescriptive guidance to accomplish this. This series of articles describes a set of identity and device access prerequisite configurations and a set of Microsoft Entra Conditional Access, Microsoft Intune, and other policies to secure access to Microsoft 365 for enterprise cloud apps and services, other SaaS services, and on-premises applications published with Microsoft Entra application proxy.
 
 |Includes|Prerequisites|Doesn't include|
 |---------|---------|---------|

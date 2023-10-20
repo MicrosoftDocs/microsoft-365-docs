@@ -50,7 +50,7 @@ The following table lists the policies you either need to review and update or c
 |---|---|---|
 |**Starting point**|[Require MFA when sign-in risk is *medium* or *high*](zero-trust-identity-device-access-policies-common.md#require-mfa-based-on-sign-in-risk)|Include SharePoint in the assignment of cloud apps.|
 ||[Block clients that don't support modern authentication](zero-trust-identity-device-access-policies-common.md#block-clients-that-dont-support-multifactor-authentication)|Include SharePoint in the assignment of cloud apps.|
-||[Apply APP data protection policies](zero-trust-identity-device-access-policies-common.md#app-protection-policiess)|Be sure all recommended apps are included in the list of apps. Be sure to update the policy for each platform (iOS, Android, Windows).|
+||[Apply APP data protection policies](zero-trust-identity-device-access-policies-common.md#app-protection-policies)|Be sure all recommended apps are included in the list of apps. Be sure to update the policy for each platform (iOS, Android, Windows).|
 ||[Use app enforced restrictions in SharePoint](#use-app-enforced-restrictions-in-sharepoint)|Add this new policy. This tells Microsoft Entra ID to use the settings specified in SharePoint. This policy applies to all users, but only affects access to sites included in SharePoint access policies.|
 |**Enterprise**|[Require MFA when sign-in risk is *low*, *medium* or *high*](zero-trust-identity-device-access-policies-common.md#require-mfa-based-on-sign-in-risk)|Include SharePoint in the assignments of cloud apps.|
 ||[Require compliant PCs *and* mobile devices](zero-trust-identity-device-access-policies-common.md#require-compliant-pcs-and-mobile-devices)|Include SharePoint in the list of cloud apps.|

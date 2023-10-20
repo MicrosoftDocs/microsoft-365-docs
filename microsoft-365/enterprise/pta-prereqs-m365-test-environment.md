@@ -22,7 +22,7 @@ description: Create a Microsoft 365 environment to test identity and device acce
 
 *This Test Lab Guide can only be used for Microsoft 365 for enterprise test environments.*
 
-[Identity and device access configurations](../security/office-365-security/zero-trust-identity-device-access-policies-overview.m) are a set of configurations and conditional access policies to protect access to all services in Microsoft 365 for enterprise that are integrated with Microsoft Entra ID.
+[Identity and device access configurations](../security/office-365-security/zero-trust-identity-device-access-policies-overview.md) are a set of configurations and conditional access policies to protect access to all services in Microsoft 365 for enterprise that are integrated with Microsoft Entra ID.
 
 This article describes how you can configure a Microsoft 365 test environment that meets the requirements of the [Pass-through authentication prerequisite configuration](../security/office-365-security/zero-trust-identity-device-access-policies-prereq.md#prerequisites) for identity and device access.
 
