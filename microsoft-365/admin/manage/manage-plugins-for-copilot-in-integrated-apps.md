@@ -27,7 +27,7 @@ search.appverid:
 description: "Learn how to manage plugins for Copilot in Integrated Apps."
 ---
 
-# Manage Plugins for Copilot in Integrated Apps (PREVIEW)
+# Manage Plugins for Copilot in Integrated Apps 
 
 Microsoft 365 Copilot is a new experience inside Microsoft 365 that combines the power of large language models with your data and Microsoft 365 apps to capture natural language commands to produce content and analyze data. Plugins for Copilot are extensions that enable Copilot to access and use third-party apps, such as Jira, Dynamics 365, or Bing Web Search. Admins can manage plugins for Copilot in the same way as they manage any other app in the Integrated apps section of the Microsoft 365 admin center. This document explains how admins can enable, disable, assign, block, or remove plugins for Copilot for their organization, and about Copilot capabilities and data privacy.
 
