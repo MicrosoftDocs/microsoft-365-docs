@@ -70,7 +70,7 @@ The desktop teaching call-out is supported by Microsoft 365 Consumer and Commerc
 
 ## How to enable Adoption Score Organizational Messages
 
-To enable Adoption Score Organizational Message, the global administrator needs to enable Adoption Score first:
+To enable Adoption Score Organizational Messages, the global administrator needs to enable Adoption Score first:
 
 1. Sign in to the [admin center](https://admin.microsoft.com/) as a global administrator and go to **Reports** \> **Adoption Score**
 
