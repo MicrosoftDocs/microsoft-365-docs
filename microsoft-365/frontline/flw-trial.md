@@ -105,7 +105,7 @@ If you’re not sure which Microsoft 365 subscription to upgrade to, see [Micros
 
 To assign your newly acquired licenses, see [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users).  
 
-After you assign the new licenses, unassign the Teams Exploratory licenses. See [Unassign licenses from users](/microsoft-365/admin/manage/remove-licenses-from-users), for more information.
+After you assign the new licenses, unassign the Teams Exploratory licenses. See [Assign or unassign licenses for users in the Microsoft 365 admin center](../admin/manage/assign-licenses-to-users.md), for more information.
 
 ## FAQ
 
