@@ -1,5 +1,5 @@
 ---
-title: "Understand the Microsoft 365 E3 Extra Features license"
+title: "Understand Microsoft 365 E3 Extra Features licenses"
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -15,10 +15,10 @@ ms.collection:
 - scotvorg
 - Adm_o365
 search.appverid: MET150
-description: "Learn about the Microsoft 365 E3 Extra Features product and how to assign licenses for it to your users."
+description: "Learn about Microsoft 365 E3 Extra Features and how to assign licenses for it to your users."
 ms.date: 10/20/2023
 ---
-# Understand the Microsoft 365 E3 Extra Features license
+# Understand Microsoft 365 E3 Extra Features licenses
 
 > [!IMPORTANT]
 > This article only applies if you bought a Microsoft 365 E3 Original subscription through an Enterprise Agreement (EA). If this applies to you, you now see the Microsoft 365 E3 Extra Features product on the **Licenses** page in the Microsoft 365 admin center.
