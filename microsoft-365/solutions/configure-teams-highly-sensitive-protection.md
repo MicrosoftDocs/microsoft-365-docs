@@ -60,12 +60,12 @@ To allow or block guest sharing, we'll use controls available in sensitivity lab
 
 ## Authentication context
 
-We'll use an [Azure Active Directory authentication context](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#configure-authentication-contexts) to enforce more stringent access conditions when users access SharePoint sites.
+We'll use an [Microsoft Entra authentication context](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#configure-authentication-contexts) to enforce more stringent access conditions when users access SharePoint sites.
 
-First, add an authentication context in Azure Active Directory.
+First, add an authentication context in Microsoft Entra ID.
 
 To add an authentication context
-1. In [Azure Active Directory Conditional Access](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade), under **Manage**, click **Authentication context**.
+1. In [Microsoft Entra Conditional Access](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade), under **Manage**, click **Authentication context**.
 
 2. Click **New authentication context**.
 
@@ -78,7 +78,7 @@ To add an authentication context
 Next, create a conditional access policy that applies to that authentication context and that requires guests to use multifactor authentication when accessing SharePoint.
 
 To create a conditional access policy
-1. In [Azure Active Directory Conditional Access](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade), click **New policy**.
+1. In [Microsoft Entra Conditional Access](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade), click **New policy**.
 
 1. Type a name for the policy.
 
@@ -127,7 +127,7 @@ To create a sensitivity label
 1. Click **Next**.
 1. On the **Define external sharing and device access settings** page, select **Control external sharing from labeled SharePoint sites**.
 1. Under **Content can be shared with**, choose **New and existing guests** if you're allowing guest access or **Only people in your organization** if not.
-1. Select **Use Azure AD Conditional Access to protect labeled SharePoint sites**.
+1. Select **Use Microsoft Entra Conditional Access to protect labeled SharePoint sites**.
 1. Select the **Choose an existing authentication context** option, and then select the authentication context that you created from the dropdown list.
 1. Click **Next**.
 1. On the **Auto-labeling for database columns** page, click **Next**.
@@ -161,7 +161,7 @@ To restrict private channel creation
 
 ### Shared channel settings
 
-[Shared channels](/MicrosoftTeams/shared-channels) doesn't have team-level settings. The shared channel settings you configure in the Teams admin center and Azure AD will be available for all teams regardless of sensitivity.
+[Shared channels](/MicrosoftTeams/shared-channels) doesn't have team-level settings. The shared channel settings you configure in the Teams admin center and Microsoft Entra ID will be available for all teams regardless of sensitivity.
 
 ### SharePoint settings
 

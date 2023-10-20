@@ -56,13 +56,13 @@ When you investigate a specific identity, you'll see the:
 :::image type="content" source="../../media/investigate-users/Fig2-user-incident-overview.png" alt-text="A specific user's page in the Microsoft 365 Defender portal" lightbox="../../media/investigate-users/Fig2-user-incident-overview.png":::
 
 > [!NOTE]
-> The user page shows the Azure Active Directory (Azure AD) organization as well as groups, helping you understand the groups and permissions associated with a user.
+> The user page shows the Microsoft Entra organization as well as groups, helping you understand the groups and permissions associated with a user.
 
 ## Overview
 
 ### Entity details
 
-The **Entity details** on the left of the page provide information about the user, such as the Azure Active Directory (Azure AD) Identity risk level, the number of devices the user is signed in to, when the user was first and last seen, the user's accounts, groups that the user belongs to, contact information, and more. You'll see other details depending on the integration features you've enabled.
+The **Entity details** on the left of the page provide information about the user, such as the Microsoft Entra identity risk level, the number of devices the user is signed in to, when the user was first and last seen, the user's accounts, groups that the user belongs to, contact information, and more. You'll see other details depending on the integration features you've enabled.
 
 ### Visual view of incidents and alerts
 
@@ -152,7 +152,7 @@ The timeline represents activities and alerts observed from a user's identity in
 
 The following data types are available in the timeline:
 - A user's impacted alerts
-- Active Directory and Azure AD activities
+- Active Directory and Microsoft Entra activities
 - Cloud apps' events
 - Device logon events
 - Directory services changes
@@ -183,10 +183,10 @@ For example:
 
 From the Overview page, you can do these additional actions:
 
-- Enable, disable, or suspend the user in Azure AD
+- Enable, disable, or suspend the user in Microsoft Entra ID
 - Direct user to do certain actions such as require the user to sign in again or force password reset
 - Reset investigation priority score for the user
-- View Azure AD account settings, related governance, the user's owned files, or the user's shared files
+- View Microsoft Entra account settings, related governance, the user's owned files, or the user's shared files
 
 :::image type="content" source="../../media/investigate-users/Fig6-user-incident-actions.png" alt-text="The actions for remediation for a user in the Microsoft 365 Defender portal" lightbox="../../media/investigate-users/Fig6-user-incident-actions.png":::
 

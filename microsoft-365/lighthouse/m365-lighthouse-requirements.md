@@ -53,7 +53,7 @@ To view customer tenant devices on the device management pages, an MSP must:
 
 ## Requirements for enabling user management
 
-For customer data to show up in reports on user management pages, including Risky users, Multifactor authentication, and Password reset, customer tenants must have licenses for Azure Active Directory Premium P1 or later. Azure AD Premium P1 is included with Microsoft 365 Business Premium and Microsoft 365 E3. Azure AD Premium P2 is included with Microsoft 365 E5.
+For customer data to show up in reports on user management pages, including Risky users, Multifactor authentication, and Password reset, customer tenants must have licenses for Microsoft Entra ID P1 or later. Microsoft Entra ID P1 is included with Microsoft 365 Business Premium and Microsoft 365 E3. Microsoft Entra ID P2 is included with Microsoft 365 E5.
 
 ## Requirements for enabling threat management
 

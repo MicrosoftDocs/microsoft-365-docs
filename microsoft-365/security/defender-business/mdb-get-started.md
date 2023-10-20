@@ -52,7 +52,7 @@ Use the navigation bar on the left side of the screen to access your incidents, 
 | **Health** | Enables you to view your service health status and plan for upcoming changes. <br/>- Select **Service health** to view the health status of the Microsoft 365 services that are included in your company's subscription.<br/>- Select **Message center** to learn about planned changes and what to expect.  |
 | **Permissions** | Enables you to assign permissions to the people in your company who manage your security and to view incidents and reports in the Microsoft 365 Defender portal. Also enables you to set up and manage device groups to onboard your company's devices and assign threat protection policies.  |
 | **Settings** | Enables you to edit settings for the Microsoft 365 Defender portal and Defender for Business. For example, you can onboard (or offboard) your company's devices (also referred to as endpoints). You can also define rules, such as alert-suppression rules, and set up indicators to block or allow certain files or processes.  |
-| **More resources** | Navigate to other portals, such as Azure Active Directory. But keep in mind that the Microsoft 365 Defender portal should meet your needs without requiring you to navigate to other portals. |
+| **More resources** | Navigate to other portals, such as Microsoft Entra ID. But keep in mind that the Microsoft 365 Defender portal should meet your needs without requiring you to navigate to other portals. |
 | **Customize your navigation pane** | Select this option to hide or display options in your navigation bar. |
 
 ## Next steps

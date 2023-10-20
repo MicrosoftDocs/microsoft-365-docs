@@ -38,7 +38,7 @@ Modern authentication is an umbrella term for a combination of authentication an
 
 - **Authentication methods**: Multifactor authentication (MFA); smart card authentication; client certificate-based authentication
 - **Authorization methods**: Microsoft's implementation of Open Authorization (OAuth)
-- **Conditional access policies**: Mobile Application Management (MAM) and Azure Active Directory (Azure AD) Conditional Access
+- **Conditional access policies**: Mobile Application Management (MAM) and Microsoft Entra Conditional Access
 
 Managing user identities with modern authentication gives administrators many different tools to use when it comes to securing resources and offers more secure methods of identity management to both on-premises (Exchange and Skype for Business), Exchange hybrid, and Skype for Business hybrid/split-domain scenarios.
 
@@ -52,13 +52,13 @@ For more information about modern authentication in Office 365, see [Office 365 
 ## What changes when I use modern authentication?
 <a name="BKMK_WhatChanges"> </a>
 
-When using modern authentication with on-premises Skype for Business or Exchange server, you're still *authenticating* users on-premises, but the story of *authorizing* their access to resources (like files or emails) changes. This is why, though modern authentication is about client and server communication, the steps taken during configuring MA result in evoSTS (a Security Token Service used by Azure AD) being set as Auth Server for Skype for Business and Exchange server on-premises.
+When using modern authentication with on-premises Skype for Business or Exchange server, you're still *authenticating* users on-premises, but the story of *authorizing* their access to resources (like files or emails) changes. This is why, though modern authentication is about client and server communication, the steps taken during configuring MA result in evoSTS (a Security Token Service used by Microsoft Entra ID) being set as Auth Server for Skype for Business and Exchange server on-premises.
 
 The change to evoSTS allows your on-premises servers to take advantage of OAuth (token issuance) for authorizing your clients, and also lets your on-premises use security methods common in the cloud (like Multi-factor Authentication). Additionally, the evoSTS issues tokens that allow users to request access to resources without supplying their password as part of the request. No matter where your users are homed (of online or on-premises), and no matter which location hosts the needed resource, EvoSTS will become the core of authorizing users and clients once modern authentication is configured.
 
-For example, if a Skype for Business client needs to access Exchange server to get calendar information on behalf of a user, it uses the Microsoft Authentication Library (MSAL) to do so. MSAL is a code library designed to make secured resources in your directory available to client applications using OAuth security tokens. MSAL works with OAuth to verify claims and to exchange tokens (rather than passwords), to grant a user access to a resource. In the past, the authority in a transaction like this one--the server that knows how to validate user claims and issue the needed tokens--might have been a Security Token Service on-premises, or even Active Directory Federation Services. However, modern authentication centralizes that authority by using Azure AD.
+For example, if a Skype for Business client needs to access Exchange server to get calendar information on behalf of a user, it uses the Microsoft Authentication Library (MSAL) to do so. MSAL is a code library designed to make secured resources in your directory available to client applications using OAuth security tokens. MSAL works with OAuth to verify claims and to exchange tokens (rather than passwords), to grant a user access to a resource. In the past, the authority in a transaction like this one--the server that knows how to validate user claims and issue the needed tokens--might have been a Security Token Service on-premises, or even Active Directory Federation Services. However, modern authentication centralizes that authority by using Microsoft Entra ID.
 
-This also means that even though your Exchange server and Skype for Business environments may be entirely on-premises, the authorizing server will be online, and your on-premises environment must have the ability to create and maintain a connection to your Office 365 subscription in the Cloud (and the Azure AD instance that your subscription uses as its directory).
+This also means that even though your Exchange server and Skype for Business environments may be entirely on-premises, the authorizing server will be online, and your on-premises environment must have the ability to create and maintain a connection to your Office 365 subscription in the Cloud (and the Microsoft Entra instance that your subscription uses as its directory).
 
 What doesn't change? Whether you're in a split-domain hybrid or using Skype for Business and Exchange server on-premises, all users must first authenticate *on-premises*. In a hybrid implementation of modern authentication, _Lyncdiscovery_ and _Autodiscovery_ both point to your on-premises server.
 
@@ -159,8 +159,8 @@ Verify and check these items off your list before you continue:
 - **General prerequisites**
   - Resource forest scenarios will require a two-way trust with the account forest to ensure proper SID lookups are performed during hybrid modern authentication requests. 
   - If you use AD FS, you should have Windows 2012 R2 AD FS 3.0 and above for federation.
-  - Your identity configurations are any of the types supported by Azure AD Connect, such as password hash sync, pass-through authentication, and on-premises STS supported by Office 365.
-  - You have Azure AD Connect configured and functioning for user replication and sync.
+  - Your identity configurations are any of the types supported by Microsoft Entra Connect, such as password hash sync, pass-through authentication, and on-premises STS supported by Office 365.
+  - You have Microsoft Entra Connect configured and functioning for user replication and sync.
   - You have verified that hybrid is configured using Exchange Classic Hybrid Topology mode between your on-premises and Office 365 environment. Official support statement for Exchange hybrid says you must have either current CU or current CU - 1.
     > [!NOTE]
     > Hybrid modern authentication is not supported with the [Hybrid Agent](/exchange/hybrid-deployment/hybrid-agent).
@@ -171,7 +171,7 @@ Verify and check these items off your list before you continue:
 ## What else do I need to know before I begin?
 <a name="BKMK_Whatelse"> </a>
 
-- All the scenarios for on-premises servers involve setting up modern authentication on-premises (in fact, for Skype for Business there is a list of supported topologies) so that the server responsible for authentication and authorization is in the Microsoft Cloud (Azure AD's security token service, called 'evoSTS'), and updating Azure AD about the URLs or namespaces used by your on-premises installation of either Skype for Business or Exchange. Therefore, on-premises servers take on a Microsoft Cloud dependency. Taking this action could be considered configuring 'hybrid auth'.
+- All the scenarios for on-premises servers involve setting up modern authentication on-premises (in fact, for Skype for Business there is a list of supported topologies) so that the server responsible for authentication and authorization is in the Microsoft Cloud (Microsoft Entra ID's security token service, called 'evoSTS'), and updating Microsoft Entra ID about the URLs or namespaces used by your on-premises installation of either Skype for Business or Exchange. Therefore, on-premises servers take on a Microsoft Cloud dependency. Taking this action could be considered configuring 'hybrid auth'.
 - This article links out to others that will help you choose supported modern authentication topologies (necessary only for Skype for Business), and how-to articles that outline the setup steps, or steps to disable modern authentication, for Exchange on-premises and Skype for Business on-premises. Favorite this page in your browser if you're going to need a home-base for using modern authentication in your server environment.
 
 ## Related Topics
