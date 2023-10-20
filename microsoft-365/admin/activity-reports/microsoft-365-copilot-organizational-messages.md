@@ -52,7 +52,7 @@ The global administrator can assign the Organizational Messages Writer role to a
 
 ## Prerequisites
 
-There are certain policies that will block the delivery of organizational messages to your employees if not configured properly. To learn how to adjust all policy settings within [Microsoft Intune](https://intune.microsoft.com/) so that delivery to your users works as intended, see [Prerequisites for organizational messages](/mem/intune/remote-actions/organizational-messages-prerequisites#policy-requirements).
+There are certain policies, if not configured properly, that can block the delivery of organizational messages to your employees. For guidance on adjusting all policy settings within [Microsoft Intune](https://intune.microsoft.com/) and to ensure that delivery to your users works as intended, see [Prerequisites for organizational messages](/mem/intune/remote-actions/organizational-messages-prerequisites#policy-requirements).
 
 ## Getting started
 
