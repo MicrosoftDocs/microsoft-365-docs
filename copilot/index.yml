@@ -35,6 +35,8 @@ additionalContent:
               url: /microsoft-365/compliance/dlp-learn-about-dlp
             - text: Microsoft 365 Copilot Service Description
               url: /office365/servicedescriptions/office-365-platform-service-description/microsoft-365-copilot/
+            - text: Recommended secure document policies
+              url: index.yml
         # Card
         - title: Get started with Microsoft 365 Copilot
           links:
@@ -49,7 +51,18 @@ additionalContent:
             - text: Drive adoption
               url: https://adoption.microsoft.com/Copilot/
         # Card
-        - title: Manage and extend Copilot
+        - title: Security, privacy, and compliance of Microsoft 365 Copilot
+          links:
+            - text: Data, Privacy, and Security
+              url: microsoft-365-copilot-privacy.md
+            - text: Zero trust guidance
+              url: index.yml
+            - text: Protect and manage Copilot interactions with Microsoft Purview
+              url: index.yml
+            - text: ADR
+              url: index.yml
+        # Card
+        - title: Manage and extend Microsoft 365 Copilot
           links:
             - text: Related admin controls
               url: /microsoft-365/solutions/tenant-management-overview
@@ -58,23 +71,7 @@ additionalContent:
             - text: Manage extensions
               url: index.yml
         # Card
-        - title: Security, privacy, and compliance
-          links:
-            - text: Data, Privacy, and Security for Microsoft 365 Copilot
-              url: microsoft-365-copilot-privacy.md
-            - text: Zero trust guidance
-              url: index.yml
-            - text: Protect and manage Copilot interactions with Microsoft Purview
-              url: index.yml
-        # Card
-        - title: End user content
-          links:
-            - text: Copilot capabilities
-              url: https://support.microsoft.com/copilot
-            - text: Copilot lab
-              url: https://copilot.cloud.microsoft
-        # Card
-        - title: Learning and skilling
+        - title: Get trained on Microsoft 365 Copilot
           links:
             - text: Getting ready for Microsoft 365 Copilot learning path
               url: /training/paths/prepare-your-organization-microsoft-365-copilot/
@@ -83,10 +80,17 @@ additionalContent:
             - text: 30-day challenge
               url: index.yml
         # Card
-        - title: Video library
+        - title: Video library of Microsoft 365 Copilot content
           links:
             - text: Mechanics Copilot playlist
               url: https://www.youtube.com/playlist?list=PLXtHYVsvn_b-NeN9BbLb5sLpIGfdP8j78
             - text: Microsoft 365 Copilot - Security & Privacy
               url: index.yml
+        # Card
+        - title: End user content about Microsoft 365 Copilot
+          links:
+            - text: Copilot capabilities
+              url: https://support.microsoft.com/copilot
+            - text: Copilot lab
+              url: https://copilot.cloud.microsoft
 
