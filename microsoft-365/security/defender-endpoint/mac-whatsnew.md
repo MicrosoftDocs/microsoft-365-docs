@@ -36,9 +36,9 @@ For more information on Microsoft Defender for Endpoint on other operating syste
 - - [What's new in Microsoft Defender for Endpoint on Linux](linux-whatsnew.md)
 - - [What's new in Microsoft Defender for Endpoint on iOS](ios-whatsnew.md)
 
-**Mac devices to soon receive built-in protection**
+**Mac devices receive built-in protection**
 
-Tamper protection will extend to macOS devices and will be turned on in block mode by default to help secure your Mac against threats. To learn more, see [Protect macOS security settings with tamper protection](built-in-protection.md).
+Tamper protection is turned on in block mode by default to help secure your Mac against threats. To learn more, see [Protect macOS security settings with tamper protection](built-in-protection.md).
 
 **Network protection available for macOS**
 
@@ -48,16 +48,27 @@ Network protection for macOS is now available for all Mac devices onboarded to D
 
 Apple has fixed an issue on macOS [Ventura upgrade](<https://developer.apple.com/documentation/macos-release-notes/macos-13_1-release-notes>), which is fixed with the latest OS update. The issue impacts Microsoft Defender for Endpoint security extensions, and might result in losing Full Disk Access Authorization, impacting its ability to function properly.
 
-
 **Sonoma support**
 
-Microsoft Defender supports macOS Sonoma (14.0) as Apple made it generally available (September 26th, 2023).
+Microsoft Defender supports macOS Sonoma (14.0) in the current Defender release.
 
 **macOS Deprecation**
 
 Microsoft Defender for Endpoint no longer supports these macOS as Apple ended support for:
-Catalina (10.15) in December 2022.
-Mojave (10.14) in October 2021.
+- Big Sur (11) in December 2023.
+- Catalina (10.15) in December 2022.
+
+### Oct-2023 (Build: 101.23082.0018  | Release version: 20.123082.18.0)
+
+| Build:             | **101.23082.0018**         |
+|--------------------|----------------------------|
+| Release version:   | **20.123082.18.0**         |
+| Engine version:    | **1.1.23070.1002**         |
+| Signature version: | **1.399.384.0**            |
+
+- [[device control](mac-device-control-overview.md)] Detailed status with `mdatp health --details device_control`
+- [[device control](mac-device-control-overview.md)] `mdatp config device-control policy` to [set policy](mac-device-control-manual.md) on a non-managed machine
+- Bug and performance fixes
 
 ### Sep-2023 (Build: 101.23072.0025 | Release version: 20.123072.25.0)
 

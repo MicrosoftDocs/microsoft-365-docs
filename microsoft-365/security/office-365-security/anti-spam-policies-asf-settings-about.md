@@ -47,7 +47,7 @@ For each ASF setting, the following options are available in anti-spam policies:
 
 - **On**: ASF adds the corresponding X-header field to the message, and marks the message as **Spam** (SCL 5 or 6 for [Increase spam score settings](#increase-spam-score-settings)) or **High confidence spam** (SCL 9 for [Mark as spam settings](#mark-as-spam-settings)).
 - **Off**: The ASF setting is disabled. This is the default value.
-- **Test**: ASF adds the corresponding X-header field to the message. What happens to the message is determined by the **Test mode** (_TestModeAction_) value:
+- **Test**: The ASF setting is in Test Mode. What happens to the message is determined by the **Test mode** (_TestModeAction_) value:
   - **None**: Message delivery is unaffected by the ASF detection. The message is still subject to other types of filtering and rules in EOP and Defender for Office 365.
   - **Add default X-header text (_AddXHeader_)**: The X-header value `X-CustomSpam: This message was filtered by the custom spam filter option` is added to the message. You can use this value in Inbox rules (not mail flow rules) to affect the delivery of the message.
   - **Send Bcc message (_BccMessage_)**: The specified email addresses (the _TestModeBccToRecipients_ parameter value in PowerShell) are added to the Bcc field of the message, and the message is delivered to the additional Bcc recipients. In the Microsoft 365 Defender portal, you separate multiple email addresses by semicolons (;). In PowerShell, you separate multiple email addresses by commas.

@@ -43,7 +43,7 @@ Use the following steps to enable the evaluation for Microsoft Defender for Endp
 - [Step 2. Onboard endpoints](#step-2-onboard-endpoints-using-any-of-the-supported-management-tools)
 
 
-## Step 1. Check license state
+## Step 1: Check license state
 
 You'll first need to check the license state to verify that it was properly provisioned. You can do this through the admin center or through the **Microsoft Azure portal**.
 
@@ -59,7 +59,7 @@ You'll first need to check the license state to verify that it was properly prov
     :::image type="content" source="../../media/defender/atp-billing-subscriptions.png" alt-text="The Billing licenses page in the Microsoft Azure portal" lightbox="../../media/defender/atp-billing-subscriptions.png":::
     
 
-## Step 2. Onboard endpoints using any of the supported management tools
+## Step 2: Onboard endpoints using any of the supported management tools
 
 After verifying that the license state has been provisioned properly, you can start onboarding devices to the service. 
 

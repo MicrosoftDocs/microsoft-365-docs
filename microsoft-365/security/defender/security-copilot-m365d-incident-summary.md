@@ -35,7 +35,7 @@ ms.date: 10/10/2023
 > [!IMPORTANT]
 > The information in this article only applies to the Microsoft Security Copilot Early Access Program, an invite-only paid preview program for commercial customers. Some information in this article relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-Microsoft 365 Defender applies the capabilities of [Microsoft Security Copilot](/security-copilot/microsoft-copilot-overview) to summarize incidents, delivering impactful information and insights to simplify investigation tasks. Attack investigation is a crucial step for incident response teams to successfully defend an organization against further damage from a cyber threat. Investigations can oftentimes be time-consuming since it involves numerous steps. Incident response teams need to understand how the attack happened: sort through numerous alerts, identify which assets and entities are involved, and assess the scope and impact of an attack.
+Microsoft 365 Defender applies the capabilities of [Microsoft Security Copilot](/security-copilot/microsoft-security-copilot) to summarize incidents, delivering impactful information and insights to simplify investigation tasks. Attack investigation is a crucial step for incident response teams to successfully defend an organization against further damage from a cyber threat. Investigations can oftentimes be time-consuming since it involves numerous steps. Incident response teams need to understand how the attack happened: sort through numerous alerts, identify which assets and entities are involved, and assess the scope and impact of an attack.
 
 Incident responders can easily gain the right context to investigate and remediate incidents through Microsoft 365 Defender's correlation capabilities and Security Copilot's AI-powered data processing and contextualization. With an incident summary, responders can quickly get important information to help in their investigation.
 
@@ -43,7 +43,7 @@ This guide outlines what to expect and how to access the summarizing capability 
 
 ## Technical requirements
 
-[Learn about the requirements for Security Copilot to get started](/security-copilot/microsoft-365-copilot-requirements).
+[Learn how you can get started with Security Copilot](/security-copilot/get-started-security-copilot).
 
 ## Summarize an incident
 
@@ -58,7 +58,7 @@ Incidents containing up to 100 alerts can be summarized into one incident summar
 
 To summarize an incident, perform the following steps:
 
-1. Navigate to the incident queue in **Incidents and Alerts** and select an incident. Once the incident page loads, Security Copilot automatically creates an incident summary. You can stop the summary creation by selecting **Cancel** or restart creation by selecting **Regenerate**.
+1. Open an incident page. Security Copilot automatically creates an incident summary upon opening the page. You can stop the summary creation by selecting **Cancel** or restart creation by selecting **Regenerate**.
 :::image type="content" source="../../media/copilot-in-defender/incident-summary/fig1-sec-copilot-m365d-summarize.png" alt-text="Screenshot highlighting the automatic incident summary generation by Security Copilot pane in the Microsoft 365 Defender incident page." lightbox="../../media/copilot-in-defender/incident-summary/fig1-expanded-sec-copilot-m365d-summarize.png":::
 2. The incident summary card loads on the Security Copilot pane in the incident page. Review the generated summary on the card.
 :::image type="content" source="../../media/copilot-in-defender/incident-summary/fig2-sec-copilot-m365d-summarize.png" alt-text="Screenshot of the incident summary card on the Security Copilot pane as seen in the Microsoft 365 Defender incident page." lightbox="../../media/copilot-in-defender/incident-summary/fig2-expanded-sec-copilot-m365d-summarize.png":::

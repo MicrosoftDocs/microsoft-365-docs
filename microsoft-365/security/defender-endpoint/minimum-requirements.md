@@ -5,7 +5,7 @@ ms.service: microsoft-365-security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 09/13/2023
+ms.date: 10/11/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -32,15 +32,19 @@ There are some minimum requirements for onboarding devices to the Defender for E
 >
 > - Learn about the latest enhancements in Defender for Endpoint: [Defender for Endpoint Tech Community](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced).
 > - Defender for Endpoint demonstrated industry-leading optics and detection capabilities in the recent MITRE evaluation. Read: [Insights from the MITRE ATT&CK-based evaluation](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/).
+> - If you're looking for endpoint protection for small and medium-sized businesses, see [Microsoft Defender for Business](../defender-business/mdb-overview.md) and [Defender for Business requirements](../defender-business/mdb-requirements.md).
 
 ## Licensing requirements
 
 - [Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md) (standalone or as part of other Microsoft 365 plans)
 
+- [Microsoft Defender for Business](../defender-business/mdb-overview.md) (for small and medium-sized businesses)
+
 - To [onboard servers](onboard-windows-server.md) to the standalone versions of Defender for Endpoint, server licenses are required. You can choose from:   
 
    - Microsoft Defender for Servers Plan 1 or Plan 2 (as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction)) offering
    - Microsoft Defender for Endpoint for Servers
+   - [Microsoft Defender for Business servers](../defender-business/get-defender-business.md) (for small and medium-sized businesses only)
  
 For more detailed information about licensing requirements for Microsoft Defender for Endpoint, see [Microsoft Defender for Endpoint licensing information](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint).
 
@@ -105,6 +109,7 @@ The following operating systems require the use of the [Log Analytics](/azure/az
 > - Virtual Machines running Windows 10 Enterprise 2016 LTSB can encounter performance issues when used on non-Microsoft virtualization platforms.
 > - For virtual environments, we recommend using Windows 10 Enterprise LTSC 2019 or later.
 > - The standalone versions of [Defender for Endpoint Plan 1 and Plan 2](defender-endpoint-plan-1-2.md) do not include server licenses. To onboard servers to those plans, you'll need an additional license, such as Microsoft Defender for Servers Plan 1 or Plan 2 (as part of the [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) offering). To learn more. see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md).
+> - If your organization is a small or medium-sized business, see [Microsoft Defender for Business requirements](../defender-business/mdb-requirements.md). 
 
 ### Hardware requirements
 

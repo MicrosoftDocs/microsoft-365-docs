@@ -51,7 +51,7 @@ Use the settings below to control who can use Bookings, decide on what Bookings 
 :::image type="content" source="../media/bookings-granular-controls.png" alt-text="Screenshot of settings that allow you to control who can use Bookings, decide what Bookings info is shared, staff approval, and naming policy.":::
 
 >[!NOTE]
-> Changes to all tenant settings, such as "block bookings from outside the organization" or "require staff approvals," may take up to 30 minutes to apply.
+> Changes to all tenant settings, such as "block bookings from outside the organization" or "require staff approvals," may take up to four hours to apply.
 
 ### Block bookings from outside your organization
 

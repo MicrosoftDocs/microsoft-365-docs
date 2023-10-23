@@ -16,7 +16,7 @@ ms.date: 09/26/2023
 # Data, Privacy, and Security for Microsoft 365 Copilot
 
 > [!IMPORTANT]
-> The information in this article only applies to the [Microsoft 365 Copilot Early Access Program](/microsoft-365/admin/security-copilot/m365-early-access-program), an invite-only paid preview program for commercial customers. Details are subject to change.
+> The information in this article only applies to the [Microsoft 365 Copilot Early Access Program](microsoft-365-early-access-program.yml), an invite-only paid preview program for commercial customers. Details are subject to change.
 
 Microsoft 365 Copilot is a sophisticated processing and orchestration engine that provides AI-powered productivity capabilities by coordinating the following components:
 
@@ -70,7 +70,7 @@ When you have data that's encrypted by Microsoft Purview Information Protection,
 
 We already implement multiple forms of protection to help prevent customers from compromising Microsoft 365 services and applications or gaining unauthorized access to other tenants or the Microsoft 365 system itself. Here are some examples of those forms of protection:
 
-- Logical isolation of customer content within each tenant for Microsoft 365 services is achieved through Microsoft Entra ID authorization and role-based access control. For more information, see [Microsoft 365 isolation controls](/compliance/assurance/assurance-microsoft-365-isolation-controls).
+- Logical isolation of customer content within each tenant for Microsoft 365 services is achieved through Microsoft Entra authorization and role-based access control. For more information, see [Microsoft 365 isolation controls](/compliance/assurance/assurance-microsoft-365-isolation-controls).
 
 - Microsoft uses rigorous physical security, background screening, and a multi-layered encryption strategy to protect the confidentiality and integrity of customer content.
 

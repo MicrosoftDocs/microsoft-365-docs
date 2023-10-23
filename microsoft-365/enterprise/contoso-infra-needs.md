@@ -119,7 +119,7 @@ The Contoso IT department determined the following mapping of business needs to 
 |  | Improve productivity for remote and mobile workers | Microsoft 365 workloads and cloud-based data |
 |  | Increase creativity and innovation | Windows Ink, Cortana at Work, PowerPoint |
 | Security |  |  |
-|  | Identity & access management | Dedicated global administrator accounts with Azure AD Multi-Factor Authentication (MFA) and Azure AD Privileged Identity Management (PIM) <br> MFA for all user accounts <br> Conditional Access <br> Security Reader <br> Windows Hello <br> Windows Credential Guard |
+|  | Identity & access management | Dedicated global administrator accounts with Microsoft Entra multifactor authentication (MFA) and Microsoft Entra Privileged Identity Management (PIM) <br> MFA for all user accounts <br> Conditional Access <br> Security Reader <br> Windows Hello <br> Windows Credential Guard |
 |  | Threat protection | Advanced Threat Analytics <br> Windows Defender <br> Defender for Office 365 <br> Microsoft Defender for Office 365 <br> Microsoft 365 threat investigation and response <br> |
 |  | Information protection | Azure Information Protection <br> Data Loss Prevention (DLP) <br> Windows Information Protection (WIP) <br> Microsoft Defender for Cloud Apps <br> Microsoft Intune |
 |  | Security management | Microsoft Defender for Cloud  <br> Windows Defender Security Center |
