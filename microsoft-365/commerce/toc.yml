@@ -34,10 +34,8 @@
   items:
     - name: Buy or remove subscription licenses
       href: licenses/buy-licenses.md
-    - name: Assign licenses to users
+    - name: Assign or unassign licenses for users
       href: ../admin/manage/assign-licenses-to-users.md
-    - name: Unassign licenses from users
-      href: ../admin/manage/remove-licenses-from-users.md
     - name: Move users to a different subscription
       href: subscriptions/move-users-different-subscription.md
     - name: Manage ISV app licenses
