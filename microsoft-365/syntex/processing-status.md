@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: ssquires
-ms.date: 10/15/2023
+ms.date: 10/23/2023
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -13,7 +13,6 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-ROBOTS: NOINDEX, NOFOLLOW
 description: Learn how to use the processing status column in a SharePoint document library with Microsoft Syntex.
 ---
 
