@@ -213,7 +213,7 @@ When **Monitor reported messages in Outlook** is selected and you also select **
 
 - **Reported message destinations** section \> **Add an Exchange Online mailbox to send reported messages to**: Click in the box to find and select an existing Exchange Online mailbox to use as the reporting mailbox that holds user-reported messages from third-party reporting tools. In organizations with Defender for Office 365 Plan 2, [Automatic investigation and response to threats](air-about.md), is triggered which automatically carries out the analysis and clean up actions for you.
 
-  Messages can appear on the **User reported settings** tab of the **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=user>. The **Result** value for these entries is **Not Submitted to Microsoft**. The message formatting requirements are described in the next section. 
+  Messages can appear on the **User reported settings** tab of the **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=user>. The **Result** value for these entries is **Not Submitted to Microsoft**. The message formatting requirements are described in the next section.
 
 - **Report from quarantine** section \> **Allow reporting for quarantined messages**: Verify that this setting is selected to let users report messages from quarantine as they [release quarantined email messages](quarantine-end-user.md#release-quarantined-email). Otherwise, uncheck this setting.
 
