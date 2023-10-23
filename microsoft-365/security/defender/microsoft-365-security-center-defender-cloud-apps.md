@@ -161,9 +161,7 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 > [!NOTE]
 > This feature is now available in public preview.
 
-1. Sign into Microsoft 365 Defender as a Global administrator
-Security administrator
-Security Operator.
+1. Sign into Microsoft 365 Defender as a Global administrator, Security administrator, or Security Operator.
 
 1. Select **Settings** > **Cloud apps** > **Preview features** > **Enable preview features**.
 
