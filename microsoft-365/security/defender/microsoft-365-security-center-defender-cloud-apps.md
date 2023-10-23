@@ -10,8 +10,8 @@ f1.keywords:
 - NOCSH
 ms.author: bagol
 author: batamig
-manager: dansimp
-ms.date: 08/04/2022
+manager: raynew
+ms.date: 10/23/2023
 audience: ITPro
 ms.topic: conceptual
 search.appverid: 
@@ -134,9 +134,25 @@ Global search in Microsoft 365 Defender (using the search bar at the top of the 
 
 As part of the creation of a dedicated **Assets** section that spans the entire Microsoft 365 Defender experience, the **Users and Accounts** section of Defender for Cloud Apps is rebranded as the **Identities** section. No changes to functionality are expected.
 
-### Redirecting accounts from Microsoft Defender for Cloud Apps to Microsoft 365 Defender
+### Redirection from the classic Microsoft Defender for Cloud Apps portal to Microsoft 365 Defender
 
-You can route accounts to Microsoft 365 Defender by enabling automatic redirection from the former Microsoft Defender for Cloud Apps portal. For more information, see [Redirecting accounts from Microsoft Defender for Cloud Apps to Microsoft 365 Defender](microsoft-365-security-mda-redirection.md).
+Customers still using the classic Microsoft Defender for Cloud Apps portal are now all automatically redirected to Microsoft 365. Admins can still update the redirect setting as needed to continue using the classic Defender for Cloud Apps portal.
+
+> [!NOTE]
+> If something isn't working for you or if there's anything you're unable to complete through Microsoft 365 Defender, we want to hear about it. If you've encountered any issues with redirection, we encourage you to let us know by using the Give feedback submission form.
+>
+
+**To revert to the former Microsoft Defender for Cloud Apps portal**:
+
+1. Sign in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> as a global administrator, security administrator or Cloud App Security administrator in Azure Active directory, or a local global admin in Microsoft Defender for Cloud Apps.
+
+1. Navigate to **Settings** > **Cloud Apps** > **System** > **Redirection to Microsoft 365 Defender** or [go directly to the Redirection setting](https://security.microsoft.com/cloudapps/settings?tabid=autoRedirection).
+
+1. Toggle the **Automatic redirection** setting to **Off**.
+
+Once toggled off, accounts are no longer routed to *security.microsoft.com*. Active user sessions are not terminated, and the updates are applied only after the user ends their current session or opens a new tab.
+
+The update might take effect almost immediately in some accounts, but may take longer to propagate to every account in your organization. This setting can be turned back on again at any time.
 
 ### Preview features in Defender for Cloud Apps
 
@@ -145,16 +161,20 @@ Turn on the preview experience setting to be among the first to try upcoming fea
 > [!NOTE]
 > This feature is now available in public preview.
 
-1. In the navigation pane, select **Settings**.
-1. Select **Cloud apps**.
-1. Select **Preview features** > **Enable preview features**.
-1. Select **Save**.
+1. Sign into Microsoft 365 Defender as a Global administrator
+Security administrator
+Security Operator.
 
-You'll know you have preview features turned on when you see that the **Enable preview features** check box is selected.
+1. Select **Settings** > **Cloud apps** > **Preview features** > **Enable preview features**.
+
+1. Select **Save** to save your changes.
+
+You'll know you have preview features turned on when you see that the **Enable preview features** check box is selected. For example:
 
 :::image type="content" source="../../media/preview-features.png" alt-text="Screenshot that shows how to enable preview features.":::
 
 For more information, see [Microsoft Defender for Cloud Apps preview features](/defender-cloud-apps/preview-features).
+
 
 ## Related videos
 
