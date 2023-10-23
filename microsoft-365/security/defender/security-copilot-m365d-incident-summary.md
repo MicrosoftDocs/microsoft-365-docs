@@ -43,7 +43,7 @@ This guide outlines what to expect and how to access the summarizing capability 
 
 ## Technical requirements
 
-[Learn about the requirements for Security Copilot to get started](/security-copilot/get-started-security-copilot).
+[Learn how you can get started with Security Copilot](/security-copilot/get-started-security-copilot).
 
 ## Summarize an incident
 
@@ -58,7 +58,7 @@ Incidents containing up to 100 alerts can be summarized into one incident summar
 
 To summarize an incident, perform the following steps:
 
-1. Navigate to the incident queue in **Incidents and Alerts** and select an incident. Once the incident page loads, Security Copilot automatically creates an incident summary. You can stop the summary creation by selecting **Cancel** or restart creation by selecting **Regenerate**.
+1. Open an incident page. Security Copilot automatically creates an incident summary upon opening the page. You can stop the summary creation by selecting **Cancel** or restart creation by selecting **Regenerate**.
 :::image type="content" source="../../media/copilot-in-defender/incident-summary/fig1-sec-copilot-m365d-summarize.png" alt-text="Screenshot highlighting the automatic incident summary generation by Security Copilot pane in the Microsoft 365 Defender incident page." lightbox="../../media/copilot-in-defender/incident-summary/fig1-expanded-sec-copilot-m365d-summarize.png":::
 2. The incident summary card loads on the Security Copilot pane in the incident page. Review the generated summary on the card.
 :::image type="content" source="../../media/copilot-in-defender/incident-summary/fig2-sec-copilot-m365d-summarize.png" alt-text="Screenshot of the incident summary card on the Security Copilot pane as seen in the Microsoft 365 Defender incident page." lightbox="../../media/copilot-in-defender/incident-summary/fig2-expanded-sec-copilot-m365d-summarize.png":::

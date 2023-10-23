@@ -1727,6 +1727,11 @@
          "redirect_document_id":false
       },
       {
+         "source_path":"microsoft-365/admin/manage/remove-licenses-from-users.md",
+         "redirect_url":"/microsoft-365/admin/manage/assign-licenses-to-users",
+         "redirect_document_id":true
+      },
+      {
          "source_path":"microsoft-365/admin/dns/create-dns-records-at-bluehost.md",
          "redirect_url":"/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
          "redirect_document_id":false
@@ -2019,6 +2024,11 @@
        {
          "source_path": "microsoft-365/admin/manage/language-translation-for-message-center-posts.md",
          "redirect_url": "/microsoft-365/enterprise/view-service-health",
+         "redirect_document_id":false
+       },
+       {
+         "source_path": "microsoft-365/admin/email/resolve-issues-with-shared-mailboxes.md",
+         "redirect_url": "/microsoft-365/admin/email/about-shared-mailboxes",
          "redirect_document_id":false
        }       
    ]

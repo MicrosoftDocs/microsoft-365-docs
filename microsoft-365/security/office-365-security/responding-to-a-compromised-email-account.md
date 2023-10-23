@@ -61,7 +61,7 @@ If a user reports these symptoms or other unusual symptoms, you should investiga
 
 - **Unified audit logs in the Microsoft 365 Defender portal**: Filter the logs for activity using a date range that starts immediately before the suspicious activity occurred to today. Don't filter on specific activities during the search. For more information, see [Search the audit log](/purview/audit-log-search).
 
-- **Azure AD Sign-in logs and other risk reports in the Azure AD portal**: Examine the values in these columns:
+- **Microsoft Entra sign-in logs and other risk reports in the Microsoft Entra admin center**: Examine the values in these columns:
   - Review IP address
   - sign-in locations
   - sign-in times

@@ -50,6 +50,7 @@ This article is updated frequently to let you know what's new in the latest rele
   - eBPF sensor is now the default supplementary event provider for endpoints
   - Microsoft Intune tenant attach feature is in public preview (as of mid July)
     - You must add "*.dm.microsoft.com" to firewall exclusions for the feature to work correctly
+  - Defender for Endpoint is now available for Debian 12 and Amazon Linux 2023
   - Support to enable Signature verification of updates downloaded
     - Note that you must update the manajed.json as shown below
       ```

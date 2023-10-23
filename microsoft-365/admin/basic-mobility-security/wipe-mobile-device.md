@@ -74,7 +74,7 @@ Wipe a device for these reasons:
 
 ## What's the user and device impact?
 
-The wipe is sent immediately to the mobile device and the device is marked as not compliant in Azure active directory. While all data is removed when a device is reset to factory defaults, the following table describes what content is removed for each device type when a device when you remove company data.
+The wipe is sent immediately to the mobile device and the device is marked as not compliant in Microsoft Entra ID. While all data is removed when a device is reset to factory defaults, the following table describes what content is removed for each device type when a device when you remove company data.
 
 |Content impact|iOS|Android|
 |---|---|---|
