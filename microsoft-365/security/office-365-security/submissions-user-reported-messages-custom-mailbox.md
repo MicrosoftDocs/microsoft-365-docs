@@ -213,7 +213,7 @@ If you're using a third-party reporting button for end users (for example, KnowB
 
 When **Monitor reported messages in Outlook** is selected and you also select **Use a non-Microsoft add-in button**, the following options are available on the **User reported settings** page:
 
-- **Reported message destinations** section \> **Add an Exchange Online mailbox to send reported messages to**: Click in the box to find and select an existing Exchange Online mailbox to use as the reporting mailbox that holds user-reported messages from third-party reporting tools.
+- **Reported message destinations** section \> **Add an Exchange Online mailbox to send reported messages to**: Click in the box to find and select an existing Exchange Online mailbox to use as the reporting mailbox that holds user-reported messages from third-party reporting tools. In organizations with Defender for Office 365 Plan 2, [Automatic investigation and response to threats](air-about.md), is triggered which automatically carries out the analysis and clean up actions for you.
 
   Messages can appear on the **User reported settings** tab of the **Submissions** page at <https://security.microsoft.com/reportsubmission?viewid=user>. The **Result** value for these entries is **Not Submitted to Microsoft**. The message formatting requirements are described in the next section.
 
@@ -238,10 +238,10 @@ To correctly identify why the original messages were reported, messages sent to 
   > Messages that contain multiple attached messages are discarded.
 
 - The user reported message should contain the following required headers:
-  - 1. X-Microsoft-Antispam-Message-Info
-  - 2. Message-Id
-  - 3. X-Ms-Exchange-Organization-Network-Message-Id
-  - 4. X-Ms-Exchange-Crosstenant-Id
+  - X-Microsoft-Antispam-Message-Info
+  - Message-Id
+  - X-Ms-Exchange-Organization-Network-Message-Id
+  - X-Ms-Exchange-Crosstenant-Id
 
    > [!NOTE]
    > TenantId in `X-Ms-Exchange-Crosstenant-Id` should be the same as the tenant.
@@ -393,7 +393,7 @@ Other settings:
       [-MultiLanguagePostSubmitMessageButtonLinkForJunk "Language1 After Not Junk Info Button URL","Language2 After Not Junk Info Button URL",..."Language7 After Not Junk Info Button URL"]
       ```
 
-      - Valid language codes are available [here](/powershell/module/exchange/new-reportsubmissionpolicy#-multilanguagesetting).
+      - For valid language codes, see [New-ReportSubmissionPolicy](/powershell/module/exchange/new-reportsubmissionpolicy#-multilanguagesetting).
       - The order that you enter the language codes doesn't matter, but you must use the same order for the corresponding _MultiLanguagePre\*_ and _MultiLanguagePost\*_ parameter values.
       - A text value for each language is required in the _MultiLanguage\*SubmitMessageTitleFor\*_ and _MultiLanguage\*SubmitMessageFor\*_ parameters (for example, _MultiLanguagePreSubmitMessageTitleForPhishing_ and _MultiLanguagePreSubmitMessageForPhishing_). The corresponding _MultiLanguage\*SubmitMessageButtonTextFor\*_ and _MultiLanguage\*SubmitMessageButtonLinkFor\*_ are optional, but you must use them both together.
       - For the number of language codes that you specify, you need to provide the same number of blank values for **all** of the _MultiLanguage\*SubmitMessage\*_ parameters that you aren't using. For example, if you're using three languages, but you aren't using the _MultiLanguagePostSubmitMessageButtonTextForJunk_ and _MultiLanguagePostSubmitMessageButtonLinkForJunk_ parameters, you need to use the value `"","",""` for those parameters. You might need to add these blank values for up to 18 of the _MultiLanguage\*SubmitMessage\*_ parameters.
