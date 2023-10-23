@@ -41,8 +41,8 @@ landingContent:
             url: billing-and-payments/view-your-bill-or-invoice.md
           - text: Understand your bill or invoice
             url: billing-and-payments/understand-your-invoice.md
-          - text: Paying for your subscription with a billing profile
-            url: billing-and-payments/pay-for-subscription-billing-profile.md
+          - text: Paying for your subscription
+            url: billing-and-payments/pay-for-your-subscription.md
           - text: Manage payment methods
             url: billing-and-payments/manage-payment-methods.md
             

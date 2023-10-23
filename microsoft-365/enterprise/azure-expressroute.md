@@ -44,7 +44,7 @@ Consider the following high level network diagram, which shows a typical Microso
 
 ![Microsoft 365 network connectivity.](../media/9d8bc622-4a38-4a3b-a0f3-68657712d460.png)
 
-Now look at the updated diagram, which depicts an Microsoft 365 customer who uses both the internet and ExpressRoute to connect to Microsoft 365. Notice that some connections such as Public DNS and Content Delivery Network nodes still require the public internet connection. Also notice the customer's users who aren't located in their ExpressRoute connected building are connecting over the Internet.
+Now look at the updated diagram, which depicts a Microsoft 365 customer who uses both the internet and ExpressRoute to connect to Microsoft 365. Notice that some connections such as Public DNS and Content Delivery Network nodes still require the public internet connection. Also notice the customer's users who aren't located in their ExpressRoute connected building are connecting over the Internet.
 
 ![Microsoft 365 connectivity with ExpressRoute.](../media/251788c4-0937-4584-9b2c-df08e11611fc.png)
 
@@ -58,7 +58,7 @@ The following table lists the Microsoft 365 services that are supported over Exp
 |Exchange Online<sup>1</sup> <br/> Exchange Online Protection<sup>1</sup> <br/> Delve<sup>1</sup> <br/> |
 |Skype for Business Online<sup>1</sup> <br/> Microsoft Teams <sup>1</sup> <br/> |
 |SharePoint Online<sup>1</sup> <br/> OneDrive for Business<sup>1</sup> <br/> Project Online<sup>1</sup> <br/> |
-|Portal and shared<sup>1</sup> <br/> Azure Active Directory (Azure AD) <sup>1</sup> <br/> Azure AD Connect<sup>1</sup> <br/> Office<sup>1</sup> <br/> |
+|Portal and shared<sup>1</sup> <br/> Microsoft Entra ID <sup>1</sup> <br/> Microsoft Entra Connect<sup>1</sup> <br/> Office<sup>1</sup> <br/> |
 
 <sup>1</sup> Each of these applications has internet connectivity requirements not supported over ExpressRoute, see the [Microsoft 365 endpoints article](./urls-and-ip-address-ranges.md) for more information.
 

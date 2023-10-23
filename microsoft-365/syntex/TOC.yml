@@ -200,7 +200,10 @@
     - name: Content query
       href: metadata-search.md
 
-    - name: Content processing
+    - name: Merge and extract PDFs
+      href: merge-extract-pdf.md
+
+    - name: Processing rules
       items: 
         - name: Overview 
           href: content-processing-overview.md

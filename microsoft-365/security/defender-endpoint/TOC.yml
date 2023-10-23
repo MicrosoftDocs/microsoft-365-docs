@@ -839,6 +839,8 @@
             href: respond-machine-alerts.md#isolate-devices-from-the-network
           - name: Contain devices from the network
             href: respond-machine-alerts.md#contain-devices-from-the-network
+          - name: Contain user from the network
+            href: respond-machine-alerts.md#contain-user-from-the-network
           - name: Consult a threat expert
             href: respond-machine-alerts.md#consult-a-threat-expert
           - name: Check activity details in Action center
