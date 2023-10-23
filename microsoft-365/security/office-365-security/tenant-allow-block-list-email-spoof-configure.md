@@ -528,7 +528,7 @@ Instead, the domain or sender is added to the **Trusted senders and domains** se
 For submission instructions for impersonation false positives, see [Report good email to Microsoft](submissions-admin.md#report-good-email-to-microsoft).
 
 > [!NOTE]
-> Currently, Graph Impersonation isn't taken care of from here.
+> Currently, User (or graph) Impersonation isn't taken care of from here.
 
 ## Related articles
 
