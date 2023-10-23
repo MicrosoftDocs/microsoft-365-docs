@@ -63,7 +63,7 @@ You can activate your workloads in two ways from the Permissions and roles page:
     > The **Activate workloads** button is only available when there is it at least one workload that's not active for Microsoft 365 Defender Unified RBAC.
 
     > [!NOTE]
-    > To activate Exchange Online (EXO) permissions in Microsoft 365 Defender Unified RBAC, Exchange Online Protection (EOP) permissions must be active. EOP permissions are activated when **Defender for Office 365** the **Email and Collaboration** workload is enabled.
+    > To activate Exchange Online (EXO) permissions in Microsoft 365 Defender Unified RBAC, Exchange Online Protection (EOP) permissions must be active. EOP permissions are activated when **Defender for Office 365** in the **Email and Collaboration** workload is enabled.
 
 2. **Workload settings**
     - Select **Workload settings**.
