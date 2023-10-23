@@ -115,9 +115,24 @@ To enable communication between your devices and Defender for Endpoint, you migh
 > [!IMPORTANT]
 > The standalone versions of Defender for Endpoint Plan 1 and Plan 2 do not include server licenses. To onboard servers, you'll need an additional license, such as either [Microsoft Defender for Servers Plan 1 or Plan 2](/azure/defender-for-cloud/plan-defender-for-servers-select-plan). To learn more, see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md).
 
+## Step 5:  Capture performance baseline data from the endpoint
+
+When migrating from one antivirus product to Microsoft Defender Antivirus, helpdesk's eyes will be on what's new?  Thus, if you already had an application that was running hot (high cpu), the first troubleshooting will be to disable the Antivirus.
+
+In order to see if what you are seeins is normal or not expected, capturing performance data from the endpoints that have Defender for Endpoint installed is highly recommended. This includes process list, CPU usage (aggregate across all cores), memory usage, and  disk space availability on all mounted partitions .
+
+One of the tools that you will have at your disposal is the Performance Monitor (perfmon).
+
+Below are steps on how you could use perfmon to collect a performance baseline of your Windows or Windows Server:
+
+Setting a local perfmon in a Windows client or Windows Server.
+
+https://learn.microsoft.com/en-us/archive/blogs/yongrhee/setting-a-local-perfmon-in-a-windows-client-or-windows-server
+
 ## Next step
 
 **Congratulations**! You've completed the **Prepare** phase of [switching to Defender for Endpoint](switch-to-mde-overview.md#the-migration-process)!
 
 - [Proceed to set up Defender for Endpoint](switch-to-mde-phase-2.md).
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+
