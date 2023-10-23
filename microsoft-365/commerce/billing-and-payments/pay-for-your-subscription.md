@@ -115,7 +115,7 @@ If you have an MOSA billing account type, and you personally added the payment m
 [Check your invoice](view-your-bill-or-invoice.md) for payment instructions for your country/region. If you're not sure how much you owe, you can check your bill and billing history in the Microsoft 365 admin center, on the **Bills & payments** page, on the <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Invoices</a> tab.
 
 > [!NOTE]
-> If you must pay the membership fee for the Microsoft Partner Network (MPN) program (Action Pack subscription, Silver or Gold competencies), see [Pay the Solutions partner designation fee](/partner-center/mpn-pay-fee-silver-gold-competency.md) for information about how to make an MPN payment.
+> If you must pay the membership fee for the Microsoft Partner Network (MPN) program (Action Pack subscription, Silver or Gold competencies), see [Pay the Solutions partner designation fee](/partner-center/mpn-pay-fee-silver-gold-competency) for information about how to make an MPN payment.
 
 ## Wire transfer payment processing time
 
