@@ -32,7 +32,7 @@ Organizations that want to directly use their on-premises Active Directory Domai
 There are two phases to setting up this test environment:
 
 1.    Create the Microsoft 365 simulated enterprise test environment with password hash synchronization.
-2.    Configure Azure AD Connect on APP1 for pass-through authentication.
+2.    Configure Microsoft Entra Connect on APP1 for pass-through authentication.
     
 ![Test Lab Guides for the Microsoft cloud.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
@@ -48,23 +48,27 @@ Follow the instructions in [password hash synchronization for Microsoft 365](pas
 This configuration consists of: 
   
 - Microsoft 365 E5 trial or paid subscription.
-- A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. Azure AD Connect runs on APP1 to synchronize the TESTLAB AD DS domain to the Azure AD tenant of your Microsoft 365 subscription periodically.
+- A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. Microsoft Entra Connect runs on APP1 to synchronize the TESTLAB AD DS domain to the Microsoft Entra tenant of your Microsoft 365 subscription periodically.
 
-## Phase 2: Configure Azure AD Connect on APP1 for pass-through authentication
+<a name='phase-2-configure-azure-ad-connect-on-app1-for-pass-through-authentication'></a>
 
-In this phase, you configure Azure AD Connect on APP1 to use pass-through authentication, and then verify that it works.
+## Phase 2: Configure Microsoft Entra Connect on APP1 for pass-through authentication
 
-### Configure Azure AD Connect on APP1
+In this phase, you configure Microsoft Entra Connect on APP1 to use pass-through authentication, and then verify that it works.
+
+<a name='configure-azure-ad-connect-on-app1'></a>
+
+### Configure Microsoft Entra Connect on APP1
 
 1.    From the [Azure portal](https://portal.azure.com), sign in with your global administrator account, and then connect to APP1 with the TESTLAB\User1 account.
 
-2.    From the desktop of APP1, run Azure AD Connect.
+2.    From the desktop of APP1, run Microsoft Entra Connect.
 
 3.    On the **Welcome page**, click **Configure**.
 
 4.    On the Additional tasks page, click **Change user sign-in**, and then click **Next**.
 
-5.    On the **Connect to Azure AD** page, type your global administrator account credentials, and then click **Next**.
+5.    On the **Connect to Microsoft Entra ID** page, type your global administrator account credentials, and then click **Next**.
 
 6.    On the **User sign-in** page, click **Pass-through authentication**, and then click **Next**.
 
@@ -72,7 +76,7 @@ In this phase, you configure Azure AD Connect on APP1 to use pass-through authen
 
 8.    On the **Configuration complete** page, click **Exit**.
 
-9.    From the Azure portal, in the left pane, click **Azure Active Directory > Azure AD Connect**. Verify that the **Pass-through authentication** feature appears as **Enabled**.
+9.    From the Azure portal, in the left pane, click **Microsoft Entra ID > Microsoft Entra Connect**. Verify that the **Pass-through authentication** feature appears as **Enabled**.
 
 10.    Click **Pass-through authentication**. The **Pass-through authentication** pane lists the servers where your Authentication Agents are installed. You should see APP1 in the list. Close the **Pass-through authentication** pane.
 
@@ -91,7 +95,7 @@ Here is your resulting configuration:
 This configuration consists of:
 
 - A Microsoft 365 E5 trial or paid subscriptions with the DNS domain testlab.\<your domain name> registered.
-- A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. An Authentication Agent runs on APP1 to handle pass-through authentication requests from the Azure AD tenant of your Microsoft 365 subscription.
+- A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. An Authentication Agent runs on APP1 to handle pass-through authentication requests from the Microsoft Entra tenant of your Microsoft 365 subscription.
 
 ## Next step
 

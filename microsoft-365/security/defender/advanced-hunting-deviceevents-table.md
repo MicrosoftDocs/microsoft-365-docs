@@ -83,7 +83,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `InitiatingProcessAccountName` | `string` | User name of the account that ran the process responsible for the event |
 | `InitiatingProcessAccountSid` | `string` | Security Identifier (SID) of the account that ran the process responsible for the event |
 | `InitiatingProcessAccountUpn` | `string` | User principal name (UPN) of the account that ran the process responsible for the event |
-| `InitiatingProcessAccountObjectId` | `string` | Azure AD object ID of the user account that ran the process responsible for the event |
+| `InitiatingProcessAccountObjectId` | `string` | Microsoft Entra object ID of the user account that ran the process responsible for the event |
 | `InitiatingProcessVersionInfoCompanyName` | `string` | Company name from the version information of the process (image file) responsible for the event |
 | `InitiatingProcessVersionInfoProductName` | `string` | Product name from the version information of the process (image file) responsible for the event |
 | `InitiatingProcessVersionInfoProductVersion` | `string` | Product version from the version information of the process (image file) responsible for the event |

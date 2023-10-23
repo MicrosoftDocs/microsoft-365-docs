@@ -38,14 +38,14 @@ If you receive an error message, Microsoft 365 Defender will provide a detailed 
 
 ## No subscriptions found
 
-If while accessing Microsoft 365 Defender you get a **No subscriptions found** message, it means the Azure Active Directory (Azure AD) used to log in the user to the portal, does not have a Microsoft Defender for Endpoint license.
+If while accessing Microsoft 365 Defender you get a **No subscriptions found** message, it means the Microsoft Entra ID used to log in the user to the portal, does not have a Microsoft Defender for Endpoint license.
 
 Potential reasons:
 
 - The Windows E5 and Office E5 licenses are separate licenses.
-- The license was purchased but not provisioned to this Azure AD instance.
+- The license was purchased but not provisioned to this Microsoft Entra instance.
   - It could be a license provisioning issue.
-  - It could be you inadvertently provisioned the license to a different Microsoft Azure AD than the one used for authentication into the service.
+  - It could be you inadvertently provisioned the license to a different Microsoft Entra ID than the one used for authentication into the service.
 
 For both cases, you should contact Microsoft support at [General Microsoft Defender for Endpoint Support](https://support.microsoft.com/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636419533611396913) or
 [Volume license support](https://www.microsoft.com/licensing/servicecenter/Help/Contact.aspx).

@@ -42,7 +42,7 @@ The following steps guide you on how to activate the Microsoft 365 Defender Unif
 2. [Activate in Microsoft 365 Defender settings](#activate-in-microsoft-365-defender-settings)
 
 > [!IMPORTANT]
-> You must be a Global Administrator or Security Administrator in Azure Active Directory to perform this task. For more information on permissions, see [Permission pre-requisites](../defender/manage-rbac.md#permissions-pre-requisites).
+> You must be a Global Administrator or Security Administrator in Microsoft Entra ID to perform this task. For more information on permissions, see [Permission pre-requisites](../defender/manage-rbac.md#permissions-pre-requisites).
 
 ### Activate from the Permissions and roles page
 

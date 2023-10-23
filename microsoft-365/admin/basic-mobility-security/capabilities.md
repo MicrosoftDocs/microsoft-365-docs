@@ -42,7 +42,7 @@ You can use Basic Mobility and Security to secure and manage the following devic
 
 <sup>2</sup>Access control for Windows 8.1 RT devices is limited to Exchange ActiveSync.
 
-<sup>3</sup>Access control for Windows 10 requires a subscription that includes Azure AD Premium and the device needs to be joined to Azure Active Directory.
+<sup>3</sup>Access control for Windows 10 requires a subscription that includes Microsoft Entra ID P1 or P2 and the device needs to be joined to Microsoft Entra ID.
 
 > [!NOTE]
 > Devices already enrolled with earlier OS versions continue to function although the capabilities might change without notice.
@@ -185,7 +185,7 @@ You can set the following additional policy settings by using Security & Complia
 
 ## Settings supported by Windows
 
-You can manage Windows 10 devices by enrolling them as mobile devices. After an applicable policy is deployed, users with Windows 10 devices will be required to enroll in Basic Mobility and Security the first time they use the built-in email app to access their Microsoft 365 email (requires Azure AD premium subscription).
+You can manage Windows 10 devices by enrolling them as mobile devices. After an applicable policy is deployed, users with Windows 10 devices will be required to enroll in Basic Mobility and Security the first time they use the built-in email app to access their Microsoft 365 email (requires Microsoft Entra ID P1 or P2 subscription).
 
 The following settings are supported for Windows 10 devices that are enrolled as mobile devices. These setting won’t block users from accessing Microsoft 365 resources.
 
@@ -204,7 +204,7 @@ The following settings are supported for Windows 10 devices that are enrolled as
 - Remember password history and prevent reuse
 
 > [!NOTE]
-> The following settings regulating passwords only control local Windows accounts. Windows accounts provided through join a domain or Azure Active Directory aren't affected by these settings.
+> The following settings regulating passwords only control local Windows accounts. Windows accounts provided through join a domain or Microsoft Entra ID aren't affected by these settings.
 
 ### System settings
 

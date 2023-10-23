@@ -50,7 +50,7 @@ As an admin, you can add or remove licenses for your business subscriptions in t
 
 > [!NOTE]
 >
-> - You can't reduce the number of licenses for your subscription if all licenses are currently assigned to users. To reduce the number of licenses, first [unassign one or more licenses from users](../../admin/manage/remove-licenses-from-users.md), then remove the licenses from the subscription.
+> - You can't reduce the number of licenses for your subscription if all licenses are currently assigned to users. To reduce the number of licenses, first [unassign one or more licenses from users](../../admin/manage/assign-licenses-to-users.md), then remove the licenses from the subscription.
 > - If you bought your subscription through a Microsoft Representative, contact them directly for help with reducing your license count.
 
 ### If you have an MCA billing account type

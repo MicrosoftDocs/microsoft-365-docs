@@ -24,9 +24,11 @@ ms.collection:
 
 Use the following guidance to determine where your data is located. Please reference your _tenant_ _Default Geography_.
 
-### Azure Active Directory (AAD)
+<a name='azure-active-directory-aad'></a>
 
-Please refer to [Azure Active Directory Data Locations](https://aka.ms/aaddatamap).
+### Microsoft Entra ID
+
+Please refer to [Microsoft Entra Data Locations](https://aka.ms/aaddatamap).
 
 ### Forms
 Tenants in EU member Countries/regions maintain data in Macro Region Geography 1 – EMEA. All other tenants have customer data stored in the United States, except Australia. For customers in Australia, Microsoft Forms customer data will be stored at rest in Australia for all new tenants using Forms and existing tenants that have not previously used Forms. 
@@ -38,7 +40,7 @@ Refer to endpoint.microsoft.com, Tenant Administration | Tenant Status for exist
 - Features that are designed to operate globally, such as Content Delivery Network (CDN), which provides a global caching service and stores customer data at edge locations around the world.
 
 - If you are using the Remote Help feature, the Helper and Sharer's information may be sent outside of the stated Geo for 48 hours.
-- For Azure Active Directory: Please refer to [Azure Active Directory Data Locations](https://aka.ms/aaddatamap).
+- For Microsoft Entra ID: Please refer to [Microsoft Entra Data Locations](https://aka.ms/aaddatamap).
 - Preview, beta, or other prerelease services, which typically store customer data in the United States but may store it globally. Regardless, Microsoft does not control or limit the Geo from which customers or their end users may access customer data. Similarly, where customer data in other services is subsequently integrated into Intune, the originating customer data will continue to be stored subject to the other service's own Geo commitments (if any); only the copy of the customer data integrated into Intune will be stored in the stated Geo for Intune.
 
 ### Office for Mobile

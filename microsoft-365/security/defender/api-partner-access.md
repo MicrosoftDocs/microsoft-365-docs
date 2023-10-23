@@ -38,7 +38,7 @@ ms.date: 02/16/2021
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-This page describes how to create an Azure Active Directory app that has programmatic access to Microsoft 365 Defender, on behalf of users across multiple tenants. Multi-tenant apps are useful for serving large groups of users.
+This page describes how to create a Microsoft Entra app that has programmatic access to Microsoft 365 Defender, on behalf of users across multiple tenants. Multi-tenant apps are useful for serving large groups of users.
 
 If you need programmatic access to Microsoft 365 Defender on behalf of a single user, see [Create an app to access Microsoft 365 Defender APIs on behalf of a user](api-create-app-user-context.md). If you need access without a user explicitly defined (for example, if you're writing a background app or daemon), see [Create an app to access Microsoft 365 Defender without a user](api-create-app-web.md). If you're not sure which kind of access you need, see [Get started](api-access.md).
 
@@ -46,7 +46,7 @@ Microsoft 365 Defender exposes much of its data and actions through a set of pro
 
 In general, you'll need to take the following steps to use these APIs:
 
-- Create an Azure Active Directory (Azure AD) application.
+- Create a Microsoft Entra application.
 - Get an access token using this application.
 - Use the token to access Microsoft 365 Defender API.
 
@@ -54,7 +54,7 @@ Since this app is multi-tenant, you'll also need [admin consent](/azure/active-d
 
 This article explains how to:
 
-- Create a **multi-tenant** Azure AD application
+- Create a **multi-tenant** Microsoft Entra application
 - Get authorized consent from your user administrator for your application to access the Microsoft 365 Defender that resources it needs.
 - Get an access token to Microsoft 365 Defender
 - Validate the token
@@ -63,25 +63,25 @@ Microsoft 365 Defender exposes much of its data and actions through a set of pro
 
 In general, you'll need to take the following steps to use the APIs:
 
-- Create a **multi-tenant** Azure AD application.
+- Create a **multi-tenant** Microsoft Entra application.
 - Get authorized (consent) by your user administrator for your application to access Microsoft 365 Defender resources it needs.
 - Get an access token using this application.
 - Use the token to access Microsoft 365 Defender API.
 
-The following steps with guide you how to create a multi-tenant Azure AD application, get an access token to Microsoft 365 Defender and validate the token.
+The following steps with guide you how to create a multi-tenant Microsoft Entra application, get an access token to Microsoft 365 Defender and validate the token.
 
 ## Create the multi-tenant app
 
 1. Sign in to [Azure](https://portal.azure.com) as a user with the **Global Administrator** role.
 
-2. Navigate to **Azure Active Directory** > **App registrations** > **New registration**.
+2. Navigate to **Microsoft Entra ID** > **App registrations** > **New registration**.
 
    :::image type="content" source="../../media/atp-azure-new-app2.png" alt-text="An application's registration section in the Microsoft 365 Defender portal" lightbox="../../media/atp-azure-new-app2.png":::
 
 3. In the registration form:
 
    - Choose a name for your application.
-   - From **Supported account types**, select **Accounts in any organizational directory (Any Azure AD directory) - Multitenant**.
+   - From **Supported account types**, select **Accounts in any organizational directory (Any Microsoft Entra directory) - Multitenant**.
    - Fill out the **Redirect URI** section. Select type **Web** and give the redirect URI as **https://portal.azure.com**.
 
    After you're done filling out the form, select **Register**.
@@ -144,7 +144,7 @@ The following steps with guide you how to create a multi-tenant Azure AD applica
 
 ## Get an access token
 
-For more information on Azure AD tokens, see the [Azure AD tutorial](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
+For more information on Microsoft Entra tokens, see the [Microsoft Entra tutorial](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
 
 > [!IMPORTANT]
 > Although the examples in this section encourage you to paste in secret values for testing purposes, you should **never hardcode secrets** into an application running in production. A third party could use your secret to access resources. You can help keep your app's secrets secure by using [Azure Key Vault](/azure/key-vault/general/about-keys-secrets-certificates). For a practical example of how you can protect your app, see [Manage secrets in your server apps with Azure Key Vault](/training/modules/manage-secrets-with-azure-key-vault/).
