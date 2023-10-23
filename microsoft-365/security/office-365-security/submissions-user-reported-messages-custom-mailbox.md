@@ -236,10 +236,10 @@ To correctly identify why the original messages were reported, messages sent to 
   > Messages that contain multiple attached messages are discarded.
 
 - The user reported message should contain the following required headers:
-  - 1. X-Microsoft-Antispam-Message-Info
-  - 2. Message-Id
-  - 3. X-Ms-Exchange-Organization-Network-Message-Id
-  - 4. X-Ms-Exchange-Crosstenant-Id
+  - X-Microsoft-Antispam-Message-Info
+  - Message-Id
+  - X-Ms-Exchange-Organization-Network-Message-Id
+  - X-Ms-Exchange-Crosstenant-Id
 
    > [!NOTE]
    > TenantId in `X-Ms-Exchange-Crosstenant-Id` should be the same as the tenant.
