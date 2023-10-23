@@ -38,8 +38,6 @@ To work around this issue, keep the time zone setting as is.
 
 ## Nothing happens when users try to start a break or manage their time sheet in Shifts
 
-<!--The start and end break capability of the time clock feature isn't supported in an integration with UKG Pro WFM. Users are unable to clock out or clock in to a break, even though the buttons are displayed in Shifts.-->
-
 The following time clock capabilities aren't supported in an integration with UKG Pro WFM:
 
 - Start and end a break. Users are unable to clock out or clock in to a break even though the **Start a break** and **End break** buttons are displayed in Shifts.
