@@ -36,13 +36,13 @@ This article covers the fourth option, group collaboration with channel conversa
 
 ## Terms
 
-- **Azure AD B2B collaboration** – A feature that allows users to share files, folders, sites, groups, and teams with people from outside your organization. These people access shared resources by using guest accounts in your directory.
-- **Azure AD B2B direct connect** – A feature that allows users to share resources in your organization with people from other Azure AD organizations. These people access the shared resources by using their own work or school account. No guest account is created in your organization.
+- **Microsoft Entra B2B collaboration** – A feature that allows users to share files, folders, sites, groups, and teams with people from outside your organization. These people access shared resources by using guest accounts in your directory.
+- **Microsoft Entra B2B direct connect** – A feature that allows users to share resources in your organization with people from other Microsoft Entra organizations. These people access the shared resources by using their own work or school account. No guest account is created in your organization.
 - **External participant** – A person from outside your organization who is participating in a resource – such as a shared channel – using their own identity and not a guest account in your directory.
 - **External organization** – Another organization that you are sharing resources with.
 - **Guest** – A person from outside your organization who accesses shared resources by signing in to a guest account in your directory.
 - **Host organization** – The organization that is hosting a shared resource, such as a shared channel.
-- **Shared channel** – A Teams channel that can be shared with people outside the team. These people can be inside your organization or from other Azure AD organizations.
+- **Shared channel** – A Teams channel that can be shared with people outside the team. These people can be inside your organization or from other Microsoft Entra organizations.
 - **Sharing links** – Links with permissions to a file or folder that are used to share that file or folder with others. The people being shared with can be inside or outside your organization.
 
 ## Options for collaboration in a team
@@ -51,7 +51,7 @@ When collaborating in a team with people outside your organization, there are tw
 
 ### Guest sharing
 
-Guest sharing uses Azure AD B2B collaboration to allow sharing and collaboration with people outside your organization by adding a guest account in Azure AD for each person. Guest accounts can be used for the following:
+Guest sharing uses Microsoft Entra B2B collaboration to allow sharing and collaboration with people outside your organization by adding a guest account in Microsoft Entra ID for each person. Guest accounts can be used for the following:
 
 - Guest membership in teams, SharePoint sites, and Microsoft 365 groups
 - Individual file and folder sharing
@@ -60,7 +60,7 @@ Guests in a team have similar capabilities to regular team members.
 
 ### External participants in shared channels
 
-External participants access shared resources in your organization by using their own Azure AD or Microsoft 365 identity. This is enabled by Azure AD B2B direct connect through an organizational relationship configured by both organizations. Guest accounts are not used in this relationship.
+External participants access shared resources in your organization by using their own Microsoft Entra ID or Microsoft 365 identity. This is enabled by Microsoft Entra B2B direct connect through an organizational relationship configured by both organizations. Guest accounts are not used in this relationship.
 
 The primary advantage of external participants in shared channels versus guest sharing is that people outside your organization can collaborate with your users in Teams without having to change their user context. When using guest accounts, users must sign out of Teams with their work or school account and sign in again using the guest account. Alternatively, they can have a separate copy of Teams running in a private browser session. This switching between organizations takes time and can cause users to miss important communications while signed out of a given organization.
 
@@ -70,7 +70,7 @@ With shared channels, users can remain signed in to their organization and acces
 
 The following table describes the experiences available depending on the type of account used.
 
-|Feature|User (your organization)|Guest (Azure AD collaboration)|External participant (Azure AD direct connect)|
+|Feature|User (your organization)|Guest (Microsoft Entra collaboration)|External participant (Microsoft Entra ID direct connect)|
 |:-----|:-----|:------|:-------|
 |Team access|Y|Y|N|
 |Shared channel access|Y|N|Y|
@@ -84,7 +84,7 @@ The following table describes the experiences available depending on the type of
 
 Most organizations will use both guest sharing and shared channels with external participants.
 
-Guest sharing is enabled by default in Azure AD and in Microsoft 365 (Teams, Microsoft 365 Groups, and SharePoint). This allows users to invite guests to teams and sites and to share files with them without having to request assistance from IT.
+Guest sharing is enabled by default in Microsoft Entra ID and in Microsoft 365 (Teams, Microsoft 365 Groups, and SharePoint). This allows users to invite guests to teams and sites and to share files with them without having to request assistance from IT.
 
 You must use guest sharing if:
 
@@ -92,11 +92,11 @@ You must use guest sharing if:
 - You want to share files or folders in a channel with people outside your organization who are not in the channel
 - You want to collaborate with people outside your organization who do not have a work or school account.
 
-While shared channels is turned on by default in Teams, external collaboration with shared channels requires that an Azure AD administrator set up cross-tenant access between your organization and each other organization with which you want to share. Each other organization must set up cross-tenant access on their end as well.
+While shared channels is turned on by default in Teams, external collaboration with shared channels requires that a Microsoft Entra administrator set up cross-tenant access between your organization and each other organization with which you want to share. Each other organization must set up cross-tenant access on their end as well.
 
 If you plan to use shared channels with other organizations, you can choose between a self-service model and a by-request model.
 
-- Self-service – You can configure cross-tenant access to allow inbound and outbound access to all other Azure AD organizations. Alternatively, you can block a list of organizations that you don't want your users to share with, leaving all other organizations available. This allows your users to invite people outside the organization to participate in shared channels without having to contact your helpdesk or IT department.
+- Self-service – You can configure cross-tenant access to allow inbound and outbound access to all other Microsoft Entra organizations. Alternatively, you can block a list of organizations that you don't want your users to share with, leaving all other organizations available. This allows your users to invite people outside the organization to participate in shared channels without having to contact your helpdesk or IT department.
 - By-request – You can configure cross-tenant access for each individual organization with which you want to allow shared channels. When choosing this model, it's important to have a documented business process that your users can follow to request cross-tenant access with another organization.
 
 ## Compliance in shared channels
@@ -112,7 +112,7 @@ Admins can set policies to monitor content for all users in the channel. All mes
 Supported [conditional access policies](/azure/active-directory/conditional-access/overview) from the host organization can be applied to B2B direct connect users. (The external organization's policies are not used.) The following types of conditional access policies are supported with shared channels:
 
 - Policies that are scoped to **All guest and external users**, and the **Office 365 SharePoint Online** cloud app.
-- Grant Access controls that require MFA, a compliant device, or a hybrid Azure AD joined device.
+- Grant Access controls that require MFA, a compliant device, or a Microsoft Entra hybrid joined device.
 
 IP-based policies are supported at the SharePoint file level. So an external participant could access shared channel from a restricted location, but be blocked when trying to open a file.
 

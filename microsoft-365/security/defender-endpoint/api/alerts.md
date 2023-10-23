@@ -82,7 +82,7 @@ ms.date: 12/18/2020
 |threatName|String|Threat name.|
 |machineId|String|ID of a [machine](machine.md) entity that is associated with the alert.|
 |computerDnsName|String|[machine](machine.md) fully qualified name.|
-|aadTenantId|String|The Azure Active Directory ID.|
+|aadTenantId|String|The Microsoft Entra ID.|
 |detectorId|String|The ID of the detector that triggered the alert.|
 |comments|List of Alert comments|Alert Comment object contains: comment string, createdBy string, and createTime date time.|
 |Evidence|List of Alert evidence|Evidence related to the alert. See the following example.|

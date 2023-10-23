@@ -31,7 +31,7 @@ Microsoft 365 Lighthouse provides delegated relationship insights across all you
 From this page, you can see the status of all your customers' delegated relationships at a glance, including whether GDAP is set up, if a GDAP template has been assigned, and the next upcoming GDAP relationship expiration date for a customer tenant. In this sortable view by tenant, you can filter by the following information:
 
 - **Delegated access:** The type of delegated relationships established with a customer tenant. For example, GDAP, GDAP & DAP, DAP, or None. 
-- **GDAP template:** Created by your organization through Lighthouse, GDAP templates define the service tiers, Azure Active Directory (AAD) roles used to deploy GDAP to your tenants. To learn more about GDAP templates, see [Set up GDAP for your customers](m365-lighthouse-setup-gdap.md).
+- **GDAP template:** Created by your organization through Lighthouse, GDAP templates define the service tiers, Microsoft Entra roles used to deploy GDAP to your tenants. To learn more about GDAP templates, see [Set up GDAP for your customers](m365-lighthouse-setup-gdap.md).
 - **Security groups:** Assigned to GDAP relationships, security groups contain the users in your organization with delegated access to a customer tenant.
 - **Pending GDAP relationships:** Indicates that a GDAP relationship has been set up but has yet to be approved by the customer tenant.
 
@@ -50,5 +50,5 @@ The Delegated access page also includes the following options:
 [Overview of permissions](m365-lighthouse-overview-of-permissions.md) (article)\
 [Configure portal security](m365-lighthouse-configure-portal-security.md) (article)\
 [Introduction to granular delegated admin privileges (GDAP)](/partner-center/gdap-introduction) (article)\
-[Azure AD built-in roles](/azure/active-directory/roles/permissions-reference) (article)\
-[Learn about groups and access rights in Azure Active Directory](/azure/active-directory/fundamentals/concept-learn-about-groups) (article)
+[Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference) (article)\
+[Learn about groups and access rights in Microsoft Entra ID](/azure/active-directory/fundamentals/concept-learn-about-groups) (article)

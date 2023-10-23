@@ -34,9 +34,9 @@ After ensuring that your networking is optimized for access to Microsoft 365 for
 
 To plan for your tenant implementation:
 
-- [Understand subscriptions, licenses, and Azure Active Directory (Azure AD) tenants](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
+- [Understand subscriptions, licenses, and Microsoft Entra tenants](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
 - [Understand how to use third-party SSL certificates](plan-for-third-party-ssl-certificates.md)
-- [Understand the ways a Microsoft 365 tenant is integrated with Azure AD services](integrated-apps-and-azure-ads.md)
+- [Understand the ways a Microsoft 365 tenant is integrated with Microsoft Entra services](integrated-apps-and-azure-ads.md)
 - [Plan for client app support](microsoft-365-client-support-certificate-based-authentication.md)
 - [Determine how to use hybrid modern authentication](hybrid-modern-auth-overview.md)
 - [Plan for Office 2007 and Office 2010 upgrades](plan-upgrade-previous-versions-office.md)

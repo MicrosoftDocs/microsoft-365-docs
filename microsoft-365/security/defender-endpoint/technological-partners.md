@@ -110,7 +110,7 @@ The following are the solution's categories:
 |Product name|Vendor|Description|
 |---|---|---|
 |[Illusive Platform](https://go.microsoft.com/fwlink/?linkid=2201778)|Illusive Networks|Illusive continuously discovers and automatically remediates identity vulnerabilities, and it detects attacks using deceptive controls.|
-|[Silverfort](https://go.microsoft.com/fwlink/?linkid=2201873)|Silverfort|Enforces Azure AD Conditional Access and MFA across any user system and environment on-prem and in the cloud.|
+|[Silverfort](https://go.microsoft.com/fwlink/?linkid=2201873)|Silverfort|Enforces Microsoft Entra Conditional Access and MFA across any user system and environment on-prem and in the cloud.|
 
 ### Cross platform
 
@@ -181,4 +181,3 @@ The following are the solution's categories:
 - [Connect apps to get visibility and control|Microsoft Docs](/defender-cloud-apps/enable-instant-visibility-protection-and-governance-actions-for-your-apps)
 - [Partner applications in Microsoft Defender for Endpoint|Microsoft Docs](partner-applications.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
-

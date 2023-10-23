@@ -18,7 +18,7 @@ ms.custom:
   - seo-marvel-apr2020
   - has-azure-ad-ps-ref
 ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
-description: Find Microsoft 365 PowerShell cmdlet references for Azure AD, Exchange Online, SharePoint Online, Skype for Business Online, and Security & Compliance.
+description: Find Microsoft 365 PowerShell cmdlet references for Microsoft Entra ID, Exchange Online, SharePoint Online, Skype for Business Online, and Security & Compliance.
 ---
 
 # Cmdlet references for Microsoft 365 services
@@ -34,7 +34,7 @@ This article provides cmdlet references for the various Microsoft 365 services a
 
 The Azure Active Directory PowerShell for Graph cmdlet reference topics are in the Reference section of the [Azure Active Directory PowerShell for Graph documentation](/powershell/azure/active-directory/install-adv2).
 
-The Azure Active Directory Module for Windows PowerShell cmdlet reference topics is in the Reference section of the [Azure Active Directory (MSOnline) documentation](/powershell/azure/active-directory/overview).
+The Azure Active Directory module for Windows PowerShell cmdlet reference topics is in the Reference section of the [Microsoft Entra ID (MSOnline) documentation](/powershell/azure/active-directory/overview).
 
 For Microsoft 365 PowerShell connection instructions, see [Connect to Microsoft 365 with PowerShell](connect-to-microsoft-365-powershell.md).
 

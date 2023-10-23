@@ -27,11 +27,11 @@ ms.date: 1/31/2023
 
 # Policies for allowing guest access and B2B external user access
 
-This article discusses adjusting the recommended Zero Trust identity and device access policies to allow access for guests and external users that have an Azure Active Directory (Azure AD) Business-to-Business (B2B) account. This guidance builds on the [common identity and device access policies](identity-access-policies.md).
+This article discusses adjusting the recommended Zero Trust identity and device access policies to allow access for guests and external users that have a Microsoft Entra Business-to-Business (B2B) account. This guidance builds on the [common identity and device access policies](identity-access-policies.md).
 
 These recommendations are designed to apply to the **starting point** tier of protection. But you can also adjust the recommendations based on your specific needs for **enterprise** and **specialized security** protection.
 
-Providing a path for B2B accounts to authenticate with your Azure AD tenant doesn't give these accounts access to your entire environment. B2B users and their accounts have access to services and resources, like files, shared with them by Conditional Access policy.
+Providing a path for B2B accounts to authenticate with your Microsoft Entra tenant doesn't give these accounts access to your entire environment. B2B users and their accounts have access to services and resources, like files, shared with them by Conditional Access policy.
 
 ## Updating the common policies to allow and protect guests and external user access
 
@@ -56,7 +56,7 @@ To include or exclude guests and external users in Conditional Access policies, 
 
 Microsoft Teams defines the following users:
 
-- **Guest access** uses an Azure AD B2B account that can be added as a member of a team and have access to the communications and resources of the team.
+- **Guest access** uses a Microsoft Entra B2B account that can be added as a member of a team and have access to the communications and resources of the team.
 
 - **External access** is for an external user that doesn't have a B2B account. External user access includes invitations, calls, chats, and meetings, but doesn't include team membership and access to the resources of the team.
 
@@ -70,7 +70,7 @@ This policy prompts guests to register for MFA in your tenant, regardless of whe
 
 ### Excluding guests and external users from risk-based MFA
 
-While organizations can enforce risk-based policies for B2B users using Azure AD Identity Protection, there are limitations in the implementation of Azure AD Identity Protection for B2B collaboration users in a resource directory due to their identity existing in their home directory. Due to these limitations, Microsoft recommends you exclude guests from risk-based MFA policies and require these users to always use MFA.
+While organizations can enforce risk-based policies for B2B users using Microsoft Entra ID Protection, there are limitations in the implementation of Microsoft Entra ID Protection for B2B collaboration users in a resource directory due to their identity existing in their home directory. Due to these limitations, Microsoft recommends you exclude guests from risk-based MFA policies and require these users to always use MFA.
 
 For more information, see [Limitations of Identity Protection for B2B collaboration users](/azure/active-directory/identity-protection/concept-identity-protection-b2b#limitations-of-identity-protection-for-b2b-collaboration-users).
 
