@@ -23,7 +23,7 @@ ms.date: 10/20/2023
 > [!IMPORTANT]
 > This article only applies if you bought a Microsoft 365 E3 Original subscription through an Enterprise Agreement (EA). If this applies to you, you now see the Microsoft 365 E3 Extra Features product on the **Licenses** page in the Microsoft 365 admin center.
 
-If you have a Microsoft 365 E3 Original subscription that you bought through an Enterprise Agreement (EA), you now also have a subscription for Microsoft 365 E3 Extra Features. Microsoft 365 E3 Extra Features provides the following products and services added to Microsoft 365 E3 Original at no additional cost.
+If you have a Microsoft 365 E3 Original subscription that you bought through an Enterprise Agreement (EA), you now also have a subscription for Microsoft 365 E3 Extra Features. The Microsoft 365 E3 Original package includes the following products and services at no additional cost.
 
 - Office 365 E3
 - Enterprise Mobility and Security E3
