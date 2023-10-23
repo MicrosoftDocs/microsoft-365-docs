@@ -48,14 +48,13 @@ When Copilot extensibility is enabled, users can see an 3P plugins in Copilot th
 
 Admins can manage plugins for Copilot as apps in the Integrated apps section of the Microsoft 365 admin center, where they can see the list of available, deployed, or blocked apps for their organization. They will be able to:
 
-- Enable/Disable Copilot extensibility for the whole organization using PS script.
 - Make available an app with plugins for Copilot to specific users or groups.
 - Deploy or remove apps with plugins for Copilot for the whole organization or specific users or groups.
 - Block or unblock apps with plugins for Copilot for the whole organization.
 
 ## Enable or disable Copilot extensibility
 
-Admins can enable or disable Copilot extensibility at the tenant level by using a new setting in the tenant default options in the Integrated Apps section of the . This setting allows admins to control who can access Copilot plugins in their organization. The setting has two options:
+Admins can enable or disable Copilot extensibility at the tenant level by using a new setting in the tenant default options in the Integrated Apps section of the Microsoft 365 admin center. This setting allows admins to control who can access Copilot plugins in their organization. The setting has two options:
 
 - **All Users**: This is the default option and it means that all users in the organization can access Copilot plugins, subject to the existing app policies and user assignments.
 - **No Users**: This option means that no users in the organization can access Copilot plugins, and the 3P plugins are disabled in Copilot plugin flyout. This option also hides the apps that have Copilot plugins from the available and deployed apps lists in the Microsoft 365 admin center.
