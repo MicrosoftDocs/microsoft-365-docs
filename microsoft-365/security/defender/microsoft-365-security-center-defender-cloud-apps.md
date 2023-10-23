@@ -182,11 +182,15 @@ Learn how to protect your cloud apps in Microsoft 365 Defender:
 
 <br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE59yVU]
+**Protecting cloud apps in Microsoft 365 Defender**:
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE59yVU title="Protecting cloud apps in Microsoft 365 Defender"]
 
 <br>
 
-> [!VIDEO https://learn.microsoft.com/_themes/docs.theme/master/en-us/_themes/global/video-embed.html?id=2105e5c9-23bf-41fb-a61d-0f0fae8ef05f]
+**Defender for Cloud Apps in Microsoft 365 Defender for customers migrating from the classic portal**
+
+> [!VIDEO https://learn.microsoft.com/_themes/docs.theme/master/en-us/_themes/global/video-embed.html?id=2105e5c9-23bf-41fb-a61d-0f0fae8ef05f title="Defender for Cloud Apps in Microsoft 365 Defender for customers migrating from the classic portal"]
 
 
 ## Related information
