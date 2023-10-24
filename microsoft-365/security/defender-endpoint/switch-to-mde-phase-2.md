@@ -152,7 +152,7 @@ You can now run Microsoft Defender Antivirus in passive mode on Windows Server 2
 
 This step of the setup process involves adding Defender for Endpoint to the exclusion list for your existing endpoint protection solution and any other security products your organization is using. Make sure to refer to your solution provider's documentation to add exclusions.
 
-The specific exclusions to configure will depend on which version of Windows your endpoints or devices are running, and are listed in the following table.
+The specific exclusions to configure depend on which version of Windows your endpoints or devices are running, and are listed in the following table.
 
 | OS |Exclusions |
 |:--|:--|
