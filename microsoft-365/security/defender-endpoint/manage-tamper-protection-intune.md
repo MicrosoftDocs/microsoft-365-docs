@@ -108,7 +108,7 @@ You can use a registry key to determine whether the functionality to protect Mic
 
    The following table summarizes what the registry key values mean:
 
-   | ManagedDefenderProductType value | EnrollmentStatus value | What the value means |
+   | `ManagedDefenderProductType` value | `EnrollmentStatus` value | What the value means |
    |---|---|---|
    | `6` | (any value) |The device is managed by Intune only. <br/>(*Meets a requirement for exclusions to be tamper protected.*) |
    | `7` | `4` | The device is managed by Configuration Manager only. <br/>(*Meets a requirement for exclusions to be tamper protected.*) |
@@ -116,7 +116,7 @@ You can use a registry key to determine whether the functionality to protect Mic
 
 3. To confirm that tamper protection is deployed and that exclusions are tamper protected, check the `TPExclusions` registry key (located at `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Features` or `HKLM\SOFTWARE\Microsoft\Windows Defender\Features`).
 
-   | TPExclusions | What the value means |
+   | `TPExclusions` | What the value means |
    |---|---|
    | `1` | The required conditions are met, and the new functionality to protect exclusions is enabled on the device.<br/>(*Exclusions are tamper protected.*) |
    | `0` | Tamper protection isn't currently protecting exclusions on the device.<br/> (*If all the requirements are met and this state seems incorrect, contact support*.) |
