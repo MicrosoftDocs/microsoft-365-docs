@@ -41,6 +41,7 @@ This migration phase includes the following steps:
 2. [Get Microsoft Defender for Endpoint Plan 1 or Plan 2](#step-2-get-microsoft-defender-for-endpoint-plan-1-or-plan-2).
 3. [Grant access to the Microsoft 365 Defender portal](#step-3-grant-access-to-the-microsoft-365-defender-portal).
 4. [Review more information about device proxy and internet connectivity settings](#step-4-view-information-about-device-proxy-and-internet-connectivity-settings).
+5. [Capture performance baseline data from the endpoint](#step-5-capture-performance-baseline-data-from-the-endpoint) 
 
 ## Step 1: Get and deploy updates across your organization's devices
 
@@ -115,19 +116,11 @@ To enable communication between your devices and Defender for Endpoint, you migh
 > [!IMPORTANT]
 > The standalone versions of Defender for Endpoint Plan 1 and Plan 2 do not include server licenses. To onboard servers, you'll need an additional license, such as either [Microsoft Defender for Servers Plan 1 or Plan 2](/azure/defender-for-cloud/plan-defender-for-servers-select-plan). To learn more, see [Defender for Endpoint onboarding Windows Server](onboard-windows-server.md).
 
-## Step 5:  Capture performance baseline data from the endpoint
+## Step 5: Capture performance baseline data from the endpoint
 
-When migrating from one antivirus product to Microsoft Defender Antivirus, helpdesk's eyes will be on what's new?  Thus, if you already had an application that was running hot (high cpu), the first troubleshooting will be to disable the Antivirus.
+When migrating from one antivirus product to Microsoft Defender Antivirus, your organization's Help Desk's eyes will be on what's new. Thus, if you already had an application that was running hot (high cpu usage), their first troubleshooting step will be to disable Microsoft Defender Antivirus. Before doing that, we highly recommend capturing performance data from endpoints that have or will have Defender for Endpoint installed. Performance data should include the process list, CPU usage (aggregate across all cores), memory usage, and disk space availability on all mounted partitions. This information will help you determine whether what you are seeing is normal or unexpected after onboarding devices to Defender for Endpoint.
 
-In order to see if what you are seeins is normal or not expected, capturing performance data from the endpoints that have Defender for Endpoint installed is highly recommended. This includes process list, CPU usage (aggregate across all cores), memory usage, and  disk space availability on all mounted partitions .
-
-One of the tools that you will have at your disposal is the Performance Monitor (perfmon).
-
-Below are steps on how you could use perfmon to collect a performance baseline of your Windows or Windows Server:
-
-Setting a local perfmon in a Windows client or Windows Server.
-
-https://learn.microsoft.com/en-us/archive/blogs/yongrhee/setting-a-local-perfmon-in-a-windows-client-or-windows-server
+One of the tools that you can use is the Performance Monitor (perfmon). You can use it to collect a performance baseline of your Windows or Windows Server endpoint. See [Setting a local perfmon in a Windows client or Windows Server](/archive/blogs/yongrhee/setting-a-local-perfmon-in-a-windows-client-or-windows-server).
 
 ## Next step
 
