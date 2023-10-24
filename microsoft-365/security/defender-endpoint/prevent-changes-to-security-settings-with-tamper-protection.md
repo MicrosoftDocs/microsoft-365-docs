@@ -1,6 +1,6 @@
 ---
 title: Protect security settings with tamper protection
-ms.reviewer: joshbregman, mattcall, pahuijbr, hayhov
+ms.reviewer: joshbregman, mattcall, pahuijbr, hayhov, gberecz
 manager: dansimp
 description: Use tamper protection to prevent malicious apps from changing important security settings.
 ms.service: microsoft-365-security
