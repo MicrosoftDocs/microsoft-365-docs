@@ -130,7 +130,7 @@ sections:
           The **Manage Assignments** page contains a list of all the VL users that you invited and includes information like their status and the VL roles that you assigned to them. The following table explains each column in the list.
 
           |Column name                |Descripton  |
-          |---------------------------|---------|
+          |---------------------------|------------|
           |Display name               |The user's full name. This is automatically populated for users who belong to the tenant. If you add external users who belong to the tenant, make sure that you enter the full name of the user. |
           |Status                     |Indicates the status of the user. For a list of explanations for the possible status, see Understand VL user statuses. |
           |Actions                    |Indicates the action you can take for the user. For example, **View access**, **Resend invite**, and **Reset invite**. |
@@ -144,15 +144,14 @@ sections:
         answer: |
           The following table lists the statuses that you might see in the **Status** column on the **Manage Assignments** page.
 
-          |Column1  |Column2  |
-          |---------|---------|
-          |Row1     |         |
-          |Row2     |         |
-          |Row3     |         |
-          |Row4     |         |
-          |Row5     |         |
-          |Row6     |         |
-          |Row7     |         |
+          |Status                   |Description  |
+          |-------------------------|-------------|
+          |Active                   |The user already has registered permissions to one or more license IDs. |
+          |Assignment in Progress   |A VL admin has assigned permissions, and no further edits can be made until the status is active. This might take up to two hours during peak processing periods. |
+          |Failed                   |Permissions assignment has failed. VL admins should assign permissions to the user again. If role assignment continues to fail, please contact support to help investigate the problem. |
+          |Invitation sent          |The user has yet to register their assigned permissions by accepting the invitation email. |
+          |Invitation expired       |The user failed to register their assigned permissions by accepting the invitation email. The VL admin can reset the invitation. |
+          |User not found           |The user is not in the organization's tenant.  |
 
       - question: |
           Manage VL admin inheritance
@@ -186,7 +185,7 @@ sections:
           6. Search for and select the users whom you want to add. 
           7. If a user's business email is different from their sign-in email, enter the alternate email address.
           8. Select **Review + Apply**. 
-          9. Continue to Step 2. Assign contract IDs to VL users.
+          9. Continue to [Step 2. Assign contract IDs to VL users](#Step-2.-Assign-contract-IDs-to-VL-users).
 
       - question: |
           Step 2. Assign contract IDs to VL users
