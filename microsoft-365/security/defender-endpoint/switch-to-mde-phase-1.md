@@ -17,8 +17,8 @@ ms.topic: conceptual
 ms.custom: 
 - migrationguides
 - admindeeplinkDEFENDER
-ms.date: 06/19/2023
-ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
+ms.date: 10/24/2023
+ms.reviewer: jesquive, chventou, jonix, chriggs, owtho, yongrhee
 search.appverid: met150
 ---
 
