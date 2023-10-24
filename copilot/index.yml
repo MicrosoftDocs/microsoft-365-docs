@@ -59,7 +59,9 @@ additionalContent:
               url: index.yml
             - text: Protect and manage Copilot interactions with Microsoft Purview
               url: index.yml
-            - text: ADR
+            - text: Isolation controls
+              url: index.yml
+            - text: Microsoft Privacy - where is data stored and located
               url: index.yml
         # Card
         - title: Manage and extend Microsoft 365 Copilot
