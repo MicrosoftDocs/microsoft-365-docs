@@ -17,7 +17,7 @@ metadata:
   - scotvorg
   ms.localizationpriority: medium
   description: "Frequently asked questions about volume licensing user roles in the Microsoft 365 admin center."
-  ms.date: 10/24/2023
+  ms.date: 10/25/2023
 title: Manage volume licensing user roles Frequently Asked Questions
 summary: |
 
@@ -47,7 +47,7 @@ sections:
         answer: |
           Primary or Notice contacts on the VL contract can choose to forward the invitation to register a license ID to someone else who can then register as the VL admin, instead.  The admin should forward the invitation for each license ID that they don’t want to administer.
 
-          VL admins who have already registered must assign other VL users as admins.  
+          VL admins who have already registered must assign other VL users as admins.
 
           > [!NOTE]
           > There can be more than one VL admin. Assigning another person to be a VL admin for a license ID doesn't remove you from the VL admin role for that license ID. 
@@ -69,7 +69,7 @@ sections:
         answer: |
           VL admin permissions don't include permissions to manage Microsoft services like Microsoft 365, or to add or remove users from the organization's tenant. 
 
-          If a Global or Billing admin assigns non-VL admin roles to the VL admin, the VL admin must use the same credentials that they use to sign in to  the Volume Licensing Service Center (VLSC).
+          If a Global or Billing admin assigns non-VL admin roles to the VL admin, the VL admin must use the same credentials that they use to sign in to the Volume Licensing Service Center (VLSC).
 
           For information about non-VL admin roles in the Microsoft 365 admin center, see [About admin roles in the Microsoft 365 admin center](../../admin/add-users/about-admin-roles.md).
 
@@ -109,12 +109,12 @@ sections:
         answer: |
           There are seven distinct VL user roles that you can assign for each license ID. Each role permits specific actions to manage VL.
 
-          The following table shows the relationships between VLSC user roles and MAC VL user roles, and lists the actions those roles can take.
+          The following table shows the relationships between VLSC user roles and Microsoft 365 admin center VL user roles and lists the actions those roles can take.
 
           |VLSC role                  |Microsoft 365 admin center role  |Allowable actions  |
           |---------------------------|-------------------------|----------------------------|
           |Administrator              |Administrator            |Can assign, edit, and remove VL user permissions. Can perform all actions granted to other VL roles. |
-          |Licensing Info Viewer      |Licensing Info Viewer    |Can view contract details, orders, and contract keys, and create license summaries.  |
+          |Licensing Info Viewer      |Licensing Info Viewer    |Can view contract details, orders, and contract keys, and create license summaries. |
           |Download                   |Product download manager |Can view contracts and download licensed Microsoft software products. |
           |Product Keys               |Product keys reader      |Can view contracts and contract keys, manage activation and redemption of online services, and view keys on the **Products and services** page. |
           |Software Assurance Manager |Benefits reader          |Can view contracts and manage Home Use Program Software Assurance entitlements. |
@@ -159,7 +159,7 @@ sections:
           |Failed                   |Permissions assignment has failed. VL admins should assign permissions to the user again. If role assignment continues to fail, contact support to help investigate the problem. |
           |Invitation sent          |The user has yet to register their assigned permissions by accepting the invitation email. |
           |Invitation expired       |The user failed to register their assigned permissions by accepting the invitation email. The VL admin can reset the invitation. |
-          |User not found           |The user isn't in the organization's tenant.  |
+          |User not found           |The user isn't in the organization's tenant. |
 
       - question: |
           Manage VL admin inheritance
@@ -175,7 +175,7 @@ sections:
           The **Preferences** details pane displays your name, login email, business email, list of assigned roles, and whether you've chosen to inherit an Administrator role for all future enrollments added under the MBSA.
 
           > [!NOTE]
-          > The VL admin can't edit or remove permissions on a license ID where permissions are inherited from the higher-level agreement (the MBSA).  
+          > The VL admin can't edit or remove permissions on a license ID where permissions are inherited from the higher-level agreement (the MBSA).
 
   - name: How do I assign roles to VL users?
     questions:
