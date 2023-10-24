@@ -3,9 +3,6 @@ title: Stream Microsoft Defender for Endpoint events to Azure Event Hubs
 description: Learn how to configure Microsoft Defender for Endpoint to stream Advanced Hunting events to your Event Hubs.
 keywords: raw data export, streaming API, API, Azure Event Hubs, Azure storage, storage account, Advanced Hunting, raw data sharing
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
@@ -19,7 +16,7 @@ ms.topic: reference
 ms.subservice: mde
 ms.custom: api
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 10/24/2023
 ---
 
 # Configure Microsoft Defender for Endpoint to stream Advanced Hunting events to your Azure Event Hubs
