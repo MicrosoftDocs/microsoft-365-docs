@@ -90,10 +90,10 @@ sections:
         answer: |
           Microsoft assigns access at the level of the license ID (the program level at which orders can be placed). Only license IDs for which you're assigned the VL admin role are displayed on admin pages in the Microsoft 365 admin center.
 
-  - name: Ignored
+  - name: How do I manage VL users and roles?
     questions:
       - question: |
-          How do I manage VL users and roles?
+          How do I manage users and roles?
         answer: |
           VL admins can use the Microsoft 365 admin center to view, edit, or remove VL users for license IDs that they administer.
 
@@ -155,13 +155,8 @@ sections:
           > [!NOTE]
           > The VL admin can't edit or remove permissions on a license ID where permissions are inherited from the higher-level agreement (the MBSA).  
 
-  - name: Ignored
+  - name: How do I assign roles to VL users?
     questions:
-      - question: |
-          How do I assign roles to VL users?
-        answer: |
-          This section describes the steps involved in assigning roles to VL users.
-
       - question: |
           Step 1. Add new VL users
         answer: |
