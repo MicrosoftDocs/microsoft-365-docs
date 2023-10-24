@@ -53,7 +53,6 @@ The following table lists the new conditional access policy you must create in M
 |Protection level|Policy|More information|
 |---|---|---|
 |All protection levels|[Use Conditional Access App Control in Defender for Cloud Apps](/cloud-app-security/proxy-deployment-aad#configure-integration-with-azure-ad)|This configures your IdP (Microsoft Entra ID) to work with Defender for Cloud Apps.|
-||||
 
 This next table lists the example policies illustrated above that you can create to protect all SaaS apps. Be sure to evaluate your own business, security, and compliance objectives and then create policies that provide the most appropriate protection for your environment.
 
@@ -62,7 +61,6 @@ This next table lists the example policies illustrated above that you can create
 |Starting point|Monitor traffic from unmanaged devices <p> Add protection to file downloads from unmanaged devices|
 |Enterprise|Block download of files labeled with sensitive or classified from unmanaged devices (this provides browser only access)|
 |Specialized security|Block download of files labeled with classified from all devices (this provides browser only access)|
-|||
 
 For end-to-end instructions for setting up Conditional Access App Control, see [Deploy Conditional Access App Control for featured apps](/cloud-app-security/proxy-deployment-aad). This article walks you through the process of creating the necessary conditional access policy in Microsoft Entra ID and testing your SaaS apps.
 
@@ -102,7 +100,6 @@ The following illustration and table provide several examples of policies that c
 |Starting point|Alert when files containing this sensitive information type ("Credit Card Number") are shared outside the organization <p> Block downloads of files containing this sensitive information type ("Credit card number") to unmanaged devices|
 |Enterprise|Protect downloads of files containing this sensitive information type ("Credit card number") to managed devices <p> Block downloads of files containing this sensitive information type ("Credit card number") to unmanaged devices <p> Alert when a file with on of these labels is uploaded to OneDrive for Business or Box (Customer data, Human Resources: Salary Data, Human Resources, Employee data)|
 |Specialized security|Alert when files with this label ("Highly classified") are downloaded to managed devices <p> Block downloads of files with this label ("Highly classified") to unmanaged devices|
-|||
 
 ## Next steps
 

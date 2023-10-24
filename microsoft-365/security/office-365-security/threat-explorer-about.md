@@ -23,7 +23,7 @@ ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.date: 6/20/2023
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
@@ -52,7 +52,7 @@ We are making this integration more relevant by introducing the alert ID (see an
 
 ### Extending the Explorer (and Real-time detections) data retention and search limit for trial tenants from 7 to 30 days
 
-As part of this change, you will be able to search for, and filter email data across 30 days (an increase from the previous 7 days) in Threat Explorer/Real-time detections for both Defender for Office P1 and P2 trial tenants.
+As part of this change, you will be able to search for, and filter email data across 30 days (an increase from the previous 7 days) in Threat Explorer/Real-time detections for both Defender for Office 365 P1 and P2 trial tenants.
 This does not impact any production tenants for both P1 and P2/E5 customers, which already have the 30 day data retention and search capabilities.
 
 ### Updated limits for Export of records for Threat Explorer
@@ -79,7 +79,7 @@ The **Tags** column in the email grid contains all the tags that have been appli
 
 You can use tags as a filter. Hunt just across priority accounts or specific user tags scenarios. You can also exclude results that have certain tags. Combine this functionality with other filters to narrow your scope of investigation.
 
-[![Filter tags.](../../media/tags-filter-normal.png)](../../media/tags-filter-normal.png#lightbox)
+:::image type="content" source="../../media/tags-filter-normal.png" alt-text="Filter tags." lightbox="../../media/tags-filter-normal.png":::
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/tags-filter-not.png" alt-text="Screenshot of tags that are not filtered." lightbox="../../media/tags-filter-not.png":::
@@ -179,7 +179,7 @@ Currently, we surface delivery location in the email grid and email flyout. The 
 
 - File extension blocked by org policy: An organization's security team blocks a file name extension through the anti-malware policy settings. These values will now be displayed in email details to help with investigations. Secops teams can also use the rich-filtering capability to filter on blocked file extensions.
 
-[![System Overrides in Explorer.](../../media/System_Overrides.png)](../../media/System_Overrides.png#lightbox)
+:::image type="content" source="../../media/System_Overrides.png" alt-text="System Overrides in Explorer." lightbox="../../media/System_Overrides.png":::
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/System_Overrides_Grid.png" alt-text="Screenshot of the System Overrides Grid in Explorer." lightbox="../../media/System_Overrides_Grid.png":::
@@ -199,7 +199,7 @@ The improvements include:
 
 Phish confidence level helps identify the degree of confidence with which an email was categorized as "phish." The two possible values are *High* and *Normal*. In the initial stages, this filter will be available only in the Phish view of Threat Explorer.
 
-[![Phish Confidence Level in Explorer.](../../media/Phish_Confidence_Level.png)](../../media/Phish_Confidence_Level.png#lightbox)
+:::image type="content" source="../../media/Phish_Confidence_Level.png" alt-text="Phish Confidence Level in Explorer." lightbox="../../media/Phish_Confidence_Level.png":::
 
 ### ZAP URL signal
 
