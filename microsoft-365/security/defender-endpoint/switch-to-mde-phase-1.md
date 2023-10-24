@@ -75,7 +75,7 @@ Now that you've updated your organization's devices, the next step is to get Def
 
 4. If any devices in your organization use a proxy to access the internet, follow the guidance in [Defender for Endpoint setup: Network configuration](production-deployment.md#network-configuration).
 
-At this point, you're ready to grant access to your security administrators and security operators who will use the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
+At this point, you're ready to grant access to your security administrators and security operators to use the [Microsoft 365 Defender portal](https://security.microsoft.com).
 
 > [!TIP]
 > The Microsoft 365 Defender portal is accessed at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>. The former Microsoft Defender Security Center (https://securitycenter.windows.com) now redirects to the Microsoft 365 Defender portal. To learn more, see [Microsoft 365 Defender portal overview](portal-overview.md).
