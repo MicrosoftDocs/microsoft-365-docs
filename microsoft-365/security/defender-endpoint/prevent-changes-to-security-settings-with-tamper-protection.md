@@ -129,9 +129,10 @@ To learn more about Microsoft Defender Vulnerability Management, see [Dashboard 
 
 ## See also
 
-- [Protect macOS security settings with tamper protection](tamperprotection-macos.md)
 - [Built-in protection helps guard against ransomware](built-in-protection.md)
 - [Frequently asked questions on tamper protection](faqs-on-tamper-protection.yml)
 - [Troubleshoot problems with tamper protection](troubleshoot-problems-with-tamper-protection.yml)
+- [Defender for Endpoint on non-Windows devices](configure-endpoints-non-windows.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
 
