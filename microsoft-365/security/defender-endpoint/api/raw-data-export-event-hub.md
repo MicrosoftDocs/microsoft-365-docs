@@ -46,7 +46,7 @@ ms.date: 12/18/2020
 
 1. Log in to the [Microsoft 365 Defender](https://security.microsoft.com) as a ***Global Administrator*** or ***Security Administrator***.
 
-2. Go to the [Data export settings page](https://security.microsoft.com/interoperability/dataexport) in the Microsoft Defender portal.
+2. Go to the [Data export settings page](https://security.microsoft.com/securitysettings/defender/raw_data_export) in the Microsoft Defender portal.
 
 3. Click on **Add data export settings**.
 
