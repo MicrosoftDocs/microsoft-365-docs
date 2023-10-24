@@ -185,7 +185,7 @@ sections:
           6. Search for and select the users whom you want to add. 
           7. If a user's business email is different from their sign-in email, enter the alternate email address.
           8. Select **Review + Apply**. 
-          9. Continue to [Step 2. Assign contract IDs to VL users](#Step-2.-Assign-contract-IDs-to-VL-users).
+          9. Continue to "Step 2. Assign contract IDs to VL users."
 
       - question: |
           Step 2. Assign contract IDs to VL users
@@ -193,7 +193,7 @@ sections:
           1. On the **Assign users to contracts** page, select the expand button next to a user, then select **Add contracts**. You see a list of all the license IDs for which you're an administrator.
           2. Select the contracts that you want to assign to the selected user, then select **Add**.
           3. When you return to the **Assign users to contracts** page, expand the user details again. You now see the list of license IDs that you assigned to that user.
-          4. Continue to Step 3. Assign VL roles to users.
+          4. Continue to "Step 3. Assign VL roles to users."
 
       - question: |
           Step 3. Assign VL roles to users.
@@ -212,36 +212,33 @@ sections:
             
           A notification email is also sent to users if their permissions for a license ID change. This email also comes from microsoft-noreply@microsoft.com, with the subject line "Permission changes for Microsoft Volume Licensing contracts."
 
-  - name: Ignored
-    questions:
-      - question: |
-          How do I edit or remove permissions of existing VL users?
-        answer: |
-          When you delete a VL user, the permissions assigned to that user are removed for all the license IDs to which they were assigned, and the user is removed from the **Manage Assignments** list.
+additionalContent: |
 
-          1. Go to the Microsoft 365 admin center.
-          2. In the **Navigation menu**, select **Billing** > **Your products**.
-          3. On the **Your products** page, select the **Volume Licensing** tab.
-          4. In the **Role assignments** section, select **Manage CL role assignments**.
-          5. Find the user you want to manage roles for, and select **View access**.
-            - In the details pane, select the **Volume licensing roles** drop-down list for the license ID that you want to change, then either select or clear the check boxes for the roles you want to add or remove.
-          6. Select **Verify and save changes**.
+  ## How do I edit or remove permissions of existing VL users?
 
-          An email is sent to notify the user of the changes.
+  When you delete a VL user, the permissions assigned to that user are removed for all the license IDs to which they were assigned, and the user is removed from the **Manage Assignments** list.
+
+  1. Go to the Microsoft 365 admin center.
+  2. In the **Navigation menu**, select **Billing** > **Your products**.
+  3. On the **Your products** page, select the **Volume Licensing** tab.
+  4. In the **Role assignments** section, select **Manage CL role assignments**.
+  5. Find the user you want to manage roles for, and select **View access**.
+      - In the details pane, select the **Volume licensing roles** drop-down list for the license ID that you want to change, then either select or clear the check boxes for the roles you want to add or remove.
+  6. Select **Verify and save changes**.
+
+  An email is sent to notify the user of the changes.
          
-          > [!NOTE]
-          > Updated permissions can take up to two hours for the role change to be reflected on the **Manage assignments** page. For new agreements, it can take up to 10 hours for contract changes to take effect.
+  > [!NOTE]
+  > Updated permissions can take up to two hours for the role change to be reflected on the **Manage assignments** page. For new agreements, it can take up to 10 hours for contract changes to take effect.
 
-      - question: |
-          How do I provide feedback about VL features in the Microsoft 365 admin center?
-        answer: |
-          Microsoft welcomes feedback about existing VL functionality and suggestions for new features. You can use the **Give feedback** button on the bottom right of any page in the Microsoft 365 admin center to submit your feedback directly to our product engineering team. Providing screenshots and details helps the team investigate and incorporate your feedback.
+  ## How do I provide feedback about VL features in the Microsoft 365 admin center?
 
-      - question: |  
-          How do I contact support?
-        answer: |
-          1. In the Microsoft 365 admin center, select the **Help & support** button.
-          2. Type a description of your issue into the text box.
-          3. If none of the offered solutions match your needs, you can submit a support ticket to the VL support team. Be sure to provide your VL license ID and a phone number where our team can use to reach you. 
-          4. Choose email method to reach out to support team.
-          5. You can also [Contact Us](/licensing/contact-us) by phone or by web form for VL support. 
+  Microsoft welcomes feedback about existing VL functionality and suggestions for new features. You can use the **Give feedback** button on the bottom right of any page in the Microsoft 365 admin center to submit your feedback directly to our product engineering team. Providing screenshots and details helps the team investigate and incorporate your feedback.
+
+  ## How do I contact support?
+ 
+  1. In the Microsoft 365 admin center, select the **Help & support** button.
+  2. Type a description of your issue into the text box.
+  3. If none of the offered solutions match your needs, you can submit a support ticket to the VL support team. Be sure to provide your VL license ID and a phone number where our team can use to reach you. 
+  4. Choose email method to reach out to support team.
+  5. You can also [Contact Us](/licensing/contact-us) by phone or by web form for VL support. 
