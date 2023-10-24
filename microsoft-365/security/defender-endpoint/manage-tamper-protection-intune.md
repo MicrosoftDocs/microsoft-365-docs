@@ -5,7 +5,7 @@ manager: dansimp
 description: Turn tamper protection on or off for your organization in Microsoft Intune.
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
-ms.date: 09/27/2023
+ms.date: 10/24/2023
 audience: ITPro
 ms.topic: how-to
 author: denisebmsft
@@ -89,7 +89,7 @@ If your organization has [exclusions defined for Microsoft Defender Antivirus](c
 |---|---|
 | Microsoft Defender platform | Devices are running Microsoft Defender platform `4.18.2211.5` or later. For more information, see [Monthly platform and engine versions](microsoft-defender-antivirus-updates.md#monthly-platform-and-engine-versions). |
 | `DisableLocalAdminMerge` setting | This setting is also known as preventing local list merging. `DisableLocalAdminMerge` is enabled so that settings configured on a device aren't merged with organization policies, such as settings in Intune. For more information, see [DisableLocalAdminMerge](/windows/client-management/mdm/defender-csp). |
-| Device management | Devices are either managed in Intune, or are [comanaged with Intune and Configuration Manager](/mem/configmgr/comanage/overview). Sense must be enabled, and [tenant attach](/mem/configmgr/tenant-attach/) isn't used. |
+| Device management | Devices are either managed in Intune only, or are managed with Configuration Manager only. Sense must be enabled. |
 | Antivirus exclusions | Microsoft Defender Antivirus exclusions are managed in Microsoft Intune. For more information, see [Settings for Microsoft Defender Antivirus policy in Microsoft Intune for Windows devices](/mem/intune/protect/antivirus-microsoft-defender-settings-windows). <br/><br/>Functionality to protect Microsoft Defender Antivirus exclusions is enabled on devices. For more information, see [How to determine whether antivirus exclusions are tamper protected on a Windows device](#how-to-determine-whether-antivirus-exclusions-are-tamper-protected-on-a-windows-device). |
 
 > [!TIP]
@@ -101,22 +101,20 @@ You can use a registry key to determine whether the functionality to protect Mic
 
 1. On a Windows device open Registry Editor. (Read-only mode is fine; you're not editing the registry key.)
 
-2. To confirm that the device is managed by Intune or comanaged by Intune and Configuration Manager, go to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender` (or `HKLM\SOFTWARE\Microsoft\Windows Defender`), and look for a `REG_DWORD` entry called `ManagedDefenderProductType`. 
+2. To confirm that the device is managed by Intune only or managed by Configuration Manager only, with Sense enabled, check the following registry key values:
 
-   | ManagedDefenderProductType Value | What the value means |
-   |---|---|
-   | `6` | The device is managed by Intune only. <br/>(*Meets a requirement for exclusions to be tamper protected.*) |
-   | `7` | The device is comanaged by Intune and Configuration Manager. <br/>(*Meets a requirement for exclusions to be tamper protected.*) |
-   | A value other than `6` or `7` | The device isn't managed by Intune or comanaged with Intune and Configuration Manager. <br/>(*Exclusions aren't tamper protected*.) |
+   - `ManagedDefenderProductType` (located at `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender` or `HKLM\SOFTWARE\Microsoft\Windows Defender`) 
+   - `EnrollmentStatus` (located at `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SenseCM` or `HKLM\SOFTWARE\Microsoft\SenseCM`)
 
-3. To confirm that Sense is enabled, go to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SenseCM` (or `HKLM\SOFTWARE\Microsoft\SenseCM`), and look for a `REG_DWORD` entry called `EnrollmentStatus`.
+   The following table summarizes what the registry key values mean:
 
-   | EnrollmentStatus value | What the value means |
-   |---|---|
-   | `4` | Sense is enabled on the device. <br/>(*Meets a requirement for exclusions to be tamper protected.*) |
-   | A value other than `4` | Sense isn't enabled on the device. <br/>(*Exclusions aren't tamper protected*.) |
+   | ManagedDefenderProductType value | EnrollmentStatus value | What the value means |
+   |---|---|---|
+   | `6` | (any value) |The device is managed by Intune only. <br/>(*Meets a requirement for exclusions to be tamper protected.*) |
+   | `7` | `4` | The device is managed by Configuration Manager only. <br/>(*Meets a requirement for exclusions to be tamper protected.*) |
+   | A value other than `6` or `7` | (any value) | The device isn't managed by Intune or Configuration Manager. <br/>(*Exclusions aren't tamper protected*.) |
 
-4. To confirm that tamper protection is deployed and that exclusions are tamper protected, go to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Features` (or `HKLM\SOFTWARE\Microsoft\Windows Defender\Features`), and look for a `REG_DWORD` entry called `TPExclusions`.
+3. To confirm that tamper protection is deployed and that exclusions are tamper protected, go to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Features` (or `HKLM\SOFTWARE\Microsoft\Windows Defender\Features`), and look for a `REG_DWORD` entry called `TPExclusions`.
 
    | TPExclusions | What the value means |
    |---|---|
