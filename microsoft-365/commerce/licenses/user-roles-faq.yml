@@ -129,14 +129,14 @@ sections:
         answer: |
           The **Manage Assignments** page contains a list of all the VL users that you invited and includes information like their status and the VL roles that you assigned to them. The following table explains each column in the list.
 
-          **<Insert table>**
+          **Insert table**
 
       - question: |
           Understand VL user statuses
         answer: |
           The following table lists the statuses that you might see in the **Status** column on the **Manage Assignments** page.
 
-          **<Insert table>**
+          **Insert table**
 
       - question: |
           Manage VL admin inheritance
