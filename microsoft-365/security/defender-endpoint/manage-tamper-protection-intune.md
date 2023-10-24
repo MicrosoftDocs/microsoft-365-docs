@@ -112,9 +112,9 @@ You can use a registry key to determine whether the functionality to protect Mic
    |---|---|---|
    | `6` | (any value) |The device is managed by Intune only. <br/>(*Meets a requirement for exclusions to be tamper protected.*) |
    | `7` | `4` | The device is managed by Configuration Manager only. <br/>(*Meets a requirement for exclusions to be tamper protected.*) |
-   | A value other than `6` or `7` | (any value) | The device isn't managed by Intune or Configuration Manager. <br/>(*Exclusions aren't tamper protected*.) |
+   | A value other than `6` or `7` | (any value) | The device isn't managed by Intune only or Configuration Manager only. <br/>(*Exclusions aren't tamper protected*.) |
 
-3. To confirm that tamper protection is deployed and that exclusions are tamper protected, go to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Features` (or `HKLM\SOFTWARE\Microsoft\Windows Defender\Features`), and look for a `REG_DWORD` entry called `TPExclusions`.
+3. To confirm that tamper protection is deployed and that exclusions are tamper protected, check the `TPExclusions` registry key (located at `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Features` or `HKLM\SOFTWARE\Microsoft\Windows Defender\Features`).
 
    | TPExclusions | What the value means |
    |---|---|
