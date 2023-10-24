@@ -134,21 +134,14 @@ sections:
       - question: |
           How can I confirm whether exclusions are tamper protected on a Windows device?
         answer: |
-         1. On a Windows device open Registry Editor. (Read-only mode is fine; don't edit the registry key.)
-         
-         2. Go to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Features` (or `HKLM\SOFTWARE\Microsoft\Windows Defender\Features`), and look for a `REG_DWORD` entry called **TPExclusions**. 
-
-          - If **TPExclusions** has a value of `1`, then all required conditions are met, and the new functionality to protect exclusions is enabled on the device. In this case, exclusions are tamper protected.
-          - If **TPExclusions** has a value of `0`, then tamper protection isn't currently protecting exclusions on the device. In this case, review the requirements in [Tamper protection for antivirus exclusions](/microsoft-365/security/defender-endpoint/manage-tamper-protection-intune#tamper-protection-for-antivirus-exclusions).
-
-          > [!CAUTION]
-          > Don't change the value of **TPExclusions**. Use the preceding procedure for information only. Changing the key has no effect on whether tamper protection applies to exclusions.
+         Follow the guidance in [Manage tamper-protected antivirus exclusions](manage-tamper-protection-intune.md#tamper-protection-for-antivirus-exclusions).
 
       - question: |
-          Can I configure tamper protection with Microsoft Configuration Manager?
+          Can I configure tamper protection with Configuration Manager?
         answer: |
-          If you're using tenant attach, you can configure tamper protection with Configuration Manager. Similar to using Intune, you can apply tamper protection to your whole organization, or to specific users and devices. For more information, see the following resources:
+          Yes. Similar to using Intune, you can apply tamper protection to your whole organization, or to specific users and devices. For more information, see the following resources:
 
+          - [Manage tamper protection using Intune](manage-tamper-protection-intune.md) 
           - [Manage tamper protection using tenant attach with Configuration Manager, version 2006](manage-tamper-protection-configuration-manager.md)
           - [Tech Community blog: Announcing Tamper Protection for Configuration Manager Tenant Attach clients](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/announcing-tamper-protection-for-configuration-manager-tenant/ba-p/1700246#.X3QLR5Ziqq8.linkedin)
 
