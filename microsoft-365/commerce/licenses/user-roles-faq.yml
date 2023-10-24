@@ -164,7 +164,7 @@ sections:
       - question: |
           Manage VL admin inheritance
         answer: |
-          If you're the Primary Contact, Notices Correspondent, or Online Access Contact named on a Microsoft Business and Services Agreement (MBSA), you can opt-in to inherit VL admin permissions on every license ID added under that MBSA.
+          If you're the Primary Contact, Notices Correspondent, or Online Access Contact named on a Microsoft Business and Services Agreement (MBSA), you can opt in to inherit VL admin permissions on every license ID added under that MBSA.
 
           To view your opt-in preferences, use the following steps.
 
