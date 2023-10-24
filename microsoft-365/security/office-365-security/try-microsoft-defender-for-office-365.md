@@ -430,12 +430,12 @@ In **audit mode**, you're looking for reports that show detections by the evalua
 
 ## Required permissions
 
-The following permissions are required in [Azure AD](../../admin/add-users/about-admin-roles.md) to set up an evaluation or trial of Defender for Microsoft 365:
+The following permissions are required in [Microsoft Entra ID](../../admin/add-users/about-admin-roles.md) to set up an evaluation or trial of Defender for Microsoft 365:
 
 - *Create, modify or delete an evaluation or trial*: Membership in the **Security Administrator** or **Global Administrator** roles.
 - *View evaluation policies and reports in audit mode*: Membership in the **Security Administrator** or **Security Reader** roles.
 
-For more information about Azure AD permissions in the Microsoft 365 Defender portal, see [Azure AD roles in the Microsoft 365 Defender portal](mdo-portal-permissions.md#azure-ad-roles-in-the-microsoft-365-defender-portal)
+For more information about Microsoft Entra permissions in the Microsoft 365 Defender portal, see [Microsoft Entra roles in the Microsoft 365 Defender portal](mdo-portal-permissions.md#azure-ad-roles-in-the-microsoft-365-defender-portal)
 
 ## Frequently asked questions
 

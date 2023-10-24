@@ -40,7 +40,7 @@ We're continuously adding new features to [the Microsoft 365 admin center](admin
 
 And if you'd like to know what's new with other Microsoft cloud services:
 
-- [What's new in Azure Active Directory](/azure/active-directory/fundamentals/whats-new)
+- [What's new in Microsoft Entra ID](/azure/active-directory/fundamentals/whats-new)
 - [What's new in the Exchange admin center](/Exchange/whats-new)
 - [What's new in Microsoft Intune](/mem/intune/fundamentals/whats-new)
 - [What's new in the Microsoft Purview compliance portal](/microsoft-365/compliance/whats-new)

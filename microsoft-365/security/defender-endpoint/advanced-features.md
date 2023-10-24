@@ -136,7 +136,7 @@ For more information, including how to configure tamper protection, see [Protect
 
 ## Show user details
 
-Turn on this feature so that you can see user details stored in Azure Active Directory. Details include a user's picture, name, title, and department information when investigating user account entities. You can find user account information in the following views:
+Turn on this feature so that you can see user details stored in Microsoft Entra ID. Details include a user's picture, name, title, and department information when investigating user account entities. You can find user account information in the following views:
 
 - Alert queue
 - Device details page
@@ -213,7 +213,7 @@ Defender for Endpoint can be integrated with [Microsoft Intune](/intune/what-is-
 This feature is only available if you've the following prerequisites:
 
 - A licensed tenant for Enterprise Mobility + Security E3, and Windows E5 (or Microsoft 365 Enterprise E5)
-- An active Microsoft Intune environment, with Intune-managed Windows devices [Azure AD-joined](/azure/active-directory/devices/concept-azure-ad-join/).
+- An active Microsoft Intune environment, with Intune-managed Windows devices [Microsoft Entra joined](/azure/active-directory/devices/concept-azure-ad-join/).
 
 ### Conditional Access policy
 

@@ -77,7 +77,7 @@
           items:
             - name: Synchronize domain users to Microsoft 365
               href: setup/manage-domain-users.md
-            - name: Access resources from an Azure AD-joined device
+            - name: Access resources from a Microsoft Entra joined device
               href: setup/access-resources.md
     - name: Overview of the Microsoft 365 admin center
       items:
@@ -115,12 +115,10 @@
              href: add-users/add-users.md
            - name: Add a new employee
              href: add-users/add-new-employee.md
-           - name: Assign licenses to users
+           - name: Assign or unassign licenses for users
              href: manage/assign-licenses-to-users.md  
            - name: Assign admin roles
              href: add-users/assign-admin-roles.md
-           - name: Unassign licenses from users
-             href: manage/remove-licenses-from-users.md
            - name: Turn pronouns on or off
              href: add-users/turn-pronouns-on-or-off.md
            - name: Guest users
@@ -443,7 +441,7 @@
                 href: manage/servicenow-overview-v1.md
               - name: Configure basic authentication
                 href: manage/servicenow-basic-authentication-v1.md
-              - name: Configure Microsoft 365 support integration with Azure AD Auth Token
+              - name: Configure Microsoft 365 support integration with Microsoft Entra auth Token
                 href: manage/servicenow-aad-oauth-token-v1.md
               - name: Testing the configuration
                 href: manage/servicenow-testing-the-configuration-v1.md

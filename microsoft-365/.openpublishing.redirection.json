@@ -1,6 +1,11 @@
 {
     "redirections": [
         {
+            "source_path": "security/defender/microsoft-365-security-mda-redirection.md",
+            "redirect_url": "/microsoft-365/security/defender/microsoft-365-security-center-defender-cloud-apps#redirection-from-the-classic-microsoft-defender-for-cloud-apps-portal-to-microsoft-365-defender",
+            "redirect_document_id": false
+        }, 
+        {
             "source_path": "business-video/TOC",
             "redirect_url": "https://www.youtube.com/channel/UCBcPPMQmVe5O3on4v5VKrYA",
             "redirect_document_id": false
