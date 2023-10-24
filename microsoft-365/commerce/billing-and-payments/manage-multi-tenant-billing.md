@@ -70,7 +70,7 @@ When you add an associated billing tenant to your billing account, you can enabl
 Before you begin, make sure that you have either the tenant ID, or the primary domain name for the tenant you want to invite. For more information, see [Find a tenant ID or domain name](https://aka.ms/findtenantiddomain).
 
 1. In the Microsoft 365 admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Billing accounts</a> page.
-2. Select the name of the billing account that ou want to use as the primary billing tenant.
+2. Select the name of the billing account that you want to use as the primary billing tenant.
 3. On the billing account details page, select the **Associated billing tenants** tab, then select **Add an associated billing tenant**.
 4. In the **Add an** **associated billing tenant** pane, enter the tenant ID or domain name, then enter a friendly name for the tenant.
 5. In the **Access settings** section, select one or both options for **Provisioning** and **Billing management**.
