@@ -9,7 +9,6 @@ author: mjcaparas
 ms.reviewer: mkaminska
 ms.localizationpriority: medium
 manager: dansimp
-ms.reviewer: mkaminska
 audience: ITPro
 ms.collection: 
 - m365-security
