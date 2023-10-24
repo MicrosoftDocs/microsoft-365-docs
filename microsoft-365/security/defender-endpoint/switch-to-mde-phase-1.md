@@ -31,7 +31,7 @@ search.appverid: met150
 
 | ![Phase 1: Prepare.](images/phase-diagrams/prepare.png#lightbox)<br/>Phase 1: Prepare | [![Phase 2: Set up](images/phase-diagrams/setup.png#lightbox)](switch-to-mde-phase-2.md)<br/>[Phase 2: Set up](switch-to-mde-phase-2.md) | [![Phase 3: Onboard](images/phase-diagrams/onboard.png#lightbox)](switch-to-mde-phase-3.md)<br/>[Phase 3: Onboard](switch-to-mde-phase-3.md) |
 |--|--|--|
-|*You are here!*| | |
+|*You're here!*| | |
 
 **Welcome to the Prepare phase of [migrating to Defender for Endpoint](switch-to-mde-overview.md#the-migration-process)**.
 
@@ -67,7 +67,7 @@ Need help with updating your organization's devices? See the following resources
 
 Now that you've updated your organization's devices, the next step is to get Defender for Endpoint, assign licenses, and make sure the service is provisioned.
 
-1. Buy or try Defender for Endpoint today. [Start a free trial or request a quote](https://aka.ms/mdatp). Note that Microsoft 365 E3 includes Defender for Endpoint Plan 1, and Microsoft 365 E5 includes Defender for Endpoint Plan 2.
+1. Buy or try Defender for Endpoint today. [Start a free trial or request a quote](https://aka.ms/mdatp). Microsoft 365 E3 includes Defender for Endpoint Plan 1, and Microsoft 365 E5 includes Defender for Endpoint Plan 2.
 
 2. Verify that your licenses are properly provisioned. [Check your license state](production-deployment.md#check-license-state).
 
