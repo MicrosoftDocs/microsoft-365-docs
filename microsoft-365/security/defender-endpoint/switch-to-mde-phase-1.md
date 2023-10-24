@@ -77,10 +77,9 @@ Now that you've updated your organization's devices, the next step is to get Def
 
 At this point, you're ready to grant access to your security administrators and security operators to use the [Microsoft 365 Defender portal](https://security.microsoft.com).
 
-
 ## Step 3: Grant access to the Microsoft 365 Defender portal
 
-The <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> is where you and your security team will access and configure features and capabilities of Defender for Endpoint. To learn more, see [Overview of the Microsoft 365 Defender portal](use.md).
+The [Microsoft 365 Defender portal](https://security.microsoft.com) is where you and your security team access and configure features and capabilities of Defender for Endpoint. To learn more, see [Overview of the Microsoft 365 Defender portal](use.md).
 
 Permissions to the Microsoft 365 Defender portal can be granted by using either basic permissions or role-based access control (RBAC). We recommend using RBAC so that you have more granular control over permissions.
 
@@ -100,7 +99,7 @@ Permissions to the Microsoft 365 Defender portal can be granted by using either 
 
 To enable communication between your devices and Defender for Endpoint, you might have to configure proxy and internet settings. The following table includes links to resources you can use to configure your proxy and internet settings for various operating systems:
 
-|For this plan...| And this operating system... |See these resources.|
+|Subscription| Operating systems |Resources|
 |---|---|---|
 |[Defender for Endpoint Plan 1](defender-endpoint-plan-1.md)|[Windows 11](/windows/whats-new/windows-11-overview)<br/>[Windows 10](/windows/release-health/release-information)<br/> [Windows Server 2022](/windows-server/get-started/whats-new-in-windows-server-2022) <br/> [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019) <br/>  [Windows Server 1803, or later](/windows-server/get-started/whats-new-in-windows-server-1803) <br/> [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)\*<br/>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)\* |[Configure and validate Microsoft Defender Antivirus network connections](configure-network-connections-microsoft-defender-antivirus.md)|
 |[Defender for Endpoint Plan 1](defender-endpoint-plan-1.md)|macOS (see [System requirements](microsoft-defender-endpoint-mac.md))|[Defender for Endpoint on macOS: Network connections](microsoft-defender-endpoint-mac.md#network-connections)|
