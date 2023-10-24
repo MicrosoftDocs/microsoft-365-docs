@@ -242,14 +242,13 @@ For detailed syntax and parameter information, see [Set-TenantAllowBlockListItem
    - Select the entry from the list by clicking anywhere in the row other than the check box. In the details flyout that opens, select :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png" border="false"::: **Delete** at the top of the flyout.
 
      > [!TIP]
-     > To see details about other entries without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
+     > - To see details about other entries without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
+     > - You can select multiple entries by selecting each check box, or select all entries by selecting the check box next to the **Value** column header.
 
 4. In the warning dialog that opens, select **Delete**.
 
 Back on the **Domains & addresses** tab, the entry is no longer listed.
 
-> [!TIP]
-> You can select multiple entries by selecting each check box, or select all entries by selecting the check box next to the **Value** column header.
 
 #### Use PowerShell to remove entries for domains and email addresses from the Tenant Allow/Block List
 
@@ -463,10 +462,11 @@ For detailed syntax and parameter information, see [Set-TenantAllowBlockListSpoo
 
 3. On the **Spoofed senders** tab, select the entry from the list by selecting the check box next to the first column, and then select the :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png" border="false"::: **Delete** action that appears.
 
+   > [!NOTE]
+   > You can select multiple entries by selecting each check box, or select all entries by selecting the check box next to the **Spoofed user** column header.
+
 4. In the warning dialog that opens, select **Delete**.
 
-> [!NOTE]
-> You can select multiple entries by selecting each check box, or select all entries by selecting the check box next to the **Spoofed user** column header.
 
 #### Use PowerShell to remove entries for spoofed senders from the Tenant Allow/Block List
 
@@ -528,7 +528,7 @@ Instead, the domain or sender is added to the **Trusted senders and domains** se
 For submission instructions for impersonation false positives, see [Report good email to Microsoft](submissions-admin.md#report-good-email-to-microsoft).
 
 > [!NOTE]
-> Currently, Graph Impersonation isn't taken care of from here.
+> Currently, User (or graph) Impersonation isn't taken care of from here.
 
 ## Related articles
 
