@@ -6,6 +6,7 @@ search.appverid: met150
 ms.service: microsoft-365-security
 ms.author: macapara
 author: mjcaparas
+ms.reviewer: mkaminska
 ms.localizationpriority: medium
 manager: dansimp
 ms.reviewer: mkaminska
@@ -15,7 +16,7 @@ ms.collection:
 - tier1
 ms.topic: how-to
 ms.subservice: mde
-ms.date: 10/03/2023
+ms.date: 10/24/2023
 ---
 
 
