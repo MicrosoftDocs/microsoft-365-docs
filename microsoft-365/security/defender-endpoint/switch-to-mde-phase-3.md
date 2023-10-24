@@ -16,9 +16,9 @@ ms.collection:
 ms.custom: 
 - migrationguides
 - admindeeplinkDEFENDER
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/19/2023
-ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
+ms.reviewer: jesquive, chventou, jonix, chriggs, owtho, yongrhee
 search.appverid: met150
 ---
 
@@ -31,7 +31,7 @@ search.appverid: met150
 
 | [![Phase 1: Prepare3.](images/phase-diagrams/prepare.png#lightbox)](switch-to-mde-phase-1.md)<br/>[Phase 1: Prepare](switch-to-mde-phase-1.md) | [![Phase 2: Set up](images/phase-diagrams/setup.png#lightbox)](switch-to-mde-phase-2.md)<br/>[Phase 2: Set up](switch-to-mde-phase-2.md) | ![Phase 3: Onboard](images/phase-diagrams/onboard.png#lightbox)<br/>Phase 3: Onboard |
 |--|--|--|
-|| |*You are here!* |
+|| |*You're here!* |
 
 **Welcome to Phase 3 of [migrating to Defender for Endpoint](switch-to-mde-overview.md#the-migration-process)**. This migration phase includes the following steps:
 

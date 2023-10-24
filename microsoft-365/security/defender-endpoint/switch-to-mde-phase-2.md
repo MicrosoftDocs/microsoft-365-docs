@@ -18,7 +18,7 @@ ms.collection:
   - tier1
 ms.topic: how-to
 ms.custom: migrationguides
-ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
+ms.reviewer: jesquive, chventou, jonix, chriggs, owtho, yongrhee
 search.appverid: met150
 ---
 
