@@ -1,6 +1,6 @@
 ### YamlMime:FAQ
 metadata:
-  title: "Volume licenseing user roles FAQ"
+  title: "Volume licensing user roles FAQ"
   author: cmcatee-MSFT
   ms.author: cmcatee
   manager: scotv
@@ -18,7 +18,7 @@ metadata:
   ms.localizationpriority: medium
   description: "Frequently asked questions about volume licensing user roles in the Microsoft 365 admin center."
   ms.date: 10/24/2023
-title: Manage volume licenseing user roles Frequently Asked Questions
+title: Manage volume licensing user roles Frequently Asked Questions
 summary: |
 
 sections:
@@ -32,7 +32,7 @@ sections:
       - question: |
           Who has permissions to manage VL user roles?
         answer: |
-          Every VL contract, has at least one designated VL admin responsible for registering the licenses and managing VL roles. This includes viewing, adding, editing, and removing VL user roles, including for additional VL admins. 
+          Every VL contract has at least one designated VL admin responsible for registering the licenses and managing VL roles. This includes viewing, adding, editing, and removing VL user roles, including for other VL admins. 
 
       - question: |
           Who is the VL admin?
@@ -40,14 +40,14 @@ sections:
           By default, the VL admin role is assigned to the Notices Correspondent, or the Primary Contact provided by the License Solutions Partner (LSP), or reseller, when setting up the VL contract.
 
           > [!IMPORTANT]
-          > If you're the sole VL admin, your absence may hinder your organization's ability to access and manage its VL entitlements. We recommend that you assign at least one alternate admin per license ID.
+          > If you're the sole VL admin, your absence might hinder your organization's ability to access and manage its VL entitlements. We recommend that you assign at least one alternate admin per license ID.
 
       - question: |
           What if I don't want to be a VL admin?
         answer: |
           Primary or Notice contacts on the VL contract can choose to forward the invitation to register a license ID to someone else who can then register as the VL admin, instead.  The admin should forward the invitation for each license ID that they don’t want to administer.
 
-          VL admins who've already registered must assign other VL users as admins.  
+          VL admins who have already registered must assign other VL users as admins.  
 
           > [!NOTE]
           > There can be more than one VL admin. Assigning another person to be a VL admin for a license ID doesn't remove you from the VL admin role for that license ID. 
@@ -122,7 +122,7 @@ sections:
           5. Select **View access** for a user to view the license IDs for which they have permissions.
 
           > [!IMPORTANT]
-          > Users assigned a VL role in the Volume Licensing Service Center (VLSC) prior to September 15, 2023, and who didn't complete their registration by that date, aren't included in the **Manage Assignments** list in the Microsoft 365 admin center. If required, VL admins can use **Add users** to contact to add them back. 
+          > Users assigned a VL role in the Volume Licensing Service Center (VLSC) prior to September 15, 2023, and who didn't complete their registration by that date, aren't included in the **Manage Assignments** list in the Microsoft 365 admin center. If necessary, VL admins can use **Assign users to contracts** to add them back. 
 
       - question: |
           Understand the Manage Assignments page
@@ -135,7 +135,7 @@ sections:
           |Status                     |Indicates the status of the user. For a list of explanations for the possible status, see Understand VL user statuses. |
           |Actions                    |Indicates the action you can take for the user. For example, **View access**, **Resend invite**, and **Reset invite**. |
           |Sign-in email              |The email address used to sign in to Microsoft 365 admin center. In most cases, this is the user's work email, but formats like user@userorg.onmicrosoft.com are also possible. This is useful for organizations that haven't enabled Microsoft Entra.  |
-          |Business email             |The email address listed on the VL contract&ndash;typically the Primary Contact or Notices Correspondent.<br/><br/>When you add new VL users, the invitation is sent to the **Business email** address so that the admin can then forward it to the new user. |
+          |Business email             |The email address listed on the VL contract &ndash; typically the Primary Contact or Notices Correspondent.<br/><br/>When you add new VL users, the invitation is sent to the **Business email** address so that the admin can then forward it to the new user. |
           |Volume licensing roles     |Lists the VL roles assigned to the user. |
 
 
@@ -148,10 +148,10 @@ sections:
           |-------------------------|-------------|
           |Active                   |The user already has registered permissions to one or more license IDs. |
           |Assignment in Progress   |A VL admin has assigned permissions, and no further edits can be made until the status is active. This might take up to two hours during peak processing periods. |
-          |Failed                   |Permissions assignment has failed. VL admins should assign permissions to the user again. If role assignment continues to fail, please contact support to help investigate the problem. |
+          |Failed                   |Permissions assignment has failed. VL admins should assign permissions to the user again. If role assignment continues to fail, contact support to help investigate the problem. |
           |Invitation sent          |The user has yet to register their assigned permissions by accepting the invitation email. |
           |Invitation expired       |The user failed to register their assigned permissions by accepting the invitation email. The VL admin can reset the invitation. |
-          |User not found           |The user is not in the organization's tenant.  |
+          |User not found           |The user isn't in the organization's tenant.  |
 
       - question: |
           Manage VL admin inheritance
@@ -175,12 +175,12 @@ sections:
       - question: |
           Step 1. Add new VL users
         answer: |
-          Add new users who doesn't already have VL permissions.
+          Add new users who don't already have VL permissions.
 
           1. Go to the Microsoft 365 admin center.
           2. In the **Navigation menu**, select **Billing** > **Your products**.
           3. On the **Your products** page, select the **Volume Licensing** tab. 
-          4. In the **Role assignments **section, select **Assign users to contracts**. 
+          4. In the **Role assignments** section, select **Assign users to contracts**. 
           5. Select **Add or edit users**. 
           6. Search for and select the users whom you want to add. 
           7. If a user's business email is different from their sign-in email, enter the alternate email address.
@@ -200,9 +200,9 @@ sections:
         answer: |
           After a license ID is assigned to a VL user, you can assign VL roles. A user might have different VL roles for different license IDs.
 
-          1. On the **Assign users to contracts** page, select the expand button next to a user, then select **Assign roles**. You see a list of all the license IDs which are assigned in the previous step.
+          1. On the **Assign users to contracts** page, select the expand button next to a user, then select **Assign roles**. You see a list of all the license IDs that are assigned in the previous step.
           2. In the **Assign roles to selected contracts** pane, select one or more roles from the **Volume licensing roles** drop-down list.
-            -	To assign the same roles for other license IDs, select **Copy role properties**. Select additional license IDs that you want to assign the same roles for, then select **Paste role properties**. 
+            -	To assign the same roles for other license IDs, select **Copy role properties**. Select other license IDs that you want to assign the same roles for, then select **Paste role properties**. 
           3. Select **Apply**.
           4. When you return to the **Assign users to contracts** page, you see the user's details now include the new VL roles.
 
@@ -230,7 +230,7 @@ sections:
           An email is sent to notify the user of the changes.
          
           > [!NOTE]
-          > Updated permissions can take up to two hours for the role change to be reflected on the Manage assignments page. For new agreements, it can take up to 10 hours for contract changes to take effect.
+          > Updated permissions can take up to two hours for the role change to be reflected on the **Manage assignments** page. For new agreements, it can take up to 10 hours for contract changes to take effect.
 
       - question: |
           How do I provide feedback about VL features in the Microsoft 365 admin center?
