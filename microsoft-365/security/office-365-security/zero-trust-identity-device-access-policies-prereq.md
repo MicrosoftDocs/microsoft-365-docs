@@ -52,7 +52,7 @@ The following table details the prerequisite features and their configuration th
 |[Configure Microsoft Entra password protection](/azure/active-directory/authentication/concept-password-ban-bad). Microsoft Entra Password Protection detects and blocks known weak passwords and their variants, and can also block additional weak terms that are specific to your organization. Default global banned password lists are automatically applied to all users in a Microsoft Entra tenant. You can define additional entries in a custom banned password list. When users change or reset their passwords, these banned password lists are checked to enforce the use of strong passwords.||Microsoft 365 E3 or E5|
 |[Enable Microsoft Entra ID Protection](/azure/active-directory/identity-protection/overview-identity-protection). Microsoft Entra ID Protection enables you to detect potential vulnerabilities affecting your organization's identities and configure an automated remediation policy to low, medium, and high sign-in risk and user risk.||Microsoft 365 E5 or Microsoft 365 E3 with the E5 Security add-on|
 |**Enable modern authentication** for [Exchange Online](/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) and for [Skype for Business Online](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx). Modern authentication is a prerequisite for using MFA. Modern authentication is enabled by default for Office 2016 and 2019 clients, SharePoint, and OneDrive for Business.||Microsoft 365 E3 or E5|
-|[Enable continuous access evaluation](microsoft-365-continuous-access-evaluation.md) for Microsoft Entra ID. Continuous access evaluation proactively terminates active user sessions and enforces tenant policy changes in near real-time.||Microsoft 365 E3 or E5|
+|[Enable continuous access evaluation](/azure/active-directory/conditional-access/concept-continuous-access-evaluation) for Microsoft Entra ID. Continuous access evaluation proactively terminates active user sessions and enforces tenant policy changes in near real-time.||Microsoft 365 E3 or E5|
 
 ## Recommended client configurations
 
@@ -103,8 +103,8 @@ The following clients are recommended when a secure documents policy has been ap
 
 For more information about client support in Microsoft 365, see the following articles:
 
-- [Microsoft 365 Client App Support - Conditional Access](../../enterprise/microsoft-365-client-support-conditional-access.md)
-- [Microsoft 365 Client App Support - multifactor authentication](../../enterprise/microsoft-365-client-support-multi-factor-authentication.md)
+- [Microsoft 365 Client App Support - Conditional Access](/microsoft-365/enterprise/microsoft-365-client-support-conditional-access)
+- [Microsoft 365 Client App Support - multifactor authentication](/microsoft-365/enterprise/microsoft-365-client-support-multi-factor-authentication)
 
 ## Protecting administrator accounts
 
@@ -116,11 +116,11 @@ Here are some additional recommendations:
 
 - Use [Microsoft Entra Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-getting-started) to reduce the number of persistent administrative accounts.
 - [Use privileged access management](/purview/privileged-access-management) to protect your organization from breaches that may use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings.
-- Create and use separate accounts that are assigned [Microsoft 365 administrator roles](../../admin/add-users/about-admin-roles.md) *only for administration*. Admins should have their own user account for regular non-administrative use and only use an administrative account when necessary to complete a task associated with their role or job function.
+- Create and use separate accounts that are assigned [Microsoft 365 administrator roles](/microsoft-365/admin/add-users/about-admin-roles) *only for administration*. Admins should have their own user account for regular non-administrative use and only use an administrative account when necessary to complete a task associated with their role or job function.
 - Follow [best practices](/azure/active-directory/roles/best-practices) for securing privileged accounts in Microsoft Entra ID.
 
 ## Next step
 
-[![Step 2: Configure the common Zero Trust identity and access Conditional Access policies.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png#lightbox)](identity-access-policies.md)
+[![Step 2: Configure the common Zero Trust identity and access Conditional Access policies.](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png#lightbox)](zero-trust-identity-device-access-policies-common.md)
 
-[Configure the common Zero Trust identity and device access policies](identity-access-policies.md)
+[Configure the common Zero Trust identity and device access policies](zero-trust-identity-device-access-policies-common.md)

@@ -10,7 +10,7 @@ ms.topic: overview
 ms.service: microsoft-365-security
 ms.subservice: mdb
 ms.localizationpriority: medium
-ms.date: 07/19/2023
+ms.date: 10/24/2023
 ms.reviewer: nehabha
 f1.keywords: NOCSH 
 ms.collection: 
@@ -38,7 +38,7 @@ The following table lists the basic requirements you need to configure and use D
 | Requirement | Description |
 |:---|:---|
 | Subscription | Microsoft 365 Business Premium or Defender for Business (standalone). <br/>See [How to get Defender for Business](get-defender-business.md).  |
-| Datacenter | One of the following datacenter locations:  <br/>- European Union <br/>- United Kingdom <br/>- United States |
+| Datacenter | One of the following datacenter locations:  <br/>- European Union <br/>- United Kingdom <br/>- United States <br/>- Australia |
 | User accounts | - User accounts are created in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)). <br/>- Licenses for Defender for Business (or Microsoft 365 Business Premium) are assigned in the Microsoft 365 admin center.<br/><br/>To get help with this task, see [Add users and assign licenses](mdb-add-users.md). |
 | Permissions  | To sign up for Defender for Business, you must be a Global Admin.<br/><br/>To access the Microsoft 365 Defender portal, users must have one of the following [roles in Microsoft Entra ID](mdb-roles-permissions.md) assigned: <br/>- Security Reader <br/>- Security Admin <br/>- Global Admin<br/><br/>To learn more, see [Roles and permissions in Defender for Business](mdb-roles-permissions.md). |
 | Browser | Microsoft Edge or Google Chrome |
