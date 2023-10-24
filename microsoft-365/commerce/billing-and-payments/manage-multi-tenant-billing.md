@@ -42,7 +42,7 @@ If you’re an enterprise customer and you have more than one tenant, you can si
 
 Choosing to set up multiple billing tenants might be the right approach, depending on the needs of your organization. The following table compares using a single tenant or multi-tenant approach to help you decide which approach is right for your organization.
 
-| **For this billing area**   | **Consider using single-tenant billing accounts if:**  | **Consider using multiple tenants that share a single billing account if:**  |
+| For this billing area | Consider using single-tenant billing accounts if: | Consider using multiple tenants that share a single billing account if: |
 |-----------------------------|--------------------------------------------------------|------------------------------------------------------------------------------|
 | **Invoicing**               | You want purchases made by different billing accounts to always be in different invoices.    | You want purchases made by users in different tenants to be on either the same or different invoices, depending on your choice.  |
 | **Managing your purchases** | You want subscriptions used only in the tenant in which they're bought.   | You want subscriptions bought in one tenant to be created in a different tenant that shares the same billing account.  |
