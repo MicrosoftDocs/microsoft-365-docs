@@ -42,16 +42,14 @@ In most cases, full device offboarding isn't required when reonboarding. You can
 
 ## Migrating devices using the streamlined method
 
-The following table lists the available tools based on the device's operating system.
+### Migration recommendation:
 
-Migration recommendation:
-
-- **Start small**. It's recommended to start with a small set of devices first, apply the onboarding blob using any of the supported deployment tools, then monitor for connectivity. 
+- **Start small**. It's recommended to start with a small set of devices first, apply the onboarding blob using any of the supported deployment tools, then monitor for connectivity. If you are using a new onboarding policy, to prevent conflicts make sure to exclude device from any other existing onboarding policies.  
 
 - **Validate and monitor**. After onboarding the small set of devices, validate that devices have successfully onboarded and are communicating with the service. 
 
-- **Complete migration**. At this stage, you can gradually roll out the migration to a larger set of devices. Over time, you can remove the old URLs from your network device and replace previous onboarding policies to complete the migration.
-
+- **Complete migration**. At this stage, you can gradually roll out the migration to a larger set of devices. To complete the migration, you can rreplace previous onboarding policies and remove the old URLs from your network device.
+- 
 Validate [device prerequisites](configure-device-connectivity.md#prerequisites) before proceeding with any migrations. This information builds upon the previous article by focusing on migrating existing devices. 
 
 To reonboard devices, you will need to use the streamlined onboarding package. For more information on how to access the package, see [Streamlined connectivity](configure-device-connectivity.md).
@@ -64,6 +62,8 @@ Depending on the OS, migrations may require a device reboot or service restart o
   2.	`sudo launchctl load /Library/LaunchDaemons/com.microsoft.fresno.plist` 
 	
 - Linux: Restart the Defender for Endpoint service by running: `sudo systemctl restart mdatp`
+
+The following table lists migration instructions for the available onboarding tools based on the device's operating system. 
 
 ### [Windows 10 and 11](#tab/windows10and11)
 
@@ -335,7 +335,7 @@ For example: `https:mdav.us.endpoint.security.microsoft/com/storage`
 
 Follow the same instructions as for Windows.
 
-### Use Defender for Endpoint Client Analyzer (cross-platform) to validate connectivity post-onboarding for newly migrated endpoints
+### Use Defender for Endpoint Client Analyzer (cross-platform) to validate connectivity for newly migrated endpoints
 
 Download and run the client analyzer for macOS or Linux. For more information, see [Download and run the client analyzer](download-client-analyzer.md).
 
