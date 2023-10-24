@@ -115,7 +115,9 @@ To enable communication between your devices and Defender for Endpoint, you migh
 
 ## Step 5: Capture performance baseline data from the endpoint
 
-When migrating from one antivirus product to Microsoft Defender Antivirus, your organization's Help Desk's eyes will be on what's new. Thus, if you already had an application that was running hot (high cpu usage), their first troubleshooting step will be to disable Microsoft Defender Antivirus. Before doing that, we highly recommend capturing performance data from endpoints that have or will have Defender for Endpoint installed. Performance data should include the process list, CPU usage (aggregate across all cores), memory usage, and disk space availability on all mounted partitions. This information will help you determine whether what you are seeing is normal or unexpected after onboarding devices to Defender for Endpoint.
+When migrating from one antivirus product to Microsoft Defender Antivirus, your organization's Help Desk's eyes are on what's new. Thus, if you already had an application that was running hot (high cpu usage), their first troubleshooting step might be to disable Microsoft Defender Antivirus. Before doing that, we highly recommend capturing performance data from endpoints that have or will have Defender for Endpoint installed. 
+
+Performance data should include the process list, CPU usage (aggregate across all cores), memory usage, and disk space availability on all mounted partitions. This information helps determine whether what you are seeing is normal or unexpected after onboarding devices to Defender for Endpoint. 
 
 One of the tools that you can use is the Performance Monitor (perfmon). You can use it to collect a performance baseline of your Windows or Windows Server endpoint. See [Setting a local perfmon in a Windows client or Windows Server](/archive/blogs/yongrhee/setting-a-local-perfmon-in-a-windows-client-or-windows-server).
 
