@@ -122,7 +122,7 @@ sections:
           For more information, see [What happens when tamper protection is turned on](/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection#what-happens-when-tamper-protection-is-turned-on)?
 
       - question: |
-          If tamper protection is turned on in Microsoft 365 Defender, can Intune or Configuration Manager override it?
+          If tamper protection is turned on in Microsoft 365 Defender, can settings in Intune or Configuration Manager override it?
         answer: |
           When tamper protection is turned on in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), tamper protection is turned on, tenant wide. However, policies defined in Intune or Configuration Manager can override settings in the Microsoft 365 Defender portal. For example, you can define a policy in Intune or Configuration Manager that excludes certain devices from tamper protection. 
 
