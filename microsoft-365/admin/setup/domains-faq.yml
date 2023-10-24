@@ -146,8 +146,7 @@ sections:
           ::: moniker-end
           
           > [!NOTE]
-          > Changing the default domain affects new accounts only. This change does not impact user credentials or their access to applications or services. Removing or changing a domain on an account can impact mail, online storage,
-          > and login credentials.
+          > Changing the default domain affects new accounts only. This change does not impact user credentials or their access to applications or services. Removing or changing a domain on an account can impact mail, online storage, and login credentials.
 
       - question: Can I add custom subdomains or multiple domains to Microsoft 365?
         answer: |
