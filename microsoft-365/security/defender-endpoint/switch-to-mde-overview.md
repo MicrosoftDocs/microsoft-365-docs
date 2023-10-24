@@ -20,8 +20,8 @@ ms.collection:
 - tier1
 ms.topic: overview
 ms.custom: migrationguides
-ms.date: 01/12/2023
-ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
+ms.date: 10/24/2023
+ms.reviewer: jesquive, chventou, jonix, chriggs, owtho, yongrhee
 ms.subservice: mde
 search.appverid: met150
 ---
