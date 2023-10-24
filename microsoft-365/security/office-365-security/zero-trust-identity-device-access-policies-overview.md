@@ -24,92 +24,88 @@ ms.collection:
   - tier1
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 1/31/2023
+ms.date: 10/10/2023
 ---
 
 # Zero Trust identity and device access configurations
 
-Security architectures that rely on network firewalls and virtual private networks (VPNs) to isolate and restrict access to an organization's technology resources and services are no longer sufficient for a workforce that regularly requires access to applications and resources that exist beyond traditional corporate network boundaries.
+Today's workforce requires access to applications and resources that exist beyond traditional corporate network boundaries. Security architectures that rely on network firewalls and virtual private networks (VPNs) to isolate and restrict access to resources are no longer sufficient.
 
 To address this new world of computing, Microsoft highly recommends the Zero Trust security model, which is based on these guiding principles:
 
-- Verify explicitly
+- **Verify explicitly**: Always authenticate and authorize based on all available data points. This verification is where Zero Trust identity and device access policies are crucial to sign-in and ongoing validation.
+- **Use least privilege access**: Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection.
+- **Assume breach**: Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses.
 
-  Always authenticate and authorize based on all available data points. This is where Zero Trust identity and device access policies are crucial to sign-in and ongoing validation.
-
-- Use least privilege access
-
-  Limit user access with Just-In-Time and Just-Enough-Access (JIT/JEA), risk-based adaptive policies, and data protection.
-
-- Assume breach
-
-  Minimize blast radius and segment access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses.
-
-Here is the overall architecture of Zero Trust.
+Here's the overall architecture of Zero Trust:
 
 :::image type="content" source="../../media/zero-trust/zero-trust-architecture.png" alt-text="Diagram that shows Microsoft Zero Trust architecture." lightbox="../../media/zero-trust/zero-trust-architecture.png":::
 
 Zero Trust identity and device access policies address the **Verify explicitly** guiding principle for:
 
-- Identities
+- **Identities**: When an identity attempts to access a resource, verify that identity with strong authentication and ensure that requested access is compliant and typical.
+- **Devices (also called endpoints)**: Monitor and enforce device health and compliance requirements for secure access.
+- **Applications**: Apply controls and technologies to:
+  - Ensure appropriate in-app permissions.
+  - Control access based on real-time analytics.
+  - Monitor for abnormal behavior
+  - Control user actions.
+  - Validate secure configuration options.
 
-  When an identity attempts to access a resource, verify that identity with strong authentication and ensure that requested access is compliant and typical.
+This series of articles describe a set of identity and device access configurations and policies using Azure Active Directory (Azure AD) Conditional Access, Microsoft Intune, and other features. These configurations and policies provide Zero Trust access to Microsoft 365 for enterprise cloud apps and services, other SaaS services, and on-premises applications that are published with Azure AD Application Proxy.
 
-- Devices (also called endpoints)
+Zero Trust identity and device access settings and policies are recommended in three tiers:
 
-  Monitor and enforce device health and compliance requirements for secure access.
+- Starting point.
+- Enterprise.
+- Specialized security for environments with highly regulated or classified data.
 
-- Applications
-
-  Apply controls and technologies to discover shadow IT, ensure appropriate in-app permissions, gate access based on real-time analytics, monitor for abnormal behavior, control user actions, and validate secure configuration options.
-
-This series of articles describe a set of identity and device access prerequisite configurations and a set of Microsoft Entra Conditional Access, Microsoft Intune, and other policies for Zero Trust access to Microsoft 365 for enterprise cloud apps and services, other SaaS services, and on-premises applications published with Microsoft Entra application proxy.
-
-Zero Trust identity and device access settings and policies are recommended in three tiers: starting point, enterprise, and specialized security for environments with highly regulated or classified data. These tiers and their corresponding configurations provide consistent levels of Zero Trust protection across your data, identities, and devices.
-
-These capabilities and their recommendations:
+These tiers and their corresponding configurations provide consistent levels of Zero Trust protection across your data, identities, and devices. These capabilities and their recommendations:
 
 - Are supported in Microsoft 365 E3 and Microsoft 365 E5.
-- Are aligned with [Microsoft Secure Score](../defender/microsoft-secure-score.md) as well as [identity score in Microsoft Entra ID](/azure/active-directory/fundamentals/identity-secure-score), and will increase these scores for your organization.
-- Will help you implement these [five steps to securing your identity infrastructure](/azure/security/azure-ad-secure-steps).
+- Are aligned with [Microsoft Secure Score](../defender/microsoft-secure-score.md) and [identity score in Microsoft Entra ID](/azure/active-directory/fundamentals/identity-secure-score). Following the recommendations will increase these scores for your organization.
+- Help you to implement these [five steps to securing your identity infrastructure](/azure/security/azure-ad-secure-steps).
 
-If your organization has unique environment requirements or complexities, use these recommendations as a starting point. However, most organizations can implement these recommendations as prescribed.
+If your organization has unique requirements or complexities, use these recommendations as a starting point. However, most organizations can implement these recommendations as prescribed.
 
 Watch this video for a quick overview of identity and device access configurations for Microsoft 365 for enterprise.
-
-<br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxEDQ]
 
 > [!NOTE]
-> Microsoft also sells Enterprise Mobility + Security (EMS) licenses for Office 365 subscriptions. EMS E3 and EMS E5 capabilities are equivalent to those in Microsoft 365 E3 and Microsoft 365 E5. See [EMS plans](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/compare-plans-and-pricing) for the details.
+> Microsoft also sells Enterprise Mobility + Security (EMS) licenses for Office 365 subscriptions. EMS E3 and EMS E5 capabilities are equivalent to those in Microsoft 365 E3 and Microsoft 365 E5. For more information, see [EMS plans](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/compare-plans-and-pricing).
 
 ## Intended audience
 
-These recommendations are intended for enterprise architects and IT professionals who are familiar with Microsoft 365 cloud productivity and security services, which include Microsoft Entra ID (identity), Microsoft Intune (device management), and Microsoft Purview Information Protection (data protection).
+These recommendations are intended for enterprise architects and IT professionals who are familiar with Microsoft 365 cloud productivity and security services. These services include Microsoft Entra ID (identity), Microsoft Intune (device management), and Microsoft Purview Information Protection (data protection).
 
 ### Customer environment
 
-The recommended policies are applicable to enterprise organizations operating both entirely within the Microsoft cloud and for customers with hybrid identity infrastructure, which is an on-premises Active Directory Domain Services (AD DS) forest that is synchronized with a Microsoft Entra tenant.
+The recommended policies are applicable to enterprise organizations operating both entirely within the Microsoft cloud and for customers with hybrid identity infrastructure. A hybrid identity structure is an on-premises Active Directory forest that's synchronized with Microsoft Entra ID.
 
-Many of the provided recommendations rely on services available only with Microsoft 365 E5, Microsoft 365 E3 with the E5 Security add-on, EMS E5, or Microsoft Entra ID P2 licenses.
+Many of our recommendations rely on services that are available only with the following licenses:
 
-For those organizations who do not have these licenses, Microsoft recommends you at least implement [security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults), which is included with all Microsoft 365 plans.
+- Microsoft 365 E5.
+- Microsoft 365 E3 with the E5 Security add-on.
+- EMS E5.
+- Microsoft Entra ID P2 licenses.
+
+For organizations who don't have these licenses, we recommend that you at least implement [security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults), which is included with all Microsoft 365 plans.
 
 ### Caveats
 
-Your organization may be subject to regulatory or other compliance requirements, including specific recommendations that may require you to apply policies that diverge from these recommended configurations. These configurations recommend usage controls that have not historically been available. We recommend these controls because we believe they represent a balance between security and productivity.
+Your organization might be subject to regulatory or other compliance requirements, including specific recommendations that require you to apply policies that diverge from these recommended configurations. These configurations recommend usage controls that haven't historically been available. We recommend these controls because we believe they represent a balance between security and productivity.
 
 We've done our best to account for a wide variety of organizational protection requirements, but we're not able to account for all possible requirements or for all the unique aspects of your organization.
 
 ## Three levels of protection
 
-Most organizations have specific requirements regarding security and data protection. These requirements vary by industry segment and by job functions within organizations. For example, your legal department and administrators might require additional security and information protection controls around their email correspondence that are not required for other business units.
+Most organizations have specific requirements regarding security and data protection. These requirements vary by industry segment and by job functions within organizations. For example, your legal department and administrators might require additional security and information protection controls around their email correspondence that aren't required for other business units.
 
-Each industry also has their own set of specialized regulations. Rather than providing a list of all possible security options or a recommendation per industry segment or job function, recommendations have been provided for three different levels of security and protection that can be applied based on the granularity of your needs.
+Each industry also has their own set of specialized regulations. We aren't trying to provide a list of all possible security options or a recommendation per industry segment or job function. Instead, we're providing recommendations for three levels of security and protection that can be applied based on the granularity of your needs.
 
 - **Starting point**: We recommend all customers establish and use a minimum standard for protecting data, as well as the identities and devices that access your data. You can follow these recommendations to provide strong default protection as a starting point for all organizations.
-- **Enterprise**: Some customers have a subset of data that must be protected at higher levels, or they may require all data to be protected at a higher level. You can apply increased protection to all or specific data sets in your Microsoft 365 environment. We recommend protecting identities and devices that access sensitive data with comparable levels of security.
+- **Enterprise**: Some customers have a subset of data that must be protected at higher levels, or all data must be protected at a higher level. You can apply increased protection to all or specific data sets in your Microsoft 365 environment. We recommend protecting identities and devices that access sensitive data with comparable levels of security.
 - **Specialized security**: As needed, a few customers have a small amount of data that is highly classified, constitutes trade secrets, or is regulated. Microsoft provides capabilities to help these customers meet these requirements, including added protection for identities and devices.
 
 :::image type="content" source="../../media/microsoft-365-policies-configurations/M365-idquality-threetiers.png" alt-text="The Security cone" lightbox="../../media/microsoft-365-policies-configurations/M365-idquality-threetiers.png":::
@@ -125,7 +121,7 @@ The **Zero Trust identity and device protection for Microsoft 365** architecture
 
 -->
 
-Additionally, see the [Deploy information protection for data privacy regulations](../../solutions/information-protection-deploy.md) solution to protect information stored in Microsoft 365.
+Additionally, see the [Deploy information protection for data privacy regulations](/microsoft-365/solutions/information-protection-deploy) solution to protect information stored in Microsoft 365.
 
 ## Security and productivity trade-offs
 
@@ -136,7 +132,7 @@ Implementing any security strategy requires trade-offs between security and prod
 The recommendations provided are based on the following principles:
 
 - Know your users and be flexible to their security and functional requirements.
-- Apply a security policy just in time and ensure it is meaningful.
+- Apply a security policy just in time and ensure it's meaningful.
 
 ## Services and concepts for Zero Trust identity and device access protection
 
@@ -197,9 +193,9 @@ The following table summarizes our recommendations for using these capabilities 
 
 ## Device ownership
 
-The above table reflects the trend for many organizations to support a mix of organization-owned devices, as well as personal or BYODs to enable mobile productivity across the workforce. Intune app protection policies ensure that email is protected from exfiltrating out of the Outlook mobile app and other Office mobile apps, on both organization-owned devices and BYODs.
+The above table reflects the trend for many organizations to support a mix of organization-owned devices, and personal or BYODs to enable mobile productivity across the workforce. Intune app protection policies ensure that email is protected from exfiltrating out of the Outlook mobile app and other Office mobile apps, on both organization-owned devices and BYODs.
 
-We recommend organization-owned devices be managed by Intune or domain-joined to apply additional protections and control. Depending on data sensitivity, your organization may choose to not allow BYODs for specific user populations or specific apps.
+We recommend that organization-owned devices are managed by Intune or domain-joined to apply additional protections and control. Depending on data sensitivity, your organization might choose to not allow BYODs for specific user populations or specific apps.
 
 ## Deployment and your apps
 
@@ -208,17 +204,21 @@ Prior to configuring and rolling out Zero Trust identity and device access confi
 - Decide which apps used in your organization you want to protect.
 - Analyze this list of apps to determine the sets of policies that provide appropriate levels of protection.
 
-  You should not create separate sets of policies each for app because management of them can become cumbersome. Microsoft recommends that you group your apps that have the same protection requirements for the same users.
+  You shouldn't create separate sets of policies each for app because management of them can become cumbersome. Microsoft recommends that you group your apps that have the same protection requirements for the same users.
 
-  For example, you could have one set of policies that include all Microsoft 365 apps for all of your users for starting point protection and a second set of policies for all sensitive apps, such as those used by human resources or finance departments, and apply them to those groups.
+  For example, have one set of policies that include all Microsoft 365 apps for all users for starting point protection. Have a second set of policies for all sensitive apps, such as those used by human resources or finance departments, and apply them to those groups.
 
-Once you have determined the set of policies for the apps you want to secure, roll the policies out to your users incrementally, addressing issues along the way.
+Once you have determined the set of policies for the apps you want to secure, roll the policies out to users incrementally, addressing issues along the way. For example:
 
-For example, configure the policies that will be used for all your Microsoft 365 apps for just Exchange with the additional changes for Exchange. Roll these policies out to your users and work through any issues. Then, add Teams with its additional changes and roll this out to your users. Then, add SharePoint with its additional changes. Continue adding the rest of your apps until you can confidently configure these starting point policies to include all Microsoft 365 apps.
+1. Configure the policies that you intend to use for all Microsoft 365 apps.
+2. Add just Exchange with its required changes, roll out the policies to users, and work through any issues.
+3. Add Teams with its required changes, roll out the policies to users, and work through any issues.
+4. Add SharePoint with its required changes, roll out the policies to users, and work through any issues.
+5. Continue adding the rest of your apps until you can confidently configure these starting point policies to include all Microsoft 365 apps.
 
-Similarly, for your sensitive apps, create the set of policies and add one app at a time and work through any issues until they are all included in the sensitive app policy set.
+Similarly, for your sensitive apps, create the set of policies and add one app at a time. Work through any issues until they're all included in the sensitive app policy set.
 
-Microsoft recommends that you do not create policy sets that apply to all apps because it can result in some unintended configurations. For example, policies that block all apps could lock your admins out of the Azure portal and exclusions cannot be configured for important endpoints such as Microsoft Graph.
+Microsoft recommends that you don't create policy sets that apply to all apps because it can result in some unintended configurations. For example, policies that block all apps could lock your admins out of the Azure portal and exclusions can't be configured for important endpoints such as Microsoft Graph.
 
 ## Steps to configure Zero Trust identity and device access
 
@@ -233,4 +233,4 @@ After you have configured Zero Trust identity and device access, see the [Micros
 
 ## Next step
 
-[Prerequisite work for implementing Zero Trust identity and device access policies](identity-access-prerequisites.md)
+[Prerequisite work for implementing Zero Trust identity and device access policies](zero-trust-identity-device-access-policies-prereq.md)

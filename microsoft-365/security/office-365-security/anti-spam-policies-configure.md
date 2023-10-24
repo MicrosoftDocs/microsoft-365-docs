@@ -17,10 +17,10 @@ ms.custom:
 description: Admins can learn how to view, create, modify, and delete anti-spam policies in Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 9/19/2023
+ms.date: 9/26/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
@@ -30,7 +30,10 @@ appliesto:
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, inbound email messages are automatically protected against spam by EOP. EOP uses anti-spam policies (also known as spam filter policies or content filter policies) as part of your organization's overall defense against spam. For more information, see [Anti-spam protection](anti-spam-protection-about.md).
 
-The default anti-spam policy automatically applies to all recipients. For greater granularity, you can also create custom anti-spam policies that apply to specific users, groups, or domains in your organization.
+> [!TIP]
+> We recommend turning on and adding all users to the Standard and/or Strict preset security policies. For more information, see [Configure protection policies](mdo-deployment-guide.md#step-2-configure-protection-policies).
+
+The default anti-spam policy automatically applies to all recipients in the organization. For greater granularity, you can also create custom anti-spam policies that apply to specific users, groups, or domains.
 
 You can configure anti-spam policies in the Microsoft 365 Defender portal or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).
 
@@ -41,10 +44,10 @@ You can configure anti-spam policies in the Microsoft 365 Defender portal or in 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-  - [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo):
+  - [Exchange Online permissions](/exchange/permissions-exo/permissions-exo):
     - _Add, modify, and delete policies_: Membership in the **Organization Management** or **Security Administrator** role groups.
     - _Read-only access to policies_: Membership in the **Global Reader**, **Security Reader**, or **View-Only Organization Management** role groups.
-  - [Microsoft Entra RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
+  - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 - For our recommended settings for anti-spam policies, see [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
 
@@ -53,9 +56,9 @@ You can configure anti-spam policies in the Microsoft 365 Defender portal or in 
 
 - You can't completely turn off spam filtering, but you can use Exchange mail flow rules (also known as transport rules) to bypass most spam filtering on incoming messages (for example, if you route email through a third-party protection service or device before delivery to Microsoft 365). For more information, see [Use mail flow rules to set the spam confidence level (SCL) in messages](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
   - High confidence phishing messages are still filtered. Other features in EOP aren't affected (for example, messages are always scanned for malware).
-  - If you need to bypass spam filtering for SecOps mailboxes or phishing simulations, don't use mail flow rules. For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](skip-filtering-phishing-simulations-sec-ops-mailboxes.md).
+  - If you need to bypass spam filtering for SecOps mailboxes or phishing simulations, don't use mail flow rules. For more information, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](advanced-delivery-policy-configure.md).
 
-- If you disagree with the verdict from anti-spam filtering, you can report the message to Microsoft as a false positive. For instructions, see [Report good email to Microsoft](submissions-admin.md#report-good-email-to-microsoft).
+- End-user spam notifications in anti-spam policies are replaced by _quarantine notifications_ in quarantine policies. Quarantine notifications contain information about quarantined messages for all supported protection features (not just anti-spam policy and anti-phishing policy verdicts). For more information, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
 
 ## Use the Microsoft 365 Defender portal to create anti-spam policies
 
@@ -80,38 +83,25 @@ You can configure anti-spam policies in the Microsoft 365 Defender portal or in 
 
    For users or groups, you can use most identifiers (name, display name, alias, email address, account name, etc.), but the corresponding display name is shown in the results. For users or groups, enter an asterisk (\*) by itself to see all available values.
 
-   Multiple values in the same condition use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_). Different conditions use AND logic (for example, _\<recipient1\>_ and _\<member of group 1\>_).
+   Multiple values in the same condition use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_).
+
+   Different conditions use AND logic (for example, _\<recipient1\>_ and _\<member of group 1\>_). The recipient must satisfy _all_ of the specified conditions, which is typically difficult or redundant. For more information, see [Recipient filters in anti-spam policies](anti-spam-protection-about.md#recipient-filters-in-anti-spam-policies).
 
    - **Exclude these users, groups, and domains**: To add exceptions for the internal recipients that the policy applies to (recipient exceptions), select this option and configure the exceptions. The settings and behavior are exactly like the conditions.
-
-   > [!IMPORTANT]
-   > Multiple different types of conditions or exceptions are not additive; they're inclusive. The policy is applied _only_ to those recipients that match _all_ of the specified recipient filters. For example, you configure a recipient filter condition in the policy with the following values:
-   >
-   > - Users: romain@contoso.com
-   > - Groups: Executives
-   >
-   > The policy is applied to romain@contoso.com _only_ if he's also a member of the Executives group. If he's not a member of the group, then the policy is not applied to him.
-   >
-   > Likewise, if you use the same recipient filter as an exception to the policy, the policy is not applied to romain@contoso.com _only_ if he's also a member of the Executives group. If he's not a member of the group, then the policy still applies to him.
 
    When you're finished on the **Users, groups, and domains** page, select **Next**.
 
 5. On the **Bulk email threshold & spam properties** page, configure the following settings:
 
-   - **Bulk email threshold**: Specifies the bulk complaint level (BCL) of a message that triggers the specified action for the **Bulk compliant level (BCL) met or exceeded** spam filtering verdict that you configure on the next page. A higher value indicates the message is less desirable (more likely to resemble spam). The default value is 7. For more information, see [Bulk complaint level (BCL) in EOP](anti-spam-bulk-complaint-level-bcl-about.md) and [What's the difference between junk email and bulk email?](anti-spam-spam-vs-bulk-about.md).
-
-     By default, the PowerShell only setting _MarkAsSpamBulkMail_ is `On` in anti-spam policies. This setting dramatically affects the results of a **Bulk compliant level (BCL) met or exceeded** filtering verdict:
-
-     - **_MarkAsSpamBulkMail_ is On**: A BCL that's greater than or equal to the threshold is converted to an SCL 6 that corresponds to a filtering verdict of **Spam**, and the action for the **Bulk compliant level (BCL) met or exceeded** filtering verdict is taken on the message.
-     - **_MarkAsSpamBulkMail_ is Off**: The message is stamped with the BCL, but _no action_ is taken for a **Bulk compliant level (BCL) met or exceeded** filtering verdict. In effect, the BCL threshold and **Bulk compliant level (BCL) met or exceeded** filtering verdict action are irrelevant.
+   - **Bulk email threshold**: Specifies the bulk complaint level (BCL) of a message that must bet met or exceeded to trigger the specified action for the **Bulk compliant level (BCL) met or exceeded** spam filtering verdict that you configure on the next page. A higher value indicates the message is less desirable (more likely to resemble spam). For more information, see [Bulk complaint level (BCL) in EOP](anti-spam-bulk-complaint-level-bcl-about.md).
 
    - **Spam properties** section:
 
-    - **Increase spam score**, **Mark as spam**<sup>\*</sup> and **Test mode**: Advanced Spam Filter (ASF) settings that are turned off by default.
+     - **Increase spam score**, **Mark as spam**<sup>\*</sup> and **Test mode**: Advanced Spam Filter (ASF) settings that are turned off by default.
 
        For details about these settings, see [Advanced Spam Filter settings in EOP](anti-spam-policies-asf-settings-about.md).
 
-        <sup>\*</sup> The **Contains specific languages** and **from these countries** settings aren't part of ASF.
+       <sup>\*</sup> The **Contains specific languages** and **From these countries** settings aren't part of ASF.
 
      - **Contains specific languages**: Select **On** or **Off** from the dropdown list. If you turn it on, a box appears. Start typing the name of a language in the box. A filtered list of supported languages appears. When you find the language that you're looking for, select it. Repeat this step as many times as necessary. To remove an existing value, select :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: next to the value.
 
@@ -128,45 +118,27 @@ You can configure anti-spam policies in the Microsoft 365 Defender portal or in 
      - **High confidence phishing**
      - **Bulk compliant level (BCL) met or exceeded**
 
-     The available actions for spam filtering verdicts are described in the following table.
+     The available actions for spam filtering verdicts are described in [Actions in anti-spam policies](anti-spam-protection-about.md#actions-in-anti-spam-policies).
 
-     - A check mark ( ✔ ) indicates the action is available (not all actions are available for all verdicts).
-     - An asterisk ( <sup>\*</sup> ) after the check mark indicates the default action for the spam filtering verdict.
+     > [!TIP]
+     > If the spam filtering verdict quarantines messages by default (**Quarantine message** is already selected when you get to the page), the default quarantine policy name is shown in the **Select quarantine policy** box. If you _change_ the action of a spam filtering verdict to **Quarantine message**, the **Select quarantine policy** box is blank by default. A blank value means the default quarantine policy for that verdict is used. When you later view or edit the anti-spam policy settings, the quarantine policy name is shown. For more information about the quarantine policies that are used by default for spam filter verdicts, see [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
+     >
+     > For **High confidence phishing**, the **Move message to Junk Email folder** action is effectively deprecated. Although you might be able to select the **Move message to Junk Email folder** action, high confidence phishing messages are always quarantined (equivalent to selecting **Quarantine message**).
+     >
+     > Users can't release their own messages that were quarantined as high confidence phishing, regardless of how the quarantine policy is configured. If the policy allows users to release their own quarantined messages, users are instead allowed to _request_ the release of their quarantined high-confidence phishing messages.
 
-     |Action|Spam|High<br>confidence<br>spam|Phishing|High<br>confidence<br>phishing|Bulk|
-     |---|:---:|:---:|:---:|:---:|:---:|
-     |**Move message to Junk Email folder**: The message is delivered to the mailbox and moved to the Junk Email folder.¹|✔<sup>\*</sup>|✔<sup>\*</sup>|✔|²|✔<sup>\*</sup>|
-     |**Add X-header**: Adds an X-header to the message header and delivers the message to the mailbox. <br/><br/> You enter the X-header field name (not the value) later in the **Add this X-header text** box. <br/><br/> For **Spam** and **High confidence spam** verdicts, the message is moved to the Junk Email folder.¹ ³|✔|✔|✔||✔|
-     |**Prepend subject line with text**: Adds text to the beginning of the message's subject line. The message is delivered to the mailbox and moved to the Junk email folder.¹ ³ <br/><br/> You enter the text later in the **Prefix subject line with this text** box.|✔|✔|✔||✔|
-     |**Redirect message to email address**: Sends the message to other recipients instead of the intended recipients. <br/><br/> You specify the recipients later in the **Redirect to this email address** box.|✔|✔|✔|✔|✔|
-     |**Delete message**: Silently deletes the entire message, including all attachments.|✔|✔|✔||✔|
-     |**Quarantine message**: Sends the message to quarantine instead of the intended recipients. <br/><br/> You select or use the default _quarantine policy_ for the spam filtering verdict in the **Select quarantine policy** box that appears.⁴ Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy). <br/><br/> You specify how long the messages are held in quarantine in the **Retain spam in quarantine for this many days** box.|✔|✔|✔<sup>\*</sup>|✔<sup>\*</sup> ⁵|✔|
-     |**No action**|||||✔|
-
-     ¹ EOP uses its own mail flow delivery agent to route messages to the Junk Email folder instead of using the junk email rule in the mailbox. The _Enabled_ parameter on the **Set-MailboxJunkEmailConfiguration** cmdlet no longer has any effect on mail flow. For more information, see [Configure junk email settings on Exchange Online mailboxes](configure-junk-email-settings-on-exo-mailboxes.md).
-
-     In hybrid environments where EOP protects on-premises Exchange mailboxes, you need to configure mail flow rules (also known as transport rules) in on-premises Exchange to translate the EOP spam filtering verdict. For details, see [Configure EOP to deliver spam to the Junk Email folder in hybrid environments](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
-
-     ² For **High confidence phishing**, the **Move message to Junk Email folder** action is effectively deprecated. Although you might be able to select the **Move message to Junk Email folder** action, high confidence phishing messages are always quarantined (equivalent to selecting **Quarantine message**).
-
-     ³ You can this use value as a condition in mail flow rules to filter or route the message.
-
-     ⁴ If the spam filtering verdict quarantines messages by default (**Quarantine message** is already selected when you get to the page), the default quarantine policy name is shown in the **Select quarantine policy** box. If you _change_ the action of a spam filtering verdict to **Quarantine message**, the **Select quarantine policy** box is blank by default. A blank value means the default quarantine policy for that verdict is used. When you later view or edit the anti-spam policy settings, the quarantine policy name is shown. For more information about the quarantine policies that are used by default for spam filter verdicts, see [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
-
-     ⁵ Users can't release their own messages that were quarantined as high confidence phishing, regardless of how the quarantine policy is configured. If the policy allows users to release their own quarantined messages, users are instead allowed to _request_ the release of their quarantined high-confidence phishing messages.
-     
-   - **Intra-Organizational messages to take action on**: Controls whether spam filtering and the corresponding verdict actions are applied to internal messages (messages sent between users within the organization). The action that's configured in the policy for the specified spam filter verdicts is taken on messages sent between internal users. The available values are:
-     - **Default**: This is the default value. This value is the same as selecting **High confidence phishing messages**.
-     - **None**
-     - **High confidence phishing messages**
-     - **Phishing and high confidence phishing messages**
-     - **All phishing and high confidence spam messages**
-     - **All phishing and spam messages**
+  - **Intra-Organizational messages to take action on**: Controls whether spam filtering and the corresponding verdict actions are applied to internal messages (messages sent between users within the organization). The available values are:
+    - **Default**: This is the default value. This value is the same as selecting **High confidence phishing messages**.
+    - **None**
+    - **High confidence phishing messages**
+    - **Phishing and high confidence phishing messages**
+    - **All phishing and high confidence spam messages**
+    - **All phishing and spam messages**
    
    - **Retain spam in quarantine for this many days**: Specifies how long to keep the message in quarantine if you selected **Quarantine message** as the action for a spam filtering verdict. After the time period expires, the message is deleted, and isn't recoverable. A valid value is from 1 to 30 days.
 
-     > [!NOTE]
-     > The default value is 15 days in the default anti-spam policy and in new anti-spam policies that you create in PowerShell. The default value is 30 days in new anti-spam policies that you create in the Microsoft 365 Defender portal.
+     > [!TIP]
+     > The default value is 15 days in anti-spam policies that you create in PowerShell. The default value is 30 days in anti-spam policies that you create in the Microsoft 365 Defender portal.
      >
      > This setting also controls how long messages that were quarantined by **anti-phishing** policies are retained. For more information, see [Quarantine retention](quarantine-about.md#quarantine-retention).
 
@@ -186,15 +158,11 @@ You can configure anti-spam policies in the Microsoft 365 Defender portal or in 
 
    - **Zero-hour auto purge (ZAP)** section:
 
-     - **Enable zero-hour auto purge (ZAP)**: ZAP detects and takes action on messages that have already been delivered to Exchange Online mailboxes. For more information, see [Zero-hour auto purge - protection against spam and malware](zero-hour-auto-purge.md).
-
-       ZAP is turned on by default. When ZAP is turned on, the following settings are available:
-
-       - **Enable ZAP for phishing messages**: By default, ZAP is enabled for phishing detections, but you can disable it by clearing the check box.
-       - **Enable ZAP for spam messages**: By default, ZAP is enabled for spam detections, but you can disable it by clearing the check box.
-
-   > [!NOTE]
-   > End-user spam notifications have been replaced by _quarantine notifications_ in quarantine policies. Quarantine notifications contain information about quarantined messages for all supported protection features (not just anti-spam policy and anti-phishing policy verdicts). For more information, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
+     - **Enable zero-hour auto purge (ZAP)**: ZAP detects and takes action on messages that have already been delivered to Exchange Online mailboxes. ZAP is turned on by default. When ZAP is turned on, the following settings are available:
+       - **Enable ZAP for phishing messages**: By default, ZAP is enabled for phishing detections, but you can disable it by clearing the check box. For more information, see:
+         - [Zero-hour auto purge (ZAP) for phishing](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-phishing)
+         - [Zero-hour auto purge (ZAP) for high confidence phishing](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-high-confidence-phishing)
+       - **Enable ZAP for spam messages**: By default, ZAP is enabled for spam detections, but you can disable it by clearing the check box. For more information, [Zero-hour auto purge (ZAP) for spam](zero-hour-auto-purge.md#zero-hour-auto-purge-zap-for-spam)see .
 
    When you're finished on the **Actions** page, select **Next**.
 
@@ -202,17 +170,10 @@ You can configure anti-spam policies in the Microsoft 365 Defender portal or in 
 
    In the **Allowed** section, you can configure allowed senders and allowed domains. In the **Blocked** section, you can add blocked senders and blocked domains.
 
+   The maximum limit for these lists is approximately 1000 entries, but you can enter only 30 entries in the Defender portal. Use Exchange Online PowerShell to add more than 30 entries.
+
    > [!IMPORTANT]
-   >
-   > Think very carefully before you add domains to the allowed domains list. For more information, see [Create safe sender lists in EOP](create-safe-sender-lists-in-office-365.md)
-   >
-   > As of September 2022, if an allowed sender, domain, or subdomain is in an [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization, that sender, domain, or subdomain must pass [email authentication](email-authentication-about.md) checks in order to skip anti-spam filtering.
-   >
-   > Never add common domains (for example, microsoft.com or office.com) to the allowed domains list. If these domains are allowed to bypass spam filtering, attackers can easily send spoofed messages from these common domains into your organization.
-   >
-   > Manually blocking domains by adding the domains to the blocked domains list isn't dangerous, but it can increase your administrative workload. For more information, see [Create block sender lists in EOP](create-block-sender-lists-in-office-365.md).
-   >
-   > There are times when our filters miss a message, you don't agree with the filtering verdict, or it takes time for our systems to catch up to it. In these cases, the allow list and block list are available to override the current filtering verdicts. But, you should use these lists sparingly and temporarily: longs lists can become unmanageable, and our filtering stack should be doing what it's supposed to be doing. If you're going to keep an allowed domain for an extended period of time, you should tell the sender to verify that their domain is authenticated and set to DMARC reject appropriately.
+   > The functionality of these lists has largely been replaced by the [Tenant Allow/Block List](tenant-allow-block-list-about.md). For important information, see [Allow and block list in anti-spam policies](anti-spam-protection-about.md#allow-and-block-lists-in-anti-spam-policies).
 
    The steps to add entries to any of the lists are the same:
 

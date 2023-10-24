@@ -17,7 +17,7 @@ ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.date: 6/19/2023
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview" target="_blank">Microsoft Defender for Office 365 plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
 ---
 
 # Remediate malicious email delivered in Office 365
@@ -60,8 +60,7 @@ Once emails are selected through Explorer, you can start remediation by taking d
 
 **Automated investigation and response** actions are triggered by alerts or by security operations teams from Explorer. These may include recommended remediation actions that must be approved by a security operations team. These actions are included on the **Action** tab in the automated investigation.
 
-> [!div class="mx-imgBorder"]
-> [![Mail with malware in "Zapped" page showing time of Zap execution.](../../media/tp-RemediationArticle3.png)](../../media/tp-RemediationArticle3.png#lightbox)
+:::image type="content" source="../../media/tp-RemediationArticle3.png" alt-text="Email with malware on the Zapped page showing the time of ZAP execution." lightbox="../../media/tp-RemediationArticle3.png":::
 
 All remediation (direct approvals) created in Explorer, Advanced hunting, or through Automated investigation are displayed in the Action center at **Actions & Submissions** \> **Action center** \> **History** tab (<https://security.microsoft.com/action-center/history>).
 
