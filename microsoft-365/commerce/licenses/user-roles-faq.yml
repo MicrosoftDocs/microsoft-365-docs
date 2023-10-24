@@ -129,14 +129,30 @@ sections:
         answer: |
           The **Manage Assignments** page contains a list of all the VL users that you invited and includes information like their status and the VL roles that you assigned to them. The following table explains each column in the list.
 
-          **Insert table**
+          |Column name                |Descripton  |
+          |---------------------------|---------|
+          |Display name               |The user's full name. This is automatically populated for users who belong to the tenant. If you add external users who belong to the tenant, make sure that you enter the full name of the user. |
+          |Status                     |Indicates the status of the user. For a list of explanations for the possible status, see Understand VL user statuses. |
+          |Actions                    |Indicates the action you can take for the user. For example, **View access**, **Resend invite**, and **Reset invite**. |
+          |Sign-in email              |The email address used to sign in to Microsoft 365 admin center. In most cases, this is the user's work email, but formats like user@userorg.onmicrosoft.com are also possible. This is useful for organizations that haven't enabled Microsoft Entra.  |
+          |Business email             |The email address listed on the VL contract&ndash;typically the Primary Contact or Notices Correspondent.<br/><br/>When you add new VL users, the invitation is sent to the **Business email** address so that the admin can then forward it to the new user. |
+          |Volume licensing roles     |Lists the VL roles assigned to the user. |
+
 
       - question: |
           Understand VL user statuses
         answer: |
           The following table lists the statuses that you might see in the **Status** column on the **Manage Assignments** page.
 
-          **Insert table**
+          |Column1  |Column2  |
+          |---------|---------|
+          |Row1     |         |
+          |Row2     |         |
+          |Row3     |         |
+          |Row4     |         |
+          |Row5     |         |
+          |Row6     |         |
+          |Row7     |         |
 
       - question: |
           Manage VL admin inheritance
