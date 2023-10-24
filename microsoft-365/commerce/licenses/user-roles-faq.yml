@@ -97,7 +97,7 @@ sections:
         answer: |
           VL admins can use the Microsoft 365 admin center to view, edit, or remove VL users for license IDs that they administer.
 
-          1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target-"_blank">Microsoft 365 admin center</a>.
+          1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
           2. In the **Navigation menu**, select **Billing** > **Your products**, then select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2244144" target="_blank">Volume Licensing</a> tab.
           3. In the **Role assignments** section, select **Assign users to contracts** or **Manage VL role assignments**.
 
@@ -124,7 +124,7 @@ sections:
       - question: |
           View existing VL users
         answer: |
-          1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target-"_blank">Microsoft 365 admin center</a>.
+          1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
           2. In the **Navigation menu**, select **Billing** > **Your products**, then select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2244144" target="_blank">Volume Licensing</a> tab.
           3. In the **Role assignments** section, select **Manage VL role assignments**. The **Manage Assignments** page opens and contains a list of VL users for the license IDs that you administer.
           4. Select **View access** for a user to view the license IDs for which they have permissions.
@@ -168,7 +168,7 @@ sections:
 
           To view your opt-in preferences, use the following steps.
 
-          1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target-"_blank">Microsoft 365 admin center</a>.
+          1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
           2. In the **Navigation menu**, select **Billing** > **Your products**, then select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2244144" target="_blank">Volume Licensing</a> tab.
           3. In the **Preferences** section, select **Edit preferences**.
 
@@ -184,7 +184,7 @@ sections:
         answer: |
           Add new users who don't already have VL permissions.
 
-          1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target-"_blank">Microsoft 365 admin center</a>.
+          1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
           2. In the **Navigation menu**, select **Billing** > **Your products**, then select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2244144" target="_blank">Volume Licensing</a> tab. 
           3. In the **Role assignments** section, select **Assign users to contracts**. 
           4. Select **Add or edit users**. 
@@ -224,7 +224,7 @@ additionalContent: |
 
   When you delete a VL user, the permissions assigned to that user are removed for all the license IDs to which they were assigned, and the user is removed from the **Manage Assignments** list.
 
-  1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target-"_blank">Microsoft 365 admin center</a>.
+  1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
   2. In the **Navigation menu**, select **Billing** > **Your products**, then select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2244144" target="_blank">Volume Licensing</a> tab.
   3. In the **Role assignments** section, select **Manage CL role assignments**.
   4. Find the user you want to manage roles for, and select **View access**.
@@ -242,7 +242,7 @@ additionalContent: |
 
   ## How do I contact support?
  
-  1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target-"_blank">Microsoft 365 admin center</a>, select the **Help & support** button.
+  1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, select the **Help & support** button.
   2. Type a description of your issue into the text box.
   3. If none of the offered solutions match your needs, you can submit a support ticket to the VL support team. Be sure to provide your VL license ID and a phone number where our team can use to reach you. 
   4. Choose email method to reach out to support team.
