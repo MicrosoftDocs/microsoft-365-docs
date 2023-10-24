@@ -32,7 +32,7 @@ For other issues, visit the [Microsoft support center](https://support.microsoft
   
 **Sign-in options:** Microsoft has two systems that can be used for user identities: **Work or school account (cloud identity)** and **Federated account (federated identity)**. The type of identity affects the user experience and user account management options, as well as hardware and software requirements and other deployment considerations.
 
-**Work or school account (cloud identity)** - Users receive Azure Active Directory cloud credentials—separate from other desktop or corporate credentials—for signing into Microsoft cloud services. This is the default identity, and is recommended in order to minimize deployment complexity. Passwords for work or school accounts use the Azure Active Directory [password policy](/previous-versions/azure/jj943764(v=azure.100)).
+**Work or school account (cloud identity)** - Users receive Microsoft Entra cloud credentials—separate from other desktop or corporate credentials—for signing into Microsoft cloud services. This is the default identity, and is recommended in order to minimize deployment complexity. Passwords for work or school accounts use the Microsoft Entra ID [password policy](/previous-versions/azure/jj943764(v=azure.100)).
 
 **Federated account (federated identity)** - For all subscriptions in organizations with on-premises Active Directory that use single sign-on (SSO), users can sign into Microsoft services by using their Active Directory credentials. The corporate Active Directory stores and controls the password policy. For information about SSO, see [Single sign-on roadmap](/previous-versions/azure/azure-services/hh967643(v=azure.100)).
 
@@ -104,7 +104,7 @@ For other issues, visit the [Microsoft support center](https://support.microsoft
 
 **Group management:** Security groups are used in SharePoint Online to control access to sites. Security groups can be created in the Microsoft 365 admin center. For more information about security groups, see [Create, edit, or delete a security group](/office365/admin/email/create-edit-or-delete-a-security-group).
 
-**Azure Active Directory services:** Azure Active Directory (AD) brings comprehensive identity and access management capabilities to Office 365. It combines directory services, advanced identity governance, application access management and a rich standards-based platform for developers. To learn more about AD features in Office 365, see [Sign in page branding and cloud user self-service password reset](https://go.microsoft.com/fwlink/?linkid=2144147). Learn more about the [Free, Basic, and Premium editions of Azure Active Directory](/previous-versions/azure/dn532272(v=azure.100)).
+**Microsoft Entra services:** Microsoft Entra ID brings comprehensive identity and access management capabilities to Office 365. It combines directory services, advanced identity governance, application access management and a rich standards-based platform for developers. To learn more about AD features in Office 365, see [Sign in page branding and cloud user self-service password reset](https://go.microsoft.com/fwlink/?linkid=2144147). Learn more about the [Free, Basic, and Premium editions of Microsoft Entra ID](/previous-versions/azure/dn532272(v=azure.100)).
 
 # [**Support, help, and training**](#tab/Support)
 

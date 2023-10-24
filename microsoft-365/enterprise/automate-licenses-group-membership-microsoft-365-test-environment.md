@@ -89,8 +89,8 @@ In time, you should see the:
 
 See these articles to deploy dynamic group membership and automatic licensing in production:
 
-- [Group-based licensing in Azure Active Directory](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)
-- [Dynamic groups in Azure Active Directory](/azure/active-directory/users-groups-roles/groups-create-rule)
+- [Group-based licensing in Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)
+- [Dynamic groups in Microsoft Entra ID](/azure/active-directory/users-groups-roles/groups-create-rule)
 
 ## Next step
 

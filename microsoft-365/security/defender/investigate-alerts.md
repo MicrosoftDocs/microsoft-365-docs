@@ -65,7 +65,7 @@ You can filter alerts according to these criteria:
 
 You'll need to have any of the following roles to access Microsoft Defender for Office 365 alerts:
 
-- For Azure Active Directory (Azure AD) global roles:
+- For Microsoft Entra global roles:
   - Global administrator
   - Security administrator
   - Security Operator
@@ -95,7 +95,7 @@ Throughout an alert page, you can select the ellipses (**...**) beside any entit
 
 ### Alert sources
 
-Microsoft 365 Defender alerts may come from solutions like Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Identity, Microsoft Defender for Cloud Apps, the app governance add-on for Microsoft Defender for Cloud Apps, Azure Active Directory Identity Protection, and Microsoft Data Loss Prevention. You may notice alerts with prepended characters in the alert. The following table provides guidance to help you understand the mapping of alert sources based on the prepended character on the alert.
+Microsoft 365 Defender alerts may come from solutions like Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Identity, Microsoft Defender for Cloud Apps, the app governance add-on for Microsoft Defender for Cloud Apps, Microsoft Entra ID Protection, and Microsoft Data Loss Prevention. You may notice alerts with prepended characters in the alert. The following table provides guidance to help you understand the mapping of alert sources based on the prepended character on the alert.
 
 > [!NOTE]
 >
@@ -109,19 +109,21 @@ Microsoft 365 Defender alerts may come from solutions like Microsoft Defender fo
 | Microsoft Defender for Endpoint | `da` or `ed` for custom detection alerts <br> |
 | Microsoft Defender for Identity | `aa{GUID}` <br> Example: `aa123a456b-c789-1d2e-12f1g33h445h6i` |
 | Microsoft Defender for Cloud Apps |`ca{GUID}` <br> Example: `ca123a456b-c789-1d2e-12f1g33h445h6i` |
-| Azure Active Directory (AAD) Identity Protection | `ad` |
+| Microsoft Entra ID Protection | `ad` |
 | App Governance | `ma` |
 | Microsoft Data Loss Prevention | `dl` |
 
-### Configure AAD IP alert service
+<a name='configure-aad-ip-alert-service'></a>
+
+### Configure Microsoft Entra IP alert service
 
 1. Go to the Microsoft 365 Defender portal ([security.microsoft.com](https://security.microsoft.com)), select **Settings** > **Microsoft 365 Defender**.
 
-2. From the list, select **Alert service settings**, and then configure your **Azure AD identity protection** alert service.
+2. From the list, select **Alert service settings**, and then configure your **Microsoft Entra ID Protection** alert service.
 
-   :::image type="content" source="../../media/investigate-alerts/alerts-ss-aadip-alert.png" alt-text="Screenshot of Azure AD identity protection alerts setting in the Microsoft 365 Defender portal." lightbox="../../media/investigate-alerts/alerts-ss-aadip-alert.png":::
+   :::image type="content" source="../../media/investigate-alerts/alerts-ss-aadip-alert.png" alt-text="Screenshot of Microsoft Entra ID Protection alerts setting in the Microsoft 365 Defender portal." lightbox="../../media/investigate-alerts/alerts-ss-aadip-alert.png":::
 
-By default, only the most relevant alerts for the security operation center are enabled. If you want to get all AAD IP risk detections, you can change it in the **Alert service settings** section.
+By default, only the most relevant alerts for the security operation center are enabled. If you want to get all Microsoft Entra IP risk detections, you can change it in the **Alert service settings** section.
 
 You can also access **Alert service settings** directly from the **Incidents** page in the Microsoft 365 Defender portal.
 
@@ -196,7 +198,7 @@ Alert tuning provides the ability to tune and manage alerts in advance. This str
 
 You can create rule conditions based on 'evidence types' such as files, processes, scheduled tasks, and many other evidence types that trigger the alert. After creating the rule, you can apply the rule on the selected alert or any alert type that meets the rule conditions to tune the alert.
 
-In addition, the feature also covers alerts coming from various Microsoft 365 Defender service sources. The alert tuning feature in public preview is getting alerts from workloads like Defender for Endpoint, Defender for Office 365, Defender for Identity, Defender for Cloud Apps, Azure Active Directory Identity Protection (AAD IP), and others, if these sources are available on your platform and plan. Previously, the alert tuning capability only captured alerts from the Defender for Endpoint workload.
+In addition, the feature also covers alerts coming from various Microsoft 365 Defender service sources. The alert tuning feature in public preview is getting alerts from workloads like Defender for Endpoint, Defender for Office 365, Defender for Identity, Defender for Cloud Apps, Microsoft Entra ID Protection (Microsoft Entra IP), and others, if these sources are available on your platform and plan. Previously, the alert tuning capability only captured alerts from the Defender for Endpoint workload.
 
 > [!NOTE]
 > We recommend using alert tuning, previously known as **alert suppression**, with caution. In certain situations, a known internal business application or security tests trigger an expected activity and you don't want to see these alerts. So, you can create a rule to tune these alert types.
@@ -358,6 +360,6 @@ As needed for in-process incidents, continue your [investigation](investigate-in
 - [Manage incidents](manage-incidents.md)
 - [Investigate incidents](investigate-incidents.md)
 - [Investigate data loss prevention alerts in Defender](dlp-investigate-alerts-defender.md)
-- [Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection)
+- [Microsoft Entra ID Protection](/azure/active-directory/identity-protection/overview-identity-protection)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

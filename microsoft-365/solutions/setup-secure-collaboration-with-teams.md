@@ -142,7 +142,7 @@ These training modules from Microsoft Learn can help you learn the collaboration
 
 ### Identity and access
 
-|Training:|Protect identity and access with Azure Active Directory|
+|Training:|Protect identity and access with Microsoft Entra ID|
 |---|---|
 |![Identity and access training icon.](../media/protect-identity-and-access-with-microsoft-365.svg)|The Identity and Access learning path covers the latest identity and access technologies, tools for strengthening authentication, and guidance on identity protection within your organization. Microsoft access and identity technologies enable you to secure your organization’s identity, whether it is on-premises or in the cloud, and empower your users to work securely from any location. This learning path can help you prepare for the Microsoft 365 Certified: Security Administrator Associate and Microsoft 365 Certified: Enterprise Administration Expert certifications.<p>2 hr 52 min - Learning Path - 6 Modules|
 
