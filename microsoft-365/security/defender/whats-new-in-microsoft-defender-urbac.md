@@ -13,7 +13,7 @@ ms.collection:
   - m365-security-compliance
   - tier2
 ms.topic: conceptual
-ms.date: 8/01/2023
+ms.date: 10/24/2023
 ---
 
 # What's new in Microsoft 365 Defender Unified role-based access control (RBAC)
@@ -21,6 +21,24 @@ ms.date: 8/01/2023
 This article provides information about new features and important product updates for the latest release of Microsoft 365 Defender Unified role-based access control (RBAC).
 
 [!include[Prerelease information](../../includes/prerelease.md)]
+
+## October 2023
+
+### Full integration of Microsoft Defender for Office 365 security management with Microsoft 365 Defender Unified role-based access control (RBAC) is now in Public Preview
+
+The Microsoft 365 Defender Unified (RBAC) model now supports all data and actions permission management scenarios for Microsoft Defender for Office 365. Up until now support was only available for permissions that were managed by Exchange Online Protection (EOP) roles in the Microsoft 365 Defender portal (under Permissions > Email & collaboration roles) but support is now available for scenarios that were previously managed by Exchange Online (EXO) roles in the Exchange Admin Center.
+
+
+Microsoft 365 Defender Unified RBAC allows admins to assign roles to user groups, enables using
+the AAD privileged access groups capability, creating a time limited access (PIM), Just-In-Time 
+(JIT) to all MDO data and experiences.
+Impacted experiences include all Email & Collaboration policies under Threat Review, Alert 
+Policies, and Threat Policies scenarios. Specifically, this includes Admin Quarantine experiences, 
+Restricted Entities, Alert Policies, Preset Security Policies, Configuration analyzer, Anti-phishing 
+policy, Anti-spam policy, Anti-malware policy, Safe Attachments policy, Safe Links policy, Tenant 
+Allow/Block Lists, Email authentication settings rules, Advanced delivery rules, Enhanced filtering 
+rules, Quarantine policies and configuring User Tags.
+
 
 ## September 2023
 
