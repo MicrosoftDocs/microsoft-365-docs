@@ -31,7 +31,7 @@ Taxonomy tagging is available for the following file types: .doc, .docx, .pdf, a
 
 ### Current release notes
 
-- A maximum of three columns can be configured with taxonomy tagging.
+- A maximum of three columns in a library can be configured with taxonomy tagging.
 
 - Time taken to reflect tags getting in the taxonomy column: Minimum: 20 minutes, maximum: 24 hours.
 
