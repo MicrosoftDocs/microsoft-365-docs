@@ -176,9 +176,11 @@ Assumptions:
 
 ### UKG Pro Workforce Management location structure
 
-In this scenario, the UKG Pro WFM location structure looks something like this, in which level 0 represents the top-most level in the hierarchy.
+In this scenario, the UKG Pro WFM location structure looks something like this, in which the Company node represents the top-most level in the hierarchy.
 
-|Level |UKG Pro WFM location |Node |
+:::image type="content" source="media/shifts-connector-ukg-prerequisites-chart.png" alt-text="A chart showing the UKG Pro WFM location structure for the Contoso example scenario.":::
+
+<!--|Level |UKG Pro WFM location |Node |
 |---------|---------|---------|
 |0|Contoso |Company|
 | 1|Retail |Business|
@@ -194,7 +196,7 @@ In this scenario, the UKG Pro WFM location structure looks something like this, 
 |   3|Chelsea|Store|
 |    4|Sales associate|Job type|
 |    4|Personal shopper |Job type|
-|    4|Beauty advisor |Job type|
+|    4|Beauty advisor |Job type|-->
 
 Here's how frontline managers (FLM) and frontline workers (FLW) are set up in the location structure in UKG Pro WFM. The table lists each workers' primary job and who they report to.
 
