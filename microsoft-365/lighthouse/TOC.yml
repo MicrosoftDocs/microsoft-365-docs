@@ -62,7 +62,7 @@
   items: 
     - name: Overview of the Tenants page
       href: m365-lighthouse-tenants-page-overview.md
-    - name: View your Azure AD roles across tenants
+    - name: View your Microsoft Entra roles across tenants
       href: m365-lighthouse-view-your-roles.md
     - name: Manage your tenant list
       href: m365-lighthouse-manage-tenant-list.md

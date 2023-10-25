@@ -27,9 +27,9 @@ ms.date: 10/10/2023
 >[!IMPORTANT]
 >This feature will begin rolling out for public preview in July 2023. If you would like to provide feedback and improve this feature while in preview, please fill out [this form](https://forms.microsoft.com/r/DWaJXA6Dax).
 
-Frontline teams are a collection of people, content, and tools within an organization for different frontline worker locations. Membership of frontline dynamic teams is determined and managed by a set of Azure Active Directory (Azure AD) attributes. [Learn more about Azure AD attributes](/azure/active-directory/external-identities/customers/how-to-define-custom-attributes).
+Frontline teams are a collection of people, content, and tools within an organization for different frontline worker locations. Membership of frontline dynamic teams is determined and managed by a set of Microsoft Entra attributes. [Learn more about Microsoft Entra attributes](/azure/active-directory/external-identities/customers/how-to-define-custom-attributes).
 
-In the setup process, you define the following information with Azure AD attributes:
+In the setup process, you define the following information with Microsoft Entra attributes:
 
 - Who your frontline workers are
 - What locations they work at
@@ -42,10 +42,10 @@ Team membership is automatically managed over time through the power of dynamic 
 
 ## Prerequisites
 
-- Users must have a Microsoft 365 F3, F1, E3, or E5 license. If a user doesn't have one of these licenses, they'll need an Azure AD P1 add-on license to use dynamic teams. [Learn more about frontline licensing](flw-licensing-options.md).
+- Users must have a Microsoft 365 F3, F1, E3, or E5 license. If a user doesn't have one of these licenses, they'll need a Microsoft Entra ID P1 add-on license to use dynamic teams. [Learn more about frontline licensing](flw-licensing-options.md).
 - The admin running the deployment process must be a Teams admin and Global admin.
 
-- Ensure you can define your frontline workers and their work locations through data available in Azure AD. If you don't have this data in Azure AD, you can sync it through a [human capital management (HCM) connector](/azure/active-directory/app-provisioning/plan-cloud-hr-provision) or [use the PowerShell solution](deploy-teams-at-scale.md) to create teams at scale.
+- Ensure you can define your frontline workers and their work locations through data available in Microsoft Entra ID. If you don't have this data in Microsoft Entra ID, you can sync it through a [human capital management (HCM) connector](/azure/active-directory/app-provisioning/plan-cloud-hr-provision) or [use the PowerShell solution](deploy-teams-at-scale.md) to create teams at scale.
 - When evaluating the right solution, we recommend you do the following:
   1. Plan your frontline deployment.
   1. Test the deploy tools (dynamic or static team creation).
@@ -64,13 +64,13 @@ Team membership is automatically managed over time through the power of dynamic 
 
 3. Review the prerequisites information.
 
-4. Select the Azure AD attribute that defines your frontline workers. You can only choose one Azure AD attribute, but you can define multiple values by separating them with commas.
+4. Select the Microsoft Entra attribute that defines your frontline workers. You can only choose one Microsoft Entra attribute, but you can define multiple values by separating them with commas.
 
-    :::image type="content" source="media/dtas-frontline-attribute.png" alt-text="Screenshot of where to enter your Azure AD attribute and values for frontline workers." lightbox="media/dtas-frontline-attribute.png":::
+    :::image type="content" source="media/dtas-frontline-attribute.png" alt-text="Screenshot of where to enter your Microsoft Entra attribute and values for frontline workers." lightbox="media/dtas-frontline-attribute.png":::
 
-5. Select the Azure AD attribute that defines the location your frontline employees work in. You can only choose one location attribute.
+5. Select the Microsoft Entra attribute that defines the location your frontline employees work in. You can only choose one location attribute.
 
-    :::image type="content" source="media/dtas-location-attribute.png" alt-text="Screenshot of where to enter your Azure AD attribute for frontline locations." lightbox="media/dtas-location-attribute.png":::
+    :::image type="content" source="media/dtas-location-attribute.png" alt-text="Screenshot of where to enter your Microsoft Entra attribute for frontline locations." lightbox="media/dtas-location-attribute.png":::
 
 6. Define your team structure by choosing a prefix. The prefix is applied using the "prefix-location" format for all your teams.
 
@@ -80,7 +80,7 @@ Team membership is automatically managed over time through the power of dynamic 
 
 8. Enter a user account object ID to be the team owner. This account will be the owner for all frontline teams. It's recommended to choose a shared account rather than an individual person.
     1. To get a user's object ID, go to the [Azure portal](https://portal.azure.com).
-    1. Select **Azure Active Directory**.
+    1. Select **Microsoft Entra ID**.
     1. Select **Users**, and then choose your user.
     1. Copy the user's object ID.
 
@@ -133,9 +133,9 @@ You can manage your teams when changes happen in your organization.
 
     |Setting |Effect on existing frontline teams |Effect on new frontline teams |
     |--------|-----------------------------------|------------------------------|
-    |Define your frontline Azure AD attribute. |All existing frontline teams will be members that have the new Azure AD attribute defined. |All new frontline teams members will have the new Azure AD attribute defined. |
-    |Choose the values applicable to your frontline Azure AD attribute. |All existing frontline team membership will reflect your updated values. |All new teams will be populated with members who have the updated Azure AD attributes that you defined. |
-    |Define your frontline locations. | Existing teams will continue to persist. If a team is no longer tied to a location, there will be no users in that team, and users are put in their respective location teams. |You can create new frontline teams based on the locations defined by your new Azure AD attribute. |
+    |Define your frontline Microsoft Entra attribute. |All existing frontline teams will be members that have the new Microsoft Entra attribute defined. |All new frontline teams members will have the new Microsoft Entra attribute defined. |
+    |Choose the values applicable to your frontline Microsoft Entra attribute. |All existing frontline team membership will reflect your updated values. |All new teams will be populated with members who have the updated Microsoft Entra attributes that you defined. |
+    |Define your frontline locations. | Existing teams will continue to persist. If a team is no longer tied to a location, there will be no users in that team, and users are put in their respective location teams. |You can create new frontline teams based on the locations defined by your new Microsoft Entra attribute. |
     |Set your team name prefix. |All existing team names will be updated to reflect the prefix and location name if that was changed. |All new teams will have the updated naming convention. |
     |Select your team template. |No updates to the team structure will occur. |All new teams will use the updated team template. |
     |Select your team owner. |The team owner will be updated for all existing teams. |All new teams will have the updated team owner. |

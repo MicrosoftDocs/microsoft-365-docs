@@ -52,7 +52,7 @@ When you remove the license, all that user's data is held for 30 days. You can [
 
 When you [add another person](add-users.md) to your business, you'll be prompted to buy a license at the same time, with just one step!
 
-For more information about managing user licenses for Microsoft 365 for business, see [Assign licenses to users in Microsoft 365 for business](../manage/assign-licenses-to-users.md), and [Unassign licenses from users in Microsoft 365 for business](../manage/remove-licenses-from-users.md).
+For more information about managing user licenses for Microsoft 365 for business, see [Assign licenses to users in Microsoft 365 for business](../manage/assign-licenses-to-users.md), and [Assign or unassign licenses for users in the Microsoft 365 admin center](../manage/assign-licenses-to-users.md).
   
 ## How the deleted employee account affects Skype for Business
 
