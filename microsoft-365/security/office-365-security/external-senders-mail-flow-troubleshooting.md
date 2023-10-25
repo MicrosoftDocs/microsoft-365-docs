@@ -22,10 +22,10 @@ ms.service: microsoft-365-security
 ms.date: 6/15/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
 ---
 
-# Troubleshooting mail sent to Microsoft 365
+# External senders - Troubleshoot email sent to Microsoft 365
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -33,7 +33,7 @@ This article provides troubleshooting information for senders who are experienci
 
 ## Are you managing your IP and domain's sending reputation?
 
-[Exchange Online Protection](eop-about.md) (EOP) provides anti-spam protection for Microsoft 365. We also use email authentication technologies like SPF, DKIM, and DMARC to verify that the domain sending the email is authorized to do so. Many factors influence EOP filtering. For example, the sending IP, domain, email authentication, list accuracy, complaint rates, content, and more. One of the principal factors in driving down a sender's reputation and their ability to deliver email is their junk email complaint rate.
+[Exchange Online Protection (EOP)](eop-about.md) provides anti-spam protection for Microsoft 365. We also use email authentication technologies like SPF, DKIM, and DMARC to verify that the domain sending the email is authorized to do so. Many factors influence EOP filtering. For example, the sending IP, domain, email authentication, list accuracy, complaint rates, content, and more. One of the principal factors in driving down a sender's reputation and their ability to deliver email is their junk email complaint rate.
 
 ## Are you sending email from new IP addresses?
 
@@ -63,7 +63,7 @@ For example, the following NDR indicates that Microsoft blocked the sending IP a
 
 `550 5.7.606-649 Access denied, banned sending IP [x.x.x.x]; To request removal from this list please visit https://sender.office.com/ and follow the directions.`
 
-To request removal from this list, see [Use the delist portal to remove yourself from the blocked senders list](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
+To request removal from this list, see [Use the delist portal to remove yourself from the blocked senders list](external-senders-use-the-delist-portal-to-unblock-yourself.md).
 
 ## My email landed in the recipient's Junk Email folder
 
@@ -79,7 +79,7 @@ After we evaluate the messages and determine everything is OK, we remove the res
 
 ## I can't receive email from senders in Microsoft 365
 
-To receive messages from Microsoft 365 senders, make sure your network allows connections from the IP addresses that EOP uses in our datacenters. For more information, see [Exchange Online Protection IP addresses](../../enterprise/urls-and-ip-address-ranges.md).
+To receive messages from Microsoft 365 senders, make sure your network allows connections from the IP addresses that EOP uses in our datacenters. For more information, see [Exchange Online Protection IP addresses](/microsoft-365/enterprise/urls-and-ip-address-ranges).
 
 ## Best practices for bulk emailing to Microsoft 365 users
 

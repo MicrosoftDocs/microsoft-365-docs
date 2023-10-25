@@ -50,6 +50,8 @@
   items:
     - name: Contracts FAQs
       href: licenses/contracts-faq.yml
+    - name: User roles FAQs
+      href: licenses/user-roles-faq.yml
     - name: Downloads FAQs
       href: licenses/downloads-faq.yml
     - name: Product keys FAQ
