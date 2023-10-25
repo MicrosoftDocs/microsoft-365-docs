@@ -83,7 +83,7 @@ The following table lists the properties you can use in **Group**:
 
 ## Access policy rule
 
-Every access policy rule called PolicyRule can be used to define access restriction for each Device type group through multiple Entry.
+Every access policy rule called PolicyRule can be used to define access restriction for each Device type group through multiple entries.
 
 The table below lists the properties you can use in **PolicyRule**:
 
