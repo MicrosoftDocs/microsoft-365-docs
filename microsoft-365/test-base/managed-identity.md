@@ -20,6 +20,11 @@ f1.keywords: NOCSH
 
 This article includes step-by-step guidance to grant Test Base access to your key vault secrets so that you can authorize Test Base access to other platforms during your compatibility tests in a secure way.
 
+ **In this article,**
+ 
+ - [Prerequisite](#Prerequisite)
+ - [Grant Test Base managed identities to your Key Vault account](#GrantTestBaseAccess)
+
 **Relevant links**
 
 - [Importing Intune Credential in Test Base](https://aka.ms/testbase-doc-IntuneEnrollment)
