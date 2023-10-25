@@ -53,7 +53,7 @@ Ensure that the Windows devices that you need to onboard should meet the followi
 
 2. MOCAMP:4.18.2205 or later, you can run the command `Get-MpComputerStatus` in PowerShell to check the version.
 
-:::image type="content" source="images/administrator-windows-powershell.png" alt-text="This is administrator windows powershell.":::
+:::image type="content" source="images/administrator-windows-powershell.png" alt-text="Screenshot of administrator windows PowerShell.":::
 
 ### Device control printer protection properties
 
@@ -119,5 +119,5 @@ The table below lists the properties you can use in **Parameters**:
 
 You can view the policy name and printer information if you have right options setting in your policy.
 
-:::image type="content" source="images/enduser-experience.png" alt-text="This is enduser experience image.":::
+:::image type="content" source="images/enduser-experience.png" alt-text="Screenshot of enduser experience.":::
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
