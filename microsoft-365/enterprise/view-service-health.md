@@ -49,7 +49,7 @@ If you are unable to sign in to the admin center, you can use the [service statu
 
 3. On the **Service health** page, the health state of each cloud service is shown in a table format.
 
-    :::image type="content" source="../media/sh-page-upper-section-customer-side-issue.png" alt-text="Screenshot: Page with view of current issues in service health":::
+    :::image type="content" source="../media/sh-page-upper-section-customer-side-issue.png" lightbox="../media/sh-page-upper-section-customer-side-issue.png" alt-text="Screenshot: Page with view of current issues in service health":::
 
 The **Overview** tab (the default view) shows all services, their current health state, and any active incidents or advisories. An icon and status in the **Health** column indicate the state of each service.
 
@@ -83,7 +83,7 @@ You can also subscribe to email notifications for individual events instead of e
 
 In the **Active issues Microsoft is working on** section, select the issue title to see the issue detail page. This page shows more information about the issue, including a feed of all the messages posted while we work on a solution.
 
-:::image type="content" source="../media/sh-page-upper-section.png" alt-text="Screenshot: Page showing the service advisory":::
+:::image type="content" source="../media/sh-page-upper-section.png" lightbox="../media/sh-page-upper-section.png" alt-text="Screenshot: Page showing the service advisory":::
 
 The advisory or incident summary provides the following information:
 
@@ -98,7 +98,7 @@ The advisory or incident summary provides the following information:
 - **User Impact** - A brief description of the impact this issue has on the end user.
 - **All Updates** - We post frequent messages to let you know the progress that we're making in applying a solution.
 
-:::image type="content" source="../media/sh-page-with-issue-details.png" alt-text="Screenshot: Page showing issue details":::
+:::image type="content" source="../media/sh-page-with-issue-details.png" lightbox="../media/sh-page-with-issue-details.png" alt-text="Screenshot: Page showing issue details":::
 
 ### Translate service health details
 
@@ -115,8 +115,8 @@ Most of the time, services will appear as healthy with no further information. W
 
 | Icon | Description |
 |:-----|:-----|
-|![Information icon for advisory.](../media/a7f5fd21-c760-4948-9bc1-50f7c8070e28.png)|If a service has an advisory shown, we are aware of a problem that is affecting some users, but the service is still available. In an advisory, there is often a workaround to the problem and the problem may be intermittent or is limited in scope and user impact.  <br/> |
-|![Exclamation point icon for incident.](../media/a636db57-6083-44dc-bbd5-556850804f17.png)|If a service has an active incident shown, it's a critical issue and the service or a major function of the service is unavailable. For example, users may be unable to send and receive email or unable to sign-in. Incidents will have noticeable impact to users. When there is an incident in progress, we will provide updates regarding the investigation, mitigation efforts, and confirmation of resolution in the Service health dashboard.  <br/> |
+|![Information icon for advisory.](../media/a7f5fd21-c760-4948-9bc1-50f7c8070e28.png)|If a service has an advisory shown, we are aware of a problem that is affecting some users, but the service is still available. In an advisory, there is often a workaround to the problem and the problem may be intermittent or is limited in scope and user impact. |
+|![Exclamation point icon for incident.](../media/a636db57-6083-44dc-bbd5-556850804f17.png)|If a service has an active incident shown, it's a critical issue and the service or a major function of the service is unavailable. For example, users may be unable to send and receive email or unable to sign-in. Incidents will have noticeable impact to users. When there is an incident in progress, we will provide updates regarding the investigation, mitigation efforts, and confirmation of resolution in the Service health dashboard. |
 
 ### Status definitions
 
