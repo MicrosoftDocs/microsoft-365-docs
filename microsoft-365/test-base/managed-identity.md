@@ -47,7 +47,7 @@ This article includes step-by-step guidance to grant Test Base access to your ke
     Before assigning Key Vault access, please check your Key Vault configuration: Go to **Settings** \> **Access configuration**.
     > [!div class="mx-imgBorder"]
     > [![Screenshot of the access configuration page](Media/manage-identities-2.png)](Media/manage-identities-2.png#lightbox)
-    Depending on your \ permission model, please select below guidance:
+    Depending on your permission model, please select below guidance:
 
     > a. [Grant Key Vault access to Test Base **when your Permission model is Azure role-based access control**.](#KeyVaultRBAC)  
     > b. [Grant Key Vault access to Test Base **when your Permission model is Vault access policy**.](#KeyVaultAccessPolicy)
