@@ -171,14 +171,14 @@ If you experience any installation failures, refer to [Troubleshooting installat
   |ext2|S3fs|
   |ext3|Blobfuse|
   |ext4|Lustr|
-  |fuse|Glustrefs|
+  |fuse|glustrefs|
   |fuseblk|Afs|
   |jfs|sshfs|
-  |nfs (v3 only)|sshfs|
-  |overlay|cifs|
-  |ramfs|smb|
-  |reiserfs|gcsfuse|
-  |tmpfs|sysfs|
+  |nfs (v3 only)|cifs|
+  |overlay|smb|
+  |ramfs|gcsfuse|
+  |reiserfs|sysfs|
+  |tmpfs|
   |udf|
   |vfat|
   |xfs|
