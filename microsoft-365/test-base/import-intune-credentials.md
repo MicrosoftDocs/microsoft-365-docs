@@ -20,7 +20,7 @@ f1.keywords: NOCSH
 
 Many enterprises' IT departments have mentioned compatibility concerns after applications re-formatting during their migration to Intune. Others might be suffering to validate policy deployment before they reach the end users.
 
-Test Base now provides an efficient way that allows you to validate your Intune applications in batch, or to set up even more complex automatic testing plans. This guidance will show you how to enroll the testing VM under your Intune tenant and set up your test plan with our upgraded testing service.
+Test Base now provides an efficient way that allows you to validate your Intune applications in batch, or to set up even more complex automatic testing plans. This guidance shows you how to enroll the testing VM under your Intune tenant and set up your test plan with our upgraded testing service.
 
 **In this article,**
 
@@ -47,7 +47,7 @@ Security might be one of the top concerns when it comes to enrolling testing VM 
 
 **Attention:** Before importing Intune credentials, please make sure you or your organization administrators have already granted Test Base managed identities to your Key Vault account where you store the Intune credentials ([guidance](https://aka.ms/testbase-doc-ManagedIdentity)).
 
-In this section, we'll show you how to
+In this section, we show you how to
 
 - [Store your Intune credentials in Azure key vault](#Store_your_Intune)
 - [Import your credential secrets in Test Base](#Import_your_credential)
@@ -172,7 +172,7 @@ In this section, you should follow the steps below to set up your tests:
 > [!div class="mx-imgBorder"]
 > [![Screenshot of review and publish page](Media/import_intune_credentials_15.png)](Media/import_intune_credentials_15.png#lightbox)
 
-3. The first test will be triggered immediately with the latest Windows update that you selected. It may take up-to 24 hours to complete the initial validation test. You can learn quickly if there is any compatibility issue or package setting issue.
+3. The first test is triggered immediately with the latest Windows update that you selected. It may take up-to 24 hours to complete the initial validation test. You can learn quickly if there is any compatibility issue or package setting issue.
     After that, your test will be automatically triggered when there is a new update depending on the update ring you selected.
 
 4. You can track published package status or modify existing package via **Package catalog** | **Manage packages**.
@@ -256,7 +256,7 @@ In this section, you should follow the steps below to set up your tests:
 > [!div class="mx-imgBorder"]
 > [![Screenshot of review page of flow driven test](Media/import_intune_credentials_20.png)](Media/import_intune_credentials_20.png#lightbox)
 
-3. The first test will be triggered immediately with the latest Windows update that you selected. It may take up-to 24 hours to complete the initial validation test. You can learn quickly if there is any compatibility issue or package setting issue.
+3. The first test is triggered immediately with the latest Windows update that you selected. It may take up-to 24 hours to complete the initial validation test. You can learn quickly if there is any compatibility issue or package setting issue.
     After that, your test will be automatically triggered when there is a new update depending on the update ring you selected.
 
 4. You can track published package status or modify existing package via **Package catalog** | **Manage packages**.
@@ -264,7 +264,7 @@ In this section, you should follow the steps below to set up your tests:
 ## <a name="Check_Intune_enrollment"></a>Check Intune enrollment test results
 
 1. Find your package under navigation menu **Insights** \> **Test summary**.
-2. Select the run which you want to check. Click on **See details**. You may click to check execution log of each test script, or download log file package and videos for more test details.
+2. Select the run, which you want to check. Click on **See details**. You may click to check execution log of each test script, or download log file package and videos for more test details.
 > [!div class="mx-imgBorder"]
 > [![Screenshot of details of flow driven test](Media/import_intune_credentials_21.png)](Media/import_intune_credentials_21.png#lightbox)
 
