@@ -74,8 +74,8 @@ In this section, we show you how to
 ### <a name="Import_your_credential"></a>Import your credential secrets in Test Base
 
 1. Select **Manage** | **Manage credentials**. Click on **+ New Intune Credentials**
-> [!div class="mx-imgBorder"]
-> [![Screenshot of the Manage credentials page](Media/import_intune_credentials_3.png)](Media/import_intune_credentials_3.png#lightbox)
+    > [!div class="mx-imgBorder"]
+    > [![Screenshot of the Manage credentials page](Media/import_intune_credentials_3.png)](Media/import_intune_credentials_3.png#lightbox)
 
 2. Name the new credential so that you can find it easily later.
 3. Select Key Vault account and secrets where you stored Intune credentials.
@@ -110,8 +110,8 @@ In this section, you should follow the steps below to set up your tests:
 
 1. Log in into your Test Base account.
 2. Click on menu **New package** \> **Enroll from Intune**.
-> [!div class="mx-imgBorder"]
-> [![Screenshot of enroll from intune](Media/import_intune_credentials_7.png)](Media/import_intune_credentials_7.png#lightbox)
+    > [!div class="mx-imgBorder"]
+    > [![Screenshot of enroll from intune](Media/import_intune_credentials_7.png)](Media/import_intune_credentials_7.png#lightbox)
 
 ### <a name="Define"></a>Step 1: Define content
 
@@ -119,10 +119,11 @@ In this section, you should follow the steps below to set up your tests:
 2. Select credential pair. Or, click on **Add new credential**.
     *Reference:* [*Import your credential secrets in Test Base*](#Import_your_credential)
 
-> [!div class="mx-imgBorder"]
-> [![Screenshot of new package page](Media/import_intune_credentials_8.png)](Media/import_intune_credentials_8.png#lightbox)
+    > [!div class="mx-imgBorder"]
+    > [![Screenshot of new package page](Media/import_intune_credentials_8.png)](Media/import_intune_credentials_8.png#lightbox)
 
 3. (Optional) Select application(s) to test against (Apps from your Intune account).
+
     a. Click on **Select application(s) from Intune**.
     > [!div class="mx-imgBorder"]
     > [![Screenshot of define content in new package page](Media/import_intune_credentials_9.png)](Media/import_intune_credentials_9.png#lightbox)
@@ -142,8 +143,8 @@ In this section, you should follow the steps below to set up your tests:
 ### <a name="Configure"></a>Step 2: Configure test
 
 1. Select Functional as your Test type.
-> [!div class="mx-imgBorder"]
-> [![Screenshot of configure test in new package page](Media/import_intune_credentials_12.png)](Media/import_intune_credentials_12.png#lightbox)
+    > [!div class="mx-imgBorder"]
+    > [![Screenshot of configure test in new package page](Media/import_intune_credentials_12.png)](Media/import_intune_credentials_12.png#lightbox)
 
 2. (Optional) Turn on the toggle Pre-install Microsoft apps if you want to set interoperability tests with other Microsoft first party application updates.
 
@@ -151,12 +152,12 @@ In this section, you should follow the steps below to set up your tests:
 
 1. (Optional) System automatically generated launch / close scripts files. You may click the file and open Code editor to check if need to reorder the scripts.
 2. Click on the Edit button to set up detailed test flow.
-> [!div class="mx-imgBorder"]
-> [![Screenshot of edit button in package review page](Media/import_intune_credentials_13.png)](Media/import_intune_credentials_13.png#lightbox)
+    > [!div class="mx-imgBorder"]
+    > [![Screenshot of edit button in package review page](Media/import_intune_credentials_13.png)](Media/import_intune_credentials_13.png#lightbox)
 
 3. Define the script execution sequence.
-> [!div class="mx-imgBorder"]
-> [![Screenshot of functional test page](Media/import_intune_credentials_14.png)](Media/import_intune_credentials_14.png#lightbox)
+    > [!div class="mx-imgBorder"]
+    > [![Screenshot of functional test page](Media/import_intune_credentials_14.png)](Media/import_intune_credentials_14.png#lightbox)
 
 4. Click on **Apply** to confirm setting
 
@@ -169,10 +170,11 @@ In this section, you should follow the steps below to set up your tests:
 
 1. Review the configuration.
 2. Click to **Publish** the package.
-> [!div class="mx-imgBorder"]
-> [![Screenshot of review and publish page](Media/import_intune_credentials_15.png)](Media/import_intune_credentials_15.png#lightbox)
+    > [!div class="mx-imgBorder"]
+    > [![Screenshot of review and publish page](Media/import_intune_credentials_15.png)](Media/import_intune_credentials_15.png#lightbox)
 
 3. The first test is triggered immediately with the latest Windows update that you selected. It may take up-to 24 hours to complete the initial validation test. You can learn quickly if there is any compatibility issue or package setting issue.
+
     After that, your test will be automatically triggered when there is a new update depending on the update ring you selected.
 
 4. You can track published package status or modify existing package via **Package catalog** | **Manage packages**.
@@ -192,16 +194,17 @@ In this section, you should follow the steps below to set up your tests:
 
 1. Log in into your Test Base account.
 2. Click on menu **New package** \> **Enroll from Intune**.
-> [!div class="mx-imgBorder"]
-> [![Screenshot of enroll from intune_1](Media/import_intune_credentials_7.png)](Media/import_intune_credentials_7.png#lightbox)
+    > [!div class="mx-imgBorder"]
+    > [![Screenshot of enroll from intune_1](Media/import_intune_credentials_7.png)](Media/import_intune_credentials_7.png#lightbox)
 
 ### <a name="Define_1"></a>Step 1: Define content
 
 1. Create a new package with **Package source type** as **Enroll from Intune**.
 2. Select credential pair. Or, click on **Add new credential**.
+
     *Reference:* [*Import your credential secrets in Test Base*](#Import_your_credential)
-> [!div class="mx-imgBorder"]
-> [![Screenshot of new package page_1](Media/import_intune_credentials_8.png)](Media/import_intune_credentials_8.png#lightbox)
+    > [!div class="mx-imgBorder"]
+    > [![Screenshot of new package page_1](Media/import_intune_credentials_8.png)](Media/import_intune_credentials_8.png#lightbox)
 
 3. (Optional) Select application(s) to test against (Apps from your Intune account).
 
@@ -226,19 +229,19 @@ In this section, you should follow the steps below to set up your tests:
 ### <a name="Configure_1"></a>Step 2: Configure test
 
 1. Select **Flow Driven** as your Test type.
-> [!div class="mx-imgBorder"]
-> [![Screenshot of flow driven test configuration](Media/import_intune_credentials_16.png)](Media/import_intune_credentials_16.png#lightbox)
+    > [!div class="mx-imgBorder"]
+    > [![Screenshot of flow driven test configuration](Media/import_intune_credentials_16.png)](Media/import_intune_credentials_16.png#lightbox)
 
 ### <a name="Edit_1"></a>Step 3: Edit package
 
 1. (Optional) System automatically generated launch / close scripts files. You may click the file and open Code editor to check if need to reorder the scripts.
 2. Click on the Edit button to set up detailed test flow.
-> [!div class="mx-imgBorder"]
-> [![Screenshot of edit package page of flow driven test](Media/import_intune_credentials_17.png)](Media/import_intune_credentials_17.png#lightbox)
+    > [!div class="mx-imgBorder"]
+    > [![Screenshot of edit package page of flow driven test](Media/import_intune_credentials_17.png)](Media/import_intune_credentials_17.png#lightbox)
 
 3. Define the script execution sequence.
-> [!div class="mx-imgBorder"]
-> [![Screenshot of flow driven test](Media/import_intune_credentials_18.png)](Media/import_intune_credentials_18.png#lightbox)
+    > [!div class="mx-imgBorder"]
+    > [![Screenshot of flow driven test](Media/import_intune_credentials_18.png)](Media/import_intune_credentials_18.png#lightbox)
 
 4. Click on **Apply** to confirm setting
 
@@ -246,17 +249,18 @@ In this section, you should follow the steps below to set up your tests:
 
 1. Select **Inplace upgrade** as the OS update type.
 2. Select the baseline OS version and the target OS version.
-> [!div class="mx-imgBorder"]
-> [![Screenshot of test matrix of flow driven test](Media/import_intune_credentials_19.png)](Media/import_intune_credentials_19.png#lightbox)
+    > [!div class="mx-imgBorder"]
+    > [![Screenshot of test matrix of flow driven test](Media/import_intune_credentials_19.png)](Media/import_intune_credentials_19.png#lightbox)
 
 ### <a name="Review_1"></a>Step 5: Review + Publish
 
 1. Review the configuration.
 2. Click to **Publish** the package.
-> [!div class="mx-imgBorder"]
-> [![Screenshot of review page of flow driven test](Media/import_intune_credentials_20.png)](Media/import_intune_credentials_20.png#lightbox)
+    > [!div class="mx-imgBorder"]
+    > [![Screenshot of review page of flow driven test](Media/import_intune_credentials_20.png)](Media/import_intune_credentials_20.png#lightbox)
 
 3. The first test is triggered immediately with the latest Windows update that you selected. It may take up-to 24 hours to complete the initial validation test. You can learn quickly if there is any compatibility issue or package setting issue.
+
     After that, your test will be automatically triggered when there is a new update depending on the update ring you selected.
 
 4. You can track published package status or modify existing package via **Package catalog** | **Manage packages**.
@@ -265,6 +269,6 @@ In this section, you should follow the steps below to set up your tests:
 
 1. Find your package under navigation menu **Insights** \> **Test summary**.
 2. Select the run, which you want to check. Click on **See details**. You may click to check execution log of each test script, or download log file package and videos for more test details.
-> [!div class="mx-imgBorder"]
-> [![Screenshot of details of flow driven test](Media/import_intune_credentials_21.png)](Media/import_intune_credentials_21.png#lightbox)
+    > [!div class="mx-imgBorder"]
+    > [![Screenshot of details of flow driven test](Media/import_intune_credentials_21.png)](Media/import_intune_credentials_21.png#lightbox)
 
