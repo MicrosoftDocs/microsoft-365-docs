@@ -47,11 +47,12 @@ This article is updated frequently to let you know what's new in the latest rele
 &ensp;Signature version: **1.393.1305.0**<br/>
 
 **What's new**
-- This new release is build over October 2023 release (`101.23082.0009``) with addition of new CA Certificates. There's no change for other customers and upgrade is optional. 
+- This new release is build over October 2023 release (`101.23082.0009``) with addition of new CA Certificates. There's no change for other customers and upgrading is optional. 
 
 **Known issues**
 
-- When upgrading from mdatp version 101.75.43 or 101.78.13, you may encounter a kernel hang. Run the following commands before attempting to upgrade to version 101.98.05. More information about the underlying issue can be found at [System hang due to blocked tasks in fanotify code](https://access.redhat.com/solutions/2838901).
+When upgrading from mdatp version 101.75.43 or 101.78.13, you might encounter a kernel hang. Run the following commands before attempting to upgrade to version 101.98.05. More information about the underlying issue can be found at [System hang due to blocked tasks in fanotify code](https://access.redhat.com/solutions/2838901).
+
 There are two ways to mitigate this upgrade issue:
 
 1. Use your package manager to uninstall the `101.75.43` or `101.78.13` mdatp version.
