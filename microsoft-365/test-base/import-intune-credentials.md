@@ -22,7 +22,15 @@ Many enterprises' IT departments have mentioned compatibility concerns after app
 
 Test Base now provides an efficient way that allows you to validate your Intune applications in batch, or to set up even more complex automatic testing plans. This guidance shows you how to enroll the testing VM under your Intune tenant and set up your test plan with our upgraded testing service.
 
-## <a name="Prerequisites"></a>Prerequisites
+**In this article,**
+
+- [Prerequisites](#Prerequisites)
+- [Importing Intune Credential in Test Base](#Importing_Intune_Credentials)
+- [Validate Intune app deployment against Windows monthly updates](#Validate_Intune_app)
+- [Validate Intune app deployment before / after in-place upgrade to next version OS](#Validate_Intune_app_before)
+- [Check Intune enrollment test results](#Check_Intune_enrollment)
+
+### <a name="Prerequisites"></a>Prerequisites
 
 1. [*Creating a Test Base Account | Microsoft Learn*](createaccount.md)
 2. [*Grant Test Base managed identities to your Key Vault account*](https://aka.ms/testbase-doc-ManagedIdentity)
@@ -33,7 +41,7 @@ Test Base now provides an efficient way that allows you to validate your Intune 
 - *Create dynamic group to include the new enrolled VM (Query: device.displayName -startsWith "exepipe")*
 - *Assign test apps and policies to newly created dynamic groups.*
 
-## <a name="Importing_Intune_Credentials"></a>Importing Intune Credentials in Test Base
+### <a name="Importing_Intune_Credentials"></a>Importing Intune Credentials in Test Base
 
 Security might be one of the top concerns when it comes to enrolling testing VM into your Intune tenant. Test Base provides a secure way for Intune account connection via managed identity.
 
@@ -44,7 +52,7 @@ In this section, we show you how to
 - [Store your Intune credentials in Azure key vault](#Store_your_Intune)
 - [Import your credential secrets in Test Base](#Import_your_credential)
 
-### <a name="Store_your_Intune"></a>Store your Intune credentials in Azure key vault
+#### <a name="Store_your_Intune"></a>Store your Intune credentials in Azure key vault
 
 1. Store your user account in Azure key vault **Secret**
    
@@ -63,7 +71,7 @@ In this section, we show you how to
     2. Put your password in the input box **Secret value**. Name the secret.
     3. Select **Create**
 
-### <a name="Import_your_credential"></a>Import your credential secrets in Test Base
+#### <a name="Import_your_credential"></a>Import your credential secrets in Test Base
 
 1. Select **Manage** | **Manage credentials**. Click on **+ New Intune Credentials**
     > [!div class="mx-imgBorder"]
@@ -87,7 +95,7 @@ In this section, we show you how to
     > [!div class="mx-imgBorder"]
     > [![Screenshot of the Intune account](Media/import_intune_credentials_6.png)](Media/import_intune_credentials_6.png#lightbox)
 
-## <a name="Validate_Intune_app"></a>Validate Intune app deployment against Windows monthly updates
+### <a name="Validate_Intune_app"></a>Validate Intune app deployment against Windows monthly updates
 
 In this section, you should follow the steps below to set up your tests:
 
@@ -98,14 +106,14 @@ In this section, you should follow the steps below to set up your tests:
 - [Step 4: Set test matrix](#Set)
 - [Step 5: Review + Publish](#Review)
 
-### <a name="Start"></a>Step 0: Start your package onboarding
+#### <a name="Start"></a>Step 0: Start your package onboarding
 
 1. Log in into your Test Base account.
 2. Click on menu **New package** \> **Enroll from Intune**.
     > [!div class="mx-imgBorder"]
     > [![Screenshot of enroll from intune](Media/import_intune_credentials_7.png)](Media/import_intune_credentials_7.png#lightbox)
 
-### <a name="Define"></a>Step 1: Define content
+#### <a name="Define"></a>Step 1: Define content
 
 1. Create a new package with **Package source type** as **Enroll from Intune**.
 2. Select credential pair. Or, click on **Add new credential**.
@@ -132,7 +140,7 @@ In this section, you should follow the steps below to set up your tests:
 4. (Optional) If you have any testing scripts, dependency libraries, or other test app packages, you can click on **Select file** and upload them.
 5. Input **Package name** and **Package version** so that you can track this group of tests easier in the result reports.
 
-### <a name="Configure"></a>Step 2: Configure test
+#### <a name="Configure"></a>Step 2: Configure test
 
 1. Select Functional as your Test type.
     > [!div class="mx-imgBorder"]
@@ -140,7 +148,7 @@ In this section, you should follow the steps below to set up your tests:
 
 2. (Optional) Turn on the toggle Pre-install Microsoft apps if you want to set interoperability tests with other Microsoft first party application updates.
 
-### <a name="Edit"></a>Step 3: Edit package
+#### <a name="Edit"></a>Step 3: Edit package
 
 1. (Optional) System automatically generated launch / close scripts files. You may click the file and open Code editor to check if need to reorder the scripts.
 2. Click on the Edit button to set up detailed test flow.
@@ -153,12 +161,12 @@ In this section, you should follow the steps below to set up your tests:
 
 4. Click on **Apply** to confirm setting
 
-### <a name="Set"></a>Step 4: Set test matrix
+#### <a name="Set"></a>Step 4: Set test matrix
 
 1. Select **Security update** as the OS update type
 2. Select the OS(es) you'd like to set up scheduled tests for monthly updates.
 
-### <a name="Review"></a>Step 5: Review + Publish
+#### <a name="Review"></a>Step 5: Review + Publish
 
 1. Review the configuration.
 2. Click to **Publish** the package.
@@ -171,7 +179,7 @@ In this section, you should follow the steps below to set up your tests:
 
 4. You can track published package status or modify existing package via **Package catalog** | **Manage packages**.
 
-## <a name="Validate_Intune_app_before"></a>Validate Intune app deployment before / after in-place upgrade to next version OS
+### <a name="Validate_Intune_app_before"></a>Validate Intune app deployment before / after in-place upgrade to next version OS
 
 In this section, you should follow the steps below to set up your tests:
 
@@ -182,14 +190,14 @@ In this section, you should follow the steps below to set up your tests:
 - [Step 4: Set test matrix](#Set_1)
 - [Step 5: Review + Publish](#Review_1)
 
-### <a name="Start_1"></a>Step 0: Start your package onboarding
+#### <a name="Start_1"></a>Step 0: Start your package onboarding
 
 1. Log in into your Test Base account.
 2. Click on menu **New package** \> **Enroll from Intune**.
     > [!div class="mx-imgBorder"]
     > [![Screenshot of enroll from intune_1](Media/import_intune_credentials_7.png)](Media/import_intune_credentials_7.png#lightbox)
 
-### <a name="Define_1"></a>Step 1: Define content
+#### <a name="Define_1"></a>Step 1: Define content
 
 1. Create a new package with **Package source type** as **Enroll from Intune**.
 2. Select credential pair. Or, click on **Add new credential**.
@@ -218,13 +226,13 @@ In this section, you should follow the steps below to set up your tests:
 4. (Optional) If you have any testing scripts or dependency libraries, you can click on **Select file** and upload them.
 5. Input **Package name** and **Package version** so that you can track this group of tests easier in the result reports.
 
-### <a name="Configure_1"></a>Step 2: Configure test
+#### <a name="Configure_1"></a>Step 2: Configure test
 
 1. Select **Flow Driven** as your Test type.
     > [!div class="mx-imgBorder"]
     > [![Screenshot of flow driven test configuration](Media/import_intune_credentials_16.png)](Media/import_intune_credentials_16.png#lightbox)
 
-### <a name="Edit_1"></a>Step 3: Edit package
+#### <a name="Edit_1"></a>Step 3: Edit package
 
 1. (Optional) System automatically generated launch / close scripts files. You may click the file and open Code editor to check if need to reorder the scripts.
 2. Click on the Edit button to set up detailed test flow.
@@ -237,14 +245,14 @@ In this section, you should follow the steps below to set up your tests:
 
 4. Click on **Apply** to confirm setting
 
-### <a name="Set_1"></a>Step 4: Set test matrix
+#### <a name="Set_1"></a>Step 4: Set test matrix
 
 1. Select **Inplace upgrade** as the OS update type.
 2. Select the baseline OS version and the target OS version.
     > [!div class="mx-imgBorder"]
     > [![Screenshot of test matrix of flow driven test](Media/import_intune_credentials_19.png)](Media/import_intune_credentials_19.png#lightbox)
 
-### <a name="Review_1"></a>Step 5: Review + Publish
+#### <a name="Review_1"></a>Step 5: Review + Publish
 
 1. Review the configuration.
 2. Click to **Publish** the package.
@@ -257,7 +265,7 @@ In this section, you should follow the steps below to set up your tests:
 
 4. You can track published package status or modify existing package via **Package catalog** | **Manage packages**.
 
-## <a name="Check_Intune_enrollment"></a>Check Intune enrollment test results
+### <a name="Check_Intune_enrollment"></a>Check Intune enrollment test results
 
 1. Find your package under navigation menu **Insights** \> **Test summary**.
 2. Select the run, which you want to check. Click on **See details**. You may click to check execution log of each test script, or download log file package and videos for more test details.
