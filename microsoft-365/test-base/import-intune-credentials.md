@@ -22,14 +22,6 @@ Many enterprises' IT departments have mentioned compatibility concerns after app
 
 Test Base now provides an efficient way that allows you to validate your Intune applications in batch, or to set up even more complex automatic testing plans. This guidance shows you how to enroll the testing VM under your Intune tenant and set up your test plan with our upgraded testing service.
 
-**In this article,**
-
-- [Prerequisites](#Prerequisites)
-- [Importing Intune Credential in Test Base](#Importing_Intune_Credentials)
-- [Validate Intune app deployment against Windows monthly updates](#Validate_Intune_app)
-- [Validate Intune app deployment before / after in-place upgrade to next version OS](#Validate_Intune_app_before)
-- [Check Intune enrollment test results](#Check_Intune_enrollment)
-
 ## <a name="Prerequisites"></a>Prerequisites
 
 1. [*Creating a Test Base Account | Microsoft Learn*](createaccount.md)
