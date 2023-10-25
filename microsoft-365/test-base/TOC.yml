@@ -42,6 +42,10 @@
       href: validate-monthly-security-updates.md
     - name: Validate apps against a custom image
       href: validate-apps-against-a-custom-image.md
+    - name: Validate your Intune apps and policies on Test Base
+      href: import-intune-credentials.md
+    - name: Grant Test Base managed identities to your Key Vault account
+      href: import-intune-credentials.md
 - name: How-to guides
   items:
   - name: Server application testing
