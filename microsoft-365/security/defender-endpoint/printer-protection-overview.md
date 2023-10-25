@@ -92,10 +92,10 @@ The following table lists the properties you can use in **PolicyRule**:
 |PolicyRule ID|GUID, a unique ID, represents the policy and is used in reporting and troubleshooting.|You can generate the group ID through  [PowerShell](/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-7.3&preserve-view=true)|
 |Name|String, the name of the policy displays on the toast based on the policy setting and is captured in the reporting.|
 |IncludedIdList|The group(s) that the policy is applied to. If multiple groups are added, the policy is applied to any media in all those groups.|The Group ID/GUID must be used at this instance. The following example shows the usage of GroupID: {EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1} <p> **Note**: You shouldn't add multiple groups inside IncludedIdList. Instead, add all groups into a new group and then add the new group inside IncludedIdList.|
-|ExcludedIDList|The group(s) that the policy won't be applied to.|The Group ID/GUID must be used at this instance.|
-|Entry|One PolicyRule can have multiple entries; each entry with a unique GUID tells Device Control one restriction.|See Entry properties table below for more details.|
+|ExcludedIDList|The group(s) that the policy isn't applied to.|The Group ID/GUID must be used at this instance.|
+|Entry|One PolicyRule can have multiple entries; each entry with a unique GUID tells Device Control one restriction.|See the entry properties table for more details.|
 
-The table below lists the properties you can use in **Entry**:
+The following table lists the properties you can use in **Entry**:
 
 |Property Name|Description|Options|
 |---|---|---|
