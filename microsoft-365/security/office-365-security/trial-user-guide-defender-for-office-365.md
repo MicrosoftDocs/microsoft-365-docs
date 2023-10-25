@@ -20,7 +20,7 @@ ms.subservice: mdo
 ms.custom: trial-user guide
 ms.date: 6/23/2023
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
@@ -117,7 +117,7 @@ Use the reporting capabilities in Defender for Office 365 to get more details ab
 Protect your most targeted and most visible users with Priority Account Protection in Defender for Office 365, which helps you prioritize your workflow to ensure these users are safe.
 
 - Identify your most targeted or most visible users.
-- [Tag these users](../../admin/setup/priority-accounts.md#add-priority-accounts-from-the-microsoft-365-defender-page) as priority accounts.
+- [Tag these users](/microsoft-365/admin/setup/priority-accounts#add-priority-accounts-from-the-microsoft-365-defender-page) as priority accounts.
 - Track threats to priority accounts throughout the portal.
 
 Watch this video to learn more: [Protecting priority accounts in Microsoft Defender for Office 365 - YouTube](https://www.youtube.com/watch?v=tqnj0TlzQcI&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=11).

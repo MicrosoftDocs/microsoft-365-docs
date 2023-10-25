@@ -228,7 +228,7 @@ Sharing Exchange contact data on Apple mobile devices to the Apple iCloud.|This 
 
 GDPR grants individuals (or, data subjects) certain rights in connection with the processing of their personal data, including the right to correct inaccurate data, erase data or restrict its processing, receive their data and fulfill a request to transmit their data to another controller. The Tenant Administrator role for Office 365 operated by 21Vianet can request data on behalf of a data subject in the following ways:
 
-- Using the Azure Active Directory Admin Center, a Tenant Administrator can permanently delete a data subject from Azure Active Directory and related services.
+- Using the Microsoft Entra Admin Center, a Tenant Administrator can permanently delete a data subject from Microsoft Entra ID and related services.
 
 - System generated logs for Microsoft services operated by 21Vianet can be exported by Tenant Administrators using the Data Log Export.
 

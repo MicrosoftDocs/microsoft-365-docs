@@ -61,6 +61,8 @@
                   href: manage-library-settings.md
                 - name: Choose a library view 
                   href: choose-library-view.md
+                - name: View processing status 
+                  href: processing-status.md
                 - name: Analyze model usage
                   href: model-usage-analytics.md
 
@@ -92,6 +94,8 @@
                   href: manage-library-settings.md
                 - name: Choose a library view 
                   href: choose-library-view.md
+                - name: View processing status 
+                  href: processing-status.md
                 - name: Analyze model usage
                   href: model-usage-analytics.md
 
@@ -141,6 +145,8 @@
                   href: manage-library-settings.md
                 - name: Choose a library view 
                   href: choose-library-view.md
+                - name: View processing status 
+                  href: processing-status.md
                 - name: Analyze model usage
                   href: model-usage-analytics.md
 
@@ -194,7 +200,10 @@
     - name: Content query
       href: metadata-search.md
 
-    - name: Content processing
+    - name: Merge and extract PDFs
+      href: merge-extract-pdf.md
+
+    - name: Processing rules
       items: 
         - name: Overview 
           href: content-processing-overview.md

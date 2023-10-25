@@ -30,7 +30,7 @@ The report provided the following list of app configuration status:
 - **Device Name**: Names of any devices that are associated with the user's account.
 - **App Instance ID**: The string that identities a unique user + app + device that has checked-in with the Intune service.
 - **Device type**: The type of device or operating system of the device.
-- **AAD Device ID**: The AAD device ID is displayed if the device is AAD-joined.
+- **Microsoft Entra Device ID**: The Microsoft Entra device ID is displayed if the device is Microsoft Entra joined.
 - **Platform**: The operating system of the device.
 - **Policy name**: The name of the app protection policy targeted to the app for the user.
 - **Last sync**: The timestamp of the last sync of the app with Microsoft Intune.

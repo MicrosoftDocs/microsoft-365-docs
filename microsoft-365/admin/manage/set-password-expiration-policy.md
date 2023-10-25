@@ -68,17 +68,21 @@ People who only use the Outlook app won't be forced to reset their Microsoft 365
 
 If you want to prevent your users from recycling old passwords, you can do so by enforcing password history in on-premises Active Directory (AD). See [Create a custom password policy](/azure/active-directory-domain-services/password-policy#create-a-custom-password-policy).
 
-In Azure AD, The last password can't be used again when the user changes a password. The password policy is applied to all user accounts that are created and managed directly in Azure AD. This password policy can't be modified. See [Azure AD password policies](/azure/active-directory/authentication/concept-sspr-policy#password-policies-that-only-apply-to-cloud-user-accounts).
+In Microsoft Entra ID, The last password can't be used again when the user changes a password. The password policy is applied to all user accounts that are created and managed directly in Microsoft Entra ID. This password policy can't be modified. See [Microsoft Entra password policies](/azure/active-directory/authentication/concept-sspr-policy#password-policies-that-only-apply-to-cloud-user-accounts).
 
-## Synchronize user passwords hashes from an on-premises Active Directory to Azure AD (Microsoft 365)
+<a name='synchronize-user-passwords-hashes-from-an-on-premises-active-directory-to-azure-ad-microsoft-365'></a>
 
-This article is for setting the expiration policy for cloud-only users (Azure AD). It doesn't apply to hybrid identity users who use password hash sync, pass-through authentication, or on-premises federation like ADFS.
+## Synchronize user passwords hashes from an on-premises Active Directory to Microsoft Entra ID (Microsoft 365)
+
+This article is for setting the expiration policy for cloud-only users (Microsoft Entra ID). It doesn't apply to hybrid identity users who use password hash sync, pass-through authentication, or on-premises federation like ADFS.
   
-To learn how to synchronize user password hashes from on premises AD to Azure AD, see [Implement password hash synchronization with Azure AD Connect sync](/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization).
+To learn how to synchronize user password hashes from on premises AD to Microsoft Entra ID, see [Implement password hash synchronization with Microsoft Entra Connect Sync](/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization).
 
-## Password policies and account restrictions in Azure Active Directory
+<a name='password-policies-and-account-restrictions-in-azure-active-directory'></a>
 
-You can set more password policies and restrictions in Azure active directory. Check out [Password policies and account restrictions in Azure Active Directory](/azure/active-directory/authentication/concept-sspr-policy) for more info.
+## Password policies and account restrictions in Microsoft Entra ID
+
+You can set more password policies and restrictions in Microsoft Entra ID. Check out [Password policies and account restrictions in Microsoft Entra ID](/azure/active-directory/authentication/concept-sspr-policy) for more info.
 
 ## Update password Policy using PowerShell
 

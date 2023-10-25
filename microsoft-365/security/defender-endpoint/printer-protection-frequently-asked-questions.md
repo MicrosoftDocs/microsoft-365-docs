@@ -100,9 +100,11 @@ DeviceFileEvents
    :::image type="content" source="media/details.png" alt-text="This is details screenshot." lightbox="media/details.png":::
  
  
-## How do I find Sid for Azure AD group?
+<a name='how-do-i-find-sid-for-azure-ad-group'></a>
 
-Different from AD group, the Sid is using Object ID for Azure AD group. You can find the Object ID from Azure portal.
+## How do I find Sid for Microsoft Entra group?
+
+Different from AD group, the Sid is using Object ID for Microsoft Entra group. You can find the Object ID from Azure portal.
 
 :::image type="content" source="media/device-control-user-group.png" alt-text="This is device control user group screenshot." lightbox="media/device-control-user-group.png":::
 

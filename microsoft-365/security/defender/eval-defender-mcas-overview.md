@@ -39,7 +39,7 @@ Use the following steps to enable and pilot Microsoft Defender for Cloud Apps.
 
 |Step  |Description  |
 |---------|---------|
-|[Review architecture requirements and key concepts](eval-defender-mcas-architecture.md)    | Understand the Defender for Cloud Apps architecture and how it integrates with Microsoft 365 Defender, Microsoft Defender for Endpoint, and Azure Active Directory.        |
+|[Review architecture requirements and key concepts](eval-defender-mcas-architecture.md)    | Understand the Defender for Cloud Apps architecture and how it integrates with Microsoft 365 Defender, Microsoft Defender for Endpoint, and Microsoft Entra ID.        |
 |[Enable the evaluation environment](eval-defender-mcas-enable-eval.md)     | Connect to the portal, configure integration with Defender for Identity and/or your organization's network devices, and begin to view and manage cloud apps.         |
 |[Set up the pilot](eval-defender-mcas-pilot.md)    | Scope your deployment to certain user groups, configure Conditional Access App Control, and try out tutorials for protecting your environment.       |
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
