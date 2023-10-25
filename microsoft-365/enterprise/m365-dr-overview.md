@@ -86,7 +86,7 @@ Some examples:
 
 ### Migrations/Moves
 
-Once a Microsoft 365 service provisions a _Tenant_ into a particular _Geography_, there are five ways that this data could move to another _Geography_:
+Once a Microsoft 365 service provisions a _Tenant_ into a particular _Geography_, there are three ways that this data could move to another _Geography_:
 
 1. The Microsoft 365 service decides to move the data to a new _Geography_ for service operations reasons, if there are no other policies in place to prevent the move.
 1. If a _Tenant_ subscribes to the _Multi-Geo_ service, then _Tenants_ user's data for Exchange Online, SharePoint Online and Microsoft Teams can be assigned to _Satellite Geographies_.
@@ -167,7 +167,7 @@ The following Regional Geographies can store data at rest.
 |Australia   |Sydney, Melbourne   |
 |Brazil   |Rio, Campinas   |
 |Canada      |Quebec City, Toronto    |
-|European Union      |Austria (Vienna), Finland (Helsinki), France (Paris, Marseille), Ireland (Dublin), Netherlands (Amsterdam), Poland (Warsaw), (Sweden (Gävle, Sandviken, Staffanstorp)     |
+|European Union      |Austria (Vienna), Finland (Helsinki), France (Paris, Marseille), Ireland (Dublin), Italy (Milan), Netherlands (Amsterdam), Poland (Warsaw), Sweden (Gävle, Sandviken, Staffanstorp)     |
 |France      |Paris, Marseille     |
 |Germany     |Frankfurt, Berlin       |
 |India   |Chennai, Mumbai, Pune        |
