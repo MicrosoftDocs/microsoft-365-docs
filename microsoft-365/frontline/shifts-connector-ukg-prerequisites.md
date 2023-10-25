@@ -178,7 +178,7 @@ Assumptions:
 
 In this scenario, the UKG Pro WFM location structure looks something like this, in which the Company node represents the top-most level in the hierarchy.
 
-:::image type="content" source="media/shifts-connector-ukg-prerequisites-chart.png" alt-text="A chart showing the UKG Pro WFM location structure for the Contoso example scenario.":::
+:::image type="content" source="media/shifts-connector-ukg-prerequisites-chart.png" alt-text="A chart showing the UKG Pro WFM location structure for the Contoso example scenario." lightbox ="media/shifts-connector-ukg-prerequisites-chart.png":::
 
 <!--|Level |UKG Pro WFM location |Node |
 |---------|---------|---------|
