@@ -55,7 +55,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `ThreatNames` | `string` | Detection name for malware or other threats found |
 | `DetectionMethods` | `string` | Methods used to detect malware, phishing, or other threats found in the email |
 | `ReportId` | `long` | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns. |
-| `FileSize` | `string` | Size of the file in bytes |
+| `FileSize` | `long` | Size of the file in bytes |
 
 ## Related topics
 
