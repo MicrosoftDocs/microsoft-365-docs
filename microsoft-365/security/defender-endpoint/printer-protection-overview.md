@@ -2,9 +2,6 @@
 title: Printer Protection Overview
 description: A walk-through about Microsoft Defender for Endpoint for Printer Protection
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: dansimp
 author: nimishasatapathy
 ms.localizationpriority: medium
@@ -17,7 +14,7 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.subservice: mde
-ms.date: 01/17/2023
+ms.date: 10/25/2023
 ms.reviewer: tewchen
 search.appverid: met150
 ---
