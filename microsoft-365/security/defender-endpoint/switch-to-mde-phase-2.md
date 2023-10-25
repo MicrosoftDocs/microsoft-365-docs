@@ -6,7 +6,7 @@ ms.subservice: mde
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
-ms.date: 09/28/2023
+ms.date: 10/24/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,7 +18,7 @@ ms.collection:
   - tier1
 ms.topic: how-to
 ms.custom: migrationguides
-ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
+ms.reviewer: jesquive, chventou, jonix, chriggs, owtho, yongrhee
 search.appverid: met150
 ---
 
@@ -31,7 +31,7 @@ search.appverid: met150
 
 |[![Phase 1: Prepare.](images/phase-diagrams/prepare.png#lightbox)](switch-to-mde-phase-1.md)<br/>[Phase 1: Prepare](switch-to-mde-phase-1.md)|![Phase 2: Set up.](images/phase-diagrams/setup.png#lightbox)<br/>Phase 2: Set up|[![Phase 3: Onboard3.](images/phase-diagrams/onboard.png#lightbox)](switch-to-mde-phase-3.md)<br/>[Phase 3: Onboard](switch-to-mde-phase-3.md)|
 |---|---|---|
-||*You are here!*||
+||*You're here!*||
 
 **Welcome to the Setup phase of [migrating to Defender for Endpoint](switch-to-mde-overview.md#the-migration-process)**. This phase includes the following steps:
 
@@ -50,7 +50,7 @@ As you're making the switch to Defender for Endpoint, you might need to take cer
 |Endpoint type|What to do|
 |---|---|
 |Windows clients (such as endpoints running Windows 10 and Windows 11)|In general, you don't need to take any action for Windows clients (unless Microsoft Defender Antivirus has been uninstalled). In general, Microsoft Defender Antivirus should still be installed, but is most likely disabled at this point of the migration process. <br/><br/> When a non-Microsoft antivirus/antimalware solution is installed and the clients aren't yet onboarded to Defender for Endpoint, Microsoft Defender Antivirus is disabled automatically. Later, when the client endpoints are onboarded to Defender for Endpoint, if those endpoints are running a non-Microsoft antivirus solution, Microsoft Defender Antivirus goes into passive mode. <br/><br/> If the non-Microsoft antivirus solution is uninstalled, Microsoft Defender Antivirus goes into active mode automatically.|
-|Windows servers|On Windows Server, you'll need to reinstall Microsoft Defender Antivirus, and set it to passive mode manually. On Windows servers, when a non-Microsoft antivirus/antimalware is installed, Microsoft Defender Antivirus can't run alongside the non-Microsoft antivirus solution. In those cases, Microsoft Defender Antivirus is disabled or uninstalled manually. <br/><br/> To reinstall or enable Microsoft Defender Antivirus on Windows Server, perform the following tasks: <br/>- [Re-enable Defender Antivirus on Windows Server if it was disabled](enable-update-mdav-to-latest-ws.md#re-enable-microsoft-defender-antivirus-on-windows-server-if-it-was-disabled)<br/>- [Re-enable Defender Antivirus on Windows Server if it was uninstalled](enable-update-mdav-to-latest-ws.md#re-enable-microsoft-defender-antivirus-on-windows-server-if-it-was-uninstalled)<br/>- [Set Microsoft Defender Antivirus to passive mode on Windows Server](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server) <br/><br/>If you run into issues reinstalling or re-enabling Microsoft Defender Antivirus on Windows Server, see [Troubleshooting: Microsoft Defender Antivirus is getting uninstalled on Windows Server](switch-to-mde-troubleshooting.md#microsoft-defender-antivirus-is-getting-uninstalled-on-windows-server).|
+|Windows servers|On Windows Server, you need to reinstall Microsoft Defender Antivirus, and set it to passive mode manually. On Windows servers, when a non-Microsoft antivirus/antimalware is installed, Microsoft Defender Antivirus can't run alongside the non-Microsoft antivirus solution. In those cases, Microsoft Defender Antivirus is disabled or uninstalled manually. <br/><br/> To reinstall or enable Microsoft Defender Antivirus on Windows Server, perform the following tasks: <br/>- [Re-enable Defender Antivirus on Windows Server if it was disabled](enable-update-mdav-to-latest-ws.md#re-enable-microsoft-defender-antivirus-on-windows-server-if-it-was-disabled)<br/>- [Re-enable Defender Antivirus on Windows Server if it was uninstalled](enable-update-mdav-to-latest-ws.md#re-enable-microsoft-defender-antivirus-on-windows-server-if-it-was-uninstalled)<br/>- [Set Microsoft Defender Antivirus to passive mode on Windows Server](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server) <br/><br/>If you run into issues reinstalling or re-enabling Microsoft Defender Antivirus on Windows Server, see [Troubleshooting: Microsoft Defender Antivirus is getting uninstalled on Windows Server](switch-to-mde-troubleshooting.md#microsoft-defender-antivirus-is-getting-uninstalled-on-windows-server).|
 
 > [!TIP]
 > To learn more about Microsoft Defender Antivirus states with non-Microsoft antivirus protection, see [Microsoft Defender Antivirus compatibility](microsoft-defender-antivirus-compatibility.md).
@@ -75,7 +75,7 @@ If Microsoft Defender Antivirus features and installation files were previously 
 
 ### Are you using Windows Server 2012 R2 or Windows Server 2016?
 
-You can now run Microsoft Defender Antivirus in passive mode on Windows Server 2012 R2 and 2016 using the method above. For more information, see [Options to install Microsoft Defender for Endpoint](configure-server-endpoints.md#options-to-install-the-microsoft-defender-for-endpoint-packages).
+You can now run Microsoft Defender Antivirus in passive mode on Windows Server 2012 R2 and 2016 using the method described in the previous section. For more information, see [Options to install Microsoft Defender for Endpoint](configure-server-endpoints.md#options-to-install-the-microsoft-defender-for-endpoint-packages).
 
 ## Step 2: Configure Defender for Endpoint Plan 1 or Plan 2
 
@@ -90,7 +90,7 @@ You can now run Microsoft Defender Antivirus in passive mode on Windows Server 2
 
    | Screen | What it means |
    |---|:---|
-   | :::image type="content" source="media/mde-hangon-provisioning.png" alt-text="Screenshot showing message that says hang on because MDE is not provisioned yet." lightbox="media/mde-hangon-provisioning.png"::: | Defender for Endpoint isn't finished provisioning yet. You might have to wait a little while for the process to finish. |
+   | :::image type="content" source="media/mde-hangon-provisioning.png" alt-text="Screenshot showing message that says hang on because MDE isn't provisioned yet." lightbox="media/mde-hangon-provisioning.png"::: | Defender for Endpoint isn't finished provisioning yet. You might have to wait a little while for the process to finish. |
    | :::image type="content" source="media/device-inventory-empty.png" alt-text="Screenshot showing device inventory page with no device onboarded yet." lightbox="media/device-inventory-empty.png"::: | Defender for Endpoint is provisioned. In this case, proceed to the next step. |
 
 2. Turn on [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md). We recommend turning tamper protection on for your whole organization. You can do this task in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)).
@@ -119,7 +119,7 @@ You can now run Microsoft Defender Antivirus in passive mode on Windows Server 2
 
    7. Set the toggle for **Use MDE to enforce security configuration settings from MEM** to **On**, and then select the options for both Windows client and Windows Server devices. 
 
-   8. If you're planning to use Configuration Manager, set the toggle for **Manage Security settings using Configuration Manager** to **On**. (If you need help with this step, see [Co-existence with Microsoft Endpoint Configuration Manager](/mem/intune/protect/mde-security-integration#co-existence-with-microsoft-endpoint-configuration-manager).)
+   8. If you're planning to use Configuration Manager, set the toggle for **Manage Security settings using Configuration Manager** to **On**. (If you need help with this step, see [Coexistence with Microsoft Endpoint Configuration Manager](/mem/intune/protect/mde-security-integration#co-existence-with-microsoft-endpoint-configuration-manager).)
 
    9. Scroll down and select **Save**.
 
@@ -152,7 +152,7 @@ You can now run Microsoft Defender Antivirus in passive mode on Windows Server 2
 
 This step of the setup process involves adding Defender for Endpoint to the exclusion list for your existing endpoint protection solution and any other security products your organization is using. Make sure to refer to your solution provider's documentation to add exclusions.
 
-The specific exclusions to configure will depend on which version of Windows your endpoints or devices are running, and are listed in the following table.
+The specific exclusions to configure depend on which version of Windows your endpoints or devices are running, and are listed in the following table.
 
 | OS |Exclusions |
 |:--|:--|

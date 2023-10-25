@@ -27,7 +27,7 @@ ms.date: 1/31/2023
 
 # Policies for allowing guest access and B2B external user access
 
-This article discusses adjusting the recommended Zero Trust identity and device access policies to allow access for guests and external users that have a Microsoft Entra Business-to-Business (B2B) account. This guidance builds on the [common identity and device access policies](identity-access-policies.md).
+This article discusses adjusting the recommended Zero Trust identity and device access policies to allow access for guests and external users that have a Microsoft Entra Business-to-Business (B2B) account. This guidance builds on the [common identity and device access policies](zero-trust-identity-device-access-policies-common.md).
 
 These recommendations are designed to apply to the **starting point** tier of protection. But you can also adjust the recommendations based on your specific needs for **enterprise** and **specialized security** protection.
 
@@ -39,12 +39,12 @@ This diagram shows which policies to add or update among the common identity and
 
 :::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png" alt-text="The summary of policy updates for protecting guest access" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png":::
 
-The following table lists the policies you either need to create and update. The common policies link to the associated configuration instructions in the [Common identity and device access policies](identity-access-policies.md) article.
+The following table lists the policies you either need to create and update. The common policies link to the associated configuration instructions in the [Common identity and device access policies](zero-trust-identity-device-access-policies-common.md) article.
 
 |Protection level|Policies|More information|
 |---|---|---|
-|**Starting point**|[Require MFA always for guests and external users](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Create this new policy and configure: <ul><li>For **Assignments > Users and groups > Include**, choose **Select users and groups**, and then select **All guest and external users**.</li><li>For **Assignments > Conditions > Sign-in risk** and select all Sign-in risk levels. </li></ul>|
-||[Require MFA when sign-in risk is *medium* or *high*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Modify this policy to exclude guests and external users.|
+|**Starting point**|[Require MFA always for guests and external users](zero-trust-identity-device-access-policies-common.md#require-mfa-based-on-sign-in-risk)|Create this new policy and configure: <ul><li>For **Assignments > Users and groups > Include**, choose **Select users and groups**, and then select **All guest and external users**.</li><li>For **Assignments > Conditions > Sign-in risk** and select all Sign-in risk levels. </li></ul>|
+||[Require MFA when sign-in risk is *medium* or *high*](zero-trust-identity-device-access-policies-common.md#require-mfa-based-on-sign-in-risk)|Modify this policy to exclude guests and external users.|
 
 To include or exclude guests and external users in Conditional Access policies, for **Assignments > Users and groups > Include** or **Exclude**, check **All guest and external users**.
 
@@ -62,7 +62,7 @@ Microsoft Teams defines the following users:
 
 For more information, see the [comparison between guests and external user access for teams](/microsoftteams/communicate-with-users-from-other-organizations#compare-external-and-guest-access).
 
-For more information on securing identity and device access policies for Teams, see [Policy recommendations for securing Teams chats, groups, and files](teams-access-policies.md).
+For more information on securing identity and device access policies for Teams, see [Policy recommendations for securing Teams chats, groups, and files](zero-trust-identity-device-access-policies-teams.md).
 
 ### Require MFA always for guest and external users
 
@@ -84,7 +84,7 @@ Only one organization can manage a device. If you don't exclude guests and exter
 
 Configure Conditional Access policies for:
 
-- [Microsoft Teams](teams-access-policies.md)
-- [Exchange Online](secure-email-recommended-policies.md)
-- [SharePoint](sharepoint-file-access-policies.md)
-- [Microsoft Defender for Cloud Apps](mcas-saas-access-policies.md)
+- [Microsoft Teams](zero-trust-identity-device-access-policies-teams.md)
+- [Exchange Online](zero-trust-identity-device-access-policies-exchange.md)
+- [SharePoint](zero-trust-identity-device-access-policies-sharepoint.md)
+- [Microsoft Defender for Cloud Apps](zero-trust-identity-device-access-policies-mcas-saas.md)
