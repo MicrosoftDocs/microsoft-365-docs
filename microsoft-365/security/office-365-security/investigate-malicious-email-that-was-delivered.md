@@ -24,7 +24,7 @@ ms.custom:
 ms.subservice: mdo
 ms.service: microsoft-365-security
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
@@ -41,11 +41,9 @@ appliesto:
 
 Make sure that the following requirements are met:
 
-- Your organization has [Microsoft Defender for Office 365](defender-for-office-365.md) and [licenses are assigned to users](../../admin/manage/assign-licenses-to-users.md).
+- Your organization has [Microsoft Defender for Office 365](defender-for-office-365.md) and [licenses are assigned to users](/microsoft-365/admin/manage/assign-licenses-to-users).
 
 - [Audit logging](/purview/audit-log-enable-disable) is turned on for your organization (it's on by default).
-
-- Your organization has policies defined for anti-spam, anti-malware, anti-phishing, and so on. See [Protect against threats in Office 365](protect-against-threats.md).
 
 - You are a global administrator, or you have either the Security Administrator or the Search and Purge role assigned in **Email & Collaboration permissions** the Microsoft 365 Defender portal at <https://security.microsoft.com/emailandcollabpermissions>. For more information, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md). For some actions, you must also have the Preview role assigned.
 
@@ -186,7 +184,5 @@ Delivery location shows the results of policies and detections that run post-del
 [Remediate malicious email delivered in Office 365](remediate-malicious-email-delivered-office-365.md)
 
 [Microsoft Defender for Office 365](office-365-ti.md)
-
-[Protect against threats in Office 365](protect-against-threats.md)
 
 [View reports for Defender for Office 365](reports-defender-for-office-365.md)
