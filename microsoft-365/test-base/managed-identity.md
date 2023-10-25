@@ -20,16 +20,16 @@ f1.keywords: NOCSH
 
 This article includes step-by-step guidance to grant Test Base access to your key vault secrets so that you can authorize Test Base access to other platforms during your compatibility tests in a secure way.
 
- **In this article,**
- 
- - [Prerequisite](#Prerequisite)
- - [Grant Test Base managed identities to your Key Vault account](#GrantTestBaseAccess)
+**In this article,**
+
+- [Prerequisite](#Prerequisite)
+- [Grant Test Base managed identities to your Key Vault account](#GrantTestBaseAccess)
 
 **Relevant links**
 
 - [Importing Intune Credential in Test Base](https://aka.ms/testbase-doc-IntuneEnrollment)
 
-## <a name="Prerequisite"></a>Prerequisite
+### <a name="Prerequisite"></a>Prerequisite
 
 - Resource group and Subscription are already known for your project.
 - Test Base Account and Azure Key Vault Accounts are created.
@@ -39,7 +39,7 @@ This article includes step-by-step guidance to grant Test Base access to your ke
 1. [*Creating a Test Base Account | Microsoft Learn*](createaccount.md)
 2. [*Creating an Azure Key Vault Account*](/azure/key-vault/general/quick-create-portal)
 
-## <a name="GrantTestBaseAccess"></a>Grant Test Base managed identities to your Key Vault account
+### <a name="GrantTestBaseAccess"></a>Grant Test Base managed identities to your Key Vault account
 
 1. Turn on **System assigned** identity in Test Base: Go to **Manage** \> **Identity** \> **System assigned** to enable managed identity in Test Base
 
