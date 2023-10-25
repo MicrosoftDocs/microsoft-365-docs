@@ -24,7 +24,7 @@ This article provides information about new features and important product updat
 
 ## October 2023
 
-### Full integration of Microsoft Defender for Office 365 permissions with Microsoft 365 Defender Unified (RBAC) is now in Public Preview
+### Full integration of Microsoft Defender for Office 365 permissions with Microsoft 365 Defender Unified  role-based access control (RBAC) is now in Public Preview
 
 The Microsoft 365 Defender Unified Role-Based Access Control (RBAC) model now supports all security permission management scenarios for Microsoft Defender for Office 365.
 
