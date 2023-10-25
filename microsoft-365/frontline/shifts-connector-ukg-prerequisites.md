@@ -180,24 +180,6 @@ In this scenario, the UKG Pro WFM location structure looks something like this, 
 
 :::image type="content" source="media/shifts-connector-ukg-prerequisites-chart.png" alt-text="A chart showing the UKG Pro WFM location structure for the Contoso example scenario." lightbox ="media/shifts-connector-ukg-prerequisites-chart.png":::
 
-<!--|Level |UKG Pro WFM location |Node |
-|---------|---------|---------|
-|0|Contoso |Company|
-| 1|Retail |Business|
-|  2|Central London |Area|
-|   3|Soho |Store|
-|    4|Beauty advisor |Job type|
-|    4|Leather goods sales associate|Job type|
-|    4|Sales associate|Job type|
-|    4|Personal shopper|Job type|
-|   3|Covent Garden|Store|
-|    4|Leather good sales associate|Job type|
-|    4|Sales associate|Job type|
-|   3|Chelsea|Store|
-|    4|Sales associate|Job type|
-|    4|Personal shopper |Job type|
-|    4|Beauty advisor |Job type|-->
-
 Here's how frontline managers (FLM) and frontline workers (FLW) are set up in the location structure in UKG Pro WFM. The table lists each workers' primary job and who they report to.
 
 |UKG Pro WFM location|Users|Primary job|Reports to|
