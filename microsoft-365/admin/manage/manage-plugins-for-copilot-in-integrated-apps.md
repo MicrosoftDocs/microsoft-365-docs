@@ -74,4 +74,4 @@ Admins can block or unblock plugins for Copilot for the whole organization or sp
 
 ## View and consent to permissions and data access 
 
-For detailed information about how Microsoft 365 Copilot uses and protects your organizational information and data, see [Data, Privacy, and Security for Microsoft 365 Copilot](/microsoft-365-copilot/microsoft-365-copilot-privacy)
+For detailed information about how Microsoft 365 Copilot uses and protects your organizational information and data, see [Data, Privacy, and Security for Microsoft 365 Copilot](/microsoft-365-copilot/microsoft-365-copilot-privacy).
