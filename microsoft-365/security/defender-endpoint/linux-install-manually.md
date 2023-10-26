@@ -84,7 +84,7 @@ In order to preview new features and provide early feedback, it is recommended t
 
   |Distro & version|Package|
   |---|---|
-  |For RHEL/Centos/Oracle 8.0-8.7|<https://packages.microsoft.com/config/rhel/8/prod.repo>|
+  |For RHEL/Centos/Oracle 8.0-8.8|<https://packages.microsoft.com/config/rhel/8/prod.repo>|
   |For RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2 |<https://packages.microsoft.com/config/rhel/7.2/prod.repo>|
   |For Amazon Linux 2023 |<https://packages.microsoft.com/config/amazonlinux/2023/prod.repo>|
   |For Fedora 33|<https://packages.microsoft.com/config/fedora/33/prod.repo>|
