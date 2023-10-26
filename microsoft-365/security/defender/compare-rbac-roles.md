@@ -41,7 +41,7 @@ This article describes how existing roles and permissions in Microsoft Defender 
 Use the tables in the following sections to learn more about how your existing individual RBAC role definitions map to your new Microsoft 365 Defender Unified RBAC roles:
 
 1. [Map Defender for Endpoint and Defender Vulnerability Management permissions](#map-defender-for-endpoint-and-defender-vulnerability-management-permissions-to-the-microsoft-365-defender-rbac-permissions)
-2. [Map Defender for Office 365 permissions and roles to the Microsoft 365 Defender Unified RBAC permissions](#map-defender-for-office-365-permissions-and-roles-to-the-microsoft-365-defender-unified-rbac-permissions)
+2. [Map Defender for Office 365 roles and permissions to the Microsoft 365 Defender Unified RBAC permissions](#map-defender-for-office-365-roles-and-permissions-to-the-microsoft-365-defender-unified-rbac-permissions)
 3. [Map Microsoft Defender for Identity permissions](#map-microsoft-defender-for-identity-permissions-to-the-microsoft-365-defender-unified-rbac-permissions)
 4. [Microsoft Entra Global roles access](#azure-active-directory-global-roles-access)
 
@@ -63,14 +63,14 @@ Use the tables in the following sections to learn more about how your existing i
 |Manage portal system settings|Authorization and settings \ System setting (Read and manage)|
 |Manage endpoint security settings in Microsoft Intune|Not supported - this permission is managed in the Microsoft Intune admin center|
 
-### Map Defender for Office 365 permissions and roles to the Microsoft 365 Defender Unified RBAC permissions
+### Map Defender for Office 365 roles and permissions to the Microsoft 365 Defender Unified RBAC permissions
 
-Use the tables in the following sections to learn more about how your existing Exchange Online Protection (EOP) and Exchange Online (EXO) roles and permissions for Defender for Office 365 map to your new Microsoft 365 Defender Unified RBAC roles:
+Use the tables below to learn how your existing Exchange Online Protection (EOP) and Exchange Online (EXO) roles and permissions for Defender for Office 365 map to the new Microsoft 365 Defender Unified RBAC permissions:
 
-- [Exchange Online Protection (EOP) roles mapping](#exchange-online-protection-eop-roles-mapping)
-- [Exchange Online (EXO) permissions (previously configured in Exchange Admin Center)](#exchange-online-exo-permissions-previously-configured-in-exchange-admin-center)
+- [Exchange Online Protection (EOP) roles and permissions mapping](#exchange-online-protection-eop-roles-and-permissions-mapping)
+- [Exchange Online (EXO) roles and permissions mapping (previously configured in Exchange Admin Center)](#exchange-online-exo-roles-and-permissions-mapping-previously-configured-in-exchange-admin-center)
 
-#### Exchange Online Protection (EOP) roles mapping
+#### Exchange Online Protection (EOP) roles and permissions mapping
 
 |Defender for Office (EOP) role group|Microsoft 365 Defender Unified RBAC permission|
 |---|---|
@@ -88,7 +88,7 @@ Use the tables in the following sections to learn more about how your existing E
 |Quarantine|Security operations \ Security data \ Email quarantine (manage)|
 |Role Management|Authorization and settings \ Authorization (Read and manage)|
 
-#### Exchange Online (EXO) permissions (previously configured in Exchange Admin Center)
+#### Exchange Online (EXO) roles and permissions mapping (previously configured in Exchange Admin Center)
 
 |Defender for Office Exchange Online (EXO) permissions|Microsoft 365 Defender Unified RBAC permission|
 |---|---|
