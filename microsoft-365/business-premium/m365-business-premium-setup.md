@@ -25,7 +25,7 @@ This article describes how to get Microsoft 365 Business Premium, complete the b
 :::image type="content" source="media/mission1.png" alt-text="Diagram showing the Sign in and set up phase highlighted.":::
 
 > [!TIP]
-> If you're looking for Microsoft 365 for Campaigns, that information is included in this article. See .
+> If you're looking for Microsoft 365 for Campaigns, see [Set up Microsoft 365 for Campaigns](m365-campaigns-setup.md).
 
 ## Sign up for Microsoft 365 Business Premium
 
