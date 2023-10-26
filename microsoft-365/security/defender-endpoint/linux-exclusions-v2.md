@@ -95,7 +95,7 @@ The *exclusionSettings* section of the configuration profile is used to manage t
 
 #### Merge policy
 
-Specifies the merge policy for exclusions. It can be a combination of administrator-defined and user-defined exclusions (`merge`) or only administrator-defined exclusions (`admin_only`). This setting can be used to restrict local users from defining their own exclusions. It is applicable for exclusions of all scopes.
+Specifies the merge policy for exclusions. It can be a combination of administrator-defined and user-defined exclusions (`merge`) or only administrator-defined exclusions (`admin_only`). This setting can be used to restrict local users from defining their own exclusions. It is applicable for exclusions of all [scopes](#supported-exclusion-scopes).
 
 |Description|Value|
 |---|---|
@@ -127,7 +127,7 @@ Specifies the type of content excluded from the scan.
 
 ##### Scopes of exclusion (optional)
 
-Specifies the set of scopes of content excluded. Scopes supported are `epp` and `global`.
+Specifies the set of [scopes](#supported-exclusion-scopes) of content excluded. Scopes supported are `epp` and `global`.
 
 If nothing is specified in for an exclusion under *exclusionSettings* in managed configuration, then `global` is considered as scope.
 
@@ -182,7 +182,7 @@ Specifies a process for which all file activity is excluded from scanning. The p
 |**Key**|name|
 |**Data type**|String|
 |**Possible values**|any string|
-|**Comments**|Applicable only if *$type* is *excludedFileName*. Wildcard/name not supported if exclusion has *global* as a scope, need to provide full path.|
+|**Comments**|Applicable only if *$type* is *excludedFileName*. Wildcard and process name not supported if exclusion has *global* as a scope, need to provide full path.|
 
 For more information about managed configuration, see [Set preferences for Microsoft Defender for Endpoint on Linux](linux-preferences.md)
 
@@ -240,6 +240,10 @@ For more information about managed configuration, see [Set preferences for Micro
 Similar to how AV exclusions ( scope = `epp` ) are configured in [How to configure list of exclusions from the command line](linux-exclusions.md#from-the-command-line).
 
 Run the following command to see the available switches for managing exclusions:
+
+> [!NOTE]
+> --scope is an optional flag with accepted values as *epp* or *global*. 
+> Provide same scope used during adding exclusion to remove exclusions.
 
 ```bash
 mdatp exclusion

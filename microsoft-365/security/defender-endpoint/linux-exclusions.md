@@ -89,8 +89,8 @@ Examples:
 > [!NOTE]
 > --scope is an optional flag with accepted values as *epp* or *global*. 
 > Without the scope flag the command option will work as previously by considering the exclusion 
-[scope](linux-preferences.md#scopes-of-exclusion-optional) as *epp*.
-> Provide same scope used during adding exclusion to remove exclusions. To configure Global Exclusion, see [Set Global Exclusions from the command line](linux-exclusions-v2.md.md#from-the-command-line).
+[scope](linux-exclusions-v2.md#supported-exclusion-scopes) as *epp*.
+> Provide same scope used during adding exclusion to remove exclusions. To configure Global Exclusion, see [Set Global Exclusions from the command line](linux-exclusions-v2.md#from-the-command-line).
 
 - Add an exclusion for a file extension:
 
