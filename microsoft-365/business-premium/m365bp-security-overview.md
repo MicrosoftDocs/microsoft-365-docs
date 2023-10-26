@@ -36,3 +36,5 @@ During this phase, you set up your security protection. Starting with multifacto
 4. [Secure managed and unmanaged devices](m365bp-managed-unmanaged-devices.md).
 5. [Set up information protection capabilities](m365bp-set-up-compliance.md).
 
+> [!TIP]
+> If you're a Microsoft partner, see [Resources for Microsoft partners working with small and medium-sized businesses](../security/defender-business/mdb-partners.md) and download our security guide and checklist!
