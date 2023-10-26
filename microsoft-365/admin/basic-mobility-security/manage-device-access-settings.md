@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 08/31/2020
+ms.date: 10/25/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -123,99 +123,99 @@ First, save the script to your computer.
 
 1. Copy and paste the following text into Notepad.
 
-```powershell
-   param (
-    [Parameter(Mandatory = $false)]
-    [PSObject[]]$users = @(),
-    [Parameter(Mandatory = $false)]
-    [Switch]$export,
-    [Parameter(Mandatory = $false)]
-    [String]$exportFileName = "UserDeviceOwnership_" + (Get-Date -Format "yyMMdd_HHMMss") + ".csv",
-    [Parameter(Mandatory = $false)]
-    [String]$exportPath = [Environment]::GetFolderPath("Desktop")
-)
+	```powershell
+	   param (
+		[Parameter(Mandatory = $false)]
+		[PSObject[]]$users = @(),
+		[Parameter(Mandatory = $false)]
+		[Switch]$export,
+		[Parameter(Mandatory = $false)]
+		[String]$exportFileName = "UserDeviceOwnership_" + (Get-Date -Format "yyMMdd_HHMMss") + ".csv",
+		[Parameter(Mandatory = $false)]
+		[String]$exportPath = [Environment]::GetFolderPath("Desktop")
+	)
 
-#Clearing the screen
-Clear-Host
+	#Clearing the screen
+	Clear-Host
 
-#Preparing the output object
-$deviceOwnership = @()
+	#Preparing the output object
+	$deviceOwnership = @()
 
 
-if ($users.Count -eq 0) {
-    Write-Output "No user has been provided, gathering data for all devices in the tenant"
-    #Getting all Devices and their registered owners
-    $devices = Get-MgDevice -All -Property * -ExpandProperty registeredOwners
+	if ($users.Count -eq 0) {
+		Write-Output "No user has been provided, gathering data for all devices in the tenant"
+		#Getting all Devices and their registered owners
+		$devices = Get-MgDevice -All -Property * -ExpandProperty registeredOwners
 
-    #For each device which has a registered owner, extract the device data and the registered owner data
-    foreach ($device in $devices) {
-        $DeviceOwners = $device | Select-Object -ExpandProperty 'RegisteredOwners'
-        #Checking if the DeviceOwners Object is empty
-        if ($DeviceOwners -ne $null) {
-            foreach ($DeviceOwner in $DeviceOwners) {
-                $OwnerDictionary = $DeviceOwner.AdditionalProperties
-                $OwnerDisplayName = $OwnerDictionary.Item('displayName')
-                $OwnerUPN = $OwnerDictionary.Item('userPrincipalName')
-                $OwnerID = $deviceOwner.Id
-                $deviceOwnership += [PSCustomObject]@{
-                    DeviceDisplayName             = $device.DisplayName
-                    DeviceId                      = $device.DeviceId
-                    DeviceOSType                  = $device.OperatingSystem
-                    DeviceOSVersion               = $device.OperatingSystemVersion
-                    DeviceTrustLevel              = $device.TrustType
-                    DeviceIsCompliant             = $device.IsCompliant
-                    DeviceIsManaged               = $device.IsManaged
-                    DeviceObjectId                = $device.Id
-                    DeviceOwnerID                 = $OwnerID
-                    DeviceOwnerDisplayName        = $OwnerDisplayName
-                    DeviceOwnerUPN                = $OwnerUPN
-                    ApproximateLastLogonTimestamp = $device.ApproximateLastSignInDateTime
-                }
-            }
-        }
+		#For each device which has a registered owner, extract the device data and the registered owner data
+		foreach ($device in $devices) {
+			$DeviceOwners = $device | Select-Object -ExpandProperty 'RegisteredOwners'
+			#Checking if the DeviceOwners Object is empty
+			if ($DeviceOwners -ne $null) {
+				foreach ($DeviceOwner in $DeviceOwners) {
+					$OwnerDictionary = $DeviceOwner.AdditionalProperties
+					$OwnerDisplayName = $OwnerDictionary.Item('displayName')
+					$OwnerUPN = $OwnerDictionary.Item('userPrincipalName')
+					$OwnerID = $deviceOwner.Id
+					$deviceOwnership += [PSCustomObject]@{
+						DeviceDisplayName             = $device.DisplayName
+						DeviceId                      = $device.DeviceId
+						DeviceOSType                  = $device.OperatingSystem
+						DeviceOSVersion               = $device.OperatingSystemVersion
+						DeviceTrustLevel              = $device.TrustType
+						DeviceIsCompliant             = $device.IsCompliant
+						DeviceIsManaged               = $device.IsManaged
+						DeviceObjectId                = $device.Id
+						DeviceOwnerID                 = $OwnerID
+						DeviceOwnerDisplayName        = $OwnerDisplayName
+						DeviceOwnerUPN                = $OwnerUPN
+						ApproximateLastLogonTimestamp = $device.ApproximateLastSignInDateTime
+					}
+				}
+			}
 
-    }
-}
+		}
+	}
 
-else {
-    #Checking that userid is present in the users object
-    Write-Output "List of users has been provided, gathering data for all devices owned by the provided users"
-    foreach ($user in $users) {
-        $devices = Get-MgUserOwnedDevice -UserId $user.Id -Property *
-        foreach ($device in $devices) {
-            $DeviceHashTable = $device.AdditionalProperties
-            $deviceOwnership += [PSCustomObject]@{
-                DeviceId                      = $DeviceHashTable.Item('deviceId')
-                DeviceOSType                  = $DeviceHashTable.Item('operatingSystem')
-                DeviceOSVersion               = $DeviceHashTable.Item('operatingSystemVersion') 
-                DeviceTrustLevel              = $DeviceHashTable.Item('trustType')
-                DeviceDisplayName             = $DeviceHashTable.Item('displayName')
-                DeviceIsCompliant             = $DeviceHashTable.Item('isCompliant')
-                DeviceIsManaged               = $DeviceHashTable.Item('isManaged')
-                DeviceObjectId                = $device.Id
-                DeviceOwnerUPN                = $user.UserPrincipalName
-                DeviceOwnerID                 = $user.Id
-                DeviceOwnerDisplayName        = $user.DisplayName
-                ApproximateLastLogonTimestamp = $DeviceHashTable.Item('approximateLastSignInDateTime')
-            }
-        }
-    }
+	else {
+		#Checking that userid is present in the users object
+		Write-Output "List of users has been provided, gathering data for all devices owned by the provided users"
+		foreach ($user in $users) {
+			$devices = Get-MgUserOwnedDevice -UserId $user.Id -Property *
+			foreach ($device in $devices) {
+				$DeviceHashTable = $device.AdditionalProperties
+				$deviceOwnership += [PSCustomObject]@{
+					DeviceId                      = $DeviceHashTable.Item('deviceId')
+					DeviceOSType                  = $DeviceHashTable.Item('operatingSystem')
+					DeviceOSVersion               = $DeviceHashTable.Item('operatingSystemVersion') 
+					DeviceTrustLevel              = $DeviceHashTable.Item('trustType')
+					DeviceDisplayName             = $DeviceHashTable.Item('displayName')
+					DeviceIsCompliant             = $DeviceHashTable.Item('isCompliant')
+					DeviceIsManaged               = $DeviceHashTable.Item('isManaged')
+					DeviceObjectId                = $device.Id
+					DeviceOwnerUPN                = $user.UserPrincipalName
+					DeviceOwnerID                 = $user.Id
+					DeviceOwnerDisplayName        = $user.DisplayName
+					ApproximateLastLogonTimestamp = $DeviceHashTable.Item('approximateLastSignInDateTime')
+				}
+			}
+		}
 
-}
+	}
 
-$deviceOwnership
+	$deviceOwnership
 
-if ($export) {
-    $exportFile = Join-Path -Path $exportPath -ChildPath $exportFileName
-    $deviceOwnership | Export-Csv -Path $exportFile -NoTypeInformation
-    Write-Output "Data has been exported to $exportFile"
-}
-```
+	if ($export) {
+		$exportFile = Join-Path -Path $exportPath -ChildPath $exportFileName
+		$deviceOwnership | Export-Csv -Path $exportFile -NoTypeInformation
+		Write-Output "Data has been exported to $exportFile"
+	}
+	```
 
 2. Save it as a Windows PowerShell script file by using the file extension .ps1; for example, Get-MgGraphDeviceOwnership.ps1.
 
-> [!NOTE]
-> The script is also available for download on [Github](https://github.com/Raindrops-dev/RAIN-MicrosoftGraphPowershellCode/blob/main/Get-MgGraphDeviceOwnership.ps1).
+	> [!NOTE]
+	> The script is also available for download on [Github](https://github.com/Raindrops-dev/RAIN-MicrosoftGraphPowershellCode/blob/main/Get-MgGraphDeviceOwnership.ps1).
 
 ### Run the script to get device information for a single user account
 
