@@ -746,8 +746,6 @@
           href: configure-local-policy-overrides-microsoft-defender-antivirus.md
         - name: Specify whether users can see or interact with Microsoft Defender Antivirus user interface
           href: prevent-end-user-interaction-microsoft-defender-antivirus.md
-        - name: Turn on definition retirement
-          href: turn-on-definition-retirement.md
 
       - name: Deploy and report on Microsoft Defender Antivirus
         href: deploy-manage-report-microsoft-defender-antivirus.md
