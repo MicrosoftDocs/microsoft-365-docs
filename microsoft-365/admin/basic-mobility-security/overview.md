@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 08/31/2020
+ms.date: 10/25/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -70,4 +70,4 @@ If you just need mobile app management (MAM), perhaps for people updating work p
 
 [Set up Basic Mobility and Security](set-up.md) (article)\
 [Enroll your mobile device using Basic Mobility and Security](enroll-your-mobile-device.md) (article)\
-[Manage devices enrolled in Mobile Device Management for Microsoft 365](manage-enrolled-devices.md) (article)\
+[Manage devices enrolled in Mobile Device Management for Microsoft 365](manage-enrolled-devices.md) (article)
