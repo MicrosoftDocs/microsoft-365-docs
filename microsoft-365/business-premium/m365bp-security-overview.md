@@ -21,14 +21,14 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: "Security overview for Microsoft 365 Business Premium which provides cybersecurity tools such as multi-factor authentication that you can use to prevent cyberattacks."
+description: "Security overview for Microsoft 365 Business Premium, which provides cybersecurity tools such as multifactor authentication that you can use to prevent cyberattacks."
 ---
 
 # Boost your security protection
 
 :::image type="content" source="media/mission2.png" alt-text="Diagram with Boost Your Security Protection highlighted.":::
 
-During this phase, you set up your security protection. Starting with multifactor authentication (MFA), then protecting your admin accounts, and taking steps to protect against threats, we'll walk you through the process. 
+During this phase, you set up your security protection. From turning on multifactor authentication (MFA), to protecting your admin accounts, and then taking steps to protect against threats, we'll walk you through the process, step by step. 
 
 1. [Turn on MFA](m365bp-turn-on-mfa.md).
 2. [Protect your admin accounts](m365bp-protect-admin-accounts.md).
