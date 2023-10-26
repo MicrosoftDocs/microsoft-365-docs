@@ -20,7 +20,7 @@ In this tutorial, you will learn how to:
 
 ## Prerequisites
 
-- An Azure Active Directory or personal Microsoft account. [Login or create an account](https://signup.microsoft.com/)
+- A Microsoft Entra ID or personal Microsoft account. [Login or create an account](https://signup.microsoft.com/)
 - A Microsoft Defender Threat Intelligence (Defender TI) Premium license.
 
     > [!NOTE]

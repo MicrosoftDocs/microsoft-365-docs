@@ -23,7 +23,7 @@ Microsoft Bookings Connector is built to extend Booking appointments with other 
 
 Customers who want to use the Bookings Connector must have a Bookings license. For more information about Microsoft Bookings licenses and subscriptions, see [Microsoft Bookings Frequently Asked Questions](bookings-faq.yml#is-bookings-available-for-my-subscription-).
 
-Microsoft Bookings uses Azure Active Directory (AAD) authentication. A valid Microsoft 365 account ensures that you are authenticated to use Bookings Connector. You must be signed in to create appointment-based flows.
+Microsoft Bookings uses Microsoft Entra authentication. A valid Microsoft 365 account ensures that you are authenticated to use Bookings Connector. You must be signed in to create appointment-based flows.
 
 To create a custom flow that uses Bookings appointments as triggers, you must provide the Bookings business SMTP address.
 
@@ -32,10 +32,6 @@ To create a custom flow that uses Bookings appointments as triggers, you must pr
 ## Get started with connectors
 
 Here are some of the common flows you can build with Microsoft Bookings Connectors:
-
-### Integration with Stripe
-
-Stripe allows private individuals and businesses to accept payments over the internet. You can track customers, orders, invoices, and more. For more information, see [Stripe | Microsoft Power Automate](https://powerautomate.microsoft.com/connectors/details/shared_stripe/stripe/).
 
 ### Integration with Zoom
 

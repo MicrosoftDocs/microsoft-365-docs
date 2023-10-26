@@ -105,7 +105,7 @@ User accounts have two sources:
 
 - Windows Server Active Directory (AD), which are accounts that sync from on-premises AD to the cloud.
 
-- Azure Active Directory (Azure AD) accounts, which are created directly in the cloud.
+- Microsoft Entra accounts, which are created directly in the cloud.
 
 You can use the following command to find accounts that are synchronizing from **on-premise** AD. It instructs PowerShell to get all users who have the attribute *DirSyncEnabled* set to *True*. 
 
@@ -149,7 +149,7 @@ Get-AzureADUser | Where {$_.City -eq "London"}
 > [!TIP]
 > The syntax for the **Where** cmdlet in these examples is **Where {$\_.** [user account property name] [comparison operator] [value] **}**.> [comparison operator] is **-eq** for equals, **-ne** for not equals, **-lt** for less than, **-gt** for greater than, and others.  [value] is typically a string (a sequence of letters, numbers, and other characters), a numerical value, or **$Null** for unspecified. For more information, see [Where](/powershell/module/microsoft.powershell.core/where-object).
 
-## Use the Microsoft Azure Active Directory Module for Windows PowerShell
+## Use the Microsoft Azure Active Directory module for Windows PowerShell
 
 First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
@@ -162,7 +162,7 @@ Get-MsolUser
 ```
 
 >[!Note]
->PowerShell Core doesn't support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with *Msol* in their name. Run these cmdlets from Windows PowerShell.
+>PowerShell Core doesn't support the Microsoft Azure Active Directory module for Windows PowerShell module and cmdlets with *Msol* in their name. Run these cmdlets from Windows PowerShell.
 >
 
 You should get information similar to this:
@@ -313,7 +313,7 @@ Scott Wallace            Operations
 
 If you're using directory synchronization to create and manage your Microsoft 365 users, you can display the local account from which a Microsoft 365 user has been projected. The following example assumes that:
 
-- Azure AD Connect is configured to use the default source anchor of ObjectGUID. (For more information about configuring a source anchor, see [Azure AD Connect: Design concepts](/azure/active-directory/hybrid/plan-connect-design-concepts)).
+- Microsoft Entra Connect is configured to use the default source anchor of ObjectGUID. (For more information about configuring a source anchor, see [Microsoft Entra Connect: Design concepts](/azure/active-directory/hybrid/plan-connect-design-concepts)).
 - The Active Directory Domain Services module for PowerShell has been installed (see [RSAT tools](https://www.microsoft.com/en-gb/download/details.aspx?id=45520)).
 
 ```powershell
