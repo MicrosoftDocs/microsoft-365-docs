@@ -27,6 +27,8 @@ An important part of your security strategy is protecting the devices your emplo
 - **Managed devices** are typically company-owned devices that are usually set up and configured by your company's IT or security team. 
 - **Unmanaged devices**, also referred to as bring-your-own devices, or *BYOD*, tend to be personally owned devices that employees set up and use. Unmanaged devices can be onboarded and protected just like managed devices. Or, if you prefer, users can take steps to protect their BYOD devices themselves. 
 
+
+
 ##  [**Managed devices**](#tab/Managed)
  
 To protect managed devices, your organization's IT or security team can: 
