@@ -24,7 +24,7 @@ This article provides information about new features and important product updat
 
 ## October 2023
 
-### Exchange Online (EXO) permission management for Microsoft Defender for Office 365 is now supported in Microsoft 365 Defender Unified role-based access control (RBAC) providing full integration of Defender for Office 365 permissions
+### Exchange Online (EXO) permission management for Microsoft Defender for Office 365 is now supported in Microsoft 365 Defender Unified role-based access control (RBAC) providing full integration of Defender for Office 365 roles and permissions
 
 Microsoft 365 Defender Unified Role-Based Access Control (RBAC) model now supports all security permission management scenarios for Microsoft Defender for Office 365.
 
