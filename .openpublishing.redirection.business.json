@@ -941,11 +941,6 @@
         "redirect_document_id":false
      },
      {
-        "source_path":"microsoft-365/business-premium/m365-campaigns-setup.md",
-        "redirect_url":"/microsoft-365/business-premium/m365-business-premium-setup",
-        "redirect_document_id":false
-     },
-     {
         "source_path":"microsoft-365/business-premium/m365bp-setup-overview.md",
         "redirect_url":"/microsoft-365/business-premium/m365-business-premium-setup",
         "redirect_document_id":false
