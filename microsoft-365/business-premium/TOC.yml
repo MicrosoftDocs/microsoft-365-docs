@@ -14,9 +14,9 @@
       href: ../security/defender-business/mdb-partners.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
 - name: Step 1- Sign in and set up
   items:
-    - name: Microsoft 365 Business Premium
+    - name: Set up Microsoft 365 Business Premium
       href: m365-business-premium-setup.md
-    - name: Microsoft 365 for Campaigns
+    - name: Set up Microsoft 365 for Campaigns
       href: m365-campaigns-setup.md
 - name: Step 2 - Boost your security protection
   items: 
