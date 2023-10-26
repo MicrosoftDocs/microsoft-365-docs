@@ -17,7 +17,7 @@ ms.collection:
 appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 10/2/2023
+ms.date: 10/23/2023
 ---
 
 # Known issues: Team Shifts connector for UKG Pro Workforce Management (Preview)
@@ -36,9 +36,12 @@ The time zone setting of schedules in Shifts is synced from UKG Pro Workforce Ma
 
 To work around this issue, keep the time zone setting as is.
 
-## Nothing happens when users select the "Start a break" and "End break" buttons in Shifts to start or end a break
+## Nothing happens when users try to start a break or manage their time sheet in Shifts
 
-The start and end break capability of the time clock feature isn't supported in an integration with UKG Pro WFM. Users are unable to clock out or clock in to a break, even though the buttons are displayed in Shifts.
+The following time clock capabilities aren't supported in an integration with UKG Pro WFM:
+
+- Start and end a break. Users are unable to clock out or clock in to a break even though the **Start a break** and **End break** buttons are displayed in Shifts.
+- Edit and confirm time sheet records. Users are unable to edit and confirm their clock ins and clock outs through their time sheet even though the button is displayed in Shifts.
 
 ## Availability settings of users don't apply to the current week
 
