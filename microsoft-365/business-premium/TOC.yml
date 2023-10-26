@@ -1,4 +1,5 @@
-- name: [Microsoft 365 Business Premium](index.yml)
+- name: Microsoft 365 Business Premium
+  href: index.yml
   items: 
     - name: Overview
       href: m365bp-overview.md
@@ -12,8 +13,10 @@
       href: m365bp-trial-playbook-microsoft-business-premium.md
     - name: Resources for partners
       href: ../security/defender-business/mdb-partners.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
-- name: [Step 1- Sign in and set up](m365-business-premium-setup.md)
-- name: [Step 2 - Boost your security protection](m365bp-security-overview.md)
+- name: Step 1- Sign in and set up
+  href: m365-business-premium-setup.md
+- name: Step 2 - Boost your security protection
+  href: m365bp-security-overview.md
   items: 
     - name: Turn on MFA
       href: m365bp-turn-on-mfa.md
@@ -25,7 +28,8 @@
       href: m365bp-managed-unmanaged-devices.md
     - name: Set up information protection capabilities
       href: m365bp-set-up-compliance.md
-- name: [Step 3 - Set up unmanaged (BYOD) devices](m365bp-set-up-unmanaged-devices.md)
+- name: Step 3 - Set up unmanaged (BYOD) devices
+  href: m365bp-set-up-unmanaged-devices.md
   items: 
     - name: Overview
       href: m365bp-set-up-unmanaged-devices.md
@@ -35,13 +39,15 @@
       href: m365bp-users-install-m365-apps.md
     - name: Protect unmanaged devices
       href: m365bp-users-protect-unmanaged-devices.md
-- name: [Step 4 - Use email securely](m365bp-use-email-securely.md)
+- name: Step 4 - Use email securely
+  href: m365bp-use-email-securely.md
   items: 
     - name: Protect against phishing and other attacks
       href: m365bp-avoid-phishing-and-attacks.md
     - name: Send encrypted email
       href: m365bp-use-labels-encryption.md
-- name: [Step 5 - Collaborate and share securely](m365bp-collaborate-share-securely.md)
+- name: Step 5 - Collaborate and share securely
+  href: m365bp-collaborate-share-securely.md
   items: 
     - name: Create Teams for collaboration
       href: create-teams-for-collaboration.md
@@ -51,7 +57,8 @@
       href: share-files-and-videos.md
     - name: Create a communication site for your organization
       href: create-communications-site.md
-- name: [Step 6 - Safeguard managed devices](m365bp-protect-managed-devices.md)
+- name: Step 6 - Safeguard managed devices
+  href: m365bp-protect-managed-devices.md
   items: 
     - name: Upgrade to Windows 10 or 11 Pro (if needed)
       href: m365bp-upgrade-windows-pro.md    
