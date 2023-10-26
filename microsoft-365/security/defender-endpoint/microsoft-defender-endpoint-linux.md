@@ -162,24 +162,27 @@ If you experience any installation failures, refer to [Troubleshooting installat
     > [!NOTE]
     > Please make sure that you have free disk space in /var.
 
-- The solution currently provides real-time protection for the following file system types:
+- Below is the list of supported filesystems for RTP, Quick, Full and Custom Scan.
+  
+  |RTP, Quick, Full Scan| Custom Scan|
+  |---|---|
+  |btrfs|All filesystems supported for RTP, Quick, Full Scan|
+  |ecryptfs|Efs|
+  |ext2|S3fs|
+  |ext3|Blobfuse|
+  |ext4|Lustr|
+  |fuse|glustrefs|
+  |fuseblk|Afs|
+  |jfs|sshfs|
+  |nfs (v3 only)|cifs|
+  |overlay|smb|
+  |ramfs|gcsfuse|
+  |reiserfs|sysfs|
+  |tmpfs|
+  |udf|
+  |vfat|
+  |xfs|
 
-  - `btrfs`
-  - `ecryptfs`
-  - `ext2`
-  - `ext3`
-  - `ext4`
-  - `fuse`
-  - `fuseblk`
-  - `jfs`
-  - `nfs (v3 only)`
-  - `overlay`
-  - `ramfs`
-  - `reiserfs`
-  - `tmpfs`
-  - `udf`
-  - `vfat`
-  - `xfs`
 
 After you've enabled the service, you may need to configure your network or firewall to allow outbound connections between it and your endpoints.
 
