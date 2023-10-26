@@ -8,7 +8,7 @@ manager: dansimp
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
-ms.date: 05/02/2023
+ms.date: 10/26/2023
 ms.localizationpriority: medium
 ms.collection: 
 - M365-Campaigns
@@ -28,11 +28,7 @@ description: "Security overview for Microsoft 365 Business Premium which provide
 
 :::image type="content" source="media/mission2.png" alt-text="Diagram with Boost Your Security Protection highlighted.":::
 
-In this mission, you boost your security defenses. You begin by enforcing multifactor authentication (MFA) requirements through either security defaults or Conditional Access. Next, you'll set up the different admin roles and specific levels of security for them. Admin account access is a high-value target for potential cyberattackers. Protecting those accounts is critical because the access and control they provide can impact your entire system. And, you'll protect your email content and devices.
-
-Stay vigilant - the safety and reliability of your system relies upon you.
-
-Your objectives are to:
+During this phase, you set up your security protection. Starting with multifactor authentication (MFA), then protecting your admin accounts, and taking steps to protect against threats, we'll walk you through the process. 
 
 1. [Turn on MFA](m365bp-turn-on-mfa.md).
 2. [Protect your admin accounts](m365bp-protect-admin-accounts.md).
