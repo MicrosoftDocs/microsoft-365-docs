@@ -41,7 +41,7 @@ This article describes how existing roles and permissions in Microsoft Defender 
 Use the tables in the following sections to learn more about how your existing individual RBAC role definitions map to your new Microsoft 365 Defender Unified RBAC roles:
 
 1. [Map Defender for Endpoint and Defender Vulnerability Management permissions](#map-defender-for-endpoint-and-defender-vulnerability-management-permissions-to-the-microsoft-365-defender-rbac-permissions)
-2. [Map Defender for Office 365 (Exchange Online Protection) roles](#map-defender-for-office-365-exchange-online-protection-roles-to-the-microsoft-365-defender-unified-rbac-permissions)
+2. [Map Defender for Office 365 permissions and roles to the Microsoft 365 Defender Unified RBAC permissions](#map-defender-for-office-365-permissions-and-roles-to-the-microsoft-365-defender-unified-rbac-permissions)
 3. [Map Microsoft Defender for Identity permissions](#map-microsoft-defender-for-identity-permissions-to-the-microsoft-365-defender-unified-rbac-permissions)
 4. [Microsoft Entra Global roles access](#azure-active-directory-global-roles-access)
 
@@ -65,14 +65,15 @@ Use the tables in the following sections to learn more about how your existing i
 
 ### Map Defender for Office 365 permissions and roles to the Microsoft 365 Defender Unified RBAC permissions
 
-Use the tables in the following sections to learn more about how your existing individual RBAC role definitions map to your new Microsoft 365 Defender Unified RBAC roles:
+Use the tables in the following sections to learn more about how your existing Exchange Online Protection (EOP) and Exchange Online (EXO) roles and permissions for Defender for Office 365 map to your new Microsoft 365 Defender Unified RBAC roles:
 
-“Exchange Online Protection (EOP) roles mapping”
-“Exchange Online (EXO) permissions – previously configured in Exchange Admin Center”
+- [Exchange Online Protection (EOP) roles mapping](#exchange-online-protection-eop-roles-mapping)
+- [Exchange Online (EXO) permissions (previously configured in Exchange Admin Center)](#exchange-online-exo-permissions-previously-configured-in-exchange-admin-center)
 
+#### Exchange Online Protection (EOP) roles mapping
 
 |Defender for Office (EOP) role group|Microsoft 365 Defender Unified RBAC permission|
-|---|---|---|
+|---|---|
 |Security reader|Security operations \ Security data \Security data basics (read)</br>Security operations \ Raw data (Email & collaboration) \ Email message headers (read)</br>Security operations \ Security data \ Response (manage) </br>Authorization and settings \ Security settings \ Core security settings (read) </br>Authorization and settings \ System setting (read)|
 |Global reader|Security operations \ Security data \ Security data basics (read)</br>Security operations \ Raw data (Email & collaboration) \ Email message headers (read)</br>Security operations \ Security data \ Response (manage) </br>Authorization and settings \ Security settings \ Core security settings (read) </br>Authorization and settings \ System setting (read)|
 |Security administrator|Security operations \ Security data \ Security data basics (read) </br>Security operations \ Security data \ Alerts (manage)</br>Security operations \ Raw data (Email & collaboration) \ Email message headers (read)</br>Security operations \ Security data \ Response (manage) </br>Security operations \ Security data \ Email quarantine (manage)</br>Authorization and settings \ Authorization (read) </br> Authorization and settings \ Security setting (All permissions) </br>Authorization and settings \ System settings (Read and manage)|
@@ -86,6 +87,18 @@ Use the tables in the following sections to learn more about how your existing i
 |Audit Logs|Security operations \ Security data \ Security data basics (read)|
 |Quarantine|Security operations \ Security data \ Email quarantine (manage)|
 |Role Management|Authorization and settings \ Authorization (Read and manage)|
+
+#### Exchange Online (EXO) permissions (previously configured in Exchange Admin Center)
+
+|Defender for Office Exchange Online (EXO) permissions|Microsoft 365 Defender Unified RBAC permission|
+|---|---|
+|Organization Management|Security operations \ Raw data (email & collaboration) \ Email message headers (read) </br> Authorization and settings \ Security settings \ Core security settings (manage) </br> Authorization and settings \ Security settings \ Detection tuning (manage) </br>Authorization and settings \ System settings (Read and manage)|
+|Hygiene Management| Security operations \ Security data \ Email quarantine (manage) </br>Authorization and settings \ Security settings \ Core security settings (manage) </br> Authorization and settings \ Security settings \ Detection tuning (manage)|
+|Security Administrator |Authorization and settings \ Security settings \ Detection tuning (manage) </br>Authorization and settings \ System settings (Read and manage)|
+|Exchange Admin | Security operations \ Raw data (email & collaboration) \ Email message headers (read) </br> Authorization and settings \ System settings (Read and manage)|
+|View-Only Organization Management | Authorization and settings \ Security settings (Read-only) </br> Authorization and settings \ System settings (Read-only)|
+|Tenant AllowBlockList Manager|Authorization and settings \ Security settings \ Detection tuning (manage)|
+|View-only Recipients |Security operations \ Raw data (email & collaboration) \ Email message headers (read)|
 
 ### Map Microsoft Defender for Identity permissions to the Microsoft 365 Defender Unified RBAC permissions
 
