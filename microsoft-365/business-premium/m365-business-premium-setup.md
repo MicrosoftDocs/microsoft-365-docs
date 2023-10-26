@@ -20,7 +20,7 @@ ms.custom: intro-get-started
 
 # Sign in and set up Microsoft 365 Business Premium
 
-This article describes how to get Microsoft 365 Business Premium, complete the basic setup process, and proceed to your next steps.
+This article describes how to get Microsoft 365 Business Premium, complete the basic setup process, and identify your next steps.
 
 :::image type="content" source="media/mission1.png" alt-text="Diagram showing the Sign in and set up phase highlighted.":::
 
