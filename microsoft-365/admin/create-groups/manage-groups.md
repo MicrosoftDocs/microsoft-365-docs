@@ -100,7 +100,7 @@ Take note of the object ID of the group, or groups, that you want to permanently
 To purge the group run this command in PowerShell:
 
 ```powershell
-Remove-MgDirectoryObject -Id <objectId>
+Remove-MgDirectoryObject -DirectoryObjectId <objectId>
 ```
 
 To confirm that the group has been successfully purged, run the  *Get-MgDirectoryDeletedItem*  cmdlet again to confirm that the group no longer appears on the list of soft-deleted groups. In some cases it may take as long as 24 hours for the group and all of its data to be permanently deleted. 
