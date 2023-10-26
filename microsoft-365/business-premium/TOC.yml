@@ -1,4 +1,4 @@
-- name: Microsoft 365 Business Premium
+- name: [Microsoft 365 Business Premium](index.yml)
   items: 
     - name: Overview
       href: m365bp-overview.md
