@@ -12,42 +12,31 @@
       href: m365bp-trial-playbook-microsoft-business-premium.md
     - name: Resources for partners
       href: ../security/defender-business/mdb-partners.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
-- name: Fortify your environment
+- name: [Step 1- Sign in and set up](m365-business-premium-setup.md)
+- name: [Step 2 - Boost your security protection](m365bp-security-overview.md)
   items: 
-  - name: Sign in and set up
-    items: 
-      - name: Overview
-        href: m365bp-setup-overview.md
-      - name: Microsoft 365 Business Premium
-        href: m365-business-premium-setup.md
-      - name: Microsoft 365 for Campaigns
-        href: m365-campaigns-setup.md
-  - name: Boost your security protection
-    items: 
-      - name: Overview
-        href: m365bp-security-overview.md
-      - name: Turn on MFA
-        href: m365bp-turn-on-mfa.md
-      - name: Protect your admin accounts
-        href: m365bp-protect-admin-accounts.md
-      - name: Protect against malware and other threats
-        href: m365bp-protect-against-malware-cyberthreats.md
-      - name: Secure managed and unmanaged devices
-        href: m365bp-managed-unmanaged-devices.md
-      - name: Set up information protection capabilities
-        href: m365bp-set-up-compliance.md
-- name: Train your team
-  items:
-  - name: Set up unmanaged (BYOD) devices
-    items: 
-      - name: Overview
-        href: m365bp-set-up-unmanaged-devices.md
-      - name: Set up multifactor authentication
-        href: m365bp-mfa-for-users.md
-      - name: Install Microsoft 365 Apps on devices
-        href: m365bp-users-install-m365-apps.md
-      - name: Protect unmanaged devices
-        href: m365bp-users-protect-unmanaged-devices.md
+    - name: Overview
+      href: m365bp-security-overview.md
+    - name: Turn on MFA
+      href: m365bp-turn-on-mfa.md
+    - name: Protect your admin accounts
+      href: m365bp-protect-admin-accounts.md
+    - name: Protect against malware and other threats
+      href: m365bp-protect-against-malware-cyberthreats.md
+    - name: Secure managed and unmanaged devices
+      href: m365bp-managed-unmanaged-devices.md
+    - name: Set up information protection capabilities
+      href: m365bp-set-up-compliance.md
+- name: [Step 3 - Set up unmanaged (BYOD) devices](m365bp-set-up-unmanaged-devices.md)
+  items: 
+    - name: Overview
+      href: m365bp-set-up-unmanaged-devices.md
+    - name: Set up multifactor authentication
+      href: m365bp-mfa-for-users.md
+    - name: Install Microsoft 365 Apps on devices
+      href: m365bp-users-install-m365-apps.md
+    - name: Protect unmanaged devices
+      href: m365bp-users-protect-unmanaged-devices.md
   - name: Use email securely
     items: 
       - name: Overview
