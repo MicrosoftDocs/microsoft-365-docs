@@ -73,7 +73,7 @@ Removing a tenant doesn't change any user synchronization configurations or cros
 
 #### Remove synchronized users from other tenants
 
-When you remove a tenant from a multitenant organization, you may want to stop synchronizing users between that tenant and the tenants that remain in the multitenant organization. This can be done by updating the cross-tenant synchronization configuration in Azure AD and removing the security groups being synchronized, then restarting the synchronization with zero users.
+When you remove a tenant from a multitenant organization, you might want to stop synchronizing users between that tenant and the tenants that remain in the multitenant organization. This can be done by updating the cross-tenant synchronization configuration in Azure AD and removing the security groups being synchronized, then restarting the synchronization with zero users.
 
 Cross-tenant synchronization configurations for multitenant organizations that were created in the Microsoft 365 admin center are named *MTO_Sync_\<TenantID\>* in Azure AD cross-tenant synchronization.
 
@@ -98,7 +98,7 @@ Once the users have been removed from the other tenants' directories, you can st
 
 #### Stop user sync and automatic invitation redemption
 
-Once you remove a tenant from a multitenant organization, you may want to stop user sync and automatic invitation redemption with the tenants that remain in the multitenant organization.
+Once you remove a tenant from a multitenant organization, you might want to stop user sync and automatic invitation redemption with the tenants that remain in the multitenant organization.
 
 To prevent user sync and automatic invitation redemption:
 
