@@ -30,7 +30,7 @@ An Office add-in can be used on Word, Excel, PowerPoint, and Outlook. These add-
 
 ## Before you begin
 
-Management and deployment via Integrated Apps require that the users are using Microsoft 365 Business licenses (Business Basic, Business Standard, Business Premium), Office 365 Enterprise licenses (E1/E3/E5/F3), or Microsoft 365 Enterprise licenses (E3/E5/F3). The users also need to be signed into Office using their organizational ID and have Exchange Online and active Exchange Online mailboxes. Your subscription directory must either be in or federated to Azure Active Directory.
+Management and deployment via Integrated Apps require that the users are using Microsoft 365 Business licenses (Business Basic, Business Standard, Business Premium), Office 365 Enterprise licenses (E1/E3/E5/F3), or Microsoft 365 Enterprise licenses (E3/E5/F3). The users also need to be signed into Office using their organizational ID and have Exchange Online and active Exchange Online mailboxes. Your subscription directory must either be in or federated to Microsoft Entra ID.
 
 ### Office Requirements
 
@@ -75,7 +75,7 @@ As an admin, you can manage Office add-ins in your organization as follows:
 Office Add-ins help you personalize your documents and streamline the way you access information on the web (see Start using your Office Add-in). Add-ins provide the following benefits:
 
 - When the relevant Office application starts, the add-in automatically downloads. If the add-in supports add-in commands, the add-in automatically appears in the ribbon within the Office application.
-- Add-ins no longer appear for users if the admin turns off or deletes the add-in. Also if the user is removed from Azure Active Directory or from a group that the add-in is assigned to. Learn how to perform these actions in the following section.
+- Add-ins no longer appear for users if the admin turns off or deletes the add-in. Also if the user is removed from Microsoft Entra ID or from a group that the add-in is assigned to. Learn how to perform these actions in the following section.
 
 Add-ins are supported in three desktop platforms: Windows, Mac, and Online Office apps. It's also supported in iOS and Android (Outlook Mobile Add-ins Only).
 

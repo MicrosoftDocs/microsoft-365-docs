@@ -71,7 +71,7 @@ Microsoft 365 Defender is available at: <a href="https://go.microsoft.com/fwlink
 
 ## What permissions do I need to access Microsoft 365 Defender?
 
-Accounts assigned the following Azure Active Directory (Azure AD) roles can access Microsoft 365 Defender functionality and data:
+Accounts assigned the following Microsoft Entra roles can access Microsoft 365 Defender functionality and data:
 
 - Global administrator
 - Security administrator
