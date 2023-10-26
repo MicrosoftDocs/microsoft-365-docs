@@ -107,7 +107,7 @@ When you're finished with the basic setup process, you'll see **Setup is complet
 :::image type="content" source="media/m365bp-setupcomplete.png" alt-text="Screenshot of the Setup is Complete confirmation screen."lightbox="media/m365bp-setupcomplete.png"::: 
 
 > [!IMPORTANT]
-> At this point, basic setup for Microsoft 365 is complete, but you still need to set up and configure your security settings. **Proceed to [Boost your security protection](m365bp-security-overview.md)**.
+> At this point, basic setup for Microsoft 365 is complete, but you still need to set up and configure your security settings. **Proceed to [set up your security protection](m365bp-security-overview.md)**.
 
 ### Employee quick setup guide
 
