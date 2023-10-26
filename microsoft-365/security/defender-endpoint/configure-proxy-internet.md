@@ -14,10 +14,10 @@ ms.collection:
 - tier1
 ms.topic: conceptual
 ms.subservice: mde
-ms.date: 09/29/2023
+ms.date: 10/25/2023
 ---
 
-# STEP 2:  Configure your devices to connect to the Defender for Endpoint service using a proxy
+# STEP 2: Configure your devices to connect to the Defender for Endpoint service using a proxy
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
