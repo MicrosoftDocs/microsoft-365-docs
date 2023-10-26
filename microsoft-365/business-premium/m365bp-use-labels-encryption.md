@@ -24,7 +24,7 @@ description: "Learn how to send encrypted email using Outlook."
 
 # Encrypt or label your sensitive email in Microsoft 365
 
-Your data and information is important, and often, confidential. The goal here is to help protect this sensitive information by ensuring everyone is using sensitivity labels so that email recipients treat the information with the utmost sensitivity.
+Your data and information is important, and often, confidential. This article describes how to help protect sensitive information by using sensitivity labels. Sensitivity labels can help ensure that email recipients treat the information with the right level of security.
 
 ## Best practices
 
