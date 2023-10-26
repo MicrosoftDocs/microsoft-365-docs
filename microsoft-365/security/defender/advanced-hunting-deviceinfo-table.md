@@ -48,7 +48,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `PublicIP` | `string` | Public IP address used by the onboarded machine to connect to the Microsoft  Defender for Endpoint service. This could be the IP address of the machine itself, a NAT device, or a proxy |
 | `OSArchitecture` | `string` | Architecture of the operating system running on the machine |
 | `OSPlatform` | `string` | Platform of the operating system running on the machine. This indicates specific operating systems, including variations within the same family, such as Windows 11, Windows 10 and Windows 7. |
-| `OSBuild` | `string` | Build version of the operating system running on the machine |
+| `OSBuild` | `long` | Build version of the operating system running on the machine |
 | `IsAzureADJoined` | `boolean` | Boolean indicator of whether machine is joined to the Microsoft Entra ID |
 | `AadDeviceId` | `string` | Unique identifier for the device in Microsoft Entra ID |
 | `LoggedOnUsers` | `string` | List of all users that are logged on the machine at the time of the event in JSON array format |
