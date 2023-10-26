@@ -35,9 +35,9 @@ ms.date: 12/18/2020
 This article provides information on how to define Antivirus (AV) exclusions that apply to on-demand scans, and real-time protection and monitoring.
 
 > [!IMPORTANT]
-> The exclusions described in this article don't apply to other Defender for Endpoint on Linux capabilities, including endpoint detection and response (EDR). Files that you exclude using the methods described in this article can still trigger EDR alerts and other detections. For EDR exclusions, [contact support](/microsoft-365/admin/get-help-support). For Global Exclusion, see [Global Exclusions for Microsoft Defender for Endpoint on Linux](linux-global-exclusions.md)
+> The exclusions described in this article don't apply to other Defender for Endpoint on Linux capabilities, including endpoint detection and response (EDR). Files that you exclude using the methods described in this article can still trigger EDR alerts and other detections. For EDR exclusions, [contact support](/microsoft-365/admin/get-help-support). To use Exclusion Settings or Global Exclusions, see [Global Exclusions for Microsoft Defender for Endpoint on Linux](linux-exclusions-v2.md)
 
-You can exclude certain files, folders, processes, and process-opened files from Defender for Endpoint on Linux scans. These AV exclusions come under the *epp* [scope](linux-preferences.md#scopes-of-exclusion-optional).
+You can exclude certain files, folders, processes, and process-opened files from Defender for Endpoint on Linux scans. These AV exclusions come under the *epp* [scope](linux-exclusions-v2.md#supported-exclusion-scopes).
 
 Exclusions can be useful to avoid incorrect detections on files or software that are unique or customized to your organization. They can also be useful for mitigating performance issues caused by Defender for Endpoint on Linux.
 
@@ -88,8 +88,9 @@ Examples:
 
 > [!NOTE]
 > --scope is an optional flag with accepted values as *epp* or *global*. 
-> If --scope flag is not used then the [scope](linux-preferences.md#scopes-of-exclusion-optional) for exclusion is considered *epp*.
-> Provide same scope used during adding exclusion to remove exclusions. To configure Global Exclusion, see [Set Global Exclusions from the command line](linux-global-exclusions.md#from-the-command-line).
+> Without the scope flag the command option will work as previously by considering the exclusion 
+[scope](linux-preferences.md#scopes-of-exclusion-optional) as *epp*.
+> Provide same scope used during adding exclusion to remove exclusions. To configure Global Exclusion, see [Set Global Exclusions from the command line](linux-exclusions-v2.md.md#from-the-command-line).
 
 - Add an exclusion for a file extension:
 
