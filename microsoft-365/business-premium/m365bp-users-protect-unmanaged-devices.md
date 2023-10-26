@@ -26,7 +26,7 @@ description: "Protect unmanaged computers from cyberattacks with Microsoft 365 B
 
 # Protect unmanaged computers with Microsoft 365 Business Premium
 
-This objective is focused on protecting unmanaged computers, such as Windows 10 or 11 computers and Mac computers that are neither enrolled in Microsoft Intune nor onboarded to Microsoft Defender for Business. If your business or campaign has staff who bring their own devices, such as personally owned phones, tablets, and PCs, ask users to take certain steps to protect business information that might be on their devices.
+A good goal to achieve is to protect unmanaged computers, such as Windows 10 or 11 computers and Mac computers that are neither enrolled in Microsoft Intune nor onboarded to Microsoft Defender for Business. If your business or campaign has staff who bring their own devices, such as personally owned phones, tablets, and PCs, ask users to take certain steps to protect business information that might be on their devices.
 
 > [!NOTE]
 > This article applies primarily to unmanaged (or BYOD) devices. Guidance for protecting managed devices is available here: [Set up and secure managed devices](m365bp-protect-managed-devices.md).

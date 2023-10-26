@@ -64,5 +64,5 @@ Download an infographic in [PDF](https://go.microsoft.com/fwlink/?linkid=2079435
 
 ## Next step
 
-Upon completion of this objective, [create a communication site](create-communications-site.md) for your team.
+Upon completion of this step, [create a communication site](create-communications-site.md) for your team.
 
