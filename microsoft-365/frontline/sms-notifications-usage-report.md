@@ -21,7 +21,7 @@ appliesto:
   - Microsoft Teams
   - Microsoft 365 for frontline workers
 ms.custom: seo-marvel-apr2020
-ms.date: 10/24/2023
+ms.date: 10/26/2023
 ---
 # Microsoft Teams SMS notifications usage report
 
