@@ -21,7 +21,7 @@ description: "Remove groups or policies to turn off Basic Mobility and Security.
 
 # Turn off Basic Mobility and Security
 
-To effectively turn off Basic Mobility and Security, you remove groups of people defined by security groups from the device management policies, or remove the policies themselves.
+To effectively turn-off Basic Mobility and Security, you remove groups of people defined by security groups from the device management policies, or remove the policies themselves.
 
 - Remove groups of users by removing user security groups from the device policies you've created.
 
