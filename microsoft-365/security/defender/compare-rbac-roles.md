@@ -63,7 +63,7 @@ Use the tables in the following sections to learn more about how your existing i
 |Manage portal system settings|Authorization and settings \ System setting (Read and manage)|
 |Manage endpoint security settings in Microsoft Intune|Not supported - this permission is managed in the Microsoft Intune admin center|
 
-### Map Defender for Office 365 (Exchange Online Protection) roles to the Microsoft 365 Defender Unified RBAC permissions
+### Map Defender for Office 365 permissions and roles to the Microsoft 365 Defender Unified RBAC permissions
 
 |Defender for Office (EOP) role group|Microsoft 365 Defender Unified RBAC permission|
 |---|---|---|
