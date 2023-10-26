@@ -158,7 +158,7 @@ F3 and F1 users have 2 GB of OneDrive storage to store and share files. To learn
 |---------|---------|---------|---------|
 |Windows 11 Enterprise|Yes|Yes&sup1;|No|
 
-&sup1;No Long-Term Servicing Channel (LTSC) or Microsoft Desktop Optimization Pack (MDOP). Virtual desktop infrastructure (VDI) only for licensed users of a shared device with a Quality of Service (QoS), (except for Azure Virtual Desktop).
+&sup1;No Long-Term Servicing Channel (LTSC) or Microsoft Desktop Optimization Pack (MDOP). Virtual desktop infrastructure (VDI) is only for licensed users of a shared device with a Qualifying Operating System (except for Azure Virtual Desktop).
 
 ## What to expect
 
