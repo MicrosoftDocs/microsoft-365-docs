@@ -24,7 +24,7 @@ ms.service: microsoft-365-security
 ms.date: 9/13/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
@@ -33,6 +33,9 @@ appliesto:
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, quarantine is available to hold potentially dangerous or unwanted messages.
+
+> [!NOTE]
+> In Microsoft 365 operated by 21Vianet, quarantine isn't currently available in the Microsoft 365 Defender portal. Quarantine is available only in the classic Exchange admin center (classic EAC).
 
 Whether a detected message is quarantined by default depends on the following factors:
 

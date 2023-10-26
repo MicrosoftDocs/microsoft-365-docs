@@ -40,8 +40,8 @@ The following table lists the basic requirements you need to use multi-tenant ma
 | Requirement | Description |
 |:---|:---|
 | Microsoft 365 Defender prerequisites | Verify you meet the [Microsoft 365 Defender prerequisites](prerequisites.md)|
-| Multi-tenant access | To view and manage the data you have access to in multi-tenant management, you need to ensure you have the necessary access. For each tenant you want to view and manage, you need to have either: <br/> <br/> - [Granular delegated admin privileges (GDAP)](/partner-center/gdap-introduction) <br/> - [Azure Active Directory B2B authentication](/azure/active-directory/external-identities/what-is-b2b) <br/> <br/> To learn more about how to synchronize multiple B2B users across tenants, see [Configure cross-tenant synchronization](/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-configure).|
-| Permissions | Users must be assigned the correct roles and permission,s at the individual tenant level, in order to view and manage the associated data in multi-tenant management. To learn more, see: <br/><br/> - [Manage access to Microsoft 365 Defender with Azure Active Directory global roles](./m365d-permissions.md) <br/> - [Custom roles in role-based access control for Microsoft 365 Defender](./custom-roles.md)<br/><br/> To learn how to grant permissions for multiple users at scale, see [What is entitlement management](/azure/active-directory/governance/entitlement-management-overview).|
+| Multi-tenant access | To view and manage the data you have access to in multi-tenant management, you need to ensure you have the necessary access. For each tenant you want to view and manage, you need to have either: <br/> <br/> - [Granular delegated admin privileges (GDAP)](/partner-center/gdap-introduction) <br/> - [Microsoft Entra B2B authentication](/azure/active-directory/external-identities/what-is-b2b) <br/> <br/> To learn more about how to synchronize multiple B2B users across tenants, see [Configure cross-tenant synchronization](/azure/active-directory/multi-tenant-organizations/cross-tenant-synchronization-configure).|
+| Permissions | Users must be assigned the correct roles and permission,s at the individual tenant level, in order to view and manage the associated data in multi-tenant management. To learn more, see: <br/><br/> - [Manage access to Microsoft 365 Defender with Microsoft Entra global roles](./m365d-permissions.md) <br/> - [Custom roles in role-based access control for Microsoft 365 Defender](./custom-roles.md)<br/><br/> To learn how to grant permissions for multiple users at scale, see [What is entitlement management](/azure/active-directory/governance/entitlement-management-overview).|
 
 >[!Note]
 > Setting up [multi-factor authentication trust](/azure/active-directory/external-identities/authentication-conditional-access) is highly recommended for each tenant to avoid missing data in multi-tenant management Microsoft 365 Defender.
@@ -50,10 +50,12 @@ The following table lists the basic requirements you need to use multi-tenant ma
 
 In order to view and manage the data you have access to in multi-tenant management, you need to ensure you have the necessary permissions. For each tenant you want to view and manage, you need to either:
 
-- [Verify your tenant access with Azure Active Directory B2B](#verify-your-tenant-access-with-azure-active-directory-b2b)
+- [Verify your tenant access with Microsoft Entra B2B](#verify-your-tenant-access-with-azure-active-directory-b2b)
 - [Verify your tenant access with GDAP](#verify-your-tenant-access-with-gdap)
 
-### Verify your tenant access with Azure Active Directory B2B
+<a name='verify-your-tenant-access-with-azure-active-directory-b2b'></a>
+
+### Verify your tenant access with Microsoft Entra B2B
 
 1. Go to [My account](https://myaccount.microsoft.com/organizations)
 2. Under **Organizations > Other organizations you collaborate with** see the list of organizations you have guest access to.

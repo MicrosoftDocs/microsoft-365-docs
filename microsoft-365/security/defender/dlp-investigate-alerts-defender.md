@@ -68,7 +68,7 @@ It is best practice to only grant minimal permissions to alerts in the Microsoft
 
 ## Before you start
 
-[Turn on alerts for all your DLP policies](/purview/dlp-create-deploy-policy.md) in the <a href="https://purview.microsoft.com" target="_blank">Microsoft Purview compliance portal</a>.
+[Turn on alerts for all your DLP policies](/purview/dlp-create-deploy-policy) in the <a href="https://purview.microsoft.com" target="_blank">Microsoft Purview compliance portal</a>.
 
 > [!NOTE]
 > [Administrative units](/microsoft-365/compliance/microsoft-365-compliance-center-permissions#administrative-units) restrictions flow from data loss prevention (DLP) into the Defender portal. If you are an administrative unit restricted admin, you'll only see the DLP alerts for your administrative unit.

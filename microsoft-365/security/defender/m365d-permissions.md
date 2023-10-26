@@ -25,7 +25,7 @@ search.appverid:
 ms.date: 09/21/2023
 ---
 
-# Manage access to Microsoft 365 Defender with Azure Active Directory global roles
+# Manage access to Microsoft 365 Defender with Microsoft Entra global roles
 
 > [!NOTE]
 > If you are running the Microsoft 365 Defender preview program you can now experience the new Microsoft Defender 365 role-based access control (RBAC) model. For more information, see [Microsoft Defender 365 role-based access control (RBAC)](manage-rbac.md).
@@ -38,10 +38,10 @@ ms.date: 09/21/2023
 
 There are two ways to manage access to Microsoft 365 Defender:
 
-- **Global Azure Active Directory (AD) roles**
+- **Global Microsoft Entra roles**
 - **Custom role access**
 
-Accounts assigned the following **Global Azure Active Directory (AD) roles** can access Microsoft 365 Defender functionality and data:
+Accounts assigned the following **Global Microsoft Entra roles** can access Microsoft 365 Defender functionality and data:
 
 - Global administrator
 - Security administrator
@@ -51,14 +51,14 @@ Accounts assigned the following **Global Azure Active Directory (AD) roles** can
 
 To review accounts with these roles, [view Permissions in the Microsoft 365 Defender portal](https://security.microsoft.com/permissions).
 
-**Custom role** access is a capability in Microsoft 365 Defender that allows you to manage access to specific data, tasks, and capabilities in Microsoft 365 Defender. Custom roles offer more control than global Azure AD roles, providing users only the access they need with the least-permissive roles necessary.  Custom roles can be created in addition to global Azure AD roles. [Learn more about custom roles](custom-roles.md).
+**Custom role** access is a capability in Microsoft 365 Defender that allows you to manage access to specific data, tasks, and capabilities in Microsoft 365 Defender. Custom roles offer more control than global Microsoft Entra roles, providing users only the access they need with the least-permissive roles necessary.  Custom roles can be created in addition to global Microsoft Entra roles. [Learn more about custom roles](custom-roles.md).
 
 > [!NOTE]
-> This article applies only to managing global Azure Active Directory roles. For more information about using custom role-based access control, see [Custom roles for role-based access control](custom-roles.md)
+> This article applies only to managing global Microsoft Entra roles. For more information about using custom role-based access control, see [Custom roles for role-based access control](custom-roles.md)
 
 ## Access to functionality
 
-Access to specific functionality is determined by your [Azure AD role](/azure/active-directory/roles/permissions-reference). Contact a global administrator if you need access to specific functionality that requires you or your user group be assigned a new role.
+Access to specific functionality is determined by your [Microsoft Entra role](/azure/active-directory/roles/permissions-reference). Contact a global administrator if you need access to specific functionality that requires you or your user group be assigned a new role.
 
 ### Approve pending automated tasks
 
@@ -77,7 +77,7 @@ During the preview, Microsoft 365 Defender does not enforce access controls base
 ## Related topics
 
 - [Custom roles in role-based access control for Microsoft 365 Defender](custom-roles.md)
-- [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference)
+- [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference)
 - [Microsoft Defender for Endpoint RBAC](/windows/security/threat-protection/microsoft-defender-atp/rbac)
 - [Defender for Cloud Apps roles](/cloud-app-security/manage-admins)
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

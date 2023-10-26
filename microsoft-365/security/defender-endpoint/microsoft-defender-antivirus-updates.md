@@ -28,6 +28,14 @@ search.appverid: met150
 **Platforms**
 - Windows
 
+
+> [!NOTE]
+> You can use RSS to be notified when this page is updated. To get notified when this page is updated, copy and paste the following URL into your RSS feed reader:
+>
+> ```https
+> https://learn.microsoft.com/api/search/rss?search=%22Microsoft+Defender+Antivirus+security+intelligence+and+product+updates%22&locale=en-us
+> ```
+
 Keeping Microsoft Defender Antivirus up to date is critical to assure your devices have the latest technology and features needed to protect against new malware and attack techniques. Update your antivirus protection, even if Microsoft Defender Antivirus is running in [passive mode](microsoft-defender-antivirus-compatibility.md). This article includes information about the two types of updates for keeping Microsoft Defender Antivirus current:
 
 - [Security intelligence updates](#security-intelligence-updates)
@@ -108,7 +116,7 @@ All our updates contain
 - Improved the performance of scanning files on network locations
 - Added support for domain computer SID for device control policies
 - Improved installer of unified agent to include legacy version of Windows Server 2012 (6.3.9600.17735)
-- Fixed issue in device control when querying Azure AD group membership, which resulted in increased network traffic.
+- Fixed issue in device control when querying Microsoft Entra group membership, which resulted in increased network traffic.
 - Improved parsing of attack surface reduction exclusions in the antimalware engine
 - Improved reliability in scanning PE files
 - Improved deployments safeguards for security intelligence updates
@@ -807,5 +815,3 @@ For more information, see [Microsoft Defender update for Windows operating syste
 
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
-
-
