@@ -62,7 +62,7 @@ Approaching solutions and mitigation for any incident can oftentimes be complex 
 
 Most attackers rely on sophisticated malware when launching attacks to avoid detection and analysis. These files are usually obfuscated and arrive as scripts, Powershell, batch, and bash. Security Copilot can quickly analyze these file types, reducing the time for [script or code analysis](security-copilot-m365d-script-analysis.md) and helping security teams decide on the next action steps using information from the analysis.
 
-:::image type="content" source="../../media/copilot-in-defender/script-analyzer/fig3-sec-copilot-m365d-script.png" alt-text="Screenshot of the Security Copilot pane in the Microsoft 365 Defender incident page." lightbox="../../media/copilot-in-defender/script-analyzer/fig3-expanded-sec-copilot-m365d-script.png":::
+:::image type="content" source="../../media/copilot-in-defender/script-analyzer/fig3-new-sec-copilot-m365d-script.png" alt-text="Screenshot of the Security Copilot pane in the Microsoft 365 Defender incident page." lightbox="../../media/copilot-in-defender/script-analyzer/fig3-expand-sec-copilot-m365d-script.png":::
 
 ### Generate KQL queries from natural-language input
 
