@@ -22,7 +22,7 @@ search.appverid: met150
 
 All permissions listed within the Microsoft 365 Defender Unified RBAC model align to existing permissions in the individual RBAC models. Once you activate the Microsoft 365 Defender Unified RBAC model the permissions and assignments configured in your imported roles will replace the existing roles in the individual RBAC models.
 
-This article describes how existing roles and permissions in Microsoft Defender for Endpoint, Microsoft Defender Vulnerability Management and Microsoft Defender for Office 365 (Exchange Online Protection), Microsoft Defender for Identity, and Microsoft Entra roles map to the roles and permission in the Microsoft 365 Defender Unified RBAC model.
+This article describes how existing roles and permissions in Microsoft Defender for Endpoint, Microsoft Defender Vulnerability Management and Microsoft Defender for Office 365 (Exchange Online Protection and Exchange Online (EXO) - previously configured in Exchange Admin Center), Microsoft Defender for Identity, and Microsoft Entra roles map to the roles and permission in the Microsoft 365 Defender Unified RBAC model.
 
 [!INCLUDE[Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
