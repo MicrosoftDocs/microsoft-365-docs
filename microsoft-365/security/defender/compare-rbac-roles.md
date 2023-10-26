@@ -65,6 +65,12 @@ Use the tables in the following sections to learn more about how your existing i
 
 ### Map Defender for Office 365 permissions and roles to the Microsoft 365 Defender Unified RBAC permissions
 
+Use the tables in the following sections to learn more about how your existing individual RBAC role definitions map to your new Microsoft 365 Defender Unified RBAC roles:
+
+“Exchange Online Protection (EOP) roles mapping”
+“Exchange Online (EXO) permissions – previously configured in Exchange Admin Center”
+
+
 |Defender for Office (EOP) role group|Microsoft 365 Defender Unified RBAC permission|
 |---|---|---|
 |Security reader|Security operations \ Security data \Security data basics (read)</br>Security operations \ Raw data (Email & collaboration) \ Email message headers (read)</br>Security operations \ Security data \ Response (manage) </br>Authorization and settings \ Security settings \ Core security settings (read) </br>Authorization and settings \ System setting (read)|
