@@ -78,4 +78,4 @@ Learn more about how to:
   
 ## Next step
 
-Once you've completed this mission step, learn about how to [send encrypted email](m365bp-use-labels-encryption.md). 
+Learn how to [send encrypted email](m365bp-use-labels-encryption.md). 
