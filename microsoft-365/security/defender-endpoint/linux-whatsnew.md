@@ -124,7 +124,7 @@ sudo systemctl disable mdatp
 
 **Known issues**
 
-- When upgrading from mdatp version 101.75.43 or 101.78.13, you may encounter a kernel hang. Run the following commands before attempting to upgrade to version 101.98.05. More information about the underlying issue can be found at [System hang due to blocked tasks in fanotify code](https://access.redhat.com/solutions/2838901).
+- When upgrading from mdatp version 101.75.43 or 101.78.13, you might encounter a kernel hang. Run the following commands before attempting to upgrade to version 101.98.05. More information about the underlying issue can be found at [System hang due to blocked tasks in fanotify code](https://access.redhat.com/solutions/2838901).
 There are two ways to mitigate this upgrade issue:
 
 1. Use your package manager to uninstall the `101.75.43` or `101.78.13` mdatp version.
@@ -411,7 +411,7 @@ sudo systemctl disable mdatp
 
 **Known issues**
 
-- While upgrading mdatp to version `101.94.13` or later, you may notice that health is false, with health_issues as "no active supplementary event provider". This may happen due to misconfigured/conflicting auditd rules on existing machines. To mitigate the issue, the auditd rules on the existing machines need to be fixed. The following commands can help you to identify such auditd rules (commands need to be run as super user). Take a backup of following file: /etc/audit/rules.d/audit.rules as these steps are only to identify failures.
+- While upgrading mdatp to version `101.94.13` or later, you might notice that health is false, with health_issues as "no active supplementary event provider". This may happen due to misconfigured/conflicting auditd rules on existing machines. To mitigate the issue, the auditd rules on the existing machines need to be fixed. The following commands can help you to identify such auditd rules (commands need to be run as super user). Take a backup of following file: /etc/audit/rules.d/audit.rules as these steps are only to identify failures.
 
 ```bash
 echo -c >> /etc/audit/rules.d/audit.rules
@@ -752,7 +752,7 @@ As an alternative approach, follow the instructions to [uninstall](/microsoft-36
 **What's new**
 
 - Added an option to [configure file hash computation](linux-preferences.md#configure-file-hash-computation-feature)
-- From this build onwards, the product has the new anti-malware engine by default
+- From this build onwards, the product has the new antimalware engine by default
 - Performance improvements for file copy operations
 - Bug fixes
 </br>
