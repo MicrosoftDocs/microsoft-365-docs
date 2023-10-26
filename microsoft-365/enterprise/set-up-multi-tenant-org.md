@@ -33,8 +33,8 @@ When each external tenant accepts the invitation to join the multitenant organiz
 
 To set up a new multitenant org in Microsoft 365
 
-1. In the Microsoft 365 admin center, expand **Settings**.
-1. Select **Org settings**.
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) as a global administrator.
+1. Expand **Settings** and select **Org settings**.
 1. On the **Organization profile** tab, select **Multitenant collaboration**.
 1. Select **Get started**.
 1. Select **Create a new multitenant organization**, and then select **Next**.
@@ -52,8 +52,8 @@ The next step after each external tenant accepts the invitation to join the mult
 
 To add a tenant to your multitenant organization
 
-1. In the Microsoft 365 admin center, expand **Settings**.
-1. Select **Org settings**.
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) as a global administrator.
+1. Expand **Settings** and select **Org settings**.
 1. On the **Organization profile** tab, select **Multitenant collaboration**.
 1. Select **Add new tenants**.
 1. Enter the tenant IDs of the tenants you want to add, and then select **Add tenant**.

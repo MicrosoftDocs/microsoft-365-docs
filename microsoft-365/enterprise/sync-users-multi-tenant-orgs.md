@@ -76,8 +76,8 @@ If some people from the other tenant already have guest accounts in your directo
 
 To synchronize identities to other tenants in a multitenant organization
 
-1. In the Microsoft 365 admin center, expand **Settings**.
-1. Select **Org settings**.
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) as a global administrator.
+1. Expand **Settings** and select **Org settings**.
 1. On the **Organization profile** tab, select **Multitenant collaboration**.
 1. Select **Share users**.
 1. Select **Select users and groups to share**.
@@ -92,8 +92,8 @@ If you add additional tenants to your multitenant organization, you need to set 
 
 To set up user synchronization with newly added tenants
 
-1. In the Microsoft 365 admin center, expand **Settings**.
-1. Select **Org settings**.
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) as a global administrator.
+1. Expand **Settings** and select **Org settings**.
 1. On the **Organization profile** tab, select **Multitenant collaboration**.
 1. Select **Share users**.
 1. Select **Share current user scope**.
@@ -105,8 +105,8 @@ You can change which users are synchronized to other tenants in your multitenant
 
 To change which users are synchronized to other tenants
 
-1. In the Microsoft 365 admin center, expand **Settings**.
-1. Select **Org settings**.
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) as a global administrator.
+1. Expand **Settings** and select **Org settings**.
 1. On the **Organization profile** tab, select **Multitenant collaboration**.
 1. Select **Share users**.
 1. Select **Edit shared users and groups**.

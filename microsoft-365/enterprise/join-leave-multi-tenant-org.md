@@ -39,8 +39,8 @@ When you leave a multitenant organization, the cross-tenant access settings and 
 
 To join an existing multitenant organization in Microsoft 365
 
-1. In the Microsoft 365 admin center, expand **Settings**.
-1. Select **Org settings**.
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) as a global administrator.
+1. Expand **Settings** and select **Org settings**.
 1. On the **Organization profile** tab, select **Multitenant collaboration**.
 1. Select **Get started**.
 1. Select **Join an existing multitenant organization**.
@@ -62,8 +62,8 @@ You can leave a multitenant organization as long as your tenant isn't the last o
 
 To remove a tenant from a multitenant organization in Microsoft 365
 
-1. In the Microsoft 365 admin center, expand **Settings**.
-1. Select **Org settings**.
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) as a global administrator.
+1. Expand **Settings** and select **Org settings**.
 1. On the **Organization profile** tab, select **Multitenant collaboration**.
 1. Select the check box next to the tenant you want to remove.
 1. Select **Remove tenant**.
