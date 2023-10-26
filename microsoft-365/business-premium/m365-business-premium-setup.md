@@ -20,6 +20,10 @@ ms.custom: intro-get-started
 
 # Sign in and set up Microsoft 365 Business Premium
 
+Your first critical mission is to complete your initial setup process right away. Let's get going!
+
+:::image type="content" source="media/mission1.png" alt-text="Diagram showing the Sign in and set up phase highlighted.":::
+
 This article describes how to get Microsoft 365 Business Premium, complete the basic setup process, and proceed to your next steps.
 
 > [!TIP]
