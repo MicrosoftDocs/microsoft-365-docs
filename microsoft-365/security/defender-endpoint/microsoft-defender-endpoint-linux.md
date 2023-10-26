@@ -96,6 +96,7 @@ If you experience any installation failures, refer to [Troubleshooting installat
   - Oracle Linux 7.2 or higher
   - Oracle Linux 8.x
   - Amazon Linux 2
+  - Amazon Linux 2023
   - Fedora 33 or higher
 
     > [!NOTE]
