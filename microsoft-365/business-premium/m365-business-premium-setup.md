@@ -134,7 +134,6 @@ If you'd prefer to have a Microsoft partner help you get and set up Microsoft 36
 
 ---
 
-
 ## How to get Microsoft 365 for Campaigns
 
 Campaigns and political parties in the USA are eligible for special pricing for Microsoft 365 Business Premium. Currently this special pricing is available to:

@@ -108,5 +108,5 @@ Learn more about Microsoft Teams at [Microsoft Teams technical documentation](/m
 
 ## Next step
 
-Once you complete this objective, you need to securely [set up meetings](set-up-meetings.md).
+[Set up meetings](set-up-meetings.md).
 

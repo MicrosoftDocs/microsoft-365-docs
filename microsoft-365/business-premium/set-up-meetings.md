@@ -54,4 +54,4 @@ Learn more about meeting in Microsoft Teams:
 
 ## Next step
 
-After this mission objective is accomplished, learn to securely [share files and videos](share-files-and-videos.md)
+After this step is finished, learn to securely [share files and videos](share-files-and-videos.md)
