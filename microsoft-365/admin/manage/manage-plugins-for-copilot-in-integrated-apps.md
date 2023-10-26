@@ -8,7 +8,7 @@ manager: scotv
 ms.date: 10/20/2023
 audience: Admin
 ms.topic: article
-ms.service: microsoft-365-business
+ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
 ms.collection:
 - Tier2
@@ -27,7 +27,7 @@ search.appverid:
 description: "Learn how to manage plugins for Copilot in Integrated Apps."
 ---
 
-# Manage Plugins for Copilot in Integrated Apps 
+# Manage Plugins for Copilot in Integrated Apps
 
 Microsoft 365 Copilot is a new experience inside Microsoft 365 that combines the power of large language models with your data and Microsoft 365 apps to capture natural language commands to produce content and analyze data. Plugins for Copilot are extensions that enable Copilot to access and use third-party apps, such as Jira, Dynamics 365, or Bing Web Search. Admins can manage plugins for Copilot in the same way as they manage any other app in the Integrated apps section of the Microsoft 365 admin center. This document explains how admins can enable, disable, assign, block, or remove plugins for Copilot for their organization, and about Copilot capabilities and data privacy.
 
@@ -48,6 +48,7 @@ When Copilot extensibility is enabled, users can see an 3P plugins in Copilot th
 
 Admins can manage plugins for Copilot as apps in the Integrated apps section of the Microsoft 365 admin center, where they can see the list of available, deployed, or blocked apps for their organization. They will be able to:
 
+- Enable/disable CoPilot extensibility for the whole organization through Microsoft 365 admin center settings.
 - Make available an app with plugins for Copilot to specific users or groups.
 - Deploy or remove apps with plugins for Copilot for the whole organization or specific users or groups.
 - Block or unblock apps with plugins for Copilot for the whole organization.
@@ -73,4 +74,4 @@ Admins can block or unblock plugins for Copilot for the whole organization or sp
 
 ## View and consent to permissions and data access 
 
-Admins can view and consent to the permissions and data access required by plugins for Copilot by using the same gestures and controls that work for any other app in the Microsoft 365 admin center. Admins can see the list of permissions and data access that the app requests and the rationale behind them. Admins can also see the privacy statement and terms of use of the app provider. Admins can provide their consent to the permissions and data access by clicking on the **Accept Permissions** button.
+For detailed information about how Microsoft 365 Copilot uses and protects your organizational information and data, see [Data, Privacy, and Security for Microsoft 365 Copilot](/microsoft-365-copilot/microsoft-365-copilot-privacy)
