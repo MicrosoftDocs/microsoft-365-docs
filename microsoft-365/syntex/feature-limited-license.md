@@ -1,10 +1,10 @@
 ---
-title: MICROSOFT SYNTEX FEATURES LIMITED TIME LICENSE
+title: Microsoft Syntex features limited time license
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: karlha
-ms.date: 09/06/2023
+ms.date: 09/21/2023
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -12,11 +12,10 @@ ms.custom:
 search.appverid: 
 ms.collection: 
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
-description: Read the Microsoft Syntex Features Limited Time License for Syntex features available as a preview for all users.
+description: Read the Microsoft Syntex features limited time license to see the Syntex features available as a preview for all pay-as-you-go users on a limited time basis.
 ---
 
-# MICROSOFT SYNTEX FEATURES LIMITED TIME LICENSE
+# Microsoft Syntex features limited time license
 
 These license terms are an agreement between you and Microsoft Corporation (or one of its affiliates). They apply to the Microsoft Syntex Features described below and do not alter your or Microsoft’s rights relating to the Product Terms ([Microsoft Product Terms](https://www.microsoft.com/licensing/terms/)). IF YOU COMPLY WITH THESE LICENSE TERMS, YOU HAVE THE RIGHTS BELOW. **BY USING THE MICROSOFT SYNTEX FEATURES, INDIVIDUALLY AND COLLECTIVELY YOU ACCEPT THESE TERMS.**
 
@@ -29,9 +28,8 @@ This License governs the limited time use of the following features, individuall
 &emsp;&emsp;iii.&emsp;&nbsp;&nbsp;&nbsp;Contracts Accelerator<br>
 &emsp;&emsp;iv.&emsp;&nbsp;&nbsp;&nbsp;Accounts Payable Accelerator<br>
 &emsp;&emsp;v.&emsp;&nbsp;&nbsp;&nbsp;&nbsp;Taxonomy features including: import using SKOS, SKOS formatting reference,<br>&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;push content type to hub, and term store reports<br>
-&emsp;&emsp;vi.&emsp;&nbsp;&nbsp;&nbsp;PDF Merge/Split<br>
-&emsp;&emsp;vii.&emsp;&nbsp;&nbsp;PDF Password Protect<br>
-&emsp;&emsp;viii.&emsp;&nbsp;Content Processing: Move or copy a file, set a content type from file name
+&emsp;&emsp;vi.&emsp;&nbsp;&nbsp;&nbsp;PDF Merge/Extract<br>
+&emsp;&emsp;vii.&emsp;&nbsp;&nbsp;Content Processing: Move or copy a file, set a content type from file name
 
 **REQUIREMENTS TO ENABLE THE FEATURES**
 

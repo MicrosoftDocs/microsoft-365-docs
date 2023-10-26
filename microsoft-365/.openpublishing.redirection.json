@@ -1,6 +1,11 @@
 {
     "redirections": [
         {
+            "source_path": "security/defender/microsoft-365-security-mda-redirection.md",
+            "redirect_url": "/microsoft-365/security/defender/microsoft-365-security-center-defender-cloud-apps#redirection-from-the-classic-microsoft-defender-for-cloud-apps-portal-to-microsoft-365-defender",
+            "redirect_document_id": false
+        }, 
+        {
             "source_path": "business-video/TOC",
             "redirect_url": "https://www.youtube.com/channel/UCBcPPMQmVe5O3on4v5VKrYA",
             "redirect_document_id": false
@@ -154,7 +159,13 @@
             "source_path": "scheduler/scheduler-using.md",
             "redirect_url": "https://news.microsoft.com/reinventing-productivity",
             "redirect_document_id": false
+        },
+        {
+            "source_path": "admin/misc/move-email-and-data-to-office-365-business-premium.md",
+            "redirect_url": "https://support.microsoft.com/office/move-your-old-email-calendars-and-contacts-to-microsoft-365-2c37f0b7-2915-423c-b35e-9e03267f23dc",
+            "redirect_document_id": false
         }
+
 
     ]
 }

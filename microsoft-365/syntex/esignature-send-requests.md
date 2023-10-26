@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: amcdonnell
-ms.date: 08/01/2023
+ms.date: 09/29/2023
 audience: enabler
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -33,7 +33,7 @@ Before you can use Syntex eSignature, an admin must [set up the Syntex eSignatur
 You must be signed in to SharePoint Online by using your work email address.
 
 > [!NOTE]
-> For this preview, Syntex eSignature is available for PDF documents only at this time.
+> For this preview, Syntex eSignature is available for only PDF documents at this time.
 
 ## Create a signature request
 
@@ -75,7 +75,7 @@ Syntex eSignature is an extension of SharePoint document storage and management 
 
 - The document is stored in a library or folder that has unique permissions or sharing settings. This event might override the default settings of the SharePoint site or tenant and either allow or block certain users from initiating or accessing an eSignature request with that document.
 
-- Microsoft Entra ID collaboration settings restrict document sharing to specific individuals. This event limits who the requests can be sent to.
+- Microsoft Entra collaboration settings restrict document sharing to specific individuals. This event limits who the requests can be sent to.
 
 ### Cancel a signature request
 
@@ -99,7 +99,7 @@ When a signature request is created, an email notification is sent to the recipi
 
 ### Access the document to be signed
 
-When you receive the email notification, select **View signed document** in the email to begin the signing process.
+When you receive the email notification, select **View request** in the email to begin the signing process.
 
 ![Screenshot of an email notification showing the View request button.](../media/content-understanding/esignature-notification-view-request.png)
 
@@ -228,7 +228,7 @@ Before a signature request is sent and at the completion of the request, certain
 To avoid potential issues, you should check the status and settings of their documents before starting a signature request. Ensure that there are sufficient permissions and roles to access and share the documents with their intended recipients.
 
 - Data loss prevention (DLP) policies
-- Microsoft Entra ID collaboration settings
+- Microsoft Entra collaboration settings
 - SharePoint sharing settings and policies
 - User permissions and document access
 
@@ -237,4 +237,3 @@ To avoid potential issues, you should check the status and settings of their doc
 After all recipients have signed the document, the signatures are added and an audit trail is appended to the signed PDF. Details of the request, including activities and timestamps of when they occurred throughout the signing process, are included. The details include the date and time the request created, date and time when the recipients signed, and so on. These details provide evidence of the integrity of the signing process. The signed document is then digitally signed by a Microsoft certificate to ensure that it can't be tampered with.  
 
 For setup and technical information for admins, see [Set up Microsoft Syntex eSignature (Preview)](esignature-setup.md).
-

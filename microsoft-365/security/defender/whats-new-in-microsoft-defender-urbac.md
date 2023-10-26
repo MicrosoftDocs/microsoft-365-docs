@@ -22,6 +22,12 @@ This article provides information about new features and important product updat
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
+## September 2023
+
+### Export roles for Microsoft 365 Defender Unified role-based access control (RBAC)
+
+Now you can easily export your existing roles in Unified RBAC to a CSV file. The exported file will include details such as the role name, the included permissions, the assigned users or user groups, and assigned data sources. When a role has multiple assignments, each assignment will be listed on a separate row in the CSV file. The CSV also includes a snapshot of the Unified RBAC activation status for each workload available on the tenant. For more information, see [Edit, delete and export roles](./edit-delete-rbac-roles.md#export-roles).
+
 ## August 2023
 
 ### Detection tuning and Security settings permissions
