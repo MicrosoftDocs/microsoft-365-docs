@@ -153,7 +153,7 @@ Campaigns and political parties in the USA are eligible for special pricing for 
 If your campaign or political party qualifies, Microsoft 365 for Campaigns is the least expensive plan available through Microsoft. See [Microsoft 365 for Campaigns](https://m365forcampaigns.microsoft.com).  
 
 > [!TIP]
-> If you're not eligible for special pricing, Microsoft 365 Business Premium is still the most cost-effective way obtain comprehensive security for a collaboration environment. See [How to get Microsoft 365 Business Premium](get-microsoft-365-business-premium.md).
+> If you're not eligible for special pricing, Microsoft 365 Business Premium is still the most cost-effective way obtain comprehensive security for a collaboration environment. See [Sign up for Microsoft 365 Business Premium](#sign-up-for-microsoft-365-business-premium) (in this article).
 
 ### What does Microsoft 365 for Campaigns include?
 
@@ -191,7 +191,7 @@ Make sure that you meet the following requirements before you begin your setup p
 
 | Requirement | Description |
 |:---|:---|
-| Subscription | Microsoft 365 Business Premium or Microsoft 365 for Campaigns <br/><br/> To start a trial or purchase your subscription, see the following resources: <br/>- [Get Microsoft 365 Business Premium](m365-business-premium-setup.md#sign-up-for-microsoft-365-business-premium)<br/>- [Get Microsoft 365 for Campaigns](#get-microsoft-365-for-campaigns) |
+| Subscription | Microsoft 365 Business Premium or Microsoft 365 for Campaigns <br/><br/> To start a trial or purchase your subscription, see the following sections: <br/>- [Sign up for Microsoft 365 Business Premium](#sign-up-for-microsoft-365-business-premium)<br/>- [How to get Microsoft 365 for Campaigns](#how-to-get-microsoft-365-for-campaigns) |
 | Permissions  | To complete the initial setup process, you must be a Global Admin. [Learn more about admin roles](../admin/add-users/about-admin-roles.md). |
 | Browser requirements | Microsoft Edge, Safari, Chrome or Firefox. [Learn more about browser requirements](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#coreui-heading-uyetipy).  |
 | Operating systems (client) | **Windows**:  Windows 10 or 11 Pro<br/>**macOS**: One of the three most recent versions of macOS | 
@@ -202,7 +202,7 @@ Make sure that you meet the following requirements before you begin your setup p
 
 ### Sign in to Microsoft 365 for Campaigns
 
-If you signed up for Microsoft 365 for Campaigns, you're designated as the Microsoft 365 admin (also referred to as the Global Administrator). This allows you to sign in and initiate the system.
+If you signed up for Microsoft 365 for Campaigns, you're designated as the Microsoft 365 admin (also referred to as the Global Administrator). This role allows you to sign in and initiate the system.
 
 Here's how to sign in:
 
@@ -255,10 +255,4 @@ To help your staff learn about steps to protect your campaign from cyber threats
 ## Next step
 
 Proceed to [Boost your security protection](m365bp-security-overview.md).
-
-## See also
-
-- [Overview of the Microsoft 365 admin center](../admin/admin-overview/admin-center-overview.md)
-- [Business subscriptions and billing documentation](../commerce/index.yml)
-- [Find a Microsoft partner or reseller](../admin/manage/find-your-partner-or-reseller.md)
 
