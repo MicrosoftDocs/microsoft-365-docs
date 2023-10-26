@@ -184,7 +184,7 @@ If you experience any installation failures, refer to [Troubleshooting installat
   |xfs|
 
 
-After you've enabled the service, you may need to configure your network or firewall to allow outbound connections between it and your endpoints.
+After you've enabled the service, you m need to configure your network or firewall to allow outbound connections between it and your endpoints.
 
 - Audit framework (`auditd`) must be enabled.
 
@@ -209,7 +209,7 @@ When adding exclusions to Microsoft Defender Antivirus, you should be mindful of
 
 ### Network connections
 
-The following downloadable spreadsheet lists the services and their associated URLs that your network must be able to connect to. You should ensure that there are no firewall or network filtering rules that would deny access to these URLs. If there are, you may need to create an *allow* rule specifically for them.
+The following downloadable spreadsheet lists the services and their associated URLs that your network must be able to connect to. You should ensure that there are no firewall or network filtering rules that would deny access to these URLs. If there are, you might need to create an *allow* rule specifically for them.
 
 |Spreadsheet of domains list| Description|
 |---|---|
