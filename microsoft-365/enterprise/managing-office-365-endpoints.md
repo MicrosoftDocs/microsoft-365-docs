@@ -99,7 +99,7 @@ In addition to selecting appropriate configuration for your network perimeter, i
 
 Changes to the Microsoft 365 IP addresses and URLs are usually published near the last day of each month. Sometimes a change will be published outside of that schedule due to operational, support, or security requirements.
 
-When a change is published that requires you to act because an IP address or URL was added, you should expect to receive 30 days notice from the time we publish the change until there's an Microsoft 365 service on that endpoint. This is reflected as the Effective Date. Although we aim for this notification period, it may not always be possible due to operational, support, or security requirements. Changes that don't require immediate action to maintain connectivity, such as removed IP addresses or URLs or less significant changes, don't include advance notification. In these instances, no Effective Date will be provided. Regardless of what notification is provided, we list the expected service active date for each change.
+When a change is published that requires you to act because an IP address or URL was added, you should expect to receive 30 days notice from the time we publish the change until there's a Microsoft 365 service on that endpoint. This is reflected as the Effective Date. Although we aim for this notification period, it may not always be possible due to operational, support, or security requirements. Changes that don't require immediate action to maintain connectivity, such as removed IP addresses or URLs or less significant changes, don't include advance notification. In these instances, no Effective Date will be provided. Regardless of what notification is provided, we list the expected service active date for each change.
 
 ### Change notification using the Web Service
 
@@ -198,7 +198,7 @@ The Microsoft 365 suite is broken down into major service areas. These can be se
 |**Exchange** <br/> |Exchange Online and Exchange Online Protection <br/> |
 |**SharePoint** <br/> |SharePoint Online and OneDrive for Business <br/> |
 |**Skype for Business Online and Microsoft Teams** <br/> |Skype for Business and Microsoft Teams <br/> |
-|**Common** <br/> |Microsoft 365 Pro Plus, Office in a browser, Azure AD, and other common network endpoints <br/> |
+|**Common** <br/> |Microsoft 365 Pro Plus, Office in a browser, Microsoft Entra ID, and other common network endpoints <br/> |
 
 In addition to basic internet services, there are third-party services that are only used to integrate functionality. While these are needed for integration, they're marked as optional in the Microsoft 365 endpoints article, which means core functionality of the service will continue to function if the endpoint isn't accessible. Any network endpoint that is required will have the required attribute set to true. Any network endpoint that is optional will have the required attribute set to false and the notes attribute will detail the missing functionality you should expect if connectivity is blocked.
   

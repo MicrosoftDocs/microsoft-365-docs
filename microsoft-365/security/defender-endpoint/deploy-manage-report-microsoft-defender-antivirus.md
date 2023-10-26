@@ -36,7 +36,7 @@ Microsoft Defender Antivirus is installed as a core part of Windows 10 and 11, a
 - [Microsoft Intune](#microsoft-intune)
 - [Configuration Manager](#configuration-manager)
 - [PowerShell](#powershell)
-- [Group Policy and Azure Active Directory](#powershell)
+- [Group Policy and Microsoft Entra ID](#powershell)
 - [Windows Management Instrumentation](#windows-management-instrumentation)
 
 This article describes these options for deployment, management, and reporting.
@@ -83,7 +83,9 @@ For reporting, you can choose from the following options:
 
 - Use the default [Configuration Manager Monitoring workspace](/mem/configmgr/apps/deploy-use/monitor-applications-from-the-console).
 
-## Group Policy and Azure Active Directory
+<a name='group-policy-and-azure-active-directory'></a>
+
+## Group Policy and Microsoft Entra ID
 
 You can use a Group Policy Object to deploy configuration changes and ensure Microsoft Defender Antivirus is enabled. Use Group Policy Objects (GPOs) to [configure update options for Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/manage-protection-update-schedule-microsoft-defender-antivirus) and [configure Windows Defender features](/microsoft-365/security/defender-endpoint/configure-microsoft-defender-antivirus-features).
 
