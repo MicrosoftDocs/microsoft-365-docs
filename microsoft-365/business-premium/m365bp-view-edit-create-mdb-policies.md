@@ -195,6 +195,6 @@ If you do run into policy conflicts, see [Troubleshooting policies and profiles 
 
 [Best practices for securing Microsoft 365 for business plans](secure-your-business-data.md)
 
-## Next objective
+## Next step
 
 [Set up and manage device groups](m365bp-device-groups-mdb.md).

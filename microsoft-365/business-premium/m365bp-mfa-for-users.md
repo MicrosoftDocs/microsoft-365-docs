@@ -36,6 +36,6 @@ See more at [Set up multi-factor authentication in Microsoft 365 Business Premiu
 
 When MFA is enforced, the authenticator app serves as a second form of authentication. We also recommend that everyone install and use the Outlook app to access their Microsoft 365 email on their devices. See [Download Microsoft Outlook for iOS and Android](https://www.microsoft.com/microsoft-365/outlook-mobile-for-android-and-ios).
 
-## Next objective
+## Next step
 
 Proceed to [install Microsoft 365 Apps](m365bp-users-install-m365-apps.md).

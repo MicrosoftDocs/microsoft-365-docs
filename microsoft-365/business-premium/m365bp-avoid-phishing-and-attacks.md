@@ -76,6 +76,6 @@ Learn more about how to:
 
 - [Stay secure and private at work](https://support.office.com/article/stay-secure-and-private-at-work-104c7d91-b25a-453d-beee-ba64b6c6fc2d).
   
-## Next objective
+## Next step
 
 Once you've completed this mission objective, learn about how to [send encrypted email](m365bp-use-labels-encryption.md). 
