@@ -27,7 +27,7 @@ description: "Know what to watch for in email. Train your team to guard against 
 
 :::image type="content" source="media/mission4.png" alt-text="Diagram with Use email securely highlighted.":::
 
-As you probably already know, email can contain malicious attacks cloaked as harmless communications. Email systems are especially vulnerable, because email is handled by everyone in the organization, and safety relies on people making consistently good decisions with those communications. In this mission, learn how everyone in your organization can help to keep your information safe from attackers.
+As you probably already know, email can contain malicious attacks cloaked as harmless communications. Email systems are especially vulnerable, because email is handled by everyone in the organization, and safety relies on people making consistently good decisions with those communications. This article describes how to help everyone in your organization to keep your information safe from attackers.
 
 Your steps are to:
 
