@@ -111,6 +111,12 @@ When you're finished with the basic setup process, you'll see **Setup is complet
 > [!IMPORTANT]
 > At this point, basic setup for Microsoft 365 is complete, but you still need to set up and configure your security settings. **Proceed to [Boost your security protection](m365bp-security-overview.md)**.
 
+### Employee quick setup guide
+
+[:::image type="content" source="media/employee-setup-guide.png" alt-text="Screenshot of employee setup guide steps.":::](https://support.microsoft.com/en-us/office/employee-quick-setup-in-microsoft-365-for-business-7f34c318-e772-46a5-8c0a-ab86661542d1)
+
+After you have added users to your Microsoft 365 subscription, give them a link to the [Employee quick setup guide](https://support.microsoft.com/office/7f34c318-e772-46a5-8c0a-ab86661542d1). The guide walks them through signing in, getting Microsoft 365 Apps, and saving, copying, and sharing files.
+
 ## [**Work with a Microsoft partner**](#tab/UsePartner)
 
 If you'd prefer to have a Microsoft partner help you get and set up Microsoft 365 Business Premium, follow these steps:
@@ -130,13 +136,6 @@ If you'd prefer to have a Microsoft partner help you get and set up Microsoft 36
 
 ---
 
-## Employee quick setup guide
-
-[:::image type="content" source="media/employee-setup-guide.png" alt-text="Screenshot of employee setup guide steps.":::](https://support.microsoft.com/en-us/office/employee-quick-setup-in-microsoft-365-for-business-7f34c318-e772-46a5-8c0a-ab86661542d1)
-
-After you have added users to your Microsoft 365 subscription, give them a link to the [Employee quick setup guide](https://support.microsoft.com/office/7f34c318-e772-46a5-8c0a-ab86661542d1). The guide walks them through signing in, getting Microsoft 365 Apps, and saving, copying, and sharing files.
-
-This article describes how to get Microsoft 365 for Campaigns (a special offering for campaigns and political parties in the USA), and how to complete the basic setup process and proceed to next steps.
 
 ## How to get Microsoft 365 for Campaigns
 
