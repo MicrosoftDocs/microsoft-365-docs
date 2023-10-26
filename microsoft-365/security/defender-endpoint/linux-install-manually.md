@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
+- mde-linux
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
@@ -85,6 +86,7 @@ In order to preview new features and provide early feedback, it is recommended t
   |---|---|
   |For RHEL/Centos/Oracle 8.0-8.7|<https://packages.microsoft.com/config/rhel/8/prod.repo>|
   |For RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2 |<https://packages.microsoft.com/config/rhel/7.2/prod.repo>|
+  |For Amazon Linux 2023 |<https://packages.microsoft.com/config/amazonlinux/2023/prod.repo>|
   |For Fedora 33|<https://packages.microsoft.com/config/fedora/33/prod.repo>|
   |For Fedora 34|<https://packages.microsoft.com/config/fedora/34/prod.repo>|
 
@@ -200,7 +202,11 @@ In order to preview new features and provide early feedback, it is recommended t
   ```
 
 - Install the Microsoft GPG public key:
-
+  - For Debian 12
+  ```bash
+  curl -sSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /usr/share/keyrings/microsoft-prod.gpg > /dev/null
+  ```
+  - For others
   ```bash
   curl -sSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/microsoft.gpg > /dev/null
   ```

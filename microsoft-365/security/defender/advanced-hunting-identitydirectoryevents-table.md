@@ -54,7 +54,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `AccountDomain` | `string` | Domain of the account |
 | `AccountUpn` | `string` | User principal name (UPN) of the account |
 | `AccountSid` | `string` | Security Identifier (SID) of the account |
-| `AccountObjectId` | `string` | Unique identifier for the account in Azure Active Directory |
+| `AccountObjectId` | `string` | Unique identifier for the account in Microsoft Entra ID |
 | `AccountDisplayName` | `string` | Name of the account user displayed in the address book. Typically a combination of a given or first name, a middle initiation, and a last name or surname. |
 | `DeviceName` | `string` | Fully qualified domain name (FQDN) of the device |
 | `IPAddress` | `string` | IP address assigned to the device during communication |

@@ -15,6 +15,7 @@ ms.collection:
 - m365-security
 - tier2
 - m365initiative-defender-endpoint
+- mde-ngp
 ---
 
 # Microsoft Defender Antivirus on Windows Server

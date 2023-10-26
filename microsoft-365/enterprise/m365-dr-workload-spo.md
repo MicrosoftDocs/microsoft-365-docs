@@ -9,7 +9,7 @@ ms.topic: article
 f1.keywords:
 - NOCSH
 ms.date: 09/20/2022
-ms.reviewer: dmwmsft
+ms.reviewer: deanw, anfra, robnichols
 ms.custom:
 - it-pro
 ms.localizationpriority: medium
@@ -389,9 +389,6 @@ We do not support moving sites with:
 - Business Connectivity Services
 - InfoPath forms
 - Information Rights Management (IRM) templates applied
-
->[!NOTE]
-> Sites archived with Microsoft 365 Archive need to be reactivated before being moved. Archiving sites while a move is in progress is not supported.
 
 To ensure all _Geography_ locations are compatible, run `Get-SPOGeoMoveCrossCompatibilityStatus`. This will display all your _Geography_ locations and whether the environment is compatible with the destination _Geography_ location.
 

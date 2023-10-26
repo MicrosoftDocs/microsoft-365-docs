@@ -16,6 +16,7 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
+- mde-linux
 ms.topic: conceptual
 ms.subservice: mde
 ms.date: 10/06/2021

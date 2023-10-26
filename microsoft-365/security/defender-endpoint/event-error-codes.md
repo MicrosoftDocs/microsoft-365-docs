@@ -14,6 +14,7 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
+- mde-ngp
 ms.topic: conceptual
 ms.date: 05/21/2018
 ms.subservice: mde

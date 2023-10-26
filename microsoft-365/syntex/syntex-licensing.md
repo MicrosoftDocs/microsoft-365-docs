@@ -38,11 +38,13 @@ The features available for each license type are described in this article. <!--
 Pay-as-you-go currently supports the following Syntex services:
 
 - Prebuilt document processing
+- Structured and freeform document processing
 - Unstructured document processing
 - Content assembly
 - Image tagging
 - Taxonomy tagging
 - Optical character recognition
+<!---- Microsoft 365 Archive--->
 
 More Syntex services will be added as they become available.
 

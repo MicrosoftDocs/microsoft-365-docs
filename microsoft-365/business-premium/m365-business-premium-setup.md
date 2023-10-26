@@ -7,9 +7,8 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.service: microsoft-365-security
-ms.subservice: m365bp
-ms.date: 07/19/2023
+ms.service: microsoft-365-business
+ms.date: 10/10/2023
 ms.localizationpriority: medium
 ms.reviewer: nehabha
 f1.keywords: NOCSH 
@@ -71,19 +70,17 @@ To complete the basic setup process, you can choose from several options availab
 
 Microsoft 365 Business Premium includes a guided setup process, as shown in the following video: 
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ title="Set up Microsoft 365 for business"]
 
 ### The guided setup process, step by step
 
-1. As a global administrator, go to the [Microsoft 365 admin center](https://admin.microsoft.com/) and sign in. By default, you'll see the simplified view, as shown in the following image:
+1. As a global administrator, go to the [Microsoft 365 admin center](https://admin.microsoft.com/) and sign in. By default, you'll see the simplified view. 
 
-   :::image type="content" source="media/m365bp-simplifiedview.png" alt-text="Screenshot showing the simplified view of the Microsoft 365 admin center."lightbox="media/m365bp-simplifiedview.png":::
-
-2. In the upper right corner, select **Dashboard view** so that your admin center resembles the following image. Then select **Go to guided setup**. 
+2. In the upper left corner, select **Simplified view > Dashboard view** so that your admin center resembles the following image. Then select **Go to guided setup**. 
 
    :::image type="content" source="media/m365bp-dashboardview.png" alt-text="Screenshot of the dashboard view of the Microsoft 365 admin center."lightbox="media/m365bp-dashboardview.png":::
 
-3. To install your Microsoft 365 Apps (Office), select the download button, and then follow the prompts. Alternately, you can skip this step for now and install your apps later. Then select **Continue**.
+3. To install your Microsoft 365 Apps (Office), select the download button, and then follow the prompts. Alternately, you can skip this step for now and install your apps later. Select **Continue**.
 
    :::image type="content" source="media/m365bp-installoffice.png" alt-text="Screenshot of the Install Office download button."lightbox="media/m365bp-installoffice.png":::
 
@@ -108,7 +105,7 @@ When you're finished with the basic setup process, you'll see **Setup is complet
 :::image type="content" source="media/m365bp-setupcomplete.png" alt-text="Screenshot of the Setup is Complete confirmation screen."lightbox="media/m365bp-setupcomplete.png"::: 
 
 > [!IMPORTANT]
-> At this point, basic setup is complete, but you still need to [set up and configure your security settings](m365bp-security-overview.md).
+> At this point, basic setup for Microsoft 365 is complete, but you still need to set up and configure your security settings. **Proceed to [Boost your security protection](m365bp-security-overview.md)**.
 
 ## [**Work with a Microsoft partner**](#tab/UsePartner)
 

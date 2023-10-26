@@ -180,9 +180,9 @@ If you're thinking about doing a full hybrid migration, here are things to consi
 
 - Microsoft 365 will need to connect to the "hybrid server" using Outlook Anywhere over TCP port 443.
 
-- You'll need to set up directory synchronization using Azure Active Directory (Azure AD) Connect between your on-premises Active Directory servers and Microsoft 365.
+- You'll need to set up directory synchronization using Microsoft Entra Connect between your on-premises Active Directory servers and Microsoft 365.
 
-- Users will be able to sign in to their Microsoft 365 mailbox using the same user name and password as when they sign in to the local network. (This functionality requires Azure AD Connect with password synchronization and/or Active Directory Federation Services.)
+- Users will be able to sign in to their Microsoft 365 mailbox using the same user name and password as when they sign in to the local network. (This functionality requires Microsoft Entra Connect with password synchronization and/or Active Directory Federation Services.)
 
 - You'll need a Microsoft 365 license that includes Exchange Online for each user mailbox you migrate.
 

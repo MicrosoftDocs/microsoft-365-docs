@@ -1,5 +1,5 @@
 ---
-title: "View your Azure Active Directory roles in Microsoft 365 Lighthouse"
+title: "View your Microsoft Entra roles in Microsoft 365 Lighthouse"
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -19,12 +19,12 @@ ms.custom:
 - AdminSurgePortfolib
 - M365-Lighthouse                         
 search.appverid: MET150
-description: "For Managed Service Provider (MSP) technicians using Microsoft 365 Lighthouse, learn how to view your Azure Active Directory (Azure AD) roles across the different customer tenants that your organization manages."
+description: "For Managed Service Provider (MSP) technicians using Microsoft 365 Lighthouse, learn how to view your Microsoft Entra roles across the different customer tenants that your organization manages."
 ---
 
-# View your Azure Active Directory roles in Microsoft 365 Lighthouse
+# View your Microsoft Entra roles in Microsoft 365 Lighthouse
 
-This article provides instructions for how to view your Azure Active Directory (Azure AD) roles across the different customer tenants that your organization manages. Your role determines which actions you can perform in Lighthouse.
+This article provides instructions for how to view your Microsoft Entra roles across the different customer tenants that your organization manages. Your role determines which actions you can perform in Lighthouse.
 
 ## Before you begin
 
@@ -40,7 +40,7 @@ You must have access to a partner tenant that has onboarded to the Microsoft 365
 
     If you hold one or more roles in a customer tenant, you'll see a green checkmark in the **Enabled** column for that tenant, along with the number of roles you hold. If you don't hold any roles in a tenant, you'll see a red **X**.
  
-4. For customer tenants with a green checkmark next to them, expand the tenant to see the list of roles you hold in that tenant. For more information about Azure AD roles and the permissions they grant, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
+4. For customer tenants with a green checkmark next to them, expand the tenant to see the list of roles you hold in that tenant. For more information about Microsoft Entra roles and the permissions they grant, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference).
 
     The **Roles** page also shows any custom tags that have been applied to your tenants. You can filter the data on the page by assigned roles or tags.
 
