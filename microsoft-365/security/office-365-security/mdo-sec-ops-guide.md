@@ -21,7 +21,7 @@ ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.date: 6/22/2023
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
@@ -181,7 +181,7 @@ Short videos for specific tasks are also available in the [Microsoft Defender fo
 Permissions for managing Defender for Office 365 in the Microsoft 365 Defender portal and PowerShell are based on the role-based access control (RBAC) permissions model. RBAC is the same permissions model that's used by most Microsoft 365 services. For more information, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).
 
 > [!NOTE]
-> Privileged Identity Management (PIM) in Microsoft Entra ID is also a way to assign required permissions to SecOps personnel. For more information, see [Privileged Identity Management (PIM) and why to use it with Microsoft Defender for Office 365](use-privileged-identity-management-in-defender-for-office-365.md).
+> Privileged Identity Management (PIM) in Microsoft Entra ID is also a way to assign required permissions to SecOps personnel. For more information, see [Privileged Identity Management (PIM) and why to use it with Microsoft Defender for Office 365](pim-in-mdo-configure.md).
 
 The following permissions (roles and role groups) are available in Defender for Office 365 and can be used to grant access to security team members:
 

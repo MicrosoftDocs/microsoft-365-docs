@@ -23,7 +23,7 @@ ms.service: microsoft-365-security
 ms.date: 06/09/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
@@ -68,12 +68,12 @@ The rest of this article explains how to use the spoof intelligence insight in t
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-  - [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo):
+  - [Exchange Online permissions](/exchange/permissions-exo/permissions-exo):
     - _Allow or block spoofed senders or turn on or turn off spoof intelligence_: Membership in one of the following role groups:
       - **Organization Management**
       - **Security Administrator** <u>and</u> **View-Only Configuration** or **View-Only Organization Management**.
     - _Read-only access to the spoof intelligence insight_: Membership in the **Global Reader**, **Security Reader**, or **View-Only Organization Management** role groups.
-  - [Microsoft Entra RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
+  - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 - For our recommended settings for anti-phishing policies, see [EOP anti-phishing policy settings](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings).
 

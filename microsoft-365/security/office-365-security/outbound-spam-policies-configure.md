@@ -22,7 +22,7 @@ ms.service: microsoft-365-security
 ms.date: 6/19/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
@@ -32,7 +32,7 @@ appliesto:
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, outbound email messages that are sent through EOP are automatically checked for spam and unusual sending activity.
 
-Outbound spam from a user in your organization typically indicates a compromised account. Suspicious outbound messages are marked as spam (regardless of the spam confidence level or SCL) and are routed through the [high-risk delivery pool](outbound-spam-high-risk-delivery-pool-about.md) to help protect the reputation of the service (that is, to keep Microsoft 365 source email servers off of IP block lists). Admins are automatically notified of suspicious outbound email activity and blocked users via [alert policies](/purview/alert-policies).
+Outbound spam from a user in your organization typically indicates a compromised account. Suspicious outbound messages are marked as spam (regardless of the spam confidence level or SCL) and are routed through the [high-risk delivery pool](outbound-spam-high-risk-delivery-pool-about.md) to help protect the reputation of the service (that is, to keep Microsoft 365 source email servers off of IP block lists). Admins are automatically notified of suspicious outbound email activity and blocked users via [alert policies](alert-policies-defender-portal.md).
 
 EOP uses outbound spam policies as part of your organization's overall defense against spam. For more information, see [Anti-spam protection](anti-spam-protection-about.md).
 
@@ -47,14 +47,14 @@ You can configure outbound spam policies in the Microsoft 365 Defender portal or
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-  - [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo):
+  - [Exchange Online permissions](/exchange/permissions-exo/permissions-exo):
     - _Add, modify, and delete policies_: Membership in the **Organization Management** or **Security Administrator** role groups.
     - _Read-only access to policies_: Membership in the **Global Reader**, **Security Reader**, or **View-Only Organization Management** role groups.
-  - [Microsoft Entra RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
+  - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 - For our recommended settings for outbound spam policies, see [EOP outbound spam policy settings](recommended-settings-for-eop-and-office365.md#eop-outbound-spam-policy-settings).
 
-- The default [alert policies](/purview/alert-policies) named **Email sending limit exceeded**, **Suspicious email sending patterns detected**, and **User restricted from sending email** already send email notifications to members of the **TenantAdmins** (**Global admins**) group about unusual outbound email activity and blocked users due to outbound spam. For more information, see [Verify the alert settings for restricted users](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users). We recommend that you use these alert policies instead of the notification options in outbound spam policies.
+- The default [alert policies](/purview/alert-policies#threat-management-alert-policies) named **Email sending limit exceeded**, **Suspicious email sending patterns detected**, and **User restricted from sending email** already send email notifications to members of the **TenantAdmins** (**Global admins**) group about unusual outbound email activity and blocked users due to outbound spam. For more information, see [Verify the alert settings for restricted users](outbound-spam-restore-restricted-users.md#verify-the-alert-settings-for-restricted-users). We recommend that you use these alert policies instead of the notification options in outbound spam policies.
 
 ## Use the Microsoft 365 Defender portal to create outbound spam policies
 
@@ -113,7 +113,7 @@ You can configure outbound spam policies in the Microsoft 365 Defender portal or
        - The alert policy named **User restricted from sending email** notifies admins (via email and on the **Incidents & alerts** \> **View alerts** page).
        - Any recipients specified in the **Notify specific people if a sender is blocked due to sending outbound spam** setting in the policy are also notified.
        - The user is unable to send any more messages until the following day, based on UTC time. There's no way for the admin to override this block.
-     - **Restrict the user from sending mail**: Email notifications are sent, the user is added to **Restricted users** <https://security.microsoft.com/restrictedusers> in the Microsoft 365 Defender portal, and the user can't send email until they're removed from **Restricted users** by an admin. After an admin removes the user from the list, the user won't be restricted again for that day. For instructions, see [Remove blocked users from the Restricted entities page](removing-user-from-restricted-users-portal-after-spam.md).
+     - **Restrict the user from sending mail**: Email notifications are sent, the user is added to **Restricted users** <https://security.microsoft.com/restrictedusers> in the Microsoft 365 Defender portal, and the user can't send email until they're removed from **Restricted users** by an admin. After an admin removes the user from the list, the user won't be restricted again for that day. For instructions, see [Remove blocked users from the Restricted entities page](outbound-spam-restore-restricted-users.md).
      - **No action, alert only**: Email notifications are sent.
 
    - **Forwarding rules** section: The setting in this section controls automatic email forwarding by **Exchange Online mailboxes** to external recipients. For more information, see [Control automatic external email forwarding in Microsoft 365](outbound-spam-policies-external-email-forwarding.md).
@@ -149,7 +149,7 @@ You can configure outbound spam policies in the Microsoft 365 Defender portal or
      >
      > - This setting is in the process of being deprecated from outbound spam policies.
      >
-     > - The default [alert policy](/purview/alert-policies) named **User restricted from sending email** already sends email notifications to members of the **TenantAdmins** (**Global admins**) group when users are blocked due to exceeding the limits in the **Recipient Limits** section. **We strongly recommend that you use the alert policy rather than this setting in the outbound spam policy to notify admins and other users**. For instructions, see [Verify the alert settings for restricted users](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users).
+     > - The default [alert policy](/purview/alert-policies#threat-management-alert-policies) named **User restricted from sending email** already sends email notifications to members of the **TenantAdmins** (**Global admins**) group when users are blocked due to exceeding the limits in the **Recipient Limits** section. **We strongly recommend that you use the alert policy rather than this setting in the outbound spam policy to notify admins and other users**. For instructions, see [Verify the alert settings for restricted users](outbound-spam-restore-restricted-users.md#verify-the-alert-settings-for-restricted-users).
 
    When you're finished on the **Protection settings** page, select **Next**.
 
@@ -495,7 +495,7 @@ For detailed syntax and parameter information, see [Remove-HostedOutboundSpamFil
 
 ## For more information
 
-[Remove blocked users from the Restricted entities page](removing-user-from-restricted-users-portal-after-spam.md)
+[Remove blocked users from the Restricted entities page](outbound-spam-restore-restricted-users.md)
 
 [High-risk delivery pool for outbound messages](outbound-spam-high-risk-delivery-pool-about.md)
 

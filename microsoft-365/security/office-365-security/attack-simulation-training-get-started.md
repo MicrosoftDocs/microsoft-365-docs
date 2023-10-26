@@ -23,7 +23,7 @@ ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.date: 7/17/2023
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview" target="_blank">Microsoft Defender for Office 365 plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
 ---
 
 # Get started using Attack simulation training
@@ -49,17 +49,17 @@ Watch this short video to learn more about Attack simulation training.
 - For more information about the availability of Attack simulation training across different Microsoft 365 subscriptions, see [Microsoft Defender for Office 365 service description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-  - [Microsoft Entra RBAC](../../admin/add-users/about-admin-roles.md): You need membership in one of the following roles:
+  - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): You need membership in one of the following roles:
     - **Global Administrator**
     - **Security Administrator**
     - **Attack Simulation Administrators**<sup>\*</sup>: Create and manage all aspects of attack simulation campaigns.
     - **Attack Payload Author**<sup>\*</sup>: Create attack payloads that an admin can initiate later.
 
-    <sup>\*</sup> Adding users to this role in [Email & collaboration RBAC in the Microsoft 365 Defender portal](mdo-portal-permissions.md) is currently unsupported.
+    <sup>\*</sup> Adding users to this role in [Email & collaboration permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md) is currently unsupported.
 
 - There are no corresponding PowerShell cmdlets for Attack simulation training.
 
-- Attack simulation and training related data is stored with other customer data for Microsoft 365 services. For more information, see [Microsoft 365 data locations](../../enterprise/o365-data-locations.md). Attack simulation training is available in the following regions: APC, EUR, and NAM. Countries within these regions where Attack simulation training is available include ARE, AUS, BRA, CAN, CHE, DEU, FRA, GBR, IND, JPN, KOR, LAM, NOR, POL, QAT, SGP, SWE, and ZAF.
+- Attack simulation and training related data is stored with other customer data for Microsoft 365 services. For more information, see [Microsoft 365 data locations](/microsoft-365/enterprise/o365-data-locations). Attack simulation training is available in the following regions: APC, EUR, and NAM. Countries within these regions where Attack simulation training is available include ARE, AUS, BRA, CAN, CHE, DEU, FRA, GBR, IND, JPN, KOR, LAM, NOR, POL, QAT, SGP, SWE, and ZAF.
 
   > [!NOTE]
   > NOR, ZAF, ARE and DEU are the latest additions. All features except reported email telemetry will be available in these regions. We are working to enable the features and will notify our customers as soon as reported email telemetry becomes available.
