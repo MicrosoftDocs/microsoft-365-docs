@@ -35,6 +35,12 @@ Microsoft 365 Business Premium includes two main types of policies to protect yo
 
 - **Firewall policies**, which determine what network traffic is permitted to flow to and from your organization's devices.
 
+Additional policies include:
+
+- **Web content filtering**, which enables your security team to track and regulate access to websites based on content categories (such as adult content, high bandwidth, legal liability, and leisure). For more information, see [Web content filtering in Microsoft Defender for Business](../security/defender-business/mdb-web-content-filtering.md).
+- **Controlled folder access**, which allows only trusted apps to access protected folders on Windows devices. Think of this capability as ransomware protection. For more information, see [Set up or edit your controlled folder access policy in Microsoft Defender for Business](../security/defender-business/mdb-controlled-folder-access.md).
+- **Attack surface reduction rules** that help reduce the places and ways your business might be vulnerable to cyberthreats and attacks. For more information, see [Enable your attack surface reduction rules in Microsoft Defender for Business](../security/defender-business/mdb-asr.md).
+
 These policies are part of Microsoft Defender for Business, included in your Microsoft 365 Business Premium subscription. Information is provided for working with policies in the Microsoft 365 Defender portal or in the Microsoft Intune admin center.
 
 ## Working with device policies in the Microsoft 365 Defender portal
@@ -189,6 +195,6 @@ If you do run into policy conflicts, see [Troubleshooting policies and profiles 
 
 [Best practices for securing Microsoft 365 for business plans](secure-your-business-data.md)
 
-## Next objective
+## Next step
 
 [Set up and manage device groups](m365bp-device-groups-mdb.md).

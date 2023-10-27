@@ -30,7 +30,7 @@ description: "Create a SharePoint communications site for your campaign or busin
 
 # Create a communications site
 
-A great way to communicate priorities, share strategy documents, and highlight upcoming events is to use a communications site in SharePoint, and that's what this mission is all about. Communications sites are for sharing things broadly across your whole business or campaign—it's your internal strategy site and tactical room. 
+A great way to communicate priorities, share strategy documents, and highlight upcoming events is to use a communications site in SharePoint, and that's what this article is all about. Communications sites are for sharing things broadly across your whole business or campaign—it's your internal strategy site and tactical room. 
 
 ## Best practices
 
@@ -70,6 +70,6 @@ Learn all [about Communications sites](https://support.office.com/article/What-i
 
 If you don't see the **+ Create** site link, self-service site creation might not be available in Microsoft 365. To create a team site, contact the person administering Microsoft 365 in your organization. If you're a Microsoft 365 admin, see [Manage site creation in SharePoint Online](/sharepoint/manage-site-creation) to enable self-service site creation for your organization or [Manage sites in the new SharePoint admin center](/sharepoint/manage-sites-in-new-admin-center) to create a site from the <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint admin center</a>.
 
-## Next mission
+## Next step
 
-Congratulations—you've completed the mission! Now, immediately turn your focus toward [protecting the managed devices](m365bp-protect-managed-devices.md) for the entire org!
+[Protect managed devices](m365bp-protect-managed-devices.md) for your organization.

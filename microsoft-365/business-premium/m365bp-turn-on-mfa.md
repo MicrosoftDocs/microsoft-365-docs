@@ -101,6 +101,6 @@ To learn more about Conditional Access, see [What is Conditional Access?](/azure
 
 ---
 
-## Next objective
+## Next step
 
 [Protect your administrator accounts in Microsoft 365 Business Premium](m365bp-protect-admin-accounts.md)
