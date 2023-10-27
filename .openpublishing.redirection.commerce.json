@@ -928,7 +928,7 @@
      {
          "source_path": "microsoft-365/commerce/index2.yml",
          "redirect_url": "/microsoft-365/commerce/index",
-         "redirect_document_id": true
+         "redirect_document_id": false
      }
   ]
 }
