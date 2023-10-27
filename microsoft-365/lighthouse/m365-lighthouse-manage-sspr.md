@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: ragovind
-ms.date: 10/19/2023
+ms.date: 10/27/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -24,9 +24,12 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # Manage self-service password reset in Microsoft 365 Lighthouse
 
-Microsoft 365 Lighthouse lets Managed Service Providers (MSPs) manage Microsoft Entra self-service password reset (SSPR). SSPR gives users the ability to change or reset their password with no administrator or help desk involvement. If a user's account is locked or they forget their password, they can follow prompts to unblock themselves and get back to work. This ability reduces help desk calls and loss of productivity when a user can't sign in to their device or an application. 
+Microsoft 365 Lighthouse lets Managed Service Providers (MSPs) manage Microsoft Entra self-service password reset (SSPR). SSPR gives users the ability to change or reset their password with no administrator or help desk involvement. If a user's account is locked or they forget their password, they can follow prompts to unblock themselves and get back to work. This ability reduces help desk calls and loss of productivity when a user can't sign in to their device or an application.
 
-The Password Reset page provides detailed information on the status of SSPR enablement across your customer tenants and helps you ensure users are enabled and registered.  
+The Password Reset page provides detailed information on the status of SSPR enablement across your customer tenants and helps you ensure users are enabled and registered. 
+
+> [!NOTE]
+> This page provides insights around tenants for which data availability is limited.
 
 ## Before you begin
 
@@ -38,7 +41,7 @@ The following condition must be met before a tenant appears in the list:
 
 - In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com/), select **Users** > **Password reset**.
 
-The SSPR tenant status module reports enablement status across all customer tenants that have an Azure AD premium license, reporting how many tenants are: 
+The SSPR tenant status module reports enablement status across all customer tenants that have an Azure AD premium license, reporting how many tenants are:
 
 - Not enabled for SSPR
 - Enabled for some users
@@ -50,7 +53,7 @@ The SSPR tenant status module reports enablement status across all customer tena
 
 The Password reset page provides an overview of the tenants that have enabled SSPR through the recommended settings, the number of users who haven't registered for SSPR, and a detailed breakdown by tenant of the SSPR deployment progress across the organizations that you manage.
 
-## View password reset details 
+## View password reset details
 
 The password reset details table provides a detailed view of SSPR enabled and registration for all customer tenants. The table can be exported, refreshed, searched, and filtered by SSPR tenant status, SSPR availability status, and user registration progress. The tenant details reported in the table include:
 
