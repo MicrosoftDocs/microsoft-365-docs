@@ -1,5 +1,5 @@
 ---
-title: "Secure managed devices with Microsoft 365 Business Premium"
+title: "Secure managed devices"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -8,7 +8,7 @@ manager: dansimp
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
-ms.date: 05/02/2023
+ms.date: 10/27/2023
 ms.localizationpriority: medium
 ms.collection: 
 - M365-Campaigns
@@ -23,7 +23,7 @@ search.appverid:
 description: "Learn how to secure managed devices from security threats and cyberattacks. Implement cybersecurity defenses and endpoint protection through enrolling and onboarding all devices. Find out how to set up device policies and manage device groups."
 ---
 
-# Secure managed devices with Microsoft 365 Business Premium
+# Secure managed devices
 
 :::image type="content" source="media/mission6.png" alt-text="Diagram with Set Up and Secure Managed Devices highlighted.":::
 
