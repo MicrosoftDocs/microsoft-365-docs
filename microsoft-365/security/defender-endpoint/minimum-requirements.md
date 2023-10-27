@@ -4,6 +4,7 @@ description: Understand the licensing requirements and requirements for onboardi
 ms.service: microsoft-365-security
 ms.author: macapara
 author: mjcaparas
+ms.reviewer: pahuijbr
 ms.localizationpriority: medium
 ms.date: 10/27/2023
 manager: dansimp
