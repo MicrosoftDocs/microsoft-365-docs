@@ -34,14 +34,13 @@ Options 2: Run MDE Client Analyzer locally
 - Download the [MDE Client Analyzer tool](https://aka.ms/mdatpanalyzer) or [Beta MDE Client Analyzer tool](https://aka.ms/BetaMDEAnalyzer)to the Windows machine you need to investigate.
 - ![Downloads dialog box](media/run-analyzer-windows/image.png)
 
-Note: The file is downloaded to the “Downloads” folder (default).
+The file is downloaded to the “Downloads” folder (default).
 - ![File has downloaded](media/run-analyzer-windows/image1.png)
 
-Click on “Show in folder”
+Select **Show in folder**
 - ![Properties highlighted](media/run-analyzer-windowsimage2.png)
 
-Right-click on “MDEClientAnalyzer.zip”
-Click on Properties
+Right-click on **MDEClientAnalyzer.zip**, and then select **Properties**.
 - ![Extract all menu option](media/run-analyzer-windowsimage3.png)
 
 Extract the contents of MDEClientAnalyzer.zip on the machine.
