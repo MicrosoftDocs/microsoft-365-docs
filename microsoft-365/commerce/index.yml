@@ -20,9 +20,9 @@ metadata:
   ms.author: cmcatee #Required; microsoft alias of author; optional team alias.
   manager: scotv
   audience: Admin
-  ms.date: 03/01/2023 #Required; mm/dd/yyyy format.
   ms.localizationpriority: medium
   search.appverid: MET150
+  ms.date: 10/27/2023
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -34,15 +34,20 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: View your bill or invoice
+          - text: View your invoice
             url: billing-and-payments/view-your-bill-or-invoice.md
           - text: Manage payment methods
             url: billing-and-payments/manage-payment-methods.md
-          - text: Pay for your subscription
-            url: billing-and-payments/pay-for-your-subscription.md
-          - text: Understand your bill or invoice
+          - text: Understand your invoice (MCA)
+            url: billing-and-payments/understand-your-invoice.md           
+          - text: Understand your invoice (MOSA)
             url: billing-and-payments/understand-your-invoice2.md
-
+      - linkListType: overview
+        links:
+          - text: Introducing the new Microsoft billing experience
+            url: billing-experience-overview.md
+          - text: Payment options for your subscription
+            url: billing-and-payments/pay-for-your-subscription.md
       - linkListType: video
         links:
           - text: Understand your bill or invoice
@@ -57,7 +62,7 @@ landingContent:
         links:
           - text: Buy or remove licenses
             url: licenses/buy-licenses.md
-          - text: Assign licenses to users
+          - text: Assign or unassign licenses for users
             url: ../admin/manage/assign-licenses-to-users.md
           - text: Download perpetual software and product license key
             url: ../admin/setup/download-software-licenses-csp.md
