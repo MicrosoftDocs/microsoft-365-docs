@@ -3,13 +3,11 @@ title:  Run the client analyzer on Windows
 description: Learn how to run the Microsoft Defender for Endpoint Client Analyzer on Windows.
 keywords: client analyzer, troubleshoot sensor, analyzer, mdeanalyzer, windows
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
+ms.reviewer: younghree
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
