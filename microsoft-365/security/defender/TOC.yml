@@ -610,8 +610,6 @@
             href: ../intelligence/cybersecurity-industry-partners.md
           - name: Microsoft virus initiative
             href: ../intelligence/virus-initiative-criteria.md
-          - name: Coordinated malware eradication
-            href: ../intelligence/coordinated-malware-eradication.md
           - name: Software developer FAQ
             href: ../intelligence/developer-faq.yml
     - name: Microsoft 365 Defender docs
