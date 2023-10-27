@@ -27,35 +27,42 @@ ms.date: 10/27/2023
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Option 1: Run the collect the MDE analyzer support logs remotely using [Live Response](/microsoft-365/security/defender-endpoint/troubleshoot-collect-support-log).
+## Option 1: Live response
 
-Options 2: Run MDE Client Analyzer locally
+You can collect the Defender for Endpoint analyzer support logs remotely using [Live Response](/microsoft-365/security/defender-endpoint/troubleshoot-collect-support-log).
 
-- Download the [MDE Client Analyzer tool](https://aka.ms/mdatpanalyzer) or [Beta MDE Client Analyzer tool](https://aka.ms/BetaMDEAnalyzer)to the Windows machine you need to investigate.
-- ![Downloads dialog box](media/run-analyzer-windows/image.png)
+## Option 2: Run MDE Client Analyzer locally
 
-The file is downloaded to the “Downloads” folder (default).
-- ![File has downloaded](media/run-analyzer-windows/image1.png)
+1. Download the [MDE Client Analyzer tool](https://aka.ms/mdatpanalyzer) or [Beta MDE Client Analyzer tool](https://aka.ms/BetaMDEAnalyzer)to the Windows machine you need to investigate.
 
-Select **Show in folder**
-- ![Properties highlighted](media/run-analyzer-windows/image2.png)
+   ![Downloads dialog box](media/run-analyzer-windows/image.png)
 
-Right-click on **MDEClientAnalyzer.zip**, and then select **Properties**.
-- ![Extract all menu option](media/run-analyzer-windows/image3.png)
+   The file is downloaded to the “Downloads” folder (default).
 
-Extract the contents of MDEClientAnalyzer.zip on the machine.
+   ![File has downloaded](media/run-analyzer-windows/image1.png)
 
-- Open an elevated command line:
+2. Select **Show in folder**.
+
+   ![Properties highlighted](media/run-analyzer-windows/image2.png)
+
+3. Right-click on **MDEClientAnalyzer.zip**, and then select **Properties**.
+
+   ![Extract all menu option](media/run-analyzer-windows/image3.png)
+
+4. Extract the contents of MDEClientAnalyzer.zip on the machine.
+
+5. Open an elevated command line as follows:
+
    1. Go to **Start** and type **cmd**.
+   1. Right-click **Command prompt** and select **Run as administrator**.
 
-      1. Right-click **Command prompt** and select **Run as administrator**.
+6. Type the following command and then press **Enter**:
 
-- Enter the following command and press **Enter**:
    ```dos
    HardDrivePath\MDEClientAnalyzer.cmd
    ```
 
-**Replace HardDrivePath with the path to which the tool was extracted, for example:**
+   Replace HardDrivePath with the path to which the tool was extracted, for example:
 
    ```dos
    C:\Work\tools\MDEClientAnalyzer\MDEClientAnalyzer.cmd
@@ -68,8 +75,9 @@ In addition to the previous procedure, you can also [collect the analyzer suppor
 >
 > On Windows 8.1, Windows Server 2016 or any previous OS edition where Microsoft Monitoring Agent (MMA) is used for onboarding, the client analyzer script calls into an executable file called `MDEClientAnalyzerPreviousVersion.exe` to run connectivity tests for Command and Control (CnC) URLs while also calling into Microsoft Monitoring Agent connectivity tool `TestCloudConnection.exe` for Cyber Data channel URLs.
 
-All the PowerShell scripts and modules included with the analyzer are Microsoft-signed.
-If files have been modified in any way, then the analyzer is expected to exit with the following error:
+## Important points to keep in mind
+
+All the PowerShell scripts and modules included with the analyzer are Microsoft-signed. If files have been modified in any way, then the analyzer is expected to exit with the following error:
 
 :::image type="content" source="images/sigerror.png" alt-text="The client analyzer error" lightbox="images/sigerror.png":::
 
