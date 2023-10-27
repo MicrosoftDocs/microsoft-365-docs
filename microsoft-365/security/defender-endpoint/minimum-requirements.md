@@ -4,8 +4,9 @@ description: Understand the licensing requirements and requirements for onboardi
 ms.service: microsoft-365-security
 ms.author: macapara
 author: mjcaparas
+ms.reviewer: pahuijbr
 ms.localizationpriority: medium
-ms.date: 10/11/2023
+ms.date: 10/27/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -72,7 +73,7 @@ Devices on your network must be running one of these editions. New features or c
 - Windows 11 Pro Education
 - Windows 10 Enterprise
 - [Windows 10 Enterprise LTSC 2016 (or later)](/windows/whats-new/ltsc/)
-- Windows 10 Enterprise IoT
+- Windows 10 Enterprise IoT (including LTSC)
 - Windows 10 Education
 - Windows 10 Pro
 - Windows 10 Pro Education
@@ -87,13 +88,15 @@ Devices on your network must be running one of these editions. New features or c
 - Azure Virtual Desktop
 - Windows 365 running one of the above operating systems/versions
 
-The following operating systems require the use of the [Log Analytics](/azure/azure-monitor/agents/log-analytics-agent)/Microsoft Monitoring Agent (MMA) to work with Defender for Endpoint:
+The following operating systems require the use of the [Log Analytics](/azure/azure-monitor/agents/log-analytics-agent) / [Microsoft Monitoring Agent](update-agent-mma-windows.md) (MMA) to work with Defender for Endpoint:
 
 - Windows 8.1 Enterprise
 - Windows 8.1 Pro
 - Windows 7 SP1 Enterprise
 - Windows 7 SP1 Pro
 - Windows Server 2008 R2 SP1
+
+To add antimalware protection to these older operating systems, you can use [System Center Endpoint Protection](onboard-downlevel.md#configure-and-update-system-center-endpoint-protection-clients). 
 
 ### Other supported operating systems
 
@@ -104,7 +107,7 @@ The following operating systems require the use of the [Log Analytics](/azure/az
 
 > [!NOTE]
 > - You'll need to confirm the Linux distributions and versions of Android, iOS, and macOS are compatible with Defender for Endpoint.
-> - While Windows 10 IoT Enterprise is a supported OS in Microsoft Defender for Endpoint and enables OEMs/ODMs to distribute it as part of their product or solution, customers should follow the OEM/ODM's guidance around host-based installed software and supportability. And, it requires the use of the [Log Analytics](/azure/azure-monitor/agents/log-analytics-agent)/Microsoft Monitoring Agent (MMA).
+> - While Windows 10 IoT Enterprise is a supported OS in Microsoft Defender for Endpoint and enables OEMs/ODMs to distribute it as part of their product or solution, customers should follow the OEM/ODM's guidance around host-based installed software and supportability. 
 > - Endpoints running mobile versions of Windows (such as Windows CE and Windows 10 Mobile) aren't supported.
 > - Virtual Machines running Windows 10 Enterprise 2016 LTSB can encounter performance issues when used on non-Microsoft virtualization platforms.
 > - For virtual environments, we recommend using Windows 10 Enterprise LTSC 2019 or later.
