@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: algreer
-ms.date: 06/21/2023
+ms.date: 10/27/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -28,10 +28,12 @@ Microsoft 365 Lighthouse brings the features of Microsoft Endpoint Analytics for
 
 The Device health page provides a subset of device analytics offered through Endpoint Analytics, specifically device performance and startup processes. Example data includes device health status, total restarts, total blue screens, top processes, and hardware specifications. The data only reflects fully managed Windows devices. Data on Bring Your Own Devices isn't supported.
 
+> [!NOTE]
+> This page provides the number of tenants for which data is unavailable because they do not have the required licenses.
+
 ## Requirements
 
 Devices must be enrolled in Microsoft Intune. For more information on enrollment, see [What is Endpoint analytics?](/mem/analytics/overview) Once a device is enrolled, the Device health page automatically populates with data. It may take up to 48 hours to see updates.
-
 
 > [!NOTE]
 > If data doesn't show up for a specific tenant, verify that the policy is enabled. From the tenant's deployment plan, under **Set up device enrollment**, verify that **Device health monitoring policy** is compliant. If not compliant, deploy the policy.
@@ -82,8 +84,8 @@ The Devices tab also includes the following options:
 
 :::image type="content" source="../media/m365-lighthouse-device-health/device-health-devices-tab.png" alt-text="Screenshot of Device health tab" lightbox="../media/m365-lighthouse-device-health/device-health-devices-tab.png":::
 
-
 ## Related content
+
 [What is Endpoint analytics?](/mem/analytics/overview) (article)\
 [Scores, baselines, and insights in Endpoint Analytics](/mem/analytics/scores) (article)\
 [Overview of the Apps page in Microsoft 365 Lighthouse](m365-lighthouse-apps-page-overview.md) (article)
