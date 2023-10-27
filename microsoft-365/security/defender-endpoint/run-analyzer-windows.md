@@ -55,7 +55,7 @@ Extract the contents of MDEClientAnalyzer.zip on the machine.
    HardDrivePath\MDEClientAnalyzer.cmd
    ```
 
-**Replace HardDrivePath with the path to which the tool was extracted to, for example:**
+**Replace HardDrivePath with the path to which the tool was extracted, for example:**
 
    ```dos
    C:\Work\tools\MDEClientAnalyzer\MDEClientAnalyzer.cmd
@@ -91,7 +91,7 @@ Example contents after MDEClientAnalyzer.ps1 is modified:
 > - The start state of the EDR sensor (Sense is stopped if machine is not yet onboarded).
 > - If an advanced troubleshooting parameter was used with the analyzer command.
 
-By default, the unpacked MDEClientAnalyzerResult.zip file will contain the following items.
+By default, the unpacked MDEClientAnalyzerResult.zip file contains the following items.
 
 - MDEClientAnalyzer.htm
 
