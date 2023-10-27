@@ -50,7 +50,7 @@ Controlled folder access applies to many system folders and default locations, i
 
 Adding other folders to controlled folder access can be helpful for cases when you don't store files in the default Windows libraries, or you've changed the default location of your libraries.
 
-You can also specify network shares and mapped drives. Environment variables are supported, however wildcards are not.
+You can also specify network shares and mapped drives. Environment variables are supported; however, wildcards are not.
 
 You can use the Windows Security app, Group Policy, PowerShell cmdlets, or mobile device management configuration service providers to add and remove protected folders.
 
