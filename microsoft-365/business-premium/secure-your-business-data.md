@@ -8,7 +8,7 @@ manager: dansimp
 audience: Admin
 ms.topic: reference
 ms.service: microsoft-365-business
-ms.date: 07/10/2023
+ms.date: 10/26/2023
 ms.localizationpriority: medium
 ms.collection:
 - highpri
@@ -46,7 +46,7 @@ The following table summarizes how to secure your data using Microsoft 365 for b
 
 | Best practices and capabilities | Microsoft 365 Business Premium | Microsoft 365 Business Standard | Microsoft 365 Business Basic |
 |---|---|---|---|
-| **1. Use multi-factor authentication** (MFA), also known as two-step verification. See [Turn on multi-factor authentication](m365bp-turn-on-mfa.md). | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: |  :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: |
+| **1. Use multi-factor authentication** (MFA), also known as two-step verification. See [Turn on multifactor authentication](m365bp-turn-on-mfa.md). | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: |  :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: |
 | - [Security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults#enabling-security-defaults) (suitable for most organizations) | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: |
 | - [Conditional Access](m365bp-turn-on-mfa.md) (for more stringent requirements)  | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: | | |
 | **2. Set up and protect your administrator accounts**. See [Protect your admin accounts](m365bp-protect-admin-accounts.md). | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included"::: | :::image type="content" source="../media/d238e041-6854-4a78-9141-049224df0795.png" alt-text="Included":::|
@@ -89,7 +89,7 @@ The following table summarizes how to secure your data using Microsoft 365 for b
 
 - [Microsoft 365 Business Premium—cybersecurity for small business](/microsoft-365/business-premium/)
 
-- For more details about Defender for Business and Microsoft 365 Business Premium, see [Compare security features in Microsoft 365 plans for small and medium-sized businesses](../security/defender-business/compare-mdb-m365-plans.md)
+- For more information about Defender for Business and Microsoft 365 Business Premium, see [Compare security features in Microsoft 365 plans for small and medium-sized businesses](../security/defender-business/compare-mdb-m365-plans.md)
 
 - [Compare Microsoft endpoint security plans](../security/defender-endpoint/defender-endpoint-plan-1-2.md) (for securing and managing devices)
 
