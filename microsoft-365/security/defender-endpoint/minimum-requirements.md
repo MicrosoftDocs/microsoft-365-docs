@@ -87,7 +87,7 @@ Devices on your network must be running one of these editions. New features or c
 - Azure Virtual Desktop
 - Windows 365 running one of the above operating systems/versions
 
-The following operating systems require the use of the [Log Analytics](/azure/azure-monitor/agents/log-analytics-agent)/Microsoft Monitoring Agent (MMA) to work with Defender for Endpoint:
+The following operating systems require the use of the [Log Analytics](/azure/azure-monitor/agents/log-analytics-agent) / [Microsoft Monitoring Agent](update-agent-mma-windows.md) (MMA) to work with Defender for Endpoint:
 
 - Windows 8.1 Enterprise
 - Windows 8.1 Pro
