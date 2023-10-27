@@ -98,7 +98,7 @@ These tasks are included in the setup phase for Defender for Endpoint. See [Set 
 
 ## Assign roles and permissions
 
-In order to access the Microsoft 365 Defender portal, configure settings for Defender for Endpoint, or perform tasks, such as taking response actions on detected threats, appropriate permissions must be assigned. Defender for Endpoint uses [built-in roles within Azure Active Directory](/azure/active-directory/roles/permissions-reference). 
+In order to access the Microsoft 365 Defender portal, configure settings for Defender for Endpoint, or perform tasks, such as taking response actions on detected threats, appropriate permissions must be assigned. Defender for Endpoint uses [built-in roles within Microsoft Entra ID](/azure/active-directory/roles/permissions-reference). 
 
 Microsoft recommends assigning users only the level of permission they need to perform their tasks. You can assign permissions by using basic permissions management, or by using [role-based access control](rbac.md) (RBAC). 
 
@@ -117,7 +117,7 @@ The following table describes key roles to consider for Defender for Endpoint in
 
 
 > [!TIP]
-> To learn more about roles in Azure Active Directory, see [Assign administrator and non-administrator roles to users with Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal). And, more information about roles for Defender for Endpoint, see [Role-based access control](prepare-deployment.md#role-based-access-control).
+> To learn more about roles in Microsoft Entra ID, see [Assign administrator and non-administrator roles to users with Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal). And, more information about roles for Defender for Endpoint, see [Role-based access control](prepare-deployment.md#role-based-access-control).
 
 ## Onboard to Defender for Endpoint
 
@@ -150,7 +150,7 @@ To configure your next-generation protection in Intune, follow these steps:
    - [Settings for Windows 10 Microsoft Defender Antivirus policy in Microsoft Intune](/mem/intune/protect/antivirus-microsoft-defender-settings-windows)
    - [Configure Defender for Endpoint on iOS features](ios-configure-features.md)
 
-4. When you are finished specifying your settings, choose **Review + save**.
+4. When you're finished specifying your settings, choose **Review + save**.
 
 ## Configure your attack surface reduction capabilities
 
@@ -158,7 +158,7 @@ Attack surface reduction is all about reducing the places and ways your organiza
 
 | Feature/capability | Description |
 |:---|:---|
-| [Attack surface reduction rules](#attack-surface-reduction-rules) | Configure attack surface reduction rules to constrain software-based risky behaviors and help keep your organization safe. Attack surface reduction rules target certain software behaviors, such as<br/>- Launching executable files and scripts that attempt to download or run files <br/>- Running obfuscated or otherwise suspicious scripts <br/>- Performing behaviors that apps don't usually initiate during normal day-to-day work <br/><br/>Such software behaviors are sometimes seen in legitimate applications. However, these behaviors are often considered risky because they are commonly abused by attackers through malware.  |
+| [Attack surface reduction rules](#attack-surface-reduction-rules) | Configure attack surface reduction rules to constrain software-based risky behaviors and help keep your organization safe. Attack surface reduction rules target certain software behaviors, such as<br/>- Launching executable files and scripts that attempt to download or run files <br/>- Running obfuscated or otherwise suspicious scripts <br/>- Performing behaviors that apps don't usually initiate during normal day-to-day work <br/><br/>Such software behaviors are sometimes seen in legitimate applications. However, these behaviors are often considered risky because they're commonly abused by attackers through malware.  |
 | [Ransomware mitigation](#ransomware-mitigation) | Set up ransomware mitigation by configuring controlled folder access, which helps protect your organization's valuable data from malicious apps and threats, such as ransomware. | 
 | [Device control](#device-control) | Configure device control settings for your organization to allow or block removable devices (such as USB drives). | 
 | [Network protection](#network-protection) | Set up network protection to prevent people in your organization from using applications that access dangerous domains or malicious content on the Internet. |
@@ -198,7 +198,7 @@ Attack surface reduction rules are available on devices running Windows. We reco
 > To learn more about attack surface reduction rules, see the following resources:
 > - [Use attack surface reduction rules to prevent malware infection](attack-surface-reduction.md)
 > - [View the list of attack surface reduction rules](attack-surface-reduction-rules-reference.md)
-> - [Attack surface reduction rules deployment Step 3: Implement ASR rules](attack-surface-reduction-rules-deployment-implement.md)
+> - [Attack surface reduction rules deployment Step 3: Implement attack surface reduction rules](attack-surface-reduction-rules-deployment-implement.md)
 
 ### Ransomware mitigation
 
@@ -206,7 +206,7 @@ You get ransomware mitigation through [controlled folder access](controlled-fold
 
 We recommend using Intune to configure controlled folder access.
 
-:::image type="content" source="../../media/mde-p1/mem-asrpolicies.png" alt-text="ASR policies in the Intune portal" lightbox="../../media/mde-p1/mem-asrpolicies.png":::
+:::image type="content" source="../../media/mde-p1/mem-asrpolicies.png" alt-text="attack surface reduction policies in the Intune portal" lightbox="../../media/mde-p1/mem-asrpolicies.png":::
 
 1. Go to the Intune admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) and sign in. 
 

@@ -11,6 +11,7 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
+- mde-linux
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
@@ -33,7 +34,7 @@ ms.date: 09/25/2023
 Microsoft regularly publishes software updates to improve performance, security, and to deliver new features.
 
 > [!WARNING]
-> Each version of Defender for Endpoint on Linux is set to expire automatically. While expired versions continue to receive security intelligence updates, install the latest version to get all available fixes and enhancements. <br>
+> Each version of Defender for Endpoint on Linux is set to expire automatically after 9 months. While expired versions continue to receive security intelligence updates, install the latest version to get all available fixes and enhancements. <br>
 >To check the expiration date, run the following command:
 > ```bash
 > mdatp health --field product_expiration

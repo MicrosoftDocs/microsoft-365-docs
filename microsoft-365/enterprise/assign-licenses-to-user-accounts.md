@@ -45,11 +45,11 @@ To assign Microsoft 365 licenses to individual user accounts, you can use:
 
 - [The Microsoft 365 admin center](../admin/manage/assign-licenses-to-users.md)
 - [PowerShell](assign-licenses-to-user-accounts-with-microsoft-365-powershell.md)
-- The Azure AD admin center
+- The Microsoft Entra admin center
 
 ## Group-based licensing
 
-You can configure security groups in Azure AD to automatically assign licenses from a set of subscriptions to all the members of the group. This is known as *group-based licensing*. If a user account is added to or removed from the group, the licenses for the group's subscriptions will be automatically assigned or unassigned from the user account.
+You can configure security groups in Microsoft Entra ID to automatically assign licenses from a set of subscriptions to all the members of the group. This is known as *group-based licensing*. If a user account is added to or removed from the group, the licenses for the group's subscriptions will be automatically assigned or unassigned from the user account.
 
 Make sure you have enough licenses for all the group members. If you run out of licenses, new users won't be assigned licenses until licenses become available.
 
@@ -57,7 +57,7 @@ Make sure you have enough licenses for all the group members. If you run out of 
 >You should not configure group-based licensing for groups that contain Azure business to business (B2B) accounts.
 >
 
-For more information, see [group-based licensing in Azure AD](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
+For more information, see [group-based licensing in Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
 
 ## Next steps
 

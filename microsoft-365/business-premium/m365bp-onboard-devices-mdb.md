@@ -7,8 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: how-to
-ms.service: microsoft-365-security
-ms.subservice: m365bp
+ms.service: microsoft-365-business
 ms.date: 07/19/2023
 ms.localizationpriority: medium
 ms.reviewer: efratka
@@ -57,7 +56,7 @@ To learn more about automatic onboarding, see [Use the wizard to set up Microsof
 
 ## Use a local script to onboard Windows and Mac devices to Defender for Business
 
-You can use a local script to onboard Windows and Mac devices. When you run the onboarding script on a device, it creates a trust with Azure Active Directory (if that trust doesn't already exist), enrolls the device in Intune (if it isn't already enrolled), and then onboards the device to Defender for Business. You can onboard up to 10 devices at a time using the local script.
+You can use a local script to onboard Windows and Mac devices. When you run the onboarding script on a device, it creates a trust with Microsoft Entra ID (if that trust doesn't already exist), enrolls the device in Intune (if it isn't already enrolled), and then onboards the device to Defender for Business. You can onboard up to 10 devices at a time using the local script.
 
 See [Onboard devices to Microsoft Defender for Business](../security/defender-business/mdb-onboard-devices.md) for detailed instructions.
 
@@ -136,6 +135,6 @@ If you want to offboard a device, use one of the following procedures:
 > [!IMPORTANT]
 > Offboarding a device causes the devices to stop sending data to Defender for Business. However, data received prior to offboarding is retained for up to six (6) months.
 
-## Next objective
+## Next step
 
 [Set up protection for your Windows devices](m365bp-protection-settings-for-windows-10-devices.md).

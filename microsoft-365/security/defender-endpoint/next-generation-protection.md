@@ -13,6 +13,7 @@ ms.subservice: mde
 ms.collection: 
 - m365-security
 - tier1
+- mde-ngp
 search.appverid: met150
 ms.date: 07/05/2023
 ---

@@ -23,7 +23,7 @@ ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.date: 6/22/2023
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview" target="_blank">Microsoft Defender for Office 365 plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
 ---
 
 # Attack simulation training deployment considerations and FAQ
@@ -71,7 +71,7 @@ It's possible that the number of users who actually receive the simulation email
 
 - Invalid recipient email addresses.
 - Guest users.
-- Users that are no longer active in Azure Active Directory (Azure AD).
+- Users that are no longer active in Microsoft Entra ID.
 
 If you use distribution groups or mail-enabled security groups to target users, you can use the [Get-DistributionGroupMember](/powershell/module/exchange/get-distributiongroupmember) cmdlet in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) to view and validate distribution group members.
 
@@ -154,9 +154,9 @@ A: Several options are available to target users:
 - Include all users (currently available to organizations with less than 40,000 users).
 - Choose specific users.
 - Select users from a CSV file (one email address per line).
-- Azure AD group-based targeting.
+- Microsoft Entra group-based targeting.
 
-We've found that campaigns where the targeted users are identified by Azure AD groups are easier to manage.
+We've found that campaigns where the targeted users are identified by Microsoft Entra groups are easier to manage.
 
 ### Q: Are there any limits in targeting users while importing from a CSV or adding users?
 
@@ -164,7 +164,7 @@ A: The limit for importing recipients from a CSV file or adding individual recip
 
 A recipient can be an individual user or a group. A group might contain hundreds or thousands of recipients, so an actual limit isn't placed on the number of individual users.
 
-Managing a large CSV file or adding many individual recipients can be cumbersome. Using Azure AD groups simplify the overall management of the simulation.
+Managing a large CSV file or adding many individual recipients can be cumbersome. Using Microsoft Entra groups simplify the overall management of the simulation.
 
 ### Q: Does Microsoft provide payloads in other languages?
 

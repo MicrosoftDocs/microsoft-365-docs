@@ -11,6 +11,7 @@ ms.localizationpriority: medium
 ms.collection: 
 - Tier1
 - scotvorg
+- essentials-manage
 description: "Use this page to create your staff list and to manage staff member details such as name, phone number, and email address."
 ---
 

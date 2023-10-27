@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: crimora
-ms.date: 08/24/2023
+ms.date: 10/23/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -31,6 +31,14 @@ We're continuously adding new features to [Microsoft 365 Lighthouse](m365-lighth
 >
 > To see which new features are currently available in your partner tenant, go to the **Home** page of Microsoft 365 Lighthouse, and then either select the **What's new** link in the upper-right corner of the page or select **What's new** on the **What's new & learning resources** card.
 
+## September 2023
+
+### Windows event logs
+
+The **Windows event logs** page in Microsoft 365 Lighthouse uses artificial intelligence (AI) to generate suggestions for mitigating issues found in Windows event logs. The "Collect Windows event logs" baseline enables collection of managed device event logs. After records have been ingested, you can view them by selecting **Devices** > **Windows event logs** in the left navigation pane in Lighthouse. To see additional details, select any log entry.
+
+[Go to the Windows event logs page now](https://lighthouse.microsoft.com/view/Microsoft_Intune_MTM/WindowsEventLogs.ReactView)
+
 ## August 2023
 
 ### Microsoft Secure Score
@@ -45,7 +53,7 @@ Microsoft 365 Lighthouse now provides a consolidated view of prioritized alerts 
 
 Lighthouse also now supports the ability to configure customized push-alerts to allow integration with your existing ticketing and support systems.
 
-To access this functionality, in the left navigation pane in Lighthouse, select **Alerts**.
+To access this functionality, in the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Alerts**.
 
 To learn more, see [Overview of the Alerts page in Microsoft 365 Lighthouse](m365-lighthouse-alerts-overview.md).
 

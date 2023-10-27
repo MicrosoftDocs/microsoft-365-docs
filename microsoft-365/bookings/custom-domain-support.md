@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ms.collection:
 - Tier1
 - scotvorg
-ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
+- essentials-manage
 description: "Learn how to configure custom domain support in Microsoft Bookings."
 ---
 
@@ -46,19 +46,19 @@ You'll need to run the following commands using Exchange Online PowerShell.
 
 1. Check the current default domain using the command below:
 
-```PowerShell
+   ```PowerShell
    Get-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default | Fl BookingsMailboxDomain
-```
+   ```
 
 5. Change current default domain to new domain.
 
-```PowerShell
+   ```PowerShell
    Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -BookingsMailboxDomain "<newdomain>"
-```
+   ```
 
 This would change the default policy of all users and allow them to create a booking calendar with the new domain.
 
->[!NOTE]
+> [!NOTE]
 > The OWA Mailbox policy can only be assigned by an admin account.
 
 ## Configure custom domain for specific users
@@ -67,24 +67,24 @@ To configure a custom domain for a specific user, follow the steps below after j
 
 1. Create a new OWA mailbox policy.
 
-```PowerShell
+   ```PowerShell
    New-OwaMailboxPolicy -Name “<custom-policy-name>”
-```
+   ```
 
-For more information, see [New-OwaMailboxPolicy](/powershell/module/exchange/new-owamailboxpolicy?view=exchange-ps0&preserve-view=true).
+   For more information, see [New-OwaMailboxPolicy](/powershell/module/exchange/new-owamailboxpolicy?view=exchange-ps0&preserve-view=true).
 
 2. Configure the policy with a custom domain.
 
-```PowerShell
+   ```PowerShell
    Set-OwaMailboxPolicy -Identity “<custom-policy-name>” -BookingsMailboxDomain “<Custom-domain-name>"
-```
+   ```
 
 3. Set the new policy to specific users in the organization.
 
-```PowerShell
+   ```PowerShell
    Set-CASMailbox -Identity <User-email-address>-OwaMailboxPolicy “<custom-policy-name>”
-```
+   ```
 
-For more information, see [Set-CASMailbox](/powershell/module/exchange/set-casmailbox?view=exchange-ps&preserve-view=true).
+   For more information, see [Set-CASMailbox](/powershell/module/exchange/set-casmailbox?view=exchange-ps&preserve-view=true).
 
 When users with the custom OWA policy create a Booking calendar, it will be created with the custom domain, and not the default domain.

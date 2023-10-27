@@ -55,7 +55,7 @@ The **OneDrive for Business usage** report can be viewed for trends over the las
 |Item|Description|
 |:-----|:-----|
 |**Metric**|**Definition**|
-|URL  <br/> |The web address for the user's OneDrive. <br/> |
+|URL  <br/> |The web address for the user's OneDrive. Note: URL will be empty temporarily. <br/> |
 |Deleted  <br/> |The deletion status of the OneDrive. It takes at least 7 days for accounts to be marked as deleted.  <br/> |
 |Owner  <br/> |The username of the primary administrator of the OneDrive.   <br/> |
 |Owner principal name  <br/> |The email address of the owner of the OneDrive. <br/> |
@@ -63,6 +63,7 @@ The **OneDrive for Business usage** report can be viewed for trends over the las
 |Files  <br/> |The number of files in the OneDrive. <br/>|
 |Active files  <br/> | The number of active files within the time period.<br/> NOTE: If files were removed during the specified time period for the report, the number of active files shown in the report may be larger than the current number of files in the OneDrive. >  Deleted users will continue to appear in reports for 180 days.  <br/> |
 |Storage used (MB)  <br/> |The amount of storage the OneDrive uses in MB. |
+| Site ID <br/> | The site ID of the site. |
 |||
    
 > [!NOTE]

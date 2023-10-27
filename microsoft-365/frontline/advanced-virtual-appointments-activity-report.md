@@ -1,7 +1,7 @@
 ---
 title: Microsoft Teams Advanced Virtual Appointments activity report
 author: lana-chin
-ms.author: heidip
+ms.author: v-chinlana
 manager: serdars
 audience: Admin
 ms.topic: article

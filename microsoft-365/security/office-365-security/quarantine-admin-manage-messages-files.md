@@ -22,7 +22,7 @@ ms.service: microsoft-365-security
 ms.date: 9/13/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
 ---
 
 # Manage quarantined messages and files as an admin
@@ -51,15 +51,14 @@ Watch this short video to learn how to manage quarantined messages as an admin.
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-  - [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo):
-    - _Take action on quarantined messages for all users_: Membership in the **Organization Management**, **Security Administrator**, or **Quarantine Administrator** role groups.
-    - _Submit messages from quarantine to Microsoft_:  Membership in the **Security Administrator** role group.
-    - _Read-only access to quarantined messages for all users_: Membership in the **Global Reader**, **Security Reader**, or **View-Only Organization Management** role groups.
-  - [Email & collaboration RBAC in the Microsoft 365 Defender portal](mdo-portal-permissions.md): Membership in the **Quarantine Administrator** role group. To do quarantine procedures in Exchange Online PowerShell, you also need membership in the **Hygiene Management** role group in Exchange Online RBAC.
-  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership these roles gives users the required permissions _and_ permissions for other features in Microsoft 365:
+  - [Email & collaboration RBAC in the Microsoft 365 Defender portal](mdo-portal-permissions.md): Membership in the **Global Administrator**, **Security Administrator**, or **Quarantine Administrator** role group.
+  - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership these roles gives users the required permissions _and_ permissions for other features in Microsoft 365:
     - _Take action on quarantined messages for all users_: Membership in the **Global Administrator** or **Security Administrator** roles.
     - _Submit messages from quarantine to Microsoft_:  Membership in the **Security Administrator** role.
     - _Read-only access to quarantined messages for all users_: Membership in the **Global Reader** or **Security Reader** roles.
+
+  > [!TIP]
+  > The ability to manage quarantined messages using [Exchange Online permissions](/exchange/permissions-exo/permissions-exo) ended in February 2023 per MC447339.
 
 - Quarantined messages and files are retained for a default period of time based on why they were quarantined. After the retention period expires, the messages are automatically deleted and aren't recoverable. For more information, see [Quarantine retention](quarantine-about.md#quarantine-retention).
 
@@ -91,7 +90,7 @@ To filter the entries, select :::image type="icon" source="../../media/m365-cc-s
 
 - **Message ID**: The globally unique identifier of the message.
 
-  For example, you used [message trace](message-trace-scc.md) to look for a message, and you determine that the message was quarantined instead of delivered. Be sure to include the full message ID value, which might include angle brackets (\<\>). For example: `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`.
+  For example, you used [message trace](message-trace-defender-portal.md) to look for a message, and you determine that the message was quarantined instead of delivered. Be sure to include the full message ID value, which might include angle brackets (\<\>). For example: `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`.
 
 - **Sender address**
 - **Recipient address**
@@ -247,9 +246,15 @@ If you don't release or remove a message, it's automatically deleted from quaran
 - Users can report false positives to Microsoft from quarantine, depending on the value of the **Reporting from quarantine** setting in [user reported settings](submissions-user-reported-messages-custom-mailbox.md).
 
 > [!TIP]
-> - If a message is released from quarantine and then routed to a third party security service or device before delivery to the original recipient, there will be some content loss when the message arrives at the recipient's mailbox.
-> - Admins can use [message trace](message-trace-scc.md) to determine if a released message was delivered to the recipient's Inbox.
-> - Third party anti-virus solutions can prevent a released email message from making it to the recipient's Inbox.
+> Third party anti-virus solutions or security services can cause the following issues for messages that are released from quarantine:
+> - The message is quarantined after being released.
+> - Content is removed from the released message before it reaches the recipient's Inbox.
+> - The released message never arrives in the recipient's Inbox.
+> - Actions in [quarantine notifications](quarantine-quarantine-notifications.md) might be randomly selected.
+>
+> Verify that you aren't using third party filtering before you open a support ticket about these issues.
+>
+> Admins can use [message trace](message-trace-defender-portal.md) to determine if a released message was delivered to the recipient's Inbox.
 
 After you select the message, use either of the following methods to release it:
 

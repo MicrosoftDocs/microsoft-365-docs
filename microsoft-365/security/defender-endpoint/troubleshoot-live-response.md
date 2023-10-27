@@ -14,6 +14,7 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
+- mde-edr
 ms.topic: troubleshooting
 ms.subservice: mde
 search.appverid: met150
