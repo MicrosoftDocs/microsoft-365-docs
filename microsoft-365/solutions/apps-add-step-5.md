@@ -31,7 +31,7 @@ Connectors are connections you configure from Intune to external services, such 
 :::image type="content" source="../media/purchase-add-managed-apps/purchase-add-managed-apps-16.png" alt-text="Connector status in Intune" border="false" :::
 
 > [!TIP]
-> A tenant is an instance of Azure Active Directory (Azure AD). When you set up Microsoft Intune a tenant is created for you. Your subscription to Intune is hosted by an Azure AD tenant.
+> A tenant is an instance of Microsoft Entra ID. When you set up Microsoft Intune a tenant is created for you. Your subscription to Intune is hosted by a Microsoft Entra tenant.
 
 ### Monitor app licenses
 

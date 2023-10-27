@@ -8,8 +8,7 @@ brand: m365
 metadata:
   title: Microsoft 365 Business Premium resources # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Documentation for setting up and working with Microsoft 365 Business Premium. # Required; article description that is displayed in search results. < 160 chars.
-  ms.service: microsoft-365-security #Required; service per approved list. service slug assigned to your service by ACOM.
-  ms.subservice: m365bp
+  ms.service: microsoft-365-business #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: hub-page # Required
   ms.collection: 
   - tier2

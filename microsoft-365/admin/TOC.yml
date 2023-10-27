@@ -77,7 +77,7 @@
           items:
             - name: Synchronize domain users to Microsoft 365
               href: setup/manage-domain-users.md
-            - name: Access resources from an Azure AD-joined device
+            - name: Access resources from a Microsoft Entra joined device
               href: setup/access-resources.md
     - name: Overview of the Microsoft 365 admin center
       items:
@@ -115,12 +115,10 @@
              href: add-users/add-users.md
            - name: Add a new employee
              href: add-users/add-new-employee.md
-           - name: Assign licenses to users
+           - name: Assign or unassign licenses for users
              href: manage/assign-licenses-to-users.md  
            - name: Assign admin roles
              href: add-users/assign-admin-roles.md
-           - name: Unassign licenses from users
-             href: manage/remove-licenses-from-users.md
            - name: Turn pronouns on or off
              href: add-users/turn-pronouns-on-or-off.md
            - name: Guest users
@@ -221,8 +219,6 @@
               href: email/convert-user-mailbox-to-shared-mailbox.md
             - name: Remove a license from a shared mailbox
               href: email/remove-license-from-shared-mailbox.md
-            - name: Resolve issues with shared mailboxes
-              href: email/resolve-issues-with-shared-mailboxes.md
         - name: Set up Focused Inbox
           href: setup/configure-focused-inbox.md
         - name: Add user or contact to distribution group
@@ -382,7 +378,9 @@
             - name: Teams apps that only work on Teams
               href: manage/teams-apps-work-only-on-teams.md  
             - name: SaaS Linked Apps
-              href: manage/saas-linked-apps.md  
+              href: manage/saas-linked-apps.md       
+            - name: Manage plugins for Copilot
+              href: manage/manage-plugins-for-copilot-in-integrated-apps.md             
          - name: Centralized deployment of add-ins
            items:
             - name: Requirements for centralized deployment of add-ins
@@ -443,7 +441,7 @@
                 href: manage/servicenow-overview-v1.md
               - name: Configure basic authentication
                 href: manage/servicenow-basic-authentication-v1.md
-              - name: Configure Microsoft 365 support integration with Azure AD Auth Token
+              - name: Configure Microsoft 365 support integration with Microsoft Entra auth Token
                 href: manage/servicenow-aad-oauth-token-v1.md
               - name: Testing the configuration
                 href: manage/servicenow-testing-the-configuration-v1.md

@@ -19,7 +19,7 @@ ms.custom:
 description: Microsoft 365 E5 and Microsoft Defender for Office 365 Plan 1 and Plan 2 customers can see email details in all Microsoft Defender for Office 365 experiences including the email headers for copy, Detection details, Threats detected, Latest and Original delivery locations, Delivery actions, and IDs like Alert Id, Network Message ID and more.
 search.appverid: met150
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
 ---
 
 # The Email entity page
@@ -176,14 +176,14 @@ Users see enriched detonation details for known malicious attachments or URLs fo
 Security teams can now take email actions like soft delete and hard delete, move to junk, move to inbox, trigger an investigation, submit to Microsoft for review in line, and et cetera. **Tenant level block** actions like file and URL or sender can also be triggered from the Email entity page.
 
 You'll be able to select **Take actions** from the top right corner of the entity page and this will open the Action wizard for you to select the specific action you need.
-![Take action from entity page.](../../media/Take-ActionWizard-Email-entity.png)
 
-In the Action wizard you can take email actions, email submissions, block sender and sender domain, investigative actions and two step approval (add to remediation) in the same side pane. This follows a consistent flow for ease of use. The Action wizard uses the same system as is used by Explorer actions (for Delete, Submissions, and Investigation actions), for example. You'll be able to see and track these actions in the
- [Unified action center](https://security.microsoft.com/action-center/history) (for deleted emails), in the
-  [Submission portal](https://security.microsoft.com/reportsubmission) (for submissions), and in the [Tenant Allow/Block List](https://security.microsoft.com/tenantAllowBlockList) page for (Tenant Allow/Block List blocks).
+:::image type="content" source="../../media/Take-ActionWizard-Email-entity.png" alt-text="Take action from entity page." lightbox="../../media/Take-ActionWizard-Email-entity.png":::
+
+In the Action wizard you can take email actions, email submissions, block sender and sender domain, investigative actions and two step approval (add to remediation) in the same side pane. This follows a consistent flow for ease of use. The Action wizard uses the same system as is used by Explorer actions (for Delete, Submissions, and Investigation actions), for example. You'll be able to see and track these actions in the [Unified action center](https://security.microsoft.com/action-center/history) (for deleted emails), in the [Submission portal](https://security.microsoft.com/reportsubmission) (for submissions), and in the [Tenant Allow/Block List](https://security.microsoft.com/tenantAllowBlockList) page for (Tenant Allow/Block List blocks).
 
 We're also bringing Tenant level block URL and attachment to the respective Email entity URL and Attachments tabs. Upon approval, the block URL and block attachment entries can be tracked on the **URLs** and **Files** tabs on the Tenant Allow/Block List page.
-![Take block URL action from entity page.](../../media/Block-URL-Email-entity.png)
+
+:::image type="content" source="../../media/Block-URL-Email-entity.png" alt-text="Take block URL action from entity page." lightbox="../../media/Block-URL-Email-entity.png":::
 
 See [permissions](mdo-portal-permissions.md) required to take these actions.
 
@@ -191,8 +191,7 @@ See [permissions](mdo-portal-permissions.md) required to take these actions.
 
 The email summary panel is a summarized view of the full email entity page. It contains standardized details about the email (for example, detections), as well as context-specific information (for example, for Quarantine or Submissions metadata). The email summary panel replaces the traditional email flyouts throughout Microsoft Defender for Office 365.
 
-> [!div class="mx-imgBorder"]
-> ![Open the email entity link.](../../media/open-email-entity-mdo.png)
+:::image type="content" source="../../media/open-email-entity-mdo.png" alt-text="Open the email entity link." lightbox="../../media/open-email-entity-mdo.png":::
 
 > [!NOTE]
 > To view all the components, click on the **Open email entity** link to open the full email entity page.

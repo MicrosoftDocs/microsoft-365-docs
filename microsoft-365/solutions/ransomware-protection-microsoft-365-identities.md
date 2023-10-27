@@ -27,15 +27,15 @@ Use the following sections to protect your organization from credential compromi
 
 ## Increase sign-in security
 
-Use [passwordless authentication](/azure/active-directory/authentication/howto-authentication-passwordless-deployment) for user accounts in Azure Active Directory (Azure AD).
+Use [passwordless authentication](/azure/active-directory/authentication/howto-authentication-passwordless-deployment) for user accounts in Microsoft Entra ID.
 
 During the transition to passwordless authentication, use these best practices for user accounts that still use password authentication:
 
-- Block known weak and custom passwords with [Azure AD Password Protection](/azure/active-directory/authentication/concept-password-ban-bad).
-- Extend blocking of known weak and custom passwords to your [on-premises Active Directory Domain Services (AD DS) with Azure AD Password Protection](/azure/active-directory/authentication/concept-password-ban-bad-on-premises).
+- Block known weak and custom passwords with [Microsoft Entra Password Protection](/azure/active-directory/authentication/concept-password-ban-bad).
+- Extend blocking of known weak and custom passwords to your [on-premises Active Directory Domain Services (AD DS) with Microsoft Entra Password Protection](/azure/active-directory/authentication/concept-password-ban-bad-on-premises).
 - Allow your users to change their own passwords with [Self-Service Password Reset (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks).
 
-Next, implement the [Common identity and device access policies](/microsoft-365/security/office-365-security/identity-access-policies). These policies provide higher security for access to Microsoft 365 cloud services. 
+Next, implement the [Common identity and device access policies](/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-common). These policies provide higher security for access to Microsoft 365 cloud services. 
 
 For user sign-ins, these policies include:
 
@@ -50,7 +50,7 @@ Use these best practices:
 - Implement the principle of [least privilege](/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models) and use password protection as described in [Increase sign-in security](#increase-sign-in-security) for those user accounts that still use passwords for their sign-ins. 
 - Avoid the use of domain-wide, admin-level service accounts. 
 - Restrict local administrative privileges to limit installation of Remote Access Trojans (RATs) and other unwanted applications.
-- Use Azure AD Conditional Access to explicitly validate the trust of users and workstations before allowing access to administrative portals. See [this example](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management) for the Azure portal.
+- Use Microsoft Entra Conditional Access to explicitly validate the trust of users and workstations before allowing access to administrative portals. See [this example](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management) for the Azure portal.
 - Enable Local Admin password management.
 - Determine where highly privileged accounts are signing in and exposing credentials. Highly privileged accounts should not be present on workstations.
 - Disable the local storage of passwords and credentials.

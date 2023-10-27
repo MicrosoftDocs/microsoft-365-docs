@@ -2,6 +2,14 @@
 
 
 
+## Week of October 02, 2023
+
+
+| Published On |Topic title | Change |
+|------|------------|--------|
+| 10/5/2023 | [Get started with Microsoft 365 Copilot](/microsoft-365-copilot/microsoft-365-copilot-setup) | modified |
+
+
 ## Week of September 25, 2023
 
 

@@ -661,7 +661,7 @@ Asymmetric routing is the most common implementation problem. Here are some comm
 ## Deploying ExpressRoute connectivity through your network
 <a name="testing"> </a>
 
-Stage your deployment to one segment of the network at a time, progressively rolling out the connectivity to different parts of the network with a plan to roll back for each new network segment. If your deployment is aligned with an Microsoft 365 deployment, deploy to your Microsoft 365 pilot users first and extend from there.
+Stage your deployment to one segment of the network at a time, progressively rolling out the connectivity to different parts of the network with a plan to roll back for each new network segment. If your deployment is aligned with a Microsoft 365 deployment, deploy to your Microsoft 365 pilot users first and extend from there.
   
 First for your test and then for production:
   
