@@ -73,21 +73,13 @@ If files have been modified in any way, then the analyzer is expected to exit wi
 
 :::image type="content" source="images/sigerror.png" alt-text="The client analyzer error" lightbox="images/sigerror.png":::
 
-
-
-If this error is shown, then the issuerInfo.txt output will contain detailed information about why that happened and what file was affected:
+If this error is shown, then the issuerInfo.txt output contains detailed information about why that happened and what file was affected:
 
 :::image type="content" source="images/issuerinfo.png" alt-text="The issuer info" lightbox="images/issuerinfo.png":::
-
-
 
 Example contents after MDEClientAnalyzer.ps1 is modified:
 
 :::image type="content" source="images/modified-ps1.png" alt-text="The  modified ps1 file" lightbox="images/modified-ps1.png":::
-
-
-
-
 
 ## Result package contents on Windows
 
