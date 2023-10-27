@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: ragovind
-ms.date: 09/29/2023
+ms.date: 10/27/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -58,7 +58,7 @@ The customer tenant must be active within Microsoft 365 Lighthouse. To determine
 
 > [!NOTE]
 > Lighthouse opens your default email client and prepopulates the email message with instructions to register for MFA. All the selected users will be included on the BCC line. If you prefer to individually email users, you can select the email icon next to the username.
-> 
+>
 > If you want to use a different email account, you can export the list of users to a file. You can also download sample email templates you can customize with your company branding.
 
 ## Exclude users from MFA registration

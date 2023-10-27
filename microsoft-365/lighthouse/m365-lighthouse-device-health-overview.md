@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: algreer
-ms.date: 09/29/2023
+ms.date: 10/27/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -34,7 +34,6 @@ The Device health page provides a subset of device analytics offered through End
 ## Requirements
 
 Devices must be enrolled in Microsoft Intune. For more information on enrollment, see [What is Endpoint analytics?](/mem/analytics/overview) Once a device is enrolled, the Device health page automatically populates with data. It may take up to 48 hours to see updates.
-
 
 > [!NOTE]
 > If data doesn't show up for a specific tenant, verify that the policy is enabled. From the tenant's deployment plan, under **Set up device enrollment**, verify that **Device health monitoring policy** is compliant. If not compliant, deploy the policy.
@@ -85,8 +84,8 @@ The Devices tab also includes the following options:
 
 :::image type="content" source="../media/m365-lighthouse-device-health/device-health-devices-tab.png" alt-text="Screenshot of Device health tab" lightbox="../media/m365-lighthouse-device-health/device-health-devices-tab.png":::
 
-
 ## Related content
+
 [What is Endpoint analytics?](/mem/analytics/overview) (article)\
 [Scores, baselines, and insights in Endpoint Analytics](/mem/analytics/scores) (article)\
 [Overview of the Apps page in Microsoft 365 Lighthouse](m365-lighthouse-apps-page-overview.md) (article)

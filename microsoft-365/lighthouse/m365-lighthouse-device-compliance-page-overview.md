@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: kwirpel
-ms.date: 10/19/2023
+ms.date: 10/27/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -57,7 +57,7 @@ The Devices tab also includes the following options:
 - **Sync:** Select one or more devices from the list that have a status of Not compliant, In grace period, or Not evaluated, and then select this option to force those devices to check in with Intune and immediately receive any policies that have been assigned to them.
 - **Restart:** Select one or more devices from the list that have a status of Not compliant, In grace period, or Not evaluated, and then select this option to restart those devices.
 - **Search:** Enter keywords to quickly locate a specific device in the list.
- 
+
 :::image type="content" source="../media/m365-lighthouse-device-compliance-page-overview/devices-device-tab.png" alt-text="Screenshot of the Devices tab on the Device compliance page." lightbox="../media/m365-lighthouse-device-compliance-page-overview/devices-device-tab.png":::
 
 ## Policies tab
