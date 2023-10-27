@@ -148,7 +148,9 @@ conceptualContent:
           itemType: overview
           text: Set up and secure managed devices
         - url: ../business-premium/m365bp-device-states.md
-
+          itemType: how-to-guide
+          text: View device status
+    
   # Card
     - title: Protect email content and Microsoft 365 files
       links:
