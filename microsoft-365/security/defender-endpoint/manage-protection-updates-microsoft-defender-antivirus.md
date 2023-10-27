@@ -94,6 +94,20 @@ You can manage the order in which update sources are used with Group Policy, Mic
 
 The procedures in this article first describe how to set the order, and then how to set up the **File share** option if you have enabled it.
 
+**##Update Source Group Policy Names
+**
+This shows what the group policy or Get-MPPreference names are in regards to the Update Source
+Microsoft Update	 = ?
+Windows Server Update Service	- Can be used with InternalDefinitionUpdateServer
+Microsoft Endpoint Configuration Manager	 - ? 
+Security intelligence updates for Microsoft Defender Antivirus and other Microsoft anti-malware	- MMPC
+Network File Share	- FileShares
+
+Which do these two relate to?
+MicrosoftUpdateServer
+InternalDefinitionUpdateServer
+
+
 ## Use Group Policy to manage the update location
 
 1. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and then select **Edit**.
