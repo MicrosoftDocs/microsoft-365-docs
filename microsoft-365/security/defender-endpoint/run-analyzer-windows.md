@@ -27,22 +27,22 @@ ms.date: 10/27/2023
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Option 1) Run the collect the MDE analyzer support logs remotely using [Live Response](/microsoft-365/security/defender-endpoint/troubleshoot-collect-support-log?view=o365-worldwide).
+Option 1: Run the collect the MDE analyzer support logs remotely using [Live Response](/microsoft-365/security/defender-endpoint/troubleshoot-collect-support-log?view=o365-worldwide).
 
-Options 2) Run MDE Client Analyzer locally
+Options 2: Run MDE Client Analyzer locally
 
 - Download the [MDE Client Analyzer tool](https://aka.ms/mdatpanalyzer) or [Beta MDE Client Analyzer tool](https://aka.ms/BetaMDEAnalyzer)to the Windows machine you need to investigate.
-- ![User's image](media/run-analyzer-windows/image.png)
+- ![Downloads dialog box](media/run-analyzer-windows/image.png)
 
 Note: The file is downloaded to the “Downloads” folder (default).
-- ![User's image](media/run-analyzer-windows/image1.png)
+- ![File has downloaded](media/run-analyzer-windows/image1.png)
 
 Click on “Show in folder”
-- ![User's image](image2.png)
+- ![Properties highlighted](media/run-analyzer-windowsimage2.png)
 
 Right-click on “MDEClientAnalyzer.zip”
 Click on Properties
-- ![User's image](image3.png)
+- ![Extract all menu option](media/run-analyzer-windowsimage3.png)
 
 Extract the contents of MDEClientAnalyzer.zip on the machine.
 - Open an elevated command line:
