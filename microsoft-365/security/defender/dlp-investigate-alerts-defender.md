@@ -18,7 +18,7 @@ ms.topic: how-to
 search.appverid:
   - MOE150
   - met150
-ms.date: 09/05/2023
+ms.date: 10/27/2023
 ---
 
 # Investigate data loss prevention alerts with Microsoft 365 Defender
@@ -77,17 +77,48 @@ It is best practice to only grant minimal permissions to alerts in the Microsoft
 
 1. Go to the Microsoft 365 Defender portal, and select **Incidents** in the left hand navigation menu to open the incidents page.
 
-2. Select **Filters** on the top right, and choose **Service Source : Data Loss Prevention** to view all incidents with DLP alerts.
+1. Select **Filters** on the top right, and choose **Service Source : Data Loss Prevention** to view all incidents with DLP alerts.
 
-3. Search for the DLP policy name of the alerts and incidents you're interested in.
+1. Search for the DLP policy name of the alerts and incidents you're interested in.
 
-4. To view the incident summary page, select the incident from the queue. Similarly, select the alert to view the DLP alert page.
+1. To view the incident summary page, select the incident from the queue. Similarly, select the alert to view the DLP alert page.
 
-5. View the **Alert story** for details about policy and the sensitive information types detected in the alert. Select the event in the **Related Events** section to see the user activity details.
+1. View the **Alert story** for details about policy and the sensitive information types detected in the alert. Select the event in the **Related Events** section to see the user activity details.
 
-6. View the matched sensitive content in the **Sensitive info types** tab and the file content in the **Source** tab if you have the required permission (See details <a href="/microsoft-365/compliance/dlp-alerts-dashboard-get-started#roles" target="_blank">here</a>).
+1. View the matched sensitive content in the **Sensitive info types** tab and the file content in the **Source** tab if you have the required permission (See details <a href="/microsoft-365/compliance/dlp-alerts-dashboard-get-started#roles" target="_blank">here</a>).
 
-You can also use Advanced Hunting to search through audit logs of user, files, and site locations for your investigation. The **CloudAppEvents** table contains all audit logs across all locations like SharePoint, OneDrive, Exchange and Devices.
+### Extend DLP alert investigation with Advanced Hunting
+
+Advanced hunting is a query-based threat hunting tool that lets you explore up to 30 days of audit logs of user, files and site locations to aid in your investigation. You can proactively inspect events in your network to locate threat indicators and entities. The flexible access to data enables unconstrained hunting for both known and potential threats.
+
+The **CloudAppEvents** table contains all audit logs across all locations like SharePoint, OneDrive, Exchange and Devices.
+
+#### Before you begin
+
+If you are new to advanced hunting, you should review [Get started with advanced hunting](/microsoft-365/security/defender/advanced-hunting-overview.md).
+
+Before you can use advance hunting you must have [access to the **CloudAppEvents** table](/defender-cloud-apps/connect-office-365.md) that contains the Microsoft Purview data.
+
+#### Using built in queries
+
+> [!IMPORTANT]
+> This feature is in preview. Preview features aren't meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+
+The Defender portal offers multiple built in queries you can use to help with your DLP alert investigation.
+
+1. Go to the Microsoft 365 Defender portal, and select **Incidents & alerts** in the left hand navigation menu to open the incidents page. Select **Incidents**.
+1. Select **Filters** on the top right, and choose **Service Source : Data Loss Prevention** to view all incidents with DLP alerts.
+1. Open a DLP incident.
+1. Click on an alert to view its associated events.
+1. Select an event. 
+1. In the event details pane, click the **Go Hunt** control.
+    1. Defender shows you a list of built in queries that are relevant to the source location of the event. For example, if the event is from SharePoint you see
+        1. **File shared with**
+        1. **File activities**
+        1. **Site activity**
+        1. **User DLP violations for last 30 days**
+1. You can choose to **Run query** immediately, change the time range, edit or save the query for later use.
+1. Once you run the query, view the results on the **Results** tab.
 
 If the alert is for an email message, you can download the message by selecting **Actions** \> **Download email**.
 
@@ -105,8 +136,6 @@ For remediation actions, select the **User card** on the top of the alert page t
 For Devices DLP alerts, select the device card on the top of the alert page to view the device details and take remediation actions on the device.
 
 Go to the incident summary page and select **Manage Incident** to add incident tags, assign, or resolve an incident.
-
-
 
 ## Related articles
 
