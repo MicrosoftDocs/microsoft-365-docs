@@ -1,6 +1,6 @@
 ### YamlMime:FAQ
 metadata:
-  title: Frequently asked questions (FAQs) on tamper protection 
+  title: Frequently asked questions (FAQs) about tamper protection 
   description: Find answers to frequently asked questions
   ms.service: microsoft-365-security
   ms.subservice: mde
@@ -16,7 +16,7 @@ metadata:
   - m365-security
   - mde-ngp
   ms.date: 10/27/2023
-title: Frequently asked questions (FAQs) on tamper protection 
+title: Frequently asked questions (FAQs) about tamper protection 
 summary: | 
 
   **Applies to:**
