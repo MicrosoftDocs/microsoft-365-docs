@@ -57,9 +57,6 @@ For Windows Server 2008 R2 SP1, you have the option of [onboarding through Micro
 
 ## Configure and update System Center Endpoint Protection clients
 
-> [!IMPORTANT]
-> This step is required only if your organization uses System Center Endpoint Protection (SCEP).
-
 Defender for Endpoint integrates with System Center Endpoint Protection to provide visibility to malware detections and to stop propagation of an attack in your organization by banning potentially malicious files or suspected malware.
 
 The following steps are required to enable this integration:
