@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection:
 - Tier1
 - scotvorg
-ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
+- essentials-manage
 description: "Learn how you can see a 4 month view of your Bookings activity"
 ---
 

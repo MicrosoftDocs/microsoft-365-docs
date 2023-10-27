@@ -13,6 +13,7 @@ ms.date: 07/05/2023
 ms.collection: 
 - m365-security
 - tier2
+- mde-ngp
 ms.topic: how-to
 search.appverid: met150
 ---

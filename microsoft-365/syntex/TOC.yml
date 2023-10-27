@@ -61,6 +61,8 @@
                   href: manage-library-settings.md
                 - name: Choose a library view 
                   href: choose-library-view.md
+                - name: View processing status 
+                  href: processing-status.md
                 - name: Analyze model usage
                   href: model-usage-analytics.md
 
@@ -68,6 +70,8 @@
       items:
             - name: Overview 
               href: form-processing-overview.md
+            - name: Admin setup
+              href: structured-freeform-setup.md
             - name: Train your model
               href: create-a-form-processing-model.md
             - name: Manage your model
@@ -90,6 +94,8 @@
                   href: manage-library-settings.md
                 - name: Choose a library view 
                   href: choose-library-view.md
+                - name: View processing status 
+                  href: processing-status.md
                 - name: Analyze model usage
                   href: model-usage-analytics.md
 
@@ -139,6 +145,8 @@
                   href: manage-library-settings.md
                 - name: Choose a library view 
                   href: choose-library-view.md
+                - name: View processing status 
+                  href: processing-status.md
                 - name: Analyze model usage
                   href: model-usage-analytics.md
 
@@ -146,6 +154,8 @@
       items: 
         - name: Overview 
           href: content-assembly.md
+        - name: Admin setup 
+          href: content-assembly-setup.md
         - name: Create a modern template
           href: content-assembly-modern-template.md
         - name: Map template fields to library columns
@@ -158,19 +168,24 @@
           href: content-assembly-create-document.md
         - name: Generate documents using Power Automate 
           href: automate-document-generation.md
-     
-    - name: Content processing
+
+    - name: Image tagging
       items: 
         - name: Overview 
-          href: content-processing-overview.md
-        - name: Move or copy a file 
-          href: content-processing-create-rules.md
+          href: image-tagging-overview.md
+        - name: Admin setup
+          href: image-tagging-setup.md
+        - name: Find and manage images
+          href: image-tagging.md
 
-    - name: Content query
-      href: metadata-search.md
-
-    - name: Annotations
-      href: annotations.md
+    - name: Taxonomy tagging 
+      items: 
+        - name: Overview 
+          href: taxonomy-tagging-overview.md
+        - name: Admin setup 
+          href: taxonomy-tagging-setup.md
+        - name: Find and manage terms 
+          href: taxonomy-tagging.md
 
     - name: Optical character recognition 
       items: 
@@ -179,7 +194,25 @@
         - name: Admin setup 
           href: ocr.md
 
-    - name: Taxonomy
+    - name: Annotations
+      href: annotations.md
+
+    - name: Content query
+      href: metadata-search.md
+
+    - name: Merge and extract PDFs
+      href: merge-extract-pdf.md
+
+    - name: Processing rules
+      items: 
+        - name: Overview 
+          href: content-processing-overview.md
+        - name: Move or copy a file 
+          href: content-processing-create-rules.md
+        - name: Set a content type 
+          href: content-processing-content-type.md
+
+    - name: Premium taxonomy features
       items:
         - name: Import using SKOS
           href: import-term-set-skos.md

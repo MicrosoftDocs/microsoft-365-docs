@@ -3,10 +3,9 @@ title: Manage tamper protection for your organization using Microsoft 365 Defend
 ms.reviewer: joshbregman, mattcall, pahuijbr, hayhov, oogunrinde
 manager: dansimp
 description: Turn tamper protection on or off for your tenant using the Microsoft 365 Defender portal.
-keywords: malware, defender, antivirus, tamper protection, Microsoft 365 Defender
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
-ms.date: 03/09/2023
+ms.date: 09/05/2023
 audience: ITPro
 ms.topic: conceptual
 author: denisebmsft
@@ -18,6 +17,7 @@ ms.subservice: mde
 ms.collection: 
 - m365-security
 - tier2
+- mde-ngp
 search.appverid: met150
 ---
 
@@ -29,7 +29,7 @@ search.appverid: met150
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender Antivirus](microsoft-defender-antivirus-windows.md)
 - [Microsoft Defender for Business](../defender-business/mdb-overview.md)
-- [Microsoft 365 Business Premium](../../business-premium/index.md)
+- [Microsoft 365 Business Premium](../../business-premium/m365bp-overview.md)
 
 **Platforms**
 - Windows
@@ -43,7 +43,7 @@ search.appverid: met150
 
 - You must have appropriate permissions assigned through roles, such as Global Administrator or Security Administrator. (See [Microsoft 365 Defender role-based access control (RBAC)](../defender/manage-rbac.md).)
 
-- Devices must be running certain versions of Windows or macOS. (See [On what devices can tamper protection be enabled?](prevent-changes-to-security-settings-with-tamper-protection.md#on-what-devices-can-tamper-protection-be-enabled).)
+- Devices must be running certain versions of Windows or macOS. (See [On what devices can tamper protection be enabled](prevent-changes-to-security-settings-with-tamper-protection.md#on-what-devices-can-tamper-protection-be-enabled)?)
 
 - Devices must be [onboarded to Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/onboarding).
 

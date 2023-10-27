@@ -16,7 +16,9 @@ ms.collection:
 - M365-subscription-management
 f1.keywords:
 - NOCSH
-ms.custom: seo-marvel-apr2020
+ms.custom:
+  - seo-marvel-apr2020
+  - has-azure-ad-ps-ref
 ms.assetid: f92d5116-5b66-4150-ad20-1452fc3dd712
 description: In this article, learn how to use PowerShell for Microsoft 365 to manage your customer tenancies.
 ---
@@ -50,7 +52,7 @@ Get-MsolPartnerContract -All | Select-Object TenantId
 This will display a listing of all your customer tenants by **TenantId**.
 
 >[!Note]
->PowerShell Core does not support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with **Msol** in their name. To continue using these cmdlets, you must run them from Windows PowerShell.
+>PowerShell Core does not support the Microsoft Azure Active Directory module for Windows PowerShell module and cmdlets with **Msol** in their name. To continue using these cmdlets, you must run them from Windows PowerShell.
 >
 
 ### Get a tenant ID by using the domain name

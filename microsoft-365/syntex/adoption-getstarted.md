@@ -3,7 +3,7 @@ title: Get started driving adoption of Microsoft Syntex
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
-ms.date: 09/30/2021
+ms.date: 10/15/2022
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -29,7 +29,7 @@ With new AI services and capabilities, you can build content understanding and c
 | Unstructured document processing | Structured document processing | Freeform document processing |
 | ------- | ------- | ------- |
 | Created in the content center, part of Syntex. | Created from document library. | Created from document library. |
-| Model created in native interface. | Model created in AI builder. | Model created in AI builder. |
+| Model created in native interface. | Model created in AI Builder. | Model created in AI Builder. |
 | Used for semi-structured or unstructured file formats. | Used for structured or semi-structured file formats. | Used for unstructured or free-form file formats. |
 | Trainable classifier with optional extractors. | Settable classifier. | Settable classifier. |
 | Can be applied to multiple libraries. | Restricted to a single library. | Restricted to a single library. |
@@ -70,9 +70,9 @@ Determine who in your organization will build and manage the models. The followi
 
 | SharePoint/Knowledge admin | Power Platform admin | Knowledge manager | Model owner |
 |:-------|:-------|:-------|:-------|
-| AAD role| AAD role | AAD role | Champions |
+| Microsoft Entra role| Microsoft Entra role | Microsoft Entra role | Champions |
 | Configure structured document processing and freeform document processing models | Configure Dataverse environment | Gather use cases | Gather business use cases |
-| Manage content centers and permissions| Purchase and allocate AIB credits | Establish best practices and review model analytics | Create and apply models |
+| Manage content centers and permissions| Purchase and allocate AI Builder credits | Establish best practices and review model analytics | Create and apply models |
 
 Knowledge manager, business process owner, and content model owner create sample models and champion adoption in the organization. Others who might be involved the compliance admin and taxonomy managers.
 

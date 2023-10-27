@@ -21,10 +21,10 @@ ms.custom:
 description: Admins can learn about end-user spam notifications for quarantined messages in Exchange Online Protection (EOP).
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 6/19/2023
+ms.date: 7/24/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
@@ -33,6 +33,9 @@ appliesto:
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, quarantine holds potentially dangerous or unwanted messages. For more information, see [Quarantined messages in EOP](quarantine-about.md).
+
+> [!NOTE]
+> In Microsoft 365 operated by 21Vianet, quarantine isn't currently available in the Microsoft 365 Defender portal. Quarantine is available only in the classic Exchange admin center (classic EAC).
 
 For [supported protection features](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features), _quarantine policies_ define what users are allowed to do to quarantined messages based on why the message was quarantined. Default quarantine policies enforce the historical capabilities for the security feature that quarantined the message as described in the table [here](quarantine-end-user.md). Admins can create and apply custom quarantine policies that define less restrictive or more restrictive capabilities for users. For more information, see [Create quarantine policies](quarantine-policies.md#step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal).
 
@@ -43,7 +46,13 @@ Quarantine notifications aren't turned on in the default quarantine notification
 
 Otherwise, to turn on quarantine notifications in quarantine policies, you need to [create and configure a new quarantine policy](quarantine-policies.md#step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal).
 
-Admins can also use the global settings in quarantine policies to customize quarantine notifications in up to three languages, and to customize the sender and logo that's used. For instructions, see [Configure global quarantine notification settings](quarantine-policies.md#configure-global-quarantine-notification-settings-in-the-microsoft-365-defender-portal).
+Admins can also use the global settings in quarantine policies to customize quarantine notifications in the following ways:
+
+- Add translations in up to three languages.
+- Customize the sender and logo that's used in the notification.
+- Notification frequency (every four hours, daily, or weekly).
+
+For instructions, see [Configure global quarantine notification settings](quarantine-policies.md#configure-global-quarantine-notification-settings-in-the-microsoft-365-defender-portal).
 
 For shared mailboxes, quarantine notifications are supported only for users who are granted FullAccess permission to the mailbox. For more information, see [Use the EAC to edit shared mailbox delegation](/Exchange/collaboration-exo/shared-mailboxes#use-the-eac-to-edit-shared-mailbox-delegation).
 

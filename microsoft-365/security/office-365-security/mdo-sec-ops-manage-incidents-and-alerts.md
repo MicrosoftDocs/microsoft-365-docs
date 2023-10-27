@@ -20,7 +20,7 @@ ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.date: 6/15/2023
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
@@ -28,7 +28,7 @@ appliesto:
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-An [incident](/microsoft-365/security/defender/incidents-overview) in Microsoft 365 Defender is a collection of correlated alerts and associated data that define the complete story of an attack. Defender for Office 365 [alerts](/microsoft-365/compliance/alert-policies#default-alert-policies), [automated investigation and response (AIR)](air-about.md#the-overall-flow-of-air), and the outcome of the investigations are natively integrated and correlated on the **Incidents** page in Microsoft 365 Defender at <https://security.microsoft.com/incidents-queue>. We refer to this page as the _Incidents queue_.
+An [incident](/microsoft-365/security/defender/incidents-overview) in Microsoft 365 Defender is a collection of correlated alerts and associated data that define the complete story of an attack. Defender for Office 365 [alerts](/purview/alert-policies#default-alert-policies), [automated investigation and response (AIR)](air-about.md#the-overall-flow-of-air), and the outcome of the investigations are natively integrated and correlated on the **Incidents** page in Microsoft 365 Defender at <https://security.microsoft.com/incidents-queue>. We refer to this page as the _Incidents queue_.
 
 Alerts are created when malicious or suspicious activity affects an entity (for example, email, users, or mailboxes). Alerts provide valuable insights about in-progress or completed attacks. However, an ongoing attack can affect multiple entities, which results in multiple alerts from different sources. Some built-in alerts automatically trigger AIR playbooks. These playbooks do a series of investigation steps to look for other impacted entities or suspicious activity.
 

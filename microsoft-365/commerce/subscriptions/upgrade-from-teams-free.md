@@ -7,7 +7,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: drjones, nicholak
+ms.reviewer: presharm, nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
@@ -76,5 +76,4 @@ Now that you have a new Microsoft 365 for business subscription, you can assign 
 [Welcome to Microsoft Teams free](https://support.microsoft.com/office/6d79a648-6913-4696-9237-ed13de64ae3c) (article)\
 [Upgrade Microsoft Teams free to subscription version](/microsoftteams/upgrade-freemium) (article)\
 [Buy or remove subscription licenses](../licenses/buy-licenses.md) (article)\
-[Assign licenses to users](../../admin/manage/assign-licenses-to-users.md) (article)\
-[Unassign licenses from users](../../admin/manage/remove-licenses-from-users.md) (article)
+[Assign or unassign licenses for users in the Microsoft 365 admin center](../../admin/manage/assign-licenses-to-users.md) (article)

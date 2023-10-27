@@ -35,9 +35,11 @@ ms.date: 12/18/2020
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## Create roles and assign the role to an Azure Active Directory group
+<a name='create-roles-and-assign-the-role-to-an-azure-active-directory-group'></a>
 
-The following steps guide you on how to create roles in Microsoft 365 Defender. It assumes that you have already created Azure Active Directory user groups.
+## Create roles and assign the role to a Microsoft Entra group
+
+The following steps guide you on how to create roles in Microsoft 365 Defender. It assumes that you have already created Microsoft Entra user groups.
 
 1. Log in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> using account with a Security administrator or Global administrator role assigned.
 
@@ -47,9 +49,9 @@ The following steps guide you on how to create roles in Microsoft 365 Defender. 
 
 4. Enter the role name, description, and permissions you'd like to assign to the role.
 
-5. Select **Next** to assign the role to an Azure AD Security group.
+5. Select **Next** to assign the role to a Microsoft Entra Security group.
 
-6. Use the filter to select the Azure AD group that you'd like to add to this role to.
+6. Use the filter to select the Microsoft Entra group that you'd like to add to this role to.
 
 7. **Save and close**.
 
@@ -65,19 +67,16 @@ The following steps guide you on how to create roles in Microsoft 365 Defender. 
 
 - **View data**
   - **Security operations** - View all security operations data in the portal
-  - **Threat and vulnerability management** - View Defender Vulnerability Management data in the portal
+  - **Defender Vulnerability Management** - View Defender Vulnerability Management data in the portal
 
 - **Active remediation actions**
   - **Security operations** - Take response actions, approve or dismiss pending remediation actions, manage allowed/blocked lists for automation and indicators
-  - **Threat and vulnerability management - Exception handling** - Create new exceptions and manage active exceptions
-  - **Threat and vulnerability management - Remediation handling** - Submit new remediation requests, create tickets, and manage existing remediation activities
-  - **Threat and vulnerability management - Application handling** - Apply immediate mitigation actions by blocking vulnerable applications, as part of the remediation activity and manage the blocked apps and perform unblock actions
+  - **Defender Vulnerability Management - Exception handling** - Create new exceptions and manage active exceptions
+  - **Defender Vulnerability Management - Remediation handling** - Submit new remediation requests, create tickets, and manage existing remediation activities
+  - **Defender Vulnerability Management - Application handling** - Apply immediate mitigation actions by blocking vulnerable applications, as part of the remediation activity and manage the blocked apps and perform unblock actions
 
 - **Security baselines**
-  - **Threat and vulnerability management – Manage security baselines assessment profiles** - Create and manage profiles so you can assess if your devices comply to security industry baselines.
-
-    > [!NOTE]
-    > For the Defender Vulnerability Management public preview trial this permission is not required. Users with "Threat and vulnerability management - View data" permissions can manage security baselines. However, when the trial ends and a license is purchased, this permission is required.
+  - **Defender Vulnerability Management – Manage security baselines assessment profiles** - Create and manage profiles so you can assess if your devices comply to security industry baselines.
 
 - **Alerts investigation** - Manage alerts, initiate automated investigations, run scans, collect investigation packages, manage device tags, and download only portable executable (PE) files
 

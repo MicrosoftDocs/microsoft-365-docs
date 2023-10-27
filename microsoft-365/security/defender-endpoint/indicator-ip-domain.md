@@ -11,10 +11,11 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
+- -asr
 ms.topic: conceptual
-ms.subservice: mde
+ms.subservice: 
 search.appverid: met150
-ms.date: 07/20/2023
+ms.date: 10/06/2023
 ---
 
 # Create indicators for IPs and URLs/domains
@@ -61,7 +62,10 @@ URL/IP allow and block requires that the Microsoft Defender for Endpoint compone
 - Windows Server 2012 R2
 - Windows Server 2019
 - Windows Server 2022
-- Android and iOS devices
+- macOS
+- Linux
+- iOS 
+- Android
 
 ### Windows Server 2016 and Windows Server 2012 R2 requirements
 
@@ -135,18 +139,9 @@ In the case where multiple different action types are set on the same indicator 
 
 _Allow_ overrides _warn_ which overrides _block_: Allow > Warn > Block. Therefore, in the above example, Microsoft.com would be allowed.
 
-### Policy conflict handling follows the order below
+### Defender for Cloud Apps Indicators
 
-- Defender for Cloud Apps creates an unsanctioned indicator for all users but URL is allowed for a specific device group, the specific device group is Blocked access to the URL.
-- If the IP, URL/Domain is allowed
-- If the IP, URL/Domain is not allowed
-- If the IP, URL/Domain is allowed
-- If the IP, URL/Domain is not allowed
-- If the IP, URL/Domain is allowed
-
-Threat and vulnerability management's block vulnerable application features uses the file IoCs for enforcement and will follow the above conflict handling order.
-
-If there are conflicting file IoC policies with the same enforcement type and target, the policy of the more secure will be applied.
+If your organization has enabled integration between Defender for Endpoint and Defender for Cloud Apps, block indicators will be created in Defender for Endpoint for all unsanctioned cloud applications. If an application is put in monitor mode, warn indicators (bypassable block) will be created for the URLs associated with the application. Allow indicators cannot be created for sanctioned applications at this time. Indicators created by Defender for Cloud Apps follow the same policy conflict handling described in the previous section.
 
 ## Policy precedence
 
@@ -188,4 +183,5 @@ The result is that categories 1-4 are all blocked. This is illustrated in the fo
 - [Create indicators based on certificates](indicator-certificates.md)
 - [Manage indicators](indicator-manage.md)
 - [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

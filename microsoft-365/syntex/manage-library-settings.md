@@ -13,7 +13,6 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-ROBOTS: NOINDEX, NOFOLLOW
 description: Learn how to manage settings on a SharePoint document library with Microsoft Syntex.
 ---
 

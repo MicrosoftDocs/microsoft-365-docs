@@ -36,7 +36,7 @@ Microsoft 365 Lighthouse provides deployment insights within and across the tena
 
 - Prioritize deployment activities based on risk.
 
-To access deployment insights, in the left navigation pane in Lighthouse, select **Deployment \> Deployment insights**.
+To access deployment insights, in the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Deployment** > **Deployment insights**.
 
 ## Watch: Deployment insights
 
@@ -56,7 +56,7 @@ The **Deployment insights** page includes the following:
 
 ### Tenant progress
 
-The tenant progress graph measures deployment progress by customer tenant, reporting the status of each tenants' deployment plan as one of the following:
+The tenant progress graph measures deployment progress by customer tenant, reporting the status of each tenant's deployment plan as one of the following:
 
 - **Complete** – The status of all deployment tasks is **Compliant** or **Dismissed**.
 

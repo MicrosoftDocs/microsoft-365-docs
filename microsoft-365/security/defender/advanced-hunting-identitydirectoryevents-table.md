@@ -19,7 +19,7 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 02/16/2021
 ---
 
@@ -54,12 +54,12 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `AccountDomain` | `string` | Domain of the account |
 | `AccountUpn` | `string` | User principal name (UPN) of the account |
 | `AccountSid` | `string` | Security Identifier (SID) of the account |
-| `AccountObjectId` | `string` | Unique identifier for the account in Azure Active Directory |
+| `AccountObjectId` | `string` | Unique identifier for the account in Microsoft Entra ID |
 | `AccountDisplayName` | `string` | Name of the account user displayed in the address book. Typically a combination of a given or first name, a middle initiation, and a last name or surname. |
 | `DeviceName` | `string` | Fully qualified domain name (FQDN) of the device |
 | `IPAddress` | `string` | IP address assigned to the device during communication |
 | `Port` | `string` | TCP port used during communication |
-| `Location` | `string` | City, country, or other geographic location associated with the event |
+| `Location` | `string` | City, country/region, or other geographic location associated with the event |
 | `ISP` | `string` | Internet service provider associated with the IP address |
 | `ReportId` | `long` | Unique identifier for the event |
 | `AdditionalFields` | `string` | Additional information about the entity or event |

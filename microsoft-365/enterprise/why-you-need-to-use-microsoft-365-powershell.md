@@ -13,7 +13,9 @@ ms.collection:
 - scotvorg
 f1.keywords:
 - CSH
-ms.custom: admindeeplinkEXCHANGE
+ms.custom:
+  - admindeeplinkEXCHANGE
+  - has-azure-ad-ps-ref
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: "Summary: Understand why you must use PowerShell to manage Microsoft 365, in some cases more efficiently and in other cases by necessity."
 ---
@@ -86,7 +88,7 @@ Get-AzureADUser | Select DisplayName, UsageLocation
 
 
 >[!Note]
->PowerShell Core doesn't support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets that have *Msol* in their name. You have to run these cmdlets from Windows PowerShell.
+>PowerShell Core doesn't support the Microsoft Azure Active Directory module for Windows PowerShell module and cmdlets that have *Msol* in their name. You have to run these cmdlets from Windows PowerShell.
 >
 
 Here's an example of the results:

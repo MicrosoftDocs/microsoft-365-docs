@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.pagetype: security
-author: alekyaj
+author: dansimp
 ms.author: macapara
 ms.localizationpriority: medium
 manager: dansimp

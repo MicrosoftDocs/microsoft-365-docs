@@ -7,8 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: Admin
 ms.topic: overview
-ms.service: microsoft-365-security
-ms.subservice: m365bp
+ms.service: microsoft-365-business
 ms.date: 07/19/2023
 ms.localizationpriority: medium
 ms.reviewer: nehabha
@@ -35,6 +34,12 @@ Microsoft 365 Business Premium includes two main types of policies to protect yo
 - **Next-generation protection policies**, which determine how Microsoft Defender Antivirus and other threat protection features are configured.
 
 - **Firewall policies**, which determine what network traffic is permitted to flow to and from your organization's devices.
+
+Additional policies include:
+
+- **Web content filtering**, which enables your security team to track and regulate access to websites based on content categories (such as adult content, high bandwidth, legal liability, and leisure). For more information, see [Web content filtering in Microsoft Defender for Business](../security/defender-business/mdb-web-content-filtering.md).
+- **Controlled folder access**, which allows only trusted apps to access protected folders on Windows devices. Think of this capability as ransomware protection. For more information, see [Set up or edit your controlled folder access policy in Microsoft Defender for Business](../security/defender-business/mdb-controlled-folder-access.md).
+- **Attack surface reduction rules** that help reduce the places and ways your business might be vulnerable to cyberthreats and attacks. For more information, see [Enable your attack surface reduction rules in Microsoft Defender for Business](../security/defender-business/mdb-asr.md).
 
 These policies are part of Microsoft Defender for Business, included in your Microsoft 365 Business Premium subscription. Information is provided for working with policies in the Microsoft 365 Defender portal or in the Microsoft Intune admin center.
 
@@ -106,7 +111,7 @@ The following details apply to working with your policies in the Microsoft 365 D
    - Initially, you might only have your default device group, which includes the devices people in your organization are using to access organization data and email. You can keep and use your default device group.
    - Create a new device group to apply a policy with specific settings that are different from the default policy.
    - When you set up your device group, you specify certain criteria, such as the operating system version. Devices that meet the criteria are included in that device group, unless you exclude them.
-   - All device groups, including the default and custom device groups that you define, are stored in Azure Active Directory (Azure AD).
+   - All device groups, including the default and custom device groups that you define, are stored in Microsoft Entra ID.
 
    To learn more about device groups, see [Device groups in Microsoft Defender for Business](../security/defender-business/mdb-create-edit-device-groups.md).
 
@@ -190,6 +195,6 @@ If you do run into policy conflicts, see [Troubleshooting policies and profiles 
 
 [Best practices for securing Microsoft 365 for business plans](secure-your-business-data.md)
 
-## Next objective
+## Next step
 
 [Set up and manage device groups](m365bp-device-groups-mdb.md).

@@ -18,38 +18,36 @@ f1.keywords: NOCSH
 
 # What is Test Base for Microsoft 365?
 
-Test Base is an Azure service that enables data-driven application testing while providing user access to intelligent testing from anywhere in the world.
+Test Base is an Azure service that enables data-driven application testing for users anywhere in the world. 
 
-The following entities are encouraged to onboard their applications, binaries, and test scripts onto the Test Base for Microsoft 365 service: Independent Software Vendors (ISVs), System Integrators (SIs) to validate their applications and IT Professionals who want to validate their line-of-business (LOB) applications through integration with Microsoft Intune.
+The following institutions are best fit to onboard their applications, binaries, and test scripts to Test Base for Microsoft 365: Enterprise/Businesses, Independent Software Publishers, System Integrators (SIs), and IT Professionals who want to validate their line-of-business (LOB) applications through integration with Microsoft Intune.
 
 ## Why test your application with Test Base?
 
-The Test Base for Microsoft 365 service can accommodate the expansion of your testing matrix as necessary so you will have confidence in the integrity, compatibility, and usability of your applications.
+The Test Base for Microsoft 365 service can accommodate your expanding testing matrix, ensuring continuous confidence in the integrity, compatibility, and usability of your applications. 
 
-Test Base enables your application to continue working as expected even as platform dependencies vary, and new updates are applied by the Windows update service. With Test Base, you can avoid the aggravation, protracted time commitments, and the expense of setting up and maintaining a complex lab environment for testing your applications.
+Test Base ensures that your applications continue working as expected, even when platform dependencies vary, or when the Windows update service applies new Windows updates. With Test Base, you can avoid the aggravation, protracted time commitments, and expenses of setting up and maintaining a complex lab environment for testing your applications. 
 
-In addition, you can automatically test compatibility against security and feature updates for Windows by using secure virtual machines (VMs) while also obtaining access to world-class intelligence for testing your applications. You can also get your apps tested for compatibility against pre-release windows security updates by submitting a request to get the access.
+In addition, you can automatically test your applications’ compatibility against security and feature updates for Windows by using secure virtual machines (VMs). Doing so allows you to obtain access to world-class intelligence for testing your applications. You can also test your apps compatibility with prerelease Windows security updates — submit a request to get access.
 
 ## How does Test Base work?
 
 To sign up for the Test Base service, see [Create a new Test Base account](createAccount.md).
 
-After a customer has enrolled in the Test Base service, it is a simple matter to begin uploading application packages for testing.
+After a customer has enrolled in the Test Base service, it’s easy to begin uploading application packages for testing.
 
-Following a successful upload, packages are tested against Windows pre-release updates.
+Following a successful upload, packages are tested against Windows prerelease updates.
 
-After initial tests are successfully completed, the customer can do a deep dive with insights on performance and regression analysis to detect whether pre-release content updates have degraded application performance in any way.
+After initial tests are successfully completed, the customer can do a deep dive with insights on performance and regression analysis to detect whether prerelease updates degraded application performance in any way.
 
-However, if the package failed any test, then the customer can also leverage Insights from memory or CPU regressions to remediate the failure and then update the package as necessary.
-
-With Test Base, the customer can use a single location to manage all packages being tested, which can also facilitate uploading and updating packages to generate new application versions as needed.
+However, if the package fails any test, customers can use insights from memory or CPU regressions to remediate the failure and update the package as necessary to rerun.
 
 > [!NOTE]
-> **So that customers can take advantage of pre-release update content, they must specifically request access to it. Once your request for access to pre-release updates is approved, your uploaded packages will automatically get scheduled to be tested against the pre-release Windows updates for the OS versions selected during onboarding**.
+> **For customers to take advantage of prerelease update testing, they must specifically request access to it. Once your request for access to prerelease updates is approved, your uploaded packages will automatically get scheduled to be tested against prerelease Windows updates for the OS versions selected during package uploading.**.
 
-Then, as new Windows pre-release updates become available, application packages are automatically tested with new pre-release content. Thereafter, an additional round of insights may be required. If customers do not specifically request access, then application packages will be tested against only the current released version of Windows.
+As new Windows prerelease updates become available, existing application packages are automatically tested with the new prerelease content. Following each test, another round of insights is provided. If customers don’t specifically request access to prerelease testing, their application packages are tested against only the current released version of Windows. 
 
-After packages are successfully tested, customers can deliver them to their software customers and end users with confidence and the assurance that Test Base did its job.
+After packages are successfully tested, customers can resolve any issues found during testing and deliver their applications to their end users with the assurance that Test Base did its job.
 
 ## Next steps
 

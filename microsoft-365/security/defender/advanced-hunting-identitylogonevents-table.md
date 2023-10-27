@@ -19,7 +19,7 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 02/16/2021
 ---
 
@@ -36,7 +36,7 @@ The `IdentityLogonEvents` table in the [advanced hunting](advanced-hunting-overv
 > For detailed information about the events types (`ActionType` values) supported by a table, use the built-in schema reference available in Microsoft 365 Defender.
 
 > [!NOTE]
-> This table covers Azure Active Directory (Azure AD) logon activities tracked by Defender for Cloud Apps, specifically interactive sign-ins and authentication activities using ActiveSync and other legacy protocols. Non-interactive logons that are not available in this table can be viewed in the Azure AD audit log. [Learn more about connecting Defender for Cloud Apps to Microsoft 365](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)
+> This table covers Microsoft Entra logon activities tracked by Defender for Cloud Apps, specifically interactive sign-ins and authentication activities using ActiveSync and other legacy protocols. Non-interactive logons that are not available in this table can be viewed in the Microsoft Entra audit log. [Learn more about connecting Defender for Cloud Apps to Microsoft 365](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)
 
 For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
 
@@ -52,7 +52,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `AccountDomain` | `string` | Domain of the account |
 | `AccountUpn` | `string` | User principal name (UPN) of the account |
 | `AccountSid` | `string` | Security Identifier (SID) of the account |
-| `AccountObjectId` | `string` | Unique identifier for the account in Azure AD |
+| `AccountObjectId` | `string` | Unique identifier for the account in Microsoft Entra ID |
 | `AccountDisplayName` | `string` | Name of the account user displayed in the address book. Typically a combination of a given or first name, a middle initiation, and a last name or surname. |
 | `DeviceName` | `string` | Fully qualified domain name (FQDN) of the device |
 | `DeviceType` | `string` | Type of device |
@@ -64,7 +64,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `DestinationPort` | `string` | Destination port of related network communications |
 | `TargetDeviceName` | `string` | Fully qualified domain name (FQDN) of the device that the recorded action was applied to |
 | `TargetAccountDisplayName` | `string` | Display name of the account that the recorded action was applied to |
-| `Location` | `string` | City, country, or other geographic location associated with the event |
+| `Location` | `string` | City, country/region, or other geographic location associated with the event |
 | `Isp` | `string` | Internet service provider (ISP) associated with the endpoint IP address |
 | `ReportId` | `long` | Unique identifier for the event |
 | `AdditionalFields` | `string` | Additional information about the entity or event |

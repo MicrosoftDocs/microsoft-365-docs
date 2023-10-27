@@ -2,16 +2,12 @@
 title: What's new in Microsoft Defender for Endpoint
 description: See what features are generally available (GA) in the latest release of Microsoft Defender for Endpoint, and security features in Windows 10 and Windows Server.
 keywords: what's new in Microsoft Defender for Endpoint, ga, generally available, capabilities, available, new
-search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: microsoft-365-security
-ms.mktglfcycl: secure
-ms.sitesec: library
-ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 07/19/2023
+ms.date: 09/27/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -58,8 +54,18 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 
 - [What's new in Defender for Endpoint on Windows](windows-whatsnew.md)
 - [What's new in Defender for Endpoint on macOS](mac-whatsnew.md)
-- [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 - [What's new in Defender for Endpoint on Linux](linux-whatsnew.md)
+- [What's new in Defender for Endpoint on Android](android-whatsnew.md)
+- [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
+
+
+## September 2023
+(GA) The [Protecting Dev Drive using performance mode](microsoft-defender-endpoint-antivirus-performance-mode.md) is now generally available. The goal of Performance mode is to improve functional performance for developers who use Windows 11.  Performance mode which reduces the performance impact of Microsoft Defender Antivirus scans for files stored on designated Dev Drive.
+
+## August 2023
+
+- (GA) The [Monthly security summary report](monthly-security-summary-report.md) is now generally available. The report helps organizations get a visual summary of key findings and overall preventative actions taken to enhance the organization's overall security posture completed in the last month.  
+
 
 ## July 2023
 
@@ -109,20 +115,6 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 
 - [Built-in protection](built-in-protection.md) is now generally available. Built-in protection helps protect your organization from ransomware and other threats with default settings that help ensure your devices are protected. 
 
-- Zeek is now generally available as a component of Microsoft Defender for Endpoint.
-
-   Microsoft has partnered with [Corelight](https://corelight.com/company/zeek-now-component-of-microsoft-windows), a leader in open source Network Detection and Response (NDR), to provide a new open-source integration with [Zeek](https://corelight.com/about-zeek/how-zeek-works) for Defender for Endpoint. With this integration, organizations can super-charge their investigation efforts with rich network signals and reduce the time it takes to detect network-based threats by having unprecedented visibility into network traffic from the endpoints' perspective.
-
-   The new Zeek integration is available in the latest version of the Defender for Endpoint agent via the following knowledge base articles:
-   - [KB5016691](https://support.microsoft.com/topic/august-25-2022-kb5016691-os-build-22000-918-preview-59097044-915a-49a0-8870-49823236adbd)
-   - [KB5016693](https://support.microsoft.com/topic/august-16-2022-kb5016693-os-build-20348-946-preview-ee90d0bc-c162-4124-b7c6-f963ee7b17ed)
-   - [KB5016688](https://support.microsoft.com/topic/august-26-2022-kb5016688-os-builds-19042-1949-19043-1949-and-19044-1949-preview-ec31ebdc-067d-44dd-beb0-eabcc984d843)
-   - [KB5016690](https://support.microsoft.com/topic/august-23-2022-kb5016690-os-build-17763-3346-preview-b81d1ac5-75c7-42c1-b638-f13aa4242f42)
-
-   > [!NOTE]
-   > This integration doesn't currently support the use of custom scripts to gain visibility into extra signals.
-
-
 ## October 2022
 
 - [Network protection C2 detection and remediation is now generally available](network-protection.md#block-command-and-control-attacks). <br/>Attackers often compromise existing internet-connected servers to become their command and control servers. Attackers can use the compromised servers to hide malicious traffic and deploy malicious bots that are used to infect endpoints. Network protection detection and remediation will help improve the time it takes security operations (SecOps) teams to pinpoint and respond to malicious network threats that are looking to compromise endpoints.
@@ -130,7 +122,7 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 
 ## September 2022
 
-- [Attack surface reduction (ASR) rules report now available in the Microsoft 365 Defender portal](attack-surface-reduction-rules-report.md). <br/>The attack surface reduction (ASR) rules report is now available in the Microsoft 365 Defender portal. This ASR report provides information about the attack surface reduction rules that are applied to devices in your organization and helps you detect threats, block potential threats, and get visibility into ASR and device configuration.
+- [Attack surface reduction rules report now available in the Microsoft 365 Defender portal](attack-surface-reduction-rules-report.md). <br/>The attack surface reduction rules report is now available in the Microsoft 365 Defender portal. This ASR report provides information about the attack surface reduction rules that are applied to devices in your organization and helps you detect threats, block potential threats, and get visibility into ASR and device configuration.
 
 - [Built-in protection](built-in-protection.md) (preview) is rolling out. Built-in protection is a set of default settings, such as tamper protection turned on, to help protect devices from ransomware and other threats.
 
@@ -150,7 +142,7 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 
 - [Network Protection and Web Protection for macOS and Linux is now in Public Preview!](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-protection-and-web-protection-for-macos-and-linux-is-now/ba-p/3601576)<br>Network Protection helps reduce the attack surface of your devices from Internet-based events. It prevents employees from using any application to access dangerous domains that may host phishing scams, exploits, and other malicious content on the Internet. It's the foundation on which our Web Protection for Microsoft Defender for Endpoint is built. These capabilities include Web threat protection, Web content filtering, and IP/URL Custom indicators. Web protection enables you to secure your devices against web threats and helps to regulate unwanted content.
 
-- [Improved Microsoft Defender for Endpoint (MDE) onboarding for Windows Server 2012 R2 and Windows Server 2016](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2207#improved-microsoft-defender-for-endpoint-mde-onboarding-for-windows-server-2012-r2-and-windows-server-2016)<br>Configuration Manager version 2207 now supports automatic deployment of modern, unified Microsoft Defender for Endpoint for Windows Server 2012 R2 & 2016. Windows Server 2012 and 2016 devices that are targeted with Microsoft Defender for Endpoint onboarding policy will use the unified agent versus the existing Microsoft Monitoring Agent based solution, if configured through Client Settings.
+- [Improved Microsoft Defender for Endpoint onboarding for Windows Server 2012 R2 and Windows Server 2016](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2207#improved-microsoft-defender-for-endpoint-mde-onboarding-for-windows-server-2012-r2-and-windows-server-2016)<br>Configuration Manager version 2207 now supports automatic deployment of modern, unified Microsoft Defender for Endpoint for Windows Server 2012 R2 & 2016. Windows Server 2012 and 2016 devices that are targeted with Microsoft Defender for Endpoint onboarding policy will use the unified agent versus the existing Microsoft Monitoring Agent based solution, if configured through Client Settings.
 
 
 ## July 2022

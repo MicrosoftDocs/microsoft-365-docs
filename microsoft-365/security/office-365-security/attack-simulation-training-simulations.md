@@ -16,7 +16,7 @@ ms.subservice: mdo
 search.appverid: met150
 ms.date: 6/14/2023
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview" target="_blank">Microsoft Defender for Office 365 plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
 ---
 
 # Simulate a phishing attack with Attack simulation training
@@ -230,9 +230,9 @@ On the **Target users** page, select who receives the simulation. Use the follow
         - Select existing City values. If the link is available, select **See all Cities** to see the complete list of available City values.
 
       - **Country**: Use the following options:
-        - **Search**: In :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search by Country**, you can type part of the Country value and then press Enter. You can select some or all of the results.
+        - **Search**: In :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search by Country**, you can type part of the Country/region value and then press Enter. You can select some or all of the results.
         - Select **All Country**
-        - Select existing City values. If the link is available, select **See all Countries** to see the complete list of available Country values.
+        - Select existing City values. If the link is available, select **See all Countries** to see the complete list of available Country/region values.
 
       - **Department**: Use the following options:
         - **Search**: In :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search by Department**, you can type part the Department value and then press Enter. You can select some or all of the results.

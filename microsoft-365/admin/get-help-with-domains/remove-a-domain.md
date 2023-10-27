@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: nkagole
 author: nataliekagole
 manager: scotv
-ms.date: 02/18/2020
+ms.date: 09/22/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -17,10 +17,11 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
-ms.custom: 
-- AdminSurgePortfolio
-- AdminTemplateSet
-- business_assist
+ms.custom:
+  - AdminSurgePortfolio
+  - AdminTemplateSet
+  - business_assist
+  - has-azure-ad-ps-ref
 search.appverid:
 - BCS160
 - MET150

@@ -14,7 +14,7 @@ metadata:
   ms.collection: m365-security-compliance
   author: dansimp #Required; your GitHub user alias, with correct capitalization.
   ms.author: dansimp #Required; microsoft alias of author; optional team alias.
-  ms.date: 06/22/2022 #Required; mm/dd/yyyy format.
+  ms.date: 07/28/2023 #Required; mm/dd/yyyy format.
   ms.custom: intro-hub-or-landing
 
 # highlightedContent section (optional)
@@ -84,14 +84,14 @@ conceptualContent:
          - url: /microsoft-365/security/office-365-security/attack-simulation-training-insights
            itemType: overview
            text: Insights and reporting for attack simulation
-         - url: /microsoft-365/security/office-365-security/skip-filtering-phishing-simulations-sec-ops-mailboxes
+         - url: /microsoft-365/security/office-365-security/advanced-delivery-policy-configure
            itemType: how-to-guide
            text: Configure 3rd party phishing simulation
 
         # Card
       - title: Enable safe email messages
         links:
-         - url: /microsoft-365/security/office-365-security/protect-against-threats
+         - url: /microsoft-365/security/office-365-security/mdo-security-comparison
            itemType: overview
            text: Get Started with Defender for Office 365
          - url: /microsoft-365/security/office-365-security/mdo-sec-ops-guide

@@ -1,6 +1,6 @@
 ---
 title: Protect security settings with tamper protection
-ms.reviewer: joshbregman, mattcall, pahuijbr, hayhov, oogunrinde
+ms.reviewer: joshbregman, mattcall, pahuijbr, hayhov
 manager: dansimp
 description: Use tamper protection to prevent malicious apps from changing important security settings.
 ms.service: microsoft-365-security
@@ -17,6 +17,7 @@ ms.subservice: mde
 ms.collection: 
 - m365-security
 - tier2
+- mde-ngp
 search.appverid: met150
 ---
 
@@ -28,7 +29,7 @@ search.appverid: met150
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender Antivirus](microsoft-defender-antivirus-windows.md)
 - [Microsoft Defender for Business](../defender-business/mdb-overview.md)
-- [Microsoft 365 Business Premium](../../business-premium/index.md)
+- [Microsoft 365 Business Premium](../../business-premium/m365bp-overview.md)
 
 **Platforms**
 - Windows
@@ -133,3 +134,4 @@ To learn more about Microsoft Defender Vulnerability Management, see [Dashboard 
 - [Frequently asked questions on tamper protection](faqs-on-tamper-protection.yml)
 - [Troubleshoot problems with tamper protection](troubleshoot-problems-with-tamper-protection.yml)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+

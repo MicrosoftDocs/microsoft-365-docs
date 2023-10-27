@@ -11,7 +11,7 @@ _repo.*/
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
-
+.docutune
 .openpublishing.buildcore.ps1
 .vs/slnx.sqlite
 .vs/slnx.sqlite

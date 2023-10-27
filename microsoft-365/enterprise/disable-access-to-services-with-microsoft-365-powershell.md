@@ -15,11 +15,12 @@ ms.collection:
 - Ent_O365
 f1.keywords:
 - CSH
-ms.custom: 
-- Ent_Office_Other
-- PowerShell
-- LIL_Placement
-- seo-marvel-apr2020
+ms.custom:
+  - Ent_Office_Other
+  - PowerShell
+  - LIL_Placement
+  - seo-marvel-apr2020
+  - has-azure-ad-ps-ref
 ms.assetid: 264f4f0d-e2cd-44da-a9d9-23bef250a720
 description: In this article, learn how to use PowerShell to disable access to Microsoft 365 services for users.
 ---
@@ -165,7 +166,7 @@ $addLicenses = @(
 Set-MgUserLicense -UserId "belinda@litwareinc.onmicrosoft.com" -AddLicenses $addLicenses -RemoveLicenses @()
 ```
 
-## Use the Microsoft Azure Active Directory Module for Windows PowerShell
+## Use the Microsoft Azure Active Directory module for Windows PowerShell
 
 First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
@@ -176,7 +177,7 @@ Get-MsolAccountSku | Select AccountSkuId | Sort AccountSkuId
 ```
 
 >[!Note]
->PowerShell Core does not support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with **Msol** in their name. To continue using these cmdlets, you must run them from Windows PowerShell.
+>PowerShell Core does not support the Microsoft Azure Active Directory module for Windows PowerShell module and cmdlets with **Msol** in their name. To continue using these cmdlets, you must run them from Windows PowerShell.
 >
 
 For more information, see [View licenses and services with PowerShell](view-licenses-and-services-with-microsoft-365-powershell.md).

@@ -18,12 +18,13 @@ ms.collection:
 - Adm_TOC
 - SPO_Content
 ms.custom:
-- MSStore_Link
-- TRN_M365B
-- OKR_SMB_Videos
-- AdminSurgePortfolio
-- m365solution-removeemployee
-- admindeeplinkEXCHANGE
+  - MSStore_Link
+  - TRN_M365B
+  - OKR_SMB_Videos
+  - AdminSurgePortfolio
+  - m365solution-removeemployee
+  - admindeeplinkEXCHANGE
+  - has-azure-ad-ps-ref
 search.appverid:
 - BCS160
 - MET150

@@ -14,10 +14,11 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
+- mde-android
 ms.topic: reference
 ms.subservice: mde
 search.appverid: met150
-ms.date: 11/01/2021
+ms.date: 10/25/2023
 ---
 
 # What's new in Microsoft Defender for Endpoint on Android
@@ -34,6 +35,13 @@ Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](
 > Microsoft Defender for Endpoint's **Anti malware engine** is now generally available. All the users are required to have a Microsoft Defender for Endpoint version above **1.0.3815.0000** to utilize this new malware protection capability. Users on Microsoft Defender for Endpoint version below 1.0.3815.0000 will be sent notifications and in-app overlay messages to update their Microsoft Defender for Endpoint application. Users can click on the link provided in the overlay message to  go to the managed play store and update the application.
 >
 > If users can't access the play store, the app can be updated through the company portal.
+
+
+## Device Tagging
+
+Mobile Device Tagging is now generally available. This feature enables bulk tagging the mobile devices by allowing the admins to set up tags via Intune. Admin can configure the device tags through Intune via configuration policies and push them to user’s devices. Once the user installs and activates Defender, the client app passes the device tags to the Security Portal. The Device tags appear against the devices in the Device Inventory. 
+
+This configuration is available for both the enrolled (MDM) devices as well as unenrolled (MAM) devices. For more information, see [Device Tagging (MDM)](/microsoft-365/security/defender-endpoint/android-configure#device-tagging) and [Device Tagging (MAM)](/microsoft-365/security/defender-endpoint/android-configure-mam#device-tagging).
 
 ## Microsoft Defender for Endpoint on Company-owned personally enabled devices
 
@@ -55,18 +63,15 @@ Microsoft Defender for Endpoint is now supported on Android Enterprise personal 
 
 Network Protection on Microsoft Defender for Endpoint is now available. Network protection provides protection against rogue Wi-Fi related threats, rogue hardware like pineapple devices and notifies the user if a related threat is detected. Users will also see a guided experience to connect to secure networks and change networks when they are connected to an unsecure connection.
 
-It includes several admin controls to offer flexibility, such as the ability to configure the feature from within the Microsoft Intune admin center. Admins can also enable privacy controls to configure the data that is sent by Defender for Endpoint from Android devices.
-
-If you are interested in participating in this public preview, please share your tenant id with us on networkprotection@microsoft.com. For more information, see [network protection](/microsoft-365/security/defender-endpoint/android-configure).
+It includes several admin controls to offer flexibility, such as the ability to configure the feature from within the Microsoft Intune admin center. Admins can also enable privacy controls to configure the data that is sent by Defender for Endpoint from Android devices. For more information, see [network protection](/microsoft-365/security/defender-endpoint/android-configure).
 
 > [!NOTE]
 > Microsoft Defender is no longer supported for versions below 1.0.3011.0302. Users are requested to upgrade to latest versions to keep their devices secure.
+
 To update, users can use the following steps:
->
 > 1. On your work profile, go to Managed Play Store.
 > 2. Tap on the profile icon on the top right corner and select "Manage apps and device".
 > 3. Locate MDE under updates available and select update.
->
 > If you encounter any issues, [submit in-app feedback](/security/defender-endpoint/android-support-signin#send-in-app-feedback).
 
 ## Microsoft Defender for Endpoint is now Microsoft Defender in the Play store
@@ -108,4 +113,7 @@ Notify your users and helpdesk (as applicable) that users will need to accept th
 
   > [!NOTE]
   > This permission allows Microsoft Defender for Endpoint to access storage on user's device, which helps detect and remove malicious and unwanted apps. Microsoft Defender for Endpoint accesses/scans Android app package file (.apk) only. On devices with a Work Profile, Defender for Endpoint only scans work-related files.
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+
+

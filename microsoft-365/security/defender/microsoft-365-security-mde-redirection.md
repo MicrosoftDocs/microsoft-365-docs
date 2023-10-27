@@ -76,7 +76,7 @@ Once enabled, this update might take effect almost immediately for some accounts
 
 To start routing accounts to Microsoft 365 Defender:
 
-1. Make sure you're a global administrator or have security administrator permissions in Azure Active Directory.
+1. Make sure you're a global administrator or have security administrator permissions in Microsoft Entra ID.
 
 2. Sign in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>.
 
@@ -90,7 +90,7 @@ To start routing accounts to Microsoft 365 Defender:
 > Enabling this setting will not terminate active user sessions. Accounts who are in an active session while this setting is applied will only be directed to Microsoft 365 Defender after ending their current session and signing in again.
 
 > [!NOTE]
-> You must be a global administrator or have security administrator permissions in Azure Active Directory to enable or disable this setting.
+> You must be a global administrator or have security administrator permissions in Microsoft Entra ID to enable or disable this setting.
 
 ## Can I go back to using the former portal?
 
@@ -98,7 +98,7 @@ If something isn't working for you or if there's anything you're unable to compl
 
 To revert to the former Microsoft Defender for Endpoint portal:
 
-1. Sign in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> as a global administrator or using and account with security administrator permissions in Azure Active directory.
+1. Sign in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> as a global administrator or using and account with security administrator permissions in Microsoft Entra ID.
 
 2. Navigate to **Settings** \> **Endpoints** \> **General** \> **Portal redirection** or [open the page here](https://security.microsoft.com/preferences2/portal_redirection).
 
@@ -115,8 +115,6 @@ Once disabled, accounts will no longer be routed to security.microsoft.com, and 
 - [Microsoft 365 Defender overview](microsoft-365-defender.md)
 - [Microsoft Defender for Endpoint in Microsoft 365 Defender](microsoft-365-security-center-mde.md)
 - [Microsoft delivers unified SIEM and XDR to modernize security operations](https://www.microsoft.com/security/blog/?p=91813)
-- [XDR versus SIEM infographic](https://afrait.com/blog/xdr-versus-siem/)
-- [`The New Defender`](https://afrait.com/blog/the-new-defender/)
 - [About Microsoft 365 Defender](https://www.microsoft.com/microsoft-365/security/microsoft-365-defender)
 - [Microsoft security portals and admin centers](portals.md)
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

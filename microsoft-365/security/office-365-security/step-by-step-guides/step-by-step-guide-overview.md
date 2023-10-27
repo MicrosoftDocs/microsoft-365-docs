@@ -31,6 +31,9 @@ These step-by-step guides help administrators configure and use Microsoft Defend
 
 ***If you learn Microsoft products best by doing***, the step-by-step guides will jumpstart configuration and testing. They are as useful for set up in a *trial subscription* as they are in *production*.
 
+> [!NOTE]
+> Try the [Defender for Office 365 setup guide](https://go.microsoft.com/fwlink/?linkid=2224785) for step-by-step instructions that are tenant-aware and customized to your organization's needs. This setup guide helps you implement anti-malware policies, anti-phishing policies, safe attachments, and more. 
+
 ## Why use Microsoft Defender for Office 365 step-by-step guides
 
 > [!IMPORTANT]

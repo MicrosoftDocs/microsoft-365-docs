@@ -2,9 +2,8 @@
 title: "Remove license from shared mailbox"
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: SKjerland
-ms.reviewer: sinakassaw, nicholak
+ms.author: kwekua
+author: kwekuako
 manager: scotv
 audience: Admin
 ms.topic: how-to
@@ -17,7 +16,6 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
-- commerce_licensing
 - AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -48,16 +46,19 @@ Shared mailboxes usually don't require a license. Follow these instructions to r
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
 
+   > [!NOTE]
+   > You need to remove the license from the Active users page. You can't remove the license from the Shared mailbox page because licenses are user settings.
+
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.
-
-::: moniker-end
+1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.
 
    > [!NOTE]
    > You need to remove the license from the Active users page. You can't remove the license from the Shared mailbox page because licenses are user settings.
+
+::: moniker-end
   
 2. Select the shared mailbox.
 
@@ -74,5 +75,4 @@ Shared mailboxes usually don't require a license. Follow these instructions to r
 [About shared mailboxes](about-shared-mailboxes.md) (article)\
 [Create a shared mailbox](create-a-shared-mailbox.md) (article)\
 [Configure a shared mailbox](configure-a-shared-mailbox.md) (article)\
-[Convert a user mailbox to a shared mailbox](convert-user-mailbox-to-shared-mailbox.md) (article)\
-[Resolve issues with shared mailboxes](resolve-issues-with-shared-mailboxes.md) (article)
+[Convert a user mailbox to a shared mailbox](convert-user-mailbox-to-shared-mailbox.md) (article)

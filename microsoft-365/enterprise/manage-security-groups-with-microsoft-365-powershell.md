@@ -15,10 +15,11 @@ ms.collection:
 - Ent_O365
 f1.keywords:
 - CSH
-ms.custom: 
-- PowerShell
-- Ent_Office_Other
-- O365ITProTrain
+ms.custom:
+  - PowerShell
+  - Ent_Office_Other
+  - O365ITProTrain
+  - has-azure-ad-ps-ref
 description: "Learn how to use PowerShell to manage security groups."
 ---
 
@@ -122,7 +123,7 @@ $groupName="<display name of the group>"
 Remove-AzureADGroupOwner -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $groupName }).ObjectId -OwnerId (Get-AzureADUser | Where { $_.DisplayName -eq $userName }).ObjectId
 ```
 
-## Use the Microsoft Azure Active Directory Module for Windows PowerShell
+## Use the Microsoft Azure Active Directory module for Windows PowerShell
 
 First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 

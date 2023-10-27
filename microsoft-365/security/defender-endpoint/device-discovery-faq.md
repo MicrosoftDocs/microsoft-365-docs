@@ -89,7 +89,7 @@ As device discovery uses passive methods to discover devices in the network, any
 
 ## How frequent is the active probing?
 
-Devices will actively be probed when changes in device characteristics are observed to make sure the existing information is up-to-date (typically, devices probed no more than once in a three-week period)
+Devices will actively be probed when changes in device characteristics are observed to make sure the existing information is up to date (typically, devices probed no more than once in a three-week period)
 
 ## My security tool raised alert on UnicastScanner.ps1 / PSScript_{GUID}.ps1 or port scanning activity initiated by it, what should I do?
 

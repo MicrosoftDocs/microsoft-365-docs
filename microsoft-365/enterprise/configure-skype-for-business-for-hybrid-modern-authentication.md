@@ -17,7 +17,9 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Learn how to configure Skype for Business on-premises to use Hybrid Modern Authentication (HMA), offering you more secure user authentication and authorization.
-ms.custom: seo-marvel-apr2020
+ms.custom:
+  - seo-marvel-apr2020
+  - has-azure-ad-ps-ref
 ---
 
 # How to configure Skype for Business on-premises to use Hybrid Modern Authentication
@@ -114,14 +116,16 @@ Follow the instructions here: [How to configure Exchange Server on-premises to u
 
 ## Turn on Hybrid Modern Authentication for Skype for Business on-premises
 
-### Add on-premises web service URLs as SPNs in Azure Active Directory
+<a name='add-on-premises-web-service-urls-as-spns-in-azure-active-directory'></a>
+
+### Add on-premises web service URLs as SPNs in Microsoft Entra ID
 
 Now you'll need to run commands to add the URLs (collected earlier) as Service Principals in SFBO.
 
 > [!NOTE]
 > Service principal names (SPNs) identify web services and associate them with a security principal (such as an account name or group) so that the service can act on the behalf of an authorized user. Clients authenticating to a server make use of information that's contained in SPNs.
 
-1. First, connect to Azure Active Directory (Azure AD) with [these instructions](/powershell/azure/active-directory/overview).
+1. First, connect to Microsoft Entra ID with [these instructions](/powershell/azure/active-directory/overview).
 
 2. Run this command, on-premises, to get a list of SFB web service URLs.
 

@@ -131,7 +131,7 @@ Users who are assigned to multiple group themes will be shown the default theme.
 
 ### Why can’t I delete the default theme?  
 
-The default theme can only be deleted once all group themes are deleted. Make sure you delete all group themes before you try to delete the group theme.
+The default theme can only be deleted once all group themes are deleted. Make sure you delete all group themes before you try to delete the default theme.
 
 ### Why am I receiving an error message every time I upload a logo URL
 

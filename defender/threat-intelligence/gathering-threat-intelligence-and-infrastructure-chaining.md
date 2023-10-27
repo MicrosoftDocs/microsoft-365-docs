@@ -20,7 +20,7 @@ In this tutorial, you will learn how to:
 
 ## Prerequisites
 
-- An Azure Active Directory or personal Microsoft account. [Login or create an account](https://signup.microsoft.com/)
+- A Microsoft Entra ID or personal Microsoft account. [Login or create an account](https://signup.microsoft.com/)
 - A Microsoft Defender Threat Intelligence (Defender TI) Premium license.
 
     > [!NOTE]
@@ -118,7 +118,9 @@ But because our virtual users capture the DOM and find all the dynamic links and
 
             ![Tutorial Infra Chain My Piltowcom 2 Whois](media/tutorialInfraChainMyPiltowcom2Whois.png)
         2. mypiltow[.]com
-        3. If you select the Whois record from October of 2018, you will find that mypiltow[.]com was registered in Hong Kong, China and is privacy protected by Domain ID Shield Service CO.
+
+        3. If you select the Whois record from October of 2018, you will find that mypiltow[.]com was registered in Hong Kong SAR and is privacy protected by Domain ID Shield Service CO.
+
         4. mypiltow[.]com’s registrar is OnlineNIC, Inc.
 
             ![Tutorial Infra Chain My Piltowcom 2 Whois](media/tutorialInfraChainMyPiltowcom2Whois.png)

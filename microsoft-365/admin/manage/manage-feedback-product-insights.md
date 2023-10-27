@@ -137,9 +137,9 @@ Verbatim Recall- 94%
 
 Charts are filtered by the NPS rating as follows:
 
-- Detractors are unhappy customers who are unlikely to recommend your product or service.
-- Passives are customers that are satisfied with the service but not enough to recommend your product or service.
-- Promoters- Happy customers that are loyal, enthusiastic and are likely to recommend your product or service.
+- Detractors are unhappy customers who are unlikely to recommend your product or service. For example, 1-3 on the 5 point scale.
+- Passives are customers that are satisfied with the service but not enough to recommend your product or service. For example, 4 on the 5 point scale.
+- Promoters- Happy customers that are loyal, enthusiastic and are likely to recommend your product or service. For example, 5 on the 5 point scale.
 
 :::image type="content" source="../../media/how-likely-recommend.png" alt-text="Screenshot: Chart showing how likely are you to recommend an app to a friend or colleague" lightbox="../../media/how-likely-recommend.png":::
 

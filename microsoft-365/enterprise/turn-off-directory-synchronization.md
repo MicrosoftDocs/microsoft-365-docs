@@ -10,9 +10,10 @@ ms.service: microsoft-365-enterprise
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
-ms.custom: 
- - Adm_O365
- - seo-marvel-apr2020
+ms.custom:
+  - Adm_O365
+  - seo-marvel-apr2020
+  - has-azure-ad-ps-ref
 ms.collection:
 - scotvorg
 - Ent_O365
@@ -33,7 +34,7 @@ You can use PowerShell to turn off directory synchronization and convert your sy
 ## Turn off directory synchronization  
 To turn off Directory synchronization:
   
-1. First, install the required software and connect to your Microsoft 365 subscription. For instructions, see [Connect with the Microsoft Azure Active Directory Module for Windows PowerShell](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+1. First, install the required software and connect to your Microsoft 365 subscription. For instructions, see [Connect with the Microsoft Azure Active Directory module for Windows PowerShell](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
     
 2. Use [Set-MsolDirSyncEnabled](/previous-versions/azure/dn194097(v=azure.100)) to disable directory synchronization: 
     

@@ -11,7 +11,7 @@ f1.keywords:
 ms.author: bagol
 author: batamig
 manager: raynew
-ms.date: 06/28/2023
+ms.date: 08/29/2023
 audience: ITPro
 ms.topic: conceptual
 search.appverid: 
@@ -38,7 +38,7 @@ Microsoft Defender for Identity contributes identity focused information into th
 
 ## Converged experiences in Microsoft 365 Defender
 
-[Microsoft 365 Defender](https://security.microsoft.com) combines security capabilities that protect, detect, investigate, and respond to email, collaboration, identity, and device threats, and now includes all functionality provided in the legacy, classic Defender for Identity portal.
+[Microsoft 365 Defender](https://security.microsoft.com) combines security capabilities that protect, detect, investigate, and respond to email, collaboration, identity, and device threats, and now includes all functionality provided in the [legacy, classic Defender for Identity portal](/previous-versions/defender-for-identity).
 
 While data placement might differ from the classic Defender for Identity portal, your data is now integrated into Microsoft 365 Defender pages so that you can view your data across all of your monitored entities.
 
@@ -88,7 +88,7 @@ The table below lists the changes in navigation between Microsoft Defender for I
 | **Defender for** Identity  | **Microsoft 365 Defender**                                   |
 | -------------------------- | ------------------------------------------------------------ |
 | **Timeline**                   |- Microsoft 365 Defender Alerts/Incidents queue                |
-| **Reports**                    |The following types of reports are available from the **Settings > Identities > Report management** page in Microsoft 365 Defender, either for immediate download or scheduled for a periodic email delivery: <br><br>- A summary report of alerts and health issues you should take care of. <br>- A list of each time a modification is made to sensitive groups. <br>- A list of source computer and account passwords that are detected as being sent in clear text.<br>- A list of the sensitive accounts exposed in lateral movement paths. <br><br>For more information, see [Report management](/defender-for-identity/reports).  |
+| **Reports**                    |The following types of reports are available from the **Reports** > **Identities** > **Report management** page in Microsoft 365 Defender, either for immediate download or scheduled for a periodic email delivery: <br><br>- A summary report of alerts and health issues you should take care of. <br>- A list of each time a modification is made to sensitive groups. <br>- A list of source computer and account passwords that are detected as being sent in clear text.<br>- A list of the sensitive accounts exposed in lateral movement paths. <br><br>For more information, see [Report management](/defender-for-identity/reports).  |
 | **Identity page**                  | Microsoft 365 Defender user details page                             |
 | **Device page**                | Microsoft 365 Defender device details page                           |
 | **Group page**                 | Microsoft 365 Defender groups side pane                      |
@@ -111,3 +111,4 @@ For more information, see:
 - [Microsoft 365 Defender](microsoft-365-defender.md)
 - [Microsoft Defender for Identity](/defender-for-identity/)
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+

@@ -40,7 +40,7 @@ When the Incident page loads you can filter and prioritize by clicking columns t
 
 Now you have a prioritized list of incidents, from which you can select to rename, assign, classify, tag, change the status or add comments via the Manage incidents button.
 
-Use the filters to make sure Microsoft Defender for Office items are included.
+Use the filters to make sure Microsoft Defender for Office 365 items are included.
 
 If you are looking for specific alerts, either use the incident search capability (*Search for name or ID*) or consider using the alert queue filtering on a specific alert.
 

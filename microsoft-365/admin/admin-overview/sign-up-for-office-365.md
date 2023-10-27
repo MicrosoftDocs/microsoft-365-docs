@@ -88,7 +88,7 @@ If you start with a free trial, you can [buy it later](../../commerce/try-or-buy
   
 You don't need to cancel your trial. If you don't buy the trial subscription, it automatically expires at the end of the trial period, and all the information is permanently deleted.
 
-## Watch: Sign up for Microsoft 365 Business Premium
+## Watch: Sign up for Microsoft 365 Business Standard
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX]
 
@@ -98,7 +98,7 @@ You don't need to cancel your trial. If you don't buy the trial subscription, it
 
 - **The address and contact information for your subscription:**
 
-  - **Country** where the services will be used. You **won't** be able to change the country later, even during the sign-up process; you'll have to restart the sign-up wizard.
+  - **Country** where the services will be used. You **won't** be able to change the country/region later, even during the sign-up process; you'll have to restart the sign-up wizard.
 
   - **Email** and **phone number** so we can contact you if needed about your subscription. For example, if you forget your password, we would use this information to send you a temporary one. We also send your billing information to the email address you specify.
 
@@ -118,7 +118,7 @@ You don't need to cancel your trial. If you don't buy the trial subscription, it
     > [!IMPORTANT]
     >  When you sign up, be sure to choose the best payment option for your organization. Changing payment options involves calling billing support.
 
-## Watch: Set up Microsoft 365 Business Premium
+## Watch: Set up Microsoft 365 Business Standard
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 

@@ -38,11 +38,17 @@ Priority account protection helps IT and security teams ensure a high quality of
 1. Identify the users, groups, or domains you would like to tag as priority accounts.
 1. Login to the [Microsoft Security Portal](https://security.microsoft.com/) and navigate to Settings on the left navigation bar.
 1. Select Email & collaboration on the page that loads and then click User tags
-1. On the User tags page, select the Priority account tag and press Edit tag
+1. On the User tags page, select the Priority account tag and press Edit
 1. On the flyout that appears, select Add members
 1. Search for the users you wish to tag, select one or more users and press Add
 1. Review the members you have selected and press Next
 1. Press Submit to confirm the changes
+
+## Confirm priority account protection is enabled for tagged users
+
+1. Login to the [Microsoft Security Portal](https://security.microsoft.com/) and navigate to Settings on the left navigation bar.
+1. Select **Priority account protection**
+1. Ensure the protection is set to "On"
 
 To learn what priority account tags are see [Manage and monitor priority accounts - Microsoft 365 admin | Microsoft Docs](../../../admin/setup/priority-accounts.md).
 
@@ -59,3 +65,5 @@ If you want to achieve these steps via [Exchange Online PowerShell](/powershell/
 - View a list of priority accounts: `Get-User -IsVIP | select Identity`
 - Add user to list of priority accounts: `Set-User -VIP $true -Identity <Identity>`
 - Remove user from list of priority accounts: `Set-User -VIP $false -Identity <Identity>`
+
+

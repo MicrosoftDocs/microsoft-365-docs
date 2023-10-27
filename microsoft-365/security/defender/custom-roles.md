@@ -39,10 +39,10 @@ search.appverid:
 
 There are two types of roles that can be used to access to Microsoft 365 Defender:
 
-- **Global Azure Active Directory (AD) roles**
+- **Global Microsoft Entra roles**
 - **Custom roles**
 
-Access to Microsoft 365 Defender can be managed collectively by using [Global roles in Azure Active Directory (AAD)](m365d-permissions.md)
+Access to Microsoft 365 Defender can be managed collectively by using [Global roles in Microsoft Entra ID](m365d-permissions.md)
 
 If you need greater flexibility and control over access to specific product data, Microsoft 365 Defender access can also be managed with the creation of Custom roles through each respective security portal.
 
@@ -79,7 +79,7 @@ Permissions and roles can also be managed in the Microsoft 365 Defender portal:
 
 ## Required roles and permissions
 
-The following table outlines the roles and permissions required to access each unified experience in each workload. Roles defined in the table below refer to custom roles in individual portals and are not connected to global roles in Azure AD, even if similarly named.
+The following table outlines the roles and permissions required to access each unified experience in each workload. Roles defined in the table below refer to custom roles in individual portals and are not connected to global roles in Microsoft Entra ID, even if similarly named.
 
 > [!NOTE]
 > Incident management requires management permissions for all products that are part of the incident.
@@ -87,7 +87,7 @@ The following table outlines the roles and permissions required to access each u
 |Microsoft 365 Defender workload|One of the following roles is required for Defender for Endpoint|One of the following roles is required for Defender for Office 365|One of the following roles is required for Defender for Cloud Apps|
 |---|---|---|---|
 |Viewing investigation data: <ul><li>Alert page</li> <li>Alerts queue</li> <li>Incidents</li>  <li>Incident queue</li> <li>Action center</li></ul>|View data- security operations|<ul><li>View-only Manage alerts </li> <li>Organization configuration</li><li>Audit logs</li> <li>View-only audit logs</li> <li>Security reader</li> <li>Security admin</li><li>View-only recipients</li></ul>|<ul><li>Global admin</li> <li>Security admin</li> <li>Compliance admin</li> <li>Security operator</li> <li>Security reader</li> <li>Global reader</li></ul>|
-|Viewing hunting data|View data- security operations|<ul><li>Security reader</li> <li>Security admin</li> <li>View-only recipients</li>|<ul><li>Global admin</li> <li>Security admin</li> <li>Compliance admin</li> <li>Security operator</li> <li>Security reader</li> <li>Global reader</li></ul>|
+|Viewing hunting data, saving, editing, and deleting hunting queries and functions|View data- security operations|<ul><li>Security reader</li> <li>Security admin</li> <li>View-only recipients</li>|<ul><li>Global admin</li> <li>Security admin</li> <li>Compliance admin</li> <li>Security operator</li> <li>Security reader</li> <li>Global reader</li></ul>|
 |Managing alerts and incidents|Alerts investigation|<ul><li>Manage alerts</li> <li>Security admin</li>|<ul><li>Global admin</li> <li>Security admin</li> <li>Compliance admin</li> <li>Security operator</li> <li>Security reader</li></ul>|
 |Action center remediation|Active remediation actions – security operations|Search and purge||
 |Setting custom detections|Manage security settings|<ul><li>Manage alerts</li> <li>Security admin</li></ul>|<ul><li>Global admin</li> <li>Security admin</li> <li>Compliance admin</li> <li>Security operator</li> <li>Security reader</li> <li>Global reader</li></ul>|

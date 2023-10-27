@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
+- mde-ios
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
@@ -33,7 +34,7 @@ ms.date: 12/18/2020
 > [!NOTE]
 > Defender for Endpoint on iOS uses a VPN to provide the Web Protection feature. This is not a regular VPN and is a local or self-looping VPN that does not take traffic outside the device. **Microsoft or your organization, does not see your browsing activity.**
 
-Defender for Endpoint on iOS collects information from your configured iOS devices and stores it in the same tenant where you have Defender for Endpoint. The information is collected to help keep Defender for Endpoint on iOS secure, up-to-date, performing as expected, and to support the service.
+Defender for Endpoint on iOS collects information from your configured iOS devices and stores it in the same tenant where you have Defender for Endpoint. The information is collected to help keep Defender for Endpoint on iOS secure, up to date, performing as expected, and to support the service.
 
 For more information about data storage, see [Microsoft Defender for Endpoint data storage and privacy](data-storage-privacy.md).
 
@@ -55,8 +56,8 @@ Here is a list of the types of data being collected:
   - Wi-Fi adapter MAC address
   - Randomly generated globally unique identifier (GUID)
 - Tenant, Device, and User information
-  - Azure Active Directory (AD) Device ID and Azure User ID - Uniquely identifies the device, User respectively at Azure Active directory.
-  - Azure tenant ID - GUID that identifies your organization within Azure Active Directory.
+  - Microsoft Entra Device ID and Azure User ID - Uniquely identifies the device, User respectively at Microsoft Entra ID.
+  - Azure tenant ID - GUID that identifies your organization within Microsoft Entra ID.
   - Microsoft Defender for Endpoint org ID - Unique identifier associated with the enterprise that the device belongs to. Allows Microsoft to identify if there are issues affecting a select set of enterprises and the number of enterprises impacted.
   - User Principal Name - Email ID of the user.
 

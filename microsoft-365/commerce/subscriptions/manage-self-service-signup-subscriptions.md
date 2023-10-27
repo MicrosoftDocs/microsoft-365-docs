@@ -15,9 +15,10 @@ ms.collection:
 - scotvorg
 - M365-subscription-management 
 - Adm_O365
-ms.custom: 
-- commerce_subscriptions 
-- AdminSurgePortfolio
+ms.custom:
+  - commerce_subscriptions
+  - AdminSurgePortfolio
+  - has-azure-ad-ps-ref
 search.appverid: MET150
 description: "Learn how to manage free self-service sign-up subscriptions for your organization."
 ms.date: 03/17/2021
@@ -54,4 +55,4 @@ You use the [**Set-MsolCompanySettings**](/powershell/module/msonline/set-msolco
 
 ## I have a self-service sign-up subscription that blocks directory deletion
 
-The self-service sign-up products that individual users can sign up for also create a guest user for authentication in your Azure AD directory. To avoid data loss, these self-service products block directory deletions until they're fully deleted from the directory. They can only be deleted by the Azure AD admin. For more information, see [Delete a directory in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-delete-howto).
+The self-service sign-up products that individual users can sign up for also create a guest user for authentication in your Microsoft Entra directory. To avoid data loss, these self-service products block directory deletions until they're fully deleted from the directory. They can only be deleted by the Microsoft Entra admin. For more information, see [Delete a directory in Microsoft Entra ID](/azure/active-directory/users-groups-roles/directory-delete-howto).

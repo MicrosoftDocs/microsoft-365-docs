@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: shcallaw, kywirpel
-ms.date: 05/05/2023
+ms.date: 08/11/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -35,15 +35,15 @@ Additionally, each partner tenant user must meet the following requirements:
 
 - The partner tenant user must have DAP/GDAP access to the applicable tenant.
 
-  - For DAP, an admin agent group membership.
+  - For DAP, the partner tenant user must be a member of the admin agent group.
 
-  - For GDAP, a role that can create Conditional Access (CA) policies.
-
+  - For GDAP, the partner tenant user must be a member of a security group that has been granted GDAP permissions to the applicable workload associated with the task.
+  
 - The partner tenant user must enable MFA for their user account in the partner tenant.
 
 ## View task details
 
-1. In the left navigation pane in Lighthouse, select **Tenants**.
+1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Tenants**.
 
 2. Select an active tenant.
 

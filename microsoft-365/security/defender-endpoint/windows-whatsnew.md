@@ -7,8 +7,8 @@ ms.service: microsoft-365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-mathavale
-author: v-mathavale
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 05/14/2023
 manager: dansimp

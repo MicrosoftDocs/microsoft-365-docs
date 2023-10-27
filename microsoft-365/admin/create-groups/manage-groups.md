@@ -1,6 +1,6 @@
 ---
 title: "Manage a group in the admin center"
-ms.reviewer: arvaradh
+ms.reviewer: rahulnayak
 ms.date: 02/18/2020
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -16,7 +16,9 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
-ms.custom: admindeeplinkMAC
+ms.custom:
+  - admindeeplinkMAC
+  - has-azure-ad-ps-ref
 search.appverid:
 - BCS160
 - MET150

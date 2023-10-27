@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 07/06/2020
+ms.date: 08/30/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -29,6 +29,9 @@ description: "Learn about using Centralized add-ins to deploy add-ins to users a
 ---
 
 # Manage add-ins in the Microsoft 365 admin center
+
+> [!NOTE]
+> [Integrated Apps](test-and-deploy-microsoft-365-apps.md) is the recommended and most feature-rich way for most customers to centrally deploy Office add-ins to users and groups within your organization.
 
 Office Add-ins help you personalize your documents and streamline the way you access information on the web. See [Start using your Office Add-in](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862). 
 
@@ -99,12 +102,12 @@ As an organization you may wish to prevent the download of new Office Add-ins fr
       - Mac
       - Office
         
-        
-    - Acquisitions starting within **AppSource**
-        
     - Add-ins within Microsoft 365
         
-    A user who tries to access the store will see the following message: **Sorry, Microsoft 365 has been configured to prevent individual acquisition of Office Store add-ins.**
+    A user who tries to access the store will see the following message: **Office store not available. Unfortunately, your organization has disabled access to the Office Store. Please contact your administrator to get access to the store.**
+
+> [!NOTE]
+> Acquisitions may still be possible from AppSource, but the user will not be able to launch or use the add-in in the client.
   
 Support for turning off the Office Store is available in the following versions:
   

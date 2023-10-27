@@ -98,7 +98,7 @@ DeviceLogonEvents
 * Ensure that your antivirus solution is configurable in its optimal protection state. For Microsoft Defender Antivirus, this includes:
   * [Real time protection](../defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus.md) is enabled.
   * [Tamper protection](../defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection.md) is enabled. In the Microsoft 365 Defender portal, select **Settings > Endpoints > Advanced features > Tamper protection**.
-  * [Attack surface reduction (ASR)](../defender-endpoint/enable-attack-surface-reduction.md) rules are enabled.
+  * [Attack surface reduction](../defender-endpoint/enable-attack-surface-reduction.md) rules are enabled.
   * [Cloud protection](../defender-endpoint/enable-attack-surface-reduction.md) is enabled.
 * Disable Exchange ActiveSync and OneDrive sync.
   * To disable Exchange ActiveSync for a mailbox, see [How to disable Exchange ActiveSync for users in Exchange Online](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-exchange-activesync).
@@ -130,7 +130,7 @@ Use this section to investigate the attack and plan your response.
 
 ### Identify the ransomware process
 
-* Using [advanced hunting](/microsoft-365/security/defender/advanced-hunting-overview.md), search for the identified process in the process creation events on other devices.
+* Using [advanced hunting](advanced-hunting-overview.md), search for the identified process in the process creation events on other devices.
 
 ### Look for exposed credentials in the infected devices
 

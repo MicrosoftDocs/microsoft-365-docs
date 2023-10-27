@@ -175,7 +175,7 @@ Company information is included one of the Active Directory fields in the templa
 
 ### Is it possible to bring in additional fields from Active Directory?
 
-Additional customization on this data is possible by connecting to the [Microsoft Graph reporting APIs](https://go.microsoft.com/fwlink/p/?linkid=848843) to pull additional fields from Azure Active Directory and join to the dataset. 
+Additional customization on this data is possible by connecting to the [Microsoft Graph reporting APIs](https://go.microsoft.com/fwlink/p/?linkid=848843) to pull additional fields from Microsoft Entra ID and join to the dataset. 
 
 ### Is it possible to aggregate the information in the template app across multiple subscriptions?
 

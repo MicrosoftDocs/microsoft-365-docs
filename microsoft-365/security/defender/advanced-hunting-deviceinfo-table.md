@@ -19,7 +19,7 @@ audience: ITPro
 ms.collection: 
 - tier3
 - m365-security
-ms.topic: conceptual
+ms.topic: reference
 ms.date: 03/07/2023
 ---
 
@@ -48,9 +48,9 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `PublicIP` | `string` | Public IP address used by the onboarded machine to connect to the Microsoft  Defender for Endpoint service. This could be the IP address of the machine itself, a NAT device, or a proxy |
 | `OSArchitecture` | `string` | Architecture of the operating system running on the machine |
 | `OSPlatform` | `string` | Platform of the operating system running on the machine. This indicates specific operating systems, including variations within the same family, such as Windows 11, Windows 10 and Windows 7. |
-| `OSBuild` | `string` | Build version of the operating system running on the machine |
-| `IsAzureADJoined` | `boolean` | Boolean indicator of whether machine is joined to the Azure Active Directory |
-| `AadDeviceId` | `string` | Unique identifier for the device in Azure AD |
+| `OSBuild` | `long` | Build version of the operating system running on the machine |
+| `IsAzureADJoined` | `boolean` | Boolean indicator of whether machine is joined to the Microsoft Entra ID |
+| `AadDeviceId` | `string` | Unique identifier for the device in Microsoft Entra ID |
 | `LoggedOnUsers` | `string` | List of all users that are logged on the machine at the time of the event in JSON array format |
 | `RegistryDeviceTag` | `string` | Machine tag added through the registry |
 | `OSVersion` | `string` | Version of the operating system running on the machine |
@@ -70,9 +70,14 @@ For information on other tables in the advanced hunting schema, [see the advance
 |`SensorHealthState` | `string` | Indicates health of the device's EDR sensor, if onboarded to Microsoft Defender For Endpoint |
 |`IsExcluded`| `bool` | Determines if the device is currently excluded from Microsoft Defender for Vulnerability Management experiences |
 |`ExclusionReason` | `string` | Indicates the reason for device exclusion |
-|`AssetValue`| `string` | Indicates the value of a device as assigned by the user |
-|`ExposureLevel` | `string` | Indicates the exposure level of a device |
-|`IsInternetFacing` | `boolean` | Indicates whether the device is internet-facing |
+|	`AssetValue`| `string` | Indicates the value of a device as assigned by the user |
+|	`ExposureLevel` | `string` | Indicates the exposure level of a device |
+|	`IsInternetFacing` | `boolean` | Indicates whether the device is internet-facing |
+|	`DeviceManualTags` | `string` | Device tags created manually using the portal UI or public API |
+|	`DeviceDynamicTags` | `string` | Device tags assigned automatically using dynamic tagging rules |
+
+
+
 
 
 The `DeviceInfo` table provides device information based on periodic reports or signals (heartbeats) from a device. Complete reports are sent every hour and every time a change happens to a previous heartbeat. 

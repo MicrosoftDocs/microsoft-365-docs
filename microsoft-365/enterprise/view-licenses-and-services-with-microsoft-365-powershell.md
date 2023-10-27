@@ -15,11 +15,12 @@ ms.collection:
 - Ent_O365
 f1.keywords:
 - CSH
-ms.custom: 
-- Ent_Office_Other
-- O365ITProTrain
-- LIL_Placement
-- PowerShell
+ms.custom:
+  - Ent_Office_Other
+  - O365ITProTrain
+  - LIL_Placement
+  - PowerShell
+  - has-azure-ad-ps-ref
 ms.assetid: bb5260a9-a6a3-4f34-b19a-06c6699f6723
 
 description: "Explains how to use PowerShell to view information about the licensing plans, services, and licenses that are available in your Microsoft 365 organization."
@@ -164,7 +165,7 @@ ENTERPRISEPREMIUM is the third row. Therefore, the index value is (3 - 1), or 2.
 
 For a complete list of license plans (also known as product names), their included service plans, and their corresponding friendly names, see [Product names and service plan identifiers for licensing](/azure/active-directory/users-groups-roles/licensing-service-plan-reference).
 
-## Use the Microsoft Azure Active Directory Module for Windows PowerShell
+## Use the Microsoft Azure Active Directory module for Windows PowerShell
 
 First, [connect to your Microsoft 365 tenant](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
@@ -179,7 +180,7 @@ Get-MsolAccountSku
 ```
 
 >[!Note]
->PowerShell Core does not support the Microsoft Azure Active Directory Module for Windows PowerShell module and cmdlets with **Msol** in their name. To continue using these cmdlets, you must run them from Windows PowerShell.
+>PowerShell Core does not support the Microsoft Azure Active Directory module for Windows PowerShell module and cmdlets with **Msol** in their name. To continue using these cmdlets, you must run them from Windows PowerShell.
 >
 
 The results contain the following information:

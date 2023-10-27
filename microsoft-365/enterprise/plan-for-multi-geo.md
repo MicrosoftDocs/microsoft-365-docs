@@ -1,16 +1,18 @@
 ---
 title: "Plan for Microsoft 365 Multi-Geo"
-ms.reviewer: adwood
+ms.reviewer:
 ms.date: 08/10/2020
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise
 f1.keywords:
 - NOCSH
-ms.custom: seo-marvel-apr2020 
+ms.custom:
+  - seo-marvel-apr2020
+  - has-azure-ad-ps-ref
 ms.collection: 
 - Strat_SP_gtc
 - SPO_Content
@@ -50,7 +52,7 @@ Each user should have a _preferred data location_ (PDL) set so that Microsoft 36
 
 Create a list of your users and include their user principal name (UPN) and the Preferred Data Location code. Include your test user and your initial pilot group to start with. You'll need this list for the configuration procedures.
 
-If your users are synchronized from an on-premises Active Directory system to Azure Active Directory, then you must set the preferred data location as an Active Directory attribute and synchronize it by using Azure Active Directory Connect. You can't directly configure the preferred data location for synchronized users using Azure AD PowerShell. The steps to set up PDL in Active Directory and Synchronize it are covered in [Azure Active Directory Connect sync: Configure preferred data location for Microsoft 365 resources](/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
+If your users are synchronized from an on-premises Active Directory system to Microsoft Entra ID, then you must set the preferred data location as an Active Directory attribute and synchronize it by using Microsoft Entra Connect. You can't directly configure the preferred data location for synchronized users using Azure AD PowerShell. The steps to set up PDL in Active Directory and Synchronize it are covered in [Microsoft Entra Connect Sync: Configure preferred data location for Microsoft 365 resources](/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
 
 The administration of a Multi-Geo _Tenant_ can differ from a non-multi-geo _Tenant_ in some scenarios. For example, many SharePoint Online and OneDrive for Business settings and services are multi-geo aware. We recommend that you review [Administering a multi-geo environment](administering-a-multi-geo-environment.md) before you proceed with your configuration.
 

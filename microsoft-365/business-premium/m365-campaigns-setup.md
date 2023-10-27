@@ -7,9 +7,8 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: microsoft-365-security
-ms.subservice: m365bp
-ms.date: 05/10/2023
+ms.service: microsoft-365-business
+ms.date: 10/10/2023
 ms.localizationpriority: medium
 ms.collection: 
 - M365-Campaigns
@@ -26,7 +25,9 @@ description: "Setup overview for Microsoft 365 for Campaigns or other businesses
 
 # Set up Microsoft 365 for Campaigns
 
-This article describes how to get Microsoft 365 for Campaigns (a special offering for campaigns and political parties in the USA), and how to complete the basic setup process and proceed to next steps.
+This article describes how to get Microsoft 365 for Campaigns (a special offering for campaigns and political parties in the USA), how to complete the basic setup process, and identify next steps.
+
+:::image type="content" source="media/mission1.png" alt-text="Diagram showing the Sign in and set up phase highlighted.":::
 
 ## Get Microsoft 365 for Campaigns
 

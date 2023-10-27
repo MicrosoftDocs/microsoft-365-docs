@@ -15,9 +15,10 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom:
-- Ent_TLGs
-- seo-marvel-apr2020
-- admindeeplinkMAC
+  - Ent_TLGs
+  - seo-marvel-apr2020
+  - admindeeplinkMAC
+  - has-azure-ad-ps-ref
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: Use this Test Lab Guide to create a lightweight test environment for testing Microsoft 365 for enterprise.
 ---
@@ -36,24 +37,24 @@ Creating a lightweight test environment involves five phases:
 - [Phase 2: Configure your Office 365 trial subscription](#phase-2-configure-your-office-365-trial-subscription)
 - [Phase 3: Add a Microsoft 365 E5 trial subscription](#phase-3-add-a-microsoft-365-e5-trial-subscription)
 - [Phase 4: Create a Windows 10 Enterprise computer](#phase-4-create-a-windows-10-enterprise-computer)
-- [Phase 5: Join your Windows 10 computer to Azure AD](#phase-5-join-your-windows-10-computer-to-azure-ad)
+- [Phase 5: Join your Windows 10 computer to Microsoft Entra ID](#phase-5-join-your-windows-10-computer-to-azure-ad)
 
 Use the resulting environment to test the features and functionality of [Microsoft 365 for enterprise](https://www.microsoft.com/microsoft-365/enterprise).
 
 ![Test Lab Guides for the Microsoft cloud.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
 > [!TIP]
-> For a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack, see [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
+> For a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack, see [Microsoft 365 for enterprise Test Lab Guide Stack](https://download.microsoft.com/download/5/e/4/5e43a139-09c5-4700-b846-e468444bc557/Microsoft365EnterpriseTLGStack.pdf).
 
 >[!NOTE]
->You might want to print this article to record the specific information that you will need for this environment over the 30 days of the Office 365 trial subscription. You can easily extend the trail subscription for another 30 days. For a permanent test environment, create a new paid subscription with a separate Azure AD tenant and a small number of licenses.
+>You might want to print this article to record the specific information that you will need for this environment over the 30 days of the Office 365 trial subscription. You can easily extend the trail subscription for another 30 days. For a permanent test environment, create a new paid subscription with a separate Microsoft Entra tenant and a small number of licenses.
 
 ## Phase 1: Create your Microsoft 365 E5 subscription
 
-We start with an Microsoft 365 E5 trial subscription and then add the Microsoft 365 E5 subscription to it.
+We start with a Microsoft 365 E5 trial subscription and then add the Microsoft 365 E5 subscription to it.
 
 >[!NOTE]
->We recommend that you create a trial subscription of Office 365 so that your test environment has a separate Azure AD tenant from any paid subscriptions you currently have. This separation means that you can add and remove users and groups in the test tenant without affecting your production subscriptions.
+>We recommend that you create a trial subscription of Office 365 so that your test environment has a separate Microsoft Entra tenant from any paid subscriptions you currently have. This separation means that you can add and remove users and groups in the test tenant without affecting your production subscriptions.
 
 To start your Microsoft 365 E5 trial subscription, you first need a fictitious company name and a new Microsoft account.
   
@@ -67,7 +68,7 @@ To start your Microsoft 365 E5 trial subscription, you first need a fictitious c
 
 ### Sign up for an Office 365 E5 trial subscription
 
-1. In your browser, go to [https://aka.ms/e5trial](https://aka.ms/e5trial).
+1. In your browser, go to the [Office 365 E5 purchase page](https://go.microsoft.com/fwlink/p/?linkid=2245837) and select **Free trial**.
 
 2. In step 1 of the **Thank you for choosing Office 365 E5** page, enter your new email account address.
 3. In step 2 of the trail subscription process, enter the requested information, and then perform the verification.
@@ -124,7 +125,7 @@ If you haven't already recorded these values, record them now:
 
 - Your trial subscription organization name: ![Line.](../media/Common-Images/TableLine.png) (from step 4 of Phase 1)
 
-- To list the accounts for User 2, User 3, User 4, and User 5, run the following command from the Windows Azure Active Directory Module for Windows PowerShell prompt:
+- To list the accounts for User 2, User 3, User 4, and User 5, run the following command from the Windows Azure Active Directory module for Windows PowerShell prompt:
 
   ```powershell
   Get-AzureADUser | Sort UserPrincipalName | Select UserPrincipalName
@@ -266,18 +267,20 @@ $vm=Set-AzVMOSDisk -VM $vm -Name WIN10-TestLab-OSDisk -DiskSizeInGB 128 -CreateO
 New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 ```
 
-## Phase 5: Join your Windows 10 computer to Azure AD
+<a name='phase-5-join-your-windows-10-computer-to-azure-ad'></a>
+
+## Phase 5: Join your Windows 10 computer to Microsoft Entra ID
 
 After the physical or virtual machine with Windows 10 Enterprise is created, sign in with a local administrator account.
   
 > [!NOTE]
 > For a virtual machine in Azure, use  [these instructions](/azure/virtual-machines/windows/connect-logon) to connect to it.
   
-Next, join the WIN10 computer to the Azure AD tenant of your Microsoft 365 E5 subscription.
+Next, join the WIN10 computer to the Microsoft Entra tenant of your Microsoft 365 E5 subscription.
   
 1. On the desktop of the WIN10 computer, select **Start > Settings > Accounts > Access work or school > Connect**.
 
-2. In the **Set up a work or school account** dialog box, select **Join this device to Azure Active Directory**.
+2. In the **Set up a work or school account** dialog box, select **Join this device to Microsoft Entra ID**.
 
 3. In **Work or school account**, enter the global administrator account name of your Microsoft 365 E5 subscription, and then select **Next**.
 
@@ -303,8 +306,8 @@ Your resulting environment looks like this:
 
 This includes the WIN10 computer that has:
 
-- Joined the Azure AD tenant of your Microsoft 365 E5 subscription.
-- Enrolled as an Azure AD device in Microsoft Intune (EMS).
+- Joined the Microsoft Entra tenant of your Microsoft 365 E5 subscription.
+- Enrolled as a Microsoft Entra device in Microsoft Intune (EMS).
 - Microsoft 365 Apps for enterprise installed.
   
 You are now ready to experiment with additional features of [Microsoft 365 for enterprise](https://www.microsoft.com/microsoft-365/enterprise).

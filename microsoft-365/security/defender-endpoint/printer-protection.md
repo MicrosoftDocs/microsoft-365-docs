@@ -14,6 +14,7 @@ ms.topic: conceptual
 ms.collection: 
 - m365-security
 - tier3
+- mde-asr
 ms.custom: admindeeplinkDEFENDER
 search.appverid: met150
 ---
@@ -84,7 +85,7 @@ For Intune, currently Device Control Printer Protection supports OMA-URI only.
 
 - Apply policy over user:
 
-  `./Vendor/MSFT/Policy/Config/Printers/EnableDeviceControlUser`
+  `./User/Vendor/MSFT/Policy/Config/Printers/EnableDeviceControlUser`
 
 The CSP support string with `<enabled/>`:
 
@@ -98,7 +99,7 @@ The CSP support string with `<enabled/>`:
 
 - Apply policy over user:
 
-  `./Vendor/MSFT/Policy/Config/Printers/ApprovedUsbPrintDevicesUser`
+  `./User/Vendor/MSFT/Policy/Config/Printers/ApprovedUsbPrintDevicesUser`
 
 The CSP support string with approved USB printers via 'ApprovedUsbPrintDevices' property. Example: `<enabled/><data id="ApprovedUsbPrintDevices_List" value="03F0/0853,0351/0872"/>`:
 

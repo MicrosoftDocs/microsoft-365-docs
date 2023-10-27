@@ -7,8 +7,7 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: microsoft-365-security
-ms.subservice: m365bp
+ms.service: microsoft-365-business
 ms.date: 05/02/2023
 ms.localizationpriority: medium
 ms.collection:
@@ -27,10 +26,9 @@ Your Microsoft 365 Business Premium subscription includes information protection
 
 Use this article to get started with your information protection capabilities.
 
-
 ## Before you begin
 
-Make sure you have one of the following roles assigned in Azure Active Directory:
+Make sure you have one of the following roles assigned in Microsoft Entra ID:
 
 - Global Administrator
 - Compliance Administrator

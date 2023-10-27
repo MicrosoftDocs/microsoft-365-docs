@@ -150,11 +150,11 @@ For additional methods, see [Windows 10 deployment scenarios](/windows/deploymen
 
 Here's a visual summary of the upgrade, migration, and move-to-cloud options for Office 2010 clients and servers and Windows 7:
 
-[![Image showing the options for the end of support for Office 2010 clients and servers and Windows 7.](../media/microsoft-365-overview/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
+[![Image showing the options for the end of support for Office 2010 clients and servers and Windows 7.](../media/microsoft-365-overview/office2010-windows7-end-of-support.png)](https://download.microsoft.com/download/2/7/d/27da4118-32ae-4ffe-90d8-a61e7c895ba0/Office2010Windows7EndOfSupport.pdf)
 
 This one-page poster is a quick way to understand the paths you can take to manage the end of support for Office 2010 client and server products and Windows 7. The preferred paths are supported in Microsoft 365 for Enterprise.
 
-You can [download this poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf) and print it in letter size, legal size, or tabloid (11 x 17) size.
+You can [download this poster](https://download.microsoft.com/download/2/7/d/27da4118-32ae-4ffe-90d8-a61e7c895ba0/Office2010Windows7EndOfSupport.pdf) and print it in letter size, legal size, or tabloid (11 x 17) size.
 
 ## Transition your entire organization
 

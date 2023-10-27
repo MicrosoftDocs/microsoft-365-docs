@@ -22,7 +22,7 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.date: 10/13/2021
+ms.date: 08/11/2023
 ---
 
 # Investigate and respond with Microsoft 365 Defender
@@ -68,7 +68,7 @@ See [Proactively hunt for threats with advanced hunting in Microsoft 365 Defende
 
 Threat analytics is a threat intelligence capability in Microsoft 365 Defender designed to assist your security team to be as efficient as possible while facing emerging threats. It includes detailed analysis and information on:
 
-- Active threat actors and their campaigns
+- Active [threat actors](/microsoft-365/security/intelligence/microsoft-threat-actor-naming) and their campaigns
 - Popular and new attack techniques
 - Critical vulnerabilities
 - Common attack surfaces
