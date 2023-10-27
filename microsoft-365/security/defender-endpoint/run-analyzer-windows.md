@@ -38,10 +38,10 @@ The file is downloaded to the “Downloads” folder (default).
 - ![File has downloaded](media/run-analyzer-windows/image1.png)
 
 Select **Show in folder**
-- ![Properties highlighted](media/run-analyzer-windowsimage2.png)
+- ![Properties highlighted](media/run-analyzer-windows/image2.png)
 
 Right-click on **MDEClientAnalyzer.zip**, and then select **Properties**.
-- ![Extract all menu option](media/run-analyzer-windowsimage3.png)
+- ![Extract all menu option](media/run-analyzer-windows/image3.png)
 
 Extract the contents of MDEClientAnalyzer.zip on the machine.
 
