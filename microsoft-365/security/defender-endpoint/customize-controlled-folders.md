@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
-ms.reviewer: oogunrinde, dbodorin, vladiso, nixanm, anvascon
+ms.reviewer: dbodorin, vladiso, nixanm, anvascon
 manager: dansimp
 ms.subservice: mde
 ms.topic: how-to
@@ -16,7 +16,7 @@ ms.collection:
 - tier2
 - mde-asr
 search.appverid: met150
-ms.date: 03/14/2023
+ms.date: 10/27/2023
 ---
 
 # Customize controlled folder access
