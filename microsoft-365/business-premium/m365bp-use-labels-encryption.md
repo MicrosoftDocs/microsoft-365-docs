@@ -24,7 +24,7 @@ description: "Learn how to send encrypted email using Outlook."
 
 # Encrypt or label your sensitive email in Microsoft 365
 
-Your data and information is important, and often, confidential. The objective here is to help protect this sensitive information by ensuring everyone is using sensitivity labels so that email recipients treat the information with the utmost sensitivity.
+Your data and information is important, and often, confidential. This article describes how to help protect sensitive information by using sensitivity labels. Sensitivity labels can help ensure that email recipients treat the information with the right level of security.
 
 ## Best practices
 
@@ -51,7 +51,9 @@ Admins can create mail flow rules to automatically protect email messages that a
 You create mail flow rules to encrypt email messages with Microsoft Purview Message Encryption. Define mail flow rules for triggering message encryption by using the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center (EAC)</a>.
 
 1. In a web browser, using a work or school account that has been granted global administrator permissions, sign in.
+
 2. Choose the Admin tile.
+
 3. In the Admin center, choose **Admin centers > Exchange**.
 
 For more information, see [Define mail flow rules to encrypt email messages](../compliance/define-mail-flow-rules-to-encrypt-email.md).
@@ -60,6 +62,6 @@ For more information, see [Define mail flow rules to encrypt email messages](../
 
 You can also apply branding to customize the look and the text in the email messages. For more information, see [Add your organization's brand to your encrypted messages](../compliance/email-encryption.md).
 
-## Next mission
+## Next step
 
-If you've gotten this far, you've successfully completed another mission, so congratulations! There's no time to rest on our successes, so let's get right to setting up a safe and secure environment in which the team can [collaborate safely](m365bp-collaborate-share-securely.md).
+[Learn how to collaborate securely](m365bp-collaborate-share-securely.md).
