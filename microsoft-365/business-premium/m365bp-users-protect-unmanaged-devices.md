@@ -26,7 +26,7 @@ description: "Protect unmanaged computers from cyberattacks with Microsoft 365 B
 
 # Protect unmanaged computers with Microsoft 365 Business Premium
 
-This objective is focused on protecting unmanaged computers, such as Windows 10 or 11 computers and Mac computers that are neither enrolled in Microsoft Intune nor onboarded to Microsoft Defender for Business. If your business or campaign has staff who bring their own devices, such as personally owned phones, tablets, and PCs, ask users to take certain steps to protect business information that might be on their devices.
+A good goal to achieve is to protect unmanaged computers, such as Windows 10 or 11 computers and Mac computers that are neither enrolled in Microsoft Intune nor onboarded to Microsoft Defender for Business. If your business or campaign has staff who bring their own devices, such as personally owned phones, tablets, and PCs, ask users to take certain steps to protect business information that might be on their devices.
 
 > [!NOTE]
 > This article applies primarily to unmanaged (or BYOD) devices. Guidance for protecting managed devices is available here: [Set up and secure managed devices](m365bp-protect-managed-devices.md).
@@ -57,9 +57,9 @@ If you have an earlier version of Windows and are using Microsoft Security Essen
 
 You should always run Windows Defender Firewall even if you have another firewall turned on. Turning off Windows Defender Firewall might make your device (and your network, if you have one) more vulnerable to unauthorized access. See [Turn Windows Firewall on or off](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off) for instructions.
 
-## Next mission
+## Next goal
 
-Okay, mission complete! Now, let's work on [securing the email system](m365bp-use-email-securely.md) against phishing and other attacks.
+Okay, goal complete! Now, let's work on [securing the email system](m365bp-use-email-securely.md) against phishing and other attacks.
 
 ## [Mac](#tab/Mac)
 
@@ -79,6 +79,6 @@ You can also reduce the risk of malware by using software only from reliable sou
 
 Use firewall settings to protect your Mac from unwanted contact initiated by other computers when you're connected to the Internet or a network. Without this protection, your Mac might be more vulnerable to unauthorized access. See [about the application firewall](https://support.apple.com/HT201642) for instructions.
 
-## Next mission
+## Next goal
 
-Okay, mission complete! Now, let's work on [securing email usage](m365bp-use-email-securely.md) against phishing and other attacks.
+Okay, goal complete! Now, let's work on [securing email usage](m365bp-use-email-securely.md) against phishing and other attacks.

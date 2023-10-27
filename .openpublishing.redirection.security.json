@@ -1216,6 +1216,11 @@
          "redirect_document_id":false
       },
       {
+         "source_path":"microsoft-365/security/defender-endpoint/onboard-offline-machines.md",
+         "redirect_url":"/microsoft-365/security/defender-endpoint/configure-environment",
+         "redirect_document_id":false
+      },
+      {
          "source_path":"microsoft-365/security/defender-endpoint/configure-endpoints.md",
          "redirect_url":"/microsoft-365/security/defender-endpoint/onboard-windows-client",
          "redirect_document_id":false
@@ -3643,6 +3648,11 @@
     {
     "source_path":"microsoft-365/security/defender-endpoint/helpful-resources.md",
     "redirect_url":"/microsoft-365/security/defender-endpoint/",
+    "redirect_document_id":false
+    },
+    {
+    "source_path":"microsoft-365/security/defender-endpoint/turn-on-definition-retirement.md",
+    "redirect_url":"/microsoft-365/security/defender-endpoint/configuration-management-reference-microsoft-defender-antivirus/",
     "redirect_document_id":false
     }
    ]

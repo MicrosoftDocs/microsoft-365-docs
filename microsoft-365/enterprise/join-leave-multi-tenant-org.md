@@ -41,8 +41,8 @@ When you leave a multitenant organization, the cross-tenant access settings and 
 
 To join an existing multitenant organization in Microsoft 365
 
-1. In the Microsoft 365 admin center, expand **Settings**.
-1. Select **Org settings**.
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) as a global administrator.
+1. Expand **Settings** and select **Org settings**.
 1. On the **Organization profile** tab, select **Multitenant collaboration**.
 1. Select **Get started**.
 1. Select **Join an existing multitenant organization**.
@@ -64,8 +64,8 @@ You can leave a multitenant organization as long as your tenant isn't the last o
 
 To remove a tenant from a multitenant organization in Microsoft 365
 
-1. In the Microsoft 365 admin center, expand **Settings**.
-1. Select **Org settings**.
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) as a global administrator.
+1. Expand **Settings** and select **Org settings**.
 1. On the **Organization profile** tab, select **Multitenant collaboration**.
 1. Select the check box next to the tenant you want to remove.
 1. Select **Remove tenant**.
@@ -75,7 +75,7 @@ Removing a tenant doesn't change any user synchronization configurations or cros
 
 #### Remove synchronized users from other tenants
 
-When you remove a tenant from a multitenant organization, you may want to stop synchronizing users between that tenant and the tenants that remain in the multitenant organization. This can be done by updating the cross-tenant synchronization configuration in Microsoft Entra ID and removing the security groups being synchronized, then restarting the synchronization with zero users.
+When you remove a tenant from a multitenant organization, you might want to stop synchronizing users between that tenant and the tenants that remain in the multitenant organization. This can be done by updating the cross-tenant synchronization configuration in Microsoft Entra ID and removing the security groups being synchronized, then restarting the synchronization with zero users.
 
 Cross-tenant synchronization configurations for multitenant organizations that were created in the Microsoft 365 admin center are named *MTO_Sync_\<TenantID\>* in Microsoft Entra cross-tenant synchronization.
 
@@ -100,7 +100,7 @@ Once the users have been removed from the other tenants' directories, you can st
 
 #### Stop user sync and automatic invitation redemption
 
-Once you remove a tenant from a multitenant organization, you may want to stop user sync and automatic invitation redemption with the tenants that remain in the multitenant organization.
+Once you remove a tenant from a multitenant organization, you might want to stop user sync and automatic invitation redemption with the tenants that remain in the multitenant organization.
 
 To prevent user sync and automatic invitation redemption:
 
