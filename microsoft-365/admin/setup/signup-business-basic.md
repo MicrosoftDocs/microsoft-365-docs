@@ -37,7 +37,6 @@ Want to sign up for a Microsoft 365 Business Basic?
 There are a couple of ways to get started:
 
 - **[Buy](https://go.microsoft.com/fwlink/?linkid=2181424) Microsoft 365 Business Basic and complete the set up**. [Follow the steps below for info on how to buy](#sign-up-steps).
-- **For Microsoft partners**: **Do we have a link here?**
 
 **Need something different?** You can:
 
