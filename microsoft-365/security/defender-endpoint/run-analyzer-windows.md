@@ -106,6 +106,7 @@ By default, the unpacked MDEClientAnalyzerResult.zip file contains the following
   This is the main HTML output file, which will contain the findings and guidance that the analyzer script run on the machine can produce.
 
 - SystemInfoLogs [Folder]
+
   - AddRemovePrograms.csv
 
     Description: List of x64 installed software on x64 OS collected from registry.
