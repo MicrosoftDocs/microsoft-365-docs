@@ -49,6 +49,13 @@ Admin can enable the feature with the help of cmdlet `Set-OrganizationConfig -Is
   > 
   > - Message level actions Copy/Move will be blocked.
 
+### Example 1
+To enable folders and Rules feature for Microsoft 365 Groups in Outlook you can use the below cmdlet
+
+```powershell
+Set-OrganizationConfig -IsGroupFoldersAndRulesEnabled $true
+```
+
 Once the feature is enabled, by default only owner of the group has the permission to create folder, rename folder, move and copy messages across folders.
   
 ## Enable member permission option
@@ -67,6 +74,14 @@ Admin can enable the member permission to the tenant using the cmdlet `IsGroupMe
 
    Default value: false
 
+### Example 1
+
+To enable Enable member permission option you can use the below cmdlet.
+
+```powershell
+Set-OrganizationConfig -IsGroupMemberAllowedToEditContent $true
+```
+
 Once this is enabled, group owners can provide group members with the ability to create folders, rename folders, copy, move, and delete messages by navigating to the group from Outlook > **Settings** > **Edit Group** > and selecting the option **All members will be able to create, edit, move, copy, and delete mail folders and rules within the group**. Group level member permission is handled by group owners.
 
 > [!NOTE]
@@ -83,6 +98,14 @@ Admins can block the **Move** message option for all Microsoft 365 groups within
    Possible values: True/False
 
    Default value: false
+
+### Example 1
+
+To block “Move” message capability you can use the below cmdlet
+
+```powershell
+Set-OrganizationConfig -BlockMoveMessagesForGroupFolders $true
+```
 
 > [!NOTE]
 > Creation of **Move** rule is also disabled when `BlockMoveMessagesForGroupFolders` is enabled.
