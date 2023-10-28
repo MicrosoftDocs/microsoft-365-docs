@@ -75,7 +75,7 @@ Microsoft Defender supports macOS Sonoma (14.0) in the current Defender release.
 > [!NOTE]
 > If you use Device Control v1, consider migrating to v2 (that includes all v1 functionality and more).
 > Device Control v1 will be considered deprecated in the nearest future.
-> To check, run the [mdatp health --details device_control](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/mac-device-control-overview?view=o365-worldwide#status) command, and inspect the `active` property, it should not contain "v1".
+> To check, run the [mdatp health --details device_control](mac-device-control-overview.md#status) command, and inspect the `active` property, it should not contain "v1".
 
 ### Oct-2023 (Build: 101.23082.0018  | Release version: 20.123082.18.0)
 
