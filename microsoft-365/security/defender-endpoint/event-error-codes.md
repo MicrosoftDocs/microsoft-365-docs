@@ -16,11 +16,10 @@ ms.collection:
 - tier3
 - mde-ngp
 ms.topic: conceptual
-ms.date: 05/21/2018
+ms.date: 10/27/2023
 ms.subservice: mde
 search.appverid: met150
 ---
-
 
 # Review events and errors using Event Viewer
 
@@ -229,3 +228,4 @@ You can use this table for more information on the Defender for Endpoint events 
 - [Download and run the client analyzer](download-client-analyzer.md)
 - [Understand the analyzer HTML report](analyzer-report.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+

@@ -34,7 +34,7 @@ A [mixed-licensing scenario](defender-endpoint-plan-1-2.md#mixed-licensing-scena
 > - **Make sure to follow the procedures in this article to try mixed-license scenarios in your environment**. Assigning user licenses in the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) doesn't set your tenant to mixed mode. 
 > - Make sure that you have opted in to receive [preview features](preview.md).
 > - **You should have active trial or paid licenses for both Defender for Endpoint Plan 1 and Plan 2**. 
-> - To access license information, you must have one of the following roles assigned in Azure Active Directory (Azure AD):
+> - To access license information, you must have one of the following roles assigned in Microsoft Entra ID:
 >    - Global Admin
 >    - Security Admin
 >    - License Admin + MDE Admin  
@@ -92,7 +92,7 @@ For example, suppose that you want to use a tag called `VIP` for all the devices
 
 > [!IMPORTANT]
 > - Make sure that you have opted in to receive [preview features](preview.md).
-> - To access license information, you must have one of the following roles assigned in Azure Active Directory (Azure AD):
+> - To access license information, you must have one of the following roles assigned in Microsoft Entra ID:
 >    - Global Admin
 >    - Security Admin
 >    - License Admin + MDE Admin  
@@ -133,7 +133,7 @@ The license usage report is estimated based on sign-in activities on the device.
 To reduce management overhead, there's no requirement for device-to-user mapping and assignment. Instead, the license report provides a utilization estimation that is calculated based on device usage seen across your organization. It might take up to one day for your usage report to reflect the active usage of your devices.
 
 > [!IMPORTANT]
-> To access license information, you must have one of the following roles assigned in Azure Active Directory (Azure AD):
+> To access license information, you must have one of the following roles assigned in Microsoft Entra ID:
 > - Security Admin
 > - Global Admin
 > - License Admin + MDE Admin
@@ -154,4 +154,3 @@ To reduce management overhead, there's no requirement for device-to-user mapping
 - [Microsoft Defender for Business](../defender-business/mdb-overview.md) (endpoint protection for small and medium-sized businesses)
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
-

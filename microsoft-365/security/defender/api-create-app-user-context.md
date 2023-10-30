@@ -46,13 +46,13 @@ Microsoft 365 Defender exposes much of its data and actions through a set of pro
 
 In general, you'll need to take the following steps to use these APIs:
 
-- Create an Azure Active Directory (Azure AD) application.
+- Create a Microsoft Entra application.
 - Get an access token using this application.
 - Use the token to access Microsoft 365 Defender API.
 
 This article explains how to:
 
-- Create an Azure AD application
+- Create a Microsoft Entra application
 - Get an access token to Microsoft 365 Defender
 - Validate the token
 
@@ -66,7 +66,7 @@ This article explains how to:
 
 1. Sign in to [Azure](https://portal.azure.com) as a user with the **Global Administrator** role.
 
-2. Navigate to **Azure Active Directory** > **App registrations** > **New registration**.
+2. Navigate to **Microsoft Entra ID** > **App registrations** > **New registration**.
 
    :::image type="content" source="../../media/atp-azure-new-app2.png" alt-text="The New registration option in the Manage pane in the Azure portal" lightbox="../../media/atp-azure-new-app2.png":::
 
@@ -104,7 +104,7 @@ This article explains how to:
 
 ## Get an access token
 
-For more information on Azure Active Directory tokens, see the [Azure AD tutorial](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
+For more information on Microsoft Entra tokens, see the [Microsoft Entra tutorial](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
 
 ### Get an access token on behalf of a user using PowerShell
 

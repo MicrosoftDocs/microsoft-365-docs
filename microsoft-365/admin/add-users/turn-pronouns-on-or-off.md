@@ -4,7 +4,6 @@ f1.keywords: CSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.date: 03/31/2023
 audience: Admin
 ms.topic: how-to 
 ms.service: microsoft-365-business
@@ -20,6 +19,7 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: "Learn how to turn the pronouns feature on or off in the Microsoft 365 admin center."
+ms.date: 10/20/2023
 ---
 
 # Turn pronouns on or off for your organization in the Microsoft 365 admin center
