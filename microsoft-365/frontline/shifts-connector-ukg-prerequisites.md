@@ -17,7 +17,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 10/2/2023
+ms.date: 10/31/2023
 ---
 
 # Prerequisites and requirements for the Teams Shifts connector for UKG Pro Workforce Management (Preview)
