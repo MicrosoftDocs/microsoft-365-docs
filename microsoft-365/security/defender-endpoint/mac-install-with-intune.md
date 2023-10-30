@@ -465,17 +465,14 @@ Solution: Follow the steps above to create a device profile using WindowsDefende
 
 ## Logging installation issues
 
-For more information on how to find the automatically generated log created by the installer when an error occurs, see [Logging installation issues](mac-resources.md#logging-installation-issues).
+See [Logging installation issues](mac-resources.md#logging-installation-issues) for the procedure to find the automatically generated log, created by the installer when an error occurs.
 
+For information on troubleshooting procedures, see:
 [Troubleshoot system extension issues in Microsoft Defender for Endpoint on macOS](mac-support-sys-ext.md)
-
-[Troubleshoot installation issues for Microsoft Defender for Endpoint on macOS](mac-support-install.md)
-
-[Troubleshoot license issues for Microsoft Defender for Endpoint on macOS](mac-support-license.md)
-
-[Troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint on macOS](troubleshoot-cloud-connect-mdemac.md)
-
-[Troubleshoot performance issues for Microsoft Defender for Endpoint on macOS](mac-support-perf.md)
+<br>[Troubleshoot installation issues for Microsoft Defender for Endpoint on macOS](mac-support-install.md)
+<br>[Troubleshoot license issues for Microsoft Defender for Endpoint on macOS](mac-support-license.md)
+<br>[Troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint on macOS](troubleshoot-cloud-connect-mdemac.md)
+<br>[Troubleshoot performance issues for Microsoft Defender for Endpoint on macOS](mac-support-perf.md)
 
 
 ## Uninstallation
