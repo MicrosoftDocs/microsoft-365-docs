@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 audience: ITPro
 author: dansimp
 ms.author: dansimp
-ms.reviewer: oogunrinde, sugamar,
+ms.reviewer: sugamar,
 manager: dansimp
 ms.custom: asr
 ms.topic: reference
@@ -15,7 +15,7 @@ ms.collection:
 - m365-security
 - tier2
 - mde-asr
-ms.date: 08/04/2023
+ms.date: 10/30/2023
 search.appverid: met150
 ---
 
