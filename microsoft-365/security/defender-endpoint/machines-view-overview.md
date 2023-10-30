@@ -95,7 +95,7 @@ At the top of each device inventory tab, you can see the total number of devices
 
 The **Newly discovered** device count for network devices and IoT devices tabs, shows the number of new devices discovered, in the last 7 days, listed in the current view.
 
-![Image of new discovered device count.](images/new-discovered-devices.png)
+:::image type="content" alt-text="Image of new discovered device count." source="images/new-discovered-devices.png":::
 
 ## Explore the device inventory
 
