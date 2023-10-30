@@ -21,7 +21,7 @@ search.appverid: met150
 ms.date: 10/20/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
@@ -126,7 +126,7 @@ For more information about the safelist collection and anti-spam settings on use
 
 Tenant allows and blocks are able to override some filtering stack verdicts as described in the following tables:
 
-- [Advanced delivery policy](skip-filtering-phishing-simulations-sec-ops-mailboxes.md) (skip filtering for designated SecOps mailboxes and phishing simulation URLs):
+- [Advanced delivery policy](advanced-delivery-policy-configure.md) (skip filtering for designated SecOps mailboxes and phishing simulation URLs):
 
   |Filtering stack verdict|Advanced delivery policy allow|
   |---|---|
@@ -150,7 +150,7 @@ Tenant allows and blocks are able to override some filtering stack verdicts as d
   |Bulk|**Tenant wins**: Email delivered to mailbox|**Tenant wins**: Email delivered to user's Junk Email folder|
   |Not spam|**Tenant wins**: Email delivered to mailbox|**Tenant wins**: Email delivered to user's Junk Email folder|
 
-  <sup>\*</sup> Organizations that use a third-party security service or device in front of Microsoft 365 should consider using [Authenticated Received Chain (ARC)](use-arc-exceptions-to-mark-trusted-arc-senders.md) (contact the third-party for availability) and [Enhanced Filtering for Connectors (also known as skip listing)](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) instead of an SCL=-1 mail flow rule. These improved methods reduce email authentication issues and encourage [defense-in-depth](step-by-step-guides/defense-in-depth-guide.md) email security.
+  <sup>\*</sup> Organizations that use a third-party security service or device in front of Microsoft 365 should consider using [Authenticated Received Chain (ARC)](email-authentication-arc-configure.md) (contact the third-party for availability) and [Enhanced Filtering for Connectors (also known as skip listing)](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) instead of an SCL=-1 mail flow rule. These improved methods reduce email authentication issues and encourage [defense-in-depth](step-by-step-guides/defense-in-depth-guide.md) email security.
 
 - IP Allow List and IP Block List in [connection filter policies](connection-filter-policies-configure.md):
 

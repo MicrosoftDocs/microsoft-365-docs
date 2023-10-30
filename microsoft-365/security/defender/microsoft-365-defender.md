@@ -40,7 +40,7 @@ Microsoft 365 Defender is a unified pre- and post-breach enterprise defense suit
 Here's a list of the different Microsoft 365 Defender products and solutions that Microsoft 365 Defender coordinates with:
 
 - [**Microsoft Defender for Endpoint**](../defender-endpoint/microsoft-defender-endpoint.md)
-- [**Microsoft Defender for Office 365**](../office-365-security/microsoft-defender-for-office-365-product-overview.md)
+- [**Microsoft Defender for Office 365**](../office-365-security/mdo-security-comparison.md)
 - [**Microsoft Defender for Identity**](/defender-for-identity/what-is)
 - [**Microsoft Defender for Cloud Apps**](/defender-cloud-apps/what-is-defender-for-cloud-apps)
 - [**Microsoft Defender Vulnerability Management**](../defender-vulnerability-management/defender-vulnerability-management.md)
