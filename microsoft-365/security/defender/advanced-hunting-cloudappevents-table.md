@@ -41,9 +41,9 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `Timestamp` | `datetime` | Date and time when the event was recorded |
 | `ActionType` | `string` | Type of activity that triggered the event |
 | `Application` | `string` | Application that performed the recorded action |
-| `ApplicationId` | `string` | Unique identifier for the application |
-| `AccountObjectId` | `string` | Unique identifier for the account in Azure Active Directory |
-| `AccountId` | `string` | An identifier for the account as found by Microsoft Defender for Cloud Apps. Could be Azure Active Directory ID, user principal name, or other identifiers. |
+| `ApplicationId` | `int` | Unique identifier for the application |
+| `AccountObjectId` | `string` | Unique identifier for the account in Microsoft Entra ID |
+| `AccountId` | `string` | An identifier for the account as found by Microsoft Defender for Cloud Apps. Could be Microsoft Entra ID, user principal name, or other identifiers. |
 | `AccountDisplayName` | `string` | Name of the account user displayed in the address book. Typically a combination of a given or first name, a middle initiation, and a last name or surname. |
 | `IsAdminOperation` | `string` | Indicates whether the activity was performed by an administrator |
 | `DeviceType` | `string` | Type of device based on purpose and functionality, such as "Network device", "Workstation", "Server", "Mobile", "Gaming console", or "Printer" |
@@ -71,17 +71,25 @@ For information on other tables in the advanced hunting schema, [see the advance
 
 ## Apps and services covered
 
+The **CloudAppEvents** table contains enriched logs from all SaaS applications connected to Microsoft Defender for Cloud Apps. In your organization, this might include apps such as the following, and more:
+
+- Office 365 and Microsoft applications, such as:
+
+  - Exchange Online
+  - SharePoint Online
+  - Microsoft Teams
+  - Dynamics 365
+  - Skype for Business
+  - Viva Engage
+  - Power Automate
+  - Power BI
+
 - Dropbox
-- Dynamics 365
-- Exchange Online
-- Microsoft Teams
-- OneDrive for Business
-- Power Automate
-- Power BI
-- SharePoint Online
-- Skype for Business
-- Office 365
-- Viva Engage
+- Salesforce
+- GitHub
+- Atlassian
+
+Connect supported cloud apps for instant, out-of-the-box protection, deep visibility into the app’s user and device activities, and more. For more information, see [Protect connected apps using cloud service provider APIs](/defender-cloud-apps/protect-connected-apps).
 
 ## Related topics
 

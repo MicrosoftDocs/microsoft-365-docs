@@ -100,9 +100,11 @@ DeviceFileEvents
  
 Another way is to deploy an Audit policy to the organization, and see the events in advanced hunting or the device control report.
  
-## How do I find Sid for Azure AD group?
+<a name='how-do-i-find-sid-for-azure-ad-group'></a>
 
-Different from Azure AD groups, the Sid is using Object Id for Azure AD group. You can find the Object Id from Azure portal.
+## How do I find Sid for Microsoft Entra group?
+
+Different from Microsoft Entra groups, the Sid is using Object Id for Microsoft Entra group. You can find the Object Id from Azure portal.
 
 ![image](https://user-images.githubusercontent.com/81826151/200895994-cc395452-472f-472e-8d56-351165d341a7.png)
 

@@ -160,18 +160,6 @@ Select the OneDrive cloud icon from your taskbar and follow the steps to move yo
 
 1. Open Microsoft Teams, select your profile icon, and then **Add work or school account**. Follow the steps to add your new account to Teams.
 
-## Use a public website
-
-Microsoft 365 doesn't include a public website for your business. If you want to set one up, consider using a Microsoft partner, such as GoDaddy or WIX.
-  
-1. From the admin center, go to **Resources**, and then select **Public website**.
-
-2. Select **Learn more** under one of the options, and then sign up with a website partner and use their tools to set up and design your site.
-
-## Watch: Create your business website
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/4839abc6-9323-4cbf-a79d-2907235f9ebb]
-
 ## Invite users to join your subscription and organization
 
 Once you've set up your organization, you can invite other users to join your Microsoft 365 business subscription. They'll get access to all the features of the subscription.
