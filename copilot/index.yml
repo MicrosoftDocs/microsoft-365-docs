@@ -58,7 +58,7 @@ additionalContent:
             - text: Protect and manage Copilot interactions with Microsoft Purview
               url: /purview/ai-microsoft-purview
             - text: Isolation controls
-              url: index.yml
+              url: /compliance/assurance/assurance-microsoft-365-isolation-controls
         # Card
         - title: Manage and extend Microsoft 365 Copilot
           links:
