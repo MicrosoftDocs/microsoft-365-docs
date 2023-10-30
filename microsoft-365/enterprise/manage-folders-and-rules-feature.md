@@ -108,7 +108,7 @@ Set-OrganizationConfig -BlockMoveMessagesForGroupFolders $true
 ```
 
 > [!NOTE]
-> Creation of **Move** rule is also disabled when `BlockMoveMessagesForGroupFolders` is enabled.
+> Creation of the **Move** rule is also disabled when `BlockMoveMessagesForGroupFolders` is enabled.
 
 > [!NOTE]
 > This is useful if there are mixed set of users using Outlook on Web and Outlook Desktop App. For users on Outlook Desktop App where folders are not available, they can get the messages from group inbox. 
