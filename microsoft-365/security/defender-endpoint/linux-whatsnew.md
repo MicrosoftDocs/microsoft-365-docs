@@ -75,10 +75,6 @@ sudo systemctl disable mdatp
 </details>
 
 <details>
-	<summary> October-2023 (Build: 101.23082.0006 | Release version: 30.123082.0006.0)</summary>
-
-
-<details>
 	<summary> October-2023 (Build: 101.23082.0009 | Release version: 30.123082.0009.0)</summary>
 
 ## October-2023 Build: 101.23082.0009 | Release version: 30.123082.0009.0
