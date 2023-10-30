@@ -1,6 +1,11 @@
 {
    "redirections":[
       {
+         "source_path":"microsoft-365/frontline/flw-trial.md",
+         "redirect_url":"/microsoft-365/frontline",
+         "redirect_document_id":true
+      },
+      {
          "source_path":"business-video/TOC",
          "redirect_url":"https://www.youtube.com/channel/UCBcPPMQmVe5O3on4v5VKrYA",
          "redirect_document_id":false
