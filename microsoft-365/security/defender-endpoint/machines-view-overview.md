@@ -80,11 +80,11 @@ The device inventory opens on the **Computers and Mobile** tab. At a glance you'
 
 Use the **Onboarding Status** column to sort and filter by discovered devices, and those already onboarded to Microsoft Defender for Endpoint.
 
-![Image of devices list with list of devices.](images/device-inventory.png)
+:::image type="content" alt-text="Image of devices list with list of devices." source="images/device-inventory.png" lightbox="images/device-inventory.png":::
 
 From the **Network devices** and **IoT devices** tabs, you'll also see information such as vendor, model and device type:
 
-![Image of network devices list.](images/device-inventory-networkdevices.png)
+:::image type="content" alt-text="Image of network devices list." source="images/device-inventory-networkdevices.png" lightbox="images/device-inventory-networkdevices.png":::
 
 > [!NOTE]
 > Device discovery Integration with [Microsoft Defender for IoT](/azure/defender-for-iot/organizations/) is available to help locate, identify, and secure your complete OT/IOT asset inventory. Devices discovered with this integration will appear on the **IoT devices** tab. For more information, see [Device discovery integration](device-discovery.md#device-discovery-integration).
