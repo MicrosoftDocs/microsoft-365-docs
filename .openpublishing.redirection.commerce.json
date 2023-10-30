@@ -924,6 +924,11 @@
          "source_path":"microsoft-365/commerce/billing-and-payments/pay-for-subscription-billing-profile.md",
          "redirect_url":"/microsoft-365/commerce/billing-and-payments/pay-for-your-subscription",
          "redirect_document_id":false
+     },
+     {
+         "source_path": "microsoft-365/commerce/index2.yml",
+         "redirect_url": "/microsoft-365/commerce/index",
+         "redirect_document_id": false
      }
   ]
 }
