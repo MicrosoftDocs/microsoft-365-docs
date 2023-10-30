@@ -50,7 +50,7 @@ Admin can enable the feature with the help of cmdlet `Set-OrganizationConfig -Is
   > - Message level actions Copy/Move will be blocked.
 
 ### Example 1
-To enable folders and Rules feature for Microsoft 365 Groups in Outlook you can use the below cmdlet
+To enable the **Folders and Rules** feature for Microsoft 365 Groups in Outlook, you can use the following cmdlet:
 
 ```powershell
 Set-OrganizationConfig -IsGroupFoldersAndRulesEnabled $true
