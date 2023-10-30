@@ -76,7 +76,7 @@ Admin can enable the member permission to the tenant using the cmdlet `IsGroupMe
 
 ### Example 1
 
-To enable Enable member permission option you can use the below cmdlet.
+To enable the **Enable member permission** option, you can use the following cmdlet:
 
 ```powershell
 Set-OrganizationConfig -IsGroupMemberAllowedToEditContent $true
