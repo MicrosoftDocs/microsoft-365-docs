@@ -105,12 +105,12 @@ productDirectory:
     - title: Copilot extensibility
       imageSrc: /media/common/i_overview.svg
       summary: Learn about developing Copilot plugins and connectors
-      url: ./extensibility/
+      url: /microsoft-365-copilot/extensibility/
     - title: Message Extensions
       imageSrc: /media/common/i_get-started.svg
       summary: Extend Teams Message Extension to Copilot
-      url: ./extensibility/overview-message-extension-bot
+      url: /microsoft-365-copilot/extensibility/overview-message-extension-bot
     - title: Graph Connectors
       imageSrc: /media/common/i_get-started.svg
       summary: Connect external data to Graph Connectors
-      url: ./extensibility/overview-graph-connector
+      url: /microsoft-365-copilot/extensibility/overview-graph-connector
