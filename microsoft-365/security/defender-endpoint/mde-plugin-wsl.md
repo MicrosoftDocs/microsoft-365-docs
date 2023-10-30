@@ -116,22 +116,22 @@ To run the connectivity test, please follow the below instructions:
 > [!NOTE]
 > To set a proxy for use in WSL containers (the distributions running on the subsystem), please follow the instructions at [Advanced settings configuration in WSL | Microsoft Learn](/windows/wsl/wsl-config).
 
-# Verifying functionality and SOC analyst experience
+## Verifying functionality and SOC analyst experience
 
 After installing the plug-in, the subsystem and all its running containers will be onboarded to the Microsoft 365 Defender portal at <https://security.microsoft.com>.
 
 - Log into the portal and open the “Devices” view
 - Filter using the tag “WSL2”:
 
-  ![](media/image1.png)
+  ![Screenshot showing device inventory filter](media/mdeplugin-wsl/device-inventory-filter.png)
 
-- This will show you all WSL instances in your environment with an active MDE plug-in for WSL. The instances represent all distributions running inside WSL on a given host – the hostname of the “device” matches that of the Windows host. However, it is represented as a Linux device.
-- Open the device page. In the Overview pane, you will see that the “device” is “Hosted On” – this is a link that will allow you to understand this machine is running on a Windows host and pivot to the host for further investigation and/or response.
+This will show you all WSL instances in your environment with an active MDE plug-in for WSL. The instances represent all distributions running inside WSL on a given host – the hostname of the “device” matches that of the Windows host. However, it is represented as a Linux device.
 
-  
+Open the device page. In the Overview pane, you will see that the “device” is “Hosted On” – this is a link that will allow you to understand this machine is running on a Windows host and pivot to the host for further investigation and/or response.
 
-- ![](media/image2.png)
-- The timeline will be populated, similar to MDE for Linux, with events from inside the subsystem (file, process, network). You can observe activity and detections in the timeline view. Alerts and incidents will be generated as appropriate as well. To test this, after the installation of the plug-in, please follow the steps given below:
+:::image type="content" source="media/mdeplugin-wsl/device-overview.png" alt-text="Screenshot showing device overview.":::  
+
+The timeline will be populated, similar to MDE for Linux, with events from inside the subsystem (file, process, network). You can observe activity and detections in the timeline view. Alerts and incidents will be generated as appropriate as well. To test this, after the installation of the plug-in, please follow the steps given below:
 
 1. Open a terminal/command prompt instance (Start, run “cmd” or on Windows 11, right-click the start button and select Terminal) 
 
@@ -143,7 +143,8 @@ After installing the plug-in, the subsystem and all its running containers will 
 
 5. An alert should appear in the portal after a few minutes for a detection on the WSL2 instance.
 
-**Note :**  that it takes about 5 minutes for the events to appear on the Microsoft 365 Defender portal
+> [!NOTE]
+> It takes about 5 minutes for the events to appear on the Microsoft 365 Defender portal
 
 Please treat the machine as if it were a “regular” Linux host in your environment, to perform testing against; in particular, we would like to get your feedback on the ability to surface potentially malicious behaviour using the new plug-in.
 
@@ -151,36 +152,35 @@ Please treat the machine as if it were a “regular” Linux host in your enviro
 
 1. health_check.exe shows the output: WSLService is not running. Launch with ‘wsl’ command in PowerShell and rerun health check
 
-![](media/image3.png)
+   :::image type="content" source="media/mdeplugin-wsl/powershell-output.png" alt-text="Screenshot showing PowerShell output.":::
 
-If the above error occurs,
+2. If the above error occurs,
 
 - Open a terminal instance and run the command “wsl”
 - Wait for at least 5 minutes before rerunning the health check.
 
-1. health_check.exe shows the output: No Defender Health telemetry found in the log file. Please retry in 5 minutes....
+3. health_check.exe shows the output: No Defender Health telemetry found in the log file. Please retry in 5 minutes....
 
-![](media/image4.png)
+   :::image type="content" source="media/mdeplugin-wsl/powershell-2.png" alt-text="Screenshot showing health telemetry status.":::
 
-If the above error occurs,
+4. If the above error occurs, wait for 5 minutes and rerun .\health_check.exe.
 
-- Wait for 5 minutes and rerun .\health_check.exe.
+5. If you're seeing no devices in Microsoft 365 Defender portal, or no events in the timeline, take these steps:
 
-  
+   - If you are not seeing a machine object, please ensure that you allow for sufficient time for the onboarding to complete (typically this should be <10 minutes). 
+   - Ensure you are leveraging the right filters and you are allowed to view all device objects (your account/group is not restricted to a specific group).
+   - Use the health check tool to provide an overview of overall plug-in health. Open Terminal and run the health_check.exe tool from “C:\Program Files\Microsoft Defender for Endpoint plug-in for WSL\tools”
 
-2. No device in Microsoft 365 Defender portal, or no events in the timeline.
+   :::image type="content" source="media/mdeplugin-wsl/powershell-4.png" alt-text="Screenshot showing status in PowerShell.":::
 
-   
-
-- If you are not seeing a machine object, please ensure that you allow for sufficient time for the onboarding to complete (typically this should be <10 minutes). 
-- Ensure you are leveraging the right filters and you are allowed to view all device objects (your account/group is not restricted to a specific group).
-- Use the health check tool to provide an overview of overall plug-in health. Open Terminal and run the health_check.exe tool from “C:\Program Files\Microsoft Defender for Endpoint plug-in for WSL\tools”
-
-  ![](media/image5.png)
   - Do enable the connectivity test and check the connectivity of MDE in WSL. If the connectivity test fails, provide the output of the healthcheck tool to [mdeforwsl-preview@microsoft.com](mailto:mdeforwsl-preview@microsoft.com).
-- In case you face any other challenges / issues, open the terminal and run the commands: 
-  5. cd “C:\Program Files\Microsoft Defender for Endpoint plug-in for WSL\tools” .  
-  6. Run the command “.\health_check.exe --supportBundle” to generate the support bundle. The support bundle can be found in the path provided by the previous command. Send the generated zip file to  [mdeforwsl-preview@microsoft.com](mailto:mdeforwsl-preview@microsoft.com)
 
-![](media/image6.png)
+6. In case you face any other challenges / issues, open the terminal and run the commands: 
+
+   - cd “C:\Program Files\Microsoft Defender for Endpoint plug-in for WSL\tools” .  
+   - “.\health_check.exe --supportBundle” to generate the support bundle. 
+   
+   The support bundle can be found in the path provided by the previous command. Send the generated zip file to  [mdeforwsl-preview@microsoft.com](mailto:mdeforwsl-preview@microsoft.com)
+
+   :::image type="content" source="media/mdeplugin-wsl/powershell-4.png" alt-text="Screenshot showing status in PowerShell output.":::
 
