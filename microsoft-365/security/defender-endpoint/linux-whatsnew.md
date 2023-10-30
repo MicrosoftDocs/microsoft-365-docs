@@ -33,6 +33,50 @@ This article is updated frequently to let you know what's new in the latest rele
 - [What's new in Defender for Endpoint on macOS](mac-whatsnew.md)
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 
+<details>
+	<summary> October-2023 (Build: 101.23082.0010 | Release version: 30.123082.0010.0)</summary>
+
+## October-2023 Build: 101.23082.0010 | Release version: 30.123082.0010.0
+
+&ensp;Released: **October 31,2023**<br/>
+&ensp;Published: **October 31,2023**<br/>
+&ensp;Build: **101.23082.0010**<br/>
+&ensp;Release version: **30.123082.0010.0**<br/>
+&ensp;Engine version: **1.1.23070.1002**<br/>
+&ensp;Signature version: **1.393.1305.0**<br/>
+
+**What's new**
+- This new release is build over October 2023 release (`101.23082.0009``) with addition of following change. There's no change for other customers and upgrading is optional.
+  - Fix for immutable mode of auditd when supplementary subsystem is ebpf:  In ebpf mode all mdatp audit rules should be cleaned after switching to ebpf and rebooting.  After reboot, mdatp audit rules were not cleaned due to which it was resulting in hang of the server.  The fix cleans these rules, user should not see any mdatp rules loaded on reboot
+
+**Known issues**
+
+When upgrading from mdatp version 101.75.43 or 101.78.13, you might encounter a kernel hang. Run the following commands before attempting to upgrade to version 101.98.05. More information about the underlying issue can be found at [System hang due to blocked tasks in fanotify code](https://access.redhat.com/solutions/2838901).
+
+There are two ways to mitigate this upgrade issue:
+
+1. Use your package manager to uninstall the `101.75.43` or `101.78.13` mdatp version.
+
+Example:
+```bash
+sudo apt purge mdatp
+sudo apt-get install mdatp
+```
+
+2. As an alternative you can follow the instructions to [uninstall](/microsoft-365/security/defender-endpoint/linux-resources#uninstall), then [install](/microsoft-365/security/defender-endpoint/linux-install-manually#application-installation) the latest version of the package.
+
+If you don't want to uninstall mdatp, you can disable rtp and mdatp in sequence before upgrading.
+Some customers (<1%) experience issues with this method.
+
+ ```bash
+sudo mdatp config real-time-protection --value=disabled
+sudo systemctl disable mdatp
+```
+</details>
+
+<details>
+	<summary> October-2023 (Build: 101.23082.0006 | Release version: 30.123082.0006.0)</summary>
+
 
 <details>
 	<summary> October-2023 (Build: 101.23082.0009 | Release version: 30.123082.0009.0)</summary>
