@@ -66,9 +66,11 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `ThreatNames` | `string` |Detection name for malware or other threats found |
 | `DetectionMethods` | `string` | Methods used to detect malware, phishing, or other threats found in the email |
 | `ConfidenceLevel` | `string` | List of confidence levels of any spam or phishing verdicts. For spam, this column shows the spam confidence level (SCL), indicating if the email was skipped (-1), found to be not spam (0,1), found to be spam with moderate confidence (5,6), or found to be spam with high confidence (9). For phishing, this column displays whether the confidence level is "High" or "Low". |
+| `BulkComplaintLevel` | `int` | Threshold assigned to email from bulk mailers, a high bulk complaint level (BCL) means the email is more likely to generate complaints, and thus more likely to be spam |
 | `EmailAction` | `string` | Final action taken on the email based on filter verdict, policies, and user actions:  Move message to junk mail folder, Add X-header, Modify subject, Redirect message, Delete message, send to quarantine, No action taken, Bcc message |
 | `EmailActionPolicy` | `string` | Action policy that took effect: Antispam high-confidence, Antispam, Antispam bulk mail, Antispam phishing, Anti-phishing domain impersonation, Anti-phishing user impersonation, Anti-phishing spoof, Anti-phishing graph impersonation, Antimalware, Safe Attachments, Enterprise Transport Rules (ETR) |
 | `EmailActionPolicyGuid` | `string` | Unique identifier for the policy that determined the final mail action |
+| `AuthenticationDetails` | `string` | List of pass or fail verdicts by email authentication protocols like DMARC, DKIM, SPF or a combination of multiple authentication types (CompAuth) |
 | `AttachmentCount` | `int` | Number of attachments in the email |
 | `UrlCount` | `int` | Number of embedded URLs in the email |
 | `EmailLanguage` | `string` | Detected language of the email content |
@@ -78,8 +80,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `UserLevelAction` | `string` | Action taken on the email in response to matches to a mailbox policy defined by the recipient |
 | `UserLevelPolicy` | `string` | End-user mailbox policy that triggered the action taken on the email |
 | `ReportId` | `long` | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns. |
-| `AuthenticationDetails` | `string` | List of pass or fail verdicts by email authentication protocols like DMARC, DKIM, SPF or a combination of multiple authentication types (CompAuth) |
-| `BulkComplaintLevel` | `int` | Threshold assigned to email from bulk mailers, a high bulk complaint level (BCL) means the email is more likely to generate complaints, and thus more likely to be spam |
+| `AdditionalFields` | `string` | Additional information about the entity or event |
 | `LatestDeliveryLocation`* | `string` | Last known location of the email |
 |`LatestDeliveryAction`* | `string` | Last known action attempted on an email by the service or by an admin through manual remediation |
 

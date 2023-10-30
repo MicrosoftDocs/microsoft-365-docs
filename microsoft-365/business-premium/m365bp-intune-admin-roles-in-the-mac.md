@@ -95,23 +95,23 @@ You can assign a built-in or custom role to an Intune user. To create, edit, or 
 
 1. In the Microsoft Intune admin center, choose **Tenant administration > Roles > All roles**.
 
-1. Choose the built-in role you want to assign > Assignments > + Assign.
+2. Choose the built-in role you want to assign > Assignments > + Assign.
 
-1. On the **Basics** page, enter an Assignment name and optional Assignment description, and then choose **Next**.
+3. On the **Basics** page, enter an Assignment name and optional Assignment description, and then choose **Next**.
 
-1. On the **Admin Groups** page, select the group that contains the user you want to give the permissions to. Choose **Next**.
+4. On the **Admin Groups** page, select the group that contains the user you want to give the permissions to. Choose **Next**.
 
-1. On the **Scope (Groups)** page, choose a group containing the users and devices that the member above will be allowed to manage. You also have the option to choose all users or all devices. Choose **Next**.
+5. On the **Scope (Groups)** page, choose a group containing the users and devices that the member above will be allowed to manage. You also have the option to choose all users or all devices. Choose **Next**.
 
-> [!Note]
-> The **All users** and **All devices** are **Intune virtual groups** and not Microsoft Entra security groups. As a result, for **Scope (Groups)** assignment purposes you cannot use them as parents of Microsoft Entra security groups. If you need both **All users** and **All devices** and specific Microsoft Entra security groups for **Scope (Groups)** assignments, you must add them separately with separate assignments. Otherwise, even if the Scope (Groups) assignment for a role is set to **All Users** the admin in this role won't have access to specific Microsoft Entra user groups. For Microsoft Entra security groups, nesting is supported.
+   > [!NOTE]
+   > The **All users** and **All devices** are **Intune virtual groups** and not Microsoft Entra security groups. As a result, for **Scope (Groups)** assignment purposes you cannot use them as parents of Microsoft Entra security groups. If you need both **All users** and **All devices** and specific Microsoft Entra security groups for **Scope (Groups)** assignments, you must add them separately with separate assignments. Otherwise, even if the Scope (Groups) assignment for a role is set to **All Users** the admin in this role won't have access to specific Microsoft Entra user groups. For Microsoft Entra security groups, nesting is supported.
 
 6. On the **Scope (Tags)** page, choose tags where this role assignment will be applied. Choose **Next**.
 
 7. On the **Review + Create** page, when you're done, choose **Create**. The new assignment is displayed in the list of assignments.
 
-> [!Note]
-> When you create scope groups and assign a scope tag, you can only target groups that are listed in the Scope (Groups) of your role assignment.
+   > [!NOTE]
+   > When you create scope groups and assign a scope tag, you can only target groups that are listed in the Scope (Groups) of your role assignment.
 
 ## Delegated administration for Microsoft Partners
 
@@ -125,8 +125,6 @@ A partner can assign these roles:
 
 Before the partner can assign these roles to users, you must add the partner as a delegated admin to your account. This process is initiated by an authorized partner. The partner sends you an email to ask you if you want to give them permission to act as a delegated admin. For instructions, see [Authorize or remove partner relationships](../admin/misc/add-partner.md).
   
-## Related content
+## See also
 
-[About Microsoft 365 admin roles](../admin/add-users/about-admin-roles.md) (article)\
-[Assign admin roles](../admin/add-users/assign-admin-roles.md) (article)\
-[Activity reports in the Microsoft 365 admin center](../admin/activity-reports/activity-reports.md) (article)
+[Resources for Microsoft partners working with small and medium-sized businesses](../security/defender-business/mdb-partners.md)

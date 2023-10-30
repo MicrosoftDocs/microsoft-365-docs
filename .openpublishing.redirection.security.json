@@ -198,7 +198,7 @@
       {
          "source_path":"microsoft-365/security/office-365-security/fighting-junk-email.md",
          "redirect_url":"/microsoft-365/security/office-365-security/anti-spam-protection-about",
-         "redirect_document_id":false
+         "redirect_document_id":true
       },
       {
          "source_path":"microsoft-365/security/office-365-security/prevent-email-from-being-marked-as-spam.md",
@@ -1123,7 +1123,7 @@
       {
          "source_path":"microsoft-365/security/office-365-security/eop-features.md",
          "redirect_url":"/microsoft-365/security/office-365-security/eop-about#eop-features",
-         "redirect_document_id":false
+         "redirect_document_id":true
       },
       {
          "source_path":"microsoft-365/security/office-365-security/view-the-admin-audit-log-eop.md",
@@ -1167,7 +1167,7 @@
       },
       {
          "source_path":"microsoft-365/security/defender-365-security/integrate-office-365-ti-with-wdatp.md",
-         "redirect_url":"/microsoft-365/security/office-365-security/integrate-office-365-ti-with-mde",
+         "redirect_url":"/microsoft-365/security/defender/deploy-configure-m365-defender",
          "redirect_document_id":false
       },
       {
@@ -1213,6 +1213,11 @@
       {
          "source_path":"microsoft-365/security/defender-endpoint/onboard.md",
          "redirect_url":"/microsoft-365/security/defender-endpoint/onboard-configure",
+         "redirect_document_id":false
+      },
+      {
+         "source_path":"microsoft-365/security/defender-endpoint/onboard-offline-machines.md",
+         "redirect_url":"/microsoft-365/security/defender-endpoint/configure-environment",
          "redirect_document_id":false
       },
       {
@@ -2037,17 +2042,17 @@
       },
       {
          "source_path":"microsoft-365/security/office-365-security/office365-security-incident-response-overview.md",
-         "redirect_url":"/microsoft-365/security/office-365-security/defender-for-office-365",
+         "redirect_url":"/microsoft-365/security/office-365-security/mdo-about",
          "redirect_document_id":false
       },
       {
          "source_path":"microsoft-365/security/office-365-security/security-roadmap.md",
-         "redirect_url":"/microsoft-365/security/office-365-security/defender-for-office-365",
+         "redirect_url":"/microsoft-365/security/office-365-security/mdo-about",
          "redirect_document_id":false
       },
       {
          "source_path":"microsoft-365/security/office-365-security/old-index.md",
-         "redirect_url":"/microsoft-365/security/office-365-security/defender-for-office-365",
+         "redirect_url":"/microsoft-365/security/office-365-security/mdo-about",
          "redirect_document_id":false
       },
       {
@@ -2067,7 +2072,7 @@
       },
       {
          "source_path":"microsoft-365/security/office-365-security/overview.md",
-         "redirect_url":"/microsoft-365/security/office-365-security/defender-for-office-365",
+         "redirect_url":"/microsoft-365/security/office-365-security/mdo-about",
          "redirect_document_id":true
       },
       {
@@ -2193,7 +2198,7 @@
       {
          "source_path":"microsoft-365/security/office-365-security/bulk-complaint-level-values.md",
          "redirect_url":"/microsoft-365/security/office-365-security/anti-spam-bulk-complaint-level-bcl-about",
-         "redirect_document_id":true
+         "redirect_document_id":false
       },
       {
          "source_path":"microsoft-365/security/office-365-security/advanced-spam-filtering-asf-options.md",
@@ -2208,7 +2213,7 @@
       {
          "source_path":"microsoft-365/security/office-365-security/anti-spam-protection.md",
          "redirect_url":"/microsoft-365/security/office-365-security/anti-spam-protection-about",
-         "redirect_document_id":true
+         "redirect_document_id":false
       },
       {
          "source_path":"microsoft-365/security/office-365-security/spam-confidence-levels.md",
@@ -2288,12 +2293,12 @@
       {
          "source_path":"microsoft-365/security/office-365-security/exchange-online-protection-overview.md",
          "redirect_url":"/microsoft-365/security/office-365-security/eop-about",
-         "redirect_document_id":true
+         "redirect_document_id":false
       },
       {
          "source_path":"microsoft-365/security/office-365-security/eop-general-faq.yml",
-         "redirect_url":"/microsoft-365/security/office-365-security/eop-faq",
-         "redirect_document_id":true
+         "redirect_url":"/microsoft-365/security/office-365-security/eop-about",
+         "redirect_document_id":false
       },
       {
          "source_path":"microsoft-365/security/office-365-security/mail-flow-in-eop.md",
@@ -2302,17 +2307,17 @@
       },
       {
          "source_path":"microsoft-365/security/office-365-security/eop-queued-deferred-and-bounced-messages-faq.yml",
-         "redirect_url":"/microsoft-365/security/office-365-security/mail-flow-delivery-faq",
-         "redirect_document_id":true
+         "redirect_url":"/microsoft-365/security/office-365-security/mail-flow-about#mail-flow-delivery-faq",
+         "redirect_document_id":false
       },
       {
          "source_path":"microsoft-365/security/office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md",
-         "redirect_url":"/microsoft-365/security/office-365-security/mail-flow-inbound-ipv6-support-about",
-         "redirect_document_id":true
+         "redirect_url":"/microsoft-365/security/office-365-security/mail-flow-about#support-for-anonymous-inbound-email-over-ipv6",
+         "redirect_document_id":false
       },
       {
          "source_path":"microsoft-365/security/office-365-security/troubleshooting-mail-sent-to-office-365.md",
-         "redirect_url":"/microsoft-365/security/office-365-security/mail-flow-troubleshooting",
+         "redirect_url":"/microsoft-365/security/office-365-security/external-senders-mail-flow-troubleshooting",
          "redirect_document_id":true
       },
       {
@@ -2437,13 +2442,13 @@
       },
       {
          "source_path":"microsoft-365/security/office-365-security/configure-advanced-delivery.md",
-         "redirect_url":"/microsoft-365/security/office-365-security/skip-filtering-phishing-simulations-sec-ops-mailboxes",
-         "redirect_document_id":false
+         "redirect_url":"/microsoft-365/security/office-365-security/advanced-delivery-policy-configure",
+         "redirect_document_id":true
       },
       {
          "source_path":"microsoft-365/security/office-365-security/skip-filtering-phising-simulations-sec-ops-mailboxes.md",
-         "redirect_url":"/microsoft-365/security/office-365-security/skip-filtering-phishing-simulations-sec-ops-mailboxes",
-         "redirect_document_id":true
+         "redirect_url":"/microsoft-365/security/office-365-security/advanced-delivery-policy-configure",
+         "redirect_document_id":false
       },
       {
          "source_path":"microsoft-365/security/office-365-security/admin-submission.md",
@@ -2617,7 +2622,7 @@
       },
       {
          "source_path":"microsoft-365/security/office-365-security/defender-for-office-365.md",
-         "redirect_url":"/microsoft-365/security/office-365-security/why-do-i-need-microsoft-defender-for-office-365",
+         "redirect_url":"/microsoft-365/security/office-365-security/mdo-about",
          "redirect_document_id":false
       },
       {
@@ -2800,6 +2805,141 @@
          "redirect_url":"/microsoft-365/security/office-365-security/anti-spoofing-spoof-intelligence",
          "redirect_document_id":false
        },
+       {
+         "source_path":"microsoft-365/security/office-365-security/eop-faq.yml",
+         "redirect_url":"/microsoft-365/security/office-365-security/eop-about",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/mail-flow-inbound-ipv6-support-about.md",
+         "redirect_url":"/microsoft-365/security/office-365-security/mail-flow-about#support-for-anonymous-inbound-email-over-ipv6",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/why-do-i-need-microsoft-defender-for-office-365.md",
+         "redirect_url":"/microsoft-365/security/office-365-security/mdo-about",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview.md",
+         "redirect_url":"/microsoft-365/security/office-365-security/mdo-security-comparison",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/use-arc-exceptions-to-mark-trusted-arc-senders.md",
+         "redirect_url":"/microsoft-365/security/office-365-security/email-authentication-arc-configure",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/skip-filtering-phishing-simulations-sec-ops-mailboxes.md",
+         "redirect_url":"/microsoft-365/security/office-365-security/advanced-delivery-policy-configure",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/removing-user-from-restricted-users-portal-after-spam.md",
+         "redirect_url":"/microsoft-365/security/office-365-security/outbound-spam-restore-restricted-users",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/message-trace-scc.md",
+         "redirect_url":"/microsoft-365/security/office-365-security/message-trace-defender-portal",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/install-app-guard.md",
+         "redirect_url":"/microsoft-365/security/office-365-security/app-guard-for-office-install",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/use-privileged-identity-management-in-defender-for-office-365.md",
+         "redirect_url":"/microsoft-365/security/office-365-security/pim-in-mdo-configure",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/sending-mail-to-office-365.md",
+         "redirect_url":"/microsoft-365/security/office-365-security/external-senders-microsoft-365-services",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/services-for-non-customers.md",
+         "redirect_url":"/microsoft-365/security/office-365-security/external-senders-microsoft-365-services",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/mail-flow-troubleshooting.md",
+         "redirect_url":"/microsoft-365/security/office-365-security/external-senders-mail-flow-troubleshooting",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md",
+         "redirect_url":"/microsoft-365/security/office-365-security/external-senders-use-the-delist-portal-to-unblock-yourself",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/reference-policies-practices-and-guidelines.md",
+         "redirect_url":"/microsoft-365/security/office-365-security/external-senders-policies-practices-guidelines",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/protect-against-threats.md",
+         "redirect_url":"/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/microsoft-365-policies-configurations.md",
+         "redirect_url":"/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-overview",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/identity-access-prerequisites.md",
+         "redirect_url":"/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-prereq",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/identity-access-policies.md",
+         "redirect_url":"/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-common",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/identity-access-policies-guest-access.md",
+         "redirect_url":"/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-guest-access",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/teams-access-policies.md",
+         "redirect_url":"/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-teams",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/secure-email-recommended-policies.md",
+         "redirect_url":"/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-exchange",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/sharepoint-file-access-policies.md",
+         "redirect_url":"/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-sharepoint",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/mcas-saas-access-policies.md",
+         "redirect_url":"/microsoft-365/security/office-365-security/zero-trust-identity-device-access-policies-mcas-saas",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/microsoft-365-continuous-access-evaluation.md",
+         "redirect_url":"/microsoft-365/security/office-365-security/zero-trust-continuous-access-evaluation-microsoft-365",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/integrate-office-365-ti-with-mde.md",
+         "redirect_url":"/microsoft-365/security/defender/deploy-configure-m365-defender",
+         "redirect_document_id":false
+       },
+       {
+         "source_path":"microsoft-365/security/office-365-security/mail-flow-delivery-faq.yml",
+         "redirect_url":"/microsoft-365/security/office-365-security/mail-flow-about#mail-flow-delivery-faq",
+         "redirect_document_id":false
+      },
        {
          "source_path":"microsoft-365/security/defender-business/mdb-maintain-environment.md",
          "redirect_url":"/microsoft-365/business-premium/m365bp-mdb-maintain-environment",
@@ -3508,6 +3648,11 @@
     {
     "source_path":"microsoft-365/security/defender-endpoint/helpful-resources.md",
     "redirect_url":"/microsoft-365/security/defender-endpoint/",
+    "redirect_document_id":false
+    },
+    {
+    "source_path":"microsoft-365/security/defender-endpoint/turn-on-definition-retirement.md",
+    "redirect_url":"/microsoft-365/security/defender-endpoint/configuration-management-reference-microsoft-defender-antivirus/",
     "redirect_document_id":false
     }
    ]
