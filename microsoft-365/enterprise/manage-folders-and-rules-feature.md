@@ -49,7 +49,6 @@ Admin can enable the feature with the help of cmdlet `Set-OrganizationConfig -Is
   > 
   > - Message level actions Copy/Move will be blocked.
 
-### Example 1
 To enable the **Folders and Rules** feature for Microsoft 365 Groups in Outlook, you can use the following cmdlet:
 
 ```powershell
@@ -74,8 +73,6 @@ Admin can enable the member permission to the tenant using the cmdlet `IsGroupMe
 
    Default value: false
 
-### Example 1
-
 To enable the **Enable member permission** option, you can use the following cmdlet:
 
 ```powershell
@@ -98,8 +95,6 @@ Admins can block the **Move** message option for all Microsoft 365 groups within
    Possible values: True/False
 
    Default value: false
-
-### Example 1
 
 To block the **Move message** capability, you can use the following cmdlet:
 
