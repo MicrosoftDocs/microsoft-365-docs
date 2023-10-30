@@ -81,7 +81,7 @@ This section describes the settings in Safe Attachments policies:
 
   ¹ Quarantine policies define what users are able to do to quarantined messages, and whether users receive quarantine notifications. For more information, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy). Users can't release their own messages that were quarantined as malware by Safe Attachments, regardless of how the quarantine policy is configured. If the policy allows users to release their own quarantined messages, users are instead allowed to _request_ the release of their quarantined malware messages.
 
-- **Redirect messages with detected attachments**: **Enable redirect** and **Send messages that contain blocked, monitored, or replaced attachments to the specified email address**: For the **Monitor** action only, send messages that contain malware attachments to the specified internal or external email address for analysis and investigation.
+- **Redirect messages with detected attachments**: **Enable redirect** and **Send messages that contain monitored attachments to the specified email address**: For the **Monitor** action only, send messages that contain malware attachments to the specified internal or external email address for analysis and investigation.
 
   The recommendation for Standard and Strict policy settings is to enable redirection. For more information, see [Safe Attachments settings](recommended-settings-for-eop-and-office365.md#safe-attachments-settings).
 

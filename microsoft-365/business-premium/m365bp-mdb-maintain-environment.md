@@ -7,8 +7,7 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: microsoft-365-security
-ms.subservice: m365bp
+ms.service: microsoft-365-business
 ms.date: 09/21/2023
 ms.localizationpriority: medium
 ms.collection: 
@@ -28,7 +27,7 @@ description: "Keep your systems, devices, user accounts, and security policies u
 
 # Monitor and maintain Microsoft 365 Business Premium and Defender for Business
 
-After you have set up and configured [Microsoft 365 Business Premium](index.md) or the standalone version of [Microsoft Defender for Business](../security/defender-business/mdb-overview.md), your next step is to prepare a plan for maintenance and operations. It's important to keep your systems, devices, user accounts, and security policies up to date to help protect against cyberattacks. You can use this article as a guide to prepare your plan. 
+After you have set up and configured [Microsoft 365 Business Premium](m365bp-overview.md) or the standalone version of [Microsoft Defender for Business](../security/defender-business/mdb-overview.md), your next step is to prepare a plan for maintenance and operations. It's important to keep your systems, devices, user accounts, and security policies up to date to help protect against cyberattacks. You can use this article as a guide to prepare your plan. 
 
 As you prepare your plan, you can organize the various tasks into two main categories, as listed in the following table:
 

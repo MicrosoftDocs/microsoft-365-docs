@@ -67,6 +67,7 @@ In automatic attack disruption, we leverage Microsoft-based XDR response actions
 
 - [Device contain](/microsoft-365/security/defender-endpoint/respond-machine-alerts#contain-devices-from-the-network) - based on Microsoft Defender for Endpoint's capability, this action is an automatic containment of a suspicious device to block any incoming/outgoing communication with the said device.
 - [Disable user](/defender-for-identity/remediation-actions) - based on Microsoft Defender for Identity's capability, this action is an automatic suspension of a compromised account to prevent additional damage like lateral movement, malicious mailbox use, or malware execution.
+- [Contain user](../defender-endpoint/respond-machine-alerts.md#contain-user-from-the-network) - This response action automatically contains suspicious identities temporarily. This helps to block any lateral movement and remote encryption related to incoming communication with Microsoft Defender for Endpoint’s onboarded devices.
 
 For more information, see [remediation actions](m365d-remediation-actions.md) in Microsoft 365 Defender.
 
@@ -97,11 +98,11 @@ The Microsoft 365 Defender user experience now includes additional visual cues t
 
 For more information, see [view attack disruption details and results](autoad-results.md).
 
-
 ## Next steps
 
 - [Configuring automatic attack disruption in Microsoft 365 Defender](configure-attack-disruption.md)
 - [View details and results](autoad-results.md)
+- [Get email notifications for response actions](m365d-response-actions-notifications.md)
 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

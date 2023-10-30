@@ -22,7 +22,7 @@ ms.custom:
 - manage_licenses
 - AdminTemplateSet
 search.appverid: MET150
-description: "The applications and services that you receive depend on which Microsoft 365 product you purchased, such as Microsoft 365 Apps for business."
+description: "Learn the difference between subscriptions and licenses, who can assign licenses, and what happens when you assign a license in  Microsoft 365 for business."
 ms.date: 05/12/2022
 ---
 
@@ -69,9 +69,9 @@ The following table lists what automatically happens when you assign a license t
 |Microsoft Teams|The person has access to the features associated with the license.|
 |Microsoft 365 Apps for enterprise and Microsoft 365 Apps for business|The person can download Microsoft 365 apps on up to five Macs or PCs, five tablets, and five smartphones.|
 
-## Understand licenses for non-user mailboxes
+## Understand licenses for nonuser mailboxes
 
-You don't need to assign licenses to resource mailboxes, room mailboxes, and shared mailboxes, except when they are over their storage quota of 50 gigabytes (GB). For more about non-user mailboxes, see the following articles:
+You don't need to assign licenses to resource mailboxes, room mailboxes, and shared mailboxes, except when they are over their storage quota of 50 gigabytes (GB). For more about nonuser mailboxes, see the following articles:
   
 - [Create a shared mailbox](../../admin/email/create-a-shared-mailbox.md)
 - [Remove a license from a shared mailbox](../../admin/email/remove-license-from-shared-mailbox.md)

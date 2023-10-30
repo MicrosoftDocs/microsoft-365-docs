@@ -1,10 +1,10 @@
 ---
 title: "User experience in a multi-geo environment"
-ms.reviewer: adwood
+ms.reviewer: anfra
 ms.date: 08/10/2020
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: microsoft-365-enterprise

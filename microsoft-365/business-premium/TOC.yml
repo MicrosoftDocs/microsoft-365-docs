@@ -1,7 +1,7 @@
 - name: Microsoft 365 Business Premium
   items: 
     - name: Overview
-      href: index.md
+      href: m365bp-overview.md
     - name: What's new
       href: m365bp-mdb-whats-new.md
     - name: Why choose Microsoft 365 Business Premium? 

@@ -18,6 +18,8 @@ ms.collection:
 - Adm_TOC
 - SPO_Content
 ms.custom:
+- has-azure-ad-ps-ref
+- azure-ad-ref-level-one-done
 - adminvideo
 - MSStore_Link
 - TRN_M365B

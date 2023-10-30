@@ -64,9 +64,10 @@ Automatic attack disruption enables the exclusion of specific user accounts from
 
 Excluding user accounts is not recommended, and accounts added to this list won't be suspended in all supported attack types like business email compromise (BEC) and human-operated ransomware.
 
-## Next step
+## Next steps
 
 - [View details and results](autoad-results.md)
+- [Get email notifications for response actions](m365d-response-actions-notifications.md)
 
 ## See also
 

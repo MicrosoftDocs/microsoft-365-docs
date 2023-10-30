@@ -1,8 +1,8 @@
 {
   "redirections":[
    {
-      "source_path": "microsoft-365/business/index.md",
-      "redirect_url": "/microsoft-365/business-premium/m365-business-premium-setup",
+      "source_path": "microsoft-365/business/index.yml",
+      "redirect_url": "/microsoft-365/business-premium/index",
       "redirect_document_id": false
     },
    {

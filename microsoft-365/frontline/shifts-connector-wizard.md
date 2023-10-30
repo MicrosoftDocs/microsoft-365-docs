@@ -80,7 +80,7 @@ Before you try the Shifts connector wizard, check that you meet all these prereq
 
     You can [create this account in Microsoft 365](/microsoft-365/admin/add-users/add-users) and assign it a Microsoft 365 license. Then, add the account as a team owner to all teams that you want to map. The Shifts connector uses this account when syncing Shifts changes from Blue Yonder. We recommend you create an account specifically for this purpose and not use your personal user account.
 
--  Make sure the teams you want to map don't have any schedules in Shifts or Blue Yonder. If a team has an existing schedule, follow the steps below to [remove schedule entities from the team](#remove-schedule-entities-from-teams-you-want-to-map) before you map a UKG Dimensions instance to it. Otherwise, you'll see duplicate shifts.
+-  Make sure the teams you want to map don't have any schedules in Shifts or Blue Yonder. If a team has an existing schedule, follow the steps below to [remove schedule entities from the team](#remove-schedule-entities-from-teams-you-want-to-map) before you map a WFM instance to it. Otherwise, you'll see duplicate shifts.
 
 ## Remove schedule entities from teams you want to map
 <a name="remove_schedules"> </a>
