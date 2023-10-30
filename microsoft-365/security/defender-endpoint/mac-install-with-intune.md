@@ -300,6 +300,10 @@ In the [Microsoft Defender portal](https://sip.security.microsoft.com/homepage?t
     >:::image type="content" source="images/networkprotection4.png" alt-text="np4":::
 1. Review the policy in **Review+Create** and click **Save**. 
 
+
+> [!TIP]
+> You can also configure network protection by appending the information from [**Network protection to help prevent macOS connections to bad sites**](network-protection-macos.md) to the .mobileconig from step 8.
+
 ### Step 10: Device Control for Microsoft Defender for Endpoint on macOS
 
 To set Device Control for Microsoft Defender for Endpoint on macOS, follow the steps in:
