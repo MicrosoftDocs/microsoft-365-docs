@@ -105,7 +105,7 @@ For more information, see [Use AllowSelfServicePurchase for the MSCommerce Power
 
 ## To enable or disable all self-service sign-ups
 
-To enable or disable all products, you will need to set the policy on a product basis. There is no way to do this in bulk.
+To enable or disable all products, you need to set the policy on a product basis. There is no way to do this in bulk.
 
 ## Centralize licenses under a single subscription
 
