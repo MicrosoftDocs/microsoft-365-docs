@@ -153,7 +153,7 @@ Both structured and freeform models use Microsoft Power Apps AI Builder to creat
       ![Image of generic archive icon.](../media/content-understanding/archive-image.png)
    :::column-end:::
    :::column span="3":::
-      Use taxonomy tagging in Syntex to find and manage terms in SharePoint document libraries. Syntex automatically tags documents with terms or terms sets configured in your taxonomy store using AI. These terms are stored in a managed metadata column, making the documents easier to search, sort, filter, and manage.
+      Use Microsoft 365 Archive as a cost-effective long-term storage solution for inactive or historical data. Because it’s archived in place, the content retains Microsoft 365 security, compliance, search, and rich metadata.
    :::column-end:::
 :::row-end:::
 
