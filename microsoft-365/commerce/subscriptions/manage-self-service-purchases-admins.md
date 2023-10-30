@@ -103,7 +103,7 @@ For more information, see [Use AllowSelfServicePurchase for the MSCommerce Power
 
 <a name='use-powershell-and-azure-ad-to-enable-or-disable-all-self-service-sign-ups'></a>
 
-## To enable or disable all self-service sign-ups
+## Enable or disable all self-service sign-ups
 
 To enable or disable all products, you need to set the policy on a product basis. There is no way to do this in bulk.
 
