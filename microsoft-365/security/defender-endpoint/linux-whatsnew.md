@@ -46,8 +46,9 @@ This article is updated frequently to let you know what's new in the latest rele
 &ensp;Signature version: **1.393.1305.0**<br/>
 
 **What's new**
-- This new release is build over October 2023 release (`101.23082.0009``) with addition of following change. There's no change for other customers and upgrading is optional.
-  - Fix for immutable mode of auditd when supplementary subsystem is ebpf:  In ebpf mode all mdatp audit rules should be cleaned after switching to ebpf and rebooting.  After reboot, mdatp audit rules were not cleaned due to which it was resulting in hang of the server.  The fix cleans these rules, user should not see any mdatp rules loaded on reboot
+This new release is build over October 2023 release (`101.23082.0009``) with addition of following change. There's no change for other customers and upgrading is optional.
+
+Fix for immutable mode of auditd when supplementary subsystem is ebpf:  In ebpf mode all mdatp audit rules should be cleaned after switching to ebpf and rebooting.  After reboot, mdatp audit rules were not cleaned due to which it was resulting in hang of the server.  The fix cleans these rules, user should not see any mdatp rules loaded on reboot
 
 **Known issues**
 
