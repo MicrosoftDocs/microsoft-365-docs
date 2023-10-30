@@ -75,7 +75,7 @@ Depending on the deployment management tool used, follow the tool-specific instr
 
 |Management  |License deployment instructions (Onboarding instructions)  |
 |---------|---------|
-|Intune     |   [Download the onboarding package](mac-install-with-intune.md#download-the-onboarding-package)     |
+|Intune     |   [Download the onboarding package](mac-install-with-intune.md#step-14-download-the-onboarding-package)     |
 |JamF     |    [Step 1: Get the Microsoft Defender for Endpoint onboarding package](mac-jamfpro-policies.md#step-1-get-the-microsoft-defender-for-endpoint-onboarding-package)     |
 |Other MDM     |     [License settings](mac-install-with-other-mdm.md#license-settings)   |
 |Manual installation      |    [Download installation and onboarding packages](mac-install-manually.md#download-installation-and-onboarding-packages); and [Client configuration](mac-install-manually.md#client-configuration)     |
