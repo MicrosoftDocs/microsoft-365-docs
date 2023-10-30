@@ -58,7 +58,7 @@ additionalContent:
             - text: Zero trust guidance
               url: index.yml
             - text: Protect and manage Copilot interactions with Microsoft Purview
-              url: index.yml
+              url: /purview/ai-microsoft-purview
             - text: Isolation controls
               url: index.yml
             - text: Microsoft Privacy - where is data stored and located
