@@ -157,7 +157,7 @@ Both structured and freeform models use Microsoft Power Apps AI Builder to creat
    :::column-end:::
 :::row-end:::
 
-[Learn more about Microsoft 365 Archive.](archive/archive-overview.md)
+[Learn more about Microsoft 365 Archive (Preview).](archive/archive-overview.md)
 
 ## Other features
 
