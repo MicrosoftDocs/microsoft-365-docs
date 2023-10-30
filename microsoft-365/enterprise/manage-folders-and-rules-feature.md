@@ -56,7 +56,7 @@ To enable folders and Rules feature for Microsoft 365 Groups in Outlook you can 
 Set-OrganizationConfig -IsGroupFoldersAndRulesEnabled $true
 ```
 
-Once the feature is enabled, by default only owner of the group has the permission to create folder, rename folder, move and copy messages across folders.
+Once the feature is enabled, by default, only the group owner has permission to create folders, rename folders, and move and copy messages across folders.
   
 ## Enable member permission option
 
