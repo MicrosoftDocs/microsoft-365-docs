@@ -28,7 +28,7 @@ ms.service: microsoft-365-security
 ms.date: 6/19/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
@@ -59,7 +59,7 @@ Users might notice and report unusual activity in their Microsoft 365 mailboxes.
 
 If a user reports these symptoms or other unusual symptoms, you should investigate. The Microsoft 365 Defender portal and the Azure portal offer the following tools to help you investigate suspicious activity on a user account.
 
-- **Unified audit logs in the Microsoft 365 Defender portal**: Filter the logs for activity using a date range that starts immediately before the suspicious activity occurred to today. Don't filter on specific activities during the search. For more information, see [Search the audit log](/purview/audit-log-search).
+- **Unified audit logs in the Microsoft 365 Defender portal**: Filter the logs for activity using a date range that starts immediately before the suspicious activity occurred to today. Don't filter on specific activities during the search. For more information, see [Search the audit log](audit-log-search-defender-portal.md).
 
 - **Microsoft Entra sign-in logs and other risk reports in the Microsoft Entra admin center**: Examine the values in these columns:
   - Review IP address
@@ -84,7 +84,7 @@ Do **all** of the following steps to regain control of the account. Go through t
 
 ### Step 1: Reset the user's password
 
-Follow the procedures in [Reset a business password for someone](../../admin/add-users/reset-passwords.md#reset-my-admin-password).
+Follow the procedures in [Reset a business password for someone](/microsoft-365/admin/add-users/reset-passwords#reset-my-admin-password).
 
 > [!IMPORTANT]
 >
@@ -98,7 +98,7 @@ Follow the procedures in [Reset a business password for someone](../../admin/add
 >
 > - Be sure to update app passwords. App passwords aren't automatically revoked when you reset the password. The user should delete existing app passwords and create new ones. For instructions, see [Create and delete app passwords from the Additional security verification page](/azure/active-directory/user-help/multi-factor-authentication-end-user-app-passwords#create-and-delete-app-passwords-from-the-additional-security-verification-page).
 >
-> - We highly recommended that you enable multi-factor authentication (MFA) for the account. MFA is a good way to help prevent account compromise, and is very important for accounts with administrative privileges. For instructions, see [Set up multi-factor authentication](../../admin/security-and-compliance/set-up-multi-factor-authentication.md).
+> - We highly recommended that you enable multi-factor authentication (MFA) for the account. MFA is a good way to help prevent account compromise, and is very important for accounts with administrative privileges. For instructions, see [Set up multi-factor authentication](/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication).
 
 ### Step 2: Remove suspicious email forwarding addresses
 
@@ -124,7 +124,7 @@ Follow the procedures in [Reset a business password for someone](../../admin/add
 
 If the account was used to send spam or a high volume of email, it's likely that the mailbox has been blocked from sending mail.
 
-To unblock a mailbox from sending email, follow the procedures in [Remove blocked users from the Restricted entities page](removing-user-from-restricted-users-portal-after-spam.md).
+To unblock a mailbox from sending email, follow the procedures in [Remove blocked users from the Restricted entities page](outbound-spam-restore-restricted-users.md).
 
 ### Step 5 Optional: Block the user account from signing-in
 

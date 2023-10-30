@@ -1,5 +1,5 @@
 ---
-title: Set up Microsoft 365 Business Premium
+title: Get and set up Microsoft 365 Business Premium
 description: "How to set up Microsoft 365 Business Premium or work with a solution provider to do so."
 search.appverid: MET150
 author: denisebmsft
@@ -8,7 +8,7 @@ manager: dansimp
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
-ms.date: 10/10/2023
+ms.date: 10/27/2023
 ms.localizationpriority: medium
 ms.reviewer: nehabha
 f1.keywords: NOCSH 
@@ -18,12 +18,14 @@ ms.collection:
 ms.custom: intro-get-started
 ---
 
-# Set up Microsoft 365 Business Premium
+# Get and set up Microsoft 365 Business Premium
 
-This article describes how to get Microsoft 365 Business Premium, complete the basic setup process, and proceed to your next steps.
+This article describes how to get Microsoft 365 Business Premium, complete the basic setup process, and identify your next steps.
+
+:::image type="content" source="media/mission1.png" alt-text="Diagram showing the Sign in and set up phase highlighted.":::
 
 > [!TIP]
-> If you're looking for Microsoft 365 for Campaigns, see [How to get Microsoft 365 for Campaigns](m365-campaigns-setup.md).
+> If you're looking for Microsoft 365 for Campaigns, see [Set up Microsoft 365 for Campaigns](m365-campaigns-setup.md).
 
 ## Sign up for Microsoft 365 Business Premium
 
@@ -105,7 +107,13 @@ When you're finished with the basic setup process, you'll see **Setup is complet
 :::image type="content" source="media/m365bp-setupcomplete.png" alt-text="Screenshot of the Setup is Complete confirmation screen."lightbox="media/m365bp-setupcomplete.png"::: 
 
 > [!IMPORTANT]
-> At this point, basic setup for Microsoft 365 is complete, but you still need to set up and configure your security settings. **Proceed to [Boost your security protection](m365bp-security-overview.md)**.
+> At this point, basic setup for Microsoft 365 is complete, but you still need to set up and configure your security settings. **Proceed to [set up your security protection](m365bp-security-overview.md)**.
+
+### Employee quick setup guide
+
+[:::image type="content" source="media/employee-setup-guide.png" alt-text="Screenshot of employee setup guide steps.":::](https://support.microsoft.com/en-us/office/employee-quick-setup-in-microsoft-365-for-business-7f34c318-e772-46a5-8c0a-ab86661542d1)
+
+After you have added users to your Microsoft 365 subscription, give them a link to the [Employee quick setup guide](https://support.microsoft.com/office/7f34c318-e772-46a5-8c0a-ab86661542d1). The guide walks them through signing in, getting Microsoft 365 Apps, and saving, copying, and sharing files.
 
 ## [**Work with a Microsoft partner**](#tab/UsePartner)
 
@@ -126,19 +134,7 @@ If you'd prefer to have a Microsoft partner help you get and set up Microsoft 36
 
 ---
 
-## Employee quick setup guide
-
-[:::image type="content" source="media/employee-setup-guide.png" alt-text="Screenshot of employee setup guide steps.":::](https://support.microsoft.com/en-us/office/employee-quick-setup-in-microsoft-365-for-business-7f34c318-e772-46a5-8c0a-ab86661542d1)
-
-After you have added users to your Microsoft 365 subscription, give them a link to the [Employee quick setup guide](https://support.microsoft.com/office/7f34c318-e772-46a5-8c0a-ab86661542d1). The guide walks them through signing in, getting Microsoft 365 Apps, and saving, copying, and sharing files.
-
-## Next objective
+## Next step
 
 Proceed to [Boost your security protection](m365bp-security-overview.md).
-
-## See also
-
-- [Overview of the Microsoft 365 admin center](../admin/admin-overview/admin-center-overview.md)
-- [Business subscriptions and billing documentation](../commerce/index.yml)
-- [Find a Microsoft partner or reseller](../admin/manage/find-your-partner-or-reseller.md)
 
