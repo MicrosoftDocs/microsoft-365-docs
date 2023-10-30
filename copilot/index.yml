@@ -35,8 +35,6 @@ additionalContent:
               url: /microsoft-365/compliance/dlp-learn-about-dlp
             - text: Microsoft 365 Copilot Service Description
               url: /office365/servicedescriptions/office-365-platform-service-description/microsoft-365-copilot/
-            - text: Recommended secure document policies
-              url: index.yml
         # Card
         - title: Get started with Microsoft 365 Copilot
           links:
@@ -61,8 +59,6 @@ additionalContent:
               url: /purview/ai-microsoft-purview
             - text: Isolation controls
               url: index.yml
-            - text: Microsoft Privacy - where is data stored and located
-              url: index.yml
         # Card
         - title: Manage and extend Microsoft 365 Copilot
           links:
@@ -70,8 +66,6 @@ additionalContent:
               url: /microsoft-365/solutions/tenant-management-overview
             - text: Extend Microsoft 365 Copilot
               url: /microsoftteams/platform/copilot/how-to-extend-copilot#how-to-make-your-graph-connector-work-better-with-copilot
-            - text: Manage extensions
-              url: index.yml
             - text: Manage Plugins for Copilot in Integrated Apps (PREVIEW)
               url: /microsoft-365/admin/manage/manage-plugins-for-copilot-in-integrated-apps
         # Card
