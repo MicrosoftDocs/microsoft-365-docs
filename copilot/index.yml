@@ -54,7 +54,7 @@ additionalContent:
             - text: Data, Privacy, and Security
               url: microsoft-365-copilot-privacy.md
             - text: Zero trust guidance
-              url: index.yml
+              url: /security/zero-trust/zero-trust-tech-illus#zero-trust-for-microsoft-365-copilot
             - text: Protect and manage Copilot interactions with Microsoft Purview
               url: /purview/ai-microsoft-purview
             - text: Isolation controls
