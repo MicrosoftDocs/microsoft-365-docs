@@ -39,7 +39,7 @@ This topic describes how to deploy Microsoft Defender for Endpoint on macOS thro
 1. [Background services](#step-4-background-services)
 1. [Notifications](#step-5-notifications)
 1. [ Accessibility settings](#step-6-accessibility-settings)
-1. [Microsoft AutoUpdate](#step-7-microsoft-autoupdate-mau)
+1. [Microsoft AutoUpdate](#step-7-microsoft-autoupdate)
 1. [Microsoft Defender for Endpoint configuration settings](#step-8-microsoft-defender-for-endpoint-configuration-settings)
 1. [Network protection for Microsoft Defender for Endpoint on macOS](#step-9-network-protection-for-microsoft-defender-for-endpoint-on-macos)
 1. [Device control for Microsoft Defender for Endpoint on macOS](#step-10-device-control-for-microsoft-defender-for-endpoint-on-macos)
@@ -223,7 +223,7 @@ Download [accessibility.mobileconfig](https://github.com/microsoft/mdatp-xplat/b
 1. On the **Assignments** tab, assign the profile to a group where the macOS devices and/or users are located, or All Users and All devices.
 1. Review the configuration profile. Click **Create**.
 
-### Step 7: Microsoft  AutoUpdate (MAU)
+### Step 7: Microsoft AutoUpdate
 
 This profile is used to update the Microsoft Defender for Endpoint on macOS via Microsoft AutoUpdate (MAU). If you're deploying Microsoft Defender for Endpoint on macOS, you'll have the options to get an updated version of the application (Platform Update) that are in the different channels mentioned here:
 
@@ -472,11 +472,16 @@ Solution: Follow the steps above to create a device profile using WindowsDefende
 See [Logging installation issues](mac-resources.md#logging-installation-issues) for the procedure to find the automatically generated log, created by the installer when an error occurs.
 
 For information on troubleshooting procedures, see:
+
 [Troubleshoot system extension issues in Microsoft Defender for Endpoint on macOS](mac-support-sys-ext.md)
-<br>[Troubleshoot installation issues for Microsoft Defender for Endpoint on macOS](mac-support-install.md)
-<br>[Troubleshoot license issues for Microsoft Defender for Endpoint on macOS](mac-support-license.md)
-<br>[Troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint on macOS](troubleshoot-cloud-connect-mdemac.md)
-<br>[Troubleshoot performance issues for Microsoft Defender for Endpoint on macOS](mac-support-perf.md)
+
+[Troubleshoot installation issues for Microsoft Defender for Endpoint on macOS](mac-support-install.md)
+
+[Troubleshoot license issues for Microsoft Defender for Endpoint on macOS](mac-support-license.md)
+
+[Troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint on macOS](troubleshoot-cloud-connect-mdemac.md)
+
+[Troubleshoot performance issues for Microsoft Defender for Endpoint on macOS](mac-support-perf.md)
 
 
 ## Uninstallation
