@@ -103,9 +103,9 @@ For more information, see [Use AllowSelfServicePurchase for the MSCommerce Power
 
 <a name='use-powershell-and-azure-ad-to-enable-or-disable-all-self-service-sign-ups'></a>
 
-## Use PowerShell and Microsoft Entra ID to enable or disable all self-service sign-ups
+## To enable or disable all self-service sign-ups
 
-You can use PowerShell commands to change the settings that control self-service sign-ups. To turn off all self-service sign-ups, use the **MSOnline** PowerShell module to change the **MsolCompanySettings** setting for **AllowAdHocSubscriptions** in Microsoft Entra ID. For the steps to turn off self-service sign-ups, see [Set MsolCompanySettings](/powershell/module/msonline/set-msolcompanysettings).
+To enable or disable all products, you will need to set the policy on a product basis. There is no way to do this in bulk.
 
 ## Centralize licenses under a single subscription
 
