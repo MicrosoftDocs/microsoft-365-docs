@@ -151,7 +151,7 @@ If you want to rotate to the second selector, after four days and confirming tha
 
 For detailed syntax and parameter information, see the following articles: [Rotate-DkimSigningConfig](/powershell/module/exchange/rotate-dkimsigningconfig), [New-DkimSigningConfig](/powershell/module/exchange/new-dkimsigningconfig), and [Get-DkimSigningConfig](/powershell/module/exchange/get-dkimsigningconfig).
 
-## Steps to manually set up DKIM using powershell
+## Steps to manually set up DKIM using PowerShell
 <a name="SetUpDKIMO365"> </a>
 
 To configure DKIM, you will complete these steps:
@@ -165,7 +165,7 @@ To configure DKIM, you will complete these steps:
 For each domain for which you want to add a DKIM signature in DNS, you need to publish two CNAME records.
 
 > [!NOTE]
-> If you haven't read the full article, you may have missed this time-saving PowerShell connection information: [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+> If you haven't read the full article, you might have missed this time-saving PowerShell connection information: [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 Run the following commands in Exchange Online PowerShell to create the selector records:
 
