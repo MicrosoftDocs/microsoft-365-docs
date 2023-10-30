@@ -2,7 +2,7 @@
    "redirections":[
       {
          "source_path":"microsoft-365/frontline/flw-trial.md",
-         "redirect_url":"/microsoft-365/frontline",
+         "redirect_url":"/microsoft-365/frontline/index.yml",
          "redirect_document_id":true
       },
       {
