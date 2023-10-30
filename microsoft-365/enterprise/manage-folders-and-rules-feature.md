@@ -101,7 +101,7 @@ Admins can block the **Move** message option for all Microsoft 365 groups within
 
 ### Example 1
 
-To block “Move” message capability you can use the below cmdlet
+To block the **Move message** capability, you can use the following cmdlet:
 
 ```powershell
 Set-OrganizationConfig -BlockMoveMessagesForGroupFolders $true
