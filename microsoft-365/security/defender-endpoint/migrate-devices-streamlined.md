@@ -48,8 +48,8 @@ In most cases, full device offboarding isn't required when reonboarding. You can
 
 - **Validate and monitor**. After onboarding the small set of devices, validate that devices have successfully onboarded and are communicating with the service. 
 
-- **Complete migration**. At this stage, you can gradually roll out the migration to a larger set of devices. To complete the migration, you can rreplace previous onboarding policies and remove the old URLs from your network device.
-- 
+- **Complete migration**. At this stage, you can gradually roll out the migration to a larger set of devices. To complete the migration, you can replace previous onboarding policies and remove the old URLs from your network device.
+  
 Validate [device prerequisites](configure-device-connectivity.md#prerequisites) before proceeding with any migrations. This information builds upon the previous article by focusing on migrating existing devices. 
 
 To reonboard devices, you will need to use the streamlined onboarding package. For more information on how to access the package, see [Streamlined connectivity](configure-device-connectivity.md).

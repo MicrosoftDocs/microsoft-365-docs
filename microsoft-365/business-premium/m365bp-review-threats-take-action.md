@@ -7,7 +7,7 @@ manager: dansimp
 audience: Admin
 ms.topic: conceptual 
 ms.service: microsoft-365-business
-ms.date: 10/20/2023
+ms.date: 10/26/2023
 ms.localizationpriority: medium
 ms.collection:
 - m365-security
@@ -73,11 +73,11 @@ The following table describes the actions you might see in Microsoft Intune.<br>
 
 | Action | Description |
 |--|--|
-| Restart | Forces a Windows device to restart within five minutes.<br><br>**IMPORTANT:** The device owner or user isn't automatically notified of the restart and could lose unsaved work. |
-| Quick Scan | Starts a quick antivirus scan on the device, focusing on common locations where malware might be registered, such as registry keys and known Windows startup folders. Results are sent to [Microsoft Intune](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager). |
-| Full Scan | Starts a full antivirus scan on the device, focusing on common locations where malware might be registered, and including every file and folder on the device. Results are sent to [Microsoft Intune](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager). |
-| Sync | Requires a device to check in with Intune. When the device checks in, the device receives any pending actions or policies assigned to the device. |
-| Update signatures | Requires the device to get [security intelligence updates](https://go.microsoft.com/fwlink/?linkid=2149926) for antivirus and antimalware protection. |
+| **Restart** | Forces a Windows device to restart within five minutes.<br><br>**IMPORTANT:** The device owner or user isn't automatically notified of the restart and could lose unsaved work. |
+| **Quick Scan** | Starts a quick antivirus scan on the device, focusing on common locations where malware might be registered, such as registry keys and known Windows startup folders. Results are sent to [Microsoft Intune](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager). |
+| **Full Scan** | Starts a full antivirus scan on the device, focusing on common locations where malware might be registered, and including every file and folder on the device. Results are sent to [Microsoft Intune](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager). |
+| **Sync** | Requires a device to check in with Intune. When the device checks in, the device receives any pending actions or policies assigned to the device. |
+| **Update signatures** | Requires the device to get [security intelligence updates](https://go.microsoft.com/fwlink/?linkid=2149926) for antivirus and antimalware protection. |
 
 > [!TIP]
 > For more information, see [Remote actions for devices](/mem/intune/protect/endpoint-security-manage-devices#remote-actions-for-devices).
