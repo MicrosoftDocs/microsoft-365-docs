@@ -17,7 +17,7 @@ description: "Use Power Automate Bookings Connectors to create custom workflows 
 
 # Use Power Automate connectors to build Bookings workflows
 
-Microsoft Bookings Connector is built to extend Booking appointments with other functionalities that power platform has to offer. If you've ever wanted to build custom workflows for your business customer appointments, for example allowing customers to book a Zoom meeting along with an appointment, integrating a payment method using Stripe, uploading customer data to a CRM system, or sending out welcome emails, Bookings Connector is your Bookings solution.
+Microsoft Bookings Connector is built to extend Booking appointments with other functionalities that power platform has to offer. If you've ever wanted to build custom workflows for your business customer appointments, for example allowing customers to book a Zoom meeting along with an appointment, uploading customer data to a CRM system, or sending out welcome emails, Bookings Connector is your Bookings solution.
 
 ## Before you begin
 
