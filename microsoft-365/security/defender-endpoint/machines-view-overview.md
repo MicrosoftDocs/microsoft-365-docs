@@ -141,15 +141,15 @@ You can add or remove columns from the view and sort the entries by clicking on 
 
 On the **Computer and Mobiles** tab, select **Customize columns** to see the columns available. The default values are checked in the image below:
 
-![Image of computers and mobiles](images/computerandmobilescolumns.png)
+:::image type="content" alt-text="Image of computers and mobiles" source="images/computerandmobilescolumns.png":::
 
 On the **Network devices** tab, select **Customize columns** to see the columns available. The default values are checked in the image below:
 
-![Image of network device columns](images/networkdevicescolumns.png)
+:::image type="content" alt-text="Image of network device columns" source="images/networkdevicescolumns.png":::
 
 On the **IoT devices** tab, select **Customize columns** to see the columns available. The default values are checked in the image below:
 
-![Image of IoT device columns](images/iotdevicescolumns.png)
+:::image type="content" alt-text="Image of IoT device columns" source="images/iotdevicescolumns.png":::
 
 ## Related articles
 
