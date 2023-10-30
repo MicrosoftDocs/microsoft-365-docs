@@ -82,7 +82,7 @@ To enable Enable member permission option you can use the below cmdlet.
 Set-OrganizationConfig -IsGroupMemberAllowedToEditContent $true
 ```
 
-Once this is enabled, group owners can provide group members with the ability to create folders, rename folders, copy, move, and delete messages by navigating to the group from Outlook > **Settings** > **Edit Group** > and selecting the option **All members will be able to create, edit, move, copy, and delete mail folders and rules within the group**. Group level member permission is handled by group owners.
+Once this option is enabled, group owners can provide group members with the ability to create folders, rename folders, and copy, move, and delete messages by navigating to the group from Outlook > **Settings** > **Edit Group** > and selecting the option **All members will be able to create, edit, move, copy, and delete mail folders and rules within the group**. Group-level member permission is handled by group owners.
 
 > [!NOTE]
 > Admins can see the current value of the settings using `Get-OrganizationConfig` cmdlet.
