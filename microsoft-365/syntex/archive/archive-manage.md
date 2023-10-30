@@ -79,8 +79,3 @@ When you reactivate a site, its permissions, lists, pages, files, folder-structu
 - Content marked to be deleted by retention policies will still be deleted as normal.
 
 Other than these two exceptions, you can expect the site to be unchanged.  
-
-<br>
-
-> [!div class="nextstepaction"]
-> [Back to list of preview documentation](archive-overview.md#preview-documentation)

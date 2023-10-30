@@ -32,7 +32,3 @@ For a multi-geo tenant, the URL needs to be set for each geo location.
 
 The **Request to reactivate** button won't be visible if a redirect URL hasn't been set.
 
-<br>
-
-> [!div class="nextstepaction"]
-> [Back to list of preview documentation](archive-overview.md#preview-documentation)

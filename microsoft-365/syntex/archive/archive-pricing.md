@@ -46,8 +46,3 @@ Monthly archive usage is calculated as the sum of the usage of all currently arc
 Reactivations are charged based on the Site Storage usage of the site being restored, charged per GB upon the successful reactivation of the site. 
 --->
 <!--- To see the pricing for Microsoft 365 Archive, see [Pay-as-you-go services and pricing for Microsoft Syntex](../syntex-pay-as-you-go-services.md).--->
-
-<br>
-
-> [!div class="nextstepaction"]
-> [Back to list of preview documentation](archive-overview.md#preview-documentation)

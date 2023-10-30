@@ -66,8 +66,3 @@ To turn off Microsoft 365 Archive:
 2. On the **Archive (Preview)** page, select **Turn off**.
 
 When you turn off Microsoft 365 Archive, any further archiving stops. The sites already archived will continue to be in an archive state, and will be billed. The sites can be reactivated with reactivation cost or deleted.
-
-<br>
-
-> [!div class="nextstepaction"]
-> [Back to list of preview documentation](archive-overview.md#preview-documentation)
