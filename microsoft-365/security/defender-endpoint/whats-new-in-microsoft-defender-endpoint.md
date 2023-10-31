@@ -60,7 +60,7 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 
 ## October 2023
 
-- (Public Preview) [Streamlined device connectivity for Defender for Endpoint](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-a-streamlined-device-connectivity-experience-for/ba-p/3956236) is available in public preview for Windows. This experience makes it easier to configure and manage Defender for Endpoint services by reducing the number of URLs required for connectivity, providing IP & Azure service tag support, and simplifying post-deployment network management. 
+- (Public Preview) [Streamlined device connectivity for Defender for Endpoint](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-a-streamlined-device-connectivity-experience-for/ba-p/3956236) is available in public preview for Windows, macOS, and Linux. This experience makes it easier to configure and manage Defender for Endpoint services by reducing the number of URLs required for connectivity, providing IP & Azure service tag support, and simplifying post-deployment network management. 
 
   
 ## September 2023
