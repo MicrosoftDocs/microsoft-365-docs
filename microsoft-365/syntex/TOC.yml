@@ -194,6 +194,19 @@
         - name: Admin setup 
           href: ocr.md
 
+    - name: Microsoft 365 Backup 
+      items: 
+        - name: Overview 
+          href: backup/backup-overview.md
+        - name: Admin setup 
+          href: backup/backup-setup.md
+        - name: Pricing calculator 
+          href: backup/backup-pricing-calculator.md
+        - name: Limitations
+          href: backup/backup-limitations.md
+        - name: Offboarding
+          href: backup/backup-offboarding.md
+
     - name: Annotations
       href: annotations.md
 
