@@ -102,7 +102,20 @@ All our updates contain
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 
+### October-2023 (Platform: Platform: 4.18.23100.xxxx | Engine: 1.1.23100.xxxx)
 
+- Security intelligence update version: **x.x.x.x**
+- Release date:  **October 31, 2023 (Engine) / October 31, 2023 (Platform)**
+- Platform: **4.18.23100.xxxx**
+- Engine: **1.1.23100.xxxx**
+- Support phase: **Security and Critical Updates**
+
+#### What's new
+
+- Defender Core Service is generally available for consumer devices
+- [Device control](device-control-removable-storage-access-control.md) policies remain enforced following a platform update that requires a reboot
+- Improved performance of [device control for printing scenarios](printer-protection.md)
+- Fixed truncation issue in the output of [MpCmdRun.exe -scan](command-line-arguments-microsoft-defender-antivirus) (processing Unicode characters)
 
 ### September-2023 (Platform: 4.18.23090.2008 | Engine: 1.1.23090.2007)
  
