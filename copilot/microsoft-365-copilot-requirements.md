@@ -46,6 +46,8 @@ Microsoft 365 Copilot works with the new Outlook (for [Windows](https://support.
 
 To have Copilot appear in the new Outlook, you'll need to sync your Microsoft 365 settings. To do this, go to [View and manage your Microsoft 365 settings](https://myaccount.microsoft.com/settingsandprivacy/language).
 
+Microsoft 365 Copilot will be supported on classic Outlook for Windows (win32 desktop app) in the future. You can [review the roadmap item here](https://www.microsoft.com/microsoft-365/roadmap?rtc=1&filters=Outlook&searchterms=copilot).
+
 ### Microsoft Teams
 
 You can use the [Microsoft Teams setup guide](https://admin.microsoft.com/Adminportal/Home?Q=m365setup#/modernonboarding/microsoftteamssetupguide) in the Microsoft 365 admin center to configure popular Teams settings, including external access, guest access, team creation permissions, and more.  Copilot in Teams is available on Windows, Mac, web, Android, and iOS.
@@ -54,15 +56,27 @@ You can use the [Microsoft Teams setup guide](https://admin.microsoft.com/Adminp
 
 To use Microsoft 365 Copilot with Microsoft Loop, you must have Loop enabled for your tenant. This can be done in the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/Settings/Services/:/Settings/L1/Loop) or the [Microsoft 365 Apps admin center](https://config.office.com) under **Customization** \| **Policy Management**. For more information, see [Manage Loop workspaces in Syntex repository services](/microsoft-365/loop/loop-workspaces-configuration) and [Learn how to enable the Microsoft Loop app, now in Public Preview](https://techcommunity.microsoft.com/t5/microsoft-365-blog/learn-how-to-enable-the-microsoft-loop-app-now-in-public-preview/ba-p/3769013).
 
-### Update channels
+### Microsoft Whiteboard
 
-User devices must be on either Current Channel or Monthly Enterprise Channel to access Microsoft 365 Copilot features. In November, Copilot will initially be available on Current Channel, and Monthly Enterprise Channel a month later. To learn more about update channels, see [update channels for Microsoft 365 Apps](/deployoffice/updates/overview-update-channels#current-channel-overview).
+To use Microsoft 365 Copilot with Microsoft Whiteboard, you must have Whiteboard enabled for your tenant. To learn more about Microsoft Whiteboard, see [Manage access to Microsoft Whiteboard for your organization](/whiteboard/manage-whiteboard-access-organizations).
+
+## Update channels
+
+Microsoft 365 Copilot will follow Microsoft 365 Apps' standard practice for deployment and updates, being available in all update channels, expect for Semi-annual channel. Once generally available on 11/1, Copilot will be available in Current Channel and -- starting December 12th – in Monthly Enterprise Channel. As always, preview channels are a great option to validate the product before rolling out to the rest of the organization. To learn more, see [Overview of update channels](/deployoffice/updates/overview-update-channels), and the [Microsoft 365 Insider channels](/deployoffice/insider/compare-channels).
+
+## Conditional Access
+
+Microsoft 365 Copilot supports tenant-level Conditional Access Policies (CAP) in SharePoint Online. However, Copilot does not currently support site-level CAP. This is limited to Copilot in Word, Copilot in PowerPoint, and Microsoft 365 Chat. Only users with existing access permissions to a document may access that document, but in some situations, Copilot may summarize content from that file for a user with existing permission even if not all of the site-level CAP requirements are met. Note that this does not allow a user to access data to which they don’t already have existing permissions. We are working toward an update to extend support to site-level CAP, currently targeting December.
+
+Microsoft 365 Copilot does support tenant-level CAP configurations. A site-level CAP defines the policies a user must meet to access the content on a given site. To learn more, see [What is Conditional Access in Microsoft Entra ID?](/entra/identity/conditional-access/overview).
+
+## Restricted Access Control
+
+Microsoft 365 Copilot does not currently support Restricted Access Control (RAC) and Microsoft 365 Information Barriers. We currently plan to extend support to both policies by December. In the meantime, we recommend against assigning Copilot to potentially impacted users. Learn more about [restricted access control](/sharepoint/restricted-access-control) and [information barrier policies](/purview/information-barriers).
 
 ## Network requirements
 
 Copilot services connect to endpoints contained within the [Microsoft 365 endpoint taxonomy](https://aka.ms/o365ip). As with all Microsoft 365 services, we recommend that customers align their network with the [Microsoft 365 network connectivity principles](/microsoft-365/enterprise/microsoft-365-network-connectivity-principles). This helps provide the best experience with Copilot through minimization of latency and increased network quality of service for critical network flows.
-
-There are many Copilot experiences, including some core experiences like Excel, Word, PowerPoint, Teams, and Loop, that use WebSocket connections (wss://) from the device running the Microsoft 365 app to a Microsoft service. So, to use these Copilot experiences, WebSocket connections must be allowed from user endpoints to the endpoints listed in our endpoint taxonomy, specifically in ID number 46 in the section for [Microsoft 365 Common and Office Online](/microsoft-365/enterprise/urls-and-ip-address-ranges).
 
 ## License requirements
 
