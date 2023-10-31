@@ -127,7 +127,7 @@ But what if an admin simply resets the password of the shared mailbox user accou
 
 4. On the **Block sign-in** page, select **Block the user from signing in**, and then select **Save changes**.
 
-For instructions on how to block sign-in for accounts using [Microsoft Graph PowerShell](/powershell/microsoftgraph/overview?view=graph-powershell-1.0&branch=main) (including many accounts at the same time), see [Block Microsoft 365 user accounts with PowerShell](../../enterprise/block-user-accounts-with-microsoft-365-powershell.md).
+For instructions on how to block sign-in for accounts using [Microsoft Graph PowerShell](/powershell/microsoftgraph/overview) (including many accounts at the same time), see [Block Microsoft 365 user accounts with PowerShell](../../enterprise/block-user-accounts-with-microsoft-365-powershell.md).
 
 ## Add the shared mailbox to Outlook
 
