@@ -33,6 +33,8 @@ Taxonomy tagging is available for the following file types: .doc, .docx, .pdf, a
 
 - A maximum of three columns in a library can be configured with taxonomy tagging.
 
+- Currently, taxonomy tagging does not work on scanned PDF files. It only works for regular PDF files.
+
 - Time taken to reflect tags getting in the taxonomy column: Minimum: 20 minutes, maximum: 24 hours.
 
 - The configured column is an editable taxonomy column. Therefore, you can add new tags or remove the AI-generated tags to meet your requirements.
