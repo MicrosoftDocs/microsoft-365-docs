@@ -20,6 +20,7 @@ ms.custom:
   - AdminSurgePortfolio
   - okr_SMB
   - has-azure-ad-ps-ref
+  - azure-ad-ref-level-one-done
 search.appverid: MET150
 description: "Learn about the Microsoft 365 self-service sign-up and available self-service programs such as Microsoft Power Apps, Microsoft Power Automate, and Dynamics 365 for Finance."
 ms.date: 03/17/2021

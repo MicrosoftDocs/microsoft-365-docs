@@ -19,6 +19,7 @@ ms.custom:
   - commerce_subscriptions
   - AdminSurgePortfolio
   - has-azure-ad-ps-ref
+  - azure-ad-ref-level-one-done
 search.appverid: MET150
 description: "Learn how to manage free self-service sign-up subscriptions for your organization."
 ms.date: 03/17/2021
