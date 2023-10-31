@@ -104,23 +104,23 @@ When you save the file, you'll probably get a prompt that some features in your 
 
 - **Is there a limit to the number of characters I can use?** The following table shows the user data column labels and the maximum character length for each in the sample spreadsheet.
 
-| User data column label | Maximum character length |
-|:-----|:-----|
-|User Name (Required)  |79 including the at sign (@), in the format name@domain.\<extension\>. The user's alias cannot exceed 50 characters, and the domain name cannot exceed 48 characters.  |
-|First Name  |64  |
-|Last Name  |64  |
-|Display Name (required)  |256  |
-|Job Title  |64  |
-|Department  |64  |
-|Office Number  |128  |
-|Office Phone  |64  |
-|Mobile Phone  |64  |
-|Fax  |64  |
-|Address  |1023  |
-|City  |128  |
-|State or Province  |128  |
-|ZIP or Postal Code  |40  |
-|Country or Region  |128  |
+  | User data column label | Maximum character length |
+  |:-----|:-----|
+  |User Name (Required)  |79 including the at sign (@), in the format name@domain.\<extension\>. The user's alias cannot exceed 50 characters, and the domain name cannot exceed 48 characters.  |
+  |First Name  |64  |
+  |Last Name  |64  |
+  |Display Name (required)  |256  |
+  |Job Title  |64  |
+  |Department  |64  |
+  |Office Number  |128  |
+  |Office Phone  |64  |
+  |Mobile Phone  |64  |
+  |Fax  |64  |
+  |Address  |1023  |
+  |City  |128  |
+  |State or Province  |128  |
+  |ZIP or Postal Code  |40  |
+  |Country or Region  |128  |
 
 ### Still having problems when adding users to Microsoft 365?
 
