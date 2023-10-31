@@ -58,6 +58,8 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 - [What's new in Defender for Endpoint on Android](android-whatsnew.md)
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 
+## October 2023
+(GA) The device isolation and run AV scan responses in macOS and Linux are now generally available. You can now remotely [run an AV scan](respond-machine-alerts.md#run-microsoft-defender-antivirus-scan-on-devices) or [isolate devices](respond-machine-alerts.md#isolate-devices-from-the-network) when responding to attacks.
 
 ## September 2023
 (GA) The [Protecting Dev Drive using performance mode](microsoft-defender-endpoint-antivirus-performance-mode.md) is now generally available. The goal of Performance mode is to improve functional performance for developers who use Windows 11.  Performance mode which reduces the performance impact of Microsoft Defender Antivirus scans for files stored on designated Dev Drive.
@@ -167,3 +169,4 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+
