@@ -32,6 +32,8 @@ The following are the prerequisites for using Microsoft 365 Copilot. If your org
 
 [Microsoft 365 Apps for enterprise](/deployoffice/about-microsoft-365-apps) must be deployed. Use the [Microsoft 365 Apps setup guide](https://admin.microsoft.com/Adminportal/Home?Q=m365setup#/modernonboarding/microsoft365appssetup) in the Microsoft 365 admin center to deploy to your users.
 
+**Note**: For Copilot to work in Word Online and PowerPoint Online, you'll need to have third-party cookies enabled.
+
 ### Microsoft Entra ID
 
 Users must have [Microsoft Entra ID](/microsoft-365/admin/add-users/add-users) (formerly Azure Active Directory) accounts. You can add or sync users using the [onboarding wizard](https://admin.microsoft.com/Adminportal/Home?Q=m365setup#/modernonboarding/identitywizard) in the Microsoft 365 admin center.
@@ -54,9 +56,15 @@ You can use the [Microsoft Teams setup guide](https://admin.microsoft.com/Adminp
 
 To use Microsoft 365 Copilot with Microsoft Loop, you must have Loop enabled for your tenant. This can be done in the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/Settings/Services/:/Settings/L1/Loop) or the [Microsoft 365 Apps admin center](https://config.office.com) under **Customization** \| **Policy Management**. For more information, see [Manage Loop workspaces in Syntex repository services](/microsoft-365/loop/loop-workspaces-configuration) and [Learn how to enable the Microsoft Loop app, now in Public Preview](https://techcommunity.microsoft.com/t5/microsoft-365-blog/learn-how-to-enable-the-microsoft-loop-app-now-in-public-preview/ba-p/3769013).
 
-### Update channels
+### Microsoft Whiteboard
+
+To use Microsoft 365 Copilot with Microsoft Whiteboard, you must have Whiteboard enabled for your tenant. To learn more about Microsoft Whiteboard, see [Manage access to Microsoft Whiteboard for your organization](/whiteboard/manage-whiteboard-access-organizations).
+
+## Update channels
 
 User devices must be on either Current Channel or Monthly Enterprise Channel to access Microsoft 365 Copilot features. In November, Copilot will initially be available on Current Channel, and Monthly Enterprise Channel a month later. To learn more about update channels, see [update channels for Microsoft 365 Apps](/deployoffice/updates/overview-update-channels#current-channel-overview).
+
+If you want a select group of users to be able to test out upcoming functionality and features of Microsoft 365, including for Microsoft 365 Copilot, you can choose to configure certain users to be on Current Channel - Preview.
 
 ## Network requirements
 
