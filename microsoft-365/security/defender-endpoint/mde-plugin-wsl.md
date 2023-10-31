@@ -1,7 +1,11 @@
 ---
 title: Microsoft Defender for Endpoint plug-in for Windows Subsystem for Linux (WSL)
+description: Learn how to set up and use the MDE plugin for Windows Subsystem for Linux
 author: dansimp
 ms.author: dansimp
+ms.reviewer: pahuijbr
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.date: 10/30/2023
 ---
 
@@ -9,22 +13,12 @@ ms.date: 10/30/2023
 
 ## Overview
 
-Microsoft Defender for Endpoint (MDE) is an enterprise endpoint security platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats. MDE for Windows Subsystem for Linux 2 (WSL) enables MDE to provide more visibility into all running WSL containers, by plugging into the isolated subsystem.
-
-## Purpose of this document
-
-This guide covers the installation of the Microsoft Defender for Endpoint Plug-in for WSL for x64 architecture workstations.
-
-- [Software Prerequisites](#) – Please ensure that you are adhering to the software prerequisites. 
-- [Software components and installer file names](#)
-- [Installation steps](#) – Check these for a smooth installation process
-- [Installation validation checklist](#) – Check these to ensure that the MDE plug-in has been installed successfully.
-- [Troubleshooting](#) – If you get stuck, refer to this section.
+Microsoft Defender for Endpoint is an enterprise endpoint security platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats. Defender for Endpoint for Windows Subsystem for Linux 2 (WSL) enables Defender for Endpoint to provide more visibility into all running WSL containers, by plugging into the isolated subsystem.
 
 ## Software Prerequisites
 
 - WSL version >= 1.3.15.0
-- Microsoft Defender for Endpoint must be [onboarded and running](https://learn.microsoft.com/microsoft-365/security/defender-endpoint/onboard-configure) on the Windows host OS.
+- Defender for Endpoint must be [onboarded and running](onboard-configure.md) on the Windows host OS.
 - The “Windows Subsystem for Linux feature” must be enabled in “Turn Windows features on or off”, and WSL must be installed with a distro.
 
 ## Software components and Installer file names
@@ -35,7 +29,7 @@ Installation Directories: C:\Program Files\<br>                   C:\ProgramData
 
 Components installed:
 
-- DefenderforEndpointPlug-in.dll – This is the library to load MDE to work within WSL. 
+- DefenderforEndpointPlug-in.dll – This is the library to load Defender for Endpoint to work within WSL. 
 
 You can find it in - C:\Program Files\Microsoft Defender for Endpoint plug-in for WSL\plug-in 
 
@@ -165,20 +159,24 @@ Please treat the machine as if it were a “regular” Linux host in your enviro
 
 4. If the above error occurs, wait for 5 minutes and rerun .\health_check.exe.
 
-5. If you're seeing no devices in Microsoft 365 Defender portal, or no events in the timeline, take these steps:
+5. If you don't see any devices in the Microsoft 365 Defender portal, or you don't see any events in the timeline, check these things:
 
-   - If you are not seeing a machine object, please ensure that you allow for sufficient time for the onboarding to complete (typically this should be <10 minutes). 
-   - Ensure you are leveraging the right filters and you are allowed to view all device objects (your account/group is not restricted to a specific group).
-   - Use the health check tool to provide an overview of overall plug-in health. Open Terminal and run the health_check.exe tool from “C:\Program Files\Microsoft Defender for Endpoint plug-in for WSL\tools”
+   - If you are not seeing a machine object, make sure sufficient time has passed for onboarding to complete (typically up to 10 minutes). 
+   - Make sure to use the right filters, and that you have the right permissions to view all device objects. (For example, is your account/group is restricted to a specific group?)
+   - Use the health check tool to provide an overview of overall plug-in health. Open Terminal, and run the `health_check.exe` tool from `C:\Program Files\Microsoft Defender for Endpoint plug-in for WSL\tools`.
 
    :::image type="content" source="media/mdeplugin-wsl/powershell-4.png" alt-text="Screenshot showing status in PowerShell.":::
 
-  - Do enable the connectivity test and check the connectivity of MDE in WSL. If the connectivity test fails, provide the output of the healthcheck tool to [mdeforwsl-preview@microsoft.com](mailto:mdeforwsl-preview@microsoft.com).
+  - Enable the connectivity test and check for Defender for Endpoint connectivity in WSL. If the connectivity test fails, provide the output of the healthcheck tool to [mdeforwsl-preview@microsoft.com](mailto:mdeforwsl-preview@microsoft.com).
 
-6. In case you face any other challenges / issues, open the terminal and run the commands: 
+6. In case you face any other challenges / issues, open the terminal and run the following commands: 
 
-   - cd “C:\Program Files\Microsoft Defender for Endpoint plug-in for WSL\tools” .  
-   - “.\health_check.exe --supportBundle” to generate the support bundle. 
+
+   ```powershell
+   cd “C:\Program Files\Microsoft Defender for Endpoint plug-in for WSL\tools”
+
+   “.\health_check.exe --supportBundle” to generate the support bundle
+   ```
    
    The support bundle can be found in the path provided by the previous command. Send the generated zip file to  [mdeforwsl-preview@microsoft.com](mailto:mdeforwsl-preview@microsoft.com)
 
