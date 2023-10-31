@@ -32,7 +32,7 @@ With Syntex, you can automate your content-based processes—capturing the infor
 
 You can dive deeper into your content to truly understand it, and you can turn the information into meaningful insights that your organization can use to make informed business decisions.
 
-## Explore scenarios and use cases
+## Scenarios and use cases
 
 :::row:::
    :::column span="":::
@@ -53,7 +53,7 @@ You can dive deeper into your content to truly understand it, and you can turn t
 
 :::row:::
    :::column span="3":::
-      With Syntex, you can automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, and correspondence. You can do all these tasks quicker, more consistently, and with fewer errors in Syntex.
+      With Syntex, you can use content assembly to automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, and correspondence. You can do all these tasks quicker, more consistently, and with fewer errors in Syntex.
    :::column-end:::
    :::column span="":::
       ![Image of generic document icon.](../media/content-understanding/document-assembly-image.png)
