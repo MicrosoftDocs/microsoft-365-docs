@@ -64,7 +64,7 @@ sections:
           For easy deployment of add-ins to users, groups, or to your entire organization, we recommend administrators use Centralized Deployment.
           
           For more information about managing user access, see:
-           - [Prevent add-in downloads by turning off the Office Store across all clients (Except Outlook)](./manage-addins-in-the-admin-center.md#prevent-add-in-downloads-by-turning-off-the-office-store-across-all-apps-except-outlook)
+           - [Prevent add-in downloads by turning off the Office Store across all clients (Except Outlook)](/microsoft-365/admin/manage/manage-addins-in-the-admin-center#prevent-add-in-downloads-by-turning-off-the-office-store-across-all-apps-except-outlook)
            - [Specify the administrators and users who can install and manage add-ins for Outlook](/Exchange/specify-who-can-install-and-manage-add-ins-2013-help)
           
       - question: |
