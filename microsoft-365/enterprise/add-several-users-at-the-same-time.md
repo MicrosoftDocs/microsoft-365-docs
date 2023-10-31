@@ -3,7 +3,7 @@ title: "Add several users at the same time to Microsoft 365 - Admin Help"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 08/10/2020
+ms.date: 10/30/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-enterprise
@@ -33,10 +33,7 @@ description: "Learn how to add multiple users to Microsoft 365 for business from
 
 # Add several users at the same time to Microsoft 365 - Admin Help
 
-Each person on your team needs a user account before they can sign in and access Microsoft 365 services, such as email and Office. If you have a lot of people, you can add their accounts all at once from an Excel spreadsheet or other file saved in CSV format. [Not sure what CSV format is](add-several-users-at-the-same-time.md#not-sure-what-csv-format-is)?
-  
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
+Each person on your team needs a user account before they can sign in and access Microsoft 365 services, such as email and the Microsoft 365 apps. If you have a lot of people, you can add their accounts all at once from an Excel spreadsheet or other file saved in CSV format. [Not sure what CSV format is](add-several-users-at-the-same-time.md#not-sure-what-csv-format-is)?
 
 ## Add multiple users in the Microsoft 365 admin center
 

@@ -32,7 +32,7 @@ With Syntex, you can automate your content-based processes—capturing the infor
 
 You can dive deeper into your content to truly understand it, and you can turn the information into meaningful insights that your organization can use to make informed business decisions.
 
-## Explore scenarios and use cases
+## Scenarios and use cases
 
 :::row:::
    :::column span="":::
