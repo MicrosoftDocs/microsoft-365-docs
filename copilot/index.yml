@@ -62,6 +62,8 @@ additionalContent:
         # Card
         - title: Manage and extend Microsoft 365 Copilot
           links:
+            - text: Manage Microsoft 365 Copilot with the Copilot page
+              url: microsoft-365-copilot-page.md
             - text: Related admin controls
               url: /microsoft-365/solutions/tenant-management-overview
             - text: Extend Microsoft 365 Copilot
