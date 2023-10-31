@@ -61,7 +61,7 @@ Geographic availability is updated as available.
 
 Customers must cover 100% of paid seats in the tenant with ADR add-on license for tenant to receive data residency for ADR workloads.  See the table for an example.
 
-| ADR-related SKU | Available Seats | Allocated Seats | ADR Required Seats | \
+| ADR-related SKU | Available Seats | Allocated Seats | ADR Required Seats | 
 | --- | --- | --- | --- |
 | Office 365 E3 | 200 | 125 | 200 |
 | Microsoft 365 F1 | 1420 | 1100 | 1420 |
