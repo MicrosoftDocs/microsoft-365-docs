@@ -462,7 +462,7 @@ For detailed syntax and parameter information, see [Set-TenantAllowBlockListSpoo
 
 3. On the **Spoofed senders** tab, select the entry from the list by selecting the check box next to the first column, and then select the :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png" border="false"::: **Delete** action that appears.
 
-   > [!NOTE]
+   > [!TIP]
    > You can select multiple entries by selecting each check box, or select all entries by selecting the check box next to the **Spoofed user** column header.
 
 4. In the warning dialog that opens, select **Delete**.

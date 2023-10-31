@@ -87,9 +87,6 @@ Permissions to manages the security and system settings and to create and assign
 |Detection tuning| Manage |Manage tasks related to detections in the Microsoft 365 Defender portal including Custom detections, Alerts Tuning and Threat Indicators of compromise.|
 |System settings|Read / Manage|View or manage general systems settings for the Microsoft 365 Defender portal.|
 
-> [!NOTE]
-> Scenarios that adhere to Exchange Online roles are not impacted by this new model and will still be managed by Exchange Online. The Microsoft 365 Defender Unified RBAC model will initially be available for organizations with Microsoft Defender for Office Plan 2 licenses.
-
 ## Next steps
 
 - [Create custom roles](create-custom-rbac-roles.md)
