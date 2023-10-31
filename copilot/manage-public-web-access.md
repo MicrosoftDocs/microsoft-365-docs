@@ -24,7 +24,7 @@ description: "Learn how to manage Microsoft 365 Copilot access to public web con
 
 Microsoft 365 Copilot combines the power of large language models (LLMs) with your organization’s data – all in the flow of work – to turn your words into one of the most powerful productivity tools on the planet. Copilot can provide summaries of chats, messages, and meetings, answer business questions, and generate content. For more information, see [How Microsoft 365 Copilot works](https://www.youtube.com/watch?v=B2-8wrF9Okc).
 
-As your organization’s Microsoft 365 admin, you can turn off Copilot’s ability to access and include web content when it responds to your users’ prompts.
+As your organization’s Microsoft 365 admin, you can turn off Copilot’s ability to access and include web content when it responds to your users’ prompts. For detailed information on how these controls impact data, privacy, and security within Microsoft 365 Copilot, see [Data, Privacy, and Security for Microsoft 365 Copilot](microsoft-365-copilot-privacy.md).
 
 ## Before you begin
 
@@ -66,8 +66,6 @@ All admin setting updates may take up to 24 hours to reflect any changes.
 
 >[!NOTE]
 > This method is the only way to turn off the ability of Microsoft 365 Copilot chat experiences to access public web content. The privacy controls for connected experiences available with Microsoft 365 Apps can’t be used.
-
-For more information about Microsoft 365 Copilot and chat experiences, see [Data, Privacy, and Security for Microsoft 365 Copilot](microsoft-365-copilot-privacy.md).
 
 ## How to disable chat experiences
 
