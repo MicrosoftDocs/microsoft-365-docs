@@ -3,9 +3,6 @@ title: Resources for Microsoft Defender for Endpoint on Mac
 description: Resources for Microsoft Defender for Endpoint on Mac, including how to uninstall it, how to collect diagnostic logs, CLI commands, and known issues with the product.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamf, macos, big sur, monterey, ventura, mde for mac
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
@@ -18,7 +15,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 07/13/2023
+ms.date: 10/30/2023
 ---
 
 # Resources for Microsoft Defender for Endpoint on macOS
@@ -137,7 +134,9 @@ Important tasks, such as controlling product settings and triggering on-demand s
 |Quarantine management|Remove all files from the quarantine|`mdatp threat quarantine remove-all`|
 |Quarantine management|Add a file detected as a threat to the quarantine|`mdatp threat quarantine add --id [threat-id]`|
 |Quarantine management|Remove a file detected as a threat from the quarantine|`mdatp threat quarantine remove --id [threat-id]`|
-|Quarantine management|Restore a file from the quarantine|`mdatp threat quarantine restore --id [threat-id] --path [destination-folder]`|
+|Quarantine management|Restore a file from the quarantine. Available in Defender for Endpoint version lower than 101.23092.0012.|`mdatp threat quarantine restore --id [threat-id] --path [destination-folder]`|
+|Quarantine management|Restore a file from the quarantine with Threat ID. Available in Defender for Endpoint version 101.23092.0012 or higher.|`mdatp threat restore threat-id --id [threat-id] --destination-path [destination-folder]`|
+|Quarantine management|Restore a file from the quarantine with Threat Original Path. Available in Defender for Endpoint version 101.23092.0012 or higher.|`mdatp threat restore threat-path --path [threat-original-path] --destination-path [destination-folder]`|
 |Network Protection Configuration|Configure the Network Protection enforcement level|`mdatp config network-protection enforcement-level --value [Block/Audit/Disabled]`|
 |Network Protection management|Check Network protection has been started successfully|`mdatp health --field network_protection_status`|
 |Device Control management|Is Device Control enabled, and what is the Default Enforcement?|`mdatp device-control policy preferences list`|

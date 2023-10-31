@@ -2030,6 +2030,11 @@
          "source_path": "microsoft-365/admin/email/resolve-issues-with-shared-mailboxes.md",
          "redirect_url": "/microsoft-365/admin/email/about-shared-mailboxes",
          "redirect_document_id":false
+       },
+       {
+         "source_path": "microsoft-365/admin/misc/deleted-user.md",
+         "redirect_url": "/microsoft-365/admin/add-users/delete-a-user",
+         "redirect_document_id":false
        }       
    ]
 }
