@@ -104,7 +104,7 @@ When you save the file, you'll probably get a prompt that some features in your 
 
 - **Is there a limit to the number of characters I can use?** The following table shows the user data column labels and the maximum character length for each in the sample spreadsheet.
 
-|**User data column label**|**Maximum character length**|
+| User data column label | Maximum character length |
 |:-----|:-----|
 |User Name (Required)  <br/> |79 including the at sign (@), in the format name@domain.\<extension\>. The user's alias cannot exceed 50 characters, and the domain name cannot exceed 48 characters.  <br/> |
 |First Name  <br/> |64  <br/> |
