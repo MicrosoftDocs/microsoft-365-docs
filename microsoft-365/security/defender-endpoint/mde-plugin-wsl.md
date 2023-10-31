@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.localizationpriority: medium
 audience: ITPro
 search.appverid: met150
-ms.date: 10/30/2023
+ms.date: 10/31/2023
 ---
 
 # Microsoft Defender for Endpoint plug-in for Windows Subsystem for Linux (WSL)
@@ -21,33 +21,30 @@ Microsoft Defender for Endpoint is an enterprise endpoint security platform desi
 
 ## Software Prerequisites
 
-- WSL version >= 1.3.15.0
+- WSL version must be `1.3.15.0` or later
 - Defender for Endpoint must be [onboarded and running](onboard-configure.md) on the Windows host OS.
-- The “Windows Subsystem for Linux feature” must be enabled in “Turn Windows features on or off”, and WSL must be installed with a distro.
+- The “Windows Subsystem for Linux feature” must be enabled in **Turn Windows features on or off**, and WSL must be installed with a distro.
 
 ## Software components and Installer file names
 
 Installer: DefenderPlugin-x64-0.23.906.5.msi ([download](https://aka.ms/defenderplugin))
 
-Installation Directories: C:\Program Files\<br>                   C:\ProgramData\
+Installation Directories: `C:\Program Files\<br>                   C:\ProgramData\`
 
 Components installed:
 
-- DefenderforEndpointPlug-in.dll – This is the library to load Defender for Endpoint to work within WSL. 
+- `DefenderforEndpointPlug-in.dll`. This DLL is the library to load Defender for Endpoint to work within WSL. You can find it at **C:\Program Files\Microsoft Defender for Endpoint plug-in for WSL\plug-in**. 
 
-You can find it in - C:\Program Files\Microsoft Defender for Endpoint plug-in for WSL\plug-in 
-
-- healthcheck.exe - It's a program to check the health status of Microsoft Defender for Endpoint and to see the installed versions of WSL, plug-in, and Defender.
-
-You can find it in - C:\Program Files\Microsoft Defender for Endpoint plug-in for WSL\tools
+- `healthcheck.exe`. This program checks the health status of Defender for Endpoint and enables you to see the installed versions of WSL, plug-in, and Defender for Endpoint. You can find it at **C:\Program Files\Microsoft Defender for Endpoint plug-in for WSL\tools**.
 
 ## Installation steps
 
-- Install the DefenderPlugin-x64-0.23.906.5.msi file.
-- Open a command prompt/terminal and run “wsl”
+1. Install the DefenderPlugin-x64-0.23.906.5.msi file.
+
+2. Open a command prompt/terminal and run `wsl`.
 
 > [!NOTE]
-> If WslService is running, it will be stopped during the installation process.
+> If WslService is running, it stops during the installation process.
 
 ## Installation validation checklist
 
