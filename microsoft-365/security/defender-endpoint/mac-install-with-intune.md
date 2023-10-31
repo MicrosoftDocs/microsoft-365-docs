@@ -405,7 +405,7 @@ For more information, see [Add Microsoft Defender for Endpoint to macOS devices 
 
 #### Step 14: Download the onboarding package
 
-Download the onboarding packages from Microsoft 365 Defender portal.
+To download the onboarding packages from Microsoft 365 Defender portal,
 
 1. In the Microsoft 365 Defender portal, go to **Settings** > **Endpoints** > **Device management** > **Onboarding**.
 
@@ -469,19 +469,15 @@ Solution: Follow the steps above to create a device profile using WindowsDefende
 
 ## Logging installation issues
 
-See [Logging installation issues](mac-resources.md#logging-installation-issues) for the procedure to find the automatically generated log, created by the installer when an error occurs.
+See [Logging installation issues](mac-resources.md#logging-installation-issues) for information on how to find the automatically generated log created by the installer, when an error occurs.
 
 For information on troubleshooting procedures, see:
 
-[Troubleshoot system extension issues in Microsoft Defender for Endpoint on macOS](mac-support-sys-ext.md)
-
-[Troubleshoot installation issues for Microsoft Defender for Endpoint on macOS](mac-support-install.md)
-
-[Troubleshoot license issues for Microsoft Defender for Endpoint on macOS](mac-support-license.md)
-
-[Troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint on macOS](troubleshoot-cloud-connect-mdemac.md)
-
-[Troubleshoot performance issues for Microsoft Defender for Endpoint on macOS](mac-support-perf.md)
+- [Troubleshoot system extension issues in Microsoft Defender for Endpoint on macOS](mac-support-sys-ext.md)
+- [Troubleshoot installation issues for Microsoft Defender for Endpoint on macOS](mac-support-install.md)
+- [Troubleshoot license issues for Microsoft Defender for Endpoint on macOS](mac-support-license.md)
+- [Troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint on macOS](troubleshoot-cloud-connect-mdemac.md)
+- [Troubleshoot performance issues for Microsoft Defender for Endpoint on macOS](mac-support-perf.md)
 
 
 ## Uninstallation
