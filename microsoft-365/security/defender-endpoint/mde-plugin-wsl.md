@@ -22,7 +22,9 @@ Microsoft Defender for Endpoint is an enterprise endpoint security platform desi
 ## Software Prerequisites
 
 - WSL version must be `1.3.15.0` or later
+
 - Defender for Endpoint must be [onboarded and running](onboard-configure.md) on the Windows host OS.
+
 - The “Windows Subsystem for Linux feature” must be enabled in **Turn Windows features on or off**, and WSL must be installed with a distro.
 
 ## Software components and Installer file names
@@ -48,19 +50,24 @@ Components installed:
 
 ## Installation validation checklist
 
-- After update or installation, wait for at least 5 minutes for the plug-in to fully initialize and write log output.
-- Open a terminal/command prompt instance (Start, run “cmd” or on Windows 11, right-click the start button and select Terminal)
-- Run the command: cd “C:\Program Files\Microsoft Defender for Endpoint plug-in for WSL\tools”
-- Run .\health_check.exe
-- You are able to see the details of Defender and WSL and ensure that they match the same.
-  - Defender Plug-in Version- 0.23.906.5
-  - WSL Version >= 1.3.15
-  - WSL Defender Version – 701.00000.1411
-  - WSL Defender Health – Healthy
+1. After update or installation, wait for at least five minutes for the plug-in to fully initialize and write log output.
+
+2. Open a terminal/command prompt instance. (On Windows 11, go to **Start** > **Command Prompt**. Or, right-click the start button and then select **Terminal**.)
+
+3. Run the command: `cd “C:\Program Files\Microsoft Defender for Endpoint plug-in for WSL\tools”`.
+
+4. RUn the command `.\health_check.exe`.
+
+5. Review the details of Defender and WSL and make sure they match.
+
+   - Defender Plug-in Version: `0.23.906.5`
+   - WSL Version `1.3.15` or later
+   - WSL Defender Version: `701.00000.1411`
+   - WSL Defender Health: `Healthy`
 
 ## Setting a proxy for Defender running in WSL
 
-This set of instructions help you configure proxy connectivity for MDE plug-in. If your enterprise uses a proxy to provide connectivity to MDE running on the Windows host, read on to find out if you need to configure it for the plug-in.
+Use these instructions to configure proxy connectivity for the Defender for Endpoint plug-in. If your enterprise uses a proxy to provide connectivity to Defender for Endpoint running on the Windows host, continue reading to determine whether you need to configure it for the plug-in.
 
 Reuse Microsoft Defender for Endpoint static proxy setting (TelemetryProxyServer) 
 
