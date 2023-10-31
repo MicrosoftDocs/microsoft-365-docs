@@ -97,7 +97,7 @@ If the alert is for a file in SharePoint Online or One Drive for Business, you c
 - Unshare
 - Delete
 - Apply sensitivity label
-- Download
+- Download ([data classification content viewer role](/microsoft-365/security/office-365-security/scc-permissions#role-groups-in-microsoft-defender-for-office-365-and-microsoft-purview-compliance) is required for this action)
 - Withdraw feedback
 
 For remediation actions, select the **User card** on the top of the alert page to open the user details.
