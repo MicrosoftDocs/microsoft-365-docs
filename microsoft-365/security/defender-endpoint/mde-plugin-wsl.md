@@ -7,6 +7,9 @@ ms.reviewer: pahuijbr
 ms.service: microsoft-365-security
 ms.subservice: mde
 ms.topic: how-to
+ms.localizationpriority: medium
+audience: ITPro
+search.appverid: met150
 ms.date: 10/30/2023
 ---
 
