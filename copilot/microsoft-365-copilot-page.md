@@ -55,11 +55,11 @@ This control allows you to enable or disable Copilot’s ability to access the p
 
 ### Data Security and Compliance
 
-This link navigates you to the Microsoft Purview compliance portal where you can configure how Microsoft 365 Copilot interacts and references protected documents. Learn more about how to protect and manage Microsoft 365 Copilot interactions with Microsoft Purview.
+This link navigates you to the Microsoft Purview compliance portal where you can manage sensitivity labels and configure how Microsoft 365 Copilot interacts and references protected documents. Learn more about how to protect and manage Microsoft 365 Copilot interactions with Microsoft Purview.
 
 ### Security Copilot
 
-This setting directs you to the Security Copilot portal to manage settings. Security Copilot is a separate product and license from Microsoft 365 Copilot. If purchased, you can use this link to navigate to Microsoft Security Copilot settings page. To learn more, see [Microsoft Security Copilot](/security-copilot/).
+This link directs you to the Security Copilot portal to manage settings. Security Copilot is a separate product and license from Microsoft 365 Copilot. If purchased, you can use this link to navigate to Microsoft Security Copilot settings page. To learn more, see [Microsoft Security Copilot](/security-copilot/).
 
 ### Latest info
 
