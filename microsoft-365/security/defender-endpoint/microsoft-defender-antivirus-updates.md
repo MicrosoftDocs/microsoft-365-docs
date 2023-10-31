@@ -115,7 +115,7 @@ All our updates contain
 - Defender Core Service is generally available for consumer devices
 - [Device control](device-control-removable-storage-access-control.md) policies remain enforced following a platform update that requires a reboot
 - Improved performance of [device control for printing scenarios](printer-protection.md)
-- Fixed truncation issue in the output of [MpCmdRun.exe -scan](command-line-arguments-microsoft-defender-antivirus) (processing Unicode characters)
+- Fixed truncation issue in the output of [MpCmdRun.exe -scan](command-line-arguments-microsoft-defender-antivirus.md) (processing Unicode characters)
 - Improved processing of environment variables in protected folders list for [controlled folder access](controlled-folders.md)
 - Improved performance of [on-access scanning](configure-advanced-scan-types-microsoft-defender-antivirus.md) of files with Mark of the Web (MoTW)
 - Fixed an issue with device group Active Directory in device control
