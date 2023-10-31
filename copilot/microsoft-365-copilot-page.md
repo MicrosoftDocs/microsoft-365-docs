@@ -34,7 +34,7 @@ You can manage Microsoft 365 Copilot through the Microsoft 365 admin center by u
 
 In this dashboard, you can access essential resources to help your organization use Copilot effectively:
 
-:::image type="content" source="media/copilot-page-dashboard.png" alt-text="Screenshot showing the Copilot page in the Microsoft 365 admin center." lightbox="media/copilot/copilot-page-dashboard.png":::
+:::image type="content" source="media/copilot-page-dashboard.png" alt-text="Screenshot showing the Copilot page in the Microsoft 365 admin center." lightbox="media/copilot-page-dashboard.png":::
 
 ### Licenses
 
@@ -59,7 +59,7 @@ This link navigates you to the Microsoft Purview compliance portal where you can
 
 ### Security Copilot
 
-Security Copilot is a separate product and license from Microsoft 365 Copilot. If purchased, you can use this link to navigate to Microsoft Security Copilot settings page. To learn more, see [Microsoft Security Copilot](/security-copilot/).
+This setting directs you to the Security Copilot portal to manage settings. Security Copilot is a separate product and license from Microsoft 365 Copilot. If purchased, you can use this link to navigate to Microsoft Security Copilot settings page. To learn more, see [Microsoft Security Copilot](/security-copilot/).
 
 ### Latest info
 
