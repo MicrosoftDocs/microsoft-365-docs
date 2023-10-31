@@ -116,6 +116,14 @@ All our updates contain
 - [Device control](device-control-removable-storage-access-control.md) policies remain enforced following a platform update that requires a reboot
 - Improved performance of [device control for printing scenarios](printer-protection.md)
 - Fixed truncation issue in the output of [MpCmdRun.exe -scan](command-line-arguments-microsoft-defender-antivirus) (processing Unicode characters)
+- Improved processing of environment variables in protected folders list for [controlled folder access](controlled-folders.md)
+- Improved performance of [on-access scanning](configure-advanced-scan-types-microsoft-defender-antivirus.md) of files with Mark of the Web (MoTW)
+- Fixed an issue with device group Active Directory in device control
+- [ASROnlyPerRuleExclusions](/windows/client-management/mdm/defender-csp#configurationasronlyperruleexclusions) don't apply during an engine reboot
+
+#### Known issues
+
+- None
 
 ### September-2023 (Platform: 4.18.23090.2008 | Engine: 1.1.23090.2007)
  
