@@ -3,13 +3,11 @@ title: What's new in Microsoft Defender for Office 365
 description: Learn about the new features and functionality available in the latest release of Microsoft Defender for Office 365.
 keywords: what's new in Microsoft Defender for Office 365, ga, generally available, capabilities, available, new
 search.appverid: met150
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords: NOCSH
 ms.author: tracyp
 author: msfttracyp
 ms.localizationpriority: medium
-ms.date: 7/5/2023
+ms.date: 10/31/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -42,7 +40,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 ## October 2023
 
-- **Create and manage simulations using the Graph API** in Attack simulation training. [Learn more](api-reference/v1.0/api/attacksimulationroot-post-simulation.md)
+- **Create and manage simulations using the Graph API** in Attack simulation training. [Learn more](/graph/api-reference/v1.0/api/attacksimulationroot-post-simulation)
 
 ## September 2023
 
