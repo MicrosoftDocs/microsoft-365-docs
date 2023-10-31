@@ -40,6 +40,10 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [What's new in Microsoft Defender for Cloud Apps](/cloud-app-security/release-notes)
 
+## October 2023
+
+- **Create and manage simulations using the Graph API** in Attack simulation training. [Learn more](api-reference/v1.0/api/attacksimulationroot-post-simulation.md)
+
 ## September 2023
 
 - URL top-level domain blocking is available in the **Tenant allow block list**. [Learn more](tenant-allow-block-list-urls-configure.md) 
