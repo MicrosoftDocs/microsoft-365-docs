@@ -62,9 +62,9 @@ To use Microsoft 365 Copilot with Microsoft Whiteboard, you must have Whiteboard
 
 ## Update channels
 
-User devices must be on either Current Channel or Monthly Enterprise Channel to access Microsoft 365 Copilot features. In November, Copilot will initially be available on Current Channel, and Monthly Enterprise Channel a month later. To learn more about update channels, see [update channels for Microsoft 365 Apps](/deployoffice/updates/overview-update-channels#current-channel-overview).
+Microsoft 365 Copilot will follow Microsoft 365 Apps' standard practice for deployment and updates, being available in all update channels, expect for Semi-annual channel. Preview channels include Insiders, Current Channel - Preview. Production channels include Current Channel and then Monthly Enterprise Channel.
 
-If you want a select group of users to be able to test out upcoming functionality and features of Microsoft 365, including for Microsoft 365 Copilot, you can choose to configure certain users to be on Current Channel - Preview.
+Once generally available on 11/1, Copilot will be in Current Channel, and starting December 12, on Monthly Enterprise Channel. As always, preview channels are a great option to validate the product before rolling out to the rest of organization. To learn more, see [Overview of update channels](/deployoffice/updates/overview-update-channels), and the [Microsoft 365 Insider channels](/deployoffice/insider/compare-channels).
 
 ## Network requirements
 
