@@ -72,7 +72,7 @@ Microsoft 365 Copilot supports Conditional Access Policies (CAPs) in SharePoint 
 
 To learn more about the different types of Conditional Access Policies, see [What is Conditional Access in Microsoft Entra ID](/entra/identity/conditional-access/overview).
 
-## Restricted Access Control and Microsoft 365 Information Barriers
+## Restricted Access Control
 
 Microsoft 365 Copilot does not currently support Restricted Access Control (RAC) and Microsoft 365 Information Barriers (Implicit and Owner moderated mode) on sites. We intend to support to both policies. In the meantime, we recommend against assigning Copilot to potentially impacted users. Learn more about [restricted access control](/sharepoint/restricted-access-control) and [information barrier policies](/purview/information-barriers).
 
@@ -84,7 +84,7 @@ There are many Copilot experiences, including some core experiences like Excel, 
 
 ## License requirements
 
-Microsoft 365 Copilot users require a license for Microsoft 365 E3 or Microsoft 365 E5, as well as a license for Microsoft 365 Copilot. You can use the [Microsoft 365 Copilot setup guide](https://go.microsoft.com/fwlink/p/?linkid=2243702) in the Microsoft 365 admin center to assign the required licenses to users. For more information, see [Assign licenses to users in the Microsoft 365 admin center](/microsoft-365/admin/manage/assign-licenses-to-users).
+Microsoft 365 Copilot users require a license for Microsoft 365 E3 or Microsoft 365 E5, and a license for Microsoft 365 Copilot. You can use the [Microsoft 365 Copilot setup guide](https://go.microsoft.com/fwlink/p/?linkid=2243702) in the Microsoft 365 admin center to assign the required licenses to users. For more information, see [Assign licenses to users in the Microsoft 365 admin center](/microsoft-365/admin/manage/assign-licenses-to-users).
 
 ## Privacy settings for Microsoft 365 Apps for enterprise
 
