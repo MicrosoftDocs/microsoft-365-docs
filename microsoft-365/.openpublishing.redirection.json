@@ -171,8 +171,28 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "security/intelligence/coordinated-malware-eradication.md",
-            "redirect_url": "https://learn.microsoft.com/en-us/microsoft-365/security/intelligence/cybersecurity-industry-partners",
+            "source_path": "admin/setup/migrate-email-and-contacts-admin.md",
+            "redirect_url": "https://support.microsoft.com/office/move-your-old-email-calendars-and-contacts-to-microsoft-365-2c37f0b7-2915-423c-b35e-9e03267f23dc",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "admin/manage/servicenow-testing-the-configuration-v1.md",
+            "redirect_url": "/microsoft-365/manage/servicenow-testing-the-configuration",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "admin/manage/servicenow-troubleshooting-v1.md",
+            "redirect_url": "/microsoft-365/admin/manage/servicenow-troubleshooting",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "admin/manage/servicenow-basic-authentication-v1.md",
+            "redirect_url": "/microsoft-365/admin/manage/servicenow-authentication",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "admin/manage/servicenow-overview-v1.md",
+            "redirect_url": "/microsoft-365/admin/manage/servicenow-overview",
             "redirect_document_id": false
         }
 
