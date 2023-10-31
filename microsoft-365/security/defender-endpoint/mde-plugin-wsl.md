@@ -37,7 +37,7 @@ Components installed:
 
 You can find it in - C:\Program Files\Microsoft Defender for Endpoint plug-in for WSL\plug-in 
 
-- healthcheck.exe - It is a program to check the health status of Microsoft Defender for Endpoint and to see the installed versions of WSL, plug-in, and Defender.
+- healthcheck.exe - It's a program to check the health status of Microsoft Defender for Endpoint and to see the installed versions of WSL, plug-in, and Defender.
 
 You can find it in - C:\Program Files\Microsoft Defender for Endpoint plug-in for WSL\tools
 
@@ -55,7 +55,7 @@ You can find it in - C:\Program Files\Microsoft Defender for Endpoint plug-in fo
 - Open a terminal/command prompt instance (Start, run “cmd” or on Windows 11, right-click the start button and select Terminal)
 - Run the command: cd “C:\Program Files\Microsoft Defender for Endpoint plug-in for WSL\tools”
 - Run .\health_check.exe
-- You will be able to see the details of Defender and WSL and ensure that they match the same.
+- You are able to see the details of Defender and WSL and ensure that they match the same.
   - Defender Plug-in Version- 0.23.906.5
   - WSL Version >= 1.3.15
   - WSL Defender Version – 701.00000.1411
@@ -63,15 +63,15 @@ You can find it in - C:\Program Files\Microsoft Defender for Endpoint plug-in fo
 
 ## Setting a proxy for Defender running in WSL
 
-This set of instructions will help you configure proxy connectivity for MDE plug-in. If your enterprise uses a proxy to provide connectivity to MDE running on the Windows host, read on to find out if you need to configure it for the plug-in.
+This set of instructions help you configure proxy connectivity for MDE plug-in. If your enterprise uses a proxy to provide connectivity to MDE running on the Windows host, read on to find out if you need to configure it for the plug-in.
 
 Reuse Microsoft Defender for Endpoint static proxy setting (TelemetryProxyServer) 
 
-If you wish to use the host “[static proxy](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/configure-proxy-internet?view=o365-worldwide)” configuration for MDE for the WSL plug-in, nothing additional is required. This configuration will be adopted by the plug-in automatically.
+If you wish to use the host “[static proxy](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/configure-proxy-internet?view=o365-worldwide)” configuration for MDE for the WSL plug-in, nothing more is required. This configuration will be adopted by the plug-in automatically.
 
 ### Set up a different/specific proxy configuration for MDE WSL
 
-If you would like to set up a different proxy for Defender running in WSL (other than the Windows proxy specified with TelemetryProxyServer), or you have currently configured a system-wide proxy, the proxy configuration will not automatically be available for the plug-in. Please follow the steps below.
+If you would like to set up a different proxy for Defender running in WSL (other than the Windows proxy specified with TelemetryProxyServer), or you have currently configured a system-wide proxy, the proxy configuration won't automatically be available for the plug-in. Follow these steps:
 
 1. Open registry editor (requires administrator access) or use a tool that can configure registry keys across devices.
 
@@ -89,7 +89,7 @@ If you would like to set up a different proxy for Defender running in WSL (other
 
 ## Connectivity test for Defender running in WSL
 
-These instructions will help you verify if MDE in WSL has connectivity to the internet. 
+These instructions help you verify if MDE in WSL has connectivity to the internet. 
 
 To run the connectivity test, please follow the below instructions:
 
@@ -118,18 +118,18 @@ To run the connectivity test, please follow the below instructions:
 
 After installing the plug-in, the subsystem and all its running containers will be onboarded to the Microsoft 365 Defender portal at <https://security.microsoft.com>.
 
-- Log into the portal and open the “Devices” view
+- Sign into the portal and open the “Devices” view
 - Filter using the tag “WSL2”:
 
   ![Screenshot showing device inventory filter](media/mdeplugin-wsl/device-inventory-filter.png)
 
-This will show you all WSL instances in your environment with an active MDE plug-in for WSL. The instances represent all distributions running inside WSL on a given host – the hostname of the “device” matches that of the Windows host. However, it is represented as a Linux device.
+This shows you all WSL instances in your environment with an active MDE plug-in for WSL. The instances represent all distributions running inside WSL on a given host – the hostname of the “device” matches that of the Windows host. However, it's represented as a Linux device.
 
-Open the device page. In the Overview pane, you will see that the “device” is “Hosted On” – this is a link that will allow you to understand this machine is running on a Windows host and pivot to the host for further investigation and/or response.
+Open the device page. In the Overview pane, you'll see that the “device” is “Hosted On” – this is a link that will allow you to understand this machine is running on a Windows host and pivot to the host for further investigation and/or response.
 
 :::image type="content" source="media/mdeplugin-wsl/device-overview.png" alt-text="Screenshot showing device overview.":::  
 
-The timeline will be populated, similar to MDE for Linux, with events from inside the subsystem (file, process, network). You can observe activity and detections in the timeline view. Alerts and incidents will be generated as appropriate as well. To test this, after the installation of the plug-in, please follow the steps given below:
+The timeline is populated, similar to MDE for Linux, with events from inside the subsystem (file, process, network). You can observe activity and detections in the timeline view. Alerts and incidents are generated as appropriate as well. To test this, after the installation of the plug-in, please follow the steps given below:
 
 1. Open a terminal/command prompt instance (Start, run “cmd” or on Windows 11, right-click the start button and select Terminal) 
 
