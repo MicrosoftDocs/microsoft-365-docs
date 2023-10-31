@@ -32,7 +32,8 @@ The following are the prerequisites for using Microsoft 365 Copilot. If your org
 
 [Microsoft 365 Apps for enterprise](/deployoffice/about-microsoft-365-apps) must be deployed. Use the [Microsoft 365 Apps setup guide](https://admin.microsoft.com/Adminportal/Home?Q=m365setup#/modernonboarding/microsoft365appssetup) in the Microsoft 365 admin center to deploy to your users.
 
-**Note**: For Copilot to work in Word Online and PowerPoint Online, you'll need to have third-party cookies enabled.
+> [!NOTE]
+> For Copilot to work in Word Online and PowerPoint Online, you'll need to have third-party cookies enabled.
 
 ### Microsoft Entra ID
 
