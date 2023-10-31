@@ -7,7 +7,7 @@ ms.localizationpriority: medium
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
-ms.reviewer: oogunrinde, dbodorin, vladiso, nixanm, anvascon
+ms.reviewer: dbodorin, vladiso, nixanm, anvascon
 manager: dansimp
 ms.subservice: mde
 ms.topic: how-to
@@ -16,7 +16,7 @@ ms.collection:
 - tier2
 - mde-asr
 search.appverid: met150
-ms.date: 03/14/2023
+ms.date: 10/27/2023
 ---
 
 # Customize controlled folder access
@@ -50,7 +50,7 @@ Controlled folder access applies to many system folders and default locations, i
 
 Adding other folders to controlled folder access can be helpful for cases when you don't store files in the default Windows libraries, or you've changed the default location of your libraries.
 
-You can also specify network shares and mapped drives. Environment variables and wildcards are supported. For information about using wildcards, see [Use wildcards in the file name and folder path or extension exclusion lists](configure-extension-file-exclusions-microsoft-defender-antivirus.md).
+You can also specify network shares and mapped drives. Environment variables are supported; however, wildcards are not.
 
 You can use the Windows Security app, Group Policy, PowerShell cmdlets, or mobile device management configuration service providers to add and remove protected folders.
 
@@ -180,3 +180,4 @@ For more information about customizing the notification when a rule is triggered
 - [Enable controlled folder access](enable-controlled-folders.md)
 - [Enable attack surface reduction rules](enable-attack-surface-reduction.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+

@@ -20,7 +20,7 @@ ms.service: microsoft-365-security
 ms.date: 6/19/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
@@ -79,6 +79,6 @@ In cases where we can authenticate the sender, we use Sender Rewriting Scheme (S
 
 For DKIM to work, make sure you enable DKIM for sending domain. For example, fabrikam.com is part of contoso.com and is defined in the accepted domains of the organization. If the message sender is sender@fabrikam.com, DKIM needs to be enabled for fabrikam.com. you can read on how to enable at [Use DKIM to validate outbound email sent from your custom domain](email-authentication-dkim-configure.md).
 
-To add a custom domain, follow the steps in [Add a domain to Microsoft 365](../../admin/setup/add-domain.md).
+To add a custom domain, follow the steps in [Add a domain to Microsoft 365](/microsoft-365/admin/setup/add-domain).
 
 If the MX record for your domain points to a third party service or an on-premises email server, you should use [Enhanced Filtering for Connectors](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors). Enhanced Filtering ensures SPF validation is correct for inbound mail and avoids sending email through the relay pool.

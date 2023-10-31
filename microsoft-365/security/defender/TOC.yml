@@ -432,7 +432,7 @@
                   href: frequently-asked-questions.md
                 - name: Defender Experts for XDR Incident notifications
                   href: faq-incident-notifications-xdr.md
-                - name: Managed response notifications
+                - name: Managed response
                   href: faq-managed-response.md
               - name: How Defender Experts for XDR permissions work
                 href: dex-xdr-permissions.md

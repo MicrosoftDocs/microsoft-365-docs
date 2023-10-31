@@ -18,7 +18,6 @@ ms.collection:
 - Adm_TOC
 - m365copilot
 - essentials-get-started
-ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn how to prepare your organization for Microsoft 365 Copilot."
 ---
 
