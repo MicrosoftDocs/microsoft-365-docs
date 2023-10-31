@@ -106,21 +106,21 @@ When you save the file, you'll probably get a prompt that some features in your 
 
 | User data column label | Maximum character length |
 |:-----|:-----|
-|User Name (Required)  <br/> |79 including the at sign (@), in the format name@domain.\<extension\>. The user's alias cannot exceed 50 characters, and the domain name cannot exceed 48 characters.  <br/> |
-|First Name  <br/> |64  <br/> |
-|Last Name  <br/> |64  <br/> |
-|Display Name (required)  <br/> |256  <br/> |
-|Job Title  <br/> |64  <br/> |
-|Department  <br/> |64  <br/> |
-|Office Number  <br/> |128  <br/> |
-|Office Phone  <br/> |64  <br/> |
-|Mobile Phone  <br/> |64  <br/> |
-|Fax  <br/> |64  <br/> |
-|Address  <br/> |1023  <br/> |
-|City  <br/> |128  <br/> |
-|State or Province  <br/> |128  <br/> |
-|ZIP or Postal Code  <br/> |40  <br/> |
-|Country or Region  <br/> |128  <br/> |
+|User Name (Required)  |79 including the at sign (@), in the format name@domain.\<extension\>. The user's alias cannot exceed 50 characters, and the domain name cannot exceed 48 characters.  |
+|First Name  |64  |
+|Last Name  |64  |
+|Display Name (required)  |256  |
+|Job Title  |64  |
+|Department  |64  |
+|Office Number  |128  |
+|Office Phone  |64  |
+|Mobile Phone  |64  |
+|Fax  |64  |
+|Address  |1023  |
+|City  |128  |
+|State or Province  |128  |
+|ZIP or Postal Code  |40  |
+|Country or Region  |128  |
 
 ### Still having problems when adding users to Microsoft 365?
 
