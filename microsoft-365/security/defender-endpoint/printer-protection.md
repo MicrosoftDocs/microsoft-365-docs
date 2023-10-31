@@ -3,7 +3,7 @@ title: Microsoft Defender for Endpoint Device Control Printer Protection
 description: Microsoft Defender for Endpoint Device Control Printer Protection blocks people from printing via non-corporate printers or non-approved USB printer.
 ms.service: microsoft-365-security
 ms.localizationpriority: medium
-ms.date: 07/11/2023
+ms.date: 10/25/2023
 ms.author: dansimp
 author: dansimp
 ms.reviewer: dansimp

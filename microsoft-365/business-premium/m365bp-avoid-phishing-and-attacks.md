@@ -8,7 +8,7 @@ manager: dansimp
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-business
-ms.date: 09/08/2023
+ms.date: 10/26/2023
 ms.localizationpriority: medium
 ms.collection: 
 - M365-Campaigns
@@ -76,6 +76,6 @@ Learn more about how to:
 
 - [Stay secure and private at work](https://support.office.com/article/stay-secure-and-private-at-work-104c7d91-b25a-453d-beee-ba64b6c6fc2d).
   
-## Next objective
+## Next step
 
-Once you've completed this mission objective, learn about how to [send encrypted email](m365bp-use-labels-encryption.md). 
+Learn how to [send encrypted email](m365bp-use-labels-encryption.md). 

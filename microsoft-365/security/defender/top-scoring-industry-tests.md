@@ -30,7 +30,7 @@ ms.date: 02/16/2021
 
 [Microsoft 365 Defender](microsoft-365-defender.md) is a unified pre- and post-breach enterprise defense suite. It natively coordinates detection, prevention, investigation, and response across endpoints, identities, email, and applications to provide integrated protection against sophisticated attacks.
 
-Microsoft 365 Defender combines the capabilities of [Microsoft Defender for Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp), [Microsoft Defender for Office 365](https://www.microsoft.com/microsoft-365/exchange/advance-threat-protection), [Microsoft Defender for Identity](https://azure.microsoft.com/features/azure-advanced-threat-protection/), [Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection), and [Microsoft Defender for Cloud Apps](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security) into a single solution.
+Microsoft 365 Defender combines the capabilities of [Microsoft Defender for Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp), [Microsoft Defender for Office 365](https://www.microsoft.com/microsoft-365/exchange/advance-threat-protection), [Microsoft Defender for Identity](https://azure.microsoft.com/features/azure-advanced-threat-protection/), [Microsoft Entra ID Protection](/azure/active-directory/identity-protection/overview-identity-protection), and [Microsoft Defender for Cloud Apps](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security) into a single solution.
 
 ### MITRE: Demonstrated real-world detection, response, and protection from advanced attacks
 

@@ -50,6 +50,7 @@ The following section applies to Loop components stored in OneDrive (created out
 - **EUDB** compliance - [What is the EU Data Boundary?](/privacy/eudb/eu-data-boundary-learn)
 
 #### Admin Management
+- Basic **Intune** [Device Management Support](/mem/intune/remote-actions/device-management) for Loop app on iOS and Android
 - **[Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo)** capabilities, including creation of .loop files in a user's OneDrive in the geo that matches the user's [preferred data location](/microsoft-365/enterprise/plan-for-multi-geo#best-practices) and ability to move the user's OneDrive when their preferred data location changes. 
 - When a user leaves an organization, [OneDrive retention policies](/sharepoint/retention-and-deletion) apply to the .loop files just as they do to other content created by the user
 
@@ -79,7 +80,6 @@ The following section applies to Loop components stored in OneDrive (created out
 ### Capabilities that are Not Yet Available
 
 #### Admin Management
-- Basic **Intune** [Device Management Support](/mem/intune/remote-actions/device-management) for Loop app on iOS and Android
 - Basic **[Conditional Access](/sharepoint/control-access-from-unmanaged-devices)** support
 
 #### Data Loss Prevention, Information Protection
@@ -100,6 +100,7 @@ The following sections apply to Loop workspace content stored in Microsoft Synte
 - **EUDB** compliance - [What is the EU Data Boundary?](/privacy/eudb/eu-data-boundary-learn)
 
 #### Admin Management
+- Basic **Intune** [Device Management Support](/mem/intune/remote-actions/device-management) for Loop app on iOS and Android
 - **[Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo)** capabilities, including creation of .loop files in a user's Loop workspaces in the geo that matches the user's [preferred data location](/microsoft-365/enterprise/plan-for-multi-geo#best-practices). 
 
 #### Audit
@@ -136,7 +137,6 @@ The following sections apply to Loop workspace content stored in Microsoft Synte
   - get and set block download policy
 - End user Recycle Bin for deleted content
 - Loop workspace management: multiple owners for lifecycle management
-- Basic **Intune** [Device Management Support](/mem/intune/remote-actions/device-management) for Loop app on iOS and Android
 - Basic **[Conditional Access](/sharepoint/control-access-from-unmanaged-devices)** support
 
 We plan to expand our administrative workspace management capabilities via PowerShell. Furthermore, we plan to make these administrative functions accessible in SharePoint Admin Center.

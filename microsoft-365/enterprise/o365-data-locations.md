@@ -3,7 +3,7 @@ title: "Microsoft 365 data locations"
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.reviewer: dmwmsft
+ms.reviewer: deanw
 ms.date: 07/31/2023
 audience: ITPro
 ms.topic: article
@@ -50,7 +50,7 @@ See the following links to understand how you can determine current data residen
   - Records management
   - Sensitivity labels  
   
-- Azure Active Directory [Data Location](m365-dr-workload-other.md#azure-active-directory-aad)
+- Microsoft Entra ID [Data Location](m365-dr-workload-other.md#azure-active-directory-aad)
 - Whiteboard [Data Location](m365-dr-workload-other.md#whiteboard)
 - Forms [Data Location](m365-dr-workload-other.md#forms)
 - Intune [Data Location](m365-dr-workload-other.md#intune)
