@@ -22,7 +22,7 @@ search.appverid: met150
 
 All permissions listed within the Microsoft 365 Defender Unified RBAC model align to existing permissions in the individual RBAC models. Once you activate the Microsoft 365 Defender Unified RBAC model the permissions and assignments configured in your imported roles will replace the existing roles in the individual RBAC models.
 
-This article describes how existing roles and permissions in Microsoft Defender for Endpoint, Microsoft Defender Vulnerability Management and Microsoft Defender for Office 365 (Exchange Online Protection), Microsoft Defender for Identity, and Microsoft Entra roles map to the roles and permission in the Microsoft 365 Defender Unified RBAC model.
+This article describes how existing roles and permissions in Microsoft Defender for Endpoint, Microsoft Defender Vulnerability Management, Microsoft Defender for Office 365 (Exchange Online Protection and Exchange Online (EXO) - previously configured in Exchange Admin Center), Microsoft Defender for Identity, and Microsoft Entra roles map to the roles and permission in the Microsoft 365 Defender Unified RBAC model.
 
 [!INCLUDE[Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -41,7 +41,7 @@ This article describes how existing roles and permissions in Microsoft Defender 
 Use the tables in the following sections to learn more about how your existing individual RBAC role definitions map to your new Microsoft 365 Defender Unified RBAC roles:
 
 1. [Map Defender for Endpoint and Defender Vulnerability Management permissions](#map-defender-for-endpoint-and-defender-vulnerability-management-permissions-to-the-microsoft-365-defender-rbac-permissions)
-2. [Map Defender for Office 365 (Exchange Online Protection) roles](#map-defender-for-office-365-exchange-online-protection-roles-to-the-microsoft-365-defender-unified-rbac-permissions)
+2. [Map Defender for Office 365 roles and permissions to the Microsoft 365 Defender Unified RBAC permissions](#map-defender-for-office-365-roles-and-permissions-to-the-microsoft-365-defender-unified-rbac-permissions)
 3. [Map Microsoft Defender for Identity permissions](#map-microsoft-defender-for-identity-permissions-to-the-microsoft-365-defender-unified-rbac-permissions)
 4. [Microsoft Entra Global roles access](#azure-active-directory-global-roles-access)
 
@@ -63,10 +63,17 @@ Use the tables in the following sections to learn more about how your existing i
 |Manage portal system settings|Authorization and settings \ System setting (Read and manage)|
 |Manage endpoint security settings in Microsoft Intune|Not supported - this permission is managed in the Microsoft Intune admin center|
 
-### Map Defender for Office 365 (Exchange Online Protection) roles to the Microsoft 365 Defender Unified RBAC permissions
+### Map Defender for Office 365 roles and permissions to the Microsoft 365 Defender Unified RBAC permissions
+
+Use the tables below to learn how your existing Exchange Online Protection (EOP) roles and Exchange Online (EXO) permissions for Defender for Office 365 map to the new Microsoft 365 Defender Unified RBAC permissions:
+
+- [Exchange Online Protection (EOP) roles mapping](#exchange-online-protection-eop-roles-mapping)
+- [Exchange Online (EXO) permissions mapping (previously configured in Exchange Admin Center)](#exchange-online-exo-permissions-mapping-previously-configured-in-exchange-admin-center)
+
+#### Exchange Online Protection (EOP) roles mapping
 
 |Defender for Office (EOP) role group|Microsoft 365 Defender Unified RBAC permission|
-|---|---|---|
+|---|---|
 |Security reader|Security operations \ Security data \Security data basics (read)</br>Security operations \ Raw data (Email & collaboration) \ Email message headers (read)</br>Security operations \ Security data \ Response (manage) </br>Authorization and settings \ Security settings \ Core security settings (read) </br>Authorization and settings \ System setting (read)|
 |Global reader|Security operations \ Security data \ Security data basics (read)</br>Security operations \ Raw data (Email & collaboration) \ Email message headers (read)</br>Security operations \ Security data \ Response (manage) </br>Authorization and settings \ Security settings \ Core security settings (read) </br>Authorization and settings \ System setting (read)|
 |Security administrator|Security operations \ Security data \ Security data basics (read) </br>Security operations \ Security data \ Alerts (manage)</br>Security operations \ Raw data (Email & collaboration) \ Email message headers (read)</br>Security operations \ Security data \ Response (manage) </br>Security operations \ Security data \ Email quarantine (manage)</br>Authorization and settings \ Authorization (read) </br> Authorization and settings \ Security setting (All permissions) </br>Authorization and settings \ System settings (Read and manage)|
@@ -80,6 +87,17 @@ Use the tables in the following sections to learn more about how your existing i
 |Audit Logs|Security operations \ Security data \ Security data basics (read)|
 |Quarantine|Security operations \ Security data \ Email quarantine (manage)|
 |Role Management|Authorization and settings \ Authorization (Read and manage)|
+
+#### Exchange Online (EXO) permissions mapping (previously configured in Exchange Admin Center)
+
+|Defender for Office Exchange Online (EXO) permissions|Microsoft 365 Defender Unified RBAC permission|
+|---|---|
+|Organization Management|Security operations \ Raw data (email & collaboration) \ Email message headers (read) </br> Authorization and settings \ Security settings \ Core security settings (manage) </br> Authorization and settings \ Security settings \ Detection tuning (manage) </br>Authorization and settings \ System settings (Read and manage)|
+|Hygiene Management| Security operations \ Security data \ Email quarantine (manage) </br>Authorization and settings \ Security settings \ Core security settings (manage) </br> Authorization and settings \ Security settings \ Detection tuning (manage)|
+|Security Administrator |Authorization and settings \ Security settings \ Detection tuning (manage) </br>Authorization and settings \ System settings (Read and manage)|
+|View-Only Organization Management | Authorization and settings \ Security settings (Read-only) </br> Authorization and settings \ System settings (Read-only)|
+|Tenant AllowBlockList Manager|Authorization and settings \ Security settings \ Detection tuning (manage)|
+|View-only Recipients |Security operations \ Raw data (email & collaboration) \ Email message headers (read)|
 
 ### Map Microsoft Defender for Identity permissions to the Microsoft 365 Defender Unified RBAC permissions
 
@@ -107,7 +125,7 @@ Use this table to learn about the permissions assigned by default for each workl
 |Global reader|Security operations \ Security data \ Security data basics (read)</br>Security posture \ Posture management \ Secure Score (read) </br>|_**Defender for Endpoint and Defender Vulnerability Management permissions only permissions**_ </br>Security posture \ Posture management \ Vulnerability management (read)</br></br> _**Defender for Office only permissions**_ </br> Security operations \ Security data \ Response (manage)</br>Security operations \ Raw data (Email & collaboration) \ Email message headers (read)</br>Authorization and settings \ Authorization (read) </br></br>_**Defender for Office and Defender for Identity only permissions**_ </br>Authorization and settings \ Security settings \ Core security settings (read)</br>Authorization and settings \ System settings (read)|
 |Security reader|Security operations \ Security data \ Security data basics (read)</br>Security posture \ Posture management \ Secure Score (read) </br>|_**Defender for Endpoint and Defender Vulnerability Management permissions only permissions**_ </br>Security posture \ Posture management \ Vulnerability management (read)</br></br> _**Defender for Office only permissions**_ </br> Security operations \ Security data \ Response (manage)</br>Security operations \ Raw data (Email & collaboration) \ Email message headers (read) </br></br>_**Defender for Office and Defender for Identity only permissions**_ </br>Authorization and settings \ Security settings \ Core security settings (read)</br>Authorization and settings \ System settings (read)|
 |Security operator|Security operations \ Security data \ Security data basics (read)</br>Security operations \ Security data \ Alerts (manage) </br>Security operations \ Security data \ Response (manage)</br>Security posture \ Posture management \ Secure Score (read)</br>Authorization and settings \ Security settings (All permissions)|_**Defender for Endpoint and Defender Vulnerability Management permissions only permissions**_</br>Security operations  \ Security data \ Basic live response (manage)</br>Security operations  \ Security data \ Advanced live response (manage)</br> Security operations \ Security data \ File collection (manage) </br>Security posture \ Posture management \ Vulnerability management (read)</br>Security posture \ Posture management \ Exception handling (manage)</br>Security posture \ Posture management \ Remediation handling (manage)</br></br>_**Defender for Office only permissions**_ </br>Security operations \ Raw data (Email & collaboration) \ Email message headers (read)</br>Authorization and settings \ System settings (Read and manage)</br></br>_**Defender for Identity only permissions**_ </br>Authorization and settings \ System settings (read)|
-|Exchange Administrator|Security posture \ Posture management \ Secure Score (read) </br> Security posture \ Posture management \ Secure Score (manage)|not applicable|
+|Exchange Administrator|Security posture \ Posture management \ Secure Score (read) </br> Security posture \ Posture management \ Secure Score (manage)|_**Defender for Office only permissions**_ </br>Security operations \ Raw data (Email & collaboration) \ Email message headers (read)</br>Authorization and settings \ System settings (Read and manage)|
 |SharePoint Administrator|Security posture \ Posture management \ Secure Score (read) </br> Security posture \ Posture management \ Secure Score (manage)|not applicable|
 |Service Support Administrator|Security posture \ Posture management \ Secure Score (read) |not applicable|
 |User Administrator|Security posture \ Posture management \ Secure Score (read) |not applicable|

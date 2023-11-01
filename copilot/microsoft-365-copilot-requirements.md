@@ -33,7 +33,7 @@ The following are the prerequisites for using Microsoft 365 Copilot. If your org
 [Microsoft 365 Apps for enterprise](/deployoffice/about-microsoft-365-apps) must be deployed. Use the [Microsoft 365 Apps setup guide](https://admin.microsoft.com/Adminportal/Home?Q=m365setup#/modernonboarding/microsoft365appssetup) in the Microsoft 365 admin center to deploy to your users.
 
 > [!NOTE]
-> For Copilot to work in Word Online and PowerPoint Online, you'll need to have third-party cookies enabled.
+> For Copilot to work in Word Online and PowerPoint Online, you need to have third-party cookies enabled.
 
 ### Microsoft Entra ID
 
@@ -47,7 +47,9 @@ Some features in Microsoft 365 Copilot, such as file restore and OneDrive manage
 
 Microsoft 365 Copilot works with the new Outlook (for [Windows](https://support.microsoft.com/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627) and [Mac](https://support.microsoft.com/office/the-new-outlook-for-mac-6283be54-e74d-434e-babb-b70cefc77439)), which are currently in preview. Users can switch to the new Outlook by selecting **Try the new Outlook** in their existing Outlook client.
 
-To have Copilot appear in the new Outlook, you'll need to sync your Microsoft 365 settings. To do this, go to [View and manage your Microsoft 365 settings](https://myaccount.microsoft.com/settingsandprivacy/language).
+To have Copilot appear in the new Outlook, you need to sync your Microsoft 365 settings. To do this, go to [View and manage your Microsoft 365 settings](https://myaccount.microsoft.com/settingsandprivacy/language).
+
+Microsoft 365 Copilot will be supported on classic Outlook for Windows (Win32 desktop app) in the future. You can [review the roadmap item here](https://www.microsoft.com/microsoft-365/roadmap?rtc=1&filters=Outlook&searchterms=copilot).
 
 ### Microsoft Teams
 
@@ -67,17 +69,25 @@ Microsoft 365 Copilot will follow Microsoft 365 Apps' standard practice for depl
 
 Once generally available on 11/1, Copilot will be in Current Channel, and starting December 12, on Monthly Enterprise Channel. As always, preview channels are a great option to validate the product before rolling out to the rest of organization. To learn more, see [Overview of update channels](/deployoffice/updates/overview-update-channels), and the [Microsoft 365 Insider channels](/deployoffice/insider/compare-channels).
 
+## Conditional Access
+
+Microsoft 365 Copilot supports Conditional Access Policies (CAPs) in SharePoint Online that are configured to target “all cloud apps” or “Office 365 group.” However, Copilot does not currently support Conditional Access Policies that target the SharePoint Online app directly. This is limited to Copilot in Word, Copilot in PowerPoint, and Microsoft 365 Chat. Only users with existing access permissions to a document may access that document, but in some situations, Copilot may summarize content from that file for a user with existing permission even if not all of the CAP requirements are met. Note, this doesn't allow a user to access data to which they don’t already have existing permissions. We are working toward an update to extend support to conditional access policies targeting the SharePoint Online app.
+
+To learn more about the different types of Conditional Access Policies, see [What is Conditional Access in Microsoft Entra ID](/entra/identity/conditional-access/overview).
+
+## Restricted Access Control
+
+Microsoft 365 Copilot does not currently support Restricted Access Control (RAC) and Microsoft 365 Information Barriers (Implicit and Owner moderated mode) on sites. We intend to support to both policies. In the meantime, we recommend against assigning Copilot to potentially impacted users. Learn more about [restricted access control](/sharepoint/restricted-access-control) and [information barrier policies](/purview/information-barriers).
+
 ## Network requirements
 
 Copilot services connect to endpoints contained within the [Microsoft 365 endpoint taxonomy](https://aka.ms/o365ip). As with all Microsoft 365 services, we recommend that customers align their network with the [Microsoft 365 network connectivity principles](/microsoft-365/enterprise/microsoft-365-network-connectivity-principles). This helps provide the best experience with Copilot through minimization of latency and increased network quality of service for critical network flows.
 
-There are many Copilot experiences, including some core experiences like Excel, Word, PowerPoint, Teams, and Loop, that use WebSocket connections (wss://) from the device running the Microsoft 365 app to a Microsoft service. So, to use these Copilot experiences, WebSocket connections must be allowed from user endpoints to the endpoints listed in our endpoint taxonomy, specifically in ID number 46 in the section for [Microsoft 365 Common and Office Online](/microsoft-365/enterprise/urls-and-ip-address-ranges).
+There are many Copilot experiences, including some core experiences like Excel, Word, PowerPoint, Teams, and Loop, that use WebSocket connections (wss://) from the device running the Microsoft 365 app to a Microsoft service. So, to use these Copilot experiences, WebSocket connections must be allowed from user endpoints to the endpoints listed in our endpoint taxonomy, specifically in ID number 46 in the section for [Microsoft 365 Common and Office Online](/enterprise/urls-and-ip-address-ranges).
 
 ## License requirements
 
-Microsoft 365 Copilot users require a license for Microsoft 365 E3 or Microsoft 365 E5, as well as a license for Microsoft 365 Copilot. You can use the [Microsoft 365 Copilot setup guide](https://go.microsoft.com/fwlink/p/?linkid=2243702) in the Microsoft 365 admin center to assign the required licenses to users. For more information, see [Assign licenses to users in the Microsoft 365 admin center](/microsoft-365/admin/manage/assign-licenses-to-users).
-
-The Semantic Index for Microsoft 365 Copilot also requires a license for Microsoft 365 E3 or E5.
+Microsoft 365 Copilot users require a license for Microsoft 365 E3 or Microsoft 365 E5, and a license for Microsoft 365 Copilot. You can use the [Microsoft 365 Copilot setup guide](https://go.microsoft.com/fwlink/p/?linkid=2243702) in the Microsoft 365 admin center to assign the required licenses to users. For more information, see [Assign licenses to users in the Microsoft 365 admin center](/microsoft-365/admin/manage/assign-licenses-to-users).
 
 ## Privacy settings for Microsoft 365 Apps for enterprise
 

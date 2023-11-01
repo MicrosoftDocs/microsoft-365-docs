@@ -87,6 +87,8 @@
     href: prepare-testbase-vhd-file.md
   - name: SDK & API
     href: sdkapi.md
+  - name: Grant Test Base managed identities to your Key Vault account
+    href: managed-identity.md
 - name: Reference
   items:
   - name: Frequently Asked Questions
