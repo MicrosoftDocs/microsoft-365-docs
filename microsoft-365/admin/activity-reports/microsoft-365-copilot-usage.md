@@ -39,7 +39,7 @@ In the **Microsoft 365 Copilot report** (in preview), you can understand the su
 
 You can use this report to see the usage of Microsoft 365 Copilot in your organization. In the report, you can filter by different periods. The Microsoft 365 Copilot report can be viewed over the last 7 days, 30 days, 90 days, or 180 days. You can see significant Microsoft 365 Copilot usage data, which highlights the enablement statistics and adoption of the enablement.
 
-:::image type="content" alt-text="Screenshot showing Microsoft 365 Copilot usage summary information" source="../../media/copilot-usage-numbers.png" lightbox="../../media/copilot-usage-report-summary.png":::
+:::image type="content" alt-text="Screenshot showing Microsoft 365 Copilot usage summary information" source="../../media/copilot-usage-numbers.png":::
 
 **Enabled Users** shows you the number of users enabled to use Microsoft 365 Copilot for the time frame value.
 
@@ -78,7 +78,7 @@ In the hover status in Trend view, you can see the selected date and data refres
 
 In Adoption section, you may see a recommendation card:
 
-:::image type="content" alt-text="Screenshot showing the recommendation card for Microsoft 365 Copilot adoption" source="../../media/copilot-usage-recommendation.png" lightbox="../../media/copilot-usage-recommendation.png":::
+:::image type="content" alt-text="Screenshot showing the recommendation card for Microsoft 365 Copilot adoption" source="../../media/copilot-usage-recommendation.png":::
 
 To learn more about using organizational messages for Microsoft 365 Copilot, see [Microsoft 365 features adoption using organizational messages](microsoft-365-copilot-organizational-messages.md).
 
