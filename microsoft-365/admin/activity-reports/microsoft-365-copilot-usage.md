@@ -84,7 +84,7 @@ To learn more about using organizational messages for Microsoft 365 Copilot, see
 
 You can also export the report data into an Excel .csv file by selecting the ellipses and then **Export** in the top-right corner.
 
-:::image type="content" alt-text="Screenshot showing the recommendation card for Microsoft 365 Copilot adoption" source="../../media/copilot-usage-last-activity.png" lightbox="../../media/copilot-usage-last-activity.png":::
+:::image type="content" alt-text="Screenshot showing the activity for the Microsoft 365 Copilot usage report" source="../../media/copilot-usage-last-activity.png" lightbox="../../media/copilot-usage-last-activity.png":::
 
 Select **Choose columns** to add or remove columns from the table.
 
