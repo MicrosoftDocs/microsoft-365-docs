@@ -54,8 +54,7 @@ Microsoft 365 apps (such as Word, Excel, PowerPoint, Outlook, Teams, loop, and m
 |                       | Meetings                       | Users can invoke Copilot in meetings or calls within the same tenant. Copilot will use the transcript in real-time to answer questions from the user. It only uses the transcript and knows the name of the user typing the question. The user can type any question or use pre-determined prompts; however, Copilot will only answer questions related to the meeting conversation from the transcript. The user can copy/paste an answer and access Copilot after the meeting ends on the Recap page. Copilot interaction history with the user is kept for 24 hrs. |
 |                       | Business Chat                  | Allows users to access data across their Microsoft 365 Graph and leverage LLM functionality. Business chat can be accessed in Teams and when signed-in to Bing with an active directory account. |
 |                       | Whiteboard                     | Makes meetings and brainstorm sessions more creative and effective. Use natural language to ask Copilot to generate ideas, organize ideas into themes, create designs that bring ideas to life and summarize whiteboard content. |
-| OneNote               | Draft with Copilot             | Use prompts to draft plans, generate ideas, create lists, and organize information to help you easily find what you need.  |
-| Whiteboard              | Visual collaborative canvas           | Discover new ideas, simplify organization, and speed up summarization with Copilot                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| OneNote               | Draft with Copilot             | Use prompts to draft plans, generate ideas, create lists, and organize information to help you easily find what you need.  |                                                                                                                                                                                                                                                                                                                                                                                                                  |
 
 To learn more about what's possible with Microsoft 365 Apps and Copilot, check out [Microsoft 365 AI help and learning](https://support.microsoft.com/copilot).
 
@@ -91,6 +90,9 @@ Microsoft 365 Copilot iteratively processes and orchestrates these sophisticated
 
 The Semantic Index for Copilot is a separate index or map of your user and company data—identifying relationships and connections. It works with Copilot and the Microsoft Graph to create a sophisticated map of all data and content in your organization to enable Microsoft 365 Copilot to deliver personalized, relevant, and actionable responses. The Semantic Index is part of the Microsoft 365 service and is created automatically. You can disable SharePoint sites from appearing in search and omit them from the index.
 
+>[!NOTE]
+> Removing SharePoint sites from search will mean it's only accessible by direct link. Microsoft recommends to avoid doing this and instead ensure that proper permissioning, access, and data loss prevention policies are established.
+
 :::image type="content" source="media/semantic-index-for-copilot.png" alt-text="Diagram that shows the relationship among the components of Semantic Index, graph connectors, and Microsoft 365 Copilot.":::
   
 For example, when you ask it about the “Q2 Sales Report,” it doesn’t simply look for documents with those words in the file name or body. Instead, it understands that “sales reports are produced by Vittorio on the finance team and created in Excel.” And it uses that conceptual understanding to determine your intent to help you find what you need.
@@ -110,10 +112,6 @@ Microsoft 365, the Microsoft Graph, and the Semantic Index for Copilot enable an
 ## Availability
 
 Microsoft 365 Copilot is generally available as an add-on to customers with Microsoft E3 or E5. Contact your Microsoft account team to start the purchase process.
-
-The Semantic Index will begin rolling out later this year.
-
-If you aren’t in the Microsoft 365 Copilot EAP, you can still start [preparing your organization for Copilot](microsoft-365-copilot-setup.md).
 
 ## Additional resources
 

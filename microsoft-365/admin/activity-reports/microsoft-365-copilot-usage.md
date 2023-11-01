@@ -49,7 +49,7 @@ You can use this report to see the usage of Microsoft 365 Copilot in your organi
 
 You can see the following summary charts in this report as default view:
 
-:::image type="content" alt-text="Screenshot showing Microsoft 365 Copilot usage adoption chart" source="../../media/copilot-usage-adoption-chart.png" lightbox="../../media/copilot-usage-adoption-chart.png":::
+:::image type="content" alt-text="Screenshot showing Microsoft 365 Copilot usage adoption chart" source="../../media/copilot-usage-adoption-chart.png":::
 
 **Enabled Users** shows you the number of users enabled to use Microsoft 365 Copilot for the time frame value.
 
@@ -66,15 +66,15 @@ You can switch between Current view and Trend view.
 
 In the hover status in Current view, you can see the selected time frame and data refresh time.
 
-:::image type="content" alt-text="Screenshot showing the time period view for Microsoft 365 Copilot adoption chart" source="../../media/copilot-usage-time-period.png" lightbox="../../media/copilot-usage-time-period.png":::
+:::image type="content" alt-text="Screenshot showing the time period view for Microsoft 365 Copilot adoption chart" source="../../media/copilot-usage-time-period.png":::
 
 When switching to Trend view, you can select one product in the dropdown list to see daily usage.
 
-:::image type="content" alt-text="Screenshot showing the dropdown list of products for Microsoft 365 Copilot adoption chart" source="../../media/copilot-usage-trend-view.png" lightbox="../../media/copilot-usage-trend-view.png":::
+:::image type="content" alt-text="Screenshot showing the dropdown list of products for Microsoft 365 Copilot adoption chart" source="../../media/copilot-usage-trend-view.png":::
 
 In the hover status in Trend view, you can see the selected date and data refresh time.
 
-:::image type="content" alt-text="Screenshot showing the hover status for Microsoft 365 Copilot adoption chart" source="../../media/copilot-usage-hover-status.png" lightbox="../../media/copilot-usage-hover-status.png":::
+:::image type="content" alt-text="Screenshot showing the hover status for Microsoft 365 Copilot adoption chart" source="../../media/copilot-usage-hover-status.png":::
 
 In Adoption section, you may see a recommendation card:
 
