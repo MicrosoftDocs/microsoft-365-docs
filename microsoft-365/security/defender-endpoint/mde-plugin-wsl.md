@@ -128,13 +128,15 @@ After installing the plug-in, the subsystem and all its running containers are o
 
   ![Screenshot showing device inventory filter](media/mdeplugin-wsl/device-inventory-filter.png)
 
-You can see all WSL instances in your environment with an active Defender for Endpoint plug-in for WSL. The instances represent all distributions running inside WSL on a given host – the hostname of the “device” matches that of the Windows host. However, it's represented as a Linux device.
+   You can see all WSL instances in your environment with an active Defender for Endpoint plug-in for WSL. The instances represent all distributions running inside WSL on a given host. The hostname of a *device* matches that of the Windows host. However, it's represented as a Linux device.
 
-Open the device page. In the Overview pane, you'll see that the “device” is “Hosted On” – this is a link that will allow you to understand this machine is running on a Windows host and pivot to the host for further investigation and/or response.
+3. Open the device page. In the **Overview** pane, you'll see a link for where the device is hosted. The link enables you to understand that the device is running on a Windows host. You can then pivot to the host for further investigation and/or response.
 
-:::image type="content" source="media/mdeplugin-wsl/device-overview.png" alt-text="Screenshot showing device overview.":::  
+   :::image type="content" source="media/mdeplugin-wsl/device-overview.png" alt-text="Screenshot showing device overview.":::  
 
-The timeline is populated, similar to MDE for Linux, with events from inside the subsystem (file, process, network). You can observe activity and detections in the timeline view. Alerts and incidents are generated as appropriate as well. To test this, after the installation of the plug-in, please follow the steps given below:
+The timeline is populated, similar to Defender for Endpoint on Linux, with events from inside the subsystem (file, process, network). You can observe activity and detections in the timeline view. Alerts and incidents are generated as appropriate as well. 
+
+To test this, after the installation of the plug-in, please follow the steps given below:
 
 1. Open a terminal/command prompt instance (Start, run “cmd” or on Windows 11, right-click the start button and select Terminal) 
 
