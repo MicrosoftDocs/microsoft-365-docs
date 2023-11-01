@@ -88,8 +88,8 @@ If you would like to set up a different proxy for Defender running in WSL (other
 
 3. Once the registry is set, if WSL is already running or plug-in is already installed, restart wsl using the following steps:
 
-   1. Open command prompt and run “wsl --shutdown”.
-   2. Then, run the command: wsl
+   1. Open Command Prompt and run `wsl --shutdown`.
+   2. Then, run the command `wsl`.
 
 ## Connectivity test for Defender running in WSL
 
@@ -97,26 +97,26 @@ These instructions help you verify if MDE in WSL has connectivity to the interne
 
 To run the connectivity test, please follow the below instructions:
 
-1. Open registry editor
+1. Open Registry Editor.
 
 2. Create a registry key with the following details:
 
-   **Name:** ConnectivityTest
-   **Type:** REG_DWORD
-   **Value:** Number of seconds plug-in must wait before running test. (Recommended: 60 seconds)
-   **Path:** Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Lxss\Plugins\DefenderPlug-in
+   **Name:** `ConnectivityTest`
+   **Type:** `REG_DWORD`
+   **Value:** `Number of seconds plug-in must wait before running test. (Recommended: 60 seconds)`
+   **Path:** `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Lxss\Plugins\DefenderPlug-in`
 
 3. Once the registry is set, restart wsl using the following steps:
 
-   1. Open command prompt and run “wsl --shutdown”.
-   2. Run the command: wsl
+   1. Open Command Prompt and run `wsl --shutdown`.
+   2. Run the command `wsl`.
 
-4. Wait for 5 minutes and then run health_check.exe found in C:\Program Files\Microsoft Defender for Endpoint plug-in for WSL\tools for the results of the connectivity test.
+4. Wait for 5 minutes and then run `health_check.exe` (located at `C:\Program Files\Microsoft Defender for Endpoint plug-in for WSL\tools` for the results of the connectivity test).
 
-5. If successful, the connectivity test should show success. 
+   If successful, the connectivity test shows success. 
 
 > [!NOTE]
-> To set a proxy for use in WSL containers (the distributions running on the subsystem), please follow the instructions at [Advanced settings configuration in WSL | Microsoft Learn](/windows/wsl/wsl-config).
+> To set a proxy for use in WSL containers (the distributions running on the subsystem), see [Advanced settings configuration in WSL](/windows/wsl/wsl-config).
 
 ## Verifying functionality and SOC analyst experience
 
