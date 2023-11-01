@@ -48,7 +48,8 @@ You can also run ```mdatp health```. It reports if real-time protection is enabl
 ```bash
 mdatp health
 ```
-```Output
+
+```console
 ...
 real_time_protection_enabled                : true
 real_time_protection_available              : false
@@ -80,7 +81,7 @@ In this case, you need to perform the following steps to trigger the approval fl
     sudo kextutil /Library/Extensions/wdavkext.kext
     ```
 
-    ```Output
+    ```console
     Kext rejected due to system policy: <OSKext 0x7fc34d528390 [0x7fffa74aa8e0]> { URL = "file:///Library/StagedExtensions/Library/Extensions/wdavkext.kext/", ID = "com.microsoft.wdavkext" }
     Kext rejected due to system policy: <OSKext 0x7fc34d528390 [0x7fffa74aa8e0]> { URL = "file:///Library/StagedExtensions/Library/Extensions/wdavkext.kext/", ID = "com.microsoft.wdavkext" }
     Diagnostics for /Library/Extensions/wdavkext.kext:
@@ -102,10 +103,11 @@ In this case, you need to perform the following steps to trigger the approval fl
     mdatp health
     ```
 
-    ```Output
+    ```console
     ...
     real_time_protection_enabled                : true
     real_time_protection_available              : true
     ...
     ```
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
