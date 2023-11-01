@@ -56,7 +56,7 @@ There are several ways that a partner can work with you. Based on your stated bu
 
 1. Go to <a href="https://appsource.microsoft.com/marketplace/partner-dir" target="_blank">https://appsource.microsoft.com/marketplace/partner-dir</a>.
 2. Use the filters to narrow your search. When you find a partner that you want to work with, select **Contact me**.
-3. Enter your location and contact information. Select your organization size, include your organization name, select your industry focus, a nd thenadd keywords for the type of services you need, then describe your business needs.
+3. Enter your location and contact information. Select your organization size, include your organization name, select your industry focus, add keywords for the type of services you need, and then describe your business needs.
 4. When you're finished, select **Contact me**.
 
 The partner contacts you and gives you a chance to learn more about them. If you decide to work with them, they send you an email invitation to establish a partner relationship.
