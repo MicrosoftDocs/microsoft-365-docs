@@ -15,9 +15,6 @@ ms.date: 09/26/2023
 
 # Data, Privacy, and Security for Microsoft 365 Copilot
 
-> [!IMPORTANT]
-> The information in this article only applies to the [Microsoft 365 Copilot Early Access Program](microsoft-365-early-access-program.yml), an invite-only paid preview program for commercial customers. Details are subject to change.
-
 Microsoft 365 Copilot is a sophisticated processing and orchestration engine that provides AI-powered productivity capabilities by coordinating the following components:
 
 - Large language models (LLMs)
@@ -66,7 +63,7 @@ While Microsoft 365 Copilot is already able to use the apps and data within the 
 
 The permissions model within your Microsoft 365 tenant can help ensure that data won't unintentionally leak between users, groups, and tenants. Microsoft 365 Copilot presents only data that each individual can access using the same underlying controls for data access used in other Microsoft 365 services. Semantic Index honors the user identity-based access boundary so that the grounding process only accesses content that the current user is authorized to access. For more information, see Microsoft’s [privacy policy and service documentation](https://privacy.microsoft.com/).  
 
-When you have data that's encrypted by Microsoft Purview Information Protection, it won't be returned by Microsoft 365 Copilot unless the user is granted at least the [View usage right](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions). This encryption can be applied by [sensitivity labels](/purview/sensitivity-labels) or by restricted permissions in Microsoft 365 apps by using Information Rights Management (IRM). While Microsoft 365 Copilot generated content currently doesn't inherit the most restrictive permissions or label from the source, Microsoft 365 Copilot cites the original source, which will retain the protection.
+When you have data that's encrypted by Microsoft Purview Information Protection, Microsoft 365 Copilot honors the usage rights granted to the user. This encryption can be applied by [sensitivity labels](/purview/sensitivity-labels) or by restricted permissions in Microsoft 365 apps by using Information Rights Management (IRM). For more information about using Microsoft Purview with Microsoft 365 Copilot, see [Protect and manage Microsoft 365 Copilot interactions with Microsoft Purview](/purview/ai-microsoft-purview).
 
 We already implement multiple forms of protection to help prevent customers from compromising Microsoft 365 services and applications or gaining unauthorized access to other tenants or the Microsoft 365 system itself. Here are some examples of those forms of protection:
 
@@ -91,9 +88,6 @@ For European Union (EU) users, we have additional safeguards to comply with the 
 As regulation in the AI space evolves, Microsoft will continue to adapt and respond to fulfill future regulatory requirements.
 
 Microsoft 365 Copilot is built on top of Microsoft’s current commitments to data security and privacy in the enterprise. There's no change to these commitments. Microsoft 365 Copilot is integrated into Microsoft 365 and adheres to all existing privacy, security, and compliance commitments to Microsoft 365 commercial customers. For more information, see [Microsoft Compliance](/compliance).
-
-> [!NOTE]
-> Currently, Microsoft 365 Copilot operates under the terms of the Early Access Program. When Microsoft 365 Copilot becomes generally available, it will operate under the [Microsoft 365 Product Terms](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/).
 
 Beyond adhering to regulations, we prioritize an open dialogue with our customers, partners, and regulatory authorities to better understand and address concerns, thereby fostering an environment of trust and cooperation. We acknowledge that privacy, security, and transparency aren't just features, but prerequisites in the AI-driven landscape at Microsoft.
 
