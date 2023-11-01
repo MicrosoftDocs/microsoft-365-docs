@@ -46,10 +46,10 @@ You can use this report to see the usage of Microsoft 365 Copilot in your organi
 **Active Users** shows you the number of users who performed an intentional activity, including have either tried a user-initiated Microsoft 365 Copilot feature or kept the content for Microsoft 365 Copilot initiated features, for the time frame value.
 
 **Active users rate** shows you the proportion of enabled users who actively engaged with Microsoft 365 Copilot for the time frame value. The rate is calculated as the percentage of active users, divided by the number of enabled users.
-
+<!--
 You can see the following summary charts in this report as default view:
 
-[image]
+[image]-->
 
 **Enabled Users** shows you the number of users enabled to use Microsoft 365 Copilot for the time frame value.
 
@@ -69,26 +69,26 @@ In the hover status in Current view, you can see the selected time frame and dat
 :::image type="content" alt-text="View of time frame for Microsoft 365 Copilot usage summary chart" source="../../media/copilot-usage-time-frame.png" lightbox="../../media/copilot-usage-time-frame.png":::
 
 When switching to Trend view, you can select one product in the dropdown list to see daily usage.
-
-[image]
+<!--
+[image]-->
 
 In the hover status in Trend view, you can see the selected date and data refresh time.
+<!--
+[image]-->
 
-[image]
-
-In Adoption section, you may see a recommendation card:
-
-[image]
+In Adoption section, you may see a recommendation card.
+<!--
+[image]-->
 
 To learn more about using organizational messages for Microsoft 365 Copilot, see [Microsoft 365 features adoption using organizational messages](microsoft-365-copilot-organizational-messages.md).
 
 You can also export the report data into an Excel .csv file by selecting the ellipses and then **Export** in the top-right corner.
-
-[image]
+<!--
+[image]-->
 
 Select **Choose columns** to add or remove columns from the table.
-
-[image]
+<!--
+[image]-->
 
 :::image type="content" alt-text="Add or remove columns for Microsoft 365 Copilot usage table" source="../../media/copilot-usage-columns.png" lightbox="../../media/copilot-usage-columns.png":::
 
