@@ -69,16 +69,6 @@ Microsoft 365 Copilot will follow Microsoft 365 Apps' standard practice for depl
 
 Once generally available on 11/1, Copilot will be in Current Channel, and starting December 12, on Monthly Enterprise Channel. As always, preview channels are a great option to validate the product before rolling out to the rest of organization. To learn more, see [Overview of update channels](/deployoffice/updates/overview-update-channels), and the [Microsoft 365 Insider channels](/deployoffice/insider/compare-channels).
 
-## Conditional Access
-
-Microsoft 365 Copilot supports Conditional Access Policies (CAPs) in SharePoint Online that are configured to target “all cloud apps” or “Office 365 group.” However, Copilot does not currently support Conditional Access Policies that target the SharePoint Online app directly. This is limited to Copilot in Word, Copilot in PowerPoint, and Microsoft 365 Chat. Only users with existing access permissions to a document may access that document, but in some situations, Copilot may summarize content from that file for a user with existing permission even if not all of the CAP requirements are met. Note, this doesn't allow a user to access data to which they don’t already have existing permissions. We are working toward an update to extend support to conditional access policies targeting the SharePoint Online app.
-
-To learn more about the different types of Conditional Access Policies, see [What is Conditional Access in Microsoft Entra ID](/entra/identity/conditional-access/overview).
-
-## Restricted Access Control
-
-Microsoft 365 Copilot does not currently support Restricted Access Control (RAC) and Microsoft 365 Information Barriers (Implicit and Owner moderated mode) on sites. We intend to support to both policies. In the meantime, we recommend against assigning Copilot to potentially impacted users. Learn more about [restricted access control](/sharepoint/restricted-access-control) and [information barrier policies](/purview/information-barriers).
-
 ## Network requirements
 
 Copilot services connect to endpoints contained within the [Microsoft 365 endpoint taxonomy](https://aka.ms/o365ip). As with all Microsoft 365 services, we recommend that customers align their network with the [Microsoft 365 network connectivity principles](/microsoft-365/enterprise/microsoft-365-network-connectivity-principles). This helps provide the best experience with Copilot through minimization of latency and increased network quality of service for critical network flows.
