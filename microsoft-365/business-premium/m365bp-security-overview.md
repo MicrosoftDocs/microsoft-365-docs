@@ -1,5 +1,5 @@
 ---
-title: "Boost your security protection with Microsoft 365 Business Premium"
+title: "Configure your security protection with Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -24,11 +24,11 @@ search.appverid:
 description: "Security overview for Microsoft 365 Business Premium, which provides cybersecurity tools such as multifactor authentication that you can use to prevent cyberattacks."
 ---
 
-# Boost your security protection
+# Configure your security protection in Microsoft 365 Business Premium
 
 :::image type="content" source="media/mission2.png" alt-text="Diagram with Boost Your Security Protection highlighted.":::
 
-During this phase, you set up your security protection. From turning on multifactor authentication (MFA), to protecting your admin accounts, and then taking steps to protect against threats, this guidance walks you through the process, step by step. 
+After you have completed the basic setup process for Microsoft 365 Business Premium, your next step is to set up your security protection. From turning on multifactor authentication (MFA), to protecting your admin accounts, and then taking steps to protect against threats, this guidance walks you through the process, step by step. 
 
 1. [Turn on MFA](m365bp-turn-on-mfa.md).
 2. [Protect your admin accounts](m365bp-protect-admin-accounts.md).
