@@ -79,9 +79,13 @@ We already implement multiple forms of protection to help prevent customers from
 
 ## Microsoft 365 Copilot and the EU Data Boundary
 
-Microsoft 365 Copilot doesn't change existing data processing and residency commitments that are applicable to Microsoft 365 tenants. Microsoft 365 Copilot calls to the LLM are routed to the closest data centers in the region, but also can call into other regions where capacity is available during high utilization periods.
+Microsoft 365 Copilot calls to the LLM are routed to the closest data centers in the region, but also can call into other regions where capacity is available during high utilization periods.
 
 For European Union (EU) users, we have additional safeguards to comply with the [EU Data Boundary](/privacy/eudb/eu-data-boundary-learn). EU traffic stays within the EU Data Boundary while worldwide traffic can be sent to the EU and other countries or regions for LLM processing.
+
+## Microsoft 365 Copilot and data residency
+
+Customers with the [Advanced Data Residency (ADR) in Microsoft 365](/microsoft-365/enterprise/advanced-data-residency) or [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo) can purchase and enable Microsoft 365 Copilot. However, at this time, Microsoft Copilot doesn't provide data residency commitments for Microsoft 365 Copilot customer data-at-rest for Microsoft 365 Copilot customer data.
 
 ## Meeting regulatory compliance requirements
 
