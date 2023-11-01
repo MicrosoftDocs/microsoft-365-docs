@@ -40,7 +40,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 ## October 2023
 
-- **Create and manage simulations using the Graph API** in Attack simulation training. [Learn more](/graph/api-reference/v1.0/api/attacksimulationroot-post-simulation)
+- **Create and manage simulations using the Graph API** in Attack simulation training. [Learn more](/graph/api/attacksimulationroot-post-simulation)
 
 ## September 2023
 
@@ -229,3 +229,4 @@ Did you know that Microsoft Defender for Office 365 is available in two plans? [
 
 - [Microsoft 365 roadmap](https://www.microsoft.com/microsoft-365/roadmap)
 - [Microsoft Defender for Office 365 Service Description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
+
