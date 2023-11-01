@@ -55,7 +55,7 @@ This control allows you to enable or disable Copilot’s ability to access the p
 
 ### Data Security and Compliance
 
-This link navigates you to the Microsoft Purview compliance portal where you can manage sensitivity labels and configure how Microsoft 365 Copilot interacts and references protected documents. Learn more about how to protect and manage Microsoft 365 Copilot interactions with Microsoft Purview.
+This link navigates you to the Microsoft Purview compliance portal where you can manage sensitivity labels and configure how Microsoft 365 Copilot interacts and references protected documents. Learn more about [how to protect and manage Microsoft 365 Copilot interactions with Microsoft Purview](/purview/ai-microsoft-purview).
 
 ### Security Copilot
 
