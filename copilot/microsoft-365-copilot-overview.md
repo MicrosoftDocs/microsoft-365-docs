@@ -37,7 +37,7 @@ Microsoft 365 Copilot uses a combination of LLMs, a type of artificial intellige
 
 - The Microsoft 365 apps that you use every day, such as Word and PowerPoint.
 
-Microsoft 365 apps (such as Word, Excel, PowerPoint, Outlook, Teams, and Loop) operate with Copilot to support users in the context of their work. Some of these features are detailed in the following table:
+Microsoft 365 apps (such as Word, Excel, PowerPoint, Outlook, Teams, loop, and more) operate with Copilot to support users in the context of their work. Some of these features are detailed in the following table:
 
 | Microsoft 365 App | Feature | Description |
 |-----------------------|--------------------------------|---------------------------------------------------------|
@@ -54,7 +54,8 @@ Microsoft 365 apps (such as Word, Excel, PowerPoint, Outlook, Teams, and Loop) o
 |                       | Meetings                       | Users can invoke Copilot in meetings or calls within the same tenant. Copilot will use the transcript in real-time to answer questions from the user. It only uses the transcript and knows the name of the user typing the question. The user can type any question or use pre-determined prompts; however, Copilot will only answer questions related to the meeting conversation from the transcript. The user can copy/paste an answer and access Copilot after the meeting ends on the Recap page. Copilot interaction history with the user is kept for 24 hrs. |
 |                       | Business Chat                  | Allows users to access data across their Microsoft 365 Graph and leverage LLM functionality. Business chat can be accessed in Teams and when signed-in to Bing with an active directory account. |
 |                       | Whiteboard                     | Makes meetings and brainstorm sessions more creative and effective. Use natural language to ask Copilot to generate ideas, organize ideas into themes, create designs that bring ideas to life and summarize whiteboard content. |
-| OneNote               | Draft with Copilot             | Use prompts to draft plans, generate ideas, create lists, and organize information to help you easily find what you need.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| OneNote               | Draft with Copilot             | Use prompts to draft plans, generate ideas, create lists, and organize information to help you easily find what you need.  |
+| Whiteboard              | Visual collaborative canvas           | Discover new ideas, simplify organization, and speed up summarization with Copilot                                                                                                                                                                                                                                                                                                                                                                                                                    |
 
 To learn more about what's possible with Microsoft 365 Apps and Copilot, check out [Microsoft 365 AI help and learning](https://support.microsoft.com/copilot).
 
@@ -64,7 +65,7 @@ Microsoft 365 Copilot capabilities that users see in Microsoft 365 Apps and othe
 
 - **Microsoft 365 Apps** (such as Word, Excel, PowerPoint, Outlook, Teams, and Loop) operate with Microsoft 365 Copilot to support users in the context of their work. For example, Copilot in Word is designed to assist users specifically in the process of creating, understanding, and editing documents. In a similar way, Copilot in the other apps helps users in the context of their work within those apps.
 
-- **Chat** enables Microsoft 365 Copilot users to leverage cross-app intelligence, simplifying their workflow across multiple apps. Chat uses the power of the foundation LLMs, a user's organizational data, and a user's apps to generate a response. Chat is available in a range of experiences, including Teams (chat), Bing, Microsoft Edge, and the Microsoft 365 app.
+- **Microsoft 365 Chat** enables Microsoft 365 Copilot users to leverage cross-app intelligence, simplifying their workflow across multiple apps. Microsoft 365 Chat uses the power of the foundation LLMs, a user's organizational data, and a user's apps to generate a response. Microsoft 365 Chat is available in a range of experiences, including Teams (chat), Bing, Microsoft Edge, and the Microsoft 365 app.
 
 - **Microsoft Graph** has long been fundamental to Microsoft 365. It includes information about the relationships between users, activities, and your organization’s data. The Microsoft Graph API brings more context from customer signals into the prompt, such as information from emails, chats, documents, and meetings. For more information, see [Overview of Microsoft Graph](/graph/overview) and [Major services and features in Microsoft Graph](/graph/overview-major-services).
 
@@ -108,7 +109,7 @@ Microsoft 365, the Microsoft Graph, and the Semantic Index for Copilot enable an
 
 ## Availability
 
-Microsoft 365 Copilot is currently available only through the Microsoft 365 Copilot [Early Access Program](https://www.microsoft.com/microsoft-365/blog/2023/05/09/introducing-the-microsoft-365-copilot-early-access-program-and-new-capabilities-in-copilot/) (EAP), an invitation-only, worldwide preview.
+Microsoft 365 Copilot is generally available as an add-on to customers with Microsoft E3 or E5. Contact your Microsoft account team to start the purchase process.
 
 The Semantic Index will begin rolling out later this year.
 

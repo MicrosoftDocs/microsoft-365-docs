@@ -23,6 +23,8 @@ ms.custom:
 - AdminTemplateSet
 - admindeeplinkEXCHANGE
 - business_assist
+- has-azure-ad-ps-ref
+- azure-ad-ref-level-one-done
 search.appverid:
 - BCS160
 - MET150
@@ -125,7 +127,7 @@ But what if an admin simply resets the password of the shared mailbox user accou
 
 4. On the **Block sign-in** page, select **Block the user from signing in**, and then select **Save changes**.
 
-For instructions on how to block sign-in for accounts using Azure AD PowerShell (including many accounts at the same time), see [Block Microsoft 365 user accounts with PowerShell](../../enterprise/block-user-accounts-with-microsoft-365-powershell.md).
+For instructions on how to block sign-in for accounts using [Microsoft Graph PowerShell](/powershell/microsoftgraph/overview) (including many accounts at the same time), see [Block Microsoft 365 user accounts with PowerShell](../../enterprise/block-user-accounts-with-microsoft-365-powershell.md).
 
 ## Add the shared mailbox to Outlook
 
