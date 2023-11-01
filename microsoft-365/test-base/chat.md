@@ -1,6 +1,6 @@
 ---
 title: 'Test Base Chat'
-description: This is the documentation of responsible AI transparency
+description: This is the document of responsible AI transparency
 search.appverid: MET150
 author: Tinacyt
 ms.author: tinachen
