@@ -36,8 +36,6 @@ As your organization’s Microsoft 365 admin, you can turn off Copilot’s abili
 
 Microsoft 365 Copilot chat experiences in Bing, Microsoft Edge, and the Microsoft Teams app has a feature that allows Copilot to reference public web content when responding to user prompts. Allowing Microsoft 365 Copilot to reference web content enhances the end user experience and productivity with Copilot. The feature is automatically turned on when you first start using Copilot. You can turn off this feature by following these steps:
 
-There's one location where you can control the setting depending on your admin role.
-
 For Search admins and Global admins:
 
 1. In the Microsoft 365 admin center, go to **Settings** > **Search & intelligence**.
@@ -66,6 +64,12 @@ All admin setting updates may take up to 24 hours to reflect any changes.
 
 >[!NOTE]
 > This method is the only way to turn off the ability of Microsoft 365 Copilot chat experiences to access public web content. The privacy controls for connected experiences available with Microsoft 365 Apps can’t be used.
+
+## End user action required
+
+There's a separate toggle for end users to enable and disable web access for Microsoft 365 Chat, and it can be found in the Plugins menu of Microsoft 365 Chat. This toggle is initially off by default, and users will have to enable it to receive this experience.
+
+If you turn off web access from the admin center, this control is disabled. However, if you enable web access, your users must enable the toggle in their settings as well to allow web access.
 
 ## How to disable chat experiences
 
