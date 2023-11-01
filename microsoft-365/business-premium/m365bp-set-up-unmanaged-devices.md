@@ -1,5 +1,5 @@
 ---
-title: "Set up unmanaged devices overview"
+title: "Set up unmanaged devices with Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -8,7 +8,7 @@ manager: dansimp
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
-ms.date: 10/26/2023
+ms.date: 11/01/2023
 ms.localizationpriority: medium
 ms.collection: 
 - M365-Campaigns
@@ -23,11 +23,11 @@ search.appverid:
 description: "An overview of how to set up all the bring-your-own devices (BYOD) with protection against cyberattacks and other malicious threats and vulnerabilities."
 ---
 
-# Set up unmanaged (BYOD) devices
+# Set up unmanaged (BYOD) devices with Microsoft 365 Business Premium
 
 :::image type="content" source="media/mission3.png" alt-text="Diagram with Set Up Unmanaged Devices highlighted.":::
 
-Every device, whether [managed or unmanaged](m365bp-managed-unmanaged-devices.md), is a possible attack avenue into your network. Fortunately, there are steps that everyone can take to protect their devices. This article describes how to help everyone in your organization to protect their unmanaged devices (also referred to as bring-your-own devices, or BYODs). 
+Every device, whether [managed or unmanaged](m365bp-managed-unmanaged-devices.md), is a possible attack avenue into your network. Fortunately, there are steps that everyone can take to protect their devices with capabilities in Microsoft 365 Business Premium. This article describes how to help everyone in your organization to protect their unmanaged devices (also referred to as bring-your-own devices, or BYODs). 
 
 > [!NOTE]
 > This article applies primarily to unmanaged (or BYOD) devices. Guidance for protecting managed devices is available here: [Set up and secure managed devices](m365bp-protect-managed-devices.md).
