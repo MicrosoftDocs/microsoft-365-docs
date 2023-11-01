@@ -5,8 +5,8 @@ keywords: client analyzer, troubleshoot sensor, analyzer, mdeanalyzer, windows
 ms.service: microsoft-365-security
 f1.keywords:
 - NOCSH
-ms.author: macapara
-author: mjcaparas
+ms.author: dansimp
+author: dansimp
 ms.reviewer: younghree
 ms.localizationpriority: medium
 manager: dansimp
@@ -18,7 +18,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 10/27/2023
+ms.date: 11/01/2023
 ---
 
 # Run the client analyzer on Windows
@@ -33,25 +33,15 @@ You can collect the Defender for Endpoint analyzer support logs remotely using [
 
 ## Option 2: Run MDE Client Analyzer locally
 
-1. Download the [MDE Client Analyzer tool](https://aka.ms/mdatpanalyzer) or [Beta MDE Client Analyzer tool](https://aka.ms/BetaMDEAnalyzer)to the Windows machine you need to investigate.
+1. Download the [MDE Client Analyzer tool](https://aka.ms/mdatpanalyzer) or [Beta MDE Client Analyzer tool](https://aka.ms/BetaMDEAnalyzer) to the Windows device you want to investigate.
 
-   ![Downloads dialog box](media/run-analyzer-windows/image.png)
+   The file is saved to your Downloads folder by default.
 
-   The file is downloaded to the “Downloads” folder (default).
+2. Open your Downloads folder, right-click on **MDEClientAnalyzer.zip**, and then select **Properties**.
 
-   ![File has downloaded](media/run-analyzer-windows/image1.png)
+4. Extract the contents of MDEClientAnalyzer.zip to an available folder.
 
-2. Select **Show in folder**.
-
-   ![Properties highlighted](media/run-analyzer-windows/image2.png)
-
-3. Right-click on **MDEClientAnalyzer.zip**, and then select **Properties**.
-
-   ![Extract all menu option](media/run-analyzer-windows/image3.png)
-
-4. Extract the contents of MDEClientAnalyzer.zip on the machine.
-
-5. Open an elevated command line as follows:
+5. Open a command line with administrator permissions: 
 
    1. Go to **Start** and type **cmd**.
    1. Right-click **Command prompt** and select **Run as administrator**.
@@ -77,11 +67,11 @@ In addition to the previous procedure, you can also [collect the analyzer suppor
 
 ## Important points to keep in mind
 
-All the PowerShell scripts and modules included with the analyzer are Microsoft-signed. If files have been modified in any way, then the analyzer is expected to exit with the following error:
+All the PowerShell scripts and modules included with the analyzer are Microsoft-signed. If files were modified in any way, then the analyzer is expected to exit with the following error:
 
 :::image type="content" source="images/sigerror.png" alt-text="The client analyzer error" lightbox="images/sigerror.png":::
 
-If this error is shown, then the issuerInfo.txt output contains detailed information about why that happened and what file was affected:
+If you see this error, the issuerInfo.txt output contains detailed information about why this happened and the affected file:
 
 :::image type="content" source="images/issuerinfo.png" alt-text="The issuer info" lightbox="images/issuerinfo.png":::
 
