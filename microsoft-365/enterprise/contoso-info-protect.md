@@ -31,7 +31,7 @@ Contoso performed an analysis of their data and determined the following classif
 
 | Level 1: Baseline | Level 2: Sensitive | Level 3: Highly regulated |
 |:-------|:-----|:-----|
-| Data is encrypted and available only to authenticated users.<BR> <BR> Provided for all data stored on-premises and in cloud-based storage and workloads. Data is encrypted while it resides in the service and in transit between the service and client devices. <BR><BR>Examples of Level 1 data are normal business communications (email) and files for administrative, sales, and support workers. | Level 1 plus strong authentication and data loss protection.<BR> <BR> Strong authentication includes Azure AD Multi-Factor Authentication (MFA) with SMS validation. Microsoft Purview Data Loss Prevention ensures that sensitive or critical information doesn't travel outside the Microsoft cloud.<BR><BR>Examples of Level 2 data are financial and legal information and research and development data for new products. | Level 2 plus the highest levels of encryption, authentication, and auditing.<BR><BR>The highest levels of encryption for data at rest and in the cloud, compliant with regional regulations, combined with MFA with smart cards and granular auditing and alerting.<BR> <BR>Examples of Level 3 data are customer and partner personal information, product engineering specifications, and proprietary manufacturing techniques.  |
+| Data is encrypted and available only to authenticated users.<BR> <BR> Provided for all data stored on-premises and in cloud-based storage and workloads. Data is encrypted while it resides in the service and in transit between the service and client devices. <BR><BR>Examples of Level 1 data are normal business communications (email) and files for administrative, sales, and support workers. | Level 1 plus strong authentication and data loss protection.<BR> <BR> Strong authentication includes Microsoft Entra multifactor authentication (MFA) with SMS validation. Microsoft Purview Data Loss Prevention ensures that sensitive or critical information doesn't travel outside the Microsoft cloud.<BR><BR>Examples of Level 2 data are financial and legal information and research and development data for new products. | Level 2 plus the highest levels of encryption, authentication, and auditing.<BR><BR>The highest levels of encryption for data at rest and in the cloud, compliant with regional regulations, combined with MFA with smart cards and granular auditing and alerting.<BR> <BR>Examples of Level 3 data are customer and partner personal information, product engineering specifications, and proprietary manufacturing techniques.  |
 ||||
 
 ## Contoso information policies
@@ -73,9 +73,9 @@ Contoso followed these steps to prepare Microsoft 365 for enterprise for their i
 
 As part of their rollout of Exchange Online and SharePoint, Contoso configured the following set of Conditional Access policies and applied them to the appropriate groups:
 
-- [Managed and unmanaged application access on devices policies](../security/office-365-security/identity-access-policies.md)
-- [Exchange Online access policies](../security/office-365-security/secure-email-recommended-policies.md)
-- [SharePoint access policies](../security/office-365-security/sharepoint-file-access-policies.md)
+- [Managed and unmanaged application access on devices policies](../security/office-365-security/zero-trust-identity-device-access-policies-common.md)
+- [Exchange Online access policies](../security/office-365-security/zero-trust-identity-device-access-policies-exchange.md)
+- [SharePoint access policies](../security/office-365-security/zero-trust-identity-device-access-policies-sharepoint.md)
 
 Here's resulting set of Contoso policies for information protection.
 

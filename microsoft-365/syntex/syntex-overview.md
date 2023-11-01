@@ -32,7 +32,7 @@ With Syntex, you can automate your content-based processes—capturing the infor
 
 You can dive deeper into your content to truly understand it, and you can turn the information into meaningful insights that your organization can use to make informed business decisions.
 
-## Explore scenarios and use cases
+## Scenarios and use cases
 
 :::row:::
    :::column span="":::
@@ -53,7 +53,7 @@ You can dive deeper into your content to truly understand it, and you can turn t
 
 :::row:::
    :::column span="3":::
-      With Syntex, you can automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, and correspondence. You can do all these tasks quicker, more consistently, and with fewer errors in Syntex.
+      With Syntex, you can use content assembly to automatically generate standard repetitive business documents, such as contracts, statements of work, service agreements, letters of consent, and correspondence. You can do all these tasks quicker, more consistently, and with fewer errors in Syntex.
    :::column-end:::
    :::column span="":::
       ![Image of generic document icon.](../media/content-understanding/document-assembly-image.png)
@@ -187,7 +187,13 @@ The content query feature in Syntex lets you perform specific metadata-based que
 This feature is useful when you have a specific piece of information you want to search for, such as when a document was last modified, a specific person associated with a file, or a specific file type.
 --->
 
-### Content processing
+### Merge and extract PDFs
+
+Quickly combine multiple PDF files into a single PDF file, or split a larger PDF file into multiple smaller PDF files to better organize the information you want to view or share with others.
+
+[Learn more about merging and extracting PDF files in Microsoft Syntex.](merge-extract-pdf.md)
+
+### Processing rules
 
 Syntex lets you build simple rules-driven actions in document libraries based on metadata. From a document library, you can create rules to automate tasks such as sending a notification when metadata changes in a file, when a new file is created in the library, or when files are moved or copied based on metadata extracted by Syntex models.
 

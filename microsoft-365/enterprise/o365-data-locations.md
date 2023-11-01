@@ -25,6 +25,9 @@ description: "Determine where your Microsoft 365 customer data is stored worldwi
 # Where your Microsoft 365 customer data is stored
 
 > [!NOTE]
+> The **Israel** local data center region launched on November 1, 2023. If your organization requires the migration of your Microsoft 365 customer data to Israel, and data residency commitments for Israel, see [Advanced Data Residency](advanced-data-residency.md).
+
+> [!NOTE]
 > The **Italy** local data center region launched on October 3, 2023. If your organization requires the migration of your Microsoft 365 customer data to Italy, and data residency commitments for Italy, see [Advanced Data Residency](advanced-data-residency.md).
 
 > [!NOTE]
@@ -50,7 +53,7 @@ See the following links to understand how you can determine current data residen
   - Records management
   - Sensitivity labels  
   
-- Azure Active Directory [Data Location](m365-dr-workload-other.md#azure-active-directory-aad)
+- Microsoft Entra ID [Data Location](m365-dr-workload-other.md#azure-active-directory-aad)
 - Whiteboard [Data Location](m365-dr-workload-other.md#whiteboard)
 - Forms [Data Location](m365-dr-workload-other.md#forms)
 - Intune [Data Location](m365-dr-workload-other.md#intune)
