@@ -3,9 +3,6 @@ title: Troubleshoot kernel extension issues in Microsoft Defender for Endpoint o
 description: Troubleshoot kernel extension-related issues in Microsoft Defender for Endpoint on macOS.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, kernel, extension
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
@@ -18,7 +15,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 11/01/2023
 ---
 
 # Troubleshoot kernel extension issues in Microsoft Defender for Endpoint on macOS
