@@ -69,7 +69,7 @@ See the instructions corresponding to the management tool that you used to deplo
 
 ## Manual deployment
 
-If less than 30 minutes have passed since the product was installed, navigate to **System Preferences** \> **Security & Privacy**, where you have to **Allow** system software from developers "Microsoft Corporation".
+If less than 30 minutes have passed since the product was installed, navigate to **System Settings** \> **Privacy & Security**, where you have to **Allow** system software from developers "Microsoft Corporation".
 
 If you don't see this prompt, it means that 30 or more minutes have passed, and the kernel extension still not been approved to run on your device:
 
@@ -89,7 +89,7 @@ In this case, you need to perform the following steps to trigger the approval fl
     Diagnostics for /Library/Extensions/wdavkext.kext:
     ```
 
-2. Open **System Preferences** \> **Security & Privacy** from the menu. (Close it first, if it's opened.)
+2. Open **System Settings** \> **Privacy & Security** from the menu. (Close it first, if it's opened.)
 
 3. **Allow** system software from developers "Microsoft Corporation"
 
