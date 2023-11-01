@@ -25,3 +25,5 @@
           href: /microsoft-365/admin/manage/manage-plugins-for-copilot-in-integrated-apps
         - name: Manage Microsoft 365 Copilot with the Copilot page
           href: microsoft-365-copilot-page.md
+        - name: Manage public web access
+          href: manage-public-web-access.md
