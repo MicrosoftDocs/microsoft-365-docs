@@ -10,13 +10,10 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 description: "Learn how Microsoft 365 Copilot uses data and how it stores and protects that data."
 hideEdit: true
-ms.date: 09/26/2023
+ms.date: 11/01/2023
 ---
 
 # Data, Privacy, and Security for Microsoft 365 Copilot
-
-> [!IMPORTANT]
-> The information in this article only applies to the [Microsoft 365 Copilot Early Access Program](microsoft-365-early-access-program.yml), an invite-only paid preview program for commercial customers. Details are subject to change.
 
 Microsoft 365 Copilot is a sophisticated processing and orchestration engine that provides AI-powered productivity capabilities by coordinating the following components:
 
