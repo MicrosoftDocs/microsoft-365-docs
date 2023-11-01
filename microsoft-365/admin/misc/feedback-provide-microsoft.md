@@ -93,7 +93,7 @@ Your feedback will move to this status when it’s in the process of being addre
 Your feedback will move to this status when we can’t take any next steps with it because it was irrelevant to our products or violates our code of conduct. Typically the Microsoft response will clarify why it was closed.
 
 **Already supported**  We believe this already exists in the product.
-Your feedback would move to this status when the product team has reviewed your feedback and determined that there's either a workaround to the issue you're facing or your ask is already implemented in the product. Typically the Microsoft response will contain more information on what you can do to self-help.
+Your feedback would move to this status when the product team has reviewed your feedback and determined that there's either a workaround to the issue you're facing or your request is already implemented in the product. Typically the Microsoft response will contain more information on what you can do to self-help.
 
 **Great News! We’ve added this**  This suggestion has been added.
 When the product team has implemented and has released or is releasing a new build with the improvement, your feedback would move to this status. Typically the Microsoft response would contain relevant instructions on how to access new features or fixes.
