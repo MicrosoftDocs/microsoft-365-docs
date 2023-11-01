@@ -8,7 +8,7 @@ manager: dansimp
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
-ms.date: 05/02/2023
+ms.date: 11/01/2023
 ms.localizationpriority: medium
 ms.collection: 
 - M365-Campaigns
@@ -27,7 +27,7 @@ description: "Learn how to secure managed devices from security threats and cybe
 
 :::image type="content" source="media/mission6.png" alt-text="Diagram with Set Up and Secure Managed Devices highlighted.":::
 
-This article describes how to onboard devices to [Microsoft Defender for Business](../security/defender-business/mdb-overview.md) and protect devices in your organization. Defender for Business capabilities, now included in Microsoft 365 Business Premium, can help ensure that your organization's devices are protected from ransomware, malware, phishing, and other threats. 
+Microsoft 365 Business Premium includes advanced protection for all your organization's devices. Microsoft 365 Business Premium includes [Microsoft Defender for Business](../security/defender-business/mdb-overview.md) to help protect devices from ransomware, malware, phishing, and other threats. 
 
 > [!NOTE]
 > This article applies primarily to managed devices. Guidance for protecting unmanaged devices is available here: [Set up unmanaged (BYOD) devices](m365bp-set-up-unmanaged-devices.md).

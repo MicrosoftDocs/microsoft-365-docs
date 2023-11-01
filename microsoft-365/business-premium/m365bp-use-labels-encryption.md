@@ -1,5 +1,5 @@
 ---
-title: "Send encrypted email"
+title: "Send encrypted email with Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -8,7 +8,7 @@ manager: dansimp
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-business
-ms.date: 09/15/2022
+ms.date: 11/01/2023
 ms.localizationpriority: medium
 ms.collection: 
 - M365-Campaigns
@@ -22,7 +22,7 @@ search.appverid:
 description: "Learn how to send encrypted email using Outlook."
 ---
 
-# Encrypt or label your sensitive email in Microsoft 365
+# Encrypt or label your sensitive email in Microsoft 365 Business Premium
 
 Your data and information is important, and often, confidential. This article describes how to help protect sensitive information by using sensitivity labels. Sensitivity labels can help ensure that email recipients treat the information with the right level of security.
 

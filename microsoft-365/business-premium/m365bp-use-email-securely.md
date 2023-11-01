@@ -1,5 +1,5 @@
 ---
-title: "Use email securely"
+title: "Use email securely with Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -8,7 +8,7 @@ manager: dansimp
 audience: Admin
 ms.topic: conceptual
 ms.service: microsoft-365-business
-ms.date: 05/02/2023
+ms.date: 11/01/2023
 ms.localizationpriority: medium
 ms.collection: 
 - M365-Campaigns
@@ -23,11 +23,13 @@ search.appverid:
 description: "Know what to watch for in email. Train your team to guard against malware, phishing, and other malicious cyberattacks, using the cybersecurity tools included with Microsoft 365 Business Premium."
 ---
 
-# Use email securely
+# Use email securely with Microsoft 365 Business Premium
 
 :::image type="content" source="media/mission4.png" alt-text="Diagram with Use email securely highlighted.":::
 
-As you probably already know, email can contain malicious attacks cloaked as harmless communications. Email systems are especially vulnerable, because email is handled by everyone in the organization, and safety relies on people making consistently good decisions with those communications. This article describes how to help everyone in your organization to keep your information safe from attackers.
+Microsoft 365 Business Premium includes features that help protect against threats. However, users play a role in using email securely, too. Email can contain malicious attacks that are cloaked as harmless communications. Email systems are especially vulnerable, because email is handled by everyone in the organization, and safety relies on people making consistently good decisions with those communications. 
+
+This article describes how to help everyone in your organization to keep your information safe from attackers.
 
 Your steps are to:
 

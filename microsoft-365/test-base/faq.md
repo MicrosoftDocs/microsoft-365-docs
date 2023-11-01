@@ -85,7 +85,7 @@ While for functional tests, you can specify whether a reboot is required for eac
 
 **Q: What Windows versions do you support?**
 
-**A:** We currently support Windows 10 clients, Windows Server 2016, Windows Server 2016 Core version, Windows Server 2019, and Windows Server 2019 Core version.
+**A:** We currently support Windows 11 clients, Windows 10 clients, Windows Server 2016, Windows Server 2016 Core version, Windows Server 2019, and Windows Server 2019 Core version.
 
 **Q: What is the difference between Security Update tests and Feature Update tests?**
 
