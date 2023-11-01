@@ -98,7 +98,7 @@ To ensure data quality, we perform daily data validation checks for the past thr
 
 ## User activity table
 
-| **Item**                                       | **Description**                                                                                                                               |
+| Item | Description |
 |------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
 | User name                                      | The user's principal name.                                                                                                                    |
 | Display name                                   | The full name of the user.                                                                                                                    |
