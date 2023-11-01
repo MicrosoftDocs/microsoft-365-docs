@@ -48,13 +48,13 @@ You can collect the Defender for Endpoint analyzer support logs remotely using [
 
 6. Type the following command and then press **Enter**:
 
-   ```dos
+   ```cmd
    *DrivePath*\MDEClientAnalyzer.cmd
    ```
 
    Replace *DrivePath* with the path where you extracted MDEClientAnalyzer, for example:
 
-   ```dos
+   ```cmd
    C:\Work\tools\MDEClientAnalyzer\MDEClientAnalyzer.cmd
    ```
 
