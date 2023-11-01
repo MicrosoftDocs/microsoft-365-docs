@@ -93,3 +93,5 @@
   items:
   - name: Frequently Asked Questions
     href: faq.md
+  - name: Test Base Chat
+    href: chat.md
