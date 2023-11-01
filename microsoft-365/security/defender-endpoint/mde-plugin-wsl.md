@@ -120,14 +120,15 @@ To run the connectivity test, please follow the below instructions:
 
 ## Verifying functionality and SOC analyst experience
 
-After installing the plug-in, the subsystem and all its running containers will be onboarded to the Microsoft 365 Defender portal at <https://security.microsoft.com>.
+After installing the plug-in, the subsystem and all its running containers are onboarded to the [Microsoft 365 Defender portal](https://security.microsoft.com).
 
-- Sign into the portal and open the “Devices” view
-- Filter using the tag “WSL2”:
+1. Sign into the portal and open the **Devices** view.
+
+2. Filter using the tag **WSL2**. 
 
   ![Screenshot showing device inventory filter](media/mdeplugin-wsl/device-inventory-filter.png)
 
-This shows you all WSL instances in your environment with an active MDE plug-in for WSL. The instances represent all distributions running inside WSL on a given host – the hostname of the “device” matches that of the Windows host. However, it's represented as a Linux device.
+You can see all WSL instances in your environment with an active Defender for Endpoint plug-in for WSL. The instances represent all distributions running inside WSL on a given host – the hostname of the “device” matches that of the Windows host. However, it's represented as a Linux device.
 
 Open the device page. In the Overview pane, you'll see that the “device” is “Hosted On” – this is a link that will allow you to understand this machine is running on a Windows host and pivot to the host for further investigation and/or response.
 
