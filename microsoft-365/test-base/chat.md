@@ -1,6 +1,6 @@
 ---
 title: 'Test Base Chat'
-description: This is the responsible AI transparency documentation
+description: This is the documentation of responsible AI transparency
 search.appverid: MET150
 author: Tinacyt
 ms.author: tinachen
@@ -18,7 +18,7 @@ f1.keywords: NOCSH
 
 # Test Base Chat
 
-Test Base Chat, a new feature leveraging the power of AI, will serve as your personal support guide throughout your use of Test Base. Tired of manually searching through documentation or the web to find answers to your application testing questions? Simply initiate a conversation with Test Base Chat anywhere within Test Base to pose your queries. You'll receive tailored step-by-step guidance, complete with links to relevant pages in our [Test Base for Microsoft 365 documentation](/). This feature is designed to save you time and eliminate any inconvenience.
+Test Base Chat, a new feature leveraging the power of AI, serves as your personal support guide throughout your use of Test Base. Tired of manually searching through documentation or the web to find answers to your application testing questions? Simply initiate a conversation with Test Base Chat anywhere within Test Base to pose your queries. You'll receive tailored step-by-step guidance, complete with links to relevant pages in our [Test Base for Microsoft 365 documentation](/). This feature is designed to save you time and eliminate any inconvenience.
 
 You can open the **Test Base Chat** pane via the icon at the right-hand bottom.
 
