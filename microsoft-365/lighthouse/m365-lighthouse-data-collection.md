@@ -51,7 +51,9 @@ This information isn't shared with other parties, and is protected by strict pri
 ## Data collection for MSP customers
 
 Lighthouse collects data from customer tenants through a service plan that enables it to access the customer’s data with their consent. The MSP must also have delegated access to the customer’s tenant delegate admin relationship.
+
 The data collected from customer tenants helps Lighthouse provide better security and performance for those tenants. For example, by collecting device information, Lighthouse can help the MSP identify and resolve issues affecting the customer’s devices, such as malware infections, hardware failures, or software updates. Microsoft respects the privacy and security of the data collected from customer tenants. Lighthouse uses encryption, access control, auditing, and retention policies to protect the data from unauthorized or inappropriate use or disclosure.
+
 The following table summarizes the types of data that Lighthouse collects from customer tenants, where it collects it from, what scope it covers, and what purpose it serves.
 
 | Data category | Data source | Data scope | Data purpose |
@@ -68,6 +70,7 @@ The following table summarizes the types of data that Lighthouse collects from c
 ## Data not collected
 
 Lighthouse empowers MSPs to grow, manage, and secure their Microsoft 365 customers more effectively and efficiently. To do this, Lighthouse collects data only for specific purposes, such as enhancing the service reliability, maintainability, and scalability of Microsoft 365 applications and services. Microsoft also complies with strict standards for handling the data securely and responsibly.
+
 Lighthouse will never collect data that isn’t necessary or relevant to its service. Lighthouse won't do anything to compromise the security or integrity of its MSPs and customers. Following are examples of data that Lighthouse will never collect:
 
 - **Biometric data:** Data that identifies or verifies the identity of MSPs and customers based on their physical or behavioral characteristics, such as fingerprints, facial recognition, voice recognition, or iris scans.
