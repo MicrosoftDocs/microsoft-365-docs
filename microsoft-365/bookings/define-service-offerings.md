@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection:
 - Tier1
 - scotvorg
-ms.assetid: 4a1c391e-524f-48e0-bef8-185df3a9634b
+- essentials-manage
 description: "Instructions for entering service offerings information, including service name, description, location, duration, and pricing. You can also tag the employees who are qualified to provide the service."
 ---
 
@@ -27,9 +27,15 @@ You can also add customized information and URLs to the email confirmation and r
 
 ## Steps
 
+Here are the steps to add a new service. 
+>[!NOTE]
+> Changes to business-related settings, like enabling or disabling one-time passwords (OTP) or sending meeting invites, may take up to 10 minutes to apply.
+
 1. In Microsoft 365, select the App launcher, and then select **Bookings**.
 
 2. Go to **Your calendar** > **Services** and select **Add new service**.
+
+    The number of services should be limited to 50.
 
 3. On the **Basic details** page, add your selections.
 
@@ -77,9 +83,9 @@ You can also add customized information and URLs to the email confirmation and r
      - **Cancel booking** This cancels the booking and removes it from the staff's calendar.
      - **New booking** This option brings the user to the Self-Service page with all services and staff listed, for scheduling a new booking.
 
-        :::image type="content" source="media/bookings-manage-booking-button.jpg" alt-text="The Manage Bookings button in Bookings.":::
+       :::image type="content" source="media/bookings-manage-booking-button.jpg" alt-text="The Manage Bookings button in Bookings.":::
 
-      We only recommend leaving this setting enabled if you're comfortable with customers accessing the Self-Service page.
+       We only recommend leaving this setting enabled if you're comfortable with customers accessing the Self-Service page.
 
    - Disabled:
 
@@ -94,35 +100,35 @@ You can also add customized information and URLs to the email confirmation and r
     - **Single staff** When this option is selected, the booking will be scheduled with a single staff member.
     - **Multiple staff** This feature allows you to create a service with multiple staff members. The booking will be scheduled with all of the assigned staff members of the service. You can refer to this service as N:1 booking service.
 
-> [!NOTE]
-> For Multiple staff, you can only create a booking when all assigned staff members are available to attend.
+    > [!NOTE]
+    > For Multiple staff, you can only create a booking when all assigned staff members are available to attend.
 
 6. **Custom fields** can be useful when collecting information that is needed every time the specific appointment is booked. Examples include insurance provider prior to a clinic visit, loan type for loan consultations, major of study for academic advising, or applicant ID for candidate interviews. These fields will appear on the Booking page when your customers book appointments with you and your staff.
 
-    - Customer email, phone number, address, and notes are non-removable fields, but you can make them optional by deselecting **Required** beside each field.
+    Customer email, phone number, address, and notes are non-removable fields, but you can make them optional by deselecting **Required** beside each field.
 
 7. On the **Notifications** page, you can send SMS messages, set up reminders, and send notifications.
 
-> [!NOTE]
-> Text message notifications in Bookings requires a Teams Premium license.
+    > [!NOTE]
+    > Text message notifications in Bookings requires a Teams Premium license.
 
-**Enable text message notifications for your customer** If selected, SMS messages are sent to the customer, but only if they opt in.
+    **Enable text message notifications for your customer** If selected, SMS messages are sent to the customer, but only if they opt in.
 
-**Reminders and notifications** are sent out to customers, staff members, or both, at a specified time before the appointment. Multiple messages can be created for each appointment, according to your preference.
+    **Reminders and notifications** are sent out to customers, staff members, or both, at a specified time before the appointment. Multiple messages can be created for each appointment, according to your preference.
 
-   :::image type="content" source="media/bookings-remind-confirm-2.png" alt-text="A confirmation email from Bookings.":::
+    :::image type="content" source="media/bookings-remind-confirm-2.png" alt-text="A confirmation email from Bookings.":::
 
-   You can include any additional text you would like here, such as information about rescheduling or what customers should bring for the appointment. The following is an example of customized text added to the original confirmation email, seen in the **Additional information for Email Confirmation** field:
+    You can include any additional text you would like here, such as information about rescheduling or what customers should bring for the appointment. The following is an example of customized text added to the original confirmation email, seen in the **Additional information for Email Confirmation** field:
 
-   :::image type="content" source="media/bookings-additional-info.jpg" alt-text="Additional information in a Bookings email." lightbox="media/bookings-additional-info.jpg":::
+    :::image type="content" source="media/bookings-additional-info.jpg" alt-text="Additional information in a Bookings email." lightbox="media/bookings-additional-info.jpg":::
   
-  Opt-in box on the manual booking and Self-Service Page:
+    Opt-in box on the manual booking and Self-Service Page:
 
-:::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="The opt-in box in Bookings.":::
+    :::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="The opt-in box in Bookings.":::
 
-  Text message notifications will look like the following (note that SMS notifications are currently only available in North America):
+    Text message notifications will look like the following (note that SMS notifications are currently only available in North America):
 
-:::image type="content" source="media/bookings-text-notifications.jpg" alt-text="A text notification from Bookings":::
+    :::image type="content" source="media/bookings-text-notifications.jpg" alt-text="A text notification from Bookings":::
 
 8. There are two more controls available to ease your Service creation journey:
     - **Default scheduling options** is on by default. Turn the toggle off if you want to customize how customers book a particular staff member.

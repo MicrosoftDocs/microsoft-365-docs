@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: macapara
-author: mjcaparas
+ms.author: dansimp
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -22,7 +22,7 @@ ms.topic: conceptual
 search.appverid: 
   - MOE150
   - MET150
-ms.date: 02/16/2021
+ms.date: 09/21/2023
 ---
 
 # Microsoft 365 Defender preview features
@@ -53,7 +53,7 @@ When working with features in public preview, these features:
 
 ## Required permissions
 
-Accounts assigned the following Azure Active Directory (Azure AD) roles can turn on Microsoft 365 Defender Preview features:
+Accounts assigned the following Microsoft Entra roles can turn on Microsoft 365 Defender Preview features:
 
 - Global administrator
 - Security administrator

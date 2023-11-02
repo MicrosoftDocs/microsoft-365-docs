@@ -18,7 +18,7 @@ Understanding how to adjust your theme in Microsoft Defender Threat Intelligence
 
 ## Prerequisites
 
-- An Azure Active Directory or personal Microsoft account. [Login or create an account](https://signup.microsoft.com/)
+- A Microsoft Entra ID or personal Microsoft account. [Login or create an account](https://signup.microsoft.com/)
 - A Microsoft Defender Threat Intelligence (Defender TI) Premium license.
 
     > [!NOTE]

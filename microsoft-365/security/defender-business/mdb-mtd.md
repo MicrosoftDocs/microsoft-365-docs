@@ -47,7 +47,7 @@ The following table summarizes the capabilities that are included in mobile thre
 > 
 > 2. Intune is required to configure or manage an allow list of root certification authority and private root certification authority certificates.
 > 
-> 3. Intune is included in [Microsoft 365 Business Premium](../../business-premium/index.md). Intune can be added on to Defender for Business.
+> 3. Intune is included in [Microsoft 365 Business Premium](../../business-premium/m365bp-overview.md). Intune can be added on to Defender for Business.
 > 
 > 4. See [Prerequisites for the Microsoft Tunnel in Intune](/mem/intune/protect/microsoft-tunnel-prerequisites).
 >

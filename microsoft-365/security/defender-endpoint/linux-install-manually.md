@@ -4,9 +4,6 @@ ms.reviewer:
 description: Describes how to deploy Microsoft Defender for Endpoint on Linux manually from the command line.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon linux 2
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
@@ -15,10 +12,11 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier3
+- mde-linux
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 04/04/2023
+ms.date: 10/30/2023
 ---
 
 # Deploy Microsoft Defender for Endpoint on Linux manually
@@ -83,8 +81,9 @@ In order to preview new features and provide early feedback, it is recommended t
 
   |Distro & version|Package|
   |---|---|
-  |For RHEL/Centos/Oracle 8.0-8.7|<https://packages.microsoft.com/config/rhel/8/prod.repo>|
+  |For RHEL/Centos/Oracle 8.0-8.8|<https://packages.microsoft.com/config/rhel/8/prod.repo>|
   |For RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2 |<https://packages.microsoft.com/config/rhel/7.2/prod.repo>|
+  |For Amazon Linux 2023 |<https://packages.microsoft.com/config/amazonlinux/2023/prod.repo>|
   |For Fedora 33|<https://packages.microsoft.com/config/fedora/33/prod.repo>|
   |For Fedora 34|<https://packages.microsoft.com/config/fedora/34/prod.repo>|
 
@@ -114,7 +113,7 @@ In order to preview new features and provide early feedback, it is recommended t
 - Install the Microsoft GPG public key:
 
   ```bash
-  sudo rpm --import http://packages.microsoft.com/keys/microsoft.asc
+  sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
   ```
 
 ### SLES and variants
@@ -140,7 +139,7 @@ In order to preview new features and provide early feedback, it is recommended t
 - Install the Microsoft GPG public key:
 
   ```bash
-  sudo rpm --import http://packages.microsoft.com/keys/microsoft.asc
+  sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
   ```
 
 ### Ubuntu and Debian systems
@@ -200,7 +199,11 @@ In order to preview new features and provide early feedback, it is recommended t
   ```
 
 - Install the Microsoft GPG public key:
-
+  - For Debian 12
+  ```bash
+  curl -sSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /usr/share/keyrings/microsoft-prod.gpg > /dev/null
+  ```
+  - For others
   ```bash
   curl -sSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/microsoft.gpg > /dev/null
   ```

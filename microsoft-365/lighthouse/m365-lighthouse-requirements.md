@@ -29,7 +29,7 @@ Microsoft 365 Lighthouse is a portal that helps Managed Service Providers (MSPs)
 Lighthouse is available to partners enrolled in the Cloud Solution Provider (CSP) program, including both Direct-Bill and Indirect Resellers.  
 
 > [!NOTE]
-> Only MSPs are required to enroll in the CSP program; the customers they manage do not need to enroll in the CSP program.
+> Only MSPs are required to enroll in the CSP program; the customers they manage don't need to enroll in the CSP program.
 
 In addition, each MSP customer tenant must meet the following requirements to be actively monitored and managed in Lighthouse:
 
@@ -53,7 +53,7 @@ To view customer tenant devices on the device management pages, an MSP must:
 
 ## Requirements for enabling user management
 
-For customer data to show up in reports on user management pages, including Risky users, Multifactor authentication, and Password reset, customer tenants must have licenses for Azure Active Directory Premium P1 or later. Azure AD Premium P1 is included with Microsoft 365 Business Premium and Microsoft 365 E3. Azure AD Premium P2 is included with Microsoft 365 E5.
+For customer data to show up in reports on user management pages, including Risky users, Multifactor authentication, and Password reset, customer tenants must have licenses for Microsoft Entra ID P1 or later. Microsoft Entra ID P1 is included with Microsoft 365 Business Premium and Microsoft 365 E3. Microsoft Entra ID P2 is included with Microsoft 365 E5.
 
 ## Requirements for enabling threat management
 

@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 ms.collection:
 - Tier1
 - scotvorg
-ms.assetid: e3c0a4ee-e3d8-4fbe-bd8f-16d1c712d1f4
+- essentials-manage
 description: "Schedule office closures and employee time off from the Bookings calendar so that employees are marked as unavailable for bookings during the specified times."
 ---
 
@@ -43,9 +43,9 @@ Schedule business closures or employee off.
 
 1. Select **Save**.
 
-When a customer attempts to schedule service on a day the office is closed, they'll see a message on the booking page.
+    When a customer attempts to schedule service on a day the office is closed, they'll see a message on the booking page.
 
-   ![Image of example message that customer sees when trying to book during time off.](../media/bookings-timeoff-message.png)
+    ![Image of example message that customer sees when trying to book during time off.](../media/bookings-timeoff-message.png)
 
 ## Schedule employee time off
 

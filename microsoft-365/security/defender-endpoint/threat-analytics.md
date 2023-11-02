@@ -18,6 +18,7 @@ ms.collection:
   - m365-security
   - m365initiative-defender-endpoint
   - tier1
+  - mde-edr
 ms.topic: conceptual
 ms.subservice: mde
 ms.date: 12/18/2020
@@ -54,7 +55,7 @@ Watch this short video to learn more about how threat analytics can help you tra
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bw1f]
 
 ## Required roles and permissions
-The following table outlines the roles and permissions required to access Threat Analytics. Roles defined in the table below refer to custom roles in individual portals and are not connected to global roles in Azure AD, even if similarly named.
+The following table outlines the roles and permissions required to access Threat Analytics. Roles defined in the table below refer to custom roles in individual portals and are not connected to global roles in Microsoft Entra ID, even if similarly named.
 
 | **One of the following roles are required for Microsoft 365 Defender**  | **One of the following roles are required for Defender for Endpoint**  | **One of the following roles are required for Defender for Office 365** | **One of the following roles are required for Defender for Cloud Apps** | 
 |---------|---------|---------|---------|

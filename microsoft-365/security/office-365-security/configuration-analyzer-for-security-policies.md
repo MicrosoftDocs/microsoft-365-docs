@@ -22,7 +22,7 @@ ms.service: microsoft-365-security
 ms.date: 6/14/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
@@ -57,11 +57,11 @@ The Standard and Strict policy setting values that are used as baselines are des
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
   - [Microsoft 365 Defender role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac): **configuration/security (manage)** or **configuration/security (read)**. Currently, this option requires membership in the Microsoft 365 Defender Preview program.
-  - [Email & collaboration RBAC in the Microsoft 365 Defender portal](mdo-portal-permissions.md):
+  - [Email & collaboration permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md):
     - _Use the configuration analyzer and update the affected security policies_: Membership in the **Organization Management** or **Security Administrator** role groups.
     - _Read-only access to the configuration analyzer_: Membership in the **Global Reader** or **Security Reader** role groups.
   - [Exchange Online RBAC](/Exchange/permissions-exo/permissions-exo): Membership in the **View-Only Organization Management** role group gives read-only access to the configuration analyzer.
-  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
+  - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 ## Use the configuration analyzer in the Microsoft 365 Defender portal
 
@@ -118,6 +118,9 @@ If you select a row and click **View policy** you're taken to the details flyout
 After you automatically or manually update the setting, click **Refresh** to see the reduced number of recommendations and the removal of the updated row from the results.
 
 ### Configuration drift analysis and history tab in the configuration analyzer
+
+> [!NOTE]
+> [Unified Auditing](/purview/audit-log-enable-disable) needs to be enabled for drift analysis. 
 
 This tab allows you to track the changes that have been made to your security policies and how those changes compare to the Standard or Strict settings. By default, the following information is displayed:
 

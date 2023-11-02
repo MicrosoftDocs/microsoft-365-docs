@@ -20,7 +20,7 @@ ms.subservice: mdo
 ms.service: microsoft-365-security
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
@@ -52,7 +52,8 @@ When a user account is compromised, alerts are triggered. And in some cases, tha
 > You must have appropriate permissions to perform the following tasks. See [Required permissions to use AIR capabilities](air-about.md#required-permissions-to-use-air-capabilities).
 
 Watch this short video to learn how you can detect and respond to user compromise in Microsoft Defender for Office 365 using Automated Investigation and Response (AIR) and compromised user alerts.
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWAl83]
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWAl83]
 
 ### View and investigate restricted users
 
@@ -64,7 +65,7 @@ You have a few options for navigating to a list of restricted users. For example
 
    :::image type="content" source="../../media/m365-sc-alerts-page-with-restricted-user.png" alt-text="The Alerts page in the Microsoft 365 Defender portal filtered for restricted users" lightbox="../../media/m365-sc-alerts-page-with-restricted-user.png":::
 
-3. If you select the entry by clicking on the name, a **User restricted from sending email** page opens with additional details for you to review. Next to the **Manage alert** button, you can click ![More options icon.](../../media/m365-cc-sc-more-actions-icon.png) **More options** and then select **View restricted user details** to go to the **Restricted users** page, where you can [release the restricted user](removing-user-from-restricted-users-portal-after-spam.md).
+3. If you select the entry by clicking on the name, a **User restricted from sending email** page opens with additional details for you to review. Next to the **Manage alert** button, you can click :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More options** and then select **View restricted user details** to go to the **Restricted users** page, where you can [release the restricted user](outbound-spam-restore-restricted-users.md).
 
   :::image type="content" source="../../media/m365-sc-alerts-user-restricted-from-sending-email-page.png" alt-text="The User restricted from sending email page" lightbox="../../media/m365-sc-alerts-user-restricted-from-sending-email-page.png":::
 
