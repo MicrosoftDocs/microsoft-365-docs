@@ -57,19 +57,16 @@ MFA is an important first step in securing your company, and security defaults m
 > [!IMPORTANT]
 > You must be a Security Administrator, Conditional Access administrator, or Global Administrator to perform this task.
 
-1. Go to the Azure portal ([https://portal.azure.com/](https://portal.azure.com/)) and sign in.
+1. Go to the Microsoft Entra admin center ([https://entra.microsoft.com/](https://entra.microsoft.com/)) and sign in.
 
-2. Under **Manage Microsoft Entra ID**, select **View**.
+2. Under **Microsoft Entra ID (Azure AD)**, select **Go to Microsoft Entra ID**.
 
-   :::image type="content" source="../security/defender-business/media/mdb-manage-azuread.png" alt-text="Screenshot showing the View button under Manage Microsoft Entra ID." lightbox="../security/defender-business/media/mdb-manage-azuread.png":::
+3. Select **Properties**, scroll down, and then select the **Manage security defaults** link.
 
-3. In the navigation pane, select **Properties**, and then select **Manage security defaults**.
+4. On the right side of the screen, in the **Security defaults** pane, see whether security defaults are turned on (**Enabled**) or off (**Disabled**). To turn security defaults on, use the drop-down menu to select **Enabled**. Then select **Save**.
 
-   :::image type="content" source="../security/defender-business/media/mdb-azuread-properties.png" alt-text="Screenshot showing Properties and Manage Security Defaults for Microsoft Entra ID." lightbox="../security/defender-business/media/mdb-azuread-properties.png":::
-
-4. On the right side of the screen, in the **Security defaults** pane, see whether security defaults are turned on (**Enabled**) or off (**Disabled**). To turn security defaults on, use the drop-down menu to select **Enabled**. 
-
-5. Save your changes.
+   > [!IMPORTANT]
+   > If your organization is using Conditional Access, security defaults are disabled. You can use either security defaults or Conditional Access, but not both at the same time.
 
 # [Conditional Access](#tab/condit)
 
