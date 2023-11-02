@@ -76,13 +76,13 @@ Microsoft 365 Business Premium includes a guided setup process, as shown in the 
 
 ### The guided setup process, step by step
 
-1. As a global administrator, go to the [Microsoft 365 admin center](https://admin.microsoft.com/) and sign in. By default, you'll see the simplified view. 
+1. As a global administrator, go to the [Microsoft 365 admin center](https://admin.microsoft.com/) and sign in. 
 
-2. In the upper left corner, select **Simplified view > Dashboard view** so that your admin center resembles the following image. Then select **Go to guided setup**. 
+2. A Business Advisor screen opens where you can select your top goals for Microsoft 365. Select and save your goals, or select **Skip for new**.
 
-   :::image type="content" source="media/m365bp-dashboardview.png" alt-text="Screenshot of the dashboard view of the Microsoft 365 admin center."lightbox="media/m365bp-dashboardview.png":::
+3. By default, you're in the simplified view. In the upper left corner, select **Simplified view > Dashboard view**, and then select **Go to guided setup**. 
 
-3. To install your Microsoft 365 Apps (Office), select the download button, and then follow the prompts. Alternately, you can skip this step for now and install your apps later. Select **Continue**.
+4. To install your Microsoft 365 Apps (Office), select the download button, and then follow the prompts. Alternately, you can skip this step for now and install your apps later. Select **Continue**.
 
    :::image type="content" source="media/m365bp-installoffice.png" alt-text="Screenshot of the Install Office download button."lightbox="media/m365bp-installoffice.png":::
 
