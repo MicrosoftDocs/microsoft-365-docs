@@ -63,7 +63,7 @@ MFA is an important first step in securing your company, and security defaults m
 
 3. Select **Properties**, scroll down, and then select the **Manage security defaults** link.
 
-4. On the right side of the screen, in the **Security defaults** pane, see whether security defaults are turned on (**Enabled**) or off (**Disabled**). To turn security defaults on, use the drop-down menu to select **Enabled**. Then select **Save**.
+4. On the right side of the screen, in the **Security defaults** pane, see whether security defaults are turned on (**Enabled**) or off (**Disabled**). To turn on security defaults, use the drop-down menu to select **Enabled**. Then select **Save**.
 
    > [!IMPORTANT]
    > If your organization is using Conditional Access, security defaults are disabled. You can use either security defaults or Conditional Access, but not both at the same time.
@@ -74,7 +74,7 @@ MFA is an important first step in securing your company, and security defaults m
 
 If your company or business has complex security requirements or you need more granular control over your security policies, then you should consider using Conditional Access instead of security defaults to achieve a similar or higher security posture.
 
-Conditional Access lets you create and define policies that react to sign-in events and request additional actions before a user is granted access to an application or service. Conditional Access policies can be granular and specific, empowering users to be productive wherever and whenever, but also protecting your organization.
+Conditional Access lets you create and define policies that react to sign-in events and request other actions before a user is granted access to an application or service. Conditional Access policies can be granular and specific, empowering users to be productive wherever and whenever, but also protecting your organization.
 
 Security defaults are available to all customers. Conditional Access requires one of the following subscriptions:
 
