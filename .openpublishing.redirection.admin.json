@@ -1813,7 +1813,7 @@
       },
       {
          "source_path":"microsoft-365/admin/misc/business-assist.md",
-         "redirect_url":"https://support.microsoft.com/office/business-assist-for-microsoft-365-37deb8fe-61cc-4cf9-9ad1-1c8d93475070",
+         "redirect_url":"https://support.microsoft.com/office/37deb8fe-61cc-4cf9-9ad1-1c8d93475070",
          "redirect_document_id":false
       },
       {
@@ -2038,7 +2038,27 @@
        },
        {
          "source_path": "microsoft-365/admin/setup/migrate-email-and-contacts-admin.md",
-         "redirect_url": "https://support.microsoft.com/office/move-your-old-email-calendars-and-contacts-to-microsoft-365-2c37f0b7-2915-423c-b35e-9e03267f23dc",
+         "redirect_url": "https://support.microsoft.com/office/365-2c37f0b7-2915-423c-b35e-9e03267f23dc",
+         "redirect_document_id": false
+       },
+       {
+         "source_path": "microsoft-365/admin/services-in-china/services-in-china.md",
+         "redirect_url": "/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-operated-by-21vianet",
+         "redirect_document_id": false
+       },
+       {
+         "source_path": "microsoft-365/admin/services-in-china/download-office-app-for-android.md",
+         "redirect_url": "https://support.microsoft.com/office/0383d031-a1c6-46c9-b734-53cd1d22765b",
+         "redirect_document_id": false
+       },
+       {
+         "source_path": "microsoft-365/admin/services-in-china/download-office-app-for-ios.md",
+         "redirect_url": "https://support.microsoft.com/office/c8880c05-883a-46b6-ad32-9bffa31228d0",
+         "redirect_document_id": false
+       },
+       {
+         "source_path": "microsoft-365/admin/misc/device-list.md",
+         "redirect_url": "https://learn.microsoft.com/autopilot/add-devices",
          "redirect_document_id": false
        }
    ]

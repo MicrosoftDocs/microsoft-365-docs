@@ -1,5 +1,5 @@
 ---
-title: Upgrade your Office 2010 to Microsoft 365 - Microsoft 365 admin
+title: Upgrade your Microsoft 365 for business users to the latest Microsoft 365 apps - Microsoft 365 admin
 f1.keywords:
 - NOCSH
 ms.author: kwekua
