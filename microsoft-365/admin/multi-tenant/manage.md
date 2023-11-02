@@ -5,7 +5,6 @@ f1.keywords:
 ms.author: kwekua
 author: kwekuako
 manager: scotv
-ms.date: 10/15/2020
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -20,10 +19,6 @@ ms.collection:
 ms.custom: 
 - AdminSurgePortfolio
 - admindeeplinkMAC
-search.appverid:
-- BCS160
-- MET150
-- MOE150
 description: "Learn how to use the tenant switcher and multi-tenant views that give you the ability to manage tenants from a single location."
 ---
 
@@ -34,6 +29,10 @@ Multi-tenant management offers a unified form of management that allows Microsof
 - Move quickly between tenants you manage.
 - Assess service health, products, and billing across multiple tenants.
 - On the **All tenants** page, you can quickly see the health of all your tenants' services, any open service requests, your products and billing, and the number of users in that tenant.
+
+## Before you begin
+
+You have to be a global admin to perform this task.
 
 ## Move between tenants
 
@@ -48,7 +47,8 @@ Multi-tenant management offers a unified form of management that allows Microsof
 ## View All tenants page
 
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, in the left nav, select **All tenants**.
-- On the **All tenants** page, you can
+
+- On the **All tenants** page, you can:
   - Assess service health
   - Review license usage
   - Search for, or select the tenant you want to manage
@@ -68,7 +68,7 @@ The service health view shows you if any incidents or advisories are affecting t
     - You can review issues under **All services** or **All issues** tabs.
 
     :::image type="content" source="../../media/multitenant-servicehealth.png" alt-text="Multi-tenant Service health page.":::
-1. Select an incident on the **All services** or **All issues** tab to get more information about any incident on the **Overview** tab. Select the **Tenants affected** tab to get a list of the affected tenants.
+3. Select an incident on the **All services** or **All issues** tab to get more information about any incident on the **Overview** tab. Select the **Tenants affected** tab to get a list of the affected tenants.
 
     :::image type="content" source="../../media/tenantsaffected.png" alt-text="List of tenants affected by a service health issue.":::
 
