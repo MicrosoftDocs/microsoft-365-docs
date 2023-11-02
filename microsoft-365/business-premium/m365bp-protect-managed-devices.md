@@ -46,7 +46,7 @@ Your tasks are to:
 
 Once these steps are completed, your organization's devices are protected. 
 
-## Next steps
+## See also
 
 - [Manage devices in Microsoft Defender for Business](../security/defender-business/mdb-manage-devices.md)
 - [Set up a security operations process](m365bp-security-operations-guide.md).
