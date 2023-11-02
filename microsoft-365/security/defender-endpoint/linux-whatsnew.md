@@ -7,7 +7,7 @@ ms.author: dansimp
 author: dansimp
 ms.reviewer: kumasumit
 ms.localizationpriority: medium
-ms.date: 10/30/2023
+ms.date: 11/30/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
