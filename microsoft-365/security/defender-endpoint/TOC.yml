@@ -106,6 +106,22 @@
 
   - name: Onboard and configure devices
     items:
+    - name: Configure service connections
+      items:
+        - name: Step 1 - Configure your network environment 
+          href: configure-environment.md
+        - name: Step 2 - Configure device proxy and Internet settings
+          href: configure-proxy-internet.md
+        - name: Step 3 - Verify client connectivity to service URLs
+          href: verify-connectivity.md
+        
+    - name: Streamlined connectivity
+      items:
+        - name: Onboarding devices using streamlined method
+          href: configure-device-connectivity.md
+        - name: Migrating devices to streamlined method
+          href: migrate-devices-streamlined.md
+
     - name: Onboarding Windows Client
       items:
       - name: Onboarding Windows Client overview
@@ -265,10 +281,57 @@
         href: ios-privacy.md
     - name: Run a detection test on a newly onboarded Microsoft Defender for Endpoint
       href: run-detection-test.md
-    - name: Onboard devices without Internet access
-      href: onboard-offline-machines.md
-    - name: Configure proxy and Internet connectivity settings
-      href: configure-proxy-internet.md
+    - name: Configure Microsoft Defender for Endpoint on macOS
+      items:
+      - name: Configure and validate exclusions
+        href: mac-exclusions.md
+      - name: Set preferences
+        href: mac-preferences.md
+      - name: Detect and block Potentially Unwanted Applications
+        href: mac-pua.md
+      - name: Protect macOS security settings using tamper protection
+        href: tamperprotection-macos.md
+      - name: Device control
+        items:
+        - name: Device control overview
+          href: mac-device-control-overview.md
+        - name: JAMF examples
+          href: mac-device-control-jamf.md
+        - name: Intune examples
+          href: mac-device-control-intune.md
+        - name: macOS Device Control frequently asked questions (FAQ)
+          href: mac-device-control-faq.md
+
+      - name: Schedule scans
+        href: mac-schedule-scan.md
+
+    - name: Configure Microsoft Defender for Endpoint on Linux
+      items:
+      - name: Configure and validate exclusions
+        href: linux-exclusions.md
+      - name: Static proxy configuration
+        href: linux-static-proxy-configuration.md
+      - name: Set preferences
+        href: linux-preferences.md
+      - name: Detect and block Potentially Unwanted Applications
+        href: linux-pua.md
+      - name: Schedule scans with Microsoft Defender for Endpoint on Linux
+        href: linux-schedule-scan-mde.md
+      - name: Schedule antivirus scan in Defender for Endpoint on Linux
+        href: schedule-antivirus-scan-in-mde.md
+      - name: Schedule an update of the Microsoft Defender for Endpoint (Linux)
+        href: linux-update-MDE-Linux.md
+      - name: Configure eBPF-based sensor
+        href: linux-support-ebpf.md 
+
+    - name: Configure Mobile Threat Defense
+      items:
+      - name: Configure Microsoft Defender for Endpoint on Android features
+        href: android-configure.md
+      - name: Configure Microsoft Defender for Endpoint on Android risk signals using app protection policy
+        href: android-configure-mam.md
+      - name: Configure Microsoft Defender for Endpoint on iOS features
+        href: ios-configure-features.md
   - name: How to guides
     items:
     - name: Integration with Microsoft Defender for Cloud
@@ -439,27 +502,27 @@
       items:
       - name: Attack surface reduction overview
         href: overview-attack-surface-reduction.md
-      - name: Attack surface reduction (ASR) rules
+      - name: Attack surface reduction rules
         items:
         - name: Learn about ASR rules
           href: attack-surface-reduction.md
-        - name: Attack surface reduction (ASR) rules deployment guide
+        - name: Attack surface reduction rules deployment guide
           items:
-          - name: Attack surface reduction (ASR) rules deployment overview
+          - name: Attack surface reduction rules deployment overview
             href: attack-surface-reduction-rules-deployment.md
-          - name: Plan attack surface reduction (ASR) rules deployment
+          - name: Plan attack surface reduction rules deployment
             href: attack-surface-reduction-rules-deployment-plan.md
-          - name: Test attack surface reduction (ASR) rules
+          - name: Test attack surface reduction rules
             href: attack-surface-reduction-rules-deployment-test.md
-          - name: Enable attack surface reduction (ASR) rules
+          - name: Enable attack surface reduction rules
             href: attack-surface-reduction-rules-deployment-implement.md
-          - name: Operationalize attack surface reduction (ASR) rules
+          - name: Operationalize attack surface reduction rules
             href: attack-surface-reduction-rules-deployment-operationalize.md
-        - name: Attack surface reduction (ASR) rules reference
+        - name: Attack surface reduction rules reference
           href: attack-surface-reduction-rules-reference.md
         - name: Attack surface reduction rules report
           href: attack-surface-reduction-rules-report.md
-        - name: Troubleshoot attack surface reduction (ASR) rules
+        - name: Troubleshoot attack surface reduction rules
           href: troubleshoot-asr-rules.md
         - name: Enable ASR rules alternate configuration methods
           href: enable-attack-surface-reduction.md
@@ -683,8 +746,6 @@
           href: configure-local-policy-overrides-microsoft-defender-antivirus.md
         - name: Specify whether users can see or interact with Microsoft Defender Antivirus user interface
           href: prevent-end-user-interaction-microsoft-defender-antivirus.md
-        - name: Turn on definition retirement
-          href: turn-on-definition-retirement.md
 
       - name: Deploy and report on Microsoft Defender Antivirus
         href: deploy-manage-report-microsoft-defender-antivirus.md
@@ -839,6 +900,8 @@
             href: respond-machine-alerts.md#isolate-devices-from-the-network
           - name: Contain devices from the network
             href: respond-machine-alerts.md#contain-devices-from-the-network
+          - name: Contain user from the network
+            href: respond-machine-alerts.md#contain-user-from-the-network
           - name: Consult a threat expert
             href: respond-machine-alerts.md#consult-a-threat-expert
           - name: Check activity details in Action center
@@ -1345,14 +1408,6 @@
         href: conditional-access.md
       - name: Microsoft Defender for Cloud Apps integration overview
         href: microsoft-cloud-app-security-integration.md
-
-    - name: Access the Microsoft Defender for Endpoint Community Center
-      href: community.md
-
-    - name: Helpful resources
-      href: helpful-resources.md
-
-
   - name: Troubleshoot
     items:
     - name: Troubleshoot onboarding issues
@@ -1399,8 +1454,6 @@
           href: manage-profiles-approve-sys-extensions-intune.md
         - name: JamF
           href: manage-sys-extensions-using-jamf.md
-        - name: Other MDM
-          href: manage-sys-extensions-other-mdm.md
         - name: Manual deployment
           href: manage-sys-extensions-manual-deployment.md
 

@@ -22,7 +22,7 @@ search.appverid: met150
 
 All permissions listed within the Microsoft 365 Defender Unified RBAC model align to existing permissions in the individual RBAC models. Once you activate the Microsoft 365 Defender Unified RBAC model the permissions and assignments configured in your imported roles will replace the existing roles in the individual RBAC models.
 
-This article describes how existing roles and permissions in Microsoft Defender for Endpoint, Microsoft Defender Vulnerability Management and Microsoft Defender for Office 365 (Exchange Online Protection), Microsoft Defender for Identity, and Azure Active Directory roles map to the roles and permission in the Microsoft 365 Defender Unified RBAC model.
+This article describes how existing roles and permissions in Microsoft Defender for Endpoint, Microsoft Defender Vulnerability Management and Microsoft Defender for Office 365 (Exchange Online Protection), Microsoft Defender for Identity, and Microsoft Entra roles map to the roles and permission in the Microsoft 365 Defender Unified RBAC model.
 
 [!INCLUDE[Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -43,7 +43,7 @@ Use the tables in the following sections to learn more about how your existing i
 1. [Map Defender for Endpoint and Defender Vulnerability Management permissions](#map-defender-for-endpoint-and-defender-vulnerability-management-permissions-to-the-microsoft-365-defender-rbac-permissions)
 2. [Map Defender for Office 365 (Exchange Online Protection) roles](#map-defender-for-office-365-exchange-online-protection-roles-to-the-microsoft-365-defender-unified-rbac-permissions)
 3. [Map Microsoft Defender for Identity permissions](#map-microsoft-defender-for-identity-permissions-to-the-microsoft-365-defender-unified-rbac-permissions)
-4. [Azure Active Directory Global roles access](#azure-active-directory-global-roles-access)
+4. [Microsoft Entra Global roles access](#azure-active-directory-global-roles-access)
 
 ### Map Defender for Endpoint and Defender Vulnerability Management permissions to the Microsoft 365 Defender RBAC permissions
 
@@ -92,13 +92,15 @@ Use the tables in the following sections to learn more about how your existing i
 > [!NOTE]
 > Defender for Identity experiences will also adhere to permissions granted from [Microsoft Defender for Cloud Apps](https://security.microsoft.com/cloudapps/permissions/roles). For more information, see [Microsoft Defender for Identity role groups](https://go.microsoft.com/fwlink/?linkid=2202729).
 
-### Azure Active Directory Global roles access
+<a name='azure-active-directory-global-roles-access'></a>
 
-Users assigned with Azure Active Directory global roles may also have access to the [Microsoft 365 Defender portal](https://security.microsoft.com).
+### Microsoft Entra Global roles access
 
-Use this table to learn about the permissions assigned by default for each workload (Defender for Endpoint, Defender Vulnerability Management, Defender for Office and Defender for Identity) in Microsoft 365 Defender Unified RBAC to each global Azure Active Directory role.
+Users assigned with Microsoft Entra global roles may also have access to the [Microsoft 365 Defender portal](https://security.microsoft.com).
 
-|AAD role|Microsoft 365 Defender Unified RBAC assigned permissions for all workloads|Microsoft 365 Defender Unified RBAC assigned permissions – workload specific|
+Use this table to learn about the permissions assigned by default for each workload (Defender for Endpoint, Defender Vulnerability Management, Defender for Office and Defender for Identity) in Microsoft 365 Defender Unified RBAC to each global Microsoft Entra role.
+
+|Microsoft Entra role|Microsoft 365 Defender Unified RBAC assigned permissions for all workloads|Microsoft 365 Defender Unified RBAC assigned permissions – workload specific|
 |---|---|---|---|
 |Global administrator|Security operations \ Security data \ Security data basics (read)</br>Security operations \ Security data \ Alerts (manage) </br>Security operations \ Security data \ Response (manage)</br>Security posture \ Posture management \ Secure Score (read) </br> Security posture \ Posture management \ Secure Score (manage)</br>Authorization and settings \ Authorization (Read and manage)</br>Authorization and settings \ Security settings (All permissions)</br>Authorization and settings \ System settings (Read and manage) |_**Defender for Endpoint and Defender Vulnerability Management permissions only permissions**_ </br>Security operations \ Basic live response (manage)</br>Security operations \ Advanced live response (manage) </br> Security operations  \ Security data \ File collection (manage) </br>Security posture \ Posture management \ Vulnerability management (read)</br>Security posture \ Posture management \ Exception handling (manage)</br>Security posture \ Posture management \ Remediation handling (manage)</br>Security posture \ Posture management \ Application handling (manage)</br>Security posture \ Posture management \ Security baseline assessment (manage)</br></br> _**Defender for Office only permissions**_ </br> Security operations \ Security data \ Email quarantine (manage)</br>Security operations \ Security data \ Email advanced actions (manage)</br>Security operations \ Raw data (Email & collaboration) \ Email message headers (read)|
 |Security administrator|Same as Global administrator|Same as Global administrator|

@@ -108,7 +108,8 @@
         "admin/**/*.md": "Microsoft 365 admin",
         "lighthouse/**/*.md": "Microsoft 365 Lighthouse",
         "syntex/**/*.md": "Microsoft Syntex",
-        "frontline/**/*.md": "Microsoft 365 for frontline workers"
+        "frontline/**/*.md": "Microsoft 365 for frontline workers",
+        "whiteboard/**/*.md": "Microsoft Whiteboard"
       },
       "feedback_product_url": {
         "compliance/**/*.md":"https://feedbackportal.microsoft.com/feedback/",

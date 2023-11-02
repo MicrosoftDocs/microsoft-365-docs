@@ -1,11 +1,11 @@
 ---
-title: "Manage billing notifications and invoice attachments"
+title: "Manage billing notifications and invoice attachment settings in the Microsoft 365 admin center"
 f1.keywords:
 - CSH
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: emmasheridan, vijayav
+ms.reviewer: emmasheridan, nicholak
 audience: Admin
 ms.topic: how-to
 ms.service: microsoft-365-business
@@ -21,85 +21,30 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: "Learn how to manage who receives billing notification emails and invoice attachments."
-ms.date: 03/17/2021
+description: "Learn how to manage who receives billing notification emails and invoice attachments in the Microsoft 365 admin center."
+ms.date: 10/13/2023
 ---
 
-# Manage billing notifications and invoice attachments
+# Manage billing notifications and invoice attachment settings in the Microsoft 365 admin center
 
-The **Billing notifications** page lets you manage who receives billing notification emails for your organization. The page also provides the option to [receive your organization's invoices as email attachments](#receive-your-organizations-invoices-as-email-attachments).
+You can manage who receives billing notification emails for your organization on the **Billing notifications** page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. The page also provides the option to [receive your organization's invoices as email attachments](#receive-your-organizations-invoices-as-email-attachments).
 
 ## Before you begin
 
-You must be a Global admin to do the steps described in this article. Billing admins can make some of these changes, as noted in the sections below. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+- [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
+- If you have a Microsoft Customer Agreement (MCA) billing account type, you must be a Billing account owner or contributor to do the tasks in this article. For information about billing account roles, see [Understand your Microsoft business billing account](../manage-billing-accounts.md).
+- If you have a Microsoft Online Services Agreement (MOSA), you must be a Global admin to do the tasks in this article. Billing admins can also make some of these changes, as noted in this article. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 
-## Change the language you receive email in
-
-Billing notification emails are sent in your organization's preferred language. To change the preferred language, use the following steps.
-
-1. In the Microsoft 365 admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page.
-2. In the **Billing notification settings** section, select **Edit notification settings**.
-3. In the **Billing notification settings** pane, under **Preferred language** select the language you want to use, then select **Save**.
+> [!NOTE]
+> If you're the person who signed up for the subscription, you're automatically a Billing account owner or Global admin.
 
 ## Change who receives billing notifications
 
-Your organization's billing notifications are sent to the primary and alternate email address of every Global and Billing admin. To change which users have the Global or Billing admin role, use the following steps.
+You can change who receives billing notifications for your organization in the Microsoft 365 admin center. However, the steps to change who receives billing notifications depend on the type of billing account that you have. [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
 
-### Assign admin roles by using the Billing notifications page
+### If you have an MCA billing account type
 
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page.
-2. In the **Admins receiving billing notifications** section, select the **Billing administrator** or **Global administrator** link in the description text.
-3. In the right pane, on the **Assigned admins** tab, select **Add**.
-4. In the **Add admins** pane, type the user's display name or username, and then select the user from the list of suggestions.
-5. Add multiple users until you're done.
-6. Select **Save**. The user is added to the list of assigned admins.
-
-### Remove admin roles by using the Billing notifications page
-
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page.
-2. In the **Admins receiving billing notifications** section, select the **Billing administrator** or **Global administrator** link in the description text.
-3. In the right pane, on the **Assigned admins** tab, select the users to remove from the role, and then select **Remove**.
-4. In the confirmation box, select **Remove**. The user is removed from the list of assigned admins.
-
-## Change the email addresses for admins
-
-To change the primary and alternate email address of other admins in your organization, use the following steps.
-
-> [!NOTE]
-> Billing admins can only change their own alternate email address. They can't change email addresses for other admins.
-
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page.
-2. In the **Admins receiving billing notifications** section, select a name.
-3. In the right pane, add or update the primary and alternate email address as needed, then select **Save**.
-
-## Change your organization's contact email
-
-In addition to your Global and Billing admins, we send billing notifications to your organization's contact email address. To change the email address, use the following steps.
-
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page.
-2. Under **Organization contact receiving billing notifications**, select the organization contact.
-3. In the right pane, type the email address that you want to use, then select **Save**.
-
-## Receive your organization's invoices as email attachments
-
-> [!NOTE]
-> Billing admins can also do the steps in this section.
-
-You can have a copy of your organization's invoice attached as a PDF file to invoice notification emails when a new invoice is ready. Use the following steps to receive invoices as attachments.
-
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page.
-2. Under **Billing notification settings**, select **Edit notification settings**.
-3. In the **Billing notification settings** pane, under **Attach a PDF to your invoice emails**, check the checkbox, then select **Save**.
-
-To stop receiving the invoice attachment at any time, follow the steps above and clear the **Attach a PDF to your invoice  emails** checkbox in step 3.
-
-## What if I have a billing profile?
-
-If you have a billing profile, some of the steps described in this article might be slightly different for some of your subscriptions. This section describes those differences. [How do I know if I have a billing profile?](manage-billing-profiles.md)
-
-### Who receives Billing notifications?
-
-Billing notification emails are sent to the primary and alternate email addresses for users who are assigned one of the following roles:
+If you have an MCA billing account type, billing notification emails are sent to the primary and alternate email addresses for users who are assigned one of the following roles:
 
 - Billing profile owner
 - Billing profile contributor
@@ -107,23 +52,84 @@ Billing notification emails are sent to the primary and alternate email addresse
 
 To learn more about billing profile roles and how to manage them, see [Understand Microsoft Customer Agreement administrative roles in Azure](/azure/cost-management-billing/manage/understand-mca-roles).
 
-To change who receives your organization's billing notifications, use the following steps to change the roles assigned to users.
+To change the billing profile roles assigned to users, use the following steps.
 
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.
 2. On the **Billing profile** tab, select a billing profile.
 3. In the **Billing profile roles** section, assign or remove roles for **Billing profile owner**, **Billing profile contributor**, or **Invoice manager**.
 
-### Receive invoices as email attachments
+### If you have an MOSA billing account type
 
-To receive your invoices as attachments to your invoice notifications, use the following steps to turn on this setting for a specific billing profile.
+If you have an MOSA billing account type, billing notifications are sent to the primary and alternate email address of every Global and Billing admin in your organization. To change which users have the Global or Billing admin role, use the following steps.
+
+#### Assign admin roles by using the Billing notifications page
+
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page.
+2. In the **Admins receiving Billing notifications** section, select **Change Billing administrator** or **Change Global administrator**. You can also choose to add a new account and assign one of the roles to it.
+3. In the details pane, on the **Assigned** tab, select **Add users**.
+4. In the **Add users** pane, type the user's display name or username, and then select the user from the list of suggestions.
+5. Add multiple users until you're done.
+6. Select **Add**, then close the pane.
+
+#### Remove admin roles by using the Billing notifications page
+
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page.
+2. In the **Admins receiving billing notifications** section, select the **Change Billing administrator** or **Change Global administrator** link in the description text.
+3. In the details pane, on the **Assigned** tab, select the users to remove from the role, and then select **Remove**.
+4. In the confirmation box, select **Remove**, then close the pane.
+
+## Change the language you receive email in
+
+Billing notification emails are sent in your organization's preferred language. To change the preferred language, use the following steps.
+
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page.
+2. In the **Billing notification settings** section, select **Edit notification settings**.
+3. In the **Billing notification settings** pane, under **Preferred language** select the language you want to use, then select **Save**.
+
+## Change the email addresses for admins
+
+You can change the primary email address of other admins in your organization. However, you can only change your own alternate email address, you can't change email addresses for other admins.
+
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page.
+2. In the **Admins receiving billing notifications** section, select a name.
+3. In the right pane, add or update the primary and alternate email address as needed, then select **Save**.
+
+## Change your organization's contact email
+
+In addition to your Global and Billing admins, we send billing notifications to your organization's contact email address.
+
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page.
+2. Under **Organization contact receiving billing notifications**, select the organization contact.
+3. In the organization details pane, type the email address that you want to use, then select **Save**.
+
+## Receive your organization's invoices as email attachments
+
+You can choose to receive your organization's invoices as email attachments. However, the steps to manage the invoice attachment setting in the Microsoft 365 admin center depend on the type of billing account that you have. [Find out what type of billing account you have](../manage-billing-accounts.md#view-my-billing-accounts).
+
+### Receive your invoice as an email attachment for MCA billing account types
+
+If you have an MCA billing account type, the option to receive your invoice as an attachment to your invoice notification emails is linked with your billing profile. To turn on the invoice email attachment setting for a specific billing profile, use the following steps.
 
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.
 2. Select the **Billing profiles** tab, then select a billing profile from the list.
 3. On the billing profile details page, under **Get invoices in email attachments**, switch the toggle to **On**.
 
+### Receive your invoice as an email attachment for MOSA billing account types
+
+If you have an MOSA billing account type, the option to receive your invoice as an attachment to your invoice notification emails is managed on the **Billing  notifications** page in the Microsoft 365 admin center. To turn on the invoice email attachment setting on the **Billing notifications** page, use the following steps.
+
+> [!NOTE]
+> Billing admins can also do the following steps.
+
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page.
+2. Under **Billing notification settings**, select **Edit notification settings**.
+3. In the **Billing notification settings** pane, under **Invoice PDF**, select the **Attach a PDF to your invoice emails** checkbox, then select **Save**.
+
+To stop receiving the invoice attachment at any time, follow the steps in this procedure and clear the **Attach a PDF to your invoice  emails** checkbox in step 3.
+
 ## Related content
 
-[View your bill or invoice](view-your-bill-or-invoice.md) (article)\
-[Billing information for Microsoft 365 for business in Mexico](mexico-billing-info.md) (article) \
-[Understand your bill or invoice for Microsoft 365 for business](understand-your-invoice2.md) (article)\
-[Add users and assign licenses at the same time](../../admin/add-users/add-users.md) (article)
+[View your invoice in the Microsoft 365 admin center](view-your-bill-or-invoice.md) (article)\
+[Billing information for Microsoft 365 for business in Mexico](mexico-billing-info.md) (article)\
+[Understand your invoice for your Microsoft MCA billing account](understand-your-invoice.md) (article)\
+[Understand your invoice for your Microsoft MOSA billing account](understand-your-invoice2.md) (article)

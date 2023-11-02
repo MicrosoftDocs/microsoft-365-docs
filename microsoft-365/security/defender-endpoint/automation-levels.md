@@ -12,8 +12,8 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
+- mde-edr
 ms.topic: conceptual
-ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
 search.appverid: met150
 ---

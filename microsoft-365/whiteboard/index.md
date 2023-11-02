@@ -1,6 +1,6 @@
 ---
 title: Introduction to Microsoft Whiteboard
-ms.author: v-jdeweese
+ms.author: alexfaulkner
 author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: 
@@ -8,7 +8,7 @@ ms.date: 12/14/2020
 audience: admin
 ms.topic: landing-page
 ms.custom: 
-ms.service: microsoft-365-enterprise
+ms.service: whiteboard
 search.appverid: MET150
 ms.collection: 
 ms.localizationpriority: medium

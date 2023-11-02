@@ -2,7 +2,7 @@
 title: Key infrastructure requirements before enrolling in the Microsoft Defender Experts for Hunting service
 ms.reviewer:
 description: This section outlines the key infrastructure requirements you must meet and important information on data access and compliance
-keywords: managed threat hunting service, managed threat hunting, managed detection and response (MDR) service, MTE, Microsoft Threat Experts, MTE-TAN, defender experts notification, Targeted Attack Notification, Microsoft Defender Experts for hunting, threat hunting and analysis.
+keywords: managed threat hunting service, defender experts eligibility, managed detection and response (MDR) service, defender experts notifications, apply for defender experts service, dex, defender experts notification, Microsoft Defender Experts for hunting, threat hunting and analysis, managed response
 search.product: Windows 10
 ms.service: microsoft-365-security
 ms.subservice: m365d
@@ -20,7 +20,7 @@ ms.collection:
   - tier1
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 09/18/2023
+ms.date: 10/17/2023
 ---
 
 # Before you begin using Defender Experts for Hunting
@@ -64,7 +64,7 @@ All data used for hunting from existing Defender services will continue to resid
 
 Defender Experts for Hunting operational data, such as case tickets and analyst notes, are generated and stored in a Microsoft data center in the US region for the length of the service, irrespective of the Microsoft 365 Defender service storage location. Data generated for the reporting dashboard is stored in customer's Microsoft 365 Defender service storage location. Reporting data and operational data will be retained for a grace period of no more than 90 days after a customer’s subscription expires. If the customer terminates their subscription, data will be deleted within 30 days. 
 
-Microsoft experts hunt over [advanced hunting logs](../../security/defender/advanced-hunting-schema-tables.md) in Microsoft 365 Defender advanced hunting tables. The data in these tables depend on the set of Defender services the customer is enabled for (for example, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Identity, Microsoft Defender for Cloud Apps, and Azure Active Directory). Experts also use a large set of internal threat intelligence data to inform their hunting and automation.
+Microsoft experts hunt over [advanced hunting logs](../../security/defender/advanced-hunting-schema-tables.md) in Microsoft 365 Defender advanced hunting tables. The data in these tables depend on the set of Defender services the customer is enabled for (for example, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Identity, Microsoft Defender for Cloud Apps, and Microsoft Entra ID). Experts also use a large set of internal threat intelligence data to inform their hunting and automation.
 
 ### Security and compliance
 

@@ -61,7 +61,6 @@ Microsoft Defender for Endpoint for US Government customers requires one of the 
 
 The following are the Microsoft Defender for Endpoint portal URLs for US Government customers:
 
-<br />
 
 |Customer type|Portal URL|
 |---|---|
@@ -78,7 +77,6 @@ The following are the Microsoft Defender for Endpoint portal URLs for US Governm
 
 The following OS versions are supported:
 
-<br />
 
 OS version|GCC|GCC High|DoD
 :---|:---:|:---:|:---:
@@ -121,7 +119,6 @@ iOS|![Yes.](images/svg/check-yes.svg) <br /> |![Yes](images/svg/check-yes.svg) <
 
 The following OS versions are supported when using [Microsoft Defender for servers](/azure/security-center/security-center-wdatp):
 
-<br />
 
 OS version|GCC|GCC High|DoD
 :---|:---:|:---:|:---:
@@ -139,7 +136,7 @@ The following downloadable spreadsheet lists the services and their associated U
 
 |Spreadsheet of domains list| Description|
 |---|---|
-|Microsoft Defender for Endpoint URL list for commercial customers| Spreadsheet of specific DNS records for service locations, geographic locations, and OS for commercial customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)
+|Microsoft Defender for Endpoint URL list for commercial customers| Spreadsheet of specific DNS records for service locations, geographic locations, and OS for commercial customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls-commercial.xlsx)
 | Microsoft Defender for Endpoint URL list for Gov/GCC/DoD | Spreadsheet of specific DNS records for service locations, geographic locations, and OS for Gov/GCC/DoD customers. <p> [Download the spreadsheet here.](https://download.microsoft.com/download/6/a/0/6a041da5-c43b-4f17-8167-79dfdc10507f/mde-urls-gov.xlsx)
 
 For more information, see [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md).
@@ -153,7 +150,6 @@ For more information, see [Configure device proxy and Internet connectivity sett
 
 Instead of the public URIs listed in our [API documentation](apis-intro.md), you'll need to use the following URIs:
 
-<br />
 
 |Endpoint type|GCC|GCC High & DoD|
 |---|---|---|
@@ -179,7 +175,6 @@ These are the known gaps:
 
 These are the features and known gaps for [Mobile Threat Defense (Microsoft Defender for Endpoint on Android & iOS)](mtd.md):
 
-<br />
 
 |Feature name|GCC|GCC High|DoD|
 |---|:---:|:---:|:---:|

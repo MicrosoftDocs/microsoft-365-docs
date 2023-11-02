@@ -38,19 +38,19 @@ ms.date: 12/18/2020
 
 This article acts as an example onboarding method.
 
-In the [Planning](deployment-strategy.md) topic, there were several methods provided to onboard devices to the service. This topic covers the co-management architecture.
+In the [Planning](deployment-strategy.md) article, there were several methods provided to onboard devices to the service. This article covers the co-management architecture.
 
 :::image type="content" source="images/co-management-architecture.png" alt-text="The cloud-native architecture" lightbox="images/co-management-architecture.png":::
 *Diagram of environment architectures*
 
-While Defender for Endpoint supports onboarding of various endpoints and tools, this article does not cover them. For information on general onboarding using other supported deployment tools and methods, see [Onboarding overview](onboarding.md).
+While Defender for Endpoint supports onboarding of various endpoints and tools, this article doesn't cover them. For information on general onboarding using other supported deployment tools and methods, see [Onboarding overview](onboarding.md).
 
-This topic guides users in:
+This article guides users in:
 
 - Step 1: Onboarding Windows devices to the service
 - Step 2: Configuring Defender for Endpoint capabilities
 
-This onboarding guidance will walk you through the following basic steps that you need to take when using Microsoft Configuration Manager:
+This onboarding guidance walks you through the following basic steps that you need to take when using Microsoft Configuration Manager:
 
 - **Creating a collection in Microsoft Configuration Manager**
 - **Configuring Microsoft Defender for Endpoint capabilities using Microsoft Configuration Manager**
@@ -64,11 +64,11 @@ This onboarding guidance will walk you through the following basic steps that yo
 
 To onboard Windows devices with Microsoft Configuration Manager, the deployment can target an existing collection or a new collection can be created for testing.
 
-Onboarding using tools such as Group policy or manual method does not install any agent on the system.
+Onboarding using tools such as Group policy or manual method doesn't install any agent on the system.
 
-Within the Microsoft Configuration Manager console the onboarding process will be configured as part of the compliance settings within the console.
+Within the Microsoft Configuration Manager, console the onboarding process will be configured as part of the compliance settings within the console.
 
-Any system that receives this required configuration will maintain that configuration for as long as the Configuration Manager client continues to receive this policy from the management point.
+Any system that receives this required configuration maintains that configuration for as long as the Configuration Manager client continues to receive this policy from the management point.
 
 Follow the steps below to onboard endpoints using Microsoft Configuration Manager.
 
@@ -96,7 +96,7 @@ Follow the steps below to onboard endpoints using Microsoft Configuration Manage
 
     :::image type="content" source="images/configmgr-criteria.png" alt-text="The Microsoft Configuration Manager wizard6" lightbox="images/configmgr-criteria.png":::
 
-7. Keep criterion type as **simple value**, choose where as **Operating System - build number**, operator as **is greater than or equal to** and value **14393** and select on **OK**.
+7. Keep criterion type as **simple value**, choose whereas **Operating System - build number**, operator as **is greater than or equal to** and value **14393** and select on **OK**.
 
     :::image type="content" source="images/configmgr-simple-value.png" alt-text="The Microsoft Configuration Manager wizard7" lightbox="images/configmgr-simple-value.png":::
 
@@ -122,7 +122,7 @@ This section guides you in configuring the following capabilities using Microsof
 
 #### Windows 10 and Windows 11
 
-From within the Microsoft 365 Defender portal it is possible to download the `.onboarding` policy that can be used to create the policy in System Center Configuration Manager and deploy that policy to Windows 10 and Windows 11 devices.
+From within the Microsoft 365 Defender portal it's possible to download the `.onboarding` policy that can be used to create the policy in System Center Configuration Manager and deploy that policy to Windows 10 and Windows 11 devices.
 
 1. From a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, select [Settings and then Onboarding](https://security.microsoft.com/preferences2/onboarding).
 
@@ -164,7 +164,7 @@ From within the Microsoft 365 Defender portal it is possible to download the `.o
 
 14. Select **Close** when the Wizard completes.
 
-15. In the Microsoft Configuration Manager console, right-click the Defender for Endpoint policy you just created and select **Deploy**.
+15. In the Microsoft Configuration Manager console, right-click the Defender for Endpoint policy you created and select **Deploy**.
 
     :::image type="content" source="images/configmgr-deploy.png" alt-text="The configuration settings4" lightbox="images/configmgr-deploy.png":::
 
@@ -180,7 +180,7 @@ Follow the steps below to identify the Defender for Endpoint Workspace ID and Wo
 
 2. Under operating system, choose **Windows 7 SP1 and 8.1**.
 
-3. Copy the **Workspace ID** and **Workspace Key** and save them. They will be used later in the process.
+3. Copy the **Workspace ID** and **Workspace Key** and save them. They'll be used later in the process.
 
    :::image type="content" source="images/91b738e4b97c4272fd6d438d8c2d5269.png" alt-text="The onboarding process" lightbox="images/91b738e4b97c4272fd6d438d8c2d5269.png":::
 
@@ -191,7 +191,7 @@ Follow the steps below to identify the Defender for Endpoint Workspace ID and Wo
    - Server SKUs: Windows Server 2008 SP1 or Newer
    - Client SKUs: Windows 7 SP1 and later
 
-   The MMA agent will need to be installed on Windows devices. To install the agent, some systems will need to download the [Update for customer experience and diagnostic telemetry](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry) in order to collect the data with MMA. These system versions include but may not be limited to:
+   The MMA agent needs to be installed on Windows devices. To install the agent, some systems need to download the [Update for customer experience and diagnostic telemetry](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry) in order to collect the data with MMA. These system versions include but may not be limited to:
 
    - Windows 8.1
    - Windows 7
@@ -254,11 +254,11 @@ After completing this task, you now have successfully configured Microsoft Defen
 
 ### Attack surface reduction
 
-The attack surface reduction pillar of Defender for Endpoint includes the feature set that is available under Exploit Guard. Attack surface reduction (ASR) rules, Controlled Folder Access, Network Protection, and Exploit Protection.
+The attack surface reduction pillar of Defender for Endpoint includes the feature set that is available under Exploit Guard. Attack surface reduction rules, Controlled Folder Access, Network Protection, and Exploit Protection.
 
-All these features provide a test mode and a block mode. In test mode, there's no end-user impact. All it does is collect additional telemetry and make it available in the Microsoft 365 Defender portal. The goal with a deployment is to step-by-step move security controls into block mode.
+All these features provide a test mode and a block mode. In test mode, there's no end-user impact. All it does is collect other telemetry and make it available in the Microsoft 365 Defender portal. The goal with a deployment is to step-by-step move security controls into block mode.
 
-To set ASR rules in test mode:
+To set attack surface reduction rules in test mode:
 
 1. In the Microsoft Configuration Manager console, navigate to **Assets and Compliance \> Overview \> Endpoint Protection \> Windows Defender Exploit Guard** and choose **Create Exploit Guard Policy**.
 
@@ -286,9 +286,9 @@ To set ASR rules in test mode:
 
    :::image type="content" source="images/0ccfe3e803be4b56c668b220b51da7f7.png" alt-text="The Microsoft Configuration Manager console5" lightbox="images/0ccfe3e803be4b56c668b220b51da7f7.png":::
 
-After completing this task, you now have successfully configured ASR rules in test mode.
+After completing this task, you now have successfully configured attack surface reduction rules in test mode.
 
-Below are additional steps to verify whether ASR rules are correctly applied to endpoints. (This may take few minutes)
+Below are more steps to verify whether attack surface reduction rules are correctly applied to endpoints. (This may take few minutes)
 
 1. From a web browser, go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>.
 
@@ -298,15 +298,15 @@ Below are additional steps to verify whether ASR rules are correctly applied to 
 
    :::image type="content" source="images/security-center-attack-surface-mgnt-tile.png" alt-text="The attack surface management" lightbox="images/security-center-attack-surface-mgnt-tile.png":::
 
-4. Select **Configuration** tab in Attack surface reduction rules reports. It shows ASR rules configuration overview and ASR rules status on each device.
+4. Select **Configuration** tab in Attack surface reduction rules reports. It shows attack surface reduction rules configuration overview and attack surface reduction rules status on each device.
 
    :::image type="content" source="images/f91f406e6e0aae197a947d3b0e8b2d0d.png" alt-text="The attack surface reduction rules reports1" lightbox="images/f91f406e6e0aae197a947d3b0e8b2d0d.png":::
 
-5. Select each device shows configuration details of ASR rules.
+5. Select each device shows configuration details of attack surface reduction rules.
 
    :::image type="content" source="images/24bfb16ed561cbb468bd8ce51130ca9d.png" alt-text="The attack surface reduction rules reports2" lightbox="images/24bfb16ed561cbb468bd8ce51130ca9d.png":::
 
-See [Optimize ASR rule deployment and detections](/microsoft-365/security/defender-endpoint/configure-machines-asr) for more details.
+See [Optimize attack surface reduction rule deployment and detections](/microsoft-365/security/defender-endpoint/configure-machines-asr) for more details.
 
 #### Set Network Protection rules in test mode
 
@@ -368,7 +368,7 @@ After completing this task, you now have successfully configured Network Protect
 
 You have now successfully configured Controlled folder access in test mode.
 
-## Related topic
+## Related article
 
 - [Onboarding using Microsoft Configuration Manager](onboarding-endpoint-manager.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

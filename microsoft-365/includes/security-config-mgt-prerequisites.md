@@ -20,26 +20,26 @@ When a device onboards to Microsoft Defender for Endpoint:
 
 - The device is surveyed for an existing Intune presence, which is a mobile device management (MDM) enrollment to Intune
 - Devices without an Intune presence will enable the Security Management feature
-- A trust is created with Azure Active Directory if one doesn't already exist
-- Azure Active Directory trust is used to communicate with Intune and retrieve policies
+- A trust is created with Microsoft Entra ID if one doesn't already exist
+- Microsoft Entra ID trust is used to communicate with Intune and retrieve policies
 - Policy retrieve from Intune is enforced on the device by Microsoft Defender for Endpoint
 
 ### Active Directory requirements
 
-When a device that is domain joined creates a trust with Azure Active Directory, this scenario is referred to as a *Hybrid Azure Active Directory Join* scenario. The Security Management for Microsoft Defender for Endpoint fully supports this scenario with the following requirements:
+When a device that is domain joined creates a trust with Microsoft Entra ID, this scenario is referred to as a *Microsoft Entra hybrid join* scenario. The Security Management for Microsoft Defender for Endpoint fully supports this scenario with the following requirements:
 
-- Azure Active Directory Connect (AAD Connect) must be synchronized to the tenant that is used from Microsoft Defender for Endpoint
-- Hybrid Azure Active Directory Join must be configured in your environment (either through Federation or AAD Connect Sync)
-- AAD Connect Sync must include the device objects *in scope* for synchronization with Azure Active Directory (when needed for join)
-- AAD Connect rules for sync [must be modified for Server 2012 R2](/microsoft-365/security/defender-endpoint/troubleshoot-security-config-mgt#instructions-for-applying-computer-join-rule-in-aad-connect) (when support for Server 2012 R2 is needed)
-- All devices must register in the Azure Active Directory of the tenant that hosts Microsoft Defender for Endpoint. Cross-tenant scenarios are not supported. 
+- Microsoft Entra Connect (Microsoft Entra Connect) must be synchronized to the tenant that is used from Microsoft Defender for Endpoint
+- Microsoft Entra hybrid join must be configured in your environment (either through Federation or Microsoft Entra Connect Sync)
+- Microsoft Entra Connect Sync must include the device objects *in scope* for synchronization with Microsoft Entra ID (when needed for join)
+- Microsoft Entra Connect rules for sync [must be modified for Server 2012 R2](/microsoft-365/security/defender-endpoint/troubleshoot-security-config-mgt#instructions-for-applying-computer-join-rule-in-aad-connect) (when support for Server 2012 R2 is needed)
+- All devices must register in the Microsoft Entra ID of the tenant that hosts Microsoft Defender for Endpoint. Cross-tenant scenarios are not supported. 
 
 ### Connectivity requirements
 
 Devices must have access to the following endpoints:
 
-- `enterpriseregistration.windows.net` - For Azure AD registration.
-- `login.microsoftonline.com` - For Azure AD registration.
+- `enterpriseregistration.windows.net` - For Microsoft Entra registration.
+- `login.microsoftonline.com` - For Microsoft Entra registration.
 - `*.dm.microsoft.com` - The use of a wildcard supports the cloud-service endpoints that are used for enrollment, check-in, and reporting, and which can change as the service scales.
 
 > [!Note]
@@ -82,9 +82,9 @@ The following diagram is a conceptual representation of the Microsoft Defender f
 
 1. Devices onboard to Microsoft Defender for Endpoint.
 
-2. A trust is established between each device and Azure AD. When a device has an existing trust, that is used. When devices haven't registered, a new trust is created.
+2. A trust is established between each device and Microsoft Entra ID. When a device has an existing trust, that is used. When devices haven't registered, a new trust is created.
 
-3. Devices use their Azure AD Identity to communicate with Intune. This identity enables Microsoft Intune to distribute policies that are targeted to the devices when they check in.
+3. Devices use their Microsoft Entra identity to communicate with Intune. This identity enables Microsoft Intune to distribute policies that are targeted to the devices when they check in.
 
 4. Defender for Endpoint reports the status of the policy back to Intune.
 
@@ -165,7 +165,9 @@ To support this, configure the *Manage Security settings using Configuration Man
 
 
 
-## Create Azure AD Groups
+<a name='create-azure-ad-groups'></a>
+
+## Create Microsoft Entra groups
 
 After devices onboard to Defender for Endpoint, you'll need to create device groups to support deployment of policy for Microsoft Defender for Endpoint.
 
@@ -182,11 +184,11 @@ To identify devices that have enrolled with Microsoft Defender for Endpoint but 
    - **MDEJoined** - Added to devices that are joined to the directory as part of this scenario.
    - **MDEManaged** - Added to devices that are actively using the security management scenario. This tag is removed from the device if Defender for Endpoint stops managing the security configuration.
 
-You can create groups for these devices [in Azure AD](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) or [from within the Microsoft Intune admin center](/mem/intune/fundamentals/groups-add).
+You can create groups for these devices [in Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) or [from within the Microsoft Intune admin center](/mem/intune/fundamentals/groups-add).
 
 ## Deploy policy
 
-After creating one or more Azure AD groups that contain devices managed by Microsoft Defender for Endpoint, you can create and deploy the following policies for Security Management for Microsoft Defender for Endpoint to those groups:
+After creating one or more Microsoft Entra groups that contain devices managed by Microsoft Defender for Endpoint, you can create and deploy the following policies for Security Management for Microsoft Defender for Endpoint to those groups:
 
 - Antivirus
 - Firewall
@@ -230,7 +232,7 @@ After creating one or more Azure AD groups that contain devices managed by Micro
 
    When your done configuring settings, select **Next**.
 
-7. On the **Assignments** page, select the Azure AD groups that will receive this profile. For more information on assigning profiles, see [Assign user and device profiles](/mem/intune/configuration/device-profile-assign).
+7. On the **Assignments** page, select the Microsoft Entra groups that will receive this profile. For more information on assigning profiles, see [Assign user and device profiles](/mem/intune/configuration/device-profile-assign).
 
    Select **Next** to continue.
 
