@@ -116,7 +116,7 @@ Set performance mode status to enabled via Powershell:
 
 Powershell (Run as admin)
 
-Type "set-MpPreference -PerformanceModeStatus Enabled" w/o the double quoters, and press Enter.
+Type "set-MpPreference -PerformanceModeStatus Enabled" w/o the double quotes, and press Enter.
 
 ![Screenshot of Defender_Performance_Mode_04.](media/microsoft-defender-endpoint-antivirus-performance-mode/defender-performance-mode-5.png)
 
