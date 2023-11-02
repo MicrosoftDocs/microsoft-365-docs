@@ -113,7 +113,7 @@ The key factors that determine which modes are available to you are:
 
 What's the difference between an evaluation and a trial of Defender for Office 365 Plan 2? Aren't they the same thing? Well, yes and no. The licensing in your Microsoft 365 organization makes all the difference:
 
-- **No Defender for Office Plan 2**: If you don't already have Defender for Office 365 Plan 2 (for example, you have standalone EOP, Microsoft 365 E3, Microsoft 365 Business Premium, or a Defender for Office 365 Plan 1 add-on subscription), you can start the Defender for Office 365 Plan 2 experience from the following locations in the Microsoft 365 Defender portal:
+- **No Defender for Office 365 Plan 2**: If you don't already have Defender for Office 365 Plan 2 (for example, you have standalone EOP, Microsoft 365 E3, Microsoft 365 Business Premium, or a Defender for Office 365 Plan 1 add-on subscription), you can start the Defender for Office 365 Plan 2 experience from the following locations in the Microsoft 365 Defender portal:
 
   - The **Microsoft 365 trials** page at <https://security.microsoft.com/trialHorizontalHub>.
   - The **Microsoft Defender for Office 365 evaluation** page at <https://security.microsoft.com/atpEvaluation>.
@@ -165,7 +165,7 @@ Remember, when you evaluate or try Defender for Office 365 in audit mode, specia
    - On the **Microsoft 365 trials** page at <https://security.microsoft.com/trialHorizontalHub>, find and select **Defender for Office 365**.
    - On the **Microsoft Defender for Office 365 evaluation** page at <https://security.microsoft.com/atpEvaluation>, select **Start evaluation**.
 
-2. The **Turn on protection** dialog isn't available in organizations with Defender for Office Plan 1 or Plan 2.
+2. The **Turn on protection** dialog isn't available in organizations with Defender for Office 365 Plan 1 or Plan 2.
 
    In the **Turn on protection** dialog, select **No, I only want reporting**, and then select **Continue**.
 
@@ -177,7 +177,7 @@ Remember, when you evaluate or try Defender for Office 365 in audit mode, specia
      - **Groups**:
        - Members of the specified distribution groups or mail-enabled security groups (dynamic distribution groups aren't supported).
        - The specified Microsoft 365 Groups.
-       - **Domains**: All recipients in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
+       - **Domains**: All recipients in the organization with a primary email address in the specified [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
      Click in the box, start typing a value, and select the value from the results below the box. Repeat this process as many times as necessary. To remove an existing value, select :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: next to the value in the box.
 
@@ -238,7 +238,7 @@ Remember, when you try Defender for Office 365 in **blocking mode**, the Standar
    - On the **Microsoft 365 trials** page at <https://security.microsoft.com/trialHorizontalHub>, find and select **Defender for Office 365**.
    - On the **Microsoft Defender for Office 365 evaluation** page at <https://security.microsoft.com/atpEvaluation>, select **Start evaluation**.
 
-2. The **Turn on protection** dialog isn't available in organizations with Defender for Office Plan 1 or Plan 2.
+2. The **Turn on protection** dialog isn't available in organizations with Defender for Office 365 Plan 1 or Plan 2.
 
    In the **Turn on protection** dialog, select **Yes, protect my organization by blocking threats**, and then select **Continue**.
 
@@ -250,7 +250,7 @@ Remember, when you try Defender for Office 365 in **blocking mode**, the Standar
      - **Groups**:
        - Members of the specified distribution groups or mail-enabled security groups (dynamic distribution groups aren't supported).
        - The specified Microsoft 365 Groups.
-     - **Domains**: All recipients in the specified [accepted domains](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in your organization.
+     - **Domains**: All recipients in the organization with a primary email address in the specified [accepted domain](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).
 
      Click in the box, start typing a value, and select the value from the results below the box. Repeat this process as many times as necessary. To remove an existing value, select :::image type="icon" source="../../media/m365-cc-sc-remove-selection-icon.png" border="false"::: next to the value in the box.
 
@@ -430,12 +430,12 @@ In **audit mode**, you're looking for reports that show detections by the evalua
 
 ## Required permissions
 
-The following permissions are required in [Azure AD](../../admin/add-users/about-admin-roles.md) to set up an evaluation or trial of Defender for Microsoft 365:
+The following permissions are required in [Microsoft Entra ID](/microsoft-365/admin/add-users/about-admin-roles) to set up an evaluation or trial of Defender for Microsoft 365:
 
 - *Create, modify or delete an evaluation or trial*: Membership in the **Security Administrator** or **Global Administrator** roles.
 - *View evaluation policies and reports in audit mode*: Membership in the **Security Administrator** or **Security Reader** roles.
 
-For more information about Azure AD permissions in the Microsoft 365 Defender portal, see [Azure AD roles in the Microsoft 365 Defender portal](mdo-portal-permissions.md#azure-ad-roles-in-the-microsoft-365-defender-portal)
+For more information about Microsoft Entra permissions in the Microsoft 365 Defender portal, see [Microsoft Entra roles in the Microsoft 365 Defender portal](mdo-portal-permissions.md#azure-ad-roles-in-the-microsoft-365-defender-portal)
 
 ## Frequently asked questions
 

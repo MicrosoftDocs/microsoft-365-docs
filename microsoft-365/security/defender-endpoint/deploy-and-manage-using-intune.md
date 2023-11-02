@@ -1,12 +1,9 @@
 ---
-title: Deploy and manage using Intune
+title: Deploy and manage printer protection using Intune
 description: Use Intune OMA-URI and Intune user interface to deploy and manage on printer protection.
 ms.service: microsoft-365-security
 ms.subservice: mde
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-ms.author: v-nsatapathy
+ms.author: dansimp
 author: nimishasatapathy
 ms.localizationpriority: medium
 manager: dansimp
@@ -14,14 +11,15 @@ audience: ITPro
 ms.collection:
 - m365-security
 - tier2
+- mde-asr
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.date: 01/09/2023
+ms.date: 09/25/2023
 ms.reviewer: tewchen
 search.appverid: met150
 ---
 
-# Deploy and manage using Intune
+# Deploy and manage printer protection using Intune
 
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -127,7 +125,7 @@ Go to the Microsoft Intune admin center (<https://endpoint.microsoft.com/>) > **
 
    - In the **Add Row** pane, enter:
      - **Name** as **Evidence folder location**
-     - **OMA-URI** as `./Vendor/MSFT/Defender/Configuration/DataDuplicationRemoteLocation`
+     - **OMA-URI** as `./Device/Vendor/MSFT/Defender/Configuration/DataDuplicationRemoteLocation`
      - **Data Type** as **String**
 
        :::image type="content" source="media/device-control-oma-uri-edit-row.png" alt-text="Set location for file evidence." lightbox="media/device-control-oma-uri-edit-row.png":::

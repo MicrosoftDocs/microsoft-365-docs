@@ -166,7 +166,7 @@ To protect your Microsoft 365 tenant from a ransomware attack, use these Microso
 | Microsoft Defender for Identity |  Identifies, detects, and investigates advanced threats, compromised identities, and malicious insider actions directed at your organization through a cloud-based security interface uses your on-premises Active Directory Domain Services (AD DS) signals. | Credential compromise for AD DS accounts. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
 | Microsoft Defender for Office 365 | Safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. <br><br> Protects against malware, phishing, spoofing, and other attack types. | Phishing attacks. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
 | Microsoft Defender for Endpoint | Enables detection and response to advanced threats across endpoints (devices). | Malware installation and device compromise. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
-| Azure Active Directory (Azure AD) Identity Protection | Automates detection and remediation of identity-based risks and investigation of those risks. | Credential compromise for Azure AD accounts and privilege escalation. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
+| Microsoft Entra ID Protection | Automates detection and remediation of identity-based risks and investigation of those risks. | Credential compromise for Microsoft Entra accounts and privilege escalation. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
 | Defender for Cloud Apps | A cloud access security broker for discovery, investigation, and governance across all your Microsoft and third-party cloud services. | Lateral movement and data exfiltration. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
 |
 
@@ -174,9 +174,9 @@ To protect your Microsoft 365 tenant from a ransomware attack, use these Microso
 
 | Capability or feature | Description | Helps prevent... | Licensing |
 |:-------|:-----|:-------|:-------|
-|Azure AD Password Protection | Block passwords from a common list and custom entries. | Cloud or on-premises user account password determination. |Microsoft 365 E3 or Microsoft 365 E5|
+|Microsoft Entra Password Protection | Block passwords from a common list and custom entries. | Cloud or on-premises user account password determination. |Microsoft 365 E3 or Microsoft 365 E5|
 |MFA enforced with Conditional Access | Require MFA based on the properties of user sign-ins with Conditional Access policies. | Credential compromise and access. | Microsoft 365 E3 or Microsoft 365 E5|
-|MFA enforced with risk-based Conditional Access | Require MFA based on the risk of user sign-ins with Azure AD Identity protection. |Credential compromise and access. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on|
+|MFA enforced with risk-based Conditional Access | Require MFA based on the risk of user sign-ins with Microsoft Entra ID Protection. |Credential compromise and access. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on|
 |
 
 ### 4. Devices

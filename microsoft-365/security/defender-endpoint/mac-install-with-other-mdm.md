@@ -7,13 +7,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.author: mavel
-author: maximvelichko
+author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
+- mde-macos
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150

@@ -17,10 +17,10 @@ ms.custom:
 description: Admins can learn how to use quarantine policies to control what users are able to do to quarantined messages.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 8/2/2023
+ms.date: 9/13/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
@@ -45,7 +45,7 @@ You create and assign quarantine policies in the Microsoft 365 Defender portal o
 
 ## What do you need to know before you begin?
 
-- Quarantine isn't available in Microsoft 365 operated by 21Vianet.
+- In Microsoft 365 operated by 21Vianet, quarantine isn't currently available in the Microsoft 365 Defender portal. Quarantine is available only in the classic Exchange admin center (classic EAC).
 
 - You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Quarantine policies** page, use <https://security.microsoft.com/quarantinePolicies>.
 
@@ -53,14 +53,14 @@ You create and assign quarantine policies in the Microsoft 365 Defender portal o
 
 - If you change the quarantine policy that's assigned to a supported protection feature, the change affects quarantined message _after_ you make the change. Messages that were quarantined before you made the change aren't affected by the settings of the new quarantine policy assignment.
 
-- How long messages that were quarantined by anti-spam and anti-phishing protection are held before they expire is controlled by the **Retain spam in quarantine for this many days** (_QuarantineRetentionPeriod_) in anti-spam policies. For more information, see the table in [Quarantined email messages in EOP and Defender for Office 365](quarantine-about.md).
+- How long messages that were quarantined by anti-spam and anti-phishing protection are held before they expire is controlled by the **Retain spam in quarantine for this many days** (_QuarantineRetentionPeriod_) in anti-spam policies. For more information, see the table in [Quarantine retention](quarantine-about.md#quarantine-retention).
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-  - [Email & collaboration RBAC in the Microsoft 365 Defender portal](mdo-portal-permissions.md): Membership in any of the following role groups:
+  - [Email & collaboration permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md): Membership in any of the following role groups:
     - **Organization Management**
     - **Security Administrator**
     - **Quarantine Administrator**
-  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator**, **Security Administrator**, or **Quarantine Administrator** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
+  - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator**, **Security Administrator**, or **Quarantine Administrator** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 ## Step 1: Create quarantine policies in the Microsoft 365 Defender portal
 
@@ -109,6 +109,9 @@ You create and assign quarantine policies in the Microsoft 365 Defender portal o
 Back on the **Quarantine policy** page, the policy that you created is now listed. You're ready to assign the quarantine policy to a supported security feature as described in the [Step 2](#step-2-assign-a-quarantine-policy-to-supported-features) section.
 
 ### Create quarantine policies in PowerShell
+
+> [!TIP]
+> The PermissionToAllowSender permission in quarantine policies in PowerShell isn't used. 
 
 If you'd rather use PowerShell to create quarantine policies, connect to [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) or [standalone Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell) and use the following syntax:
 
@@ -468,6 +471,9 @@ Quarantine notifications are already localized based on the recipient's language
 
 :::image type="content" source="../../media/quarantine-tags-esn-customization-disclaimer.png" alt-text="A custom disclaimer at the bottom of a quarantine notification." lightbox="../../media/quarantine-tags-esn-customization-disclaimer.png":::
 
+> [!TIP]
+> A custom quarantine notification for a different language is shown to users only when their account/mailbox language matches the language in the custom quarantine notification.
+
 To create customized quarantine notifications for up to three languages, do the following steps:
 
 1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Quarantine policies** in the **Rules** section. Or, to go directly to the **Quarantine policies** page, use <https://security.microsoft.com/quarantinePolicies>.
@@ -476,12 +482,12 @@ To create customized quarantine notifications for up to three languages, do the 
 
 3. In the **Quarantine notification settings** flyout that opens, do the following steps:
 
-   1. Select the language from the **Choose language** box. The default value is **Default**, which means the default language for the Microsoft 365 organization. For more information, see [How to set language and region settings for Microsoft 365](/office365/troubleshoot/access-management/set-language-and-region).
+   1. Select the language from the **Choose language** box. The default value is **English_USA**.
 
       Although this box is in the middle of the page, you need to select it first. If you enter values in the **Sender display name**, **Subject**, or **Disclaimer** boxes before you select the language value, the other values are removed and you start over when you select the language value.
 
-      > [!NOTE]
-      > The language value **English** maps to every English language code except en-US. If you have users with en-US mailboxes only, use the value **Default**. If you have a mix of mailboxes with en-US and other English languages codes (en-GB, en-CA, en-AU, etc.), use the language value **Default** in one customized quarantine notification, and the language value **English** in another customized quarantine notification.
+      > [!TIP]
+      > If you have a mix of mailboxes with en-US and other English languages codes (en-GB, en-CA, en-AU, etc.), use the language value **English_USA** in one customized quarantine notification, and the language value **English_Great Britain** in another customized quarantine notification.
 
    2. Enter values for **Sender display name**, **Subject**, and **Disclaimer**. The values must be unique for each language. If you try to reuse a value in a different language, you'll get an error when you select **Save**.
    3. Select the **Add** button.
@@ -501,7 +507,7 @@ Even if you don't customize quarantine notifications for different languages, se
 
 - **Specify sender address**: Select an existing user for the sender email address of quarantine notifications. The default sender is quarantine@messaging.microsoft.com.
 
-- **Use my company logo**: Select this option to replace the default Microsoft logo that's used at the top of quarantine notifications. Before you do this step, you need to follow the instructions in [Customize the Microsoft 365 theme for your organization](../../admin/setup/customize-your-organization-theme.md) to upload your custom logo.
+- **Use my company logo**: Select this option to replace the default Microsoft logo that's used at the top of quarantine notifications. Before you do this step, you need to follow the instructions in [Customize the Microsoft 365 theme for your organization](/microsoft-365/admin/setup/customize-your-organization-theme) to upload your custom logo.
 
   A custom logo in a quarantine notification is shown in the following screenshot:
 
@@ -521,13 +527,13 @@ Get-QuarantinePolicy -QuarantinePolicyType GlobalQuarantinePolicy | Set-Quaranti
 
 **Notes**:
 
-- You can specify a maximum of 3 available languages (the value Default is the [default language for the Microsoft 365 organization](/office365/troubleshoot/access-management/set-language-and-region).
+- You can specify a maximum of 3 available languages. The value Default is en-US. The value English is everything else (en-GB, en-CA, en-AU, etc.).
 - For each language, you need to specify unique _MultiLanguageCustomDisclaimer_, _ESNCustomSubject_, and _MultiLanguageSenderName_ values.
 - If any of the text values contain quotation marks, you need to escape the quotation mark with an additional quotation mark. For example, change `d'assistance` to `d''assistance`.
 
 This example configures the following settings:
 
-- Customized quarantine notifications for the default language and Spanish.
+- Customized quarantine notifications for US English and Spanish.
 - The quarantine notification sender's email address is set to michelle@contoso.onmicrosoft.com.
 
 ```powershell
@@ -631,7 +637,7 @@ By default, the default alert policy named **User requested to release a quarant
 
 Admins can customize the email notification recipients or create a custom alert policy for more options.
 
-For more information about alert policies, see [Alert policies in Microsoft 365](/purview/alert-policies).
+For more information about alert policies, see [Alert policies in the Microsoft 365 Defender portal](alert-policies-defender-portal.md).
 
 ## Appendix
 
@@ -791,7 +797,7 @@ If the **Delete** permission is enabled:
 If the **Delete** permission is disabled, users can't delete their own messages from quarantine (the action isn't available).
 
 > [!TIP]
-> Admins can find out who deleted a quarantined message by searching the admin audit log. For instructions, see [Find who deleted a quarantined message](quarantine-admin-manage-messages-files.md#find-who-deleted-a-quarantined-message).
+> Admins can find out who deleted a quarantined message by searching the admin audit log. For instructions, see [Find who deleted a quarantined message](quarantine-admin-manage-messages-files.md#find-who-deleted-a-quarantined-message). Admins can use [message trace](message-trace-defender-portal.md) to find out what happened to a released message if the original recipient can't find it.
 
 ##### Preview permission
 

@@ -2,8 +2,8 @@
 title: "Step 5. Deploy hybrid worker productivity apps and services"
 f1.keywords:
 - NOCSH
-author: dansimp
-ms.author: dansimp
+author: brendacarter
+ms.author: bcarter
 manager: dansimp
 ms.date: 05/01/2020
 audience: ITPro
@@ -37,11 +37,11 @@ To be productive, people need to communicate and collaborate with one another. T
 
 ## Keep people connected with Microsoft Teams
 
-Teams with Microsoft Teams allows your organization to chat, meet, call, and collaborate all in one place. Millions of people get their work done with teams every day because it brings together everything you need to work on-site or remotely into a hub for teamwork. 
+Teams with Microsoft Teams allows your organization to chat, meet, call, and collaborate all in one place. Millions of people get their work done with teams every day because it brings together everything you need to work on-site or remotely into a hub for teamwork.
 
-For detailed guidance, see [Support remote workers using Microsoft Teams](/microsoftteams/support-remote-work-with-teams). 
+For detailed guidance, see [Support remote workers using Microsoft Teams](/microsoftteams/support-remote-work-with-teams).
 
-Watch the [Enabling hybrid work with Microsoft Teams webcasts](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/) for guidance and demos on using Teams for hybrid work.
+Read [Enabling hybrid work with Microsoft 365 and collaborative apps](https://www.microsoft.com/en-us/microsoft-365/blog/2022/07/19/from-enabling-hybrid-work-to-creating-collaborative-experiences-heres-whats-new-in-microsoft-365/) for guidance and demos on using Teams for hybrid work.
 
 ### Chat and conversations
 
@@ -65,7 +65,7 @@ Apps and workflows let hybrid workers be more productive in Teams, by collecting
 
 With Outlook, hybrid workers can stay connected and organized with email, calendars, contacts, tasks, and more—together in one place. Outlook helps you stay on track and prioritize your day based on what’s relevant to you. Outlook enables you to share attachments right from OneDrive, plan and join Teams meetings, view and share calendars, and provide delegate permissions to others. Knowing what’s coming up next across both work and personal commitments and what needs attention can help hybrid workers focus on what matters. Outlook provides helpful ways for hybrid workers to manage their time and to find what they need easily, including files, people in the organization, and more. 
 
-See [this article](../security/office-365-security/secure-email-recommended-policies.md) for the recommended identity and device access policies to protect organizational email and email clients that support modern authentication and Conditional Access.
+See [this article](../security/office-365-security/zero-trust-identity-device-access-policies-exchange.md) for the recommended identity and device access policies to protect organizational email and email clients that support modern authentication and Conditional Access.
 
 ## Store and collaborate on files with SharePoint and OneDrive
 
@@ -78,7 +78,7 @@ You might have to migrate your documents to SharePoint or OneDrive from:
 - [File shares](/sharepointmigration/fileshare-to-odsp-migration-guide)
 - [Box](/sharepointmigration/box-to-onedrive-and-sharepoint-migration-guide)
 
-To protect SharePoint and OneDrive, see [this article](../security/office-365-security/sharepoint-file-access-policies.md) for the recommended identity and device access policies.
+To protect SharePoint and OneDrive, see [this article](../security/office-365-security/zero-trust-identity-device-access-policies-sharepoint.md) for the recommended identity and device access policies.
 
 ## Create and collaborate on content with Microsoft 365 Apps
 
@@ -89,7 +89,6 @@ For more information, see the [Deployment guide for Microsoft 365 Apps](/deployo
 ## Admin technical resources for productivity apps and services
 
 - [Support remote workers using Microsoft Teams](/microsoftteams/support-remote-work-with-teams)
-- [Enabling hybrid work with Microsoft Teams webcasts](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/)
 - [Teams Customer Success Kit download](https://www.microsoft.com/download/details.aspx?id=54244)
 - [Tools for driving Teams adoption](/microsoftteams/adopt-tools-and-downloads) 
 - [Create a change management strategy for Microsoft Teams](/MicrosoftTeams/change-management-strategy)

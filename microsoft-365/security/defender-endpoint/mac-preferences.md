@@ -11,6 +11,7 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
+- mde-macos
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
@@ -825,7 +826,7 @@ The following configuration profile (or, in case of JAMF, a property list that c
     <key>tamperProtection</key>
     <dict>
         <key>enforcementLevel</key>
-        <string>block</key>
+        <string>block</string>
     </dict>
 </dict>
 </plist>
@@ -1034,7 +1035,7 @@ The following templates contain entries for all settings described in this docum
     <key>tamperProtection</key>
     <dict>
         <key>enforcementLevel</key>
-        <string>block</key>
+        <string>block</string>
         <key>exclusions</key>
         <array>
         <dict>
@@ -1222,7 +1223,7 @@ The following templates contain entries for all settings described in this docum
                 <key>tamperProtection</key>
                 <dict>
                     <key>enforcementLevel</key>
-                    <string>block</key>
+                    <string>block</string>
                     <key>exclusions</key>
                     <array>
                     <dict>

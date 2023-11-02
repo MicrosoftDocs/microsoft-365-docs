@@ -1,10 +1,12 @@
 ---
-author: LanaChin
-ms.author: v-lanachin
-ms.date: 08/29/2022
+author: lana-chin
+ms.author: v-chinlana
+manager: serdars
+ms.date: 10/17/2023
 ms.topic: include
 audience: admin
 ms.service: microsoft-365-frontline
+ms.collection: m365-frontline 
 ---
 To check the status of the connection you set up using the operation ID that you received in email:
 

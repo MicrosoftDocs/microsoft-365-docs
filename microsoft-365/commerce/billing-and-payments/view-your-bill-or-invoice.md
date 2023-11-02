@@ -51,7 +51,7 @@ You must be a Global or Billing admin to do the steps described in this article.
 ## View your bill or invoice
 
 1. Go to the Microsoft 365 admin center.
-    - If you're using the **Simplified view**, select **Subscriptions**, then select **View invoices**.
+    - If you're using the **Simplified view**, select **Billing**, then select **View invoices**.
     - If you're using the **Dashboard view**, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.
 2. Select an invoice from the list to view the details online. If you don’t see any invoices, change the date range.
 3. To download the .PDF version of your invoice, select **Download PDF**.
@@ -93,7 +93,6 @@ Select the following **Run Tests: Unknown Charge** link to open the diagnostic t
 [Understand your invoice for your Microsoft MCA billing account](understand-your-invoice.md) (article)\
 [Understand your invoice for your Microsoft MOSA billing account](understand-your-invoice2.md) (article)\
 [Payment options for your Microsoft business subscription](pay-for-your-subscription.md) (article)\
-[How to pay for your Microsoft business subscription with a billing profile](pay-for-subscription-billing-profile.md)\
 [Manage payment methods](manage-payment-methods.md) (article)\
 [Billing information for Microsoft 365 for business in Mexico](mexico-billing-info.md) (article)\
 [Minecraft: Education Edition payment options](/education/windows/school-get-minecraft) (article)

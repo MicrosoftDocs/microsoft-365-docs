@@ -13,7 +13,7 @@ ms.collection:
 ms.custom: 
 ms.topic: overview
 ms.subservice: m365d
-ms.date: 05/31/2023
+ms.date: 10/30/2023
 ms.reviewer: 
 search.appverid: met150
 ---
@@ -45,10 +45,9 @@ Centralized permissions management is supported for the following solutions:
 |Microsoft 365 Defender|Centralized permissions management for Microsoft 365 Defender experiences.|
 |Microsoft Defender for Endpoint|Full support for all endpoint data and actions. All roles are compatible with the device group's scope as defined on the device groups page.|
 |Microsoft Defender Vulnerability Management | Centralized permissions management for all  Defender Vulnerability Management capabilities.|
-|Microsoft Defender for Office 365|Support for all scenarios that were controlled by **Exchange Online Protection roles** (EOP), configured in the Microsoft 365 Defender portal under **Permissions** \> **Email & collaboration roles**. </br></br> **Note:** Scenarios that adhere to Exchange Online roles are not impacted by this new model and will still be managed by Exchange Online. The Microsoft 365 Defender RBAC model will initially be available for organizations with Microsoft Defender for Office Plan 2 licenses only. This capability is not available to users on trial licenses.|
-|Microsoft for Identity|Full support for all identity data and actions. </br></br> **Note:** Defender for Identity experiences will also adhere to permissions granted from [Microsoft Defender for Cloud Apps](https://security.microsoft.com/cloudapps/permissions/roles). For more information, see [Microsoft Defender for Identity role groups](https://go.microsoft.com/fwlink/?linkid=2202729).|
+|Microsoft Defender for Office 365| Full support for all email & collaboration data and actions scenarios that are controlled by Exchange Online Protection roles (EOP) as well as scenarios controlled by Exchange Online (EXO). </br></br> **Note:** The Microsoft 365 Defender RBAC model will initially be available for organizations with Microsoft Defender for Office Plan 2 licenses only. This capability is not available to users on trial licenses. </br></br>Granular delegated admin privileges (GDAP) is not supported. </br></br>Remote PowerShell is not supported. |
+|Microsoft Defender for Identity|Full support for all identity data and actions. </br></br> **Note:** Defender for Identity experiences will also adhere to permissions granted from [Microsoft Defender for Cloud Apps](https://security.microsoft.com/cloudapps/permissions/roles). For more information, see [Microsoft Defender for Identity role groups](https://go.microsoft.com/fwlink/?linkid=2202729).|
 |Microsoft Secure Score|Full support for all Secure Score data from the [Products included in Secure Score](../defender/microsoft-secure-score.md#products-included-in-secure-score).|
-
 
 > [!NOTE]
 > Scenarios and experiences controlled by Compliance permissions are still managed in the Microsoft Purview compliance portal.
@@ -61,15 +60,18 @@ This section provides useful information on what you need to know before you sta
 
 ### Permissions pre-requisites
 
-- You must be a Global Administrator or Security Administrator in Azure Active Directory to:
+> [!NOTE]
+> Unified RBAC - Preview experience is currently not available for US Government customers using GCC and GCC High.
+
+- You must be a Global Administrator or Security Administrator in Microsoft Entra ID to:
 
   - Gain initial access to [Permissions and roles](https://security.microsoft.com/mtp_roles) in the Microsoft 365 Defender portal.
 
   - Manage roles and permissions in Microsoft 365 Defender Unified RBAC.
 
-  - Create a custom role that can grant access to security groups or individual users to manage roles and permissions in Microsoft 365 Defender unified RBAC. This will remove the need for Azure Active Directory global roles to manage permissions. To do this you need assign the **Authorization** permission in Microsoft 365 Defender Unified RBAC. For details on how to assign the Authorization permission, see [Create a role to access and manage roles and permissions](../defender/create-custom-rbac-roles.md#create-a-role-to-access-and-manage-roles-and-permissions).
+  - Create a custom role that can grant access to security groups or individual users to manage roles and permissions in Microsoft 365 Defender unified RBAC. This will remove the need for Microsoft Entra global roles to manage permissions. To do this you need assign the **Authorization** permission in Microsoft 365 Defender Unified RBAC. For details on how to assign the Authorization permission, see [Create a role to access and manage roles and permissions](../defender/create-custom-rbac-roles.md#create-a-role-to-access-and-manage-roles-and-permissions).
 
-- The Microsoft 365 Defender security solution will continue to respect existing Azure Active Directory global roles when you activate the Microsoft 365 Defender Unified RBAC model for some or all of your workloads i.e. Global Admins will retain assigned admin privileges.
+- The Microsoft 365 Defender security solution will continue to respect existing Microsoft Entra global roles when you activate the Microsoft 365 Defender Unified RBAC model for some or all of your workloads i.e. Global Admins will retain assigned admin privileges.
 
 ### Migration of existing roles and permissions
 
@@ -102,4 +104,5 @@ Use the following steps as a guide to start using the Microsoft 365 Defender Uni
 Watch the following video to see the steps above in action:
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW12hyh]
+
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

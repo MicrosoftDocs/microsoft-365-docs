@@ -14,9 +14,7 @@ ms.collection:
   - highpri
   - m365solution-frontline
   - m365solution-scenario
-  - EngageScoreOct2022
   - contentengagementFY23
-  - tier1
 ms.reviewer: aaglick
 appliesto: 
   - Microsoft Teams

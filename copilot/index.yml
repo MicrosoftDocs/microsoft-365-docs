@@ -1,0 +1,90 @@
+### YamlMime:Hub
+
+title: Microsoft 365 Copilot documentation # < 60 chars
+summary: Learn about Microsoft 365 Copilot and how your organization can use this copilot for work. # < 160 chars
+brand: m365 # brand: aspnet | azure | bash | bizapps | bot-framework | dotnet | dynamics | education | enterprise-mobility | gaming | graph | m365 | nuget | office | powershell | playfab | power-apps | power-automate | power-bi | power-platform | power-virtual-agents | project | sharepoint | sql | surface | system-center | teams | visual-studio | windows | workplace-analytics | xamarin
+
+metadata:
+  title: Microsoft 365 Copilot documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn about Microsoft 365 Copilot and how your organization can use this copilot for work. # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: microsoft-365-copilot 
+  ms.topic: hub-page # Required
+  ms.collection: essentials-hub-or-landing # Optional; Remove if not applicable.
+  author: samanro #Required; your GitHub user alias, with correct capitalization.
+  ms.author: samanro #Required; microsoft alias of author; optional team alias.
+  ms.date: 09/21/2023 #Required; mm/dd/yyyy format.
+
+
+
+# additionalContent section (Optional; Remove if not applicable.)
+# Card with links style
+additionalContent:
+  # Supports up to 4 subsections
+  sections:
+    - items:
+        # Card
+        - title: Get ready for Microsoft 365 Copilot
+          links:
+            - text: Microsoft 365 Copilot overview
+              url: microsoft-365-copilot-overview.md
+            - text: Sensitivity labels
+              url: /microsoft-365/compliance/sensitivity-labels
+            - text: Review current access, Entra ID
+              url: /azure/active-directory/governance/review-your-access
+            - text: Data loss prevention
+              url: /microsoft-365/compliance/dlp-learn-about-dlp
+            - text: Microsoft 365 Copilot Service Description
+              url: /office365/servicedescriptions/office-365-platform-service-description/microsoft-365-copilot/
+        # Card
+        - title: Get started with Microsoft 365 Copilot
+          links:
+            - text: Copilot requirements
+              url: microsoft-365-copilot-requirements.md
+            - text: Setup
+              url: microsoft-365-copilot-setup.md
+            - text: Overview of update channels
+              url: /deployoffice/updates/overview-update-channels
+            - text: Enable users
+              url: microsoft-365-copilot-enable-users.md
+            - text: Drive adoption
+              url: https://adoption.microsoft.com/Copilot/
+        # Card
+        - title: Security, privacy, and compliance of Microsoft 365 Copilot
+          links:
+            - text: Data, Privacy, and Security
+              url: microsoft-365-copilot-privacy.md
+            - text: Zero trust guidance
+              url: /security/zero-trust/zero-trust-tech-illus#zero-trust-for-microsoft-365-copilot
+            - text: Isolation controls
+              url: /compliance/assurance/assurance-microsoft-365-isolation-controls
+        # Card
+        - title: Manage and extend Microsoft 365 Copilot
+          links:
+            - text: Manage Microsoft 365 Copilot with the Copilot page
+              url: microsoft-365-copilot-page.md
+            - text: Related admin controls
+              url: /microsoft-365/solutions/tenant-management-overview
+            - text: Extend Microsoft 365 Copilot
+              url: /microsoftteams/platform/copilot/how-to-extend-copilot#how-to-make-your-graph-connector-work-better-with-copilot
+
+        # Card
+        - title: Get trained on Microsoft 365 Copilot
+          links:
+            - text: Getting ready for Microsoft 365 Copilot learning path
+              url: /training/paths/prepare-your-organization-microsoft-365-copilot/
+            - text: 30-day challenge
+              url: /collections/moqrteeo227?WT.mc_id=cloudskillschallenge_27423acc-98fb-44fc-855a-f976517fe2de
+        # Card
+        - title: Video library of Microsoft 365 Copilot content
+          links:
+            - text: Mechanics Copilot playlist
+              url: https://www.youtube.com/playlist?list=PLXtHYVsvn_b-NeN9BbLb5sLpIGfdP8j78
+        # Card
+        - title: End user content about Microsoft 365 Copilot
+          links:
+            - text: Copilot capabilities
+              url: https://support.microsoft.com/copilot
+            - text: Copilot lab
+              url: https://copilot.cloud.microsoft
+#            - text: Use additional data sources with Microsoft 365 Chat
+#              url: https://go.microsoft.com/fwlink/?linkid=2250210

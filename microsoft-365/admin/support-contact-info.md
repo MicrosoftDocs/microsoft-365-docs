@@ -15,7 +15,7 @@ ms.custom: VSBFY23
 search.appverid:
 - MET150
 description: "Learn how to get phone support for your Microsoft 365 for business subscription. You must be an admin for a business subscription to get support."
-ms.date: 06/07/2023
+ms.date: 10/27/2023
 ---
 
 # Find Microsoft 365 for business support phone numbers by country or region
@@ -1204,7 +1204,7 @@ Spanish: 24 hours a day, 7 days a week
 [Svalbard](#svalbard)\
 [Sweden](#sweden)\
 [Switzerland](#switzerland)\
-[Turkey](#turkey)\
+[Türkiye](#türkiye)\
 [Ukraine](#ukraine)\
 [United Kingdom](#united-kingdom)\
 [Vatican City](#vatican-city)
@@ -2226,7 +2226,7 @@ English: 24 hours a day, 7 days a week
    :::column-end:::
 :::row-end:::
 
-### Turkey
+### Türkiye
 
 :::row:::
    :::column:::

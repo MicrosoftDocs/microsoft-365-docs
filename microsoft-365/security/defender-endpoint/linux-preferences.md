@@ -12,6 +12,7 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
+- mde-linux
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
@@ -64,7 +65,7 @@ Specifies the enforcement preference of antivirus engine. There are three values
   - Real-time protection is turned off.
 - [Passive (`passive`)](microsoft-defender-antivirus-compatibility.md#passive-mode-or-edr-block-mode): Runs the antivirus engine in passive mode. In this:
   - Real-time protection is turned off: Threats are not remediated by Microsoft Defender Antivirus.
-  - On-demand scanning is turned on: Still use the scan capabilites on the endpoint.
+  - On-demand scanning is turned on: Still use the scan capabilities on the endpoint.
   - Automatic threat remediation is turned off: No files will be moved and security admin is expected to take required action.
   - Security intelligence updates are turned on: Alerts will be available on security admins tenant.
 
@@ -221,13 +222,40 @@ Specifies the behavior of RTP on mount point marked as noexec. There are two val
 
 Configure filesystems to be unmonitored/excluded from Real Time Protection(RTP). The filesystems configured are validated against Microsoft Defender's list of permitted filesystems. Only post successful validation, will the filesystem be allowed to be unmonitored. These configured unmonitored filesystems will still be scanned by Quick, Full, and custom scans.
 
-By default, NFS and Fuse are unmonitored from RTP, Quick, and Full scans. However, they can still be scanned by a custom scan.
-
 |Description|Value|
 |---|---|
 |**Key**|unmonitoredFilesystems|
 |**Data type**|Array of strings|
 |**Comments**|Configured filesystem will be unmonitored only if it is present in Microsoft's list of permitted unmonitored filesystems.|
+
+By default, NFS and Fuse are unmonitored from RTP, Quick, and Full scans. However, they can still be scanned by a custom scan. For example, to remove NFS from the list of unmonitored filesystems list, update the managed config file as shown below. This will automatically add NFS to the list of monitored filesystems for RTP.
+
+```JSON
+{
+   "antivirusEngine":{
+      "unmonitoredFilesystems": ["Fuse"]
+  }
+}
+```
+To remove both NFS and Fuse from unmonitored list of filesystems, do the following
+
+```JSON
+{
+   "antivirusEngine":{
+      "unmonitoredFilesystems": []
+  }
+}
+```
+
+
+>[!NOTE]
+> Below is the default list of monitored filesystems for RTP -
+>
+>**[btrfs, ecryptfs, ext2, ext3, ext4, fuseblk, jfs, overlay, ramfs, reiserfs, tmpfs, vfat, xfs]**
+>
+>If any monitored filesystem needs to be added to the list of unmonitored filesystems,then it needs to be evaluated and enabled by Microsoft via cloud config. Following which customers can update managed_mdatp.json to unmonitor that filesystem.
+
+
 
 #### Configure file hash computation feature
 
@@ -579,7 +607,18 @@ Determines whether module load events are monitored using eBPF and scanned.
 |**Possible values**|disabled (default) <p> enabled|
 |**Comments**|Available in Defender for Endpoint version 101.68.80 or higher.|
 
-#### Network protection configurations
+#### Report AV Suspicious Events to EDR
+
+Determines whether suspicious events from Antivirus are reported to EDR.
+
+|Description|Value|
+|---|---|
+|**Key**|sendLowfiEvents|
+|**Data type**|String|
+|**Possible values**|disabled (default) <p> enabled|
+|**Comments**|Available in Defender for Endpoint version 101.23062.0010 or higher.|
+
+### Network protection configurations
 
 The following settings can be used to configure advanced Network Protection inspection features to control what traffic gets inspected by Network Protection.
 
@@ -592,7 +631,7 @@ The following settings can be used to configure advanced Network Protection insp
 |**Data type**|Dictionary (nested preference)|
 |**Comments**|See the following sections for a description of the dictionary contents.|
 
-##### Configure ICMP inspection
+#### Configure ICMP inspection
 Determines whether ICMP events are monitored and scanned.
 
 >[!NOTE]

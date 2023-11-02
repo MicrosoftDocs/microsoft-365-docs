@@ -1,11 +1,7 @@
 ---
 title: Manage endpoint security policies in Microsoft Defender for Endpoint
 description: Learn how to set windows, mac, and linux endpoint security policies such as antivirus, firewall, endpoint detection and response in Microsoft Defender for Endpoint.
-keywords: policies, security policy, configure policies, 
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
@@ -17,7 +13,7 @@ ms.collection:
 ms.topic: how-to
 ms.subservice: mde
 search.appverid: met150
-ms.date: 07/10/2023
+ms.date: 09/14/2023
 ---
 
 # Manage endpoint security policies in Microsoft Defender for Endpoint
@@ -39,6 +35,8 @@ Use security policies to manage security settings on devices. As a security admi
 
 You'll find endpoint security policies under **Endpoints > Configuration management > Endpoint security policies**.
 
+> [!NOTE]
+> The **Endpoint Security Policies** page in Microsoft 365 Defender is available only for [users with the security administrator role in Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/assign-portal-access). Any other user role, such as Security Reader, cannot access the portal. When a user has the required permissions to view policies in the Microsoft 365 Defender portal, the data is presented based on Intune permissions. If the user is in scope for Intune role-based access control, it applies to the list of policies presented in the Microsoft 365 Defender portal. We recommend granting security administrators with the [Intune built-in role, “Endpoint Security Manager”](/mem/intune/fundamentals/role-based-access-control#built-in-roles) to effectively align the level of permissions between Intune and Microsoft 365 Defender.
 
 :::image type="content" source="./images/endpoint-security-policies.png" alt-text="Managing Endpoint security policies in the Microsoft 365 Defender portal":::
 
@@ -46,13 +44,13 @@ The following list provides a brief description of each endpoint security policy
 
 - **Antivirus** - Antivirus policies help security admins focus on managing the discrete group of antivirus settings for managed devices. 
 
-- **Disk encryption** - Endpoint security Disk encryption profiles focus on only the settings that are relevant for a devices built-in encryption method, like FileVault or BitLocker. This focus makes it easy for security admins to manage disk encryption settings without having to navigate a host of unrelated settings.
+- **Disk encryption** - Endpoint security disk encryption profiles focus on only the settings that are relevant for a devices built-in encryption method, like FileVault or BitLocker. This focus makes it easy for security admins to manage disk encryption settings without having to navigate a host of unrelated settings.
 
 - **Firewall** - Use the endpoint security Firewall policy in Intune to configure a devices built-in firewall for devices that run macOS and Windows 10/11.
 
 - **Endpoint detection and response** - When you integrate Microsoft Defender for Endpoint with Intune, use the endpoint security policies for endpoint detection and response (EDR) to manage the EDR settings and onboard devices to Microsoft Defender for Endpoint.
 
-- **Attack surface reduction** - When Defender antivirus is in use on your Windows 10/11 devices, use Intune endpoint security policies for Attack surface reduction to manage those settings for your devices.
+- **Attack surface reduction** - When Microsoft Defender Antivirus is in use on your Windows 10/11 devices, use Intune endpoint security policies for attack surface reduction to manage those settings for your devices.
 
 
 ## Create an endpoint security policy

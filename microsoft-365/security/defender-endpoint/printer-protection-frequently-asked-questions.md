@@ -6,7 +6,7 @@ ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: v-nsatapathy
+ms.author: dansimp
 author: nimishasatapathy
 ms.localizationpriority: medium
 manager: dansimp
@@ -14,6 +14,7 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
+- mde-asr
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.date: 01/09/2023
@@ -59,7 +60,7 @@ If the policy still isn't working, contact support, and share your support cab. 
 
 ## Why is there no configuration UX for some policy groups? 
 
-There is no configuration UX for **Define device control policy groups** and **Define device control policy rules** on your Group Policy. But, you can still get the related `.adml` and `.admx` files by selecting **Raw** and **Save as** at the [WindowsDefender.adml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.adml) and [WindowsDefender.admx](https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/WindowsDefender.admx) files.
+There is no configuration UX for **Define device control policy groups** and **Define device control policy rules** on your Group Policy. But, you can still get the related `.adml` and `.admx` files by selecting **Raw** and **Save as** at the [WindowsDefender.adml](https://github.com/microsoft/mdatp-devicecontrol/blob/main/WindowsDefender.adml) and [WindowsDefender.admx](https://github.com/microsoft/mdatp-devicecontrol/blob/main/WindowsDefender.admx) files.
 
 ## How do I confirm that the latest policy has been deployed to the target machine?
 
@@ -99,9 +100,11 @@ DeviceFileEvents
    :::image type="content" source="media/details.png" alt-text="This is details screenshot." lightbox="media/details.png":::
  
  
-## How do I find Sid for Azure AD group?
+<a name='how-do-i-find-sid-for-azure-ad-group'></a>
 
-Different from AD group, the Sid is using Object ID for Azure AD group. You can find the Object ID from Azure portal.
+## How do I find Sid for Microsoft Entra group?
+
+Different from AD group, the Sid is using Object ID for Microsoft Entra group. You can find the Object ID from Azure portal.
 
 :::image type="content" source="media/device-control-user-group.png" alt-text="This is device control user group screenshot." lightbox="media/device-control-user-group.png":::
 

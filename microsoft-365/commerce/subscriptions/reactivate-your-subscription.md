@@ -48,7 +48,7 @@ You can reactivate a subscription in the Microsoft 365 admin center. However, th
 If you have an MCA billing account type, after you select **Reactivate this subscription**, we create a new subscription with the same commitment term as the previous subscription. The new subscription starts on the day of reactivation. If you have questions or need help with reactivating your subscription, [contact support](../../admin/get-help-support.md).
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
-    - If you’re using the **Simplified view**, select **Subscriptions**.
+    - If you’re using the **Simplified view**, select **Billing**.
     - If you’re using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. Select the subscription that you want to reactivate.
 3. In the **Billing settings** section, under **Subscription status**, select **Reactivate**.
@@ -57,7 +57,7 @@ If you have an MCA billing account type, after you select **Reactivate this subs
 **If you have an MOSA billing account type:**
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
-    - If you’re using the **Simplified view**, select **Subscriptions**.
+    - If you’re using the **Simplified view**, select **Billing**.
     - If you’re using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. Select the subscription that you want to reactivate.
 3. In the **Subscription and payment settings** section, under **Subscription status**, select **Reactivate subscription**.

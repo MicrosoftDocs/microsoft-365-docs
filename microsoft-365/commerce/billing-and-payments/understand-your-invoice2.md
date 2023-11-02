@@ -170,7 +170,7 @@ If you pay by invoice, you can add or change the purchase order (PO) number for 
 > You can't add a PO number to an existing invoice. The PO number will appear on all future invoices.
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank>Microsoft 365 admin center</a>.
-    - If you’re using the **Simplified view**, select **Subscriptions**.
+    - If you’re using the **Simplified view**, select **Billing**.
     - If you’re using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. Select the subscription that you want to change.
 3. On the subscription details page, in the **Subscription and payment settings** section, under **Payment method**, select **Edit invoice**.
@@ -193,7 +193,6 @@ Select the following **Run Tests: Unknown Charge** link to open the diagnostic t
 [View your invoice in the Microsoft 365 admin center](view-your-bill-or-invoice.md) (article)\
 [Understand your invoice for your Microsoft MCA billing account](understand-your-invoice.md) (article) \
 [Payment options for your Microsoft business subscription](pay-for-your-subscription.md) (article) \
-[How to pay for your Microsoft business subscription with a billing profile](pay-for-subscription-billing-profile.md) \
 [Manage payment methods for Microsoft business accounts](manage-payment-methods.md) (article) \
 [Billing information for Microsoft 365 for business in Mexico](mexico-billing-info.md) (article) \
 [Minecraft: Education Edition payment options](/education/windows/school-get-minecraft) (article)

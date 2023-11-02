@@ -14,6 +14,7 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
+- mde-ios
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
@@ -37,7 +38,7 @@ Want to experience Defender for Endpoint? [Sign up for a free trial.](https://si
 
 ## Conditional Access with Defender for Endpoint on iOS
 
-Microsoft Defender for Endpoint on iOS along with Microsoft Intune and Azure Active Directory enables enforcing Device compliance and Conditional Access policies based on device risk score. Defender for Endpoint is a Mobile Threat Defense (MTD) solution that you can deploy to leverage this capability via Intune.
+Microsoft Defender for Endpoint on iOS along with Microsoft Intune and Microsoft Entra ID enables enforcing Device compliance and Conditional Access policies based on device risk score. Defender for Endpoint is a Mobile Threat Defense (MTD) solution that you can deploy to leverage this capability via Intune.
 
 For more information about how to set up Conditional Access with Defender for Endpoint on iOS, see [Defender for Endpoint and Intune](/mem/intune/protect/advanced-threat-protection).
 
@@ -138,7 +139,7 @@ Follow the below steps for setting up MAM config for unenrolled devices for Netw
 
     |Key| Default (true - enable, false - disable)|Description|
     |---|---|---|
-    |`DefenderOpenNetworkDetection`|0|1 - enable, 0 - disable, 2 - Enable. This setting is managed by an IT Admin to enable, audit, or disable open network detection. In Audit mode, alerts will be sent only to the ATP portal with no user side experience. For user experience, set the config to "Enable" mode.|
+    |`DefenderOpenNetworkDetection`|0| 1 - Audit, 0 - Disable (default), 2 - Enable. This setting is managed by an IT admin to enable, audit, or disable open network detection. In Audit mode, alerts will be sent only to the ATP portal with no user side experience. For user experience, set the config to "Enable" mode.|
     |`DefenderEndUserTrustFlowEnable`| false | true - enable, false - disable; This setting is used by IT admins to enable or disable the end user in-app experience to trust and untrust the unsecure and suspicious networks.|
     |`DefenderNetworkProtectionAutoRemediation`| true |true - enable, false - disable; This setting is used by the IT admin to enable or disable the remediation alerts that are sent when a user performs remediation activities like switching to safer WIFI access points or deleting suspicious certificates detected by Defender.|
     |`DefenderNetworkProtectionPrivacy`| true |true - enable, false - disable; This setting is managed by IT admin to enable or disable privacy in network protection.|
@@ -435,6 +436,3 @@ Use the following steps to configure the option to send feedback data to Microso
 
 Phishing websites impersonate trustworthy websites for the purpose of obtaining your personal or financial information. Visit the [Provide feedback about network protection](https://www.microsoft.com/wdsi/filesubmission/exploitguard/networkprotection) page to report a website that could be a phishing site.
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
-
-
-

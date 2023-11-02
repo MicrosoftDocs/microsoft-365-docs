@@ -14,7 +14,7 @@ ms.collection:
   - M365-collaboration
   - m365-frontline
   - highpri
-  - tier2
+  - essentials-manage
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers

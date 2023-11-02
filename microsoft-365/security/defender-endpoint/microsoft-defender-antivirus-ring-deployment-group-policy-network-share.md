@@ -91,7 +91,7 @@ Set up a network file share (UNC/mapped drive) to download security intelligence
     MD C:\Temp\TempSigs\x86
     ```
 
-3. Setup a PowerShell script, `CopySignatures.ps1`
+3. Set up a PowerShell script, `CopySignatures.ps1`
 
    Copy-Item -Path “\\SourceServer\Sourcefolder”  -Destination “\\TargetServer\Targetfolder”
 
@@ -193,11 +193,11 @@ In [Group Policy Management Console](/previous-versions/windows/it-pro/windows-s
 
    The three options are shown in the following figure.
 
-   :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-gp-microsoft-defender-antivirus-channels.png" alt-text="Screenshot that shows a screen capture of the pilot Computer Configuration > Policies > Administrative Templates > Windows Components > Microsoft Defender Antivirus update channels." lightbox="images/microsoft-defender-antivirus-deploy-ring-gp-microsoft-defender-antivirus-channels.png"::: 
+   :::image type="content" source="images/microsoft-defender-antivirus-deploy-ring-gp-microsoft-defender-antivirus-channels.png" alt-text="Screenshot that shows a screen capture of the pilot Computer Configuration > Policies > Administrative Templates > Windows Components > Microsoft Defender Antivirus update channels." lightbox="images/microsoft-defender-antivirus-deploy-ring-gp-microsoft-defender-antivirus-channels.png":::
 
-   For more information, see [Manage the gradual rollout process for Microsoft Defender updates](/manage-gradual-rollout)
+   For more information, see [Manage the gradual rollout process for Microsoft Defender updates](manage-gradual-rollout.md)
 
-1. Go to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus**. 
+1. Go to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus**.
 
 1. For _intelligence_ updates, double-click **Select the channel for Microsoft Defender monthly intelligence updates**.
 

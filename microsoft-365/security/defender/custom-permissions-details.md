@@ -47,7 +47,7 @@ Permissions for managing day-to-day operations and responding to incidents and a
 
 |Permission name|Level|Description|
 |---|---|---|
-|Security data basic|Read|View info about incidents, alerts, investigations, advanced hunting (MDE), devices, submissions, evaluation lab, and reports.|
+|Security data basic|Read|View info about incidents, alerts, investigations, advanced hunting, devices, submissions, evaluation lab, and reports.|
 |Alerts|Manage|Manage alerts, start automated investigations, run scans, collect investigation packages, and manage device tags.|
 |Response|Manage|Take response actions on a device, approve or dismiss pending remediation actions, and manage blocked and allowed lists for automation.|
 |Basic live response|Manage|Initiate a live response session, download files, and perform read-only actions on devices remotely.|
@@ -83,11 +83,9 @@ Permissions to manages the security and system settings and to create and assign
 |Permission name|Level|Description|
 |---|---|---|
 |Authorization|Read / Manage|View or manage device groups, and custom and built-in roles.|
-|Security settings|Read / Manage|View or manage general security settings for the Microsoft 365 Defender portal.|
+|Core security settings|Read / Manage|View or manage core security settings for the Microsoft 365 Defender portal.|
+|Detection tuning| Manage |Manage tasks related to detections in the Microsoft 365 Defender portal including Custom detections, Alerts Tuning and Threat Indicators of compromise.|
 |System settings|Read / Manage|View or manage general systems settings for the Microsoft 365 Defender portal.|
-
-> [!NOTE]
-> Scenarios that adhere to Exchange Online roles are not impacted by this new model and will still be managed by Exchange Online. The Microsoft 365 Defender Unified RBAC model will initially be available for organizations with Microsoft Defender for Office Plan 2 licenses.
 
 ## Next steps
 

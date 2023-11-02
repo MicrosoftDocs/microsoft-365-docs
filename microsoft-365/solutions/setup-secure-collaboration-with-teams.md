@@ -142,7 +142,7 @@ These training modules from Microsoft Learn can help you learn the collaboration
 
 ### Identity and access
 
-|Training:|Protect identity and access with Azure Active Directory|
+|Training:|Protect identity and access with Microsoft Entra ID|
 |---|---|
 |![Identity and access training icon.](../media/protect-identity-and-access-with-microsoft-365.svg)|The Identity and Access learning path covers the latest identity and access technologies, tools for strengthening authentication, and guidance on identity protection within your organization. Microsoft access and identity technologies enable you to secure your organization’s identity, whether it is on-premises or in the cloud, and empower your users to work securely from any location. This learning path can help you prepare for the Microsoft 365 Certified: Security Administrator Associate and Microsoft 365 Certified: Enterprise Administration Expert certifications.<p>2 hr 52 min - Learning Path - 6 Modules|
 
@@ -177,7 +177,7 @@ The logical architecture of productivity services in Microsoft 365, leading with
 
 |**Item**|**Description**|
 |---|---|
-|[![Thumb image for Teams logical architecture poster.](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \|[Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>Updated April 2019|Microsoft provides a suite of productivity services that work together to provide collaboration experiences with data governance, security, and compliance capabilities. <p>This series of illustrations provides a view into the logical architecture of productivity services for enterprise architects, leading with Microsoft Teams.|
+|[![Thumb image for Teams logical architecture poster.](../downloads/msft-teams-logical-architecture-thumb.png)](https://download.microsoft.com/download/8/c/2/8c2d4d29-a6dd-4d98-92e9-be496f1681df/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://download.microsoft.com/download/8/c/2/8c2d4d29-a6dd-4d98-92e9-be496f1681df/msft-m365-teams-logical-architecture.pdf) \|[Visio](https://download.microsoft.com/download/e/2/c/e2cbb5c3-df64-45b2-b367-75b99c914c49/msft-m365-teams-logical-architecture.vsdx)  <br>Updated April 2019|Microsoft provides a suite of productivity services that work together to provide collaboration experiences with data governance, security, and compliance capabilities. <p>This series of illustrations provides a view into the logical architecture of productivity services for enterprise architects, leading with Microsoft Teams.|
 
 ## Deploy the secure collaboration solution
 

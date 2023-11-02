@@ -45,7 +45,7 @@ When you buy Microsoft 365 for business products and services, the tax that you 
 
 When you buy Microsoft 365 products or services in the EMEA region, the purchase could be subject to Value-Added Tax (VAT).
   
-- If you're located in a European Union Member State, Armenia, Belarus, Norway, Turkey, or United Arab Emirates, and you don't provide your valid local VAT ID, Microsoft Ireland Operations Ltd. applies the current local VAT rate, based on the billing country/region your account is set to.
+- If you're located in a European Union Member State, Armenia, Belarus, Norway, Türkiye, or United Arab Emirates, and you don't provide your valid local VAT ID, Microsoft Ireland Operations Ltd. applies the current local VAT rate, based on the billing country/region your account is set to.
 
 - If you're located in Liechtenstein, Russia, Serbia, South Africa, or Switzerland, the VAT is applied, whether you provide your VAT ID or not.
 
@@ -57,7 +57,7 @@ You might qualify for VAT zero-rating if you meet one of the following criteria:
 
 - **You're in Ireland and have the relevant valid VAT exemption certification:** Microsoft Ireland Operations Ltd. might be entitled to exempt the transaction from VAT. If you don't have a VAT exemption certification, Microsoft Ireland Operations Ltd. applies the current Irish VAT rate, whether you provide a VAT ID or not.
 
-- **You're in Armenia, Belarus, Norway, Turkey, or United Arab Emirates:** You can provide your local VAT ID. Providing the VAT ID entitles Microsoft Ireland Operations Ltd. to VAT zero-rate the transaction. However, you might have a local VAT accounting obligation, so check with your tax advisors if you have any concerns. For instructions about adding the VAT ID for your organization, see [Add your VAT ID](#add-your-vat-id).
+- **You're in Armenia, Belarus, Norway, Türkiye, or United Arab Emirates:** You can provide your local VAT ID. Providing the VAT ID entitles Microsoft Ireland Operations Ltd. to VAT zero-rate the transaction. However, you might have a local VAT accounting obligation, so check with your tax advisors if you have any concerns. For instructions about adding the VAT ID for your organization, see [Add your VAT ID](#add-your-vat-id).
 
 ## Asia Pacific countries/regions (APAC)
 
@@ -92,7 +92,7 @@ You can add your VAT ID in the Microsoft 365 admin center. However, the steps to
 ### Add your VAT ID for your MOSA billing account
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>.
-   - If you're using the **Simplified view**, select **Subscriptions**.
+   - If you're using the **Simplified view**, select **Billing**.
    - If you're using the **Dashboard view**, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. Select the subscription that you want to update.
 3. On the subscription details page, in the **Service usage address** section, select **Edit service usage address**.
