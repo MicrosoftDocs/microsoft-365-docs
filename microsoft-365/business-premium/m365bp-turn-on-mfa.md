@@ -1,5 +1,5 @@
 ---
-title: "Turn on MFA with security defaults or Conditional Access"
+title: "Turn on MFA by using security defaults or Conditional Access"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -24,7 +24,7 @@ search.appverid:
 description: "Learn how security defaults can help protect your organization from identity-related attacks by providing preconfigured security settings for Microsoft 365 Business Premium."
 ---
 
-# Turn on multifactor authentication
+# Turn on multifactor authentication in Microosft 365 Business Premium
 
 Multifactor authentication (MFA) is a very important first step in securing your organization. Microsoft 365 Business Premium includes the option to use security defaults or Conditional Access policies to turn on MFA for your admins and user accounts. For most organizations, security defaults offer a good level of sign-in security. But if your organization must meet more stringent requirements, you can use Conditional Access policies instead.
 
