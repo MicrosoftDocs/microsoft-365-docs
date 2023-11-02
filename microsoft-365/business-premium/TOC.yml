@@ -18,7 +18,7 @@
       href: m365-business-premium-setup.md
     - name: Microsoft 365 for Campaigns
       href: m365-campaigns-setup.md
-- name: Step 2 - Configure security protection
+- name: Step 2 - Configure your security protection
   items: 
     - name: Overview
       href: m365bp-security-overview.md
