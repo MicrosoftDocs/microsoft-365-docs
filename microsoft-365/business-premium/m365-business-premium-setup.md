@@ -93,7 +93,7 @@ Microsoft 365 Business Premium includes a guided setup process, as shown in the 
 7. When you see **Setup is complete**, it means you have completed the basic setup process for your subscription. Use the feedback window to tell us how it went. 
 
 > [!IMPORTANT]
-> At this point, basic setup for Microsoft 365 is complete, but you still need to set up and configure your security settings. **Proceed to [set up your security protection](m365bp-security-overview.md)**.
+> Although your basic setup is complete, but you still need to set up and configure your security settings. **Proceed to [set up your security protection](m365bp-security-overview.md)**.
 
 ### Employee quick setup guide
 
