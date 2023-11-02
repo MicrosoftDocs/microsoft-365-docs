@@ -26,7 +26,7 @@ description: "Protect unmanaged computers from cyberattacks with Microsoft 365 B
 
 # Protect unmanaged devices with Microsoft 365 Business Premium
 
-With Microsoft 365 Business Premium, you can [secure managed devices](m365bp-protect-managed-devices.md), such as computers, phones, and tablets. If your business or campaign has people who bring their own devices (BYOD), ask them to following the guidance in this article. This guidance can help protect business information that might be on BYOD devices. [Learn more about managed and unmanaged devices](m365bp-managed-unmanaged-devices.md).
+With Microsoft 365 Business Premium, you can [secure managed devices](m365bp-protect-managed-devices.md), such as computers, phones, and tablets. If your business or campaign has people who bring their own devices (BYOD), ask them to following the guidance in this article. This guidance can help people protect business information that might be on their devices. [Learn more about managed and unmanaged devices](m365bp-managed-unmanaged-devices.md).
 
 > [!NOTE]
 > This article applies primarily to unmanaged (or BYOD) devices. Guidance for protecting managed devices is available here: [Set up and secure managed devices](m365bp-protect-managed-devices.md).
