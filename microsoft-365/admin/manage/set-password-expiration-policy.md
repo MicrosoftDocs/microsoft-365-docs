@@ -89,7 +89,7 @@ You can set more password policies and restrictions in Microsoft Entra ID. Check
 
 The Update-MgDomain cmdlet updates the password policy of a specified domain or tenant and indicates the length of time that a password remains valid before it must be changed.
 
-To learn how to update password policy for a specific domain or tenant, see [Update-MgDomain](/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdomain?view=graph-powershell-1.0&preserve-view=true).
+To learn how to update password policy for a specific domain or tenant, see [Update-MgDomain](/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdomain).
 
 ## Related content
 
