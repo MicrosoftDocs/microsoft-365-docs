@@ -153,6 +153,18 @@ The [Teams usage report](/microsoft-365/admin/activity-reports/microsoft-teams-u
     > [!NOTE]
     > To get a list of your frontline team IDs, in the Teams admin center, go to **Teams** > **Manage frontline teams**, and then in the **Frontline teams** section, select **Download CSV**.
 
+## Frequently asked questions
+
+### Why are my channels missing when I create my teams?
+
+It can take time for channels to propagate in Teams. The General channel is created first and the other channels are added over time. All channels should be available within 24 hours from when you created your team.
+
+### How do I delete a frontline team?
+
+You can delete a team by using any of the available options. For example, you can delete a team in the Teams client, Teams admin center, PowerShell, or Graph.
+
+Keep in mind that it can take up to 24 hours for a team and the Microsoft 365 group that's associated with the team to be fully deleted.
+
 ## Related articles
 
 - [Learn where to start with a frontline deployment](flw-deploy-overview.md)
