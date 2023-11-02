@@ -213,7 +213,7 @@ tools:
       imageSrc: /office/media/icons/developer-blue.svg
       url: /microsoft-365/developer/?view=o365-worldwide
     # Card
-    - title: Microsoft service adoption framework
+    - title: Microsoft 365 service adoption framework
       # imageSrc should be square in ratio with no white space
       imageSrc: /office/media/icons/users-group.svg
       url: /training/paths/m365-service-adoption/
