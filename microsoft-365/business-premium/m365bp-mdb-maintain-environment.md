@@ -30,6 +30,7 @@ description: "Keep your systems, devices, user accounts, and security policies u
 After you have set up and configured [Microsoft 365 Business Premium](m365bp-overview.md) or the standalone version of [Microsoft Defender for Business](../security/defender-business/mdb-overview.md), your next step is to prepare a plan for maintenance and operations. It's important to keep your systems, devices, user accounts, and security policies up to date to help protect against cyberattacks. You can use this article as a guide to prepare your plan. 
 
 As you prepare your plan, you can organize the various tasks into two main categories, as listed in the following table:
+
 | Task type | Sections |
 |---|---|
 | **[Security tasks](#security-tasks)** | [Daily security tasks](#daily-security-tasks) <br/>[Weekly security tasks](#weekly-security-tasks)<br/>[Monthly security tasks](#monthly-security-tasks)<br/>[Security tasks to perform as needed](#security-tasks-to-perform-as-needed) |
