@@ -122,5 +122,5 @@ If you'd prefer to have a Microsoft partner help you get and set up Microsoft 36
 
 ## Next step
 
-Proceed to [Boost your security protection](m365bp-security-overview.md).
+Proceed to [Configure your security protection](m365bp-security-overview.md).
 
