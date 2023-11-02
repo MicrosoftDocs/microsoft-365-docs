@@ -102,23 +102,19 @@ All our updates contain
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 
-### October-2023 (Platform: Platform: 4.18.23100.xxxx | Engine: 1.1.23100.xxxx)
+### October-2023 (Platform: Platform: 4.18.23090.2008 | Engine: 1.1.23090.2007)
 
-- Security intelligence update version: **x.x.x.x**
-- Release date:  **October 31, 2023 (Engine) / October 31, 2023 (Platform)**
-- Platform: **4.18.23100.xxxx**
-- Engine: **1.1.23100.xxxx**
+- Security intelligence update version: **1.399.1747.0**
+- Release date:  **November 2, 2023 (Engine) / (Platform pending)**
+- Platform: **4.18.23090.2008**
+- Engine: **1.1.23090.2007**
 - Support phase: **Security and Critical Updates**
 
 #### What's new
 
-- Defender Core Service is generally available for consumer devices
-- [Device control](device-control-removable-storage-access-control.md) policies remain enforced following a platform update that requires a reboot
-- Improved performance of [device control for printing scenarios](printer-protection.md)
-- Fixed truncation issue in the output of [MpCmdRun.exe -scan](command-line-arguments-microsoft-defender-antivirus.md) (processing Unicode characters)
 - Improved processing of environment variables in protected folders list for [controlled folder access](controlled-folders.md)
 - Improved performance of [on-access scanning](configure-advanced-scan-types-microsoft-defender-antivirus.md) of files with Mark of the Web (MoTW)
-- Fixed an issue with device group Active Directory in device control
+- Added support for Active Directory device groups with [device control](device-control-removable-storage-protection.md)
 - [ASROnlyPerRuleExclusions](/windows/client-management/mdm/defender-csp#configurationasronlyperruleexclusions) don't apply during an engine reboot
 
 #### Known issues
