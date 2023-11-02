@@ -38,11 +38,11 @@ You have to be a global admin to perform this task.
 
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>, select the org name.
 
-    :::image type="content" source="../../media/macorgswitcher.png" alt-text="Multi-tenant switcher.":::
+    :::image type="content" source="../../media/macorgswitcher.png" alt-text="Screenshot that shows multi-tenant switcher.":::
 
 - From the **Tenant switcher**, you can move quickly between tenants you manage.
 
-    :::image type="content" source="../../media/yourtenantslist.png" alt-text="Your tenants list with search functionality.":::
+    :::image type="content" source="../../media/yourtenantslist.png" alt-text="Screenshot that shows your tenants list with search functionality.":::
 
 ## View All tenants page
 
@@ -67,10 +67,10 @@ The service health view shows you if any incidents or advisories are affecting t
 
     - You can review issues under **All services** or **All issues** tabs.
 
-    :::image type="content" source="../../media/multitenant-servicehealth.png" alt-text="Multi-tenant Service health page.":::
+    :::image type="content" source="../../media/multitenant-servicehealth.png" alt-text="Screenshot that shows multi-tenant Service health page.":::
 3. Select an incident on the **All services** or **All issues** tab to get more information about any incident on the **Overview** tab. Select the **Tenants affected** tab to get a list of the affected tenants.
 
-    :::image type="content" source="../../media/tenantsaffected.png" alt-text="List of tenants affected by a service health issue.":::
+    :::image type="content" source="../../media/tenantsaffected.png" alt-text="Screenshot that shows list of tenants affected by a service health issue.":::
 
 The list of affected tenants can be exported to CSV format so that admins can share it with support teams.
 
