@@ -3,9 +3,6 @@ title: Protect Dev Drive using performance mode
 description: Learn how to manage, configure, Microsoft Defender Antivirus performance mode for developers who use Dev Drive.
 keywords: performance mode, Dev Drive, Real-time protection (Real-time protection), Windows Security App, Microsoft Defender Antivirus, windows Defender, Resilient File System (ReFS), virus, malware, threat, detection, protection, security
 ms.service: microsoft-365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: high
 ms.topic: conceptual
 author: denisebmsft
@@ -18,7 +15,7 @@ ms.collection:
 - m365-security
 - tier2
 search.appverid: met150
-ms.date: 06/06/2023
+ms.date: 11/02/2023
 ---
 
 # Protect Dev Drive using performance mode
@@ -116,7 +113,7 @@ Set performance mode status to enabled via Powershell:
 
 Powershell (Run as admin)
 
-Type "set-MpPreference -PerformanceModeStatus Enabled" w/o the double quotes, and press Enter.
+Type `set-MpPreference -PerformanceModeStatus Enabled`, and then press Enter.
 
 ![Screenshot of Defender_Performance_Mode_04.](media/microsoft-defender-endpoint-antivirus-performance-mode/defender-performance-mode-5.png)
 
