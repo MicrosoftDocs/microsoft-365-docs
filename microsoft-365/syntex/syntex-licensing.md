@@ -80,6 +80,8 @@ Users with active per-user licenses can perform the following tasks:
 - Use the document library rules to move or copy content.
 - Merge and extract PDFs
 
+For structured or freeform document processing, see [Using a custom Power Platform environment](structured-freeform-setup.md#using-a-custom-power-platform-environment).
+
 <!---
 ## AI Builder credits
 
