@@ -25,11 +25,9 @@ description: "How to install Microsoft 365 Apps also called Office apps on your 
 
 # Install Microsoft 365 Apps on your devices
 
-It's a good idea to install the Microsoft 365 Apps on your computers, tablets, and phones. You'll get the latest updates, including security updates, for your apps and you'll have the most current features. 
+Microsoft 365 Business Premium includes Microsoft 365 Apps, such as Word, PowerPoint, Excel, OneNote, and Outlook. People in your organization can install these apps on their computers, tablets, and phone and have access to the most current features and security updates. 
 
-If you're part of your organization's security team, you can ask users to install the Microsoft 365 Apps on their Mac, PC, or mobile devices. This is something your users should do to be part of the front lines and help protect the org against attack.
-
-> [!NOTE]
+> [!TIP]
 > This article applies primarily to unmanaged (or BYOD) devices. Microsoft 365 admins can manage Microsoft 365 installation options instead. To learn more, see the following articles:
 > - [Managed and unmanaged devices](m365bp-managed-unmanaged-devices.md).
 > - [Manage Microsoft 365 installation options in the Microsoft 365 admin center](/DeployOffice/manage-software-download-settings-office-365).
@@ -37,7 +35,7 @@ If you're part of your organization's security team, you can ask users to instal
 
 ## Watch: Install Microsoft 365 Apps
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/acce002c-0756-4b64-ac5d-2198ee96a9b1?autoplay=false]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/acce002c-0756-4b64-ac5d-2198ee96a9b1?autoplay=false title="Install Microsoft 365 Apps for your business"]
 
 For all members of the organization, the Microsoft 365 Apps can be found on the **Start** menu. If you don't see them, each user must install them.
 
