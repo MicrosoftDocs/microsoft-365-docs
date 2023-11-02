@@ -86,15 +86,11 @@ Microsoft 365 Business Premium includes a guided setup process, as shown in the 
 
 5. To add your organization's domain (*recommended*) or to use your default `.onmicrosoft.com` domain, select an option and then follow the prompts. Then select **Use this domain**. To get help with this task, see [Add a domain to Microsoft 365](../admin/setup/add-domain.md).
 
-6. To add a user, fill in the user's first name, last name, and user name, and then select **Add users and assign licenses**. Or, select **View all users** to go to your active users page, where you can view, add, and manage users. 
+6. To add a user, fill in the user's first name, last name, and user name, and then select **Add users and assign licenses**. Or, select **View all users** to go to your active users page, where you can view, add, and manage users. To get help with this task, see [Add users and assign licenses at the same time](../admin/add-users/add-users.md). We recommend adding your administrators and members of your security team now. 
 
-   We recommend adding your administrators and members of your security team now. To get help with this task, see [Add users and assign licenses at the same time](../admin/add-users/add-users.md).
+6. If you added your domain in step 5, connect your domain to Microsoft 365. To get help with this task, see [Change nameservers to set up Microsoft 365 with any domain registrar](../admin/get-help-with-domains/change-nameservers-at-any-domain-registrar.md).
 
-6. If you added your domain in step 4, you can now connect your domain to Microsoft 365. To get help with this task, see [Change nameservers to set up Microsoft 365 with any domain registrar](../admin/get-help-with-domains/change-nameservers-at-any-domain-registrar.md).
-
-When you're finished with the basic setup process, you'll see **Setup is complete**, where you can tell us how setup went and then go to your Microsoft 365 admin center. 
-
-:::image type="content" source="media/m365bp-setupcomplete.png" alt-text="Screenshot of the Setup is Complete confirmation screen."lightbox="media/m365bp-setupcomplete.png"::: 
+7. When you see **Setup is complete**, it means you have completed the basic setup process for your subscription. Use the feedback window to tell us how it went. 
 
 > [!IMPORTANT]
 > At this point, basic setup for Microsoft 365 is complete, but you still need to set up and configure your security settings. **Proceed to [set up your security protection](m365bp-security-overview.md)**.
