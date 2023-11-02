@@ -39,7 +39,7 @@ If you're part of your organization's security team, you can ask users to instal
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/acce002c-0756-4b64-ac5d-2198ee96a9b1?autoplay=false]
 
-For all members of the organization, the Microsoft Microsoft 365 Apps can be found on the **Start** menu. If you don't see them, each user must install them.
+For all members of the organization, the Microsoft 365 Apps can be found on the **Start** menu. If you don't see them, each user must install them.
 
 Have them perform the following:
 
