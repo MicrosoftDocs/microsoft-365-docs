@@ -76,7 +76,7 @@ The following section describes the detection and investigation experience in Mi
 
 ## Impact to Microsoft Sentinel users
 
-Microsoft Sentinel customers that have integrated Defender for Cloud alerts are required to do the following configuration changes to ensure duplicate incidents are not created:
+Microsoft Sentinel customers integrating Defender for Cloud alerts are required to do the following configuration changes to ensure duplicate incidents are not created:
 
 - Connect the **Tenant-based Microsoft Defender for Cloud (Preview)** connector to synchronize all your collection of subscriptions with tenant-based Defender for Cloud incidents that are streaming through the Microsoft 365 Defender Incidents connector.
 - Disconnect the legacy subscription-based Defender for Cloud alerts connector to prevent incident duplicates.
@@ -86,7 +86,7 @@ Microsoft Sentinel customers that have integrated Defender for Cloud alerts are 
 The following changes should also be noted:
 
 - The following entities are not available in the alerts. These entities will gradually be added to the alerts in future developments:
-- We have removed the action to relate alerts to Microsoft 365 Defender incidents.
+- The action to relate alerts to Microsoft 365 Defender incidents is removed.
 
 ### Opting out of Defender for Cloud alerts
 
@@ -94,4 +94,4 @@ To maintain your subscription-based settings and avoid tenant-based sync or to o
 
 1. In the Microsoft 365 Defender portal, go to **Settings** > **Microsoft 365 Defender**.
 2. In **Alert service settings**, look for **Microsoft Defender for Cloud alerts**.
-3. Select **No alerts** to turn off all Defender for Cloud alerts. Selecting this option stops the ingestion of new Defender for Cloud alerts to the portal. All alerts previously ingested won't be removed from an alert or incident page.
+3. Select **No alerts** to turn off all Defender for Cloud alerts. Selecting this option stops the ingestion of new Defender for Cloud alerts to the portal. Alerts previously ingested remain in an alert or incident page.
