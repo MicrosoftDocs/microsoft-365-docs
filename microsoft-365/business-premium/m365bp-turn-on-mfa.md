@@ -61,7 +61,7 @@ MFA is an important first step in securing your company, and security defaults m
 
 2. Under **Manage Microsoft Entra ID**, select **View**.
 
-   :::image type="content" source="../security/defender-business/media/mdb-manage-azuread.png" alt-text="Screenshot showing the VIew button under Manage Microsoft Entra ID." lightbox="../security/defender-business/media/mdb-manage-azuread.png":::
+   :::image type="content" source="../security/defender-business/media/mdb-manage-azuread.png" alt-text="Screenshot showing the View button under Manage Microsoft Entra ID." lightbox="../security/defender-business/media/mdb-manage-azuread.png":::
 
 3. In the navigation pane, select **Properties**, and then select **Manage security defaults**.
 
