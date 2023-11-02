@@ -35,7 +35,7 @@ ms.custom: admindeeplinkDEFENDER
 > [!IMPORTANT]
 > Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here.
 
-[Microsoft Defender for Cloud](/defender-for-cloud/defender-for-cloud-introduction/) is now part of Microsoft 365 Defender. Security teams will now be able to access Defender for Cloud alerts and incidents within the Microsoft 365 Defender portal, providing richer context to investigations that span cloud resources, devices, and identities. In addition, security teams will be able to get the complete picture of an attack, including suspicious and malicious events that happen in their cloud environment, through immediate correlations of alerts and incidents.
+[Microsoft Defender for Cloud](/defender-for-cloud/defender-for-cloud-introduction/) is now part of Microsoft 365 Defender. Security teams can now access Defender for Cloud alerts and incidents within the Microsoft 365 Defender portal, providing richer context to investigations that span cloud resources, devices, and identities. In addition, security teams can get the complete picture of an attack, including suspicious and malicious events that happen in their cloud environment, through immediate correlations of alerts and incidents.
 
 Microsoft 365 Defender combines protection, detection, investigation, and response capabilities to protect attacks on device, email, collaboration, identity, and cloud apps. The portal’s detection and investigation capabilities are now extended to cloud entities, offering security operations teams a single pane of glass to significantly improve their operational efficiency.
 
@@ -47,7 +47,7 @@ To ensure access to Defender for Cloud alerts in Microsoft 365 Defender, you mus
 
 ### Required permissions
 
-You must be a global administrator or a security administrator in Azure Active Directory to view Defender for Cloud alerts and correlations. For users that don't have these roles, the integration will be available only by applying [unified role-based access control (RBAC) roles](manage-rbac.md) for Defender for Cloud.
+You must be a global administrator or a security administrator in Azure Active Directory to view Defender for Cloud alerts and correlations. For users that don't have these roles, the integration is available only by applying [unified role-based access control (RBAC) roles](manage-rbac.md) for Defender for Cloud.
 
 > [!NOTE]
 > The permission to view Defender for Cloud alerts and correlations is automatic for the entire tenant. Viewing for specific subscriptions is not supported.
@@ -58,7 +58,7 @@ To see Defender for Cloud alerts in the Microsoft 365 Defender portal, perform t
 
 1. Go to **Settings** > **Microsoft 365 Defender**.
 2. In **Alert service settings**, look for **Microsoft Defender for Cloud alerts**.
-3. Select **All alerts (default)** to start receiving Defender for Cloud alerts. Selecting this option starts the ingestion of new Defender for Cloud alerts to the portal. Note that only new alerts in the alert and incident queues and pages will have the Defender for Cloud alerts.
+3. Select **All alerts (default)** to start receiving Defender for Cloud alerts. Selecting this option starts the ingestion of new Defender for Cloud alerts to the portal. Only new alerts in the alert and incident queues and pages will have the Defender for Cloud alerts.
 
 ## Investigation experience in Microsoft 365 Defender
 
@@ -76,17 +76,17 @@ The following section describes the detection and investigation experience in Mi
 
 ## Impact to Microsoft Sentinel users
 
-Microsoft Sentinel customers that have integrated Defender for Cloud alerts will be required to do the following configuration changes to ensure duplicate incidents are not created:
+Microsoft Sentinel customers that have integrated Defender for Cloud alerts are required to do the following configuration changes to ensure duplicate incidents are not created:
 
 - Connect the **Tenant-based Microsoft Defender for Cloud (Preview)** connector to synchronize all your collection of subscriptions with tenant-based Defender for Cloud incidents that are streaming through the Microsoft 365 Defender Incidents connector.
 - Disconnect the legacy subscription-based Defender for Cloud alerts connector to prevent incident duplicates.
-- Turn off Analytics rules used to create incidents from Defender for Cloud alerts, including rules created through the Microsoft incident creation rules. Incidents will be created automatically in the Defender portal.
+- Turn off Analytics rules used to create incidents from Defender for Cloud alerts, including rules created through the Microsoft incident creation rules. Incidents are created automatically in the Defender portal.
 - [Use Automation rules](/sentinel/create-tasks-automation-rule/) to replace incident creation rules or use the [built-in tuning capabilities in the Defender portal](investigate-alerts.md#tune-an-alert) to suppress certain alerts.
 
 The following changes should also be noted:
 
-- The following entities will not be available in the alerts. These entities will gradually be added to the alerts in future developments:
-- The action to relate alerts to Microsoft 365 Defender incidents will no longer be available.
+- The following entities are not available in the alerts. These entities will gradually be added to the alerts in future developments:
+- We have removed the action to relate alerts to Microsoft 365 Defender incidents.
 
 ### Opting out of Defender for Cloud alerts
 
@@ -94,4 +94,4 @@ To maintain your subscription-based settings and avoid tenant-based sync or to o
 
 1. In the Microsoft 365 Defender portal, go to **Settings** > **Microsoft 365 Defender**.
 2. In **Alert service settings**, look for **Microsoft Defender for Cloud alerts**.
-3. Select **No alerts** to turn off all Defender for Cloud alerts. Selecting this option stops the ingestion of new Defender for Cloud alerts to the portal. All alerts previously ingested will not be removed from an alert or incident page.
+3. Select **No alerts** to turn off all Defender for Cloud alerts. Selecting this option stops the ingestion of new Defender for Cloud alerts to the portal. All alerts previously ingested won't be removed from an alert or incident page.
