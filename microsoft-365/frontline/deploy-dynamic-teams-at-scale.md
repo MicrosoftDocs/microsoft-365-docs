@@ -155,13 +155,13 @@ The [Teams usage report](/microsoft-365/admin/activity-reports/microsoft-teams-u
 
 ## Frequently asked questions
 
-### Why are my channels missing when I create my teams?
+### Why are channels missing when I create my teams?
 
-It can take time for channels to propagate in Teams. The General channel is created first and the other channels are added over time. All channels should be available within 24 hours from when you created your team.
+It can take time for channels to propagate in Teams. The General channel is created first and the other channels are added over time. All channels should be available within 24 hours of team creation.
 
 ### How do I delete a frontline team?
 
-You can delete a team by using any of the available options. For example, you can delete a team in the Teams client, Teams admin center, PowerShell, or Graph.
+You can delete a team by using any of the available options. For example, you can delete a team by using the [Teams client](https://support.microsoft.com/office/delete-a-team-in-microsoft-teams-c386f91b-f7e6-400b-aac7-8025f74f8b41), [Teams admin center](/microsoftteams/archive-or-delete-a-team), [PowerShell](/powershell/module/teams/remove-team), or [Graph](/graph/api/group-delete).
 
 Keep in mind that it can take up to 24 hours for a team and the Microsoft 365 group that's associated with the team to be fully deleted.
 
