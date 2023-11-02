@@ -20,7 +20,7 @@ ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 6/30/2023
+ms.date: 11/2/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
@@ -1049,7 +1049,7 @@ On the **User reported messages** page, the :::image type="icon" source="../../m
 
 You need to be assigned permissions before you can view and use the reports that are described in this article. You have the following options:
 
-- [Microsoft 365 Defender role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac): Currently, this option requires membership in the Microsoft 365 Defender Preview program.
+- Public Preview: [Microsoft 365 Defender role based access control (RBAC)](/microsoft-365/security/defender/manage-rbac):
 - [Email & collaboration permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md): Membership in any of the following role groups:
   - **Organization Management**<sup>\*</sup>
   - **Security Administrator**
