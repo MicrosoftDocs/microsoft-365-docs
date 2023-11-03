@@ -123,7 +123,7 @@ You can manage your teams when changes happen in your organization.
 
     :::image type="content" source="media/dtas-refresh-locations.png" alt-text="Screenshot of the Refresh location button." lightbox="media/dtas-refresh-locations.png":::
 
-4. After your refresh completes, your setup status shows as **Complete**. You can proceed to [deploy your new teams](#deploy-your-frontline-dynamic-teams). Deployment can take several hours depending on how many new teams you're deploying.
+4. After the refresh is completed, your setup status shows as **Complete**. You can proceed to [deploy your new teams](#deploy-your-frontline-dynamic-teams). Deployment can take several hours depending on how many new teams you're deploying.
 
 ### Edit your frontline team settings
 
@@ -157,13 +157,19 @@ The [Teams usage report](/microsoft-365/admin/activity-reports/microsoft-teams-u
 
 ### Why are channels missing when I create my teams?
 
-It can take time for channels to propagate in Teams. The General channel is created first and the other channels are added over time. All channels should be available within 24 hours of team creation.
+It can take time for channels to propagate in Teams. The General channel is created first and the remaining channels are added over time. All channels should be available within 24 hours of team creation.
 
 ### How do I delete a frontline team?
 
 You can delete a team by using any of the available options. For example, you can delete a team by using the [Teams client](https://support.microsoft.com/office/delete-a-team-in-microsoft-teams-c386f91b-f7e6-400b-aac7-8025f74f8b41), [Teams admin center](/microsoftteams/archive-or-delete-a-team), [PowerShell](/powershell/module/teams/remove-team), or [Graph](/graph/api/group-delete).
 
 Keep in mind that it can take up to 24 hours for a team and the Microsoft 365 group that's associated with the team to be fully deleted.
+
+If you need to redeploy a frontline location team that was deleted, follow these steps:
+
+1. [Refresh locations](#managing-your-frontline-dynamic-teams).
+1. After the refresh is completed, choose the location you want to deploy.
+1. Select **Deploy**.
 
 ## Related articles
 
