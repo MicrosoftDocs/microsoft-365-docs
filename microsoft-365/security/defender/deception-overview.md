@@ -44,12 +44,54 @@ This article gives an overview of the deception feature, requirements to enable 
 
 ## Prerequisites
 
+The following table lists the requirements to enable the deception feature in Microsoft 365 Defender.
+
+> [!div class="mmx-tdCol2BreakAll"]
+> |Requirement|Details|
+> |-------------|----------|
+> |Subscription requirements|One of these subscriptions:</br> - E5 plan</br> - Microsoft Defender for Endpoint Plan 3|
+> |Deployment requirements|Microsoft Defender for Endpoint’s device discovery is set to **standard discovery**|
+> |Permissions|You must have one of the following roles assigned in the [Microsoft Entra admin center](https://entra.microsoft.com) or in the [Microsoft 365 admin center](https://admin.microsoft.com) to configure deception capabilities:</br> - Global administrator</br> - Security administrator|
+
 ## What is deception technology?
+
+Deception technology is a security measure that provides immediate alerts to security teams in the event of a potential attack, allowing them to respond in real-time. Deception technology creates fake assets like devices, users, and hosts that appear to belong to your network. Usually, deception technology is added and deployed to your network as an extra appliance.
+
+Attackers interacting with the fake network assets set up by the deception feature can help security teams prevent potential attacks from compromising an organization and monitor the attackers’ actions so defenders can improve their environment's security further.
 
 ### How does the deception feature work?
 
+The deception feature built in in the Microsoft 365 Defender portal uses rules to make decoys and lures that match your environment. The feature applies machine learning to suggest decoys and lures that are tailored to your network. You can also use the deception feature to manually create the decoys and lures. These decoys and lures are then deployed to your network automatically.
+
+**Decoys** are fake devices and accounts that appear to belong to your network. **Lures** are fake content planted on specific devices or accounts and are used to attract an attacker. The content can be a document, a configuration file, cached credentials, or any content that an attacker can likely read, steal, or interact with. Lures imitate important company information, settings, or credentials.
+
+There are two types of lures available in the deception feature:
+
+- Basic lures – these are planted documents, link files, and the like that have no or minimal interaction with the customer environment.  
+- Advanced lures – these are planted content like cached credentials and interceptions that respond or interact with the customer environment. For example, attackers might interact with decoy credentials that were injected responses to Active Directory queries, which can be used to sign in.
+
+> [!NOTE]
+> Lures are only planted on Windows clients defined in the scope of a deception rule. However, attempts to use any decoy device or account on any Defender for Endpoint-onboarded client will raise a deception alert. Learn how to onboard clients in [Onboard to Microsoft Defender for Endpoint](/defender-for-endpoint/onboarding/).
+
+You can specify decoys, lures, and the scope in a deception rule. See [Configure the deception feature](configure-deception.md) to learn more about how to create and modify deception rules.  
+
+When an attacker uses a decoy or a lure, the deception feature triggers an alert that indicates possible attacker activity.
+
 ## Identify when deception is detected in your environment
 
+Alerts based on deception detection contain “deceptive” in the title. Below are some examples of alert titles:
+
+- Sign-in attempt with a deceptive user account
+- Connection attempt to a deceptive host
+
+The alert details contain:
+
+- The *Deception* tag
+- The decoy device or user account where the alert originated
+- The type of attack like logon attempts or lateral movement attempts
+
 ## Next step
+
+- [Configure the deception feature](configure-deception.md)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
