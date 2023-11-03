@@ -39,15 +39,14 @@ The following table describes what the SCL values mean and the default action th
 |5, 6|Spam filtering marked the message as **Spam**|**Default anti-spam policy, new anti-spam policies, and [Standard preset security policy](preset-security-policies.md)**: Deliver the message to recipient Junk Email folders. <br/><br/> **Strict preset security policy**: [Quarantine the message](quarantine-end-user.md).|
 |7, 8, 9|Spam filtering marked the message as **High confidence spam**|**Default anti-spam policy and new anti-spam policies**: Deliver the message to recipient Junk Email folders. <br/><br/> **Standard and Strict preset security policies**: [Quarantine the message](quarantine-end-user.md).|
 
-
->[!NOTE]
->Spam filtering never stamps messages with the SCL values 2, 3, or 4.
+> [!TIP]
+> Spam filtering never stamps messages with the SCL values 2, 3, or 4.
 >
->Typically, spam filtering itself doesn't stamp messages with the SCL value 7, but other features might. For example:
+> Typically, spam filtering itself doesn't stamp messages with the SCL value 7, but other features might. For example:
 >
->- Human message grading by an analyst.
->- DMARC failures.
->- [Mail flow rules (also known as transport rules)](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
+> - Human message grading by an analyst.
+> - DMARC failures.
+> - [Mail flow rules (also known as transport rules)](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 
 For more information about actions you can take on messages based on the spam filtering verdict, see [Configure anti-spam policies in EOP](anti-spam-policies-configure.md).
 
