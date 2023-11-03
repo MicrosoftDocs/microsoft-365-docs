@@ -27,20 +27,22 @@ description: "Learn how to secure managed devices from security threats and cybe
 
 :::image type="content" source="media/mission6.png" alt-text="Diagram with Set Up and Secure Managed Devices highlighted.":::
 
-Microsoft 365 Business Premium includes advanced protection for all your organization's devices. Microsoft 365 Business Premium includes [Microsoft Defender for Business](../security/defender-business/mdb-overview.md) to help protect devices from ransomware, malware, phishing, and other threats. 
+Microsoft 365 Business Premium includes [Microsoft Defender for Business](../security/defender-business/mdb-overview.md) to help protect your organization's devices from ransomware, malware, phishing, and other threats. 
 
 > [!NOTE]
 > This article applies primarily to managed devices. Guidance for protecting unmanaged devices is available here: [Set up unmanaged (BYOD) devices](m365bp-set-up-unmanaged-devices.md).
 > 
 > [Learn more about managed and unmanaged devices](m365bp-managed-unmanaged-devices.md).
 
+Your tasks are to:
 
-Your steps are to:
+1. [Upgrade Windows devices running Windows 7 Pro, Windows 8 Pro, or Windows 8.1 Pro to Windows 10 or 11 Pro](m365bp-upgrade-windows-pro.md).
 
-- [Upgrade Windows devices running Windows 7 Pro, Windows 8 Pro, or Windows 8.1 Pro to Windows 10 or 11 Pro](m365bp-upgrade-windows-pro.md).
-- [Onboard devices to Defender for Business and apply security policies](m365bp-onboard-devices-mdb.md).
-- [Use Windows Autopilot to set up and configure new devices, or to reset, repurpose, and recover devices](/mem/autopilot/windows-autopilot).
-- [Manage Microsoft 365 installation options for devices](/DeployOffice/manage-software-download-settings-office-365)
+2. [Onboard devices to Defender for Business and apply security policies](m365bp-onboard-devices-mdb.md).
+
+3. [Use Windows Autopilot to set up and configure new devices, or to reset, repurpose, and recover devices](/mem/autopilot/windows-autopilot).
+
+4. [Manage Microsoft 365 installation options for devices](/DeployOffice/manage-software-download-settings-office-365).
 
 Once these steps are completed, your organization's devices are protected. 
 
