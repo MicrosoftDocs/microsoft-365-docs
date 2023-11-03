@@ -33,7 +33,18 @@ ms.subservice: mde
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-pullalerts-abovefoldlink).
 
+This page goes over the Microsoft Defender for Endpoint EDR MsSense.exe versions.  In case, if it's not in this list, you also want to check the "file information" in the monthly cumulative rollup updates for:
+
+- Windows 11, here [https://learn.microsoft.com/en-us/windows/release-health/windows11-release-information](/windows/release-health/windows11-release-information)
+- Windows 10, here [https://support.microsoft.com/en-us/topic/windows-10-update-history-8127c2c6-6edf-4fdf-8b9f-0f7be1ef3562](https://support.microsoft.com/en-us/topic/windows-10-update-history-8127c2c6-6edf-4fdf-8b9f-0f7be1ef3562)
+- Windows Server 2022, here [https://support.microsoft.com/en-us/topic/windows-server-2022-update-history-e1caa597-00c5-4ab9-9f3e-8212fe80b2ee](https://support.microsoft.com/en-us/topic/windows-server-2022-update-history-e1caa597-00c5-4ab9-9f3e-8212fe80b2ee)
+- Windows Server 2019, here [https://support.microsoft.com/en-us/topic/windows-10-and-windows-server-2019-update-history-725fc2e1-4443-6831-a5ca-51ff5cbcb059](https://support.microsoft.com/en-us/topic/windows-10-and-windows-server-2019-update-history-725fc2e1-4443-6831-a5ca-51ff5cbcb059)
+For the latest updates to Microsoft Defender for Endpoint all up, please visit [https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/whats-new-in-microsoft-defender-endpoint?view=o365-worldwide](/microsoft-365/security/defender-endpoint/whats-new-in-microsoft-defender-endpoint?view=o365-worldwide)
+
+For the latest updates to Microsoft Defender for Endpoint Next-Generation Protection/Microsoft Defender Antivirus, please visit [https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-updates?view=o365-worldwide](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-updates?view=o365-worldwide)
+
 All updates contain:
+
 - Performance improvements
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804))
@@ -43,7 +54,6 @@ All updates contain:
 |OS  |KB  |Release version  |
 |---------|---------|---------|
 |Windows Server 2012 R2, 2016 |[KB 5005292](https://support.microsoft.com/en-us/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)|10.8295.22621.1023|
-  
 **What's new**
 
 - Supports new security settings management capabilities
@@ -53,7 +63,6 @@ All updates contain:
 |OS  |KB  |Release version  |
 |---------|---------|---------|
 |Windows Server 2012 R2, 2016 |[KB 5005292](https://support.microsoft.com/en-us/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)|10.8295.22621.1019|
-  
 **What's new**
 
 - Improved command and control security, quality fixes
@@ -63,7 +72,6 @@ All updates contain:
 |OS  |KB  |Release version  |
 |---------|---------|---------|
 |Windows Server 2012 R2, 2016 |[KB 5005292](https://support.microsoft.com/en-us/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)|10.8210.22621.1016|
-  
 **What's new**
 
 - Bug fixes and stability improvements
@@ -92,7 +100,7 @@ All updates contain:
 
  > [!NOTE] 
  > Update package KB5005292 is on a gradual rollout schedule through Windows Update. Towards the end of this schedule, the package will be published completely, including to the update catalog for manual download. For the current release, this will be in the second half of October. If you want to test the package sooner, you can use [gradual rollout controls for platform updates](configure-updates.md) to select the Preview channel.
-  
+
 
 See also: 
 - [What's new in Microsoft Defender for Endpoint](whats-new-in-microsoft-defender-endpoint.md)
@@ -100,3 +108,4 @@ See also:
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 - [What's new in Defender for Endpoint on Linux](linux-whatsnew.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+
