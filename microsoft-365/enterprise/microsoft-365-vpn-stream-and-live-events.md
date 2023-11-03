@@ -44,7 +44,7 @@ Use the following steps to enable direct connectivity for the Stream or Teams ev
 >[!IMPORTANT]
 >We recommend you weigh the risk of sending more traffic that bypasses the VPN over the performance gain for Live Events.
 
-To implement the forced tunnel exception for Teams Live Events and Stream, the following steps should be applied:
+To implement the forced tunnel exception for Teams Events and Stream, the following steps should be applied:
 
 ## 1. Configure external DNS resolution
 
@@ -104,7 +104,7 @@ Here's an example of how to generate the PAC files:
 
 <#PSScriptInfo
 
-.VERSION 1.0.4
+.VERSION 1.0.5
 
 .AUTHOR Microsoft Corporation
 
@@ -319,6 +319,7 @@ function Get-TLEPacConfiguration {
 
     if(shExpMatch(host, "*.azureedge.net")
     || shExpMatch(host, "*.bmc.cdn.office.net")
+    || shExpMatch(host, "*.ml.cdn.office.net")
     || shExpMatch(host, "*.media.azure.net"))
     {
         var resolved_ip = dnsResolveEx(host);
@@ -516,7 +517,7 @@ Note that only the IPs (not FQDNs) from [Gathering the current lists of CDN Endp
 
 ### Will this send all my traffic to the service direct?
 
-No, this will send the latency-sensitive streaming traffic for a Live Event or Stream video direct, any other traffic will continue to use the VPN tunnel if they don't resolve to the IPs published.
+No, this will send the latency-sensitive streaming traffic for a Teams Event or Stream video direct, any other traffic will continue to use the VPN tunnel if they don't resolve to the IPs published.
 
 ### Do I need to use the IPv6 Addresses?
 
@@ -549,7 +550,7 @@ It doesn't, the advice above is purely for those consuming the service. Presenti
 
 ### Does this configuration risk traffic other than Town hall, Live Events &amp; Stream being sent direct?
 
-Yes, due to shared FQDNs used for some elements of the service, this is unavoidable. This traffic is normally sent via a corporate proxy which can apply inspection. In a VPN split tunnel scenario, using both the FQDNs and IPs will scope this risk down to a minimum, but it will still exist. Customers can remove the **\*.azureedge.net** domain from the offload configuration and reduce this risk to a bare minimum but this will remove the offload of Stream-supported Live Events (Teams-scheduled, external encoder events, Viva Engage events produced in Teams, Viva Engage-scheduled external encoder events, and Stream scheduled events or on-demand viewing from Stream). Events scheduled and produced in Teams are unaffected.
+Yes, due to shared FQDNs used for some elements of the service, this is unavoidable. This traffic is normally sent via a corporate proxy which can apply inspection. In a VPN split tunnel scenario, using both the FQDNs and IPs will scope this risk down to a minimum, but it will still exist. Customers can remove the **\*.azureedge.net** domain from the offload configuration and reduce this risk to a bare minimum but this will remove the offload of Stream-supported Live Events (Teams-scheduled, Stream encoder events, Viva Engage events produced in Teams, Viva Engage-scheduled Stream encoder events, and Stream scheduled events or on-demand viewing from Stream). Events scheduled and produced in Teams (including Town hall) are unaffected.
 
 ## Related articles
 
