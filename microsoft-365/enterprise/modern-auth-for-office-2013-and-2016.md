@@ -57,7 +57,7 @@ Office 2013 client apps support legacy authentication by default. Legacy means t
 > [!IMPORTANT]
 > The use of basic authentication is being deprecated for Exchange Online mailboxes on Microsoft 365. This means that if Outlook 2013 is not configured to use modern authentication, it loses the ability to connect. Read [this article](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-deprecation-in-exchange-online-september/ba-p/3609437) for more information about basic auth deprecation.
 
-To enable modern authentication for any devices running Windows (for example on laptops and tablets), that have Microsoft Office 2013 installed, you need to set the following registry keys. The keys have to be set on each device that you want to enable for modern authentication:
+To enable modern authentication for any devices running Windows (for example, laptops and tablets), that have Microsoft Office 2013 installed, you need to set the following registry keys. The keys have to be set on each device that you want to enable for modern authentication:
 
 |**Registry key**|**Type**|**Value** |
 |:-------|:------:|--------:|
