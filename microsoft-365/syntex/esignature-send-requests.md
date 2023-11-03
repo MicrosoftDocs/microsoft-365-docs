@@ -71,7 +71,7 @@ The PDF viewer is opened by selecting a PDF file from SharePoint Online. The abi
 
 Syntex eSignature is an extension of SharePoint document storage and management service. Therefore, all existing access, sharing, and data loss prevention policies that are already applied at the tenant level, SharePoint site and library level, or folder and file level might affect whether a request can be started from a document in SharePoint and who it can be sent to. Some of the scenarios that might affect the signature request process are:
 
-- If encryption is applied on the e.g through sensitivity labeling applied to the file, the ability to view the document woun't be available from SharePoint online and therefore can't start a Signature request from there. Read more about [sensitivity lebels](https://learn.microsoft.com/en-us/purview/sensitivity-labels).
+- If encryption is applied on the e.g through sensitivity labeling applied to the file, the ability to view the document woun't be available from SharePoint online and therefore can't start a Signature request from there. Read more about [sensitivity lebels](https://learn.microsoft.com/purview/sensitivity-labels).
 
 - The document is stored in a library or folder that has unique permissions or sharing settings. This event might override the default settings of the SharePoint site or tenant and either allow or block certain users from initiating or accessing an eSignature request with that document.
 
