@@ -92,7 +92,7 @@ Set performance mode status to enabled via the following OMA-URI setting:
 
 2. Double-click **Configure performance mode status**.
 
-  ![Screenshot of Defender_Performance_Mode_10.](media/microsoft-defender-endpoint-antivirus-performance-mode/defender-performance-mode-10.png).
+   ![Screenshot of Defender_Performance_Mode_10.](media/microsoft-defender-endpoint-antivirus-performance-mode/defender-performance-mode-10.png).
 
 3. Select **Enabled**.
 
