@@ -36,11 +36,11 @@ ms.date: 11/15/2023
 > [!IMPORTANT]
 > Some information in this article relates to prereleased products/services that might be substantially modified before commercially release. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-Data security is threatened by various attacks today, such as business email compromise (BEC), ransomware, organizational breaches, and nation-state attacks. These attacks often use lateral movement and can be hard to detect with high confidence in the early stages. Microsoft 365 Defender, through built-in deception capability, delivers high confidence signals on the early stages of these attacks, preventing attacks from reaching an organization's critical assets.
+Various attacks put data security at risk today. [Business email compromise (BEC)](https://www.microsoft.com/en-us/security/business/security-101/what-is-business-email-compromise-bec), [ransomware](/security/ransomware/), organizational breaches, and nation-state attacks often use lateral movement and can be hard to detect with high confidence in the early stages. Microsoft 365 Defender, through built-in deception capability, delivers high confidence signals on the early stages of these attacks, preventing attacks from reaching an organization's critical assets.
 
-The Microsoft 365 Defender built-in deception feature gives important information and alerts security teams. The feature is designed to provide high-confidence detections and disruption of human-operated lateral movement. With deception built in, you can automatically deploy decoys and lures to attract attackers without having the need for additional appliances or deployments. When enabled, Microsoft 365 Defender alerts defenders once an attacker is tricked by a false trap set up by the deception technology. The defenders can then use the information to investigate the activity and observe the attacker's methods and strategies.  
+The Microsoft 365 Defender built-in deception feature gives important information and alerts security teams. The feature is designed to provide high-confidence detections and disruption of human-operated lateral movement. With deception built in, you can automatically deploy decoys and lures to attract attackers without having the need for other appliances or deployments. Microsoft 365 Defender alerts security teams when an attacker interacts with a fake account or device that the deception feature set up. The defenders can then use the information to investigate the activity and observe the attacker's methods and strategies.  
 
-This article gives an overview of the deception feature, requirements to enable the feature, and additional resources.
+This article gives an overview of the deception feature, requirements to enable the feature, and other resources.
 
 ## Prerequisites
 
@@ -55,20 +55,20 @@ The following table lists the requirements to enable the deception feature in Mi
 
 ## What is deception technology?
 
-Deception technology is a security measure that provides immediate alerts to security teams in the event of a potential attack, allowing them to respond in real-time. Deception technology creates fake assets like devices, users, and hosts that appear to belong to your network. Usually, deception technology is added and deployed to your network as an extra appliance.
+Deception technology is a security measure that provides immediate alerts of a potential attack to security teams, allowing them to respond in real-time. Deception technology creates fake assets like devices, users, and hosts that appear to belong to your network. Usually, deception technology is added and deployed to your network as an extra appliance.
 
 Attackers interacting with the fake network assets set up by the deception feature can help security teams prevent potential attacks from compromising an organization and monitor the attackers’ actions so defenders can improve their environment's security further.
 
 ### How does the deception feature work?
 
-The deception feature built in in the Microsoft 365 Defender portal uses rules to make decoys and lures that match your environment. The feature applies machine learning to suggest decoys and lures that are tailored to your network. You can also use the deception feature to manually create the decoys and lures. These decoys and lures are then deployed to your network automatically.
+The deception feature built in the Microsoft 365 Defender portal uses rules to make decoys and lures that match your environment. The feature applies machine learning to suggest decoys and lures that are tailored to your network. You can also use the deception feature to manually create the decoys and lures. These decoys and lures are then deployed to your network automatically.
 
 **Decoys** are fake devices and accounts that appear to belong to your network. **Lures** are fake content planted on specific devices or accounts and are used to attract an attacker. The content can be a document, a configuration file, cached credentials, or any content that an attacker can likely read, steal, or interact with. Lures imitate important company information, settings, or credentials.
 
 There are two types of lures available in the deception feature:
 
-- Basic lures – these are planted documents, link files, and the like that have no or minimal interaction with the customer environment.  
-- Advanced lures – these are planted content like cached credentials and interceptions that respond or interact with the customer environment. For example, attackers might interact with decoy credentials that were injected responses to Active Directory queries, which can be used to sign in.
+- Basic lures – planted documents, link files, and the like that have no or minimal interaction with the customer environment.  
+- Advanced lures – planted content like cached credentials and interceptions that respond or interact with the customer environment. For example, attackers might interact with decoy credentials that were injected responses to Active Directory queries, which can be used to sign in.
 
 > [!NOTE]
 > Lures are only planted on Windows clients defined in the scope of a deception rule. However, attempts to use any decoy device or account on any Defender for Endpoint-onboarded client will raise a deception alert. Learn how to onboard clients in [Onboard to Microsoft Defender for Endpoint](/defender-for-endpoint/onboarding/).
@@ -79,7 +79,7 @@ When an attacker uses a decoy or a lure, the deception feature triggers an alert
 
 ## Identify when deception is detected in your environment
 
-Alerts based on deception detection contain “deceptive” in the title. Below are some examples of alert titles:
+Alerts based on deception detection contain “deceptive” in the title. Some examples of alert titles are:
 
 - Sign-in attempt with a deceptive user account
 - Connection attempt to a deceptive host
