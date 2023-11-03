@@ -106,6 +106,22 @@
 
   - name: Onboard and configure devices
     items:
+    - name: Configure service connections
+      items:
+        - name: Step 1 - Configure your network environment 
+          href: configure-environment.md
+        - name: Step 2 - Configure device proxy and Internet settings
+          href: configure-proxy-internet.md
+        - name: Step 3 - Verify client connectivity to service URLs
+          href: verify-connectivity.md
+        
+    - name: Streamlined connectivity
+      items:
+        - name: Onboarding devices using streamlined method
+          href: configure-device-connectivity.md
+        - name: Migrating devices to streamlined method
+          href: migrate-devices-streamlined.md
+
     - name: Onboarding Windows Client
       items:
       - name: Onboarding Windows Client overview
@@ -265,10 +281,57 @@
         href: ios-privacy.md
     - name: Run a detection test on a newly onboarded Microsoft Defender for Endpoint
       href: run-detection-test.md
-    - name: Onboard devices without Internet access
-      href: onboard-offline-machines.md
-    - name: Configure proxy and Internet connectivity settings
-      href: configure-proxy-internet.md
+    - name: Configure Microsoft Defender for Endpoint on macOS
+      items:
+      - name: Configure and validate exclusions
+        href: mac-exclusions.md
+      - name: Set preferences
+        href: mac-preferences.md
+      - name: Detect and block Potentially Unwanted Applications
+        href: mac-pua.md
+      - name: Protect macOS security settings using tamper protection
+        href: tamperprotection-macos.md
+      - name: Device control
+        items:
+        - name: Device control overview
+          href: mac-device-control-overview.md
+        - name: JAMF examples
+          href: mac-device-control-jamf.md
+        - name: Intune examples
+          href: mac-device-control-intune.md
+        - name: macOS Device Control frequently asked questions (FAQ)
+          href: mac-device-control-faq.md
+
+      - name: Schedule scans
+        href: mac-schedule-scan.md
+
+    - name: Configure Microsoft Defender for Endpoint on Linux
+      items:
+      - name: Configure and validate exclusions
+        href: linux-exclusions.md
+      - name: Static proxy configuration
+        href: linux-static-proxy-configuration.md
+      - name: Set preferences
+        href: linux-preferences.md
+      - name: Detect and block Potentially Unwanted Applications
+        href: linux-pua.md
+      - name: Schedule scans with Microsoft Defender for Endpoint on Linux
+        href: linux-schedule-scan-mde.md
+      - name: Schedule antivirus scan in Defender for Endpoint on Linux
+        href: schedule-antivirus-scan-in-mde.md
+      - name: Schedule an update of the Microsoft Defender for Endpoint (Linux)
+        href: linux-update-MDE-Linux.md
+      - name: Configure eBPF-based sensor
+        href: linux-support-ebpf.md 
+
+    - name: Configure Mobile Threat Defense
+      items:
+      - name: Configure Microsoft Defender for Endpoint on Android features
+        href: android-configure.md
+      - name: Configure Microsoft Defender for Endpoint on Android risk signals using app protection policy
+        href: android-configure-mam.md
+      - name: Configure Microsoft Defender for Endpoint on iOS features
+        href: ios-configure-features.md
   - name: How to guides
     items:
     - name: Integration with Microsoft Defender for Cloud
@@ -683,8 +746,6 @@
           href: configure-local-policy-overrides-microsoft-defender-antivirus.md
         - name: Specify whether users can see or interact with Microsoft Defender Antivirus user interface
           href: prevent-end-user-interaction-microsoft-defender-antivirus.md
-        - name: Turn on definition retirement
-          href: turn-on-definition-retirement.md
 
       - name: Deploy and report on Microsoft Defender Antivirus
         href: deploy-manage-report-microsoft-defender-antivirus.md

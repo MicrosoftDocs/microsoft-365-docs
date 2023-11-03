@@ -39,7 +39,7 @@ In Microsoft 365 Defender Unified role-based access control (RBAC), you can edit
 The following steps guide you on how to edit roles in Microsoft 365 Defender Unified RBAC:
 
 > [!IMPORTANT]
-> You must be a Global Administrator or Security Administrator in Azure Active Directory, or have all the **Authorization** permissions assigned in Microsoft 365 Defender Unified RBAC to perform this task. For more information on permissions, see [Permission pre-requisites](../defender/manage-rbac.md#permissions-pre-requisites).
+> You must be a Global Administrator or Security Administrator in Microsoft Entra ID, or have all the **Authorization** permissions assigned in Microsoft 365 Defender Unified RBAC to perform this task. For more information on permissions, see [Permission pre-requisites](../defender/manage-rbac.md#permissions-pre-requisites).
 
 1. Sign in to the [Microsoft 365 Defender portal](https://security.microsoft.com) as global administrator or security administrator.
 2. In the navigation pane, select **Permissions**.
@@ -79,7 +79,7 @@ The CSV also includes a snapshot of the Unified RBAC activation status for each 
 The following steps guide you on how to export roles in Microsoft 365 Defender Unified RBAC:
 
 >[!Note]
->To export roles, you must be a Global Administrator or Security Administrator in Azure Active Directory, or have the **Authorization (manage)** permission assigned for all data sources in Microsoft 365 Defender Unified RBAC and have at least one workload activated for Unified RBAC.
+>To export roles, you must be a Global Administrator or Security Administrator in Microsoft Entra ID, or have the **Authorization (manage)** permission assigned for all data sources in Microsoft 365 Defender Unified RBAC and have at least one workload activated for Unified RBAC.
 >
 >For more information on permissions, see [Permission pre-requisites](../defender/manage-rbac.md#permissions-pre-requisites).
 

@@ -69,8 +69,8 @@ For more information, see [PowerShell documentation](/powershell/module/microsof
 Run the below:
 
 - $tenantId: ID of the tenant on behalf of which you want to run the query (that is, the query is run on the data of this tenant)
-- $appId: ID of your AAD app (the app must have 'Run advanced queries' permission to Defender for Endpoint)
-- $appSecret: Secret of your Azure AD app
+- $appId: ID of your Microsoft Entra app (the app must have 'Run advanced queries' permission to Defender for Endpoint)
+- $appSecret: Secret of your Microsoft Entra app
 
 - $suspiciousUrl: The URL
 

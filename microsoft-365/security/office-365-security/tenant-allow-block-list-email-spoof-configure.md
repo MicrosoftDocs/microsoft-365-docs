@@ -19,7 +19,7 @@ ms.service: microsoft-365-security
 ms.date: 6/20/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
@@ -48,7 +48,7 @@ This article describes how admins can manage entries for email senders in the Mi
 - An entry should be active within 5 minutes.
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-  - [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo):
+  - [Exchange Online permissions](/exchange/permissions-exo/permissions-exo):
     - _Add and remove entries from the Tenant Allow/Block List_: Membership in one of the following role groups:
       - **Organization Management** or **Security Administrator** (Security admin role).
       - **Security Operator** (Tenant AllowBlockList Manager).
@@ -57,7 +57,7 @@ This article describes how admins can manage entries for email senders in the Mi
       - **Security Reader**
       - **View-Only Configuration**
       - **View-Only Organization Management**
-  - [Azure AD RBAC](../../admin/add-users/about-admin-roles.md): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
+  - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator**, **Security Administrator**, **Global Reader**, or **Security Reader** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 ## Domains and email addresses in the Tenant Allow/Block List
 
@@ -242,14 +242,13 @@ For detailed syntax and parameter information, see [Set-TenantAllowBlockListItem
    - Select the entry from the list by clicking anywhere in the row other than the check box. In the details flyout that opens, select :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png" border="false"::: **Delete** at the top of the flyout.
 
      > [!TIP]
-     > To see details about other entries without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
+     > - To see details about other entries without leaving the details flyout, use :::image type="icon" source="../../media/updownarrows.png" border="false"::: **Previous item** and **Next item** at the top of the flyout.
+     > - You can select multiple entries by selecting each check box, or select all entries by selecting the check box next to the **Value** column header.
 
 4. In the warning dialog that opens, select **Delete**.
 
 Back on the **Domains & addresses** tab, the entry is no longer listed.
 
-> [!TIP]
-> You can select multiple entries by selecting each check box, or select all entries by selecting the check box next to the **Value** column header.
 
 #### Use PowerShell to remove entries for domains and email addresses from the Tenant Allow/Block List
 
@@ -463,10 +462,11 @@ For detailed syntax and parameter information, see [Set-TenantAllowBlockListSpoo
 
 3. On the **Spoofed senders** tab, select the entry from the list by selecting the check box next to the first column, and then select the :::image type="icon" source="../../media/m365-cc-sc-delete-icon.png" border="false"::: **Delete** action that appears.
 
+   > [!TIP]
+   > You can select multiple entries by selecting each check box, or select all entries by selecting the check box next to the **Spoofed user** column header.
+
 4. In the warning dialog that opens, select **Delete**.
 
-> [!NOTE]
-> You can select multiple entries by selecting each check box, or select all entries by selecting the check box next to the **Spoofed user** column header.
 
 #### Use PowerShell to remove entries for spoofed senders from the Tenant Allow/Block List
 
@@ -528,7 +528,7 @@ Instead, the domain or sender is added to the **Trusted senders and domains** se
 For submission instructions for impersonation false positives, see [Report good email to Microsoft](submissions-admin.md#report-good-email-to-microsoft).
 
 > [!NOTE]
-> Currently, Graph Impersonation isn't taken care of from here.
+> Currently, User (or graph) Impersonation isn't taken care of from here.
 
 ## Related articles
 

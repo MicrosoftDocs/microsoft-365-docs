@@ -79,7 +79,7 @@ Syntex eSignature is an extension of SharePoint document storage and management 
 
 - The document is stored in a library or folder that has unique permissions or sharing settings. This event might override the default settings of the SharePoint site or tenant and either allow or block certain users from initiating or accessing an eSignature request with that document.
 
-- Microsoft Entra ID collaboration settings restrict document sharing to specific individuals. This event limits who the requests can be sent to.
+- Microsoft Entra collaboration settings restrict document sharing to specific individuals. This event limits who the requests can be sent to.
 
 <br>
 
