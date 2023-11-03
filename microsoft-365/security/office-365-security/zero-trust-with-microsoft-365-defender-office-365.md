@@ -4,7 +4,7 @@ description: Microsoft Defender for Office 365 contributes to a strong Zero Trus
 keywords: Zero Trust, Microsoft Defender for Office 365, Microsoft 365 Defender, security architecture, security strategy, cyber security, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
+ms.service: microsoft-365-zero-trust
 ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library

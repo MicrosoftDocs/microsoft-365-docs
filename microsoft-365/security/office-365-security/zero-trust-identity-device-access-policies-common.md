@@ -4,7 +4,7 @@ description: Describes the recommended common Zero Trust identity and device acc
 ms.author: joflore
 author: MicrosoftGuyJFlo
 manager: amycolannino
-ms.service: microsoft-365-security
+ms.service: microsoft-365-zero-trust
 ms.topic: conceptual
 audience: Admin
 f1.keywords:

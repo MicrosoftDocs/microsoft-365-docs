@@ -3,7 +3,7 @@ title: Recommended Teams policies - Microsoft 365 for enterprise | Microsoft Doc
 description: Describes the policies for Microsoft recommendations about how to secure Teams communication and file access.
 author: MicrosoftHeidi
 manager: serdars
-ms.service: microsoft-365-security
+ms.service: microsoft-365-zero-trust
 ms.topic: conceptual
 audience: Admin
 f1.keywords: 

@@ -4,7 +4,7 @@ description: Describes the policies for Microsoft recommendations about how to s
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.service: microsoft-365-security
+ms.service: microsoft-365-zero-trust
 ms.topic: conceptual
 audience: Admin
 f1.keywords:
