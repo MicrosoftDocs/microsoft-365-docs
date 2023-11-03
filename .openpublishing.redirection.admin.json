@@ -2032,6 +2032,11 @@
          "redirect_document_id":false
        },
        {
+         "source_path": "microsoft-365/admin/new-subscription-names.md",
+         "redirect_url": "https://go.microsoft.com/fwlink/p/?linkid=2120533",
+         "redirect_document_id": false
+       },
+       {
          "source_path": "microsoft-365/admin/misc/deleted-user.md",
          "redirect_url": "/microsoft-365/admin/add-users/delete-a-user",
          "redirect_document_id":false
