@@ -82,3 +82,7 @@ For DKIM to work, make sure you enable DKIM for sending domain. For example, fab
 To add a custom domain, follow the steps in [Add a domain to Microsoft 365](/microsoft-365/admin/setup/add-domain).
 
 If the MX record for your domain points to a third party service or an on-premises email server, you should use [Enhanced Filtering for Connectors](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors). Enhanced Filtering ensures SPF validation is correct for inbound mail and avoids sending email through the relay pool.
+
+### Find out which outbound pool was used
+As an Exchange Service administrator or Global Administrator, you might want to find out which outbound pool was used to send a message externally from within Microsoft 365.
+To do so, you can [trace the message](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac) in question and look for the "OutboundIpPoolName" property in the output. This property contains a friendly name value for the outbound pool which was used.
