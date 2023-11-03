@@ -17,7 +17,7 @@ metadata:
   - scotvorg
   ms.localizationpriority: medium
   description: "Frequently asked questions about license reservations in the Microsoft 365 admin center."
-  ms.date: 10/13/2023
+  ms.date: 11/03/2023
 
 title: License Reservation Frequently Asked Questions
 summary: |
@@ -78,11 +78,14 @@ sections:
         answer: |
           1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Your products</a> page, select the **Volume licensing** tab, then select **View Reservation**.
           2. Search for the reservation order that you want to view details of or cancel through the search bar on the top right: by Reservation ID, Licensing Contract ID, or organization.
+          
             > [!NOTE]
             > A message appears if you don't have any previous reservations.
+          
           3. Copy the reservation ID and then select the **Cancel** button under the **Action** column.
           4. Paste the reservation ID and enter the reason for cancellation.
           5. Select **OK** to cancel the reservation.
+          
             > [!NOTE]
             > You can cancel a submitted reservation within 72 hours of the usage date.
           
