@@ -85,4 +85,4 @@ If the MX record for your domain points to a third party service or an on-premis
 
 ### Find out which outbound pool was used
 As an Exchange Service administrator or Global Administrator, you might want to find out which outbound pool was used to send a message externally from within Microsoft 365.
-To do so, you can [trace the message](https://learn.microsoft.com/en-us/exchange/monitoring/trace-an-email-message/message-trace-modern-eac) in question and look for the "OutboundIpPoolName" property in the output. This property contains a friendly name value for the outbound pool which was used.
+To do so, you can [trace the message](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac) in question and look for the "OutboundIpPoolName" property in the output. This property contains a friendly name value for the outbound pool which was used.
