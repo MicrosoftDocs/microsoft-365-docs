@@ -114,7 +114,7 @@ To verify that Dev Drive and Defender Performance Mode is enabled, follow these 
 
 1. In the Windows Security App, go to **Virus & threat Protection settings** > **Manage settings**, and verify that Dev Drive protection is enabled.
 
-   :::image type="content" alt-text="Screenshot of Defender_Performance_Mode_02." source="media/microsoft-defender-endpoint-antivirus-performance-mode/defender-performance-mode-02.png" lightbox="media/microsoft-defender-endpoint-antivirus-performance-mode/defender-performance-mode-02.png":::
+   :::image type="content" alt-text="Screenshot of Defender_Performance_Mode_02." source="media/microsoft-defender-endpoint-antivirus-performance-mode/defender-performance-mode-02.png":::
 
 2. Select **See volumes**.
 
