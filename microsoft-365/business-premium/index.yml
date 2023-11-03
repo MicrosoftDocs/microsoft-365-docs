@@ -76,7 +76,7 @@ conceptualContent:
           text: 1. Sign in and set up
         - url: ../business-premium/m365bp-security-overview.md
           itemType: overview
-          text: 2. Boost your security protection
+          text: 2. Configure your security protection
         - url: ../business-premium/m365bp-set-up-unmanaged-devices.md
           itemType: overview
           text: 3. Protect unmanaged (BYOD) devices
