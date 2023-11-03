@@ -90,7 +90,9 @@ Set performance mode status to enabled via the following OMA-URI setting:
   
 1. In GPMC.msc or GPedit.msc, go to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Real-time Protection**.
 
-2. Double-click on "Configure performance mode status"![Screenshot of Defender_Performance_Mode_10.](media/microsoft-defender-endpoint-antivirus-performance-mode/defender-performance-mode-10.png).
+2. Double-click **Configure performance mode status**.
+
+  ![Screenshot of Defender_Performance_Mode_10.](media/microsoft-defender-endpoint-antivirus-performance-mode/defender-performance-mode-10.png).
 
 3. Select **Enabled**.
 
