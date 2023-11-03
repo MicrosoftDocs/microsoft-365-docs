@@ -36,19 +36,15 @@ To keep your organization [secure by default](secure-by-default.md), Exchange On
 
 Use the _advanced delivery policy_ in EOP to prevent inbound messages _in these specific scenarios_ from being filtered¹. The advanced delivery policy ensures that messages in these scenarios achieve the following results:
 
-- Filters in EOP and Defender for Office 365 take no action on these messages.¹
-- [Zero-hour Purge (ZAP)](zero-hour-auto-purge.md) for spam and phishing take no action on these messages².
+- Filters in EOP and Defender for Office 365 take no action on these messages. Malware filtering is bypassed for SecOps mailboxes only.
+- [Zero-hour Purge (ZAP)](zero-hour-auto-purge.md) for spam and phishing take no action on these messages. ZAP for malware is bypassed for SecOps mailboxes only.
+- [Safe Links in Defender for Office 365](safe-links-about.md) doesn't block or detonate the specified URLs in these messages at time of click. URLs are still wrapped, but they aren't blocked.
+- [Safe Attachments in Defender for Office 365](safe-attachments-about.md) doesn't detonate attachments in these messages.
 - [Default system alerts](/purview/alert-policies#default-alert-policies) aren't triggered for these scenarios.
 - [AIR and clustering in Defender for Office 365](air-about.md) ignores these messages.
 - Specifically for third-party phishing simulations:
   - [Admin submission](submissions-admin.md) generates an automatic response saying that the message is part of a phishing simulation campaign and isn't a real threat. Alerts and AIR aren't triggered. The admin submissions experience shows these messages as a simulated threat.
   - When a user reports a phishing simulation message using the [built-in Report button in Outlook on the web](submissions-outlook-report-messages.md#use-the-built-in-report-button-in-outlook-on-the-web) or the [Microsoft Report Message or Report Phishing add-ins](submissions-outlook-report-messages.md#use-the-report-message-and-report-phishing-add-ins-in-outlook), the system doesn't generate an alert, investigation, or incident. The links or files aren't detonated, but the message appears on the **User reported** tab of the **Submissions** page.
-  - [Safe Links in Defender for Office 365](safe-links-about.md) doesn't block or detonate the specified URLs in these messages at time of click. URLs are still wrapped, but they aren't blocked.
-  - [Safe Attachments in Defender for Office 365](safe-attachments-about.md) doesn't detonate attachments in these messages.
-
-¹ Malware filtering is bypassed for SecOps mailboxes only.
-
-² You can bypass ZAP for malware by creating an anti-malware policy for the SecOps mailbox where ZAP for malware is turned off. For instructions, see [Configure anti-malware policies in EOP](anti-malware-policies-configure.md).
 
 Messages that are identified by the advanced delivery policy aren't security threats, so the messages are marked with system overrides. Admin experiences show these messages as **Phishing simulation** or **SecOps mailbox** system overrides. Admins can use these values to filter and analyze messages in the following experiences:
 

@@ -140,3 +140,7 @@
       href: m365-lighthouse-troubleshoot.md
     - name: Frequently asked questions (FAQs)
       href: m365-lighthouse-faq.yml
+- name: Privacy and compliance
+  items:
+    - name: Data collection for Microsoft 365 Lighthouse
+      href: m365-lighthouse-data-collection.md

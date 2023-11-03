@@ -80,6 +80,9 @@ The Channel usage chart shows data on the following metrics.
 |Active channels|Valid channels in active teams that have at least one active user in the specified time period. This includes public, private, or shared channels.|
 |Channel messages|The number of unique messages that the user posted in a private chat during the specified time period.|
 
+> [!NOTE]
+> Panel action refers to any action taken by the user in the panel within Microsoft Teams.
+
 ### Team usage metrics
 
 The Teams usage chart shows data on the following metrics.
