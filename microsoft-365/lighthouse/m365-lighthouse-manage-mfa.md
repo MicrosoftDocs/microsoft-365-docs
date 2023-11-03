@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: ragovind
-ms.date: 06/30/2023
+ms.date: 10/27/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -27,6 +27,9 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 Microsoft 365 Lighthouse allows you to manage multifactor authentication (MFA) settings across all tenants. The multifactor authentication page provides detailed information on the status of MFA enablement and the ability to take action on specific users.
 
 For small- and medium-sized business (SMB) customers, Microsoft recommends enabling [security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) at a minimum. For more complex scenarios, you can use [Conditional Access](/azure/active-directory/conditional-access/overview) to configure specific policies.
+
+> [!NOTE]
+> This page provides insights around tenants for which data availability is limited.
 
 ## Before you begin
 
@@ -55,7 +58,7 @@ The customer tenant must be active within Microsoft 365 Lighthouse. To determine
 
 > [!NOTE]
 > Lighthouse opens your default email client and prepopulates the email message with instructions to register for MFA. All the selected users will be included on the BCC line. If you prefer to individually email users, you can select the email icon next to the username.
-> 
+>
 > If you want to use a different email account, you can export the list of users to a file. You can also download sample email templates you can customize with your company branding.
 
 ## Exclude users from MFA registration

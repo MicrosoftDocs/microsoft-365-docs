@@ -10,13 +10,10 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 description: "Learn how Microsoft 365 Copilot uses data and how it stores and protects that data."
 hideEdit: true
-ms.date: 09/26/2023
+ms.date: 11/01/2023
 ---
 
 # Data, Privacy, and Security for Microsoft 365 Copilot
-
-> [!IMPORTANT]
-> The information in this article only applies to the [Microsoft 365 Copilot Early Access Program](microsoft-365-early-access-program.yml), an invite-only paid preview program for commercial customers. Details are subject to change.
 
 Microsoft 365 Copilot is a sophisticated processing and orchestration engine that provides AI-powered productivity capabilities by coordinating the following components:
 
@@ -33,7 +30,7 @@ For an overview of how these three components work together, see [Microsoft 365 
 The information in this article is intended to help provide answers to the following questions:
 
 - [How does Microsoft 365 Copilot use your proprietary organizational data?](#how-does-microsoft-365-copilot-use-your-proprietary-organizational-data)
-- [How does Microsoft 365 Copilot protect sensitive organizational information and data?](#how-does-microsoft-365-copilot-protect-sensitive-organizational-data)
+- [How does Microsoft 365 Copilot protect organizational information and data?](#how-does-microsoft-365-copilot-protect-organizational-data)
 - [How does Microsoft 365 Copilot meet regulatory compliance requirements?](#meeting-regulatory-compliance-requirements)
 - [Do controls for connected experiences in Microsoft 365 Apps apply to Microsoft 365 Copilot?](#microsoft-365-copilot-and-policy-settings-for-connected-experiences)
 - [Can I trust the content that Microsoft 365 Copilot creates? Who owns that content?](#about-the-content-that-microsoft-365-copilot-creates)
@@ -44,29 +41,40 @@ The information in this article is intended to help provide answers to the follo
 
 ## How does Microsoft 365 Copilot use your proprietary organizational data?
 
-Microsoft 365 Copilot provides value by connecting LLMs to your organizational data. Microsoft 365 Copilot accesses content and context through Microsoft Graph. It can generate responses anchored in your organizational data, such as user documents, emails, calendar, chats, meetings, and contacts. Microsoft 365 Copilot combines this content with the user’s working context, such as the meeting a user is in now, the email exchanges the user has had on a topic, or the chat conversations the user had last week. Microsoft 365 Copilot uses this combination of content and context to help provide accurate, relevant, and contextual responses.
+Microsoft 365 Copilot provides value by connecting LLMs to your organizational data. Microsoft 365 Copilot accesses content and context through Microsoft Graph. It can generate responses anchored in your organizational data, such as user documents, emails, calendar, chats, meetings, and contacts. Microsoft 365 Copilot combines this content with the user’s working context, such as the meeting a user is in now, the email exchanges the user had on a topic, or the chat conversations the user had last week. Microsoft 365 Copilot uses this combination of content and context to help provide accurate, relevant, and contextual responses.
 
 > [!IMPORTANT]
 > Prompts, responses, and data accessed through Microsoft Graph aren't used to train foundation LLMs, including those used by Microsoft 365 Copilot.
 
 Microsoft 365 Copilot only surfaces organizational data to which individual users have at least view permissions. It's important that you're using the permission models available in Microsoft 365 services, such as SharePoint, to help ensure the right users or groups have the right access to the right content within your organization.  
 
-Microsoft 365 Copilot only searches for information from the user’s tenant. It doesn't search other tenants that the user might have access to, such as a tenant where the user is a Microsoft Entra B2B guest.
-
 When you input prompts using Microsoft 365 Copilot, the information contained within your prompts, the data they retrieve, and the generated responses remain within the Microsoft 365 service boundary, in keeping with our current privacy, security, and compliance commitments. Microsoft 365 Copilot use Azure OpenAI services for processing, not OpenAI’s publicly available services.
 
 > [!NOTE]
 > We may use customer feedback, which is optional, to improve Microsoft 365 Copilot, just like we use customer feedback to improve other Microsoft 365 services and Microsoft 365 apps. We don't use this feedback to train the foundation LLMs used by Microsoft 365 Copilot. Customers can manage feedback through admin controls. For more information, see [Manage Microsoft feedback for your organization](/microsoft-365/admin/manage/manage-feedback-ms-org).
 
+### Microsoft 365 Copilot and public web content
+
+Microsoft 365 Copilot chat experiences can reference public web content when responding to a user’s prompt. Based on the user’s prompt, Copilot determines whether it needs to use Bing to query public web content to help provide a relevant response to the user.
+
+If Microsoft 365 Copilot determines web content can help provide a more relevant response, it generates a search query to send to Bing. That search query is based on the user’s prompt, conversation history, and data the user has access to in Microsoft 365. This query might include your organization’s data, but the user’s account and their tenant ID aren't included in the search query sent to Bing.
+
+Microsoft Bing is a separate business from Microsoft 365 and data is managed independently of Microsoft 365. The use of Bing is covered by the [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement) between each user and Microsoft, together with the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement). The [Microsoft Products and Services Data Protection Addendum (DPA)](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA) doesn’t apply to the use of Bing.
+
+Admins can prevent their users from referencing public web content in their requests. For more information, see [Manage access to public web content in Microsoft 365 Copilot responses](/microsoft-365-copilot/manage-public-web-access). Even when allowed by the admin, users still have the option whether or not they want to reference public web content in their requests.
+
+> [!NOTE]
+> The policy settings that control the use of optional connected experiences in Microsoft 365 Apps don’t apply to Microsoft 365 Copilot and public web content.
+
 ### Extensibility of Microsoft 365 Copilot
 
 While Microsoft 365 Copilot is already able to use the apps and data within the Microsoft 365 ecosystem, many users still depend on various external tools and services for work management and collaboration. Customers can address this gap by extending Microsoft 365 Copilot to enable users to work with their third-party tools and services. This can be done through extending Microsoft 365 Copilot by building a plug-in or by connecting to an external data source. For more information, see [Extend Microsoft 365 Copilot](/microsoftteams/platform/copilot/how-to-extend-copilot).
 
-## How does Microsoft 365 Copilot protect sensitive organizational data?
+## How does Microsoft 365 Copilot protect organizational data?
 
 The permissions model within your Microsoft 365 tenant can help ensure that data won't unintentionally leak between users, groups, and tenants. Microsoft 365 Copilot presents only data that each individual can access using the same underlying controls for data access used in other Microsoft 365 services. Semantic Index honors the user identity-based access boundary so that the grounding process only accesses content that the current user is authorized to access. For more information, see Microsoft’s [privacy policy and service documentation](https://privacy.microsoft.com/).  
 
-When you have data that's encrypted by Microsoft Purview Information Protection, it won't be returned by Microsoft 365 Copilot unless the user is granted at least the [View usage right](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions). This encryption can be applied by [sensitivity labels](/purview/sensitivity-labels) or by restricted permissions in Microsoft 365 apps by using Information Rights Management (IRM). While Microsoft 365 Copilot generated content currently doesn't inherit the most restrictive permissions or label from the source, Microsoft 365 Copilot cites the original source, which will retain the protection.
+When you have data that's encrypted by Microsoft Purview Information Protection, Microsoft 365 Copilot honors the usage rights granted to the user. This encryption can be applied by [sensitivity labels](/purview/sensitivity-labels) or by restricted permissions in Microsoft 365 apps by using Information Rights Management (IRM). For more information about using Microsoft Purview with Microsoft 365 Copilot, see [Protect and manage Microsoft 365 Copilot interactions with Microsoft Purview](/purview/ai-microsoft-purview).
 
 We already implement multiple forms of protection to help prevent customers from compromising Microsoft 365 services and applications or gaining unauthorized access to other tenants or the Microsoft 365 system itself. Here are some examples of those forms of protection:
 
@@ -82,18 +90,19 @@ We already implement multiple forms of protection to help prevent customers from
 
 ## Microsoft 365 Copilot and the EU Data Boundary
 
-Microsoft 365 Copilot doesn't change existing data processing and residency commitments that are applicable to Microsoft 365 tenants. Microsoft 365 Copilot calls to the LLM are routed to the closest data centers in the region, but also can call into other regions where capacity is available during high utilization periods.
+Microsoft 365 Copilot calls to the LLM are routed to the closest data centers in the region, but also can call into other regions where capacity is available during high utilization periods.
 
 For European Union (EU) users, we have additional safeguards to comply with the [EU Data Boundary](/privacy/eudb/eu-data-boundary-learn). EU traffic stays within the EU Data Boundary while worldwide traffic can be sent to the EU and other countries or regions for LLM processing.
+
+## Microsoft 365 Copilot and data residency
+
+Customers with [Advanced Data Residency (ADR) in Microsoft 365](/microsoft-365/enterprise/advanced-data-residency) or [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo) can purchase and enable Microsoft 365 Copilot. However, at this time, Microsoft Copilot doesn't provide data residency commitments for Microsoft 365 Copilot customer data-at-rest.
 
 ## Meeting regulatory compliance requirements
 
 As regulation in the AI space evolves, Microsoft will continue to adapt and respond to fulfill future regulatory requirements.
 
 Microsoft 365 Copilot is built on top of Microsoft’s current commitments to data security and privacy in the enterprise. There's no change to these commitments. Microsoft 365 Copilot is integrated into Microsoft 365 and adheres to all existing privacy, security, and compliance commitments to Microsoft 365 commercial customers. For more information, see [Microsoft Compliance](/compliance).
-
-> [!NOTE]
-> Currently, Microsoft 365 Copilot operates under the terms of the Early Access Program. When Microsoft 365 Copilot becomes generally available, it will operate under the [Microsoft 365 Product Terms](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/).
 
 Beyond adhering to regulations, we prioritize an open dialogue with our customers, partners, and regulatory authorities to better understand and address concerns, thereby fostering an environment of trust and cooperation. We acknowledge that privacy, security, and transparency aren't just features, but prerequisites in the AI-driven landscape at Microsoft.
 
