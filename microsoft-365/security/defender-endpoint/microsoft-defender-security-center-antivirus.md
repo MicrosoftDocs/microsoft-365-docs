@@ -101,7 +101,7 @@ To learn more, see the following resources:
 - [Configure and validate exclusions based on file extension and folder location](./configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [Configure exclusions for files opened by processes](./configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
-## Review threat detection history in the Windows Defender for Cloud app
+## Review threat detection history in the Windows Defender app
 
 1. Open the Windows Security app by searching the start menu for *Security*, and then selecting **Windows Security**.
 
@@ -126,3 +126,5 @@ To learn more, see the following resources:
 - [Microsoft Defender Antivirus](microsoft-defender-antivirus-in-windows-10.md)
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+
+
