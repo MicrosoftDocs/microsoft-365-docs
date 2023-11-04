@@ -45,7 +45,7 @@ Not every identified topic is useful to your organization. It might not have ide
 
 Viva Topics then, when the context is appropriate, will suggest these topics to be highlighted or displayed on different Microsoft 365 apps, such as SharePoint modern pages or on Outlook on the web. The topic can also be directly referenced on SharePoint pages by an author, on Microsoft Teams in chat messages, as well as in Outlook on the web while writing emails. When a user is curious to learn more about a topic, they can select a topic to view a **Topic summary** card that provides a short description. And if they want to learn more, they can select a **Topic details** link in the summary to open the detailed topic page.
 
-![Screenshot of a Topic summary card.](../media/knowledge-management/saturn.png) </br>
+![Screenshot of a Topic summary card.](../media/topics/knowledge-management/saturn.png) </br>
 
 Additionally, users will also be able to find topics through Microsoft Search.
 

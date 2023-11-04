@@ -34,7 +34,7 @@ In the Viva Topics topic center, a knowledge manager can view the **Manage topic
 
 Knowledge managers help to guide discovered topics through the various topic lifecycle statuses: **Suggested**, **Confirmed**, **Published**, and **Removed**.
 
-   ![Topic Lifecycle chart.](../media/knowledge-management/topic-lifecycle.png)
+   ![Topic Lifecycle chart.](../media/topics/knowledge-management/topic-lifecycle.png)
 
 - **Suggested**: A topic has been identified by AI and has enough supporting resources, connections, and properties. (These are marked as a **Suggested Topic** in the UI.)
 
@@ -76,7 +76,7 @@ In the topic center, a knowledge manager can review topics that have been identi
 
 On the **Manage topics** page, topics that were discovered in your specified SharePoint source locations will be labeled as **Suggested** in the status column. If needed, a knowledge manager can review unconfirmed topics and choose to confirm or remove them.
 
-   ![Screenshot of suggested topics.](../media/knowledge-management/suggested-topics-filtered-view.png) 
+   ![Screenshot of suggested topics.](../media/topics/knowledge-management/suggested-topics-filtered-view.png) 
 
 To review a suggested topic:
 
@@ -125,7 +125,7 @@ You can still choose to reject a confirmed topic. To reject a confirmed topic, g
 
 On the **Manage topics** page, topics that were discovered in your specified SharePoint source locations will show a **Published** status. Published topics have been edited so that specific information will always appear to whoever encounters the page. Manually created topics are listed here as well.
 
-   ![Screenshot of published topics.](../media/knowledge-management/published-topics-filtered-view.png)
+   ![Screenshot of published topics.](../media/topics/knowledge-management/published-topics-filtered-view.png)
 
 ## Removed topics
 
@@ -137,7 +137,7 @@ Removed topics can later be added back as viewable topics if needed. If you want
 
 2. Select **Restore**.
 
-   ![Screenshot of Removed tab showing the Restore option.](../media/knowledge-management/restore-removed-topic.png)
+   ![Screenshot of Removed tab showing the Restore option.](../media/topics/knowledge-management/restore-removed-topic.png)
 
 ## Topic count dashboard
 
