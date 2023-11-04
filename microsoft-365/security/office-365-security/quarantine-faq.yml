@@ -187,7 +187,7 @@ sections:
       - question: |
           Why aren't users receiving notifications about their quarantined messages?
         answer: |
-          If the quarantine policy that's defined for the [supported quarantine action]((quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)) doesn't have notifications turned on, the quarantine notifications aren't sent.
+          If the quarantine policy that's defined for the [supported quarantine action](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features) doesn't have notifications turned on, the quarantine notifications aren't sent.
 
           For more information, see the last table in [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy) and the individual feature tables in [Recommended settings for EOP and Microsoft Defender for Office 365](recommended-settings-for-eop-and-office365.md) to see which default quarantine policies have quarantine notifications turned on.
 
