@@ -79,6 +79,8 @@ sections:
 
           Quarantine policies determine whether users can access their quarantined messages, and what they're allowed to do to them. For more information, see [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy).
 
+          If the quarantine policy requires users to request the release of messages or requires admins to release messages, an admin must [approve the release request](quarantine-admin-manage-messages-files.md#approve-or-deny-release-requests-from-users-for-quarantined-email) or [release the message](quarantine-admin-manage-messages-files.md#release-quarantined-email) before the message is available to users.
+
       - question: |
           What messages can end users access in quarantine?
         answer: |
@@ -179,6 +181,17 @@ sections:
 
           > [!TIP]
           > The fastest, most frequent notification schedule that's available is every four hours.
+          >
+          > If you select every four hours, and a message is quarantined _just after_ the last notification generation, the recipient will receive the quarantine notification _slightly more than_ four hours later.
+
+      - question: |
+          Why aren't users receiving notifications about their quarantined messages?
+        answer: |
+          If the quarantine policy that's defined for the [supported quarantine action]((quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)) doesn't have notifications turned on, the quarantine notifications aren't sent.
+
+          For more information, see the last table in [Anatomy of a quarantine policy](quarantine-policies.md#anatomy-of-a-quarantine-policy) and the individual feature tables in [Recommended settings for EOP and Microsoft Defender for Office 365](recommended-settings-for-eop-and-office365.md) to see which default quarantine policies have quarantine notifications turned on.
+
+          Also, the protection policies in [preset security policies](preset-security-policies.md) are always applied _before_ custom protection policies. A user who's defined in the Standard or Strict preset security policy will never get a customized protection policy where the quarantine policy is customized to turn on quarantine notifications. For more information, see [Policy settings in preset security policies](preset-security-policies.md#policy-settings-in-preset-security-policies)
 
       - question: |
           How do I customize quarantine notifications to add a custom logo?
@@ -194,3 +207,8 @@ sections:
           I created a custom quarantine for a specific language, but users aren't seeing it. What's going on?
         answer: |
           A custom quarantine notification for a different language is shown to users only when their account/mailbox language matches the language in the custom quarantine notification.
+
+      - question: |
+          I can't preview a quarantined Microsoft Teams message. What's going on?
+        answer: |
+          If a user deletes the message from the Teams client, the message is gone, so Preview isn't available in quarantine for the deleted message.
