@@ -30,7 +30,7 @@ Check out all of our small business content on [Small business help & learning](
 
 In Microsoft 365 for enterprise, a well-planned and executed identity infrastructure paves the way for stronger security, including restricting access to your productivity workloads and their data to only authenticated users and devices. Security for identities is a key element of a Zero Trust deployment, in which all attempts to access resources both on-premises and in the cloud are authenticated and authorized.
 
-For information about the identity features of each Microsoft 365 for enterprise, the role of Microsoft Entra ID, on-premises and cloud-based components, and the most common authentication configurations, see the [Identity Infrastructure poster](https://download.microsoft.com/download/a/e/1/ae1a5a93-e0ec-43e5-bfe6-0e8acaaee1af/m365e-identity-infra.pd).
+For information about the identity features of each Microsoft 365 for enterprise, the role of Microsoft Entra ID, on-premises and cloud-based components, and the most common authentication configurations, see the [Identity Infrastructure poster](https://download.microsoft.com/download/a/e/1/ae1a5a93-e0ec-43e5-bfe6-0e8acaaee1af/m365e-identity-infra.pdf).
 
 [![The Identity Infrastructure poster.](../downloads/m365e-identity-infra.png)](https://download.microsoft.com/download/a/e/1/ae1a5a93-e0ec-43e5-bfe6-0e8acaaee1af/m365e-identity-infra.pd)
 
