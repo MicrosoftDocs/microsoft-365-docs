@@ -90,7 +90,7 @@ Set-MpPreference
 -PlatformUpdatesChannel Beta|Preview|Staged|Broad|Delayed|NotConfigured
 -EngineUpdatesChannel Beta|Preview|Staged|Broad|Delayed|NotConfigured
 -DisableGradualRelease 1|0
--SignaturesUpdatesChannel Staged|Broad|NotConfigured
+-DefinitionUpdatesChannel Staged|Broad|NotConfigured
 ```
 
 Example:
