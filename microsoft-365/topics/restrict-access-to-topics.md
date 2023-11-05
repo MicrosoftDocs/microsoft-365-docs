@@ -31,12 +31,12 @@ While knowledge admins control the settings to prevent topics from being discove
 
 Knowledge admins can restrict access to specific topics by preventing them from being found in initial indexing. There are two ways to do this task in the Topics admin settings in the Microsoft 365 admin center.
 
-- [Select SharePoint sites to exclude from topic discovery](./topic-experiences-discovery.md#select-sharepoint-topic-sources): You can use this setting to prevent specific SharePoint sites from being crawled for topics.
-- [Exclude topics by name](./topic-experiences-discovery.md#exclude-topics-by-name): Admins can use this setting to prevent specific topics from being discovered by name. In the Topics admin settings, an admin can upload a list of topics to be excluded in a CSV file. You can exclude topics that have exact or partial matches of a topic name.
+- [Select SharePoint sites to exclude from topic discovery](./manage-topic-discovery.md#select-sharepoint-topic-sources): You can use this setting to prevent specific SharePoint sites from being crawled for topics.
+- [Exclude topics by name](./manage-topic-discovery.md#exclude-topics-by-name): Admins can use this setting to prevent specific topics from being discovered by name. In the Topics admin settings, an admin can upload a list of topics to be excluded in a CSV file. You can exclude topics that have exact or partial matches of a topic name.
 
 ## Prevent topics from being viewed by specific users
 
-Knowledge admins can also [select who can view topics in your organization](./topic-experiences-knowledge-rules.md). This setting lets you select which licensed users can view all topics. For example, in a pilot environment, you might want to only allow a small group of users to be able to view topics.
+Knowledge admins can also [select who can view topics in your organization](./manage-topic-visibility.md). This setting lets you select which licensed users can view all topics. For example, in a pilot environment, you might want to only allow a small group of users to be able to view topics.
 
 ## Remove topics from being viewed
 

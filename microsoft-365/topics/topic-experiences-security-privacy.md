@@ -34,7 +34,7 @@ You should be familiar with [what Topics is](topic-experiences-overview.md), the
 To see topics, a user must:
 
 - Have a license that includes Topics
-- Be a [topic viewer](topic-experiences-knowledge-rules.md#change-who-can-see-topics-in-your-organization), [contributor, or knowledge manager](topic-experiences-user-permissions.md)
+- Be a [topic viewer](manage-topic-visibility.md#change-who-can-see-topics-in-your-organization), [contributor, or knowledge manager](topic-experiences-user-permissions.md)
 
 These two things give users view access to the topic center and allow them to see highlights and topic cards.
 
@@ -72,9 +72,9 @@ We recommend that you use these tools to ensure that your content permissions ar
 
 If there are topics that you want to exclude entirely from topic experiences, you can also:
 
-- [Exclude sensitive SharePoint sites from topic discovery](topic-experiences-discovery.md#select-sharepoint-topic-sources). Content in these sites will not appear in topic experiences.
+- [Exclude sensitive SharePoint sites from topic discovery](manage-topic-discovery.md#select-sharepoint-topic-sources). Content in these sites will not appear in topic experiences.
 
-- [Exclude topics by name](topic-experiences-discovery.md#exclude-topics-by-name). Topics explicitly excluded will not appear in topic experiences.
+- [Exclude topics by name](manage-topic-discovery.md#exclude-topics-by-name). Topics explicitly excluded will not appear in topic experiences.
 
 - Have knowledge managers remove topics in the topic center.
 

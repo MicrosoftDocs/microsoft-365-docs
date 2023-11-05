@@ -102,7 +102,7 @@ Admin controls in the Microsoft 365 admin center allow you to manage Topics. The
 - Control which users can create and edit topics.
 - Control which user can view topics.
 
-For more information about admin controls, see [assign user permissions](./plan-topic-experiences.md#user-permissions), [manage topic visibility](./topic-experiences-knowledge-rules.md), and [manage topic discovery](./topic-experiences-discovery.md).
+For more information about admin controls, see [assign user permissions](./plan-topic-experiences.md#user-permissions), [manage topic visibility](./manage-topic-visibility.md), and [manage topic discovery](./manage-topic-discovery.md).
 
 ## Topic curation and suggestions
 
