@@ -99,10 +99,6 @@
           href: multi-tenant/manage.md
     - name: Office 365 operated by 21Vianet
       items: 
-        - name: Download the Office app for Android for Office 365 operated by 21Vianet
-          href: services-in-china/download-office-app-for-Android.md
-        - name: Download the Office app for iOS for Office 365 operated by 21Vianet
-          href: services-in-china/download-office-app-for-iOS.md
         - name: Apply for a Fapiao
           href: services-in-china/apply-for-a-fapiao.md
         - name: Azure Information Protection support
@@ -275,6 +271,12 @@
           href: get-help-with-domains/find-and-fix-issues.md
     - name: Manage your data and services
       items:
+         - name: Microsoft 365 Copilot extensibility
+           items:
+            - name: Manage plugins for Copilot
+              href: manage/manage-plugins-for-copilot-in-integrated-apps.md
+            - name: Microsoft Graph connectors for Microsoft Search
+              href: /microsoftsearch/connectors-overview
          - name: Monitor Microsoft 365 activity by using reports
            items:
             - name: Microsoft 365 Reports in the admin center - overview
