@@ -27,11 +27,11 @@ You can change the name of your topic center in the [Microsoft 365 admin center]
 1. In the Microsoft 365 admin center, click **Settings**, then **Org settings**.
 2. On the **Services** tab, select **Topics**.
 
-    :::image type="content" alt-text="Screenshot of the Services tab with Topics selected." source="../media/org-settings-viva-topics.png" lightbox="../media/org-settings-viva-topics.png":::
+    :::image type="content" alt-text="Screenshot of the Services tab with Topics selected." source="../media/topics/org-settings-viva-topics.png" lightbox="../media/topics/org-settings-viva-topics.png":::
 
 3. Select the **Topic center** tab. See the following sections for information about each setting.
 
-    :::image type="content" alt-text=" Screenshot of the Knowledge network settings that include the following Topic  experience sections: Topic discovery, Topic visibility, Topic permissions, and Topic Center." source="../media/knowledge-network-settings-topic-center.png" lightbox="../media/knowledge-network-settings-topic-center.png":::
+    :::image type="content" alt-text=" Screenshot of the Knowledge network settings that include the following Topic  experience sections: Topic discovery, Topic visibility, Topic permissions, and Topic Center." source="../media/topics/knowledge-network-settings-topic-center.png" lightbox="../media/topics/knowledge-network-settings-topic-center.png":::
 
 ## Update your topic center name
 
@@ -41,4 +41,4 @@ To change the name of the topic center
 2. On the **Edit topic center name** page, in the **Topic center name** box, type the new name for your topic center.
 3. Select **Save**
 
-    ![Screenshot of the Edit topic center name page.](../media/manage-topic-center-name.png)  
+    ![Screenshot of the Edit topic center name page.](../media/topics/manage-topic-center-name.png)  

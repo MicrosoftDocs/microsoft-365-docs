@@ -26,15 +26,15 @@ You can save as a draft a new topic or a revised topic that you're working on, b
 
 1. From the topic center, select **New** > **Topic Page**.
 
-   ![Screenshot showing the create a new topic page option from the topic center.](../media/knowledge-management/draft-create-topic-page.png)
+   ![Screenshot showing the create a new topic page option from the topic center.](../media/topics/knowledge-management/draft-create-topic-page.png)
 
 2. As you’re editing the new topic, a draft is automatically saved.
   
-   ![Screenshot showing a draft of the topic has been saved.](../media/knowledge-management/draft-page-saved.png)
+   ![Screenshot showing a draft of the topic has been saved.](../media/topics/knowledge-management/draft-page-saved.png)
 
 3. When you're done with your current edits, but not ready to publish, select **Save as draft** to save your changes. Your audience won't see the edits on the page until you publish it. Only people with edit permissions to topics will be able to see the draft.
 
-   ![Screenshot showing the save as draft option.](../media/knowledge-management/draft-save-as-draft.png)
+   ![Screenshot showing the save as draft option.](../media/topics/knowledge-management/draft-save-as-draft.png)
 
 4. Select **Publish** to save your changes. After you publish the page, the topic name, alternate name description, and pinned people will display to users who can view the topic. Specific files, pages, and sites will only appear on the topic page, if the viewer has permissions to the topic.
 
@@ -44,11 +44,11 @@ You can save as a draft a new topic or a revised topic that you're working on, b
 
 2. As you’re editing the topic page, a draft is automatically saved.
   
-   ![Screenshot showing a draft of the topic has been saved.](../media/knowledge-management/draft-page-saved.png)
+   ![Screenshot showing a draft of the topic has been saved.](../media/topics/knowledge-management/draft-page-saved.png)
 
 3. When you're done with your current edits, but not ready to publish, select **Save as draft** to save your changes and close edit mode.
 
-   ![Screenshot showing the save as draft option.](../media/knowledge-management/draft-save-as-draft.png)
+   ![Screenshot showing the save as draft option.](../media/topics/knowledge-management/draft-save-as-draft.png)
 
 4. When you're ready for users to see your changes, you'll see either a **Publish** or **Republish** button.
 
@@ -64,7 +64,7 @@ You can save as a draft a new topic or a revised topic that you're working on, b
 
 3. Anyone with edit permissions (or site owners) will be taken directly to the saved draft when they open the topic page that is in a draft state. A message will be shown to tell you that this is a draft page and when the last draft was saved.
   
-    ![Screenshot showing the draft saved date.](../media/knowledge-management/draft-page-with-date.png)
+    ![Screenshot showing the draft saved date.](../media/topics/knowledge-management/draft-page-with-date.png)
 
 4. After closing edit mode, you can get back to the drafts by getting back to the topic page:
     - For users:
@@ -82,6 +82,6 @@ You can save as a draft a new topic or a revised topic that you're working on, b
 Two people can't edit the same page at the same time, no matter if it’s a draft or not.
 If one person has a page open for editing, and another person tries to edit the page, the user is shown a message that says the page is being edited by someone else.
   
-   ![Screenshot showing a message that the topic is being edited by someone else.](../media/knowledge-management/draft-one-edit-page.png)
+   ![Screenshot showing a message that the topic is being edited by someone else.](../media/topics/knowledge-management/draft-one-edit-page.png)
 
 You can ask the person who has the page open for editing to "release" the page by saving and closing, discarding changes, or publishing. However, if the page has no activity for 5 minutes, the editing session will automatically time out and the page will be "unlocked," unless someone closes the browser within 5 minutes.

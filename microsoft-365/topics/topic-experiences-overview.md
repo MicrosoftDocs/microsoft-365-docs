@@ -120,13 +120,13 @@ At Microsoft we take feedback from our customers very seriously. The feedback yo
 
 You can send feedback to Microsoft directly from a topic page, and from the **Manage topics** and **My topics** pages. Look for this button in the lower-right corner of the page.
 
-   ![Screenshot showing the Feedback button.](../media/knowledge-management/feedback-icon.png)
+   ![Screenshot showing the Feedback button.](../media/topics/knowledge-management/feedback-icon.png)
 
    The button will only appear in tenants that have a correctly configured [OCPS policy](/deployoffice/admincenter/overview-cloud-policy).
 
 On the **Send Feedback to Microsoft** page, let us know if you like something, if you don't like something, or if you have a suggestion.
 
-   ![Screenshot showing the Send Feedback to Microsoft page.](../media/knowledge-management/feedback-page.png)
+   ![Screenshot showing the Send Feedback to Microsoft page.](../media/topics/knowledge-management/feedback-page.png)
 
 When you submit feedback, we ask that you not include sensitive information, such as phone numbers, addresses, or highly personal stories. Instead, please provide information on the specific issue you are experiencing with Topics or your experience in general with Topics. This will help us maintain your privacy as we review and take action based on your feedback.
 

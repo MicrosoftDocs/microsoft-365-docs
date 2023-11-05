@@ -28,11 +28,11 @@ You can manage topic discovery settings in the [Microsoft 365 admin center](http
 1. In the Microsoft 365 admin center, select **Settings**, then **Org settings**.
 2. On the **Services** tab, select **Topics**.
 
-    ![Screenshot of the Services tab with Topics selected.](../media/knowledge-management/org-settings-topics.png)
+    ![Screenshot of the Services tab with Topics selected.](../media/topics/knowledge-management/org-settings-topics.png)
 
 3. Select the **Topic discovery** tab. See the following sections for information about each setting.
 
-    ![Screenshot of the topic discovery page.](../media/knowledge-network-settings-topic-discovery.png)
+    ![Screenshot of the topic discovery page.](../media/topics/knowledge-network-settings-topic-discovery.png)
 
 ## Select SharePoint topic sources
 
@@ -55,7 +55,7 @@ To choose sites for topic discovery
     - **Only selected sites**: Type the names of the sites you want to include. You can also upload a list of sites. Sites created in the future won't be included as sources for topic discovery.
     - **No sites**: Topics won't be automatically generated or updated with SharePoint content. Existing topics remain in the topic center.
 
-    ![Screenshot of SharePoint topic sources user interface.](../media/k-manage-select-topic-source.png)
+    ![Screenshot of SharePoint topic sources user interface.](../media/topics/k-manage-select-topic-source.png)
 
 3. Select **Save**.
 
@@ -71,7 +71,7 @@ You can exclude topics from discovery by uploading a list using a .csv file. If 
 3. If you need to create a list, download the .csv template and add the topics that you want to exclude (see *Working with the .csv template* below). When the file is ready, select **Browse** and upload the file. If there's an existing list, you can download the .csv containing the list.
 4. Select **Save**.
 
-    ![Screenshot of exclude topics user interface.](../media/km-manage-exclude-topics.png)
+    ![Screenshot of exclude topics user interface.](../media/topics/km-manage-exclude-topics.png)
 
 > [!NOTE]
 > A topic, when excluded, can take up to 24 hours to stop appearing to users in your organization.
@@ -92,7 +92,7 @@ In the CSV template, enter the following information about the topics you want t
 - **Stands for (optional)**: If you want to exclude an acronym, type the words the acronym stands for.
 - **MatchType-Exact/Partial**: Type whether the name you entered was an *exact* or *partial* match type.
 
-    ![Screenshot of the exclude topics in CSV template.](../media/exclude-topics-csv.png)
+    ![Screenshot of the exclude topics in CSV template.](../media/topics/exclude-topics-csv.png)
 
 ## Exclude resources based on sensitivity labels
 

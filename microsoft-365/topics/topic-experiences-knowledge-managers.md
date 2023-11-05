@@ -57,19 +57,19 @@ The knowledge manager’s role is to help curate and improve the quality of an o
 
 To help a knowledge manager get started, use the following workflow to effectively assign, prioritize, edit, and create topics.
 
-![Diagram showing knowledge manager workflow.](../media/knowledge-management/ai-suggested-topics-workflow-km.png)
+![Diagram showing knowledge manager workflow.](../media/topics/knowledge-management/ai-suggested-topics-workflow-km.png)
 
 ### Assign status
 
 Each topic will need to be assigned a status in the topic lifecycle to ensure that the topic and knowledge stays accurate and relevant over time. [Learn more about topic status](manage-topics.md#topic-status).
 
-![Diagram showing lifecycle statuses: Suggested, Confirmed, Published, and Removed.](../media/knowledge-management/topics-lifecycle-stages-km.png)
+![Diagram showing lifecycle statuses: Suggested, Confirmed, Published, and Removed.](../media/topics/knowledge-management/topics-lifecycle-stages-km.png)
 
 Knowledge managers can use the **Manage topics** page in the [topic center](topic-center-overview.md) to review topics that were suggested by the AI. As an initial step, knowledge managers need to classify suggested topics as either Confirmed or Removed.  
 
 To classify the suggested topic into the correct status, select the topic and choose the appropriate status.
 
-![Screenshot showing where to find Confirm and Remove options in the Manage topics page.](../media/knowledge-management/topics-ellipses-selection.png)
+![Screenshot showing where to find Confirm and Remove options in the Manage topics page.](../media/topics/knowledge-management/topics-ellipses-selection.png)
 
 **Confirm** the topic if it's relevant for the organization. **Remove** the topic if it isn't needed, no longer has any connections, or isn't valid.  
 
@@ -77,7 +77,7 @@ To edit the topic, select the ellipses and choose **Review and publish** to be t
 
 Topics can also be confirmed or removed based on crowdsourced feedback. When users interact with a suggested topic, they might be asked a simple question in the UI. For example: Was this topic relevant to the page?Topics are automatically confirmed or removed if multiple users vote positively or negatively respectively, using the feedback mechanism on the topic card. There must be a net of two votes received, either positive or negative, for the topic to be confirmed or removed automatically.  For example, if one user voted positive and one user voted negative for a particular topic, two more positive votes would be needed for the topic to be confirmed.
 
-![Image showing topic card with feedback request.](../media/knowledge-management/topic-card-feedback-enduser.png)
+![Image showing topic card with feedback request.](../media/topics/knowledge-management/topic-card-feedback-enduser.png)
 
 ### Prioritize topics for curation
 
@@ -85,7 +85,7 @@ To build a high-quality knowledge base quickly, it’s important to determine wh
 
 There are several different ways to prioritize which topics to focus efforts on:  
 
-![Image showing workflow for prioritizing topic curation.](../media/knowledge-management/topics-focus-efforts-stages-km.png)
+![Image showing workflow for prioritizing topic curation.](../media/topics/knowledge-management/topics-focus-efforts-stages-km.png)
 
 - **Scenarios**: Think about how Topics will be used in the team, department, or business unit, then prioritize topics that are relevant to the scenarios. For example, if a department would get value from organizing knowledge about the products the organization makes, prioritize product-related topics for initial curation. There are various scenarios that Topics can be used inside an organization. Check out the [Topics scenario catalog](https://aka.ms/TopicsScenarios) for some ideas and to help determine which related topics to prioritize.  
 
@@ -104,13 +104,13 @@ The **Org topic score** reflects how complete and high quality the information a
 
 The **impressions** column displays the number of times a topic has been shown to end users. Sort each column to find the topics with the lowest quality score and highest number of impressions.  
 
-![Image showing the quality score and impressions column in the manage topics page.](../media/knowledge-management/manage-topics-quality-impressions.png)
+![Image showing the quality score and impressions column in the manage topics page.](../media/topics/knowledge-management/manage-topics-quality-impressions.png)
 
 - **Bookmarks and existing knowledge base**: [Bookmarks](/microsoftsearch/manage-bookmarks) are used in Microsoft Search to help people quickly find important sites and tools. They can also help indicate what the organization deems as important and provide consideration for what topics should be prioritized for curation. Organizations can have other existing knowledge bases that are prime candidates for migrating to Topics. For example, if the organization has invested in knowledge bases or wiki sites, these can provide a list of topics to use for initial curation efforts. If they're large, select the most viewed or edited topics as a starting point. The wiki knowledge will then be more accessible through the applications people use to do their work, and suggested elements of the topic will be automatically updated by the AI in Topics.  
 
 Prioritization of topics for curation should also factor in demand levels for different types of knowledge in the organization. Make sure the topics being curated are in demand and will be used once published. Find topics for curation that are in high demand and that are currently being addressed in inefficient and nonscalable ways. For example, product experts are often asked random questions from salespeople and often answer the same question repeatedly through hard to scale mediums such as email or chat. In this example, product experts will be highly responsive to Topics to scale their impact, minimize randomization, and gain more recognition as an expert in the organization.  
 
-![Chart showing knowledge demand and efficiency of supplying knowledge, as described in the above paragraph.](../media/knowledge-management/topic-knowledge-demand-efficiency-diagram-km.png)
+![Chart showing knowledge demand and efficiency of supplying knowledge, as described in the above paragraph.](../media/topics/knowledge-management/topic-knowledge-demand-efficiency-diagram-km.png)
 
 ### Set quality standards for topics
 
@@ -120,7 +120,7 @@ There are two types of knowledge to include in the knowledge base:
 
 1. **Explicit**: Information that can be documented, stored, and shared with others. Topics helps codify explicit knowledge by using AI to discover people and content connected to a topic and then displays them on a topic page. These AI-generated topic properties include alternate names or acronyms, a short description of the topic, and people who might be knowledgeable about the topic, as well as files, pages, and sites that are related to the topic.  
 
-   ![Image showing AI generated topic properties in a topic card.](../media/knowledge-management/ai-generated-topic-properties-km.png)
+   ![Image showing AI generated topic properties in a topic card.](../media/topics/knowledge-management/ai-generated-topic-properties-km.png)
 
    Knowledge managers should define the minimum requirements for a published topic and communicate these standards to topic contributors. Minimum requirements for topics in the organization could include guidance that all topics contain alternate names, a factual description, and pinned people and resources.
 
@@ -128,7 +128,7 @@ There are two types of knowledge to include in the knowledge base:
 
 Specific scenarios of Topics can require unique properties appended to a topics page. For example, product-based topic pages can include brand assets, SKU#, roadmap information, product news, frequently asked questions (FAQ), and product specifications. [Web parts](https://support.microsoft.com/office/using-web-parts-on-sharepoint-pages-336e8e92-3e2d-4298-ae01-d404bbe751e0) can be used on a topic page to bring in different types of content.
 
-![Screenshot showing an example of a product-based topic page.](../media/knowledge-management/topic-page-unique-km.png)
+![Screenshot showing an example of a product-based topic page.](../media/topics/knowledge-management/topic-page-unique-km.png)
 
 ## Get help from colleagues
 
@@ -136,7 +136,7 @@ To scale Topics curation in an organization, reach out to colleagues who have ex
 
 To view suggested people for a topic, go to the topic page.
 
-![Image showing suggested people column in the topic center.](../media/knowledge-management/topic-center-suggested-people-km.png)
+![Image showing suggested people column in the topic center.](../media/topics/knowledge-management/topic-center-suggested-people-km.png)
 
 Once the right people to curate relevant topics are identified, explain how contributing their knowledge will:  
 

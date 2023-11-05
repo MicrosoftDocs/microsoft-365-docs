@@ -28,11 +28,11 @@ You can manage who can see topic highlights, topic cards, and the topic center i
 1. In the Microsoft 365 admin center, select **Settings**, then **Org settings**.
 2. On the **Services** tab, choose **Topics**.
 
-    ![Screenshot of the Services tab with Topics selected.](../media/knowledge-management/org-settings-topics.png)
+    ![Screenshot of the Services tab with Topics selected.](../media/topics/knowledge-management/org-settings-topics.png)
 
 3. Select the **Topic visibility** tab. See the following sections for information about each setting.
 
-    ![Screenshot of the Topic visibility tab.](../media/knowledge-network-settings-topic-visibility.png)
+    ![Screenshot of the Topic visibility tab.](../media/topics/knowledge-network-settings-topic-visibility.png)
 
 ##  Change who can see topics in your organization
 
@@ -44,7 +44,7 @@ You can change the users who can see topics in your organization.
     - **Only selected people or security groups**
     - **No one**
 
-    ![Screenshot of the Who can see topics page.](../media/k-manage-who-can-see-topics.png)
+    ![Screenshot of the Who can see topics page.](../media/topics/k-manage-who-can-see-topics.png)
 
 3. Select **Save**.  
 
@@ -62,4 +62,4 @@ To hide suggested topics from topic viewers
 1. Select **Save**.
 1. Close the advanced settings panel.
 
-    ![Screenshot of exclude suggested topics user interface.](../media/km-show-suggested-topics.png)
+    ![Screenshot of exclude suggested topics user interface.](../media/topics/km-show-suggested-topics.png)

@@ -22,7 +22,7 @@ description: Learn how to drive adoption of Topics in your organization.
 
 Before you get started with adoption, you need to understand the concepts involved in knowledge management and Topics. The following diagram shows what happens during topic discovery and curation:
 
-![Graphic of Topics architecture.](../media/knowledge-management/topic-management-architecture.png)
+![Graphic of Topics architecture.](../media/topics/knowledge-management/topic-management-architecture.png)
 
 - **Discovery**: Users can discover knowledge in the apps they use every day through topic cards - they can also discover topics in Microsoft Search.
 - **Curation**: Subject matter experts (SMEs) refine topics through topic pages, and AI learns from their input. The Topic center contains topic pages that users can explore and experts can manage.
@@ -56,7 +56,7 @@ Review this list of prerequisites for getting the most out of Topics:
 
 To plan for adoption of Topics, you need to:
 
-![Graphic showing steps to plan for adoption.](../media/knowledge-management/km-adoption-plan-adoption.png)
+![Graphic showing steps to plan for adoption.](../media/topics/knowledge-management/km-adoption-plan-adoption.png)
 
 1. Plan your approach and target scenarios:
     - Think about defining and prioritizing the [scenarios](#target-scenarios).
@@ -123,7 +123,7 @@ After you identify your scenarios, you can prioritize the scenarios:
 
 One way to prioritize them is to plot out your scenarios in a grid showing impact vs. ease of implementation. Look for scenarios that have both high impact and are easy to implement and make those ones your top priority. Low impact and hard-to-implement scenarios are your lowest priority. When you have a quick win with a high impact, easy-to-implement scenario, it helps people get excited and see the possibilities of using topics.
 
-![High impact, easy to implement scenarios are high priority.](../media/knowledge-management/topics-prioritize-scenarios.png)
+![High impact, easy to implement scenarios are high priority.](../media/topics/knowledge-management/topics-prioritize-scenarios.png)
 
 Pick a couple of key scenarios to focus on initially, work with your early adopters to get some feedback, and then roll out in stages. This way you can iterate, make improvements, and gain feedback so you can grow adoption over time.
 

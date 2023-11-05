@@ -33,11 +33,11 @@ With topic permissions settings you can choose:
 1. In the Microsoft 365 admin center, select **Settings**, then **Org settings**.
 2. On the **Services** tab, choose **Topics**.
 
-    ![Screenshot of the Services tab with Topics selected.](../media/knowledge-management/org-settings-topics.png)
+    ![Screenshot of the Services tab with Topics selected.](../media/topics/knowledge-management/org-settings-topics.png)
 
 3. Select the **Topic permissions** tab. See the following sections for information about each setting.
 
-    ![Screenshot of the Topic permissions tab.](../media/knowledge-network-settings-topic-permissions.png)
+    ![Screenshot of the Topic permissions tab.](../media/topics/knowledge-network-settings-topic-permissions.png)
 
 ## Change who has permissions to update topic details
 
@@ -49,7 +49,7 @@ To update who has permissions to create and edit topics:
     - **Only selected people or security groups**
     - **No one**
 
-    ![Screenshot of the Who can create and edit topics page.](../media/k-manage-who-can-create-and-edit.png)  
+    ![Screenshot of the Who can create and edit topics page.](../media/topics/k-manage-who-can-create-and-edit.png)  
 
 3. Select **Save**.
 
@@ -60,6 +60,6 @@ To update who has permissions to manage topics:
     - **Everyone in your organization**
     - **Selected people or security groups**
 
-    ![Screenshot of the Who can manage topics page.](../media/k-manage-who-can-manage-topics.png)  
+    ![Screenshot of the Who can manage topics page.](../media/topics/k-manage-who-can-manage-topics.png)  
 
 3. Select **Save**.
