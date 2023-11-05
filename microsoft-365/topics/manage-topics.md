@@ -34,7 +34,7 @@ In the Viva Topics topic center, a knowledge manager can view the **Manage topic
 
 Knowledge managers help to guide discovered topics through the various topic lifecycle statuses: **Suggested**, **Confirmed**, **Published**, and **Removed**.
 
-   ![Topic Lifecycle chart.](../media/topics/knowledge-management/topic-lifecycle.png)
+![Topic Lifecycle chart.](../media/topics/knowledge-management/topic-lifecycle.png)
 
 - **Suggested**: A topic has been identified by AI and has enough supporting resources, connections, and properties. (These are marked as a **Suggested Topic** in the UI.)
 
@@ -90,9 +90,9 @@ To review a suggested topic:
 
    - Select the **x** if you want to remove the topic.
 
-    Confirmed topics will be removed from the **Suggested** list and will now display in the **Confirmed** list.
+   Confirmed topics will be removed from the **Suggested** list and will now display in the **Confirmed** list.
 
-    Removed topics will be removed from the **Suggested** list and will now display a **Removed** status.
+   Removed topics will be removed from the **Suggested** list and will now display a **Removed** status.
 
 ### Topic scores
 
@@ -101,7 +101,7 @@ Each topic that appears on the manage topics page has an **Org topic score** and
 >[!NOTE]
 >Scores are AI-determined. In general, the more metadata a topic has, the higher the score will be. In addition, human confirmation raises topic scores.
 
- For example, if a user shows a high topic score for a topic, that user has the most comprehensive access to the resources of that topic and can edit and confirm the topic with full confidence. If an Org topic score is higher than a user’s topic score, the Knowledge Manager can find someone who has a high topic score to update and confirm that topic.
+For example, if a user shows a high topic score for a topic, that user has the most comprehensive access to the resources of that topic and can edit and confirm the topic with full confidence. If an Org topic score is higher than a user’s topic score, the Knowledge Manager can find someone who has a high topic score to update and confirm that topic.
 
 Knowledge managers might come across topic scores of 0 for some topics. A 0 topic score may occur when there aren't enough resources attached to a particular topic that the user can access. Knowledge managers are encouraged to either augment these low-quality topics with additional information or remove them as needed. Topics that have an Org Topic score of 0 aren't displayed to end users because they aren't deemed to be of sufficient quality. Keep in mind that some topics can have associated information or resources available, and still have a zero topic score due to the quality and quantity of those resources.
 
@@ -125,7 +125,7 @@ You can still choose to reject a confirmed topic. To reject a confirmed topic, g
 
 On the **Manage topics** page, topics that were discovered in your specified SharePoint source locations will show a **Published** status. Published topics have been edited so that specific information will always appear to whoever encounters the page. Manually created topics are listed here as well.
 
-   ![Screenshot of published topics.](../media/topics/knowledge-management/published-topics-filtered-view.png)
+![Screenshot of published topics.](../media/topics/knowledge-management/published-topics-filtered-view.png)
 
 ## Removed topics
 
