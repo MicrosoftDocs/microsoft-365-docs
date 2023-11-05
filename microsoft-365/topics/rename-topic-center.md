@@ -27,7 +27,7 @@ You can change the name of your topic center in the [Microsoft 365 admin center]
 1. In the Microsoft 365 admin center, click **Settings**, then **Org settings**.
 2. On the **Services** tab, select **Viva Topics**.
 
-    :::image type="content" alt-text="Screenshot of the Services tab with Viva Topics selected." source="../media/org-settings-viva-topics.png" lightbox="../media/org-settings-viva-topics.png":::
+    :::image type="content" alt-text="Screenshot of the Services tab with Viva Topics selected." source="../media/topics/org-settings-viva-topics.png" lightbox="../media/topics/org-settings-viva-topics.png":::
 
 3. Select the **Topic center** tab. See the following sections for information about each setting.
 

@@ -28,7 +28,7 @@ description: Learn how to manage topics in the topic center in Microsoft Viva To
 
 In the Viva Topics topic center, a knowledge manager can view the **Manage topics** page to review topics that have been identified in the source locations as specified by your knowledge admin.  
 
-:::image type="content" alt-text="Screenshot that shows the Topic Center." source="../media/knowledge-management/manage-topics-view.png":::
+:::image type="content" alt-text="Screenshot that shows the Topic Center." source="../media/topics/knowledge-management/manage-topics-view.png":::
 
 ## Topic status
 
@@ -145,7 +145,7 @@ This chart in the dashboard view lets you see the number of topics in your Viva 
 
 Knowledge managers might see a different count of topics represented in the list of topics on the **Manage topics** page than they see in the dashboard. This is because a knowledge manager might not have access to all topics. The count presented in the dashboard view is taken before applying permission-trimming.
 
-:::image type="content" alt-text="Screenshot of topic count dashboard." source="../media/knowledge-management/trend-of-topics-graph.png":::
+:::image type="content" alt-text="Screenshot of topic count dashboard." source="../media/topics/knowledge-management/trend-of-topics-graph.png":::
 
 ## Topic Origin filter
 

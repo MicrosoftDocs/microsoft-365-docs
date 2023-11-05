@@ -59,4 +59,4 @@ German |Italian |Portuguese |
 In preview:
 Japanese
 
-For information about supported languages in other Viva modules, see [Microsoft Viva language support](../viva-language-support.md).
+For information about supported languages in other Viva modules, see [Microsoft Viva language support](./viva-language-support.md).
