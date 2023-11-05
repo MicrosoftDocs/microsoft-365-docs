@@ -35,14 +35,14 @@ The information in this section is based on the time period that you select. The
 |Measure|Value|
 |:------|:----|
 |Topics visible|The number of topics that are visible to topic viewers in Microsoft 365 locations such as search and SharePoint |
-|Discovered by Topics|The number of topics that have been [discovered by Topics](/viva/topics/topic-experiences-discovery-curation) or have AI-discovered properties.|
-|Created by users|The number of topics that have been [manually created](/viva/topics/create-a-topic) and do not have any AI-discovered properties.|
-|Hidden by settings|If you have [configured Topics to not show suggested topics to topic viewers](/viva/topics/topic-experiences-discovery#prevent-topic-viewers-from-seeing-suggested-topics), the number of hidden topics will be reflected here|
+|Discovered by Topics|The number of topics that [Topics has discovered](/viva/topics/topic-experiences-discovery-curation) or that have AI-discovered properties.|
+|Created by users|The number of [manually created](/viva/topics/create-a-topic) topics that don't have any AI-discovered properties.|
+|Hidden by settings|If you have [configured Topics to not show suggested topics to topic viewers](/viva/topics/topic-experiences-discovery#prevent-topic-viewers-from-seeing-suggested-topics), the number of hidden topics is reflected here|
 |Removed|The number of topics that have been [removed by user feedback and knowledge managers](/viva/topics/manage-topics)|
 
 ## File processing for topic discovery
 
-The **File processing for topic discovery** section shows the number of files that have been processed as Topics crawls the [content sources that you selected](/viva/topics/topic-experiences-discovery#select-sharepoint-topic-sources).
+The **File processing for topic discovery** section shows the number of files that Topics has processed as it crawls the [content sources that you selected](/viva/topics/topic-experiences-discovery#select-sharepoint-topic-sources).
 
 |Measure|Value|
 |:------|:----|
