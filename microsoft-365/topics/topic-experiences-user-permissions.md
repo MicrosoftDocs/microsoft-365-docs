@@ -66,8 +66,8 @@ To update who has permissions to manage topics:
 
 ## See also
 
-[Manage topic discovery in Microsoft Viva Topics](topic-experiences-discovery.md)
+[Manage topic discovery in Microsoft Viva Topics](manage-topic-discovery.md)
 
-[Manage topic visibility in Microsoft Viva Topics](topic-experiences-knowledge-rules.md)
+[Manage topic visibility in Microsoft Viva Topics](manage-topic-visibility.md)
 
-[Change the name of the topic center in Microsoft Viva Topics](topic-experiences-administration.md)
+[Change the name of the topic center in Microsoft Viva Topics](rename-topic-center.md)

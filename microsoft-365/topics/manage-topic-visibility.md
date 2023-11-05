@@ -66,8 +66,8 @@ To hide suggested topics from topic viewers
 
 ## See also
 
-[Manage topic discovery in Microsoft Viva Topics](topic-experiences-discovery.md)
+[Manage topic discovery in Microsoft Viva Topics](manage-topic-discovery.md)
 
 [Manage topic permissions in Microsoft Viva Topics](topic-experiences-user-permissions.md)
 
-[Change the name of the topic center in Microsoft Viva Topics](topic-experiences-administration.md)
+[Change the name of the topic center in Microsoft Viva Topics](rename-topic-center.md)

@@ -45,8 +45,8 @@ To change the name of the topic center
 
 ## See also
 
-[Manage topic discovery in Microsoft Viva Topics](topic-experiences-discovery.md)
+[Manage topic discovery in Microsoft Viva Topics](manage-topic-discovery.md)
 
-[Manage topic visibility in Microsoft Viva Topics](topic-experiences-knowledge-rules.md)
+[Manage topic visibility in Microsoft Viva Topics](manage-topic-visibility.md)
 
 [Manage topic permissions in Microsoft Viva Topics](topic-experiences-user-permissions.md)

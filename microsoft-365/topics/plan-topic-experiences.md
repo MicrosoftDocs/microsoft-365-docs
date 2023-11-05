@@ -161,10 +161,10 @@ When you set up topic experiences, you'll need the following items as you go thr
 
 [Set up topic experiences](set-up-topic-experiences.md)
 
-[Manage topic discovery in Microsoft 365](topic-experiences-discovery.md)
+[Manage topic discovery in Microsoft 365](manage-topic-discovery.md)
 
-[Manage topic visibility in Microsoft 365](topic-experiences-knowledge-rules.md)
+[Manage topic visibility in Microsoft 365](manage-topic-visibility.md)
 
 [Manage topic permissions in Microsoft 365](topic-experiences-user-permissions.md)
 
-[Change the name of the topic center in Microsoft 365](topic-experiences-administration.md)
+[Change the name of the topic center in Microsoft 365](rename-topic-center.md)

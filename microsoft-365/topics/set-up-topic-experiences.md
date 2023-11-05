@@ -259,10 +259,10 @@ Once you have set up Topics, you can change the settings that you chose during s
 >[!NOTE]
 >If you update user roles and permissions, these changes can take over an hour to take effect.
 
-- [Manage topic discovery in Microsoft Viva Topics](topic-experiences-discovery.md)
-- [Manage topic visibility in Microsoft Viva Topics](topic-experiences-knowledge-rules.md)
+- [Manage topic discovery in Microsoft Viva Topics](manage-topic-discovery.md)
+- [Manage topic visibility in Microsoft Viva Topics](manage-topic-visibility.md)
 - [Manage topic permissions in Microsoft Viva Topics](topic-experiences-user-permissions.md)
-- [Change the name of the topic center in Microsoft Viva Topics](topic-experiences-administration.md)
+- [Change the name of the topic center in Microsoft Viva Topics](rename-topic-center.md)
 
 You can also [add Viva Topics as an app in Teams](add-topics-app.md).
 
