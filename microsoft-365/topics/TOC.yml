@@ -32,13 +32,13 @@
         - name: Set up Topics
           href: set-up-topic-experiences.md
         - name: Manage topic discovery
-          href: topic-experiences-discovery.md
+          href: manage-topic-discovery.md
         - name: Manage topic visibility
-          href: topic-experiences-knowledge-rules.md
+          href: manage-topic-visibility.md
         - name: Manage topic permissions
           href: topic-experiences-user-permissions.md
         - name: Change the topic center name
-          href: topic-experiences-administration.md
+          href: rename-topic-center.md
         - name: Add the Topics app to Teams
           href: add-topics-app.md
         - name: Viva Topics in Viva Engage
