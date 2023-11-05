@@ -38,7 +38,7 @@ Viva Topics are integrated throughout Microsoft 365 and other Viva apps.
 |Yammer and Viva Engage |Topic picker, Topic card |
 |[Office.com SharePoint search](search.md) |Topic answer |
 |Word, Excel, and PowerPoint |Search Topic answer |
-|[Viva Connections](viva-topics-card-viva-connections.md) |Dashboard cards |
+|[Viva Connections](topics-card-viva-connections.md) |Dashboard cards |
 |[Viva Engage](https://support.microsoft.com/topic/answers-in-viva-view-and-follow-topics-fd3cf456-28e1-4621-b683-b0d21348a935) |Answers in Viva Engage: Topic picker, Q&A routing |
 
 ## How topics are displayed to users
