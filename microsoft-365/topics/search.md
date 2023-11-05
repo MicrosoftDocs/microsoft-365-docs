@@ -24,9 +24,9 @@ While Viva Topics users can find topics through topic highlights in their ShareP
 
 ## Topic answer
 
-When you search for a specific topic from the SharePoint start page, on Office.com, or from a SharePoint site that has been scoped to your organization, if a topic exists and is found, it will display the result in the topic answer suggestion format.
+When you search for a specific topic from the SharePoint start page, on Office.com, or from a SharePoint site that is scoped to your organization, if a topic exists and is found, it displays the result in the topic answer suggestion format.
 
-The topic answer will display:
+The topic answer displays:
 
 - Topic name
 - Alternate names: Alternate names or acronyms for the topic.
@@ -38,7 +38,7 @@ The topic answer will display:
 
 The topic page can display in the search results even if the topic answer card doesn't appear.
 
-The search results in Word, PowerPoint, Outlook, and Excel will also show the topic answer when one is found.
+The search results in Word, PowerPoint, Outlook, and Excel also show the topic answer when one is found.
 
 ## Acronyms
 
@@ -48,19 +48,19 @@ In Viva Topics, you can manually edit a topic to include an acronym for it as an
 
 ## Bookmarks and topics
 
-[Bookmarks](/microsoftsearch/manage-bookmarks) are a Microsoft Search feature that help people quickly find important sites and tools with just a search (for example, a travel booking tool on an external site outside of their Microsoft 365 tenant). They're created by search admins in the Microsoft 365 admin center. 
+[Bookmarks](/microsoftsearch/manage-bookmarks) are a Microsoft Search feature that help people quickly find important sites and tools with just a search (for example, a travel booking tool on an external site outside of their Microsoft 365 tenant). Search admins create them in the Microsoft 365 admin center. 
 
 For users who are looking for information about booking a trip for work:
 
 - If some users know the travel tool name (for example, "Concur"), it's easier to create a bookmark to go directly to the external site.
 
-- For users who search generally for "travel", create a topic on "Travel" that has the information they expect to see. Consider adding a link to the Concur external site in the description of the topic. If the link is instead to an internal travel booking site hosted on the Microsoft 365 tenant, you can add it to the “Pinned Resources”.
+- For users who search generally for _travel_, create a topic on _Travel_ that has the information they expect to see. Consider adding a link to the Concur external site in the description of the topic. If the link is instead to an internal travel booking site hosted on the Microsoft 365 tenant, you can add it to the _Pinned Resources_.
  
 ### Search results priority 
 
-Search priority depends on the content being searched for. Results in search are prioritized based on user engagement and content coverage of bookmarks, topics, acronyms, editorial Q&A, and other types of answers. 
+Search priority depends on the content being searched for. Results in searches are prioritized based on user engagement and content coverage of bookmarks, topics, acronyms, editorial Q&A, and other types of answers. 
 
-Bookmarks and topics typically have high engagement due to them being premium features. This affects the way results are displayed in a search. In a query triggered by both bookmarks and topics, the two answers will prioritize the bookmark before the topic. For example, in a user's search experience, when a user searches for a term like “travel”, a bookmark will appear in place of a topic when a bookmark is available. When a query doesn't trigger bookmarks, but triggers topics and acronyms, the topic result will show before the acronym result. When a query only triggers one answer in any of the types, the answer will show first.
+Bookmarks and topics typically have high engagement due to them being premium features. This affects the way results are displayed in a search. In a query triggered by both bookmarks and topics, the two answers prioritize the bookmark before the topic. For example, in a user's search experience, when a user searches for a term like _travel_, a bookmark appears in place of a topic when a bookmark is available. When a query doesn't trigger bookmarks, but triggers topics and acronyms, the topic result shows before the acronym result. When a query only triggers one answer in any of the types, the answer shows first.
 
 ## See also
 
