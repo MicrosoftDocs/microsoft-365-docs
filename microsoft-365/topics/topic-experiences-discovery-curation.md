@@ -1,6 +1,6 @@
 ---
 ms.date: 08/03/2023
-title: Topic discovery and curation in Microsoft Viva Topics
+title: Topic discovery and curation in Topics
 ms.author: daisyfeller
 author: daisyfell
 manager: pamgreen
@@ -15,14 +15,14 @@ ms.subservice: viva-topics
 search.appverid:
     - MET150  
 ms.localizationpriority:  medium
-description: Overview of topic discovery and curation in Viva Topics
+description: Overview of topic discovery and curation in Topics
 ---
 
-# Topic discovery and curation in Microsoft Viva Topics
+# Topic discovery and curation in Topics
 
-Viva Topics organizes information into knowledge in your Microsoft 365 environment. We have all experienced reading through documents and site pages where we encounter terms we're unfamiliar with. Many times we stop what we are doing to spend precious time searching for more information.
+Topics organizes information into knowledge in your Microsoft 365 environment. We have all experienced reading through documents and site pages where we encounter terms we're unfamiliar with. Many times we stop what we are doing to spend precious time searching for more information.
 
-Viva Topics uses Microsoft Graph and AI to identify **topics** in your organization.  A topic is a phrase or term that has a specific meaning to the organization, and has resources related to it that can help people understand what it is and find more information about it. There are lots of different types of topics that can be important to your organization. Initially, the following types of topics can be identified:
+Topics uses Microsoft Graph and AI to identify **topics** in your organization.  A topic is a phrase or term that has a specific meaning to the organization, and has resources related to it that can help people understand what it is and find more information about it. There are lots of different types of topics that can be important to your organization. Initially, the following types of topics can be identified:
 
 - Project
 - Event
@@ -43,15 +43,15 @@ The properties are identified from the files and pages that are part of the evid
 
 Not every identified topic is useful to your organization. It might not have identified any of the correct alternate names, descriptions, the appropriate people, or content. So the ability to add topics that aren't identified, keep suggested topics, and curate topics is critical to improving the quality of the topics that are discoverable in your organization.
 
-Viva Topics then, when the context is appropriate, will suggest these topics to be highlighted or displayed on different Microsoft 365 apps, such as SharePoint modern pages or on Outlook on the web. The topic can also be directly referenced on SharePoint pages by an author, on Microsoft Teams in chat messages, as well as in Outlook on the web while writing emails. When a user is curious to learn more about a topic, they can select a topic to view a **Topic summary** card that provides a short description. And if they want to learn more, they can select a **Topic details** link in the summary to open the detailed topic page.
+Topics then, when the context is appropriate, will suggest these topics to be highlighted or displayed on different Microsoft 365 apps, such as SharePoint modern pages or on Outlook on the web. The topic can also be directly referenced on SharePoint pages by an author, on Microsoft Teams in chat messages, as well as in Outlook on the web while writing emails. When a user is curious to learn more about a topic, they can select a topic to view a **Topic summary** card that provides a short description. And if they want to learn more, they can select a **Topic details** link in the summary to open the detailed topic page.
 
-![Screenshot of a Topic summary card.](../media/topics/knowledge-management/saturn.png) </br>
+![Screenshot of a Topic summary card.](../media/knowledge-management/saturn.png) </br>
 
 Additionally, users will also be able to find topics through Microsoft Search.
 
 ## Topic curation and feedback
 
-Viva Topics welcomes human contribution to improve the quality of your topics. While AI initially identifies and suggests topics, manually made edits to content from contributors, manually added topics, confirmation from users for AI discovered properties and content, and feedback on the usefulness of topics are all essential.
+Topics welcomes human contribution to improve the quality of your topics. While AI initially identifies and suggests topics, manually made edits to content from contributors, manually added topics, confirmation from users for AI discovered properties and content, and feedback on the usefulness of topics are all essential.
 
 - Topics can be reviewed by **knowledge managers** in your organization. The knowledge manager can review topics that they have permissions to see. On the **Manage topics** page in the topic center, they can choose to confirm AI-generated topics ("suggested topics") as valid, reject topics to prevent the content from being viewed as a topic, create topics that were not discovered by AI, or identify topics that could benefit from a few edits by subject matter experts to be more helpful or accurate. For more information, see [Manage topics in the topic center](manage-topics.md).
 
@@ -67,11 +67,11 @@ Viva Topics welcomes human contribution to improve the quality of your topics. W
 
     4. On the topic center home page, you can see the topics in your organization to which you have a connection. You can choose to remain listed on the topic or remove yourself. This feedback is reflected to everyone who discovers this topic. For more information about the topic center home page, see [Topic center overview](./topic-center-overview.md).
 
-Even with human edits, AI will continually look for more information about topics, and will look for human verification. For example, if AI thinks you're a person that should be listed as an expert on a topic, it will ask you to confirm this. 
+Even with human edits, AI will continually look for more information about topics, and will look for human verification. For example, if AI thinks you're a person that should be listed as an expert on a topic, it will ask you to confirm this.
 
 ## Identifying topic types
 
-Identifying topic types in Viva Topics allows your organization to organize topics by their types. In suggested topics, AI identifies types relevant to your topics. While editing or curating topics, you can also add these topic types to improve a topic's information and accessibility. There are over 150 topic types recognized in Viva Topics.
+Identifying topic types in Topics allows your organization to organize topics by their types. In suggested topics, AI identifies types relevant to your topics. While editing or curating topics, you can also add these topic types to improve a topic's information and accessibility. There are over 150 topic types recognized in Topics.
 
 |&nbsp;  | &nbsp; |&nbsp; |
 |---|---|---|

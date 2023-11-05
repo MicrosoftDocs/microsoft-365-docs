@@ -1,6 +1,6 @@
 ---
 ms.date: 10/31/2023
-title: Usage and engagement metrics in Viva Topics
+title: Usage and engagement metrics in Topics
 ms.author: daisyfeller
 author: daisyfell
 manager: pamgreen
@@ -10,16 +10,16 @@ ms.topic: article
 ms.service: viva
 search.appverid: MET150
 ms.localizationpriority: medium
-description: Learn about usage and engagement trends in Microsoft Viva Topics.
+description: Learn about usage and engagement trends in Topics.
 ROBOTS: NOINDEX,NOFOLLOW
 ---
 
-# Usage and engagement metrics in Viva Topics
+# Usage and engagement metrics in Topics
 
 >[!NOTE]
 >Usage and engagement metrics are currently only available to users in the Early Adopter Program.
 
-Usage and engagement metrics demonstrate how users are engaging with Viva Topics in your organization.
+Usage and engagement metrics demonstrate how users are engaging with Topics in your organization.
 
 To access usage and engagement metrics:
 
@@ -39,17 +39,17 @@ The **Topic engagement** section provides a look into how unique users are engag
 
 The information in this section is based on the time period that you select. The changes from the last time period appear next to each metric.
 
-![Screenshot of total topics users graph.](../media/topics/knowledge-management/total-topics-users-graph.png)
+![Screenshot of total topics users graph.](../media/knowledge-management/total-topics-users-graph.png)
 
-![Screenshot of engagement metrics.](../media/topics/knowledge-management/engagement-metrics.png)
+![Screenshot of engagement metrics.](../media/knowledge-management/engagement-metrics.png)
 
 ## Topic interaction
 
 The **Topic interaction** section provides a look into how users are interacting with topics. Interactions include consumption of topics, sharing interactions, and contributing interactions from users.
 
-![Screenshot of total topic interactions graph.](../media/topics/knowledge-management/total-topic-interactions-graph.png)
+![Screenshot of total topic interactions graph.](../media/knowledge-management/total-topic-interactions-graph.png)
 
-![Screenshot of total topic interactions metrics.](../media/topics/knowledge-management/topic-interaction-metrics.png)
+![Screenshot of total topic interactions metrics.](../media/knowledge-management/topic-interaction-metrics.png)
 
 - **Sharing** measures all scenarios related to sharing topics by using the topic picker (# tags). Tagging on Viva Engage and Answers aren't currently counted.
 - **Contributing** measures all scenarios where a topic is improved, including topic page edits, publication, and adding or confirming files, people, sites. Contributing also includes other feedback to improve topics.
@@ -61,7 +61,7 @@ The **Topic consumption** section provides a look into how users are consuming t
 
 **Interactions by topic surface** measures consumption of topics at surface level, including topic cards, topic pages, Microsoft search, and topic center cards.
 
-![Screenshot of consumption of topic surface metrics.](../media/topics/knowledge-management/topic-consumption-metrics.png)
+![Screenshot of consumption of topic surface metrics.](../media/knowledge-management/topic-consumption-metrics.png)
 
 - **Consumption** measures top-level activity, such as selecting a card, but doesn't measure activity within topic cards.
 - **Topic Card** measures the number of times a topic card was viewed.
@@ -78,4 +78,4 @@ User topic contributions include editing and publishing topics, and providing to
 - **Feedback** measures how many times users have responded to feedback questions to improve topics.
 - **Edits** measures how many times a topic has been updated and published. Each time a topic is republished counts as an edit. However, draft edits aren't counted. If a user edits two or more things on a topic before publishing or republishing, it will count as one update per publish.
 
-![Screenshot of user topic contribution metrics.](../media/topics/knowledge-management/topic-contribution-metrics.png)
+![Screenshot of user topic contribution metrics.](../media/knowledge-management/topic-contribution-metrics.png)

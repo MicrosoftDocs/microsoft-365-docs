@@ -1,6 +1,6 @@
 ---
 ms.date: 04/20/2023
-title: Add the Viva Topics app in the Teams Admin Center
+title: Add the Topics app in the Teams Admin Center
 ms.author: daisyfeller
 author: daisyfell
 manager: pamgreen
@@ -15,21 +15,21 @@ ms.subservice: viva-topics
 search.appverid:
     - MET150  
 ms.localizationpriority:  medium
-description: Learn how to Add the Viva Topics app in the Teams Admin Center.
+description: Learn how to Add the Topics app in the Teams Admin Center.
 ---
 
-# Add the Viva Topics app in the Teams Admin Center
+# Add the Topics app in the Teams Admin Center
 
-Once your organization has a Viva Suite or Viva Topics license, you’ll automatically have access to the Viva Topics app in the Microsoft Teams app store.
+Once your organization has a Viva Suite or Copilot license, you’ll automatically have access to the Topics app in the Microsoft Teams app store.
 
-## Manage and pin the Viva Topics app
+## Manage and pin the Topics app
 
 1. Sign into your Microsoft Teams admin center.
 
 2. Go to Teams apps, then choose Manage apps.
 
-3. Scroll down or search for Viva Topics. Here you can view the Viva Topics app details, permissions, and settings.
+3. Scroll down or search for Topics. Here you can view the Topics app details, permissions, and settings.
 
-4. In the left rail, select Permission policies. Here you can choose what users have access to the Viva Topics app.
+4. In the left rail, select Permission policies. Here you can choose what users have access to the Topics app.
 
 5. Next, select Setup policies from the left rail. Add setup policies to control how apps are made available to users in Teams. [Learn more about app setup policies](/microsoftteams/teams-app-setup-policies). It’s recommended to [pin the app](/microsoftteams/teams-app-setup-policies#pin-apps) for your users so they can find it easily.

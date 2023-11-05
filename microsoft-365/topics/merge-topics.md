@@ -1,6 +1,6 @@
 ---
 ms.date: 08/23/2023
-title: Merge topics in Microsoft Viva Topics
+title: Merge topics in Topics
 ms.author: daisyfeller
 author: daisyfell
 manager: pamgreen
@@ -15,31 +15,31 @@ ms.subservice: viva-topics
 search.appverid:
 - MET150   
 ms.localizationpriority:  medium
-description: Learn how to combine multiple topics into one in Microsoft Viva Topics.
+description: Learn how to combine multiple topics into one in Topics.
 ROBOTS: NOINDEX,NOFOLLOW
 
 ---
 
-# Merge topics in Microsoft Viva Topics
+# Merge topics in Topics
 
-You can merge multiple topics into one if Viva Topics identifies different topics that refer to the same thing.
+You can merge multiple topics into one if Topics identifies different topics that refer to the same thing.
 
 >[!NOTE]
 >Merging topics is currently in targeted release.
 
 ## Prerequisites
 
-- Have a Viva Topics license
+- Have a license that includes Topics
 - Be a knowledge manager
 
 ## Merge topics in the topic center
 
-1. In your Topic center, select which topics you want to merge. Then choose **Merge** from the command bar. You may also be prompted to merge topics if Viva Topics detects that two topics have the same name.
+1. In your Topic center, select which topics you want to merge. Then choose **Merge** from the command bar. You may also be prompted to merge topics if Topics detects that two topics have the same name.
 
     >[!NOTE]
     > You can't merge multiple published topics together, but you can merge suggested or confirmed topics into an existing published topic.
 
-2. This will take you to the **Merge Topics** dialog, where you can see the topics that will merge, along with their pre- and post-merge status. Viva Topics determines the post-merge status based on information about the original topics.
+2. This will take you to the **Merge Topics** dialog, where you can see the topics that will merge, along with their pre- and post-merge status. Topics determines the post-merge status based on information about the original topics.
 
 3. If everything looks right, select **Merge topics**.
 

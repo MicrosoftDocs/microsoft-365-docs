@@ -1,6 +1,6 @@
 ---
 ms.date: 10/17/2023
-title: Manage topics at scale in Microsoft Viva Topics
+title: Manage topics at scale in Topics
 ms.author: daisyfeller
 author: daisyfell
 manager: pamgreen
@@ -15,12 +15,12 @@ ms.subservice: viva-topics
 search.appverid:
     - MET150  
 ms.localizationpriority:  medium
-description: Learn about best practices to manage topics in your organization using Viva Topics.
+description: Learn about best practices to manage topics in your organization using Topics.
 ---
 
-# Manage topics at scale in Microsoft Viva Topics
+# Manage topics at scale in Topics
 
-When you index your SharePoint sites or your entire organization for Viva Topics, many topics might be generated. When this happens and you see thousands of suggested topics on the **Manage topics** page, it can be challenging to know where to start. This article describes how Viva Topics helps you optimize which topics and information are shown to users who are searching for information, even in large organizations with large numbers of topics.
+When you index your SharePoint sites or your entire organization for Topics, many topics might be generated. When this happens and you see thousands of suggested topics on the **Manage topics** page, it can be challenging to know where to start. This article describes how Topics helps you optimize which topics and information are shown to users who are searching for information, even in large organizations with large numbers of topics.
 
 First, a reminder of the [four stages for topics](manage-topics.md#topic-status):
 
@@ -44,13 +44,13 @@ First, a reminder of the [four stages for topics](manage-topics.md#topic-status)
 
 ## Knowledge manager role
 
-When you configure Viva Topics, you'll add a group of users who are granted permissions to see the **Manage topics** page in the topic center. It will appear only for these users who hold the role of primary curation for the topics. They'll have access to data about the topics and will be able to see lists of all topics that they have access to review and curate.
+When you configure Topics, you'll add a group of users who are granted permissions to see the **Manage topics** page in the topic center. It will appear only for these users who hold the role of primary curation for the topics. They'll have access to data about the topics and will be able to see lists of all topics that they have access to review and curate.
 
 Employees in this role should have broad permissions to view a wide array of topics. Or if permissions are segmented, you might want to select a group of users that represent different areas of the business and can curate for their own areas.
 
-When you first review topics in the topic center, suggested topics are purely AI-defined. Knowledge managers might want to review each one before rolling out Viva Topics to a broad user community. When working at scale, this approach is rarely a practical because of the thousands of topics.
+When you first review topics in the topic center, suggested topics are purely AI-defined. Knowledge managers might want to review each one before rolling out Topics to a broad user community. When working at scale, this approach is rarely a practical because of the thousands of topics.
 
-The recommended approach is to find a balance of the most pertinent or important topics for your initial set of users and focus on curation of those topics before rollout of Viva Topics. Begin to collect feedback from the users and allow crowdsourcing to determine the usage and contribution patterns of your users to inform the strategies suggested in this article.
+The recommended approach is to find a balance of the most pertinent or important topics for your initial set of users and focus on curation of those topics before rollout of Topics. Begin to collect feedback from the users and allow crowdsourcing to determine the usage and contribution patterns of your users to inform the strategies suggested in this article.
 
 It's important to recognize that the system will identify and show both AI-suggested and human-curated published topics to all users. However, this doesn't mean that every suggested topic will be shown to all end users. The security settings in place will show only the topics that each employee can access based on the permissions that are set on the content itself.
 
@@ -68,29 +68,29 @@ When topics are discovered by AI, they're marked as a **Suggested Topic**, both 
 
 Within a topic card or page, we use various cues to show how the AI has generated the information. The system uses a variety of evidence to add the resources, primarily through the content itself.
 
-- Labels show that a topic is suggested and that it was discovered by Viva Topics.  
+- Labels show that a topic is suggested and that it was discovered by Topics.  
 
-   ![Sample card showing a suggested topic and includes suggested people and suggested resources.](../media/topics/knowledge-management/scale-topics-sample-card-suggested-topic.png)
+   ![Sample card showing a suggested topic and includes suggested people and suggested resources.](../media/knowledge-management/scale-topics-sample-card-suggested-topic.png)
 
 - Information on the card states where a definition has come from by specifying its source.
 
 - Suggested people are derived by aggregating people who have written or edited documents with topic evidence. If a person writes a document that has a topic name in the title, and that document has many views, it might only require one document to establish the person as related. However, in many cases more evidence is better, and people who are listed have worked on multiple documents.  
 
-   ![Page showing a suggested topic and include suggested people, files, and pages.](../media/topics/knowledge-management/scale-topics-sample-page-suggested-topic.png)
+   ![Page showing a suggested topic and include suggested people, files, and pages.](../media/knowledge-management/scale-topics-sample-page-suggested-topic.png)
 
 - For the files and pages shown, the system identifies how many times the topic has been mentioned in the document, but the topic also must be mentioned in a specific context that identifies the reference to the topic of specific type (such as project or team). This is what counts as evidence for the AI. The system also considers the occurrence of a topic name in the titles of documents, types of documents, and other analytics features (such as views).
 
-   ![Image of a banner that says Suggested topic and Microsoft Viva discovered this topic.](../media/topics/knowledge-management/scale-topics-suggested-you-have-access.png)
+   ![Image of a banner that says Suggested topic and Microsoft discovered this topic.](../media/knowledge-management/scale-topics-suggested-you-have-access.png)
 
-   ![Image of a banner that says Suggested topic and Edit this page to describe your involvement in this topic.](../media/topics/knowledge-management/scale-topics-suggested-describe-your-involvement.png)
+   ![Image of a banner that says Suggested topic and Edit this page to describe your involvement in this topic.](../media/knowledge-management/scale-topics-suggested-describe-your-involvement.png)
 
-   ![Image of a banner that says Suggested topic and Edit this page if you can add people connected to the topic.](../media/topics/knowledge-management/scale-topics-suggested-add-people.png)
+   ![Image of a banner that says Suggested topic and Edit this page if you can add people connected to the topic.](../media/knowledge-management/scale-topics-suggested-add-people.png)
 
 These attributes demonstrate that the content has been added by AI, and how the AI has made that determination.
 
 ### Communication
 
-When communicating to your users about Viva Topics, it's important to clarify the difference between AI-suggested topics and content and their curated equivalents.
+When communicating to your users about Topics, it's important to clarify the difference between AI-suggested topics and content and their curated equivalents.
 
 As a reader, you should view suggested topics with a more critical eye. They shouldn't be perceived as authoritative sources of organizational truth. Rather, they're a way-finding tool to access tacit knowledge that is presented through the content that you have access to. The AI has discovered the topic and has enough evidence to show it to you, but its value hasn't been confirmed by a person.
 
@@ -102,7 +102,7 @@ When users interact with a suggested topic, they might be asked a simple questio
 
 The home page of a topic center is another location where feedback on suggested topics is gathered. In the topic center, a user can see the topics that they have been associated with and are given the option to either confirm this association or have it removed.
 
-   ![Example of topic center displaying suggested topics for the user to confirm or remove their connection to suggested topics.](../media/topics/knowledge-management/scale-topics-topic-center-confirm-connections.png)
+   ![Example of topic center displaying suggested topics for the user to confirm or remove their connection to suggested topics.](../media/knowledge-management/scale-topics-topic-center-confirm-connections.png)
 
 When you allow broad crowdsourcing of topics, you should consider the following factors:
 
@@ -167,9 +167,3 @@ Larger portal sites within your organization might have invested time in organiz
 ### Leverage internal knowledge bases or wiki sites
 
 If your organization has invested in knowledge bases or wiki sites, these can provide a list of topics to use for your initial curation efforts. If they're particularly large, select the most viewed or edited topics as a starting point.
-
-## See also
-
-[Manage topics in the topic center](manage-topics.md)
-
-[Topic center overview](topic-center-overview.md)

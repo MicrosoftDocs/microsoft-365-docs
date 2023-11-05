@@ -1,6 +1,6 @@
 ---
 ms.date: 10/6/2023
-title: Set up and manage Microsoft Viva Topics
+title: Set up and manage Topics
 ms.author: daisyfeller
 author: daisyfell
 manager: pamgreen
@@ -17,16 +17,16 @@ ms.subservice: viva-topics
 search.appverid:
 - MET150  
 ms.localizationpriority:  medium
-description: Learn how to set up Microsoft Viva Topics and manage your settings.
+description: Learn how to set up Topics and manage your settings.
 ---
 
-# Set up and manage Microsoft Viva Topics
+# Set up and manage Topics
 
 You can use the Microsoft 365 admin center to set up and configure [Topics](topic-experiences-overview.md).
 
-It is important to plan the best way to set up and configure topics in your environment. Be sure to read [Plan for Microsoft Viva Topics](plan-topic-experiences.md) before you begin the procedures in this article.
+It is important to plan the best way to set up and configure topics in your environment. Be sure to read [Plan for Topics](plan-topic-experiences.md) before you begin the procedures in this article.
 
-You must be [subscribed to Viva Topics](https://www.microsoft.com/microsoft-viva/topics) and be a global administrator, or both SharePoint administrator and groups administrator to access the Microsoft 365 admin center and set up Topics.
+You must be [subscribed to a license that includes Topics](https://www.microsoft.com/microsoft-viva/topics) and be a global administrator, or both SharePoint administrator and groups administrator to access the Microsoft 365 admin center and set up Topics.
 
 > [!IMPORTANT]
 > If you have configured SharePoint to [require managed devices](/sharepoint/control-access-from-unmanaged-devices), you must set up Topics from a managed device.
@@ -46,7 +46,7 @@ To assign licenses:
 4. Under **Apps**, make sure **Graph Connectors Search with Index (Viva Topics)** and **Viva Topics** are both selected.
 
    > [!div class="mx-imgBorder"]
-   > ![Microsoft Viva Topics licenses in the Microsoft 365 admin center.](../media/topics/topic-experiences-licenses.png)
+   > ![Microsoft Viva Topics licenses in the Microsoft 365 admin center.](../media/topic-experiences-licenses.png)
 
 5. Select **Save changes**.
 
@@ -63,13 +63,13 @@ To set up Topics:
 
 1. In the [Microsoft 365 admin center](https://admin.microsoft.com), select **Setup**, and then choose **Microsoft Viva**.
 
-   ![Screenshot of the Microsoft Viva setup card.](../media/topics/viva-setup.png)
+   ![Screenshot of the Microsoft Viva setup card.](../media/viva-setup.png)
 
 2. Select **Viva Topics**.
 
-   [![Screenshot of the Viva admin page.](../media/topics/viva-new-admin.png)](../media/topics/viva-new-admin.png#lightbox)
+   [![Screenshot of the Viva admin page.](../media/viva-new-admin.png)](../media/viva-new-admin.png#lightbox)
 
-3. This will take you to the Viva Topics admin page. Choose **Deploy Topics in 2 steps** to enable Topics for your organization. This will bring up the setup pane.
+3. This will take you to the Topics admin page. Choose **Deploy Topics in 2 steps** to enable Topics for your organization. This will bring up the setup pane.
 
 ### Alternative setup path
 
@@ -81,14 +81,14 @@ You can take either path through your Microsoft 365 admin center to set up Topic
 
 3. This will take you to the Viva Topics admin page. Choose **Deploy Topics in 2 steps** to enable Topics for your organization. This will bring up the setup pane.
 
-    ![Screenshot of the Setup page.](../media/topics/knowledge-management/mac-setup-2.png)
+    ![Screenshot of the Setup page.](../media/knowledge-management/mac-setup-2.png)
 
 >[!NOTE]
 >When you set up Topics, some settings will be chosen by default. You can [change these settings after you complete your setup.](#manage-topics). [Learn more about why some settings are recommended by default](plan-topic-experiences.md).
 
 ### Choose SharePoint sites
 
-![Screenshot of the SharePoint setup page.](../media/topics/knowledge-management/set-up-sharepoint.png)
+![Screenshot of the SharePoint setup page.](../media/knowledge-management/set-up-sharepoint.png)
 
 1. Choose which SharePoint sites Topics can source information from.
     - **All sites**: All SharePoint sites in your organization. This includes current and future sites.
@@ -100,7 +100,7 @@ You can take either path through your Microsoft 365 admin center to set up Topic
 
 ### Create your topic center
 
-![Screenshot of the topic center setup page.](../media/topics/knowledge-management/set-up-topic-center.png)
+![Screenshot of the topic center setup page.](../media/knowledge-management/set-up-topic-center.png)
 
 On the **Topic center** page, you can create your topic center site where users can view topic pages and manage topics.
 
@@ -127,11 +127,11 @@ By default, the only person who can manage Topics for your organization is the a
 
 1. In the [Microsoft 365 admin center](https://admin.microsoft.com), select **Setup**, and then choose **Microsoft Viva**.
 
-   ![Screenshot of the Microsoft Viva setup card.](../media/topics/viva-setup.png)
+   ![Screenshot of the Microsoft Viva setup card.](../media/viva-setup.png)
 
 2. Select **Viva Topics**.
 
-   [![Screenshot of the Viva admin page.](../media/topics/viva-new-admin.png)](../media/topics/viva-new-admin.png#lightbox)
+   [![Screenshot of the Viva admin page.](../media/viva-new-admin.png)](../media/viva-new-admin.png#lightbox)
 
 3. This will take you to the Viva Topics admin page. Choose **Manage Settings**.
 
@@ -175,7 +175,7 @@ If the **Everyone in my organization** option isn't available for any of your se
     Set-SPOTenant -ShowEveryoneExceptExternalUsersClaim $True
 ```
 
-[Learn more about ShowEveryoneExceptExternalUsersClaim](/powershell/module/sharepoint-online/set-spotenant#-showeveryoneexceptexternalusersclaim)
+[Learn more about ShowEveryoneExceptExternalUsersClaim](/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps#-showeveryoneexceptexternalusersclaim)
 
 If you want to keep this option disabled, it's recommended to choose the broadest possible group of users.
 
@@ -193,7 +193,7 @@ On the **Topic visibility** page, you'll choose who can see topics.
     - **Only selected people or security groups**
     - **No one**
 
-    ![Screenshot of the who can see topics options.](../media/topics/knowledge-management/ksetup2.png)
+    ![Screenshot of the who can see topics options.](../media/knowledge-management/ksetup2.png)
 
 3. Select **Save**.
 
@@ -204,7 +204,7 @@ On the **Topic visibility** page, you'll choose who can see topics.
 
 In the **Topic permissions** page, you choose who can create, edit, and manage topics.
 
-![Screenshot of the topic permissions page.](../media/topics/knowledge-management/topic-permissions.png)
+![Screenshot of the topic permissions page.](../media/knowledge-management/topic-permissions.png)
 
 1. First, go to the **Who can create and edit topics** section. You can select:
     - **Everyone in my organization** [Learn how to enable this option if it's greyed out](#enable-the-everyone-in-my-organization-option).
@@ -228,7 +228,7 @@ In the **Topic permissions** page, you choose who can create, edit, and manage t
 
 On the **Topic center** page, you can create your topic center site where users can view topic pages and manage topics.
 
-![Screenshot of the Topic center page.](../media/topics/knowledge-management/manage-topic-center.png)
+![Screenshot of the Topic center page.](../media/knowledge-management/manage-topic-center.png)
 
 1. Under **Topic center name**, choose **Edit**.
 
@@ -259,10 +259,10 @@ Once you have set up Topics, you can change the settings that you chose during s
 >[!NOTE]
 >If you update user roles and permissions, these changes can take over an hour to take effect.
 
-- [Manage topic discovery in Microsoft Viva Topics](manage-topic-discovery.md)
-- [Manage topic visibility in Microsoft Viva Topics](manage-topic-visibility.md)
+- [Manage topic discovery in Microsoft Viva Topics](topic-experiences-discovery.md)
+- [Manage topic visibility in Microsoft Viva Topics](topic-experiences-knowledge-rules.md)
 - [Manage topic permissions in Microsoft Viva Topics](topic-experiences-user-permissions.md)
-- [Change the name of the topic center in Microsoft Viva Topics](rename-topic-center.md)
+- [Change the name of the topic center in Microsoft Viva Topics](topic-experiences-administration.md)
 
 You can also [add Viva Topics as an app in Teams](add-topics-app.md).
 
@@ -271,8 +271,3 @@ You can also [add Viva Topics as an app in Teams](add-topics-app.md).
 - [Understanding Viva Topics](https://support.microsoft.com/office/5bef3020-2679-4045-81cb-bcbc37218332)
 - [Edit an existing topic in Microsoft Viva Topics](https://support.microsoft.com/office/6a4c7459-2293-4291-af76-973af65a44ae)
 
-## See also
-
-[Topic Experiences Overview](topic-experiences-overview.md)
-
-[Learn about topics in Microsoft Viva Topics](/viva/topics/get-started-with-viva-topics)

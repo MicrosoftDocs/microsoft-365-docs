@@ -1,6 +1,6 @@
 ---
 ms.date: 11/15/2021
-title: Plan for Microsoft Viva Topics
+title: Plan for Topics
 ms.author: daisyfeller
 author: daisyfell
 manager: pamgreen
@@ -15,10 +15,10 @@ ms.subservice: viva-topics
 search.appverid:
     - MET150  
 ms.localizationpriority:  medium
-description: Learn how to plan for Microsoft Viva Topics.
+description: Learn how to plan for Topics.
 ---
 
-# Plan for Microsoft Viva Topics
+# Plan for Topics
 
 You're in control of how topics are experienced in your organization. Your planning decisions for Topics ensure that high quality topics are shown to your users and they have the right permissions to consume and contribute knowledge.
 
@@ -31,23 +31,23 @@ In this article we'll examine these planning decisions:
 - Which users you want to give permissions to create or edit topics in the topic center
 - What name you want to give your topic center
 
-Security and privacy of your data is respected, and topic experiences does not grant users additional access to files they don’t have rights to. We recommend you also read [Microsoft Viva Topics security and privacy](topic-experiences-security-privacy.md) as part of your planning process.
+Security and privacy of your data is respected, and topic experiences does not grant users additional access to files they don’t have rights to. We recommend you also read [Topics security and privacy](topic-experiences-security-privacy.md) as part of your planning process.
 
-To learn more about the AI technology behind Viva Topics, read [Alexandria in Microsoft Viva Topics: from big data to big knowledge](https://www.microsoft.com/research/blog/alexandria-in-microsoft-viva-topics-from-big-data-to-big-knowledge).
+To learn more about the AI technology behind Topics, read [Alexandria in Topics: from big data to big knowledge](https://www.microsoft.com/research/blog/alexandria-in-microsoft-viva-topics-from-big-data-to-big-knowledge).
 
-Keep in mind that Viva Topics needs access to the sites and files that your users use every day. Deploying Viva Topics in a test or development environment may not yield useful results.
+Keep in mind that Topics needs access to the sites and files that your users use every day. Deploying Topics in a test or development environment may not yield useful results.
 
-> [!Note] 
-> Viva Topics does not support [Service encryption with Customer Key](/microsoft-365/compliance/customer-key-overview).
+> [!NOTE]
+> Topics doesn't support [Service encryption with Customer Key](/microsoft-365/compliance/customer-key-overview).
 
 ## Requirements
 
-You must be [subscribed to Viva Topics](https://www.microsoft.com/microsoft-viva/topics) and be either a global administrator or both SharePoint and Groups administrator to access the Microsoft 365 admin center and set up Topics.
+You must be [subscribed to Topics](https://www.microsoft.com/microsoft-viva/topics) and be either a global administrator or both SharePoint and Groups administrator to access the Microsoft 365 admin center and set up Topics.
 
-All users who are going to use Topics require a **Topic Experiences** license. Assigning licenses is covered in [Set up Microsoft Viva Topics](set-up-topic-experiences.md). If you plan to assign licenses programmatically, be sure the users already have licenses for Microsoft 365 (for example, E3 or E5) before assigning the Topic Experiences license. 
+Assigning licenses is covered in [Set up Topics](set-up-topic-experiences.md). If you plan to assign licenses programmatically, be sure the users already have licenses for Microsoft 365 (for example, E3 or E5).
 
-> [!Important] 
-> Topics crawl content in English, French, German, and Spanish.
+> [!IMPORTANT]
+> Topics crawls content in the [supported languages for processing topics](topics-language-support.md#languages-available-for-processing-topics).
 
 ## Topic discovery
 
@@ -58,11 +58,11 @@ You can choose to include all SharePoint sites, a specific list of sites, or no 
 When you set up Topics, you can choose from the following options:
 
 - **All sites**: All SharePoint sites in your organization. This includes current and future sites.
-- **All, except selected sites**: All sites except for the ones you specify. Sites created in future will be included as sources for topic discovery. 
+- **All, except selected sites**: All sites except for the ones you specify. Sites created in future will be included as sources for topic discovery.
 - **Only selected sites**: Only the sites that you specify. Sites created in the future won't be included as sources for topic discovery.
 - **No sites**: Don't include any SharePoint sites.
 
-We recommend selecting enough sites to include at least 20,000 documents to get the best results from Viva Topics.
+We recommend selecting enough sites to include at least 20,000 documents to get the best results from Topics.
 
 If you choose either **All, except selected sites** or **Only selected sites**, you can upload a .csv file with a list of sites. These options are useful if you're doing a pilot and you want to include a limited number of sites to start.
 
@@ -78,26 +78,26 @@ We recommend you create a process for users or knowledge managers to request ind
 
 ## Item insights
 
-Viva Topics benefits from the input AI collects from Microsoft Graph signals. Item insights are insights that Microsoft calculates using machine learning techniques and applies them as content recommendations for you and your colleagues in your organization. Microsoft derives insights from analyzing activities (such as modifying, commenting, or sharing) to empower user-centric experiences with recommendations for users of Microsoft 365. Enabling item insights in Microsoft 365 will help your organization have the most accurate results in Viva Topics. 
+Topics benefits from the input AI collects from Microsoft Graph signals. Item insights are insights that Microsoft calculates using machine learning techniques and applies them as content recommendations for you and your colleagues in your organization. Microsoft derives insights from analyzing activities (such as modifying, commenting, or sharing) to empower user-centric experiences with recommendations for users of Microsoft 365. Enabling item insights in Microsoft 365 will help your organization have the most accurate results in Topics.
 
 ### Multi-geo
 
-If your organization has deployed [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo), Viva Topics respects data sovereignty by ensuring topics data is always stored in the correct geo location. The topic center is provisioned in the central location and content from all geo locations is processed there. The resulting discovered topics are stored in the same geo location as the source content. If the topic source data moves between geo locations, the corresponding topic properties, such as the description, moves as well.
+If your organization has deployed [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo), Topics respects data sovereignty by ensuring topics data is always stored in the correct geo location. The topic center is provisioned in the central location and content from all geo locations is processed there. The resulting discovered topics are stored in the same geo location as the source content. If the topic source data moves between geo locations, the corresponding topic properties, such as the description, moves as well.
 
 ## User permissions
 
 The user permissions that you specify determine which people in your organization interact with topics and what they can do.
 
-> [!Note] 
-> At this time, Viva Topics doesn't support providing licenses or user permissions for Guest (External) users. 
+> [!NOTE]
+> At this time, Topics doesn't support providing licenses or user permissions for Guest (External) users.
 
-*Manage topics*
+### Manage topics
 
 Knowledge managers oversee the quality of information, how its structured, and other best practices in your organization. They can confirm and reject topics.
 
 While you can specify individual topic managers, we recommend that you create a security group (or use an existing one) that contains the people who you want to be knowledge managers. You can specify this security group during the setup process.
 
-*Create and edit topics*
+### Create and edit topics
 
 Topic contributors are the champions and subject matter experts in your organization. They can create and edit topics. 
 
@@ -107,7 +107,7 @@ If you want to limit creating and editing topics to specific people or groups, c
 
 You can choose to not allow anyone to contribute to topics, however this is not recommended. Knowledge managers will still be able to edit and create topics if you choose this option.
 
-*Topic viewers*
+### Topic viewers
 
 Topic viewers can see information on topic pages, in search results and when topics are highlighted in the content like SharePoint pages. Users can only see discovered topics when they have access to the files and pages the topic was discovered in.
 
@@ -133,7 +133,7 @@ The .csv file must contain the following parameters:
     - Partial match: You can exclude all topics that have a specific word in it.  For example, *arc* will exclude all topics with the word *arc* in it, such as *Arc circle*, *Plasma arc welding*, or *Training arc*. Note that it will not exclude topics in which the text is included as part of a word, such as *Architecture*.
 - **Stands for (optional)**: (Also known as *expansion*) If you want to exclude an acronym, type the words the acronym stands for.
 
-    ![Exclude topics in CSV template.](../media/topics/exclude-topics-csv.png) 
+    ![Exclude topics in CSV template.](../media/exclude-topics-csv.png)
 
 You can copy the csv template:
 
@@ -156,15 +156,3 @@ When you set up topic experiences, you'll need the following items as you go thr
 > * Security group for topic knowledge managers if not allowing all users to manage topics
 > * List of sensitive topics to exclude from topic discovery
 > * A name for your topic center site
-
-## See also
-
-[Set up topic experiences](set-up-topic-experiences.md)
-
-[Manage topic discovery in Microsoft 365](manage-topic-discovery.md)
-
-[Manage topic visibility in Microsoft 365](manage-topic-visibility.md)
-
-[Manage topic permissions in Microsoft 365](topic-experiences-user-permissions.md)
-
-[Change the name of the topic center in Microsoft 365](rename-topic-center.md)

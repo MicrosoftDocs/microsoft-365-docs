@@ -1,5 +1,5 @@
 ---
-title: Run a trial of Microsoft Viva Topics
+title: Run a trial of Topics
 ms.author: daisyfeller
 author: daisyfell
 manager: pamgreen
@@ -16,18 +16,18 @@ ms.subservice: viva-topics
 search.appverid:
     - MET150  
 ms.localizationpriority:  medium
-description: Learn how to plan and run a trial pilot program for Microsoft Viva Topics in your organization.
+description: Learn how to plan and run a trial pilot program for Topics in your organization.
 ---
 
-# Run a trial of Microsoft Viva Topics
+# Run a trial of Topics
 
-This article describes how to set up and run a trial pilot program to deploy Viva Topics to your organization. This article also recommends best practices for the trial.
+This article describes how to set up and run a trial pilot program to deploy Topics to your organization. This article also recommends best practices for the trial.
 
 ## Sign up for a trial
 
-Trials are publicly available from one of the following sources. These trials offer 50 users access to Viva Topics for 60 days, with an option to extend the trial another 30 days.
+Trials are publicly available from one of the following sources. These trials offer 50 users access to Topics for 60 days, with an option to extend the trial another 30 days.
 
-- The [Viva Topics product page](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot:overviewtab)
+- The [Topics product page](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot:overviewtab)
 
 - The [Microsoft 365 admin center](https://admin.microsoft.com)
     1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).
@@ -40,6 +40,7 @@ Trials are publicly available from one of the following sources. These trials of
 You must be a Microsoft 365 global administrator or billing administrator to activate a trial.
 
 > [!NOTE]
+>
 - Public trials can only be added once for each Microsoft 365 tenant.
 - Trials aren’t available for development or educational licenses. 
 
@@ -48,12 +49,12 @@ You must be a Microsoft 365 global administrator or billing administrator to act
 |Role|Activity|
 |---|---|
 |Microsoft 365 global admin or billing admin|Activate the trial and assign licenses|
-|Microsoft 365 global admin or SharePoint admin|Configure  Viva Topics and create topic centers|
+|Microsoft 365 global admin or SharePoint admin|Configure  Topics and create topic centers|
 |Business user|Perform knowledge manager, topic contributor, and topic consumer roles|
 
 ### Before you activate a trial
 
-Planning is essential for an effective trial of Viva Topics. The trial period is limited and must include topic discovery and exploring topic quality, management, and end-user experiences.
+Planning is essential for an effective trial of Topics. The trial period is limited and must include topic discovery and exploring topic quality, management, and end-user experiences.
 
 #### Discovery
 
@@ -67,13 +68,13 @@ There are two high-level strategy options for configuration of topic discovery d
 
 The choice of these strategies is a balance of the following two factors:
 
-- Having enough data to generate meaningful topics. The AI in Viva Topics is tuned to work on large datasets, ideally ones that have more than 10,000 documents.
+- Having enough data to generate meaningful topics. The AI in Topics is tuned to work on large datasets, ideally ones that have more than 10,000 documents.
 - Not generating so many topics during the trial period that evaluating them during the available time period is overwhelming.
 
 For most organizations, the second strategy produces the best outcome.
 
 > [!NOTE]
-> Due to the number of documents required by the AI, we recommend that you run Viva Topics trials on a production tenant. There's no impact on the performance of the tenant during this period. Only users who have a trial license can access Viva Topics user experiences.
+> Due to the number of documents required by the AI, we recommend that you run Topics trials on a production tenant. There's no impact on the performance of the tenant during this period. Only users who have a trial license can access Topics user experiences.
 
 #### Roles
 
@@ -94,37 +95,37 @@ Having a documented list will help you to:
 - Review the list of AI-generated topics, which might be larger than you expect.
 - Know the topics you might need to manually create or that are priorities for curation.
 
-There will always be a need for a mixture of AI-defined and human-created topics in a successful deployment or trial of Viva Topics.
+There will always be a need for a mixture of AI-defined and human-created topics in a successful deployment or trial of Topics.
 
 ## Activate a trial
 
 When you initiate a trial, you need to:
 
 - Assign licenses to the relevant users.
-- Perform [additional setup](set-up-topic-experiences.md) of Viva Topics.
+- Perform [additional setup](set-up-topic-experiences.md) of Topics.
 
 When the trial is activated, the topic discovery process begins.
 
 ## During a trial
 
-The trial period should be used to evaluate the following components of Viva Topics:
+The trial period should be used to evaluate the following components of Topics:
 
 - The AI-suggested topics and topic content
 - The end-user experiences, surfacing topic cards on modern SharePoint pages and in Microsoft Search
 
 Consider these factors:
 
-- For Viva Topics to deliver the maximum value, the content in topics needs to be a combination of AI-defined content and human-curated content.
+- For Topics to deliver the maximum value, the content in topics needs to be a combination of AI-defined content and human-curated content.
 - All user experiences are “permission trimmed” (including the knowledge manager's view on the **Manage topics** page). Users will only see a topic if they have permissions to view some of the resources that were used to generate the topic. This means that different users might see different content on the same topic page.
 - Users might see multiple topics that have the same name in the **Manage topics** page. These topics aren't necessarily duplicates but might be because of a single term that's used in multiple contexts in the data, such as a project code name that's used by two distinct projects.
 
 ## After a trial
 
-Based on the outcome of the trial, you can decide whether to proceed to production use of Viva Topics.
+Based on the outcome of the trial, you can decide whether to proceed to production use of Topics.
 
 ### Proceed to production use
 
-To ensure continuity of service, you must purchase the required number of licenses and assign those licenses to users. Trial users who don't have a full license at the end of the trial period won't be able to access any Viva Topics experiences.
+To ensure continuity of service, you must purchase the required number of licenses and assign those licenses to users. Trial users who don't have a full license at the end of the trial period won't be able to access any Topics experiences.
 
 ### Don't proceed to production use
 
@@ -138,4 +139,4 @@ If you don't purchase licenses following the trial:
 
 ## See also
 
-[Get started driving adoption of Microsoft Viva Topics](topics-adoption-getstarted.md)
+[Get started driving adoption of Microsoft Topics](topics-adoption-getstarted.md)

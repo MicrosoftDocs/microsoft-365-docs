@@ -1,6 +1,6 @@
 ---
 ms.date: 04/26/2023
-title: Manage topics in the topic center in Microsoft Viva Topics
+title: Manage topics in the topic center in Topics
 ms.author: daisyfeller
 author: daisyfell
 manager: pamgreen
@@ -16,25 +16,25 @@ ms.subservice: viva-topics
 search.appverid:
 - MET150  
 ms.localizationpriority:  medium
-description: Learn how to manage topics in the topic center in Microsoft Viva Topics.
+description: Learn how to manage topics in the topic center in Topics.
 ---
-# Manage topics in the topic center in Microsoft Viva Topics
+# Manage topics in the topic center in Topics
 
-<br/>
+</br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LxDx]  
 
-<br/>
+</br>
 
-In the Viva Topics topic center, a knowledge manager can view the **Manage topics** page to review topics that have been identified in the source locations as specified by your knowledge admin.  
+In the Topics topic center, a knowledge manager can view the **Manage topics** page to review topics that have been identified in the source locations as specified by your knowledge admin.  
 
-:::image type="content" alt-text="Screenshot that shows the Topic Center." source="../media/topics/knowledge-management/manage-topics-view.png":::
+:::image type="content" alt-text="Screenshot that shows the Topic Center." source="../media/knowledge-management/manage-topics-view.png":::
 
 ## Topic status
 
 Knowledge managers help to guide discovered topics through the various topic lifecycle statuses: **Suggested**, **Confirmed**, **Published**, and **Removed**.
 
-![Topic Lifecycle chart.](../media/topics/knowledge-management/topic-lifecycle.png)
+   ![Topic Lifecycle chart.](../media/knowledge-management/topic-lifecycle.png)
 
 - **Suggested**: A topic has been identified by AI and has enough supporting resources, connections, and properties. (These are marked as a **Suggested Topic** in the UI.)
 
@@ -64,9 +64,9 @@ Knowledge managers help to guide discovered topics through the various topic lif
 
 To manage topics in the topic center, you need to:
 
-- Have a Viva Topics license.
+- Have a license that includes Topics.
 
-- Have the [**Who can manage topics**](./topic-experiences-user-permissions.md) permission. Knowledge admins can give users this permission in the Viva Topics topic permissions settings.
+- Have the [**Who can manage topics**](./topic-experiences-user-permissions.md) permission. Knowledge admins can give users this permission in the Topics topic permissions settings.
 
 You won't be able to view the **Manage topics** page in the topic center unless you've the **Who can manage topics** permission.
 
@@ -76,7 +76,7 @@ In the topic center, a knowledge manager can review topics that have been identi
 
 On the **Manage topics** page, topics that were discovered in your specified SharePoint source locations will be labeled as **Suggested** in the status column. If needed, a knowledge manager can review unconfirmed topics and choose to confirm or remove them.
 
-   ![Screenshot of suggested topics.](../media/topics/knowledge-management/suggested-topics-filtered-view.png) 
+   ![Screenshot of suggested topics.](../media/knowledge-management/suggested-topics-filtered-view.png)
 
 To review a suggested topic:
 
@@ -90,9 +90,9 @@ To review a suggested topic:
 
    - Select the **x** if you want to remove the topic.
 
-   Confirmed topics will be removed from the **Suggested** list and will now display in the **Confirmed** list.
+    Confirmed topics will be removed from the **Suggested** list and will now display in the **Confirmed** list.
 
-   Removed topics will be removed from the **Suggested** list and will now display a **Removed** status.
+    Removed topics will be removed from the **Suggested** list and will now display a **Removed** status.
 
 ### Topic scores
 
@@ -101,7 +101,7 @@ Each topic that appears on the manage topics page has an **Org topic score** and
 >[!NOTE]
 >Scores are AI-determined. In general, the more metadata a topic has, the higher the score will be. In addition, human confirmation raises topic scores.
 
-For example, if a user shows a high topic score for a topic, that user has the most comprehensive access to the resources of that topic and can edit and confirm the topic with full confidence. If an Org topic score is higher than a user’s topic score, the Knowledge Manager can find someone who has a high topic score to update and confirm that topic.
+ For example, if a user shows a high topic score for a topic, that user has the most comprehensive access to the resources of that topic and can edit and confirm the topic with full confidence. If an Org topic score is higher than a user’s topic score, the Knowledge Manager can find someone who has a high topic score to update and confirm that topic.
 
 Knowledge managers might come across topic scores of 0 for some topics. A 0 topic score may occur when there aren't enough resources attached to a particular topic that the user can access. Knowledge managers are encouraged to either augment these low-quality topics with additional information or remove them as needed. Topics that have an Org Topic score of 0 aren't displayed to end users because they aren't deemed to be of sufficient quality. Keep in mind that some topics can have associated information or resources available, and still have a zero topic score due to the quality and quantity of those resources.
 
@@ -125,7 +125,7 @@ You can still choose to reject a confirmed topic. To reject a confirmed topic, g
 
 On the **Manage topics** page, topics that were discovered in your specified SharePoint source locations will show a **Published** status. Published topics have been edited so that specific information will always appear to whoever encounters the page. Manually created topics are listed here as well.
 
-![Screenshot of published topics.](../media/topics/knowledge-management/published-topics-filtered-view.png)
+   ![Screenshot of published topics.](../media/knowledge-management/published-topics-filtered-view.png)
 
 ## Removed topics
 
@@ -137,21 +137,21 @@ Removed topics can later be added back as viewable topics if needed. If you want
 
 2. Select **Restore**.
 
-   ![Screenshot of Removed tab showing the Restore option.](../media/topics/knowledge-management/restore-removed-topic.png)
+   ![Screenshot of Removed tab showing the Restore option.](../media/knowledge-management/restore-removed-topic.png)
 
 ## Topic count dashboard
 
-This chart in the dashboard view lets you see the number of topics in your Viva Topics topic center. The chart shows the topic counts per topic lifecycle status and also shows how topic counts have trended over time. Knowledge managers can visually monitor the rate at which new topics are being discovered by AI and the rate at which topics are getting confirmed or published by the knowledge manager or user actions.
+This chart in the dashboard view lets you see the number of topics in your Topics topic center. The chart shows the topic counts per topic lifecycle status and also shows how topic counts have trended over time. Knowledge managers can visually monitor the rate at which new topics are being discovered by AI and the rate at which topics are getting confirmed or published by the knowledge manager or user actions.
 
 Knowledge managers might see a different count of topics represented in the list of topics on the **Manage topics** page than they see in the dashboard. This is because a knowledge manager might not have access to all topics. The count presented in the dashboard view is taken before applying permission-trimming.
 
-:::image type="content" alt-text="Screenshot of topic count dashboard." source="../media/topics/knowledge-management/trend-of-topics-graph.png":::
+:::image type="content" alt-text="Screenshot of topic count dashboard." source="../media/knowledge-management/trend-of-topics-graph.png":::
 
 ## Topic Origin filter
 
 Topic Origin indicates where the topic was sourced from, although this can change if the topic is automatically or manually merged with another topic. Engage and Taxonomy topics are called out specifically because they may lack much of the information that is associated with a typical topic.
 
-1. Viva Topics: These are topics that have been created or augmented by the system at some point in their lifecycle. 
-2. User: These are topics that have been curated by a user at some point in their lifecycle. 
-3. Engage: These include topics that were created in Engage since the Viva Topics integration with Engage was turned on. These also include former legacy Engage topics that have been converted into full Viva Topics. The converted topics will likely lack a definition, so if you want to see the list of topics that have been converted from the legacy Engage topic experience, you should select both the Viva Engage filter and the Does Not Have Description filter. 
+1. Topics: These are topics that have been created or augmented by the system at some point in their lifecycle.
+2. User: These are topics that have been curated by a user at some point in their lifecycle.
+3. Engage: These include topics that were created in Engage since the Topics integration with Engage was turned on. These also include former legacy Engage topics that have been converted into full Topics. The converted topics will likely lack a definition, so if you want to see the list of topics that have been converted from the legacy Engage topic experience, you should select both the Viva Engage filter and the Does Not Have Description filter.
 4. Taxonomy: These are topics that were created from term sets in Managed Metadata Services. They will likely lack much of the information that is associated with a typical topic.

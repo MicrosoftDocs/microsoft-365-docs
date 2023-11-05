@@ -1,6 +1,6 @@
 ---
 ms.date: 07/13/2023
-title: Roles in Microsoft Viva Topics
+title: Roles in Topics
 ms.author: daisyfeller
 author: daisyfell
 manager: pamgreen
@@ -15,17 +15,17 @@ ms.subservice: viva-topics
 search.appverid:
     - MET150  
 ms.localizationpriority:  medium
-description: Learn about the different user roles in Viva Topics.
+description: Learn about the different user roles in Topics.
 ---
 
-# Roles in Microsoft Viva Topics
+# Roles in Microsoft Topics
 
-When you use Viva Topics in your Microsoft 365 environment, your users can have the following roles:
+When you use Topics in your Microsoft 365 environment, your users can have the following roles:
 
 - [Topic viewer](#topic-viewer)
 - [Topic contributor](#topic-contributor)
 - [Knowledge manager](#knowledge-manager)
-- [Viva Topics admin](#viva-topics-admin)
+- [Topics admin](#topics-admin)
 
 ## Topic viewer
 
@@ -33,8 +33,8 @@ Topic viewers are users in your organization who can view topics highlighted in 
 
 For topic highlights and their topic pages to be visible to a topic viewer, the user must:
 
-- [Be assigned a Viva Topics license](./set-up-topic-experiences.md#assign-licenses) by their Microsoft 365 admin.
-- Be allowed to have visibility to topics. This task is done by the Viva Topics admin in the Viva Topics settings page in the Microsoft 365 admin center.
+- [Be assigned a Topics license](./set-up-topic-experiences.md#assign-licenses) by their Microsoft 365 admin.
+- Be allowed to have visibility to topics. This task is done by the Topics admin in the Topics settings page in the Microsoft 365 admin center.
 
 ## Topic contributor
 
@@ -46,8 +46,8 @@ A topic contributor can also create and publish a new topic through their topic 
 
 To create and edit a topic, the user must:
 
-- [Be assigned a Viva Topics license](./set-up-topic-experiences.md#assign-licenses) by their Microsoft 365 admin.
-- [Be assigned permissions to create and edit topics](./topic-experiences-user-permissions.md). This task is done by the Viva Topics admin in the Viva Topics settings page in the Microsoft 365 admin center.
+- [Be assigned a license that includes Topics](./set-up-topic-experiences.md#assign-licenses) by their Microsoft 365 admin.
+- [Be assigned permissions to create and edit topics](./topic-experiences-user-permissions.md). This task is done by the Topics admin in the Topics settings page in the Microsoft 365 admin center.
 
 ## Knowledge manager
 
@@ -63,18 +63,18 @@ Additionally, a knowledge manager can edit existing topics or create new ones.
 
 To manage topics, the user must:
 
-- [Be assigned a Viva Topics license](./set-up-topic-experiences.md#assign-licenses) by their Microsoft 365 admin.
-- [Be assigned permissions to manage topics](./topic-experiences-user-permissions.md). This task is done by the Viva Topics admin in the Viva Topics settings page in the Microsoft 365 admin center.
+- [Be assigned a license that includes Topics](./set-up-topic-experiences.md#assign-licenses) by their Microsoft 365 admin.
+- [Be assigned permissions to manage topics](./topic-experiences-user-permissions.md). This task is done by the Topics admin in the Topics settings page in the Microsoft 365 admin center.
 
 Users who have a good overall knowledge of your business can be good candidates for the knowledge manager role. Such people might not only have the knowledge to know if topics are valid or not, but might also know people within the company who are related to those topics.
 
-Knowledge managers need to be able to coordinate with all Viva Topics stakeholders in their organization to know how to configure it. For example, if a new project has sensitive information, the knowledge manager needs to be informed so that they can make sure that the SharePoint site isn't crawled for topics, or specific topic names need to be excluded.
+Knowledge managers need to be able to coordinate with all Topics stakeholders in their organization to know how to configure it. For example, if a new project has sensitive information, the knowledge manager needs to be informed so that they can make sure that the SharePoint site isn't crawled for topics, or specific topic names need to be excluded.
 
-## Viva Topics admin
+## Topics admin
 
-Viva Topics admins are admins who set up and configure Viva Topics in your Microsoft 365 environment. They also manage the Viva Topics settings after set up has completed. To administer Viva Topics, you must be a Microsoft 365 global administrator, or a SharePoint administrator and Groups administrator, since setup and management are done in the Microsoft 365 admin center.
+Topics admins are admins who set up and configure Topics in your Microsoft 365 environment. They also manage the Topics settings after set up has completed. To administer Topics, you must be a Microsoft 365 global administrator, or a SharePoint administrator and Groups administrator, since setup and management are done in the Microsoft 365 admin center.
 
-During setup, Viva Topics admins can configure Viva Topics to:
+During setup, Topics admins can configure Topics to:
 
 - Select which SharePoint sites are crawled for topics.
 - Select which licensed users who can view topics (topic viewers).

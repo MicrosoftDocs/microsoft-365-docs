@@ -1,6 +1,6 @@
 ---
 ms.date: 09/11/2023
-title: Viva Topics lightweight management in Viva Engage
+title: Topics lightweight management in Viva Engage
 ms.author: daisyfeller
 author: daisyfell
 manager: pamgreen
@@ -17,18 +17,18 @@ search.appverid:
 ms.localizationpriority:  medium
 description: Learn how to use the lightweight management experience in Viva Engage.
 ---
-# Viva Topics lightweight management in Viva Engage
+# Topics lightweight management in Viva Engage
 
-Viva Topics lightweight management allows you to experience how Viva Topics can enhance knowledge management in your organization without needing a Viva Suite or Viva Topics license.
+Topics lightweight management allows you to experience how Topics can enhance knowledge management in your organization without needing a license that includes Topics.
 
-Viva Topics provides a central knowledge base for manually created topics and definitions inside apps like Viva Engage. These topics don't use Viva Topics' AI, topic cards and pages but can be selected to classify conversations and posts in Viva Engage. Knowledge admins can edit, create, and delete these topics without Viva licensing as a way to make knowledge management more accessible to more users.
+Topics provides a central knowledge base for manually created topics and definitions inside apps like Viva Engage. These topics don't use Topics' AI, topic cards and pages but can be selected to classify conversations and posts in Viva Engage. Knowledge admins can edit, create, and delete these topics without Viva licensing as a way to make knowledge management more accessible to more users.
 
 ## Permissions
 
 [Learn about how permissions work for Topics in Viva Engage.](/viva/topics/topic-experiences-viva-engage#topics-permissions-and-licenses)
 
 >[!NOTE]
->You don't need a Viva Topics license for the lightweight management experience.
+>You don't need a Topics license for the lightweight management experience.
 
 ## Manage topics
 
@@ -59,8 +59,8 @@ You can access your lightweight management experiences by replacing "your-domain
 
 ## Get the full experience
 
-Enable advanced management experiences and AI technology to enhance the central knowledge base in your organization by [purchasing a Viva Topics license](https://www.microsoft.com/microsoft-viva/topics).
+Enable advanced management experiences and AI technology to enhance the central knowledge base in your organization by [purchasing a license that includes Topics](https://www.microsoft.com/microsoft-viva/topics).
 
-After you purchase a Viva Topics license, you won't be able to use the lightweight management experience. You'll be prompted to complete Viva Topics setup in your Microsoft 365 admin center when you visit the lightweight management page.
+After you purchase a Topics license, you won't be able to use the lightweight management experience. You'll be prompted to complete Topics setup in your Microsoft 365 admin center when you visit the lightweight management page.
 
-Once you complete your [Viva Topics setup](set-up-topic-experiences.md), you'll be automatically redirected to the [premium management page in the Topic center](manage-topics.md) from the lightweight management page.
+Once you complete your [Topics setup](set-up-topic-experiences.md), you'll be automatically redirected to the [premium management page in the Topic center](manage-topics.md) from the lightweight management page.

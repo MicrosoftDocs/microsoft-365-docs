@@ -1,6 +1,6 @@
 ---
 ms.date: 11/15/2021
-title: Security and privacy in Microsoft Viva Topics
+title: Security and privacy in Topics
 ms.author: daisyfeller
 author: daisyfell
 manager: pamgreen
@@ -16,10 +16,10 @@ ms.subservice: viva-topics
 search.appverid:
     - MET150  
 ms.localizationpriority:  medium
-description: Learn how to plan for security and privacy in Microsoft Viva Topics.
+description: Learn how to plan for security and privacy in Topics.
 ---
 
-# Security and privacy in Microsoft Viva Topics
+# Security and privacy in Topics
 
 Topics uses existing content security features in Microsoft 365, along with administrative controls, to control what AI-generated content is shown to users in your organization. It is the combination of Microsoft 365 security settings (permissions to sites, files, and folders) and Topics admin settings that determine what a given user can see in topics.
 
@@ -33,8 +33,8 @@ You should be familiar with [what Topics is](topic-experiences-overview.md), the
 
 To see topics, a user must:
 
-- Have a Viva Topics license
-- Be a [topic viewer](manage-topic-visibility.md#change-who-can-see-topics-in-your-organization), [contributor, or knowledge manager](topic-experiences-user-permissions.md)
+- Have a license that includes Topics
+- Be a [topic viewer](topic-experiences-knowledge-rules.md#change-who-can-see-topics-in-your-organization), [contributor, or knowledge manager](topic-experiences-user-permissions.md)
 
 These two things give users view access to the topic center and allow them to see highlights and topic cards.
 
@@ -62,7 +62,7 @@ The following table describes what users - topic viewers, contributors, and know
 
 ## Users' personal and private data
 
-Viva Topics only discovers topics in the SharePoint sites that you specify. Users’ personal storage such as personal mail or OneDrive is not included.
+Topics only discovers topics in the SharePoint sites that you specify. Users’ personal storage such as personal mail or OneDrive is not included.
 
 ## Best practices
 
@@ -72,13 +72,13 @@ We recommend that you use these tools to ensure that your content permissions ar
 
 If there are topics that you want to exclude entirely from topic experiences, you can also:
 
-- [Exclude sensitive SharePoint sites from topic discovery](manage-topic-discovery.md#select-sharepoint-topic-sources). Content in these sites will not appear in topic experiences.
+- [Exclude sensitive SharePoint sites from topic discovery](topic-experiences-discovery.md#select-sharepoint-topic-sources). Content in these sites will not appear in topic experiences.
 
-- [Exclude topics by name](manage-topic-discovery.md#exclude-topics-by-name). Topics explicitly excluded will not appear in topic experiences.
+- [Exclude topics by name](topic-experiences-discovery.md#exclude-topics-by-name). Topics explicitly excluded will not appear in topic experiences.
 
 - Have knowledge managers remove topics in the topic center.
 
-> [!Note] 
+> [!NOTE]
 > A topic, when removed, can take up to 24 hours to stop appearing to users in your organization.
 
 Additionally, we recommend these best practices:
@@ -90,11 +90,3 @@ Additionally, we recommend these best practices:
 - Be aware of the audience and the sensitivity of information when creating topic descriptions. These descriptions may be visible to users who don't have permissions to the source content for the topic.
 
 While you can change the permissions on individual topic pages to narrow access to a specific group of users, we don't recommend this approach because of the high degree of administrative effort required.
-
-## See also
-
-[Configure Teams with three tiers of protection](/microsoft-365/solutions/configure-teams-three-tiers-protection)
-
-[Plan topic experiences](plan-topic-experiences.md)
-
-[Set up topic experiences](set-up-topic-experiences.md)
