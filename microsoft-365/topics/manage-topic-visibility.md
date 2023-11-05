@@ -1,6 +1,6 @@
 ---
 ms.date: 04/20/2023
-title: Manage topic visibility in Microsoft Viva Topics
+title: Manage topic visibility in Topics
 ms.author: daisyfeller
 author: daisyfell
 manager: pamgreen
@@ -16,23 +16,23 @@ ms.subservice: viva-topics
 search.appverid:
     - MET150  
 ms.localizationpriority:  medium
-description: Learn how to administer topic visibility in Microsoft Viva Topics.
+description: Learn how to administer topic visibility in Topics.
 ---
 
-# Manage topic visibility in Microsoft Viva Topics
+# Manage topic visibility in Topics
 
 You can manage who can see topic highlights, topic cards, and the topic center in the [Microsoft 365 admin center](https://admin.microsoft.com). You must be a global administrator or SharePoint administrator and Groups admin to do these tasks.
 
 ## To access topics management settings
 
 1. In the Microsoft 365 admin center, select **Settings**, then **Org settings**.
-2. On the **Services** tab, choose **Viva Topics**.
+2. On the **Services** tab, choose **Topics**.
 
-    ![Screenshot of the Services tab with Viva Topics selected.](../media/topics/knowledge-management/org-settings-topics.png)
+    ![Screenshot of the Services tab with Topics selected.](../media/knowledge-management/org-settings-topics.png)
 
 3. Select the **Topic visibility** tab. See the following sections for information about each setting.
 
-    ![Screenshot of the Topic visibility tab.](../media/topics/knowledge-network-settings-topic-visibility.png)
+    ![Screenshot of the Topic visibility tab.](../media/knowledge-network-settings-topic-visibility.png)
 
 ##  Change who can see topics in your organization
 
@@ -44,11 +44,11 @@ You can change the users who can see topics in your organization.
     - **Only selected people or security groups**
     - **No one**
 
-    ![Screenshot of the Who can see topics page.](../media/topics/k-manage-who-can-see-topics.png)
+    ![Screenshot of the Who can see topics page.](../media/k-manage-who-can-see-topics.png)
 
 3. Select **Save**.  
- 
-> [!Note] 
+
+> [!NOTE]
 > While this setting allows you to select any user in your organization, only users who have Topic Experiences licenses assigned to them will be able to view topics.
 
 ## Prevent topic viewers from seeing suggested topics
@@ -62,12 +62,4 @@ To hide suggested topics from topic viewers
 1. Select **Save**.
 1. Close the advanced settings panel.
 
-    ![Screenshot of exclude suggested topics user interface.](../media/topics/km-show-suggested-topics.png)
-
-## See also
-
-[Manage topic discovery in Microsoft Viva Topics](manage-topic-discovery.md)
-
-[Manage topic permissions in Microsoft Viva Topics](topic-experiences-user-permissions.md)
-
-[Change the name of the topic center in Microsoft Viva Topics](rename-topic-center.md)
+    ![Screenshot of exclude suggested topics user interface.](../media/km-show-suggested-topics.png)
