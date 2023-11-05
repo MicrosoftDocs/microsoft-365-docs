@@ -74,7 +74,7 @@
       "breadcrumb_path": "/microsoft-365/breadcrumb/toc.json",
       "recommendations": true,
       "uhfHeaderId": "MSDocsHeader-M365-IT",
-      "searchScope": ["Microsoft Bookings", "Microsoft 365 Lighthouse", "Microsoft 365 for frontline workers", "Microsoft Syntex", "Microsoft 365"],
+      "searchScope": ["Microsoft Bookings", "Microsoft 365 Lighthouse", "Microsoft 365 for frontline workers", "Microsoft Syntex", "Microsoft 365", "Microsoft Topics"],
       "contributors_to_exclude": [ 
         "rjagiewich", 
         "traya1", 
@@ -109,7 +109,8 @@
         "lighthouse/**/*.md": "Microsoft 365 Lighthouse",
         "syntex/**/*.md": "Microsoft Syntex",
         "frontline/**/*.md": "Microsoft 365 for frontline workers",
-        "whiteboard/**/*.md": "Microsoft Whiteboard"
+        "whiteboard/**/*.md": "Microsoft Whiteboard",
+        "topics/**/*.md": "Microsoft Topics"
       },
       "feedback_product_url": {
         "compliance/**/*.md":"https://feedbackportal.microsoft.com/feedback/",
@@ -126,7 +127,8 @@
         "enterprise/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
         "solutions/**/*.md":"https://admin.microsoft.com/adminportal/home?showfeedback=DocsMacCampaign",
         "lighthouse/":"https://feedbackportal.microsoft.com/feedback/forum/d6a21c42-fe1b-ec11-b6e7-0022481f8472",
-        "frontline/":"https://feedbackportal.microsoft.com/feedback/forum/ad198462-1c1c-ec11-b6e7-0022481f8472"
+        "frontline/":"https://feedbackportal.microsoft.com/feedback/forum/ad198462-1c1c-ec11-b6e7-0022481f8472",
+        "topics/**/*.md":"https://feedbackportal.microsoft.com/feedback/forum/5dc082d8-1e1c-ec11-b6e7-0022481f8472"
       },
       "searchScope": {
         "admin/**/*.md": ["Microsoft 365"],
@@ -152,7 +154,9 @@
         "solutions/**/*.md": ["Microsoft 365"],
         "solutions/**/*.yml": ["Microsoft 365"],
         "syntex/**/*.md": ["Microsoft Syntex"],
-        "syntex/**/*.yml": ["Microsoft Syntex"]
+        "syntex/**/*.yml": ["Microsoft Syntex"],
+        "topics/**/*.md": ["Microsoft Topics"],
+        "topics/**/*.yml": ["Microsoft Topics"]
       }
     },
     "template": [],
