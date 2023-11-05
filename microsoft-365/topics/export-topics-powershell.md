@@ -29,7 +29,7 @@ Using PowerShell, you can export topics created in Viva Engage (also known as Li
 
 To export the topics, you run a PowerShell script. Requirements to run the script are:
 
-- PowerShell 7 or later. To install the latest version of PowerShell, go to [Installing PowerShell on Windows](/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.3#installing-the-msi-package).
+- PowerShell 7 or later. To install the latest version of PowerShell, go to [Installing PowerShell on Windows](/powershell/scripting/install/installing-powershell-on-windows#installing-the-msi-package).
 - The user running the script needs to be a Topics admin or Knowledge Manager.
 
 Key support files are included in this document:

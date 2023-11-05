@@ -175,7 +175,7 @@ If the **Everyone in my organization** option isn't available for any of your se
     Set-SPOTenant -ShowEveryoneExceptExternalUsersClaim $True
 ```
 
-[Learn more about ShowEveryoneExceptExternalUsersClaim](/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps#-showeveryoneexceptexternalusersclaim)
+[Learn more about ShowEveryoneExceptExternalUsersClaim](/powershell/module/sharepoint-online/set-spotenant#-showeveryoneexceptexternalusersclaim)
 
 If you want to keep this option disabled, it's recommended to choose the broadest possible group of users.
 
