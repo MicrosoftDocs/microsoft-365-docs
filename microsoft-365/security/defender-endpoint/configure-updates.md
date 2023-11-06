@@ -4,9 +4,6 @@ description: Learn how to use supported tools to create a custom gradual rollout
 keywords: update tools, gpo, intune, mdm, microsoft endpoint manager, policy, powershell
 ms.service: microsoft-365-security
 ms.subservice: mde
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 f1.keywords:
 - NOCSH
 ms.author: macapara
@@ -19,7 +16,7 @@ ms.collection:
 - tier2
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 05/12/2021
+ms.date: 11/06/2023
 ---
 
 # Create a custom gradual rollout process for Microsoft Defender updates
@@ -90,7 +87,7 @@ Set-MpPreference
 -PlatformUpdatesChannel Beta|Preview|Staged|Broad|Delayed|NotConfigured
 -EngineUpdatesChannel Beta|Preview|Staged|Broad|Delayed|NotConfigured
 -DisableGradualRelease 1|0
--SignaturesUpdatesChannel Staged|Broad|NotConfigured
+-DefinitionUpdatesChannel Staged|Broad|NotConfigured
 ```
 
 Example:
