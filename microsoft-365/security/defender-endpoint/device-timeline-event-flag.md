@@ -67,7 +67,7 @@ In Microsoft Defender for Endpoint, **Techniques** are an additional data type i
 
 This feature simplifies the investigation experience by helping analysts understand the activities that were observed on a device. Analysts can then decide to investigate further.
 
-For public preview, Techniques are available by default and shown together with events when a device's timeline is viewed.
+During preview, Techniques are available by default and shown together with events when a device's timeline is viewed.
 
 :::image type="content" source="images/new-timeline-mitre-techniques.png" alt-text="Screenshot of all MITRE techniques." lightbox="images/new-timeline-mitre-techniques.png":::
 
