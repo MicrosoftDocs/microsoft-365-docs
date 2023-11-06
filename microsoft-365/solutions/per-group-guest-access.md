@@ -16,6 +16,7 @@ ms.collection:
 ms.custom:
   - M365solutions
   - has-azure-ad-ps-ref
+  - azure-ad-ref-level-one-done
 f1.keywords: NOCSH
 recommendations: false
 description: "Learn how to prevent guests from being added to a specific group"
@@ -47,12 +48,12 @@ Run the following script, changing *\<GroupName\>* to the name of the group wher
 ```PowerShell
 $GroupName = "<GroupName>"
 
-Connect-AzureAD
+Connect-MgGraph
 
 $template = Get-AzureADDirectorySettingTemplate | ? {$_.displayname -eq "group.unified.guest"}
 $settingsCopy = $template.CreateDirectorySetting()
 $settingsCopy["AllowToAddGuests"]=$False
-$groupID= (Get-AzureADGroup -SearchString $GroupName).ObjectId
+$groupID= (Get-MgGroup -SearchString $GroupName).ObjectId
 New-AzureADObjectSetting -TargetType Groups -TargetObjectId $groupID -DirectorySetting $settingsCopy
 ```
 
@@ -63,7 +64,7 @@ Get-AzureADObjectSetting -TargetObjectId $groupID -TargetType Groups | fl Values
 ```
 
 The verification looks like this:
-    
+
 ![Screenshot of PowerShell window showing that guest group access has been set to false.](../media/09ebfb4f-859f-44c3-a29e-63a59fd6ef87.png)
 
 If you wish to toggle the setting back to allow guest access to a particular group, run the following script, changing ```<GroupName>``` to the name of the group where you want to allow guest access.
@@ -71,12 +72,12 @@ If you wish to toggle the setting back to allow guest access to a particular gro
 ```PowerShell
 $GroupName = "<GroupName>"
 
-Connect-AzureAD
+Connect-MgGraph
 
 $template = Get-AzureADDirectorySettingTemplate | ? {$_.displayname -eq "group.unified.guest"}
 $settingsCopy = $template.CreateDirectorySetting()
 $settingsCopy["AllowToAddGuests"]=$True
-$groupID= (Get-AzureADGroup -SearchString $GroupName).ObjectId
+$groupID= (Get-MgGroup -SearchString $GroupName).ObjectId
 $id = (get-AzureADObjectSetting -TargetType groups -TargetObjectId $groupID).id
 Set-AzureADObjectSetting -TargetType Groups -TargetObjectId $groupID -DirectorySetting $settingsCopy -id $id
 ```
@@ -94,13 +95,13 @@ By default, guests aren't visible in the Exchange Global Address List. Use the s
 Find the guest's ObjectID by running:
 
 ```PowerShell
-get-AzureADUser -all $true | ?{$_.CreationType -eq "Invitation"}
+Get-MgUser -all $true | ?{$_.CreationType -eq "Invitation"}
 ```
 
 Then run the following using the appropriate values for ObjectID, GivenName, Surname, DisplayName, and TelephoneNumber.
 
 ```PowerShell
-Set-AzureADUser -ObjectId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressList $true -GivenName 'Megan' -Surname 'Bowen' -DisplayName 'Megan Bowen' -TelephoneNumber '555-555-5555'
+Update-MgUser -ObjectId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressList $true -GivenName 'Megan' -Surname 'Bowen' -DisplayName 'Megan Bowen' -TelephoneNumber '555-555-5555'
 ```
 
 ## Related topics
@@ -113,4 +114,4 @@ Set-AzureADUser -ObjectId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressLis
   
 [Microsoft Entra access reviews](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review)
 
-[Set-AzureADUser](/powershell/module/azuread/set-azureaduser)
+[Update-MgUser](powershell/module/microsoft.graph.users/update-mguser)
