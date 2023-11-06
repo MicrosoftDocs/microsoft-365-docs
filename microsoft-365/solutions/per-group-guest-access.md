@@ -114,4 +114,4 @@ Update-MgUser -ObjectId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressList 
   
 [Microsoft Entra access reviews](/azure/active-directory/active-directory-azure-ad-controls-perform-access-review)
 
-[Update-MgUser](powershell/module/microsoft.graph.users/update-mguser)
+[Update-MgUser](/powershell/module/microsoft.graph.users/update-mguser)
