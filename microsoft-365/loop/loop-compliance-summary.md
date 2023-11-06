@@ -37,23 +37,6 @@ Where the loop content was originally created determines its storage location:
 - Created outside the Loop app in places that have dedicated shared storage (e.g. Teams channels) ➡️️ SharePoint
 - Created outside the Loop app in all other places that don't have tightly associated collaborative storage (e.g. Teams chat, Outlook email, Word for the web, Whiteboard) ➡️️ OneDrive
 
-Breaking that up into diagrams that correspond to the table columns below...
-
-### OneDrive and SharePoint, Summary table middle column
-The middle column applies to Loop content:
-:::image type="content" source="media/loop-files-onedrive.png" alt-text="Diagram showing that files created outside the Loop app are stored in OneDrive or SharePoint.":::
-
-Where the loop content was originally created determines its storage location:
-- Created in all other places that don't have tightly associated collaborative storage (e.g. Teams chat, Outlook email, Word for the web, Whiteboard) ➡️️ in the creator's OneDrive
-- Created in places that have dedicated shared storage (e.g. Teams channels) ➡️️ SharePoint
-
-### Microsoft Syntex repository service, Summary table right column
-The right column applies to Loop content:
-:::image type="content" source="media/loop-files-syntex.png" alt-text="Diagram showing that files created inside the Loop app are stored in Microsoft Syntex.":::
-
-Where the loop content was originally created determines its storage location:
-- Created inside the Loop app: Workspaces, Ideas ➡️ in Microsoft Syntex repository services, one container per Loop workspace
-
 
 
 ## Summary table of admin management, governance, lifecycle and compliance capabilities based on where Loop content is stored
@@ -108,7 +91,7 @@ This section repeats capabilities which are not yet available from the table abo
 
 ## Admin Management of Loop workspaces
 
-This section provides expanded information on the subset of admin management capabilities dedicated to Loop workspaces stored in Microsoft Syntex. The Loop ApplicationID which can be used to identify Loop workspace containers is: `a187e399-0c36-4b98-8f04-1edc167a0996`
+This section provides expanded information on the subset of admin management capabilities dedicated to Loop workspaces stored in Microsoft Syntex. The Loop ApplicationID which can be used to identify Loop workspace containers is: `a187e399-0c36-4b98-8f04-1edc167a0996`  
 
 ### Admin Management Capabilities Available
 
