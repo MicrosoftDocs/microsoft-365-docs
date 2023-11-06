@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 description: "Learn how Microsoft 365 Copilot uses data and how it stores and protects that data."
 hideEdit: true
-ms.date: 11/01/2023
+ms.date: 11/06/2023
 ---
 
 # Data, Privacy, and Security for Microsoft 365 Copilot
