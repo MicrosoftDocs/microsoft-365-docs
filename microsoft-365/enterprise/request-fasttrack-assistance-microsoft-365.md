@@ -16,11 +16,9 @@ The FastTrack request for assistance (RFA) form is now available in the [Microso
 1. After signing into the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/?linkid=2226341), select **Submit a new request**:  
 
    :::image type="content" source="media/request-fasttrack-assistance-microsoft-365/fasttrack-submit-request.png" alt-text="Screenshot of the Microsoft 365 admin center page for submitting FastTrack requests for assistance.":::
-  
 1. Read the overview to see what information is needed for an RFA, and then select **Next**.
 
   ![Screenshot of the FastTrack request overview page.](media/request-fasttrack-assistance-microsoft-365/fasttrack-request-overview.png)
-
 1. Select the products for FastTrack assistance, your planned deployment date, and whether you would like assistance with any additional options (if applicable). 
 
    ![Screenshot of the FastTrack choose products page.](media/request-fasttrack-assistance-microsoft-365/fasttrack-choose-products.png)
