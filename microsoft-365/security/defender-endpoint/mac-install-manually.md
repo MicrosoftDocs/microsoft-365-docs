@@ -53,20 +53,44 @@ Download the installation and onboarding packages from Microsoft 365 Defender po
 2. In Section 1 of the page, set operating system to **macOS** and Deployment method to **Local script**.
 3. In Section 2 of the page, select **Download installation package**. Save it as wdav.pkg to a local directory.
 4. In Section 2 of the page, select **Download onboarding package**. Save it as WindowsDefenderATPOnboardingPackage.zip to the same directory.
-
-   :::image type="content" source="images/portal-onboarding-macos.png" alt-text="The options to download the installation and onboarding packages" lightbox="images/portal-onboarding-macos.png":::
+   :::image type="content" source="images/onboarding-package-step4.png" alt-text="The options to download the installation and onboarding packages.":::
 
 5. From a command prompt, verify that you have the two files.
+    Terminal
+    - Type *cd Downloads* and press **Enter**.
+    - Type *ls* and press **Enter**.
+     :::image type="content" source="images/Terminal-image-step5.png" alt-text="Screenshot that dispalys the two download files.":::
+6. Copy the *wdav.pkg* and *MicrosoftDefenderATPOnboardingMacOs.sh* to the device where you want to deploy the Microsoft Defender for Endpoint on MacOS.
 
 ## Application installation (macOS 11 and newer versions)
 
 To complete this process, you must have admin privileges on the device.
 
-1. Navigate to the downloaded wdav.pkg in Finder and open it.
+1. - Navigate to the downloaded *wdav.pkg* in **Finder** and open it.
+    
+     Or
+    - You can download the *wdav.pkg*- from **Terminal** *sudo installer -store -pkg /Users/admin/Downloads/wdav.pkg -target /*
 
    :::image type="content" source="images/monterey-install-1.png" alt-text="The installation process for the application" lightbox="images/monterey-install-1.png":::
 
-2. Select **Continue**, agree with the License terms, and enter the password when prompted.
+2. Select **Continue**.
+
+3. Read through the **Software License Agreement** and select **Continue** to agree with the terms.
+    :::image type="content" source="images/software-license-agreement.png" alt-text="Screenshot that shows the Software License Agreement.":::
+
+4. Read through the *End-User License Agreement (EULA)* and select **Agree**.
+    :::image type="content" source="images/agree-license.png" alt-text="Screenshot that shows the acceptance of the agreement.":::
+
+5. From **Destination Select**, select the disk where you want to install the Microsoft Defender Software, for example, *Macintosh HD* and select **Continue**.
+    :::image type="content" source="images/destination-select.png" alt-text="Screenshot that shows the selection of destination for installation.":::
+
+> [!Note]
+> The amount of disk space required for installation is around 777 MB.
+
+6. To change the installation destination, select **Change Install Location...**.
+    :::image type="content" source="images/installation-type.png" alt-text="Screenshot that shows the final installation step.":::
+
+7. Click **Install**.
 
 3. At the end of the installation process, you'll be prompted to approve the system extensions used by the product. Select **Open Security Preferences**.
 
