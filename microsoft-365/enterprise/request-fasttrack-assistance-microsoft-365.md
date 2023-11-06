@@ -52,17 +52,17 @@ How to find RFA details and status updates
 
 1.     After you submit your RFA, you can find your tenant’s RFA history on the __FastTrack assistance__ page.
 
- 
-
- 
+![User's image](image8.png)
 
  
 
 2.     Under __Request for assistance status and history__, you can find a list of all historical submissions for your tenant with the request name, requested products, status, submission date, and who submitted the request.
 
- 
+![User's image](image9.png)
 
  
 
 3.     Select an RFA to open a flyout window with the request details and status history.
+
+![User's image](image10.png)
 
