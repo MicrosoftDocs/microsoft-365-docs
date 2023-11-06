@@ -63,13 +63,16 @@ To enhance your endpoint security experience, Microsoft is releasing the Microso
 
 The Microsoft Defender Core service is releasing with [Microsoft Defender Antivirus platform version 4.18.23110.2009](microsoft-defender-antivirus-updates.md#october-2023-platform-platform-418231002009--engine-11231002009).
 
-- Rollout begins in November 2023 to prerelease customers.
-- Consumers need not take any actions to prepare. 
+- Rollout begins in November 2023 to prerelease customers, with plans to release to all enterprise customers in the coming months.
+
 - Enterprise customers should allow the following URLs:
    - `*.events.data.microsoft.com`
    - `*.endpoint.security.microsoft.com`
    - `*.ecs.office.com` 
-- If you're using [application control](/windows/security/application-security/application-control/windows-defender-application-control/wdac), or you're running non-Microsoft antivirus or endpoint detection and response software, make sure to add the processes mentioned earlier to your allow list. 
+
+- If you're using [Application Control for Windows](/windows/security/application-security/application-control/windows-defender-application-control/wdac), or you're running non-Microsoft antivirus or endpoint detection and response software, make sure to add the processes mentioned earlier to your allow list. 
+
+- Consumers need not take any actions to prepare. 
 
 ## Comparing active mode, passive mode, and disabled mode
 
