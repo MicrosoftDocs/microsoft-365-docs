@@ -48,7 +48,7 @@ The following table summarizes Microsoft Defender Antivirus processes and servic
 | **Microsoft Defender Antivirus service** <br/>(`WinDefend`) | - **Processes** tab: `Antimalware Service Executable` <br/>- **Details** tab: `MsMpEng.exe` <br/>- **Services** tab: `Microsoft Defender Antivirus` | 
 | **Microsoft Defender Antivirus Network Realtime Inspection service** <br/>(`WdNisSvc`) |  - **Processes** tab: `Microsoft Network Realtime Inspection Service` <br/>- **Details** tab: `NisSrv.exe` <br/>- **Services** tab: `Microsoft Defender Antivirus Network Inspection Service` | 
 | **Microsoft Defender Antivirus command-line utility** | - **Processes** tab: N/A <br/>- **Details** tab: `MpCmdRun.exe` <br/>- **Services** tab: N/A  | 
-| **Microsoft Security Client Policy Configuration Tool** | - **Processes** tab: N/A <br/>- **Details** tab: `MpCmdRun.exe` <br/>- **Services** tab: N/A | 
+| **Microsoft Security Client Policy Configuration Tool** | - **Processes** tab: N/A <br/>- **Details** tab: `ConfigSecurityPolicy.exe` <br/>- **Services** tab: N/A | 
 
 For [Microsoft Endpoint Data Loss Prevention](/purview/endpoint-dlp-getting-started) (Endpoint DLP), the following table summarizes processes and services. You can view them in Task Manager in Windows.
 
