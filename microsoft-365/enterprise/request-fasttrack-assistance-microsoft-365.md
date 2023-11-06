@@ -10,37 +10,43 @@ __In this article__
 
 How to submit an RFA in the admin center
 
-1.     After signing into the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/?linkid=2226341), select __Submit a new request__.  
-
-![User's image](media/request-fasttrack-assistance-microsoft-365/image.png)
+1.     After signing into the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/?linkid=2226341), select __Submit a new request__.  ![User's image](media/request-fasttrack-assistance-microsoft-365/image.png)
 
 2.     Read the overview to see what information is needed for an RFA, and then select __Next__.
 
+![User's image](media/request-fasttrack-assistance-microsoft-365/image1.png)
+
+  
+  
 3.     Select the products for FastTrack assistance, your planned deployment date, and whether you would like assistance with any additional options (if applicable). 
+
+![User's image](image2.png)
 
  
 
 4.     On the __Customer details__ page, enter a unique project name, your organization’s service location, your preferred language, and any comments about the project.
 
+![User's image](image3.png)
+
  
 
 5.     On the __Contacts__ page, enter your phone number and confirm your title.
 
+![User's image](image4.png)
+
 6.     Enter the primary contact and business sponsor for the request. If you’re also the primary contact, select the __Same as the requester__ checkbox.
+
+![User's image](image5.png)
 
  
 
 7.     On the __Review__ page, view your request’s information and make edits, if needed. Select the checkbox next to the acknowledgement message, and then select __Submit__. 
 
- 
+![User's image](image6.png)
 
 8.     After submission, receipt of your request will be confirmed, your RFA ID will be provided, and you’ll be given the option to provide feedback about your experience.
 
- 
-
- 
-
- 
+![User's image](image7.png)
 
 How to find RFA details and status updates
 
