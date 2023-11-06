@@ -38,6 +38,19 @@ Microsoft Defender Antivirus is a major component of your next-generation protec
 
 If you're using a non-Microsoft antivirus/antimalware product on your device, you might be able to run Microsoft Defender Antivirus in passive mode alongside the non-Microsoft antivirus solution. It depends on the operating system used and whether your device is onboarded to Defender for Endpoint. To learn more, see [Microsoft Defender Antivirus compatibility](microsoft-defender-antivirus-compatibility.md).
 
+## Microsoft Defender Antivirus processes and services
+
+The following table summarizes Microsoft Defender Antivirus processes and services. You can view them in Task Manager in Windows.
+
+| Process or service | Where to view its status |
+|--|--|
+| Microsoft Defender Antivirus Core service <br/>(`MdCoreSvc`) | - **Processes** tab: `Antimalware Core Service` <br/>- **Details** tab: `MpDefenderCoreService.exe` <br/>- **Services** tab: `Microsoft Defender Core Service` | 
+| Microsoft Defender Antivirus service <br/>(WinDefend) | - **Processes** tab: `Antimalware Service Executable` <br/>- **Details** tab: `MsMpEng.exe` <br/>- **Services** tab: `Microsoft Defender Antivirus` | 
+| Microsoft Defender Antivirus Network Realtime Inspection service <br/>(`WdNisSvc`) |  - **Processes** tab: `Microsoft Network Realtime Inspection Service` <br/>- **Details** tab: `NisSrv.exe` <br/>- **Services** tab: `Microsoft Defender Antivirus Network Inspection Service` | 
+| <br/>() | - Processes tab: `Microsoft Network Realtime Inspection Service` <br/>- Details tab: `NisSrv.exe` <br/>- Services tab: `Microsoft Defender Antivirus Network Inspection Service`  | 
+| <br/>() | - Processes tab:  <br/>- Details tab:  <br/>- Services tab:  | 
+
+
 ## Comparing active mode, passive mode, and disabled mode
 
 The following table describes what to expect when Microsoft Defender Antivirus is in active mode, passive mode, or disabled.
