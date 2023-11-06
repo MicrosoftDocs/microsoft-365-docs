@@ -108,7 +108,7 @@ This section repeats capabilities which are not yet available from the table abo
 
 ## Admin Management of Loop workspaces
 
-This section provides expanded information on the admin management capabilities for Loop workspaces stored in Microsoft Syntex. The Loop ApplicationID which can be used to identify Loop workspace containers is: `a187e399-0c36-4b98-8f04-1edc167a0996`  
+This section provides expanded information on the subset of admin management capabilities dedicated to Loop workspaces stored in Microsoft Syntex. The Loop ApplicationID which can be used to identify Loop workspace containers is: `a187e399-0c36-4b98-8f04-1edc167a0996`
 
 ### Admin Management Capabilities Available
 
