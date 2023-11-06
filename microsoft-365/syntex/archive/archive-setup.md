@@ -26,8 +26,8 @@ Microsoft 365 Archive follows a pay-as-you-go model, and is configured through t
 
 To enable Microsoft 365 Archive for a tenant, perform the following steps:
 
-1. Enable pay-as-you-go billing for Syntex on the Microsoft 365 admin center.
-2. Turn on Microsoft 365 Archive from the Microsoft 365 admin center.
+1. [Enable pay-as-you-go billing](../syntex-azure-billing.md) for Syntex on the Microsoft 365 admin center.
+2. [Turn on Microsoft 365 Archive](#set-up-microsoft-365-archive) from the Microsoft 365 admin center.
 
 ## Prerequisites
 
