@@ -66,6 +66,7 @@ The Microsoft Defender Core service is releasing with [Microsoft Defender Antivi
 - Rollout begins in November 2023 to prerelease customers, with plans to release to all enterprise customers in the coming months.
 
 - Enterprise customers should allow the following URLs:
+
    - `*.events.data.microsoft.com`
    - `*.endpoint.security.microsoft.com`
    - `*.ecs.office.com` 
