@@ -44,12 +44,22 @@ The following table summarizes Microsoft Defender Antivirus processes and servic
 
 | Process or service | Where to view its status |
 |--|--|
-| Microsoft Defender Antivirus Core service <br/>(`MdCoreSvc`) | - **Processes** tab: `Antimalware Core Service` <br/>- **Details** tab: `MpDefenderCoreService.exe` <br/>- **Services** tab: `Microsoft Defender Core Service` | 
-| Microsoft Defender Antivirus service <br/>(WinDefend) | - **Processes** tab: `Antimalware Service Executable` <br/>- **Details** tab: `MsMpEng.exe` <br/>- **Services** tab: `Microsoft Defender Antivirus` | 
-| Microsoft Defender Antivirus Network Realtime Inspection service <br/>(`WdNisSvc`) |  - **Processes** tab: `Microsoft Network Realtime Inspection Service` <br/>- **Details** tab: `NisSrv.exe` <br/>- **Services** tab: `Microsoft Defender Antivirus Network Inspection Service` | 
-| <br/>() | - Processes tab: `Microsoft Network Realtime Inspection Service` <br/>- Details tab: `NisSrv.exe` <br/>- Services tab: `Microsoft Defender Antivirus Network Inspection Service`  | 
-| <br/>() | - Processes tab:  <br/>- Details tab:  <br/>- Services tab:  | 
+| **Microsoft Defender Antivirus Core service** <br/>(`MdCoreSvc`) | - **Processes** tab: `Antimalware Core Service` <br/>- **Details** tab: `MpDefenderCoreService.exe` <br/>- **Services** tab: `Microsoft Defender Core Service` | 
+| **Microsoft Defender Antivirus service** <br/>(WinDefend) | - **Processes** tab: `Antimalware Service Executable` <br/>- **Details** tab: `MsMpEng.exe` <br/>- **Services** tab: `Microsoft Defender Antivirus` | 
+| **Microsoft Defender Antivirus Network Realtime Inspection service** <br/>(`WdNisSvc`) |  - **Processes** tab: `Microsoft Network Realtime Inspection Service` <br/>- **Details** tab: `NisSrv.exe` <br/>- **Services** tab: `Microsoft Defender Antivirus Network Inspection Service` | 
+| **Microsoft Defender Antivirus command-line utility** | - **Processes** tab: N/A <br/>- **Details** tab: `MpCmdRun.exe` <br/>- **Services** tab: N/A  | 
+| **Microsoft Security Client Policy Configuration Tool** | - **Processes** tab: N/A <br/>- **Details** tab: `MpCmdRun.exe` <br/>- **Services** tab: N/A | 
 
+For Microsoft Endpoint Data Loss Prevention (Endpoint DLP), the following table summarizes processes and services. You can view them in Task Manager in Windows.
+
+| Process or service | Where to view its status |
+|--|--|
+| **Microsoft Endpoint DLP service** <br/>(`MDDlpSvc`) | - **Processes** tab: `MpDlpService.exe` <br/>- **Details** tab: `MpDlpService.exe` <br/>- **Services** tab: `Microsoft Data Loss Prevention Service` |
+| **Microsoft Endpoint DLP command-line utility**  | - **Processes** tab: N/A <br/>- **Details** tab: `MpDlpCmd.exe` <br/>- **Services** tab: N/A |
+
+## Microsoft Defender Core service
+
+To enhance your endpoint security experience, Microsoft is releasing the Microsoft Defender Core service to help with the stability and performance of Microsoft Defender Antivirus. For customers who are using Microsoft Endpoint Data Loss Prevention in the small, medium, and enterprise business sectors, we are splitting the codebase to its own service.  
 
 ## Comparing active mode, passive mode, and disabled mode
 
