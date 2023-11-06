@@ -5,10 +5,10 @@ author: chuckedmonson
 manager: pamgreen
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 11/7/2023
+ms.date: 11/15/2023
 ms.topic: conceptual
 ms.service: microsoft-syntex
-ms.custom: CSH, archive
+ms.custom: backup
 search.appverid:
 ms.collection:
     - m365initiative-syntex
