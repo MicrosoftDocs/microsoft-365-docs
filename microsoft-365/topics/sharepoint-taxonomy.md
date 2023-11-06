@@ -31,7 +31,7 @@ To create a topic from terms:
 
 ## How it works
 
-:::image type="content" alt-text="Diagram showing the stages and statuses of creating a topic in the Term store." source="../media/topics/knowledge-management/taxonomy-diagram.png":::
+:::image type="content" alt-text="Diagram showing the stages and statuses of creating a topic in the Term store." source="../media/knowledge-management/taxonomy-diagram.png":::
 
 When someone requests to create a topic from a term, the taxonomy service relays information about the term to Topics for the creation of a corresponding topic. This information includes the following:
 
