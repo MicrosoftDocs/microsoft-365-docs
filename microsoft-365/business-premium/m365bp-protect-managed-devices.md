@@ -8,7 +8,7 @@ manager: dansimp
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
-ms.date: 11/01/2023
+ms.date: 11/02/2023
 ms.localizationpriority: medium
 ms.collection: 
 - M365-Campaigns
@@ -36,17 +36,15 @@ Microsoft 365 Business Premium includes [Microsoft Defender for Business](../sec
 
 Your tasks are to:
 
-1. [Upgrade Windows devices running Windows 7 Pro, Windows 8 Pro, or Windows 8.1 Pro to Windows 10 or 11 Pro](m365bp-upgrade-windows-pro.md).
+1. Upgrade eligible devices to the latest version of Windows. See [Upgrade Windows devices running Windows 7 Pro, Windows 8 Pro, or Windows 8.1 Pro to Windows 10 or 11 Pro](m365bp-upgrade-windows-pro.md).
 
-2. [Onboard devices to Defender for Business and apply security policies](m365bp-onboard-devices-mdb.md).
+2. Protect devices with Defender for Business. See [Onboard devices to Defender for Business and apply security policies](m365bp-onboard-devices-mdb.md).
 
-3. [Use Windows Autopilot to set up and configure new devices, or to reset, repurpose, and recover devices](/mem/autopilot/windows-autopilot).
+3. If you have Windows computers to set up or reset, see [Use Windows Autopilot to set up and configure new devices, or to reset, repurpose, and recover devices](/mem/autopilot/windows-autopilot).
 
-4. [Manage Microsoft 365 installation options for devices](/DeployOffice/manage-software-download-settings-office-365).
+4. Get Microsoft 365 Apps installed on devices. See [Manage Microsoft 365 installation options for devices](/DeployOffice/manage-software-download-settings-office-365).
 
-Once these steps are completed, your organization's devices are protected. 
-
-## Next steps
+## See also
 
 - [Manage devices in Microsoft Defender for Business](../security/defender-business/mdb-manage-devices.md)
 - [Set up a security operations process](m365bp-security-operations-guide.md).
