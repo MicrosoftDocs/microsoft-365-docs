@@ -143,7 +143,7 @@ See more about how to use PowerShell to perform these tasks in the [Microsoft Sy
 ## Manually Initializing Microsoft Loop app for Conditional Access management in Microsoft Entra
 
 In order to select Microsoft Loop app from the cloud app target UX in Entra Admin Center | Protection | Conditional Access | Select what this policy applies to | select apps | Microsoft Loop, manual provisioning is required.
-1. Connect to Microsoft 365 with PowerShell - Microsoft 365 Enterprise | Microsoft Learn
+1. [Connect to Microsoft 365 with PowerShell - Microsoft 365 Enterprise | Microsoft Learn](/microsoft-365/enterprise/connect-to-microsoft-365-powershell)
 1. Copy/Paste this and hit Enter on this command:
 ```PowerShell
 New-AzureADServicePrincipal -AccountEnabled $true -AppId a187e399-0c36-4b98-8f04-1edc167a0996 -AppRoleAssignmentRequired $true -DisplayName "Microsoft Loop app" -Tags {WindowsAzureActiveDirectoryIntegratedApp}
