@@ -13,7 +13,7 @@ ms.collection:
   - m365-security-compliance
   - tier2
 ms.topic: conceptual
-ms.date: 8/01/2023
+ms.date: 10/24/2023
 ---
 
 # What's new in Microsoft 365 Defender Unified role-based access control (RBAC)
@@ -21,6 +21,14 @@ ms.date: 8/01/2023
 This article provides information about new features and important product updates for the latest release of Microsoft 365 Defender Unified role-based access control (RBAC).
 
 [!include[Prerelease information](../../includes/prerelease.md)]
+
+## October 2023
+
+### Exchange Online (EXO) permission management for Microsoft Defender for Office 365 is now supported in Microsoft 365 Defender Unified role-based access control (RBAC) providing full integration of Defender for Office 365 roles and permissions
+
+Microsoft 365 Defender Unified Role-Based Access Control (RBAC) model now supports all security permission management scenarios for Microsoft Defender for Office 365.
+
+In addition to the existing support for scenarios that are controlled by Exchange Online Protection (EOP) roles, configured in the Microsoft 365 Defender portal (under Permissions > Email & collaboration roles), Microsoft 365 Defender Unified (RBAC) now also supports the management of Exchange Online (EXO) roles and permissions, which could previously only be managed in the Exchange Admin Center. To learn more about the new Exchange Online (EXO) permissions supported, see [Exchange Online (EXO) permissions mapping](compare-rbac-roles.md#exchange-online-exo-permissions-mapping-previously-configured-in-exchange-admin-center).
 
 ## September 2023
 
