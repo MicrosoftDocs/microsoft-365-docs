@@ -52,6 +52,7 @@ All updates contain:
 |OS  |KB  |Release version  |
 |---------|---------|---------|
 |Windows Server 2012 R2, 2016 |[KB 5005292](https://support.microsoft.com/en-us/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)|10.8295.22621.1023|
+
 **What's new**
 
 - Supports new security settings management capabilities
@@ -61,6 +62,7 @@ All updates contain:
 |OS  |KB  |Release version  |
 |---------|---------|---------|
 |Windows Server 2012 R2, 2016 |[KB 5005292](https://support.microsoft.com/en-us/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)|10.8295.22621.1019|
+
 **What's new**
 
 - Improved command and control security, quality fixes
@@ -70,6 +72,7 @@ All updates contain:
 |OS  |KB  |Release version  |
 |---------|---------|---------|
 |Windows Server 2012 R2, 2016 |[KB 5005292](https://support.microsoft.com/en-us/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac)|10.8210.22621.1016|
+
 **What's new**
 
 - Bug fixes and stability improvements
@@ -82,7 +85,7 @@ All updates contain:
 |Windows 11 21H2 (Cobalt)<br> (Windows 11 SV 21H2)     | [KB 5016691](https://support.microsoft.com/en-us/topic/august-25-2022-kb5016691-os-build-22000-918-preview-59097044-915a-49a0-8870-49823236adbd)        | 10.8210.22000.918        |
 |Server 2022 (Iron)     | [KB 5016693](https://support.microsoft.com/en-us/topic/august-16-2022-kb5016693-os-build-20348-946-preview-ee90d0bc-c162-4124-b7c6-f963ee7b17ed)        |10.8210.20348.946         |
 |Windows 10 20H2/21H1/21H2<br> Windows Server 20H2  (Vibranium)     | [KB 5016688](https://support.microsoft.com/en-us/topic/august-26-2022-kb5016688-os-builds-19042-1949-19043-1949-and-19044-1949-preview-ec31ebdc-067d-44dd-beb0-eabcc984d843)       | 10.8210.19041.1949        |
-|Windows Server 2019 (RS5)   |[KB 5016690](https://support.microsoft.com/en-us/topic/august-23-2022-kb5016690-os-build-17763-3346-preview-b81d1ac5-75c7-42c1-b638-f13aa4242f42)       |10.8210.17763.3346         |
+|Windows Server 2019 (RS5)   |[KB 5016690](https://support.microsoft.com/en-us/topic/august-23-2022-kb5016690-os-build-17763-3346-preview-b81d1ac5-75c7-42c1-b638-f13aa4242f42)       |10.8210.17763.3346 |
 
 **What's new**
 
