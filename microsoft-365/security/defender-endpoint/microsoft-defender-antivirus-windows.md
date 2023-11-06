@@ -61,6 +61,16 @@ For Microsoft Endpoint Data Loss Prevention (Endpoint DLP), the following table 
 
 To enhance your endpoint security experience, Microsoft is releasing the Microsoft Defender Core service to help with the stability and performance of Microsoft Defender Antivirus. For customers who are using Microsoft Endpoint Data Loss Prevention in the small, medium, and enterprise business sectors, we are splitting the codebase to its own service.  
 
+The Microsoft Defender Core service is releasing with [Microsoft Defender Antivirus platform version 4.18.23110.2009](microsoft-defender-antivirus-updates.md#october-2023-platform-platform-418231002009--engine-11231002009).
+
+- Rollout begins in November 2023 to prerelease customers.
+- Consumers need not take any actions to prepare. 
+- Enterprise customers should allow the following URLs:
+   - `*.events.data.microsoft.com`
+   - `*.endpoint.security.microsoft.com`
+   - `*.ecs.office.com` 
+- If you're using [application control](/windows/security/application-security/application-control/windows-defender-application-control/wdac), or you're running non-Microsoft antivirus or endpoint detection and response software, make sure to add the processes mentioned earlier to your allow list. 
+
 ## Comparing active mode, passive mode, and disabled mode
 
 The following table describes what to expect when Microsoft Defender Antivirus is in active mode, passive mode, or disabled.
