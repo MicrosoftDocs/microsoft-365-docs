@@ -35,5 +35,5 @@ There are the scenarios when SaaS linked apps can't be managed from Integrated A
 You are not able to deploy a single store add-in from the Integrated apps portal for the following scenarios:
 
 - The same add-in is linked to more than one SaaS offer.
-- The SaaS offer is linked to add-ins, but it doesn't integrate with Microsoft Graph and no Azure AD App ID is provided.
-- The SaaS offer is linked to add-ins, but Azure AD App ID provided for Microsoft Graph integration is shared across multiple SaaS offers.
+- The SaaS offer is linked to add-ins, but it doesn't integrate with Microsoft Graph and no Microsoft Entra App ID is provided.
+- The SaaS offer is linked to add-ins, but Microsoft Entra App ID provided for Microsoft Graph integration is shared across multiple SaaS offers.

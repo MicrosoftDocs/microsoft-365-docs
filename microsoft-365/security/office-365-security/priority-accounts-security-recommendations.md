@@ -24,7 +24,7 @@ ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.date: 7/31/2023
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
@@ -57,7 +57,7 @@ Microsoft 365 and Microsoft Defender for Office 365 contain several key features
 
 Priority accounts require increased sign-in security. You can increase their sign-in security by requiring multi-factor authentication (MFA) and disabling legacy authentication protocols.
 
-For instructions, see [Step 1. Increase sign-in security for remote workers with MFA](../../solutions/empower-people-to-work-remotely-secure-sign-in.md). Although this article is about remote workers, the same concepts apply to priority users.
+For instructions, see [Step 1. Increase sign-in security for remote workers with MFA](/microsoft-365/solutions/empower-people-to-work-remotely-secure-sign-in). Although this article is about remote workers, the same concepts apply to priority users.
 
 **Note**: We strongly recommend that you globally disable legacy authentication protocols for all priority users as described in the previous article. If your business requirements prevent you from doing so, Exchange Online offers the following controls to help limit the scope of legacy authentication protocols:
 
@@ -85,7 +85,7 @@ For details about how the Strict policy settings differ from the default and Sta
 
 User tags in Microsoft Defender for Office 365 Plan 2 (as part of Microsoft 365 E5 or an add-on subscription) are a way to quickly identify and classify specific users or groups of users in reports and incident investigations.
 
-**Priority accounts** is a type of built-in user tag (known as a _system tag_) that you can use to identify incidents and alerts that involve priority accounts. For more information about **priority accounts**, see [Manage and monitor priority accounts](../../admin/setup/priority-accounts.md).
+**Priority accounts** is a type of built-in user tag (known as a _system tag_) that you can use to identify incidents and alerts that involve priority accounts. For more information about **priority accounts**, see [Manage and monitor priority accounts](/microsoft-365/admin/setup/priority-accounts).
 
 You can also create custom tags to further identify and classify your priority accounts. For more information, see [User tags](user-tags-about.md). You can manage **priority accounts** (system tags) in the same interface as custom user tags.
 
@@ -95,9 +95,9 @@ After you secure and tag your priority users, you can use the available reports,
 
 |Feature|Description|
 |---|---|
-|Alerts|The user tags of affected users are visible and available as filters on the **Alerts** page in the Microsoft 365 Defender portal. For more information, see [Viewing alerts](/purview/alert-policies#view-alerts).|
+|Alerts|The user tags of affected users are visible and available as filters on the **Alerts** page in the Microsoft 365 Defender portal. For more information, see [Alert policies in the Microsoft 365 Defender portal](alert-policies-defender-portal.md).|
 |Incidents|The user tags for all correlated alerts are visible on the **Incidents** page in the Microsoft 365 Defender portal. For more information, see [Manage incidents and alerts](mdo-sec-ops-manage-incidents-and-alerts.md).|
-|Custom alert policies|You can create alert policies based on user tags in the Microsoft 365 Defender portal. For more information, see [Alert policies in Microsoft 365](/purview/alert-policies).|
+|Custom alert policies|You can create alert policies based on user tags in the Microsoft 365 Defender portal. For more information, see [Alert policies in the Microsoft 365 Defender portal](alert-policies-defender-portal.md).|
 |Explorer <p> Real-time detections|In **Explorer** (Defender for Office 365 Plan 2) or **Real-time detections** (Defender for Office 365 Plan 1), user tags are visible in the Email grid view and the Email details flyout. User tags are also available as a filterable property. For more information, see  [Tags in Explorer](threat-explorer-about.md#tags-in-threat-explorer).|
 |Email entity page|You can filter email based on applied user tags in Microsoft 365 E5 and in Defender for Office 365 Plan 1 and Plan 2. For more information, see [Email entity page](mdo-email-entity-page.md).|
 |Campaign Views|User tags are one of many filterable properties in Campaign Views in Microsoft Defender for Office 365 Plan 2. For more information, see [Campaign Views](campaigns.md).|
@@ -134,5 +134,5 @@ In addition, Microsoft recommends that users take the actions described in this 
 
 - [User tags in Microsoft Defender for Office 365](user-tags-about.md)
 - [Configure and review priority accounts](protection-stack-microsoft-defender-for-office365.md)
-- [Manage and monitor priority accounts](../../admin/setup/priority-accounts.md)
+- [Manage and monitor priority accounts](/microsoft-365/admin/setup/priority-accounts)
 - [Announcing Priority Account Protection in Microsoft Defender for Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/announcing-priority-account-protection-in-microsoft-defender-for/ba-p/1696385)

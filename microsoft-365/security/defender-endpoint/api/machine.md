@@ -76,7 +76,7 @@ ms.date: 12/18/2020
 |rbacGroupName|String|Machine group Name.|
 |rbacGroupId|String|Machine group ID.|
 |riskScore|Nullable Enum|Risk score as evaluated by Microsoft Defender for Endpoint. Possible values are: 'None', 'Informational', 'Low', 'Medium' and 'High'.|
-|aadDeviceId|Nullable representation Guid|AAD Device ID (when [machine](machine.md) is AAD Joined).|
+|aadDeviceId|Nullable representation Guid|Microsoft Entra Device ID (when [machine](machine.md) is Microsoft Entra joined).|
 |machineTags|String collection|Set of [machine](machine.md) tags.|
 |exposureLevel|Nullable Enum|Exposure level as evaluated by Microsoft Defender for Endpoint. Possible values are: 'None', 'Low', 'Medium' and 'High'.|
 |deviceValue|Nullable Enum|The [value of the device](../tvm-assign-device-value.md). Possible values are: 'Normal', 'Low' and 'High'.|

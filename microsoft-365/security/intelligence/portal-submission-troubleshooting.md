@@ -28,9 +28,9 @@ In some instances, an administrator block might cause submission issues when you
 
 Open your Azure [Enterprise application settings](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/UserSettings/menuId/). Under **Enterprise Applications** >  **Users can consent to apps accessing company data on their behalf**, check whether Yes or No is selected.
 
-- If **No** is selected, an Azure AD administrator for the customer tenant will need to provide consent for the organization. Depending on the configuration with Azure AD, users might be able to submit a request right from the same dialog box. If there's no option to ask for admin consent,  users need to request for these permissions to be added to their Azure AD admin. Go to the following section for more information.
+- If **No** is selected, a Microsoft Entra administrator for the customer tenant will need to provide consent for the organization. Depending on the configuration with Microsoft Entra ID, users might be able to submit a request right from the same dialog box. If there's no option to ask for admin consent,  users need to request for these permissions to be added to their Microsoft Entra admin. Go to the following section for more information.
 
-- If **Yes** is selected, ensure the Windows Defender Security Intelligence app setting **Enabled for users to sign in?** is set to **Yes** [in Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ManagedAppMenuBlade/Properties/appId/f0cf43e5-8a9b-451c-b2d5-7285c785684d/objectId/4a918a14-4069-4108-9b7d-76486212d75d). If **No** is selected, you'll need to request an Azure AD admin enable it.
+- If **Yes** is selected, ensure the Windows Defender Security Intelligence app setting **Enabled for users to sign in?** is set to **Yes** [in Azure](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ManagedAppMenuBlade/Properties/appId/f0cf43e5-8a9b-451c-b2d5-7285c785684d/objectId/4a918a14-4069-4108-9b7d-76486212d75d). If **No** is selected, you'll need to request a Microsoft Entra admin enable it.
 
 ## Implement Required Enterprise Application permissions
 
@@ -49,7 +49,7 @@ This process requires a global or application admin in the tenant.
 > [!NOTE]
 > This is currently a preview feature.
 
-Azure Active Directory admins will need to allow for users to request admin consent to apps. Verify the setting is configured to **Yes** in [Enterprise applications](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/UserSettings/menuId/).
+Microsoft Entra admins will need to allow for users to request admin consent to apps. Verify the setting is configured to **Yes** in [Enterprise applications](https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/UserSettings/menuId/).
 
 ![Enterprise applications user settings.](../../media/security-intelligence-images/msi-enterprise-app-user-setting.jpg)
 

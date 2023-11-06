@@ -73,9 +73,9 @@ The information below will detail how to get the most out of your investment, br
 
 **Read more here:** [Anti-phishing policies](../anti-phishing-policies-about.md)
 
-- If your current security provider is configured to modify messages *in any way*, it's important to note that authentication signals can impact the ability for Defender for Office to protect you against attacks such as spoofing. If your third party supports Authenticated Received Chain (ARC), then enabling this is a highly recommended step in your journey to advanced dual filtering. Moving any message modification configuration to Defender for Office 365 is also an alternative.
+- If your current security provider is configured to modify messages *in any way*, it's important to note that authentication signals can impact the ability for Defender for Office 365 to protect you against attacks such as spoofing. If your third party supports Authenticated Received Chain (ARC), then enabling this is a highly recommended step in your journey to advanced dual filtering. Moving any message modification configuration to Defender for Office 365 is also an alternative.
 
-**Read more here:** [Use Trusted ARC senders for legitimate devices and services between the sender and receiver](../use-arc-exceptions-to-mark-trusted-arc-senders.md)
+**Read more here:** [Configure trusted ARC sealers](../email-authentication-arc-configure.md)
 
 - Enhanced Filtering for connectors allows IP address and sender information to be preserved through the third party. This improves accuracy for the filtering (protection) stack, post breach capabilities & authentication improvements.
 
@@ -87,7 +87,7 @@ The information below will detail how to get the most out of your investment, br
 
 - Advanced Delivery should be configured to deliver any third party phish simulations correctly, and if you have a Security Operations mailbox, consider defining it as a SecOps mailbox to ensure emails *do not* get removed from the mailbox due to threats.
 
-**Read more here:** [Advanced delivery](../skip-filtering-phishing-simulations-sec-ops-mailboxes.md)
+**Read more here:** [Advanced delivery](../advanced-delivery-policy-configure.md)
 
 - You can configure user reported settings to allow users to report good or bad messages to Microsoft, to a designated reporting mailbox (to integrate with current security workflows) or both. Admins can use the **User reported** tab on the **Submissions** page to triage false positives and false negative user reported messages.
 
