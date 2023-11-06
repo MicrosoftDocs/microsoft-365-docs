@@ -3,15 +3,12 @@ title: Microsoft Defender Antivirus in Windows
 description: Learn how to manage, configure, and use Microsoft Defender Antivirus, built-in antimalware and antivirus protection.
 keywords: Microsoft Defender Antivirus, windows defender, antimalware, scep, system center endpoint protection, system center configuration manager, virus, malware, threat, detection, protection, security
 ms.service: microsoft-365-security
-ms.mktglfcycl: manage
-ms.sitesec: library
-ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 10/03/2022
+ms.date: 11/06/2023
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
-ms.reviewer: mkaminska
+ms.reviewer: mkaminska, yonghree, pahuijbr
 manager: dansimp
 ms.custom: nextgen
 ms.subservice: mde
