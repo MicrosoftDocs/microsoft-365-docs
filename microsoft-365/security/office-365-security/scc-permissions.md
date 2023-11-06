@@ -170,7 +170,7 @@ Roles that aren't assigned to the Organization Management role group by default 
 |**Insights Reader**<sup>\*</sup>|Provides read-only access to all Insights reports in the Data Estate Insights app. Insights readers need to have at least data reader role access to a collection to view reports about that specific collection.|Data Estate Insights Readers|
 |**Knowledge Admin**<sup>\*</sup>|Configure knowledge, learning, assign trainings and other intelligent features.|Knowledge Administrators|
 |**Manage Alerts**|View and edit settings and reports for alerts.|Compliance Administrator <br/><br/> Compliance Data Administrator <br/><br/> Organization Management <br/><br/> Security Administrator <br/><br/> Security Operator|
-|**Manage Review Set Tags**<sup>\*</sup>|Decrypt RMS-protected content when exporting search results.|eDiscovery Manager|
+|**Manage Review Set Tags**<sup>\*</sup>|This role lets users create, edit, and delete review set tags for cases they can access.|eDiscovery Manager|
 |**Organization Configuration**|Run, view, and export audit reports and manage compliance policies for DLP, devices, and preservation.|Compliance Administrator <br/><br/> Compliance Data Administrator <br/><br/> Organization Management|
 |**Preview**<sup>\*</sup>|View a list of items that are returned from content searches, and open each item from the list to view its contents.|Data Investigator <br/><br/> eDiscovery Manager|
 |**Privacy Management Admin**<sup>\*</sup>|Manage policies in Privacy Management and has access to all functionality of the solution.|Privacy Management <br/><br/> Privacy Management Administrators|
