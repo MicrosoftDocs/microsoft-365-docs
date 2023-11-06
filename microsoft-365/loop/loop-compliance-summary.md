@@ -39,6 +39,7 @@ Where the loop content was originally created determines its storage location:
 
 Breaking that up into diagrams that correspond to the table columns below...
 
+### OneDrive and SharePoint, Summary table middle column
 The middle column applies to Loop content:
 :::image type="content" source="media/loop-files-onedrive.png" alt-text="Diagram showing that files created outside the Loop app are stored in OneDrive or SharePoint.":::
 
@@ -46,6 +47,7 @@ Where the loop content was originally created determines its storage location:
 - Created in all other places that don't have tightly associated collaborative storage (e.g. Teams chat, Outlook email, Word for the web, Whiteboard) ➡️️ in the creator's OneDrive
 - Created in places that have dedicated shared storage (e.g. Teams channels) ➡️️ SharePoint
 
+### Microsoft Syntex repository service, Summary table right column
 The right column applies to Loop content:
 :::image type="content" source="media/loop-files-syntex.png" alt-text="Diagram showing that files created inside the Loop app are stored in Microsoft Syntex.":::
 
