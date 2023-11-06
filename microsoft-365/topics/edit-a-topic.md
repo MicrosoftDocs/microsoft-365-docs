@@ -46,7 +46,7 @@ To edit an existing topic, you need to:
 
 You can edit a topic by opening the topic page from a topic highlight, and then selecting the **Edit** button on the top right of the topic page. You can also edit a topic from the Topic Center.
 
-   ![Screenshot showing the Edit button.](../media/topics/knowledge-management/edit-button.png)
+   ![Screenshot showing the Edit button.](../media/knowledge-management/edit-button.png)
 
 ### To edit a topic page
 
@@ -56,19 +56,19 @@ You can edit a topic by opening the topic page from a topic highlight, and then 
 
 1. In the **Alternate Names** section, type any other names that the topic might be referred to.
 
-    ![Screenshot of the Alternate names section.](../media/topics/knowledge-management/alt-names.png)  
+    ![Screenshot of the Alternate names section.](../media/knowledge-management/alt-names.png)  
 
 1. In the **Description** section, type a couple of sentences that describe the topic.
 
-    ![Screenshot of the topic description section.](../media/topics/knowledge-management/description.png)
+    ![Screenshot of the topic description section.](../media/knowledge-management/description.png)
 
 1. In the **Pinned people** section, you can "pin" a person to show them as having a connection to the topic (for example, an owner of a connected resource). Begin by typing their name or email address in the **add a new user** box, and then select the user you want to add from the search results. You can also "unpin" them by selecting the **Remove from list** icon on the user card. You can also drag the person to another place in the list.
 
-    ![Screenshot of the Pinned people section.](../media/topics/knowledge-management/pinned-people.png)
+    ![Screenshot of the Pinned people section.](../media/knowledge-management/pinned-people.png)
 
 1. In the **Pinned files and pages** section, you can add or "pin" a file or SharePoint site page that is associated to the topic.
 
-   ![Screenshot of the pinned files and pages section.](../media/topics/knowledge-management/pinned-files-and-pages.png)
+   ![Screenshot of the pinned files and pages section.](../media/knowledge-management/pinned-files-and-pages.png)
 
     To add a new file, select **Add**, select the SharePoint site from your Frequent or Followed sites, and then select the file from the site's document library.
 
@@ -79,11 +79,11 @@ You can edit a topic by opening the topic page from a topic highlight, and then 
 
 1. The **Related sites** section shows sites that have information about the topic.
 
-    ![Screenshot of the related sites section.](../media/topics/knowledge-management/related-sites.png)
+    ![Screenshot of the related sites section.](../media/knowledge-management/related-sites.png)
 
     You can add a related site by selecting **Add** and then either searching for the site, or selecting it from your list of Frequent or Recent sites.
 
-    ![Select site.](../media/topics/knowledge-management/sites.png)
+    ![Select site.](../media/knowledge-management/sites.png)
 
 1. The **Related topics** section shows connections that exist between topics.
 

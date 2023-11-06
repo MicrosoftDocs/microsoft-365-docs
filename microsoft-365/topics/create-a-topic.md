@@ -63,11 +63,11 @@ You can create a new topic from two locations:
 
 1. In the **Confirmed people** section, you can confirm a person to show them as having a connection to the topic (for example, an owner of a connected resource). Begin by typing their name or email address in the **Name or email address** box, and then select the user you want to add from the search results. You can also remove them by selecting the **Remove** icon on the user card. You can also drag the person to another place in the list.
 
-    ![Screenshot of the Pinned people section.](../media/topics/knowledge-management/pinned-people.png)
+    ![Screenshot of the Pinned people section.](../media/knowledge-management/pinned-people.png)
 
 1. In the **Pinned files and pages** section, you can add a file or SharePoint site page that is associated to the topic.
 
-   ![Screenshot of the pinned files and pages section.](../media/topics/knowledge-management/pinned-files-and-pages.png)
+   ![Screenshot of the pinned files and pages section.](../media/knowledge-management/pinned-files-and-pages.png)
 
     To add a new file, select **Add**, select the SharePoint site from your Frequent or Followed sites, and then select the file from the site's document library.
 
@@ -80,7 +80,7 @@ You can create a new topic from two locations:
 
     You can pin site by selecting **Add** and then either searching for the site, or selecting it from your list of Frequent or Recent sites.
 
-    ![Select site.](../media/topics/knowledge-management/sites.png)
+    ![Select site.](../media/knowledge-management/sites.png)
 
 1. The **Related topics** section shows which topics are connected.
 

@@ -55,21 +55,21 @@ Topics are displayed to users through:
 
 When a topic is mentioned in content on SharePoint news and pages, you'll see it highlighted. You can open the topic summary from the highlight. Open the topic details from the title of the summary to view the full topic page. The mentioned topic could be identified automatically or could have been referenced directly by the page author.
 
-   ![Screenshot showing topic highlights.](../media/topics/knowledge-management/saturn.png)
+   ![Screenshot showing topic highlights.](../media/knowledge-management/saturn.png)
 
 ### Search results
 
 You can see a [topic answer](search.md#topic-answer) in search results when you search from the SharePoint start page, search on Office.com, or search from a SharePoint site after you change the search scope to include the full organization. The topic answer will appear at the topic of the results list and give you a short set of information related to that topic.
 
-   ![Screenshot showing the search results of a SharePoint site search.](../media/topics/knowledge-management/site-search-results.png)
+   ![Screenshot showing the search results of a SharePoint site search.](../media/knowledge-management/site-search-results.png)
 
 ### Office application search
 
 When you use Search in Office apps such as Word, PowerPoint, Outlook, or Excel — either through the search box or by selecting **Search** in the context menu — topic answers are displayed in the search results.
 
-   ![Screenshot showing search in Word through the Search box.](../media/topics/knowledge-management/word-search-2.png)
+   ![Screenshot showing search in Word through the Search box.](../media/knowledge-management/word-search-2.png)
 
-   ![Screenshot showing search in Word through the Search context menu.](../media/topics/knowledge-management/word-search-1.png)
+   ![Screenshot showing search in Word through the Search context menu.](../media/knowledge-management/word-search-1.png)
 
 ### Profile cards
 

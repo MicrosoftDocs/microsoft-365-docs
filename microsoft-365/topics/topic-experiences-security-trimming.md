@@ -28,11 +28,11 @@ When a topic is created through AI or manual curation, it can contain a descript
   
 For example, when User 1 views the Neptune topic page, they might see this view of the topic page.
 
-![Neptune topic for user 1.](../media/topics/knowledge-management/user2-topic-view.png)
+![Neptune topic for user 1.](../media/knowledge-management/user2-topic-view.png)
 
 However, when User 2 looks at the same Neptune topic page, their view differs from User 1.  User 2 is able to see the *DG-2000 Product Overview* file in the **Pinned files and pages** section of the topic page, which doesn't appear for User 1.
 
-![Neptune topic for user 2.](../media/topics/knowledge-management/user1-topic-view.png)
+![Neptune topic for user 2.](../media/knowledge-management/user1-topic-view.png)
 
 The difference in what users can see on the same topic is because users might not have the Office 365 permissions to view a related site or file. Topics respects the permissions that are set on items in a topic, and can't change access to them. In our example, User 1 isn't able to view the *DG-2000 Product Overview* file in their topic page for Neptune because User 1 doesn't have Office 365 permissions to view the file.
 

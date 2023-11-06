@@ -24,7 +24,7 @@ To make the most of Topics, you want to have as much content as possible include
 
 To plan for Topics, you need to:
 
-![Migrate, connect, modernize, secure, and identify steps for onboarding to Topics.](../media/topics/knowledge-management/km-adoption-onboarding-checklist.png)
+![Migrate, connect, modernize, secure, and identify steps for onboarding to Topics.](../media/knowledge-management/km-adoption-onboarding-checklist.png)
 
 1. [Migrate content to SharePoint](#1-migrate-content-to-microsoft-365)
     - Topic indexing only includes content on SharePoint sites.

@@ -52,11 +52,11 @@ On the topic center home page, you can see the topics in your organization to wh
 
 - Suggested connections - You will see topics listed under **We've listed you on these topics. Did we get it right?** These are topics in which your connection to the topic has been suggested through AI. For example, you might be an author of a related file or site. You are asked to confirm that you should stay listed as a related person for the topic.
 
-   ![Screenshot of suggested topics in the topic center.](../media/topics/knowledge-management/my-topics.png)
+   ![Screenshot of suggested topics in the topic center.](../media/knowledge-management/my-topics.png)
 
 - Confirmed connections - These are topics in which you are pinned on the topic page or you've confirmed a suggested connection to the topic. Topics will move from the suggested to confirmed section when you confirm a suggested connection.
 
-   ![Screenshot of confirmed connections in the topic center.](../media/topics/knowledge-management/my-topics-confirmed.png)
+   ![Screenshot of confirmed connections in the topic center.](../media/knowledge-management/my-topics-confirmed.png)
 
 Once a user confirms their connection to a topic, the user can make edits to the topic page to curate their connection. For example, they can provide more information about their connection to the topic.
 
