@@ -49,10 +49,11 @@ This article is updated frequently to let you know what's new in the latest rele
 **What's new**
 
 - There are multiple fixes and new changes in this release 
-  - Support to restore Threat based on path
-     ```bash
-        sudo mdatp threat restore threat-path --path [threat-original-path] --destination-path [destination-folder]
-     ```
+  - Support to restore Threat based on original path
+ ```bash
+ sudo mdatp threat restore threat-path --path [threat-original-path] --destination-path [destination-folder]
+```
+
 	- Engine Update to `1.1.23090.2008` and Signatures Ver: `1.399.690.0`.
   - Starting with this release, we will no longer be providing support or shipping our solution for RHEL-6 Distro. 
 	- Bug fixes.
