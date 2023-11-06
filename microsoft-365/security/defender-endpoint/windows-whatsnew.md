@@ -4,13 +4,10 @@ description: Learn about the latest feature releases of Microsoft Defender for E
 keywords: microsoft, defender, Microsoft Defender for Endpoint, windows, windows client, windows server, whats new
 search.appverid: met150
 ms.service: microsoft-365-security
-ms.mktglfcycl: secure
-ms.sitesec: library
-ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 05/14/2023
+ms.date: 11/06/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
