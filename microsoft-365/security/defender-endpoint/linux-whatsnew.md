@@ -47,7 +47,6 @@ This article is updated frequently to let you know what's new in the latest rele
 &ensp;Signature version: **1.399.690.0**<br/>
 
 **What's new**
-External: The command-line tool now supports threat restore based on Threat Original Path as well(in addition to threat id). Command to restore a threat from threat path "mdatp threat restore threat-path --path [threat-original-path] --destination-path [destination-folder]". Command to restore a threat from threat id "mdatp threat restore threat-id --id [threat-id] --destination-path [destination-folder]". 
 
 - There are multiple fixes and new changes in this release 
   - Support to restore Threat based on path
