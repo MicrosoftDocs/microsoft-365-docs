@@ -58,7 +58,7 @@ The following table summarizes performance mode synchronous and asynchronous sca
 |Not enabled (Off) | **Synchronous** <br> (Real-time protection) | Opening a file initiates a real-time protection scan. | Open now, scan now. |
 |Enabled (On) | **Asynchronous** | File open operations are scanned asynchronously. | Open now, scan later. |
 
-An _untrusted_ Dev Drive doesn't have the same benefits as a _trusted_ Dev Drive. Security runs in synchronous, real-time protection mode when a Dev Drive is _untrusted_. Real-time protection scans can impact performance.
+An _untrusted_ Dev Drive doesn't have the same benefits as a _trusted_ Dev Drive. Security runs in synchronous, real-time protection mode when a Dev Drive is _untrusted_. Real-time protection scans can affect performance.
 
 ## Microsoft Defender Antivirus requirements for performance mode
 
@@ -78,7 +78,7 @@ An _untrusted_ Dev Drive doesn't have the same benefits as a _trusted_ Dev Drive
 
 ### Intune 
 
-Set performance mode status to enabled via the following OMA-URI setting:
+Enable performance mode status via the OMA-URI settings shown in the following table.
 
 | Setting | Value |
 | -------- | -------- |
@@ -90,7 +90,9 @@ Set performance mode status to enabled via the following OMA-URI setting:
   
 1. In GPMC.msc or GPedit.msc, go to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Real-time Protection**.
 
-2. Double-click on "Configure performance mode status"![Screenshot of Defender_Performance_Mode_10.](media/microsoft-defender-endpoint-antivirus-performance-mode/defender-performance-mode-10.png).
+2. Double-click **Configure performance mode status**.
+
+   :::image type="content" alt-text="Screenshot of Defender_Performance_Mode_10." source="media/microsoft-defender-endpoint-antivirus-performance-mode/defender-performance-mode-10.png" lightbox="media/microsoft-defender-endpoint-antivirus-performance-mode/defender-performance-mode-10.png":::
 
 3. Select **Enabled**.
 
@@ -98,7 +100,7 @@ Set performance mode status to enabled via the following OMA-URI setting:
 
 4. Select **Apply**, and then select **OK**. 
 
-### Powershell
+### PowerShell
 
 1. Open PowerShell as an administrator on the device.
 
@@ -112,17 +114,17 @@ To verify that Dev Drive and Defender Performance Mode is enabled, follow these 
 
 1. In the Windows Security App, go to **Virus & threat Protection settings** > **Manage settings**, and verify that Dev Drive protection is enabled.
 
-   ![Screenshot of Defender_Performance_Mode_02.](media/microsoft-defender-endpoint-antivirus-performance-mode/defender-performance-mode-02.png)
+   :::image type="content" alt-text="Screenshot of Defender_Performance_Mode_02." source="media/microsoft-defender-endpoint-antivirus-performance-mode/defender-performance-mode-02.png":::
 
 2. Select **See volumes**.
 
-   ![Screenshot of Defender_Performance_Mode_03.](media/microsoft-defender-endpoint-antivirus-performance-mode/defender-performance-mode-03.png)
+   :::image type="content" alt-text="Screenshot of Defender_Performance_Mode_03." source="media/microsoft-defender-endpoint-antivirus-performance-mode/defender-performance-mode-03.png" lightbox="media/microsoft-defender-endpoint-antivirus-performance-mode/defender-performance-mode-03.png":::
 
    |Drive| Status|
    | -------- | -------- |
-   | C: |Since the system drive (e.g. C: or D:) drive is formatted with NTFS, it's not eligible for Defender Performance mode.|
-   |D:|Dev Drive is enabled but Defender Performance mode is not enabled|
-   |F:|Dev Drive is enabled, and Defender Performance mode is enabled|
+   | C: |Since the system drive (for example, C: or D:) drive is formatted with NTFS, it's not eligible for Defender Performance mode.|
+   |D:|Dev Drive is enabled but Defender Performance mode isn't enabled.|
+   |F:|Dev Drive is enabled, and Defender Performance mode is enabled.|
 
 ## See also
 
