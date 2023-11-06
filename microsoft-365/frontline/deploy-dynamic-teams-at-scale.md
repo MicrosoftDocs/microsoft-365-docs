@@ -16,7 +16,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 11/03/2023
+ms.date: 11/06/2023
 
 ---
 
@@ -76,7 +76,10 @@ Team membership is automatically managed over time through the power of dynamic 
 
     :::image type="content" source="media/dtas-prefix.png" alt-text="Screenshot of the prefix, team template, and team owner account fields." lightbox="media/dtas-prefix.png":::
 
-7. Optionally, choose a team template. The team template you choose defines the channel structure for all your frontline teams. [Learn more about Teams templates](/microsoftteams/get-started-with-teams-templates-in-the-admin-console).
+7. Optionally, choose a team template. The team template you choose defines the channel structure for all your frontline teams. [Learn more about team templates](/microsoftteams/get-started-with-teams-templates-in-the-admin-console).
+
+    > [!NOTE]
+    > Currently, only team templates that are set to the English (United States) locale are supported. Keep in mind that the locale doesn't affect translation of the template or data residency. The locale setting is used only to distinguish between templates that have the same name that are created in different languages.
 
 8. Enter a user account object ID to be the team owner. This account will be the owner for all frontline teams. It's recommended to choose a shared account rather than an individual person.
     1. To get a user's object ID, go to the [Azure portal](https://portal.azure.com).
