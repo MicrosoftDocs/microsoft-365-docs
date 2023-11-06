@@ -7,7 +7,7 @@ ms.author: dansimp
 author: dansimp
 ms.reviewer: kumasumit
 ms.localizationpriority: medium
-ms.date: 10/30/2023
+ms.date: 11/30/2023
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -34,21 +34,23 @@ This article is updated frequently to let you know what's new in the latest rele
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
 
 <details>
-	<summary> October-2023 (Build: 101.23082.0010 | Release version: 30.123082.0010.0)</summary>
+	<summary> November-2023 (Build: 101.23082.0011 | Release version: 30.123082.0011.0)</summary>
 
-## October-2023 Build: 101.23082.0010 | Release version: 30.123082.0010.0
+## November-2023 Build: 101.23082.0011 | Release version: 30.123082.0011.0
 
-&ensp;Released: **October 31,2023**<br/>
-&ensp;Published: **October 31,2023**<br/>
-&ensp;Build: **101.23082.0010**<br/>
-&ensp;Release version: **30.123082.0010.0**<br/>
+&ensp;Released: **November 1,2023**<br/>
+&ensp;Published: **November 1,2023**<br/>
+&ensp;Build: **101.23082.0011**<br/>
+&ensp;Release version: **30.123082.0011.0**<br/>
 &ensp;Engine version: **1.1.23070.1002**<br/>
 &ensp;Signature version: **1.393.1305.0**<br/>
 
 **What's new**
-This new release is build over October 2023 release (`101.23082.0009``) with addition of following change. There's no change for other customers and upgrading is optional.
+This new release is build over October 2023 release (`101.23082.0009``) with addition of following changes. There's no change for other customers and upgrading is optional.
 
 Fix for immutable mode of auditd when supplementary subsystem is ebpf:  In ebpf mode all mdatp audit rules should be cleaned after switching to ebpf and rebooting.  After reboot, mdatp audit rules were not cleaned due to which it was resulting in hang of the server.  The fix cleans these rules, user should not see any mdatp rules loaded on reboot
+
+Fix for MDE not starting up on RHEL 6.
 
 **Known issues**
 
@@ -75,8 +77,10 @@ sudo systemctl disable mdatp
 ```
 </details>
 
+
 <details>
 	<summary> October-2023 (Build: 101.23082.0009 | Release version: 30.123082.0009.0)</summary>
+
 
 ## October-2023 Build: 101.23082.0009 | Release version: 30.123082.0009.0
 
@@ -117,6 +121,7 @@ sudo systemctl disable mdatp
 
 <details>
 	<summary> October-2023 (Build: 101.23082.0006 | Release version: 30.123082.0006.0)</summary>
+
 
 ## October-2023 Build: 101.23082.0006 | Release version: 30.123082.0006.0
 
@@ -190,6 +195,7 @@ sudo systemctl disable mdatp
 <details>
 	<summary> September-2023 (Build: 101.23072.0021 | Release version: 30.123072.0021.0)</summary>
 
+
 ## September-2023 Build: 101.23072.0021 | Release version: 30.123072.0021.0
 
 &ensp;Released: **September 11,2023**<br/>
@@ -234,6 +240,7 @@ sudo systemctl disable mdatp
 
 <details>
 	<summary> July-2023 (Build: 101.23062.0010 | Release version: 30.123062.0010.0)</summary>
+
 
 ## July-2023 Build: 101.23062.0010 | Release version: 30.123062.0010.0
 
@@ -289,6 +296,7 @@ sudo systemctl disable mdatp
 <details>
 	<summary> July-2023 (Build: 101.23052.0009 | Release version: 30.123052.0009.0)</summary>
 
+
 ## July-2023 Build: 101.23052.0009 | Release version: 30.123052.0009.0
 
 &ensp;Released: **July 10,2023**<br/>
@@ -333,6 +341,7 @@ sudo systemctl disable mdatp
 
 <details>
 	<summary> June-2023 (Build: 101.98.89 | Release version: 30.123042.19889.0)</summary>
+
 
 ## June-2023 Build: 101.98.89 | Release version: 30.123042.19889.0
 
@@ -380,6 +389,7 @@ sudo systemctl disable mdatp
 
 <details>
 	<summary> May-2023 (Build: 101.98.64 | Release version: 30.123032.19864.0)</summary>
+
 
 ## May-2023 Build: 101.98.64 | Release version: 30.123032.19864.0
 
@@ -431,6 +441,7 @@ sudo systemctl disable mdatp
 <details>
 	<summary> April-2023 (Build: 101.98.58 | Release version: 30.123022.19858.0)</summary>
 
+
 ## April-2023 Build: 101.98.58 | Release version: 30.123022.19858.0
 
 &ensp;Released: **April 20,2023**<br/>
@@ -452,7 +463,7 @@ sudo systemctl disable mdatp
 
 **Known issues**
 
-- While upgrading mdatp to version `101.94.13` or later, you might notice that health is false, with health_issues as "no active supplementary event provider". This may happen due to misconfigured/conflicting auditd rules on existing machines. To mitigate the issue, the auditd rules on the existing machines need to be fixed. The following commands can help you to identify such auditd rules (commands need to be run as super user). Take a backup of following file: /etc/audit/rules.d/audit.rules as these steps are only to identify failures.
+- While upgrading mdatp to version `101.94.13` or later, you might notice that health is false, with health_issues as "no active supplementary event provider". This can happen due to misconfigured/conflicting auditd rules on existing machines. To mitigate the issue, the auditd rules on the existing machines need to be fixed. The following commands can help you to identify such auditd rules (commands need to be run as super user). Take a backup of following file: /etc/audit/rules.d/audit.rules as these steps are only to identify failures.
 
 ```bash
 echo -c >> /etc/audit/rules.d/audit.rules
@@ -485,6 +496,7 @@ sudo systemctl disable mdatp
 <details>
 	<summary> March-2023 (Build: 101.98.30 | Release version: 30.123012.19830.0)</summary>
 
+
 ## March-2023 Build: 101.98.30 | Release version: 30.123012.19830.0
 
 &ensp;Released: **March , 20,2023**<br/>
@@ -493,7 +505,6 @@ sudo systemctl disable mdatp
 &ensp;Release version: **30.123012.19830.0**<br/>
 &ensp;Engine version: **1.1.19900.2**<br/>
 &ensp;Signature version: **1.379.1299.0**<br/>
-	
 **What's new**
 - This new release is build over March 2023 release (`101.98.05``) with a fix for Live response commands failing for one of our customers. There's no change for other customers and upgrade is optional. 
 	
@@ -529,6 +540,7 @@ In case the issue reappears with some different denials. We need to run the miti
 <details>
 	<summary> March-2023 (Build: 101.98.05 | Release version: 30.123012.19805.0)</summary>
 
+
 ## March-2023 (Build: 101.98.05 | Release version: 30.123012.19805.0)
 
 &ensp;Released: **March , 08,2023**<br/>
@@ -559,8 +571,7 @@ In case the issue reappears with some different denials. We need to run the miti
 	
 **Known issues**
 
-- While upgrading mdatp to version 101.94.13, you may notice that health is false, with health_issues as "no active supplementary event provider". This may happen due to misconfigured/conflicting auditd rules on existing machines. To mitigate the issue, the auditd rules on the existing machines need to be fixed. The following steps can help you to identify such auditd rules (these commands need to be run as super user). Make sure to back up following file: `/etc/audit/rules.d/audit.rules`` as these steps are only to identify failures.
-
+- While upgrading mdatp to version 101.94.13, you might notice that health is false, with health_issues as "no active supplementary event provider". This can happen due to misconfigured/conflicting auditd rules on existing machines. To mitigate the issue, the auditd rules on the existing machines need to be fixed. The following steps can help you to identify such auditd rules (these commands need to be run as super user). Make sure to back up following file: `/etc/audit/rules.d/audit.rules`` as these steps are only to identify failures.
 
 ```bash
 echo -c >> /etc/audit/rules.d/audit.rules
@@ -593,6 +604,7 @@ sudo systemctl disable mdatp
 <details>
   <summary>Jan-2023 (Build: 101.94.13 | Release version: 30.122112.19413.0)</summary>
 
+
 ## Jan-2023 (Build: 101.94.13 | Release version: 30.122112.19413.0)
 
 &ensp;Released: **January 10, 2023**<br/>
@@ -618,7 +630,7 @@ sudo systemctl disable mdatp
 
 **Known issues**
 
-- While upgrading mdatp to version `101.94.13`, you may notice that health is false, with health_issues as "no active supplementary event provider". This may happen due to misconfigured/conflicting auditd rules on existing machines. To mitigate the issue, the auditd rules on the existing machines need to be fixed. The following steps can help you to identify such auditd rules (these commands need to be run as super user). Take a backup of following file: `/etc/audit/rules.d/audit.rules` as these steps are only to identify failures.
+- While upgrading mdatp to version `101.94.13`, you might notice that health is false, with health_issues as "no active supplementary event provider". This can happen due to misconfigured/conflicting auditd rules on existing machines. To mitigate the issue, the auditd rules on the existing machines need to be fixed. The following steps can help you to identify such auditd rules (these commands need to be run as super user). Take a backup of following file: `/etc/audit/rules.d/audit.rules` as these steps are only to identify failures.
 
 ```bash
 echo -c >> /etc/audit/rules.d/audit.rules
@@ -652,6 +664,7 @@ sudo systemctl disable mdatp
 
 <details>
   <summary>Nov-2022 (Build: 101.85.27 | Release version: 30.122092.18527.0)</summary>
+
 
 ## Nov-2022 (Build: 101.85.27 | Release version: 30.122092.18527.0)
 
@@ -703,6 +716,7 @@ sudo systemctl disable mdatp
 <details>
   <summary>Sep-2022 (Build: 101.80.97 | Release version: 30.122072.18097.0)</summary>
 
+
 ## Sep-2022 (Build: 101.80.97 | Release version: 30.122072.18097.0)
 
 &ensp;Released: **September 14, 2022**<br/>
@@ -731,10 +745,16 @@ As an alternative approach, follow the instructions to [uninstall](/microsoft-36
 </br>
 
 <br/><br/>
+<br/><br/>
+<br/><br/>
+<br/><br/>
+<br/><br/>
+<br/><br/>
 </details>
 
 <details>
    <summary>Aug-2022 (Build: 101.78.13 | Release version: 30.122072.17813.0)</summary>
+
 
 ## Aug-2022 (Build: 101.78.13 | Release version: 30.122072.17813.0)
 
@@ -747,15 +767,21 @@ As an alternative approach, follow the instructions to [uninstall](/microsoft-36
 
  **What's new**
 
- - Rolled back due to reliability issues
+- Rolled back due to reliability issues
 
  </br>
 
+ <br/><br/>
+ <br/><br/>
+ <br/><br/>
+ <br/><br/>
+ <br/><br/>
  <br/><br/>
  </details>
 
 <details>
   <summary>Aug-2022 (Build: 101.75.43 | Release version: 30.122071.17543.0)</summary>
+
 
 ## Aug-2022 (Build: 101.75.43 | Release version: 30.122071.17543.0)
 
@@ -776,10 +802,16 @@ As an alternative approach, follow the instructions to [uninstall](/microsoft-36
 </br>
 
 <br/><br/>
+<br/><br/>
+<br/><br/>
+<br/><br/>
+<br/><br/>
+<br/><br/>
 </details>
 
 <details>
   <summary>Jul-2022 (Build: 101.73.77 | Release version: 30.122062.17377.0)</summary>
+
 
 ## Jul-2022 (Build: 101.73.77 | Release version: 30.122062.17377.0)
 
@@ -799,10 +831,16 @@ As an alternative approach, follow the instructions to [uninstall](/microsoft-36
 </br>
 
 <br/><br/>
+<br/><br/>
+<br/><br/>
+<br/><br/>
+<br/><br/>
+<br/><br/>
 </details>
 
 <details>
   <summary>Jun-2022 (Build: 101.71.18 | Release version: 30.122052.17118.0)</summary>
+
 
 &ensp;Released: **June 24, 2022**<br/>
 &ensp;Published: **June 24, 2022**<br/>
@@ -821,10 +859,16 @@ As an alternative approach, follow the instructions to [uninstall](/microsoft-36
 </br>
 
 <br/><br/>
+<br/><br/>
+<br/><br/>
+<br/><br/>
+<br/><br/>
+<br/><br/>
 </details>
 
 <details>
   <summary>May-2022 (Build: 101.68.80 | Release version: 30.122042.16880.0)</summary>
+
 
 ## May-2022 (Build: 101.68.80 | Release version: 30.122042.16880.0)
 
@@ -844,10 +888,16 @@ As an alternative approach, follow the instructions to [uninstall](/microsoft-36
 </br>
 
 <br/><br/>
+<br/><br/>
+<br/><br/>
+<br/><br/>
+<br/><br/>
+<br/><br/>
 </details>
 
 <details>
 <summary>May-2022 (Build: 101.65.77 | Release version: 30.122032.16577.0)</summary>
+
 
 ## May-2022 (Build: 101.65.77 | Release version: 30.122032.16577.0)
 
@@ -865,6 +915,7 @@ As an alternative approach, follow the instructions to [uninstall](/microsoft-36
 </details><details>
 <summary>Mar-2022 (Build: 101.62.74 | Release version: 30.122022.16274.0)</summary>
 
+
 &ensp;Released: **Mar 24, 2022**<br/>
 &ensp;Published: **Mar 24, 2022**<br/>
 &ensp;Build: **101.62.74**<br/>
@@ -878,6 +929,7 @@ As an alternative approach, follow the instructions to [uninstall](/microsoft-36
 <br/><br/>
 </details><details>
 <summary>Mar-2022 (Build: 101.60.93 | Release version: 30.122012.16093.0)</summary>
+
 
 ## Mar-2022 (Build: 101.60.93 | Release version: 30.122012.16093.0)
 
@@ -894,6 +946,7 @@ As an alternative approach, follow the instructions to [uninstall](/microsoft-36
 </details><details>
 <summary>Mar-2022 (Build: 101.60.05 | Release version: 30.122012.16005.0)</summary>
 
+
 &ensp;Released: **Mar 3, 2022**<br/>
 &ensp;Published: **Mar 3, 2022**<br/>
 &ensp;Build: **101.60.05**<br/>
@@ -907,6 +960,7 @@ As an alternative approach, follow the instructions to [uninstall](/microsoft-36
 <br/><br/>
 </details><details>
 <summary>Feb-2022 (Build: 101.58.80 | Release version: 30.122012.15880.0)</summary>
+
 
 ## Feb-2022 (Build: 101.58.80 | Release version: 30.122012.15880.0)
 
@@ -925,6 +979,7 @@ As an alternative approach, follow the instructions to [uninstall](/microsoft-36
 </details><details>
 <summary>Jan-2022 (Build: 101.56.62 | Release version: 30.121122.15662.0)</summary>
 
+
 ## Jan-2022 (Build: 101.56.62 | Release version: 30.121122.15662.0)
 
 &ensp;Released: **Jan 26, 2022**<br/>
@@ -939,6 +994,7 @@ As an alternative approach, follow the instructions to [uninstall](/microsoft-36
 <br/><br/>
 </details><details>
 <summary>Jan-2022 (Build: 101.53.02 | Release version: (30.121112.15302.0)</summary>
+
 
 &ensp;Released: **Jan 8, 2022**<br/>
 &ensp;Published: **Jan 8, 2022**<br/>
@@ -960,7 +1016,8 @@ As an alternative approach, follow the instructions to [uninstall](/microsoft-36
 
   <p><b> What's new </b></p>
 
-   - Added a capability to detect vulnerable log4j jars in use by Java applications. The machine is periodically inspected for running Java processes with loaded log4j jars. The information is reported to the Microsoft Defender for Endpoint backend and is exposed in the Vulnerability Management area of the portal.
+
+- Added a capability to detect vulnerable log4j jars in use by Java applications. The machine is periodically inspected for running Java processes with loaded log4j jars. The information is reported to the Microsoft Defender for Endpoint backend and is exposed in the Vulnerability Management area of the portal.
 
    </details>
 
@@ -971,6 +1028,7 @@ As an alternative approach, follow the instructions to [uninstall](/microsoft-36
   Release version: 30.121092.14776.0</b></p>
 
   <p><b>What's new</b></p>
+
 
    - Added a new switch to the command-line tool to control whether archives are scanned during on-demand scans. This can be configured through mdatp config scan-archives --value [enabled/disabled]. By default, this setting is set to enabled.
 
@@ -985,6 +1043,7 @@ As an alternative approach, follow the instructions to [uninstall](/microsoft-36
   Release version:<b> 30.121082.14513.0 </b></p>
 
   <p><b>What's new</b></p>
+
 
   - Beginning with this version, we're bringing Microsoft Defender for Endpoint support to the following distros:
 
@@ -1004,6 +1063,7 @@ As an alternative approach, follow the instructions to [uninstall](/microsoft-36
 
    <p><b>What's new</b></p>
 
+
   - Added new switches to the command-line tool:
     - Control degree of parallelism for on-demand scans. This can be configured through `mdatp config maximum-on-demand-scan-threads --value [number-between-1-and-64]`. By default, a degree of parallelism of `2` is used.
     - Control whether scans after security intelligence updates are enabled or disabled. This can be configured through `mdatp config scan-after-definition-update --value [enabled/disabled]`. By default, this setting is set to `enabled`.
@@ -1020,7 +1080,8 @@ As an alternative approach, follow the instructions to [uninstall](/microsoft-36
 
    <p><b>What's new</b></p>
 
-  - Performance improvements & bug fixes
+
+- Performance improvements & bug fixes
 
    </details>
 
@@ -1032,7 +1093,8 @@ As an alternative approach, follow the instructions to [uninstall](/microsoft-36
 
    <p><b>What's new</b></p>
 
-   - Performance improvements & bug fixes
+
+- Performance improvements & bug fixes
 
    </details>
 
@@ -1043,6 +1105,7 @@ As an alternative approach, follow the instructions to [uninstall](/microsoft-36
    Release version:<b> 30.121042.12964.0</b></p>
 
    <p><b>What's new</b></p>
+
 
    - Beginning with this version, threats detected during on-demand antivirus scans triggered through the command-line client are automatically remediated. Threats detected during scans triggered through the user interface still require manual action.
    - `mdatp diagnostic real-time-protection-statistics` now supports two more switches:
@@ -1060,6 +1123,7 @@ As an alternative approach, follow the instructions to [uninstall](/microsoft-36
 
    <p><b>What's new</b></p>
 
+
    - Microsoft Defender for Endpoint on Linux is now available in preview for US Government customers. For more information, see [Microsoft Defender for Endpoint for US Government customers](gov.md).
    - Fixed an issue where usage of Microsoft Defender for Endpoint on Linux on systems with FUSE filesystems was leading to OS hang
    - Performance improvements & other bug fixes
@@ -1074,7 +1138,8 @@ As an alternative approach, follow the instructions to [uninstall](/microsoft-36
 
    <p><b>What's new</b></p>
 
-   - Performance improvements & bug fixes
+
+- Performance improvements & bug fixes
 
    </details>
 
@@ -1085,6 +1150,7 @@ As an alternative approach, follow the instructions to [uninstall](/microsoft-36
    Release version: 30.121021.12364.0</b></p>
 
    <p><b>What's new</b></p>
+
 
    - Performance improvement for the situation where an entire mount point is added to the antivirus exclusion list. Prior to this version, the product processed file activity originating from the mount point. Beginning with this version, file activity for excluded mount points is suppressed, leading to better product performance
    - Added a new option to the command-line tool to view information about the last on-demand scan. To view information about the last on-demand scan, run `mdatp health --details antivirus`
@@ -1099,6 +1165,7 @@ As an alternative approach, follow the instructions to [uninstall](/microsoft-36
 
   <p>What's new</b></p>
 
+
    - EDR for Linux is now [generally available](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/edr-for-linux-is-now-is-generally-available/ba-p/2048539)
    - Added a new command-line switch (`--ignore-exclusions`) to ignore AV exclusions during custom scans (`mdatp scan custom`)
    - Extended `mdatp diagnostic create` with a new parameter (`--path [directory]`) that allows the diagnostic logs to be saved to a different directory
@@ -1106,5 +1173,4 @@ As an alternative approach, follow the instructions to [uninstall](/microsoft-36
 
    </details>
 
-</details>
-[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+
