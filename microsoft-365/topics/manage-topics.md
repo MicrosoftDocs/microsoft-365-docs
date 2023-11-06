@@ -28,13 +28,13 @@ description: Learn how to manage topics in the topic center in Topics.
 
 In the Topics topic center, a knowledge manager can view the **Manage topics** page to review topics that have been identified in the source locations as specified by your knowledge admin.  
 
-:::image type="content" alt-text="Screenshot that shows the Topic Center." source="../media/topics/knowledge-management/manage-topics-view.png":::
+:::image type="content" alt-text="Screenshot that shows the Topic Center." source="../media/knowledge-management/manage-topics-view.png":::
 
 ## Topic status
 
 Knowledge managers help to guide discovered topics through the various topic lifecycle statuses: **Suggested**, **Confirmed**, **Published**, and **Removed**.
 
-   ![Topic Lifecycle chart.](../media/topics/knowledge-management/topic-lifecycle-topics.png)
+   ![Topic Lifecycle chart.](../media/knowledge-management/topic-lifecycle-topics.png)
 
 - **Suggested**: A topic has been identified by AI and has enough supporting resources, connections, and properties. (These are marked as a **Suggested Topic** in the UI.)
 
@@ -76,7 +76,7 @@ In the topic center, a knowledge manager can review topics that have been identi
 
 On the **Manage topics** page, topics that were discovered in your specified SharePoint source locations will be labeled as **Suggested** in the status column. If needed, a knowledge manager can review unconfirmed topics and choose to confirm or remove them.
 
-   ![Screenshot of suggested topics.](../media/topics/knowledge-management/suggested-topics-filtered-view.png)
+   ![Screenshot of suggested topics.](../media/knowledge-management/suggested-topics-filtered-view.png)
 
 To review a suggested topic:
 
@@ -125,7 +125,7 @@ You can still choose to reject a confirmed topic. To reject a confirmed topic, g
 
 On the **Manage topics** page, topics that were discovered in your specified SharePoint source locations will show a **Published** status. Published topics have been edited so that specific information will always appear to whoever encounters the page. Manually created topics are listed here as well.
 
-   ![Screenshot of published topics.](../media/topics/knowledge-management/published-topics-filtered-view.png)
+   ![Screenshot of published topics.](../media/knowledge-management/published-topics-filtered-view.png)
 
 ## Removed topics
 
@@ -137,7 +137,7 @@ Removed topics can later be added back as viewable topics if needed. If you want
 
 2. Select **Restore**.
 
-   ![Screenshot of Removed tab showing the Restore option.](../media/topics/knowledge-management/restore-removed-topic.png)
+   ![Screenshot of Removed tab showing the Restore option.](../media/knowledge-management/restore-removed-topic.png)
 
 ## Topic count dashboard
 
@@ -145,7 +145,7 @@ This chart in the dashboard view lets you see the number of topics in your Topic
 
 Knowledge managers might see a different count of topics represented in the list of topics on the **Manage topics** page than they see in the dashboard. This is because a knowledge manager might not have access to all topics. The count presented in the dashboard view is taken before applying permission-trimming.
 
-:::image type="content" alt-text="Screenshot of topic count dashboard." source="../media/topics/knowledge-management/trend-of-topics-graph.png":::
+:::image type="content" alt-text="Screenshot of topic count dashboard." source="../media/knowledge-management/trend-of-topics-graph.png":::
 
 ## Topic Origin filter
 

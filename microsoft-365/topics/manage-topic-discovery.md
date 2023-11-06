@@ -28,7 +28,7 @@ You can manage topic discovery settings in the [Microsoft 365 admin center](http
 1. In the Microsoft 365 admin center, select **Settings**, then **Org settings**.
 2. On the **Services** tab, select **Topics**.
 
-    ![Screenshot of the Services tab with Topics selected.](../media/topics/knowledge-management/org-settings-topics.png)
+    ![Screenshot of the Services tab with Topics selected.](../media/knowledge-management/org-settings-topics.png)
 
 3. Select the **Topic discovery** tab. See the following sections for information about each setting.
 

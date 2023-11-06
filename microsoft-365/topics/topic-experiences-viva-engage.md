@@ -41,8 +41,8 @@ For Viva-licensed tenants, Viva Engage admins will work from [Manage topics](man
 
 With Topics in Viva Engage, you'll be able to share knowledge and explore more topics in your organization. For example, highlighted topics can appear in conversations and you can provide more content in your Viva Engage posts using the topic picker.
 
-![Screenshot showing topic card when hovering on topic in published Viva Engage post.](../media/topics/knowledge-management/viva-engage-topic-post.png)
+![Screenshot showing topic card when hovering on topic in published Viva Engage post.](../media/knowledge-management/viva-engage-topic-post.png)
 
-![Screenshot showing topic picker when drafting a Viva Engage post.](../media/topics/knowledge-management/viva-engage-topic-picker.png)
+![Screenshot showing topic picker when drafting a Viva Engage post.](../media/knowledge-management/viva-engage-topic-picker.png)
 
 Attaching Viva Engage threads with Topics will have the advantage of ensuring that Viva Engage content shows up across the Microsoft 365 suite wherever the Topics knowledge experiences surface. 

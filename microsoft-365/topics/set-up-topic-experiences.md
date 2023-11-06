@@ -81,14 +81,14 @@ You can take either path through your Microsoft 365 admin center to set up Topic
 
 3. This will take you to the Viva Topics admin page. Choose **Deploy Topics in 2 steps** to enable Topics for your organization. This will bring up the setup pane.
 
-    ![Screenshot of the Setup page.](../media/topics/knowledge-management/mac-setup-2.png)
+    ![Screenshot of the Setup page.](../media/knowledge-management/mac-setup-2.png)
 
 >[!NOTE]
 >When you set up Topics, some settings will be chosen by default. You can [change these settings after you complete your setup.](#manage-topics). [Learn more about why some settings are recommended by default](plan-topic-experiences.md).
 
 ### Choose SharePoint sites
 
-![Screenshot of the SharePoint setup page.](../media/topics/knowledge-management/set-up-sharepoint.png)
+![Screenshot of the SharePoint setup page.](../media/knowledge-management/set-up-sharepoint.png)
 
 1. Choose which SharePoint sites Topics can source information from.
     - **All sites**: All SharePoint sites in your organization. This includes current and future sites.
@@ -100,7 +100,7 @@ You can take either path through your Microsoft 365 admin center to set up Topic
 
 ### Create your topic center
 
-![Screenshot of the topic center setup page.](../media/topics/knowledge-management/set-up-topic-center.png)
+![Screenshot of the topic center setup page.](../media/knowledge-management/set-up-topic-center.png)
 
 On the **Topic center** page, you can create your topic center site where users can view topic pages and manage topics.
 
@@ -193,7 +193,7 @@ On the **Topic visibility** page, you'll choose who can see topics.
     - **Only selected people or security groups**
     - **No one**
 
-    ![Screenshot of the who can see topics options.](../media/topics/knowledge-management/ksetup2.png)
+    ![Screenshot of the who can see topics options.](../media/knowledge-management/ksetup2.png)
 
 3. Select **Save**.
 
@@ -204,7 +204,7 @@ On the **Topic visibility** page, you'll choose who can see topics.
 
 In the **Topic permissions** page, you choose who can create, edit, and manage topics.
 
-![Screenshot of the topic permissions page.](../media/topics/knowledge-management/topic-permissions.png)
+![Screenshot of the topic permissions page.](../media/knowledge-management/topic-permissions.png)
 
 1. First, go to the **Who can create and edit topics** section. You can select:
     - **Everyone in my organization** [Learn how to enable this option if it's greyed out](#enable-the-everyone-in-my-organization-option).
@@ -228,7 +228,7 @@ In the **Topic permissions** page, you choose who can create, edit, and manage t
 
 On the **Topic center** page, you can create your topic center site where users can view topic pages and manage topics.
 
-![Screenshot of the Topic center page.](../media/topics/knowledge-management/manage-topic-center.png)
+![Screenshot of the Topic center page.](../media/knowledge-management/manage-topic-center.png)
 
 1. Under **Topic center name**, choose **Edit**.
 

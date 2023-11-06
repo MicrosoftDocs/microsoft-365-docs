@@ -82,6 +82,6 @@ You can save as a draft a new topic or a revised topic that you're working on, b
 Two people can't edit the same page at the same time, no matter if it’s a draft or not.
 If one person has a page open for editing, and another person tries to edit the page, the user is shown a message that says the page is being edited by someone else.
   
-   ![Screenshot showing a message that the topic is being edited by someone else.](../media/topics/knowledge-management/draft-one-edit-page-topics.png)
+   ![Screenshot showing a message that the topic is being edited by someone else.](../media/knowledge-management/draft-one-edit-page-topics.png)
 
 You can ask the person who has the page open for editing to "release" the page by saving and closing, discarding changes, or publishing. However, if the page has no activity for 5 minutes, the editing session will automatically time out and the page will be "unlocked," unless someone closes the browser within 5 minutes.

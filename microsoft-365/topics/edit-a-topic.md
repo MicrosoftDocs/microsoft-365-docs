@@ -52,7 +52,7 @@ You can edit a topic by opening the topic page from a topic highlight, and then 
 
 1. On the topic page, select **Edit**. This lets you make changes as needed to the topic page.
 
-   ![Screenshot showing the Edit button on the topic page.](../media/topics/knowledge-management/topic-page-edit.png)  
+   ![Screenshot showing the Edit button on the topic page.](../media/knowledge-management/topic-page-edit.png)  
 
 1. In the **Alternate Names** section, type any other names that the topic might be referred to.
 
@@ -91,11 +91,11 @@ You can edit a topic by opening the topic page from a topic highlight, and then 
 
     You can add a connection to a different topic by selecting the Connect to a related topic button, typing the name of the related topic, and selecting it from the search results.
 
-    ![Screenshot of topic picker in related topics.](../media/topics/knowledge-management/topic-picker-related.png)
+    ![Screenshot of topic picker in related topics.](../media/knowledge-management/topic-picker-related.png)
 
     You can then give a description of how the topics are related. Select **Update**
 
-    ![Screenshot of relationship description on related topics.](../media/topics/knowledge-management/topics-relationships-related.png)
+    ![Screenshot of relationship description on related topics.](../media/knowledge-management/topics-relationships-related.png)
 
     The related topic added will display as a connected topic.
 
@@ -103,14 +103,14 @@ You can edit a topic by opening the topic page from a topic highlight, and then 
 
     To remove a related topic, select the line segment corresponding to the topic you want to remove, then select the Remove relationship icon.
 
-    ![Screenshot of relationship description on related topics with option to remove relationship.](../media/topics/knowledge-management/topics-related-description.png)
+    ![Screenshot of relationship description on related topics with option to remove relationship.](../media/knowledge-management/topics-related-description.png)
 
     Dotted lines represent connections suggested by AI. Users can optionally confirm or remove these connections by selecting the line segment between two nodes.
 
-    ![Screenshot of pane to confirm topic relationships.](../media/topics/knowledge-management/topics-relationships.png)
+    ![Screenshot of pane to confirm topic relationships.](../media/knowledge-management/topics-relationships.png)
 
 1. You can also add static items to the page (such as text, images, or links) by selecting the canvas icon, which you can find below the short description. Selecting it opens the SharePoint toolbox from which you can choose the item you want to add to the page.
 
-   ![Screenshot of the available canvas icons.](../media/topics/knowledge-management/webpart-library-topics.png)
+   ![Screenshot of the available canvas icons.](../media/knowledge-management/webpart-library-topics.png)
 
 1. Select **Publish** or **Republish** to save your changes. **Republish** will be your available option if the topic has been published previously.

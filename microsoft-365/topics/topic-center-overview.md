@@ -34,7 +34,7 @@ The topic center is created during Topics setup. After setup completes, an admin
 1. In the Microsoft 365 admin center, select **Settings**, then **Org settings**.
 2. On the **Services** tab, choose **Topics**.
 
-    ![Screenshot of the Services tab with Topics selected.](../media/topics/knowledge-management/org-settings-topics.png)
+    ![Screenshot of the Services tab with Topics selected.](../media/knowledge-management/org-settings-topics.png)
 
 3. Select the **Topic center** tab. Under **Site address** is a link to your topic center.
 

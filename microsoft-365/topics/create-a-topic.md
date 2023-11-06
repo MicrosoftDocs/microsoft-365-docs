@@ -41,11 +41,11 @@ You can create a new topic from two locations:
 
 - Topic center home page: Any licensed user with the **Who can create or edit topics** permission (contributors) can create a new topic from the topic center by selecting the **New** menu and select **Topic Page**.
 
-    ![Screenshot of the topic center home page with Topic Page selected in the New menu.](../media/topics/knowledge-management/new-topics-topics.png)  
+    ![Screenshot of the topic center home page with Topic Page selected in the New menu.](../media/knowledge-management/new-topics-topics.png)  
 
 - **Manage topics** page: Any licensed user who has **Who can manage topics** permission (knowledge managers) can create a new topic from the **Manage topics** page in the topic center by selecting **New topic page**.
 
-    ![Screenshot of the Manage topics page with New topic page selected.](../media/topics/knowledge-management/new-topic-topic-center-topics.png)  
+    ![Screenshot of the Manage topics page with New topic page selected.](../media/knowledge-management/new-topic-topic-center-topics.png)  
 
 ### To create a new topic
 
@@ -88,11 +88,11 @@ You can create a new topic from two locations:
 
     You can add a connection to a different topic by selecting the Connect to a related topic button, typing the name of the related topic, and selecting it from the search results.
 
-    ![Screenshot of topic picker in related topics.](../media/topics/knowledge-management/topic-picker-related.png)
+    ![Screenshot of topic picker in related topics.](../media/knowledge-management/topic-picker-related.png)
 
     You can then give a description of how the topics are related. Select **Update**
 
-    ![Screenshot of relationship description on related topics.](../media/topics/knowledge-management/topics-relationships-related.png)
+    ![Screenshot of relationship description on related topics.](../media/knowledge-management/topics-relationships-related.png)
 
     The related topic added will display as a connected topic.
 
@@ -100,15 +100,15 @@ You can create a new topic from two locations:
 
     To remove a related topic, select the line segment corresponding to the topic you want to remove, then select the Remove relationship icon.
 
-    ![Screenshot of relationship description on related topics with option to remove relationship.](../media/topics/knowledge-management/topics-related-description.png)
+    ![Screenshot of relationship description on related topics with option to remove relationship.](../media/knowledge-management/topics-related-description.png)
 
     Dotted lines represent connections suggested by AI. Users can optionally confirm or remove these connections by selecting the line segment between two nodes.
 
-    ![Screenshot of pane to confirm topic relationships.](../media/topics/knowledge-management/topics-relationships.png)
+    ![Screenshot of pane to confirm topic relationships.](../media/knowledge-management/topics-relationships.png)
 
 1. You can also add static items to the page (such as text, images, or links) by selecting the canvas icon, which you can find below the short description. Selecting it opens the SharePoint toolbox from which you can choose the item you want to add to the page.
 
-   ![Screenshot of the icon to add a new section.](../media/topics/knowledge-management/webpart-library-topics.png)
+   ![Screenshot of the icon to add a new section.](../media/knowledge-management/webpart-library-topics.png)
 
 1. Select **Publish** to save your changes.
 
