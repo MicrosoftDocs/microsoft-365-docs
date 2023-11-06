@@ -28,7 +28,7 @@ As a Compliance Manager or IT administrator, it's crucial to stay up-to-date on 
 
 ## Loop Storage
 
-Where Loop content is stored impacts the admin management, governance, data lifecycle, and compliance capabilities avaialable. Microsoft Loop is built on top of SharePoint, OneDrive, and [Microsoft Syntex repository services](https://devblogs.microsoft.com/microsoft365dev/introducing-syntex-repository-services-microsoft-365-superpowers-for-your-app/), which means that most of these capabilities work just like existing files in your ecosystem. Because Loop pages and components are files, they can be managed in a familiar way, within your existing workflows. To help you understand how Loop content is stored in the Microsoft ecosystem, here's a high-level diagram:
+Where Loop content is stored impacts the admin management, governance, data lifecycle, and compliance capabilities available. Microsoft Loop is built on top of SharePoint, OneDrive, and [Microsoft Syntex repository services](https://devblogs.microsoft.com/microsoft365dev/introducing-syntex-repository-services-microsoft-365-superpowers-for-your-app/), which means that most of these capabilities work just like existing files in your ecosystem. Because Loop pages and components are files, they can be managed in a familiar way, within your existing workflows. To help you understand how Loop content is stored in the Microsoft ecosystem, here's a high-level diagram:
 
 :::image type="content" source="media/loop-files-sharepoint.png" alt-text="Diagram showing that the place a Loop file is stored depends on where it was originally created.":::
 
@@ -43,12 +43,12 @@ Where the loop content was originally created determines its storage location:
 |Category|OneDrive or SharePoint|Microsoft Syntex repository services|
 |-----|-----|-----|
 |  |This column applies to Loop content:  <ul><li>Created in all other places that don't have tightly associated collaborative storage (e.g. Teams chat, Outlook email, Word for the web, Whiteboard) ➡️️ in the creator's OneDrive  <li>Created in places that have dedicated shared storage (e.g. Teams channels) ➡️️ SharePoint  </ul>|This column applies to Loop content:  <ul><li>Created inside the Loop app: Workspaces, Ideas ➡️ in Microsoft Syntex repository services, one container per Loop workspace  </ul>|
-|Foundations: Admin toggles  |**[Admin Toggles](/microsoft-365/loop/loop-components-configuration#available-policy-settings)** to turn on/off creation of and live rendering of Loop components in the Microsoft 365 ecosystem. If you enable Loop components in the Microsoft 365 ecosystem (the primary toggle), there are also a separate toggles to turn on/off Loop components specifically in Outlook or Teams chats and channels, and a toggle to turn on/off Loop components for collaborative meeting notes.  <br><br>Organizations with eCommunication regulations may choose to leave Loop components on across the Microsoft 365 ecosystem, but use the independent toggles for communication tools while evaluating the data lifecycle, governance, and compliance capabilities listed in this table.|**[Admin Toggle](/microsoft-365/loop/loop-workspaces-configuration)** to turn on/off creation of content stored in Microsoft Syntex repository services. This includes creating Loop Ideas, creating new workspaces, or creating new pages or components within a workspace.|
+|Foundations: Admin toggles  |**[Admin Toggles](/microsoft-365/loop/loop-components-configuration#available-policy-settings)** to turn on/off creation of and live rendering of Loop components in the Microsoft 365 ecosystem. If you enable Loop components in the Microsoft 365 ecosystem (the primary toggle), there are also a separate toggles to turn on/off Loop components specifically in Outlook or Teams chats and channels, and a toggle to turn on/off Loop components for collaborative meeting notes.  <br><br>Organizations with eCommunication regulations can choose to leave Loop components on across the Microsoft 365 ecosystem, but use the independent toggles for communication tools while evaluating the data lifecycle, governance, and compliance capabilities listed in this table.|**[Admin Toggle](/microsoft-365/loop/loop-workspaces-configuration)** to turn on/off creation of content stored in Microsoft Syntex repository services. This includes creating Loop Ideas, creating new workspaces, or creating new pages or components within a workspace.|
 |Foundations: GDPR  |**GDPR** data subject requests as part of the [Security and Compliance admin center](/compliance/regulatory/gdpr-data-subject-requests#data-subject-request-admin-tools) and [Purview eDiscovery workflows](/purview/ediscovery)|**GDPR** data subject requests as part of the [Security and Compliance admin center](/compliance/regulatory/gdpr-data-subject-requests#data-subject-request-admin-tools) and [Purview eDiscovery workflows](/purview/ediscovery)|
 |Foundations: EDUB  |**EUDB** compliance - [What is the EU Data Boundary?](/privacy/eudb/eu-data-boundary-learn)|**EUDB** compliance - [What is the EU Data Boundary?](/privacy/eudb/eu-data-boundary-learn)|
 |Admin Management: Intune  |Basic **Intune** [Device Management Support](/mem/intune/remote-actions/device-management) for Loop app on iOS and Android.|Basic **Intune** [Device Management Support](/mem/intune/remote-actions/device-management) for Loop app on iOS and Android.|
 |Admin Management: Conditional Access  |**[Conditional Access](/sharepoint/control-access-from-unmanaged-devices)** supported. See [manual initialization](#manually-initializing-microsoft-loop-app-for-conditional-access-management-in-microsoft-entra) for Microsoft Entra support.|**[Conditional Access](/sharepoint/control-access-from-unmanaged-devices)** supported. See [manual initialization](#manually-initializing-microsoft-loop-app-for-conditional-access-management-in-microsoft-entra) for Microsoft Entra support.|
-|Admin Management: Programmatic APIs for Loop content  |Yes, they are files in OneDrive or SharePoint and all current functionality applies.| **Not Yet Available**:  <br>API access to Loop workspace containers: this impacts third party export and eDiscovery tools, migration tools, tools used to communicate in bulk to end-users about their content such as compliance requirements, and developer APIs.|
+|Admin Management: Programmatic APIs for Loop content  |Yes, they're files in OneDrive or SharePoint and all current functionality applies.| **Not Yet Available**:  <br>API access to Loop workspace containers: this impacts third party export and eDiscovery tools, migration tools, tools used to communicate in bulk to end-users about their content such as compliance requirements, and developer APIs.|
 |Admin Management: Multi-Geo  |**[Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo)** capabilities, including creation of .loop files in a user's OneDrive in the geo that matches the user's [preferred data location](/microsoft-365/enterprise/plan-for-multi-geo#best-practices) and ability to move the user's OneDrive when their preferred data location changes.|**Not Yet Available**:  <br>**[Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo)** capabilities, including creation of .loop files in a user's Loop workspaces in the geo that matches the user's [preferred data location](/microsoft-365/enterprise/plan-for-multi-geo#best-practices).  <br>**[Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo)** rehome of Loop workspaces and contained .loop files as needed.|
 |Admin Management: User leaves organization  |When a user leaves an organization, [OneDrive retention policies](/sharepoint/retention-and-deletion) apply to the .loop files just as they do to other content created by the user.|Manage the lifetime of shared Loop workspaces like you would other collaboration artifacts, like SharePoint sites or Teams channels.|
 |Admin Management: Loop workspaces  |n/a|See [Admin Management of Loop workspaces](#admin-management-of-loop-workspaces) for a list of capabilities that are available and also not yet available.|
@@ -70,21 +70,21 @@ Where the loop content was originally created determines its storage location:
 
 ## Summary of governance, data lifecycle and compliance capabilities not yet available
 
-This section repeats capabilities which are not yet available from the table above to make it easier to evaluate the smaller list of capabilities your organization may require before using Microsoft Loop. As denoted in the summary table, the majority of the content in this section applies to Loop workspaces only, unless **noted.
+This section repeats capabilities which arent yet available from the table above to make it easier to evaluate the smaller list of capabilities your organization might require before using Microsoft Loop. As denoted in the summary table, the majority of the content in this section 'applies to Loop workspaces only, unless **noted.
 
 ### Admin Management
-- **Programmatic APIs for Loop workspace content**: API access to Loop workspace containers is not yet available. These APIs are required in order to use third party tools for export and eDiscovery, migration, communicate in bulk to end-users about their content such as compliance requirements, and developer APIs.
-- **Multi-Geo** rehome of Loop workspaces and all contained .loop files is not yet available.
-- When users delete an entire Loop workspace, or when they delete pages or components stored in a Loop workspace, these are not yet available in an **end-user visible Recycle bin**.
+- **Programmatic APIs for Loop workspace content**: API access to Loop workspace containers isn't yet available. These APIs are required in order to use third party tools for export and eDiscovery, migration, communicate in bulk to end-users about their content such as compliance requirements, and developer APIs.
+- **Multi-Geo** rehome of Loop workspaces and all contained .loop files isn't yet available.
+- When users delete an entire Loop workspace, or when they delete pages or components stored in a Loop workspace, these aren't yet available in an **end-user visible Recycle bin**.
 - See [Admin Management of Loop workspaces](#admin-management-of-loop-workspaces) for a more detailed list of specific admin capabilities using PowerShell and the SharePoint Admin Center.
 
 ### Data Lifecycle Management
-- While Retention policies are enforced if configured at the *all SharePoint site* level, **setting or overriding the *all SharePoint sites* Retention policy on an individual Loop workspace** is not yet available.
-- Retention labels are not yet available for Loop workspace content.
+- While Retention policies are enforced if configured at the *all SharePoint site* level, **setting or overriding the *all SharePoint sites* Retention policy on an individual Loop workspace** isn't yet available.
+- Retention labels aren't yet available for Loop workspace content.
 
 ### Data Loss Prevention, Information Protection
-- Data Loss Prevention (DLP) rules are enforced on all Loop content, but **DLP policy tips** are not yet displayed for **ANY Loop experiences.
-- **Sensitivity Labeling (MIP/CLP)** is not yet supported for **ANY Loop content.
+- Data Loss Prevention (DLP) rules are enforced on all Loop content, but **DLP policy tips** aren't yet displayed for **ANY Loop experiences.
+- **Sensitivity Labeling (MIP/CLP)** isn't yet supported for **ANY Loop content.
 
 **This applies to ALL Loop content, both content stored in OneDrive or SharePoint AND content stored in Microsoft Syntex repository services.
 
@@ -104,7 +104,7 @@ Admins can perform the following tasks for Loop workspaces, which are containers
 
 See more about how to use PowerShell to perform these tasks in the [Microsoft Syntex admin management documentation](/microsoft-365/syntex/powershell-syntex-intro).
 
-### Capabilities that are Not Yet Available
+### Capabilities that aren't yet available
 
 - PowerShell ability to
   - list all Loop workspaces
@@ -120,14 +120,14 @@ See more about how to use PowerShell to perform these tasks in the [Microsoft Sy
   - bulk export
   - edit sensitivity labels
   - above quota management of Loop workspaces
-  - Syntex Repository admin role integration
+  - Microsoft Syntex Repository admin role integration
 - End user Recycle Bin for deleted content
 
 
 
 ## Manually Initializing Microsoft Loop app for Conditional Access management in Microsoft Entra
 
-In order to select Microsoft Loop app from the cloud app target UX in Entra Admin Center | Protection | Conditional Access | Select what this policy applies to | select apps | Microsoft Loop, manual provisioning is required.
+In order to select Microsoft Loop app from the cloud app target UX in the Microsoft Entra admin center | Protection | Conditional Access | Select what this policy applies to | select apps | Microsoft Loop, manual provisioning is required.
 1. [Connect to Microsoft 365 with PowerShell - Microsoft 365 Enterprise | Microsoft Learn](/microsoft-365/enterprise/connect-to-microsoft-365-powershell)
 1. Copy/Paste this and hit Enter on this command:
 ```PowerShell
