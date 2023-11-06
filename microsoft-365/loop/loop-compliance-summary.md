@@ -70,7 +70,7 @@ Where the loop content was originally created determines its storage location:
 
 ## Summary of governance, data lifecycle and compliance capabilities not yet available
 
-This section repeats capabilities which arent yet available from the table above to make it easier to evaluate the smaller list of capabilities your organization might require before using Microsoft Loop. As denoted in the summary table, the majority of the content in this section 'applies to Loop workspaces only, unless **noted.
+This section repeats capabilities which aren't yet available from the table above to make it easier to evaluate the smaller list of capabilities your organization might require before using Microsoft Loop. As denoted in the summary table, the majority of the content in this section 'applies to Loop workspaces only, unless **noted.
 
 ### Admin Management
 - **Programmatic APIs for Loop workspace content**: API access to Loop workspace containers isn't yet available. These APIs are required in order to use third party tools for export and eDiscovery, migration, communicate in bulk to end-users about their content such as compliance requirements, and developer APIs.
