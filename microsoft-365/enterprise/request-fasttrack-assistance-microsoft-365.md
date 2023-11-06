@@ -6,8 +6,6 @@ __In this article__
 
 ·       How to find RFA details and status updates
 
- 
-
 How to submit an RFA in the admin center
 
 1.     After signing into the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/?linkid=2226341), select __Submit a new request__.  ![User's image](media/request-fasttrack-assistance-microsoft-365/image.png)
