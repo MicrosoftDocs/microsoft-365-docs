@@ -111,6 +111,6 @@ You can edit a topic by opening the topic page from a topic highlight, and then 
 
 1. You can also add static items to the page (such as text, images, or links) by selecting the canvas icon, which you can find below the short description. Selecting it opens the SharePoint toolbox from which you can choose the item you want to add to the page.
 
-   ![Screenshot of the available canvas icons.](../media/topics/knowledge-management/webpart-library.png)
+   ![Screenshot of the available canvas icons.](../media/topics/knowledge-management/webpart-library-topics.png)
 
 1. Select **Publish** or **Republish** to save your changes. **Republish** will be your available option if the topic has been published previously.

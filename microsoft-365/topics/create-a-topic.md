@@ -108,7 +108,7 @@ You can create a new topic from two locations:
 
 1. You can also add static items to the page (such as text, images, or links) by selecting the canvas icon, which you can find below the short description. Selecting it opens the SharePoint toolbox from which you can choose the item you want to add to the page.
 
-   ![Screenshot of the icon to add a new section.](../media/topics/knowledge-management/webpart-library.png)
+   ![Screenshot of the icon to add a new section.](../media/topics/knowledge-management/webpart-library-topics.png)
 
 1. Select **Publish** to save your changes.
 

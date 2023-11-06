@@ -77,7 +77,7 @@ There are multiple easy to find relevant topics in the organization to contribut
 
 2. **In the flow of work**: As content is read and stored in Microsoft 365, topics will be highlighted inline. When hovering over the topic name, more information will be shown on a topic card. Certain prompts can appear to provide feedback on topic cards and the user can then select the topic page and select the edit button on the top right of the topic page to [edit](#edit-and-create-topics-in-topics).  
 
-    ![Image showing editing button within the topic page.](../media/topics/knowledge-management/topic-page-editing-tc.png)
+    ![Image showing editing button within the topic page.](../media/topics/knowledge-management/topic-page-editing-tc-topics.png)
 
 3. **Search**: If there's a specific topic to edit, the user can [search for it using Microsoft Search](search.md). If there's no existing topic in the tenant, a new topic can be created. 
 
