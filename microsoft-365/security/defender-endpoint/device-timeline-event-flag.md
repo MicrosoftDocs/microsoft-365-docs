@@ -40,7 +40,7 @@ The Defender for Endpoint device timeline helps you research and investigate ano
     :::image type="content" source="images/event-side-panel.png" alt-text="Screenshot of the event side panel." lightbox="images/event-side-panel.png":::
 
    
-- All MITRE techniques are shown when there's more than 1 related technique:
+- All MITRE techniques are shown when there's more than one related technique:
 
     :::image type="content" source="images/new-timeline-mitre-techniques.png" alt-text="Screenshot of all MITRE techniques. " lightbox="images/new-timeline-mitre-techniques.png":::
 
@@ -63,7 +63,7 @@ You can gain more insight in an investigation by analyzing the events that happe
 > [!IMPORTANT]
 > Some information relates to a prereleased product feature in public preview which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-In Microsoft Defender for Endpoint, **Techniques** are an additional data type in the event timeline. Techniques provide more insight on activities associated with [MITRE ATT&CK](https://attack.mitre.org/) techniques or sub-techniques.
+In Microsoft Defender for Endpoint, **Techniques** are an additional data type in the event timeline. Techniques provide more insight on activities associated with [MITRE ATT&CK](https://attack.mitre.org/) techniques or subtechniques.
 
 This feature simplifies the investigation experience by helping analysts understand the activities that were observed on a device. Analysts can then decide to investigate further.
 
@@ -139,16 +139,16 @@ While navigating the device timeline, you can search and filter for specific eve
 
 1. Find the event that you want to flag.
 
-2. Click the flag icon in the Flag column. 
+2. Select the flag icon in the Flag column. 
 
 :::image type="content" source="images/device-flags.png" alt-text="The device timeline flag" lightbox="images/device-flags.png":::
 
 ## View flagged events
 
 1. In the timeline **Filters** section, enable **Flagged events**.
-2. Click **Apply**. Only flagged events are displayed.
+2. Select **Apply**. Only flagged events are displayed.
 
-You can apply additional filters by clicking on the time bar. This will only show events prior to the flagged event.  
+You can apply more filters by clicking on the time bar. This will only show events prior to the flagged event.  
 
 :::image type="content" source="images/device-flag-filter.png" alt-text="Screenshot that shows the device timeline flag with the filter switched on." lightbox="images/device-flag-filter.png":::
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
