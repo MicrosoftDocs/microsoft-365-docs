@@ -37,12 +37,23 @@ Where the loop content was originally created determines its storage location:
 - Created outside the Loop app in places that have dedicated shared storage (e.g. Teams channels) ➡️️ SharePoint
 - Created outside the Loop app in all other places that don't have tightly associated collaborative storage (e.g. Teams chat, Outlook email, Word for the web, Whiteboard) ➡️️ OneDrive
 
+Breaking that up into diagrams that correspond to the table columns below...
+
+The middle applies to Loop content:
+- Created in all other places that don't have tightly associated collaborative storage (e.g. Teams chat, Outlook email, Word for the web, Whiteboard) ➡️️ in the creator's OneDrive
+- Created in places that have dedicated shared storage (e.g. Teams channels) ➡️️ SharePoint
+
+:::image type="content" source="media/loop-files-onedrive.png" alt-text="Diagram showing that files created outside the Loop app are stored in OneDrive or SharePoint.":::
+
+The right column applies to Loop content:
+- Created inside the Loop app: Workspaces, Ideas ➡️ in Microsoft Syntex repository services, one container per Loop workspace
+
+:::image type="content" source="media/loop-files-syntex.png" alt-text="Diagram showing that files created inside the Loop app are stored in Microsoft Syntex.":::
 
 
 ## Summary table of admin management, governance, lifecycle and compliance capabilities based on where Loop content is stored
 |Category|OneDrive or SharePoint|Microsoft Syntex repository services|
 |-----|-----|-----|
-|  |:::image type="content" source="media/loop-files-onedrive.png" alt-text="Diagram showing that files created outside the Loop app are stored in OneDrive or SharePoint.":::|:::image type="content" source="media/loop-files-syntex.png" alt-text="Diagram showing that files created inside the Loop app are stored in Microsoft Syntex.":::|
 |  |This column applies to Loop content:  <ul><li>Created in all other places that don't have tightly associated collaborative storage (e.g. Teams chat, Outlook email, Word for the web, Whiteboard) ➡️️ in the creator's OneDrive  <li>Created in places that have dedicated shared storage (e.g. Teams channels) ➡️️ SharePoint  </ul>|This column applies to Loop content:  <ul><li>Created inside the Loop app: Workspaces, Ideas ➡️ in Microsoft Syntex repository services, one container per Loop workspace  </ul>|
 |Foundations: Admin toggles  |**[Admin Toggles](/microsoft-365/loop/loop-components-configuration#available-policy-settings)** to turn on/off creation of and live rendering of Loop components in the Microsoft 365 ecosystem. If you enable Loop components in the Microsoft 365 ecosystem (the primary toggle), there are also a separate toggles to turn on/off Loop components specifically in Outlook or Teams chats and channels, and a toggle to turn on/off Loop components for collaborative meeting notes.  <br><br>Organizations with eCommunication regulations may choose to leave Loop components on across the Microsoft 365 ecosystem, but use the independent toggles for communication tools while evaluating the data lifecycle, governance, and compliance capabilities listed in this table.|**[Admin Toggle](/microsoft-365/loop/loop-workspaces-configuration)** to turn on/off creation of content stored in Microsoft Syntex repository services. This includes creating Loop Ideas, creating new workspaces, or creating new pages or components within a workspace.|
 |Foundations: GDPR  |**GDPR** data subject requests as part of the [Security and Compliance admin center](/compliance/regulatory/gdpr-data-subject-requests#data-subject-request-admin-tools) and [Purview eDiscovery workflows](/purview/ediscovery)|**GDPR** data subject requests as part of the [Security and Compliance admin center](/compliance/regulatory/gdpr-data-subject-requests#data-subject-request-admin-tools) and [Purview eDiscovery workflows](/purview/ediscovery)|
