@@ -13,35 +13,35 @@ The FastTrack request for assistance (RFA) form is now available in the [Microso
 
 ## How to submit an RFA in the admin center
 
-1. After signing into the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/?linkid=2226341), select **Submit a new request**:  
-
-   :::image type="content" source="media/request-fasttrack-assistance-microsoft-365/fasttrack-submit-request.png" alt-text="Screenshot of the Microsoft 365 admin center page for submitting FastTrack requests for assistance.":::
+1. After signing into the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/?linkid=2226341), select **Submit a new request**:
    
-2. Read the overview to see what information is needed for an RFA, and then select **Next**.
+   :::image type="content" source="media/request-fasttrack-assistance-microsoft-365/fasttrack-submit-request.png" alt-text="Screenshot of the Microsoft 365 admin center page for submitting FastTrack requests for assistance.":::
 
-  ![Screenshot of the FastTrack request overview page.](media/request-fasttrack-assistance-microsoft-365/fasttrack-request-overview.png)
+1. Read the overview to see what information is needed for an RFA, and then select **Next**.
+   
+   ![Screenshot of the FastTrack request overview page.](media/request-fasttrack-assistance-microsoft-365/fasttrack-request-overview.png)
 
-3. Select the products for FastTrack assistance, your planned deployment date, and whether you would like assistance with any additional options (if applicable). 
+1. Select the products for FastTrack assistance, your planned deployment date, and whether you would like assistance with any additional options (if applicable). 
 
    ![Screenshot of the FastTrack choose products page.](media/request-fasttrack-assistance-microsoft-365/fasttrack-choose-products.png)
 
-4. On the **Customer details** page, enter a unique project name, your organization's service location, your preferred language, and any comments about the project.
+1. On the **Customer details** page, enter a unique project name, your organization's service location, your preferred language, and any comments about the project.
 
-  ![Screenshot of the FastTrack customer details page.](media/request-fasttrack-assistance-microsoft-365/fasttrack-customer-details.png)
+   ![Screenshot of the FastTrack customer details page.](media/request-fasttrack-assistance-microsoft-365/fasttrack-customer-details.png)
 
-5. On the **Contacts** page, enter your phone number and confirm your title.
+1. On the **Contacts** page, enter your phone number and confirm your title.
 
    ![Screenshot of the FastTrack requestor contact page.](media/request-fasttrack-assistance-microsoft-365/fasttrack-requestor-contact.png)
 
-6. Enter the primary contact and business sponsor for the request. If you’re also the primary contact, select the **Same as the requester** checkbox.
+1. Enter the primary contact and business sponsor for the request. If you’re also the primary contact, select the **Same as the requester** checkbox.
 
    ![Screenshot of the FastTrack project sponsor contact page.](media/request-fasttrack-assistance-microsoft-365/fasttrack-sponsor-contact.png)
 
-7. On the **Review** page, view your request's information and make edits, if needed. Select the checkbox next to the acknowledgement message, and then select **Submit**. 
+1. On the **Review** page, view your request's information and make edits, if needed. Select the checkbox next to the acknowledgement message, and then select **Submit**. 
 
    ![Screenshot of the FastTrack review page.](media/request-fasttrack-assistance-microsoft-365/fasttrack-request-review.png)
 
-8. After submission, receipt of your request will be confirmed, your RFA ID will be provided, and you'll be given the option to provide feedback about your experience.
+1. After submission, receipt of your request will be confirmed, your RFA ID will be provided, and you'll be given the option to provide feedback about your experience.
 
    ![Screenshot of the FastTrack request confirmation page.](media/request-fasttrack-assistance-microsoft-365/fasttrack-request-submitted.png)
 
