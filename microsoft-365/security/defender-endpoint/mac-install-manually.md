@@ -92,15 +92,22 @@ To complete this process, you must have admin privileges on the device.
 
 7. Click **Install**.
 
-3. At the end of the installation process, you'll be prompted to approve the system extensions used by the product. Select **Open Security Preferences**.
+8. Enter the password, when propmpted.
+    :::image type="content" source="images/password-2g.png" alt-text="Screenshot that shows the password dialog box.":::
+
+9. Click **Install Software**.
+
+3. At the end of the installation process, for MacOS Big Sur (11.0) or latest version, you'll be prompted to approve the system extensions used by the product. Select **Open Security Preferences**.
 
    :::image type="content" source="images/monterey-install-2.png" alt-text="The system extension approval" lightbox="images/monterey-install-2.png":::
 
-4. From the **Security & Privacy** window, select **Allow**.
+11. To enable system extentions, select **Details**.
+    :::image type="content" source="images/system-extention-image.png" alt-text="Screenshot that shows the system extentions.":::
 
-   :::image type="content" source="images/monterey-install-3.png" alt-text="The system extension security preferences1" lightbox="images/monterey-install-3.png":::
+4. From the **Security & Privacy** window, select the checkboxes next to **Microsoft Defender** and select **OK**.
+    :::image type="content" source="images/security-privacy-window-updated.png" alt-text="Screenshot that shows the security and privacy window.":::
 
-5. Repeat steps 3 & 4 for all system extensions distributed with Microsoft Defender for Endpoint on Mac.
+5. Repeat steps 11 and 12 for all system extensions distributed with Microsoft Defender for Endpoint on Mac.
 
 6. As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on Mac inspects socket traffic and reports this information to the Microsoft 365 Defender portal. When prompted to grant Microsoft Defender for Endpoint permissions to filter network traffic, select **Allow**.
 
