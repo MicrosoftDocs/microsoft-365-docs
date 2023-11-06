@@ -19,7 +19,7 @@ description: Read the preview terms and conditions for Microsoft 365 Archive (Pr
 
 # Microsoft 365 Archive public preview terms and conditions
 
-Effective Date:  September 13, 2023
+Effective Date:  November 15, 2023
 
 “Company” means the Enterprise customer that uses this Preview Feature.
 
