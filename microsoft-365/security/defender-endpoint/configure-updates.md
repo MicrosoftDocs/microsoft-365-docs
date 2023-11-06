@@ -50,7 +50,7 @@ The following table lists the available group policy settings for configuring up
 ## Group Policy
 
 > [!NOTE]
-> An updated Defender ADMX template will be published together with the 21H2 release of Windows 10. A non-localized version is available for download at https://github.com/microsoft/defender-updatecontrols.
+> An updated Defender ADMX template will be published together with the 21H2 release of Windows 10. A non-localized version is available for download at [defender-updatecontrols](https://github.com/microsoft/defender-updatecontrols) on GitHub.
 
 You can use [Group Policy](/windows/win32/srvnodes/group-policy?redirectedfrom=MSDN) to configure and manage Microsoft Defender Antivirus on your endpoints.
 
@@ -72,7 +72,7 @@ In general, you can use the following procedure to configure or change Microsoft
 
 Follow the instructions in below link to create a custom policy in Intune:
 
-[Add custom settings for Windows 10 devices in Microsoft Intune](/mem/intune/configuration/custom-settings-windows-10)
+[Add custom settings for Windows 10 devices in Microsoft Intune](/mem/intune/configuration/custom-settings-windows-10).
 
 For more information on the Defender CSP used for the gradual rollout process, see [Defender CSP](/windows/client-management/mdm/defender-csp).
 
