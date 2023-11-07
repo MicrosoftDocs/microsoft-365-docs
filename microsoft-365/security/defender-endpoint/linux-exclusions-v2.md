@@ -45,7 +45,7 @@ Microsoft Defender for Endpoint on Linux supports two types of exclusion `scopes
 | Exclusion Scope | Description | Use Case |
 | --- | --- | --- |
 | EPP | Excludes content from antivirus (AV) scans. Also know as AV Exclusions. | Used to exclude files or directories from being scanned by the antivirus engine |
-| Global | Implemented at the sensor level, mutes events that match the exclusions. | Used to exclude events from triggering EDR alerts and AV detetctions (through scans). Applicable to real-time protection and passive mode, but not to custom scans. |
+| Global | Implemented at the sensor level, mutes events that match the exclusions. | Used to exclude events from triggering EDR alerts and AV detections (through scans). Applicable to real-time protection and passive mode, but not to custom scans. |
 
 More scopes will be introduced in future. 
 
@@ -58,7 +58,7 @@ Global Exclusions can be useful to avoid incorrect detections on trusted files o
 
 ## Supported exclusion types
 
-The following tables show the exclusion types supported by Defender for Endpoint on Linux. You can exclude certain files, folders,extensions and processes. 
+The following tables show the exclusion types supported by Defender for Endpoint on Linux. You can exclude certain files, folders, extensions and processes.
 
 ### For Antivirus Exclusions
 These exclusions come under the *epp*

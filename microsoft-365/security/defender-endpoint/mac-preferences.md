@@ -616,7 +616,7 @@ Manage the preferences of the endpoint detection and response (EDR) component of
 
 Specify a tag name and its value.
 
-- The GROUP tag, tags the device with the specified value. The tag is reflected in the portal under the device page and can be used for filtering and grouping devices.
+- The GROUP tag marks the device with the specified value. The tag is reflected in the portal under the device page and can be used for filtering and grouping devices.
 
 <br>
 
@@ -1288,7 +1288,7 @@ From the JAMF console, open **Computers** \> **Configuration Profiles**, navigat
 
 ### Intune deployment
 
-1. Open **Devices** \> **Configration Profiles**. Select **Create Profile**.
+1. Open **Devices** \> **Configuration Profiles**. Select **Create Profile**.
 
 2. Choose a name for the profile. Change **Platform=macOS** to **Profile type=Templates** and choose **Custom** in the template name section. Select **Configure**.
 
