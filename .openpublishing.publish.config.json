@@ -98,19 +98,20 @@
     ".openpublishing.redirection.admin.json",
     ".openpublishing.redirection.bookings.json",
     ".openpublishing.redirection.business.json",
+    ".openpublishing.redirection.campaigns.json",
     ".openpublishing.redirection.commerce.json",
     ".openpublishing.redirection.compliance.json",
     ".openpublishing.redirection.contentunderstanding.json",
     ".openpublishing.redirection.enterprise.json",
     ".openpublishing.redirection.frontline.json",
+    ".openpublishing.redirection.knowledge.json",
+    ".openpublishing.redirection.learning.json",
     ".openpublishing.redirection.lighthouse.json",
+    ".openpublishing.redirection.loop.json",
     ".openpublishing.redirection.managed-desktop.json",
     ".openpublishing.redirection.security.json",
     ".openpublishing.redirection.solutions.json",
-    ".openpublishing.redirection.campaigns.json",
-    ".openpublishing.redirection.knowledge.json",
-    ".openpublishing.redirection.learning.json",
     ".openpublishing.redirection.syntex.json",
-    ".openpublishing.redirection.loop.json"
+    ".openpublishing.redirection.topics.json"
   ]
 }

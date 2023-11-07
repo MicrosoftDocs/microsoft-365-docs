@@ -45,7 +45,7 @@ Microsoft Defender for Endpoint on Linux supports two types of exclusion `scopes
 | Exclusion Scope | Description | Use Case |
 | --- | --- | --- |
 | EPP | Excludes content from antivirus (AV) scans. Also know as AV Exclusions. | Used to exclude files or directories from being scanned by the antivirus engine |
-| Global | Implemented at the sensor level, mutes events that match the exclusions. | Used to exclude events from triggering EDR alerts and AV detetctions (through scans). Applicable to real-time protection and passive mode, but not to custom scans. |
+| Global | Implemented at the sensor level, mutes events that match the exclusions. | Used to exclude events from triggering EDR alerts and AV detections (through scans). Applicable to real-time protection and passive mode, but not to custom scans. |
 
 More scopes will be introduced in future. 
 
@@ -58,7 +58,7 @@ Global Exclusions can be useful to avoid incorrect detections on trusted files o
 
 ## Supported exclusion types
 
-The following tables show the exclusion types supported by Defender for Endpoint on Linux. You can exclude certain files, folders,extensions and processes. 
+The following tables show the exclusion types supported by Defender for Endpoint on Linux. You can exclude certain files, folders, extensions and processes.
 
 ### For Antivirus Exclusions
 These exclusions come under the *epp*
@@ -243,7 +243,7 @@ Similar to how AV exclusions ( scope = `epp` ) are configured in [How to configu
 Run the following command to see the available switches for managing exclusions:
 
 > [!NOTE]
-> --scope is an optional flag with accepted values as *epp* or *global*. 
+> **--scope** is an optional flag with accepted values as *epp* or *global*. 
 > Provide same scope used during adding exclusion to remove exclusions.
 
 ```bash
@@ -258,7 +258,7 @@ Examples:
     mdatp exclusion extension add --name .txt --scope global
     ```
 
-    ```Output
+    ```console
     Extension exclusion configured successfully
     ```
 
@@ -266,7 +266,7 @@ Examples:
     mdatp exclusion extension remove --name .txt --scope global
     ```
 
-    ```Output
+    ```console
     Extension exclusion removed successfully
     ```
 
@@ -276,7 +276,7 @@ Examples:
     mdatp exclusion file add --path /var/log/dummy.log --scope global
     ```
 
-    ```Output
+    ```console
     File exclusion configured successfully
     ```
 
@@ -284,7 +284,7 @@ Examples:
     mdatp exclusion file remove --path /var/log/dummy.log --scope global
     ```
 
-    ```Output
+    ```console
     Extension exclusion removed successfully
     ```
 
@@ -294,7 +294,7 @@ Examples:
     mdatp exclusion folder add --path /var/log/ --scope global
     ```
 
-    ```Output
+    ```console
     Folder exclusion configured successfully
     ```
 
@@ -302,7 +302,7 @@ Examples:
     mdatp exclusion folder remove --path /var/log/ --scope global
     ```
 
-    ```Output
+    ```console
     Extension exclusion removed successfully
     ```
 
@@ -313,7 +313,7 @@ Examples:
     mdatp exclusion process add --name /usr/bin/cat  --scope global
     ```
 
-    ```Output
+    ```console
     Process exclusion configured successfully
     ```
 
@@ -321,7 +321,7 @@ Examples:
     mdatp exclusion process remove --name /usr/bin/cat  --scope global
     ```
 
-    ```Output
+    ```console
     Extension exclusion removed successfully
     ```
 
