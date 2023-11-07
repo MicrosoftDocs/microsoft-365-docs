@@ -34,7 +34,7 @@ This video shows the configuration steps described in this document.</br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE450Vt?autoplay=false]
 
-## Azure external collaboration settings
+## Microsoft Entra ID external collaboration settings
 
 Sharing in Microsoft 365 is governed at its highest level by the [B2B external collaboration settings in Microsoft Entra ID](/azure/active-directory/external-identities/delegate-invitations). If guest-sharing is disabled or restricted in Microsoft Entra ID, this setting overrides any sharing settings that you configure in Microsoft 365.
 
