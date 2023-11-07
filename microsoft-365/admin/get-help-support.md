@@ -26,7 +26,7 @@ search.appverid:
 - MET150
 - MOE150
 description: "Learn how to get online or phone support for your Microsoft 365 for business subscription. You must be an admin for a business subscription to get support."
-ms.date: 07/25/2023
+ms.date: 11/01/2023
 ---
 
 # Get support for Microsoft 365 for business
@@ -95,7 +95,7 @@ The Office 365 operated by 21Vianet technical support team troubleshoots only th
 
 ## Community and self-service support options
 
-Self-service support is available for all Office 365 operated by 21Vianet users, and includes troubleshooting tools and videos, help articles and videos, as well as forums and wikis in the [Office 365 community](https://go.microsoft.com/fwlink/p/?linkid=842838). For more self-help resources, see [Learn about Office 365 operated by 21Vianet](../admin/services-in-china/services-in-china.md).
+Self-service support is available for all Office 365 operated by 21Vianet users, and includes troubleshooting tools and videos, help articles and videos, as well as forums and wikis in the [Office 365 community](https://go.microsoft.com/fwlink/p/?linkid=842838). For more self-help resources, see [Microsoft 365 operated by 21Vianet](/office365/servicedescriptions/office-365-platform-service-description/microsoft-365-operated-by-21vianet).
 
 ## Pre-sales support
 
@@ -139,7 +139,7 @@ Technical support for Office 365 operated by 21Vianet subscriptions provides ass
 
 ## Technical support initial response times
 
-Initial response time is based on the severity levels described above. 21Vianet customer service team follow up with investigation and customer communication in reasonable rhythm according to severity levels. 21Vianet also expect customer to collaborate at reasonable level accordingly.
+Initial response time is based on the severity levels described above. 21Vianet customer service team follows up with investigation and customer communication in reasonable rhythm according to severity levels. 21Vianet also expect customer to collaborate at reasonable level accordingly.
 
 | Security level <sup>1</sup> | 21Vianet customer support team Initial response | Customer responsibility |
 |--------------------------------|-----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
