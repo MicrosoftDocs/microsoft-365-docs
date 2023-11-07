@@ -243,7 +243,7 @@ Similar to how AV exclusions ( scope = `epp` ) are configured in [How to configu
 Run the following command to see the available switches for managing exclusions:
 
 > [!NOTE]
-> --scope is an optional flag with accepted values as *epp* or *global*. 
+> **--scope** is an optional flag with accepted values as *epp* or *global*. 
 > Provide same scope used during adding exclusion to remove exclusions.
 
 ```bash
