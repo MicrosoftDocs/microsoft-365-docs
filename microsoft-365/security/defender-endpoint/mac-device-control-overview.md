@@ -101,7 +101,9 @@ The Device Control for macOS includes global setting, group creation and access 
 Here are the properties you can use when you create the group and policy.
 
 > [!NOTE]
-> We recommend you use the examples on the GitHub to understand the properties: [mdatp-devicecontrol/Removable Storage Access Control Samples/macOS/policy at main - microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples/macOS/policy). You can also use the scripts at [mdatp-devicecontrol/Removable Storage Access Control Samples/macOS/policy/scripts at main - microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples/macOS/policy/scripts) to translate Windows Device Control policy to macOS Device Control policy or translate macOS Device Control V1 policy to this V2 policy.
+> We recommend you use the examples on the GitHub to understand the properties: [mdatp-devicecontrol/Removable Storage Access Control Samples/macOS/policy at main - microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples/macOS/policy). 
+> 
+> You can also use the scripts at [mdatp-devicecontrol/Removable Storage Access Control Samples/macOS/policy/scripts at main - microsoft/mdatp-devicecontrol (github.com)](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples/macOS/policy/scripts) to translate Windows Device Control policy to macOS Device Control policy or translate macOS Device Control V1 policy to this V2 policy.
 
 ### Settings
 
