@@ -18,7 +18,7 @@
       href: m365-business-premium-setup.md
     - name: Microsoft 365 for Campaigns
       href: m365-campaigns-setup.md
-- name: Step 2 - Boost your security protection
+- name: Step 2 - Configure your security protection
   items: 
     - name: Overview
       href: m365bp-security-overview.md
@@ -30,7 +30,7 @@
       href: m365bp-protect-against-malware-cyberthreats.md
     - name: Secure managed and unmanaged devices
       href: m365bp-managed-unmanaged-devices.md
-    - name: Set up information protection capabilities
+    - name: Set up information protection
       href: m365bp-set-up-compliance.md
 - name: Step 3 - Set up unmanaged (BYOD) devices
   items: 

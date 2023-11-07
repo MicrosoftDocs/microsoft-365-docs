@@ -2032,6 +2032,11 @@
          "redirect_document_id":false
        },
        {
+         "source_path": "microsoft-365/admin/new-subscription-names.md",
+         "redirect_url": "https://go.microsoft.com/fwlink/p/?linkid=2120533",
+         "redirect_document_id": false
+       },
+       {
          "source_path": "microsoft-365/admin/misc/deleted-user.md",
          "redirect_url": "/microsoft-365/admin/add-users/delete-a-user",
          "redirect_document_id":false
@@ -2054,6 +2059,11 @@
        {
          "source_path": "microsoft-365/admin/services-in-china/download-office-app-for-ios.md",
          "redirect_url": "https://support.microsoft.com/office/c8880c05-883a-46b6-ad32-9bffa31228d0",
+         "redirect_document_id": false
+       },
+       {
+         "source_path": "microsoft-365/admin/misc/device-list.md",
+         "redirect_url": "https://learn.microsoft.com/autopilot/add-devices",
          "redirect_document_id": false
        }
    ]
