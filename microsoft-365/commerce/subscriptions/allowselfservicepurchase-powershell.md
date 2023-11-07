@@ -71,7 +71,7 @@ To connect to the PowerShell module with your credentials, run the following com
 Connect-MSCommerce
 ```
 
-This command connects the current PowerShell session to an Azure Active Directory tenant. The command prompts you for a username and password for the tenant you want to connect to. If multi-factor authentication is enabled for your credentials, you use the interactive option to sign in.
+This command connects the current PowerShell session to a Microsoft Entra tenant. The command prompts you for a username and password for the tenant you want to connect to. If multi-factor authentication is enabled for your credentials, you use the interactive option to sign in.
 
 ## View details for AllowSelfServicePurchase
 
@@ -109,6 +109,7 @@ The following table lists the available products and their **ProductId**. It als
 | Windows 365 Business | CFQ7TTC0J203 | No |
 | Windows 365 Business with Windows Hybrid Benefit | CFQ7TTC0HX99 | No |
 | Microsoft 365 F3 | CFQ7TTC0LH05 | No |
+| Microsoft Purview Discovery | CFQ7TTC0N8SL | Yes |
 | Dynamics 365 Marketing | CFQ7TTC0LH3N | No |
 | Dynamics 365 Marketing Attach | CFQ7TTC0LHWP | No |
 | Dynamics 365 Marketing Additional Application | CFQ7TTC0LHVK | No |

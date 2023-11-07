@@ -14,7 +14,7 @@ ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.custom:
   - next-gen
-  - edr
+  - mde-ngp
 ms.collection: 
 - m365-security
 - tier2

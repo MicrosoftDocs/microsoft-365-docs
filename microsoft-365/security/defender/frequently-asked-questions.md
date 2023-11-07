@@ -19,10 +19,10 @@ ms.collection:
   - tier1
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 05/29/2023
+ms.date: 08/29/2023
 ---
 
-# Frequently asked questions
+# General information on Defender Experts for XDR service
 
 **Applies to:**
 
@@ -34,7 +34,7 @@ ms.date: 05/29/2023
 | **Does Defender Experts for XDR require Microsoft Sentinel?** | No. Defender Experts can use Microsoft 365 Defender data in customers' original locations for each Microsoft 365 Defender product deployed. |
 | **What products does Defender Experts for XDR operate on?** | Refer to the [Before you begin](before-you-begin-xdr.md) for details. |
 | **Does Defender Experts for XDR replace my SOC team?** | Defender Experts for XDR currently provide coverage for Microsoft 365 Defender incidents. It's the ideal way to augment your SOC team, reduce their workload, and collaborate with them to protect your organization from activity groups. |
-| **What actions can your experts take during incident investigation?** | Our expert analysts can take actions based on the roles granted to them in your Microsoft 365 Defender portal. If our analysts are granted a security reader role, they can investigate and provide guided response for your SOC team to act on. If our analysts are granted a security operator role, they can also take specific remediation actions agreed upon with your SOC team. |
+| **What actions can your experts take during incident investigation?** | Our expert analysts can take actions based on the roles granted to them in your Microsoft 365 Defender portal. If our analysts are granted a security reader role, they can investigate and provide managed response for your SOC team to act on. If our analysts are granted a security operator role, they can also take specific remediation actions agreed upon with your SOC team. |
 | **What types of incidents can your experts investigate?** | Defender Experts for XDR covers incidents categorized as High or Medium severity in Windows, Linux, and macOS devices. Incidents categorized as Compliance, Data Loss Prevention (DLP), or Custom Detections and those affecting internet of things (IoT), iOS, or Android devices are outside the service's scope. |
 | **Can your experts help me improve my security posture?** | Yes, our experts provide necessary guidance regularly to improve your security posture.
 | **Can Defender Experts for XDR help with an active compromise or vulnerability?** | No, Defender Experts currently don't provide incident response services. Contact your Microsoft representative or fill out the [Experiencing a Cybersecurity Incident?](https://customervoice.microsoft.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRypQlJUvhTFIvfpiAfrpFQdUOTdRRFpDUFQ1TzNLVFZXV0VUOVlVN0szUiQlQCN0PWcu) form to engage Microsoft Incident Response for incident response assistance. |

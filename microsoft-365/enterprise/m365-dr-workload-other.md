@@ -8,7 +8,7 @@ ms.service: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.reviewer: dmwmsft
+ms.reviewer: deanw
 ms.date: 09/20/2022
 ms.custom:
 - it-pro
@@ -24,9 +24,11 @@ ms.collection:
 
 Use the following guidance to determine where your data is located. Please reference your _tenant_ _Default Geography_.
 
-### Azure Active Directory (AAD)
+<a name='azure-active-directory-aad'></a>
 
-Please refer to [Azure Active Directory Data Locations](https://aka.ms/aaddatamap).
+### Microsoft Entra ID
+
+Please refer to [Microsoft Entra Data Locations](https://aka.ms/aaddatamap).
 
 ### Forms
 Tenants in EU member Countries/regions maintain data in Macro Region Geography 1 – EMEA. All other tenants have customer data stored in the United States, except Australia. For customers in Australia, Microsoft Forms customer data will be stored at rest in Australia for all new tenants using Forms and existing tenants that have not previously used Forms. 
@@ -38,7 +40,7 @@ Refer to endpoint.microsoft.com, Tenant Administration | Tenant Status for exist
 - Features that are designed to operate globally, such as Content Delivery Network (CDN), which provides a global caching service and stores customer data at edge locations around the world.
 
 - If you are using the Remote Help feature, the Helper and Sharer's information may be sent outside of the stated Geo for 48 hours.
-- For Azure Active Directory: Please refer to [Azure Active Directory Data Locations](https://aka.ms/aaddatamap).
+- For Microsoft Entra ID: Please refer to [Microsoft Entra Data Locations](https://aka.ms/aaddatamap).
 - Preview, beta, or other prerelease services, which typically store customer data in the United States but may store it globally. Regardless, Microsoft does not control or limit the Geo from which customers or their end users may access customer data. Similarly, where customer data in other services is subsequently integrated into Intune, the originating customer data will continue to be stored subject to the other service's own Geo commitments (if any); only the copy of the customer data integrated into Intune will be stored in the stated Geo for Intune.
 
 ### Office for Mobile
@@ -150,7 +152,7 @@ Please refer to [Data Residency - Viva Engage | Microsoft Learn](/viva/engage/ma
 | KH | Cambodia | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
 | CM | Cameroon | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | CA | Canada | AMER<sup>3</sup>| Canada<sup>5</sup>| CAN<sup>5</sup>|
-| CV | Cape Verde | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
+| CV | Cabo Verde | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | KY | Cayman Islands | AMER<sup>3</sup>| AMER<sup>3</sup>| AMER<sup>3</sup>|
 | CF | Central African Republic | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | TD | Chad | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
@@ -180,7 +182,7 @@ Please refer to [Data Residency - Viva Engage | Microsoft Learn](/viva/engage/ma
 | ER | Eritrea | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | EE | Estonia | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | ET | Ethiopia | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
-| FK | Falkland Islands (Malvinas) | AMER<sup>3</sup>| AMER<sup>3</sup>| AMER<sup>3</sup>|
+| FK | Falkland Islands | AMER<sup>3</sup>| AMER<sup>3</sup>| AMER<sup>3</sup>|
 | FO | Faroe Islands | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | FM | Federated States of Micronesia | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
 | FJ | Fiji | APC<sup>2</sup>| APC<sup>2</sup>| AUS<sup>4</sup>|
@@ -289,7 +291,7 @@ Please refer to [Data Residency - Viva Engage | Microsoft Learn](/viva/engage/ma
 | PT | Portugal | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | PR | Puerto Rico | AMER<sup>3</sup>| AMER<sup>3</sup>| AMER<sup>3</sup>|
 | QA | Qator | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
-| MK | Republic of Macedonia | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
+| MK | Republic of North Macedonia | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | RE | Réunion | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | RO | Romania | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | RU | Russian Federation | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
@@ -303,7 +305,7 @@ Please refer to [Data Residency - Viva Engage | Microsoft Learn](/viva/engage/ma
 | MF | Saint-Martin (French part) | AMER<sup>3</sup>| EUR<sup>1</sup>| AMER<sup>3</sup>|
 | WS | Samoa | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
 | SM | San Marino | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
-| ST | Sao Tome and Principe | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
+| ST | São Tomé and Príncipe | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | SA | Saudi Arabia | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | SN | Senegal | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | RS | Serbia | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
@@ -334,7 +336,7 @@ Please refer to [Data Residency - Viva Engage | Microsoft Learn](/viva/engage/ma
 | TO | Tonga | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
 | TT | Trinidad and Tobago | AMER<sup>3</sup>| AMER<sup>3</sup>| AMER<sup>3</sup>|
 | TN | Tunisia | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
-| TR | Turkey | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
+| TR | Türkiye | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | TM | Turkmenistan | EUR<sup>1</sup>| APC<sup>2</sup>| EUR<sup>1</sup>|
 | TC | Turks and Caicos Islands | AMER<sup>3</sup>| AMER<sup>3</sup>| AMER<sup>3</sup>|
 | TV | Tuvalu | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
@@ -352,7 +354,6 @@ Please refer to [Data Residency - Viva Engage | Microsoft Learn](/viva/engage/ma
 | VN | Vietnam | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
 | VI | Virgin Islands, US | AMER<sup>3</sup>| AMER<sup>3</sup>| AMER<sup>3</sup>|
 | WF | Wallis and Futuna Islands | APC<sup>2</sup>| APC<sup>2</sup>| APC<sup>2</sup>|
-| EH | Western Sahara | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | YE | Yemen | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | ZM | Zambia | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|
 | ZW | Zimbabwe | EUR<sup>1</sup>| EUR<sup>1</sup>| EUR<sup>1</sup>|

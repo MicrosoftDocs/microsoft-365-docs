@@ -14,6 +14,7 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier1
+- mde-edr
 ms.topic: conceptual
 ms.date: 03/27/2020
 ms.subservice: mde
@@ -95,7 +96,7 @@ You can filter the alerts based on the following Service sources:
 - Microsoft 365 Defender
 - Microsoft Defender for Office 365
 - App Governance
-- AAD Identity Protection
+- Microsoft Entra ID Protection
 
 Microsoft Endpoint Notification customers can now filter and see detections from the service by filtering by _Microsoft Defender Experts_ nested under the _Microsoft Defender for Endpoint_ service source.
 

@@ -22,16 +22,16 @@ description: "Deploy and manage single or multiple Microsoft 365 tenants, with o
 
 # Step 1. Your Microsoft 365 for enterprise tenants
 
-One of your first tenant decisions is how many to have. Each Microsoft 365 tenant is distinct, unique, and separate from all other Microsoft 365 tenants. Its corresponding Azure AD tenant is also distinct, unique, and separate from all other Microsoft 365 tenants.
+One of your first tenant decisions is how many to have. Each Microsoft 365 tenant is distinct, unique, and separate from all other Microsoft 365 tenants. Its corresponding Microsoft Entra tenant is also distinct, unique, and separate from all other Microsoft 365 tenants.
 
 ## Single tenant
-Having a single tenant simplifies many aspects of your organization's use of Microsoft 365. A single tenant means a single Azure AD tenant with a single set of accounts, groups, and policies. Permissions and sharing of resources across your organization can be done through this central identity provider.
+Having a single tenant simplifies many aspects of your organization's use of Microsoft 365. A single tenant means a single Microsoft Entra tenant with a single set of accounts, groups, and policies. Permissions and sharing of resources across your organization can be done through this central identity provider.
 
 A single tenant provides the most feature-rich and simplified collaboration and productivity experience for your users.
 
-Here is an example showing the default location and Azure AD tenant of a Microsoft 365 tenant.
+Here is an example showing the default location and Microsoft Entra tenant of a Microsoft 365 tenant.
 
-![A single Microsoft 365 tenant with its Azure AD tenant.](../media/tenant-management-overview/tenant-management-example-tenant.png)
+![A single Microsoft 365 tenant with its Microsoft Entra tenant.](../media/tenant-management-overview/tenant-management-example-tenant.png)
 
 ## Multiple tenants
 
@@ -44,9 +44,9 @@ There are many reasons why your organization could have multiple tenants:
 - Clear separation of branding for conglomerate organizations
 - Pre-production, test, or sandbox tenants
 
-Here is an example of an organization that has two tenants (Tenant A and Tenant B) in the same default datacenter geo. Each tenant as a separate Azure AD tenant.
+Here is an example of an organization that has two tenants (Tenant A and Tenant B) in the same default datacenter geo. Each tenant as a separate Microsoft Entra tenant.
 
-![Multiple Microsoft 365 tenants with their own Azure AD tenants.](../media/tenant-management-overview/tenant-management-example-multi-tenant.png)
+![Multiple Microsoft 365 tenants with their own Microsoft Entra tenants.](../media/tenant-management-overview/tenant-management-example-multi-tenant.png)
 
 When you have multiple tenants, there are restrictions and additional considerations when managing them and providing services to your users.
 
@@ -84,9 +84,9 @@ For detailed guidance, see [Microsoft 365 tenant-to-tenant migrations](../enterp
 
 With Microsoft 365 Multi-Geo, you can provision and store data at rest in the other datacenter geo locations that you've chosen to meet data residency requirements, and at the same time unlock your global rollout of modern productivity experiences to your workers.
 
-In a Multi-Geo environment, your Microsoft 365 tenant consists of a default or central location where your Microsoft 365 subscription was originally created and one or more satellite locations. In a multi-geo tenant, the information about geo locations, groups, and user information is mastered in a global Azure AD tenant. Because your tenant information is mastered centrally and synchronized into each geo location, collaboration experiences involving anyone from your company are shared across the locations.
+In a Multi-Geo environment, your Microsoft 365 tenant consists of a default or central location where your Microsoft 365 subscription was originally created and one or more satellite locations. In a multi-geo tenant, the information about geo locations, groups, and user information is mastered in a global Microsoft Entra tenant. Because your tenant information is mastered centrally and synchronized into each geo location, collaboration experiences involving anyone from your company are shared across the locations.
 
-Here is an example of an organization that has its default location in Europe and a satellite location in North America. Both locations share the same global Azure AD tenant for the single Microsoft 365 tenant.
+Here is an example of an organization that has its default location in Europe and a satellite location in North America. Both locations share the same global Microsoft Entra tenant for the single Microsoft 365 tenant.
 
 ![Example of a multi-geo Microsoft 365 tenant.](../media/tenant-management-overview/tenant-management-example-multi-geo.png)
 
@@ -134,7 +134,7 @@ In this illustration, the tenant has:
 - A default location corresponding to a Microsoft 365 datacenter geo.
 - A set of products and licenses.
 - The set of cloud productivity apps, some of which are specific to products.
-- An Azure AD tenant that contains global administrator accounts and an initial DNS domain name.
+- A Microsoft Entra tenant that contains global administrator accounts and an initial DNS domain name.
 
 As we move through the additional steps of this solution, we will build out this figure.
 

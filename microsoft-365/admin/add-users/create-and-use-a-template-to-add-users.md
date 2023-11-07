@@ -2,8 +2,8 @@
 title: "Create and use a template to add users"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: efrene
+author: efrene
 manager: scotv
 ms.date: 02/18/2020
 audience: Admin
@@ -27,11 +27,11 @@ description: "You can create and use a template to save time and standardize set
 
 # Create and use a template to add users
 
-You can create and use a template to save time and standardize settings when you are adding multiple users. Templates are particularly useful if you have users who share many common properties, like those who have the same role and work at the same location and those who require the same software. For example, you might have a team of support engineers who work in the same office.  
+You can create and use a template to save time and standardize settings when you're adding multiple users. Templates are particularly useful if you have users who share many common properties, like those who have the same role and work at the same location and those who require the same software. For example, you might have a team of support engineers who work in the same office.  
 
 ## Create a template
 
-Templates are easy to create&mdash;you can select **Users** > **Active users** > **User templates**, and then select **Add a template** from the drop-down list, or you can add a new user and when you are finished, you will have the option of saving the entry as a template.
+Templates are easy to create&mdash;you can select **Users** > **Active users** > **User templates**, and then select **Add a template** from the drop-down list, or you can add a new user and when you're finished, you have the option to save the entry as a template.
 
 When you create a template after adding a user, the values you choose for the following settings are saved in the template:
 

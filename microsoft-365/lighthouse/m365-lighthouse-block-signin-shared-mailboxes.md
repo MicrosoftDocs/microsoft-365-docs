@@ -24,13 +24,13 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 # Block sign-in for shared mailbox accounts using Microsoft 365 Lighthouse
 
-Every shared mailbox has a corresponding user account. A shared mailbox is not intended for direct sign-in by its associated user account. You should always block sign-in for the shared mailbox account and keep it blocked.
+Every shared mailbox has a corresponding user account. A shared mailbox isn't intended for direct sign-in by its associated user account. You should always block sign-in for the shared mailbox account and keep it blocked.
 
 Microsoft 365 Lighthouse provides visibility into all the shared mailboxes across your managed tenants that are enabled for direct sign-in. You can track and block sign-in for all shared mailbox accounts from the **Shared mailboxes** page.
 
 ## Block sign-in for shared mailbox accounts
 
-1. In the left navigation pane in Lighthouse, select **Users** \> **Account management \>** **Shared mailboxes**.
+1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Users** > **Account management** > **Shared mailboxes**.
 
 2. On the **Shared mailboxes** tab, select the Shared mailbox account you want to block and then select **Block sign-in**.
 
@@ -40,7 +40,7 @@ Microsoft 365 Lighthouse provides visibility into all the shared mailboxes acros
 
 ## Notify users that access is blocked (optional)
 
-1. In the left navigation pane in Lighthouse, select **Users** \> **Account management** \> **Shared mailboxes**.
+1. In the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com), select **Users** > **Account management** > **Shared mailboxes**.
 
 2. On the **Shared mailboxes** tab, select the check box next to the accounts you want to notify.
 

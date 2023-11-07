@@ -3,9 +3,6 @@ title: Troubleshoot kernel extension issues in Microsoft Defender for Endpoint o
 description: Troubleshoot kernel extension-related issues in Microsoft Defender for Endpoint on macOS.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, kernel, extension
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
@@ -14,10 +11,11 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier3
+- mde-macos
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 11/01/2023
 ---
 
 # Troubleshoot kernel extension issues in Microsoft Defender for Endpoint on macOS
@@ -50,7 +48,8 @@ You can also run ```mdatp health```. It reports if real-time protection is enabl
 ```bash
 mdatp health
 ```
-```Output
+
+```console
 ...
 real_time_protection_enabled                : true
 real_time_protection_available              : false
@@ -68,7 +67,7 @@ See the instructions corresponding to the management tool that you used to deplo
 
 ## Manual deployment
 
-If less than 30 minutes have passed since the product was installed, navigate to **System Preferences** \> **Security & Privacy**, where you have to **Allow** system software from developers "Microsoft Corporation".
+If less than 30 minutes have passed since the product was installed, navigate to **System Settings** \> **Privacy & Security**, where you have to **Allow** system software from developers "Microsoft Corporation".
 
 If you don't see this prompt, it means that 30 or more minutes have passed, and the kernel extension still not been approved to run on your device:
 
@@ -82,13 +81,13 @@ In this case, you need to perform the following steps to trigger the approval fl
     sudo kextutil /Library/Extensions/wdavkext.kext
     ```
 
-    ```Output
+    ```console
     Kext rejected due to system policy: <OSKext 0x7fc34d528390 [0x7fffa74aa8e0]> { URL = "file:///Library/StagedExtensions/Library/Extensions/wdavkext.kext/", ID = "com.microsoft.wdavkext" }
     Kext rejected due to system policy: <OSKext 0x7fc34d528390 [0x7fffa74aa8e0]> { URL = "file:///Library/StagedExtensions/Library/Extensions/wdavkext.kext/", ID = "com.microsoft.wdavkext" }
     Diagnostics for /Library/Extensions/wdavkext.kext:
     ```
 
-2. Open **System Preferences** \> **Security & Privacy** from the menu. (Close it first, if it's opened.)
+2. Open **System Settings** \> **Privacy & Security** from the menu. (Close it first, if it's opened.)
 
 3. **Allow** system software from developers "Microsoft Corporation"
 
@@ -104,10 +103,11 @@ In this case, you need to perform the following steps to trigger the approval fl
     mdatp health
     ```
 
-    ```Output
+    ```console
     ...
     real_time_protection_enabled                : true
     real_time_protection_available              : true
     ...
     ```
+
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

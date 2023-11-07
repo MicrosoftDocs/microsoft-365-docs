@@ -62,7 +62,7 @@
   items: 
     - name: Overview of the Tenants page
       href: m365-lighthouse-tenants-page-overview.md
-    - name: View your Azure AD roles across tenants
+    - name: View your Microsoft Entra roles across tenants
       href: m365-lighthouse-view-your-roles.md
     - name: Manage your tenant list
       href: m365-lighthouse-manage-tenant-list.md
@@ -120,9 +120,9 @@
       href: m365-lighthouse-quarantine-messages-overview.md
     - name: Overview of the Apps page
       href: m365-lighthouse-apps-page-overview.md
-- name: Manage opportunities with Sales advisor
+- name: Manage opportunities with Sales Advisor
   items:
-    - name: Overview of the Sales Advisor
+    - name: Overview of Sales Advisor
       href: m365-lighthouse-sales-advisor-overview.md
     - name: Get access to Sales Advisor
       href: m365-lighthouse-get-access-to-sales-advisor.md
@@ -140,3 +140,7 @@
       href: m365-lighthouse-troubleshoot.md
     - name: Frequently asked questions (FAQs)
       href: m365-lighthouse-faq.yml
+- name: Privacy and compliance
+  items:
+    - name: Data collection for Microsoft 365 Lighthouse
+      href: m365-lighthouse-data-collection.md

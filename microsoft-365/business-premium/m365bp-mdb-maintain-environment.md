@@ -7,9 +7,8 @@ author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: microsoft-365-security
-ms.subservice: m365bp
-ms.date: 08/25/2023
+ms.service: microsoft-365-business
+ms.date: 11/02/2023
 ms.localizationpriority: medium
 ms.collection: 
 - M365-Campaigns
@@ -17,6 +16,7 @@ ms.collection:
 - highpri
 - m365-security
 - tier1
+- essentials-manage
 ms.custom:
 - MiniMaven
 search.appverid:
@@ -27,16 +27,18 @@ description: "Keep your systems, devices, user accounts, and security policies u
 
 # Monitor and maintain Microsoft 365 Business Premium and Defender for Business
 
-After you have set up and configured [Microsoft 365 Business Premium](index.md) or [Microsoft Defender for Business](../security/defender-business/mdb-overview.md) (standalone), your next step is to prepare a plan for maintenance and operations. It's important to keep your systems, devices, user accounts, and security policies up to date to help protect against cyberattacks. You can use this article as a guide to prepare your plan. 
+After you have set up and configured [Microsoft 365 Business Premium](m365bp-overview.md) or the standalone version of [Microsoft Defender for Business](../security/defender-business/mdb-overview.md), your next step is to prepare a plan for maintenance and operations. It's important to keep your systems, devices, user accounts, and security policies up to date to help protect against cyberattacks. You can use this article as a guide to prepare your plan. 
 
-There are two main categories of tasks to perform, as listed in the following table:| Task type | Sections |
+As you prepare your plan, you can organize the various tasks into two main categories, as listed in the following table:
+
+| Task type | Sections |
 |---|---|
 | **[Security tasks](#security-tasks)** | [Daily security tasks](#daily-security-tasks) <br/>[Weekly security tasks](#weekly-security-tasks)<br/>[Monthly security tasks](#monthly-security-tasks)<br/>[Security tasks to perform as needed](#security-tasks-to-perform-as-needed) |
-| **[General admin tasks](#general-admin-tasks)** | [Admin center tasks](#admin-center-tasks)<br/>[Users, groups, and passwords](#users-groups-and-passwords)<br/>[Email and calendars](#email-and-calendars)<br/>[Devices](#devices)<br/>[Devices](#devices)<br/>[Subscriptions and billing](#subscriptions-and-billing) | 
+| **[General admin tasks](#general-admin-tasks)** | [Admin center tasks](#admin-center-tasks)<br/>[Users, groups, and passwords](#users-groups-and-passwords)<br/>[Email and calendars](#email-and-calendars)<br/>[Devices](#devices)<br/>[Subscriptions and billing](#subscriptions-and-billing) | 
 
 ## Security tasks
 
-Security tasks are typically performed by security administrators and security operators. 
+Security tasks are typically performed by security administrators and security operators.
 
 - [Learn more about admin roles](../admin/add-users/about-admin-roles.md)
 - [Assign security roles and permissions](../security/defender-business/mdb-roles-permissions.md)
@@ -168,9 +170,9 @@ If you're new to Microsoft 365, take a moment to get an [Overview of the Microso
 | Task | Resources to learn more |
 |:---|:---|
 | Add a new user | [Add a new employee to Microsoft 365](../admin/add-users/add-new-employee.md) |
-| Assign licenses to users | [Assign Microsoft 365 licenses to users in the Microsoft 365 admin center](../admin/manage/assign-licenses-to-users.md) <br/><br/>[Assign Microsoft 365 licenses to user accounts by using PowerShell](../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md) |
+| Assign or unassign licenses for users | [Assign or unassign licenses for users in the Microsoft 365 admin center](../admin/manage/assign-licenses-to-users.md) <br/><br/>[Assign Microsoft 365 licenses to user accounts by using PowerShell](../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md) |
 | Assign admin roles to people who need admin permissions | [Assign admin roles in the Microsoft 365 admin center](../admin/add-users/assign-admin-roles.md) <br/><br/>[Assign admin roles to Microsoft 365 user accounts with PowerShell](../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md)|
-| Remove licenses from users | [Unassign Microsoft 365 licenses from users in the Microsoft 365 admin center](../admin/manage/remove-licenses-from-users.md)<br/><br/>[Remove Microsoft 365 licenses from user accounts with PowerShell](../enterprise/remove-licenses-from-user-accounts-with-microsoft-365-powershell.md) |
+| Remove licenses from users | [Assign or unassign licenses for users in the Microsoft 365 admin center](../admin/manage/assign-licenses-to-users.md)<br/><br/>[Remove Microsoft 365 licenses from user accounts with PowerShell](../enterprise/remove-licenses-from-user-accounts-with-microsoft-365-powershell.md) |
 | Turn pronouns on or off | [Turn pronouns on or off for your organization in the Microsoft 365 admin center](../admin/add-users/turn-pronouns-on-or-off.md) |
 | Determine whether to allow guest access to groups for their whole organization or for individual groups<br/>(*applies to Microsoft 365 Business Premium*) | [Guest users in Microsoft 365 admin center](../admin/add-users/about-guest-users.md) |
 | Remove a user account when someone leaves your organization | [Overview: Remove a former employee and secure data](../admin/add-users/remove-former-employee.md) |

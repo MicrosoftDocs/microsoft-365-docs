@@ -1,11 +1,11 @@
 ---
 title: "Restore a deleted Microsoft 365 group"
-ms.reviewer: arvaradh
+ms.reviewer: rahulnayak
 ms.date: 02/18/2020
 f1.keywords: CSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: scotv
+manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-business
@@ -33,7 +33,7 @@ If you've deleted a group, it will be retained for 30 days by default. This 30-d
 
 When a group is restored, the following content is restored:
   
-- Azure Active Directory (AD) Microsoft 365 Groups object, properties, and members.
+- Microsoft Entra Microsoft 365 Groups object, properties, and members.
     
 - Group's e-mail addresses.
     

@@ -15,6 +15,20 @@
       "template_folder": "_themes"
     },
     {
+      "docset_name": "microsoft-365-copilot",
+      "build_source_folder": "copilot",
+      "build_output_subfolder": "microsoft-365-copilot",
+      "locale": "en-us",
+      "monikers": [],
+      "moniker_ranges": [],
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
+    },
+    {
       "docset_name": "Microsoft-365-docs",
       "build_source_folder": "microsoft-365",
       "build_output_subfolder": "Microsoft-365-docs",
