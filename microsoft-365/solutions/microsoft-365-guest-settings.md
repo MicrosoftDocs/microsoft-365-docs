@@ -2,8 +2,8 @@
 title: "Microsoft 365 guest sharing settings reference"
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: serdars
-ms.date: 03/10/2020
+manager: pamgreen
+ms.date: 11/07/2023
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -20,7 +20,7 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkTEAMS
 - admindeeplinkSPO
-ms.localizationpriority: high
+ms.localizationpriority: medium
 recommendations: false
 description: "Learn about the guest sharing settings available in Microsoft 365 that can affect sharing with people outside your organization."
 ---
@@ -35,31 +35,34 @@ This article provides a reference for the various settings that can affect shari
 
 **Admin role:** Global administrator
 
-Microsoft Entra ID is the directory service used by Microsoft 365. The Microsoft Entra Organizational relationships settings directly affect sharing in Teams, Microsoft 365 Groups, SharePoint, and OneDrive.
+Microsoft Entra ID is the directory service used by Microsoft 365. The Microsoft Entra organizational relationships settings directly affect sharing in Teams, Microsoft 365 Groups, SharePoint, and OneDrive.
 
 > [!NOTE]
 > These settings only affect SharePoint when [SharePoint and OneDrive integration with Microsoft Entra B2B](/sharepoint/sharepoint-azureb2b-integration-preview) has been configured. The table below assumes that this has been configured.
 
 ### External collaboration settings
 
-**Navigation:** [Microsoft Entra admin center](https://aad.portal.azure.com) > Microsoft Entra ID > External Identities > External collaboration settings
+**Navigation:** [Microsoft Entra admin center](https://entra.microsoft.com) > Identity > External Identities > External collaboration settings
 
 ![Screenshot of Microsoft Entra Organizational Relationships Settings page.](../media/azure-ad-organizational-relationships-settings.png)
 
 | Setting | Default | Description |
 |:-----|:-----|:-----|
 |Guest user access|Guest users have limited access to properties and memberships of directory objects|Determines the [permissions that guests have in Microsoft Entra ID](/azure/active-directory/fundamentals/users-default-permissions).|
-|Guest invite settings|Anyone in the organization can invite guest users including guests and non-admins|Determines whether guests, members, and admins can invite guests to the organization. <p> This setting affects  Microsoft 365 sharing experiences such as Teams and SharePoint.|
+|Guest invite restrictions|Anyone in the organization can invite guest users including guests and non-admins|Determines whether guests, members, and admins can invite guests to the organization. <p> This setting affects  Microsoft 365 sharing experiences such as Teams and SharePoint.|
 |Enable guest self-service sign-up via user flows|No|Determines if you can create user flows that allow someone to sign up for an app that you created and create a new guest account.|
-|Collaboration restrictions|Allow invitations to be sent to any domain|This setting allows you to specify a list of allowed or blocked domains for sharing. When allowed domains are specified, then sharing invitations can only be sent to those domains. When denied domains are specified, then sharing invitations cannot be sent to those domains. <p> This setting affects  Microsoft 365 sharing experiences such as Teams and SharePoint. You can allow or block domains at a more granular level by using domain filtering in SharePoint or Teams.|
+|External user leave settings|Yes|Determines if guests can remove themselves from your organization.|
+|Collaboration restrictions|Allow invitations to be sent to any domain|This setting allows you to specify a list of allowed or blocked domains for sharing. When allowed domains are specified, then sharing invitations can only be sent to those domains. When denied domains are specified, then sharing invitations cannot be sent to those domains. <p> This setting affects  Microsoft 365 sharing experiences such as Teams and SharePoint. You can also allow or block domains at by using [domain allow or block lists in SharePoint](/sharepoint/restricted-domains-sharing).|
 
 These settings affect how users are invited to the directory. They do not affect sharing with guests who are already in the directory.
 
 ### Cross-tenant access settings
 
-**Navigation:** [Microsoft Entra admin center](https://aad.portal.azure.com) > Microsoft Entra ID > External Identities > Cross-tenant access settings > Default settings tab
+**Navigation:** [Microsoft Entra admin center](https://aad.portal.azure.com) > Identity > External Identities > Cross-tenant access settings > Default settings tab
 
-The default settings apply to all external Microsoft Entra organizations except those with organization-specific settings. Settings for a specific organization can be configured on the **Organizational settings** tab. There are separate settings for guests (B2B collaboration) and [Microsoft Entra B2B direct connect](/azure/active-directory/external-identities/b2b-direct-connect-overview) users.
+The default settings apply to all external Microsoft Entra organizations except those with organization-specific settings. There are separate settings for guests (B2B collaboration) and [Microsoft Entra B2B direct connect](/azure/active-directory/external-identities/b2b-direct-connect-overview) users.
+
+Settings for a specific organization can be configured on the **Organizational settings** tab. Connections to other cloud environments can be configured on the **Microsoft cloud settings** tab.
 
 ![Screenshot of Microsoft Entra Cross-tenant access settings page.](../media/azure-ad-cross-tenant-default-settings.png)
 
@@ -86,6 +89,15 @@ Outbound access settings control whether your users can access resources in an e
 |B2B direct connect - external users and groups|All blocked|Determines which users in your organization can be granted access to resources in other Microsoft Entra organizations through B2B direct connect.|
 |B2B direct connect - applications|All blocked|Determines what apps in other Microsoft Entra organizations your users can be granted access to through B2B direct connect.|
 
+**Tenant restrictions**
+
+[Tenant restrictions settings](/entra/external-id/cross-tenant-access-overview#tenant-restrictions) control the types of external accounts your users can use on the devices you manage.
+
+| Setting | Default | Description |
+|:-----|:-----|:-----|
+|External users and groups|All blocked|Control whether your users can access external applications from your network or devices using external accounts.|
+|External applications|All blocked|Control which external applications users can access.|
+
 ## Microsoft 365
 
 **Admin role:** Global administrator
@@ -100,7 +112,7 @@ The Microsoft 365 admin center has organization-level settings for sharing and f
 
 | Setting | Default | Description |
 |:-----|:-----|:-----|
-|Let users add new guests to the organization|On|When set to **Yes**, Microsoft Entra members can invite guests via Microsoft Entra ID; when set to **No**, they cannot. When set to **Yes**, Microsoft 365 group members can invite guests with owner approval; when set to **No**, Microsoft 365 group members can invite guests with owner approval but owners must be global administrators to approve. <p> Note that **Members can invite** refers to members in Microsoft Entra ID (as opposed to guests) and not to site or group members in  Microsoft 365. <p> This is identical to the **Members can invite** setting in Microsoft Entra Organizational relationships settings.|
+|Let users add new guests to the organization|On|When set to **Yes**, Microsoft Entra ID members can invite guests via Microsoft Entra ID; when set to **No**, they cannot. When set to **Yes**, Microsoft 365 group members can invite guests with owner approval; when set to **No**, Microsoft 365 group members can invite guests with owner approval but owners must be global administrators to approve. <p> Note that **Members can invite** refers to members in Microsoft Entra ID (as opposed to guests) and not to site or group members in  Microsoft 365. <p> This setting changes the **Guest invite restrictions** setting in Microsoft Entra ID external collaboration settings.|
 
 ### Microsoft 365 Groups
 
@@ -110,30 +122,30 @@ The Microsoft 365 admin center has organization-level settings for sharing and f
 
 | Setting | Default | Description |
 |:-----|:-----|:-----|
-|Let group members outside your organization access group content|On|When set to **On**, guests can access groups content; when set to **Off**, they can't. This setting should be **On** for any scenario where guests are interacting with Microsoft 365 Groups or Teams.|
-|Let group owners add people outside your organization to groups|On|When **On**, owners of Microsoft 365 Groups or Teams can invite new guests to the group. When **Off**, they can't. This setting should be **On** for any scenario where guests are to be added to groups.|
+|Let group members outside your organization access group content|On|When set to **On**, guests can access groups content; when set to **Off**, they can't. This setting should be **On** for any scenario where guests are interacting with Microsoft 365 groups or teams.|
+|Let group owners add people outside your organization to groups|On|When **On**, owners of Microsoft 365 groups or teams can invite new guests to the group or team. When **Off**, they can't. This setting should be **On** for any scenario where guests are to be added to groups.|
 
-These settings are at the organization level. See [Create settings for a specific group](/azure/active-directory/users-groups-roles/groups-settings-cmdlets#create-settings-for-a-specific-group) for information about how to change these settings at the group level by using PowerShell.
+These settings are at the organization level. See [Create settings for a specific group](/azure/active-directory/users-groups-roles/groups-settings-cmdlets#create-settings-for-a-specific-group) for information about how to change these settings at the group level.
 
 ## Teams
 
-The Teams guest access switch, **Allow guest access in Teams**, must be **On** for the other guest settings to be available.
+The Teams guest access switch must be **On** for the other guest settings to be available.
 
 **Admin role:** Teams service administrator
 
 ### Guest access
 
-**Navigation:** [Teams admin center](https://admin.teams.microsoft.com) > **Org-wide settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2173122" target="_blank">**Guest access**</a>
+**Navigation:** [Teams admin center](https://admin.teams.microsoft.com) > **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2173122" target="_blank">**Guest access**</a>
 
 ![Screenshot of Teams guest access toggle.](../media/teams-guest-access-toggle.png)
 
 | Setting | Default | Description |
 |:-----|:-----|:-----|
-|Allow guest access in Teams|On|Turns guest access on or off for Teams overall. This setting can take 24 hours to take effect once changed.|
+|Guest access|On|Turns guest access on or off for Teams overall. This setting can take 24 hours to take effect once changed.|
 
 ### Guest calling
 
-**Navigation:** [Teams admin center](https://admin.teams.microsoft.com) > **Org-wide settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2173122" target="_blank">**Guest access**</a>
+**Navigation:** [Teams admin center](https://admin.teams.microsoft.com) > **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2173122" target="_blank">**Guest access**</a>
 
 ![Screenshot of Teams guest calling options.](../media/teams-guest-calling-setting.png)
 
@@ -143,19 +155,19 @@ The Teams guest access switch, **Allow guest access in Teams**, must be **On** f
 
 ### Guest meeting
 
-**Navigation:** [Teams admin center](https://admin.teams.microsoft.com) > **Org-wide settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2173122" target="_blank">**Guest access**</a>
+**Navigation:** [Teams admin center](https://admin.teams.microsoft.com) > **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2173122" target="_blank">**Guest access**</a>
 
 ![Screenshot of Teams guest meeting settings.](../media/teams-guest-meeting-settings.png)
 
 | Setting | Default | Description |
 |:-----|:-----|:-----|
-|Allow IP video|On|When **On**, guests can use video in their calls and meetings; when **Off**, they can't.|
-|Screen sharing mode|Entire screen|When **Disabled**, guests can't share their screens in Teams. When set to **Single application**, guests can only share a single application on their screen. When set to **Entire screen**, guests can choose to share an application or their entire screen.|
-|Allow Meet Now|On|When **On**, guests can use the Meet Now feature in Teams; when **Off**, they can't.|
+|Video conferencing|On|When **On**, guests can use video in their calls and meetings; when **Off**, they can't.|
+|Screen sharing|Entire screen|When **Not enabled**, guests can't share their screens in Teams. When set to **Single application**, guests can only share a single application on their screen. When set to **Entire screen**, guests can choose to share an application or their entire screen.|
+|Meet now in channels|On|When **On**, guests can use the Meet Now feature in Teams channels; when **Off**, they can't.|
 
 ### Guest messaging
 
-**Navigation:** [Teams admin center](https://admin.teams.microsoft.com) > **Org-wide settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2173122" target="_blank">**Guest access**</a>
+**Navigation:** [Teams admin center](https://admin.teams.microsoft.com) > **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2173122" target="_blank">**Guest access**</a>
 
 ![Screenshot of Teams guest messaging settings.](../media/teams-guest-messaging-settings.png)
 
@@ -163,12 +175,13 @@ The Teams guest access switch, **Allow guest access in Teams**, must be **On** f
 |:-----|:-----|:-----|
 |Edit sent messages|On|When **On**, guests can edit messages they previously sent; when **Off**, they can't.|
 |Delete sent messages|On|When **On**, guests can delete messages they previously sent; when **Off**, they can't.|
+|Delete chat|On|When **On**, guests can delete an entire chat conversation in Teams; when **Off**, they can't.|
 |Chat|On|When **On**, guests can use chat in Teams; when **Off**, they can't.|
-|Use Giphys in conversations|On|When **On**, guests can use Giphys in conversations; when **Off**, they can't.|
+|Giphy in conversations|On|When **On**, guests can use Giphys in conversations; when **Off**, they can't.|
 |Giphy content rating|Moderate|When set to **Allow all content**, guests can insert all Giphys in chats, regardless of the content rating. When set to **Moderate** guests can insert Giphys in chats, but will be moderately restricted from adult content. When set to **Strict** guests can insert Giphys in chats, but will be restricted from inserting adult content.|
-|Use Memes in conversations|On|When **On**, guests can use memes in conversations; when **Off**, they can't.|
-|User stickers in conversations|On|When **On**, guests can use stickers in conversations; when **Off**, they can't.|
-|Allow immersive reader for viewing messages|On|When **On**, guests can view messages in Immersive Reader; when **Off**, they can't.|
+|Memes in conversations|On|When **On**, guests can use memes in conversations; when **Off**, they can't.|
+|Stickers in conversations|On|When **On**, guests can use stickers in conversations; when **Off**, they can't.|
+|Immersive reader for messages|On|When **On**, guests can view messages in immersive reader; when **Off**, they can't.|
 
 ## SharePoint and OneDrive (organization-level)
 
