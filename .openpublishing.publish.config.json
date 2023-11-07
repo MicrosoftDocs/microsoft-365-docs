@@ -111,6 +111,7 @@
     ".openpublishing.redirection.knowledge.json",
     ".openpublishing.redirection.learning.json",
     ".openpublishing.redirection.syntex.json",
-    ".openpublishing.redirection.loop.json"
+    ".openpublishing.redirection.loop.json",
+    ".openpublishing.redirection.topics.json"
   ]
 }
