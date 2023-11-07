@@ -233,7 +233,7 @@ Once Deny happens and the notification is enabled in the policy, the end user se
 
 Use `mdatp health --details device_control` to inspect the Device Control status:
 
-```
+```console
 active                                      : ["v2"]
 v1_configured                               : false
 v1_enforcement_level                        : unavailable
