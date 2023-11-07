@@ -32,20 +32,21 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or standalone E
 
 The following table describes what the SCL values mean and the default action that's taken on those messages:
 
-|SCL|Definition|Default action|
+|SCL value|Definition|Default action|
 |:---:|---|---|
 |-1|The message skipped spam filtering. For example, the message is from a safe sender, was sent to a safe recipient, or is from an email source server on the IP Allow List. For more information, see [Create safe sender lists in EOP](create-safe-sender-lists-in-office-365.md).|Deliver the message to recipient Inbox folders.|
 |0, 1|Spam filtering determined the message wasn't spam.|Deliver the message to recipient Inbox folders.|
 |5, 6|Spam filtering marked the message as **Spam**|**Default anti-spam policy, new anti-spam policies, and [Standard preset security policy](preset-security-policies.md)**: Deliver the message to recipient Junk Email folders. <br/><br/> **Strict preset security policy**: [Quarantine the message](quarantine-end-user.md).|
-|7, 8, 9|Spam filtering marked the message as **High confidence spam**|**Default anti-spam policy and new anti-spam policies**: Deliver the message to recipient Junk Email folders. <br/><br/> **Standard and Strict preset security policies**: Quarantine the message.|
+|7, 8, 9|Spam filtering marked the message as **High confidence spam**|**Default anti-spam policy and new anti-spam policies**: Deliver the message to recipient Junk Email folders. <br/><br/> **Standard and Strict preset security policies**: [Quarantine the message](quarantine-end-user.md).|
 
-Spam filtering never stamps messages with the SCL values 2, 3, or 4.
-
-Typically, spam filtering itself doesn't stamp messages with the SCL value 7, but other features might. For example:
-
-- Human message grading by an analyst.
-- DMARC failures.
-- [Mail flow rules (also known as transport rules)](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
+> [!TIP]
+> Spam filtering never stamps messages with the SCL values 2, 3, or 4.
+>
+> Typically, spam filtering itself doesn't stamp messages with the SCL value 7, but other features might. For example:
+>
+> - Human message grading by an analyst.
+> - DMARC failures.
+> - [Mail flow rules (also known as transport rules)](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 
 For more information about actions you can take on messages based on the spam filtering verdict, see [Configure anti-spam policies in EOP](anti-spam-policies-configure.md).
 

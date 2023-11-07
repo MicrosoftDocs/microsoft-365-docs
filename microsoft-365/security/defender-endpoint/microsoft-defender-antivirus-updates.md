@@ -3,7 +3,7 @@ title: Microsoft Defender Antivirus security intelligence and product updates
 description: Manage how Microsoft Defender Antivirus receives protection and product updates.
 ms.service: microsoft-365-security
 ms.localizationpriority: high
-ms.date: 11/03/2023
+ms.date: 11/06/2023
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -102,11 +102,11 @@ All our updates contain
 - Serviceability improvements
 - Integration improvements (Cloud, [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 
-### October-2023 (Platform: Platform: 4.18.23090.2008 | Engine: 1.1.23100.2009)
+### October-2023 (Platform: Platform: 4.18.23100.2009 | Engine: 1.1.23100.2009)
 
 - Security intelligence update version: **1.401.3.0**
-- Release date:  **November 3, 2023 (Engine only) / (Platform pending)**
-- Platform: **4.18.23090.2008** (Update coming soon)
+- Release date:  **November 3, 2023 (Engine) / November 6, 2023 (Platform)**
+- Platform: **4.18.23100.2009**
 - Engine: **1.1.23100.2009**
 - Support phase: **Security and Critical Updates**
 
@@ -116,6 +116,10 @@ All our updates contain
 - Improved performance of [on-access scanning](configure-advanced-scan-types-microsoft-defender-antivirus.md) of files with Mark of the Web (MoTW)
 - Added support for Active Directory device groups with [device control](device-control-removable-storage-protection.md)
 - [ASROnlyPerRuleExclusions](/windows/client-management/mdm/defender-csp#configurationasronlyperruleexclusions) don't apply during an engine reboot
+- [Microsoft Defender Core service](microsoft-defender-antivirus-windows.md#microsoft-defender-core-service) is generally available for consumer devices and is coming soon for business customers.
+- [Device control](device-control-removable-storage-access-control.md) policies remain enforced following a platform update that requires a reboot
+- Improved performance of [device control for printing scenarios](printer-protection.md)
+- Fixed truncation issue in the output of [MpCmdRun.exe -scan](command-line-arguments-microsoft-defender-antivirus.md) (processing Unicode characters)
 
 #### Known issues
 
