@@ -933,7 +933,7 @@
      {
          "source_path": "microsoft-365/commerce/subscriptions/upgrade-from-teams-free.md",
          "redirect_url": "/microsoftteams/upgrade-freemium",
-         "redirect_document_id": true
+         "redirect_document_id": false
      }
   ]
 }
