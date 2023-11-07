@@ -9,7 +9,7 @@ manager: scotv
 ---
 # Request FastTrack assistance for Microsoft 365
 
-The FastTrack request for assistance (RFA) form is now available in the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/?linkid=2226341). Tenant admins use this form to request help from FastTrack specialists on their deployment and migration efforts. FastTrack assistance is available for tenants with 150 or more licenses from one of the [eligible plans](/microsoft-365/fasttrack/eligibility) from the following Microsoft product families: Microsoft 365, Office 365, Microsoft Viva, Enterprise Mobility & Security, and Windows 10/11.
+The FastTrack request for assistance (RFA) form is now available in the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/?linkid=2226341). Tenant admins use this form to request help from FastTrack specialists on their deployment and migration efforts. FastTrack assistance is available for tenants with 150 or more licenses from one of the [eligible plans](/microsoft-365/fasttrack/eligibility) for the following Microsoft product families: Microsoft 365, Office 365, Microsoft Viva, Enterprise Mobility + Security, and Windows 10/11.
 
 ## How to submit an RFA in the admin center
 
@@ -21,7 +21,7 @@ The FastTrack request for assistance (RFA) form is now available in the [Microso
    
    ![Screenshot of the FastTrack request overview page.](media/request-fasttrack-assistance-microsoft-365/fasttrack-request-overview.png)
 
-1. Select the products for FastTrack assistance, your planned deployment date, and whether you would like assistance with any additional options (if applicable). 
+1. Select the products for FastTrack assistance, your planned deployment date, and whether you would like assistance with any more options (if applicable). 
 
    ![Screenshot of the FastTrack choose products page.](media/request-fasttrack-assistance-microsoft-365/fasttrack-choose-products.png)
 
@@ -37,7 +37,7 @@ The FastTrack request for assistance (RFA) form is now available in the [Microso
 
    ![Screenshot of the FastTrack project sponsor contact page.](media/request-fasttrack-assistance-microsoft-365/fasttrack-sponsor-contact.png)
 
-1. On the **Review** page, view your request's information and make edits, if needed. Select the checkbox next to the acknowledgement message, and then select **Submit**. 
+1. On the **Review** page, view your request's information and make edits, if needed. Select the checkbox next to the acknowledgment message, and then select **Submit**. 
 
    ![Screenshot of the FastTrack review page.](media/request-fasttrack-assistance-microsoft-365/fasttrack-request-review.png)
 
