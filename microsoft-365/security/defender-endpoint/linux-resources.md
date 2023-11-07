@@ -109,12 +109,15 @@ The following table lists commands for some of the most common scenarios. Run `m
 |Configuration|Turn on/off behavior monitoring|`mdatp config behavior-monitoring --value [enabled\|disabled]`
 |Configuration|Turn on/off cloud protection|`mdatp config cloud --value [enabled\|disabled]`|
 |Configuration|Turn on/off product diagnostics|`mdatp config cloud-diagnostic --value [enabled\|disabled]`|
-|Configuration|Turn on/off automatic sample submission|`mdatp config cloud-automatic-sample-submission [enabled\|disabled]`|
+|Configuration|Turn on/off automatic sample submission|`mdatp config cloud-automatic-sample-submission --value [enabled\|disabled]`|
 |Configuration|Turn on/off AV passive mode|`mdatp config passive-mode --value [enabled\|disabled]`|
 |Configuration|Add/remove an antivirus exclusion for a file extension|`mdatp exclusion extension [add\|remove] --name [extension]`|
 |Configuration|Add/remove an antivirus exclusion for a file|`mdatp exclusion file [add\|remove] --path [path-to-file]`|
 |Configuration|Add/remove an antivirus exclusion for a directory|`mdatp exclusion folder [add\|remove] --path [path-to-directory]`|
 |Configuration|Add/remove an antivirus exclusion for a process|`mdatp exclusion process [add\|remove] --path [path-to-process]` <p> `mdatp exclusion process [add\|remove] --name [process-name]`|
+|Configuration|Add/remove a global exclusion for a file|`mdatp exclusion file [add\|remove] --path [path-to-file] --scope global`|
+|Configuration|Add/remove a global exclusion for a directory|`mdatp exclusion folder [add\|remove] --path [path-to-directory] --scope global`|
+|Configuration|Add/remove a global exclusion for a process|`mdatp exclusion process [add\|remove] --path [path-to-process] --scope global`|
 |Configuration|List all antivirus exclusions|`mdatp exclusion list`|
 |Configuration|Add a threat name to the allowed list|`mdatp threat allowed add --name [threat-name]`|
 |Configuration|Remove a threat name from the allowed list|`mdatp threat allowed remove --name [threat-name]`|
