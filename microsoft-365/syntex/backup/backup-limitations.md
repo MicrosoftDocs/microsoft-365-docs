@@ -2,7 +2,7 @@
 title: Limitations in Microsoft 365 Backup
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
 ms.date: 11/15/2023

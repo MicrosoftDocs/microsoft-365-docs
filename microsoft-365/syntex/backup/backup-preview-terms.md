@@ -2,7 +2,7 @@
 title: Microsoft 365 Backup public preview terms and conditions
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
 ms.date: 11/15/2023
