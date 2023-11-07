@@ -62,7 +62,7 @@ There are three ways to require your users to use MFA based on your Microsoft 36
 
 | Plan | Recommendation |
 |---------|---------|
-|All Microsoft 365 plans (without Microsoft Entra ID P1 or P2 licenses)     |[Enable security defaults in Microsoft Entra ID](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Security defaults in Microsoft Entra ID include MFA for users and administrators.   |
+|All Microsoft 365 plans (without Microsoft Entra ID P1 or P2 licenses)     |[Enable security defaults in Microsoft Entra ID](/entra/fundamentals/security-defaults#enabling-security-defaults). Security defaults in Microsoft Entra ID include MFA for users and administrators.   |
 |Microsoft 365 E3 (includes Microsoft Entra ID P1 licenses)     | Use the [common Conditional Access policies](/azure/active-directory/conditional-access/concept-conditional-access-policy-common) to configure the following policies: <br>- [Require MFA for administrators](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Require MFA for all users](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Block legacy authentication](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
 |Microsoft 365 E5 (includes Microsoft Entra ID P2 licenses)     | Taking advantage of Microsoft Entra ID Protection, begin to implement Microsoft's recommended set of Conditional Access and related policies by creating these two policies:<br> - [Require MFA when sign-in risk is medium or high](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk) <br>- [High risk users must change password](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk-user)       |
 | | |
@@ -75,7 +75,7 @@ Users have 14 days to register for MFA with the Microsoft Authenticator app from
 
 Security defaults ensure that all organizations have a basic level of security for user sign-in that is enabled by default. You can disable security defaults in favor of MFA with Conditional Access policies or for individual accounts.
 
-For more information, see the [overview of security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults).
+For more information, see the [overview of security defaults](/entra/fundamentals/security-defaults).
 
 ### Conditional Access policies
 
