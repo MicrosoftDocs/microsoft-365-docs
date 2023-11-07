@@ -2,7 +2,7 @@
 title: Additional information and important considerations related to Defender Experts for XDR
 ms.reviewer:
 description: Additional information and important considerations related to Defender Experts for XDR
-keywords: XDR, Xtended detection and response, defender experts for xdr, Microsoft Defender Experts for XDR, managed threat hunting, managed detection and response (MDR) service, service delivery manager, real-time visibility with XDR experts, Additional information related to XDR
+keywords: XDR, managed response, incident response, managed threat hunting, managed detection and response (MDR) service, readiness assessment, real-time visibility with XDR experts, Additional information related to XDR, benefits of microsoft xdr
 search.product: Windows 10
 ms.service: microsoft-365-security
 ms.subservice: m365d
@@ -19,7 +19,7 @@ ms.collection:
   - tier1
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 08/29/2023
+ms.date: 11/07/2023
 ---
 
 # Additional information
@@ -32,7 +32,7 @@ ms.date: 08/29/2023
 
 To realize the benefits of Microsoft Defender Experts for XDR, you and your security operations center (SOC) team must take note of the following considerations to ensure timely incident remediation, improve your organization's security posture, and protect your organization from threats.
 
-- **Engage actively through the readiness assessment process** – The [readiness assessment](get-started-xdr.md#run-initial-defender-experts-readiness-checks) when onboarding for Defender Experts for XDR is an integral part of the offering. Completing it successfully ensures prompt service coverage and protects your organization against known threats.
+- **Engage actively through the readiness assessment process** – The [readiness assessment](get-started-xdr.md#prepare-your-environment-for-the-defender-experts-service) when onboarding for Defender Experts for XDR is an integral part of the offering. Completing it successfully ensures prompt service coverage and protects your organization against known threats.
 - **Act on managed responses in a timely manner** – For any suspicious incidents and alerts, our experts provide a detailed investigation summary and managed responses for remediation. We expect your SOC team to act on these managed responses in a timely manner to prevent further impact from any malicious attempts.
 - **Configure recommended settings and follow best practices to improve security posture** – As part of our service, your service delivery manager and security analyst team share ongoing recommendations to strengthen your security posture. These recommendations are based on incidents investigated in your organization. Your SOC team should review these recommendations and implement them as soon as possible to protect your organization against future threats.
 
