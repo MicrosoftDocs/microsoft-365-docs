@@ -24,12 +24,12 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn how to manage plugins for Copilot in Integrated Apps."
+description: "Learn how to manage plugins for Copilot in the Integrated apps page in the Microsoft 365 admin center."
 ---
 
 # Manage Plugins for Copilot in Integrated Apps
 
-Microsoft 365 Copilot is a new experience inside Microsoft 365 that combines the power of large language models with your data and Microsoft 365 apps to capture natural language commands to produce content and analyze data. Plugins for Copilot are extensions that enable Copilot to access and use third-party apps, such as Jira, Dynamics 365, or Bing Web Search. Admins can manage plugins for Copilot in the same way as they manage any other app in the Integrated apps section of the Microsoft 365 admin center. This document explains how admins can enable, disable, assign, block, or remove plugins for Copilot for their organization, and about Copilot capabilities and data privacy.
+Microsoft Copilot for Microsoft 365 is a new experience inside Microsoft 365 that combines the power of large language models with your data and Microsoft 365 apps to capture natural language commands to produce content and analyze data. Plugins for Copilot are extensions that enable Copilot to access and use third-party apps, such as Jira, Dynamics 365, or Bing Web Search. Admins can manage plugins for Copilot in the same way as they manage any other app in the Integrated apps section of the Microsoft 365 admin center. This document explains how admins can enable, disable, assign, block, or remove plugins for Copilot for their organization, and about Copilot capabilities and data privacy.
 
 ## Overview
 
@@ -53,24 +53,27 @@ Admins can manage plugins for Copilot as apps in the Integrated apps section of 
 - Deploy or remove apps with plugins for Copilot for the whole organization or specific users or groups.
 - Block or unblock apps with plugins for Copilot for the whole organization.
 
+Admins can view all apps that have Copilot support from the list of available, deployed, or blocked apps on the Integrated apps page by using the filter option of **Microsoft 365 Copilot support** and setting it to **Yes**.
+
 ## Enable or disable Copilot extensibility
 
-Admins can enable or disable Copilot extensibility at the tenant level by using a new setting in the tenant default options in the Integrated Apps section of the Microsoft 365 admin center. This setting allows admins to control who can access Copilot plugins in their organization. The setting has two options:
+Admins can enable or disable Copilot extensibility at the tenant level by using a new setting in the tenant default options in the Integrated Apps section of the Microsoft 365 admin center. This setting allows admins to control who can access Copilot plugins in their organization. The setting has three options:
 
 - **All Users**: This is the default option and it means that all users in the organization can access Copilot plugins, subject to the existing app policies and user assignments.
-- **No Users**: This option means that no users in the organization can access Copilot plugins, and the 3P plugins are disabled in Copilot plugin flyout. This option also hides the apps that have Copilot plugins from the available and deployed apps lists in the Microsoft 365 admin center.
+- **No Users**: This option means that no users in the organization can access Copilot plugins, and the 3P plugins are disabled in the Copilot plugin flyout. This option also hides the apps that have Copilot plugins from the Available apps and Deployed apps lists in the Microsoft 365 admin center.
+- **Specific Users**: This option allows you to select specific users or groups in your organization to have access to Copilot plugins. So while all or specific users in your organization may have permissions to install and use apps from the Available apps and Deployed apps lists, only the users or groups you select in this setting can use Copilot plugins within these apps.
 
 ## Deploy or remove plugins for Copilot
 
-Admins can deploy or remove plugins for Copilot across the whole organization or for specific users or groups by using the same gestures and controls that work for any other app in the Microsoft 365 admin center. Admins can select an app that has a plugin for Copilot from the available or deployed apps list and click on the **Deploy** or **Remove** button. Admins can also choose to deploy or remove the app for everyone or specific users or groups. Deploying or removing an app affects its availability and functionality in Copilot as well as other host products, such as Outlook, Teams, or Microsoft 365.
+Admins can deploy or remove plugins for Copilot across the whole organization or for specific users or groups by using the same gestures and controls that work for any other app in the Microsoft 365 admin center. Admins can select an app that has a plugin for Copilot from the Available apps or Deployed apps list and click on the **Deploy** or **Remove** button. Admins can also choose to deploy or remove the app for everyone or specific users or groups. Deploying or removing an app affects its availability and functionality in Copilot as well as other host products, such as Outlook, Teams, or Microsoft 365.
 
 ## Manage how users can install plugins for Copilot
 
-Admins can assign or unassign plugins for Copilot to specific users or groups by using the same gestures and controls that work for any other app in the Microsoft 365 admin center. Admins can select an app that has a plugin for Copilot from the available or deployed apps list and click on the **Assign** or **Unassign** button. Admins can also choose to assign or unassign the app to everyone or specific users or groups. Assigning or unassigning an app affects its availability and functionality in Copilot as well as other host products, such as Outlook, Teams, or Microsoft 365.
+Admins can assign or unassign plugins for Copilot to specific users or groups by using the same gestures and controls that work for any other app in the Microsoft 365 admin center. Admins can select an app that has a plugin for Copilot from the Available apps or Deployed apps list and click on the **Assign** or **Unassign** button. Admins can also choose to assign or unassign the app to everyone or specific users or groups. Assigning or unassigning an app affects its availability and functionality in Copilot as well as other host products, such as Outlook, Teams, or Microsoft 365.
 
 ## Block or unblock plugins for Copilot
 
-Admins can block or unblock plugins for Copilot for the whole organization or specific users or groups by using the same gestures and controls that work for any other app in the Microsoft 365 admin center. Admins can select an app that has a plugin for Copilot from the available or deployed apps list and click on the block or unblock button. Admins can also choose to block or unblock the app for everyone or specific users or groups. Blocking or unblocking an app affects its availability and functionality in Copilot as well as other host products, such as Outlook, Teams, or Microsoft 365.
+Admins can block or unblock plugins for Copilot for the whole organization or specific users or groups by using the same gestures and controls that work for any other app in the Microsoft 365 admin center. Admins can select an app that has a plugin for Copilot from the Available apps or Deployed apps list and click on the block or unblock button. Admins can also choose to block or unblock the app for everyone or specific users or groups. Blocking or unblocking an app affects its availability and functionality in Copilot as well as other host products, such as Outlook, Teams, or Microsoft 365.
 
 ## View and consent to permissions and data access 
 
