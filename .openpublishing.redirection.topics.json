@@ -1,0 +1,9 @@
+{
+  "redirections": [
+    {
+      "source_path": "microsoft-365/topics/index.md",
+      "redirect_url": "/microsoft-365/topics/topic-experiences-overview",
+      "redirect_document_id": false
+    }
+  ]
+}
