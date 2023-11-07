@@ -74,7 +74,7 @@ Defender Experts for XDR lets you determine the individuals or groups within you
 > Given the urgent nature of the communications, it is recommended to have someone available at all times.
 
 2. Select **Next**. Under **Service review contact**, search for and add your contact persons or teams that we can engage with for ongoing security briefings done by our service delivery team.
-3. Select **Next**. The settings guide then provides you with information about the **Next steps**, including working with our experts to [optimize your security posture](#run-initial-defender-experts-readiness-checks).
+3. Select **Next**. The settings guide then provides you with information about the **Next steps**, including working with our experts to [optimize your security posture](#prepare-your-environemnt-for-the-defender-experts-service).
 4. Select **Close** to exit the settings step-by-step guide.
 
 To edit or update your notification contacts after the initial setup, go to **Settings** > **Defender Experts** > **Notification contacts**:
@@ -116,6 +116,7 @@ Once you’ve completed all the required tasks and met the onboarding targets in
 [Start using Microsoft Defender Experts for XDR service](start-using-mdex-xdr.md)
 
 ### See also
+
 - [Frequently asked questions](frequently-asked-questions.md)
 - [How Microsoft Defender Experts for XDR permissions work](dex-xdr-permissions.md)
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
