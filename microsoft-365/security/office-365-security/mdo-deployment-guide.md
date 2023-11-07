@@ -28,6 +28,9 @@ appliesto:
 
 In new Microsoft 365 organizations with Microsoft Defender for Office 365 (included or as an add-on subscription), this article describes the configuration steps that you need to do in [Exchange Online Protection (EOP)](eop-about.md) and [Defender for Office 365](mdo-about.md) in the earliest days of your organization.
 
+> [!TIP]
+> As a companion to this article, we recommend using the [Microsoft Defender for Office automated setup guide](https://go.microsoft.com/fwlink/?linkid=2251565) when signed in to the Microsoft 365 admin center. This guide will customize your experience based on your environment. To review best practices without signing in and activating automated setup features, go to the [Microsoft 365 setup portal](https://go.microsoft.com/fwlink/?linkid=2251363).
+
 Although your Microsoft 365 organization includes a default level of protection from the moment you create it (or add Defender for Office 365 to it), the steps in this article give you an actionable plan to unleash the full protection capabilities of EOP and Defender for Office 365. After you complete the steps, you can also use this article to show management that you're maximizing your investment in Microsoft 365.
 
 The steps to configure EOP and Defender for Office 365 are described in the following diagram:
