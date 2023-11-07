@@ -26,7 +26,7 @@ description: "Summary: Configure and demonstrate password hash synchronization a
 
 *This Test Lab Guide can be used for both Microsoft 365 for enterprise and Office 365 Enterprise test environments.*
 
-Many organizations use Azure AD Connect and password hash synchronization to synchronize the set of accounts in their on-premises Active Directory Domain Services (AD DS) forest to the set of accounts in the Azure AD tenant of their Microsoft 365 subscription. 
+Many organizations use Microsoft Entra Connect and password hash synchronization to synchronize the set of accounts in their on-premises Active Directory Domain Services (AD DS) forest to the set of accounts in the Microsoft Entra tenant of their Microsoft 365 subscription. 
 
 This article describes how you can add password hash synchronization to your Microsoft 365 test environment, which results in this configuration:
   
@@ -35,7 +35,7 @@ This article describes how you can add password hash synchronization to your Mic
 Setting up this test environment involves three phases:
 - [Phase 1: Create the Microsoft 365 simulated enterprise test environment](#phase-1-create-the-microsoft-365-simulated-enterprise-test-environment)
 - [Phase 2: Create and register the testlab domain](#phase-2-create-and-register-the-testlab-domain)
-- [Phase 3: Install Azure AD Connect on APP1](#phase-3-install-azure-ad-connect-on-app1)
+- [Phase 3: Install Microsoft Entra Connect on APP1](#phase-3-install-azure-ad-connect-on-app1)
     
 > [!TIP]
 > For a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack, go to [Microsoft 365 for enterprise Test Lab Guide Stack](https://download.microsoft.com/download/5/e/4/5e43a139-09c5-4700-b846-e468444bc557/Microsoft365EnterpriseTLGStack.pdf).
@@ -74,11 +74,13 @@ Notice how the testlab.<*your public domain name*> is now:
 - Registered in your Microsoft 365 subscriptions.
 - The AD DS domain on your simulated intranet.
      
-## Phase 3: Install Azure AD Connect on APP1
+<a name='phase-3-install-azure-ad-connect-on-app1'></a>
 
-In this phase, install and configure the Azure AD Connect tool on APP1, and then verify that it works.
+## Phase 3: Install Microsoft Entra Connect on APP1
+
+In this phase, install and configure the Microsoft Entra Connect tool on APP1, and then verify that it works.
   
-First, install and configure Azure AD Connect on APP1.
+First, install and configure Microsoft Entra Connect on APP1.
 
 1. From the [Azure portal](https://portal.azure.com), sign in with your global administrator account, and then connect to APP1 with the TESTLAB\\User1 account.
     
@@ -90,15 +92,15 @@ First, install and configure Azure AD Connect on APP1.
    Stop-Process -Name Explorer -Force
    ```
 
-3. From the taskbar, select **Internet Explorer** and go to [https://aka.ms/aadconnect](https://aka.ms/aadconnect).
+3. From the taskbar, select **Internet Explorer** and go to [`https://aka.ms/aadconnect`](https://aka.ms/aadconnect).
     
-4. On the Microsoft Azure Active Directory Connect page, select **Download**, and then select **Run**.
+4. On the Microsoft Entra Connect page, select **Download**, and then select **Run**.
     
-5. On the **Welcome to Azure AD Connect** page, select **I agree**, and then select **Continue**.
+5. On the **Welcome to Microsoft Entra Connect** page, select **I agree**, and then select **Continue**.
     
 6. On the **Express Settings** page, select **Use express settings**.
     
-7. On the **Connect to Azure AD** page, enter your global administrator account name in **Username,** enter its password in **Password**, and then select **Next**.
+7. On the **Connect to Microsoft Entra ID** page, enter your global administrator account name in **Username,** enter its password in **Password**, and then select **Next**.
     
 8. On the **Connect to AD DS** page, enter **TESTLAB\\User1** in **Username,** enter its password in **Password**, and then select **Next**.
     
@@ -133,8 +135,8 @@ Your resulting configuration looks like this:
 This configuration consists of: 
   
 - Microsoft 365 E5 or Office 365 E5 trial or paid subscriptions with the DNS domain TESTLAB.<*your domain name*> registered.
-- A simplified organization intranet connected to the internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. Azure AD Connect runs on APP1 to periodically synchronize the TESTLAB AD DS domain to the Azure AD tenant of your Microsoft 365 subscription.
-- The User1 account in the TESTLAB  AD DS domain has been synchronized with the Azure AD tenant.
+- A simplified organization intranet connected to the internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. Microsoft Entra Connect runs on APP1 to periodically synchronize the TESTLAB AD DS domain to the Microsoft Entra tenant of your Microsoft 365 subscription.
+- The User1 account in the TESTLAB  AD DS domain has been synchronized with the Microsoft Entra tenant.
 
 ## Next step
 

@@ -48,7 +48,7 @@ In this phase, you enable increased Microsoft 365 security for your Microsoft 36
 
 ### Configure SharePoint Online to block apps that don't support modern authentication
 
-Apps that do not support modern authentication cannot have [identity and device access configurations](../security/office-365-security/microsoft-365-policies-configurations.md) applied to them, which is an important element of securing your Microsoft 365 subscription and its digital assets.
+Apps that do not support modern authentication cannot have [identity and device access configurations](../security/office-365-security/zero-trust-identity-device-access-policies-overview.md) applied to them, which is an important element of securing your Microsoft 365 subscription and its digital assets.
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> and sign in to your Microsoft 365 test lab subscription with your global administrator account.
 

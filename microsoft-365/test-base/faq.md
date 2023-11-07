@@ -85,7 +85,7 @@ While for functional tests, you can specify whether a reboot is required for eac
 
 **Q: What Windows versions do you support?**
 
-**A:** We currently support Windows 10 clients, Windows Server 2016, Windows Server 2016 Core version, Windows Server 2019, and Windows Server 2019 Core version.
+**A:** We currently support Windows 11 clients, Windows 10 clients, Windows Server 2016, Windows Server 2016 Core version, Windows Server 2019, and Windows Server 2019 Core version.
 
 **Q: What is the difference between Security Update tests and Feature Update tests?**
 
@@ -128,7 +128,7 @@ We always work closely with our customers in joint remediation to resolve any is
 
 **Q: Where are my packages and binaries stored and what security precautions do you take to keep my data safe?**
 
-**A:** Packages are uploaded and stored in Microsoft-managed Azure cloud storage. The data is encrypted in transit and at rest. When the system gets notified that one of your packages needs to be tested, a dedicated and isolated Microsoft-managed Azure Guest VM is provisioned with the OS image you selected. This VM lives within our Microsoft tenant and is provisioned within its own VNet/private subnet to prevent any lateral moves from any other Azure VM in our VM pool. The VM is configured to disallow any inbound traffic to protect the integrity of the Guest VM. In addition to these guardrails, your Test Base account and packages are uploaded as Azure resources and benefit from Azure RBAC. You can use Azure AD plus Azure RBAC to control access to your account and packages.
+**A:** Packages are uploaded and stored in Microsoft-managed Azure cloud storage. The data is encrypted in transit and at rest. When the system gets notified that one of your packages needs to be tested, a dedicated and isolated Microsoft-managed Azure Guest VM is provisioned with the OS image you selected. This VM lives within our Microsoft tenant and is provisioned within its own VNet/private subnet to prevent any lateral moves from any other Azure VM in our VM pool. The VM is configured to disallow any inbound traffic to protect the integrity of the Guest VM. In addition to these guardrails, your Test Base account and packages are uploaded as Azure resources and benefit from Azure RBAC. You can use Microsoft Entra ID plus Azure RBAC to control access to your account and packages.
 
 **Q: Who has access to the VM?**
 

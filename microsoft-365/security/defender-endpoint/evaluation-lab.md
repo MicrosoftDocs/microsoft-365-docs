@@ -1,10 +1,6 @@
 ---
 title: Microsoft Defender for Endpoint evaluation lab
 description: Learn about Microsoft Defender for Endpoint capabilities, run attack simulations, and see how it prevents, detects, and remediates threats.
-keywords: evaluate Microsoft Defender for Endpoint, evaluation, lab, simulation, windows 10, windows server 2019, evaluation lab
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.service: microsoft-365-security
 ms.author: macapara
 author: mjcaparas
@@ -19,7 +15,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 12/18/2020
+ms.date: 11/02/2023
 ---
 
 # Microsoft Defender for Endpoint evaluation lab
@@ -28,7 +24,6 @@ ms.date: 12/18/2020
 
 **Applies to:**
 
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -313,3 +308,4 @@ Let us know what you think, by selecting **Provide feedback**.
 
 :::image type="content" source="images/send-us-feedback-eval-lab.png" alt-text="The feedback page" lightbox="images/send-us-feedback-eval-lab.png":::
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+

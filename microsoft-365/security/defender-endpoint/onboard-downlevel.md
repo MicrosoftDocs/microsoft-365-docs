@@ -3,13 +3,11 @@ title: Onboard previous versions of Windows on Microsoft Defender for Endpoint
 description: Onboard supported previous versions of Windows devices so that they can send sensor data to the Microsoft Defender for Endpoint sensor
 keywords: onboard, windows, 7, 81, oms, sp1, enterprise, pro, down level
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium
 manager: dansimp
+ms.reviewer: pahuijbr
 audience: ITPro
 ms.collection:
 - m365-security
@@ -56,9 +54,6 @@ For Windows Server 2008 R2 SP1, you have the option of [onboarding through Micro
 > After onboarding the device, you can choose to run a detection test to verify that it is properly onboarded to the service. For more information, see [Run a detection test on a newly onboarded Defender for Endpoint endpoint](run-detection-test.md).
 
 ## Configure and update System Center Endpoint Protection clients
-
-> [!IMPORTANT]
-> This step is required only if your organization uses System Center Endpoint Protection (SCEP).
 
 Defender for Endpoint integrates with System Center Endpoint Protection to provide visibility to malware detections and to stop propagation of an attack in your organization by banning potentially malicious files or suspected malware.
 
@@ -127,7 +122,7 @@ If your servers need to use a proxy to communicate with Defender for Endpoint, u
 
 - [Configure Windows to use a proxy server for all connections](configure-proxy-internet.md)
 
-If a proxy or firewall is in use, please ensure that servers can access all of the Microsoft Defender for Endpoint service URLs directly and without SSL interception. For more information, see [enable access to Defender for Endpoint service URLs](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server). Use of SSL interception will prevent the system from communicating with the Defender for Endpoint service.
+If a proxy or firewall is in use, please ensure that servers can access all of the Microsoft Defender for Endpoint service URLs directly and without SSL interception. For more information, see [enable access to Microsoft Defender for Endpoint service URLs](configure-environment.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server). Use of SSL interception will prevent the system from communicating with the Defender for Endpoint service.
 
 Once completed, you should see onboarded Windows servers in the portal within an hour.
 

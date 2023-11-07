@@ -24,7 +24,7 @@ description: "Learn how to create a B2B extranet site or team with managed guest
 
 # Create a B2B extranet with managed guests
 
-You can use [Entitlement Management](/azure/active-directory/governance/entitlement-management-overview) to create a B2B extranet to collaborate with a partner organization that uses Azure Active Directory. This allows users to self-enroll in the extranet site or team and receive access via an approval workflow.
+You can use [Entitlement Management](/azure/active-directory/governance/entitlement-management-overview) to create a B2B extranet to collaborate with a partner organization that uses Microsoft Entra ID. This allows users to self-enroll in the extranet site or team and receive access via an approval workflow.
 
 With this method of sharing resources for collaboration, the partner organization can help maintain and approve the guests on their end, reducing the burden on your IT department and allowing those most familiar with the collaboration agreement to manage user access.
 
@@ -34,7 +34,7 @@ Before you begin, create the site or team that you want to share with the partne
 
 ## License requirements
 
-Using this feature requires Microsoft Entra ID Governance licenses. To find the right license for your requirements, see [Compare generally available features of Microsoft Azure AD](https://www.microsoft.com/security/business/identity-access-management/azure-ad-pricing).
+Using this feature requires Microsoft Entra ID Governance licenses. To find the right license for your requirements, see [Compare generally available features of Microsoft Entra ID](https://www.microsoft.com/security/business/identity-access-management/azure-ad-pricing).
 
 Specialized clouds, such as Azure Germany and Azure China 21Vianet, aren't currently available for use.
 
@@ -46,7 +46,7 @@ This video demonstrates the procedures covered in this article.
 
 ## Connect the partner organization
 
-In order to invite guests from a partner organization, you need to add the partner's domain as a connected organization in Azure Active Directory.
+In order to invite guests from a partner organization, you need to add the partner's domain as a connected organization in Microsoft Entra ID.
 
 To add a connected organization
 1. In the [Microsoft Entra admin center](https://aad.portal.azure.com), select **Identity Governance**.

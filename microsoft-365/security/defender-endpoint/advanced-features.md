@@ -13,7 +13,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 07/11/2023
+ms.date: 08/15/2023
 ---
 
 # Configure advanced features in Defender for Endpoint
@@ -136,7 +136,7 @@ For more information, including how to configure tamper protection, see [Protect
 
 ## Show user details
 
-Turn on this feature so that you can see user details stored in Azure Active Directory. Details include a user's picture, name, title, and department information when investigating user account entities. You can find user account information in the following views:
+Turn on this feature so that you can see user details stored in Microsoft Entra ID. Details include a user's picture, name, title, and department information when investigating user account entities. You can find user account information in the following views:
 
 - Alert queue
 - Device details page
@@ -213,7 +213,7 @@ Defender for Endpoint can be integrated with [Microsoft Intune](/intune/what-is-
 This feature is only available if you've the following prerequisites:
 
 - A licensed tenant for Enterprise Mobility + Security E3, and Windows E5 (or Microsoft 365 Enterprise E5)
-- An active Microsoft Intune environment, with Intune-managed Windows devices [Azure AD-joined](/azure/active-directory/devices/concept-azure-ad-join/).
+- An active Microsoft Intune environment, with Intune-managed Windows devices [Microsoft Entra joined](/azure/active-directory/devices/concept-azure-ad-join/).
 
 ### Conditional Access policy
 
@@ -238,6 +238,14 @@ You'll have access to upcoming features, which you can provide feedback on to he
 ## Download quarantined files
 
 Backup quarantined files in a secure and compliant location so they can be downloaded directly from quarantine. The **Download file** button will always be available in the file page. This setting is turned on by default. [Learn more about requirements](respond-file-alerts.md#download-quarantined-files)
+
+
+## Streamlined connectivity during device onboarding (Preview)
+
+This setting will set the default onboarding package to 'streamlined' for applicable operating systems.
+
+You will still have the option to use the standard onboarding package within the onboarding page but you will need to specifically select it in the drop-down.
+
 
 ## Related topics
 

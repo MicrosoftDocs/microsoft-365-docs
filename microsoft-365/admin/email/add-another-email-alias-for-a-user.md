@@ -71,7 +71,7 @@ If you get this error message it means that it's taking a bit longer to finish s
 
 ### Did you get "This user is synchronized with your local Active Directory. Some details can be edited only through your local Active Directory" message?
 
-If you get this error message it means that you need to add the alias in your on-premises Active Directory. Open Azure Active Directory and select the user account you would like to edit. Select **Properties** > **Attribute Editor** > **Proxyaddresses** and add the required alias, then wait for it to sync to Azure Active directory.
+If you get this error message it means that you need to add the alias in your on-premises Active Directory. Open Microsoft Entra ID and select the user account you would like to edit. Select **Properties** > **Attribute Editor** > **Proxyaddresses** and add the required alias, then wait for it to sync to Microsoft Entra ID.
 
 ### Did you purchase your subscription from GoDaddy or another Partner?
 
