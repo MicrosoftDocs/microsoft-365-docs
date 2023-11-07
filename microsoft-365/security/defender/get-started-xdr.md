@@ -87,7 +87,7 @@ To edit or update your notification contacts after the initial setup, go to **Se
 
 ## Prepare your environment for the Defender Experts service
 
-Apart from onboarding service delivery, our expertise on the Microsoft 365 Defender product suite enables Defender Experts for XDR to let you run a **readiness assessment** to help you get the most out of your Microsoft security products.
+Apart from onboarding service delivery, our expertise on the Microsoft 365 Defender product suite enables Defender Experts for XDR to let you run a **readiness assessment** and help you get the most out of your Microsoft security products.
 
 The readiness assessment is based on the number of protected devices and identities in your environment, and Defender Experts' policy recommendations. To view the assessment, in your Microsoft 365 Defender portal, go to **Settings** > **Defender Experts** then select **Service status**.
 
@@ -97,14 +97,14 @@ The readiness assessment has two parts:
 
 - **Actions needed** – This section shows the number of actions or security settings that you need to complete, are in progress, or have been completed. These are listed in a table at the bottom part of the page.
 
-The list outlines the required steps to be taken before initiating the service. Prioritize the actions that have the **Complete now** status to get the Defender Experts for XDR service started sooner.
+  The list outlines the required steps you need to take before initiating the service. Prioritize the actions that have the **Complete now** status to get the Defender Experts for XDR service started sooner.
 
-> [!NOTE]
-> It can take up to 24 hours to get the latest status of your security settings.
+  > [!NOTE]
+  > It can take up to 24 hours to get the latest status of your security settings.
 
 - **Protected assets** – This section shows the current number of protected devices and identities versus the ones that you still need to protect to get the Defender Experts for XDR service started.
 
-The figures are based on your Defender for Endpoint and Defender for Identity licenses; to achieve these target number of protected assets, [onboard more devices](/microsoft-365/security/defender-endpoint/onboarding) to Defender for Endpoint or [install more Defender for Identity sensors](/defender-for-identity/install-sensor).
+  The figures are based on your Defender for Endpoint and Defender for Identity licenses; to achieve these target number of protected assets, [onboard more devices](/microsoft-365/security/defender-endpoint/onboarding) to Defender for Endpoint or [install more Defender for Identity sensors](/defender-for-identity/install-sensor).
 
 > [!IMPORTANT]
 > Defender Experts for XDR reviews your readiness assessment periodically, especially if there are any changes to your environment, such as the addition of new devices and identities. It’s important that you regularly monitor and run the readiness assessment beyond the initial onboarding to ensure that your environment has strong security posture to reduce risk.
@@ -119,4 +119,5 @@ Once you’ve completed all the required tasks and met the onboarding targets in
 
 - [Frequently asked questions](frequently-asked-questions.md)
 - [How Microsoft Defender Experts for XDR permissions work](dex-xdr-permissions.md)
+
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
