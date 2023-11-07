@@ -74,7 +74,7 @@ Defender Experts for XDR lets you determine the individuals or groups within you
 > Given the urgent nature of the communications, it is recommended to have someone available at all times.
 
 2. Select **Next**. Under **Service review contact**, search for and add your contact persons or teams that we can engage with for ongoing security briefings done by our service delivery team.
-3. Select **Next**. The settings guide then provides you with information about the **Next steps**, including working with our experts to [optimize your security posture](#prepare-your-environemnt-for-the-defender-experts-service).
+3. Select **Next**. The settings guide then provides you with information about the **Next steps**, including working with our experts to [optimize your security posture](#prepare-your-environment-for-the-defender-experts-service).
 4. Select **Close** to exit the settings step-by-step guide.
 
 To edit or update your notification contacts after the initial setup, go to **Settings** > **Defender Experts** > **Notification contacts**:
