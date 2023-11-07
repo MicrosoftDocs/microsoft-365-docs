@@ -88,7 +88,7 @@ Example 2: [demo.mobileconfig](https://github.com/microsoft/mdatp-devicecontrol/
 - Minimum product version: 101.91.92 or higher
 - Run _mdatp version_ through Terminal to see the product version on your client machine:
 
-:::image type="content" source="images/macos-device-control-mdatp-version-terminal.png " alt-text="Screenshot that shows the results when you run mdatp version in Terminal to see the product version on a client machine." lightbox="images/macos-device-control-mdatp-version-terminal.png ":::
+  :::image type="content" source="images/macos-device-control-mdatp-version-terminal.png " alt-text="Screenshot that shows the results when you run mdatp version in Terminal to see the product version on a client machine." lightbox="images/macos-device-control-mdatp-version-terminal.png ":::
 
 ## Device Control for macOS properties
 
