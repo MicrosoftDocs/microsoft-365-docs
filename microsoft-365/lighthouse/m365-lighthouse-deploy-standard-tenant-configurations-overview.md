@@ -32,6 +32,8 @@ To view the Microsoft 365 Lighthouse default baseline that applies to all tenant
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5dQib]
 
+Check out the other [Microsoft 365 Lighthouse videos](https://www.youtube.com/playlist?list=PLnWjfDdQkUQSCbV-ftVD311_fZxghB22C) on our YouTube channel.
+
 ## Microsoft 365 Lighthouse default baseline
 
 The Microsoft 365 Lighthouse default baseline is designed to ensure all managed tenants are healthy and secure. To view the tasks included in the default baseline, select **Default baseline** from the list. Select any of the tasks to view additional details about the task and the associated user impact.
