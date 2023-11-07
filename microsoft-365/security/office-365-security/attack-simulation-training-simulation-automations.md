@@ -15,7 +15,7 @@ ms.subservice: mdo
 search.appverid: met150
 ms.date: 6/14/2023
 appliesto:
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview" target="_blank">Microsoft Defender for Office 365 plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
 ---
 
 # Simulation automations for Attack simulation training
@@ -209,9 +209,6 @@ When you're finished on  the **Configure OAuth payload** page, select **Next**.
 On the **Target users** page, select who receives the simulation. Use the following options to select users:
 
 - **Include all users in your organization**: The unmodifiable list of users is show in groups of 10. You can use the **Next** and **Previous** buttons directly below the list of users to scroll through the list. You can also use the :::image type="icon" source="../../media/m365-cc-sc-search-icon.png" border="false"::: **Search** icon on the page to find specific users.
-
-  > [!TIP]
-  > Although you can't remove users from the list on this page, you can use the next **Exclude users** page to exclude specific users.
 
 - **Include only specific users and groups**: At first, no users or groups are shown on the **Targeted users** page. To add users or groups to the simulation, choose one of the following options:
 

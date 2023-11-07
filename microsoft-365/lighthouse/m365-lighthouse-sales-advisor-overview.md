@@ -26,9 +26,10 @@ description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthous
 
 Sales Advisor is a customer lifecycle management (CLM) experience that provides AI-driven customer insights, actionable recommendations, and prescriptive guidance across the customer lifecycle. Sales Advisor is based on a set of business rules, customer usage, and licensing positions. It enables a technique called "propensity modeling" to present dynamic opportunities for partners to better acquire, retain, and grow their customers.
 
-To view Sales Advisor, select **Sales Advisor \> Opportunities** in the left navigation pane in Lighthouse.
+To view Sales Advisor, select **Sales Advisor** > **Opportunities** in the left navigation pane in [Lighthouse](https://lighthouse.microsoft.com).
 
-**IMPORTANT:** To use Sales Advisor, users must have the appropriate roles listed in [Get access to Sales Advisor](m365-lighthouse-get-access-to-sales-advisor.md).
+> [!IMPORTANT]
+> To use Sales Advisor, users must have the appropriate roles listed in [Get access to Sales Advisor in Microsoft 365 Lighthouse](m365-lighthouse-get-access-to-sales-advisor.md).
 
 ## Watch: What is Sales Advisor?
 

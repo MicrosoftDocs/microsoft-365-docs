@@ -21,7 +21,7 @@ ms.custom:
 - manage_licenses
 search.appverid: MET150 
 description: "Learn how to move users between subscriptions."
-ms.date: 05/12/2022
+ms.date: 06/09/2023
 ---
 
 # Move users to a different subscription

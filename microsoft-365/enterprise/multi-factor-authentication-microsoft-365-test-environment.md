@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 for enterprise test environment multi-factor authentication
+title: Microsoft 365 for enterprise test environment multifactor authentication
 f1.keywords:
 - NOCSH
 ms.author: kvice
@@ -18,53 +18,55 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 - admindeeplinkMAC
-description: "Configure multi-factor authentication using text messages sent to a smart phone in your Microsoft 365 for enterprise test environment."
+description: "Configure multifactor authentication using text messages sent to a smart phone in your Microsoft 365 for enterprise test environment."
 ---
 
-# Multi-factor authentication for your Microsoft 365 for enterprise test environment
+# Multifactor authentication for your Microsoft 365 for enterprise test environment
 
 *This Test Lab Guide can be used for both Microsoft 365 for enterprise and Office 365 Enterprise test environments.*
 
-For an additional level of security for signing in to Microsoft 365 or any service or application that uses the Azure AD tenant for your subscription, you can enable Azure AD multi-factor authentication, which requires more than just a username and password to verify an account.
+For an additional level of security for signing in to Microsoft 365 or any service or application that uses the Microsoft Entra tenant for your subscription, you can enable Microsoft Entra multifactor authentication, which requires more than just a username and password to verify an account.
 
-With multi-factor authentication, users are required to acknowledge a phone call, type a verification code sent in a text message, or verify the authentication with an app on their smart phones after correctly entering their passwords. They can sign in only after this second authentication factor is satisfied.
+With multifactor authentication, users are required to acknowledge a phone call, type a verification code sent in a text message, or verify the authentication with an app on their smart phones after correctly entering their passwords. They can sign in only after this second authentication factor is satisfied.
   
 This article describes how to enable and test text message-based authentication for a specific user account.
   
-Setting up multi-factor authentication for an account in your Microsoft 365 for enterprise test environment involves two phases and a third optional phase:
+Setting up multifactor authentication for an account in your Microsoft 365 for enterprise test environment involves two phases and a third optional phase:
 - [Phase 1: Build out your Microsoft 365 for enterprise test environment](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
-- [Phase 2: Enable and test multi-factor authentication for the User 2 account](#phase-2-enable-and-test-multi-factor-authentication-for-the-user-2-account)
-- [Phase 3: Enable and test multi-factor authentication with a conditional access policy](#phase-3-enable-and-test-multi-factor-authentication-with-a-conditional-access-policy)
+- [Phase 2: Enable and test multifactor authentication for the User 2 account](#phase-2-enable-and-test-multi-factor-authentication-for-the-user-2-account)
+- [Phase 3: Enable and test multifactor authentication with a conditional access policy](#phase-3-enable-and-test-multi-factor-authentication-with-a-conditional-access-policy)
 
 ![Test Lab Guides for the Microsoft cloud.](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> For a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack, go to [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
+> For a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack, go to [Microsoft 365 for enterprise Test Lab Guide Stack](https://download.microsoft.com/download/5/e/4/5e43a139-09c5-4700-b846-e468444bc557/Microsoft365EnterpriseTLGStack.pdf).
   
 ## Phase 1: Build out your Microsoft 365 for enterprise test environment
 
-If you just want to test multi-factor authentication in a lightweight way with the minimum requirements, follow the instructions in [Lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
+If you just want to test multifactor authentication in a lightweight way with the minimum requirements, follow the instructions in [Lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
   
-If you want to test multi-factor authentication in a simulated enterprise, follow the instructions in [Pass-through authentication](pass-through-auth-m365-ent-test-environment.md).
+If you want to test multifactor authentication in a simulated enterprise, follow the instructions in [Pass-through authentication](pass-through-auth-m365-ent-test-environment.md).
   
 > [!NOTE]
-> Testing multi-factor authentication does not require the simulated enterprise test environment, which includes a simulated intranet connected to the internet and directory synchronization for an Active Directory Domain Services (AD DS) forest. It is provided here as an option so that you can test multi-factor authentication and experiment with it in an environment that represents a typical organization.
+> Testing multifactor authentication does not require the simulated enterprise test environment, which includes a simulated intranet connected to the internet and directory synchronization for an Active Directory Domain Services (AD DS) forest. It is provided here as an option so that you can test multifactor authentication and experiment with it in an environment that represents a typical organization.
   
-## Phase 2: Enable and test multi-factor authentication for the User 2 account
+<a name='phase-2-enable-and-test-multi-factor-authentication-for-the-user-2-account'></a>
 
-Enable multi-factor authentication for the User 2 account with these steps:
+## Phase 2: Enable and test multifactor authentication for the User 2 account
+
+Enable multifactor authentication for the User 2 account with these steps:
   
 1. Open a separate, private instance of your browser, go to the Microsoft 365 admin center ([https://portal.microsoft.com](https://portal.microsoft.com)), and then sign in with your global administrator account.
     
 2. In the left navigation, select **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**Active users**</a>.
     
-3. In the Active users pane, select **Multi-factor authentication**.
+3. In the Active users pane, select **multifactor authentication**.
     
 4. In the list, select the **User 2** account.
     
 5. In the **User 2** section, under **Quick steps**, select **Enable**.
     
-6. In the **About enabling multi-factor auth** dialog box, select **Enable multi-factor auth**.
+6. In the **About enabling multifactor authentication** dialog box, select **Enable multifactor authentication**.
     
 7. In the **Updates successful** dialog box, select **Close**.
     
@@ -98,11 +100,13 @@ Complete the configuration for the User 2 account to use a text message for vali
     
     You should see the Office portal for User 2 on the **Microsoft Office Home** tab of your browser.
 
-## Phase 3: Enable and test multi-factor authentication with a conditional access policy
+<a name='phase-3-enable-and-test-multi-factor-authentication-with-a-conditional-access-policy'></a>
+
+## Phase 3: Enable and test multifactor authentication with a conditional access policy
 
 *This phase can only be used for a Microsoft 365 for enterprise test environment.*
 
-In this phase, you enable multi-factor authentication for the User 3 account using a group and a conditional access policy.
+In this phase, you enable multifactor authentication for the User 3 account using a group and a conditional access policy.
 
 Next, create a new group named MFAUsers and add the User 3 account to it.
 
@@ -118,14 +122,14 @@ Next, create a new group named MFAUsers and add the User 3 account to it.
 Next, create a conditional access policy to require multifactor authentication for members of the MFAUsers group.
 
 1. In a new tab of your browser, go to [https://portal.azure.com](https://portal.azure.com).
-2. Select **Azure Active Directory** > **Security** > **Conditional Access**.
+2. Select **Microsoft Entra ID** > **Security** > **Conditional Access**.
 3. In the **Conditional access – Policies** pane, select **New policy**.
 4. In the **New** pane, enter **MFA for user accounts** in the **Name** box.
 5. In the **Assignments** section, select **Users and groups**.
 6. On the **Include** tab of the **Users and groups** pane, select **Select users and groups** > **Users and groups** > **Select**.
 7. In the **Select** pane, select the **MFAUsers** group, and then select **Select** > **Done**.
 8. In the **Access controls** section of the **New** pane, select **Grant**.
-9. In the **Grant** pane, select **Require multi-factor authentication**, and then select **Select**.
+9. In the **Grant** pane, select **Require multifactor authentication**, and then select **Select**.
 10. In the **New** pane, select **On** for **Enable policy**, and then select **Create**.
 11. Close the **Azure portal** and **Microsoft 365 admin center** tabs.
 

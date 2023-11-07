@@ -43,7 +43,7 @@ Organizations gain access to robust visualizations of metrics and trends, integr
 :::image type="content" source="../../media/secure-score/secure-score-home-page.png" alt-text="The Microsoft Secure Score homepage in the Microsoft 365 Defender portal" lightbox="../../media/secure-score/secure-score-home-page.png":::
 
 > [!NOTE]
-> Currently, the Azure Active Directory related Microsoft Secure Score recommendations are not available for customer tenants registered in the following Azure Active Directory regions:
+> Currently, the Microsoft Entra related Microsoft Secure Score recommendations are not available for customer tenants registered in the following Microsoft Entra regions:
 Japan, Australia, New Zealand, Fiji, Canada, United Kingdom, South Korea, France, United Arab Emirates, South America, Switzerland, Liechtenstein, Norway, Germany, Brazil, Sweden, and Qatar.
 
 ## How it works
@@ -61,7 +61,7 @@ If you have a license for one of the supported Microsoft products, then you'll s
 Your score is updated in real time to reflect the information presented in the visualizations and recommended action pages. Secure Score also syncs daily to receive system data about your achieved points for each action.
 
 > [!NOTE]
-> For Microsoft Teams and AAD related recommendations, the recommendation state will get updated when changes occur in the configuration state. In addition, the recommendation state is refreshed once a month or once a week, respectively.
+> For Microsoft Teams and Microsoft Entra related recommendations, the recommendation state will get updated when changes occur in the configuration state. In addition, the recommendation state is refreshed once a month or once a week, respectively.
 
 ### Key scenarios
 
@@ -81,7 +81,7 @@ For example, a recommended action states you get 10 points by protecting all you
 Currently there are recommendations for the following products:
 
 - App governance
-- Azure Active Directory
+- Microsoft Entra ID
 - Citrix ShareFile
 - Microsoft Defender for Endpoint
 - Microsoft Defender for Identity
@@ -102,7 +102,7 @@ Recommendations for other security products are coming soon. The recommendations
 
 ### Security defaults
 
-Microsoft Secure Score has updated recommended actions to support [security defaults in Azure Active Directory](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults), which make it easier to help protect your organization with pre-configured security settings for common attacks.
+Microsoft Secure Score has updated recommended actions to support [security defaults in Microsoft Entra ID](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults), which make it easier to help protect your organization with pre-configured security settings for common attacks.
 
 If you turn on security defaults, you'll be awarded full points for the following recommended actions:
 
@@ -124,11 +124,13 @@ You can also manage user permissions to access Secure Score data from additional
 To start using Microsoft 365 Defender Unified RBAC to manage your Secure Score permissions, see [Microsoft 365 Defender Unified role-based access control(RBAC)](manage-rbac.md).
 
 > [!NOTE]
-> Currently, the model is only supported in the Microsoft 365 Defender portal. If you want to use GraphAPI (for example, for internal dashboards or Defender for Identity Secure Score) you should continue to use Azure Active Directory roles. Support GraphAPI is planned at a later date.
+> Currently, the model is only supported in the Microsoft 365 Defender portal. If you want to use GraphAPI (for example, for internal dashboards or Defender for Identity Secure Score) you should continue to use Microsoft Entra roles. Support GraphAPI is planned at a later date.
 
-### Azure Active Directory global roles permissions
+<a name='azure-active-directory-global-roles-permissions'></a>
 
-Azure Active Directory global roles (for example, Global Administrator) can still be used to access Secure Score. Users who have the supported Azure Active Directory global roles, but are not assigned to a custom role in Microsoft 365 Defender Unified RBAC, will continue to have access to view (and manage where permitted) Secure Score data as outlined below:
+### Microsoft Entra global roles permissions
+
+Microsoft Entra global roles (for example, Global Administrator) can still be used to access Secure Score. Users who have the supported Microsoft Entra global roles, but are not assigned to a custom role in Microsoft 365 Defender Unified RBAC, will continue to have access to view (and manage where permitted) Secure Score data as outlined below:
 
 The following roles have read and write access and can make changes, directly interact with Secure Score, and can assign read-only access to other users:
 
@@ -147,7 +149,7 @@ The following roles have read-only access and aren't able to edit status or note
 - Global reader
 
 > [!NOTE]
-> If you want to follow the principle of least privilege access (where you only give users and groups the permissions, they need to do their job), Microsoft recommends that you remove any existing elevated Azure Active Directory global roles for users and/or security groups assigned a custom role with Secure Score permissions. This will ensure that the custom Microsoft 365 Defender Unified RBAC roles will take effect.
+> If you want to follow the principle of least privilege access (where you only give users and groups the permissions, they need to do their job), Microsoft recommends that you remove any existing elevated Microsoft Entra global roles for users and/or security groups assigned a custom role with Secure Score permissions. This will ensure that the custom Microsoft 365 Defender Unified RBAC roles will take effect.
 
 ## Risk awareness
 

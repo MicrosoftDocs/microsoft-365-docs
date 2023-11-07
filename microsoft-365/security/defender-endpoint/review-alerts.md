@@ -6,14 +6,15 @@ ms.service: microsoft-365-security
 ms.pagetype: security
 f1.keywords: 
   - NOCSH
-ms.author: dansimp
-author: dansimp
+ms.author: diannegali
+author: diannegali
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection: 
   - m365-security
   - tier1
+  - mde-edr
 ms.topic: conceptual
 ms.date: 5/1/2020
 ms.subservice: mde

@@ -14,6 +14,7 @@ audience: ITPro
 ms.collection: 
 - m365-security
 - tier2
+- mde-edr
 ms.topic: conceptual
 ms.date: 07/10/2023
 ms.subservice: mde

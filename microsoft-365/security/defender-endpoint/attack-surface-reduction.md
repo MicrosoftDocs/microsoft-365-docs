@@ -14,12 +14,13 @@ ms.author: dansimp
 ms.reviewer: oogunrinde, sugamar
 manager: dansimp
 ms.custom:
-- asr
+- mde-asr
 - admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.collection:
 - m365-security
 - tier2
+- mde-asr
 search.appverid: met150
 ms.date: 1/11/2023
 ---
@@ -48,23 +49,23 @@ Attack surface reduction rules target certain software behaviors, such as:
 
 Such software behaviors are sometimes seen in legitimate applications. However, these behaviors are often considered risky because they're commonly abused by attackers through malware. Attack surface reduction rules can constrain software-based risky behaviors and help keep your organization safe.
 
-For a sequential, end-to-end process of how to manage ASR rules, see:
+For a sequential, end-to-end process of how to manage attack surface reduction rules, see:
 
-- [Attack surface reduction (ASR) rules deployment overview](attack-surface-reduction-rules-deployment.md)
-- [Plan attack surface reduction (ASR) rules deployment](attack-surface-reduction-rules-deployment-plan.md)
-- [Test attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-test.md)
-- [Enable attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-implement.md)
-- [Operationalize attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-operationalize.md)
+- [Attack surface reduction rules deployment overview](attack-surface-reduction-rules-deployment.md)
+- [Plan attack surface reduction rules deployment](attack-surface-reduction-rules-deployment-plan.md)
+- [Test attack surface reduction rules](attack-surface-reduction-rules-deployment-test.md)
+- [Enable attack surface reduction rules](attack-surface-reduction-rules-deployment-implement.md)
+- [Operationalize attack surface reduction rules](attack-surface-reduction-rules-deployment-operationalize.md)
 
-## Assess rule impact before deployment
+## Assess rules before deployment
 
 You can assess how an attack surface reduction rule might affect your network by opening the security recommendation for that rule in [Microsoft Defender Vulnerability Management](/windows/security/threat-protection/).
 
-:::image type="content" source="images/asrrecommendation.png" alt-text="The ASR recommendation" lightbox="images/asrrecommendation.png":::
+:::image type="content" source="images/asrrecommendation.png" alt-text="The attack surface reduction recommendation" lightbox="images/asrrecommendation.png":::
 
 In the recommendation details pane, check for user impact to determine what percentage of your devices can accept a new policy enabling the rule in blocking mode without adversely affecting productivity.
 
-See [Requirements](enable-attack-surface-reduction.md#requirements) in the "Enable attack surface reduction rules" article for information about supported operating systems and additional requirement information.
+See [Requirements](enable-attack-surface-reduction.md#requirements) in the "Enable attack surface reduction rules" article for information about supported operating systems and other requirement information.
 
 ## Audit mode for evaluation
 
@@ -78,7 +79,7 @@ By monitoring audit data and [adding exclusions](attack-surface-reduction-rules-
 
 ### Per-rule exclusions
 
-For information about configuring per-rule exclusions, see the section titled **Configure ASR rules per-rule exclusions** in the topic [Test attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-test.md).
+For information about configuring per-rule exclusions, see the section titled **Configure attack surface reduction rules per-rule exclusions** in the article [Test attack surface reduction rules](attack-surface-reduction-rules-deployment-test.md).
 
 ## Warn mode for users
 
@@ -111,7 +112,7 @@ Warn mode isn't supported for three attack surface reduction rules when you conf
 - [Block persistence through WMI event subscription](attack-surface-reduction-rules-reference.md#block-persistence-through-wmi-event-subscription) (GUID `e6db77e5-3df2-4cf1-b95a-636979351e5b`)
 - [Use advanced protection against ransomware](attack-surface-reduction-rules-reference.md#use-advanced-protection-against-ransomware) (GUID `c1db55ab-c21a-4637-bb3f-a12568109d35`)
 
-Also, warn mode isn't supported on devices running older versions of Windows. In those cases, attack surface reduction rules that are configured to run in warn mode will run in block mode.
+Also, warn mode isn't supported on devices running older versions of Windows. In those cases, attack surface reduction rules that are configured to run in warn mode runs in block mode.
 
 ## Notifications and alerts
 
@@ -127,7 +128,7 @@ For specific details about notification and alert functionality, see: [Per rule 
 
 You can use advanced hunting to view attack surface reduction events. To streamline the volume of incoming data, only unique processes for each hour are viewable with advanced hunting. The time of an attack surface reduction event is the first time that event is seen within the hour.
 
-For example, suppose that an attack surface reduction event occurs on 10 devices during the 2:00 PM hour. Suppose that the first event occurred at 2:15, and the last at 2:45. With advanced hunting, you'll see one instance of that event (even though it actually occurred on 10 devices), and its timestamp will be 2:15 PM.
+For example, suppose that an attack surface reduction event occurs on 10 devices during the 2:00 PM hour. Suppose that the first event occurred at 2:15, and the last at 2:45. With advanced hunting, you see one instance of that event (even though it actually occurred on 10 devices), and its timestamp will be 2:15 PM.
 
 For more information about advanced hunting, see [Proactively hunt for threats with advanced hunting](advanced-hunting-overview.md).
 
@@ -191,12 +192,12 @@ The "engine version" listed for attack surface reduction events in the event log
 
 ## See also
 
-- [Attack surface reduction (ASR) rules deployment overview](attack-surface-reduction-rules-deployment.md)
-- [Plan attack surface reduction (ASR) rules deployment](attack-surface-reduction-rules-deployment-plan.md)
-- [Test attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-test.md)
-- [Enable attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-implement.md)
-- [Operationalize attack surface reduction (ASR) rules](attack-surface-reduction-rules-deployment-operationalize.md)
-- [Attack surface reduction \(ASR\) rules report](attack-surface-reduction-rules-report.md)
+- [Attack surface reduction rules deployment overview](attack-surface-reduction-rules-deployment.md)
+- [Plan attack surface reduction rules deployment](attack-surface-reduction-rules-deployment-plan.md)
+- [Test attack surface reduction rules](attack-surface-reduction-rules-deployment-test.md)
+- [Enable attack surface reduction rules](attack-surface-reduction-rules-deployment-implement.md)
+- [Operationalize attack surface reduction rules](attack-surface-reduction-rules-deployment-operationalize.md)
+- [Attack surface reduction rules report](attack-surface-reduction-rules-report.md)
 - [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
 
 

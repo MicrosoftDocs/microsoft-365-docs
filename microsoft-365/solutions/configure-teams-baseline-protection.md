@@ -32,7 +32,7 @@ In this article, we look at how to deploy teams with a baseline level of protect
 
 ## Initial protections
 
-As a first step, we recommend that you configure basic identity and device-access policies. See [Policy recommendations for securing Teams chats, groups, and files](../security/office-365-security/teams-access-policies.md) for details.
+As a first step, we recommend that you configure basic identity and device-access policies. See [Policy recommendations for securing Teams chats, groups, and files](../security/office-365-security/zero-trust-identity-device-access-policies-teams.md) for details.
 
 We also recommend turning on basic Defender for Office 365 features to guard against malware in documents, attachments, and links. We recommend turning on each of the options in the following table.
 
@@ -72,7 +72,7 @@ To change the default sharing link
 1. Under **File and folder links**, select **Only people in your organization**.
 1. Select **Save**.
 
-For the best guest sharing experience, we also recommend that you enable [SharePoint and OneDrive integration with Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview).
+For the best guest sharing experience, we also recommend that you enable [SharePoint and OneDrive integration with Microsoft Entra B2B](/sharepoint/sharepoint-azureb2b-integration-preview).
 
 ## Create a team
 

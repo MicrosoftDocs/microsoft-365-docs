@@ -49,7 +49,7 @@ The following table describes this illustration.
 |2|Exchange Online Protection negotiates and validates the inbound connection and inspects the message headers and content to determine what extra policies, tagging, or processing is required.|
 |3|Exchange Online integrates with Microsoft Defender for Office 365 to offer more advanced threat protection, mitigation, and remediation.|
 |4|A message that is not malicious, blocked, or quarantined is processed and delivered to the recipient in EXO where user preferences related to junk mail, mailbox rules, or other settings are evaluated and triggered.|
-|5|Integration with on-premises Active Directory can be enabled using Azure AD Connect to synchronize and provision mail-enabled objects and accounts to Azure Active Directory and ultimately Exchange Online.|
+|5|Integration with on-premises Active Directory can be enabled using Microsoft Entra Connect to synchronize and provision mail-enabled objects and accounts to Microsoft Entra ID and ultimately Exchange Online.|
 |6|When integrating an on-premises environment, it is encouraged to use an Exchange server for supported management and administration of mail-related attributes, settings, and configurations|
 |7|Microsoft Defender for Office 365 shares signals to Microsoft 365 Defender for extended detection and response (XDR).|
 

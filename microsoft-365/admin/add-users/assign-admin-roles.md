@@ -58,7 +58,7 @@ If you found this video helpful, check out the [complete training series for sma
 
 ### Assign admin roles to users using Roles
 
-1. In the admin center, go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2097861" target="_blank"> **Roles** -> **Role assignments**</a>. Choose the **Azure AD**, **Exchange**, **Intune** or **Billing** tab to view the admin roles available for your organization.
+1. In the admin center, go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2097861" target="_blank"> **Roles** -> **Role assignments**</a>. Choose the **Microsoft Entra ID**, **Exchange**, **Intune** or **Billing** tab to view the admin roles available for your organization.
 
     > [!NOTE]
     > You might not see all the tabs depending on your Microsoft 365 subscription.
@@ -105,6 +105,6 @@ You can check admin role permissions in 2 different ways:
 ## Related content
 
 [About Microsoft 365 admin roles](about-admin-roles.md) (article)\
-[Azure AD built-in roles](/azure/active-directory/roles/permissions-reference) (article)\
+[Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference) (article)\
 [Assign roles to user accounts with PowerShell](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md) (article)\
 [Add, change, or remove partner relationships](../misc/add-partner.md) (article)
