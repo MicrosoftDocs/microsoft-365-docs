@@ -1269,7 +1269,7 @@ The property list must be a valid *.plist* file. This can be checked by executin
 plutil -lint com.microsoft.wdav.plist
 ```
 
-```Output
+```console
 com.microsoft.wdav.plist: OK
 ```
 

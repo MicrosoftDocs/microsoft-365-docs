@@ -261,7 +261,7 @@ sudo yum install mdatp
 yum repolist
 ```
 
-```Output
+```console
 ...
 packages-microsoft-com-prod               packages-microsoft-com-prod        316
 packages-microsoft-com-prod-insiders-fast packages-microsoft-com-prod-ins      2
@@ -286,7 +286,7 @@ sudo zypper install mdatp
 zypper repos
 ```
 
-```Output
+```console
 ...
 #  | Alias | Name | ...
 XX | packages-microsoft-com-insiders-fast | microsoft-insiders-fast | ...
@@ -311,7 +311,7 @@ sudo apt-get install mdatp
 cat /etc/apt/sources.list.d/*
 ```
 
-```Output
+```console
 deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/config/ubuntu/18.04/prod insiders-fast main
 deb [arch=amd64] https://packages.microsoft.com/config/ubuntu/18.04/prod bionic main
 ```
@@ -344,7 +344,7 @@ Download the onboarding package from Microsoft 365 Defender portal.
    ls -l
    ```
 
-   ```Output
+   ```console
    total 8
    -rw-r--r-- 1 test  staff  5752 Feb 18 11:22 WindowsDefenderATPOnboardingPackage.zip
    ```
@@ -353,7 +353,7 @@ Download the onboarding package from Microsoft 365 Defender portal.
    unzip WindowsDefenderATPOnboardingPackage.zip
    ```
 
-   ```Output
+   ```console
    Archive:  WindowsDefenderATPOnboardingPackage.zip
    inflating: MicrosoftDefenderATPOnboardingLinuxServer.py
    ```

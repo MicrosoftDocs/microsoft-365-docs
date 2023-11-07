@@ -258,7 +258,7 @@ Examples:
     mdatp exclusion extension add --name .txt --scope global
     ```
 
-    ```Output
+    ```console
     Extension exclusion configured successfully
     ```
 
@@ -266,7 +266,7 @@ Examples:
     mdatp exclusion extension remove --name .txt --scope global
     ```
 
-    ```Output
+    ```console
     Extension exclusion removed successfully
     ```
 
@@ -276,7 +276,7 @@ Examples:
     mdatp exclusion file add --path /var/log/dummy.log --scope global
     ```
 
-    ```Output
+    ```console
     File exclusion configured successfully
     ```
 
@@ -284,7 +284,7 @@ Examples:
     mdatp exclusion file remove --path /var/log/dummy.log --scope global
     ```
 
-    ```Output
+    ```console
     Extension exclusion removed successfully
     ```
 
@@ -294,7 +294,7 @@ Examples:
     mdatp exclusion folder add --path /var/log/ --scope global
     ```
 
-    ```Output
+    ```console
     Folder exclusion configured successfully
     ```
 
@@ -302,7 +302,7 @@ Examples:
     mdatp exclusion folder remove --path /var/log/ --scope global
     ```
 
-    ```Output
+    ```console
     Extension exclusion removed successfully
     ```
 
@@ -313,7 +313,7 @@ Examples:
     mdatp exclusion process add --name /usr/bin/cat  --scope global
     ```
 
-    ```Output
+    ```console
     Process exclusion configured successfully
     ```
 
@@ -321,7 +321,7 @@ Examples:
     mdatp exclusion process remove --name /usr/bin/cat  --scope global
     ```
 
-    ```Output
+    ```console
     Extension exclusion removed successfully
     ```
 
