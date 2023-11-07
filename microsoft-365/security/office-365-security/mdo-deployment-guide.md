@@ -18,7 +18,7 @@ ms.custom:
 description: Learn how to get started with the initial deployment and configuration of Microsoft Defender for Office 365.
 ms.subservice: mdo
 ms.service: microsoft-365-security
-ms.date: 10/16/2023
+ms.date: 11/7/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
@@ -33,6 +33,9 @@ Although your Microsoft 365 organization includes a default level of protection 
 The steps to configure EOP and Defender for Office 365 are described in the following diagram:
 
 :::image type="content" source="../../media/mdo-deployment-guide.png" alt-text="A conceptual diagram showing the steps to configure Defender for Office 365." lightbox="../../media/mdo-deployment-guide.png":::
+
+> [!TIP]
+> As a companion to this article, we recommend using the Microsoft Defender for Office 365 automated setup guide at <https://admin.microsoft.com/Adminportal/Home?Q=learndocs#/modernonboarding/office365advancedthreatprotectionadvisor>. This guide customizes your experience based on your environment. To review best practices without signing in and activating automated setup features, go to the Microsoft 365 setup portal at <https://setup.microsoft.com/defender/office-365-setup-guide>.
 
 ## Requirements
 
