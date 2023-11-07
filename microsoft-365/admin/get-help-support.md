@@ -139,7 +139,7 @@ Technical support for Office 365 operated by 21Vianet subscriptions provides ass
 
 ## Technical support initial response times
 
-Initial response time is based on the severity levels described above. 21Vianet customer service team follow up with investigation and customer communication in reasonable rhythm according to severity levels. 21Vianet also expect customer to collaborate at reasonable level accordingly.
+Initial response time is based on the severity levels described above. 21Vianet customer service team follows up with investigation and customer communication in reasonable rhythm according to severity levels. 21Vianet also expect customer to collaborate at reasonable level accordingly.
 
 | Security level <sup>1</sup> | 21Vianet customer support team Initial response | Customer responsibility |
 |--------------------------------|-----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
