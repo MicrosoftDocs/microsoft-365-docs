@@ -53,7 +53,7 @@ Backup restores are meant to recover from attacks, not to circumvent primary sto
 
 **<ins>LICENSE</ins>**
 
-If Company provides Feedback, Company grants to Microsoft, without charge, the non-exclusive License to make, modify, distribute, or otherwise commercialize the Input as part of any Microsoft offering.
+If Company provides Feedback, Company grants to Microsoft, without charge, the nonexclusive License to make, modify, distribute, or otherwise commercialize the Input as part of any Microsoft offering.
  
 The above License doesn't extend to any technologies that may also be necessary to make or use any offering or portion thereof that incorporates the Feedback but aren't themselves expressly part of the Input (for example, enabling technologies).
 
@@ -69,7 +69,7 @@ Microsoft 365 Backup Feature Preview pricing is as follows:
 
 **<ins>LENGTH OF OBLIGATIONS; DISCLOSURE</ins>**
 
-**Preview Period.** The Preview Period continues in effect until June 30, 2024, or 30 days after Commercial General Availability of the Preview Feature, whichever is first. Company may terminate their use of the Preview Feature at any time. Terminating use of the Preview Feature won't change any of the rights, licenses granted, or duties made while the Preview Period is in effect. Termination is defined as i) the Company’s termination of use of the Preview Feature and/or ii) the Preview Period ends.
+**Preview Period.** The Preview Period continues in effect until <ins>June 30, 2024, or 30 days after Commercial General Availability of the Preview Feature, whichever is first</ins>. Company may terminate their use of the Preview Feature at any time. Terminating use of the Preview Feature won't change any of the rights, licenses granted, or duties made while the Preview Period is in effect. Termination is defined as i) the Company’s termination of use of the Preview Feature and/or ii) the Preview Period ends.
 
 **Effects upon Termination.** Once terminated, Company will no longer have access to Microsoft 365 Backup and all the backed-up content if Microsoft doesn't continue with the then generally available Microsoft 365 Backup features. Should Microsoft choose to make the Microsoft 365 Backup service generally available a pay-as-you-go (PAYG) billing through an Azure subscription Company may continue without interruption.
 
