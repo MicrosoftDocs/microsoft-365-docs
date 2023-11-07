@@ -63,7 +63,7 @@ The following downloadable spreadsheet lists the services and their associated U
 > 2. Devices running on Windows 7, Windows 8.1, Windows Server 2008 R2 MMA, Servers not upgraded to Unified Agent (MMA) will need to continue using MMA onboarding method. 
 
 If a proxy or firewall has HTTPS scanning (SSL inspection) enabled, exclude the domains listed in the above table from HTTPS scanning.
-In your firewall, open all the URLs where the geography column is WW. For rows where the geography column isn't WW, open the URLs to your specific data location. To verify your data location setting, see [Verify data storage location and update data retention settings for Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/data-retention-settings). Don't exclude the URL `*.blob.core.windows.net` from any kind of network inspection.
+In your firewall, open all the URLs where the geography column is WW. For rows where the geography column isn't WW, open the URLs to your specific data location. To verify your data location setting, see [Verify data storage location and update data retention settings for Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/data-retention-settings). Don't exclude the URL `*.blob.core.windows.net` from any kind of network inspection. Instead, exclude only the blob URLs that are specific to MDE and listed in the spreadsheet of domains list.
 
 > [!NOTE]
 > Applies to standard set of URLS: <br>
