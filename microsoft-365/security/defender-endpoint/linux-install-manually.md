@@ -223,15 +223,16 @@ Read more [here](https://github.com/microsoft/mdatp-xplat/tree/master/linux/inst
   ```
 
 - Install the Microsoft GPG public key:
-  - For Debian 12
-  ```bash
-  curl -sSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /usr/share/keyrings/microsoft-prod.gpg > /dev/null
-  ```
-  - For others
+  - For Debian 11 and earlier, run the following command.
+ 
   ```bash
   curl -sSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/microsoft.gpg > /dev/null
   ```
+For Debian 12 and later, run the following command.
 
+```bash
+curl -sSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /usr/share/keyrings/microsoft-prod.gpg > /dev/null
+```
 - Install the HTTPS driver if not already installed:
 
   ```bash
