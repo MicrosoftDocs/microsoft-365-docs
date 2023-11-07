@@ -98,7 +98,7 @@ As an organization you may wish to manage the download of Office add-ins from th
    
 This will control all users' ability to acquire the following add-ins from the store.
 
-- Add-ins for Word, Excel, and PowerPoint 2016 from:
+- Add-ins for Word, Excel, and PowerPoint 2016:
     - Windows
     - Mac
     - Office

@@ -66,6 +66,8 @@ Lighthouse helps MSPs grow secure and manage Microsoft 365 services and connecte
 > [!NOTE]
 > For more information on how to sign up, see [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md).
 
+Check out the other [Microsoft 365 Lighthouse videos](https://www.youtube.com/playlist?list=PLnWjfDdQkUQSCbV-ftVD311_fZxghB22C) on our YouTube channel.
+
 ## Related content
 
 [Sign up for Microsoft 365 Lighthouse](m365-lighthouse-sign-up.md) (article)\
