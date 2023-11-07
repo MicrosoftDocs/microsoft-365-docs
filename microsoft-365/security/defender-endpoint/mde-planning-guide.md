@@ -34,6 +34,9 @@ ms.date: 12/18/2020
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
+> [!TIP]
+> As a companion to this article, we recommend using the [Microsoft Defender for Endpoint automated setup guide]( https://go.microsoft.com/fwlink/?linkid=2251910) when signed in to the Microsoft 365 admin center. This guide will customize your experience based on your environment. To review best practices without signing in and activating automated setup features, go to the [Microsoft 365 setup portal](https://go.microsoft.com/fwlink/?linkid=2251563).
+
 Maximize available security capabilities and better protect your enterprise from cyber threats by deploying Microsoft Defender for Endpoint and onboarding your devices. Onboarding your devices will enable you to identify and stop threats quickly, prioritize risks, and evolve your defenses across operating systems and network devices.
 
 This guide provides five steps to help deploy Defender for Endpoint as your multi-platform endpoint protection solution. It will help you choose the best deployment tool, onboard devices, and configure capabilities. Each step corresponds to a separate article.
