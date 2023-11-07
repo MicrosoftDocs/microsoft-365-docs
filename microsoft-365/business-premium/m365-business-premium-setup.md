@@ -1,5 +1,5 @@
 ---
-title: Get and set up Microsoft 365 Business Premium
+title: Sign in and set up Microsoft 365 Business Premium
 description: "How to set up Microsoft 365 Business Premium or work with a solution provider to do so."
 search.appverid: MET150
 author: denisebmsft
@@ -8,7 +8,7 @@ manager: dansimp
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
-ms.date: 10/27/2023
+ms.date: 11/02/2023
 ms.localizationpriority: medium
 ms.reviewer: nehabha
 f1.keywords: NOCSH 
@@ -18,7 +18,7 @@ ms.collection:
 ms.custom: intro-get-started
 ---
 
-# Get and set up Microsoft 365 Business Premium
+# Sign in and set up Microsoft 365 Business Premium
 
 This article describes how to get Microsoft 365 Business Premium, complete the basic setup process, and identify your next steps.
 
@@ -76,38 +76,24 @@ Microsoft 365 Business Premium includes a guided setup process, as shown in the 
 
 ### The guided setup process, step by step
 
-1. As a global administrator, go to the [Microsoft 365 admin center](https://admin.microsoft.com/) and sign in. By default, you'll see the simplified view. 
+1. As a global administrator, go to the [Microsoft 365 admin center](https://admin.microsoft.com/) and sign in. 
 
-2. In the upper left corner, select **Simplified view > Dashboard view** so that your admin center resembles the following image. Then select **Go to guided setup**. 
+2. A Business Advisor screen opens where you can select your top goals for Microsoft 365. Select and save your goals, or select **Skip for new**.
 
-   :::image type="content" source="media/m365bp-dashboardview.png" alt-text="Screenshot of the dashboard view of the Microsoft 365 admin center."lightbox="media/m365bp-dashboardview.png":::
+3. By default, you're in the simplified view. In the upper left corner, select **Simplified view > Dashboard view**, and then select **Go to guided setup**. 
 
-3. To install your Microsoft 365 Apps (Office), select the download button, and then follow the prompts. Alternately, you can skip this step for now and install your apps later. Select **Continue**.
+4. To install your Microsoft 365 Apps (Word, Excel, PowerPoint, OneNote, and Outlook), select the download button, and then follow the prompts. Or, skip this step for now and install your apps later. Select **Continue**.
 
-   :::image type="content" source="media/m365bp-installoffice.png" alt-text="Screenshot of the Install Office download button."lightbox="media/m365bp-installoffice.png":::
+5. To add your organization's domain (*recommended*) or to use your default `.onmicrosoft.com` domain, select an option and then follow the prompts. Then select **Use this domain**. To get help with this task, see [Add a domain to Microsoft 365](../admin/setup/add-domain.md).
 
-4. To add your organization's domain (*recommended*) or to use your default `.onmicrosoft.com` domain, select an option and then follow the prompts. Then select **Use this domain**.
+6. To add a user, fill in the user's first name, last name, and user name, and then select **Add users and assign licenses**. Or, select **View all users** to go to your active users page, where you can view, add, and manage users. To get help with this task, see [Add users and assign licenses at the same time](../admin/add-users/add-users.md). We recommend adding your administrators and members of your security team now. 
 
-   :::image type="content" source="media/m365bp-adddomain.png" alt-text="Screenshot showing the option to add a domain."lightbox="media/m365bp-adddomain.png":::
+6. If you added your domain in step 5, connect your domain to Microsoft 365. To get help with this task, see [Change nameservers to set up Microsoft 365 with any domain registrar](../admin/get-help-with-domains/change-nameservers-at-any-domain-registrar.md).
 
-   > [!TIP]
-   > To get help with this task, see [Add a domain to Microsoft 365](../admin/setup/add-domain.md).
-
-5. To add a user, fill in the user's first name, last name, and user name, and then select **Add users and assign licenses**. Alternately, you can select **View all users** to go to your active users page, where you can view, add, and manage users. 
-
-   :::image type="content" source="media/m365bp-addusers.png" alt-text="Screenshot showing the Add Users and Assign Licenses page."lightbox="media/m365bp-addusers.png":::
-
-   > [!TIP]
-   > We recommend adding your administrators and members of your security team now. To get help with this task, see [Add users and assign licenses at the same time](../admin/add-users/add-users.md).
-
-6. If you added your domain in step 4, you can now connect your domain to Microsoft 365. To get help with this task, see [Change nameservers to set up Microsoft 365 with any domain registrar](../admin/get-help-with-domains/change-nameservers-at-any-domain-registrar.md).
-
-When you're finished with the basic setup process, you'll see **Setup is complete**, where you can tell us how setup went and then go to your Microsoft 365 admin center. 
-
-:::image type="content" source="media/m365bp-setupcomplete.png" alt-text="Screenshot of the Setup is Complete confirmation screen."lightbox="media/m365bp-setupcomplete.png"::: 
+7. When you see **Setup is complete**, it means you have completed the basic setup process for your subscription. Use the feedback window to tell us how it went, and then visit your [Microsoft 365 admin center](../admin/admin-overview/admin-center-overview.md).
 
 > [!IMPORTANT]
-> At this point, basic setup for Microsoft 365 is complete, but you still need to set up and configure your security settings. **Proceed to [set up your security protection](m365bp-security-overview.md)**.
+> Although your basic setup is complete, but you still need to set up and configure your security settings. **Proceed to [set up your security protection](m365bp-security-overview.md)**.
 
 ### Employee quick setup guide
 
@@ -136,5 +122,5 @@ If you'd prefer to have a Microsoft partner help you get and set up Microsoft 36
 
 ## Next step
 
-Proceed to [Boost your security protection](m365bp-security-overview.md).
+Proceed to [Configure your security protection](m365bp-security-overview.md).
 
