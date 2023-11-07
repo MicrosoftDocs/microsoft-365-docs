@@ -127,7 +127,7 @@ Specifies the degree of parallelism for on-demand scans. This corresponds to the
 
 #### Exclusion merge policy
 
-Specifies the merge policy for exclusions. It can be a combination of administrator-defined and user-defined exclusions (`merge`) or only administrator-defined exclusions (`admin_only`). This setting can be used to restrict local users from defining their own exclusions.
+Specifies the merge policy for Antivirus Exclusions. It can be a combination of administrator-defined and user-defined exclusions (`merge`) or only administrator-defined exclusions (`admin_only`). This setting can be used to restrict local users from defining their own exclusions.
 
 |Description|Value|
 |---|---|
@@ -138,7 +138,7 @@ Specifies the merge policy for exclusions. It can be a combination of administra
 
 #### Scan exclusions
 
-Entities that have been excluded from the scan. Exclusions can be specified by full paths, extensions, or file names.
+Entities that have been excluded from the scan. Antivirus Exclusions can be specified by full paths, extensions, or file names.
 (Exclusions are specified as an array of items, administrator can specify as many elements as necessary, in any order.)
 
 |Description|Value|
@@ -476,6 +476,10 @@ Determines whether security intelligence updates are installed automatically:
 |**Data type**|Boolean|
 |**Possible values**|true (default) <p> false|
 
+
+### Exclusion Setting preferences [**PREVIEW**]
+
+See [Exclusion Settings for Microsoft Defender for Endpoint on Linux [PREVIEW]](linux-exclusions-v2.md#from-the-managed-configuration)
 
 ### Advanced optional features
 
