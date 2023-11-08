@@ -7,7 +7,7 @@ ms.service: microsoft-365-security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
-ms.date: 10/31/2023
+ms.date: 11/08/2023
 manager: dansimp
 audience: ITPro
 ms.collection: 
@@ -57,6 +57,10 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 - [What's new in Defender for Endpoint on Linux](linux-whatsnew.md)
 - [What's new in Defender for Endpoint on Android](android-whatsnew.md)
 - [What's new in Defender for Endpoint on iOS](ios-whatsnew.md)
+
+## November 2023
+
+- [Microsoft Defender Core service](microsoft-defender-antivirus-windows.md#microsoft-defender-core-service) is now available for consumers and is planned to begin rolling out to enterprise customers in early 2024.
 
 ## October 2023
 
