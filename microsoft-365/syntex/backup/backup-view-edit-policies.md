@@ -31,7 +31,7 @@ To view and edit backup policies for OneDrive, follow these steps.
 
 1. In the Microsoft 365 admin center, on the **Microsoft 365 Backup** page, in the **OneDrive** section, select **Edit scope**.
 
-    ![Screenshot showing the view and edit backup policy in the Microsoft 365 admin center.](../media/content-understanding/backup-policy-onedrive.png)
+    ![Screenshot showing the view and edit backup policy for OneDrive in the Microsoft 365 admin center.](../media/content-understanding/backup-policy-onedrive.png)
 
 Screenshot 23 View/Edit backup policy for OneDrive
 
@@ -66,6 +66,8 @@ To view and edit backup policies in SharePoint, follow these steps.
 
 1. In the Microsoft 365 admin center, on the **Microsoft 365 Backup** page, in the **SharePoint** section, select **Edit scope**.
 
+    ![Screenshot showing the view and edit backup policy for SharePoint in the Microsoft 365 admin center.](../media/content-understanding/backup-policy-sharepoint.png)
+
 2. In the window that opens, you can:
 
     a. To add new accounts, select **+ Add sites**.
@@ -83,7 +85,7 @@ Screenshot 26 Select Add sites to add site(s) to existing backup policy
 Screenshot 27 Select the sites you want to remove from SharePoint backup policy
 
 > [!NOTE]
-> Removing accounts from backup policy means no future backups will be taken for those removed accounts. Existing backups those accounts will not be deleted.
+> Removing sites from backup policy means no future backups will be taken for those removed sites. Existing backups the removed sites will not be deleted.
 
 ## View and edit backup policies for Exchange
 
@@ -108,4 +110,4 @@ Screenshot 28 Remove user mailboxes from Exchange backup policy
 4. Once you have done your changes, follow the prompts to update the policy.
 
 > [!NOTE]
-> Removing accounts from backup policy means no future backups will be taken for those removed accounts. Existing backups those accounts will not be deleted.
+> Removing mailboxes from backup policy means no future backups will be taken for those removed mailboxes. Existing backups those mailboxes will not be deleted.
