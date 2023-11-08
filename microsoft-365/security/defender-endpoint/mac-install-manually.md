@@ -113,12 +113,34 @@ To complete this process, you must have admin privileges on the device.
 
    :::image type="content" source="images/monterey-install-4.png" alt-text="The system extension security preferences2" lightbox="images/monterey-install-4.png":::
 
+    To troubleshoot System Extention issues, refer [Troubleshoot System Extention](mac-support-sys-ext.md).
+
+## How to Allow Full Disk Access
+
+MacOS Catalina (10.15) requires full disk access to be granted to **Microsoft Defender for Endpoint** in order to be able to protect and monitor.
+
 > [!Note]
-> To troubleshoot system extention issues, refer to [Troubleshoot System Extention](mac-support-sys-ext.md).
+> Full disk access grant to **Microsoft Defender for Endpoint** is a new requirement for all the third-party software by Apple for files and folders containing personal data.
 
-7. Open **System Preferences** \> **Security & Privacy** and navigate to the **Privacy** tab. Grant **Full Disk Access** permission to **Microsoft Defender** and **Microsoft Defenders Endpoint Security Extension**.
+To grant full disk access:
 
-   :::image type="content" source="images/monterey-install-5.png" alt-text="The full disk access" lightbox="images/monterey-install-5.png":::
+1. Open **System Preferences** \> **Security & Privacy** \> **Privacy** \> **Full Disk Access**. Click the lock icon to make changes (bottom of the dialog box).
+1. Grant **Full Disk Access** permission to **Microsoft Defender** and **Microsoft Defenders Endpoint Security Extension**.
+
+   :::image type="content" source="images/full-disk-access-security-privacy.png" alt-text="The screenshot shows the full disk access's security and privacy.":::
+1. Select **General** \> **Restart** for the new system extentions to take effect.
+
+   :::image type="content" source="images/restart-fulldisk.png" alt-text="Screenshot that allows you to restart the system for new system extentions to be enabled.":::
+1. Enable *Potentially Unwanted Application* (PUA) in block mode.
+
+   To enable PUA, refer [configure PUA protection](mac-pua.md).
+1. Enable *Network Protection*.
+
+   To enbale *Network protection*, refer [manual deployment](network-protection-macos.md).
+1. Enable *Device Control*.
+
+   To enable *Device Control*, refer [device control for macOS](mac-device-control-overview.md).
+1. 
 
 ## Client configuration
 
