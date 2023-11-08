@@ -72,7 +72,7 @@ You can submit your Fapiao request to our [Fapiao management system](https://go.
 
 > [!NOTE]
 >
-> You need a registered account to access the [Fapiao management system](https://go.microsoft.com/fwlink/p/?linkid=837465). If you haven't already set up an account, see [Apply for a Fapiao for Office 365 operated by 21Vianet](../../admin/services-in-china/apply-for-a-fapiao.md).
+> You need a registered account to access the [Fapiao management system](https://go.microsoft.com/fwlink/p/?linkid=837465).
 
 ::: moniker-end
 
