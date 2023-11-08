@@ -1,5 +1,5 @@
 ---
-ms.date: 10/31/2023
+ms.date: 11/07/2023
 title: Usage and engagement metrics in Topics
 ms.author: daisyfeller
 author: daisyfell
@@ -26,34 +26,43 @@ To access usage and engagement metrics:
 1. In the Topic center, select the **Analytics** tab.
 2. In the **Analytics** tab, select **Usage & engagement**.
 
+## Topic engagement: total Topics users
+
+This section shows how unique users in your organization are engaging with topics. This metric counts when a user intentionally views information or knowledge about a topic or when a user interacts intentionally with topics or topic content to consume, use, enhance, or manage knowledge.
+
+![Screenshot of total topics users graph.](../media/knowledge-management/total-topics-users-graph.png)
+
 >[!NOTE]
 >User counts under 100 are exact, while numbers over 100 are approximations within three percent of the exact number.
 >All dates and times in charts are in UTC. Topic center data generally updates within two to three minutes of an interaction.
 
-## Topic engagement
+## Topic engagement: Users by type of engagement over time
 
-The **Topic engagement** section provides a look into how unique users are engaging with topics. Engagement from users includes consuming, sharing, and contributing to topics.
+This section shows unique user counts by type of engagement, including sharing, consuming, and contributing to topics.
 
 - **Sharing** measures all scenarios related to sharing topics by using the topic picker (# tags). Tagging on Viva Engage and Answers aren't currently counted.
 - **Contributing** measures all scenarios where a topic is improved, including topic page edits, publication, and adding or confirming files, people, sites. Contributing also includes other feedback to improve topics.
+- **Consumption** measures top-level activity, such as selecting a card or page, but doesn't measure activity within topic cards or pages.
 
 The information in this section is based on the time period that you select. The changes from the last time period appear next to each metric.
 
-![Screenshot of total topics users graph.](../media/knowledge-management/total-topics-users-graph.png)
-
 ![Screenshot of engagement metrics.](../media/knowledge-management/engagement-metrics.png)
 
-## Topic interaction
+## Topic interaction: total topic interactions
 
-The **Topic interaction** section provides a look into how users are interacting with topics. Interactions include consumption of topics, sharing interactions, and contributing interactions from users.
+This section counts overall interactions with topics by all users. This includes counting when a user interacts intentionally with topics or topic content to consume, use, enhance, or manage knowledge.
 
 ![Screenshot of total topic interactions graph.](../media/knowledge-management/total-topic-interactions-graph.png)
 
-![Screenshot of total topic interactions metrics.](../media/knowledge-management/topic-interaction-metrics.png)
+## Topic interaction: topic interactions by type over time
+
+This section shows interaction counts by type of engagement including sharing, consuming and contributing to Topics.
 
 - **Sharing** measures all scenarios related to sharing topics by using the topic picker (# tags). Tagging on Viva Engage and Answers aren't currently counted.
 - **Contributing** measures all scenarios where a topic is improved, including topic page edits, publication, and adding or confirming files, people, sites. Contributing also includes other feedback to improve topics.
 - **Consumption** measures top-level activity, such as selecting a card, but doesn't measure activity within topic cards.
+
+![Screenshot of total topic interactions metrics.](../media/knowledge-management/topic-interaction-metrics.png)
 
 ## Topic consumption
 
@@ -63,7 +72,6 @@ The **Topic consumption** section provides a look into how users are consuming t
 
 ![Screenshot of consumption of topic surface metrics.](../media/knowledge-management/topic-consumption-metrics.png)
 
-- **Consumption** measures top-level activity, such as selecting a card, but doesn't measure activity within topic cards.
 - **Topic Card** measures the number of times a topic card was viewed.
 - **Topic Page** measures the number of times a topic page was viewed.
 - **Search** measures the number of times a Topic answer is shown.

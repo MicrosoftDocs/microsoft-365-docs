@@ -40,5 +40,7 @@ Test Base Chat is built on Microsoft's comprehensive approach to security, compl
 
 ## Keep in mind...
 
-The features described here use an AI system that creates responses based on a prompt. As it's a new system, it may create things you didn't expect. If you find its content to be unexpected or offensive, please send us feedback so we can make it better. Because content generated via AI draws from the [Test Base for Microsoft 365 documentation](/microsoft-365/test-base/), it may contain inaccuracies or sensitive material. Be sure to review and verify the information it generates.
+The features described here use an AI system that creates responses based on a prompt. As it's a new system, it may create things you didn't expect. If you find its content to be unexpected or offensive, please send us feedback so we can make it better. Because content generated via AI draws from the [Test Base for Microsoft 365 documentation](/microsoft-365/test-base/), it may contain inaccuracies or sensitive material. Use your own judgment and double check the facts before making decisions or taking action based on the responses. 
+
+We're constantly working to improve our technology to proactively address issues in line with our [responsible AI principles](https://www.microsoft.com/ai/our-approach?activetab=pivot1:primaryr5). 
 
