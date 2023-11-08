@@ -45,7 +45,7 @@ To summarize, applications built on top of the Microsoft 365 Backup Storage plat
 
 - Fast backup within hours
 
-- Fast restore within hours (see [targeted performance](#general-availability-performance-targets) later in this article)
+- Fast restore within hours (see [performance targets](#general-availability-performance-targets) later in this article)
 
 - Full SharePoint site and OneDrive account restore fidelity, meaning the site and OneDrive are restored to their exact state at specific prior points in time via a rollback operation
 
@@ -53,7 +53,7 @@ To summarize, applications built on top of the Microsoft 365 Backup Storage plat
 
 - Full Exchange mailbox item restores or granular item restores using search
 
-- Consolidated security and compliance domain  management
+- Consolidated security and compliance domain management
 
 M365-Backup_VID_WEB_Final.mp4   <need a link that embeds properly into the learn docs> 
 
@@ -90,7 +90,7 @@ Restore points will be physically created in the service as soon as the policy i
 
 ### Restoration performance
 
-While full OneDrive account and SharePoint site at-scale performance will be good for all restore points, we recommend choosing restore points  labeled “express restore points” as those will provide the fastest recovery time objective for SharePoint sites and OneDrive accounts, especially for smaller scale operations.
+While full OneDrive account and SharePoint site at-scale performance will be good for all restore points, we recommend choosing restore points labeled “express restore points” as those will provide the fastest recovery time objective for SharePoint sites and OneDrive accounts, especially for smaller scale operations.
 
 It might take on average less than 1 hour for sites or accounts to start restoring when a new restore session is initiated. After the first site or account is restored in a session, the remaining will complete in relatively fast succession.
 
