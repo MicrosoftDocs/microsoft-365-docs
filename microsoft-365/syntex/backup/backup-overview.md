@@ -95,5 +95,5 @@ The following table summarizes expected performance for a normally distributed t
 
 |Scenario |First full-container restore completes |Restore of all containers complete |
 |:-------|:-------|:--------|
-| 1,000 sites<br>(30 GB avg site size)  |Less than 1 hour  |Less than 12 hours  |
-| 1,000 mailboxes<br>(30 GB avg mailbox size)| Less than 1 hour | Less than 12 hours |
+| 1,000 sites<br>(30 GB average site size)  |Less than 1 hour  |Less than 12 hours  |
+| 1,000 mailboxes<br>(30 GB average mailbox size)| Less than 1 hour | Less than 12 hours |
