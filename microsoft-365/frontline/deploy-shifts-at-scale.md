@@ -42,13 +42,13 @@ Choose the Shifts capabilities that you want to be available to your frontline t
  
 The settings you choose are applied to every team that you deploy Shifts to.
 
-1. Under Shift requests, set the types of shift requests you want to allow:  
+1. Under **Shift requests**, set the types of shift requests you want to allow:  
 
     - **Open shifts**: Turn on this setting to allow frontline managers to publish unfilled shifts and frontline workers to view and request those shifts.
     - **Swap shift requests**: When you turn on this setting, frontline workers can swap shifts with other employees and frontline managers can approve or reject the requests.
     - **Offer shift requests**: Turn on this setting to allow frontline workers to offer shifts to other employees and frontline managers to approve or reject the requests.
-2. Choose whether to allow **Time off-requests**. When this setting is on, frontline workers can request time off and frontline managers can approve or reject the requests.  
- 
+2. Choose whether to allow **Time off-requests**. When this setting is on, frontline workers can request time off, and frontline managers can approve or reject the requests.  
+
     Keep in mind that if you turn off this setting, frontline managers can still assign time off to employees.  
 3. Add time-off reasons.
 
@@ -85,5 +85,20 @@ Review your settings. If you need to make changes, choose **Back**, and edit t
 Setup can take ???. Refresh the Manage frontline apps page to get the latest status. The setup status in the table changes to **Completed** when setup is finished.  
 
 ## Deploy Shifts to your frontline teams
+
+When setup is completed, you’re ready to deploy Shifts to your frontline teams.  
+
+1. On the Manage frontline apps page, next to **Deploy Shifts to your teams** in the table, choose **Deploy**.  
+2. Select the teams that you want to deploy Shifts to, and then choose **Next**.
+3. For each team that you selected, set the time zone for the team’s schedule in Shifts.
+
+    You can also set a default time zone that’s automatically applied to all teams. If you choose to set a default time zone, you can still select different time zones for specific teams.
+4. When you’re done selecting team time zones, choose **Deploy**.
+
+    This process can take ??? depending on how many teams you're deploying Shifts to. After deployment is completed, the deployment status shows as **Deployed** on the Manage frontline apps page, along with the deployment date.  
+ 
+
+    On the **Shifts** tile, you’ll see the number of frontline teams that Shifts is deployed to. You can also download a CSV file with a list of those teams.
+
 
 ## Related articles
