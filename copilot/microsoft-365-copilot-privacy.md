@@ -70,7 +70,18 @@ Admins can prevent their users from referencing public web content in their requ
 
 ### Extensibility of Microsoft 365 Copilot
 
-While Microsoft 365 Copilot is already able to use the apps and data within the Microsoft 365 ecosystem, many users still depend on various external tools and services for work management and collaboration. Customers can address this gap by extending Microsoft 365 Copilot to enable users to work with their third-party tools and services. This can be done through extending Microsoft 365 Copilot by building a plug-in or by connecting to an external data source. For more information, see [Extend Microsoft 365 Copilot](/microsoftteams/platform/copilot/how-to-extend-copilot).
+While Microsoft 365 Copilot is already able to use the apps and data within the Microsoft 365 ecosystem, many organizations still depend on various external tools and services for work management and collaboration. Microsoft 365 Copilot experiences can reference third-party tools and services when responding to a user’s request by using [Microsoft Graph connectors](/graph/connecting-external-content-connectors-overview) or plugins. Data from Graph connectors can be returned in Microsoft 365 Copilot responses if the user has permission to access that information.
+
+When plugins are enabled, Microsoft 365 Copilot determines whether it needs to use a specific plugin to help provide a relevant response to the user. If a plugin is needed, Microsoft 365 Copilot generates a search query to send to the plugin on the user’s behalf. The query is based on the user’s prompt, conversation history, and data the user has access to in Microsoft 365.
+
+In the Integrated apps section of the [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview), admins can view the permissions and data access required by a plugin as well as the plugin’s terms of use and privacy statement. Admins have full control to select which plugins are allowed in their organization. A user can only access the plugins that their admin allows and that the user installed or is assigned. Microsoft 365 Copilot only uses plugins that are turned on by the user.
+
+For more information, see the following articles:
+
+- [Manage Plugins for Copilot in Integrated Apps](/microsoft-365/admin/manage/manage-plugins-for-copilot-in-integrated-apps)
+- [Extend Microsoft 365 Copilot](/microsoftteams/platform/copilot/how-to-extend-copilot)
+- [How Microsoft 365 Copilot can work with your external data](https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/how-microsoft-365-copilot-can-work-with-your-external-data/ba-p/3937645)
+
 
 ## How does Microsoft 365 Copilot protect organizational data?
 
