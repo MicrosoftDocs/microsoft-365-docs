@@ -2,7 +2,7 @@
 title: Get started with Microsoft Defender Experts for XDR
 ms.reviewer:
 description: Defender Experts for XDR lets you determine the individuals or groups within your organization that need to be notified if there's a critical incident
-keywords: XDR, Xtended detection and response, defender experts for xdr, Microsoft Defender Experts for XDR, managed threat hunting, managed detection and response (MDR) service, service delivery manager, Microsoft Defender Experts for hunting, threat hunting and analysis, Microsoft XDR service
+keywords: XDR, protected assets, defender experts for xdr, set up microsoft xdr, managed threat hunting, managed detection and response (MDR) service, service delivery manager, readiness, threat hunting and analysis, actions needed xdr
 search.product: Windows 10
 ms.service: microsoft-365-security
 ms.subservice: m365d
@@ -19,7 +19,7 @@ ms.collection:
   - tier1
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 08/29/2023
+ms.date: 11/07/2023
 ---
 
 # Get started with Microsoft Defender Experts for XDR
@@ -36,7 +36,7 @@ Select the link in the welcome email to directly launch the Defender Experts set
 
 ## Grant permissions to our experts
 
-By default, Defender Experts for XDR requires **Service provider access** that lets our experts sign into your tenant and deliver services based on assigned security roles. [Learn more about cross-tenant access](/azure/active-directory/external-identities/cross-tenant-access-overview)
+By default, Defender Experts for XDR requires **Service provider access** that lets our experts sign into your tenant and deliver services based on assigned security roles. [Learn more about cross-tenant access](/azure/active-directory/external-identities/cross-tenant-access-overview).
 
 You also need to grant our experts temporary, scoped access only as needed, depending on the type of work you'd like them to handle on your behalf:
 
@@ -74,7 +74,7 @@ Defender Experts for XDR lets you determine the individuals or groups within you
 > Given the urgent nature of the communications, it is recommended to have someone available at all times.
 
 2. Select **Next**. Under **Service review contact**, search for and add your contact persons or teams that we can engage with for ongoing security briefings done by our service delivery team.
-3. Select **Next**. The settings guide then provides you with information about the **Next steps**, including working with our experts to [optimize your security posture](#run-initial-defender-experts-readiness-checks).
+3. Select **Next**. The settings guide then provides you with information about the **Next steps**, including working with our experts to [optimize your security posture](#prepare-your-environment-for-the-defender-experts-service).
 4. Select **Close** to exit the settings step-by-step guide.
 
 To edit or update your notification contacts after the initial setup, go to **Settings** > **Defender Experts** > **Notification contacts**:
@@ -85,19 +85,39 @@ To edit or update your notification contacts after the initial setup, go to **Se
 
 :::image type="content" source="../../media/xdr/who-to-contact-for-imp-matters-2.png" alt-text="Screenshot of notification contacts." lightbox="../../media/xdr/who-to-contact-for-imp-matters-2.png":::
 
-## Run initial Defender Experts readiness checks
+## Prepare your environment for the Defender Experts service
 
-Apart from onboarding service delivery, our expertise on the Microsoft 365 Defender product suite enables Defender Experts for XDR to run an initial readiness assessment to help you get the most out of your Microsoft security products.
+Apart from onboarding service delivery, our expertise on the Microsoft 365 Defender product suite enables Defender Experts for XDR to let you run a **readiness assessment** and help you get the most out of your Microsoft security products.
 
-The initial readiness engagement is based on your [Microsoft Secure Score](../defender/microsoft-secure-score.md) and Defender Experts' policy recommendations. Our experts collaborate with you to prioritize and tailor recommendations that align with your environment. They seek your immediate involvement to implement these configurations and comprehend the necessary actions for initiating operations.
+The readiness assessment is based on the number of protected devices and identities in your environment, and Defender Experts' policy recommendations. To view the assessment, in your Microsoft 365 Defender portal, go to **Settings** > **Defender Experts** then select **Service status**.
 
-Once the readiness checks are completed, our experts will start monitoring your environment closely to identify latent threats, sources of risk, and normal activity. As we get better understanding of your critical assets, we can streamline the service and fine-tune our responses.
+:::image type="content" source="../../media/xdr/readiness-assessment-xdr.png" alt-text="Screenshot of readiness assessment environment." lightbox="../../media/xdr/readiness-assessment-xdr.png":::
+
+The readiness assessment has two parts:
+
+- **Actions needed** – This section shows the number of actions or security settings that you need to complete, are in progress, or have been completed. These are listed in a table at the bottom part of the page.
+
+  The list outlines the required steps you need to take before initiating the service. Prioritize the actions that have the **Complete now** status to get the Defender Experts for XDR service started sooner.
+
+  > [!NOTE]
+  > It can take up to 24 hours to get the latest status of your security settings.
+
+- **Protected assets** – This section shows the current number of protected devices and identities versus the ones that you still need to protect to get the Defender Experts for XDR service started.
+
+  The figures are based on your Defender for Endpoint and Defender for Identity licenses; to achieve these target number of protected assets, [onboard more devices](/microsoft-365/security/defender-endpoint/onboarding) to Defender for Endpoint or [install more Defender for Identity sensors](/defender-for-identity/install-sensor).
+
+> [!IMPORTANT]
+> Defender Experts for XDR reviews your readiness assessment periodically, especially if there are any changes to your environment, such as the addition of new devices and identities. It’s important that you regularly monitor and run the readiness assessment beyond the initial onboarding to ensure that your environment has strong security posture to reduce risk.
+
+Once you’ve completed all the required tasks and met the onboarding targets in your readiness assessment, your service delivery manager (SDM) initiates the monitoring phase of the Defender Experts for XDR service, where, for a few days, our experts start monitoring your environment closely to identify latent threats, sources of risk, and normal activity. As we get better understanding of your critical assets, we can streamline the service and fine-tune our responses.
 
 ### Next step
 
 [Start using Microsoft Defender Experts for XDR service](start-using-mdex-xdr.md)
 
 ### See also
+
 - [Frequently asked questions](frequently-asked-questions.md)
 - [How Microsoft Defender Experts for XDR permissions work](dex-xdr-permissions.md)
+
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

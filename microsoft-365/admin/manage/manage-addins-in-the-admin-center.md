@@ -92,19 +92,19 @@ As an organization you may wish to manage the download of Office add-ins from th
 
 2. Select **User owned apps and services**.
     
-3. Check or clear the option to let users access the Office store.
+3. Check or clear the option to allow or prevent users access the Office store.
+    
+    ![Let user access office store settings](../../media/user-owned-apps-and-services.png)
+   
+This will control all users' ability to acquire the following add-ins from the store.
 
-    This will prevent all users from acquiring the following add-ins from the store.
-      
-    - Add-ins for Word, Excel, and PowerPoint 2016 from:
-        
-      - Windows
-      - Mac
-      - Office
-        
-    - Add-ins within Microsoft 365
-        
-   When you disable the access to the Office store, a user who tries to access the store will see the following message: **Office store not available. Unfortunately, your organization has disabled access to the Office Store. Please contact your administrator to get access to the store.**
+- Add-ins for Word, Excel, and PowerPoint 2016:
+    - Windows
+    - Mac
+    - Office
+- Add-ins within Microsoft 365
+
+ When you disable the access to the Office store, a user who tries to access the store will see the following message: **Office store not available. Unfortunately, your organization has disabled access to the Office Store. Please contact your administrator to get access to the store.**
 
 > [!NOTE]
 > Acquisitions may still be possible from AppSource, but the user will not be able to launch or use the add-in in the client. This does not prevent an administrator from using Centralized Deployment to assign an add-in from the Office Store.
