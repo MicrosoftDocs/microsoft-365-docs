@@ -1,5 +1,5 @@
 ---
-title: Roles and role groups in Microsoft Defender for Office 365 and Microsoft Purview compliance
+title: Roles and role groups in Microsoft Defender for Office 365 and Microsoft Purview
 f1.keywords: 
   - NOCSH
 ms.author: chrisda
@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 search.appverid: 
   - MOE150
   - MET150
-description: Admins can learn about the roles and role groups in Microsoft Defender for Office 365 and Microsoft Purview compliance.
+description: Admins can learn about the roles and role groups in Microsoft Defender for Office 365 and Microsoft Purview.
 ms.custom: 
 - seo-marvel-apr2020
 ms.subservice: mdo
@@ -24,29 +24,34 @@ ms.service: microsoft-365-security
 ms.date: 11/7/2023
 ---
 
-# Roles and role groups in Microsoft Defender for Office 365 and Microsoft Purview compliance
+# Roles and role groups in Microsoft Defender for Office 365 and Microsoft Purview
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-The [Microsoft 365 Defender portal](/microsoft-365/security/defender/microsoft-365-defender-portal) and [Microsoft Purview compliance portal](/purview/microsoft-365-compliance-center) have replaced the Security & Compliance Center as the place to manage Microsoft Defender for Office 365 and Microsoft Purview compliance roles and role groups for your organization. For more information about permissions within these portals, see the following articles:
+The [Microsoft 365 Defender portal](/microsoft-365/security/defender/microsoft-365-defender-portal), [Microsoft Purview portal](/purview/purview-portal), and the classic Microsoft Purview [compliance](/purview/microsoft-365-compliance-center) and [governance](/purview/use-microsoft-purview-governance-portal) portals have replaced the Security & Compliance Center as the places to manage Microsoft Defender for Office 365 and Microsoft Purview roles and role groups for your organization. For more information about permissions within these portals, see the following articles:
 
 - [Email & collaboration permissions in the Microsoft 365 Defender portal](/microsoft-365/security/office-365-security/mdo-portal-permissions)
+- [Permissions in the Microsoft Purview portal](/purview/purview-portal)
 - [Permissions in the Microsoft Purview compliance portal](/purview/microsoft-365-compliance-center-permissions)
+- [Permissions in the Microsoft Purview governance portal](/purview/roles-permissions)
 
-These portals let you grant permissions to people who perform tasks like device management, data loss prevention, eDiscovery, retention, and so on. These people can perform only the tasks that you explicitly grant them access to. To access these portals, users need to be a global admin or a member of one or more role groups in Defender for Office 365 (**Email & collaboration** role groups) or Purview compliance (**Microsoft Purview solutions** role groups).
+> [!IMPORTANT]
+> The Microsoft Purview portal (preview) currently supports data governance solutions. Selecting risk and compliance solutions in the portal automatically opens these solutions in the classic Microsoft Purview compliance portal
+
+These portals let you grant permissions to people who perform tasks like device management, data loss prevention, eDiscovery, retention, and so on. These people can perform only the tasks that you explicitly grant them access to. To access these portals, users need to be a global admin or a member of one or more role groups in Defender for Office 365 (**Email & collaboration** role groups) or Purview (**Microsoft Purview solutions** role groups).
 
 Permissions in these portals are based on the role-based access control (RBAC) permissions model. RBAC is the same permissions model that's used by Exchange, so if you're familiar with Exchange Online, granting permissions in these portals is very similar. But, It's important to remember that role groups in Exchange Online and role groups for Defender for Office 365 or Purview compliance don't share membership or permissions. For example, while an Organization Management role group exists in Exchange Online, the permissions granted and role group members are different than the Organization Management role group in Defender for Office 365 and Purview compliance.
 
-This article contains the inventory of Defender for Office 365 and Purview compliance roles and role groups.
+This article contains the inventory of Defender for Office 365 and Microsoft Purview roles and role groups.
 
 > [!NOTE]
 > In the Microsoft 365 Defender preview program, a different Microsoft Defender 365 RBAC model is also available. The permissions in this RBAC model are different from the Defender for Office 365 permissions as described in this article. For more information, see [Microsoft 365 Defender role-based access control (RBAC)](../defender/manage-rbac.md).
 
-## Role groups in Microsoft Defender for Office 365 and Microsoft Purview compliance
+## Role groups in Microsoft Defender for Office 365 and Microsoft Purview
 
-The table in this section lists the default role groups that are available in the Microsoft 365 Defender portal and the Microsoft Purview compliance portal, and the roles that are assigned to the role groups by default. To grant permissions to a user to perform tasks in Defender for Office 365 or Purview compliance, add them to the appropriate role group.
+The table in this section lists the default role groups that are available in the Microsoft 365 Defender portal and the Microsoft Purview portals, and the roles that are assigned to the role groups by default. To grant permissions to a user to perform tasks in Defender for Office 365 or Microsoft Purview, add them to the appropriate role group.
 
-Managing permissions in Defender for Office 365 or Purview compliance gives users access to security and compliance features that are available within their respective portals. To grant permissions to other features, such as Exchange mail flow rules (also known as transport rules), you need to grant permissions in Exchange Online. For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
+Managing permissions in Defender for Office 365 or Microsoft Purview gives users access to security and compliance and governance features that are available within their respective portals. To grant permissions to other features, such as Exchange mail flow rules (also known as transport rules), you need to grant permissions in Exchange Online. For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
 
 > [!NOTE]
 > To view the **Permissions** tab as described in this article, you need to be an admin. Specifically, you need to be assigned the **Role Management** role, and that role is assigned only to the **Organization Management** and **Purview Administrators** role groups by default. The **Role Management** role also allows you to view, create, and modify role groups.
