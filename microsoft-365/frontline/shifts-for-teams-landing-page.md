@@ -45,6 +45,7 @@ Use the following resources to help you set up and manage Shifts in your organiz
 
 |&nbsp;  |&nbsp; |
 |---------|---------|
+|:::image type="icon" source="/office/media/icons/deploy-teams.png":::|**[Deploy Shifts at scale](deploy-shifts-at-scale)** Learn how to deploy Shifts to your frontline teams at scale in the Teams admin center. You can configure and manage Shifts settings centrally, and deploy Shifts to all your frontline teams at once.|
 |:::image type="icon" source="/office/media/icons/administrator.png":::|**[Manage Shifts](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)** Get an overview of how to manage Shifts for your organization. Learn how to control access to Shifts, pin Shifts to the Teams app bar for easy access, enable shift-based tags, and more. |
 |:::image type="icon" source="/office/media/icons/users-people.png":::|**[Manage schedule owners for shift management](schedule-owner-for-shift-management.md)** This feature lets you elevate the permissions of a team member to a schedule owner without making the employee a team owner.|
 |:::image type="icon" source="/office/media/icons/help.png":::| **[Shifts data FAQ](/microsoftteams/expand-teams-across-your-org/shifts/shifts-data-faq?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)** Learn where Shifts data is stored and other topics related to Shifts data, including retention, retrieval, and encryption.|
@@ -64,7 +65,7 @@ If you're using a third-party workforce management (WFM) system for scheduling, 
 
 |&nbsp;|&nbsp;|
 | ------------- | ------------- |
-|:::image type="icon" source="/office/media/icons/api.png":::| **[Shift Graph APIs](/graph/api/resources/shift)** Shifts Graph APIs allow you to integrate Shifts data with external WFM systems. You'll have the flexibility to build custom Shifts experiences in the back end, while giving users a rich, front-end experience in Teams.             |
+|:::image type="icon" source="/office/media/icons/api.png":::| **[Shift Graph APIs](/graph/api/resources/shift)** Shifts Graph APIs allow you to integrate Shifts data with external WFM systems. You have the flexibility to build custom Shifts experiences in the back end, while giving users a rich, front-end experience in Teams.             |
 |:::image type="icon" source="/office/media/icons/process-flow-teams.png":::| **[Shifts + Power Automate](https://github.com/OfficeDev/Microsoft-Teams-Shifts-Power-Automate-Templates)** Shifts + Power Automate lets you take info from Shifts and create custom workflows with other apps and perform operations at scale. Automate key processes with little to no code. The triggers and templates support various scenarios such as enabling auto-approvals for shift requests when a manager’s approval isn't needed. |
 
 ## Featured training

@@ -96,9 +96,9 @@ When setup is completed, you’re ready to deploy Shifts to your frontline teams
 4. When you’re done selecting team time zones, choose **Deploy**.
 
     This process can take ??? depending on how many teams you're deploying Shifts to. After deployment is completed, the deployment status shows as **Deployed** on the Manage frontline apps page, along with the deployment date.  
- 
 
     On the **Shifts** tile, you’ll see the number of frontline teams that Shifts is deployed to. You can also download a CSV file with a list of those teams.
 
-
 ## Related articles
+
+- [Deploy frontline dynamic teams at scale](deploy-dynamic-teams-at-scale.md)
