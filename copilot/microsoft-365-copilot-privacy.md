@@ -57,7 +57,7 @@ Abuse monitoring for Microsoft 365 Copilot occurs in real-time, without providin
 
 ### Microsoft 365 Copilot and public web content
 
-Microsoft 365 Copilot chat experiences can reference public web content when responding to a user’s prompt. Based on the user’s prompt, Copilot determines whether it needs to use Bing to query public web content to help provide a relevant response to the user.
+Microsoft 365 Copilot chat experiences can reference public web content when responding to a user’s prompt. Based on the user’s prompt, Microsoft 365 Copilot determines whether it needs to use Bing to query public web content to help provide a relevant response to the user.
 
 If Microsoft 365 Copilot determines web content can help provide a more relevant response, it generates a search query to send to Bing. That search query is based on the user’s prompt, conversation history, and data the user has access to in Microsoft 365. This query might include your organization’s data, but the user’s account and their tenant ID aren't included in the search query sent to Bing.
 
@@ -81,7 +81,6 @@ For more information, see the following articles:
 - [Manage Plugins for Copilot in Integrated Apps](/microsoft-365/admin/manage/manage-plugins-for-copilot-in-integrated-apps)
 - [Extend Microsoft 365 Copilot](/microsoftteams/platform/copilot/how-to-extend-copilot)
 - [How Microsoft 365 Copilot can work with your external data](https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/how-microsoft-365-copilot-can-work-with-your-external-data/ba-p/3937645)
-
 
 ## How does Microsoft 365 Copilot protect organizational data?
 
@@ -109,7 +108,7 @@ For European Union (EU) users, we have additional safeguards to comply with the 
 
 ## Microsoft 365 Copilot and data residency
 
-Customers with [Advanced Data Residency (ADR) in Microsoft 365](/microsoft-365/enterprise/advanced-data-residency) or [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo) can purchase and enable Microsoft 365 Copilot. However, at this time, Microsoft Copilot doesn't provide data residency commitments for Microsoft 365 Copilot customer data-at-rest.
+Customers with [Advanced Data Residency (ADR) in Microsoft 365](/microsoft-365/enterprise/advanced-data-residency) or [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo) can purchase and enable Microsoft 365 Copilot. However, at this time, Microsoft 365 Copilot doesn't provide data residency commitments for Microsoft 365 Copilot customer data-at-rest.
 
 ## Meeting regulatory compliance requirements
 
@@ -131,7 +130,7 @@ If you turn off connected experiences that analyze content for Microsoft 365 App
 - Outlook (classic)
 - Word
 
-Similarly, Copilot features in those apps on Windows or Mac devices won’t be available if you turn off the use of connected experiences for Microsoft 365 Apps.
+Similarly, Microsoft 365 Copilot features in those apps on Windows or Mac devices won’t be available if you turn off the use of connected experiences for Microsoft 365 Apps.
 
 For more information about these policy settings, see the following articles:
 
@@ -159,5 +158,5 @@ We aim to help our customers use our AI products responsibly, sharing our learni
 ## Related articles
 
 - [Microsoft 365 Copilot requirements](microsoft-365-copilot-requirements.md)
-- [Get started with Copilot in Microsoft 365](microsoft-365-copilot-setup.md)
+- [Get started with Microsoft 365 Copilot](microsoft-365-copilot-setup.md)
 - [Microsoft 365 Copilot adoption site](https://adoption.microsoft.com/copilot/)
