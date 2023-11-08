@@ -52,9 +52,9 @@ Microsoft Entra ID is the directory service used by Microsoft 365. The Microsoft
 |Guest invite restrictions|Anyone in the organization can invite guest users including guests and non-admins|Determines whether guests, members, and admins can invite guests to the organization. <p> This setting affects  Microsoft 365 sharing experiences such as Teams and SharePoint.|
 |Enable guest self-service sign-up via user flows|No|Determines if you can create user flows that allow someone to sign up for an app that you created and create a new guest account.|
 |External user leave settings|Yes|Determines if guests can remove themselves from your organization.|
-|Collaboration restrictions|Allow invitations to be sent to any domain|This setting allows you to specify a list of allowed or blocked domains for sharing. When allowed domains are specified, then sharing invitations can only be sent to those domains. When denied domains are specified, then sharing invitations cannot be sent to those domains. <p> This setting affects  Microsoft 365 sharing experiences such as Teams and SharePoint. You can also allow or block domains at by using [domain allow or block lists in SharePoint](/sharepoint/restricted-domains-sharing).|
+|Collaboration restrictions|Allow invitations to be sent to any domain|This setting allows you to specify a list of allowed or blocked domains for sharing. When allowed domains are specified, then sharing invitations can only be sent to those domains. When denied domains are specified, then sharing invitations can't be sent to those domains. <p> This setting affects  Microsoft 365 sharing experiences such as Teams and SharePoint. You can also allow or block domains at by using [domain allow or block lists in SharePoint](/sharepoint/restricted-domains-sharing).|
 
-These settings affect how users are invited to the directory. They do not affect sharing with guests who are already in the directory.
+These settings affect how users are invited to the directory. They don't affect sharing with guests who are already in the directory.
 
 ### Cross-tenant access settings
 
@@ -112,7 +112,7 @@ The Microsoft 365 admin center has organization-level settings for sharing and f
 
 | Setting | Default | Description |
 |:-----|:-----|:-----|
-|Let users add new guests to the organization|On|When set to **Yes**, Microsoft Entra ID members can invite guests via Microsoft Entra ID; when set to **No**, they cannot. When set to **Yes**, Microsoft 365 group members can invite guests with owner approval; when set to **No**, Microsoft 365 group members can invite guests with owner approval but owners must be global administrators to approve. <p> Note that **Members can invite** refers to members in Microsoft Entra ID (as opposed to guests) and not to site or group members in  Microsoft 365. <p> This setting changes the **Guest invite restrictions** setting in Microsoft Entra ID external collaboration settings.|
+|Let users add new guests to the organization|On|When set to **Yes**, Microsoft Entra ID members can invite guests via Microsoft Entra ID; when set to **No**, they can't. When set to **Yes**, Microsoft 365 group members can invite guests with owner approval; when set to **No**, Microsoft 365 group members can invite guests with owner approval but owners must be global administrators to approve. <p> Note that **Members can invite** refers to members in Microsoft Entra ID (as opposed to guests) and not to site or group members in  Microsoft 365. <p> This setting changes the **Guest invite restrictions** setting in Microsoft Entra ID external collaboration settings.|
 
 ### Microsoft 365 Groups
 
@@ -187,7 +187,7 @@ The Teams guest access switch must be **On** for the other guest settings to be 
 
 **Admin role:** SharePoint administrator
 
-These settings affect all the sites in the organization. They do not affect Microsoft 365 Groups or Teams directly, however we recommend that you align these settings with the settings for Microsoft 365 Groups and Teams to avoid user experience issues. (For example, if guest sharing is allowed in Teams but not SharePoint, then guests in Teams will not have access to the Files tab because [Teams files are stored in SharePoint](/SharePoint/teams-connected-sites).)
+These settings affect all the sites in the organization. They don't affect Microsoft 365 Groups or Teams directly, however we recommend that you align these settings with the settings for Microsoft 365 Groups and Teams to avoid user experience issues. (For example, if guest sharing is allowed in Teams but not SharePoint, then guests in Teams won't have access to the Files tab because [Teams files are stored in SharePoint](/SharePoint/teams-connected-sites).)
 
 ### SharePoint and OneDrive sharing settings
 
@@ -200,7 +200,7 @@ Because OneDrive is a hierarchy of sites within SharePoint, the organization-lev
 | Setting | Default | Description |
 |:-----|:-----|:-----|
 |SharePoint|Anyone|Specifies the most permissive sharing permissions allowed for SharePoint sites.|
-|OneDrive|Anyone|Specifies the most permissive sharing permissions allowed for OneDrive sites. This setting cannot be more permissive than the SharePoint setting.|
+|OneDrive|Anyone|Specifies the most permissive sharing permissions allowed for OneDrive sites. This setting can't be more permissive than the SharePoint setting.|
 
 ### SharePoint and OneDrive advanced sharing settings
 
@@ -210,9 +210,9 @@ Because OneDrive is a hierarchy of sites within SharePoint, the organization-lev
 
 | Setting | Default | Description |
 |:-----|:-----|:-----|
-|Limit external sharing by domain|Off|This setting allows you to specify a list of allowed or blocked domains for sharing. When allowed domains are specified, then sharing invitations can only be sent to those domains. When denied domains are specified, then sharing invitations cannot be sent to those domains. <p> This setting affects all SharePoint and OneDrive sites in the organization. You can also set this at the site level.|
-|Allow only users in specific security groups to share externally|Off|If you want to limit who can share with guests in SharePoint and OneDrive, you can do so by limiting sharing to people in specified security groups. These settings do not affect sharing via Microsoft 365 Groups or Teams. Guests invited via a group or team would also have access to the associated site, though document and folder sharing could only be done by people in the specified security groups. <p> For each specified group, you can choose which of those users can share with *Anyone* links.|
-|Guests must sign in using the same account to which sharing invitations are sent|Off|Prevents guests from redeeming site sharing invitations using a different email address than the invitation was sent to. <p> [SharePoint and OneDrive integration with Microsoft Entra B2B](/sharepoint/sharepoint-azureb2b-integration-preview) does not use this setting because all guests are added to the directory based on the email address that the invitation was sent to and alternate email addresses cannot be used to access the site.|
+|Limit external sharing by domain|Off|This setting allows you to specify a list of allowed or blocked domains for sharing. When allowed domains are specified, then sharing invitations can only be sent to those domains. When denied domains are specified, then sharing invitations can't be sent to those domains. <p> This setting affects all SharePoint and OneDrive sites in the organization. You can also set this at the site level.|
+|Allow only users in specific security groups to share externally|Off|If you want to limit who can share with guests in SharePoint and OneDrive, you can do so by limiting sharing to people in specified security groups. These settings don't affect sharing via Microsoft 365 Groups or Teams. Guests invited via a group or team would also have access to the associated site, though document and folder sharing could only be done by people in the specified security groups. <p> For each specified group, you can choose which of those users can share with *Anyone* links.|
+|Guests must sign in using the same account to which sharing invitations are sent|Off|Prevents guests from redeeming site sharing invitations using a different email address than the invitation was sent to. <p> [SharePoint and OneDrive integration with Microsoft Entra B2B](/sharepoint/sharepoint-azureb2b-integration-preview) does not use this setting because all guests are added to the directory based on the email address that the invitation was sent to and alternate email addresses can't be used to access the site.|
 |Allow guests to share items they don't own|On|When **On**, guests can share items that they don't own with other users or guests; when **Off** they can't. Guests can always share items for which they have full control.|
 |Guest access to a site or OneDrive will expire automatically after this many days|On|This setting allows you to specify a number of days after which guest access to sites expires. [Site owners can manage access renewals](https://support.microsoft.com/office/25bee24f-42ad-4ee8-8402-4186eed74dea). You can also set this at the site level.|
 |People who use a verification code must reauthenticate after this many days|Off|This setting allows you to require that users authenticating with a one-time passcode reauthenticate after a certain number of days.|
@@ -229,20 +229,20 @@ When files and folders are shared in SharePoint and OneDrive, sharing recipients
 |:-----|:-----|:-----|
 |Choose the type of link that's selected by default when users share files and folders in SharePoint and OneDrive|Anyone with the link|Specifies which sharing link is shown by default when a user shares a file or folder. Users can change the option before sharing if they want. If the default is set to **Anyone with the link** and *Anyone* sharing is not allowed for a given site, then **Only people in your organization** will be shown as the default for that site.|
 |Choose the permission that's selected by default for sharing links|View and edit|Specifies the file permission levels available to users when creating an *Anyone* link. If **View** is selected, then users can only create *Anyone* file links with view permissions. If **View, and edit** is selected, then users can choose between view and view and edit permissions when they create the link.|
-|These links must expire within this many days|Off (no expiration)|Specifies the number of days after an *Anyone* link is created that it expires. Expired links cannot be renewed. Users can create a new link if they need to continue sharing past the expiration.|
+|These links must expire within this many days|Off (no expiration)|Specifies the number of days after an *Anyone* link is created that it expires. Expired links can't be renewed. Users can create a new link if they need to continue sharing past the expiration.|
 |These links can give these permissions|View, edit, and upload|Specifies the folder permission levels available to users when creating an *Anyone* link. If **View** is selected, then users can only create *Anyone* folder links with view permissions. If **View, edit, and upload** is selected, then users can choose between view and view, edit, and upload permissions when they creat the link.|
 
 ## SharePoint (site level)
 
 **Admin role:** SharePoint administrator
 
-Because these settings are subject to the organization-wide settings for SharePoint, the effective sharing setting for the site may change if the organization-level setting changes. If you choose a setting here and the organization-level is later set to a more restrictive value, then this site will operate at that more restrictive value. For example, if you choose **Anyone** and the organization-level setting is later set to **New and existing guests**, then this site will only allow new and existing guests. If the organization-level setting is then set back to **Anyone**, this site would again allow *Anyone* links.
+Because these settings are subject to the organization-wide settings for SharePoint, the effective sharing setting for the site might change if the organization-level setting changes. If you choose a setting here and the organization-level is later set to a more restrictive value, then this site will operate at that more restrictive value. For example, if you choose **Anyone** and the organization-level setting is later set to **New and existing guests**, then this site will only allow new and existing guests. If the organization-level setting is then set back to **Anyone**, this site would again allow *Anyone* links.
 
 ### Site sharing
 
 You can set guest sharing permissions for each site in SharePoint. This setting applies to both site sharing and file and folder sharing. (*Anyone* sharing is not available for site sharing. If you choose **Anyone**, users will be able to share files and folders by using *Anyone* links, and the site itself with new and existing guests.)
 
-If the site has a sensitivity label applied, that label may control the external sharing settings. For more information, see [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](../compliance/sensitivity-labels-teams-groups-sites.md).
+If the site has a sensitivity label applied, that label might control the external sharing settings. For more information, see [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](../compliance/sensitivity-labels-teams-groups-sites.md).
 
 **Navigation:** SharePoint admin center > <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a> > select the site > **Settings** tab > **More sharing settings**
 
@@ -256,7 +256,7 @@ If the site has a sensitivity label applied, that label may control the external
 
 ### Site access, file, and folder link settings
 
-You can set defaults for link type and permissions, guest access expiration, and expiration settings for *Anyone* links for each site. When set at the site level, these settings override the organization-level settings. Note that if *Anyone* links are disabled at the organization level, *Anyone* will not be an available link type at the site level.
+You can set defaults for link type and permissions, guest access expiration, and expiration settings for *Anyone* links for each site. When set at the site level, these settings override the organization-level settings. Note that if *Anyone* links are disabled at the organization level, *Anyone* won't be an available link type at the site level.
 
 **Navigation:** SharePoint admin center > <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**Active sites**</a> > select the site > **Settings** tab > **More sharing settings**
 
@@ -266,10 +266,10 @@ You can set defaults for link type and permissions, guest access expiration, and
 
 | Setting | Default | Description |
 |:-----|:-----|:-----|
-|Limit sharing by domain|Off|This setting allows you to specify a list of allowed or blocked domains for sharing. When allowed domains are specified, then sharing invitations can only be sent to those domains. When denied domains are specified, then sharing invitations cannot be sent to those domains. <p> This setting cannot be used to override domain restrictions set at the organization or Microsoft Entra ID level.|
+|Limit sharing by domain|Off|This setting allows you to specify a list of allowed or blocked domains for sharing. When allowed domains are specified, then sharing invitations can only be sent to those domains. When denied domains are specified, then sharing invitations can't be sent to those domains. <p> This setting can't be used to override domain restrictions set at the organization or Microsoft Entra ID level.|
 |Expiration of guest access|Same as organization-level setting|This setting allows you to specify a number of days after which guest access to the site expires. [Site owners can manage access renewals](https://support.microsoft.com/office/25bee24f-42ad-4ee8-8402-4186eed74dea).|
 |Default sharing link type|Same as organization-level setting|This setting allows you to specify the default sharing link presented to users in this site. The *Same as organization-level setting* option is defined by a combination of organization and site sharing settings.|
-|Expiration of Anyone links|Same as organization-level setting|Specifies the number of days after an *Anyone* link is created for a file or folder in this site that it expires. Expired links cannot be renewed. Users can create a new link if they need to continue sharing past the expiration.|
+|Expiration of Anyone links|Same as organization-level setting|Specifies the number of days after an *Anyone* link is created for a file or folder in this site that it expires. Expired links can't be renewed. Users can create a new link if they need to continue sharing past the expiration.|
 |Default link permission|Same as organization-level setting|This setting allows you to specify the default permission (View or Edit) for sharing links created for files and folders in this site.|
 
 ### Default site sharing settings
