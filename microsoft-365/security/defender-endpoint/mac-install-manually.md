@@ -140,9 +140,12 @@ To grant full disk access:
 1. Enable *Device Control*.
 
    To enable *Device Control*, refer [device control for macOS](mac-device-control-overview.md).
-1. 
+1. Enable *Tamper Protection* in block mode.
 
-## Client configuration
+   To enable *Tamper Protection*, refer [Protect MacOS security settings with tamper protection](tamperprotection-macos.md).
+1. If you have the *Microsoft Purview – Endpoint data loss prevention license*,  you can review [Get started with Microsoft Purview - Endpoint data loss prevention](/purview/endpoint-dlp-getting-started).
+
+## Onboarding Package
 
 1. Copy wdav.pkg and MicrosoftDefenderATPOnboardingMacOs.sh to the device where you deploy Microsoft Defender for Endpoint on macOS.
 
