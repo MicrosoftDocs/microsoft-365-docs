@@ -54,16 +54,11 @@ MFA is an important first step in securing your company, and security defaults m
 
 ### To enable security defaults (or confirm they're already enabled)
 
-> [!IMPORTANT]
-> You must be a Security Administrator, Conditional Access administrator, or Global Administrator to perform this task.
-
-1. Go to the Microsoft Entra admin center ([https://entra.microsoft.com/](https://entra.microsoft.com/)) and sign in.
-
-2. Under **Microsoft Entra ID (Azure AD)**, select **Go to Microsoft Entra ID**.
-
-3. Select **Properties**, scroll down, and then select the **Manage security defaults** link.
-
-4. On the right side of the screen, in the **Security defaults** pane, see whether security defaults are turned on (**Enabled**) or off (**Disabled**). To turn on security defaults, use the drop-down menu to select **Enabled**. Then select **Save**.
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as least a [Security Administrator](/entra/identity/role-based-access-control/permissions-reference#security-administrator).
+1. Browse to **Identity** > **Overview** > **Properties**.
+1. Select **Manage security defaults**.
+1. Set **Security defaults** to **Enabled**.
+1. Select **Save**.
 
    > [!IMPORTANT]
    > If your organization is using Conditional Access, security defaults are disabled. You can use either security defaults or Conditional Access, but not both at the same time.
