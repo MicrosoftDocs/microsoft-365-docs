@@ -37,7 +37,7 @@ This topic describes how to deploy Microsoft Defender for Endpoint on macOS manu
 
 - [Download installation and onboarding packages](#download-installation-and-onboarding-packages)
 - [Application installation (macOS 11 and newer versions)](#application-installation-macos-11-and-newer-versions)
-- [Client configuration](#client-configuration)
+- [Onboarding Package](#onboarding-package)
 
 ## Prerequisites and system requirements
 
@@ -172,11 +172,8 @@ To grant full disk access:
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/mdatp-icon-bar.png" alt-text="The Microsoft Defender icon in status bar" lightbox="images/mdatp-icon-bar.png":::
 
-## How to Allow Full Disk Access
 
-1. To grant consent, open **System Preferences** \> **Security & Privacy** \> **Privacy** \> **Full Disk Access**. Click the lock icon to make changes (bottom of the dialog box). Select Microsoft Defender for Endpoint.
-
-2. Run an AV detection test to verify that the device is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded device:
+## Run an AV detection test to verify the device's onboarding and reporting to the service
 
     1. Ensure that real-time protection is enabled (denoted by a result of 1 from running the following command):
 
@@ -196,7 +193,7 @@ To grant full disk access:
         mdatp threat list
         ```
 
-3. Run an EDR detection test to verify that the device is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded device:
+## Run an EDR detection test to verify the device's onboarding and reporting to the service
 
    1. In your browser such as Microsoft Edge for Mac or Safari.
 
