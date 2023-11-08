@@ -156,7 +156,10 @@ In addition to pre-release security updates testing, we support pre-release feat
 
 **Q: Is there a cost associated with the service?**
 
-**A:** Effective 1 March 2022, you'll be provided with 100 free hours (valued at $800) expiring in 6 months under your subscription for your validation needs. After the free hours get consumed (or expired before used), you'll automatically be metered at $8 per hour against your usage.
+**A:** The cost of the service depends on when you sign up and how much you use it. Here are the details:
+- If you signed up before November 15th, 2023, you will receive 100 free hours (valued at $800) of Test Base usage under your subscription. These hours will expire in 6 months from the date of sign up. After the free hours are consumed or expired, you will be charged $8 per hour for your usage.
+- If you sign up on or after November 15th, 2023, you will receive 100 free hours (valued at $800) of Test Base usage under your tenant. These hours will expire in 6 months from the date of sign up. After the free hours are consumed or expired, you will be charged $8 per hour for your usage.
+- Starting from November 15th, 2023, if you are a Windows E3/E5 or Microsoft 365 E3/E5 customer, you will receive an additional 500 hours (equivalent to $4,000) of Test Base usage under your tenant. These hours do not have an expiration date and can be used anytime. Note: Do not disable the service principal “Test Base for M365 – Billing”, otherwise you may lose the possibility of getting the additional hours.
 
 **Q: How can I provide feedback about Test Base?**
 
