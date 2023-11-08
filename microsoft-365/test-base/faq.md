@@ -59,7 +59,7 @@ For assistance and more information, see the onboarding user guide or contact ou
 
 **Q: Can Test Base support our automated tests?**
 
-**A:** Yes, Test Base supports automated tests, however, we do not support manual tests at this time due to service capabilities.
+**A:** Yes, Test Base supports automated tests, however, we don't support manual tests at this time due to service capabilities.
 
 **Q: What languages and frameworks of automated tests do you support?**
 
@@ -122,7 +122,7 @@ We always work closely with our customers in joint remediation to resolve any is
 
 **Q: Does Microsoft hold the release of the security patch until the issue is resolved? What alternate resolutions are available?**
 
-**A:** The goal of Test Base is to ensure our joint end customers do not face any issues. We work hard with Software Vendors to address any issues before the release, but in case the fix is not feasible we have other resolutions such as shims and blocks.
+**A:** The goal of Test Base is to ensure our joint end customers don't face any issues. We work hard with Software Vendors to address any issues before the release, but in case the fix is not feasible we have other resolutions such as shims and blocks.
 
 ## Security
 
@@ -138,7 +138,7 @@ We always work closely with our customers in joint remediation to resolve any is
 
 **Q: How will the service work with an on-prem server?**
 
-**A:** We currently do not provide support for on-prem servers. However, if the server is exposing HTTP endpoint, we can connect to it over the internet.
+**A:** We currently don't provide support for on-prem servers. However, if the server is exposing HTTP endpoint, we can connect to it over the internet.
 
 **Q: Who hosts the VMs?**
 
@@ -146,7 +146,7 @@ We always work closely with our customers in joint remediation to resolve any is
 
 **Q: Does this service support web, mobile, or desktop applications?**
 
-**A:** Currently, our focus is on desktop applications, however, we have plans to onboard web applications in the future, but we do not support mobile applications at this time.
+**A:** Currently, our focus is on desktop applications, however, we have plans to onboard web applications in the future, but we don't support mobile applications at this time.
 
 **Q: What is the difference between Test Base and SUVP?**
 
@@ -157,9 +157,9 @@ In addition to pre-release security updates testing, we support pre-release feat
 **Q: Is there a cost associated with the service?**
 
 **A:** The cost of the service depends on when you sign up and how much you use it. Here are the details:
-- If you signed up before November 15, 2023, you will receive 100 free hours (valued at $800) of Test Base usage under your subscription. These hours will expire in 6 months from the date of sign up. After the free hours are consumed or expired, you will be charged $8 per hour for your usage.
-- If you sign up on or after November 15, 2023, you will receive 100 free hours (valued at $800) of Test Base usage under your tenant. These hours will expire in 6 months from the date of sign up. After the free hours are consumed or expired, you will be charged $8 per hour for your usage.
-- Starting from November 15, 2023, if you are a Windows E3/E5 or Microsoft 365 E3/E5 customer, you will receive an additional 500 hours (equivalent to $4,000) of Test Base usage under your tenant. These hours do not have an expiration date and can be used anytime. Note: Do not disable the service principal "Test Base for M365 - Billing", otherwise you may lose the possibility of getting the additional hours.
+- If you signed up before November 15, 2023, you'll receive 100 free hours (valued at $800) of Test Base usage under your subscription. These hours will expire in 6 months from the date of sign up. After the free hours are consumed or expired, you'll be charged $8 per hour for your usage.
+- If you sign up on or after November 15, 2023, you'll receive 100 free hours (valued at $800) of Test Base usage under your tenant. These hours will expire in 6 months from the date of sign up. After the free hours are consumed or expired, you'll be charged $8 per hour for your usage.
+- Starting from November 15, 2023, if you are a Windows E3/E5 or Microsoft 365 E3/E5 customer, you'll receive an additional 500 hours (equivalent to $4,000) of Test Base usage under your tenant. These hours don't have an expiration date and can be used anytime. Note: Don't disable the service principal "Test Base for M365 - Billing", otherwise you may lose the possibility of getting the additional hours.
 
 **Q: How can I provide feedback about Test Base?**
 
