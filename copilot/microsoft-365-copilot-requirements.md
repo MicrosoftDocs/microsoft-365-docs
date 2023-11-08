@@ -65,9 +65,9 @@ To use Microsoft 365 Copilot with Microsoft Whiteboard, you must have Whiteboard
 
 ## Update channels
 
-Microsoft 365 Copilot will follow Microsoft 365 Apps' standard practice for deployment and updates, being available in all update channels, except for Semi-annual channel. Preview channels include Insiders, Current Channel - Preview. Production channels include Current Channel and then Monthly Enterprise Channel.
+Microsoft 365 Copilot will follow Microsoft 365 Apps' standard practice for deployment and updates, being available in all update channels, except for Semi-annual channel. Preview channels include Insiders, Current Channel - Preview and Beta Channel. Production channels include Current Channel and then Monthly Enterprise Channel.
 
-Once generally available on 11/1, Copilot will be in Current Channel, and starting December 12, on Monthly Enterprise Channel. As always, preview channels are a great option to validate the product before rolling out to the rest of organization. To learn more, see [Overview of update channels](/deployoffice/updates/overview-update-channels), and the [Microsoft 365 Insider channels](/deployoffice/insider/compare-channels).
+Once generally available on 11/1, Copilot will be in Current Channel, and starting December 12, on Monthly Enterprise Channel. As always, preview channels are a great option to validate the product before rolling out to the rest of organization. To learn more, see Overview of update channels, and the Microsoft 365 Insider channels. To learn more, see To learn more, see [Overview of update channels](/deployoffice/updates/overview-update-channels), and the [Microsoft 365 Insider channels](/deployoffice/insider/compare-channels).
 
 ## Network requirements
 
@@ -77,7 +77,7 @@ There are many Copilot experiences, including some core experiences like Excel, 
 
 ## License requirements
 
-Microsoft 365 Copilot users require a license for Microsoft 365 E3 or Microsoft 365 E5, and a license for Microsoft 365 Copilot. You can use the [Microsoft 365 Copilot setup guide](https://go.microsoft.com/fwlink/p/?linkid=2243702) in the Microsoft 365 admin center to assign the required licenses to users. For more information, see [Assign licenses to users in the Microsoft 365 admin center](/microsoft-365/admin/manage/assign-licenses-to-users).
+Microsoft 365 Copilot users require a license for Microsoft 365 E3 or Microsoft 365 E5, and a license for Microsoft 365 Copilot. You can use the [Microsoft 365 Copilot setup guide](https://setup.microsoft.com/microsoft-365/copilot-setup-guide) in the Microsoft 365 admin center to assign the required licenses to users. For more information, see [Assign licenses to users in the Microsoft 365 admin center](/microsoft-365/admin/manage/assign-licenses-to-users).
 
 ## Privacy settings for Microsoft 365 Apps for enterprise
 
