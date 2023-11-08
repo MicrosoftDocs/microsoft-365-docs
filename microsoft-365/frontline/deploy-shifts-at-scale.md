@@ -52,8 +52,7 @@ The settings you choose are applied to every team that you deploy Shifts to.
     Keep in mind that if you turn off this setting, frontline managers can still assign time off to employees.  
 3. Add time-off reasons.
 
-    Under **Time-off reasons**, select **Add**, and then for each time-off reason that you create: 
-
+    Under **Time-off reasons**, select **Add**, and then for each time-off reason that you create:
     - Give it a name. It can’t be longer than 40 characters.  
     - Choose an icon.
     - Enter a unique code. The code can be up to 100 alphanumeric characters long. For example, A01.  
@@ -61,6 +60,29 @@ The settings you choose are applied to every team that you deploy Shifts to.
     Make sure the time-off reasons reflect what’s supported across your frontline organization. Frontline managers use these time-off reasons when they assign time off to frontline workers. And, if you turned on **Time-off requests**, your frontline workers choose from these time-off reasons from when they request time off.  
 4. Under **Time clock**, turn on or turn off **Clock in/clock out**. When this setting is on, frontline workers can clock in and out of their shifts and record breaks, and frontline managers can export their team’s time report.  
 5. When you’re done choosing your settings, select **Next**.
+
+### Create schedule groups
+
+In this step, you identify the schedule owners in your organization and specify how schedule groups are created and managed across your frontline teams.
+
+In Shifts, schedule owners are frontline managers who create and manage schedules for their teams. Schedule groups represent groups of employees who have the same job type in the schedule???. You can allow schedule owners to create and manage schedule groups or you can do so centrally in the Teams admin center.  
+
+1. In the **Group ID** box, enter the group ID of the group that contains the schedule owners in your organization.  
+2. Choose one of the following options to define how schedule groups are managed:
+    - **Schedule groups are created and managed by schedule owners**
+    - **Schedule groups are created and managed in the Teams admin center**
+3. If you chose the option to create and manage schedule groups in the Teams admin center, select **Add** to add schedule groups.
+    For each schedule group that you create:
+    - Give it a name. It can’t be longer than 40??? characters.  
+    - Choose an icon.
+    - Enter a unique code. The code can be up to ??? alphanumeric characters long.
+4. When you're done, select **Next**.
+
+### Review and finish setup
+
+Review your settings. If you need to make changes, choose **Back**, and edit the settings that you want. When you're ready, select **Finish setup**.
+
+Setup can take ???. Refresh the Manage frontline apps page to get the latest status. The setup status in the table changes to **Completed** when setup is finished.  
 
 ## Deploy Shifts to your frontline teams
 
