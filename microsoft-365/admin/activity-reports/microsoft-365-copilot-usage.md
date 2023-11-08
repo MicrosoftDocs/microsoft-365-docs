@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 07/18/2023
 audience: Admin
 ms.topic: article
-ms.service: microsoft-365-business
+ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
 ms.collection: 
 - Tier2
@@ -41,19 +41,17 @@ You can use this report to see the usage of Microsoft 365 Copilot in your organi
 
 :::image type="content" alt-text="Screenshot showing Microsoft 365 Copilot usage summary information." source="../../media/copilot-usage-numbers.png":::
 
-**Enabled Users** shows you the number of users enabled to use Microsoft 365 Copilot for the time frame value.
+**Enabled Users** shows you the total number of unique users in your organization with Microsoft 365 Copilot licenses over the selected time period.
 
-**Active Users** shows you the number of users who performed an intentional activity, including have either tried a user-initiated Microsoft 365 Copilot feature or kept the content for Microsoft 365 Copilot initiated features, for the time frame value.
+**Active Users** shows you the total number of enabled users in your organization who performed a specific activity, including have either tried a user-initiated Microsoft 365 Copilot feature or kept the content for Microsoft 365 Copilot initiated features, in one or more Microsoft 365 apps over the selected time period.
 
-**Active users rate** shows you the proportion of enabled users who actively engaged with Microsoft 365 Copilot for the time frame value. The rate is calculated as the percentage of active users, divided by the number of enabled users.
+**Active users rate** shows you the number of active users in your organization, divided by the number of enabled users.
 
 You can see the following summary charts in this report as default view:
 
 :::image type="content" alt-text="Screenshot showing Microsoft 365 Copilot usage adoption chart." source="../../media/copilot-usage-adoption-chart.png":::
 
-**Enabled Users** shows you the number of users enabled to use Microsoft 365 Copilot for the time frame value.
-
-**Active Users** shows you the number of users who performed an intentional activity, including have either tried a user-initiated Microsoft 365 Copilot feature or kept the content for Microsoft 365 Copilot initiated features, for the time frame value.
+The definitions for Enabled Users and Active Users metrics are the same as provided earlier.
 
 >[!NOTE]
 > Teams Copilot usage does not include Microsoft 365 Chat usage, but Microsoft 365 Chat usage will be displayed in Microsoft 365 Copilot usage soon.
@@ -83,6 +81,8 @@ In Adoption section, you may see a recommendation card:
 To learn more about using organizational messages for Microsoft 365 Copilot, see [Microsoft 365 features adoption using organizational messages](microsoft-365-copilot-organizational-messages.md).
 
 You can also export the report data into an Excel .csv file by selecting the ellipses and then **Export** in the top-right corner.
+
+You can view a table list to show each Microsoft 365 Copilot enabled user’s last activity date among Microsoft 365 Copilot products.
 
 :::image type="content" alt-text="Screenshot showing the activity for the Microsoft 365 Copilot usage report." source="../../media/copilot-usage-last-activity.png" lightbox="../../media/copilot-usage-last-activity.png":::
 

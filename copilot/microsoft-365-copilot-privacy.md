@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 description: "Learn how Microsoft 365 Copilot uses data and how it stores and protects that data."
 hideEdit: true
-ms.date: 11/01/2023
+ms.date: 11/06/2023
 ---
 
 # Data, Privacy, and Security for Microsoft 365 Copilot
@@ -48,10 +48,12 @@ Microsoft 365 Copilot provides value by connecting LLMs to your organizational d
 
 Microsoft 365 Copilot only surfaces organizational data to which individual users have at least view permissions. It's important that you're using the permission models available in Microsoft 365 services, such as SharePoint, to help ensure the right users or groups have the right access to the right content within your organization.  
 
-When you input prompts using Microsoft 365 Copilot, the information contained within your prompts, the data they retrieve, and the generated responses remain within the Microsoft 365 service boundary, in keeping with our current privacy, security, and compliance commitments. Microsoft 365 Copilot use Azure OpenAI services for processing, not OpenAI’s publicly available services.
+When you input prompts using Microsoft 365 Copilot, the information contained within your prompts, the data they retrieve, and the generated responses remain within the Microsoft 365 service boundary, in keeping with our current privacy, security, and compliance commitments. Microsoft 365 Copilot uses Azure OpenAI services for processing, not OpenAI’s publicly available services.
+
+Abuse monitoring for Microsoft 365 Copilot occurs in real-time, without providing Microsoft any standing eyes-on or eyes-off access to customer data. While abuse moderation, which includes human review of content, is available in Azure OpenAI, Microsoft 365 Copilot services have opted out of it. Microsoft 365 data isn’t collected or stored by Azure OpenAI.
 
 > [!NOTE]
-> We may use customer feedback, which is optional, to improve Microsoft 365 Copilot, just like we use customer feedback to improve other Microsoft 365 services and Microsoft 365 apps. We don't use this feedback to train the foundation LLMs used by Microsoft 365 Copilot. Customers can manage feedback through admin controls. For more information, see [Manage Microsoft feedback for your organization](/microsoft-365/admin/manage/manage-feedback-ms-org).
+> We may use customer feedback, which is optional, to improve Microsoft 365 Copilot, just like we use customer feedback to improve other Microsoft 365 services and Microsoft 365 apps. We don't use this feedback to train the foundation LLMs used by Microsoft 365 Copilot. Customers can manage feedback through admin controls. For more information, see [Manage Microsoft feedback for your organization](/microsoft-365/admin/manage/manage-feedback-ms-org) and [Providing feedback about Microsoft 365 Copilot](https://support.microsoft.com/topic/c481c26a-e01a-4be3-bdd0-aee0b0b2a423).
 
 ### Microsoft 365 Copilot and public web content
 

@@ -515,6 +515,9 @@ Even if you don't customize quarantine notifications for different languages, se
 
  - **Send end-user spam notification every (days)**: Select the frequency for quarantine notifications. You can select **Within 4 hours**, **Daily**, or **Weekly**.
 
+   > [!TIP]
+   > If you select every four hours, and a message is quarantined _just after_ the last notification generation, the recipient will receive the quarantine notification _slightly more than_ four hours later.
+
 When you're finished in the **Quarantine notifications flyout**, select **Save**.
 
 ### Use PowerShell to configure global quarantine notification settings
