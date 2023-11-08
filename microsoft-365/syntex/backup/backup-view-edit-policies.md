@@ -49,12 +49,12 @@ To view and edit backup policies for OneDrive, follow these steps.
 
 4. Once you have done your changes, follow the prompts to update the policy.
 
-    ![Screenshot of the updated OneDrive accounts backup policy panel in the Microsoft 365 admin center.](../media/content-understanding/backup-policy-remove-account.png)
+    ![Screenshot of the updated OneDrive accounts backup policy panel in the Microsoft 365 admin center.](../media/content-understanding/backup-policy-updated-account.png)
 
 > [!NOTE]
 > Removing accounts from backup policy means no future backups will be taken for those removed accounts. Existing backups those accounts will not be deleted.
 
-### View and edit backup policies for SharePoint
+## View and edit backup policies for SharePoint
 
 You can edit the scope of SharePoint sites associated with a backup policy. As part of edit, you can either add new sites or remove sites from an existing backup policy. Removing sites from Microsoft 365 Backup doesn't mean existing backup for these removed sites will be deleted, rather it means future backups for these removed sites will not be taken.
 
