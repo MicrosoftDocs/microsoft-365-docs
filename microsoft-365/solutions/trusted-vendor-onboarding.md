@@ -24,7 +24,7 @@ description: Learn how to onboard trusted vendors to collaborate in Microsoft 36
 
 # Onboard trusted vendors to collaborate in Microsoft 365
 
-If your organization has an approval process for external vendors or other organizations, you can use features in Azure Active Directory and Teams to block access from people in unapproved organizations and add new organizations as they're approved.
+If your organization has an approval process for external vendors or other organizations, you can use features in Microsoft Entra ID and Teams to block access from people in unapproved organizations and add new organizations as they're approved.
 
 By using domain allowlists, you can block the domains of organizations that haven't been approved through your internal processes. This can help ensure that users in your organization to only collaborate with approved vendors.
 
@@ -32,13 +32,17 @@ This article describes the features you can use as part of your approval process
 
 If you haven't configured guest sharing for your organization, see [Collaborate with guests in a site](collaborate-in-site.md) or [Collaborate with guests in a team (IT Admins)](collaborate-as-team.md).
 
-#### SharePoint and OneDrive integration with Azure AD B2B
+<a name='sharepoint-and-onedrive-integration-with-azure-ad-b2b'></a>
 
-The procedures in this article assume that you've enabled [SharePoint and OneDrive integration with Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration). If you haven't enabled Azure AD B2B integration for SharePoint and OneDrive, Azure AD B2B domain allowlists and blocklists don't affect file and folder sharing. In this case, use [Restrict sharing of SharePoint and OneDrive content by domain](/sharepoint/restricted-domains-sharing).
+#### SharePoint and OneDrive integration with Microsoft Entra B2B
 
-## Allow the vendor's domain in Azure AD external collaboration settings
+The procedures in this article assume that you've enabled [SharePoint and OneDrive integration with Microsoft Entra B2B](/sharepoint/sharepoint-azureb2b-integration). If you haven't enabled Microsoft Entra B2B integration for SharePoint and OneDrive, Microsoft Entra B2B domain allowlists and blocklists don't affect file and folder sharing. In this case, use [Restrict sharing of SharePoint and OneDrive content by domain](/sharepoint/restricted-domains-sharing).
 
-With Azure AD external collaboration settings, you can allow or block invites to certain domains. By creating an allowlist, you allow guest invitations only to those domains and all others are blocked. You can use this to allow guest invitations to vendors that you've approved while blocking those to vendors you haven't.
+<a name='allow-the-vendors-domain-in-azure-ad-external-collaboration-settings'></a>
+
+## Allow the vendor's domain in Microsoft Entra external collaboration settings
+
+With Microsoft Entra external collaboration settings, you can allow or block invites to certain domains. By creating an allowlist, you allow guest invitations only to those domains and all others are blocked. You can use this to allow guest invitations to vendors that you've approved while blocking those to vendors you haven't.
 
 To allow sharing invitations only from specified domains
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as a Global administrator.
@@ -47,28 +51,30 @@ To allow sharing invitations only from specified domains
 1. Under **Collaboration restrictions**, select **Allow invitations only to the specified domains**, and then type the domains that you want to allow.
 1. Select **Save**.
 
-    ![Screenshot of collaboration restrictions settings in Azure Active Directory.](../media/azure-ad-allow-only-specified-domains.png)
+    ![Screenshot of collaboration restrictions settings in Microsoft Entra ID.](../media/azure-ad-allow-only-specified-domains.png)
 
-For more information about using allowlists or blocklists in Azure AD, see [Allow or block invitations to B2B users from specific organizations](/azure/active-dir.ectory/external-identities/allow-deny-list)
+For more information about using allowlists or blocklists in Microsoft Entra ID, see [Allow or block invitations to B2B users from specific organizations](/azure/active-dir.ectory/external-identities/allow-deny-list)
 
 ## Allow domains for other Microsoft 365 organizations
 
-If your approved vendor also uses Microsoft 365, there are additional settings in Azure AD and Teams that you can configure to manage these domains and create a more integrated experience for your users.
+If your approved vendor also uses Microsoft 365, there are additional settings in Microsoft Entra ID and Teams that you can configure to manage these domains and create a more integrated experience for your users.
 
-By adding the vendor organization to Azure AD cross-tenant access settings, you can specify:
+By adding the vendor organization to Microsoft Entra cross-tenant access settings, you can specify:
 
 - Which users in the vendor organization can be invited to your organization
 - Which users in the vendor organization can participate in shared channels in Microsoft Teams
 - Which applications those users have access to in your organization
-- Whether your conditional access policies will accept claims from other Azure AD organizations when users from the other organization access your resources.
+- Whether your conditional access policies will accept claims from other Microsoft Entra organizations when users from the other organization access your resources.
 
 By adding the vendor organization to the allowlist for Teams external access:
 
 - Users in your organization and the vendor organization can chat and meet without the vendor having to log in as a guest.
 
-#### Allow the vendor's domain in Azure AD cross-tenant access settings
+<a name='allow-the-vendors-domain-in-azure-ad-cross-tenant-access-settings'></a>
 
-To specify settings such as who can be invited from the vendor organization and what applications they can use, first add the organization in Azure AD cross-tenant access settings.
+#### Allow the vendor's domain in Microsoft Entra cross-tenant access settings
+
+To specify settings such as who can be invited from the vendor organization and what applications they can use, first add the organization in Microsoft Entra cross-tenant access settings.
 
 To add an organization
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as a Global administrator.
@@ -79,7 +85,7 @@ To add an organization
 1. On the **Add organization** pane, type the full domain name (or tenant ID) for the organization.
 1. Select the organization in the search results, and then select **Add**.
 
-    ![Screenshot of cross-tenant access settings in Azure AD with two external organizations configured.](../media/cross-tenant-access-settings.png)
+    ![Screenshot of cross-tenant access settings in Microsoft Entra ID with two external organizations configured.](../media/cross-tenant-access-settings.png)
 
 To specify who your users can invite as guests from the vendor organization:
 1. On the **Organizational settings** tab, select the **Inbound access** link for the organization you want to configure.
@@ -101,7 +107,7 @@ To specify which applications guests from the vendor organization can use:
 
 For more information about the options available in cross-tenant access settings, including accepting conditional access claims from other organizations, see [Configure cross-tenant access settings for B2B collaboration](/azure/active-directory/external-identities/cross-tenant-access-settings-b2b-collaboration).
 
-If you plan to use Teams shared channels with the vendor organization, both organizations must set up cross-tenant access settings for Azure AD B2B direct connect. For details, see [Collaborate with external participants in a shared channel](/microsoft-365/solutions/collaborate-teams-direct-connect).
+If you plan to use Teams shared channels with the vendor organization, both organizations must set up cross-tenant access settings for Microsoft Entra B2B direct connect. For details, see [Collaborate with external participants in a shared channel](/microsoft-365/solutions/collaborate-teams-direct-connect).
 
 #### Allow the vendor's domain in Teams external access
 
@@ -144,6 +150,6 @@ To prevent unauthenticated file and folder sharing, you must prevent the use of 
 
 [Use guest access and external access to collaborate with people outside your organization](/microsoftteams/communicate-with-users-from-other-organizations)
 
-[Azure Active Directory terms of use](/azure/active-directory/conditional-access/terms-of-use)
+[Microsoft Entra terms of use](/azure/active-directory/conditional-access/terms-of-use)
 
 [Allow only members in specific security groups to share SharePoint and OneDrive files and folders externally](/sharepoint/manage-security-groups)

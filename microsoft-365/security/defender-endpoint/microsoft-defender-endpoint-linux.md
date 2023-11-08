@@ -91,7 +91,7 @@ If you experience any installation failures, refer to [Troubleshooting installat
   - CentOS 6.7 or higher (Preview)
   - CentOS 7.2 or higher
   - Ubuntu 16.04 LTS or higher LTS
-  - Debian 9 or higher
+  - Debian 9 - 11
   - SUSE Linux Enterprise Server 12 or higher
   - Oracle Linux 7.2 or higher
   - Oracle Linux 8.x
@@ -111,7 +111,7 @@ If you experience any installation failures, refer to [Troubleshooting installat
     - For 6.7: 2.6.32-573.* (except 2.6.32-573.el6.x86_64)
     - For 6.8: 2.6.32-642.*
     - For 6.9: 2.6.32-696.* (except 2.6.32-696.el6.x86_64)
-    - For 6.10: 2.6.32.754.2.1.el6.x86_64 to 2.6.32-754.48.1:
+    - For 6.10: 
       - 2.6.32-754.10.1.el6.x86_64
       - 2.6.32-754.11.1.el6.x86_64
       - 2.6.32-754.12.1.el6.x86_64
@@ -162,26 +162,29 @@ If you experience any installation failures, refer to [Troubleshooting installat
     > [!NOTE]
     > Please make sure that you have free disk space in /var.
 
-- The solution currently provides real-time protection for the following file system types:
+- Below is the list of supported filesystems for RTP, Quick, Full and Custom Scan.
+  
+  |RTP, Quick, Full Scan| Custom Scan|
+  |---|---|
+  |btrfs|All filesystems supported for RTP, Quick, Full Scan|
+  |ecryptfs|Efs|
+  |ext2|S3fs|
+  |ext3|Blobfuse|
+  |ext4|Lustr|
+  |fuse|glustrefs|
+  |fuseblk|Afs|
+  |jfs|sshfs|
+  |nfs (v3 only)|cifs|
+  |overlay|smb|
+  |ramfs|gcsfuse|
+  |reiserfs|sysfs|
+  |tmpfs|
+  |udf|
+  |vfat|
+  |xfs|
 
-  - `btrfs`
-  - `ecryptfs`
-  - `ext2`
-  - `ext3`
-  - `ext4`
-  - `fuse`
-  - `fuseblk`
-  - `jfs`
-  - `nfs (v3 only)`
-  - `overlay`
-  - `ramfs`
-  - `reiserfs`
-  - `tmpfs`
-  - `udf`
-  - `vfat`
-  - `xfs`
 
-After you've enabled the service, you may need to configure your network or firewall to allow outbound connections between it and your endpoints.
+After you've enabled the service, you m need to configure your network or firewall to allow outbound connections between it and your endpoints.
 
 - Audit framework (`auditd`) must be enabled.
 
@@ -206,7 +209,7 @@ When adding exclusions to Microsoft Defender Antivirus, you should be mindful of
 
 ### Network connections
 
-The following downloadable spreadsheet lists the services and their associated URLs that your network must be able to connect to. You should ensure that there are no firewall or network filtering rules that would deny access to these URLs. If there are, you may need to create an *allow* rule specifically for them.
+The following downloadable spreadsheet lists the services and their associated URLs that your network must be able to connect to. You should ensure that there are no firewall or network filtering rules that would deny access to these URLs. If there are, you might need to create an *allow* rule specifically for them.
 
 |Spreadsheet of domains list| Description|
 |---|---|

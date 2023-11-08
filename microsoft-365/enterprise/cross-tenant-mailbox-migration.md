@@ -80,13 +80,13 @@ All users in both the source and target organizations must be licensed with the 
 
 ### Prepare the target (destination) tenant by creating the migration application and secret
 
-1. Sign in to your Azure AD portal (<https://portal.azure.com>) with your target tenant administrator credentials.
+1. Sign in to your Microsoft Entra admin center (<https://portal.azure.com>) with your target tenant administrator credentials.
 
    ![Azure Logon](../media/tenant-to-tenant-mailbox-move/74f26681e12df3308c7823ee7d527587.png)
 
-2. Under **Manage Azure Active Directory**, select **View**.
+2. Under **Manage Microsoft Entra ID**, select **View**.
 
-   ![Azure Active Directory Button](../media/tenant-to-tenant-mailbox-move/109ac3dfbac2403fb288f085767f393b.png)
+   ![Microsoft Entra Button](../media/tenant-to-tenant-mailbox-move/109ac3dfbac2403fb288f085767f393b.png)
 
 3. In the navigation pane, select **App registrations**.
 
@@ -94,13 +94,13 @@ All users in both the source and target organizations must be licensed with the 
 
    :::image type="content" alt-text="Screenshot of New Application UI." source="../media/tenant-to-tenant-mailbox-move/b36698df128e705eacff4bff7231056a.png":::
 
-5. On the **Register an application** page, under **Supported account types**, select **Accounts in any organizational directory (Any Azure AD directory - Multi-tenant)**. Then, under **Redirect URI (optional)**, select **Web**, and then type `https://office.com`. Then, select **Register**.
+5. On the **Register an application** page, under **Supported account types**, select **Accounts in any organizational directory (Any Microsoft Entra directory - Multi-tenant)**. Then, under **Redirect URI (optional)**, select **Web**, and then type `https://office.com`. Then, select **Register**.
 
    :::image type="content" alt-text="Screenshot of the form 'Register an application'." source="../media/tenant-to-tenant-mailbox-move/edcdf18b9f504c47284fe4afb982c433.png":::
 
    On the top-right corner of the page, see the notification dialog box that states the app was successfully created.
 
-6. Go back to the Home page, go to **Azure Active Directory**, and then select **App registrations**.
+6. Go back to the Home page, go to **Microsoft Entra ID**, and then select **App registrations**.
 
 7. Under **Owned applications**, find the app you created, and then select it.
 
@@ -139,7 +139,7 @@ Now that you've successfully created the migration application and secret, the n
 
 ### Grant consent to the application
 
-1. In the Azure Active Directory landing page, select **Enterprise applications** in the navigation pane; then find your migration app you created, select it, and then select **API Permissions**.
+1. In the Microsoft Entra ID landing page, select **Enterprise applications** in the navigation pane; then find your migration app you created, select it, and then select **API Permissions**.
 
 2. Select **Grant admin consent for [your tenant]**. A new browser window opens.
 
@@ -202,7 +202,7 @@ Now that you've successfully created the migration application and secret, the n
    > [!NOTE]
    > You'll need the application ID of the mailbox migration app you just created. You will need to replace `contoso.onmicrosoft.com` in the previous example with your source tenant's `onmicrosoft.com` URL. You'll also need to replace [application_id_of_the_app_you_just_created] with the application ID of the mailbox migration app you just created.
 
-2. Accept the application when the pop-up appears. You can also sign in to your Azure Active Directory portal and find the application under **Enterprise applications**.
+2. Accept the application when the pop-up appears. You can also sign in to your Microsoft Entra admin center and find the application under **Enterprise applications**.
 
 3. [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) on the source Exchange Online tenant.
 
@@ -253,7 +253,7 @@ For any mailbox moving from a source organization, you must provision a MailUser
       4. UserPrincipalName: UPN will align to the user's NEW identity or target company (for example, user@northwindtraders.onmicrosoft.com).
       5. Primary SMTPAddress: Primary SMTP address will align to the user's NEW company (for example, user@northwindtraders.com).
       6. TargetAddress/ExternalEmailAddress: MailUser will reference the user's current mailbox hosted in source tenant (for example user@contoso.onmicrosoft.com). When this value is being assigned, verify that you have/are also assigning PrimarySMTPAddress; else, this value will set the PrimarySMTPAddress, which will cause move failures.
-      7. You can't add legacy smtp proxy addresses from source mailbox to target MailUser. For example, you can't maintain contoso.com on the MEU in northwindtraders.onmicrosoft.com tenant objects. Domains are associated with one Azure AD or Exchange Online tenant only.
+      7. You can't add legacy smtp proxy addresses from source mailbox to target MailUser. For example, you can't maintain contoso.com on the MEU in northwindtraders.onmicrosoft.com tenant objects. Domains are associated with one Microsoft Entra ID or Exchange Online tenant only.
 
          Example **target** MailUser object:
 
@@ -622,11 +622,13 @@ These conversions happen automatically during the migration process. No manual s
 
 This license assignation can be done before the migration is complete, but you shouldn't assign a license prior to stamping the _ExchangeGUID_ attribute; else, the conversion of MailUser object to mailbox will fail and a new mailbox will be created instead. To mitigate this risk, it's best to wait until the migration is complete and assign licenses during the 30-day grace period.
 
-### Can I use Azure AD Connect to sync users to the new tenant if I'm keeping the on-premises Active Directory?
+<a name='can-i-use-azure-ad-connect-to-sync-users-to-the-new-tenant-if-im-keeping-the-on-premises-active-directory'></a>
 
-Yes. It's possible to have two instances of Azure AD Connect synchronize to different tenants. However, there are some things you need to be aware of:
+### Can I use Microsoft Entra Connect to sync users to the new tenant if I'm keeping the on-premises Active Directory?
 
-- Preprovisioning the user's accounts with the script provided in this article shouldn't be done. Instead, a selective OU sync of the users in scope for the migration can be performed to populate the target tenant. You'll receive a warning about the UPN not matching during Azure AD Connect configuration.
+Yes. It's possible to have two instances of Microsoft Entra Connect synchronize to different tenants. However, there are some things you need to be aware of:
+
+- Preprovisioning the user's accounts with the script provided in this article shouldn't be done. Instead, a selective OU sync of the users in scope for the migration can be performed to populate the target tenant. You'll receive a warning about the UPN not matching during Microsoft Entra Connect configuration.
 - Depending on your current state of hybrid Exchange, you need to verify that the on-premises directory objects have the required attributes (such as msExchMailboxGUID and proxyAddresses) populated correctly before attempting to sync to another tenant; else you'll run into issues with double mailboxes and migration failures.
 - You must take some extra steps to manage UPN transitioning, changing it on-premises once the migration has been completed for a user unless you're also moving the custom domain during a cut-over migration.
 
@@ -657,7 +659,7 @@ Mailbox signatures are not migrated cross tenant and must be recreated.
 
 - Cloud MailUsers with non-owned smtp proxyAddress block MRS moves. When creating target tenant MailUser objects, you must ensure that all SMTP proxy addresses belong to the target tenant organization. If an SMTP proxyAddress exists on the target mail user that doesn't belong to the local tenant, the conversion of the MailUser to a mailbox is prevented. This prevention is due to our assurance that mailbox objects can only send mail from domains for which the tenant is authoritative (domains claimed by the tenant).
 
-- If you synchronize users from on-premises using Azure AD Connect in the target tenant, then you can provision on-premises MailUser objects with ExternalEmailAddress pointing to the source tenant where the mailbox exists (LaraN@contoso.onmicrosoft.com), and you stamp the PrimarySMTPAddress as a domain that resides in the target tenant (Lara.Newton@northwindtraders.com). These values synchronize down to the tenant and an appropriate mail user is provisioned and is ready for migration. An example object is shown here.
+- If you synchronize users from on-premises using Microsoft Entra Connect in the target tenant, then you can provision on-premises MailUser objects with ExternalEmailAddress pointing to the source tenant where the mailbox exists (LaraN@contoso.onmicrosoft.com), and you stamp the PrimarySMTPAddress as a domain that resides in the target tenant (Lara.Newton@northwindtraders.com). These values synchronize down to the tenant and an appropriate mail user is provisioned and is ready for migration. An example object is shown here.
 
   ```PowerShell
   Get-MailUser LaraN | select ExternalEmailAddress, EmailAddresses
@@ -674,7 +676,7 @@ Mailbox signatures are not migrated cross tenant and must be recreated.
 
   MailUser objects are pointers to non-local mailboxes. In the case for cross-tenant mailbox migrations, we use MailUser objects to represent either the source mailbox (from the target organization's perspective) or target mailbox (from the source organization's perspective). The MailUsers will have an ExternalEmailAddress (targetAddress) that points to the smtp address of the actual mailbox (ProxyTest@northwindtraders.onmicrosoft.com) and primarySMTP address that represents the displayed SMTP address of the mailbox user in the directory. Some organizations choose to display the primary SMTP address as an external SMTP address, not as an address owned/verified by the local tenant (for example, as northwindtraders.com rather than as contoso.com). However, once an Exchange service plan object is applied to the MailUser via licensing operations, the primary SMTP address is modified to show as a domain verified by the local organization (contoso.com). There are two potential reasons:
 
-- When any Exchange service plan is applied to a MailUser, the Azure AD process starts to enforce proxy scrubbing to ensure that the local organization isn't able to send out mail, spoof, or mail from another tenant. Any SMTP address on a recipient object with these service plans will be removed if the address isn't verified by the local organization. As is the case in the example, the northwindtraders.com domain isn't verified by the contoso.onmicrosoft.com tenant; therefore, the scrubbing removes that northwindtraders.com domain. If you wish to persist these external domains on MailUser, either before or after the migration, you need to alter your migration processes to strip licenses after the move completes or before the move to ensure that the users have the expected external branding applied. You'll need to ensure that the mailbox object is properly licensed to not affect mail service. An example script to remove the service plans on a MailUser in the contoso.onmicrosoft.com tenant is shown here.
+- When any Exchange service plan is applied to a MailUser, the Microsoft Entra ID process starts to enforce proxy scrubbing to ensure that the local organization isn't able to send out mail, spoof, or mail from another tenant. Any SMTP address on a recipient object with these service plans will be removed if the address isn't verified by the local organization. As is the case in the example, the northwindtraders.com domain isn't verified by the contoso.onmicrosoft.com tenant; therefore, the scrubbing removes that northwindtraders.com domain. If you wish to persist these external domains on MailUser, either before or after the migration, you need to alter your migration processes to strip licenses after the move completes or before the move to ensure that the users have the expected external branding applied. You'll need to ensure that the mailbox object is properly licensed to not affect mail service. An example script to remove the service plans on a MailUser in the contoso.onmicrosoft.com tenant is shown here.
 
   ```PowerShell
   $LO = New-MsolLicenseOptions -AccountSkuId "contoso:ENTERPRISEPREMIUM" DisabledPlans "LOCKBOX_ENTERPRISE","EXCHANGE_S_ENTERPRISE","INFORMATION_BARRIERS","MIP_S_CLP2","MIP_S_CLP1","MYANALYTICS_P2","EXCHANGE_ANALYTICS","EQUIVIO_ANALYTICS","THREAT_INTELLIGENCE","PAM_ENTERPRISE","PREMIUM_ENCRYPTION"
