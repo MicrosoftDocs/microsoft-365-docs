@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 07/18/2023
 audience: Admin
 ms.topic: article
-ms.service: microsoft-365-business
+ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
 ms.collection: 
 - Tier2
