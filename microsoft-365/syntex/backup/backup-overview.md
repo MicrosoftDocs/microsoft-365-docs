@@ -77,18 +77,18 @@ Key architectural takeaways:
 
 ![Diagram showing the Microsoft 365 data trust boundaries.](../media/content-understanding/backup-boundaries-diagram.png)
 
-## General availability performance targets
+### General availability performance targets
 
 > [!IMPORTANT]
 > During the public preview period, performance and speed of web interfaces, initial configuration, and restores might be slower than expected as we scale up our infrastructure to remove undesirable latency from our system. The following performance targets are not guarantees during the preview and might change at general availability.
 
-### Backup policy performance
+#### Backup policy performance
 
 Creating a new protection policy will initiate the process of backing up selected SharePoint sites, OneDrive accounts, and Exchange mailboxes. Once you submit a request to activate a valid protection policy, it will take on average up to 60 minutes to process and another 60 minutes to create publish restore points.
 
 Restore points will be physically created in the service as soon as the policy is confirmed to be activated in the tool, even if those restore points take some additional time to become visible in the restore tool.
 
-### Restoration performance
+#### Restoration performance
 
 While full OneDrive account and SharePoint site at-scale performance will be good for all restore points, we recommend choosing restore points labeled “express restore points” as those will provide the fastest recovery time objective for SharePoint sites and OneDrive accounts, especially for smaller scale operations.
 
