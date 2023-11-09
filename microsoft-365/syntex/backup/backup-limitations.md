@@ -1,5 +1,5 @@
 ---
-title: Limitations in Microsoft 365 Backup
+title: Public preview limitations in Microsoft 365 Backup (Preview)
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -18,7 +18,79 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: Learn about limitations in Microsoft 365 Backup.
 ---
 
-# Limitations in Microsoft 365 Backup
+# Public preview limitations in Microsoft 365 Backup (Preview)
 
 > [!NOTE]
-> This article is currently in development.
+> This feature is currently in public preview and subject to change.
+
+## Feature limitations
+
+The constraints and limitations outlined in this article are temporary for the public preview and will be resolved either by general availability or shortly after, unless stated otherwise.
+
+### Performance
+
+Performance and speed of web interfaces, initial configuration, and restores may be slower than expected during the preview period as we scale up our infrastructure to remove undesirable latency from our system.
+
+### Backup configuration
+
+- You can create only one active backup policy per underlying service (that is, one for SharePoint sites, one for Exchange online users, and one for OneDrive accounts). You can add or remove as many artifacts (sites/user accounts) to or from the each of those active policy.
+
+- Once the sites or mailboxes have been added to a backup policy, it takes roughly 15 minutes per 1,000 sites or mailboxes for the policy to activate.
+
+- The retention period of Microsoft 365 Backup product is fixed at 1 year and cannot be configured by the admins.
+
+- The CSV upload feature for bulk addition of sites or user accounts in the backup policy creation workflow can accommodate a maximum of 5,000 entries per CSV file.
+
+- The rule-based feature for bulk addition of sites via site names or URL in the backup policy creation workflow can accommodate a maximum of 10 keywords only at a time where each keyword can have a minimum of 3 characters and maximum of 255 characters.
+
+- The rule-based feature for bulk addition of user accounts via Security Groups/Distribution Lists can accommodate a maximum of three groups only at a time. These rules will be static and applied one time only, that is, the Security Groups/Distribution Lists will be flattened at the time of adding to the backup configuration policy and will not be dynamically tracked or persisted in the system.
+
+- Multi-geo feature is not supported for SharePoint Online or OneDrive for Business. This might impact the visibility of sites in one geo if they have been configured in another geo.
+
+- Mailboxes and OneDrive accounts that are under legal or in-place holds cannot currently be backed up or restored.
+
+## Restore
+
+- SharePoint sites or OneDrive accounts that are currently in the first stage recycle bin must first be restored from the recycle bin before they can be rolled to a prior point in time via the Microsoft 365 Backup tool. The point in time restore via Microsoft 365 Backup will not work if the site or OneDrive is in the recycle bin.
+
+- SharePoint sites and OneDrive accounts being restored to a new URL will have a read-only lock. The global admin can still download documents or remove the read-only lock manually.
+
+- The restored SharePoint or OneDrive sites (in-place/same URL restore only) will have a short downtime during the restoration but will not be explicitly locked during this release.
+
+- For the new URL restore, the restored SharePoint or OneDrive sites (new URLs only) will not have the same permissions as original site. Only the global/SharePoint admin will have permission to the restored site. However, for the in-place or same URL restore, permissions will be reverted to the state of the original site at the time it’s being restored from. This is likely to continue to be true into general availability.
+
+- Mailbox draft items are not backed up or restorable.
+
+- Calendar item backup and restore is limited to modified items only and does not cover deleted items. This includes the following specific limitations:
+
+        - Restoring deleted calendar items with the ability to send updates post-restore is not yet supported.
+        - Replacing encrypted items with healthy items during a cross mailbox restore (mailboxes all belonging to the same user account) is not supported.
+        - Resolving orphaned conflict (in between ransomware and restore) is not supported.
+        - Restoring organizer copy does not automatically make attendee copies catch up, it only allows future updates by organizer to work for all users added on the calendar item.
+
+- Deleting the user account (for example, deleting the Azure Active Directory user) that owns the OneDrive site or Exchange mailbox renders the OneDrive site and Exchange mailbox as inactive or orphaned. The end-to-end workflow to restore such sites/mailboxes is not supported directly in the M365 Backup product. The Microsoft 365 Backup product ensures retention of the content. To restore inactive mailboxes or orphaned OneDrive accounts, refer to the following links for more details:
+
+    - OneDrive: [Fix site user ID mismatch in SharePoint or OneDrive](https://learn.microsoft.com/en-us/sharepoint/troubleshoot/sharing-and-permissions/fix-site-user-id-mismatch
+    - Exchange: [Recover an inactive mailbox](https://learn.microsoft.com/en-us/purview/recover-an-inactive-mailbox)
+
+- While restoring Exchange mailboxes at a granular level, the search feature provides several search parameters. These parameters allow you to enter up to a maximum of five keywords each. For example, the parameters “from” and “to” allow you to enter up to a maximum of five email addresses each.
+
+- Multi-geo feature is not supported for SPO/ODB services in this release. This might impact the restore of sites across different geos.
+
+- OneDrive accounts and SharePoint sites that have undergone the following types of changes will not be undoable via restore:  tenant rename, tenant move, and site URL change.  
+
+### Monitoring
+
+ETA for restore operations is not available in this release due to technical limitations.
+
+## Self-service scale limits
+
+During the public preview, we are enforcing self-service restore limits as described in the following table while we gain a better understanding of how customers are using the tool so that we can build in enhancements in the future to help users avoid mistaken restore actions.
+
+Limit Parameters	Warning	Limit Throttle*
+Number of artifacts being restored across all active restoration tasks per workload (at a time)	> 100	> 1000
+Number of parallel active restoration tasks per workload 	> 5	> 25
+Number of artifacts (active and completed) restored in a day per workload	NA	> 10000
+*Customer can call into support to lift the safety restrictions.
+
+
