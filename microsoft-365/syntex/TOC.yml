@@ -204,10 +204,10 @@
           href: backup/backup-view-edit-policies.md
         - name: Restore data 
           href: backup/backup-restore-data.md
+        - name: Preview limitations
+          href: backup/backup-limitations.md
         - name: Pricing calculator 
           href: backup/backup-pricing-calculator.md
-        - name: Limitations
-          href: backup/backup-limitations.md
         - name: Offboarding
           href: backup/backup-offboarding.md
 
