@@ -54,7 +54,7 @@ It's important to understand the following terms as you navigate hierarchies. Te
 1. Choose **Get started**. In the **Operational hierarchy** pane,
 1. If you haven't already created a hierarchy CSV, select **Download the CSV template** to start creating your hierarchy CSV.
 
-## Create your hierarchy
+## Create your operational hierarchy
 
 The schema that defines your hierarchy is based on a CSV file. The file must be in UTF-8 format. Each row in the CSV file corresponds to one node within the hierarchy of teams. Each row contains information that names the node within the hierarchy, links it to a team, and includes attributes that can be used to filter teams in apps that support it.
 
@@ -63,13 +63,13 @@ The schema that defines your hierarchy is based on a CSV file. The file must be 
 The CSV file must contain the following three columns, in the following order, starting at the first column.
 
 > [!IMPORTANT]
-> If you already [deployed frontline dynamic teams at scale](deploy-dynamic-teams-at-scale.md), all the DisplayNames and TeamIds of your frontline teams will be pre-populated in the CSV template. If you haven't deployed teams at scale, you will download an empty CSV template where the following columns will show up, but you will have to add your teams and teamIds manually into the CSV.
+> If you created your frontline teams through the [deploy frontline dynamic teams at scale](deploy-dynamic-teams-at-scale.md) experience, the DisplayName and TeamIds values of your frontline teams are pre-populated in the CSV template. Otherwise, use the CSV template to add your team names and team IDs to the following columns in the template.
 
 | Column name   | Required | Description   |
 ----------------|----------|---------------|
 | DisplayName    | Yes      | This field is the name of the node. The name can be up to 100 characters long and contain only the characters A-Z, a-z, and 0-9. Node names must be unique.|
 | ParentName    | Yes       | This field is the name of the parent node. The value you specify here must match the value in the **DisplayName** field of the parent node exactly. If you want to add more than one parent node, separate each parent node name with a semicolon (;). You can add up to 25 parent nodes, and each parent node name can be up to 2500 characters long. A node can have multiple parent nodes only if the parent nodes are root nodes. <br><br>**IMPORTANT** Be careful not to create a loop where a parent higher up in the hierarchy references a child node lower in the hierarchy. This structure isn't supported. |
-| TeamId        | Yes, if the team is a leaf node.| This field contains the ID of the team you want to link a node to. Each node must refer to a unique team, so each TeamId value can appear only once in the hierarchy file. To get the ID of a team you want to link a node to, run the following PowerShell command: `Get-Team | Export-Csv TeamList.csv`. This command lists the teams in your organization and includes the display name and ID for each team. Find the name of the team you want to link to, and then copy the ID to this field.|
+| TeamId        | Yes, if the team is a leaf node.| This field contains the ID of the team you want to link a node to. Each node must refer to a unique team, so each TeamId value can appear only once in the hierarchy file. To get the ID of a team you want to link a node to, run the following PowerShell command: `Get-Team | Export-Csv TeamList.csv`. This command lists the teams in your organization and includes the name and ID of each team. Find the name of the team you want to link to, and then copy the ID to this field.|
 
 ### Add attribute columns
 
@@ -81,6 +81,12 @@ There are two ways to define your attributes, depending on whether values for th
 |---|---------|---------|
 |If the values for an attribute are mutually exclusive, the column name you specify becomes the name of the attribute.|Each row can contain one value for that attribute, and each attribute column can have up to 50 unique values. Each value can be up to 100 characters long.|You want users to be able to filter stores by layout. The values for this attribute are mutually exclusive because a store can have only one layout. To add an attribute to filter stores by layout, add a column named Store layout. In this example, values for the Store layout attribute are Compact, Standard, and Large.
 |If you need to indicate multiple values for an attribute and the values aren't mutually exclusive, use the **AttributeName:UniqueValue** format for the column names.<br><br>**IMPORTANT** Make sure you use the English-only colon (:) as unicode isn't supported as an attribute column delimiter.|The text string before the colon (:) becomes the name of the attribute. All columns that contain the same text string before the colons (:) are grouped together into a section in the filtering menu. Each of the strings after the colon become the values for that section.<br><br>Each row can have a value of 0 (zero) or 1 for that attribute. A value of 0 means that the attribute doesn't apply to the node and a value of 1 means that the attribute applies to that node.|You want users to be able to filter stores by department. A store can have multiple departments and so the values for this attribute aren't mutually exclusive.<br><br>In this example, we add Departments:Clothing, Departments:Electronics, Departments:Foods, Departments:Home and Garden, Departments:Sporting goods as attribute columns. Departments becomes the attribute name and users can filter by the Clothing, Electronics, Foods, Home and Garden, and Sporting goods departments.|
+
+When you add an attribute column, keep the following things in mind:
+
+- The column name you specify or the column name that you specify before the colon (:) becomes the name of the attribute. This value will be displayed in the Teams apps that use the hierarchy.
+- You can have up to 100 attribute columns in your hierarchy.
+- The column name can be up to 100 characters long and contain only the characters A-Z, a-z, and 0-9, and spaces. Column names must be unique.
 
 ## Manage your operational hierarchy
 
