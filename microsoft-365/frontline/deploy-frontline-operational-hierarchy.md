@@ -52,7 +52,7 @@ It's important to understand the following terms as you navigate hierarchies. Te
 
 1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com/), choose **Teams** > **Manage frontline teams**.
 1. Go to the **Operational hierarchy** tab.
-1. Choose **Get started**. In **Operational hierarchy** pane, you can upload your hierarchy or download a template to create one.
+1. Choose **Get started**. In the **Operational hierarchy** opens. From here, you can upload your hierarchy CSV file or download a template to create one.
 1. If you haven't already created a hierarchy CSV file, select **Download the CSV template** to start creating it.
 
 ## Create your operational hierarchy
@@ -99,6 +99,8 @@ When you add an attribute column, keep the following things in mind:
     When setup is completed, **Status** in the table changes to **Success**.
 
 ## Manage your operational hierarchy
+
+1. To view your last sucessfully uploaded file, 
 
 ## Troubleshoot errors
 
