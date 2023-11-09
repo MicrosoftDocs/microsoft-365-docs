@@ -10,6 +10,7 @@ ms.service: microsoft-365-frontline
 search.appverid: MET150
 description: Learn how to set up and deploy your frontline operational hierarchy to map your organization's structure of frontline teams and locations to a hierarchy in the Teams admin center.
 ms.localizationpriority: high
+ROBOTS: NOINDEX, NOFOLLOW 
 ms.collection: 
   - M365-collaboration
   - m365-frontline
@@ -51,8 +52,8 @@ It's important to understand the following terms as you navigate hierarchies. Te
 
 1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com/), choose **Teams** > **Manage frontline teams**.
 1. Go to the **Operational hierarchy** tab.
-1. Choose **Get started**. In the **Operational hierarchy** pane,
-1. If you haven't already created a hierarchy CSV, select **Download the CSV template** to start creating your hierarchy CSV.
+1. Choose **Get started**. In **Operational hierarchy** pane, you can upload your hierarchy or download a template to create one.
+1. If you haven't already created a hierarchy CSV file, select **Download the CSV template** to start creating it.
 
 ## Create your operational hierarchy
 
@@ -63,13 +64,13 @@ The schema that defines your hierarchy is based on a CSV file. The file must be 
 The CSV file must contain the following three columns, in the following order, starting at the first column.
 
 > [!IMPORTANT]
-> If you created your frontline teams through the [deploy frontline dynamic teams at scale](deploy-dynamic-teams-at-scale.md) experience, the DisplayName and TeamIds values of your frontline teams are pre-populated in the CSV template. Otherwise, use the CSV template to add your team names and team IDs to the following columns in the template.
+> If you created your frontline teams through the [deploy frontline dynamic teams at scale](deploy-dynamic-teams-at-scale.md) experience, the DisplayName and TeamId values of your frontline teams are pre-populated in the CSV template. Otherwise, you'll need to manually add your team names and team IDs to these columns in the template.
 
 | Column name   | Required | Description   |
 ----------------|----------|---------------|
 | DisplayName    | Yes      | This field is the name of the node. The name can be up to 100 characters long and contain only the characters A-Z, a-z, and 0-9. Node names must be unique.|
 | ParentName    | Yes       | This field is the name of the parent node. The value you specify here must match the value in the **DisplayName** field of the parent node exactly. If you want to add more than one parent node, separate each parent node name with a semicolon (;). You can add up to 25 parent nodes, and each parent node name can be up to 2500 characters long. A node can have multiple parent nodes only if the parent nodes are root nodes. <br><br>**IMPORTANT** Be careful not to create a loop where a parent higher up in the hierarchy references a child node lower in the hierarchy. This structure isn't supported. |
-| TeamId        | Yes, if the team is a leaf node.| This field contains the ID of the team you want to link a node to. Each node must refer to a unique team, so each TeamId value can appear only once in the hierarchy file. To get the ID of a team you want to link a node to, run the following PowerShell command: `Get-Team | Export-Csv TeamList.csv`. This command lists the teams in your organization and includes the name and ID of each team. Find the name of the team you want to link to, and then copy the ID to this field.|
+| TeamId        | Yes, if the team is a leaf node.| This field contains the ID of the team you want to link a node to. Each node must refer to a unique team, so each TeamId value can appear only one time in the hierarchy file. <br><br>To get the ID of a team you want to link a node to, run the following PowerShell command: `Get-Team | Export-Csv TeamList.csv`. This command lists the teams in your organization and includes the name and ID of each team. Find the name of the team you want to link to, and then copy the ID to this field.|
 
 ### Add attribute columns
 
@@ -87,6 +88,15 @@ When you add an attribute column, keep the following things in mind:
 - The column name you specify or the column name that you specify before the colon (:) becomes the name of the attribute. This value will be displayed in the Teams apps that use the hierarchy.
 - You can have up to 100 attribute columns in your hierarchy.
 - The column name can be up to 100 characters long and contain only the characters A-Z, a-z, and 0-9, and spaces. Column names must be unique.
+
+## Upload your operational hierarchy
+
+1. In the **Operational hierarchy** pane, choose **Select a file**, select your hierarchy CSV file, and then choose **Upload**. The maximum file size is 1 MB.
+
+    Depending on the size of your file, setup might take a few minutes.
+2. Refresh the Manage frontline apps page to check the latest status of your hierarchy setup. Make sure you’re on the **Operational hierarchy** tab after you refresh the page.
+
+    When setup is completed, **Status** in the table changes to **Success**.
 
 ## Manage your operational hierarchy
 
