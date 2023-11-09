@@ -44,7 +44,7 @@ It's important to understand the following terms as you navigate hierarchies. Te
 - **Parent nodes** and **child nodes** are terms that represent a relationship between two connected nodes. In the example, the Boston store is a child node of Northeast zone.
 - A node with no children is called a **leaf node**. They are at the bottom of a hierarchy.
 
-## Example hierarchy
+### Example hierarchy
 
 :::image type="content" source="media/frontline-operational-hierarchy-example.png" alt-text="Example of a frontline operational hierarchy":::
 
@@ -81,7 +81,7 @@ There are two ways to define your attributes, depending on whether values for th
 |Ways to add attributes|Description |Example  |
 |---|---------|---------|
 |If the values for an attribute are mutually exclusive, the column name you specify becomes the name of the attribute.|Each row can contain one value for that attribute, and each attribute column can have up to 50 unique values. Each value can be up to 100 characters long.|You want users to be able to filter stores by layout. The values for this attribute are mutually exclusive because a store can have only one layout. To add an attribute to filter stores by layout, add a column named Store layout. In this example, values for the Store layout attribute are Compact, Standard, and Large.
-|If you need to indicate multiple values for an attribute and the values aren't mutually exclusive, use the **AttributeName:UniqueValue** format for the column names.<br><br>**IMPORTANT** Make sure you use the English-only colon (:) as unicode isn't supported as an attribute column delimiter.|The text string before the colon (:) becomes the name of the attribute. All columns that contain the same text string before the colons (:) are grouped together into a section in the filtering menu. Each of the strings after the colon become the values for that section.<br><br>Each row can have a value of 0 (zero) or 1 for that attribute. A value of 0 means that the attribute doesn't apply to the node and a value of 1 means that the attribute applies to that node.|You want users to be able to filter stores by department. A store can have multiple departments and so the values for this attribute aren't mutually exclusive.<br><br>In this example, we add Departments:Clothing, Departments:Electronics, Departments:Foods, Departments:Home and Garden, Departments:Sporting goods as attribute columns. Departments becomes the attribute name and users can filter by the Clothing, Electronics, Foods, Home and Garden, and Sporting goods departments.|
+|If you need to indicate multiple values for an attribute and the values aren't mutually exclusive, use the **AttributeName:UniqueValue** format for the column names.<br><br>**IMPORTANT** Make sure you use the English-only colon (:) as unicode isn't supported as an attribute column delimiter.|The text string before the colon (:) becomes the name of the attribute. All columns that contain the same text string before the colons (:) are grouped together into a section in the filtering menu. Each of the strings after the colon become the values for that section.<br><br>Each row can have a value of 0 (zero) or 1 for that attribute. A value of 0 means that the attribute doesn't apply to the node and a value of 1 means that the attribute applies to that node.|You want users to be able to filter stores by department. A store can have multiple departments and so the values for this attribute aren't mutually exclusive.<br><br>In this example, we add Departments:Clothing, Departments:Electronics, Departments:Foods, Departments:Home and Garden, Departments:Sporting goods as attribute columns. <br><br>Departments becomes the attribute name and users can filter by the Clothing, Electronics, Foods, Home and Garden, and Sporting goods departments.|
 
 When you add an attribute column, keep the following things in mind:
 
@@ -96,19 +96,19 @@ When you add an attribute column, keep the following things in mind:
     Depending on the size of your file, setup might take a few minutes.
 1. Refresh the Manage frontline teams page to check the latest status of your hierarchy setup. Make sure you’re on the **Operational hierarchy** tab after you refresh the page.
 
-    When setup is completed, **Status** in the table changes to **Success**.
+    When setup is completed, the status in the table is updated to **Success**.
 
 ## Manage your operational hierarchy
 
 1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com/), choose **Teams** > **Manage frontline teams**.
 1. Go to the **Operational hierarchy** tab.
-1. To download and view your last sucessfully uploaded hierarchy CSV file, in the **File last uploaded** column of the table, choose **Download**.
+1. To download and view your last sucessfully uploaded hierarchy CSV file, under **File last uploaded** in the table, choose **Download**.
 1. To make changes to your hierarchy, select **Operational hierarchy** in the table. The **Operational hierarchy** pane opens, and from here, you can:
     -  Download your last uploaded hierarchy CSV file.
     -  Start fresh and download the template again to create a new hierarchy CSV file.
 
-    > [!NOTE]
-    > If you created more frontline teams through the [deploy frontline dynamic teams at scale](deploy-dynamic-teams-at-scale.md) experience since the last time you set up your hierarchy, the DisplayName and TeamId values of those frontline teams are added to the CSV template.
+        > [!NOTE]
+        > If you created more frontline teams through the [deploy frontline dynamic teams at scale](deploy-dynamic-teams-at-scale.md) experience since the last time you set up your hierarchy, the DisplayName and TeamId values of those frontline teams are added to the CSV template.
 1. When you're ready, [upload](#upload-your-operational-hierarchy) your hierarchy CSV file.
  <!--1. When you're ready, choose **Select a file**, select your hierarchy CSV file, and then choose **Upload**.-->
 
@@ -119,6 +119,11 @@ When you add an attribute column, keep the following things in mind:
 
 ## Troubleshoot errors
 
+If an error occurred during setup, the status in the table shows as **Error** after you refresh the Manage frontline teams page.
+
+Choose **View details**, and then in the **Error details** pane, select **Download error CSV**. 
+
+The CSV file lists the errors, along with details that include the row and column in which the error occurred. Use this information to make the necessary changes to resolve the errors.
 
 ## Delete your operational hierarchy
 
