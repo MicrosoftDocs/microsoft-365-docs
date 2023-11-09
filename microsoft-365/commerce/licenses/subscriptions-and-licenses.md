@@ -23,7 +23,7 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: "Learn the difference between subscriptions and licenses, who can assign licenses, and what happens when you assign a license in  Microsoft 365 for business."
-ms.date: 05/12/2022
+ms.date: 10/11/2023
 ---
 
 # Understand subscriptions and licenses in Microsoft 365 for business

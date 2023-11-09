@@ -23,7 +23,7 @@ metadata:
   description: "For Managed Service Providers (MSPs) using Microsoft 365 Lighthouse, get answers to frequently asked questions (FAQs) about Microsoft 365 Lighthouse."
 title: Microsoft 365 Lighthouse frequently asked questions (FAQs)
 summary: |
-  Last updated September 19, 2023. This article contains answers to frequently asked questions (FAQs) about Microsoft 365 Lighthouse.
+  Last updated November 8, 2023. This article contains answers to frequently asked questions (FAQs) about Microsoft 365 Lighthouse.
   
   If you can't find an answer to your question, let us know by leaving a comment and we'll add it to this article.
   
@@ -202,29 +202,29 @@ sections:
         answer: |
           Tasks are **Not compliant** if there are one or more users for which one or more settings in the assigned configuration are either **Missing** or **Not compliant**.
 
-          To investigate and resolve a **Not compliant** deployment task:
+          To investigate and resolve a deployment task that's **Not compliant**:
           
           1. Open the customer tenant's deployment plan, and then select the task you want to investigate to open the task details pane.
-          2. Select **User progress** to see which users have a status of **Not compliant** or **Not licensed**. To resolve **Not licensed** users, either assign them the required license or exclude them from the assignment of the task.
-          3. If there are any users that are **Not compliant**, select **Detection history**, and then select the most recent scan of the tenant to view the tenant configuration.
+          2. Select **User progress** to see which users have a status of **Not compliant** or **Not licensed**. To resolve users who are **Not licensed**, either assign them the required license or exclude them from the assignment of the task.
+          3. If there are any users who are **Not compliant**, select **Detection history**, and then select the most recent scan of the tenant to view the tenant configuration.
 
               The tenant configuration will identify which settings within which policy for which users are either **Missing** or **Not compliant**.
 
           4. Do one of the following:
-              - To resolve **Missing** settings, add the missing settings to the configuration.
-              - To resolve **Not compliant** settings, update the value of the applicable settings to match the value in the deployment task, and then select **Run detection** from the task details pane.
+              - To resolve settings that are **Missing**, add the missing settings to the configuration.
+              - To resolve settings that are **Not compliant**, update the value of the applicable settings to match the value in the deployment task, and then select **Run detection** from the task details pane.
 
-      - question: Why do one or more deployment tasks have a status of "Not complete"?
+      - question: Why do one or more deployment plans have a status of "Not complete"?
         answer: |
-          Deployment plans are **Not complete** if there are one or more tasks that are either **Not licensed** or **Not compliant**. 
+          Deployment plans are **Not complete** if there are one or more tasks that are **Not licensed** or **Not compliant**. 
           
-          To investigate and resolve a **Not complete** deployment plan:
+          To investigate and resolve a deployment plan that's **Not complete**:
         
           1. Open the customer tenant's deployment plan to view the status of the assigned deployment tasks.
 
           2. Review each deployment task that has a status of **Not licensed** or **Not compliant**, and then do one of the following:
-              - To resolve **Not licensed** deployment tasks, either assign the required license to each of the targeted users or dismiss the task from the deployment plan.
-              - To resolve **Not compliant** deployment tasks, either complete the deployment of the task or dismiss the task from the deployment plan.
+              - To resolve deployment tasks that are **Not licensed**, either assign the required license to each of the targeted users or dismiss the task from the deployment plan.
+              - To resolve deployment tasks that are **Not compliant**, either complete the deployment of the task or dismiss the task from the deployment plan.
 
       - question: Why is Lighthouse still reporting licenses as being required when I've already assigned them to the required users in the Microsoft 365 admin center?
         answer: |
