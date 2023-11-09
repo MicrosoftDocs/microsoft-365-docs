@@ -29,11 +29,11 @@ Microsoft 365 Backup is currently in public preview and will be rolling out to t
 
 During the public preview period, performance and speed of web interfaces, initial configuration, and restores might be slower than expected as we scale up our infrastructure to remove undesirable latency from our system.
 
-## First-party and third-party offerings
+## Microsoft and partner offerings
 
-This documentation outlines the first-party Microsoft 365 Backup offering. We're partnering with many independent software vendors (ISVs) to provide differentiated versions of their applications integrated with the Microsoft 365 Backup Storage platform—all providing the same underlying performance value proposition for your Microsoft 365 data.
+This documentation outlines the Microsoft 365 Backup offering for Microsoft. We're partnering with many independent software vendors (ISVs) to provide differentiated versions of their applications integrated with the Microsoft 365 Backup Storage platform—all providing the same underlying performance value proposition for your Microsoft 365 data.
 
-In the case of a third-party application, operation of the Microsoft 365 Backup tool will be managed and paid for entirely through the third party. Those applications will have the ability to provide a single pane of glass for all of your data estates that require backups, and they might provide additional enhanced experiences.
+In the case of a ISV application, operation of the Microsoft 365 Backup tool will be managed and paid for entirely through the ISV. Those applications will have the ability to provide a single pane of glass for all of your data estates that require backups, and they might provide additional enhanced experiences.
 
 ## Scenarios and value proposition
 
@@ -75,7 +75,7 @@ Key architectural takeaways:
 
 - OneDrive, SharePoint, and Exchange have multiple physically redundant copies of your data to protect against physical disasters.
 
-![Diagram showing the Microsoft 365 data trust boundaries.](../../media/content-understanding/backup-boundaries-diagram.png)
+    ![Diagram showing the Microsoft 365 data trust boundaries.](../../media/content-understanding/backup-boundaries-diagram.png)
 
 ### General availability performance targets
 
