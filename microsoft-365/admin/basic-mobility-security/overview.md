@@ -8,9 +8,7 @@ manager: scotv
 ms.date: 10/25/2023
 audience: Admin
 ms.topic: article
-ms.service: 
-- microsoft-365-business
-- basic-mobility-security
+ms.service: microsoft-365-business
 ms.localizationpriority: medium
 ms.collection: 
 - Tier3
@@ -19,6 +17,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+- basic-mobility-security
 ms.custom:
 - VSBFY23
 - AdminSurgePortfolio
