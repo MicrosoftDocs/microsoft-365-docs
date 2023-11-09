@@ -42,18 +42,20 @@ There are two types of message extensions (ME):
 
 Currently, Copilot can use search-based message extensions as plugins, but only those that meet high quality standards and have been validated. Not all search-based message extensions qualify as plugins for Copilot.
 
-When Copilot extensibility is enabled, users can see an 3P plugins in Copilot that allows them to access the plugin for Copilot. The plugin hub Copilot experience shows the list of plugins that are available and deployed for the user. Users can toggle it on or off to restrict access of Copilot to any specific plugin during the interaction. Users can also add or remove plugins in their Copilot experience by right-clicking on the plugin and selecting the appropriate option. Users can only access the plugins that are allowed by the admin and that they have installed or been assigned to.
+When Copilot extensibility is enabled, users can see 3P plugins in Copilot that allows them to access the plugin for Copilot. The plugin hub Copilot experience shows the list of plugins that are available and deployed for the user. Users can toggle it on or off to restrict access of Copilot to any specific plugin during the interaction. Users can also add or remove plugins in their Copilot experience by right-clicking on the plugin and selecting the appropriate option. Users can only access the plugins that are allowed by the admin and that they have installed or been assigned to.
 
 ## Manage plugins for Copilot in the Microsoft 365 admin center
 
 Admins can manage plugins for Copilot as apps in the Integrated apps section of the Microsoft 365 admin center, where they can see the list of available, deployed, or blocked apps for their organization. They will be able to:
 
-- Enable/disable CoPilot extensibility for the whole organization through Microsoft 365 admin center settings.
+- Enable/disable Copilot extensibility for the whole organization through Microsoft 365 admin center settings.
 - Make available an app with plugins for Copilot to specific users or groups.
 - Deploy or remove apps with plugins for Copilot for the whole organization or specific users or groups.
 - Block or unblock apps with plugins for Copilot for the whole organization.
 
 Admins can view all apps that have Copilot support from the list of available, deployed, or blocked apps on the Integrated apps page by using the filter option of **Microsoft 365 Copilot support** and setting it to **Yes**.
+
+You can also check if a specific app has Copilot support by selecting it from apps list and checking if the app properties contains a tag stating **Microsoft 365 Copilot plug in is disabled** or **Microsoft 365 Copilot plug in is enabled**.  
 
 ## Enable or disable Copilot extensibility
 
