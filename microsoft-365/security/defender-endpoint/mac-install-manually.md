@@ -60,7 +60,7 @@ Download the installation and onboarding packages from Microsoft 365 Defender po
     - Type *cd Downloads* and press **Enter**.
     - Type *ls* and press **Enter**.
      :::image type="content" source="images/Terminal-image-step5.png" alt-text="Screenshot that dispalys the two download files.":::
-6. Copy the *wdav.pkg* and *MicrosoftDefenderATPOnboardingMacOs.sh* to the device where you want to deploy the Microsoft Defender for Endpoint on MacOS.
+6. Copy the *wdav.pkg* and *MicrosoftDefenderATPOnboardingMacOs.sh* to the device where you want to deploy the Microsoft Defender for Endpoint on macOS.
 
 ## Application installation (macOS 11 and newer versions)
 
@@ -97,7 +97,7 @@ To complete this process, you must have admin privileges on the device.
 
 9. Click **Install Software**.
 
-3. At the end of the installation process, for MacOS Big Sur (11.0) or latest version, you'll be prompted to approve the system extensions used by the product. Select **Open Security Preferences**.
+3. At the end of the installation process, for macOS Big Sur (11.0) or latest version, you'll be prompted to approve the system extensions used by the product. Select **Open Security Preferences**.
 
    :::image type="content" source="images/monterey-install-2.png" alt-text="The system extension approval" lightbox="images/monterey-install-2.png":::
 
@@ -147,15 +147,19 @@ To grant full disk access:
 
 ## Onboarding Package
 
-1. Copy wdav.pkg and MicrosoftDefenderATPOnboardingMacOs.sh to the device where you deploy Microsoft Defender for Endpoint on macOS.
+Once you have installed the MDE on macOS client, you must now onboard the package, which registers to your Microsoft Defender for Endpoint tenant and licenses it.
 
-    The client device isn't associated with org_id. Note that the *org_id* attribute is blank.
+1. Verify if MDE on macOS has already been onboarded.
+
+   Copy *wdav.pkg* and *MicrosoftDefenderATPOnboardingMacOs.sh* to the device where you have deployed Microsoft Defender for Endpoint on macOS.
+
+    The client device isn't associated with *org_id*. Note that the *org_id* attribute is blank.
 
     ```bash
     mdatp health --field org_id
     ```
 
-2. Run the Bash script to install the configuration file:
+2. Run the Bash script to install the onboarding package:
 
     ```bash
     Sudo bash -x MicrosoftDefenderATPOnboardingMacOs.sh
@@ -172,46 +176,57 @@ To grant full disk access:
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/mdatp-icon-bar.png" alt-text="The Microsoft Defender icon in status bar" lightbox="images/mdatp-icon-bar.png":::
 
+   You can [troubleshoot license issues for Microsoft Defender for Endpoint on macOS](mac-support-license.md).
 
-## Run an AV detection test to verify the device's onboarding and reporting to the service
+4. Run the connectivity test.
 
-    1. Ensure that real-time protection is enabled (denoted by a result of 1 from running the following command):
+   ```bash
+   mdatp connectivity test
+   ```
 
-        ```bash
-        mdatp health --field real_time_protection_enabled
-        ```
+   You can [troubleshoot cloud connectivity issues for Microsoft Defender for Endpoint on macOS](troubleshoot-cloud-connect-mdemac.md).
 
-    1. Open a Terminal window. Copy and execute the following command:
+## AV detection test for verifying device's onboarding and reporting services
 
-        ```bash
-        curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
-        ```
+   Run an AV detection test to verify that the device is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded device:
 
-    1. The file should have been quarantined by Defender for Endpoint on Mac. Use the following command to list all the detected threats:
+1. Ensure that real-time protection is enabled (denoted by a result of 1 from running the following command):
 
-        ```bash
-        mdatp threat list
-        ```
+```bash
+mdatp health --field real_time_protection_enabled
+```
 
-## Run an EDR detection test to verify the device's onboarding and reporting to the service
+2. Open a Terminal window. Copy and execute the following command:
 
-   1. In your browser such as Microsoft Edge for Mac or Safari.
+```bash
+curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
+```
 
-   1. Download MDATP MacOS DIY.zip from https://aka.ms/mdatpmacosdiy and extract.
+3. The file should have been quarantined by Defender for Endpoint on Mac. Use the following command to list all the detected threats:
 
-      You may be prompted:
+```bash
+mdatp threat list
+```
+
+## EDR detection test for verifying device's onboarding and reporting services
+
+Run an EDR detection test to verify that the device is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded device:
+
+1. In your browser such as Microsoft Edge for Mac or Safari, download MDATP MacOS DIY.zip from [https://aka.ms/mdatpmacosdiy](https://aka.ms/mdatpmacosdiy)and extract.
+
+      The following prompt appears:
 
       > Do you want to allow downloads on "mdatpclientanalyzer.blob.core.windows.net"?<br/>
-      > You can change which websites can download files in Websites Preferences.
+      > You can change which websites can download files in **Websites Preferences**.
 
 4. Click **Allow**.
 
 5. Open **Downloads**.
 
-6. You should see **MDATP MacOS DIY**.
+6. You must be able to see **MDATP MacOS DIY**.
 
    > [!TIP]
-   > If you double-click, you will get the following message:
+   > If you double-click **MDATP MacOS DIY**, you will get the following message:
    >
    > > **"MDATP MacOS DIY" cannot be opened because the developer cannot be verifier.**<br/>
    > > macOS cannot verify that this app is free from malware.<br/>
@@ -221,14 +236,14 @@ To grant full disk access:
 
 8. Right-click **MDATP MacOS DIY**, and then click **Open**.
 
-    The system should display the following message:
+    The system will display the following message:
 
     > **macOS cannot verify the developer of MDATP MacOS DIY. Are you sure you want to open it?**<br/>
     > By opening this app, you will be overriding system security which can expose your computer and personal information to malware that may harm your Mac or compromise your privacy.
 
 9. Click **Open**.
 
-    The system should display the following message:
+    The system will display the following message:
 
     > Microsoft Defender for Endpoint - macOS EDR DIY test file<br/>
     > Corresponding alert will be available in the MDATP portal.
@@ -242,6 +257,8 @@ To grant full disk access:
 12. Go to the Alert Queue.
 
     :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="An macOS EDR test alert that shows severity, category, detection source, and a collapsed menu of actions" lightbox="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png":::
+
+    This is a macOS EDR test alert that shows severity, category, detection source, and a collapsed menu of actions.
 
     Look at the alert details and the device timeline, and perform the regular investigation steps.
 
