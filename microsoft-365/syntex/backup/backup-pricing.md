@@ -27,7 +27,7 @@ description: Learn about the charge model and pricing calculator for Microsoft 3
 
 The Microsoft 365 Backup service, offered through the Microsoft 365 admin center, is a pay-as-you-go consumption-based service. The public preview list price is $0.15/GB/mo of protected content. The size of protected content is equal to the cumulative size of the mailboxes being protected plus the size of the SharePoint sites and OneDrive accounts being protected (that is, the size of the live OneDrive accounts and SharePoint sites as display in the live sites’ usage reports) plus the size of any deleted/versioned content held for restore during the protection period.
 
-As an example, if you have a site under protection that is currently 1 GB for the first month, you will be charged 1 GB of Backup usage. If you delete content in that site such that it is now only 0.5 GB, your next monthly bill will still be for 1 GB since the backup tool is retaining that deleted content for a year. After a year when the backup of that deleted content expires, the 0.5 GB being retained for backup purposes will no long be charged for Backup.
+As an example, if you have a site under protection that is currently 1 GB for the first month, you'll be charged 1 GB of Backup usage. If you delete content in that site such that it's now only 0.5 GB, your next monthly bill will still be for 1 GB since the backup tool is retaining that deleted content for a year. After a year when the backup of that deleted content expires, the 0.5 GB being retained for backup purposes will no long be charged for Backup.
 
 > [!NOTE]
 > These prices are subject to change when the product becomes generally available. A third-party application integrated with Microsoft 365 Backup Storage might charge a different rate for their service.
@@ -36,7 +36,7 @@ As an example, if you have a site under protection that is currently 1 GB for th
 
 ## Pricing calculator
 
-The Microsoft 365 Backup Pricing Calculator is a tool that helps you estimate the amount of backup storage and the costs that you will incur to protect and backup your Microsoft 365 data.
+The Microsoft 365 Backup Pricing Calculator is a tool that helps you estimate the amount of backup storage and the costs that you'll incur to protect and back up your Microsoft 365 data.
 
 > [!NOTE]
 > The tool is not intended to provide an exact prediction of your backup consumption, but rather to give you a estimate based on your current usage reports that are forecasted for the next 24 months based on historical trends.
@@ -55,7 +55,7 @@ The Microsoft 365 Backup pricing calculator, when calculating the storage requir
 
 ## Using the pricing calculator
 
-To use the Microsoft 365 Backup pricing calculator, you will need to perform the following steps. Information about how to collect data from each of these steps is detailed further below.
+To use the Microsoft 365 Backup pricing calculator, you'll need to perform the following steps. Information about how to collect data from each of these steps is detailed later in this article.
 
 1. Download the latest version of the Microsoft 365 Backup pricing calculator tool from [https://aka.ms/M365BackupCalculator](https://aka.ms/M365BackupCalculator).
 
@@ -63,7 +63,7 @@ To use the Microsoft 365 Backup pricing calculator, you will need to perform the
 
 3. Open the Excel spreadsheet and select the **High-Level Estimates** worksheet. This sheet produces the simplest default model based on linear data growth assumptions.
 
-4. Enter the information recorded from the usage Rrports into the **High-Level Estimates** worksheet.
+4. Enter the information recorded from the usage reports into the **High-Level Estimates** worksheet.
 
 5. If you know your tenant will have non-organic or non-linear usage changes, then for each of the service types, optionally override the estimated number of protection units or storage for a month in any or all of the service-specific tabs in the pricing calculator tool.
 
@@ -79,12 +79,12 @@ You can change the period that the reports display data for by selecting the **P
 
 ![Screenshot showing an example of how to change the period for reporting display data.](../../media/content-understanding/backup-change-period-data.png)
   
-As a recommendation and provided that there is usage data available, the longer the period is, for example 180-days, the more accurate your usage estimates will be and therefore the Microsoft 365 Backup pricing calculator estimates.
+As a recommendation and if there's usage data available, the longer the period is—for example, 180-days—the more accurate your usage estimates will be and therefore more accurate the Microsoft 365 Backup pricing calculator estimates will be.
 
 For each of the service types (Exchange, OneDrive, and SharePoint) record the following information by reviewing the appropriate usage report:
 
-- Number of Protection Units at start end of period
-- Number of Protection Units at end of period
+- Number of protection units at start end of period
+- Number of protection units at end of period
 - The amount of storage used at the start and end of the period
 
 Once you have this information, enter it into the **High-Level Estimates** worksheet as shown in the following example.
@@ -101,7 +101,7 @@ Number of total and active user mailboxes at the start of the period and at the 
 
 #### Storage
 
-Amount of storage used at the start of the period and at the end of the period . For example, 5.5 GB and 4.3 GB:
+Amount of storage used at the start of the period and at the end of the period. For example, 5.5 GB and 4.3 GB:
 
 
 ### OneDrive | Usage
@@ -135,17 +135,17 @@ When using the Microsoft 365 Backup pricing calculator, be aware of the followin
 
 - In the Microsoft 365 Backup pricing calculator, any Excel spreadsheet cell that is colored orange can have data entered.
 
-- To modify how many protection units you want to protect per service type, you can change the Percentage of Protection Units to protect. For example, if you only want to protect 20% of your SharePoint sites, you can set the Percentage of Protection Units to protect for SharePoint to 20%.
+- To modify how many protection units you want to protect per service type, you can change the **Percentage of Protection Units to protect**. For example, if you only want to protect 20 percent of your SharePoint sites, you can set the **Percentage of Protection Units to protect** for SharePoint to 20%.
 
 - The estimate is calculated projecting forward from the end of period data. That is, Month 1 is calculated using the end of period data.
 
-- The **Variables** worksheet displays the heuristics such as average growth and usage patterns of the Service Types which are used to calculate the estimate.
+- The **Variables** worksheet displays the heuristics such as average growth and usage patterns of the service types which are used to calculate the estimate.
 
-- The Price per GB field on the **Variables** worksheet can be modified if required. For the Microsoft M365 Backup solution, we recommend that you use the default value.
+- The **Price per GB** field on the **Variables** worksheet can be modified if required. For the Microsoft 365 Backup solution, we recommend that you use the default value.
 
 - The OneDrive accounts, SharePoint sites, and Exchange mailboxes worksheets provide more detail on the estimated costs including the ability to override the estimated number of protection units or storage for a month.
 
-- If the number of protection units for a month is overridden and the storage for a month is *not* overridden as well, then the amount of storage required for the month is calculated by multiplying the overridden number of Protection Units by the Average new Protection Unit storage added per month (GB).
+- If the number of protection units for a month is overridden and the storage for a month is *not* overridden as well, then the amount of storage required for the month is calculated by multiplying the overridden number of protection units by the average new protection unit storage added per month (GB).
 
 ### Variables
 
@@ -163,4 +163,4 @@ The following variables are used to estimate the Microsoft 365 Backup costs and 
 
 - **Average new protection unit storage added per month (GB)**: The average amount of storage that is required if a new protection unit is added during a month.
 
-- **Average percentage protection unit growth of backup only content per month**: Backing up of protection units requires internal additional storage. Although negligible and is estimated at 1%, this value can be changed if required based on the actual consumption metrics.
+- **Average percentage protection unit growth of backup only content per month**: Backing up of protection units requires internal additional storage. Although negligible and is estimated at 1 percent, this value can be changed if required based on the actual consumption metrics.
