@@ -101,7 +101,7 @@ Screenshot 34 Select the destination of restore data using selection.
  
 Screenshot 35 Restore data from OneDrive accounts
  
-## Restore SharePoint data from backup
+## Restore data from backup for SharePoint
 
 Restore feature in Microsoft 365 Backup is created to help you restore backed up data to a restore point of your choice. To restore data backed up for SharePoint, follow these steps.
 
@@ -157,7 +157,7 @@ Screenshot 42 Confirm Restore
 |Paused     | No further backups will be taken but already taken backups will be preserved. |
 |Not set up | No backup policy is set up for this scope.  |
 |Processing |  change to backup policy or a restore is in progress.  |
- 
+
 ## Restore data from Exchange mailboxes
 
 Once you have set up protection policies for your mailboxes, you might need to restore the data in case of an accidental deletion, ransomware attack, or other event. The Restore feature in Microsoft 365 Backup is created to help you restore backed up data. To note, Exchange restores will only restore modified or deleted items. Any item that is unaffected in the visible folder structure will remain intact.
