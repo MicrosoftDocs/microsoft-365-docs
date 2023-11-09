@@ -52,7 +52,7 @@ It's important to understand the following terms as you navigate hierarchies. Te
 
 1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com/), choose **Teams** > **Manage frontline teams**.
 1. Go to the **Operational hierarchy** tab.
-1. Choose **Get started**. In the **Operational hierarchy** opens. From here, you can upload your hierarchy CSV file or download a template to create one.
+1. Choose **Get started**. The **Operational hierarchy** opens, and from here, you can upload your hierarchy CSV file or download a template to create one.
 1. If you haven't already created a hierarchy CSV file, select **Download the CSV template** to start creating it.
 
 ## Create your operational hierarchy
@@ -94,17 +94,32 @@ When you add an attribute column, keep the following things in mind:
 1. In the **Operational hierarchy** pane, choose **Select a file**, select your hierarchy CSV file, and then choose **Upload**. The maximum file size is 1 MB.
 
     Depending on the size of your file, setup might take a few minutes.
-2. Refresh the Manage frontline apps page to check the latest status of your hierarchy setup. Make sure you’re on the **Operational hierarchy** tab after you refresh the page.
+1. Refresh the Manage frontline teams page to check the latest status of your hierarchy setup. Make sure you’re on the **Operational hierarchy** tab after you refresh the page.
 
     When setup is completed, **Status** in the table changes to **Success**.
 
 ## Manage your operational hierarchy
 
-1. To view your last sucessfully uploaded file, 
+1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com/), choose **Teams** > **Manage frontline teams**.
+1. Go to the **Operational hierarchy** tab.
+1. To download and view your last sucessfully uploaded hierarchy CSV file, in the **File last uploaded** column of the table, choose **Download**.
+1. To make changes to your hierarchy, select **Operational hierarchy** in the table. The **Operational hierarchy** pane opens, and from here, you can:
+    -  Download your last uploaded hierarchy CSV file.
+    -  Start fresh and download the template again to create a new hierarchy CSV file.
+
+    > [!NOTE]
+    > If you created more frontline teams through the [deploy frontline dynamic teams at scale](deploy-dynamic-teams-at-scale.md) experience since the last time you set up your hierarchy, the DisplayName and TeamId values of those frontline teams are added to the CSV template.
+1. When you're ready, [upload](#upload-your-operational-hierarchy) your hierarchy CSV file.
+ <!--1. When you're ready, choose **Select a file**, select your hierarchy CSV file, and then choose **Upload**.-->
+
+<!--Depending on the size of your file, setup might take a few minutes.-->
+<!--1. Refresh the Manage frontline teams page to check the latest status of your hierarchy setup. Make sure you’re on the **Operational hierarchy** tab after you refresh the page.
+
+    When setup is completed, **Status** in the table changes to **Success**.-->
 
 ## Troubleshoot errors
 
-## Delete your hierarchy
 
+## Delete your operational hierarchy
 
-## Related articles
+To delete your hiearchy, [upload](#upload-your-operational-hierarchy) a blank CSV file.
