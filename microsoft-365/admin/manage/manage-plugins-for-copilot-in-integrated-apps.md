@@ -9,6 +9,7 @@ ms.date: 11/09/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-copilot
+ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
 ms.collection:
 - Tier2

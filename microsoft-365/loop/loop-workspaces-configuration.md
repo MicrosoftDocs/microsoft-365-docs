@@ -62,7 +62,7 @@ If you're looking for a simple way to turn on or off the creation of content in 
     > While we are updating the admin center to reflect the state of Loop in your environment, the checkbox may not reflect your configured state on load. However, the state you select and choose Save in the Admin Center will persist and override any defaults for your tenant.
 1. Select Save.
 
-The Microsoft Admin Center configures the Cloud Policy setting described in the next section, targeted at All users (your full tenant). See the next section if you wish to perform more advanced controls.
+The Microsoft Admin Center configures the Cloud Policy setting described in the next section, targeted at All users (your full tenant). See the next section if you wish to perform more advanced controls. If you previously configured a Cloud Policy for a group prior to when this Loop setting was defaulted to Enabled, review your Cloud Policy settings to confirm they still match your expectation.
 
 ## Settings management in Cloud Policy
 

@@ -12,7 +12,7 @@ metadata:
   ms.collection:
   - tier1
   - m365-security
-  ms.date: 03/27/2023
+  ms.date: 10/26/2023
   ms.localizationpriority: medium
   audience: microsoft-business 
   keywords: Microsoft 365 Business Premium, Microsoft 365, SMB, FAQ, frequently asked questions, answers, business
@@ -33,7 +33,7 @@ sections:
           Microsoft 365 Business Premium can be purchased through a [Microsoft Partner](https://www.microsoft.com/solution-providers/search) or directly from [Microsoft](https://www.microsoft.com//microsoft-365/business). In choosing whether to purchase directly from Microsoft or via a Microsoft Partner, you should consider your on-staff capability and desire to maintain an IT infrastructure. A Microsoft Partner can help you deploy and manage your IT infrastructure, including Microsoft solutions.
           
       - question: How much does Microsoft 365 Business Premium cost?
-        answer: Microsoft 365 Business Premium is offered at $22 (USD) per user/month based on an _annual contract_ if purchased directly from Microsoft. When purchased through a Microsoft Partner, pricing can vary based on the services the partner provides and their pricing model for Microsoft 365 Business Premium.
+        answer: Microsoft 365 Business Premium is generally offered at $22 (USD) per user/month based on an _annual contract_ if purchased directly from Microsoft. When purchased through a Microsoft Partner, pricing can vary based on the services the partner provides and their pricing model for Microsoft 365 Business Premium.
 
       - question: Is there a cap to how many Microsoft 365 Business Premium seats a customer can have?
         answer: |
@@ -64,7 +64,7 @@ sections:
           If you have devices that are licensed for Windows 7, 8, and 8.1 Professional, Microsoft 365 Business Premium provides an upgrade to Windows 10 Pro. 
           
           > [!IMPORTANT]
-          > You must to supply the original product key when you upgrade; otherwise, the upgrade won't work.
+          > You must supply the original product key when you upgrade; otherwise, the upgrade won't work.
           
       - question: How does Microsoft 365 Business Premium help support our Bring Your Own Device (BYOD) policy?
         answer: |
@@ -109,7 +109,7 @@ sections:
         answer: |
           Yes! See the [Microsoft 365 Business Premium product page](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium?activetab=pivot:overviewtab), where you can start your trial or paid subscription. 
 
-          To get help setting up your trial, see [Trial user guide for Microsoft 365 Business Premium](/microsoft-365/business-premium/m365bp-trial-playbook-microsoft-business-premium). 
+          To get help with setting up your trial, see [Trial user guide for Microsoft 365 Business Premium](/microsoft-365/business-premium/m365bp-trial-playbook-microsoft-business-premium). 
           
   - name: Deployment
     questions:

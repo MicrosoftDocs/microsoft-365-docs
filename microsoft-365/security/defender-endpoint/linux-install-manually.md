@@ -4,9 +4,6 @@ ms.reviewer:
 description: Describes how to deploy Microsoft Defender for Endpoint on Linux manually from the command line.
 keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos, fedora, amazon linux 2
 ms.service: microsoft-365-security
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
@@ -19,7 +16,7 @@ ms.collection:
 ms.topic: conceptual
 ms.subservice: mde
 search.appverid: met150
-ms.date: 04/04/2023
+ms.date: 10/30/2023
 ---
 
 # Deploy Microsoft Defender for Endpoint on Linux manually
@@ -60,7 +57,7 @@ Before you get started, see [Microsoft Defender for Endpoint on Linux](microsoft
 
 ## Configure the Linux software repository
 
-Defender for Endpoint on Linux can be deployed from one of the following channels (denoted below as *[channel]*): *insiders-fast*, *insiders-slow*, or *prod*. Each of these channels corresponds to a Linux software repository. Instructions for configuring your device to use one of these repositories are provided below.
+Defender for Endpoint on Linux can be deployed from one of the following channels (denoted below as *[channel]*): *insiders-fast*, *insiders-slow*, or *prod*. Each of these channels corresponds to a Linux software repository. The instructions in this article describe configuring your device to use one of these repositories.
 
 The choice of the channel determines the type and frequency of updates that are offered to your device. Devices in *insiders-fast* are the first ones to receive updates and new features, followed later by *insiders-slow* and lastly by *prod*.
 
@@ -68,6 +65,30 @@ In order to preview new features and provide early feedback, it is recommended t
 
 > [!WARNING]
 > Switching the channel after the initial installation requires the product to be reinstalled. To switch the product channel: uninstall the existing package, re-configure your device to use the new channel, and follow the steps in this document to install the package from the new location.
+
+## Installer script
+
+While we discuss manual installation, alternatively, you can use an automated [installer bash script](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) provided in our [public GitHub repository](https://github.com/microsoft/mdatp-xplat/).
+The script identifies the distribution and version, simplifies the selection of the right repository, sets up the device to pull the latest package, and combines the product installation and onboarding steps.
+
+```bash
+> ./mde_installer.sh --help
+usage: basename ./mde_installer.sh [OPTIONS]
+Options:
+-c|--channel      specify the channel from which you want to install. Default: insiders-fast
+-i|--install      install the product
+-r|--remove       remove the product
+-u|--upgrade      upgrade the existing product
+-o|--onboard      onboard/offboard the product with <onboarding_script>
+-p|--passive-mode set EPP to passive mode
+-t|--tag          set a tag by declaring <name> and <value>. ex: -t GROUP Coders
+-m|--min_req      enforce minimum requirements
+-w|--clean        remove repo from package manager for a specific channel
+-v|--version      print out script version
+-h|--help         display help
+```
+
+Read more [here](https://github.com/microsoft/mdatp-xplat/tree/master/linux/installation).
 
 ### RHEL and variants (CentOS, Fedora, Oracle Linux and Amazon Linux 2)
 
@@ -84,7 +105,7 @@ In order to preview new features and provide early feedback, it is recommended t
 
   |Distro & version|Package|
   |---|---|
-  |For RHEL/Centos/Oracle 8.0-8.7|<https://packages.microsoft.com/config/rhel/8/prod.repo>|
+  |For RHEL/Centos/Oracle 8.0-8.8|<https://packages.microsoft.com/config/rhel/8/prod.repo>|
   |For RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2 |<https://packages.microsoft.com/config/rhel/7.2/prod.repo>|
   |For Amazon Linux 2023 |<https://packages.microsoft.com/config/amazonlinux/2023/prod.repo>|
   |For Fedora 33|<https://packages.microsoft.com/config/fedora/33/prod.repo>|
@@ -202,15 +223,16 @@ In order to preview new features and provide early feedback, it is recommended t
   ```
 
 - Install the Microsoft GPG public key:
-  - For Debian 12
-  ```bash
-  curl -sSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /usr/share/keyrings/microsoft-prod.gpg > /dev/null
-  ```
-  - For others
+  - For Debian 11 and earlier, run the following command.
+ 
   ```bash
   curl -sSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/microsoft.gpg > /dev/null
   ```
+For Debian 12 and later, run the following command.
 
+```bash
+curl -sSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /usr/share/keyrings/microsoft-prod.gpg > /dev/null
+```
 - Install the HTTPS driver if not already installed:
 
   ```bash
@@ -239,7 +261,7 @@ sudo yum install mdatp
 yum repolist
 ```
 
-```Output
+```console
 ...
 packages-microsoft-com-prod               packages-microsoft-com-prod        316
 packages-microsoft-com-prod-insiders-fast packages-microsoft-com-prod-ins      2
@@ -264,7 +286,7 @@ sudo zypper install mdatp
 zypper repos
 ```
 
-```Output
+```console
 ...
 #  | Alias | Name | ...
 XX | packages-microsoft-com-insiders-fast | microsoft-insiders-fast | ...
@@ -289,7 +311,7 @@ sudo apt-get install mdatp
 cat /etc/apt/sources.list.d/*
 ```
 
-```Output
+```console
 deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/config/ubuntu/18.04/prod insiders-fast main
 deb [arch=amd64] https://packages.microsoft.com/config/ubuntu/18.04/prod bionic main
 ```
@@ -322,7 +344,7 @@ Download the onboarding package from Microsoft 365 Defender portal.
    ls -l
    ```
 
-   ```Output
+   ```console
    total 8
    -rw-r--r-- 1 test  staff  5752 Feb 18 11:22 WindowsDefenderATPOnboardingPackage.zip
    ```
@@ -331,7 +353,7 @@ Download the onboarding package from Microsoft 365 Defender portal.
    unzip WindowsDefenderATPOnboardingPackage.zip
    ```
 
-   ```Output
+   ```console
    Archive:  WindowsDefenderATPOnboardingPackage.zip
    inflating: MicrosoftDefenderATPOnboardingLinuxServer.py
    ```
@@ -439,29 +461,6 @@ The mde-netfilter package also has the following package dependencies:
 
 If the Microsoft Defender for Endpoint installation fails due to missing dependencies errors, you can manually download the pre-requisite dependencies.
 
-## Installer script
-
-Alternatively, you can use an automated [installer bash script](https://github.com/microsoft/mdatp-xplat/blob/master/linux/installation/mde_installer.sh) provided in our [public GitHub repository](https://github.com/microsoft/mdatp-xplat/).
-The script identifies the distribution and version, simplifies the selection of the right repository, sets up the device to pull the latest package, and combines the product installation and onboarding steps.
-
-```bash
-> ./mde_installer.sh --help
-usage: basename ./mde_installer.sh [OPTIONS]
-Options:
--c|--channel      specify the channel from which you want to install. Default: insiders-fast
--i|--install      install the product
--r|--remove       remove the product
--u|--upgrade      upgrade the existing product
--o|--onboard      onboard/offboard the product with <onboarding_script>
--p|--passive-mode set EPP to passive mode
--t|--tag          set a tag by declaring <name> and <value>. ex: -t GROUP Coders
--m|--min_req      enforce minimum requirements
--w|--clean        remove repo from package manager for a specific channel
--v|--version      print out script version
--h|--help         display help
-```
-
-Read more [here](https://github.com/microsoft/mdatp-xplat/tree/master/linux/installation).
 
 ## Log installation issues
 
