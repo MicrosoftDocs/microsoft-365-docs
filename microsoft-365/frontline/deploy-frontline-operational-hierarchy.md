@@ -68,9 +68,14 @@ The CSV file must contain the following three columns, in the following order, s
 
 | Column name   | Required | Description   |
 ----------------|----------|---------------|
-| DisplayName    | Yes      | This field is the name of the node. The name can be up to 100 characters long and contain only the characters A-Z, a-z, and 0-9. Node names must be unique.|
-| ParentName    | Yes       | This field is the name of the parent node. The value you specify here must match the value in the **DisplayName** field of the parent node exactly. If you want to add more than one parent node, separate each parent node name with a semicolon (;). You can add up to 25 parent nodes, and each parent node name can be up to 2500 characters long. A node can have multiple parent nodes only if the parent nodes are root nodes. <br><br>**IMPORTANT** Be careful not to create a loop where a parent higher up in the hierarchy references a child node lower in the hierarchy. This structure isn't supported. |
-| TeamId        | Yes, if the team is a leaf node.| This field contains the ID of the team you want to link a node to. Each node must refer to a unique team, so each TeamId value can appear only one time in the hierarchy file. <br><br>To get the ID of a team you want to link a node to, run the following PowerShell command: `Get-Team | Export-Csv TeamList.csv`. This command lists the teams in your organization and includes the name and ID of each team. Find the name of the team you want to link to, and then copy the ID to this field.|
+| DisplayName    | Yes      | The name of the node. The name can be up to 100 characters long and contain only the characters A-Z, a-z, and 0-9. Node names must be unique.|
+| ParentName    | Yes       | The name of the parent node. The value you specify here must match the value in the **DisplayName** field of the parent node exactly. If you want to add more than one parent node, separate each parent node name with a semicolon (;). You can add up to 25 parent nodes, and each parent node name can be up to 2500 characters long. A node can have multiple parent nodes only if the parent nodes are root nodes. <br><br>**IMPORTANT** Be careful not to create a loop where a parent higher up in the hierarchy references a child node lower in the hierarchy. This structure isn't supported. |
+| TeamId        | Yes, if the team is a leaf node.| The ID of the team you want to link a node to. Each node must refer to a unique team, so each TeamId value can appear only one time in the hierarchy file.|
+
+<!--<br><br>To get the ID of a team you want to link a node to, run the following PowerShell command: `Get-Team | Export-Csv TeamList.csv`. This command lists the teams in your organization and includes the name and ID of each team. Find the name of the team you want to link to, and then copy the ID to this field.-->
+
+> [!NOTE]
+> To get a list of all teams in your organization, along with the DisplayName and TeamId values of each team, run the following PowerShell command: `Get-Team | Export-Csv TeamList.csv`.
 
 ### Add attribute columns
 
@@ -81,7 +86,7 @@ There are two ways to define your attributes, depending on whether values for th
 |Ways to add attributes|Description |Example  |
 |---|---------|---------|
 |If the values for an attribute are mutually exclusive, the column name you specify becomes the name of the attribute.|Each row can contain one value for that attribute, and each attribute column can have up to 50 unique values. Each value can be up to 100 characters long.|You want users to be able to filter stores by layout. The values for this attribute are mutually exclusive because a store can have only one layout. To add an attribute to filter stores by layout, add a column named Store layout. In this example, values for the Store layout attribute are Compact, Standard, and Large.
-|If you need to indicate multiple values for an attribute and the values aren't mutually exclusive, use the **AttributeName:UniqueValue** format for the column names.<br><br>**IMPORTANT** Make sure you use the English-only colon (:) as unicode isn't supported as an attribute column delimiter.|The text string before the colon (:) becomes the name of the attribute. All columns that contain the same text string before the colons (:) are grouped together into a section in the filtering menu. Each of the strings after the colon become the values for that section.<br><br>Each row can have a value of 0 (zero) or 1 for that attribute. A value of 0 means that the attribute doesn't apply to the node and a value of 1 means that the attribute applies to that node.|You want users to be able to filter stores by department. A store can have multiple departments and so the values for this attribute aren't mutually exclusive.<br><br>In this example, we add Departments:Clothing, Departments:Electronics, Departments:Foods, Departments:Home and Garden, Departments:Sporting goods as attribute columns. <br><br>Departments becomes the attribute name and users can filter by the Clothing, Electronics, Foods, Home and Garden, and Sporting goods departments.|
+|If you need to indicate multiple values for an attribute and the values aren't mutually exclusive, use the **AttributeName:UniqueValue** format for the column names.<br><br>**IMPORTANT** Make sure you use the English-only colon (:) as unicode isn't supported as an attribute column delimiter.|The text string before the colon (:) becomes the name of the attribute. All columns that contain the same text string before the colons (:) are grouped together into a section in the filtering menu. Each of the strings after the colon become the values for that section.<br><br>Each row can have a value of 0 (zero) or 1 for that attribute. A value of 0 means that the attribute doesn't apply to the node and a value of 1 means that the attribute applies to that node.|You want users to be able to filter stores by department. A store can have multiple departments and so the values for this attribute aren't mutually exclusive.<br><br>In this example, we add Departments:Clothing, Departments:Electronics, Departments:Foods, Departments:Home and Garden, Departments:Sporting goods as attribute columns.<br><br>Departments becomes the attribute name and users can filter by the Clothing, Electronics, Foods, Home and Garden, and Sporting goods departments.|
 
 When you add an attribute column, keep the following things in mind:
 
@@ -102,7 +107,7 @@ When you add an attribute column, keep the following things in mind:
 
 1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com/), choose **Teams** > **Manage frontline teams**.
 1. Go to the **Operational hierarchy** tab.
-1. To download and view your last sucessfully uploaded hierarchy CSV file, under **File last uploaded** in the table, choose **Download**.
+1. To download and view your last successfully uploaded hierarchy CSV file, under **File last uploaded** in the table, choose **Download**.
 1. To make changes to your hierarchy, select **Operational hierarchy** in the table. The **Operational hierarchy** pane opens, and from here, you can:
     -  Download your last uploaded hierarchy CSV file.
     -  Start fresh and download the template again to create a new hierarchy CSV file.
@@ -121,10 +126,10 @@ When you add an attribute column, keep the following things in mind:
 
 If an error occurred during setup, the status in the table shows as **Error** after you refresh the Manage frontline teams page.
 
-Choose **View details**, and then in the **Error details** pane, select **Download error CSV**. 
+You can download a CSV file lists the errors, along with details that include the row and column in which the error occurred. Use this information to make the necessary changes to resolve the errors.
 
-The CSV file lists the errors, along with details that include the row and column in which the error occurred. Use this information to make the necessary changes to resolve the errors.
+Choose **View details**, and then in the **Error details** pane, select **Download error CSV**.
 
 ## Delete your operational hierarchy
 
-To delete your hiearchy, [upload](#upload-your-operational-hierarchy) a blank CSV file.
+To delete your hierarchy, [upload](#upload-your-operational-hierarchy) a blank CSV file.
