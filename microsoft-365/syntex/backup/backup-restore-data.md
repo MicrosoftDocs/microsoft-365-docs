@@ -121,7 +121,7 @@ Restore feature in Microsoft 365 Backup is created to help you restore backed up
 
 6. Now you will be asked to confirm the restore point. If you are good with the restore point, select the site and select **Next**.
 
-7.	Selected sites can be restored by choosing either the **Restore to original sites** or **Create new SharePoint site and restore to there** option.
+7. Selected sites can be restored by choosing either the **Restore to original sites** or **Create new SharePoint site and restore to there** option.
 
     a. **Restore to original sites** option
         - The entire original site is replaced by the backed up version chosen based on the restore point.
