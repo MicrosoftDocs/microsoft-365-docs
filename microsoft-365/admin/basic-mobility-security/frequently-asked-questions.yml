@@ -9,7 +9,9 @@ metadata:
   manager: scotv
   audience: Admin
   ms.topic: faq
-  ms.service: microsoft-365-business
+  ms.service:
+  - microsoft-365-business
+  - basic-mobility-security
   ms.localizationpriority: medium
   ms.collection: 
   - Tier3
