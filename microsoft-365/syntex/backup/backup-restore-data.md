@@ -198,7 +198,7 @@ To restore data backed up for Exchange, follow these steps.
     - Has attachment
     - Keywords
 
-    Choose the time period, then filter and value that you want to do a granular search on to find matching items
+    Choose the time period, then filter and value that you want to do a granular search on to find matching items.
   
 2. Now you will be asked to confirm the restore point in time to which the data will be restored from backup. If you are good with the restore point, select **Next**.
 
@@ -206,9 +206,11 @@ To restore data backed up for Exchange, follow these steps.
 
     a. **Restore to a new folder** where the content will be restored to a newly created folder named *Recovered Items YYYY-MM-DD, HH:MM*.
     Example:
+    ![Screenshot showing an example of newly create folder where content has been restored.](../../media/content-understanding/backup-restore-to-new-folder.png)
+
 
     b. **Restore in place** where the current version of the item will be overwritten by the restored content.
 
-6. You will now be asked to review and finish all your choices. If everything looks good, select **Restore user mailboxes**.
+4. You will now be asked to review and finish all your choices. If everything looks good, select **Restore user mailboxes**.
 
-7. Track the progress of your newly created task on the **Restoration tasks** tab.
+5. Track the progress of your newly created task on the **Restoration tasks** tab.
