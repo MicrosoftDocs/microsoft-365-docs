@@ -149,53 +149,66 @@ Screenshot 41 Site restore options
  
 Screenshot 42 Confirm Restore 
 
+### States of Backup
 
-
-
-
-States of Backup  
-States	Definition
-Active	Protection scope selected under backup policy is being actively backed up
-Paused	No further backups will be taken but already taken backups will be preserved
-Not set up	No backup policy is set up for this scope
-Processing	A change to backup policy or a restore is in progress. 
-
+|States  |Definition  |
+|---------|---------|
+|Active     | Protection scope selected under backup policy is being actively backed up. |
+|Paused     | No further backups will be taken but already taken backups will be preserved. |
+|Not set up | No backup policy is set up for this scope.  |
+|Processing |  change to backup policy or a restore is in progress.  |
  
-Restore data from Exchange mailboxes
-Once you have set up protection policies for your mailboxes, you may need to restore the data in case of an accidental deletion, ransomware attack, etc. The Restore feature in Microsoft 365 Backup is created to help you restore backed up data. To note, Exchange restores will only restore modified or deleted items.  Any item that is unaffected in the visible folder structure will remain intact.
-To restore data backed up for Exchange, follow the below steps: 
-1.	Select ‘Restore’ next to Exchange in Microsoft 365 Backup home page
-2.	Select ‘Exchange‎ mailbox content (emails, notes, contacts, calendars, and tasks)’ and click on ‘Next’. Note, calendar restores are not supported during the public preview.
-3.	Select account(s) to restore from the list of backed up Exchange accounts. Select ‘Next’ and you will see two options to select content.
-Option 1
-Perform a full mailbox restore, i.e., restore all emails, notes, contacts, and tasks, and modified calendar items  for that user account. Select the last known good (LKG) date/time from which you want to restore the content. Please ensure that the time zone in the dropdown menu reflects your intention and select ‘Next’.
-   
-For example – The last time the end user remembers seeing their mailbox in a “good state” was October 2, 2023 8:00 AM. However, on October 2, 2023 9:00 AM they saw all of their emails were encrypted (possible ransomware attack), choose the last known good time as October 2, 2023 8:00 AM. 
-4.	Now you will be asked to confirm the restore point in time to which the data will be restored from backup. The page will inform you whether there are any backups to restore from the LKG time chosen.  If you see no errors, you can proceed.  If there are errors you have the option to choose another LKG time. Click ‘Next’.
-5.	The destination of restored items can be chosen from two options, the click ‘Next’
-a.	‘Restore to a new folder’ where the content will be restored to a newly created folder called 'Restored Items DD-MM-YYYY, HH:MM AM'
-b.	‘Restore in place’ where current version of the item will be overwritten by the restored content
-6.	You will now be asked to ‘Review and Finish’ all your choices. If everything looks good, select ‘Restore user mailboxes’
-7.	Track the progress of your newly created task in the ‘Restoration tasks’ tab.
-Option 2
-Perform a partial mailbox restore     – the “Selected content only” option gives the admin the ability to do a granular restore only (not full mailbox restore).  This requires additional privileges to run.  Please see this section for instructions.
-The search for items is based on four options - 
-o	Sender
-o	Recipient
-o	Has attachment
-o	Keywords
-Choose the time period, then filter and value that you want to do a granular search on to find matching items
+## Restore data from Exchange mailboxes
+
+Once you have set up protection policies for your mailboxes, you might need to restore the data in case of an accidental deletion, ransomware attack, or other event. The Restore feature in Microsoft 365 Backup is created to help you restore backed up data. To note, Exchange restores will only restore modified or deleted items. Any item that is unaffected in the visible folder structure will remain intact.
+
+To restore data backed up for Exchange, follow these steps.
+
+1. Select **Restore** next to Exchange in Microsoft 365 Backup home page
+
+2. Select **Exchange mailbox content (emails, notes, contacts, calendars, and tasks)**, and them select **Next**. Note that calendar restores are not supported during the public preview.
+
+3. Select the accounts to restore from the list of backed up Exchange accounts. Select **Next** and you will see two options to select content.
+
+### Option 1 - Perform a full mailbox restore
+
+1. Perform a full mailbox restore, that is, restore all emails, notes, contacts, and tasks, and modified calendar items for that user account. Select the last known good (LKG) date and time from which you want to restore the content. Make sure that the time zone in the dropdown menu reflects your intention and select **Next**.
+
+    For example, the last time the end user remembers seeing their mailbox in a “good state” was October 2, 2023 8:00 AM. However, on October 2, 2023 9:00 AM they saw all of their emails were encrypted (possible ransomware attack), choose the last known good time as October 2, 2023 8:00 AM.
+
+2. Now you will be asked to confirm the restore point in time to which the data will be restored from backup. The page will inform you whether there are any backups to restore from the LKG time chosen.  If you see no errors, you can proceed.  If there are errors you have the option to choose another LKG time. Select **Next**.
+
+3. The destination of restored items can be chosen from two options, then select **Next**.
+
+    a. **Restore to a new folder** where the content will be restored to a newly created folder named *Restored Items DD-MM-YYYY, HH:MM AM*.
+    b.  **Restore in place** where current version of the item will be overwritten by the restored content.
+
+4. You will now be asked to review and finish all your choices. If everything looks good, select **Restore user mailboxes**.
+
+5. Track the progress of your newly created task on the **Restoration tasks** tab.
+
+### Option 2 - Perform a partial mailbox restore
+
+1. Perform a partial mailbox restore, that is, the **Selected content only** option gives the admin the ability to do a granular restore only (not full mailbox restore). This requires additional privileges to run. See this section for instructions.
+
+    The search for items is based on four options:
+
+    - Sender
+    - Recipient
+    - Has attachment
+    - Keywords
+
+    Choose the time period, then filter and value that you want to do a granular search on to find matching items
   
-4.	Now you will be asked to confirm the restore point in time to which the data will be restored from backup. If you are good with the restore point, select ‘Next’. 
-5.	The destination of restored items can be chosen from two options, the click ‘Next’
-a.	‘Restore to a new folder’ where the content will be restored to a newly created folder called ‘Recovered Items YYYY-MM-DD, HH:MM'
-i.	Example:
- 
-b.	‘Restore in place’ where current version of the item will be overwritten by the restored content
-6.	You will now be asked to ‘Review and Finish’ all your choices. If everything looks good, select ‘Restore user mailboxes’
-7.	Track the progress of your newly created task in the ‘Restoration tasks’ tab.
+2. Now you will be asked to confirm the restore point in time to which the data will be restored from backup. If you are good with the restore point, select **Next**.
 
+3. The destination of restored items can be chosen from two options, then select **Next**.
 
+    a. **Restore to a new folder** where the content will be restored to a newly created folder named *Recovered Items YYYY-MM-DD, HH:MM*.
+    Example:
 
- 
+    b. **Restore in place** where the current version of the item will be overwritten by the restored content.
 
+6. You will now be asked to review and finish all your choices. If everything looks good, select **Restore user mailboxes**.
+
+7. Track the progress of your newly created task on the **Restoration tasks** tab.
