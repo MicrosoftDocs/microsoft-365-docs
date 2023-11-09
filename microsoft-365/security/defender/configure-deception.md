@@ -79,7 +79,7 @@ To create a deception rule, perform the following steps:
 :::image type="content" source="../../media/deception/fig12-deception.png" alt-text="Screenshot of the add new lure details pane" lightbox="../../media/deception/fig12-deception.png":::
 10. Review the details of the created rule in the summary section. You can edit the rule details by selecting Edit on the section that you need to modify. Select **Save** after reviewing.
 :::image type="content" source="../../media/deception/fig13-deception.png" alt-text="Screenshot of deception rule details pane showing the sections with the edit option" lightbox="../../media/deception/fig13-deception.png":::
-11. The new rule appears in the Deception rules pane after successful creation. It takes approximately 12-24 hours to complete the rule creation. Check the Status column to monitor the rule creation progress.
+11. The new rule appears in the Deception rules pane after successful creation. It takes approximately 12-24 hours to complete the rule creation. Check the *Status* column to monitor the rule creation progress.
 12. To check on the details of active rules, including details of devices covered and planted decoys and lures, select Export in the rules pane.
 :::image type="content" source="../../media/deception/fig14-deception.png" alt-text="Screenshot of the export deception rule details option" lightbox="../../media/deception/fig14-deception.png":::
 

@@ -38,7 +38,7 @@ ms.date: 11/14/2023
 
 Microsoft Defender XDR, through built-in deception capability, delivers high confidence detections of human-operated lateral movement, preventing attacks from reaching an organization's critical assets. Various attacks like [business email compromise (BEC)](https://www.microsoft.com/security/business/security-101/what-is-business-email-compromise-bec), [ransomware](/security/ransomware/), organizational breaches, and nation-state attacks often use lateral movement and can be hard to detect with high confidence in the early stages. The deception technology alerts security teams to high confidence detections based on deception signals correlated with Microsoft Defender for Endpoint signals.
 
-The deception feature automatically generates authentic-looking decoy accounts, hosts, and devices, and fake lures. The fake assets generated are then automatically deployed to specific clients. When an attacker interacts with the decoys or lures, the deception feature raises an alert, helping in security team’s investigations and allowing them to observe an attacker’s methods and strategies. In addition, the deception technology is integrated into Defender for Endpoint, minimizing deployment needs.
+The deception feature automatically generates authentic-looking decoy accounts, hosts, and lures. The fake assets generated are then automatically deployed to specific clients. When an attacker interacts with the decoys or lures, the deception feature raises an alert, helping in security team’s investigations and allowing them to observe an attacker’s methods and strategies. In addition, the deception technology is integrated into Defender for Endpoint, minimizing deployment needs.
 
 This article gives an overview of the deception feature, requirements to turn it on, and additional resources.
 
@@ -50,7 +50,7 @@ The following table lists the requirements to enable the deception feature in Mi
 > |Requirement|Details|
 > |-------------|----------|
 > |Subscription requirements|One of these subscriptions:</br> - Microsoft 365 E5</br> - Microsoft Security E5</br> - Microsoft Defender for Endpoint Plan 2|
-> |Deployment requirements|Requirements:</br> - Microsoft Defender for Endpoint’s device discovery is set to **standard discovery**</br> - [Automated investigation and response capabilities in Defender for Endpoint](/defender-endpoint/configure-automated-investigations-remediation/) is configured</br> - Devices are [joined](/entra/identity/devices/concept-directory-join/) or [hybrid joined](/entra/identity/devices/concept-hybrid-join/) in Microsoft Entra</br> - PowerShell is enabled on the devices</br> - The deception feature covers clients operating on Windows 10 RS5 and later in preview|
+> |Deployment requirements|Requirements:</br> - [Automated investigation and response capabilities in Defender for Endpoint](/defender-endpoint/configure-automated-investigations-remediation/) is configured</br> - Devices are [joined](/entra/identity/devices/concept-directory-join/) or [hybrid joined](/entra/identity/devices/concept-hybrid-join/) in Microsoft Entra</br> - PowerShell is enabled on the devices</br> - The deception feature covers clients operating on Windows 10 RS5 and later in preview|
 > |Permissions|You must have one of the following roles assigned in the [Microsoft Entra admin center](https://entra.microsoft.com) or in the [Microsoft 365 admin center](https://admin.microsoft.com) to configure deception capabilities:</br> - Global administrator</br> - Security administrator|
 
 ## What is deception technology?
@@ -64,7 +64,7 @@ Attackers interacting with the fake network assets set up by the deception featu
 The deception feature built in in the Microsoft Defender XDR portal uses rules to make decoys and lures that match your environment. The feature applies machine learning to suggest decoys and lures that are tailored to your network. You can also use the deception feature to manually create the decoys and lures. These decoys and lures are then automatically deployed to your network and planted to devices you specify using PowerShell.
 
 :::image type="content" source="../../media/deception/fig1-deception.png" alt-text="Screenshot of an attack with lateral movement and where deception intercepts the attack" lightbox="../../media/deception/fig1-deception.png":::
-*Figure 1. Deception technology delivers high confidence detections of human-operated lateral movement*
+*Figure 1. Deception technology, through high confidence detections of human-operated lateral movement, alerts security teams when an attacker interacts with fake hosts or lures*
 
 **Decoys** are fake devices and accounts that appear to belong to your network. **Lures** are fake content planted on specific devices or accounts and are used to attract an attacker. The content can be a document, a configuration file, cached credentials, or any content that an attacker can likely read, steal, or interact with. Lures imitate important company information, settings, or credentials.
 
