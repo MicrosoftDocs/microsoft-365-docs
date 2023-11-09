@@ -200,6 +200,10 @@
           href: backup/backup-overview.md
         - name: Admin setup 
           href: backup/backup-setup.md
+        - name: View and edit policies 
+          href: backup/backup-view-edit-policies.md
+        - name: Restore data 
+          href: backup/backup-restore-data.md
         - name: Pricing calculator 
           href: backup/backup-pricing-calculator.md
         - name: Limitations
