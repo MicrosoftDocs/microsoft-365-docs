@@ -15,7 +15,7 @@ ms.collection:
     - m365initiative-syntex
 ms.localizationpriority:  medium
 ROBOTS: NOINDEX, NOFOLLOW
-description: Learn about express restore points in Microsoft 365 Backup.
+description: Learn how to restore data using restore points and express restore points in Microsoft 365 Backup.
 ---
 
 # Restore data in Microsoft 365 Backup (Preview)
@@ -40,11 +40,11 @@ In the future, we will support granular OneDrive and SharePoint file-level resto
 
 Restores started serially for each of three services will execute in parallel. There is no need to wait for one service’s restore to finish before starting another.
 
-## Restore Point Frequency
+## Restore point frequency
 
-The restore point frequency, also known as the recovery point objective, defines the maximum amount of time during which data is lost after an attack. Stated differently, it’s the time between the most recent backup of the healthy state of data and the time of the attack. The RPOs for each of the protected services is summarized in the following table.
+The restore point frequency, also known as the recovery point objective (RPO), defines the maximum amount of time during which data is lost after an attack. Stated differently, it’s the time between the most recent backup of the healthy state of data and the time of the attack. The RPOs for each of the protected services is summarized in the following table.
 
-|Column1  |RPO for 0-14 days in the past  |RPO for 15-365 days in the past  |
+|Type  |RPO for 0-14 days in the past  |RPO for 15-365 days in the past  |
 |---------|---------|---------|
 |Full OneDrive account and full SharePoint site restore    |15 minutes     |One week     |
 |Exchange Online   |10 seconds         |10 seconds         |
