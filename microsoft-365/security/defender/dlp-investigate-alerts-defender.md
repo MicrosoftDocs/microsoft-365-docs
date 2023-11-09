@@ -79,7 +79,7 @@ It is best practice to only grant minimal permissions to alerts in the Microsoft
 
 2. Select **Filters** on the top right, and choose **Service Source : Data Loss Prevention** to view all incidents with DLP alerts. Here's a few examples of the subfilters that are available in preview:
     1. by user and device names    
-    1. (in preview) In the **Entities** filter, you can search on file names. and file paths.
+    1. (in preview) In the **Entities** filter, you can search on file names, user, device names, and file paths.
     1. (in preview) In the **Incidents** queue > **Alert policies** > Alert policy title. You can search on the DLP policy name.
 
 3. Search for the DLP policy name of the alerts and incidents you're interested in.
