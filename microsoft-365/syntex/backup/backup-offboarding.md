@@ -21,4 +21,61 @@ description: Learn about offboarding in Microsoft 365 Backup.
 # Offboarding in Microsoft 365 Backup
 
 > [!NOTE]
-> This article is currently in development.
+> This feature is currently in public preview and subject to change.
+
+To no longer use the Microsoft 365 Backup tool, you must offboard usage. This action includes pausing and deleting all active policies and deleting all of the backed-up data. During the public preview, there are three ways that offboarding is initiated:
+
+- Disable the tool in the pay-as-you-go billing setup panel where you first enabled the tool.
+
+- Call into support to ask Microsoft to offboard you from the tool. If you’d like offboarding to happen faster than default (with a minimum of 30 days), you can do this via the support call.
+
+- If your billing account goes into an unhealthy state.
+
+## Offboarding recovery undo period
+
+If offboarding from Microsoft 365 Backup has begun due to either an explicit request from you or due to an unhealthy billing state, the following grace period initiates:
+
+- In the first 14 days, your policy is automatically paused, meaning new backups won't be taken. However, you'll still be able to continue to use the tool to restore existing backups.
+
+- During days 15-29, usage of the tool will be completely blocked.
+
+By bringing your billing back to a healthy state or by asking support to reverse the offboarding, the tool becomes usable again and no backups will be lost.
+
+## GDPR special handling, compliance, and backup data deletion
+
+> [!IMPORTANT]
+> The information in this section is very important. Please read carefully.
+
+The core purpose of the backup and restore service is to provide you with a way to recover from common data deletion, overwrite, or encryption events.
+
+Important Note: Given that compliance tooling actions that destroy primary data is administratively isolated from actions that destroy the backed and won't delete the backed-up data automatically.
+
+### eDiscovery
+
+Data in the Exchange Online backups is eDiscoverable via existing eDiscovery tooling, assuming you have sufficient licenses to operate that tool.
+
+Data in the OneDrive account and SharePoint site backups that aren't currently part of your live latest version data in your tenant aren't eDiscoverable. An eDiscovery search won't discover data that exists solely in the OneDrive or SharePoint backups.
+
+### General Data Protection Regulations (GDPR) workflow instructions
+
+GDPR workflows aren't directly executable on all data in Microsoft 365 Backup.
+
+GDPR data service request (DSR) data deletion actions operated on the tenant won't delete data in the backups. Those actions must be executed again after a Backup restoration to ensure the original DSR is honored.
+
+DSRs related to the discovery of data using eDiscovery is possible for Exchange Online backups, but the same isn't possible for OneDrive or SharePoint backups.
+
+### Retention policies
+
+Retention and deletion policies don't “flow through” to the backups. This means that backup retention is governed solely by the backup policy. That policy currently has a nonvariable one year retention period. Once data is restored from the backups, that now-live data will be governed by applicable retention or deletion policies.
+
+### Sensitivity labels
+
+Restoration of any data (such as sites or mailboxes) reverts the sensitivity labels of the data to the state of that protected item at the prior point in time from which it's being restored (that is, the state of labeling at the point in time from which the content is being restored; in other words, the state reverts to the prior point in time).
+
+## Backup data deletion and undo grace periods
+
+If you need to delete data from the backups during the public preview period, you must offboard from the offering entirely and delete all backups. In the future, we'll enable more granular restore point deletion capabilities.
+
+Any offboarding or backup deletion activities triggers a 29-day grace period where we'll hold the backup data. If you re-enable the tool, the backups are present in the tool again.  
+
+
