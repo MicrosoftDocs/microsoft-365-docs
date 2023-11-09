@@ -24,16 +24,16 @@ ms.date:
 ## Overview
 
 > [!IMPORTANT]
-> This feature will begin rolling out for public preview in November 2023. If you would like to provide feedback and improve this feature while in preview, please fill out this form.
+> This feature will start rolling out for public preview in November 2023. If you would like to provide feedback and improve this feature while in preview, please fill out this form.
 
-Setting up your frontline operational hierarchy enables you to map your organization’s structure of frontline teams and locations to a hierarchy in the Teams admin center. Your organization’s teams can be organized by country, region, area, city, district, etc. Using a CSV file, you can connect each of your frontline teams/locations to parent teams to build this hierarchy.
+Setting up your frontline operational hierarchy enables you to map your organization’s structure of frontline teams and locations to a hierarchy in the Teams admin center. You can organize your organization’s teams by country, region, area, city, district, etc. Using a CSV file, you can connect each of your frontline teams/locations to parent teams to build this hierarchy.
 
 Admins can also define metadata in the CSV file that ranges from department information to brand information metadata for each team/location. The operational hierarchy coupled with this metadata will enable numerous frontline apps and experiences in the future, like task publishing and additional frontline capabilities that are coming soon.
 
 Start setting up your operational hierarchy today to get the full value of these upcoming features as they're released.
 
 > [!IMPORTANT]
-> If your organization already set up and uploaded a hierarchy through PowerShell to support task publishing, you should continue to [use PowerShell to make updates to your hierarchy for task publishing](/microsoftteams/set-up-your-team-hierarchy). Soon, you'll be able to define, manage, and update your hierarchy for task publishing in the Teams admin center, along with PowerShell. Using the Teams admin center isn't supported yet.
+> If your organization already set up and uploaded a hierarchy through PowerShell to support task publishing, you should continue to [use PowerShell to make updates to your hierarchy for task publishing](/microsoftteams/set-up-your-team-hierarchy). Soon, you'll be able to define, manage, and update your hierarchy for task publishing in the Teams admin center, along with PowerShell. Currently, using the Teams admin center isn't supported yet.
 
 ## Terminology
 
@@ -48,6 +48,11 @@ It's important to understand the following terms as you navigate hierarchies. Te
 :::image type="content" source="media/frontline-operational-hierarchy-example.png" alt-text="Example of a frontline operational hierarchy":::
 
 ## Set up your operational hierarchy
+
+1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com/), choose **Teams** > **Manage frontline teams**.
+1. Go to the **Operational hierarchy** tab.
+1. Choose **Get started**. In the **Operational hierarchy** pane,
+1. If you haven't already created a hierarchy CSV, select **Download the CSV template** to start creating your hierarchy CSV.
 
 ## Create your hierarchy
 
