@@ -92,4 +92,5 @@ During the public preview, we're enforcing self-service restore limits while we 
 |Number of artifacts being restored across all active restoration tasks per workload (at a time)    |> 100         | > 1,000        |
 |Number of parallel active restoration tasks per workload    | > 5        | > 25        |
 |Number of artifacts (active and completed) restored in a day per workload    | Not applicable        | > 10,000        |
+
 *Customer can call into support to lift the safety restrictions.
