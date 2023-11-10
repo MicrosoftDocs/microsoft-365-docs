@@ -21,7 +21,7 @@ description: Learn how to view and edit backup policies in Microsoft 365 Backup.
 # View and edit backup policies in Microsoft 365 Backup (Preview)
 
 > [!NOTE]
-> This feature is currently in public preview and subject to change.
+> This feature is currently in preview and subject to change.
 
 ## View and edit backup policies for OneDrive
 

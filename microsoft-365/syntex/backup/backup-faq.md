@@ -21,7 +21,7 @@ description: Read frequently asked questions for Microsoft 365 Backup.
 # Frequently asked questions for Microsoft 365 Backup (Preview)
 
 > [!NOTE]
-> This feature is currently in public preview and subject to change.
+> This feature is currently in preview and subject to change.
 
 #### Has Microsoft's stance on shared responsibility of data protection changed?
 
