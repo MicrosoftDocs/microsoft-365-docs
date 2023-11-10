@@ -23,11 +23,11 @@ description: Read frequently asked questions for Microsoft 365 Backup.
 > [!NOTE]
 > This feature is currently in public preview and subject to change.
 
-## Has the Microsoft stance on shared responsibility of data protection changed?
+### Has Microsoft's stance on shared responsibility of data protection changed?
 
 No, we still have the same point of view, but are now offering additional tools to help organizations achieve those goals and responsibilities.
 
-## Don’t DR copies suffice for my backup then?
+### Don’t DR copies suffice for my backup then?
 
 DR copies protect only the current state of content, not prior points in time. Microsoft 365 Backup provides additional benefit by giving you a way to restore data back to a healthy state in the past with fast RTO to with short RPO intervals.
 
@@ -49,26 +49,26 @@ Mailbox Backup enables the recovery of copies of mailbox item “versions.” Ve
 Example events that are versions and recoverable via backup:
 
 **User action**
-Edit a received email using ‘edit message’ via OL
-Edit a Note (not draft)
-Remove an attachment from an email
-Edit an attachment to an email
-Edit a contact (not draft)
-Modify body of a calendar invite
-Update time of a calendar invite
-Edit a task (not draft)
-Delete note from deleted items
-Delete email from deleted items
-Purge items from single item retention
-Delete a folder with items in it
+- Edit a received email using ‘edit message’ via OL
+- Edit a Note (not draft)
+- Remove an attachment from an email
+- Edit an attachment to an email
+- Edit a contact (not draft)
+- Modify body of a calendar invite
+- Update time of a calendar invite
+- Edit a task (not draft)
+- Delete note from deleted items
+- Delete email from deleted items
+- Purge items from single item retention
+- Delete a folder with items in it
 
 Example events that aren't versioned or recoverable via backup:
 
 **User action**
-Edit an email item in the drafts folder
-Update a flag on a received email
-Set ‘Do Not Forward’ on a received email
-Set a received message to highly important
+- Edit an email item in the drafts folder
+- Update a flag on a received email
+- Set ‘Do Not Forward’ on a received email
+- Set a received message to highly important
 
 ## What is the service recovery point objective?
 
