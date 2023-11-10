@@ -40,7 +40,7 @@ In the future, we will support granular OneDrive and SharePoint file-level resto
 
 Restores started serially for each of three services will execute in parallel. There is no need to wait for one service’s restore to finish before starting another.
 
-## Restore point frequency
+### Restore point frequency
 
 The restore point frequency, also known as the recovery point objective (RPO), defines the maximum amount of time during which data is lost after an attack. Stated differently, it’s the time between the most recent backup of the healthy state of data and the time of the attack. The RPOs for each of the protected services is summarized in the following table.
 
@@ -51,30 +51,30 @@ The restore point frequency, also known as the recovery point objective (RPO), d
 
 ## Restore data from backup for OneDrive
 
-Once you backup your data, you might need to restore the data in case of an accidental deletion, ransomware attack, other event. The Restore feature in Microsoft 365 Backup is created to help you restore backed up data.
+Once you backup your data, you might need to restore the data in case of an accidental deletion, ransomware attack, or other event. The Restore feature in Microsoft 365 Backup is created to help you restore backed up data.
 
 > [!NOTE]
 > We recommend choosing an express restore point for full OneDrive account restores as it will provide the fastest restore experience.
 
 To restore data backed up for OneDrive, follow these steps.
 
-1. Select **Restore** next to OneDrive in Microsoft 365 Backup home page.
+1. In the Microsoft 365 admin center, on the **Microsoft 365 Backup** page, in the **OneDrive** section, select **Restore**.
 
-2. You will see OneDrive accounts preselected on the **Select type of content** page. Select **Next**.
+2. On the **Select type of content** page, you will see **OneDrive accounts** preselected. Select **Next**.
 
-3. Select the accounts to restore from the list of backed up OneDrive accounts. Select **Next**.
+3. From the list of backed up OneDrive accounts, select the accounts to restore, then select **Next**.
 
-4. You will now select the date/time from which you want to restore the content. 
+4. On the **Select the date and time** page, you will select the date and time from which you want to restore the content.
 
-    You can chose a recommended restore point from **Select a faster restore point** which will offer a faster restore compared to standard restore points.
+    Choose a recommended restore point from **Select a faster restore point** which will offer a faster restore compared to standard restore points.
 
-    Backup will restore the closest backed up content *before* the specified date/time. Select **Next**.
+    Backup will restore the closest backed up content *before* the specified date and time. Select **Next**.
 
     For example, assume backup is taken October 2, 2023 8:00 AM and October 2, 10:00 AM PST. If you select date and time as October 2, 2023 9:00 AM PST, Microsoft 365 Backup will restore the OneDrive and its content to its state on October 2, 2023 8:00 AM PST.
 
-5. After selecting a date/time, you will be presented with a list of available express  restore points that will restore with better performance than non-express restore points. We highly recommend choosing and express restore point all else equal.
+5. On the **Confirm restore points** page, you will be presented with a list of available express restore points that will restore with better performance than non-express restore points. We highly recommend that you choose an express restore point all else equal.
 
-6. Now you will be asked to confirm the restore point in time to which the data will be restored from backup. If you are good with the restore point, select **Next**.
+6. On the **Confirm restore points** page, you can confirm the restore point in time to which the data will be restored from backup. If the restore point is correct, select **Next**.
 
 7. Selected OneDrive accounts can be restored by choosing the either the **Restore to the original OneDrive accounts** or **Create new SharePoint site and restore to there** option.
 
@@ -82,9 +82,9 @@ To restore data backed up for OneDrive, follow these steps.
         - The entire OneDrive is replaced by the backed up version chosen based on the restore point.
         - File and folder permissions are also reverted to the selected date and time.
     b. **Create new SharePoint site and restore to there** option
-        - The entire OneDrive will restore to a new SharePoint site where you can then copy/move data into the original OneDrive to create a roll-forward type of restore and avoid overwriting currently healthy data.
+        - The entire OneDrive will restore to a new SharePoint site where you can then copy or move data into the original OneDrive to create a roll-forward type of restore and avoid overwriting currently healthy data.
 
-9.	You will now be asked to review and finish all your choices. If everything looks good, select **Restore OneDrive accounts**.
+8. You will now be asked to review and finish all your choices. If everything looks good, select **Restore OneDrive accounts**.
  
 Screenshot 29 Select OneDrive for restore
  
@@ -111,13 +111,13 @@ Restore feature in Microsoft 365 Backup is created to help you restore backed up
 
 3. Now you need to add the sites you want to restore by selecting on **Add sites**. Select **Next**.
 
-4. You should now pick a restore point. Select the date/time from which you want to restore the content. You can chose a recommended restore point from **Select a faster restore point** which will offer a faster restore compared to standard restore points.
+4. You should now pick a restore point. Select the date and time from which you want to restore the content. You can chose a recommended restore point from **Select a faster restore point** which will offer a faster restore compared to standard restore points.
 
-    Backup will restore the closest backed up content BEFORE the specified date/time. After you select a date and time, select **Next**.
+    Backup will restore the closest backed up content BEFORE the specified date and time. After you select a date and time, select **Next**.
 
     For example, assume backup is taken October 2, 2023 8:00 AM and October 2, 2023 10:00 AM PST. If you select date and time as October 2, 2023, 9:00 AM PST, M365 Backup will restore the site and its content to the state present on October 2, 2023 8:00 AM PST.
 
-5. After selecting a date/time, you will be presented with a list of available express   restore points that will restore with better performance than non-express restore points. We highly recommend choosing and express restore point all else equal.
+5. After selecting a date and time, you will be presented with a list of available express   restore points that will restore with better performance than non-express restore points. We highly recommend choosing and express restore point all else equal.
 
 6. Now you will be asked to confirm the restore point. If you are good with the restore point, select the site and select **Next**.
 
@@ -128,7 +128,7 @@ Restore feature in Microsoft 365 Backup is created to help you restore backed up
         - File and folder permissions and all metadata state are also reverted to the selected date and time.
 
     b. **Create new SharePoint site and restore to there** option
-        - The entire site will restore to a new SharePoint site where you can then copy/move data into the original site or a different site to create a roll-forward type of restore and avoid overwriting currently healthy data.
+        - The entire site will restore to a new SharePoint site where you can then copy or move data into the original site or a different site to create a roll-forward type of restore and avoid overwriting currently healthy data.
 
 8. You will now be asked to review and finish your choices. If everything looks good, select **Restore sites**.
  
