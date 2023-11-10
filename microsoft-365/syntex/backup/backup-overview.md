@@ -25,7 +25,7 @@ description: Learn about Microsoft 365 Backup.
 
 ## About the public preview
 
-Microsoft 365 Backup is currently in public preview and will be rolling out to tenants in late 2023 or early 2024. You can set up up billing for the product as described in the billing setup portion of this document. Once Microsoft 365 Backup has been deployed and is available for use in your tenant, you'll see it in the Microsoft 365 admin center page under **Settings**.
+Microsoft 365 Backup is currently in public preview and will be rolling out to tenants in late 2023 or early 2024. You can set up billing for the product as described in the billing setup portion of this document. Once Microsoft 365 Backup has been deployed and is available for use in your tenant, you'll see it in the Microsoft 365 admin center page under **Settings**.
 
 During the public preview period, performance and speed of web interfaces, initial configuration, and restores might be slower than expected as we scale up our infrastructure to remove undesirable latency from our system.
 
@@ -33,13 +33,13 @@ During the public preview period, performance and speed of web interfaces, initi
 
 This documentation outlines the Microsoft 365 Backup offering for Microsoft. We're partnering with many independent software vendors (ISVs) to provide differentiated versions of their applications integrated with the Microsoft 365 Backup Storage platform—all providing the same underlying performance value proposition for your Microsoft 365 data.
 
-In the case of a ISV application, operation of the Microsoft 365 Backup tool will be managed and paid for entirely through the ISV. Those applications will have the ability to provide a single pane of glass for all of your data estates that require backups, and they might provide additional enhanced experiences.
+In the case of an ISV application, operation of the Microsoft 365 Backup tool will be managed and paid for entirely through the ISV. Those applications will have the ability to provide a single pane of glass for all of your data estates that require backups, and they might provide additional enhanced experiences.
 
 ## Scenarios and value proposition
 
-Business continuity assurance is a top-of-mind concern for many companies. Microsoft 365 Backup delivers business continuity peace of mind by providing performant and reliable restore confidence. When evaluating a backup and restore offering, what really matters isn't solely the backup, but the ability to restore your data to a healthy state quickly when you need to do so.
+Business continuity assurance is a top-of-mind concern for many companies. Microsoft 365 Backup delivers business continuity peace of mind by providing performance and reliable restore confidence. When evaluating a backup and restore offering, what really matters isn't solely the backup, but the ability to restore your data to a healthy state quickly when you need to do so.
 
-In cases of a ransomware attack that encrypts large swaths of your data, or instances of an internal accidental or malicious data deletion or overwrite event, you need to be able to get your business back to a healthy state as soon as possible. This is what the Microsoft 365 Backup product offers, both through the first-party offering in the Microsoft 365 admin center, as well as via third-party applications built on the Microsoft 365 Backup Storage platform.
+In cases of a ransomware attack that encrypts large swaths of your data, or instances of an internal accidental or malicious data deletion or overwrite event, you need to be able to get your business back to a healthy state as soon as possible. This is what the Microsoft 365 Backup product offers, both through the Microsoft offering in the Microsoft 365 admin center, as well as via partner applications built on the Microsoft 365 Backup Storage platform.
 
 To summarize, applications built on top of the Microsoft 365 Backup Storage platform deliver the following benefits regardless of the size or scale of the protected tenant:
 
@@ -84,21 +84,21 @@ Key architectural takeaways:
 
 #### Backup policy performance
 
-Creating a new protection policy will initiate the process of backing up selected SharePoint sites, OneDrive accounts, and Exchange mailboxes. Once you submit a request to activate a valid protection policy, it will take on average up to 60 minutes to process and another 60 minutes to create publish restore points.
+Creating a new protection policy initiates the process of backing up selected SharePoint sites, OneDrive accounts, and Exchange mailboxes. Once you submit a request to activate a valid protection policy, it takes on average up to 60 minutes to process and another 60 minutes to create publish restore points.
 
-Restore points will be physically created in the service as soon as the policy is confirmed to be activated in the tool, even if those restore points take some additional time to become visible in the restore tool.
+Restore points are physically created in the service as soon as the policy is confirmed to be activated in the tool, even if those restore points take some additional time to become visible in the restore tool.
 
 #### Restoration performance
 
-While full OneDrive account and SharePoint site at-scale performance will be good for all restore points, we recommend choosing restore points labeled “express restore points” as those will provide the fastest recovery time objective for SharePoint sites and OneDrive accounts, especially for smaller scale operations.
+While full OneDrive account and SharePoint site at-scale performance will be good for all restore points, we recommend choosing restore points labeled “express restore points” as those provide the fastest recovery time objective for SharePoint sites and OneDrive accounts, especially for smaller scale operations.
 
 It might take on average less than 1 hour for sites or accounts to start restoring when a new restore session is initiated. After the first site or account is restored in a session, the remaining will complete in relatively fast succession.
 
 For Exchange Online, there's no need for “express restore points” as any last known good time chosen with restorable items will occur in the same timely manner.
 
-The following table summarizes expected performance for a normally distributed tenant, including tenants of very large size and scale. Note that during the preview period, actual performance might deviate from these targets.
+The following table summarizes expected performance for a normally distributed tenant, including tenants of very large size and scale. During the preview period, actual performance might deviate from these targets.
 
 |Scenario |First full-container restore completes |Restore of all containers complete |
 |:-------|:-------|:--------|
-| 1,000 sites<br>(30 GB average site size)  |Less than 1 hour  |Less than 12 hours  |
-| 1,000 mailboxes<br>(30 GB average mailbox size)| Less than 1 hour | Less than 12 hours |
+| 1,000 sites<br>(30-GB average site size)  |Less than 1 hour  |Less than 12 hours  |
+| 1,000 mailboxes<br>(30-GB average mailbox size)| Less than 1 hour | Less than 12 hours |
