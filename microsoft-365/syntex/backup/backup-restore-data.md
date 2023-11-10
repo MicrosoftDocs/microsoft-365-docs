@@ -221,6 +221,7 @@ To restore data backed up for Exchange, follow these steps.
     a. **Restore to a new folder** where the content will be restored to a newly created folder named *Recovered Items YYYY-MM-DD, HH:MM*.
 
     Example:
+    
     ![Screenshot showing an example of newly create folder where content has been restored.](../../media/content-understanding/backup-restore-to-new-folder.png)
 
     b. **Restore in place** where the current version of the item will be overwritten by the restored content.
