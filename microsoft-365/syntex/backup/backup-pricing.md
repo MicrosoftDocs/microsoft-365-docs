@@ -30,7 +30,7 @@ The Microsoft 365 Backup service, offered through the Microsoft 365 admin center
 As an example, if you have a site under protection that is currently 1 GB for the first month, you'll be charged 1 GB of Backup usage. If you delete content in that site such that it's now only 0.5 GB, your next monthly bill will still be for 1 GB since the backup tool is retaining that deleted content for a year. After a year when the backup of that deleted content expires, the 0.5 GB being retained for backup purposes will no long be charged for Backup.
 
 > [!NOTE]
-> These prices are subject to change when the product becomes generally available. A third-party application integrated with Microsoft 365 Backup Storage might charge a different rate for their service.
+> These prices are subject to change when the product becomes generally available. A partner application integrated with Microsoft 365 Backup Storage might charge a different rate for their service.
 
 <!---<Include charge model video >--->
 
