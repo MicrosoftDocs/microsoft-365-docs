@@ -44,7 +44,7 @@ It's important to understand the following terms as you navigate hierarchies. Te
 
 ### Example hierarchy
 
-:::image type="content" source="media/frontline-hierarchy-example.png" alt-text="Example of a hierarchy":::
+:::image type="content" source="media/frontline-hierarchy-example.png" alt-text="Diagram of a corporate hierarchy.":::
 
 ## Set up your hierarchy
 
