@@ -114,15 +114,13 @@ When you add an attribute column, keep the following things in mind:
 1. Go to the **Operational hierarchy** tab.
 
       :::image type="content" source="media/frontline-hierarchy-manage.png" alt-text="Screenshot of the table on the Operational hierarchy tab of the Manage frontline teams page, showing options after setup is completed." lightbox="media/frontline-hierarchy-manage.png":::
-1. To view your last successfully uploaded hierarchy CSV file, under **File last uploaded** in the table, select the **Download** link.
+1. To view your last successfully uploaded hierarchy CSV file, select the **Last uploaded file** link in the table.
 1. To make changes to your hierarchy, select the **Operational hierarchy** link in the table. The **Operational hierarchy** pane opens, and from here, you can:
     -  Download the last hierarchy CSV file you uploaded, and then make your changes.
     -  Start fresh and download the template again to create a new hierarchy CSV file.
 
         > [!NOTE]
         > If you created more frontline teams through the [deploy frontline dynamic teams at scale](deploy-dynamic-teams-at-scale.md) experience since the last time you set up your hierarchy, the DisplayName and TeamId values of those frontline teams are added and pre-popluated in the CSV template.
-      
-    [placeholder for screenshot]
 
 1. When you're ready, [upload](#upload-your-hierarchy) your hierarchy CSV file.
 
@@ -132,7 +130,7 @@ If an error occurred during setup, the status in the table shows as **Error** af
 
 You can download a CSV file that lists the errors, along with details that include the row and column in which the error occurred. Use this information to make the necessary changes to resolve the errors.
 
-In the table, select the **View details** link, and then in the **Error details** pane, select **Download error CSV**.
+In the table, select the **View errors** link, and then in the **Error details** pane, select **Download error CSV**.
 
 :::image type="content" source="media/frontline-hierarchy-error.png" alt-text="Screenshot of the Error details pane, showing the option to download the CSV file to view setup error details." lightbox="media/frontline-hierarchy-error.png":::
 
