@@ -43,7 +43,7 @@ Legal holds retain data, but that feature is optimized for export (fr example, v
 
 Mailbox Backup enables the recovery of copies of mailbox item “versions.” Versions are created by two types of actions:
 
-- Modifications 
+- Modifications
 - Deletions
 
 Example events that are versions and recoverable via backup:
