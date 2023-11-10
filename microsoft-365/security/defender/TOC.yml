@@ -29,7 +29,11 @@
         - name: Redirecting Defender for Cloud Apps to Microsoft 365 Defender
           href: microsoft-365-security-mda-redirection.md
       - name: Microsoft 365 Defender integration with Microsoft Sentinel
-        href: microsoft-365-defender-integration-with-azure-sentinel.md
+        items:
+        - name: Microsoft 365 Defender connector for Microsoft Sentinel
+          href: microsoft-365-defender-integration-with-azure-sentinel.md
+        - name: Connect Microsft Sentinel to Microsoft Defender XDR (preview)
+          href: microsoft-sentinel-onboard.md
       - name: Microsoft 365 Defender for US Government customers
         href: usgov.md
       - name: Industry tests
