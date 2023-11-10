@@ -21,7 +21,7 @@ description: Learn how to restore data using restore points and express restore 
 # Restore data in Microsoft 365 Backup (Preview)
 
 > [!NOTE]
-> This feature is currently in public preview and subject to change.
+> This feature is currently in preview and subject to change.
 
 Once you backup your data, you might need to restore the data in case of an accidental deletion, ransomware attack, or other event. The Restore feature in Microsoft 365 Backup is created to help you restore backed up data.
 
@@ -34,7 +34,7 @@ As part of restoring data from backup, admin needs to choose a *restore point* m
 Currently, you can restore Exchange mailbox content, SharePoint sites, and OneDrive accounts from specific prior points in time from the backups. Site restores to a prior point in time, if restored to the same URL, will overwrite the state and the content of the site to match the exact state at the prior point in time. This is commonly referred to as a rollback versus a roll forward. Mailbox restores inherently restore only changed items such that current items that remain unchanged since the desired prior restore point will not be modified or overwritten. Thus, mailbox restores follow a roll forward process. Both site, OneDrive, and mailbox restores can be done in place or in the case of SharePoint sites to a new URL, or in the case of mailbox items a new folder. By restoring to a new location, any undesirable overwriting any existing data is avoided.
 
 > [!NOTE]
-> During the public preview, only full OneDrive account and SharePoint site restore is possible. In the future, file-level granular restore will be possible.
+> During the preview, only full OneDrive account and SharePoint site restore is possible. In the future, file-level granular restore will be possible.
 
 In the future, we will support granular OneDrive and SharePoint file-level restore to provide a roll forward behavior similar to that of mailbox item restores today.
 
@@ -166,7 +166,7 @@ To restore data backed up for Exchange, follow these steps.
 
 1. Select **Restore** next to Exchange in Microsoft 365 Backup home page
 
-2. Select **Exchange mailbox content (emails, notes, contacts, calendars, and tasks)**, and them select **Next**. Note that calendar restores are not supported during the public preview.
+2. Select **Exchange mailbox content (emails, notes, contacts, calendars, and tasks)**, and them select **Next**. Note that calendar restores are not supported during the preview.
 
 3. Select the accounts to restore from the list of backed up Exchange accounts. Select **Next** and you will see two options to select content.
 
