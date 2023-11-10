@@ -100,7 +100,7 @@ To restore data backed up for OneDrive, follow these steps.
     b. **Create new SharePoint site and restore to there** option
         - The entire OneDrive will restore to a new SharePoint site where you can then copy or move data into the original OneDrive to create a roll-forward type of restore and avoid overwriting currently healthy data.
 
-9. On the **Review and finish** page, you'll be asked to review and finish all your choices. If everything looks as you want it, select **Restore OneDrive accounts**.
+9. On the **Review and Finish** page, you'll be asked to review and finish all your choices. If everything looks as you want it, select **Restore OneDrive accounts**.
 
     ![Screenshot showing the Review and finish page for OneDrive.](../../media/content-understanding/backup-onedrive-review-finish.png)
 
@@ -149,7 +149,7 @@ Restore feature in Microsoft 365 Backup is created to help you restore backed up
     b. **Create new SharePoint site and restore to there** option
         - The entire site will restore to a new SharePoint site where you can then copy or move data into the original site or a different site to create a roll-forward type of restore and avoid overwriting currently healthy data.
 
-9. On the **Review and finish** page, you'll be asked to review and finish your choices. If everything looks as you want it, select **Restore sites**.
+9. On the **Review and Finish** page, you'll be asked to review and finish your choices. If everything looks as you want it, select **Restore sites**.
 
     ![Screenshot showing the Review and finish page for SharePoint.](../../media/content-understanding/backup-sharepoint-review-finish.png)
   
@@ -194,7 +194,7 @@ To restore data backed up for Exchange, follow these steps.
     a. **Restore to a new folder** where the content will be restored to a newly created folder named *Restored Items DD-MM-YYYY, HH:MM AM*.
     b.  **Restore in place** where current version of the item will be overwritten by the restored content.
 
-4. On the **Review and finish** page, you'll now be asked to review and finish all your choices. If everything looks as you want it, select **Restore user mailboxes**.
+4. On the **Review and Finish** page, you'll now be asked to review and finish all your choices. If everything looks as you want it, select **Restore user mailboxes**.
 
 5. Track the progress of your newly created task on the **Restoration tasks** tab.
 
@@ -223,6 +223,6 @@ To restore data backed up for Exchange, follow these steps.
 
     b. **Restore in place** where the current version of the item will be overwritten by the restored content.
 
-4. On the **Review and finish** page, you'll now be asked to review and finish all your choices. If everything looks as you want it, select **Restore user mailboxes**.
+4. On the **Review and Finish** page, you'll now be asked to review and finish all your choices. If everything looks as you want it, select **Restore user mailboxes**.
 
 5. Track the progress of your newly created task on the **Restoration tasks** tab.
