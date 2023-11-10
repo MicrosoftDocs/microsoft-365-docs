@@ -21,9 +21,9 @@ description: Learn about offboarding in Microsoft 365 Backup.
 # Offboarding in Microsoft 365 Backup
 
 > [!NOTE]
-> This feature is currently in public preview and subject to change.
+> This feature is currently in preview and subject to change.
 
-To no longer use the Microsoft 365 Backup tool, you must offboard usage. This action includes pausing and deleting all active policies and deleting all of the backed-up data. During the public preview, there are three ways that offboarding is initiated:
+To no longer use the Microsoft 365 Backup tool, you must offboard usage. This action includes pausing and deleting all active policies and deleting all of the backed-up data. During the preview, there are three ways that offboarding is initiated:
 
 - Disable the tool in the pay-as-you-go billing setup panel where you first enabled the tool.
 
@@ -74,7 +74,7 @@ Restoration of any data (such as sites or mailboxes) reverts the sensitivity lab
 
 ## Backup data deletion and undo grace periods
 
-If you need to delete data from the backups during the public preview period, you must offboard from the offering entirely and delete all backups. In the future, we'll enable more granular restore point deletion capabilities.
+If you need to delete data from the backups during the preview period, you must offboard from the offering entirely and delete all backups. In the future, we'll enable more granular restore point deletion capabilities.
 
 Any offboarding or backup deletion activities triggers a 29-day grace period where we'll hold the backup data. If you re-enable the tool, the backups are present in the tool again.  
 
