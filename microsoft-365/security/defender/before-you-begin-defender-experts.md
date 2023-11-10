@@ -40,16 +40,19 @@ Microsoft Defender Experts for Hunting is a separate service from your existing 
 ### Eligibility and licensing
 
 To enable us to get started with this threat hunting service, we require the following licensing prerequisites:
+
 - Microsoft Defender for Endpoint P2 must be licensed and enabled on eligible devices
 - Microsoft Defender Antivirus must be licensed and enabled in active mode on devices onboarded to Defender for Endpoint (required for endpoint detection and response capabilities)
 - Microsoft Entra ID P1 must be licensed for all users and enabled (required for enabling secure service provider access)
 
 The following products are also eligible to get Defender Experts for Hunting coverage, and you must have their appropriate product licenses to get started with the service:
+
 - Microsoft Defender for Office 365 P2
 - Microsoft Defender for Identity
 - Microsoft Defender for Cloud Apps
 
 The following product is **not** covered by this service:
+
 - Microsoft Defender for IoT
 
 ### Server coverage
@@ -102,7 +105,6 @@ If you haven't done so yet, you can complete the customer interest form for Defe
 1. Complete the [customer interest form](https://aka.ms/DEX4HuntingCustomerInterestForm). Anyone from your company can apply, but if you're accepted, you need to work with your Commercial Executive to transact the SKU.
 2. Enter your name, company name, and company email ID.
 3. Select **Submit**. Someone from our sales team will reach out within five business days.
-
 
 ### Next step
 

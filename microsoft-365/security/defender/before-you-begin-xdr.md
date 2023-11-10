@@ -33,16 +33,19 @@ This document outlines the key prerequisites you must meet and essential informa
 ## Eligibility and licensing
 
 Defender Experts for XDR is a separate service from your existing Defender products. To enable us to get started with this managed service, we require the following licensing prerequisites:
+
 - Microsoft Defender for Endpoint P2 must be licensed and enabled on eligible devices
 - Microsoft Defender Antivirus must be licensed and enabled in active mode on devices onboarded to Defender for Endpoint (required for endpoint detection and response capabilities)
 - Microsoft Entra ID P1 must be licensed for all users and enabled (required for enabling secure service provider access)
 
 The following products are also eligible to get Defender Experts for XDR coverage, and you must have their appropriate product licenses to get started with the service:
+
 - Microsoft Defender for Office 365 P2
 - Microsoft Defender for Identity
 - Microsoft Defender for Cloud Apps
 
 The following product is **not** covered by this service:
+
 - Microsoft Defender for IoT
 
 Defender Experts for XDR is a managed extended detection and response (XDR) service. To get native XDR coverage, we recommend deploying the full Microsoft 365 Defender suite.
@@ -86,9 +89,11 @@ When you purchase and onboard to Defender Experts for XDR, you're granting permi
 This service has been developed in alignment with existing security and privacy standards and is working towards several certifications, including ISO 27001 and ISO 27018.
 
 ### Availability
+
 This service is available worldwide for our customers in our commercial public clouds. If you're interested to learn more, reach out to your Microsoft account team.
 
 ### Language
+
 This service is currently delivered in English language only.
 
 ### Next step
@@ -96,6 +101,7 @@ This service is currently delivered in English language only.
 [Get started with Microsoft Defender Experts for XDR](get-started-xdr.md)
 
 ### See also
+
 [General information on Defender Experts for XDR service](frequently-asked-questions.md)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
