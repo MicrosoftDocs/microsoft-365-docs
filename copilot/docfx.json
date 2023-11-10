@@ -43,7 +43,21 @@
       "breadcrumb_path": "/microsoft-365-copilot/breadcrumb/toc.json",
       "feedback_system": "Standard",
       "permissioned-type": "public",
-      "uhfHeaderId": "MSDocsHeader-M365-IT"
+      "uhfHeaderId": "MSDocsHeader-M365-IT",
+      "contributors_to_exclude": [ 
+        "rjagiewich", 
+        "traya1", 
+        "rmca14", 
+        "claydetels19", 
+        "jborsecnik",
+        "tiburd",
+        "garycentric",
+        "v-dihans",
+        "AngelaMotherofDragons",
+        "alexbuckgit", 
+        "beccarobins",
+        "dstrome"
+      ]
     },
     "fileMetadata": {},
     "template": [],
