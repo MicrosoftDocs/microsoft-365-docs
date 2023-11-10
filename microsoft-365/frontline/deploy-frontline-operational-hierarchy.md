@@ -124,7 +124,7 @@ When you add an attribute column, keep the following things in mind:
         > [!NOTE]
         > If you created more frontline teams through the [deploy frontline dynamic teams at scale](deploy-dynamic-teams-at-scale.md) experience since the last time you set up your hierarchy, the DisplayName and TeamId values of those frontline teams are added and pre-popluated in the CSV template.
       
-    [placedholder for screenshot]
+    [placeholder for screenshot]
 
 1. When you're ready, [upload](#upload-your-hierarchy) your hierarchy CSV file.
  <!--1. When you're ready, choose **Select a file**, select your hierarchy CSV file, and then choose **Upload**.-->
