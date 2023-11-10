@@ -137,7 +137,7 @@ When you add an attribute column, keep the following things in mind:
 
 If an error occurred during setup, the status in the table shows as **Error** after you refresh the Manage frontline teams page.
 
-You can download a CSV file lists the errors, along with details that include the row and column in which the error occurred. Use this information to make the necessary changes to resolve the errors.
+You can download a CSV file that lists the errors, along with details that include the row and column in which the error occurred. Use this information to make the necessary changes to resolve the errors.
 
 Choose **View details**, and then in the **Error details** pane, select **Download error CSV**.
 
