@@ -84,9 +84,7 @@ To restore data backed up for OneDrive, follow these steps.
 
     ![Screenshot showing the Confirm restore points page for OneDrive.](../../media/content-understanding/backup-onedrive-confirm-restore.png)
 
-6. On the **Confirm restore points** page, you can confirm the restore point in time to which the data will be restored from backup. If the restore point is correct, select **Next**.
-
-    ![Screenshot showing the Confirm restore points page with Next button for OneDrive.](../../media/content-understanding/backup-onedrive-confirm-restore-next.png)
+6. Confirm the restore point in time to which the data will be restored from backup. If the restore point is correct, select **Next**.
 
 7. On the **Select another backup** panel, choose another backup for the account selected, if needed.
 
@@ -106,21 +104,6 @@ To restore data backed up for OneDrive, follow these steps.
 
     ![Screenshot showing the Review and finish page for OneDrive.](../../media/content-understanding/backup-onedrive-review-finish.png)
 
-Screenshot 29 Select OneDrive for restore
- 
-Screenshot 30 Select date and time for closest restore points
- 
- Screenshot 31 Choose express restore points or click ‘Next’ for standard restore points
- 
-Screenshot 32 Confirm restore point for OneDrive
-  
- 
-Screenshot 33 Choose another backup for account(s) selected, if needed
- 
-Screenshot 34 Select the destination of restore data using selection.
- 
-Screenshot 35 Restore data from OneDrive accounts
- 
 ## Restore data from backup for SharePoint
 
 Restore feature in Microsoft 365 Backup is created to help you restore backed up data to a restore point of your choice. To restore data backed up for SharePoint, follow these steps.
