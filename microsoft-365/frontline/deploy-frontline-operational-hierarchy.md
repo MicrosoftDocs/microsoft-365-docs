@@ -113,7 +113,7 @@ When you add an attribute column, keep the following things in mind:
 1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com/), choose **Teams** > **Manage frontline teams**.
 1. Go to the **Operational hierarchy** tab.
 
-      :::image type="content" source="media/frontline-operational-hierarchy-setup-success.png" alt-text="Screenshot of the table on the Operational hierarchy tab of the Manage frontline teams page, showing options." lightbox="media/frontline-operational-hierarchy-setup-success.png":::
+      :::image type="content" source="media/frontline-operational-hierarchy-manage.png" alt-text="Screenshot of the table on the Operational hierarchy tab of the Manage frontline teams page, showing options after setup is completed." lightbox="media/frontline-operational-hierarchy-manage.png":::
 1. To view your last successfully uploaded hierarchy CSV file, under **File last uploaded** in the table, choose **Download**.
 1. To make changes to your hierarchy, select **Operational hierarchy** in the table. The **Operational hierarchy** pane opens, and from here, you can:
     -  Download the last hierarchy CSV file you uploaded, and then make your changes.
