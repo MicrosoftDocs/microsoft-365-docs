@@ -393,6 +393,10 @@
         href: apps-config-step-6.md
       - name: Step 7. Verify app configuration
         href: apps-config-step-7.md        
+    - name: Secure and protect apps using Microsoft Intune
+      items: 
+      - name: Overview
+        href: apps-protect-overview.md
 
 - name: Compliance
   items:
