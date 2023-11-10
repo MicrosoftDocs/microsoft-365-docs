@@ -31,7 +31,9 @@ As part of restoring data from backup, admin needs to choose a *restore point* m
 
 - **Express restore point**. A set of recommended restore points that will offer fast restore of data from the backup than a regular restore point.
 
-Currently, you can restore Exchange mailbox content, SharePoint sites, and OneDrive accounts from specific prior points in time from the backups. Site restores to a prior point in time, if restored to the same URL, will overwrite the state and the content of the site to match the exact state at the prior point in time. This is commonly referred to as a rollback versus a roll forward. Mailbox restores inherently restore only changed items such that current items that remain unchanged since the desired prior restore point will not be modified or overwritten. Thus, mailbox restores follow a roll forward process. Both site, OneDrive, and mailbox restores can be done in place or in the case of SharePoint sites to a new URL, or in the case of mailbox items a new folder. By restoring to a new location, any undesirable overwriting any existing data is avoided.
+Currently, you can restore Exchange mailbox content, SharePoint sites, and OneDrive accounts from specific prior points in time from the backups. Site restores to a prior point in time, if restored to the same URL, will overwrite the state and the content of the site to match the exact state at the prior point in time. This is commonly referred to as a rollback versus a roll forward.
+
+Mailbox restores inherently restore only changed items such that current items that remain unchanged since the desired prior restore point will not be modified or overwritten. Thus, mailbox restores follow a roll forward process. Both site, OneDrive, and mailbox restores can be done in place or in the case of SharePoint sites to a new URL, or in the case of mailbox items a new folder. By restoring to a new location, any undesirable overwriting any existing data is avoided.
 
 > [!NOTE]
 > During the preview, only full OneDrive account and SharePoint site restore is possible. In the future, file-level granular restore will be possible.
@@ -62,11 +64,17 @@ To restore data backed up for OneDrive, follow these steps.
 
 2. On the **Select type of content** page, you will see **OneDrive accounts** preselected. Select **Next**.
 
-3. From the list of backed up OneDrive accounts, select the accounts to restore, then select **Next**.
+    ![Screenshot showing the Select type of content page with OneDrive accounts selected.](../../media/content-understanding/backup-onedrive-select-type.png)
 
-4. On the **Select the date and time** page, you will select the date and time from which you want to restore the content.
+3. From the list of backed up OneDrive accounts, select the accounts to restore, and then select **Next**.
+
+4. On the **Select the date and time** page, select the date and time from which you want to restore the content.
+
+    ![Screenshot showing the Select the date and time page for OneDrive.](../../media/content-understanding/backup-onedrive-select-date-time.png)
 
     Choose a recommended restore point from **Select a faster restore point** which will offer a faster restore compared to standard restore points.
+
+    ![Screenshot showing the Select a faster restore point option for OneDrive.](../../media/content-understanding/backup-onedrive-select-faster-restore.png)
 
     Backup will restore the closest backed up content *before* the specified date and time. Select **Next**.
 
@@ -74,9 +82,19 @@ To restore data backed up for OneDrive, follow these steps.
 
 5. On the **Confirm restore points** page, you will be presented with a list of available express restore points that will restore with better performance than non-express restore points. We highly recommend that you choose an express restore point all else equal.
 
+    ![Screenshot showing the Confirm restore points page for OneDrive.](../../media/content-understanding/backup-onedrive-confirm-restore.png)
+
 6. On the **Confirm restore points** page, you can confirm the restore point in time to which the data will be restored from backup. If the restore point is correct, select **Next**.
 
-7. Selected OneDrive accounts can be restored by choosing the either the **Restore to the original OneDrive accounts** or **Create new SharePoint site and restore to there** option.
+    ![Screenshot showing the Confirm restore points page with Next button for OneDrive.](../../media/content-understanding/backup-onedrive-confirm-restore-next.png)
+
+7. On the **Select another backup** panel, choose another backup for the account selected, if needed.
+
+    ![Screenshot showing the Select another backup panel for OneDrive.](../../media/content-understanding/backup-onedrive-select-another-backup.png)
+
+8. On the **Set destination** page, selected OneDrive accounts can be restored by choosing the either the **Restore to the original OneDrive accounts** or **Create new SharePoint site and restore to there** option.
+
+    ![Screenshot showing the Select destination page and options for OneDrive.](../../media/content-understanding/backup-onedrive-set-destination.png)
 
     a. **Restore to the original OneDrive accounts** option
         - The entire OneDrive is replaced by the backed up version chosen based on the restore point.
@@ -84,8 +102,10 @@ To restore data backed up for OneDrive, follow these steps.
     b. **Create new SharePoint site and restore to there** option
         - The entire OneDrive will restore to a new SharePoint site where you can then copy or move data into the original OneDrive to create a roll-forward type of restore and avoid overwriting currently healthy data.
 
-8. You will now be asked to review and finish all your choices. If everything looks good, select **Restore OneDrive accounts**.
- 
+9. On the **Review and finish** page, you will be asked to review and finish all your choices. If everything looks as you want it, select **Restore OneDrive accounts**.
+
+    ![Screenshot showing the Review and finish page for OneDrive.](../../media/content-understanding/backup-onedrive-review-finish.png)
+
 Screenshot 29 Select OneDrive for restore
  
 Screenshot 30 Select date and time for closest restore points
@@ -158,7 +178,7 @@ Screenshot 42 Confirm Restore
 |Not set up | No backup policy is set up for this scope.  |
 |Processing |  change to backup policy or a restore is in progress.  |
 
-## Restore data from Exchange mailboxes
+## Restore data from backup for Exchange
 
 Once you have set up protection policies for your mailboxes, you might need to restore the data in case of an accidental deletion, ransomware attack, or other event. The Restore feature in Microsoft 365 Backup is created to help you restore backed up data. To note, Exchange restores will only restore modified or deleted items. Any item that is unaffected in the visible folder structure will remain intact.
 
