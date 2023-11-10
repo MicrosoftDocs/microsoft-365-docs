@@ -48,13 +48,13 @@ For existing users, if an administrator adds or modifies the PDL for a user, tha
 
 The storage location for a one-to-one or one-to-many chat is based on the PDL of the person who created the chat. If that user's PDL is changed, the chat will be migrated to the new geo location. The storage location for a meeting chat is based on the PDL of the meeting organizer.
 
-To find the current location of a user's Teams data, PDL ,and the last movement timestamp for a user [connect to Teams PowerShell](/powershell/module/teams/connect-microsoftteams) and run the following command:
+To find the current location of a user's Teams data, PDL, and the last movement timestamp for a user [connect to Teams PowerShell](/powershell/module/teams/connect-microsoftteams) and run the following command:
 
 ```PowerShell
 Get-MultiGeoRegion -EntityType User -EntityId <UPN>
 ```
 
-The output of the command looks like this : 
+The output of the command looks like this: 
 ```PowerShell
 Region                    : BRA
 LastMovementTimeStamp     : 10/10/2023 8:21:01 PM
