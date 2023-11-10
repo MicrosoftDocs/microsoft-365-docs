@@ -97,6 +97,7 @@ To restore data backed up for OneDrive, follow these steps.
     a. **Restore to the original OneDrive accounts** option
         - The entire OneDrive is replaced by the backed-up version chosen based on the restore point.
         - File and folder permissions are also reverted to the selected date and time.
+
     b. **Create new SharePoint site and restore to there** option
         - The entire OneDrive will restore to a new SharePoint site where you can then copy or move data into the original OneDrive to create a roll-forward type of restore and avoid overwriting currently healthy data.
 
