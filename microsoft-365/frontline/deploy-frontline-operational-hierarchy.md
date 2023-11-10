@@ -44,18 +44,18 @@ It's important to understand the following terms as you navigate hierarchies. Te
 
 ### Example hierarchy
 
-:::image type="content" source="media/frontline-operational-hierarchy-example.png" alt-text="Example of a hierarchy":::
+:::image type="content" source="media/frontline-hierarchy-example.png" alt-text="Example of a hierarchy":::
 
 ## Set up your hierarchy
 
 1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com/), choose **Teams** > **Manage frontline teams**.
 1. Go to the **Operational hierarchy** tab.
 
-    :::image type="content" source="media/frontline-operational-hierarchy-get-started.png" alt-text="Screenshot of the Operational hierarchy tab on the Manage frontline teams page, showing the Get started button." lightbox="media/frontline-operational-hierarchy-get-started.png":::
+    :::image type="content" source="media/frontline-hierarchy-get-started.png" alt-text="Screenshot of the Operational hierarchy tab on the Manage frontline teams page, showing the Get started button." lightbox="media/frontline-hierarchy-get-started.png":::
 
 1. Choose **Get started**. The **Operational hierarchy** pane opens, and from here, you can upload your hierarchy CSV file or download a CSV template to create one.
 
-    :::image type="content" source="media/frontline-operational-hierarchy-download-template.png" alt-text="Screenshot of the Operational hierarchy pane." lightbox="media/frontline-operational-hierarchy-download-template.png":::
+    :::image type="content" source="media/frontline-hierarchy-download-template.png" alt-text="Screenshot of the Operational hierarchy pane." lightbox="media/frontline-hierarchy-download-template.png":::
 1. If you haven't already created a hierarchy CSV file, select **Download the CSV template** to get started.
 
 ## Create your hierarchy
@@ -101,19 +101,19 @@ When you add an attribute column, keep the following things in mind:
 
       Depending on the size of your file, setup might take a few minutes.
 
-      :::image type="content" source="media/frontline-operational-hierarchy-setup.png" alt-text="Screenshot of the table on the Operational hierarchy tab of the Manage frontline teams page, showing setup status." lightbox="media/frontline-operational-hierarchy-setup.png":::
+      :::image type="content" source="media/frontline-hierarchy-setup.png" alt-text="Screenshot of the table on the Operational hierarchy tab of the Manage frontline teams page, showing setup status." lightbox="media/frontline-hierarchy-setup.png":::
 1. Refresh the Manage frontline teams page to check the latest status of your hierarchy setup. Make sure you’re on the **Operational hierarchy** tab after you refresh the page.
 
     When setup is completed, the status in the table is updated to **Success**.
 
-      :::image type="content" source="media/frontline-operational-hierarchy-setup-success.png" alt-text="Screenshot of the table on the Operational hierarchy tab of the Manage frontline teams page, showing a successfully completed setup." lightbox="media/frontline-operational-hierarchy-setup-success.png":::
+      :::image type="content" source="media/frontline-hierarchy-setup-success.png" alt-text="Screenshot of the table on the Operational hierarchy tab of the Manage frontline teams page, showing a successfully completed setup." lightbox="media/frontline-hierarchy-setup-success.png":::
 
 ## Manage your hierarchy
 
 1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com/), choose **Teams** > **Manage frontline teams**.
 1. Go to the **Operational hierarchy** tab.
 
-      :::image type="content" source="media/frontline-operational-hierarchy-manage.png" alt-text="Screenshot of the table on the Operational hierarchy tab of the Manage frontline teams page, showing options after setup is completed." lightbox="media/frontline-operational-hierarchy-manage.png":::
+      :::image type="content" source="media/frontline-hierarchy-manage.png" alt-text="Screenshot of the table on the Operational hierarchy tab of the Manage frontline teams page, showing options after setup is completed." lightbox="media/frontline-hierarchy-manage.png":::
 1. To view your last successfully uploaded hierarchy CSV file, under **File last uploaded** in the table, choose **Download**.
 1. To make changes to your hierarchy, select **Operational hierarchy** in the table. The **Operational hierarchy** pane opens, and from here, you can:
     -  Download the last hierarchy CSV file you uploaded, and then make your changes.
@@ -134,7 +134,7 @@ You can download a CSV file that lists the errors, along with details that inclu
 
 Choose **View details**, and then in the **Error details** pane, select **Download error CSV**.
 
-:::image type="content" source="media/frontline-operational-hierarchy-error.png" alt-text="Screenshot of the Error details pane, showing the option to download the CSV file to view setup error details." lightbox="media/frontline-operational-hierarchy-error.png":::
+:::image type="content" source="media/frontline-hierarchy-error.png" alt-text="Screenshot of the Error details pane, showing the option to download the CSV file to view setup error details." lightbox="media/frontline-hierarchy-error.png":::
 
 ## Delete your hierarchy
 
