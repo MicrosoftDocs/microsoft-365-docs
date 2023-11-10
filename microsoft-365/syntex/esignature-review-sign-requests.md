@@ -132,24 +132,18 @@ When the status of a request is **Completed**, **Canceled**, or **Declined**, th
 
 ## Access the signed document
 
-All parties involved in the request receive an email notification saying that the request has been completed and the status of the request is **Completed**. In the email, you can select **View request** to access the signed document and the request history. Access to the document via the email notification will be available for 30 days after the request is completed.
-
-Additionally, the signed document also is saved to the folder where the original PDF is located (originating folder). It will be a read-only document with the permissions of the originating folder. The document can be accessed by the requester and anyone who has access to the originating folder.
+All parties involved in the request receive an email notification saying that the request has been completed and the status of the request is **Completed**. In the email, you can select **View signed doucment** to access the signed document and the request history. Signers can continue to access and download the signed document from the email notification for 30 days aafter receiving the email. Additionally, request senders will be able to access the originating folder in which the signed document was saved directly form the email.  
 
 > [!NOTE]
 > When you open a PDF document on a SharePoint site, you won't see the details of the request if your default PDF viewer is set to Adobe. You'll need to set PDF viewer as your default viewer.
 
 ### Unable to access the signed document
 
-Before a signature request is sent and at the completion of the request, certain checks are done to ensure that the sender has the permission to write to the document and the originating folder. If the permission changes when the signature request is in progress, the service might not be able to save a copy of the signed document in the originating folder. This event can happen when:
+Before a signature request is sent and at the completion of the request, certain checks are done to ensure that the sender has the permissions to write to the document and the originating folder because the the final signed doucment is saved in this folder. If the sender loses access to this folder at any point before signing is complete, they may not be able to access the signed document permanently. In this scenario, the sender will be provided temporary access of 30 days to the signed document through the completion email. In order to access the folder and document, the sender should ensure that they have read permission to the originating folder or request access from the owner.
 
-- The sender of the request no longer has access to the originating folder. For example, the sender’s access has been revoked by the owner of the originating folder or a SharePoint admin.
+Additionally, the eSignature service might not be able to save a copy of the signed document to the originating folder if the folder was accidentally deleted before the signature request was completed.
 
-- Initial write permission of the sender to the originating folder was downgraded to view only.
-
-- The originating folder was deleted.
-
-To avoid potential issues, you should check the status and settings of their documents before starting a signature request. Ensure that there are sufficient permissions and roles to access and share the documents with their intended recipients.
+To avoid potential issues, you should check the status and settings of the documents and folders before starting a signature request. Ensure that there are sufficient permissions and roles to access and share the documents with their intended recipients.
 
 - Data loss prevention (DLP) policies
 - Microsoft Entra ID collaboration settings
