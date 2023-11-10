@@ -68,6 +68,8 @@ Devices on your network must be running one of these editions. New features or c
 ### Supported Windows versions
 
 - Windows 11 Enterprise
+- Windows 11 Enterprise IoT
+
 - Windows 11 Education
 - Windows 11 Pro
 - Windows 11 Pro Education
@@ -169,3 +171,4 @@ If you're running a third-party antimalware client and use Mobile Device Managem
 - [Onboard devices](onboard-configure.md)
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+
