@@ -19,7 +19,7 @@ ms.collection:
   - tier1
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 09/18/2023
+ms.date: 11/10/2023
 ---
 
 # Before you begin
@@ -37,10 +37,13 @@ Defender Experts for XDR is a separate service from your existing Defender produ
 - Microsoft Defender Antivirus must be licensed and enabled in active mode on devices onboarded to Defender for Endpoint (required for endpoint detection and response capabilities)
 - Microsoft Entra ID P1 must be licensed for all users and enabled (required for enabling secure service provider access)
 
-Aside from the requirements stated previously, to get Defender Experts for XDR coverage for the following eligible products, you must have their appropriate product licenses:
+The following products are also eligible to get Defender Experts for XDR coverage, and you must have their appropriate product licenses to get started with the service:
 - Microsoft Defender for Office 365 P2
 - Microsoft Defender for Identity
 - Microsoft Defender for Cloud Apps
+
+The following product is **not** covered by this service:
+- Microsoft Defender for IoT
 
 Defender Experts for XDR is a managed extended detection and response (XDR) service. To get native XDR coverage, we recommend deploying the full Microsoft 365 Defender suite.
 
@@ -91,4 +94,8 @@ This service is currently delivered in English language only.
 ### Next step
 
 [Get started with Microsoft Defender Experts for XDR](get-started-xdr.md)
+
+### See also
+[General information on Defender Experts for XDR service](frequently-asked-questions.md)
+
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
