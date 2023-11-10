@@ -94,7 +94,7 @@ The semantic index does more than enhance search results; it works to help you u
 
 :::image type="content" source="media/microsoft-365-chat-search-index.png" alt-text="Diagram that shows the relationship between Microsoft 365 Chat and Microsoft Search.":::
 
-Microsoft 365 Copilot and Microsoft 365 E3, E5, Business Standard and Business Premium customers will receive the features as part of a phased rollout (see [enablement](#_Enablement)), with status updates shared via the [Microsoft 365 admin center](https://admin.microsoft.com/) and [Microsoft 365 public roadmap](https://www.microsoft.com/microsoft-365/roadmap).
+Microsoft 365 Copilot and Microsoft 365 E3, E5, Business Standard and Business Premium customers will receive the features as part of a phased rollout, with status updates shared via the [Microsoft 365 admin center](https://admin.microsoft.com/) and [Microsoft 365 public roadmap](https://www.microsoft.com/microsoft-365/roadmap).
 
 We are in the early stages of rolling out the semantic index to all organizations with Microsoft 365 Copilot and an eligible Microsoft 365 license, without any administrative involvement. Microsoft automatically manages the enablement of the semantic index, with prioritization given for organizations that purchase more than 300 licenses for Microsoft 365 Copilot. When user indexing is complete, administrators will see a ‘Semantic indexing is complete’ status in the Microsoft 365 admin center for enabled users. When tenant level indexing starts in an organization, admins will see ‘Semantic index is enabled for your organization’ on the Search and Intelligence page in the Microsoft 365 admin center.
 
