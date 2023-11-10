@@ -79,11 +79,6 @@ To find the current location of a team's data, PDL, and the last movement timest
 Get-MultiGeoRegion -EntityType Group -EntityId <GroupObjectId>
 ```
 
-> [!NOTE]
-> The new version of cmdlets does not need to enable Port 8653. 
->
-
-
 ## User Experience
 
 Teams Multi-Geo is seamless to the end user. Once you change the PDL of a user or a group, the respective data will queue for migration and the migration will occur automatically with no impact to the user or their Teams client even if they’re active while the migration occurs.
