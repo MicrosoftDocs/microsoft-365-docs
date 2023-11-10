@@ -20,7 +20,7 @@ ms.collection:
   - tier1
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 10/17/2023
+ms.date: 11/10/2023
 ---
 
 # Before you begin using Defender Experts for Hunting
@@ -39,14 +39,32 @@ Microsoft Defender Experts for Hunting is a separate service from your existing 
 
 ### Eligibility and licensing
 
-Defender Experts for Hunting customers are assigned 10 **Ask Defender Experts** credits, which you can use to submit questions, at the start of each calendar quarter. Unused credits from the current quarter roll up to the next one. You can use up to 20 credits only per quarter. All unused credits expire by the end of the calendar year or at the end of your subscription term, whichever comes first.
+To enable us to get started with this threat hunting service, we require the following licensing prerequisites:
 
-For more information about Microsoft's commercial licensing terms, visit [this page](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/MCA).
+- Microsoft Defender for Endpoint P2 must be licensed and enabled on eligible devices
+- Microsoft Defender Antivirus must be licensed and enabled in active mode on devices onboarded to Defender for Endpoint (required for endpoint detection and response capabilities)
+- Microsoft Entra ID P1 must be licensed for all users and enabled (required for enabling secure service provider access)
+
+The following products are also eligible to get Defender Experts for Hunting coverage, and you must have their appropriate product licenses to get started with the service:
+
+- Microsoft Defender for Office 365 P2
+- Microsoft Defender for Identity
+- Microsoft Defender for Cloud Apps
+
+The following product is **not** covered by this service:
+
+- Microsoft Defender for IoT
 
 ### Server coverage
 
 Defender Experts for Hunting also covers servers—whether on premises or on a hyperscale cloud service provider—that have Defender for Endpoint deployed on them with a Microsoft Defender for Server license. For Defender Experts coverage, a server is considered as a user account for billing. The service doesn’t cover Microsoft Defender for Cloud.
-[Learn more about specific hardware and software requirements](/microsoft-365/security/defender-endpoint/minimum-requirements).
+[Learn more about specific hardware and software requirements](/microsoft-365/security/defender-endpoint/minimum-requirements)
+
+### Ask Defender Experts
+
+Defender Experts for Hunting customers are assigned 10 **Ask Defender Experts** credits, which you can use to submit questions, at the start of each calendar quarter. Unused credits from the current quarter roll up to the next one. You can use up to 20 credits only per quarter. All unused credits expire by the end of the calendar year or at the end of your subscription term, whichever comes first.
+
+[Learn more about Microsoft's commercial licensing terms](https://www.microsoft.com/licensing/terms/productoffering/Microsoft365/MCA)
 
 ### Access requirements
 
@@ -87,7 +105,6 @@ If you haven't done so yet, you can complete the customer interest form for Defe
 1. Complete the [customer interest form](https://aka.ms/DEX4HuntingCustomerInterestForm). Anyone from your company can apply, but if you're accepted, you need to work with your Commercial Executive to transact the SKU.
 2. Enter your name, company name, and company email ID.
 3. Select **Submit**. Someone from our sales team will reach out within five business days.
-
 
 ### Next step
 
