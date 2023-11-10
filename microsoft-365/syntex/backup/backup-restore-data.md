@@ -42,7 +42,7 @@ Restores started serially for each of three services will execute in parallel. T
 
 ### Restore point frequency
 
-The restore point frequency, also known as the recovery point objective (RPO), defines the maximum amount of time during which data is lost after an attack. Stated differently, it’s the time between the most recent backup of the healthy state of data and the time of the attack. The RPOs for each of the protected services is summarized in the following table.
+The restore point frequency, also known as the [recovery point objective](backup-faq#what-is-the-service-recovery-point-objective) (RPO), defines the maximum amount of time during which data is lost after an attack. Stated differently, it’s the time between the most recent backup of the healthy state of data and the time of the attack. The RPOs for each of the protected services is summarized in the following table.
 
 |Type  |RPO for 0-14 days in the past  |RPO for 15-365 days in the past  |
 |---------|---------|---------|
