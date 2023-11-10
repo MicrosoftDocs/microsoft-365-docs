@@ -27,11 +27,9 @@ ms.date:
 > [!IMPORTANT]
 > This feature will start rolling out for public preview in November 2023. If you would like to provide feedback and improve this feature while in preview, please fill out this form.
 
-Setting up your frontline operational hierarchy enables you to map your organization’s structure of frontline teams and locations to a hierarchy in the Teams admin center. You can organize your organization’s teams by country, region, area, city, district, etc. Using a CSV file, you can connect each of your frontline teams/locations to parent teams to build this hierarchy.
+Setting up your frontline operational hierarchy enables you to map your organization’s structure of frontline teams and locations to a hierarchy in the Teams admin center. You can organize your organization’s teams by country, region, area, city, district, etc. Using a CSV file, you can connect each of your frontline teams/locations to parent teams to build this hierarchy. Admins can also define metadata in the CSV file that ranges from department information to brand information metadata for each team/location.
 
-Admins can also define metadata in the CSV file that ranges from department information to brand information metadata for each team/location. The operational hierarchy coupled with this metadata will enable numerous frontline apps and experiences in the future, like task publishing and additional frontline capabilities that are coming soon.
-
-Start setting up your operational hierarchy today to get the full value of these upcoming features as they're released.
+The operational hierarchy coupled with this metadata will enable numerous frontline apps and experiences in the future, like task publishing and additional frontline capabilities that are coming soon. Start setting up your operational hierarchy today to get the full value of these upcoming features as they're released.
 
 > [!IMPORTANT]
 > If your organization already set up and uploaded a hierarchy through PowerShell to support task publishing, you should continue to [use PowerShell to make updates to your hierarchy for task publishing](/microsoftteams/set-up-your-team-hierarchy). Using the Teams admin center isn't supported yet. Soon, you'll be able to define, manage, and update your hierarchy for task publishing in the Teams admin center, along with PowerShell.
@@ -69,7 +67,7 @@ The schema that defines your hierarchy is based on a CSV file. The file must be 
 The CSV file must contain the following three columns, in the following order, starting at the first column.
 
 > [!IMPORTANT]
-> If you created your frontline teams through the [deploy frontline dynamic teams at scale](deploy-dynamic-teams-at-scale.md) experience, the DisplayName and TeamId values of your frontline teams are pre-populated in the CSV template. Otherwise, you'll need to manually add your team names and team IDs to these columns in the template.
+> If you created your frontline teams through the [deploy frontline dynamic teams at scale](deploy-dynamic-teams-at-scale.md) experience, the DisplayName and TeamId values of your frontline teams are pre-populated in the CSV template. Otherwise, you'll need to manually add your teams and team IDs to these columns in the template.
 
 | Column name   | Required | Description   |
 ----------------|----------|---------------|
@@ -118,13 +116,16 @@ When you add an attribute column, keep the following things in mind:
 1. Go to the **Operational hierarchy** tab.
 
       :::image type="content" source="media/frontline-operational-hierarchy-setup-success.png" alt-text="Screenshot of the table on the Operational hierarchy tab of the Manage frontline teams page, showing options." lightbox="media/frontline-operational-hierarchy-setup-success.png":::
-1. To download and view your last successfully uploaded hierarchy CSV file, under **File last uploaded** in the table, choose **Download**.
+1. To view your last successfully uploaded hierarchy CSV file, under **File last uploaded** in the table, choose **Download**.
 1. To make changes to your hierarchy, select **Operational hierarchy** in the table. The **Operational hierarchy** pane opens, and from here, you can:
     -  Download your last uploaded hierarchy CSV file.
     -  Start fresh and download the template again to create a new hierarchy CSV file.
 
         > [!NOTE]
-        > If you created more frontline teams through the [deploy frontline dynamic teams at scale](deploy-dynamic-teams-at-scale.md) experience since the last time you set up your hierarchy, the DisplayName and TeamId values of those frontline teams are added to the CSV template.
+        > If you created more frontline teams through the [deploy frontline dynamic teams at scale](deploy-dynamic-teams-at-scale.md) experience since the last time you set up your hierarchy, the DisplayName and TeamId values of those frontline teams are added and pre-popluated in the CSV template.
+      
+    [placedholder for screenshot]
+
 1. When you're ready, [upload](#upload-your-hierarchy) your hierarchy CSV file.
  <!--1. When you're ready, choose **Select a file**, select your hierarchy CSV file, and then choose **Upload**.-->
 
