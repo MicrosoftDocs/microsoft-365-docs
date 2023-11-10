@@ -44,11 +44,9 @@ By bringing your billing back to a healthy state or by asking support to reverse
 ## GDPR special handling, compliance, and backup data deletion
 
 > [!IMPORTANT]
-> The information in this section is very important. Please read carefully.
+> Given that compliance tooling actions might destroy primary data, we administratively isolate those destructive actions from flowing through to backed up data automatically. In other words, compliance actions that automatically delete your primary data will not automatically delete data from your backups.
 
 The core purpose of the backup and restore service is to provide you with a way to recover from common data deletion, overwrite, or encryption events.
-
-Important Note: Given that compliance tooling actions that destroy primary data is administratively isolated from actions that destroy the backed and won't delete the backed-up data automatically.
 
 ### eDiscovery
 
