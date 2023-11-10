@@ -143,6 +143,6 @@ Choose **View details**, and then in the **Error details** pane, select **Downlo
 
 :::image type="content" source="media/frontline-operational-hierarchy-error.png" alt-text="Screenshot of the Error details pane, showing the option to download the CSV file to view setup error details." lightbox="media/frontline-operational-hierarchy-error.png":::
 
-## Delete your operational hierarchy
+## Delete your hierarchy
 
 To delete your hierarchy, [upload](#upload-your-hierarchy) a blank CSV file.
