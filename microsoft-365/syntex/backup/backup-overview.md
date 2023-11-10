@@ -21,13 +21,13 @@ description: Learn about Microsoft 365 Backup.
 # Overview of Microsoft 365 Backup (Preview)
 
 > [!NOTE]
-> This feature is currently in public preview and subject to change. Before you begin, read the [Microsoft 365 Backup preview terms and conditions](backup-preview-terms.md).
+> This feature is currently in preview and subject to change. Before you begin, read the [Microsoft 365 Backup preview terms and conditions](backup-preview-terms.md).
 
-## About the public preview
+## About the preview
 
-Microsoft 365 Backup is currently in public preview and will be rolling out to tenants in late 2023 or early 2024. You can set up billing for the product as described in [Set up Microsoft 365 Backup](backup-setup.md). Once Microsoft 365 Backup has been deployed and is available for use in your tenant, you'll see it in the Microsoft 365 admin center page under **Settings**.
+Microsoft 365 Backup is currently in preview and will be rolling out to tenants in late 2023 or early 2024. You can set up billing for the product as described in [Set up Microsoft 365 Backup](backup-setup.md). Once Microsoft 365 Backup has been deployed and is available for use in your tenant, you'll see it in the Microsoft 365 admin center page under **Settings**.
 
-During the public preview period, performance and speed of web interfaces, initial configuration, and restores might be slower than expected as we scale up our infrastructure to remove undesirable latency from our system.
+During the preview period, performance and speed of web interfaces, initial configuration, and restores might be slower than expected as we scale up our infrastructure to remove undesirable latency from our system.
 
 ## Microsoft and partner offerings
 
@@ -80,7 +80,7 @@ Key architectural takeaways:
 ### General availability performance targets
 
 > [!IMPORTANT]
-> During the public preview period, performance and speed of web interfaces, initial configuration, and restores might be slower than expected as we scale up our infrastructure to remove undesirable latency from our system. The following performance targets are not guarantees during the preview and might change at general availability.
+> During the preview period, performance and speed of web interfaces, initial configuration, and restores might be slower than expected as we scale up our infrastructure to remove undesirable latency from our system. The following performance targets are not guarantees during the preview and might change at general availability.
 
 #### Backup policy performance
 
