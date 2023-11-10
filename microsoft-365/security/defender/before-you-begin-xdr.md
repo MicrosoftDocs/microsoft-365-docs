@@ -19,7 +19,7 @@ ms.collection:
   - tier1
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 09/18/2023
+ms.date: 11/10/2023
 ---
 
 # Before you begin
@@ -33,14 +33,20 @@ This document outlines the key prerequisites you must meet and essential informa
 ## Eligibility and licensing
 
 Defender Experts for XDR is a separate service from your existing Defender products. To enable us to get started with this managed service, we require the following licensing prerequisites:
+
 - Microsoft Defender for Endpoint P2 must be licensed and enabled on eligible devices
 - Microsoft Defender Antivirus must be licensed and enabled in active mode on devices onboarded to Defender for Endpoint (required for endpoint detection and response capabilities)
-- Azure Active Directory (Azure AD) Premium P1 must be licensed for all users and enabled (required for enabling secure service provider access)
+- Microsoft Entra ID P1 must be licensed for all users and enabled (required for enabling secure service provider access)
 
-Aside from the requirements stated previously, to get Defender Experts for XDR coverage for the following eligible products, you must have their appropriate product licenses:
+The following products are also eligible to get Defender Experts for XDR coverage, and you must have their appropriate product licenses to get started with the service:
+
 - Microsoft Defender for Office 365 P2
 - Microsoft Defender for Identity
 - Microsoft Defender for Cloud Apps
+
+The following product is **not** covered by this service:
+
+- Microsoft Defender for IoT
 
 Defender Experts for XDR is a managed extended detection and response (XDR) service. To get native XDR coverage, we recommend deploying the full Microsoft 365 Defender suite.
 
@@ -74,7 +80,7 @@ All data used for hunting from existing Defender services will continue to resid
 
 Defender Experts for XDR operational data, such as case tickets and analyst notes, are generated and stored in a Microsoft data center in the US region for the length of the service, irrespective of the Microsoft 365 Defender service storage location. Data generated for the reporting dashboard is stored in customer's Microsoft 365 Defender service storage location. Reporting data and operational data will be retained for a grace period of no more than 90 days after a customer’s subscription expires. If the customer terminates their subscription, data will be deleted within 30 days.
 
-Microsoft experts hunt over [advanced hunting logs](advanced-hunting-schema-tables.md) in Microsoft 365 Defender advanced hunting tables. The data in these tables depend on the set of Defender services the customer is enabled for (for example, Defender for Endpoint, Defender for Office 365, Defender for Identity, Defender for Cloud Apps, and Azure AD). Experts also use a large set of internal threat intelligence data to inform their hunting and automation.
+Microsoft experts hunt over [advanced hunting logs](advanced-hunting-schema-tables.md) in Microsoft 365 Defender advanced hunting tables. The data in these tables depend on the set of Defender services the customer is enabled for (for example, Defender for Endpoint, Defender for Office 365, Defender for Identity, Defender for Cloud Apps, and Microsoft Entra ID). Experts also use a large set of internal threat intelligence data to inform their hunting and automation.
 
 ### Security and compliance
 
@@ -83,12 +89,19 @@ When you purchase and onboard to Defender Experts for XDR, you're granting permi
 This service has been developed in alignment with existing security and privacy standards and is working towards several certifications, including ISO 27001 and ISO 27018.
 
 ### Availability
+
 This service is available worldwide for our customers in our commercial public clouds. If you're interested to learn more, reach out to your Microsoft account team.
 
 ### Language
+
 This service is currently delivered in English language only.
 
 ### Next step
 
 [Get started with Microsoft Defender Experts for XDR](get-started-xdr.md)
+
+### See also
+
+[General information on Defender Experts for XDR service](frequently-asked-questions.md)
+
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

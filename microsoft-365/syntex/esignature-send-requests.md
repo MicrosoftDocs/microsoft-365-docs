@@ -71,11 +71,11 @@ The PDF viewer is opened by selecting a PDF file from SharePoint Online. The abi
 
 Syntex eSignature is an extension of SharePoint document storage and management service. Therefore, all existing access, sharing, and data loss prevention policies that are already applied at the tenant level, SharePoint site and library level, or folder and file level might affect whether a request can be started from a document in SharePoint and who it can be sent to. Some of the scenarios that might affect the signature request process are:
 
-- The document has a sensitivity label applied that restricts access or sharing. This event limits who can start signature request with that document or the recipients that it can be sent to, depending on the label settings and the user's role.
+- If encryption is applied (for example, sensitivity labeling applied to the file), the ability to view the document wouldn't be available from SharePoint Online and therefore can't start a Signature request from there. Read more about [sensitivity labels](/purview/sensitivity-labels).
 
 - The document is stored in a library or folder that has unique permissions or sharing settings. This event might override the default settings of the SharePoint site or tenant and either allow or block certain users from initiating or accessing an eSignature request with that document.
 
-- Microsoft Entra ID collaboration settings restrict document sharing to specific individuals. This event limits who the requests can be sent to.
+- Microsoft Entra collaboration settings restrict document sharing to specific individuals. This event limits who the requests can be sent to.
 
 ### Cancel a signature request
 
@@ -99,7 +99,7 @@ When a signature request is created, an email notification is sent to the recipi
 
 ### Access the document to be signed
 
-When you receive the email notification, select **View signed document** in the email to begin the signing process.
+When you receive the email notification, select **View request** in the email to begin the signing process.
 
 ![Screenshot of an email notification showing the View request button.](../media/content-understanding/esignature-notification-view-request.png)
 
@@ -208,27 +208,23 @@ When the status of a request is **Completed**, **Canceled**, or **Declined**, th
 
 ## Access the signed document
 
-All parties involved in the request receive an email notification saying that the request has been completed and the status of the request is **Completed**. In the email, you can select **View request** to access the signed document and the request history. Access to the document via the email notification will be available for 30 days after the request is completed.
+All parties involved in the request receive an email notification saying that the request has been completed and the status of the request is **Completed**. In the email, you can select **View signed document** to access the signed document and the request history. Access to the document via the email notification will be available for 30 days to all recipients after the request is completed.
 
-Additionally, the signed document also is saved to the folder where the original PDF is located (originating folder). It will be a read-only document with the permissions of the originating folder. The document can be accessed by the requester and anyone who has access to the originating folder.
+Additionally, the signed document also is saved to the folder where the original PDF is located (originating folder). It will be a read-only document with the permissions of the originating folder. The sender of the request will also receive a link to this folder in the email notification so they can access the document. Anyone who has access to the originating folder would also be able to access the signed document.
 
 > [!NOTE]
 > When you open a PDF document on a SharePoint site, you won't see the details of the request if your default PDF viewer is set to Adobe. You'll need to set PDF viewer as your default viewer.
 
 ### Unable to access the signed document
 
-Before a signature request is sent and at the completion of the request, certain checks are done to ensure that the sender has the permission to write to the document and the originating folder. If the permission changes when the signature request is in progress, the service might not be able to save a copy of the signed document in the originating folder. This event can happen when:
+Before a signature request is sent and at the completion of the request, certain checks are done to ensure that the sender has the permission to write to the document and the originating folder. If the sender loses access to this folder at any point before signing is complete, they would receive a url link to the signed document. This URL link will expires 30 days from the day of receiving the notification. In order to access the folder where the document is saved, the sender will need to request access to the folder from the owner. 
 
-- The sender of the request no longer has access to the originating folder. For example, the sender’s access has been revoked by the owner of the originating folder or a SharePoint admin.
-
-- Initial write permission of the sender to the originating folder was downgraded to view only.
-
-- The originating folder was deleted.
+Additionally, the service might not be able to save a copy of the signed document to the originating folder if the folder was accidentally deleted.
 
 To avoid potential issues, you should check the status and settings of their documents before starting a signature request. Ensure that there are sufficient permissions and roles to access and share the documents with their intended recipients.
 
 - Data loss prevention (DLP) policies
-- Microsoft Entra ID collaboration settings
+- Microsoft Entra collaboration settings
 - SharePoint sharing settings and policies
 - User permissions and document access
 
@@ -237,4 +233,3 @@ To avoid potential issues, you should check the status and settings of their doc
 After all recipients have signed the document, the signatures are added and an audit trail is appended to the signed PDF. Details of the request, including activities and timestamps of when they occurred throughout the signing process, are included. The details include the date and time the request created, date and time when the recipients signed, and so on. These details provide evidence of the integrity of the signing process. The signed document is then digitally signed by a Microsoft certificate to ensure that it can't be tampered with.  
 
 For setup and technical information for admins, see [Set up Microsoft Syntex eSignature (Preview)](esignature-setup.md).
-

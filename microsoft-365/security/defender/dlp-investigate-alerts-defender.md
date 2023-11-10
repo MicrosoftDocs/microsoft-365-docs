@@ -68,7 +68,7 @@ It is best practice to only grant minimal permissions to alerts in the Microsoft
 
 ## Before you start
 
-[Turn on alerts for all your DLP policies](/purview/dlp-create-deploy-policy.md) in the <a href="https://purview.microsoft.com" target="_blank">Microsoft Purview compliance portal</a>.
+[Turn on alerts for all your DLP policies](/purview/dlp-create-deploy-policy) in the <a href="https://purview.microsoft.com" target="_blank">Microsoft Purview compliance portal</a>.
 
 > [!NOTE]
 > [Administrative units](/microsoft-365/compliance/microsoft-365-compliance-center-permissions#administrative-units) restrictions flow from data loss prevention (DLP) into the Defender portal. If you are an administrative unit restricted admin, you'll only see the DLP alerts for your administrative unit.
@@ -97,7 +97,7 @@ If the alert is for a file in SharePoint Online or One Drive for Business, you c
 - Unshare
 - Delete
 - Apply sensitivity label
-- Download
+- Download ([data classification content viewer role](/microsoft-365/security/office-365-security/scc-permissions#role-groups-in-microsoft-defender-for-office-365-and-microsoft-purview-compliance) is required for this action)
 - Withdraw feedback
 
 For remediation actions, select the **User card** on the top of the alert page to open the user details.

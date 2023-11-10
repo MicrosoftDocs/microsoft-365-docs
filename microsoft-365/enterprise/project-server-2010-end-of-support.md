@@ -2,7 +2,7 @@
 title: "Project Server 2010 end-of-support roadmap"
 ms.author: efrene
 author: efrene
-manager: pamg
+manager: pamgreen
 ms.date: 04/14/2020
 audience: ITPro
 ms.topic: conceptual

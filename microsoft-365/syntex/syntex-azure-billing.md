@@ -72,11 +72,13 @@ To see the charges applied to the Syntex meters
 The following Microsoft Syntex products are currently available:
 
 - Prebuilt document processing
+- Structured and freeform document processing
 - Unstructured document processing
 - Content assembly
 - Image tagging
 - Taxonomy tagging
 - Optical character recognition
+<!---- Microsoft 365 Archive--->
 
 The following tags are available:
 - Site

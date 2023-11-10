@@ -1,6 +1,6 @@
 ---
 title: "Manage ownerless Microsoft 365 groups and teams"
-ms.reviewer: arvaradh
+ms.reviewer: rahulnayak
 ms.date: 04/04/2022
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -37,7 +37,7 @@ When creating the policy, you can specify:
 - Which groups or teams are part of the policy. A maximum of 50 groups can be selected.
 
 > [!Note]
-> Using a security group to limit who can be invited to be an owner requires that you possess but not necessarily assign an Azure AD Premium license for each Microsoft 365 group member in your organization.
+> Using a security group to limit who can be invited to be an owner requires that you possess but not necessarily assign a Microsoft Entra ID P1 or P2 license for each Microsoft 365 group member in your organization.
 
 To set an ownerless group or team policy
 
