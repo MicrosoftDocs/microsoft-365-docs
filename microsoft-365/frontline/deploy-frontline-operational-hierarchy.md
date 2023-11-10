@@ -27,7 +27,7 @@ ms.date:
 > [!IMPORTANT]
 > This feature will start rolling out for public preview in November 2023. If you would like to provide feedback and improve this feature while in preview, please fill out this form.
 
-Setting up your frontline operational hierarchy enables you to map your organization’s structure of frontline teams and locations to a hierarchy in the Teams admin center. You can organize your organization’s teams by country, region, area, city, district, etc. Using a CSV file, you can connect each of your frontline teams/locations to parent teams to build this hierarchy. Admins can also define metadata in the CSV file that ranges from department information to brand information metadata for each team/location.
+Setting up your frontline operational hierarchy enables you to map your organization’s structure of frontline teams and locations to a hierarchy in the Teams admin center. You can organize your organization’s teams by country, region, area, city, district, etc. Using a CSV file, you can connect each of your frontline teams and locations to parent teams to build this hierarchy. Admins can also define metadata in the CSV file that ranges from department information to brand information metadata for each team and location.
 
 The operational hierarchy coupled with this metadata will enable numerous frontline apps and experiences in the future, like task publishing and additional frontline capabilities that are coming soon. Start setting up your operational hierarchy today to get the full value of these upcoming features as they're released.
 
