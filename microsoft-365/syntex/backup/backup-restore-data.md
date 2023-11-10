@@ -177,10 +177,10 @@ To restore data backed up for Exchange, follow these steps.
 
 4. On the **Content scope** page, you'll see two options to choose from:
 
-    - **All emails, notes, contacts, calendars, and tasks**
-    - **Selected content only**
+    - [Option 1: All emails, notes, contacts, calendars, and tasks](#option-1-all-emails-notes-contacts-calendars-and-tasks)
+    - [Option 2: Selected content only](#option-2-selected-content-only)
 
-### Option 1 - All emails, notes, contacts, calendars, and tasks
+### Option 1: All emails, notes, contacts, calendars, and tasks
 
 1. Use this option to perform a full mailbox restore, On the **Content scope** page, the **All emails, notes, contacts, calendars, and tasks** option lets you restore all emails, notes, contacts, and tasks, and modified calendar items for that user account. Select the last known good (LKG) date and time from which you want to restore the content. Make sure that the time zone in the dropdown menu reflects your intention, and select **Next**.
 
@@ -199,7 +199,7 @@ To restore data backed up for Exchange, follow these steps.
 
 5. Track the progress of your newly created task on the **Restoration tasks** tab.
 
-### Option 2 - Selected content only
+### Option 2: Selected content only
 
 1. Use this option to perform a partial mailbox restore. On the **Content scope** page, the **Selected content only** option gives the admin the ability to do a granular restore only (not full mailbox restore). This requires additional privileges to run.
 
@@ -219,6 +219,7 @@ To restore data backed up for Exchange, follow these steps.
 3. The destination of restored items can be chosen from two options, then select **Next**.
 
     a. **Restore to a new folder** where the content will be restored to a newly created folder named *Recovered Items YYYY-MM-DD, HH:MM*.
+
     Example:
     ![Screenshot showing an example of newly create folder where content has been restored.](../../media/content-understanding/backup-restore-to-new-folder.png)
 
