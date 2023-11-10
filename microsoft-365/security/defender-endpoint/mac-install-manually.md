@@ -212,7 +212,7 @@ mdatp threat list
 
 Run an EDR detection test to verify that the device is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded device:
 
-1. In your browser such as Microsoft Edge for Mac or Safari, download MDATP MacOS DIY.zip from [https://aka.ms/mdatpmacosdiy](https://aka.ms/mdatpmacosdiy)and extract.
+1. In your browser, Microsoft Edge for Mac or Safari, download MDATP MacOS DIY.zip from [https://aka.ms/mdatpmacosdiy](https://aka.ms/mdatpmacosdiy)and extract.
 
       The following prompt appears:
 
@@ -250,17 +250,27 @@ Run an EDR detection test to verify that the device is properly onboarded and re
 
 10. Click **Open**.
 
-    In a few minutes an alert named "macOS EDR Test Alert" should be raised.
+    In few minutes an alert *macOS EDR Test Alert* is raised.
 
 11. Go to Microsoft 365 Defender portal (https://security.microsoft.com/).
 
-12. Go to the Alert Queue.
+12. Go to the **Alert** Queue.
 
     :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="An macOS EDR test alert that shows severity, category, detection source, and a collapsed menu of actions" lightbox="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png":::
 
     This is a macOS EDR test alert that shows severity, category, detection source, and a collapsed menu of actions.
 
     Look at the alert details and the device timeline, and perform the regular investigation steps.
+
+Next steps that you may consider performing are to add AV exclusions as needed for application compatibility or performance:
+
+- [Configure and validate exclusions for Microsoft Defender for Endpoint on macOS](mac-exclusions.md)
+- [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md)
+- [Manage suppression rules](manage-suppression-rules.md)
+- [Create indicators of compromise (IoC)](manage-indicators.md)
+- [Create and manage custom detections rules](../defender/custom-detection-rules.md)
+
+Read through [Microsoft Defender for Endpoint Security Operations Guide](mde-sec-ops-guide.md).
 
 ## Logging installation issues
 
