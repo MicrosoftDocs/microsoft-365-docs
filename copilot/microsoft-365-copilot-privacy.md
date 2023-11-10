@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 description: "Learn how Microsoft 365 Copilot uses data and how it stores and protects that data."
 hideEdit: true
-ms.date: 11/06/2023
+ms.date: 11/10/2023
 ---
 
 # Data, Privacy, and Security for Microsoft 365 Copilot
@@ -75,6 +75,9 @@ While Microsoft 365 Copilot is already able to use the apps and data within the 
 When plugins are enabled, Microsoft 365 Copilot determines whether it needs to use a specific plugin to help provide a relevant response to the user. If a plugin is needed, Microsoft 365 Copilot generates a search query to send to the plugin on the user’s behalf. The query is based on the user’s prompt, conversation history, and data the user has access to in Microsoft 365.
 
 In the **Integrated apps** section of the [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview), admins can view the permissions and data access required by a plugin as well as the plugin’s terms of use and privacy statement. Admins have full control to select which plugins are allowed in their organization. A user can only access the plugins that their admin allows and that the user installed or is assigned. Microsoft 365 Copilot only uses plugins that are turned on by the user.
+
+> [!NOTE]
+> The policy settings that control the use of optional connected experiences in Microsoft 365 Apps don’t apply to plugins.
 
 For more information, see the following articles:
 
