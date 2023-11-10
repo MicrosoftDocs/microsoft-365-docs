@@ -132,8 +132,6 @@ You can download a CSV file that lists the errors, along with details that inclu
 
 In the table, select the **View errors** link, and then in the **Error details** pane, select **Download error CSV**.
 
-:::image type="content" source="media/frontline-hierarchy-error.png" alt-text="Screenshot of the Error details pane, showing the option to download the CSV file to view setup error details." lightbox="media/frontline-hierarchy-error.png":::
-
 ## Delete your hierarchy
 
 To delete your hierarchy, [upload](#upload-your-hierarchy) a blank CSV file.
