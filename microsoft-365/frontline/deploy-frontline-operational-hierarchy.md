@@ -46,14 +46,19 @@ It's important to understand the following terms as you navigate hierarchies. Te
 
 ### Example hierarchy
 
-:::image type="content" source="media/frontline-operational-hierarchy-example.png" alt-text="Example of a frontline operational hierarchy":::
+:::image type="content" source="media/frontline-operational-hierarchy-example.png" alt-text="Example of a hierarchy":::
 
 ## Set up your operational hierarchy
 
 1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com/), choose **Teams** > **Manage frontline teams**.
 1. Go to the **Operational hierarchy** tab.
-1. Choose **Get started**. The **Operational hierarchy** opens, and from here, you can upload your hierarchy CSV file or download a template to create one.
-1. If you haven't already created a hierarchy CSV file, select **Download the CSV template** to start creating it.
+
+    :::image type="content" source="media/frontline-operational-hierarchy-get-started.png" alt-text="Screenshot of the Operational hierarchy tab on the Manage frontline teams page, showing the Get started button." lightbox="media/frontline-operational-hierarchy-get-started.png":::
+
+1. Choose **Get started**. The **Operational hierarchy** pane opens, and from here, you can upload your hierarchy CSV file or download a CSV template to create one.
+
+    :::image type="content" source="media/frontline-operational-hierarchy-download-template.png" alt-text="Screenshot of the Operational hierarchy pane." lightbox="media/frontline-operational-hierarchy-download-template.png":::
+1. If you haven't already created a hierarchy CSV file, select **Download the CSV template** to get started.
 
 ## Create your operational hierarchy
 
@@ -69,7 +74,7 @@ The CSV file must contain the following three columns, in the following order, s
 | Column name   | Required | Description   |
 ----------------|----------|---------------|
 | DisplayName    | Yes      | The name of the node. The name can be up to 100 characters long and contain only the characters A-Z, a-z, and 0-9. Node names must be unique.|
-| ParentName    | Yes       | The name of the parent node. The value you specify here must match the value in the **DisplayName** field of the parent node exactly. If you want to add more than one parent node, separate each parent node name with a semicolon (;). You can add up to 25 parent nodes, and each parent node name can be up to 2500 characters long. A node can have multiple parent nodes only if the parent nodes are root nodes. <br><br>**IMPORTANT** Be careful not to create a loop where a parent higher up in the hierarchy references a child node lower in the hierarchy. This structure isn't supported. |
+| ParentName    | Yes       | The name of the parent node. The value you specify here must match the **DisplayName** value of the parent node exactly. If you want to add more than one parent node, separate each parent node name with a semicolon (;). You can add up to 25 parent nodes, and each parent node name can be up to 2500 characters long. A node can have multiple parent nodes only if the parent nodes are root nodes. <br><br>**IMPORTANT** Be careful not to create a loop where a parent higher up in the hierarchy references a child node lower in the hierarchy. This structure isn't supported. |
 | TeamId        | Yes, if the team is a leaf node.| The ID of the team you want to link a node to. Each node must refer to a unique team, so each TeamId value can appear only one time in the hierarchy file.|
 
 <!--<br><br>To get the ID of a team you want to link a node to, run the following PowerShell command: `Get-Team | Export-Csv TeamList.csv`. This command lists the teams in your organization and includes the name and ID of each team. Find the name of the team you want to link to, and then copy the ID to this field.-->
@@ -98,15 +103,21 @@ When you add an attribute column, keep the following things in mind:
 
 1. In the **Operational hierarchy** pane, choose **Select a file**, select your hierarchy CSV file, and then choose **Upload**. The maximum file size is 1 MB.
 
-    Depending on the size of your file, setup might take a few minutes.
+      Depending on the size of your file, setup might take a few minutes.
+
+      :::image type="content" source="media/frontline-operational-setup.png" alt-text="Screenshot of the table on the Operational hierarchy tab of the Manage frontline teams page, showing setup status." lightbox="media/frontline-operational-setup.png":::
 1. Refresh the Manage frontline teams page to check the latest status of your hierarchy setup. Make sure you’re on the **Operational hierarchy** tab after you refresh the page.
 
     When setup is completed, the status in the table is updated to **Success**.
+
+      :::image type="content" source="media/frontline-operational-setup-success.png" alt-text="Screenshot of the table on the Operational hierarchy tab of the Manage frontline teams page, showing a successfully completed setup." lightbox="media/frontline-operational-setup-success.png":::
 
 ## Manage your operational hierarchy
 
 1. In the left navigation of the [Teams admin center](https://admin.teams.microsoft.com/), choose **Teams** > **Manage frontline teams**.
 1. Go to the **Operational hierarchy** tab.
+
+      :::image type="content" source="media/frontline-operational-setup-success.png" alt-text="Screenshot of the table on the Operational hierarchy tab of the Manage frontline teams page, showing options." lightbox="media/frontline-operational-setup-success.png":::
 1. To download and view your last successfully uploaded hierarchy CSV file, under **File last uploaded** in the table, choose **Download**.
 1. To make changes to your hierarchy, select **Operational hierarchy** in the table. The **Operational hierarchy** pane opens, and from here, you can:
     -  Download your last uploaded hierarchy CSV file.
@@ -129,6 +140,8 @@ If an error occurred during setup, the status in the table shows as **Error** af
 You can download a CSV file lists the errors, along with details that include the row and column in which the error occurred. Use this information to make the necessary changes to resolve the errors.
 
 Choose **View details**, and then in the **Error details** pane, select **Download error CSV**.
+
+:::image type="content" source="media/frontline-operational-error.png" alt-text="Screenshot of the Error details pane, showing the option to download the CSV file to view setup error details." lightbox="media/frontline-operational-error.png":::
 
 ## Delete your operational hierarchy
 
