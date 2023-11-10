@@ -19,7 +19,7 @@ ms.collection:
   - tier1
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 11/07/2023
+ms.date: 11/10/2023
 ---
 
 # Additional information
@@ -45,5 +45,6 @@ If you don't have your own security IR team, [Microsoft Incident Response](https
 
 ### See also
 
-[Frequently asked questions](frequently-asked-questions.md)
+[General information on Defender Experts for XDR service](frequently-asked-questions.md)
+
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
