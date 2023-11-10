@@ -23,23 +23,23 @@ description: Read frequently asked questions for Microsoft 365 Backup.
 > [!NOTE]
 > This feature is currently in public preview and subject to change.
 
-### Has Microsoft's stance on shared responsibility of data protection changed?
+#### Has Microsoft's stance on shared responsibility of data protection changed?
 
 No, we still have the same point of view, but are now offering additional tools to help organizations achieve those goals and responsibilities.
 
-### Why don’t DR copies suffice for my backup?
+#### Why don’t DR copies suffice for my backup?
 
 DR copies protect only the current state of content, not prior points in time. Microsoft 365 Backup provides additional benefit by giving you a way to restore data back to a healthy state in the past with fast RTO to with short RPO intervals.
 
-## Why don’t versions already solve this point in time restore problem?
+#### Why don’t versions already solve this point in time restore problem?
 
 Versions give individual users a way to restore files or sites to prior points in time, but that kind of recovery method doesn't scale well for mass ransomware attacks where an admin needs to orchestrate the recovery. Versions might also be exhausted depending on the version limit set by the admin.
 
-## Why don’t legal holds solve the problem of keeping all versions of items for recovery?
+#### Why don’t legal holds solve the problem of keeping all versions of items for recovery?
 
 Legal holds retain data, but that feature is optimized for export (fr example, via eDiscovery), not for mass restore. Microsoft 365 Backup gives the right enhanced restore tooling for ransomware and accidental/malicious deletions at scale, plus optimized performance for those scenarios.
 
-## What mailbox changes are “backed up”?
+#### What mailbox changes are “backed up”?
 
 Mailbox backup enables the recovery of copies of mailbox item “versions.” Versions are created by two types of actions:
 
@@ -70,7 +70,7 @@ Example events that aren't versioned or recoverable via backup:
 - Set ‘Do Not Forward’ on a received email
 - Set a received message to highly important
 
-## What is the service recovery point objective?
+#### What is the service recovery point objective?
 
 The recovery point objective (RPO) is the maximum amount of time between the most recent backup and a data destruction event. Stated another way, it’s the amount data lost due to a data destruction event not recoverable via the backups. In the case of Microsoft 365 Backup, the RPOs are:
 
@@ -82,7 +82,7 @@ Lets start with what it doesn't mean: We are *not* taking snapshots every 10 sec
 
 Backup frequency of 10 seconds (if the item is modified) means that changes to the item will be saved as a version once every 10 seconds, no matter how many changes are made in that 10-second interval. For example, if a ransomware attack encrypts the email item every second, will we take six copies in a minute.
 
-## Why am I getting this error “x out of y user mailboxes selected don't have a backup before <timestamp>. Find backups or remove them from your scope.”
+#### Why am I getting this error “x out of y user mailboxes selected don't have a backup before <timestamp>. Find backups or remove them from your scope.”
 
 As mentioned earlier, mailbox versions are “event-based.” If there were no modifications or deletions done after the last known good time provided, a new restore task can't be created.
 
