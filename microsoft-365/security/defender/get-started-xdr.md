@@ -19,7 +19,7 @@ ms.collection:
   - tier1
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 11/07/2023
+ms.date: 11/10/2023
 ---
 
 # Get started with Microsoft Defender Experts for XDR
@@ -117,7 +117,7 @@ Once you’ve completed all the required tasks and met the onboarding targets in
 
 ### See also
 
-- [Frequently asked questions](frequently-asked-questions.md)
+- [General information on Defender Experts for XDR service](frequently-asked-questions.md)
 - [How Microsoft Defender Experts for XDR permissions work](dex-xdr-permissions.md)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
