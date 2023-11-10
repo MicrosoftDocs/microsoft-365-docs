@@ -1,5 +1,5 @@
 ---
-title: Public preview limitations in Microsoft 365 Backup (Preview)
+title: Preview limitations in Microsoft 365 Backup (Preview)
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -15,17 +15,17 @@ ms.collection:
     - m365initiative-syntex
 ms.localizationpriority:  medium
 ROBOTS: NOINDEX, NOFOLLOW
-description: Learn about limitations in Microsoft 365 Backup.
+description: Learn about preview limitations in Microsoft 365 Backup.
 ---
 
-# Public preview limitations in Microsoft 365 Backup (Preview)
+# Preview limitations in Microsoft 365 Backup (Preview)
 
 > [!NOTE]
-> This feature is currently in public preview and subject to change.
+> This feature is currently in preview and subject to change.
 
 ## Feature limitations
 
-The constraints and limitations outlined in this article are temporary for the public preview and will be resolved either by general availability or shortly after, unless stated otherwise.
+The constraints and limitations outlined in this article are temporary for the preview and will be resolved either by general availability or shortly after, unless stated otherwise.
 
 ### Performance
 
@@ -63,14 +63,14 @@ Performance and speed of web interfaces, initial configuration, and restores mig
 
 - Calendar item backup and restore is limited to modified items only and doesn't cover deleted items. This includes the following specific limitations:
 
-        - Restoring deleted calendar items with the ability to send updates post-restore is not yet supported.
-        - Replacing encrypted items with healthy items during a cross mailbox restore (mailboxes all belonging to the same user account) is not supported.
-        - Resolving orphaned conflict (in between ransomware and restore) is not supported.
-        - Restoring organizer copy does not automatically make attendee copies catch up, it only allows future updates by organizer to work for all users added on the calendar item.
+    - Restoring deleted calendar items with the ability to send updates post-restore is not yet supported.
+    - Replacing encrypted items with healthy items during a cross mailbox restore (mailboxes all belonging to the same user account) is not supported.
+    - Resolving orphaned conflict (in between ransomware and restore) is not supported.
+    - Restoring organizer copy does not automatically make attendee copies catch up, it only allows future updates by organizer to work for all users added on the calendar item.
 
 - Deleting the user account (for example, deleting the Microsoft Entra ID user) that owns the OneDrive site or Exchange mailbox renders the OneDrive site and Exchange mailbox as inactive or orphaned. The end-to-end workflow to restore such sites or mailboxes isn't supported directly in the Microsoft 365 Backup product. The Microsoft 365 Backup product ensures retention of the content. For more information about how to restore inactive mailboxes or orphaned OneDrive accounts, see:
 
-    - OneDrive: [Fix site user ID mismatch in SharePoint or OneDrive](https://learn.microsoft.com/en-us/sharepoint/troubleshoot/sharing-and-permissions/fix-site-user-id-mismatch)
+    - OneDrive and Sharepoint: [Fix site user ID mismatch in SharePoint or OneDrive](https://learn.microsoft.com/en-us/sharepoint/troubleshoot/sharing-and-permissions/fix-site-user-id-mismatch)
     - Exchange: [Recover an inactive mailbox](https://learn.microsoft.com/en-us/purview/recover-an-inactive-mailbox)
 
 - While restoring Exchange mailboxes at a granular level, the search feature provides several search parameters. These parameters allow you to enter up to a maximum of five keywords each. For example, the parameters “from” and “to” allow you to enter up to a maximum of five email addresses each.
@@ -85,7 +85,7 @@ ETA for restore operations isn't available in this release due to technical limi
 
 ## Self-service scale limits
 
-During the public preview, we're enforcing self-service restore limits while we gain a better understanding of how customers are using the tool so that we can build in enhancements in the future to help users avoid mistaken restore actions. These limits are described in the following table.
+During the preview, we're enforcing self-service restore limits while we gain a better understanding of how customers are using the tool so that we can build in enhancements in the future to help users avoid mistaken restore actions. These limits are described in the following table.
 
 |Limit parameters  |Warning  |Limit throttle*  |
 |---------|---------|---------|
