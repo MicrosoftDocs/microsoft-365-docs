@@ -102,3 +102,7 @@ The following table summarizes expected performance for a normally distributed t
 |:-------|:-------|:--------|
 | 1,000 sites<br>(30-GB average site size)  |Less than 1 hour  |Less than 12 hours  |
 | 1,000 mailboxes<br>(30-GB average mailbox size)| Less than 1 hour | Less than 12 hours |
+
+General Data Protection Regulations (GDPR)
+
+For this important information, see [GDPR special handling, compliance, and backup data deletion](backup-offboarding#gdpr-special-handling-compliance-and-backup-data-deletion).
