@@ -81,6 +81,9 @@ Syntex eSignature is an extension of SharePoint document storage and management 
 
 - Microsoft Entra collaboration settings restrict document sharing to specific individuals. This event limits who the requests can be sent to.
 
+#### Conditional Access Policies
+Certain [conditional access](https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview) policies may determine whether an external recipient (signers outside of your organization or M365 tenant) will be able sign a document. When this happens, the external signers may not be able to access the document for signing. In some other cases they may be able to access the document for signing but the signing operation will be unsuccessful. One common way to resolve this is to contact your IT admin who will be able to add the Syntex eSign app to the list of approved apps via the  Microsoft Entra admin center
+
 <br>
 
 > [!div class="nextstepaction"]
