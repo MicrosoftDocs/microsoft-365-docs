@@ -21,11 +21,11 @@ description: Learn about the charge model and pricing calculator for Microsoft 3
 # Pricing for Microsoft 365 Backup
 
 > [!NOTE]
-> This feature is currently in public preview and subject to change.
+> This feature is currently in preview and subject to change.
 
 ## Microsoft 365 Backup charge model
 
-The Microsoft 365 Backup service, offered through the Microsoft 365 admin center, is a pay-as-you-go consumption-based service. The public preview list price is $0.15/GB/mo of protected content. The size of protected content is equal to the cumulative size of the mailboxes being protected plus the size of the SharePoint sites and OneDrive accounts being protected (that is, the size of the live OneDrive accounts and SharePoint sites as display in the live sites’ usage reports) plus the size of any deleted/versioned content held for restore during the protection period.
+The Microsoft 365 Backup service, offered through the Microsoft 365 admin center, is a pay-as-you-go consumption-based service. The preview list price is $0.15/GB/mo of protected content. The size of protected content is equal to the cumulative size of the mailboxes being protected plus the size of the SharePoint sites and OneDrive accounts being protected (that is, the size of the live OneDrive accounts and SharePoint sites as display in the live sites’ usage reports) plus the size of any deleted/versioned content held for restore during the protection period.
 
 As an example, if you have a site under protection that is currently 1 GB for the first month, you'll be charged 1 GB of Backup usage. If you delete content in that site such that it's now only 0.5 GB, your next monthly bill will still be for 1 GB since the backup tool is retaining that deleted content for a year. After a year when the backup of that deleted content expires, the 0.5 GB being retained for backup purposes will no long be charged for Backup.
 
