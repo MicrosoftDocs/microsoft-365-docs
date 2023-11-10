@@ -29,17 +29,17 @@ When you receive the email notification, select **View request** in the email to
 
 ## Consent to use your electronic signature
 
-To continue the electronic signing process, you must consent to the terms and conditions and agree to use your electronic signature for signing. On the **Electronic Record and Signature Disclosure** screen:
+To continue the electronic signing process, you must consent to the terms and conditions and agree to use your electronic signature for signing. On the **eSignature Terms and Conditions** screen:
 
 - Select **Agree** to use your electronic signature and continue with the signing process.  
 - Or select **Decline** if you'd prefer [not to use your digital signature](#decline-to-sign-the-document), and contact the person who requested your signature to complete the signature by using a different method.
-- If you close the **Electronic Record and Signature Disclosure** without selecting the **Agree** button, you can reopen the dialog by selecting the **View disclosure** button on the top-left area of the document.
-
-    ![Screenshot of the Electronic Record and Signature Disclosure screen.](../media/content-understanding/esignature-signature-disclosure-screen.png)
+- If you close the **eSignature Terms and Conditions** without selecting the **Agree** button, you can reopen the dialog by selecting the **View disclosure** button on the top-left area of the document.
+  
+<img width="514" alt="tandc" src="https://github.com/MicrosoftDocs/microsoft-365-docs-pr/assets/89842834/751c645f-270e-435c-b5ca-a657d3d37822">
 
 ## Sign the document
 
-Once you give your consent, the document viewer opens in a new browser tab. Here you can navigate and read the document, and review the content. When you’re ready to sign, select **Start**. This action brings you to the first location where your input is needed.  
+Once you accept the eSignature terms and conditions, the document viewer opens in a new browser tab. Here you can navigate and read the document, and review the content. When you’re ready to sign, select **Start**. This action brings you to the first location where your input is needed.  
 
 ![Screenshot of the document to be signed showing the Start button.](../media/content-understanding/esignature-start-signing.png)
 
@@ -55,7 +55,8 @@ Electronic signatures let you digitally sign a document by enabling you to add a
 
 1. To add your signature, type your name. If you want to choose a different font style for your signature, select **Change font** and choose the font you want to use.
 
-    ![Screenshot of setting up your name and font for your signature.](../media/content-understanding/esignature-name-and-font.png)
+    <img width="499" alt="image" src="https://github.com/MicrosoftDocs/microsoft-365-docs-pr/assets/89842834/45b17679-7883-4dc5-9ba0-98e10f01e924">
+
 
 2. Select **Done** to add your signature to the document.
 
@@ -129,6 +130,9 @@ When you create a signature request with Syntex eSignature, it goes through diff
 |**Declined**   |One of the recipients has declined to sign.|
 
 When the status of a request is **Completed**, **Canceled**, or **Declined**, the request can no longer be acted on by either the sender or the recipients. As an example, if a recipient declines a request, the sender would need to send a new request after the reason for declining has been addressed. The original declined request can't be edited.
+
+## Unable to sign a document as an external recipient
+When you receive a doucment for signing from somone outside of your organization, you may be able to access and read the document but the signing operation fails when you attempt to sign it. Other times, you may not be able to access and read the document. If you are experiencing any issues with signing a document sent from someone outside your organization, please contact the sender who would be able to resolve the issue. 
 
 ## Access the signed document
 
