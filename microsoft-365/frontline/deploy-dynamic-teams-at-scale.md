@@ -51,7 +51,7 @@ Team membership is automatically managed over time through the power of dynamic 
 When evaluating the right solution for your organization, we recommend you do the following:
 
   1. Plan your frontline deployment.
-  1. Test the deploy tools&mdash;dynamic team creation (the process described in this article) or static team creation using the [PowerShell solution](deploy-teams-at-scale.md). Keep in mind that static teams aren't managed automatically.
+  1. Test the deploy tools&mdash;dynamic team creation (the process described in this article) or static team creation (using the [PowerShell solution](deploy-teams-at-scale.md)). Keep in mind that static teams aren't managed automatically.
   1. Deploy to a pilot location.
   1. Deploy to a broader set of locations using a phased approach.
 
