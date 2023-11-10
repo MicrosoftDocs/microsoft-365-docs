@@ -19,7 +19,7 @@ ms.collection:
   - tier1
 ms.topic: conceptual
 search.appverid: met150
-ms.date: 08/29/2023
+ms.date: 11/10/2023
 ---
 
 # Start using Defender Experts for XDR service
@@ -210,5 +210,6 @@ The option to **Ask Defender Experts** is available in the incidents and alerts 
 
 - [Search audit logs for actions performed by Defender Experts](auditing.md)
 - [Additional information](additional-information-xdr.md)
-- [Frequently asked questions](frequently-asked-questions.md)
+- [General information on Defender Experts for XDR service](frequently-asked-questions.md)
+
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
