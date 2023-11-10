@@ -40,6 +40,10 @@ For more information on what's new with other Microsoft Defender security produc
 
 You can also get product updates and important notifications through the [message center](https://admin.microsoft.com/Adminportal/Home#/MessageCenter).
 
+## November 2023
+
+- Microsoft Defender Experts for XDR now lets you perform your own [readiness assessment](get-started-xdr.md#prepare-your-environment-for-the-defender-experts-service) when preparing the environment for the Defender Experts for XDR service.
+
 ## October 2023
 
 - (Preview) You can now get email notifications for manual or automated actions done in Microsoft 365 Defender. Learn how to configure email notifications for manual or automated response actions performed in the portal. For details, see [Get email notifications for response actions in Microsoft 365 Defender](m365d-response-actions-notifications.md).
