@@ -125,7 +125,7 @@ When you add an attribute column, keep the following things in mind:
 
         > [!NOTE]
         > If you created more frontline teams through the [deploy frontline dynamic teams at scale](deploy-dynamic-teams-at-scale.md) experience since the last time you set up your hierarchy, the DisplayName and TeamId values of those frontline teams are added to the CSV template.
-1. When you're ready, [upload](#upload-your-operational-hierarchy) your hierarchy CSV file.
+1. When you're ready, [upload](#upload-your-hierarchy) your hierarchy CSV file.
  <!--1. When you're ready, choose **Select a file**, select your hierarchy CSV file, and then choose **Upload**.-->
 
 <!--Depending on the size of your file, setup might take a few minutes.-->
@@ -141,8 +141,8 @@ You can download a CSV file lists the errors, along with details that include th
 
 Choose **View details**, and then in the **Error details** pane, select **Download error CSV**.
 
-:::image type="content" source="media/frontline-operational-error.png" alt-text="Screenshot of the Error details pane, showing the option to download the CSV file to view setup error details." lightbox="media/frontline-operational-error.png":::
+:::image type="content" source="media/frontline-operational-hierarchy-error.png" alt-text="Screenshot of the Error details pane, showing the option to download the CSV file to view setup error details." lightbox="media/frontline-operational-hierarchy-error.png":::
 
 ## Delete your operational hierarchy
 
-To delete your hierarchy, [upload](#upload-your-operational-hierarchy) a blank CSV file.
+To delete your hierarchy, [upload](#upload-your-hierarchy) a blank CSV file.
