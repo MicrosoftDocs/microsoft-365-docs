@@ -35,7 +35,7 @@ You can use the information from message trace to efficiently answer user questi
 
 The **Summary report** in the message trace contains the information that helps you answer user questions and troubleshoot mail flow issues. This **Summary report** enables you to view the report in a file that can be opened in Windows Explorer (also known as File Explorer).
 
-You can use the **View in Explorer** option in the **Message trace search results** page in the **Exchange admin center** portal. However, to use this option, you must fulfill the following prerequisite:
+You can use the **View in Explorer** option in the **Message trace search results** page in [Exchange admin center](https://admin.exchange.microsoft.com/). However, to use this option, you must fulfill the following prerequisite:
 
 - You must procure the E5/A5 license to access a feature within the Office 365 Threat Intelligence licensing. This feature only enables you to use the **View in Explorer** option.
 
