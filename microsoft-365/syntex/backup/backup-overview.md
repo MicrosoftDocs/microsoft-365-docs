@@ -105,4 +105,4 @@ The following table summarizes expected performance for a normally distributed t
 
 ## General Data Protection Regulations (GDPR)
 
-For this important information, see [GDPR special handling, compliance, and backup data deletion](backup-offboarding#gdpr-special-handling-compliance-and-backup-data-deletion).
+For information about GDPR and Microsoft 365 Backup, see [GDPR special handling, compliance, and backup data deletion](backup-offboarding#gdpr-special-handling-compliance-and-backup-data-deletion).
