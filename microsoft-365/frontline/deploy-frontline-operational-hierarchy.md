@@ -118,7 +118,7 @@ When you add an attribute column, keep the following things in mind:
       :::image type="content" source="media/frontline-operational-hierarchy-setup-success.png" alt-text="Screenshot of the table on the Operational hierarchy tab of the Manage frontline teams page, showing options." lightbox="media/frontline-operational-hierarchy-setup-success.png":::
 1. To view your last successfully uploaded hierarchy CSV file, under **File last uploaded** in the table, choose **Download**.
 1. To make changes to your hierarchy, select **Operational hierarchy** in the table. The **Operational hierarchy** pane opens, and from here, you can:
-    -  Download your last uploaded hierarchy CSV file.
+    -  Download your last uploaded hierarchy CSV file and make your changes.
     -  Start fresh and download the template again to create a new hierarchy CSV file.
 
         > [!NOTE]
