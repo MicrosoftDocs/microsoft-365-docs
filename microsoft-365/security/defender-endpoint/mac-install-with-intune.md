@@ -30,6 +30,7 @@ ms.date: 12/18/2020
 - [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for business](https://www.microsoft.com/security/business/endpoint-security/microsoft-defender-business)
 
 This topic describes how to deploy Microsoft Defender for Endpoint on macOS through Microsoft Intune. A successful deployment requires the completion of all of the following steps:
 
@@ -44,7 +45,7 @@ This topic describes how to deploy Microsoft Defender for Endpoint on macOS thro
 1. [Network protection for Microsoft Defender for Endpoint on macOS](#step-9-network-protection-for-microsoft-defender-for-endpoint-on-macos)
 1. [Device control for Microsoft Defender for Endpoint on macOS](#step-10-device-control-for-microsoft-defender-for-endpoint-on-macos)
 1. [Data Loss Prevention for Endpoint](#step-11-data-loss-prevention-dlp-for-endpoint)
-1. [Check status of the P.List(.mobileconfig)](#step-12-check-status-of-plistmobileconfig)
+1. [Check status of the PList(.mobileconfig)](#step-12-check-status-of-plistmobileconfig)
 1. [Publish application](#step-13-publish-application)
 1. [Download the onboarding package](#step-14-download-the-onboarding-package)
 1. [Deploy the onboarding package](#step-15-deploy-the-onboarding-package)
@@ -52,9 +53,6 @@ This topic describes how to deploy Microsoft Defender for Endpoint on macOS thro
 ## Prerequisites and system requirements
 
 Before you get started, see [the main Microsoft Defender for Endpoint on macOS page](microsoft-defender-endpoint-mac.md) for a description of prerequisites and system requirements for the current software version.
-
-> [!NOTE]
-> Microsoft Defender for Endpoint no longer supports macOS Catalina (10.15) as Apple ended support for Catalina (10.15) in December 2022.
 
 ## Overview
 
