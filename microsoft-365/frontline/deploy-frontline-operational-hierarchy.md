@@ -75,8 +75,6 @@ The CSV file must contain the following three columns, in the following order, s
 | ParentName    | Yes       | The name of the parent node. The value you specify here must match the value in the **DisplayName** field of the parent node exactly. If you want to add more than one parent node, separate each parent node name with a semicolon (;). You can add up to 25 parent nodes, and each parent node name can be up to 2500 characters long. A node can have multiple parent nodes only if the parent nodes are root nodes. <br><br>**IMPORTANT** Be careful not to create a loop where a parent higher up in the hierarchy references a child node lower in the hierarchy. This structure isn't supported. |
 | TeamId        | Yes, if the team is a leaf node.| The ID of the team you want to link a node to. Each node must refer to a unique team, so each TeamId value can appear only one time in the hierarchy file.|
 
-<!--<br><br>To get the ID of a team you want to link a node to, run the following PowerShell command: `Get-Team | Export-Csv TeamList.csv`. This command lists the teams in your organization and includes the name and ID of each team. Find the name of the team you want to link to, and then copy the ID to this field.-->
-
 > [!NOTE]
 > To get a list of all teams in your organization, along with the DisplayName and TeamId values of each team, run the following PowerShell command: `Get-Team | Export-Csv TeamList.csv`.
 
@@ -118,7 +116,7 @@ When you add an attribute column, keep the following things in mind:
       :::image type="content" source="media/frontline-operational-hierarchy-setup-success.png" alt-text="Screenshot of the table on the Operational hierarchy tab of the Manage frontline teams page, showing options." lightbox="media/frontline-operational-hierarchy-setup-success.png":::
 1. To view your last successfully uploaded hierarchy CSV file, under **File last uploaded** in the table, choose **Download**.
 1. To make changes to your hierarchy, select **Operational hierarchy** in the table. The **Operational hierarchy** pane opens, and from here, you can:
-    -  Download your last uploaded hierarchy CSV file and make your changes.
+    -  Download the last hierarchy CSV file you uploaded, and then make your changes.
     -  Start fresh and download the template again to create a new hierarchy CSV file.
 
         > [!NOTE]
@@ -127,12 +125,6 @@ When you add an attribute column, keep the following things in mind:
     [placeholder for screenshot]
 
 1. When you're ready, [upload](#upload-your-hierarchy) your hierarchy CSV file.
- <!--1. When you're ready, choose **Select a file**, select your hierarchy CSV file, and then choose **Upload**.-->
-
-<!--Depending on the size of your file, setup might take a few minutes.-->
-<!--1. Refresh the Manage frontline teams page to check the latest status of your hierarchy setup. Make sure you’re on the **Operational hierarchy** tab after you refresh the page.
-
-    When setup is completed, **Status** in the table changes to **Success**.-->
 
 ## Troubleshoot errors
 
