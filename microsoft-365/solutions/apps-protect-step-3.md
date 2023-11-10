@@ -22,6 +22,6 @@ keywords:
 
 ## Next step
 
-[:::image type="content" source="../media/configure-managed-apps/configure-managed-apps-02.png" alt-text="Step 4. Understand app protection delivery" border="false" :::](apps-protect-step-4.md)
+[:::image type="content" source="../media/protect-managed-apps/protect-managed-apps-01.png" alt-text="Step 4. Understand app protection delivery" border="false" :::](apps-protect-step-4.md)
 
 Continue with [Step 4](apps-protect-step-4.md) to understand app protection delivery in Microsoft Intune.
