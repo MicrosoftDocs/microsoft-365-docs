@@ -13,16 +13,15 @@ ms.collection:
 description: Admins can learn about the addition of Microsoft Teams in delivering simulated phishing attacks in Attack simulation training in Microsoft Defender for Office 365 Plan 2.
 ms.subservice: mdo
 search.appverid: met150
-ms.date: 6/14/2023
+ms.date: 11/3/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison" target="_blank">Microsoft Defender for Office 365 plan 2</a>
 ---
 
 # Microsoft Teams in Attack simulation training
 
-[!include[Prerelease information](../../includes/prerelease.md)]
-
-[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+> [!IMPORTANT]
+> Microsoft Teams in Attack simulation training is currently available only in a Private Preview.
 
 In organizations with Microsoft Defender for Office 365 Plan 2 or Microsoft 365 Defender, admins can now use Attack simulation training to deliver simulated phishing messages in Microsoft Teams. For more information about attack simulation training, see [Get started using Attack simulation training in Defender for Office 365](attack-simulation-training-get-started.md).
 
@@ -34,9 +33,11 @@ The addition of Teams in Attack simulation training affects the following featur
 
 [Payload automations](attack-simulation-training-payload-automations.md), [end-user notifications](attack-simulation-training-end-user-notifications.md), [login pages](attack-simulation-training-login-pages.md), and [landing pages](attack-simulation-training-landing-pages.md) aren't affected by Teams in Attack simulation training.
 
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
 ## Teams simulation configuration
 
-If your organization is enrolled in Attack simulation training for Teams Private Preview, carry out the following configuration steps: 
+**If your organization is enrolled in Attack simulation training for Teams Private Preview**, carry out the following configuration steps.
 
 In addition to having user reporting for Teams messages turned on as described in [User reported message settings in Microsoft Teams](submissions-teams.md), you also need to configure the Teams accounts that can be used as sources for simulation messages in Attack simulation training. To configure the accounts, do the following steps:
 

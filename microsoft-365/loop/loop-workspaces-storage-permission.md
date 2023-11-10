@@ -33,7 +33,7 @@ Separately, Loop components created outside of the Loop app in other Microsoft 3
 
 ## Loop app's usage of organization's storage quota
 
-Loop app workspaces are stored inside your tenant. During Public Preview, Loop app's content will **not** use your existing storage quota.
+Loop app workspaces are stored inside your tenant. Loop workspaces and pages count against your tenant's storage quota, starting November 2023. Note that during the Loop app's Public Preview in 2023, Loop app content did **not** use your existing storage quota.
 
 ## Content permissions mechanism
 

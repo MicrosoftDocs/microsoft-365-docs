@@ -57,10 +57,13 @@ You can activate your workloads in two ways from the Permissions and roles page:
     - This will bring you directly to the **Activate workloads** screen.
     - You must activate each workload one by one. Once you select the individual toggle, you'll activate (or deactivate) that workload.
 
-    :::image type="content" source="../../media/defender/m365-defender-rbac-activate-workload-selection.png" alt-text="Screenshot of the choose workloads to activate screen" lightbox="../../media/defender/m365-defender-rbac-activate-workload-selection.png":::
+    :::image type="content" source="../../media/defender/m365-defender-rbac-activate-workload-selection1.png" alt-text="Screenshot of the choose workloads to activate screen" lightbox="../../media/defender/m365-defender-rbac-activate-workload-selection1.png":::
 
     > [!NOTE]
     > The **Activate workloads** button is only available when there is it at least one workload that's not active for Microsoft 365 Defender Unified RBAC.
+
+    > [!NOTE]
+    > To activate Exchange Online (EXO) permissions in Microsoft 365 Defender Unified RBAC, Exchange Online Protection (EOP) permissions must be active. 
 
 2. **Workload settings**
     - Select **Workload settings**.
