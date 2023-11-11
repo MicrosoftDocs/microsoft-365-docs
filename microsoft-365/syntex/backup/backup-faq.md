@@ -1,5 +1,5 @@
 ---
-title: Frequently asked questions for Microsoft 365 Backup (Preview)
+title: Frequently asked questions about Microsoft 365 Backup (Preview)
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -15,10 +15,10 @@ ms.collection:
     - m365initiative-syntex
 ms.localizationpriority:  medium
 ROBOTS: NOINDEX, NOFOLLOW
-description: Read frequently asked questions for Microsoft 365 Backup.
+description: Read frequently asked questions about Microsoft 365 Backup.
 ---
 
-# Frequently asked questions for Microsoft 365 Backup (Preview)
+# Frequently asked questions about Microsoft 365 Backup (Preview)
 
 > [!NOTE]
 > This feature is currently in preview and subject to change.
