@@ -17,7 +17,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: Read the preview terms and conditions for Microsoft 365 Backup (Preview).
 ---
 
-# Microsoft 365 Backup public preview terms and conditions
+# Microsoft 365 Backup preview terms and conditions
 
 Effective Date: November 15, 2023
 
