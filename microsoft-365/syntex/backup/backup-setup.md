@@ -45,8 +45,8 @@ As a first step to sign up for Microsoft 365 Backup, you should first link an Az
 
     ![Screenshot of the Use content AI with Microsoft Syntex page showing the Set up billing option.](../../media/content-understanding/backup-setup-set-up-billing.png)
 
-> [!NOTE]
-> To set up pay-as-you-go billing for Microsoft 365 Backup, the admin must have an owner or contribution role on the Azure subscription to be used.
+    > [!NOTE]
+    > To set up pay-as-you-go billing for Microsoft 365 Backup, the admin must have an owner or contribution role on the Azure subscription to be used.
 
 5. If you don't have an Azure subscription or resource group, follow these steps. If you have an Azure subscription and resource group, skip this step and go to step 6.
 
