@@ -124,7 +124,9 @@ To use Microsoft 365 Backup for OneDrive, SharePoint, or Exchange, you need to c
 
 Select the **OneDrive**, **SharePoint**, or **Exchange** tab for steps to create a backup policy for that product.
 
-## Set up OneDrive Backup policy
+# [OneDrive](#tab/onedrive)
+
+<!---### Set up OneDrive Backup policy--->
 
 Follow these steps to set up a backup policy for OneDrive accounts using Microsoft 365 Backup.
 
@@ -164,7 +166,10 @@ Follow these steps to set up a backup policy for OneDrive accounts using Microso
 
     ![Screenshot of the OneDrive backup policy created page.](../../media/content-understanding/backup-policy-created-onedrive.png)
 
-## Set up SharePoint Backup policy
+
+# [SharePoint](#tab/sharepoint)
+
+<!---### Set up SharePoint Backup policy--->
 
 Follow these steps to set up a backup policy for SharePoint sites using Microsoft 365 Backup.
 
@@ -206,7 +211,10 @@ Follow these steps to set up a backup policy for SharePoint sites using Microsof
 
     ![Screenshot of the SharePoint backup policy created page.](../../media/content-understanding/backup-policy-created-sharepoint.png)
 
-### Set up Exchange Backup policy
+
+# [Exchange](#tab/exchange)
+
+<!---### Set up Exchange Backup policy--->
 
 Follow these steps to set up a backup policy for Exchange mailboxes sites using Microsoft 365 Backup. Ensure that Microsoft 365 Backup is [enabled for your tenant](#enable-microsoft-365-backup).
 
@@ -249,3 +257,5 @@ Follow these steps to set up a backup policy for Exchange mailboxes sites using 
 9. Wait for status of your policy to show as **Active** in the home screen. This might take between 15 and 60 minutes. The backup policy for Exchange is created. Select **View scope** at any time to verify the details.
 
     ![Screenshot of the Exchange backup policy created page.](../../media/content-understanding/backup-policy-created-exchange.png)
+
+---
