@@ -73,7 +73,7 @@ To use the Microsoft 365 Backup pricing calculator, you'll need to perform the f
 
 This section describes how to use your [Microsoft 365 admin center usage reports](https://admin.microsoft.com/Adminportal/Home#/reportsUsage) to populate the Microsoft 365 Backup pricing calculator.
 
-The Microsoft 365 Backup Pricing Calculator uses the input data about your current usage to help determine heuristics such as your average growth and usage patterns. To get this information, go to [Usage - Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/reportsUsage)  and then review the [Exchange - Mailbox usage](#exchange---mailbox-usage), [OneDrive - Usage](#onedrive---usage), and [SharePoint - Site usage](#sharepoint---site-usage) reports.
+The Microsoft 365 Backup Pricing Calculator uses the input data about your current usage to help determine heuristics such as your average growth and usage patterns. To get this information, go to [Usage - Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/reportsUsage) and then review the [OneDrive - Usage](#onedrive---usage), [SharePoint - Site usage](#sharepoint---site-usage), or [Exchange - Mailbox usage](#exchange---mailbox-usage) reports.
 
 You can change the period that the reports display data for by selecting the **Past *n* days** on the right-hand side and then selecting the period.
 
@@ -90,22 +90,6 @@ For each of the service types (Exchange, OneDrive, and SharePoint) record the fo
 Once you have this information, enter it into the **High-Level Estimates** worksheet as shown in the following example.
 
 ![Screenshot showing an example of the High-Level Estimates worksheet in Excel.](../../media/content-understanding/backup-estimates-worksheet.png)
-
-#### Exchange - Mailbox usage
-
-![Screenshot showing the Usage page for Exchange in the Microsoft 365 admin center.](../../media/content-understanding/backup-exchange-mailbox-usage.png)
- 
-##### Mailbox
-
-Number of total and active user mailboxes at the start of the period and at the end of the period. For example, 26 mailboxes and 30 mailboxes:
-
-![Screenshot showing the number of total and active user mailboxes for Exchange.](../../media/content-understanding/backup-exchange-mailbox-total.png)
-
-##### Storage
-
-Amount of storage used at the start of the period and at the end of the period. For example, 5.5 GB and 4.3 GB:
-
-![Screenshot showing the amount of storage used for Exchange.](../../media/content-understanding/backup-exchange-storage-total.png)
 
 #### OneDrive - Usage
 
@@ -138,6 +122,22 @@ Number of total and active sites at the start of the period and at the end of th
 Amount of storage used at the start of at the start of the period and at the end of the period. For example, 2,200 GB and 2,200 GB:
 
 ![Screenshot showing the amount of storage used for SharePoint.](../../media/content-understanding/backup-sharepoint-storage-total.png)
+
+#### Exchange - Mailbox usage
+
+![Screenshot showing the Usage page for Exchange in the Microsoft 365 admin center.](../../media/content-understanding/backup-exchange-mailbox-usage.png)
+ 
+##### Mailbox
+
+Number of total and active user mailboxes at the start of the period and at the end of the period. For example, 26 mailboxes and 30 mailboxes:
+
+![Screenshot showing the number of total and active user mailboxes for Exchange.](../../media/content-understanding/backup-exchange-mailbox-total.png)
+
+##### Storage
+
+Amount of storage used at the start of the period and at the end of the period. For example, 5.5 GB and 4.3 GB:
+
+![Screenshot showing the amount of storage used for Exchange.](../../media/content-understanding/backup-exchange-storage-total.png)
 
 ### Pricing calculator notes
 
