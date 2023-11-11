@@ -120,8 +120,6 @@ Select the **OneDrive**, **SharePoint**, or **Exchange** tab for steps to create
 
 # [OneDrive](#tab/onedrive)
 
-<!---### Set up OneDrive Backup policy--->
-
 Follow these steps to set up a backup policy for OneDrive accounts using Microsoft 365 Backup.
 
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home).
@@ -163,8 +161,6 @@ Follow these steps to set up a backup policy for OneDrive accounts using Microso
 
 # [SharePoint](#tab/sharepoint)
 
-<!---### Set up SharePoint Backup policy--->
-
 Follow these steps to set up a backup policy for SharePoint sites using Microsoft 365 Backup.
 
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home).
@@ -205,10 +201,7 @@ Follow these steps to set up a backup policy for SharePoint sites using Microsof
 
     ![Screenshot of the SharePoint backup policy created page.](../../media/content-understanding/backup-policy-created-sharepoint.png)
 
-
 # [Exchange](#tab/exchange)
-
-<!---### Set up Exchange Backup policy--->
 
 Follow these steps to set up a backup policy for Exchange mailboxes sites using Microsoft 365 Backup. Ensure that Microsoft 365 Backup is [enabled for your tenant](#enable-microsoft-365-backup).
 
