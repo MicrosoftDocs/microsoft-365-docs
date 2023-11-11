@@ -1,5 +1,5 @@
 ---
-title: Pricing for Microsoft 365 Backup
+title: Pricing for Microsoft 365 Backup (Preview)
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -18,7 +18,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: Learn about the charge model and pricing calculator for Microsoft 365 Backup.
 ---
 
-# Pricing for Microsoft 365 Backup
+# Pricing for Microsoft 365 Backup (Preview)
 
 > [!NOTE]
 > This feature is currently in preview and subject to change.
