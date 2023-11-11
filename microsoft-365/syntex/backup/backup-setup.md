@@ -158,7 +158,6 @@ Follow these steps to set up a backup policy for OneDrive accounts using Microso
 
     ![Screenshot of the OneDrive backup policy created page.](../../media/content-understanding/backup-policy-created-onedrive.png)
 
-
 # [SharePoint](#tab/sharepoint)
 
 Follow these steps to set up a backup policy for SharePoint sites using Microsoft 365 Backup.
