@@ -1,5 +1,5 @@
 ---
-title: Offboarding in Microsoft 365 Backup
+title: Offboarding in Microsoft 365 Backup (Preview)
 ms.author: chucked
 author: chuckedmonson
 manager: jtremper
@@ -18,7 +18,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: Learn about offboarding in Microsoft 365 Backup.
 ---
 
-# Offboarding in Microsoft 365 Backup
+# Offboarding in Microsoft 365 Backup (Preview)
 
 > [!NOTE]
 > This feature is currently in preview and subject to change.
