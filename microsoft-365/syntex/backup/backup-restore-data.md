@@ -31,7 +31,7 @@ As part of restoring data from backup, admin needs to choose a *restore point* m
 
 - **Express restore point**. A set of recommended restore points that offers faster restore of data from the backup than a regular restore point.
 
-Currently, you can restore Exchange mailbox content, SharePoint sites, and OneDrive accounts from specific prior points in time from the backups. Site restores to a prior point in time, if restored to the same URL, will overwrite the state and the content of the site to match the exact state at the prior point in time. This is commonly referred to as a rollback versus a roll-forward.
+Currently, you can restore OneDrive accounts, SharePoint sites, and Exchange mailbox content from specific prior points in time from the backups. Site restores to a prior point in time, if restored to the same URL, will overwrite the state and the content of the site to match the exact state at the prior point in time. This is commonly referred to as a rollback versus a roll-forward.
 
 Mailbox restores inherently restore only changed items such that current items that remain unchanged since the desired prior restore point won't be modified or overwritten. Thus, mailbox restores follow a roll-forward process. Site, OneDrive, and mailbox restores can be done in place or in the case of SharePoint sites to a new URL, or in the case of mailbox items a new folder. By restoring to a new location, any undesirable overwriting any existing data is avoided.
 
@@ -42,7 +42,7 @@ In the future, we'll support granular OneDrive and SharePoint file-level restore
 
 Restores started serially for each of three services will execute in parallel. There's no need to wait for one service’s restore to finish before starting another.
 
-### Restore point frequency
+## Restore point frequency
 
 The restore point frequency, also known as the [recovery point objective](backup-faq#what-is-the-service-recovery-point-objective) (RPO), defines the maximum amount of time during which data is lost after an attack. Stated differently, it’s the time between the most recent backup of the healthy state of data and the time of the attack. The RPOs for each of the protected services are summarized in the following table.
 
@@ -51,14 +51,18 @@ The restore point frequency, also known as the [recovery point objective](backup
 |Full OneDrive account and full SharePoint site restore    |15 minutes     |One week     |
 |Exchange Online   |10 seconds         |10 seconds         |
 
-## Restore data from backup for OneDrive
+## Restore data from backup for OneDrive, SharePoint, and Exchange
 
-Once you back up your data, you might need to restore the data in case of an accidental deletion, ransomware attack, or other event. The Restore feature in Microsoft 365 Backup is created to help you restore backed up data.
+Once you back up your data, you might need to restore the data in case of an accidental deletion, ransomware attack, or other event. The restore feature in Microsoft 365 Backup is created to help you restore backed up data.
 
 > [!NOTE]
 > We recommend choosing an express restore point for full OneDrive account restores as it will provide the fastest restore experience.
 
-To restore data backed up for OneDrive, follow these steps.
+Select the **OneDrive**, **SharePoint**, or **Exchange** tab for steps to restore data from backup for that product.
+
+# [OneDrive](#tab/onedrive)
+
+Follow these steps to restore data backed up for OneDrive.
 
 1. In the Microsoft 365 admin center, on the **Microsoft 365 Backup** page, in the **OneDrive** section, select **Restore**.
 
@@ -105,9 +109,9 @@ To restore data backed up for OneDrive, follow these steps.
 
     ![Screenshot showing the Review and finish page for OneDrive.](../../media/content-understanding/backup-onedrive-review-finish.png)
 
-## Restore data from backup for SharePoint
+# [SharePoint](#tab/sharepoint)
 
-Restore feature in Microsoft 365 Backup is created to help you restore backed up data to a restore point of your choice. To restore data backed up for SharePoint, follow these steps.
+Follow these steps to restore data backed up for SharePoint.
 
 1. In the Microsoft 365 admin center, on the **Microsoft 365 Backup** page, in the **SharePoint** section, select **Restore**.
 
@@ -154,20 +158,12 @@ Restore feature in Microsoft 365 Backup is created to help you restore backed up
 
     ![Screenshot showing the Review and finish page for SharePoint.](../../media/content-understanding/backup-sharepoint-review-finish.png)
   
-### States of Backup
 
-|States  |Definition  |
-|---------|---------|
-|Active     | Protection scope selected under backup policy is being actively backed up. |
-|Paused     | No further backups will be taken but already taken backups will be preserved. |
-|Not set up | No backup policy is set up for this scope.  |
-|Processing | A change to backup policy or a restore is in progress.  |
+# [Exchange](#tab/exchange)
 
-## Restore data from backup for Exchange
+<!---Once you have set up protection policies for your mailboxes, you might need to restore the data in case of an accidental deletion, ransomware attack, or other event. The Restore feature in Microsoft 365 Backup is created to help you restore backed up data. Exchange restores will only restore modified or deleted items. Any item that is unaffected in the visible folder structure will remain intact.--->
 
-Once you have set up protection policies for your mailboxes, you might need to restore the data in case of an accidental deletion, ransomware attack, or other event. The Restore feature in Microsoft 365 Backup is created to help you restore backed up data. Exchange restores will only restore modified or deleted items. Any item that is unaffected in the visible folder structure will remain intact.
-
-To restore data backed up for Exchange, follow these steps.
+Follow these steps to restore data backed up for Exchange.
 
 1. In the Microsoft 365 admin center, on the **Microsoft 365 Backup** page, in the **Exchange** section, select **Restore**.
 
@@ -229,3 +225,14 @@ To restore data backed up for Exchange, follow these steps.
 4. On the **Review and Finish** page, you'll now be asked to review and finish all your choices. If everything looks as you want it, select **Restore user mailboxes**.
 
 5. Track the progress of your newly created task on the **Restoration tasks** tab.
+
+### States of backup
+
+|States  |Definition  |
+|---------|---------|
+|Active     | Protection scope selected under backup policy is being actively backed up. |
+|Paused     | No further backups will be taken but already taken backups will be preserved. |
+|Not set up | No backup policy is set up for this scope.  |
+|Processing | A change to backup policy or a restore is in progress.  |
+
+---
