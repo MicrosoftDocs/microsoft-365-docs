@@ -118,13 +118,15 @@ Only tenant-level admins can create and manage backups using Microsoft 365 Backu
 
 ## Set up backup policies
 
-If you want to use Microsoft 365 Backup for OneDrive, Exchange, and SharePoint, you need to create a *policy* for each product. A policy represents the backup plan defined by admins for protecting the Micorsoft 365 data of an organization. It contains details of what data (SharePoint sites, OneDrive accounts, and Exchange mailboxes) to protect. Although you’ll see the retention period and backup frequency (which defines the restore point objective), those settings are not currently variable or modifiable.
+If you want to use Microsoft 365 Backup for OneDrive, SharePoint, and Exchange, , you need to create a *policy* for each product. A policy represents the backup plan defined by admins for protecting the Micorsoft 365 data of an organization. It contains details of what data (SharePoint sites, OneDrive accounts, and Exchange mailboxes) to protect. Although you’ll see the retention period and backup frequency (which defines the restore point objective), those settings are not currently variable or modifiable.
 
 ### To set up a backup policy in Microsoft 365 Backup
 
+Select the **OneDrive**, **SharePoint**, or **Exchange** tab for steps to create a backup policy for that product.
+
 Set up OneDrive Backup policy
 
-Follow these steps to set up backup on OneDrive using Microsoft 365 Backup.
+Follow these steps to set up a backup policy for OneDrive accounts using Microsoft 365 Backup.
 
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home).
 
@@ -152,7 +154,7 @@ Follow these steps to set up backup on OneDrive using Microsoft 365 Backup.
 
     ![Screenshot of the Add via Distribution lists and Security groups on the Protection scope page for OneDrive.](../../media/content-understanding/backup-protection-add-dl-sg-onedrive.png)
 
-    - Under **Import from file**, select **Upload CSV** to import user account details via CSV upload.
+    c. Under **Import from file**, select **Upload CSV** to import user account details via CSV upload.
 
     ![Screenshot of the Import from file section on the Protection scope page for OneDrive.](../../media/content-understanding/backup-protection-import-file-onedrive.png)
 
@@ -161,49 +163,49 @@ Follow these steps to set up backup on OneDrive using Microsoft 365 Backup.
     ![Screenshot of the OneDrive backup policy created page.](../../media/content-understanding/backup-policy-created-onedrive.png)
 
 
-Screenshot 3 Select 'Set up policy' to create backup policy for OneDrive
- 
-Screenshot 4 Overview page with details of backup frequency, retention period, cost details
- 
-Screenshot 5 Create the protection scope using one of the three options to add OneDrive accounts to backup
- 
-Screenshot 6 Option 1: Add OneDrive accounts to backup via user account search
- 
-Screenshot 7 Option 2: Add OneDrive accounts to backup via distribution lists and security group names
- 
-Screenshot 8 Option 3: Add OneDrive accounts via CSV
-  
-Screenshot 9 OneDrive backup policy successfully created
-
-
-
 Set up SharePoint Backup policy
 
-To set up backup sites using Microsoft 365 Backup, 
-1.	Go to Microsoft Admin Center 
-2.	Select ‘Settings’
-3.	Select ‘Microsoft 365 Backup’ from the list of products
-4.	Select ‘Set up policy’ under SharePoint
-5.	Review backup features for SharePoint in the Overview page, 
-6.	Now create your ‘Protection scope’ for SharePoint sites by choosing to back up individual sites or collection of sites. A protection scope is the scope of sites within SharePoint that you want to protect with Microsoft 365 Backup
-a.	Create backup of individual sites or collection by searching for sites using ‘+Choose Sites’ or via rules or via CSV upload  
-7.	Once you have made the right selection, select ‘next’ to create backup policy for SharePoint
- 
-Screenshot 10 Select SharePoint to set up backup policy for SharePoint
- Screenshot 11 Overview page with details of backup frequency, retention period, cost details
- 
-Screenshot 12 Three options of choosing SharePoint site(s) or site collection
+Follow these steps to set up a backup policy for SharePoint sites using Microsoft 365 Backup.
+
+1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home).
+
+2. Select **Settings**.
+
+3. Select **Microsoft 365 Backup** from the list of products.
+
+4. On the **Microsoft 365 Backup** page, in the **SharePoint** section, select **Set up policy**.
+
+    ![Screenshot of the Microsoft 365 Backup page with SharePoint highlighted.](../../media/content-understanding/backup-setup-backup-page-sharepoint.png)
+
+5. On the **Overview** page, review the backup features for SharePoint, and then select **Next**.
+
+    ![Screenshot of the Overview page for SharePoint.](../../media/content-understanding/backup-overview-page-sharepoint.png)
+
+6. On the **Protection scope** page, you can set up SharePoint sites by choosing to back up individual sites or collection of sites. A protection scope is the scope of sites within SharePoint that you want to protect with Microsoft 365 Backup.
+
+    ![Screenshot of the Protection scope page for SharePoint with the options highlighted.](../../media/content-understanding/backup-protection-scope-sharepoint.png)
+
+    a. Under **Add via search**, select **Choose sites** to see the individual sites or site collections that can be added via search. On the **Search and select sites** panel, select the sites you want to add to the policy.
+
+    ![Screenshot of the Search and select sites panel on the Protection scope page for SharePoint.](../../media/content-understanding/backup-protection-add-search-sharepoint.png)
+
+    b. Under **Add via**, select **Distribution lists** or **Security groups**, or both. Note that the distribution list and security group is flattened when added, meaning the policy will not update dynamically if the groups or distribution list are updated later.
+
+    c. Under **Import from file**, select **Upload CSV** to import user account details via CSV upload.
+
+    ![Screenshot of the Import from file section on the Protection scope page for SharePoint.](../../media/content-understanding/backup-protection-import-file-sharepoint.png)
+
+7. Once you have made the right selections, select **Next** to create backup policy for SharePoint.
+
+8. On the **Review SharePoint backup policy** page, review the information to make sure it's how you want it, and then select **Create policy**.
+
+    ![Screenshot of the Review SharePoint backup policy page.](../../media/content-understanding/backup-policy-review-policy-sharepoint.png)
+
+9. The backup policy for SharePoint is created.
+
+    ![Screenshot of the SharePoint backup policy created page.](../../media/content-understanding/backup-policy-created-sharepoint.png)
 
 
-
-
-
- 
-Screenshot 13 Multiselect sites to backup
- 
-Screenshot 14 Import list of backup sites from a CSV 
- 
-Screenshot:15 Review and create SharePoint backup policy
  
 Screenshot 16 Backup for selected SharePoint scope setup
 Set up Exchange Backup policy
