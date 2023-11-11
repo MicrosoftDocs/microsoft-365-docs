@@ -25,6 +25,8 @@ description: Learn how to set up and configure Microsoft 365 Backup and backup p
 
 Get started with Microsoft 365 Backup by following the simple three steps in the Microsoft 365 admin center.
 
+![Diagram showing the three-step setup process for Microsoft 365 Backup.](../../media/content-understanding/backup-setup-diagram.png)
+
 <!---<insert how-to Affirma video   – https://aka.ms/M365Backup-how-to-video> --->
 
 ## Prerequisites
