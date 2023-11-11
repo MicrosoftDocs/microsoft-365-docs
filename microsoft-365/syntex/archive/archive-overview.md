@@ -62,4 +62,6 @@ Administrators should notify the site owners and end users before a site is arch
 
 - Currently, tenant rename isn't supported on archived sites. Sites will need to be reactivated before a tenant rename is triggered.
 
-- Sites that are backed up as part of the Microsoft 365 Backup shouldn't be archived.  
+- Sites that are backed up as part of the Microsoft 365 Backup shouldn't be archived.
+
+- If you archive a site that has a library syncing to a device, that device's sync client will display errors after the site is archived. We recommend that you remove syncing libraries before archiving a sites.
