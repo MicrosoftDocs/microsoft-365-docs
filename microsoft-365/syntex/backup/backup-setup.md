@@ -124,7 +124,7 @@ If you want to use Microsoft 365 Backup for OneDrive, SharePoint, and Exchange, 
 
 Select the **OneDrive**, **SharePoint**, or **Exchange** tab for steps to create a backup policy for that product.
 
-Set up OneDrive Backup policy
+## Set up OneDrive Backup policy
 
 Follow these steps to set up a backup policy for OneDrive accounts using Microsoft 365 Backup.
 
@@ -158,12 +158,13 @@ Follow these steps to set up a backup policy for OneDrive accounts using Microso
 
     ![Screenshot of the Import from file section on the Protection scope page for OneDrive.](../../media/content-understanding/backup-protection-import-file-onedrive.png)
 
+8. On the **Review OneDrive backup policy** page, review the information to make sure it's how you want it, and then select **Create policy** (or **Update policy** if it's an update).
+
 7. The backup policy for OneDrive is created.
 
     ![Screenshot of the OneDrive backup policy created page.](../../media/content-understanding/backup-policy-created-onedrive.png)
 
-
-Set up SharePoint Backup policy
+## Set up SharePoint Backup policy
 
 Follow these steps to set up a backup policy for SharePoint sites using Microsoft 365 Backup.
 
@@ -195,9 +196,9 @@ Follow these steps to set up a backup policy for SharePoint sites using Microsof
 
     ![Screenshot of the Import from file section on the Protection scope page for SharePoint.](../../media/content-understanding/backup-protection-import-file-sharepoint.png)
 
-7. Once you have made the right selections, select **Next** to create backup policy for SharePoint.
+7. Once you have made the right selections, select **Next** to create the backup policy for SharePoint.
 
-8. On the **Review SharePoint backup policy** page, review the information to make sure it's how you want it, and then select **Create policy**.
+8. On the **Review SharePoint backup policy** page, review the information to make sure it's how you want it, and then select **Create policy** (or **Update policy** if it's an update).
 
     ![Screenshot of the Review SharePoint backup policy page.](../../media/content-understanding/backup-policy-review-policy-sharepoint.png)
 
@@ -205,39 +206,46 @@ Follow these steps to set up a backup policy for SharePoint sites using Microsof
 
     ![Screenshot of the SharePoint backup policy created page.](../../media/content-understanding/backup-policy-created-sharepoint.png)
 
+### Set up Exchange Backup policy
 
- 
-Screenshot 16 Backup for selected SharePoint scope setup
-Set up Exchange Backup policy
-With Microsoft 365 Backup, you can backup users’ Exchange mailboxes. To set up a backup policy on Exchange Mailboxes: 
-Prerequisite: Ensure M365 Backup is enabled for your tenant by following steps here   
-1.	Login to Microsoft Admin center 
-2.	Select Settings -> Microsoft 365 Backup 
-3.	Select ‘Set up policy’ under Exchange
- 
-4.	An Overview page will show with details of backup policy attributes - backup frequency, backup retention, cost details, etc. Verify the details and select ‘Next‘.
- 
-Screenshot 17 Overview page with details of backup frequency, retention period, cost details
-5.	Choose the scope of protection for this mailbox policy. Microsoft 365 Backup for Exchange will allow addition of mailboxes via
-i.	User accounts that can be added via Search
-ii.	Distribution list & Security groups – note that the distribution list and group is flattened when added, meaning the policy will not update dynamically if the groups or distribution list is updated later.
-iii.	Import user account details via CSV upload
+Follow these steps to set up a backup policy for Exchange mailboxes sites using Microsoft 365 Backup. Ensure that Microsoft 365 Backup is [enabled for your tenant](#enable-microsoft-365-backup).
 
- 
-Screenshot 18 User mailboxes that can be added via Search
- 
+1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home).
 
-Screenshot 19 Mailboxes can be added searching for user accounts
- 
-Screenshot 20 Mailboxes can be added via distribution lists 
- 
-Screenshot 21 Mailboxes can be added via security groups
- 
-Screenshot 22 Import user account details via CSV upload
+2. Select **Settings**.
 
-6.	Select ‘Next’ and review the details of your Exchange backup policy, then select ‘Create Policy’
- 
+3. Select **Microsoft 365 Backup** from the list of products.
 
- 
+4. On the **Microsoft 365 Backup** page, in the **Exchange** section, select **Set up policy**.
 
-7.	Wait for status of your policy to show as ‘Active’ in the home screen. This might take between 15 and 60 minutes. Backup policy is set up for Exchange. Select **View scope** to verify the details at any time.
+    ![Screenshot of the Microsoft 365 Backup page with Exchange highlighted.](../../media/content-understanding/backup-setup-backup-page-exchange.png)
+
+5. On the **Overview** page, review and verify the backup policy attributes for Exchange, such as backup frequency, backup retention, cost details, and then select **Next**.
+
+    ![Screenshot of the Overview page for Exchange.](../../media/content-understanding/backup-overview-page-exchange.png)
+
+6. On the **Protection scope** page, choose the scope of protection for the mailbox policy. Microsoft 365 Backup for Exchange will allow addition of mailboxes via three ways.
+
+    ![Screenshot of the Protection scope page for Exchange with the options highlighted.](../../media/content-understanding/backup-protection-scope-exchange.png)
+
+    a. Under **Add via search**, select **Choose user mailboxes** to see the mailboxes that can be added via search. On the **Search and select mailboxes** panel, select the mailboxes you want to add to the policy.
+
+    ![Screenshot of the Search and select mailboxes panel on the Protection scope page for Exchange.](../../media/content-understanding/backup-protection-add-search-exchange.png)
+
+    b. Under **Add via**, select **Distribution lists** or **Security groups**, or both. Note that the distribution list and security group is flattened when added, meaning the policy will not update dynamically if the groups or distribution list are updated later.
+
+    ![Screenshot of the Add via Distribution lists and Security groups on the Protection scope page for Exchange.](../../media/content-understanding/backup-protection-add-dl-sg-exchange.png)
+
+    c. Under **Import from file**, select **Upload CSV** to import user account details via CSV upload.
+
+    ![Screenshot of the Import from file section on the Protection scope page for Exchange.](../../media/content-understanding/backup-protection-import-file-exchange.png)
+
+7. Once you have made the right selections, select **Next** to create the backup policy for Exchange.
+
+8. On the **Review Exchange backup policy** page, review the information to make sure it's how you want it, and then select **Create policy** (or **Update policy** if it's an update).
+
+    ![Screenshot of the Review Exchange backup policy page.](../../media/content-understanding/backup-policy-review-policy-exchange.png)
+
+9. Wait for status of your policy to show as **Active** in the home screen. This might take between 15 and 60 minutes. The backup policy for Exchange is created. Select **View scope** at any time to verify the details.
+
+    ![Screenshot of the Exchange backup policy created page.](../../media/content-understanding/backup-policy-created-exchange.png)
