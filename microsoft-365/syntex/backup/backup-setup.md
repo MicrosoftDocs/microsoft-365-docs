@@ -125,18 +125,43 @@ If you want to use Microsoft 365 Backup for OneDrive, Exchange, and SharePoint, 
 
 Set up OneDrive Backup policy
 
-To set up backup on OneDrive using Microsoft 365 Backup, 
-1.	Go to Microsoft Admin Center 
-2.	Select ‘Settings’
-3.	Select ‘Microsoft 365 Backup’ from the list of products
-4.	Select ‘Set up policy’ under OneDrive
-5.	Review backup features for OneDrive in the Overview page, 
-6.	Now you create your ‘Protection scope’ for One Drive user accounts using any or all three ways. A protection scope is the scope of user accounts within OneDrive that you want to protect with Microsoft 365 Backup
-i.	User accounts that can be added via Search
-ii.	Distribution list & Security groups – note that the distribution list and group is flattened when added, meaning the policy will not update dynamically if the groups or distribution list is updated later.
-iii.	Import user account details via CSV upload
-7.	Backup policy set up for OneDrive
-   
+Follow these steps to set up backup on OneDrive using Microsoft 365 Backup.
+
+1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home).
+
+2. Select **Settings**.
+
+3. Select **Microsoft 365 Backup** from the list of products.
+
+4. On the **Microsoft 365 Backup** page, in the **OneDrive** section, select **Set up policy**.
+
+    ![Screenshot of the Microsoft 365 Backup page with OneDrive highlighted.](../../media/content-understanding/backup-setup-backup-page-onedrive.png)
+
+5. On the **Overview** page, review the backup features for OneDrive, and then select **Next**.
+
+    ![Screenshot of the Overview page for OneDrive.](../../media/content-understanding/backup-overview-page-onedrive.png)
+
+6. On the **Protection scope** page, you can set up OneDrive user accounts using any or all three ways. A protection scope is the scope of user accounts within OneDrive that you want to protect with Microsoft 365 Backup.
+
+    ![Screenshot of the Protection scope page for OneDrive with the options highlighted.](../../media/content-understanding/backup-protection-scope-onedrive.png)
+
+    a. Under **Add via search**, select **Choose accounts** to see user accounts that can be added via search. On the **Search and select accounts** panel, select the accounts you want to add to the policy.
+
+    ![Screenshot of the Search and select accounts panel on the Protection scope page for OneDrive.](../../media/content-understanding/backup-protection-add-search-onedrive.png)
+
+    b. Under **Add via**, select **Distribution lists** or **Security groups**, or both. Note that the distribution list and security group is flattened when added, meaning the policy will not update dynamically if the groups or distribution list are updated later.
+
+    ![Screenshot of the Add via Distribution lists and Security groups on the Protection scope page for OneDrive.](../../media/content-understanding/backup-protection-add-dl-sg-onedrive.png)
+
+    - Under **Import from file**, select **Upload CSV** to import user account details via CSV upload.
+
+    ![Screenshot of the Import from file section on the Protection scope page for OneDrive.](../../media/content-understanding/backup-protection-import-file-onedrive.png)
+
+7. The backup policy for OneDrive is created.
+
+    ![Screenshot of the OneDrive backup policy created page.](../../media/content-understanding/backup-policy-created-onedrive.png)
+
+
 Screenshot 3 Select 'Set up policy' to create backup policy for OneDrive
  
 Screenshot 4 Overview page with details of backup frequency, retention period, cost details
@@ -150,7 +175,9 @@ Screenshot 7 Option 2: Add OneDrive accounts to backup via distribution lists an
 Screenshot 8 Option 3: Add OneDrive accounts via CSV
   
 Screenshot 9 OneDrive backup policy successfully created
- 
+
+
+
 Set up SharePoint Backup policy
 
 To set up backup sites using Microsoft 365 Backup, 
@@ -212,4 +239,4 @@ Screenshot 22 Import user account details via CSV upload
 
  
 
-7.	Wait for status of your policy to show as ‘Active’ in the home screen. This may take between 15 and 60 mins. Backup policy is set up for Exchange. Select ‘View Scope’ to verify the details at any time.
+7.	Wait for status of your policy to show as ‘Active’ in the home screen. This might take between 15 and 60 minutes. Backup policy is set up for Exchange. Select **View scope** to verify the details at any time.
