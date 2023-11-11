@@ -49,7 +49,7 @@ Performance and speed of web interfaces, initial configuration, and restores mig
 
 - Mailboxes and OneDrive accounts that are under legal or in-place holds can't currently be backed up or restored.
 
-## Restore
+### Restore
 
 - SharePoint sites or OneDrive accounts that are currently in the first stage recycle bin must first be restored from the recycle bin before they can be rolled to a prior point in time via the Microsoft 365 Backup tool. The point in time restore via Microsoft 365 Backup won't work if the site or OneDrive is in the recycle bin.
 
@@ -79,7 +79,7 @@ Performance and speed of web interfaces, initial configuration, and restores mig
 
 - OneDrive accounts and SharePoint sites that have undergone the following types of changes won't be undoable via restore: tenant rename, tenant move, and site URL change.  
 
-### Monitoring
+### Monitor
 
 ETA for restore operations isn't available in this release due to technical limitations.
 
