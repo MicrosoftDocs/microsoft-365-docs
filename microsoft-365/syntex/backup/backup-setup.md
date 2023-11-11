@@ -31,7 +31,7 @@ Get started with Microsoft 365 Backup by following the simple three steps in the
 
 ### Set up pay-as-you-go billing
 
-As a first step to sign up for Microsoft 365 Backup, you should first link an Azure subscription in [Syntex pay-as-you-go](https://admin.microsoft.com/Adminportal/Home#/featureexplorer/csi/ContentUnderstanding), if you have not already done so. Although Microsoft 365 Backup is not part of the Syntex product suite, this offering is still leveraging the Syntex billing setup for consistency with other Microsoft 365 pay-as-you-go offerings.
+As a first step to sign up for Microsoft 365 Backup, you should first link an Azure subscription in [Syntex pay-as-you-go](https://admin.microsoft.com/Adminportal/Home#/featureexplorer/csi/ContentUnderstanding), if you haven't already done so. Although Microsoft 365 Backup isn't part of the Syntex product suite, this offering is still using the Syntex billing setup for consistency with other Microsoft 365 pay-as-you-go offerings.
 
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home).
 
@@ -46,15 +46,15 @@ As a first step to sign up for Microsoft 365 Backup, you should first link an Az
 > [!NOTE]
 > To set up pay-as-you-go billing for Microsoft 365 Backup, the admin must have an owner or contribution role on the Azure subscription to be used.
 
-5. If you do not have an Azure subscription or resource group, follow these steps. If you have an Azure subscription and resource group, skip this step and go to step 6.
+5. If you don't have an Azure subscription or resource group, follow these steps. If you have an Azure subscription and resource group, skip this step and go to step 6.
 
     ![Screenshot of the Set up pay-as-you-go billing panel with the Prerequisites section lighlighted.](../../media/content-understanding/backup-setup-prerequisites.png)
 
     a. To create a new Azure subscription, on the **Set up pay-as-you-go billing** panel, select **Learn more about Azure subscriptions**. Alternatively, you can follow the steps in [Create your initial Azure subscriptions](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/initial-subscriptions).
 
-    b. To create a new Azure resource group, on the **Set up pay-as-you-go billing** panel,select **Learn more about Azure resource groups**. Alternatively, you can follow the steps in [Manage Azure resource groups by using the Azure portal](https://learn.microsoft.com/azure/azure-resource-manager/management/manage-resource-groups-portal) to create a resource group. Note that the resource group should be within the Azure subscription.
+    b. To create a new Azure resource group, on the **Set up pay-as-you-go billing** panel,select **Learn more about Azure resource groups**. Alternatively, you can follow the steps in [Manage Azure resource groups by using the Azure portal](https://learn.microsoft.com/azure/azure-resource-manager/management/manage-resource-groups-portal) to create a resource group. The resource group should be within the Azure subscription.
 
-    c. After you create an Azure subscription with owner or contributor role, you will need to have a resource group created.
+    c. After you create an Azure subscription with owner or contributor role, you'll need to have a resource group created.
 
 6. If you have an Azure subscription, select the subscription from the drop-down menu.
 
@@ -68,7 +68,7 @@ You must have Global admin or SharePoint admin permissions to access the Microso
 
 ### Enable Microsoft 365 Backup
 
-To enable Microsoft 365 Backup, you will need to go to the Microsoft 365 admin center.
+To enable Microsoft 365 Backup, you'll need to go to the Microsoft 365 admin center.
 
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home).
 
@@ -80,7 +80,7 @@ To enable Microsoft 365 Backup, you will need to go to the Microsoft 365 admin c
 
 5. From the list of products, select **Backup Preview**.
 
-6. By default, the feature will be turned off. Select **Turn on** to enable Microsoft 365 Backup for your organization.
+6. By default, the feature is turned off. Select **Turn on** to enable Microsoft 365 Backup for your organization.
 
 7. Review the applicable [terms of service for Microsoft 365 Backup](backup-preview-terms.md) and select **Confirm**.
 
@@ -92,13 +92,13 @@ To enable Microsoft 365 Backup, you will need to go to the Microsoft 365 admin c
 
 ## Admin roles and backup management privileges
 
-Only tenant-level admins can create and manage backups using Microsoft 365 Backup for their users. End users do not have the ability to enable backup or restores for their user account, distribution lists, mailboxes, or sites. It’s important to note that your admin role will determine which products you can manage with Microsoft 365 Backup. In the future, we might introduce a Backup admin role that can control the entire tool.
+Only tenant-level admins can create and manage backups using Microsoft 365 Backup for their users. End users don't have the ability to enable backup or restores for their user account, distribution lists, mailboxes, or sites. It’s important to note that your admin role determines which products you can manage with Microsoft 365 Backup. In the future, we might introduce a Backup admin role that can control the entire tool.
 
 |Admin role  |OneDrive  |SharePoint  |Exchange  |
 |---------|---------|---------|---------|
 |Global admin     | X        | X        | X       |
 |SharePoint admin     | X        | X        |         |
-|Exchange admin<br>(export/import role is also required for Exchange item-level restore actions)    |         |         | X        |
+|Exchange admin<br>(Export/import role is also required for Exchange item-level restore actions)    |         |         | X        |
 
 ## Glossary
 
@@ -116,9 +116,9 @@ Only tenant-level admins can create and manage backups using Microsoft 365 Backu
 
 - **ODB** – OneDrive for Business accounts
 
-## Set up backup policies
+## Set up backup policies for OneDrive, SharePoint, and Exchange
 
-If you want to use Microsoft 365 Backup for OneDrive, SharePoint, and Exchange, , you need to create a *policy* for each product. A policy represents the backup plan defined by admins for protecting the Micorsoft 365 data of an organization. It contains details of what data (SharePoint sites, OneDrive accounts, and Exchange mailboxes) to protect. Although you’ll see the retention period and backup frequency (which defines the restore point objective), those settings are not currently variable or modifiable.
+To use Microsoft 365 Backup for OneDrive, SharePoint, or Exchange, you need to create a backup policy for each product. A policy represents the backup plan defined by admins for protecting the Microsoft 365 data of an organization. It contains details of what data (OneDrive accounts, SharePoint sites, and Exchange mailboxes) to protect. Although you see the retention period and backup frequency (which defines the restore point objective), those settings aren't currently variable or modifiable.
 
 ### To set up a backup policy in Microsoft 365 Backup
 
@@ -150,7 +150,7 @@ Follow these steps to set up a backup policy for OneDrive accounts using Microso
 
     ![Screenshot of the Search and select accounts panel on the Protection scope page for OneDrive.](../../media/content-understanding/backup-protection-add-search-onedrive.png)
 
-    b. Under **Add via**, select **Distribution lists** or **Security groups**, or both. Note that the distribution list and security group is flattened when added, meaning the policy will not update dynamically if the groups or distribution list are updated later.
+    b. Under **Add via**, select **Distribution lists** or **Security groups**, or both. The distribution list and security group are flattened when added, meaning the policy won't update dynamically if the groups or distribution list are updated later.
 
     ![Screenshot of the Add via Distribution lists and Security groups on the Protection scope page for OneDrive.](../../media/content-understanding/backup-protection-add-dl-sg-onedrive.png)
 
@@ -190,13 +190,13 @@ Follow these steps to set up a backup policy for SharePoint sites using Microsof
 
     ![Screenshot of the Search and select sites panel on the Protection scope page for SharePoint.](../../media/content-understanding/backup-protection-add-search-sharepoint.png)
 
-    b. Under **Add via**, select **Distribution lists** or **Security groups**, or both. Note that the distribution list and security group is flattened when added, meaning the policy will not update dynamically if the groups or distribution list are updated later.
+    b. Under **Add via**, select **Distribution lists** or **Security groups**, or both. The distribution list and security group are flattened when added, meaning the policy won't update dynamically if the groups or distribution list are updated later.
 
     c. Under **Import from file**, select **Upload CSV** to import user account details via CSV upload.
 
     ![Screenshot of the Import from file section on the Protection scope page for SharePoint.](../../media/content-understanding/backup-protection-import-file-sharepoint.png)
 
-7. Once you have made the right selections, select **Next** to create the backup policy for SharePoint.
+7. Once you've made the right selections, select **Next** to create the backup policy for SharePoint.
 
 8. On the **Review SharePoint backup policy** page, review the information to make sure it's how you want it, and then select **Create policy** (or **Update policy** if it's an update).
 
@@ -224,15 +224,15 @@ Follow these steps to set up a backup policy for Exchange mailboxes sites using 
 
     ![Screenshot of the Overview page for Exchange.](../../media/content-understanding/backup-overview-page-exchange.png)
 
-6. On the **Protection scope** page, choose the scope of protection for the mailbox policy. Microsoft 365 Backup for Exchange will allow addition of mailboxes via three ways.
+6. On the **Protection scope** page, choose the scope of protection for the mailbox policy. Microsoft 365 Backup for Exchange allows the addition of mailboxes in three ways.
 
-    ![Screenshot of the Protection scope page for Exchange with the options highlighted.](../../media/content-understanding/backup-protection-scope-exchange.png)
+    ![Screenshot of the Protection scope page for Exchange.](../../media/content-understanding/backup-protection-scope-exchange.png)
 
     a. Under **Add via search**, select **Choose user mailboxes** to see the mailboxes that can be added via search. On the **Search and select mailboxes** panel, select the mailboxes you want to add to the policy.
 
     ![Screenshot of the Search and select mailboxes panel on the Protection scope page for Exchange.](../../media/content-understanding/backup-protection-add-search-exchange.png)
 
-    b. Under **Add via**, select **Distribution lists** or **Security groups**, or both. Note that the distribution list and security group is flattened when added, meaning the policy will not update dynamically if the groups or distribution list are updated later.
+    b. Under **Add via**, select **Distribution lists** or **Security groups**, or both. The distribution list and security group are flattened when added, meaning the policy won't update dynamically if the groups or distribution list are updated later.
 
     ![Screenshot of the Add via Distribution lists and Security groups on the Protection scope page for Exchange.](../../media/content-understanding/backup-protection-add-dl-sg-exchange.png)
 
@@ -240,7 +240,7 @@ Follow these steps to set up a backup policy for Exchange mailboxes sites using 
 
     ![Screenshot of the Import from file section on the Protection scope page for Exchange.](../../media/content-understanding/backup-protection-import-file-exchange.png)
 
-7. Once you have made the right selections, select **Next** to create the backup policy for Exchange.
+7. Once you've made the right selections, select **Next** to create the backup policy for Exchange.
 
 8. On the **Review Exchange backup policy** page, review the information to make sure it's how you want it, and then select **Create policy** (or **Update policy** if it's an update).
 
