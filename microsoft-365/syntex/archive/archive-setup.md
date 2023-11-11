@@ -37,6 +37,9 @@ Before you can use Microsoft 365 Archive, you must first link your Azure subscri
 
 To set up pay-as-you-go billing, see [Configure Microsoft Syntex for pay-as-you-go billing at Syntex billing](../syntex-azure-billing.md).
 
+> [!NOTE]
+> Currently in Microsoft 365 Archive (Preview), you will not be able to set up pay-as-you-go billing for two regions: US_West and Canada_East.  
+
 ### Permissions
 
 You must have Global admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up Microsoft 365 Archive.
