@@ -152,7 +152,7 @@ Follow these steps to set up a backup policy for OneDrive accounts using Microso
 
 8. On the **Review OneDrive backup policy** page, review the information to make sure it's how you want it, and then select **Create policy** (or **Update policy** if it's an update).
 
-7. The backup policy for OneDrive is created.
+9. The backup policy for OneDrive is created.
 
     ![Screenshot of the OneDrive backup policy created page.](../../media/content-understanding/backup-policy-created-onedrive.png)
 
