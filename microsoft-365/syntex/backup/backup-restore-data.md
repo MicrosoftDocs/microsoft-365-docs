@@ -56,7 +56,7 @@ The restore point frequency, also known as the [recovery point objective](backup
 Once you back up your data, you might need to restore the data in case of an accidental deletion, ransomware attack, or other event. The restore feature in Microsoft 365 Backup is created to help you restore backed up data.
 
 > [!NOTE]
-> We recommend choosing an express restore point for full OneDrive account restores as it will provide the fastest restore experience.
+> We recommend choosing an express restore point for full account, site, or mailbox restores as it will provide the fastest restore experience.
 
 Select the **OneDrive**, **SharePoint**, or **Exchange** tab for steps to restore data from backup for that product.
 
