@@ -79,3 +79,24 @@ When you reactivate a site, its permissions, lists, pages, files, folder-structu
 - Content marked to be deleted by retention policies will still be deleted as normal.
 
 Other than these two exceptions, you can expect the site to be unchanged.  
+
+## Site templates supported
+
+|Template ID  |Template  |
+|---------|---------|
+|0     |Global         |
+|1     |Team Site         |
+|2     |Meeting Workspace         |
+|4     |Wiki Site         |
+|7     |Document Center         |
+|53     |Publishing Site         |
+|60     |         |
+|61     |Visio Process Repository         |
+|64     |Group         |
+|68     |Site Page Publishing / Comms Site         |
+|95     |Developer Site         |
+|2009     |Team Site – SharePoint Online configuration         |
+|6001     |Content Center         |
+|6115     |Project Site         |
+|6215     |Microsoft Project Site         |
+|14483     |Records Center         |
