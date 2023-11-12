@@ -20,7 +20,7 @@ description: Learn about compliance features for archived sites in Microsoft 365
 # Compliance features in Microsoft 365 Archive (Preview)
 
 > [!NOTE]
-> This feature is currently in limited preview and subject to change.
+> This feature is currently in preview and subject to change.
 
 Archived SharePoint sites, just like active SharePoint sites, maintain a baseline level of data promises. These promises include the following:
 
