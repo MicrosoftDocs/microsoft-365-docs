@@ -17,7 +17,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: Read the preview terms and conditions for Microsoft 365 Archive (Preview).
 ---
 
-# Microsoft 365 Archive public preview terms and conditions
+# Microsoft 365 Archive preview terms and conditions
 
 Effective Date:  November 15, 2023
 
