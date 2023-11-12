@@ -20,7 +20,7 @@ description: Learn about the archived states and what they mean in Microsoft 365
 # Archived states in Microsoft 365 Archive (Preview)
 
 > [!NOTE]
-> This feature is currently in limited preview and subject to change.
+> This feature is currently in preview and subject to change.
 
 The following table describes the archived states and allowed operations.
 
