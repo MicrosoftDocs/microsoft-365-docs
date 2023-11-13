@@ -84,9 +84,10 @@ Every email notification sent in relation to a signature request contains a URL 
   
 For more protection, when a sender cancels a request, recipients immediately lose access to the request document. The email notification received by recipients won't contain a URL link to view the request.
 
-## External Signers
-### Conditional Access
-Certain [conditional access](https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview) might determine whether users external recipient (signers outside of your organization or Microsoft 365 tenant) will be able sign a document. depending on the admin setup, external signers might not be able to access and read the document for signing. In some other cases, they might be able to access the document for signing but the signing operation will be unsuccessful. One common way to resolve this is to add the **Microsoft eSign Service** to the list of approved apps via the Microsoft Entra admin center.
+## External signers
+
+### Conditional access
+Certain [conditional access](https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview) might determine whether external recipients (signers outside of your organization or Microsoft 365 tenant) will be able sign a document. Depending on the admin setup, external signers might not be able to access and read the document for signing. In some other cases, they might be able to access the document for signing, but the signing operation will be unsuccessful. One common way to resolve this is to add the **Microsoft eSign Service** to the list of approved apps via the Microsoft Entra admin center.
 
 ### Authentication
-External users may need to authenticte before they are able to access a document for signing. The type of authentication required by the external recipients will depend on the configuration for guest users at the SharePoint level or at the tenant level. Additionally, if the external user belongs to an Org with a M365 tenant, it is possible for their organization's setup to impact on their authentication experience when attempting to sign the document.
+External users might need to authenticate before they are able to access a document for signing. The type of authentication required by the external recipients will depend on the configuration for guest users at the SharePoint level or at the tenant level. Additionally, if the external user belongs to an organization with a Microsoft 365 tenant, it is possible for their organization's setup to affect their authentication experience when attempting to sign the document.
