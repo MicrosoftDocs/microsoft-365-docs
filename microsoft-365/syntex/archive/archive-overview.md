@@ -50,18 +50,18 @@ Archiving a site archives everything within it, including:
 > [!NOTE]
 > Microsoft 365 Archive (Preview) is currently rolling out. More features will be rolled out as they become available.
 
-Administrators should notify the site owners and end users before a site is archived so they're aware that the site will not be accessible.
+Administrators should notify the site owners and end users before a site is archived so they're aware that the site won't be accessible.
 
 ## Preview limitations
 
 - As a part of the preview, tenants with more than 50,000 sites might face issues while trying to enumerate archived sites on the **Archived sites** page. Applicable enhancements are scheduled to roll out in the future. In this scenario, PowerShell can be used to more efficiently archive sites and manage archived content.
 
-- Currently, end user search results will not show any archived content. Columns such as Archived Date and Archived By are not currently available, but are planned and will be rolled out when available.
+- Currently, end user search results won't show any archived content. Columns such as Archived Date and Archived By aren't currently available, but are planned and will be rolled out when available.
 
-- For multi-geo tenants, while data residency requirements are honored, site moves are not supported. Archived sites will need to be reactivated prior to any move.
+- For multi-geo tenants, while data residency requirements are honored, site moves aren't supported. Archived sites will need to be reactivated prior to any move.
 
 - Currently, tenant rename isn't supported on archived sites. Sites will need to be reactivated before a tenant rename is triggered.
 
 - Sites that are backed up as part of the Microsoft 365 Backup shouldn't be archived.
 
-- If you archive a site that has a library syncing to a device, that device's sync client will display errors after the site is archived. We recommend that you remove syncing libraries before archiving a sites.
+- If you archive a site that has a library syncing to a device, that device's sync client will display errors after the site is archived. We recommend that you remove syncing libraries before archiving a site.
