@@ -279,4 +279,20 @@ See [Logging installation issues](mac-resources.md#logging-installation-issues) 
 ## Uninstallation
 
 See [Uninstalling](mac-resources.md#uninstalling) for details on how to remove Microsoft Defender for Endpoint on macOS from client devices.
-[!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+
+> [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+
+
+> [!Tip]
+> If you have any feedback that you will like to share, submit it by opening Microsoft Defender Endpoint on Mac on your device and navigate to **Help** \> **Send feedback**.
+
+## Recommended content
+
+- [Learn how to install, configure, update, and use Microsoft Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md).
+- [Learn how to set up the Microsoft Defender for Endpoint on macOS policies in Jamf](mac-jamfpro-policies.md).
+- [Learn how to deploy Microsoft Defender for Endpoint on macOS with Jamf Pro](mac-install-with-jamf.md).
+- [Learn how to troubleshoot license issues in Microsoft Defender for Endpoint on Mac](mac-support-license.md).
+- [Learn how to use resources for Microsoft Defender for Endpoint on Mac, including how to uninstall it, how to collect diagnostic logs, CLI commands, and known issues with the product](mac-resources.md).
+- [Learn how to configure Microsoft Defender for Endpoint on Mac in enterprise organizations](mac-preferences.md).
+- [Learn how to install Microsoft Defender for Endpoint on Mac on other management solutions](mac-install-with-other-mdm.md).
+- [Learn how to detect and block Potentially Unwanted Applications (PUA) using Microsoft Defender for Endpoint on macOS](mac-pua.md).
