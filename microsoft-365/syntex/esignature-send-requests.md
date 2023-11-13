@@ -33,7 +33,7 @@ Use the following steps to start the Syntex eSignature process.
 
     ![Screenshot of the Add recipients panel.](../media/content-understanding/esignature-add-recipients-panel.png)
 
-4. On the **Add form fields** panel, drag and drop the **Signature**, **Initials**, and **Date** fields to the appropriate locations in the document for each recipient. Each form field can be marked either as required or not required.
+4. To **specify where ti sign**, drag and drop the **Signature**, **Initials**, and **Date** fields to the appropriate locations in the document for each recipient. Each form field can be marked either as required or not required.
 
     ![Screenshot of the Add form fields panel.](../media/content-understanding/esignature-add-form-fields-panel.png)
 
