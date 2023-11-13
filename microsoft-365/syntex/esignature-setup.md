@@ -2,9 +2,9 @@
 title: Set up Microsoft Syntex eSignature
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: amcdonnell
-ms.date: 09/29/2023
+ms.date: 11/15/2023
 audience: admin
 ms.topic: conceptual
 ms.service: microsoft-syntex
@@ -19,7 +19,7 @@ description: Learn how to set up Microsoft Syntex eSignature to send electronic 
 
 # Set up Microsoft Syntex eSignature
 
-The Microsoft Syntex eSignature service is set up in the Microsoft 365 admin center.
+The Microsoft Syntex eSignature service is set up in the Microsoft 365 admin center. Before you begin, read the [Microsoft Syntex eSignature terms of service](/legal/microsoft-365/esignature-terms-of-service).
 
 ## Prerequisites
 
@@ -87,7 +87,9 @@ For more protection, when a sender cancels a request, recipients immediately los
 ## External signers
 
 ### Conditional access
-Certain [conditional access](https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview) might determine whether external recipients (signers outside of your organization or Microsoft 365 tenant) will be able sign a document. Depending on the admin setup, external signers might not be able to access and read the document for signing. In some other cases, they might be able to access the document for signing, but the signing operation will be unsuccessful. One common way to resolve this is to add the **Microsoft eSign Service** to the list of approved apps via the Microsoft Entra admin center.
+
+Certain [conditional access](/entra/identity/conditional-access/overview) might determine whether external recipients (signers outside of your organization or Microsoft 365 tenant) will be able sign a document. Depending on the admin setup, external signers might not be able to access and read the document for signing. In some other cases, they might be able to access the document for signing, but the signing operation will be unsuccessful. One common way to resolve this is to add the **Microsoft eSign Service** to the list of approved apps via the Microsoft Entra admin center.
 
 ### Authentication
-External users might need to authenticate before they are able to access a document for signing. The type of authentication required by the external recipients will depend on the configuration for guest users at the SharePoint level or at the tenant level. Additionally, if the external user belongs to an organization with a Microsoft 365 tenant, it is possible for their organization's setup to affect their authentication experience when attempting to sign the document.
+
+External users might need to authenticate before they're able to access a document for signing. The type of authentication required by the external recipients will depend on the configuration for guest users at the SharePoint level or at the tenant level. Additionally, if the external user belongs to an organization with a Microsoft 365 tenant, it's possible for their organization's setup to affect their authentication experience when attempting to sign the document.
