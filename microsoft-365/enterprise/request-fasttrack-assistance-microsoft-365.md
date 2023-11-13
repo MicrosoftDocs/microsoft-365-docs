@@ -29,8 +29,6 @@ The FastTrack request for assistance (RFA) form is now available in the [Microso
 
 1. After submission, receipt of your request will be confirmed, your RFA ID will be provided, and you'll be given the option to provide feedback about your experience.  Select **Done**.
 
-   ![Screenshot of the FastTrack request confirmation page.](media/request-fasttrack-assistance-microsoft-365/fasttrack-request-submitted.png)
-
 ## How to find RFA details and status updates
 
 1. After you submit your RFA, you can find your tenant's RFA history on the **FastTrack assistance** tab of the [Advanced deployment guides & assistance](https://go.microsoft.com/fwlink/?linkid=2226341) page at the Microsoft 365 admin center.
