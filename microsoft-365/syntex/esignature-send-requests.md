@@ -2,9 +2,9 @@
 title: Create a signature request using Microsoft Syntex eSignature
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 ms.reviewer: amcdonnell
-ms.date: 10/15/2023
+ms.date: 11/15/2023
 audience: enabler
 ms.topic: conceptual
 ms.service: microsoft-syntex
