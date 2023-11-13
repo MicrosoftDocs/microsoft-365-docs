@@ -47,7 +47,7 @@ Combine the power of Microsoft Sentinel with Microsoft Defender XDR into a singl
 
 Before you begin, review the feature documentation to understand the product changes and limitations. The feature documentation is provided with your invitation to participate in the preview.
 
-The Microsoft Defender portal supports a single Microsoft Entra tenant and the connection to one workspace at a time.  In the context of this article, a workspace is a Log Analytics workspace with Microsoft Sentinel enabled. 
+The Microsoft Defender portal supports a single Microsoft Entra tenant and the connection to one workspace at a time.  In the context of this article, a workspace is a Log Analytics workspace with Microsoft Sentinel enabled.
 
 To onboard and use Microsoft Sentinel in the Microsoft Defender portal, you must have the following resources and access:
 
@@ -91,9 +91,9 @@ To connect a workspace that has Microsoft Sentinel enabled to Defender XDR, comp
    - Any previously enabled Microsoft incident creation rules, which are used to promote Microsoft Defender XDR alerts into incidents, are automatically disabled to avoid duplicate incidents. This change only impacts Microsoft incident creation rules used for Microsoft alerts and doesn't impact other analytic rules.
 
 1. Select **Connect**.
-1. Wait a few moments until your workspace is fully connected.
+1. You might need to wait up to 6 hours until your workspace is fully connected.
 
-When your workspace is connected, the banner on the **Overview** page shows that your unified security information and event management (SIEM) and extended detection and response (XDR) is ready.  You’ll also see the **Overview** page updated with new sections that include metrics from Microsoft Sentinel like the number of data connectors and automation rules.
+After your workspace is connected, the banner on the **Overview** page shows that your unified security information and event management (SIEM) and extended detection and response (XDR) is ready.  You’ll also see the **Overview** page updated with new sections that include metrics from Microsoft Sentinel like the number of data connectors and automation rules.
 
 ## Explore Microsoft Sentinel features in the Defender portal
 
