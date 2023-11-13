@@ -38,6 +38,10 @@ For more information on what's new with other Microsoft Defender security produc
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [What's new in Microsoft Defender for Cloud Apps](/cloud-app-security/release-notes)
 
+## November 2023
+
+- **Enhanced Action experince from Email Entity/ Summary Pannel** As part of the cahnge security admins can take multiple actions as part of FP/FN flows.[Learn more](mdo-email-entity-page.md)
+  
 ## October 2023
 
 - **Create and manage simulations using the Graph API** in Attack simulation training. [Learn more](/graph/api/attacksimulationroot-post-simulation)
