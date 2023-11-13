@@ -83,8 +83,8 @@ For more information on what's new with other Microsoft Defender security produc
 
 ## January 2023
 
-- [Automatic Tenant Allow/Block List expiration management is now available in Microsoft Defender for Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447): Microsoft now automatically removes allow entries from the Tenant Allow/Block List once the system has learned from it. Alternatively, Microsoft extends the expiration time of the allows if the system hasn't learned yet. This behavior prevents legitimate email from going to junk or quarantine.
-- **Configuring third-party phishing simulations in Advanced Delivery:** We've expanded "Simulation URLs to allow" limit to 30 URLs. To learn how to configure, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](advanced-delivery-policy-configure.md)
+- [Automatic Tenant Allow/Block List expiration management is now available in Microsoft Defender for Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/automatic-tenant-allow-block-list-expiration-management-is-now/ba-p/3723447): Microsoft now automatically removes allow entries from the Tenant Allow/Block List once the system has learned from it. Alternatively, Microsoft extends the expiration time of the allow entries if the system hasn't learned yet. This behavior prevents legitimate email from going to junk or quarantine.
+- **Configuring third-party phishing simulations in Advanced Delivery:** We expanded "Simulation URLs to allow" limit to 30 URLs. To learn how to configure, see [Configure the delivery of third-party phishing simulations to users and unfiltered messages to SecOps mailboxes](advanced-delivery-policy-configure.md)
 - [Enhanced user telemetry in the simulation reports in Attack Simulation Training](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/attack-simulation-training-new-insights-into-targeted-user/ba-p/3673105): As part of our enhanced user telemetry, administrators can now view additional details about how their targeted users are interacting with the phishing payload from phishing simulation campaigns.
 
 ## December 2022
@@ -106,7 +106,7 @@ For more information on what's new with other Microsoft Defender security produc
 ## September 2022
 
 - **Anti-spoofing enhancement for internal domains and senders:**
-  - For spoofing protection, the allowed senders or domains defined in the [anti-spam policy](anti-spam-policies-configure.md) and within user allow lists must now pass authentication in order for the allowed messages to be honored. The change only impacts messages that are considered to be internal (the sender or sender's domain is in an accepted domain in the organization). All other messages will continue to be handled as they are today.
+  - For spoofing protection, the allowed senders or domains defined in the [anti-spam policy](anti-spam-policies-configure.md) and within user allow lists must now pass authentication in order for the allowed messages to be honored. The change only affects messages that are considered to be internal (the sender or sender's domain is in an accepted domain in the organization). All other messages continue to be handled as they are today.
 
 - **Automatic redirection from Office action center to unified action center:** The action center in the Email & Collaboration section **Email & Collaboration** > **Review** > **Action center** (https://security.microsoft.com/threatincidents) is automatically redirected to **Actions & Submissions** > **Action center** > **History** (https://security.microsoft.com/action-center/history).
 
