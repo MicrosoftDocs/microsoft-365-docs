@@ -13,48 +13,28 @@ The FastTrack request for assistance (RFA) form is now available in the [Microso
 
 ## How to submit an RFA in the admin center
 
-1. After signing into the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/?linkid=2226341), select **Submit a new request**:
+1. In the Microsoft 365 admin center, open the [Advanced deployment guides & assistance](https://go.microsoft.com/fwlink/?linkid=2226341) page.  On the **FastTrack assistance** tab, select **Submit a new request**:
+
+1. Read the overview to see what information is needed for an RFA, and select **Next**.
    
-   ![Screenshot of the Microsoft 365 admin center page for submitting FastTrack requests for assistance.](media/request-fasttrack-assistance-microsoft-365/fasttrack-submit-request.png)
+1. Select the products for FastTrack assistance, your planned deployment date, and whether you would like assistance with any more options (if applicable), and select **Next**.
 
-1. Read the overview to see what information is needed for an RFA, and then select **Next**.
-   
-   ![Screenshot of the FastTrack request overview page.](media/request-fasttrack-assistance-microsoft-365/fasttrack-request-overview.png)
+1. On the **Customer details** page, enter a unique project name, your organization's service location, your preferred language, and any comments about the project, and select **Next**.
 
-1. Select the products for FastTrack assistance, your planned deployment date, and whether you would like assistance with any more options (if applicable). 
+1. On the **Contacts** page, enter your phone number and confirm your title, and select **Next**.
 
-   ![Screenshot of the FastTrack choose products page.](media/request-fasttrack-assistance-microsoft-365/fasttrack-choose-products.png)
+1. Enter the primary contact and business sponsor for the request. If you’re also the primary contact, select the **Same as the requester** checkbox, and select **Next**.
 
-1. On the **Customer details** page, enter a unique project name, your organization's service location, your preferred language, and any comments about the project.
+1. On the **Review** page, view your request's information and make edits, if needed. Select the checkbox next to the acknowledgment message, and select **Submit**. 
 
-   ![Screenshot of the FastTrack customer details page.](media/request-fasttrack-assistance-microsoft-365/fasttrack-customer-details.png)
-
-1. On the **Contacts** page, enter your phone number and confirm your title.
-
-   ![Screenshot of the FastTrack requestor contact page.](media/request-fasttrack-assistance-microsoft-365/fasttrack-requestor-contact.png)
-
-1. Enter the primary contact and business sponsor for the request. If you’re also the primary contact, select the **Same as the requester** checkbox.
-
-   ![Screenshot of the FastTrack project sponsor contact page.](media/request-fasttrack-assistance-microsoft-365/fasttrack-sponsor-contact.png)
-
-1. On the **Review** page, view your request's information and make edits, if needed. Select the checkbox next to the acknowledgment message, and then select **Submit**. 
-
-   ![Screenshot of the FastTrack review page.](media/request-fasttrack-assistance-microsoft-365/fasttrack-request-review.png)
-
-1. After submission, receipt of your request will be confirmed, your RFA ID will be provided, and you'll be given the option to provide feedback about your experience.
+1. After submission, receipt of your request will be confirmed, your RFA ID will be provided, and you'll be given the option to provide feedback about your experience.  Select **Done**.
 
    ![Screenshot of the FastTrack request confirmation page.](media/request-fasttrack-assistance-microsoft-365/fasttrack-request-submitted.png)
 
 ## How to find RFA details and status updates
 
-1. After you submit your RFA, you can find your tenant's RFA history on the **FastTrack assistance** page.
-
-   ![Screenshot of the FastTrack assistance page.](media/request-fasttrack-assistance-microsoft-365/fasttrack-assistance.png)
+1. After you submit your RFA, you can find your tenant's RFA history on the **FastTrack assistance** tab of the [Advanced deployment guides & assistance](https://go.microsoft.com/fwlink/?linkid=2226341) page at the Microsoft 365 admin center.
 
 2. Under **Request for assistance status and history**, you can find a list of all historical submissions for your tenant with the request name, requested products, status, submission date, and who submitted the request.
 
-   ![Screenshot of the FastTrack request status and history page.](media/request-fasttrack-assistance-microsoft-365/fasttrack-history.png)
-
-3. Select an RFA to open a flyout window with the request details and status history.
-
-   ![Screenshot of the status and history details for a selected request.](media/request-fasttrack-assistance-microsoft-365/fasttrack-history-details.png)
+3. Select an RFA to open a details pane with the request details and status history.
