@@ -166,11 +166,6 @@ If you have backup products assigned to the policy, you can change the order in 
 
 ## Auto-claim policies for Microsoft Power Apps
 
-> [!NOTE]
-> The ability to create auto-claim policies for Microsoft Power Apps is currently in preview. The auto-claim policies for Power Apps is being gradually rolled out across areas and might not be available yet in your area.
-
-Preview features aren't meant for use in production and can have limited functionality. These features are made available to customers before an official release so that they can get early access to the features and provide feedback.
-
 Admins can now create auto-claim policies for Power Apps per user licenses in the Microsoft 365 admin center, similar to how they can create auto-claim policies for other Microsoft products and services. After the policy is set, any user in the organization who requests an individual Power Apps license is automatically granted one.
 
 If a user lacks a standalone Power Apps license and launches an app that requires a premium license, the system automatically grants a Power Apps per user license to the user.

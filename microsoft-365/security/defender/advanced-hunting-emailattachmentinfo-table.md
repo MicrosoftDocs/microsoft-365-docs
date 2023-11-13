@@ -51,11 +51,12 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `FileName` | `string` | Name of the file that the recorded action was applied to |
 | `FileType` | `string` | File extension type |
 | `SHA256` | `string` | SHA-256 of the file that the recorded action was applied to. This field is usually not populated — use the SHA1 column when available. |
+| `FileSize` | `long` | Size of the file in bytes |
 | `ThreatTypes` | `string` | Verdict from the email filtering stack on whether the email contains malware, phishing, or other threats |
 | `ThreatNames` | `string` | Detection name for malware or other threats found |
 | `DetectionMethods` | `string` | Methods used to detect malware, phishing, or other threats found in the email |
-| `ReportId` | `long` | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns. |
-| `FileSize` | `long` | Size of the file in bytes |
+| `ReportId` | `string` | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns. |
+
 
 ## Related topics
 
