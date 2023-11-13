@@ -93,7 +93,7 @@ Examples:
     mdatp exclusion extension add --name .txt
     ```
 
-    ```Output
+    ```console
     Extension exclusion configured successfully
     ```
 
@@ -103,7 +103,7 @@ Examples:
     mdatp exclusion file add --path /var/log/dummy.log
     ```
 
-    ```Output
+    ```console
     File exclusion configured successfully
     ```
 
@@ -113,7 +113,7 @@ Examples:
     mdatp exclusion folder add --path /var/log/
     ```
 
-    ```Output
+    ```console
     Folder exclusion configured successfully
     ```
 
@@ -124,7 +124,7 @@ Examples:
     mdatp exclusion folder add --path /other/folder
     ```
 
-    ```Output
+    ```console
     Folder exclusion configured successfully
     ```
 
@@ -149,7 +149,7 @@ Examples:
     > [!NOTE]
     > This will exclude all paths whose parent is */var/*; for example, */var/this-subfolder/and-this-subfolder-as-well*.
 
-    ```Output
+    ```console
     Folder exclusion configured successfully
     ```
 
@@ -159,7 +159,7 @@ Examples:
     mdatp exclusion process add --name cat
     ```
 
-    ```Output
+    ```console
     Process exclusion configured successfully
     ```
 
@@ -170,7 +170,7 @@ Examples:
     mdatp exclusion process add --name dog
     ```
 
-    ```Output
+    ```console
     Process exclusion configured successfully
     ```
 

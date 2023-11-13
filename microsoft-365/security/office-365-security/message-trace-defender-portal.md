@@ -31,7 +31,13 @@ appliesto:
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, message trace follows email messages as they travel through your Microsoft 365 organization. You can determine if a message was received, rejected, deferred, or delivered by the service. It also shows what actions were taken on the message before it reached its final status.
 
-You can use the information from message trace to efficiently answer user questions about what happened to messages, troubleshoot mail flow issues, and validate policy changes.
+You can use the information from message trace to efficiently answer user questions about what happened to messages, troubleshoot mail flow issues, and validate policy changes. 
+
+The **Summary report** in the message trace contains the information that helps you answer user questions and troubleshoot mail flow issues. This **Summary report** enables you to view the report in a file that can be opened in Windows Explorer (also known as File Explorer).
+
+You can use the **View in Explorer** option in the **Message trace search results** page in [Exchange admin center](https://admin.exchange.microsoft.com/). However, to use this option, you must fulfill the following prerequisite:
+
+- You must procure the E5/A5 license to access a feature within the Office 365 Threat Intelligence licensing. This feature only enables you to use the **View in Explorer** option.
 
 > [!TIP]
 > The **Message trace** page in the Microsoft 365 Defender portal is a really pass through to **Message trace** page in the new Exchange admin center (EAC) at <https://admin.exchange.microsoft.com/#/messagetrace>.
@@ -41,7 +47,7 @@ You can use the information from message trace to efficiently answer user questi
 - The maximum number of messages that are displayed in the results of a message trace depends on the report type you selected (see the [Choose report type](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac#choose-report-type) section for details). The [Get-HistoricalSearch](/powershell/module/exchange/get-historicalsearch) cmdlet in Exchange Online PowerShell or standalone EOP PowerShell returns all messages in the results.
 
 - You need to be assigned permissions before you can do the procedures in this article. You have the following options:
-  - [Exchange Online RBAC](/exchange/permissions-exo/permissions-exo): Membership in the **Organization Management**, **Compliance Management** or **Help Desk** role groups.
+  - [Exchange Online permissions](/exchange/permissions-exo/permissions-exo): Membership in the **Organization Management**, **Compliance Management** or **Help Desk** role groups.
   - [Microsoft Entra permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator** or **Compliance Administrator** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
 ## Open message trace

@@ -16,7 +16,7 @@ ms.collection:
 appliesto: 
   - Microsoft Teams
   - Microsoft 365 for frontline workers
-ms.date: 11/03/2023
+ms.date: 11/10/2023
 
 ---
 
@@ -42,18 +42,18 @@ Team membership is automatically managed over time through the power of dynamic 
 
 ## Prerequisites
 
-- Users must have a Microsoft 365 F3, F1, E3, or E5 license. If a user doesn't have one of these licenses, they'll need a Microsoft Entra ID P1 add-on license to use dynamic teams. [Learn more about frontline licensing](flw-licensing-options.md).
-- The admin running the deployment process must be a Teams admin and Global admin.
+> [!IMPORTANT]
+> The admin running the deployment process must be a Global admin.
 
-- Ensure you can define your frontline workers and their work locations through data available in Microsoft Entra ID. If you don't have this data in Microsoft Entra ID, you can sync it through a [human capital management (HCM) connector](/azure/active-directory/app-provisioning/plan-cloud-hr-provision) or [use the PowerShell solution](deploy-teams-at-scale.md) to create teams at scale.
-- When evaluating the right solution, we recommend you do the following:
+- Users must have a Microsoft 365 F3, F1, E3, or E5 license. If a user doesn't have one of these licenses, they'll need a Microsoft Entra ID P1 add-on license to use dynamic teams. [Learn more about frontline licensing](flw-licensing-options.md).
+- Ensure you can define your frontline workers and their work locations through data available in Microsoft Entra ID. If you don't have this data in Microsoft Entra ID, you can sync it through a [human capital management (HCM) connector](/azure/active-directory/app-provisioning/plan-cloud-hr-provision) or [use the PowerShell solution](deploy-teams-at-scale.md) to create static teams at scale.
+
+When evaluating the right solution for your organization, we recommend you do the following:
+
   1. Plan your frontline deployment.
-  1. Test the deploy tools (dynamic or static team creation).
+  1. Test the deploy tools&mdash;dynamic team creation (the process described in this article) or static team creation (using the [PowerShell solution](deploy-teams-at-scale.md)). Keep in mind that static teams aren't managed automatically.
   1. Deploy to a pilot location.
   1. Deploy to a broader set of locations using a phased approach.
-
-     >[!NOTE]
-     >The PowerShell solution creates static teams, which aren't managed automatically.
 
 ## Set up your frontline dynamic teams
 
@@ -76,7 +76,10 @@ Team membership is automatically managed over time through the power of dynamic 
 
     :::image type="content" source="media/dtas-prefix.png" alt-text="Screenshot of the prefix, team template, and team owner account fields." lightbox="media/dtas-prefix.png":::
 
-7. Optionally, choose a team template. The team template you choose defines the channel structure for all your frontline teams. [Learn more about Teams templates](/microsoftteams/get-started-with-teams-templates-in-the-admin-console).
+7. Optionally, choose a team template. The team template you choose defines the channel structure for all your frontline teams. [Learn more about team templates](/microsoftteams/get-started-with-teams-templates-in-the-admin-console).
+
+    > [!NOTE]
+    > Currently, only team templates that are set to the English (United States) locale are supported. Keep in mind that the locale doesn't affect translation of the template or data residency. The locale setting is used only to distinguish between templates that have the same name that are created in different languages.
 
 8. Enter a user account object ID to be the team owner. This account will be the owner for all frontline teams. It's recommended to choose a shared account rather than an individual person.
     1. To get a user's object ID, go to the [Azure portal](https://portal.azure.com).
