@@ -33,7 +33,7 @@ ms.custom: admindeeplinkDEFENDER
 - [Microsoft Defender for Cloud](/defender-for-cloud/)
 
 > [!IMPORTANT]
-> Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here.
+> The integration of Microsoft Defender for Cloud in Microsoft Defender XDR is now in preview. Some information in this article relates to prereleased products/services that might be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, for the information provided here.
 
 [Microsoft Defender for Cloud](/defender-for-cloud/defender-for-cloud-introduction/) is now part of Microsoft 365 Defender. Security teams can now access Defender for Cloud alerts and incidents within the Microsoft 365 Defender portal, providing richer context to investigations that span cloud resources, devices, and identities. In addition, security teams can get the complete picture of an attack, including suspicious and malicious events that happen in their cloud environment, through immediate correlations of alerts and incidents.
 
@@ -51,14 +51,6 @@ You must be a global administrator or a security administrator in Azure Active D
 
 > [!NOTE]
 > The permission to view Defender for Cloud alerts and correlations is automatic for the entire tenant. Viewing for specific subscriptions is not supported.
-
-## Turn on Defender for Cloud alerts
-
-To see Defender for Cloud alerts in the Microsoft 365 Defender portal, perform the following steps:
-
-1. Go to **Settings** > **Microsoft 365 Defender**.
-2. In **Alert service settings**, look for **Microsoft Defender for Cloud alerts**.
-3. Select **All alerts (default)** to start receiving Defender for Cloud alerts. Selecting this option starts the ingestion of new Defender for Cloud alerts to the portal. Only new alerts in the alert and incident queues and pages will have the Defender for Cloud alerts.
 
 ## Investigation experience in Microsoft 365 Defender
 
@@ -90,7 +82,7 @@ The following changes should also be noted:
 
 ### Opting out of Defender for Cloud alerts
 
-To maintain your subscription-based settings and avoid tenant-based sync or to opt-out from the experience, perform the following steps:
+The alerts for Defender for Cloud are turned on by default. To maintain your subscription-based settings and avoid tenant-based sync or to opt-out from the experience, perform the following steps:
 
 1. In the Microsoft 365 Defender portal, go to **Settings** > **Microsoft 365 Defender**.
 2. In **Alert service settings**, look for **Microsoft Defender for Cloud alerts**.
