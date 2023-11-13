@@ -39,8 +39,8 @@ landingContent:
             url: https://www.linkedin.com/learning/search?keywords=syntex&upsellOrderOrigin=default_guest_learning&trk=homepage-learning_learning-search-bar_search-submit
       - linkListType: whats-new
         links:
-          - text: View processing status
-            url: processing-status.md
+          - text: Syntex eSignature
+            url: esignature-overview.md
 
 # Card 2
   - title: Get started
