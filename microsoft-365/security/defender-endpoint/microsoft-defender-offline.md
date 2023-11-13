@@ -68,7 +68,7 @@ For more information about Windows 10 and Windows 11 requirements, see the follo
 
 ## Microsoft Defender Offline updates
 
-You need to ensure that the following prerequisites are met to receive Microsoft Defender Offline updates.
+To receive Microsoft Defender Offline updates:
 
 - Microsoft Defender Antivirus must be primary AV (not in passive mode).
 - Update MDAV, with however you normally deploy updates to endpoints, a supported version of the: 
@@ -77,7 +77,7 @@ You need to ensure that the following prerequisites are met to receive Microsoft
   - Security Intelligence Update
     - You can manually download and install the latest protection updates from the [Microsoft Malware Protection Center](https://www.microsoft.com/security/portal/definitions/adl.aspx) 
     - See the [Manage Microsoft Defender Antivirus Security intelligence updates](manage-protection-updates-microsoft-defender-antivirus.md) topic for more information.
-- The user must be logged in with local administrator privileges.
+- User must be logged in with local administrator privileges.
 - Windows Recovery Environment (WinRE) needs to be enabled. 
 
 >[!NOTE]
