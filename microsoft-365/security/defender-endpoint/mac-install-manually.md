@@ -212,7 +212,7 @@ mdatp threat list
 
 Run an EDR detection test to verify that the device is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded device:
 
-1. In your browser, Microsoft Edge for Mac or Safari, download MDATP MacOS DIY.zip from [https://aka.ms/mdatpmacosdiy](https://aka.ms/mdatpmacosdiy)and extract.
+1. In your browser, Microsoft Edge for Mac or Safari, download *MDATP MacOS DIY.zip* from [https://aka.ms/mdatpmacosdiy](https://aka.ms/mdatpmacosdiy)and extract.
 
       The following prompt appears:
 
@@ -280,11 +280,9 @@ See [Logging installation issues](mac-resources.md#logging-installation-issues) 
 
 See [Uninstalling](mac-resources.md#uninstalling) for details on how to remove Microsoft Defender for Endpoint on macOS from client devices.
 
-> [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
-
-
-> [!Tip]
-> If you have any feedback that you will like to share, submit it by opening Microsoft Defender Endpoint on Mac on your device and navigate to **Help** \> **Send feedback**.
+  > [!Tip]
+  > - Do you want to learn more? Engage with the Microsoft Security community in our Tech Community: [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md).
+  > - If you have any feedback that you will like to share, submit it by opening Microsoft Defender Endpoint on Mac on your device and navigate to **Help** \> **Send feedback**.
 
 ## Recommended content
 
