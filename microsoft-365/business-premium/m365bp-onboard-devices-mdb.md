@@ -135,6 +135,6 @@ If you want to offboard a device, use one of the following procedures:
 > [!IMPORTANT]
 > Offboarding a device causes the devices to stop sending data to Defender for Business. However, data received prior to offboarding is retained for up to six (6) months.
 
-## Next objective
+## Next step
 
 [Set up protection for your Windows devices](m365bp-protection-settings-for-windows-10-devices.md).

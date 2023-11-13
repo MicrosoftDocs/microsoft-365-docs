@@ -9,7 +9,7 @@ ms.pagetype: security
 ms.author: sunasing
 author: sunasing
 ms.localizationpriority: medium
-ms.date: 11/22/2022
+ms.date: 10/25/2023
 manager: sunasing
 audience: ITPro
 ms.collection: 
@@ -34,7 +34,7 @@ Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](
 
 ## Device Tagging
 
-Mobile Device Tagging is now available in Public Preview. This feature enables bulk tagging the mobile devices during onboarding by allowing the admins to set up tags via Intune. Admin can configure the device tags through Intune via configuration policies and push them to user’s devices. Once the User installs and activates Defender, the client app passes the device tags to the Security Portal. The Device tags appear against the devices in the Device Inventory. For more information, read [Configure Device Tagging](/microsoft-365/security/defender-endpoint/ios-configure-features#device-tagging).
+Mobile Device Tagging is now generally available. This feature enables bulk tagging the mobile devices by allowing the admins to set up tags via Intune. Admin can configure the device tags through Intune via configuration policies and push them to user’s devices. Once the User installs and activates Defender, the client app passes the device tags to the Security Portal. The Device tags appear against the devices in the Device Inventory. For more information, read [Configure Device Tagging](/microsoft-365/security/defender-endpoint/ios-configure-features#device-tagging).
 
 ## Vulnerability assessment of apps
 
@@ -121,4 +121,5 @@ On January 25, 2022, we announced the general availability of Vulnerability mana
 - With this version, we are announcing support for iPadOS/iPad devices.
 - Bug fixes.
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
+
 

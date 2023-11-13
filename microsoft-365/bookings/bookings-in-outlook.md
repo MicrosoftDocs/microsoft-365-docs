@@ -57,6 +57,7 @@ Bookings with me is available in the following subscriptions:
 
 - Office 365: A3, A5, E1, E3, E5, F1, F3
 - Microsoft 365: A3, A5, E1, E3, E5, F1, F3, Business Basic, Business Standard, Business Premium
+- Bookings with me is available for G1, G3, G5
 
 Bookings with me is on by default for users with these subscriptions.
 

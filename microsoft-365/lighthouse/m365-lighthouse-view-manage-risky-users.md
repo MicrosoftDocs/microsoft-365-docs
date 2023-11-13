@@ -5,7 +5,7 @@ ms.author: sharik
 author: SKjerland
 manager: scotv
 ms.reviewer: ragovind
-ms.date: 06/09/2023
+ms.date: 10/27/2023
 audience: Admin
 ms.topic: article
 ms.service: microsoft-365-lighthouse
@@ -36,6 +36,9 @@ Microsoft Entra ID Protection identifies risks of many types, including:
 - Signing in from infected devices
 - Signing in from IP addresses with suspicious activity
 - Signing in from unfamiliar locations
+
+> [!NOTE]
+> This page provides insights around data that is limited or unavailable due to insufficient licensing.
 
 ## Before you begin
 
@@ -87,6 +90,7 @@ To take action on multiple affected users at once:
 > If the organization you are managing has a Microsoft Entra ID P2 license, it is recommended you enable User risk-based conditional access policies. For more information, see [Conditional Access: User risk-based Conditional Access](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk-user).
 
 ## Related content
-[Tutorial: Use risk detections for user sign-ins to trigger Microsoft Entra multifactor authentication or password changes](/azure/active-directory/authentication/tutorial-risk-based-sspr-mfa) (article)\
+
+[Tutorial: Use risk detections for user sign-ins to trigger Azure AD Multi-Factor Authentication or password changes](/azure/active-directory/authentication/tutorial-risk-based-sspr-mfa) (article)\
 [What is risk?](/azure/active-directory/identity-protection/concept-identity-protection-risks) (article) \
 [Remediate risks and unblock users](/azure/active-directory/identity-protection/howto-identity-protection-remediate-unblock) (article)

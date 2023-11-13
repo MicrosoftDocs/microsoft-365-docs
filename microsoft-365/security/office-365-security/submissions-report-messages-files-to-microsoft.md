@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 manager: dansimp
-ms.date: 8/7/2023
+ms.date: 11/9/2023
 audience: ITPro
 ms.topic: overview
 ms.localizationpriority: medium
@@ -20,7 +20,7 @@ ms.subservice: mdo
 ms.service: microsoft-365-security
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/eop-about" target="_blank">Exchange Online Protection</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/microsoft-defender-for-office-365-product-overview#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
@@ -63,8 +63,6 @@ User reported messages are also available to admins in the following locations i
 - [Threat Explorer](threat-explorer-views.md) (Defender for Office 365 Plan 2)
 
 In Defender for Office 365 Plan 2, admins can also submit messages from the [Email entity page](mdo-email-entity-page.md#actions-you-can-take-on-the-email-entity-page) and from [Alerts](../defender/investigate-alerts.md) in the Defender portal.
-
-Admins can use Exchange mail flow rules (also known as transport rules) to receive notifications when users report messages to Microsoft for analysis. For more information, see [Use mail flow rules to see what users are reporting to Microsoft](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft).
 
 Admins can use the sample submission portal at <https://www.microsoft.com/wdsi/filesubmission> to submit other suspected files to Microsoft for analysis. For more information, see [Submit files for analysis](../intelligence/submission-guide.md).
 
