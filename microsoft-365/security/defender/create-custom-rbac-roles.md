@@ -39,7 +39,7 @@ The following steps guide you on how to create custom roles in Microsoft 365 Def
 > [!IMPORTANT]
 > You must be a Global Administrator or Security Administrator in Microsoft Entra ID, or have all the **Authorization** permissions assigned in Microsoft 365 Defender Unified RBAC to perform this task. For more information on permissions, see [Permission pre-requisites](../defender/manage-rbac.md#permissions-pre-requisites).
 
-1. Sign in to the [Microsoft 365 Defender portal](https://security.microsoft.com).
+1. Sign in to the [Microsoft Defender portal](https://security.microsoft.com).
 2. In the navigation pane, select **Permissions**.
 3. Select **Roles** under Microsoft 365 Defender to get to the Permissions and roles page.
 4. Select **Create custom role**.
@@ -84,7 +84,7 @@ The following steps guide you on how to create custom roles in Microsoft 365 Def
 
 To access and manage roles and permissions, without being a Global Administrator or Security Administrator in Microsoft Entra ID, you need to create a role with **Authorization** permissions. To create this role:
 
-1. Sign in to the [Microsoft 365 Defender portal](https://security.microsoft.com) as Global Administrator or Security Administrator.
+1. Sign in to the [Microsoft Defender portal](https://security.microsoft.com) as Global Administrator or Security Administrator.
 2. In the navigation pane, select **Permissions**.
 3. Select **Roles** under Microsoft 365 Defender.
 4. Select **Create custom role**.

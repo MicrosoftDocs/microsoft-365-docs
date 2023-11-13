@@ -65,7 +65,7 @@ This section provides useful information on what you need to know before you sta
 
 - You must be a Global Administrator or Security Administrator in Microsoft Entra ID to:
 
-  - Gain initial access to [Permissions and roles](https://security.microsoft.com/mtp_roles) in the Microsoft 365 Defender portal.
+  - Gain initial access to [Permissions and roles](https://security.microsoft.com/mtp_roles) in the Microsoft Defender portal.
 
   - Manage roles and permissions in Microsoft 365 Defender Unified RBAC.
 
@@ -83,7 +83,7 @@ All permissions listed within the Microsoft 365 Defender Unified RBAC model alig
 
 You must activate the workloads in Microsoft 365 Defender to use the Microsoft 365 Defender Unified RBAC model. Until activated, Microsoft 365 Defender will continue to respect the existing RBAC models. For more information, see [Activate Microsoft 365 Defender Unified RBAC](activate-defender-rbac.md).
 
-When you activate some or all of your workloads to use the new permission model, the roles and permissions for these workloads will be fully controlled by the Microsoft 365 Defender Unified RBAC model in the Microsoft 365 Defender portal.
+When you activate some or all of your workloads to use the new permission model, the roles and permissions for these workloads will be fully controlled by the Microsoft 365 Defender Unified RBAC model in the Microsoft Defender portal.
 
 ## Start using Microsoft 365 Defender Unified RBAC model
 

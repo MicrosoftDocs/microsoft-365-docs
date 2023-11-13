@@ -49,7 +49,7 @@ Then, after you're all set up, you can [view and manage remediation actions in t
 
 Whether automated investigations run, and whether remediation actions are taken automatically or only upon approval for your devices depend on certain settings, such as your organization's device group policies. Review the configured automation level for your device group policies. You must be a global administrator or security administrator to perform the following procedure:
 
-1. Go to the Microsoft 365 Defender portal at <https://security.microsoft.com> and sign in.
+1. Go to the Microsoft Defender portal at <https://security.microsoft.com> and sign in.
 
 2. Go to **Settings** \> **Endpoints** \> **Device groups** under **Permissions**.
 
@@ -76,7 +76,7 @@ You can choose from several options to change settings for your automated invest
 
 |To do this|Follow these steps|
 |---|---|
-|Specify automation levels for groups of devices|<ol><li>Set up one or more device groups. See [Create and manage device groups](../defender-endpoint/machine-groups.md). </li><li>In the Microsoft 365 Defender portal, go to **Permissions** \> **Endpoints roles & groups** \> **Device groups**.</li><li>Select a device group and review its **Automation level** setting. (We recommend using **Full - remediate threats automatically**). See [Automation levels in automated investigation and remediation capabilities](../defender-endpoint/automation-levels.md).</li><li>Repeat steps 2 and 3 as appropriate for all your device groups. </li></ol>|
+|Specify automation levels for groups of devices|<ol><li>Set up one or more device groups. See [Create and manage device groups](../defender-endpoint/machine-groups.md). </li><li>In the Microsoft Defender portal, go to **Permissions** \> **Endpoints roles & groups** \> **Device groups**.</li><li>Select a device group and review its **Automation level** setting. (We recommend using **Full - remediate threats automatically**). See [Automation levels in automated investigation and remediation capabilities](../defender-endpoint/automation-levels.md).</li><li>Repeat steps 2 and 3 as appropriate for all your device groups. </li></ol>|
 
 ## Next steps
 

@@ -57,21 +57,21 @@ If an incident is classified as _False Positive_ or _Informational_, _Expected A
 
 Otherwise, if an incident is classified as _True Positive_, our experts then identify recommended response actions that need to be performed. The method in which the actions are performed depends on the permissions and access levels you have given the Defender Experts for XDR service. [Learn more about granting permissions to our experts](get-started-xdr.md#grant-permissions-to-our-experts).
 
-- If you have granted Defender Experts for XDR the recommended Security Operator access permissions, our experts could perform the recommended response actions on the incident on your behalf. These actions, along with an **Investigation summary**, show up in the incident's [Managed response](#how-to-use-managed-response-in-microsoft-365-defender) flyout panel in your Microsoft 365 Defender portal for you or your SOC team to review. Once our experts conclude their work on the incident, its **Status** field is then updated to _Resolved_ and the **Assigned to** field is updated to _Unassigned_.
+- If you have granted Defender Experts for XDR the recommended Security Operator access permissions, our experts could perform the recommended response actions on the incident on your behalf. These actions, along with an **Investigation summary**, show up in the incident's [Managed response](#how-to-use-managed-response-in-microsoft-365-defender) flyout panel in your Microsoft Defender portal for you or your SOC team to review. Once our experts conclude their work on the incident, its **Status** field is then updated to _Resolved_ and the **Assigned to** field is updated to _Unassigned_.
 
-- If you have granted Defender Experts for XDR the default Security Reader access, then the recommended response actions, along with an **Investigation summary**, show up in the incident's **Managed response** flyout panel in your Microsoft 365 Defender portal for you or your SOC team to perform. To identify this handover, the incident's **Status** field is updated to _Awaiting Customer Action_ and its **Assigned to** field is updated to _Customer_.
+- If you have granted Defender Experts for XDR the default Security Reader access, then the recommended response actions, along with an **Investigation summary**, show up in the incident's **Managed response** flyout panel in your Microsoft Defender portal for you or your SOC team to perform. To identify this handover, the incident's **Status** field is updated to _Awaiting Customer Action_ and its **Assigned to** field is updated to _Customer_.
 
-You can check the number of incidents that are awaiting your action in the Defender Experts card in your Microsoft 365 Defender portal:
+You can check the number of incidents that are awaiting your action in the Defender Experts card in your Microsoft Defender portal:
 
-:::image type="content" source="../../media/xdr/view-incidents.png" alt-text="Screenshot of the Defender Experts card in Microsoft 365 Defender portal showing the number of incidents awaiting customer action." lightbox="../../media/xdr/view-incidents.png":::
+:::image type="content" source="../../media/xdr/view-incidents.png" alt-text="Screenshot of the Defender Experts card in Microsoft Defender portal showing the number of incidents awaiting customer action." lightbox="../../media/xdr/view-incidents.png":::
 
-To view the incidents our experts have investigated or are currently investigating, filter the incident queue in your Microsoft 365 Defender portal using the _Defender Experts_ tag.
+To view the incidents our experts have investigated or are currently investigating, filter the incident queue in your Microsoft Defender portal using the _Defender Experts_ tag.
 
-:::image type="content" source="../../media/xdr/incidents-filter.png" alt-text="Screenshot of the Incidents queue in Microsoft 365 Defender portal filtered to only show those with the  Defender Experts tag." lightbox="../../media/xdr/incidents-filter.png":::
+:::image type="content" source="../../media/xdr/incidents-filter.png" alt-text="Screenshot of the Incidents queue in Microsoft Defender portal filtered to only show those with the  Defender Experts tag." lightbox="../../media/xdr/incidents-filter.png":::
 
 ### How to use managed response in Microsoft 365 Defender
 
-In the Microsoft 365 Defender portal, an incident that requires your attention using managed response has the **Assigned to** field set to _Customer_ and a task card on top of the **Incidents** pane. Your designated incident contacts also receives a corresponding email notification with a link to the Defender portal to view the incident. [Learn more about notification contacts](get-started-xdr.md#tell-us-who-to-contact-for-important-matters).
+In the Microsoft Defender portal, an incident that requires your attention using managed response has the **Assigned to** field set to _Customer_ and a task card on top of the **Incidents** pane. Your designated incident contacts also receives a corresponding email notification with a link to the Defender portal to view the incident. [Learn more about notification contacts](get-started-xdr.md#tell-us-who-to-contact-for-important-matters).
 
 Select **View managed response** on the task card or on the top of the portal page (**Managed response** tab) to open a flyout panel where you can read our experts' investigation summary, complete pending actions identified by our experts, or engage with them through chat.
 
@@ -113,7 +113,7 @@ Apart from these one-click actions, you can also receive managed responses from 
 
 #### Chat
 
-The **Chat** tab provides you with a space in the Microsoft 365 Defender portal to engage with our experts and further understand the incident, our investigation, and the recommended actions we provided. You could ask about a malicious executable, malicious attachment, information about activity groups, advanced hunting queries, or any other information that would assist you with the incident resolution.
+The **Chat** tab provides you with a space in the Microsoft Defender portal to engage with our experts and further understand the incident, our investigation, and the recommended actions we provided. You could ask about a malicious executable, malicious attachment, information about activity groups, advanced hunting queries, or any other information that would assist you with the incident resolution.
 
 > [!NOTE]
 > The chat option is only available for incidents where we issued managed response.
@@ -200,11 +200,11 @@ The option to **Ask Defender Experts** is available in the incidents and alerts 
 
 - _**Alerts page flyout menu**_:
 
-:::image type="content" source="../../media/mte/defenderexperts/alerts-flyout-menu.png" alt-text="Screenshot of the Ask Defender Experts menu option in the Alerts page flyout menu in the Microsoft 365 Defender portal." lightbox="../../media/mte/defenderexperts/alerts-flyout-menu.png":::  
+:::image type="content" source="../../media/mte/defenderexperts/alerts-flyout-menu.png" alt-text="Screenshot of the Ask Defender Experts menu option in the Alerts page flyout menu in the Microsoft Defender portal." lightbox="../../media/mte/defenderexperts/alerts-flyout-menu.png":::  
 
 - _**Incidents page actions menu**_:
 
-:::image type="content" source="../../media/mte/defenderexperts/incidents-page-actions-menu.png" alt-text="IScreenshot of the Ask Defender Experts menu option in the Incidents page actions menu in the Microsoft 365 Defender portal." lightbox="../../media/mte/defenderexperts/incidents-page-actions-menu.png":::
+:::image type="content" source="../../media/mte/defenderexperts/incidents-page-actions-menu.png" alt-text="IScreenshot of the Ask Defender Experts menu option in the Incidents page actions menu in the Microsoft Defender portal." lightbox="../../media/mte/defenderexperts/incidents-page-actions-menu.png":::
 
 ### See also
 

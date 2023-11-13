@@ -153,7 +153,9 @@ Although attack surface reduction rules don't require a [Windows E5 license](/wi
 
 These advanced capabilities aren't available with a Windows Professional or Windows E3 license. However, if you do have those licenses, you can use Event Viewer and Microsoft Defender Antivirus logs to review your attack surface reduction rule events.
 
-## Review attack surface reduction events in the Microsoft 365 Defender portal
+<a name='review-attack-surface-reduction-events-in-the-microsoft-365-defender-portal'></a>
+
+## Review attack surface reduction events in the Microsoft Defender portal
 
 Defender for Endpoint provides detailed reporting for events and blocks as part of alert investigation scenarios.
 

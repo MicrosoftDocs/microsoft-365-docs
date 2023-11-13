@@ -45,7 +45,7 @@ Before you get started, see [the main Microsoft Defender for Endpoint on macOS p
 
 ## Download installation and onboarding packages
 
-Download the installation and onboarding packages from Microsoft 365 Defender portal.
+Download the installation and onboarding packages from Microsoft Defender portal.
 
 [!INCLUDE [Defender for Endpoint repackaging warning](../../includes/repackaging-warning.md)]
 
@@ -78,7 +78,7 @@ To complete this process, you must have admin privileges on the device.
 
 5. Repeat steps 3 & 4 for all system extensions distributed with Microsoft Defender for Endpoint on Mac.
 
-6. As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on Mac inspects socket traffic and reports this information to the Microsoft 365 Defender portal. When prompted to grant Microsoft Defender for Endpoint permissions to filter network traffic, select **Allow**.
+6. As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on Mac inspects socket traffic and reports this information to the Microsoft Defender portal. When prompted to grant Microsoft Defender for Endpoint permissions to filter network traffic, select **Allow**.
 
    :::image type="content" source="images/monterey-install-4.png" alt-text="The system extension security preferences2" lightbox="images/monterey-install-4.png":::
 
@@ -181,7 +181,7 @@ To complete this process, you must have admin privileges on the device.
 
     In a few minutes an alert named "macOS EDR Test Alert" should be raised.
 
-11. Go to Microsoft 365 Defender portal (https://security.microsoft.com/).
+11. Go to Microsoft Defender portal (https://security.microsoft.com/).
 
 12. Go to the Alert Queue.
 

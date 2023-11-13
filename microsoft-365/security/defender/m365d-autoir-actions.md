@@ -43,7 +43,7 @@ Threat protection features in Microsoft 365 Defender can result in certain remed
 To navigate to the Action center, take one of the following steps:
 
 - Go to [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center); or
-- In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the Automated investigation & response card, select **Approve in Action Center**.
+- In the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the Automated investigation & response card, select **Approve in Action Center**.
 
 ## Review pending actions in the Action center
 

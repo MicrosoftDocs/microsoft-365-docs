@@ -211,7 +211,7 @@ Ensure connectivity is established with the appropriate URLs.
 
 ### Tracking with advanced hunting in Microsoft 365 Defender
 
-You can use advanced hunting in Microsoft 365 Defender portal to view the connectivity type status. 
+You can use advanced hunting in Microsoft Defender portal to view the connectivity type status. 
 
 This information is found in the DeviceInfo table under the “ConnectivityType” column:
 - Column Name: ConnectivityType

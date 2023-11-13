@@ -39,7 +39,7 @@ Watch this short video to learn how Microsoft 365 Defender helps to prevent, det
 
 Whether you're new to the Microsoft suite of security products or familiar with individual workflows, this topic will guide you in the simple steps you need to take to get started with Microsoft 365 Defender.
 
-:::image type="content" source="../../media/mtp/get-started-m365d.png" alt-text="The steps to get started with the Microsoft 365 Defender portal" lightbox="../../media/mtp/get-started-m365d.png":::
+:::image type="content" source="../../media/mtp/get-started-m365d.png" alt-text="The steps to get started with the Microsoft Defender portal" lightbox="../../media/mtp/get-started-m365d.png":::
 
 In general, you'll need to take the following steps to get started:
 

@@ -33,7 +33,7 @@ This article gives an overview of the requirements and tasks for successfully op
 
 The rest of this guide describes the required activities for SecOps personnel. The activities are grouped into prescriptive daily, weekly, monthly, and ad-hoc tasks.
 
-A companion article to this guide provides an overview to [manage incidents and alerts from Defender for Office 365 on the Incidents page in the Microsoft 365 Defender portal](mdo-sec-ops-manage-incidents-and-alerts.md).
+A companion article to this guide provides an overview to [manage incidents and alerts from Defender for Office 365 on the Incidents page in the Microsoft Defender portal](mdo-sec-ops-manage-incidents-and-alerts.md).
 
 The [Microsoft 365 Defender Security Operations Guide](/microsoft-365/security/defender/integrate-microsoft-365-defender-secops) contains additional information that you can use for planning and development.
 
@@ -43,7 +43,7 @@ For a video about this information, see <https://youtu.be/eQanpq9N1Ps>.
 
 ### Monitor the Microsoft 365 Defender Incidents queue
 
-The **Incidents** page in the Microsoft 365 Defender portal at <https://security.microsoft.com/incidents-queue> (also known as the _Incidents queue_) allows you to manage and monitor events from the following sources in Defender for Office 365:
+The **Incidents** page in the Microsoft Defender portal at <https://security.microsoft.com/incidents-queue> (also known as the _Incidents queue_) allows you to manage and monitor events from the following sources in Defender for Office 365:
 
 - [Alerts](/purview/alert-policies#default-alert-policies).
 - [Automated investigation and response (AIR)](air-about-office.md).
@@ -178,14 +178,14 @@ Short videos for specific tasks are also available in the [Microsoft Defender fo
 
 ### Permissions for Defender for Office 365 activities and tasks
 
-Permissions for managing Defender for Office 365 in the Microsoft 365 Defender portal and PowerShell are based on the role-based access control (RBAC) permissions model. RBAC is the same permissions model that's used by most Microsoft 365 services. For more information, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).
+Permissions for managing Defender for Office 365 in the Microsoft Defender portal and PowerShell are based on the role-based access control (RBAC) permissions model. RBAC is the same permissions model that's used by most Microsoft 365 services. For more information, see [Permissions in the Microsoft Defender portal](mdo-portal-permissions.md).
 
 > [!NOTE]
 > Privileged Identity Management (PIM) in Microsoft Entra ID is also a way to assign required permissions to SecOps personnel. For more information, see [Privileged Identity Management (PIM) and why to use it with Microsoft Defender for Office 365](pim-in-mdo-configure.md).
 
 The following permissions (roles and role groups) are available in Defender for Office 365 and can be used to grant access to security team members:
 
-- **Microsoft Entra ID**: Centralized roles that assign permissions for _all_ Microsoft 365 services, including Defender for Office 365. You can view the Microsoft Entra roles and assigned users in the Microsoft 365 Defender portal, but you can't manage them directly there. Instead, you manage Microsoft Entra roles and members at <https://aad.portal.azure.com/#view/Microsoft_AAD_IAM/RolesManagementMenuBlade/~/AllRoles/adminUnitObjectId//resourceScope/%2F>. The most frequent roles used by security teams are:
+- **Microsoft Entra ID**: Centralized roles that assign permissions for _all_ Microsoft 365 services, including Defender for Office 365. You can view the Microsoft Entra roles and assigned users in the Microsoft Defender portal, but you can't manage them directly there. Instead, you manage Microsoft Entra roles and members at <https://aad.portal.azure.com/#view/Microsoft_AAD_IAM/RolesManagementMenuBlade/~/AllRoles/adminUnitObjectId//resourceScope/%2F>. The most frequent roles used by security teams are:
   - **[Security Administrator](/azure/active-directory/roles/permissions-reference#security-administrator)**
   - **[Security Reader](/azure/active-directory/roles/permissions-reference#security-reader)**
 
@@ -198,7 +198,7 @@ The following permissions (roles and role groups) are available in Defender for 
     - Data Investigator
     - eDiscovery Manager
 
-    To assign this role to a new or existing custom role group, see [Email & collaboration roles in the Microsoft 365 Defender portal](mdo-portal-permissions.md#email--collaboration-roles-in-the-microsoft-365-defender-portal).
+    To assign this role to a new or existing custom role group, see [Email & collaboration roles in the Microsoft Defender portal](mdo-portal-permissions.md#email--collaboration-roles-in-the-microsoft-365-defender-portal).
 
   - **Search and Purge** role (Email & collaboration): Approve the deletion of malicious messages as recommended by AIR or take manual action on messages in hunting experiences like Threat Explorer.
 
@@ -207,7 +207,7 @@ The following permissions (roles and role groups) are available in Defender for 
     - Data Investigator
     - Organization Management
 
-    To assign this role to a new or existing custom role group, see [Email & collaboration roles in the Microsoft 365 Defender portal](mdo-portal-permissions.md#email--collaboration-roles-in-the-microsoft-365-defender-portal).
+    To assign this role to a new or existing custom role group, see [Email & collaboration roles in the Microsoft Defender portal](mdo-portal-permissions.md#email--collaboration-roles-in-the-microsoft-365-defender-portal).
 
   - **Tenant AllowBlockList Manager** (Exchange Online): Manage allow and block entries in the [Tenant Allow/Block List](tenant-allow-block-list-about.md). Blocking URLs, files (using file hash) or senders is a useful response action to take when investigating malicious email that was delivered.
 
@@ -263,7 +263,7 @@ The submission pipeline in the service follows a tightly integrated process when
 
 For more information, see [Reporting an email in Defender for Office 365 - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/reporting-an-email-in-microsoft-defender-for-office-365/ba-p/2870231).
 
-Security team members can do submissions from multiple locations in the Microsoft 365 Defender portal at <https://security.microsoft.com>:
+Security team members can do submissions from multiple locations in the Microsoft Defender portal at <https://security.microsoft.com>:
 
 - [Admin submission](submissions-admin.md): Use the **Submissions** page to submit suspected spam, phishing, URLs, and files to Microsoft.
 - Directly from Threat Explorer using one of the following message actions:
@@ -288,7 +288,7 @@ If your organization uses a third-party reporting tool that allows users to inte
 - Simplified triage.
 - Reduced investigation and response time.
 
-Designate the reporting mailbox where user reported messages are sent on the **User reported settings** page in the Microsoft 365 Defender portal at <https://security.microsoft.com/securitysettings/userSubmission>. For more information, see [User reported settings](submissions-user-reported-messages-custom-mailbox.md).
+Designate the reporting mailbox where user reported messages are sent on the **User reported settings** page in the Microsoft Defender portal at <https://security.microsoft.com/securitysettings/userSubmission>. For more information, see [User reported settings](submissions-user-reported-messages-custom-mailbox.md).
 
 > [!NOTE]
 >

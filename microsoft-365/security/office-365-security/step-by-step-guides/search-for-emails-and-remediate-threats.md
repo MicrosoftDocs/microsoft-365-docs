@@ -67,7 +67,7 @@ Given the common scenarios, email remediation can be triggered in three differen
 
 ## Next Steps
 
-1. Go to the [Microsoft 365 Defender portal](https://security.microsoft.com) and sign in.
+1. Go to the [Microsoft Defender portal](https://security.microsoft.com) and sign in.
 1. In the navigation pane, select **Action center**.
 1. Go to the **History** tab, click on any waiting approval list. It opens up a side pane.
 1. Track the action status in the unified action center.

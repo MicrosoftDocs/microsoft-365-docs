@@ -30,7 +30,7 @@ ms.date: 09/18/2023
 
 Welcome to Phase 1 of [Strengthen your security posture](../security/security-posture-solution-overview.md): **Configure capabilities**.
 
-This article includes information on the capabilities you can configure within the Microsoft 365 Defender portal to discover and protect the devices in your organization against threats.
+This article includes information on the capabilities you can configure within the Microsoft Defender portal to discover and protect the devices in your organization against threats.
 
 |Capability |Description|Get started|
 |:----------|:------------|:--------|

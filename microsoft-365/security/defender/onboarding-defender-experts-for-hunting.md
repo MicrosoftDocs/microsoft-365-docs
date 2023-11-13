@@ -58,8 +58,8 @@ Refer to the following screenshot to see a sample Defender Experts Notification:
 
 You can receive Defender Experts Notifications from Defender Experts through the following mediums:
 
-- The Microsoft 365 Defender portal's [Incidents](https://security.microsoft.com/incidents) page
-- The Microsoft 365 Defender portal's [Alerts](https://security.microsoft.com/alerts) page
+- The Microsoft Defender portal's [Incidents](https://security.microsoft.com/incidents) page
+- The Microsoft Defender portal's [Alerts](https://security.microsoft.com/alerts) page
 - OData alerting [API](../../security/defender-endpoint/get-alerts.md) and [REST API](../defender-endpoint/configure-siem.md)
 - [DeviceAlertEvents](../../security/defender-endpoint/advanced-hunting-devicealertevents-table.md) table in Advanced hunting
 - Your email if you [configure an email notifications rule](/microsoft-365/security/defender/onboarding-defender-experts-for-hunting#set-up-defender-experts-email-notifications)
@@ -97,19 +97,19 @@ The option to **Ask Defender Experts** is available in several places throughout
 
 - ***Device page actions menu***
 
-![Screenshot of the Ask Defender Experts menu option in the Device page action menu in the Microsoft 365 Defender portal.](../../media/mte/defenderexperts/device-page-actions-menu.png)
+![Screenshot of the Ask Defender Experts menu option in the Device page action menu in the Microsoft Defender portal.](../../media/mte/defenderexperts/device-page-actions-menu.png)
 
 - ***Device inventory page flyout menu***
 
-![Screenshot of the Ask Defender Experts menu option in the Device inventory page flyout menu in the Microsoft 365 Defender portal.](../../media/mte/defenderexperts/device-inventory-flyout-menu.png)
+![Screenshot of the Ask Defender Experts menu option in the Device inventory page flyout menu in the Microsoft Defender portal.](../../media/mte/defenderexperts/device-inventory-flyout-menu.png)
 
 - ***Alerts page flyout menu***
 
-![Screenshot of the Ask Defender Experts menu option in the Alerts page flyout menu in the Microsoft 365 Defender portal.](../../media/mte/defenderexperts/alerts-flyout-menu.png)
+![Screenshot of the Ask Defender Experts menu option in the Alerts page flyout menu in the Microsoft Defender portal.](../../media/mte/defenderexperts/alerts-flyout-menu.png)
 
 - ***Incidents page actions menu***
 
-![Screenshot of the Ask Defender Experts menu option in the Incidents page actions menu in the Microsoft 365 Defender portal.](../../media/mte/defenderexperts/incidents-page-actions-menu.png)
+![Screenshot of the Ask Defender Experts menu option in the Incidents page actions menu in the Microsoft Defender portal.](../../media/mte/defenderexperts/incidents-page-actions-menu.png)
 
 > [!NOTE]
 > If you'd like to track the status of your Experts on Demand cases through Microsoft Services Hub, reach out to your Customer Success Account Manager. Watch this [video](https://www.microsoft.com/videoplayer/embed/RE4pk9f) for a quick overview of the Microsoft Services Hub.

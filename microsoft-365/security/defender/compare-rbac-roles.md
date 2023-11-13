@@ -118,7 +118,7 @@ You configured protection-related Exchange Online permissions in the Exchange ad
 
 ### Microsoft Entra Global roles access
 
-Users assigned with Microsoft Entra global roles may also have access to the [Microsoft 365 Defender portal](https://security.microsoft.com).
+Users assigned with Microsoft Entra global roles may also have access to the [Microsoft Defender portal](https://security.microsoft.com).
 
 Use this table to learn about the permissions assigned by default for each workload (Defender for Endpoint, Defender Vulnerability Management, Defender for Office and Defender for Identity) in Microsoft 365 Defender Unified RBAC to each global Microsoft Entra role.
 

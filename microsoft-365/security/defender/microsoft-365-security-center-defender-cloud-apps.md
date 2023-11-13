@@ -32,11 +32,11 @@ ms.custom: admindeeplinkDEFENDER
 - [Microsoft 365 Defender](microsoft-365-defender.md)
 - [Microsoft Defender for Cloud Apps](/defender-cloud-apps/)
 
-Microsoft Defender for Cloud Apps is now part of Microsoft 365 Defender. The Microsoft 365 Defender portal allows security admins to perform their security tasks in one location. This simplifies workflows, and adds the functionality of the other Microsoft 365 Defender services. Microsoft 365 Defender will be the home for monitoring and managing security across your Microsoft identities, data, devices, apps, and infrastructure.
+Microsoft Defender for Cloud Apps is now part of Microsoft 365 Defender. The Microsoft Defender portal allows security admins to perform their security tasks in one location. This simplifies workflows, and adds the functionality of the other Microsoft 365 Defender services. Microsoft 365 Defender will be the home for monitoring and managing security across your Microsoft identities, data, devices, apps, and infrastructure.
 
 SOC analysts will be able to triage, investigate and hunt across all Microsoft 365 Defender workloads, including cloud apps.
 
-Defender for Cloud Apps **alerts** will continue to appear in Microsoft 365 Defender's incidents queue and alerts queue, but now with relevant content inside the alert pages available in the Microsoft 365 Defender portal, in a unified format with the proper adaptations to each alerts type. For more information, see [Investigate incidents in Microsoft 365 Defender](/microsoft-365/security/defender/investigate-incidents).
+Defender for Cloud Apps **alerts** will continue to appear in Microsoft 365 Defender's incidents queue and alerts queue, but now with relevant content inside the alert pages available in the Microsoft Defender portal, in a unified format with the proper adaptations to each alerts type. For more information, see [Investigate incidents in Microsoft 365 Defender](/microsoft-365/security/defender/investigate-incidents).
 
 Take a look in Microsoft 365 Defender at <https://security.microsoft.com>.
 
@@ -49,7 +49,7 @@ The images and the tables below list the changes in navigation between Microsoft
 ### Discover
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="../../media/defender-cloud-apps-m365-defender-discover.png" alt-text="The new locations for Cloud Discovery features in the Microsoft 365 Defender portal" lightbox="../../media/defender-cloud-apps-m365-defender-discover.png":::
+> :::image type="content" source="../../media/defender-cloud-apps-m365-defender-discover.png" alt-text="The new locations for Cloud Discovery features in the Microsoft Defender portal" lightbox="../../media/defender-cloud-apps-m365-defender-discover.png":::
 
 | Defender for Cloud Apps | Microsoft 365 Defender |
 |---------|---------|
@@ -65,7 +65,7 @@ The images and the tables below list the changes in navigation between Microsoft
 ### Investigate
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="../../media/defender-cloud-apps-m365-defender-investigate.png" alt-text="The new locations for Investigation features in the Microsoft 365 Defender portal" lightbox="../../media/defender-cloud-apps-m365-defender-investigate.png":::
+> :::image type="content" source="../../media/defender-cloud-apps-m365-defender-investigate.png" alt-text="The new locations for Investigation features in the Microsoft Defender portal" lightbox="../../media/defender-cloud-apps-m365-defender-investigate.png":::
 
 | Defender for Cloud Apps | Microsoft 365 Defender |
 |---------|---------|
@@ -80,7 +80,7 @@ The images and the tables below list the changes in navigation between Microsoft
 ### Control
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="../../media/defender-cloud-apps-m365-defender-control.png" alt-text="The new locations for Control features in the Microsoft 365 Defender portal" lightbox="../../media/defender-cloud-apps-m365-defender-control.png":::
+> :::image type="content" source="../../media/defender-cloud-apps-m365-defender-control.png" alt-text="The new locations for Control features in the Microsoft Defender portal" lightbox="../../media/defender-cloud-apps-m365-defender-control.png":::
 
 | Defender for Cloud Apps | Microsoft 365 Defender |
 |---------|---------|
@@ -90,7 +90,7 @@ The images and the tables below list the changes in navigation between Microsoft
 ### Settings
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="../../media/defender-cloud-apps-m365-defender-settings.png" alt-text="The new locations for Settings in the Microsoft 365 Defender portal" lightbox="../../media/defender-cloud-apps-m365-defender-settings.png":::
+> :::image type="content" source="../../media/defender-cloud-apps-m365-defender-settings.png" alt-text="The new locations for Settings in the Microsoft Defender portal" lightbox="../../media/defender-cloud-apps-m365-defender-settings.png":::
 
 | Defender for Cloud Apps | Microsoft 365 Defender |
 |---------|---------|
@@ -117,7 +117,7 @@ The capabilities on the following pages are fully integrated into Microsoft 365 
 
 ## Limitations
 
-- The new Defender for Cloud Apps experience in the Microsoft 365 Defender portal is currently available for all users detailed in [Manage admin access](/defender-cloud-apps/manage-admins), except for:
+- The new Defender for Cloud Apps experience in the Microsoft Defender portal is currently available for all users detailed in [Manage admin access](/defender-cloud-apps/manage-admins), except for:
   - **App/Instance admin**, **User group admin**, **Cloud Discovery global admin**, and **Cloud Discovery report admin**, as defined in [Built-in admin roles in Defender for Cloud Apps](/defender-cloud-apps/manage-admins#built-in-admin-roles-in-defender-for-cloud-apps).
 
 ## What's changed

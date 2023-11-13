@@ -63,7 +63,7 @@ Microsoft 365 Defender automatically selects an optimal location for the data ce
 > [!NOTE]
 > Microsoft Defender for Endpoint automatically provisions in European Union (EU) data centers when turned on through Microsoft Defender for Cloud. Microsoft 365 Defender will automatically provision in the same EU data center for customers who have provisioned Microsoft Defender for Endpoint in this manner.
 
-The data center location is shown before and after the service is provisioned in the settings page for Microsoft 365 Defender (**Settings > Microsoft 365 Defender**). If you prefer to use another data center location, select **Need help?** in the Microsoft 365 Defender portal to contact Microsoft support.
+The data center location is shown before and after the service is provisioned in the settings page for Microsoft 365 Defender (**Settings > Microsoft 365 Defender**). If you prefer to use another data center location, select **Need help?** in the Microsoft Defender portal to contact Microsoft support.
 
 ## Where can I access Microsoft 365 Defender?
 

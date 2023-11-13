@@ -89,7 +89,7 @@ This client secret value is used by Microsoft Graph APIs to authenticate this ap
 
 You're required to add permissions to the following roles to entities that are involved in Event Hubs data management:
 
-- **Contributor**: The permissions related to this role are added to entity who logs in to the Microsoft 365 Defender portal.
+- **Contributor**: The permissions related to this role are added to entity who logs in to the Microsoft Defender portal.
 - **Reader** and **Azure Event Hub data Receiver**: The permissions related to these roles are assigned to the entity who is already assigned the role of a **Service Principal** and logs in to the Microsoft Entra application.
 
 To ensure that these roles have been added, perform the following step:
@@ -139,7 +139,7 @@ For these Event Hubs (not namespace), you'll need to configure a Shared Access P
 
     - Global Admin or Security Admin Role on the tenant tied to Microsoft 365 Defender and Azure.
 
-      :::image type="content" source="../../media/55d5b1c21dd58692fb12a6c1c35bd4fa.png" alt-text="The Settings page of the Microsoft 365 Defender portal" lightbox="../../media/55d5b1c21dd58692fb12a6c1c35bd4fa.png":::
+      :::image type="content" source="../../media/55d5b1c21dd58692fb12a6c1c35bd4fa.png" alt-text="The Settings page of the Microsoft Defender portal" lightbox="../../media/55d5b1c21dd58692fb12a6c1c35bd4fa.png":::
 
 1. Click on **Raw Data Export \> +Add**.
 

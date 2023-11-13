@@ -40,7 +40,7 @@ With Microsoft 365 Defender, when an [automated investigation](m365d-autoir.md) 
 The investigation page has recently been updated to include information across your devices, email, and collaboration content. The new, unified investigation page defines a common language and provides a unified experience for automatic investigations across [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) and [Microsoft Defender for Office 365](../office-365-security/defender-for-office-365.md). To access the unified investigation page, select the link in the yellow banner you'll see on:
 
 - Any investigation page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">Microsoft Purview compliance portal</a>
-- Any investigation page in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com))
+- Any investigation page in the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com))
 - Any incident or Action center experience in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>
 
 ## Open the investigation details view
@@ -85,13 +85,13 @@ Use an incident details page to view detailed information about an incident, inc
 
 Here's an example.
 
-:::image type="content" source="../../media/mtp-incidentdetails-tabs.png" alt-text="The investigation page in the Microsoft 365 Defender portal" lightbox="../../media/mtp-incidentdetails-tabs.png":::
+:::image type="content" source="../../media/mtp-incidentdetails-tabs.png" alt-text="The investigation page in the Microsoft Defender portal" lightbox="../../media/mtp-incidentdetails-tabs.png":::
 
 ## Investigation details
 
 Use the investigation details view to see past, current, and pending activity pertaining to an investigation. Here's an example.
 
-:::image type="content" source="../../media/mtp-air-investdetails.png" alt-text="The investigation details page in the Microsoft 365 Defender portal" lightbox="../../media/mtp-air-investdetails.png":::
+:::image type="content" source="../../media/mtp-air-investdetails.png" alt-text="The investigation details page in the Microsoft Defender portal" lightbox="../../media/mtp-air-investdetails.png":::
 
 In the Investigation details view, you can see information on the **Investigation graph**, **Alerts**, **Devices**, **Identities**, **Key findings**, **Entities**, **Log**, and **Pending actions** tabs, described in the following table.
 
@@ -124,7 +124,7 @@ The following table lists investigation states and what they indicate.
 |Failed     | At least one investigation analyzer ran into a problem where it couldn't complete the investigation. If an investigation fails after remediation actions were approved, the remediation actions might still have succeeded.|
 |Successfully remediated| An automated investigation completed, and all remediation actions were completed or approved.|
 
-To provide more context about how investigation states show up, the following table lists alerts and their corresponding automated investigation state. This table is included as an example of what a security operations team might see in the Microsoft 365 Defender portal.
+To provide more context about how investigation states show up, the following table lists alerts and their corresponding automated investigation state. This table is included as an example of what a security operations team might see in the Microsoft Defender portal.
 
 |Alert name | Severity | Investigation state | Status | Category |
 |-----------|----------|---------------------|--------|----------|

@@ -50,9 +50,11 @@ Use these learning paths and their modules to build an understanding of Microsof
  - [Secure your organization with Microsoft Defender for Endpoint](/training/paths/defender-endpoint-fundamentals/)  
 
 
-## Learning paths in the Microsoft 365 Defender portal learning hub
+<a name='learning-paths-in-the-microsoft-365-defender-portal-learning-hub'></a>
 
-The [Microsoft 365 Defender portal learning hub](https://security.microsoft.com/learning) includes these learning paths:
+## Learning paths in the Microsoft Defender portal learning hub
+
+The [Microsoft Defender portal learning hub](https://security.microsoft.com/learning) includes these learning paths:
 
 - Getting started with the Microsoft 365 security center
 - How to Investigate Using Microsoft 365 Defender
@@ -67,5 +69,5 @@ One of the best ways to learn is by configuring and testing Microsoft 365 Defend
 
 ## Simulating an attack
 
-To test your security staff on their ability to detect and respond to a cyberattack, use a simulated attack. See [Simulate attacks with the Microsoft 365 Defender portal](eval-defender-investigate-respond-simulate-attack.md#simulate-attacks-with-the-microsoft-365-defender-portal) for more information. 
+To test your security staff on their ability to detect and respond to a cyberattack, use a simulated attack. See [Simulate attacks with the Microsoft Defender portal](eval-defender-investigate-respond-simulate-attack.md#simulate-attacks-with-the-microsoft-365-defender-portal) for more information. 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

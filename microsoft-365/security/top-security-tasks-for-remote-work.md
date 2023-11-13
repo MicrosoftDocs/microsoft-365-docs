@@ -54,7 +54,7 @@ For customers using our enterprise plans, Microsoft recommends you complete the 
 
 Before you begin, check your [Microsoft 365 Secure Score](./defender/microsoft-secure-score.md) in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. From a centralized dashboard, you can monitor and improve the security for your Microsoft 365 identities, data, apps, devices, and infrastructure. You're given points for configuring recommended security features, performing security-related tasks (such as viewing reports), or addressing recommendations with a third-party application or software. The recommended tasks in this article will raise your score.
 
-:::image type="content" source="../media/secure-score.png" alt-text="The Microsoft Secure Score screen in the Microsoft 365 Defender portal" lightbox="../media/secure-score.png":::
+:::image type="content" source="../media/secure-score.png" alt-text="The Microsoft Secure Score screen in the Microsoft Defender portal" lightbox="../media/secure-score.png":::
 
 <a name='1-enable-azure-ad-multifactor-authentication-mfa'></a>
 
@@ -82,7 +82,7 @@ All Microsoft 365 plans with cloud mailboxes include Exchange Online Protection 
 
 Default settings for these EOP features are automatically assigned to all recipients via default policies. But, **to bump up the EOP protection level to Microsoft's recommended Standard or Strict security settings based on observations in the datacenters, turn on and assign the Standard preset security policy (for most users) and/or the Strict preset security policy (for admins and other high-risk users)**. As new protection capabilities are added and as the security landscape changes, the EOP settings in preset security policies are automatically updated to our recommended settings.
 
-For instructions, see [Use the Microsoft 365 Defender portal to assign Standard and Strict preset security policies to users](office-365-security/preset-security-policies.md#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users).
+For instructions, see [Use the Microsoft Defender portal to assign Standard and Strict preset security policies to users](office-365-security/preset-security-policies.md#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users).
 
 The differences between Standard and Strict are summarized in the table [here](office-365-security/preset-security-policies.md#policy-settings-in-preset-security-policies). The comprehensive settings for Standard and Strict **EOP settings** are described in the tables [here](office-365-security/recommended-settings-for-eop-and-office365.md#anti-spam-anti-malware-and-anti-phishing-protection-in-eop). 
 
@@ -103,7 +103,7 @@ As in the previous section, **to bump up the Defender for Office 365 protection 
 
 The users that you select for **Defender for Office 365 protection** in preset security policies get Microsoft's recommended Standard or Strict security settings for Safe Attachments and Safe Links. You also need to add entries and optional exceptions for [user impersonation and domain impersonation protection](office-365-security/anti-phishing-policies-about.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
 
-For instructions, see [Use the Microsoft 365 Defender portal to assign Standard and Strict preset security policies to users](office-365-security/preset-security-policies.md#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users).
+For instructions, see [Use the Microsoft Defender portal to assign Standard and Strict preset security policies to users](office-365-security/preset-security-policies.md#use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users).
 
 The differences between **Defender for Office 365 protection** settings in Standard and Strict are summarized in the table [here](office-365-security/preset-security-policies.md#policy-settings-in-preset-security-policies). The comprehensive settings for Standard and Strict **Defender for Office 365 protection** settings are described in the tables [here](office-365-security/recommended-settings-for-eop-and-office365.md#microsoft-defender-for-office-365-security). 
 
@@ -249,7 +249,7 @@ Get started with Defender for Cloud Apps now. Later you can set up more sophisti
 
 Microsoft 365 includes several ways to monitor status and take appropriate actions. Your best starting point is the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, where you can view your organization's [Microsoft Secure Score](./defender/microsoft-secure-score.md), and any alerts or entities that require your attention.
 
-- [Get started with the Microsoft 365 Defender portal](./defender/microsoft-365-defender-portal.md)
+- [Get started with the Microsoft Defender portal](./defender/microsoft-365-defender-portal.md)
 - [See the security portals in Microsoft 365](./defender/portals.md)
 
 ## Next steps

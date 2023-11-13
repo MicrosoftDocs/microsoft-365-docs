@@ -78,7 +78,7 @@ Brings together incident and alert management across your email, devices, and id
 - [Learn more about Investigations](incidents-overview.md)
 - [Learn more about managing alerts](/windows/security/threat-protection/microsoft-defender-atp/review-alerts)
 
-![Alerts and Actions quick launch bar in the Microsoft 365 Defender portal.](../../media/m365d-incident-nav.png)
+![Alerts and Actions quick launch bar in the Microsoft Defender portal.](../../media/m365d-incident-nav.png)
 
 ### Hunting
 
@@ -110,7 +110,7 @@ Learn more about how to [track and respond to emerging threats with threat analy
 
 Track and investigate threats to your users' email, track campaigns, and more. If you've used the Security & Compliance Center, this will be familiar.
 
-![The quick launch menu for Email & collab, on the left navigation pane in the Microsoft 365 Defender portal.](../../media/mdo-m365d-nav.png)
+![The quick launch menu for Email & collab, on the left navigation pane in the Microsoft Defender portal.](../../media/mdo-m365d-nav.png)
   
 #### Email entity page
 
@@ -120,7 +120,7 @@ The [Email entity page](../office-365-security/mdo-email-entity-page.md) *unifie
 
 View reports, change your settings, and modify user roles.
 
-![The quick launch menu for Microsoft 365 Defender permissions and reporting, on the left navigation pane in the Microsoft 365 Defender portal.](../../media/m365d-settings-nav.png)
+![The quick launch menu for Microsoft 365 Defender permissions and reporting, on the left navigation pane in the Microsoft Defender portal.](../../media/m365d-settings-nav.png)
   
 > [!NOTE]
 > DomainKeys Identified Mail (DKIM) ensures that destination email systems trust messages sent outbound from your custom domain.
@@ -130,7 +130,7 @@ View reports, change your settings, and modify user roles.
 
 ## What's changed
 
-This table is a quick reference of Threat management where change has occurred between the Security & Compliance center and the Microsoft 365 Defender portal. Click the links to read more about these areas.
+This table is a quick reference of Threat management where change has occurred between the Security & Compliance center and the Microsoft Defender portal. Click the links to read more about these areas.
 
 |Area|Description of change|
 |---|---|

@@ -122,7 +122,7 @@ This section guides you in configuring the following capabilities using Microsof
 
 #### Windows 10 and Windows 11
 
-From within the Microsoft 365 Defender portal it's possible to download the `.onboarding` policy that can be used to create the policy in System Center Configuration Manager and deploy that policy to Windows 10 and Windows 11 devices.
+From within the Microsoft Defender portal it's possible to download the `.onboarding` policy that can be used to create the policy in System Center Configuration Manager and deploy that policy to Windows 10 and Windows 11 devices.
 
 1. From a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, select [Settings and then Onboarding](https://security.microsoft.com/preferences2/onboarding).
 
@@ -256,7 +256,7 @@ After completing this task, you now have successfully configured Microsoft Defen
 
 The attack surface reduction pillar of Defender for Endpoint includes the feature set that is available under Exploit Guard. Attack surface reduction rules, Controlled Folder Access, Network Protection, and Exploit Protection.
 
-All these features provide a test mode and a block mode. In test mode, there's no end-user impact. All it does is collect other telemetry and make it available in the Microsoft 365 Defender portal. The goal with a deployment is to step-by-step move security controls into block mode.
+All these features provide a test mode and a block mode. In test mode, there's no end-user impact. All it does is collect other telemetry and make it available in the Microsoft Defender portal. The goal with a deployment is to step-by-step move security controls into block mode.
 
 To set attack surface reduction rules in test mode:
 

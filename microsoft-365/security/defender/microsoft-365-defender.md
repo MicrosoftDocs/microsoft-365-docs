@@ -77,7 +77,7 @@ Microsoft 365 Defender's unique cross-product layer augments the individual serv
 - Automate response to compromise by triggering self-healing for impacted assets through automated remediation.
 - Enable security teams to perform detailed and effective threat hunting across endpoint and Office data.
 
-Here's an example of how the Microsoft 365 Defender portal correlates all related alerts across products into a single incident.
+Here's an example of how the Microsoft Defender portal correlates all related alerts across products into a single incident.
 
 :::image type="content" source="../../media/overview-incident.png" alt-text="The incident overview page" lightbox="../../media/overview-incident.png":::
 
@@ -102,7 +102,7 @@ Microsoft 365 Defender cross-product features include:
 
 ## Get started
 
-Microsoft 365 Defender licensing requirements must be met before you can enable the service in the Microsoft 365 Defender portal at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"><https://security.microsoft.com></a> For more information, see:
+Microsoft 365 Defender licensing requirements must be met before you can enable the service in the Microsoft Defender portal at <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"><https://security.microsoft.com></a> For more information, see:
 
 - [Licensing requirements](prerequisites.md#licensing-requirements)
 - [Turn on Microsoft 365 Defender](m365d-enable.md)

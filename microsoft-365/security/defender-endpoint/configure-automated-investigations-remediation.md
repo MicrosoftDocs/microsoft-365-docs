@@ -33,7 +33,7 @@ If you're using Defender for Endpoint, you can specify an automation level so th
 
 ## Set up device groups
 
-1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), on the **Settings** page, under **Permissions**, select **Device groups**.
+1. In the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), on the **Settings** page, under **Permissions**, select **Device groups**.
 
 2. Select **+ Add device group**.
 

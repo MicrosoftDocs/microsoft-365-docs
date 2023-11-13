@@ -107,7 +107,7 @@ The following table lists investigation states and what they indicate.
 |Failed     | At least one investigation analyzer ran into a problem where it couldn't complete the investigation. If an investigation fails after remediation actions were approved, the remediation actions might still have succeeded.|
 |Successfully remediated| An automated investigation completed, and all remediation actions were completed or approved.|
 
-To provide more context about how investigation states show up, the following table lists alerts and their corresponding automated investigation state. This table is included as an example of what a security operations team might see in the Microsoft 365 Defender portal.
+To provide more context about how investigation states show up, the following table lists alerts and their corresponding automated investigation state. This table is included as an example of what a security operations team might see in the Microsoft Defender portal.
 
 |Alert name | Severity | Investigation state | Status | Category |
 |-----------|----------|---------------------|--------|----------|

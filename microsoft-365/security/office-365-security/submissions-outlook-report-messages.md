@@ -35,7 +35,7 @@ Microsoft provides the following tools for users to report good and bad messages
 
 For more information about reporting messages to Microsoft, see [Report messages and files to Microsoft](submissions-report-messages-files-to-microsoft.md).
 
-Admins configure user reported messages to go to a specified reporting mailbox, to Microsoft, or both. These user reported messages are available on the **User reported** tab on the **Submissions** page in the Microsoft 365 Defender Portal. For more information, see [User reported settings](submissions-user-reported-messages-custom-mailbox.md).
+Admins configure user reported messages to go to a specified reporting mailbox, to Microsoft, or both. These user reported messages are available on the **User reported** tab on the **Submissions** page in the Microsoft Defender portal. For more information, see [User reported settings](submissions-user-reported-messages-custom-mailbox.md).
 
 ## Use the built-in Report button in Outlook on the web
 
@@ -144,7 +144,7 @@ Based on the [User reported settings](submissions-user-reported-messages-custom-
 
 ## Review reported messages
 
-To review messages that users have reported to Microsoft, admins can use the **User reported** tab on the **Submissions** page in the Microsoft 365 Defender portal at <https://security.microsoft.com/reportsubmission>. For more information, see [View user reported messages to Microsoft](submissions-admin.md#view-user-reported-messages-to-microsoft).
+To review messages that users have reported to Microsoft, admins can use the **User reported** tab on the **Submissions** page in the Microsoft Defender portal at <https://security.microsoft.com/reportsubmission>. For more information, see [View user reported messages to Microsoft](submissions-admin.md#view-user-reported-messages-to-microsoft).
 
 > [!NOTE]
 > If the [User reported settings](submissions-user-reported-messages-custom-mailbox.md) in the organization send user reported messages (email and [Microsoft Teams](submissions-teams.md)) to Microsoft (exclusively or in addition to the reporting mailbox), we do the same checks as when admins submit messages to Microsoft for analysis from the **Submissions** page. So, submitting or resubmitting messages to Microsoft is useful to admins only for messages that have never been submitted to Microsoft, or when you disagree with the original verdict.

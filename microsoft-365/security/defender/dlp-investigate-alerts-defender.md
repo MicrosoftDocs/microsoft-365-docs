@@ -29,7 +29,7 @@ ms.date: 09/05/2023
 
 - Microsoft 365 Defender
 
-You can manage Microsoft Purview Data Loss Prevention (DLP) alerts in the Microsoft 365 Defender portal. Open **Incidents & alerts** \> **Incidents** on the quick launch of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. From this page, you can:
+You can manage Microsoft Purview Data Loss Prevention (DLP) alerts in the Microsoft Defender portal. Open **Incidents & alerts** \> **Incidents** on the quick launch of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. From this page, you can:
 
 - View all your DLP alerts grouped under incidents in the Microsoft 365 Defender incident queue.
 - View intelligent inter-solution (DLP-MDE, DLP-MDO) and intra-solution (DLP-DLP) correlated alerts under a single incident.
@@ -43,7 +43,7 @@ You can manage Microsoft Purview Data Loss Prevention (DLP) alerts in the Micros
 
 ## Licensing requirements
 
-To investigate Microsoft Purview Data Loss Prevention incidents in the Microsoft 365 Defender portal, you need a license from one of the following subscriptions:
+To investigate Microsoft Purview Data Loss Prevention incidents in the Microsoft Defender portal, you need a license from one of the following subscriptions:
 
 - Microsoft Office 365 E5/A5
 - Microsoft 365 E5/A5
@@ -55,7 +55,7 @@ To investigate Microsoft Purview Data Loss Prevention incidents in the Microsoft
 
 ## Roles
 
-It is best practice to only grant minimal permissions to alerts in the Microsoft 365 Defender portal. You can create a custom role with these roles and assign it to the users who need to investigate DLP alerts.
+It is best practice to only grant minimal permissions to alerts in the Microsoft Defender portal. You can create a custom role with these roles and assign it to the users who need to investigate DLP alerts.
 
 |Permission  |Defender Alert Access  |
 |---------|---------|
@@ -73,9 +73,11 @@ It is best practice to only grant minimal permissions to alerts in the Microsoft
 > [!NOTE]
 > [Administrative units](/microsoft-365/compliance/microsoft-365-compliance-center-permissions#administrative-units) restrictions flow from data loss prevention (DLP) into the Defender portal. If you are an administrative unit restricted admin, you'll only see the DLP alerts for your administrative unit.
 
-## Investigate DLP alerts in the Microsoft 365 Defender portal
+<a name='investigate-dlp-alerts-in-the-microsoft-365-defender-portal'></a>
 
-1. Go to the Microsoft 365 Defender portal, and select **Incidents** in the left hand navigation menu to open the incidents page.
+## Investigate DLP alerts in the Microsoft Defender portal
+
+1. Go to the Microsoft Defender portal, and select **Incidents** in the left hand navigation menu to open the incidents page.
 
 2. Select **Filters** on the top right, and choose **Service Source : Data Loss Prevention** to view all incidents with DLP alerts.
 

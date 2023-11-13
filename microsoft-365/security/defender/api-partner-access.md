@@ -93,7 +93,7 @@ The following steps with guide you how to create a multi-tenant Microsoft Entra 
    > [!TIP]
    > *Microsoft Threat Protection* is a former name for Microsoft 365 Defender, and will not appear in the original list. You need to start writing its name in the text box to see it appear.
 
-   :::image type="content" source="../../media/apis-in-my-org-tab.PNG" alt-text="The APIs usage section in the Microsoft 365 Defender portal" lightbox="../../media/apis-in-my-org-tab.PNG":::
+   :::image type="content" source="../../media/apis-in-my-org-tab.PNG" alt-text="The APIs usage section in the Microsoft Defender portal" lightbox="../../media/apis-in-my-org-tab.PNG":::
 
 5. Select **Application permissions**. Choose the relevant permissions for your scenario (for example, **Incident.Read.All**), and then select **Add permissions**.
 
@@ -106,18 +106,18 @@ The following steps with guide you how to create a multi-tenant Microsoft Entra 
 
 6. Select **Grant admin consent**. Every time you add a permission, you must select **Grant admin consent** for it to take effect.
 
-    :::image type="content" source="../../media/grant-consent.PNG" alt-text="A section to grant admin consent in the Microsoft 365 Defender portal" lightbox="../../media/grant-consent.PNG":::
+    :::image type="content" source="../../media/grant-consent.PNG" alt-text="A section to grant admin consent in the Microsoft Defender portal" lightbox="../../media/grant-consent.PNG":::
 
 7. To add a secret to the application, select **Certificates & secrets**, add a description to the secret, then select **Add**.
 
     > [!TIP]
     > After you select **Add**, select **copy the generated secret value**. You won't be able to retrieve the secret value after you leave.
 
-      :::image type="content" source="../../media/webapp-create-key2.png" alt-text="The Secret addition section in the Microsoft 365 Defender portal" lightbox="../../media/webapp-create-key2.png":::
+      :::image type="content" source="../../media/webapp-create-key2.png" alt-text="The Secret addition section in the Microsoft Defender portal" lightbox="../../media/webapp-create-key2.png":::
 
 8. Record your application ID and your tenant ID somewhere safe. They're listed under **Overview** on your application page.
 
-   :::image type="content" source="../../media/app-and-tenant-ids.png" alt-text="The Overview pane in the Microsoft 365 Defender portal" lightbox="../../media/app-and-tenant-ids.png":::
+   :::image type="content" source="../../media/app-and-tenant-ids.png" alt-text="The Overview pane in the Microsoft Defender portal" lightbox="../../media/app-and-tenant-ids.png":::
 
 9. Add the application to your user's tenant.
 
@@ -135,7 +135,7 @@ The following steps with guide you how to create a multi-tenant Microsoft Entra 
 
    After clicking on the consent link, sign in with the Global Administrator of the user's tenant and consent the application.
 
-   :::image type="content" source="../../media/app-consent-partner.png" alt-text="The consent application page in the Microsoft 365 Defender portal" lightbox="../../media/app-consent-partner.png":::
+   :::image type="content" source="../../media/app-consent-partner.png" alt-text="The consent application page in the Microsoft Defender portal" lightbox="../../media/app-consent-partner.png":::
 
    You'll also need to ask your user for their tenant ID. The tenant ID is one of the identifiers used to acquire access tokens.
 
@@ -270,7 +270,7 @@ A successful response will look like this:
 
 In the following image, you can see a decoded token acquired from an app, with ```Incidents.Read.All```, ```Incidents.ReadWrite.All```, and ```AdvancedHunting.Read.All``` permissions:
 
-:::image type="content" source="../../media/webapp-decoded-token.png" alt-text="The Decoded Token pane in the Microsoft 365 Defender portal" lightbox="../../media/webapp-decoded-token.png":::
+:::image type="content" source="../../media/webapp-decoded-token.png" alt-text="The Decoded Token pane in the Microsoft Defender portal" lightbox="../../media/webapp-decoded-token.png":::
 
 ## Use the token to access the Microsoft 365 Defender API
 

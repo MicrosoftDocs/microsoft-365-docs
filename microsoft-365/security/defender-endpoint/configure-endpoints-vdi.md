@@ -39,7 +39,7 @@ Like any other system in an IT environment, these too should have an Endpoint De
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configvdi-abovefoldlink)
 
  > [!NOTE]
-  > **Persistent VDI's** - Onboarding a persistent VDI machine into Microsoft Defender for Endpoint is handled the same way you would onboard a physical machine, such as a desktop or laptop. Group policy, Microsoft Configuration Manager, and other methods can be used to onboard a persistent machine. In the Microsoft 365 Defender portal, (https://security.microsoft.com) under onboarding, select your preferred onboarding method, and follow the instructions for that type. For more information see [Onboarding Windows client](onboard-windows-client.md).
+  > **Persistent VDI's** - Onboarding a persistent VDI machine into Microsoft Defender for Endpoint is handled the same way you would onboard a physical machine, such as a desktop or laptop. Group policy, Microsoft Configuration Manager, and other methods can be used to onboard a persistent machine. In the Microsoft Defender portal, (https://security.microsoft.com) under onboarding, select your preferred onboarding method, and follow the instructions for that type. For more information see [Onboarding Windows client](onboard-windows-client.md).
 
 ## Onboarding non-persistent virtual desktop infrastructure (VDI) devices
 
@@ -50,7 +50,7 @@ There might be associated challenges when onboarding VDI instances. The followin
 - Instant early onboarding of a short-lived session, which must be onboarded to Defender for Endpoint prior to the actual provisioning.
 - The device name is typically reused for new sessions.
 
-In a VDI environment, VDI instances can have short lifespans. VDI devices can appear in the Microsoft 365 Defender portal as either single entries for each VDI instance or multiple entries for each device. 
+In a VDI environment, VDI instances can have short lifespans. VDI devices can appear in the Microsoft Defender portal as either single entries for each VDI instance or multiple entries for each device. 
 
 - Single entry for each VDI instance. If the VDI instance was already onboarded to Microsoft Defender for Endpoint, and at some point deleted, and then recreated with the same host name, a new object representing this VDI instance is NOT be created in the portal. 
 
@@ -118,8 +118,8 @@ The following steps guide you through onboarding VDI devices and highlight steps
    
    5. Depending on the method you'd like to implement, follow the appropriate steps:
    
-      - For single entry for each device: Check only one entry in Microsoft 365 Defender portal.
-      - For multiple entries for each device: Check multiple entries in Microsoft 365 Defender portal.
+      - For single entry for each device: Check only one entry in Microsoft Defender portal.
+      - For multiple entries for each device: Check multiple entries in Microsoft Defender portal.
 
 6. Click **Devices list** on the Navigation pane.
 
@@ -171,9 +171,9 @@ If you have onboarded the primary image of your VDI environment (SENSE service i
 
 ### Are you using a third party for VDIs?
 
-If you're deploying non-persistent VDIs through VMware instant cloning or similar technologies, make sure that your internal template VMs and replica VMs are not onboarded to Defender for Endpoint. If you onboard devices using the single entry method, instant clones that are provisioned from onboarded VMs might have the same senseGuid, and that can stop a new entry from being listed in the Device Inventory view (in the [Microsoft 365 Defender portal](https://security.microsoft.com), choose **Assets** > **Devices**).
+If you're deploying non-persistent VDIs through VMware instant cloning or similar technologies, make sure that your internal template VMs and replica VMs are not onboarded to Defender for Endpoint. If you onboard devices using the single entry method, instant clones that are provisioned from onboarded VMs might have the same senseGuid, and that can stop a new entry from being listed in the Device Inventory view (in the [Microsoft Defender portal](https://security.microsoft.com), choose **Assets** > **Devices**).
 
-If either the primary image, template VM, or replica VM are onboarded to Defender for Endpoint using the single entry method, it will stop Defender from creating entries for new non-persistent VDIs in the Microsoft 365 Defender portal.
+If either the primary image, template VM, or replica VM are onboarded to Defender for Endpoint using the single entry method, it will stop Defender from creating entries for new non-persistent VDIs in the Microsoft Defender portal.
 
 Reach out to your third-party vendors for further assistance.
 
@@ -258,5 +258,3 @@ The following configuration settings are recommended:
 - [Troubleshoot Microsoft Defender for Endpoint onboarding issues](troubleshoot-onboarding.md)
 
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
-
-

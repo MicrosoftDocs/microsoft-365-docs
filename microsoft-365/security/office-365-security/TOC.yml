@@ -27,7 +27,7 @@
        href: zero-trust-with-microsoft-365-defender-office-365.md
      - name: Mail flow in EOP
        href: mail-flow-about.md
-     - name: Microsoft 365 Defender portal overview
+     - name: Microsoft Defender portal overview
        href: ../defender/microsoft-365-defender-portal.md
 
    - name: Evaluate

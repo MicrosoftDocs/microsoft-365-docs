@@ -34,7 +34,7 @@ To view the list of tenants that appear in multi-tenant management, go to [Setti
 From the **Settings** page you can:
 
 - **Add a tenant**: Select **Add tenants** > Choose the tenants to want to add > Select **Add tenant**.
-- Select a tenant from the list to open the [Microsoft 365 Defender portal](https://security.microsoft.com) for that tenant.
+- Select a tenant from the list to open the [Microsoft Defender portal](https://security.microsoft.com) for that tenant.
 - **Remove a tenant**: Select the tenant you'd like to remove > select **Remove**.
 
 ## Multi-tenant management status indicator
@@ -52,4 +52,3 @@ When an issue exists, the status indicator shows a red warning sign:
 Hovering over the red warning sign displays the issues that have occurred and the tenant information. By expanding each section, you see all the tenants with this issue.
 
 - ![tenant data issues](../../media/defender/mto-tenantdata-issues.png)
-

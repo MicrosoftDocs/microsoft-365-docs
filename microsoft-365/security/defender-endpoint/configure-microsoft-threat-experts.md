@@ -44,7 +44,7 @@ If you're a Defender for Endpoint customer, you need to apply for **Endpoint Att
 
 ## Apply for Endpoint Attack Notifications service
 
-If you're already a Defender for Endpoint customer, you can apply through the Microsoft 365 Defender portal.
+If you're already a Defender for Endpoint customer, you can apply through the Microsoft Defender portal.
 
 1. From the navigation pane, go to **Settings > General > Advanced features > Endpoint Attack Notifications**.
 
@@ -102,12 +102,12 @@ This is available as a subscription service. If you're already a Defender for En
 
 ## Ask Defender Experts about suspicious cybersecurity activities in your organization
 
-You can partner with Microsoft Defender Experts who can be engaged directly from within the Microsoft 365 Defender portal for their response. Experts provide insights to better understand complex threats, targeted attack notifications that you get, or if you need more information about the alerts, a potentially compromised device, or a threat intelligence context that you see on your portal dashboard.
+You can partner with Microsoft Defender Experts who can be engaged directly from within the Microsoft Defender portal for their response. Experts provide insights to better understand complex threats, targeted attack notifications that you get, or if you need more information about the alerts, a potentially compromised device, or a threat intelligence context that you see on your portal dashboard.
 
 > [!NOTE]
 >
 > - Alert inquiries related to your organization's customized threat intelligence data are currently not supported. Consult your security operations or incident response team for details.
-> - You need to have the **Manage security settings** permission in the Microsoft 365 Defender portal to be able to submit the **Ask Defender Experts** inquiry.
+> - You need to have the **Manage security settings** permission in the Microsoft Defender portal to be able to submit the **Ask Defender Experts** inquiry.
 
 1. Navigate to the portal page with the relevant information that you'd like to investigate, for example, the **Incident** page. Ensure that the page for the relevant alert or device is in view before you send an investigation request.
 

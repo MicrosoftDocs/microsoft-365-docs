@@ -50,7 +50,7 @@ The four phases are described here and each section corresponds to a separate ar
 
 ## 1. Configure capabilities
 
-It's critical to have full visibility into your assets and to the attack surface of your organization. You can't protect what you can't see. The Microsoft 365 Defender portal provides many capabilities to discover and protect the devices in your organization against threats. This can include, configuring device discovery to help you find unmanaged devices, taking advantage of available integrations to increase visibility into a complete OT/IOT asset inventory, and testing available attack surface reduction rules to see how they might impact your environment.
+It's critical to have full visibility into your assets and to the attack surface of your organization. You can't protect what you can't see. The Microsoft Defender portal provides many capabilities to discover and protect the devices in your organization against threats. This can include, configuring device discovery to help you find unmanaged devices, taking advantage of available integrations to increase visibility into a complete OT/IOT asset inventory, and testing available attack surface reduction rules to see how they might impact your environment.
 
 For more information, see [Strengthen your security posture - Configure capabilities](strengthen-security-posture-configure-capabilities.md).
 
@@ -70,7 +70,7 @@ For more information on how to start taking action to investigate and protect ag
 
 ## 4. Track and maintain
 
-Capabilities we already discussed like continually onboarding newly discovered devices and reviewing and prioritizing security recommendations can help to maintain, and continue to improve, your security posture. The Microsoft 365 Defender portal also provides capabilities to help you keep up to date with new vulnerabilities and provides tools to proactively explore your network for threats.
+Capabilities we already discussed like continually onboarding newly discovered devices and reviewing and prioritizing security recommendations can help to maintain, and continue to improve, your security posture. The Microsoft Defender portal also provides capabilities to help you keep up to date with new vulnerabilities and provides tools to proactively explore your network for threats.
 
 For more information, see [Strengthen your security posture - Track and maintain](strengthen-security-posture-track-maintain.md).
 

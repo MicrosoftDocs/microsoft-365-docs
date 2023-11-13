@@ -46,7 +46,7 @@ The following steps guide you on how to activate the Microsoft 365 Defender Unif
 
 ### Activate from the Permissions and roles page
 
-Sign in to the [Microsoft 365 Defender portal](https://security.microsoft.com). In the navigation pane, select **Permissions** and select **Roles** under Microsoft 365 Defender to get to the Permissions and roles page.
+Sign in to the [Microsoft Defender portal](https://security.microsoft.com). In the navigation pane, select **Permissions** and select **Roles** under Microsoft 365 Defender to get to the Permissions and roles page.
 
 You can activate your workloads in two ways from the Permissions and roles page:
 
@@ -77,7 +77,7 @@ You have now successfully activated (or deactivated) that workload.
 
 Follow these steps to activate your workloads directly in Microsoft 365 Defender settings:
 
-1. Sign in to the [Microsoft 365 Defender portal](https://security.microsoft.com).
+1. Sign in to the [Microsoft Defender portal](https://security.microsoft.com).
 2. In the navigation pane, select **Settings**.
 3. Select **Microsoft 365 Defender**.
 4. Select **Permissions and roles**. This brings you to the **Activate workloads** page.

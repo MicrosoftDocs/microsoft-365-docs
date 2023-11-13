@@ -44,7 +44,7 @@ You'll need to take the following configuration steps to enable the managed secu
 
 The integration will allow MSSPs to take the following actions:
 
-- Get access to MSSP customer's Microsoft 365 Defender portal
+- Get access to MSSP customer's Microsoft Defender portal
 - Get email notifications, and
 - Fetch alerts through security information and event management (SIEM) tools
 

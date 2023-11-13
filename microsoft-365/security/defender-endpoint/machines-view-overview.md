@@ -72,7 +72,7 @@ During the Microsoft Defender for Endpoint onboarding process, devices onboarded
 
 ## Navigate to the Device inventory page
 
-Access the device inventory page by selecting **Devices** from the **Assets** navigation menu in the [Microsoft 365 Defender portal](/microsoft-365/security/defender-business/mdb-get-started).
+Access the device inventory page by selecting **Devices** from the **Assets** navigation menu in the [Microsoft Defender portal](/microsoft-365/security/defender-business/mdb-get-started).
 
 ## Device inventory overview
 

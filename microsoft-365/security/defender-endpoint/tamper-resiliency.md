@@ -101,7 +101,9 @@ For more information, see [Tamper protection for antivirus exclusions](/microsof
 
 Attackers can be preventing from discovering existing antivirus exclusions by enabling [HideExclusionsFromLocalAdmin](/windows/client-management/mdm/defender-csp#configurationhideexclusionsfromlocaladmins).
 
-## Detecting potential tampering activity in the Microsoft 365 Defender portal
+<a name='detecting-potential-tampering-activity-in-the-microsoft-365-defender-portal'></a>
+
+## Detecting potential tampering activity in the Microsoft Defender portal
 
 When tampering is detected, an alert is raised. Some of the alert titles for tampering are:
 

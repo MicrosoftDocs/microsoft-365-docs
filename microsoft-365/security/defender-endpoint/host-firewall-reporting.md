@@ -1,6 +1,6 @@
 ---
 title: Host firewall reporting in Microsoft Defender for Endpoint
-description: Host and view firewall reporting in Microsoft 365 Defender portal.
+description: Host and view firewall reporting in Microsoft Defender portal.
 keywords: windows defender, firewall
 ms.service: microsoft-365-security
 ms.mktglfcycl: manage
@@ -31,7 +31,7 @@ search.appverid: met150
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-If you're a Global or security administrator, you can now host firewall reporting to the [Microsoft 365 Defender portal](https://security.microsoft.com). This feature enables you to view Windows firewall reporting from a centralized location.
+If you're a Global or security administrator, you can now host firewall reporting to the [Microsoft Defender portal](https://security.microsoft.com). This feature enables you to view Windows firewall reporting from a centralized location.
 
 ## What do you need to know before you begin?
 
@@ -112,7 +112,7 @@ These reports can also be accessed by going to **Reports** > **Security Report**
 
 ### From "Computers with a blocked connection" to device
 
-Cards support interactive objects. You can drill into the activity of a device by clicking on the device name, which will launch the Microsoft 365 Defender portal in a new tab, and take you directly to the **Device Timeline** tab.
+Cards support interactive objects. You can drill into the activity of a device by clicking on the device name, which will launch the Microsoft Defender portal in a new tab, and take you directly to the **Device Timeline** tab.
 
 :::image type="content" source="images/firewall-reporting-blocked-connection.png" alt-text="The Computers with a blocked connection page" lightbox="images/firewall-reporting-blocked-connection.png":::
 

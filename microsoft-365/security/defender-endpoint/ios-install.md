@@ -239,7 +239,7 @@ Admins can configure auto-setup of VPN profile. This will automatically set up t
 > [!NOTE] 
 > Skip this step if you configure zero touch (silent) onboarding. Manually launching application is not necessary if zero touch (silent) onboarding is configured.
 
-3. Upon successful onboarding, the device will start showing up on the Devices list in the Microsoft 365 Defender portal.
+3. Upon successful onboarding, the device will start showing up on the Devices list in the Microsoft Defender portal.
 
    :::image type="content" source="images/device-inventory-screen.png" alt-text="The Device inventory page." lightbox="images/device-inventory-screen.png":::
 

@@ -147,7 +147,7 @@ It's possible to disable automatic updates of the scanner by going to the **MDAT
 
 ## Configure a new network device authenticated scan
 
-1. Go to **Settings** \> **Device discovery** \> **Authenticated scans** in the [Microsoft 365 Defender portal](https://security.microsoft.com).
+1. Go to **Settings** \> **Device discovery** \> **Authenticated scans** in the [Microsoft Defender portal](https://security.microsoft.com).
 2. Select **Add new scan** and choose **Network device authenticated scan** and select **Next**.
 
      :::image type="content" source="../../media/defender-endpoint/network-authenticated-scan.png" alt-text="Screenshot of the add new network device authenticated scan screen" lightbox="../../media/defender-endpoint/network-authenticated-scan.png":::

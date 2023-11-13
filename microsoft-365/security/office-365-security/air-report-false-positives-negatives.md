@@ -71,7 +71,7 @@ With Threat Explorer, your security operations team can find an email affected b
 
 In the Action center, you can see remediation actions that were taken and potentially undo the action.
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to the Action center by selecting **Action center**. To go directly to the Action center, use <https://security.microsoft.com/action-center/>.
+1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to the Action center by selecting **Action center**. To go directly to the Action center, use <https://security.microsoft.com/action-center/>.
 2. In the Action center, select the **History** tab to view the list of completed actions.
 3. Select an item. Its flyout pane opens.
 4. In the flyout pane, select **Undo**. (Only actions that can be undone will have an **Undo** button.)

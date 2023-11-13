@@ -151,7 +151,7 @@ Depending on the operating system, the proxy to be used for Microsoft Defender f
 
 1. Onboard a previous operating system with the Microsoft Monitoring Agent (MMA) into Defender for Endpoint (for more information, see [Onboard previous versions of Windows on Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2010326) and [Onboard Windows servers](configure-server-endpoints.md)).
 
-2. Ensure the machine is successfully reporting into the Microsoft 365 Defender portal.
+2. Ensure the machine is successfully reporting into the Microsoft Defender portal.
 
 3. Run the TestCloudConnection.exe tool from `C:\Program Files\Microsoft Monitoring Agent\Agent` to validate the connectivity, and to get the required URLs for your specific workspace.
 
@@ -159,7 +159,7 @@ Depending on the operating system, the proxy to be used for Microsoft Defender f
 
   :::image type="content" source="../../media/defender-endpoint/admin-powershell.png" alt-text="This is admin PowerShell.":::
 
-The wildcards (\*) used in `*.ods.opinsights.azure.com`, `*.oms.opinsights.azure.com`, and `*.agentsvc.azure-automation.net` URL endpoints can be replaced with your specific Workspace ID. The Workspace ID is specific to your environment and workspace. It can be found in the Onboarding section of your tenant within the Microsoft 365 Defender portal.
+The wildcards (\*) used in `*.ods.opinsights.azure.com`, `*.oms.opinsights.azure.com`, and `*.agentsvc.azure-automation.net` URL endpoints can be replaced with your specific Workspace ID. The Workspace ID is specific to your environment and workspace. It can be found in the Onboarding section of your tenant within the Microsoft Defender portal.
 
 The `*.blob.core.windows.net` URL endpoint can be replaced with the URLs shown in the "Firewall Rule: \*.blob.core.windows.net" section of the test results.
 

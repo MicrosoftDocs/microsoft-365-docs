@@ -77,7 +77,7 @@ This configuration is available for both the enrolled (MDM) devices as well as u
     - In Settings page, select Use configuration designer and add **WebProtection** as the key and value type as **String**.
         - By default, **WebProtection= true**.
         - Admin needs to make **WebProtection = false** to switch off the web protection.
-        - Defender will send the heartbeat to the Microsoft 365 Defender portal whenever user opens the app.
+        - Defender will send the heartbeat to the Microsoft Defender portal whenever user opens the app.
         - Click Next and assign this profile to targeted devices/users.
 
 1. **Disable Web Protection(MAM)** Use the following steps to disable **Web Protection** for unenrolled devices.
@@ -88,7 +88,7 @@ This configuration is available for both the enrolled (MDM) devices as well as u
     - In Settings page, under the General Configuration Settings, add **WebProtection** as the key and value as **false**.
         - By default, **WebProtection= true**.
         - Admin needs to make **WebProtection = false** to switch off the web protection.
-        - Defender will send the heartbeat to the Microsoft 365 Defender portal whenever user opens the app.
+        - Defender will send the heartbeat to the Microsoft Defender portal whenever user opens the app.
         - Click Next and assign this profile to targeted devices/users.
 
 ## Configure Network Protection
@@ -255,7 +255,7 @@ Microsoft Defender for Endpoint on iOS enables **Optional Permissions** in the o
 
 Microsoft Defender for Endpoint has the capability of detecting unmanaged and managed devices that are jailbroken. These jailbreak checks are done periodically. If a device is detected to be jailbroken,
 
-1. A **High**-risk alert will be reported to the Microsoft 365 Defender portal. If device Compliance and Conditional Access is set up based on device risk score, then the device will be blocked from accessing corporate data.
+1. A **High**-risk alert will be reported to the Microsoft Defender portal. If device Compliance and Conditional Access is set up based on device risk score, then the device will be blocked from accessing corporate data.
 1. User data on app will be cleared. When user opens the app after jailbreaking the VPN profile also will be deleted and no web protection will be offered.
 
 ### Configure compliance policy against jailbroken devices

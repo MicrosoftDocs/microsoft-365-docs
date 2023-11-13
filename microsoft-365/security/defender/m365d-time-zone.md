@@ -35,7 +35,7 @@ ms.date: 02/17/2021
 
 
 
-Microsoft 365 Defender can display date and time information using either your local time zone or UTC. The selected time zone will apply to all date and time information shown in the following features in the Microsoft 365 Defender portal:
+Microsoft 365 Defender can display date and time information using either your local time zone or UTC. The selected time zone will apply to all date and time information shown in the following features in the Microsoft Defender portal:
 - Incidents
 - Automated investigation and remediation, including the action center
 - Advanced hunting results

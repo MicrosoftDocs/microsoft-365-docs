@@ -325,18 +325,18 @@ sudo apt -t bionic install mdatp
 
 ## Download the onboarding package
 
-Download the onboarding package from Microsoft 365 Defender portal.
+Download the onboarding package from Microsoft Defender portal.
 
 [!INCLUDE [Defender for Endpoint repackaging warning](../../includes/repackaging-warning.md)]
 
 > [!IMPORTANT]
 > If you miss this step, any command executed will show a warning message indicating that the product is unlicensed. Also the `mdatp health` command returns a value of `false`.
 
-1. In the Microsoft 365 Defender portal, go to **Settings > Endpoints > Device management > Onboarding**.
+1. In the Microsoft Defender portal, go to **Settings > Endpoints > Device management > Onboarding**.
 2. In the first drop-down menu, select **Linux Server** as the operating system. In the second drop-down menu, select **Local Script** as the deployment method.
 3. Select **Download onboarding package**. Save the file as WindowsDefenderATPOnboardingPackage.zip.
 
-   :::image type="content" source="images/portal-onboarding-linux.png" alt-text="Downloading an onboarding package in the Microsoft 365 Defender portal" lightbox="images/portal-onboarding-linux.png":::
+   :::image type="content" source="images/portal-onboarding-linux.png" alt-text="Downloading an onboarding package in the Microsoft Defender portal" lightbox="images/portal-onboarding-linux.png":::
 
 4. From a command prompt, verify that you have the file, and extract the contents of the archive:
 

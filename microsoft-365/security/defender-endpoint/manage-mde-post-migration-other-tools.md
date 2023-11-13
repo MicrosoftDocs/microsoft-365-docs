@@ -70,7 +70,9 @@ On an individual device, you can run a scan, start diagnostic tracing, check for
 
 To learn more, see [Configure and manage Microsoft Defender Antivirus with mpcmdrun.exe](/windows/security/threat-protection/microsoft-defender-antivirus/command-line-arguments-microsoft-defender-antivirus).
 
-## Configure your Microsoft 365 Defender portal
+<a name='configure-your-microsoft-365-defender-portal'></a>
+
+## Configure your Microsoft Defender portal
 
 If you haven't already done so, configure your <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> to view alerts, configure threat protection features, and view detailed information about your organization's overall security posture.
 

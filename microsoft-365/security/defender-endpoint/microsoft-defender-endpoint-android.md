@@ -49,7 +49,7 @@ This topic describes how to install, configure, update, and use Defender for End
   - Additionally, device(s) can be [enrolled](/mem/intune/user-help/enroll-device-android-company-portal) via the Intune Company Portal app to enforce Intune device compliance policies. 
 
 - **For Administrators**:
-   - Access to the Microsoft 365 Defender portal.
+   - Access to the Microsoft Defender portal.
    - Access to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) to:
      - Deploy the app to enrolled user groups in your organization.
      - Configure Microsoft Defender for Endpoint risk signals in app protection policy.

@@ -70,7 +70,7 @@ Microsoft 365 Defender for US Government customers requires one of the following
 
 ## Portal URLs
 
-The following are the Microsoft 365 Defender portal URLs for US Government customers:
+The following are the Microsoft Defender portal URLs for US Government customers:
 
 <br />
 

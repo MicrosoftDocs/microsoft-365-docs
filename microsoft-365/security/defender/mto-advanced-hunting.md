@@ -80,4 +80,4 @@ When you select a single detection rule, a flyout panel opens with the detection
 
    :::image type="content" source="../../media/defender/custom-detection-rule-details.png" alt-text="Screenshot of the Microsoft 365 Defender custom detection rule details page" lightbox="../../media/defender/custom-detection-rule-details.png":::
 
-Select **Open detection rules** to view this rule in a new tab for the specific tenant in the [Microsoft 365 Defender portal](https://security.microsoft.com). To learn more, see [Custom detection rules](./custom-detection-rules.md).
+Select **Open detection rules** to view this rule in a new tab for the specific tenant in the [Microsoft Defender portal](https://security.microsoft.com). To learn more, see [Custom detection rules](./custom-detection-rules.md).

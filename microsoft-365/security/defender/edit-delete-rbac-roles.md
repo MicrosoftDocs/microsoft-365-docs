@@ -41,7 +41,7 @@ The following steps guide you on how to edit roles in Microsoft 365 Defender Uni
 > [!IMPORTANT]
 > You must be a Global Administrator or Security Administrator in Microsoft Entra ID, or have all the **Authorization** permissions assigned in Microsoft 365 Defender Unified RBAC to perform this task. For more information on permissions, see [Permission pre-requisites](../defender/manage-rbac.md#permissions-pre-requisites).
 
-1. Sign in to the [Microsoft 365 Defender portal](https://security.microsoft.com) as global administrator or security administrator.
+1. Sign in to the [Microsoft Defender portal](https://security.microsoft.com) as global administrator or security administrator.
 2. In the navigation pane, select **Permissions**.
 3. Select **Roles** under Microsoft 365 Defender to get to the Permissions and roles page.
 4. Select the role you want to edit. You can only edit one role at a time.
@@ -83,7 +83,7 @@ The following steps guide you on how to export roles in Microsoft 365 Defender U
 >
 >For more information on permissions, see [Permission pre-requisites](../defender/manage-rbac.md#permissions-pre-requisites).
 
-1. Sign in to the [Microsoft 365 Defender portal](https://security.microsoft.com) with the required roles or permissions.
+1. Sign in to the [Microsoft Defender portal](https://security.microsoft.com) with the required roles or permissions.
 2. In the navigation pane, select **Permissions**.
 3. Select **Roles** under Microsoft 365 Defender to get to the Permissions and roles page.
 4. Select the **Export** button.

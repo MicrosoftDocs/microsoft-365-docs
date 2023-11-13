@@ -57,13 +57,13 @@ Watch this short video to learn how you can detect and respond to user compromis
 
 ### View and investigate restricted users
 
-You have a few options for navigating to a list of restricted users. For example, in the Microsoft 365 Defender portal, you can go to **Email & collaboration** \> **Review** \> **Restricted Users**. The following procedure describes navigation using the **Alerts** dashboard, which is a good way to see various kinds of alerts that might have been triggered.
+You have a few options for navigating to a list of restricted users. For example, in the Microsoft Defender portal, you can go to **Email & collaboration** \> **Review** \> **Restricted Users**. The following procedure describes navigation using the **Alerts** dashboard, which is a good way to see various kinds of alerts that might have been triggered.
 
-1. Open the Microsoft 365 Defender portal at <https://security.microsoft.com> and go to **Incidents & alerts** \> **Alerts**. Or, to go directly to the **Alerts** page, use <https://security.microsoft.com/alerts>.
+1. Open the Microsoft Defender portal at <https://security.microsoft.com> and go to **Incidents & alerts** \> **Alerts**. Or, to go directly to the **Alerts** page, use <https://security.microsoft.com/alerts>.
 
 2. On the **Alerts** page, filter the results by time period and the policy named **User restricted from sending email**.
 
-   :::image type="content" source="../../media/m365-sc-alerts-page-with-restricted-user.png" alt-text="The Alerts page in the Microsoft 365 Defender portal filtered for restricted users" lightbox="../../media/m365-sc-alerts-page-with-restricted-user.png":::
+   :::image type="content" source="../../media/m365-sc-alerts-page-with-restricted-user.png" alt-text="The Alerts page in the Microsoft Defender portal filtered for restricted users" lightbox="../../media/m365-sc-alerts-page-with-restricted-user.png":::
 
 3. If you select the entry by clicking on the name, a **User restricted from sending email** page opens with additional details for you to review. Next to the **Manage alert** button, you can click :::image type="icon" source="../../media/m365-cc-sc-more-actions-icon.png" border="false"::: **More options** and then select **View restricted user details** to go to the **Restricted users** page, where you can [release the restricted user](outbound-spam-restore-restricted-users.md).
 
@@ -71,7 +71,7 @@ You have a few options for navigating to a list of restricted users. For example
 
 ### View details about automated investigations
 
-When an automated investigation has begun, you can see its details and results in the **Action center** in the Microsoft 365 Defender portal.
+When an automated investigation has begun, you can see its details and results in the **Action center** in the Microsoft Defender portal.
 
 To learn more, see [View details of an investigation](air-view-investigation-results.md).
 

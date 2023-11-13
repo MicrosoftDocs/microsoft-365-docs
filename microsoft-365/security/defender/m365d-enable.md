@@ -35,9 +35,9 @@ ms.date: 09/21/2023
 **Applies to:**
 - Microsoft 365 Defender
 
-[Microsoft 365 Defender](microsoft-365-defender.md) unifies your incident response process by integrating key capabilities across Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Cloud Apps, and Microsoft Defender for Identity. This unified experience adds powerful features you can access in the Microsoft 365 Defender portal.
+[Microsoft 365 Defender](microsoft-365-defender.md) unifies your incident response process by integrating key capabilities across Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Cloud Apps, and Microsoft Defender for Identity. This unified experience adds powerful features you can access in the Microsoft Defender portal.
 
-Microsoft 365 Defender automatically turns on when eligible customers with the required permissions visit Microsoft 365 Defender portal. Read this article to understand various prerequisites and how Microsoft 365 Defender is provisioned.
+Microsoft 365 Defender automatically turns on when eligible customers with the required permissions visit Microsoft Defender portal. Read this article to understand various prerequisites and how Microsoft 365 Defender is provisioned.
 
 ## Check license eligibility and required permissions
 
@@ -75,7 +75,7 @@ Onboarding to Microsoft 365 Defender is simple. From the navigation menu, select
 
 Microsoft 365 Defender will store and process data in the [same location used by Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy). If you don't have Microsoft Defender for Endpoint, a new data center location is automatically selected based on the location of active Microsoft 365 security services. The selected data center location is shown in the screen.
 
-Select **Need help?** in the Microsoft 365 Defender portal to contact Microsoft support about provisioning Microsoft 365 Defender in a different data center location.
+Select **Need help?** in the Microsoft Defender portal to contact Microsoft support about provisioning Microsoft 365 Defender in a different data center location.
 
 > [!NOTE]
 > In the past, Microsoft Defender for Endpoint automatically provisioned in European Union (EU) data centers when turned on through Microsoft Defender for Cloud. Microsoft 365 Defender will automatically provision in the same EU data center for customers who have provisioned Defender for Endpoint in this manner in the past.
@@ -90,7 +90,7 @@ Once the service is provisioned, it adds:
 - [Advanced hunting](advanced-hunting-overview.md) capabilities
 - Threat analytics
 
-:::image type="content" source="../../media/overview-incident.png" alt-text="The navigation pane in the Microsoft 365 Defender portal with Microsoft 365 Defender features" lightbox="../../media/overview-incident.png":::
+:::image type="content" source="../../media/overview-incident.png" alt-text="The navigation pane in the Microsoft Defender portal with Microsoft 365 Defender features" lightbox="../../media/overview-incident.png":::
 *Microsoft 365 Defender portal with incidents management and other capabilities*
 
 ### Getting Microsoft Defender for Identity data 
@@ -101,7 +101,7 @@ To enable the integration with Microsoft Defender for Cloud Apps, you'll need to
 
 To get answers to the most commonly asked questions about turning on Microsoft 365 Defender, [read the FAQ](m365d-enable-faq.md).
 
-Microsoft support staff can help provision or deprovision the service and related resources on your tenant. For assistance, select **Need help?** in the Microsoft 365 Defender portal. When contacting support, mention Microsoft 365 Defender.
+Microsoft support staff can help provision or deprovision the service and related resources on your tenant. For assistance, select **Need help?** in the Microsoft Defender portal. When contacting support, mention Microsoft 365 Defender.
 
 ## Related topics
 

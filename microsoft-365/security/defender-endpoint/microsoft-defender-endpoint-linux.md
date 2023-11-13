@@ -42,7 +42,7 @@ Microsoft Defender for Endpoint for Linux includes antimalware and endpoint dete
 
 ### Prerequisites
 
-- Access to the Microsoft 365 Defender portal
+- Access to the Microsoft Defender portal
 - Linux distribution using the [systemd](https://systemd.io/) system manager
 
   > [!NOTE]

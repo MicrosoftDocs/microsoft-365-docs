@@ -31,7 +31,7 @@ ms.topic: conceptual
 
 This article is [Step 1 of 2](eval-defender-investigate-respond.md) in the process of performing an investigation and response of an incident in Microsoft 365 Defender using a pilot environment. For more information about this process, see the [overview](eval-defender-investigate-respond.md) article.
 
-After preparing your [pilot environment](eval-defender-investigate-respond.md), it's time to test Microsoft 365 Defender's incident response and automated investigation and remediation capabilities by creating an incident with a simulated attack and using the Microsoft 365 Defender portal to investigate and respond.
+After preparing your [pilot environment](eval-defender-investigate-respond.md), it's time to test Microsoft 365 Defender's incident response and automated investigation and remediation capabilities by creating an incident with a simulated attack and using the Microsoft Defender portal to investigate and respond.
 
 An incident in Microsoft 365 Defender is a collection of correlated alerts and associated data that make up the story of an attack.
 
@@ -40,13 +40,15 @@ Microsoft 365 services and apps create alerts when they detect a suspicious or m
 > [!NOTE]
 > If you are brand new to security analysis and incident response, see the [Respond to your first incident walkthrough](first-incident-overview.md) to get a guided tour of a typical process of analysis, remediation, and post-incident review.
 
-## Simulate attacks with the Microsoft 365 Defender portal
+<a name='simulate-attacks-with-the-microsoft-365-defender-portal'></a>
 
-The Microsoft 365 Defender portal has built-in capabilities to create simulated attacks on your pilot environment:
+## Simulate attacks with the Microsoft Defender portal
+
+The Microsoft Defender portal has built-in capabilities to create simulated attacks on your pilot environment:
 
 - Attack simulation training for Microsoft 365 Defender for Office 365 at [https://security.microsoft.com/attacksimulator](https://security.microsoft.com/attacksimulator).
 
-  In the Microsoft 365 Defender portal, select **Email & collaboration > Attack simulation training**.
+  In the Microsoft Defender portal, select **Email & collaboration > Attack simulation training**.
 
 - Attack tutorials & simulations for Microsoft 365 Defender for Endpoint at [https://security.microsoft.com/tutorials/simulations](https://security.microsoft.com/tutorials/simulations).
 
@@ -183,7 +185,7 @@ To see the Automated Incident and Response feature in action, keep the notepad.e
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
 
-Switching to the SOC analyst point of view, you can now start to investigate the attack in the Microsoft 365 Defender portal.
+Switching to the SOC analyst point of view, you can now start to investigate the attack in the Microsoft Defender portal.
 
 1. Open the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
 
@@ -292,7 +294,7 @@ Select the user name to open the user's profile page where further investigation
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4BzwB]
 
-Navigate back to the incident in the Microsoft 365 Defender portal. The **Investigations** tab in the **Incident** page shows the automated investigations that were triggered by Microsoft Defender for Identity and Microsoft Defender for Endpoint. The screenshot below displays only the automated investigation triggered by Defender for Endpoint. By default, Defender for Endpoint automatically remediates the artifacts found in the queue, which requires remediation.
+Navigate back to the incident in the Microsoft Defender portal. The **Investigations** tab in the **Incident** page shows the automated investigations that were triggered by Microsoft Defender for Identity and Microsoft Defender for Endpoint. The screenshot below displays only the automated investigation triggered by Defender for Endpoint. By default, Defender for Endpoint automatically remediates the artifacts found in the queue, which requires remediation.
 
 :::image type="content" source="../../media/mtp/fig14.png" alt-text="An example of the automated investigations related to the incident" lightbox="../../media/mtp/fig14.png":::
 
@@ -320,7 +322,7 @@ From the **Incident** page, select **Manage incident**. Set the status to **Reso
 
 :::image type="content" source="../../media/mtp/fig16.png" alt-text="An example of the incidents page with the open Manage incident panel where you can click the switch to resolve incident" lightbox="../../media/mtp/fig16.png":::
 
-When the incident is resolved, it resolves all of the associated alerts in the Microsoft 365 Defender portal and the related portals.
+When the incident is resolved, it resolves all of the associated alerts in the Microsoft Defender portal and the related portals.
 
 This wraps up attack simulations for incident analysis, automated investigation, and incident resolution.
 

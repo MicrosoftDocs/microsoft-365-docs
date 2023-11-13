@@ -44,7 +44,7 @@ search.appverid: met150
 
 ## Step 1: Onboard devices to Microsoft Defender for Endpoint
 
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+1. Go to the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
 2. Choose **Settings** \> **Endpoints** \> **Onboarding** (under **Device management**).
 
@@ -145,7 +145,7 @@ To get help with uninstalling your non-Microsoft solution, contact their technic
 
 Now that you have onboarded to Defender for Endpoint, and you have uninstalled your former non-Microsoft solution, your next step is to make sure that Defender for Endpoint working correctly. 
 
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+1. Go to the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
 2. In the navigation pane, choose **Endpoints** > **Device inventory**. There, you're able to see protection status for devices.
 

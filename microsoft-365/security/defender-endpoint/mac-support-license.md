@@ -89,7 +89,7 @@ For scenarios where Microsoft Defender for Endpoint on macOS isn't up to date, y
 
 #### For not assigning a license to the user
 
-1. In the Microsoft 365 Defender portal (security.microsoft.com):
+1. In the Microsoft Defender portal (security.microsoft.com):
     1. Select **Settings**. The **Settings** screen appears.
     1. Select **Endpoints**.
        

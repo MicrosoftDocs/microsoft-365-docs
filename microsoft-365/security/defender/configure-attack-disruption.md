@@ -47,7 +47,7 @@ Then, after you're all set up, you can view and manage containment actions in In
 
 Whether automated investigations run, and whether remediation actions are taken automatically or only upon approval for your devices depend on certain settings, like your organization's device group policies. Review the configured automation level for your device group policies. You must be a global administrator or security administrator to perform the following procedure:
 
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+1. Go to the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
 2. Go to **Settings** \> **Endpoints** \> **Device groups** under **Permissions**.
 
@@ -57,7 +57,7 @@ Whether automated investigations run, and whether remediation actions are taken 
 
 Automatic attack disruption enables the exclusion of specific user accounts from automated containment actions. Excluded users won't be affected by automated actions triggered by attack disruption. You must be a global administrator or security administrator to perform the following procedure:
 
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+1. Go to the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
 2. Go to **Settings** \> **Identities** \> **Automated response exclusions**. Check the user list to exclude accounts.
 :::image type="content" source="../../media/automatic-attack-disruption/Fig2-exclude-specific-users.png" alt-text="Selecting user accounts for automated response exclusion" lightbox="../../media/automatic-attack-disruption/Fig2-exclude-specific-users.png":::

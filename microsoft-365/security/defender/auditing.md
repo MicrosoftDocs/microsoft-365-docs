@@ -47,8 +47,8 @@ As a tenant administrator, you can use Microsoft Purview to search the audit log
 | Action performed by Defender Experts | Workload | Record type |
 |--------------|-----|-----------|
 | Sign into customer tenant |  AzureActiveDirectory | AzureActiveDirectoryStsLogon |
-| Make changes to incidents in Microsoft 365 Defender portal      |  Microsoft365Defender |  MS365Dincident |
-|Make changes to alert suppression rules in Microsoft 365 Defender portal|Microsoft365Defender|MS365DSuppressionRule|
+| Make changes to incidents in Microsoft Defender portal      |  Microsoft365Defender |  MS365Dincident |
+|Make changes to alert suppression rules in Microsoft Defender portal|Microsoft365Defender|MS365DSuppressionRule|
 |Make changes to indicators in Microsoft Defender for Endpoint|MicrosoftDefenderForEndpoint|MSDEIndicatorsSettings|
 |Perform device remediation actions in Microsoft Defender for Endpoint|MicrosoftDefenderForEndpoint|MSDEResponseActions|
 

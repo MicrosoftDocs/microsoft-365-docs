@@ -83,9 +83,9 @@ Permissions to manages the security and system settings and to create and assign
 |Permission name|Level|Description|
 |---|---|---|
 |Authorization|Read / Manage|View or manage device groups, and custom and built-in roles.|
-|Core security settings|Read / Manage|View or manage core security settings for the Microsoft 365 Defender portal.|
-|Detection tuning| Manage |Manage tasks related to detections in the Microsoft 365 Defender portal including Custom detections, Alerts Tuning and Threat Indicators of compromise.|
-|System settings|Read / Manage|View or manage general systems settings for the Microsoft 365 Defender portal.|
+|Core security settings|Read / Manage|View or manage core security settings for the Microsoft Defender portal.|
+|Detection tuning| Manage |Manage tasks related to detections in the Microsoft Defender portal including Custom detections, Alerts Tuning and Threat Indicators of compromise.|
+|System settings|Read / Manage|View or manage general systems settings for the Microsoft Defender portal.|
 
 ## Next steps
 

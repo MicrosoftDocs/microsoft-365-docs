@@ -35,9 +35,9 @@ ms.date: 05/18/2023
 
 Incident management is critical to ensuring that incidents are named, assigned, and tagged to optimize time in your incident workflow and more quickly contain and address threats.
 
-You can manage incidents from **Incidents & alerts > Incidents** on the quick launch of the Microsoft 365 Defender portal ([security.microsoft.com](https://security.microsoft.com)). Here's an example.
+You can manage incidents from **Incidents & alerts > Incidents** on the quick launch of the Microsoft Defender portal ([security.microsoft.com](https://security.microsoft.com)). Here's an example.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents2.png" alt-text="The Incidents page in the Microsoft 365 Defender portal" lightbox="../../media/incidents-queue/incidents-ss-incidents2.png":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents2.png" alt-text="The Incidents page in the Microsoft Defender portal" lightbox="../../media/incidents-queue/incidents-ss-incidents2.png":::
 
 Here are the ways you can manage your incidents:
 
@@ -50,7 +50,7 @@ Here are the ways you can manage your incidents:
 
 You can manage incidents from the **Manage incident** pane for an incident. Here's an example.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage2.png" alt-text="The Manage incident pane in the Microsoft 365 Defender portal" lightbox="../../media/incidents-queue/incidents-ss-incidents-manage2.png":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage2.png" alt-text="The Manage incident pane in the Microsoft Defender portal" lightbox="../../media/incidents-queue/incidents-ss-incidents-manage2.png":::
 
 You can display this pane from the **Manage incident** link on the:
 

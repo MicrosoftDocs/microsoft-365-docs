@@ -44,7 +44,7 @@ A rule can be based on device name, domain, OS platform, internet facing status,
 
 The following steps guide you on how to create a new dynamic rule in Microsoft 365 Defender:
 
-1. Sign in to the [Microsoft 365 Defender portal](https://security.microsoft.com) as a user who can view and perform actions on all devices.
+1. Sign in to the [Microsoft Defender portal](https://security.microsoft.com) as a user who can view and perform actions on all devices.
 2. In the navigation pane, select **Settings** \> **Microsoft 365 Defender** \> **Asset Rule Management**.
 3. Select **Create a new rule**.
 4. Enter a **Rule name** and **Description***.
@@ -67,7 +67,7 @@ You can see the dynamic tags assigned in the Device Inventory view.
 
 To see tags on individual devices:
 
-1. Select **Devices** from the **Assets** navigation menu in the [Microsoft 365 Defender portal](https://security.microsoft.com).
+1. Select **Devices** from the **Assets** navigation menu in the [Microsoft Defender portal](https://security.microsoft.com).
 2. In the **Device Inventory** page, select the device name that you want to view.
 3. Select **Manage tags**.
 

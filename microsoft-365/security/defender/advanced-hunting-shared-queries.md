@@ -34,7 +34,7 @@ ms.date: 02/16/2021
 
 Under the Queries tab in advanced hunting, you can find the drop-down menus for **Shared queries**, **My queries**, and **Community queries**. You can select a downward-facing arrow to expand a menu.
 
-:::image type="content" source="../../media/advanced-hunting-shared-queries-1.png" alt-text="Shared queries, My queries, and Community queries in the Microsoft 365 Defender portal" lightbox="../../media/advanced-hunting-shared-queries-1.png":::
+:::image type="content" source="../../media/advanced-hunting-shared-queries-1.png" alt-text="Shared queries, My queries, and Community queries in the Microsoft Defender portal" lightbox="../../media/advanced-hunting-shared-queries-1.png":::
 
 ## Save, modify, and share a query
 You can save a new or existing query so that it is only accessible to you or shared with other users in your organization.
@@ -45,7 +45,7 @@ You can save a new or existing query so that it is only accessible to you or sha
 
 3. Enter a name for the query.
 
-   :::image type="content" source="../../media/shared-query-2.png" alt-text="The new query that is about to be saved in the Microsoft 365 Defender portal" lightbox="../../media/shared-query-2.png":::
+   :::image type="content" source="../../media/shared-query-2.png" alt-text="The new query that is about to be saved in the Microsoft Defender portal" lightbox="../../media/shared-query-2.png":::
 
 4. Select the folder where you'd like to save the query.
     - **Shared queries** — shared to all users your organization
@@ -57,7 +57,7 @@ You can save a new or existing query so that it is only accessible to you or sha
 
 1. Select the three dots to the right of a query you want to rename or delete.
 
-    :::image type="content" source="../../media/advanced-hunting-del-save-query.png" alt-text="Rename or delete a query in the Advanced Hunting page in the Microsoft 365 Defender portal" lightbox="../../media/advanced-hunting-del-save-query.png":::
+    :::image type="content" source="../../media/advanced-hunting-del-save-query.png" alt-text="Rename or delete a query in the Advanced Hunting page in the Microsoft Defender portal" lightbox="../../media/advanced-hunting-del-save-query.png":::
 
 2. Select **Delete** and confirm deletion. Or select **Rename** and provide a new name for the query.
 
@@ -71,7 +71,7 @@ Microsoft security researchers regularly share advanced hunting queries in a [de
 
 You can easily find these queries in the **Community queries** drop-down menu as well.
 
-:::image type="content" source="../../media/advanced-hunting-shared-queries-2.png" alt-text="Community queries organized by folder in the Microsoft 365 Defender portal" lightbox="../../media/advanced-hunting-shared-queries-2.png":::
+:::image type="content" source="../../media/advanced-hunting-shared-queries-2.png" alt-text="Community queries organized by folder in the Microsoft Defender portal" lightbox="../../media/advanced-hunting-shared-queries-2.png":::
 
 Community queries are grouped into folders like *Campaigns*, *Collection*, *Defense evasion*, and the like. Further information about the query is provided as in-line comments in the query itself.
 

@@ -45,9 +45,11 @@ This article describes how to manage Defender for Endpoint settings with Configu
 |**Enable Network Protection** to help prevent employees from using apps that malicious content on the Internet <br/><br/> *We recommend using [audit mode](/microsoft-365/security/defender-endpoint/evaluate-network-protection) at first for network protection in a test environment to see which apps would be blocked before rolling out.*|[Turn on network protection with Configuration Manager](/microsoft-365/security/defender-endpoint/enable-network-protection#microsoft-endpoint-configuration-manager)|
 |**Configure controlled folder access** to protect against ransomware <br/><br/> *Controlled folder access is also referred to as antiransomware protection.*|[Endpoint protection: Controlled folder access](/mem/intune/protect/endpoint-protection-windows-10#controlled-folder-access) <br/><br/> [Enable controlled folder access in Microsoft Endpoint Configuration Manage](/microsoft-365/security/defender-endpoint/enable-controlled-folders#microsoft-endpoint-configuration-manager)|
 
-## Configure your Microsoft 365 Defender portal
+<a name='configure-your-microsoft-365-defender-portal'></a>
 
-If you haven't already done so, configure your Microsoft 365 Defender portal to view alerts, configure threat protection features, and view detailed information about your organization's overall security posture. See While the attack was detected and stopped, alerts, such as an "initial access alert," were triggered and appeared in the [Microsoft 365 Defender portal](/microsoft-365/security/defender/microsoft-365-defender). You can also configure whether and what features end users can see in the Microsoft 365 Defender portal.
+## Configure your Microsoft Defender portal
+
+If you haven't already done so, configure your Microsoft Defender portal to view alerts, configure threat protection features, and view detailed information about your organization's overall security posture. See While the attack was detected and stopped, alerts, such as an "initial access alert," were triggered and appeared in the [Microsoft Defender portal](/microsoft-365/security/defender/microsoft-365-defender). You can also configure whether and what features end users can see in the Microsoft Defender portal.
 
 - [Overview of Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/use)
 - [Endpoint protection: Microsoft 365 Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)

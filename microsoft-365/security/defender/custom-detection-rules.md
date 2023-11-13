@@ -37,10 +37,10 @@ Custom detection rules are rules you can design and tweak using [advanced huntin
 
 To manage custom detections, you need to be assigned one of these roles:
 
-- **Security settings (manage)**—Users with this [Microsoft 365 Defender permission](/microsoft-365/security/defender/manage-rbac) can manage security settings in the Microsoft 365 Defender portal.
-- **Security administrator**—Users with this [Microsoft Entra role](/azure/active-directory/roles/permissions-reference#security-administrator) can manage security settings in the Microsoft 365 Defender portal and other portals and services.
+- **Security settings (manage)**—Users with this [Microsoft 365 Defender permission](/microsoft-365/security/defender/manage-rbac) can manage security settings in the Microsoft Defender portal.
+- **Security administrator**—Users with this [Microsoft Entra role](/azure/active-directory/roles/permissions-reference#security-administrator) can manage security settings in the Microsoft Defender portal and other portals and services.
 
-- **Security operator**—Users with this [Microsoft Entra role](/azure/active-directory/roles/permissions-reference#security-operator) can manage alerts and have global read-only access to security-related features, including all information in the Microsoft 365 Defender portal. This role is sufficient for managing custom detections only if role-based access control (RBAC) is turned off in Microsoft Defender for Endpoint. If you have RBAC configured, you also need the **manage security settings** permission for Defender for Endpoint.
+- **Security operator**—Users with this [Microsoft Entra role](/azure/active-directory/roles/permissions-reference#security-operator) can manage alerts and have global read-only access to security-related features, including all information in the Microsoft Defender portal. This role is sufficient for managing custom detections only if role-based access control (RBAC) is turned off in Microsoft Defender for Endpoint. If you have RBAC configured, you also need the **manage security settings** permission for Defender for Endpoint.
 
 You can also manage custom detections that apply to data from specific Microsoft 365 Defender solutions if you have permissions for them. If you only have manage permissions for Microsoft Defender for Office 365, for instance, you can create custom detections using `Email` tables but not `Identity` tables.
 
@@ -62,7 +62,7 @@ To manage required permissions, a **global administrator** can:
 
 ### 1. Prepare the query
 
-In the Microsoft 365 Defender portal, go to **Advanced hunting** and select an existing query or create a new query. When using a new query, run the query to identify errors and understand possible results.
+In the Microsoft Defender portal, go to **Advanced hunting** and select an existing query or create a new query. When using a new query, run the query to identify errors and understand possible results.
 
 > [!IMPORTANT]
 > To prevent the service from returning too many alerts, each rule is limited to generating only 100 alerts whenever it runs. Before creating a rule, tweak your query to avoid alerting for normal, day-to-day activity.
@@ -195,7 +195,7 @@ You can select only one column for each entity type (mailbox, user, or device). 
 
 Your custom detection rule can automatically take actions on devices, files, users, or emails that are returned by the query.
 
-:::image type="content" source="../../media/ah-custom-actions.png" alt-text="Screenshot that shows actions for custom detections in the Microsoft 365 Defender portal." lightbox="../../media/ah-custom-actions.png":::
+:::image type="content" source="../../media/ah-custom-actions.png" alt-text="Screenshot that shows actions for custom detections in the Microsoft Defender portal." lightbox="../../media/ah-custom-actions.png":::
 
 #### Actions on devices
 
@@ -279,7 +279,7 @@ To view all existing custom detection rules, navigate to **Hunting** > **Custom 
 
 To view comprehensive information about a custom detection rule, go to **Hunting** > **Custom detection rules** and then select the name of rule. You can then view general information about the rule, including information, its run status, and scope. The page also provides the list of triggered alerts and actions.
 
-:::image type="content" source="../../media/custom-detect-rules-view.png" alt-text="The Custom detection rule details page in the Microsoft 365 Defender portal" lightbox="../../media/custom-detect-rules-view.png":::
+:::image type="content" source="../../media/custom-detect-rules-view.png" alt-text="The Custom detection rule details page in the Microsoft Defender portal" lightbox="../../media/custom-detect-rules-view.png":::
 
 You can also take the following actions on the rule from this page:
 

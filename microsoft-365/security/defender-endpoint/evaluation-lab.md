@@ -158,7 +158,7 @@ Automated investigation settings will be dependent on tenant settings. It will b
 Add a domain controller to run complex scenarios such as lateral movement and multistage attacks across multiple devices.
 
 > [!NOTE]
-> Domain support is only available in the Microsoft 365 Defender portal (security.microsoft.com).
+> Domain support is only available in the Microsoft Defender portal (security.microsoft.com).
 
 1. From the dashboard, select **Add device**.
 
@@ -308,4 +308,3 @@ Let us know what you think, by selecting **Provide feedback**.
 
 :::image type="content" source="images/send-us-feedback-eval-lab.png" alt-text="The feedback page" lightbox="images/send-us-feedback-eval-lab.png":::
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]
-

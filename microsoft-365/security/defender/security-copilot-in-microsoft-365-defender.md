@@ -40,7 +40,7 @@ This article provides an overview for users of the Security Copilot embedded exp
 
 ## Access Security Copilot in Microsoft 365 Defender
 
-To ensure that you have access to Security Copilot, see the [Security Copilot purchase and licensing information](/security-copilot/faq-security-copilot). Once you have access to Security Copilot, the key capabilities discussed below become accessible in the Microsoft 365 Defender portal.
+To ensure that you have access to Security Copilot, see the [Security Copilot purchase and licensing information](/security-copilot/faq-security-copilot). Once you have access to Security Copilot, the key capabilities discussed below become accessible in the Microsoft Defender portal.
 
 ## Key features
 

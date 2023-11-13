@@ -659,7 +659,7 @@ Alternatively, you can download [fulldisk.mobileconfig](https://github.com/micro
 
 ## Step 8: Configure Network Extension
 
-As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on macOS inspects socket traffic and reports this information to the Microsoft 365 Defender portal. The following policy allows the network extension to perform this functionality.
+As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on macOS inspects socket traffic and reports this information to the Microsoft Defender portal. The following policy allows the network extension to perform this functionality.
 
 These steps are applicable on macOS 11 (Big Sur) or later.
 

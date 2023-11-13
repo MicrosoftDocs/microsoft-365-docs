@@ -82,9 +82,9 @@ You can also get product updates and important notifications through the [messag
 
 ## March 2023 
 
-- (Preview) Microsoft Defender Threat Intelligence (Defender TI) is now available in the Microsoft 365 Defender portal.
+- (Preview) Microsoft Defender Threat Intelligence (Defender TI) is now available in the Microsoft Defender portal.
 
-This change introduces a new navigation menu within the Microsoft 365 Defender portal named **Threat Intelligence**. [Learn more](defender-threat-intelligence.md)
+This change introduces a new navigation menu within the Microsoft Defender portal named **Threat Intelligence**. [Learn more](defender-threat-intelligence.md)
 - (Preview) Complete device reports for the [`DeviceInfo` table](advanced-hunting-deviceinfo-table.md) in advanced hunting are now sent *every hour* (instead of the previous daily cadence). In addition, complete device reports are also sent whenever there is a change to any previous report. New columns were also added to the `DeviceInfo` table, along with several improvements to existing data in `DeviceInfo` and [DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md) tables.
 - (Preview) Near real-time custom detection is now available for public preview in advanced hunting custom detections. There is a new [Continuous (NRT)](custom-detection-rules.md) frequency, which checks data from events as they are collected and processed in near real-time.
 - (Preview) [Behaviors in Microsoft Defender for Cloud Apps](/defender-cloud-apps/behaviors) is now available for public preview. Preview customers can now also hunt for behaviors in advanced hunting using the [BehaviorEntities](advanced-hunting-behaviorentities-table.md) and [BehaviorInfo](advanced-hunting-behaviorinfo-table.md) tables.
@@ -128,7 +128,7 @@ This change introduces a new navigation menu within the Microsoft 365 Defender p
 
 - (Preview) The [DeviceTvmInfoGathering](advanced-hunting-devicetvminfogathering-table.md) and [DeviceTvmInfoGatheringKB](advanced-hunting-devicetvminfogatheringkb-table.md) tables are now available in the advanced hunting schema. Use these tables to hunt through assessment events in Defender Vulnerability Management including the status of various configurations and attack surface area states of devices.
 
-- The newly introduced Automated investigation & response card in the Microsoft 365 Defender portal provides an overview on pending remediation actions.
+- The newly introduced Automated investigation & response card in the Microsoft Defender portal provides an overview on pending remediation actions.
 
 The security operations team can view all actions pending approval, and the stipulated time to approve those actions in the card itself. The security team can quickly navigate to the Action center and take appropriate remediation actions. The Automated investigation & response card also has a link to the Full Automation page. This enables the security operations team to effectively manage alerts and complete remediation actions in a timely manner.
 
@@ -207,11 +207,11 @@ The security operations team can view all actions pending approval, and the stip
 
 ## May 2021
 
-- [New alert page in the Microsoft 365 Defender portal](https://techcommunity.microsoft.com/t5/microsoft-365-defender/easily-find-anomalies-in-incidents-and-alerts/ba-p/2339243)
+- [New alert page in the Microsoft Defender portal](https://techcommunity.microsoft.com/t5/microsoft-365-defender/easily-find-anomalies-in-incidents-and-alerts/ba-p/2339243)
 
   Provides enhanced information for the context into an attack. You can see which other triggered alert caused the current alert and all the affected entities and activities involved in the attack, including files, users and mailboxes. See [Investigate alerts](/microsoft-365/security/defender/investigate-alerts) for more information.
 
-- [Trend graph for incidents and alerts in the Microsoft 365 Defender portal](https://techcommunity.microsoft.com/t5/microsoft-365-defender/new-alert-page-for-microsoft-365-defender-incident-detections/ba-p/2350425)
+- [Trend graph for incidents and alerts in the Microsoft Defender portal](https://techcommunity.microsoft.com/t5/microsoft-365-defender/new-alert-page-for-microsoft-365-defender-incident-detections/ba-p/2350425)
 
   Determine if there are several alerts for a single incident or that your organization is under attack with several different incidents. See [Prioritize incidents](/microsoft-365/security/defender/incident-queue) for more information.
 

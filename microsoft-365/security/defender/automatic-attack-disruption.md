@@ -78,7 +78,7 @@ For more information, see [remediation actions](m365d-remediation-actions.md) in
 
 The Microsoft 365 Defender incident page will reflect the automatic attack disruption actions through the attack story and the status indicated by a yellow bar (Figure 1). The incident will show a dedicated disruption tag, highlight the status of the assets contained in the incident graph, and add an action to the Action Center.
 
-:::image type="content" source="../../media/automatic-attack-disruption/Fig1-auto-attack-disruption.png" alt-text="Selecting an incident in the Microsoft 365 Defender portal" lightbox="../../media/automatic-attack-disruption/Fig1-auto-attack-disruption.png":::
+:::image type="content" source="../../media/automatic-attack-disruption/Fig1-auto-attack-disruption.png" alt-text="Selecting an incident in the Microsoft Defender portal" lightbox="../../media/automatic-attack-disruption/Fig1-auto-attack-disruption.png":::
 *Figure 1. Incident view showing the yellow bar where automatic attack disruption took action*
 
 The Microsoft 365 Defender user experience now includes additional visual cues to ensure visibility of these automatic actions. You will find them across the following experiences:

@@ -1,5 +1,5 @@
 ---
-title: Use role-based access control to grant fine-grained access to Microsoft 365 Defender portal
+title: Use role-based access control to grant fine-grained access to Microsoft Defender portal
 description: Create roles and groups within your security operations to grant access to the portal.
 keywords: rbac, role, based, access, control, groups, control, tier, aad
 ms.service: microsoft-365-security
@@ -70,12 +70,12 @@ Before using RBAC, it's important that you understand the roles that can grant p
 > [!WARNING]
 > Before enabling the feature, it's important that you have a Global Administrator role or Security Administrator role in Microsoft Entra ID and that you have your Microsoft Entra groups ready to reduce the risk of being locked out of the portal.
 
-When you first log in to the Microsoft 365 Defender portal, you're granted either full access or read only access. Full access rights are granted to users with Security Administrator or Global Administrator roles in Microsoft Entra ID. Read only access is granted to users with a Security Reader role in Microsoft Entra ID.
+When you first log in to the Microsoft Defender portal, you're granted either full access or read only access. Full access rights are granted to users with Security Administrator or Global Administrator roles in Microsoft Entra ID. Read only access is granted to users with a Security Reader role in Microsoft Entra ID.
 
 Someone with a Defender for Endpoint Global administrator role has unrestricted access to all devices, regardless of their device group association and the Microsoft Entra user groups assignments.
 
 > [!WARNING]
-> Initially, only those with Microsoft Entra Global Administrator or Security Administrator rights will be able to create and assign roles in the Microsoft 365 Defender portal, therefore, having the right groups ready in Microsoft Entra ID is important.
+> Initially, only those with Microsoft Entra Global Administrator or Security Administrator rights will be able to create and assign roles in the Microsoft Defender portal, therefore, having the right groups ready in Microsoft Entra ID is important.
 >
 > **Turning on role-based access control will cause users with read-only permissions (for example, users assigned to Microsoft Entra Security reader role) to lose access until they are assigned to a role.**
 >

@@ -1,6 +1,6 @@
 ---
 title: What's new in Microsoft Secure Score
-description: Describes what new changes have happened to Microsoft Secure Score in the Microsoft 365 Defender portal.
+description: Describes what new changes have happened to Microsoft Secure Score in the Microsoft Defender portal.
 ms.localizationpriority: medium
 f1.keywords:
   - NOCSH
@@ -28,7 +28,7 @@ To make Microsoft Secure Score a better representative of your security posture,
 
 The more improvement actions you take, the higher your Secure Score will be. For more information, see [Microsoft Secure Score](microsoft-secure-score.md).
 
-Microsoft Secure Score can be found at <https://security.microsoft.com/securescore> in the [Microsoft 365 Defender portal](microsoft-365-defender-portal.md).
+Microsoft Secure Score can be found at <https://security.microsoft.com/securescore> in the [Microsoft Defender portal](microsoft-365-defender-portal.md).
 
 ## August 2023
 

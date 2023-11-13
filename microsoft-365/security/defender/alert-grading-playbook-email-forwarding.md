@@ -84,7 +84,7 @@ While investigating this alert, you must determine:
 
 ### Is the user account and its mailbox compromised?
 
-By looking at sender's past behavior and recent activities, you should be able to determine whether the user's account should be considered compromised or not. You can see the details of alerts raised from the user's page in the Microsoft 365 Defender portal.
+By looking at sender's past behavior and recent activities, you should be able to determine whether the user's account should be considered compromised or not. You can see the details of alerts raised from the user's page in the Microsoft Defender portal.
 
 You can also analyze these additional activities for the affected mailbox:
 
@@ -110,7 +110,7 @@ Here is the workflow to identify suspicious email forwarding activities.
 
 :::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-workflow.png" alt-text="Alert investigation workflow for email forwarding" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-workflow.png":::
 
-You can investigate an email forwarding alert using Threat Explorer or with advanced hunting queries, based on the availability of features in the Microsoft 365 Defender portal. You may choose to follow the entire process or a part of the process as needed.
+You can investigate an email forwarding alert using Threat Explorer or with advanced hunting queries, based on the availability of features in the Microsoft Defender portal. You may choose to follow the entire process or a part of the process as needed.
 
 ## Using Threat Explorer
 

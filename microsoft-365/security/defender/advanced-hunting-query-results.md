@@ -69,7 +69,7 @@ AlertInfo
 
 When rendering the results, a column chart displays each severity value as a separate column:
 
-:::image type="content" source="../../media/advanced-hunting-column-chart-new.png" alt-text="An example of a chart that displays advanced hunting results in the Microsoft 365 Defender portal" lightbox="../../media/advanced-hunting-column-chart-new.png":::
+:::image type="content" source="../../media/advanced-hunting-column-chart-new.png" alt-text="An example of a chart that displays advanced hunting results in the Microsoft Defender portal" lightbox="../../media/advanced-hunting-column-chart-new.png":::
 *Query results for alerts by severity displayed as a column chart*
 
 #### Phishing emails across top ten sender domains
@@ -85,7 +85,7 @@ EmailEvents
 
 Use the pie chart view to effectively show distribution across the top domains:
 
-:::image type="content" source="../../media/advanced-hunting-pie-chart-new.png" alt-text="The pie chart that displays advanced hunting results in the Microsoft 365 Defender portal" lightbox="../../media/advanced-hunting-pie-chart-new.png":::
+:::image type="content" source="../../media/advanced-hunting-pie-chart-new.png" alt-text="The pie chart that displays advanced hunting results in the Microsoft Defender portal" lightbox="../../media/advanced-hunting-pie-chart-new.png":::
 *Pie chart that shows distribution of phishing emails across top sender domains*
 
 #### File activities over time
@@ -100,7 +100,7 @@ CloudAppEvents
 
 The line chart below clearly highlights time periods with more activity involving `invoice.doc`:
 
-:::image type="content" source="../../media/line-chart-a.png" alt-text="The line chart that displays advanced hunting results in the Microsoft 365 Defender portal" lightbox="../../media/line-chart-a.png":::
+:::image type="content" source="../../media/line-chart-a.png" alt-text="The line chart that displays advanced hunting results in the Microsoft Defender portal" lightbox="../../media/line-chart-a.png":::
 *Line chart showing the number of events involving a file over time*
 
 ## Export tables and charts
@@ -117,7 +117,7 @@ To quickly inspect a record in your query results, select the corresponding row 
 - **Assets**—Summarized view of the main assets (mailboxes, devices, and users) found in the record, enriched with available information, such as risk and exposure levels
 - **All details**—All the values from the columns in the record
 
-:::image type="content" source="../../media/results-inspect-record.png" alt-text="The selected record with panel for inspecting the record in the Microsoft 365 Defender portal" lightbox="../../media/results-inspect-record.png":::
+:::image type="content" source="../../media/results-inspect-record.png" alt-text="The selected record with panel for inspecting the record in the Microsoft Defender portal" lightbox="../../media/results-inspect-record.png":::
 
 To view more information about a specific entity in your query results, such as a machine, file, user, IP address, or URL, select the entity identifier to open a detailed profile page for that entity.
 
@@ -129,7 +129,7 @@ Select the three dots to the right of any column in the **Inspect record** panel
 - Exclude the selected value from the query (`!=`)
 - Get more advanced operators for adding the value to your query, such as `contains`, `starts with`, and `ends with`
 
-:::image type="content" source="../../media/work-with-query-tweak-query.png" alt-text="The Action Type pane on the Inspect record page in the Microsoft 365 Defender portal " lightbox="../../media/work-with-query-tweak-query.png":::
+:::image type="content" source="../../media/work-with-query-tweak-query.png" alt-text="The Action Type pane on the Inspect record page in the Microsoft Defender portal " lightbox="../../media/work-with-query-tweak-query.png":::
 
 > [!NOTE]
 > Some tables in this article might not be available at Microsoft Defender for Endpoint. [Turn on Microsoft 365 Defender](m365d-enable.md) to hunt for threats using more data sources. You can move your advanced hunting workflows from Microsoft Defender for Endpoint to Microsoft 365 Defender by following the steps in [Migrate advanced hunting queries from Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md).

@@ -90,7 +90,7 @@ Microsoft 365 Defender is made up of these security technologies, operating in t
 
 The diagram below illustrates high-level architecture for key Microsoft 365 Defender components and integrations. *Detailed* architecture for each Defender component, and use-case scenarios, are given throughout this series of articles.
 
-:::image type="content" source="../../media/defender/m365-defender-eval-architecture.png" alt-text="A high-level architecture of the Microsoft 365 Defender portal" lightbox="../../media/defender/m365-defender-eval-architecture.png":::
+:::image type="content" source="../../media/defender/m365-defender-eval-architecture.png" alt-text="A high-level architecture of the Microsoft Defender portal" lightbox="../../media/defender/m365-defender-eval-architecture.png":::
 
 In this illustration:
 
@@ -113,7 +113,7 @@ Additional optional architecture components not included in this illustration:
 
 Microsoft recommends enabling the components of Microsoft 365 in the order illustrated:
 
-:::image type="content" source="../../media/defender/m365-defender-eval-process.png" alt-text="A high-level evaluation process in the Microsoft 365 Defender portal" lightbox="../../media/defender/m365-defender-eval-process.png":::
+:::image type="content" source="../../media/defender/m365-defender-eval-process.png" alt-text="A high-level evaluation process in the Microsoft Defender portal" lightbox="../../media/defender/m365-defender-eval-process.png":::
 
 The following table describes this illustration.
 

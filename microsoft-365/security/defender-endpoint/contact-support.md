@@ -55,9 +55,9 @@ Accessing the new support widget can be done in one of two ways:
 
 1. Clicking on the question mark on the top right of the portal and then clicking on "Microsoft support":
 
-   :::image type="content" source="../../media/contactsupport.png" alt-text="The Microsoft support icon in the Microsoft 365 Defender portal" lightbox="../../media/contactsupport.png":::
+   :::image type="content" source="../../media/contactsupport.png" alt-text="The Microsoft support icon in the Microsoft Defender portal" lightbox="../../media/contactsupport.png":::
 
-2. Clicking on the **Need help?**  button in the bottom right of the Microsoft 365 Defender portal:
+2. Clicking on the **Need help?**  button in the bottom right of the Microsoft Defender portal:
 
    :::image type="content" source="images/need-help-option.png" alt-text="The Need help button" lightbox="images/need-help-option.png":::
 

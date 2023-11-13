@@ -1,5 +1,5 @@
 ---
-title: Manage access to Microsoft 365 Defender data in the Microsoft 365 Defender portal
+title: Manage access to Microsoft 365 Defender data in the Microsoft Defender portal
 description: Learn how to manage permissions to data in Microsoft 365 Defender
 keywords: access, permissions, Microsoft 365 Defender, M365, security, Defender for Cloud Apps, Microsoft Defender for Endpoint, scope, scoping, RBAC
 search.product: eADQiWindows 10XVcnh
@@ -49,7 +49,7 @@ Accounts assigned the following **Global Microsoft Entra roles** can access Micr
 - Global Reader
 - Security Reader
 
-To review accounts with these roles, [view Permissions in the Microsoft 365 Defender portal](https://security.microsoft.com/permissions).
+To review accounts with these roles, [view Permissions in the Microsoft Defender portal](https://security.microsoft.com/permissions).
 
 **Custom role** access is a capability in Microsoft 365 Defender that allows you to manage access to specific data, tasks, and capabilities in Microsoft 365 Defender. Custom roles offer more control than global Microsoft Entra roles, providing users only the access they need with the least-permissive roles necessary.  Custom roles can be created in addition to global Microsoft Entra roles. [Learn more about custom roles](custom-roles.md).
 

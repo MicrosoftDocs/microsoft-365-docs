@@ -1,6 +1,6 @@
 ---
 title: Microsoft Secure Score
-description: Describes Microsoft Secure Score in the Microsoft 365 Defender portal, how to improve your security posture, and what security admins can expect.
+description: Describes Microsoft Secure Score in the Microsoft Defender portal, how to improve your security posture, and what security admins can expect.
 ms.service: microsoft-365-security
 ms.subservice: m365d
 ms.localizationpriority: medium
@@ -25,9 +25,9 @@ ms.date: 08/03/2023
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft Secure Score is a measurement of an organization's security posture, with a higher number indicating more recommended actions taken. It can be found at [Microsoft Secure Score](https://security.microsoft.com/securescore) in the [Microsoft 365 Defender portal](microsoft-365-defender-portal.md).
+Microsoft Secure Score is a measurement of an organization's security posture, with a higher number indicating more recommended actions taken. It can be found at [Microsoft Secure Score](https://security.microsoft.com/securescore) in the [Microsoft Defender portal](microsoft-365-defender-portal.md).
 
-Following the Secure Score recommendations can protect your organization from threats. From a centralized dashboard in the Microsoft 365 Defender portal, organizations can monitor and work on the security of their Microsoft 365 identities, apps, and devices.
+Following the Secure Score recommendations can protect your organization from threats. From a centralized dashboard in the Microsoft Defender portal, organizations can monitor and work on the security of their Microsoft 365 identities, apps, and devices.
 
 Secure Score helps organizations:
 
@@ -40,7 +40,7 @@ Watch this video for a quick overview of Secure score.
 
 Organizations gain access to robust visualizations of metrics and trends, integration with other Microsoft products, score comparison with similar organizations, and much more. The score can also reflect when third-party solutions have addressed recommended actions.
 
-:::image type="content" source="../../media/secure-score/secure-score-home-page.png" alt-text="The Microsoft Secure Score homepage in the Microsoft 365 Defender portal" lightbox="../../media/secure-score/secure-score-home-page.png":::
+:::image type="content" source="../../media/secure-score/secure-score-home-page.png" alt-text="The Microsoft Secure Score homepage in the Microsoft Defender portal" lightbox="../../media/secure-score/secure-score-home-page.png":::
 
 > [!NOTE]
 > Currently, the Microsoft Entra related Microsoft Secure Score recommendations are not available for customer tenants registered in the following Microsoft Entra regions:
@@ -124,7 +124,7 @@ You can also manage user permissions to access Secure Score data from additional
 To start using Microsoft 365 Defender Unified RBAC to manage your Secure Score permissions, see [Microsoft 365 Defender Unified role-based access control(RBAC)](manage-rbac.md).
 
 > [!NOTE]
-> Currently, the model is only supported in the Microsoft 365 Defender portal. If you want to use GraphAPI (for example, for internal dashboards or Defender for Identity Secure Score) you should continue to use Microsoft Entra roles. Support GraphAPI is planned at a later date.
+> Currently, the model is only supported in the Microsoft Defender portal. If you want to use GraphAPI (for example, for internal dashboards or Defender for Identity Secure Score) you should continue to use Microsoft Entra roles. Support GraphAPI is planned at a later date.
 
 <a name='azure-active-directory-global-roles-permissions'></a>
 

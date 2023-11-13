@@ -143,7 +143,7 @@ To define a custom indicator, follow these steps:
 
 ### Dispute categories
 
-If you encounter a domain that has been incorrectly categorized, you can dispute the category directly from the Microsoft 365 Defender portal.
+If you encounter a domain that has been incorrectly categorized, you can dispute the category directly from the Microsoft Defender portal.
 
 To dispute the category of a domain, navigate to **Reports** \> **Web protection** \> **Web Content Filtering Details** \> **Domains**. On the domains tab of the Web Content Filtering reports, you will see an ellipsis beside each of the domains. Hover over this ellipsis and select **Dispute Category**.
 

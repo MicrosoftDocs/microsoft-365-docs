@@ -72,7 +72,7 @@ Submitting files for analysis helps reduce false positives and false negatives f
 
 ## Suppressing alerts
 
-If you're getting alerts in the Microsoft 365 Defender portal for tools or processes that you know aren't actually a threat, you can suppress those alerts. To suppress an alert, you create a suppression rule, and specify what actions to take for that on other, identical alerts. You can create suppression rules for a specific alert on a single device, or for all alerts that have the same title across your organization.
+If you're getting alerts in the Microsoft Defender portal for tools or processes that you know aren't actually a threat, you can suppress those alerts. To suppress an alert, you create a suppression rule, and specify what actions to take for that on other, identical alerts. You can create suppression rules for a specific alert on a single device, or for all alerts that have the same title across your organization.
 
 To learn more, see the following articles:
 
@@ -166,7 +166,7 @@ You can define [indicators](manage-indicators.md) with specific actions for enti
 
 - **Allow** – Defender for Endpoint won't block files, IP addresses, URLs/domains, or certificates that have Allow indicators. (*Use this action with caution.*)
 
-- **Audit** – Files, IP addresses, and URLs/domains with Audit indicators are monitored, and when they're accessed by users, informational alerts are generated in the Microsoft 365 Defender portal.
+- **Audit** – Files, IP addresses, and URLs/domains with Audit indicators are monitored, and when they're accessed by users, informational alerts are generated in the Microsoft Defender portal.
 
 - **Block and Remediate** – Files or certificates with Block and Remediate indicators are blocked and quarantined when detected.
 

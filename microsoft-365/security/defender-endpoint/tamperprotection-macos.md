@@ -36,7 +36,7 @@ ms.date: 03/24/2023
 Tamper protection in macOS helps prevent unwanted changes to security settings from being made by unauthorized users. Tamper protection helps prevent unauthorized removal of Microsoft Defender for Endpoint on macOS. This capability also helps important security files, processes, and configuration settings from being tampered.
 
 > [!IMPORTANT]
-> Starting March of 2023, Microsoft Defender for Endpoint on macOS will start respecting the selection for tamper protection applied via the global tamper protection switch under advanced settings in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). You can choose to enforce (block/audit/disable) your own macOS tamper protection settings by using a Mobile Device Management (MDM) solution such as Intune or JAMF (recommended). If the tamper protection setting was not enforced via MDM, a local administrator can continue to manually change the setting with the following command: `sudo mdatp config tamper-protection enforcement-level --value (chosen mode)`.
+> Starting March of 2023, Microsoft Defender for Endpoint on macOS will start respecting the selection for tamper protection applied via the global tamper protection switch under advanced settings in the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). You can choose to enforce (block/audit/disable) your own macOS tamper protection settings by using a Mobile Device Management (MDM) solution such as Intune or JAMF (recommended). If the tamper protection setting was not enforced via MDM, a local administrator can continue to manually change the setting with the following command: `sudo mdatp config tamper-protection enforcement-level --value (chosen mode)`.
 
 You can set Tamper Protection in the following modes:
 
@@ -280,9 +280,9 @@ You can verify that tamper protection is on through various ways.
 
 ### Verify block mode
 
-Tampering alert is raised in the Microsoft 365 Defender portal
+Tampering alert is raised in the Microsoft Defender portal
 
-:::image type="content" source="images/tampering-sensor-portal.png" alt-text="Screenshot of tampering alert raised in the Microsoft 365 Defender portal." lightbox="images/tampering-sensor-portal.png":::
+:::image type="content" source="images/tampering-sensor-portal.png" alt-text="Screenshot of tampering alert raised in the Microsoft Defender portal." lightbox="images/tampering-sensor-portal.png":::
 
 ### Verify block mode and audit modes
 

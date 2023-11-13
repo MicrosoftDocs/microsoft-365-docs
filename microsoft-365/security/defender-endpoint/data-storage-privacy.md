@@ -68,7 +68,7 @@ Defender for Endpoint operates in the Microsoft Azure data centers in the Europe
 
 Customer data in pseudonymized form may also be stored in the central storage and processing systems in the United States.
 
-Select **Need help?** in the Microsoft 365 Defender portal to contact Microsoft support about provisioning Microsoft 365 Defender in a different data center location.
+Select **Need help?** in the Microsoft Defender portal to contact Microsoft support about provisioning Microsoft 365 Defender in a different data center location.
 
 ## Data sharing for Microsoft Defender for Endpoint
 

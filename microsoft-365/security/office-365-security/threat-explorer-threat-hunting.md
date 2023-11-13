@@ -12,7 +12,7 @@ ms.localizationpriority: medium
 ms.collection:
   - m365-security
   - tier1
-description: Use Threat Explorer or Real-time detections in the Microsoft 365 Defender portal to investigate and respond to threats efficiently.
+description: Use Threat Explorer or Real-time detections in the Microsoft Defender portal to investigate and respond to threats efficiently.
 ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
@@ -29,7 +29,7 @@ appliesto:
 
 If your organization has [Microsoft Defender for Office 365](defender-for-office-365.md), and you have the [permissions](#required-licenses-and-permissions), you can use **Explorer** or **Real-time detections** to detect and remediate threats.
 
-In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration**, and then choose **Explorer** or **Real-time detections**. To go directly to the page, use <https://security.microsoft.com/threatexplorer> or <https://security.microsoft.com/realtimereports>.
+In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration**, and then choose **Explorer** or **Real-time detections**. To go directly to the page, use <https://security.microsoft.com/threatexplorer> or <https://security.microsoft.com/realtimereports>.
 
 With these tools, you can:
 
@@ -120,7 +120,7 @@ You must have [Microsoft Defender for Office 365](defender-for-office-365.md) to
 
 To view and use Explorer or Real-time detections, you must have the following permissions:
 
-- In the Microsoft 365 Defender portal:
+- In the Microsoft Defender portal:
   - Organization Management
   - Security Administrator (this can be assigned in the Microsoft Entra admin center (<https://aad.portal.azure.com>)
   - Security Reader
@@ -132,7 +132,7 @@ To view and use Explorer or Real-time detections, you must have the following pe
 
 To learn more about roles and permissions, see the following resources:
 
-- [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md)
+- [Permissions in the Microsoft Defender portal](mdo-portal-permissions.md)
 - [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo)
 - [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
 

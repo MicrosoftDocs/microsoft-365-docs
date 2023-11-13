@@ -16,7 +16,7 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
   - m365-security
   - tier1
-description: Use Explorer and Real-time detections in the Microsoft 365 Defender portal to investigate and respond to threats efficiently.
+description: Use Explorer and Real-time detections in the Microsoft Defender portal to investigate and respond to threats efficiently.
 ms.custom:
 - seo-marvel-apr2020
 ms.subservice: mdo
@@ -308,7 +308,7 @@ To review phish messages and search for impersonated users or domains, use the [
 
 This example uses Threat Explorer.
 
-1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), choose **Threat management** > **Explorer** (or **Real-time detections**).
+1. In the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), choose **Threat management** > **Explorer** (or **Real-time detections**).
 
 2. In the View menu, choose **Phish**.
 
@@ -402,7 +402,7 @@ Follow this path to get to the same location in the Real-time detections report:
 
 Suppose you want to see malware detected in email sorted by Microsoft 365 technology. To do this, use the [Malware](threat-explorer-views.md#malware) view of Explorer (or Real-time detections).
 
-1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), choose **Threat management** \> **Explorer** (or **Real-time detections**). (This example uses Explorer.)
+1. In the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), choose **Threat management** \> **Explorer** (or **Real-time detections**). (This example uses Explorer.)
 
 2. In the **View** menu, choose **Malware**.
 
@@ -429,7 +429,7 @@ Suppose that you want to see phishing attempts through URLs in email, including 
 
 To review phish URLs in messages and clicks on URLs in phish messages, use the [**Phish**](threat-explorer-views.md#phish) view of Explorer or Real-time detections.
 
-1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), choose **Threat management** \> **Explorer** (or **Real-time detections**). (This example uses Explorer.)
+1. In the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), choose **Threat management** \> **Explorer** (or **Real-time detections**). (This example uses Explorer.)
 
 2. In the **View** menu, choose **Email** \> **Phish**.
 
@@ -476,7 +476,7 @@ Within the Email or URL flyouts, Top Clicks as well as within our filtering expe
 
 Suppose that you want to see email messages that users in your organization reported as *Junk*, *Not Junk*, or *Phishing* through the [Microsoft Report Message or Report Phishing add-ins](submissions-users-report-message-add-in-configure.md), use the [**All email**](threat-explorer-views.md#all-email) view of Explorer (or Real-time detections).
 
-1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), choose **Threat management** \> **Explorer** (or **Real-time detections**). (This example uses Explorer.)
+1. In the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), choose **Threat management** \> **Explorer** (or **Real-time detections**). (This example uses Explorer.)
 
 2. In the **View** menu, choose **Email** \> **Submissions**.
 
@@ -519,7 +519,7 @@ You must have [Microsoft Defender for Office 365](defender-for-office-365.md) to
 
 To view and use Explorer or Real-time detections, you must have appropriate permissions, such as those granted to a security administrator or security reader.
 
-- For the Microsoft 365 Defender portal, you must have one of the following roles assigned:
+- For the Microsoft Defender portal, you must have one of the following roles assigned:
 
   - Organization Management
   - Security Administrator (this can be assigned in the Microsoft Entra admin center (<https://aad.portal.azure.com>)
@@ -534,7 +534,7 @@ To view and use Explorer or Real-time detections, you must have appropriate perm
 
 To learn more about roles and permissions, see the following resources:
 
-- [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md)
+- [Permissions in the Microsoft Defender portal](mdo-portal-permissions.md)
 - [Feature permissions in Exchange Online](/exchange/permissions-exo/feature-permissions)
 
 ## Differences between Threat Explorer and Real-time detections

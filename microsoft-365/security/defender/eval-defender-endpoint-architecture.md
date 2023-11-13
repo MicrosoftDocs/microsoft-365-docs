@@ -59,7 +59,7 @@ The following table identified key concepts that are important to understand whe
 
 Concept | Description | More information
 :---|:---|:---|
-Administration Portal | Microsoft 365 Defender portal to monitor and assist in responding to alerts of potential advanced persistent threat activity or data breaches. | [Microsoft Defender for Endpoint portal overview](/microsoft-365/security/defender-endpoint/portal-overview)
+Administration Portal | Microsoft Defender portal to monitor and assist in responding to alerts of potential advanced persistent threat activity or data breaches. | [Microsoft Defender for Endpoint portal overview](/microsoft-365/security/defender-endpoint/portal-overview)
 Attack Surface Reduction | Help reduce your attack surfaces by minimizing the places where your organization is vulnerable to cyberthreats and attacks. | [Overview of attack surface reduction](/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction)
 Endpoint Detection and Response | Endpoint detection and response capabilities provide advanced attack detections that are near real-time and actionable. | [Overview of endpoint detection and response capabilities](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)
 Behavioral Blocking and Containment | Behavioral blocking and containment capabilities can help identify and stop threats, based on their behaviors and process trees even when the threat has started execution. | [Behavioral blocking and containment](/microsoft-365/security/defender-endpoint/behavioral-blocking-containment)

@@ -56,7 +56,7 @@ Run through this list of tasks and questions to protect existing systems from at
 
 * If you have online backups, consider disconnecting the backup system from the network until you're confident that the attack is contained, see [Backup and restore plan to protect against ransomware | Microsoft Docs](/security/compass/backup-plan-to-protect-against-ransomware).
 * If you're experiencing or expect an imminent and active ransomware deployment:
-  * [Suspend privileged and local accounts](./investigate-users.md) that you suspect are part of the attack. You can do this from the **Users** tab in the properties of the incident in the Microsoft 365 Defender portal.
+  * [Suspend privileged and local accounts](./investigate-users.md) that you suspect are part of the attack. You can do this from the **Users** tab in the properties of the incident in the Microsoft Defender portal.
   * Stop all [remote logon sessions](/defender-for-identity/playbook-domain-dominance).
   * Reset the compromised user account passwords and require the users of compromised user accounts to sign in again.
   * Do the same for user accounts that might be compromised.
@@ -97,7 +97,7 @@ DeviceLogonEvents
 * Quarantine and add indicators for files that are infected.
 * Ensure that your antivirus solution is configurable in its optimal protection state. For Microsoft Defender Antivirus, this includes:
   * [Real time protection](../defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus.md) is enabled.
-  * [Tamper protection](../defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection.md) is enabled. In the Microsoft 365 Defender portal, select **Settings > Endpoints > Advanced features > Tamper protection**.
+  * [Tamper protection](../defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection.md) is enabled. In the Microsoft Defender portal, select **Settings > Endpoints > Advanced features > Tamper protection**.
   * [Attack surface reduction](../defender-endpoint/enable-attack-surface-reduction.md) rules are enabled.
   * [Cloud protection](../defender-endpoint/enable-attack-surface-reduction.md) is enabled.
 * Disable Exchange ActiveSync and OneDrive sync.

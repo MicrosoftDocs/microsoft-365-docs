@@ -76,17 +76,17 @@ We strongly recommend that SecOps teams manage incidents and alerts from Defende
 > [!NOTE]
 > Incidents don't just represent static events. They also represent attack stories that happen over time. As the attack progresses, new Defender for Office 365 alerts, AIR investigations, and their data are continuously added to the existing incident.
 
-Manage incidents on the **Incidents** page in the Microsoft 365 Defender portal at <https://security.microsoft.com/incidents-queue>:
+Manage incidents on the **Incidents** page in the Microsoft Defender portal at <https://security.microsoft.com/incidents-queue>:
 
-:::image type="content" source="../../media/mdo-sec-ops-incidents.png" alt-text="Incidents page in the Microsoft 365 Defender portal." lightbox="../../media/mdo-sec-ops-incidents.png":::
+:::image type="content" source="../../media/mdo-sec-ops-incidents.png" alt-text="Incidents page in the Microsoft Defender portal." lightbox="../../media/mdo-sec-ops-incidents.png":::
 
-:::image type="content" source="../../media/mdo-sec-ops-incident-details.png" alt-text="Details flyout on the Incidents page in the Microsoft 365 Defender portal." lightbox="../../media/mdo-sec-ops-incident-details.png":::
+:::image type="content" source="../../media/mdo-sec-ops-incident-details.png" alt-text="Details flyout on the Incidents page in the Microsoft Defender portal." lightbox="../../media/mdo-sec-ops-incident-details.png":::
 
-:::image type="content" source="../../media/mdo-sec-ops-incident-filters.png" alt-text="Filter flyout on the Incidents page in the Microsoft 365 Defender portal." lightbox="../../media/mdo-sec-ops-incident-filters.png":::
+:::image type="content" source="../../media/mdo-sec-ops-incident-filters.png" alt-text="Filter flyout on the Incidents page in the Microsoft Defender portal." lightbox="../../media/mdo-sec-ops-incident-filters.png":::
 
-:::image type="content" source="../../media/mdo-sec-ops-incident-summary-tab.png" alt-text="Summary tab of the incident details in the Microsoft 365 Defender portal." lightbox="../../media/mdo-sec-ops-incident-summary-tab.png":::
+:::image type="content" source="../../media/mdo-sec-ops-incident-summary-tab.png" alt-text="Summary tab of the incident details in the Microsoft Defender portal." lightbox="../../media/mdo-sec-ops-incident-summary-tab.png":::
 
-:::image type="content" source="../../media/mdo-sec-ops-incident-evidence-and-response-tab.png" alt-text="Evidence and alerts tab of the incident details in the Microsoft 365 Defender portal." lightbox="../../media/mdo-sec-ops-incident-evidence-and-response-tab.png":::
+:::image type="content" source="../../media/mdo-sec-ops-incident-evidence-and-response-tab.png" alt-text="Evidence and alerts tab of the incident details in the Microsoft Defender portal." lightbox="../../media/mdo-sec-ops-incident-evidence-and-response-tab.png":::
 
 Manage incidents on the **Incidents** page in Microsoft Sentinel at <https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/microsoft.securityinsightsarg%2Fsentinel>:
 

@@ -30,7 +30,7 @@ ms.date: 09/25/2023
 
 Troubleshooting mode in Microsoft Defender for Endpoint enables admins to troubleshoot various Microsoft Defender Antivirus features, even if devices are managed by organizational policies. For example, if [tamper protection](prevent-changes-to-security-settings-with-tamper-protection.md) is enabled, [certain settings](prevent-changes-to-security-settings-with-tamper-protection.md#what-happens-when-tamper-protection-is-turned-on) can't be modified or turned off, but you can use troubleshooting mode on a device to edit those settings temporarily.
 
-Troubleshooting mode is disabled by default, and requires you to turn it on for a device (and/or group of devices) for a limited time. Troubleshooting mode is exclusively an enterprise-only feature, and requires Microsoft 365 Defender portal access.
+Troubleshooting mode is disabled by default, and requires you to turn it on for a device (and/or group of devices) for a limited time. Troubleshooting mode is exclusively an enterprise-only feature, and requires Microsoft Defender portal access.
 
 > [!TIP]
 > - During troubleshooting mode, you can use the PowerShell command `Set-MPPreference -DisableTamperProtection $true` on Windows devices.
@@ -102,7 +102,7 @@ During troubleshooting mode, you can use the PowerShell command `Set-MPPreferenc
 
 ## Enable troubleshooting mode
 
-1. Go to the Microsoft 365 Defender portal (<https://security.microsoft.com>), and sign in.
+1. Go to the Microsoft Defender portal (<https://security.microsoft.com>), and sign in.
 
 2. Navigate to the device page/machine page for the device you would like to turn on troubleshooting mode. Select **Turn on troubleshooting mode**. You must have "Manage security settings in Security Center" [permissions](assign-portal-access.md) for Microsoft Defender for Endpoint.
 

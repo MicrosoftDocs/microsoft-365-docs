@@ -95,7 +95,7 @@ If you evaluate and ultimately purchase **Defender for Office 365 P1**, you get 
 
 So, Defender for Office 365 P1 expands on the ***prevention*** side of the house, and adds extra forms of ***detection***.
 
-Defender for Office 365 P1 also adds **Real-time detections** for investigations. The presence of **Real-time detections** as a selection in the Microsoft 365 Defender portal means you have Defender for Office 365 P1.
+Defender for Office 365 P1 also adds **Real-time detections** for investigations. The presence of **Real-time detections** as a selection in the Microsoft Defender portal means you have Defender for Office 365 P1.
 
 If you evaluate and ultimately purchase **Defender for Office 365 P2**, you get these additional capabilities over EOP and Defender for Office 365 P1:
 
@@ -105,7 +105,7 @@ If you evaluate and ultimately purchase **Defender for Office 365 P2**, you get 
 
 So, Defender for Office 365 P2 expands on the ***investigation and response*** side of the house, and adds a new hunting strength: Automation.
 
-In Defender for Office 365 P2, the primary hunting tool is called **Threat Explorer** rather than Real-time detections. If you see Threat Explorer when you navigate to the Microsoft 365 Defender portal, you're in Defender for Office 365 P2.
+In Defender for Office 365 P2, the primary hunting tool is called **Threat Explorer** rather than Real-time detections. If you see Threat Explorer when you navigate to the Microsoft Defender portal, you're in Defender for Office 365 P2.
 
 To get into the details of Defender for Office 365 P1 and P2, **[jump to this article](defender-for-office-365.md)**.
 
