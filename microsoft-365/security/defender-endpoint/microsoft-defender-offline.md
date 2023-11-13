@@ -34,8 +34,8 @@ search.appverid: met150
 
 | Applies to | Type  |
 |---|---|
-|**Platforms**| Windows|
-|**Protection type** | Hardware| 
+|**Platform**| Windows|
+|**Protection type** | Hardware|
 |**Firmware/ Rootkit**|  <li> Operating system <li> Driver <li> Memory (Heap) <li> Application <li> Identity <li> Cloud|
 
 >[!NOTE]
@@ -46,8 +46,6 @@ Microsoft Defender Offline is an anti-malware scanning tool that lets you boot a
 You can use Microsoft Defender Offline if you suspect a malware infection, or you want to confirm a thorough clean of the endpoint after a malware outbreak.
 
 ## Prerequisites and requirements
-
-Microsoft Defender Offline in Windows 10 and Windows 11 has the same hardware requirements as Windows 10.
 
 The following are the hardware requirements for Microsoft Defender Offline scan in Windows:
 
@@ -63,18 +61,23 @@ The following are the hardware requirements for Microsoft Defender Offline scan 
 > - ARM Windows 10 
 > - Windows Server Stock Keeping Units (SKU’s)
 
-Ensure that the following Windows 10 and Windows 11 prerequisites are met for the Microsoft Defender Offline updates.
+For more information about Windows 10 and Windows 11 requirements, see the following topics: 
 
 - [Minimum hardware requirements](/windows-hardware/design/minimum/minimum-hardware-requirements-overview)
 - [Hardware component guidelines](/windows-hardware/design/component-guidelines/components)
-- Use Microsoft Defender Antivirus as primary AV (not in passive mode).
-- Update MDAV, with however you normally deploy updates to endpoints a supported version of the: 
+
+## Microsoft Defender Offline updates
+
+You need to ensure that the following prerequisites are met to receive Microsoft Defender Offline updates.
+
+- Microsoft Defender Antivirus must be primary AV (not in passive mode).
+- Update MDAV, with however you normally deploy updates to endpoints, a supported version of the: 
   - [Platform Update](https://www.microsoft.com/security/portal/definitions/adl.aspx)
   - [Engine Update](microsoft-defender-antivirus-updates.md)
   - Security Intelligence Update
     - You can manually download and install the latest protection updates from the [Microsoft Malware Protection Center](https://www.microsoft.com/security/portal/definitions/adl.aspx) 
     - See the [Manage Microsoft Defender Antivirus Security intelligence updates](manage-protection-updates-microsoft-defender-antivirus.md) topic for more information.
-- The user must be logged in with administrator privileges.
+- The user must be logged in with local administrator privileges.
 - Windows Recovery Environment (WinRE) needs to be enabled. 
 
 >[!NOTE]
@@ -82,8 +85,8 @@ Ensure that the following Windows 10 and Windows 11 prerequisites are met for th
 Nothing happens even if the machine is restarted manually. 
 > To fix this, you only have to enable WinRE. 
 >
-> - To check the WinRE status, you can execute this command-line: reagentc /info.
-> - If the status is Disabled, you can enable it by executing this command-line: reagentc /enable.
+> - To check the WinRE status, you can execute this command-line: `reagentc /info`.
+> - If the status is Disabled, you can enable it by executing this command-line: `reagentc /enable`.
 
 ## Usage scenarios
 
@@ -95,9 +98,9 @@ If Microsoft Defender Antivirus determines that need to run:
 
      :::image type="content" source="../../media/notification.png" alt-text="Notification to run Microsoft Defender Offline" lightbox="../../media/notification.png":::
 
-     The user will also be notified within the Microsoft Defender Antivirus client or it can be revealed in Microsoft Intune if you're using it to manage your Windows endpoints.
+     The user will also be notified within the Microsoft Defender Antivirus client or it can be revealed in Microsoft Intune, if you're using it to manage your Windows endpoints.
 
-- You can manually force an offline scan, built-in Windows 10, version 1607 or newer, and Windows 11. Or, you can scan through a bootable media for the older Windows OS’es as described further down.
+- You can manually force an offline scan in built-in Windows 10, version 1607 or newer, and Windows 11. Or, you can scan through a bootable media for the older Windows OS’es as described [here](#use-the-windows-defender-security-app-to-run-an-offline-scan).
 
 In Configuration Manager, you can identify the status of endpoints by navigating to **Monitoring > Overview > Security > Endpoint Protection Status > System Center Endpoint Protection Status**.
 
@@ -124,7 +127,7 @@ You can run a Microsoft Defender Offline scan with the following:
 
 ### Use the Windows Defender Security app to run an offline scan
 
-Starting with Windows 10, version 1607 or newer, and Windows 11, Microsoft Defender Offline can be run with one select directly from the [Windows Security app](microsoft-defender-security-center-antivirus.md). In previous versions of Windows, a user had to install Microsoft Defender Offline to bootable media, restart the endpoint, and load the bootable media.
+Starting with Windows 10, version 1607 or newer, and Windows 11, Microsoft Defender Offline can be run with one click directly from the [Windows Security app](microsoft-defender-security-center-antivirus.md). In previous versions of Windows, a user had to install Microsoft Defender Offline to bootable media, restart the endpoint, and load the bootable media.
 
 > [!NOTE]
 > In Windows 10, version 1607, the offline scan can be run from **Windows Settings > Update & security > Windows Defender** or from the Windows Defender client.
@@ -182,7 +185,7 @@ wmic /namespace:\\root\Microsoft\Windows\Defender path MSFT_MpWDOScan call Start
 
 For more information, see [Windows Defender WMIv2 APIs](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
 
-**For Windows 7 Service Pack 1 and Windows 8.1:**
+**In Windows 7 Service Pack 1 and Windows 8.1:**
 
 1. Download Windows Defender Offline and install it to a CD, DVD, or USB flash drive using the following links:
      - [Download the 64-bit version (msstool64.exe)](https://go.microsoft.com/fwlink/?LinkID=234124)
