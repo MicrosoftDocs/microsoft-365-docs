@@ -35,7 +35,7 @@ To continue the electronic signing process, you must consent to the terms and co
 - Or select **Decline** if you'd prefer [not to use your digital signature](#decline-to-sign-the-document), and contact the person who requested your signature to complete the signature by using a different method.
 - If you close the **eSignature Terms and Conditions** without selecting the **Agree** button, you can reopen the dialog by selecting the **View disclosure** button on the top-left area of the document.
 
-![Screenshot of the terms and conditions screen.](../media/content-understanding/esignature-terms.png)
+    ![Screenshot of the terms and conditions screen.](../media/content-understanding/esignature-terms.png)
 
 ## Sign the document
 
