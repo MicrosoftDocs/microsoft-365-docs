@@ -34,8 +34,8 @@ To continue the electronic signing process, you must consent to the terms and co
 - Select **Agree** to use your electronic signature and continue with the signing process.  
 - Or select **Decline** if you'd prefer [not to use your digital signature](#decline-to-sign-the-document), and contact the person who requested your signature to complete the signature by using a different method.
 - If you close the **eSignature Terms and Conditions** without selecting the **Agree** button, you can reopen the dialog by selecting the **View disclosure** button on the top-left area of the document.
-  
-<img width="514" alt="tandc" src="https://github.com/MicrosoftDocs/microsoft-365-docs-pr/assets/89842834/751c645f-270e-435c-b5ca-a657d3d37822">
+
+![Screenshot of the terms and conditions screen.](../media/content-understanding/esignature-terms.png)
 
 ## Sign the document
 
@@ -55,8 +55,7 @@ Electronic signatures let you digitally sign a document by enabling you to add a
 
 1. To add your signature, type your name. If you want to choose a different font style for your signature, select **Change font** and choose the font you want to use.
 
-    <img width="499" alt="image" src="https://github.com/MicrosoftDocs/microsoft-365-docs-pr/assets/89842834/45b17679-7883-4dc5-9ba0-98e10f01e924">
-
+![Screenshot of the type your name screen.](../media/content-understanding/esignature-type-name.png)
 
 2. Select **Done** to add your signature to the document.
 
