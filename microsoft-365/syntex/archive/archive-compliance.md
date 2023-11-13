@@ -22,7 +22,7 @@ description: Learn about compliance features for archived sites in Microsoft 365
 > [!NOTE]
 > This feature is currently in preview and subject to change.
 
-Archived SharePoint sites, just like active SharePoint sites, maintain a baseline level of data promises. These promises include the following:
+Archived SharePoint sites, just like active SharePoint sites, maintain a baseline level of data promises. These promises include the following considerations:
 
 - **Durability** – All archived data is equally as durable as active SharePoint Online data.
 
