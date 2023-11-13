@@ -40,7 +40,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 ## November 2023
 
-- **Enhanced Action experince from Email Entity/ Summary Pannel** As part of the cahnge security admins can take multiple actions as part of FP/FN flows.[Learn more](mdo-email-entity-page.md)
+- **Enhanced Action experience from Email Entity/ Summary Panel** As part of the change security admins can take multiple actions as part of FP/FN flows.[Learn more](mdo-email-entity-page.md)
   
 ## October 2023
 
