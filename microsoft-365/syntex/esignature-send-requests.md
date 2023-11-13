@@ -33,9 +33,9 @@ Use the following steps to start the Syntex eSignature process.
 
     ![Screenshot of the Add recipients panel.](../media/content-understanding/esignature-add-recipients-panel.png)
 
-4. To specify where to sign, drag and drop the **Signature**, **Initials**, and **Date** fields to the appropriate locations in the document for each recipient. Each form field can be marked either as required or not required.
+4. On the **Specify where to sign** panel, drag and drop the **Signature**, **Initials**, and **Date** fields to the appropriate locations in the document for each recipient. Each form field can be marked either as required or not required.
 
-    ![Screenshot of the Add form fields panel.](../media/content-understanding/esignature-add-form-fields-panel.png)
+    ![Screenshot of the Specify where to sign panel.](../media/content-understanding/esignature-add-form-fields-panel.png)
 
 5. Select **Next** to progress to the next stage. At least one required signature field is needed for each recipient. Up to 50 fields (total) can be added to the document.
 
