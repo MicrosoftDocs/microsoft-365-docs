@@ -419,7 +419,7 @@
     href: ../security/top-security-tasks-for-remote-work.md
   - name: Identity and device access configurations
     href: ../security/office-365-security/zero-trust-identity-device-access-policies-overview.md
-  - name: Evaluate and pilot Microsoft 365 Defender
+  - name: Evaluate and pilot Microsoft Defender XDR
     href: ../security/defender/eval-overview.md
   - name: Respond to your first incident
     href: ../security/defender/first-incident-overview.md

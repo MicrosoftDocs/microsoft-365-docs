@@ -26,7 +26,7 @@ ms.date: 04/20/2023
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Microsoft Defender Antivirus
 
 **Platforms**
@@ -59,7 +59,7 @@ To use the entire feature-set of attack surface reduction rules, you need:
 - [Cloud-Delivery Protection](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) on (some rules require that)
 - Windows 10 Enterprise E5 or E3 License
 
-Although attack surface reduction rules don't require a [Windows E5 license](/windows/deployment/deploy-enterprise-licenses), with a Windows E5 license, you get advanced management capabilities including monitoring, analytics, and workflows available in Defender for Endpoint, as well as reporting and configuration capabilities in the [Microsoft 365 Defender](https://go.microsoft.com/fwlink/p/?linkid=2077139) portal. These advanced capabilities aren't available with an E3 license, but you can still use Event Viewer to review attack surface reduction rule events.
+Although attack surface reduction rules don't require a [Windows E5 license](/windows/deployment/deploy-enterprise-licenses), with a Windows E5 license, you get advanced management capabilities including monitoring, analytics, and workflows available in Defender for Endpoint, as well as reporting and configuration capabilities in the [Microsoft Defender XDR](https://go.microsoft.com/fwlink/p/?linkid=2077139) portal. These advanced capabilities aren't available with an E3 license, but you can still use Event Viewer to review attack surface reduction rule events.
 
 Each attack surface reduction rule contains one of four settings:
 

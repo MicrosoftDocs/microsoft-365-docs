@@ -28,11 +28,11 @@ ms.date: 08/31/2023
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 With the *go hunt* action, you can quickly investigate events and various entity types using powerful query-based [advanced hunting](advanced-hunting-overview.md) capabilities. This action automatically runs an advanced hunting query to find relevant information about the selected event or entity.
 
-The *go hunt* action is available in various sections of Microsoft 365 Defender. This action is available to view once event or entity details are displayed. For example, you can use the *go hunt* option from the following sections:
+The *go hunt* action is available in various sections of Microsoft Defender XDR. This action is available to view once event or entity details are displayed. For example, you can use the *go hunt* option from the following sections:
 
 - In the [incident page](investigate-incidents.md#summary), you can review details about users, devices, and many other entities associated with an incident. As you select an entity, you get additional information and the various actions you could take on that entity. In the example below, a mailbox is selected, showing details about the mailbox and the option to hunt for more information about the mailbox.
 
@@ -112,7 +112,7 @@ In addition to modifying the query to get more relevant results, you can also:
 - [Create a custom detection rule](custom-detection-rules.md)
 
 > [!NOTE]
-> Some tables in this article might not be available in Microsoft Defender for Endpoint. [Turn on Microsoft 365 Defender](m365d-enable.md) to hunt for threats using more data sources. You can move your advanced hunting workflows from Microsoft Defender for Endpoint to Microsoft 365 Defender by following the steps in [Migrate advanced hunting queries from Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md).
+> Some tables in this article might not be available in Microsoft Defender for Endpoint. [Turn on Microsoft Defender XDR](m365d-enable.md) to hunt for threats using more data sources. You can move your advanced hunting workflows from Microsoft Defender for Endpoint to Microsoft Defender XDR by following the steps in [Migrate advanced hunting queries from Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md).
 
 ## Related topics
 

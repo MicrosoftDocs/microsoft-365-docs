@@ -1,5 +1,5 @@
 ---
-title: Review remediation actions in Microsoft 365 Defender
+title: Review remediation actions in Microsoft Defender XDR
 description: See how to view remediations that were taken automatically or that are awaiting approval in the Action center.
 search.appverid: MET150
 author: denisebmsft

@@ -1,6 +1,6 @@
 ---
-title: Manage tenants with multi-tenant management in Microsoft 365 Defender
-description: Learn about the tenant list in multi-tenant management in Microsoft 365 Defender
+title: Manage tenants with multi-tenant management in Microsoft Defender XDR
+description: Learn about the tenant list in multi-tenant management in Microsoft Defender XDR
 search.appverid: met150
 ms.service: microsoft-365-security
 ms.subservice: m365d
@@ -21,15 +21,15 @@ ms.date: 09/01/2023
 
 **Applies to:**
 
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 ## View the tenants page
 
-To view the list of tenants that appear in multi-tenant management, go to [Settings page](https://mto.security.microsoft.com/mtosettings) in multi-tenant management in Microsoft 365 Defender:
+To view the list of tenants that appear in multi-tenant management, go to [Settings page](https://mto.security.microsoft.com/mtosettings) in multi-tenant management in Microsoft Defender XDR:
 
-   :::image type="content" source="../../media/defender/mto-tenant-settings.png" alt-text="Screenshot of multi-tenant management in Microsoft 365 Defender" lightbox="../../media/defender/mto-tenant-settings.png":::
+   :::image type="content" source="../../media/defender/mto-tenant-settings.png" alt-text="Screenshot of multi-tenant management in Microsoft Defender XDR" lightbox="../../media/defender/mto-tenant-settings.png":::
 
 From the **Settings** page you can:
 

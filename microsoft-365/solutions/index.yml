@@ -134,11 +134,11 @@ landingContent:
             url: ../security/office-365-security/zero-trust-identity-device-access-policies-overview.md
           - text: Deploy Microsoft Defender for Endpoint
             url: /windows/security/threat-protection/microsoft-defender-atp/deployment-phases
-          - text: Evaluate Microsoft 365 Defender
+          - text: Evaluate Microsoft Defender XDR
             url: ../security/defender-endpoint/deployment-phases.md
           - text: Security recommendations for priority accounts
             url: ../security/office-365-security/priority-accounts-security-recommendations.md
-          - text: Evaluate Microsoft 365 Defender
+          - text: Evaluate Microsoft Defender XDR
             url: ../security/defender-endpoint/deployment-phases.md
       - linkListType: how-to-guide
         links:

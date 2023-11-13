@@ -1,6 +1,6 @@
 ---
-title: Try Microsoft 365 Defender incident response capabilities in a pilot environment
-description: Try incident response capabilities in Microsoft 365 Defender to prioritize and manage incidents, automate investigations, and use advanced hunting in threat detection.
+title: Try Microsoft Defender XDR incident response capabilities in a pilot environment
+description: Try incident response capabilities in Microsoft Defender XDR to prioritize and manage incidents, automate investigations, and use advanced hunting in threat detection.
 keywords: Microsoft 365 Defender trial, try Microsoft 365 Defender, evaluate Microsoft 365 Defender, Microsoft 365 Defender evaluation lab, Microsoft 365 Defender pilot, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -28,14 +28,14 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ---
 
-# Try Microsoft 365 Defender incident response capabilities in a pilot environment
+# Try Microsoft Defender XDR incident response capabilities in a pilot environment
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
-This article is [Step 2 of 2](eval-defender-investigate-respond.md) in the process of performing an investigation and response of an incident in Microsoft 365 Defender using a pilot environment. For more information about this process, see the [overview](eval-defender-investigate-respond.md) article.
+This article is [Step 2 of 2](eval-defender-investigate-respond.md) in the process of performing an investigation and response of an incident in Microsoft Defender XDR using a pilot environment. For more information about this process, see the [overview](eval-defender-investigate-respond.md) article.
 
-Once you have performed an [incident response for a simulated attack](eval-defender-investigate-respond-simulate-attack.md), here are some Microsoft 365 Defender capabilities to explore:
+Once you have performed an [incident response for a simulated attack](eval-defender-investigate-respond-simulate-attack.md), here are some Microsoft Defender XDR capabilities to explore:
 
 |Capability |Description |
 |:-------|:-----|
@@ -141,7 +141,7 @@ For instance, based on information in the [User and IP address reconnaissance (S
 
 There's a single internal mailbox and device required for this simulation. You'll also need an external email account to send the test message.
 
-1. Verify that your tenant has [enabled Microsoft 365 Defender](m365d-enable.md#confirm-that-the-service-is-on).
+1. Verify that your tenant has [enabled Microsoft Defender XDR](m365d-enable.md#confirm-that-the-service-is-on).
 2. Identify a target mailbox to be used for receiving email.
 
    - This mailbox must be monitored by Microsoft Defender for Office 365
@@ -304,5 +304,5 @@ See [Get expert training on advanced hunting](advanced-hunting-expert-training.m
 
 ### Navigation you may need
 
-[Create the Microsoft 365 Defender Evaluation Environment](eval-create-eval-environment.md)
+[Create the Microsoft Defender XDR Evaluation Environment](eval-create-eval-environment.md)
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

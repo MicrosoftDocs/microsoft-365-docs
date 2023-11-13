@@ -1,6 +1,6 @@
 ---
-title: Details of custom permissions in Microsoft 365 Defender Unified role-based access control (RBAC)
-description: Learn about the custom permissions available in Microsoft 365 Defender Security role-based access control (RBAC)
+title: Details of custom permissions in Microsoft Defender XDR Unified role-based access control (RBAC)
+description: Learn about the custom permissions available in Microsoft Defender XDR Security role-based access control (RBAC)
 ms.service: microsoft-365-security
 ms.author: siosulli
 author: siosulli
@@ -18,23 +18,25 @@ ms.reviewer:
 search.appverid: met150
 ---
 
-# Permissions in Microsoft 365 Defender Unified role-based access control (RBAC)
+# Permissions in Microsoft Defender XDR Unified role-based access control (RBAC)
 
-In Microsoft 365 Defender Unified role-based access control (RBAC) you can select permissions from each permission group to customize a role.
+In Microsoft Defender XDR Unified role-based access control (RBAC) you can select permissions from each permission group to customize a role.
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Microsoft Defender for Identity](https://go.microsoft.com/fwlink/?LinkID=2198108)
 - [Microsoft Defender for Office 365 P2](https://go.microsoft.com/fwlink/?LinkID=2158212)
 - [Microsoft Defender Vulnerability Management](https://go.microsoft.com/fwlink/?linkid=2229011)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## Microsoft 365 Defender Unified RBAC permission details
+<a name='microsoft-365-defender-unified-rbac-permission-details'></a>
+
+## Microsoft Defender XDR Unified RBAC permission details
 
 The following table lists the permissions available to configure for your users based on the tasks they need to do:
 
@@ -90,5 +92,5 @@ Permissions to manages the security and system settings and to create and assign
 ## Next steps
 
 - [Create custom roles](create-custom-rbac-roles.md)
-- [Activate Microsoft 365 Defender Unified RBAC](activate-defender-rbac.md)
+- [Activate Microsoft Defender XDR Unified RBAC](activate-defender-rbac.md)
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

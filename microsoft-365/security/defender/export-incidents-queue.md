@@ -33,7 +33,7 @@ ms.date: 07/11/2022
 
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 The **Export** feature allows you to export the data in the incident queue that is displayed according to the applied filters and time ranges. It's available in the form of a button named **Export**, as displayed in the following screenshot:
 

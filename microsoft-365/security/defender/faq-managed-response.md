@@ -26,7 +26,7 @@ ms.date: 10/25/2023
 
 **Applies to:**
 
-- [Microsoft 365 Defender](microsoft-365-defender.md)
+- [Microsoft Defender XDR](microsoft-365-defender.md)
 
 The following section lists down questions you or your SOC team might have regarding [managed response](start-using-mdex-xdr.md#managed-detection-and-response).
 

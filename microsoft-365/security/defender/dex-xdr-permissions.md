@@ -26,7 +26,7 @@ ms.date: 05/29/2023
 
 **Applies to:**
 
-- [Microsoft 365 Defender](microsoft-365-defender.md)
+- [Microsoft Defender XDR](microsoft-365-defender.md)
 
 For Microsoft Defender Experts for XDR incident investigations, when our experts need access to your tenants, we follow the just-in-time and least privilege principles to provide the right level of access at the right time. To deliver on these requirements, we built the Microsoft Defender Experts permissions platform using the following capabilities in Microsoft Entra ID:
 

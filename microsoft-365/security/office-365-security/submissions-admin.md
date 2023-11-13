@@ -73,7 +73,7 @@ For other ways that **admins** can report messages to Microsoft in the Defender 
 
 - If the [User reported settings](submissions-user-reported-messages-custom-mailbox.md) in the organization send user reported messages (email and [Microsoft Teams](submissions-teams.md)) to Microsoft (exclusively or in addition to the reporting mailbox), we do the same checks as when admins submit messages to Microsoft for analysis from the **Submissions** page. So, submitting or resubmitting messages to Microsoft is useful to admins only for messages that have never been submitted to Microsoft, or when you disagree with the original verdict.
 
-- A **Files** tab is available on the **Submissions** page only in organizations with Microsoft 365 Defender or Microsoft Defender for Endpoint Plan 2. For information and instructions to submit files from the **Files** tab, see [Submit files in Microsoft Defender for Endpoint](../defender-endpoint/admin-submissions-mde.md).
+- A **Files** tab is available on the **Submissions** page only in organizations with Microsoft Defender XDR or Microsoft Defender for Endpoint Plan 2. For information and instructions to submit files from the **Files** tab, see [Submit files in Microsoft Defender for Endpoint](../defender-endpoint/admin-submissions-mde.md).
 
 ## Admin-originated submissions
 

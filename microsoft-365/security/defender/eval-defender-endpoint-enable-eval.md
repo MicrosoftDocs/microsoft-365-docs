@@ -1,6 +1,6 @@
 ---
 title: Enable Microsoft Defender for Endpoint evaluation
-description: Enable your Microsoft 365 Defender trial lab or pilot environment, including checking license state, and onboarding endpoints
+description: Enable your Microsoft Defender XDR trial lab or pilot environment, including checking license state, and onboarding endpoints
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: microsoft-365-security
@@ -91,5 +91,5 @@ The following table lists the available tools based on the endpoint that you nee
  
 Return to the overview for [Evaluate Microsoft Defender for Endpoint](eval-defender-endpoint-overview.md)
 
-Return to the overview for [Evaluate and pilot Microsoft 365 Defender](eval-overview.md)
+Return to the overview for [Evaluate and pilot Microsoft Defender XDR](eval-overview.md)
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

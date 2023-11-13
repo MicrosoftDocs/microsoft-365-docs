@@ -31,7 +31,7 @@ ms.date: 08/11/2023
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 Alert classification playbooks allow you to methodically review and quickly classify the alerts for well-known attacks and take recommended actions to remediate the attack and protect your network. Alert classification will also help in properly classifying the overall incident.
 

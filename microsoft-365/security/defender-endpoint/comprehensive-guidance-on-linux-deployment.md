@@ -528,7 +528,7 @@ To ensure that the device is correctly onboarded and reported to the service, ru
 - Endpoint detection and response (EDR) detections:
   For more information, see [Experience Microsoft Defender for Endpoint through simulated attacks](attack-simulations.md).
   If the detection doesn't show up, then it could be that we're missing event or alerts in portal. For more information, see [Troubleshoot missing events or alerts issues for Microsoft Defender for Endpoint on Linux](linux-support-events.md).
-- For more information about unified submissions in Microsoft 365 Defender and the ability to submit **False Positives** and **False Negatives** through the portal, see [Unified submissions in Microsoft 365 Defender now Generally Available! - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/unified-submissions-in-microsoft-365-defender-now-generally/ba-p/3270770).
+- For more information about unified submissions in Microsoft Defender XDR and the ability to submit **False Positives** and **False Negatives** through the portal, see [Unified submissions in Microsoft Defender XDR now Generally Available! - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/unified-submissions-in-microsoft-365-defender-now-generally/ba-p/3270770).
 
 ## 20. Troubleshoot missing events or alerts issues for Microsoft Defender for Endpoint on Linux
 
@@ -619,7 +619,7 @@ Then your next step is to uninstall your non-Microsoft antivirus, antimalware, a
   > [!NOTE]
   > The behavior monitoring functionality complements existing strong content-based capabilities, however you should carefully evaluate this feature in your environment before deploying it broadly since enabling behavioral monitoring consumes more resources and may cause performance issues.
 
-- [Unified submissions in Microsoft 365 Defender](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/unified-submissions-in-microsoft-365-defender-now-generally/ba-p/3270770)
+- [Unified submissions in Microsoft Defender XDR](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/unified-submissions-in-microsoft-365-defender-now-generally/ba-p/3270770)
 
 - [Introducing the new alert suppression experience](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/introducing-the-new-alert-suppression-experience-now-in-public/ba-p/3562719)
 

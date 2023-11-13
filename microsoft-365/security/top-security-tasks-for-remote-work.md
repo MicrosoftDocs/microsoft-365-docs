@@ -43,7 +43,7 @@ For customers using our enterprise plans, Microsoft recommends you complete the 
 |2|[Protect against threats](#2-protect-against-threats)|![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |3|[Configure Microsoft Defender for Office 365](#3-configure-microsoft-defender-for-office-365)|||![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |4|[Configure Microsoft Defender for Identity](#4-configure-microsoft-defender-for-identity)|||![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|5|[Turn on Microsoft 365 Defender](#5-turn-on-microsoft-365-defender)|||![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|5|[Turn on Microsoft Defender XDR](#5-turn-on-microsoft-365-defender)|||![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |6|[Configure Intune mobile app protection for phones and tablets](#6-configure-intune-mobile-app-protection-for-phones-and-tablets)||![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |7|[Configure MFA and conditional access for guests, including Intune app protection](#7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection)||![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |8|[Enroll PCs into device management and require compliant PCs](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)||![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
@@ -119,11 +119,13 @@ After you [identify users as priority accounts](../admin/setup/priority-accounts
 - Watch [Video: Introduction to Microsoft Defender for Identity](https://www.youtube.com/watch?reload=9&v=EGY2m8yU_KE)
 - Review the [three phases of Microsoft Defender for Identity deployment](/azure-advanced-threat-protection/what-is-atp#whats-next)
 
-## 5: Turn on Microsoft 365 Defender
+<a name='5-turn-on-microsoft-365-defender'></a>
 
-Now that you have Microsoft Defender for Office 365 and Microsoft Defender for Identity configured, you can view the combined signals from these capabilities in one dashboard. [Microsoft 365 Defender](./defender/microsoft-365-defender.md) brings together alerts, incidents, automated investigation and response, and advanced hunting across workloads (Microsoft Defender for Identity, Defender for Office 365, Microsoft  Defender for Endpoint, and Microsoft Defender for Cloud Apps) into a single pane in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
+## 5: Turn on Microsoft Defender XDR
 
-:::image type="content" source="../media/top-ten-security-remote-work-mtp-dashboard.png" alt-text="The Microsoft 365 Defender dashboard" lightbox="../media/top-ten-security-remote-work-mtp-dashboard.png":::
+Now that you have Microsoft Defender for Office 365 and Microsoft Defender for Identity configured, you can view the combined signals from these capabilities in one dashboard. [Microsoft Defender XDR](./defender/microsoft-365-defender.md) brings together alerts, incidents, automated investigation and response, and advanced hunting across workloads (Microsoft Defender for Identity, Defender for Office 365, Microsoft  Defender for Endpoint, and Microsoft Defender for Cloud Apps) into a single pane in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
+
+:::image type="content" source="../media/top-ten-security-remote-work-mtp-dashboard.png" alt-text="The Microsoft Defender XDR dashboard" lightbox="../media/top-ten-security-remote-work-mtp-dashboard.png":::
 
 After you configure one or more of your Defender for Office 365 services, turn on MTP. New features are added continually to MTP; consider opting in to receive preview features.
 

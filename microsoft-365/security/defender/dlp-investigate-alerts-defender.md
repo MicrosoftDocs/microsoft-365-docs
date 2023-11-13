@@ -1,6 +1,6 @@
 ---
-title: Investigate data loss alerts with Microsoft 365 Defender
-description: Investigate data loss in Microsoft 365 Defender.
+title: Investigate data loss alerts with Microsoft Defender XDR
+description: Investigate data loss in Microsoft Defender XDR.
 keywords: Data Loss Prevention, incidents, alerts, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365
 f1.keywords:
   - NOCSH
@@ -21,17 +21,17 @@ search.appverid:
 ms.date: 09/05/2023
 ---
 
-# Investigate data loss prevention alerts with Microsoft 365 Defender
+# Investigate data loss prevention alerts with Microsoft Defender XDR
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 You can manage Microsoft Purview Data Loss Prevention (DLP) alerts in the Microsoft Defender portal. Open **Incidents & alerts** \> **Incidents** on the quick launch of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. From this page, you can:
 
-- View all your DLP alerts grouped under incidents in the Microsoft 365 Defender incident queue.
+- View all your DLP alerts grouped under incidents in the Microsoft Defender XDR incident queue.
 - View intelligent inter-solution (DLP-MDE, DLP-MDO) and intra-solution (DLP-DLP) correlated alerts under a single incident.
 - Hunt for compliance logs along with security under Advanced Hunting.
 - In-place admin remediation actions on user, file, and device.
@@ -39,7 +39,7 @@ You can manage Microsoft Purview Data Loss Prevention (DLP) alerts in the Micros
 - Filter by DLP policy name, tag, Date, service source, incident status, and user on the unified incident queue.
 
 > [!TIP]
-> You can also pull DLP incidents along with events and evidence into Microsoft Sentinel for investigation and remediation with the Microsoft 365 Defender connector in Microsoft Sentinel.
+> You can also pull DLP incidents along with events and evidence into Microsoft Sentinel for investigation and remediation with the Microsoft Defender XDR connector in Microsoft Sentinel.
 
 ## Licensing requirements
 
@@ -51,7 +51,7 @@ To investigate Microsoft Purview Data Loss Prevention incidents in the Microsoft
 - Microsoft 365 E5/A5 Information Protection and Governance
 
 > [!NOTE]
-> When you are licensed and eligible for this feature, DLP alerts will automatically flow into Microsoft 365 Defender. If you don't want DLP alerts to flow into Defender, open a support case to disable this feature. If you disable this feature DLP alerts will surface in the Defender portal as Microsoft Defender for Office alerts.
+> When you are licensed and eligible for this feature, DLP alerts will automatically flow into Microsoft Defender XDR. If you don't want DLP alerts to flow into Defender, open a support case to disable this feature. If you disable this feature DLP alerts will surface in the Defender portal as Microsoft Defender for Office alerts.
 
 ## Roles
 

@@ -26,7 +26,7 @@ ms.date: 11/10/2023
 
 **Applies to:**
 
-- [Microsoft 365 Defender](microsoft-365-defender.md)
+- [Microsoft Defender XDR](microsoft-365-defender.md)
 
 Once the Defender Experts for XDR team is ready to onboard your organization, you'll receive a welcome email to continue the setup and get you started.
 
@@ -87,7 +87,7 @@ To edit or update your notification contacts after the initial setup, go to **Se
 
 ## Prepare your environment for the Defender Experts service
 
-Apart from onboarding service delivery, our expertise on the Microsoft 365 Defender product suite enables Defender Experts for XDR to let you run a **readiness assessment** and help you get the most out of your Microsoft security products.
+Apart from onboarding service delivery, our expertise on the Microsoft Defender XDR product suite enables Defender Experts for XDR to let you run a **readiness assessment** and help you get the most out of your Microsoft security products.
 
 The readiness assessment is based on the number of protected devices and identities in your environment, and Defender Experts' policy recommendations. To view the assessment, in your Microsoft Defender portal, go to **Settings** > **Defender Experts** then select **Service status**.
 

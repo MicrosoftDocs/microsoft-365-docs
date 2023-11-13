@@ -51,7 +51,9 @@ The following details apply to working with your policies in the Microsoft Defen
 
 :::image type="content" source="media/m365defender.png" alt-text="Screenshot of the Microsoft Defender portal." lightbox="media/m365defender.png":::
 
-### View existing device protection policies in Microsoft 365 Defender
+<a name='view-existing-device-protection-policies-in-microsoft-365-defender'></a>
+
+### View existing device protection policies in Microsoft Defender XDR
 
 1. In the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Device configuration**. Policies are organized by operating system (such as **Windows client**) and policy type (such as **Next-generation protection** and **Firewall**).
 
@@ -63,7 +65,9 @@ The following details apply to working with your policies in the Microsoft Defen
 
    :::image type="content" source="../media/mdb-deviceconfig-selectedpolicy.png" lightbox="../media/mdb-deviceconfig-selectedpolicy.png" alt-text="Screenshot of a policy selected in the Device configuration page.":::
 
-### Edit an existing device protection policy in Microsoft 365 Defender
+<a name='edit-an-existing-device-protection-policy-in-microsoft-365-defender'></a>
+
+### Edit an existing device protection policy in Microsoft Defender XDR
 
 1. In the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Device configuration**. Policies are organized by operating system (such as **Windows client**) and policy type (such as **Next-generation protection** and **Firewall**).
 
@@ -94,7 +98,9 @@ The following details apply to working with your policies in the Microsoft Defen
    - Make any needed changes by selecting **Edit**.
    - When you’re ready to proceed, choose **Update policy**.
 
-### Create a new device protection policy in Microsoft 365 Defender
+<a name='create-a-new-device-protection-policy-in-microsoft-365-defender'></a>
+
+### Create a new device protection policy in Microsoft Defender XDR
 
 1. In the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Device configuration**. Policies are organized by operating system (such as **Windows client**) and policy type (such as **Next-generation protection** and **Firewall**).
 

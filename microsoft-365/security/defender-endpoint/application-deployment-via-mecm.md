@@ -43,7 +43,7 @@ For more information on installing the listed prerequisites, see [related topics
 
 Copy the unified solution package, onboarding script and migration script to the same content source you deploy other apps with MECM.
 
-1. Download Onboarding Script and the unified solution from [Microsoft 365 Defender settings page](https://sip.security.microsoft.com/preferences2/onboarding).
+1. Download Onboarding Script and the unified solution from [Microsoft Defender XDR settings page](https://sip.security.microsoft.com/preferences2/onboarding).
    :::image type="content" source="images/onboarding-script.png" alt-text="Screenshot of onboarding script and unified solution download" lightbox="images/onboarding-script.png":::
    > [!Note]
    > You must select the Group Policy from the Deployment method dropdown to obtain the .cmd file.

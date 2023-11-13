@@ -1,5 +1,5 @@
 ---
-title: Use shared queries in Microsoft 365 Defender advanced hunting
+title: Use shared queries in Microsoft Defender XDR advanced hunting
 description: Start threat hunting immediately with predefined and shared queries. Share your queries to the public or to your organization.
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, custom detections, schema, kusto, github repo, my queries, shared queries
 search.product: eADQiWindows 10XVcnh
@@ -28,7 +28,7 @@ ms.date: 02/16/2021
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 [Advanced hunting](advanced-hunting-overview.md) queries can be shared among users in the same organization. You can also save queries that are only accessible to you. You can also find community queries that are shared publicly on GitHub. These saved queries let you quickly pursue specific threat hunting scenarios without having to write queries from scratch.
 
@@ -76,7 +76,7 @@ You can easily find these queries in the **Community queries** drop-down menu as
 Community queries are grouped into folders like *Campaigns*, *Collection*, *Defense evasion*, and the like. Further information about the query is provided as in-line comments in the query itself.
 
 > [!TIP]
-> Microsoft security researchers also provide advanced hunting queries that you can use to locate activities and indicators associated with emerging threats. These queries are provided as part of the [threat analytics](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) reports in Microsoft 365 Defender.
+> Microsoft security researchers also provide advanced hunting queries that you can use to locate activities and indicators associated with emerging threats. These queries are provided as part of the [threat analytics](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) reports in Microsoft Defender XDR.
 
 ## Related topics
 

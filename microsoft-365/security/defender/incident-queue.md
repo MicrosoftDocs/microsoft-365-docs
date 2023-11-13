@@ -1,6 +1,6 @@
 ---
-title: Prioritize incidents in Microsoft 365 Defender
-description: Learn how to filter incidents from the incident queue in Microsoft 365 Defender
+title: Prioritize incidents in Microsoft Defender XDR
+description: Learn how to filter incidents from the incident queue in Microsoft Defender XDR
 keywords: incident, queue, overview, devices, identities, users, mailbox, email, incidents, analyze, response, triage
 search.product: eADQiWindows 10XVcnh
 ms.service: microsoft-365-security
@@ -26,14 +26,14 @@ search.appverid:
 ms.date: 05/18/2023
 ---
 
-# Prioritize incidents in Microsoft 365 Defender
+# Prioritize incidents in Microsoft Defender XDR
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
-Microsoft 365 Defender applies correlation analytics and aggregates related alerts and automated investigations from different products into an incident. Microsoft 365 Defender also triggers unique alerts on activities that can only be identified as malicious given the end-to-end visibility in Microsoft 365 Defender has across the entire suite of products. This view gives your security analysts the broader attack story, which helps them better understand and deal with complex threats across your organization.
+Microsoft Defender XDR applies correlation analytics and aggregates related alerts and automated investigations from different products into an incident. Microsoft Defender XDR also triggers unique alerts on activities that can only be identified as malicious given the end-to-end visibility in Microsoft Defender XDR has across the entire suite of products. This view gives your security analysts the broader attack story, which helps them better understand and deal with complex threats across your organization.
 
 The **Incident queue** shows a collection of incidents that were created across devices, users, and mailboxes. It helps you sort through incidents to prioritize and create an informed cybersecurity response decision, a process known as incident triage.
 
@@ -74,7 +74,7 @@ This table lists the filter names that are available.
 | Severity | The severity of an incident is indicative of the impact it can have on your assets. The higher the severity, the bigger the impact and typically requires the most immediate attention. Select **High**, **Medium**, **Low**, or **Informational**. |
 | Incident assignment | Select the assigned user or users. |
 | Multiple service sources  | Specify whether the filter is for more than one service source. |
-| Service sources  | Specify incidents that contain alerts from: App Governance, Microsoft 365 Defender, Microsoft Defender for Office 365, Microsoft Defender for Endpoint, Microsoft Defender for Identity, Microsoft Defender for Cloud Apps. |
+| Service sources  | Specify incidents that contain alerts from: App Governance, Microsoft Defender XDR, Microsoft Defender for Office 365, Microsoft Defender for Endpoint, Microsoft Defender for Identity, Microsoft Defender for Cloud Apps. |
 | Tags | Select one or multiple tag names from the list. |
 | Multiple categories  | Specify whether the filter is for more than one category. |
 | Categories | Choose categories to focus on specific tactics, techniques, or attack components seen. |

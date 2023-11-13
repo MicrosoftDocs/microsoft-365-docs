@@ -39,9 +39,9 @@ The Microsoft Defender portal ([https://security.microsoft.com](https://security
 
 The Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) is where you view alerts, manage devices, and view reports. When you sign into the Microsoft Defender portal, you start with the **Home** page, which resembles the following image:
 
-:::image type="content" source="../../media/mde-p1/m365-defender-portal.png" alt-text="The portal of Microsoft 365 Defender" lightbox="../../media/mde-p1/m365-defender-portal.png":::
+:::image type="content" source="../../media/mde-p1/m365-defender-portal.png" alt-text="The portal of Microsoft Defender XDR" lightbox="../../media/mde-p1/m365-defender-portal.png":::
 
-The Home page provides your security team with a snapshot aggregate view of alerts, device status, and threats detected. Microsoft 365 Defender is set up so that your security operations team can find the information they're looking for quickly and easily.
+The Home page provides your security team with a snapshot aggregate view of alerts, device status, and threats detected. Microsoft Defender XDR is set up so that your security operations team can find the information they're looking for quickly and easily.
 
 > [!NOTE]
 > Our examples shown in this article might differ from what you see in your Microsoft Defender portal. What you see in your portal depends on your licenses and permissions. In addition, your security team can customize your organization's portal by adding, removing, and rearranging cards.

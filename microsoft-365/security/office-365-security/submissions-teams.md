@@ -27,7 +27,7 @@ appliesto:
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
-In organizations with Microsoft Defender for Office 365 Plan 2 or Microsoft 365 Defender, admins can decide whether users can report malicious messages in Microsoft Teams. Admins can also get visibility into the Teams messages that users are reporting.
+In organizations with Microsoft Defender for Office 365 Plan 2 or Microsoft Defender XDR, admins can decide whether users can report malicious messages in Microsoft Teams. Admins can also get visibility into the Teams messages that users are reporting.
 
 Users can report messages in Teams from **internal** chats, channels and meeting conversations. Users can only report messages as malicious.
 

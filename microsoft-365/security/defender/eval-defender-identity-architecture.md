@@ -1,6 +1,6 @@
 ---
 title: Review architecture requirements and the technical framework for Microsoft Defender for Identity
-description: The technical diagram for Microsoft Defender for Identity in Microsoft 365 Defender will help you understand identity in Microsoft 365 before you build your trial lab or pilot environment.
+description: The technical diagram for Microsoft Defender for Identity in Microsoft Defender XDR will help you understand identity in Microsoft 365 before you build your trial lab or pilot environment.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: microsoft-365-security
@@ -29,7 +29,7 @@ ms.topic: conceptual
 # Review architecture requirements and key concepts for Microsoft Defender for Identity
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 This article is [Step 1 of 3](eval-defender-identity-overview.md) in the process of setting up the evaluation environment for Microsoft Defender for Identity. For more information about this process, see the [overview article](eval-defender-identity-overview.md).
 
@@ -49,7 +49,7 @@ In this illustration:
 
 - Sensors installed on AD domain controllers parse logs and network traffic and send them to Microsoft Defender for Identity for analysis and reporting.
 - Sensors can also parse Active Directory Federation Services (AD FS) when Microsoft Entra ID is configured to use federated authentication (dotted line in illustration).
-- Microsoft Defender for Identity shares signals to Microsoft 365 Defender for extended detection and response (XDR).
+- Microsoft Defender for Identity shares signals to Microsoft Defender XDR for extended detection and response (XDR).
 
 Defender for Identity sensors can be directly installed on the following servers:
 
@@ -84,5 +84,5 @@ Step 2 of 3: [Enable the evaluation environment Defender for Identity](eval-defe
 
 Return to the overview for [Evaluate Microsoft Defender for Identity](eval-defender-identity-overview.md)
 
-Return to the overview for [Evaluate and pilot Microsoft 365 Defender](eval-overview.md)
+Return to the overview for [Evaluate and pilot Microsoft Defender XDR](eval-overview.md)
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

@@ -154,9 +154,9 @@ The **Download file** button can have the following states:
 
   The following permissions are required:
 
-  For Microsoft 365 Defender Unified role-based access control (RBAC):
+  For Microsoft Defender XDR Unified role-based access control (RBAC):
 
-     - Add file collection permission in Microsoft 365 Defender Unified (RBAC)
+     - Add file collection permission in Microsoft Defender XDR Unified (RBAC)
  
   For Microsoft Defender for Endpoint role-based access control (RBAC):
 

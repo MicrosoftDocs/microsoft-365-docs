@@ -29,7 +29,7 @@ search.appverid: met150
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 If you're a Global or security administrator, you can now host firewall reporting to the [Microsoft Defender portal](https://security.microsoft.com). This feature enables you to view Windows firewall reporting from a centralized location.
 
@@ -85,7 +85,7 @@ catch {
 > [!NOTE]
 > Make sure to follow the instructions from the section above and properly configure your devices for the early preview participation.
 
-- After enabling the events, Microsoft 365 Defender will start to monitor the data, which includes: 
+- After enabling the events, Microsoft Defender XDR will start to monitor the data, which includes: 
    - Remote IP
    - Remote Port
    - Local Port

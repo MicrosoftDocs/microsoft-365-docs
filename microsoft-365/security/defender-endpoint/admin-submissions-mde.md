@@ -1,6 +1,6 @@
 ---
 title: Submit files in Microsoft Defender for Endpoint
-description: Learn how to use the unified submissions feature in Microsoft 365 Defender to submit suspicious emails, URLs, email attachments, and files to Microsoft for scanning.
+description: Learn how to use the unified submissions feature in Microsoft Defender XDR to submit suspicious emails, URLs, email attachments, and files to Microsoft for scanning.
 keywords: antivirus, spam, phish, file, alert, Microsoft Defender for Endpoint, false positive, false negative, blocked file, blocked url, submission, submit, report
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -29,7 +29,7 @@ ms.custom: FPFN
 **Applies to**
 
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146806)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-usewdatp-abovefoldlink).
 
@@ -121,7 +121,7 @@ The submission is available on the **Files** tab of the **Submissions** page at 
 ## Related information
 
 - [Exclusions for Microsoft Defender for Endpoint and Microsoft Defender Antivirus](defender-endpoint-antivirus-exclusions.md)
-- [Microsoft Defender for Endpoint in Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md)
+- [Microsoft Defender for Endpoint in Microsoft Defender XDR](../defender/microsoft-365-security-center-mde.md)
 - [Address false positives/negatives](defender-endpoint-false-positives-negatives.md)
 - [View and organize alerts queue in Microsoft Defender for Endpoint](alerts-queue.md)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

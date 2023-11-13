@@ -30,7 +30,7 @@ ms.date: 04/05/2023
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 Threat actors can use compromised user accounts for several malicious purposes, including reading emails in a user's inbox, forwarding emails to external recipients, and sending phishing mails, among others. The targeted user might be unaware that their emails are being forwarded. This is a very common tactic that attackers use when user accounts are compromised.
 

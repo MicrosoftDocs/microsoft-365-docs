@@ -51,7 +51,7 @@ But what can you do if you receive a message with a suspicious attachment or hav
 
 ## Submit malware files to Microsoft
 
-Organizations that have a Microsoft 365 Defender subscription, or Microsoft 365 Defender for Endpoint Plan 2 can submit files using the **Submissions** page in the Microsoft Defender portal. For more information, see [Use admin submission for submitting files in Microsoft Defender for Endpoint](../defender-endpoint/admin-submissions-mde.md).
+Organizations that have a Microsoft Defender XDR subscription, or Microsoft Defender XDR for Endpoint Plan 2 can submit files using the **Submissions** page in the Microsoft Defender portal. For more information, see [Use admin submission for submitting files in Microsoft Defender for Endpoint](../defender-endpoint/admin-submissions-mde.md).
 
 Or, you can go to the Microsoft Security Intelligence page at <https://www.microsoft.com/wdsi/filesubmission> to submit the file. To receive analysis updates, sign in or enter a valid email address. We recommend using your Microsoft work or school account.
 
@@ -65,7 +65,7 @@ If you continue receiving infected messages or attachments, then you should copy
 
 ## Submit good files to Microsoft
 
-Organizations that have a Microsoft 365 Defender Subscription or Microsoft 365 Defender for Endpoint Plan 2 can submit files using the **Submissions** page in the Microsoft Defender portal. For more information, see [Use admin submission for submitting files in Microsoft Defender for Endpoint](../defender-endpoint/admin-submissions-mde.md).
+Organizations that have a Microsoft Defender XDR Subscription or Microsoft Defender XDR for Endpoint Plan 2 can submit files using the **Submissions** page in the Microsoft Defender portal. For more information, see [Use admin submission for submitting files in Microsoft Defender for Endpoint](../defender-endpoint/admin-submissions-mde.md).
 
 Or, you can go to the Microsoft Security Intelligence page at <https://www.microsoft.com/wdsi/filesubmission> to submit the file. To receive analysis updates, sign in or enter a valid email address. We recommend using your Microsoft work or school account.
 

@@ -178,8 +178,8 @@ Selecting an item opens a flyout that links to the update.
 
 ## Related topics
 
-* [Microsoft 365 Defender overview](microsoft-365-defender.md)
-* [Turn on Microsoft 365 Defender](m365d-enable.md)
+* [Microsoft Defender XDR overview](microsoft-365-defender.md)
+* [Turn on Microsoft Defender XDR](m365d-enable.md)
 * [Investigate entities on devices, using live response](../defender-endpoint/live-response.md)
 * [Automated investigation and response (AIR) in Office 365](../office-365-security/air-about.md)
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

@@ -30,7 +30,7 @@ ms.date: 12/18/2020
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender Vulnerability Management](https://go.microsoft.com/fwlink/?linkid=2229011)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-machinesview-abovefoldlink)
 
@@ -39,7 +39,7 @@ The **Device inventory** shows a list of the devices in your network where alert
 At a glance you'll see information such as domain, risk level, OS platform, and other details for easy identification of devices most at risk.
 
 > [!NOTE]
-> The device inventory is available in different Microsoft 365 Defender services. The information available to you will differ depending on your license. You'll get the most complete set of capabilities when using [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037).
+> The device inventory is available in different Microsoft Defender XDR services. The information available to you will differ depending on your license. You'll get the most complete set of capabilities when using [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037).
 
 > [!NOTE]
 > Risk Level which can influence enforcement of conditional access and other security policies on Microsoft Intune, is available in Windows today.  

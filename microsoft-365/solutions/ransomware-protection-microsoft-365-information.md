@@ -127,7 +127,7 @@ Microsoft 365:
 - [Handling ransomware in SharePoint Online](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
 - [Threat analytics reports for ransomware](https://security.microsoft.com/threatanalytics3?page_size=30&filters=tags%3DRansomware&ordering=-lastUpdatedOn&fields=displayName,alertsCount,impactedEntities,reportType,createdOn,lastUpdatedOn,tags,flag) in the Microsoft Defender portal
 
-Microsoft 365 Defender:
+Microsoft Defender XDR:
 
 - [Find ransomware with advanced hunting](/microsoft-365/security/defender/advanced-hunting-find-ransomware)
 

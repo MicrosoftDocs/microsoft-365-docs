@@ -1,6 +1,6 @@
 ---
-title: Address false positives or false negatives in Microsoft 365 Defender
-description: Was something missed or wrongly detected by AIR in Microsoft 365 Defender? Learn how to submit false positives or false negatives to Microsoft for analysis.
+title: Address false positives or false negatives in Microsoft Defender XDR
+description: Was something missed or wrongly detected by AIR in Microsoft Defender XDR? Learn how to submit false positives or false negatives to Microsoft for analysis.
 keywords: automated, investigation, alert, remediation, false positive, false negative
 search.appverid: met150
 ms.service: microsoft-365-security
@@ -26,14 +26,14 @@ ms.reviewer: evaldm, isco
 ms.date: 07/14/2023
 ---
 
-# Address false positives or false negatives in Microsoft 365 Defender
+# Address false positives or false negatives in Microsoft Defender XDR
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
-False positives or negatives can occasionally occur with any threat protection solution. If [automated investigation and response capabilities](m365d-autoir.md) in Microsoft 365 Defender missed or wrongly detected something, there are steps your security operations team can take:
+False positives or negatives can occasionally occur with any threat protection solution. If [automated investigation and response capabilities](m365d-autoir.md) in Microsoft Defender XDR missed or wrongly detected something, there are steps your security operations team can take:
 
 - [Report a false positive/negative to Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis)
 - [Adjust your alerts](#adjust-an-alert-to-prevent-false-positives-from-recurring) (if needed)
@@ -70,5 +70,5 @@ If a remediation action was taken on an entity (such as a device or an email mes
 ## See also
 
 - [View the details and results of an automated investigation](m365d-autoir-results.md)
-- [Proactively hunt for threats with advanced hunting in Microsoft 365 Defender](advanced-hunting-overview.md)
+- [Proactively hunt for threats with advanced hunting in Microsoft Defender XDR](advanced-hunting-overview.md)
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

@@ -29,7 +29,7 @@ ms.topic: how-to
 # Enable the evaluation environment
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 This article is [Step 2 of 3](eval-defender-office-365-overview.md) in the process of setting up the evaluation environment for Microsoft Defender for Office 365. For more information about this process, see the [overview article](eval-defender-office-365-overview.md).
 
@@ -102,5 +102,5 @@ Step 3 of 3: Set up the pilot for Microsoft Defender for Office 365
 
 Return to the overview for [Evaluate Microsoft Defender for Office 365](eval-defender-office-365-overview.md)
 
-Return to the overview for [Evaluate and pilot Microsoft 365 Defender](eval-overview.md)
+Return to the overview for [Evaluate and pilot Microsoft Defender XDR](eval-overview.md)
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

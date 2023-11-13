@@ -1,5 +1,5 @@
 ---
-title:                     Detecting human-operated ransomware attacks with Microsoft 365 Defender
+title:                     Detecting human-operated ransomware attacks with Microsoft Defender XDR
 description:               This article describes proactive detection of new or ongoing human-operated ransomware attacks with the Microsoft Defender portal
 search.appverid: MET150    
 author:                    nic-name
@@ -18,7 +18,7 @@ ms.collection:
 f1.keywords:               NOCSH
 ---
 
-# Detecting human-operated ransomware attacks with Microsoft 365 Defender
+# Detecting human-operated ransomware attacks with Microsoft Defender XDR
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -44,7 +44,7 @@ For information about preventing ransomware attacks, see [Rapidly protect agains
 
 Because human-operated ransomware is typically performed by active attackers who might be performing the steps to infiltrate and discover your most valuable data and systems in real time, the time taken to detect ransomware attacks is crucial.
 
-If pre-ransom activities are detected quickly, the likelihood of a severe attack decreases. The pre-ransom stage typically includes the following techniques: initial access, reconnaissance, credential theft, lateral movement, and persistence. These techniques can initially seem unrelated and often fly under the radar. If these techniques lead to the ransom stage, it's often too late. Microsoft 365 Defender can help identify those small and seemingly unrelated incidents as possibly part of a larger ransomware campaign.
+If pre-ransom activities are detected quickly, the likelihood of a severe attack decreases. The pre-ransom stage typically includes the following techniques: initial access, reconnaissance, credential theft, lateral movement, and persistence. These techniques can initially seem unrelated and often fly under the radar. If these techniques lead to the ransom stage, it's often too late. Microsoft Defender XDR can help identify those small and seemingly unrelated incidents as possibly part of a larger ransomware campaign.
 
 - When detected during the pre-ransom stage, smaller-scale mitigations such as isolating infected devices or user accounts can be used to disrupt and remediate the attack.
 - If detection comes at a later stage, such as when the malware used to encrypt files is being deployed, more aggressive remediation steps that can cause downtime might need to be used to disrupt and remediate the attack.
@@ -188,7 +188,7 @@ Attacker is downloading sensitive information, encrypting files, or otherwise co
 The Microsoft Defender portal provides a centralized view for information on detections, impacted assets, automated actions taken, and related evidence  a combination of:
 
 - An incident queue, which groups related alerts for an attack to provide the full attack scope, impacted assets, and automated remediation actions.
-- An alerts queue, which lists all of the alerts being tracked by Microsoft 365 Defender.
+- An alerts queue, which lists all of the alerts being tracked by Microsoft Defender XDR.
 
 ### Incident and alert sources
 
@@ -201,7 +201,7 @@ Microsoft Defender portal centralizes signals from:
 - Microsoft Entra ID Protection
 - Microsoft Defender for IoT
 
-This table lists some typical attacks and their corresponding signal source for Microsoft 365 Defender.
+This table lists some typical attacks and their corresponding signal source for Microsoft Defender XDR.
 
 |Attacks and incidents|Signal source|
 |---|---|
@@ -214,7 +214,7 @@ This table lists some typical attacks and their corresponding signal source for 
 
 ### Filtering ransomware-identified incidents
 
-You can easily filter the incidents queue for incidents that have been categorized by Microsoft 365 Defender as ransomware.
+You can easily filter the incidents queue for incidents that have been categorized by Microsoft Defender XDR as ransomware.
 
 1. From the Microsoft Defender portal navigation pane, go to the incidents queue by selecting **Incidents and alerts > Incidents**.
 2. Select **Filters**.
@@ -239,17 +239,21 @@ You can also click this link.
 
 From the **Detection details** section of many threat analytics reports, you can see a list of alert names created for the threat.
 
-### Microsoft 365 Defender APIs
+<a name='microsoft-365-defender-apis'></a>
 
-You can also use the Microsoft 365 Defender APIs to query the Microsoft 365 Defender incidents and alerts data in your tenant. A custom app can filter the data, filter it based on custom settings, and then provide a filtered list of links to alerts and incidents that you can easily select to go right to that alert or incident. See [List incidents API in Microsoft 365 Defender| Microsoft Docs](./api-list-incidents.md). You can also integrate your SIEM with Microsoft Defender, see [Integrate your SIEM tools with Microsoft 365 Defender](./configure-siem-defender.md).
+### Microsoft Defender XDR APIs
 
-### Microsoft 365 Defender Sentinel Integration
+You can also use the Microsoft Defender XDR APIs to query the Microsoft Defender XDR incidents and alerts data in your tenant. A custom app can filter the data, filter it based on custom settings, and then provide a filtered list of links to alerts and incidents that you can easily select to go right to that alert or incident. See [List incidents API in Microsoft Defender XDR| Microsoft Docs](./api-list-incidents.md). You can also integrate your SIEM with Microsoft Defender, see [Integrate your SIEM tools with Microsoft Defender XDR](./configure-siem-defender.md).
 
-Microsoft Sentinel's Microsoft 365 Defender incident integration allows you to stream all Microsoft 365 Defender incidents into Microsoft Sentinel and keep them synchronized between both portals. Incidents include all associated alerts, entities, and relevant information. Once in Sentinel, incidents will remain bi-directionally synced with Microsoft 365 Defender, allowing you to take advantage of the benefits of both portals in your incident investigation. See, [Microsoft 365 Defender integration with Microsoft Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration).
+<a name='microsoft-365-defender-sentinel-integration'></a>
+
+### Microsoft Defender XDR Sentinel Integration
+
+Microsoft Sentinel's Microsoft Defender XDR incident integration allows you to stream all Microsoft Defender XDR incidents into Microsoft Sentinel and keep them synchronized between both portals. Incidents include all associated alerts, entities, and relevant information. Once in Sentinel, incidents will remain bi-directionally synced with Microsoft Defender XDR, allowing you to take advantage of the benefits of both portals in your incident investigation. See, [Microsoft Defender XDR integration with Microsoft Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration).
 
 ### Proactive scanning with advanced hunting
 
-[Advanced hunting](./advanced-hunting-overview.md) is a query-based threat hunting tool that lets you explore and inspect events in your network to locate threat indicators and entities. This flexible and customizable analysis tool enables unconstrained hunting for both known and potential threats. Microsoft 365 Defender also supports using a custom query to create [custom detection rules](./custom-detections-overview.md), which create alerts based on a query can be and scheduled to run automatically.
+[Advanced hunting](./advanced-hunting-overview.md) is a query-based threat hunting tool that lets you explore and inspect events in your network to locate threat indicators and entities. This flexible and customizable analysis tool enables unconstrained hunting for both known and potential threats. Microsoft Defender XDR also supports using a custom query to create [custom detection rules](./custom-detections-overview.md), which create alerts based on a query can be and scheduled to run automatically.
 
 For proactive scanning of ransomware activities, you should assemble a catalog of advanced hunting queries for commonly used ransomware attack methods for identities, endpoints, apps, and data. Here are some key sources for ready-to-use advanced hunting queries:
 
@@ -301,7 +305,7 @@ As needed, you can provide your security analysts with internal training for:
 
 - Common ransomware attack chains (MITRE attack tactics and common threat techniques and malware)
 - Incidents and alerts and how to locate and analyze them in the Microsoft Defender portal using:
-  - Alerts and incidents already created by Microsoft 365 Defender
+  - Alerts and incidents already created by Microsoft Defender XDR
   - Pre-scanned URL-based filters for the Microsoft Defender portal
   - Programmatically via the incidents API
 - Advanced hunting queries to use and their manual schedule (daily, weekly, monthly)

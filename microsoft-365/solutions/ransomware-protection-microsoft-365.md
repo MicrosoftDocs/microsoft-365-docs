@@ -162,7 +162,7 @@ To protect your Microsoft 365 tenant from a ransomware attack, use these Microso
 
 | Capability or feature | Description | Helps detect and respond to... | Licensing |
 |:-------|:-----|:-------|:-------|
-| Microsoft 365 Defender | Combines signals and orchestrates capabilities into a single solution. <br><br> Enables security professionals to stitch together threat signals and determine the full scope and impact of a threat. <br><br> Automates actions to prevent or stop the attack and self-heal affected mailboxes, endpoints, and user identities. | Incidents, which are the combined alerts and data that make up an attack. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
+| Microsoft Defender XDR | Combines signals and orchestrates capabilities into a single solution. <br><br> Enables security professionals to stitch together threat signals and determine the full scope and impact of a threat. <br><br> Automates actions to prevent or stop the attack and self-heal affected mailboxes, endpoints, and user identities. | Incidents, which are the combined alerts and data that make up an attack. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
 | Microsoft Defender for Identity |  Identifies, detects, and investigates advanced threats, compromised identities, and malicious insider actions directed at your organization through a cloud-based security interface uses your on-premises Active Directory Domain Services (AD DS) signals. | Credential compromise for AD DS accounts. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
 | Microsoft Defender for Office 365 | Safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. <br><br> Protects against malware, phishing, spoofing, and other attack types. | Phishing attacks. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
 | Microsoft Defender for Endpoint | Enables detection and response to advanced threats across endpoints (devices). | Malware installation and device compromise. | Microsoft 365 E5 or Microsoft 365 E3 with the Microsoft 365 E5 Security add-on |
@@ -248,7 +248,7 @@ Microsoft 365:
 - [Handling ransomware in SharePoint Online](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
 - [Threat analytics reports for ransomware](https://security.microsoft.com/threatanalytics3?page_size=30&filters=tags%3DRansomware&ordering=-lastUpdatedOn&fields=displayName,alertsCount,impactedEntities,reportType,createdOn,lastUpdatedOn,tags,flag) in the Microsoft Defender portal
 
-Microsoft 365 Defender:
+Microsoft Defender XDR:
 
 - [Find ransomware with advanced hunting](/microsoft-365/security/defender/advanced-hunting-find-ransomware)
 

@@ -25,7 +25,7 @@ Tampering is the general term used to describe attackers attempts to impair the 
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)
+- [Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-defender)
 - [Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-overview)
 
 ## Organization wide tamper resiliency is built on Zero Trust

@@ -1,6 +1,6 @@
 ---
-title: Configure automatic attack disruption capabilities in Microsoft 365 Defender
-description: Configure automatic attack disruption options in Microsoft 365 Defender
+title: Configure automatic attack disruption capabilities in Microsoft Defender XDR
+description: Configure automatic attack disruption options in Microsoft Defender XDR
 search.appverid: MET150
 ms.author: diannegali
 author: diannegali
@@ -21,11 +21,11 @@ ms.reviewer: evaldm, isco
 f1.keywords: CSH
 ---
 
-# Configure automatic attack disruption capabilities in Microsoft 365 Defender
+# Configure automatic attack disruption capabilities in Microsoft Defender XDR
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft 365 Defender includes powerful [automated attack disruption](automatic-attack-disruption.md) capabilities that can protect your environment from sophisticated, high-impact attacks.
+Microsoft Defender XDR includes powerful [automated attack disruption](automatic-attack-disruption.md) capabilities that can protect your environment from sophisticated, high-impact attacks.
 
 This article describes how to configure automatic attack disruption capabilities in <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> with these steps:
 
@@ -35,11 +35,13 @@ This article describes how to configure automatic attack disruption capabilities
 
 Then, after you're all set up, you can view and manage containment actions in Incidents and the Action center. And, if necessary, you can make changes to settings.
 
-## Prerequisites for automatic attack disruption in Microsoft 365 Defender
+<a name='prerequisites-for-automatic-attack-disruption-in-microsoft-365-defender'></a>
+
+## Prerequisites for automatic attack disruption in Microsoft Defender XDR
 
 |Requirement|Details|
 |---|---|
-|Subscription requirements|One of these subscriptions: <ul><li>Microsoft 365 E5 or A5</li><li>Microsoft 365 E3 with the Microsoft 365 E5 Security add-on</li><li>Microsoft 365 E3 with the Enterprise Mobility + Security E5 add-on</li><li>Microsoft 365 A3 with the Microsoft 365 A5 Security add-on</li><li>Windows 10 Enterprise E5 or A5</li><li>Windows 11 Enterprise E5 or A5</li><li>Enterprise Mobility + Security (EMS) E5 or A5</li><li>Office 365 E5 or A5</li><li>Microsoft Defender for Endpoint</li><li>Microsoft Defender for Identity</li><li>Microsoft Defender for Cloud Apps</li><li>Defender for Office 365 (Plan 2)</li><li>Microsoft Defender for Business</li></ul> <p> See [Microsoft 365 Defender licensing requirements](./prerequisites.md#licensing-requirements).|
+|Subscription requirements|One of these subscriptions: <ul><li>Microsoft 365 E5 or A5</li><li>Microsoft 365 E3 with the Microsoft 365 E5 Security add-on</li><li>Microsoft 365 E3 with the Enterprise Mobility + Security E5 add-on</li><li>Microsoft 365 A3 with the Microsoft 365 A5 Security add-on</li><li>Windows 10 Enterprise E5 or A5</li><li>Windows 11 Enterprise E5 or A5</li><li>Enterprise Mobility + Security (EMS) E5 or A5</li><li>Office 365 E5 or A5</li><li>Microsoft Defender for Endpoint</li><li>Microsoft Defender for Identity</li><li>Microsoft Defender for Cloud Apps</li><li>Defender for Office 365 (Plan 2)</li><li>Microsoft Defender for Business</li></ul> <p> See [Microsoft Defender XDR licensing requirements](./prerequisites.md#licensing-requirements).|
 |Deployment requirements|<ul><li>Deployment across Defender products (e.g., Defender for Endpoint, Defender for Office 365, Defender for Identity, and Defender for Cloud Apps)</li><ul><li>The wider the deployment, the greater the protection coverage is. For example, if a Microsoft Defender for Cloud Apps signal is used in a certain detection, then this product is required to detect the relevant specific attack scenario.</li><li>Similarly, the relevant product should be deployed to execute an automated response action. For example, Microsoft Defender for Endpoint is required to automatically contain a device. </li></ul><li>Microsoft Defender for Endpoint's device discovery is set to 'standard discovery'</li></ul>|
 |Permissions|To configure automatic attack disruption capabilities, you must have one of the following roles assigned in either Microsoft Entra ID (<https://portal.azure.com>) or in the Microsoft 365 admin center (<https://admin.microsoft.com>): <ul><li>Global Administrator</li><li>Security Administrator</li></ul>To work with automated investigation and response capabilities, such as by reviewing, approving, or rejecting pending actions, see [Required permissions for Action center tasks](m365d-action-center.md#required-permissions-for-action-center-tasks).|
 
@@ -71,6 +73,6 @@ Excluding user accounts is not recommended, and accounts added to this list won'
 
 ## See also
 
-- [Automatic attack disruption in Microsoft 365 Defender](automatic-attack-disruption.md)
+- [Automatic attack disruption in Microsoft Defender XDR](automatic-attack-disruption.md)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

@@ -26,7 +26,7 @@ ms.date: 11/10/2023
 
 **Applies to:**
 
-- [Microsoft 365 Defender](microsoft-365-defender.md)
+- [Microsoft Defender XDR](microsoft-365-defender.md)
 
 After you completed the [onboarding steps and readiness checks](get-started-xdr.md) for Microsoft Defender Experts for XDR, our experts will start monitoring your environment to streamline the service so we can perform comprehensive service on your behalf. During this stage, our experts identify latent threats, sources of risk, and normal activity.
 
@@ -34,7 +34,7 @@ Once our experts begin to perform comprehensive response work on your behalf, yo
 
 ## Managed detection and response
 
-Through a combination of automation and human expertise, Defender Experts for XDR triages Microsoft 365 Defender incidents, prioritizes them on your behalf, filters out the noise, carries out detailed investigations, and provides actionable managed response to your security operations center (SOC) teams.
+Through a combination of automation and human expertise, Defender Experts for XDR triages Microsoft Defender XDR incidents, prioritizes them on your behalf, filters out the noise, carries out detailed investigations, and provides actionable managed response to your security operations center (SOC) teams.
 
 ### Incident notifications
 
@@ -69,7 +69,9 @@ To view the incidents our experts have investigated or are currently investigati
 
 :::image type="content" source="../../media/xdr/incidents-filter.png" alt-text="Screenshot of the Incidents queue in Microsoft Defender portal filtered to only show those with the  Defender Experts tag." lightbox="../../media/xdr/incidents-filter.png":::
 
-### How to use managed response in Microsoft 365 Defender
+<a name='how-to-use-managed-response-in-microsoft-365-defender'></a>
+
+### How to use managed response in Microsoft Defender XDR
 
 In the Microsoft Defender portal, an incident that requires your attention using managed response has the **Assigned to** field set to _Customer_ and a task card on top of the **Incidents** pane. Your designated incident contacts also receives a corresponding email notification with a link to the Defender portal to view the incident. [Learn more about notification contacts](get-started-xdr.md#tell-us-who-to-contact-for-important-matters).
 
@@ -95,7 +97,7 @@ Defender Experts for XDR currently supports the following one-click managed resp
 Apart from these one-click actions, you can also receive managed responses from our experts that you need to perform manually.
 
 > [!NOTE]
-> Before performing any of the recommended managed response actions, make sure that they are not already being addressed by your automated investigation and response configurations. [Learn more about automated investigation and response capabilities in Microsoft 365 Defender](m365d-autoir.md).
+> Before performing any of the recommended managed response actions, make sure that they are not already being addressed by your automated investigation and response configurations. [Learn more about automated investigation and response capabilities in Microsoft Defender XDR](m365d-autoir.md).
 
 **To view and perform the managed response actions:**
 
@@ -124,26 +126,26 @@ As Defender Experts for XDR investigate incidents and come up with remediation a
 
 ### Microsoft Sentinel
 
-You can get incident visibility in Microsoft Sentinel by turning on its out-of-the-box Microsoft 365 Defender data connector. [Learn more](/azure/sentinel/connect-microsoft-365-defender).
+You can get incident visibility in Microsoft Sentinel by turning on its out-of-the-box Microsoft Defender XDR data connector. [Learn more](/azure/sentinel/connect-microsoft-365-defender).
 
-Once you have turned on the connector, updates by Defender Experts to the **Status**, **Assigned to**, **Classification**, and **Determination** fields in Microsoft 365 Defender will show up in the corresponding **Status**, **Owner**, and **Reason for closing** fields in Sentinel.
+Once you have turned on the connector, updates by Defender Experts to the **Status**, **Assigned to**, **Classification**, and **Determination** fields in Microsoft Defender XDR will show up in the corresponding **Status**, **Owner**, and **Reason for closing** fields in Sentinel.
 
 > [!NOTE]
-> The status of incidents investigated by Defender Experts in Microsoft 365 Defender typically transitions from _Active_ to _In progress_ to _Awaiting Customer Action_ to _Resolved_, while in Sentinel, it follows the _New_ to _Active_ to _Resolved_ path. The Microsoft 365 Defender Status ***Awaiting Customer Action*** doesn't have an equivalent field in Sentinel; instead, it's displayed as a tag in an incident in Sentinel.
+> The status of incidents investigated by Defender Experts in Microsoft Defender XDR typically transitions from _Active_ to _In progress_ to _Awaiting Customer Action_ to _Resolved_, while in Sentinel, it follows the _New_ to _Active_ to _Resolved_ path. The Microsoft Defender XDR Status ***Awaiting Customer Action*** doesn't have an equivalent field in Sentinel; instead, it's displayed as a tag in an incident in Sentinel.
 
 The following section describes how an incident handled by our experts is updated in Sentinel as it progresses through the investigation journey:
 
 1. An incident being investigated by our experts has the **Status** listed as _Active_ and the **Owner** listed as _Defender Experts_.
-1. An incident that our experts have confirmed as a _True Positive_ has a managed response posted in Microsoft 365 Defender, and a **Tag** _Awaiting Customer Action_ and the **Owner** is listed as _Customer_. You need to act on the incident based on using the provided managed response.
+1. An incident that our experts have confirmed as a _True Positive_ has a managed response posted in Microsoft Defender XDR, and a **Tag** _Awaiting Customer Action_ and the **Owner** is listed as _Customer_. You need to act on the incident based on using the provided managed response.
 1. Once our experts have concluded their investigation and closed an incident as _False Positive_ or _Informational_, _Expected Activity_, the incident's **Status** is updated to _Resolved_, the **Owner** is updated to _Unassigned_, and a **Reason for closing** is provided.
 
 :::image type="content" source="../../media/xdr/microsoft-sentinel-incidents.png" alt-text="Screenshot of Microsoft Sentinel incidents." lightbox="../../media/xdr/microsoft-sentinel-incidents.png":::
 
 ### Other applications
 
-You could obtain visibility into incidents in your SIEM or ITSM application by using the [Microsoft 365 Defender API](../defender/api-overview.md) or [connectors in Sentinel](/azure/sentinel/data-connectors-reference).
+You could obtain visibility into incidents in your SIEM or ITSM application by using the [Microsoft Defender XDR API](../defender/api-overview.md) or [connectors in Sentinel](/azure/sentinel/data-connectors-reference).
 
-After configuring a connector, the updates by Defender Experts to an incident's **Status**, **Assigned to**, **Classification**, and **Determination** fields in Microsoft 365 Defender can be synchronized with the third-party SIEM or ITSM applications, depending on how the field mapping has been implemented. To illustrate, you can take a look at the [connector available from Sentinel to ServiceNow](https://github.com/Azure/Azure-Sentinel/tree/master/Solutions/Servicenow/StoreApp).
+After configuring a connector, the updates by Defender Experts to an incident's **Status**, **Assigned to**, **Classification**, and **Determination** fields in Microsoft Defender XDR can be synchronized with the third-party SIEM or ITSM applications, depending on how the field mapping has been implemented. To illustrate, you can take a look at the [connector available from Sentinel to ServiceNow](https://github.com/Azure/Azure-Sentinel/tree/master/Solutions/Servicenow/StoreApp).
 
 ## Get real-time visibility with Defender Experts for XDR reports
 

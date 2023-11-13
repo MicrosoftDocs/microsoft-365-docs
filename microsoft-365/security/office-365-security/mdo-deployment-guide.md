@@ -237,7 +237,7 @@ When it comes to assigning permissions for tasks in EOP and Defender for Office 
 
 **For simplicity, we recommend using the [Security Administrator](/azure/active-directory/roles/permissions-reference#security-administrator) role in Azure AD for others who need to configure settings in EOP and Defender for Office 365.**
 
-For instructions, see [View and assign administrator roles in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-manage-roles-portal) and [Manage access to Microsoft 365 Defender with Azure Active Directory global roles](/microsoft-365/security/defender/m365d-permissions).
+For instructions, see [View and assign administrator roles in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-manage-roles-portal) and [Manage access to Microsoft Defender XDR with Azure Active Directory global roles](/microsoft-365/security/defender/m365d-permissions).
 
 ## Step 4: Priority accounts and user tags
 

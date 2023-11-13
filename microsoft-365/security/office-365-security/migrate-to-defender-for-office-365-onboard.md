@@ -66,7 +66,7 @@ If your security response team collects and analyzes unfiltered messages, you ca
 
 For more information about integrating with your SIEM/SOAR, see the following articles:
 
-- [Overview of Microsoft 365 Defender APIs](/microsoft-365/security/defender/api-overview)
+- [Overview of Microsoft Defender XDR APIs](/microsoft-365/security/defender/api-overview)
 - [Streaming API](/microsoft-365/security/defender/streaming-api)
 - [Advanced Hunting API](/microsoft-365/security/defender/api-advanced-hunting)
 - [Incidents APIs](/microsoft-365/security/defender/api-incident)

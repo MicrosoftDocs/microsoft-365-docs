@@ -1,6 +1,6 @@
 ---
-title: Hello World for Microsoft 365 Defender REST API
-description: Learn how to create an app and use a token to access the Microsoft 365 Defender APIs
+title: Hello World for Microsoft Defender XDR REST API
+description: Learn how to create an app and use a token to access the Microsoft Defender XDR APIs
 keywords: app, token, access, aad, app, application registration, powershell, script, global administrator, permission, microsoft 365 defender
 search.product: eADQiWindows 10XVcnh
 ms.service: microsoft-365-security
@@ -27,13 +27,13 @@ ms.custom: api
 ms.date: 02/16/2021
 ---
 
-# Hello World for Microsoft 365 Defender REST API
+# Hello World for Microsoft Defender XDR REST API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -54,10 +54,10 @@ It should take 5 to 10 minutes to complete this project. This time estimate incl
 
 3. In the registration form, choose a name for your application, then select **Register**. Selecting a redirect URI is optional. You won't need one to complete this example.
 
-4. On your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** >, type **Microsoft Threat Protection**, and select **Microsoft Threat Protection**. Your app can now access Microsoft 365 Defender.
+4. On your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** >, type **Microsoft Threat Protection**, and select **Microsoft Threat Protection**. Your app can now access Microsoft Defender XDR.
 
    > [!TIP]
-   > *Microsoft Threat Protection* is a former name for Microsoft 365 Defender, and will not appear in the original list. You need to start writing its name in the text box to see it appear.
+   > *Microsoft Threat Protection* is a former name for Microsoft Defender XDR, and will not appear in the original list. You need to start writing its name in the text box to see it appear.
    :::image type="content" source="../../media/apis-in-my-org-tab.PNG" alt-text="The section of APIs usage in the Microsoft Defender portal" lightbox="../../media/apis-in-my-org-tab.PNG":::
 
    - Choose **Application permissions** > **Incident.Read.All** and select **Add permissions**.
@@ -175,11 +175,11 @@ You're all done! You've successfully:
 
 ## Related articles
 
-- [Microsoft 365 Defender APIs overview](api-overview.md)
-- [Access the Microsoft 365 Defender APIs](api-access.md)
-- [Create an app to access Microsoft 365 Defender without a user](api-create-app-web.md)
-- [Create an app to access Microsoft 365 Defender APIs on behalf of a user](api-create-app-user-context.md)
-- [Create an app with multi-tenant partner access to Microsoft 365 Defender APIs](api-partner-access.md)
+- [Microsoft Defender XDR APIs overview](api-overview.md)
+- [Access the Microsoft Defender XDR APIs](api-access.md)
+- [Create an app to access Microsoft Defender XDR without a user](api-create-app-web.md)
+- [Create an app to access Microsoft Defender XDR APIs on behalf of a user](api-create-app-user-context.md)
+- [Create an app with multi-tenant partner access to Microsoft Defender XDR APIs](api-partner-access.md)
 - [Manage secrets in your server apps with Azure Key Vault](/training/modules/manage-secrets-with-azure-key-vault/)
 - [OAuth 2.0 Authorization for user sign in and API access](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

@@ -25,7 +25,7 @@ ms.date: 09/19/2023
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
 [!Include[Prerelease information](../../includes/prerelease.md)]
@@ -221,7 +221,7 @@ Once you configure your network to communicate with the full list of services, y
 Before proceeding, confirm devices meet the [prerequisites](#prerequisites) and have updated the sensor and Microsoft Defender Antivirus versions. 
 
 
-To get the new package, in Microsoft 365 Defender, select **Settings > Endpoints > Device management> Onboarding**.
+To get the new package, in Microsoft Defender XDR, select **Settings > Endpoints > Device management> Onboarding**.
 
 
 Select the applicable operating system and choose "Streamlined (preview)" from the Connectivity type dropdown menu.

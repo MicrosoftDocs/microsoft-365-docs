@@ -114,7 +114,7 @@ Defender for Business brings the enterprise-grade capabilities of Defender for E
 > 
 > 6. To onboard servers, another license is required. See [Onboard devices to Defender for Business](mdb-onboard-devices.md) or [Onboard devices and configure Microsoft Defender for Endpoint capabilities](../defender-endpoint/onboard-configure.md).
 >
-> 7. Using the [Microsoft 365 Streaming API](../defender/streaming-api.md) with Defender for Business, you can view information about device events in your SIEM server. For more information, see [Supported Microsoft 365 Defender streaming event types in event streaming API](../defender/supported-event-types.md). 
+> 7. Using the [Microsoft 365 Streaming API](../defender/streaming-api.md) with Defender for Business, you can view information about device events in your SIEM server. For more information, see [Supported Microsoft Defender XDR streaming event types in event streaming API](../defender/supported-event-types.md). 
 
 
 ## Next steps

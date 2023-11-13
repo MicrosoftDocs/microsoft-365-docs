@@ -29,7 +29,7 @@ ms.date: 9/13/2023
 
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 Want to get started searching for email threats using advanced hunting? Try these steps:
 

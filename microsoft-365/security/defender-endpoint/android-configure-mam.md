@@ -29,7 +29,7 @@ ms.date: 01/13/2023
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Microsoft Defender for Endpoint on Android, which already protects enterprise users on Mobile Device Management (MDM) scenarios, now extends support to Mobile App Management (MAM), for devices that aren't enrolled using Intune mobile device management (MDM). It also extends this support to customers who use other enterprise mobility management solutions, while still using Intune for mobile application management (MAM). This capability allows you to manage and protect your organization's data within an application.
 

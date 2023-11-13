@@ -27,7 +27,7 @@ ms.date: 07/11/2023
 
 **Applies to:**
 
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Business](../defender-business/mdb-overview.md)
@@ -42,7 +42,7 @@ Dynamic rules can help manage device context by assigning tags and device values
 
 A rule can be based on device name, domain, OS platform, internet facing status, onboarding status and manual device tags. You can select or create a tag that will be applied based on the conditions you’ve set.
 
-The following steps guide you on how to create a new dynamic rule in Microsoft 365 Defender:
+The following steps guide you on how to create a new dynamic rule in Microsoft Defender XDR:
 
 1. Sign in to the [Microsoft Defender portal](https://security.microsoft.com) as a user who can view and perform actions on all devices.
 2. In the navigation pane, select **Settings** \> **Microsoft 365 Defender** \> **Asset Rule Management**.

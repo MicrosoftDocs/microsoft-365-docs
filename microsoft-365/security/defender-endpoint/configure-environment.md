@@ -25,7 +25,7 @@ ms.date: 10/24/2023
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
@@ -44,7 +44,7 @@ The following downloadable spreadsheet lists the services and their associated U
 
 > [!NOTE]
 > (Applies to public preview)<br>
-> - As part of the preview, certain Defender for Endpoint services are consolidated behind the URL: `*.endpoint.security.microsoft.com`. You have the option to use the reduced set of URLs in Microsoft 365 Defender for Defender for Endpoint. You also have the new option of configuring allow lists using static Defender for Endpoint dedicated IP ranges. For more information, see [onboarding devices using streamlined method](configure-device-connectivity.md) and review the [updated list](https://go.microsoft.com/fwlink/?linkid=2248278) in the preceding table.<br> 
+> - As part of the preview, certain Defender for Endpoint services are consolidated behind the URL: `*.endpoint.security.microsoft.com`. You have the option to use the reduced set of URLs in Microsoft Defender XDR for Defender for Endpoint. You also have the new option of configuring allow lists using static Defender for Endpoint dedicated IP ranges. For more information, see [onboarding devices using streamlined method](configure-device-connectivity.md) and review the [updated list](https://go.microsoft.com/fwlink/?linkid=2248278) in the preceding table.<br> 
 > - To use the new onboarding method, devices must meet specific prerequisites and use a new onboarding package. For more information, see [prerequisites](configure-device-connectivity.md#prerequisites). You can migrate previously onboarded devices. See, [migrating devices to streamlined connectivity](migrate-devices-streamlined.md
 ).<br>
 > - Certain services are not included in this consolidation. You must verify that you maintain connectivity with the required services. For details on services **not** included in the consolidation, see the [streamlined URL sheet](https://go.microsoft.com/fwlink/?linkid=2248278) or [onboarding devices using streamlined method](configure-device-connectivity.md).

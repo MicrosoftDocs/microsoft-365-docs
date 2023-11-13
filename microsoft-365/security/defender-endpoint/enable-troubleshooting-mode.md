@@ -66,7 +66,7 @@ During troubleshooting mode, you can use the PowerShell command `Set-MPPreferenc
 
 - Troubleshooting mode automatically turns off after reaching the expiration time (it lasts for 4 hours). After expiration, all policy-managed configurations become read-only again and revert back to how the device was configured before enabling troubleshooting mode.
 
-- It could take up to 15 minutes from the time the command is sent from Microsoft 365 Defender to when it becomes active on the device.
+- It could take up to 15 minutes from the time the command is sent from Microsoft Defender XDR to when it becomes active on the device.
 
 - Notifications are sent to the user when troubleshooting mode begins and when troubleshooting mode ends. A warning is also sent to indicate that troubleshooting mode is ending soon.
 

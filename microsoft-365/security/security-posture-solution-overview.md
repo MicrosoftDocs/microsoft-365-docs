@@ -1,5 +1,5 @@
 ---
-title: "Strengthen your security posture with Microsoft 365 Defender"
+title: "Strengthen your security posture with Microsoft Defender XDR"
 f1.keywords:
 - security posture
 - strengthen security posture
@@ -24,11 +24,11 @@ ms.collection:
 ms.date: 09/18/2023
 ---
 
-# Strengthen your security posture with Microsoft 365 Defender
+# Strengthen your security posture with Microsoft Defender XDR
 
 It has never been more important to be able to detect and defend your organization against cyber security threats. Knowing your assets, using the built-in configurations available to you, and taking recommended actions helps you build great security posture and resilience while also empowering you to respond rapidly to new and evolving threats.
 
-As an organization's security posture is constantly changing alongside the cybersecurity landscape, making security posture improvements should be a continuous process. This article provides an overview of how you can strengthen your organization's security posture using capabilities available in Microsoft 365 Defender and other Microsoft security products, such as Microsoft Defender for Endpoint and Microsoft Defender Vulnerability Management.
+As an organization's security posture is constantly changing alongside the cybersecurity landscape, making security posture improvements should be a continuous process. This article provides an overview of how you can strengthen your organization's security posture using capabilities available in Microsoft Defender XDR and other Microsoft security products, such as Microsoft Defender for Endpoint and Microsoft Defender Vulnerability Management.
 
 It will help you better understand your overall security posture and provide a framework to help you continually assess, improve, and maintain a security posture to fit your organization's security needs.
 

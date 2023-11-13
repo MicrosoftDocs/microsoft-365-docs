@@ -23,7 +23,7 @@ ms.date: 12/18/2020
 # Manage portal access using role-based access control
 
 > [!NOTE]
-> If you are running the Microsoft 365 Defender preview program you can now experience the new Microsoft Defender 365 Unified role-based access control (RBAC) model. For more information, see [Microsoft Defender 365 Unified role-based access control (RBAC)](../defender/manage-rbac.md).
+> If you are running the Microsoft Defender XDR preview program you can now experience the new Microsoft Defender 365 Unified role-based access control (RBAC) model. For more information, see [Microsoft Defender 365 Unified role-based access control (RBAC)](../defender/manage-rbac.md).
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -49,7 +49,7 @@ Large geo-distributed security operations teams typically adopt a tier-based mod
 |Tier 3|**Global security operations team** <br> This team consists of security experts and are authorized to see and perform all actions from the portal.|
 
 > [!NOTE]
-> For Tier 0 assets, refer to [Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure) for security admins to provide more granular control of Microsoft Defender for Endpoint and Microsoft 365 Defender.
+> For Tier 0 assets, refer to [Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure) for security admins to provide more granular control of Microsoft Defender for Endpoint and Microsoft Defender XDR.
 
 Defender for Endpoint RBAC is designed to support your tier- or role-based model of choice and gives you granular control over what roles can see, devices they can access, and actions they can take. The RBAC framework is centered around the following controls:
 

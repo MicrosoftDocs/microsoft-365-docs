@@ -59,7 +59,7 @@ To view and use this report in the Microsoft Defender portal at <https://securit
 
 This feature is only available if you have an active Office 365 E5 or G5 or Microsoft 365 E5 or G5 subscription or the Threat Intelligence add-on. For more information, see the Office 365 Enterprise E5 product page.
 
-Data from Microsoft Defender for Office 365 is incorporated into Microsoft 365 Defender to conduct a comprehensive security investigation across Office 365 mailboxes and Windows devices.
+Data from Microsoft Defender for Office 365 is incorporated into Microsoft Defender XDR to conduct a comprehensive security investigation across Office 365 mailboxes and Windows devices.
 
 ### Incidents
 

@@ -37,7 +37,7 @@ ms.subservice: mde
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configserver-abovefoldlink)
 
-Defender for Endpoint extends support to also include the Windows Server operating system. This support provides advanced attack detection and investigation capabilities seamlessly through the Microsoft 365 Defender console. Support for Windows Server provides deeper insight into server activities, coverage for kernel and memory attack detection, and enables response actions.
+Defender for Endpoint extends support to also include the Windows Server operating system. This support provides advanced attack detection and investigation capabilities seamlessly through the Microsoft Defender XDR console. Support for Windows Server provides deeper insight into server activities, coverage for kernel and memory attack detection, and enables response actions.
 
 This article describes how to onboard specific Windows servers to Microsoft Defender for Endpoint.
 
@@ -162,7 +162,7 @@ The **onboarding package** contains the following files:
 
 Follow these steps to download the packages:
 
-1. In Microsoft 365 Defender, go to **Settings > Endpoint > Onboarding**.
+1. In Microsoft Defender XDR, go to **Settings > Endpoint > Onboarding**.
 
 2. Select **Windows Server 2012 R2 and 2016**.
 
@@ -294,7 +294,7 @@ The following steps are only applicable if you're using a third-party anti-malwa
 
 ### Download package
 
-1. In Microsoft 365 Defender, go to **Settings > Endpoints > Device Management > Onboarding**.
+1. In Microsoft Defender XDR, go to **Settings > Endpoints > Device Management > Onboarding**.
 
 2. Select **Windows Server 1803 and 2019**.
 

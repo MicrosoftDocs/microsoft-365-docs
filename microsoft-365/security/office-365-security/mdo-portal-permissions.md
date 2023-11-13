@@ -40,7 +40,7 @@ You need to be member of the **Global Administrator** role in Microsoft Entra ID
 > [!NOTE]
 > Some Defender for Office 365 features require additional permissions in Exchange Online. For more information, see [Permissions in Exchange Online](/exchange/permissions-exo/permissions-exo).
 >
-> In the Microsoft 365 Defender preview program, a different Microsoft Defender 365 RBAC model is also available. The permissions in this RBAC model are different from the Defender for Office 365 permissions as described in this article. For more information, see [Microsoft 365 Defender role-based access control (RBAC)](../defender/manage-rbac.md).
+> In the Microsoft Defender XDR preview program, a different Microsoft Defender 365 RBAC model is also available. The permissions in this RBAC model are different from the Defender for Office 365 permissions as described in this article. For more information, see [Microsoft Defender XDR role-based access control (RBAC)](../defender/manage-rbac.md).
 >
 > For information about permissions in the Microsoft Purview compliance portal, see [Permissions in the Microsoft Purview compliance portal](/purview/microsoft-365-compliance-center-permissions).
 
@@ -80,7 +80,7 @@ When you select a role, a details flyout opens that contains the description of 
 
 :::image type="content" source="../../media/permissions-manage-in-azure-ad-link.png" alt-text="The link to manage permissions in Microsoft Entra ID" lightbox="../../media/permissions-manage-in-azure-ad-link.png":::
 
-For more information, see [View and assign administrator roles in Microsoft Entra ID](/azure/active-directory/users-groups-roles/directory-manage-roles-portal) and [Manage access to Microsoft 365 Defender with Microsoft Entra global roles](/microsoft-365/security/defender/m365d-permissions).
+For more information, see [View and assign administrator roles in Microsoft Entra ID](/azure/active-directory/users-groups-roles/directory-manage-roles-portal) and [Manage access to Microsoft Defender XDR with Microsoft Entra global roles](/microsoft-365/security/defender/m365d-permissions).
 
 |Role|Description|
 |---|---|
@@ -103,7 +103,7 @@ The same role groups and roles are available in the Defender portal and in the P
 - [Defender portal](https://security.microsoft.com): **Permissions** \> **Email & collaboration roles** \> **Roles** or directly at <https://security.microsoft.com/emailandcollabpermissions>
 - [Purview compliance portal](https://compliance.microsoft.com): **Roles & Scopes** \> **Permissions** \> **Microsoft Purview solutions** \> **Roles** or directly at <https://compliance.microsoft.com/compliancecenterpermissions>
 
-For complete information about these role groups, see [Roles and role groups in the Microsoft 365 Defender and Microsoft Purview compliance portals](scc-permissions.md)
+For complete information about these role groups, see [Roles and role groups in the Microsoft Defender XDR and Microsoft Purview compliance portals](scc-permissions.md)
 
 The following actions are available for Email & collaboration role groups in the Defender portal:
 

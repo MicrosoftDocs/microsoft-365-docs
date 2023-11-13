@@ -27,7 +27,7 @@ ms.date: 10/30/2023
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
@@ -438,11 +438,11 @@ Download the onboarding package from Microsoft Defender portal.
 
 6. Run an EDR detection test and simulate a detection to verify that the device is properly onboarded and reporting to the service. Perform the following steps on the newly onboarded device:
 
-   - Verify that the onboarded Linux server appears in Microsoft 365 Defender. If this is the first onboarding of the machine, it can take up to 20 minutes until it appears.
+   - Verify that the onboarded Linux server appears in Microsoft Defender XDR. If this is the first onboarding of the machine, it can take up to 20 minutes until it appears.
 
    - Download and extract the [script file](https://aka.ms/LinuxDIY) to an onboarded Linux server and run the following command: `./mde_linux_edr_diy.sh`
 
-   - After a few minutes, a detection should be raised in Microsoft 365 Defender.
+   - After a few minutes, a detection should be raised in Microsoft Defender XDR.
 
    - Look at the alert details, machine timeline, and perform your typical investigation steps.
 

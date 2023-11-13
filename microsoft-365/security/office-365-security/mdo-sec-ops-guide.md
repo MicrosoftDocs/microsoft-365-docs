@@ -35,20 +35,22 @@ The rest of this guide describes the required activities for SecOps personnel. T
 
 A companion article to this guide provides an overview to [manage incidents and alerts from Defender for Office 365 on the Incidents page in the Microsoft Defender portal](mdo-sec-ops-manage-incidents-and-alerts.md).
 
-The [Microsoft 365 Defender Security Operations Guide](/microsoft-365/security/defender/integrate-microsoft-365-defender-secops) contains additional information that you can use for planning and development.
+The [Microsoft Defender XDR Security Operations Guide](/microsoft-365/security/defender/integrate-microsoft-365-defender-secops) contains additional information that you can use for planning and development.
 
 For a video about this information, see <https://youtu.be/eQanpq9N1Ps>.
 
 ## Daily activities
 
-### Monitor the Microsoft 365 Defender Incidents queue
+<a name='monitor-the-microsoft-365-defender-incidents-queue'></a>
+
+### Monitor the Microsoft Defender XDR Incidents queue
 
 The **Incidents** page in the Microsoft Defender portal at <https://security.microsoft.com/incidents-queue> (also known as the _Incidents queue_) allows you to manage and monitor events from the following sources in Defender for Office 365:
 
 - [Alerts](/purview/alert-policies#default-alert-policies).
 - [Automated investigation and response (AIR)](air-about-office.md).
 
-For more information about the Incidents queue, see [Prioritize incidents in Microsoft 365 Defender](../defender/incident-queue.md).
+For more information about the Incidents queue, see [Prioritize incidents in Microsoft Defender XDR](../defender/incident-queue.md).
 
 Your triage plan for monitoring the Incidents queue should use the following order of precedence for incidents:
 
@@ -217,9 +219,9 @@ The following permissions (roles and role groups) are available in Defender for 
 
 ### SIEM/SOAR integration
 
-Defender for Office 365 exposes most of its data through a set of programmatic APIs. These APIs help you automate workflows and make full use of Defender for Office 365 capabilities. Data is available through the [Microsoft 365 Defender APIs](/microsoft-365/security/defender/api-overview) and can be used to integrate Defender for Office 365 into existing SIEM/SOAR solutions.
+Defender for Office 365 exposes most of its data through a set of programmatic APIs. These APIs help you automate workflows and make full use of Defender for Office 365 capabilities. Data is available through the [Microsoft Defender XDR APIs](/microsoft-365/security/defender/api-overview) and can be used to integrate Defender for Office 365 into existing SIEM/SOAR solutions.
 
-- [Incident API](/microsoft-365/security/defender/api-incident): Defender for Office 365 alerts and automated investigations are active parts of incidents in Microsoft 365 Defender. Security teams can focus on what's critical by grouping the full attack scope and all impacted assets together.
+- [Incident API](/microsoft-365/security/defender/api-incident): Defender for Office 365 alerts and automated investigations are active parts of incidents in Microsoft Defender XDR. Security teams can focus on what's critical by grouping the full attack scope and all impacted assets together.
 
 - [Event streaming API](/microsoft-365/security/defender/streaming-api): Allows shipping of real-time events and alerts into a single data stream as they happen. Supported event types in Defender for Office 365 include:
   - [EmailEvents](/microsoft-365/security/defender/advanced-hunting-emailevents-table)
@@ -233,11 +235,11 @@ Defender for Office 365 exposes most of its data through a set of programmatic A
 
 - [Threat Assessment API](/graph/api/resources/threatassessment-api-overview): Can be used to report spam, phishing URLs, or malware attachments directly to Microsoft.
 
-To connect Defender for Office 365 incidents and raw data with Microsoft Sentinel, you can use the [Microsoft 365 Defender (M365D) connector](/azure/sentinel/connect-microsoft-365-defender?tabs=MDO)
+To connect Defender for Office 365 incidents and raw data with Microsoft Sentinel, you can use the [Microsoft Defender XDR (M365D) connector](/azure/sentinel/connect-microsoft-365-defender?tabs=MDO)
 
-You can use the following "Hello World" example to test API access to Microsoft Defender APIs: [Hello World for Microsoft 365 Defender REST API](/microsoft-365/security/defender/api-hello-world).
+You can use the following "Hello World" example to test API access to Microsoft Defender APIs: [Hello World for Microsoft Defender XDR REST API](/microsoft-365/security/defender/api-hello-world).
 
-For more information about SIEM tool integration, see [Integrate your SIEM tools with Microsoft 365 Defender](/microsoft-365/security/defender/configure-siem-defender).
+For more information about SIEM tool integration, see [Integrate your SIEM tools with Microsoft Defender XDR](/microsoft-365/security/defender/configure-siem-defender).
 
 ## Address false positives and false negatives in Defender for Office 365
 
@@ -302,9 +304,9 @@ When a user reported message arrives in the reporting mailbox, Defender for Offi
 - Gather data about the threats and _entities_ related to that email (for example, files, URLs, and recipients).
 - Provide recommended actions for the SecOps team to take based on the investigation findings.
 
-**Email reported by user as malware or phish** alerts, automated investigations and their recommended actions are automatically correlated to incidents in Microsoft 365 Defender. This correlation further simplifies the triage and response process for security teams. If multiple users report the same or similar messages, all of the users and messages are correlated into the same incident.
+**Email reported by user as malware or phish** alerts, automated investigations and their recommended actions are automatically correlated to incidents in Microsoft Defender XDR. This correlation further simplifies the triage and response process for security teams. If multiple users report the same or similar messages, all of the users and messages are correlated into the same incident.
 
-Data from alerts and investigations in Defender for Office 365 is automatically compared to alerts and investigations in the other Microsoft 365 Defender products:
+Data from alerts and investigations in Defender for Office 365 is automatically compared to alerts and investigations in the other Microsoft Defender XDR products:
 
 - Microsoft Defender for Endpoint
 - Microsoft Defender for Cloud Apps

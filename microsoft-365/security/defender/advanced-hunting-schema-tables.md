@@ -1,5 +1,5 @@
 ---
-title: Data tables in the Microsoft 365 Defender advanced hunting schema
+title: Data tables in the Microsoft Defender XDR advanced hunting schema
 description: Learn about the tables in the advanced hunting schema to understand the data you can run threat hunting queries on
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, data
 search.product: eADQiWindows 10XVcnh
@@ -29,7 +29,7 @@ ms.date: 02/16/2021
 
 **Applies to:**
 
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
@@ -52,7 +52,7 @@ To quickly access the schema reference, select the **View reference** action nex
 :::image type="content" source="../../media/understand-schema-1.png" alt-text="The Schema Reference page on the Advanced Hunting page in the Microsoft Defender portal" lightbox="../../media/understand-schema-1.png":::
 
 ## Learn the schema tables
-The following reference lists all the tables in the schema. Each table name links to a page describing the column names for that table. Table and column names are also listed in Microsoft 365 Defender as part of the schema representation on the advanced hunting screen.
+The following reference lists all the tables in the schema. Each table name links to a page describing the column names for that table. Table and column names are also listed in Microsoft Defender XDR as part of the schema representation on the advanced hunting screen.
 
 | Table name | Description |
 |------------|-------------|

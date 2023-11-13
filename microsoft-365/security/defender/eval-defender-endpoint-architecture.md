@@ -1,6 +1,6 @@
 ---
 title: Review Microsoft Defender for Endpoint architecture requirements and key concepts
-description: The technical diagram for Microsoft Defender for Endpoint in Microsoft 365 Defender will help you understand identity in Microsoft 365 before you build your trial lab or pilot environment.
+description: The technical diagram for Microsoft Defender for Endpoint in Microsoft Defender XDR will help you understand identity in Microsoft 365 before you build your trial lab or pilot environment.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: microsoft-365-security
@@ -29,7 +29,7 @@ ms.topic: conceptual
 # Review Microsoft Defender for Endpoint architecture requirements and key concepts
 
 **Applies to:**
-Microsoft 365 Defender
+Microsoft Defender XDR
 
 This article will guide you in the process of setting up the evaluation for Microsoft Defender for Endpoint environment.
 
@@ -51,7 +51,7 @@ Call-out | Description
 2 | On-boarded devices provide and respond to Microsoft Defender for Endpoint signal data.
 3 | Managed devices are joined and/or enrolled in Microsoft Entra ID.
 4 | Domain-joined Windows devices are synchronized to Microsoft Entra ID using Microsoft Entra Connect.
-5 | Microsoft Defender for Endpoint alerts, investigations, and responses are managed in Microsoft 365 Defender.
+5 | Microsoft Defender for Endpoint alerts, investigations, and responses are managed in Microsoft Defender XDR.
 
 ## Understand key concepts
 
@@ -82,5 +82,5 @@ Microsoft Defender for Endpoint can also be integrated into other Security Infor
 
 Return to the overview for [Evaluate Microsoft Defender for Endpoint](eval-defender-endpoint-overview.md)
 
-Return to the overview for [Evaluate and pilot Microsoft 365 Defender](eval-overview.md)
+Return to the overview for [Evaluate and pilot Microsoft Defender XDR](eval-overview.md)
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

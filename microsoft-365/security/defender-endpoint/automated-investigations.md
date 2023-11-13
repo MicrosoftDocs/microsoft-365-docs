@@ -27,7 +27,7 @@ search.appverid: met150
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Business](../defender-business/mdb-overview.md)
 
@@ -108,5 +108,5 @@ Currently, AIR only supports the following OS versions:
 
 - [PUA protection](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
 - [Automated investigation and response in Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/air-about)
-- [Automated investigation and response in Microsoft 365 Defender](/microsoft-365/security/defender/m365d-autoir)
+- [Automated investigation and response in Microsoft Defender XDR](/microsoft-365/security/defender/m365d-autoir)
 [!INCLUDE [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md)]

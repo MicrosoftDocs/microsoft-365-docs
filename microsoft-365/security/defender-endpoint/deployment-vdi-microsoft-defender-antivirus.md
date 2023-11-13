@@ -32,7 +32,7 @@ search.appverid: met150
 - Windows
 
 > [!TIP]
-> This article is designed for customers who are using Microsoft Defender Antivirus capabilities only. If you have Microsoft Defender for Endpoint (which includes Microsoft Defender Antivirus alongside additional device protection capabilities), skip this article and proceed to [Onboard non-persistent virtual desktop infrastructure (VDI) devices in Microsoft 365 Defender](configure-endpoints-vdi.md).
+> This article is designed for customers who are using Microsoft Defender Antivirus capabilities only. If you have Microsoft Defender for Endpoint (which includes Microsoft Defender Antivirus alongside additional device protection capabilities), skip this article and proceed to [Onboard non-persistent virtual desktop infrastructure (VDI) devices in Microsoft Defender XDR](configure-endpoints-vdi.md).
 
 You can use Microsoft Defender Antivirus in a remote desktop (RDS) or non-persistent virtual desktop infrastructure (VDI) environment. Following the guidance in this article, you can configure updates to download directly to your RDS or VDI environments when a user signs in.
 

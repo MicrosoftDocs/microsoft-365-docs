@@ -1,5 +1,5 @@
 ---
-title: Investigate users in Microsoft 365 Defender
+title: Investigate users in Microsoft Defender XDR
 description: Investigate users for an incident in the Microsoft Defender portal.
 keywords: security, malware, Microsoft 365, M365, security center, monitor, report, identities, data, devices, apps, incident, analyze, response
 ms.service: microsoft-365-security
@@ -21,15 +21,15 @@ ms.custom: seo-marvel-jun2020
 ms.date: 08/04/2023
 ---
 
-# Investigate users in Microsoft 365 Defender
+# Investigate users in Microsoft Defender XDR
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
-The user entity page in Microsoft 365 Defender helps you in your investigation of user identities. The page has all the important information about each identity. If an alert or incident indicates that a user might be compromised or is suspicious, check and investigate the user profile. 
+The user entity page in Microsoft Defender XDR helps you in your investigation of user identities. The page has all the important information about each identity. If an alert or incident indicates that a user might be compromised or is suspicious, check and investigate the user profile. 
 
 You can find identity information in the following views:
 
@@ -103,7 +103,7 @@ Defender for Identity pulls tags out of Active Directory to give you a single in
 | **Unresolved** |  Indicates that the device doesn't resolve to a valid identity in the Active Directory forest. No directory information is available. |
 | **Sensitive** |  Indicates that the entity is considered as sensitive. |
 
-For more information, see [Defender for Identity entity tags in Microsoft 365 Defender](/defender-for-identity/entity-tags).
+For more information, see [Defender for Identity entity tags in Microsoft Defender XDR](/defender-for-identity/entity-tags).
 
 > [!NOTE]
 > The organization tree section and the account tags are available when a Microsoft Defender for Identity license is available.
@@ -176,7 +176,7 @@ For example:
 ![Screenshot of the Timeline tab.](media/investigate-users/time.png)
 
 > [!NOTE]
-> Microsoft 365 Defender can display date and time information using either your local time zone or UTC. The selected time zone will apply to all date and time information shown in the Identity timeline. 
+> Microsoft Defender XDR can display date and time information using either your local time zone or UTC. The selected time zone will apply to all date and time information shown in the Identity timeline. 
 > To set the time zone for these features, go to **Settings** > **Security center** > **Time zone**.
 
 ## Remediation actions

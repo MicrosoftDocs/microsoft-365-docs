@@ -18,7 +18,7 @@ ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 ms.custom: 
   - seo-marvel-apr2020
   - admindeeplinkSPO
-description: Manual configurations for Exchange Online Protection, Microsoft Defender for Office 365, Plan 1 and 2, and Microsoft 365 Defender, for complete protection of your Office 365 subscription.
+description: Manual configurations for Exchange Online Protection, Microsoft Defender for Office 365, Plan 1 and 2, and Microsoft Defender XDR, for complete protection of your Office 365 subscription.
 ms.subservice: mdo
 ms.service: microsoft-365-security
 ms.date: 10/16/2023

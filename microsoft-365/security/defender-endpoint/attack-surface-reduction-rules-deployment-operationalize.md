@@ -40,7 +40,7 @@ Consistent, regular review of reports is an essential aspect of maintaining your
 
 ## ASR rules Advanced Hunting
 
-One of the most powerful features of [Microsoft 365 Defender](https://security.microsoft.com) is advanced hunting. If you're not familiar with advanced hunting, see: [Proactively hunt for threats with advanced hunting](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview).
+One of the most powerful features of [Microsoft Defender XDR](https://security.microsoft.com) is advanced hunting. If you're not familiar with advanced hunting, see: [Proactively hunt for threats with advanced hunting](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview).
 
 > :::image type="content" source="images/asr-defender365-advanced-hunting2.png" alt-text="The Advanced Hunting page in the Microsoft Defender portal. Microsoft Defender for Endpoint attack surface reduction rules used in advanced hunting" lightbox="images/asr-defender365-advanced-hunting2.png":::
 

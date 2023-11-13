@@ -27,7 +27,7 @@ search.appverid: met150
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Microsoft Defender Antivirus
 
 **Platforms**
@@ -73,7 +73,9 @@ When EDR in block mode is turned on, and a malicious artifact is detected, Defen
 > 
 > EDR in block mode is primarily recommended for devices that are running Microsoft Defender Antivirus in passive mode (a non-Microsoft antivirus solution is installed and active on the device).
 
-### Microsoft 365 Defender
+<a name='microsoft-365-defender'></a>
+
+### Microsoft Defender XDR
 
 1. Go to the Microsoft Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)) and sign in.
 

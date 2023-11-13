@@ -1,5 +1,5 @@
 ---
-title: Manage incidents in Microsoft 365 Defender
+title: Manage incidents in Microsoft Defender XDR
 description: Learn how to assign, update the status,
 keywords: incident, incidents, attack story, analyze, response, alerts, correlated alerts, assign, update, status, manage, classification, microsoft, 365, m365
 ms.service: microsoft-365-security
@@ -25,13 +25,13 @@ search.appverid:
 ms.date: 05/18/2023
 ---
 
-# Manage incidents in Microsoft 365 Defender
+# Manage incidents in Microsoft Defender XDR
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 Incident management is critical to ensuring that incidents are named, assigned, and tagged to optimize time in your incident workflow and more quickly contain and address threats.
 
@@ -63,7 +63,7 @@ In cases where you want to move alerts from one incident to another, you can als
 
 ## Edit the incident name
 
-Microsoft 365 Defender automatically assigns a name based on alert attributes such as the number of endpoints affected, users affected, detection sources or categories. This allows you to quickly understand the scope of the incident. For example: *Multi-stage incident on multiple endpoints reported by multiple sources.*
+Microsoft Defender XDR automatically assigns a name based on alert attributes such as the number of endpoints affected, users affected, detection sources or categories. This allows you to quickly understand the scope of the incident. For example: *Multi-stage incident on multiple endpoints reported by multiple sources.*
 
 You can edit the incident name from the **Incident name** field on the **Manage incident** pane.
 
@@ -103,7 +103,7 @@ From the **Classification** field, you specify whether the incident is:
 - **Informational, expected activity** with a type of activity. Use the options in this category to classify incidents for security tests, red team activity, and expected unusual behavior from trusted apps and users.
 - **False positive** for types of incidents that you determine can be ignored because they are technically inaccurate or misleading.
 
-Classifying incidents and specifying their status and type helps tune Microsoft 365 Defender to provide better detection determination over time.
+Classifying incidents and specifying their status and type helps tune Microsoft Defender XDR to provide better detection determination over time.
 
 ## Add comments
 

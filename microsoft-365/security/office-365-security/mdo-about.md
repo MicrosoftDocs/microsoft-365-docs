@@ -193,5 +193,5 @@ New features are continually added to Defender for Office 365 continually. To le
 
 ## See also
 
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-- [Automated investigation and response (AIR) in Microsoft 365 Defender](../defender/m365d-autoir.md)
+- [Microsoft Defender XDR](../defender/microsoft-365-defender.md)
+- [Automated investigation and response (AIR) in Microsoft Defender XDR](../defender/m365d-autoir.md)

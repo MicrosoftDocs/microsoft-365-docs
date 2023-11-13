@@ -44,7 +44,7 @@ With the streaming API, you can now use [advanced hunting](../defender/advanced-
 
 4. Onboard to Microsoft Sentinel. See [Quickstart: Onboard Microsoft Sentinel](/azure/sentinel/quickstart-onboard).
 
-5. Enable the Microsoft 365 Defender connector. See [Connect data from Microsoft 365 Defender to Microsoft Sentinel](/azure/sentinel/connect-microsoft-365-defender?tabs=MDE).
+5. Enable the Microsoft Defender XDR connector. See [Connect data from Microsoft Defender XDR to Microsoft Sentinel](/azure/sentinel/connect-microsoft-365-defender?tabs=MDE).
 
 
 ## Use the streaming API with Event Hubs (preview)
@@ -90,7 +90,7 @@ Here's what the schema of events in Azure Event Hubs looks like:
 }
 ```
 
-Each event hub message in Azure Event Hubs contains a list of records. Each record contains the event name, the time Defender for Business received the event, the tenant to which it belongs (you get events from your tenant only), and the event in JSON format in a property called "**properties**". For more information about the schema, see [Proactively hunt for threats with advanced hunting in Microsoft 365 Defender](../defender/advanced-hunting-overview.md).
+Each event hub message in Azure Event Hubs contains a list of records. Each record contains the event name, the time Defender for Business received the event, the tenant to which it belongs (you get events from your tenant only), and the event in JSON format in a property called "**properties**". For more information about the schema, see [Proactively hunt for threats with advanced hunting in Microsoft Defender XDR](../defender/advanced-hunting-overview.md).
 
 ## Use the streaming API with Azure Storage (preview)
 
@@ -100,7 +100,7 @@ Azure Storage requires an Azure subscription. Before you begin, make sure to cre
 
 1. Go to the [Microsoft Defender portal](https://security.microsoft.com) and sign in as a ***Global Administrator*** or ***Security Administrator***.
 
-2. Go to [Data export settings page](https://security.microsoft.com/settings/mtp_settings/raw_data_export) in Microsoft 365 Defender.
+2. Go to [Data export settings page](https://security.microsoft.com/settings/mtp_settings/raw_data_export) in Microsoft Defender XDR.
 
 3. Select **Add data export settings**.
 
@@ -125,7 +125,7 @@ A blob container is created for each event type. The schema of each row in a blo
   }
   ```
 
-Each blob contains multiple rows. Each row contains the event name, the time Defender for Business received the event, the tenant to which it belongs (you get events from your tenant only), and the event in JSON format properties. For more information about the schema of Microsoft Defender for Endpoint events, see [Proactively hunt for threats with advanced hunting in Microsoft 365 Defender](../defender/advanced-hunting-overview.md).
+Each blob contains multiple rows. Each row contains the event name, the time Defender for Business received the event, the tenant to which it belongs (you get events from your tenant only), and the event in JSON format properties. For more information about the schema of Microsoft Defender for Endpoint events, see [Proactively hunt for threats with advanced hunting in Microsoft Defender XDR](../defender/advanced-hunting-overview.md).
 
 ## See also
 

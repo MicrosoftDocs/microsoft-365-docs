@@ -29,7 +29,7 @@ search.appverid: met150
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 **Platforms:**
 
@@ -225,7 +225,7 @@ The following image illustrates how the Advanced Hunting query page opens from t
 
 >:::image type="content" source="images/attack-surface-reduction-rules-report-main-detections-flyout-hunting.png" alt-text="Shows the attack surface reduction rules report main detections tab flyout link opening Advanced Hunting" lightbox="images/attack-surface-reduction-rules-report-main-detections-flyout-hunting.png":::
 
-For more information about Advanced hunting, see [Proactively hunt for threats with advanced hunting in Microsoft 365 Defender](advanced-hunting-overview.md)
+For more information about Advanced hunting, see [Proactively hunt for threats with advanced hunting in Microsoft Defender XDR](advanced-hunting-overview.md)
 
 ### Attack surface reduction rules main Configuration tab
 

@@ -18,7 +18,7 @@ ms.date: 09/21/2023
 ms.subservice: mde
 ---
 
-# Onboard non-persistent virtual desktop infrastructure (VDI) devices in Microsoft 365 Defender
+# Onboard non-persistent virtual desktop infrastructure (VDI) devices in Microsoft Defender XDR
 
 Virtual desktop infrastructure (VDI) is an IT infrastructure concept that lets end users access enterprise virtual desktops instances from almost any device (such as your personal computer, smartphone, or tablet), eliminating the need for organization to provide users with physical machines. Using VDI devices reduce cost as IT departments are no longer responsible for managing, repairing, and replacing physical endpoints. Authorized users can access the same company servers, files, apps, and services from any approved device through a secure desktop client or browser.
 
@@ -31,7 +31,7 @@ Like any other system in an IT environment, these too should have an Endpoint De
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Virtual desktop infrastructure (VDI) devices
 - Windows 10, Windows 11, Windows Server 2019, Windows Server 2022, Windows Server 2008R2/2012R2/2016
 

@@ -28,7 +28,7 @@ ms.date: 12/18/2020
 During and after an automated investigation, remediation actions for threat detections are identified. Depending on the particular threat and how [automated investigation and remediation capabilities are configured](configure-automated-investigations-remediation.md) for your organization, some remediation actions are taken automatically, and others require approval. If you're part of your organization's security operations team, you can view pending and completed [remediation actions](manage-auto-investigation.md#remediation-actions) in the **Action center**.
 
 **Applies to:**
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Business](../defender-business/mdb-overview.md)
 
@@ -52,7 +52,7 @@ The unified Action center brings together remediation actions across Defender fo
 
 You can use the unified Action center if you have appropriate permissions and one or more of the following subscriptions:
 
-- [Microsoft 365 Defender](/microsoft-365/security/mtp/microsoft-threat-protection)
+- [Microsoft Defender XDR](/microsoft-365/security/mtp/microsoft-threat-protection)
 - [Defender for Endpoint](microsoft-defender-endpoint.md)
 - [Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
 - [Defender for Business](../defender-business/mdb-overview.md)

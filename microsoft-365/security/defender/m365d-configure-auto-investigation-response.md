@@ -1,6 +1,6 @@
 ---
-title: Configure automated investigation and response capabilities in Microsoft 365 Defender
-description: Configure automated investigation and response with self-healing in Microsoft 365 Defender
+title: Configure automated investigation and response capabilities in Microsoft Defender XDR
+description: Configure automated investigation and response with self-healing in Microsoft Defender XDR
 search.appverid: MET150
 ms.author: diannegali
 author: diannegali
@@ -21,11 +21,11 @@ ms.reviewer: evaldm, isco
 f1.keywords: CSH
 ---
 
-# Configure automated investigation and response capabilities in Microsoft 365 Defender
+# Configure automated investigation and response capabilities in Microsoft Defender XDR
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft 365 Defender includes powerful [automated investigation and response capabilities](m365d-autoir.md) that can save your security operations team much time and effort. With [self-healing](m365d-autoir.md#how-automated-investigation-and-self-healing-works), these capabilities mimic the steps a security analyst would take to investigate and respond to threats, only faster, and with more ability to scale.
+Microsoft Defender XDR includes powerful [automated investigation and response capabilities](m365d-autoir.md) that can save your security operations team much time and effort. With [self-healing](m365d-autoir.md#how-automated-investigation-and-self-healing-works), these capabilities mimic the steps a security analyst would take to investigate and respond to threats, only faster, and with more ability to scale.
 
 This article describes how to configure automated investigation and response in <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> with these steps:
 
@@ -35,11 +35,13 @@ This article describes how to configure automated investigation and response in 
 
 Then, after you're all set up, you can [view and manage remediation actions in the Action center](m365d-autoir-actions.md). And, if necessary, you can [make changes to automated investigation settings](#need-to-make-changes-to-automated-investigation-settings).
 
-## Prerequisites for automated investigation and response in Microsoft 365 Defender
+<a name='prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender'></a>
+
+## Prerequisites for automated investigation and response in Microsoft Defender XDR
 
 |Requirement|Details|
 |---|---|
-|Subscription requirements|One of these subscriptions: <ul><li>Microsoft 365 E5</li><li>Microsoft 365 A5</li><li>Microsoft 365 E3 with the Microsoft 365 E5 Security add-on</li><li>Microsoft 365 A3 with the Microsoft 365 A5 Security add-on</li><li>Office 365 E5 plus Enterprise Mobility + Security E5 plus Windows E5</li></ul> <br/> See [Microsoft 365 Defender licensing requirements](./prerequisites.md#licensing-requirements).|
+|Subscription requirements|One of these subscriptions: <ul><li>Microsoft 365 E5</li><li>Microsoft 365 A5</li><li>Microsoft 365 E3 with the Microsoft 365 E5 Security add-on</li><li>Microsoft 365 A3 with the Microsoft 365 A5 Security add-on</li><li>Office 365 E5 plus Enterprise Mobility + Security E5 plus Windows E5</li></ul> <br/> See [Microsoft Defender XDR licensing requirements](./prerequisites.md#licensing-requirements).|
 |Network requirements|<ul><li>[Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp) enabled</li><li>[Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) configured</li><li>[Microsoft Defender for Identity integration](/cloud-app-security/mdi-integration)</li></ul>|
 |Windows device requirements|<ul><li>Windows 11</li><li>Windows 10, version 1709 or later installed (See [Windows release information](/windows/release-information/))</li><li>The following threat protection services are configured:<ul><li>[Microsoft Defender for Endpoint](../defender-endpoint/configure-endpoints.md)</li><li>[Microsoft Defender Antivirus](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)</li></ul></li></ul>|
 |Protection for email content and Office files|<ul><li>[Microsoft Defender for Office 365 is configured](/microsoft-365/security/office-365-security/defender-for-office-365#configure-atp-policies)</li><li>[Automated investigation and remediation capabilities in Defender for Endpoint are configured](../defender-endpoint/configure-automated-investigations-remediation.md) (required for manual response actions, such as deleting email messages on devices)</li></ul>|
@@ -80,7 +82,7 @@ You can choose from several options to change settings for your automated invest
 
 ## Next steps
 
-- [Remediation actions in Microsoft 365 Defender](m365d-remediation-actions.md)
+- [Remediation actions in Microsoft Defender XDR](m365d-remediation-actions.md)
 - [Visit the Action center](m365d-action-center.md)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

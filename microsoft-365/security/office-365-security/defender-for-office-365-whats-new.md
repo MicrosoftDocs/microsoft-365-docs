@@ -33,7 +33,7 @@ Learn more by watching [this video](https://www.youtube.com/watch?v=Tdz6KfruDGo&
 
 For more information on what's new with other Microsoft Defender security products, see:
 
-- [What's new in Microsoft 365 Defender](../defender/whats-new.md)
+- [What's new in Microsoft Defender XDR](../defender/whats-new.md)
 - [What's new in Microsoft Defender for Endpoint](../defender-endpoint/whats-new-in-microsoft-defender-endpoint.md)
 - [What's new in Microsoft Defender for Identity](/defender-for-identity/whats-new)
 - [What's new in Microsoft Defender for Cloud Apps](/cloud-app-security/release-notes)
@@ -85,7 +85,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 ## December 2022
 
-- The new Microsoft 365 Defender role-based access control (RBAC) model, with support for Microsoft Defender for Office, is now available in public preview. For more information, see [Microsoft 365 Defender role-based access control (RBAC)](../defender/manage-rbac.md).
+- The new Microsoft Defender XDR role-based access control (RBAC) model, with support for Microsoft Defender for Office, is now available in public preview. For more information, see [Microsoft Defender XDR role-based access control (RBAC)](../defender/manage-rbac.md).
 
 - [Use the built-in Report button in Outlook on the web](submissions-outlook-report-messages.md#use-the-built-in-report-button-in-outlook-on-the-web): Use the built-in Report button in Outlook on the web to report messages as phish, junk, and not junk.
 
@@ -111,16 +111,16 @@ For more information on what's new with other Microsoft Defender security produc
   - Redirection URLs:
     - GCC Environment:
       - From Office 365 Security & Compliance Center URL: protection.office.com
-      - To Microsoft 365 Defender URL: security.microsoft.com
+      - To Microsoft Defender XDR URL: security.microsoft.com
     - GCC-High Environment:
       - From Office 365 Security & Compliance Center URL: scc.office365.us
-      - To Microsoft 365 Defender URL: security.microsoft.us
+      - To Microsoft Defender XDR URL: security.microsoft.us
     - DoD Environment:
       - From Office 365 Security & Compliance Center URL: scc.protection.apps.mil
-      - To Microsoft 365 Defender URL: security.apps.mil
-- Items in the Office 365 Security & Compliance Center that aren't related to security aren't redirected to Microsoft 365 Defender. For compliance solutions redirection to Microsoft 365 Compliance Center, see Message Center post 244886.
-- This change is a continuation of [Microsoft 365 Defender delivers unified XDR experience to GCC, GCC High and DoD customers - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/public-sector-blog/microsoft-365-defender-delivers-unified-xdr-experience-to-gcc/ba-p/3263702), announced in March 2022.
-- This change enables users to view and manage additional Microsoft 365 Defender security solutions in one portal.
+      - To Microsoft Defender XDR URL: security.apps.mil
+- Items in the Office 365 Security & Compliance Center that aren't related to security aren't redirected to Microsoft Defender XDR. For compliance solutions redirection to Microsoft 365 Compliance Center, see Message Center post 244886.
+- This change is a continuation of [Microsoft Defender XDR delivers unified XDR experience to GCC, GCC High and DoD customers - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/public-sector-blog/microsoft-365-defender-delivers-unified-xdr-experience-to-gcc/ba-p/3263702), announced in March 2022.
+- This change enables users to view and manage additional Microsoft Defender XDR security solutions in one portal.
 - This change impacts all customers who use the Office 365 Security & Compliance Center (protection.office.com), including Microsoft Defender for Office (Plan 1 or Plan 2), Microsoft 365 E3 / E5, Office 365 E3/ E5, and Exchange Online Protection. For the full list, see [Microsoft 365 guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 - This change impacts all users who sign in to the Office 365 Security and Compliance portal (protection.office.com), including security teams and end-users who access the Email Quarantine experience, at the **Microsoft Defender Portal** \> **Review** \> **Quarantine**.
 - Redirection is enabled by default and impacts all users of the Tenant.
@@ -136,7 +136,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 - [Create allow entries for spoofed senders](tenant-allow-block-list-email-spoof-configure.md#create-allow-entries-for-spoofed-senders): Create allowed spoofed sender entries using the Tenant Allow/Block List.
 
-- [Impersonation allows using admin submission](tenant-allow-block-list-email-spoof-configure.md#about-impersonated-domains-or-senders): Add allows for impersonated senders using the **Submissions** page in Microsoft 365 Defender.
+- [Impersonation allows using admin submission](tenant-allow-block-list-email-spoof-configure.md#about-impersonated-domains-or-senders): Add allows for impersonated senders using the **Submissions** page in Microsoft Defender XDR.
 
 - [Submit user reported messages to Microsoft for analysis](submissions-admin.md#submit-user-reported-messages-to-microsoft-for-analysis): Configure a reporting mailbox to intercept user-reported messages without sending the messages to Microsoft for analysis.
 
@@ -146,14 +146,14 @@ For more information on what's new with other Microsoft Defender security produc
   - (Choose to) Apply Preset Strict/Standard policies to entire organization and avoid the hassle of selecting specific recipient users, groups, or domains, thereby securing all recipient users of your organization.
   - Configure impersonation protection settings for custom users and custom domains within Preset Strict/Standard policies and automatically protect your targeted users and targeted domain against impersonation attacks.
 
-- [Simplifying the quarantine experience (part two) in Microsoft 365 Defender for office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/simplifying-the-quarantine-experience-part-two/ba-p/3354687): Highlights additional features to make the quarantine experience even easier to use.
+- [Simplifying the quarantine experience (part two) in Microsoft Defender XDR for office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/simplifying-the-quarantine-experience-part-two/ba-p/3354687): Highlights additional features to make the quarantine experience even easier to use.
 
 - [Introducing differentiated protection for priority accounts in Microsoft Defender for Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/introducing-differentiated-protection-for-priority-accounts-in/ba-p/3283838): Introducing GCC, GCC-H, and DoD availability of differentiated protection for priority accounts.
 
 ## April 2022
 
-- [Introducing the URLClickEvents table in Microsoft 365 Defender Advanced Hunting](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/introducing-the-urlclickevents-table-in-advanced-hunting-with/ba-p/3295096): Introducing the UrlClickEvents table in advanced hunting with Microsoft Defender for Office 365.
-- [Manual email remediation enhancements](remediate-malicious-email-delivered-office-365.md): Bringing manual email purge actions taken in Microsoft Defender for Office 365 to the Microsoft 365 Defender (M365D) unified Action Center using a new action-focused investigation.
+- [Introducing the URLClickEvents table in Microsoft Defender XDR Advanced Hunting](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/introducing-the-urlclickevents-table-in-advanced-hunting-with/ba-p/3295096): Introducing the UrlClickEvents table in advanced hunting with Microsoft Defender for Office 365.
+- [Manual email remediation enhancements](remediate-malicious-email-delivered-office-365.md): Bringing manual email purge actions taken in Microsoft Defender for Office 365 to the Microsoft Defender XDR (M365D) unified Action Center using a new action-focused investigation.
 - [Introducing differentiated protection for priority accounts in Microsoft Defender for Office 365](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/introducing-differentiated-protection-for-priority-accounts-in/ba-p/3283838): Introducing the general availability of differentiated protection for priority accounts.
 
 ## March 2022
@@ -176,7 +176,7 @@ For more information on what's new with other Microsoft Defender security produc
   - [Video of admin experience](https://youtu.be/vnar4HowfpY)
   - [Video of end-user experience](https://youtu.be/s-vozLO43rI)
   - Other new capabilities coming to the quarantine experience are described in this blog post: [Simplifying the Quarantine experience](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/simplifying-the-quarantine-experience/ba-p/2676388).
-- Portal redirection by default begins, redirecting users from Security & Compliance to Microsoft 365 Defender <https://security.microsoft.com>. For more on this, see: [Redirecting accounts from Office 365 Security & Compliance Center to Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-security-mdo-redirection)
+- Portal redirection by default begins, redirecting users from Security & Compliance to Microsoft Defender XDR <https://security.microsoft.com>. For more on this, see: [Redirecting accounts from Office 365 Security & Compliance Center to Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-security-mdo-redirection)
 
 ## August 2021
 
@@ -197,7 +197,7 @@ For more information on what's new with other Microsoft Defender security produc
   - Form blocked due to potential phishing attempt
   - Form flagged and confirmed as phishing
   - [New alert policies for ZAP](/purview/new-defender-alert-policies)
-- Microsoft Defender for Office 365 alerts is now integrated into Microsoft 365 Defender - [Microsoft 365 Defender Unified Alerts Queue and Unified Alerts Queue](../defender/investigate-alerts.md)
+- Microsoft Defender for Office 365 alerts is now integrated into Microsoft Defender XDR - [Microsoft Defender XDR Unified Alerts Queue and Unified Alerts Queue](../defender/investigate-alerts.md)
 - [User Tags](user-tags-about.md) are now integrated into Microsoft Defender for Office 365 alerting experiences, including: the alerts queue and details in Office 365 Security & Compliance, and scoping custom alert policies to user tags to create targeted alert policies.
   - Tags are also available in the unified alerts queue in the Microsoft Defender portal (Microsoft Defender for Office 365 Plan 2)
 

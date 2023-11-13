@@ -1,5 +1,5 @@
 ---
-title: Investigate incidents in Microsoft 365 Defender
+title: Investigate incidents in Microsoft Defender XDR
 description: Investigate incidents related to devices, users, and mailboxes.
 keywords: incident, incidents, attack story, analyze, response, machines, devices, users, identities, mail, email, mailbox, investigation, graph, evidence
 ms.service: microsoft-365-security
@@ -24,15 +24,15 @@ search.appverid:
 ms.date: 05/24/2023
 ---
 
-# Investigate incidents in Microsoft 365 Defender
+# Investigate incidents in Microsoft Defender XDR
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
-Microsoft 365 Defender aggregates all related alerts, assets, investigations, and evidence from across your devices, users, and mailboxes into an incident to give you a comprehensive look into the entire breadth of an attack.
+Microsoft Defender XDR aggregates all related alerts, assets, investigations, and evidence from across your devices, users, and mailboxes into an incident to give you a comprehensive look into the entire breadth of an attack.
 
 Within an incident, you analyze the alerts that affect your network, understand what they mean, and collate the evidence so that you can devise an effective remediation plan.
 
@@ -101,7 +101,7 @@ Information is organized in these sections.
 
 | Section | Description |
 |:-------|:-----|
-| Alerts and categories | A visual and numeric view of how advanced the attack has progressed against the kill chain. As with other Microsoft security products, Microsoft 365 Defender is aligned to the [MITRE ATT&CK&trade;](https://attack.mitre.org/) framework. The alerts timeline shows the chronological order in which the alerts occurred and for each, their status and name. |
+| Alerts and categories | A visual and numeric view of how advanced the attack has progressed against the kill chain. As with other Microsoft security products, Microsoft Defender XDR is aligned to the [MITRE ATT&CK&trade;](https://attack.mitre.org/) framework. The alerts timeline shows the chronological order in which the alerts occurred and for each, their status and name. |
 | Scope |  Displays the number of impacted devices, users, and mailboxes and lists the entities in order of risk level and investigation priority. |
 | Evidence | Displays the number of entities affected by the incident. |
 | Incident information | Displays the properties of the incident, such as tags, status, and severity. |
@@ -120,7 +120,7 @@ Here's an example.
 
 :::image type="content" source="../../media/investigate-incidents/incident-alerts.png" alt-text="The Alerts pane for an incident in the Microsoft Defender portal" lightbox="../../media/investigate-incidents/incident-alerts.png":::
 
-By default, the alerts are ordered chronologically to allow you to see how the attack played out over time. When you select an alert within an incident, Microsoft 365 Defender displays the alert information specific to the context of the overall incident.
+By default, the alerts are ordered chronologically to allow you to see how the attack played out over time. When you select an alert within an incident, Microsoft Defender XDR displays the alert information specific to the context of the overall incident.
 
 You can see the events of the alert, which other triggered alerts caused the current alert, and all the affected entities and activities involved in the attack, including devices, files, users, and mailboxes.
 
@@ -199,7 +199,7 @@ There is also an **Investigation graph** tab that shows:
 
 The investigation graph helps you quickly understand the full scope of the attack by connecting the different suspicious entities that are part of the attack with their related assets such as users, devices, and mailboxes.
 
-For more information, see [Automated investigation and response in Microsoft 365 Defender](m365d-autoir.md).
+For more information, see [Automated investigation and response in Microsoft Defender XDR](m365d-autoir.md).
 
 ## Evidence and Response
 
@@ -207,7 +207,7 @@ The **Evidence and Response** tab shows all the supported events and suspicious 
 
 :::image type="content" source="../../media/investigate-incidents/incident-evidence.png" alt-text="The Evidence and Response page for an incident in the Microsoft Defender portal" lightbox="../../media/investigate-incidents/incident-evidence.png":::
 
-Microsoft 365 Defender automatically investigates all the incidents' supported events and suspicious entities in the alerts, providing you with information about the important emails, files, processes, services, IP Addresses, and more. This helps you quickly detect and block potential threats in the incident.
+Microsoft Defender XDR automatically investigates all the incidents' supported events and suspicious entities in the alerts, providing you with information about the important emails, files, processes, services, IP Addresses, and more. This helps you quickly detect and block potential threats in the incident.
 
 Each of the analyzed entities is marked with a verdict (Malicious, Suspicious, Clean) and a remediation status. This helps you understand the remediation status of the entire incident and what next steps can be taken.
 

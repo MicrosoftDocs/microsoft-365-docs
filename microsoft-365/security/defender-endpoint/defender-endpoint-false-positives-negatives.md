@@ -91,7 +91,7 @@ Alerts can be classified as false positives or true positives in the Microsoft D
 
 ### Suppress an alert
 
-If you have alerts that are either false positives or that are true positives but for unimportant events, you can suppress those alerts in Microsoft 365 Defender. Suppressing alerts helps reduce noise in your queue.
+If you have alerts that are either false positives or that are true positives but for unimportant events, you can suppress those alerts in Microsoft Defender XDR. Suppressing alerts helps reduce noise in your queue.
 
 1. In the [Microsoft Defender portal](https://go.microsoft.com/fwlink/p/?linkid=2077139), in the navigation pane, choose **Incidents & alerts** and then select **Alerts**.
 
@@ -283,7 +283,7 @@ Before you create indicators for IP addresses, URLs, or domains, make sure the f
 - Antimalware client version is 4.18.1906.x or later
 - Devices are running Windows 10, version 1709, or later, or Windows 11
 
-Custom network indicators are turned on in the [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender). To learn more, see [Advanced features](/microsoft-365/security/defender-endpoint/advanced-features).
+Custom network indicators are turned on in the [Microsoft Defender XDR](/microsoft-365/security/defender/microsoft-365-defender). To learn more, see [Advanced features](/microsoft-365/security/defender-endpoint/advanced-features).
 
 #### Indicators for application certificates
 

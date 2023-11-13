@@ -1,6 +1,6 @@
 ---
-title: Work with advanced hunting query results in Microsoft 365 Defender
-description: Make the most of the query results returned by advanced hunting in Microsoft 365 Defender
+title: Work with advanced hunting query results in Microsoft Defender XDR
+description: Make the most of the query results returned by advanced hunting in Microsoft Defender XDR
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, custom detections, schema, kusto, visualization, chart, filters, drill-down
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -28,7 +28,7 @@ ms.date: 02/16/2021
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
@@ -132,7 +132,7 @@ Select the three dots to the right of any column in the **Inspect record** panel
 :::image type="content" source="../../media/work-with-query-tweak-query.png" alt-text="The Action Type pane on the Inspect record page in the Microsoft Defender portal " lightbox="../../media/work-with-query-tweak-query.png":::
 
 > [!NOTE]
-> Some tables in this article might not be available at Microsoft Defender for Endpoint. [Turn on Microsoft 365 Defender](m365d-enable.md) to hunt for threats using more data sources. You can move your advanced hunting workflows from Microsoft Defender for Endpoint to Microsoft 365 Defender by following the steps in [Migrate advanced hunting queries from Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md).
+> Some tables in this article might not be available at Microsoft Defender for Endpoint. [Turn on Microsoft Defender XDR](m365d-enable.md) to hunt for threats using more data sources. You can move your advanced hunting workflows from Microsoft Defender for Endpoint to Microsoft Defender XDR by following the steps in [Migrate advanced hunting queries from Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md).
 
 ## Related topics
 

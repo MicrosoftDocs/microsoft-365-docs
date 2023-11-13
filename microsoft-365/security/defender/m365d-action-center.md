@@ -29,7 +29,7 @@ ms.reviewer: evaldm, isco
 # The Action center
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 The Action center provides a "single pane of glass" experience for incident and alert tasks such as:
 
@@ -37,7 +37,7 @@ The Action center provides a "single pane of glass" experience for incident and 
 - Viewing an audit log of already approved remediation actions.
 - Reviewing completed remediation actions.
 
-Because the Action center provides a comprehensive view of Microsoft 365 Defender at work, your security operations team can operate more effectively and efficiently.
+Because the Action center provides a comprehensive view of Microsoft Defender XDR at work, your security operations team can operate more effectively and efficiently.
 
 ## The unified Action center
 
@@ -56,7 +56,7 @@ You can use the unified Action center if you have appropriate permissions and on
 
 - [Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md)
 - [Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
-- [Microsoft 365 Defender](microsoft-365-defender.md)
+- [Microsoft Defender XDR](microsoft-365-defender.md)
 
 > [!TIP]
 > To learn more, see [Requirements](./prerequisites.md).
@@ -105,7 +105,7 @@ All actions, whether they're pending approval or were already taken, are tracked
 - Stop and quarantine 
 - Contain devices from the network
 
-In addition to remediation actions that are taken automatically as a result of [automated investigations](m365d-autoir.md), the Action center also tracks actions your security team has taken to address detected threats, and actions that were taken as a result of threat protection features in Microsoft 365 Defender. For more information about automatic and manual remediation actions, see [Remediation actions](m365d-remediation-actions.md).
+In addition to remediation actions that are taken automatically as a result of [automated investigations](m365d-autoir.md), the Action center also tracks actions your security team has taken to address detected threats, and actions that were taken as a result of threat protection features in Microsoft Defender XDR. For more information about automatic and manual remediation actions, see [Remediation actions](m365d-remediation-actions.md).
 
 ## Viewing action source details
 
@@ -129,7 +129,7 @@ To perform tasks, such as approving or rejecting pending actions in the Action c
 |Remediation action |Required roles and permissions |
 |--|----|
 |Microsoft Defender for Endpoint remediation (devices) |**Security Administrator** role assigned in either Microsoft Entra ID ([https://portal.azure.com](https://portal.azure.com)) or the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- or ---<br/>**Active remediation actions** role assigned in Microsoft Defender for Endpoint <br/> <br/> To learn more, see the following resources: <br/>- [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference)<br/>- [Create and manage roles for role-based access control (Microsoft Defender for Endpoint)](../defender-endpoint/user-roles.md)  |
-|Microsoft Defender for Office 365 remediation (Office content and email)  |**Security Administrator** role assigned in either Microsoft Entra ID ([https://portal.azure.com](https://portal.azure.com)) or the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- and --- <br/>**Search and Purge** role assigned in the Microsoft 365 Defender > [Email & collaboration roles](https://security.microsoft.com/emailandcollabpermissions) <br/><br/>**IMPORTANT**: If you have the **Security Administrator** role assigned only in the Microsoft 365 Defender > [Email & collaboration roles](https://security.microsoft.com/emailandcollabpermissions), you will not be able to access the Action center or Microsoft 365 Defender capabilities. You must have the Security Administrator role assigned in Microsoft Entra ID or the Microsoft 365 admin center. <br/><br/>To learn more, see the following resources: <br/>- [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference)<br/>- [Permissions in the Security & Compliance Center](/microsoft-365/security/office-365-security/scc-permissions) |
+|Microsoft Defender for Office 365 remediation (Office content and email)  |**Security Administrator** role assigned in either Microsoft Entra ID ([https://portal.azure.com](https://portal.azure.com)) or the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- and --- <br/>**Search and Purge** role assigned in the Microsoft Defender XDR > [Email & collaboration roles](https://security.microsoft.com/emailandcollabpermissions) <br/><br/>**IMPORTANT**: If you have the **Security Administrator** role assigned only in the Microsoft Defender XDR > [Email & collaboration roles](https://security.microsoft.com/emailandcollabpermissions), you will not be able to access the Action center or Microsoft Defender XDR capabilities. You must have the Security Administrator role assigned in Microsoft Entra ID or the Microsoft 365 admin center. <br/><br/>To learn more, see the following resources: <br/>- [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference)<br/>- [Permissions in the Security & Compliance Center](/microsoft-365/security/office-365-security/scc-permissions) |
 
 > [!TIP]
 > Users who have the **Global Administrator** role assigned in Microsoft Entra ID can approve or reject any pending action in the Action center. However, as a best practice, your organization should limit the number of people who have the **Global Administrator** role assigned. We recommend using the **Security Administrator**, **Active remediation actions**, and **Search and Purge** roles listed in the preceding table for Action center permissions.
