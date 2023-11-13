@@ -55,7 +55,7 @@ Electronic signatures let you digitally sign a document by enabling you to add a
 
 1. To add your signature, type your name. If you want to choose a different font style for your signature, select **Change font** and choose the font you want to use.
 
-![Screenshot of the type your name screen.](../media/content-understanding/esignature-type-name.png)
+    ![Screenshot of the type your name screen.](../media/content-understanding/esignature-type-name.png)
 
 2. Select **Done** to add your signature to the document.
 
