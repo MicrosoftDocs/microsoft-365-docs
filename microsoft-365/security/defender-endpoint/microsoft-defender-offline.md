@@ -230,7 +230,9 @@ In the **Event Viewer**, go to **Applications and Services Logs > Microsoft > Wi
 - Level: Information
 - Description: Microsoft Defender Antivirus downloaded and configured Microsoft Defender Antivirus (offline scan) to run on the next reboot.
 
-On older versions than Windows 10, 2004, when Windows Defender Antivirus was downloaded and configured Windows Defender Offline to run on the next reboot, you'll see:
+On older versions than Windows 10, 2004, you'll see:
+
+Windows Defender Antivirus downloaded and configured Windows Defender Offline to run on the next reboot.
 
 - Log Name: Microsoft-Windows-Windows Defender/Operational
 - Source: Microsoft-Windows-Windows Defender
