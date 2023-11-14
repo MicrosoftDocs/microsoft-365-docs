@@ -235,7 +235,7 @@ DeviceProcessEvents
 
 ## Troubleshooting
 
-1. The command `healthcheck.exe` shows the output, "WSLService is not running. Launch with ‘wsl’ command in PowerShell and rerun health check."
+1. The command `healthcheck.exe` shows the output, "Launch WSL distro with ‘bash’ command and retry in 5 minutes."
 
    :::image type="content" source="media/mdeplugin-wsl/wsl-health-check.png" alt-text="Screenshot showing PowerShell output.":::
 
@@ -245,9 +245,9 @@ DeviceProcessEvents
 
    2. Wait for at least 5 minutes before rerunning the health check.
 
-3. The `health_check.exe` command might show the output, "No Defender Health telemetry found in the log file. Please retry in 5 minutes."
+3. The `health_check.exe` command might show the output, "Waiting for Telemetry. Please retry in 5 minutes."
 
-   :::image type="content" source="media/mdeplugin-wsl/wsl-health-check.png" alt-text="Screenshot showing health telemetry status.":::
+   :::image type="content" source="media/mdeplugin-wsl/wsl-health-check-telemetry.png" alt-text="Screenshot showing health telemetry status.":::
 
    If that error occurs, wait for 5 minutes and rerun `healthcheck.exe`.
 
