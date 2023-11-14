@@ -33,7 +33,7 @@ ms.date: 12/18/2020
 
 > Want to experience Defender for Endpoint? [Sign up for a free trial](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink).
 
-This topic describes how to deploy Microsoft Defender for Endpoint on macOS manually. A successful deployment requires the completion of all of the following steps:
+This article describes how to deploy Microsoft Defender for Endpoint on macOS manually. A successful deployment requires the completion of all of the following steps:
 
 - [Download installation and onboarding packages](#download-installation-and-onboarding-packages)
 - [Application installation (macOS 11 and newer versions)](#application-installation-macos-11-and-newer-versions)
@@ -59,7 +59,7 @@ Download the installation and onboarding packages from Microsoft 365 Defender po
     Terminal
     - Type *cd Downloads* and press **Enter**.
     - Type *ls* and press **Enter**.
-     :::image type="content" source="images/Terminal-image-step5.png" alt-text="Screenshot that dispalys the two download files.":::
+     :::image type="content" source="images/Terminal-image-step5.png" alt-text="Screenshot that displays the two download files.":::
 6. Copy the *wdav.pkg* and *MicrosoftDefenderATPOnboardingMacOs.sh* to the device where you want to deploy the Microsoft Defender for Endpoint on macOS.
 
 ## Application installation (macOS 11 and newer versions)
@@ -92,17 +92,17 @@ To complete this process, you must have admin privileges on the device.
 
 7. Click **Install**.
 
-8. Enter the password, when propmpted.
+8. Enter the password, when prompted.
     :::image type="content" source="images/password-2g.png" alt-text="Screenshot that shows the password dialog box.":::
 
 9. Click **Install Software**.
 
-3. At the end of the installation process, for macOS Big Sur (11.0) or latest version, you'll be prompted to approve the system extensions used by the product. Select **Open Security Preferences**.
+3. At the end of the installation process, for macOS Big Sur (11.0) or latest version, you're prompted to approve the system extensions used by the product. Select **Open Security Preferences**.
 
    :::image type="content" source="images/monterey-install-2.png" alt-text="The system extension approval" lightbox="images/monterey-install-2.png":::
 
-11. To enable system extentions, select **Details**.
-    :::image type="content" source="images/system-extention-image.png" alt-text="Screenshot that shows the system extentions.":::
+11. To enable system extention, select **Details**.
+    :::image type="content" source="images/system-extention-image.png" alt-text="Screenshot that shows the system extention.":::
 
 4. From the **Security & Privacy** window, select the checkboxes next to **Microsoft Defender** and select **OK**.
     :::image type="content" source="images/security-privacy-window-updated.png" alt-text="Screenshot that shows the security and privacy window.":::
@@ -117,7 +117,7 @@ To complete this process, you must have admin privileges on the device.
 
 ## How to Allow Full Disk Access
 
-MacOS Catalina (10.15) requires full disk access to be granted to **Microsoft Defender for Endpoint** in order to be able to protect and monitor.
+The macOS Catalina (10.15) requires full disk access to be granted to **Microsoft Defender for Endpoint** in order to be able to protect and monitor.
 
 > [!Note]
 > Full disk access grant to **Microsoft Defender for Endpoint** is a new requirement for all the third-party software by Apple for files and folders containing personal data.
@@ -153,7 +153,7 @@ Once you have installed the MDE on macOS client, you must now onboard the packag
 
    Copy *wdav.pkg* and *MicrosoftDefenderATPOnboardingMacOs.sh* to the device where you have deployed Microsoft Defender for Endpoint on macOS.
 
-    The client device isn't associated with *org_id*. Note that the *org_id* attribute is blank.
+    The client device isn't associated with *org_id*. The *org_id* attribute is blank.
 
     ```bash
     mdatp health --field org_id
@@ -202,7 +202,7 @@ mdatp health --field real_time_protection_enabled
 curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
 ```
 
-3. The file should have been quarantined by Defender for Endpoint on Mac. Use the following command to list all the detected threats:
+3. The file has been quarantined by Defender for Endpoint on Mac. Use the following command to list all the detected threats:
 
 ```bash
 mdatp threat list
@@ -236,7 +236,7 @@ Run an EDR detection test to verify that the device is properly onboarded and re
 
 8. Right-click **MDATP MacOS DIY**, and then click **Open**.
 
-    The system will display the following message:
+    The system displays the following message:
 
     > **macOS cannot verify the developer of MDATP MacOS DIY. Are you sure you want to open it?**<br/>
     > By opening this app, you will be overriding system security which can expose your computer and personal information to malware that may harm your Mac or compromise your privacy.
@@ -250,7 +250,7 @@ Run an EDR detection test to verify that the device is properly onboarded and re
 
 10. Click **Open**.
 
-    In few minutes an alert *macOS EDR Test Alert* is raised.
+    In few minutes, an alert *macOS EDR Test Alert* is raised.
 
 11. Go to Microsoft 365 Defender portal (https://security.microsoft.com/).
 
@@ -258,11 +258,11 @@ Run an EDR detection test to verify that the device is properly onboarded and re
 
     :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="An macOS EDR test alert that shows severity, category, detection source, and a collapsed menu of actions" lightbox="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png":::
 
-    This is a macOS EDR test alert that shows severity, category, detection source, and a collapsed menu of actions.
+    The macOS EDR test alert that shows severity, category, detection source, and a collapsed menu of actions.
 
     Look at the alert details and the device timeline, and perform the regular investigation steps.
 
-Next steps that you may consider performing are to add AV exclusions as needed for application compatibility or performance:
+ Next steps that you can consider performing are to add AV exclusions as needed for application compatibility or performance:
 
 - [Configure and validate exclusions for Microsoft Defender for Endpoint on macOS](mac-exclusions.md)
 - [Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md)
@@ -274,7 +274,7 @@ Read through [Microsoft Defender for Endpoint Security Operations Guide](mde-sec
 
 ## Logging installation issues
 
-See [Logging installation issues](mac-resources.md#logging-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.
+For more information on how to find the automatically generated log that's created by the installer, see [Logging installation issues](mac-resources.md#logging-installation-issues).
 
 ## Uninstallation
 
