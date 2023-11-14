@@ -91,7 +91,7 @@ To connect a workspace that has Microsoft Sentinel enabled to Defender XDR, comp
    - Any previously enabled Microsoft incident creation rules, which are used to promote Microsoft Defender XDR alerts into incidents, are automatically disabled to avoid duplicate incidents. This change only impacts Microsoft incident creation rules used for Microsoft alerts and doesn't impact other analytic rules.
 
 1. Select **Connect**.
-1. You might need to wait up to 6 hours until your workspace is fully connected.
+1. You might need to wait up to 6 hours until all experiences are fully connected.
 
 After your workspace is connected, the banner on the **Overview** page shows that your unified security information and event management (SIEM) and extended detection and response (XDR) is ready.  You’ll also see the **Overview** page updated with new sections that include metrics from Microsoft Sentinel like the number of data connectors and automation rules.
 
