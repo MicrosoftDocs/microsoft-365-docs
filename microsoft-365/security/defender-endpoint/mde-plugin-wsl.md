@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.localizationpriority: medium
 audience: ITPro
 search.appverid: met150
-ms.date: 10/31/2023
+ms.date: 11/14/2023
 ---
 
 # Microsoft Defender for Endpoint plug-in for Windows Subsystem for Linux (WSL)
@@ -142,7 +142,7 @@ After installing the plug-in, the subsystem and all its running containers are o
 
 2. Filter using the tag **WSL2**. 
 
-  ![Screenshot showing device inventory filter](media/mdeplugin-wsl/device-inventory-filter.png)
+  ![Screenshot showing device inventory filter](media/mdeplugin-wsl/wsl-device-inventory.png)
 
    You can see all WSL instances in your environment with an active Defender for Endpoint plug-in for WSL. The instances represent all distributions running inside WSL on a given host. The hostname of a *device* matches that of the Windows host. However, it's represented as a Linux device.
 
