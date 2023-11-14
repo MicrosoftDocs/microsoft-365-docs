@@ -19,7 +19,10 @@ description: Learn how to set up Microsoft Syntex eSignature to send electronic 
 
 # Set up Microsoft Syntex eSignature
 
-The Microsoft Syntex eSignature service is set up in the Microsoft 365 admin center. Before you begin, read the [Microsoft Syntex eSignature terms of service](/legal/microsoft-365/esignature-terms-of-service).
+> [!NOTE]
+> Syntex eSignature currently available for the US market only. If a tenant's location is the US, Syntex eSignature will be available for that tenant. For US-located, multi-geo enabled tenants, eSignature will be available in the home geo only. Syntex eSignature will roll out to other regions in 2024.
+
+The Microsoft Syntex eSignature service is set up in the Microsoft 365 admin center. Syntex eSignature uses simple electronic signatures. Before you begin, determine whether this is appropriate for your needs and then read the [Microsoft Syntex eSignature terms of service](/legal/microsoft-365/esignature-terms-of-service).
 
 ## Prerequisites
 
@@ -39,7 +42,8 @@ You must have Global admin or SharePoint admin permissions to be able to access 
 
 3. On the **Manage Microsoft Syntex** page, select **Syntex eSignature**.
 
-4. By default, the Syntex eSignature service is turned on. On the **Syntex eSignature** page:
+4. For existing customers, read the Terms of service and then click **Turn on** to enable the service
+5. For new Syntex customers, the Syntex eSignature service is turned on once you have entered your billing information and accepted the terms of service. On the **Syntex eSignature** page:
 
    - To turn off the service, select **Turn off**.
    - To manage which sites the service is available, see [Manage sites](#manage-sites).
