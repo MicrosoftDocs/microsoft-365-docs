@@ -33,7 +33,7 @@ During the preview period, performance and speed of web interfaces, initial conf
 
 This documentation outlines the Microsoft 365 Backup offering available in the Microsoft 365 admin center. We're partnering with many independent software vendors (ISVs) to provide differentiated versions of their applications integrated with the Microsoft 365 Backup Storage platform—all providing the same underlying performance value proposition for your Microsoft 365 data.
 
-In the case of a partner application, operation of the Microsoft 365 Backup tool will be managed and paid for entirely through the third party's application. Those applications will have the ability to provide a single pane of glass for all of your data estates that require backups, and they might provide additional enhanced experiences or workflows.
+In the case of a third-party application, operation of the Microsoft 365 Backup tool will be managed and paid for entirely through the third party's application. Those applications will have the ability to provide a single pane of glass for all of your data estates that require backups, and they might provide additional enhanced experiences or workflows.
 
 ## Scenarios and value proposition
 
