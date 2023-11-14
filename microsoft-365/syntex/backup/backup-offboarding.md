@@ -37,9 +37,9 @@ If offboarding from Microsoft 365 Backup has begun due to either an explicit req
 
 - In the first 14 days, your policy is automatically paused, meaning new backups won't be taken. However, you'll still be able to continue to use the tool to restore existing backups.
 
-- During days 15-29, usage of the tool will be completely blocked.
+- During days 15-29, usage of the tool will be blocked.
 
-By bringing your billing back to a healthy state or by asking support to reverse the offboarding, the tool becomes usable again and no backups will be lost.
+By bringing your billing back to a healthy state or by asking support to reverse the offboarding, the tool becomes usable again and no backups are lost.
 
 ## GDPR special handling, compliance, and backup data deletion
 
@@ -74,6 +74,6 @@ Restoration of any data (such as sites or mailboxes) reverts the sensitivity lab
 
 If you need to delete data from the backups during the preview period, you must offboard from the offering entirely and delete all backups. In the future, we'll enable more granular restore point deletion capabilities.
 
-Any offboarding or backup deletion activities triggers a 29-day grace period where we'll hold the backup data. If you re-enable the tool, the backups are present in the tool again.  
+Any offboarding or backup deletion activities trigger a 29-day grace period where we'll hold the backup data. If you re-enable the tool, the backups are present in the tool again.  
 
 
