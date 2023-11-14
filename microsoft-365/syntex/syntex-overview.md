@@ -176,10 +176,10 @@ Both structured and freeform models use Microsoft Power Apps AI Builder to creat
 
 :::row:::
    :::column span="3":::
-      Microsoft 365 Backup provides modern backup and recovery capabilities for SharePoint, Exchange Online, and OneDrive for Business, keeping the data all within the Microsoft 365 security boundary. With Microsoft 365 Backup, your organization knows that your content is securely and efficiently backed up and restorable within hours rather than months.!
+      Microsoft 365 Backup provides modern backup and recovery capabilities for SharePoint, Exchange Online, and OneDrive for Business, keeping the data all within the Microsoft 365 security boundary. With Microsoft 365 Backup, your organization knows that your content is securely and efficiently backed up and restorable within hours rather than months.
    :::column-end:::
    :::column span="":::
-      [Image of generic backup icon.](../media/content-understanding/backup-image.png)
+      ![Image of generic backup icon.](../media/content-understanding/backup-image.png)
    :::column-end:::
 :::row-end:::
 

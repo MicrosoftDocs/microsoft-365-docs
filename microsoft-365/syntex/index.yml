@@ -43,6 +43,9 @@ landingContent:
             url: esignature-overview.md
           - text: Microsoft 365 Archive (Preview)
             url: archive/archive-overview.md
+          - text: Microsoft Backup (Preview)
+            url: backup/backup-overview.md
+
 
 # Card 2
   - title: Get started
@@ -85,6 +88,8 @@ landingContent:
             url: ocr-overview.md
           - text: Microsoft 365 Archive (Preview)
             url: archive/archive-overview.md
+          - text: Microsoft Backup (Preview)
+            url: backup/backup-overview.md
 
 # Card 4
   - title: Extensibility
