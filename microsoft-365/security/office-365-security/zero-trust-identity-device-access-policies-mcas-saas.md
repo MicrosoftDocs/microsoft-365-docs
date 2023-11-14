@@ -16,8 +16,8 @@ ms.collection:
 - m365-security
 - zerotrust-solution
 - tier2
+ms.service: microsoft-365-zero-trust
 ms.subservice: mdo
-ms.service: microsoft-365-security
 search.appverid: met150
 ---
 
