@@ -146,6 +146,19 @@ Both structured and freeform models use Microsoft Power Apps AI Builder to creat
 
 [Learn more about using the OCR service in Microsoft Syntex.](ocr-overview.md)
 
+### Microsoft 365 Archive (Preview)
+
+:::row:::
+   :::column span="":::
+      ![Image of generic archive icon.](../media/content-understanding/archive-image.png)
+   :::column-end:::
+   :::column span="3":::
+      Microsoft 365 Archive is a cost-effective, long-term storage solution for inactive or historical data in SharePoint. Because the data is archived in place, the content retains Microsoft 365 security, compliance, search, and rich metadata.
+   :::column-end:::
+:::row-end:::
+
+[Learn more about Microsoft 365 Archive (Preview).](archive/archive-overview.md)
+
 ## Other features
 
 ### Annotations
