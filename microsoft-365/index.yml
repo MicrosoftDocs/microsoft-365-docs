@@ -215,6 +215,11 @@ tools:
       imageSrc: /office/media/icons/deploy-blue.svg
       url: /microsoft-365/fasttrack/
     # Card
+    - title: Microsoft 365 service adoption framework
+      # imageSrc should be square in ratio with no white space
+      imageSrc: /office/media/icons/users-group.svg
+      url: /training/paths/m365-service-adoption/
+    # Card
     - title: Microsoft 365 Community Content
       imageSrc: /office/media/icons/blog-site-blue.svg
       url: /microsoft-365/community/
