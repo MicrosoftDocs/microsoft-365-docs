@@ -58,31 +58,13 @@ This article is updated frequently to let you know what's new in the latest rele
   
     RHEL 6 'Extended end of life support' is poised to end by June 30 and customers are advised to plan their RHEL upgrades accordingly aligned with guidance from Red Hat. Customers who need to run MDE on RHEL 6 servers can continue to leverage version 101.23082.0011 (does not expire before June 30, 2024) supported on kernel versions 2.6.32-754.49.1.el6.x86_64 or prior.
   - Engine Update to `1.1.23090.2008` and Signatures Ver: `1.399.690.0`.
-  - Bug fixes.
+  - Performance Improvements and Bug fixes.
+    - Scheduled scan consumes lower CPU cycles
 
 **Known issues**
 
-- While upgrading from mdatp version `101.75.43` or `101.78.13`, you might encounter a kernel hang. Run the following commands before attempting to upgrade to version `101.98.05`. For more information, see [System hang due to blocked tasks in fanotify code](https://access.redhat.com/solutions/2838901).
+- CPU lock-up seen on kernel version 5.15.0-0.30.20 in ebpf mode, see [Use eBPF-based sensor for Microsoft Defender for Endpoint on Linux](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/linux-support-ebpf?view=o365-worldwide) for details and Mitigation options.
 
-There are two ways to mitigate this upgrade issue:
-
-1. Use your package manager to uninstall the `101.75.43` or `101.78.13` mdatp version.
-
-Example:
-```bash
-sudo apt purge mdatp
-sudo apt-get install mdatp
-```
-
-2. As an alternative you can follow the instructions to [uninstall](/microsoft-365/security/defender-endpoint/linux-resources#uninstall), then [install](/microsoft-365/security/defender-endpoint/linux-install-manually#application-installation) the latest version of the package.
-
-If you don't want to uninstall mdatp, you can disable rtp and mdatp in sequence before upgrading. 
-Some customers (<1%) experience issues with this method. 
-
- ```bash
-sudo mdatp config real-time-protection --value=disabled
-sudo systemctl disable mdatp
-```
 </details>
 
 
