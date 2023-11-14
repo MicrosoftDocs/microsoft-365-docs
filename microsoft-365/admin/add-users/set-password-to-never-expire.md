@@ -104,7 +104,8 @@ Run one of the following commands:
 - To set the passwords of all the users in an organization to never expire, run the following cmdlet:
 
     ```powershell
-    Get-MGuser -All | Update-MgUser -PasswordPolicies DisablePasswordExpiration
+    $userall = Get-MGuser -All
+    $userall | foreach {Update-MgUser -UserId $_.Id -PasswordPolicies DisablePasswordExpiration}
     ```
 
 > [!WARNING]
