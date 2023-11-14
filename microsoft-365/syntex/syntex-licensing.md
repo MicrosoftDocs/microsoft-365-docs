@@ -44,7 +44,7 @@ Pay-as-you-go currently supports the following Syntex services:
 - Image tagging
 - Taxonomy tagging
 - Optical character recognition
-<!---- Microsoft 365 Archive--->
+- Microsoft 365 Archive (Preview)
 
 More Syntex services will be added as they become available.
 
