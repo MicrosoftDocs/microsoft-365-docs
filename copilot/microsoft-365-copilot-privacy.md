@@ -50,10 +50,20 @@ Microsoft 365 Copilot only surfaces organizational data to which individual user
 
 When you input prompts using Microsoft 365 Copilot, the information contained within your prompts, the data they retrieve, and the generated responses remain within the Microsoft 365 service boundary, in keeping with our current privacy, security, and compliance commitments. Microsoft 365 Copilot uses Azure OpenAI services for processing, not OpenAI’s publicly available services.
 
-Abuse monitoring for Microsoft 365 Copilot occurs in real-time, without providing Microsoft any standing eyes-on or eyes-off access to customer data. While abuse moderation, which includes human review of content, is available in Azure OpenAI, Microsoft 365 Copilot services have opted out of it. Microsoft 365 data isn’t collected or stored by Azure OpenAI.
+> [!NOTE]
+> When using Microsoft 365 Copilot, your organization’s data might leave the Microsoft 365 service boundary under the following circumstances:
+>
+> - When you allow Microsoft 365 Copilot chat experiences to reference public web content. The query sent to Bing might include your organization’s data. For more information, see [Microsoft 365 Copilot and public web content](#microsoft-365-copilot-and-public-web-content).
+> - When you’re using plugins to help Microsoft 365 Copilot to provide more relevant information. Check the privacy statement and terms of use of the plugin to determine how it will handle your organization’s data. For information, see [Extensibility of Microsoft 365 Copilot](#extensibility-of-microsoft-365-copilot).
+
+Abuse monitoring for Microsoft 365 Copilot occurs in real-time, without providing Microsoft any standing access to customer data, either for human or automated review. While abuse moderation, which includes human review of content, is available in Azure OpenAI, Microsoft 365 Copilot services have opted out of it. Microsoft 365 data isn’t collected or stored by Azure OpenAI.
 
 > [!NOTE]
 > We may use customer feedback, which is optional, to improve Microsoft 365 Copilot, just like we use customer feedback to improve other Microsoft 365 services and Microsoft 365 apps. We don't use this feedback to train the foundation LLMs used by Microsoft 365 Copilot. Customers can manage feedback through admin controls. For more information, see [Manage Microsoft feedback for your organization](/microsoft-365/admin/manage/manage-feedback-ms-org) and [Providing feedback about Microsoft 365 Copilot](https://support.microsoft.com/topic/c481c26a-e01a-4be3-bdd0-aee0b0b2a423).
+
+### Delete Microsoft 365 Copilot chat history for a user
+
+To delete a user's Microsoft 365 Copilot chat history, which includes user prompts and the responses Copilot returns, Microsoft 365 admins can [submit a support ticket](/microsoft-365/admin/get-help-support#online-support) in the Microsoft 365 admin center. In this ticket, admins should include their [Tenant ID](/entra/fundamentals/how-to-find-tenant) and the user’s principal name (their [primary email address](/microsoft-365/admin/add-users/change-a-user-name-and-email-address#set-the-primary-email-address)) for which they want data deleted. The ticket will mark chat history for permanent, [hard-deletion](/compliance/regulatory/gdpr-dsr-Office365#deleting-personal-data). For any new requests, please open a new ticket with support and avoid editing your existing requests.  
 
 ### Microsoft 365 Copilot and public web content
 
@@ -111,7 +121,7 @@ For European Union (EU) users, we have additional safeguards to comply with the 
 
 ## Microsoft 365 Copilot and data residency
 
-Customers with [Advanced Data Residency (ADR) in Microsoft 365](/microsoft-365/enterprise/advanced-data-residency) or [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo) can purchase and enable Microsoft 365 Copilot. However, at this time, Microsoft 365 Copilot doesn't provide data residency commitments for Microsoft 365 Copilot customer data-at-rest.
+While using Microsoft 365 Copilot, [Product Terms Data Residency](/microsoft-365/enterprise/m365-dr-product-terms-dr) commitments are upheld. Customers with [Advanced Data Residency (ADR) in Microsoft 365](/microsoft-365/enterprise/advanced-data-residency) or [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo) can purchase and enable Microsoft 365 Copilot. But Microsoft 365 Copilot doesn't provide customer data-at-rest residency commitments for Microsoft 365 Copilot customer data beyond EU Data Boundary and Product Terms data residency commitments.
 
 ## Meeting regulatory compliance requirements
 
