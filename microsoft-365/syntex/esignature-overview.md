@@ -35,7 +35,7 @@ You must be signed in to SharePoint Online by using your work email address.
 
 Syntex eSignature is available for only PDF documents at this time.
 
-### Limitations and plans
+### Limitations
 
 - Currently, Syntex eSignature is available for the US market only. If a tenant's location is in the United States, Syntex eSignature will be available for that tenant. For US-located, multi-geo enabled tenants, eSignature will be available in the home geo only. The feature will roll out to other regions in 2024.
 
