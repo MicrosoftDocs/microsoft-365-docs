@@ -53,11 +53,19 @@ Performance and speed of web interfaces, initial configuration, and restores mig
 
 - SharePoint sites or OneDrive accounts that are currently in the first stage recycle bin must first be restored from the recycle bin before they can be rolled to a prior point in time via the Microsoft 365 Backup tool. The point in time restore via Microsoft 365 Backup won't work if the site or OneDrive is in the recycle bin.
 
+- SharePoint admins operating the Microsoft 365 Backup tool need to have explicit permissions to the sites they are searching for in the backups to be able to find those sites in the backup and restore them.
+
 - SharePoint sites and OneDrive accounts being restored to a new URL will have a read-only lock. The global admin can still download documents or remove the read-only lock manually.
+
+- While searching for sites, note that search is case-sensitive and is a prefix-type search.
 
 - The restored SharePoint or OneDrive sites (in-place or same URL restore only) will have a short downtime during the restoration but won't be explicitly locked during this release.
 
+- SharePoint sites and OneDrive accounts being restored to a new URL, will not have new destination details populated instantly, they would be populated with a delay of approximately 15 minutes.
+
 - For the new URL restore, the restored SharePoint or OneDrive sites (new URLs only) won't have the same permissions as original site. Only the global or SharePoint admin will have permission to the restored site. However, for the in-place or same URL restore, permissions are reverted to the state of the original site at the time it’s being restored from. This is likely to continue to be true into general availability.
+
+- While OneDrive account and mailbox backups of deleted users are maintained and after the user’s Entra ID is deleted are restorable, search in the people picker UI for that user will not work. The user will be displayed as an empty user in results, requiring a guess and check methodology.
 
 - Mailbox draft items aren't backed up or restorable.
 
@@ -79,9 +87,7 @@ Performance and speed of web interfaces, initial configuration, and restores mig
 
 - OneDrive accounts and SharePoint sites that have undergone the following types of changes won't be undoable via restore: tenant rename, tenant move, and site URL change.  
 
-### Monitor
-
-ETA for restore operations isn't available in this release due to technical limitations.
+- While performing a mailbox restore, if there are no items to be restored, the new folder name will not be returned.
 
 ## Self-service scale limits
 

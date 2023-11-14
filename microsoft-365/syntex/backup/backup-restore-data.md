@@ -27,7 +27,7 @@ Once you back up your data, you might need to restore the data in case of an acc
 
 As part of restoring data from backup, admin needs to choose a *restore point* manually or from a recommended *express restore point* by the tool.
 
-- **Restore point**. A prior point in time from which you can restore a healthy version of your content or metadata. If the data from a prior point in time is identical to the present state of your data, then a restore from that point will have no impact on your current data.
+- **Restore point**. A prior point in time from which you can restore a healthy version of your content or metadata. If the data from a prior point in time is identical to the present state of your data, then there will be no items restored, including **Restore to a new folder** for Exchange Online.d
 
 - **Express restore point**. A set of recommended restore points that offers faster restore of data from the backup than a regular restore point.
 
@@ -188,7 +188,7 @@ Follow these steps to restore data backed up for Exchange.
 
 3. The destination of restored items can be chosen from two options, then select **Next**.
 
-    a. **Restore to a new folder** where the content will be restored to a newly created folder named *Restored Items DD-MM-YYYY, HH:MM AM*.
+    a. **Restore to a new folder** where the content will be restored to a newly created folder named *Restored Items YYYY-DD-MM, HH:MM*.
     b.  **Restore in place** where current version of the item will be overwritten by the restored content.
 
 4. On the **Review and Finish** page, you'll now be asked to review and finish all your choices. If everything looks as you want it, select **Restore user mailboxes**.
@@ -197,7 +197,7 @@ Follow these steps to restore data backed up for Exchange.
 
 ### Option 2: Selected content only
 
-1. Use this option to perform a partial mailbox restore. On the **Content scope** page, the **Selected content only** option gives the admin the ability to do a granular restore only (not full mailbox restore). This requires additional privileges to run.
+1. Use this option to perform a partial mailbox restore. On the **Content scope** page, the **Selected content only** option gives the admin the ability to do a granular restore (not full mailbox restore).
 
     ![Screenshot showing the Content scope page with the Selected content only option selected.](../../media/content-understanding/backup-exchange-content-scope-selected.png)
 
