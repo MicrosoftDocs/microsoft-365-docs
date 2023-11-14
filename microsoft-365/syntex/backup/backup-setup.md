@@ -35,6 +35,7 @@ Get started with Microsoft 365 Backup by following the simple three steps in the
 
 As a first step to sign up for Microsoft 365 Backup, you should first link an Azure subscription in [Syntex pay-as-you-go](https://admin.microsoft.com/Adminportal/Home#/featureexplorer/csi/ContentUnderstanding), if you haven't already done so. Although Microsoft 365 Backup isn't part of the Syntex product suite, this offering is still using the Syntex billing setup for consistency with other Microsoft 365 pay-as-you-go offerings.
 
+<!---
 1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home).
 
 2. Select **Setup**.
@@ -61,8 +62,8 @@ As a first step to sign up for Microsoft 365 Backup, you should first link an Az
 6. If you have an Azure subscription, select the subscription from the drop-down menu.
 
     ![Screenshot of the Set up pay-as-you-go billing panel with the Azure subscription section lighlighted.](../../media/content-understanding/backup-setup-azure-subscription.png)
-
-To enable pay-as-you-go billing at Syntex billing, follow the steps in [Configure Microsoft Syntex for pay-as-you-go billing](../syntex-azure-billing.md).
+--->
+To set up pay-as-you-go billing, follow the steps in [Configure Microsoft Syntex for pay-as-you-go billing](../syntex-azure-billing.md).
 
 ### Permissions
 
