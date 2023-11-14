@@ -172,7 +172,10 @@ Please treat the machine as if it were a “regular” Linux host in your enviro
 ### Advanced hunting
 
 In the Advanced Hunting schema, under the DeviceInfo table, we have added a new attribute called HostDeviceId which can be used to map a WSL instance to its Windows host device. 
-A few sample hunting queries are provided below : 
+
+Here are a few sample hunting queries: 
+
+```kusto
 
 Get all WSL device ids for the current organization/tenant 
 let wsl_endpoints = DeviceInfo  
@@ -180,10 +183,18 @@ let wsl_endpoints = DeviceInfo
 | distinct DeviceId; 
 wsl_endpoints
 
+```
+
+```kusto
+
 Get WSL device ids and their corresponding host device ids 
 DeviceInfo  
 | where OSPlatform == "Linux" and isempty(HostDeviceId) != true
 | distinct WSLDeviceId=DeviceId, HostDeviceId;
+
+```
+
+```kusto
 
 Get a list of WSL device ids where curl or wget was run
 let wsl_endpoints = DeviceInfo  
@@ -194,7 +205,7 @@ DeviceProcessEvents
 | where DeviceId in (wsl_endpoints) 
 | sort by Timestamp desc
 
-
+```
 
 ## Troubleshooting
 
