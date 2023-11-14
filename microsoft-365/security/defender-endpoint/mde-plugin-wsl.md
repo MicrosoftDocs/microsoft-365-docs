@@ -31,9 +31,9 @@ Be aware of the following before you start:
 
 ## Software Prerequisites
 
-- WSL version >= 2.0.7 or later must be running with at least one active distro
+- WSL version 2.0.7 or later must be running with at least one active distro
 
-   Run “wsl --update” to make sure you are on the latest version. If you observe “wsl –version” shows a version older than 2.0.7, run “wsl –update –pre-release” to get the latest
+   Run `wsl --update` to make sure you are on the latest version. If you observe `wsl –version` shows a version older than 2.0.7, run `wsl –update –pre-release` to get the latest update.
 
 - Microsoft Defender for Endpoint must be onboarded and running on the Windows host OS.
 
@@ -43,7 +43,11 @@ Be aware of the following before you start:
 
 Installer: DefenderPlugin-x64-0.23.1102.4.msi (download from the onboarding page at [https://security.microsoft.com])
 
-Installation Directories: `C:\Program Files\<br>                   C:\ProgramData\`
+Installation Directories: 
+
+- `C:\Program Files\`
+
+- `C:\ProgramData\`
 
 Components installed:
 
@@ -55,15 +59,15 @@ Components installed:
 
 If you have not yet installed Windows Subsystem for Linux, use the following steps first:
 
--	To install WSL for the first time, open a command prompt/terminal and run “wsl –install”
+- To install WSL for the first time, open a command prompt/terminal and run `wsl –install`
 
--	If you already have WSL installed, please run “wsl –update” to make sure you are on the latest version
+- If you already have WSL installed, run `wsl –update` to make sure you are on the latest version
 
--	Run the "wsl" command to ensure WSL is running before testing
+- Run the `wsl` command to ensure WSL is running before testing.
 
 After ensuring WSL is running and fully up to date, use the following steps to install the plug-in:
 
-1. Install the MSI file downloaded from the onboarding section in the Defender portal (Setting > Endpoints > Onboarding and select "Windows Subsystem for Linux 2 (plug-in))
+1. Install the MSI file downloaded from the onboarding section in the Microsoft Defender portal (**Settings** > **Endpoints** > **Onboarding** > **Windows Subsystem for Linux 2 (plug-in)**.)
 
 2. Open a command prompt/terminal and run `wsl`.
 
