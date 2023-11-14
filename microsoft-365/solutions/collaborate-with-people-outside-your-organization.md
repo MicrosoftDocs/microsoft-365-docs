@@ -2,7 +2,7 @@
 title: "Collaborating with people outside your organization"
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: serdars
+manager: pamgreen
 ms.date: 11/06/2023
 audience: ITPro
 ms.topic: article
