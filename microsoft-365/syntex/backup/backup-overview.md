@@ -21,7 +21,7 @@ description: Learn about Microsoft 365 Backup.
 # Overview of Microsoft 365 Backup (Preview)
 
 > [!NOTE]
-> This feature is currently in preview and subject to change. Before you begin, read the [Microsoft 365 Backup preview terms and conditions](backup-preview-terms.md).
+> This feature is currently in preview and subject to change and limitations as defined. Before you begin, read the [Microsoft 365 Backup preview terms and conditions](backup-preview-terms.md).
 
 ## About the preview
 
