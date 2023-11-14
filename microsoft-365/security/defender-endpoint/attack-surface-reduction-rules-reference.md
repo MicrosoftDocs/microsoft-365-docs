@@ -245,6 +245,8 @@ The **Block abuse of exploited vulnerable signed drivers** rule doesn't block a 
 
 Intune Name: `Block abuse of exploited vulnerable signed drivers`
 
+GUID: `56a863a9-875e-4185-98a7-b882c64b5ce5`
+
 Advanced hunting action type:
 
 - AsrVulnerableSignedDriverAudited
