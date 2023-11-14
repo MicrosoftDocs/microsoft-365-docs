@@ -39,7 +39,7 @@ You can use the following properties to create a removable storage group.
 
 ## Licensing requirements
 
-Before you get started with Removable Storage Access Control, you must confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). To access and use Removable Storage Access Control through group policy, you must have Microsoft 365 E3 or E5.
+Before you get started with Removable Storage Access Control, you must confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2). To access and use Removable Storage Access Control through group policy, you must have a standalone Microsoft defender for endpoint Plan 1 or Microsoft 365 E3 which includes Microsoft defender for endpoint Plan 1 or Microsoft 365 E5 which includes Microsoft defender for endpoint Plan 1 and 2.
 
 ## Deploy using group policy
 
