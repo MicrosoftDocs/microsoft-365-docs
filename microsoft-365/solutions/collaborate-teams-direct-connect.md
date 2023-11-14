@@ -2,7 +2,7 @@
 title: Collaborate with external participants in a shared channel (IT Admins)
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: serdars
+manager: pamgreen
 ms.date: 07/18/2023
 audience: ITPro
 ms.topic: article

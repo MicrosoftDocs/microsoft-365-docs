@@ -4,7 +4,7 @@ ms.reviewer: mmclean
 ms.date: 08/12/2020
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: serdars
+manager: pamgreen
 audience: Admin
 ms.topic: article
 ms.service: o365-solutions
