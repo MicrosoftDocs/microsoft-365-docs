@@ -44,7 +44,7 @@ By bringing your billing back to a healthy state or by asking support to reverse
 ## GDPR special handling, compliance, and backup data deletion
 
 > [!IMPORTANT]
-> Given that compliance tooling actions might destroy primary data, we administratively isolate those destructive actions from flowing through to backed up data automatically. In other words, compliance actions that automatically delete your primary data will not automatically delete data from your backups.
+> Given that compliance tooling actions might destroy primary data, we administratively isolate those destructive actions from flowing through to backed up data automatically. In other words, **compliance actions that automatically delete your primary data will not automatically delete data from your backups**.
 
 The core purpose of the backup and restore service is to provide you with a way to recover from common data deletion, overwrite, or encryption events.
 
@@ -68,7 +68,7 @@ Retention and deletion policies don't “flow through” to the backups. This me
 
 ### Sensitivity labels
 
-Restoration of any data (such as sites or mailboxes) reverts the sensitivity labels of the data to the state of that protected item at the prior point in time from which it's being restored (that is, the state of labeling at the point in time from which the content is being restored; in other words, the state reverts to the prior point in time).
+Restoration of any data (such as sites or mailbox items) reverts the sensitivity labels of the data to the state of that protected item at the prior point in time from which it's being restored (that is, the state of labeling at the point in time from which the content is being restored; in other words, the state reverts to the prior point in time).
 
 ## Backup data deletion and undo grace periods
 
