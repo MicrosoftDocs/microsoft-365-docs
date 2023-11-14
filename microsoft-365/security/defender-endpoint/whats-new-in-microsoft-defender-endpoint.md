@@ -61,6 +61,7 @@ For more information on Microsoft Defender for Endpoint on specific operating sy
 ## November 2023
 
 - [Microsoft Defender Core service](microsoft-defender-antivirus-windows.md#microsoft-defender-core-service) is now available for consumers and is planned to begin rolling out to enterprise customers in early 2024.
+- The (Microsoft Defender for Endpoint plug-in for Windows Subsystem for Linux (WSL))[/microsoft-365/security/defender-endpoint/mde-plugin-wsl] is now available in public preview. Please visit the link to sign up!
 
 ## October 2023
 
