@@ -126,7 +126,7 @@ These instructions help you verify if MDE in WSL has connectivity to the interne
 
 To run the connectivity test, please follow the below instructions:
 
-1. Open Registry Editor.
+1. Open Registry Editor as an administrator.
 
 2. Create a registry key with the following details:
 
@@ -172,24 +172,22 @@ To test the plug-in after installation, follow these steps:
 
 1. Open Terminal or Command Prompt. (In Windows, go to **Start** > **Command Prompt**. Or, right-click the start button and then select **Terminal**.) 
 
-2. Run the command:  wsl
+2. Run the command `wsl`.
 
-3. Download and extract the script file from https://aka.ms/LinuxDIY and run the following command at the Linux prompt.
+3. Download and extract the script file from [https://aka.ms/LinuxDIY](https://aka.ms/LinuxDIY).
 
-4. Run the command: ./mde_linux_edr_diy.sh
+4. At the Linux prompt, run the command `./mde_linux_edr_diy.sh`.
 
-5. An alert should appear in the portal after a few minutes for a detection on the WSL2 instance.
+   An alert should appear in the portal after a few minutes for a detection on the WSL2 instance.
 
-> [!NOTE]
-> It takes about 5 minutes for the events to appear on the Microsoft Defender portal
+   > [!NOTE]
+   > It takes about 5 minutes for the events to appear on the Microsoft Defender portal
 
-Please treat the machine as if it were a “regular” Linux host in your environment, to perform testing against; in particular, we would like to get your feedback on the ability to surface potentially malicious behavior using the new plug-in.
+Treat the machine as if it were a regular Linux host in your environment to perform testing against. In particular, we would like to get your feedback on the ability to surface potentially malicious behavior using the new plug-in.
 
 ### Advanced hunting
 
-In the Advanced Hunting schema, under the DeviceInfo table, we have added a new attribute called HostDeviceId which can be used to map a WSL instance to its Windows host device. 
-
-Here are a few sample hunting queries: 
+In the Advanced Hunting schema, under the `DeviceInfo` table, we have added a new attribute called `HostDeviceId` that can be used to map a WSL instance to its Windows host device. Here are a few sample hunting queries: 
 
 ```kusto
 
@@ -225,11 +223,11 @@ DeviceProcessEvents
 
 ## Troubleshooting
 
-1. healthcheck.exe shows the output: WSLService is not running. Launch with ‘wsl’ command in PowerShell and rerun health check
+1. The command `healthcheck.exe` shows the output, "WSLService is not running. Launch with ‘wsl’ command in PowerShell and rerun health check."
 
    :::image type="content" source="media/mdeplugin-wsl/powershell-output.png" alt-text="Screenshot showing PowerShell output.":::
 
-2. If the above error occurs, take the following steps:
+2. If the previously mentioned error occurs, take the following steps:
 
    1. Open a terminal instance and run the command `wsl`.
 
