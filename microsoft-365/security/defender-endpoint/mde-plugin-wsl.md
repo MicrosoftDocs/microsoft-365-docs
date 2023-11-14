@@ -74,7 +74,7 @@ After ensuring WSL is running and fully up to date, use the following steps to i
 Tip: you can (deploy the package using Microsoft Intune)[/mem/intune/apps/lob-apps-windows]
 
 > [!NOTE]
-> If WslService is running, it stops during the installation process. You do not need to onboard the subsystem separately - the plug-in will automatically onboard to the tenant the Windows host is onboarded to.
+> If WslService is running, it stops during the installation process. You do not need to onboard the subsystem separately; instead, the plug-in automatically onboards to the tenant the Windows host is onboarded to.
 
 ## Installation validation checklist
 
@@ -82,9 +82,9 @@ Tip: you can (deploy the package using Microsoft Intune)[/mem/intune/apps/lob-ap
 
 2. Open a terminal/command prompt instance. (On Windows 11, go to **Start** > **Command Prompt**. Or, right-click the start button and then select **Terminal**.)
 
-3. Run the command: `cd “C:\Program Files\Microsoft Defender for Endpoint plug-in for WSL\tools”`.
+3. Run the command: `cd C:\Program Files\Microsoft Defender for Endpoint plug-in for WSL\tools`.
 
-4. RUn the command `.\health_check.exe`.
+4. Run the command `.\health_check.exe`.
 
 5. Review the details of Defender and WSL and make sure they match or exceed the below:
 
@@ -99,11 +99,11 @@ Use these instructions to configure proxy connectivity for the Defender for Endp
 
 Reuse Microsoft Defender for Endpoint static proxy setting (TelemetryProxyServer) 
 
-If you wish to use the host “[static proxy](configure-proxy-internet.md)” configuration for MDE for the WSL plug-in, nothing more is required. This configuration will be adopted by the plug-in automatically.
+If you want to use the host [static proxy](configure-proxy-internet.md) configuration for MDE for the WSL plug-in, nothing more is required. This configuration is adopted by the plug-in automatically.
 
 ### Set up a different/specific proxy configuration for MDE WSL
 
-If you would like to set up a different proxy for Defender running in WSL (other than the Windows proxy specified with TelemetryProxyServer), or you have currently configured a system-wide proxy, the proxy configuration won't automatically be available for the plug-in. Follow these steps:
+If you want to set up a different proxy for Defender running in WSL (other than the Windows proxy specified with `TelemetryProxyServer`), or you have currently configured a system-wide proxy, the proxy configuration isn't automatically available for the plug-in. In thise case, take these steps:
 
 1. Open registry editor (requires administrator access) or use a tool that can configure registry keys across devices.
 
