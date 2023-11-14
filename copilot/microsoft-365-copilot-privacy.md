@@ -46,7 +46,7 @@ Microsoft 365 Copilot provides value by connecting LLMs to your organizational d
 > [!IMPORTANT]
 > Prompts, responses, and data accessed through Microsoft Graph aren't used to train foundation LLMs, including those used by Microsoft 365 Copilot.
 
-Microsoft 365 Copilot only surfaces organizational data to which individual users have at least view permissions. It's important that you're using the permission models available in Microsoft 365 services, such as SharePoint, to help ensure the right users or groups have the right access to the right content within your organization.  
+Microsoft 365 Copilot only surfaces organizational data to which individual users have at least view permissions. It's important that you're using the permission models available in Microsoft 365 services, such as SharePoint, to help ensure the right users or groups have the right access to the right content within your organization. This includes permissions you give to users outside your organization through inter-tenant collaboration solutions, such as [shared channels in Microsoft Teams](/microsoftteams/shared-channels) or [external sharing in SharePoint](/sharepoint/external-sharing-overview).  
 
 When you input prompts using Microsoft 365 Copilot, the information contained within your prompts, the data they retrieve, and the generated responses remain within the Microsoft 365 service boundary, in keeping with our current privacy, security, and compliance commitments. Microsoft 365 Copilot uses Azure OpenAI services for processing, not OpenAI’s publicly available services.
 
@@ -56,14 +56,26 @@ When you input prompts using Microsoft 365 Copilot, the information contained wi
 > - When you allow Microsoft 365 Copilot chat experiences to reference public web content. The query sent to Bing might include your organization’s data. For more information, see [Microsoft 365 Copilot and public web content](#microsoft-365-copilot-and-public-web-content).
 > - When you’re using plugins to help Microsoft 365 Copilot to provide more relevant information. Check the privacy statement and terms of use of the plugin to determine how it will handle your organization’s data. For information, see [Extensibility of Microsoft 365 Copilot](#extensibility-of-microsoft-365-copilot).
 
-Abuse monitoring for Microsoft 365 Copilot occurs in real-time, without providing Microsoft any standing access to customer data, either for human or automated review. While abuse moderation, which includes human review of content, is available in Azure OpenAI, Microsoft 365 Copilot services have opted out of it. Microsoft 365 data isn’t collected or stored by Azure OpenAI.
+Abuse monitoring for Microsoft 365 Copilot occurs in real-time, without providing Microsoft any standing access to customer data, either for human or for automated review. While abuse moderation, which includes human review of content, is available in Azure OpenAI, Microsoft 365 Copilot services have opted out of it. Microsoft 365 data isn’t collected or stored by Azure OpenAI.
 
 > [!NOTE]
 > We may use customer feedback, which is optional, to improve Microsoft 365 Copilot, just like we use customer feedback to improve other Microsoft 365 services and Microsoft 365 apps. We don't use this feedback to train the foundation LLMs used by Microsoft 365 Copilot. Customers can manage feedback through admin controls. For more information, see [Manage Microsoft feedback for your organization](/microsoft-365/admin/manage/manage-feedback-ms-org) and [Providing feedback about Microsoft 365 Copilot](https://support.microsoft.com/topic/c481c26a-e01a-4be3-bdd0-aee0b0b2a423).
 
-### Delete Microsoft 365 Copilot chat history for a user
+### Data stored about user interactions with Microsoft 365 Copilot
 
-To delete a user's Microsoft 365 Copilot chat history, which includes user prompts and the responses Copilot returns, Microsoft 365 admins can [submit a support ticket](/microsoft-365/admin/get-help-support#online-support) in the Microsoft 365 admin center. In this ticket, admins should include their [Tenant ID](/entra/fundamentals/how-to-find-tenant) and the user’s principal name (their [primary email address](/microsoft-365/admin/add-users/change-a-user-name-and-email-address#set-the-primary-email-address)) for which they want data deleted. The ticket will mark chat history for permanent, [hard-deletion](/compliance/regulatory/gdpr-dsr-Office365#deleting-personal-data). For any new requests, please open a new ticket with support and avoid editing your existing requests.  
+When a user interacts with Copilot in Microsoft 365 apps (such as Word, PowerPoint, Excel, OneNote, Loop, or Whiteboard), we store data about these interactions. The stored data includes the user's prompt, how Copilot responded, and information used to ground Copilot's response. We use this data to provide, to support, and to improve Copilot. For example, this stored data provides users with chat history in [Microsoft 365 Chat](https://support.microsoft.com/topic/5b00a52d-7296-48ee-b938-b95b7209f737) and [meetings in Microsoft Teams](https://support.microsoft.com/office/0bf9dd3c-96f7-44e2-8bb8-790bedf066b1). This data is stored in alignment with contractual commitments with your organization’s other content in Microsoft 365. The data is encrypted while it's stored and isn't used to train foundation LLMs, including those used by Microsoft 365 Copilot.
+
+To view and manage this stored data, admins can use Content search or Microsoft Purview. Admins can also use Microsoft Purview to set retention policies for the data related to chat interactions with Copilot. For more information, see the following articles:
+
+- [Overview of Content search](/purview/ediscovery-content-search-overview)
+- [Protect and manage Microsoft 365 Copilot by using Microsoft Purview](/purview/ai-microsoft-purview)
+- [Learn about retention for Microsoft 365 Copilot](/purview/retention-policies-copilot)
+
+For Teams chats with Copilot, admins can also use [Teams Export APIs](/microsoftteams/export-teams-content) to view the stored data.
+
+### Deleting Microsoft 365 Copilot chat history for a user
+
+To delete a user's Microsoft 365 Copilot chat history, which includes user prompts and the responses Copilot returns, Microsoft 365 admins can [submit an online support ticket](/microsoft-365/admin/get-help-support#online-support) in the Microsoft 365 admin center. In this ticket, admins should include their [Tenant ID](/entra/fundamentals/how-to-find-tenant) and the user’s principal name (their [primary email address](/microsoft-365/admin/add-users/change-a-user-name-and-email-address#set-the-primary-email-address)) for which they want data deleted. The ticket will mark chat history for permanent, [hard-deletion](/compliance/regulatory/gdpr-dsr-Office365#deleting-personal-data). For any new requests, open a new ticket with support and avoid editing your existing requests.  
 
 ### Microsoft 365 Copilot and public web content
 
