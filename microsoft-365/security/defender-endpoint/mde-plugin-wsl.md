@@ -80,7 +80,7 @@ Tip: you can (deploy the package using Microsoft Intune)[/mem/intune/apps/lob-ap
 
 1. After update or installation, wait for at least five minutes for the plug-in to fully initialize and write log output.
 
-2. Open a terminal/command prompt instance. (On Windows 11, go to **Start** > **Command Prompt**. Or, right-click the start button and then select **Terminal**.)
+2. Open Terminal or Command Prompt. (In Windows, go to **Start** > **Command Prompt**. Or, right-click the start button and then select **Terminal**.) 
 
 3. Run the command: `cd C:\Program Files\Microsoft Defender for Endpoint plug-in for WSL\tools`.
 
@@ -103,9 +103,9 @@ If you want to use the host [static proxy](configure-proxy-internet.md) configur
 
 ### Set up a different/specific proxy configuration for MDE WSL
 
-If you want to set up a different proxy for Defender running in WSL (other than the Windows proxy specified with `TelemetryProxyServer`), or you have currently configured a system-wide proxy, the proxy configuration isn't automatically available for the plug-in. In thise case, take these steps:
+If you want to set up a different proxy for Defender running in WSL (other than the Windows proxy specified with `TelemetryProxyServer`), or you have currently configured a system-wide proxy, the proxy configuration isn't automatically available for the plug-in. In this case, take these steps:
 
-1. Open registry editor (requires administrator access) or use a tool that can configure registry keys across devices.
+1. Open Registry Editor as an administrator or use a tool that can configure registry keys across devices.
 
 2. Create a registry key with the following details:
 
@@ -164,9 +164,13 @@ After installing the plug-in, the subsystem and all its running containers are o
 
    :::image type="content" source="media/mdeplugin-wsl/device-overview.png" alt-text="Screenshot showing device overview.":::  
 
-The timeline is populated, similar to Defender for Endpoint on Linux, with events from inside the subsystem (file, process, network). You can observe activity and detections in the timeline view. Alerts and incidents are generated as appropriate as well. To test this, after the installation of the plug-in, please follow the steps given below:
+The timeline is populated, similar to Defender for Endpoint on Linux, with events from inside the subsystem (file, process, network). You can observe activity and detections in the timeline view. Alerts and incidents are generated as appropriate as well. 
 
-1. Open a terminal/command prompt instance (Start, run “cmd” or on Windows 11, right-click the start button and select Terminal) 
+### Test the plugin
+
+To test the plug-in after installation, follow these steps: 
+
+1. Open Terminal or Command Prompt. (In Windows, go to **Start** > **Command Prompt**. Or, right-click the start button and then select **Terminal**.) 
 
 2. Run the command:  wsl
 
