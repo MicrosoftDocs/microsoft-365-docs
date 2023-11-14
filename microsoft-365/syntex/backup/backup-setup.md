@@ -99,9 +99,9 @@ Only tenant-level admins can create and manage backups using Microsoft 365 Backu
 
 |Admin role  |OneDrive  |SharePoint  |Exchange  |
 |---------|---------|---------|---------|
-|Global admin     | ✓        | X        | X       |
-|SharePoint admin     | X        | X        |         |
-|Exchange admin    |         |         | X        |
+|Global admin     | ✓        | ✓        | ✓       |
+|SharePoint admin     | ✓        | ✓        |         |
+|Exchange admin    |         |         | ✓        |
 
 ## Glossary
 
