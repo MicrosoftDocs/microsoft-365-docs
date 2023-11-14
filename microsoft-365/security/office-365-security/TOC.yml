@@ -67,7 +67,7 @@
        items:
        - name: Defender for Office 365 permissions
          href: mdo-portal-permissions.md
-       - name: Permissions - Defender for Office 365 and Purview compliance
+       - name: Permissions - Defender for Office 365 and Microsoft Purview
          href: scc-permissions.md
        - name: Microsoft 365 Defender RBAC
          href: /microsoft-365/security/defender/manage-rbac
