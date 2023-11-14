@@ -20,7 +20,7 @@ description: Learn how to archive, reactivate, and manage sites in Microsoft 365
 # Manage Microsoft 365 Archive (Preview)
 
 > [!NOTE]
-> This feature is currently in preview and subject to change.
+> This feature is currently in preview and subject to change. The feature is currently rolling out and might not yet be fully available to all organizations.
 
 ## Archive a site
 

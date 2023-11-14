@@ -20,7 +20,7 @@ description: Learn about Microsoft 365 Archive.
 # Overview of Microsoft 365 Archive (Preview)
 
 > [!NOTE]
-> This feature is currently in preview and subject to change. This feature is currently rolling out and might not be fully available to all organizations yet. Before you begin, read the [Microsoft 365 Archive preview terms and conditions](archive-preview-terms.md).
+> This feature is currently in preview and subject to change. The feature is currently rolling out and might not yet be fully available to all organizations. Before you begin, read the [Microsoft 365 Archive preview terms and conditions](archive-preview-terms.md).
 
 Microsoft 365 Archive offers cost-effective storage for inactive SharePoint sites.
 

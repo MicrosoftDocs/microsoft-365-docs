@@ -20,7 +20,7 @@ description: Learn about the pricing model for storage consumption and site reac
 # Pricing model for Microsoft 365 Archive (Preview)
 
 > [!NOTE]
-> This feature is currently in preview and subject to change.
+> This feature is currently in preview and subject to change. The feature is currently rolling out and might not yet be fully available to all organizations.
 
 Microsoft 365 Archive charges you for storage and reactivation.
 
