@@ -209,7 +209,7 @@ DeviceProcessEvents
 
 3. health_check.exe shows the output: No Defender Health telemetry found in the log file. Please retry in 5 minutes....
 
-   :::image type="content" source="media/mdeplugin-wsl/powershell-2.png" alt-text="Screenshot showing health telemetry status.":::
+   :::image type="content" source="media/mdeplugin-wsl/wsl-health-check.png" alt-text="Screenshot showing health telemetry status.":::
 
 4. If the above error occurs, wait for 5 minutes and rerun .\health_check.exe.
 
