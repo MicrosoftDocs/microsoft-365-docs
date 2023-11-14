@@ -102,6 +102,7 @@ To add antimalware protection to these older operating systems, you can use [Sys
 
 - [macOS](microsoft-defender-endpoint-mac.md)
 - [Linux](microsoft-defender-endpoint-linux.md)
+- [Windows Subsystem for Linux](mde-plugin-wsl.md)
 - [Android](microsoft-defender-endpoint-android.md)
 - [iOS](microsoft-defender-endpoint-ios.md)
 
