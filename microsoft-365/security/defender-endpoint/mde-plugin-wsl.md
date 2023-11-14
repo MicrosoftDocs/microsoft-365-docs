@@ -237,7 +237,7 @@ DeviceProcessEvents
 
 1. The command `healthcheck.exe` shows the output, "WSLService is not running. Launch with ‘wsl’ command in PowerShell and rerun health check."
 
-   :::image type="content" source="media/mdeplugin-wsl/powershell-output.png" alt-text="Screenshot showing PowerShell output.":::
+   :::image type="content" source="media/mdeplugin-wsl/wsl-health-check.png" alt-text="Screenshot showing PowerShell output.":::
 
 2. If the previously mentioned error occurs, take the following steps:
 
