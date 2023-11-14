@@ -63,7 +63,6 @@ The following section describes the detection and investigation experience in Mi
 > |Alerts|All Defender for Cloud alerts, including multi-cloud, internal and external providers' alerts will be integrated to Microsoft 365 Defender. Defender for Cloud alerts will show on the Microsoft 365 Defender [alert queue](/defender-endpoint/alerts-queue-endpoint-detection-response/).</br></br> The *cloud resource* asset will show up in the Asset tab of an alert. Resources are clearly identified as an Azure, Amazon, or a Google Cloud resource.</br></br>Defender for Cloud alerts will automatically be associated with a tenant.</br></br>There will be no duplication of alerts from other Defender workloads.|
 > |Alert and incident correlation|Alerts and incidents are automatically correlated, providing robust context to security operations teams to understand the complete attack story in their cloud environment.|
 > |Threat detection|Accurate matching of virtual entities to device entities to ensure precision and effective threat detection.|
-> |Advanced hunting|   |
 > |Unified API|Defender for Cloud alerts and incidents are now included in [Microsoft 365 Defender's public API](api-overview.md), allowing customers to export their security alerts data into other systems using one API.|
 
 ## Impact to Microsoft Sentinel users
@@ -75,9 +74,8 @@ Microsoft Sentinel customers integrating Defender for Cloud alerts are required 
 - Turn off Analytics rules used to create incidents from Defender for Cloud alerts, including rules created through the Microsoft incident creation rules. Incidents are created automatically in the Defender portal.
 - [Use Automation rules](/sentinel/create-tasks-automation-rule/) to replace incident creation rules or use the [built-in tuning capabilities in the Defender portal](investigate-alerts.md#tune-an-alert) to suppress certain alerts.
 
-The following changes should also be noted:
+The following change should also be noted:
 
-- The following entities are not available in the alerts. These entities will gradually be added to the alerts in future developments:
 - The action to relate alerts to Microsoft 365 Defender incidents is removed.
 
 ### Opting out of Defender for Cloud alerts
