@@ -37,11 +37,11 @@ Syntex eSignature is available for only PDF documents at this time.
 
 ### Limitations
 
-- Currently, Syntex eSignature is available for the US market only. If a tenant's location is in the United States, Syntex eSignature will be available for that tenant. For US-located, multi-geo enabled tenants, eSignature will be available in the home geo only. The feature will roll out to other regions in 2024.
+- Currently, Syntex eSignature is available for the US market only. If a tenant's location is in the United States, Syntex eSignature will be available for that tenant. For US-located, multi-geo enabled tenants, eSignature will be available in the home geo only. The feature rolls out to other regions in 2024.
 
-- Syntex eSignature will support third-party electronic signature providers in 2024. Starting with Adobe Acrobat Sign and DocuSign, you will be able to request signatures on documents in SharePoint.
+- Syntex eSignature will support third-party electronic signature providers in 2024. Starting with Adobe Acrobat Sign and DocuSign, you'll be able to request signatures on documents in SharePoint.
 
-- You will be able to track your Syntex eSignature requests using the Approval app in Microsoft Teams in 2024.
+- You'll be able to track your Syntex eSignature requests using the Approval app in Microsoft Teams in 2024.
 
 <br>
 
