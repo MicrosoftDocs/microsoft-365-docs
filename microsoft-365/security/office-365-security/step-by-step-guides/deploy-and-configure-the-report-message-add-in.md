@@ -57,7 +57,7 @@ Depending on whether you are licensed for Defender for Office 365, you'll also g
 1. **Login** to the Microsoft Security portal at <https://security.microsoft.com>.
 2. On the left nav, select **Settings** and choose **Email & collaboration**.
 3. Select **User reported settings**.
-4. Ensure **Monitor report messages in outlook** is selected and select **use the built-in report button**
+4. Ensure **Monitor report messages in outlook** is selected and select **use the built-in report button**.
 5. Under **Send the reported messages to** choose **Microsoft Only** (Recommended).
 
 ## Optional steps – configure notifications
