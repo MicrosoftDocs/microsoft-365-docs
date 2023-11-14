@@ -29,19 +29,19 @@ Be aware of the following before you start:
 
 3.	If you're using a proxy in your (test) environment, ensure that the plug-in is set up to use it correctly. WSL is typically not automatically configured to use a proxy. See the section “Setting a proxy for the plug-in“ for more information.
 
-## Software Prerequisites
+## Software prerequisites
 
-- WSL version 2.0.7 or later must be running with at least one active distro
+- WSL version 2.0.7 or later must be running with at least one active distro.
 
    Run `wsl --update` to make sure you are on the latest version. If you observe `wsl –version` shows a version older than 2.0.7, run `wsl –update –pre-release` to get the latest update.
 
-- Microsoft Defender for Endpoint must be onboarded and running on the Windows host OS.
+- Defender for Endpoint must be onboarded and running on the Windows host OS.
 
-- The host OS must be running Windows 10, version 2004 and higher (Build 19041 and higher) or Windows 11 to support the Windows Subsystem for Linux versions that can work with the plug-in.
+- The host OS must be running Windows 10, version 2004 and higher (build 19041 and higher) or Windows 11 to support the Windows Subsystem for Linux versions that can work with the plug-in.
 
 ## Software components and Installer file names
 
-Installer: DefenderPlugin-x64-0.23.1102.4.msi (download from the onboarding page at [https://security.microsoft.com])
+Installer: `DefenderPlugin-x64-0.23.1102.4.msi`. You can download it from the onboarding page in the [Microsoft Defender portal](https://security.microsoft.com).
 
 Installation Directories: 
 
