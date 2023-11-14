@@ -74,8 +74,8 @@ Performance and speed of web interfaces, initial configuration, and restores mig
 
 - Deleting the user account (for example, deleting the Microsoft Entra ID user) that owns the OneDrive account or Exchange mailbox renders the OneDrive account and Exchange mailbox as inactive or orphaned. The end-to-end workflow to restore such sites or mailboxes isn't supported directly in the Microsoft 365 Backup product. The Microsoft 365 Backup product ensures retention of the content. For more information about how to restore inactive mailboxes or orphaned OneDrive accounts, see:
 
-    - OneDrive and Sharepoint: [Fix site user ID mismatch in SharePoint or OneDrive](https://learn.microsoft.com/en-us/sharepoint/troubleshoot/sharing-and-permissions/fix-site-user-id-mismatch)
-    - Exchange: [Recover an inactive mailbox](https://learn.microsoft.com/en-us/purview/recover-an-inactive-mailbox)
+    - OneDrive and Sharepoint: [Fix site user ID mismatch in SharePoint or OneDrive](/sharepoint/troubleshoot/sharing-and-permissions/fix-site-user-id-mismatch)
+    - Exchange: [Recover an inactive mailbox](/purview/recover-an-inactive-mailbox)
 
 - While restoring Exchange mailboxes at a granular level, the search feature provides several search parameters. These parameters allow you to enter up to a maximum of five keywords each. For example, the parameters “from” and “to” allow you to enter up to a maximum of five email addresses each.
 
