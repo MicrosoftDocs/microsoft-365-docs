@@ -17,10 +17,10 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: Learn how to set up Microsoft Syntex eSignature to send electronic signature requests to people inside and outside of your organization. 
 ---
 
-Note: Syntex eSignature is available for the US market currently - if a tenant's location is the US, Syntex eSignature will be available for that tenant. For US-located, multi-geo enabled tenants, eSign will be available in the home geo only. 
-Syntex eSignature will roll out to other regions in 2024
-
 # Set up Microsoft Syntex eSignature
+
+> [!NOTE]
+> Syntex eSignature currently available for the US market only. If a tenant's location is the US, Syntex eSignature will be available for that tenant. For US-located, multi-geo enabled tenants, eSignature will be available in the home geo only. Syntex eSignature will roll out to other regions in 2024.
 
 The Microsoft Syntex eSignature service is set up in the Microsoft 365 admin center. Syntex eSignature uses simple electronic signatures. Before you begin, determine whether this is appropriate for your needs and then read the [Microsoft Syntex eSignature terms of service](/legal/microsoft-365/esignature-terms-of-service).
 
