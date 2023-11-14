@@ -213,34 +213,37 @@ DeviceProcessEvents
 
    :::image type="content" source="media/mdeplugin-wsl/powershell-output.png" alt-text="Screenshot showing PowerShell output.":::
 
-2. If the above error occurs,
+2. If the above error occurs, take the following steps:
 
-- Open a terminal instance and run the command “wsl”
-- Wait for at least 5 minutes before rerunning the health check.
+   1. Open a terminal instance and run the command `wsl`.
 
-3. health_check.exe shows the output: No Defender Health telemetry found in the log file. Please retry in 5 minutes....
+   2. Wait for at least 5 minutes before rerunning the health check.
+
+3. The `health_check.exe` command might show the output, "No Defender Health telemetry found in the log file. Please retry in 5 minutes."
 
    :::image type="content" source="media/mdeplugin-wsl/wsl-health-check.png" alt-text="Screenshot showing health telemetry status.":::
 
-4. If the above error occurs, wait for 5 minutes and rerun .\health_check.exe.
+   If that error occurs, wait for 5 minutes and rerun `health_check.exe`.
 
-5. If you don't see any devices in the Microsoft 365 Defender portal, or you don't see any events in the timeline, check these things:
+4. If you don't see any devices in the Microsoft 365 Defender portal, or you don't see any events in the timeline, check these things:
 
    - If you are not seeing a machine object, make sure sufficient time has passed for onboarding to complete (typically up to 10 minutes). 
+ 
    - Make sure to use the right filters, and that you have the right permissions to view all device objects. (For example, is your account/group is restricted to a specific group?)
+ 
    - Use the health check tool to provide an overview of overall plug-in health. Open Terminal, and run the `health_check.exe` tool from `C:\Program Files\Microsoft Defender for Endpoint plug-in for WSL\tools`.
 
    :::image type="content" source="media/mdeplugin-wsl/powershell-4.png" alt-text="Screenshot showing status in PowerShell.":::
 
   - Enable the connectivity test and check for Defender for Endpoint connectivity in WSL. If the connectivity test fails, provide the output of the healthcheck tool to [mdeforwsl-preview@microsoft.com](mailto:mdeforwsl-preview@microsoft.com).
 
-6. In case you face any other challenges / issues, open the terminal and run the following commands: 
+5. In case you face any other challenges or issues, open the terminal and run the following commands to generate the support bundle: 
 
 
    ```powershell
-   cd “C:\Program Files\Microsoft Defender for Endpoint plug-in for WSL\tools”
+   cd C:\Program Files\Microsoft Defender for Endpoint plug-in for WSL\tools
 
-   “.\health_check.exe --supportBundle” to generate the support bundle
+   .\health_check.exe --supportBundle 
    ```
    
    The support bundle can be found in the path provided by the previous command. Send the generated zip file to  [mdeforwsl-preview@microsoft.com](mailto:mdeforwsl-preview@microsoft.com)
