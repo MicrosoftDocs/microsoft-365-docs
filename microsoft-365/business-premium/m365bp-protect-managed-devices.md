@@ -8,7 +8,7 @@ manager: dansimp
 audience: Admin
 ms.topic: overview
 ms.service: microsoft-365-business
-ms.date: 11/01/2023
+ms.date: 11/02/2023
 ms.localizationpriority: medium
 ms.collection: 
 - M365-Campaigns
@@ -27,24 +27,24 @@ description: "Learn how to secure managed devices from security threats and cybe
 
 :::image type="content" source="media/mission6.png" alt-text="Diagram with Set Up and Secure Managed Devices highlighted.":::
 
-Microsoft 365 Business Premium includes advanced protection for all your organization's devices. Microsoft 365 Business Premium includes [Microsoft Defender for Business](../security/defender-business/mdb-overview.md) to help protect devices from ransomware, malware, phishing, and other threats. 
+Microsoft 365 Business Premium includes [Microsoft Defender for Business](../security/defender-business/mdb-overview.md) to help protect your organization's devices from ransomware, malware, phishing, and other threats. 
 
 > [!NOTE]
 > This article applies primarily to managed devices. Guidance for protecting unmanaged devices is available here: [Set up unmanaged (BYOD) devices](m365bp-set-up-unmanaged-devices.md).
 > 
 > [Learn more about managed and unmanaged devices](m365bp-managed-unmanaged-devices.md).
 
+Your tasks are to:
 
-Your steps are to:
+1. Upgrade eligible devices to the latest version of Windows. See [Upgrade Windows devices running Windows 7 Pro, Windows 8 Pro, or Windows 8.1 Pro to Windows 10 or 11 Pro](m365bp-upgrade-windows-pro.md).
 
-- [Upgrade Windows devices running Windows 7 Pro, Windows 8 Pro, or Windows 8.1 Pro to Windows 10 or 11 Pro](m365bp-upgrade-windows-pro.md).
-- [Onboard devices to Defender for Business and apply security policies](m365bp-onboard-devices-mdb.md).
-- [Use Windows Autopilot to set up and configure new devices, or to reset, repurpose, and recover devices](/mem/autopilot/windows-autopilot).
-- [Manage Microsoft 365 installation options for devices](/DeployOffice/manage-software-download-settings-office-365)
+2. Protect devices with Defender for Business. See [Onboard devices to Defender for Business and apply security policies](m365bp-onboard-devices-mdb.md).
 
-Once these steps are completed, your organization's devices are protected. 
+3. If you have Windows computers to set up or reset, see [Use Windows Autopilot to set up and configure new devices, or to reset, repurpose, and recover devices](/mem/autopilot/windows-autopilot).
 
-## Next steps
+4. Get Microsoft 365 Apps installed on devices. See [Manage Microsoft 365 installation options for devices](/DeployOffice/manage-software-download-settings-office-365).
+
+## See also
 
 - [Manage devices in Microsoft Defender for Business](../security/defender-business/mdb-manage-devices.md)
 - [Set up a security operations process](m365bp-security-operations-guide.md).

@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 description: "Learn how Microsoft 365 Copilot uses data and how it stores and protects that data."
 hideEdit: true
-ms.date: 11/01/2023
+ms.date: 11/10/2023
 ---
 
 # Data, Privacy, and Security for Microsoft 365 Copilot
@@ -48,14 +48,16 @@ Microsoft 365 Copilot provides value by connecting LLMs to your organizational d
 
 Microsoft 365 Copilot only surfaces organizational data to which individual users have at least view permissions. It's important that you're using the permission models available in Microsoft 365 services, such as SharePoint, to help ensure the right users or groups have the right access to the right content within your organization.  
 
-When you input prompts using Microsoft 365 Copilot, the information contained within your prompts, the data they retrieve, and the generated responses remain within the Microsoft 365 service boundary, in keeping with our current privacy, security, and compliance commitments. Microsoft 365 Copilot use Azure OpenAI services for processing, not OpenAI’s publicly available services.
+When you input prompts using Microsoft 365 Copilot, the information contained within your prompts, the data they retrieve, and the generated responses remain within the Microsoft 365 service boundary, in keeping with our current privacy, security, and compliance commitments. Microsoft 365 Copilot uses Azure OpenAI services for processing, not OpenAI’s publicly available services.
+
+Abuse monitoring for Microsoft 365 Copilot occurs in real-time, without providing Microsoft any standing eyes-on or eyes-off access to customer data. While abuse moderation, which includes human review of content, is available in Azure OpenAI, Microsoft 365 Copilot services have opted out of it. Microsoft 365 data isn’t collected or stored by Azure OpenAI.
 
 > [!NOTE]
-> We may use customer feedback, which is optional, to improve Microsoft 365 Copilot, just like we use customer feedback to improve other Microsoft 365 services and Microsoft 365 apps. We don't use this feedback to train the foundation LLMs used by Microsoft 365 Copilot. Customers can manage feedback through admin controls. For more information, see [Manage Microsoft feedback for your organization](/microsoft-365/admin/manage/manage-feedback-ms-org).
+> We may use customer feedback, which is optional, to improve Microsoft 365 Copilot, just like we use customer feedback to improve other Microsoft 365 services and Microsoft 365 apps. We don't use this feedback to train the foundation LLMs used by Microsoft 365 Copilot. Customers can manage feedback through admin controls. For more information, see [Manage Microsoft feedback for your organization](/microsoft-365/admin/manage/manage-feedback-ms-org) and [Providing feedback about Microsoft 365 Copilot](https://support.microsoft.com/topic/c481c26a-e01a-4be3-bdd0-aee0b0b2a423).
 
 ### Microsoft 365 Copilot and public web content
 
-Microsoft 365 Copilot chat experiences can reference public web content when responding to a user’s prompt. Based on the user’s prompt, Copilot determines whether it needs to use Bing to query public web content to help provide a relevant response to the user.
+Microsoft 365 Copilot chat experiences can reference public web content when responding to a user’s prompt. Based on the user’s prompt, Microsoft 365 Copilot determines whether it needs to use Bing to query public web content to help provide a relevant response to the user.
 
 If Microsoft 365 Copilot determines web content can help provide a more relevant response, it generates a search query to send to Bing. That search query is based on the user’s prompt, conversation history, and data the user has access to in Microsoft 365. This query might include your organization’s data, but the user’s account and their tenant ID aren't included in the search query sent to Bing.
 
@@ -68,7 +70,20 @@ Admins can prevent their users from referencing public web content in their requ
 
 ### Extensibility of Microsoft 365 Copilot
 
-While Microsoft 365 Copilot is already able to use the apps and data within the Microsoft 365 ecosystem, many users still depend on various external tools and services for work management and collaboration. Customers can address this gap by extending Microsoft 365 Copilot to enable users to work with their third-party tools and services. This can be done through extending Microsoft 365 Copilot by building a plug-in or by connecting to an external data source. For more information, see [Extend Microsoft 365 Copilot](/microsoftteams/platform/copilot/how-to-extend-copilot).
+While Microsoft 365 Copilot is already able to use the apps and data within the Microsoft 365 ecosystem, many organizations still depend on various external tools and services for work management and collaboration. Microsoft 365 Copilot experiences can reference third-party tools and services when responding to a user’s request by using [Microsoft Graph connectors](/graph/connecting-external-content-connectors-overview) or plugins. Data from Graph connectors can be returned in Microsoft 365 Copilot responses if the user has permission to access that information.
+
+When plugins are enabled, Microsoft 365 Copilot determines whether it needs to use a specific plugin to help provide a relevant response to the user. If a plugin is needed, Microsoft 365 Copilot generates a search query to send to the plugin on the user’s behalf. The query is based on the user’s prompt, conversation history, and data the user has access to in Microsoft 365.
+
+In the **Integrated apps** section of the [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview), admins can view the permissions and data access required by a plugin as well as the plugin’s terms of use and privacy statement. Admins have full control to select which plugins are allowed in their organization. A user can only access the plugins that their admin allows and that the user installed or is assigned. Microsoft 365 Copilot only uses plugins that are turned on by the user.
+
+> [!NOTE]
+> The policy settings that control the use of optional connected experiences in Microsoft 365 Apps don’t apply to plugins.
+
+For more information, see the following articles:
+
+- [Manage Plugins for Copilot in Integrated Apps](/microsoft-365/admin/manage/manage-plugins-for-copilot-in-integrated-apps)
+- [Extend Microsoft 365 Copilot](/microsoftteams/platform/copilot/how-to-extend-copilot)
+- [How Microsoft 365 Copilot can work with your external data](https://techcommunity.microsoft.com/t5/microsoft-mechanics-blog/how-microsoft-365-copilot-can-work-with-your-external-data/ba-p/3937645)
 
 ## How does Microsoft 365 Copilot protect organizational data?
 
@@ -96,7 +111,7 @@ For European Union (EU) users, we have additional safeguards to comply with the 
 
 ## Microsoft 365 Copilot and data residency
 
-Customers with [Advanced Data Residency (ADR) in Microsoft 365](/microsoft-365/enterprise/advanced-data-residency) or [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo) can purchase and enable Microsoft 365 Copilot. However, at this time, Microsoft Copilot doesn't provide data residency commitments for Microsoft 365 Copilot customer data-at-rest.
+Customers with [Advanced Data Residency (ADR) in Microsoft 365](/microsoft-365/enterprise/advanced-data-residency) or [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo) can purchase and enable Microsoft 365 Copilot. However, at this time, Microsoft 365 Copilot doesn't provide data residency commitments for Microsoft 365 Copilot customer data-at-rest.
 
 ## Meeting regulatory compliance requirements
 
@@ -118,7 +133,7 @@ If you turn off connected experiences that analyze content for Microsoft 365 App
 - Outlook (classic)
 - Word
 
-Similarly, Copilot features in those apps on Windows or Mac devices won’t be available if you turn off the use of connected experiences for Microsoft 365 Apps.
+Similarly, Microsoft 365 Copilot features in those apps on Windows or Mac devices won’t be available if you turn off the use of connected experiences for Microsoft 365 Apps.
 
 For more information about these policy settings, see the following articles:
 
@@ -146,5 +161,5 @@ We aim to help our customers use our AI products responsibly, sharing our learni
 ## Related articles
 
 - [Microsoft 365 Copilot requirements](microsoft-365-copilot-requirements.md)
-- [Get started with Copilot in Microsoft 365](microsoft-365-copilot-setup.md)
+- [Get started with Microsoft 365 Copilot](microsoft-365-copilot-setup.md)
 - [Microsoft 365 Copilot adoption site](https://adoption.microsoft.com/copilot/)

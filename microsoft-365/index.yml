@@ -82,9 +82,9 @@ conceptualContent:
             - url: /microsoft-365/contentunderstanding/
               itemType: overview
               text: Microsoft Syntex
-            - url: /viva
+            - url: /microsoft-365/topics/
               itemType: overview
-              text: Microsoft Viva
+              text: Microsoft Topics
             - url: /Exchange/exchange-online
               itemType: overview
               text: Exchange Online

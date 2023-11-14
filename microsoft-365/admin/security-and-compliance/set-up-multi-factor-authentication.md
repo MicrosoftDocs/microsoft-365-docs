@@ -50,10 +50,11 @@ Check out this video and others on our [YouTube channel](https://go.microsoft.co
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MuO3?autoplay=false]
 
-1. Go to the Microsoft 365 admin center at <a href="https://admin.microsoft.com/ " target="_blank">https://admin.microsoft.com</a>.
-1. Select  **Show All**, then choose the **Microsoft Entra Admin Center**.
-1. Select **Microsoft Entra ID**, **Properties**, **Manage Security defaults**.
-1. Under **Enable Security defaults**, select **Yes** and then **Save**.
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as least a [Security Administrator](/entra/identity/role-based-access-control/permissions-reference#security-administrator).
+1. Browse to **Identity** > **Overview** > **Properties**.
+1. Select **Manage security defaults**.
+1. Set **Security defaults** to **Enabled**.
+1. Select **Save**.
 
 ## Before you begin
 
@@ -77,21 +78,13 @@ For most organizations, Security defaults offer a good level of additional sign-
 
 If your subscription is new, Security defaults might already be turned on for you automatically.
 
-You enable or disable security defaults from the **Properties** pane for Microsoft Entra ID in the Azure portal.
+You enable or disable security defaults from the **Properties** pane in the Microsoft Entra admin center.
 
-1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) with global admin credentials.
-2. In the left nav choose **Show All** and under **Admin centers**, choose **Microsoft Entra ID**.
-3. In the **Microsoft Entra admin center** choose **Microsoft Entra ID** \> **Properties**.
-4. At the bottom of the page, choose **Manage Security defaults**.
-5. Choose **Yes** to enable security defaults or **No** to disable security defaults, and then choose **Save**.
-
-If you have been using [baseline Conditional Access policies](/azure/active-directory/conditional-access/concept-baseline-protection), you'll be prompted to turn them off before you move to using security defaults.
-
-1. Go to the [Conditional Access - Policies page](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies).
-2. Choose each baseline policy that is **On** and set **Enable policy** to **Off**.
-3. Go to the [Microsoft Entra ID - Properties page](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).
-4. At the bottom of the page, choose **Manage Security defaults**.
-5. Choose **Yes** to enable security defaults and **No** to disable security defaults, and then choose **Save**.
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as least a [Security Administrator](/entra/identity/role-based-access-control/permissions-reference#security-administrator).
+1. Browse to **Identity** > **Overview** > **Properties**.
+1. Select **Manage security defaults**.
+1. Set **Security defaults** to **Disabled (not recommended)**.
+1. Select **Save**.
 
 ## Use Conditional Access policies
 
