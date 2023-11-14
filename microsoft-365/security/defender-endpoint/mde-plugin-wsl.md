@@ -158,13 +158,13 @@ To run the connectivity test, please follow the below instructions:
 
 After installing the plug-in, the subsystem and all its running containers are onboarded to the [Microsoft Defender portal](https://security.microsoft.com).
 
-1. Sign into the portal and open the **Devices** view.
+1. Sign into the Microsoft Defender portal, and open the **Devices** view.
 
 2. Filter using the tag **WSL2**. 
 
   ![Screenshot showing device inventory filter](media/mdeplugin-wsl/wsl-device-inventory.png)
 
-   You can see all WSL instances in your environment with an active Defender for Endpoint plug-in for WSL. The instances represent all distributions running inside WSL on a given host. The hostname of a *device* matches that of the Windows host. However, it's represented as a Linux device.
+   You can see all WSL instances in your environment with an active Defender for Endpoint plug-in for WSL. These instances represent all distributions running inside WSL on a given host. The hostname of a *device* matches that of the Windows host. However, it's represented as a Linux device.
 
 3. Open the device page. In the **Overview** pane, there's a link for where the device is hosted. The link enables you to understand that the device is running on a Windows host. You can then pivot to the host for further investigation and/or response.
 
@@ -193,7 +193,7 @@ Treat the machine as if it were a regular Linux host in your environment to perf
 
 ### Advanced hunting
 
-In the Advanced Hunting schema, under the `DeviceInfo` table, there's a new attribute called `HostDeviceId` that can be used to map a WSL instance to its Windows host device. Here are a few sample hunting queries: 
+In the Advanced Hunting schema, under the `DeviceInfo` table, there's a new attribute called `HostDeviceId` that you can use to map a WSL instance to its Windows host device. Here are a few sample hunting queries: 
 
 ```kusto
 
