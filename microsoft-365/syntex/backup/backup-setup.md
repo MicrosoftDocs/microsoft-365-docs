@@ -100,7 +100,7 @@ Only tenant-level admins can create and manage backups using Microsoft 365 Backu
 |---------|---------|---------|---------|
 |Global admin     | X        | X        | X       |
 |SharePoint admin     | X        | X        |         |
-|Exchange admin<br>(Export/import role is also required for Exchange item-level restore actions)    |         |         | X        |
+|Exchange admin    |         |         | X        |
 
 ## Glossary
 
