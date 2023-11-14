@@ -82,7 +82,7 @@ Lets start with what it doesn't mean: We are *not* taking snapshots every 10 sec
 
 Backup frequency of 10 seconds (if the item is modified) means that changes to the item will be saved as a version once every 10 seconds, no matter how many changes are made in that 10-second interval. For example, if a ransomware attack encrypts the email item every second, will we take six copies in a minute.
 
-#### Why am I getting this error “x out of y user mailboxes selected don't have a backup before <timestamp>. Find backups or remove them from your scope.”
+#### Why am I getting this error “x out of y user mailboxes selected don't have a backup before [timestamp]. Find backups or remove them from your scope.”
 
 As mentioned earlier, mailbox versions are “event-based.” If there were no modifications or deletions done after the last known good time provided, a new restore task can't be created.
 
