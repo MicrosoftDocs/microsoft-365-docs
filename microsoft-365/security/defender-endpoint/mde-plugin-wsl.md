@@ -57,7 +57,7 @@ Components installed:
 
 ## Installation steps
 
-If you have not yet installed Windows Subsystem for Linux, use the following steps first:
+If you haven't yet installed Windows Subsystem for Linux, use the following steps first:
 
 - To install WSL for the first time, open a command prompt/terminal and run `wsl –install`
 
@@ -86,7 +86,7 @@ Tip: you can (deploy the package using Microsoft Intune)[/mem/intune/apps/lob-ap
 
 4. Run the command `.\health_check.exe`.
 
-5. Review the details of Defender and WSL and make sure they match or exceed the below:
+5. Review the details of Defender and WSL and make sure they match or exceed the following:
 
    - Defender Plug-in Version: `0.23.1102.4`
    - WSL Version `2.0.7.0` or later
