@@ -61,6 +61,9 @@ The eBPF sensor for Microsoft Defender for Endpoint on Linux is supported on the
 | Oracle Linux RHCK  | 7.9                  | 3.10.0-1160    |
 | Oracle Linux UEK   | 7.9                  | 5.4            |
 
+> [!NOTE]
+> Oracle Linux 8.8 with kernel version 5.15.0-0.30.20.el8uek.x86_64, 5.15.0-0.30.20.1.el8uek.x86_64 will result in kernel hang when eBPF is enabled as supplementary subsystem    provider. This kernel version should not be used for eBPF mode.
+
 
 
 ## Use eBPF
@@ -95,8 +98,14 @@ You can check the agent health status by running the **mdatp** health command. M
 ```bash
 uname -a
 ```
->
 
+Using Oracle Linux 8.8 with kernel version 5.15.0-0.30.20.el8uek.x86_64, 5.15.0-0.30.20.1.el8uek.x86_64 might result into kernel hang issues. Following steps can be taken to mitigate this issue:    
+ 
+1. Use a kernal version higher or lower than 5.15.0-0.30.20.el8uek.x86_64, 5.15.0-0.30.20.1.el8uek.x86_64 on Oracle Linux 8.8,  if you want to use eBPF as supplementary subsystem provider. Please note, min kernel version for Oracle Linux is RHCK 3.10.0 and Oracle Linux UEK is 5.4. 
+2. Switch to auditd mode if customer needs to use the same kernel version
+```bash
+sudo mdatp config  ebpf-supplementary-event-provider  --value disabled
+```
 The following two sets of data help analyze potential issues and determine the most effective resolution options.
 
 1. Collect a diagnostic package from the client analyzer tool by using the following instructions: [Troubleshoot performance issues for Microsoft Defender for Endpoint on Linux](linux-support-perf.md).
