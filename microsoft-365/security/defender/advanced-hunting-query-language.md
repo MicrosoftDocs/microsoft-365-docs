@@ -88,7 +88,7 @@ The first piped element is a time filter scoped to the previous seven days. Limi
 | where Timestamp > ago(7d)
 ```
 > [!NOTE]
-> Kusto time filters are in UTC regardless of the timezone you specified in your [settings](https://learn.microsoft.com/microsoft-365/security/defender/m365d-time-zone). 
+> Kusto time filters are in UTC regardless of the timezone you specified in your [settings](m365d-time-zone.md). 
 
 
 ### Check specific processes
