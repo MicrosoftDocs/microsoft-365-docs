@@ -44,7 +44,7 @@ We group these policies into three protection levels based on where you are on y
 
 The following diagram shows which level of protections each policy applies to and whether the policies apply to PCs or phones and tablets, or both categories of devices.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png" alt-text="A Diagram showing common identity and device policies that support Zero Trust principles." lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.svg" alt-text="A diagram showing common identity and device policies that support Zero Trust principles." lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.svg":::
 
 You can download this diagram as a [PDF](https://download.microsoft.com/download/e/d/0/ed03381c-16ce-453e-9c89-c13967819cea/zero-trust-identity-and-device-access-policies.pdf) file.
 

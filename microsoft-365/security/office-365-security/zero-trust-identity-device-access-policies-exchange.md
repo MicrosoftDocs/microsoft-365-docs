@@ -39,7 +39,7 @@ These recommendations require your users to use modern email clients, including 
 
 To protect email, the following diagram illustrates which policies to update from the common identity and device access policies.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png" alt-text="The summary of policy updates for protecting access to Microsoft Exchange" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.svg" alt-text="The summary of policy updates for protecting access to Microsoft Exchange" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-mail.svg":::
 
 Note the addition of a new policy for Exchange Online to block ActiveSync clients. This policy forces the use of Outlook for iOS and Android on mobile devices.
 

@@ -37,7 +37,7 @@ Providing a path for B2B accounts to authenticate with your Microsoft Entra tena
 
 This diagram shows which policies to add or update among the common identity and device access policies, for B2B guest and external user access.
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png" alt-text="The summary of policy updates for protecting guest access" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.svg" alt-text="The summary of policy updates for protecting guest access" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-guest.svg":::
 
 The following table lists the policies you either need to create and update. The common policies link to the associated configuration instructions in the [Common identity and device access policies](zero-trust-identity-device-access-policies-common.md) article.
 
