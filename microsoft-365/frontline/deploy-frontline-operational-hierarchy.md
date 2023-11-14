@@ -128,9 +128,12 @@ When you add an attribute column, keep the following things in mind:
 
 If an error occurred during setup, the status in the table shows as **Error** after you refresh the Manage frontline teams page.
 
+:::image type="content" source="media/frontline-hierarchy-error.png" alt-text="Screenshot of the table on the Operational hierarchy tab of the Manage frontline teams page, showing Error status." lightbox="media/frontline-hierarchy-error.png":::
+
 You can download a CSV file that lists the errors, along with details that include the row and column in which the error occurred. Use this information to make the necessary changes to resolve the errors.
 
 In the table, select the **View errors** link, and then in the **Error details** pane, select **Download error CSV**.
+
 
 ## Delete your hierarchy
 
