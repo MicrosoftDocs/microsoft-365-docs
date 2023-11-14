@@ -62,7 +62,7 @@ The eBPF sensor for Microsoft Defender for Endpoint on Linux is supported on the
 | Oracle Linux UEK   | 7.9                  | 5.4            |
 
 > [!NOTE]
-> Oracle Linux 8.8 with kernel version 5.15.0-0.30.20.el8uek.x86_64, 5.15.0-0.30.20.1.el8uek.x86_64 will result in kernel hang when eBPF is enabled as supplementary subsystem    provider. This kernel version should not be used for eBPF mode.
+> Oracle Linux 8.8 with kernel version 5.15.0-0.30.20.el8uek.x86_64, 5.15.0-0.30.20.1.el8uek.x86_64 will result in kernel hang when eBPF is enabled as supplementary subsystem    provider. This kernel version should not be used for eBPF mode. Refer to Troubleshooting and Diagnostics section for mitigation steps.
 
 
 
@@ -91,7 +91,7 @@ The output of above command should show no rules or any user added rules. In cas
   2. Remove the file /etc/audit/rules.d/mdatp.rules
   3. Reboot the machine
 
-### Troubleshooting and diagnostics
+### Troubleshooting and Diagnostics
 
 You can check the agent health status by running the **mdatp** health command. Make sure that the eBPF sensor for Defender for Endpoint on Linux is supported by checking the current kernel version by using the following command line:
 
