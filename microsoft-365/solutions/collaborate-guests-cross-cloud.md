@@ -2,7 +2,7 @@
 title: Collaborate with guests from other Microsoft 365 cloud environments
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: serdars
+manager: pamgreen
 ms.date: 09/29/2023
 audience: ITPro
 ms.topic: article
