@@ -281,7 +281,7 @@ See [Logging installation issues](mac-resources.md#logging-installation-issues) 
 See [Uninstalling](mac-resources.md#uninstalling) for details on how to remove Microsoft Defender for Endpoint on macOS from client devices.
 
   > [!Tip]
-  > - Do you want to learn more? Engage with the Microsoft Security community in our Tech Community: [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md).
+  > - Do you want to learn more? Engage with the Microsoft Security community in our Tech Community: [Microsoft Defender for Endpoint Tech Community](../../includes/defender-mde-techcommunity.md).  
   > - If you have any feedback that you will like to share, submit it by opening Microsoft Defender Endpoint on Mac on your device and navigate to **Help** \> **Send feedback**.
 
 ## Recommended content
