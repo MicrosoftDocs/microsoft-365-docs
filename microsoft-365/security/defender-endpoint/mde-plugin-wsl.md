@@ -22,9 +22,11 @@ Microsoft Defender for Endpoint is an enterprise endpoint security platform desi
 
 ## Known issues and limitations
 
-Please be aware of the following before you start:
-1.	The plug-in does not yet automatically update. When we release a new plug-in version, the new MSI package will need to be applied to perform the update. This can be performed through any tool that deploys software. Coming soon, we will provide updates through Microsoft Update – but you can continue to use the MSI package method if so desired.
+Be aware of the following before you start:
+1.	The plug-in doesn't yet automatically update. When we release a new plug-in version, the new MSI package needs to be applied to perform the update. This can be performed through any tool that deploys software. Updates are coming soon through Microsoft Update. You can continue to use the MSI package method if so desired.
+
 2.	As it takes a few minutes for the plug-in to fully instantiate and up to 30 minutes for a WSL2 instance to onboard itself, short-lived WSL container instances may result in the WSL2 instance not showing up in the portal. Once a (any) distribution has been running long enough (at least 30 minutes), it will.
+
 3.	If you are using a proxy in your (test) environment, ensure that the plug-in is set up to use it correctly. WSL is typically not automatically configured to use a proxy. See the section “Setting a proxy for the plug-in“ for more information.
 
 
