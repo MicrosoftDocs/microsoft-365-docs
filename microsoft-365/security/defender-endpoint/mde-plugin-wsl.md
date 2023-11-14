@@ -1,8 +1,8 @@
 ---
 title: Microsoft Defender for Endpoint plug-in for Windows Subsystem for Linux (WSL)
 description: Learn how to set up and use the MDE plugin for Windows Subsystem for Linux
-author: deniseb
-ms.author: denisebmsft
+author: denisebmsft
+ms.author: deniseb
 manager: dansimp
 ms.reviewer: pahuijbr
 ms.service: microsoft-365-security
@@ -133,7 +133,7 @@ To run the connectivity test, please follow the below instructions:
 3. Once the registry is set, restart wsl using the following steps:
 
    1. Open Command Prompt and run `wsl --shutdown`.
-   
+
    2. Run the command `wsl`.
 
 4. Wait for 5 minutes and then run `health_check.exe` (located at `C:\Program Files\Microsoft Defender for Endpoint plug-in for WSL\tools` for the results of the connectivity test).
