@@ -149,7 +149,7 @@ To run the connectivity test, please follow the below instructions:
 
 ## Verifying functionality and SOC analyst experience
 
-After installing the plug-in, the subsystem and all its running containers are onboarded to the [Microsoft 365 Defender portal](https://security.microsoft.com).
+After installing the plug-in, the subsystem and all its running containers are onboarded to the [Microsoft Defender portal](https://security.microsoft.com).
 
 1. Sign into the portal and open the **Devices** view.
 
@@ -178,7 +178,7 @@ To test this, after the installation of the plug-in, please follow the steps giv
 5. An alert should appear in the portal after a few minutes for a detection on the WSL2 instance.
 
 > [!NOTE]
-> It takes about 5 minutes for the events to appear on the Microsoft 365 Defender portal
+> It takes about 5 minutes for the events to appear on the Microsoft Defender portal
 
 Please treat the machine as if it were a “regular” Linux host in your environment, to perform testing against; in particular, we would like to get your feedback on the ability to surface potentially malicious behaviour using the new plug-in.
 
@@ -238,7 +238,7 @@ DeviceProcessEvents
 
    If that error occurs, wait for 5 minutes and rerun `health_check.exe`.
 
-4. If you don't see any devices in the Microsoft 365 Defender portal, or you don't see any events in the timeline, check these things:
+4. If you don't see any devices in the Microsoft Defender portal, or you don't see any events in the timeline, check these things:
 
    - If you are not seeing a machine object, make sure sufficient time has passed for onboarding to complete (typically up to 10 minutes). 
  
