@@ -25,18 +25,19 @@ Microsoft Defender for Endpoint is an enterprise endpoint security platform desi
 Be aware of the following before you start:
 1.	The plug-in doesn't yet automatically update. When we release a new plug-in version, the new MSI package needs to be applied to perform the update. This can be performed through any tool that deploys software. Updates are coming soon through Microsoft Update. You can continue to use the MSI package method if so desired.
 
-2.	As it takes a few minutes for the plug-in to fully instantiate and up to 30 minutes for a WSL2 instance to onboard itself, short-lived WSL container instances may result in the WSL2 instance not showing up in the portal. Once a (any) distribution has been running long enough (at least 30 minutes), it will.
+2.	As it takes a few minutes for the plug-in to fully instantiate and up to 30 minutes for a WSL2 instance to onboard itself, short-lived WSL container instances might result in the WSL2 instance not showing up in the portal. Once a (any) distribution has been running long enough (at least 30 minutes), it will.
 
-3.	If you are using a proxy in your (test) environment, ensure that the plug-in is set up to use it correctly. WSL is typically not automatically configured to use a proxy. See the section “Setting a proxy for the plug-in“ for more information.
-
+3.	If you're using a proxy in your (test) environment, ensure that the plug-in is set up to use it correctly. WSL is typically not automatically configured to use a proxy. See the section “Setting a proxy for the plug-in“ for more information.
 
 ## Software Prerequisites
 
 - WSL version >= 2.0.7 or later must be running with at least one active distro
-o	Note: Run “wsl --update” to make sure you are on the latest version. If you observe “wsl –version” shows a version older than 2.0.7, run “wsl –update –pre-release” to get the latest
-- Microsoft Defender for Endpoint must be onboarded and running on the Windows host OS.
-- The host OS must be running Windows 10, version 2004 and higher (Build 19041 and higher) or Windows 11 to support the Windows Subsystem for Linux versions that can work with the plug-in.
 
+   Run “wsl --update” to make sure you are on the latest version. If you observe “wsl –version” shows a version older than 2.0.7, run “wsl –update –pre-release” to get the latest
+
+- Microsoft Defender for Endpoint must be onboarded and running on the Windows host OS.
+
+- The host OS must be running Windows 10, version 2004 and higher (Build 19041 and higher) or Windows 11 to support the Windows Subsystem for Linux versions that can work with the plug-in.
 
 ## Software components and Installer file names
 
@@ -51,9 +52,13 @@ Components installed:
 - `healthcheck.exe`. This program checks the health status of Defender for Endpoint and enables you to see the installed versions of WSL, plug-in, and Defender for Endpoint. You can find it at **C:\Program Files\Microsoft Defender for Endpoint plug-in for WSL\tools**.
 
 ## Installation steps
+
 If you have not yet installed Windows Subsystem for Linux, use the following steps first:
+
 -	To install WSL for the first time, open a command prompt/terminal and run “wsl –install”
+
 -	If you already have WSL installed, please run “wsl –update” to make sure you are on the latest version
+
 -	Run the "wsl" command to ensure WSL is running before testing
 
 After ensuring WSL is running and fully up to date, use the following steps to install the plug-in:
@@ -128,6 +133,7 @@ To run the connectivity test, please follow the below instructions:
 3. Once the registry is set, restart wsl using the following steps:
 
    1. Open Command Prompt and run `wsl --shutdown`.
+   
    2. Run the command `wsl`.
 
 4. Wait for 5 minutes and then run `health_check.exe` (located at `C:\Program Files\Microsoft Defender for Endpoint plug-in for WSL\tools` for the results of the connectivity test).
