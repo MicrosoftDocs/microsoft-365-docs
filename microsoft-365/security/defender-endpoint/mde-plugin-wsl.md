@@ -43,7 +43,7 @@ Be aware of the following before you start:
 
 Installer: `DefenderPlugin-x64-0.23.1102.4.msi`. You can download it from the onboarding page in the [Microsoft Defender portal](https://security.microsoft.com).
 
-Installation Directories: 
+Installation directories: 
 
 - `C:\Program Files\`
 
@@ -57,21 +57,27 @@ Components installed:
 
 ## Installation steps
 
-If you haven't yet installed Windows Subsystem for Linux, use the following steps first:
+If you haven't yet installed Windows Subsystem for Linux, follow these steps:
 
-- To install WSL for the first time, open a command prompt/terminal and run `wsl –install`
+1. Open Terminal or Command Prompt. (In Windows, go to **Start** > **Command Prompt**. Or, right-click the start button and then select **Terminal**.) 
 
-- If you already have WSL installed, run `wsl –update` to make sure you are on the latest version
+2. Run the command `wsl –install`.
 
-- Run the `wsl` command to ensure WSL is running before testing.
+### Confirm WSL is installed and running
 
-After ensuring WSL is running and fully up to date, use the following steps to install the plug-in:
+1. Using Terminal or Command Prompt, run `wsl –update` to make sure you have the latest version.
+
+2. Run the `wsl` command to ensure WSL is running before testing.
+
+### Install the plug-in
+
+After you have ensured that WSL is running and fully up to date, follow these steps to install the plug-in:
 
 1. Install the MSI file downloaded from the onboarding section in the Microsoft Defender portal (**Settings** > **Endpoints** > **Onboarding** > **Windows Subsystem for Linux 2 (plug-in)**.)
 
 2. Open a command prompt/terminal and run `wsl`.
 
-Tip: you can (deploy the package using Microsoft Intune)[/mem/intune/apps/lob-apps-windows]
+   You can (deploy the package using Microsoft Intune)[/mem/intune/apps/lob-apps-windows]
 
 > [!NOTE]
 > If WslService is running, it stops during the installation process. You do not need to onboard the subsystem separately; instead, the plug-in automatically onboards to the tenant the Windows host is onboarded to.
@@ -95,7 +101,7 @@ Tip: you can (deploy the package using Microsoft Intune)[/mem/intune/apps/lob-ap
 
 ## Setting a proxy for Defender running in WSL
 
-Use these instructions to configure proxy connectivity for the Defender for Endpoint plug-in. If your enterprise uses a proxy to provide connectivity to Defender for Endpoint running on the Windows host, continue reading to determine whether you need to configure it for the plug-in.
+This section describes how to configure proxy connectivity for the Defender for Endpoint plug-in. If your enterprise uses a proxy to provide connectivity to Defender for Endpoint running on the Windows host, continue reading to determine whether you need to configure it for the plug-in.
 
 Reuse the Microsoft Defender for Endpoint static proxy setting (`TelemetryProxyServer`).
 
