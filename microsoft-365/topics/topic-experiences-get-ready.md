@@ -1,5 +1,5 @@
 ---
-ms.date: 11/15/2021
+ms.date: 11/13/2023
 title: Get your environment ready for Topics
 ms.author: daisyfeller
 author: daisyfell
@@ -68,14 +68,13 @@ Make the most of your migration:
 
 - Migrate to a modern site - that includes Microsoft Teams. While indexing can happen on any SharePoint site (classic or modern), displaying topics to users through highlights and cards only happens on modern pages.
 - Maintain usernames - most migration tools allow you to map user identities across the migration, so that properties like Created By or Modified By are maintained after the migration. This is important for topics because the authorship of files is used to identify the experts that are added to a topic page or card. 
-- Make service account names descriptive - There can be some cases where maintaining user names isn't possible. For example, if you're migrating content that was created by someone who is no longer an employee of the organization. In this instance, most migration tools move a file as if it was created by an admin account or a service account. If this happens frequently, then that service account could then be listed against topics as an expert. This is where the naming of that account becomes really important. If you make it descriptive, the presence of these nonhuman accounts is understandable by your users consuming topics.
+- Make service account names descriptive - There can be some cases where maintaining user names isn't possible. For example, if you're migrating content that was created by someone who is no longer an employee of the organization. In this instance, most migration tools move a file as if it was created by an admin account or a service account. If this happens frequently, then that service account could then be listed against topics as an expert. This is where the naming of that account becomes important. If you make it descriptive, the presence of these nonhuman accounts is understandable by your users consuming topics.
 
 ## 2. Connect information to Microsoft Graph
 
 If you can’t migrate some content, then connect it with the Microsoft Graph:
 
-- Consider implementing [Graph Content Connectors](/microsoftsearch/connectors-overview). Using connectors, external content can be indexed into the Microsoft Graph, where users can then discover it through Microsoft Search.
-- Future developments will bring external data into Topics.
+- Consider implementing [Graph Content Connectors](/microsoftsearch/connectors-overview). External content can be indexed into the Microsoft Graph using connectors, where users can then discover it through Microsoft Search.
 
 ## 3. Modernize SharePoint pages
 
@@ -98,7 +97,7 @@ Good permissions management is critical here. And good permissions management is
   2. On the **Permissions** page, choose **Advanced Permissions Settings**. You can check for unique permissions and see who has limited access to any items in the site.
 
 - Audit Microsoft 365 Groups and Teams to make sure they're appropriately set as public or private groups or teams. New Teams and Microsoft 365 Groups are set to private by default, but when first released were public by default. If you were earlier adopters of these technologies, you might want to review. Also, the function of a team often evolves over its lifecycle, and the setting might need to be updated to reflect the current use of the team.
-- Review use of “everyone”, “everyone except external users” or broad security groups. Content might be incorrectly shared with these values. To review the use of these groups, you can:
+- Review use of “everyone," “everyone except external users” or broad security groups. Content might be incorrectly shared with these values. To review the use of these groups, you can:
   - Create an account that has no group memberships
   - Use search with this account to discover content that is broadly shared.
   - If inappropriate content is visible to this account through search, then you can work with the site owners to correct the permission configuration.
@@ -116,11 +115,11 @@ At the content level, you can also control what is discoverable. Any configurati
 
 Managing topics involves three key roles, including two new Microsoft Entra roles: Knowledge administrator and Knowledge manager:
 
-- The Knowledge administrator (KA) is a technical role, typically in IT. This role allows the setup of the Topics in the Microsoft 365 admin center, as well as the configuration of topic discovery and visibility.
+- The Knowledge administrator (KA) is a technical role, typically in IT. This role allows the setup of the Topics in the Microsoft 365 admin center, and the configuration of topic discovery and visibility.
 - The Knowledge manager (KM) works with the topics themselves and oversees their quality and completeness.
 - Topic contributors (TCs) aren't based on a Microsoft Entra role, but on permissions in the admin center. The TCs are subject-matter experts who are able to curate the content on topics, adding resources and people.
 
-Depending on your organization you might have few or many people acting in these roles. For some organizations, they might be the same people.
+Depending on your organization, you might have few or many people acting in these roles. For some organizations, they might be the same people.
 
 | Knowledge admin | Knowledge manager | Topic contributor |
 |:-------|:-------|:-------|:-------|
