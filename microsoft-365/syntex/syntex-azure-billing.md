@@ -79,6 +79,7 @@ The following Microsoft Syntex products are currently available:
 - Taxonomy tagging
 - Optical character recognition
 - Microsoft 365 Archive (Preview)
+- Microsoft 365 Backup (Preview)
 
 The following tags are available:
 - Site
