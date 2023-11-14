@@ -21,7 +21,7 @@ description: Learn about Microsoft Syntex eSignature and how to send electronic 
 
 Microsoft Syntex eSignature simplifies the process of signing and sharing documents, while providing the security and compliance of Microsoft 365.
 
-With Syntex eSignature, you can quickly and securely send documents for signature to people both inside and outside of your organization. You'll also have a digital audit trail, which can be used to verify the authenticity of documents and transactions.
+With Syntex eSignature, you can quickly and securely send documents for signature to people both inside and outside of your organization. You also have a digital audit trail, which can be used to verify the authenticity of documents and transactions.
 
 ![Diagram showing the eSignature process.](../media/content-understanding/esignature-overview-flow.png)
 
