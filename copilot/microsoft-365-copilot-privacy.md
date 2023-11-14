@@ -10,7 +10,7 @@ ms.localizationpriority: medium
 ms.collection: Tier1
 description: "Learn how Microsoft 365 Copilot uses data and how it stores and protects that data."
 hideEdit: true
-ms.date: 11/10/2023
+ms.date: 11/14/2023
 ---
 
 # Data, Privacy, and Security for Microsoft 365 Copilot
@@ -46,7 +46,7 @@ Microsoft 365 Copilot provides value by connecting LLMs to your organizational d
 > [!IMPORTANT]
 > Prompts, responses, and data accessed through Microsoft Graph aren't used to train foundation LLMs, including those used by Microsoft 365 Copilot.
 
-Microsoft 365 Copilot only surfaces organizational data to which individual users have at least view permissions. It's important that you're using the permission models available in Microsoft 365 services, such as SharePoint, to help ensure the right users or groups have the right access to the right content within your organization. This includes permissions you give to users outside your organization through inter-tenant collaboration solutions, such as [shared channels in Microsoft Teams](/microsoftteams/shared-channels) or [external sharing in SharePoint](/sharepoint/external-sharing-overview).  
+Microsoft 365 Copilot only surfaces organizational data to which individual users have at least view permissions. It's important that you're using the permission models available in Microsoft 365 services, such as SharePoint, to help ensure the right users or groups have the right access to the right content within your organization. This includes permissions you give to users outside your organization through inter-tenant collaboration solutions, such as [shared channels in Microsoft Teams](/microsoftteams/shared-channels).  
 
 When you input prompts using Microsoft 365 Copilot, the information contained within your prompts, the data they retrieve, and the generated responses remain within the Microsoft 365 service boundary, in keeping with our current privacy, security, and compliance commitments. Microsoft 365 Copilot uses Azure OpenAI services for processing, not OpenAI’s publicly available services.
 
@@ -71,7 +71,7 @@ To view and manage this stored data, admins can use Content search or Microsoft 
 - [Protect and manage Microsoft 365 Copilot by using Microsoft Purview](/purview/ai-microsoft-purview)
 - [Learn about retention for Microsoft 365 Copilot](/purview/retention-policies-copilot)
 
-For Teams chats with Copilot, admins can also use [Teams Export APIs](/microsoftteams/export-teams-content) to view the stored data.
+For Microsoft Teams chats with Copilot, admins can also use [Microsoft Teams Export APIs](/microsoftteams/export-teams-content) to view the stored data.
 
 ### Deleting Microsoft 365 Copilot chat history for a user
 
