@@ -41,7 +41,7 @@ Performance and speed of web interfaces, initial configuration, and restores mig
 
 - The CSV upload feature for bulk addition of sites or user accounts in the backup policy creation workflow can accommodate a maximum of 5,000 entries per CSV file.
 
-- The rule-based feature for bulk addition of sites via site names or URL in the backup policy creation workflow can accommodate a maximum of 10 keywords only at a time. Each keyword can have a minimum of 3 characters and maximum of 255 characters.
+- The rule-based feature for bulk addition of sites via site names or URL in the backup policy creation workflow can accommodate a maximum of 10 keywords only at a time. Each keyword can have a minimum of three characters and maximum of 255 characters.
 
 - The rule-based feature for bulk addition of user accounts via security groups or distribution lists can accommodate a maximum of three groups only at a time. These rules are static and applied one time only. That is, the security groups or distribution lists are flattened at the time of adding to the backup configuration policy and won't be dynamically tracked or persisted in the system.
 
@@ -63,10 +63,10 @@ Performance and speed of web interfaces, initial configuration, and restores mig
 
 - Calendar item backup and restore is limited to modified items only and doesn't cover deleted items. This includes the following specific limitations:
 
-    - Restoring deleted calendar items with the ability to send updates post-restore is not yet supported.
-    - Replacing encrypted items with healthy items during a cross mailbox restore (mailboxes all belonging to the same user account) is not supported.
-    - Resolving orphaned conflict (in between ransomware and restore) is not supported.
-    - Restoring organizer copy does not automatically make attendee copies catch up, it only allows future updates by organizer to work for all users added on the calendar item.
+    - Restoring deleted calendar items with the ability to send updates post-restore isn't yet supported.
+    - Replacing encrypted items with healthy items during a cross mailbox restore (mailboxes all belonging to the same user account) isn't supported.
+    - Resolving orphaned conflict (in between ransomware and restore) isn't supported.
+    - Restoring organizer copy doesn't automatically make attendee copies catch up, it only allows future updates by organizer to work for all users added on the calendar item.
 
 - Deleting the user account (for example, deleting the Microsoft Entra ID user) that owns the OneDrive site or Exchange mailbox renders the OneDrive site and Exchange mailbox as inactive or orphaned. The end-to-end workflow to restore such sites or mailboxes isn't supported directly in the Microsoft 365 Backup product. The Microsoft 365 Backup product ensures retention of the content. For more information about how to restore inactive mailboxes or orphaned OneDrive accounts, see:
 
