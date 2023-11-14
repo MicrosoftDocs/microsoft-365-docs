@@ -2,7 +2,7 @@
 title: Set up secure file and document sharing and collaboration with Teams in Microsoft 365
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: serdars
+manager: pamgreen
 ms.date: 05/01/2020
 ms.audience: ITPro
 ms.topic: article
