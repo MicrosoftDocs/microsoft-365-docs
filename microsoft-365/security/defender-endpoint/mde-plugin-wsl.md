@@ -172,7 +172,7 @@ After installing the plug-in, the subsystem and all its running containers are o
 
 The timeline is populated, similar to Defender for Endpoint on Linux, with events from inside the subsystem (file, process, network). You can observe activity and detections in the timeline view. Alerts and incidents are generated as appropriate as well. 
 
-### Test the plugin
+### Test the plug-in
 
 To test the plug-in after installation, follow these steps: 
 
