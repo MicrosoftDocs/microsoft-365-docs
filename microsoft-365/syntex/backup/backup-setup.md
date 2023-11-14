@@ -115,7 +115,9 @@ Only tenant-level admins can create and manage backups using Microsoft 365 Backu
 
 ## Set up backup policies for OneDrive, SharePoint, and Exchange
 
-To use Microsoft 365 Backup for OneDrive, SharePoint, or Exchange, you need to create a backup policy for each product. A policy represents the backup plan defined by admins for protecting the Microsoft 365 data of an organization. It contains details of what data (OneDrive accounts, SharePoint sites, and Exchange mailboxes) to protect. Although you see the retention period and backup frequency (which defines the restore point objective), those settings aren't currently variable or modifiable.
+To use Microsoft 365 Backup for OneDrive, SharePoint, or Exchange, you need to create a backup policy for each product. **A policy represents the backup plan defined by admins for protecting the Microsoft 365 data of an organization.**
+
+A policy contains details of what data (OneDrive accounts, SharePoint sites, and Exchange mailboxes) to protect. Although you see the retention period and backup frequency (which defines the restore point objective), those settings aren't currently variable or modifiable.
 
 Select the **OneDrive**, **SharePoint**, or **Exchange** tab for steps to create a backup policy for that product.
 
