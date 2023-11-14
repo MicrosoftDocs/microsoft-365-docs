@@ -266,12 +266,19 @@ DeviceProcessEvents
 5. In case you face any other challenges or issues, open the terminal and run the following commands to generate the support bundle: 
 
    ```powershell
+
    cd C:\Program Files\Microsoft Defender for Endpoint plug-in for WSL\tools
 
-   .\healthcheck.exe --supportBundle 
    ```
-   
-   The support bundle can be found in the path provided by the previous command. Send the generated zip file to  [mdeforwsl-preview@microsoft.com](mailto:mdeforwsl-preview@microsoft.com)
 
-   :::image type="content" source="media/mdeplugin-wsl/powershell-4.png" alt-text="Screenshot showing status in PowerShell output.":::
+```powershell
+
+   .\healthcheck.exe --supportBundle 
+
+```
+
+   The support bundle can be found in the path provided by the previous command. Send the generated zip file to  [mdeforwsl-preview@microsoft.com](mailto:mdeforwsl-preview@microsoft.com).
+
+
+   :::image type="content" source="media/mdeplugin-wsl/wsl-health-check-overview.png" alt-text="Screenshot showing status in PowerShell output.":::
 
