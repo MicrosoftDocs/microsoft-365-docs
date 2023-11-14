@@ -43,7 +43,7 @@ Use the following steps to start the Syntex eSignature process.
 
     ![Screenshot of the Review request panel.](../media/content-understanding/esignature-review-request-panel.png)
 
-    Once sent, the status of the request is set to **In progress** and recipients are able to add their signatures.
+    Once sent, the status of the request is set to **In progress** and recipients are able to add their signatures. An email notification is sent to the creator and the recipients.
 
 ## Cancel a signature request
 
