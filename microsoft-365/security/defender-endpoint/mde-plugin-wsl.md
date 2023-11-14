@@ -187,7 +187,7 @@ Treat the machine as if it were a regular Linux host in your environment to perf
 
 ### Advanced hunting
 
-In the Advanced Hunting schema, under the `DeviceInfo` table, we have added a new attribute called `HostDeviceId` that can be used to map a WSL instance to its Windows host device. Here are a few sample hunting queries: 
+In the Advanced Hunting schema, under the `DeviceInfo` table, there's a new attribute called `HostDeviceId` that can be used to map a WSL instance to its Windows host device. Here are a few sample hunting queries: 
 
 ```kusto
 
