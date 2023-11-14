@@ -33,39 +33,35 @@ Performance and speed of web interfaces, initial configuration, and restores mig
 
 ### Backup configuration
 
-- You can create only one active backup policy per underlying service (that is, one for SharePoint sites, one for Exchange online users, and one for OneDrive accounts). You can add or remove as many artifacts (sites or user accounts) to or from each active policy.
+- You can create only one active backup policy per underlying service (that is, one for OneDrive accounts, one for SharePoint sites, and one for Exchange online users). You can add or remove as many artifacts (sites or user accounts) to or from each active policy.
 
-- Once the sites or mailboxes are added to a backup policy, it takes roughly 15 minutes per 1,000 sites or mailboxes for the policy to activate.
+- Once the sites or mailboxes are added to a backup policy, it might take up to 15 minutes per 1,000 sites or mailboxes for restore points to become available for restore. Backups will begin as soon as the policy is in effect, even if the restore points are not yet available. This limitation will be completely removed shortly.
 
-- The retention period of Microsoft 365 Backup product is fixed at one year and can't be configured by the admins.
+- The CSV upload feature for bulk addition of sites or user accounts in the backup policy creation workflow can accommodate a maximum of 3,000 entries per CSV file.
 
-- The CSV upload feature for bulk addition of sites or user accounts in the backup policy creation workflow can accommodate a maximum of 5,000 entries per CSV file.
+- The rule-based feature for bulk addition of sites via site names or URL in the backup policy creation workflow can accommodate a maximum of 10 keywords at a time. Each keyword can have a minimum of three characters and maximum of 255 characters.
 
-- The rule-based feature for bulk addition of sites via site names or URL in the backup policy creation workflow can accommodate a maximum of 10 keywords only at a time. Each keyword can have a minimum of three characters and maximum of 255 characters.
+- The rule-based feature for bulk addition of user accounts via security groups or distribution lists can accommodate a maximum of three groups at a time. These rules are static and applied one time only. That is, the security groups or distribution lists are flattened at the time of adding to the backup configuration policy and won't be dynamically updated in the system if users are added or removed from the original security group, for example.
 
-- The rule-based feature for bulk addition of user accounts via security groups or distribution lists can accommodate a maximum of three groups only at a time. These rules are static and applied one time only. That is, the security groups or distribution lists are flattened at the time of adding to the backup configuration policy and won't be dynamically tracked or persisted in the system.
-
-- Multi-geo feature isn't supported for SharePoint Online or OneDrive for Business. This might affect the visibility of sites in one geo if they have been configured in another geo.
-
-- Mailboxes and OneDrive accounts that are under legal or in-place holds can't currently be backed up or restored.
+- Backup and restore of tenants that have the multi-geo feature enabled for OneDrive and SharePoint might not work properly. We recommend not using the preview version of Backup until multi-geo support is fully enabled.
 
 ### Restore
 
+- Site search is case-sensitive and is a prefix-type search.
+
 - SharePoint sites or OneDrive accounts that are currently in the first stage recycle bin must first be restored from the recycle bin before they can be rolled to a prior point in time via the Microsoft 365 Backup tool. The point in time restore via Microsoft 365 Backup won't work if the site or OneDrive is in the recycle bin.
 
-- SharePoint admins operating the Microsoft 365 Backup tool need to have explicit permissions to the sites they are searching for in the backups to be able to find those sites in the backup and restore them.
+- SharePoint admins operating the Microsoft 365 Backup tool need to have explicit read+ permissions to the sites they are searching for in the backups to be able to find those sites in the backup and restore them. In the future, we’ll introduce a Backup role, which will grant SharePoint and Exchange admins full Backup search read rights when combined with their existing admin roles.
 
-- SharePoint sites and OneDrive accounts being restored to a new URL will have a read-only lock. The global admin can still download documents or remove the read-only lock manually.
+- SharePoint sites and OneDrive accounts being restored to a prior point in time are not locked in a ready-only state. Therefore, users might not realize their current edits will be imminently rolled back and lost. In the future, we will introduce a read-only lock on all sites undergoing a restore.
 
-- While searching for sites, note that search is case-sensitive and is a prefix-type search.
+- For restores to a new URL, it might take up to 15 minutes for the destination URL to be displayed in the tool once a SharePoint site or OneDrive account restore to a new URL session completes.
 
-- The restored SharePoint or OneDrive sites (in-place or same URL restore only) will have a short downtime during the restoration but won't be explicitly locked during this release.
+- For restores to a new URL, only the admin who executed the restore will have ownership permissions for the restored SharePoint sites or OneDrive accounts in the new URLs. Restores to the same URL will revert permissions to their original state. We might decide to change this behavior in the future via a “copy permissions” feature.
 
-- SharePoint sites and OneDrive accounts being restored to a new URL, will not have new destination details populated instantly, they would be populated with a delay of approximately 15 minutes.
+- Mailboxes and OneDrive accounts that are under legal or in-place holds cannot currently be restored unless the destination is removed from legal hold.
 
-- For the new URL restore, the restored SharePoint or OneDrive sites (new URLs only) won't have the same permissions as original site. Only the global or SharePoint admin will have permission to the restored site. However, for the in-place or same URL restore, permissions are reverted to the state of the original site at the time it’s being restored from. This is likely to continue to be true into general availability.
-
-- While OneDrive account and mailbox backups of deleted users are maintained and after the user’s Entra ID is deleted are restorable, search in the people picker UI for that user will not work. The user will be displayed as an empty user in results, requiring a guess and check methodology.
+- While OneDrive account and mailbox backups of deleted users are maintained and after the user’s Entra ID is deleted are restorable, search in the people picker UI for that user will not work. The user will be displayed as an empty user in results, requiring a guess-and-check methodology.
 
 - Mailbox draft items aren't backed up or restorable.
 
@@ -76,18 +72,20 @@ Performance and speed of web interfaces, initial configuration, and restores mig
     - Resolving orphaned conflict (in between ransomware and restore) isn't supported.
     - Restoring organizer copy doesn't automatically make attendee copies catch up, it only allows future updates by organizer to work for all users added on the calendar item.
 
-- Deleting the user account (for example, deleting the Microsoft Entra ID user) that owns the OneDrive site or Exchange mailbox renders the OneDrive site and Exchange mailbox as inactive or orphaned. The end-to-end workflow to restore such sites or mailboxes isn't supported directly in the Microsoft 365 Backup product. The Microsoft 365 Backup product ensures retention of the content. For more information about how to restore inactive mailboxes or orphaned OneDrive accounts, see:
+- Deleting the user account (for example, deleting the Microsoft Entra ID user) that owns the OneDrive account or Exchange mailbox renders the OneDrive account and Exchange mailbox as inactive or orphaned. The end-to-end workflow to restore such sites or mailboxes isn't supported directly in the Microsoft 365 Backup product. The Microsoft 365 Backup product ensures retention of the content. For more information about how to restore inactive mailboxes or orphaned OneDrive accounts, see:
 
     - OneDrive and Sharepoint: [Fix site user ID mismatch in SharePoint or OneDrive](https://learn.microsoft.com/en-us/sharepoint/troubleshoot/sharing-and-permissions/fix-site-user-id-mismatch)
     - Exchange: [Recover an inactive mailbox](https://learn.microsoft.com/en-us/purview/recover-an-inactive-mailbox)
 
 - While restoring Exchange mailboxes at a granular level, the search feature provides several search parameters. These parameters allow you to enter up to a maximum of five keywords each. For example, the parameters “from” and “to” allow you to enter up to a maximum of five email addresses each.
 
-- Multi-geo feature isn't supported for SharePoint Online or OneDrive for Business services in this release. This might affect the restore of sites across different geos.
+- The multi-geo feature isn't supported for SharePoint Online or OneDrive for Business services in this release. This might affect the restore of sites across different geos.
 
 - OneDrive accounts and SharePoint sites that have undergone the following types of changes won't be undoable via restore: tenant rename, tenant move, and site URL change.  
 
-- While performing a mailbox restore, if there are no items to be restored, the new folder name will not be returned.
+- If there are no differences between the current state of a mailbox and the prior point in time from which you are attempting a restore, there will be no restore performed and no new folders created when a “restore to a new location” request is made. We do not plan to modify this behavior in the future.
+
+- SharePoint sites and OneDrive accounts being restored to a new URL will have a read-only lock on that new URL until the restore completes. The global admin can still download documents or remove the read-only lock manually. This is not behavior we plan on changing.
 
 ## Self-service scale limits
 
