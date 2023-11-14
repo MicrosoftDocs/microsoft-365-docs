@@ -84,7 +84,7 @@ Tip: you can (deploy the package using Microsoft Intune)[/mem/intune/apps/lob-ap
 
 3. Run the command: `cd “C:\Program Files\Microsoft Defender for Endpoint plug-in for WSL\tools”`.
 
-4. RUn the command `.\health_check.exe`.
+4. Run the command `.\healthcheck.exe`.
 
 5. Review the details of Defender and WSL and make sure they match or exceed the below:
 
@@ -222,7 +222,7 @@ DeviceProcessEvents
 
 ## Troubleshooting
 
-1. health_check.exe shows the output: WSLService is not running. Launch with ‘wsl’ command in PowerShell and rerun health check
+1. healthcheck.exe shows the output: WSLService is not running. Launch with ‘wsl’ command in PowerShell and rerun health check
 
    :::image type="content" source="media/mdeplugin-wsl/powershell-output.png" alt-text="Screenshot showing PowerShell output.":::
 
@@ -236,7 +236,7 @@ DeviceProcessEvents
 
    :::image type="content" source="media/mdeplugin-wsl/wsl-health-check.png" alt-text="Screenshot showing health telemetry status.":::
 
-   If that error occurs, wait for 5 minutes and rerun `health_check.exe`.
+   If that error occurs, wait for 5 minutes and rerun `healthcheck.exe`.
 
 4. If you don't see any devices in the Microsoft 365 Defender portal, or you don't see any events in the timeline, check these things:
 
@@ -256,7 +256,7 @@ DeviceProcessEvents
    ```powershell
    cd C:\Program Files\Microsoft Defender for Endpoint plug-in for WSL\tools
 
-   .\health_check.exe --supportBundle 
+   .\healthcheck.exe --supportBundle 
    ```
    
    The support bundle can be found in the path provided by the previous command. Send the generated zip file to  [mdeforwsl-preview@microsoft.com](mailto:mdeforwsl-preview@microsoft.com)
