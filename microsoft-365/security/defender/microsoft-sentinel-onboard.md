@@ -79,7 +79,7 @@ To connect a workspace that has Microsoft Sentinel enabled to Defender XDR, comp
 1. Read and understand the product changes associated with connecting your workspace. These changes include:
 
    - Log tables, queries, and functions in the Microsoft Sentinel workspace will also be available in advanced hunting within the Defender portal.
-   - Only Microsoft Sentinel alerts that are tied to an incident are ingested into the `AlertInfo` table in Microsoft Defender XDR. Alerts that aren't in an incident are added to the `Behaviors` table. The `SecurityAlert` table in Sentinel isn't affected.
+   - Only Microsoft Sentinel alerts that are tied to incidents are ingested into the `AlertInfo` table in Microsoft Defender XDR. All other alerts are added to the `BehaviorInfo` table.
    - The Microsoft Sentinel Contributor role is assigned to the Microsoft Threat Protection and WindowsDefenderATP apps within the subscription.
    - All alerts related to Defender XDR are streamed directly from the main Defender XDR data connector to ensure consistency. Standalone connectors for the following products are disabled in your Sentinel workspace as they'll no longer be required.
      - Microsoft Defender for Endpoint
