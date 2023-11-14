@@ -39,8 +39,8 @@ This article is updated frequently to let you know what's new in the latest rele
 
 ## November-2023 Build: 101.23092.0012 | Release version: 30.123092.0012.0
 
-&ensp;Released: **November 6,2023**<br/>
-&ensp;Published: **November 6,2023**<br/>
+&ensp;Released: **November 14,2023**<br/>
+&ensp;Published: **November 14,2023**<br/>
 &ensp;Build: **101.23092.0012**<br/>
 &ensp;Release version: **30.123092.0012.0**<br/>
 &ensp;Engine version: **1.1.23090.2008**<br/>
@@ -54,7 +54,9 @@ This article is updated frequently to let you know what's new in the latest rele
  sudo mdatp threat quarantine restore threat-path --path [threat-original-path] --destination-path [destination-folder]
 ```
 
-  - Starting with this release, we will no longer be providing support or shipping our solution for RHEL-6 Distro.
+  - Starting with this release, MDE Linux will no longer be shipping solution for RHEL 6.
+  
+    RHEL 6 'Extended end of life support' is poised to end by June 30 and customers are advised to plan their RHEL upgrades accordingly aligned with guidance from Red Hat. Customers who need to run MDE on RHEL 6 servers can continue to leverage version 101.23082.0011 (does not expire before June 30, 2024) supported on kernel versions 2.6.32-754.49.1.el6.x86_64 or prior.
   - Engine Update to `1.1.23090.2008` and Signatures Ver: `1.399.690.0`.
   - Bug fixes.
 
