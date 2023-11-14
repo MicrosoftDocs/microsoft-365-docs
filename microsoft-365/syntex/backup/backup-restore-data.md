@@ -189,7 +189,8 @@ Follow these steps to restore data backed up for Exchange.
 3. The destination of restored items can be chosen from two options, then select **Next**.
 
     a. **Restore to a new folder** where the content will be restored to a newly created folder named *Restored Items YYYY-DD-MM, HH:MM*.
-    b.  **Restore in place** where current version of the item will be overwritten by the restored content.
+
+    b. **Restore in place** where current version of the item will be overwritten by the restored content.
 
 4. On the **Review and Finish** page, you'll now be asked to review and finish all your choices. If everything looks as you want it, select **Restore user mailboxes**.
 
