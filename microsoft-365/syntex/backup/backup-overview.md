@@ -29,17 +29,17 @@ Microsoft 365 Backup is currently in preview and will be rolling out to tenants 
 
 During the preview period, performance and speed of web interfaces, initial configuration, and restores might be slower than expected as we scale up our infrastructure to remove undesirable latency from our system.
 
-## Microsoft and partner offerings
+## Microsoft and third-party offerings
 
-This documentation outlines the Microsoft 365 Backup offering for Microsoft. We're partnering with many independent software vendors (ISVs) to provide differentiated versions of their applications integrated with the Microsoft 365 Backup Storage platform—all providing the same underlying performance value proposition for your Microsoft 365 data.
+This documentation outlines the Microsoft 365 Backup offering available in the Microsoft 365 admin center. We're partnering with many independent software vendors (ISVs) to provide differentiated versions of their applications integrated with the Microsoft 365 Backup Storage platform—all providing the same underlying performance value proposition for your Microsoft 365 data.
 
-In the case of a partner application, operation of the Microsoft 365 Backup tool will be managed and paid for entirely through the partner. Those applications will have the ability to provide a single pane of glass for all of your data estates that require backups, and they might provide additional enhanced experiences.
+In the case of a partner application, operation of the Microsoft 365 Backup tool will be managed and paid for entirely through the third party's application. Those applications will have the ability to provide a single pane of glass for all of your data estates that require backups, and they might provide additional enhanced experiences or workflows.
 
 ## Scenarios and value proposition
 
-Business continuity assurance is a top-of-mind concern for many companies. Microsoft 365 Backup delivers business continuity peace of mind by providing performance and reliable restore confidence. When evaluating a backup and restore offering, what really matters isn't solely the backup, but the ability to restore your data to a healthy state quickly when you need to do so.
+Business continuity assurance is a top-of-mind concern for many companies. Microsoft 365 Backup delivers business continuity peace of mind by providing performance and reliable restore confidence. When evaluating a backup and restore offering, what really matters isn't solely the backup, but the ability to restore your data to a healthy state quickly when you need to do so. Recovering large volumes of content is difficult when copying data at a scale from a remote, air-gapped location requiring weeks or even months to get your business back up and running.
 
-In cases of a ransomware attack that encrypts large swaths of your data, or instances of an internal accidental or malicious data deletion or overwrite event, you need to be able to get your business back to a healthy state as soon as possible. This is what the Microsoft 365 Backup product offers, both through the Microsoft offering in the Microsoft 365 admin center, as well as via partner applications built on the Microsoft 365 Backup Storage platform.
+In cases of a ransomware attack that encrypts large swaths of your data, or instances of an internal accidental or malicious data deletion or overwrite event, you need to be able to get your business back to a healthy state as soon as possible. This is what the Microsoft 365 Backup product offers, both through the Microsoft 365 admin center, as well as via third-party applications built on the Microsoft 365 Backup Storage platform.
 
 To summarize, applications built on top of the Microsoft 365 Backup Storage platform deliver the following benefits regardless of the size or scale of the protected tenant:
 
@@ -90,13 +90,14 @@ Restore points are physically created in the service as soon as the policy is co
 
 #### Restoration performance
 
-While full OneDrive account and SharePoint site at-scale performance will be good for all restore points, we recommend choosing restore points labeled “express restore points” as those provide the fastest recovery time objective for SharePoint sites and OneDrive accounts, especially for smaller scale operations.
+Restoration performance dictates your recovery time objection, or the time it will take for you to restore a healthy state of your data and thus recover from a data destruction event.
+For full OneDrive account and SharePoint site restores, the fastest recovery will happen when choosing in-place restore rather a new URL restore. Additionally, choosing one of the recommended “faster” restore points presented in the restore workflow UI will yield the quickest recovery results.
 
-It might take on average less than 1 hour for sites or accounts to start restoring when a new restore session is initiated. After the first site or account is restored in a session, the remaining will complete in relatively fast succession.
+All restore points and restores to new URLs will be relatively fast, but same URL restores using a recommended “faster” restore point will typically yield better results. The Exchange Online restore workflow doesn't have or require the “faster” restore points.
 
-For Exchange Online, there's no need for “express restore points” as any last known good time chosen with restorable items will occur in the same timely manner.
+It will take on average less than one hour for the first full site or account protection unit to be restored when a new restore session is initiated. After the first site or account is restored in a session, the remaining protection units will complete in relatively fast succession.
 
-The following table summarizes expected performance for a normally distributed tenant, including tenants of very large size and scale. During the preview period, actual performance might deviate from these targets.
+The following table summarizes expected performance for a normally distributed tenant, including tenants of very large size and scale. During the preview period, actual performance might deviate from these general availability targets.
 
 |Scenario |First full-container restore completes |Restore of all containers complete |
 |:-------|:-------|:--------|
