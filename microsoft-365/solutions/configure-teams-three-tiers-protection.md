@@ -3,7 +3,7 @@ title: Configure Teams with three tiers of file sharing security
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: serdars
+manager: pamgreen
 ms.date: 03/09/2023
 audience: ITPro
 ms.topic: conceptual

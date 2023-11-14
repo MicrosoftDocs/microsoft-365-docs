@@ -30,8 +30,6 @@ Next, see how Contoso used Microsoft 365 for these solutions and scenarios:
 
 - [COVID-19 response and infrastructure for hybrid work](contoso-remote-onsite-work.md)
 
-- [An isolated team for a top-secret project](contoso-team-for-top-secret-project.md)
-
 - [Migration of their on-premises users to Teams for unified communication, collaboration, and voice](/MicrosoftTeams/voice-case-study-overview)
 
 - [Configure an offensive language policy for Microsoft Teams, Exchange, and Viva Engage communications](../compliance/communication-compliance-case-study.md)
