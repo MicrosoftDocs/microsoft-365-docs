@@ -97,7 +97,7 @@ Tip: you can (deploy the package using Microsoft Intune)[/mem/intune/apps/lob-ap
 
 Use these instructions to configure proxy connectivity for the Defender for Endpoint plug-in. If your enterprise uses a proxy to provide connectivity to Defender for Endpoint running on the Windows host, continue reading to determine whether you need to configure it for the plug-in.
 
-Reuse Microsoft Defender for Endpoint static proxy setting (TelemetryProxyServer) 
+Reuse the Microsoft Defender for Endpoint static proxy setting (`TelemetryProxyServer`).
 
 If you want to use the host [static proxy](configure-proxy-internet.md) configuration for MDE for the WSL plug-in, nothing more is required. This configuration is adopted by the plug-in automatically.
 
@@ -117,6 +117,7 @@ If you want to set up a different proxy for Defender running in WSL (other than 
 3. Once the registry is set, if WSL is already running or plug-in is already installed, restart wsl using the following steps:
 
    1. Open Command Prompt and run `wsl --shutdown`.
+
    2. Then, run the command `wsl`.
 
 ## Connectivity test for Defender running in WSL
@@ -163,9 +164,7 @@ After installing the plug-in, the subsystem and all its running containers are o
 
    :::image type="content" source="media/mdeplugin-wsl/device-overview.png" alt-text="Screenshot showing device overview.":::  
 
-The timeline is populated, similar to Defender for Endpoint on Linux, with events from inside the subsystem (file, process, network). You can observe activity and detections in the timeline view. Alerts and incidents are generated as appropriate as well. 
-
-To test this, after the installation of the plug-in, please follow the steps given below:
+The timeline is populated, similar to Defender for Endpoint on Linux, with events from inside the subsystem (file, process, network). You can observe activity and detections in the timeline view. Alerts and incidents are generated as appropriate as well. To test this, after the installation of the plug-in, please follow the steps given below:
 
 1. Open a terminal/command prompt instance (Start, run “cmd” or on Windows 11, right-click the start button and select Terminal) 
 
@@ -180,7 +179,7 @@ To test this, after the installation of the plug-in, please follow the steps giv
 > [!NOTE]
 > It takes about 5 minutes for the events to appear on the Microsoft Defender portal
 
-Please treat the machine as if it were a “regular” Linux host in your environment, to perform testing against; in particular, we would like to get your feedback on the ability to surface potentially malicious behaviour using the new plug-in.
+Please treat the machine as if it were a “regular” Linux host in your environment, to perform testing against; in particular, we would like to get your feedback on the ability to surface potentially malicious behavior using the new plug-in.
 
 ### Advanced hunting
 
