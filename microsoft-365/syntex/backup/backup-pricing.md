@@ -49,8 +49,6 @@ The Microsoft 365 Backup pricing calculator, when calculating the storage requir
 
 - How many new protection units for a service type are typically added (or removed) every month. For example, if the service type is Exchange mailboxes, how many new mailboxes are added (or deleted) on average each month.
 
-- The storage overhead of managing the backups for the month.
-
 - The largest amount of storage required for the previous 12 months.
 
 ### Using the pricing calculator
@@ -172,5 +170,3 @@ The following variables are used to estimate the Microsoft 365 Backup costs and 
 - **Average protection unit storage growth per month (GB)**: The amount of storage that is typically added to each protection unit every month. Essentially protection unit storage growth per month.
 
 - **Average new protection unit storage added per month (GB)**: The average amount of storage that is required if a new protection unit is added during a month.
-
-- **Average percentage protection unit growth of backup only content per month**: Backing up of protection units requires internal additional storage. Although negligible and is estimated at 1 percent, this value can be changed if required based on the actual consumption metrics.
