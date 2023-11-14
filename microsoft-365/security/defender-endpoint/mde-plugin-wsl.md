@@ -19,17 +19,25 @@ ms.date: 10/31/2023
 
 Microsoft Defender for Endpoint is an enterprise endpoint security platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats. Defender for Endpoint for Windows Subsystem for Linux 2 (WSL) enables Defender for Endpoint to provide more visibility into all running WSL containers, by plugging into the isolated subsystem.
 
+## Known issues and limitations
+
+Please be aware of the following before you start:
+1.	The plug-in does not yet automatically update. When we release a new plug-in version, the new MSI package will need to be applied to perform the update. This can be performed through any tool that deploys software. Coming soon, we will provide updates through Microsoft Update – but you can continue to use the MSI package method if so desired.
+2.	As it takes a few minutes for the plug-in to fully instantiate and up to 30 minutes for a WSL2 instance to onboard itself, short-lived WSL container instances may result in the WSL2 instance not showing up in the portal. Once a (any) distribution has been running long enough (at least 30 minutes), it will.
+3.	If you are using a proxy in your (test) environment, ensure that the plug-in is set up to use it correctly. WSL is typically not automatically configured to use a proxy. See the section “Setting a proxy for the plug-in“ for more information.
+
+
 ## Software Prerequisites
 
-- WSL version must be `1.3.15.0` or later
+- WSL version >= 2.0.7 or later must be running with at least one active distro
+o	Note: Run “wsl --update” to make sure you are on the latest version. If you observe “wsl –version” shows a version older than 2.0.7, run “wsl –update –pre-release” to get the latest
+- Microsoft Defender for Endpoint must be onboarded and running on the Windows host OS.
+- The host OS must be running Windows 10, version 2004 and higher (Build 19041 and higher) or Windows 11 to support the Windows Subsystem for Linux versions that can work with the plug-in.
 
-- Defender for Endpoint must be [onboarded and running](onboard-configure.md) on the Windows host OS.
-
-- The “Windows Subsystem for Linux feature” must be enabled in **Turn Windows features on or off**, and WSL must be installed with a distro.
 
 ## Software components and Installer file names
 
-Installer: DefenderPlugin-x64-0.23.906.5.msi ([download](https://aka.ms/defenderplugin))
+Installer: DefenderPlugin-x64-0.23.1102.4.msi (download from the onboarding page at [https://security.microsoft.com])
 
 Installation Directories: `C:\Program Files\<br>                   C:\ProgramData\`
 
@@ -40,13 +48,21 @@ Components installed:
 - `healthcheck.exe`. This program checks the health status of Defender for Endpoint and enables you to see the installed versions of WSL, plug-in, and Defender for Endpoint. You can find it at **C:\Program Files\Microsoft Defender for Endpoint plug-in for WSL\tools**.
 
 ## Installation steps
+If you have not yet installed Windows Subsystem for Linux, use the following steps first:
+-	To install WSL for the first time, open a command prompt/terminal and run “wsl –install”
+-	If you already have WSL installed, please run “wsl –update” to make sure you are on the latest version
+-	Run the "wsl" command to ensure WSL is running before testing
 
-1. Install the DefenderPlugin-x64-0.23.906.5.msi file.
+After ensuring WSL is running and fully up to date, use the following steps to install the plug-in:
+
+1. Install the MSI file downloaded from the onboarding section in the Defender portal (Setting > Endpoints > Onboarding and select "Windows Subsystem for Linux 2 (plug-in))
 
 2. Open a command prompt/terminal and run `wsl`.
 
+Tip: you can (deploy the package using Microsoft Intune)[/mem/intune/apps/lob-apps-windows]
+
 > [!NOTE]
-> If WslService is running, it stops during the installation process.
+> If WslService is running, it stops during the installation process. You do not need to onboard the subsystem separately - the plug-in will automatically onboard to the tenant the Windows host is onboarded to.
 
 ## Installation validation checklist
 
@@ -58,11 +74,11 @@ Components installed:
 
 4. RUn the command `.\health_check.exe`.
 
-5. Review the details of Defender and WSL and make sure they match.
+5. Review the details of Defender and WSL and make sure they match or exceed the below:
 
-   - Defender Plug-in Version: `0.23.906.5`
-   - WSL Version `1.3.15` or later
-   - WSL Defender Version: `701.00000.1411`
+   - Defender Plug-in Version: `0.23.1102.4`
+   - WSL Version `2.0.7.0` or later
+   - WSL Defender Version: `101.23092.011`
    - WSL Defender Health: `Healthy`
 
 ## Setting a proxy for Defender running in WSL
@@ -152,6 +168,33 @@ To test this, after the installation of the plug-in, please follow the steps giv
 > It takes about 5 minutes for the events to appear on the Microsoft 365 Defender portal
 
 Please treat the machine as if it were a “regular” Linux host in your environment, to perform testing against; in particular, we would like to get your feedback on the ability to surface potentially malicious behaviour using the new plug-in.
+
+### Advanced hunting
+
+In the Advanced Hunting schema, under the DeviceInfo table, we have added a new attribute called HostDeviceId which can be used to map a WSL instance to its Windows host device. 
+A few sample hunting queries are provided below : 
+
+Get all WSL device ids for the current organization/tenant 
+let wsl_endpoints = DeviceInfo  
+| where OSPlatform == "Linux" and isempty(HostDeviceId) != true
+| distinct DeviceId; 
+wsl_endpoints
+
+Get WSL device ids and their corresponding host device ids 
+DeviceInfo  
+| where OSPlatform == "Linux" and isempty(HostDeviceId) != true
+| distinct WSLDeviceId=DeviceId, HostDeviceId;
+
+Get a list of WSL device ids where curl or wget was run
+let wsl_endpoints = DeviceInfo  
+| where OSPlatform == "Linux" and isempty(HostDeviceId) != true
+| distinct DeviceId; 
+DeviceProcessEvents   
+| where FileName == "curl" or FileName == "wget" 
+| where DeviceId in (wsl_endpoints) 
+| sort by Timestamp desc
+
+
 
 # Troubleshooting
 
