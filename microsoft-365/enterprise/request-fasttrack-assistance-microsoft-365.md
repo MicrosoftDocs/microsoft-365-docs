@@ -9,11 +9,11 @@ manager: scotv
 ---
 # Request FastTrack assistance for Microsoft 365
 
-The FastTrack request for assistance (RFA) form is now available in the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/?linkid=2226341). Tenant admins use this form to request help from FastTrack specialists on their deployment and migration efforts. FastTrack assistance is available for tenants with 150 or more licenses from one of the [eligible plans](/microsoft-365/fasttrack/eligibility) for the following Microsoft product families: Microsoft 365, Office 365, Microsoft Viva, Enterprise Mobility + Security, and Windows 10/11.
+The FastTrack request for assistance (RFA) form is now available in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2226341" target="_blank">Microsoft 365 admin center</a>. Tenant admins use this form to request help from FastTrack specialists on their deployment and migration efforts. FastTrack assistance is available for tenants with 150 or more licenses from one of the [eligible plans](/microsoft-365/fasttrack/eligibility) for the following Microsoft product families: Microsoft 365, Office 365, Microsoft Viva, Enterprise Mobility + Security, and Windows 10/11.
 
 ## How to submit an RFA in the admin center
 
-1. In the Microsoft 365 admin center, open the [Advanced deployment guides & assistance](https://go.microsoft.com/fwlink/?linkid=2226341) page.  On the **FastTrack assistance** tab, select **Submit a new request**:
+1. In the Microsoft 365 admin center, open the <a href="https://go.microsoft.com/fwlink/p/?linkid=2226341" target="_blank">Advanced deployment guides & assistance</a> page. On the **FastTrack assistance** tab, select **Submit a new request**:
 
 1. Read the overview to see what information is needed for an RFA, and select **Next**.
    
@@ -31,7 +31,7 @@ The FastTrack request for assistance (RFA) form is now available in the [Microso
 
 ## How to find RFA details and status updates
 
-1. After you submit your RFA, you can find your tenant's RFA history on the **FastTrack assistance** tab of the [Advanced deployment guides & assistance](https://go.microsoft.com/fwlink/?linkid=2226341) page at the Microsoft 365 admin center.
+1. After you submit your RFA, you can find your tenant's RFA history on the **FastTrack assistance** tab of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2226341" target="_blank">Advanced deployment guides & assistance</a> page at the Microsoft 365 admin center.
 
 2. Under **Request for assistance status and history**, you can find a list of all historical submissions for your tenant with the request name, requested products, status, submission date, and who submitted the request.
 
