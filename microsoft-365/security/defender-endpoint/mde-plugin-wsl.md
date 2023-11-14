@@ -87,7 +87,7 @@ Use these instructions to configure proxy connectivity for the Defender for Endp
 
 Reuse Microsoft Defender for Endpoint static proxy setting (TelemetryProxyServer) 
 
-If you wish to use the host “[static proxy](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/configure-proxy-internet?view=o365-worldwide)” configuration for MDE for the WSL plug-in, nothing more is required. This configuration will be adopted by the plug-in automatically.
+If you wish to use the host “[static proxy](configure-proxy-internet.md)” configuration for MDE for the WSL plug-in, nothing more is required. This configuration will be adopted by the plug-in automatically.
 
 ### Set up a different/specific proxy configuration for MDE WSL
 
@@ -99,7 +99,7 @@ If you would like to set up a different proxy for Defender running in WSL (other
 
    **Name:** DefenderProxyServer
    **Type:** REG_SZ
-   **Value:** <IP address>: <port number> (Example: 192.126.30.222:8888)
+   **Value:** *IP address*: *port number* (Example: 192.126.30.222:8888)
    **Path:** Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Lxss\Plugins\DefenderPlug-in
 
 3. Once the registry is set, if WSL is already running or plug-in is already installed, restart wsl using the following steps:
@@ -196,7 +196,7 @@ DeviceProcessEvents
 
 
 
-# Troubleshooting
+## Troubleshooting
 
 1. health_check.exe shows the output: WSLService is not running. Launch with ‘wsl’ command in PowerShell and rerun health check
 
