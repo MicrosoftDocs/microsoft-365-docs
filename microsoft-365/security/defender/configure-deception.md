@@ -60,7 +60,7 @@ To create a deception rule, perform the following steps:
 1. Navigate to **Settings** > **Endpoints**. Under **Rules**, select **Deception rules**.
 2. Select **Add deception rule**.
 :::image type="content" source="../../media/deception/fig5-deception.png" alt-text="Screenshot of the add rule function in the deception rule setup" lightbox="../../media/deception/fig5-deception.png":::
-3. In the rule creation pane, add a rule name, description, and select what lure types to create. You can select both [Basic and Advanced](deception-overview.md#how-does-the-Microsoft-Defender-XDR-deception-capability-work) lure types.
+3. In the rule creation pane, add a rule name, description, and select what lure types to create. You can select both [Basic and Advanced](deception-overview.md#how-does-the-microsoft-defender-xdr-deception-capability-work) lure types.
 :::image type="content" source="../../media/deception/fig6-deception.png" alt-text="Screenshot of the add deception rule page" lightbox="../../media/deception/fig6-deception.png":::
 4. Identify the devices where you intend to plant the lures in the scope section. You can select to plant lures in all Windows client devices or in clients with specific tags. The deception feature currently covers Windows clients.
 :::image type="content" source="../../media/deception/fig7-deception.png" alt-text="Screenshot of the deception rule scope page" lightbox="../../media/deception/fig7-deception.png":::
