@@ -111,7 +111,7 @@ Before you can use advance hunting you must have [access to the **CloudAppEvents
 
 The Defender portal offers multiple built-in queries you can use to help with your DLP alert investigation.
 
-1. Go to the Microsoft 365 Defender portal, and select **Incidents & alerts** in the left hand navigation menu to open the incidents page. Select **Incidents**.
+1. Go to the Microsoft Defender portal, and select **Incidents & alerts** in the left hand navigation menu to open the incidents page. Select **Incidents**.
 1. Select **Filters** on the top right, and choose **Service Source : Data Loss Prevention** to view all incidents with DLP alerts.
 1. Open a DLP incident.
 1. Select on an alert to view its associated events.
