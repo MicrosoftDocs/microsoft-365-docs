@@ -14,7 +14,7 @@ ms.collection:
     - m365initiative-syntex
 ms.localizationpriority:  medium
 ROBOTS: NOINDEX, NOFOLLOW
-description: Learn about compliance features for archived sites in Microsoft 365 Archive.
+description: Learn about end-user features for archived sites in Microsoft 365 Archive.
 ---
 
 # End user experience in Microsoft 365 Archive (Preview)

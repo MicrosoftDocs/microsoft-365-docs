@@ -13,7 +13,6 @@ search.appverid:
 ms.collection:
     - m365initiative-syntex
 ms.localizationpriority:  medium
-ROBOTS: NOINDEX, NOFOLLOW
 description: Learn about the archive states and what they mean in Microsoft 365 Archive.
 ---
 
