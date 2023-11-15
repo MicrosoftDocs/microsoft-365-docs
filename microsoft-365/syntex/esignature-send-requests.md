@@ -13,8 +13,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
-description: Learn how to use Microsoft Syntex eSignature to send electronic signature requests to people inside and outside of your organization. 
+description: Learn how to use Microsoft Syntex eSignature to create and send electronic signature requests to people inside and outside of your organization. 
 ---
 
 # Create a signature request using Microsoft Syntex eSignature
