@@ -29,11 +29,11 @@ ms.date: 03/22/2021
 **Applies to:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-**Microsoft Defender for Endpoint on iOS** offers protection against phishing and unsafe network connections from websites, emails, and apps. All alerts will be available through a single pane of glass in the Microsoft 365 Defender portal. The portal gives security teams a centralized view of threats on iOS devices along with other platforms.
+**Microsoft Defender for Endpoint on iOS** offers protection against phishing and unsafe network connections from websites, emails, and apps. All alerts will be available through a single pane of glass in the Microsoft Defender portal. The portal gives security teams a centralized view of threats on iOS devices along with other platforms.
 
 > [!CAUTION]
 > Running other third-party endpoint protection products alongside Defender for Endpoint on iOS is likely to cause performance problems and unpredictable system errors.
@@ -59,7 +59,7 @@ ms.date: 03/22/2021
 
 ### For Administrators
 
-- Access to the Microsoft 365 Defender portal.
+- Access to the Microsoft Defender portal.
 
 - Access to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), to:
   - Deploy the app to enrolled user groups in your organization.

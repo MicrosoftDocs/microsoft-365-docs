@@ -26,7 +26,7 @@ ms.date: 12/18/2020
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 **Platforms**
 
@@ -128,7 +128,7 @@ Once completed, you should see onboarded Windows servers in the portal within an
 
 ## Onboard Windows servers through Microsoft Defender for Cloud
 
-1. In the Microsoft 365 Defender navigation pane, select **Settings** > **Endpoints** > **Device management** > **Onboarding**.
+1. In the Microsoft Defender XDR navigation pane, select **Settings** > **Endpoints** > **Device management** > **Onboarding**.
 
 2. Select **Windows Server 2008 R2 SP1** as the operating system.
 

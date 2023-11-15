@@ -30,7 +30,7 @@ ms.date: 03/23/2021
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -130,7 +130,7 @@ Unmanaged devices would typically get probed no more than once in a three-week p
 
 Active discovery capabilities have always been embedded in the Windows operating system, to find nearby devices, endpoints, and printers, for easier "plug and play" experiences and file sharing between endpoints in the network. Similar functionality is implemented in mobile devices, network equipment and inventory applications just to name a few.  
 
-Standard discovery uses the same discovery methods to identify devices and to have a unified visibility for all the devices in your network in the Microsoft 365 Defender Device Inventory. For example – Standard discovery identifies nearby endpoints in the network the same way Windows lists available printers in the network. 
+Standard discovery uses the same discovery methods to identify devices and to have a unified visibility for all the devices in your network in the Microsoft Defender XDR Device Inventory. For example – Standard discovery identifies nearby endpoints in the network the same way Windows lists available printers in the network. 
 
 Network security and monitoring tools are indifferent to such activities performed by devices on the network. 
 

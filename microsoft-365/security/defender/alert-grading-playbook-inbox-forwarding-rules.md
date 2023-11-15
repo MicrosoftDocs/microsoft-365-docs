@@ -30,7 +30,7 @@ ms.date: 04/05/2023
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 Threat actors can use compromised user accounts for several malicious purposes including reading emails in a user's inbox, creating inbox rules to forward emails to external accounts, sending phishing mails, among others. Malicious inbox rules are widely common during business email compromise (BEC) and phishing campaigns, and it important to monitor them consistently.
 

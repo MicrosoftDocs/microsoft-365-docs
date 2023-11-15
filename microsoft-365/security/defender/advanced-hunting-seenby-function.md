@@ -1,5 +1,5 @@
 ---
-title: SeenBy() function in advanced hunting for Microsoft 365 Defender
+title: SeenBy() function in advanced hunting for Microsoft Defender XDR
 description: Learn how to use the SeenBy() function to look for which onboarded devices discovered a certain device
 keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, SeenBy, device discovery, function, enrichment
 search.product: eADQiWindows 10XVcnh
@@ -29,7 +29,7 @@ ms.date: 03/29/2022
 
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 The `SeenBy()` function is invoked to see a list of onboarded devices that have seen a certain device using the device discovery feature.
 
