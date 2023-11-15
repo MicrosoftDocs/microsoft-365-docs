@@ -4,7 +4,7 @@ description: Describes what new changes have happened to Microsoft Secure Score 
 ms.localizationpriority: medium
 f1.keywords:
   - NOCSH
-ms.service: microsoft-365-security
+ms.service: defender-xdr
 ms.subservice: m365d
 ms.author: siosulli
 author: siosulli

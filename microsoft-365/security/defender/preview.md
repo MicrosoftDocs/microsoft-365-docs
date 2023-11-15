@@ -3,7 +3,7 @@ title: Preview features in Microsoft Defender XDR
 description: Learn about new features in Microsoft 365 security
 keywords: preview, new, m365 security, security, 365, capabilities
 search.product: eADQiWindows 10XVcnh
-ms.service: microsoft-365-security
+ms.service: defender-xdr
 ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library

@@ -3,7 +3,7 @@ title: Incident response with Microsoft Defender XDR
 description: Investigate incidents seen across devices, users, and mailboxes in the Microsoft Defender portal.
 keywords: incidents, alerts, attack story, investigate, analyze, response, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyber-attack
 search.product: eADQiWindows 10XVcnh
-ms.service: microsoft-365-security
+ms.service: defender-xdr
 ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library

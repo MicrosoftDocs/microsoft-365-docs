@@ -2,7 +2,7 @@
 title: Manage tenants with multi-tenant management in Microsoft Defender XDR
 description: Learn about the tenant list in multi-tenant management in Microsoft Defender XDR
 search.appverid: met150
-ms.service: microsoft-365-security
+ms.service: defender-xdr
 ms.subservice: m365d
 ms.author: siosulli
 author: siosulli

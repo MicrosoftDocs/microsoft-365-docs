@@ -3,7 +3,7 @@ title: Turn on Microsoft Defender XDR
 description: Learn how to enable Microsoft Defender XDR and start integrating your security incident and response.
 keywords: get started, enable Microsoft 365 Defender, Microsoft 365 Defender, M365, security, data location, required permissions, license eligibility, settings page
 search.product: eADQiWindows 10XVcnh
-ms.service: microsoft-365-security
+ms.service: defender-xdr
 ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library

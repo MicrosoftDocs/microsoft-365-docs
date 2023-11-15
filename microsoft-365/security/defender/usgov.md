@@ -4,7 +4,7 @@ description: Learn about the Microsoft Defender XDR for US Government customers 
 keywords: government, gcc, high, requirements, capabilities, defender, Microsoft 365 Defender, xdr, dod
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
+ms.service: defender-xdr
 ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library

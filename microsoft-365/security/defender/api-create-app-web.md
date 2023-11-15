@@ -3,7 +3,7 @@ title: Create an app to access Microsoft Defender XDR without a user
 description: Learn how to create an app to access Microsoft Defender XDR without a user.
 keywords: app, access, api, create
 search.product: eADQiWindows 10XVcnh
-ms.service: microsoft-365-security
+ms.service: defender-xdr
 ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library

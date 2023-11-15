@@ -3,7 +3,7 @@ title: Create the Microsoft Defender XDR Evaluation Environment for greater cybe
 description: Learn what's included in the Microsoft Defender XDR XDR you will evaluate, and se up your Microsoft Defender XDR trial lab or pilot environment by activating trial licenses. Start your XDR cyber security journey here and learn how to take that test to production.
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
+ms.service: defender-xdr
 ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library

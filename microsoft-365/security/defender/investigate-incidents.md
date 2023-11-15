@@ -2,7 +2,7 @@
 title: Investigate incidents in Microsoft Defender XDR
 description: Investigate incidents related to devices, users, and mailboxes.
 keywords: incident, incidents, attack story, analyze, response, machines, devices, users, identities, mail, email, mailbox, investigation, graph, evidence
-ms.service: microsoft-365-security
+ms.service: defender-xdr
 ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library

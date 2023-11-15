@@ -3,7 +3,7 @@ title: Create an app to access Microsoft Defender XDR APIs on behalf of a user
 description: Learn how to access Microsoft Defender XDR APIs on behalf of a user.
 keywords: access, on behalf of user, api, application, user, access token, token,
 search.product: eADQiWindows 10XVcnh
-ms.service: microsoft-365-security
+ms.service: defender-xdr
 ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library

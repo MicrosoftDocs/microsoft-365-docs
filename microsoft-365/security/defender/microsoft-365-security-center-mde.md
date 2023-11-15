@@ -2,7 +2,7 @@
 title: Microsoft Defender for Endpoint in Microsoft Defender XDR
 description: Learn about changes from the Microsoft Defender Security Center to Microsoft Defender XDR
 keywords: Getting started with Microsoft 365 Defender, Microsoft Defender for Office 365, Microsoft Defender for Endpoint, MDO, MDE, security portal, defender security portal
-ms.service: microsoft-365-security
+ms.service: defender-xdr
 ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium

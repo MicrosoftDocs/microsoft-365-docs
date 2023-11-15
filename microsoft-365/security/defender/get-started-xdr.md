@@ -4,7 +4,7 @@ ms.reviewer:
 description: Defender Experts for XDR lets you determine the individuals or groups within your organization that need to be notified if there's a critical incident
 keywords: XDR, protected assets, defender experts for xdr, set up microsoft xdr, managed threat hunting, managed detection and response (MDR) service, service delivery manager, readiness, threat hunting and analysis, actions needed xdr
 search.product: Windows 10
-ms.service: microsoft-365-security
+ms.service: defender-xdr
 ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library

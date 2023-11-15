@@ -4,7 +4,7 @@ description: Access Microsoft Defender portal then set up your Microsoft Defende
 keywords: Microsoft 365 Defender trial setup, Microsoft 365 Defender pilot setup, try Microsoft 365 Defender, Microsoft 365 Defender evaluation lab setup
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.service: microsoft-365-security
+ms.service: defender-xdr
 ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library

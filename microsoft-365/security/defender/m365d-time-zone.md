@@ -3,7 +3,7 @@ title: Set the time zone for Microsoft Defender XDR features
 description: Learn how to choose the time zone for date and time information associated with incidents, automated investigation and remediation, and advanced hunting
 keywords: time zone, date, time, Microsoft 365 Defender, M365, security, incidents, automated investigation and response, AIR, advanced hunting
 search.product: eADQiWindows 10XVcnh
-ms.service: microsoft-365-security
+ms.service: defender-xdr
 ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library

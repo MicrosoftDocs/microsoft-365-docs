@@ -1,7 +1,7 @@
 ---
 title: Multi-tenant management in Microsoft Defender XDR
 description: Overview of multi-tenant management in Microsoft Defender XDR.
-ms.service: microsoft-365-security
+ms.service: defender-xdr
 ms.subservice: m365d
 ms.author: siosulli
 author: siosulli

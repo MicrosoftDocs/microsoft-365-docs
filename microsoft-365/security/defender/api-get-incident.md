@@ -3,7 +3,7 @@ title: Get incident API
 description: Learn how to use the Get incidents API to get a single incident in Microsoft Defender XDR.
 keywords: apis, graph api, supported apis, get, file, hash
 search.product: eADQiWindows 10XVcnh
-ms.service: microsoft-365-security
+ms.service: defender-xdr
 ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library

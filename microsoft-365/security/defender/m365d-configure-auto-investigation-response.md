@@ -7,7 +7,7 @@ author: diannegali
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.service: microsoft-365-security
+ms.service: defender-xdr
 ms.subservice: m365d
 ms.localizationpriority: medium
 ms.date: 9/18/2023
