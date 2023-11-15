@@ -111,6 +111,16 @@
       "redirect_document_id":false
      },
      {
+      "source_path":"microsoft-365/solutions/contoso-remote-onsite-work.md",
+      "redirect_url":"/microsoft-365/solutions",
+      "redirect_document_id":false
+     },
+     {
+      "source_path":"microsoft-365/solutions/contoso-case-study-solutions.md",
+      "redirect_url":"/microsoft-365/solutions",
+      "redirect_document_id":false
+     },
+     {
         "source_path":"microsoft-365/solutions/information-protection-deploy-monitor-respond.md",
         "redirect_url":"/microsoft-365/solutions/data-privacy-protection",
         "redirect_document_id":false

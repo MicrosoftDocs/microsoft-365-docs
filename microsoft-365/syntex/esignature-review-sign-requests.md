@@ -13,8 +13,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
-description: Learn how to review and sign signature requests using Microsoft Syntex eSignature. 
+description: Learn how to review and sign electronic signature requests using Microsoft Syntex eSignature. 
 ---
 
 # Review and sign a signature request using Microsoft Syntex eSignature
