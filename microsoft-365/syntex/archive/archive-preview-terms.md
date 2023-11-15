@@ -2,24 +2,23 @@
 title: Microsoft 365 Archive public preview terms and conditions
 ms.author: chucked
 author: chuckedmonson
-manager: pamgreen
+manager: jtremper
 audience: admin
 ms.reviewer: sreelakshmi
-ms.date: 10/17/2023
+ms.date: 11/15/2023
 ms.topic: conceptual
 ms.service: microsoft-syntex
-ms.custom: CSH, archive
+ms.custom: archive
 search.appverid:
 ms.collection:
     - m365initiative-syntex
 ms.localizationpriority:  medium
-ROBOTS: NOINDEX, NOFOLLOW
 description: Read the preview terms and conditions for Microsoft 365 Archive (Preview).
 ---
 
-# Microsoft 365 Archive public preview terms and conditions
+# Microsoft 365 Archive preview terms and conditions
 
-Effective Date:  September 13, 2023
+Effective Date:  November 15, 2023
 
 “Company” means the Enterprise customer that uses this Preview Feature.
 

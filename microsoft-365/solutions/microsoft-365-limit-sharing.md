@@ -2,7 +2,7 @@
 title: "Limit sharing in Microsoft 365"
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: serdars
+manager: pamgreen
 ms.date: 03/10/2020
 audience: ITPro
 ms.topic: article
