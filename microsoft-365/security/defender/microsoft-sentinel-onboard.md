@@ -1,6 +1,6 @@
 ---
 title: Connect Microsoft Sentinel to Microsoft Defender XDR (preview)
-description: Learn how to connect your Microsoft Sentinel environment to Microsoft 365 Defender to unify your security operations.
+description: Learn how to connect your Microsoft Sentinel environment to Microsoft Defender XDR to unify your security operations.
 ms.service: microsoft-365-security
 ms.subservice: m365d
 ms.mktglfcycl: deploy
@@ -53,7 +53,7 @@ To onboard and use Microsoft Sentinel in the Microsoft Defender portal, you must
 
 - A Microsoft Entra tenant that’s allow-listed by Microsoft to connect a workspace through the Defender portal
 - A Log Analytics workspace that has Microsoft Sentinel enabled
-- The data connector for Microsoft 365 Defender enabled in Microsoft Sentinel for incidents and alerts
+- The data connector for Microsoft Defender XDR enabled in Microsoft Sentinel for incidents and alerts
 - Microsoft Defender XDR onboarded to the Microsoft Entra tenant
 - An Azure account with the appropriate roles to onboard and use Microsoft Sentinel in the Defender portal. The following table highlights some of the key roles needed.
 
@@ -139,4 +139,4 @@ If you want to connect to a different workspace, from the **Workspaces** page, s
 
 ## Next steps
 
-- [Investigate incidents in Microsoft 365 Defender](investigate-incidents.md)
+- [Investigate incidents in Microsoft Defender XDR](investigate-incidents.md)
