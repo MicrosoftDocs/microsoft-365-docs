@@ -290,7 +290,7 @@ After completing this task, you now have successfully configured attack surface 
 
 Below are more steps to verify whether attack surface reduction rules are correctly applied to endpoints. (This may take few minutes)
 
-1. From a web browser, go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>.
+1. From a web browser, go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender XDR</a>.
 
 2. Select **Configuration management** from left side menu.
 

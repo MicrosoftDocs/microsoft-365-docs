@@ -146,7 +146,7 @@ Customers still using the classic Microsoft Defender for Cloud Apps portal are n
 
 **To revert to the former Microsoft Defender for Cloud Apps portal**:
 
-1. Sign in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> as a Global administrator, Security administrator, or Cloud App Security administrator in Azure Active directory, or a local global admin in Microsoft Defender for Cloud Apps.
+1. Sign in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender XDR</a> as a Global administrator, Security administrator, or Cloud App Security administrator in Azure Active directory, or a local global admin in Microsoft Defender for Cloud Apps.
 
 1. Navigate to **Settings** > **Cloud Apps** > **System** > **Redirection to Microsoft 365 Defender** or [go directly to the Redirection setting](https://security.microsoft.com/cloudapps/settings?tabid=autoRedirection).
 

@@ -34,7 +34,7 @@ ms.date: 02/16/2021
 
 In alignment with Microsoft's cross-domain approach to threat protection with SIEM and Extended detection and response (XDR), we've rebranded Microsoft Defender Advanced Threat Protection as Microsoft Defender for Endpoint and unified it into a single integrated portal: Microsoft Defender XDR.
 
-This guide explains how to route accounts to Microsoft Defender XDR by enabling automatic redirection from the former Microsoft Defender for Endpoint portal (securitycenter.windows.com or securitycenter.microsoft.com), to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>.
+This guide explains how to route accounts to Microsoft Defender XDR by enabling automatic redirection from the former Microsoft Defender for Endpoint portal (securitycenter.windows.com or securitycenter.microsoft.com), to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender XDR</a>.
 
 > [!NOTE]
 > Microsoft Defender for Endpoint in Microsoft Defender XDR supports [granting access to managed security service providers (MSSPs)](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) in the same that way access is [granted in the Microsoft Defender Security Center](./mssp-access.md).
@@ -78,7 +78,7 @@ To start routing accounts to Microsoft Defender XDR:
 
 1. Make sure you're a global administrator or have security administrator permissions in Microsoft Entra ID.
 
-2. Sign in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>.
+2. Sign in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender XDR</a>.
 
 3. Navigate to **Settings** \> **Endpoints** \> **General** \> **Portal redirection** or [click here](https://security.microsoft.com/preferences2/portal_redirection).
 
@@ -98,7 +98,7 @@ If something isn't working for you or if there's anything you're unable to compl
 
 To revert to the former Microsoft Defender for Endpoint portal:
 
-1. Sign in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> as a global administrator or using and account with security administrator permissions in Microsoft Entra ID.
+1. Sign in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender XDR</a> as a global administrator or using and account with security administrator permissions in Microsoft Entra ID.
 
 2. Navigate to **Settings** \> **Endpoints** \> **General** \> **Portal redirection** or [open the page here](https://security.microsoft.com/preferences2/portal_redirection).
 

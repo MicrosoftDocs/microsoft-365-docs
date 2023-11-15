@@ -28,7 +28,7 @@ This article explains how to configure the [Microsoft Defender for Identity](/de
 
 To connect the [sensor](sensor-health.md#add-a-sensor) with your Active Directory domains, you'll need to configure Directory Services accounts.
 
-1. In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, go to **Settings** and then **Identities**.
+1. In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender XDR</a>, go to **Settings** and then **Identities**.
 
    :::image type="content" source="../../media/defender-identity/settings-identities.png" alt-text="The Identities option in the Settings page" lightbox="../../media/defender-identity/settings-identities.png":::
 
