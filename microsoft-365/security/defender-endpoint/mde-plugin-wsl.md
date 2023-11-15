@@ -167,7 +167,7 @@ After installing the plug-in, the subsystem and all its running containers are o
 
 2. Filter using the tag **WSL2**. 
 
-  ![Screenshot showing device inventory filter](media/mdeplugin-wsl/wsl-device-inventory.png)
+  :::image type="content" source="media/mdeplugin-wsl/wsl-device-inventory.png" alt-text="Screenshot showing device inventory filter" lightbox="media/mdeplugin-wsl/wsl-device-inventory.png":::
 
    You can see all WSL instances in your environment with an active Defender for Endpoint plug-in for WSL. These instances represent all distributions running inside WSL on a given host. The hostname of a *device* matches that of the Windows host. However, it's represented as a Linux device.
 
