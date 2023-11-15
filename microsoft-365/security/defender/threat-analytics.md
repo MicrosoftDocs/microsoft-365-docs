@@ -45,15 +45,13 @@ Threat analytics is our in-product threat intelligence solution from expert Micr
 
 Watch this short video to learn more about how threat analytics can help you track the latest threats and stop them.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWwJfU]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWwJfU]
 
-You can access threat analytics either from the upper left-hand side of Microsoft 365 security portal's navigation bar, or from a dedicated dashboard card that shows the top threats to your org, both in terms of impact, and in terms of exposure.
+You can access threat analytics either from the upper left-hand side of Microsoft 365 Defender's navigation bar, or from a dedicated dashboard card that shows the top threats to your org, both in terms of known impact, and in terms of your exposure.
 
-:::image type="content" source="../../media/threat-analytics/ta_inlandingpage_mtp.png" alt-text="The threat analytics landing page" lightbox="../../media/threat-analytics/ta_inlandingpage_mtp.png":::
+:::image type="content" source="../../media/threat-analytics/ta_inlandingpage_mtp.png" alt-text="Screenshot of the threat analytics landing page" lightbox="../../media/threat-analytics/ta_inlandingpage_mtp.png":::
 
-High impact threats have the greatest potential to cause harm, while high exposure threats are the ones that your assets are most vulnerable to. Getting visibility on active or ongoing campaigns and knowing what to do through threat analytics can help equip your security operations team with informed decisions.
-
-_Where to access threat analytics_
+Getting visibility on active or ongoing campaigns and knowing what to do through threat analytics can help equip your security operations team with informed decisions.
 
 With more sophisticated adversaries and new threats emerging frequently and prevalently, it's critical to be able to quickly:
 
@@ -71,13 +69,40 @@ The threat analytics dashboard ([security.microsoft.com/threatanalytics3](https:
 
 - **Latest threats**—lists the most recently published or updated threat reports, along with the number of active and resolved alerts.
 - **High-impact threats**—lists the threats that have the highest impact to your organization. This section lists threats with the highest number of active and resolved alerts first.
-- **Highest exposure**—lists threats with the highest exposure levels first. the exposure level of a threat is calculated using two pieces of information: how severe the vulnerabilities associated with the threat are, and how many devices in your organization could be exploited by those vulnerabilities.
+- **Highest exposure**—lists threats to which your org has the highest exposure. Your exposure level to a threat is calculated using two pieces of information: how severe the vulnerabilities associated with the threat are, and how many devices in your organization could be exploited by those vulnerabilities.
 
-Select a threat from the dashboard to view the report for that threat.
 
-:::image type="content" source="../../media/threat-analytics/ta_dashboard_mtp.png" alt-text="The threat analytics dashboard" lightbox="../../media/threat-analytics/ta_dashboard_mtp.png":::
 
-_Threat analytics dashboard. You can also select the Search field to key in a keyword that's related to the threat analytics report that you'd like to read._
+:::image type="content" source="../../media/threat-analytics/ta_dashboard_mtp.png" alt-text="Screenshot of the threat analytics dashboard" lightbox="../../media/threat-analytics/ta_dashboard_mtp.png":::
+
+Select a threat from the dashboard to view the report for that threat.You can also select the Search field to key in a keyword that's related to the threat analytics report that you'd like to read.
+
+#### View reports by category
+
+You can filter the threat report list and view the most relevant reports according to a specific threat type or by type of report.
+
+- **Threat tags**—assist you in viewing the most relevant reports according to a specific threat category. For example, the **Ransomware** tag includes all reports related to ransomware.
+- **Report types**—assist you in viewing the most relevant reports according to a specific report type. For example, the **Tools & techniques** tag includes all reports that cover tools and techniques.
+
+The different tags have equivalent filters that assist you in efficiently reviewing the threat report list and filtering the view based on a specific threat tag or report type. For example, to view all threat reports related to ransomware category, or threat reports that involve vulnerabilities.
+
+The Microsoft Threat Intelligence team has added threat tags to each threat report. Four threat tags are currently available:
+  - Ransomware
+  - Phishing
+  - Vulnerability
+  - Activity group
+
+Threat tags are presented at the top of the threat analytics page. There are counters for the number of available reports under each tag.
+
+:::image type="content" source="../../media/threat-analytics/ta_dashboard_tags.png" alt-text="Screenshot of the threat analytics report tags" lightbox="../../media/threat-analytics/ta_dashboard_mtp.png":::
+
+To set the types of reports you want in the list, select **Filters**, choose from the list, and select **Apply**. 
+
+  :::image type="content" source="../../media/threat-analytics/ta-threattag-filters-mtp-tb.png" alt-text="Screenshot of the Filters list" lightbox="../../media/threat-analytics/ta-threattag-filters-mtp.png":::
+
+If you have set more than one filter, the threat analytics reports list can also be sorted by threat tag by selecting the threat tags column:
+
+  :::image type="content" source="../../media/threat-analytics/ta-taglist-mtp.png" alt-text="Screenshot of the threat tags column" lightbox="../../media/threat-analytics/ta-taglist-mtp.png":::
 
 ## View a threat analytics report
 
@@ -94,9 +119,8 @@ Each threat analytics report provides information in several sections:
 
 The **Overview** section provides a preview of the detailed analyst report. It also provides charts that highlight the impact of the threat to your organization, and your exposure through misconfigured and unpatched devices.
 
-:::image type="content" source="../../media/threat-analytics/ta_overview_mtp.png" alt-text="The overview section of a threat analytics report" lightbox="../../media/threat-analytics/../../media/threat-analytics/ta_overview_mtp.png":::
+:::image type="content" source="../../media/threat-analytics/ta_overview_mtp.png" alt-text="Screenshot of the overview section of a threat analytics report" lightbox="../../media/threat-analytics/../../media/threat-analytics/ta_overview_mtp.png":::
 
-_Overview section of a threat analytics report_
 
 #### Assess impact on your organization
 
@@ -116,34 +140,6 @@ Each report includes charts that provide an overview of how resilient your organ
 - **Secure configuration status**—shows the number of devices with misconfigured security settings. Apply the recommended security settings to help mitigate the threat. Devices are considered **Secure** if they've applied _all_ the tracked settings.
 - **Vulnerability patching status**—shows the number of vulnerable devices. Apply security updates or patches to address vulnerabilities exploited by the threat.
 
-#### View reports per threat tags
-
-You can filter the threat report list and view the most relevant reports according to a specific threat tag (category) or a report type.
-
-- **Threat tags**—assist you in viewing the most relevant reports according to a specific threat category. For example, all reports related to ransomware.
-- **Report types**—assist you in viewing the most relevant reports according to a specific report type. For example, all reports that cover tools and techniques.
-- **Filters**—assist you in efficiently reviewing the threat report list and filtering the view based on a specific threat tag or report type. For example, review all threat reports related to ransomware category, or threat reports that cover vulnerabilities.
-
-##### How does it work?
-
-The Microsoft Threat Intelligence team has added threat tags to each threat report:
-
-- Four threat tags are now available:
-  - Ransomware
-  - Phishing
-  - Vulnerability
-  - Activity group
-- Threat tags are presented at the top of the threat analytics page. There are counters for the number of available reports under each tag.
-
-  :::image type="content" source="../../media/threat-analytics/ta-threattags-mtp.png" alt-text="The threat tags" lightbox="../../media/threat-analytics/ta-threattags-mtp.png":::
-
-- The list can also be sorted by threat tags:
-
-  :::image type="content" source="../../media/threat-analytics//ta-taglist-mtp.png" alt-text="The Threat tags section" lightbox="../../media/threat-analytics//ta-taglist-mtp.png":::
-
-- Filters are available per threat tag and report type:
-
-  :::image type="content" source="../../media/threat-analytics/ta-threattag-filters-mtp.png" alt-text="The Filters page" lightbox="../../media/threat-analytics/ta-threattag-filters-mtp.png":::
 
 ### Analyst report: Get expert insight from Microsoft security researchers
 
@@ -155,9 +151,7 @@ In the **Analyst report** section, read through the detailed expert write-up. Mo
 
 The **Related incidents** tab provides the list of all incidents related to the tracked threat. You can assign incidents or manage alerts linked to each incident. 
 
-:::image type="content" source="../../media/threat-analytics/ta_related_incidents_mtp.png" alt-text="The related incidents section of a threat analytics report" lightbox="../../media/threat-analytics/ta_related_incidents_mtp.png":::
-
-_Related incidents section of a threat analytics report_
+:::image type="content" source="../../media/threat-analytics/ta_related_incidents_mtp.png" alt-text="Screenshot of the related incidents section of a threat analytics report" lightbox="../../media/threat-analytics/ta_related_incidents_mtp.png":::
 
 ### Impacted assets: Get list of impacted devices and mailboxes
 
@@ -166,9 +160,8 @@ An asset is considered impacted if it's affected by an active, unresolved alert.
 - **Impacted devices**—endpoints that have unresolved Microsoft Defender for Endpoint alerts. These alerts typically fire on sightings of known threat indicators and activities.
 - **Impacted mailboxes**—mailboxes that have received email messages that have triggered Microsoft Defender for Office 365 alerts. While most messages that trigger alerts are typically blocked, user- or org-level policies can override filters.
 
-:::image type="content" source="../../media/threat-analytics/ta_impacted_assets_mtp.png" alt-text="The impacted assets section of a threat analytics report" lightbox="../../media/threat-analytics/ta_impacted_assets_mtp.png":::
+:::image type="content" source="../../media/threat-analytics/ta_impacted_assets_mtp.png" alt-text="Screenshot of the impacted assets section of a threat analytics report" lightbox="../../media/threat-analytics/ta_impacted_assets_mtp.png":::
 
-_Impacted assets section of a threat analytics report_
 
 ### Prevented email attempts: View blocked or junked threat emails
 
@@ -176,9 +169,8 @@ Microsoft Defender for Office 365 typically blocks emails with known threat indi
 
 The **Prevented email attempts** tab lists all the emails that have either been blocked before delivery or sent to the junk mail folder by Microsoft Defender for Office 365.
 
-:::image type="content" source="../../media/threat-analytics/ta_prevented_email_attempts_mtp.png" alt-text="The prevented email attempts section of a threat analytics report" lightbox="../../media/threat-analytics/ta_prevented_email_attempts_mtp.png":::
+:::image type="content" source="../../media/threat-analytics/ta_prevented_email_attempts_mtp.png" alt-text="Screenshot of the prevented email attempts section of a threat analytics report" lightbox="../../media/threat-analytics/ta_prevented_email_attempts_mtp.png":::
 
-_Prevented email attempts section of a threat analytics report_
 
 ### Exposure and mitigations: Review list of mitigations and the status of your devices
 
