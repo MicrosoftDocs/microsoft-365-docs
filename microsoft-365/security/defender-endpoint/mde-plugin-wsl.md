@@ -167,13 +167,13 @@ After installing the plug-in, the subsystem and all its running containers are o
 
 2. Filter using the tag **WSL2**. 
 
-  ![Screenshot showing device inventory filter](media/mdeplugin-wsl/wsl-device-inventory.png)
+  :::image type="content" source="media/mdeplugin-wsl/wsl-device-inventory.png" alt-text="Screenshot showing device inventory filter" lightbox="media/mdeplugin-wsl/wsl-device-inventory.png":::
 
    You can see all WSL instances in your environment with an active Defender for Endpoint plug-in for WSL. These instances represent all distributions running inside WSL on a given host. The hostname of a *device* matches that of the Windows host. However, it's represented as a Linux device.
 
 3. Open the device page. In the **Overview** pane, there's a link for where the device is hosted. The link enables you to understand that the device is running on a Windows host. You can then pivot to the host for further investigation and/or response.
 
-   :::image type="content" source="media/mdeplugin-wsl/wsl-ui-overview.png" alt-text="Screenshot showing device overview.":::  
+   :::image type="content" source="media/mdeplugin-wsl/wsl-ui-overview.png" alt-text="Screenshot showing device overview." lightbox="media/mdeplugin-wsl/wsl-ui-overview.png":::  
 
 The timeline is populated, similar to Defender for Endpoint on Linux, with events from inside the subsystem (file, process, network). You can observe activity and detections in the timeline view. Alerts and incidents are generated as appropriate as well. 
 
@@ -203,30 +203,25 @@ In the Advanced Hunting schema, under the `DeviceInfo` table, there's a new attr
 #### Get all WSL device ids for the current organization/tenant 
 
 ```kusto
-
 Get all WSL device ids for the current organization/tenant 
 let wsl_endpoints = DeviceInfo  
 | where OSPlatform == "Linux" and isempty(HostDeviceId) != true
 | distinct DeviceId; 
 wsl_endpoints
-
 ```
 
 #### Get WSL device ids and their corresponding host device ids 
 
 ```kusto
-
 Get WSL device ids and their corresponding host device ids 
 DeviceInfo  
 | where OSPlatform == "Linux" and isempty(HostDeviceId) != true
 | distinct WSLDeviceId=DeviceId, HostDeviceId;
-
 ```
 
 #### Get a list of WSL device ids where curl or wget was run
 
 ```kusto
-
 Get a list of WSL device ids where curl or wget was run
 let wsl_endpoints = DeviceInfo  
 | where OSPlatform == "Linux" and isempty(HostDeviceId) != true
@@ -235,14 +230,13 @@ DeviceProcessEvents
 | where FileName == "curl" or FileName == "wget" 
 | where DeviceId in (wsl_endpoints) 
 | sort by Timestamp desc
-
 ```
 
 ## Troubleshooting
 
 1. The command `healthcheck.exe` shows the output, "Launch WSL distro with ‘bash’ command and retry in 5 minutes."
 
-   :::image type="content" source="media/mdeplugin-wsl/wsl-health-check.png" alt-text="Screenshot showing PowerShell output.":::
+   :::image type="content" source="media/mdeplugin-wsl/wsl-health-check.png" alt-text="Screenshot showing PowerShell output." lightbox="media/mdeplugin-wsl/wsl-health-check.png":::
 
 2. If the previously mentioned error occurs, take the following steps:
 
@@ -252,7 +246,7 @@ DeviceProcessEvents
 
 3. The `healthcheck.exe` command might show the output, "Waiting for Telemetry. Please retry in 5 minutes."
 
-   :::image type="content" source="media/mdeplugin-wsl/wsl-health-check-telemetry.png" alt-text="Screenshot showing health telemetry status.":::
+   :::image type="content" source="media/mdeplugin-wsl/wsl-health-check-telemetry.png" alt-text="Screenshot showing health telemetry status." lightbox="media/mdeplugin-wsl/wsl-health-check-telemetry.png":::
 
    If that error occurs, wait for 5 minutes and rerun `healthcheck.exe`.
 
@@ -264,26 +258,22 @@ DeviceProcessEvents
  
    - Use the health check tool to provide an overview of overall plug-in health. Open Terminal, and run the `healthcheck.exe` tool from `C:\Program Files\Microsoft Defender for Endpoint plug-in for WSL\tools`.
 
-      :::image type="content" source="media/mdeplugin-wsl/wsl-health-check-support.png" alt-text="Screenshot showing status in PowerShell.":::
+      :::image type="content" source="media/mdeplugin-wsl/wsl-health-check-support.png" alt-text="Screenshot showing status in PowerShell." lightbox="media/mdeplugin-wsl/wsl-health-check-support.png":::
 
   - Enable the connectivity test and check for Defender for Endpoint connectivity in WSL. If the connectivity test fails, provide the output of the health check tool to [mdeforwsl-preview@microsoft.com](mailto:mdeforwsl-preview@microsoft.com).
 
 5. In case you face any other challenges or issues, open the terminal and run the following commands to generate the support bundle: 
 
    ```powershell
-
    cd C:\Program Files\Microsoft Defender for Endpoint plug-in for WSL\tools
-
    ```
 
    ```powershell
-
    .\healthcheck.exe --supportBundle 
-
    ```
 
    The support bundle can be found in the path provided by the previous command. 
 
 
-   :::image type="content" source="media/mdeplugin-wsl/wsl-health-check-overview.png" alt-text="Screenshot showing status in PowerShell output.":::
+   :::image type="content" source="media/mdeplugin-wsl/wsl-health-check-overview.png" alt-text="Screenshot showing status in PowerShell output." lightbox="media/mdeplugin-wsl/wsl-health-check-overview.png":::
 

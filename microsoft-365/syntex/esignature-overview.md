@@ -32,11 +32,11 @@ You must be signed in to SharePoint Online by using your work email address.
 
 ## Release notes
 
-- Currently, Syntex eSignature is available for the US market only. If a tenant's location is in the United States, eSignature is available for that tenant. For US-located, multi-geo enabled tenants, eSignature is available in the home geo only. The feature rolls out to other regions in 2024.
+- Currently, Syntex eSignature is rolling out to the US market. The feature rolls out to other regions in 2024.
 
 - Syntex eSignature is available for only PDF documents at this time.
 
-- Support for other electronic signature providers will be provided in 2024. Starting with Adobe Acrobat Sign and DocuSign, you'll be able to request signatures on documents in SharePoint.
+- Support for other electronic signature providers, such as Adobe Acrobat Sign and DocuSign, will be provided in 2024.
 
 - You'll be able to track your Syntex eSignature requests using the Approval app in Microsoft Teams in 2024.
 
