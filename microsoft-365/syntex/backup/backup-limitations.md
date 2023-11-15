@@ -14,8 +14,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-ROBOTS: NOINDEX, NOFOLLOW
-description: Learn about preview limitations in Microsoft 365 Backup.
+description: Learn about the preview limitations in Microsoft 365 Backup.
 ---
 
 # Preview limitations in Microsoft 365 Backup (Preview)

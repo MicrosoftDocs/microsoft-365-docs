@@ -29,7 +29,7 @@ ms.date: 04/27/2022
 
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 
 The `UrlClickEvents` table in the advanced hunting schema contains information about [Safe Links](../office-365-security/safe-links-about.md) clicks from email messages, Microsoft Teams, and Office 365 apps in supported desktop, mobile, and web apps.
@@ -66,7 +66,7 @@ UrlClickEvents
 ```
 
 ## Related articles
-- [Supported Microsoft 365 Defender streaming event types in event streaming API](supported-event-types.md)
+- [Supported Microsoft Defender XDR streaming event types in event streaming API](supported-event-types.md)
 - [Proactively hunt for threats](advanced-hunting-overview.md)
 - [Safe Links in Microsoft Defender for Office 365](../office-365-security/safe-links-about.md)
 - [Take action on advanced hunting query results](advanced-hunting-take-action.md)

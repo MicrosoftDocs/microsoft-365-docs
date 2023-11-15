@@ -13,7 +13,6 @@ search.appverid:
 ms.collection:
     - m365initiative-syntex
 ms.localizationpriority:  medium
-ROBOTS: NOINDEX, NOFOLLOW
 description: Learn how to set up and configure Microsoft 365 Archive.
 ---
 
