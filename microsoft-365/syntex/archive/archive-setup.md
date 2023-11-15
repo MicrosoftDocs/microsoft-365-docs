@@ -27,8 +27,10 @@ Microsoft 365 Archive follows a pay-as-you-go model, and is configured through t
 
 To set up Microsoft 365 Archive, follow these steps:
 
-1. [Enable pay-as-you-go billing](../syntex-azure-billing.md) for Syntex on the Microsoft 365 admin center.
-2. [Turn on Microsoft 365 Archive](#set-up-microsoft-365-archive) from the Microsoft 365 admin center.
+1. Create an [Azure subscription](/azure/cloud-adoption-framework/ready/azure-best-practices/initial-subscriptions) and [resource group](/azure/azure-resource-manager/management/manage-resource-groups-portal).
+2. [Set up pay-as-you-go billing](../syntex-azure-billing.md) for Syntex in the Microsoft 365 admin center.
+3. [Turn on Microsoft 365 Archive](#set-up-microsoft-365-archive) in the Microsoft 365 admin center.
+4. [Manage Microsoft 365 Archive](archive-manage.md) in the SharePoint admin center. 
 
 ## Prerequisites
 
