@@ -29,9 +29,9 @@ ms.reviewer: evaldm, isco
 # View and manage actions in the Action center
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
-Threat protection features in Microsoft 365 Defender can result in certain remediation actions. Here are some examples:
+Threat protection features in Microsoft Defender XDR can result in certain remediation actions. Here are some examples:
 
 - [Automated investigations](m365d-autoir.md) can result in remediation actions that are taken automatically or await your approval.
 - Antivirus, antimalware, and other threat protection features can result in remediation actions, such as blocking a file, URL, or process, or sending an artifact to quarantine.
@@ -43,7 +43,7 @@ Threat protection features in Microsoft 365 Defender can result in certain remed
 To navigate to the Action center, take one of the following steps:
 
 - Go to [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center); or
-- In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the Automated investigation & response card, select **Approve in Action Center**.
+- In the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the Automated investigation & response card, select **Approve in Action Center**.
 
 ## Review pending actions in the Action center
 

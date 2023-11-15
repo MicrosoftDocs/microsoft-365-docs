@@ -56,7 +56,7 @@ sections:
         answer: |
           Yes. Defender for Business supports protection for Windows, Mac, Android, and iOS/iPadOS devices. See [Onboard devices](mdb-onboard-devices.md).
 
-          - You can onboard Windows and Mac client devices using a local script in the Microsoft 365 Defender portal. 
+          - You can onboard Windows and Mac client devices using a local script in the Microsoft Defender portal. 
           - To onboard Android and iOS/iPadOS devices, you can use [Microsoft Intune](/mem/intune/) or [mobile threat defense capabilities](mdb-mtd.md) in Defender for Business.
 
       - question: Does Defender for Business support servers? 
@@ -118,11 +118,11 @@ sections:
 
       - question: How do I configure attack surface reduction rules and capabilities in Defender for Business?
         answer: |
-          Use Intune to configure your attack surface reduction rules. Other attack surface reduction capabilities can be configured in the Microsoft 365 Defender portal. See [Attack surface reduction capabilities in Defender for Business](mdb-asr.md).
+          Use Intune to configure your attack surface reduction rules. Other attack surface reduction capabilities can be configured in the Microsoft Defender portal. See [Attack surface reduction capabilities in Defender for Business](mdb-asr.md).
 
       - question: How does Microsoft Intune work with Defender for Business? 
         answer: |
-          If you have Defender for Business as a standalone subscription, you can onboard and secure Windows and Mac devices in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). You can use Microsoft Intune to onboard Windows and Mac computers and mobile devices.
+          If you have Defender for Business as a standalone subscription, you can onboard and secure Windows and Mac devices in the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). You can use Microsoft Intune to onboard Windows and Mac computers and mobile devices.
 
           When you enroll devices in Intune and onboard those devices to Defender for Business, you create a connection between Intune and Defender for Business.
            

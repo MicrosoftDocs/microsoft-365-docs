@@ -29,9 +29,9 @@ search.appverid: met150
 
 **Applies to:**
 
-- [Microsoft Microsoft 365 Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft Microsoft 365 Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Microsoft Defender XDR for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Microsoft Defender XDR for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ## Overview
 
@@ -41,7 +41,7 @@ Microsoft Network protection helps reduce the attack surface of your devices fro
 - exploits
 - other malicious content on the Internet
 
-Network protection expands the scope of Microsoft 365 Defender [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) to block all outbound HTTP(s) traffic that attempts to connect to low-reputation sources. The blocks on outbound HTTP(s) traffic are based on the domain or hostname.
+Network protection expands the scope of Microsoft Defender XDR [SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) to block all outbound HTTP(s) traffic that attempts to connect to low-reputation sources. The blocks on outbound HTTP(s) traffic are based on the domain or hostname.
 
 ## Availability
 
@@ -84,14 +84,16 @@ To roll out Network Protection for macOS, we recommend the following:
 
 ## Prerequisites
 
-- Licensing: Microsoft 365 Defender for Endpoint Plan 1 or Microsoft 365 Defender for Endpoint Plan 2 (can be trial)
+- Licensing: Microsoft Defender XDR for Endpoint Plan 1 or Microsoft Defender XDR for Endpoint Plan 2 (can be trial)
 - Onboarded Machines:
   - Minimum macOS version: 11
   - Product version 101.94.13 or later
 
 ## Deployment instructions
 
-### Microsoft 365 Defender for Endpoint
+<a name='microsoft-365-defender-for-endpoint'></a>
+
+### Microsoft Defender XDR for Endpoint
 
 Install the most recent product version through Microsoft AutoUpdate. To open Microsoft AutoUpdate, run the following command from the Terminal:
 
@@ -136,7 +138,7 @@ After you create this configuration profile, assign it to the devices where you 
 
 ##### Configure the enforcement level
 
-Note: If you've already configured Microsoft 365 Defender for Endpoint on Mac using the instructions listed here, then update the plist file you previously deployed with the content listed below and redeploy it from JAMF.
+Note: If you've already configured Microsoft Defender XDR for Endpoint on Mac using the instructions listed here, then update the plist file you previously deployed with the content listed below and redeploy it from JAMF.
 
 1. In **Computers** \> **Configuration Profiles**, select **Options** \> **Applications & Custom Settings**
 2. Select **Upload File** (PLIST file)
@@ -259,7 +261,7 @@ The following scenarios are supported.
 
 ### Web threat protection
 
-Web threat protection is part of web protection in Microsoft 365 Defender for Endpoint. It uses network protection to secure your devices against web threats. By integrating with Microsoft Edge for macOS and popular third-party browsers like Chrome and Firefox, web threat protection stops web threats without a web proxy. Web threat protection can protect devices while they're on premises or away. Web threat protection stops access to the following types of sites:
+Web threat protection is part of web protection in Microsoft Defender XDR for Endpoint. It uses network protection to secure your devices against web threats. By integrating with Microsoft Edge for macOS and popular third-party browsers like Chrome and Firefox, web threat protection stops web threats without a web proxy. Web threat protection can protect devices while they're on premises or away. Web threat protection stops access to the following types of sites:
 
 - phishing sites
 - malware vectors
@@ -297,15 +299,15 @@ For more information about reporting, see [Web content filtering](web-content-fi
 
 ### Microsoft Defender for Cloud Apps
 
-The Microsoft Defender for Cloud Apps / Cloud App Catalog identifies apps you would want end users to be warned upon accessing with Microsoft 365 Defender for Endpoint, and mark them as _Monitored_. The domains listed under monitored apps would be later synced to Microsoft 365 Defender for Endpoint:
+The Microsoft Defender for Cloud Apps / Cloud App Catalog identifies apps you would want end users to be warned upon accessing with Microsoft Defender XDR for Endpoint, and mark them as _Monitored_. The domains listed under monitored apps would be later synced to Microsoft Defender XDR for Endpoint:
 
 :::image type="content" source="images/network-protection-macos-mcas-monitored-apps.png" alt-text="Shows network protection monitored apps.":::
 
-Within 10-15 minutes, these domains will be listed in Microsoft 365 Defender under Indicators > URLs/Domains with Action=Warn. Within the enforcement SLA (see details at the end of this article), end users will be getting warn messages when attempting to access these domains:
+Within 10-15 minutes, these domains will be listed in Microsoft Defender XDR under Indicators > URLs/Domains with Action=Warn. Within the enforcement SLA (see details at the end of this article), end users will be getting warn messages when attempting to access these domains:
 
 :::image type="content" source="images/network-protection-macos-indicators-urls-domains-warn.png" alt-text="Shows network protection indicators for urls or domains warning.":::
 
-When the end user will be attempting to access monitored domains, they'll be warned by Microsoft 365 Defender for Endpoint.
+When the end user will be attempting to access monitored domains, they'll be warned by Microsoft Defender XDR for Endpoint.
 
 - The user will get a plain block experience accompanied by the following toast message, which will be displayed by the operating system including the name of the blocked application (e.g Blogger.com)
 
@@ -349,14 +351,14 @@ For this page, we recommend that your organization uses a basic SharePoint site.
 
 1. It can take up to two hours (typically less) for app domains to propagate and to be update in the endpoint devices, after it's marked as _Monitored_.
 2. By default, action will be taken for all apps and domains that were marked as Monitored in Microsoft Defender for Cloud Apps portal for all the onboarded endpoints in the organization.
-3. Full URLs are currently not supported and won't be sent from Microsoft Defender for Cloud Apps to Microsoft 365 Defender for Endpoint, if any full URLs are listed under Microsoft Defender for Cloud Apps monitored apps, hence, user won't get warned on access attempt (for example, google.com/drive isn't supported, while drive.google.com is supported).
+3. Full URLs are currently not supported and won't be sent from Microsoft Defender for Cloud Apps to Microsoft Defender XDR for Endpoint, if any full URLs are listed under Microsoft Defender for Cloud Apps monitored apps, hence, user won't get warned on access attempt (for example, google.com/drive isn't supported, while drive.google.com is supported).
 
 No End-user notification on third party browsers? Check your toast message settings
 
 ## See also
 
-- [Microsoft 365 Defender for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
-- [Microsoft 365 Defender for Endpoint integration with Microsoft Microsoft 365 Defender for Cloud Apps](/defender-cloud-apps/mde-integration)
+- [Microsoft Defender XDR for Endpoint on Mac](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender XDR for Endpoint integration with Microsoft Microsoft Defender XDR for Cloud Apps](/defender-cloud-apps/mde-integration)
 - [Get to know the innovative features in Microsoft Edge](https://www.microsoft.com/edge/features)
 - [Protect your network](network-protection.md)
 - [Turn on network protection](enable-network-protection.md)

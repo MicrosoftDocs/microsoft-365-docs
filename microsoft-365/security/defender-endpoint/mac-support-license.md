@@ -31,7 +31,7 @@ ms.date: 12/18/2020
 - [Microsoft Defender for Endpoint on macOS](microsoft-defender-endpoint-mac.md)
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Want to experience Microsoft Defender for Endpoint? [Sign up for a free trial.](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -89,7 +89,7 @@ For scenarios where Microsoft Defender for Endpoint on macOS isn't up to date, y
 
 #### For not assigning a license to the user
 
-1. In the Microsoft 365 Defender portal (security.microsoft.com):
+1. In the Microsoft Defender portal (security.microsoft.com):
     1. Select **Settings**. The **Settings** screen appears.
     1. Select **Endpoints**.
        
