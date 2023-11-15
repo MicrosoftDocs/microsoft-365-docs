@@ -82,7 +82,7 @@ conceptualContent:
             - url: /microsoft-365/contentunderstanding/
               itemType: overview
               text: Microsoft Syntex
-            - url: /viva
+            - url: /viva/
               itemType: overview
               text: Microsoft Viva
             - url: /Exchange/exchange-online
@@ -94,9 +94,6 @@ conceptualContent:
             - url: /office365/planner
               itemType: overview
               text: Planner
-            - url: /yammer/yammer-landing-page
-              itemType: overview
-              text: Yammer
         # Card
         - title: Microsoft 365 Apps and Office
           links:
