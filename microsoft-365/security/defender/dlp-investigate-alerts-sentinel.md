@@ -32,7 +32,7 @@ ms.date: 07/11/2023
 
 ## Before you start
 
-See, [Investigate data loss prevention alerts with Microsoft Defender XDR](dlp-investigate-alerts-defender.md#investigate-data-loss-prevention-alerts-with-microsoft-365-defender) for more details.
+See, [Investigate data loss prevention alerts with Microsoft Defender XDR](dlp-investigate-alerts-defender.md) for more details.
 
 ## DLP investigation experience in Microsoft Sentinel
 
