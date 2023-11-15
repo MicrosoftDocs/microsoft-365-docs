@@ -246,7 +246,7 @@ DeviceProcessEvents
 
 3. The `healthcheck.exe` command might show the output, "Waiting for Telemetry. Please retry in 5 minutes."
 
-   :::image type="content" source="media/mdeplugin-wsl/wsl-health-check-telemetry.png" alt-text="Screenshot showing health telemetry status.":::
+   :::image type="content" source="media/mdeplugin-wsl/wsl-health-check-telemetry.png" alt-text="Screenshot showing health telemetry status." lightbox="media/mdeplugin-wsl/wsl-health-check-telemetry.png":::
 
    If that error occurs, wait for 5 minutes and rerun `healthcheck.exe`.
 
