@@ -41,9 +41,9 @@ Microsoft Defender XDR combines protection, detection, investigation, and respon
 
 Moreover, the Defender for Cloud incidents and alerts are now part of [Microsoft Defender XDR's public API](api-overview.md). This integration allows exporting of security alerts data to any system using a single API.
 
-## Prerequisites
+## Prerequisite
 
-To ensure access to Defender for Cloud alerts in Microsoft Defender XDR, you must be subscribed to any of the plans listed in [Connect your Azure subscriptions](/defender-for-cloud/connect-azure-subscription/)
+To ensure access to Defender for Cloud alerts in Microsoft Defender XDR, you must be subscribed to any of the plans listed in [Connect your Azure subscriptions](/defender-for-cloud/connect-azure-subscription/).
 
 ### Required permissions
 
