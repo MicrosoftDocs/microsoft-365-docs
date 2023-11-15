@@ -31,7 +31,7 @@ You must have a Microsoft 365 Copilot license enabled for your tenant. To learn 
 
 ## Get started
 
-Copilot for Microsoft 365 admin is currently available in an invite-only Private Preview. To use Copilot for Microsoft 365 admin,
+Copilot for Microsoft 365 admin is currently available in an invite-only preview. To use Copilot for Microsoft 365 admin,
 
 1. Sign in to the Microsoft 365 admin center, or one of the specialized admin centers like Teams, SharePoint, or Exchange.
 
@@ -47,16 +47,16 @@ With Copilot for Microsoft 365 admin, you can:
 
 As an example, check out these prompts:
 
-- “Show me users in Germany with an E5 license assigned”
+- “Show me users in Australia with Teams license assigned”
 - “Identify all groups in my organization without an owner”
-- “Identify all licenses in my organization that expire next month”
+- “Identify all users who are unlicensed"
 
 **Navigate** to different pages, features, and experiences within the admin center. Copilot provides a breadcrumb trail and direct link to your desired page.
 
 Examples:
 
-- “Where do I set up group policies?”
-- “How to block an extension in Microsoft 365 admin center?”
+- “Where do I manage integrated apps”
+- “Where do I manage roles”
 
 **Get support** for any challenges or questions that you have related to administering Microsoft 365 for your tenant.
 
@@ -70,15 +70,14 @@ Provide **deployment guidance** for setting up and managing various aspects of i
 Examples:
 
 - “What is the status of my security defaults?”
-- “Show me the identity sync status”
+- “What is the identity user status in my org?”
 
 **Surface general status** of Microsoft services, tenant health status, health advice and recommendations.
 
 Examples:
 
-- “Are there any service issues right now?”
-- “Show me service health status”
-- “Give me details about that incident”
+- "Are there any service issues right now?”
+- “Show me health of teams”
 
 **Marketplace navigation** to help admins discover, trial, or purchase solutions and take advantage of value from Microsoft 365.
 
@@ -87,7 +86,7 @@ Examples:
 - “Tell me about Microsoft Business Premium”
 - “I want to buy Visio”
 
-During the Private Preview, use the pre-populated prompt options in the Copilot pane for the best results.
+During the preview, use the pre-populated prompt options in the Copilot pane for the best results.
 
 To maintain your security and privacy, Copilot won't make any configuration changes on behalf of you. To learn more about security and privacy with Copilot, see [Data, Privacy, and Security for Microsoft 365 Copilot](microsoft-365-copilot-privacy.md).
 
@@ -95,7 +94,7 @@ To maintain your security and privacy, Copilot won't make any configuration chan
 
 ### How can IT admins enable the feature?
 
-In Private Preview, Copilot is automatically enabled for select customers who have purchased Copilot for Microsoft 365.
+In preview, Copilot is automatically enabled for select customers who have purchased Copilot for Microsoft 365.
 
 ### Which admin roles can use Copilot for Microsoft 365 admin?
 

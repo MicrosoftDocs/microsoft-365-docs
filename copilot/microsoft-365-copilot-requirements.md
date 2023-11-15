@@ -79,6 +79,14 @@ There are many Copilot experiences, including some core experiences like Excel, 
 
 Microsoft 365 Copilot users require a license for Microsoft 365 E3 or Microsoft 365 E5, and a license for Microsoft 365 Copilot. You can use the [Microsoft 365 Copilot setup guide](https://setup.microsoft.com/microsoft-365/copilot-setup-guide) in the Microsoft 365 admin center to assign the required licenses to users. For more information, see [Assign licenses to users in the Microsoft 365 admin center](/microsoft-365/admin/manage/assign-licenses-to-users).
 
+## Conditional Access
+
+While Copilot supports Conditional Access Policies in SharePoint Online configured to target "all cloud apps" or "Office 365 group," Microsoft 365 Chat does not currently support Conditional Access policies configured to the SharePoint Online app directly. We anticipate deploying a change in coming weeks.
+
+## Restricted Access Control
+
+Microsoft 365 Chat does not currently support Restricted Access Control and Microsoft 365 Information Barriers (Implicit and Owner moderated mode) on sites. Support for both policies is intended.  We anticipate deploying a change in coming weeks.
+
 ## Privacy settings for Microsoft 365 Apps for enterprise
 
 Review your privacy settings for Microsoft 365 Apps for enterprise because those settings might have an effect on the availability of Microsoft 365 Copilot features. For more information, see [Microsoft 365 Copilot and policy settings for connected experiences](microsoft-365-copilot-privacy.md#microsoft-365-copilot-and-policy-settings-for-connected-experiences).
