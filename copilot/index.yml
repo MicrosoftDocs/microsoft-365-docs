@@ -70,8 +70,6 @@ additionalContent:
               url: /microsoft-365/admin/manage/manage-plugins-for-copilot-in-integrated-apps
             - text: Related admin controls
               url: /microsoft-365/solutions/tenant-management-overview
-            - text: Extend Copilot for Microsoft 365
-              url: /microsoftteams/platform/copilot/how-to-extend-copilot#how-to-make-your-graph-connector-work-better-with-copilot
 
         # Card
         - title: Get trained on Copilot for Microsoft 365
