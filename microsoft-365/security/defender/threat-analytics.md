@@ -73,7 +73,7 @@ The threat analytics dashboard ([security.microsoft.com/threatanalytics3](https:
 
 
 
-:::image type="content" source="../../media/threat-analytics/ta_dashboard_mtp.png" alt-text="Screenshot of the threat analytics dashboard" lightbox="../../media/threat-analytics/ta_dashboard_mtp.png":::
+:::image type="content" source="../../media/threat-analytics/ta_dashboard_mtp.png" alt-text="Screenshot of the threat analytics dashboard," lightbox="../../media/threat-analytics/ta_dashboard_mtp.png":::
 
 Select a threat from the dashboard to view the report for that threat. You can also select the Search field to key in a keyword that's related to the threat analytics report that you'd like to read.
 
@@ -94,15 +94,15 @@ The Microsoft Threat Intelligence team has added threat tags to each threat repo
 
 Threat tags are presented at the top of the threat analytics page. There are counters for the number of available reports under each tag.
 
-:::image type="content" source="../../media/threat-analytics/ta_dashboard_tags.png" alt-text="Screenshot of the threat analytics report tags" lightbox="../../media/threat-analytics/ta_dashboard_mtp.png":::
+:::image type="content" source="../../media/threat-analytics/ta_dashboard_tags.png" alt-text="Screenshot of the threat analytics report tags." lightbox="../../media/threat-analytics/ta_dashboard_mtp.png":::
 
 To set the types of reports you want in the list, select **Filters**, choose from the list, and select **Apply**. 
 
-  :::image type="content" source="../../media/threat-analytics/ta-threattag-filters-mtp-tb.png" alt-text="Screenshot of the Filters list" lightbox="../../media/threat-analytics/ta-threattag-filters-mtp.png":::
+  :::image type="content" source="../../media/threat-analytics/ta-threattag-filters-mtp-tb.png" alt-text="Screenshot of the Filters list." lightbox="../../media/threat-analytics/ta-threattag-filters-mtp.png":::
 
 If you have set more than one filter, the threat analytics reports list can also be sorted by threat tag by selecting the threat tags column:
 
-  :::image type="content" source="../../media/threat-analytics/ta-taglist-mtp.png" alt-text="Screenshot of the threat tags column" lightbox="../../media/threat-analytics/ta-taglist-mtp.png":::
+  :::image type="content" source="../../media/threat-analytics/ta-taglist-mtp.png" alt-text="Screenshot of the threat tags column." lightbox="../../media/threat-analytics/ta-taglist-mtp.png":::
 
 ## View a threat analytics report
 
@@ -119,7 +119,7 @@ Each threat analytics report provides information in several sections:
 
 The **Overview** section provides a preview of the detailed analyst report. It also provides charts that highlight the impact of the threat to your organization, and your exposure through misconfigured and unpatched devices.
 
-:::image type="content" source="../../media/threat-analytics/ta_overview_mtp.png" alt-text="Screenshot of the overview section of a threat analytics report" lightbox="../../media/threat-analytics/../../media/threat-analytics/ta_overview_mtp.png":::
+:::image type="content" source="../../media/threat-analytics/ta_overview_mtp.png" alt-text="Screenshot of the overview section of a threat analytics report." lightbox="../../media/threat-analytics/../../media/threat-analytics/ta_overview_mtp.png":::
 
 
 #### Assess impact on your organization
@@ -151,7 +151,7 @@ In the **Analyst report** section, read through the detailed expert write-up. Mo
 
 The **Related incidents** tab provides the list of all incidents related to the tracked threat. You can assign incidents or manage alerts linked to each incident. 
 
-:::image type="content" source="../../media/threat-analytics/ta_related_incidents_mtp.png" alt-text="Screenshot of the related incidents section of a threat analytics report" lightbox="../../media/threat-analytics/ta_related_incidents_mtp.png":::
+:::image type="content" source="../../media/threat-analytics/ta_related_incidents_mtp.png" alt-text="Screenshot of the related incidents section of a threat analytics report." lightbox="../../media/threat-analytics/ta_related_incidents_mtp.png":::
 
 ### Impacted assets: Get list of impacted devices and mailboxes
 
@@ -160,7 +160,7 @@ An asset is considered impacted if it's affected by an active, unresolved alert.
 - **Impacted devices**—endpoints that have unresolved Microsoft Defender for Endpoint alerts. These alerts typically fire on sightings of known threat indicators and activities.
 - **Impacted mailboxes**—mailboxes that have received email messages that have triggered Microsoft Defender for Office 365 alerts. While most messages that trigger alerts are typically blocked, user- or org-level policies can override filters.
 
-:::image type="content" source="../../media/threat-analytics/ta_impacted_assets_mtp.png" alt-text="Screenshot of the impacted assets section of a threat analytics report" lightbox="../../media/threat-analytics/ta_impacted_assets_mtp.png":::
+:::image type="content" source="../../media/threat-analytics/ta_impacted_assets_mtp.png" alt-text="Screenshot of the impacted assets section of a threat analytics report." lightbox="../../media/threat-analytics/ta_impacted_assets_mtp.png":::
 
 
 ### Prevented email attempts: View blocked or junked threat emails
@@ -169,7 +169,7 @@ Microsoft Defender for Office 365 typically blocks emails with known threat indi
 
 The **Prevented email attempts** tab lists all the emails that have either been blocked before delivery or sent to the junk mail folder by Microsoft Defender for Office 365.
 
-:::image type="content" source="../../media/threat-analytics/ta_prevented_email_attempts_mtp.png" alt-text="Screenshot of the prevented email attempts section of a threat analytics report" lightbox="../../media/threat-analytics/ta_prevented_email_attempts_mtp.png":::
+:::image type="content" source="../../media/threat-analytics/ta_prevented_email_attempts_mtp.png" alt-text="Screenshot of the prevented email attempts section of a threat analytics report." lightbox="../../media/threat-analytics/ta_prevented_email_attempts_mtp.png":::
 
 
 ### Exposure and mitigations: Review list of mitigations and the status of your devices
