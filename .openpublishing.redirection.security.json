@@ -3664,6 +3664,11 @@
       "source_path": "microsoft-365/security/intelligence/coordinated-malware-eradication.md",
       "redirect_url": "https://learn.microsoft.com/en-us/microsoft-365/security/intelligence/cybersecurity-industry-partners",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/defender-endpoint/linux-exclusions-v2.md",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/linux-exclusions",
+      "redirect_document_id": true
     }
    ]
 }

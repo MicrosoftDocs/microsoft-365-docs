@@ -6,7 +6,7 @@ manager: scotv
 ms.date: 07/18/2023
 audience: Admin
 ms.topic: article
-ms.service: microsoft-365-business
+ms.service: microsoft-365-copilot
 ms.localizationpriority: medium
 ms.collection: 
 - Tier2
@@ -43,7 +43,7 @@ You can use this report to see the usage of Microsoft 365 Copilot in your organi
 
 **Enabled Users** shows you the total number of unique users in your organization with Microsoft 365 Copilot licenses over the selected time period.
 
-**Active Users** shows you the total number of enabled users in your organization who performed a specific activity, including have either tried a user-initiated Microsoft 365 Copilot feature or kept the content for Microsoft 365 Copilot initiated features, in one or more Microsoft 365 apps over the selected time period.
+**Active Users** shows you the total number of enabled users in your organization who tried a user-initiated Microsoft 365 Copilot feature in one or more Microsoft 365 apps over the selected time period.
 
 **Active users rate** shows you the number of active users in your organization, divided by the number of enabled users.
 
@@ -96,7 +96,7 @@ To ensure data quality, we perform daily data validation checks for the past thr
 
 ## User activity table
 
-| **Item**                                       | **Description**                                                                                                                               |
+| Item | Description |
 |------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
 | User name                                      | The user's principal name.                                                                                                                    |
 | Display name                                   | The full name of the user.                                                                                                                    |

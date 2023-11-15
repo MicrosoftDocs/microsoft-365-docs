@@ -80,26 +80,29 @@ If you experience any installation failures, refer to [Troubleshooting installat
 ### System requirements
 
 > [!NOTE]
-> Support of Red Hat Enterprise Linux and CentOS 6.7+ to 6.10+ are in preview.
+
 
 - Supported Linux server distributions and x64 (AMD64/EM64T) and x86_64 versions:
 
-  - Red Hat Enterprise Linux 6.7 or higher (Preview)
+  - Red Hat Enterprise Linux 6.7 or higher (In preview)
   - Red Hat Enterprise Linux 7.2 or higher
   - Red Hat Enterprise Linux 8.x
   - Red Hat Enterprise Linux 9.x
-  - CentOS 6.7 or higher (Preview)
+  - CentOS 6.7 or higher (In preview)
   - CentOS 7.2 or higher
   - Ubuntu 16.04 LTS or higher LTS
-  - Debian 9 or higher
+  - Debian 9 - 11
   - SUSE Linux Enterprise Server 12 or higher
   - Oracle Linux 7.2 or higher
   - Oracle Linux 8.x
   - Amazon Linux 2
+  - Amazon Linux 2023
   - Fedora 33 or higher
 
     > [!NOTE]
     > Distributions and version that are not explicitly listed are unsupported (even if they are derived from the officially supported distributions).
+    > With RHEL 6 support for 'extended end of life' coming to an end by June 30, 2024; MDE Linux support for RHEL 6 will also be deprecated by June 30, 2024
+    > MDE Linux version 101.23082.0011 is the last MDE Linux release supporting RHEL 6.7 or higher versions (does not expire before June 30, 2024). Customers are advised to plan upgrades to their RHEL 6 infrastructure aligned with guidance from Red Hat. 
 
 - List of supported kernel versions
   > [!NOTE]
@@ -111,7 +114,7 @@ If you experience any installation failures, refer to [Troubleshooting installat
     - For 6.7: 2.6.32-573.* (except 2.6.32-573.el6.x86_64)
     - For 6.8: 2.6.32-642.*
     - For 6.9: 2.6.32-696.* (except 2.6.32-696.el6.x86_64)
-    - For 6.10: 2.6.32.754.2.1.el6.x86_64 to 2.6.32-754.48.1:
+    - For 6.10: 
       - 2.6.32-754.10.1.el6.x86_64
       - 2.6.32-754.11.1.el6.x86_64
       - 2.6.32-754.12.1.el6.x86_64
