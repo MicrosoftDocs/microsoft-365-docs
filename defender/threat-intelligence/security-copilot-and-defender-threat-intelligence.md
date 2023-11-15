@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
   - NOCSH
-ms.author: poliveria
+ms.author: pauloliveria
 author: poliveria
 ms.localizationpriority: medium
 manager: dolmont
