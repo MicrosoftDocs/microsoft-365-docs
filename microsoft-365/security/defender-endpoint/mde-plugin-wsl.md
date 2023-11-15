@@ -9,9 +9,14 @@ ms.service: microsoft-365-security
 ms.subservice: mde
 ms.topic: how-to
 ms.localizationpriority: medium
+ms.collection: 
+- m365-security
+- tier2
 audience: ITPro
 search.appverid: met150
-ms.date: 11/14/2023
+ms.date: 11/15/2023
+search.appverid: MET150
+
 ---
 
 # Microsoft Defender for Endpoint plug-in for Windows Subsystem for Linux (WSL)
