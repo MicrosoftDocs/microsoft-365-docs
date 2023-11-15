@@ -434,17 +434,6 @@
   - name: Remove a former employee and secure data
     href: /admin/add-users/remove-former-employee?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
 
-- name: Contoso case studies
-  items:
-  - name: Microsoft 365 solutions for the Contoso Corporation
-    href: contoso-case-study-solutions.md
-  - name: COVID-19 response and support for hybrid work
-    href: contoso-remote-onsite-work.md
-  - name: Teams voice migration
-    href: /MicrosoftTeams/voice-case-study-overview
-  - name: Contoso compliance case study
-    href: ../compliance/communication-compliance-case-study.md
-
 - name: Industry-specific guidance
   items: 
     - name: Microsoft 365 for frontline workers

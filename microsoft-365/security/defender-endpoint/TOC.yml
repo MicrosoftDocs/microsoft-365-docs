@@ -216,6 +216,8 @@
         items:
         - name: Deploy Defender for Endpoint on Linux
           items:
+          - name: Defender for Endpoint plug-in for WSL
+            href: mde-plugin-wsl.md
           - name: Puppet based deployment
             href: linux-install-with-puppet.md
           - name: Ansible based deployment
