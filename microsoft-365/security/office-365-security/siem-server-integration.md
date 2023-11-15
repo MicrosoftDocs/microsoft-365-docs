@@ -57,7 +57,7 @@ A SIEM server can receive data from a wide variety of Microsoft 365 services and
 |[Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security)|Log integration|[SIEM integration with Microsoft Defender for Cloud Apps](/cloud-app-security/siem)|
 
 > [!TIP]
-> Take a look at [Microsoft Sentinel](/azure/sentinel/overview). Microsoft Sentinel comes with connectors for Microsoft solutions. These connectors are available "out of the box" and provide for real-time integration. You can use Microsoft Sentinel with your Microsoft 365 Defender solutions and Microsoft 365 services, including Office 365, Microsoft Entra ID, Microsoft Defender for Identity, Microsoft Defender for Cloud Apps, and more.
+> Take a look at [Microsoft Sentinel](/azure/sentinel/overview). Microsoft Sentinel comes with connectors for Microsoft solutions. These connectors are available "out of the box" and provide for real-time integration. You can use Microsoft Sentinel with your Microsoft Defender XDR solutions and Microsoft 365 services, including Office 365, Microsoft Entra ID, Microsoft Defender for Identity, Microsoft Defender for Cloud Apps, and more.
 
 ### Audit logging must be turned on
 
@@ -68,11 +68,11 @@ Make sure that audit logging is turned on before you configure SIEM server integ
 
 ## Integration steps if your SIEM is Microsoft Sentinel
 
-Be sure that your current plan allows for Microsoft Sentinel integration (for example, you have Microsoft Defender for Office 365 Plan 2 or higher), and that your account in Microsoft Defender for Office 365 or Microsoft 365 Defender is a *Security Administrator*. Finally, be sure that you have *Write permissions in Microsoft Sentinel*.
+Be sure that your current plan allows for Microsoft Sentinel integration (for example, you have Microsoft Defender for Office 365 Plan 2 or higher), and that your account in Microsoft Defender for Office 365 or Microsoft Defender XDR is a *Security Administrator*. Finally, be sure that you have *Write permissions in Microsoft Sentinel*.
 
 1. Navigate to Microsoft Sentinel.
 1. On the navigation to the left of the screen **Configuration** > **Data connectors**.
-1. **Search for** Microsoft 365 Defender and select the **Microsoft 365 Defender (preview) connector**.
+1. **Search for** Microsoft Defender XDR and select the **Microsoft 365 Defender (preview) connector**.
 1. On the right of your screen select **Open Connector Page**.
 1. Under **Configuration** > select **Connect incidents & alerts**
     1. Turn off all Microsoft incident creation rules for the products currently selected.

@@ -24,7 +24,7 @@ ms.date: 09/21/2023
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
 [!Include[Prerelease information](../../includes/prerelease.md)]
@@ -187,7 +187,7 @@ Replace the onboarding package file in the current deployment method.
 You can use the following methods to check that you have successfully connected Windows devices:
 
 - [Client analyzer](#use-defender-for-endpoint-client-analyzer-windows-to-validate-connectivity-after-onboarding-for-migrated-endpoints)
-- [Tracking with advanced hunting in Microsoft 365 Defender](#tracking-with-advanced-hunting-in-microsoft-365-defender)
+- [Tracking with advanced hunting in Microsoft Defender XDR](#tracking-with-advanced-hunting-in-microsoft-365-defender)
 - [Track locally using Event Viewer (for Windows)](#tracking-locally-on-a-device-through-windows-event-viewer)
 - [Run tests to confirm connectivity with Defender for Endpoint services](#)
 - Checking the registry editor
@@ -196,7 +196,7 @@ You can use the following methods to check that you have successfully connected 
 For macOS and Linux, you can use the following methods:
 
 - MDATP connectivity tests
-- Tracking with advanced hunting in Microsoft 365 Defender
+- Tracking with advanced hunting in Microsoft Defender XDR
 - Run tests to confirm connectivity with Defender for Endpoint services
 
 ### Use Defender for Endpoint Client Analyzer (Windows) to validate connectivity after onboarding for migrated endpoints
@@ -209,9 +209,11 @@ You can follow the same instructions as in [Verify client connectivity to Micros
 
 Ensure connectivity is established with the appropriate URLs. 
 
-### Tracking with advanced hunting in Microsoft 365 Defender
+<a name='tracking-with-advanced-hunting-in-microsoft-365-defender'></a>
 
-You can use advanced hunting in Microsoft 365 Defender portal to view the connectivity type status. 
+### Tracking with advanced hunting in Microsoft Defender XDR
+
+You can use advanced hunting in Microsoft Defender portal to view the connectivity type status. 
 
 This information is found in the DeviceInfo table under the “ConnectivityType” column:
 - Column Name: ConnectivityType
@@ -318,7 +320,7 @@ After the command runs, the Command Prompt window closes automatically. If succe
 For macOS and Linux, you can use the following methods:
 
 - MDATP connectivity tests
-- Tracking with advanced hunting in Microsoft 365 Defender
+- Tracking with advanced hunting in Microsoft Defender XDR
 - Run tests to confirm connectivity with Defender for Endpoint services
 
 ### MDATP connectivity test (macOS and Linux)
@@ -331,7 +333,9 @@ Run mdatp connectivity test. Ensure the streamlined URL pattern is present. You 
 
 For example: `https:mdav.us.endpoint.security.microsoft/com/storage`
 
-### Tracking with advanced hunting in Microsoft 365 Defender
+<a name='tracking-with-advanced-hunting-in-microsoft-365-defender'></a>
+
+### Tracking with advanced hunting in Microsoft Defender XDR
 
 Follow the same instructions as for Windows.
 

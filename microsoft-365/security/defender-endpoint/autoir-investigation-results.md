@@ -85,7 +85,7 @@ In the Investigation details view, you can see information on the **Investigatio
 |Tab|Description|
 |---|---|
 |**Investigation graph**|Provides a visual representation of the investigation. Depicts entities and lists threats found, along with alerts and whether any actions are awaiting approval. <p> You can select an item on the graph to view more details. For example, selecting the **Evidence** icon takes you to the **Evidence** tab, where you can see detected entities and their verdicts.|
-|**Alerts**|Lists alerts associated with the investigation. Alerts can come from threat protection features on a user's device, in Office apps, Defender for Cloud Apps, and other Microsoft 365 Defender features.|
+|**Alerts**|Lists alerts associated with the investigation. Alerts can come from threat protection features on a user's device, in Office apps, Defender for Cloud Apps, and other Microsoft Defender XDR features.|
 |**Devices**|Lists devices included in the investigation along with their remediation level. (Remediation levels correspond to the [automation level for device groups](automation-levels.md).)|
 |**Mailboxes**|Lists mailboxes that are impacted by detected threats.|
 |**Users**|Lists user accounts that are impacted by detected threats.|
@@ -107,7 +107,7 @@ The following table lists investigation states and what they indicate.
 |Failed     | At least one investigation analyzer ran into a problem where it couldn't complete the investigation. If an investigation fails after remediation actions were approved, the remediation actions might still have succeeded.|
 |Successfully remediated| An automated investigation completed, and all remediation actions were completed or approved.|
 
-To provide more context about how investigation states show up, the following table lists alerts and their corresponding automated investigation state. This table is included as an example of what a security operations team might see in the Microsoft 365 Defender portal.
+To provide more context about how investigation states show up, the following table lists alerts and their corresponding automated investigation state. This table is included as an example of what a security operations team might see in the Microsoft Defender portal.
 
 |Alert name | Severity | Investigation state | Status | Category |
 |-----------|----------|---------------------|--------|----------|

@@ -1,6 +1,6 @@
 ---
 title: What's new in Microsoft Secure Score
-description: Describes what new changes have happened to Microsoft Secure Score in the Microsoft 365 Defender portal.
+description: Describes what new changes have happened to Microsoft Secure Score in the Microsoft Defender portal.
 ms.localizationpriority: medium
 f1.keywords:
   - NOCSH
@@ -28,7 +28,7 @@ To make Microsoft Secure Score a better representative of your security posture,
 
 The more improvement actions you take, the higher your Secure Score will be. For more information, see [Microsoft Secure Score](microsoft-secure-score.md).
 
-Microsoft Secure Score can be found at <https://security.microsoft.com/securescore> in the [Microsoft 365 Defender portal](microsoft-365-defender-portal.md).
+Microsoft Secure Score can be found at <https://security.microsoft.com/securescore> in the [Microsoft Defender portal](microsoft-365-defender-portal.md).
 
 ## August 2023
 
@@ -74,11 +74,13 @@ We've now integrated Microsoft Secure Score into Microsoft 365 Lighthouse. This 
 > [!NOTE]
 > The integration with Microsoft Lighthouse 365 is available to Microsoft partners who use the Cloud Solution Provider (CSP) program to manage customer tenants.
 
-### Microsoft Secure Score permissions integration with Microsoft 365 Defender Unified role-based access control (RBAC) is now in Public Preview
+<a name='microsoft-secure-score-permissions-integration-with-microsoft-365-defender-unified-role-based-access-control-rbac-is-now-in-public-preview'></a>
 
-Previously, only Microsoft Entra global roles (such as Global Administrators) could access Microsoft Secure Score. Now, you'll be able to control access and grant granular permissions for the Microsoft Secure Score experience as part of the Microsoft 365 Defender Unified RBAC model.  
+### Microsoft Secure Score permissions integration with Microsoft Defender XDR Unified role-based access control (RBAC) is now in Public Preview
 
-You can add the new permission and choose the data sources the user has access to by selecting the **Security posture** permissions group when creating the role. For more information, see [Create custom roles with Microsoft 365 Defender Unified RBAC](./create-custom-rbac-roles.md). Users will see Secure Score data for the data sources they have permissions to.
+Previously, only Microsoft Entra global roles (such as Global Administrators) could access Microsoft Secure Score. Now, you'll be able to control access and grant granular permissions for the Microsoft Secure Score experience as part of the Microsoft Defender XDR Unified RBAC model.  
+
+You can add the new permission and choose the data sources the user has access to by selecting the **Security posture** permissions group when creating the role. For more information, see [Create custom roles with Microsoft Defender XDR Unified RBAC](./create-custom-rbac-roles.md). Users will see Secure Score data for the data sources they have permissions to.
 
 A new data source **Secure Score – Additional data source** is also available.  Users with permissions to this data source, will have access to additional data within the Secure score dashboard. For more information on additional data sources, see [Products included in Secure Score](./microsoft-secure-score.md#products-included-in-secure-score).
 
