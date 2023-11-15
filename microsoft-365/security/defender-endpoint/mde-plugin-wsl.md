@@ -272,11 +272,11 @@ DeviceProcessEvents
 
    ```
 
-```powershell
+   ```powershell
 
    .\healthcheck.exe --supportBundle 
 
-```
+   ```
 
    The support bundle can be found in the path provided by the previous command. Send the generated zip file to  [mdeforwsl-preview@microsoft.com](mailto:mdeforwsl-preview@microsoft.com).
 
