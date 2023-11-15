@@ -1,4 +1,4 @@
-﻿---
+---
 title: Onboarding devices using streamlined connectivity for Microsoft Defender for Endpoint 
 description: Learn how to use a  streamlined domain or static IP ranges during onboarding when connecting devices to Microsoft Defender for Endpoint         
 author: mjcaparas
@@ -25,7 +25,7 @@ ms.date: 09/19/2023
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
 [!Include[Prerelease information](../../includes/prerelease.md)]
@@ -221,7 +221,7 @@ Once you configure your network to communicate with the full list of services, y
 Before proceeding, confirm devices meet the [prerequisites](#prerequisites) and have updated the sensor and Microsoft Defender Antivirus versions. 
 
 
-To get the new package, in Microsoft 365 Defender, select **Settings > Endpoints > Device management> Onboarding**.
+To get the new package, in Microsoft Defender XDR, select **Settings > Endpoints > Device management> Onboarding**.
 
 
 Select the applicable operating system and choose "Streamlined (preview)" from the Connectivity type dropdown menu.
@@ -241,7 +241,7 @@ For migrating devices already onboarded to Defender for Endpoint, see [Migrating
 :::image type="content" source="images/migrate-devices-streamlined.png" alt-text="Screenshot of onboarding page with streamlined connectivity":::
 
 
-When you're ready to set the default onboarding package to streamlined, you can turn on the following Advanced Feature setting in the Microsoft 365 Defender portal (**Settings > Endpoints > Advanced Features**).
+When you're ready to set the default onboarding package to streamlined, you can turn on the following Advanced Feature setting in the Microsoft Defender portal (**Settings > Endpoints > Advanced Features**).
 
 > [!NOTE]
 > Before moving forward with this option, validate that your environment is ready and all devices meet prerequisites.
@@ -250,7 +250,3 @@ When you're ready to set the default onboarding package to streamlined, you can 
 :::image type="content" source="images/advanced-setting-streamlined-connectivity.png" alt-text="Screenshot of advanced settings page with streamlined connectivity option":::
 
 This setting sets the default onboarding package to 'streamlined' for applicable operating systems.  You can still use the standard onboarding package within the onboarding page but you must specifically select it in the drop-down.  
-
-
-
-
