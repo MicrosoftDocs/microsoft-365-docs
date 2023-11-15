@@ -18,7 +18,7 @@ ms.topic: how-to
 search.appverid:
   - MOE150
   - met150
-ms.date: 10/27/2023
+ms.date: 11/14/2023
 ---
 
 # Investigate data loss prevention alerts with Microsoft 365 Defender
@@ -77,7 +77,10 @@ It's best practice to only grant minimal permissions to alerts in the Microsoft 
 
 1. Go to the Microsoft 365 Defender portal, and select **Incidents** in the left hand navigation menu to open the incidents page.
 
-1. Select **Filters** on the top right, and choose **Service Source : Data Loss Prevention** to view all incidents with DLP alerts.
+2. Select **Filters** on the top right, and choose **Service Source : Data Loss Prevention** to view all incidents with DLP alerts. Here's a few examples of the subfilters that are available in preview:
+    1. by user and device names    
+    1. (in preview) In the **Entities** filter, you can search on file names, user, device names, and file paths.
+    1. (in preview) In the **Incidents** queue > **Alert policies** > Alert policy title. You can search on the DLP policy name.
 
 1. Search for the DLP policy name of the alerts and incidents you're interested in.
 
