@@ -13,7 +13,6 @@ search.appverid:
 ms.collection:
     - m365initiative-syntex
 ms.localizationpriority:  medium
-ROBOTS: NOINDEX, NOFOLLOW
 description: Learn about the pricing model for storage consumption and site reactivation in Microsoft 365 Archive.
 ---
 

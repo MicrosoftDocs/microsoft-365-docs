@@ -13,7 +13,6 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
 description: Learn about Microsoft Syntex eSignature and how to send electronic signature requests to people inside and outside of your organization. 
 ---
 
