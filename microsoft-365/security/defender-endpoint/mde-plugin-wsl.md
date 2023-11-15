@@ -78,7 +78,7 @@ After you have ensured that WSL is running and fully up to date, follow these st
 
 2. Open a command prompt/terminal and run `wsl`.
 
-   You can (deploy the package using Microsoft Intune)[/mem/intune/apps/lob-apps-windows]
+   You can [deploy the package using Microsoft Intune](/mem/intune/apps/lob-apps-windows).
 
 > [!NOTE]
 > If WslService is running, it stops during the installation process. You do not need to onboard the subsystem separately; instead, the plug-in automatically onboards to the tenant the Windows host is onboarded to.
