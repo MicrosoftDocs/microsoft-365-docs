@@ -13,7 +13,6 @@ search.appverid:
 ms.collection:
     - m365initiative-syntex
 ms.localizationpriority:  medium
-ROBOTS: NOINDEX, NOFOLLOW
 description: Learn how to archive, reactivate, and manage sites in Microsoft 365 Archive.
 ---
 
