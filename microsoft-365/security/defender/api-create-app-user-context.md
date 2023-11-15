@@ -83,7 +83,7 @@ This article explains how to:
    > [!TIP]
    > *Microsoft Threat Protection* is a former name for Microsoft Defender XDR, and will not appear in the original list. You need to start writing its name in the text box to see it appear.
 
-   :::image type="content" source="../../media/apis-in-my-org-tab.PNG" alt-text="Your organization's APIs pane in the Microsoft 365 Defender portal" lightbox="../../media/apis-in-my-org-tab.PNG":::
+   :::image type="content" source="../../media/apis-in-my-org-tab.PNG" alt-text="Your organization's APIs pane in the Microsoft Defender portal" lightbox="../../media/apis-in-my-org-tab.PNG":::
 
    - Choose **Delegated permissions**. Choose the relevant permissions for your scenario (for example **Incident.Read**), and then select **Add permissions**.
 

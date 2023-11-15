@@ -95,7 +95,7 @@ Here's an example of query-based hunting on top of email and endpoint raw data.
 
 Microsoft Defender XDR cross-product features include:
 
-- **Cross-product single pane of glass in the Microsoft 365 Defender portal** - A central view for all information on detections, impacted assets, automated actions taken, and related evidence in a single queue and a single pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. 
+- **Cross-product single pane of glass in the Microsoft Defender portal** - A central view for all information on detections, impacted assets, automated actions taken, and related evidence in a single queue and a single pane in <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>. 
 - **Combined incidents queue** - To help security professionals focus on what is critical by ensuring the full attack scope, impacted assets and automated remediation actions are grouped together and surfaced in a timely manner. 
 - **Automatic response to threats** - Critical threat information is shared in real time between the Microsoft Defender XDR products to help stop the progression of an attack. 
 

@@ -120,7 +120,7 @@ Whenever an attack surface reduction rule is triggered, a notification is displa
 
 Also, when certain attack surface reduction rules are triggered, alerts are generated.
 
-Notifications and any alerts that are generated can be viewed in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
+Notifications and any alerts that are generated can be viewed in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>.
 
 For specific details about notification and alert functionality, see: [Per rule alert and notification details](attack-surface-reduction-rules-reference.md#per-asr-rule-alert-and-notification-details), in the article **Attack surface reduction rules reference**.
 

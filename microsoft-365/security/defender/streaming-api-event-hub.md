@@ -49,7 +49,7 @@ Prior to configuring Microsoft Defender XDR to stream data to Event Hubs, ensure
 
 ## Enable raw data streaming
 
-1. Log on to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> as a ***Global Administrator*** or ***Security Administrator***.
+1. Log on to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a> as a ***Global Administrator*** or ***Security Administrator***.
 
 2. Go to the [Streaming API settings page](https://sip.security.microsoft.com/settings/mtp_settings/raw_data_export).
 

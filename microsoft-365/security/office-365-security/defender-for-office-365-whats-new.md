@@ -110,7 +110,7 @@ For more information on what's new with other Microsoft Defender security produc
 
 - **Automatic redirection from Office action center to unified action center:** The action center in the Email & Collaboration section **Email & Collaboration** > **Review** > **Action center** (https://security.microsoft.com/threatincidents) is automatically redirected to **Actions & Submissions** > **Action center** > **History** (https://security.microsoft.com/action-center/history).
 
-- **Automatic redirection from Office 365 Security & Compliance Center to Microsoft 365 Defender portal:** Automatic redirection begins for users accessing the security solutions in Office 365 Security & Compliance center (protection.office.com) to the appropriate solutions in Microsoft Defender portal (security.microsoft.com). This change is for all security workflows like (for example, Alerts, Threat Management, and Reports).
+- **Automatic redirection from Office 365 Security & Compliance Center to Microsoft Defender portal:** Automatic redirection begins for users accessing the security solutions in Office 365 Security & Compliance center (protection.office.com) to the appropriate solutions in Microsoft Defender portal (security.microsoft.com). This change is for all security workflows like (for example, Alerts, Threat Management, and Reports).
 
   - Redirection URLs:
     - GCC Environment:

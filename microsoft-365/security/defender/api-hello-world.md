@@ -62,7 +62,7 @@ It should take 5 to 10 minutes to complete this project. This time estimate incl
 
    - Choose **Application permissions** > **Incident.Read.All** and select **Add permissions**.
 
-     :::image type="content" source="../../media/request-api-permissions.PNG" alt-text="An application's permissions pane in the Microsoft 365 Defender portal" lightbox="../../media/request-api-permissions.PNG":::
+     :::image type="content" source="../../media/request-api-permissions.PNG" alt-text="An application's permissions pane in the Microsoft Defender portal" lightbox="../../media/request-api-permissions.PNG":::
 
 5. Select **Grant admin consent**. Every time you add a permission, you must select **Grant admin consent** for it to take effect.
 

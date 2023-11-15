@@ -41,7 +41,7 @@ The investigation page has recently been updated to include information across y
 
 - Any investigation page in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077143" target="_blank">Microsoft Purview compliance portal</a>
 - Any investigation page in the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com))
-- Any incident or Action center experience in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>
+- Any incident or Action center experience in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>
 
 ## Open the investigation details view
 
@@ -57,7 +57,7 @@ The improved [Action center](m365d-action-center.md) ([https://security.microsof
 > [!TIP]
 > You must have [certain permissions](m365d-action-center.md#required-permissions-for-action-center-tasks) to approve, reject, or undo actions.
 
-1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in. 
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a> and sign in. 
 
 2. In the navigation pane, choose **Action center**. 
 
@@ -73,7 +73,7 @@ The improved [Action center](m365d-action-center.md) ([https://security.microsof
 
 Use an incident details page to view detailed information about an incident, including alerts that were triggered information about any affected devices, user accounts, or mailboxes.
 
-1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in. 
+1. Go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a> and sign in. 
 
 2. In the navigation pane, choose **Incidents & alerts** > **Incidents**. 
 

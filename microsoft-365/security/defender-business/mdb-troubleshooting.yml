@@ -87,7 +87,7 @@ sections:
 
           The error message means that a configuration channel must be established between Defender for Business and Microsoft Intune. If you see the error message, it means that something has gone wrong with integration. To resolve the issue, use the following three procedures:
 
-          **Procedure 1: Turn on the Microsoft Intune connection in the Microsoft 365 Defender portal** 
+          **Procedure 1: Turn on the Microsoft Intune connection in the Microsoft Defender portal** 
 
           1. Go to the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
@@ -116,7 +116,7 @@ sections:
       - question: Something went wrong with onboarding devices in the Microsoft Defender portal
         answer: |
 
-          When you're onboarding devices in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), if something went wrong, an error message is displayed. This issue can occur if you're onboarding devices using a downloadable onboarding package for Microsoft Intune, Group Policy, System Center Configuration Manager, or Mobile Device Management capabilities with Defender for Business. 
+          When you're onboarding devices in the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), if something went wrong, an error message is displayed. This issue can occur if you're onboarding devices using a downloadable onboarding package for Microsoft Intune, Group Policy, System Center Configuration Manager, or Mobile Device Management capabilities with Defender for Business. 
           
           Defender for Business uses a capability called *Security Management for Microsoft Defender for Endpoint*. If onboarding in Defender for Business fails, the cause most likely has to do with Security Management for Defender for Endpoint. To resolve the issue, see the following articles:
           
