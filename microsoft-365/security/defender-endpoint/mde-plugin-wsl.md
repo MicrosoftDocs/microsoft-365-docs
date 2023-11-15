@@ -81,7 +81,7 @@ After you have ensured that WSL is running and fully up to date, follow these st
    You can [deploy the package using Microsoft Intune](/mem/intune/apps/lob-apps-windows).
 
 > [!NOTE]
-> If WslService is running, it stops during the installation process. You do not need to onboard the subsystem separately; instead, the plug-in automatically onboards to the tenant the Windows host is onboarded to.
+> If `WslService` is running, it stops during the installation process. You do not need to onboard the subsystem separately; instead, the plug-in automatically onboards to the tenant the Windows host is onboarded to.
 
 ## Installation validation checklist
 
@@ -104,7 +104,7 @@ After you have ensured that WSL is running and fully up to date, follow these st
 
 This section describes how to configure proxy connectivity for the Defender for Endpoint plug-in. If your enterprise uses a proxy to provide connectivity to Defender for Endpoint running on the Windows host, continue reading to determine whether you need to configure it for the plug-in.
 
-Reuse the Microsoft Defender for Endpoint static proxy setting (`TelemetryProxyServer`).
+Reuse the Defender for Endpoint static proxy setting (`TelemetryProxyServer`).
 
 If you want to use the host [static proxy](configure-proxy-internet.md) configuration for MDE for the WSL plug-in, nothing more is required. This configuration is adopted by the plug-in automatically.
 
@@ -129,7 +129,7 @@ If you want to set up a different proxy for Defender running in WSL (other than 
 
 ## Connectivity test for Defender running in WSL
 
-These instructions help you verify if MDE in WSL has connectivity to the internet. 
+These instructions help you verify if Defender in Endpoint in WSL has connectivity to the internet. 
 
 To run the connectivity test, please follow the below instructions:
 
