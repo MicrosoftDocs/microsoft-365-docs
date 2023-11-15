@@ -28,7 +28,7 @@ As your organization’s Microsoft 365 admin, you can turn off Copilot’s abili
 
 ## Before you begin
 
-- You must assign a Microsoft 365 Copilot license to your selected users before they can use Copilot. For more information, see Get started with Copilot in Microsoft 365.
+- You must assign a Microsoft 365 Copilot license to your selected users before they can use Copilot. For more information, see [Get started with Copilot in Microsoft 365](microsoft-365-copilot-setup.md).
 
 - You must be a global admin or search admin to complete the task in this article. For more information, see [About admin roles in the Microsoft 365 admin center](/microsoft-365/admin/add-users/about-admin-roles).
 

@@ -1,5 +1,5 @@
 ---
-title: Threat analytics in Microsoft 365 Defender
+title: Threat analytics in Microsoft Defender XDR
 ms.reviewer: 
 description: Learn about emerging threats and attack techniques and how to stop them. Assess their impact to your organization and evaluate your organizational resilience.
 keywords: threat analytics, risk evaluation, Microsoft 365 Defender, M365D, mitigation status, secure configuration, Microsoft Defender for Office 365, Microsoft Defender for Office 365 threat analytics, MDO threat analytics, integrated MDE and MDO threat analytics data, threat analytics data integration, integrated Microsoft 365 Defender threat analytics   
@@ -25,13 +25,13 @@ search.appverid: met150
 ms.date: 09/18/2023
 ---
 
-# Threat analytics in Microsoft 365 Defender
+# Threat analytics in Microsoft Defender XDR
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
 
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
@@ -192,16 +192,16 @@ _Exposure & mitigations section of a threat analytics report_
 
 ## Set up email notifications for report updates
 
-You can set up email notifications that will send you updates on threat analytics reports. To create email notifications, follow the steps in [get email notifications for Threat analytics updates in Microsoft 365 Defender](m365d-threat-analytics-notifications.md).
+You can set up email notifications that will send you updates on threat analytics reports. To create email notifications, follow the steps in [get email notifications for Threat analytics updates in Microsoft Defender XDR](m365d-threat-analytics-notifications.md).
 
 ## Additional report details and limitations
 
 > [!NOTE]
 > As part of the unified security experience, threat analytics is now available not just for Microsoft Defender for Endpoint, but also for Microsoft Defender for Office 365 license holders.
 >
-> If you are not using the Microsoft 365 security portal (Microsoft 365 Defender), you can also see the report details (without the Microsoft Defender for Office data) in the Microsoft Defender Security Center portal (Microsoft Defender for Endpoint).
+> If you are not using the Microsoft 365 security portal (Microsoft Defender XDR), you can also see the report details (without the Microsoft Defender for Office data) in the Microsoft Defender Security Center portal (Microsoft Defender for Endpoint).
 
-To access threat analytics reports, you need certain roles and permissions. See [Custom roles in role-based access control for Microsoft 365 Defender](custom-roles.md) for details.
+To access threat analytics reports, you need certain roles and permissions. See [Custom roles in role-based access control for Microsoft Defender XDR](custom-roles.md) for details.
 
 - To view alerts, incidents, or impacted assets data, you need to have permissions to Microsoft Defender for Office or Microsoft Defender for Endpoint alerts data, or both.
 - To view prevented email attempts, you need to have permissions to Microsoft Defender for Office hunting data.

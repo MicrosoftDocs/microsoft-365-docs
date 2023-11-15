@@ -32,7 +32,7 @@
   - name: Defender for Endpoint
     tocHref: /microsoft-365/security/defender-endpoint/
     topicHref: /microsoft-365/security/defender-endpoint/
-  - name: Microsoft 365 Defender
+  - name: Microsoft Defender XDR
     tocHref: /microsoft-365/security/defender/
     topicHref: /microsoft-365/security/defender/
   - name: Microsoft Defender for Office 365

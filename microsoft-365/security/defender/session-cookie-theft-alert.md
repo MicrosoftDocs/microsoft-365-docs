@@ -31,9 +31,9 @@ ms.date: 10/18/2022
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
-This article contains information about alert grading for Session Cookie theft alerts in Microsoft 365 Defender:
+This article contains information about alert grading for Session Cookie theft alerts in Microsoft Defender XDR:
 
 - **Stolen session cookie was used**
 - **Authentication request from AiTM-related phishing page**

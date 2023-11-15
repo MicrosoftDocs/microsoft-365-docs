@@ -648,7 +648,7 @@
         items:
         - name: Protect security settings with tamper protection
           href: prevent-changes-to-security-settings-with-tamper-protection.md
-        - name: Manage tamper protection using Microsoft 365 Defender
+        - name: Manage tamper protection using Microsoft Defender XDR
           href: manage-tamper-protection-microsoft-365-defender.md
         - name: Manage tamper protection with Intune
           href: manage-tamper-protection-intune.md
@@ -858,7 +858,7 @@
 
       - name: Alerts queue
         items:
-        - name: Alerts queue in Microsoft 365 Defender
+        - name: Alerts queue in Microsoft Defender XDR
           href: alerts-queue-endpoint-detection-response.md
         - name: View and organize the Alerts queue
           href: alerts-queue.md
@@ -1353,7 +1353,7 @@
 
       - name: SIEM integration
         items:
-        - name: Migrate from the MDE SIEM API to the Microsoft 365 Defender alerts API
+        - name: Migrate from the MDE SIEM API to the Microsoft Defender XDR alerts API
           href: configure-siem.md
         - name: Troubleshoot SIEM tool integration issues
           href: troubleshoot-siem.md
@@ -1524,9 +1524,9 @@
       - name: Migrate to Attack surface reduction rules
         href: migrating-asr-rules.md
 
-  - name: Microsoft 365 Defender docs
+  - name: Microsoft Defender XDR docs
     items:
-    - name: Microsoft 365 Defender
+    - name: Microsoft Defender XDR
       href: ../defender/index.yml
     - name: Defender for Office 365
       href: ../office-365-security/index.yml
@@ -1576,12 +1576,3 @@
 
 
         
-
-
-
-
-
-
-
-
-
