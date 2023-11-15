@@ -37,7 +37,7 @@ You must be signed in to SharePoint Online by using your work email address.
 
 - Syntex eSignature is available for only PDF documents at this time.
 
-- Syntex eSignature will support third-party electronic signature providers in 2024. Starting with Adobe Acrobat Sign and DocuSign, you'll be able to request signatures on documents in SharePoint.
+- Support for third-party electronic signature providers will be provided in 2024. Starting with Adobe Acrobat Sign and DocuSign, you'll be able to request signatures on documents in SharePoint.
 
 - You'll be able to track your Syntex eSignature requests using the Approval app in Microsoft Teams in 2024.
 
