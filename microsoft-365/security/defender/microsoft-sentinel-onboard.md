@@ -78,17 +78,13 @@ To connect a workspace that has Microsoft Sentinel enabled to Defender XDR, comp
 1. Choose the workspace you want to connect and select **Next**.
 1. Read and understand the product changes associated with connecting your workspace. These changes include:
 
-   - Log tables, queries, and functions in the Microsoft Sentinel workspace will also be available in advanced hunting within the Defender portal.
-   - Only Microsoft Sentinel alerts that are tied to incidents are ingested into the `AlertInfo` table in Microsoft Defender XDR. All other alerts are added to the `BehaviorInfo` table.
+   - Log tables, queries, and functions in the Microsoft Sentinel workspace are also available in advanced hunting within Defender XDR.
+   - Only Microsoft Sentinel alerts that are tied to incidents are ingested into the `AlertInfo` table in Defender XDR. All other alerts are added to the `BehaviorInfo` table.
    - The Microsoft Sentinel Contributor role is assigned to the Microsoft Threat Protection and WindowsDefenderATP apps within the subscription.
-   - All alerts related to Defender XDR are streamed directly from the main Defender XDR data connector to ensure consistency. Standalone connectors for the following products are disabled in your Sentinel workspace as they'll no longer be required.
-     - Microsoft Defender for Endpoint
-     - Microsoft Defender for Identity
-     - Microsoft Defender for Office 365
-     - Microsoft Defender for Cloud Apps
-     - Microsoft Entra ID Protection
-     - Microsoft Defender for Cloud
-   - Any previously enabled Microsoft incident creation rules, which are used to promote Microsoft Defender XDR alerts into incidents, are automatically disabled to avoid duplicate incidents. This change only impacts Microsoft incident creation rules used for Microsoft alerts and doesn't impact other analytic rules.
+   - Active [Microsoft security incident creation rules](/azure/sentinel/create-incidents-from-alerts#using-microsoft-security-incident-creation-analytics-rules) are deactivated to avoid duplicate incidents. This change only applies to incident creation rules for Microsoft alerts and not to other analytics rules.
+   - All alerts related to Defender XDR products are streamed directly from the main Defender XDR data connector to ensure consistency. Make sure you have incidents and alerts from this connector turned on in the workspace.
+
+   Detailed changes and limitations are in the documentation shared with you as part of this private preview.
 
 1. Select **Connect**.
 1. You might need to wait up to 6 hours until all experiences are fully connected.
