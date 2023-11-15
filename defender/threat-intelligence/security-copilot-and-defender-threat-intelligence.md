@@ -28,11 +28,11 @@ ms.date: 11/15/2023
 > [!IMPORTANT]
 > The information in this article applies to the Microsoft Security Copilot Early Access Program, which is an invite-only paid preview program. Some information in this article relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided in this article.
 
-Security Copilot is a cloud-based AI platform that provides natural language copilot experience. It can help support security professionals in different scenarios, like incident response, threat hunting, and intelligence gathering. For more information about what it can do, go to [What is Microsoft Security Copilot?](/security-copilot/microsoft-security-copilot/).
+Microsoft Security Copilot is a cloud-based AI platform that provides natural language copilot experience. It can help support security professionals in different scenarios, like incident response, threat hunting, and intelligence gathering. For more information about what it can do, go to [What is Microsoft Security Copilot?](/security-copilot/microsoft-security-copilot).
 
 **Security Copilot integrates with Microsoft Defender Threat Intelligence**
 
-Security Copilot delivers from Microsoft Defender Threat Intelligence (Defender TI) information about threat actors, indicators of compromise (IOCs), and tools, and contextual threat intelligence. You can use the prompts and promptbooks to investigate incidents, enrich your hunting flows with threat intelligence information, or gain more knowledge about the threats related to your organization or the global threat landscape.
+Security Copilot delivers from Microsoft Defender Threat Intelligence (Defender TI) information about activity groups, indicators of compromise (IOCs), and tools, and contextual threat intelligence. You can use the prompts and promptbooks to investigate incidents, enrich your hunting flows with threat intelligence information, or gain more knowledge about the threats related to your organization or the global threat landscape.
 
 This article introduces you to Security Copilot and includes sample prompts that can help you when using Defender TI.
 
@@ -67,7 +67,7 @@ Security Copilot has built-in system features that can get data from the differe
 To view the list of built-in system capabilities for Defender TI:
 
 1.	In the prompt, enter **/**.
-2.	Select **See all system capabilities**. The capabilities for Defender TI are in the *ThreatIntelligence.DTI* section.
+2.	Select **See all system capabilities**. The *ThreatIntelligence.DTI* section lists all the available capabilities for Defender TI.
 
 You can also see in the promptbooks the following:
 - **Vulnerability impact assessment** - Generates a report summarizing the intelligence for a known vulnerability, including steps how to address it.
@@ -78,58 +78,58 @@ You can also see in the promptbooks the following:
 You can use many prompts to get information from Defender TI. This section lists some ideas and examples.
 
 ### General information about threat intelligence trends
-Get information on threat intelligence from threat articles and threat actor groups 
+Get information on threat intelligence from threat articles and activity groups. 
 
 **Sample prompts** 
 - Summarize the recent threat intelligence.
 - Show me the latest threat articles. 
 - Get threat articles associated with the finance industry.
 
-### IP addres and host contextual information in relation to threat intelligence
+### IP address and host contextual information in relation to threat intelligence
 
-Get information on Datasets associated with Ips and Hosts , information such as ports , Reputation score, Components , Certificates, cookies , services,  Host pairs etc.
+Get information on datasets associated with IP addresses and hosts, such as ports, reputation scores, components, certificates, cookies, services, and host pairs.
 
-Sample prompts
-- Give me the reputation score of a Host. 
-- Get Open Ports for IP address.
+**Sample prompts** 
+- Give me the reputation score of a host. 
+- Get open ports for IP address.
 - Get the SSL certificates for the IP address.
 
-### Threat Actor Mapping and Infrastructure
-Get information on Threat actor groups, associated TTPs, sponsored states, industries and IOCs
+### Activity group mapping and infrastructure
+Get information on activity groups, associated techniques, tactics, and procedures (TTPs), sponsored states, industries, and IOCs
 
-Sample prompts
+**Sample prompts** 
 - Tell me more about the Silk Typhoon 
 - Share the IOCs associated with Silk Typhoon
-- Share the TTPS associated with Silk Typhoon
-- Share threat actors associated with Russia.
+- Share the TTPs associated with Silk Typhoon
+- Share activity groups associated with Russia.
 
-### CVE Vulnerability data 
-Get contextual information on CVES and associated threat intelligence.
+### CVE vulnerability data 
+Get contextual information on Common Vulnerabilities and Exposures (CVEs) and associated threat intelligence.
 
-Sample prompts
+**Sample prompts** 
 - Share the technologies that are susceptible to this vulnerability CVE-2021-44228
-- Summarize this CVE-2021-44228
+- Summarize the vulnerability CVE-2021-44228
 - Show me the latest CVEs
-- Show me threat actors associated with this CVE-2021-44228
+- Show me activity groups associated with this CVE-2021-44228
 - Show me the threat articles associated with CVE-2021-44228.
 
 ## Provide feedback
 
-Your feedback on the MDTI integration with Security Copilot helps with development. To provide feedback, in Security Copilot, use the feedback buttons at the bottom of each completed prompt. Your options are "Looks Right," "Needs Improvement" and "Inappropriate."
+Your feedback on the Defender TI integration with Security Copilot helps with development. To provide feedback, in Security Copilot, use the feedback buttons at the bottom of each completed prompt. Your options are "Looks Right," "Needs Improvement" and "Inappropriate."
 
 Your options:
 - Confirm: The results match expectations.
 - Off-target: The results don't match expectations.
 - Report: The results are harmful in some way.
 
-Whenever possible, and when the result is Off-target, write a few words explaining what can be done to improve the outcome. If you entered MDTI-specific prompts and the results aren't MDTI related, then include that information.
+Whenever possible, and when the result is Off-target, write a few words explaining what can be done to improve the outcome. If you entered prompts specific to Defender TI and the results aren't related, then include that information.
 
 ## Data processing and privacy
 
-When you interact with the Security Copilot to get MDTI data, Security Copilot pulls that data from MDTI. The prompts, the data that's retrieved, and the output shown in the prompt results is processed and stored within the Security Copilot service.
+When you interact with the Security Copilot to get Defeneder TI data, Security Copilot pulls that data from Defender TI. The prompts, the data that's retrieved, and the output shown in the prompt results is processed and stored within the Security Copilot service.
 
 For more information about data privacy in Security Copilot, go to Privacy and data security in Microsoft Security Copilot.
 
-## Related articles
-- What is Microsoft Security Copilot?
-- Privacy and data security in Microsoft Security Copilot
+## See also
+- [What is Security Copilot?](/security-copilot/microsoft-security-copilot)
+- [Privacy and data security in Security Copilot](/security-copilot/privacy-data-security)
