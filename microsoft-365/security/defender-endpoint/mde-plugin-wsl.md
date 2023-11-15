@@ -100,10 +100,10 @@ After you have ensured that WSL is running and fully up to date, follow these st
 
 5. Review the details of Defender and WSL and make sure they match or exceed the following:
 
-   - Defender Plug-in Version: `0.23.1102.4`
-   - WSL Version `2.0.7.0` or later
-   - WSL Defender Version: `101.23092.011`
-   - WSL Defender Health: `Healthy`
+   - **Defender Plug-in Version**: `0.23.1102.4`
+   - **WSL Version**: `2.0.7.0` or later
+   - **WSL Defender Version**: `101.23092.011`
+   - **WSL Defender Health**: `Healthy`
 
 ## Setting a proxy for Defender running in WSL
 
@@ -283,7 +283,7 @@ DeviceProcessEvents
 
    ```
 
-   The support bundle can be found in the path provided by the previous command. Send the generated zip file to  [mdeforwsl-preview@microsoft.com](mailto:mdeforwsl-preview@microsoft.com).
+   The support bundle can be found in the path provided by the previous command. 
 
 
    :::image type="content" source="media/mdeplugin-wsl/wsl-health-check-overview.png" alt-text="Screenshot showing status in PowerShell output.":::
