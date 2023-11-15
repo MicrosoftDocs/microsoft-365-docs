@@ -44,7 +44,7 @@ Usage cards can help determine:
 
 ## View the usage card
 
-The usage card is available in the Microsoft 365 Defender portal at https://security.microsoft.com. Go to **Reports** > **Email & collaboration reports and insights**. You’ll find Defender for Office 365 usage under the **Email & collaboration insights** section. Or, to go directly to the **Email & collaboration reports and insights** page, use https://security.microsoft.com/emailandcollabreport.
+The usage card is available in the Microsoft Defender portal at https://security.microsoft.com. Go to **Reports** > **Email & collaboration reports and insights**. You’ll find Defender for Office 365 usage under the **Email & collaboration insights** section. Or, to go directly to the **Email & collaboration reports and insights** page, use https://security.microsoft.com/emailandcollabreport.
 
 In the usage card for the global and billing admins, there’s a **Add more licenses** link at the bottom of the card, which takes you to the billing portal to purchase more licenses for your organization.
 

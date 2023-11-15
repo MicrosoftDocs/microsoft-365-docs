@@ -26,7 +26,7 @@ ms.date: 11/10/2023
 
 **Applies to:**
 
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ## Important considerations for you
 
@@ -47,4 +47,4 @@ If you don't have your own security IR team, [Microsoft Incident Response](https
 
 [General information on Defender Experts for XDR service](frequently-asked-questions.md)
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

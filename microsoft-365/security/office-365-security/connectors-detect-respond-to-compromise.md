@@ -56,7 +56,7 @@ Do **all** of the following steps to regain control of the connector. Go through
 
 #### Review recent suspicious connector traffic or related messages
 
-In [Microsoft Defender for Office 365 Plan 2](defender-for-office-365.md), open the Microsoft 365 Defender portal at <https://security.microsoft.com> and go to **Explorer**. Or, to go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorer>.
+In [Microsoft Defender for Office 365 Plan 2](defender-for-office-365.md), open the Microsoft Defender portal at <https://security.microsoft.com> and go to **Explorer**. Or, to go directly to the **Explorer** page, use <https://security.microsoft.com/threatexplorer>.
 
 1. On the **Explorer** page, verify that the **All email** tab is selected and then configure the following options:
    - Select the date/time range.

@@ -1,5 +1,5 @@
 ---
-title: Message trace in the Microsoft 365 Defender portal
+title: Message trace in the Microsoft Defender portal
 f1.keywords: 
   - NOCSH
 ms.author: chrisda
@@ -14,7 +14,7 @@ ms.localizationpriority: medium
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 ms.custom: 
   - seo-marvel-apr2020
-description: Admins can use the Message trace link in the Microsoft 365 Defender portal to find out what happened to messages.
+description: Admins can use the Message trace link in the Microsoft Defender portal to find out what happened to messages.
 ms.subservice: mdo
 ms.service: microsoft-365-security
 search.appverid: met150
@@ -25,7 +25,7 @@ appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
 ---
 
-# Message trace in the Microsoft 365 Defender portal
+# Message trace in the Microsoft Defender portal
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -40,7 +40,7 @@ You can use the **View in Explorer** option in the **Message trace search result
 - You must procure the E5/A5 license to access a feature within the Office 365 Threat Intelligence licensing. This feature only enables you to use the **View in Explorer** option.
 
 > [!TIP]
-> The **Message trace** page in the Microsoft 365 Defender portal is a really pass through to **Message trace** page in the new Exchange admin center (EAC) at <https://admin.exchange.microsoft.com/#/messagetrace>.
+> The **Message trace** page in the Microsoft Defender portal is a really pass through to **Message trace** page in the new Exchange admin center (EAC) at <https://admin.exchange.microsoft.com/#/messagetrace>.
 
 ## What do you need to know before you begin?
 
@@ -52,6 +52,6 @@ You can use the **View in Explorer** option in the **Message trace search result
 
 ## Open message trace
 
-In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Exchange message trace**.
+In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration** \> **Exchange message trace**.
 
 At this point, the **Message trace** page in the new EAC opens. To go directly to this page, use <https://admin.exchange.microsoft.com/#/messagetrace>. For more information, see [Message trace in the new Exchange admin center](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac).
