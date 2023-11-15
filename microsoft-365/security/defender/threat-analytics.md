@@ -94,7 +94,7 @@ The Microsoft Threat Intelligence team has added threat tags to each threat repo
 
 Threat tags are presented at the top of the threat analytics page. There are counters for the number of available reports under each tag.
 
-:::image type="content" source="../../media/threat-analytics/ta_dashboard_tags.png" alt-text="Screenshot of the threat analytics report tags." lightbox="../../media/threat-analytics/ta_dashboard_mtp.png":::
+:::image type="content" source="../../media/threat-analytics/ta-dashboard-tags.png" alt-text="Screenshot of the threat analytics report tags." lightbox="../../media/threat-analytics/ta_dashboard_mtp.png":::
 
 To set the types of reports you want in the list, select **Filters**, choose from the list, and select **Apply**. 
 
