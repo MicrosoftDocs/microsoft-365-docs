@@ -96,7 +96,7 @@ After you have ensured that WSL is running and fully up to date, follow these st
 
 3. Run the command: `cd C:\Program Files\Microsoft Defender for Endpoint plug-in for WSL\tools`.
 
-4. Run the command `.\health_check.exe`.
+4. Run the command `.\healthcheck.exe`.
 
 5. Review the details of Defender and WSL and make sure they match or exceed the following:
 
@@ -153,7 +153,7 @@ To run the connectivity test, please follow the below instructions:
 
    2. Run the command `wsl`.
 
-4. Wait for 5 minutes and then run `health_check.exe` (located at `C:\Program Files\Microsoft Defender for Endpoint plug-in for WSL\tools` for the results of the connectivity test).
+4. Wait for 5 minutes and then run `healthcheck.exe` (located at `C:\Program Files\Microsoft Defender for Endpoint plug-in for WSL\tools` for the results of the connectivity test).
 
    If successful, the connectivity test shows success. 
 
@@ -251,7 +251,7 @@ DeviceProcessEvents
 
    2. Wait for at least 5 minutes before rerunning the health check.
 
-3. The `health_check.exe` command might show the output, "Waiting for Telemetry. Please retry in 5 minutes."
+3. The `healthcheck.exe` command might show the output, "Waiting for Telemetry. Please retry in 5 minutes."
 
    :::image type="content" source="media/mdeplugin-wsl/wsl-health-check-telemetry.png" alt-text="Screenshot showing health telemetry status.":::
 
@@ -263,7 +263,7 @@ DeviceProcessEvents
  
    - Make sure to use the right filters, and that you have the appropriate permissions assigned to view all device objects. (For example, is your account/group is restricted to a specific group?)
  
-   - Use the health check tool to provide an overview of overall plug-in health. Open Terminal, and run the `health_check.exe` tool from `C:\Program Files\Microsoft Defender for Endpoint plug-in for WSL\tools`.
+   - Use the health check tool to provide an overview of overall plug-in health. Open Terminal, and run the `healthcheck.exe` tool from `C:\Program Files\Microsoft Defender for Endpoint plug-in for WSL\tools`.
 
       :::image type="content" source="media/mdeplugin-wsl/wsl-health-check-support.png" alt-text="Screenshot showing status in PowerShell.":::
 
