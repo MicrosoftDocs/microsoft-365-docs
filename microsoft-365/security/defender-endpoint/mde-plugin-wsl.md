@@ -28,7 +28,7 @@ Be aware of the following before you start:
 
 2.	As it takes a few minutes for the plug-in to fully instantiate and up to 30 minutes for a WSL2 instance to onboard itself, short-lived WSL container instances might result in the WSL2 instance not showing up in the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)). Once a (any) distribution has been running long enough (at least 30 minutes), it does show up.
 
-3.	If you're using a proxy in your (test) environment, ensure that the plug-in is set up to use it correctly. WSL is typically not automatically configured to use a proxy. See the section “Setting a proxy for the plug-in“ for more information.
+3.	If you're using a proxy in your (test) environment, make sure that the plug-in is set up to use it correctly. WSL is typically not automatically configured to use a proxy. For more information, see the section, [Setting a proxy for Defender running in WSL](#setting-a-proxy-for-defender-running-in-wsl).
 
 ## Software prerequisites
 
