@@ -39,7 +39,7 @@ ms.date: 12/18/2020
 
 > *Attack surface management card*
 
-The *Attack surface management card* is an entry point to tools in <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> that you can use to:
+The *Attack surface management card* is an entry point to tools in <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a> that you can use to:
 
 - Understand how ASR rules are currently deployed in your organization.
 - Review ASR detections and identify possible incorrect detections.
@@ -54,7 +54,7 @@ Select **Go to attack surface management** \> **Reports** \> **Attack surface re
 > [!NOTE]
 > To access Microsoft Defender portal, you need a Microsoft 365 E3 or E5 license and an account that has certain roles on Microsoft Entra ID. [Read about required licenses and permissions](/microsoft-365/security/defender/prerequisites).
 
-For more information about ASR rule deployment in <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, see [Optimize ASR rule deployment and detections](configure-machines-asr.md).
+For more information about ASR rule deployment in <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>, see [Optimize ASR rule deployment and detections](configure-machines-asr.md).
 
 ## Related topics
 

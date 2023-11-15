@@ -52,7 +52,7 @@ The Microsoft Defender portal has built-in capabilities to create simulated atta
 
 - Attack tutorials & simulations for Microsoft Defender XDR for Endpoint at [https://security.microsoft.com/tutorials/simulations](https://security.microsoft.com/tutorials/simulations).
 
-  In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, select **Endpoints > Tutorials & simulations**.
+  In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>, select **Endpoints > Tutorials & simulations**.
 
 ### Defender for Office 365 Attack simulation training
 
@@ -187,7 +187,7 @@ To see the Automated Incident and Response feature in action, keep the notepad.e
 
 Switching to the SOC analyst point of view, you can now start to investigate the attack in the Microsoft Defender portal.
 
-1. Open the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
+1. Open the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>.
 
 2. From the navigation pane, select **Incidents & Alerts > Incidents**.
 
@@ -203,7 +203,7 @@ The alerts generated during this simulation are associated with the same threat,
 
 To view the incident:
 
-1. Open the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
+1. Open the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>.
 
 2. From the navigation pane, select **Incidents & Alerts > Incidents**.
 

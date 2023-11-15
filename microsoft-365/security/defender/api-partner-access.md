@@ -76,7 +76,7 @@ The following steps with guide you how to create a multi-tenant Microsoft Entra 
 
 2. Navigate to **Microsoft Entra ID** > **App registrations** > **New registration**.
 
-   :::image type="content" source="../../media/atp-azure-new-app2.png" alt-text="An application's registration section in the Microsoft 365 Defender portal" lightbox="../../media/atp-azure-new-app2.png":::
+   :::image type="content" source="../../media/atp-azure-new-app2.png" alt-text="An application's registration section in the Microsoft Defender portal" lightbox="../../media/atp-azure-new-app2.png":::
 
 3. In the registration form:
 
@@ -86,7 +86,7 @@ The following steps with guide you how to create a multi-tenant Microsoft Entra 
 
    After you're done filling out the form, select **Register**.
 
-   :::image type="content" source="../..//media/atp-api-new-app-partner.png" alt-text="An application's registration sections in the Microsoft 365 Defender portal" lightbox="../..//media/atp-api-new-app-partner.png":::
+   :::image type="content" source="../..//media/atp-api-new-app-partner.png" alt-text="An application's registration sections in the Microsoft Defender portal" lightbox="../..//media/atp-api-new-app-partner.png":::
 
 4. On your application page, select **API Permissions** > **Add permission** > **APIs my organization uses** >, type **Microsoft Threat Protection**, and select **Microsoft Threat Protection**. Your app can now access Microsoft Defender XDR.
 
@@ -97,7 +97,7 @@ The following steps with guide you how to create a multi-tenant Microsoft Entra 
 
 5. Select **Application permissions**. Choose the relevant permissions for your scenario (for example, **Incident.Read.All**), and then select **Add permissions**.
 
-   :::image type="content" source="../../media/request-api-permissions.PNG" alt-text="An application's permission pane in the Microsoft 365 Defender portal" lightbox="../../media/request-api-permissions.PNG":::
+   :::image type="content" source="../../media/request-api-permissions.PNG" alt-text="An application's permission pane in the Microsoft Defender portal" lightbox="../../media/request-api-permissions.PNG":::
 
     > [!NOTE]
     > You need to select the relevant permissions for your scenario. *Read all incidents* is just an example. To determine which permission you need, please look at the **Permissions** section in the API you want to call.

@@ -56,7 +56,7 @@ If [enabled](m365d-enable.md), Microsoft Defender XDR can [automatically investi
 
 ## Incidents and alerts in the Microsoft Defender portal
 
-You manage incidents from **Incidents & alerts > Incidents** on the quick launch of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target=" blank">Microsoft 365 Defender portal</a>. Here's an example.
+You manage incidents from **Incidents & alerts > Incidents** on the quick launch of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target=" blank">Microsoft Defender portal</a>. Here's an example.
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="The Incidents page in the Microsoft Defender portal." lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 

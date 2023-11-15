@@ -55,7 +55,7 @@ Before trying out this feature, make sure you meet the requirements described in
 | Requirement | Description |
 |:---|:---|
 | Subscription | Your subscription must include one of the following:<br/>- [Windows 10/11 Enterprise E5](/windows/deployment/deploy-enterprise-licenses)<br/>- [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise/e5?activetab=pivot%3aoverviewtab)<br/>- Microsoft 365 A5<br/>- Microsoft 365 E5 Security<br/>- [Microsoft 365 E3](https://www.microsoft.com/microsoft-365/enterprise/e3?activetab=pivot%3aoverviewtab)<br/>- [Microsoft Defender for Endpoint Plan 1 or Plan 2](../defender/eval-defender-endpoint-overview.md)<br/>- [Microsoft Defender for Business](../defender-business/mdb-overview.md)<br/>- [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium)|
-| Portal access | You must have access to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. |
+| Portal access | You must have access to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>. |
 | Operating system | Your organization's devices must be running one of the following operating systems with the [latest antivirus/antimalware updates](microsoft-defender-antivirus-updates.md): <br/>- Windows 11<br/>- Windows 10 Anniversary Update (version 1607) or later <br/>- For information on MacOS availability, see [Network Protection for MacOS](network-protection-macos.md)<br/>- For information on Linux availability, see [Network Protection for Linux](network-protection-linux.md)|
 | Browser | Your organization's devices must be running one of the following browsers: <br/>- Microsoft Edge<br/>- Google Chrome<br/>- Mozilla FireFox<br/>- Brave<br/>- Opera<br/>- Internet Explorer|
 | Related protection | [Windows Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) and [network protection](network-protection.md) must be enabled on your organization's devices. |
@@ -77,7 +77,7 @@ The result is that categories 1 - 4 are all blocked.  This is illustrated in the
 
 ## Turn on web content filtering
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a> and sign in.
 
 2. In the navigation pane, select **Settings** \> **Endpoints** \> **General** \> **Advanced Features**.
 
@@ -106,7 +106,7 @@ Policies can be deployed to block any of the following parent or child categorie
 
 To add a new policy, follow these steps:
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, choose **Settings** > **Endpoints** > **Web content filtering** > **+ Add policy**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>, choose **Settings** > **Endpoints** > **Web content filtering** > **+ Add policy**.
 
 2. Specify a name.
 
@@ -135,7 +135,7 @@ It's possible to override the blocked category in web content filtering to allow
 
 To define a custom indicator, follow these steps:
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, go to **Settings** \> **Endpoints** \> **Indicators** \> **URL/Domain** \> **Add Item**.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>, go to **Settings** \> **Endpoints** \> **Indicators** \> **URL/Domain** \> **Add Item**.
 
 2. Enter the domain of the site.
 

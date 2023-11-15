@@ -44,7 +44,7 @@ The *go hunt* action is available in various sections of Microsoft Defender XDR.
 
 - When viewing the timeline for a device, you can select an event in the timeline to view additional information about that event. Once an event is selected, you get the option to hunt for other relevant events in advanced hunting.
 
-    :::image type="content" source="../../media/go-hunt-3-event.png" alt-text="The Hunt for related events option on an event's page in the Timelines tab in Microsoft 365 Defender portal" lightbox="../../media/go-hunt-3-event.png":::
+    :::image type="content" source="../../media/go-hunt-3-event.png" alt-text="The Hunt for related events option on an event's page in the Timelines tab in Microsoft Defender portal" lightbox="../../media/go-hunt-3-event.png":::
 
 Selecting **Go hunt** or **Hunt for related events** passes different queries, depending on whether you've selected an entity or an event.
 

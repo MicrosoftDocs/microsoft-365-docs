@@ -52,7 +52,7 @@ For customers using our enterprise plans, Microsoft recommends you complete the 
 |11|[Get started with Microsoft Defender for Cloud Apps](#11-get-started-with-microsoft-defender-for-cloud-apps)|||![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |12|[Monitor for threats and take action](#12-monitor-for-threats-and-take-action)|![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included.](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 
-Before you begin, check your [Microsoft 365 Secure Score](./defender/microsoft-secure-score.md) in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. From a centralized dashboard, you can monitor and improve the security for your Microsoft 365 identities, data, apps, devices, and infrastructure. You're given points for configuring recommended security features, performing security-related tasks (such as viewing reports), or addressing recommendations with a third-party application or software. The recommended tasks in this article will raise your score.
+Before you begin, check your [Microsoft 365 Secure Score](./defender/microsoft-secure-score.md) in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>. From a centralized dashboard, you can monitor and improve the security for your Microsoft 365 identities, data, apps, devices, and infrastructure. You're given points for configuring recommended security features, performing security-related tasks (such as viewing reports), or addressing recommendations with a third-party application or software. The recommended tasks in this article will raise your score.
 
 :::image type="content" source="../media/secure-score.png" alt-text="The Microsoft Secure Score screen in the Microsoft Defender portal" lightbox="../media/secure-score.png":::
 
@@ -123,7 +123,7 @@ After you [identify users as priority accounts](../admin/setup/priority-accounts
 
 ## 5: Turn on Microsoft Defender XDR
 
-Now that you have Microsoft Defender for Office 365 and Microsoft Defender for Identity configured, you can view the combined signals from these capabilities in one dashboard. [Microsoft Defender XDR](./defender/microsoft-365-defender.md) brings together alerts, incidents, automated investigation and response, and advanced hunting across workloads (Microsoft Defender for Identity, Defender for Office 365, Microsoft  Defender for Endpoint, and Microsoft Defender for Cloud Apps) into a single pane in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
+Now that you have Microsoft Defender for Office 365 and Microsoft Defender for Identity configured, you can view the combined signals from these capabilities in one dashboard. [Microsoft Defender XDR](./defender/microsoft-365-defender.md) brings together alerts, incidents, automated investigation and response, and advanced hunting across workloads (Microsoft Defender for Identity, Defender for Office 365, Microsoft  Defender for Endpoint, and Microsoft Defender for Cloud Apps) into a single pane in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>.
 
 :::image type="content" source="../media/top-ten-security-remote-work-mtp-dashboard.png" alt-text="The Microsoft Defender XDR dashboard" lightbox="../media/top-ten-security-remote-work-mtp-dashboard.png":::
 
@@ -249,7 +249,7 @@ Get started with Defender for Cloud Apps now. Later you can set up more sophisti
 
 ## 12: Monitor for threats and take action
 
-Microsoft 365 includes several ways to monitor status and take appropriate actions. Your best starting point is the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, where you can view your organization's [Microsoft Secure Score](./defender/microsoft-secure-score.md), and any alerts or entities that require your attention.
+Microsoft 365 includes several ways to monitor status and take appropriate actions. Your best starting point is the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>, where you can view your organization's [Microsoft Secure Score](./defender/microsoft-secure-score.md), and any alerts or entities that require your attention.
 
 - [Get started with the Microsoft Defender portal](./defender/microsoft-365-defender-portal.md)
 - [See the security portals in Microsoft 365](./defender/portals.md)

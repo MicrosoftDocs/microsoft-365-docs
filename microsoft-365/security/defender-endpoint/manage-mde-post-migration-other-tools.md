@@ -74,7 +74,7 @@ To learn more, see [Configure and manage Microsoft Defender Antivirus with mpcmd
 
 ## Configure your Microsoft Defender portal
 
-If you haven't already done so, configure your <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> to view alerts, configure threat protection features, and view detailed information about your organization's overall security posture.
+If you haven't already done so, configure your <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a> to view alerts, configure threat protection features, and view detailed information about your organization's overall security posture.
 
 You can also configure whether and what features end users can see.
 

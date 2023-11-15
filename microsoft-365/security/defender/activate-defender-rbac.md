@@ -20,7 +20,7 @@ search.appverid: met150
 
 # Activate Microsoft Defender XDR Unified role-based access control (RBAC)
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/microsoft-defender.md)]
 
 **Applies to:**
 
@@ -83,7 +83,7 @@ Follow these steps to activate your workloads directly in Microsoft Defender XDR
 
 1. Sign in to the [Microsoft Defender portal](https://security.microsoft.com).
 2. In the navigation pane, select **Settings**.
-3. Select **Microsoft 365 Defender**.
+3. Select **Microsoft Defender XDR**.
 4. Select **Permissions and roles**. This brings you to the **Activate workloads** page.
 5. Select the toggle for the workload you want to activate.
 6. Select Activate on the confirmation message.
@@ -106,4 +106,4 @@ If you deactivate a workload, the roles created and edited within Microsoft Defe
 ## Next steps
 
 - [Edit or delete roles](edit-delete-rbac-roles.md)
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]
+[!INCLUDE [Microsoft Defender XDR rebranding](../../includes/defender-m3d-techcommunity.md)]

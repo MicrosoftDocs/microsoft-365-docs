@@ -150,7 +150,7 @@ No changes to these areas:
 Also, check the **Related Information** section at the bottom of this article.
 
 > [!IMPORTANT]
-> The <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> combines security features in <https://securitycenter.windows.com>, and <https://protection.office.com>. However, what you see will depend on your subscription. If you only have Microsoft Defender for Office 365 Plan 1 or 2, as standalone subscriptions, for example, you won't see capabilities around Security for Endpoints and Defender for Office Plan 1 customers won't see items such as Threat Analytics.
+> The <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a> combines security features in <https://securitycenter.windows.com>, and <https://protection.office.com>. However, what you see will depend on your subscription. If you only have Microsoft Defender for Office 365 Plan 1 or 2, as standalone subscriptions, for example, you won't see capabilities around Security for Endpoints and Defender for Office Plan 1 customers won't see items such as Threat Analytics.
 
 > [!TIP]
 > All Exchange Online Protection (EOP) functions will be included in Microsoft Defender XDR, as EOP is a core element of Defender for Office 365.
