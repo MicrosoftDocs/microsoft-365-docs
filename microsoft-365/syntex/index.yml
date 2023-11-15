@@ -39,6 +39,8 @@ landingContent:
             url: https://www.linkedin.com/learning/search?keywords=syntex&upsellOrderOrigin=default_guest_learning&trk=homepage-learning_learning-search-bar_search-submit
       - linkListType: whats-new
         links:
+          - text: Syntex eSignature
+            url: esignature-overview.md
           - text: Microsoft 365 Archive (Preview)
             url: archive/archive-overview.md
           - text: Microsoft Backup (Preview)
@@ -80,6 +82,8 @@ landingContent:
             url: image-tagging-overview.md
           - text: Taxonomy tagging
             url: taxonomy-tagging-overview.md
+          - text: Syntex eSignature
+            url: esignature-overview.md
           - text: Optical character recognition
             url: ocr-overview.md
           - text: Microsoft 365 Archive (Preview)
