@@ -67,7 +67,7 @@
        items:
        - name: Defender for Office 365 permissions
          href: mdo-portal-permissions.md
-       - name: Permissions - Defender for Office 365 and Purview compliance
+       - name: Permissions - Defender for Office 365 and Microsoft Purview
          href: scc-permissions.md
        - name: Microsoft 365 Defender RBAC
          href: /microsoft-365/security/defender/manage-rbac
@@ -322,8 +322,6 @@
              href: /exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments
            - name: Use mail flow rules to filter bulk mail
              href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-filter-bulk-mail
-           - name: Use mail flow rules to see what users are reporting to Microsoft
-             href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft
        - name: Message trace
          items:
          - name: Message trace
