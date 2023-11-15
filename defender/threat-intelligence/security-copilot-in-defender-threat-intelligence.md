@@ -1,0 +1,135 @@
+---
+title: Microsoft Security Copilot and Microsoft Defender Threat Intelligence
+description: Learn about Security Copilot capabilities embedded in Microsoft Defender Threat Intelligence.
+keywords: security copilot, defender threat intelligence, defender ti, embedded experience, incident summary, script analyzer, script analysis, query assistant, incident report, guided response, incident response automated, automatic incident response, summarize incidents, summarize incident report, plugins, Microsoft plugins
+ms.service: threat-intelligence
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+f1.keywords:
+  - NOCSH
+ms.author: poliveria
+author: poliveria
+ms.localizationpriority: medium
+manager: dolmont
+audience: ITPro
+ms.collection: 
+  - m365-security
+  - tier1
+ms.topic: conceptual
+search.appverid:
+  - MOE150
+  - MET150
+ms.date: 11/15/2023
+---
+
+# Microsoft Security Copilot (preview) and Microsoft Defender Threat Intelligence
+
+> [!IMPORTANT]
+> The information in this article applies to the Microsoft Security Copilot Early Access Program, which is an invite-only paid preview program. Some information in this article relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided in this article.
+
+Security Copilot is a cloud-based AI platform that provides natural language copilot experience. It can help support security professionals in different scenarios, like incident response, threat hunting, and intelligence gathering. For more information about what it can do, go to [What is Microsoft Security Copilot?](/security-copilot/microsoft-security-copilot/).
+
+**Security Copilot integrates with Microsoft Defender Threat Intelligence**
+
+Security Copilot delivers from Microsoft Defender Threat Intelligence (Defender TI) information about threat actors, indicators of compromise (IOCs), and tools, and contextual threat intelligence. You can use the prompts and promptbooks to investigate incidents, enrich your hunting flows with threat intelligence information, or gain more knowledge about the threats related to your organization or the global threat landscape.
+
+This article introduces you to Security Copilot and includes sample prompts that can help you when using Defender TI.
+
+## Know before you begin
+
+- Be clear and specific with your prompts. You might get better results if you include specific actor names or IOCs in your prompts. It might also help if you add _threat intelligence_ to your prompt, like:
+  - Show me threat intelligence data for Aqua Blizzard
+  - Summarize threat intelligence data for “malicious.com”
+- Be specific when referencing an incident (for example, “incident ID 15324”)
+- Experiment with different prompts and variations to see what works best for your use case. Chat AI models vary, so iterate and refine your prompts based on the results you receive.
+- Security Copilot saves your prompt sessions. To see the previous sessions, in Security Copilot, navigate to **My investigations**
+    
+    For a walkthrough on Security Copilot, including the pin and share feature, go to [Navigating Microsoft Security Copilot](/security-copilot/navigating-security-copilot).
+
+For more information on writing Security Copilot prompts, go to [Microsoft Security Copilot prompting tips](/security-copilot/prompting-tips).
+
+## Open Security Copilot
+
+1.	Go to [Microsoft Security Copilot](https://go.microsoft.com/fwlink/?linkid=2247989) and sign in with your credentials.
+2.	By default, Defender TI should be enabled. To confirm, select **Plugins** (bottom left corner):
+   
+    In **My plugins**, confirm Microsoft Defender Threat Intelligence is on. Close **Plugins**.
+
+    > [!NOTE]
+    > Some roles can turn plugins like Defender TI on or off. For more information, go to [Manage plugins in Microsoft Security Copilot](/security-copilot/manage-plugins).
+
+3.	Enter your prompt.
+
+## Built-in system features
+
+Security Copilot has built-in system features that can get data from the different plugins that are turned on.
+To view the list of built-in system capabilities for Defender TI:
+
+1.	In the prompt, enter **/**.
+2.	Select **See all system capabilities**. The capabilities for Defender TI are in the *ThreatIntelligence.DTI* section.
+
+You can also see in the promptbooks the following:
+- **Vulnerability impact assessment** - Generates a report summarizing the intelligence for a known vulnerability, including steps how to address it.
+- **Threat actor profile** - Generates a report profiling a known actor, including suggestions to defend against their common tools and tactics.
+
+## Sample prompts for Defender TI
+
+You can use many prompts to get information from Defender TI. This section lists some ideas and examples.
+
+### General information about threat intelligence trends
+Get information on threat intelligence from threat articles and threat actor groups 
+
+**Sample prompts** 
+- Summarize the recent threat intelligence.
+- Show me the latest threat articles. 
+- Get threat articles associated with the finance industry.
+
+### IP addres and host contextual information in relation to threat intelligence
+
+Get information on Datasets associated with Ips and Hosts , information such as ports , Reputation score, Components , Certificates, cookies , services,  Host pairs etc.
+
+Sample prompts
+- Give me the reputation score of a Host. 
+- Get Open Ports for IP address.
+- Get the SSL certificates for the IP address.
+
+### Threat Actor Mapping and Infrastructure
+Get information on Threat actor groups, associated TTPs, sponsored states, industries and IOCs
+
+Sample prompts
+- Tell me more about the Silk Typhoon 
+- Share the IOCs associated with Silk Typhoon
+- Share the TTPS associated with Silk Typhoon
+- Share threat actors associated with Russia.
+
+### CVE Vulnerability data 
+Get contextual information on CVES and associated threat intelligence.
+
+Sample prompts
+- Share the technologies that are susceptible to this vulnerability CVE-2021-44228
+- Summarize this CVE-2021-44228
+- Show me the latest CVEs
+- Show me threat actors associated with this CVE-2021-44228
+- Show me the threat articles associated with CVE-2021-44228.
+
+## Provide feedback
+
+Your feedback on the MDTI integration with Security Copilot helps with development. To provide feedback, in Security Copilot, use the feedback buttons at the bottom of each completed prompt. Your options are "Looks Right," "Needs Improvement" and "Inappropriate."
+
+Your options:
+- Confirm: The results match expectations.
+- Off-target: The results don't match expectations.
+- Report: The results are harmful in some way.
+
+Whenever possible, and when the result is Off-target, write a few words explaining what can be done to improve the outcome. If you entered MDTI-specific prompts and the results aren't MDTI related, then include that information.
+
+## Data processing and privacy
+
+When you interact with the Security Copilot to get MDTI data, Security Copilot pulls that data from MDTI. The prompts, the data that's retrieved, and the output shown in the prompt results is processed and stored within the Security Copilot service.
+
+For more information about data privacy in Security Copilot, go to Privacy and data security in Microsoft Security Copilot.
+
+## Related articles
+- What is Microsoft Security Copilot?
+- Privacy and data security in Microsoft Security Copilot
