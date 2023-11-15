@@ -185,7 +185,7 @@ The security operations team can view all actions pending approval, and the stip
 
 ## June 2021
 
-- (Preview) [View reports per threat tags](threat-analytics.md#view-reports-per-threat-tags)
+- (Preview) [View reports per threat tags](threat-analytics.md#view- reports-by-category)
 
   Threat tags help you focus on specific threat categories and review the most relevant reports.
 
