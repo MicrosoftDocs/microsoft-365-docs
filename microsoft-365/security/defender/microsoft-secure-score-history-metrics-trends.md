@@ -1,7 +1,7 @@
 ---
 title: Track your Microsoft Secure Score history and meet goals
 description: Gain insights into activity that has affected your Microsoft Secure Score. Discover trends and set goals.
-keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, Microsoft 365 Defender portal, recommended actions
+keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, Microsoft Defender portal, recommended actions
 ms.service: microsoft-365-security
 ms.subservice: m365d
 ms.mktglfcycl: deploy
@@ -60,7 +60,7 @@ There are two places to see how your score compares to organizations that are si
 
 The comparison bar chart is available on the **Overview** tab. Hover over the chart to view the score and score opportunity. 
 
-:::image type="content" source="../../media/secure-score/secure-score-comparison-bar.png" alt-text="An example of the bar graph of similar organization's scores in the Microsoft 365 Defender portal" lightbox="../../media/secure-score/secure-score-comparison-bar.png":::
+:::image type="content" source="../../media/secure-score/secure-score-comparison-bar.png" alt-text="An example of the bar graph of similar organization's scores in the Microsoft Defender portal" lightbox="../../media/secure-score/secure-score-comparison-bar.png":::
 
 The comparison data is anonymized so we don't know exactly which others tenants are in the mix.
 
@@ -70,7 +70,7 @@ The comparison data is anonymized so we don't know exactly which others tenants 
 
 In the **Metrics & trends** tab, view how your organization's Secure Score compares to others' over time.
 
-:::image type="content" source="../../media/secure-score/secure-score-comparison-trend.png" alt-text="An example of a line graph of similar organization's scores over time in the Microsoft 365 Defender portal" lightbox="../../media/secure-score/secure-score-comparison-trend.png":::
+:::image type="content" source="../../media/secure-score/secure-score-comparison-trend.png" alt-text="An example of a line graph of similar organization's scores over time in the Microsoft Defender portal" lightbox="../../media/secure-score/secure-score-comparison-trend.png":::
 
 ## We want to hear from you
 

@@ -121,7 +121,7 @@ Microsoft Defender XDR is an extended detection and response (XDR) solution that
 
 :::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-defender.png" alt-text="The process of adding Microsoft Defender XDR to the Zero Trust architecture" lightbox="../media/zero-trust/m365-zero-trust-architecture-defender.png":::
 
-Go to [**_Evaluate and pilot Microsoft 365 Defender_**](defender/eval-overview.md) for a methodical guide to piloting and deploying Microsoft Defender XDR components.
+Go to [**_Evaluate and pilot Microsoft Defender XDR_**](defender/eval-overview.md) for a methodical guide to piloting and deploying Microsoft Defender XDR components.
 
 |Includes|Prerequisites|Doesn't include|
 |---------|---------|---------|

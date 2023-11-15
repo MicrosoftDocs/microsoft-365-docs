@@ -58,7 +58,7 @@ Whether taken automatically or upon approval, an automated investigation and rem
 
 ## Review pending actions
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a> and sign in.
 
 2. In the navigation pane, choose **Action center**.
 
@@ -90,7 +90,7 @@ For incidents with a remediation status of **Pending approval**, you can also ap
 
 ## Review completed actions
 
-1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> and sign in.
+1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a> and sign in.
 
 2. In the navigation pane, choose **Action center**.
 

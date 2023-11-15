@@ -47,7 +47,7 @@ Once you have performed an [incident response for a simulated attack](eval-defen
 
 ## Prioritize incidents
 
-You get to the incident queue from **Incidents & alerts > Incidents** on the quick launch of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. Here's an example.
+You get to the incident queue from **Incidents & alerts > Incidents** on the quick launch of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>. Here's an example.
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="The Incidents & alerts section in the Microsoft Defender portal" lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
@@ -166,7 +166,7 @@ There's a single internal mailbox and device required for this simulation. You'l
 
 #### Go hunting
 
-1. Open the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>.
+1. Open the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>.
 
 2. From the navigation pane, select **Hunting > Advanced hunting**.
 

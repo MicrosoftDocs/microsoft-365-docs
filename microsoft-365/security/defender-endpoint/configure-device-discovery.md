@@ -39,7 +39,7 @@ You can customize the list of devices that are used to perform standard discover
 
 ## Set up device discovery
 
-To set up device discovery, take the following configuration steps in <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>:
+To set up device discovery, take the following configuration steps in <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>:
 
 Navigate to **Settings** > **Device discovery**
 

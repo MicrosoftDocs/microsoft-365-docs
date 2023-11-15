@@ -60,7 +60,7 @@ When you apply priority account protection to a mailbox, you should also apply p
 
 ### Add priority accounts from the Microsoft Defender XDR page
 
-Add priority accounts from the **Microsoft 365 Defender page**.
+Add priority accounts from the **Microsoft Defender XDR page**.
 
 1. Go to  Microsoft Defender XDR at <a href="https://security.microsoft.com/" target="_blank">https://security.microsoft.com/</a>.
 

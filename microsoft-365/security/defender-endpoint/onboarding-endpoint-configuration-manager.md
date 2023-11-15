@@ -124,7 +124,7 @@ This section guides you in configuring the following capabilities using Microsof
 
 From within the Microsoft Defender portal it's possible to download the `.onboarding` policy that can be used to create the policy in System Center Configuration Manager and deploy that policy to Windows 10 and Windows 11 devices.
 
-1. From a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, select [Settings and then Onboarding](https://security.microsoft.com/preferences2/onboarding).
+1. From a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>, select [Settings and then Onboarding](https://security.microsoft.com/preferences2/onboarding).
 
 2. Under Deployment method, select the supported version of **Microsoft Configuration Manager**.
 
@@ -176,7 +176,7 @@ From within the Microsoft Defender portal it's possible to download the `.onboar
 
 Follow the steps below to identify the Defender for Endpoint Workspace ID and Workspace Key that will be required for the onboarding of previous versions of Windows.
 
-1. From a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>, select **Settings** \> **Endpoints** \> **Onboarding** (under **Device Management**).
+1. From a <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>, select **Settings** \> **Endpoints** \> **Onboarding** (under **Device Management**).
 
 2. Under operating system, choose **Windows 7 SP1 and 8.1**.
 

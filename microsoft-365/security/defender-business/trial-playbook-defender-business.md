@@ -57,7 +57,7 @@ After you sign up for Defender for Business, the first step is to **[add users a
 
 The Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) is the one-stop shop where you use and manage Defender for Business. It includes callouts to help you get started, cards that surface relevant information, and a navigation bar that provides easy access to the various features and capabilities.
 
-- **[Visit the Microsoft 365 Defender portal](mdb-get-started.md)**.
+- **[Visit the Microsoft Defender portal](mdb-get-started.md)**.
 - **[Explore the navigation bar](mdb-get-started.md#the-navigation-bar)** on the left side of the screen to access your incidents, view reports, and manage your security policies and settings.
 
 ### Step 3: Use the setup wizard in Defender for Business (recommended)

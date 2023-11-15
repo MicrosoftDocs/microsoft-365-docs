@@ -37,7 +37,7 @@ Microsoft Defender XDR applies correlation analytics and aggregates related aler
 
 The **Incident queue** shows a collection of incidents that were created across devices, users, and mailboxes. It helps you sort through incidents to prioritize and create an informed cybersecurity response decision, a process known as incident triage.
 
-You get to the incident queue from **Incidents & alerts > Incidents** on the quick launch of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. Here's an example.
+You get to the incident queue from **Incidents & alerts > Incidents** on the quick launch of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>. Here's an example.
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="The Incident section showing the incident queue in the Microsoft Defender portal." lightbox="../../media/incidents-queue/incidents-ss-incidents.png":::
 
