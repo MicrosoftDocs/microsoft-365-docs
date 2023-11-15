@@ -13,7 +13,7 @@ ms.localizationpriority: medium
 ms.collection:
   - m365-security
   - tier1
-description: Learn about how to use Threat Explorer and the real-time detections report to investigate and respond to threats in the Microsoft 365 Defender portal.
+description: Learn about how to use Threat Explorer and the real-time detections report to investigate and respond to threats in the Microsoft Defender portal.
 ms.custom: seo-marvel-apr2020
 ms.subservice: mdo
 ms.service: microsoft-365-security
@@ -29,7 +29,7 @@ appliesto:
 
 :::image type="content" source="../../media/explorer-new.png" alt-text="Screenshot of the Threat Explorer page." lightbox="../../media/explorer.png":::
 
-[Threat Explorer](threat-explorer-about.md) (and the real-time detections report) is a powerful, near real-time tool to help Security Operations teams investigate and respond to threats in the Microsoft 365 Defender portal. Explorer (and the real-time detections report) displays information about suspected malware and phish in email and files in Office 365, as well as other security threats and risks to your organization.
+[Threat Explorer](threat-explorer-about.md) (and the real-time detections report) is a powerful, near real-time tool to help Security Operations teams investigate and respond to threats in the Microsoft Defender portal. Explorer (and the real-time detections report) displays information about suspected malware and phish in email and files in Office 365, as well as other security threats and risks to your organization.
 
 - If you have [Microsoft Defender for Office 365](defender-for-office-365.md) Plan 2, then you have Explorer.
 - If you have Microsoft Defender for Office 365 Plan 1, then you have real-time detections.

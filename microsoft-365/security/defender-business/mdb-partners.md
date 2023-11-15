@@ -56,7 +56,7 @@ Use the links in the following table to access the guide and summary checklist:
 
 If you're a Microsoft Managed Service Provider (MSP), you can integrate Microsoft endpoint security with your remote monitoring and management (RMM) tools and your professional service automation (PSA) software so that you can: 
 
-- Get access to your customers' Microsoft 365 Defender portal to [address detected threats and incidents](mdb-respond-mitigate-threats.md).
+- Get access to your customers' Microsoft Defender portal to [address detected threats and incidents](mdb-respond-mitigate-threats.md).
 - Get [email notifications](mdb-email-notifications.md) about new alerts or vulnerabilities across your customers' tenants.
 - Fetch and view [incidents and alerts](mdb-view-manage-incidents.md) with your security information and event management (SIEM) tools.
 - Orchestrate [remediation actions](mdb-review-remediation-actions.md), such as approving actions following automated investigations, or taking manual response actions on a device.
@@ -89,4 +89,3 @@ If you're a Microsoft Cloud Solution Provider (CSP) or MSP, you can use Microsof
 | [Microsoft 365 Business Premium and Defender for Business partner webinar series](https://aka.ms/M365MDBseries) | This webinar series provides: <br/>- Practical guidance about how to have conversations with your customers about security and drive upsell to Microsoft 365 Business Premium. <br/>- Demos and deep dive walkthroughs for Microsoft 365 Lighthouse and Defender for Business. <br/>- A panel of experts to help answer your questions.   |
 | [Microsoft 365 Business Premium partner playbook and readiness series](https://aka.ms/M365BPPartnerPlaybook) |  Practical guidance on building a profitable managed services practice, with: <br/>- Examples of successful managed service offerings from industry experts and peers. <br/>- Technical enablement and checklists from Microsoft experts. <br/>- Sales enablement and customer conversation aids to help you market your solution.  |
 | [Defender for Business partner kit](https://aka.ms/MDBPartnerKit) | The Defender for Business partner kit provides you with practical guidance, technical information, and customer-ready resources to market and sell Defender for Business to small and medium-sized businesses.  |
-

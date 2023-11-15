@@ -26,7 +26,7 @@ ms.date: 02/16/2021
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-[Microsoft Secure Score](microsoft-secure-score.md) is a measurement of an organization's security posture, with a higher number indicating more recommended actions taken. It can be found at https://security.microsoft.com/securescore in the [Microsoft 365 Defender portal](microsoft-365-defender-portal.md).
+[Microsoft Secure Score](microsoft-secure-score.md) is a measurement of an organization's security posture, with a higher number indicating more recommended actions taken. It can be found at https://security.microsoft.com/securescore in the [Microsoft Defender portal](microsoft-365-defender-portal.md).
 
 ## Gain insights into activity that has affected your score
 
@@ -34,13 +34,13 @@ View a graph of your organization's score over time in the **History** tab.
 
 Below the graph is a list of all the actions taken in the selected time range and their attributes, such as resulting points and category. You can customize a date range and filter by category.
 
-:::image type="content" source="../../media/secure-score/secure-score-history-activity.png" alt-text="An example of the page that describes the activity history in the Microsoft 365 Defender portal" lightbox="../../media/secure-score/secure-score-history-activity.png":::
+:::image type="content" source="../../media/secure-score/secure-score-history-activity.png" alt-text="An example of the page that describes the activity history in the Microsoft Defender portal" lightbox="../../media/secure-score/secure-score-history-activity.png":::
 
 If you select the recommended action associated with an activity, the full recommended action flyout will appear.
 
 To view all history for that specific recommended action, select the history link in the flyout.
 
-:::image type="content" source="../../media/secure-score/secure-score-history-flyout.png" alt-text="The History pane regarding recommended action in the Microsoft 365 Defender portal" lightbox="../../media/secure-score/secure-score-history-flyout.png":::
+:::image type="content" source="../../media/secure-score/secure-score-history-flyout.png" alt-text="The History pane regarding recommended action in the Microsoft Defender portal" lightbox="../../media/secure-score/secure-score-history-flyout.png":::
 
 ## Discover trends and set goals
 

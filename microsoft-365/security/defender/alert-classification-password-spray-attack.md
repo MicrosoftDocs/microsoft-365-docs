@@ -30,7 +30,7 @@ ms.date: 08/11/2023
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 Threat actors use innovative ways to compromise their target environments. One type of attack gaining traction is the password spray attack, where attackers aim to access many accounts within a network with minimal effort. Unlike traditional brute force attacks, where threat actors try many passwords on a single account, password spray attacks focus on guessing the correct password for many accounts with a limited set of commonly used passwords. It makes the attack particularly effective against organizations with weak or easily guessable passwords, leading to severe data breaches and financial losses for organizations.
 

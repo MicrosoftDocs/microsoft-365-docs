@@ -22,7 +22,7 @@ ms.collection:
 
 # View and manage incidents in Microsoft Defender for Business
 
-As threats are detected and alerts are triggered, incidents are created. Your company's security team can view and manage incidents in the Microsoft 365 Defender portal. You must have appropriate permissions assigned to perform the tasks in this article. See [Security roles and permissions in Microsoft Defender for Business](mdb-roles-permissions.md).
+As threats are detected and alerts are triggered, incidents are created. Your company's security team can view and manage incidents in the Microsoft Defender portal. You must have appropriate permissions assigned to perform the tasks in this article. See [Security roles and permissions in Microsoft Defender for Business](mdb-roles-permissions.md).
 
 **This article includes**:
 
@@ -33,7 +33,7 @@ As threats are detected and alerts are triggered, incidents are created. Your co
 
 ## Monitor your incidents & alerts
 
-1. In the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, go to **Incidents & alerts**, and then select **Incidents**. Any incidents that were created are listed on the page.
+1. In the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, go to **Incidents & alerts**, and then select **Incidents**. Any incidents that were created are listed on the page.
 
    > [!IMPORTANT]
    > If you see an incident tagged with `Attack disruption`, it means an advanced attack has been detected. See [Automatic attack disruption](mdb-attack-disruption.md).
