@@ -203,30 +203,25 @@ In the Advanced Hunting schema, under the `DeviceInfo` table, there's a new attr
 #### Get all WSL device ids for the current organization/tenant 
 
 ```kusto
-
 Get all WSL device ids for the current organization/tenant 
 let wsl_endpoints = DeviceInfo  
 | where OSPlatform == "Linux" and isempty(HostDeviceId) != true
 | distinct DeviceId; 
 wsl_endpoints
-
 ```
 
 #### Get WSL device ids and their corresponding host device ids 
 
 ```kusto
-
 Get WSL device ids and their corresponding host device ids 
 DeviceInfo  
 | where OSPlatform == "Linux" and isempty(HostDeviceId) != true
 | distinct WSLDeviceId=DeviceId, HostDeviceId;
-
 ```
 
 #### Get a list of WSL device ids where curl or wget was run
 
 ```kusto
-
 Get a list of WSL device ids where curl or wget was run
 let wsl_endpoints = DeviceInfo  
 | where OSPlatform == "Linux" and isempty(HostDeviceId) != true
@@ -235,14 +230,13 @@ DeviceProcessEvents
 | where FileName == "curl" or FileName == "wget" 
 | where DeviceId in (wsl_endpoints) 
 | sort by Timestamp desc
-
 ```
 
 ## Troubleshooting
 
 1. The command `healthcheck.exe` shows the output, "Launch WSL distro with ‘bash’ command and retry in 5 minutes."
 
-   :::image type="content" source="media/mdeplugin-wsl/wsl-health-check.png" alt-text="Screenshot showing PowerShell output.":::
+   :::image type="content" source="media/mdeplugin-wsl/wsl-health-check.png" alt-text="Screenshot showing PowerShell output." lightbox="media/mdeplugin-wsl/wsl-health-check.png":::
 
 2. If the previously mentioned error occurs, take the following steps:
 
