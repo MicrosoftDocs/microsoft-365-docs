@@ -41,7 +41,7 @@ Authenticated Received Chain (ARC) helps reduce delivery failures due to legitim
 
 Services that modify message content in transit before delivery can invalidate DKIM email signatures and affect the authentication of the message. These services can use ARC to provide details of the original authentication before the modifications occurred. Your organization can then trust these details to help authenticate the message.
 
-Trusted ARC sealers let admins add a list of *trusted* intermediaries into the Microsoft 365 Defender portal. Trusted ARC sealers allow Microsoft to honor ARC signatures from these trusted intermediaries, preventing these legitimate messages from failing the authentication chain.
+Trusted ARC sealers let admins add a list of *trusted* intermediaries into the Microsoft Defender portal. Trusted ARC sealers allow Microsoft to honor ARC signatures from these trusted intermediaries, preventing these legitimate messages from failing the authentication chain.
 
 > [!NOTE]
 > Trusted ARC sealers is an admin-created list of intermediary domains that use ARC sealing. When an email is routed to Microsoft 365 through an ARC trusted intermediary, Microsoft 365 validates the ARC signature and (based on the ARC results) can honor the provided authentication details.
@@ -60,7 +60,7 @@ When an admin adds a trusted ARC sealer, Microsoft 365 validates and trusts the 
 
 ## What do you need to know before you begin?
 
-- You open the Microsoft 365 Defender portal at <https://security.microsoft.com>. To go directly to the **Email authentication settings** page, use <https://security.microsoft.com/authentication>.
+- You open the Microsoft Defender portal at <https://security.microsoft.com>. To go directly to the **Email authentication settings** page, use <https://security.microsoft.com/authentication>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -68,9 +68,11 @@ When an admin adds a trusted ARC sealer, Microsoft 365 validates and trusts the 
   - [Exchange Online permissions](/exchange/permissions-exo/permissions-exo): Membership in the **Organization Management** or **Security Administrator** role groups.
   - [Azure AD permissions](/microsoft-365/admin/add-users/about-admin-roles): Membership in the **Global Administrator** or **Security Administrator** roles gives users the required permissions _and_ permissions for other features in Microsoft 365.
 
-## Use the Microsoft 365 Defender portal to add trusted ARC sealers
+<a name='use-the-microsoft-365-defender-portal-to-add-trusted-arc-sealers'></a>
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Email Authentication Settings** in the **Rules** section \> **ARC** . Or, to go directly to the **Email authentication settings** page, use <https://security.microsoft.com/authentication>.
+## Use the Microsoft Defender portal to add trusted ARC sealers
+
+1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & Collaboration** \> **Policies & Rules** \> **Threat policies** \> **Email Authentication Settings** in the **Rules** section \> **ARC** . Or, to go directly to the **Email authentication settings** page, use <https://security.microsoft.com/authentication>.
 
 2. On the **Email authentication settings** page, verify that the **ARC** tab is selected, and then select :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Add**.
 

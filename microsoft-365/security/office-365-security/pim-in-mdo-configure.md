@@ -60,9 +60,9 @@ Using [Privileged Access groups](/azure/active-directory/privileged-identity-man
 
 ### Create a role group requiring the permissions we need
 
-In the Microsoft 365 Defender portal, create a custom role group that contains the permissions that we want.
+In the Microsoft Defender portal, create a custom role group that contains the permissions that we want.
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Permissions** \> **Email & collaboration roles** \> **Roles**. Or, to go directly to the **Permissions** page, use <https://security.microsoft.com/emailandcollabpermissions>.
+1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Permissions** \> **Email & collaboration roles** \> **Roles**. Or, to go directly to the **Permissions** page, use <https://security.microsoft.com/emailandcollabpermissions>.
 2. On the **Permissions** page, click :::image type="icon" source="../../media/m365-cc-sc-create-icon.png" border="false"::: **Create**.
 3. Name your group to reflect its purpose such as 'Search and Purge PIM'.
 4. Don't add members, simply save the group and move on to the next part!
@@ -90,7 +90,7 @@ In the Microsoft 365 Defender portal, create a custom role group that contains t
 
 ## Test your configuration of PIM with Defender for Office 365
 
-1. Login with the test user (Alex), who should have no administrative access within the [Microsoft 365 Defender portal](/microsoft-365/security/defender/overview-security-center) at this point.
+1. Login with the test user (Alex), who should have no administrative access within the [Microsoft Defender portal](/microsoft-365/security/defender/overview-security-center) at this point.
 2. Navigate to PIM, where the user can activate their day-to-day security reader role.
 3. If you try to purge an email using Threat Explorer, you get an error stating you need additional permissions.
 4. PIM a second time into the more elevated role, after a short delay you should now be able to purge emails without issue.
