@@ -43,8 +43,8 @@ This article is updated frequently to let you know what's new in the latest rele
 &ensp;Published: **November 14,2023**<br/>
 &ensp;Build: **101.23092.0012**<br/>
 &ensp;Release version: **30.123092.0012.0**<br/>
-&ensp;Engine version: **1.1.23090.2008**<br/>
-&ensp;Signature version: **1.399.690.0**<br/>
+&ensp;Engine version: **1.1.23080.2007**<br/>
+&ensp;Signature version: **1.395.1560.0**<br/>
 
 **What's new**
 
@@ -57,9 +57,9 @@ This article is updated frequently to let you know what's new in the latest rele
   - Starting with this release, MDE Linux will no longer be shipping solution for RHEL 6.
   
     RHEL 6 'Extended end of life support' is poised to end by June 30, 2024 and customers are advised to plan their RHEL upgrades accordingly aligned with guidance from Red Hat. Customers who need to run MDE on RHEL 6 servers can continue to leverage version 101.23082.0011 (does not expire before June 30, 2024) supported on kernel versions 2.6.32-754.49.1.el6.x86_64 or prior.
-  - Engine Update to `1.1.23090.2008` and Signatures Ver: `1.399.690.0`.
-  - Performance Improvements and Bug fixes.
-    - Scheduled scan consumes lower CPU cycles
+  - Engine Update to `1.1.23080.2007` and Signatures Ver: `1.395.1560.0`.
+  - Streamlined device connectivity experience. [public blog](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-a-streamlined-device-connectivity-experience-for/ba-p/3956236)
+  - Performance improvements & bug fixes
 
 **Known issues**
 
