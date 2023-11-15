@@ -8,13 +8,12 @@ ms.reviewer: sreelakshmi
 ms.date: 11/15/2023
 ms.topic: conceptual
 ms.service: microsoft-syntex
-ms.custom: CSH, archive
+ms.custom: archive
 search.appverid:
 ms.collection:
     - m365initiative-syntex
 ms.localizationpriority:  medium
-ROBOTS: NOINDEX, NOFOLLOW
-description: Learn about Microsoft 365 Archive.
+description: Learn about how Microsoft 365 Archive can provide your with organization cost-effective storage solutions.
 ---
 
 # Overview of Microsoft 365 Archive (Preview)

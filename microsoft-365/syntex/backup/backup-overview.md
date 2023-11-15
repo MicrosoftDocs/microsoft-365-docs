@@ -14,8 +14,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-ROBOTS: NOINDEX, NOFOLLOW
-description: Learn about Microsoft 365 Backup.
+description: Learn about the backup and recovery capabilities for SharePoint, Exchange Online, and OneDrive for Business using Microsoft 365 Backup.
 ---
 
 # Overview of Microsoft 365 Backup (Preview)
