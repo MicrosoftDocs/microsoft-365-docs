@@ -223,7 +223,7 @@ Download [accessibility.mobileconfig](https://github.com/microsoft/mdatp-xplat/b
 
 ### Step 7: Microsoft AutoUpdate
 
-This profile is used to update the Microsoft Defender for Endpoint on macOS via Microsoft AutoUpdate (MAU). If you're deploying Microsoft Defender for Endpoint on macOS, you'll have the options to get an updated version of the application (Platform Update) that are in the different channels mentioned here:
+This profile is used to update the Microsoft Defender for Endpoint on macOS via Microsoft AutoUpdate (MAU). If you're deploying Microsoft Defender for Endpoint on macOS, you have the options to get an updated version of the application (Platform Update) that are in the different channels mentioned here:
 
 - Beta (Insiders-Fast)
 - Current channel (Preview, Insiders-Slow)
@@ -234,7 +234,7 @@ For more information, see [Deploy updates for Microsoft Defender for Endpoint on
 Download [AutoUpdate2.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/microsoft_auto_update/com.microsoft.autoupdate2.mobileconfig) from [GitHub repository](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles).
 
 > [!NOTE]
-> The sample AutoUpdate2.mobileconfig above has it set to Current Channel (Production).
+> The sample AutoUpdate2.mobileconfig from the GitHub repository has it set to Current Channel (Production).
 
 1. Under **Configuration profiles**, select **Create Profile**.
 1. Under **Platform**, select **macOS**.
@@ -252,7 +252,7 @@ Download [AutoUpdate2.mobileconfig](https://github.com/microsoft/mdatp-xplat/blo
 
 ### Step 8: Microsoft Defender for Endpoint configuration settings
 
-In this step we will go over the “Preferences”, which enables you to configure anti-malware and edr policies using Microsoft Defender portal and Microsoft Intune.
+In this step, we'll go over the “Preferences," which enables you to configure anti-malware and edr policies using Microsoft Defender portal and Microsoft Intune.
 
 #### Set policies using Microsoft Defender portal
 
@@ -267,14 +267,14 @@ In the [Microsoft Defender portal](https://sip.security.microsoft.com/homepage?t
 1. Click **Next**.
 1. On the **Assignments** tab,assign the profile to a group where the macOS devices and/or users are located, or All Users and All devices.
 
-For more information, see
+For more information about managing security settings, see
 <br>[Manage Microsoft Defender for Endpoint on devices with Microsoft Intune](/mem/intune/protect/mde-security-integration?pivots=mdssc-ga)
 <br>[Manage security settings for Windows, macOS, and Linux natively in Defender for Endpoint](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/manage-security-settings-for-windows-macos-and-linux-natively-in/ba-p/3870617)
 
 
 #### Set policies using Microsoft Intune
 
-You can manage the security settings for Microsoft Defender for Endpoint on macOS under "**Setting Preferences** in Microsoft Intune.
+You can manage the security settings for Microsoft Defender for Endpoint on macOS under **Setting Preferences** in Microsoft Intune.
 
 For more information, see [Set preferences for Microsoft Defender for Endpoint on Mac](mac-preferences.md)
 
@@ -311,11 +311,11 @@ To set Device Control for Microsoft Defender for Endpoint on macOS, follow the s
 
 ### Step 11: Data Loss Prevention (DLP) for Endpoint
 
-To set Purview’s Data Loss Prevention (DLP) for endpoint on macOS, follow the steps in [Onboard and offboard macOS devices into Compliance solutions using Microsoft Intune for Microsoft Defender for Endpoint customers](/purview/device-onboarding-offboarding-macos-intune-mde)
+To set Purview’s Data Loss Prevention (DLP) for endpoint on macOS, follow the steps in [Onboard and offboard macOS devices into Compliance solutions using Microsoft Intune](/purview/device-onboarding-offboarding-macos-intune-mde)
 
 ### Step 12: Check status of PList(.mobileconfig)
 
-After completing the profile configuration, you will be able to review the status of the policies.
+After completing the profile configuration, you'll be able to review the status of the policies.
 
 #### View Status
 
@@ -340,7 +340,7 @@ A standard [Company Portal installation](/intune-user-help/enroll-your-device-in
 
 2. Select **Continue** and complete the enrollment.
 
-   You may now enroll more devices. You can also enroll them later, after you have finished provisioning system configuration and application packages.
+   You may now enroll more devices. You can also enroll them later, after finishing the provisioning system configuration and application packages.
 
 3. In Intune, open **Manage** \> **Devices** \> **All devices**. Here you can see your device among the listed:
 
@@ -433,7 +433,7 @@ To download the onboarding packages from Microsoft 365 Defender portal,
 
 ### Step 15: Deploy the onboarding package
 
-This profile contains license information for Microsoft Defender for Endpoint, without which it will be reported as not licensed.
+This profile contains license information for Microsoft Defender for Endpoint, without which it is reported as not licensed.
 
 To deploy the onboarding package,
 
@@ -463,7 +463,7 @@ To deploy the onboarding package,
 
 Issue: No license found.
 
-Solution: Follow the steps above to create a device profile using WindowsDefenderATPOnboarding.xml.
+Solution: Follow the steps in this article to create a device profile using WindowsDefenderATPOnboarding.xml.
 
 ## Logging installation issues
 
@@ -498,7 +498,7 @@ See [Uninstalling](mac-resources.md#uninstalling) for details on how to remove M
 <br>Describes how to deploy Microsoft Defender for Endpoint on iOS using an app.
 
 [Configure Microsoft Defender for Endpoint in Microsoft Intune](/mem/intune/protect/advanced-threat-protection-configure?source=recommendations)
-<br>Configure Microsoft Defender for Endpoint in Intune, including connecting to Defender for Endpoint, onboarding devices, assigning compliance for risk levels, and conditional access policies.
+<br>Describes connecting to Defender for Endpoint, onboarding devices, assigning compliance for risk levels, and conditional access policies.
 
 [Troubleshoot issues and find answers on FAQs related to Microsoft Defender for Endpoint on iOS](ios-troubleshoot.md)
 <br>Troubleshooting and FAQ - Microsoft Defender for Endpoint on iOS
