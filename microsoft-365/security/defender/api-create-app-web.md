@@ -71,7 +71,7 @@ This article explains how to:
    > [!TIP]
    > *Microsoft Threat Protection* is a former name for Microsoft Defender XDR, and will not appear in the original list. You need to start writing its name in the text box to see it appear.
 
-   :::image type="content" source="../../media/apis-in-my-org-tab.PNG" alt-text="The organization's APIs usage tab in the Microsoft 365 Defender portal" lightbox="../../media/apis-in-my-org-tab.PNG":::
+   :::image type="content" source="../../media/apis-in-my-org-tab.PNG" alt-text="The organization's APIs usage tab in the Microsoft Defender portal" lightbox="../../media/apis-in-my-org-tab.PNG":::
 
 5. Select **Application permissions**. Choose the relevant permissions for your scenario (for example, **Incident.Read.All**), and then select **Add permissions**.
 

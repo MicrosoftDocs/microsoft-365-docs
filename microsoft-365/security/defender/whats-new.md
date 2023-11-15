@@ -42,6 +42,7 @@ You can also get product updates and important notifications through the [messag
 
 ## November 2023
 
+- (Preview) Microsoft Defender XDR now has built in [deception technology](deception-overview.md) to protect your environment from high-impact attacks that use human-operated lateral movement. Learn more about the deception feature and how to [configure the deception feature](configure-deception.md).
 - Microsoft Defender Experts for XDR now lets you perform your own [readiness assessment](get-started-xdr.md#prepare-your-environment-for-the-defender-experts-service) when preparing the environment for the Defender Experts for XDR service.
 
 ## October 2023
@@ -185,7 +186,7 @@ The security operations team can view all actions pending approval, and the stip
 
 ## June 2021
 
-- (Preview) [View reports per threat tags](threat-analytics.md#view-reports-per-threat-tags)
+- (Preview) [View reports per threat tags](threat-analytics.md#view- reports-by-category)
 
   Threat tags help you focus on specific threat categories and review the most relevant reports.
 

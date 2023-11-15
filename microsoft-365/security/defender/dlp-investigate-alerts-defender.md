@@ -29,7 +29,7 @@ ms.date: 11/14/2023
 
 - Microsoft Defender XDR
 
-You can manage Microsoft Purview Data Loss Prevention (DLP) alerts in the Microsoft Defender portal. Open **Incidents & alerts** \> **Incidents** on the quick launch of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a>. From this page, you can:
+You can manage Microsoft Purview Data Loss Prevention (DLP) alerts in the Microsoft Defender portal. Open **Incidents & alerts** \> **Incidents** on the quick launch of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a>. From this page, you can:
 
 - View all your DLP alerts grouped under incidents in the Microsoft Defender XDR incident queue.
 - View intelligent inter-solution (DLP-MDE, DLP-MDO) and intra-solution (DLP-DLP) correlated alerts under a single incident.
@@ -111,7 +111,7 @@ Before you can use advance hunting you must have [access to the **CloudAppEvents
 
 The Defender portal offers multiple built-in queries you can use to help with your DLP alert investigation.
 
-1. Go to the Microsoft 365 Defender portal, and select **Incidents & alerts** in the left hand navigation menu to open the incidents page. Select **Incidents**.
+1. Go to the Microsoft Defender portal, and select **Incidents & alerts** in the left hand navigation menu to open the incidents page. Select **Incidents**.
 1. Select **Filters** on the top right, and choose **Service Source : Data Loss Prevention** to view all incidents with DLP alerts.
 1. Open a DLP incident.
 1. Select on an alert to view its associated events.

@@ -91,7 +91,7 @@ Once the service is provisioned, it adds:
 - Threat analytics
 
 :::image type="content" source="../../media/overview-incident.png" alt-text="The navigation pane in the Microsoft Defender portal with Microsoft Defender XDR features" lightbox="../../media/overview-incident.png":::
-*Microsoft 365 Defender portal with incidents management and other capabilities*
+*Microsoft Defender portal with incidents management and other capabilities*
 
 ### Getting Microsoft Defender for Identity data 
 

@@ -101,7 +101,7 @@ After you have ensured that WSL is running and fully up to date, follow these st
 
    - **Defender Plug-in Version**: `0.23.1102.4`
    - **WSL Version**: `2.0.7.0` or later
-   - **WSL Defender Version**: `101.23092.011`
+   - **WSL Defender Version**: `101.23092.0011`
    - **WSL Defender Health**: `Healthy`
 
 ## Setting a proxy for Defender running in WSL

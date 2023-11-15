@@ -39,7 +39,7 @@ If you're a Global or security administrator, you can now host firewall reportin
      > [!NOTE]
      > For Windows2012 R2 and Windows Server 2016 to appear in Firewall reports, these devices must be onboarded using the modern unified solution package. For more information, see [New functionality in the modern unified solution for Windows Server 2012 R2 and 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution).
 - To onboard devices to the Microsoft Defender for Endpoint service, see [here](onboard-configure.md).
-- For <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portal</a> to start receiving the data, you must enable **Audit Events** for Windows Defender Firewall with Advanced Security:
+- For <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender portal</a> to start receiving the data, you must enable **Audit Events** for Windows Defender Firewall with Advanced Security:
   - [Audit Filtering Platform Packet Drop](/windows/security/threat-protection/auditing/audit-filtering-platform-packet-drop)
   - [Audit Filtering Platform Connection](/windows/security/threat-protection/auditing/audit-filtering-platform-connection)
 - Enable these events by using Group Policy Object Editor, Local Security Policy, or the auditpol.exe commands. For more information, see [here](/windows/win32/fwp/auditing-and-logging).

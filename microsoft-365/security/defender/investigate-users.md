@@ -53,7 +53,7 @@ When you investigate a specific identity, you'll see the:
 - [Identity timeline](#timeline) tab
 - [Remediation actions](#remediation-actions)
 
-:::image type="content" source="../../media/investigate-users/Fig2-user-incident-overview.png" alt-text="A specific user's page in the Microsoft 365 Defender portal" lightbox="../../media/investigate-users/Fig2-user-incident-overview.png":::
+:::image type="content" source="../../media/investigate-users/Fig2-user-incident-overview.png" alt-text="A specific user's page in the Microsoft Defender portal" lightbox="../../media/investigate-users/Fig2-user-incident-overview.png":::
 
 > [!NOTE]
 > The user page shows the Microsoft Entra organization as well as groups, helping you understand the groups and permissions associated with a user.
@@ -112,7 +112,7 @@ For more information, see [Defender for Identity entity tags in Microsoft Defend
 
 You can see all active alerts involving the user from the last 180 days in this tab. Information like alert severity and the time the alert was generated is available in this tab. Clicking on the alert row shows you additional information about the alert.
 
-:::image type="content" source="../../media/investigate-users/Fig3-user-incident-alertstab.png" alt-text="The user account's related alerts seen in the Alerts tab in the Microsoft 365 Defender portal" lightbox="../../media/investigate-users/Fig3-user-incident-alertstab.png":::
+:::image type="content" source="../../media/investigate-users/Fig3-user-incident-alertstab.png" alt-text="The user account's related alerts seen in the Alerts tab in the Microsoft Defender portal" lightbox="../../media/investigate-users/Fig3-user-incident-alertstab.png":::
 
 ## Observed in organization
 
