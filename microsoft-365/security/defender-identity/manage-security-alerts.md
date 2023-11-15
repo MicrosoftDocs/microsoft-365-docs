@@ -21,7 +21,7 @@ search.appverid: met150
 
 This article explains the basics of how to work with [Microsoft Defender for Identity](/defender-for-identity) security alerts in [Microsoft Defender XDR](/microsoft-365/security/defender/overview-security-center).
 
-Defender for Identity alerts are natively integrated into <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> with a dedicated Identity alert page format. This marks the first step in the journey to [introduce the full Microsoft Defender for Identity experience into Microsoft Defender XDR](/defender-for-identity/defender-for-identity-in-microsoft-365-defender).
+Defender for Identity alerts are natively integrated into <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender XDR</a> with a dedicated Identity alert page format. This marks the first step in the journey to [introduce the full Microsoft Defender for Identity experience into Microsoft Defender XDR](/defender-for-identity/defender-for-identity-in-microsoft-365-defender).
 
 The new Identity alert page gives Microsoft Defender for Identity customers better cross-domain signal enrichment and new automated identity response capabilities. It ensures that you stay secure and helps improve the efficiency of your security operations.
 
@@ -36,7 +36,7 @@ Alerts originating from Defender for Identity can now trigger the [Microsoft Def
 
 Alerts can be accessed from multiple locations, including the **Alerts** page, the **Incidents** page, the pages of individual **Devices**, and from the **Advanced hunting** page. In this example, we'll review the **Alerts page**.
 
-In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, go to **Incidents & alerts** and then to **Alerts**.
+In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender XDR</a>, go to **Incidents & alerts** and then to **Alerts**.
 
 :::image type="content" source="../../media/defender-identity/incidents-alerts.png" alt-text="The Alerts menu item" lightbox="../../media/defender-identity/incidents-alerts.png":::
 

@@ -28,7 +28,7 @@ This article explains how to apply [Microsoft Defender for Identity](/defender-f
 
 In Microsoft Defender XDR, you can set three types of Defender for Identity entity tags: **Sensitive tags**, **Honeytoken tags**, and **Exchange server tags**.
 
-To set these tags, in <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, go to **Settings** and then **Identities**.
+To set these tags, in <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender XDR</a>, go to **Settings** and then **Identities**.
 
 :::image type="content" source="../../media/defender-identity/settings-identities.png" alt-text="The Identities option under the Name column in the Settings page" lightbox="../../media/defender-identity/settings-identities.png":::
 

@@ -28,7 +28,7 @@ This article explains how to work with [Microsoft Defender for Identity](/defend
 
 In Microsoft Defender XDR, you can add recipients for email notifications of health issues in Defender for Identity.
 
-1. In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, go to **Settings** and then **Identities**.
+1. In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender XDR</a>, go to **Settings** and then **Identities**.
 
   :::image type="content" source="../../media/defender-identity/settings-identities.png" alt-text="The Identities option in the column Name" lightbox="../../media/defender-identity/settings-identities.png":::
 
@@ -50,7 +50,7 @@ In Microsoft Defender XDR, you can add recipients for email notifications of hea
 
 In Microsoft Defender XDR, you can add recipients for email notifications of detected alerts.
 
-1. In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, go to **Settings** and then **Identities**.
+1. In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender XDR</a>, go to **Settings** and then **Identities**.
 
    :::image type="content" source="../../media/defender-identity/settings-identities.png" alt-text="The Identities option" lightbox="../../media/defender-identity/settings-identities.png":::
 
@@ -67,7 +67,7 @@ Defender for Identity can notify you when it detects suspicious activities by se
 > [!NOTE]
 > To learn how to integrate Defender for Identity with Microsoft Sentinel, see [Microsoft Defender XDR integration with Microsoft Sentinel](/azure/sentinel/microsoft-365-defender-sentinel-integration).
 
-1. In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>, go to **Settings** and then **Identities**.
+1. In <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender XDR</a>, go to **Settings** and then **Identities**.
 
    :::image type="content" source="../../media/defender-identity/settings-identities.png" alt-text="The option of Identities in the Name column" lightbox="../../media/defender-identity/settings-identities.png":::
 
