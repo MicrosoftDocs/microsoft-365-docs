@@ -22,7 +22,7 @@ description: Learn how to set up Microsoft Syntex eSignature to send electronic 
 > [!NOTE]
 > Syntex eSignature is currently available for the US market only. If a tenant's location is the United States, Syntex eSignature will be available for that tenant. For US-located, multi-geo enabled tenants, eSignature will be available in the home geo only. Syntex eSignature will roll out to other regions in 2024.
 
-The Microsoft Syntex eSignature service is set up in the Microsoft 365 admin center. Syntex eSignature uses simple electronic signatures. Before you begin, determine whether this is appropriate for your needs and then read the [Microsoft Syntex eSignature terms of service](/legal/microsoft-365/esignature-terms-of-service).
+The Microsoft Syntex eSignature service is set up in the Microsoft 365 admin center. Syntex eSignature uses simple electronic signatures. Before you begin, determine whether this feature is appropriate for your needs and then read the [Microsoft Syntex eSignature terms of service](/legal/microsoft-365/esignature-terms-of-service).
 
 ## Prerequisites
 
@@ -44,7 +44,7 @@ You must have Global admin or SharePoint admin permissions to be able to access 
 
 4. For existing customers, read the [terms of service](/legal/microsoft-365/esignature-terms-of-service), and then select **Turn on** to enable the service.
 
-5. For new Syntex customers, the Syntex eSignature service is turned on once you have entered your billing information and accepted the [terms of service](/legal/microsoft-365/esignature-terms-of-service). On the **Syntex eSignature** page:
+5. For new Syntex customers, the Syntex eSignature service is turned on once you enter your billing information and accepted the [terms of service](/legal/microsoft-365/esignature-terms-of-service). On the **Syntex eSignature** page:
 
    - To turn off the service, select **Turn off**.
    - To manage which sites the service is available, see [Manage sites](#manage-sites).
@@ -97,4 +97,4 @@ Certain [conditional access](/entra/identity/conditional-access/overview) might 
 
 ### Authentication
 
-External users might need to authenticate before they're able to access a document for signing. The type of authentication required by the external recipients will depend on the configuration for guest users at the SharePoint level or at the tenant level. Additionally, if the external user belongs to an organization with a Microsoft 365 tenant, it's possible for their organization's setup to affect their authentication experience when attempting to sign the document.
+External users might need to authenticate before they're able to access a document for signing. The type of authentication required by the external recipients depends on the configuration for guest users at the SharePoint level or at the tenant level. Additionally, if the external user belongs to an organization with a Microsoft 365 tenant, it's possible for their organization's setup to affect their authentication experience when attempting to sign the document.
