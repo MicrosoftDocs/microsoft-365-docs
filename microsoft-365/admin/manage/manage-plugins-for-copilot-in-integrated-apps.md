@@ -47,7 +47,7 @@ When Copilot extensibility is enabled, users can see 3P plugins in Copilot that 
 ## Manage plugins for Copilot in the Microsoft 365 admin center
 
 > [!IMPORTANT]
-> During the Public Preview of plugins, customers who are licensed for Copilot in production will need to enable their tenant for the Preview features by making a request to their Microsoft Customer Success Account Manager or by submitting a support ticket to "Opt-in to plugins for Copilot for Microsoft 365".
+> You must be licensed with Microsoft 365 Copilot to use plugins for Copilot for Microsoft 365. During the Public Preview, you will need to enable your tenant by contacting your Microsoft Customer Success Account Manager or submitting a support ticket requesting to "Opt-in to plugins for Copilot for Microsoft 365."
 
 Admins can manage plugins for Copilot as apps in the Integrated apps section of the Microsoft 365 admin center, where they can see the list of available, deployed, or blocked apps for their organization. They will be able to:
 
