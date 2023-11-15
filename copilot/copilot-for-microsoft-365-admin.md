@@ -27,7 +27,7 @@ Copilot for Microsoft 365 admin harnesses the value of generative AI to boost IT
 
 ## Before you begin
 
-You must have a Microsoft 365 Copilot license enabled for your tenant. To learn more about Copilot licensing, see [Get started with Microsoft 365 Copilot](microsoft-365-copilot-setup#manage-licenses-for-copilot.md).
+You must have a Microsoft 365 Copilot license enabled for your tenant. To learn more about Copilot licensing, see [Get started with Microsoft 365 Copilot](microsoft-365-copilot-setup.md).
 
 ## Get started
 
@@ -47,57 +47,49 @@ With Copilot for Microsoft 365 admin, you can:
 
 As an example, check out these prompts:
 
-    - “Show me users in Germany with an E5 license assigned”
-    
-    - “Identify all groups in my organization without an owner”
-    
-    - “Identify all licenses in my organization that expire next month”
+- “Show me users in Germany with an E5 license assigned”
+- “Identify all groups in my organization without an owner”
+- “Identify all licenses in my organization that expire next month”
 
 **Navigate** to different pages, features, and experiences within the admin center. Copilot provides a breadcrumb trail and direct link to your desired page.
 
 Examples:
 
-    - “Where do I set up group policies?”
-    
-    - “How to block an extension in Microsoft 365 admin center?”
+- “Where do I set up group policies?”
+- “How to block an extension in Microsoft 365 admin center?”
 
 **Get support** for any challenges or questions that you have related to administering Microsoft 365 for your tenant.
 
 Examples:
 
-    - “How do I view my bill?”
-    
-    - “How do I set up Multi-factor Authentication?”
+- “How do I view my bill?”
+- “How do I set up Multi-factor Authentication?”
 
 Provide **deployment guidance** for setting up and managing various aspects of identity and security within the tenant.
 
 Examples:
 
-    - “What is the status of my security defaults?”
-    
-    - “Show me the identity sync status”
+- “What is the status of my security defaults?”
+- “Show me the identity sync status”
 
 **Surface general status** of Microsoft services, tenant health status, health advice and recommendations.
 
 Examples:
 
-    - “Are there any service issues right now?”
-    
-    - “Show me service health status”
-    
-    - “Give me details about that incident”
+- “Are there any service issues right now?”
+- “Show me service health status”
+- “Give me details about that incident”
 
 **Marketplace navigation** to help admins discover, trial, or purchase solutions and take advantage of value from Microsoft 365.
 
 Examples:
 
-    - “Tell me about Microsoft Business Premium”
-    
-    - “I want to buy Visio”
+- “Tell me about Microsoft Business Premium”
+- “I want to buy Visio”
 
-During the Private Preview, use the prepopulated prompt options in the Copilot pane for the best results.
+During the Private Preview, use the pre-populated prompt options in the Copilot pane for the best results.
 
-To maintain your security and privacy, Copilot won't make any configuration changes on behalf of you. To learn more about security and privacy with Copilot, see [Data, Privacy, and Security for Microsoft 365 Copilot](microsoft-365-copilot/microsoft-365-copilot-privacy.md).
+To maintain your security and privacy, Copilot won't make any configuration changes on behalf of you. To learn more about security and privacy with Copilot, see [Data, Privacy, and Security for Microsoft 365 Copilot](microsoft-365-copilot-privacy.md).
 
 ## Frequently Asked Questions
 
