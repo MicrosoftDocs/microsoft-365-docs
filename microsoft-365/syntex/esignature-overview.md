@@ -31,13 +31,11 @@ Before you can use Syntex eSignature, an admin must [set up Syntex eSignature](e
 
 You must be signed in to SharePoint Online by using your work email address.
 
-### Supported file types
+## Limitations
 
-Syntex eSignature is available for only PDF documents at this time.
+- Currently, Syntex eSignature is available for the US market only. If a tenant's location is in the United States, eSignature is available for that tenant. For US-located, multi-geo enabled tenants, eSignature is available in the home geo only. The feature rolls out to other regions in 2024.
 
-### Limitations
-
-- Currently, Syntex eSignature is available for the US market only. If a tenant's location is in the United States, Syntex eSignature is available for that tenant. For US-located, multi-geo enabled tenants, eSignature is available in the home geo only. The feature rolls out to other regions in 2024.
+- Syntex eSignature is available for only PDF documents at this time.
 
 - Syntex eSignature will support third-party electronic signature providers in 2024. Starting with Adobe Acrobat Sign and DocuSign, you'll be able to request signatures on documents in SharePoint.
 
