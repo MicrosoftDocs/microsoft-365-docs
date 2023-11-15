@@ -62,7 +62,7 @@ You also can adjust the columns and sort data based on tenant, message status, a
 
 :::image type="content" source="../media/m365-lighthouse-data-protection/quarantine-email-page.png" alt-text="Screenshot of the Quarantined messages page." lightbox="../media/m365-lighthouse-data-protection/quarantine-email-page.png":::
 
-The **Copy Link to Messages in Microsoft** **365 Defender** option provides a link to Microsoft 365 Defender portal where you can access and manage your tenant's email quarantine queue. You must authenticate before you can take any action.
+The **Copy Link to Messages in Microsoft** **365 Defender** option provides a link to Microsoft Defender portal where you can access and manage your tenant's email quarantine queue. You must authenticate before you can take any action.
 
 ## Related content
 

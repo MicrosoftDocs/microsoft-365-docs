@@ -124,7 +124,7 @@ The following table can help you understand which policies that can configure MD
 
 To support Microsoft Defender for Endpoint security configuration management through the Microsoft Intune admin center, you must enable communication between them from within each console.
 
-1. Sign in to [Microsoft 365 Defender portal](https://security.microsoft.com/) and go to **Settings** > **Endpoints** > **Configuration Management** > **Enforcement Scope** and enable the platforms for security settings management:
+1. Sign in to [Microsoft Defender portal](https://security.microsoft.com/) and go to **Settings** > **Endpoints** > **Configuration Management** > **Enforcement Scope** and enable the platforms for security settings management:
 
    :::image type="content" source="../media/security-settings-mgt.png" alt-text="Enable Microsoft Defender for Endpoint settings management in the Defender console.":::
     
@@ -132,7 +132,7 @@ To support Microsoft Defender for Endpoint security configuration management thr
 
 1. Uncheck both **Windows Client devices** and **Windows Server devices** to be able to use Pilot Mode using tagging: 
  
-   :::image type="content" source="../media/pilot-CMAuthority-mde-settings-management-defender.png" alt-text="Configure Pilot mode for Endpoint settings management in the Microsoft 365 Defender portal.":::
+   :::image type="content" source="../media/pilot-CMAuthority-mde-settings-management-defender.png" alt-text="Configure Pilot mode for Endpoint settings management in the Microsoft Defender portal.":::
    
     > [!TIP]
     > Use pilot mode and the proper device tags to test and validate your rollout on a small number of devices. Without using pilot mode, any device that falls into the scope configured will automatically be enrolled.
@@ -159,7 +159,7 @@ Microsoft Defender for Endpoint supports several options to onboard devices. For
 ## Co-existence with Microsoft Endpoint Configuration Manager
 In some environments it might be desired to use Security Management for Microsoft Defender for Endpoint with [Configuration Manager tenant attach](/mem/configmgr/tenant-attach/endpoint-security-get-started). If you use both, you’ll need to control policy through a single channel, as using more than one channel creates the opportunity for conflicts and undesired results.
 
-To support this, configure the *Manage Security settings using Configuration Manager* toggle to *Off*.  Sign in to the [Microsoft 365 Defender portal](https://security.microsoft.com/) and go to **Settings** > **Endpoints** > **Configuration Management** > **Enforcement Scope**:
+To support this, configure the *Manage Security settings using Configuration Manager* toggle to *Off*.  Sign in to the [Microsoft Defender portal](https://security.microsoft.com/) and go to **Settings** > **Endpoints** > **Configuration Management** > **Enforcement Scope**:
 
 :::image type="content" source="../media/manage-security-settings-cfg-mgr.png" alt-text="Manage security settings using Configuration Manager setting.":::
 

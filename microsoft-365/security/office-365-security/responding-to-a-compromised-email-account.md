@@ -57,7 +57,7 @@ Users might notice and report unusual activity in their Microsoft 365 mailboxes.
 - Mail forwarding was recently added.
 - Unusual signatures were recently added. For example, a fake banking signature or a prescription drug signature.
 
-If a user reports these symptoms or other unusual symptoms, you should investigate. The Microsoft 365 Defender portal and the Azure portal offer the following tools to help you investigate suspicious activity on a user account.
+If a user reports these symptoms or other unusual symptoms, you should investigate. The Microsoft Defender portal and the Azure portal offer the following tools to help you investigate suspicious activity on a user account.
 
 - **Unified audit logs in the Microsoft 365 Defender portal**: Filter the logs for activity using a date range that starts immediately before the suspicious activity occurred to today. Don't filter on specific activities during the search. For more information, see [Search the audit log](audit-log-search-defender-portal.md).
 
@@ -171,7 +171,7 @@ To unblock a mailbox from sending email, follow the procedures in [Remove blocke
 
       When you're finished in the **Manage admin roles** flyout, select **Save changes**.
 
-2. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, do the following steps:
+2. In the Microsoft Defender portal at <https://security.microsoft.com>, do the following steps:
    1. Go to **Permissions** \> **Email & collaboration roles** \> **Roles**. Or, to go directly to the **Permissions** page, use <https://security.microsoft.com/emailandcollabpermissions>.
    2. On the **Permissions** page, select a role group from the list.
    3. Look for the user account in the **Members** section of the details flyout that opens. If the role group contains the user account, do the following steps:

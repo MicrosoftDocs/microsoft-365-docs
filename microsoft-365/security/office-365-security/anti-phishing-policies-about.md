@@ -63,7 +63,7 @@ The rest of this article describes the settings that are available in anti-phish
 
 The following policy settings are available in anti-phishing policies in EOP and Defender for Office 365:
 
-- **Name**: You can't rename the default anti-phishing policy. After you create a custom anti-phishing policy, you can't rename the policy in the Microsoft 365 Defender portal.
+- **Name**: You can't rename the default anti-phishing policy. After you create a custom anti-phishing policy, you can't rename the policy in the Microsoft Defender portal.
 
 - **Description** You can't add a description to the default anti-phishing policy, but you can add and change the description for custom policies that you create.
 

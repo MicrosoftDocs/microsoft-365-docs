@@ -71,7 +71,7 @@ These rules help protect your network and devices but shouldn't cause disruption
 
 Defender for Business includes an attack surface reduction report that will show you how attack surface reduction rules are working for you.
 
-1. As a global administrator, in the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Reports**.
+1. As a global administrator, in the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), in the navigation pane, choose **Reports**.
 
 2. Under **Endpoints**, choose **Attack surface reduction rules**. The report opens and includes three tabs:
 
@@ -100,8 +100,7 @@ Attack surface reduction rules are available in Defender for Business. The follo
 
 ## Next steps
 
-- [Review settings for advanced features and the Microsoft 365 Defender portal](mdb-portal-advanced-feature-settings.md).
+- [Review settings for advanced features and the Microsoft Defender portal](mdb-portal-advanced-feature-settings.md).
 - [Use your vulnerability management dashboard](mdb-view-tvm-dashboard.md)
 - [View and manage incidents](mdb-view-manage-incidents.md)
 - [View reports](mdb-reports.md)
-

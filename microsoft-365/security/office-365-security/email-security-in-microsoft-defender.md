@@ -33,7 +33,7 @@ This article explains how to view and investigate malware and phishing attempts 
 
 To see malware detected in email sorted by Microsoft 365 technology, use the [Malware](threat-explorer-views.md#malware) view of Explorer (or Real-time detections).
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration**, and then choose **Explorer** or **Real-time detections**. To go directly to the page, use <https://security.microsoft.com/threatexplorer> or <https://security.microsoft.com/realtimereports>.
+1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration**, and then choose **Explorer** or **Real-time detections**. To go directly to the page, use <https://security.microsoft.com/threatexplorer> or <https://security.microsoft.com/realtimereports>.
 
    This example uses **Explorer**.
 
@@ -57,7 +57,7 @@ To see malware detected in email sorted by Microsoft 365 technology, use the [Ma
 
 You can use the **Report clean** option in Explorer to report a message as false positive.
 
-1. In the Microsoft 365 Defender portal, go to **Email & collaboration** \> **Explorer**, and then verify that **Phish** is selected.
+1. In the Microsoft Defender portal, go to **Email & collaboration** \> **Explorer**, and then verify that **Phish** is selected.
 
 2. Verify that you're on the **Email** tab, and then from the list of reported messages, select the one you'd like to report as clean.
 
@@ -73,7 +73,7 @@ You can use the **Report clean** option in Explorer to report a message as false
 
 You can view phishing attempts through URLs in email, including a list of URLs that were allowed, blocked, and overridden. To identify URLs that were clicked, you must configure [Safe Links](safe-links-about.md) first. Make sure that you set up [Safe Links policies](safe-links-policies-configure.md) for time-of-click protection and logging of click verdicts by Safe Links.
 
-1. In the Microsoft 365 Defender portal at <https://security.microsoft.com>, go to **Email & collaboration**, and then choose **Explorer** or **Real-time detections**. To go directly to the page, use <https://security.microsoft.com/threatexplorer> or <https://security.microsoft.com/realtimereports>.
+1. In the Microsoft Defender portal at <https://security.microsoft.com>, go to **Email & collaboration**, and then choose **Explorer** or **Real-time detections**. To go directly to the page, use <https://security.microsoft.com/threatexplorer> or <https://security.microsoft.com/realtimereports>.
 
    This example uses **Explorer**.
 

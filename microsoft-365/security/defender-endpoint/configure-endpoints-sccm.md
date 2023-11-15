@@ -29,7 +29,7 @@ search.appverid: met150
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Microsoft Configuration Manager current branch
 - System Center 2012 R2 Configuration Manager
 
@@ -63,7 +63,7 @@ For more information, see [Configure Detection Methods in System Center 2012 R2 
 
 ### Configure sample collection settings
 
-For each device, you can set a configuration value to state whether samples can be collected from the device when a request is made through Microsoft 365 Defender to submit a file for deep analysis.
+For each device, you can set a configuration value to state whether samples can be collected from the device when a request is made through Microsoft Defender XDR to submit a file for deep analysis.
 
 > [!NOTE]
 > These configuration settings are typically done through Configuration Manager.
