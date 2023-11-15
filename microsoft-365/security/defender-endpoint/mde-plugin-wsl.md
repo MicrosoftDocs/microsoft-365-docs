@@ -258,22 +258,18 @@ DeviceProcessEvents
  
    - Use the health check tool to provide an overview of overall plug-in health. Open Terminal, and run the `healthcheck.exe` tool from `C:\Program Files\Microsoft Defender for Endpoint plug-in for WSL\tools`.
 
-      :::image type="content" source="media/mdeplugin-wsl/wsl-health-check-support.png" alt-text="Screenshot showing status in PowerShell.":::
+      :::image type="content" source="media/mdeplugin-wsl/wsl-health-check-support.png" alt-text="Screenshot showing status in PowerShell." lightbox="media/mdeplugin-wsl/wsl-health-check-support.png":::
 
   - Enable the connectivity test and check for Defender for Endpoint connectivity in WSL. If the connectivity test fails, provide the output of the health check tool to [mdeforwsl-preview@microsoft.com](mailto:mdeforwsl-preview@microsoft.com).
 
 5. In case you face any other challenges or issues, open the terminal and run the following commands to generate the support bundle: 
 
    ```powershell
-
    cd C:\Program Files\Microsoft Defender for Endpoint plug-in for WSL\tools
-
    ```
 
    ```powershell
-
    .\healthcheck.exe --supportBundle 
-
    ```
 
    The support bundle can be found in the path provided by the previous command. 
