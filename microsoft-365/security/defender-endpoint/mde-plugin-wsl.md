@@ -116,10 +116,10 @@ If you want to set up a different proxy for Defender running in WSL (other than 
 
 2. Create a registry key with the following details:
 
-   **Name:** DefenderProxyServer
-   **Type:** REG_SZ
-   **Value:** *IP address*: *port number* (Example: 192.126.30.222:8888)
-   **Path:** Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Lxss\Plugins\DefenderPlug-in
+   - **Name:** `DefenderProxyServer`
+   - **Type:** `REG_SZ`
+   - **Value:** *IP address*: *port number* (Example: `192.126.30.222:8888`)
+   - **Path:** `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Lxss\Plugins\DefenderPlug-in`
 
 3. Once the registry is set, if WSL is already running or plug-in is already installed, restart wsl using the following steps:
 
@@ -137,10 +137,10 @@ To run the connectivity test, please follow the below instructions:
 
 2. Create a registry key with the following details:
 
-   **Name:** `ConnectivityTest`
-   **Type:** `REG_DWORD`
-   **Value:** `Number of seconds plug-in must wait before running test. (Recommended: 60 seconds)`
-   **Path:** `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Lxss\Plugins\DefenderPlug-in`
+   - **Name:** `ConnectivityTest`
+   - **Type:** `REG_DWORD`
+   - **Value:** `Number of seconds plug-in must wait before running test. (Recommended: 60 seconds)`
+   - **Path:** `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Lxss\Plugins\DefenderPlug-in`
 
 3. Once the registry is set, restart wsl using the following steps:
 
