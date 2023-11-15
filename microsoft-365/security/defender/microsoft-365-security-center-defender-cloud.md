@@ -67,7 +67,7 @@ The following section describes the detection and investigation experience in Mi
 
 ## Impact to Microsoft Sentinel users
 
-Microsoft Sentinel customers integrating Defender for Cloud alerts are required to do the following configuration changes to ensure duplicate incidents are not created:
+Microsoft Sentinel customers integrating Defender for Cloud alerts are required to do the following configuration changes to ensure duplicate incidents aren't created:
 
 - Connect the **Tenant-based Microsoft Defender for Cloud (Preview)** connector to synchronize all your collection of subscriptions with tenant-based Defender for Cloud incidents that are streaming through the Microsoft Defender XDR Incidents connector.
 - Disconnect the legacy subscription-based Defender for Cloud alerts connector to prevent incident duplicates.
@@ -78,9 +78,9 @@ The following change should also be noted:
 
 - The action to relate alerts to Microsoft Defender XDR incidents is removed.
 
-### Opting out of Defender for Cloud alerts
+### Turn off Defender for Cloud alerts
 
-The alerts for Defender for Cloud are turned on by default. To maintain your subscription-based settings and avoid tenant-based sync or to opt-out from the experience, perform the following steps:
+The alerts for Defender for Cloud are turned on by default. To maintain your subscription-based settings and avoid tenant-based sync or to opt out from the experience, perform the following steps:
 
 1. In the Microsoft Defender XDR portal, go to **Settings** > **Microsoft Defender XDR**.
 2. In **Alert service settings**, look for **Microsoft Defender for Cloud alerts**.
