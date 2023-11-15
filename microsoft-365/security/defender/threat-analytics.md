@@ -75,7 +75,7 @@ The threat analytics dashboard ([security.microsoft.com/threatanalytics3](https:
 
 :::image type="content" source="../../media/threat-analytics/ta_dashboard_mtp.png" alt-text="Screenshot of the threat analytics dashboard" lightbox="../../media/threat-analytics/ta_dashboard_mtp.png":::
 
-Select a threat from the dashboard to view the report for that threat.You can also select the Search field to key in a keyword that's related to the threat analytics report that you'd like to read.
+Select a threat from the dashboard to view the report for that threat. You can also select the Search field to key in a keyword that's related to the threat analytics report that you'd like to read.
 
 #### View reports by category
 
