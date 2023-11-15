@@ -40,7 +40,7 @@ Be aware of the following before you start:
 
 - The host OS must be running Windows 10, version 2004 and higher (build 19041 and higher) or Windows 11 to support the Windows Subsystem for Linux versions that can work with the plug-in.
 
-## Software components and Installer file names
+## Software components and installer file names
 
 Installer: `DefenderPlugin-x64-0.23.1102.4.msi`. You can download it from the onboarding page in the [Microsoft Defender portal](https://security.microsoft.com).
 
