@@ -133,8 +133,7 @@ In order to select Microsoft Loop app from the cloud app target UX in the Micros
 1. Copy/Paste this and hit Enter on this command:
 
    ```PowerShell
-   New-AzureADServicePrincipal -AccountEnabled $true -AppId a187e399-0c36-4b98-8f04-1edc167a0996 -AppRoleAssignmentRequired $true -DisplayName "Microsoft 
-   Loop app" -Tags {WindowsAzureActiveDirectoryIntegratedApp}
+   New-AzureADServicePrincipal -AccountEnabled $true -AppId a187e399-0c36-4b98-8f04-1edc167a0996 -AppRoleAssignmentRequired $false -DisplayName "Microsoft Loop app" -Tags {WindowsAzureActiveDirectoryIntegratedApp}
    ```
 
 
