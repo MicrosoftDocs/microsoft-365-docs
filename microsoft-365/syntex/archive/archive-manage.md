@@ -25,7 +25,7 @@ description: Learn how to archive, reactivate, and manage sites in Microsoft 365
 
 Global admins and SharePoint admins can archive both non-group connected sites and group-connected sites from the SharePoint admin center. Archiving group-connected sites will archive only the site, and the rest of the group will continue being active. As soon as a site is archived, it stops consuming storage from active storage quota, and the storage starts being counted towards Microsoft 365 Archive storage. (There might be a delay in the change in storage being reflected in the admin center.)
 
-To learn more about different archived states, see [Archived states in Microsoft 365 Archive (Preview)](archive-states.md).
+To learn more about different archive states, see [Archive states in Microsoft 365 Archive (Preview)](archive-states.md).
 
 When a site is archived, compliance features such as eDiscovery and retention labels continue to be applied to the site.
 

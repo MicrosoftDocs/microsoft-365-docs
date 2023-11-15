@@ -58,7 +58,7 @@ The following image shows an example of an alert that was triggered by behaviora
 
 ## Components of behavioral blocking and containment
 
-- **On-client, policy-driven [attack surface reduction rules](attack-surface-reduction.md)** Predefined common attack behaviors are prevented from executing, according to your attack surface reduction rules. When such behaviors attempt to execute, they can be seen in <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> as informational alerts. Attack surface reduction rules aren't enabled by default; you configure your policies in the [Microsoft Defender portal](/microsoft-365/security/defender/microsoft-365-defender).
+- **On-client, policy-driven [attack surface reduction rules](attack-surface-reduction.md)** Predefined common attack behaviors are prevented from executing, according to your attack surface reduction rules. When such behaviors attempt to execute, they can be seen in <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender XDR</a> as informational alerts. Attack surface reduction rules aren't enabled by default; you configure your policies in the [Microsoft Defender portal](/microsoft-365/security/defender/microsoft-365-defender).
 
 - **[Client behavioral blocking](client-behavioral-blocking.md)** Threats on endpoints are detected through machine learning, and then are blocked and remediated automatically. (Client behavioral blocking is enabled by default.)
 

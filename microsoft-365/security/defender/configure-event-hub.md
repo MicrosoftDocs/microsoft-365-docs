@@ -137,7 +137,7 @@ For these Event Hubs (not namespace), you'll need to configure a Shared Access P
 
 ### Set up Microsoft Defender XDR send Email tables to Splunk via Event Hubs
 
-1. Sign in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> with an account that meets all the following role requirements:
+1. Sign in to <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft Defender XDR</a> with an account that meets all the following role requirements:
 
     - Contributor role at the Event Hubs *Namespace* Resource level or higher for the Event Hubs that you'll be exporting to. Without this permission, you'll get an export error when you try to save the settings.
 
