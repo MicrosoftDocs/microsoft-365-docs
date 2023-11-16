@@ -132,7 +132,7 @@ For specific guidance, see:
 
 ## View data in Microsoft Defender for Endpoint
 
-The [Microsoft 365 Defender portal](https://security.microsoft.com/advanced-hunting) shows events triggered by the Device Control Removable Storage Access Control. To access the Microsoft 365 security, you must have the following subscription:
+The [Microsoft Defender portal](https://security.microsoft.com/advanced-hunting) shows events triggered by the Device Control Removable Storage Access Control. To access the Microsoft 365 security, you must have the following subscription:
 
 - Microsoft 365 E5
 - Microsoft Defender for Endpoint Plan 2

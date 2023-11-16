@@ -20,7 +20,7 @@ ms.service: microsoft-365-security
 ms.date: 6/20/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # The Teams Message Entity Panel for Microsoft Teams in Microsoft Defender for Office 365
@@ -47,7 +47,7 @@ The Teams Message Entity Panel will be available for customers with E5 and P2 su
 
 The steps to use the Teams Message Entity Panel remain the same wherever you find Teams message details.
 
-- Navigate to the [Microsoft 365 Defender portal](https://security.microsoft.com).
+- Navigate to the [Microsoft Defender portal](https://security.microsoft.com).
 - Select **Email & collaboration** > **Quarantine**.
 
 Or, to go directly to the **Quarantine** page, use [this link](https://security.microsoft.com/quarantine).
@@ -58,7 +58,7 @@ Or, to go directly to the **Quarantine** page, use [this link](https://security.
 The Teams Message Entity Panel for that message will open.
 
 > [!NOTE]
-> The permissions needed to view and use this page are the same as to view **Quarantine** and **Submissions**. SecOps users must also be a member of Global Admin or Global Reader, or Security Admin or Security Reader. For more information, see [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).
+> The permissions needed to view and use this page are the same as to view **Quarantine** and **Submissions**. SecOps users must also be a member of Global Admin or Global Reader, or Security Admin or Security Reader. For more information, see [Permissions in the Microsoft Defender portal](mdo-portal-permissions.md).
 
 
 ## Teams Message Entity Panel Walkthrough
