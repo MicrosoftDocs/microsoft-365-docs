@@ -133,9 +133,7 @@ If you want to set up a different proxy for Defender running in WSL (other than 
 
 ## Connectivity test for Defender running in WSL
 
-These instructions help you verify if Defender in Endpoint in WSL has connectivity to the internet. 
-
-To run the connectivity test, please follow the below instructions:
+The following procedure describes how to confirm that Defender in Endpoint in WSL has internet connectivity. 
 
 1. Open Registry Editor as an administrator.
 
