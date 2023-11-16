@@ -42,6 +42,7 @@ You can also get product updates and important notifications through the [messag
 
 ## November 2023
 
+- (Preview) Microsoft Defender for Cloud alerts are now integrated in Microsoft Defender XDR. Defender for Cloud alerts are automatically correlated to incidents and alerts in the Microsoft Defender XDR portal and cloud resource assets can be viewed in the incidents and alerts queues. Learn more about the [Defender for Cloud integration](microsoft-365-security-center-defender-cloud.md) in Microsoft Defender XDR.
 - (Preview) Microsoft Defender XDR now has built in [deception technology](deception-overview.md) to protect your environment from high-impact attacks that use human-operated lateral movement. Learn more about the deception feature and how to [configure the deception feature](configure-deception.md).
 - Microsoft Defender Experts for XDR now lets you perform your own [readiness assessment](get-started-xdr.md#prepare-your-environment-for-the-defender-experts-service) when preparing the environment for the Defender Experts for XDR service.
 
