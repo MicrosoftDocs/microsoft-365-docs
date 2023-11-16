@@ -4,7 +4,6 @@ description: Learn how to run advanced hunting queries using Microsoft Defender 
 keywords: Advanced Hunting, APIs, api, M365 Defender, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 ms.service: defender-xdr
-ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

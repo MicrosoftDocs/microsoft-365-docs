@@ -4,7 +4,6 @@ description: Learn about the methods and properties of the Incidents resource ty
 keywords: incident, incidents, api
 search.product: eADQiWindows 10XVcnh
 ms.service: defender-xdr
-ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

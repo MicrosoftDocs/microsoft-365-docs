@@ -3,7 +3,6 @@ title: Create incident reports with Security Copilot in Microsoft Defender XDR
 description: Use Security Copilot incident report creation embedded in Microsoft Defender XDR to write incident reports.
 keywords: security copilot, microsoft 365 defender, embedded experience, incident report, script analyzer, script analysis, query assistant, m365, incident report, guided response, incident response playbooks, incident response, incident report creation, create report, create incident report, write incident report, write report
 ms.service: defender-xdr
-ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

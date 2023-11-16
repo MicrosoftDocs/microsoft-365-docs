@@ -4,7 +4,6 @@ description: How to get started in remediating your first incident in Microsoft 
 keywords: incidents, alerts, attack story, investigate, correlation, attack, machines, devices, users, identities, identity, mailbox, email, 365, microsoft, m365, incident response, cyber-attack, incident response, remediation, remediate attack, remediate incident
 search.product: eADQiWindows 10XVcnh
 ms.service: defender-xdr
-ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

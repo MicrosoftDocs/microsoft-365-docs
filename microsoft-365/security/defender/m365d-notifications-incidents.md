@@ -3,7 +3,6 @@ title: Get incident notifications by email in Microsoft Defender XDR
 description: Set up email notifications to get notified of new incidents or updates to incidents in Microsoft Defender XDR.
 keywords: email, notifications, incident response, incident response notifications, incident notifications, email notifications, Microsoft 365 Defender notifications
 ms.service: defender-xdr
-ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

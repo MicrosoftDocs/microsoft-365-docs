@@ -5,7 +5,6 @@ keywords: Data Loss Prevention, incidents, alerts, investigate, analyze, respons
 f1.keywords:
   - NOCSH
 ms.service: defender-xdr
-ms.subservice: m365d
 ms.author: chrfox
 author: chrfox
 ms.localizationpriority: medium

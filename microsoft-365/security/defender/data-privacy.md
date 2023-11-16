@@ -4,7 +4,6 @@ description: Describes the privacy and data security of the service.
 keywords: privacy, data, security, trust center, information collection
 search.product: eADQiWindows 10XVcnh
 ms.service: defender-xdr
-ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

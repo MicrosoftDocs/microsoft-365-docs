@@ -5,7 +5,6 @@ ms.localizationpriority: medium
 f1.keywords:
   - NOCSH
 ms.service: defender-xdr
-ms.subservice: m365d
 ms.author: siosulli
 author: siosulli
 manager: dansimp

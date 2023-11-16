@@ -4,7 +4,6 @@ description: Use this article to promote your evals of MDI, MDO, MDE, and Defend
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
-ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

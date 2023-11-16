@@ -5,7 +5,6 @@ keywords: what's new in Microsoft 365 Defender, ga, generally available, capabil
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
-ms.subservice: m365d
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.pagetype: security

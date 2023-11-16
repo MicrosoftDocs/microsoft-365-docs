@@ -4,7 +4,6 @@ description: Set up attack simulations in Microsoft Defender XDR trial lab or pi
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
-ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

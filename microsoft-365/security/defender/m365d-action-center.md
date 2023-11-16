@@ -4,7 +4,6 @@ description: Use the Action center to view details about automated investigation
 keywords: Action center, threat protection, investigation, alert, pending, automated, detection
 search.appverid: met150
 ms.service: defender-xdr
-ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

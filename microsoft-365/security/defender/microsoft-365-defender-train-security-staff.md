@@ -4,7 +4,6 @@ description: Get to the key training resources for quick ramp-up of your securit
 keywords: videos, self-help, self-study, ramp-up, instruction, courses, learning path, Microsoft Learn, course, courses, SecOps, security analyst
 search.product: eADQiWindows 10XVcnh
 ms.service: defender-xdr
-ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

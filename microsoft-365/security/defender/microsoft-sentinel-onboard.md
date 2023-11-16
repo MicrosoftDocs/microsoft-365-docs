@@ -2,7 +2,6 @@
 title: Connect Microsoft Sentinel to Microsoft Defender XDR (preview)
 description: Learn how to connect your Microsoft Sentinel environment to Microsoft Defender XDR to unify your security operations.
 ms.service: defender-xdr
-ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

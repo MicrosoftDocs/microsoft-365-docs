@@ -6,7 +6,6 @@ keywords: analyst report, threat analytics, detections, advanced hunting queries
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
-ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

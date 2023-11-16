@@ -4,7 +4,6 @@ description: View the results and key findings of automated investigation in Mic
 keywords: automated, investigation, results, analyze, details, remediation, autoair
 search.appverid: met150
 ms.service: defender-xdr
-ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

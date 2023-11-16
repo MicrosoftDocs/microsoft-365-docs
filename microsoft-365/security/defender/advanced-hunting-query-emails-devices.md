@@ -5,7 +5,6 @@ keywords: advanced hunting, Office365 data, Windows devices, Office365 emails no
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
-ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

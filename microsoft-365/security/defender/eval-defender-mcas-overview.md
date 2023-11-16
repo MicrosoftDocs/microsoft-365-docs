@@ -4,7 +4,6 @@ description: Steps to set up your Microsoft Defender XDR trial lab or pilot envi
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
-ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

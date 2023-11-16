@@ -17,7 +17,6 @@ ms.collection:
 - tier2
 ms.custom: admindeeplinkDEFENDER
 ms.service: defender-xdr
-ms.subservice: m365d
 ---
 
 # Microsoft Defender for Office 365 in Microsoft Defender XDR

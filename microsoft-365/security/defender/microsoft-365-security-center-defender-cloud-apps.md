@@ -3,7 +3,6 @@ title: Microsoft Defender for Cloud Apps in Microsoft Defender XDR
 description: Learn about changes from the Microsoft Defender for Cloud Apps to Microsoft Defender XDR
 keywords: Getting started with Microsoft 365 Defender, Microsoft Defender for Cloud Apps
 ms.service: defender-xdr
-ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:

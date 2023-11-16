@@ -8,7 +8,6 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 ms.service: defender-xdr
-ms.subservice: m365d
 ms.localizationpriority: medium
 ms.date: 9/18/2023
 ms.collection:

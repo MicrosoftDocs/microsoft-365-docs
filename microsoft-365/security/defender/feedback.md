@@ -4,7 +4,6 @@ description: Provide product feedback on Microsoft Defender XDR
 keywords: feedback, m365 security, security, 365, capabilities
 search.product: eADQiWindows 10XVcnh
 ms.service: defender-xdr
-ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

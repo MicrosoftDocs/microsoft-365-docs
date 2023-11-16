@@ -4,7 +4,6 @@ description: The basics of defining roles, responsibilities, and oversight when 
 keywords: incidents, alerts, investigate, correlation, attack, devices, users, identities, identity, mailbox, email, 365, microsoft, Microsoft 365, incident response, cyber-attack, secops, security operations, soc
 search.product: eADQiWindows 10XVcnh
 ms.service: defender-xdr
-ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

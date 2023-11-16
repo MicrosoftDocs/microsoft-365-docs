@@ -4,7 +4,6 @@ description: View the results and key findings of automatic attack disruption in
 keywords: automated, attack, disruption, investigation, results, analyze, details
 search.appverid: met150
 ms.service: defender-xdr
-ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

@@ -4,7 +4,6 @@ description: Learn about the available APIs in Microsoft Defender XDR
 keywords: api, apis, overview, incident, incidents, threat hunting, microsoft 365 defender
 search.product: eADQiWindows 10XVcnh
 ms.service: defender-xdr
-ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

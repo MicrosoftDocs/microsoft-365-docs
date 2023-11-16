@@ -4,7 +4,6 @@ description: Get an overview of remediation actions that follow automated invest
 keywords: automated, investigation, alert, trigger, action, remediation
 search.appverid: met150
 ms.service: defender-xdr
-ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

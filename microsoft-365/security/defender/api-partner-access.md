@@ -4,7 +4,6 @@ description: Learn how to create an app to get programmatic access to Microsoft 
 keywords: partner, access, api, multi tenant, consent, access token, app
 search.product: eADQiWindows 10XVcnh
 ms.service: defender-xdr
-ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

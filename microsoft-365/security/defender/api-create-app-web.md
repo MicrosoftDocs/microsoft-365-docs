@@ -4,7 +4,6 @@ description: Learn how to create an app to access Microsoft Defender XDR without
 keywords: app, access, api, create
 search.product: eADQiWindows 10XVcnh
 ms.service: defender-xdr
-ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

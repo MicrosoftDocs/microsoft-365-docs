@@ -4,7 +4,6 @@ description: Set up Microsoft Defender for Identity in Microsoft Defender XDR tr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
-ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

@@ -5,7 +5,6 @@ keywords: raw data export, streaming API, API, Azure Event Hubs, Azure storage, 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
-ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

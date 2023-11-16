@@ -4,7 +4,6 @@ description: Use Microsoft Defender XDR for Identity in your Microsoft Defender 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
-ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

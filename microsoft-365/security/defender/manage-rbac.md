@@ -12,7 +12,6 @@ ms.collection:
 - tier3
 ms.custom: 
 ms.topic: overview
-ms.subservice: m365d
 ms.date: 10/30/2023
 ms.reviewer: 
 search.appverid: met150

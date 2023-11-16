@@ -4,7 +4,6 @@ description: Learn how to choose the time zone for date and time information ass
 keywords: time zone, date, time, Microsoft 365 Defender, M365, security, incidents, automated investigation and response, AIR, advanced hunting
 search.product: eADQiWindows 10XVcnh
 ms.service: defender-xdr
-ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

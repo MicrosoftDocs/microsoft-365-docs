@@ -3,7 +3,6 @@ title: Use guided responses with Security Copilot in Microsoft Defender XDR
 description: Use guided responses with Security Copilot in Microsoft Defender XDR to respond to incidents.
 keywords: security copilot, microsoft 365 defender, embedded experience, incident summary, script analyzer, script analysis, query assistant, m365, incident report, guided response, incident response playbooks, incident response, incident response playbooks, remediate incident, remediation actions, incident solution, resolve incidents
 ms.service: defender-xdr
-ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

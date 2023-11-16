@@ -5,7 +5,6 @@ description: Learn what steps you need to take to get started with Defender Thre
 keywords: defender threat intelligence, microsoft 365 defender
 search.appverid: met150
 ms.service: defender-xdr
-ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

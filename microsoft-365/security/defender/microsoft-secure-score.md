@@ -2,7 +2,6 @@
 title: Microsoft Secure Score
 description: Describes Microsoft Secure Score in the Microsoft Defender portal, how to improve your security posture, and what security admins can expect.
 ms.service: defender-xdr
-ms.subservice: m365d
 ms.localizationpriority: medium
 f1.keywords:
   - NOCSH

@@ -4,7 +4,6 @@ description: Learn how to configure Microsoft Defender XDR to stream Advanced Hu
 keywords: raw data export, streaming API, API, Event hubs, Azure storage, storage account, Advanced Hunting, raw data sharing
 search.appverid: met150
 ms.service: defender-xdr
-ms.subservice: m365d
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium

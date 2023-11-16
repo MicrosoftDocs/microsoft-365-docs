@@ -2,7 +2,6 @@
 title: Set up multi-tenant management in Microsoft Defender XDR
 description: Learn what steps you need to take to get started with multi-tenant management in Microsoft Defender XDR
 ms.service: defender-xdr
-ms.subservice: m365d
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium

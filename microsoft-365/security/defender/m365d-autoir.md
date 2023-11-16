@@ -4,7 +4,6 @@ description: Get an overview of automated investigation and response capabilitie
 keywords: automated, investigation, alert, trigger, action, remediation, self-healing
 search.appverid: met150
 ms.service: defender-xdr
-ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

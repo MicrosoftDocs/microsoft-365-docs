@@ -3,9 +3,7 @@ title: How Microsoft Defender Experts for XDR permissions work
 ms.reviewer:
 description: Configuring permissions in customer's XDR tenants
 keywords: XDR, Xtended detection and response, defender experts for xdr, configuring permissions in xdr, Microsoft Defender Experts for XDR, managed threat hunting, managed detection and response (MDR) service, service delivery manager, real-time visibility with XDR experts
-search.product: Windows 10
-ms.service: defender-xdr
-ms.subservice: m365d
+ms.service: dex-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

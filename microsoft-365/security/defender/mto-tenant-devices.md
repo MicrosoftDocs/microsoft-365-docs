@@ -3,7 +3,6 @@ title: Devices in multi-tenant management
 description: Learn about multi-tenant device view in multi-tenant management of the Microsoft Defender XDR 
 search.appverid: met150
 ms.service: defender-xdr
-ms.subservice: m365d
 ms.author: siosulli
 author: siosulli
 ms.localizationpriority: medium

@@ -5,7 +5,6 @@ keywords: Microsoft 365 Defender, Getting started with Microsoft 365 Defender, s
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
-ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

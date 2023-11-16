@@ -5,7 +5,6 @@ keywords: Zero Trust, Microsoft 365 Defender, security architecture, security st
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
-ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

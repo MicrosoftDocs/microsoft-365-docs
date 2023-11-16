@@ -4,7 +4,6 @@ description: Find solutions and workarounds to known Microsoft Defender XDR issu
 keywords: troubleshoot Microsoft 365 Defender, troubleshoot, Microsoft Defender for Identity, issues, add-on, settings page
 search.product: eADQiWindows 10XVcnh
 ms.service: defender-xdr
-ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
