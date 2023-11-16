@@ -4,7 +4,8 @@ ms.reviewer:
 description: The Defender Experts for Hunting service publishes reports to help you understand all the threats the hunting service surfaced in your environment
 keywords: analyst report, DEX report, DEX hunting report, defender experts for hunting report, detections, defender experts notification, hunting, notifications, threat categories, hunting reports, suspicious activities report, security weak spots, identify threats
 search.appverid: met150
-ms.service: dex-xdr
+ms.service: defender-experts
+ms.subservice: dex-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

@@ -3,7 +3,8 @@ title: What is Microsoft Defender Experts for XDR offering
 ms.reviewer:
 description: Defender Experts for XDR augments your SOC with a combination of automation and human expertise
 keywords: XDR, Xtended detection and response, defender experts for xdr, Microsoft Defender Experts for XDR, managed threat hunting, managed detection and response (MDR) service, service delivery manager, Microsoft Defender Experts for hunting, threat hunting and analysis.
-ms.service: dex-xdr
+ms.service: defender-experts
+ms.subservice: dex-xdr
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

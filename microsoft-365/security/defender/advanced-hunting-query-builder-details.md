@@ -5,6 +5,7 @@ keywords: guided mode, advanced hunting, threat hunting, cyber threat hunting, M
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: defender-xdr
+ms.subservice: adv-hunting
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
