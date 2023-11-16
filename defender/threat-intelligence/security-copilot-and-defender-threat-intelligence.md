@@ -1,25 +1,17 @@
 ---
 title: Microsoft Security Copilot and Microsoft Defender Threat Intelligence
-description: Learn about Security Copilot capabilities embedded in Microsoft Defender Threat Intelligence.
-keywords: security copilot, defender threat intelligence, defender ti, embedded experience, incident summary, script analyzer, script analysis, query assistant, incident report, guided response, incident response automated, automatic incident response, summarize incidents, summarize incident report, plugins, Microsoft plugins
-ms.service: threat-intelligence
-ms.mktglfcycl: deploy
-ms.sitesec: library
-ms.pagetype: security
-f1.keywords:
-  - NOCSH
+description: Learn about Microsoft Defender Threat Intelligence capabilities embedded in Security Copilot.
+keywords: security copilot, threat intelligence, defender threat intelligence, defender ti, embedded experience, vulnerability impact assessment, threat actor profile, plugins, Microsoft plugins
+ms.service: microsoft-365-security
+ms.subservice: intelligence
 ms.author: pauloliveria
 author: poliveria
 ms.localizationpriority: medium
 manager: dolmont
 audience: ITPro
 ms.collection: 
-  - m365-security
-  - tier1
+  - Tier1
 ms.topic: conceptual
-search.appverid:
-  - MOE150
-  - MET150
 ms.date: 11/15/2023
 ---
 
@@ -28,7 +20,7 @@ ms.date: 11/15/2023
 > [!IMPORTANT]
 > The information in this article applies to the Microsoft Security Copilot Early Access Program, which is an invite-only paid preview program. Some information in this article relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided in this article.
 
-Microsoft Security Copilot is a cloud-based AI platform that provides natural language copilot experience. It can help support security professionals in different scenarios, like incident response, threat hunting, and intelligence gathering. For more information about what it can do, go to [What is Microsoft Security Copilot?](/security-copilot/microsoft-security-copilot).
+Microsoft Security Copilot is a cloud-based AI platform that provides natural language copilot experience. It can help support security professionals in different scenarios, like incident response, threat hunting, and intelligence gathering. For more information about what it can do, read [What is Microsoft Security Copilot?](/security-copilot/microsoft-security-copilot).
 
 **Security Copilot integrates with Microsoft Defender Threat Intelligence**
 
@@ -43,25 +35,28 @@ This article introduces you to Security Copilot and includes sample prompts that
   - Summarize threat intelligence data for "malicious.com."
 - Be specific when referencing an incident (for example, “incident ID 15324”)
 - Experiment with different prompts and variations to see what works best for your use case. Chat AI models vary, so iterate and refine your prompts based on the results you receive.
-- Security Copilot saves your prompt sessions. To see the previous sessions, from the Security Copilot menu, go to **My investigations**:
+- Security Copilot saves your prompt sessions. To see the previous sessions, from the Security Copilot [Home menu](/security-copilot/navigating-security-copilot#home-menu), go to **My sessions**.
     
-    [image placeholder]
+    ![Partial screenshot of the Microsoft Security Copilot Home menu with My sessions highlighted.](../../media/defender-ti-and-copilot/copilot-plugin-button.png)
 
-    For a walkthrough on Security Copilot, including the pin and share feature, go to [Navigating Microsoft Security Copilot](/security-copilot/navigating-security-copilot).
+    > [!NOTE]
+    > For a walkthrough on Security Copilot, including the pin and share feature, read [Navigate Microsoft Security Copilot](/security-copilot/navigating-security-copilot).
 
-For more information on writing Security Copilot prompts, go to [Microsoft Security Copilot prompting tips](/security-copilot/prompting-tips).
+[Learn more about creating effective prompts](/security-copilot/prompting-tips)
 
 ## Open Security Copilot
 
 1.	Go to [Microsoft Security Copilot](https://go.microsoft.com/fwlink/?linkid=2247989) and sign in with your credentials.
-2.	By default, Defender TI should be turned on. To confirm, select **Plugins** (bottom left corner):
+2.	By default, the Defender TI plugin should be turned on. To confirm, select the **Security Copilot plugin** icon in the lower-left corner of your screen. 
    
-    [image placeholder]
+      ![Screenshot of the Microsoft Security Copilot home page with the plugin icon at the lower-left corner highlighted.](../../media/defender-ti-and-copilot/copilot-plugin-button.png)
 
-    In **My plugins**, confirm Microsoft Defender Threat Intelligence is on. Close **Plugins**.
+    In the **Manage plugins** pop-up window that appears, confirm that the **Microsoft Defender Threat Intelligence** toggle is turned on, then close the window.
+
+    ![Screenshot of the Manage plugins pop-up window with the Microsoft Defender Threat Intelligence plugin highlighted.](../../media/defender-ti-and-copilot/copilot-manage-plugins.png)
 
     > [!NOTE]
-    > Some roles can turn plugins like Defender TI on or off. For more information, go to [Manage plugins in Microsoft Security Copilot](/security-copilot/manage-plugins).
+    > Some roles can turn the toggle on or off for plugins like Defender TI. For more information, read [Manage plugins in Microsoft Security Copilot](/security-copilot/manage-plugins).
 
 3.	Enter your prompt.
 
@@ -97,12 +92,12 @@ Get threat intelligence from threat articles and activity groups.
 Get information on datasets associated with IP addresses and hosts, such as ports, reputation scores, components, certificates, cookies, services, and host pairs.
 
 **Sample prompts** 
-- Give me the reputation score of a host. 
-- Get open ports for IP address.
-- Get the SSL certificates for the IP address.
+- Give me the reputation score of the host _\<host name\>_. 
+- Get open ports for IP address _\<IP address\>_.
+- Get the SSL certificates for the IP address _\<IP address\>_.
 
 ### Activity group mapping and infrastructure
-Get information on activity groups and the associated techniques, tactics, and procedures (TTPs), sponsored states, industries, and IOCs associated with them.
+Get information on activity groups and the associated tactics, techniques, and procedures (TTPs), sponsored states, industries, and IOCs associated with them.
 
 **Sample prompts** 
 - Tell me more about the Silk Typhoon.
@@ -111,32 +106,30 @@ Get information on activity groups and the associated techniques, tactics, and p
 - Share activity groups associated with Russia.
 
 ### CVE vulnerability data 
-Get contextual information on Common Vulnerabilities and Exposures (CVEs) and threat intelligence with these.
+Get contextual information on Common Vulnerabilities and Exposures (CVEs) and threat intelligence with these CVEs.
 
 **Sample prompts** 
-- Share the technologies that are susceptible to this vulnerability CVE-2021-44228.
+- Share the technologies that are susceptible to the vulnerability CVE-2021-44228.
 - Summarize the vulnerability CVE-2021-44228.
 - Show me the latest CVEs.
-- Show me activity groups associated with this CVE-2021-44228.
+- Show me activity groups associated with CVE-2021-44228.
 - Show me the threat articles associated with CVE-2021-44228.
 
 ## Provide feedback
 
-Your feedback on the Defender TI integration with Security Copilot helps with development. To provide feedback, in Security Copilot, use the feedback buttons at the bottom of each completed prompt. Your options are: "Looks Right," "Needs Improvement" and "Inappropriate."
+Your feedback on the Defender TI integration with Security Copilot helps with development. To provide feedback, in Security Copilot, select any of the following buttons at the bottom of each completed prompt:
+- **Looks right** - Select this button if the results are accurate, based on your assessment. 
+- **Needs improvement** - Select this button if any detail in the results is incorrect or incomplete based on your assessment. 
+- **Inappropriate** - Select this button if the results contain questionable, ambiguous, or potentially harmful information.
 
-Your options are the following:
-- **Confirm** - The results match expectations.
-- **Off-target** - The results don't match expectations.
-- **Report** - The results are harmful in some way.
-
-Whenever possible, and when the result is **Off-target**, write a few words explaining what can be done to improve the outcome. If you entered prompts specific to Defender TI and the results aren't related, then include that information.
+For each feedback button, you can provide more information in the next dialog box that appears. Whenever possible, and when the result is **Needs improvement**, write a few words explaining what can be done to improve the outcome. If you entered prompts specific to Defender TI and the results aren't related, then include that information.
 
 ## Data processing and privacy
 
-When you interact with the Security Copilot to get Defender TI data, Security Copilot pulls that data from Defender TI. The prompts, the data retrieved, and the output shown in the prompt results are processed and stored within the Security Copilot service.
+When you interact with the Security Copilot to get Defender TI data, Security Copilot pulls that data from Defender TI. The prompts, the data retrieved, and the output shown in the prompt results are processed and stored within the Security Copilot service. 
 
-For more information about data privacy in Security Copilot, go to [Privacy and data security in Microsoft Security Copilot](/security-copilot/privacy-data-security).
+[Learn more about privacy and data security in Microsoft Security Copilot](/security-copilot/privacy-data-security)
 
-## See also
-- [What is Security Copilot?](/security-copilot/microsoft-security-copilot)
-- [Privacy and data security in Security Copilot](/security-copilot/privacy-data-security)
+### See also
+- [What is Microsoft Security Copilot?](/security-copilot/microsoft-security-copilot)
+- [Privacy and data security in Microsoft Security Copilot](/security-copilot/privacy-data-security)
