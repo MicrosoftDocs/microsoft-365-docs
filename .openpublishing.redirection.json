@@ -1,30 +1,5 @@
 {
    "redirections":[
-      {
-         "source_path":"business-video/TOC",
-         "redirect_url":"https://www.youtube.com/channel/UCBcPPMQmVe5O3on4v5VKrYA",
-         "redirect_document_id":false
-      },
-      {
-         "source_path":"admin/top-m365-admin-articles.md",
-         "redirect_url":"https://support.microsoft.com/smallbusiness",
-         "redirect_document_id":false
-      },
-      {
-         "source_path":"enterprise/EU-data-storage-locations.md",
-         "redirect_url":"https://learn.microsoft.com/microsoft-365/enterprise/m365-dr-overview",
-         "redirect_document_id":false
-      },
-      {
-         "source_path":"enterprise/m365-dr-placeholder.md",
-         "redirect_url":"https://learn.microsoft.com/microsoft-365/enterprise/advanced-data-residency",
-         "redirect_document_id":false
-      },
-      {
-         "source_path":"enterprise/data-move-faq.md",
-         "redirect_url":"https://learn.microsoft.com/microsoft-365/enterprise/m365-dr-legacy-move-program#data-move-general-faq",
-         "redirect_document_id":false
-      }, 
     {
       "source_path": "office365/SecurityCompliance/secure-sharepoint-online-sites-and-files.md",
       "redirect_url": "/microsoft-365/community/sharepoint-security-a-team-effort",
@@ -110,11 +85,6 @@
       "redirect_url": "/defender/threat-intelligence/what-is-microsoft-defender-threat-intelligence-defender-ti",
       "redirect_document_id": false
     },
-   {
-         "source_path":"enterprise/during-and-after-your-data-move.md",
-         "redirect_url":"https://learn.microsoft.com/microsoft-365/enterprise/m365-dr-legacy-move-program",
-         "redirect_document_id":false
-      },
       {
       "source_path": "microsoft-365/microsoft-365/compliance/apply-or-remove-a-document-deletion-policy-for-a-site.md",
       "redirect_url": "/microsoft-365/compliance/labels",
@@ -173,16 +143,6 @@
       {
          "source_path":"microsoft-365/scheduler/index.yml",
          "redirect_url":"https://news.microsoft.com/reinventing-productivity",
-         "redirect_document_id":false
-      },
-      {
-         "source_path":"microsoft-365/admin/copilot/m365-copilot-setup.md",
-         "redirect_url":"/microsoft-365-copilot/microsoft-365-copilot-setup",
-         "redirect_document_id":false
-      },
-      {
-         "source_path":"microsoft-365/admin/copilot/m365-early-access-program.yml",
-         "redirect_url":"/microsoft-365-copilot/microsoft-365-early-access-program",
          "redirect_document_id":false
       }
   

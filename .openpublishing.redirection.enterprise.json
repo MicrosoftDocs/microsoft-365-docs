@@ -1070,5 +1070,25 @@
       "redirect_url":"enterprise/azure-expressroute.md",
       "redirect_document_id":false
    },
+   {
+      "source_path":"enterprise/EU-data-storage-locations.md",
+      "redirect_url":"/microsoft-365/enterprise/m365-dr-overview",
+      "redirect_document_id":false
+   },
+   {
+      "source_path":"microsoft-365/enterprise/m365-dr-placeholder.md",
+      "redirect_url":"/microsoft-365/enterprise/advanced-data-residency",
+      "redirect_document_id":false
+   },
+   {
+      "source_path":"microsoft-365/enterprise/data-move-faq.md",
+      "redirect_url":"/microsoft-365/enterprise/m365-dr-legacy-move-program#data-move-general-faq",
+      "redirect_document_id":false
+   },
+   {
+      "source_path":"microsoft-365/enterprise/during-and-after-your-data-move.md",
+      "redirect_url":"/microsoft-365/enterprise/m365-dr-legacy-move-program",
+      "redirect_document_id":false
+   },
   ]
 }
