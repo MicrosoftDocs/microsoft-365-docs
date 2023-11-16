@@ -37,7 +37,7 @@ This article introduces you to Security Copilot and includes sample prompts that
 - Experiment with different prompts and variations to see what works best for your use case. Chat AI models vary, so iterate and refine your prompts based on the results you receive.
 - Security Copilot saves your prompt sessions. To see the previous sessions, from the Security Copilot [Home menu](/security-copilot/navigating-security-copilot#home-menu), go to **My sessions**.
     
-    ![Partial screenshot of the Microsoft Security Copilot Home menu with My sessions highlighted.](/media/defender-ti-and-copilot/copilot-plugin-button.png)
+    ![Partial screenshot of the Microsoft Security Copilot Home menu with My sessions highlighted.](/defender/threat-intelligence/media/defender-ti-and-copilot/copilot-my-sessions.png)
 
     > [!NOTE]
     > For a walkthrough on Security Copilot, including the pin and share feature, read [Navigate Microsoft Security Copilot](/security-copilot/navigating-security-copilot).
@@ -49,11 +49,11 @@ This article introduces you to Security Copilot and includes sample prompts that
 1.	Go to [Microsoft Security Copilot](https://go.microsoft.com/fwlink/?linkid=2247989) and sign in with your credentials.
 2.	By default, the Defender TI plugin should be turned on. To confirm, select the **Security Copilot plugin** icon in the lower-left corner of your screen. 
    
-      ![Screenshot of the Microsoft Security Copilot home page with the plugin icon at the lower-left corner highlighted.](/media/defender-ti-and-copilot/copilot-plugin-button.png)
+      ![Screenshot of the Microsoft Security Copilot home page with the plugin icon at the lower-left corner highlighted.](/defender/threat-intelligence/media/defender-ti-and-copilot//copilot-plugin-button.png)
 
     In the **Manage plugins** pop-up window that appears, confirm that the **Microsoft Defender Threat Intelligence** toggle is turned on, then close the window.
 
-    ![Screenshot of the Manage plugins pop-up window with the Microsoft Defender Threat Intelligence plugin highlighted.](/media/defender-ti-and-copilot/copilot-manage-plugins.png)
+    ![Screenshot of the Manage plugins pop-up window with the Microsoft Defender Threat Intelligence plugin highlighted.](/defender/threat-intelligence/media/defender-ti-and-copilot/copilot-manage-plugins.png)
 
     > [!NOTE]
     > Some roles can turn the toggle on or off for plugins like Defender TI. For more information, read [Manage plugins in Microsoft Security Copilot](/security-copilot/manage-plugins).
@@ -119,7 +119,7 @@ Get contextual information on Common Vulnerabilities and Exposures (CVEs) and th
 
 Your feedback on the Defender TI integration with Security Copilot helps with development. To provide feedback, in Security Copilot, select any of the following buttons at the bottom of each completed prompt:
 - **Looks right** - Select this button if the results are accurate, based on your assessment. 
-- **Needs improvement** - Select this button if any detail in the results is incorrect or incomplete based on your assessment. 
+- **Needs improvement** - Select this button if any detail in the results is incorrect or incomplete, based on your assessment. 
 - **Inappropriate** - Select this button if the results contain questionable, ambiguous, or potentially harmful information.
 
 For each feedback button, you can provide more information in the next dialog box that appears. Whenever possible, and when the result is **Needs improvement**, write a few words explaining what can be done to improve the outcome. If you entered prompts specific to Defender TI and the results aren't related, then include that information.
