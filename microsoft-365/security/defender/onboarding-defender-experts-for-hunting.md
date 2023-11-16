@@ -96,7 +96,7 @@ A sample Defender Experts Notification shows up in your **Incidents** page with 
 2. Select **Generate a sample DEN**. A green status message appears, confirming that your sample notification is ready for review.
 3. Under **Recently generated Defender Experts Notifications**, select a link from the list to view its corresponding generated sample notification. The most recent sample appears on the top of the list. Selecting a link redirects you to the **Incidents** page.
 
-:::image type="content" source="../../media/mte/defenderexperts/sample-den-links-dexh.png" alt-text="Screenshot of Sample DEN in Defender Experts for Hunting." lightbox="../../media/mte/defenderexperts/sample-den-links-dexh.png":::
+:::image type="content" source="../../media/mte/defenderexperts/sample-den-links-dexh.png" alt-text="Screenshot of Sample DEN links." lightbox="../../media/mte/defenderexperts/sample-den-links-dexh.png":::
 
 ## Collaborate with Experts on Demand
 
