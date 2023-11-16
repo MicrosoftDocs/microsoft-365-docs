@@ -33,6 +33,8 @@ additionalContent:
               url: /azure/active-directory/governance/review-your-access
             - text: Data loss prevention
               url: /microsoft-365/compliance/dlp-learn-about-dlp
+            - text: Semantic Index for Copilot 
+              url: /MicrosoftSearch/semantic-index-for-copilot
             - text: Copilot for Microsoft 365 Service Description
               url: /office365/servicedescriptions/office-365-platform-service-description/microsoft-365-copilot/
         # Card
@@ -42,8 +44,8 @@ additionalContent:
               url: microsoft-365-copilot-requirements.md
             - text: Setup
               url: microsoft-365-copilot-setup.md
-            - text: Overview of update channels
-              url: /deployoffice/updates/overview-update-channels
+            - text: Change update channel of Microsoft 365 Apps to enable Copilot
+              url: /deployoffice/updates/change-channel-for-copilot
             - text: Enable users
               url: microsoft-365-copilot-enable-users.md
             - text: Drive adoption
