@@ -33,7 +33,7 @@ This article introduces you to Security Copilot and includes sample prompts that
 - Be clear and specific with your prompts. You might get better results if you include specific activity group names or IOCs in your prompts. It might also help if you add **threat intelligence** to your prompt, like:
   - Show me threat intelligence data for Aqua Blizzard.
   - Summarize threat intelligence data for "malicious.com."
-- Be specific when referencing an incident (for example, “incident ID 15324”)
+- Be specific when referencing an incident (for example, “incident ID 15324”).
 - Experiment with different prompts and variations to see what works best for your use case. Chat AI models vary, so iterate and refine your prompts based on the results you receive.
 - Security Copilot saves your prompt sessions. To see the previous sessions, from the Security Copilot [Home menu](/security-copilot/navigating-security-copilot#home-menu), go to **My sessions**.
     
@@ -47,7 +47,7 @@ This article introduces you to Security Copilot and includes sample prompts that
 ## Open Security Copilot
 
 1.	Go to [Microsoft Security Copilot](https://go.microsoft.com/fwlink/?linkid=2247989) and sign in with your credentials.
-2.	By default, the Defender TI plugin should be turned on. To confirm, select the **Security Copilot plugin** icon in the lower-left corner of your screen. 
+2.	Make sure that the Defender TI plugin is turned on. To do this, select the **Security Copilot plugin** icon in the lower-left corner of your screen. 
    
       ![Screenshot of the Microsoft Security Copilot home page with the plugin icon at the lower-left corner highlighted.](/defender/threat-intelligence/media/defender-ti-and-copilot//copilot-plugin-button.png)
 
@@ -58,7 +58,7 @@ This article introduces you to Security Copilot and includes sample prompts that
     > [!NOTE]
     > Some roles can turn the toggle on or off for plugins like Defender TI. For more information, read [Manage plugins in Microsoft Security Copilot](/security-copilot/manage-plugins).
 
-3.	Enter your prompt.
+3.	Enter your prompt in the prompt bar.
 
 ## Built-in system features
 
