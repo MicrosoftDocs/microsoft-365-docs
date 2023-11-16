@@ -76,7 +76,7 @@ If you Windows Subsystem for Linux isn't installed yet, follow these steps:
 
 ### Install the plug-in
 
-After you have ensured that WSL is running and fully up to date, follow these steps to install the plug-in:
+After WSL is running and fully up to date, follow these steps to install the plug-in:
 
 1. Install the MSI file downloaded from the onboarding section in the Microsoft Defender portal (**Settings** > **Endpoints** > **Onboarding** > **Windows Subsystem for Linux 2 (plug-in)**.)
 
