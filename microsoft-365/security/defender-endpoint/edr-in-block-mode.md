@@ -27,7 +27,7 @@ search.appverid: met150
 **Applies to:**
 
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender XDR](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Microsoft Defender Antivirus
 
 **Platforms**
@@ -69,13 +69,15 @@ When EDR in block mode is turned on, and a malicious artifact is detected, Defen
 > [!IMPORTANT]
 > Make sure the [requirements](#requirements-for-edr-in-block-mode) are met before turning on EDR in block mode.
 > 
-> Starting with [platform version 4.18.2202.X](microsoft-defender-antivirus-updates.md), you can now set EDR in block mode to target specific device groups using Intune CSPs. You can  continue to set EDR in block mode tenant-wide in the [Microsoft 365 Defender portal](https://security.microsoft.com).
+> Starting with [platform version 4.18.2202.X](microsoft-defender-antivirus-updates.md), you can now set EDR in block mode to target specific device groups using Intune CSPs. You can  continue to set EDR in block mode tenant-wide in the [Microsoft Defender portal](https://security.microsoft.com).
 > 
 > EDR in block mode is primarily recommended for devices that are running Microsoft Defender Antivirus in passive mode (a non-Microsoft antivirus solution is installed and active on the device).
 
-### Microsoft 365 Defender
+<a name='microsoft-365-defender'></a>
 
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)) and sign in.
+### Microsoft Defender XDR
+
+1. Go to the Microsoft Defender portal ([https://security.microsoft.com/](https://security.microsoft.com/)) and sign in.
 
 2. Choose **Settings** \> **Endpoints** \> **General** \> **Advanced features**.
 

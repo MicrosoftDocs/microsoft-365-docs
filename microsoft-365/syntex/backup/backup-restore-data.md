@@ -14,7 +14,6 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-ROBOTS: NOINDEX, NOFOLLOW
 description: Learn how to restore data using restore points and express restore points in Microsoft 365 Backup.
 ---
 
@@ -27,7 +26,7 @@ Once you back up your data, you might need to restore the data in case of an acc
 
 As part of restoring data from backup, admin needs to choose a *restore point* manually or from a recommended *express restore point* by the tool.
 
-- **Restore point**. A prior point in time from which you can restore a healthy version of your content or metadata. If the data from a prior point in time is identical to the present state of your data, then there will be no items restored, including **Restore to a new folder** for Exchange Online.d
+- **Restore point**. A prior point in time from which you can restore a healthy version of your content or metadata. If the data from a prior point in time is identical to the present state of your data, then there will be no items restored, including **Restore to a new folder** for Exchange Online.
 
 - **Express restore point**. A set of recommended restore points that offers faster restore of data from the backup than a regular restore point.
 

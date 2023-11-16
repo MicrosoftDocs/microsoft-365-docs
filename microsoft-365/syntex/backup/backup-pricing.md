@@ -14,7 +14,6 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-ROBOTS: NOINDEX, NOFOLLOW
 description: Learn about the charge model and pricing calculator for Microsoft 365 Backup.
 ---
 
@@ -71,7 +70,7 @@ To use the Microsoft 365 Backup pricing calculator, you'll need to perform the f
 
 This section describes how to use your [Microsoft 365 admin center usage reports](https://admin.microsoft.com/Adminportal/Home#/reportsUsage) to populate the Microsoft 365 Backup pricing calculator.
 
-The Microsoft 365 Backup Pricing Calculator uses the input data about your current usage to help determine heuristics such as your average growth and usage patterns. To get this information, go to [Usage - Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/reportsUsage) and then review the [OneDrive - Usage](#onedrive---usage), [SharePoint - Site usage](#sharepoint---site-usage), or [Exchange - Mailbox usage](#exchange---mailbox-usage) reports.
+The Microsoft 365 Backup pricing calculator uses the input data about your current usage to help determine heuristics such as your average growth and usage patterns. To get this information, go to [Usage - Microsoft 365 admin center](https://admin.microsoft.com/Adminportal/Home#/reportsUsage) and then review the [OneDrive - Usage](#onedrive---usage), [SharePoint - Site usage](#sharepoint---site-usage), or [Exchange - Mailbox usage](#exchange---mailbox-usage) reports.
 
 You can change the period that the reports display data for by selecting the **Past *n* days** on the right-hand side and then selecting the period.
 

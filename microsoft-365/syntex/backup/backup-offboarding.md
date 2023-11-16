@@ -14,8 +14,7 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-ROBOTS: NOINDEX, NOFOLLOW
-description: Learn about offboarding in Microsoft 365 Backup.
+description: Learn about how to offboard usage in Microsoft 365 Backup.
 ---
 
 # Offboarding in Microsoft 365 Backup (Preview)

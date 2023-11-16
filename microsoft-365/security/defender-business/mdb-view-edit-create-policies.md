@@ -64,11 +64,13 @@ In addition to next-generation protection and firewall policies, there are three
 
 ## View your existing policies
 
-You can view your existing policies in either Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) or the Intune admin center ([https://intune.microsoft.com](https://intune.microsoft.com)) (if you're using Intune).
+You can view your existing policies in either Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) or the Intune admin center ([https://intune.microsoft.com](https://intune.microsoft.com)) (if you're using Intune).
 
-## [**Microsoft 365 Defender portal**](#tab/M365D)
+<a name='microsoft-365-defender-portal'></a>
 
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in. 
+## [**Microsoft Defender portal**](#tab/M365D)
+
+1. Go to the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in. 
 
 2. In the navigation pane, choose **Configuration management** > **Device configuration**. Policies are organized by operating system (such as **Windows client**) and policy type (such as **Next-generation protection** and **Firewall**). 
 
@@ -88,11 +90,13 @@ You can view your existing policies in either Microsoft 365 Defender portal ([ht
 
 ## Edit an existing policy
 
-You can view your existing policies in either Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) or the Intune admin center ([https://intune.microsoft.com](https://intune.microsoft.com)) (if you're using Intune).
+You can view your existing policies in either Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) or the Intune admin center ([https://intune.microsoft.com](https://intune.microsoft.com)) (if you're using Intune).
 
-## [**Microsoft 365 Defender portal**](#tab/M365D)
+<a name='microsoft-365-defender-portal'></a>
 
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in. 
+## [**Microsoft Defender portal**](#tab/M365D)
+
+1. Go to the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in. 
 
 2. In the navigation pane, choose **Device configuration**. Policies are organized by operating system (such as **Windows client**) and policy type (such as **Next-generation protection** and **Firewall**). 
 
@@ -139,9 +143,11 @@ You can view your existing policies in either Microsoft 365 Defender portal ([ht
 
 ## Create a new policy
 
-## [**Microsoft 365 Defender portal**](#tab/M365D)
+<a name='microsoft-365-defender-portal'></a>
 
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in. 
+## [**Microsoft Defender portal**](#tab/M365D)
+
+1. Go to the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)), and sign in. 
 
 2. In the navigation pane, choose **Device configuration**. Policies are organized by operating system (such as **Windows client**) and policy type (such as **Next-generation protection** and **Firewall**). 
 

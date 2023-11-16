@@ -14,7 +14,6 @@ ms.collection:
     - enabler-strategic
     - m365initiative-syntex
 ms.localizationpriority:  medium
-ROBOTS: NOINDEX, NOFOLLOW
 description: Learn how to view and edit backup policies in Microsoft 365 Backup.
 ---
 

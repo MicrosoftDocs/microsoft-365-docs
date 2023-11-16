@@ -29,9 +29,9 @@ ms.date: 05/27/2021
 # Step 3. Enable and pilot Microsoft Defender for Office 365
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
-This article outlines the process to enable and pilot Microsoft Defender for Office 365. Before starting this process, be sure you've reviewed the overall process for [evaluating Microsoft 365 Defender](eval-overview.md), and you've [created the Microsoft 365 Defender evaluation environment](eval-create-eval-environment.md).
+This article outlines the process to enable and pilot Microsoft Defender for Office 365. Before starting this process, be sure you've reviewed the overall process for [evaluating Microsoft Defender XDR](eval-overview.md), and you've [created the Microsoft Defender XDR evaluation environment](eval-create-eval-environment.md).
 
 Use the following steps to enable and pilot Microsoft Defender for Office 365.
 

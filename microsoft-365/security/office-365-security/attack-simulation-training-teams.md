@@ -23,7 +23,7 @@ appliesto:
 > [!IMPORTANT]
 > Microsoft Teams in Attack simulation training is currently available only in a Private Preview.
 
-In organizations with Microsoft Defender for Office 365 Plan 2 or Microsoft 365 Defender, admins can now use Attack simulation training to deliver simulated phishing messages in Microsoft Teams. For more information about attack simulation training, see [Get started using Attack simulation training in Defender for Office 365](attack-simulation-training-get-started.md).
+In organizations with Microsoft Defender for Office 365 Plan 2 or Microsoft Defender XDR, admins can now use Attack simulation training to deliver simulated phishing messages in Microsoft Teams. For more information about attack simulation training, see [Get started using Attack simulation training in Defender for Office 365](attack-simulation-training-get-started.md).
 
 The addition of Teams in Attack simulation training affects the following features:
 
@@ -42,7 +42,7 @@ The addition of Teams in Attack simulation training affects the following featur
 In addition to having user reporting for Teams messages turned on as described in [User reported message settings in Microsoft Teams](submissions-teams.md), you also need to configure the Teams accounts that can be used as sources for simulation messages in Attack simulation training. To configure the accounts, do the following steps:
 
 1. Identify or create a user who's a member of the [Global Administrator](/azure/active-directory/roles/permissions-reference#global-administrator), [Security Administrator](/azure/active-directory/roles/permissions-reference#security-administrator), or [Attack Simulation Administrator](/azure/active-directory/roles/permissions-reference#attack-simulation-administrator) roles in Microsoft Entra ID. Assign a Microsoft 365, Office 365, Microsoft Teams Essentials, Microsoft 365 Business Basic, or a Microsoft 365 Business Standard license for [Microsoft Teams](/office365/servicedescriptions/teams-service-description). You need to know the password.
-2. Using the account from Step 1, open the Microsoft 365 Defender portal at <https://security.microsoft.com> and go to **Email & collaboration** \> **Attack simulation training** \> **Settings** tab. Or, to go directly to the **Settings** tab, use <https://security.microsoft.com/attacksimulator?viewid=setting>.
+2. Using the account from Step 1, open the Microsoft Defender portal at <https://security.microsoft.com> and go to **Email & collaboration** \> **Attack simulation training** \> **Settings** tab. Or, to go directly to the **Settings** tab, use <https://security.microsoft.com/attacksimulator?viewid=setting>.
 3. On the **Settings** tab, select **Manager user accounts** in the **Teams simulation configuration** section.
 4. In the **Teams simulation configuration** flyout that opens, select **Generate token**. Read the information in the confirmation dialog, and then select **I agree**.
 5. Back on the **Settings** tab, select **Manager user accounts** in the **Teams simulation configuration** section again to reopen the **Teams simulation configuration** flyout. The user account that you were logged in as now appears in the **User accounts available for Teams phishing** section.
