@@ -66,14 +66,14 @@ Security Copilot has built-in system features that can get data from the differe
 
 To view the list of built-in system capabilities for Defender TI:
 
-1.	In the prompt, enter **/**.
+1.	In the prompt bar, enter **/**.
 2.	Select **See all system capabilities**. The *ThreatIntelligence.DTI* section lists all the available capabilities for Defender TI that you can use.
 
 Security Copilot also has the following promptbooks that also deliver information from Defender TI:
 - **Vulnerability impact assessment** - Generates a report summarizing the intelligence for a known vulnerability, including steps on how to address it.
 - **Threat actor profile** - Generates a report profiling a known activity group, including suggestions to defend against their common tools and tactics.
 
-To view these promptbooks, in the prompt, enter __*__. 
+To view these promptbooks, in the prompt bar, enter __*__. 
 
 ## Sample prompts for Defender TI
 
@@ -97,16 +97,16 @@ Get information on datasets associated with IP addresses and hosts, such as port
 - Get the SSL certificates for the IP address _\<IP address\>_.
 
 ### Activity group mapping and infrastructure
-Get information on activity groups and the associated tactics, techniques, and procedures (TTPs), sponsored states, industries, and IOCs associated with them.
+Get information on activity groups and the tactics, techniques, and procedures (TTPs), sponsored states, industries, and IOCs associated with them.
 
 **Sample prompts** 
-- Tell me more about the Silk Typhoon.
+- Tell me more about Silk Typhoon.
 - Share the IOCs associated with Silk Typhoon.
 - Share the TTPs associated with Silk Typhoon.
 - Share activity groups associated with Russia.
 
 ### CVE vulnerability data 
-Get contextual information on Common Vulnerabilities and Exposures (CVEs) and threat intelligence with these CVEs.
+Get contextual information and threat intelligence on Common Vulnerabilities and Exposures (CVEs).
 
 **Sample prompts** 
 - Share the technologies that are susceptible to the vulnerability CVE-2021-44228.
@@ -126,9 +126,7 @@ For each feedback button, you can provide more information in the next dialog bo
 
 ## Data processing and privacy
 
-When you interact with the Security Copilot to get Defender TI data, Security Copilot pulls that data from Defender TI. The prompts, the data retrieved, and the output shown in the prompt results are processed and stored within the Security Copilot service. 
-
-[Learn more about privacy and data security in Microsoft Security Copilot](/security-copilot/privacy-data-security)
+When you interact with the Security Copilot to get Defender TI data, Security Copilot pulls that data from Defender TI. The prompts, the data retrieved, and the output shown in the prompt results are processed and stored within the Security Copilot service. [Learn more about privacy and data security in Microsoft Security Copilot](/security-copilot/privacy-data-security)
 
 ### See also
 - [What is Microsoft Security Copilot?](/security-copilot/microsoft-security-copilot)
