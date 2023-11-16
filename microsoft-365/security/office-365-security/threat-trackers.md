@@ -22,7 +22,7 @@ ms.service: microsoft-365-security
 ms.date: 6/20/2023
 appliesto:
   - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/office-365-security/mdo-security-comparison#defender-for-office-365-plan-1-vs-plan-2-cheat-sheet" target="_blank">Microsoft Defender for Office 365 plan 1 and plan 2</a>
-  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft 365 Defender</a>
+  - ✅ <a href="https://learn.microsoft.com/microsoft-365/security/defender/microsoft-365-defender" target="_blank">Microsoft Defender XDR</a>
 ---
 
 # Threat Trackers - New and Noteworthy
@@ -40,10 +40,10 @@ Threat Trackers are informative widgets and views that provide you with intellig
 
 Trackers are just a few of the many great features you get with [Microsoft Defender for Office 365 Plan 2](office-365-ti.md). Threat Trackers include [Noteworthy trackers](#noteworthy-trackers), [Trending trackers](#trending-trackers), [Tracked queries](#tracked-queries), and [Saved queries](#saved-queries).
 
-To view and use your Threat Trackers for your organization, open the Microsoft 365 Defender portal at <https://security.microsoft.com>, and go to **Email & collaboration** \> **Threat tracker**. To go directly to the **Threat tracker** page, use <https://security.microsoft.com/threattrackerv2>.
+To view and use your Threat Trackers for your organization, open the Microsoft Defender portal at <https://security.microsoft.com>, and go to **Email & collaboration** \> **Threat tracker**. To go directly to the **Threat tracker** page, use <https://security.microsoft.com/threattrackerv2>.
 
 > [!NOTE]
-> To use Threat Trackers, you must be a global administrator, security administrator, or security reader. See [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).
+> To use Threat Trackers, you must be a global administrator, security administrator, or security reader. See [Permissions in the Microsoft Defender portal](mdo-portal-permissions.md).
 
 ### Noteworthy trackers
 
@@ -79,13 +79,13 @@ Whether you're reviewing email, content, or Office activities (coming soon), Exp
 
 And remember that you can always provide us with feedback on this or other Microsoft 365 security features by clicking on the **Feedback** button in the lower-right corner.
 
-:::image type="content" source="../../media/microsoft-365-defender-portal.png" alt-text="Screenshot that shows the Microsoft 365 Defender portal" lightbox="../../media/microsoft-365-defender-portal.png":::
+:::image type="content" source="../../media/microsoft-365-defender-portal.png" alt-text="Screenshot that shows the Microsoft Defender portal" lightbox="../../media/microsoft-365-defender-portal.png":::
 
 ## Trackers and Microsoft Defender for Office 365
 
 With our inaugural Noteworthy threat, we're highlighting advanced malware threats detected by [Safe Attachments](safe-attachments-about.md). If you're an Office 365 Enterprise E5 customer and you're not using [Microsoft Defender for Office 365](defender-for-office-365.md), you should be - it's included in your subscription. Defender for Office 365 provides value even if you have other security tools filtering email flow with your Office 365 services. However, anti-spam and [Safe Links](safe-links-about.md) features work best when your main email security solution is through Office 365.
 
-:::image type="content" source="../../media/policies.png" alt-text="Screenshot that shows the Microsoft Defender for Office 365 in the Microsoft 365 Defender portal" lightbox="../../media/policies.png":::
+:::image type="content" source="../../media/policies.png" alt-text="Screenshot that shows the Microsoft Defender for Office 365 in the Microsoft Defender portal" lightbox="../../media/policies.png":::
 
 In today's threat-riddled world, running only traditional anti-malware scans means you are not protected well enough against attacks. Today's more sophisticated attackers use commonly available tools to create new, obfuscated, or delayed attacks that won't be recognized by traditional signature-based anti-malware engines. The Safe Attachments feature takes email attachments and detonates them in a virtual environment to determine whether they're safe or malicious. This detonation process opens each file in a virtual computer environment, then watches what happens after the file is opened. Whether it's a PDF, and compressed file, or an Office document, malicious code can be hidden in a file, activating only once the victim opens it on their computer. By detonating and analyzing the file in the email flow, Defender for Office 365 capabilities finds these threats based on behaviors, file reputation, and a number of heuristic rules.
 
@@ -95,8 +95,8 @@ The new Noteworthy threat filter highlights items that were recently detected th
 
 - If your organization doesn't already have these Office 365 Threat Investigation and Response capabilities, see [How do we get Office 365 Threat Investigation and Response capabilities?](office-365-ti.md).
 
-- Make sure that your security team has the correct roles and permissions assigned. You must be a global administrator, or have the Security Administrator, Security Reader, or Search and Purge role assigned in the Microsoft 365 Defender portal. See [Permissions in the Microsoft 365 Defender portal](mdo-portal-permissions.md).
+- Make sure that your security team has the correct roles and permissions assigned. You must be a global administrator, or have the Security Administrator, Security Reader, or Search and Purge role assigned in the Microsoft Defender portal. See [Permissions in the Microsoft Defender portal](mdo-portal-permissions.md).
 
-- Watch for the new Trackers to show up in your Microsoft 365 environment. When available, you'll find your Trackers on the **Threat tracker** page in the Microsoft 365 Defender portal at <https://security.microsoft.com/threattracker>.
+- Watch for the new Trackers to show up in your Microsoft 365 environment. When available, you'll find your Trackers on the **Threat tracker** page in the Microsoft Defender portal at <https://security.microsoft.com/threattracker>.
 
 - If you haven't already done so, learn more about and configure [Microsoft Defender for Office 365](defender-for-office-365.md) for your organization, including [Safe links](safe-links-about.md) and [Safe Attachments](safe-attachments-about.md).

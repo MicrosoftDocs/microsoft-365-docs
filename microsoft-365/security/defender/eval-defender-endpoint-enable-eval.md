@@ -1,6 +1,6 @@
 ---
 title: Enable Microsoft Defender for Endpoint evaluation
-description: Enable your Microsoft 365 Defender trial lab or pilot environment, including checking license state, and onboarding endpoints
+description: Enable your Microsoft Defender XDR trial lab or pilot environment, including checking license state, and onboarding endpoints
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.service: microsoft-365-security
@@ -50,7 +50,7 @@ You'll first need to check the license state to verify that it was properly prov
 
 1. To view your licenses, go to the **Microsoft Azure portal** and navigate to the [Microsoft Azure portal license section](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products).
 
-   :::image type="content" source="../../media/defender/atp-licensing-azure-portal.png" alt-text="The Azure Licensing page in the Microsoft 365 Defender portal" lightbox="../../media/defender/atp-licensing-azure-portal.png":::
+   :::image type="content" source="../../media/defender/atp-licensing-azure-portal.png" alt-text="The Azure Licensing page in the Microsoft Defender portal" lightbox="../../media/defender/atp-licensing-azure-portal.png":::
 
 1. Alternately, in the admin center, navigate to **Billing** > **Subscriptions**.
 
@@ -91,5 +91,5 @@ The following table lists the available tools based on the endpoint that you nee
  
 Return to the overview for [Evaluate Microsoft Defender for Endpoint](eval-defender-endpoint-overview.md)
 
-Return to the overview for [Evaluate and pilot Microsoft 365 Defender](eval-overview.md)
+Return to the overview for [Evaluate and pilot Microsoft Defender XDR](eval-overview.md)
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/defender-m3d-techcommunity.md)]

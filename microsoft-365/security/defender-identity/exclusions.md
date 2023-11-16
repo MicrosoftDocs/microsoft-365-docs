@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender for Identity detection exclusions in Microsoft 365 Defender
-description: Learn how to configure Microsoft Defender for Identity detection exclusions in Microsoft 365 Defender.
+title: Microsoft Defender for Identity detection exclusions in Microsoft Defender XDR
+description: Learn how to configure Microsoft Defender for Identity detection exclusions in Microsoft Defender XDR.
 ms.date: 11/02/2021
 ms.topic: how-to
 author: batamig
@@ -11,17 +11,17 @@ ms.collection: m365-security
 search.appverid: met150
 ---
 
-# Configure Defender for Identity detection exclusions in Microsoft 365 Defender
+# Configure Defender for Identity detection exclusions in Microsoft Defender XDR
 
 **Applies to:**
 
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 - Defender for Identity
 
-This article explains how to configure [Microsoft Defender for Identity](/defender-for-identity) detection exclusions in [Microsoft 365 Defender](/microsoft-365/security/defender/overview-security-center).
+This article explains how to configure [Microsoft Defender for Identity](/defender-for-identity) detection exclusions in [Microsoft Defender XDR](/microsoft-365/security/defender/overview-security-center).
 
 > [!IMPORTANT]
-> As part of the convergence with Microsoft 365 Defender, some options and details have changed from their location in the Defender for Identity portal. Please read the details below to discover where to find both the familiar and new features.
+> As part of the convergence with Microsoft Defender XDR, some options and details have changed from their location in the Defender for Identity portal. Please read the details below to discover where to find both the familiar and new features.
 
 [!INCLUDE [Product long](includes/product-long.md)] enables the exclusion of specific IP addresses, computers, domains, or users from a number of detections.
 
@@ -32,7 +32,7 @@ For example, a **DNS Reconnaissance** alert could be triggered by a security sca
 
 ## How to add detection exclusions
 
-1. In [Microsoft 365 Defender](https://security.microsoft.com/), go to **Settings** and then **Identities**.
+1. In [Microsoft Defender XDR](https://security.microsoft.com/), go to **Settings** and then **Identities**.
 
    :::image type="content" source="../../media/defender-identity/settings-identities.png" alt-text="The Identities option in the Name column" lightbox="../../media/defender-identity/settings-identities.png":::
 

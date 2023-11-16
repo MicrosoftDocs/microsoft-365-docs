@@ -36,7 +36,7 @@ All remediation actions are tracked in the Action center.
 
 ## How to use the Action center
 
-1. Go to the Microsoft 365 Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
+1. Go to the Microsoft Defender portal ([https://security.microsoft.com](https://security.microsoft.com)) and sign in.
 
 2. In the navigation pane, choose **Action center**.
 

@@ -2,7 +2,7 @@
 title: Collaborate with external participants in a shared channel (IT Admins)
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: serdars
+manager: pamgreen
 ms.date: 07/18/2023
 audience: ITPro
 ms.topic: article
@@ -31,6 +31,8 @@ When you enable shared channels in Teams with another organization:
 - Team owners in your organization can invite people from other organizations to participate in shared channels.
 - Your organization's custom (line of business) apps are available in shared channels and external participants can access them.
 - Your organization's apps list is available in shared channels and external participants can access them.
+
+Note that the organizations that you want to connect to must also follow the steps in this article to enable external shared channels for their organization.
 
 ## Prerequisites
 
