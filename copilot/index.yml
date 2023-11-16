@@ -44,8 +44,8 @@ additionalContent:
               url: microsoft-365-copilot-requirements.md
             - text: Setup
               url: microsoft-365-copilot-setup.md
-            - text: Overview of update channels
-              url: /deployoffice/updates/overview-update-channels
+            - text: Change update channel of Microsoft 365 Apps to enable Copilot
+              url: /deployoffice/updates/change-channel-for-copilot
             - text: Enable users
               url: microsoft-365-copilot-enable-users.md
             - text: Drive adoption
