@@ -1,6 +1,6 @@
 ---
-title: Supported Microsoft 365 Defender APIs
-description: Supported Microsoft 365 Defender APIs
+title: Supported Microsoft Defender XDR APIs
+description: Supported Microsoft Defender XDR APIs
 keywords: Microsoft 365 Defender, APIs, api
 search.product: eADQiWindows 10XVcnh
 ms.service: microsoft-365-security
@@ -27,12 +27,12 @@ ms.custom: api
 ms.date: 02/08/2023
 ---
 
-# Supported Microsoft 365 Defender APIs
+# Supported Microsoft Defender XDR APIs
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
 > [!NOTE]
 > **Try our new APIs using MS Graph security API**. Find out more at: [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview).
@@ -64,8 +64,8 @@ All APIs along the `/api` path use the [OData](/odata/overview) Protocol; for ex
 
 - [Use the Microsoft Graph security API - Microsoft Graph | Microsoft Learn](/graph/api/resources/security-api-overview)
 
-- [Microsoft 365 Defender APIs overview](api-overview.md)
-- [Access the Microsoft 365 Defender APIs](api-access.md)
+- [Microsoft Defender XDR APIs overview](api-overview.md)
+- [Access the Microsoft Defender XDR APIs](api-access.md)
 - [Streaming API](../defender-endpoint/raw-data-export.md)
 - [Learn about API limits and licensing](api-terms.md)
 - [Understand error codes](api-error-codes.md)

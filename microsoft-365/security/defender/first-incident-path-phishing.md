@@ -32,9 +32,9 @@ ms.date: 04/20/2021
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Applies to:**
-- Microsoft 365 Defender
+- Microsoft Defender XDR
 
-Microsoft 365 Defender can help detect malicious attachments delivered via email and security analysts can have visibility on threats coming in from Office 365, such as through email attachments.
+Microsoft Defender XDR can help detect malicious attachments delivered via email and security analysts can have visibility on threats coming in from Office 365, such as through email attachments.
 
 For example, an analyst was assigned a multi-stage incident.
  

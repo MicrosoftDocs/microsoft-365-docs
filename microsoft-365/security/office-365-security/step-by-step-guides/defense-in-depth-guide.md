@@ -55,11 +55,11 @@ The information below will detail how to get the most out of your investment, br
 
 - When alerts fire in Microsoft Defender for Office 365, they're automatically correlated, and combined into Incidents to help reduce the alert fatigue on security staff. Automated Investigation and Response (AIR) will trigger investigations to help remediate and contain threats.
 
-**Read more, watch an overview video and get started here :** [Incident response with Microsoft 365 Defender](/microsoft-365/security/defender/incidents-overview)
+**Read more, watch an overview video and get started here :** [Incident response with Microsoft Defender XDR](/microsoft-365/security/defender/incidents-overview)
 
 - Threat Analytics is our in-product detailed threat intelligence solution from expert Microsoft security researchers, detailed reports designed to get you up to speed on the latest threat groups, attack techniques, how to protect your organization with Indicators of Compromise (IOC) and much more.
 
-**Read more, watch an overview video and get started here :** [Threat analytics in Microsoft 365 Defender](../../defender/threat-analytics.md)
+**Read more, watch an overview video and get started here :** [Threat analytics in Microsoft Defender XDR](../../defender/threat-analytics.md)
 
 - Explorer can be used to hunt threats, visualize mail flow patterns, spot trends, and identify the impact of changes you make during tuning Defender for Office 365. You can also quickly delete messages from your organization with a few simple clicks.
 
@@ -127,4 +127,4 @@ The information below will detail how to get the most out of your investment, br
 
 [Security Operations Guide for Defender for Office 365](../mdo-sec-ops-guide.md)
 
-[Get more out of Microsoft Defender for Office 365 with Microsoft 365 Defender](https://www.youtube.com/watch?v=Tdz6KfruDGo)
+[Get more out of Microsoft Defender for Office 365 with Microsoft Defender XDR](https://www.youtube.com/watch?v=Tdz6KfruDGo)
