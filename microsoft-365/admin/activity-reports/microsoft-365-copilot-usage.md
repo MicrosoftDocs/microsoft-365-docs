@@ -27,7 +27,7 @@ description: "Learn how to get the Microsoft 365 Copilot usage report and gain i
 
 The Microsoft 365 Usage dashboard shows you the activity overview across the Microsoft 365 apps in your organization. It enables you to drill into individual product-level reports to give you more granular insight about the activities within each app. To view all reports, check out the [Reports overview article](activity-reports.md).
 
-The Copilot for Microsoft 365 report, which is in continuous enhancement, includes a Readiness section. In this section, you can view which users are technically eligible for Copilot, assign licenses, and monitor usage of Microsoft 365 apps that Copilot integrates best with. Within the “Usage” section, you can view a summary of how users’ adoption, retention, and engagement are with Copilot for Microsoft 365, and the activity of every Copilot user in your organization.
+The Copilot for Microsoft 365 report, which is in continuous enhancement, includes a Readiness section. In this section, you can view which users are technically eligible for Copilot, assign licenses, and monitor usage of Microsoft 365 apps that Copilot integrates best with. Within the Usage section, you can view a summary of how users’ adoption, retention, and engagement are with Copilot for Microsoft 365, and the activity of every Copilot user in your organization.
 
 ## How do I get to the Copilot for Microsoft 365 report?
 
@@ -37,7 +37,7 @@ The Copilot for Microsoft 365 report, which is in continuous enhancement, includ
 
 ## Interpret the Readiness section in Copilot for Microsoft 365 report
 
-You can use this report to see how ready your organization is to adopt Copilot for Microsoft 365. The Readiness section is set-up to show you data over the past 28 days. Currently this portion does not include any other time period options, but we will be rolling out updates in the near future to enable 7-day, 30-day, 90-day and 180-day periods.
+You can use this report to see how ready your organization is to adopt Copilot for Microsoft 365. The Readiness section is set up to show your data over the past 28 days. Currently this portion does not include any other time period options, but we'll be rolling out updates soon to enable 7-day, 30-day, 90-day and 180-day periods.
 
 You can see the following summary charts in this report
 
@@ -65,7 +65,7 @@ This graph shows the sum of users that could benefit the most from having Copilo
 
 You can use the user table to get an at-a-glance view at which users are assigned a Copilot license, whether their devices are configured correctly, and if they’re using a Microsoft 365 app that has Copilot enabled.
 
-You can also export the report data into an Excel .csv file by selecting the Export link. This exports the Copilot for Microsoft 365 readiness data of all users with any of engagement on Teams meetings, Teams chat, and Outlook email for Office docs in past 30 days, and enables you to do simple sorting, filtering, and searching for further analysis.
+You can also export the report data into an Excel .csv file by selecting the Export link. This exports the Copilot for Microsoft 365 readiness data of all users with any engagement on Teams meetings, Teams chat, and Outlook email for Office docs in past 30 days, and enables you to do simple sorting, filtering, and searching for further analysis.
 
 To ensure data quality, we perform daily data validation checks for the past three days and will fill any gaps detected. You may notice differences in historical data during the process.
 
