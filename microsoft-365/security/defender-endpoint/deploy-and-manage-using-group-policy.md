@@ -57,9 +57,9 @@ Before you get started with Printer protection, you must confirm your [Microsoft
 
    For example, you can have either a Deny or an Allow policy for RemovableMediaDevices, but not for CdRomDevices or WpdDevices. You set Default Deny through this policy, then Read/Write/Execute access to CdRomDevices or WpdDevices will be blocked.
 
-   - Go to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Features** > **Device Control** > **Select Device Control Default Enforcement**
+   - Go to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Microsoft Defender Antivirus** > **Device Control** > **Select Device Control Default Enforcement Policy**
 
-   - In the **Select Device Control Default Enforcement** pane, select **Default Deny**:
+   - In the **Select Device Control Default Enforcement Policy** pane, select **Default Deny**:
 
    :::image type="content" source="images/set-default-enforcement-deny-gp.png" alt-text="Screenshot of setting Default Enforcement = Deny using Group Policy." lightbox="images/set-default-enforcement-deny-gp.png":::
 
